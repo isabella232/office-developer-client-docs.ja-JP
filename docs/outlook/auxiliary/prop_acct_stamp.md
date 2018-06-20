@@ -29,7 +29,7 @@ ms.locfileid: "19799576"
 |プロパティ タグ。  <br/> |0x000D001F  <br/> |
 |アクセス:  <br/> |値の取得のみ可能です。  <br/> |
    
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 [IOlkAccount::GetProp](iolkaccount-getprop.md)を使用してこのプロパティを取得します。 クライアントがこのプロパティを設定しようとすると、このプロパティは**E_OLK_PROP_READ_ONLY**を返します。 
   

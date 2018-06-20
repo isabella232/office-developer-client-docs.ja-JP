@@ -55,7 +55,7 @@ typedef struct _ADRENTRY
   
 > 受信者のプロパティを記述するプロパティ値の配列へのポインター。 **RgPropVals**のメンバーには、NULL を指定できます。 
     
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 **ADRENTRY**構造体では、1 人の受信者のプロパティについて説明します。 受信者の記述に使用される一般的なプロパティを以下に示します。 
   

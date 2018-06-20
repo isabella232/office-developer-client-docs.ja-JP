@@ -59,7 +59,7 @@ S_OK
   
 > 宛先リストの準備ができました。
     
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 クライアントとサービス ・ プロバイダーは、以下を実行する**PrepareRecips**メソッドを呼び出します。 
   
