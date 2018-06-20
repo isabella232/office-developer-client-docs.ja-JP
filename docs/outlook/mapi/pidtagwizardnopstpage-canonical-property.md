@@ -34,7 +34,7 @@ ms.locfileid: "19803670"
 |データを入力します。  <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |Exchange の管理  <br/> |
    
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 サービス プロバイダーは、 [LAUNCHWIZARDENTRY](launchwizardentry.md)関数のプロトタイプでは関数を呼び出すときにこのプロパティを設定できます。 このプロパティは、プロバイダーがユーザー ダイアログ ボックスの中に表示される PST のページをしないことをプロファイル ウィザードに指示します。 
   

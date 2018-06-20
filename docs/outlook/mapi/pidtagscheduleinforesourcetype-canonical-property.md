@@ -1,0 +1,74 @@
+---
+title: PidTagScheduleInfoResourceType の標準的なプロパティ
+manager: soliver
+ms.date: 03/09/2015
+ms.audience: Developer
+ms.topic: reference
+ms.prod: office-online-server
+localization_priority: Normal
+api_name:
+- MAPI.PidTagScheduleInfoResourceType
+api_type:
+- COM
+ms.assetid: 9f253378-0a2d-47e3-82d3-8055b5f776dd
+description: '�ŏI�X�V��: 2015�N3��9��'
+ms.openlocfilehash: 2f1f86f72231ae39a70977742481cb435da9d923
+ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19803475"
+---
+# <a name="pidtagscheduleinforesourcetype-canonical-property"></a>PidTagScheduleInfoResourceType の標準的なプロパティ
+
+  
+  
+**適用されます**: Outlook 
+  
+値ゼロ (0) に設定する必要がありますが含まれています。
+  
+|||
+|:-----|:-----|
+|関連するプロパティ。  <br/> |PR_SCHDINFO_RESOURCE_TYPE  <br/> |
+|識別子:  <br/> |0x6841  <br/> |
+|データを入力します。  <br/> |PT_LONG  <br/> |
+|領域:  <br/> |空き/予約済み  <br/> |
+   
+## <a name="remarks"></a>備考
+
+ゼロ (0) に送信され、受信時に無視されると、このプロパティを設定する必要があります。
+  
+## <a name="related-resources"></a>関連リソース
+
+### <a name="protocol-specifications"></a>プロトコルの仕様
+
+[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+  
+> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+    
+[[MS OXOPFFB]](http://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
+  
+> ユーザーまたはリソースの可用性を発行します。
+    
+### <a name="header-files"></a>ヘッダー ファイル
+
+Mapidefs.h
+  
+> データ型定義を提供します。
+    
+Mapitags.h
+  
+> 代替名として記載されているプロパティの定義が含まれています。
+    
+## <a name="see-also"></a>関連項目
+
+
+
+[MAPI プロパティ](mapi-properties.md)
+  
+[標準の MAPI プロパティ](mapi-canonical-properties.md)
+  
+[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+  
+[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+

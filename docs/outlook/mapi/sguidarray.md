@@ -50,7 +50,7 @@ typedef struct _SGuidArray
   
 > クラス識別子の値を格納する**GUID**構造体の配列へのポインター。 
     
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 PT_MV_CLSID の詳細については、[プロパティの種類の一覧](property-types.md)を参照してください。
   
