@@ -1,0 +1,1 @@
+# <a name="welcome-to-officedocs-dev-client-docs"></a><span data-ttu-id="71cbb-101">Officedocs 開発クライアント ドキュメントへようこそ!</span><span class="sxs-lookup"><span data-stu-id="71cbb-101">Welcome to officedocs-dev-client-docs!</span></span>
