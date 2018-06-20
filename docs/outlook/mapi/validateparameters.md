@@ -1,0 +1,67 @@
+---
+title: ValidateParameters
+manager: soliver
+ms.date: 03/09/2015
+ms.audience: Developer
+ms.topic: reference
+ms.prod: office-online-server
+localization_priority: Normal
+api_name:
+- MAPI.ValidateParameters
+api_type:
+- COM
+ms.assetid: 80aadd11-5409-4636-8fad-fa2206336671
+description: '�ŏI�X�V��: 2015�N3��9��'
+ms.openlocfilehash: 921417d8fc73ca9c1f126b2cb0add23f6625e3f4
+ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19804216"
+---
+# <a name="validateparameters"></a><span data-ttu-id="3e7e9-103">ValidateParameters</span><span class="sxs-lookup"><span data-stu-id="3e7e9-103">ValidateParameters</span></span>
+
+  
+  
+<span data-ttu-id="3e7e9-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="3e7e9-104">**Applies to**: Outlook</span></span> 
+  
+<span data-ttu-id="3e7e9-105">パラメーターのクライアント アプリケーションがサービス プロバイダーに渡されますが確認するのには内部の関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="3e7e9-105">Calls an internal function to check the parameters client applications have passed to service providers.</span></span> 
+  
+|||
+|:-----|:-----|
+|<span data-ttu-id="3e7e9-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="3e7e9-106">Header file:</span></span>  <br/> |<span data-ttu-id="3e7e9-107">Mapival.h</span><span class="sxs-lookup"><span data-stu-id="3e7e9-107">Mapival.h</span></span>  <br/> |
+|<span data-ttu-id="3e7e9-108">によって実装されます。</span><span class="sxs-lookup"><span data-stu-id="3e7e9-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="3e7e9-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="3e7e9-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="3e7e9-110">によって呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="3e7e9-110">Called by:</span></span>  <br/> |<span data-ttu-id="3e7e9-111">サービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="3e7e9-111">Service providers</span></span>  <br/> |
+   
+```cpp
+HRESULT ValidateParameters(
+  METHODS eMethod,
+  LPVOID First
+);
+```
+
+## <a name="parameters"></a><span data-ttu-id="3e7e9-112">Parameters</span><span class="sxs-lookup"><span data-stu-id="3e7e9-112">Parameters</span></span>
+
+ <span data-ttu-id="3e7e9-113">_」方法_</span><span class="sxs-lookup"><span data-stu-id="3e7e9-113">_eMethod_</span></span>
+  
+> <span data-ttu-id="3e7e9-114">[in]確認する方法を列挙型を指定します。</span><span class="sxs-lookup"><span data-stu-id="3e7e9-114">[in] Specifies, by enumeration, the method to validate.</span></span> 
+    
+ <span data-ttu-id="3e7e9-115">_First/先頭のレコード_</span><span class="sxs-lookup"><span data-stu-id="3e7e9-115">_First_</span></span>
+  
+> <span data-ttu-id="3e7e9-116">[in]スタック上の最初の引数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="3e7e9-116">[in] Pointer to the first argument on the stack.</span></span>
+    
+## <a name="return-value"></a><span data-ttu-id="3e7e9-117">�߂�l</span><span class="sxs-lookup"><span data-stu-id="3e7e9-117">Return value</span></span>
+
+<span data-ttu-id="3e7e9-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="3e7e9-118">S_OK</span></span> 
+  
+> <span data-ttu-id="3e7e9-119">すべてのパラメーターは、有効です。</span><span class="sxs-lookup"><span data-stu-id="3e7e9-119">All of the parameters are valid.</span></span> 
+    
+<span data-ttu-id="3e7e9-120">MAPI_E_CALL_FAILED</span><span class="sxs-lookup"><span data-stu-id="3e7e9-120">MAPI_E_CALL_FAILED</span></span> 
+  
+> <span data-ttu-id="3e7e9-121">1 つまたは複数のパラメーターが有効ではありません。</span><span class="sxs-lookup"><span data-stu-id="3e7e9-121">One or more of the parameters are not valid.</span></span>
+    
+## <a name="remarks"></a><span data-ttu-id="3e7e9-122">備考</span><span class="sxs-lookup"><span data-stu-id="3e7e9-122">Remarks</span></span>
+
+<span data-ttu-id="3e7e9-123">[ValidateParms](validateparms.md)マクロでは、 **ValidateParameters**マクロを置き換えられています。</span><span class="sxs-lookup"><span data-stu-id="3e7e9-123">The **ValidateParameters** macro has been superseded by the [ValidateParms](validateparms.md) macro.</span></span> <span data-ttu-id="3e7e9-124">**ValidateParameters**は、RISC プラットフォームで正常に動作しないとしてコンパイルができなきます。</span><span class="sxs-lookup"><span data-stu-id="3e7e9-124">**ValidateParameters** does not work correctly on RISC platforms and is now prevented from compiling on them.</span></span> <span data-ttu-id="3e7e9-125">それをコンパイルし、インテルのプラットフォームで正常に動作しますが、すべてのプラットフォームで**ValidateParms**をお勧めします。</span><span class="sxs-lookup"><span data-stu-id="3e7e9-125">It still compiles and works correctly on Intel platforms, but **ValidateParms** is recommended on all platforms.</span></span> 
+  
+

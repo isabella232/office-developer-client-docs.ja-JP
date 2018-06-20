@@ -1,0 +1,30 @@
+---
+title: TNEF メッセージを送信します。
+manager: soliver
+ms.date: 11/16/2014
+ms.audience: Developer
+localization_priority: Normal
+api_type:
+- COM
+ms.assetid: 6e2df265-b9dd-4e19-8ca5-3e31804e9120
+description: '�ŏI�X�V��: 2011�N7��23��'
+ms.openlocfilehash: fb26d854b47894d8f37763b17e5ba0b26fd25ff6
+ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19803883"
+---
+# <a name="sending-messages-with-tnef"></a><span data-ttu-id="ff6ea-103">TNEF メッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="ff6ea-103">Sending Messages with TNEF</span></span>
+
+  
+  
+<span data-ttu-id="ff6ea-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="ff6ea-104">**Applies to**: Outlook</span></span> 
+  
+<span data-ttu-id="ff6ea-105">トランスポート プロバイダーの多くは、すべての送信メッセージと、トランスポート ニュートラル カプセル化形式 (TNEF) を自動的に送信します。</span><span class="sxs-lookup"><span data-stu-id="ff6ea-105">Many transport providers automatically send all outgoing messages with the Transport Neutral Encapsulation Format (TNEF).</span></span> <span data-ttu-id="ff6ea-106">TNEF を使用して、そのメッセージは、さまざまな種類、およびカスタム メッセージ クラス用のカスタム プロパティの添付ファイルで多くのクライアントとメッセージ ストア プロバイダーをサポートしている書式設定されたテキストを送信します。</span><span class="sxs-lookup"><span data-stu-id="ff6ea-106">TNEF is used to transmit the formatted text that many clients and message store providers support in their messages, attachments of various types, and custom properties for custom message classes.</span></span> <span data-ttu-id="ff6ea-107">ほとんどのトランスポート プロバイダーの既定のモードは、TNEF で送信するメッセージを送信するが、トランスポート プロバイダーによってサポートしません。</span><span class="sxs-lookup"><span data-stu-id="ff6ea-107">Although the default mode for most transport providers is to send outgoing messages with TNEF, some transport providers do not support it.</span></span> <span data-ttu-id="ff6ea-108">TNEF のサポートの欠如は、IPM メッセージを送受信するメッセージング クライアントが標準的な問題ではありません。</span><span class="sxs-lookup"><span data-stu-id="ff6ea-108">The lack of support for TNEF is not an issue for standard messaging clients that send and receive IPM messages.</span></span> <span data-ttu-id="ff6ea-109">ただし、フォーム ベースのクライアントまたはユーザー設定のプロパティを必要とするクライアントでは、TNEF の使用が不可欠です。</span><span class="sxs-lookup"><span data-stu-id="ff6ea-109">However, for form-based clients or clients that require custom properties, the use of TNEF is essential.</span></span> <span data-ttu-id="ff6ea-110">フォームまたはユーザー設定のプロパティに依存するクライアントの設計者は、それらを使用するトランスポート プロバイダーの機能に注意してくださいする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ff6ea-110">Designers of clients that rely on forms or custom properties must be aware of the capabilities of the transport providers that they use.</span></span>
+  
+<span data-ttu-id="ff6ea-111">メッセージの受信者は、 **PR_SEND_RICH_INFO**プロパティを設定することによって、トランスポート プロバイダーが TNEF メッセージを送信するかどうかを制御できます。</span><span class="sxs-lookup"><span data-stu-id="ff6ea-111">Message recipients can control whether or not a transport provider transmits messages with TNEF by setting the **PR_SEND_RICH_INFO** property.</span></span> <span data-ttu-id="ff6ea-112">詳細については、 **PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff6ea-112">For more information, see **PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)).</span></span> <span data-ttu-id="ff6ea-113">受信者の**PR_SEND_RICH_INFO**プロパティを TRUE に設定すると、TNEF をサポートするトランスポート プロバイダーは、メッセージに送信します。</span><span class="sxs-lookup"><span data-stu-id="ff6ea-113">When a recipient's **PR_SEND_RICH_INFO** property is set to TRUE, a transport provider that supports TNEF transmits it with the message.</span></span> <span data-ttu-id="ff6ea-114">プロパティを FALSE に設定するとと、には、書式設定は破棄されます。</span><span class="sxs-lookup"><span data-stu-id="ff6ea-114">When the property is set to FALSE, the formatting is discarded.</span></span> <span data-ttu-id="ff6ea-115">**PR_SEND_RICH_INFO**が存在しない場合は、トランスポート プロバイダーは、既定の一連のアクションを選択する責任です。</span><span class="sxs-lookup"><span data-stu-id="ff6ea-115">When **PR_SEND_RICH_INFO** does not exist, it is up to the transport provider to choose a default course of action.</span></span> 
+  
+<span data-ttu-id="ff6ea-116">_UlFlags_パラメーターで**IAddrBook::CreateOneOff**または**に MAPI_SEND_NO_RICH_INFO フラグを渡すことによって、 **PR_SEND_RICH_INFO**プロパティの値を持ちますクライアントおよびサービス ・ プロバイダーは、カスタム受信者を作成するときIMAPISupport::CreateOneOff**を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="ff6ea-116">When clients and service providers create a custom recipient, they can affect the value of its **PR_SEND_RICH_INFO** property by passing the MAPI_SEND_NO_RICH_INFO flag in the  _ulFlags_ parameter to the **IAddrBook::CreateOneOff** or **IMAPISupport::CreateOneOff** call.</span></span> <span data-ttu-id="ff6ea-117">詳細については、 [IAddrBook::CreateOneOff](iaddrbook-createoneoff.md)および[IMAPISupport::CreateOneOff](imapisupport-createoneoff.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ff6ea-117">For more information, see [IAddrBook::CreateOneOff](iaddrbook-createoneoff.md) and [IMAPISupport::CreateOneOff](imapisupport-createoneoff.md).</span></span> <span data-ttu-id="ff6ea-118">渡される MAPI_SEND_NO_RICH_INFO と、MAPI は、カスタム受信者の**PR_SEND_RICH_INFO**プロパティを FALSE に設定します。ほとんどの場合は、フラグが渡されていないと、MAPI プロパティを TRUE に設定します。</span><span class="sxs-lookup"><span data-stu-id="ff6ea-118">Passing MAPI_SEND_NO_RICH_INFO causes MAPI to set the custom recipient's **PR_SEND_RICH_INFO** property to FALSE; in most cases not passing the flag causes MAPI to set the property to TRUE.</span></span> <span data-ttu-id="ff6ea-119">1 つの例外は、インターネット アドレスを使用するかどうか、カスタム受信者のアドレスが解釈されます。</span><span class="sxs-lookup"><span data-stu-id="ff6ea-119">The one exception is if the custom recipient's address is interpreted to be an Internet address.</span></span> <span data-ttu-id="ff6ea-120">この 1 つの状況では、MAPI は、false を指定する**PR_SEND_RICH_INFO**を設定します。</span><span class="sxs-lookup"><span data-stu-id="ff6ea-120">In this one situation, MAPI sets **PR_SEND_RICH_INFO** to FALSE.</span></span> 
+  
+

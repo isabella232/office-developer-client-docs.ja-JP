@@ -1,0 +1,69 @@
+---
+title: 現在の要素 (weatherType の複合型) (Outlook の気象情報のスキーマ)
+manager: soliver
+ms.date: 03/09/2015
+ms.audience: Developer
+ms.topic: reference
+ms.prod: office-online-server
+localization_priority: Normal
+ms.assetid: d592a396-f935-c44c-409f-b849c327cfbd
+description: 現在の気象条件を指定します。
+ms.openlocfilehash: 12265c463f0f1bba15c9bf1723cbbea6c505dba9
+ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19804467"
+---
+# <a name="current-element-weathertype-complextype-outlook-weather-information-schema"></a><span data-ttu-id="b795f-103">現在の要素 (weatherType の複合型) (Outlook の気象情報のスキーマ)</span><span class="sxs-lookup"><span data-stu-id="b795f-103">current element (weatherType complexType) (Outlook Weather Information Schema)</span></span>
+
+<span data-ttu-id="b795f-104">現在の気象条件を指定します。</span><span class="sxs-lookup"><span data-stu-id="b795f-104">Specifies the current weather conditions.</span></span>
+  
+## <a name="element-information"></a><span data-ttu-id="b795f-105">要素情報</span><span class="sxs-lookup"><span data-stu-id="b795f-105">Element information</span></span>
+
+|||
+|:-----|:-----|
+|<span data-ttu-id="b795f-106">**要素の型**</span><span class="sxs-lookup"><span data-stu-id="b795f-106">**Element type**</span></span> <br/> |[<span data-ttu-id="b795f-107">currentType</span><span class="sxs-lookup"><span data-stu-id="b795f-107">currentType</span></span>](currenttype-complextype-outlook-weather-information-schema.md) <br/> |
+|<span data-ttu-id="b795f-108">**名前空間**</span><span class="sxs-lookup"><span data-stu-id="b795f-108">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
+|<span data-ttu-id="b795f-109">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="b795f-109">**Schema file**</span></span> <br/> |<span data-ttu-id="b795f-110">getweatherinfo.xsd</span><span class="sxs-lookup"><span data-stu-id="b795f-110">getweatherinfo.xsd</span></span>  <br/> |
+   
+## <a name="definition"></a><span data-ttu-id="b795f-111">定義</span><span class="sxs-lookup"><span data-stu-id="b795f-111">Definition</span></span>
+
+```XML
+<xs:element name="current"      type="currentType">
+  </xs:element>  
+
+```
+
+## <a name="elements-and-attributes"></a><span data-ttu-id="b795f-112">要素と属性</span><span class="sxs-lookup"><span data-stu-id="b795f-112">Elements and attributes</span></span>
+
+<span data-ttu-id="b795f-113">スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="b795f-113">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+  
+### <a name="parent-elements"></a><span data-ttu-id="b795f-114">親要素</span><span class="sxs-lookup"><span data-stu-id="b795f-114">Parent elements</span></span>
+
+|<span data-ttu-id="b795f-115">**要素**</span><span class="sxs-lookup"><span data-stu-id="b795f-115">**Element**</span></span>|<span data-ttu-id="b795f-116">**型**</span><span class="sxs-lookup"><span data-stu-id="b795f-116">**Type**</span></span>|<span data-ttu-id="b795f-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="b795f-117">**Description**</span></span>|
+|:-----|:-----|:-----|
+|[<span data-ttu-id="b795f-118">天気</span><span class="sxs-lookup"><span data-stu-id="b795f-118">weather</span></span>](weather-element-weatherdata-elementoutlook-weather-information-schema.md) <br/> |[<span data-ttu-id="b795f-119">weatherType</span><span class="sxs-lookup"><span data-stu-id="b795f-119">weatherType</span></span>](weathertype-complextype-outlook-weather-information-schema.md) <br/> |<span data-ttu-id="b795f-120">場所の気象条件を指定します。</span><span class="sxs-lookup"><span data-stu-id="b795f-120">Specifies the weather conditions of a location.</span></span>  <br/> |
+   
+### <a name="child-elements"></a><span data-ttu-id="b795f-121">子要素</span><span class="sxs-lookup"><span data-stu-id="b795f-121">Child elements</span></span>
+
+<span data-ttu-id="b795f-122">なし。</span><span class="sxs-lookup"><span data-stu-id="b795f-122">None.</span></span>
+  
+### <a name="attributes"></a><span data-ttu-id="b795f-123">属性</span><span class="sxs-lookup"><span data-stu-id="b795f-123">Attributes</span></span>
+
+|<span data-ttu-id="b795f-124">**属性**</span><span class="sxs-lookup"><span data-stu-id="b795f-124">**Attribute**</span></span>|<span data-ttu-id="b795f-125">**型**</span><span class="sxs-lookup"><span data-stu-id="b795f-125">**Type**</span></span>|<span data-ttu-id="b795f-126">**必須**</span><span class="sxs-lookup"><span data-stu-id="b795f-126">**Required**</span></span>|<span data-ttu-id="b795f-127">**説明**</span><span class="sxs-lookup"><span data-stu-id="b795f-127">**Description**</span></span>|<span data-ttu-id="b795f-128">**使用可能な値**</span><span class="sxs-lookup"><span data-stu-id="b795f-128">**Possible values**</span></span>|
+|:-----|:-----|:-----|:-----|:-----|
+|<span data-ttu-id="b795f-129">date</span><span class="sxs-lookup"><span data-stu-id="b795f-129">date</span></span>  <br/> |<span data-ttu-id="b795f-130">xs:date</span><span class="sxs-lookup"><span data-stu-id="b795f-130">xs:date</span></span>  <br/> |<span data-ttu-id="b795f-131">必須</span><span class="sxs-lookup"><span data-stu-id="b795f-131">required</span></span>  <br/> |<span data-ttu-id="b795f-132">今日の日付を指定します。</span><span class="sxs-lookup"><span data-stu-id="b795f-132">Specifies today's date.</span></span>  <br/> |<span data-ttu-id="b795f-133">型 xs:date の値</span><span class="sxs-lookup"><span data-stu-id="b795f-133">A value of the type xs:date</span></span>  <br/> |
+|<span data-ttu-id="b795f-134">1 日</span><span class="sxs-lookup"><span data-stu-id="b795f-134">day</span></span>  <br/> |<span data-ttu-id="b795f-135">xs:string</span><span class="sxs-lookup"><span data-stu-id="b795f-135">xs:string</span></span>  <br/> |<span data-ttu-id="b795f-136">省略可能</span><span class="sxs-lookup"><span data-stu-id="b795f-136">optional</span></span>  <br/> |<span data-ttu-id="b795f-137">予測の 1 日を指定します。</span><span class="sxs-lookup"><span data-stu-id="b795f-137">Specifies a day for the forecast.</span></span>  <br/> |<span data-ttu-id="b795f-138">値の型の使用されています</span><span class="sxs-lookup"><span data-stu-id="b795f-138">A value of the type xs:string</span></span>  <br/> |
+|<span data-ttu-id="b795f-139">feelslike</span><span class="sxs-lookup"><span data-stu-id="b795f-139">feelslike</span></span>  <br/> |<span data-ttu-id="b795f-140">xs:integer</span><span class="sxs-lookup"><span data-stu-id="b795f-140">xs:integer</span></span>  <br/> |<span data-ttu-id="b795f-141">必須</span><span class="sxs-lookup"><span data-stu-id="b795f-141">required</span></span>  <br/> |<span data-ttu-id="b795f-142">ように現在の天気予報の気の温度を指定します。</span><span class="sxs-lookup"><span data-stu-id="b795f-142">Specifies the temperature of how the current weather feels like.</span></span>  <br/> |<span data-ttu-id="b795f-143">型 xs:integer の値</span><span class="sxs-lookup"><span data-stu-id="b795f-143">A value of the type xs:integer</span></span>  <br/> |
+|<span data-ttu-id="b795f-144">湿度</span><span class="sxs-lookup"><span data-stu-id="b795f-144">humidity</span></span>  <br/> |<span data-ttu-id="b795f-145">xs:integer</span><span class="sxs-lookup"><span data-stu-id="b795f-145">xs:integer</span></span>  <br/> |<span data-ttu-id="b795f-146">必須</span><span class="sxs-lookup"><span data-stu-id="b795f-146">required</span></span>  <br/> |<span data-ttu-id="b795f-147">現在湿度の数値の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="b795f-147">Specifies the current numerical humidity value.</span></span>  <br/> |<span data-ttu-id="b795f-148">型 xs:integer の値</span><span class="sxs-lookup"><span data-stu-id="b795f-148">A value of the type xs:integer</span></span>  <br/> |
+|<span data-ttu-id="b795f-149">observationpoint</span><span class="sxs-lookup"><span data-stu-id="b795f-149">observationpoint</span></span>  <br/> |<span data-ttu-id="b795f-150">xs:string</span><span class="sxs-lookup"><span data-stu-id="b795f-150">xs:string</span></span>  <br/> |<span data-ttu-id="b795f-151">必須</span><span class="sxs-lookup"><span data-stu-id="b795f-151">required</span></span>  <br/> |<span data-ttu-id="b795f-152">現在の気象情報を確認する場所を指定します。</span><span class="sxs-lookup"><span data-stu-id="b795f-152">Specifies where the current weather information is observed from.</span></span>  <br/> |<span data-ttu-id="b795f-153">値の型の使用されています</span><span class="sxs-lookup"><span data-stu-id="b795f-153">A value of the type xs:string</span></span>  <br/> |
+|<span data-ttu-id="b795f-154">observationtime</span><span class="sxs-lookup"><span data-stu-id="b795f-154">observationtime</span></span>  <br/> |<span data-ttu-id="b795f-155">xs:time</span><span class="sxs-lookup"><span data-stu-id="b795f-155">xs:time</span></span>  <br/> |<span data-ttu-id="b795f-156">必須</span><span class="sxs-lookup"><span data-stu-id="b795f-156">required</span></span>  <br/> |<span data-ttu-id="b795f-157">現在の気象情報を確認するときを指定します。</span><span class="sxs-lookup"><span data-stu-id="b795f-157">Specifies when the current weather information is observed at.</span></span>  <br/> |<span data-ttu-id="b795f-158">型 xs:time の値</span><span class="sxs-lookup"><span data-stu-id="b795f-158">A value of the type xs:time</span></span>  <br/> |
+|<span data-ttu-id="b795f-159">shortday</span><span class="sxs-lookup"><span data-stu-id="b795f-159">shortday</span></span>  <br/> |<span data-ttu-id="b795f-160">xs:string</span><span class="sxs-lookup"><span data-stu-id="b795f-160">xs:string</span></span>  <br/> |<span data-ttu-id="b795f-161">省略可能</span><span class="sxs-lookup"><span data-stu-id="b795f-161">optional</span></span>  <br/> |<span data-ttu-id="b795f-162">省略形で 1 日を指定します。</span><span class="sxs-lookup"><span data-stu-id="b795f-162">Specifies a day in abbreviated form.</span></span>  <br/> |<span data-ttu-id="b795f-163">値の型の使用されています</span><span class="sxs-lookup"><span data-stu-id="b795f-163">A value of the type xs:string</span></span>  <br/> |
+|<span data-ttu-id="b795f-164">skycode</span><span class="sxs-lookup"><span data-stu-id="b795f-164">skycode</span></span>  <br/> |<span data-ttu-id="b795f-165">xs:integer</span><span class="sxs-lookup"><span data-stu-id="b795f-165">xs:integer</span></span>  <br/> |<span data-ttu-id="b795f-166">必須</span><span class="sxs-lookup"><span data-stu-id="b795f-166">required</span></span>  <br/> |<span data-ttu-id="b795f-167">現在の気象条件に整数コードを指定します。</span><span class="sxs-lookup"><span data-stu-id="b795f-167">Specifies an integer code for the current weather conditions.</span></span>  <br/> |<span data-ttu-id="b795f-168">型 xs:integer の値</span><span class="sxs-lookup"><span data-stu-id="b795f-168">A value of the type xs:integer</span></span>  <br/> |
+|<span data-ttu-id="b795f-169">skytext</span><span class="sxs-lookup"><span data-stu-id="b795f-169">skytext</span></span>  <br/> |<span data-ttu-id="b795f-170">xs:string</span><span class="sxs-lookup"><span data-stu-id="b795f-170">xs:string</span></span>  <br/> |<span data-ttu-id="b795f-171">必須</span><span class="sxs-lookup"><span data-stu-id="b795f-171">required</span></span>  <br/> |<span data-ttu-id="b795f-172">現在の気象条件を記述する 1、2 の単語を指定します。</span><span class="sxs-lookup"><span data-stu-id="b795f-172">Specifies one to two words describing current weather conditions.</span></span>  <br/> |<span data-ttu-id="b795f-173">値の型の使用されています</span><span class="sxs-lookup"><span data-stu-id="b795f-173">A value of the type xs:string</span></span>  <br/> |
+|<span data-ttu-id="b795f-174">温度</span><span class="sxs-lookup"><span data-stu-id="b795f-174">temperature</span></span>  <br/> |<span data-ttu-id="b795f-175">xs:integer</span><span class="sxs-lookup"><span data-stu-id="b795f-175">xs:integer</span></span>  <br/> |<span data-ttu-id="b795f-176">必須</span><span class="sxs-lookup"><span data-stu-id="b795f-176">required</span></span>  <br/> |<span data-ttu-id="b795f-177">場所の現在の温度を指定します。</span><span class="sxs-lookup"><span data-stu-id="b795f-177">Specifies the current temperature of the location.</span></span>  <br/> |<span data-ttu-id="b795f-178">型 xs:integer の値</span><span class="sxs-lookup"><span data-stu-id="b795f-178">A value of the type xs:integer</span></span>  <br/> |
+|<span data-ttu-id="b795f-179">winddisplay</span><span class="sxs-lookup"><span data-stu-id="b795f-179">winddisplay</span></span>  <br/> |<span data-ttu-id="b795f-180">xs:string</span><span class="sxs-lookup"><span data-stu-id="b795f-180">xs:string</span></span>  <br/> |<span data-ttu-id="b795f-181">必須</span><span class="sxs-lookup"><span data-stu-id="b795f-181">required</span></span>  <br/> |<span data-ttu-id="b795f-182">現在の風の状況を説明する文字列。</span><span class="sxs-lookup"><span data-stu-id="b795f-182">A string that describes the current wind conditions.</span></span>  <br/> |<span data-ttu-id="b795f-183">値の型の使用されています</span><span class="sxs-lookup"><span data-stu-id="b795f-183">A value of the type xs:string</span></span>  <br/> |
+|<span data-ttu-id="b795f-184">風速</span><span class="sxs-lookup"><span data-stu-id="b795f-184">windspeed</span></span>  <br/> |<span data-ttu-id="b795f-185">xs:integer</span><span class="sxs-lookup"><span data-stu-id="b795f-185">xs:integer</span></span>  <br/> |<span data-ttu-id="b795f-186">必須</span><span class="sxs-lookup"><span data-stu-id="b795f-186">required</span></span>  <br/> |<span data-ttu-id="b795f-187">現在の数値の風の速度の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="b795f-187">Specifies the current numerical wind speed value.</span></span>  <br/> |<span data-ttu-id="b795f-188">型 xs:integer の値</span><span class="sxs-lookup"><span data-stu-id="b795f-188">A value of the type xs:integer</span></span>  <br/> |
+   
+

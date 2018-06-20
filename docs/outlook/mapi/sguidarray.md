@@ -19,17 +19,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19803905"
 ---
-# <a name="sguidarray"></a><span data-ttu-id="f0fe5-103">SGuidArray</span><span class="sxs-lookup"><span data-stu-id="f0fe5-103">SGuidArray</span></span>
+# <a name="sguidarray"></a><span data-ttu-id="28d16-103">SGuidArray</span><span class="sxs-lookup"><span data-stu-id="28d16-103">SGuidArray</span></span>
 
   
   
-<span data-ttu-id="f0fe5-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="f0fe5-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="28d16-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="28d16-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="f0fe5-105">PT_MV_CLSID の種類のプロパティを説明するために使用する[GUID](guid.md)構造体の配列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="f0fe5-105">Contains an array of [GUID](guid.md) structures that are used to describe a property of type PT_MV_CLSID.</span></span> 
+<span data-ttu-id="28d16-105">PT_MV_CLSID の種類のプロパティを説明するために使用する[GUID](guid.md)構造体の配列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="28d16-105">Contains an array of [GUID](guid.md) structures that are used to describe a property of type PT_MV_CLSID.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="f0fe5-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="f0fe5-106">Header file:</span></span>  <br/> |<span data-ttu-id="f0fe5-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="f0fe5-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="28d16-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="28d16-106">Header file:</span></span>  <br/> |<span data-ttu-id="28d16-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="28d16-107">Mapidefs.h</span></span>  <br/> |
    
 ```cpp
 typedef struct _SGuidArray
@@ -40,28 +40,28 @@ typedef struct _SGuidArray
 
 ```
 
-## <a name="members"></a><span data-ttu-id="f0fe5-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="f0fe5-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="28d16-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="28d16-108">Members</span></span>
 
- <span data-ttu-id="f0fe5-109">**あう**</span><span class="sxs-lookup"><span data-stu-id="f0fe5-109">**cValues**</span></span>
+ <span data-ttu-id="28d16-109">**あう**</span><span class="sxs-lookup"><span data-stu-id="28d16-109">**cValues**</span></span>
   
-> <span data-ttu-id="f0fe5-110">**Lpguid**メンバーが指す配列内の値の数です。</span><span class="sxs-lookup"><span data-stu-id="f0fe5-110">Count of values in the array pointed to by the **lpguid** member.</span></span> 
+> <span data-ttu-id="28d16-110">**Lpguid**メンバーが指す配列内の値の数です。</span><span class="sxs-lookup"><span data-stu-id="28d16-110">Count of values in the array pointed to by the **lpguid** member.</span></span> 
     
- <span data-ttu-id="f0fe5-111">**lpguid**</span><span class="sxs-lookup"><span data-stu-id="f0fe5-111">**lpguid**</span></span>
+ <span data-ttu-id="28d16-111">**lpguid**</span><span class="sxs-lookup"><span data-stu-id="28d16-111">**lpguid**</span></span>
   
-> <span data-ttu-id="f0fe5-112">クラス識別子の値を格納する**GUID**構造体の配列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="f0fe5-112">Pointer to an array of **GUID** structures that contains the class identifier values.</span></span> 
+> <span data-ttu-id="28d16-112">クラス識別子の値を格納する**GUID**構造体の配列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="28d16-112">Pointer to an array of **GUID** structures that contains the class identifier values.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="f0fe5-113">Remarks</span><span class="sxs-lookup"><span data-stu-id="f0fe5-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="28d16-113">備考</span><span class="sxs-lookup"><span data-stu-id="28d16-113">Remarks</span></span>
 
-<span data-ttu-id="f0fe5-114">PT_MV_CLSID の詳細については、[プロパティの種類の一覧](property-types.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f0fe5-114">For more information about PT_MV_CLSID, see [List of Property Types](property-types.md).</span></span>
+<span data-ttu-id="28d16-114">PT_MV_CLSID の詳細については、[プロパティの種類の一覧](property-types.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="28d16-114">For more information about PT_MV_CLSID, see [List of Property Types](property-types.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="f0fe5-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="f0fe5-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="28d16-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="28d16-115">See also</span></span>
 
 
 
-[<span data-ttu-id="f0fe5-116">GUID</span><span class="sxs-lookup"><span data-stu-id="f0fe5-116">GUID</span></span>](guid.md)
+[<span data-ttu-id="28d16-116">GUID</span><span class="sxs-lookup"><span data-stu-id="28d16-116">GUID</span></span>](guid.md)
   
-[<span data-ttu-id="f0fe5-117">SPropValue</span><span class="sxs-lookup"><span data-stu-id="f0fe5-117">SPropValue</span></span>](spropvalue.md)
+[<span data-ttu-id="28d16-117">SPropValue</span><span class="sxs-lookup"><span data-stu-id="28d16-117">SPropValue</span></span>](spropvalue.md)
 
 
-[<span data-ttu-id="f0fe5-118">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="f0fe5-118">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="28d16-118">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="28d16-118">MAPI Structures</span></span>](mapi-structures.md)
 
