@@ -34,7 +34,7 @@ ms.locfileid: "19805487"
    
 ### <a name="return-value"></a>�߂�l
 
-文字列
+String
   
 ## <a name="remarks"></a>注釈
 
