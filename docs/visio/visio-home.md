@@ -1,0 +1,58 @@
+---
+title: Visio
+manager: soliver
+ms.date: 04/20/2016
+ms.audience: Developer
+ms.topic: overview
+localization_priority: Normal
+ms.assetid: f5310aa0-75f5-4c33-897e-8cae5de2100a
+description: ソリューションを開発し、Visio のカスタマイズの方法を説明した内容、サンプル コード、SDK および API のマニュアル、VBA 参照、トレーニング、および技術記事を検索します。
+ms.openlocfilehash: 185d58b1ea556488bb1c101231c95614319c45f3
+ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19806771"
+---
+# <a name="visio"></a><span data-ttu-id="4b1a9-103">Visio</span><span class="sxs-lookup"><span data-stu-id="4b1a9-103">Visio</span></span>
+
+<span data-ttu-id="4b1a9-104">ソリューションを開発し、Visio のカスタマイズの方法を説明した内容、サンプル コード、SDK および API のマニュアル、VBA 参照、トレーニング、および技術記事を検索します。</span><span class="sxs-lookup"><span data-stu-id="4b1a9-104">Find how-to content, sample code, SDK and API documentation, VBA references, training, and technical articles for developing solutions and customizing Visio.</span></span>
+  
+> [!NOTE]
+> <span data-ttu-id="4b1a9-p101">[!メモ] [複数のプラットフォーム](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability)間で Office エクスペリエンスを拡張するソリューションを開発することに関心がありますか?新しい [Office アドイン モデル](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4b1a9-p101">Interested in developing solutions that extend the Office experience across [multiple platforms](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability)? Check out the new [Office Add-ins model](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins).</span></span> 
+  
+### <a name="viewed-most"></a><span data-ttu-id="4b1a9-107">最も表示</span><span class="sxs-lookup"><span data-stu-id="4b1a9-107">Viewed most</span></span>
+  
+- [<span data-ttu-id="4b1a9-108">Visio VBA リファレンス</span><span class="sxs-lookup"><span data-stu-id="4b1a9-108">Visio VBA reference</span></span>](http://msdn.microsoft.com/library/b6834d21-5898-4dd9-af2b-9ffeb1b92a1c%28Office.15%29.aspx)
+  
+- <span data-ttu-id="4b1a9-109">[Visio ファイルの [Web 参照](http://msdn.microsoft.com/library/83e06e12-2b4d-2bba-71e3-cb65307a3af0%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="4b1a9-109">[Visio Save as Web reference](http://msdn.microsoft.com/library/83e06e12-2b4d-2bba-71e3-cb65307a3af0%28Office.15%29.aspx)</span></span>
+  
+- [<span data-ttu-id="4b1a9-110">Visio Viewer のリファレンス</span><span class="sxs-lookup"><span data-stu-id="4b1a9-110">Visio Viewer reference</span></span>](http://msdn.microsoft.com/library/6ee197eb-5d40-61a8-4ba4-8c13c9dc3a7e%28Office.15%29.aspx)
+  
+- [<span data-ttu-id="4b1a9-111">Visio シェイプ シート リファレンス</span><span class="sxs-lookup"><span data-stu-id="4b1a9-111">Visio ShapeSheet reference</span></span>](visio-shapesheet-reference.md)
+  
+- [<span data-ttu-id="4b1a9-112">Visio ファイル形式リファレンス</span><span class="sxs-lookup"><span data-stu-id="4b1a9-112">Visio file format reference</span></span>](visio-file-format-reference.md)
+  
+- [<span data-ttu-id="4b1a9-113">Visio 2010</span><span class="sxs-lookup"><span data-stu-id="4b1a9-113">Visio 2010</span></span>](http://msdn.microsoft.com/library/4076d9a1-2c7f-499f-87c1-7ae515b7b1d2%28Office.15%29.aspx)
+  
+### <a name="downloads"></a><span data-ttu-id="4b1a9-114">ダウンロード</span><span class="sxs-lookup"><span data-stu-id="4b1a9-114">Downloads</span></span>
+  
+- [<span data-ttu-id="4b1a9-115">Visio 2013 SDK ダウンロード</span><span class="sxs-lookup"><span data-stu-id="4b1a9-115">Visio 2013 SDK download</span></span>](http://www.microsoft.com/en-us/download/details.aspx?id=36825)
+  
+### <a name="office-add-ins"></a><span data-ttu-id="4b1a9-116">Office アドイン</span><span class="sxs-lookup"><span data-stu-id="4b1a9-116">Office Add-ins</span></span>
+  
+- [<span data-ttu-id="4b1a9-117">開始</span><span class="sxs-lookup"><span data-stu-id="4b1a9-117">Get started</span></span>](https://dev.office.com/getting-started/addins)
+  
+- [<span data-ttu-id="4b1a9-118">プラットフォームの概要</span><span class="sxs-lookup"><span data-stu-id="4b1a9-118">Platform overview</span></span>](https://msdn.microsoft.com/EN-US/library/office/jj220082.aspx)
+  
+### <a name="other-resources"></a><span data-ttu-id="4b1a9-119">その他の技術情報</span><span class="sxs-lookup"><span data-stu-id="4b1a9-119">Other resources</span></span>
+  
+- [<span data-ttu-id="4b1a9-120">Office VBA オブジェクト ライブラリ リファレンス</span><span class="sxs-lookup"><span data-stu-id="4b1a9-120">Office VBA Object library reference</span></span>](http://msdn.microsoft.com/library/727c4e1c-e13c-7bac-e833-b1322607dfd3%28Office.15%29.aspx)
+  
+- [<span data-ttu-id="4b1a9-121">Office VBA 言語リファレンス</span><span class="sxs-lookup"><span data-stu-id="4b1a9-121">Office VBA language reference</span></span>](http://msdn.microsoft.com/library/9c1e8386-0309-c52c-856b-963220382eb8%28Office.15%29.aspx)
+  
+- [<span data-ttu-id="4b1a9-122">Open XML SDK</span><span class="sxs-lookup"><span data-stu-id="4b1a9-122">Open XML SDK</span></span>](http://msdn.microsoft.com/library/f6a9ae68-7989-4208-97f5-3c945137a0ab%28Office.15%29.aspx)
+  
+- [<span data-ttu-id="4b1a9-123">Office 用 VSTO アドイン</span><span class="sxs-lookup"><span data-stu-id="4b1a9-123">VSTO Add-ins for Office</span></span>](https://msdn.microsoft.com/en-us/library/jj620922.aspx)
+  
+

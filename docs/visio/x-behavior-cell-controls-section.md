@@ -1,0 +1,52 @@
+---
+title: '[X Behavior] セル ([Controls] セクション)'
+manager: soliver
+ms.date: 03/09/2015
+ms.audience: Developer
+ms.topic: reference
+f1_keywords:
+- Vis_DSS.chm82251285
+localization_priority: Normal
+ms.assetid: 82423d08-b6ce-0f23-8b61-354c3e5f323e
+description: X の動作の種類を制御・ コントロール ハンドルの座標は、ハンドルを移動した後が発生します。
+ms.openlocfilehash: 004ad407941aa15cec3ae94188f590ec6513c4da
+ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19806802"
+---
+# <a name="x-behavior-cell-controls-section"></a><span data-ttu-id="fb5c0-103">[X Behavior] セル ([Controls] セクション)</span><span class="sxs-lookup"><span data-stu-id="fb5c0-103">X Behavior Cell (Controls Section)</span></span>
+
+<span data-ttu-id="fb5c0-104">*X*の動作の種類を制御・ コントロール ハンドルの座標は、ハンドルを移動した後が発生します。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-104">Controls the type of behavior the  *x*  -coordinate of the control handle will exhibit after the handle is moved.</span></span> 
+  
+|<span data-ttu-id="fb5c0-105">**値**</span><span class="sxs-lookup"><span data-stu-id="fb5c0-105">**Value**</span></span>|<span data-ttu-id="fb5c0-106">**動作**</span><span class="sxs-lookup"><span data-stu-id="fb5c0-106">**Behavior**</span></span>|<span data-ttu-id="fb5c0-107">**定義**</span><span class="sxs-lookup"><span data-stu-id="fb5c0-107">**Definition**</span></span>|<span data-ttu-id="fb5c0-108">**オートメーション定数**</span><span class="sxs-lookup"><span data-stu-id="fb5c0-108">**Automation constant**</span></span>|
+|:-----|:-----|:-----|:-----|
+| <span data-ttu-id="fb5c0-109">0</span><span class="sxs-lookup"><span data-stu-id="fb5c0-109">0</span></span>  <br/> | <span data-ttu-id="fb5c0-110">比例</span><span class="sxs-lookup"><span data-stu-id="fb5c0-110">Proportional</span></span>  <br/> | <span data-ttu-id="fb5c0-111">コントロール ハンドルを移動することができ、それが伸縮するときは、図形の縦横比にも移動します。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-111">The control handle can be moved, and it also moves in proportion with the shape when it is stretched.</span></span>  <br/> |<span data-ttu-id="fb5c0-112">**visCtlProportional**</span><span class="sxs-lookup"><span data-stu-id="fb5c0-112">**visCtlProportional**</span></span> <br/> |
+| <span data-ttu-id="fb5c0-113">1</span><span class="sxs-lookup"><span data-stu-id="fb5c0-113">1</span></span>  <br/> | <span data-ttu-id="fb5c0-114">プロポーショナル (ロック)</span><span class="sxs-lookup"><span data-stu-id="fb5c0-114">Proportional locked</span></span>  <br/> | <span data-ttu-id="fb5c0-115">コントロール ハンドル、図形に比例して移動しますが、コントロール ハンドル自体は移動できません。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-115">The control handle moves in proportion with the shape but the control handle itself cannot be moved.</span></span>  <br/> |<span data-ttu-id="fb5c0-116">**visCtlLocked**</span><span class="sxs-lookup"><span data-stu-id="fb5c0-116">**visCtlLocked**</span></span> <br/> |
+| <span data-ttu-id="fb5c0-117">2</span><span class="sxs-lookup"><span data-stu-id="fb5c0-117">2</span></span>  <br/> | <span data-ttu-id="fb5c0-118">左端からのオフセットします。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-118">Offset from left edge</span></span>  <br/> | <span data-ttu-id="fb5c0-119">コントロール ハンドルにオフセット図形の左端から一定の距離です。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-119">The control handle is offset a constant distance from the left side of the shape.</span></span>  <br/> |<span data-ttu-id="fb5c0-120">**visCtlOffsetMin**</span><span class="sxs-lookup"><span data-stu-id="fb5c0-120">**visCtlOffsetMin**</span></span> <br/> |
+| <span data-ttu-id="fb5c0-121">3</span><span class="sxs-lookup"><span data-stu-id="fb5c0-121">3</span></span>  <br/> | <span data-ttu-id="fb5c0-122">中心からオフセットします。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-122">Offset from center</span></span>  <br/> | <span data-ttu-id="fb5c0-123">コントロール ハンドルにオフセット図形の中心から一定の距離です。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-123">The control handle is offset a constant distance from the center of the shape.</span></span>  <br/> |<span data-ttu-id="fb5c0-124">**visCtlOffsetMid**</span><span class="sxs-lookup"><span data-stu-id="fb5c0-124">**visCtlOffsetMid**</span></span> <br/> |
+| <span data-ttu-id="fb5c0-125">4</span><span class="sxs-lookup"><span data-stu-id="fb5c0-125">4</span></span>  <br/> | <span data-ttu-id="fb5c0-126">右端からオフセットします。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-126">Offset from right edge</span></span>  <br/> | <span data-ttu-id="fb5c0-127">コントロール ハンドルにオフセット図形の右側から一定の距離です。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-127">The control handle is offset a constant distance from the right side of the shape.</span></span>  <br/> |<span data-ttu-id="fb5c0-128">**visCtlOffsetMax**</span><span class="sxs-lookup"><span data-stu-id="fb5c0-128">**visCtlOffsetMax**</span></span> <br/> |
+| <span data-ttu-id="fb5c0-129">5</span><span class="sxs-lookup"><span data-stu-id="fb5c0-129">5</span></span>  <br/> | <span data-ttu-id="fb5c0-130">比例、非表示</span><span class="sxs-lookup"><span data-stu-id="fb5c0-130">Proportional, hidden</span></span>  <br/> | <span data-ttu-id="fb5c0-131">0 ですが、コントロール ハンドルと同じが表示されていません。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-131">Same as 0, but the control handle is not visible.</span></span>  <br/> |<span data-ttu-id="fb5c0-132">**visCtlProportionalHidden**</span><span class="sxs-lookup"><span data-stu-id="fb5c0-132">**visCtlProportionalHidden**</span></span> <br/> |
+| <span data-ttu-id="fb5c0-133">6</span><span class="sxs-lookup"><span data-stu-id="fb5c0-133">6</span></span>  <br/> | <span data-ttu-id="fb5c0-134">プロポーショナル ロック、非表示</span><span class="sxs-lookup"><span data-stu-id="fb5c0-134">Proportional locked, hidden</span></span>  <br/> | <span data-ttu-id="fb5c0-135">1 ですが、コントロール ハンドルと同じが表示されていません。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-135">Same as 1, but the control handle is not visible.</span></span>  <br/> |<span data-ttu-id="fb5c0-136">**visCtlLockedHiddenv**</span><span class="sxs-lookup"><span data-stu-id="fb5c0-136">**visCtlLockedHiddenv**</span></span> <br/> |
+| <span data-ttu-id="fb5c0-137">7</span><span class="sxs-lookup"><span data-stu-id="fb5c0-137">7</span></span>  <br/> | <span data-ttu-id="fb5c0-138">非表示、左の端からのオフセットします。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-138">Offset from left edge, hidden</span></span>  <br/> | <span data-ttu-id="fb5c0-139">2、ですが、コントロール ハンドルと同じが表示されていません。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-139">Same as 2, but the control handle is not visible.</span></span>  <br/> |<span data-ttu-id="fb5c0-140">**visCtlOffsetMinHidden**</span><span class="sxs-lookup"><span data-stu-id="fb5c0-140">**visCtlOffsetMinHidden**</span></span> <br/> |
+| <span data-ttu-id="fb5c0-141">8</span><span class="sxs-lookup"><span data-stu-id="fb5c0-141">8</span></span>  <br/> | <span data-ttu-id="fb5c0-142">非表示にして、中心からオフセットします。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-142">Offset from center, hidden</span></span>  <br/> | <span data-ttu-id="fb5c0-143">3、ですが、コントロール ハンドルと同じが表示されていません。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-143">Same as 3, but the control handle is not visible.</span></span>  <br/> |<span data-ttu-id="fb5c0-144">**visCtlOffsetMidHidden**</span><span class="sxs-lookup"><span data-stu-id="fb5c0-144">**visCtlOffsetMidHidden**</span></span> <br/> |
+| <span data-ttu-id="fb5c0-145">9</span><span class="sxs-lookup"><span data-stu-id="fb5c0-145">9</span></span>  <br/> | <span data-ttu-id="fb5c0-146">非表示、右端からオフセットします。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-146">Offset from right edge, hidden</span></span>  <br/> | <span data-ttu-id="fb5c0-147">4 ですが、コントロール ハンドルと同じが表示されていません。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-147">Same as 4, but the control handle is not visible.</span></span>  <br/> |<span data-ttu-id="fb5c0-148">**visCtlOffsetMaxHidden**</span><span class="sxs-lookup"><span data-stu-id="fb5c0-148">**visCtlOffsetMaxHidden**</span></span> <br/> |
+   
+## <a name="remarks"></a><span data-ttu-id="fb5c0-149">備考</span><span class="sxs-lookup"><span data-stu-id="fb5c0-149">Remarks</span></span>
+
+<span data-ttu-id="fb5c0-150">別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[X Behavior] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-150">To get a reference to the X Behavior cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+  
+|||
+|:-----|:-----|
+| <span data-ttu-id="fb5c0-151">セル名:</span><span class="sxs-lookup"><span data-stu-id="fb5c0-151">Cell name:</span></span>  <br/> | <span data-ttu-id="fb5c0-152">制御します。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-152">Controls.</span></span>  <span data-ttu-id="fb5c0-153">*名*です。XConwhere を制御します。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-153">*name*  .XConwhere Controls.</span></span>  <span data-ttu-id="fb5c0-154">*名*は、コントロールの行の名前です。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-154">*name*  is the name of the controls row.</span></span>  <br/> |
+   
+<span data-ttu-id="fb5c0-155">プログラムから、インデックスによって [X Behavior] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="fb5c0-155">To get a reference to the X Behavior cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+  
+|||
+|:-----|:-----|
+| <span data-ttu-id="fb5c0-156">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="fb5c0-156">Section index:</span></span>  <br/> |<span data-ttu-id="fb5c0-157">**visSectionControls**</span><span class="sxs-lookup"><span data-stu-id="fb5c0-157">**visSectionControls**</span></span> <br/> |
+| <span data-ttu-id="fb5c0-158">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="fb5c0-158">Row index:</span></span>  <br/> |<span data-ttu-id="fb5c0-159">**visRowControl** +  *i* 、 *i* = 0, 1, 2.</span><span class="sxs-lookup"><span data-stu-id="fb5c0-159">**visRowControl** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
+| <span data-ttu-id="fb5c0-160">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="fb5c0-160">Cell index:</span></span>  <br/> |<span data-ttu-id="fb5c0-161">**visCtlXCon**</span><span class="sxs-lookup"><span data-stu-id="fb5c0-161">**visCtlXCon**</span></span> <br/> |
+   
+
