@@ -16,7 +16,7 @@ ms.openlocfilehash: a784c91a04cce572c8e30085b1760c28296a1d53
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19801861"
 ---
 # <a name="pidlidcleanglobalobjectid-canonical-property"></a>PidLidCleanGlobalObjectId の標準的なプロパティ
@@ -35,7 +35,7 @@ ms.locfileid: "19801861"
 |データを入力します。  <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 このプロパティの形式は、 **LID_GLOBAL_OBJID** ([PidLidGlobalObjectId](pidlidglobalobjectid-canonical-property.md)) のものと同じです。 このプロパティの値は、 **LID_GLOBAL_OBJID**YH、YL、M 以外の値に等しいである必要があり、D のフィールドは 0 である必要があります。 自体には、定期的な系列だけでなく、(孤立したインスタンスを含む)、定期的な系列のインスタンスを参照するすべてのオブジェクトには、このプロパティに対して同じ値があります。
   

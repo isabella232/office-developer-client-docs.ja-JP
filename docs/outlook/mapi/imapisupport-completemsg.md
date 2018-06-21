@@ -16,7 +16,7 @@ ms.openlocfilehash: db28d9684f1bb679ce36f99346f4ecc67a1a93e6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19800729"
 ---
 # <a name="imapisupportcompletemsg"></a>IMAPISupport::CompleteMsg
@@ -55,7 +55,7 @@ S_OK
   
 > 後処理が正常に完了しました。
     
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 **IMAPISupport::CompleteMsg**メソッドは、メッセージ ストア プロバイダーのサポートのオブジェクトに実装されており、トランスポート プロバイダーと緊密に結合されているメッセージ ストア プロバイダーによってのみ呼び出されます。 密結合のストア プロバイダーは、メッセージをポスト プロセスに MAPI スプーラーに指示するために**IMAPISupport::CompleteMsg**を呼び出します。 
   

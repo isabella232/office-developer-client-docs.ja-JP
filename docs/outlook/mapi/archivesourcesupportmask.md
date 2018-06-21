@@ -16,7 +16,7 @@ ms.openlocfilehash: 1e0c099783b4d44b1aaf746b07c77981c135ca9a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19799687"
 ---
 # <a name="archivesourcesupportmask"></a>ArchiveSourceSupportMask
@@ -37,7 +37,7 @@ Microsoft Office Outlook がストア内のフォルダーをスキャンし、�
 |プロパティの種類:  <br/> |PT_LONG  <br/> |
 |アクセスの種類:  <br/> |読み取り専用または読み取り/書き込みによってストア プロバイダー  <br/> |
    
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 ストア機能を提供するストア プロバイダーを実装する必要があります[IMAPIProp: IUnknown](imapipropiunknown.md) 、 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)の呼び出しに渡されたこれらのプロパティのいずれかのプロパティの有効なタグを返すとします。 これらのプロパティのいずれかのプロパティ タグが[IMAPIProp::GetProps](imapiprop-getprops.md)に渡されると、ストア プロバイダーを使用、正しいプロパティ値を返す必要があります。 ストア プロバイダーには、取得、またはこれらのプロパティを設定するには、 [HrGetOneProp](hrgetoneprop.md)と[HrSetOneProp](hrsetoneprop.md)を呼び出すことができます。 
   

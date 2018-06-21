@@ -16,7 +16,7 @@ ms.openlocfilehash: ad26cb9b77404d6470f7a8d787eb85edc5cce402
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19799667"
 ---
 # <a name="adrparm"></a>ADRPARM
@@ -160,7 +160,7 @@ DIALOG_SDI
   
 > ダイアログ ボックスに表示されるアドレスのエントリを提供できるアドレス帳コンテナーを制限する**SRestriction**構造体へのポインター。 
     
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 コモン アドレス] ダイアログ ボックスの動作と外観を制御するクライアントとサービス ・ プロバイダーによって使用されるは、 **ADRPARM**構造体です。 [アドレス] ダイアログ ボックスの 2 つの種類があります: モードレスとモーダルです。 **ADRPARM**構造体のメンバーのいくつかのダイアログ ボックスの両方のバージョンに適用しますが、いくつかは、2 つのバージョンのいずれかにのみ適用します。 次の表には、共通のアドレス] ダイアログ ボックスで、使用する**ADRPARM**構造体のメンバーが関連しています。 
   
