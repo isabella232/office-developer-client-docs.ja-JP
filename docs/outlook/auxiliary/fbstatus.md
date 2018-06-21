@@ -11,14 +11,14 @@ ms.openlocfilehash: 67d710f82856dc8ff4839c926018eef88d355f73
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19799316"
 ---
-# <a name="fbstatus"></a><span data-ttu-id="d4945-103">FBStatus</span><span class="sxs-lookup"><span data-stu-id="d4945-103">FBStatus</span></span>
+# <a name="fbstatus"></a><span data-ttu-id="aaa80-103">FBStatus</span><span class="sxs-lookup"><span data-stu-id="aaa80-103">FBStatus</span></span>
 
-<span data-ttu-id="d4945-104">空き/予約済みブロックの空き/予約済みの状態の列挙です。</span><span class="sxs-lookup"><span data-stu-id="d4945-104">An enumeration for the free/busy status of free/busy blocks.</span></span>
+<span data-ttu-id="aaa80-104">空き/予約済みブロックの空き/予約済みの状態の列挙です。</span><span class="sxs-lookup"><span data-stu-id="aaa80-104">An enumeration for the free/busy status of free/busy blocks.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="d4945-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="d4945-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="aaa80-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="aaa80-105">Quick info</span></span>
 
 ```cpp
 enum  
@@ -31,12 +31,12 @@ enum
 
 ```
 
-## <a name="remarks"></a><span data-ttu-id="d4945-106">備考</span><span class="sxs-lookup"><span data-stu-id="d4945-106">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="aaa80-106">備考</span><span class="sxs-lookup"><span data-stu-id="aaa80-106">Remarks</span></span>
 
-<span data-ttu-id="d4945-107">時間帯の空き/予約済みの状態では、カレンダー上の表示方法を決定します。**空き**、**予定あり**、**仮承諾**、または**不在時の Office**です。</span><span class="sxs-lookup"><span data-stu-id="d4945-107">The free/busy status of a block of time determines how it is displayed on a calendar: **Free**, **Busy**, **Tentative**, or **Out of Office**.</span></span> 
+<span data-ttu-id="aaa80-107">時間帯の空き/予約済みの状態では、カレンダー上の表示方法を決定します。**空き**、**予定あり**、**仮承諾**、または**不在時の Office**です。</span><span class="sxs-lookup"><span data-stu-id="aaa80-107">The free/busy status of a block of time determines how it is displayed on a calendar: **Free**, **Busy**, **Tentative**, or **Out of Office**.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="d4945-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="d4945-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="aaa80-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="aaa80-108">See also</span></span>
 
-- [<span data-ttu-id="d4945-109">FBBlock_1</span><span class="sxs-lookup"><span data-stu-id="d4945-109">FBBlock_1</span></span>](fbblock_1.md)
-- [<span data-ttu-id="d4945-110">IEnumFBBlock::Next</span><span class="sxs-lookup"><span data-stu-id="d4945-110">IEnumFBBlock::Next</span></span>](ienumfbblock-next.md)
+- [<span data-ttu-id="aaa80-109">FBBlock_1</span><span class="sxs-lookup"><span data-stu-id="aaa80-109">FBBlock_1</span></span>](fbblock_1.md)
+- [<span data-ttu-id="aaa80-110">IEnumFBBlock::Next</span><span class="sxs-lookup"><span data-stu-id="aaa80-110">IEnumFBBlock::Next</span></span>](ienumfbblock-next.md)
 
