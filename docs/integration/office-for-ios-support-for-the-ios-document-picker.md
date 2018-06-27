@@ -8,36 +8,36 @@ ms.assetid: 802224ef-6eea-4929-824c-507da1c073a5
 description: ドキュメント プロバイダー拡張機能を使用して Office for iOS を iOS ドキュメント ピッカーと統合することにより、別のドキュメント プロバイダーによって保存されたファイルを Office で開けるようになります。
 ms.openlocfilehash: 101e3cc248f994fe449a74c6c37f788fad8beed5
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799267"
 ---
-# <a name="office-for-ios-support-for-the-ios-document-picker"></a><span data-ttu-id="cb811-103">iOS ドキュメント ピッカーのための Office for iOS のサポート</span><span class="sxs-lookup"><span data-stu-id="cb811-103">Office for iOS support for the iOS Document Picker</span></span>
+# <a name="office-for-ios-support-for-the-ios-document-picker"></a><span data-ttu-id="c9e52-103">iOS ドキュメント ピッカーのための Office for iOS のサポート</span><span class="sxs-lookup"><span data-stu-id="c9e52-103">Office for iOS support for the iOS Document Picker</span></span>
 
-<span data-ttu-id="cb811-104">ドキュメント プロバイダー拡張機能を使用して Office for iOS を iOS ドキュメント ピッカーと統合することにより、別のドキュメント プロバイダーによって保存されたファイルを Office で開けるようになります。</span><span class="sxs-lookup"><span data-stu-id="cb811-104">Office for iOS integrates with the iOS Document Picker by means of the Document Provider extension, which enables Office to open files stored by another document provider.</span></span>
+<span data-ttu-id="c9e52-104">ドキュメント プロバイダー拡張機能を使用して Office for iOS を iOS ドキュメント ピッカーと統合することにより、別のドキュメント プロバイダーによって保存されたファイルを Office で開けるようになります。</span><span class="sxs-lookup"><span data-stu-id="c9e52-104">Office for iOS integrates with the iOS Document Picker by means of the Document Provider extension, which enables Office to open files stored by another document provider.</span></span>
   
-<span data-ttu-id="cb811-p101">iOS 8.0 以降の Apple iOS のバージョンには、[アプリ拡張サポート](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214-CH20-SW1)が含まれています。これらの拡張機能を使用して、アプリケーションの機能をユーザーのデバイス上の他のアプリまたはコンテキストに拡張できます。Office for iOS を iOS ドキュメント ピッカーと統合するには、[ドキュメント プロバイダー拡張機能](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/FileProvider.html)を使用します。</span><span class="sxs-lookup"><span data-stu-id="cb811-p101">Versions of the Apple iOS starting with iOS 8.0 include [app extension support](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214-CH20-SW1). You can use these extensions to expand the functionality of your application into other apps or contexts on the user's device. To integrate Office for iOS with the iOS Document Picker, you use the [Document Provider extension](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/FileProvider.html).</span></span>
+<span data-ttu-id="c9e52-p101">iOS 8.0 以降の Apple iOS のバージョンには、[アプリ拡張サポート](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214-CH20-SW1)が含まれています。これらの拡張機能を使用して、アプリケーションの機能をユーザーのデバイス上の他のアプリまたはコンテキストに拡張できます。Office for iOS を iOS ドキュメント ピッカーと統合するには、[ドキュメント プロバイダー拡張機能](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/FileProvider.html)を使用します。</span><span class="sxs-lookup"><span data-stu-id="c9e52-p101">Versions of the Apple iOS starting with iOS 8.0 include [app extension support](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214-CH20-SW1). You can use these extensions to expand the functionality of your application into other apps or contexts on the user's device. To integrate Office for iOS with the iOS Document Picker, you use the [Document Provider extension](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/FileProvider.html).</span></span>
   
-<span data-ttu-id="cb811-108">ドキュメント プロバイダー拡張機能は次の 4 つの操作をサポートします。</span><span class="sxs-lookup"><span data-stu-id="cb811-108">The Document Provider extension supports four operations:</span></span>
+<span data-ttu-id="c9e52-108">ドキュメント プロバイダー拡張機能は次の 4 つの操作をサポートします。</span><span class="sxs-lookup"><span data-stu-id="c9e52-108">The Document Provider extension supports four operations:</span></span>
   
-- <span data-ttu-id="cb811-109">インポート</span><span class="sxs-lookup"><span data-stu-id="cb811-109">Import</span></span>
+- <span data-ttu-id="c9e52-109">Import</span><span class="sxs-lookup"><span data-stu-id="c9e52-109">Import</span></span>
     
-- <span data-ttu-id="cb811-110">エクスポート</span><span class="sxs-lookup"><span data-stu-id="cb811-110">Export</span></span>
+- <span data-ttu-id="c9e52-110">エクスポート</span><span class="sxs-lookup"><span data-stu-id="c9e52-110">Export</span></span>
     
-- <span data-ttu-id="cb811-111">開く</span><span class="sxs-lookup"><span data-stu-id="cb811-111">Open</span></span>
+- <span data-ttu-id="c9e52-111">開く</span><span class="sxs-lookup"><span data-stu-id="c9e52-111">Open</span></span>
     
-- <span data-ttu-id="cb811-112">移動</span><span class="sxs-lookup"><span data-stu-id="cb811-112">Move</span></span>
+- <span data-ttu-id="c9e52-112">移動</span><span class="sxs-lookup"><span data-stu-id="c9e52-112">Move</span></span>
     
-<span data-ttu-id="cb811-p102">Office for iOS は、開く操作と統合されます。ドキュメント プロバイダー拡張機能を作成すると、ユーザーはファイルのコピーを作成することなく、ドキュメント ピッカーを使用して Office で直接ドキュメントを開いたり編集したりできます。</span><span class="sxs-lookup"><span data-stu-id="cb811-p102">Office for iOS integrates with the open operation. When you create a Document Provider extension, your users can use the Document Picker to open and edit documents directly in Office without creating a duplicate copy of the file.</span></span>
+<span data-ttu-id="c9e52-p102">Office for iOS は、開く操作と統合されます。ドキュメント プロバイダー拡張機能を作成すると、ユーザーはファイルのコピーを作成することなく、ドキュメント ピッカーを使用して Office で直接ドキュメントを開いたり編集したりできます。</span><span class="sxs-lookup"><span data-stu-id="c9e52-p102">Office for iOS integrates with the open operation. When you create a Document Provider extension, your users can use the Document Picker to open and edit documents directly in Office without creating a duplicate copy of the file.</span></span>
   
-## <a name="learn-more-about-app-extensions-and-the-document-picker"></a><span data-ttu-id="cb811-115">アプリの拡張機能とドキュメント ピッカーの詳細</span><span class="sxs-lookup"><span data-stu-id="cb811-115">Learn more about app extensions and the Document Picker</span></span>
-<span data-ttu-id="cb811-116"><a name="bk_addresources"> </a></span><span class="sxs-lookup"><span data-stu-id="cb811-116"></span></span>
+## <a name="learn-more-about-app-extensions-and-the-document-picker"></a><span data-ttu-id="c9e52-115">アプリの拡張機能とドキュメント ピッカーの詳細</span><span class="sxs-lookup"><span data-stu-id="c9e52-115">Learn more about app extensions and the Document Picker</span></span>
+<span data-ttu-id="c9e52-116"><a name="bk_addresources"> </a></span><span class="sxs-lookup"><span data-stu-id="c9e52-116"></span></span>
 
-- [<span data-ttu-id="cb811-117">アプリの拡張機能</span><span class="sxs-lookup"><span data-stu-id="cb811-117">App extensions</span></span>](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214-CH20-SW1)
+- [<span data-ttu-id="c9e52-117">アプリの拡張機能</span><span class="sxs-lookup"><span data-stu-id="c9e52-117">App extensions</span></span>](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214-CH20-SW1)
     
-- [<span data-ttu-id="cb811-118">ドキュメント ピッカーのプログラミング ガイド</span><span class="sxs-lookup"><span data-stu-id="cb811-118">Document Picker Programming Guide</span></span>](https://developer.apple.com/library/prerelease/ios/documentation/FileManagement/Conceptual/DocumentPickerProgrammingGuide/Introduction/Introduction.html)
+- [<span data-ttu-id="c9e52-118">ドキュメント ピッカーのプログラミング ガイド</span><span class="sxs-lookup"><span data-stu-id="c9e52-118">Document Picker Programming Guide</span></span>](https://developer.apple.com/library/prerelease/ios/documentation/FileManagement/Conceptual/DocumentPickerProgrammingGuide/Introduction/Introduction.html)
     
-- [<span data-ttu-id="cb811-119">ドキュメント プロバイダー プログラミング ガイド</span><span class="sxs-lookup"><span data-stu-id="cb811-119">Document Provider Programming Guide</span></span>](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/FileProvider.html)
+- [<span data-ttu-id="c9e52-119">ドキュメント プロバイダー プログラミング ガイド</span><span class="sxs-lookup"><span data-stu-id="c9e52-119">Document Provider Programming Guide</span></span>](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/FileProvider.html)
     
 
