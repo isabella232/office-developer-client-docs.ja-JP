@@ -10,7 +10,7 @@ ms.assetid: b43ada73-349d-498f-a8bb-e8fd5020d207
 description: このセクションのトピックでは、マネージ コード (Visual Basic または C#) で Microsoft.Office.InfoPath 名前空間のメンバーに対して書かれたビジネス ロジックを含むフォーム テンプレートの作成について説明します。
 ms.openlocfilehash: 4b113e1c189fe8ebdb5781e969e7f67961d4ea18
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799090"
@@ -41,7 +41,7 @@ ms.locfileid: "19799090"
   
 > InfoPath フォーム テンプレートの開発に関連するその他の概念について説明します。
     
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連情報
 
 [InfoPath デベロッパー ポータル](http://go.microsoft.com/fwlink?LinkID=11689)
   

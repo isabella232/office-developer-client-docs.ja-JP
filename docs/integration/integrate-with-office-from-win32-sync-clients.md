@@ -8,7 +8,7 @@ ms.assetid: 348555d3-3cd4-4e4a-b5ad-436571c25251
 description: サード パーティ製 Win32 同期クライアントを Excel Mobile、 PowerPoint Mobile、および Word MobileOffice アプリケーションと統合します。
 ms.openlocfilehash: 9f520ad36583a9aa7cd73638fe92158f70d13daf
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799235"
@@ -23,15 +23,15 @@ ms.locfileid: "19799235"
   
 ## <a name="register-as-a-sync-root-provider"></a>同期ルート プロバイダーとして登録する
 
-同期クライアントが同期ルート プロバイダーとして登録されていない限り、Office は同期フォルダー内のファイルを通常のローカル ファイルと同様の方法で扱います。つまり、ユーザーがドキュメントを共有しようとすると、Office は「OneDrive に移動する」オプションを示します。同期するファイルでこれを回避するには、同期ルート プロバイダーとして登録する必要があります。登録する方法について詳しくは、「[クラウド ストレージ プロバイダーの統合](https://msdn.microsoft.com/en-us/library/windows/desktop/dn889934%28v=vs.85%29.aspx)」を参照してください。
+同期クライアントが同期ルート プロバイダーとして登録されていない限り、Office は同期フォルダー内のファイルを通常のローカル ファイルと同様の方法で扱います。つまり、ユーザーがドキュメントを共有しようとすると、Office は「OneDrive に移動する」オプションを示します。同期するファイルでこれを回避するには、同期ルート プロバイダーとして登録する必要があります。登録する方法について詳しくは、「[クラウド ストレージ プロバイダーの統合](https://msdn.microsoft.com/ja-JP/library/windows/desktop/dn889934%28v=vs.85%29.aspx)」を参照してください。
   
 ## <a name="integrate-your-app-into-the-root-node-of-the-navigation-pane"></a>アプリをナビゲーション ウィンドウのルート ノードに統合する
 
-Win32 同期クライアントがファイル エクスプ ローラーと Windows ファイル ピッカーでルート ノードとして表示されるようにするには、アプリをルート レベルに統合する必要があります。これを行う方法については、「[クラウド ストレージ プロバイダーの統合](https://msdn.microsoft.com/en-us/library/windows/desktop/dn889934%28v=vs.85%29.aspx)」を参照してください。 
+Win32 同期クライアントがファイル エクスプ ローラーと Windows ファイル ピッカーでルート ノードとして表示されるようにするには、アプリをルート レベルに統合する必要があります。これを行う方法については、「[クラウド ストレージ プロバイダーの統合](https://msdn.microsoft.com/ja-JP/library/windows/desktop/dn889934%28v=vs.85%29.aspx)」を参照してください。 
   
 ## <a name="add-your-sync-folder-as-a-document-library-optional"></a>同期フォルダーをドキュメント ライブラリとして追加する (省略可能)
 
-Office で、ユーザーは単一の操作でドキュメント ライブラリにドキュメントを作成できます。ドキュメント ライブラリに同期場所に追加するには、[SHAddFolderPathToLibrary 関数](https://msdn.microsoft.com/en-us/library/windows/desktop/dd378432%28v=vs.85%29.aspx)を使用します。 
+Office で、ユーザーは単一の操作でドキュメント ライブラリにドキュメントを作成できます。ドキュメント ライブラリに同期場所に追加するには、[SHAddFolderPathToLibrary 関数](https://msdn.microsoft.com/ja-JP/library/windows/desktop/dd378432%28v=vs.85%29.aspx)を使用します。 
   
 ## <a name="see-also"></a>関連項目
 <a name="bk_addresources"> </a>

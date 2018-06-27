@@ -8,7 +8,7 @@ ms.assetid: 32c80bcd-a5d6-af32-38ba-9ca9ff148b99
 description: Microsoft InfoPath フォーム デザイナーで必要となる可能性のあるビュー要素のほとんどは作成できます。ただし、InfoPath で作成できないカスタム ビュー要素が必要な場合は、ビューを生成するために InfoPath で使用される XSL 変換 (XSLT) を手動で変更することができます。そのためには、Microsoft Office Backstage の [発行] タブの [ソース ファイルのエクスポート] を使用してフォームをそのコンポーネント ファイルに抽出し、Microsoft Visual Studio、メモ帳など任意の XML エディターで変換を編集します。
 ms.openlocfilehash: 796115c99c81fc2a77812d91d317f5ce9ed54e5f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799224"

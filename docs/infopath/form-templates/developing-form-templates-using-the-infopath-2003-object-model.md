@@ -10,7 +10,7 @@ ms.assetid: c74cbcd0-4fe6-4eb7-a05c-f61e1868c42b
 description: Microsoft InfoPath は引き続き、Microsoft Office InfoPath 2003 Toolkit for Visual Studio .NET または Visual Studio 2005 Tools for the Microsoft Office system で作成され、Microsoft.Office.Interop.InfoPath.SemiTrust 名前空間のメンバーに対して書かれたビジネス ロジックを持つ、フォーム テンプレート プロジェクトをサポートします。このセクションのトピックでは、この名前空間の型とメンバーを InfoPath 2003 互換オブジェクト モデル、または単に InfoPath 2003 オブジェクト モデルと呼びます。InfoPath は、InfoPath 2003 互換オブジェクト モデルを使用する Microsoft Office InfoPath 2007 で作成されたフォーム テンプレート プロジェクトもサポートします。さらに、Office InfoPath 2007 のユーザー向けに下位互換性を維持するため、InfoPath を使用して、InfoPath 2003 互換オブジェクト モデルを使用する新しいフォーム テンプレート プロジェクトを作成できます。このセクションのトピックには、Microsoft.Office.Interop.InfoPath.SemiTrust 名前空間によって提供される InfoPath 2003 互換オブジェクト モデルで動作するフォーム テンプレートの作成と開発に固有の情報が記載されています。
 ms.openlocfilehash: 5d949242068586c752e7a92fa53792cda9ececea
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799096"
@@ -44,7 +44,7 @@ Microsoft InfoPath は引き続き、Microsoft Office InfoPath 2003 Toolkit for 
   
 > InfoPath 2003 互換オブジェクト モデルで動作するマネージ コード フォーム テンプレートを作成する際に発生する可能性のある一般的な問題の解決に役立つヒントが記載されています。
     
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連情報
 
 [InfoPath デベロッパー ポータル](http://go.microsoft.com/fwlink?LinkID=11689)
   

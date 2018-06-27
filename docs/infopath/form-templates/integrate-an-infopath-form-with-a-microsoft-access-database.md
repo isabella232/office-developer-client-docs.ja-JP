@@ -8,7 +8,7 @@ ms.assetid: 5ec9a9c0-b348-4a31-b377-e95db2f92455
 description: Microsoft InfoPath では、Microsoft Access 2010 のデータベースをフォームのプライマリ データ ソースとして、あるいはフォームまたはコントロールのセカンダリ データ ソースとして使用できます。ここでは、Access 2010 データベースをデータ ソースとして使用する方法について説明します。
 ms.openlocfilehash: 30aea15a5e9a8d19f64b3f089b71e859cff93e0e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799166"

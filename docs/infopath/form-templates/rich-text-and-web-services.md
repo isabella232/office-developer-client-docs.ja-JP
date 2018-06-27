@@ -8,7 +8,7 @@ ms.assetid: 53fddc3f-e9d9-db76-6b84-11befdb23fb0
 description: Microsoft InfoPath では、フォーム内のリッチ テキスト ボックス コントロールを、Web サービスから受け取った XML 要素にバインドし、リッチ テキスト ボックス コントロールのデータを Web サービスを通じて XML 要素に送信することができます。要素は XHTML (Extensible HyperText Markup Language) 形式に従っている必要があります。たとえば、リッチ テキストが含まれている MyRichTextElement という名前の要素のスキーマであれば、XML スキーマ定義は次のようになります。
 ms.openlocfilehash: 07a7a3dbc0f054160adce54e316b01797feacd8a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799210"

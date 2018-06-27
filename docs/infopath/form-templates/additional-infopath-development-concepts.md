@@ -8,7 +8,7 @@ ms.assetid: 917e9a1d-df17-4732-8496-097c6b7bcd1f
 description: ここでは、InfoPath の開発に関するその他の概念や作業について説明します。
 ms.openlocfilehash: decec7d612e4cdd2be3d9717a1caba56830f04d8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799087"

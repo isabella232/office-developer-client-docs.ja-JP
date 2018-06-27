@@ -10,7 +10,7 @@ ms.assetid: da678213-fae0-4854-8194-762866600100
 description: 以下のリンクを使用すると、InfoPath マネージ コード フォーム テンプレートの操作に関する一般的なプログラミングの疑問をすばやく解決できます。
 ms.openlocfilehash: fc11491fe5424ae2dc0c33924dd63395a6d92d23
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799089"
@@ -19,7 +19,7 @@ ms.locfileid: "19799089"
 
 以下のリンクを使用すると、InfoPath マネージ コード フォーム テンプレートの操作に関する一般的なプログラミングの疑問をすばやく解決できます。
   
-## <a name="how-do-i"></a>手順に関するトピック
+## <a name="how-do-i"></a>手順に関する質問
 
 ||
 |:-----|

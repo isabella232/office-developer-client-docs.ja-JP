@@ -10,7 +10,7 @@ ms.assetid: 6d29e3ed-80a2-4879-a2a5-3855992bec1d
 description: Microsoft InfoPath マネージ コード プロジェクトで作業している開発者は、次のリソースからさらに情報を入手できます。
 ms.openlocfilehash: 8f7f8e70af48fce56329c0e4787893765d2ad154
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799093"
@@ -31,7 +31,7 @@ Microsoft InfoPath マネージ コード プロジェクトで作業してい�
     
  **Microsoft SharePoint Server 2010 ソフトウェア開発キット (SDK)**
   
-> Microsoft SharePoint Server 2010 の一部として含まれている InfoPath Forms Services を使用する開発者向けの概念、手順、およびプログラミングに関する情報。詳細については、「[SharePoint デベロッパー センター](http://msdn.microsoft.com/en-us/sharepoint/default.aspx)」を参照してください。
+> Microsoft SharePoint Server 2010 の一部として含まれている InfoPath Forms Services を使用する開発者向けの概念、手順、およびプログラミングに関する情報。詳細については、「[SharePoint デベロッパー センター](http://msdn.microsoft.com/ja-JP/sharepoint/default.aspx)」を参照してください。
     
 [Office デベロッパー センター](http://go.microsoft.com/fwlink?LinkID=27128)
   
