@@ -25,9 +25,9 @@ ms.locfileid: "19799019"
   
 ## <a name="see-also"></a><span data-ttu-id="e91b6-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="e91b6-109">See also</span></span>
 
-- [<span data-ttu-id="e91b6-110">InfoPath デベロッパー センター</span><span class="sxs-lookup"><span data-stu-id="e91b6-110">InfoPath Developer Center</span></span>](http://msdn.microsoft.com/en-us/office/aa905434.aspx)  
-- [<span data-ttu-id="e91b6-111">Microsoft Office デベロッパー センター</span><span class="sxs-lookup"><span data-stu-id="e91b6-111">Microsoft Office Developer Center</span></span>](http://msdn.microsoft.com/en-us/office/default.aspx)
-- [<span data-ttu-id="e91b6-112">Office 開発者向けドキュメントのドキュメントの表記規則</span><span class="sxs-lookup"><span data-stu-id="e91b6-112">Document Conventions in Office Developer Documentation</span></span>](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
+- [<span data-ttu-id="e91b6-110">InfoPath デベロッパー センター</span><span class="sxs-lookup"><span data-stu-id="e91b6-110">InfoPath Developer Center</span></span>](http://msdn.microsoft.com/ja-jp/office/aa905434.aspx)  
+- [<span data-ttu-id="e91b6-111">Microsoft Office デベロッパー センター</span><span class="sxs-lookup"><span data-stu-id="e91b6-111">Microsoft Office Developer Center</span></span>](http://msdn.microsoft.com/ja-jp/office/default.aspx)
+- [<span data-ttu-id="e91b6-112">Office 開発者向けドキュメントのドキュメントの表記規則</span><span class="sxs-lookup"><span data-stu-id="e91b6-112">Document Conventions in Office Developer Documentation</span></span>](http://msdn.microsoft.com/ja-jp/office/aa905365.aspx)
 - [<span data-ttu-id="e91b6-113">Microsoft アクセシビリティ</span><span class="sxs-lookup"><span data-stu-id="e91b6-113">Microsoft Accessibility</span></span>](http://www.microsoft.com/ENABLE/)
 - <span data-ttu-id="e91b6-114">[Microsoft �v���C�o�V�[�Ɋւ��鐺��](http://privacy.microsoft.com/en-us/default.mspx)</span><span class="sxs-lookup"><span data-stu-id="e91b6-114">[Microsoft Online Privacy Notice](http://privacy.microsoft.com/en-us/default.mspx)</span></span>
   

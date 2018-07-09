@@ -19,7 +19,7 @@ ms.locfileid: "19798731"
 <span data-ttu-id="41175-104">" **RunMacro** /マクロの実行" アクションを使用すると、ユーザー インターフェイス (UI) マクロを実行できます。</span><span class="sxs-lookup"><span data-stu-id="41175-104">You can use the **RunMacro** action to run a user interface (UI) macro.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="41175-p101">[!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="41175-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="41175-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="41175-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 ## <a name="setting"></a><span data-ttu-id="41175-107">設定</span><span class="sxs-lookup"><span data-stu-id="41175-107">Setting</span></span>
 

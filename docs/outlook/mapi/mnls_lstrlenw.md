@@ -24,7 +24,7 @@ ms.locfileid: "19801674"
 <span data-ttu-id="608aa-105">終端の null 文字を除く、指定した Unicode 文字列の長さを決定します。</span><span class="sxs-lookup"><span data-stu-id="608aa-105">Determines the length of the specified Unicode string, excluding the terminating null character.</span></span>
   
 > [!TIP]
-> <span data-ttu-id="608aa-106">[StringCchLength](http://msdn.microsoft.com/en-us/library/ms647539%28VS.85%29.aspx)を代わりに使用してください。</span><span class="sxs-lookup"><span data-stu-id="608aa-106">Consider using [StringCchLength](http://msdn.microsoft.com/en-us/library/ms647539%28VS.85%29.aspx) instead.</span></span> 
+> <span data-ttu-id="608aa-106">[StringCchLength](http://msdn.microsoft.com/ja-jp/library/ms647539%28VS.85%29.aspx)を代わりに使用してください。</span><span class="sxs-lookup"><span data-stu-id="608aa-106">Consider using [StringCchLength](http://msdn.microsoft.com/ja-jp/library/ms647539%28VS.85%29.aspx) instead.</span></span> 
   
 ```cpp
 int MNLS_lstrlen(
@@ -43,13 +43,13 @@ int MNLS_lstrlen(
   
 ## <a name="remarks"></a><span data-ttu-id="608aa-114">備考</span><span class="sxs-lookup"><span data-stu-id="608aa-114">Remarks</span></span>
 
-<span data-ttu-id="608aa-115">この関数は、**ライブラリ**関数をラップします。</span><span class="sxs-lookup"><span data-stu-id="608aa-115">This function wraps the **lstrlen** function.</span></span> <span data-ttu-id="608aa-116">詳細については、[ライブラリ](http://msdn.microsoft.com/en-us/library/ms647492%28VS.85%29.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="608aa-116">For more information, see [lstrlen](http://msdn.microsoft.com/en-us/library/ms647492%28VS.85%29.aspx).</span></span>
+<span data-ttu-id="608aa-115">この関数は、**ライブラリ**関数をラップします。</span><span class="sxs-lookup"><span data-stu-id="608aa-115">This function wraps the **lstrlen** function.</span></span> <span data-ttu-id="608aa-116">詳細については、[ライブラリ](http://msdn.microsoft.com/ja-jp/library/ms647492%28VS.85%29.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="608aa-116">For more information, see [lstrlen](http://msdn.microsoft.com/ja-jp/library/ms647492%28VS.85%29.aspx).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="608aa-117">関連項目</span><span class="sxs-lookup"><span data-stu-id="608aa-117">See also</span></span>
 
 
 
-[<span data-ttu-id="608aa-118">ライブラリ</span><span class="sxs-lookup"><span data-stu-id="608aa-118">lstrlen</span></span>](http://msdn.microsoft.com/en-us/library/ms647492%28VS.85%29.aspx)
+[<span data-ttu-id="608aa-118">ライブラリ</span><span class="sxs-lookup"><span data-stu-id="608aa-118">lstrlen</span></span>](http://msdn.microsoft.com/ja-jp/library/ms647492%28VS.85%29.aspx)
   
-[<span data-ttu-id="608aa-119">StringCchLength</span><span class="sxs-lookup"><span data-stu-id="608aa-119">StringCchLength</span></span>](http://msdn.microsoft.com/en-us/library/ms647539%28VS.85%29.aspx)
+[<span data-ttu-id="608aa-119">StringCchLength</span><span class="sxs-lookup"><span data-stu-id="608aa-119">StringCchLength</span></span>](http://msdn.microsoft.com/ja-jp/library/ms647539%28VS.85%29.aspx)
 

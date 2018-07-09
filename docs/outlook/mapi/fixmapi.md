@@ -39,7 +39,7 @@ DWORD STDAPICALLTYPE FixMAPI(void);
 
 <span data-ttu-id="525a6-114">関数が成功した場合は、0 以外の値を返します。</span><span class="sxs-lookup"><span data-stu-id="525a6-114">If the function succeeds, the return value is a non-zero value.</span></span>
   
-<span data-ttu-id="525a6-115">関数が失敗した場合は 0 を返します。</span><span class="sxs-lookup"><span data-stu-id="525a6-115">If the function fails, the return value is zero.</span></span> <span data-ttu-id="525a6-116">拡張エラー情報を取得するには、Microsoft Windows ソフトウェア開発キット (SDK) 関数、 **[GetLastError](http://msdn.microsoft.com/en-us/library/ms679360.aspx)** を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="525a6-116">To get extended error information, call the Microsoft Windows Software Development Kit (SDK) function, **[GetLastError](http://msdn.microsoft.com/en-us/library/ms679360.aspx)**.</span></span> 
+<span data-ttu-id="525a6-115">関数が失敗した場合は 0 を返します。</span><span class="sxs-lookup"><span data-stu-id="525a6-115">If the function fails, the return value is zero.</span></span> <span data-ttu-id="525a6-116">拡張エラー情報を取得するには、Microsoft Windows ソフトウェア開発キット (SDK) 関数、 **[GetLastError](http://msdn.microsoft.com/ja-jp/library/ms679360.aspx)** を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="525a6-116">To get extended error information, call the Microsoft Windows Software Development Kit (SDK) function, **[GetLastError](http://msdn.microsoft.com/ja-jp/library/ms679360.aspx)**.</span></span> 
   
 ## <a name="remarks"></a><span data-ttu-id="525a6-117">備考</span><span class="sxs-lookup"><span data-stu-id="525a6-117">Remarks</span></span>
 

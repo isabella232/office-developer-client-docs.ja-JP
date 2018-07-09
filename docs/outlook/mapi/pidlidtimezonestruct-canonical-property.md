@@ -25,7 +25,7 @@ ms.locfileid: "19802246"
   
 <span data-ttu-id="52898-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="52898-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="52898-105">定期的な予定または会議出席依頼の開始と終了時に使用するタイム ゾーンを記述する[TZREG](http://msdn.microsoft.com/en-us/library/bb820983%28v=office.12%29.aspx)構造体の保存形式に対応するストリームが含まれています。</span><span class="sxs-lookup"><span data-stu-id="52898-105">Contains a stream that maps to the persisted format of a [TZREG](http://msdn.microsoft.com/en-us/library/bb820983%28v=office.12%29.aspx) structure, which describes the time zone to be used for the start and end time of a recurring appointment or meeting request.</span></span> 
+<span data-ttu-id="52898-105">定期的な予定または会議出席依頼の開始と終了時に使用するタイム ゾーンを記述する[TZREG](http://msdn.microsoft.com/ja-jp/library/bb820983%28v=office.12%29.aspx)構造体の保存形式に対応するストリームが含まれています。</span><span class="sxs-lookup"><span data-stu-id="52898-105">Contains a stream that maps to the persisted format of a [TZREG](http://msdn.microsoft.com/ja-jp/library/bb820983%28v=office.12%29.aspx) structure, which describes the time zone to be used for the start and end time of a recurring appointment or meeting request.</span></span> 
   
 |||
 |:-----|:-----|

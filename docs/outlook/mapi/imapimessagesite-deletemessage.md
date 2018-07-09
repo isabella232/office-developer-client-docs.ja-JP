@@ -42,7 +42,7 @@ HRESULT DeleteMessage(
     
  <span data-ttu-id="5858d-109">_prcPosRect_</span><span class="sxs-lookup"><span data-stu-id="5858d-109">_prcPosRect_</span></span>
   
-> <span data-ttu-id="5858d-110">[in]現在のフォームのウィンドウのサイズと位置を含む[RECT](http://msdn.microsoft.com/en-us/library/dd162897%28VS.85%29.aspx)構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="5858d-110">[in] A pointer to a [RECT](http://msdn.microsoft.com/en-us/library/dd162897%28VS.85%29.aspx) structure that contains the current form's window size and position.</span></span> <span data-ttu-id="5858d-111">次に表示されるフォームは、このウィンドウの四角形にも使用します。</span><span class="sxs-lookup"><span data-stu-id="5858d-111">The next form displayed also uses this window rectangle.</span></span> 
+> <span data-ttu-id="5858d-110">[in]現在のフォームのウィンドウのサイズと位置を含む[RECT](http://msdn.microsoft.com/ja-jp/library/dd162897%28VS.85%29.aspx)構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="5858d-110">[in] A pointer to a [RECT](http://msdn.microsoft.com/ja-jp/library/dd162897%28VS.85%29.aspx) structure that contains the current form's window size and position.</span></span> <span data-ttu-id="5858d-111">次に表示されるフォームは、このウィンドウの四角形にも使用します。</span><span class="sxs-lookup"><span data-stu-id="5858d-111">The next form displayed also uses this window rectangle.</span></span> 
     
 ## <a name="return-value"></a><span data-ttu-id="5858d-112">�߂�l</span><span class="sxs-lookup"><span data-stu-id="5858d-112">Return value</span></span>
 
@@ -76,7 +76,7 @@ HRESULT DeleteMessage(
     
 4. <span data-ttu-id="5858d-130">削除または、メッセージを移動します。</span><span class="sxs-lookup"><span data-stu-id="5858d-130">It deletes or moves the message.</span></span>
     
-<span data-ttu-id="5858d-131">フォームのウィンドウで使用されている**RECT**構造体を取得するには、Windows[ハンドル](http://msdn.microsoft.com/en-us/library/ms633519)関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="5858d-131">To obtain the **RECT** structure used by a form's window, call the Windows [GetWindowRect](http://msdn.microsoft.com/en-us/library/ms633519) function.</span></span> 
+<span data-ttu-id="5858d-131">フォームのウィンドウで使用されている**RECT**構造体を取得するには、Windows[ハンドル](http://msdn.microsoft.com/ja-jp/library/ms633519)関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="5858d-131">To obtain the **RECT** structure used by a form's window, call the Windows [GetWindowRect](http://msdn.microsoft.com/ja-jp/library/ms633519) function.</span></span> 
   
 <span data-ttu-id="5858d-132">フォームのサーバーに関連するインターフェイスの一覧は、 [MAPI フォームのインタ フェース](mapi-form-interfaces.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5858d-132">For a list of interfaces related to form servers, see [MAPI Form Interfaces](mapi-form-interfaces.md).</span></span>
   

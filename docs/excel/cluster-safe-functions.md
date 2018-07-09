@@ -43,7 +43,7 @@ ms.locfileid: "19798760"
 <span data-ttu-id="a01f7-127">���s���Ԃ��Z�� UDF �̏ꍇ�́A�I�t���[�h�̃I�[�o�[�w�b�h�� UDF�̎��s�ɂ����鎞�Ԃ���傫���Ȃ��āA���̃C���t���X�g���N�\`����g�p���Ă�قƂ�ǃv���X�ɂȂ�Ȃ��\��������܂��B</span><span class="sxs-lookup"><span data-stu-id="a01f7-127">For UDFs with shorter execution times, the overhead of offloading may be larger than the time it takes the UDF to execute, negating many of the benefits of using this infrastructure.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="a01f7-128">[!����] �N���X�^�[ �Z�[�t UDF �͔񓯊� UDF �Ƃ��Đ錾�ł��܂���B</span><span class="sxs-lookup"><span data-stu-id="a01f7-128">You cannot declare a cluster-safe UDF as an asynchronous UDF.</span></span> 
+> <span data-ttu-id="a01f7-128">�N���X�^�[ �Z�[�t UDF �͔񓯊� UDF �Ƃ��Đ錾�ł��܂���B</span><span class="sxs-lookup"><span data-stu-id="a01f7-128">You cannot declare a cluster-safe UDF as an asynchronous UDF.</span></span> 
   
 <span data-ttu-id="a01f7-129">UDF �́A[xlRunningOnCluster](xlrunningoncluster.md) �R�[���o�b�N�֐���Ăяo�����Ƃɂ���āA�N���X�^�[ �R�l�N�^��g�p���Ď��s����Ă��邩�ǂ����𔻕ʂł��܂��B</span><span class="sxs-lookup"><span data-stu-id="a01f7-129">A UDF can determine whether it is being run using a cluster connector by calling the [xlRunningOnCluster](xlrunningoncluster.md) callback function.</span></span> 
   

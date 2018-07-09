@@ -27,11 +27,11 @@ ms.locfileid: "19799127"
   
 ## <a name="related-links"></a><span data-ttu-id="7c660-109">関連リンク</span><span class="sxs-lookup"><span data-stu-id="7c660-109">Related Links</span></span>
 
-[<span data-ttu-id="7c660-110">InfoPath デベロッパー センター</span><span class="sxs-lookup"><span data-stu-id="7c660-110">InfoPath Developer Center</span></span>](http://msdn.microsoft.com/en-us/office/aa905434.aspx)
+[<span data-ttu-id="7c660-110">InfoPath デベロッパー センター</span><span class="sxs-lookup"><span data-stu-id="7c660-110">InfoPath Developer Center</span></span>](http://msdn.microsoft.com/ja-jp/office/aa905434.aspx)
   
-[<span data-ttu-id="7c660-111">Microsoft Office デベロッパー センター</span><span class="sxs-lookup"><span data-stu-id="7c660-111">Microsoft Office Developer Center</span></span>](http://msdn.microsoft.com/en-us/office/default.aspx)
+[<span data-ttu-id="7c660-111">Microsoft Office デベロッパー センター</span><span class="sxs-lookup"><span data-stu-id="7c660-111">Microsoft Office Developer Center</span></span>](http://msdn.microsoft.com/ja-jp/office/default.aspx)
   
-[<span data-ttu-id="7c660-112">Office 開発者向けドキュメントのドキュメントの表記規則</span><span class="sxs-lookup"><span data-stu-id="7c660-112">Document Conventions in Office Developer Documentation</span></span>](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
+[<span data-ttu-id="7c660-112">Office 開発者向けドキュメントのドキュメントの表記規則</span><span class="sxs-lookup"><span data-stu-id="7c660-112">Document Conventions in Office Developer Documentation</span></span>](http://msdn.microsoft.com/ja-jp/office/aa905365.aspx)
   
 [<span data-ttu-id="7c660-113">Microsoft アクセシビリティ</span><span class="sxs-lookup"><span data-stu-id="7c660-113">Microsoft Accessibility</span></span>](http://www.microsoft.com/ENABLE/)
   

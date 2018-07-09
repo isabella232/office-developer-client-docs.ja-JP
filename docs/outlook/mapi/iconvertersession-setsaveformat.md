@@ -35,7 +35,7 @@ HRESULT IConverterSession::SetSaveFormat (
 
 <span data-ttu-id="9c6bf-107">_mstSaveFormat_</span><span class="sxs-lookup"><span data-stu-id="9c6bf-107">_mstSaveFormat_</span></span>
   
-> <span data-ttu-id="9c6bf-108">[in]保存の MIME ストリームに使用する書式を設定します。</span><span class="sxs-lookup"><span data-stu-id="9c6bf-108">[in] The save format to be used for a MIME stream.</span></span> <span data-ttu-id="9c6bf-109">詳細については、 [MIMESAVETYPE](http://msdn.microsoft.com/en-us/library/ms715128%28VS.85%29.aspx)列挙型を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9c6bf-109">For more information, see the enum type [MIMESAVETYPE](http://msdn.microsoft.com/en-us/library/ms715128%28VS.85%29.aspx).</span></span>
+> <span data-ttu-id="9c6bf-108">[in]保存の MIME ストリームに使用する書式を設定します。</span><span class="sxs-lookup"><span data-stu-id="9c6bf-108">[in] The save format to be used for a MIME stream.</span></span> <span data-ttu-id="9c6bf-109">詳細については、 [MIMESAVETYPE](http://msdn.microsoft.com/ja-jp/library/ms715128%28VS.85%29.aspx)列挙型を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9c6bf-109">For more information, see the enum type [MIMESAVETYPE](http://msdn.microsoft.com/ja-jp/library/ms715128%28VS.85%29.aspx).</span></span>
     
   - <span data-ttu-id="9c6bf-110">**SAVE_RFC1521**: 既定値は、MIME を使用します。</span><span class="sxs-lookup"><span data-stu-id="9c6bf-110">**SAVE_RFC1521**: Use MIME, which is the default.</span></span>      
   - <span data-ttu-id="9c6bf-111">**SAVE_RFC822**: でも、uuencode を使用します。</span><span class="sxs-lookup"><span data-stu-id="9c6bf-111">**SAVE_RFC822**: Use uuencode.</span></span>

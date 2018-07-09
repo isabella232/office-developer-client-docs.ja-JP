@@ -31,7 +31,7 @@ ms.locfileid: "19804363"
   
 ## <a name="related-sections"></a><span data-ttu-id="c8976-113">関連セクション</span><span class="sxs-lookup"><span data-stu-id="c8976-113">Related sections</span></span>
 
-- [<span data-ttu-id="c8976-114">Outlook Social Connector プロバイダーの開発の概要 (英語)(機械翻訳)</span><span class="sxs-lookup"><span data-stu-id="c8976-114">Getting Started with Developing an Outlook Social Connector Provider</span></span>](getting-started-with-developing-an-outlook-social-connector-provider.md)
+- [<span data-ttu-id="c8976-114">Outlook Social Connector プロバイダーの開発の概要(機械翻訳)</span><span class="sxs-lookup"><span data-stu-id="c8976-114">Getting Started with Developing an Outlook Social Connector Provider</span></span>](getting-started-with-developing-an-outlook-social-connector-provider.md)
   
 - [<span data-ttu-id="c8976-115">OSC サンプル テンプレート</span><span class="sxs-lookup"><span data-stu-id="c8976-115">OSC Sample Templates</span></span>](osc-sample-templates.md)
   

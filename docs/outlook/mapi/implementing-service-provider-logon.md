@@ -29,7 +29,7 @@ ms.locfileid: "19800949"
     
 <span data-ttu-id="bc530-110">ログオン方法を実装するには、次のタスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="bc530-110">Perform the following tasks in whatever logon method you implement:</span></span>
   
-1. <span data-ttu-id="bc530-111">[IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出して、入力パラメーターとして渡されるサポート オブジェクトの参照カウントをインクリメントします。</span><span class="sxs-lookup"><span data-stu-id="bc530-111">Increment the reference count on the support object that is passed as an input parameter by calling its [IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx) method.</span></span> 
+1. <span data-ttu-id="bc530-111">[IUnknown::AddRef](http://msdn.microsoft.com/ja-jp/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出して、入力パラメーターとして渡されるサポート オブジェクトの参照カウントをインクリメントします。</span><span class="sxs-lookup"><span data-stu-id="bc530-111">Increment the reference count on the support object that is passed as an input parameter by calling its [IUnknown::AddRef](http://msdn.microsoft.com/ja-jp/library/ms691379%28v=VS.85%29.aspx) method.</span></span> 
     
 2. <span data-ttu-id="bc530-112">[プロファイル] セクションにアクセスするためのサポート オブジェクトの[IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="bc530-112">Call the support object's [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md) method to access your profile section.</span></span> 
     

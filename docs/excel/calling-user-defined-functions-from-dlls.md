@@ -31,7 +31,7 @@ ms.locfileid: "19798776"
 - <span data-ttu-id="7c304-114">�߂�l�ƈ����R�[�h������</span><span class="sxs-lookup"><span data-stu-id="7c304-114">The return and argument code string</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="7c304-115">[!����] XLL �t�@�C������G�N�X�|�[�g���ꂽ�Ƃ��̖��O�́AExcel ���F�����Ă��� UDF �܂��̓R�}���h�̓o�^���Ƃ͈�v���Ȃ��\��������܂��B</span><span class="sxs-lookup"><span data-stu-id="7c304-115">The name as exported from the XLL might not be the same as the registered name by which Excel knows the UDF or command.</span></span> 
+> <span data-ttu-id="7c304-115">XLL �t�@�C������G�N�X�|�[�g���ꂽ�Ƃ��̖��O�́AExcel ���F�����Ă��� UDF �܂��̓R�}���h�̓o�^���Ƃ͈�v���Ȃ��\��������܂��B</span><span class="sxs-lookup"><span data-stu-id="7c304-115">The name as exported from the XLL might not be the same as the registered name by which Excel knows the UDF or command.</span></span> 
   
 <span data-ttu-id="7c304-p103">Excel 2007 �ȍ~�́A���̓c�[�� (ATP) �֐��͊��S�ɑg�ݍ��܂�Ă���AC API �ɂ́APRICE �� **xlfPrice** �Ȃǂ̊֐��ɑ΂��邻�̓Ǝ��̗񋓑̂�����܂��B�ȑO�̃o�[�W�����ł́A���������֐��̎g�p�ɂ́A **xlUDF** ��g�p����K�v������܂����B�A�h�C���� Excel 2003 ����� Excel 2007 �ȍ~�̃o�[�W�����Ŏg���K�v������A�A�h�C�������������֐���g���ꍇ�A���[�U�[���ŐV�o�[�W��������肵�āA�K�؂ȕ��@�Ŋ֐���Ăяo���K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="7c304-p103">Starting in Excel 2007, the Analysis Toolpak (ATP) functions are fully integrated, and the C API has its own enumerations for functions such as PRICE, **xlfPrice**. In earlier versions, you had to use **xlUDF** to call these functions. If your add-in needs to work with Excel 2003 and Excel 2007 or later versions, and it uses these functions, you should detect the current version and call the function in the appropriate way.</span></span> 
   
@@ -40,7 +40,7 @@ ms.locfileid: "19798776"
 <span data-ttu-id="7c304-p104">���̗�́A���s���� Excel �̃o�[�W������ 2003 �ȑO�̏ꍇ�ɁAATP �֐� **PRICE** ��Ăяo�� **xlUDF** �֐���\���Ă��܂��B�O���[�o�� �o�[�W�����ϐ� (���̗�ł� **gExcelVersion12plus** �Ȃ�) �̐ݒ�ɂ��ẮA [���ʌ݊���](backward-compatibility.md) ��Q�Ƃ��Ă��������B</span><span class="sxs-lookup"><span data-stu-id="7c304-p104">The following example shows the **xlUDF** function being used to call the ATP function **PRICE** when the running version of Excel is 2003 or earlier. For information about the setting of a global version variable, such as **gExcelVersion12plus** in this example, see [Backward Compatibility](backward-compatibility.md).</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="7c304-122">[!����] ���̗�ł́A�t���[�����[�N�֐� **TempNum**�A **TempStrConst** ��g�p���A��������� Excel �� C API ��Ăяo���悤�ɐݒ肵�Ă��܂��B</span><span class="sxs-lookup"><span data-stu-id="7c304-122">This example uses the Framework functions **TempNum**, **TempStrConst** to set up the arguments and Excel to call the C API.</span></span> 
+> <span data-ttu-id="7c304-122">���̗�ł́A�t���[�����[�N�֐� **TempNum**�A **TempStrConst** ��g�p���A��������� Excel �� C API ��Ăяo���悤�ɐݒ肵�Ă��܂��B</span><span class="sxs-lookup"><span data-stu-id="7c304-122">This example uses the Framework functions **TempNum**, **TempStrConst** to set up the arguments and Excel to call the C API.</span></span> 
   
 ```C
 LPXLOPER TempNum(double d);

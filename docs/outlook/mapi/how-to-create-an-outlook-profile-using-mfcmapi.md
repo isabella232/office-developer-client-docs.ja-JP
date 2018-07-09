@@ -103,7 +103,7 @@ ms.locfileid: "19800225"
   
 ## <a name="see-also"></a><span data-ttu-id="f2343-213">関連項目</span><span class="sxs-lookup"><span data-stu-id="f2343-213">See also</span></span>
 
-- [<span data-ttu-id="f2343-214">Outlook MAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="f2343-214">Outlook MAPI Reference</span></span>](https://msdn.microsoft.com/en-us/library/office/cc765775.aspx)  
-- [<span data-ttu-id="f2343-215">プログラムで Outlook のプロファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="f2343-215">Programmatically Create a Profile in Outlook</span></span>](https://msdn.microsoft.com/en-us/library/office/mt707568.aspx)
+- [<span data-ttu-id="f2343-214">Outlook MAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="f2343-214">Outlook MAPI Reference</span></span>](https://msdn.microsoft.com/ja-jp/library/office/cc765775.aspx)  
+- [<span data-ttu-id="f2343-215">プログラムで Outlook のプロファイルを作成します。</span><span class="sxs-lookup"><span data-stu-id="f2343-215">Programmatically Create a Profile in Outlook</span></span>](https://msdn.microsoft.com/ja-jp/library/office/mt707568.aspx)
     
 

@@ -92,7 +92,7 @@ HRESULT CopyEntries(
     
 4. <span data-ttu-id="434e5-146">[IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを新しいエントリの保存を実行します。</span><span class="sxs-lookup"><span data-stu-id="434e5-146">The new entry's [IMAPIProp::SaveChanges](imapiprop-savechanges.md) method to perform a save.</span></span> 
     
-5. <span data-ttu-id="434e5-147">コンテナーの参照を解放するのには、新しいエントリの[リ ス](http://msdn.microsoft.com/en-us/library/ms682317%28VS.85%29.aspx)のメソッドです。</span><span class="sxs-lookup"><span data-stu-id="434e5-147">The new entry's [IUnknown::Release](http://msdn.microsoft.com/en-us/library/ms682317%28VS.85%29.aspx) method to release the container's reference.</span></span> 
+5. <span data-ttu-id="434e5-147">コンテナーの参照を解放するのには、新しいエントリの[リ ス](http://msdn.microsoft.com/ja-jp/library/ms682317%28VS.85%29.aspx)のメソッドです。</span><span class="sxs-lookup"><span data-stu-id="434e5-147">The new entry's [IUnknown::Release](http://msdn.microsoft.com/ja-jp/library/ms682317%28VS.85%29.aspx) method to release the container's reference.</span></span> 
     
 ## <a name="notes-to-implementers"></a><span data-ttu-id="434e5-148">実装者へのメモ</span><span class="sxs-lookup"><span data-stu-id="434e5-148">Notes to implementers</span></span>
 

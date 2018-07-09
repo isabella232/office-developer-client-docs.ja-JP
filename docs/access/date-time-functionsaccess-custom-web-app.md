@@ -16,7 +16,7 @@ ms.locfileid: "19798557"
 # <a name="datetime-functions-access-custom-web-app"></a><span data-ttu-id="d2ba6-102">日付/時刻関数 (カスタム web アプリケーションのアクセス)</span><span class="sxs-lookup"><span data-stu-id="d2ba6-102">Date/time functions (Access custom web app)</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="d2ba6-p101">[!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="d2ba6-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="d2ba6-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="d2ba6-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
 
 
 - [<span data-ttu-id="d2ba6-105">DateAdd 関数 (カスタム web アプリケーションのアクセス)</span><span class="sxs-lookup"><span data-stu-id="d2ba6-105">DateAdd function (Access custom web app)</span></span>](dateadd-function-access-custom-web-app.md)

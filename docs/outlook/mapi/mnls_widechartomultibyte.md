@@ -75,11 +75,11 @@ int MNLS_WideCharToMultiByte(
   
 ## <a name="remarks"></a><span data-ttu-id="6320c-129">備考</span><span class="sxs-lookup"><span data-stu-id="6320c-129">Remarks</span></span>
 
-<span data-ttu-id="6320c-130">この関数は、 **WideCharToMultiByte**関数をラップします。</span><span class="sxs-lookup"><span data-stu-id="6320c-130">This function wraps the **WideCharToMultiByte** function.</span></span> <span data-ttu-id="6320c-131">詳細については、 [WideCharToMultiByte](http://msdn.microsoft.com/en-us/library/dd374130%28VS.85%29.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6320c-131">For more information, see [WideCharToMultiByte](http://msdn.microsoft.com/en-us/library/dd374130%28VS.85%29.aspx).</span></span>
+<span data-ttu-id="6320c-130">この関数は、 **WideCharToMultiByte**関数をラップします。</span><span class="sxs-lookup"><span data-stu-id="6320c-130">This function wraps the **WideCharToMultiByte** function.</span></span> <span data-ttu-id="6320c-131">詳細については、 [WideCharToMultiByte](http://msdn.microsoft.com/ja-jp/library/dd374130%28VS.85%29.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6320c-131">For more information, see [WideCharToMultiByte](http://msdn.microsoft.com/ja-jp/library/dd374130%28VS.85%29.aspx).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="6320c-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="6320c-132">See also</span></span>
 
 
 
-[<span data-ttu-id="6320c-133">WideCharToMultiByte</span><span class="sxs-lookup"><span data-stu-id="6320c-133">WideCharToMultiByte</span></span>](http://msdn.microsoft.com/en-us/library/dd374130%28VS.85%29.aspx)
+[<span data-ttu-id="6320c-133">WideCharToMultiByte</span><span class="sxs-lookup"><span data-stu-id="6320c-133">WideCharToMultiByte</span></span>](http://msdn.microsoft.com/ja-jp/library/dd374130%28VS.85%29.aspx)
 

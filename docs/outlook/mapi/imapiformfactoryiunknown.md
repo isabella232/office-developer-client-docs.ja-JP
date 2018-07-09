@@ -46,7 +46,7 @@ ms.locfileid: "19800546"
    
 ## <a name="remarks"></a><span data-ttu-id="ba921-125">備考</span><span class="sxs-lookup"><span data-stu-id="ba921-125">Remarks</span></span>
 
-<span data-ttu-id="ba921-126">[IClassFactory](http://msdn.microsoft.com/en-us/library/ms694364%28VS.85%29.aspx)インターフェイスは、 **IMAPIFormFactory**インターフェイスがベースし、 **IMAPIFormFactory**を実装するオブジェクトは、 **IClassFactory**からも継承する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ba921-126">The **IMAPIFormFactory** interface is based on the [IClassFactory](http://msdn.microsoft.com/en-us/library/ms694364%28VS.85%29.aspx) interface, and objects that implement **IMAPIFormFactory** should also inherit from **IClassFactory**.</span></span>
+<span data-ttu-id="ba921-126">[IClassFactory](http://msdn.microsoft.com/ja-jp/library/ms694364%28VS.85%29.aspx)インターフェイスは、 **IMAPIFormFactory**インターフェイスがベースし、 **IMAPIFormFactory**を実装するオブジェクトは、 **IClassFactory**からも継承する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ba921-126">The **IMAPIFormFactory** interface is based on the [IClassFactory](http://msdn.microsoft.com/ja-jp/library/ms694364%28VS.85%29.aspx) interface, and objects that implement **IMAPIFormFactory** should also inherit from **IClassFactory**.</span></span>
   
  <span data-ttu-id="ba921-127">**IMAPIFormFactory**は、フォーム サーバーが 1 つ以上のメッセージ クラスをサポートしている場合、新しいフォーム オブジェクトを作成するフォームの閲覧者が使用するインターフェイス (つまり、1 つ以上の入力フォームのオブジェクトの)。</span><span class="sxs-lookup"><span data-stu-id="ba921-127">**IMAPIFormFactory** is the interface that form viewers use to create new form objects when a form server supports more than one message class (that is, more than one type of form object).</span></span> 
   

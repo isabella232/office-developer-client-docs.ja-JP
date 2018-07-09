@@ -18,7 +18,7 @@ ms.locfileid: "19798585"
 <span data-ttu-id="b1ea4-104">" **ChangeView** /ビューの変更" アクションを使用して、ビュー間を移動できます。</span><span class="sxs-lookup"><span data-stu-id="b1ea4-104">You can use the **ChangeView** action to navigate between views in place.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="b1ea4-p101">[!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="b1ea4-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="b1ea4-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="b1ea4-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 ## <a name="setting"></a><span data-ttu-id="b1ea4-107">設定</span><span class="sxs-lookup"><span data-stu-id="b1ea4-107">Setting</span></span>
 

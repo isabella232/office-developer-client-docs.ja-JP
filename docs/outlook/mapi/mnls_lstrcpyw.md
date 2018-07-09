@@ -24,7 +24,7 @@ ms.locfileid: "19801657"
 <span data-ttu-id="0a349-105">文字列をバッファーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="0a349-105">Copies a string to a buffer.</span></span>
   
 > [!CAUTION]
-> <span data-ttu-id="0a349-106">使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="0a349-106">Do not use.</span></span> <span data-ttu-id="0a349-107">[StringCchCopy](http://msdn.microsoft.com/en-us/library/ms647527%28VS.85%29.aspx)を代わりに使用してください。</span><span class="sxs-lookup"><span data-stu-id="0a349-107">Consider using [StringCchCopy](http://msdn.microsoft.com/en-us/library/ms647527%28VS.85%29.aspx) instead.</span></span> 
+> <span data-ttu-id="0a349-106">使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="0a349-106">Do not use.</span></span> <span data-ttu-id="0a349-107">[StringCchCopy](http://msdn.microsoft.com/ja-jp/library/ms647527%28VS.85%29.aspx)を代わりに使用してください。</span><span class="sxs-lookup"><span data-stu-id="0a349-107">Consider using [StringCchCopy](http://msdn.microsoft.com/ja-jp/library/ms647527%28VS.85%29.aspx) instead.</span></span> 
   
 ```cpp
 LPWSTR MNLS_lstrcpyW(
@@ -50,11 +50,11 @@ LPCWSTR lpString2);
   
 ## <a name="remarks"></a><span data-ttu-id="0a349-116">備考</span><span class="sxs-lookup"><span data-stu-id="0a349-116">Remarks</span></span>
 
-<span data-ttu-id="0a349-117">この関数は、 **lstrcpy**関数をラップします。</span><span class="sxs-lookup"><span data-stu-id="0a349-117">This function wraps the **lstrcpy** function.</span></span> <span data-ttu-id="0a349-118">詳細については、 [lstrcpy](http://msdn.microsoft.com/en-us/library/ms647490%28VS.85%29.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0a349-118">For more information, see [lstrcpy](http://msdn.microsoft.com/en-us/library/ms647490%28VS.85%29.aspx).</span></span>
+<span data-ttu-id="0a349-117">この関数は、 **lstrcpy**関数をラップします。</span><span class="sxs-lookup"><span data-stu-id="0a349-117">This function wraps the **lstrcpy** function.</span></span> <span data-ttu-id="0a349-118">詳細については、 [lstrcpy](http://msdn.microsoft.com/ja-jp/library/ms647490%28VS.85%29.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0a349-118">For more information, see [lstrcpy](http://msdn.microsoft.com/ja-jp/library/ms647490%28VS.85%29.aspx).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="0a349-119">関連項目</span><span class="sxs-lookup"><span data-stu-id="0a349-119">See also</span></span>
 
 
 
-[<span data-ttu-id="0a349-120">lstrcpy</span><span class="sxs-lookup"><span data-stu-id="0a349-120">lstrcpy</span></span>](http://msdn.microsoft.com/en-us/library/ms647490%28VS.85%29.aspx)
+[<span data-ttu-id="0a349-120">lstrcpy</span><span class="sxs-lookup"><span data-stu-id="0a349-120">lstrcpy</span></span>](http://msdn.microsoft.com/ja-jp/library/ms647490%28VS.85%29.aspx)
 

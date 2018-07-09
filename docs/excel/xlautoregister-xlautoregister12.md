@@ -29,7 +29,7 @@ ms.locfileid: "19798961"
 <span data-ttu-id="22590-109">Excel �ł́AXLL ������炢���ꂩ�̊֐���������ăG�N�X�|�[�g���邱�Ƃ͕s�v�ł��B</span><span class="sxs-lookup"><span data-stu-id="22590-109">Excel does not require an XLL to implement and export either of these functions.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="22590-110">[!����] **xlAutoRegister**/  **xlAutoRegister12** �������̌^�Ɩ߂�l�̌^��w�肵�Ȃ��Ŋ֐���o�^���悤�Ƃ���ƁA�ŏI�I�ɃR�[�� �X�^�b�N���I�[�o�[�t���[���AExcel ���N���b�V�����錴���ƂȂ�ċA�Ăяo���̃��[�v���������܂��B</span><span class="sxs-lookup"><span data-stu-id="22590-110">If **xlAutoRegister**/ **xlAutoRegister12** tries to register the function without supplying the argument and return types, a recursive calling loop occurs which eventually overflows the call stack and crashes Excel.</span></span> 
+> <span data-ttu-id="22590-110">**xlAutoRegister**/  **xlAutoRegister12** �������̌^�Ɩ߂�l�̌^��w�肵�Ȃ��Ŋ֐���o�^���悤�Ƃ���ƁA�ŏI�I�ɃR�[�� �X�^�b�N���I�[�o�[�t���[���AExcel ���N���b�V�����錴���ƂȂ�ċA�Ăяo���̃��[�v���������܂��B</span><span class="sxs-lookup"><span data-stu-id="22590-110">If **xlAutoRegister**/ **xlAutoRegister12** tries to register the function without supplying the argument and return types, a recursive calling loop occurs which eventually overflows the call stack and crashes Excel.</span></span> 
   
 ```cs
 LPXLOPER12 WINAPI xlAutoRegister12(LPXLOPER12 pxName);

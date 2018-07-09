@@ -20,14 +20,14 @@ ms.locfileid: "19804697"
 <span data-ttu-id="ad004-p101">Office 365 クイック実行インストーラーには、IT 担当者およびソフトウェア管理ソリューションがプログラムで更新の管理を制御できるようになる COM インターフェイスが用意されています。このインターフェイスは、Office 展開ツールよりも高度な追加の管理機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="ad004-p101">The Office 365 Click-to-Run installer provides a COM interface that allows IT Professionals and software management solutions programmatic control over update management. This interface provides additional management capabilities beyond what is provided by the Office Deployment Tool.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="ad004-107">[!メモ] この記事は、Office 2016 以降および Office 365 に適用されます。</span><span class="sxs-lookup"><span data-stu-id="ad004-107">This article applies to Office 2016 and later, Office 365.</span></span> 
+> <span data-ttu-id="ad004-107">この記事は、Office 2016 以降および Office 365 に適用されます。</span><span class="sxs-lookup"><span data-stu-id="ad004-107">This article applies to Office 2016 and later, Office 365.</span></span> 
   
 ## <a name="integrating-with-the-click-to-run"></a><span data-ttu-id="ad004-108">クイック実行との統合</span><span class="sxs-lookup"><span data-stu-id="ad004-108">Integrating with the Click-to-Run</span></span>
 
 <span data-ttu-id="ad004-109">このインターフェイスを使用するには、管理アプリケーションで COM インターフェイスを起動して、クイック実行インストール サービスと直接通信する公開 API を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="ad004-109">To use this interface, a manageability application invokes the COM interface and calls exposed APIs that communicate directly with the Click-to-Run installation service.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="ad004-110">[!メモ] Office クイック実行インストーラーは、インストーラーの動作を制御できるパラメーターを指定して、コマンド ラインから実行できます。詳細は、「[クイック実行用 Office 展開ツール](https://www.microsoft.com/en-us/download/details.aspx?id=49117)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ad004-110">The Office Click-to-Run installer can be run from the command-line with parameters that can control the behavior, as documented in [Office Deployment Tool for Click-to-Run](https://www.microsoft.com/en-us/download/details.aspx?id=49117).</span></span> 
+> <span data-ttu-id="ad004-110">Office クイック実行インストーラーは、インストーラーの動作を制御できるパラメーターを指定して、コマンド ラインから実行できます。詳細は、「[クイック実行用 Office 展開ツール](https://www.microsoft.com/en-us/download/details.aspx?id=49117)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ad004-110">The Office Click-to-Run installer can be run from the command-line with parameters that can control the behavior, as documented in [Office Deployment Tool for Click-to-Run](https://www.microsoft.com/en-us/download/details.aspx?id=49117).</span></span> 
   
 <span data-ttu-id="ad004-111">**次に、COM インターフェイスの概念図を示します**</span><span class="sxs-lookup"><span data-stu-id="ad004-111">**Following is a conceptual diagram of the COM interface**</span></span>
 
@@ -349,7 +349,7 @@ HRESULT status([out] _UPDATE_STATUS_REPORT& pUpdateStatusReport) // Get status o
 ### <a name="summary-of-iupdatenotify2-interface"></a><span data-ttu-id="ad004-253">IUpdateNotify2 インターフェイスの概要</span><span class="sxs-lookup"><span data-stu-id="ad004-253">Summary of IUpdateNotify2 interface</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="ad004-p122">[!メモ] この概要は、「[管理容易性アプリケーションと Office 365 クイック実行インストーラーの統合](https://msdn.microsoft.com/EN-US/library/office/mt608768.aspx)」の補完情報として提供します。パブリック ドキュメントの更新後は、このドキュメントは廃止と見なされます。</span><span class="sxs-lookup"><span data-stu-id="ad004-p122">This summary is provided as a compliment info to [Integrating manageability applications with the Office 365 click-to-run installer](https://msdn.microsoft.com/EN-US/library/office/mt608768.aspx). Once the public doc is updated, this doc can be considered as obsolete.</span></span> 
+> <span data-ttu-id="ad004-p122">この概要は、「[管理容易性アプリケーションと Office 365 クイック実行インストーラーの統合](https://msdn.microsoft.com/ja-jp/library/office/mt608768.aspx)」の補完情報として提供します。パブリック ドキュメントの更新後は、このドキュメントは廃止と見なされます。</span><span class="sxs-lookup"><span data-stu-id="ad004-p122">This summary is provided as a compliment info to [Integrating manageability applications with the Office 365 click-to-run installer](https://msdn.microsoft.com/ja-jp/library/office/mt608768.aspx). Once the public doc is updated, this doc can be considered as obsolete.</span></span> 
   
 <span data-ttu-id="ad004-p123">C2RTenant [16.0.8208.6352](http://oloop/BuildGroup/Details/tenantc2rclient#3519/1255278) (最初の一般公開ビルドは 6 月のフォーク ビルド 8326.\* になります) 以降に、新しい **IUpdateNotify2** インターフェイスが追加されています。次に、このインターフェイスに関する基本情報の一部を示します。</span><span class="sxs-lookup"><span data-stu-id="ad004-p123">From C2RTenant [16.0.8208.6352](http://oloop/BuildGroup/Details/tenantc2rclient#3519/1255278) (First publicly available build should be June fork build -- 8326.\*) we have added a new **IUpdateNotify2** interface. Here is some basic info about this interface:</span></span> 
   
@@ -373,7 +373,7 @@ HRESULT status([out] _UPDATE_STATUS_REPORT& pUpdateStatusReport) // Get status o
   
 ## <a name="implementing-the-bits-interface"></a><span data-ttu-id="ad004-272">BITS インターフェイスの実装</span><span class="sxs-lookup"><span data-stu-id="ad004-272">Implementing the BITS interface</span></span>
 
-<span data-ttu-id="ad004-p128">[Background Intelligent Transfer Service](https://msdn.microsoft.com/en-us/library/bb968799(v=vs.85).aspx) (BITS) は、クライアントとサーバーの間でファイルを転送するための Microsoft が提供するサービスです。BITS は、Office クイック実行インストーラーがコンテンツのダウンロードに使用できるチャネルの 1 つです。既定では、Office クイック実行インストーラーは、Windows に組み込まれている BITS の実装を使用して、CDN からコンテンツをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="ad004-p128">The [Background Intelligent Transfer Service](https://msdn.microsoft.com/en-us/library/bb968799(v=vs.85).aspx) (BITS) is a service provided by Microsoft to transfer files between a client and server. BITS is one of the channels that Office Click-To-Run installer can use to download content. By default, the Office Click-To-Run installer uses the Windows' built in implementation of BITS to download the content from the CDN.</span></span> 
+<span data-ttu-id="ad004-p128">[Background Intelligent Transfer Service](https://msdn.microsoft.com/ja-jp/library/bb968799(v=vs.85).aspx) (BITS) は、クライアントとサーバーの間でファイルを転送するための Microsoft が提供するサービスです。BITS は、Office クイック実行インストーラーがコンテンツのダウンロードに使用できるチャネルの 1 つです。既定では、Office クイック実行インストーラーは、Windows に組み込まれている BITS の実装を使用して、CDN からコンテンツをダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="ad004-p128">The [Background Intelligent Transfer Service](https://msdn.microsoft.com/ja-jp/library/bb968799(v=vs.85).aspx) (BITS) is a service provided by Microsoft to transfer files between a client and server. BITS is one of the channels that Office Click-To-Run installer can use to download content. By default, the Office Click-To-Run installer uses the Windows' built in implementation of BITS to download the content from the CDN.</span></span> 
   
 <span data-ttu-id="ad004-p129">カスタマイズされた BITS の実装を **IUpdateNotify** インターフェイスの **download()** メソッドに提供すると、管理ソフトウェアはクライアントがコンテンツをダウンロードする場所と方法を制御できます。カスタマイズされた BITS インターフェイスは、Office CDN、IIS サーバー、ファイル共有など、クイック実行組み込みチャネル以外のカスタム コンテンツ配布チャネルを提供する場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="ad004-p129">By providing a customized BITS implementation to the **download()** method of the **IUpdateNotify** interface, your manageability software can control where and how the client downloads the content. A customized BITS interface is useful when providing a custom content distribution channel other than the Click-to-Run built-in channels, such as the Office CDN, IIS servers, or file shares.</span></span> 
   
@@ -625,7 +625,7 @@ THE ABOVE SECTION APPEARS TO BE A DUPLICATE OF THE FOLLOWING SECTION; TEMPORARIL
 4. <span data-ttu-id="ad004-321">カスタム イメージで不要な言語の言語ノードを削除します。</span><span class="sxs-lookup"><span data-stu-id="ad004-321">Remove language nodes for any languages not required in the custom image.</span></span>
     
    > [!NOTE]
-   > <span data-ttu-id="ad004-322">[!メモ] language='0' のノードは、言語に依存しないノードであり、イメージに含めておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="ad004-322">Nodes with language='0' are language neutral and must be included in the image.</span></span> 
+   > <span data-ttu-id="ad004-322">language='0' のノードは、言語に依存しないノードであり、イメージに含めておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="ad004-322">Nodes with language='0' are language neutral and must be included in the image.</span></span> 
   
 5. <span data-ttu-id="ad004-323">XML ファイル一覧に対して反復処理を行い、CDN ファイルをコピーして、CDN のローカル イメージを構成します。必要に応じてフォルダー構造を作成します。</span><span class="sxs-lookup"><span data-stu-id="ad004-323">Construct a local image of the CDN by iterating through the XML file list and copying the CDN files, while creating the folder structure as needed.</span></span> 
     

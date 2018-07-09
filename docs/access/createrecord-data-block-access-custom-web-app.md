@@ -18,10 +18,10 @@ ms.locfileid: "19798610"
 <span data-ttu-id="64905-104">**CreateRecord** データ ブロックを使用して、指定したテーブルに新しいレコードを作成できます。</span><span class="sxs-lookup"><span data-stu-id="64905-104">You can use the **CreateRecord** data block to create a new record in the specified table.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="64905-p101">[!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="64905-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="64905-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="64905-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="64905-107">[!メモ] **CreateRecord** データ ブロックはデータ マクロでのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="64905-107">The **CreateRecord** data block is available only in Data Macros.</span></span> 
+> <span data-ttu-id="64905-107">**CreateRecord** データ ブロックはデータ マクロでのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="64905-107">The **CreateRecord** data block is available only in Data Macros.</span></span> 
   
 ## <a name="setting"></a><span data-ttu-id="64905-108">設定</span><span class="sxs-lookup"><span data-stu-id="64905-108">Setting</span></span>
 

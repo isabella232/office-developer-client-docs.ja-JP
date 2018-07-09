@@ -19,7 +19,7 @@ ms.locfileid: "19798546"
 <span data-ttu-id="90d61-p102">2 つの式を比較します。非 NULL の式を比較したとき、左オペランドが右オペランドより少ない値の場合は、結果は TRUE になります。それ以外の場合、結果は FALSE です。</span><span class="sxs-lookup"><span data-stu-id="90d61-p102">Compares two expressions. When you compare non-null expressions, the result is TRUE if the left operand has a value lower than the right operand; otherwise, the result is FALSE.</span></span>
   
 > [!IMPORTANT]
-> <span data-ttu-id="90d61-p103">[!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="90d61-p103">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="90d61-p103">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="90d61-p103">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 ## <a name="syntax"></a><span data-ttu-id="90d61-109">構文</span><span class="sxs-lookup"><span data-stu-id="90d61-109">Syntax</span></span>
 

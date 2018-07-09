@@ -19,7 +19,7 @@ ms.locfileid: "19798599"
 <span data-ttu-id="f3e49-104">指定されたパターンに従って書式設定された値を返します。</span><span class="sxs-lookup"><span data-stu-id="f3e49-104">Returns a value formatted according to a specified pattern.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="f3e49-p101">[!メモ] この記事で説明されているクラウド ストレージ機能は、Office 2013 および Office 2016 ではサポートされなくなっているため、次のエラーが発生する可能性があります。 >  *申し訳ございません。サーバーで問題が発生しているため、現在 \<サービス\> を追加できません。後でもう一度お試しください。* > Office Online、Office for iOS、Office for Android のクラウド ストレージについて、[Office クラウド ストレージ パートナー プログラム](https://dev.office.com/programs/officecloudstorage)でお調べいただけます。</span><span class="sxs-lookup"><span data-stu-id="f3e49-p101">The cloud storage feature described in this article is no longer supported in Office 2013 and Office 2016 and may result in the following error: >  *Sorry, we're having server problems, so we can't add \<service\> right now. Please try again later.* > For cloud storage for Office Online, Office for iOS, and Office for Android, you can look into our [Office Cloud Storage Partner Program](https://dev.office.com/programs/officecloudstorage).</span></span> 
+> <span data-ttu-id="f3e49-p101">この記事で説明されているクラウド ストレージ機能は、Office 2013 および Office 2016 ではサポートされなくなっているため、次のエラーが発生する可能性があります。 >  *申し訳ございません。サーバーで問題が発生しているため、現在 \<サービス\> を追加できません。後でもう一度お試しください。* > Office Online、Office for iOS、Office for Android のクラウド ストレージについて、[Office クラウド ストレージ パートナー プログラム](https://dev.office.com/programs/officecloudstorage)でお調べいただけます。</span><span class="sxs-lookup"><span data-stu-id="f3e49-p101">The cloud storage feature described in this article is no longer supported in Office 2013 and Office 2016 and may result in the following error: >  *Sorry, we're having server problems, so we can't add \<service\> right now. Please try again later.* > For cloud storage for Office Online, Office for iOS, and Office for Android, you can look into our [Office Cloud Storage Partner Program](https://dev.office.com/programs/officecloudstorage).</span></span> 
   
 ## <a name="syntax"></a><span data-ttu-id="f3e49-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="f3e49-107">Syntax</span></span>
 
@@ -36,13 +36,13 @@ ms.locfileid: "19798599"
 
 <span data-ttu-id="f3e49-119">*Format*  パラメーターでは、以下のパターンのいずれかに一致する文字列を渡すことができます。</span><span class="sxs-lookup"><span data-stu-id="f3e49-119">For the  *Format*  parameter, you can pass strings that match any of the following patterns:</span></span> 
   
-- [<span data-ttu-id="f3e49-120">標準的な数値書式の文字列</span><span class="sxs-lookup"><span data-stu-id="f3e49-120">Standard Numeric Format Strings</span></span>](http://msdn.microsoft.com/en-us/library/dwhawy9k%28v=vs.110%29.aspx)
+- [<span data-ttu-id="f3e49-120">標準的な数値書式の文字列</span><span class="sxs-lookup"><span data-stu-id="f3e49-120">Standard Numeric Format Strings</span></span>](http://msdn.microsoft.com/ja-jp/library/dwhawy9k%28v=vs.110%29.aspx)
     
-- [<span data-ttu-id="f3e49-121">カスタムの数値書式の文字列</span><span class="sxs-lookup"><span data-stu-id="f3e49-121">Custom Numeric Format Strings</span></span>](http://msdn.microsoft.com/en-us/library/0c899ak8%28v=vs.110%29.aspx)
+- [<span data-ttu-id="f3e49-121">カスタムの数値書式の文字列</span><span class="sxs-lookup"><span data-stu-id="f3e49-121">Custom Numeric Format Strings</span></span>](http://msdn.microsoft.com/ja-jp/library/0c899ak8%28v=vs.110%29.aspx)
     
-- [<span data-ttu-id="f3e49-122">標準的な日付と時刻の形式の文字列</span><span class="sxs-lookup"><span data-stu-id="f3e49-122">Standard Date and Time Format Strings</span></span>](http://msdn.microsoft.com/en-us/library/az4se3k1%28v=vs.110%29.aspx)
+- [<span data-ttu-id="f3e49-122">標準的な日付と時刻の形式の文字列</span><span class="sxs-lookup"><span data-stu-id="f3e49-122">Standard Date and Time Format Strings</span></span>](http://msdn.microsoft.com/ja-jp/library/az4se3k1%28v=vs.110%29.aspx)
     
-- [<span data-ttu-id="f3e49-123">カスタムの日付と時刻の形式の文字列</span><span class="sxs-lookup"><span data-stu-id="f3e49-123">Custom Date and Time Format Strings</span></span>](http://msdn.microsoft.com/en-us/library/8kb3ddd4%28v=vs.110%29.aspx)
+- [<span data-ttu-id="f3e49-123">カスタムの日付と時刻の形式の文字列</span><span class="sxs-lookup"><span data-stu-id="f3e49-123">Custom Date and Time Format Strings</span></span>](http://msdn.microsoft.com/ja-jp/library/8kb3ddd4%28v=vs.110%29.aspx)
     
 <span data-ttu-id="f3e49-124">Access 2013 Web アプリケーションの以下の領域では、 **Format** 関数を使用できません。</span><span class="sxs-lookup"><span data-stu-id="f3e49-124">You cannot use the **Format** function in the following areas of Access 2013 web apps:</span></span> 
   

@@ -35,7 +35,7 @@ ms.locfileid: "19804109"
     
 5. <span data-ttu-id="0efcd-116">使用[ITnef: IUnknown](itnefiunknown.md)インターフェイスのメソッドはメッセージのテキストでのメッセージの添付ファイルの位置を記述するタグを挿入します。</span><span class="sxs-lookup"><span data-stu-id="0efcd-116">Use [ITnef : IUnknown](itnefiunknown.md) interface methods to insert tags describing the positions of message attachments in the message text.</span></span> 
     
-6. <span data-ttu-id="0efcd-117">[IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx)の方法でタグ付けされたメッセージのテキストにアクセスし、メッセージング システムに送信します。</span><span class="sxs-lookup"><span data-stu-id="0efcd-117">Access the tagged message text through [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) methods, and send it to the messaging system.</span></span> 
+6. <span data-ttu-id="0efcd-117">[IStream](http://msdn.microsoft.com/ja-jp/library/aa380034%28VS.85%29.aspx)の方法でタグ付けされたメッセージのテキストにアクセスし、メッセージング システムに送信します。</span><span class="sxs-lookup"><span data-stu-id="0efcd-117">Access the tagged message text through [IStream](http://msdn.microsoft.com/ja-jp/library/aa380034%28VS.85%29.aspx) methods, and send it to the messaging system.</span></span> 
     
  <span data-ttu-id="0efcd-118">**カプセル化されたプロパティを取得するには**</span><span class="sxs-lookup"><span data-stu-id="0efcd-118">**To retrieve encapsulated properties**</span></span>
   

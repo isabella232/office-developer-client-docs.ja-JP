@@ -65,6 +65,6 @@ int MNLS_MultiByteToWideChar(
   
 ## <a name="remarks"></a><span data-ttu-id="7d14f-123">備考</span><span class="sxs-lookup"><span data-stu-id="7d14f-123">Remarks</span></span>
 
-<span data-ttu-id="7d14f-124">この関数は、 **MultiByteToWideChar**の関数をラップします。</span><span class="sxs-lookup"><span data-stu-id="7d14f-124">This function wraps the **MultiByteToWideChar** function.</span></span> <span data-ttu-id="7d14f-125">詳細については、 [MultiByteToWideChar](http://msdn.microsoft.com/en-us/library/dd319072%28VS.85%29.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7d14f-125">For more information, see [MultiByteToWideChar](http://msdn.microsoft.com/en-us/library/dd319072%28VS.85%29.aspx).</span></span>
+<span data-ttu-id="7d14f-124">この関数は、 **MultiByteToWideChar**の関数をラップします。</span><span class="sxs-lookup"><span data-stu-id="7d14f-124">This function wraps the **MultiByteToWideChar** function.</span></span> <span data-ttu-id="7d14f-125">詳細については、 [MultiByteToWideChar](http://msdn.microsoft.com/ja-jp/library/dd319072%28VS.85%29.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7d14f-125">For more information, see [MultiByteToWideChar](http://msdn.microsoft.com/ja-jp/library/dd319072%28VS.85%29.aspx).</span></span>
   
 

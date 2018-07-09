@@ -31,7 +31,7 @@ ms.locfileid: "19801068"
     
 - <span data-ttu-id="caaeb-114">フォーム サーバーのクラス識別子 (CLSID) の文字列表現でグローバル アトムを登録しています。</span><span class="sxs-lookup"><span data-stu-id="caaeb-114">Registering a global atom with a string representation of the form server's class identifier (CLSID).</span></span> <span data-ttu-id="caaeb-115">フォーム サーバーの有効期間のこのアトムが存在します。</span><span class="sxs-lookup"><span data-stu-id="caaeb-115">This atom should exist for the lifetime of the form server.</span></span>
     
-- <span data-ttu-id="caaeb-116">フォーム サーバーのクラス ファクトリを OLE に登録して[います](http://msdn.microsoft.com/en-us/library/ms693407.aspx)OLE 関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="caaeb-116">Calling the OLE function [CoRegisterClassObject](http://msdn.microsoft.com/en-us/library/ms693407.aspx) to register your form server's class factory with OLE.</span></span> 
+- <span data-ttu-id="caaeb-116">フォーム サーバーのクラス ファクトリを OLE に登録して[います](http://msdn.microsoft.com/ja-jp/library/ms693407.aspx)OLE 関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="caaeb-116">Calling the OLE function [CoRegisterClassObject](http://msdn.microsoft.com/ja-jp/library/ms693407.aspx) to register your form server's class factory with OLE.</span></span> 
     
 - <span data-ttu-id="caaeb-117">メッセージを受信するのにはメイン ウィンドウを作成しています。</span><span class="sxs-lookup"><span data-stu-id="caaeb-117">Creating a main window to receive messages.</span></span> <span data-ttu-id="caaeb-118">このウィンドウはおそらく、ユーザーが個々 のフォーム オブジェクトに関連付けられている特定の windows と対話するために、表示する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="caaeb-118">This window probably does not need to be visible because the user will be interacting with the specific windows associated with individual form objects.</span></span> <span data-ttu-id="caaeb-119">ただし、開発時にメイン ・ ウィンドウは、出力またはフォーム サーバーのコントロールをデバッグするための便利な場所。</span><span class="sxs-lookup"><span data-stu-id="caaeb-119">However, during development, the main window can be a convenient place for debugging output or control of your form server.</span></span>
     
@@ -39,7 +39,7 @@ ms.locfileid: "19801068"
     
 <span data-ttu-id="caaeb-121">フォーム サーバーが終了するは、次のタスクを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="caaeb-121">When your form server exits, it should perform the following tasks:</span></span>
   
-- <span data-ttu-id="caaeb-122">OLE 関数、メッセージ クラスの OLE の登録を取り消すには[CoRevokeClassObject](http://msdn.microsoft.com/en-us/library/ms688650%28VS.85%29.aspx)を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="caaeb-122">Call the OLE function [CoRevokeClassObject](http://msdn.microsoft.com/en-us/library/ms688650%28VS.85%29.aspx) to revoke your message class's OLE registration.</span></span> 
+- <span data-ttu-id="caaeb-122">OLE 関数、メッセージ クラスの OLE の登録を取り消すには[CoRevokeClassObject](http://msdn.microsoft.com/ja-jp/library/ms688650%28VS.85%29.aspx)を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="caaeb-122">Call the OLE function [CoRevokeClassObject](http://msdn.microsoft.com/ja-jp/library/ms688650%28VS.85%29.aspx) to revoke your message class's OLE registration.</span></span> 
     
 - <span data-ttu-id="caaeb-123">Mapi フォーム サーバーの接続を正しく閉じるには、 **MAPIUninitialize**を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="caaeb-123">Call **MAPIUninitialize** to properly close the form server's connection to MAPI.</span></span> 
     

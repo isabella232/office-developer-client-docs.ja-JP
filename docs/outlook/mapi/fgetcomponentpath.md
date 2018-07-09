@@ -41,7 +41,7 @@ BOOL FGetComponentPath(
 
  <span data-ttu-id="d8f1d-107">_szComponent_</span><span class="sxs-lookup"><span data-stu-id="d8f1d-107">_szComponent_</span></span>
   
-> <span data-ttu-id="d8f1d-108">[in][Mapi32.dll スタブのレジストリ設定](http://msdn.microsoft.com/en-us/library/dd162409.aspx)」で説明する MSIComponentID レジストリ キーです。</span><span class="sxs-lookup"><span data-stu-id="d8f1d-108">[in] The MSIComponentID reg key described in [Mapi32.dll Stub Registry Settings](http://msdn.microsoft.com/en-us/library/dd162409.aspx).</span></span>
+> <span data-ttu-id="d8f1d-108">[in][Mapi32.dll スタブのレジストリ設定](http://msdn.microsoft.com/ja-jp/library/dd162409.aspx)」で説明する MSIComponentID レジストリ キーです。</span><span class="sxs-lookup"><span data-stu-id="d8f1d-108">[in] The MSIComponentID reg key described in [Mapi32.dll Stub Registry Settings](http://msdn.microsoft.com/ja-jp/library/dd162409.aspx).</span></span>
     
  <span data-ttu-id="d8f1d-109">_szQualifier_</span><span class="sxs-lookup"><span data-stu-id="d8f1d-109">_szQualifier_</span></span>
   
@@ -80,5 +80,5 @@ BOOL FGetComponentPath(
 [<span data-ttu-id="d8f1d-126">MAPI 負荷からの特定のバージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="d8f1d-126">Choose a Specific Version of MAPI to Load</span></span>](how-to-choose-a-specific-version-of-mapi-to-load.md)
 
 
-[<span data-ttu-id="d8f1d-127">Mapi32.dll スタブのレジストリ設定</span><span class="sxs-lookup"><span data-stu-id="d8f1d-127">Mapi32.dll Stub Registry Settings</span></span>](http://msdn.microsoft.com/en-us/library/dd162409.aspx)
+[<span data-ttu-id="d8f1d-127">Mapi32.dll スタブのレジストリ設定</span><span class="sxs-lookup"><span data-stu-id="d8f1d-127">Mapi32.dll Stub Registry Settings</span></span>](http://msdn.microsoft.com/ja-jp/library/dd162409.aspx)
 

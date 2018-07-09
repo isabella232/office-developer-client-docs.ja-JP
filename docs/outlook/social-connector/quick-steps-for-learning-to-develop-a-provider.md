@@ -75,5 +75,5 @@ ms.locfileid: "19804458"
   
 ## <a name="see-also"></a><span data-ttu-id="eb222-144">関連項目</span><span class="sxs-lookup"><span data-stu-id="eb222-144">See also</span></span>
 
-- [<span data-ttu-id="eb222-145">Outlook Social Connector プロバイダーの開発の概要 (英語)(機械翻訳)</span><span class="sxs-lookup"><span data-stu-id="eb222-145">Getting Started with Developing an Outlook Social Connector Provider</span></span>](getting-started-with-developing-an-outlook-social-connector-provider.md)
+- [<span data-ttu-id="eb222-145">Outlook Social Connector プロバイダーの開発の概要(機械翻訳)</span><span class="sxs-lookup"><span data-stu-id="eb222-145">Getting Started with Developing an Outlook Social Connector Provider</span></span>](getting-started-with-developing-an-outlook-social-connector-provider.md)
 

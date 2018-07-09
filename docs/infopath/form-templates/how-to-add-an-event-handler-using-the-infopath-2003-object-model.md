@@ -225,7 +225,7 @@ namespace AuxDom
 <span data-ttu-id="78361-149">InfoPath 2003 のマネージ コード オブジェクト モデルと互換性のある新しい InfoPath フォーム テンプレート プロジェクトを作成すると、フォーム コード モジュール先頭のクラスにアセンブリ レベルの **System.ComponentModel.Description** 属性が適用され、これによってフォーム テンプレートのすべてのイベント ハンドラーを含むクラスが識別されます。</span><span class="sxs-lookup"><span data-stu-id="78361-149">When you create a new InfoPath form template project that is compatible with the InfoPath 2003 managed code object model, an assembly-level **System.ComponentModel.Description** attribute is applied to the class at the beginning of the form code module to identify the class that contains all event handlers for the form template.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="78361-p105">[!重要] このクラスの **System.ComponentModel.Description** 属性は変更しないでください。変更すると、イベント ハンドラーがどこにあるかをフォーム テンプレートは特定できず、イベント ハンドラーが実行されません。</span><span class="sxs-lookup"><span data-stu-id="78361-p105">Do not modify the **System.ComponentModel.Description** attribute in this class. If you do so, your form template will not be able to identify where event handlers are located, and the event handlers will fail to run.</span></span> 
+> <span data-ttu-id="78361-p105">このクラスの **System.ComponentModel.Description** 属性は変更しないでください。変更すると、イベント ハンドラーがどこにあるかをフォーム テンプレートは特定できず、イベント ハンドラーが実行されません。</span><span class="sxs-lookup"><span data-stu-id="78361-p105">Do not modify the **System.ComponentModel.Description** attribute in this class. If you do so, your form template will not be able to identify where event handlers are located, and the event handlers will fail to run.</span></span> 
   
 ```cs
 using System;

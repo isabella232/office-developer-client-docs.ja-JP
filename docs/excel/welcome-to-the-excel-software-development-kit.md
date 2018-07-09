@@ -24,7 +24,7 @@ ms.locfileid: "19798954"
   
 <span data-ttu-id="b0208-108">�X�V: 2012 �N 11 ��</span><span class="sxs-lookup"><span data-stu-id="b0208-108">Revised: November 2012</span></span>
   
-<span data-ttu-id="b0208-109">[Excel 2013 XLL SDK](http://go.microsoft.com/fwlink/?LinkID=251082&amp;clcid=0x409) ��_�E�����[�h���܂��B</span><span class="sxs-lookup"><span data-stu-id="b0208-109">Download the [Excel 2013 XLL SDK](http://go.microsoft.com/fwlink/?LinkID=251082&amp;clcid=0x409).</span></span>
+<span data-ttu-id="b0208-109">[Excel 2013 XLL SDK](http://go.microsoft.com/fwlink/?LinkID=251082) ��_�E�����[�h���܂��B</span><span class="sxs-lookup"><span data-stu-id="b0208-109">Download the [Excel 2013 XLL SDK](http://go.microsoft.com/fwlink/?LinkID=251082).</span></span>
   
 <span data-ttu-id="b0208-110">Excel 2013 XLL SDK �ɂ́A�����܂܂�Ă��܂��B</span><span class="sxs-lookup"><span data-stu-id="b0208-110">The Excel 2013 XLL SDK includes the following:</span></span>
   
@@ -54,10 +54,10 @@ ms.locfileid: "19798954"
     
 ## <a name="related-links"></a><span data-ttu-id="b0208-124">�֘A�����N</span><span class="sxs-lookup"><span data-stu-id="b0208-124">Related Links</span></span>
 
-<span data-ttu-id="b0208-125">[Excel �f�x���b�p�[ �Z���^�[](http://msdn.microsoft.com/en-us/office/aa905411.aspx)</span><span class="sxs-lookup"><span data-stu-id="b0208-125">[Excel Developer Center](http://msdn.microsoft.com/en-us/office/aa905411.aspx)</span></span>
+<span data-ttu-id="b0208-125">[Excel �f�x���b�p�[ �Z���^�[](http://msdn.microsoft.com/ja-jp/office/aa905411.aspx)</span><span class="sxs-lookup"><span data-stu-id="b0208-125">[Excel Developer Center](http://msdn.microsoft.com/ja-jp/office/aa905411.aspx)</span></span>
   
-<span data-ttu-id="b0208-126">[Microsoft Office �f�x���b�p �Z���^�[](http://msdn.microsoft.com/en-us/office/default.aspx)</span><span class="sxs-lookup"><span data-stu-id="b0208-126">[Microsoft Office Developer Center](http://msdn.microsoft.com/en-us/office/default.aspx)</span></span>
+<span data-ttu-id="b0208-126">[Microsoft Office �f�x���b�p �Z���^�[](http://msdn.microsoft.com/ja-jp/office/default.aspx)</span><span class="sxs-lookup"><span data-stu-id="b0208-126">[Microsoft Office Developer Center](http://msdn.microsoft.com/ja-jp/office/default.aspx)</span></span>
   
-[<span data-ttu-id="b0208-127">Excel 2010 SDK: Excel 2010 XLL �\�t�g�E�F�A�J���L�b�g</span><span class="sxs-lookup"><span data-stu-id="b0208-127">Excel 2010 SDK: Excel 2010 XLL Software Development Kit</span></span>](http://go.microsoft.com/fwlink/?LinkID=186435&amp;clcid=0x409)
+[<span data-ttu-id="b0208-127">Excel 2010 SDK: Excel 2010 XLL �\�t�g�E�F�A�J���L�b�g</span><span class="sxs-lookup"><span data-stu-id="b0208-127">Excel 2010 SDK: Excel 2010 XLL Software Development Kit</span></span>](http://go.microsoft.com/fwlink/?LinkID=186435)
   
 

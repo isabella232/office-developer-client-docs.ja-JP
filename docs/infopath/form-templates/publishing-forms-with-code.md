@@ -65,7 +65,7 @@ ms.locfileid: "19799221"
 3. <span data-ttu-id="75533-146">発行先の SharePoint サイトの URL を入力し、[ **次へ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="75533-146">Enter the URL of the SharePoint site to publish to, and then click **Next**.</span></span> 
     
     > [!IMPORTANT]
-    > <span data-ttu-id="75533-147">[!重要] このフォーム テンプレートをセキュリティで保護されたソリューションとして発行するためには、このサイトのサイト コレクション管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="75533-147">You must be a site collection administrator on this site to publish this form template as a sandboxed solution.</span></span> 
+    > <span data-ttu-id="75533-147">このフォーム テンプレートをセキュリティで保護されたソリューションとして発行するためには、このサイトのサイト コレクション管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="75533-147">You must be a site collection administrator on this site to publish this form template as a sandboxed solution.</span></span> 
   
 4. <span data-ttu-id="75533-148">[ **フォーム ライブラリ**] をクリックし、[ **次へ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="75533-148">Select **Form Library**, and then click **Next**.</span></span>
     

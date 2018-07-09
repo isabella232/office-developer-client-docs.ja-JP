@@ -94,7 +94,7 @@ ms.locfileid: "19799228"
 <span data-ttu-id="94333-p116">フォーム テンプレートは、信頼済みの証明書ルートへの信頼チェーンのある証明書を使用して署名する必要があります。こうした証明書を使用して署名していない場合、署名が認証できないので、署名の検証に失敗します。</span><span class="sxs-lookup"><span data-stu-id="94333-p116">The form template should be signed with a certificate that has a trust chain leading to an already trusted certificate root. If it is not signed with such a certificate, signature verification will fail, because the signature cannot be authenticated.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="94333-176">[!メモ] 署名されたフォーム テンプレートがドメインへのアクセスや制限付きのアクセスを要求すると、自動的にテンプレートを更新できるかどうかを判断する場合を除いて、InfoPath は署名のチェックや検証を行いません。</span><span class="sxs-lookup"><span data-stu-id="94333-176">If a signed form template requests Domain or Restricted access, InfoPath will not check or verify the signature except to determine whether InfoPath can automatically update the template.</span></span> 
+> <span data-ttu-id="94333-176">署名されたフォーム テンプレートがドメインへのアクセスや制限付きのアクセスを要求すると、自動的にテンプレートを更新できるかどうかを判断する場合を除いて、InfoPath は署名のチェックや検証を行いません。</span><span class="sxs-lookup"><span data-stu-id="94333-176">If a signed form template requests Domain or Restricted access, InfoPath will not check or verify the signature except to determine whether InfoPath can automatically update the template.</span></span> 
   
 <span data-ttu-id="94333-177">[セキュリティ レベル、電子メールによる展開、およびリモート フォーム テンプレート](security-levels-email-deployment-and-remote-form-templates.md)の電子メールの展開の詳細についてが表示されます。</span><span class="sxs-lookup"><span data-stu-id="94333-177">You can find more information about email deployment in [Security Levels, E-Mail Deployment, and Remote Form Templates](security-levels-email-deployment-and-remote-form-templates.md).</span></span>
   

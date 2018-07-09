@@ -35,17 +35,17 @@ ms.locfileid: "19804540"
 [<span data-ttu-id="ab231-119">更新プログラムのユーザー設定フィールドを一括して、オンラインのプロジェクトのワークフローからプロジェクト サイトを作成</span><span class="sxs-lookup"><span data-stu-id="ab231-119">Bulk update custom fields and create project sites from a Project Online workflow</span></span>](bulk-update-custom-fields-and-create-project-sites-from-workflow-in-project.md)
 
 
-[<span data-ttu-id="ab231-120">SharePoint Designer 2013 と Visio 2013 でワークフローの開発</span><span class="sxs-lookup"><span data-stu-id="ab231-120">Workflow development in SharePoint Designer 2013 and Visio 2013</span></span>](http://msdn.microsoft.com/en-us/library/jj163272%28office.15%29.aspx)
+[<span data-ttu-id="ab231-120">SharePoint Designer 2013 と Visio 2013 でワークフローの開発</span><span class="sxs-lookup"><span data-stu-id="ab231-120">Workflow development in SharePoint Designer 2013 and Visio 2013</span></span>](http://msdn.microsoft.com/ja-jp/library/jj163272%28office.15%29.aspx)
   
-[<span data-ttu-id="ab231-121">SharePoint ワークフローの新機能</span><span class="sxs-lookup"><span data-stu-id="ab231-121">What's new in workflows for SharePoint 2013</span></span>](http://msdn.microsoft.com/en-us/library/jj163177.aspx)
+[<span data-ttu-id="ab231-121">SharePoint ワークフローの新機能</span><span class="sxs-lookup"><span data-stu-id="ab231-121">What's new in workflows for SharePoint 2013</span></span>](http://msdn.microsoft.com/ja-jp/library/jj163177.aspx)
   
-[<span data-ttu-id="ab231-122">Visual Studio を使用した SharePoint 2013 ワークフローの開発</span><span class="sxs-lookup"><span data-stu-id="ab231-122">Develop SharePoint 2013 workflows using Visual Studio</span></span>](http://msdn.microsoft.com/en-us/library/jj163199.aspx)
+[<span data-ttu-id="ab231-122">Visual Studio を使用した SharePoint 2013 ワークフローの開発</span><span class="sxs-lookup"><span data-stu-id="ab231-122">Develop SharePoint 2013 workflows using Visual Studio</span></span>](http://msdn.microsoft.com/ja-jp/library/jj163199.aspx)
   
 [<span data-ttu-id="ab231-123">Visual Studio 2012 を使用してプロジェクトのワークフローを作成します。</span><span class="sxs-lookup"><span data-stu-id="ab231-123">Creating Project Workflows using Visual Studio 2012</span></span>](http://blogs.msdn.com/b/project_programmability/archive/2012/11/07/creating-project-workflows-using-visual-studio-2012.aspx)
   
-[<span data-ttu-id="ab231-124">Windows ワークフロー Foundation</span><span class="sxs-lookup"><span data-stu-id="ab231-124">Windows Workflow Foundation</span></span>](http://msdn.microsoft.com/en-us/library/dd489441.aspx)
+[<span data-ttu-id="ab231-124">Windows ワークフロー Foundation</span><span class="sxs-lookup"><span data-stu-id="ab231-124">Windows Workflow Foundation</span></span>](http://msdn.microsoft.com/ja-jp/library/dd489441.aspx)
   
-[<span data-ttu-id="ab231-125">Windows ワークフロー Foundation (WF) .NET 4 での開発者の概要</span><span class="sxs-lookup"><span data-stu-id="ab231-125">A developer's introduction to Windows Workflow Foundation (WF) in .NET 4</span></span>](http://msdn.microsoft.com/en-us/library/ee342461.aspx)
+[<span data-ttu-id="ab231-125">Windows ワークフロー Foundation (WF) .NET 4 での開発者の概要</span><span class="sxs-lookup"><span data-stu-id="ab231-125">A developer's introduction to Windows Workflow Foundation (WF) in .NET 4</span></span>](http://msdn.microsoft.com/ja-jp/library/ee342461.aspx)
   
-[<span data-ttu-id="ab231-126">Hitchhiker のガイド需要管理 (ホワイト ペーパー)</span><span class="sxs-lookup"><span data-stu-id="ab231-126">Hitchhiker's guide to demand management (white paper)</span></span>](http://msdn.microsoft.com/en-us/library/ff973112.aspx)
+[<span data-ttu-id="ab231-126">Hitchhiker のガイド需要管理 (ホワイト ペーパー)</span><span class="sxs-lookup"><span data-stu-id="ab231-126">Hitchhiker's guide to demand management (white paper)</span></span>](http://msdn.microsoft.com/ja-jp/library/ff973112.aspx)
 

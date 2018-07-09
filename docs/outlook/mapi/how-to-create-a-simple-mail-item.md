@@ -139,5 +139,5 @@ HRESULT AddMail(LPMAPISESSION lpMAPISession,
 
 ## <a name="see-also"></a><span data-ttu-id="62d14-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="62d14-132">See also</span></span>
 
-- [<span data-ttu-id="62d14-133">MAPI を使用して Outlook 2007 のアイテムを作成するには</span><span class="sxs-lookup"><span data-stu-id="62d14-133">Using MAPI to Create Outlook 2007 Items</span></span>](http://msdn.microsoft.com/en-us/library/cc678348%28office.12%29.aspx)
+- [<span data-ttu-id="62d14-133">MAPI を使用して Outlook 2007 のアイテムを作成するには</span><span class="sxs-lookup"><span data-stu-id="62d14-133">Using MAPI to Create Outlook 2007 Items</span></span>](http://msdn.microsoft.com/ja-jp/library/cc678348%28office.12%29.aspx)
 

@@ -94,7 +94,7 @@ thisXDocument.UI.Alert(thisXDocument.URI)
 ```
 
 > [!NOTE]
-> <span data-ttu-id="f816b-189">[!メモ] **XDocument** インターフェイスを使用してフォームの基になる XML ドキュメントにアクセスすると、現在開いているフォームに関連付けられている XML ドキュメントにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="f816b-189">When you use the **XDocument** interface to access a form's underlying XML document, you are accessing the XML document that is associated with the currently open form.</span></span> 
+> <span data-ttu-id="f816b-189">**XDocument** インターフェイスを使用してフォームの基になる XML ドキュメントにアクセスすると、現在開いているフォームに関連付けられている XML ドキュメントにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="f816b-189">When you use the **XDocument** interface to access a form's underlying XML document, you are accessing the XML document that is associated with the currently open form.</span></span> 
   
 <span data-ttu-id="f816b-p106">**XDocument** インターフェイスのキー プロパティは **DOM** プロパティです。このプロパティは、フォームのソース XML データが格納された XML DOM への参照を返します。 **DOM** プロパティを使用すると、XML DOM でサポートされている任意のプロパティとメソッドを使用できます。たとえば、次に示すコードは、XML DOM の **xml** プロパティを使用して、フォームの基になる XML ドキュメントのすべての内容を取得し、表示しています。</span><span class="sxs-lookup"><span data-stu-id="f816b-p106">A key property of the **XDocument** interface is the **DOM** property. This property returns a reference to the XML DOM that is populated with the source XML data of a form. When using the **DOM** property, you can use any of the properties and methods that are supported by the XML DOM. For example, the following code uses the **xml** property of the XML DOM to return and display all of the contents of a form's underlying XML document.</span></span> 
   

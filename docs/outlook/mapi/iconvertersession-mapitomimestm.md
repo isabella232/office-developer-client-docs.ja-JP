@@ -41,7 +41,7 @@ HRESULT IConverterSession::MAPIToMIMEStm(
     
  <span data-ttu-id="032b5-110">_pstm_</span><span class="sxs-lookup"><span data-stu-id="032b5-110">_pstm_</span></span>
   
-> <span data-ttu-id="032b5-111">[out]ストリームを出力する[IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx)インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="032b5-111">[out] [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) interface to output the stream.</span></span> 
+> <span data-ttu-id="032b5-111">[out]ストリームを出力する[IStream](http://msdn.microsoft.com/ja-jp/library/aa380034%28VS.85%29.aspx)インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="032b5-111">[out] [IStream](http://msdn.microsoft.com/ja-jp/library/aa380034%28VS.85%29.aspx) interface to output the stream.</span></span> 
     
  <span data-ttu-id="032b5-112">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="032b5-112">_ulFlags_</span></span>
   

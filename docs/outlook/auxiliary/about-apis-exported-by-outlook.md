@@ -52,6 +52,6 @@ ms.locfileid: "19799289"
   
 - [<span data-ttu-id="76635-121">Outlook アイテムが変更されたが、(Outlook の補助参照) が保存されていないかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="76635-121">Determine whether an Outlook item has been modified but not saved (Outlook Auxiliary Reference)</span></span>](how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
     
-- [<span data-ttu-id="76635-122">(Outlook の補助参照) を Outlook で連絡先の画像を表示するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="76635-122">Specify whether to display a contact's picture in Outlook (Outlook Auxiliary Reference)</span></span>](https://msdn.microsoft.com/en-us/library/office/gg262879.aspx)
+- [<span data-ttu-id="76635-122">(Outlook の補助参照) を Outlook で連絡先の画像を表示するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="76635-122">Specify whether to display a contact's picture in Outlook (Outlook Auxiliary Reference)</span></span>](https://msdn.microsoft.com/ja-jp/library/office/gg262879.aspx)
     
 

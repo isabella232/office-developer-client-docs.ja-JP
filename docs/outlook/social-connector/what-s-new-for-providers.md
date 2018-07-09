@@ -68,5 +68,5 @@ ms.locfileid: "19804478"
 
 - [<span data-ttu-id="b5a60-179">機能のための XML</span><span class="sxs-lookup"><span data-stu-id="b5a60-179">XML for Capabilities</span></span>](xml-for-capabilities.md)
 - [<span data-ttu-id="b5a60-180">友人の XML</span><span class="sxs-lookup"><span data-stu-id="b5a60-180">XML for Friends</span></span>](xml-for-friends.md)
-- [<span data-ttu-id="b5a60-181">Outlook Social Connector プロバイダーの開発の概要 (英語)(機械翻訳)</span><span class="sxs-lookup"><span data-stu-id="b5a60-181">Getting Started with Developing an Outlook Social Connector Provider</span></span>](getting-started-with-developing-an-outlook-social-connector-provider.md)
+- [<span data-ttu-id="b5a60-181">Outlook Social Connector プロバイダーの開発の概要(機械翻訳)</span><span class="sxs-lookup"><span data-stu-id="b5a60-181">Getting Started with Developing an Outlook Social Connector Provider</span></span>](getting-started-with-developing-an-outlook-social-connector-provider.md)
 

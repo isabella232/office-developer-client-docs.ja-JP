@@ -27,6 +27,6 @@ ms.locfileid: "19798877"
 <span data-ttu-id="aad4c-112">�����̃C�x���g��������邽�߂ɁAXLL �ł� C API �֐��� [xlEventRegister](xleventregister.md) ��g�p���܂��B</span><span class="sxs-lookup"><span data-stu-id="aad4c-112">To handle these events, the XLL uses the C API function [xlEventRegister](xleventregister.md).</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="aad4c-113">[!����] **CalculationEnded** �� **CalculationCanceled** �́A�v���O�����ɂ��Čv�Z���ɂ͔������܂���B</span><span class="sxs-lookup"><span data-stu-id="aad4c-113">**CalculationEnded** and **CalculationCanceled** are not raised during programmatic recalculation.</span></span> 
+> <span data-ttu-id="aad4c-113">**CalculationEnded** �� **CalculationCanceled** �́A�v���O�����ɂ��Čv�Z���ɂ͔������܂���B</span><span class="sxs-lookup"><span data-stu-id="aad4c-113">**CalculationEnded** and **CalculationCanceled** are not raised during programmatic recalculation.</span></span> 
   
 

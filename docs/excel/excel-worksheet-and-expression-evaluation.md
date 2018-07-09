@@ -65,7 +65,7 @@ ms.locfileid: "19798854"
 <span data-ttu-id="45c5b-p110">C API ���ŏ��ɓ������ꂽ�Ƃ��A���[�N�V�[�g�̕�����́A���� 255 �����̃o�C�g��ɐ�������Ă��܂������AC API �ł�A�����̐��������f����܂��BExcel 2007 �ł́AC API �́A���� Unicode �����������ł���悤�ɍX�V����Ă��܂��B�܂�ADLL �֐����K�؂ȕ��@�œo�^����Ă���΁AUnicode �̈�����󂯎������AUnicode �������Ԃ����肷�邱�Ƃ��ł��܂��B</span><span class="sxs-lookup"><span data-stu-id="45c5b-p110">When the C API was first introduced, worksheet strings were byte strings limited in length to 255 characters, and the C API reflected these limitations. With Excel 2007, the C API is updated to handle Excel long Unicode strings. This means that DLL functions registered in the right way can accept Unicode arguments and return Unicode strings.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="45c5b-159">[!����] �o�C�g��́A���ʌ݊����̂��߂� C API �Ŋ��S�ɃT�|�[�g����Ă��܂����A����܂łǂ��� 255 �����ɐ�������Ă��܂��B</span><span class="sxs-lookup"><span data-stu-id="45c5b-159">Byte strings are still fully supported in the C API for backward compatibility; however they still have the same 255-character limit.</span></span> 
+> <span data-ttu-id="45c5b-159">�o�C�g��́A���ʌ݊����̂��߂� C API �Ŋ��S�ɃT�|�[�g����Ă��܂����A����܂łǂ��� 255 �����ɐ�������Ă��܂��B</span><span class="sxs-lookup"><span data-stu-id="45c5b-159">Byte strings are still fully supported in the C API for backward compatibility; however they still have the same 255-character limit.</span></span> 
   
 ## <a name="returning-errors"></a><span data-ttu-id="45c5b-160">�G���[</span><span class="sxs-lookup"><span data-stu-id="45c5b-160">Returning Errors</span></span>
 

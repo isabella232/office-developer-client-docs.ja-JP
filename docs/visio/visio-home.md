@@ -19,7 +19,7 @@ ms.locfileid: "19806771"
 <span data-ttu-id="4b1a9-104">ソリューションを開発し、Visio のカスタマイズの方法を説明した内容、サンプル コード、SDK および API のマニュアル、VBA 参照、トレーニング、および技術記事を検索します。</span><span class="sxs-lookup"><span data-stu-id="4b1a9-104">Find how-to content, sample code, SDK and API documentation, VBA references, training, and technical articles for developing solutions and customizing Visio.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="4b1a9-p101">[!メモ] [複数のプラットフォーム](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability)間で Office エクスペリエンスを拡張するソリューションを開発することに関心がありますか?新しい [Office アドイン モデル](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4b1a9-p101">Interested in developing solutions that extend the Office experience across [multiple platforms](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability)? Check out the new [Office Add-ins model](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins).</span></span> 
+> <span data-ttu-id="4b1a9-p101">[複数のプラットフォーム](https://docs.microsoft.com/ja-jp/office/dev/add-ins/overview/office-add-in-availability)間で Office エクスペリエンスを拡張するソリューションを開発することに関心がありますか?新しい [Office アドイン モデル](https://docs.microsoft.com/ja-jp/office/dev/add-ins/overview/office-add-ins)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4b1a9-p101">Interested in developing solutions that extend the Office experience across [multiple platforms](https://docs.microsoft.com/ja-jp/office/dev/add-ins/overview/office-add-in-availability)? Check out the new [Office Add-ins model](https://docs.microsoft.com/ja-jp/office/dev/add-ins/overview/office-add-ins).</span></span> 
   
 ### <a name="viewed-most"></a><span data-ttu-id="4b1a9-107">最も表示</span><span class="sxs-lookup"><span data-stu-id="4b1a9-107">Viewed most</span></span>
   
@@ -43,7 +43,7 @@ ms.locfileid: "19806771"
   
 - [<span data-ttu-id="4b1a9-117">開始</span><span class="sxs-lookup"><span data-stu-id="4b1a9-117">Get started</span></span>](https://dev.office.com/getting-started/addins)
   
-- [<span data-ttu-id="4b1a9-118">プラットフォームの概要</span><span class="sxs-lookup"><span data-stu-id="4b1a9-118">Platform overview</span></span>](https://msdn.microsoft.com/EN-US/library/office/jj220082.aspx)
+- [<span data-ttu-id="4b1a9-118">プラットフォームの概要</span><span class="sxs-lookup"><span data-stu-id="4b1a9-118">Platform overview</span></span>](https://msdn.microsoft.com/ja-jp/library/office/jj220082.aspx)
   
 ### <a name="other-resources"></a><span data-ttu-id="4b1a9-119">その他の技術情報</span><span class="sxs-lookup"><span data-stu-id="4b1a9-119">Other resources</span></span>
   
@@ -53,6 +53,6 @@ ms.locfileid: "19806771"
   
 - [<span data-ttu-id="4b1a9-122">Open XML SDK</span><span class="sxs-lookup"><span data-stu-id="4b1a9-122">Open XML SDK</span></span>](http://msdn.microsoft.com/library/f6a9ae68-7989-4208-97f5-3c945137a0ab%28Office.15%29.aspx)
   
-- [<span data-ttu-id="4b1a9-123">Office 用 VSTO アドイン</span><span class="sxs-lookup"><span data-stu-id="4b1a9-123">VSTO Add-ins for Office</span></span>](https://msdn.microsoft.com/en-us/library/jj620922.aspx)
+- [<span data-ttu-id="4b1a9-123">Office 用 VSTO アドイン</span><span class="sxs-lookup"><span data-stu-id="4b1a9-123">VSTO Add-ins for Office</span></span>](https://msdn.microsoft.com/ja-jp/library/jj620922.aspx)
   
 

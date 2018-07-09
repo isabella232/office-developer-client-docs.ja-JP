@@ -42,7 +42,7 @@ ms.locfileid: "19798759"
   
 ## <a name="enable-udfs-on-office-online-server-preview"></a><span data-ttu-id="6c177-119">Office オンラインのサーバーのプレビューでは、ユーザー定義関数を有効にします。</span><span class="sxs-lookup"><span data-stu-id="6c177-119">Enable UDFs on Office Online Server Preview</span></span>
 
-<span data-ttu-id="6c177-120">[新規 OfficeWebAppsFarm](https://technet.microsoft.com/en-us/library/jj219436.aspx)の Windows PowerShell コマンドレットを使用して、管理者が新しい Office Web アプリケーションのサーバー ファームを作成すると、UDF アセンブリは、既定で無効になります。</span><span class="sxs-lookup"><span data-stu-id="6c177-120">When an adminstrator creates a new Office Web Apps Server farm by using the [New-OfficeWebAppsFarm](https://technet.microsoft.com/en-us/library/jj219436.aspx) Windows PowerShell cmdlet, UDF assemblies are disabled by default.</span></span> <span data-ttu-id="6c177-121">**ExcelUdfsAllowed**フラグの既定値は、false を指定します。</span><span class="sxs-lookup"><span data-stu-id="6c177-121">The default value of the **ExcelUdfsAllowed** flag is false.</span></span> 
+<span data-ttu-id="6c177-120">[新規 OfficeWebAppsFarm](https://technet.microsoft.com/ja-jp/library/jj219436.aspx)の Windows PowerShell コマンドレットを使用して、管理者が新しい Office Web アプリケーションのサーバー ファームを作成すると、UDF アセンブリは、既定で無効になります。</span><span class="sxs-lookup"><span data-stu-id="6c177-120">When an adminstrator creates a new Office Web Apps Server farm by using the [New-OfficeWebAppsFarm](https://technet.microsoft.com/ja-jp/library/jj219436.aspx) Windows PowerShell cmdlet, UDF assemblies are disabled by default.</span></span> <span data-ttu-id="6c177-121">**ExcelUdfsAllowed**フラグの既定値は、false を指定します。</span><span class="sxs-lookup"><span data-stu-id="6c177-121">The default value of the **ExcelUdfsAllowed** flag is false.</span></span> 
   
 <span data-ttu-id="6c177-122">Udf を有効にするには、Office Web アプリケーションのサーバー ファームを作成した後、Office オンライン サーバーのプレビューで次の Windows PowerShell コマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="6c177-122">To enable UDFs, run the following Windows PowerShell command on the Office Online Server Preview, after the Office Web Apps Server farm has been created.</span></span>
   
@@ -87,7 +87,7 @@ ms.locfileid: "19798759"
     
 ## <a name="see-also"></a><span data-ttu-id="6c177-142">関連項目</span><span class="sxs-lookup"><span data-stu-id="6c177-142">See also</span></span>
 
-- [<span data-ttu-id="6c177-143">Excel のオンライン管理の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="6c177-143">Configure Excel Online administrative settings</span></span>](https://technet.microsoft.com/en-us/library/jj219698%28v=office.16%29.aspx)  
-- [<span data-ttu-id="6c177-144">Office オンラインのサーバーのプレビュー</span><span class="sxs-lookup"><span data-stu-id="6c177-144">Office Online Server Preview</span></span>](https://technet.microsoft.com/en-us/library/jj219456%28v=office.16%29.aspx)
+- [<span data-ttu-id="6c177-143">Excel のオンライン管理の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="6c177-143">Configure Excel Online administrative settings</span></span>](https://technet.microsoft.com/ja-jp/library/jj219698%28v=office.16%29.aspx)  
+- [<span data-ttu-id="6c177-144">Office オンラインのサーバーのプレビュー</span><span class="sxs-lookup"><span data-stu-id="6c177-144">Office Online Server Preview</span></span>](https://technet.microsoft.com/ja-jp/library/jj219456%28v=office.16%29.aspx)
     
 

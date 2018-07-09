@@ -16,7 +16,7 @@ ms.locfileid: "19798606"
 # <a name="create-and-customize-a-web-app-in-access"></a><span data-ttu-id="f66db-102">作成し、Access で web アプリケーションをカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="f66db-102">Create and customize a web app in Access</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="f66db-p101">[!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="f66db-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="f66db-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="f66db-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 <span data-ttu-id="f66db-p102">Access 2013を特徴付けるものとして、新しいアプリケーション モデルがあります。これにより、領域の専門家は Web ベース アプリケーションをすばやく作成できます。Access に含まれる一連のテンプレートを使用してアプリケーションの作成にすぐに着手できます。</span><span class="sxs-lookup"><span data-stu-id="f66db-p102">Access 2013 features a new application model that enables subject matter experts to quickly create web-based applications. Included with Access are a set of templates that you can use to jump start creating your application.</span></span>
 
@@ -32,7 +32,7 @@ ms.locfileid: "19798606"
     
 <span data-ttu-id="f66db-112">SharePoint 開発環境の設定に関する詳細については、 [SharePoint の全般的な開発環境のセットアップ](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f66db-112">For more information about setting up your SharePoint development environment, see [Set up a general development environment for SharePoint](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint).</span></span> 
   
-<span data-ttu-id="f66db-113">Access と SharePoint の入手方法の詳細については、「[ダウンロード](http://msdn.microsoft.com/en-US/office/apps/fp123627)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f66db-113">For more information about obtaining Access and SharePoint, see [Downloads](http://msdn.microsoft.com/en-US/office/apps/fp123627).</span></span>
+<span data-ttu-id="f66db-113">Access と SharePoint の入手方法の詳細については、「[ダウンロード](http://msdn.microsoft.com/ja-jp/office/apps/fp123627)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f66db-113">For more information about obtaining Access and SharePoint, see [Downloads](http://msdn.microsoft.com/ja-jp/office/apps/fp123627).</span></span>
 
 <span data-ttu-id="f66db-114"><a name="ac15_CreateAndCustomizeWebApp_CreateTheApp"> </a></span><span class="sxs-lookup"><span data-stu-id="f66db-114"></span></span>
 
@@ -153,7 +153,7 @@ ms.locfileid: "19798606"
 7. <span data-ttu-id="f66db-204">[ **新しいアクションの追加**] ドロップダウンから [ **戻り変数の設定** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="f66db-204">Choose **SetReturnVar** from the **Add New Action** dropdown.</span></span> 
     
     > [!NOTE]
-    > <span data-ttu-id="f66db-p120">[!メモ] 2 つの [ **新しいアクションの追加**] ドロップダウンが表示されます。1 つは [ **レコードの参照** ] ブロックの内側にあり、もう 1 つは [ **レコードの参照** ] ブロックの外側にあります。図 7 に示されているように、[ **レコードの参照** ] ブロックの内側にある [ **新しいアクションの追加**] ドロップダウンを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f66db-p120">You'll see two **Add New Action** dropdowns, one within the **LookupRecord** block, and another outside the **LookupRecord** block. You should choose the **Add New Action** dropdown within the **LookupRecord** block, as shown in Figure 7.</span></span> 
+    > <span data-ttu-id="f66db-p120">2 つの [ **新しいアクションの追加**] ドロップダウンが表示されます。1 つは [ **レコードの参照** ] ブロックの内側にあり、もう 1 つは [ **レコードの参照** ] ブロックの外側にあります。図 7 に示されているように、[ **レコードの参照** ] ブロックの内側にある [ **新しいアクションの追加**] ドロップダウンを選択する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f66db-p120">You'll see two **Add New Action** dropdowns, one within the **LookupRecord** block, and another outside the **LookupRecord** block. You should choose the **Add New Action** dropdown within the **LookupRecord** block, as shown in Figure 7.</span></span> 
   
    <span data-ttu-id="f66db-207">**図 7。[新しいアクションの追加] ドロップダウン**</span><span class="sxs-lookup"><span data-stu-id="f66db-207">**Figure 7. Add New Action dropdown**</span></span>
 

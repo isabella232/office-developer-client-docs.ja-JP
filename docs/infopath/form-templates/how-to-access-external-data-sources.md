@@ -28,7 +28,7 @@ ms.locfileid: "19799116"
 <span data-ttu-id="e3c9c-111">InfoPath オブジェクト モデルは、フォームによって使用されるデータ接続に関する情報を格納したデータ接続クラスのセットも提供します。</span><span class="sxs-lookup"><span data-stu-id="e3c9c-111">The InfoPath object model also provides a set of data connection classes, containing information about the data connections used by the form.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="e3c9c-112">[!メモ] Microsoft InfoPath 2003 では、データ接続のことをデータ アダプターと呼びます。</span><span class="sxs-lookup"><span data-stu-id="e3c9c-112">In Microsoft InfoPath 2003, a data connection is referred to as a data adapter.</span></span> 
+> <span data-ttu-id="e3c9c-112">Microsoft InfoPath 2003 では、データ接続のことをデータ アダプターと呼びます。</span><span class="sxs-lookup"><span data-stu-id="e3c9c-112">In Microsoft InfoPath 2003, a data connection is referred to as a data adapter.</span></span> 
   
 <span data-ttu-id="e3c9c-p102">データ接続には 2 つの種類があります。クエリ接続は、データを取得するために使用されます。取得されたデータは、セカンダリ データ ソースに格納されます。送信用接続は、データベースや Web サービスなどにデータを送信するために使用されます。送信されるデータは、メインまたはセカンダリのデータ ソースからコピーされます。</span><span class="sxs-lookup"><span data-stu-id="e3c9c-p102">Data connections are of two kinds: Query connections are used to obtain the data that is then stored in a secondary data source. Submit connections are used to submit data, to a database or Web service, for example. The submitted data is copied from the main or secondary data sources.</span></span> 
   

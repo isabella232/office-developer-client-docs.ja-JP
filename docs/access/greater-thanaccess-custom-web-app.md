@@ -19,7 +19,7 @@ ms.locfileid: "19798608"
 <span data-ttu-id="9d5a1-p102">2 つの式を比較します。null 以外の式を比較したときに、左のオペランドに右のオペランドよりも大きい値が含まれる場合、結果は TRUE になり、それ以外の場合、結果は FALSE になります。</span><span class="sxs-lookup"><span data-stu-id="9d5a1-p102">Compares two expressions. When you compare non-null expressions, the result is TRUE if the left operand has a value higher than the right operand; otherwise, the result is FALSE.</span></span>
   
 > [!IMPORTANT]
-> <span data-ttu-id="9d5a1-p103">[!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="9d5a1-p103">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="9d5a1-p103">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="9d5a1-p103">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 ## <a name="syntax"></a><span data-ttu-id="9d5a1-109">構文</span><span class="sxs-lookup"><span data-stu-id="9d5a1-109">Syntax</span></span>
 

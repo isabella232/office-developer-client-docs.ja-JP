@@ -51,9 +51,9 @@ ms.locfileid: "19799102"
     
 <span data-ttu-id="eb52a-123">また、コントロールとの統合をさらに密接にする、InfoPath 固有の 2 つの COM インターフェイスがあります。</span><span class="sxs-lookup"><span data-stu-id="eb52a-123">Also, there are two InfoPath-specific COM interfaces that provide tighter integration of controls:</span></span>
   
-- [<span data-ttu-id="eb52a-124">IInfoPathControl</span><span class="sxs-lookup"><span data-stu-id="eb52a-124">IInfoPathControl</span></span>](http://msdn.microsoft.com/en-us/library/bb264625.aspx)
+- [<span data-ttu-id="eb52a-124">IInfoPathControl</span><span class="sxs-lookup"><span data-stu-id="eb52a-124">IInfoPathControl</span></span>](http://msdn.microsoft.com/ja-jp/library/bb264625.aspx)
     
-- [<span data-ttu-id="eb52a-125">IInfoPathControlSite</span><span class="sxs-lookup"><span data-stu-id="eb52a-125">IInfoPathControlSite</span></span>](http://msdn.microsoft.com/en-us/library/bb264627.aspx)
+- [<span data-ttu-id="eb52a-125">IInfoPathControlSite</span><span class="sxs-lookup"><span data-stu-id="eb52a-125">IInfoPathControlSite</span></span>](http://msdn.microsoft.com/ja-jp/library/bb264627.aspx)
     
 ## <a name="add-an-activex-control-to-the-infopath-design-environment"></a><span data-ttu-id="eb52a-126">InfoPath デザイン環境に ActiveX コントロールを追加する</span><span class="sxs-lookup"><span data-stu-id="eb52a-126">Add an ActiveX Control to the InfoPath Design Environment</span></span>
 
@@ -68,7 +68,7 @@ ms.locfileid: "19799102"
 - <span data-ttu-id="eb52a-133">データ型バインディングを指定する。</span><span class="sxs-lookup"><span data-stu-id="eb52a-133">Specify data type binding.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="eb52a-134">[!メモ] ActiveX コントロールを作成していて、既に InfoPath の [ **コントロール**] 作業ウィンドウに追加している場合は、InfoPath を閉じるまで ActiveX コントロールをビルドし直すことができなくなります。</span><span class="sxs-lookup"><span data-stu-id="eb52a-134">If you are developing an ActiveX control and have added it to the **Controls** task pane in InfoPath, you will be unable to rebuild the ActiveX control until InfoPath is closed.</span></span> 
+> <span data-ttu-id="eb52a-134">ActiveX コントロールを作成していて、既に InfoPath の [ **コントロール**] 作業ウィンドウに追加している場合は、InfoPath を閉じるまで ActiveX コントロールをビルドし直すことができなくなります。</span><span class="sxs-lookup"><span data-stu-id="eb52a-134">If you are developing an ActiveX control and have added it to the **Controls** task pane in InfoPath, you will be unable to rebuild the ActiveX control until InfoPath is closed.</span></span> 
   
 ## <a name="deploy-an-activex-control"></a><span data-ttu-id="eb52a-135">ActiveX コントロールを展開する</span><span class="sxs-lookup"><span data-stu-id="eb52a-135">Deploy an ActiveX Control</span></span>
 

@@ -39,7 +39,7 @@ Excel12(xlSheetId, LPXLOPER12 pxRes, 1, LPXLOPER12 pxSheetName);
 <span data-ttu-id="77d27-113">_pxRes-\>val.mref.idSheet_ �̃V�[�g ID ��Ԃ��܂��B</span><span class="sxs-lookup"><span data-stu-id="77d27-113">Returns the sheet ID in  _pxRes-\>val.mref.idSheet_.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="77d27-114">[!����]  _pxRes-\>val.mref.lpmref_ �z��|�C���^�[�́A���̌Ăяo���̌�� NULL �ɐݒ肳��邽�߁A **xlFree** ��Ăяo���āA���̃^�C�v�ɒʏ�܂܂�Ă��郁������������K�v�͂���܂��� (����͊��S�Ɉ��S�ł����K�v����܂���)�B</span><span class="sxs-lookup"><span data-stu-id="77d27-114">The  _pxRes-\>val.mref.lpmref_ array pointer is set to NULL after this call so that there is no need to call **xlFree** to release the memory that this type normally contains, although it is completely safe to do so.</span></span> 
+> <span data-ttu-id="77d27-114"> _pxRes-\>val.mref.lpmref_ �z��|�C���^�[�́A���̌Ăяo���̌�� NULL �ɐݒ肳��邽�߁A **xlFree** ��Ăяo���āA���̃^�C�v�ɒʏ�܂܂�Ă��郁������������K�v�͂���܂��� (����͊��S�Ɉ��S�ł����K�v����܂���)�B</span><span class="sxs-lookup"><span data-stu-id="77d27-114">The  _pxRes-\>val.mref.lpmref_ array pointer is set to NULL after this call so that there is no need to call **xlFree** to release the memory that this type normally contains, although it is completely safe to do so.</span></span> 
   
 ## <a name="remarks"></a><span data-ttu-id="77d27-115">����</span><span class="sxs-lookup"><span data-stu-id="77d27-115">Remarks</span></span>
 

@@ -32,5 +32,5 @@ ms.locfileid: "19804480"
 - [<span data-ttu-id="d5690-112">プロバイダーを開発する学習のためのクイック ステップ</span><span class="sxs-lookup"><span data-stu-id="d5690-112">Quick Steps for Learning to Develop a Provider</span></span>](quick-steps-for-learning-to-develop-a-provider.md)  
 - [<span data-ttu-id="d5690-113">技術的な要件</span><span class="sxs-lookup"><span data-stu-id="d5690-113">Technical Requirements</span></span>](technical-requirements.md)
 - [<span data-ttu-id="d5690-114">OSC サンプル テンプレート</span><span class="sxs-lookup"><span data-stu-id="d5690-114">OSC Sample Templates</span></span>](osc-sample-templates.md) 
-- [<span data-ttu-id="d5690-115">Outlook Social Connector プロバイダーの開発の概要 (英語)(機械翻訳)</span><span class="sxs-lookup"><span data-stu-id="d5690-115">Getting Started with Developing an Outlook Social Connector Provider</span></span>](getting-started-with-developing-an-outlook-social-connector-provider.md)
+- [<span data-ttu-id="d5690-115">Outlook Social Connector プロバイダーの開発の概要(機械翻訳)</span><span class="sxs-lookup"><span data-stu-id="d5690-115">Getting Started with Developing an Outlook Social Connector Provider</span></span>](getting-started-with-developing-an-outlook-social-connector-provider.md)
 

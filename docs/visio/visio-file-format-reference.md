@@ -36,11 +36,11 @@ ms.locfileid: "19806774"
     
 ## <a name="see-also"></a><span data-ttu-id="df7f6-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="df7f6-114">See also</span></span>
 
-- [<span data-ttu-id="df7f6-115">開発者は、Visio</span><span class="sxs-lookup"><span data-stu-id="df7f6-115">Visio for developers</span></span>](http://msdn.microsoft.com/en-us/office/aa905478.aspx)
+- [<span data-ttu-id="df7f6-115">開発者は、Visio</span><span class="sxs-lookup"><span data-stu-id="df7f6-115">Visio for developers</span></span>](http://msdn.microsoft.com/ja-jp/office/aa905478.aspx)
     
 - [<span data-ttu-id="df7f6-116">マイクロソフト製品のアクセシビリティ機能</span><span class="sxs-lookup"><span data-stu-id="df7f6-116">Accessibility in Microsoft Products</span></span>](http://www.microsoft.com/enable/products/default.aspx)
     
-- [<span data-ttu-id="df7f6-117">�h�L�������g�̂��߂̕\�L�K��</span><span class="sxs-lookup"><span data-stu-id="df7f6-117">Document Conventions</span></span>](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
+- [<span data-ttu-id="df7f6-117">�h�L�������g�̂��߂̕\�L�K��</span><span class="sxs-lookup"><span data-stu-id="df7f6-117">Document Conventions</span></span>](http://msdn.microsoft.com/ja-jp/office/aa905365.aspx)
     
 - [<span data-ttu-id="df7f6-118">Visio SDK の著作権表示</span><span class="sxs-lookup"><span data-stu-id="df7f6-118">Visio SDK copyright notice</span></span>](visio-sdk-copyright-notice.md)
     

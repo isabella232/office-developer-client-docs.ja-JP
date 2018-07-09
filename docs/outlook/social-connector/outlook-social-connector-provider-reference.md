@@ -48,7 +48,7 @@ ms.locfileid: "19804454"
 ## <a name="see-also"></a><span data-ttu-id="9bafc-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="9bafc-123">See also</span></span>
 
 - [<span data-ttu-id="9bafc-124">Outlook ソーシャル コネクタ 2013 プロバイダー リファレンスの著作権情報</span><span class="sxs-lookup"><span data-stu-id="9bafc-124">Outlook Social Connector 2013 provider reference copyright notice</span></span>](outlook-social-connector-2013-provider-reference-copyright-notice.md) 
-- [<span data-ttu-id="9bafc-125">�h�L�������g�̂��߂̕\�L�K��</span><span class="sxs-lookup"><span data-stu-id="9bafc-125">Document Conventions</span></span>](http://msdn.microsoft.com/en-us/office/aa905365.aspx)   
+- [<span data-ttu-id="9bafc-125">�h�L�������g�̂��߂̕\�L�K��</span><span class="sxs-lookup"><span data-stu-id="9bafc-125">Document Conventions</span></span>](http://msdn.microsoft.com/ja-jp/office/aa905365.aspx)   
 - [<span data-ttu-id="9bafc-126">マイクロソフト製品のアクセシビリティ機能</span><span class="sxs-lookup"><span data-stu-id="9bafc-126">Accessibility in Microsoft Products</span></span>](http://www.microsoft.com/enable/products/default.aspx)  
 - <span data-ttu-id="9bafc-127">[Microsoft �v���C�o�V�[�Ɋւ��鐺��](https://privacy.microsoft.com/en-us/privacystatement)</span><span class="sxs-lookup"><span data-stu-id="9bafc-127">[Microsoft Online Privacy Notice](https://privacy.microsoft.com/en-us/privacystatement)</span></span>
     

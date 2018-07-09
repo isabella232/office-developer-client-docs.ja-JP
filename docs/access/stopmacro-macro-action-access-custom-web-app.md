@@ -19,7 +19,7 @@ ms.locfileid: "19798737"
 <span data-ttu-id="ae02f-104">" **StopMacro/マクロの中止** " アクションを使用すると、現在実行中のマクロを中止できます。</span><span class="sxs-lookup"><span data-stu-id="ae02f-104">You can use the **StopMacro** action to stop the currently running macro.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="ae02f-p101">[!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="ae02f-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="ae02f-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="ae02f-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 ## <a name="setting"></a><span data-ttu-id="ae02f-107">設定</span><span class="sxs-lookup"><span data-stu-id="ae02f-107">Setting</span></span>
 

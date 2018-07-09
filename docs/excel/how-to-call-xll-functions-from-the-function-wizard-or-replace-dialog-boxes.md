@@ -39,7 +39,7 @@ ms.locfileid: "19798894"
 <span data-ttu-id="22189-p105">���� C++ �R�[�h�́AWindows �ɓn�����N���X�ƃR�[���o�b�N������Ă��܂� (��L�̎菇����s���܂�)�B����́A�Y������_�C�A���O �{�b�N�X�̂ǂ��炩�ɐ�p�̃e�X�g��Ăяo���֐�����Ăяo���܂��B</span><span class="sxs-lookup"><span data-stu-id="22189-p105">The following C++ code shows a class and callback to be passed to Windows that performs these steps. This is called by the functions that call test specifically for either of the dialog boxes concerned.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="22189-p106">[!����] ������ Excel �̃o�[�W�����̃E�B���h�E �^�C�g���͕ύX�����\��������A���̃R�[�h�������ɂȂ邱�Ƃ�����܂��B�܂��A **window_title_text** �� **NULL** �ɐݒ肷��ƁA�R�[���o�b�N�̌����ŃE�B���h�E �^�C�g���𖳎�����Ƃ������ʂ������܂��B</span><span class="sxs-lookup"><span data-stu-id="22189-p106">Window titles of future Excel versions might change and invalidate this code. Note also that setting **window_title_text** to **NULL** has the effect of ignoring window title in the callback search.</span></span> 
+> <span data-ttu-id="22189-p106">������ Excel �̃o�[�W�����̃E�B���h�E �^�C�g���͕ύX�����\��������A���̃R�[�h�������ɂȂ邱�Ƃ�����܂��B�܂��A **window_title_text** �� **NULL** �ɐݒ肷��ƁA�R�[���o�b�N�̌����ŃE�B���h�E �^�C�g���𖳎�����Ƃ������ʂ������܂��B</span><span class="sxs-lookup"><span data-stu-id="22189-p106">Window titles of future Excel versions might change and invalidate this code. Note also that setting **window_title_text** to **NULL** has the effect of ignoring window title in the callback search.</span></span> 
   
 ```cs
 #define CLASS_NAME_BUFFSIZE  50

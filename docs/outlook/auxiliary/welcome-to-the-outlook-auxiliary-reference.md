@@ -60,7 +60,7 @@ ms.locfileid: "19799591"
     
 - <span data-ttu-id="4e96f-128">[空き/予約済みの API](about-the-free-busy-api.md)は、特定の時間範囲内の特定のユーザー アカウントの空き時間情報のステータス情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="4e96f-128">The [Free/Busy API](about-the-free-busy-api.md) provides free/busy status information about specific user accounts within a specific time range.</span></span> 
 
-## <a name="sample-tasks"></a><span data-ttu-id="4e96f-129">サンプル タスク (英語)</span><span class="sxs-lookup"><span data-stu-id="4e96f-129">Sample tasks</span></span>
+## <a name="sample-tasks"></a><span data-ttu-id="4e96f-129">サンプル タスク</span><span class="sxs-lookup"><span data-stu-id="4e96f-129">Sample tasks</span></span>
 
 <span data-ttu-id="4e96f-130">Outlook 補助リファレンスに関する「方法」タスクの例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="4e96f-130">Sample how-to tasks in the Outlook Auxiliary Reference include the following:</span></span>
     
@@ -72,7 +72,7 @@ ms.locfileid: "19799591"
     
 - [<span data-ttu-id="4e96f-134">予定からタイム ゾーンのプロパティを読み取る</span><span class="sxs-lookup"><span data-stu-id="4e96f-134">Read time zone properties from an appointment</span></span>](how-to-read-time-zone-properties-from-an-appointment.md)
     
-- [<span data-ttu-id="4e96f-135">(Outlook の補助参照) を Outlook で連絡先の画像を表示するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="4e96f-135">Specify whether to display a contact's picture in Outlook (Outlook Auxiliary Reference)</span></span>](https://msdn.microsoft.com/en-us/library/office/gg262879.aspx)
+- [<span data-ttu-id="4e96f-135">(Outlook の補助参照) を Outlook で連絡先の画像を表示するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="4e96f-135">Specify whether to display a contact's picture in Outlook (Outlook Auxiliary Reference)</span></span>](https://msdn.microsoft.com/ja-jp/library/office/gg262879.aspx)
     
 - [<span data-ttu-id="4e96f-136">空き時間情報データにアクセスする相対時間を使用します。</span><span class="sxs-lookup"><span data-stu-id="4e96f-136">Use relative time to access free/busy data</span></span>](how-to-use-relative-time-to-access-free-busy-data.md)
     

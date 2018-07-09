@@ -38,5 +38,5 @@ ms.locfileid: "19804327"
 - [<span data-ttu-id="f9bfe-120">OSC の典型的な呼び出しシーケンス</span><span class="sxs-lookup"><span data-stu-id="f9bfe-120">OSC Typical Calling Sequences</span></span>](osc-typical-calling-sequences.md)  
 - [<span data-ttu-id="f9bfe-121">OSC の XML スキーマを使用してプロバイダーの開発</span><span class="sxs-lookup"><span data-stu-id="f9bfe-121">Developing a Provider with the OSC XML Schema</span></span>](developing-a-provider-with-the-osc-xml-schema.md)  
 - [<span data-ttu-id="f9bfe-122">プロバイダーを展開します。</span><span class="sxs-lookup"><span data-stu-id="f9bfe-122">Deploying a Provider</span></span>](deploying-a-provider.md)  
-- [<span data-ttu-id="f9bfe-123">Outlook Social Connector プロバイダーの開発の概要 (英語)(機械翻訳)</span><span class="sxs-lookup"><span data-stu-id="f9bfe-123">Getting Started with Developing an Outlook Social Connector Provider</span></span>](getting-started-with-developing-an-outlook-social-connector-provider.md)
+- [<span data-ttu-id="f9bfe-123">Outlook Social Connector プロバイダーの開発の概要(機械翻訳)</span><span class="sxs-lookup"><span data-stu-id="f9bfe-123">Getting Started with Developing an Outlook Social Connector Provider</span></span>](getting-started-with-developing-an-outlook-social-connector-provider.md)
 

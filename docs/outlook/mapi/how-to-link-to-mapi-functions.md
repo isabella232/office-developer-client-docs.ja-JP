@@ -129,7 +129,7 @@ ms.locfileid: "19800240"
 - [<span data-ttu-id="d25ea-155">MAPI サブシステムをインストールします。</span><span class="sxs-lookup"><span data-stu-id="d25ea-155">Installing the MAPI Subsystem</span></span>](installing-the-mapi-subsystem.md)
 - [<span data-ttu-id="d25ea-156">MAPI ヘッダー ファイルをインストールします。</span><span class="sxs-lookup"><span data-stu-id="d25ea-156">Install MAPI Header Files</span></span>](how-to-install-mapi-header-files.md)
 - [<span data-ttu-id="d25ea-157">MAPI 負荷からの特定のバージョンを選択します。</span><span class="sxs-lookup"><span data-stu-id="d25ea-157">Choose a Specific Version of MAPI to Load</span></span>](how-to-choose-a-specific-version-of-mapi-to-load.md)
-- [<span data-ttu-id="d25ea-158">使用するリンク方式の使い分け</span><span class="sxs-lookup"><span data-stu-id="d25ea-158">Determining Which Linking Method to Use</span></span>](http://msdn.microsoft.com/en-us/library/253b8k2c.aspx)
-- [<span data-ttu-id="d25ea-159">実行可能ファイルを DLL にリンクします。</span><span class="sxs-lookup"><span data-stu-id="d25ea-159">Linking an Executable to a DLL</span></span>](http://msdn.microsoft.com/en-us/library/9yd93633.aspx)
-- [<span data-ttu-id="d25ea-160">MAPI DLL の MSI のキーの設定</span><span class="sxs-lookup"><span data-stu-id="d25ea-160">Setting Up the MSI Keys for Your MAPI DLL</span></span>](http://msdn.microsoft.com/en-us/library/ee909494%28v=VS.85%29.aspx)
+- [<span data-ttu-id="d25ea-158">使用するリンク方式の使い分け</span><span class="sxs-lookup"><span data-stu-id="d25ea-158">Determining Which Linking Method to Use</span></span>](http://msdn.microsoft.com/ja-jp/library/253b8k2c.aspx)
+- [<span data-ttu-id="d25ea-159">実行可能ファイルを DLL にリンクします。</span><span class="sxs-lookup"><span data-stu-id="d25ea-159">Linking an Executable to a DLL</span></span>](http://msdn.microsoft.com/ja-jp/library/9yd93633.aspx)
+- [<span data-ttu-id="d25ea-160">MAPI DLL の MSI のキーの設定</span><span class="sxs-lookup"><span data-stu-id="d25ea-160">Setting Up the MSI Keys for Your MAPI DLL</span></span>](http://msdn.microsoft.com/ja-jp/library/ee909494%28v=VS.85%29.aspx)
 

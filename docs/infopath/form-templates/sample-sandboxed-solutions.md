@@ -140,7 +140,7 @@ ms.locfileid: "19799214"
     2. <span data-ttu-id="62748-130">発行先の SharePoint サイトの URL を入力し、[ **次へ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62748-130">Enter the URL of the SharePoint site to publish to, and then click **Next**.</span></span> 
         
        > [!IMPORTANT]
-       > <span data-ttu-id="62748-131">[!重要] このフォーム テンプレートをセキュリティで保護されたソリューションとして発行するためには、このサイトのサイト コレクション管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="62748-131">You must be a site collection administrator on this site to publish this form template as a sandboxed solution.</span></span> 
+       > <span data-ttu-id="62748-131">このフォーム テンプレートをセキュリティで保護されたソリューションとして発行するためには、このサイトのサイト コレクション管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="62748-131">You must be a site collection administrator on this site to publish this form template as a sandboxed solution.</span></span> 
     
     3. <span data-ttu-id="62748-132">[ **フォーム ライブラリ**] をクリックし、[ **次へ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62748-132">Select **Form Library**, and then click **Next**.</span></span>
         
@@ -284,7 +284,7 @@ ms.locfileid: "19799214"
     2. <span data-ttu-id="62748-178">発行先の SharePoint サイトの URL を入力し、[ **次へ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62748-178">Enter the URL of the SharePoint site to publish to, and then click **Next**.</span></span> 
         
        > [!IMPORTANT]
-       > <span data-ttu-id="62748-179">[!重要] このフォーム テンプレートをセキュリティで保護されたソリューションとして発行するためには、このサイトのサイト コレクション管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="62748-179">You must be a site collection administrator on this site to publish this form template as a sandboxed solution.</span></span> 
+       > <span data-ttu-id="62748-179">このフォーム テンプレートをセキュリティで保護されたソリューションとして発行するためには、このサイトのサイト コレクション管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="62748-179">You must be a site collection administrator on this site to publish this form template as a sandboxed solution.</span></span> 
     
     3. <span data-ttu-id="62748-180">[ **フォーム ライブラリ**] をクリックし、[ **次へ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62748-180">Select **Form Library**, and then click **Next**.</span></span>
         

@@ -19,10 +19,10 @@ ms.locfileid: "19798732"
 <span data-ttu-id="46449-104">" **SetLocalVar/ローカル変数の設定** " アクションは、一時変数を作成し、それを特定の値に設定します。</span><span class="sxs-lookup"><span data-stu-id="46449-104">The **SetLocalVar** action creates a temporary variable and set it to a specific value.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="46449-p101">[!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="46449-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="46449-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="46449-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="46449-107">[!メモ] " **SetLocalVar/ローカル変数の設定** " アクションは、データ マクロでのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="46449-107">The **SetLocalVar** action is available only in Data Macros.</span></span> 
+> <span data-ttu-id="46449-107">" **SetLocalVar/ローカル変数の設定** " アクションは、データ マクロでのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="46449-107">The **SetLocalVar** action is available only in Data Macros.</span></span> 
   
 ## <a name="setting"></a><span data-ttu-id="46449-108">設定</span><span class="sxs-lookup"><span data-stu-id="46449-108">Setting</span></span>
 

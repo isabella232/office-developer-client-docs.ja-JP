@@ -52,7 +52,7 @@ HRESULT DoVerb(
     
  <span data-ttu-id="9871f-115">_lprcPosRect_</span><span class="sxs-lookup"><span data-stu-id="9871f-115">_lprcPosRect_</span></span>
   
-> <span data-ttu-id="9871f-116">[in]Win32 へのポインターのサイズと、フォームのウィンドウの位置を含む[RECT](http://msdn.microsoft.com/en-us/library/dd162897%28VS.85%29.aspx)構造体。</span><span class="sxs-lookup"><span data-stu-id="9871f-116">[in] A pointer to a Win32 [RECT](http://msdn.microsoft.com/en-us/library/dd162897%28VS.85%29.aspx) structure that contains the size and position of the form's window.</span></span> 
+> <span data-ttu-id="9871f-116">[in]Win32 へのポインターのサイズと、フォームのウィンドウの位置を含む[RECT](http://msdn.microsoft.com/ja-jp/library/dd162897%28VS.85%29.aspx)構造体。</span><span class="sxs-lookup"><span data-stu-id="9871f-116">[in] A pointer to a Win32 [RECT](http://msdn.microsoft.com/ja-jp/library/dd162897%28VS.85%29.aspx) structure that contains the size and position of the form's window.</span></span> 
     
 ## <a name="return-value"></a><span data-ttu-id="9871f-117">�߂�l</span><span class="sxs-lookup"><span data-stu-id="9871f-117">Return value</span></span>
 
@@ -86,7 +86,7 @@ HRESULT DoVerb(
     
 <span data-ttu-id="9871f-136">印刷などのいくつかの動詞は、**これら**に対してはモーダルである必要があります-つまり、 **DoVerb**呼び出しから戻る前にした操作を完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9871f-136">Some verbs, such as Print, should be modal with respect to the **DoVerb** call — that is, the indicated operation must be finished before the **DoVerb** call returns.</span></span> 
   
-<span data-ttu-id="9871f-137">フォームのウィンドウで使用されている**RECT**構造体を取得するには、[受け取り](http://msdn.microsoft.com/en-us/library/ms633519)関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="9871f-137">To obtain the **RECT** structure used by a form's window, call the [GetWindowRect](http://msdn.microsoft.com/en-us/library/ms633519) function.</span></span> 
+<span data-ttu-id="9871f-137">フォームのウィンドウで使用されている**RECT**構造体を取得するには、[受け取り](http://msdn.microsoft.com/ja-jp/library/ms633519)関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="9871f-137">To obtain the **RECT** structure used by a form's window, call the [GetWindowRect](http://msdn.microsoft.com/ja-jp/library/ms633519) function.</span></span> 
   
 <span data-ttu-id="9871f-138">通常は、 **DoVerb**が完了するまで、そのことができますすぐに破棄する呼び出しの戻り値にするため、 _hwndParent_パラメーターのハンドルを保存しません。</span><span class="sxs-lookup"><span data-stu-id="9871f-138">Do not save the handle in the  _hwndParent_ parameter because, although it usually remains valid until the completion of **DoVerb**, it can be destroyed immediately upon the call's return.</span></span>
   
@@ -94,7 +94,7 @@ HRESULT DoVerb(
 
 <span data-ttu-id="9871f-140">_LpViewContext_ ] をポイントして、 [IMAPIViewContext::GetViewStatus](imapiviewcontext-getviewstatus.md)メソッドから、VCSTATUS_MODAL フラグを返すビュー コンテキストの実装のモーダル動詞として機能する非モーダル動詞を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="9871f-140">You can make non-modal verbs act as modal verbs by pointing  _lpViewContext_ to a view context implementation that returns the VCSTATUS_MODAL flag from its [IMAPIViewContext::GetViewStatus](imapiviewcontext-getviewstatus.md) method.</span></span> 
   
-<span data-ttu-id="9871f-141">MAPI での動詞の詳細については、[動詞のフォーム](form-verbs.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9871f-141">For more information about verbs in MAPI, see [Form Verbs](form-verbs.md).</span></span> <span data-ttu-id="9871f-142">OLE 動詞を処理する方法の詳細については、 [OLE アプリケーションとデータの転送](http://msdn.microsoft.com/en-us/library/ms693425%28VS.85%29.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9871f-142">For more information about how verbs are handled in OLE, see [OLE and Data Transfer](http://msdn.microsoft.com/en-us/library/ms693425%28VS.85%29.aspx).</span></span>
+<span data-ttu-id="9871f-141">MAPI での動詞の詳細については、[動詞のフォーム](form-verbs.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9871f-141">For more information about verbs in MAPI, see [Form Verbs](form-verbs.md).</span></span> <span data-ttu-id="9871f-142">OLE 動詞を処理する方法の詳細については、 [OLE アプリケーションとデータの転送](http://msdn.microsoft.com/ja-jp/library/ms693425%28VS.85%29.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9871f-142">For more information about how verbs are handled in OLE, see [OLE and Data Transfer](http://msdn.microsoft.com/ja-jp/library/ms693425%28VS.85%29.aspx).</span></span>
   
 ## <a name="mfcmapi-reference"></a><span data-ttu-id="9871f-143">MFCMAPI 参照</span><span class="sxs-lookup"><span data-stu-id="9871f-143">MFCMAPI reference</span></span>
 

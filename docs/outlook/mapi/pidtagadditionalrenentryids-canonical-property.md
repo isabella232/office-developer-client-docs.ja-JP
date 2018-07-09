@@ -89,5 +89,5 @@ ms.locfileid: "19802422"
 [<span data-ttu-id="f224a-139">MAPI 名前を標準のプロパティ名にマップします。</span><span class="sxs-lookup"><span data-stu-id="f224a-139">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 
 
-[<span data-ttu-id="f224a-140">ストア API について</span><span class="sxs-lookup"><span data-stu-id="f224a-140">About the Store API</span></span>](http://msdn.microsoft.com/en-us/library/aa192884.aspx)
+[<span data-ttu-id="f224a-140">ストア API について</span><span class="sxs-lookup"><span data-stu-id="f224a-140">About the Store API</span></span>](http://msdn.microsoft.com/ja-jp/library/aa192884.aspx)
 

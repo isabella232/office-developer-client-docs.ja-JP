@@ -98,6 +98,6 @@ End Sub
 ```
 
 > [!NOTE]
-> <span data-ttu-id="792d9-p108">[!メモ] InfoPath 2003 互換オブジェクト モデルのそれぞれの InfoPath イベント オブジェクトは、異なるプロパティとメソッドを実装します。特定のイベント オブジェクトに関する詳細については、前に示したイベント オブジェクトの表でそれぞれのオブジェクトをクリックして参照してください。</span><span class="sxs-lookup"><span data-stu-id="792d9-p108">Each of the InfoPath event objects in the InfoPath 2003-compatible object model implements different properties and methods. For more information about a particular event object, click the appropriate object in the Event Objects table shown earlier.</span></span> 
+> <span data-ttu-id="792d9-p108">InfoPath 2003 互換オブジェクト モデルのそれぞれの InfoPath イベント オブジェクトは、異なるプロパティとメソッドを実装します。特定のイベント オブジェクトに関する詳細については、前に示したイベント オブジェクトの表でそれぞれのオブジェクトをクリックして参照してください。</span><span class="sxs-lookup"><span data-stu-id="792d9-p108">Each of the InfoPath event objects in the InfoPath 2003-compatible object model implements different properties and methods. For more information about a particular event object, click the appropriate object in the Event Objects table shown earlier.</span></span> 
   
 

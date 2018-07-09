@@ -30,7 +30,7 @@ ms.locfileid: "19799291"
 - <span data-ttu-id="1c411-113">[エラー コード](error-codes-onenote.md): OneNote 2013 オブジェクト モデル内のエラー コードを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="1c411-113">[Error codes](error-codes-onenote.md): Lists the error codes in the OneNote 2013 object model.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="1c411-p102">[!メモ] このドキュメントに記載する API は、未接続のシナリオにおける OneNote Win32 デスクトップ クライアント ソリューションのみを対象としています。接続のシナリオの場合は、推奨する OneNote サービス API を使用してください。詳細については、[dev.onenote.com](http://go.microsoft.com/fwlink/?LinkID=390615) にアクセスしてください。</span><span class="sxs-lookup"><span data-stu-id="1c411-p102">The APIs described in this documentation are intended only for OneNote Win32 desktop client solutions in unconnected scenarios. For connected scenarios, use the recommended OneNote service APIs. To learn more, visit [dev.onenote.com](http://go.microsoft.com/fwlink/?LinkID=390615).</span></span> 
+> <span data-ttu-id="1c411-p102">このドキュメントに記載する API は、未接続のシナリオにおける OneNote Win32 デスクトップ クライアント ソリューションのみを対象としています。接続のシナリオの場合は、推奨する OneNote サービス API を使用してください。詳細については、[dev.onenote.com](http://go.microsoft.com/fwlink/?LinkID=390615) にアクセスしてください。</span><span class="sxs-lookup"><span data-stu-id="1c411-p102">The APIs described in this documentation are intended only for OneNote Win32 desktop client solutions in unconnected scenarios. For connected scenarios, use the recommended OneNote service APIs. To learn more, visit [dev.onenote.com](http://go.microsoft.com/fwlink/?LinkID=390615).</span></span> 
   
 ## <a name="see-also"></a><span data-ttu-id="1c411-117">関連項目</span><span class="sxs-lookup"><span data-stu-id="1c411-117">See also</span></span>
 
@@ -40,9 +40,9 @@ ms.locfileid: "19799291"
     
 - [<span data-ttu-id="1c411-120">マイクロソフト製品のアクセシビリティ機能</span><span class="sxs-lookup"><span data-stu-id="1c411-120">Accessibility in Microsoft Products</span></span>](http://www.microsoft.com/enable/products/default.aspx)
     
-- [<span data-ttu-id="1c411-121">�h�L�������g�̂��߂̕\�L�K��</span><span class="sxs-lookup"><span data-stu-id="1c411-121">Document Conventions</span></span>](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
+- [<span data-ttu-id="1c411-121">�h�L�������g�̂��߂̕\�L�K��</span><span class="sxs-lookup"><span data-stu-id="1c411-121">Document Conventions</span></span>](http://msdn.microsoft.com/ja-jp/office/aa905365.aspx)
     
-- [<span data-ttu-id="1c411-122">OneNote の開発者リファレンスの著作権情報</span><span class="sxs-lookup"><span data-stu-id="1c411-122">OneNote Developer Reference Copyright Information</span></span>](https://msdn.microsoft.com/en-us/library/office/jj680116.aspx)
+- [<span data-ttu-id="1c411-122">OneNote の開発者リファレンスの著作権情報</span><span class="sxs-lookup"><span data-stu-id="1c411-122">OneNote Developer Reference Copyright Information</span></span>](https://msdn.microsoft.com/ja-jp/library/office/jj680116.aspx)
     
 - <span data-ttu-id="1c411-123">[Microsoft �v���C�o�V�[�Ɋւ��鐺��](http://privacy.microsoft.com/en-us/default.mspx)</span><span class="sxs-lookup"><span data-stu-id="1c411-123">[Microsoft Online Privacy Notice](http://privacy.microsoft.com/en-us/default.mspx)</span></span>
     

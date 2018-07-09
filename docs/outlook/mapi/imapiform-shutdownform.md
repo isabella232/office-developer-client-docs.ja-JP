@@ -71,13 +71,13 @@ HRESULT ShutdownForm(
   
 1. <span data-ttu-id="b0e30-126">確認しているビューアーが既に呼び出されません**ShutdownForm**とがある場合は E_UNEXPECTED を返します。</span><span class="sxs-lookup"><span data-stu-id="b0e30-126">Check that a viewer has not already called **ShutdownForm**, and return E_UNEXPECTED if it has.</span></span> <span data-ttu-id="b0e30-127">ではありませんが、チェックする必要があります。</span><span class="sxs-lookup"><span data-stu-id="b0e30-127">Although this is unlikely, you should check.</span></span>
     
-2. <span data-ttu-id="b0e30-128">処理が完了するまで、フォームと内部データ構造体のストレージが利用可能なままにするために、フォームの[IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28VS.85%29.aspx)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="b0e30-128">Call your form's [IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28VS.85%29.aspx) method so that storage for the form and any internal data structures remain available until processing is finished.</span></span> 
+2. <span data-ttu-id="b0e30-128">処理が完了するまで、フォームと内部データ構造体のストレージが利用可能なままにするために、フォームの[IUnknown::AddRef](http://msdn.microsoft.com/ja-jp/library/ms691379%28VS.85%29.aspx)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="b0e30-128">Call your form's [IUnknown::AddRef](http://msdn.microsoft.com/ja-jp/library/ms691379%28VS.85%29.aspx) method so that storage for the form and any internal data structures remain available until processing is finished.</span></span> 
     
 3. <span data-ttu-id="b0e30-129">フォームのデータに未保存の変更があるかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="b0e30-129">Determine whether there are any unsaved changes to the form's data.</span></span> <span data-ttu-id="b0e30-130">ビューアーの[IMAPIMessageSite::SaveMessage](imapimessagesite-savemessage.md)メソッドを呼び出すことによって、 _ulSaveOptions_パラメーターを設定する方法に応じて、保存されていないデータを保存します。</span><span class="sxs-lookup"><span data-stu-id="b0e30-130">Save unsaved data according to how the  _ulSaveOptions_ parameter is set by calling your viewer's [IMAPIMessageSite::SaveMessage](imapimessagesite-savemessage.md) method.</span></span> 
     
 4. <span data-ttu-id="b0e30-131">フォームのユーザー インターフェイスのウィンドウを破棄します。</span><span class="sxs-lookup"><span data-stu-id="b0e30-131">Destroy your form's user interface window.</span></span>
     
-5. <span data-ttu-id="b0e30-132">[](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx)メソッドを呼び出すことによって、フォームのメッセージとメッセージのサイト オブジェクトを解放します。</span><span class="sxs-lookup"><span data-stu-id="b0e30-132">Release your form's message and message site objects by calling their [IUnknown::Release](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) methods.</span></span> 
+5. <span data-ttu-id="b0e30-132">[](http://msdn.microsoft.com/ja-jp/library/ms682317%28v=VS.85%29.aspx)メソッドを呼び出すことによって、フォームのメッセージとメッセージのサイト オブジェクトを解放します。</span><span class="sxs-lookup"><span data-stu-id="b0e30-132">Release your form's message and message site objects by calling their [IUnknown::Release](http://msdn.microsoft.com/ja-jp/library/ms682317%28v=VS.85%29.aspx) methods.</span></span> 
     
 6. <span data-ttu-id="b0e30-133">[IMAPIViewAdviseSink::OnShutdown](imapiviewadvisesink-onshutdown.md)メソッドを呼び出すことによって登録されているすべての視聴者の保留中のシャット ダウンを通知します。</span><span class="sxs-lookup"><span data-stu-id="b0e30-133">Notify all registered viewers of the pending shutdown by calling their [IMAPIViewAdviseSink::OnShutdown](imapiviewadvisesink-onshutdown.md) methods.</span></span> 
     
@@ -90,7 +90,7 @@ HRESULT ShutdownForm(
 10. <span data-ttu-id="b0e30-137">S_OK ��Ԃ��܂��B</span><span class="sxs-lookup"><span data-stu-id="b0e30-137">Return S_OK.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="b0e30-138">これらの操作を完了すると、呼び出される form オブジェクトにのみ有効なメソッドは、 [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx)インターフェイスから。</span><span class="sxs-lookup"><span data-stu-id="b0e30-138">After these actions have been completed, the only valid methods on the form object that may be called are those from the [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx) interface.</span></span> 
+> <span data-ttu-id="b0e30-138">これらの操作を完了すると、呼び出される form オブジェクトにのみ有効なメソッドは、 [IUnknown](http://msdn.microsoft.com/ja-jp/library/ms680509%28v=VS.85%29.aspx)インターフェイスから。</span><span class="sxs-lookup"><span data-stu-id="b0e30-138">After these actions have been completed, the only valid methods on the form object that may be called are those from the [IUnknown](http://msdn.microsoft.com/ja-jp/library/ms680509%28v=VS.85%29.aspx) interface.</span></span> 
   
 ## <a name="notes-to-callers"></a><span data-ttu-id="b0e30-139">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="b0e30-139">Notes to callers</span></span>
 

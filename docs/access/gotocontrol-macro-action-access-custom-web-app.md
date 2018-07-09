@@ -19,7 +19,7 @@ ms.locfileid: "19798568"
 <span data-ttu-id="db8da-104">" **GoToControl** /コントロールの移動" アクションを使用すると、開いているビューの現在のレコード内の指定したコントロールにフォーカスを移動できます。</span><span class="sxs-lookup"><span data-stu-id="db8da-104">You can use the **GoToControl** action to move the focus to the specified control in the current record of the open view.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="db8da-p101">[!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="db8da-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="db8da-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="db8da-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 ## <a name="setting"></a><span data-ttu-id="db8da-107">設定</span><span class="sxs-lookup"><span data-stu-id="db8da-107">Setting</span></span>
 

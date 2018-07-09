@@ -45,6 +45,6 @@ BOOL MNLS_IsBadStringPtrW(
   
 ## <a name="remarks"></a><span data-ttu-id="0cb2e-113">備考</span><span class="sxs-lookup"><span data-stu-id="0cb2e-113">Remarks</span></span>
 
-<span data-ttu-id="0cb2e-114">この関数は、 [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx)をラップします。</span><span class="sxs-lookup"><span data-stu-id="0cb2e-114">This function wraps [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx).</span></span> <span data-ttu-id="0cb2e-115">詳細については、 [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0cb2e-115">For more information, see [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx).</span></span>
+<span data-ttu-id="0cb2e-114">この関数は、 [IsBadStringPtr](http://msdn.microsoft.com/ja-jp/library/aa366714%28VS.85%29.aspx)をラップします。</span><span class="sxs-lookup"><span data-stu-id="0cb2e-114">This function wraps [IsBadStringPtr](http://msdn.microsoft.com/ja-jp/library/aa366714%28VS.85%29.aspx).</span></span> <span data-ttu-id="0cb2e-115">詳細については、 [IsBadStringPtr](http://msdn.microsoft.com/ja-jp/library/aa366714%28VS.85%29.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0cb2e-115">For more information, see [IsBadStringPtr](http://msdn.microsoft.com/ja-jp/library/aa366714%28VS.85%29.aspx).</span></span>
   
 

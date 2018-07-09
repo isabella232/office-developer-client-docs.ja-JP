@@ -65,7 +65,7 @@ HRESULT HrGetAutoDiscoverXML(
     
  <span data-ttu-id="49f6a-126">_ppXmlStream_</span><span class="sxs-lookup"><span data-stu-id="49f6a-126">_ppXmlStream_</span></span>
   
-> <span data-ttu-id="49f6a-127">[out]自動検出の XML を含む[IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx)オブジェクトへのポインター。</span><span class="sxs-lookup"><span data-stu-id="49f6a-127">[out] A pointer to an [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) object that contains the autodiscovery XML.</span></span> <span data-ttu-id="49f6a-128">自動検出が失敗した場合は**null**を返します。</span><span class="sxs-lookup"><span data-stu-id="49f6a-128">Returns **null** if the autodiscovery operation fails.</span></span> <span data-ttu-id="49f6a-129">操作を終了したら、 [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx)オブジェクトを解放する必要があります。</span><span class="sxs-lookup"><span data-stu-id="49f6a-129">You must release the [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) object when you are finished with it.</span></span> 
+> <span data-ttu-id="49f6a-127">[out]自動検出の XML を含む[IStream](http://msdn.microsoft.com/ja-jp/library/aa380034%28VS.85%29.aspx)オブジェクトへのポインター。</span><span class="sxs-lookup"><span data-stu-id="49f6a-127">[out] A pointer to an [IStream](http://msdn.microsoft.com/ja-jp/library/aa380034%28VS.85%29.aspx) object that contains the autodiscovery XML.</span></span> <span data-ttu-id="49f6a-128">自動検出が失敗した場合は**null**を返します。</span><span class="sxs-lookup"><span data-stu-id="49f6a-128">Returns **null** if the autodiscovery operation fails.</span></span> <span data-ttu-id="49f6a-129">操作を終了したら、 [IStream](http://msdn.microsoft.com/ja-jp/library/aa380034%28VS.85%29.aspx)オブジェクトを解放する必要があります。</span><span class="sxs-lookup"><span data-stu-id="49f6a-129">You must release the [IStream](http://msdn.microsoft.com/ja-jp/library/aa380034%28VS.85%29.aspx) object when you are finished with it.</span></span> 
     
 ## <a name="return-values"></a><span data-ttu-id="49f6a-130">戻り値</span><span class="sxs-lookup"><span data-stu-id="49f6a-130">Return values</span></span>
 
@@ -75,7 +75,7 @@ HRESULT HrGetAutoDiscoverXML(
     
 <span data-ttu-id="49f6a-133">E_INVALIDARG</span><span class="sxs-lookup"><span data-stu-id="49f6a-133">E_INVALIDARG</span></span> 
   
--  <span data-ttu-id="49f6a-134">_pwzAddress_が**null**か、有効な SMTP アドレスではありませんか_ppXmlStream_ [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx)オブジェクトへの**null**ポインター。</span><span class="sxs-lookup"><span data-stu-id="49f6a-134">_pwzAddress_ is **null** or is not a valid SMTP address, or  _ppXmlStream_ is a **null** pointer to an [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) object.</span></span> 
+-  <span data-ttu-id="49f6a-134">_pwzAddress_が**null**か、有効な SMTP アドレスではありませんか_ppXmlStream_ [IStream](http://msdn.microsoft.com/ja-jp/library/aa380034%28VS.85%29.aspx)オブジェクトへの**null**ポインター。</span><span class="sxs-lookup"><span data-stu-id="49f6a-134">_pwzAddress_ is **null** or is not a valid SMTP address, or  _ppXmlStream_ is a **null** pointer to an [IStream](http://msdn.microsoft.com/ja-jp/library/aa380034%28VS.85%29.aspx) object.</span></span> 
     
 <span data-ttu-id="49f6a-135">MAPI_E_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="49f6a-135">MAPI_E_NOT_FOUND</span></span> 
   

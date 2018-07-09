@@ -19,7 +19,7 @@ ms.locfileid: "19798733"
 <span data-ttu-id="9443c-p102">" **SetVariable** /変数の設定" アクションを使用すると、一時変数を作成して特定の値に設定できます。作成した変数は、後続のアクションで条件や引数として使用したり、別のユーザー インターフェイス (UI) マクロで使用したりできます。</span><span class="sxs-lookup"><span data-stu-id="9443c-p102">You can use the **SetVariable** action to create a temporary variable and set it to a specific value. The variable can then be used as a condition or argument in subsequent actions, or you can use the variable in another user interface (UI) macro.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="9443c-p103">[!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="9443c-p103">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="9443c-p103">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="9443c-p103">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 ## <a name="setting"></a><span data-ttu-id="9443c-109">設定</span><span class="sxs-lookup"><span data-stu-id="9443c-109">Setting</span></span>
 

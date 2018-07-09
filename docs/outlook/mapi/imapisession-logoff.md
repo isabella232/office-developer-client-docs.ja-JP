@@ -65,7 +65,7 @@ HRESULT Logoff(
     
 ## <a name="remarks"></a><span data-ttu-id="ca620-125">備考</span><span class="sxs-lookup"><span data-stu-id="ca620-125">Remarks</span></span>
 
-<span data-ttu-id="ca620-126">**IMAPISession::Logoff**メソッドでは、MAPI セッションを終了します。</span><span class="sxs-lookup"><span data-stu-id="ca620-126">The **IMAPISession::Logoff** method ends a MAPI session.</span></span> <span data-ttu-id="ca620-127">**ログオフ**が返されるときは[リ ス](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx)を除くメソッド呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="ca620-127">When **Logoff** returns, none of the methods except for [IUnknown::Release](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) can be called.</span></span> 
+<span data-ttu-id="ca620-126">**IMAPISession::Logoff**メソッドでは、MAPI セッションを終了します。</span><span class="sxs-lookup"><span data-stu-id="ca620-126">The **IMAPISession::Logoff** method ends a MAPI session.</span></span> <span data-ttu-id="ca620-127">**ログオフ**が返されるときは[リ ス](http://msdn.microsoft.com/ja-jp/library/ms682317%28v=VS.85%29.aspx)を除くメソッド呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="ca620-127">When **Logoff** returns, none of the methods except for [IUnknown::Release](http://msdn.microsoft.com/ja-jp/library/ms682317%28v=VS.85%29.aspx) can be called.</span></span> 
   
 ## <a name="notes-to-callers"></a><span data-ttu-id="ca620-128">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="ca620-128">Notes to callers</span></span>
 

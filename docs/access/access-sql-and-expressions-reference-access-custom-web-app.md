@@ -17,7 +17,7 @@ ms.locfileid: "19798576"
 ## <a name="in-this-section"></a><span data-ttu-id="8a554-103">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="8a554-103">In this section</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="8a554-p101">[!重要] 現在 Microsoft では、SharePoint での Access Web アプリの作成や使用は推奨していません。代替策として、[Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) を使用して、Web およびモバイル デバイス用の、コーディングが不要なビジネス ソリューションを構築することを検討してください。</span><span class="sxs-lookup"><span data-stu-id="8a554-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="8a554-p101">現在 Microsoft では、SharePoint での Access Web アプリの作成や使用は推奨していません。代替策として、[Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) を使用して、Web およびモバイル デバイス用の、コーディングが不要なビジネス ソリューションを構築することを検討してください。</span><span class="sxs-lookup"><span data-stu-id="8a554-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 - [<span data-ttu-id="8a554-106">変換関数 (カスタム web アプリケーションのアクセス)</span><span class="sxs-lookup"><span data-stu-id="8a554-106">Conversion functions (Access custom web app)</span></span>](conversion-functions-access-custom-web-app.md)
     

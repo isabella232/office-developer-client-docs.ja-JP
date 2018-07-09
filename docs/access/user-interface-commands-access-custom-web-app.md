@@ -17,7 +17,7 @@ ms.locfileid: "19798766"
 # <a name="user-interface-commands-access-custom-web-app"></a><span data-ttu-id="18c36-102">ユーザー インターフェイス コマンド (カスタム web アプリケーションのアクセス)</span><span class="sxs-lookup"><span data-stu-id="18c36-102">User interface commands (Access custom web app)</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="18c36-p101">[!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="18c36-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="18c36-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="18c36-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 ## <a name="in-this-section"></a><span data-ttu-id="18c36-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="18c36-105">In this section</span></span>
 

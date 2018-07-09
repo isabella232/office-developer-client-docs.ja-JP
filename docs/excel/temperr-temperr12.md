@@ -55,7 +55,7 @@ LPXLOPER12 TempErr12(BOOL err);
 <span data-ttu-id="ef5d8-p101">���̗�ł́A **TempErr12** �֐���g�p���� #VALUE! �G���[�� Excel �ɕԂ��܂��B</span><span class="sxs-lookup"><span data-stu-id="ef5d8-p101">This example uses the **TempErr12** function to return a #VALUE! error to Excel.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="ef5d8-p102">[!����] �t���[�����[�N ���C�u�����֐� **TempErr12** �́A����o�b�t�@�[���烁��������蓖�Ă܂��B���̃������́A�ʏ�A�t���[�����[�N�֐� **Excel12f** ���Ăяo�����Ɖ������܂��B���̗�̊֐����A **Excel12f** ��Ăяo�����ɌJ��Ԃ��Ăяo�����ƁA������ ���[�N���������܂��B</span><span class="sxs-lookup"><span data-stu-id="ef5d8-p102">The Framework library function **TempErr12** allocates memory from an internal buffer, which is normally freed when the Framework function **Excel12f** is called. If this example function is called repeatedly without **Excel12f** being called, a memory leak occurs.</span></span> 
+> <span data-ttu-id="ef5d8-p102">�t���[�����[�N ���C�u�����֐� **TempErr12** �́A����o�b�t�@�[���烁��������蓖�Ă܂��B���̃������́A�ʏ�A�t���[�����[�N�֐� **Excel12f** ���Ăяo�����Ɖ������܂��B���̗�̊֐����A **Excel12f** ��Ăяo�����ɌJ��Ԃ��Ăяo�����ƁA������ ���[�N���������܂��B</span><span class="sxs-lookup"><span data-stu-id="ef5d8-p102">The Framework library function **TempErr12** allocates memory from an internal buffer, which is normally freed when the Framework function **Excel12f** is called. If this example function is called repeatedly without **Excel12f** being called, a memory leak occurs.</span></span> 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

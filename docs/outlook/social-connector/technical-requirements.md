@@ -60,5 +60,5 @@ ms.locfileid: "19804460"
 - [<span data-ttu-id="1dd72-132">プロバイダーを開発するためのベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="1dd72-132">Best Practices for Developing a Provider</span></span>](best-practices-for-developing-a-provider.md)  
 - [<span data-ttu-id="1dd72-133">プロバイダーを開発する学習のためのクイック ステップ</span><span class="sxs-lookup"><span data-stu-id="1dd72-133">Quick Steps for Learning to Develop a Provider</span></span>](quick-steps-for-learning-to-develop-a-provider.md)
 - [<span data-ttu-id="1dd72-134">プロバイダーを展開します。</span><span class="sxs-lookup"><span data-stu-id="1dd72-134">Deploying a Provider</span></span>](deploying-a-provider.md)  
-- [<span data-ttu-id="1dd72-135">Outlook Social Connector プロバイダーの開発の概要 (英語)(機械翻訳)</span><span class="sxs-lookup"><span data-stu-id="1dd72-135">Getting Started with Developing an Outlook Social Connector Provider</span></span>](getting-started-with-developing-an-outlook-social-connector-provider.md)
+- [<span data-ttu-id="1dd72-135">Outlook Social Connector プロバイダーの開発の概要(機械翻訳)</span><span class="sxs-lookup"><span data-stu-id="1dd72-135">Getting Started with Developing an Outlook Social Connector Provider</span></span>](getting-started-with-developing-an-outlook-social-connector-provider.md)
 

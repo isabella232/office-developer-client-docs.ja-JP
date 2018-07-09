@@ -202,7 +202,7 @@ ms.locfileid: "19804732"
   
  <span data-ttu-id="da893-269">_bstrProgID_</span><span class="sxs-lookup"><span data-stu-id="da893-269">_bstrProgID_</span></span>
   
-<span data-ttu-id="da893-p125">双方向通信のためのコンシューマーの COM オブジェクトを示します。空にすることはできません。最大長は 39 文字です。ProgID について詳しくは、「[\<ProgID\> Key](http://msdn.microsoft.com/en-us/library/ms690196.aspx.aspx)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="da893-p125">Identifies the consumer's COM object for two-way communication. Must be non-empty with a maximum of 39 characters. See [\<ProgID\> Key](http://msdn.microsoft.com/en-us/library/ms690196.aspx.aspx) for more information on ProgIDs.</span></span> 
+<span data-ttu-id="da893-p125">双方向通信のためのコンシューマーの COM オブジェクトを示します。空にすることはできません。最大長は 39 文字です。ProgID について詳しくは、「[\<ProgID\> Key](http://msdn.microsoft.com/ja-jp/library/ms690196.aspx.aspx)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="da893-p125">Identifies the consumer's COM object for two-way communication. Must be non-empty with a maximum of 39 characters. See [\<ProgID\> Key](http://msdn.microsoft.com/ja-jp/library/ms690196.aspx.aspx) for more information on ProgIDs.</span></span> 
   
  <span data-ttu-id="da893-273">_bstrFileSystemDirectoryHint_</span><span class="sxs-lookup"><span data-stu-id="da893-273">_bstrFileSystemDirectoryHint_</span></span>
   

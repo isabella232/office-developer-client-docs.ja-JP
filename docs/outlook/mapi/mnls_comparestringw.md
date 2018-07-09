@@ -37,11 +37,11 @@ int MNLS_CompareStringW (
 
  <span data-ttu-id="915c0-107">_lcid_</span><span class="sxs-lookup"><span data-stu-id="915c0-107">_lcid_</span></span>
   
-> <span data-ttu-id="915c0-108">[in]ロケール識別子です。</span><span class="sxs-lookup"><span data-stu-id="915c0-108">[in] Locale identifier.</span></span> <span data-ttu-id="915c0-109">詳細な定義は、[通常](http://msdn.microsoft.com/en-us/library/dd317759%28VS.85%29.aspx)の_ロケール_パラメーターを参照してください。</span><span class="sxs-lookup"><span data-stu-id="915c0-109">For detailed definitions, see the  _Locale_ parameter of [CompareString](http://msdn.microsoft.com/en-us/library/dd317759%28VS.85%29.aspx).</span></span>
+> <span data-ttu-id="915c0-108">[in]ロケール識別子です。</span><span class="sxs-lookup"><span data-stu-id="915c0-108">[in] Locale identifier.</span></span> <span data-ttu-id="915c0-109">詳細な定義は、[通常](http://msdn.microsoft.com/ja-jp/library/dd317759%28VS.85%29.aspx)の_ロケール_パラメーターを参照してください。</span><span class="sxs-lookup"><span data-stu-id="915c0-109">For detailed definitions, see the  _Locale_ parameter of [CompareString](http://msdn.microsoft.com/ja-jp/library/dd317759%28VS.85%29.aspx).</span></span>
     
  <span data-ttu-id="915c0-110">_dwFlags_</span><span class="sxs-lookup"><span data-stu-id="915c0-110">_dwFlags_</span></span>
   
-> <span data-ttu-id="915c0-111">[in]大文字と小文字およびアクセント記号を無視するようにフラグを設定します。</span><span class="sxs-lookup"><span data-stu-id="915c0-111">[in] Flags to ignore case and diacritics.</span></span> <span data-ttu-id="915c0-112">詳細な定義は、 [CompareStringEx](http://msdn.microsoft.com/en-us/library/dd317761%28VS.85%29.aspx)の_dwCmpFlags_パラメーターを参照してください。</span><span class="sxs-lookup"><span data-stu-id="915c0-112">For detailed definitions, see the  _dwCmpFlags_ parameter of [CompareStringEx](http://msdn.microsoft.com/en-us/library/dd317761%28VS.85%29.aspx).</span></span>
+> <span data-ttu-id="915c0-111">[in]大文字と小文字およびアクセント記号を無視するようにフラグを設定します。</span><span class="sxs-lookup"><span data-stu-id="915c0-111">[in] Flags to ignore case and diacritics.</span></span> <span data-ttu-id="915c0-112">詳細な定義は、 [CompareStringEx](http://msdn.microsoft.com/ja-jp/library/dd317761%28VS.85%29.aspx)の_dwCmpFlags_パラメーターを参照してください。</span><span class="sxs-lookup"><span data-stu-id="915c0-112">For detailed definitions, see the  _dwCmpFlags_ parameter of [CompareStringEx](http://msdn.microsoft.com/ja-jp/library/dd317761%28VS.85%29.aspx).</span></span>
     
  <span data-ttu-id="915c0-113">_pstr1_</span><span class="sxs-lookup"><span data-stu-id="915c0-113">_pstr1_</span></span>
   
@@ -61,17 +61,17 @@ int MNLS_CompareStringW (
     
 ## <a name="return-value"></a><span data-ttu-id="915c0-125">�߂�l</span><span class="sxs-lookup"><span data-stu-id="915c0-125">Return value</span></span>
 
-<span data-ttu-id="915c0-126">[CompareStringEx](http://msdn.microsoft.com/en-us/library/dd317761%28VS.85%29.aspx)に記載されている値を返します。</span><span class="sxs-lookup"><span data-stu-id="915c0-126">Returns the values described for [CompareStringEx](http://msdn.microsoft.com/en-us/library/dd317761%28VS.85%29.aspx).</span></span>
+<span data-ttu-id="915c0-126">[CompareStringEx](http://msdn.microsoft.com/ja-jp/library/dd317761%28VS.85%29.aspx)に記載されている値を返します。</span><span class="sxs-lookup"><span data-stu-id="915c0-126">Returns the values described for [CompareStringEx](http://msdn.microsoft.com/ja-jp/library/dd317761%28VS.85%29.aspx).</span></span>
   
 ## <a name="remarks"></a><span data-ttu-id="915c0-127">備考</span><span class="sxs-lookup"><span data-stu-id="915c0-127">Remarks</span></span>
 
-<span data-ttu-id="915c0-128">この関数は、 [CompareStringW](http://msdn.microsoft.com/en-us/library/dd317759%28VS.85%29.aspx)をラップします。</span><span class="sxs-lookup"><span data-stu-id="915c0-128">This function wraps [CompareStringW](http://msdn.microsoft.com/en-us/library/dd317759%28VS.85%29.aspx).</span></span> <span data-ttu-id="915c0-129">**MNLS_CompareStringW**では、同じパラメーターを取得し、 [CompareStringW](http://msdn.microsoft.com/en-us/library/dd317759%28VS.85%29.aspx)と同じ動作をしました。</span><span class="sxs-lookup"><span data-stu-id="915c0-129">**MNLS_CompareStringW** takes the same parameters and has the same behavior as [CompareStringW](http://msdn.microsoft.com/en-us/library/dd317759%28VS.85%29.aspx).</span></span>
+<span data-ttu-id="915c0-128">この関数は、 [CompareStringW](http://msdn.microsoft.com/ja-jp/library/dd317759%28VS.85%29.aspx)をラップします。</span><span class="sxs-lookup"><span data-stu-id="915c0-128">This function wraps [CompareStringW](http://msdn.microsoft.com/ja-jp/library/dd317759%28VS.85%29.aspx).</span></span> <span data-ttu-id="915c0-129">**MNLS_CompareStringW**では、同じパラメーターを取得し、 [CompareStringW](http://msdn.microsoft.com/ja-jp/library/dd317759%28VS.85%29.aspx)と同じ動作をしました。</span><span class="sxs-lookup"><span data-stu-id="915c0-129">**MNLS_CompareStringW** takes the same parameters and has the same behavior as [CompareStringW](http://msdn.microsoft.com/ja-jp/library/dd317759%28VS.85%29.aspx).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="915c0-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="915c0-130">See also</span></span>
 
 
 
-[<span data-ttu-id="915c0-131">CompareStringW</span><span class="sxs-lookup"><span data-stu-id="915c0-131">CompareStringW</span></span>](http://msdn.microsoft.com/en-us/library/dd317759%28VS.85%29.aspx)
+[<span data-ttu-id="915c0-131">CompareStringW</span><span class="sxs-lookup"><span data-stu-id="915c0-131">CompareStringW</span></span>](http://msdn.microsoft.com/ja-jp/library/dd317759%28VS.85%29.aspx)
   
-[<span data-ttu-id="915c0-132">CompareStringEx</span><span class="sxs-lookup"><span data-stu-id="915c0-132">CompareStringEx</span></span>](http://msdn.microsoft.com/en-us/library/dd317761%28VS.85%29.aspx)
+[<span data-ttu-id="915c0-132">CompareStringEx</span><span class="sxs-lookup"><span data-stu-id="915c0-132">CompareStringEx</span></span>](http://msdn.microsoft.com/ja-jp/library/dd317761%28VS.85%29.aspx)
 

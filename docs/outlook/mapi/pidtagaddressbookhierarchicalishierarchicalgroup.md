@@ -43,7 +43,7 @@ ms.locfileid: "19802434"
   
 > <span data-ttu-id="368e8-120">プロパティ セットの定義と関連する Microsoft Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="368e8-120">Provides property set definitions and references to related Microsoft Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="368e8-121">[[MS OXOABK]](http://msdn.microsoft.com/en-us/library/cc433489%28v=exchg.80%29)</span><span class="sxs-lookup"><span data-stu-id="368e8-121">[[MS-OXOABK]](http://msdn.microsoft.com/en-us/library/cc433489%28v=exchg.80%29)</span></span>
+<span data-ttu-id="368e8-121">[[MS OXOABK]](http://msdn.microsoft.com/ja-jp/library/cc433489%28v=exchg.80%29)</span><span class="sxs-lookup"><span data-stu-id="368e8-121">[[MS-OXOABK]](http://msdn.microsoft.com/ja-jp/library/cc433489%28v=exchg.80%29)</span></span>
   
 > <span data-ttu-id="368e8-122">プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="368e8-122">Specifies the properties and operations for lists of users, contacts, groups, and resources.</span></span>
     
