@@ -1,22 +1,22 @@
 ---
-title: Excel XLL SDK ���쌠���
+title: Excel XLL SDK 著作権情報
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 92a242e6-c94c-4eef-a4b2-efd1b8f62de8
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 0d01f908fb43215cb7d61a55220e3abe37157feb
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "19798865"
 ---
-# <a name="excel-xll-sdk-copyright-notice"></a>Excel XLL SDK ���쌠���
+# <a name="excel-xll-sdk-copyright-notice"></a>Excel XLL SDK 著作権情報
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
 このドキュメントは "現状のまま" 提供されます。このドキュメントで説明されている情報およびビューは、URL および他のインターネット Web サイトの参照を含めて、予告なく変更されることがあります。このドキュメントの使用に伴うリスクはお客様が負うものとします。 
   
