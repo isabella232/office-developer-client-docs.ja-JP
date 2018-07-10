@@ -20,7 +20,7 @@ ms.locfileid: "19798815"
 > [!NOTE]
 > [!メモ] [複数のプラットフォーム](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability)間で Office エクスペリエンスを拡張するソリューションの開発に関心をお持ちですか。 新しい[Excel のアドイン モデル](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-overview)を確認してください。 
   
-### <a name="viewed-most"></a>最も表示
+### <a name="viewed-most"></a>よく参照される資料
   
 - [Excel VBA リファレンス](https://msdn.microsoft.com/EN-US/library/ee861528.aspx)
   
@@ -38,7 +38,7 @@ ms.locfileid: "19798815"
   
 ### <a name="other-resources"></a>その他の技術情報
   
-- [Excel のパフォーマンスの障害物を最適化するためのヒント](https://msdn.microsoft.com/en-us/library/office/mt709003.aspx)
+- [Excel のパフォーマンスの問題を最適化するヒント](https://msdn.microsoft.com/en-us/library/office/mt709003.aspx)
 
 - [Office VBA オブジェクト ライブラリ リファレンス](http://msdn.microsoft.com/library/727c4e1c-e13c-7bac-e833-b1322607dfd3%28Office.15%29.aspx)
   

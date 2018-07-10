@@ -16,7 +16,7 @@ ms.locfileid: "19798533"
 
 ソリューションを開発し、アクセスをカスタマイズするための使い方のコンテンツ、サンプル コード、SDK および API のマニュアル、VBA の参照、トレーニング、および技術情報を検索します。
   
-### <a name="viewed-most"></a>最も表示
+### <a name="viewed-most"></a>よく参照される資料
   
 - [Access VBA リファレンス](http://msdn.microsoft.com/library/0e9c6fa4-3289-4a13-b409-354c70129308%28Office.15%29.aspx)
   

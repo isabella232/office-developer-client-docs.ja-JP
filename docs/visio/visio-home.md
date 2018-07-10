@@ -21,7 +21,7 @@ ms.locfileid: "19806771"
 > [!NOTE]
 > [!メモ] [複数のプラットフォーム](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability)間で Office エクスペリエンスを拡張するソリューションを開発することに関心がありますか?新しい [Office アドイン モデル](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)をご覧ください。 
   
-### <a name="viewed-most"></a>最も表示
+### <a name="viewed-most"></a>よく参照される資料
   
 - [Visio VBA リファレンス](http://msdn.microsoft.com/library/b6834d21-5898-4dd9-af2b-9ffeb1b92a1c%28Office.15%29.aspx)
   
@@ -29,7 +29,7 @@ ms.locfileid: "19806771"
   
 - [Visio Viewer のリファレンス](http://msdn.microsoft.com/library/6ee197eb-5d40-61a8-4ba4-8c13c9dc3a7e%28Office.15%29.aspx)
   
-- [Visio シェイプ シート リファレンス](visio-shapesheet-reference.md)
+- [Visio シェイプシート リファレンス](visio-shapesheet-reference.md)
   
 - [Visio ファイル形式リファレンス](visio-file-format-reference.md)
   

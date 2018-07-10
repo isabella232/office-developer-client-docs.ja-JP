@@ -20,7 +20,7 @@ ms.locfileid: "19804684"
 > [!NOTE]
 > [!メモ] [複数のプラットフォーム](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability)間で Office エクスペリエンスを拡張するソリューションの開発に関心をお持ちですか。新しい [Office アドイン モデル](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)をご確認ください。 
   
-### <a name="viewed-most"></a>最も表示
+### <a name="viewed-most"></a>よく参照される資料
   
 - [Project VBA リファレンス](https://msdn.microsoft.com/en-us/library/dn175495.aspx)
   

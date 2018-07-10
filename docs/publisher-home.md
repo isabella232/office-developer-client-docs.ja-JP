@@ -20,11 +20,11 @@ ms.locfileid: "19804696"
 > [!NOTE]
 > [!メモ] [複数のプラットフォーム](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability)間で Office エクスペリエンスを拡張するソリューションを開発することに関心がありますか?新しい [Office アドイン モデル](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)をご覧ください。 
 
-### <a name="viewed-most"></a>最も表示
+### <a name="viewed-most"></a>よく参照される資料
 
-- [VBA リファレンスの発行元](https://msdn.microsoft.com/en-us/VBA/VBA-Publisher)
+- [Publisher VBA リファレンス](https://msdn.microsoft.com/en-us/VBA/VBA-Publisher)
 
-- [パブリッシャー 2010](https://msdn.microsoft.com/en-us/library/office/ff604963(v=office.14).aspx)
+- [Publisher 2010](https://msdn.microsoft.com/en-us/library/office/ff604963(v=office.14).aspx)
 
 
 ### <a name="office-add-ins"></a>Office アドイン 
