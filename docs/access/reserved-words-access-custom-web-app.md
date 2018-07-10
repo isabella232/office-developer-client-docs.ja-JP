@@ -19,7 +19,7 @@ ms.locfileid: "19798744"
 <span data-ttu-id="ec2d6-p102">Microsoft Access は、データベースを定義、操作、およびアクセスする目的で予約済みキーワードを使用します。予約済みキーワードは、Access が SQL ステートメントを解析して理解する目的で使用する言語の文法の部分です。</span><span class="sxs-lookup"><span data-stu-id="ec2d6-p102">Microsoft Access uses reserved keywords for defining, manipulating, and accessing databases. Reserved keywords are part of the grammar of the language that is used by Access to parse and understand SQL statements.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="ec2d6-p103">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="ec2d6-p103">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="ec2d6-p103">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/ja-jp/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="ec2d6-p103">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/ja-jp/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 ## <a name="access-reserved-keywords"></a><span data-ttu-id="ec2d6-109">予約アクセス キーワード</span><span class="sxs-lookup"><span data-stu-id="ec2d6-109">Access reserved keywords</span></span>
 

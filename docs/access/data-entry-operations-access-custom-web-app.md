@@ -16,7 +16,7 @@ ms.locfileid: "19798549"
 # <a name="data-entry-operations-access-custom-web-app"></a><span data-ttu-id="80a02-102">データ エントリの操作 (カスタム web アプリケーションのアクセス)</span><span class="sxs-lookup"><span data-stu-id="80a02-102">Data entry operations (Access custom web app)</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="80a02-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="80a02-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="80a02-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/ja-jp/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="80a02-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/ja-jp/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 ## <a name="in-this-section"></a><span data-ttu-id="80a02-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="80a02-105">In this section</span></span>
 

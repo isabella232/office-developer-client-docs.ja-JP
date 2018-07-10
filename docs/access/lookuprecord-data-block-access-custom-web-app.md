@@ -19,7 +19,7 @@ ms.locfileid: "19798614"
 <span data-ttu-id="c957d-104">**LookupRecord** データ ブロックは、特定のレコードに対して一連のアクションを実行します。</span><span class="sxs-lookup"><span data-stu-id="c957d-104">A **LookupRecord** data block performs a set of actions on a specific record.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="c957d-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="c957d-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="c957d-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/ja-jp/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="c957d-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/ja-jp/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 > [!NOTE]
 > <span data-ttu-id="c957d-107">**LookupRecord** データ ブロックは、データ マクロでのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="c957d-107">The **LookupRecord** data block is available only in Data Macros.</span></span> 

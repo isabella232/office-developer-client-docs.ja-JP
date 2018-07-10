@@ -17,7 +17,7 @@ ms.locfileid: "19798563"
 # <a name="inspection-functions-access-custom-web-app"></a><span data-ttu-id="47371-102">検査関数 (カスタム web アプリケーションのアクセス)</span><span class="sxs-lookup"><span data-stu-id="47371-102">Inspection functions (Access custom web app)</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="47371-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="47371-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="47371-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/ja-jp/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="47371-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/ja-jp/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 ## <a name="in-this-section"></a><span data-ttu-id="47371-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="47371-105">In this section</span></span>
 

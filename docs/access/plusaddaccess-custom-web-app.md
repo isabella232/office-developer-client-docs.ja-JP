@@ -19,7 +19,7 @@ ms.locfileid: "19798710"
 <span data-ttu-id="292f9-p102">2 つの数を加算します。この加算演算子では、日付に数 (日数) を加算することもできます。</span><span class="sxs-lookup"><span data-stu-id="292f9-p102">Adds two numbers. This addition arithmetic operator can also add a number, in days, to a date.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="292f9-p103">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="292f9-p103">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="292f9-p103">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/ja-jp/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="292f9-p103">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/ja-jp/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 ## <a name="syntax"></a><span data-ttu-id="292f9-109">構文</span><span class="sxs-lookup"><span data-stu-id="292f9-109">Syntax</span></span>
 

@@ -19,7 +19,7 @@ ms.locfileid: "19798739"
 <span data-ttu-id="1d88a-104">指定された式の正 (+1)、ゼロ (0)、または負 (-1) の記号を返します。</span><span class="sxs-lookup"><span data-stu-id="1d88a-104">Returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.</span></span>
   
 > [!IMPORTANT]
-> <span data-ttu-id="1d88a-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="1d88a-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="1d88a-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/ja-jp/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="1d88a-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/ja-jp/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 ## <a name="syntax"></a><span data-ttu-id="1d88a-107">構文</span><span class="sxs-lookup"><span data-stu-id="1d88a-107">Syntax</span></span>
 

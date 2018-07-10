@@ -19,7 +19,7 @@ ms.locfileid: "19798588"
 <span data-ttu-id="d0e1e-104">式の値に応じた条件に基づいてアクションのグループを実行するには、 **If** マクロ ブロックを使用します。</span><span class="sxs-lookup"><span data-stu-id="d0e1e-104">You can use the **If** macro block to conditionally execute a group of actions, depending on the value of an expression.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="d0e1e-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="d0e1e-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="d0e1e-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/ja-jp/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="d0e1e-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/ja-jp/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 ## <a name="syntax"></a><span data-ttu-id="d0e1e-107">構文</span><span class="sxs-lookup"><span data-stu-id="d0e1e-107">Syntax</span></span>
 

@@ -18,7 +18,7 @@ ms.locfileid: "19798595"
 <span data-ttu-id="cb13f-104">カスタムの書式設定を作成して、日付または時刻の表示方法を制御する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="cb13f-104">Learn how to control how a date or time is displayed by creating a custom formatting.</span></span>
   
 > [!IMPORTANT]
-> <span data-ttu-id="cb13f-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="cb13f-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="cb13f-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/ja-jp/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="cb13f-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/ja-jp/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 ## <a name="format-specifications"></a><span data-ttu-id="cb13f-107">書式指定</span><span class="sxs-lookup"><span data-stu-id="cb13f-107">Format specifications</span></span>
 

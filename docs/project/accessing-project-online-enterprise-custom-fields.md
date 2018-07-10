@@ -206,8 +206,8 @@ private static ProjectContext projContext =
 ## <a name="see-also"></a><span data-ttu-id="01789-211">関連項目</span><span class="sxs-lookup"><span data-stu-id="01789-211">See also</span></span>
 
 - [<span data-ttu-id="01789-212">プロジェクト開発のポータル</span><span class="sxs-lookup"><span data-stu-id="01789-212">Project Development Portal</span></span>](http://dev.office.com/project.aspx)
-- [<span data-ttu-id="01789-213">概要: エンタープライズ ユーザー設定フィールドと参照テーブル</span><span class="sxs-lookup"><span data-stu-id="01789-213">Overview: Enterprise custom fields and lookup tables</span></span>](https://support.office.com/en-us/article/overview-enterprise-custom-fields-and-lookup-tables-f99db553-0b33-4648-93c0-f6a74637d790?ui=en-us&rs=en-us&ad=us)
+- [<span data-ttu-id="01789-213">概要: エンタープライズ ユーザー設定フィールドと参照テーブル</span><span class="sxs-lookup"><span data-stu-id="01789-213">Overview: Enterprise custom fields and lookup tables</span></span>](https://support.office.com/ja-jp/article/overview-enterprise-custom-fields-and-lookup-tables-f99db553-0b33-4648-93c0-f6a74637d790?ui=en-us&rs=en-us&ad=us)
 - <span data-ttu-id="01789-214">[ローカルとエンタープライズ ユーザー設定フィールド](https://msdn.microsoft.com/ja-jp/library/office/ms447495(v=office.14).aspx)</span><span class="sxs-lookup"><span data-stu-id="01789-214">[Local and Enterprise Custom Fields](https://msdn.microsoft.com/ja-jp/library/office/ms447495(v=office.14).aspx)</span></span>
-- [<span data-ttu-id="01789-215">Project Server 2013 でのエンタープライズ ユーザー設定フィールドを追加または更新</span><span class="sxs-lookup"><span data-stu-id="01789-215">Add or edit enterprise custom fields in Project Server 2013</span></span>](https://docs.microsoft.com/en-us/project/add-or-edit-enterprise-custom-fields-in-project-server)
+- [<span data-ttu-id="01789-215">Project Server 2013 でのエンタープライズ ユーザー設定フィールドを追加または更新</span><span class="sxs-lookup"><span data-stu-id="01789-215">Add or edit enterprise custom fields in Project Server 2013</span></span>](https://docs.microsoft.com/ja-jp/project/add-or-edit-enterprise-custom-fields-in-project-server)
     
 

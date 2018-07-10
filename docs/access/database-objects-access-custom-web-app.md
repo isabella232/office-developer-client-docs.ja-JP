@@ -16,7 +16,7 @@ ms.locfileid: "19798572"
 # <a name="database-objects-access-custom-web-app"></a><span data-ttu-id="99389-102">データベース オブジェクト (カスタム web アプリケーションのアクセス)</span><span class="sxs-lookup"><span data-stu-id="99389-102">Database objects (Access custom web app)</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="99389-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="99389-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="99389-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/ja-jp/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="99389-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/ja-jp/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 ## <a name="in-this-section"></a><span data-ttu-id="99389-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="99389-105">In this section</span></span>
 

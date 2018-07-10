@@ -19,7 +19,7 @@ ms.locfileid: "19798721"
 <span data-ttu-id="e6675-104">" **RaiseError** /エラーの生成" アクションは、指定されたエラー メッセージが含まれるポップアップ ウィンドウを表示します。</span><span class="sxs-lookup"><span data-stu-id="e6675-104">The **RaiseError** action displays a popup window that contains a specified error message.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="e6675-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="e6675-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="e6675-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/ja-jp/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="e6675-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/ja-jp/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 > [!NOTE]
 > <span data-ttu-id="e6675-107">" **RaiseError** /エラーの生成" アクションは、データ マクロでのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="e6675-107">The **RaiseError** action is available only in Data Macros.</span></span> 

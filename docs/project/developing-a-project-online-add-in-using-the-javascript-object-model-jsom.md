@@ -90,7 +90,7 @@ ms.locfileid: "19804551"
     
 2. <span data-ttu-id="b3a04-167">SharePoint で、アドインをホストする方法を指定しますか。</span><span class="sxs-lookup"><span data-stu-id="b3a04-167">How do you want to host your SharePoint Add-in?</span></span> <span data-ttu-id="b3a04-168">[X] を選択して**SharePoint でホストされています**。</span><span class="sxs-lookup"><span data-stu-id="b3a04-168">Choose [X] **SharePoint-hosted**.</span></span>
     
-   <span data-ttu-id="b3a04-169">SharePoint アドインに関する詳細については、ホスティングなどのオプションでは、 [SharePoint のアドイン](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-add-ins)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b3a04-169">For more information about SharePoint Add-ins, including hosting options, see [SharePoint Add-ins](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-add-ins).</span></span>
+   <span data-ttu-id="b3a04-169">SharePoint アドインに関する詳細については、ホスティングなどのオプションでは、 [SharePoint のアドイン](https://docs.microsoft.com/ja-jp/sharepoint/dev/sp-add-ins/sharepoint-add-ins)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b3a04-169">For more information about SharePoint Add-ins, including hosting options, see [SharePoint Add-ins](https://docs.microsoft.com/ja-jp/sharepoint/dev/sp-add-ins/sharepoint-add-ins).</span></span>
     
 3. <span data-ttu-id="b3a04-170">[ **次へ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b3a04-170">Click **Next**.</span></span> 
     

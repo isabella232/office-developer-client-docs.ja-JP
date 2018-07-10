@@ -441,6 +441,6 @@ const string PROJECT_SERVER_URI = "http://ServerName/ProjectServerName/";
 - [<span data-ttu-id="a3c93-312">プロジェクト内の WCF ベースのコード サンプルの前提条件</span><span class="sxs-lookup"><span data-stu-id="a3c93-312">Prerequisites for WCF-based code samples in Project</span></span>](prerequisites-for-wcf-based-code-samples-in-project.md)
 - [<span data-ttu-id="a3c93-313">WCF で偽装を使用します。</span><span class="sxs-lookup"><span data-stu-id="a3c93-313">Use Impersonation with WCF</span></span>](http://msdn.microsoft.com/library/e3597901-2f02-44a2-8076-d32aae540b38%28Office.15%29.aspx)
 - [<span data-ttu-id="a3c93-314">プロジェクト PSI リファレンスの概要</span><span class="sxs-lookup"><span data-stu-id="a3c93-314">Project PSI reference overview</span></span>](project-psi-reference-overview.md)
-- [<span data-ttu-id="a3c93-315">SharePoint デベロッパー センター</span><span class="sxs-lookup"><span data-stu-id="a3c93-315">SharePoint Developer Center</span></span>](http://msdn.microsoft.com/en-us/sharepoint/default.aspx)
+- [<span data-ttu-id="a3c93-315">SharePoint デベロッパー センター</span><span class="sxs-lookup"><span data-stu-id="a3c93-315">SharePoint Developer Center</span></span>](http://msdn.microsoft.com/ja-jp/sharepoint/default.aspx)
     
 
