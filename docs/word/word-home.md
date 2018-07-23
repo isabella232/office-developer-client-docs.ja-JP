@@ -5,38 +5,39 @@ ms.date: 12/13/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 9eeb591e-b040-4a53-beef-f69913543fb4
-description: ソリューションを開発し、Word をカスタマイズするための使い方のコンテンツ、サンプル コード、SDK および API のマニュアル、VBA の参照、トレーニング、および技術情報を検索します。
+description: ソリューションの開発と Word のカスタマイズを行う方法を記載したコンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、技術記事をご覧ください。
 ms.openlocfilehash: ca2ce7da5fe76842e924036918c41470d202b834
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806908"
 ---
 # <a name="word"></a>Word
 
-ソリューションを開発し、Word をカスタマイズするための使い方のコンテンツ、サンプル コード、SDK および API のマニュアル、VBA の参照、トレーニング、および技術情報を検索します。
+ソリューションの開発と Word のカスタマイズを行う方法を記載したコンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、技術記事をご覧ください。
   
 > [!NOTE]
-> [!メモ] [複数のプラットフォーム](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability)間で Office エクスペリエンスを拡張するソリューションを開発することに関心がありますか?新しい [Office アドイン モデル](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)をご覧ください。  
+> [複数のプラットフォーム](https://docs.microsoft.com/ja-JP/office/dev/add-ins/overview/office-add-in-availability)間で Office エクスペリエンスを拡張するソリューションを開発することに関心がありますか? 新しい [Office アドイン モデル](https://docs.microsoft.com/ja-JP/office/dev/add-ins/overview/office-add-ins)をご覧ください。  
   
 ### <a name="viewed-most"></a>よく参照される資料
   
-- [Word VBA リファレンス](https://msdn.microsoft.com/en-us/library/ee861527.aspx)
+- [Word VBA リファレンス](https://msdn.microsoft.com/ja-JP/library/ee861527.aspx)
   
-- [Word 2010](https://msdn.microsoft.com/en-us/library/office/ff601860%28v=office.14%29.aspx)
+- [Word 2010](https://msdn.microsoft.com/ja-JP/library/office/ff601860%28v=office.14%29.aspx)
   
 ### <a name="office-add-ins"></a>Office アドイン
   
-- [Word のアドインを使い始める](https://docs.microsoft.com/en-us/office/dev/add-ins/quickstarts/word-quickstart)
+- [Word アドインの概要](https://docs.microsoft.com/ja-JP/office/dev/add-ins/quickstarts/word-quickstart)
   
-- [プラットフォームの概要](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)
+- [プラットフォームの概要](https://docs.microsoft.com/ja-JP/office/dev/add-ins/overview/office-add-ins)
   
 ### <a name="code-samples"></a>コード サンプル
   
-- [Word のコード サンプルでは、Office のデベロッパー センター](https://developer.microsoft.com/en-us/word/gallery/?filterBy=Word,Samples)
+- 
+  [Office デベロッパー センターの Word コード サンプル](https://developer.microsoft.com/en-us/word/gallery/?filterBy=Word,Samples)
   
-### <a name="other-resources"></a>その他の技術情報
+### <a name="other-resources"></a>その他のリソース
   
 - [Office VBA オブジェクト ライブラリ リファレンス](http://msdn.microsoft.com/library/727c4e1c-e13c-7bac-e833-b1322607dfd3%28Office.15%29.aspx)
   
@@ -44,6 +45,6 @@ ms.locfileid: "19806908"
   
 - [Open XML SDK](http://msdn.microsoft.com/library/f6a9ae68-7989-4208-97f5-3c945137a0ab%28Office.15%29.aspx)
   
-- [Office 用 VSTO アドイン](https://msdn.microsoft.com/en-us/library/jj620922.aspx)
+- [Office 用 VSTO アドイン](https://msdn.microsoft.com/ja-JP/library/jj620922.aspx)
   
 

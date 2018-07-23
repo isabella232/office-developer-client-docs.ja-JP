@@ -8,7 +8,7 @@ ms.assetid: 597f7b81-3baf-4bf2-9ef0-f7fedad8c36e
 description: ソリューションの開発と Excel のカスタマイズに関する HowTo コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および技術記事を検索できます。
 ms.openlocfilehash: 9a637bf0b4cd3f8663f40064c8f1f07bf1d3f93e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798815"
@@ -18,27 +18,28 @@ ms.locfileid: "19798815"
 ソリューションの開発と Excel のカスタマイズに関する HowTo コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および技術記事を検索できます。
   
 > [!NOTE]
-> [!メモ] [複数のプラットフォーム](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability)間で Office エクスペリエンスを拡張するソリューションの開発に関心をお持ちですか。 新しい[Excel のアドイン モデル](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-overview)を確認してください。 
+> [複数のプラットフォーム](https://docs.microsoft.com/ja-JP/office/dev/add-ins/overview/office-add-in-availability)間で Office エクスペリエンスを拡張するソリューションを開発することに関心がありますか? 新しい [Excel アドイン モデル](https://docs.microsoft.com/ja-JP/office/dev/add-ins/excel/excel-add-ins-overview)をご覧ください。 
   
 ### <a name="viewed-most"></a>よく参照される資料
   
-- [Excel VBA リファレンス](https://msdn.microsoft.com/EN-US/library/ee861528.aspx)
+- [Excel VBA リファレンス](https://msdn.microsoft.com/ja-JP/library/ee861528.aspx)
   
-- [Excel 2010](https://msdn.microsoft.com/en-us/library/ee658205%28v=office.14%29.aspx)
+- [Excel 2010](https://msdn.microsoft.com/ja-JP/library/ee658205%28v=office.14%29.aspx)
   
 ### <a name="office-add-ins"></a>Office アドイン
   
-- [Excel アドインを使う](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-get-started-overview)
+- [Excel アドインを使う](https://docs.microsoft.com/ja-JP/office/dev/add-ins/excel/excel-add-ins-get-started-overview)
   
-- [プラットフォームの概要](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)
+- [プラットフォームの概要](https://docs.microsoft.com/ja-JP/office/dev/add-ins/overview/office-add-ins)
   
 ### <a name="code-samples"></a>コード サンプル
   
-- [Excel のコード サンプルでは、Office のデベロッパー センター](https://developer.microsoft.com/en-us/excel/gallery/?filterBy=Samples)
+- 
+  [Office デベロッパー センターの Excel コード サンプル](https://developer.microsoft.com/en-us/excel/gallery/?filterBy=Samples)
   
-### <a name="other-resources"></a>その他の技術情報
+### <a name="other-resources"></a>その他のリソース
   
-- [Excel のパフォーマンスの問題を最適化するヒント](https://msdn.microsoft.com/en-us/library/office/mt709003.aspx)
+- [Excel のパフォーマンスの問題を最適化するヒント](https://msdn.microsoft.com/ja-JP/library/office/mt709003.aspx)
 
 - [Office VBA オブジェクト ライブラリ リファレンス](http://msdn.microsoft.com/library/727c4e1c-e13c-7bac-e833-b1322607dfd3%28Office.15%29.aspx)
   
@@ -46,6 +47,6 @@ ms.locfileid: "19798815"
   
 - [Open XML SDK](http://msdn.microsoft.com/library/f6a9ae68-7989-4208-97f5-3c945137a0ab%28Office.15%29.aspx)
   
-- [Office 用 VSTO アドイン](https://msdn.microsoft.com/en-us/library/jj620922.aspx)
+- [Office 用 VSTO アドイン](https://msdn.microsoft.com/ja-JP/library/jj620922.aspx)
   
 
