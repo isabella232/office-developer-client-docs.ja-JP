@@ -1,27 +1,27 @@
 ---
-title: フォーム イベントへの対応
+title: フォーム イベントに応答する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- order of events [infopath 207],events [InfoPath 2007], responding,events [InfoPath 2007], order,InfoPath 2007, reponding to events,EventArgs classes [InfoPath 2007]
+- イベントの順序 [infopath 207],イベント [InfoPath 2007],応答,イベント [InfoPath 2007],順序,InfoPath 2007,イベントに応答する,EventArgs クラス [InfoPath 2007]
 localization_priority: Normal
 ms.assetid: 754db64b-179f-4385-8dd9-c20c9407b186
 description: ユーザーがフォームに入力する際に発生する各種イベントに応答するコードを書くことができます。InfoPath 内でイベントの作業を実行するには、デザイン モードのフォーム テンプレートの作業中にイベント ハンドラーを追加します。
 ms.openlocfilehash: 7968837fe0ed524104111bc3f2960860af51c75a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799155"
 ---
-# <a name="respond-to-form-events"></a>フォーム イベントへの対応
+# <a name="respond-to-form-events"></a>フォーム イベントに応答する
 
 ユーザーがフォームに入力する際に発生する各種イベントに応答するコードを書くことができます。InfoPath 内でイベントの作業を実行するには、デザイン モードのフォーム テンプレートの作業中にイベント ハンドラーを追加します。
   
 InfoPath イベント ハンドラーは常にデザイン モードで作成する必要があります。これは、InfoPath ではイベントを **InternalStartup** メソッドにシンクするための正しい宣言が自動的に追加され、イベント ハンドラーのコード スケルトンがフォームのコード ファイル (FormCode.cs または FormCode.vb) に挿入されるためです。イベント ハンドラーを作成した後、フォームのコード ファイルの宣言は変更しないでください。 
   
-InfoPath のイベント ハンドラーを作成する方法の詳細については、[イベント ハンドラーの追加](how-to-add-an-event-handler.md)を参照してください。
+InfoPath イベント ハンドラーの作成について詳しくは、「[イベント ハンドラーを追加する方法](how-to-add-an-event-handler.md)」を参照してください。
   
 ## <a name="overview-of-the-event-classes"></a>イベント クラスの概要
 
@@ -34,7 +34,7 @@ InfoPath のイベント ハンドラーを作成する方法の詳細につい�
 |[XmlEvent](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlEvent.aspx) <br/> |[Changed](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlEvent.Changed.aspx) <br/> [Changing](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlEvent.Changing.aspx) <br/> [Validating](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlEvent.Validating.aspx) <br/> |フォーム インスタンスの基になっている XML ドキュメントのデータに対する変更によって発生するイベントを実装します。  <br/> **Changed** <br/> フォームの基になっている XML ドキュメントの変更が受け付けられ、 **Validating** イベントが発生した後、発生します。  <br/> **Changing** <br/> フォームの基になっている XML ドキュメントに対する変更が行われた後で、変更が受け付けられる前に発生します。  <br/> **Validating** <br/> フォームの基になっている XML ドキュメントの変更が受け付けられた後、 **Changed** イベントが発生する前に発生します。  <br/> **XmlEvent** クラスは、 [RaiseUndoRedoForChanged](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlEvent.RaiseUndoRedoForChanged.aspx) プロパティも実装します。このプロパティは、元に戻す操作またはやり直し操作が実行されたときに **Changed** イベントが発生するかどうかを取得または設定します。    <br/> |
    
 > [!NOTE]
->  [!メモ] **Changed** イベントと **Changing** イベントは、フォームの空白ではないフィールドが変更されたときに 1 回だけ発生します。一方、 [Microsoft.Office.Interop.InfoPath.SemiTrust](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx) 名前空間によって提供される InfoPath 2003 と InfoPath 2003 互換のオブジェクト モデルの類似したイベント ( [OnBeforeChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnBeforeChange.aspx) と [OnAfterChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnAfterChange.aspx) ) は、フォームの空白ではないフィールドの変更時に 2 回発生します。つまり、古い値が削除されたときに 1 回、新しい値が挿入されたときにもう 1 回発生します。 
+>  **Changed** イベントと **Changing** イベントは、フォームの空白ではないフィールドが変更されたときに 1 回だけ発生します。一方、 [Microsoft.Office.Interop.InfoPath.SemiTrust](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx) 名前空間によって提供される InfoPath 2003 と InfoPath 2003 互換のオブジェクト モデルの類似したイベント ( [OnBeforeChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnBeforeChange.aspx) と [OnAfterChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnAfterChange.aspx) ) は、フォームの空白ではないフィールドの変更時に 2 回発生します。つまり、古い値が削除されたときに 1 回、新しい値が挿入されたときにもう 1 回発生します。 
   
 ## <a name="overview-of-the-eventargs-classes"></a>EventArgs クラスの概要
 

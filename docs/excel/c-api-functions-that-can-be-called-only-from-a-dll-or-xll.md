@@ -1,5 +1,5 @@
 ---
-title: "title: \"DLL �܂��� XLL ����̂݌Ăяo���\x94\\�� C API �֐�\" ms.author: mroberts author: mroberts manager: soliver ms.date: 11/16/2014 ms.audience: Developer ms.topic: overview keywords:"
+title: DLL または XLL からのみ呼び出し可能な C API 関数
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,19 +8,19 @@ keywords:
 - 'functions [excel 2007], c api called from dll or xll ms.prod: office-online-server localization_priority: Normal ms.assetid: 87c9e75b-c364-4428-a169-010886313b85'
 localization_priority: Normal
 ms.assetid: 87c9e75b-c364-4428-a169-010886313b85
-description: 'description: "�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio"'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 7935d86d1c0a460bcbec85157429d99242a73620
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798774"
 ---
-# <a name="c-api-functions-that-can-be-called-only-from-a-dll-or-xll"></a>DLL �܂��� XLL ����̂݌Ăяo���\�� C API �֐�
+# <a name="c-api-functions-that-can-be-called-only-from-a-dll-or-xll"></a>DLL または XLL からのみ呼び出し可能な C API 関数
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-C API �ɂ́A **Excel4**�A **Excel4v**�A **Excel12** �܂��� **Excel12v** �֐���g�p���� (�܂��͂̃t���[�����[�N�֐� **Excel** �܂��� **Excel12f** ��ԐړI�Ɏg�p���邱���̂����ꂩ�̊֐��ɂ����) �̂݌Ăяo�����\�� 15 �� Microsoft Excel �R�[���o�b�N�֐�������܂��B�܂�ADLL �܂��� XLL ����̂݌Ăяo�����\�ł��B
+C API に用意されている 15 個の Microsoft Excel コールバック関数は、**Excel4**、**Excel4v**、**Excel12**、または **Excel12v** 関数 (あるいは Framework 関数 **Excel** または **Excel12f** を間接的に使用する、これらの関数のいずれか) を使用しなければ呼び出すことができません。つまり、DLL または XLL からのみ呼び出しが可能です。
   
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -62,9 +62,9 @@ C API �ɂ́A **Excel4**�A **Excel4v**�A **Excel12** �܂��� **Excel
   
 [xlUDF](xludf.md)
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[C API �R�[���o�b�N�֐� Excel4�AExcel12](c-api-callback-functions-excel4-excel12.md)
+[C API コールバック関数 Excel4、Excel12](c-api-callback-functions-excel4-excel12.md)
 

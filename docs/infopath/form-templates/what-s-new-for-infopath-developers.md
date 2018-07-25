@@ -10,7 +10,7 @@ ms.assetid: d0ad3111-bd41-4f35-8a34-62c17f20fc19
 description: InfoPath を使用すると、Microsoft SharePoint Server プラットフォームで充実したフォーム ベースのアプリケーションを簡単に構築できます。Microsoft SharePoint Server 2013 および InfoPath Forms Services と連携する Microsoft InfoPath 2013 には、開発者向けのさまざまな機能が用意されています。SharePoint Server 2013 で利用できる InfoPath Forms Services により、InfoPath フォーム テンプレートを SharePoint Server に展開できるため、InfoPath リッチ クライアントをインストールしていないユーザーは Web ブラウザーで InfoPath フォームを開いて入力できます。
 ms.openlocfilehash: a11c6b4018e60a470197ecd7ffdf3b79a13658b9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799223"
@@ -31,11 +31,11 @@ InfoPath 2013 を使用して作成されたフォーム テンプレートで�
     
 - 1 クリックでのフォームの発行
     
-- SharePoint リスト フォームの強化
+- SharePoint リスト フォームの拡張
     
-- InfoPath フォーム web パーツを使用してポータル ページ上のホストのフォーム
+- InfoPath フォーム Web パーツを使用したポータル ページ上でのフォームのホスト
     
-- さらに機能が充実した Web フォーム
+- さらに豊富になった Web フォーム
     
 - 標準に準拠したブラウザー フォーム
     
@@ -61,11 +61,11 @@ InfoPath では、これまでよりも簡単にフォームの更新を発行�
 
 InfoPath を使用して、SharePoint リスト内のアイテムの作成、編集、および表示に使用するフォームを拡張し強化できるようになりました。リストを開き、[ **リスト ツール**] の [ **リスト**] タブをクリックして、[ **フォームのユーザー設定**] をクリックすることで、すぐに利用できる既定の SharePoint リスト フォームに似た InfoPath フォームを自動生成できます。InfoPath で、レイアウトの変更、追加のビューの作成、ルールやデータ検証の追加などを行うことで、このフォームをカスタマイズし、強化できます。リスト フォームの変更作業が終了したら、InfoPath の新しい 1 クリック発行機能を使用して SharePoint に発行できます。
   
-## <a name="host-forms-on-portal-pages-using-the-infopath-form-web-part"></a>InfoPath フォーム web パーツを使用してポータル ページ上のホストのフォーム
+## <a name="host-forms-on-portal-pages-using-the-infopath-form-web-part"></a>InfoPath フォーム Web パーツを使用したポータル ページ上でのフォームのホスト
 
-SharePoint Server 2013 では、新しい**InfoPath フォーム web パーツ**を使用して Web ページで、フォームのホストよりも簡単です。 Microsoft Office SharePoint Server 2007 では、Web ページで InfoPath フォームをホストしたいユーザーは、Visual Studio でコードを記述する必要です。 ここで、1 行のコードを記述することがなく Web パーツ ページに**InfoPath フォーム web パーツ**を追加して、発行したフォームを指します。**InfoPath フォーム web パーツ**を使用するには、SharePoint のリストまたはフォーム ライブラリに発行されている InfoPath ブラウザー フォームをホストします。 また、ページ上の他の Web パーツに接続してデータを送受信することもできます。 **InfoPath フォーム web パーツ**を使用する方法の詳細については、SharePoint 2010 SDK で[InfoPath フォーム web パーツの操作](http://msdn.microsoft.com/library/bb87e126-1a07-45aa-af36-b294df3a2576%28Office.15%29.aspx)を参照してください。 
+SharePoint Server 2013 では、新しい **InfoPath フォーム Web パーツ**を使用して、これまでよりも簡単に Web ページ上でフォームをホストできます。 Microsoft Office SharePoint Server 2007 では、ユーザーが Visual Studio でコードを記述しなければ、InfoPath フォームを Web ページでホストすることはできません。 現在、コードを 1 行も作成せずに、**InfoPath フォーム Web パーツ**を使用して SharePoint リストやフォーム ライブラリに発行する任意の InfoPath ブラウザー フォームをホストできるようになっています。それには、**InfoPath フォーム Web パーツ**を Web パーツのページに追加して、そのパーツで発行済みフォームを指せばよいだけです。 また、InfoPath フォーム Web パーツをページ上の他の Web パーツに接続して、データを送受信することもできます。 **InfoPath フォーム Web パーツ**の使用方法の詳細については、SharePoint 2010 SDK の「[InfoPath フォーム Web パーツの使用](http://msdn.microsoft.com/library/bb87e126-1a07-45aa-af36-b294df3a2576%28Office.15%29.aspx)」を参照してください。 
   
-## <a name="richer-web-forms"></a>さらに機能が充実した Web フォーム
+## <a name="richer-web-forms"></a>さらに豊富になった Web フォーム
 
 クライアント フォームとブラウザー フォームの機能の差が少なくなり、すべてのユーザーのフォーム入力操作について一貫性が高まります。ブラウザー フォームで次のコントロールや機能がサポートされるようになりました。
   

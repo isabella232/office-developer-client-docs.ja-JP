@@ -11,38 +11,38 @@ keywords:
 - tempactivecolumn12 function [excel 2007],TempActiveColumn function [Excel 2007]
 localization_priority: Normal
 ms.assetid: 4b1f34c4-e7fa-4a0b-8fc5-c9d465ebb70c
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: ac3dbb0bb43527f790e6934d73bee30a33f8555f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798947"
 ---
 # <a name="tempactivecolumntempactivecolumn12"></a>TempActiveColumn/TempActiveColumn12
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-��ƒ��̃V�[�g�̗�S�̂̊O���Q�Ƃ�܂ވꎞ **XLOPER**/ **XLOPER12** ��쐬����t���[�����[�N ���C�u�����֐��B 
+作業中のシートの列全体の外部参照を含む一時 **XLOPER**/ **XLOPER12** を作成するフレームワーク ライブラリ関数。 
   
 ```cs
 LPXLOPER TempActiveColumn(BYTE col);
 LPXLOPER12 TempActiveColumn12(COL col);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
- _col_(**バイト**)
+ _col_ (**BYTE**)
   
-�Q�Ƃ�����B�� A �� 0 �œn�����悤�ɁA���̒l�� 0 ����n�܂�l�ɂȂ��Ă��܂��BMicrosoft Office Excel 2003 �ȑO�̃o�[�W�����ƁA�݊����[�h�Ńu�b�N����s����J�n���� Excel 2007 �ȍ~�ł́A�ő�l�� 255 = 2^8 - 1 �ł���ABYTE �̐����l�Ŏw��ł���ő�l�ɂȂ�܂��B�u�b�N����s���� Excel 2007 �ȍ~�ł́A�ő�l�� 16,383 = 2^14 - 1 �ł��BCOL �́AXLCALL.H�� 32 �r�b�g�����t�������Ƃ��Ē�`����܂��B
+参照する列。0 を基準とするため、列 A は 0 として渡されます。Microsoft Office Excel 2003 以前のバージョンと、互換モードでブックを実行する Excel 2007 以降では、BYTE 整数で使用できる最大値は 255 = 2^8 - 1 です。バイトの整数で実行できる最大値とします。ブックを実行する Excel 2007 では、最大値は 16,383 = 2^14 - 1 です。COL は、XLCALL.H の 32 ビット符号付き整数として定義されます。
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
-�n������� **xltypeRef** �O���Q�Ƃ�Ԃ��܂��B 
+渡される列の **xltypeRef** 外部参照を返します。 
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̗�ł́A **TempActiveColumn12** ��g�p���āA�� B �S�̂�I����܂��B 
+次の例では、**TempActiveColumn12** を使用して、列 B 全体を選択します。 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -54,9 +54,9 @@ short WINAPI TempActiveColumnExample(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[�t���[�����[�N ���C�u�����̊֐�](functions-in-the-framework-library.md)
+[フレームワーク ライブラリの関数](functions-in-the-framework-library.md)
 

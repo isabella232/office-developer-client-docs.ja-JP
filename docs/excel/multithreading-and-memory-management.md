@@ -1,38 +1,38 @@
 ---
-title: �}���`�X���b�h�����ƃ������Ǘ�
+title: マルチスレッド処理とメモリ管理
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6f7e052a-4270-4b83-b1ed-feabf6dbeaa2
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 4f5495648c9012b0e028358037090f7e10ef5219
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798931"
 ---
-# <a name="multithreading-and-memory-management"></a>�}���`�X���b�h�����ƃ������Ǘ�
+# <a name="multithreading-and-memory-management"></a>マルチスレッド処理とメモリ管理
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-�������̓K�؂ȏ����́AMicrosoft Excel �̐M�����̍��� XLL �A�h�C���̍쐬�ɕs���ł��B�K�؂ȃ����� �o�b�t�@�[�̊��蓖�Ă�A�s�v�ɂȂ����o�b�t�@�[ �������̉����s��Ȃ��ƁA�p�t�H�[�}���X���ቺ���A���\�[�X�������������AExcel ���s����ɂȂ�܂��B
+メモリの適切な処理は、Microsoft Excel の信頼性の高い XLL アドインの作成に不可欠です。適切なメモリ バッファーの割り当てや、不要になったバッファー メモリの解放を行わないと、パフォーマンスが低下し、リソース競合が発生し、Excel が不安定になります。
   
-Microsoft Office Excel 2007 以降では、最大 1,024 の同時実行スレッドを使用して、再計算時に Excel を構成できます。 場合によっては、複数のプロセッサが利用可能な場合に特にまたはユーザー定義関数はクラスター化されたサーバーは、マルチ スレッドで実行されているパフォーマンス向上できます。
+Microsoft Office Excel 2007 以降では、再計算時に最大 1,024 の同時実行スレッドを使用するよう Excel を構成できます。 場合によっては、特に複数のプロセッサが利用可能な場合や、クラスター化されたサーバーでユーザー定義関数を使用している場合には、マルチスレッドによってパフォーマンスが向上する可能性があります。
   
-���̃g�s�b�N�ł́AXLL �Ń�������X���b�h��Ǘ�������@�ɂ��Đ�����܂��B
+次のトピックでは、XLL でメモリやスレッドを管理する方法について説明します。
   
-- [Excel �̃������Ǘ�](memory-management-in-excel.md)
+- [Excel のメモリ管理](memory-management-in-excel.md)
     
-- [Excel 2007 �ɂ�����}���`�X���b�h�����ƃ���������](multithreading-and-memory-contention-in-excel.md)
+- [Excel におけるマルチスレッド処理とメモリ競合](multithreading-and-memory-contention-in-excel.md)
     
-- [Excel �ł̃}���`�X���b�h�Čv�Z](multithreaded-recalculation-in-excel.md)
+- [Excel でのマルチスレッド再計算](multithreaded-recalculation-in-excel.md)
     
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[Excel XLL �̊J��](developing-excel-xlls.md)
+[Excel XLL の開発](developing-excel-xlls.md)
 

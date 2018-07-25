@@ -10,43 +10,43 @@ keywords:
 - convertxlref12toxlref function [excel 2007]
 localization_priority: Normal
 ms.assetid: b620ed21-73ef-489b-9c00-7be12bb41214
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 826428edb57eba9e17d601164aa8b4b797fc8929
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798770"
 ---
 # <a name="convertxlref12toxlref"></a>ConvertXLRef12ToXLRef
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-**XLREF12** ���� **XLREF** �ւ̕ϊ�����s���܂��B
+**XLREF12** から **XLREF** への変換を試みます。
   
 ```cs
 BOOL ConvertXLRefToXLRef12(LPXLREF12 pxRef12, LPXLREF pxRef);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
- _pxRef12_(**LPXLREF12**)
+ _pxRef12_ (**LPXLREF12**)
   
-�\�[�X�̎Q�ƍ\���̂ւ̃|�C���^�[�B
+ソースの参照構造体へのポインター。
   
- _pxRef_(**LPXLREF**)
+ _pxRef_ (**LPXLREF**)
   
-�ϊ������l���z�u�����^�[�Q�b�g�̎Q�ƍ\���̂ւ̃|�C���^�[�B
+変換した値が配置されるターゲットの参照構造体へのポインター。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
- �ϊ������������ꍇ�� **TRUE**�B����ȊO�̏ꍇ�� **FALSE**�B 
+ 変換が成功した場合は **TRUE**。それ以外の場合は **FALSE**。 
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-�w�肵���Q�Ƃ��ȑO�̃o�[�W�����ł̓T�|�[�g����Ă��Ȃ� Excel 2007 ���[�N�V�[�g�̕�����Q�Ƃ��Ă���ꍇ�A **XLREF12** ���� **XLREF** �ւ̕ϊ��͎��s���܂��B 
+指定した参照が以前のバージョンではサポートされていない Excel 2007 ワークシートの部分を参照している場合、**XLREF12** から **XLREF** への変換は失敗します。 
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
  `\SAMPLES\FRAMEWRK\FRAMEWRK.C`
   
@@ -75,5 +75,5 @@ BOOL ConvertXLRef12ToXLRef(LPXLREF12 pxref12, LPXLREF pxref)
 
 
 
-[�t���[�����[�N ���C�u�����̊֐�](functions-in-the-framework-library.md)
+[フレームワーク ライブラリの関数](functions-in-the-framework-library.md)
 

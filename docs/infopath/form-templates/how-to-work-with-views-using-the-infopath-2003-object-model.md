@@ -1,21 +1,21 @@
 ---
-title: InfoPath 2003 オブジェクト モデルを使用してビューに関する作業します。
+title: InfoPath 2003 オブジェクト モデルを使用してビューを操作する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- infopath 2003-compatible form templates, views,views [InfoPath 2007], InfoPath 2003-compatible form templates
+- infopath 2003 互換のフォーム テンプレート,ビュー,ビュー [InfoPath 2007], InfoPath 2003 互換のフォーム テンプレート
 localization_priority: Normal
 ms.assetid: feb1bfcb-1cb1-4d5c-bc84-df86a33a5934
 description: InfoPath フォーム テンプレートの作業を行うときは、フォームのビューにアクセスし、ビューに格納されているデータに対してさまざまな操作を実行するためのコードを書くことができます。InfoPath 2003 互換のオブジェクト モデルでは、ViewObject インターフェイスのメンバーを使用してフォームのビューにアクセスできます。
 ms.openlocfilehash: 1cbc472993ff18b26f31e3bc28b12a75e559644a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799130"
 ---
-# <a name="work-with-views-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してビューに関する作業します。
+# <a name="work-with-views-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してビューを操作する
 
 InfoPath フォーム テンプレートの作業を行うときは、フォームのビューにアクセスし、ビューに格納されているデータに対してさまざまな操作を実行するためのコードを書くことができます。InfoPath 2003 互換のオブジェクト モデルでは、[ViewObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ViewObject.aspx) インターフェイスのメンバーを使用してフォームのビューにアクセスできます。 
   
@@ -24,7 +24,7 @@ InfoPath フォーム テンプレートの作業を行うときは、フォー�
 [ViewObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ViewObject.aspx) インターフェイスには、次のメソッドとプロパティがあります。フォームの開発者は、これらを使用して、InfoPath のビューを操作できます。 
   
 > [!NOTE]
-> [!メモ] [ViewObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ViewObject.aspx) インターフェイスのメソッドとプロパティは、 [OnLoad](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnLoad.aspx) イベント中には利用できません。 
+> [ViewObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ViewObject.aspx) インターフェイスのメソッドとプロパティは、 [OnLoad](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnLoad.aspx) イベント中には利用できません。 
   
 |**名前**|**説明**|
 |:-----|:-----|
@@ -42,7 +42,7 @@ InfoPath フォーム テンプレートの作業を行うときは、フォー�
 |[Window](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.View.Window.aspx) プロパティ  <br/> |ビューに関連付けられている [Window](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.WindowObject.aspx) にアクセスする **WindowObject** インターフェイスへの参照を返します。  <br/> |
    
 > [!NOTE]
-> [!メモ] InfoPath 2003 互換オブジェクト モデルには、[ViewInfosCollection](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ViewInfosCollection.aspx) インターフェイスもあります。これを使用して、フォーム内で実装されているすべてのビューに関する情報を取得できます。 
+> InfoPath 2003 互換オブジェクト モデルには、[ViewInfosCollection](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ViewInfosCollection.aspx) インターフェイスもあります。これを使用して、フォーム内で実装されているすべてのビューに関する情報を取得できます。 
   
 ## <a name="using-the-viewobject-interface"></a>ViewObject インターフェイスを使用する
 

@@ -11,32 +11,32 @@ keywords:
 - temperr function [excel 2007],TempErr12 function [Excel 2007]
 localization_priority: Normal
 ms.assetid: cf8c26b2-ca2b-4dda-a02d-0ccbeac19106
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 22c0ff1b8259fc0e5ee70edb06bb3db53781ff8c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798943"
 ---
 # <a name="temperrtemperr12"></a>TempErr/TempErr12
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-Microsoft Excel ���[�N�V�[�g�̃G���[��܂ވꎞ **XLOPER**/ **XLOPER12**��쐬����t���[�����[�N ���C�u�����֐��B 
+Microsoft Excel ワークシートのエラーを含む一時 **XLOPER**/ **XLOPER12** を作成するフレームワーク ライブラリ関数。 
   
 ```cs
 LPXLOPER TempErr(WORD err);
 LPXLOPER12 TempErr12(BOOL err);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _err_
   
-�ړI�̃G���[ �R�[�h�܂��̓��e�������l�Ɠ����̐��l����̕\�Ɏ����܂��B
+目的のエラー コードまたはリテラル数値と同等の数値を次の表に示します。
   
-|**�G���[**|**XLCALL.H �Œ�`���ꂽ�G���[ �R�[�h**|**������ 10 �i��**|
+|**エラー**|**XLCALL.H で定義されたエラー コード**|**同等の 10 進数**|
 |:-----|:-----|:-----|
 |#NULL  <br/> |**xlerrNull** <br/> |0  <br/> |
 |#DIV/0!  <br/> |**xlerrDiv0** <br/> |7  <br/> |
@@ -46,16 +46,16 @@ LPXLOPER12 TempErr12(BOOL err);
 |#NUM!  <br/> |**xlerrNum** <br/> |36  <br/> |
 |#N/A  <br/> |**xlerrNA** <br/> |42  <br/> |
    
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
-�n���ꂽ�G���[ �R�[�h��܂� **xltypeBool** ��Ԃ��܂��B 
+渡されたエラー コードを含む **xltypeBool** を返します。 
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̗�ł́A **TempErr12** �֐���g�p���� #VALUE! �G���[�� Excel �ɕԂ��܂��B 
+この例では、**TempErr12** 関数を使用して #VALUE! エラーを Excel に返します。 
   
 > [!NOTE]
-> [!����] �t���[�����[�N ���C�u�����֐� **TempErr12** �́A����o�b�t�@�[���烁��������蓖�Ă܂��B���̃������́A�ʏ�A�t���[�����[�N�֐� **Excel12f** ���Ăяo�����Ɖ������܂��B���̗�̊֐����A **Excel12f** ��Ăяo�����ɌJ��Ԃ��Ăяo�����ƁA������ ���[�N���������܂��B 
+> フレームワーク ライブラリ関数 **TempErr12** は、内部バッファーからメモリを割り当てます。割り当てられたメモリは通常、フレームワーク関数 **Excel12f** が呼び出されると解放されます。**Excel12f** を呼び出さずに、この例の関数を繰り返し呼び出すと、メモリ リークが発生します。 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -66,9 +66,9 @@ LPXLOPER WINAPI TempErrExample(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[�t���[�����[�N ���C�u�����̊֐�](functions-in-the-framework-library.md)
+[フレームワーク ライブラリの関数](functions-in-the-framework-library.md)
 

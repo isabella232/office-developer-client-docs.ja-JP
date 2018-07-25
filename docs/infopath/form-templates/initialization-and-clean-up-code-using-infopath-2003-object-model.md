@@ -10,7 +10,7 @@ ms.assetid: 8d19e8fa-4e5c-40bb-ae89-7a552cc7914d
 description: 既定では、InfoPath 2003 と互換性のあるフォーム テンプレート プロジェクトについて作成される FormCode.cs または FormCode.vb ファイルには、フォームのプログラム ロジックに対するすべてのソース コードが含まれています。プロジェクトのテンプレートによって FormCode.cs または FormCode.vb ファイルに以下の例とよく似たクラスが生成され、このクラスには、フォーム イベントのハンドラーだけでなく、初期化コードと後処理コードも定義できます。FormCode.cs および FormCode.vb ファイルは、イベント ハンドラーが実装される唯一のクラスとしてこのクラスを識別する、アセンブリ レベルの System.ComponentModel.DescriptionAttribute 属性を使用します。InfoPathNamespace 属性 (InfoPathNamespaceAttribute 型が実装する) をクラスに適用して、クラス内で使用する XML DOM セレクション名前空間を識別します。InfoPathNamespace で参照される名前空間は、InfoPath プロジェクト システムによって管理されます。
 ms.openlocfilehash: 7111a8525b092998e21d4c267b5884f50fdb9777
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799135"
@@ -22,7 +22,7 @@ ms.locfileid: "19799135"
 FormCode クラス自体が、フォームが開いている間に InfoPath の標準的な機能に加えて必要となるコンポーネントに対して、初期化ルーチンと後処理ルーチンを実行するために使用する  `_Startup` および  `_Shutdown` メソッドを提供します。 
   
 > [!IMPORTANT]
-> [!重要] InfoPath オブジェクト モデルのメンバーは、 `_Startup` および  `_Shutdown` メソッド内から呼び出さないでください。これらのメソッドでは、外部コンポーネントのメンバーだけを初期化し、呼び出さなければなりません。 
+> InfoPath オブジェクト モデルのメンバーは、 `_Startup` および  `_Shutdown` メソッド内から呼び出さないでください。これらのメソッドでは、外部コンポーネントのメンバーだけを初期化し、呼び出さなければなりません。 
   
 ```cs
 using System;
@@ -126,7 +126,7 @@ Public Sub CTRL1_5_OnClick(ByVal e As DocActionEvent)
 End Sub
 ```
 
-イベント ハンドラーを作成する方法については、[追加のイベント ハンドラーを使用して InfoPath 2003 オブジェクト モデル](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)を参照してください。
+イベント ハンドラーの作成方法については、「[InfoPath 2003 オブジェクト モデルを使用してイベント ハンドラーを追加する方法](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)」を参照してください。
   
 ## <a name="the-shutdown-method"></a>_ShutDown メソッド
 
@@ -148,7 +148,7 @@ End Sub
 次の例では、 `_Startup` メソッドで Microsoft SQL Server データベースへの接続を初期化し、  `_Shutdown` メソッドでその接続を閉じる方法を示します。この例が正常に動作するには、最初に、[ **プロジェクト**] メニューの [ **参照の追加**] をクリックし、[ **.NET**] タブで System.Data.dll コンポーネントを選択して, .NET Framework の System.Data アセンブリへの参照を設定する必要があります。また、キーストロークを少なくするために、フォーム コード ファイルの先頭に  `using System.Data.SqlClient` (または  `Imports System.Data.SqlClient)`) ディレクティブが追加されたことにも注意してください。 
   
 > [!NOTE]
-> [!メモ] InfoPath フォームに SQL Server データベースに接続するフォーム コードが含まれている場合、フォームの展開方法およびセキュリティ ポリシーの定義方法によっては、ユーザーにセキュリティのアクセス許可が必要になることがあります。 セキュリティの詳細については、[について、セキュリティ モデル](about-the-security-model-for-form-templates-with-code.md)と[コードのフォーム テンプレートのセキュリティ設定の構成](how-to-configure-security-settings-for-form-templates-with-code.md)を参照してください。 
+> InfoPath フォームに SQL Server データベースに接続するフォーム コードが含まれている場合、フォームの展開方法およびセキュリティ ポリシーの定義方法によっては、ユーザーにセキュリティのアクセス許可が必要になることがあります。 セキュリティの詳細については、「[コードを含むフォーム テンプレートのセキュリティ モデルについて](about-the-security-model-for-form-templates-with-code.md)」および「[コードを含むフォーム テンプレートのセキュリティ設定を構成する方法](how-to-configure-security-settings-for-form-templates-with-code.md)」を参照してください。 
   
 ```cs
 using System;
@@ -221,5 +221,5 @@ End Namespace
 
 
 
-[InfoPath 2003 オブジェクト モデルを使用してイベント ハンドラーを追加します。](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)
+[InfoPath 2003 オブジェクト モデルを使用してイベント ハンドラーを追加する](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)
 

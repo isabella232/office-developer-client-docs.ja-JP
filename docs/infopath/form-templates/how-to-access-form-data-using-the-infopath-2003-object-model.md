@@ -1,21 +1,21 @@
 ---
-title: InfoPath 2003 オブジェクト モデルを使用してフォーム データにアクセス
+title: InfoPath 2003 オブジェクト モデルを使用してフォーム データにアクセスする
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- xdocument interface [infopath 2007],InfoPath 2003-compatible form templates, accessing form data,XDocumentsCollection interface [InfoPath 2007]
+- xdocument インターフェイス [infopath 2007],InfoPath 2003 互換のフォーム テンプレート,フォームのデータにアクセスする,XDocumentsCollection インターフェイス [InfoPath 2007]
 localization_priority: Normal
 ms.assetid: e0731014-f454-4417-9f90-19f3387f5776
 description: InfoPath フォームの機能を拡張しようと思うと、多くの場合、フォームの基になる XML ドキュメントに関する情報へのアクセス、XML ドキュメントに記述されているデータへのアクセス、XML ドキュメントに対する何らかの操作の実行などの処理をプログラムで行う必要が出てきます。InfoPath オブジェクト モデルでは、XDocument インターフェイスと XDocumentsCollection インターフェイスを関連させて使用することにより、フォームの基になる XML ドキュメントにアクセスしたり、その XML ドキュメントを操作したりすることができます。
 ms.openlocfilehash: 24e9abc8ce7327ab94b3608f1279c0f0d381ea83
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799113"
 ---
-# <a name="access-form-data-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してフォーム データにアクセス
+# <a name="access-form-data-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してフォーム データにアクセスする
 
 InfoPath フォームの機能を拡張しようと思うと、多くの場合、フォームの基になる XML ドキュメントに関する情報へのアクセス、XML ドキュメントに記述されているデータへのアクセス、XML ドキュメントに対する何らかの操作の実行などの処理をプログラムで行う必要が出てきます。InfoPath オブジェクト モデルでは、[XDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) インターフェイスと [XDocumentsCollection](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocumentsCollection.aspx) インターフェイスを関連させて使用することにより、フォームの基になる XML ドキュメントにアクセスしたり、その XML ドキュメントを操作したりすることができます。 
   
@@ -94,7 +94,7 @@ thisXDocument.UI.Alert(thisXDocument.URI)
 ```
 
 > [!NOTE]
-> [!メモ] **XDocument** インターフェイスを使用してフォームの基になる XML ドキュメントにアクセスすると、現在開いているフォームに関連付けられている XML ドキュメントにアクセスできます。 
+> **XDocument** インターフェイスを使用してフォームの基になる XML ドキュメントにアクセスすると、現在開いているフォームに関連付けられている XML ドキュメントにアクセスできます。 
   
 **XDocument** インターフェイスのキー プロパティは **DOM** プロパティです。このプロパティは、フォームのソース XML データが格納された XML DOM への参照を返します。 **DOM** プロパティを使用すると、XML DOM でサポートされている任意のプロパティとメソッドを使用できます。たとえば、次に示すコードは、XML DOM の **xml** プロパティを使用して、フォームの基になる XML ドキュメントのすべての内容を取得し、表示しています。 
   
@@ -113,6 +113,6 @@ thisXDocument.UI.Alert(xmldoc)
 ```
 
 > [!NOTE]
-> XML DOM の詳細とそのすべてのプロパティとそれをサポートするメソッドについては、MSDN の MSXML SDK を参照してください。 
+> XML DOM と、XML DOM でサポートしているすべてのプロパティとメソッドについては、MSDN の MSXML SDK を参照してください。 
   
 

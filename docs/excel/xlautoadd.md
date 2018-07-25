@@ -10,43 +10,43 @@ keywords:
 - xlautoadd function [excel 2007]
 localization_priority: Normal
 ms.assetid: c69299af-a28a-44d9-be10-9c9fb92e21f2
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: ae0b4ae2d5f5fc58c3e18ffa9d79ec4128cb4639
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798956"
 ---
 # <a name="xlautoadd"></a>xlAutoAdd
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-���[�U�[�� Excel �Z�b�V�������ɃA�h�C�� �}�l�[�W���[��g�p���� XLL ��L���ɂ��邽�тɁAMicrosoft Excel �ɂ���Ēǉ�����܂��BExcel ���N�����A���炩���߃C���X�g�[�����ꂽ�A�h�C����ǂݍ��ލۂɂ́A���̊֐��͌Ăяo����܂���B
+ユーザーが Excel セッション中にアドイン マネージャーを使用して XLL をアクティブ化するたびに、Microsoft Excel によって追加されます。Excel が起動して、あらかじめインストールされたアドインを読み込む際には、この関数は呼び出されません。
   
-���Ƃ��΁A���̊֐���g�p���āA�A�h�C�����L���ɂȂ��Ă��邱�Ƃ���[�U�[�ɒʒm����J�X�^�� �_�C�A���O �{�b�N�X�̕\���A���W�X�g���̓ǂݎ��Ə������݁A���C�Z���X���̊m�F�Ȃǂ��ł��܂��B
+たとえば、この関数を使用して、アドインが有効になっていることをユーザーに通知するカスタム ダイアログ ボックスの表示、レジストリの読み取りと書き込み、ライセンス情報の確認などができます。
   
-Excel �ł́A�����̊֐��̎����ƃG�N�X�|�[�g�� XLL �͕K�v����܂���B
+Excel では、これらの関数の実装とエクスポートに XLL は必要ありません。
   
 ```cs
 int WINAPI xlAutoAdd(void);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-���̊֐��Ɉ����͂���܂���B
+この関数に引数はありません。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-この関数の実装では、1 を返す必要があります。 (**int**) です。
+この関数を実装する場合、1 を返す必要があります。 (**int**)。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-�A�h�C�� �}�l�[�W���[���C�ӂ̃^�X�N��ǉ�����Ƃ��ɁA���̃^�X�N�� XLL �����s����K�v������ꍇ�́A���̊֐���g�p���܂��B
+アドイン マネージャーが任意のタスクを追加するときに、そのタスクを XLL が実行する必要がある場合は、この関数を使用します。
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̊֐��̎�����ɂ��ẮA `\SAMPLES\EXAMPLE\EXAMPLE.C` ��  `\SAMPLES\GENERIC\GENERIC.C` ��Q�Ƃ��Ă��������B���̃R�[�h�́A  `\SAMPLES\EXAMPLE\EXAMPLE.C` �ɂ���܂��B
+この関数の実装例については、`\SAMPLES\EXAMPLE\EXAMPLE.C` と `\SAMPLES\GENERIC\GENERIC.C` を参照してください。次のコードは、`\SAMPLES\EXAMPLE\EXAMPLE.C` から抜粋しています。
   
 ```cs
 int WINAPI xlAutoAdd(void)
@@ -60,12 +60,12 @@ int WINAPI xlAutoAdd(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
 [xlAutoRemove](xlautoremove.md)
 
 
-[�A�h�C�� �}�l�[�W���[�� XLL �C���^�[�t�F�C�X�֐�](add-in-manager-and-xll-interface-functions.md)
+[アドイン マネージャーと XLL インターフェイス関数](add-in-manager-and-xll-interface-functions.md)
 

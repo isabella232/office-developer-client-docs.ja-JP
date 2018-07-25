@@ -10,35 +10,35 @@ keywords:
 - quitframework function
 localization_priority: Normal
 ms.assetid: d17a3efe-c278-4ef1-b8f9-b958ae012361
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 5c4b122b200d9de0cf098d2bc9e2fbd887ad9ff3
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798936"
 ---
 # <a name="quitframework"></a>QuitFramework
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-�t���[�����[�N ���C�u��������������Ȃ��t���[�����[�N ���C�u�����֐��B����͒P�ɁA���Ɋ��蓖�Ă��Ă��郁�����������āA�ꎞ�I�� **XLOPER**/ **XLOPER12** ������ �f�[�^�\����ď��������܂��B 
+フレームワーク ライブラリを初期化しないフレームワーク ライブラリ関数。これは単に、既に割り当てられているメモリを解放して、一時 **XLOPER**/ **XLOPER12** のメモリ データ構造を再初期化します。 
   
 ```cs
 short WINAPI QuitFramework(void);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-���̊֐��Ɉ����͂���܂���B
+この関数に引数はありません。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-���̊֐��͒l��Ԃ��܂���B
+この関数は値を返しません。
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[�t���[�����[�N ���C�u�����̊֐�](functions-in-the-framework-library.md)
+[フレームワーク ライブラリの関数](functions-in-the-framework-library.md)
 

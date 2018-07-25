@@ -1,21 +1,21 @@
 ---
-title: InfoPath 2003 オブジェクト モデルを使用してアプリケーション データにアクセス
+title: InfoPath 2003 オブジェクト モデルを使用してアプリケーション データにアクセスする
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- form templates [infopath 2007], accessing data using 2003 object model,InfoPath 2003-compatible form templates, accessing application data
+- フォーム テンプレート [infopath 2007],2003 オブジェクト モデルを使用してデータにアクセスする,InfoPath 2003 互換のフォーム テンプレート,アプリケーション データにアクセスする
 localization_priority: Normal
 ms.assetid: da604c72-c760-4aa3-9574-d59c392753df
 description: InfoPath 2003 互換オブジェクト モデルには、InfoPath アプリケーションに関する情報 (フォームの基になる XML ドキュメント、フォーム定義ファイル (.xsf) などに関する情報) へのアクセスに使用できるオブジェクトとコレクションがあります。これらのデータには、InfoPath オブジェクト モデルの階層構造の最上位レベルにあるオブジェクトを通じてアクセスします。これらのオブジェクトは、Application インターフェイスを通じてインスタンス化されます。
 ms.openlocfilehash: e9cf01ff2ffa939fce5af277e756e679478f8b39
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799097"
 ---
-# <a name="access-application-data-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してアプリケーション データにアクセス
+# <a name="access-application-data-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してアプリケーション データにアクセスする
 
 InfoPath 2003 互換オブジェクト モデルには、InfoPath アプリケーションに関する情報 (フォームの基になる XML ドキュメント、フォーム定義ファイル (.xsf) などに関する情報) へのアクセスに使用できるオブジェクトとコレクションがあります。これらのデータには、InfoPath オブジェクト モデルの階層構造の最上位レベルにあるオブジェクトを通じてアクセスします。これらのオブジェクトは、[Application](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx) インターフェイスを通じてインスタンス化されます。 
   

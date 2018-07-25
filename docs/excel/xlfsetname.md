@@ -10,49 +10,49 @@ keywords:
 - xlfsetname function [excel 2007]
 localization_priority: Normal
 ms.assetid: ea7fd713-7c1b-4648-a609-3334f595c61a
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 48ce927f6bcb328a90779948a660cf9d0b460205
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798972"
 ---
 # <a name="xlfsetname"></a>xlfSetName
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-DLL �Ɋ֘A�t�����Ă����`�ς݂̖��O��쐬����э폜���邽�߂Ɏg�p���܂��B
+DLL に関連付けられている定義済みの名前を作成および削除するために使用します。
   
 ```cs
 Excel12(xlfSetName, LPXLOPER12 pxRes, 2, LPXLOPER12 pxNameText, LPXLOPER12 pxNameDefinition);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-_pxNameText_(**xltypeStr**)
+_pxNameText_ (**xltypeStr**)
   
-���O�͈̔́B���̖��O�́A�L���Ȗ��O�Ɋւ��� Microsoft Excel �̒ʏ�̐����ɏ�������K�v������܂��B
+名前の範囲。この名前は、有効な名前に関する Microsoft Excel の通常の制限に準拠する必要があります。
   
-_pxNameDefinition_(**xltypeStr**、 **xltypeNum**、 **xltypeBool**、 **xltypeErr**、 **xltypeMulti**、 **xltypeSRef**、 **xltypeRef**、または**xltypeInt**)
+_pxNameDefinition_ (**xltypeStr**、**xltypeNum**、**xltypeBool**、**xltypeErr**、**xltypeMulti**、**xltypeSRef**、**xltypeRef**、または **xltypeInt**)
   
-(省略可能)。 値、値、セル、またはセルの範囲のセットは、その_pxNameText_として定義されます。 省略すると、名前が削除されます。 
+(省略可能)。 値、値のセット、セル、または _pxNameText_ として定義されたセルの範囲。 省略した場合は名前が削除されます。 
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-_pxRes_(**xltypeBool**または**xltypeErr**)
+_pxRes _ (**xltypeBool** または **xltypeErr**)
   
-���삪���������ꍇ�� TRUE�A���O���쐬�܂��͍폜�ł��Ȃ��ꍇ�� FALSE�B1 �܂��͕����̈����������̏ꍇ�� #VALUE! ��Ԃ��܂��B
+操作が成功した場合は TRUE、名前を作成または削除できなかった場合は FALSE を返します。引数の 1 つ以上が無効であれば、#VALUE! を返します。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-**xlfRegister** �ƗL����  _pxFunctionText_ ������g�p���Ċ֐��܂��̓R�}���h��o�^����ꍇ�AExcel ��DLL ���\�[�X�Ɋ֘A�t����ꂽ����쐬���܂��BDLL ���A�����[�h�����ƁA���̂悤�Ȗ��O�� [xlfSetName �֐�](xlfsetname.md)��g�p���č폜����K�v������܂��B�������A���̑���� Excel �̊��m�̖�肪�����Ŏ��s���܂��B�ڍׂɂ��ẮA�u[Excel �A�h�C�� (XLL) �J���ɂ�������m�̖��](known-issues-in-excel-xll-development.md)�v��Q�Ƃ��Ă��������B
+有効な _pxFunctionText_ 引数を設定した **xlfRegister** を使用して関数またはコマンドが登録されると、Excel は DLL リソースに関連付けた名前を作成します。DLL がアンロードされる場合、これらの名前は [xlfSetName 関数](xlfsetname.md)を使用して削除されなければなりません。ただし、この削除操作は Excel の既知の問題が原因で失敗します。詳細については、「[Excel XLL 開発での既知の問題](known-issues-in-excel-xll-development.md)」を参照してください。
   
-### <a name="example"></a>��
+### <a name="example"></a>例
 
-**** �� `\SAMPLES\GENERIC\GENERIC.C` �֐��ɂ��ẮA�R�[�h��Q�Ƃ��Ă��������B
+`\SAMPLES\GENERIC\GENERIC.C` で、**xlAutoClose** 関数のコードを参照してください。
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
-- [�d�v�Ŗ�ɗ��� C API XLM �֐�](essential-and-useful-c-api-xlm-functions.md)
+- [重要で役に立つ C API XLM 関数](essential-and-useful-c-api-xlm-functions.md)
 

@@ -6,39 +6,39 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0de9d4e2-eb3f-40e7-aa24-f430892eb9ec
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 65d4257037b18c8fa68cabe0c08091ec67343fa5
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798765"
 ---
 # <a name="canceloutstandingrequests"></a>CancelOutstandingRequests
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-Excel Calculation ���������ꂽ���Ƃ�N���X�^�[ �R�l�N�^�ɒʒm���܂��B���̂��߁A���̃Z�b�V�����ɂ����ĕۗ����̊֐��̂��ׂĂ̌Ăяo������������\��������܂� (���� Excel �ł́A���ʂ𔺂��R�[���o�b�N�͕K�v����܂���)�B
+Excel Calculation が取り消されたことをクラスター コネクタに通知します。そのため、そのセッションにおいて保留中の関数のすべての呼び出しも取り消される可能性があります (その Excel では、結果を伴うコールバックは必要ありません)。
   
 ```cpp
 int CancelOutstandingRequests(int SessionId)
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-_セッション Id_
+_SessionID_
   
-> �������ꂽ�v�Z�Ŏg�p����Ă���Z�b�V������ ID �ł��B���̒l�́A[OpenSession](opensession.md) �ɂ���ĕԂ��ꂽ�l�ƈ�v���܂��B
+> 取り消された計算で使用されているセッションの ID。この値は、[OpenSession](opensession.md) によって返された値と一致します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
-**SessionId** �������������ꍇ�� _xlHpcRetSuccess_�A **SessionId** �������������Ȃ��ꍇ�� _xlHpcRetInvalidSessionId_�A���̑��̏�Q�̏ꍇ�� **xlHpcRetCallFailed** �ł��B 
+_SessionId_ 引数が有効な場合は **xlHpcRetSuccess** が返されます。_SessionId_ 引数が無効な場合は **xlHpcRetInvalidSessionId**、その他のエラーが発生した場合は **xlHpcRetCallFailed** が返されます。 
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-���̌Ăяo����Ɏ󂯎�錋�ʂ͂��ׂ� Excel �ɂ���Ĕj������邽�߁A�p�t�H�[�}���X����コ����ɂ́A�������ŃZ�b�V�����̂��ׂẴv���Z�X���~����K�v������܂��B
+この呼び出し後に受け取る結果はすべて Excel によって破棄されるため、パフォーマンスを向上させるには、実装側でセッションのすべてのプロセスを停止する必要があります。
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
-- [Excel �N���X�^�[ �R�l�N�^�֐�](excel-cluster-connector-functions.md)
+- [Excel クラスター コネクタ関数](excel-cluster-connector-functions.md)
 

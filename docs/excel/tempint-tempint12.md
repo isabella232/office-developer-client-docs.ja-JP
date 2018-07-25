@@ -11,38 +11,38 @@ keywords:
 - tempint12 function [excel 2007],TempInt function [Excel 2007]
 localization_priority: Normal
 ms.assetid: 86d690b8-caca-450d-93f7-69ca4cd1a6e0
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: eb1dd9be0c0b20e533d9cd8202f8878c43b997be
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798952"
 ---
 # <a name="tempinttempint12"></a>TempInt/TempInt12
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-������܂ވꎞ **XLOPER**/ **XLOPER12** ��쐬����t���[�����[�N ���C�u�����֐��B 
+整数を含む一時 **XLOPER**/ **XLOPER12** を作成するフレームワーク ライブラリ関数。 
   
 ```cs
 LPXLOPER TempInt(short int i);
 LPXLOPER12 TempInt12(int i);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _i_
   
-�Ώۂ̐����l�B **XLOPER** �����́A�����t�� 16 �r�b�g���� (short int) �ł���̂ɑ΂��A **XLOPER12** �����́A�����t�� 32 �r�b�g���� ([long] int) �ł��邱�Ƃɂ����ӂ��������B 
+対象の整数値。**XLOPER** 整数は、符号付き 16 ビット整数 (short int) であるのに対し、**XLOPER12** 整数は、符号付き 32 ビット整数 ([long] int) であることにご注意ください。 
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
-�n���ꂽ�l��܂� **xltypeInt** ������Ԃ��܂��B 
+渡された値を含む **xltypeInt** 整数を返します。 
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̗�ł́A **TempInt12** �֐���g�p���āA **xlfGetWorkspace** �Ɉ�����n���Ă��܂��B
+この例では、**TempInt12** 関数を使用して、**xlfGetWorkspace** に引数を渡しています。
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -56,9 +56,9 @@ short WINAPI TempIntExample(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[�t���[�����[�N ���C�u�����̊֐�](functions-in-the-framework-library.md)
+[フレームワーク ライブラリの関数](functions-in-the-framework-library.md)
 

@@ -10,43 +10,43 @@ keywords:
 - convertxlreftoxlref12 function [excel 2007]
 localization_priority: Normal
 ms.assetid: 94580044-9497-425f-a31e-53bb4d94dc30
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: f2830633482e5329d285907b610386b708c406a4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798777"
 ---
 # <a name="convertxlreftoxlref12"></a>ConvertXLRefToXLRef12
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-**XLREF** �� **XLREF12** �ɕϊ����悤�Ƃ��� Framework �֐��B
+**XLREF** を **XLREF12** に変換しようとする Framework 関数。
   
 ```cs
 BOOL ConvertXLRefToXLRef12(LPXLREF pxRef, LPXLREF12 pxRef12);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
- _pxRef_(**LPXLREF**)
+ _pxRef_ (**LPXLREF**)
   
-�\�[�X�̎Q�ƍ\���̂ւ̃|�C���^�[�B
+ソースの参照構造体へのポインター。
   
- _pxRef12_(**LPXLREF12**)
+ _pxRef12_ (**LPXLREF12**)
   
-�ϊ������l���z�u�����^�[�Q�b�g�̎Q�ƍ\���̂ւ̃|�C���^�[�B
+変換した値が配置されるターゲットの参照構造体へのポインター。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
- �ϊ������������ꍇ�� **TRUE**�B����ȊO�̏ꍇ�� **FALSE**�B 
+ 変換が成功した場合は **TRUE**。それ以外の場合は **FALSE**。 
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-�n���ꂽ **XLREF** ���L���ȏꍇ�́A���̑���͏�ɐ�������͂��ł��B���΂ɁA�������ꂽ�Q�Ƃ��ȑO�̃o�[�W�����ŃT�|�[�g����Ă��Ȃ� Excel 2007 ���[�N�V�[�g�̈ꕔ��Q�Ƃ��Ă���ꍇ�́A **ConvertXLRef12ToXLRef** ���s�� **XLREF12** ���� [XLREF](convertxlref12toxlref.md) �ւ̕ϊ��͎��s���܂��B
+渡された **XLREF** が有効な場合、この操作は常に成功します。それとは対照的に、[ConvertXLRef12ToXLRef](convertxlref12toxlref.md) で実行する **XLREF12** から **XLREF** への逆の変換では、指定された参照が、前のバージョンでサポートされていない Excel 2007 ワークシートの一部を参照している場合、変換操作は失敗します。
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
  `\SAMPLES\FRAMEWRK\FRAMEWRK.C`
   
@@ -72,5 +72,5 @@ BOOL ConvertXLRefToXLRef12(LPXLREF pxref, LPXLREF12 pxref12)
 
 
 
-[�t���[�����[�N ���C�u�����̊֐�](functions-in-the-framework-library.md)
+[フレームワーク ライブラリの関数](functions-in-the-framework-library.md)
 

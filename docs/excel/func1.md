@@ -10,41 +10,41 @@ keywords:
 - func1 function [excel 2007]
 localization_priority: Normal
 ms.assetid: 801b14ef-0be8-4b97-919d-a9d413705d1c
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 26439f1fb05aae2077844ce19935d9ff99e4f701
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798880"
 ---
 # <a name="func1"></a>Func1
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-���[�U�[��`�̃��[�N�V�[�g�֐��̗�ŁA�Ԃ����ÓI�ȕ�����l�ɂ��Đ�����܂��BGENERIC.xll ���ǂݍ��܂��ƁAGENERIC.xll �ɂ���Ă��̊֐����o�^����āA���[�N�V�[�g����Ăяo�����Ƃ��ł���悤�ɂȂ�܂��B
+ユーザー定義のワークシート関数の例で、返される静的な文字列値について説明します。GENERIC.xll が読み込まれると、GENERIC.xll によってこの関数が登録されて、ワークシートから呼び出すことができるようになります。
   
 ```cs
 LPXLOPER12 WINAPI Func1(LPXLOPER12 px);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
- _px_(**LPXLOPER**)
+ _px_ (**LPXLOPER**)
   
-���̈����͖�������AMicrosoft Excel ��g���K�[���Ċ֐���Ăяo�����߂����̖�ڂ�ʂ����܂��B
+この引数は無視され、Microsoft Excel をトリガーして関数を呼び出すためだけの役目を果たします。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
- **LPXLOPER12**:��ɕ����� "Func1"
+ **LPXLOPER12**: 常に文字列 "Func1"
   
-### <a name="example"></a>��
+### <a name="example"></a>例
 
-���̊֐��̃\�[�X �R�[�h�ɂ��ẮA `\SAMPLES\GENERIC\GENERIC.C` ��Q�Ƃ��Ă��������B 
+この関数のソース コードについては、`\SAMPLES\GENERIC\GENERIC.C` を参照してください。 
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[�ėp DLL �̊֐�](functions-in-the-generic-dll.md)
+[汎用 DLL の関数](functions-in-the-generic-dll.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 外部データ ソースのアクセス
+title: 外部データ ソースにアクセスする
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -10,12 +10,12 @@ ms.assetid: db7c2521-a1ad-4802-b398-79575d3d310a
 description: InfoPath フォーム テンプレートで作業しているときに、フォームのセカンダリ データ ソースにアクセスしてそこに含まれるデータを操作するコードを書くことができます。
 ms.openlocfilehash: e26708e0033bbfe4110ac522dd1e0a0dd037c31e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799116"
 ---
-# <a name="access-external-data-sources"></a>外部データ ソースのアクセス
+# <a name="access-external-data-sources"></a>外部データ ソースにアクセスする
 
 InfoPath フォーム テンプレートで作業しているときに、フォームのセカンダリ データ ソースにアクセスしてそこに含まれるデータを操作するコードを書くことができます。 
   
@@ -28,7 +28,7 @@ InfoPath オブジェクト モデルは、[DataSourceCollection](https://msdn.m
 InfoPath オブジェクト モデルは、フォームによって使用されるデータ接続に関する情報を格納したデータ接続クラスのセットも提供します。
   
 > [!NOTE]
-> [!メモ] Microsoft InfoPath 2003 では、データ接続のことをデータ アダプターと呼びます。 
+> Microsoft InfoPath 2003 では、データ接続のことをデータ アダプターと呼びます。 
   
 データ接続には 2 つの種類があります。クエリ接続は、データを取得するために使用されます。取得されたデータは、セカンダリ データ ソースに格納されます。送信用接続は、データベースや Web サービスなどにデータを送信するために使用されます。送信されるデータは、メインまたはセカンダリのデータ ソースからコピーされます。 
   
@@ -69,7 +69,7 @@ InfoPath オブジェクト モデルは、フォームによって使用され�
 |[WebServiceConnection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.WebServiceConnection.aspx) クラス  <br/> |XML Web サービスに接続します。  <br/> |
 |[FileQueryConnection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FileQueryConnection.aspx) クラス  <br/> |XML ファイルのクエリを実行します。  <br/> |
 |[FileSubmitConnection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FileSubmitConnection.aspx) クラス  <br/> |XML ファイルにデータを送信します。  <br/> |
-|[EmailSubmitConnection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.EmailSubmitConnection.aspx) クラス  <br/> |電子メールの添付ファイルとしてフォームを送信します。  <br/> |
+|[EmailSubmitConnection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.EmailSubmitConnection.aspx) クラス  <br/> |フォームを電子メールの添付ファイルとして送信します。  <br/> |
 |[BdcQueryConnection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.BdcQueryConnection.aspx) クラス  <br/> |SharePoint Foundation 2010 または SharePoint Server 2010 を実行しているサーバーで、外部リストのクエリを実行します。  <br/> |
 |[BdcSubmitConnection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.BdcSubmitConnection.aspx) クラス  <br/> |SharePoint Foundation 2010 または SharePoint Server 2010 を実行しているサーバー上の外部リストにデータを送信します。  <br/> |
    
@@ -99,7 +99,7 @@ MessageBox.Show("Data source data: " &amp; _
    myDataSource.CreateNavigator().InnerXml.ToString())
 ```
 
-セカンダリ データ ソースに格納されているデータを操作するには、 **DataSource** クラスの **CreateNavigator** メソッドを使用して、そのセカンダリ データが格納されているノードにある **XPathNavigator** オブジェクトへの参照を取得します。 この **XPathNavigator** クラスのプロパティやメソッドを使用して、データを操作できます。 詳細については、 [XPathNavigator と XPathNodeIterator クラスでの作業](how-to-work-with-the-xpathnavigator-and-xpathnodeiterator-classes.md)を参照してください。
+セカンダリ データ ソースに格納されているデータを操作するには、 **DataSource** クラスの **CreateNavigator** メソッドを使用して、そのセカンダリ データが格納されているノードにある **XPathNavigator** オブジェクトへの参照を取得します。 **XPathNavigator** クラスのプロパティまたはメソッドを使用して、データを操作できます。 詳細については、「[XPathNavigator クラスおよび XPathNodeIterator クラスを操作する方法](how-to-work-with-the-xpathnavigator-and-xpathnodeiterator-classes.md)」を参照してください。
   
 ## <a name="using-the-dataconnectioncollection-and-the-dataconnection-classes"></a>DataConnectionCollection クラスと DataConnection クラスを使用する
 

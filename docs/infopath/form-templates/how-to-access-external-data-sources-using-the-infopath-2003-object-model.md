@@ -1,21 +1,21 @@
 ---
-title: InfoPath 2003 オブジェクト モデルを使用して外部データ ソースのアクセス
+title: InfoPath 2003 オブジェクト モデルを使用して外部データ ソースにアクセスする
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- data sources [infopath 2007], accessing with infopath 2003 object model,InfoPath 2003-compatible form templates, accessing external data
+- データ ソース [infopath 2007],infopath 2003 オブジェクト モデルを使用してアクセスする,InfoPath 2003 互換のフォーム テンプレート,外部データにアクセスする
 localization_priority: Normal
 ms.assetid: 9fd9ca47-abf1-48dd-8668-dfee27161793
 description: InfoPath 2003 互換オブジェクト モデルを使用する InfoPath フォーム テンプレートの作業を行う際に、フォームのセカンダリ データ ソースにアクセスし、格納されているデータを操作するためのコードを書くことができます。
 ms.openlocfilehash: cf06cdc6a02eba855442cdab4c3c698ed3f4425f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799109"
 ---
-# <a name="access-external-data-sources-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用して外部データ ソースのアクセス
+# <a name="access-external-data-sources-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用して外部データ ソースにアクセスする
 
 InfoPath 2003 互換オブジェクト モデルを使用する InfoPath フォーム テンプレートの作業を行う際に、フォームのセカンダリ データ ソースにアクセスし、格納されているデータを操作するためのコードを書くことができます。
   
@@ -56,7 +56,7 @@ InfoPath オブジェクト モデルは、フォームによって使用され�
   
 |**名前**|**説明**|
 |:-----|:-----|
-|[ADOAdapterObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ADOAdapterObject.aspx) インターフェイス  <br/> |ADO/OLEDB データ ソースに接続します。Microsoft Access および Microsoft SQL Server に限定されます。  <br/> |
+|[ADOAdapterObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ADOAdapterObject.aspx) インターフェイス  <br/> |ADO/OLEDB データ ソースに接続します。Microsoft Access および Microsoft SQL Server に限定されます。  <br/> |
 |[SharepointListAdapterObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SharepointListAdapterObject.aspx) インターフェイス  <br/> |SharePoint リストまたはドキュメント ライブラリに接続します。  <br/> |
 |[WebServiceAdapterObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.WebServiceAdapterObject.aspx) インターフェイス  <br/> |XML Web サービスに接続します。  <br/> |
 |[XMLFileAdapterObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XMLFileAdapterObject.aspx) オブジェクト  <br/> |XML ファイルに接続します。  <br/> |

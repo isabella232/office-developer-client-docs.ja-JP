@@ -6,45 +6,45 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 159bc9bf-8dd5-4cd2-8384-474c74a3f112
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: e7ba37629ff2198339394448410ffd16477d4766
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798963"
 ---
 # <a name="xlasyncreturn"></a>xlAsyncReturn
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-�񓯊����[�U�[��`�֐� (UDF) �̌��ʂ�Ԃ����߂Ɏg�p���܂��B
+非同期ユーザー定義関数 (UDF) の結果を返すために使用します。
   
 ```cpp
 Excel12(xlAsyncReturn, LPXLOPER12 pxRes, 2, LPXLOPER12 pxAsyncHandle, LPXLOPER12 pxFunctionResult);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-_pxAsyncHandle_(**xltypeBigData**)
+_pxAsyncHandle_ (**xltypeBigData**)
   
-���ʂ�Ԃ���� UDF �̔񓯊��n���h���ł��B
+結果を返す先の UDF の非同期ハンドルです。
   
 _pxFunctionResult_
   
-UDF �̖߂�l�ł��B
+UDF の戻り値です。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-成功した場合は、 **TRUE** (**xltypeBool**) を返します。 失敗した場合は、 **FALSE**が返されます。
+成功した場合、**TRUE** (**xltypeBool**) を返します。 失敗した場合は、**FALSE** を返します。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-**xlAsyncReturn** �́A�Čv�Z���Ɍv�Z�ȊO�̃X���b�h�� Excel ���g�p�������B��̃R�[���o�b�N�ł��B�񓯊� UDF �̔񓯊��ȕ������A **xlAsyncReturn** �ȊO�̂����Ȃ�R�[���o�b�N����s���Ȃ��悤�ɂ���K�v������܂��BXLL �́A�߂�l��ێ����邽�߂ɁA���蓖�Ă�ꂽ��������������K�v������܂��B
+**xlAsyncReturn** は、再計算中に Excel が非計算スレッドに対して許可する唯一のコールバックです。非同期 UDF の非同期の部分では、**xlAsyncReturn** 以外のコールバックを実行できません。XLL は戻り値を保持するために、割り当てられたメモリを解放する必要があります。
   
-_PxAsyncHandle_および_pxFunctionResult_パラメーターには、1 つのコールバックでは、ハンドルと対応する値の配列を返すために使用すると、タイプ**xltypeMulti**のことができます。 単一のコールバックを使用して、1 つの値を返す非同期ハンドルが格納されている次元の配列を含む XLOPER12 構造体を指す、LPXLOPER12 を渡します。 これらのアレイは、excel の場合、対応する値を持つ非同期のハンドルを正しく一致するように同じ順序でなければなりません。 
+_pxAsyncHandle_ および _pxFunctionResult_ パラメーターを、シングル コールバックでハンドルの配列と対応する値を返すために使用する場合、これらのパラメーターを **xltypeMulti** 型にすることもできます。 シングル コールバックを使用するときは、非同期ハンドルと戻り値を含む 1 次元の配列からなる XLOPER12 構造を指す LPXLOPER12 を渡します。 これらの配列は、非同期ハンドルが対応する値と正しく一致するよう、Excel に対して同じ順序である必要があります。 
   
-���̗�́A **xlAsyncReturn** ��g�p���āA�o�b�`�Ăяo����쐬������@������Ă��܂��B
+次の例は、**xlAsyncReturn** を使用して、バッチ呼び出しを作成する方法を示しています。
   
 ```cpp
 int batchSize = 10;
@@ -73,7 +73,7 @@ int batchSize = 10;
 
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
-- [�񓯊��̃��[�U�[��`�֐�](asynchronous-user-defined-functions.md)
+- [非同期のユーザー定義関数](asynchronous-user-defined-functions.md)
 

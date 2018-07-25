@@ -1,21 +1,21 @@
 ---
-title: 実行時環境を決定する条件付きロジックを記述します。
+title: 実行時環境を決定する条件付きロジックを書く
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- running in infopath [infopath 2007],run-time environment [InfoPath 2007],running in browser [InfoPath 2007],InfoPath 2007, determining run-time environment
+- infopath での実行 [infopath 2007],実行時環境 [InfoPath 2007],ブラウザーでの実行 [InfoPath 2007],InfoPath 2007,実行時環境を決定する
 localization_priority: Normal
 ms.assetid: 1a43bbdc-666b-47ef-a5e3-cb477a4deb04
 description: Application クラスの Environment プロパティは、Environment オブジェクトへの参照を取得します。これを使用すると、どの実行時の環境 (InfoPath、Web ブラウザー、またはモバイル ブラウザー) を使ってフォームが開かれたかを判断することができます。
 ms.openlocfilehash: b854d6a3b65fcc37375480bef9f1909d84407b6c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799119"
 ---
-# <a name="write-conditional-logic-that-determines-the-run-time-environment"></a>実行時環境を決定する条件付きロジックを記述します。
+# <a name="write-conditional-logic-that-determines-the-run-time-environment"></a>実行時環境を決定する条件付きロジックを書く
 
 [Application](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Application.Environment.aspx) クラスの [Environment](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Application.aspx) プロパティは、 [Environment](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Environment.aspx) オブジェクトへの参照を取得します。これを使用すると、どの実行時の環境 (InfoPath、Web ブラウザー、またはモバイル ブラウザー) を使ってフォームが開かれたかを判断することができます。 
   
@@ -28,7 +28,7 @@ ms.locfileid: "19799119"
 次の例では、フォームがブラウザーまたはモバイル ブラウザーで開かれた場合は、field1 ([ **テキスト ボックス**] コントロールにバインドされている) の値が、フォームが開かれた実行時の環境を示す文字列に設定されます。フォームが InfoPath で開かれた場合は、 **System.Windows.Forms.MessageBox.Show** メソッド (このメソッドは、フォームがブラウザーで実行されているときは使用できません) を使用してメッセージ ボックスが表示されます。 
   
 > [!IMPORTANT]
-> [!重要] 以下のコード例のフォーム テンプレートを作成するときは、Backstage ビューの [ **新規作成**] タブで [ **空白**] テンプレートを選択します (または、[ **フォームのオプション**] ダイアログ ボックスの [ **互換性**] カテゴリにある、[ **フォームの種類**] ドロップダウン リストの [ **Web ブラウザー フォーム**] を選択します)。 **MessageBox** クラスをサポートするには、Visual Studio 2012 の [ **参照の追加**] ダイアログ ボックスの [ **.NET**] タブで、 **System.Windows.Forms** への参照を追加します。次に、フォーム コード モジュールの宣言セクションで、 **System.Windows.Forms** の **using** または **Imports** ディレクティブを追加します。 
+> 以下のコード例のフォーム テンプレートを作成するときは、Backstage ビューの [ **新規作成**] タブで [ **空白**] テンプレートを選択します (または、[ **フォームのオプション**] ダイアログ ボックスの [ **互換性**] カテゴリにある、[ **フォームの種類**] ドロップダウン リストの [ **Web ブラウザー フォーム**] を選択します)。 **MessageBox** クラスをサポートするには、Visual Studio 2012 の [ **参照の追加**] ダイアログ ボックスの [ **.NET**] タブで、 **System.Windows.Forms** への参照を追加します。次に、フォーム コード モジュールの宣言セクションで、 **System.Windows.Forms** の **using** または **Imports** ディレクティブを追加します。 
   
 ```cs
 if(this.Application.Environment.IsBrowser)

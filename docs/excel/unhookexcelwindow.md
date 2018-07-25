@@ -10,45 +10,45 @@ keywords:
 - unhookexcelwindow function
 localization_priority: Normal
 ms.assetid: 6508cb69-0c7c-4d8c-a466-dd79eb13e316
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 7b70bf4ed0ff45921df407605baa692c7621bca4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798959"
 ---
 # <a name="unhookexcelwindow"></a>UnhookExcelWindow
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-**HookExcelWindow** �ɂ���ĈȑO�ɃC���X�g�[�����ꂽ **ExcelCursorProc** ��폜���܂��B����́AMicrosoft Excel ���C�� **WndProc** �̑O�� **ExcelCursorProc** ���Ăяo�����Ƃ��Ɏ��s����܂��B
+以前に **HookExcelWindow** によってインストールされた **ExcelCursorProc** を削除します。この削除操作は、Microsoft Excel のメイン **WndProc** の前に **ExcelCursorProc** を呼び出すために行われている場合もあります。
   
 ```cs
 extern void FAR PASCAL UnhookExcelWindow(HANDLE hWndExcel);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
- _hWndExcel_(**処理**)
+ _hWndExcel_ (**HANDLE**)
   
-Excel �̃��C�� �E�B���h�E �n���h���B
+Excel のメイン ウィンドウ ハンドル。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-���̊֐��͒l��Ԃ��܂���B
+この関数は値を返しません。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-���̊֐��́A **SetWindowLong()** ��g�p���� Excel ����� **WndProc** �𕜌����A **HookExcelWindow()** �ɂ���ĕۑ����ꂽ�A�h���X�𕜌����܂��B
+この関数は、**SetWindowLong()** を使用して Excel 既定の **WndProc** を復元し、**HookExcelWindow()** によって保存されたアドレスを復元します。
   
-### <a name="example"></a>��
+### <a name="example"></a>例
 
-���̊֐��̃\�[�X �R�[�h�ɂ��ẮA `\SAMPLES\GENERIC\GENERIC.C` ��Q�Ƃ��Ă��������B 
+この関数のソース コードについては、`\SAMPLES\GENERIC\GENERIC.C` を参照してください。 
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[�ėp DLL �̊֐�](functions-in-the-generic-dll.md)
+[汎用 DLL の関数](functions-in-the-generic-dll.md)
 

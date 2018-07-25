@@ -1,21 +1,21 @@
 ---
-title: エラーを処理します。
+title: エラーを処理する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- errors [infopath 2007], handling,FormErrorCollection [InfoPath 2007],InfoPath 2007, error handling,FormError [InfoPath 2007],error handling [InfoPath 2007]
+- エラー [infopath 2007],処理,FormErrorCollection [InfoPath 2007],InfoPath 2007,エラー処理,FormError [InfoPath 2007],エラー処理 [InfoPath 2007]
 localization_priority: Normal
 ms.assetid: 132cb698-d9a5-4767-b3d1-5dd1343a1ff4
 description: カスタム アプリケーションを作成するときに、開発者はエラー処理を行わなければならないことがよくあります。エラー処理では、アプリケーションで発生したエラーをチェックしたり、カスタム エラーを作成して発生させたりするプログラミング コードを記述します。Microsoft.Office.InfoPath 名前空間によって提供される InfoPath オブジェクト モデルでは、FormError クラスを FormErrorCollection クラスと共に使用するエラー処理がサポートされています。
 ms.openlocfilehash: 3bfad103c31d0b5364d1c75acfbb2f590f7658bb
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799132"
 ---
-# <a name="handle-errors"></a>エラーを処理します。
+# <a name="handle-errors"></a>エラーを処理する
 
 カスタム アプリケーションを作成するときに、開発者はエラー処理を行わなければならないことがよくあります。エラー処理では、アプリケーションで発生したエラーをチェックしたり、カスタム エラーを作成して発生させたりするプログラミング コードを記述します。[Microsoft.Office.InfoPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) 名前空間によって提供される InfoPath オブジェクト モデルでは、 [FormError](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormError.aspx) クラスを [FormErrorCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.aspx) クラスと共に使用するエラー処理がサポートされています。 
   

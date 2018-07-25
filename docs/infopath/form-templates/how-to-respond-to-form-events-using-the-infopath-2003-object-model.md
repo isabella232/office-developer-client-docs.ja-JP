@@ -1,27 +1,27 @@
 ---
-title: フォーム、InfoPath 2003 オブジェクト モデルを使用してイベントに応答します。
+title: InfoPath 2003 オブジェクト モデルを使用してフォーム イベントに応答する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- form templates [infopath 2007], responding to events,InfoPath 2003-compatible form templates, responding to form events
+- フォーム テンプレート [infopath 2007],イベントに応答する,InfoPath 2003 互換のフォーム テンプレート,フォーム イベントに応答する
 localization_priority: Normal
 ms.assetid: 59e9c1ed-32a8-4bcd-bdfc-9aa568a34d2a
 description: ユーザーがフォームに入力する際に発生する各種イベントに応答するコードを書くことができます。InfoPath 内でイベントの作業を実行するには、InfoPath デザイン モードでイベント ハンドラーを作成します。
 ms.openlocfilehash: dff7b4f1657b7d1450d8b345521a747c0594462b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799122"
 ---
-# <a name="respond-to-form-events-using-the-infopath-2003-object-model"></a>フォーム、InfoPath 2003 オブジェクト モデルを使用してイベントに応答します。
+# <a name="respond-to-form-events-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してフォーム イベントに応答する
 
 ユーザーがフォームに入力する際に発生する各種イベントに応答するコードを書くことができます。InfoPath 内でイベントの作業を実行するには、InfoPath デザイン モードでイベント ハンドラーを作成します。
   
 InfoPath イベント ハンドラーは、InfoPath デザイン モードで作成してください。これは、InfoPath 2003 互換のオブジェクト モデルを使用する際、InfoPath が、イベント ハンドラーを識別およびシンクするために、フォームのコード ファイル (FormCode.cs または FormCode.vb) 内で、自動的に正しい宣言を追加し、属性 ([InfoPathEventHandlerAttribute](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.InfoPathEventHandlerAttribute.aspx) ) を適用するためです。イベント ハンドラーを作成した後は、フォームのコード ファイル内で宣言と属性を変更しないでください。 
   
-InfoPath のイベント ハンドラーを作成する方法の詳細については、[追加のイベント ハンドラーを使用して InfoPath 2003 オブジェクト モデル](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)を参照してください。
+InfoPath イベント ハンドラーの作成については、「[InfoPath 2003 オブジェクト モデルを使用してイベント ハンドラーを追加する方法](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)」を参照してください。
   
 ## <a name="overview-of-the-event-objects"></a>イベント オブジェクトの概要
 
@@ -29,7 +29,7 @@ InfoPath 2003 互換オブジェクト モデルには、[Microsoft.Office.Inter
   
 |**名前**|**イベント ハンドラー**|**説明**|
 |:-----|:-----|:-----|
-|[リーフ](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataDOMEvent.aspx) <br/> |[OnBeforeChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnBeforeChange.aspx) <br/> [OnValidate](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnValidate.aspx) , [OnAfterChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnAfterChange.aspx) <br/> |XML Document Object Model (DOM) の変更中に、フォームの基になる XML ドキュメントへの参照、リターン状態、およびその他の XML ノードに関する情報を含むプロパティを返します。エラーを発生させるメソッドも含みます。  <br/> |
+|[DataDOMEvent](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataDOMEvent.aspx) <br/> |[OnBeforeChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnBeforeChange.aspx) <br/> [OnValidate](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnValidate.aspx) , [OnAfterChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnAfterChange.aspx) <br/> |XML Document Object Model (DOM) の変更中に、フォームの基になる XML ドキュメントへの参照、リターン状態、およびその他の XML ノードに関する情報を含むプロパティを返します。エラーを発生させるメソッドも含みます。  <br/> |
 |[DocActionEvent](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DocActionEvent.aspx) <br/> |[OnClick](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._ButtonEventSink_Event.OnClick.aspx) <br/> |フォーム領域内でのボタン クリック中に、フォームの基になる XML ドキュメントへの参照、リターン状態、およびソース XML ノードを返します。  <br/> |
 |[DocContextChangeEvent](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DocContextChangeEvent.aspx) <br/> |[OnContextChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnContextChange.aspx) <br/> |フォームの基になる XML ドキュメントの現在のコンテキストである XML Document Object Model (DOM) ノードに関する情報を返します。  <br/> |
 |[DocEvent](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DocEvent.aspx) <br/> |[OnSwitchView](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSwitchView.aspx) , [OnAfterImport](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnAfterImport.aspx) <br/> |ビューの切り替えやフォームの結合操作中に、フォームの基になる XML ドキュメントへの参照を返します。  <br/> |
@@ -98,6 +98,6 @@ End Sub
 ```
 
 > [!NOTE]
-> [!メモ] InfoPath 2003 互換オブジェクト モデルのそれぞれの InfoPath イベント オブジェクトは、異なるプロパティとメソッドを実装します。特定のイベント オブジェクトに関する詳細については、前に示したイベント オブジェクトの表でそれぞれのオブジェクトをクリックして参照してください。 
+> InfoPath 2003 互換オブジェクト モデルのそれぞれの InfoPath イベント オブジェクトは、異なるプロパティとメソッドを実装します。特定のイベント オブジェクトに関する詳細については、前に示したイベント オブジェクトの表でそれぞれのオブジェクトをクリックして参照してください。 
   
 

@@ -6,39 +6,39 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 51acac58-ec39-488f-979c-1887dc2ab94b
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: dbf6f0f50e9f7fa988e83f3b58012e9deac13eac
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798945"
 ---
 # <a name="showoptions"></a>ShowOptions
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-ユーザーから情報を収集するモーダル ダイアログ ボックスを示しています。 このエントリ ポイントは、ユーザーが ([**数式**] セクションの [**詳細設定**] カテゴリ) は、[ **Excel のオプション**] ダイアログ ボックスで選択したクラスター コネクタの [**クラスターの種類**] ボックスの横の [**オプション**] ボタンをクリックしたときに呼び出されます。 クラスター コネクタは、独自のオプション] ダイアログのインターフェイスを実装して、レジストリや他の場所に関連するデータを格納するために必要があります。 オプションは、クラスター コネクタを内蔵。 Excel が認識ではありません。 
+ユーザーから情報を収集するためのモーダル ダイアログ ボックスを表示します。 このエントリ ポイントは、**[Excel のオプション]** ダイアログ ボックス (**[数式]** セクションの下にある **[詳細設定]** カテゴリ内) で、選択したクラスター コネクタの **[クラスターの種類]** ボックスの隣にある **[オプション]** ボタンをクリックすると呼び出されます。 クラスター コネクタで、独自のオプション ダイアログのインターフェイスを実装するとともに、レジストリまたは他の場所に関連データを格納する必要があります。 オプションは、クラスター コネクタ内部にあります。 Excel には認識されません。 
   
 ```cpp
 int ShowOptions(HWND hWndParent)
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
 _hWndParent_
   
-> Excel �E�C���h�E�ւ̃n���h���B
+> Excel ウインドウへのハンドル。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
-�_�C�A���O �{�b�N�X���\�����ꂽ�ꍇ�� **xlHpcRetSuccess**�A�\������Ȃ������ꍇ�� **xlHpcRetCallFailed**�B 
+ダイアログ ボックスが表示された場合は **xlHpcRetSuccess**、表示されなかった場合は **xlHpcRetCallFailed**。 
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-�N���X�^�[ �R�l�N�^�ł́A�g�p����N���X�^�[ �T�[�o�[�Ȃǂ̏�����[�U�[����擾���邽�߂ɁA���̃_�C�A���O �{�b�N�X��g�p�ł��܂��B
+クラスター コネクタでは、使用するクラスター サーバーなどの情報をユーザーから取得するために、このダイアログ ボックスを使用できます。
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
-- [Excel �N���X�^�[ �R�l�N�^�֐�](excel-cluster-connector-functions.md)
+- [Excel クラスター コネクタ関数](excel-cluster-connector-functions.md)
 

@@ -1,21 +1,21 @@
 ---
-title: InfoPath 2003 オブジェクト モデルを使用してフォーム ウィンドウを操作します。
+title: InfoPath 2003 オブジェクト モデルを使用してフォーム ウィンドウを操作する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- infopath 2003-compatible form templates, form windows,form windows [InfoPath 2007], InfoPath 2003-compatible form templates
+- infopath 2003 互換のフォーム テンプレート,フォーム ウィンドウ,フォーム ウィンドウ [InfoPath 2007], InfoPath 2003 互換のフォーム テンプレート
 localization_priority: Normal
 ms.assetid: fbcf3a04-ee0f-40a6-8edd-583ae203e2e1
 description: InfoPath フォームをプログラムから操作するときは、フォームのウィンドウにアクセスするコードを記述し、ウィンドウに含まれるアイテムの一部をカスタマイズすることができます。InfoPath 2003 互換のオブジェクト モデルでは、WindowsCollection インターフェイスと WindowObject インターフェイスを関連させて使用することにより、フォームのウィンドウにアクセスできます。
 ms.openlocfilehash: 4ca0fb53fd8502773d3e770814a5a24c40b2d79f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799139"
 ---
-# <a name="work-with-form-windows-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してフォーム ウィンドウを操作します。
+# <a name="work-with-form-windows-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してフォーム ウィンドウを操作する
 
 InfoPath フォームをプログラムから操作するときは、フォームのウィンドウにアクセスするコードを記述し、ウィンドウに含まれるアイテムの一部をカスタマイズすることができます。InfoPath 2003 互換のオブジェクト モデルでは、[WindowsCollection](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.WindowObject.aspx) インターフェイスと [WindowObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.WindowsCollection.aspx) インターフェイスを関連させて使用することにより、フォームのウィンドウにアクセスできます。 
   
@@ -34,11 +34,11 @@ InfoPath には、次の 2 種類のウィンドウがあります。
 |**名前**|**説明**|
 |:-----|:-----|
 |[Count](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Windows.Count.aspx) プロパティ  <br/> |コレクションに含まれている **Window** オブジェクトの数を返します。  <br/> |
-|[Item](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Windows.Item.aspx) プロパティ  <br/> |指定した **Window** オブジェクトへの参照を返します。  <br/> **注**: Visual C# インデクサーを使用して**Item**プロパティを呼び出すのではなくコレクションにアクセスします。 たとえば、 `thisApplication.Windows[0].Caption`。           |
+|[Item](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Windows.Item.aspx) プロパティ  <br/> |指定された **Window** オブジェクトの参照を返します。  <br/> **注**: Visual C# では、**Item** プロパティを呼び出す代わりに、インデクサーを使用してコレクションにアクセスします。 例: `thisApplication.Windows[0].Caption`。           |
    
 ## <a name="overview-of-the-window-object"></a>Window オブジェクトの概要
 
-**WindowObject**インターフェイスは、次のメソッドとプロパティは、フォームの開発者を使用して InfoPath ウィンドウとの対話を提供します。 これらのメソッドおよびプロパティのサポートは、ウィンドウ ([のみ可能](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XdWindowType.aspx)) を使用しているの種類によって異なります。 いくつかのメソッドおよびプロパティ エディター ウィンドウの種類 (**XdWindowType.xdEditorWindow**) でのみ動作します。 残りのメソッドとプロパティは、エディター ウィンドウの種類とデザイナーのウィンドウの種類 (**XdWindowType.xdDesignerWindow**) の両方で動作します。 さらに、すべての InfoPath オブジェクト モデル メンバーのように、フォーム テンプレートから呼び出されたときにメソッドおよびプロパティのサポートによって異なりますセキュリティ レベルと、フォームを展開する方法。
+**WindowObject** インターフェイスには、次のメソッドとプロパティがあります。フォームの開発者は、これらを使用して、InfoPath のウィンドウを操作できます。 これらのメソッドとプロパティのサポートは、操作対象のウィンドウの種類 ([XdWindowType](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XdWindowType.aspx)) によって異なります。 メソッドとプロパティの中には、ウィンドウの種類がエディター (**XdWindowType.xdEditorWindow**) でないと機能しないものがあります。 その他のメソッドとプロパティは、ウィンドウの種類がエディターでも、デザイナー (**XdWindowType.xdDesignerWindow**) でも機能します。 さらに、InfoPath オブジェクト モデルのすべてのメンバーと同様に、フォーム テンプレートから呼び出す際のメソッドとプロパティのサポートは、セキュリティ レベルおよびフォームのデプロイ方法によって異なります。
   
 |**名前**|**説明**|**ウィンドウの種類のサポート**|
 |:-----|:-----|:-----|
@@ -80,7 +80,7 @@ Dim objWindow As WindowObject = thisApplication.ActiveWindow
 ```
 
 > [!NOTE]
-> [!メモ] InfoPath マネージ コード プロジェクトをデバッグするときは、デバッグ ウィンドウがアクティブなので、 **ActiveWindow** プロパティは常に **null** を返します。 
+> InfoPath マネージ コード プロジェクトをデバッグするときは、デバッグ ウィンドウがアクティブなので、 **ActiveWindow** プロパティは常に **null** を返します。 
   
 **WindowObject** は、 [View](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.View.Window.aspx) インターフェイスの [Window](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.View.aspx) プロパティを使用してアクセスすることもできます。このインターフェイスは、フォームの基になる XML ドキュメントに関連付けられています。 **XDocument** インターフェイスの **View** プロパティは、 **View** オブジェクトにアクセスするために使用します。たとえば、次のコードは、フォームの基になる XML ドキュメントのビューに関連付けられている **WindowObject** への参照を設定します。 
   
@@ -93,6 +93,6 @@ Dim objWindow As WindowObject = thisXDocument.View.Window
 ```
 
 > [!NOTE]
-> [!メモ] **Window** オブジェクトの一部のプロパティとメソッドは、編集ウィンドウでのみ使用できます。デザイン ウィンドウで使用すると、エラーが発生します。各ウィンドウの種類でサポートされるプロパティとメソッドの一覧については、前に示した表を参照してください。コードで **WindowType** プロパティを使用すると、現在操作しているウィンドウの種類を確認できます。 
+> **Window** オブジェクトの一部のプロパティとメソッドは、編集ウィンドウでのみ使用できます。デザイン ウィンドウで使用すると、エラーが発生します。各ウィンドウの種類でサポートされるプロパティとメソッドの一覧については、前に示した表を参照してください。コードで **WindowType** プロパティを使用すると、現在操作しているウィンドウの種類を確認できます。 
   
 

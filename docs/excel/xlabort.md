@@ -10,49 +10,49 @@ keywords:
 - xlabort function [excel 2007]
 localization_priority: Normal
 ms.assetid: 0fe71454-6b00-464b-8abf-afb209d57754
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: e90cbe496404b4cc602dee1ad21c91c8f5f91bfd
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798965"
 ---
 # <a name="xlabort"></a>xlAbort
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-�V�X�e����̑��̃^�X�N�Ƀv���Z�b�T�𐶐����A���[�U�[�� **Esc** ������ă}�N��������������ǂ�����m�F���܂��B�u�b�N�̍Čv�Z���Ƀ��[�U�[�� **Esc** ���������ꍇ�́A���̊֐���Ăяo�����Ƃɂ���ă��[�N�V�[�g�֐���Ō��o���邱�Ƃ�ł��܂��B 
+システム内の他のタスクにプロセッサを生成し、ユーザーが **Esc** を押してマクロを取り消したかどうかを確認します。ブックの再計算中にユーザーが **Esc** が押した場合は、この関数を呼び出すことによってワークシート関数内で検出することもできます。 
   
 ```cs
 Excel12(xlAbort, LPXLOPER12 pxRes, 1, LPXLOPER12 pxRetain);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
- _pxRetain_(**xltypeBool**)
+ _pxRetain_ (**xltypeBool**)
   
-(省略可能)。 **FALSE**、この関数にすると、ブレーク条件をチェックし、保留されている改行をクリアします。 ブレーク条件があっても続行するのにはこれを使用できます。 場合はこの引数を省略するか**は**、関数は、それをオフにすることがなくユーザーの中断をチェックします。
+(省略可能)。 **FALSE** の場合、この関数は中断状態を確認し、保留中の中断をすべて解除します。 これにより、ユーザーは中断状態を無視して続行できます。 この引数が省略されているか、**TRUE** の場合、関数はユーザーによる中止を解除せずに確認します。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-ユーザーが**esc キー**を押した場合は**TRUE** (**xltypeBool**) を返します。
+ユーザーが **Esc** を押した場合は、**TRUE** (**xltypeBool**) が返されます。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
 ### 
 
-#### <a name="frequent-calls-may-be-needed"></a>�p�ɂȌĂяo�����K�v�ȏꍇ
+#### <a name="frequent-calls-may-be-needed"></a>頻繁な呼び出しが必要な場合
 
-���Ԃ̂�����֐���R�}���h�ł́A���̊֐���p�ɂɌĂяo���āA�v���Z�b�T��V�X�e����̑��̃^�X�N�ɐ�������K�v������܂��B
+時間のかかる関数やコマンドでは、この関数を頻繁に呼び出して、プロセッサをシステム内の他のタスクに生成する必要があります。
   
-#### <a name="avoid-sensitive-language"></a>�����ȕ\��������
+#### <a name="avoid-sensitive-language"></a>微妙な表現を避ける
 
-���[�U�[ �C���^�[�t�F�C�X�ł� "Abort" �Ƃ����p���g�p���Ȃ��悤�ɂ��܂��B����� "Cancel"�A"Halt"�A"Break"�A"Stop" �̎g�p��������Ă��������B
+ユーザー インターフェイスでは "Abort" という用語を使用しないようにします。代わりに "Cancel"、"Halt"、"Break"、"Stop" の使用を検討してください。
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̃R�[�h�́A1 �����o�߂���܂ŁA�܂��̓��[�U�[�� **Esc** ������܂ŁA�V�[�g��ŃA�N�e�B�u�ȃZ����J��Ԃ��ړ����܂��B�֐� **xlAbort** ��Ăяo�����Ƃ����܂��B����ɂ��v���Z�b�T����������A�����ł̃}���`�^�X�L���O���e�ՂɂȂ�܂��B 
+次のコードは、1 分が経過するまで、またはユーザーが **Esc** を押すまで、シート上でアクティブなセルを繰り返し移動し、**xlAbort** 関数を呼び出します。これによりプロセッサが生成され、共同でのマルチタスキングが容易になります。 
   
  `\SAMPLES\GENERIC\GENERIC.C`
   
@@ -117,9 +117,9 @@ int WINAPI fDance(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[DLL �܂��� XLL ����̂݌Ăяo���\�� C API �֐�](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+[DLL または XLL からのみ呼び出し可能な C API 関数](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 

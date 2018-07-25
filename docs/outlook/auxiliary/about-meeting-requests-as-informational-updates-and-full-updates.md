@@ -1,38 +1,38 @@
 ---
-title: 情報更新および完全な更新としての会議出席依頼について
+title: 情報更新または完全更新としての会議出席依頼について
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 084928ca-efc0-36da-fe4f-5cc45f226178
-description: 会議出席依頼は、IPM のあるメールです。メッセージ クラスと Schedule.Meeting.Request。 既定では、会議出席依頼を受信する出席者が、依頼に直接応答します。
+description: 会議出席依頼は、メッセージ クラスとして IPM.Schedule.Meeting.Request が設定された電子メールです。 既定では、会議出席依頼を受信した参加者は、その依頼に直接応答します。
 ms.openlocfilehash: 3565b2af03ef79d70fc9f2817c64a788f031c416
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799299"
 ---
-# <a name="about-meeting-requests-as-informational-updates-and-full-updates"></a>情報更新および完全な更新としての会議出席依頼について
+# <a name="about-meeting-requests-as-informational-updates-and-full-updates"></a>情報更新または完全更新としての会議出席依頼について
 
-会議出席依頼は、IPM の**を持つ電子メールです。Schedule.Meeting.Request**とメッセージ クラスです。 既定では、会議出席依頼を受信する出席者が、依頼に直接応答します。 Outlook では、プリンシパル受信者の代わりに会議出席依頼に応答できる代理人を設定できます。 Outlook はプログラムを使用して、 [PidLidMeetingType](http://msdn.microsoft.com/library/290b290c-7836-4a7e-bf1a-8d0225a07e56%28Office.15%29.aspx) という名前の会議出席依頼プロパティを設定して現在の更新状態を特定します。 
+会議出席依頼は、メッセージ クラスとして **IPM.Schedule.Meeting.Request** が設定された電子メールです。 既定では、会議出席依頼を受信した参加者は、その依頼に直接応答します。 Outlook では、プリンシパル受信者の代わりに会議出席依頼に応答できる代理人を設定できます。 Outlook は、現在の更新状態を識別するために、会議出席依頼の名前付きプロパティ [PidLidMeetingType](http://msdn.microsoft.com/library/290b290c-7836-4a7e-bf1a-8d0225a07e56%28Office.15%29.aspx) をプログラムによって設定します。 
   
-## <a name="recipients-without-delegates"></a>デリゲートなしの受信者
+## <a name="recipients-without-delegates"></a>代理人のいない受信者
 
 Outlook が新たな会議出席依頼を受信すると、その会議出席依頼項目の **PidLidMeetingType** プロパティを **mtgRequest** に設定します。この会議のその後の更新は、更新の原因と、Outlook に設定されている **PidLidMeetingType** に応じて、 **mtgFullUpdate** (完全な更新) または **mtgInfoUpdate** (情報更新) になります。完全な更新の場合、出席者は会議出席依頼に明示的に応答する必要があり、情報更新の場合にはその必要はありません。 
   
-## <a name="full-updates"></a>フル更新
+## <a name="full-updates"></a>完全更新
 
-完全な更新が生じるのは次の 2 つのシナリオの場合です。
+完全更新の結果になるシナリオは、2 つあります。
   
 - 開催者が以前の会議出席依頼の日付、時刻、時間帯、パターンを変更する場合、開催者はすべての出席者に更新を送信しなければなりません。この更新は完全な更新で、出席者は明示的に応答し、出席の可否を開催者に通知する必要があります。Outlook は以前の応答をすべて無視するからです。
     
 - 出席者が最初の会議出席依頼に応答せず、その後に更新を受け取る場合、最初の会議出席依頼は期限切れになり、更新の原因に関係なくその更新は完全な更新となります。
     
-## <a name="informational-updates"></a>情報の更新
+## <a name="informational-updates"></a>情報更新
 
-Outlook が情報更新を生成するシナリオは 4 つあります。それらのシナリオでは、情報更新に応答するかどうかは任意です。
+Outlook が情報更新を生成するシナリオは 4 つあります。これらのシナリオでは、情報更新への応答はオプションとなります。
   
 - 開催者が以前の会議出席依頼の場所を変更する場合、開催者はすべての出席者に更新を送信しなければなりません。出席者が既に最初の会議出席依頼を承諾している場合、出席者は更新を情報更新として受け取ります。
     
@@ -42,7 +42,7 @@ Outlook が情報更新を生成するシナリオは 4 つあります。それ
     
 - 開催者が以前の会議出席依頼の件名または本文を変更する場合、開催者は出席者に更新を送信することもできますし、その変更内容を開催者自身の会議出席依頼のコピーに保存のみ行うこともできます。開催者が更新を送信することにする場合、出席者は更新を情報更新として受け取ります。
     
-## <a name="recipients-set-up-with-delegates"></a>受信者が代理人を設定します。
+## <a name="recipients-set-up-with-delegates"></a>代理人が設定された受信者
 
 代理人を設定するよう選択した受信者は、[非公開] というマークが付いていない会議出席依頼に対して代理人に応答させることができます。既定では、プリンシパルが受信するのは会議出席依頼のコピーまたは以前の会議出席依頼に対する更新のコピーのみで、代理人は必ずオリジナルの会議出席依頼、またはオリジナルの完全な更新/情報更新を受け取ります。この既定の構成の場合、プリンシパルは委任した会議出席依頼と更新を必ず受信し、プリンシパルの代理人は「代理人のいない受信者」のセクションで代理人が設定されていない受信者に関する説明のとおりに、要求を新しい会議出席依頼、完全な更新、または情報更新として受け取ります。
   

@@ -10,43 +10,43 @@ keywords:
 - fdance function [excel 2007]
 localization_priority: Normal
 ms.assetid: 8c2f2d83-b7aa-456e-b473-a54897bc35ae
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: b7a2fbdf723d06dcf9b02789178d7d12d0515884
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798883"
 ---
 # <a name="fdance"></a>fDance
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-���[�U�[�� ** [ESC] ** ������܂ŁA��ƒ��̃��[�N�V�[�g�̑I��Z����ύX���郆�[�U�[��**** ���j���[ [Generic] ��쐬���܂��B
+ユーザーが** [Esc]** を押すまで、作業中のワークシートの選択セルを変更するサンプル ユーザー定義コマンド。GENERIC.xll が読み込まれると、このコマンドにアクセスするためのユーザー定義メニュー [Generic] を作成します。
   
 ```cs
 int WINAPI fDance(void);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-���̊֐��ɂ̓p�����[�^�[�͂���܂���B
+この関数にはパラメーターはありません。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-���̊֐��́A��� 1 ��Ԃ��܂��B
+この関数は、常に 1 を返します。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-����͎��Ԃ̂����鑀��̈��ł��B�֐� [xlAbort](xlabort.md) ��Ăяo�����Ƃ����܂��B����� (�����I�}���`�^�X�L���O��x������) �v���Z�b�T�𐶐����A���[�U�[�� **[Esc]** ������đ��������������ǂ�����m�F���܂��B�{�^���������ꂽ�ꍇ�́A���[�U�[�����~�����L�����Z���ł���悤�ɂ��܂��B 
+これは、時間のかかる操作の例です。関数 [xlAbort](xlabort.md) を呼び出すこともあります。これは (協調的マルチタスキングを支援する) プロセッサを生成し、ユーザーが **[Esc]** を押して操作を取り消したかどうかを確認します。ボタンが押された場合は、ユーザーが中止操作をキャンセルできるようにします。 
   
-### <a name="example"></a>��
+### <a name="example"></a>例
 
-���̊֐��̃\�[�X �R�[�h�ɂ��ẮA `\SAMPLES\GENERIC\GENERIC.C` ��Q�Ƃ��Ă��������B 
+この関数のソース コードについては、`\SAMPLES\GENERIC\GENERIC.C` を参照してください。 
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[�ėp DLL �̊֐�](functions-in-the-generic-dll.md)
+[汎用 DLL の関数](functions-in-the-generic-dll.md)
 

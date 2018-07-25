@@ -1,21 +1,21 @@
 ---
-title: InfoPath の XML テクノロジのサポートについて
+title: XML テクノロジのための InfoPath サポートについて
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 074181a2-3a75-824c-049d-549aabff0f9f
-description: Microsoft InfoPath は、編集機能は、ワード プロセッサや電子メール アプリケーション、フォーム パッケージの厳密なデータ キャプチャ機能を持つなど、従来のドキュメントのベストを結合したハイブリッド ツールです。 この記事では、InfoPath を使用して取り組むべき問題について説明し、問題の解決に使用される設計方針および XML の業界標準について説明します。
+description: Microsoft InfoPath は、ワープロや電子メールのアプリケーションなどの従来のドキュメント編集環境の最高のものと、フォーム パッケージの厳密なデータ取り込み機能とを組み合わせたハイブリッドなツールです。 この記事では、InfoPath を使用して取り組むべき問題について説明し、問題の解決に使用される設計方針および XML の業界標準について説明します。
 ms.openlocfilehash: 5d7b0bd0de045bdb9ada6946b7142993cd80df0c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799108"
 ---
-# <a name="about-infopath-support-for-xml-technologies"></a>InfoPath の XML テクノロジのサポートについて
+# <a name="about-infopath-support-for-xml-technologies"></a>XML テクノロジのための InfoPath サポートについて
 
-Microsoft InfoPath は、編集機能は、ワード プロセッサや電子メール アプリケーション、フォーム パッケージの厳密なデータ キャプチャ機能を持つなど、従来のドキュメントのベストを結合したハイブリッド ツールです。 この記事では、InfoPath を使用して取り組むべき問題について説明し、問題の解決に使用される設計方針および XML の業界標準について説明します。
+Microsoft InfoPath は、ワープロや電子メールのアプリケーションなどの従来のドキュメント編集環境の最高のものと、フォーム パッケージの厳密なデータ取り込み機能とを組み合わせたハイブリッドなツールです。 この記事では、InfoPath を使用して取り組むべき問題について説明し、問題の解決に使用される設計方針および XML の業界標準について説明します。
   
 ## <a name="introduction"></a>概要
 
@@ -157,14 +157,14 @@ InfoPath は、次のような XML 標準を基にして構築されています
   
 InfoPath は、データがコンピューター間で完全な XML ドキュメントとして送信される、Web サービスのゆるやかな結合モデルに適しています。この粒度の粗い通信モデルは、Web の非同期な性質に適しています。InfoPath は、XML ドキュメント用のハイレベルなオーサリング ツールとして、リモート プロシージャ コール (RPC) の SOAP エンコードではなく、ドキュメント/リテラル形式の SOAP エンコードをサポートしています。InfoPath は、SOAP メッセージ内で指定された XML スキーマをネイティブで読み取って、ユーザーが XML ドキュメント (対応する Web サービスで生成されるか、または受信される) の表示と編集を簡単にできる UI をスキーマに基づいて作成できるので、Web サービスの理想的なクライアントです。InfoPath は、変更の追跡を含む ADO.NET データセットのサポートも提供します。
   
-## <a name="terminology"></a>用語
+## <a name="terminology"></a>用語集
 
 |||
 |:-----|:-----|
 |**フィールド グループ:** <br/> |セクション、繰り返しセクション、オプションのセクション、または繰り返しテーブル。セクションおよび繰り返しテーブルは、他のコントロールを含み、必要に応じて繰り返されるフォーム上のコントロールです。ユーザーは、フォームに記入する際に、複数のセクションや行を挿入できます。  <br/> |
 |**DOM ツリー:** <br/> |フォームのデータ ソースの構造。特に、InfoPath フォームのためのデータの定義と格納を行うフィールドおよびグループの集まり。  <br/> |
    
-## <a name="conclusion"></a>まとめ
+## <a name="conclusion"></a>終わりに
 
 InfoPath では、Open XML 標準を使用して、ユーザーが、データ収集のための、柔軟性がある一方で構造化された XML 編集をできるようにします。階層構造の XML データを視覚的に表示させて編集するための、簡単なユーザー インターフェイスを提供するために、UI コントロールを含む入れ子構造のフィールド グループが DOM ツリーにマッピングされます。XSLT 変換によって、XML データの構造とは異なる形で、UI ビューのコンテンツを構成できます。
   

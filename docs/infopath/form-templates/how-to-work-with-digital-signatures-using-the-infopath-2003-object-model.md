@@ -1,23 +1,23 @@
 ---
-title: InfoPath 2003 オブジェクト モデルを使用して、デジタル署名を使用します。
+title: InfoPath 2003 オブジェクト モデルを使用してデジタル署名を操作する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- digital signatures [infopath 2007], infopath 2003-compatible form templates,InfoPath 2003-compatible form templates, digital signatures
+- デジタル署名 [infopath 2007],infopath 2003 互換のフォーム テンプレート,InfoPath 2003 互換のフォーム テンプレート,デジタル署名
 localization_priority: Normal
 ms.assetid: d6318238-fd45-4854-a3c9-c27c5685bd6b
-description: InfoPath 2003 互換オブジェクト モデルは、デジタル署名をプログラムで操作する機能を提供します。
+description: InfoPath 2003 互換のオブジェクト モデルには、プログラムによってデジタル署名を操作する機能が用意されています。
 ms.openlocfilehash: ae9934e36766b7e783d1404a12a49e9b0b08543a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799134"
 ---
-# <a name="work-with-digital-signatures-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用して、デジタル署名を使用します。
+# <a name="work-with-digital-signatures-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してデジタル署名を操作する
 
-InfoPath 2003 互換オブジェクト モデルは、デジタル署名をプログラムで操作する機能を提供します。
+InfoPath 2003 互換のオブジェクト モデルには、プログラムによってデジタル署名を操作する機能が用意されています。
   
 ## <a name="digital-signature-features"></a>デジタル署名の機能
 

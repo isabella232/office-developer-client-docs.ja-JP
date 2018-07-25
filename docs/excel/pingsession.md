@@ -6,36 +6,36 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4646659b-f932-4d11-a46f-4231bb397243
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 165be9eada54b2030471fc10e7a0bf0c7dcc7c8e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798951"
 ---
 # <a name="pingsession"></a>PingSession
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-�Z�b�V�������L�����ǂ�����`�F�b�N���܂��B���̊֐��͒ʏ�A�ȑO�Ԃ��ꂽ�Z�b�V���� ID �����݂�A�N�e�B�u�Ŏg�p�\���ǂ����� Excel �Ŕ��f����K�v������ꍇ�ɌĂяo����܂��B
+セッションが有効かどうかをチェックします。この関数は通常、以前返されたセッション ID が現在もアクティブで使用可能かどうかを Excel で判断する必要がある場合に呼び出されます。
   
 ```cpp
 int PingSession(int SessionId)
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-_セッション Id_
+_SessionID_
   
-> ping ����s����Z�b�V������ ID �B���̒l�́A�O�� [OpenSession](opensession.md) ��Ăяo�����ۂɕԂ��ꂽ ID �ƈ�v����K�v������܂� �B
+> ping を実行するセッションの ID。この値は、前回 [OpenSession](opensession.md) を呼び出した際に返された ID と一致する必要があります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
-**SessionId** �������L���̏ꍇ�� _xlHpcRetSuccess_�A����ȊO�̏ꍇ�� **xlHpcRetInvalidSessionId**�B
+_SessionId_ 引数が有効な場合は **xlHpcRetSuccess** を返します。それ以外の場合は **xlHpcRetInvalidSessionId** を返します。
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 - [OpenSession](opensession.md)
-- [Excel �N���X�^�[ �R�l�N�^�֐�](excel-cluster-connector-functions.md)
+- [Excel クラスター コネクタ関数](excel-cluster-connector-functions.md)
 

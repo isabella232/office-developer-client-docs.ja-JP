@@ -1,21 +1,21 @@
 ---
-title: 追加し、カスタム アセンブリを参照
+title: カスタム アセンブリを追加および参照する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- infopath 2003-compatible form templates, using custom assemblies,assemblies [InfoPath 2007], adding custom using InfoPath 2003 object model
+- infopath 2003 互換のフォーム テンプレート,カスタム アセンブリを使用する,アセンブリ [InfoPath 2007],InfoPath 2003 オブジェクト モデルを使用してカスタムを追加する
 localization_priority: Normal
 ms.assetid: 20e1f43e-8279-48fc-8f34-16a2729dbc9b
 description: マネージ コードのフォーム テンプレート プロジェクトでカスタム アセンブリへの参照を追加すると、プロジェクトをコンパイルおよび発行したときに、そのアセンブリがフォーム テンプレート ファイル (.xsn) に含められます。
 ms.openlocfilehash: e182930ebe14b6f64d1b90509fe400cc1fb1b26e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799107"
 ---
-# <a name="add-and-reference-custom-assemblies"></a>追加し、カスタム アセンブリを参照
+# <a name="add-and-reference-custom-assemblies"></a>カスタム アセンブリを追加および参照する
 
 マネージ コードのフォーム テンプレート プロジェクトでカスタム アセンブリへの参照を追加すると、プロジェクトをコンパイルおよび発行したときに、そのアセンブリがフォーム テンプレート ファイル (.xsn) に含められます。
   
@@ -29,7 +29,7 @@ InfoPath プロジェクト システムがフォーム テンプレート フ�
 
 1. Visual Studio 2012 でフォーム テンプレート プロジェクトを開きます。
     
-2. [ **プロジェクト**] メニューの [ **参照の追加**] をクリックします。
+2. [ **プロジェクト**] メニューで、[ **参照の追加**] をクリックします。
     
 3. [ **参照**] タブで、アセンブリを探して選択し、[ **OK**] をクリックして参照を追加します。 
     
@@ -37,5 +37,5 @@ InfoPath プロジェクト システムがフォーム テンプレート フ�
 
 #### <a name="tasks"></a>タスク
 
-[InfoPath 2003 オブジェクト モデルを使用してフォーム テンプレートを作成します。](how-to-create-a-form-template-using-the-infopath-2003-object-model.md)
+[InfoPath 2003 オブジェクト モデルを使用してフォーム テンプレートを作成する](how-to-create-a-form-template-using-the-infopath-2003-object-model.md)
 

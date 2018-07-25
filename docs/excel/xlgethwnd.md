@@ -10,45 +10,45 @@ keywords:
 - xlgethwnd function [excel 2007]
 localization_priority: Normal
 ms.assetid: be33b097-812b-4f5c-81be-4d9673e95b0b
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: a22365d6c945aaa5995e2c519c757a1a7515655a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798995"
 ---
 # <a name="xlgethwnd"></a>xlGetHwnd
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-Microsoft Excel �E�B���h�E�̍ŏ�ʂ̃E�B���h�E �n���h����Ԃ��܂��B
+Microsoft Excel ウィンドウの最上位のウィンドウ ハンドルを返します。
   
 ```cs
 Excel4(xlGetHwnd, LPXLOPER pxRes, 0); /* returns low part only */
 Excel12(xlGetHwnd, LPXLOPER12 pxRes, 0); /* returns full handle */
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-���̊֐��ɂ͈����͂���܂���B
+この関数には引数はありません。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-[ **Val.w** ] フィールドには、ウィンドウ ハンドル (**xltypeInt**) が含まれています。 
+**val.w** フィールドにウィンドウ ハンドル (**xltypeInt**) が格納されます。 
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-���̊֐��́AWindows API �̃R�[�h��L�q���邽�߂ɖ𗧂��܂��B
+この関数は、Windows API のコードを記述するために役立ちます。
   
-[Excel4](excel4-excel12.md) �܂��� [Excel4v](excel4v-excel12v.md) ��g�p���āA���̊֐���Ăяo���ƁA�Ԃ���� XLOPER �����ϐ��́A16 �r�b�g�����t�� short int �ɂȂ�܂��B���̏ꍇ�ɓ���邱�Ƃ��ł���̂́A32 �r�b�g Windows �n���h���̉��� 16 �r�b�g�݂̂ł��B��ʕ������������ɂ́A���ׂĂ̊J�����E�B���h�E��ʂ��ăR�[�h��J��Ԃ��K�p���āA���ʕ����Ƃ̈�v���������K�v������܂��BExcel 2007 �ȍ~�A **XLOPER12** �̐����ϐ��� 32 �r�b�g int �ɂȂ������߁A�n���h���S�̂�܂߂邱�Ƃ��ł��A���ׂĂ̊J���Ă���E�B���h�E�𔽕���������K�v���Ȃ�Ȃ�܂����B 
+[Excel4](excel4-excel12.md) または [Excel4v](excel4v-excel12v.md) を使用して、この関数を呼び出すと、返される XLOPER 整数変数は、16 ビット符号付き short int になります。この場合に格納できるのは、32 ビット Windows ハンドルの下位 16 ビットのみです。上位の部分を確認するには、コードですべてのオープン ウィンドウを反復処理し、上位の部分との一致を見つける必要があります。Excel 2007 以降では、**XLOPER12** の整数変数は 32 ビットの符号付き整数になり、すべてのオープン ウィンドウを反復処理する必要がなくなっています。 
   
-### <a name="example"></a>��
+### <a name="example"></a>例
 
-[](fshowdialog.md) �� `SAMPLES\GENERIC\GENERIC.C` �ɂ��ẮA�R�[�h��Q�Ƃ��Ă��������B
+`SAMPLES\GENERIC\GENERIC.C` で、[fShowDialog 関数](fshowdialog.md) のコードを参照してください。
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 - [xlGetInst](xlgetinst.md)
-- [DLL �܂��� XLL ����̂݌Ăяo���\�� C API �֐�](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+- [DLL または XLL からのみ呼び出し可能な C API 関数](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 

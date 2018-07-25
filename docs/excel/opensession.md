@@ -6,35 +6,35 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6cfd3513-800f-4602-b3e6-6430920718d6
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 782843f11643e203488b313181d224443a1d36c5
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798938"
 ---
 # <a name="opensession"></a>OpenSession
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-���[�U�[��`�֐�����s�ł���Z�b�V������쐬���܂��B
+ユーザー定義関数を実行できるセッションを作成します。
   
 ```cpp
 int OpenSession(WCHAR *Params)
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
 _Params_
   
-> �Z�b�V�����̃p�����[�^�[�́A�Z�~�R�����ŋ�؂�ꂽ UNICODE ������ւ̃|�C���^�[�BExcel �ł́A���̈����͎g�p���܂���B
+> セッションのパラメーターの、セミコロンで区切られた UNICODE 文字列へのポインター。Excel では、この引数は使用しません。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
-�Z�b�V����������ɍ쐬���ꂽ�ꍇ�́A���̃N���X�^�[ �R�l�N�^�ɑ΂��鑼�̌Ăяo���Ŏg�p����Z�b�V���� ID�B����ȊO�̏ꍇ�� **xlHpcRetCallFailed**�B
+セッションが正常に作成された場合は、このクラスター コネクタに対する他の呼び出しで使用するセッション ID。それ以外の場合は **xlHpcRetCallFailed**。
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
-- [Excel �N���X�^�[ �R�l�N�^�֐�](excel-cluster-connector-functions.md)
+- [Excel クラスター コネクタ関数](excel-cluster-connector-functions.md)
 

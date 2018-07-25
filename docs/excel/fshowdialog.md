@@ -10,17 +10,17 @@ keywords:
 - fshowdialog function [excel 2007]
 localization_priority: Normal
 ms.assetid: 6cc01075-7221-488e-870f-433da62930e6
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: ae6d8b2f0b95641678947e9bd75daa2237b080b1
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798889"
 ---
 # <a name="fshowdialog"></a>fShowDialog
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
 ネイティブ Windows ダイアログ ボックスの例を読み込んで表示するユーザー定義コマンドの例です。GENERIC.xll が読み込まれるとき、このコマンドにアクセスするユーザー定義メニュー [Generic] を作成します。
   
@@ -28,33 +28,33 @@ ms.locfileid: "19798889"
 int WINAPI fShowDialog(void);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-���̊֐��ɂ̓p�����[�^�[�͂���܂���B
+この関数にはパラメーターはありません。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-���̊֐��́A����Ɋ����������Ƃ���������l 0 ��Ԃ��܂��B
+この関数は、正常に完了したことを示す整数値 0 を返します。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-�l�C�e�B�u Windows �_�C�A���O �{�b�N�X��\������菇�͎��̂Ƃ���ł��B
+ネイティブ Windows ダイアログ ボックスを表示する手順は次のとおりです。
   
-1. **GetHwnd** ��g�p���āAMicrosoft Excel ���C�� �E�B���h�E �n���h����擾���܂��B
+1. **GetHwnd** を使用して、Microsoft Excel メイン ウィンドウ ハンドルを取得します。
     
-2. **HookExcelWindow** ��g�p���� Excel ���C�� �E�B���h�E��t�b�N���܂��B
+2. **HookExcelWindow** を使用して Excel メイン ウィンドウをフックします。
     
-3. **DialogBox** �ɂ���ă_�C�A���O �{�b�N�X��\�����܂��B
+3. **DialogBox** を使用してダイアログ ボックスを表示します。
     
-4. **UnhookExcelWindow** ��g�p���� Excel ���C�� �E�B���h�E�̃t�b�N�������܂��B
+4. **UnhookExcelWindow** を使用して Excel メイン ウィンドウのフックを解除します。
     
-### <a name="example"></a>��
+### <a name="example"></a>例
 
-���̊֐��̃\�[�X �R�[�h�ɂ��ẮA `\SAMPLES\GENERIC\GENERIC.C` ��Q�Ƃ��Ă��������B 
+この関数のソース コードについては、`\SAMPLES\GENERIC\GENERIC.C` を参照してください。 
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[�ėp DLL �̊֐�](functions-in-the-generic-dll.md)
+[汎用 DLL の関数](functions-in-the-generic-dll.md)
 

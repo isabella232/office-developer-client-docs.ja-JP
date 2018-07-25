@@ -1,21 +1,21 @@
 ---
-title: ビューに関する作業します。
+title: ビューを操作する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- view class [infopath 2007],InfoPath 2007, working with views,views [InfoPath 2007]
+- ビュー クラス [infopath 2007],InfoPath 2007,ビューを操作する,ビュー [InfoPath 2007]
 localization_priority: Normal
 ms.assetid: 947b33c3-2acc-45d2-a89d-a712b6bc53df
 description: InfoPath フォーム テンプレートで作業する場合、フォームのビューにアクセスし、ビューに含まれるデータにさまざまな操作を行うコードを書くことができます。Microsoft.Office.InfoPath 名前空間によって提供される InfoPath オブジェクト モデルでは、View クラスのメンバーを使用して、フォームのビューにアクセスできます。
 ms.openlocfilehash: 84c32244454e388e50433922c007d556fbef806a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799145"
 ---
-# <a name="work-with-views"></a>ビューに関する作業します。
+# <a name="work-with-views"></a>ビューを操作する
 
 InfoPath フォーム テンプレートで作業する場合、フォームのビューにアクセスし、ビューに含まれるデータにさまざまな操作を行うコードを書くことができます。[Microsoft.Office.InfoPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) 名前空間によって提供される InfoPath オブジェクト モデルでは、 [View](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) クラスのメンバーを使用して、フォームのビューにアクセスできます。 
   
@@ -24,7 +24,7 @@ InfoPath フォーム テンプレートで作業する場合、フォームの�
 [View](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) クラスには、次のメソッドとプロパティがあります。フォームの開発者は、これらを使用することにより、InfoPath ビューを操作できます。 
   
 > [!NOTE]
-> [!メモ] [View](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) クラスのメソッドとプロパティは [Loading](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Loading.aspx) イベント中には利用できません。 
+> [View](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) クラスのメソッドとプロパティは [Loading](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Loading.aspx) イベント中には利用できません。 
   
 |**名前**|**説明**|
 |:-----|:-----|
@@ -42,12 +42,12 @@ InfoPath フォーム テンプレートで作業する場合、フォームの�
 |[SelectNodes(XPathNavigator, XPathNavigator, String)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx) メソッド  <br/> |指定した開始 XML ノード、終了 XML ノード、および指定されたコントロールに基づいて、ビュー内の一定範囲のノードを選択します。  <br/> |
 |[SelectText(XPathNavigator)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) メソッド  <br/> |このメソッドに渡された **XPathNavigator** オブジェクトで指定されるノードにバインドされた編集可能なコントロールに格納されているテキストを選択します。  <br/> |
 |[SelectText(XPathNavigator, String)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) メソッド  <br/> |このメソッドに渡された **XPathNavigator** オブジェクトで指定されるノードにバインドされた編集可能なコントロールに格納されているテキスト、および指定されたコントロールを選択します。  <br/> |
-|[ShowMailItem](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.ShowMailItem.aspx) メソッド  <br/> |現在のビューを含む電子メール メッセージを作成します。  <br/> |
+|[ShowMailItem](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.ShowMailItem.aspx) メソッド  <br/> |現在のビューが含まれる電子メール メッセージを作成します。  <br/> |
 |[ViewInfo](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.ViewInfo.aspx) プロパティ  <br/> |ビューに関連付けられている [ViewInfo](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfo.aspx) オブジェクトへの参照を取得します。  <br/> |
 |[Window](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.Window.aspx) プロパティ  <br/> |ビューに関連付けられている [Window](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx) オブジェクトへの参照を取得します。  <br/> |
    
 > [!NOTE]
-> [!メモ] InfoPath オブジェクト モデルには、[ViewInfoCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfoCollection.aspx) クラスと [ViewInfo](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfo.aspx) クラスもあります。これらを使用して、フォームに実装されているすべてのビューに関する情報を取得できます。 
+> InfoPath オブジェクト モデルには、[ViewInfoCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfoCollection.aspx) クラスと [ViewInfo](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfo.aspx) クラスもあります。これらを使用して、フォームに実装されているすべてのビューに関する情報を取得できます。 
   
 ## <a name="using-the-view-class"></a>View クラスを使用する
 
@@ -87,7 +87,7 @@ Me.ViewInfos.Initial = Me.ViewInfos["MyInitialView"];
 
 InfoPath では、現在のビューでプログラムからコントロールを選択するために、[View](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) クラスの 2 つのメソッド、 [SelectText()](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) と [SelectNodes()](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx) が用意されており、両方ともオーバーロードされます。 [SelectText(XPathNavigator)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) メソッドはデータ入力用のコントロール ( **テキスト ボックス**など) に使用され、 **SelectNodes** メソッドは構造用のコントロール ( **省略可能セクション**など) に使用されます。ビューで特定のコントロールを選択するには、ノードとオプションでコントロールの ViewContext ID を指定する必要があります。ViewContext ID は、複数のコントロールがデータ ソース内の同じノードにバインドされている場合に必須となります。ViewContext ID 情報は、フォームのデザイン時に InfoPath により提供されます。
   
-コントロールの ViewContext ID は、コントロールを右クリックし、 _ControlName_ **プロパティ**] をクリックすると、[**詳細設定**] タブをクリックしてアクセスされるコントロールのプロパティ] ダイアログ ボックスの [**詳細設定**] タブに表示されます。コントロールの ViewContext ID は、[**詳細設定**] タブの [**コード**] セクションに一覧表示されます。 
+コントロールの ViewContext ID は、コントロールのプロパティ ダイアログ ボックスの **[詳細設定]** タブに表示されます。これを確認するには、コントロールを右クリックし、[_コントロール名_ **プロパティ**] をクリックして、**[詳細設定]** タブをクリックします。これで、コントロールの ViewContext ID が **[詳細設定]** タブの **[コード]** セクションに表示されます。 
   
 ## <a name="when-to-use-selecttext-and-selectnodes"></a>SelectText および SelectNodes の使用方法
 
@@ -113,7 +113,7 @@ InfoPath では、現在のビューでプログラムからコントロール�
     
 - 箇条書き、段落番号、および標準リスト
     
-- 横方向繰り返しテーブル
+- 横方向の繰り返しテーブル
     
 以下のコントロールは、プログラムから選択またはフォーカスの設定を行うことはできません。
   
@@ -131,7 +131,7 @@ InfoPath では、現在のビューでプログラムからコントロール�
     
 - インク描画
     
-- ハイパーリンク
+- Hyperlink
     
 - 式ボックス
     

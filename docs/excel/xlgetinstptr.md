@@ -6,43 +6,43 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: a166f39c-f10b-4e56-8b5d-e6a54ee08c8f
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 7cc07093e5db335d01fe85527746594d34d4d938
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798994"
 ---
 # <a name="xlgetinstptr"></a>xlGetInstPtr
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-���� DLL ��Ăяo���Ă��� Microsoft Excel �C���X�^���X�̃C���X�^���X �n���h����Ԃ��܂��B
+現在 DLL を呼び出している Microsoft Excel インスタンスのインスタンス ハンドルを返します。
   
 ```cs
 Excel4(xlGetInstPtr, LPXLOPER pxRes, 0);Excel12(xlGetInstPtr, LPXLOPER12 pxRes, 0);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-���̊֐��ɂ͈����͂���܂���B
+この関数には引数はありません。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-インスタンス ハンドル (**xltypeBigData**) は、 **val.bigdata.h.hdata**フィールドになります。 
+インスタンス ハンドル (**xltypeBigData**) は **val.bigdata.h.hdata** フィールドに格納されます。 
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-���̊֐���g�p����ƁADLL ��Ăяo���Ă��� Excel �̕����̎��s���C���X�^���X�����ł��܂��B
+この関数を使用すると、DLL を呼び出している Excel の複数の実行中インスタンスを特定できます。
   
-この関数は、32 ビットと 64 ビットの両方のバージョンの Excel で適切な値を返します。 導入 Excel 2010 の拡張機能として、 [xlGetInst](xlgetinst.md)関数を 32 ビット バージョンの Excel でのみ正常に動作します。 
+この関数は、32 ビットと 64 ビットの両方のバージョンの Excel で適切な値を返します。 [xlGetInst](xlgetinst.md) 関数の拡張機能として Excel 2010 で導入され、32 ビット バージョンの Excel でのみ正常に動作します。 
   
-**XLOPER**および**XLOPER12**の両方は、 **xltypeBigData**の値をサポートしているのと同じ構造を持つための API のコールバック関数、 [Excel4 と Excel12](excel4-excel12.md)の種類を使用して呼び出されたときにこの関数が正常に動作します。入力します。 
+この関数は、API のコールバック関数の [Excel4 と Excel12](excel4-excel12.md) の両方を使用して呼び出されたときに正常に作動します。これは **XLOPER** と **XLOPER12** が **xltypeBigData** の型の値をサポートする同じ構造を持つからです。 
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̎g�p��ł́A�Ō�ɌĂяo���� Excel �R�s�[ �C���X�^���X��A���݌Ăяo���Ă��� Excel �R�s�[�Ɣ�r���܂��B�����ꍇ�ɂ� 1 ��Ԃ��A�قȂ�ꍇ�ɂ� 0 ��Ԃ��܂��B�֐������s����ƁA-1 ��Ԃ��܂��B���̎g�p��́A32 �r�b�g�� 64 �r�b�g�̗����̃o�[�W������ Excel �ō쓮���܂��B
+次の例では、呼び出し元 Excel の最終コピーのインスタンスを、呼び出し元 Excel の現在のコピーと比較します。この 2 つが同じであれば 1 を返し、そうでなければ 0 を返します。関数が失敗した場合は、-1 を返します。この例は、Excel の 32 ビット バージョンと 64 ビット バージョンの両方で機能します。
   
 `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -68,9 +68,9 @@ short WINAPI xlGetInstPtrExample(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 - [xlGetHwnd](xlgethwnd.md)
 - [xlGetInst](xlgetinst.md)
-- [DLL �܂��� XLL ����̂݌Ăяo���\�� C API �֐�](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+- [DLL または XLL からのみ呼び出し可能な C API 関数](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 

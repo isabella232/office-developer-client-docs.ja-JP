@@ -11,38 +11,38 @@ keywords:
 - tempactiverow function [excel 2007],TempActiveRow12 function [Excel 2007]
 localization_priority: Normal
 ms.assetid: cbb9181c-59b0-4133-a085-94a94ac3f229
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: a406d6e5a8ffa91e103276cb39230058b4840614
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798942"
 ---
 # <a name="tempactiverowtempactiverow12"></a>TempActiveRow/TempActiveRow12
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-��ƒ��̃V�[�g�̍s�S�̂̊O���Q�Ƃ�܂ވꎞ **XLOPER**/ **XLOPER12** ��쐬����t���[�����[�N ���C�u�����֐� 
+作業中のシートの行全体の外部参照を含む一時 **XLOPER**/ **XLOPER12** を作成するフレームワーク ライブラリ関数。 
   
 ```cs
 LPXLOPER TempActiveRow(WORD row);
 LPXLOPER12 TempActiveRow12(ROW row);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _row_
   
-�Q�Ƃ����s�B1 �s�ڂ� 0 �œn�����悤�ɍs�̈����� 0 ����n�܂�܂��BMicrosoft Office Excel 2003 �ȑO�̃o�[�W�����ƁA�݊����[�h�Ńu�b�N����s����J�n���� Excel 2007 �ȍ~�ł́A�ő�l�́A65,535 = 2^16 - 1 �ł���AWORD �̐����l�Ŏw��ł���ő�l�ɂȂ�܂��B�u�b�N����s���� Excel 2007 �ȍ~�ł́A�ő�l�� 1,048,575 = 2^20 - 1 �ł��BRW �́AXLCALL.H�� 32 �r�b�g�����t�������Ƃ��Ē�`����܂��B
+参照する行。0 を基準とするため、行 1 は 0 として渡されます。Microsoft Office Excel 2003 以前のバージョンと、互換モードでブックを実行する Excel 2007 以降では、WORD 整数で使用できる最大値は 65,535 = 2^16 - 1 です。バイトの整数で実行できる最大値とします。ブックを実行する Excel 2007 以降では、最大値は 1,048,575 = 2^20 - 1 です。RW は、XLCALL.H の 32 ビット符号付き整数として定義されます。
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
-�n�����s�̃Z���� **xltypeRef** �O���Q�Ƃ��Ԃ�܂��B 
+渡される行のセルの **xltypeRef** 外部参照が返されます。 
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̗�ł́A **TempActiveRow12** �֐���g�p���čs 113 ��I����܂��B 
+この例では、**TempActiveRow12** 関数を使用して行 113 を選択します。 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -54,9 +54,9 @@ short WINAPI TempActiveRowExample(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[�t���[�����[�N ���C�u�����̊֐�](functions-in-the-framework-library.md)
+[フレームワーク ライブラリの関数](functions-in-the-framework-library.md)
 

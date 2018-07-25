@@ -1,23 +1,23 @@
 ---
-title: デジタル署名を使用します。
+title: デジタル署名を操作する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- digital signatures [infopath 2007],InfoPath 2007, digital signatures
+- デジタル署名 [infopath 2007],InfoPath 2007,デジタル署名
 localization_priority: Normal
 ms.assetid: fd13fb71-aecf-47bb-8a6b-db70bd90ceeb
-description: Microsoft.Office.InfoPath 名前空間のオブジェクト モデルには、デジタル署名をプログラムによって操作するための機能が用意されています。
+description: Microsoft.Office.InfoPath 名前空間のオブジェクト モデルには、プログラムによってデジタル署名を操作する機能が用意されています。
 ms.openlocfilehash: 1277998edf4feb94da40d82372fd4d96fedf2d54
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/21/2018
 ms.locfileid: "19799169"
 ---
-# <a name="work-with-digital-signatures"></a>デジタル署名を使用します。
+# <a name="work-with-digital-signatures"></a>デジタル署名を操作する
 
-[Microsoft.Office.InfoPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) 名前空間のオブジェクト モデルには、デジタル署名をプログラムによって操作するための機能が用意されています。 
+[Microsoft.Office.InfoPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) 名前空間のオブジェクト モデルには、プログラムによってデジタル署名を操作する機能が用意されています。 
   
 ## <a name="digital-signature-features"></a>デジタル署名の機能
 
@@ -55,7 +55,7 @@ InfoPath のデジタル署名機能を使用すると、以下の操作を行�
 |[SignatureWizard](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignEventArgs.SignatureWizard.aspx) <br/> |[ **デジタル署名**] ダイアログ ボックスを表示するかどうかを取得または設定します。  <br/> |
    
 > [!NOTE]
-> [!メモ] InfoPath 2003 に付属している [Microsoft.Office.Interop.InfoPath.SemiTrust](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx) マネージ コード オブジェクト モデルで、 [OnSign](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignEvent.aspx) イベントの [SignEvent](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2.OnSign.aspx) イベント オブジェクトには、イベントに関連付けられているフォームの **XDocument** オブジェクトにアクセスするための **XDocument** プロパティがあります。このプロパティは、InfoPath Forms Services または InfoPath で [Microsoft.Office.InfoPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) オブジェクト モデルを使用して作成されたフォーム テンプレートでは必要ありません。 [XmlForm](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) クラスのオブジェクト モデル メンバーは、フォーム コード内で **this** (C# の場合) キーワードまたは **Me** (Visual Basic の場合) キーワードを使用してアクセスできるからです。たとえば、 [XmlForm](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.Signed.aspx) クラスの [Signed](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) プロパティにアクセスして、フォームが署名されているかどうかを判別するには、  `this.Signed` または  `Me.Signed.` を入力できます。
+> InfoPath 2003 に付属している [Microsoft.Office.Interop.InfoPath.SemiTrust](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx) マネージ コード オブジェクト モデルで、 [OnSign](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignEvent.aspx) イベントの [SignEvent](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2.OnSign.aspx) イベント オブジェクトには、イベントに関連付けられているフォームの **XDocument** オブジェクトにアクセスするための **XDocument** プロパティがあります。このプロパティは、InfoPath Forms Services または InfoPath で [Microsoft.Office.InfoPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) オブジェクト モデルを使用して作成されたフォーム テンプレートでは必要ありません。 [XmlForm](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) クラスのオブジェクト モデル メンバーは、フォーム コード内で **this** (C# の場合) キーワードまたは **Me** (Visual Basic の場合) キーワードを使用してアクセスできるからです。たとえば、 [XmlForm](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.Signed.aspx) クラスの [Signed](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) プロパティにアクセスして、フォームが署名されているかどうかを判別するには、  `this.Signed` または  `Me.Signed.` を入力できます。
   
 ### <a name="collections-and-objects"></a>コレクションおよびオブジェクト
 

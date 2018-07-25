@@ -1,5 +1,5 @@
 ---
-title: �ėp DLL �̊֐�
+title: 汎用 DLL の関数
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,33 +8,33 @@ keywords:
 - generic dll [excel 2007], functions,functions [Excel 2007], Generic DLL
 localization_priority: Normal
 ms.assetid: 80ce2247-d69d-45b0-b5e2-4ff0d7078a2c
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: e78f276e58ca1c98786e28ed5167762cf0bfdf7f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798898"
 ---
-# <a name="functions-in-the-generic-dll"></a>�ėp DLL �̊֐�
+# <a name="functions-in-the-generic-dll"></a>汎用 DLL の関数
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-�t�H���_�[  `\EXAMPLES\GENERIC\` �ɂ́A�T���v���� DLL GENERIC.xll ��R���p�C�����邽�߂ɕK�v�� Microsoft Visual Studio �̃v���W�F�N�g �t�@�C���ƃ\�[�X �R�[�h �t�@�C�����܂܂�Ă��܂��B���̃v���W�F�N�g��e���v���[�g�Ƃ��Ďg�p���ēƎ��� Microsoft Excel XLL ��쐬�ł��܂��B���̃v���W�F�N�g�̃\�[�X �R�[�h�ɂ́AExcel C API �̑����̋@�\��������Ă��܂��B 
+サンプル DLL GENERIC.xll をコンパイルするために必要な Microsoft Visual Studio プロジェクト ファイルとソース コード ファイルは、`\EXAMPLES\GENERIC\` フォルダーに格納されています。このプロジェクトをテンプレートとして使用して独自の Microsoft Excel XLL を作成できます。このプロジェクトのソース コードには、Excel C API の多くの機能が示されています。 
   
-GENERIC.xll ��ǂݍ��ނƁA���� 4 �̃R�}���h������ **[Generic]** ���j���[���쐬����܂��B 
+GENERIC.xll を読み込むと、次の 4 つのコマンドがある **[Generic]** メニューが作成されます。 
   
-- **Dialog** - [Microsoft Excel] �_�C�A���O �{�b�N�X��\�����܂��B 
+- **Dialog** - [Microsoft Excel] ダイアログ ボックスを表示します。 
     
-- **ダンス**- は、 **ESC**キーを押すまで選択範囲を移動します。 
+- **Dance** - **ESC** を押すまで選択範囲を移動します。 
     
-- **Native Dialog** - [Windows] �_�C�A���O �{�b�N�X��\�����܂��B 
+- **Native Dialog** - [Windows] ダイアログ ボックスを表示します。 
     
-- **Exit** - GENERIC.xll ��A�����[�h���A **[Generic]** ���j���[��폜���܂��B 
+- **Exit** - GENERIC.xll をアンロードし、**[Generic]** メニューを削除します。 
     
-GENERIC.xll �͂܂��A���[�N�V�[�g�֐� Func1�AFuncSum�A����� FuncFib ��񋟂��܂��B�����͂��ł� GENERIC.xll ���ǂݍ��܂�Ă���Ƃ��Ɏg�p�ł��܂��BGENERIC.xll �́A�A�h�C�� �}�l�[�W���[��g�p���ēǂݍ��ނ��Ƃ��ł��܂��B�Ō�� Excel �Z�b�V����������ɏI���������_�ŃA�N�e�B�u�ɂȂ��Ă����ꍇ�́A���̎��̃Z�b�V�����ł�ǂݍ��܂�܂��B
+GENERIC.xll には、ワークシート関数 Func1、FuncSum、および FuncFib も用意されています。GENERIC.xll を読み込むと常に、これらの関数を使用できるようになります。GENERIC.xll は、アドイン マネージャーを使用して読み込むことができます。最後の Excel セッションが正常に終了した時点でアクティブになっていた場合は、その次のセッションでも読み込まれます。
   
-���̃v���W�F�N�g�ł́A�t���[�����[�N ���C�u���� (FRMWRK32.lib) ��g�p���܂��B
+このプロジェクトでは、フレームワーク ライブラリ (FRMWRK32.lib) を使用します。
   
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -60,9 +60,9 @@ GENERIC.xll �͂܂��A���[�N�V�[�g�֐� Func1�AFuncSum�
   
 [FuncFib](funcfib.md)
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[�t���[�����[�N ���C�u�����̊֐�](functions-in-the-framework-library.md)
+[フレームワーク ライブラリの関数](functions-in-the-framework-library.md)
 

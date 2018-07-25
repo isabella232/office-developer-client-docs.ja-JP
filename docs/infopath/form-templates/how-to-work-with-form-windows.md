@@ -1,26 +1,26 @@
 ---
-title: フォーム ウィンドウを操作します。
+title: フォーム ウィンドウを操作する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- windowscollection [infopath 2007],form windows [InfoPath 2007],Window class [InfoPath 2007]
+- windowscollection [infopath 2007],フォーム ウィンドウ [InfoPath 2007],Window クラス [InfoPath 2007]
 localization_priority: Normal
 ms.assetid: 32ae2427-882b-45f8-8754-0e8c27fc23ba
 description: InfoPath フォームをプログラムから操作するときは、フォームのウィンドウにアクセスするコードを記述し、ウィンドウに含まれるアイテムの一部をカスタマイズすることができます。Microsoft.Office.InfoPath 名前空間によって提供される InfoPath オブジェクト モデルでは、Window クラスを WindowCollection クラスと共に使用した、フォームのウィンドウへのアクセスがサポートされています。
 ms.openlocfilehash: 5b24798e92849a2d79bf836e12dd91845ee58942
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799141"
 ---
-# <a name="work-with-form-windows"></a>フォーム ウィンドウを操作します。
+# <a name="work-with-form-windows"></a>フォーム ウィンドウを操作する
 
 InfoPath フォームをプログラムから操作するときは、フォームのウィンドウにアクセスするコードを記述し、ウィンドウに含まれるアイテムの一部をカスタマイズすることができます。[Microsoft.Office.InfoPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) 名前空間によって提供される InfoPath オブジェクト モデルでは、 [Window](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx) クラスを [WindowCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.WindowCollection.aspx) クラスと共に使用した、フォームのウィンドウへのアクセスがサポートされています。 
   
 > [!NOTE]
-> [!メモ] フォームのウィンドウを操作するクラスは、[ **InfoPath エディター フォーム**] で作業しているときのみ使用できます。フォーム テンプレートの [ **互換性**] 設定が [ **Web ブラウザー フォーム**] の場合には、これらのクラスは使用できません。 
+> フォームのウィンドウを操作するクラスは、[ **InfoPath エディター フォーム**] で作業しているときのみ使用できます。フォーム テンプレートの [ **互換性**] 設定が [ **Web ブラウザー フォーム**] の場合には、これらのクラスは使用できません。 
   
 InfoPath には、次の 2 種類のウィンドウがあります。 
   
@@ -41,7 +41,7 @@ InfoPath には、次の 2 種類のウィンドウがあります。
    
 ## <a name="overview-of-the-window-class"></a>Window クラスの概要
 
-[ウィンドウ](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx)クラスには、次のメソッドとプロパティは、フォーム開発者は、InfoPath ウィンドウを操作するのには使用できますが用意されています。 これらのメソッドおよびプロパティのサポートは、ウィンドウ ([ゼロ](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.WindowType.aspx)) を使用しているの種類によって異なります。 いくつかのメソッドおよびプロパティ エディター ウィンドウの種類 (**WindowType.Editor**) でのみ動作します。 残りのメソッドとプロパティは、エディター ウィンドウの種類とデザイナーのウィンドウの種類 (**WindowType.Designer**) の両方で動作します。 さらに、すべての InfoPath オブジェクト モデル メンバーのように、フォーム テンプレートから呼び出されたときにメソッドおよびプロパティのサポートによって異なりますセキュリティ レベルと、フォームを展開する方法。
+[Window](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx) クラスには、次のメソッドとプロパティがあります。フォームの開発者は、これらを使用することにより、InfoPath ウィンドウを操作できます。 これらのメソッドとプロパティのサポートは、操作対象のウィンドウの種類 ([WindowType](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.WindowType.aspx)) によって異なります。 メソッドとプロパティの中には、ウィンドウの種類がエディター (**WindowType.Editor**) でないと機能しないものがあります。 その他のメソッドとプロパティは、ウィンドウの種類がエディターでも、デザイナー (**WindowType.Designer**) でも機能します。 さらに、InfoPath オブジェクト モデルのすべてのメンバーと同様に、フォーム テンプレートから呼び出す際のメソッドとプロパティのサポートは、セキュリティ レベルおよびフォームのデプロイ方法によって異なります。
   
 |**名前**|**説明**|**ウィンドウの種類のサポート**|
 |:-----|:-----|:-----|
@@ -94,6 +94,6 @@ Dim myWindow As Window = Me.CurrentView.Window
 ```
 
 > [!NOTE]
-> [!メモ] [Window](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx) クラスの一部のプロパティとメソッドは、編集ウィンドウでのみ使用できます。デザイン ウィンドウで使用すると、エラーが発生します。各ウィンドウの種類でサポートされるプロパティとメソッドの一覧については、前に示した表を参照してください。コードで [Window](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx) プロパティを使用すると、現在操作しているウィンドウの種類を確認できます。 
+> [Window](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx) クラスの一部のプロパティとメソッドは、編集ウィンドウでのみ使用できます。デザイン ウィンドウで使用すると、エラーが発生します。各ウィンドウの種類でサポートされるプロパティとメソッドの一覧については、前に示した表を参照してください。コードで [Window](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx) プロパティを使用すると、現在操作しているウィンドウの種類を確認できます。 
   
 

@@ -1,5 +1,5 @@
 ---
-title: 開くまたは InfoPath Toolkit で作成されたフォーム テンプレートを変換します。
+title: InfoPath Toolkit で作成したフォーム テンプレートを開くか変換する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -10,12 +10,12 @@ ms.assetid: af8eca2e-ba9a-4c37-94af-662815fff518
 description: InfoPath 2003 Toolkit for Visual Studio に含まれるツールキットを使用して InfoPath 2003 マネージ コード フォーム テンプレートを作成した場合に、InfoPath 2003 との互換性を維持するには、Microsoft InfoPath および Visual Studio 2012 でフォーム テンプレート プロジェクト開きます。これにより、引き続きそのフォーム テンプレート プロジェクトを使用して開発を進めることができます。
 ms.openlocfilehash: 7ca6a676c9db740b6b176783273a523715032387
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799131"
 ---
-# <a name="open-or-convert-a-form-template-created-with-the-infopath-toolkit"></a>開くまたは InfoPath Toolkit で作成されたフォーム テンプレートを変換します。
+# <a name="open-or-convert-a-form-template-created-with-the-infopath-toolkit"></a>InfoPath Toolkit で作成したフォーム テンプレートを開くか変換する
 
 InfoPath 2003 Toolkit for Visual Studio に含まれるツールキットを使用して InfoPath 2003 マネージ コード フォーム テンプレートを作成した場合に、InfoPath 2003 との互換性を維持するには、Microsoft InfoPath および Visual Studio 2012 でフォーム テンプレート プロジェクト開きます。これにより、引き続きそのフォーム テンプレート プロジェクトを使用して開発を進めることができます。
   
@@ -29,7 +29,7 @@ InfoPath 2003 Toolkit for Visual Studio に含まれるツールキットを使�
     
 2. [ **デザイン モードで開く**] ダイアログ ボックスで、InfoPath Toolkit フォーム テンプレート プロジェクトが保存されているプロジェクト フォルダーに移動します。 
     
-    既定では、内のフォルダーになります`C:\Users\`*ユーザー名*`\Documents\Visual Studio Projects`プロジェクトを作成したコンピューターにします。   または、既定では、InfoPath が、Visual Studio 2012 のプロジェクトを格納する場所にフォルダーを移動することができます`C:\Users\`*ユーザー名*  `\Documents\InfoPath Projects`
+    このフォルダーは、既定ではプロジェクトを作成したコンピューター上の `C:\Users\` *username* `\Documents\Visual Studio Projects` 内にあります。 または、このフォルダーを InfoPath が Visual Studio 2012 プロジェクトを格納している場所 (既定では `C:\Users\` *username* `\Documents\InfoPath Projects`) に移動することもできます。
     
 3. manifest.xsf という名前のファイルをクリックし、[ **開く**] をクリックします。
     
@@ -57,7 +57,7 @@ InfoPath 2003 Toolkit for Visual Studio に含まれるツールキットを使�
     
 3. [ **デザイン モードで開く**] ダイアログ ボックスで、InfoPath Toolkit フォーム テンプレート プロジェクトが保存されているプロジェクト フォルダーに移動します。 
     
-    既定のフォルダーになります`C:\Users\`*ユーザー名*`\Documents\Visual Studio Projects`プロジェクトを作成したコンピューターにします。   または、既定では、InfoPath が、Visual Studio 2012 のプロジェクトを格納する場所にフォルダーを移動することができます`C:\Users\`*ユーザー名*  `\Documents\InfoPath Projects`
+    このフォルダーは、既定ではプロジェクトを作成したコンピューター上の `C:\Users\` *username* `\Documents\Visual Studio Projects` 内にあります。 または、このフォルダーを InfoPath が Visual Studio 2012 プロジェクトを格納している場所 (既定では `C:\Users\` *username* `\Documents\InfoPath Projects`) に移動することもできます。
     
 4. manifest.xsf という名前のファイルをクリックし、[ **開く**] をクリックします。
     

@@ -6,48 +6,48 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: b98637d4-02e3-4dbd-8be5-6b46d32980c6
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: d837d87c479f70f0184a7cf1612dea5ab8c99e6d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798975"
 ---
 # <a name="xleventregister"></a>xlEventRegister
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-�C�x���g �n���h���[�̓o�^�Ɏg�p���܂��BExcel 2010 �ɓ�������܂����B
+Excel 2010 で導入されたイベント ハンドラーの登録に使用します。
   
 ```vb
 Excel12(xlEventRegister, LPXLOPER12 pxRes, 2, LPXLOPER12 pxProcedure, LPXLOPER12 pxEvent);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
- _pxProcedure_(**xltypeStr**)
+ _pxProcedure_ (**xltypeStr**)
   
-DLL �R�[�h�Ŏ�����Ă���A�C�x���g �n���h���[�֐��̖��O�B
+DLL コードで示されている、イベント ハンドラー関数の名前。
   
- _pxEvent_(**xltypeInt**)
+ _pxEvent_ (**xltypeInt**)
   
-_pxProcedure_ �p�����[�^�[�Ŏw�肵���֐��ŏ��������C�x���g�B 
+_pxProcedure_ パラメーターで指定した関数によって処理されるイベント。 
   
-Excel 2010 �ȍ~�� Excel �ł́A���̃C�x���g��T�|�[�g���Ă��܂��B
+Excel 2010 以降の Excel では、次のイベントをサポートしています。
   
-|**�C�x���g**|**���**|
+|**イベント**|**説明**|
 |:-----|:-----|
-|**xleventCalculationEnded** <br/> |Excel ���v�Z����������Ƃ��ɔ������܂��B�v�Z���Ɋ��蓖�Ă����\�[�X�́A���̃C�x���g�̌�ŉ���ł��܂��B  <br/> |
-|**xleventCalculationCanceled** <br/> |���[�U�[���v�Z�𒆒f�����Ƃ��ɔ������܂��BXLL �́A������񓯊��̃A�N�e�B�r�e�B���~���܂��B���̃C�x���g�̒���ɁACalculationEnded �C�x���g���������܂��B  <br/> |
+|**xleventCalculationEnded** <br/> |Excel が計算を完了したときに発生します。計算中に割り当てたリソースは、このイベントの後で解放できます。  <br/> |
+|**xleventCalculationCanceled** <br/> |ユーザーが計算を中断すると発生します。XLL はすべての非同期アクティビティを停止します。このイベントの直後に、CalculationEnded イベントが発生します。  <br/> |
    
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-成功した場合は、 **TRUE** (**xltypeBool**) を返します。 失敗した場合は、 **FALSE**が返されます。
+成功した場合、**TRUE** (**xltypeBool**) を返します。 失敗した場合は、**FALSE** を返します。
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[�񓯊��̃��[�U�[��`�֐�](asynchronous-user-defined-functions.md)
+[非同期のユーザー定義関数](asynchronous-user-defined-functions.md)
 

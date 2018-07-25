@@ -10,17 +10,17 @@ keywords:
 - xludf function [excel 2007]
 localization_priority: Normal
 ms.assetid: b608b356-ca5c-47bb-9de8-9b7e2b3924dd
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 8f45f800ca50d2a46792e7cf5e00ac25bd099e8c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799000"
 ---
 # <a name="xludf"></a>xlUDF
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
 ユーザー定義関数 (UDF) を呼び出します。この関数により、DLL は Visual Basic for Applications (VBA) のユーザー定義関数、XLM マクロ言語の関数、およびその他のアドインに含まれる登録済みの関数を呼び出すことができます。
   
@@ -29,23 +29,23 @@ Excel12(xlUDF, LPXLOPER12 pxRes, int iCount, LPXLOPER12 pxFnRef,
 LPXLOPER12 pxArg1, ...);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-_pxFnRef_(**xltypeRef**、 **xltypeSRef**、 **xltypeStr**または**xltypeNum**)
+_pxFnRef_ (**xltypeRef**、**xltypeSRef**、**xltypeStr**、または **xltypeNum**)
   
-�Ăяo���֐��̎Q�ƁB����̓}�N�� �V�[�g�̃Z���̎Q�ƁA������Ƃ��Ă̊֐��̓o�^���A�܂��͊֐��̓o�^ ID �ɂȂ�܂��B������  **pxFunctionText** ��w�肵�� **xlfRegister** �܂��� _REGISTER_ ��g�p���ēo�^���ꂽ XLL �A�h�C���֐��̏ꍇ�A **xlfEvaluate** ��g�p���Ė��O���������� ID ��擾�ł��܂��B 
+呼び出す関数の参照。これはマクロ シートのセルの参照、文字列としての関数の登録名、または関数の登録 ID になります。_pxFunctionText_ 引数を指定した **xlfRegister** または **REGISTER** で登録された XLL アドイン関数の場合、**xlfEvaluate** を使用して名前を検索することで、この ID を取得できます。 
   
 _pxArg1, ..._
   
-���[�U�[��`�֐��ɓn����� 0 �ȏ�̈����BExcel 2007 ���O�̃o�[�W�����ł́A���̊֐���Ăяo���Ƃ��ɁA�ő� 29 �� ( _pxFnRef_ ��܂߂� 30��) �̒ǉ��̈�����n���܂��BExcel 2007 �ȍ~�ł́A���̐����� 254 �� (  _pxFnRef_ ��܂߂� 255 ��) �ɂ܂Ŋɘa����Ă��܂��B
+ユーザー定義関数に渡すゼロ以上の引数。Excel 2007 より前のバージョンでこの関数を呼び出す場合、関数に渡せる追加引数の最大数は 29 です (_pxFnRef_ を含めると合計 30)。Excel 2007 以降では、この制限は 254 に引き上げられています (_pxFnRef_ を含めると合計 255)。
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
-���[�U�[��`�֐����Ԃ��l��Ԃ��܂��B
+ユーザー定義関数が返す値を返します。
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̗�ł́ABOOK1.XLS �̃V�[�g Macro1 �� **TestMacro** ����s���܂��B�}�N���� Macro1 �Ƃ������O�̃V�[�g��ɂ��邱�Ƃ�m�F���Ă��������B 
+次の例では、BOOK1.XLS のシート Macro1 に対して **TestMacro** を実行します。マクロが Macro1 という名前のシートにあることを確認してください。 
   
 `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -61,7 +61,7 @@ short WINAPI xlUDFExample(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
-- [DLL �܂��� XLL ����̂݌Ăяo���\�� C API �֐�](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+- [DLL または XLL からのみ呼び出し可能な C API 関数](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 

@@ -1,5 +1,5 @@
 ---
-title: XPathNavigator XPathNodeIterator クラスと
+title: XPathNavigator クラスおよび XPathNodeIterator クラスを操作する
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -10,19 +10,19 @@ ms.assetid: 72fb3ee5-f18e-4f9c-adc6-698ac037b79d
 description: フォーム テンプレートのデータ ソースの XML データにアクセスして操作するには、Microsoft.Office.InfoPath 名前空間によって提供されるマネージ コード オブジェクト モデルの多くのメンバーは、System.Xml.XPath 名前空間の XPathNavigator クラスのインスタンスを作成するか、そのインスタンスが渡されます。InfoPath オブジェクト モデルのメンバーから返される XPathNavigator オブジェクトにアクセスした後、XPathNavigator クラスのプロパティとメソッドを使用してデータを操作できます。
 ms.openlocfilehash: a672ea2733d971c829b77e0c18a74f26c7050b34
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799156"
 ---
-# <a name="work-with-the-xpathnavigator-and-xpathnodeiterator-classes"></a>XPathNavigator XPathNodeIterator クラスと
+# <a name="work-with-the-xpathnavigator-and-xpathnodeiterator-classes"></a>XPathNavigator クラスおよび XPathNodeIterator クラスを操作する
 
 フォーム テンプレートのデータ ソースの XML データにアクセスして操作するには、[Microsoft.Office.InfoPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) 名前空間によって提供されるマネージ コード オブジェクト モデルの多くのメンバーは、 **System.Xml.XPath** 名前空間の **XPathNavigator** クラスのインスタンスを作成するか、そのインスタンスが渡されます。InfoPath オブジェクト モデルのメンバーから返される **XPathNavigator** オブジェクトにアクセスした後、 **XPathNavigator** クラスのプロパティとメソッドを使用してデータを操作できます。 
   
 **XPathNavigator** クラスを使用する **Microsoft.Office.InfoPath** 名前空間のメンバーの中で最もよく使用されるメンバーは、 [DataSource](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.CreateNavigator.aspx) クラスの [CreateNavigator](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.aspx) メソッドです。このメソッドを使用すると、 **DataSource** オブジェクトで表される保存データを操作できます。 **CreateNavigator** メソッドでは、 **DataSource** オブジェクトで表されるデータ ソースのルートに置かれる **XPathNavigator** オブジェクトを作成します。 
   
 > [!TIP]
-> [!ヒント] スクリプトから MSXML5 を使用して Microsoft InfoPath 2003 のデータを操作する方法に慣れている場合は、 **CreateNavigator** メソッドを **DataObject** の **DOM** プロパティに代わるものと考えることができます。 
+> スクリプトから MSXML5 を使用して Microsoft InfoPath 2003 のデータを操作する方法に慣れている場合は、 **CreateNavigator** メソッドを **DataObject** の **DOM** プロパティに代わるものと考えることができます。 
   
 ## <a name="using-the-xpathnavigator-class-to-access-the-main-data-source-of-the-form"></a>XPathNavigator クラスを使用して、フォームのメイン データ ソースにアクセスする
 
@@ -43,7 +43,7 @@ MessageBox.Show("Main data source XML: " &amp; _
 ```
 
 > [!NOTE]
-> [!メモ] [this](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.CreateNavigator.aspx) または **Me** キーワードから **CreateNavigator** メソッドを直接呼び出すことは、 [MainDataSource](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.CreateNavigator.aspx) プロパティを使用するか (  [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.MainDataSource.aspx))、`this.MainDataSource.CreateNavigator()` クラスの [DataSources](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.DataSources.aspx) プロパティに空文字列を渡して (  [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx))、`this.DataSources[""].CreateNavigator()` メソッドを呼び出すのと同じです。 
+> [this](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.CreateNavigator.aspx) または **Me** キーワードから **CreateNavigator** メソッドを直接呼び出すことは、 [MainDataSource](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.CreateNavigator.aspx) プロパティを使用するか (  [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.MainDataSource.aspx))、`this.MainDataSource.CreateNavigator()` クラスの [DataSources](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.DataSources.aspx) プロパティに空文字列を渡して (  [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx))、`this.DataSources[""].CreateNavigator()` メソッドを呼び出すのと同じです。 
   
 ## <a name="selecting-and-setting-the-xml-nodes-for-fields-in-the-main-data-source"></a>メイン データ ソース内のフィールドを表す XML ノードを選択および設定する
 <a name="InfoPath2007XPathNavigatorClassFormTemplates_SelectingXMLNodes"> </a>
@@ -55,7 +55,7 @@ MessageBox.Show("Main data source XML: " &amp; _
 使用する必要があるオーバーロードの **SelectSingleNode** メソッドには、XPath 式を文字列として取る  _xpath_ パラメーターと、名前空間プレフィックスを解決するための _XmlNamespaceManager_ オブジェクトを取る  **resolver** パラメーターがあります。フォームのメイン データ ソース内の単一ノードを選択するには、  _xpath_ パラメーター用に選択するフィールドまたはグループを指定する XPath 式と、 **XmlForm** オブジェクトの [NamespaceManager](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.NamespaceManager.aspx) プロパティが返す **XmlNamespaceManager** オブジェクトを渡します。返される **XmlNamespaceManager** オブジェクトは、読み込み時に、フォーム テンプレートのフォーム定義ファイル (.xsf) によって定義されるすべての名前空間で初期化されます。 
   
 > [!TIP]
-> [!ヒント] フォームのデータ ソース内のノードを選択する XPath 式を最も簡単に作成するには、[ **フィールド**] 作業ウィンドウ内でフィールドまたはグループを右クリックし、[ **XPath のコピー**] をクリックします。複雑な、または深い入れ子になった XML スキーマ内のノードにアクセスするための手動編集 XPath 式を作成してテストするには、フォームに **式ボックス** コントロールを追加し、フォームをプレビューして結果を表示します。 
+> フォームのデータ ソース内のノードを選択する XPath 式を最も簡単に作成するには、[ **フィールド**] 作業ウィンドウ内でフィールドまたはグループを右クリックし、[ **XPath のコピー**] をクリックします。複雑な、または深い入れ子になった XML スキーマ内のノードにアクセスするための手動編集 XPath 式を作成してテストするには、フォームに **式ボックス** コントロールを追加し、フォームをプレビューして結果を表示します。 
   
 次の例では、 **SelectSingleNode** メソッドを使用して、  `EmailAlias` フィールド用の単一ノードを選択します。さらに、 **XPathNavigator** クラスの **SetValue** メソッドと [User](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.User.UserName.aspx) クラスの [UserName](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.User.aspx) プロパティを使用して、そのフィールドの値を現在のユーザーのエイリアスに設定します。 
   
@@ -73,7 +73,7 @@ Dim emailAlias As XPathNavigator = _
 emailAlias.SetValue(Me.Application.User.UserName.ToString())
 ```
 
-XPath 式を作成する方法の詳細については、MSDN では、 [XML パス言語 (XPath) Version 1.0 の W3C 勧告](http://www.w3.org/TR/xpath)で XPath のリファレンスを参照してください。
+XPath 式の作成方法については、MSDN の「XPath リファレンス」と、「[XML Path Language (XPath) Version 1.0 W3C Recommendation](http://www.w3.org/TR/xpath)」を参照してください。
   
 ### <a name="setting-the-value-of-a-node-that-has-the-xsinil-attribute"></a>xsi:nil 属性を持つノードの値を設定する
 
@@ -147,13 +147,13 @@ myDate.SetValue(strCurDate)
 ```
 
 > [!NOTE]
-> [!メモ] InfoPath の **XPathNavigator** オブジェクトの実装は、 **SetTypedValue** メソッド (特定の型の値を使用してノードを設定するために使用) を公開していますが、InfoPath は、このメソッドを実装していません。代わりに、 **SetValue** メソッドを使用して、ノードのデータ型に適切な形式の文字列値を渡す必要があります。 
+> InfoPath の **XPathNavigator** オブジェクトの実装は、 **SetTypedValue** メソッド (特定の型の値を使用してノードを設定するために使用) を公開していますが、InfoPath は、このメソッドを実装していません。代わりに、 **SetValue** メソッドを使用して、ノードのデータ型に適切な形式の文字列値を渡す必要があります。 
   
 ### <a name="selecting-and-setting-a-set-of-repeating-nodes"></a>繰り返しノードを選択および設定する
 
-繰り返しフィールドまたは不特定の数のグループのセットを指定するには、 **XPathNavigator**クラスの**選択**メソッドを使用します。 このメソッドは、指定されたノードのコレクションを反復処理に使用できる XPathNodeIterator オブジェクトを返します。 
+繰り返される回数が不確かなフィールドまたはグループの一式を指定するには、**XPathNavigator** クラスの **Select** メソッドを使用します。 このメソッドから返される XPathNodeIterator オブジェクトを使用して、指定したノードのコレクションを反復処理できます。 
   
-次の例では、**箇条書きリスト**または同様の繰り返しコントロールという名前の繰り返し要素にバインドされているフォーム テンプレートが含まれていると仮定しています`field1`。 フィールドの XPath は、メソッドに渡される、**選択**、および返された**XPathNodeIterator**に割り当てられた、`nodes`変数です。 ノード、および現在のノードに配置されている**XPathNavigator**オブジェクトを返すには、現在のプロパティのコレクションを反復処理するには、MoveNext メソッドを使用します。 最後に、取得し、各繰り返しフィールドの値を表示するのには**Value**プロパティを使用します。 
+次の例では、フォーム テンプレートに含まれる**箇条書き**または同様の反復コントロールが、`field1` という名前の繰り返し要素にバインドされていることを前提とします。 フィールドの XPath を **Select** メソッドに渡し、このメソッドから返された **XPathNodeIterator** を `nodes` 変数に割り当てます。 MoveNext メソッドを使用してノードのコレクションを反復処理し、Current プロパティを使用して、現在のノードに位置する **XPathNavigator** オブジェクトを返します。 最後に、**Value** プロパティを使用して、繰り返される各フィールドの値を取得し、表示します。 
   
 ```cs
 string message = String.Empty;
@@ -239,7 +239,7 @@ MessageBox.Show("External data source XML: " &amp; _
 |[AdoSubmitConnection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.AdoSubmitConnection.aspx) <br/> |[BuildSqlFromXmlNodes](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.AdoSubmitConnection.BuildSqlFromXmlNodes.aspx) メソッド  <br/> |
 |[ClickedEventArgs](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ClickedEventArgs.aspx) <br/> |[Source](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ClickedEventArgs.Source.aspx) プロパティ  <br/> |
 |[ContextChangedEventArgs](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ContextChangedEventArgs.aspx) <br/> |[Context](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ContextChangedEventArgs.Context.aspx) プロパティ  <br/> |
-|[データ ソース](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.aspx) <br/> |[CreateNavigator](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.CreateNavigator.aspx) メソッド  <br/> |
+|[DataSource](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.aspx) <br/> |[CreateNavigator](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.CreateNavigator.aspx) メソッド  <br/> |
 ||[GetNamedNodeProperty](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.GetNamedNodeProperty.aspx) メソッド  <br/> |
 ||[SetNamedNodeProperty](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.SetNamedNodeProperty.aspx) メソッド  <br/> |
 |[EmailSubmitConnection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.EmailSubmitConnection.aspx) <br/> |[Execute](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.EmailSubmitConnection.Execute.aspx) メソッド  <br/> |
@@ -330,6 +330,6 @@ For Each selectedNode In selectedNodes
 Next
 ```
 
-InfoPath フォーム テンプレートから XML データを操作する方法の詳細についてをクリックしてください XML データを使用して InfoPath 2007 フォーム テンプレートで XPathNavigator クラスです。
+InfoPath フォーム テンプレートからの XML データの操作方法の詳細については、「InfoPath 2007 フォーム テンプレートで XPathNavigator クラスを使用して XML データを操作する」を参照してください。
   
 

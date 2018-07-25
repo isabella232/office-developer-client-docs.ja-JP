@@ -10,43 +10,43 @@ keywords:
 - xlautoremove function [excel 2007]
 localization_priority: Normal
 ms.assetid: fff0de4d-605d-49e6-a5be-a000410c09d8
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 6e5daac21a6d89472a7d84a25e9aeaea56db1ae1
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798974"
 ---
 # <a name="xlautoremove"></a>xlAutoRemove
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-���[�U�[�� Excel �Z�b�V�������ɃA�h�C�� �}�l�[�W���[��g�p���� XLL �𖳌��ɂ��邽�тɁAMicrosoft Excel �ɂ���ČĂяo����܂��B�A�h�C�����C���X�g�[������Ă����Ԃ� Excel �Z�b�V����������I���A�܂��ُ͈�I������ƁA���̊֐��͌Ăяo����܂���B
+ユーザーが Excel セッション中にアドイン マネージャーを使用して XLL を非アクティブ化すると、Excel によって呼び出されます。アドインがインストールされている状態で Excel セッションが終了するときには、正常終了でも異常終了でも、この関数は呼び出されません。
   
-���Ƃ��΂��̊֐���g�p���āA�A�h�C���������ɂȂ��Ă��邱�Ƃ���[�U�[�ɒʒm����J�X�^�� �_�C�A���O �{�b�N�X��\��������A���W�X�g���̓ǂݎ��Ə������݂�s�����肷�邱�Ƃ��ł��܂��B
+たとえばこの関数を使用して、アドインが無効になっていることをユーザーに通知するカスタム ダイアログ ボックスを表示したり、レジストリの読み取りと書き込みを行ったりすることができます。
   
-Excel �ł́A�����̊֐��̎����ƃG�N�X�|�[�g�� XLL �͕K�v����܂���B 
+Excel では、これらの関数の実装とエクスポートに XLL は必要ありません。 
   
 ```cs
 int WINAPI xlAutoRemove(void);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-���̊֐��Ɉ����͂���܂���B
+この関数に引数はありません。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-この関数の実装では、1 (**int**) を返す必要があります。
+この関数を実装する場合、1 (**int**) を返す必要があります。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-�A�h�C�� �}�l�[�W���[�ɂ���ă^�X�N���폜���ꂽ�Ƃ��� XLL �����̃^�X�N���������K�v������ꍇ�́A���̊֐���g�p���܂��B
+アドイン マネージャーによってタスクが削除されたときに XLL がそのタスクを完了する必要がある場合は、この関数を使用します。
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̊֐��̎���������  `\SAMPLES\EXAMPLE\EXAMPLE.C` �t�@�C����  `\SAMPLES\GENERIC\GENERIC.C` �t�@�C����Q�Ƃ��Ă��������B���̃R�[�h�́A  `\SAMPLES\EXAMPLE\EXAMPLE.C` �ɂ���܂��B
+この関数の実装例については、`\SAMPLES\EXAMPLE\EXAMPLE.C` ファイルと `\SAMPLES\GENERIC\GENERIC.C` ファイルを参照してください。次のコードは、`\SAMPLES\EXAMPLE\EXAMPLE.C` から抜粋しています。
   
 ```cs
 int WINAPI xlAutoRemove(void)
@@ -59,12 +59,12 @@ int WINAPI xlAutoRemove(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
 [xlAutoAdd](xlautoadd.md)
 
 
-[�A�h�C�� �}�l�[�W���[�� XLL �C���^�[�t�F�C�X�֐�](add-in-manager-and-xll-interface-functions.md)
+[アドイン マネージャーと XLL インターフェイス関数](add-in-manager-and-xll-interface-functions.md)
 

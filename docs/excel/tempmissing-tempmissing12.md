@@ -11,36 +11,36 @@ keywords:
 - tempmissing function [excel 2007],TempMissing12 function [Excel 2007]
 localization_priority: Normal
 ms.assetid: d9cb6afc-1fbb-45d6-88e5-84eba3af3c60
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: a6db2e1f2917ecd9361043577f4bf203b3267a5c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798953"
 ---
 # <a name="tempmissingtempmissing12"></a>TempMissing/TempMissing12
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-�^�C�v **xltypeMissing** �̈ꎞ / ******XLOPER12** ��쐬����t���[�����[�N ���C�u�����֐��B
+**xltypeMissing** 型の一時 **XLOPER**/ **XLOPER12** を作成するフレームワーク ライブラリ関数。
   
 ```cs
 LPXLOPER TempMissing(void);
 LPXLOPER12 TempMissing12(void);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-���̊֐��Ƀp�����[�^�[�͂���܂���B
+この関数にパラメーターはありません。
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
-**xltypeMissing** **XLOPER**/ **XLOPER12** �Ƀ|�C���^�[��Ԃ��܂��B
+**xltypeMissing** **XLOPER**/ **XLOPER12** へのポインターを返します。
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̗�ł� **TempMissing12** ��g�p���� 3 �̕s������������ **xlcWorkspace** �Ɏw�肵�A���̌�� **Boolean** **FALSE** ��w�肵�āA���[�N�V�[�g�̃X�N���[�� �o�[�̕\�����\���ɂ��܂��B�ŏ��� 3 �̈����́A�e����󂯂Ȃ����̃��[�N�X�y�[�X�ݒ�ɑΉ����܂��B 
+この例では、**TempMissing12** を使用して **xlcWorkspace** の 3 つの欠落した引数を指定し、その後に**ブール値** **FALSE** を続けて、ワークシートのスクロール バーの表示を抑制します。最初の 3 つの引数は、他のワークスペースの設定に対応しますが、それらの設定は影響を受けません。 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -56,9 +56,9 @@ short WINAPI TempMissingExample(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[�t���[�����[�N ���C�u�����̊֐�](functions-in-the-framework-library.md)
+[フレームワーク ライブラリの関数](functions-in-the-framework-library.md)
 

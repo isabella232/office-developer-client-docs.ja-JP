@@ -10,41 +10,41 @@ keywords:
 - xlsheetnm function [excel 2007]
 localization_priority: Normal
 ms.assetid: bcb16207-5499-4474-b006-51ccde1002d7
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 815565d886b1aea203f6b3b9774325d6b534abd2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798999"
 ---
 # <a name="xlsheetnm"></a>xlSheetNm
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-�O���Q�ƂɊ܂܂�����V�[�g ID ����A���[�N�V�[�g�܂��̓}�N�� �V�[�g�̖��O (����Q�Ƃ��n����ꍇ�́A���݂̃V�[�g�̖��O) ��Ԃ��܂��B
+外部参照に含まれる内部シート ID から、ワークシートまたはマクロ シートの名前 (内部参照が渡され場合は、現在のシートの名前) を返します。
   
 ```cs
 Excel12(xlSheetNm, LPXLOPER12 pxRes, 1, LPXLOPER12 pxExtref);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-_pxExtref_(**xltypeRef**または**xltypeSRef**)
+_pxExtref_ (**xltypeRef** または **xltypeSRef**)
   
-���O��擾����V�[�g�ւ̎Q�ƁB
+名前を取得するシートへの参照。
   
-(**XltypeRef**) の外部参照を渡す場合のみを含める必要は、シートの ID です。 ワークシートのセルを表すデータ構造体は無視され、提供する必要はありません。 ID は、0 に設定されている場合、 **xlSheetNm**は、現在のシートの名前を返します。 
+外部参照 (**xltypeRef**) を渡す場合は、シートの ID のみが含まれているだけで十分です。 ワークシートのセルを表すデータ構造体は無視されるので、指定する必要はありません。 ID が 0 に設定されていると、**xlSheetNm** は現在のシートの名前を返します。 
   
-(**XltypeSef**) の内部参照を渡す場合、 **xlSheetNm**は、現在のシートの名前を返します。 
+内部参照 (**xltypeSef**) を渡すと、**xlSheetNm** は現在のシートの名前を返します。 
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-フォームのシート (**xltypeStr**) の名前を返します`[Book1]Sheet1`。
+`[Book1]Sheet1` の形式でシートの名前 (**xltypeStr**) を返します。
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̗�́A�֐��̌Ăяo�����̃V�[�g�̖��O��\�����܂��B���̊֐��́AXLM �̃R�}���h �}�N���̎��s���Ƀ}�N�� �V�[�g����Ăяo���ꂽ�ꍇ�̂ݐ���ɓ��삵�܂��B����́A�R�}���h���������s�ł��� **xlcAlert** �̌Ăяo����s���Ă��邽�߂ł��B�܂��A **xlfCaller** ���Q�Ƃ�Ԃ��悤�ɂ���ɂ́A�_�C�A���O �{�b�N�X�A���j���[�܂��̓R�}���h �o�[����ł͂Ȃ��A�V�[�g����Ăяo����Ă���K�v�����邽�߂ł��B 
+次の例では、関数の呼び出し元のシートの名前を表示します。この関数は、XLM のコマンド マクロの実行中にマクロ シートから呼び出された場合のみ正常に動作します。その理由は、**xlcAlert** の呼び出しはコマンドでのみ実行可能であり、**xlfCaller** に参照を返させるためには、この関数をダイアログ ボックス、メニュー、コマンド バーからではなく、シートから呼び出さなければならないためです。 
   
 `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -60,8 +60,8 @@ short WINAPI xlSheetNmExample(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 - [xlSheetId](xlsheetid.md)
-- [DLL �܂��� XLL ����̂݌Ăяo���\�� C API �֐�](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+- [DLL または XLL からのみ呼び出し可能な C API 関数](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 
