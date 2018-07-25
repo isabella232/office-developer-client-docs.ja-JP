@@ -10,14 +10,14 @@ ms.assetid: f269d64d-4102-426d-be8e-d2742a993524
 description: Microsoft InfoPath によってインストールされる Microsoft.Office.Interop.InfoPath.dll、Microsoft.Office.Interop.InfoPath.SemiTrust.dll、および Microsoft.Office.Interop.InfoPath.Xml.dll 相互運用アセンブリを介してアクセスする COM オブジェクトは、複数のスレッドでの呼び出しをサポートしていません。これには、Microsoft.Office.Interop.InfoPath.SemiTrust 名前空間にラップされた Microsoft XML Core Services (MSXML) オブジェクト用インターフェイス (ほとんどの名前に IXMLDOM というプレフィックスが付いています)、および Microsoft.Office.Interop.InfoPath.Xml 名前空間によって公開されるすべてのインターフェイスが含まれており、これらのインターフェイスはどちらもスレッド セーフでありません。
 ms.openlocfilehash: 314ef57e11295c0b2dbc9866c5faa392aab055ff
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799212"
 ---
 # <a name="threading-support-in-infopath-projects-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用する InfoPath プロジェクトにおけるスレッドのサポート
 
-Microsoft InfoPath によってインストールされる Microsoft.Office.Interop.InfoPath.dll、Microsoft.Office.Interop.InfoPath.SemiTrust.dll、および Microsoft.Office.Interop.InfoPath.Xml.dll 相互運用アセンブリを介してアクセスする COM オブジェクトは、複数のスレッドでの呼び出しをサポートしていません。 これにより、Microsoft XML Core Services (MSXML) オブジェクトは、(ほとんどの場合は IXMLDOM が付いている名前がある)、 **Microsoft.Office.Interop.InfoPath.SemiTrust**名前空間によって公開されるインターフェイスのすべてをラップするためのインターフェイスが含まれます。[Microsoft.Office.Interop.InfoPath.Xml](https://msdn.microsoft.com/en-us/library/microsoft.office.interop.infopath.xml)名前空間、どれもはスレッド セーフであります。 
+Microsoft InfoPath によってインストールされる Microsoft.Office.Interop.InfoPath.dll、Microsoft.Office.Interop.InfoPath.SemiTrust.dll、および Microsoft.Office.Interop.InfoPath.Xml.dll 相互運用アセンブリを介してアクセスする COM オブジェクトは、複数のスレッドでの呼び出しをサポートしていません。 これには、**Microsoft.Office.Interop.InfoPath.SemiTrust** 名前空間にラップされた Microsoft XML Core Services (MSXML) オブジェクト用インターフェイス (ほとんどの名前に IXMLDOM というプレフィックスが付いています)、および [Microsoft.Office.Interop.InfoPath.Xml](https://msdn.microsoft.com/ja-JP/library/microsoft.office.interop.infopath.xml) 名前空間によって公開されるすべてのインターフェイスが含まれており、これらのインターフェイスはどちらもスレッド セーフでありません。 
   
 これらの COM オブジェクトへのすべての呼び出しは、単一のスレッドから行う必要があります。InfoPath プロジェクトのマネージ コードは他のスレッドを作成してバックグラウンド処理を実行できますが、メイン以外のスレッドで実行されているコードから InfoPath オブジェクト モデルを呼び出すことはできません。
   
@@ -27,7 +27,7 @@ InfoPath マネージ コード プロジェクトで複数のスレッドを使
 
 別のスレッドで動作しているタイマーなどのプロセスを呼び出す必要がある場合、InfoPath オブジェクト モデルがそのような呼び出しをサポートしていないという事実を回避することは可能です。 
   
-次の例では、フォームの _Startup メソッドで **System.Timers.Timer** インスタンスを作成し、タイマーへの非同期コールバックをフックします。 また、window フォーム (**System.Windows.Forms.Form**) の非表示のインスタンスが作成されます。 タイマーがタイムアウトすると、コールバック関数が 1 秒に 1 回実行されるようになり、Win32 の **PostMessage** 関数を呼び出して非表示のウィンドウにメッセージを送ります。 非表示のウィンドウには、タイマー コールバック関数から受け取ったメッセージを処理し、フォームの XML Document Object Model (DOM) を更新する **WndProc** 関数があります。 このフォームを実行するには、完全に信頼できるフォームとしてインストールする必要があります。 完全に信頼されたフォーム テンプレートをデバッグする方法の詳細については、[プレビューしその必要とする完全信頼フォーム テンプレートのデバッグ](how-to-preview-and-debug-form-templates-that-require-full-trust.md)を参照してください。 完全に信頼されたフォーム テンプレートを展開する方法の詳細については、[コードを含む InfoPath フォーム テンプレートの展開](how-to-deploy-infopath-form-templates-with-code.md)を参照してください。
+次の例では、フォームの _Startup メソッド内で **System.Timers.Timer** インスタンスが作成され、そのインスタンスに非同期コールバックがフックされます。 さらに、ウィンドウ フォーム ( **System.Windows.Forms.Form**) の非表示のインスタンスが作成されます。 タイマーがタイムアウトすると、コールバック関数が 1 秒に 1 回実行されるようになり、Win32 の **PostMessage** 関数を呼び出して非表示のウィンドウにメッセージを送ります。 非表示のウィンドウには、タイマー コールバック関数から受け取ったメッセージを処理し、フォームの XML Document Object Model (DOM) を更新する **WndProc** 関数があります。 このフォームは、完全に信頼できるフォームとしてインストールして実行する必要があります。 完全に信頼できるフォーム テンプレートのデバッグについては、「[完全信頼が必要なフォーム テンプレートをプレビューおよびデバッグする方法](how-to-preview-and-debug-form-templates-that-require-full-trust.md)」を参照してください。 完全に信頼できるフォーム テンプレートの展開方法については、「[コードを含む InfoPath フォーム テンプレートを展開する方法](how-to-deploy-infopath-form-templates-with-code.md)」を参照してください。
   
 ```cs
 using System;

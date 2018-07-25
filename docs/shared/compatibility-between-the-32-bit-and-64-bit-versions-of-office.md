@@ -1,5 +1,5 @@
 ---
-title: 32 ビットおよび 64 ビット バージョンの Office 間での互換性
+title: Office の 32 ビット バージョンと 64 ビット バージョン間の互換性
 ms.date: 04/27/2016
 ms.audience: ITPro
 localization_priority: Normal
@@ -7,12 +7,12 @@ ms.assetid: ff49dc9e-daf8-43cf-8802-51c2537ed561
 description: 32 ビット バージョンの Office と 64 ビット バージョンの Office の互換性についてご確認ください。
 ms.openlocfilehash: 924f7a1aa891addc5841e6cdefc5226dcb056096
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804690"
 ---
-# <a name="compatibility-between-the-32-bit-and-64-bit-versions-of-office"></a>32 ビットおよび 64 ビット バージョンの Office 間での互換性
+# <a name="compatibility-between-the-32-bit-and-64-bit-versions-of-office"></a>Office の 32 ビット バージョンと 64 ビット バージョン間の互換性
 
 32 ビット バージョンの Office と 64 ビット バージョンの Office の互換性についてご確認ください。
   
@@ -23,9 +23,9 @@ Office アプリケーションは、32 ビット バージョンと 64 ビッ�
 Visual Basic for Applications 7.0 (VBA 7) は 64 ビット バージョンの Office でリリースされ、32 ビット バージョンと 64 ビット バージョンのどちらのアプリケーションでも動作します。この記事で説明されている変更は、64 ビット バージョンの Office にのみ適用されます。32 ビット バージョンの Microsoft Office を使うと、追加の変更を加えることなく、以前のバージョンの Office で作成したソリューションを使うことができます。
   
 > [!NOTE]
-> [!メモ] 既定で、64 ビット バージョンの Office をインストールすると、32 ビット バージョンが 64 ビット システムと共にインストールされます。Microsoft Office 64 ビット バージョンのインストール オプションを明示的に選択する必要があります。 
+> 既定で、64 ビット バージョンの Office をインストールすると、32 ビット バージョンが 64 ビット システムと共にインストールされます。Microsoft Office 64 ビット バージョンのインストール オプションを明示的に選択する必要があります。 
   
-VBA 7、64 ビット バージョンで動作する既存の Windows API ステートメント (**Declare**ステートメント) を更新する必要があります。 さらに、これらのステートメントで使われているユーザー定義型のアドレス ポインターと表示ウィンドウ ハンドルを更新することも必要です。 この点については、32 ビット バージョンと 64 ビット バージョン間の互換性に関する問題と推奨される解決案と共に、この記事で詳しく説明します。 
+VBA 7 では、既存の Windows API ステートメント (**Declare** ステートメント) を更新して、64 ビット バージョンで動作するようにしなければなりません。 さらに、これらのステートメントで使用されるアドレス ポインターとディスプレイ ウィンドウ ハンドルをユーザー定義型で更新する必要があります。 この点については、32 ビット バージョンと 64 ビット バージョン間の互換性に関する問題と推奨される解決案と共に、この記事で詳しく説明します。 
   
 ## <a name="comparing-32-bit-and-64-bit-systems"></a>32 ビット システムと 64 ビット システムの比較
 <a name="odc_office_Compatibility32bit64bit_Comparing32BitSystemsto64BitSystems"> </a>
@@ -67,7 +67,7 @@ Office のネイティブの 64 ビット プロセスでは 32 ビットのバ�
 VBA ライブラリとタイプ ライブラリを組み合わせれば、Office アプリケーションの作成にさまざまな機能を使えるようになります。ただし、コンピューターのオペレーティング システムや他のコンポーネントとの直接のやりとりが必要になることもあります。たとえば、メモリやプロセスの管理、ウィンドウやコントロールなどの UI 要素の操作、Windows レジストリの変更を行うときです。このような状況では、DLL ファイルに組み込まれた外部関数を使うのが最善策です。VBA でこれを行うには、 **Declare** を使って API 呼び出しを行います。 
   
 > [!NOTE]
-> [!メモ] Microsoft は、1,500 個の Declare ステートメントが含まれている Win32API.txt ファイルと、コードに含める **Declare** ステートメントをコピーするツールを提供しています。 ただし、これらのステートメントは 32 ビット システム用であるため、この記事で後ほど説明する情報に従って 64 ビットに変換する必要があります。 既存の **Declare** ステートメントは、 **PtrSafe** 属性を使って 64 ビットに対して安全であるとマークされるまでは、64 ビット VBA でコンパイルしません。 Excel MVP 1 月のファイルは Pieterse の web サイトでこの種の変換の例を検索できます[http://www.jkp-ads.com/articles/apideclarations.asp](http://www.jkp-ads.com/articles/apideclarations.asp)。 [Office コードの互換性の検査のユーザーズ ガイド](http://technet.microsoft.com/en-us/library/ee833946%28office.14%29.aspx)には、便利なツールが必要な場合は、 **PtrSafe**属性では、API の**Declare**ステートメントの構文を検査して、適切な型を返します。 
+> Microsoft は、1,500 個の Declare ステートメントが含まれている Win32API.txt ファイルと、コードに含める **Declare** ステートメントをコピーするツールを提供しています。 ただし、これらのステートメントは 32 ビット システム用であるため、この記事で後ほど説明する情報に従って 64 ビットに変換する必要があります。 既存の **Declare** ステートメントは、**PtrSafe** 属性を使って 64 ビットに対して安全なステートメントとしてマークするまでは、64 ビットの VBA にコンパイルされません。 この種類の変換の例については、Excel MVP Jan Karel Pieterse の Web サイト ([http://www.jkp-ads.com/articles/apideclarations.asp](http://www.jkp-ads.com/articles/apideclarations.asp)) をご覧ください。 [Office Code Compatibility Inspector ユーザーズ ガイド](http://technet.microsoft.com/ja-JP/library/ee833946%28office.14%29.aspx)は、**PtrSafe** 属性と適切な戻り値の型 (必要に応じて) の API **Declare** ステートメントの構文を検査するのに役立ちます。 
   
 **Declare** ステートメントの形式は、サブルーチン (戻り値がない) と関数 (戻り値がある) のどちらを呼び出すのかに応じて、次のどちらかになります。 
   
@@ -79,7 +79,7 @@ Public/Private Declare Function FunctionName Lib "Libname" alias "aliasname" (ar
 
 **SubName** 関数または **FunctionName** 関数は、プロシージャを VBA コードから呼び出すときに使用する名前を表しており、DLL ファイル内のプロシージャの実際の名前に置き換えます。プロシージャの名前として **AliasName** 引数を指定することもできます。 **Lib** キーワードの後ろには、呼び出すプロシージャが含まれている DLL ファイルの名前を指定します。引数リストには、プロシージャに渡す必要のあるパラメーターとデータ型を指定します。 
   
-次の**Declare**ステートメントは、Windows レジストリの*サブキー*を開き、その値に置き換えられます。 
+次の **Declare** ステートメントは、Windows レジストリ内の*サブキー*を開き、その値を置き換えます。 
   
 ```vb
 Declare Function RegOpenKeyA Lib "advapi32.dll" (ByVal Key As Long, ByVal SubKey As String, NewKey As Long) As Long
@@ -112,9 +112,9 @@ Declare PtrSafe Function RegOpenKeyA Lib "advapire32.dll" (ByVal hKey as LongPtr
 |データ型  <br/> |**LongLong** <br/> |これは 64 ビット バージョンの Microsoft Office でのみ使用できる 8 バイトのデータ型です。数値を代入することはできますが、数値型を代入することはできません (切り詰められるのを避けるためです)。  <br/> |
 |変換演算子  <br/> |**CLngPtr** <br/> |単純な式を **LongPtr** データ型に変換します。  <br/> |
 |変換演算子  <br/> |**CLngLng** <br/> |単純な式を **LongLong** データ型に変換します。  <br/> |
-|関数  <br/> |**VarPtr** <br/> |バリアント コンバーター。64 ビット バージョンでは **LongPtr** を返し、32 ビット バージョンでは **Long** を返します (4 バイト)。  <br/> |
-|関数  <br/> |**ありません。** <br/> |オブジェクト コンバーター。64 ビット バージョンでは **LongPtr** を返し、32 ビット バージョンでは **Long** を返します (4 バイト)。  <br/> |
-|関数  <br/> |**サポートによるサポート** <br/> |文字列コンバーター。64 ビット バージョンでは **LongPtr** を返し、32 ビット バージョンでは **Long** を返します (4 バイト)。  <br/> |
+|職務  <br/> |**VarPtr** <br/> |バリアント コンバーター。64 ビット バージョンでは **LongPtr** を返し、32 ビット バージョンでは **Long** を返します (4 バイト)。  <br/> |
+|職務  <br/> |**ObjPtr** <br/> |オブジェクト コンバーター。64 ビット バージョンでは **LongPtr** を返し、32 ビット バージョンでは **Long** を返します (4 バイト)。  <br/> |
+|職務  <br/> |**StrPtr** <br/> |文字列コンバーター。64 ビット バージョンでは **LongPtr** を返し、32 ビット バージョンでは **Long** を返します (4 バイト)。  <br/> |
    
 次の例は、これらのアイテムのいくつかについて、 **Declare** ステートメントでの使用方法を示したものです。 
   
@@ -141,7 +141,7 @@ Declare PtrSafe Function RegOpenKeyA Lib "advapi32.dll" (ByVal Key As LongPtr, B
 
 要約すると次のようになります。64 ビットのコードを書き、それを以前のバージョンの Office で使用する場合は、 **VBA7** 条件付きコンパイル定数を使用する必要があります。しかし、32 ビットのコードを書き、それを Office で使用する場合は、このコンパイル定数を使用しなくても、そのコードは以前のバージョンの Office での動作と同じになります。32 ビット バージョンには間違いなく 32 ビットのステートメントが使われ、64 ビット バージョンには間違いなく 64 ビットのステートメントが使われるようにするには、 **Win64** 条件付きコンパイル定数を使用するのが最善策です。 
   
-## <a name="using-conditional-compilation-attributes"></a>条件付きコンパイル属性を使用します。
+## <a name="using-conditional-compilation-attributes"></a>条件付きコンパイル属性の使用
 <a name="odc_office_Compatibility32bit64bit_UsingConditionalCompilationAttributes"> </a>
 
 次に、更新する必要がある 32 ビット用に記述された VBA コードの例を示します。このレガシー コードのデータ型は、ハンドルやポインターを参照しているため、 **LongPtr** を使うように更新されていることに注意してください。 
@@ -164,7 +164,7 @@ Public Type BROWSEINFO
 End Type
 ```
 
-### <a name="vba-code-rewritten-for-64-bit-versions"></a>VBA コードが 64 ビット バージョンの
+### <a name="vba-code-rewritten-for-64-bit-versions"></a>64 ビット バージョン用に記述された VBA コード
   
 ```vb
 #if VBA7 then    ' VBA7 
@@ -209,15 +209,15 @@ End Sub
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-#### <a name="when-should-i-use-the-64-bit-version-of-office"></a>Office の 64 ビット バージョンを使用するか。
+#### <a name="when-should-i-use-the-64-bit-version-of-office"></a>どのような場合に 64 ビット バージョンの Office を使うべきですか。
   
 使っているホスト アプリケーション (Excel、Word など) によって異なります。たとえば、Excel を 64 ビット バージョンの Microsoft Office で使うと、より大きなワークシートを処理できます。
   
-#### <a name="can-i-install-64-bit-and-32-bit-versions-of-office-side-by-side"></a>Office サイド バイ サイドの 64 ビットと 32 ビットのバージョンをインストールすることができますか。
+#### <a name="can-i-install-64-bit-and-32-bit-versions-of-office-side-by-side"></a>64 ビット バージョンと 32 ビット バージョンの Office を同時にインストールできますか。
   
 いいえ。
   
-#### <a name="when-should-i-convert-long-parameters-to-longptr"></a>LongPtr を長いパラメーターを変換する必要がある場合
+#### <a name="when-should-i-convert-long-parameters-to-longptr"></a>どのような場合に Long パラメーターを LongPtr に変換する必要がありますか。
   
 呼び出す関数については、Microsoft Developers Network の Windows API ドキュメントを確認する必要があります。ハンドルとポインターは **LongPtr** に変換する必要があります。たとえば、 [RegOpenKeyA](http://msdn.microsoft.com/library/c8a590f2-3249-437f-a320-c7443d42b792.aspx) のドキュメントは、次のシグネチャを提供します。 
   
@@ -241,7 +241,7 @@ LONG WINAPI RegOpenKeyEx(
 |samDesired [in]  <br/> |キーに対する必要なアクセス権を指定するマスク。  <br/> |
 |phkResult [out]  <br/> |キーを開くハンドルを受け取る変数への *ポインター*  。  <br/> |
    
-[Win32API_PtrSafe.txt](http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=035b72a5-eef9-4baf-8dbc-63fbd2dd982b) で **Declare** ステートメントは、次のように定義されています。 
+[Win32API_PtrSafe.txt](http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=035b72a5-eef9-4baf-8dbc-63fbd2dd982b) では、**Declare** ステートメントが次のように定義されています。 
   
 ```vb
 Declare PtrSafe Function RegOpenKeyEx Lib "advapi32.dll" Alias "RegOpenKeyExA" (ByVal hKey As LongPtr , ByVal lpSubKey As String, ByVal ulOptions As Long, ByVal samDesired As Long, phkResult As LongPtr ) As Long
@@ -262,13 +262,13 @@ Type MSG
 End TypeF
 ```
 
-#### <a name="when-should-i-use-strptr-varpt-and-objptr"></a>使用するサポートによるサポート、varpt とはありませんか。
+#### <a name="when-should-i-use-strptr-varpt-and-objptr"></a>strptr、varpt、objptr は、どのような場合に使用すべきですか。
   
 これらの関数は、文字列、変数、オブジェクトへのポインターを取得するために使う必要があります。64 ビット バージョンの Office では、これらの関数は 64 ビットの **LongPtr** を返します。これは **Declare** ステートメントに渡すことができます。これらの関数の使い方は、以前のバージョンの VBA と変わっていません。唯一の違いは、 **LongPtr** を返すことです。
   
 ## <a name="see-also"></a>関連項目
 <a name="odc_office_Compatibility32bit64bit_AdditionalResources"> </a>
 
-- [Anatomy of a Declare Statement](https://msdn.microsoft.com/en-us/library/office/aa671659.aspx)
+- [Anatomy of a Declare Statement](https://msdn.microsoft.com/ja-JP/library/office/aa671659.aspx)
     
 

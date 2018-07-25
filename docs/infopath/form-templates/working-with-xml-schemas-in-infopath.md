@@ -8,7 +8,7 @@ ms.assetid: c1d70e9f-b9fc-7bdb-107e-d0cd8191607b
 description: Microsoft InfoPath で作成するフォーム テンプレートでは、InfoPath フォームで入力、編集、出力される XML の構造とデータの検証が XML スキーマ (XSD) を使用して実行されます。InfoPath のフォーム デザイン ウィンドウで作成したすべてのフォーム テンプレートには、実行時の検証に使用される XSD スキーマ ファイル (.xsd) が少なくとも 1 つ含まれています。
 ms.openlocfilehash: 6921a2206c098992a0a24e85c263992a0e2c98b1
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799238"
@@ -18,7 +18,7 @@ ms.locfileid: "19799238"
 Microsoft InfoPath で作成するフォーム テンプレートでは、InfoPath フォームで入力、編集、出力される XML の構造とデータの検証が XML スキーマ (XSD) を使用して実行されます。InfoPath のフォーム デザイン ウィンドウで作成したすべてのフォーム テンプレートには、実行時の検証に使用される XSD スキーマ ファイル (.xsd) が少なくとも 1 つ含まれています。
   
 > [!NOTE]
-> [!メモ] このトピックで説明する内容は、InfoPath エディターでの使用を目的としてフォーム テンプレートをデザインする場合に適用されます。ブラウザー互換のフォーム テンプレートの場合は、XSD スキーマの要件がより厳しくなります。詳細については、ブラウザー互換フォーム テンプレートの XML スキーマに関する MSDN のドキュメントを参照してください。 
+> このトピックで説明する内容は、InfoPath エディターでの使用を目的としてフォーム テンプレートをデザインする場合に適用されます。ブラウザー互換のフォーム テンプレートの場合は、XSD スキーマの要件がより厳しくなります。詳細については、ブラウザー互換フォーム テンプレートの XML スキーマに関する MSDN のドキュメントを参照してください。 
   
 ## <a name="using-externally-authored-xml-schemas"></a>外部で作成された XML スキーマを使用する
 
@@ -39,7 +39,7 @@ InfoPath の外部で作成された XSD スキーマ ファイルを読み込�
 **ENTITY** 型と **ENTITIES** 型は、検証にドキュメント型定義 (DTD) が必要ですが、InfoPath は DTD をサポートしていません。InfoPath では、このようなスキーマに基づくフォーム テンプレートはデザインできないため、 **ENTITY** 型の派生元である **NCName** 型を **ENTITY** の代わりに使用することを勧めるエラー メッセージが表示されます。 
   
 > [!NOTE]
->  [!メモ] InfoPath のデザイン モード以外の場所でフォーム テンプレートを手動で作成し、このテンプレートで **ENTITY** 型と **ENTITIES** 型を含む XSD を使用する場合、これらの型に必要な DTD が Template.xml ファイルに記述されていれば、フォーム テンプレートが実行時に機能します。 
+>  InfoPath のデザイン モード以外の場所でフォーム テンプレートを手動で作成し、このテンプレートで **ENTITY** 型と **ENTITIES** 型を含む XSD を使用する場合、これらの型に必要な DTD が Template.xml ファイルに記述されていれば、フォーム テンプレートが実行時に機能します。 
   
 ## <a name="required-xsdany-element"></a>必須の xsd:any 要素
 
@@ -104,7 +104,7 @@ InfoPath のデザイン モードでは、このような XSD コンストラ�
   
 ## <a name="optional-sibling-with-same-qualified-name"></a>修飾名が同じ省略可能な兄弟要素
 
-次のスキーマ フラグメントは、同じ修飾名を持つ省略可能な兄弟を示しています (`QName`)。
+次のスキーマ フラグメントは、修飾名 (`QName`) が同じ省略可能な兄弟要素を示しています。
   
 ```xml
 <xsd:sequence> 
@@ -181,7 +181,7 @@ InfoPath のデザイン モードでは、このような XSD コンストラ�
 ```
 
 > [!NOTE]
-> [!メモ] InfoPath では、スキーマ ファイル (.xsd) の内容が変更されることはありませんが、論理的にスキーマ ファイルがデザイン用のサブセットとして扱われることはあります。スキーマ ファイルは、デザイン時も実行時もフォーム テンプレート内では必ず無変更のまま維持されます。 
+> InfoPath では、スキーマ ファイル (.xsd) の内容が変更されることはありませんが、論理的にスキーマ ファイルがデザイン用のサブセットとして扱われることはあります。スキーマ ファイルは、デザイン時も実行時もフォーム テンプレート内では必ず無変更のまま維持されます。 
   
 ## <a name="debugging-common-xsd-errors"></a>一般的な XSD エラーをデバッグする
 
@@ -214,7 +214,7 @@ XSD スキーマは拡張が可能で、他のスキーマをインポートお�
 **schemaLocation** 属性がない場合 (一部のコンバーターで起こることがあります)、MSXML でスキーマ ファイルが見つからないためエラーが報告されます。このエラーが表示された場合は、schemaLocation 属性に指定されているリソースまたは場所に、フォーム テンプレートのユーザーがアクセス可能かどうかも確認してください。 **schemaLocation** 属性で参照されているサーバーまたはディレクトリが停止しているか存在しない場合、またはユーザーにアクセス許可が割り当てられていない場合は、当然のことながらエラーが発生します。また、インポートまたはインクルードされるスキーマがすべて有効なスキーマであることも確認する必要があります。 
   
 > [!NOTE]
-> [!メモ] **schemaLocation** 属性に起因するエラーが問題となるのは、InfoPath でスキーマを最初にインポートするとき、つまり、既存のスキーマに基づいて初めてフォームのデザインを開始するときに限られます。それ以降は、InfoPath では、フォーム テンプレートに格納されているスキーマ ファイルのキャッシュ済みバージョンが使用されます。 
+> **schemaLocation** 属性に起因するエラーが問題となるのは、InfoPath でスキーマを最初にインポートするとき、つまり、既存のスキーマに基づいて初めてフォームのデザインを開始するときに限られます。それ以降は、InfoPath では、フォーム テンプレートに格納されているスキーマ ファイルのキャッシュ済みバージョンが使用されます。 
   
 スキーマをインポートする場合は、そのスキーマで **targetNamespace** 属性が指定されていなければ、namespace 属性を空にすることができます。一般に、インポート時の名前空間は、インポートするスキーマに指定されている **targetNamespace** に一致しなければなりません。 
   
@@ -254,7 +254,7 @@ XSD スキーマの存在意義は、XML のデータ構造と型のセマンテ
 
 ```
 
-この XML フラグメントでは、明確ではないかどうか、 * \<file_path\>* 要素は、choice 宣言の最初の部分から必要なノードまたは choice 宣言の 2 番目の部分からのオプションの 1 つです。 このような区別は、次の理由で重要です。 
+この XML フラグメントでは、*\<file_path\>* 要素が、choice 要素宣言の最初の部分を出所とする必須ノードなのか、choice 要素宣言の 2 番目の部分を出所とする省略可能なノードなのかが判然としません。 この区別は、次の理由で重要になってきます。 
   
 1. この XML フラグメントが choice 要素宣言の最初の部分に照らして検証される場合、XML はスキーマに対して有効と判断されます。
     
@@ -358,9 +358,9 @@ XSD スキーマは、通常、実際のインスタンス ドキュメントが
 
 この例が正しくないことを理解するには、 **xsd:NMTOKEN** 型がどのように定義されているかを理解する必要があります。W3C によるデータ型仕様では、 **NMTOKEN** 型は「An NMTOKEN (name token) is any mixture of name characters (NMTOKEN (名前トークン) は名前文字の任意の組み合わせとする)」と定義されています。 
   
-さらに調査する場合とする ' &' が有効な文字、したがって"M & Ms"を検証しません**わかります**。 
+さらに掘り下げて調べると、'&' が有効な名前文字ではないため、"M&Ms" は **NMTOKEN** 型として有効ではないことがわかります。 
   
-## <a name="empty-sequence-or-choice-elements"></a>空の sequence 要素または choice 要素
+## <a name="empty-sequence-or-choice-elements"></a>空のシーケンスまたは選択要素
 
 MSXML では、次の例に示すような、空の **xsd:choice** 要素または **xsd:sequence** 要素を含むスキーマ宣言について、エラーが報告される場合があります。 
   
@@ -524,16 +524,16 @@ XML Schema 勧告における非決定論の定義に基づくと、 **xsd:all**
 
 ```
 
-## <a name="conclusion"></a>まとめ
+## <a name="conclusion"></a>終わりに
 
 外部で作成された XML スキーマ (.xsd) ファイルに基づく XML フォーム ソリューションのデザインに関する InfoPath のサポートを有効活用することで、業界標準のスキーマまたは所属する会社や組織で作成したカスタム スキーマと連携するフォーム テンプレートを作成できます。この記事で解説した内容を参考にして、InfoPath と互換性のあるカスタムの XSD スキーマ ファイルを作成し、外部で作成された XSD ファイルを InfoPath のデザイン環境に読み込む際によく発生する問題を解決できます。
   
 ## <a name="see-also"></a>関連項目
 
-- [W3C XML Schema](http://www.w3.org/XML/Schema)
+- [W3C XML スキーマ](http://www.w3.org/XML/Schema)
 - [W3C XML Schema Primer](http://www.w3.org/TR/xmlschema-0/)
 - [W3C XML Schema Structures Reference (英語)](http://www.xml.com/pub/a/2000/11/29/schemas/structuresref.mdl)
 - [W3C XML Schema Datatypes Reference (英語)](http://www.xml.com/pub/a/2000/11/29/schemas/dataref.mdl)
 - [XML Schema Tutorial (英語)](http://www.w3schools.com/schema/default.asp)
-- [データ プラットフォーム デベロッパー センター (英語)](http://msdn.microsoft.com/en-us/xml/default.aspx)
+- [データ プラットフォーム デベロッパー センター (英語)](http://msdn.microsoft.com/ja-JP/xml/default.aspx)
 

@@ -8,7 +8,7 @@ ms.assetid: 394b8e6f-9132-4c98-8fd6-46ad3c871440
 description: Office ドキュメント キャッシュ (ODC) を制御するための CSISyncClient の使用法について取り上げます。
 ms.openlocfilehash: adaa56bf040889bd8220506bcfab8fdb0b7ab6c0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804732"
@@ -33,7 +33,7 @@ CSISyncClient は以下のインターフェイスを使用します。
 
 これは、Office でファイルを同期するために使用するプライマリ インターフェイスです。
   
-- プログラム Id: Office.LocalSyncClient
+- ProgID: Office.LocalSyncClient
 - CLSID: {14286318-B6CF-49a1-81FC-D74AD94902F9}
 - TypeLib: {66CDD37F-D313-4e81-8C31-4198F3E42C3C}
    
@@ -202,7 +202,7 @@ CsiSyncClient COM オブジェクトによってサポートされているフ�
   
  _bstrProgID_
   
-双方向通信のためのコンシューマーの COM オブジェクトを示します。空にすることはできません。最大長は 39 文字です。ProgID について詳しくは、「[\<ProgID\> Key](http://msdn.microsoft.com/en-us/library/ms690196.aspx.aspx)」をご覧ください。 
+双方向通信のためのコンシューマーの COM オブジェクトを示します。空にすることはできません。最大長は 39 文字です。ProgID について詳しくは、「[\<ProgID\> Key](http://msdn.microsoft.com/ja-JP/library/ms690196.aspx.aspx)」をご覧ください。 
   
  _bstrFileSystemDirectoryHint_
   
@@ -232,7 +232,7 @@ CsiSyncClient が変更について通知するコールバック インター�
 
 LocalFileChange は、指定のファイルのアップロードを試みるように CsiSyncClient COM オブジェクトに指示する場合に使用します。このメソッドは、ファイルの現在のコンテンツの読み取り操作を含め、ファイルをアップロード用に準備します。アップロードが既に保留中の場合には、以前のアップロードは破棄され、アップロード用に新しいコンテンツが準備されます。対象ファイルが アプリケーションで編集するために開かれている場合、このメソッドによって S_OK が戻され、その場合にはファイルのアップロード準備はなされません (変更がある場合には、アプリケーションが既にこの手順を実行しているはずです)。
   
-このメソッドでは、ブロックされたアップロードというマークが以前に付けられているアップロードも可能です (「[ILSCLocalSyncClient::RenameFile](using-csisyncclient-to-control-the-office-document-cache-odc.md#ILSCLocalSyncClient_RenameFile)」を参照)。
+以前にアップロード ブロック済みとしてマークされていた場合、このメソッドによってアップロードが可能になります ([ILSCLocalSyncClient::RenameFile ](using-csisyncclient-to-control-the-office-document-cache-odc.md#ILSCLocalSyncClient_RenameFile) を参照)。
   
 `HRESULT ILSCLocalSyncClient::LocalFileChange ([in] BSTR bstrFileSystemPath, [in] BSTR bstrWebPath, [in] BSTR bstrResourceID)`
 
@@ -313,7 +313,7 @@ ResetCache は、Initialize で指定された SuppliedID と関連付けられ�
   
 `HRESULT ILSCLocalSyncClient::ResetCache()`
 
-##### <a name="parameters"></a>Parameters
+##### <a name="parameters"></a>パラメーター
 
 なし
   
@@ -412,7 +412,7 @@ COM オブジェクトからキャッシュをアンロードし、終了操作�
   
 `HRESULT ILSCLocalSyncClient::Uninitialize ()`
 
-##### <a name="parameters"></a>Parameters
+##### <a name="parameters"></a>パラメーター
 
 なし。
   
@@ -426,7 +426,7 @@ COM オブジェクトからキャッシュをアンロードし、終了操作�
    
 ### <a name="interface-ienumlscevent"></a>Interface IEnumLSCEvent
 
-このインターフェイスは、ILSCEvent イベントの一覧を表します。
+このインターフェイスは ILSCEvent イベントのリストを表します。
   
 **パブリック メンバー関数**
 
@@ -465,7 +465,7 @@ ILSCEvent インターフェイスへのポインター。
   
 ### <a name="interface-ilscevent"></a>インターフェイス ILSCEvent
 
-このインターフェイスは、同期イベントを表します。イベントに関するすべての情報は、このインターフェイスから取得できます。
+このインターフェイスは同期イベントを表します。このインターフェイスから、同期イベントに関するすべての情報を取得できます。
   
 **パブリック メンバー関数**
 
@@ -473,7 +473,7 @@ ILSCEvent インターフェイスへのポインター。
 
 この値が取り込まれるのは、[ILSCLocalSyncClient::GetChanges](using-csisyncclient-to-control-the-office-document-cache-odc.md#ILSCLocalSyncClient_GetChanges) が呼び出されるときであり、イベントが作成されたときではないので、現在のファイルのステータスのみを入手できます。競合ステータスが変更された時点でのファイルのステータスではありません。 
   
-この値が取り込まれるのは、イベントの[列挙 LSCEventType](using-csisyncclient-to-control-the-office-document-cache-odc.md#Enum_LSCEventType) が LSCEventType_OnLocalConflictStateChanged の場合だけです。 
+この値が取り込まれるのは、イベントの [Enum LSCEventType](using-csisyncclient-to-control-the-office-document-cache-odc.md#Enum_LSCEventType) が LSCEventType_OnLocalConflictStateChanged の場合のみです。 
   
 `HRESULT ILSCEvent::GetConflictStatus ([out] VARIANT_BOOL * pfIsInConflict)`
 
@@ -489,7 +489,7 @@ ILSCEvent インターフェイスへのポインター。
   
 #### <a name="ilsceventgeterror"></a>ILSCEvent::GetError
 
-この値が取り込まれるのは、イベントの[列挙 LSCEventType](using-csisyncclient-to-control-the-office-document-cache-odc.md#Enum_LSCEventType) が LSCEventType_OnServerChangesDownloaded または LSCEventType_OnLocalChangesUploaded の場合のみです。 
+この値が取り込まれるのは、イベントの [Enum LSCEventType](using-csisyncclient-to-control-the-office-document-cache-odc.md#Enum_LSCEventType) が LSCEventType_OnServerChangesDownloaded または LSCEventType_OnLocalChangesUploaded の場合のみです。 
   
 `HRESULT ILSCEvent::GetError ([out] LONG * pnError)`
 
@@ -505,7 +505,7 @@ ILSCEvent インターフェイスへのポインター。
   
 #### <a name="ilsceventgetetag"></a>ILSCEvent::GetETag
 
-この値が取り込まれるのは、イベントの[列挙 LSCEventType](using-csisyncclient-to-control-the-office-document-cache-odc.md#Enum_LSCEventType) が LSCEventType_OnServerChangesDownloaded または LSCEventType_OnLocalChangesUploaded の場合のみです。 
+この値が取り込まれるのは、イベントの [Enum LSCEventType](using-csisyncclient-to-control-the-office-document-cache-odc.md#Enum_LSCEventType) が LSCEventType_OnServerChangesDownloaded または LSCEventType_OnLocalChangesUploaded の場合のみです。 
   
 `HRESULT ILSCEvent::GetETag ([out] BSTR * pbstrETag)`
 
@@ -588,7 +588,7 @@ ILSCEvent インターフェイスへのポインター。
   
 #### <a name="ilsceventgetsyncerrortype"></a>ILSCEvent::GetSyncErrorType
 
-この値が取り込まれるのは、イベントの[列挙 LSCEventType](using-csisyncclient-to-control-the-office-document-cache-odc.md#Enum_LSCEventType) が LSCEventType_OnServerChangesDownloaded または LSCEventType_OnLocalChangesUploaded の場合のみです。 
+この値が取り込まれるのは、イベントの [Enum LSCEventType](using-csisyncclient-to-control-the-office-document-cache-odc.md#Enum_LSCEventType) が LSCEventType_OnServerChangesDownloaded または LSCEventType_OnLocalChangesUploaded の場合のみです。 
   
 `HRESULT ILSCEvent::GetSyncErrorType ([out] LSCEventSyncErrorType * pnSyncErrorType)`
 
@@ -607,7 +607,7 @@ ILSCEvent インターフェイスへのポインター。
    
 #### <a name="ilsceventgetwebpath"></a>ILSCEvent::GetWebPath
 
-この値が取り込まれるのは、イベントの[列挙 LSCEventType](using-csisyncclient-to-control-the-office-document-cache-odc.md#Enum_LSCEventType) が LSCEventType_OnFilePathConflict の場合のみです。 
+この値が取り込まれるのは、イベントの [Enum LSCEventType](using-csisyncclient-to-control-the-office-document-cache-odc.md#Enum_LSCEventType) が LSCEventType_OnFilePathConflict の場合のみです。 
   
 `HRESULT ILSCEvent::GetWebPath ([out] BSTR * pbstrWebPath)`
 
@@ -650,7 +650,7 @@ ILSCEvent インターフェイスへのポインター。
    
 ### <a name="interface-ipartneractivitycallback"></a>Interface IPartnerActivityCallback
 
-このインターフェイスには、CSISyncClient COM オブジェクトに対するコールバック関数が備わっています。
+このインターフェイスは、CSISyncClient COM オブジェクトに対するコールバック関数を提供します。
   
 **パブリック メンバー関数**
 
@@ -670,7 +670,7 @@ ILSCEvent インターフェイスへのポインター。
 
 必ず S_OK が戻ります。
   
-## <a name="enumerations"></a>列挙体
+## <a name="enumerations"></a>列挙型
 
 CSISyncClient は次の列挙を使用します。
   

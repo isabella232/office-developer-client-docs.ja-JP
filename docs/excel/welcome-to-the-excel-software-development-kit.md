@@ -1,5 +1,5 @@
 ---
-title: 'title: "Excel �\�t�g�E�F�A�J���L�b�g�ւ悤����" ms.author: mroberts author: mroberts manager: soliver ms.date: 11/16/2014 ms.audience: Developer ms.topic: overview keywords:'
+title: Excel ソフトウェア開発キットへようこそ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,56 +8,56 @@ keywords:
 - 'excel 2007 xll software development kit,add-ins [Excel 2007] ms.prod: office-online-server localization_priority: Normal ms.assetid: abfc9d76-6f22-49b9-ba45-eb7a54b082e0'
 localization_priority: Normal
 ms.assetid: abfc9d76-6f22-49b9-ba45-eb7a54b082e0
-description: 'description: "�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio"'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 4de88a12b5fb945c6243e52b77babe88b2d02417
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798954"
 ---
-# <a name="welcome-to-the-excel-software-development-kit"></a>Excel �\�t�g�E�F�A�J���L�b�g�ւ悤����
+# <a name="welcome-to-the-excel-software-development-kit"></a>Excel ソフトウェア開発キットへようこそ
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-Excel 2013 XLL �\�t�g�E�F�A�J���L�b�g (SDK) �h�L�������g�ւ悤�����B���̃��t�@�����X�ɂ́AMicrosoft Excel 2013 XLL �̊J���ɖ𗧂T�v���A�v���O���~���O �^�X�N�A�T���v�����܂܂�Ă��܂��B
+Excel 2013 XLL ソフトウェア開発キット (SDK) ドキュメントへようこそ。このリファレンスには、Microsoft Excel 2013 XLL の開発に役立つ概要情報、プログラミング タスク、サンプルが含まれています。
   
-�X�V: 2012 �N 11 ��
+更新: 2012 年 11 月
   
-[Excel 2013 XLL SDK](http://go.microsoft.com/fwlink/?LinkID=251082&amp;clcid=0x409) ��_�E�����[�h���܂��B
+[Excel 2013 XLL SDK](http://go.microsoft.com/fwlink/?LinkID=251082&amp;clcid=0x409) をダウンロードします。
   
-Excel 2013 XLL SDK �ɂ́A�����܂܂�Ă��܂��B
+Excel 2013 XLL SDK には、次が含まれています。
   
-- **C �A�v���P�[�V���� �v���O���~���O �C���^�[�t�F�C�X (API)**? DLL �� Excel 2013 �̋@�\�ɃA�N�Z�X�ł���悤�ɂ���w�b�_�[ �t�@�C���ƃ\�[�X �t�@�C���A����� Excel �A�h�C�� �}�l�[�W���[�Ƌ������邽�߂� DLL �����J���ׂ��C���^�[�t�F�C�X�̐�����܂܂�܂��B
+- **C アプリケーション プログラミング インターフェイス (API)**— DLL が Excel 2013 の機能にアクセスできるようにするヘッダー ファイルとソース ファイル、および Excel アドイン マネージャーと協働するために DLL が公開すべきインターフェイスの説明が含まれます。
     
-- **Microsoft Visual Studio �v���W�F�N�g**? C/C++ �\�[�X �R�[�h���܂܂�AC API �̎g�p���@������܂��B�����̃T���v�� �v���W�F�N�g�ɂ͗Ⴊ�܂܂�A�Ǝ��̃A�h�C���J���̊J�n�_�ɂȂ�܂��B
+- **Microsoft Visual Studio プロジェクト**— C/C++ ソース コードが含まれ、C API の使用方法を示します。これらのサンプル プロジェクトには例が含まれ、独自のアドイン開発の開始点になります。
     
-SDK �̃h�L�������g�ɂ́A�ȉ��̃Z�N�V�������܂܂�܂��B
+SDK のドキュメントには、以下のセクションが含まれます。
   
-- [Excel XLL SDK �̊T�v](getting-started-with-the-excel-xll-sdk.md)
+- [Excel XLL SDK の概要](getting-started-with-the-excel-xll-sdk.md)
     
-- [Excel XLL �̊J��](developing-excel-xlls.md)
+- [Excel XLL の開発](developing-excel-xlls.md)
     
-- [Excel �N���X�^�[ �R�l�N�^�̊J��](developing-excel-cluster-connectors.md)
+- [Excel クラスター コネクタの開発](developing-excel-cluster-connectors.md)
     
-- [Excel XLL SDK API �֐����t�@�����X](excel-xll-sdk-api-function-reference.md)
+- [Excel XLL SDK API 関数リファレンス](excel-xll-sdk-api-function-reference.md)
     
-## <a name="functionality-not-covered"></a>�ΏۊO�̋@�\
+## <a name="functionality-not-covered"></a>対象外の機能
 
-���̓�e�͎��グ�܂���B
+次の内容は取り上げません。
   
-- Excel �}�N�� (XML) �V�[�g�̃��[�U�[��`�֐��ƃR�}���h�̊J���B
+- Excel マクロ (XML) シートのユーザー定義関数とコマンドの開発。
     
-- XML �}�N���̎��s�̗���𐧌䂷�� DLL �̃��[�U�[��`�֐��̍쐬�B
+- XML マクロの実行の流れを制御する DLL のユーザー定義関数の作成。
     
-    ���̂悤�Ȋ֐��͓��ʂȃt���[����̃f�[�^�^��Ԃ����Ƃŋ@�\���܂����A����ɂ��Ă���̃h�L�������g�ł͐�����܂���B
+    そのような関数は特別なフロー制御のデータ型を返すことで機能しますが、これについてもこのドキュメントでは説明しません。
     
-## <a name="related-links"></a>�֘A�����N
+## <a name="related-links"></a>関連リンク
 
-[Excel �f�x���b�p�[ �Z���^�[](http://msdn.microsoft.com/en-us/office/aa905411.aspx)
+[Excel デベロッパー センター](http://msdn.microsoft.com/ja-JP/office/aa905411.aspx)
   
-[Microsoft Office �f�x���b�p �Z���^�[](http://msdn.microsoft.com/en-us/office/default.aspx)
+[Microsoft Office デベロッパー センター](http://msdn.microsoft.com/ja-JP/office/default.aspx)
   
-[Excel 2010 SDK: Excel 2010 XLL �\�t�g�E�F�A�J���L�b�g](http://go.microsoft.com/fwlink/?LinkID=186435&amp;clcid=0x409)
+[Excel 2010 SDK: Excel 2010 XLL ソフトウェア開発キット](http://go.microsoft.com/fwlink/?LinkID=186435&amp;clcid=0x409)
   
 

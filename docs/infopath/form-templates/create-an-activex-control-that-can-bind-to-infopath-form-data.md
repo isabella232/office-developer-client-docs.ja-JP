@@ -8,7 +8,7 @@ ms.assetid: a0d62047-bf08-9f70-de00-7f81ef1331f1
 description: InfoPath エディターで開くように設計された InfoPath フォームの中で、ActiveX コントロールをホストできます。これらのコントロールは、既存のもの (いくつかの制約があります) を利用するか、または InfoPath 用に特別に作成できます。
 ms.openlocfilehash: 90378533a7c3cde4a1927753c0325fdd8d0b3ce5
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799102"
@@ -25,7 +25,7 @@ InfoPath の他のコントロールと同様に、ActiveX コントロールで
     
 - **IPersistPropertyBag**
     
-- **初期化**
+- **IPersistStreamInit**
     
 - **IPropertyPage**
     
@@ -41,7 +41,7 @@ InfoPath の他のコントロールと同様に、ActiveX コントロールで
     
 ドキュメント オブジェクト モデル (DOM) のプロパティがコントロール内で変更されたときに InfoPath によってそれらのプロパティが更新されるように、次のインターフェイスをコントロールで実装する必要があります。
   
-- **コネクション**
+- **IConnectionPointContainer**
     
 - **IEnumConnectionPoints**
     
@@ -51,9 +51,9 @@ InfoPath の他のコントロールと同様に、ActiveX コントロールで
     
 また、コントロールとの統合をさらに密接にする、InfoPath 固有の 2 つの COM インターフェイスがあります。
   
-- [IInfoPathControl](http://msdn.microsoft.com/en-us/library/bb264625.aspx)
+- [IInfoPathControl](http://msdn.microsoft.com/ja-JP/library/bb264625.aspx)
     
-- [IInfoPathControlSite](http://msdn.microsoft.com/en-us/library/bb264627.aspx)
+- [IInfoPathControlSite](http://msdn.microsoft.com/ja-JP/library/bb264627.aspx)
     
 ## <a name="add-an-activex-control-to-the-infopath-design-environment"></a>InfoPath デザイン環境に ActiveX コントロールを追加する
 
@@ -68,7 +68,7 @@ InfoPath の他のコントロールと同様に、ActiveX コントロールで
 - データ型バインディングを指定する。
     
 > [!NOTE]
-> [!メモ] ActiveX コントロールを作成していて、既に InfoPath の [ **コントロール**] 作業ウィンドウに追加している場合は、InfoPath を閉じるまで ActiveX コントロールをビルドし直すことができなくなります。 
+> ActiveX コントロールを作成していて、既に InfoPath の [ **コントロール**] 作業ウィンドウに追加している場合は、InfoPath を閉じるまで ActiveX コントロールをビルドし直すことができなくなります。 
   
 ## <a name="deploy-an-activex-control"></a>ActiveX コントロールを展開する
 
@@ -78,7 +78,7 @@ ActiveX コントロールを配布するにはインストーラーを作成し
 
 
 
-演習 6: InfoPath 2003 で ActiveX コントロールを追加します。
+ラボ 6: InfoPath 2003 で ActiveX コントロールを追加する
   
-[Creating an InfoPath Custom Control using C# and .NET (InfoPath Team Blog)](http://blogs.msdn.com/infopath/archive/2005/04/15/creating-an-infopath-custom-control-using-c-and-net.aspx)
+[Creating an InfoPath Custom Control using C# and .NET (InfoPath チームのブログ)](http://blogs.msdn.com/infopath/archive/2005/04/15/creating-an-infopath-custom-control-using-c-and-net.aspx)
 
