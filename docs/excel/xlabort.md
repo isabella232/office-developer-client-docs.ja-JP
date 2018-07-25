@@ -10,49 +10,49 @@ keywords:
 - xlabort function [excel 2007]
 localization_priority: Normal
 ms.assetid: 0fe71454-6b00-464b-8abf-afb209d57754
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: e90cbe496404b4cc602dee1ad21c91c8f5f91bfd
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798965"
 ---
-# <a name="xlabort"></a><span data-ttu-id="3f50f-104">xlAbort</span><span class="sxs-lookup"><span data-stu-id="3f50f-104">xlAbort</span></span>
+# <a name="xlabort"></a><span data-ttu-id="b4289-104">xlAbort</span><span class="sxs-lookup"><span data-stu-id="b4289-104">xlAbort</span></span>
 
- <span data-ttu-id="3f50f-105">**適用されます**Excel 2013 |。Office 2013 |Visual Studio</span><span class="sxs-lookup"><span data-stu-id="3f50f-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+ <span data-ttu-id="b4289-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="b4289-105">Applies to: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="3f50f-p101">�V�X�e����̑��̃^�X�N�Ƀv���Z�b�T�𐶐����A���[�U�[�� **Esc** ������ă}�N��������������ǂ�����m�F���܂��B�u�b�N�̍Čv�Z���Ƀ��[�U�[�� **Esc** ���������ꍇ�́A���̊֐���Ăяo�����Ƃɂ���ă��[�N�V�[�g�֐���Ō��o���邱�Ƃ�ł��܂��B</span><span class="sxs-lookup"><span data-stu-id="3f50f-p101">Yields the processor to other tasks in the system and checks whether the user has pressed **ESC** to cancel a macro. If the user has pressed **ESC** during a workbook recalculation, it can also be detected from within a worksheet function by calling this function.</span></span> 
+<span data-ttu-id="b4289-p101">システム内の他のタスクにプロセッサを生成し、ユーザーが **Esc** を押してマクロを取り消したかどうかを確認します。ブックの再計算中にユーザーが **Esc** が押した場合は、この関数を呼び出すことによってワークシート関数内で検出することもできます。</span><span class="sxs-lookup"><span data-stu-id="b4289-p101">Yields the processor to other tasks in the system and checks whether the user has pressed **ESC** to cancel a macro. If the user has pressed **ESC** during a workbook recalculation, it can also be detected from within a worksheet function by calling this function.</span></span> 
   
 ```cs
 Excel12(xlAbort, LPXLOPER12 pxRes, 1, LPXLOPER12 pxRetain);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="3f50f-108">�p�����[�^�[</span><span class="sxs-lookup"><span data-stu-id="3f50f-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="b4289-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4289-108">Parameters</span></span>
 
- <span data-ttu-id="3f50f-109">_pxRetain_(**xltypeBool**)</span><span class="sxs-lookup"><span data-stu-id="3f50f-109">_pxRetain_ (**xltypeBool**)</span></span>
+ <span data-ttu-id="b4289-109">_pxRetain_ (**xltypeBool**)</span><span class="sxs-lookup"><span data-stu-id="b4289-109">_pxRetain_ (**xltypeBool**)</span></span>
   
-<span data-ttu-id="3f50f-110">(省略可能)。</span><span class="sxs-lookup"><span data-stu-id="3f50f-110">(Optional).</span></span> <span data-ttu-id="3f50f-111">**FALSE**、この関数にすると、ブレーク条件をチェックし、保留されている改行をクリアします。</span><span class="sxs-lookup"><span data-stu-id="3f50f-111">If **FALSE**, this function checks for the break condition and clears any pending break.</span></span> <span data-ttu-id="3f50f-112">ブレーク条件があっても続行するのにはこれを使用できます。</span><span class="sxs-lookup"><span data-stu-id="3f50f-112">This enables the user to continue despite the break condition.</span></span> <span data-ttu-id="3f50f-113">場合はこの引数を省略するか**は**、関数は、それをオフにすることがなくユーザーの中断をチェックします。</span><span class="sxs-lookup"><span data-stu-id="3f50f-113">If this argument is omitted or is **TRUE**, the function checks for a user abort without clearing it.</span></span>
+<span data-ttu-id="b4289-110">(省略可能)。</span><span class="sxs-lookup"><span data-stu-id="b4289-110">Optional.</span></span> <span data-ttu-id="b4289-111">**FALSE** の場合、この関数は中断状態を確認し、保留中の中断をすべて解除します。</span><span class="sxs-lookup"><span data-stu-id="b4289-111">If **FALSE**, this function checks for the break condition and clears any pending break.</span></span> <span data-ttu-id="b4289-112">これにより、ユーザーは中断状態を無視して続行できます。</span><span class="sxs-lookup"><span data-stu-id="b4289-112">This enables the user to continue despite the break condition.</span></span> <span data-ttu-id="b4289-113">この引数が省略されているか、**TRUE** の場合、関数はユーザーによる中止を解除せずに確認します。</span><span class="sxs-lookup"><span data-stu-id="b4289-113">(Optional). If **FALSE**, this function checks for the break condition and clears any pending break. This enables the user to continue despite the break condition. If this argument is omitted or is TRUE, the function checks for a user abort without clearing it.</span></span>
   
-## <a name="property-valuereturn-value"></a><span data-ttu-id="3f50f-114">プロパティ値/戻り値</span><span class="sxs-lookup"><span data-stu-id="3f50f-114">Property value/Return value</span></span>
+## <a name="property-valuereturn-value"></a><span data-ttu-id="b4289-114">プロパティ値/戻り値</span><span class="sxs-lookup"><span data-stu-id="b4289-114">Property Value/Return Value</span></span>
 
-<span data-ttu-id="3f50f-115">ユーザーが**esc キー**を押した場合は**TRUE** (**xltypeBool**) を返します。</span><span class="sxs-lookup"><span data-stu-id="3f50f-115">Returns **TRUE** (**xltypeBool**) if the user has pressed **ESC**.</span></span>
+<span data-ttu-id="b4289-115">ユーザーが **Esc** を押した場合は、**TRUE** (**xltypeBool**) が返されます。</span><span class="sxs-lookup"><span data-stu-id="b4289-115">Returns **TRUE** (**xltypeBool**) if the user has pressed **ESC**.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="3f50f-116">����</span><span class="sxs-lookup"><span data-stu-id="3f50f-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b4289-116">注釈</span><span class="sxs-lookup"><span data-stu-id="b4289-116">Remarks</span></span>
 
 ### 
 
-#### <a name="frequent-calls-may-be-needed"></a><span data-ttu-id="3f50f-117">�p�ɂȌĂяo�����K�v�ȏꍇ</span><span class="sxs-lookup"><span data-stu-id="3f50f-117">Frequent Calls May Be Needed</span></span>
+#### <a name="frequent-calls-may-be-needed"></a><span data-ttu-id="b4289-117">頻繁な呼び出しが必要な場合</span><span class="sxs-lookup"><span data-stu-id="b4289-117">Frequent Calls May Be Needed</span></span>
 
-<span data-ttu-id="3f50f-118">���Ԃ̂�����֐���R�}���h�ł́A���̊֐���p�ɂɌĂяo���āA�v���Z�b�T��V�X�e����̑��̃^�X�N�ɐ�������K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="3f50f-118">Functions and commands that could take a long time should call this function frequently to yield the processor to other tasks in the system.</span></span>
+<span data-ttu-id="b4289-118">時間のかかる関数やコマンドでは、この関数を頻繁に呼び出して、プロセッサをシステム内の他のタスクに生成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b4289-118">Functions and commands that could take a long time should call this function frequently to yield the processor to other tasks in the system.</span></span>
   
-#### <a name="avoid-sensitive-language"></a><span data-ttu-id="3f50f-119">�����ȕ\��������</span><span class="sxs-lookup"><span data-stu-id="3f50f-119">Avoid Sensitive Language</span></span>
+#### <a name="avoid-sensitive-language"></a><span data-ttu-id="b4289-119">微妙な表現を避ける</span><span class="sxs-lookup"><span data-stu-id="b4289-119">Avoid Sensitive Language</span></span>
 
-<span data-ttu-id="3f50f-p103">���[�U�[ �C���^�[�t�F�C�X�ł� "Abort" �Ƃ����p���g�p���Ȃ��悤�ɂ��܂��B����� "Cancel"�A"Halt"�A"Break"�A"Stop" �̎g�p��������Ă��������B</span><span class="sxs-lookup"><span data-stu-id="3f50f-p103">Avoid using the term "Abort" in your user interface. Consider using "Cancel," "Halt," "Break," or "Stop" instead.</span></span>
+<span data-ttu-id="b4289-p103">ユーザー インターフェイスでは "Abort" という用語を使用しないようにします。代わりに "Cancel"、"Halt"、"Break"、"Stop" の使用を検討してください。</span><span class="sxs-lookup"><span data-stu-id="b4289-p103">Avoid using the term "Abort" in your user interface. Consider using "Cancel," "Halt," "Break," or "Stop" instead.</span></span>
   
-## <a name="example"></a><span data-ttu-id="3f50f-122">��</span><span class="sxs-lookup"><span data-stu-id="3f50f-122">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b4289-122">例</span><span class="sxs-lookup"><span data-stu-id="b4289-122">Example</span></span>
 
-<span data-ttu-id="3f50f-p104">���̃R�[�h�́A1 �����o�߂���܂ŁA�܂��̓��[�U�[�� **Esc** ������܂ŁA�V�[�g��ŃA�N�e�B�u�ȃZ����J��Ԃ��ړ����܂��B�֐� **xlAbort** ��Ăяo�����Ƃ����܂��B����ɂ��v���Z�b�T����������A�����ł̃}���\`�^�X�L���O���e�ՂɂȂ�܂��B</span><span class="sxs-lookup"><span data-stu-id="3f50f-p104">The following code repeatedly moves the active cell on a sheet until one minute has elapsed or until the user presses **ESC**. It calls the function **xlAbort** occasionally. This yields the processor, easing cooperative multitasking.</span></span> 
+<span data-ttu-id="b4289-p104">次のコードは、1 分が経過するまで、またはユーザーが **Esc** を押すまで、シート上でアクティブなセルを繰り返し移動し、**xlAbort** 関数を呼び出します。これによりプロセッサが生成され、共同でのマルチタスキングが容易になります。</span><span class="sxs-lookup"><span data-stu-id="b4289-p104">The following code repeatedly moves the active cell on a sheet until one minute has elapsed or until the user presses **ESC**. It calls the function **xlAbort** occasionally. This yields the processor, easing cooperative multitasking.</span></span> 
   
  `\SAMPLES\GENERIC\GENERIC.C`
   
@@ -117,9 +117,9 @@ int WINAPI fDance(void)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="3f50f-126">�֘A����</span><span class="sxs-lookup"><span data-stu-id="3f50f-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b4289-126">関連項目</span><span class="sxs-lookup"><span data-stu-id="b4289-126">See also</span></span>
 
 
 
-[<span data-ttu-id="3f50f-127">DLL �܂��� XLL ����̂݌Ăяo���\�� C API �֐�</span><span class="sxs-lookup"><span data-stu-id="3f50f-127">C API Functions That Can Be Called Only from a DLL or XLL</span></span>](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+[<span data-ttu-id="b4289-127">DLL または XLL からのみ呼び出し可能な C API 関数</span><span class="sxs-lookup"><span data-stu-id="b4289-127">C API Functions That Can Be Called Only from a DLL or XLL</span></span>](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 

@@ -10,43 +10,43 @@ keywords:
 - convertxlreftoxlref12 function [excel 2007]
 localization_priority: Normal
 ms.assetid: 94580044-9497-425f-a31e-53bb4d94dc30
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: f2830633482e5329d285907b610386b708c406a4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798777"
 ---
-# <a name="convertxlreftoxlref12"></a><span data-ttu-id="71756-104">ConvertXLRefToXLRef12</span><span class="sxs-lookup"><span data-stu-id="71756-104">ConvertXLRefToXLRef12</span></span>
+# <a name="convertxlreftoxlref12"></a><span data-ttu-id="f32bb-104">ConvertXLRefToXLRef12</span><span class="sxs-lookup"><span data-stu-id="f32bb-104">ConvertXLRefToXLRef12</span></span>
 
-<span data-ttu-id="71756-105">**適用されます**Excel 2013 |。Office 2013 |Visual Studio</span><span class="sxs-lookup"><span data-stu-id="71756-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+<span data-ttu-id="f32bb-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="f32bb-105">Applies to: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="71756-106">**XLREF** �� **XLREF12** �ɕϊ����悤�Ƃ��� Framework �֐��B</span><span class="sxs-lookup"><span data-stu-id="71756-106">Framework function that attempts to convert an **XLREF** into an **XLREF12**.</span></span>
+<span data-ttu-id="f32bb-106">**XLREF** を **XLREF12** に変換しようとする Framework 関数。</span><span class="sxs-lookup"><span data-stu-id="f32bb-106">Framework function that attempts to convert an **XLREF** into an **XLREF12**.</span></span>
   
 ```cs
 BOOL ConvertXLRefToXLRef12(LPXLREF pxRef, LPXLREF12 pxRef12);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="71756-107">�p�����[�^�[</span><span class="sxs-lookup"><span data-stu-id="71756-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="f32bb-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f32bb-107">Parameters</span></span>
 
- <span data-ttu-id="71756-108">_pxRef_(**LPXLREF**)</span><span class="sxs-lookup"><span data-stu-id="71756-108">_pxRef_ (**LPXLREF**)</span></span>
+ <span data-ttu-id="f32bb-108">_pxRef_ (**LPXLREF**)</span><span class="sxs-lookup"><span data-stu-id="f32bb-108">_pxRef_ (**LPXLREF**)</span></span>
   
-<span data-ttu-id="71756-109">�\�[�X�̎Q�ƍ\���̂ւ̃|�C���^�[�B</span><span class="sxs-lookup"><span data-stu-id="71756-109">Pointer to the source reference structure.</span></span>
+<span data-ttu-id="f32bb-109">ソースの参照構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="f32bb-109">Pointer to the source reference structure.</span></span>
   
- <span data-ttu-id="71756-110">_pxRef12_(**LPXLREF12**)</span><span class="sxs-lookup"><span data-stu-id="71756-110">_pxRef12_ (**LPXLREF12**)</span></span>
+ <span data-ttu-id="f32bb-110">_pxRef12_ (**LPXLREF12**)</span><span class="sxs-lookup"><span data-stu-id="f32bb-110">_pxRef12_ (**LPXLREF12**)</span></span>
   
-<span data-ttu-id="71756-111">�ϊ������l���z�u�����^�[�Q�b�g�̎Q�ƍ\���̂ւ̃|�C���^�[�B</span><span class="sxs-lookup"><span data-stu-id="71756-111">Pointer to the target reference structure into which the converted value is to be placed.</span></span>
+<span data-ttu-id="f32bb-111">変換した値が配置されるターゲットの参照構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="f32bb-111">Pointer to the target reference structure into which the converted value is to be placed.</span></span>
   
-## <a name="property-valuereturn-value"></a><span data-ttu-id="71756-112">プロパティ値/戻り値</span><span class="sxs-lookup"><span data-stu-id="71756-112">Property value/Return value</span></span>
+## <a name="property-valuereturn-value"></a><span data-ttu-id="f32bb-112">プロパティ値/戻り値</span><span class="sxs-lookup"><span data-stu-id="f32bb-112">Property Value/Return Value</span></span>
 
- <span data-ttu-id="71756-113">�ϊ������������ꍇ�� **TRUE**�B����ȊO�̏ꍇ�� **FALSE**�B</span><span class="sxs-lookup"><span data-stu-id="71756-113">**TRUE** if the conversion succeeded, **FALSE** otherwise.</span></span> 
+ <span data-ttu-id="f32bb-113">変換が成功した場合は **TRUE**。それ以外の場合は **FALSE**。</span><span class="sxs-lookup"><span data-stu-id="f32bb-113">**TRUE** if the conversion succeeded, **FALSE** otherwise.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="71756-114">����</span><span class="sxs-lookup"><span data-stu-id="71756-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f32bb-114">注釈</span><span class="sxs-lookup"><span data-stu-id="f32bb-114">Remarks</span></span>
 
-<span data-ttu-id="71756-p101">�n���ꂽ **XLREF** ���L���ȏꍇ�́A���̑���͏�ɐ�������͂��ł��B���΂ɁA�������ꂽ�Q�Ƃ��ȑO�̃o�[�W�����ŃT�|�[�g����Ă��Ȃ� Excel 2007 ���[�N�V�[�g�̈ꕔ��Q�Ƃ��Ă���ꍇ�́A **ConvertXLRef12ToXLRef** ���s�� **XLREF12** ���� [XLREF](convertxlref12toxlref.md) �ւ̕ϊ��͎��s���܂��B</span><span class="sxs-lookup"><span data-stu-id="71756-p101">Provided that the passed-in **XLREF** is valid, this operation should always be successful. In contrast, conversion the other way from **XLREF12** to **XLREF**, performed by [ConvertXLRef12ToXLRef](convertxlref12toxlref.md), fails if the supplied reference refers to part of an Excel 2007 worksheet that is not supported in earlier versions.</span></span>
+<span data-ttu-id="f32bb-p101">渡された **XLREF** が有効な場合、この操作は常に成功します。それとは対照的に、[ConvertXLRef12ToXLRef](convertxlref12toxlref.md) で実行する **XLREF12** から **XLREF** への逆の変換では、指定された参照が、前のバージョンでサポートされていない Excel 2007 ワークシートの一部を参照している場合、変換操作は失敗します。</span><span class="sxs-lookup"><span data-stu-id="f32bb-p101">Provided that the passed-in **XLREF** is valid, this operation should always be successful. In contrast, conversion the other way from **XLREF12** to **XLREF**, performed by [ConvertXLRef12ToXLRef](convertxlref12toxlref.md), fails if the supplied reference refers to part of an Excel 2007 worksheet that is not supported in earlier versions.</span></span>
   
-## <a name="example"></a><span data-ttu-id="71756-117">��</span><span class="sxs-lookup"><span data-stu-id="71756-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f32bb-117">例</span><span class="sxs-lookup"><span data-stu-id="f32bb-117">Example</span></span>
 
  `\SAMPLES\FRAMEWRK\FRAMEWRK.C`
   
@@ -68,9 +68,9 @@ BOOL ConvertXLRefToXLRef12(LPXLREF pxref, LPXLREF12 pxref12)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="71756-118">関連項目</span><span class="sxs-lookup"><span data-stu-id="71756-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f32bb-118">関連項目</span><span class="sxs-lookup"><span data-stu-id="f32bb-118">See also</span></span>
 
 
 
-<span data-ttu-id="71756-119">[�t���[�����[�N ���C�u�����̊֐�](functions-in-the-framework-library.md)</span><span class="sxs-lookup"><span data-stu-id="71756-119">[Functions in the Framework Library](functions-in-the-framework-library.md)</span></span>
+[<span data-ttu-id="f32bb-119">フレームワーク ライブラリの関数</span><span class="sxs-lookup"><span data-stu-id="f32bb-119">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
 
