@@ -1,5 +1,5 @@
 ---
-title: SharePoint オブジェクト モデルのメンバーを使用します。
+title: SharePoint オブジェクト モデルのメンバーを使用する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,12 +8,12 @@ ms.assetid: 8cbafca3-7831-4231-8e61-38330b5ad61b
 description: InfoPath フォーム テンプレート内で実行されるコードから、SharePoint オブジェクト モデルのメンバーに対してプログラミングを行う場合は、事前に、フォームの Visual Studio 2012 プロジェクトで Microsoft.SharePoint.dll アセンブリを参照する必要があります。そのためには、Microsoft SharePoint Server 2010 のライセンス コピーのファイル システム、または Microsoft SharePoint Foundation 2010 を実行するサーバーのファイル システムにアクセスして、Microsoft.SharePoint.dll アセンブリのコピーを取得する必要があります。
 ms.openlocfilehash: c496f603f50a55ae2eaee237d6910d92612e1761
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799118"
 ---
-# <a name="use-sharepoint-object-model-members"></a>SharePoint オブジェクト モデルのメンバーを使用します。
+# <a name="use-sharepoint-object-model-members"></a>SharePoint オブジェクト モデルのメンバーを使用する
 
 InfoPath フォーム テンプレート内で実行されるコードから、SharePoint オブジェクト モデルのメンバーに対してプログラミングを行う場合は、事前に、フォームの Visual Studio 2012 プロジェクトで Microsoft.SharePoint.dll アセンブリを参照する必要があります。そのためには、Microsoft SharePoint Server 2010 のライセンス コピーのファイル システム、または Microsoft SharePoint Foundation 2010 を実行するサーバーのファイル システムにアクセスして、Microsoft.SharePoint.dll アセンブリのコピーを取得する必要があります。 
   
@@ -22,7 +22,7 @@ InfoPath フォーム テンプレート内で実行されるコードから、S
 ## <a name="add-and-reference-the-microsoftsharepoint-assembly-from-an-infopath-form-template"></a>Microsoft.SharePoint アセンブリを追加して、InfoPath フォーム テンプレートから参照する
 
 > [!IMPORTANT]
-> [!重要] InfoPath プロジェクト システムがフォーム テンプレート ファイルに追加されるファイルを管理する方法と競合しないように、フォーム テンプレート プロジェクトの最上位フォルダーには、参照するアセンブリをコピーしないでください。既定では、このフォルダーのパス形式は、< *ドライブ*  >:\Users\  *UserName*  \Documents\InfoPath Projects\  *製品名*  となります。 > 参照するアセンブリをプロジェクト フォルダー内で移動するには、メインの *製品名*  プロジェクト フォルダーの下にサブフォルダーを作成し、そのサブフォルダーにコピーしたアセンブリを参照する必要があります。ただし、参照するアセンブリのためのサブフォルダーを作成する必要はありません。参照するアセンブリがプロジェクトの最上位フォルダーになければ、プロジェクトをコンパイルおよび発行したときに、InfoPath プロジェクト システムによってアセンブリがフォーム テンプレート ファイル (.xsn) にコピーされます。 
+> InfoPath プロジェクト システムがフォーム テンプレート ファイルに追加されるファイルを管理する方法と競合しないように、フォーム テンプレート プロジェクトの最上位フォルダーには、参照するアセンブリをコピーしないでください。既定では、このフォルダーのパス形式は、< *ドライブ*  >:\Users\  *UserName*  \Documents\InfoPath Projects\  *製品名*  となります。 > 参照するアセンブリをプロジェクト フォルダー内で移動するには、メインの *製品名*  プロジェクト フォルダーの下にサブフォルダーを作成し、そのサブフォルダーにコピーしたアセンブリを参照する必要があります。ただし、参照するアセンブリのためのサブフォルダーを作成する必要はありません。参照するアセンブリがプロジェクトの最上位フォルダーになければ、プロジェクトをコンパイルおよび発行したときに、InfoPath プロジェクト システムによってアセンブリがフォーム テンプレート ファイル (.xsn) にコピーされます。 
   
 既定では、Microsoft.SharePoint.Server.dll は、SharePoint Server 2010 のファイル システム、または SharePoint Foundation 2010 を実行するサーバーのファイル システムの C:\Program Files\Common Files\Microsoft Shared\Web Server\Extensions\14\ISAPI にインストールされます。
   
@@ -32,7 +32,7 @@ InfoPath フォーム テンプレート内で実行されるコードから、S
     
 2. Visual Studio 2012 で、フォーム テンプレート プロジェクトを開きます。
     
-3. [ **プロジェクト**] メニューの [ **参照の追加**] をクリックします。
+3. [ **プロジェクト**] メニューで、[ **参照の追加**] をクリックします。
     
 4. [ **参照**] タブをクリックし、アセンブリを探して選択し、[ **OK**] をクリックして参照を追加します。 
     

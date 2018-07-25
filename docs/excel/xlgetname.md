@@ -10,31 +10,31 @@ keywords:
 - xlgetname function [excel 2007]
 localization_priority: Normal
 ms.assetid: 72dbebc0-7436-4771-8fbf-2b445341da65
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 069676957d280a0bf3b398bb23b27f0e654bc655
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798979"
 ---
 # <a name="xlgetname"></a>xlGetName
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-������̌`���ŁADLL �̊��S�p�X�ƃt�@�C������Ԃ��܂��B
+文字列の形式で、DLL の完全パスとファイル名を返します。
   
 ```cs
 Excel12(xlGetName, LPXLOPER12 pxRes, 0);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-���̊֐��ɂ͈����͂���܂���B
+この関数には引数はありません。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-(**XltypeStr**) のパスとファイル名を返します。 
+パスとファイル名を返します (**xltypeStr**)。 
   
 ## <a name="example"></a>例
 
@@ -53,5 +53,5 @@ short WINAPI xlGetNameExample(void)
 
 ## <a name="see-also"></a>関連項目
 
-- [DLL �܂��� XLL ����̂݌Ăяo���\�� C API �֐�](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+- [DLL または XLL からのみ呼び出し可能な C API 関数](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 

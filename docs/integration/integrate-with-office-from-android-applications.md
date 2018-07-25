@@ -8,7 +8,7 @@ ms.assetid: a765fa49-a272-4047-9147-59cc68e5dd27
 description: Office for Android は、サード パーティのアプリケーションとの統合を可能にする、拡張可能なソリューションを提供します。Android アプリケーションから Office にユーザーを渡すことにより、そのアプリケーションから Office と統合できます。
 ms.openlocfilehash: 2fd60c7e86d3390bc5343f3e09fb2235f97e0b13
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799230"
@@ -27,7 +27,7 @@ Android デバイスで Office を実行しているユーザーが、SharePoint
   
 - Excel
     
-- はい
+- PowerPoint
     
 - Word
     
@@ -36,7 +36,7 @@ Android デバイスで Office を実行しているユーザーが、SharePoint
 |**アプリケーション**|**パッケージ名**|
 |:-----|:-----|
 |Excel  <br/> |com.microsoft.office.excel  <br/> |
-|はい  <br/> |com.microsoft.office.powerpoint  <br/> |
+|PowerPoint  <br/> |com.microsoft.office.powerpoint  <br/> |
 |Word  <br/> |com.microsoft.office.word  <br/> |
    
 ### <a name="prompt-the-user-to-install-office"></a>Office をインストールするようユーザーにプロンプトを出す
@@ -46,7 +46,7 @@ Android デバイスで Office を実行しているユーザーが、SharePoint
 |**アプリケーション**|**Google Play ストア**|
 |:-----|:-----|
 |Excel  <br/> |[https://play.google.com/store/apps/details?id=com.microsoft.office.excel](https://play.google.com/store/apps/details?id=com.microsoft.office.excel) <br/> |
-|はい  <br/> |[https://play.google.com/store/apps/details?id=com.microsoft.office.powerpoint](https://play.google.com/store/apps/details?id=com.microsoft.office.powerpoint) <br/> |
+|PowerPoint  <br/> |[https://play.google.com/store/apps/details?id=com.microsoft.office.powerpoint](https://play.google.com/store/apps/details?id=com.microsoft.office.powerpoint) <br/> |
 |Word  <br/> |[https://play.google.com/store/apps/details?id=com.microsoft.office.word](https://play.google.com/store/apps/details?id=com.microsoft.office.word) <br/> |
    
 ## <a name="invoke-office"></a>Office を呼び出す
@@ -74,7 +74,7 @@ Word ファイルを編集用に呼び出す要求の例を以下に示します
 |**アプリケーション**|**プロトコル**|
 |:-----|:-----|
 |Excel  <br/> |ms-excel:  <br/> |
-|はい  <br/> |ms-powerpoint:  <br/> |
+|PowerPoint  <br/> |ms-powerpoint:  <br/> |
 |Word  <br/> |ms-word:  <br/> |
    
 ### <a name="open-mode"></a>オープン モード

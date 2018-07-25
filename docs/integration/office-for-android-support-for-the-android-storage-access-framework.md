@@ -8,7 +8,7 @@ ms.assetid: 9cfed295-f499-44dc-bac5-9e266df1b5b3
 description: Office for Android は Android Storage Access Framework と統合され、他のドキュメント プロバイダーが保存したファイルを Office で開けるようにします。
 ms.openlocfilehash: c217eb2aa6c0974c32e60f5015449de7b157d39d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799271"
@@ -27,11 +27,11 @@ Android 4.4 (API レベル 19) に Storage Access Framework (SAF) が導入さ�
 
 ユーザーは、無料の Microsoft アカウントを使用して Office アプリにサインインし、コンシューマー対象のストレージ サービスに保存されているドキュメントを作成または編集できます。次の表は、Storage Access Framework を通してアクセスされるドキュメントに対するコンシューマーによる無料の編集を有効にするために、プロバイダーがカーソルの一部として提供する必要のある必須プロパティを示します。
   
-|**プロパティ**|**インデックス**|**値**|
+|**プロパティ**|**Index**|**値**|
 |:-----|:-----|:-----|
 |ドキュメントの種類  <br/> |com_microsoft_office_doctype  <br/> |\<consumer\>  <br/> |
 |サービスのフレンドリ名  <br/> |com_microsoft_office_servicename  <br/> |Office アプリ内の最近使用した一覧にあるドキュメントを特定するのに使用される、サービスのわかりやすい任意の名前。サービスのフレンドり名が表示される前に "使用条件契約" プロパティを指定する必要があることに注意してください。  <br/> |
-|使用条件契約  <br/> |com_microsoft_office_termsofuse  <br/> |\<ある条項に同意します。http://go.microsoft.com/fwlink/p/?LinkId=528381\>  <br/> |
+|使用条件契約  <br/> |com_microsoft_office_termsofuse  <br/> |\<にある条件に同意しますhttp://go.microsoft.com/fwlink/p/?LinkId=528381\>  <br/> |
    
 ## <a name="see-also"></a>関連項目
 <a name="bk_addresources"> </a>

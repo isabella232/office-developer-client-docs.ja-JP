@@ -8,7 +8,7 @@ ms.assetid: f3a277ba-7ba1-4eea-83b5-915b409f3093
 description: Office for iOS は、サード パーティ アプリケーションとの統合を可能にする拡張可能なソリューションを提供します。この記事では、アプリケーションから Office にユーザーを渡し、その後アプリケーションに戻すことによって、iOS アプリケーションから Office と統合する方法について説明します。
 ms.openlocfilehash: 2ba8e1a157953705b60ff0cac7d62bafade0c469
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799236"
@@ -29,7 +29,7 @@ Office アプリケーションの起動時に特定の情報を渡しておけ�
     
 - OneNote
     
-- はい
+- PowerPoint
     
 - Word
     
@@ -44,7 +44,7 @@ Office アプリケーションの起動時に特定の情報を渡しておけ�
 |Excel  <br/> |[https://itunes.apple.com/us/app/microsoft-excel/id586683407?mt=8&amp;uo=4](https://itunes.apple.com/us/app/microsoft-excel/id586683407?mt=8&amp;uo=4) <br/> |
 |OneNote (iPad)  <br/> |[https://itunes.apple.com/us/app/microsoft-onenote-for-ipad/id478105721?mt=8&amp;uo=4](https://itunes.apple.com/us/app/microsoft-onenote-for-ipad/id478105721?mt=8&amp;uo=4) <br/> |
 |OneNote (iPhone)  <br/> |[https://itunes.apple.com/us/app/microsoft-onenote-for-iphone/id410395246?mt=8&amp;uo=4](https://itunes.apple.com/us/app/microsoft-onenote-for-iphone/id410395246?mt=8&amp;uo=4) <br/> |
-|はい  <br/> |[https://itunes.apple.com/us/app/microsoft-powerpoint/id586449534?mt=8&amp;uo=4](https://itunes.apple.com/us/app/microsoft-powerpoint/id586449534?mt=8&amp;uo=4) <br/> |
+|PowerPoint  <br/> |[https://itunes.apple.com/us/app/microsoft-powerpoint/id586449534?mt=8&amp;uo=4](https://itunes.apple.com/us/app/microsoft-powerpoint/id586449534?mt=8&amp;uo=4) <br/> |
 |Word  <br/> |[https://itunes.apple.com/us/app/microsoft-word/id586447913?mt=8&amp;uo=4](https://itunes.apple.com/us/app/microsoft-word/id586447913?mt=8&amp;uo=4) <br/> |
    
 ## <a name="invoke-office"></a>Office を呼び出す
@@ -77,7 +77,7 @@ Office アプリケーションがインストールされている場合、参�
 |:-----|:-----|
 |Excel  <br/> |ms-excel:  <br/> |
 |OneNote  <br/> |onenote:  <br/> |
-|はい  <br/> |ms-powerpoint:  <br/> |
+|PowerPoint  <br/> |ms-powerpoint:  <br/> |
 |Word  <br/> |ms-word:  <br/> |
    
 ### <a name="open-mode"></a>オープン モード

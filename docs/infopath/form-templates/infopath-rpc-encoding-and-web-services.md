@@ -8,7 +8,7 @@ ms.assetid: f8d7b944-a8fd-9c5f-8f66-0f1b628b7c6e
 description: Web サービスは、WSDL (Web サービス記述言語) コントラクトの指定で、Web メソッドへのバインドのために 2 つのスタイル (Document または RPC) のどちらかを公開できます。
 ms.openlocfilehash: 01b75df42bce97d62ebb5e273588cb522e5e2a09
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799137"

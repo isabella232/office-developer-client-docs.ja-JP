@@ -1,5 +1,5 @@
 ---
-title: InfoPath 2003 オブジェクト モデルを使用してエラーを処理します。
+title: InfoPath 2003 オブジェクト モデルを使用してエラーを処理する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -10,12 +10,12 @@ ms.assetid: eeb05205-d6f4-4931-b9a9-55a663bb1a25
 description: カスタム アプリケーションを作成する際、開発者はしばしばエラー ハンドリングを行わなければなりません。これには、アプリケーションで発生したエラーをチェックするプログラム コードや、カスタム エラーを作成して発生させるプログラム コードの記述などの作業が伴います。InfoPath 2003 互換オブジェクト モデルでは、ErrorObject オブジェクトと ErrorsCollection コレクションを組み合わせて使用することによるエラー ハンドリングがサポートされています。
 ms.openlocfilehash: 577e531d8943dc8fc3884cd81f68b11ca285c5d3
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799136"
 ---
-# <a name="handle-errors-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してエラーを処理します。
+# <a name="handle-errors-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してエラーを処理する
 
 カスタム アプリケーションを作成する際、開発者はしばしばエラー ハンドリングを行わなければなりません。これには、アプリケーションで発生したエラーをチェックするプログラム コードや、カスタム エラーを作成して発生させるプログラム コードの記述などの作業が伴います。InfoPath 2003 互換オブジェクト モデルでは、[ErrorObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ErrorObject.aspx) オブジェクトと [ErrorsCollection](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ErrorsCollection.aspx) コレクションを組み合わせて使用することによるエラー ハンドリングがサポートされています。 
   
