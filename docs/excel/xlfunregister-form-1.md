@@ -1,5 +1,5 @@
 ---
-title: xlfUnregister (�`�� 1)
+title: xlfUnregister (形式 1)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -10,51 +10,51 @@ keywords:
 - xlfunregister function [excel 2007]
 localization_priority: Normal
 ms.assetid: 850bf65f-a151-44d6-b49f-d53ae2c83760
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 6077027a27c054c5a5e65a751373c41a87cb3836
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798981"
 ---
-# <a name="xlfunregister-form-1"></a><span data-ttu-id="e7f22-104">xlfUnregister (�\`�� 1)</span><span class="sxs-lookup"><span data-stu-id="e7f22-104">xlfUnregister (Form 1)</span></span>
+# <a name="xlfunregister-form-1"></a><span data-ttu-id="b53e8-104">xlfUnregister (形式 1)</span><span class="sxs-lookup"><span data-stu-id="b53e8-104">xlfUnregister (Form 1)</span></span>
 
-<span data-ttu-id="e7f22-105">**適用されます**Excel 2013 |。Office 2013 |Visual Studio</span><span class="sxs-lookup"><span data-stu-id="e7f22-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+<span data-ttu-id="b53e8-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="b53e8-105">Applies to: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="e7f22-p101">Microsoft Excel �ɂ���Ă��ꎩ�̂��Ăяo����� DLL �� XLL �R�}���h����Ăяo�����Ƃ��ł��܂��B����́A **UNREGISTER** �� Excel XLM �}�N�� �V�[�g����Ăяo���̂Ɠ����ł��B</span><span class="sxs-lookup"><span data-stu-id="e7f22-p101">Can be called from a DLL or XLL command that has itself been called by Microsoft Excel. This is equivalent to calling **UNREGISTER** from an Excel XLM macro sheet.</span></span> 
+<span data-ttu-id="b53e8-p101">Microsoft Excel から呼び出された DLL コマンドまたは XLL コマンドから呼び出すことができます。これは、**UNREGISTER** を Excel XLM マクロ シートから呼び出すのと同等です。</span><span class="sxs-lookup"><span data-stu-id="b53e8-p101">Can be called from a DLL or XLL command that has itself been called by Microsoft Excel. This is equivalent to calling **UNREGISTER** from an Excel XLM macro sheet.</span></span> 
   
-<span data-ttu-id="e7f22-108">**xlfUnregister** �́A2 �̌\`���ŌĂяo�����Ƃ��ł��܂��B</span><span class="sxs-lookup"><span data-stu-id="e7f22-108">**xlfUnregister** can be called in two forms:</span></span> 
+<span data-ttu-id="b53e8-108">**xlfUnregister** 関数は、次の 2 つの形式で呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="b53e8-108">**xlfUnregister** can be called in two forms:</span></span> 
   
-- <span data-ttu-id="e7f22-109">�\`�� 1:�X�̃R�}���h��֐��̓o�^�������܂��B</span><span class="sxs-lookup"><span data-stu-id="e7f22-109">Form 1: Unregisters an individual command or function.</span></span>
+- <span data-ttu-id="b53e8-109">形式 1: 個々のコマンドや関数の登録を解除します。</span><span class="sxs-lookup"><span data-stu-id="b53e8-109">Form 1: Unregisters an individual command or function.</span></span>
     
-- <span data-ttu-id="e7f22-110">�\`�� 2XLL �̃A�����[�h�Ɣ�A�N�e�B�u����s���܂��B</span><span class="sxs-lookup"><span data-stu-id="e7f22-110">Form 2: Unloads and deactivates an XLL.</span></span>
+- <span data-ttu-id="b53e8-110">形式 2: XLL のアンロードと非アクティブ化を行います。</span><span class="sxs-lookup"><span data-stu-id="b53e8-110">Form 2: Unloads and deactivates an XLL.</span></span>
     
-<span data-ttu-id="e7f22-p102">�\`�� 1 �ŌĂяo�����ƁA���̊֐��́A **xlfRegister** �܂��� **REGISTER** ��g�p���Ċ��ɓo�^����Ă��� DLL �֐��܂��̓R�}���h�̎g�p�J�E���g����炵�܂��B���Ɏg�p�J�E���gDLL ��̂��ׂĂ̊֐��̎g�p�J�E���g�� 0 �ɂȂ�ƁADLL �̓���������A�����[�h����܂��B</span><span class="sxs-lookup"><span data-stu-id="e7f22-p102">Called in Form 1, this function reduces the use count of a DLL function or command that was previously registered using **xlfRegister** or **REGISTER**. If the usage count is already zero, this function has no effect. When the use count of all the functions in a DLL reaches zero, the DLL is unloaded from memory.</span></span>
+<span data-ttu-id="b53e8-p102">形式 1 で呼び出されると、この関数は、**xlfRegister** または **REGISTER** を使用して既に登録されている DLL 関数またはコマンドの使用カウントを減らします。既に使用カウントが 0 の場合、この関数の効果はありません。DLL 内のすべての関数の使用カウントが 0 になると、DLL はメモリからアンロードされます。</span><span class="sxs-lookup"><span data-stu-id="b53e8-p102">Called in Form 1, this function reduces the use count of a DLL function or command that was previously registered using **xlfRegister** or **REGISTER**. If the usage count is already zero, this function has no effect. When the use count of all the functions in a DLL reaches zero, the DLL is unloaded from memory.</span></span>
   
-<span data-ttu-id="e7f22-p103">**xlfRegister** (�__ ���܂��B�֐��̓o�^��������ꍇ�́A�֐��E�B�U�[�h�ɂ��̊֐��̖��O���\������Ȃ��Ȃ�悤�ɁA **xlfSetName** ��g�p���Ă��̖��O��폜����K�v������܂��B�ڂ����́u [Excel �A�h�C�� (XLL) �J���ɂ�������m�̖��](known-issues-in-excel-xll-development.md)�v��������������B</span><span class="sxs-lookup"><span data-stu-id="e7f22-p103">**xlfRegister** (Form 1) also defines a hidden name which is the function text argument,  _pxFunctionText_, and which evaluates to the function or command's registration ID. When unregistering the function, this name should be deleted using **xlfSetName** so that the function name is no longer listed by the Function Wizard. For more information, see [Known Issues in Excel XLL Development](known-issues-in-excel-xll-development.md).</span></span>
+<span data-ttu-id="b53e8-p103">**xlfRegister** (形式 1) は、関数またはコマンドの登録 ID ともみなされる非表示名 (関数のテキスト引数 _pxFunctionText_) も定義します。関数の登録を解除する場合は、関数ウィザードにその関数の名前が表示されなくなるように、**xlfSetName** を使用してこの名前を削除する必要があります。詳しくは、「[Excel アドイン (XLL) 開発における既知の問題](known-issues-in-excel-xll-development.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b53e8-p103">**xlfRegister** (Form 1) also defines a hidden name which is the function text argument,  _pxFunctionText_, and which evaluates to the function or command's registration ID. When unregistering the function, this name should be deleted using **xlfSetName** so that the function name is no longer listed by the Function Wizard. For more information, see [Known Issues in Excel XLL Development](known-issues-in-excel-xll-development.md).</span></span>
   
 ```cs
 Excel4(xlfUnregister, LPXLOPER pxRes, 1, LPXLOPER pxRegisterId);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="e7f22-117">�p�����[�^�[</span><span class="sxs-lookup"><span data-stu-id="e7f22-117">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="b53e8-117">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b53e8-117">Parameters</span></span>
 
-<span data-ttu-id="e7f22-118">_pxRegisterId_(**xltypeNum**)</span><span class="sxs-lookup"><span data-stu-id="e7f22-118">_pxRegisterId_ (**xltypeNum**)</span></span>
+<span data-ttu-id="b53e8-118">_pxRegisterId_ (**xltypeNum**)</span><span class="sxs-lookup"><span data-stu-id="b53e8-118">_pxRegisterId_ (**xltypeNum**)</span></span>
   
-<span data-ttu-id="e7f22-119">�o�^��������֐��̓o�^ ID�B</span><span class="sxs-lookup"><span data-stu-id="e7f22-119">The registration ID of the function to be unregistered.</span></span>
+<span data-ttu-id="b53e8-119">登録を解除する関数の登録 ID。</span><span class="sxs-lookup"><span data-stu-id="b53e8-119">The registration ID of the function to be unregistered.</span></span>
   
-## <a name="property-valuereturn-value"></a><span data-ttu-id="e7f22-120">プロパティ値/戻り値</span><span class="sxs-lookup"><span data-stu-id="e7f22-120">Property value/Return value</span></span>
+## <a name="property-valuereturn-value"></a><span data-ttu-id="b53e8-120">プロパティ値/戻り値</span><span class="sxs-lookup"><span data-stu-id="b53e8-120">Property Value/Return Value</span></span>
 
-<span data-ttu-id="e7f22-121">成功した場合を返します**TRUE** (**xltypeBool**)、それ以外の場合は FALSE を返します。</span><span class="sxs-lookup"><span data-stu-id="e7f22-121">If successful, returns **TRUE** (**xltypeBool**), otherwise it returns FALSE.</span></span>
+<span data-ttu-id="b53e8-121">成功した場合は **TRUE** (**xltypeBool**) を返します。それ以外の場合は FALSE を返します。</span><span class="sxs-lookup"><span data-stu-id="b53e8-121">If successful, returns **TRUE** (**xltypeBool**), otherwise it returns FALSE.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="e7f22-122">����</span><span class="sxs-lookup"><span data-stu-id="e7f22-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b53e8-122">注釈</span><span class="sxs-lookup"><span data-stu-id="b53e8-122">Remarks</span></span>
 
-<span data-ttu-id="e7f22-p104">�֐��̓o�^ ID �́A�֐��̍ŏ��̓o�^���� **xlfRegister** �ɂ���ĕԂ���܂��B�܂��A [xlfRegisterId �֐�](xlfregisterid.md) �܂��� [xlfEvaluate �֐�](xlfevaluate.md)��Ăяo���Ď擾���邱�Ƃ�ł��܂��B�֐����܂��o�^����Ă��Ȃ��ꍇ�́AxlfRegisterId �͂��̊֐���o�^���悤�Ƃ��邱�Ƃɂ����ӂ��������B���̂��߁A�P�Ɋ֐��̓o�^��������ړI�� ID ��擾���悤�Ƃ��Ă���̂ł���΁A�o�^���ꂽ���O�� **xlfEvaluate** �ɓn���� ID ��擾���邱�Ƃ�����߂��܂��B�֐����o�^����Ă��Ȃ��ꍇ�A **xlfEvaluate** �� #NAME? �G���[�Ŏ��s���܂��B</span><span class="sxs-lookup"><span data-stu-id="e7f22-p104">The registration ID of the function is returned by **xlfRegister** when the function is first registered. It can also be obtained by calling the [xlfRegisterId function](xlfregisterid.md) or the [xlfEvaluate function](xlfevaluate.md). Note that xlfRegisterId tries to register the function if it has not already been registered. For this reason, if you are only trying to get the ID so that you can unregister the function, it is better to obtain it by passing the registered name to **xlfEvaluate**. If the function has not been registered, **xlfEvaluate** fails with a #NAME? error.</span></span> 
+<span data-ttu-id="b53e8-p104">関数の登録 ID は、関数の最初の登録時に **xlfRegister** によって返されます。また、[xlfRegisterId 関数](xlfregisterid.md) または [xlfEvaluate 関数](xlfevaluate.md)を呼び出して取得することもできます。関数がまだ登録されていない場合は、xlfRegisterId はその関数を登録しようとすることにご注意ください。このため、単に関数の登録を解除する目的で ID を取得しようとしているのであれば、登録された名前を **xlfEvaluate** に渡して ID を取得することをお勧めします。関数が登録されていない場合、**xlfEvaluate** は #NAME? エラーで失敗します。</span><span class="sxs-lookup"><span data-stu-id="b53e8-p104">The registration ID of the function is returned by **xlfRegister** when the function is first registered. It can also be obtained by calling the [xlfRegisterId function](xlfregisterid.md) or the [xlfEvaluate function](xlfevaluate.md). Note that xlfRegisterId tries to register the function if it has not already been registered. For this reason, if you are only trying to get the ID so that you can unregister the function, it is better to obtain it by passing the registered name to **xlfEvaluate**. If the function has not been registered, **xlfEvaluate** fails with a #NAME? error.</span></span> 
   
-## <a name="example"></a><span data-ttu-id="e7f22-128">��</span><span class="sxs-lookup"><span data-stu-id="e7f22-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b53e8-128">例</span><span class="sxs-lookup"><span data-stu-id="b53e8-128">Example</span></span>
 
-<span data-ttu-id="e7f22-129">**** �� `\SAMPLES\GENERIC\GENERIC.C` �֐��̃R�[�h����Q�Ƃ��������B</span><span class="sxs-lookup"><span data-stu-id="e7f22-129">See the code for the **fExit** function in  `\SAMPLES\GENERIC\GENERIC.C`.</span></span>
+<span data-ttu-id="b53e8-129">`\SAMPLES\GENERIC\GENERIC.C` の **fExit** 関数のコードを参照してください。</span><span class="sxs-lookup"><span data-stu-id="b53e8-129">See the code for the **fExit** function in  `\SAMPLES\GENERIC\GENERIC.C`.</span></span>
   
 ```cs
 int WINAPI fExit(void)
@@ -89,10 +89,10 @@ int WINAPI fExit(void)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="e7f22-130">�֘A����</span><span class="sxs-lookup"><span data-stu-id="e7f22-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b53e8-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="b53e8-130">See also</span></span>
 
-- [<span data-ttu-id="e7f22-131">xlfRegister (�\`�� 1)</span><span class="sxs-lookup"><span data-stu-id="e7f22-131">xlfRegister (Form 1)</span></span>](xlfregister-form-1.md)
-- [<span data-ttu-id="e7f22-132">xlfRegisterId</span><span class="sxs-lookup"><span data-stu-id="e7f22-132">xlfRegisterId</span></span>](xlfregisterid.md)
-- [<span data-ttu-id="e7f22-133">xlfUnregister (�\`�� 2)</span><span class="sxs-lookup"><span data-stu-id="e7f22-133">xlfUnregister (Form 2)</span></span>](xlfunregister-form-2.md)
-- [<span data-ttu-id="e7f22-134">�d�v�Ŗ�ɗ��� C API XLM �֐�</span><span class="sxs-lookup"><span data-stu-id="e7f22-134">Essential and Useful C API XLM Functions</span></span>](essential-and-useful-c-api-xlm-functions.md)
+- [<span data-ttu-id="b53e8-131">xlfRegister (形式 1)</span><span class="sxs-lookup"><span data-stu-id="b53e8-131">xlfRegister (Form 1)</span></span>](xlfregister-form-1.md)
+- [<span data-ttu-id="b53e8-132">xlfRegisterId</span><span class="sxs-lookup"><span data-stu-id="b53e8-132">xlfRegisterId</span></span>](xlfregisterid.md)
+- [<span data-ttu-id="b53e8-133">xlfUnregister (形式 2)</span><span class="sxs-lookup"><span data-stu-id="b53e8-133">xlfUnregister (Form 2)</span></span>](xlfunregister-form-2.md)
+- [<span data-ttu-id="b53e8-134">重要で役に立つ C API XLM 関数</span><span class="sxs-lookup"><span data-stu-id="b53e8-134">Essential and Useful C API XLM Functions</span></span>](essential-and-useful-c-api-xlm-functions.md)
 
