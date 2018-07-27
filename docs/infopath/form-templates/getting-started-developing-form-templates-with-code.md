@@ -10,7 +10,7 @@ ms.assetid: 66468447-2012-4497-b371-c61f64a8bb49
 description: ここでは、Microsoft.Office.InfoPath 名前空間のメンバーから提供される InfoPath オブジェクト モデルを使用するマネージ コード フォーム テンプレートを作成する作業の始め方を説明します。
 ms.openlocfilehash: a4e4e8a4e01dc8d0fbfe9c5cbed0ae4b85b51e94
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/21/2018
 ms.locfileid: "19799111"
@@ -29,53 +29,53 @@ ms.locfileid: "19799111"
   
 > フォーム テンプレートでのビジネス ロジック開発用の 2 種類のプログラミング モデル、および InfoPath でサポートされる Visual Studio 2012 開発環境について説明します。
     
-[Visual Studio を開発します。](how-to-develop-with-visual-studio.md)
+[Visual Studio で開発する](how-to-develop-with-visual-studio.md)
   
-> Visual Studio 2012 環境をインストールする方法を説明します。
+> Visual Studio 2012 環境をインストールする方法について説明します。
     
-[ローカルの.NET Framework については、Visual Studio Tools for Applications をインストールします。](how-to-install-net-framework-help-for-visual-studio-tools-for-applications.md)
+[Visual Studio Tools for Applications の .NET Framework ヘルプをローカルにインストールする](how-to-install-net-framework-help-for-visual-studio-tools-for-applications.md)
   
-> Visual Studio 2012 環境でオフラインで使用する .NET Framework ドキュメントのローカル コピーをインストールする方法を説明します。
+> Visual Studio 2012 環境でオフラインで使用するために .NET Framework ドキュメントのローカル コピーをインストールする方法について説明します。
     
-[イベント ハンドラーを追加します。](how-to-add-an-event-handler.md)
+[イベント ハンドラーを追加する](how-to-add-an-event-handler.md)
   
-> InfoPath マネージ コード フォーム テンプレートにイベント ハンドラーを追加する方法を説明します。 
+> InfoPath マネージ コード フォーム テンプレートにイベント ハンドラーを追加する方法について説明します。 
     
-[プレビューし、コードを含む InfoPath フォーム テンプレートのデバッグ](how-to-preview-and-debug-infopath-form-templates-with-code.md)
+[コードを含む InfoPath フォーム テンプレートをプレビューおよびデバッグする](how-to-preview-and-debug-infopath-form-templates-with-code.md)
   
-> InfoPath マネージ コード フォーム テンプレートをプレビューおよびデバッグする方法を説明します。
+> InfoPath マネージ コード フォーム テンプレートをプレビューおよびデバッグする方法について説明します。
     
-[プレビューし、完全な信頼を必要とするフォーム テンプレートのデバッグ](how-to-preview-and-debug-form-templates-that-require-full-trust.md)
+[完全信頼が必要なフォーム テンプレートをプレビューおよびデバッグする](how-to-preview-and-debug-form-templates-that-require-full-trust.md)
   
-> 完全な信頼が必要なビジネス ロジックが入った InfoPath マネージ コード フォーム テンプレートをプレビューおよびデバッグする方法を説明します。
+> 完全信頼が必要なビジネス ロジックが含まれている InfoPath マネージ コード フォーム テンプレートをプレビューおよびデバッグする方法について説明します。
     
 [[ウォークスルー] コードを含む基本的なフォーム テンプレートを作成する方法](walkthrough-creating-a-basic-form-template-with-code.md)
   
-> 基本的な InfoPath マネージ コード フォーム テンプレートを作成およびデバッグする手順を順を追って説明しています。 
+> 基本的な InfoPath マネージ コード フォーム テンプレートの作成とデバッグの概要を説明する段階的なガイド 
     
-[デバッグ用のフィールドに値をログ](how-to-log-values-to-a-field-for-debugging.md)
+[デバッグのために値のログをフィールドに記録する](how-to-log-values-to-a-field-for-debugging.md)
   
-> デバッグ情報のログを記録するためのマルチライン フィールドとヘルパー関数の作成方法を説明します。
+> デバッグ情報をログに記録するための複数行フィールドとヘルパー関数を作成する方法について説明します。
     
-[開くまたは InfoPath Toolkit で作成されたフォーム テンプレートを変換します。](how-to-open-or-convert-a-form-template-created-with-the-infopath-toolkit.md)
+[InfoPath Toolkit で作成したフォーム テンプレートを開くか変換する](how-to-open-or-convert-a-form-template-created-with-the-infopath-toolkit.md)
   
 > InfoPath 2003 Toolkit と Visual Studio .NET または InfoPath 2003 Toolkit for Visual Studio 2005 を使用して作成されたマネージ コード フォーム テンプレートを開くか変換する方法を説明します。
     
-[コードを含む InfoPath フォーム テンプレートを展開します。](how-to-deploy-infopath-form-templates-with-code.md)
+[コードを含む InfoPath フォーム テンプレートを展開する](how-to-deploy-infopath-form-templates-with-code.md)
   
-> InfoPath マネージ コード フォーム テンプレートの展開方法を説明します。
+> InfoPath マネージ コード フォーム テンプレートを展開する方法について説明します。
     
 [[方法] コードを含む InfoPath フォーム テンプレートを操作する方法](how-do-iin-infopath-form-templates-with-code.md)
   
-> InfoPath マネージ コード フォーム テンプレートの開発者向けの一般的タスクの概要を説明します。
+> InfoPath マネージ コード フォーム テンプレートの開発者を対象とした一般的な作業の要約を説明します。
     
-[XPathNavigator XPathNodeIterator クラスと](how-to-work-with-the-xpathnavigator-and-xpathnodeiterator-classes.md)
+[XPathNavigator クラスおよび XPathNodeIterator クラスを操作する](how-to-work-with-the-xpathnavigator-and-xpathnodeiterator-classes.md)
   
 > XML データを操作する **XPathNavigator** クラスおよび **XPathNodeIterator** クラスを使用する InfoPath マネージ クラス オブジェクト モデルのメンバーの概要を説明します。 
     
-[SharePoint オブジェクト モデルのメンバーを使用します。](how-to-use-sharepoint-object-model-members.md)
+[SharePoint オブジェクト モデルのメンバーを使用する](how-to-use-sharepoint-object-model-members.md)
   
-> Microsoft.SharePoint アセンブリの参照を作成して、フォーム コードから SharePoint オブジェクト モデルに対してコードを作成する方法を説明します。
+> フォーム コードからオブジェクト モデルに対するコードを作成できるように、Microsoft.SharePoint アセンブリへの参照を作成する方法について説明します。
     
 [コードを含むフォームを発行する](publishing-forms-with-code.md)
   

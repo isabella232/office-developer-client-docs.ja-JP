@@ -10,44 +10,44 @@ keywords:
 - xlfree function [excel 2007]
 localization_priority: Normal
 ms.assetid: 8ce2eef2-0138-495d-b6cb-bbb727a3cda4
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 2dd61ee5cd0e2e671cc47425689287b8a437732f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798984"
 ---
 # <a name="xlfree"></a>xlFree
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-**Excel4**�A/ �A**Excel12**�A�܂��� [Excel12v](excel4-excel12.md) �̌Ăяo���Ŗ߂�l [XLOPER](excel4v-excel12v.md)[](excel4-excel12.md)[XLOPER12](excel4v-excel12v.md) ��쐬����Ƃ��ɁAMicrosoft Excel �����蓖�Ă������� ���\�[�X�������邽�߂Ɏg�p���܂��B **xlFree** �֐��͕⏕�������������A�|�C���^�[�� **NULL** �Ƀ��Z�b�g���܂����A **XLOPER**/ **XLOPER12**�̑��̕����͔j�����܂���B
+[Excel4](excel4-excel12.md)、[Excel4v](excel4v-excel12v.md)、[Excel12](excel4-excel12.md)、または [Excel12v](excel4v-excel12v.md) の呼び出しで戻り値 **XLOPER**/ **XLOPER12** を作成するときに、Microsoft Excel が割り当てたメモリ リソースを解放するために使用します。**xlFree** 関数は補助メモリを解放し、ポインターを **NULL** にリセットしますが、**XLOPER**/ **XLOPER12** の他の部分は破棄しません。
   
 ```cs
 Excel4(xlFree, 0, n, LPXLOPER px_1, ..., LPXLOPER px_n);
 Excel12(xlFree, 0, n, LPXLOPER12 px_1, ..., LPXLOPER12 px_n);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _px_1, ..., px_n_
   
-1 �ȏ�� **XLOPER**/ **XLOPER12** �������܂��BExcel 2003 �܂ł̃o�[�W�����ł́A�n����|�C���^�[�̍ő吔�� 30 �ł��BExcel 2007 �ȍ~�́A255 �ɑ�������܂����B
+解放する 1 つ以上の **XLOPER**/ **XLOPER12**。Excel 2003 までのバージョンでは、渡せるポインターの最大数は 30 です。Excel 2007 以降は、255 に増加されました。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-���̊֐��͒l��Ԃ��܂���B
+この関数は値を返しません。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-**Excel4** �܂��� **Excel4v** ����߂�l�Ƃ��Ď擾���� **XLOPER**�A����� **Excel12** �܂��� **Excel12v** ����߂�l�Ƃ��Ď擾���� **XLOPER12** �́A�^�� **xltypeStr**�A **xltypeMulti**�A�܂��� **xltypeRef** �̂����ꂩ�̏ꍇ�͂��ׂĉ������K�v������܂��B���̌^�������Ă�A���ꂪ **Excel4** �܂��� **Excel12** ����擾������̂ł������A���Ƃ����ꂪ�⏕��������g�p���Ȃ��ꍇ�ł�A��肪�����邱�Ƃ͂���܂���B
+**Excel4** または **Excel4v** から戻り値として取得した **XLOPER**、および **Excel12** または **Excel12v** から戻り値として取得した **XLOPER12** は、型が **xltypeStr**、**xltypeMulti**、または **xltypeRef** のいずれかの場合はすべて解放する必要があります。他の型を解放しても、それが **Excel4** または **Excel12** から取得したものである限り、たとえそれが補助メモリを使用しない場合でも、問題が生じることはありません。
   
-����Ώۂ� Excel �����蓖�Ă���������܂� **XLOPER**/ **XLOPER12**�ւ̃|�C���^�[�� Excel �ɖ߂��ꍇ�A **xlbitXLFree** ��ݒ肵�� Excel �Ƀ�������m���ɉ�������܂��B 
+解放対象の Excel が割り当てたメモリを含む **XLOPER**/ **XLOPER12** へのポインターを Excel に戻す場合、**xlbitXLFree** を設定して Excel にメモリを確実に解放させます。 
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̗�ł� **GET.WORKSPACE(1)** ��Ăяo���AExcel ����s���̃v���b�g�t�H�[���𕶎���Ƃ��ĕԂ��܂��B�R�[�h�͕Ԃ��ꂽ��������Ŏg�p���邽�߂Ƀo�b�t�@�[�ɃR�s�[���܂��B�R�[�h�͂��̃o�b�t�@�[���� Excel �֐��Ŏg�p���邽�߂� **XLOPER12** �ɖ߂��܂��B�Ō�ɁA�R�[�h�͌x���{�b�N�X�ɕ������\�����܂��B 
+この例では **GET.WORKSPACE(1)** を呼び出し、Excel を実行中のプラットフォームを文字列として返します。コードは返された文字列を後で使用するためにバッファーにコピーします。コードはこのバッファーを後で Excel 関数で使用するために **XLOPER12** に戻します。最後に、コードは警告ボックスに文字列を表示します。 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -87,7 +87,7 @@ short WINAPI xlFreeExample(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
-- [DLL �܂��� XLL ����̂݌Ăяo���\�� C API �֐�](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+- [DLL または XLL からのみ呼び出し可能な C API 関数](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 

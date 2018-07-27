@@ -1,5 +1,5 @@
 ---
-title: 名およびその他のワークシートの数式の式を評価します。
+title: 名前と他のワークシートの数式を評価する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,19 +8,19 @@ keywords:
 - expression evaluation [excel 2007],worksheets [Excel 2007], name evaluation,evaluating expressions [Excel 2007],evaluating worksheet names [Excel 2007],expressions [Excel 2007], evaluating,names [Excel 2007], evaluating,name evaluation [Excel 2007],strings [Excel 2007], converting to values,xlfEvaluate function [Excel 2007],worksheets [Excel 2007], expression evaluation
 localization_priority: Normal
 ms.assetid: 2b23c75e-2a95-4f26-8714-2a73f5e326a7
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 9d726d89c859e2f7428b459971d5d13586f144e9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798796"
 ---
-# <a name="evaluating-names-and-other-worksheet-formula-expressions"></a>名およびその他のワークシートの数式の式を評価します。
+# <a name="evaluating-names-and-other-worksheet-formula-expressions"></a>名前と他のワークシートの数式を評価する
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-Excel ���AC API �Ō��J����ł�d�v�ȋ@�\�� 1 �́A���[�N�V�[�g�ɍ��@�I�ɓ��͂ł��镶���񎮂�P��̒l��l�̔z��ɕϊ�����@�\�ł��B����́A��`���ꂽ���O�̃R���e���c��ǂݎ��K�v������ XLL �֐��ƃR�}���h�ȂǂɂƂ��ĕs���ł��B���̋@�\�́A�ȉ��̗�Ɏ����悤�ɁA[xlfEvaluate �֐�](xlfevaluate.md)�Ō��J����܂��B
+Excel が、C API で公開する最も重要な機能の 1 つは、ワークシートに合法的に入力できる文字列式を単一の値や値の配列に変換する機能です。これは、定義された名前のコンテンツを読み取る必要がある XLL 関数とコマンドなどにとって不可欠です。この機能は、以下の例に示すように、[xlfEvaluate 関数](xlfevaluate.md)で公開されます。
   
 ```C
 int WINAPI evaluate_name_example(void)
@@ -41,25 +41,25 @@ int WINAPI evaluate_name_example(void)
 }
 ```
 
-���[�N�V�[�g����A���ꎩ�̂����ŕ]������ꍇ�A���Ȃ��Ƃ�A���O�� �e!�f �Ƃ����v���t�B�b�N�X�Ŏn�߂�K�v������܂��B�������Ȃ��ƁAExcel �� Dll �p�ɗ\�񂳂�Ă����\���̖��O��ԓ�ł��̖��O������悤�Ƃ��܂��B[xlfSetName �֐�](xlfsetname.md)��g���āA��\���� DLL ���̍쐬�ƍ폜���ł��܂��B��\���� DLL �������[�N�V�[�g�����Ɋ֌W�Ȃ��A [xlfGetDef](xlfsetname.md) �֐���g���āA��**** �ł�擾�ł��܂��B 
+ワークシート名を、それ自体か式で評価する場合、少なくとも、名前は ‘!’ というプレフィックスで始める必要があります。そうしないと、Excel は Dll 用に予約されている非表示の名前空間内でその名前を見つけようとします。[xlfSetName 関数](xlfsetname.md)を使って、非表示の DLL 名の作成と削除ができます。非表示の DLL 名かワークシート名かに関係なく、**xlfGetDef** 関数を使って、定義されたどの名前の定義でも取得できます。 
   
-���[�N�V�[�g���S�̂̎w��́A���̂悤�Ȍ`���ł��B
+ワークシート名全体の指定は、次のような形式です。
   
 `='C:\example folder\[Book1.xls]Sheet1'!Name`
   
-Excel 2007 �ł́A�������̐V�����t�@�C���g���q����������܂����B���� Excel �Z�b�V�����ŊJ���Ă���u�b�N�Ԃɂ����܂��ȉӏ����Ȃ��ꍇ�́A�p�X�A�u�b�N���A�V�[�g����ȗ����邱�Ƃ��ł��܂� 
+Excel 2007 では、いくつかの新しいファイル拡張子が導入されました。この Excel セッションで開いているブック間にあいまいな箇所がない場合は、パス、ブック名、シート名を省略することができます。 
   
-���̗�́A��ƒ��̃��[�N�V�[�g�̎�  `COUNT(A1:IV65536)` ��]�����āA���ʂ�\�����܂��B�͈̓A�h���X�� '!' �Ƃ����v���t�B�b�N�X�Ŏn�߂�K�v�����邱�Ƃɒ��ӂ��Ă��������B����́AXLM �}�N�� �V�[�g�͈͎̔Q�Ƃ̋K���ƈ�v���Ă��܂��BC API XLM �́A���̋K���ɏ]���Ă��܂��B 
+次の例は、作業中のワークシートの式 `COUNT(A1:IV65536)` を評価して、結果を表示します。範囲アドレスは '!' というプレフィックスで始める必要があることに注意してください。これは、XLM マクロ シートの範囲参照の規則と一致しています。C API XLM は、この規則に従っています。 
   
-- `=A1` ���݂̃}�N�� �V�[�g�̃Z�� A1 �ւ̎Q�ƁB(XLL �ɂ��Ă͒�`����Ă��܂���)�B 
+- `=A1` 現在のマクロ シートのセル A1 への参照 (XLL に対しては定義されていません)。 
   
-- `=!A1` ��ƒ��̃V�[�g (���[�N�V�[�g���}�N�� �V�[�g��w��ł��܂�) �̃Z�� A1 �ւ̎Q�ƁB 
+- `=!A1` 作業中のシート (ワークシートまたはマクロ シートを指定できます) のセル A1 への参照。 
   
-- `=Sheet1!A1` �w�肳�ꂽ�V�[�g (���̏ꍇ�� Sheet1) �̃Z�� A1 �ւ̎Q�ƁB 
+- `=Sheet1!A1` 指定されたシート (この場合は Sheet1) のセル A1 への参照。 
   
-- `=[Book1.xls]Sheet1!A1` �w�肳�ꂽ�u�b�N�̎w�肳�ꂽ�V�[�g�̃Z�� A1 �ւ̎Q�ƁB 
+- `=[Book1.xls]Sheet1!A1` 指定されたブックの指定されたシートのセル A1 への参照。 
   
-XLL は、値の先頭感嘆符 (**!**) に参照を変換できません。 ないため、現在のマクロ シートがないためです。 メモの先頭の等号記号 (**=**) オプションで、次の例では省略するとします。
+XLL では、先頭に感嘆符 (**!**) がない参照を値に変換することはできません。 現在のマクロ シートがないため、意味がありません。 先頭に等号 (**=**) を付けることはオプションであるため、次の例では省略します。
   
 ```C
 int WINAPI evaluate_expression_example(void)
@@ -80,14 +80,14 @@ int WINAPI evaluate_expression_example(void)
 }
 ```
 
-�܂��A **xlfEvaluate** �֐���g���āAXLL �֐��̓o�^ ID ��o�^����Ă��閼�O����擾���܂��B���̌�A [xlUDF �֐�](xludf.md)��g���Ă��̊֐���Ăяo�����߂ɁA�擾���� XLL �֐��̓o�^ ID ��g�����Ƃ��ł��܂��B
+また、**xlfEvaluate** 関数を使って、XLL 関数の登録 ID を登録されている名前から取得します。その後、[xlUDF 関数](xludf.md)を使ってその関数を呼び出すために、取得した XLL 関数の登録 ID を使うことができます。
   
 > [!NOTE]
-> [!����] �o�^����Ă��閼�O�́A **xlUDF** �֐��ɒ��ړn�����Ƃ��ł��܂��B�܂�A���O��]������ ID ��擾�����ɁA **xlUDF** ��Ăяo�����Ƃ��ł���Ƃ������Ƃł��B�������A�֐�����x��Ăяo���ꍇ�A�o�^ ID ��g���ČĂяo���ق��������Ȃ�܂��B 
+> 登録されている名前は、**xlUDF** 関数に直接渡すことができます。つまり、名前を評価して ID を取得せずに、**xlUDF** を呼び出すことができるということです。ただし、関数を何度も呼び出す場合、登録 ID を使って呼び出すほうが速くなります。 
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
-- [Excel ���[�N�V�[�g�Ǝ��̕]��](excel-worksheet-and-expression-evaluation.md)
-- [���Ԃ̂����鑀��Ń��[�U�[�ɂ�钆�f�������](permitting-user-breaks-in-lengthy-operations.md)
-- [Excel XLL SDK �̊T�v](getting-started-with-the-excel-xll-sdk.md)
+- [Excel ワークシートと式の評価](excel-worksheet-and-expression-evaluation.md)
+- [時間のかかる操作でユーザーによる中断を許可する](permitting-user-breaks-in-lengthy-operations.md)
+- [Excel XLL SDK の概要](getting-started-with-the-excel-xll-sdk.md)
 

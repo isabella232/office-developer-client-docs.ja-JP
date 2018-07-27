@@ -11,66 +11,66 @@ keywords:
 - excel12v function [excel 2007],Excel4v function [Excel 2007]
 localization_priority: Normal
 ms.assetid: e3e96b98-c5a7-4625-95b6-a1e2d09c6d3d
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 7ffa0bc3ae6222af1ecd7f65de66d026ea178c87
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798882"
 ---
 # <a name="excel4vexcel12v"></a>Excel4v/Excel12v
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-Microsoft Excel ���[�N�V�[�g�̓���֐��A�}�N�� �V�[�g�֐���R�}���h�A�܂��� XLL �ŗL�̓���֐���R�}���h�� DLL�AXLL�A�܂��̓R�[�h ���\�[�X�������Ăяo���܂��B
+Microsoft Excel ワークシートの内部関数、マクロ シート関数やコマンド、または XLL 固有の特殊関数やコマンドを DLL、XLL、またはコード リソース内部から呼び出します。
   
-Excel �̂��ׂĂ̍ŐV�o�[�W�����́A **Excel4v** ��T�|�[�g���Ă��܂��BExcel 2007 �ȍ~�̃o�[�W�����ł́A **Excel12v** ���T�|�[�g����Ă��܂��B 
+Excel のすべての最新バージョンは、**Excel4v** をサポートしています。Excel 2007 以降のバージョンでは、**Excel12v** がサポートされています。 
   
-Excel には、DLL や XLL にコントロールが渡された場合にのみ、これらの関数を呼び出すことができます。 呼び出せるように Excel が経過するとしないコントロール直接に Visual Basic for Applications (VBA)。 他の任意の時点で呼び出すことができません。 たとえば、DllMain 関数またはその他のオペレーティング システムには、DLL が呼び出されたときに、または DLL によって作成されたスレッドからの呼び出し時に呼び出すことはできません。 
+これらの関数は、Excel が DLL または XLL に制御を渡している場合にのみ、呼び出すことができます。 これらの関数は、Excel が Visual Basic for Applications (VBA) への呼び出しを介して間接的に制御を渡したときにも呼び出せます。 それ以外の時に、これらの関数を呼び出すことはできません。 たとえば、DllMain 関数に対する呼び出しの間も、オペレーティング システムが DLL を呼び出しているときも、これらの関数を呼び出すことはできません。DLL が作成したスレッドからも、これらの関数を呼び出すことはできません。 
   
-[Excel4 �� Excel12](excel4-excel12.md) �֐��́A�����̈�����X�^�b�N��̉ϒ����X�g�Ƃ��Ď󂯓���܂��B��� **Excel4v** ����� **Excel12v** �֐��́A�����̈�����z��Ƃ��Ď󂯓���܂��B����ȊO�̂�����_�ɂ����āA **Excel4** �� **Excel4v** �Ɠ����悤�ɓ��삵�A **Excel12** �� **Excel12v** �Ɠ����悤�ɓ��삵�܂��B
+[Excel4 と Excel12](excel4-excel12.md) 関数は、スタック上の可変長リストとしてそれらの引数を受け入れます。一方、**Excel4v** と **Excel12v** 関数は、配列としてそれらの引数を受け入れます。それ以外の点のすべてで、**Excel4** は **Excel4v** と同じように動作し、**Excel12** は **Excel12v** と同じように動作します。
   
 ```cs
 int _cdecl Excel4v(int iFunction, LPXLOPER pxRes, int iCount, LPXLOPER rgx[]);
 int _cdecl Excel12v(int iFunction, LPXLOPER12 pxRes, int iCount, LPXLOPER12 rgx[]);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
- _iFunction_(**int**)
+ _iFunction_ (**int**)
   
-�Ăяo���R�}���h�A�֐��A�܂��͓���֐���������l�B _iFunction_ �̗L���Ȓl�̈ꗗ�́A���̉���Q�Ƃ��Ă��������B 
+呼び出すコマンド、関数、または特殊関数を示す数値。_iFunction_ の有効な値の一覧は、次の解説を参照してください。 
   
- _pxRes_(**LPXLOPER**または**LPXLOPER12**)
+ _pxRes_ (**LPXLOPER** または **LPXLOPER12**)
   
-�]�����ꂽ�֐��̌��ʂ�ێ�����A **XLOPER** ( **Excel4v** �̏ꍇ) �܂��� **XLOPER12** ( **Excel12v** �̏ꍇ) �ւ̃|�C���^�[�B
+評価された関数の結果を保持する、**XLOPER** (**Excel4v** の場合) または **XLOPER12** (**Excel12v** の場合) へのポインター。
   
- _iCount_(**int**)
+ _iCount_ (**int**)
   
-�֐��֓n������A�̈����̐��BExcel 2003 �܂ł̃o�[�W�����ł́A0 - 30 �̔C�ӂ̐��ł��BExcel 2007 �ȍ~�́A0 - 255 �̔C�ӂ̐��ł��B
+関数へ渡される一連の引数の数。Excel 2003 以前のバージョンでは、0 ～ 30 の任意の数です。Excel 2007 以降は、0 ～ 255 の任意の数です。
   
- _rgx_(**LPXLOPER**または**LPXLOPER12**)
+ _rgx_ (**LPXLOPER []** または **LPXLOPER12 []**)
   
-�֐��ւ̈�����܂ޔz��ł��B�z���̂��ׂĂ̈����� **XLOPER** �܂��� **XLOPER12** �̒l�ւ̃|�C���^�[�ł���K�v������܂��B 
+関数への引数を含む配列です。配列内のすべての引数が **XLOPER** または **XLOPER12** の値を指すポインターである必要があります。 
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
-�����̊֐��́A **Excel4** ����� **Excel12** �Ɠ����l��Ԃ��܂��B
+これらの関数は、**Excel4** および **Excel12** と同じ値を返します。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-�����̊֐��́A���Z�q�ɓn���ꂽ�����̐����ς̏ꍇ�ɖ𗧂��܂��B���Ƃ��� **Excel4v** ����� **Excel12v** �́A�����̍��v�����o�^�����֐����������̐��ɂ���Č��܂� [xlfRegister](xlfregister-form-1.md) ��g�p���Ċ֐���o�^����Ƃ��ɖ�ɗ����܂��B **Excel4** �܂��� **Excel12** �̃��b�p�[�֐���L�q����Ƃ��ɂ́A **Excel4v** ����� **Excel12v** ��֗��ł��B�����̏ꍇ�A�ό������X�g��σT�C�Y�̒P��̔z��̈����ɕϊ��� ( **Excel4** �܂��� **Excel12** �֒ʏ�ǂ���񋟂����悤��)�A **Excel4v** �܂��� **Excel12v** ��g�p���� Excel �ɃR�[���o�b�N����K�v������܂��B
+これらの関数は、演算子に渡された引数の数が可変の場合に役立ちます。たとえば **Excel4v** および **Excel12v** は、[xlfRegister](xlfregister-form-1.md) (引数の合計数が、登録対象の関数が取る引数の数によって決まる) を使用して関数を登録するときに役に立ちます。**Excel4v** および **Excel12v** は、**Excel4** または **Excel12** のラッパー関数を記述するときにも役立ちます。これらの場合、(通常 **Excel4** または **Excel12** に指定される) 可変引数リストを可変サイズの単一の配列の引数に変換し、**Excel4v** または **Excel12v** を使用して Excel にコールバックする必要があります。
   
-### <a name="example"></a>��
+### <a name="example"></a>例
 
-�R�[�h�̗�ɂ��ẮA���Ɏ��� SDK ��C���X�g�[�������ꏊ�ɂ���AExcel 2010 XLL SDK �� **Excel** ����� **Excel12f** �֐��̃R�[�h��Q�Ƃ��Ă��������B 
+コードの例については、次に示す SDK をインストールした場所にある、Excel 2010 XLL SDK の **Excel** および **Excel12f** 関数のコードを参照してください。 
   
 Samples\Framewrk\Framewrk.c
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[Excel4�AExcel12](excel4-excel12.md)
+[Excel4/Excel12](excel4-excel12.md)
 

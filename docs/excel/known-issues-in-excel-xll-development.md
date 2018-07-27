@@ -1,5 +1,5 @@
 ---
-title: Excel �A�h�C�� (XLL) �J���ɂ�������m�̖��
+title: Excel アドイン (XLL) 開発における既知の問題
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,62 +8,62 @@ keywords:
 - known issues [excel 2007]
 localization_priority: Normal
 ms.assetid: 3dfecc0b-a91c-448e-8721-5d3486b625fa
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 9cdbb10ea68723bd7e1cd9289e8592a7cc087c46
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798887"
 ---
-# <a name="known-issues-in-excel-xll-development"></a>Excel �A�h�C�� (XLL) �J���ɂ�������m�̖��
+# <a name="known-issues-in-excel-xll-development"></a>Excel アドイン (XLL) 開発における既知の問題
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-���̃g�s�b�N�ł́AMicrosoft Excel �ł� XLL �J���ő�������\���̂�����m�̖��ɂ��Đ�����܂��B
+このトピックでは、Microsoft Excel での XLL 開発で遭遇する可能性のある既知の問題について説明します。
   
-## <a name="unregistering-xll-commands-and-functions"></a>XLL �̃R�}���h����ъ֐���o�^�������
+## <a name="unregistering-xll-commands-and-functions"></a>XLL のコマンドおよび関数を登録解除する
 
-登録すると、XLL 関数やコマンド、Excel は、リソースの新しい名前を作成し、その名前を持つ DLL 関数への参照を関連付けます。 名前は、4 番目の引数では、 *pxFunctionText* 、 [xlfRegister](xlfregister-form-1.md)関数から取得されます。 この名前がワークシート名を管理するための標準のダイアログ ボックスから非表示にします。 関数やコマンドの登録を解除するには、 [xlfSetName](xlfsetname.md)関数を使用して、名前を渡すことが、定義が渡されていない名前を削除してください。 ただし、バグによりこの関数ウィザードの一覧から名前を削除します。 
+XLL で関数やコマンドを登録すると、Excel 上で新しいリソース名が作成され、そのリソース名を持つ DLL 関数の参照と関連付けられます。 このリソース名は、[xlfRegister](xlfregister-form-1.md) 関数の 4 番目の引数である *pxFunctionText* から取得されます。 また、このリソース名は、ワークシート名を管理する標準のダイアログ ボックスからは非表示になっています。 関数やコマンドを登録解除するには、[xlfSetName](xlfsetname.md) 関数を使用してリソース名を削除する必要があります。この際、リソース名を渡しますが、定義は渡しません。 ただし、バグがあると、この関数ウィザードの一覧からリソース名を削除することができません。 
   
-## <a name="argument-description-string-truncation-in-the-function-wizard"></a>�֐��E�B�U�[�h�ɂ���������̐��������̐؂�̂�
+## <a name="argument-description-string-truncation-in-the-function-wizard"></a>関数ウィザードにおける引数の説明文字列の切り捨て
 
-*PxArgumentHelp1*パラメーターと**xlfRegister**関数の後続のすべてのパラメーターは、XLL 関数の引数に対応するオプションの文字列です。 関数ウィザードには、これらの引数の作成] ダイアログ ボックスでヘルプを提供するが表示されます。 Excel では、ダイアログ ボックスで表示する場合の 1 つまたは 2 つの文字で最後の引数に対応する文字列が切り捨てられます。 最終的な文字列の末尾に 1 つまたは 2 つのスペースを追加することによってこれを回避できます。 
+*PxArgumentHelp1* パラメーターと、その後の **xlfRegister** 関数のパラメーターはすべて、XLL 関数の引数に相当し、文字列は省略することができます。 引数作成ダイアログ ボックスにヘルプを表示するために、関数ウィザードにはこれらのパラメータが表示されます。 ダイアログ ボックスに表示する際、最後の引数に相当する文字列が Excel 上で 1 文字または 2 文字切り捨てられる場合があります。 これを回避するには、最終文字列の末尾に 1 文字または 2 文字分のスペースを追加します。 
   
-## <a name="binary-name-scope-limitation"></a>�o�C�i�����̃X�R�[�v����
+## <a name="binary-name-scope-limitation"></a>バイナリ名のスコープ制限
 
 バイナリ名とそのデータは、作成された時点でアクティブだったワークシートが再度アクティブになったときにのみ取得できます。ワークシート関数では、ワークブック内のワークシートをアクティブにすることはできないため (コマンドでのみ可能)、バイナリ名の適用は非常に制限されています。特定のワークシートからのみ呼び出されるコマンドがあれば、バイナリ名を使用してコマンドに関するデータを格納することもできます。
   
-## <a name="xlset-and-workbooks-with-array-formulas"></a>xlSet �Ɣz�񐔎���܂ރ��[�N�u�b�N
+## <a name="xlset-and-workbooks-with-array-formulas"></a>xlSet と配列数式を含むワークブック
 
-Excel 2003 およびそれ以前のバージョンでは、 [xlSet 関数](xlset.md)ではない、アクティブなワークシート、作業中のワークシートと同じ範囲が配列数式を含むワークシート上の範囲に値を代入しようとする場合を失敗します。 この例では、「配列の一部を変更することはできません」メッセージが表示されます。 これは、Excel 2007 で修正されました。 
+Excel 2003 以前のバージョンにおいて、作業中ではないワークシートの範囲に値を割り当てようとすると、[xlSet 関数](xlset.md) はエラーになり、作業中のシート上の同等範囲に配列数式が入ります。 この場合、「配列の一部を変更できません」というメッセージが表示されます。 この問題は、Excel 2007 で修正されました。 
   
-## <a name="circular-references-are-tolerated-in-data-tables"></a>�f�[�^ �e�[�u���ŏz�Q�Ƃ��\
+## <a name="circular-references-are-tolerated-in-data-tables"></a>データ テーブルで循環参照が可能
 
-Excel �ł͌��݁A�f�[�^ �e�[�u���̃x�[�X�ƂȂ�v�Z�ɂ����āA���e�[�u����̒l��Q�Ƃ��Ă���ꍇ�ł�G���[�ɂȂ�܂���B���̂悤�ȃV�i���I�͂܂�Ȃ��Ƃł����A�f�[�^ �e�[�u���̒l��v�Z���鐔���̍쐬��ύX�ɂ͒��ӂ��K�v�ł��B
+Excel では現在、データ テーブルのベースとなる計算において、同テーブル上の値を参照している場合でもエラーになりません。このようなシナリオはまれなことですが、データ テーブルの値を計算する数式の作成や変更には注意が必要です。
   
-## <a name="converting-an-integer-xloper12-to-an-xloper"></a>���� XLOPER12 �� XLOPER �ɕϊ�����
+## <a name="converting-an-integer-xloper12-to-an-xloper"></a>整数 XLOPER12 を XLOPER に変換する
 
-�����^ **xltypeInt** �́A **XLOPER12** �f�[�^�^�ł� 32 �r�b�g�̕����t�������ł����A **XLOPER** �f�[�^�^�ł� 16 �r�b�g�����t�������ł��邽�߁A���� **XLOPER12** �̒l�̒��ɂ́A���� **XLOPER** �Ɋ܂߂��Ȃ���̂����蓾�܂��BExcel ����ł��̃f�[�^�^��ϊ�����ꍇ�́A�f�[�^�^�𕂓������_ **xltypeNum** **XLOPER** �ɕϊ����Ă��̖�������܂��B
+整数型 **xltypeInt** は、**XLOPER12** データ型では 32 ビットの符号付き整数ですが、**XLOPER** データ型では 16 ビット符号付き整数であるため、整数 **XLOPER12** の値の中には、整数 **XLOPER** に含められないものがある可能性があります。Excel 内部でこのデータ型を変換する場合は、データ型を浮動小数点 **xltypeNum** **XLOPER** に変換してこの問題を回避します。
   
-�t���[�����[�N�֐� [XLOper12ToXLOper](xloper12toxloper.md) �́A���̓���𔽉f���āAExcel ����̓���ƈ�v����悤�ɂ��܂��B���̊֐���Ăяo���ہA�Ԃ� **XLOPER** ����� **xltypeInt** �ł���Ƒz�肵�Ȃ��ł��������B **my_xloper** �^�� **xltypeNum** �̏ꍇ�� **my_xloper.val.w** ��ǂݏo���ƁAfalse �̒l���Ԃ�܂��B
+フレームワーク関数 [XLOper12ToXLOper](xloper12toxloper.md) は、この動作を反映して、Excel 内部の動作と一致するようにします。この関数を呼び出す際、返される **XLOPER** が常に **xltypeInt** であると想定しないでください。**my_xloper** 型が **xltypeNum** の場合に **my_xloper.val.w** を読み出すと、false の値が返されます。
   
-## <a name="returning-xloper-or-xloper12-by-modifying-arguments-in-place"></a>������C���v���[�X�ŕύX���� XLOPER �܂��� XLOPER12 ��Ԃ�
+## <a name="returning-xloper-or-xloper12-by-modifying-arguments-in-place"></a>引数をインプレースで変更して XLOPER または XLOPER12 を返す
 
-Excel �ł͈�����C���v���[�X�ŕύX���āA **XLOPER** �܂��� **XLOPER12** ��Ԃ��悤�Ɋ֐���o�^���邱�Ƃ��ł��܂��B�������A **XLOPER**/ **XLOPER12** ��������������|�C���g���Ă���A���̃|�C���^�� DLL �֐��̖߂�l�ŏ㏑�������ƁAExcel �̓����� ���[�N�ɂȂ��鋰�ꂪ����܂��BExcel �ŃG���[�͕\������܂��񂪁A���ʓI�ɃN���b�V�����鋰�ꂪ����܂��B�܂��ADLL �Ŗ߂�l�p�̃����������蓖�Ă��Ă���ꍇ�AExcel �͂��̃������������悤�Ƃ��邽�߁A�����ɃA�v���P�[�V�������N���b�V�����鋰�ꂪ����܂��B���̂��߁A **XLOPER**/ **XLOPER12** �����̓C���v���[�X�ŕύX���Ȃ��ł��������B **XLOPER** ������ **XLOPER12** �����͂��ׂāA�K���ǂݎ���p�Ƃ��Ĉ����Ă��������B 
+Excel では引数をインプレースで変更して、**XLOPER** または **XLOPER12** を返すように関数を登録することができます。しかし、**XLOPER**/ **XLOPER12** 引数がメモリをポイントしており、そのポインターが DLL 関数の戻り値で上書きされると、Excel でメモリ リークが発生する可能性があります。Excel でエラーは表示されませんが、結果的にクラッシュする恐れがあります。また、DLL で戻り値用のメモリが割り当てられている場合、Excel はそのメモリを解放しようとするため、すぐにアプリケーションがクラッシュする恐れがあります。そのため、**XLOPER**/ **XLOPER12** 引数はインプレースで変更しないでください。**XLOPER** 引数や **XLOPER12** 引数はすべて、必ず読み取り専用として扱ってください。 
   
-�ڍׂɂ��ẮA�u[Excel �̃������Ǘ�](memory-management-in-excel.md)�v��Q�Ƃ��Ă��������B
+詳細については、「[Excel のメモリ管理](memory-management-in-excel.md)」を参照してください。
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
 [XLOper12ToXLOper](xloper12toxloper.md)
 
 
-[Excel XLL �̊J��](developing-excel-xlls.md)
+[Excel XLL の開発](developing-excel-xlls.md)
   
-[Excel XLL SDK API �֐����t�@�����X](excel-xll-sdk-api-function-reference.md)
+[Excel XLL SDK API 関数リファレンス](excel-xll-sdk-api-function-reference.md)
   
-[Excel �̃������Ǘ�](memory-management-in-excel.md)
+[Excel のメモリ管理](memory-management-in-excel.md)
 

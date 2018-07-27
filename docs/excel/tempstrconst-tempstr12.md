@@ -11,42 +11,42 @@ keywords:
 - tempstr12 function [excel 2007],TempStrConst function [Excel 2007]
 localization_priority: Normal
 ms.assetid: faf4ee4e-8d33-4cb3-ae16-5648a837ee4f
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 321c41aa87a3bfa0edc1d77ecc8fbe4b6a6a4730
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798958"
 ---
 # <a name="tempstrconsttempstr12"></a>TempStrConst/TempStr12
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-**xltypeStr** �������܂ވꎞ�I�� **XLOPER/XLOPER12** ��쐬����t���[�����[�N ���C�u�����֐��B���͂Ƃ��� Null �ŏI������\�[�X�̕������󂯎��܂��B���̊֐��́A�V���������� �o�b�t�@�[����蓖�ĂāA���̃o�b�t�@�[�ɓn���ꂽ�������R�s�[���܂��B���͕�����͕ύX����Ȃ����߁A **const** �Ƃ��Đ錾����܂��B
+**xltypeStr** 文字列を含む一時的な **XLOPER/XLOPER12** を作成するフレームワーク ライブラリ関数。入力として Null で終了するソースの文字列を受け取ります。この関数は、新しいメモリ バッファーを割り当てて、そのバッファーに渡された文字列をコピーします。入力文字列は変更されないため、**const** として宣言されます。
   
 ```cs
 LPXLOPER TempStrConst(const LPSTR str);
 LPXLOPER12 TempStr12(const XCHAR* lpstr);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _str_
   
-Null �ŏI������\�[�X�̕�����ւ̃|�C���^�[�B **XLOPER** �̏ꍇ�ATempStrConst �� 255 �o�C�g��蒷���������؂�̂Ă܂��B **XLOPER12** �̏ꍇ�ATempStr12Const �� 32,767 Unicode ������蒷���������؂�̂Ă܂��B
+Null で終了するソースの文字列へのポインター。**XLOPER** の場合、TempStrConst は 255 バイトより長い文字列を切り捨てます。**XLOPER12** の場合、TempStr12Const は 32,767 Unicode 文字より長い文字列を切り捨てます。
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
-�n���ꂽ������o�b�t�@�[�̃R�s�[��i�[���Ă��� **xltypeStr** �������Ԃ��܂��B 
+渡された文字列バッファーのコピーを格納している **xltypeStr** 文字列を返します。 
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-**XLOPER** ������̃t���[�����[�N�֐� **TempStr** �̓���͈قȂ�܂��B�w�肳�ꂽ������̍ŏ��̕�����㑱�̕�����̒����ŏ㏑�����悤�Ƃ��邽�߁A���ӂ��K�v�ł��B����͏�Ɉ��S�Ƃ����킯�ł͂���܂���B�ǂݎ���p�̕������n���ƁAMicrosoft Excel ���N���b�V������\��������܂��B���̕��@�ɂ��ꎞ�I�ȕ�����̍쐬�́A **TempStrConst** �� **TempStr12** �̗����œ��삷����@�Ƃ��Ă͐�������Ȃ��Ȃ�܂����B���������āA���͕�����̍ŏ��̕����́A������̐擪�Ƃ��� (�܂�A������\�������܂��͒�����\�������p�̃X�y�[�X�Ƃ��Ăł͂Ȃ�) ��������܂��B�e�����\���ł��Ȃ����߁A�J�n���ɃG���R�[�h���ꂽ������\�������̂��镶����͓n���Ȃ��ł��������B 
+**XLOPER** 文字列のフレームワーク関数 **TempStr** の動作は異なります。指定された文字列の最初の文字を後続の文字列の長さで上書きしようとするため、注意が必要です。この動作は安全でないことがあり、読み取り専用の文字列を渡すと、Microsoft Excel がクラッシュする可能性があります。この方法による一時的な文字列の作成は、**TempStrConst** と **TempStr12** の両方で動作する方法としては推奨されなくなりました。したがって、入力文字列の最初の文字は、文字列の先頭として (つまり、長さを表す文字または長さを表す文字用のスペースとしてではなく) 処理されます。影響が予測できないため、開始時にエンコードされた長さを表す文字のある文字列は渡さないでください。 
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̗�ł́A **TempStr12** �֐���g�p���ă��b�Z�[�W �{�b�N�X�̕������쐬���܂��B 
+この例では、**TempStr12** 関数を使用してメッセージ ボックスの文字列を作成します。 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -58,9 +58,9 @@ short WINAPI TempStrExample(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[�t���[�����[�N ���C�u�����̊֐�](functions-in-the-framework-library.md)
+[フレームワーク ライブラリの関数](functions-in-the-framework-library.md)
 

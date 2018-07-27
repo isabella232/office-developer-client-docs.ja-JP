@@ -10,45 +10,45 @@ keywords:
 - xlgetinst function [excel 2007]
 localization_priority: Normal
 ms.assetid: 631a8f4e-ea7c-4743-9ee1-b2233fd7d98d
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 9484f7bbc1f5e0fc5b0def17f2ce79ef226dcd17
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798982"
 ---
 # <a name="xlgetinst"></a>xlGetInst
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-���� DLL ��Ăяo���Ă��� Microsoft Excel �C���X�^���X�̃C���X�^���X �n���h����Ԃ��܂��B
+現在 DLL を呼び出している Microsoft Excel インスタンスのインスタンス ハンドルを返します。
   
 ```cs
 Excel4(xlGetInst, LPXLOPER pxRes, 0); /* returns low part only */
 Excel12(xlGetInst, LPXLOPER12 pxRes, 0); /* returns full handle */
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-���̊֐��ɂ͈����͂���܂���B
+この関数には引数はありません。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-インスタンス ハンドル (**xltypeInt**) は、 **val.w**フィールドになります。 
+インスタンス ハンドル (**xltypeInt**) は、**val.w** フィールドに取り込まれます。 
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-���̊֐���g�p����ƁADLL ��Ăяo���Ă��� Excel �� �����̎��s���C���X�^���X�����ł��܂��B
+この関数を使用すると、DLL を呼び出している Excel の複数の実行中インスタンスを特定できます。
   
-[Excel4](excel4-excel12.md) �܂��� [Excel4v](excel4v-excel12v.md) ��g�p���Ă��̊֐���Ăяo���ƁA�Ԃ���� XLOPER �����ϐ��́A16 �r�b�g�����t�� short int �ɂȂ�܂��B���̏ꍇ�ɓ���邱�Ƃ��ł���̂́A32 �r�b�g Windows �n���h���̉��� 16 �r�b�g�݂̂ł��BExcel 2007 �ȍ~�A **XLOPER12** �̐����ϐ��� 32 �r�b�g�����t�� int �ɂȂ������߁A�n���h���S�̂�܂߂邱�Ƃ��ł��A���ׂĂ̊J���Ă���E�B���h�E�𔽕���������K�v���Ȃ�Ȃ�܂����B 
+[Excel4](excel4-excel12.md) または [Excel4v](excel4v-excel12v.md) を使用してこの関数を呼び出すと、返される XLOPER 整数変数は、16 ビット符号付き short int になります。この場合に格納できるのは、32 ビット Windows ハンドルの下位 16 ビットのみです。Excel 2007 以降では、**XLOPER12** の整数変数は 32 ビットの符号付き整数になり、すべてのオープン ウィンドウを反復処理する必要がなくなっています。 
   
 > [!IMPORTANT]
-> [!�D�V] **xlGetInst** �֐��� 64 �r�b�g�ł� Microsoft Excel �Ŏg�p����ƁA���s���܂��B����́A **xltypeInt** �l�̌^�̑傫�����AExcel �ɂ���ĕԂ���� 64 �r�b�g���̃n���h����ێ��ł��Ȃ����߂ł��B���̂��߁AExcel 2010 �ł� [xlGetInstPtr](xlgetinstptr.md) �Ƃ������O�̐V�����֐�����������܂����B���̊֐��́A32 �r�b�g�� 64 �r�b�g�̂ǂ���̃o�[�W������ Excel �ł����ɓ��삵�܂��B 
+> **xlGetInst** 関数を 64 ビット版の Microsoft Excel で使用すると、失敗します。これは、**xltypeInt** 値の型の大きさが、Excel によって返される 64 ビット長のハンドルを保持できないためです。このため、Excel 2010 では [xlGetInstPtr](xlgetinstptr.md) という名前の新しい関数が導入されました。この関数は、32 ビットと 64 ビットのどちらのバージョンの Excel でも正常に動作します。 
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̎g�p��ł́A�Ō�ɌĂяo���� Excel �R�s�[ �C���X�^���X��A���݌Ăяo���Ă��� Excel �R�s�[�Ɣ�r���܂��B�����ꍇ�ɂ� 1 ��Ԃ��A�قȂ�ꍇ�ɂ� 0 ��Ԃ��܂��B�֐������s����ƁA-1 ��Ԃ��܂��B
+次の例では、呼び出し元 Excel の最終コピーのインスタンスを、呼び出し元 Excel の現在のコピーと比較します。この 2 つが同じであれば 1 を返し、そうでなければ 0 を返します。関数が失敗した場合は、-1 を返します。
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -74,7 +74,7 @@ short WINAPI xlGetInstExample(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
@@ -83,5 +83,5 @@ short WINAPI xlGetInstExample(void)
 [xlGetInstPtr](xlgetinstptr.md)
 
 
-[DLL �܂��� XLL ����̂݌Ăяo���\�� C API �֐�](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+[DLL または XLL からのみ呼び出し可能な C API 関数](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 

@@ -10,21 +10,21 @@ keywords:
 - excel function [excel 2007],Excel12f function [Excel 2007]
 localization_priority: Normal
 ms.assetid: 4e6a9ccc-988d-42a9-8874-01f2ee29b835
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 56034984852713496465c3d1f79a9989fc47df1c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798809"
 ---
 # <a name="excelexcel12f"></a>Excel/Excel12f
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-フレームワーク ライブラリの機能です。 **Excel**は、 [Excel4](excel4-excel12.md)関数のラッパーです。 **Excel12f**は、 [Excel12](excel4-excel12.md)関数のラッパーです。 それぞれは、どの引数が 0 で、一時**XLOPER**または**XLOPER12**の作成が失敗したことを示すであることを確認するを確認します。 エラーが発生する場合は、各デバッグ メッセージを出力します。 完了したら、各一時**XLOPER**と**XLOPER12**の作成されている可能性があるすべての一時的なメモリを解放します。
+フレームワーク ライブラリ関数。 **Excel** は [Excel4](excel4-excel12.md) 関数のラッパーです。 **Excel12f** は [Excel12](excel4-excel12.md) 関数のラッパーです。 引数がいずれも 0 になっていないことをそれぞれ確認します。0 の場合は一時的な **XLOPER** や **XLOPER12** が作成できなかったことを表します。 エラーが発生すると、それぞれデバッグ メッセージが出力されます。 出力が終わると、一時的な **XLOPER** や **XLOPER12** 用に作成された一時メモリはすべて解放されます。
   
- **Excel12f** �́AExcel 2007 C API ���C�u�����ȍ~�� DLL ����̂݌Ăяo�����Ƃ��ł��܂��B����ɁAExcel 2007 �ȍ~�ŋN�������Ƃ��̂ݓ��삵�A����ȊO�� **xlretFailed** �Ŏ��s���܂��B 
+ **Excel12f**から Excel 2007 C API ライブラリ以降の DLL からのみ呼び出すことができます。さらに、Excel 2007 以降で起動したときのみ動作し、それ以外は **xlretFailed** で失敗します。 
   
 ```cs
 int Excel(int iFunction, LPXLOPER pxRes, int iCount, 
@@ -33,31 +33,31 @@ int Excel12f(int iFunction, LPXLOPER12 pxRes, int iCount,
 LPXLOPER12 argument1, ...);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
- _iFunction_(**int**)
+ _iFunction_ (**int**)
   
-�Ăяo���R�}���h�܂��͊֐���������l�B�ڍׂɂ��ẮA[Excel4�AExcel12](excel4-excel12.md) ��Q�Ƃ��Ă��������B
+呼び出すコマンドまたは関数を示す数値。詳細については、「[Excel4/Excel12](excel4-excel12.md)」を参照してください。
   
  _pxRes_
   
-�]�����ꂽ�֐��̌��ʂ̃|�C���^�B���ʂɎ�����郁�����͂��ׂāAExcel �ɂ���Ċ��蓖�Ă��A�s�v�ɂȂ����� [xlFree](xlfree.md) ��Ăяo���ĉ�����邩�A�܂��� Excel �ɖ߂��ꍇ�� **xlbitXLFree** ��ݒ肵�ĉ�����܂��B 
+評価された関数の結果のポインター。結果に示されるメモリはすべて、Excel によって割り当てられ、不要になったら [xlFree](xlfree.md) を呼び出して解放するか、または Excel に戻す場合は **xlbitXLFree** を設定して解放します。 
   
- _iCount_(**int**)
+ _iCount_ (**int**)
   
-�֐��ɓn���������̐��BExcel 2007 �ȍ~�A������ 255 �ɐ�������Ă��܂��B����ȑO�̃o�[�W�����̐����l�� 30 �ł��B
+関数に渡される引数の数。Excel 2007 以降、引数の数は 255 に制限されています。それ以前のバージョンでは引数の数は 30 に制限されています。
   
  _argument1, ..._
   
-�ȗ��\�ȁA�֐��̈����B���ׂĂ̈����́A **Excel** �̏ꍇ�� **XLOPER** �ւ̃|�C���^�[�A **Excel12f** �̏ꍇ�� **XLOPER12** �ւ̃|�C���^�[�ɂ���K�v������܂��B
+省略可能な、関数の引数。すべての引数は、**Excel** の場合は **XLOPER** へのポインター、**Excel12f** の場合は **XLOPER12** へのポインターにする必要があります。
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
-どちらの関数は、同じエラーが発生し、 **Excel4**、 **Excel4v**、 **Excel12**、および**Excel12v**としての成功コードを返します。 これらのコードの詳細については、 [Excel4/Excel12](excel4-excel12.md)を参照してください。 さらに、これらのフレームワークの機能は、パラメーターに NULL ポインターの場合は、C API を呼び出さずに**xlretFailed**が検出されたを返します。 
+どちらの関数も、**Excel4**、**Excel4v**、**Excel12**、**Excel12v** と同様のエラー コードや成功コードを返します。 これらのコードの詳細については、「[Excel4/Excel12](excel4-excel12.md)」を参照してください。 さらに、パラメーターに対する NULL ポインターが検出された場合、これらのフレームワーク関数は、C API を呼び出さずに、**xlretFailed** を返します。 
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̗�ł́A�s���Ȉ����� **Excel12f** �֐��ɓn���āA�f�o�b�K�[�Ƀ��b�Z�[�W�𑗐M���Ă��܂��B 
+この例では、不正な引数を **Excel12f** 関数に渡して、デバッガーにメッセージを送信しています。 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -69,12 +69,12 @@ short WINAPI Excel12fExample(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[Excel4�AExcel12](excel4-excel12.md)
+[Excel4/Excel12](excel4-excel12.md)
 
 
-[�t���[�����[�N ���C�u�����̊֐�](functions-in-the-framework-library.md)
+[フレームワーク ライブラリの関数](functions-in-the-framework-library.md)
 

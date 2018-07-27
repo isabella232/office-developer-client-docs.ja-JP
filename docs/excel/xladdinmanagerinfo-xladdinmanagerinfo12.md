@@ -10,48 +10,48 @@ keywords:
 - xladdinmanagerinfo function [excel 2007]
 localization_priority: Normal
 ms.assetid: 63a73cd2-6479-4233-ad68-93379f940717
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: e42cca809c4426ddf9a98b3b275d08490d31c8db
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798950"
 ---
 # <a name="xladdinmanagerinfoxladdinmanagerinfo12"></a>xlAddInManagerInfo/xlAddInManagerInfo12
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-�A�h�C�� �}�l�[�W���[�� Excel �Z�b�V�����ŏ��߂ČĂяo���ꂽ�Ƃ��ɁAMicrosoft Excel �ɂ���ČĂяo����܂��B���̊֐��́A���g�p�̃A�h�C���ɂ��Ă̏���A�h�C�� �}�l�[�W���[�ɒ񋟂��邽�߂Ɏg�p����܂��B
+アドイン マネージャーが Excel セッションで初めて呼び出されたときに、Microsoft Excel によって呼び出されます。この関数は、ご使用のアドインについての情報をアドイン マネージャーに提供するために使用されます。
   
-Excel 2007 �ȍ~�̃o�[�W�����ł́AXLL �ɂ���ăG�N�X�|�[�g�����ꍇ�ɂ� **xlAddInManagerInfo** �ł͂Ȃ� **xlAddInManagerInfo12** ���Ăяo����܂��B **xlAddInManagerInfo12** �֐��́A **xlAddInManagerInfo** �Ɠ����悤�ɋ@�\���āAXLL �̓���ɂ�����o�[�W�����ŗL�̑���_�������K�v������܂��BExcel �ł́A **xlAddInManagerInfo12** �� **XLOPER12** �f�[�^�^��Ԃ��A **xlAddInManagerInfo** �� **XLOPER** �f�[�^�^��Ԃ��K�v������܂��B
+Excel 2007 以降のバージョンでは、XLL によってエクスポートされる場合には **xlAddInManagerInfo** ではなく **xlAddInManagerInfo12** が呼び出されます。**xlAddInManagerInfo12** 関数は、**xlAddInManagerInfo** と同じように機能して、XLL の動作におけるバージョン固有の相違点を回避する必要があります。Excel では **xlAddInManagerInfo12** が **XLOPER12** データ型を返し、**xlAddInManagerInfo** は **XLOPER** データ型を返す必要があります。
   
-**xlAddInManagerInfo12** �֐��� Excel 2007 ���O�� Excel �o�[�W�����ł͌Ăяo����܂���B **XLOPER12** ��T�|�[�g���Ă��Ȃ����߂ł��B
+**xlAddInManagerInfo12** 関数は Excel 2007 より前の Excel バージョンでは呼び出されません。**XLOPER12** をサポートしていないためです。
   
-Excel �ł́AXLL ������炢���ꂩ�̊֐���������ăG�N�X�|�[�g���邱�Ƃ͕s�v�ł��B
+Excel では、XLL がこれらいずれかの関数を実装してエクスポートすることは不要です。
   
 ```cs
 LPXLOPER WINAPI xlAddInManagerInfo(LPXLOPER pxAction);
 LPXLOPER12 WINAPI xlAddInManagerInfo12(LPXLOPER12 pxAction);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
- _pxAction:_ 数値**XLOPER または XLOPER12** (**xltypeInt**または**xltypeNum**) へのポインター。
+ _pxAction:_ 数値 **XLOPER/XLOPER12** (**xltypeInt** または **xltypeNum**) へのポインター。
   
-Excel �ŗv���������ł��B
+Excel で要求される情報です。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-_pxAction_ �����l 1 �̏ꍇ (1 �ɂȂ�悤�������邱�Ƃ�ł��܂�)�A���̊֐����������ƁA�A�h�C���ɂ��Ă̏�� (�ʏ�͖��O�B�o�[�W�����ԍ����܂܂�邱�Ƃ����܂�) ���܂܂�镶���񂪕Ԃ�܂��B����ȊO�̏ꍇ�A#VALUE ��Ԃ��܂��B 
+_pxAction_ が数値 1 の場合 (1 になるよう強制することもできます)、この関数を実装すると、アドインについての情報 (通常は名前。バージョン番号が含まれることもあります) が含まれる文字列が返ります。それ以外の場合、#VALUE を返します。 
   
-�������Ԃ��Ȃ��ꍇ�AExcel ���߂�l�𕶎���ɕϊ����悤�Ƃ��܂��B
+文字列を返さない場合、Excel が戻り値を文字列に変換しようとします。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-�Ԃ���镶���񂪁A���I�Ɋ��蓖�Ă�ꂽ�o�b�t�@�[��|�C���g���Ă���ꍇ�́A���̃o�b�t�@�[��ŏI�I�ɉ������K�v������܂��B������ Excel �ɂ���Ċ��蓖�Ă�ꂽ�ꍇ�A **xlbitXLFree** ��ݒ肵�ĉ�����܂��B������ DLL �ɂ���Ċ��蓖�Ă�ꂽ�ꍇ�ɂ́A **xlbitDLLFree** ��ݒ肵�ĉ�����܂��B����ɁA [xlAutoFree](xlautofree-xlautofree12.md) ( **XLOPER** ��Ԃ��ꍇ) �܂��� **xlAutoFree12** ( **XLOPER12** ��Ԃ��ꍇ) ��������Ȃ���΂Ȃ�܂���B
+返される文字列が、動的に割り当てられたバッファーをポイントしている場合は、このバッファーを最終的に解放する必要があります。文字列が Excel によって割り当てられた場合、**xlbitXLFree** を設定して解放します。文字列が DLL によって割り当てられた場合には、**xlbitDLLFree** を設定して解放します。さらに、[xlAutoFree](xlautofree-xlautofree12.md) (**XLOPER** を返す場合) または **xlAutoFree12** (**XLOPER12** を返す場合) も実装しなければなりません。
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
  `\SAMPLES\GENERIC\GENERIC.C`
   
@@ -87,5 +87,5 @@ LPXLOPER12 WINAPI xlAddInManagerInfo12(LPXLOPER12 xAction)
 
 
 
-[�A�h�C�� �}�l�[�W���[�� XLL �C���^�[�t�F�C�X�֐�](add-in-manager-and-xll-interface-functions.md)
+[アドイン マネージャーと XLL インターフェイス関数](add-in-manager-and-xll-interface-functions.md)
 

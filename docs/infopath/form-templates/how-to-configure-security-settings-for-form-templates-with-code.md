@@ -1,5 +1,5 @@
 ---
-title: コードを含むフォーム テンプレートのセキュリティ設定を構成します。
+title: コードを含むフォーム テンプレートのセキュリティ設定を構成する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,19 +7,19 @@ keywords:
 - security policy deployment package [infopath 2007],URLs [InfoPath 2007], assigning FullTrust,code access security [InfoPath 2007],UNCs [InfoPath 2007], assigning FullTrust,CAS [InfoPath 2007],security [InfoPath 2007], configuring,code groups [InfoPath 2007],FullTrust [InfoPath 2007], assigning to UNCs,FullTrust [InfoPath 2007], assigning to URLs
 localization_priority: Normal
 ms.assetid: 24d1a322-581f-497e-b97b-bd02c4516551
-description: .NET 構成スナップインを使用すると、InfoPath マネージ コード フォーム テンプレートに適用されるアクセス許可セットをカスタマイズできます。
+description: .NET 構成スナップインを使用して、InfoPath マネージ コード フォーム テンプレートに適用されるアクセス許可セットをカスタマイズできます。
 ms.openlocfilehash: f04ce71875eac7695d2900131ca7c9cd333fa90f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799128"
 ---
-# <a name="configure-security-settings-for-form-templates-with-code"></a>コードを含むフォーム テンプレートのセキュリティ設定を構成します。
+# <a name="configure-security-settings-for-form-templates-with-code"></a>コードを含むフォーム テンプレートのセキュリティ設定を構成する
 
-.NET 構成スナップインを使用すると、InfoPath マネージ コード フォーム テンプレートに適用されるアクセス許可セットをカスタマイズできます。
+.NET 構成スナップインを使用して、InfoPath マネージ コード フォーム テンプレートに適用されるアクセス許可セットをカスタマイズできます。
   
-InfoPath によってホストされている共通言語ランタイム (CLR) は、マシン ポリシー レベルで All_Code グループには、 *InfoPath フォーム テンプレート*の名前の定義済みのコード グループを探します。 CLR は、フォームのコードが実行されているアプリケーション ドメイン (AppDomain) には、そのグループで定義されているアクセス許可セットに適用されます。 これにより、InfoPath のマネージ コード フォーム テンプレートに付与されるアクセス許可セットをカスタマイズすることができます。 ダウンロードしたフォーム テンプレートを与えることができますたとえば、http://MySiteへの Active Directory のアクセス許可。 
+InfoPath でホストされている共通言語ランタイム (CLR) は、All_Code グループ内の *InfoPath フォーム テンプレート*という名前の事前定義コード グループを検索します。 CLR は、そのグループで定義されているアクセス許可セットを、フォーム コードが実行されるアプリケーション ドメイン (AppDomain) に適用します。 これにより、InfoPath マネージ コード フォーム テンプレートに付与されるアクセス許可セットをカスタマイズできます。 たとえば、http://MySite からダウンロードしたフォーム テンプレートに、Active Directory へのアクセス許可を付与できます。 
   
 .NET 構成スナップインで定義したカスタム セキュリティ ポリシーを適用するには、フォーム テンプレートが実行されるすべてのクライアント コンピューター上にポリシーを配置する必要があります。
   
@@ -30,7 +30,7 @@ InfoPath マネージ コード フォーム テンプレートのセキュリ�
 次の手順では、InfoPath マネージ コード フォーム テンプレートにアクセス許可を付与しないコード グループを作成します (ローカル コンピューターにインストールまたは登録されているフォーム テンプレートを除く)。このコード グループの下で、特定の URL または UNC にある InfoPath フォーム テンプレートにアクセス許可セットを割り当てることができます。 `InfoPath Form Templates` コード グループ内にコード グループを作成し、アクセス許可セットを割り当てる方法については、次の手順を参照してください。 
   
 > [!NOTE]
-> [!メモ] Microsoft .NET Framework 1.1 再頒布可能パッケージと共にインストールされる **Microsoft .NET Framework 1.1 構成** ツールと異なり、 **Microsoft .NET Framework 2.0 Configuration** は Microsoft .NET Framework 2.0 Software Development Kit (SDK) をインストールしなければインストールされません。 
+> Microsoft .NET Framework 1.1 再頒布可能パッケージと共にインストールされる **Microsoft .NET Framework 1.1 構成** ツールと異なり、 **Microsoft .NET Framework 2.0 Configuration** は Microsoft .NET Framework 2.0 Software Development Kit (SDK) をインストールしなければインストールされません。 
   
 ### <a name="to-create-a-custom-security-code-group-for-infopath-managed-code-forms"></a>InfoPath マネージ コード フォームのカスタム セキュリティ コード グループを作成するには
 
@@ -50,16 +50,16 @@ InfoPath マネージ コード フォーム テンプレートのセキュリ�
     
 必要に応じて、 **InfoPath Form Templates** コード グループに [ **Nothing**] 以外のアクセス許可セットを割り当て、すべての InfoPath マネージ コード フォーム テンプレートのアクセス許可セットを管理することができます。 
 > [!NOTE]
-> [!メモ] [ **.NET Configuration 2.0**] スナップインで、グループを右クリックして [ **プロパティ**] をクリックし、[ **アクセス許可セット**] タブをクリックすることにより、セキュリティ コード グループのアクセス許可セットをいつでも変更できます。 
+> [ **.NET Configuration 2.0**] スナップインで、グループを右クリックして [ **プロパティ**] をクリックし、[ **アクセス許可セット**] タブをクリックすることにより、セキュリティ コード グループのアクセス許可セットをいつでも変更できます。 
   
 ## <a name="assigning-fulltrust-to-forms-at-a-specific-url-or-unc"></a>特定の URL または UNC にあるフォームに FullTrust を割り当てる
 
 **InfoPath Form Templates** グループの下にコード グループを作成し、特定の URL または UNC の場所からのフォーム テンプレートに完全信頼のアクセス許可セットを付与することができます。その後は、指定した場所に発行されるすべてのフォーム テンプレートが完全に信頼されて実行されます。 
   
 > [!NOTE]
-> [!メモ] ローカル コンピューター (My Computer Zone コード グループ) から読み込まれるフォーム テンプレートは、InfoPath によってランダムな URL を使用して読み込まれます。 このため、それらのフォーム テンプレートには、次の手順を使用して FullTrust アクセス許可セットを付与することができません。 ローカルにインストールされたフォーム テンプレートに FullTrust アクセス許可を付与するのには、記載されている手順のいずれかを使用して、展開するフォーム テンプレートを必要とする完全信頼する] トピックのセクションで、[コードを含む InfoPath フォーム テンプレートを展開](how-to-deploy-infopath-form-templates-with-code.md)します。 
+> ローカル コンピューターから読み込んだフォーム テンプレート (My Computer Zone コード グループ) が、InfoPath によりランダムな URL を使用して読み込まれます。 このため、次の手順を使用してこのようなフォーム テンプレートに FullTrust アクセス許可を付与することはできません。 ローカルにインストールされたフォーム テンプレートに FullTrust アクセス許可セットを付与するには、「[コードを含む InfoPath フォーム テンプレートを展開する](how-to-deploy-infopath-form-templates-with-code.md)」の「完全な信頼を必要とするフォーム テンプレートを展開する」に記載されているいずれかの手順を使用します。 
   
-### <a name="to-assign-fulltrust-to-infopath-forms-at-a-specific-url-or-unc-location"></a>特定の URL または UNC の場所にある InfoPath フォームへ FullTrust を割り当てるには
+### <a name="to-assign-fulltrust-to-infopath-forms-at-a-specific-url-or-unc-location"></a>特定の URL または UNC の場所にある InfoPath フォームに FullTrust を割り当てるには、次の操作を行います。
 
 1. [ **スタート**] メニューの [ **管理ツール**] をポイントし、[ **Microsoft .NET Framework 2.0 Configuration**] をクリックします。
     
@@ -90,7 +90,7 @@ InfoPath マネージ コード フォーム テンプレートのセキュリ�
 7. 新しい設定を適用するには、InfoPath を閉じて再起動します。
     
 > [!NOTE]
-> [!メモ] より制限の厳しいアクセス許可セットや、独自のアクセス許可セットを適用するには、手順 4. で [ **FullTrust**] の代わりに適切なオプションを選択します。 
+> より制限の厳しいアクセス許可セットや、独自のアクセス許可セットを適用するには、手順 4. で [ **FullTrust**] の代わりに適切なオプションを選択します。 
   
 ## <a name="creating-a-deployment-package-for-infopath-security-policy"></a>InfoPath セキュリティ ポリシーの配置パッケージを作成する
 
@@ -114,5 +114,5 @@ InfoPathマネージ フォーム テンプレートのカスタム セキュリ
 
 
 
-[コードを含むフォーム テンプレートのセキュリティ モデルについて](about-the-security-model-for-form-templates-with-code.md)
+[コードを含むフォーム テンプレートのためのセキュリティ モデルについて](about-the-security-model-for-form-templates-with-code.md)
 

@@ -5,17 +5,17 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: f08f9212-af10-1287-477d-adde7674f523
-description: Microsoft InfoPath エディターの [フォームの結合機能は、1 つのフォームに複数のフォームからデータを結合するように設計されています。
+description: Microsoft InfoPath エディターのフォームの結合機能を使用すると、複数のフォームのデータを 1 つのフォームに結合することができます。
 ms.openlocfilehash: e0e6bfc074829f262d7eef3cf7bf6a86c3b2253b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799105"
 ---
-# <a name="enable-custom-merging-of-infopath-forms"></a>InfoPath フォームのカスタム結合の有効化
+# <a name="enable-custom-merging-of-infopath-forms"></a>InfoPath フォームのカスタム結合を有効にする
 
-Microsoft InfoPath エディターの **[フォームの結合**機能は、1 つのフォームに複数のフォームからデータを結合するように設計されています。 これは、データの集計とも呼ばれます。 フォームの結合が有効になっている場合、[**ファイル**] タブをクリックして、クリックして**を保存&amp;送信**、[**フォームの結合**] をクリックして**インポート&amp;リンク**と結合する 1 つまたは複数のフォームを選択するのには [**フォームの結合**] ボタンをクリックし、現在開いているフォームです。 現在開いているフォームがターゲット フォームと、**フォームの結合**] ダイアログ ボックスで選択したフォームは、ソース フォームと呼ばれています。
+Microsoft InfoPath エディターの**フォームの結合**機能を使用すると、複数のフォームのデータを 1 つのフォームに結合することができます。 これは、データの集計とも呼ばれます。 フォームの結合が有効になっている場合、**[ファイル]** タブ、**[保存と送信]&amp;**、**[インポートとリンク]&amp;** の **[フォームの結合]**、**[フォームの結合]** ボタンの順にクリックし、1 つ以上のフォームを選択して、現在開かれているフォームに結合することができます。 現在開かれているフォームをターゲット フォームと呼び、**[フォームの結合]** ダイアログ ボックスで選択したフォームをソース フォームと呼びます。
   
 フォームの結合によって集計されたデータには、ソース フォームとターゲット フォームのすべてのデータが含まれる場合と、元データの一部のみが含まれる場合があります。既定の動作は次のとおりです。
   
@@ -72,7 +72,7 @@ XML 属性とそれぞれの値は、各ノードをターゲットの XML ド�
 
 `http://schemas.microsoft.com/office/InfoPath/2003/aggregation` インターフェイスを実装する XSL オブジェクトを表すには、  `http://schemas.microsoft.com/office/infopath/2003/aggregation-target` 名前空間に指定されている属性のほか、  **** 名前空間も使用します。このインターフェイスのメンバーの中で特に有益なのが、 **get-documentElement** です。
   
-### <a name="get-documentelement"></a>取得処理
+### <a name="get-documentelement"></a>get-documentElement
 
 **target:get-documentElement** 関数を使用すると、ターゲット ドキュメントのドキュメント オブジェクト モデルにアクセスできます。ターゲット ドキュメントの現在の内容に基づいて結合の操作を変更できます。 
   
@@ -145,18 +145,18 @@ XML 属性とそれぞれの値は、各ノードをターゲットの XML ド�
         </xsf:file>
     ```
 
-6. ユーザー設定結合をサポートするフォームを準備するのには、最後のステップでは、フォームに関連付けられている .xsf ファイルの**importParameters**要素を更新します。 
+6. カスタム結合に対応するようにフォームを準備する最後の手順は、フォームに関連付けられている .xsf ファイルの **importParameters** 要素を更新することです。 
 
-    まず、検索、 `<xsf:importParameters>` 、.xsf ファイル内のタグ。 スキーマと XSL 変換のペアごとに、フォーム用に作成した、 **xsf:importSource**要素を**xsf:importParameters**要素に追加します。 `<xsf:importParameters enabled="yes"> <xsf:importSource name="" schema="IndvTasks.xsd" transform="ImportTasks.xsl"></xsf:importSource> </xsf:importParameters>`。 
+    最初に、.xsf ファイルで `<xsf:importParameters>` タグを見つけます。 フォームに対して作成したスキーマ/ XSL 変換ペアごとに、**xsf:importSource** 要素を **xsf:importParameters** 要素に追加します。 `<xsf:importParameters enabled="yes"> <xsf:importSource name="" schema="IndvTasks.xsd" transform="ImportTasks.xsl"></xsf:importSource> </xsf:importParameters>`。 
     
-    **Xsf:importSource**要素の**name**属性には、ソース XML ドキュメントを参照しているフォーム テンプレートの名前が含まれています。 通常、することができます空にします。 **Schema**属性には、前の手順でフォーム テンプレートに追加したスキーマ ファイルの名前が含まれています。 最後に、**変換**属性には、スキーマに準拠するフォームを変換するために使用する XSL 変換の名前が含まれています。 
+    **xsf:importSource** 要素の **name** 属性には、ソース XML ドキュメントにあるフォーム テンプレートの名前が含まれています。 通常、これは空白のままにできます。 **schema** 属性には、前の手順でフォーム テンプレートに追加したスキーマ ファイルの名前が含まれています。 **transform** 属性には、スキーマに準拠するフォームを変換するために使用する XML 変換の名前が含まれています。 
     
-    [結合](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Merge.aspx)イベントにするか、独自にカスタム トランス フォームを使用できます。 
+    カスタム変換は、[Merge](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Merge.aspx) イベントで使用するか、または単独で使用することができます。 
     
 ## <a name="creating-a-custom-merge-in-code"></a>コードによるカスタム結合の作成
 
-使って、[差し込み印刷](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Merge.aspx)のイベント ハンドラーで、対応する**useScriptHandler**属性がフォームに関連付けられている .xsf ファイルの**importParameters**要素のカスタムのコードとマージがサポートされています。 
+[Merge](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Merge.aspx) イベント ハンドラーを使用することで、コードによってカスタム結合を作成できます。フォームに関連付けられている .xsf ファイルで、対応する **importParameters** 要素の **useScriptHandler** 属性を指定します。 
 
-マネージ コードで**カスタム コードを使用して差し込み印刷**をには、ボックスをチェックし、; から使用できる [**フォームのオプション**] ダイアログ ボックスの [**詳細設定**] カテゴリの [**編集**] ボタンをクリックし、[差し込み印刷](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Merge.aspx)のイベントを有効にできます。 
+マネージ コードの場合は、**[ユーザー設定コードを使って結合する]** をオンにして、Backstage から利用できる **[詳細設定]** カテゴリの **[フォームのオプション]** ダイアログ ボックスで **[編集]** ボタンをクリックすることで、[Merge](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Merge.aspx) イベントを有効にすることができます。 
   
 

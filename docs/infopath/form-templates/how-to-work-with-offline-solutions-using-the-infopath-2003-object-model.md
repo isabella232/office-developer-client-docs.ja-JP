@@ -1,45 +1,45 @@
 ---
-title: InfoPath オブジェクト モデルを使用してソリューションをオフラインで作業します。
+title: InfoPath オブジェクト モデルを使用してオフライン ソリューションを操作する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- solutions [infopath 2007], offline,offline solutions [InfoPath 2007], InfoPath 2003-compatible form templates,InfoPath 2003-compatible form templates, offline solutions
+- ソリューション [infopath 2007], オフライン,オフライン ソリューション [InfoPath 2007], InfoPath 2003 互換のフォーム テンプレート,InfoPath 2003 互換のフォーム テンプレート, オフライン ソリューション
 localization_priority: Normal
 ms.assetid: 634ccd8c-0b5f-4161-875c-0e546a517377
 description: InfoPath 2003 互換オブジェクト モデルに用意されている Application オブジェクトの MachineOnlineState プロパティを使用すると、ユーザーのコンピューターがネットワークに接続されているかどうかをフォーム コードで確認できます。
 ms.openlocfilehash: 858b5d317cf5245dbfb447fa9e118a11ecbe7eb3
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799120"
 ---
-# <a name="work-with-offline-solutions-using-the-infopath-object-model"></a>InfoPath オブジェクト モデルを使用してソリューションをオフラインで作業します。
+# <a name="work-with-offline-solutions-using-the-infopath-object-model"></a>InfoPath オブジェクト モデルを使用してオフライン ソリューションを操作する
 
 InfoPath 2003 互換オブジェクト モデルに用意されている [Application](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._Application2.MachineOnlineState.aspx) オブジェクトの [MachineOnlineState](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx) プロパティを使用すると、ユーザーのコンピューターがネットワークに接続されているかどうかをフォーム コードで確認できます。 
   
-## <a name="using-the-machineonlinestate-property"></a>MachineOnlineState プロパティを使用します。
+## <a name="using-the-machineonlinestate-property"></a>MachineOnlineState プロパティを使用する
 
 次の例では、ユーザーのコンピューターがオンラインかオフラインかに基づいてフォームを送信する方法を決定するロジックを、フォーム コードに追加する方法を示します。
   
 この例では、販売報告書を送信するためのフォームが既に作成されているものとします。フォームには、報告書の対象期間 (年と月) を指定する "period" というフィールドがあります。また、データ接続、およびユーザーがオンラインのときに報告書を送信するロジックも既に定義されているものとします。
   
-### <a name="add-a-data-connection-that-submits-the-form-as-an-attachment-to-an-email-message"></a>電子メール メッセージの添付ファイルとしてフォームを送信するデータ接続を追加します。
+### <a name="add-a-data-connection-that-submits-the-form-as-an-attachment-to-an-email-message"></a>フォームを電子メール メッセージの添付ファイルとして送信するデータ接続を追加する
 
-1. InfoPath マネージ コード フォーム テンプレートを作成するか開きます。
+1. InfoPath マネージ コード フォーム テンプレートを作成または開きます。
     
 2. InfoPath デザイン モードで、[ **データ**] タブの [ **データ接続**] をクリックします。
     
 3. [ **データ接続**] ダイアログ ボックスで、[ **追加**] をクリックします。
     
-4. [ **データ接続ウィザード**] で、[ **データの送信**] をクリックし、[ **次へ**] をクリックします。
+4. **[データ接続ウィザード]** で、**[データの送信]** をクリックしてから、**[次へ]** をクリックします。
     
-5. ウィザードの [次へ] ページで、[**電子メール メッセージとして**、をクリックし、[**次へ**] をクリックします。
+5. ウィザードの次のページで、**[電子メール メッセージとして送信]** をクリックしてから、**[次へ]** をクリックします。
     
-6. ウィザードの次のページで、[**宛先**] ボックスにあなたの電子メール アドレスを入力します。 
+6. ウィザードの次のページで、**[宛先]** ボックスに自分の電子メール アドレスを入力します。 
     
-7. [ **件名**] ボックスで次の操作を行い、販売期間と "Sales Report" という文字列を結合します。 
+7. **[件名]** ボックスで、次のようにして販売期間にテキスト「Sales Report」を組み合わせます。 
     
    1. [ **件名**] ボックスの横の [ **数式**] ボタンをクリックします。 
       
@@ -55,11 +55,11 @@ InfoPath 2003 互換オブジェクト モデルに用意されている [Applic
       
    7. [ **ダブルクリックしてフィールドを挿入してください**] の最後のインスタンスを削除し、[ **OK**] をクリックします。
     
-8. ウィザードで、[ **次へ**] をクリックします。
+8. ウィザードで **[次へ]** をクリックします。
     
-9. ウィザードの次のページで、[**このデータ接続の名前を入力**] ボックスで [電子メールの送信] を入力し、し、[**完了**] をクリックします。
+9. ウィザードの次のページで、**[このデータ接続の名前を入力してください]** ボックスに「E-mail Submit」と入力し、**[完了]** をクリックします。
     
-### <a name="add-logic-for-submitting-the-form-depending-on-the-connected-state-of-a-users-computer"></a>ユーザーのコンピューターの接続状態に従ってフォームを送信するロジックを追加する
+### <a name="add-logic-for-submitting-the-form-depending-on-the-connected-state-of-a-users-computer"></a>ユーザーのコンピューターの接続状態に応じてフォームを送信するためのロジックを追加する
 
 1. InfoPath デザイン モードで、[ **データ**] タブの [ **送信オプション**] をクリックします。
     
@@ -119,8 +119,8 @@ InfoPath 2003 互換オブジェクト モデルに用意されている [Applic
     
 4. Internet Explorer で、[ **ファイル**] メニューの [ **オフライン作業**] をクリックします。 
     
-5. InfoPath で、[ **送信**] をクリックします。 フォームは、電子メール メッセージとして送信は、メッセージが表示されます。
+5. InfoPath で **[送信]** をクリックします。 フォームが電子メール メッセージとして送信されることを示すメッセージが表示されます。
     
-6. [ **送信**] をクリックします。フォームがオフラインで送信されたことを示すメッセージが表示されます。
+6. **[送信]** をクリックします。フォームがオフラインで送信されたことを示すメッセージが表示されます。
     
 

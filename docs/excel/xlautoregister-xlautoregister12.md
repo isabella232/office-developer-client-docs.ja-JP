@@ -10,51 +10,51 @@ keywords:
 - xlautoregister function [excel 2007]
 localization_priority: Normal
 ms.assetid: aa4673cf-8e97-4678-b8d4-6a74426334f9
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: e6430a54b0c0ed3b6e08d3c9256cae7dcde926ab
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19798961"
 ---
 # <a name="xlautoregisterxlautoregister12"></a>xlAutoRegister/xlAutoRegister12
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-�o�^�Ώۂ̊֐��̖߂�l�̌^�ƈ����̌^���Ȃ���ԂŁAXLM �֐� [REGISTER](xlautoregister-xlautoregister12.md)�A�܂��� C API �̓����� **xlfRegister** �֐��ɑ΂���Ăяo�������s�����ƁA��� Excel �� [xlAutoRegister](xlfregister-form-1.md) �֐���Ăяo���܂��B�����g�p����ƁA�G�N�X�|�[�g���ꂽ�֐��ƃR�}���h�̓�����X�g�� XLL �Ō����ł���悤�ɂȂ�A����̈����Ɩ߂�l�̌^����֐���o�^�ł��܂��B
+登録対象の関数の戻り値の型と引数の型がない状態で、XLM 関数 **REGISTER**、または C API の同等の [xlfRegister 関数](xlfregister-form-1.md)に対する呼び出しが実行されると、常に Excel は [xlAutoRegister 関数](xlautoregister-xlautoregister12.md)を呼び出します。
   
-Excel 2007 �ȍ~�ł́A **xlAutoRegister12** �֐��� XLL �ɂ���ăG�N�X�|�[�g�����ƁAExcel �� **xlAutoRegister** �֐��ɗD�悵�Ă��̊֐���Ăяo���܂��B 
+Excel 2007 以降では、**xlAutoRegister12** 関数が XLL によってエクスポートされている場合、Excel はこの関数を **xlAutoRegister** 関数よりも優先して呼び出します。 
   
-Excel �ł́AXLL ������炢���ꂩ�̊֐���������ăG�N�X�|�[�g���邱�Ƃ͕s�v�ł��B
+Excel では、XLL がこれらいずれかの関数を実装してエクスポートすることは不要です。
   
 > [!NOTE]
-> [!����] **xlAutoRegister**/  **xlAutoRegister12** �������̌^�Ɩ߂�l�̌^��w�肵�Ȃ��Ŋ֐���o�^���悤�Ƃ���ƁA�ŏI�I�ɃR�[�� �X�^�b�N���I�[�o�[�t���[���AExcel ���N���b�V�����錴���ƂȂ�ċA�Ăяo���̃��[�v���������܂��B 
+> **xlAutoRegister**/ **xlAutoRegister12** が引数の型と戻り値の型を指定しないで関数を登録しようとすると、最終的にコール スタックがオーバーフローし、Excel がクラッシュする原因となる再帰呼び出しのループが発生します。 
   
 ```cs
 LPXLOPER12 WINAPI xlAutoRegister12(LPXLOPER12 pxName);
 LPXLOPER WINAPI xlAutoRegister(LPXLOPER pxName);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
- _pxName_(**xltypeStr**)
+ _pxName_ (**xltypeStr**)
   
-�o�^����� XLL �֐��̖��O�ł��B
+登録される XLL 関数の名前です。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-�֐��́A _xlfRegister_ �֐���g�p���āAXLL �֐�  **pxName** �̓o�^����s�������ʂ�Ԃ��K�v������܂��B�w�肵���֐��� XLL �t�@�C���̃G�N�X�|�[�g�� 1 �łȂ��ꍇ�A�֐��� **#VALUE!** �G���[��Ԃ����AExcel �� **#VALUE!** �Ɖ�߂��� **NULL** ��Ԃ��K�v������܂��B
+この関数は、**xlfRegister** 関数を使用して XLL 関数 _pxName_ を登録を試行した結果を返します。指定した関数が XLL ファイルのエクスポートの 1 つでない場合、関数は **#VALUE!** エラーを返すか、Excel が **#VALUE!** と解釈する **NULL** を返す必要があります。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-**xlAutoRegister** �̎����ł́A�G�N�X�|�[�g���� XLL �t�@�C���̊֐��ƃR�}���h�̓�����X�g�ő啶�����������ʂ��錟������s���āA�n���ꂽ���O�Ƃ̈�v���������K�v������܂��B�֐��܂��̓R�}���h�����������ꍇ�A **xlAutoRegister** �� **xlfRegister** �֐���g�p���AExcel �Ɋ֐��̖߂�l�̌^�ƈ����̌^�A����ъ֐��Ɋւ��邻�̑��̕K�v����w�����镶�����w�肵�āA�o�^����s����K�v������܂��B����́A **xlfRegister** �ɑ΂���Ăяo�����Ԃ��ꂽ�ꍇ�ɂ�AExcel �ɕԂ��K�v������܂��B�֐�������ɓo�^���ꂽ�ꍇ�A **xlfRegister** �͊֐��̓o�^ ID ��܂� **xltypeNum** �l��Ԃ��܂��B 
+**xlAutoRegister** の実装では、エクスポートする XLL ファイルの関数とコマンドの内部リストで大文字小文字を区別する検索を実行して、渡された名前との一致を検索する必要があります。関数またはコマンドが見つかった場合、**xlAutoRegister** は **xlfRegister** 関数を使用し、Excel に関数の戻り値の型と引数の型、および関数に関するその他の必要情報を指示する文字列を指定して、登録を試行する必要があります。これは、**xlfRegister** に対する呼び出しが返された場合にも、Excel に返す必要があります。関数が正常に登録された場合、**xlfRegister** は関数の登録 ID を含む **xltypeNum** 値を返します。 
   
-### <a name="example"></a>��
+### <a name="example"></a>例
 
-���̊֐��̎�����ɂ��ẮA�t�@�C��  `SAMPLES\EXAMPLE\EXAMPLE.C` ��Q�Ƃ��Ă��������B 
+この関数の実装例については、ファイル `SAMPLES\EXAMPLE\EXAMPLE.C` を参照してください。 
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 

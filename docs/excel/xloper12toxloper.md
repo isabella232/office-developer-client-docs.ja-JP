@@ -10,55 +10,55 @@ keywords:
 - xloper12toxloper function [excel 2007]
 localization_priority: Normal
 ms.assetid: b46f87c4-778b-4502-be57-c3725f73a644
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 2c06102699db8810da803ecc0ddfa30375fcc125
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798993"
 ---
 # <a name="xloper12toxloper"></a>XLOper12ToXLOper
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-�V���� **XLOPER12** ����Â� **XLOPER** �ւ̕ϊ��Ɏg�p����ϊ����[�`���ł��B
+新しい **XLOPER12** から古いい **XLOPER** への変換に使用する変換ルーチンです。
   
 ```cs
 BOOL XLOper12ToXLOper(LPXLOPER12 pxloper12, LPXLOPER pxloper);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-_pxloper12_(**LPXLOPER12**)
+_pxloper12_ (**LPXLOPER12**)
   
-�ϊ��Ώۂ̃\�[�X **XLOPER12** �ւ̃|�C���^�[�B 
+変換対象のソース **XLOPER12** へのポインター。 
   
-_pxloper_(**LPXLOPER**)
+_pxloper_ (**LPXLOPER**)
   
-�ϊ����ꂽ�l��i�[����^�[�Q�b�g **XLOPER** �ւ̃|�C���^�[�B 
+変換された値を格納するターゲット **XLOPER** へのポインター。 
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-�ϊ������������ꍇ�� **TRUE**�B����ȊO�̏ꍇ�� **FALSE**�B 
+変換が成功した場合は **TRUE**。それ以外の場合は **FALSE**。 
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-**XLOPER12** �̌^�ɉ����āA�ϊ������l�ɐV���������� �o�b�t�@�[����蓖�Ă܂��B�^�[�Q�b�g **XLOPER** �́A���̃o�b�t�@�[��|�C���g���܂��B�ϊ��ɐ��������ꍇ�́A�R�s�[�Ɋ֘A�t����ꂽ��������Ăяo�����ŉ������K�v������܂��B **FreeXLOperT** ��g�p���邱�Ƃ�A **free** ��g�p���Ē��ډ�����邱�Ƃ�ł��܂��B
+**XLOPER12** の型によっては、この関数は、変換されてターゲット **XLOPER** をポイントする値に新しいメモリ バッファーを割り当てます。変換が成功した場合、そのコピーに関連付けられたメモリを解放する責任は、呼び出し元にあります。メモリを解放するには、**FreeXLOperT** を使用するか、**free** を使用して直接解放します。
   
-�ϊ������s�����ꍇ�́A�Ăяo�����Ń�������������K�v�͂���܂���B
+変換が失敗した場合は、呼び出し元でメモリを解放する必要はありません。
   
-**XLOPER12** ���� **XLOPER** �ւ̕ϊ��́A **XLOPER** �Ɏ��܂肫��Ȃ��قǑ傫���z���Q�ƁA�܂��͒��������� **XLOPER12** �Ɋi�[����Ă���ƁA���s���邱�Ƃ�����܂� 
+**XLOPER12** から **XLOPER** への変換は、**XLOPER12** に収まりきらないほど大きい配列や参照、または長い文字列が **XLOPER** に格納されていると、失敗することがあります。 
   
-**XLOPER12** �� Unicode ���C�h����������́A���P�[���Ɉˑ�������@�� **XLOPER** �� ASCII �o�C�g������ɕϊ�����܂��B 
+**XLOPER12** の Unicode ワイド文字文字列は、ロケールに依存する方法で **XLOPER** の ASCII バイト文字列に変換されます。 
   
-**XLOPER12** **xltypeInt** �� 32 �r�b�g�����t�������ł��B **XLOPER** **xltypeInt** �� 16 �r�b�g�����t�������ł��B�w�肳�ꂽ **XLOPER12** ������ **XLOPER** �����̐����𒴂���ꍇ�́A���̐����� 8 �o�C�g�� double �ɕϊ�����A **xltypeNum** �^�� **XLOPER** �ŕԂ���܂��B���̏ꍇ�ɂ̂݁A���̊֐��͕ϊ����� **XLOPER** �̌^��ύX���܂��B
+**XLOPER12** **xltypeInt** は 32 ビット符号付き整数です。**XLOPER** **xltypeInt** は 16 ビット符号付き整数です。指定された **XLOPER12** 整数が **XLOPER** 整数の制限を超える場合は、その整数は 8 バイトの double に変換され、**xltypeNum** 型の **XLOPER** で返されます。この場合にのみ、この関数は変換した **XLOPER** の型を変更します。
   
-### <a name="example"></a>��
+### <a name="example"></a>例
 
-���̊֐��̃R�[�h�ɂ��ẮA�t�@�C��  `\SAMPLES\FRAMEWRK\FRAMEWRK.C` ��Q�Ƃ��Ă��������B 
+この関数のコードについては、`\SAMPLES\FRAMEWRK\FRAMEWRK.C` ファイルを参照してください。 
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
-- [�t���[�����[�N ���C�u�����̊֐�](functions-in-the-framework-library.md)
+- [フレームワーク ライブラリの関数](functions-in-the-framework-library.md)
 

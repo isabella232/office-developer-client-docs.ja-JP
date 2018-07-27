@@ -10,41 +10,41 @@ keywords:
 - tempstr function [excel 2007]
 localization_priority: Normal
 ms.assetid: b21b4868-babe-4255-9093-503172efa045
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: ce9399168d5b94d10481d2d0b5b69dd2e1d1d2e9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798955"
 ---
 # <a name="tempstr"></a>TempStr
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-**xltypeStr** �o�C�g�������i�[���Ă���ꎞ�I�� **XLOPER** ��쐬����A�񐄏��̃t���[�����[�N ���C�u�����֐��ł��B���͂Ƃ��āANULL �ŏI������\�[�X�������󂯎��܂��B�󂯎����������̍ŏ��̕�����㑱�̕�����̒����ŏ㏑�����悤�Ƃ��܂��B���̓���͈��S�łȂ����Ƃ�����A�ǂݎ���p�̕������n���ƁAMicrosoft Excel ���N���b�V������\��������܂��B 
+**xltypeStr** バイト文字列を格納している一時的な **XLOPER** を作成する、非推奨のフレームワーク ライブラリ関数です。入力として、NULL で終了するソース文字列を受け取ります。受け取った文字列の最初の文字を後続の文字列の長さで上書きしようとします。この動作は安全でないことがあり、読み取り専用の文字列を渡すと、Microsoft Excel がクラッシュする可能性があります。 
   
 ```cs
 LPXLOPER TempStr(LPSTR str);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _str_
   
-NULL �ŏI������\�[�X������ւ̃|�C���^�[�B **TempStr** �� 255 �o�C�g��������������؂�l�߂܂��B 
+NULL で終了するソース文字列へのポインター。**TempStr** は 255 バイトよりも長い文字列を切り詰めます。 
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
-�n���ꂽ������o�b�t�@�[�ւ̃|�C���^�[��i�[���Ă��� **xltypeStr** �������Ԃ��܂��B 
+渡された文字列バッファーへのポインターを格納している **xltypeStr** 文字列を返します。 
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-���̕��@�ɂ��ꎞ�I�ȕ�����̍쐬�́A[TempStrConst �� TempStr12](tempstrconst-tempstr12.md) �̗����œ��삷����@�Ƃ��Ă͐�������Ȃ��Ȃ�܂����B�����̊֐��́A�V���������� �o�b�t�@�[����蓖�ĂāA���̃o�b�t�@�[�ɓn���ꂽ�������R�s�[���܂��B **TempStrConst** �� **TempStr12** �̓��͕�����͕ύX����Ȃ����߁A **const** �Ƃ��Đ錾����܂��B����ɑ΂��āA **TempStr** �ւ̓��͕�����͕ύX����邽�߁A **const** �Ƃ��Đ錾�ł��܂���B���͕�����̍ŏ��̕����́A���������̃X�y�[�X�Ƃ��Ĉ����A���̊֐��ɂ���ď㏑������܂��B
+この方法による一時的な文字列の作成は、[TempStrConst と TempStr12](tempstrconst-tempstr12.md) の両方で動作する方法としては推奨されなくなりました。これらの関数は、新しいメモリ バッファーを割り当てて、そのバッファーに渡された文字列をコピーします。**TempStrConst** と **TempStr12** の入力文字列は変更されないため、**const** として宣言されます。これに対して、**TempStr** への入力文字列は変更されるため、**const** として宣言できません。入力文字列の最初の文字は、長さ文字のスペースとして扱われ、この関数によって上書きされます。
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[�t���[�����[�N ���C�u�����̊֐�](functions-in-the-framework-library.md)
+[フレームワーク ライブラリの関数](functions-in-the-framework-library.md)
 

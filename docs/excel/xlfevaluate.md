@@ -10,47 +10,47 @@ keywords:
 - xlfevaluate function [excel 2007]
 localization_priority: Normal
 ms.assetid: deea3ee6-2a32-47ef-bfa4-914891538633
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: e468dc18b8f78f56acaa67c2f23dd53254088ad0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798970"
 ---
 # <a name="xlfevaluate"></a>xlfEvaluate
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-Microsoft Excel �̃p�[�T�[�Ɗ֐��G�o�����G�[�^�[��g�p���āA���[�N�V�[�g�̃Z���ɓ��͂ł���C�ӂ̎���]�����܂��B
+Microsoft Excel のパーサーと関数エバリュエーターを使用して、ワークシートのセルに入力できる任意の式を評価します。
   
 ```cs
 Excel12(xlfEvaluate, LPXLOPER12 pxRes, 1, LPXLOPER12 pxFormulaText);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _pxFormulaText (xltypeStr)_
   
-�]�����镶����ł��B�擪�̓��� (=) �͏ȗ��\�ł��B������͔C�ӂ̃e�L�X�g�ɂł��܂��B����͐����ɁA���[�N�V�[�g�܂��̓}�N�� �V�[�g�̃Z���ɓ��͂ł��܂��B
+評価する文字列です。文字列は任意のテキストにできます。先頭の等号 (=) は省略可能です。これは正式に、ワークシートまたはマクロ シートのセルに入力できます。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-������̕]�����ʂ�Ԃ��܂��B����� **xltypeNum**�A **xltypeStr**�A **xltypeBool**�A **xltypeErr**�A **xltypeNil**�A **xltypeMulti** �̂����ꂩ�ɂȂ�܂��B
+文字列の評価結果を返します。これは **xltypeNum**、**xltypeStr**、**xltypeBool**、**xltypeErr**、**xltypeNil**、**xltypeMulti** のいずれかになります。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-������ɂ͊֐��݂̂�܂߂邱�Ƃ��ł��܂��B�R�}���h�͑Ή����܂���B����́A�����o�[�� **F9** ��������ꍇ�Ɠ����ł��B **xlfEvaluate** ���X���b�h �Z�[�t�Ƃ��ēo�^���ꂽ XLL ���[�N�V�[�g�֐�����Ăяo���ꂽ�ꍇ�A���ɂ̓X���b�h�Z�[�t�֐��݂̂�܂߂�K�v������܂��B 
+文字列には関数のみを含めることができます。コマンドは対応しません。これは、数式バーで **F9** を押した場合と同じです。**xlfEvaluate** がスレッド セーフとして登録された XLL ワークシート関数から呼び出された場合、式にはスレッドセーフ関数のみを含める必要があります。 
   
-**XlfEvaluate**関数の主な用途は、シートのいずれかの方法が定義された名前に割り当てられた値または DLL 内で定義されている非表示の名前を確認する Dll をできるようにすることです。 DLL または XLL 内でワークシート名付けます少なくとも感嘆符 (!)、DLL の外部で解釈されることを確認するのには注意してください。 詳細については、[名前の評価とその他のワークシートの数式の表現](evaluating-names-and-other-worksheet-formula-expressions.md)を参照してください。
+**xlfEvaluate** 関数は、主に DLL が定義済みの名前に割り当てられた値を検索できるようにするために使用します。この名前はシート上にあるか、DLL 内で定義された非表示の名前です。 DLL/XLL 内では、ワークシートの名前に少なくとも感嘆符 (!) のプレフィックスを付けて、ワークシートが DLL の外部として解釈される必要があることに注意してください。 詳細については、「[名前と他のワークシートの式を評価する](evaluating-names-and-other-worksheet-formula-expressions.md)」を参照してください。
   
- **xlfEvaluate** �́A�J����Ă��Ȃ��O���V�[�g�ւ̎Q�Ƃ̕]���ɂ͎g�p�ł��܂���B 
+ **xlfEvaluate** は、開かれていない外部シートへの参照の評価には使用できません。 
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̗�ł́A **xlfEvaluate** ��g�p���ċ����I�Ƀe�L�X�g "!B38" ��Z�� B38 �̓�e�ɂ��܂��B 
+この例では、**xlfEvaluate** を使用して強制的にテキスト "!B38" をセル B38 の内容にします。 
   
- `\SAMPLES\EXAMPLE\EXAMPLE.C`. この関数は、コマンド マクロ (**xlcAlert**) を呼び出し、マクロ シートまたはマクロ コマンドとして呼び出されたときにのみ正常に動作します。
+ `\SAMPLES\EXAMPLE\EXAMPLE.C` この関数はコマンド マクロ (**xlcAlert**) を呼び出し、マクロ シートまたはマクロ コマンドから呼び出された場合にのみ正しく動作します。
   
 ```cs
 short WINAPI EvaluateExample(void)
@@ -70,5 +70,5 @@ short WINAPI EvaluateExample(void)
 
 ## <a name="see-also"></a>関連項目
 
-- [�d�v�Ŗ�ɗ��� C API XLM �֐�](essential-and-useful-c-api-xlm-functions.md)
+- [重要で役に立つ C API XLM 関数](essential-and-useful-c-api-xlm-functions.md)
 

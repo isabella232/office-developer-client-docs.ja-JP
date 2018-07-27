@@ -1,5 +1,5 @@
 ---
-title: サンド ボックス ソリューションのサンプル
+title: サンドボックス ソリューションのサンプル
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,12 +8,12 @@ ms.assetid: 415fa0fa-b7b7-4acb-a437-f54c34064004
 description: このトピックでは、InfoPath セキュリティで保護されたソリューションでフォーム テンプレートを発行する方法として使用できる 2 つのコード例について説明します。
 ms.openlocfilehash: b0874e34d843850df55eee87d689ce0d01112635
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799214"
 ---
-# <a name="sample-sandboxed-solutions"></a>サンド ボックス ソリューションのサンプル
+# <a name="sample-sandboxed-solutions"></a>サンドボックス ソリューションのサンプル
 
 マネージ コードを持つ InfoPath フォームを、InfoPath デザイン モードから SharePoint セキュリティで保護されたソリューション インフラストラクチャに発行できます。このトピックでは、InfoPath セキュリティで保護されたソリューションでフォーム テンプレートを発行する方法として使用できる 2 つのコード例について説明します。
   
@@ -27,9 +27,9 @@ InfoPath フォームでコードを使用して実行できる便利な作業�
     
 - Microsoft SharePoint Foundation Sandboxed Code Service がサーバー上で動作していることを、ファーム管理者とともに確認します。詳細については、「[コードを含むフォームを発行する](publishing-forms-with-code.md)」を参照してください。
     
-- フォーム テンプレートに対して選択したプログラミング言語が、以前のバージョン名が付いていない **C#** または **Visual Basic** のどちらかであること。 InfoPath 2007 互換バージョンおよび InfoPath 2003 互換バージョンのプログラミング言語およびオブジェクト モデルは、セキュリティで保護されたソリューションではサポートされていません。 プログラミング言語を指定する方法の詳細については、 [Visual Studio での作成](how-to-develop-with-visual-studio.md)を参照してください。
+- フォーム テンプレートに対して選択したプログラミング言語が、以前のバージョン名が付いていない **C#** または **Visual Basic** のどちらかであること。 プログラミング言語とオブジェクト モデルの InfoPath 2007 互換バージョンと InfoPath 2003 互換バージョンでは。サンドボックス ソリューションはサポートされていません。 プログラミング言語を指定する方法の詳細については、「[Visual Studio での開発](how-to-develop-with-visual-studio.md)」を参照してください。
     
-フォーム上の **Repeating Table** コントロールのデータを並べ替えるフォーム テンプレートを作成するには、次の手順を実行します。 
+フォームの **[繰り返しテーブル]** コントロールでデータを並べ替えるフォーム テンプレートを作成するには、次の手順を実行します。 
   
 ### <a name="to-create-a-form-template-that-programmatically-sorts-data-in-the-form"></a>フォーム内のデータをプログラムによって並べ替えるフォーム テンプレートを作成するには
 
@@ -133,14 +133,14 @@ InfoPath フォームでコードを使用して実行できる便利な作業�
         Me.NamespaceManager).InnerXml = newTableXML
    ```
 
-5. 次の手順を使用してフォームを発行します。
+5. 次の手順を実行してフォームを発行します。
     
-    1. Backstage の [ **発行**] タブで [ **SharePoint サーバー**] をクリックします。 
+    1. Backstage の **[発行]** タブで **[SharePoint Server]** をクリックします。 
         
     2. 発行先の SharePoint サイトの URL を入力し、[ **次へ**] をクリックします。 
         
        > [!IMPORTANT]
-       > [!重要] このフォーム テンプレートをセキュリティで保護されたソリューションとして発行するためには、このサイトのサイト コレクション管理者である必要があります。 
+       > このフォーム テンプレートをセキュリティで保護されたソリューションとして発行するためには、このサイトのサイト コレクション管理者である必要があります。 
     
     3. [ **フォーム ライブラリ**] をクリックし、[ **次へ**] をクリックします。
         
@@ -148,15 +148,15 @@ InfoPath フォームでコードを使用して実行できる便利な作業�
         
     5. フォーム ライブラリの名前と説明を入力し、[ **次へ**] をクリックします。
         
-    6. [ **発行**] をクリックします。
+    6. **[発行]** をクリックします。
     
-## <a name="example-2-managing-vendors-in-a-sharepoint-list"></a>例 2: SharePoint リスト内の仕入先の管理
+## <a name="example-2-managing-vendors-in-a-sharepoint-list"></a>例 2: SharePoint リストでのベンダーの管理
 
 この例では、Microsoft SharePoint Foundation 2010 のオブジェクト モデルに対するプログラミングを行います。それには、Microsoft.SharePoint.dll アセンブリへの参照を設定する必要があります。Microsoft.SharePoint.dll は、ライセンスが付与された SharePoint Server 2010 のコピーと共にインストールされています。
   
 Microsoft.SharePoint.Server.dll は、既定で C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI にインストールされています。この DLL を、SharePoint オブジェクト モデルに対するプログラミングを行うプロジェクトにインクルードする必要があります。Visual Studio 2012 プロジェクトの中で Microsoft.SharePoint.dll への参照を設定するには、 **コード エディター**を開き、[ **プロジェクト**] メニューの [ **参照の追加**] をクリックします。[ **参照の追加**] ダイアログ ボックスで [ **参照**] タブをクリックし、Microsoft.SharePoint.dll ファイルの場所を指定して [ **OK**] をクリックします。これで、Microsoft.SharePoint.dll がプロジェクト ディレクトリにコピーされ、SharePoint Foundation 2010 オブジェクト モデルのメンバーを InfoPath ソリューションの中で使用できるようになります。
   
-### <a name="designing-the-form-and-developing-the-code"></a>フォームをデザインおよびコードを開発します。
+### <a name="designing-the-form-and-developing-the-code"></a>フォームのデザインとコードの作成
 
 InfoPath フォームのコードから、SharePoint オブジェクト モデルを使用して参照リスト内にアイテムを作成できます。これは、SharePoint リストからドロップダウン ボックスを設定して、別のフォームを作成せずに新しい値を追加する場合に便利です。この例ではコンボ ボックスを使用して、現在リストにあるすべての値を表示し、まだ値が存在していない場合に値をリストに追加するプログラミング ロジックを作成します。
   
@@ -166,9 +166,9 @@ InfoPath フォームのコードから、SharePoint オブジェクト モデ�
     
 2. InfoPath Designer に新しい **空白のフォーム**を作成し、フォーム上に **コンボ ボックス** コントロールを挿入して、コンボ ボックスにバインドされているフィールドの名前を myCombo に変更します。
     
-3. 次の手順を使用して、コンボ ボックスを作成するのに使用されるリストへのデータ接続を作成します。
+3. 次の手順を実行して、コンボ ボックスへの値の読み込みに使用するデータ接続をリストに追加します。
     
-    1. [ **データ**] タブの [ **外部データの取り込み**] グループで [ **SharePoint リスト**] をクリックします。 
+    1. **[データ]** タブの **[外部データの取得]** グループで **[SharePoint リストから]** ボタンをクリックします。 
         
     2. リストのあるサイトの URL を入力し、[ **次へ**] をクリックします。
         
@@ -178,11 +178,11 @@ InfoPath フォームのコードから、SharePoint オブジェクト モデ�
         
     5. 次の画面で [ **次へ**] をクリックします。 
         
-    6. データ接続に LookupList という名前を付け、[ **完了**] をクリックします。
+    6. データ接続に LookupList という名前を指定し、**[完了]** をクリックします。
     
-4. コンボ ボックスの一覧からの値を設定するには、次の手順を使用します。
+4. 次の手順を実行して、コンボ ボックス内の値をリストから読み込みます。
     
-    1. 手順 1. で作成したコンボ ボックスを選択します。
+    1. 手順 1 で作成したコンボ ボックスを選択します。
         
     2. リボンの [コントロール ツール] の [ **プロパティ**] タブで [ **選択肢の編集**] をクリックします。 
         
@@ -198,9 +198,9 @@ InfoPath フォームのコードから、SharePoint オブジェクト モデ�
     
     フォームをまだ保存していない場合は、保存を促すメッセージが表示されます。その後、コード エディターのウィンドウが開いて、カーソルが  `myCombo_Changed` イベント ハンドラーの中に表示されます。 
     
-6. 前述の説明に従って、Microsoft.SharePoint.dll アセンブリへの参照を追加します。 "Microsoft.sharepoint"のアセンブリの参照の詳細については、[使用して SharePoint オブジェクト モデルのメンバー](how-to-use-sharepoint-object-model-members.md)を参照してください。
+6. このトピックで前述したように、Microsoft.SharePoint.dll アセンブリへの参照を追加します。 Microsoft.SharePoint アセンブリの参照に関する詳細については、「[SharePoint オブジェクト モデルのメンバーを使用する](how-to-use-sharepoint-object-model-members.md)」を参照してください。
     
-7. 次のコードを  `myCombo_Changed` イベント ハンドラー内に貼り付けます。 
+7. 次のコードを `myCombo_Changed` イベント ハンドラーに貼り付けます。 
     
    ```cs
     // Use InfoPath OM's ServerInfo.SharePointSiteUrl property to programmatically
@@ -262,7 +262,7 @@ InfoPath フォームのコードから、SharePoint オブジェクト モデ�
     End Using
    ```
 
-8. 前のコード例は、 `GetDomValue` ヘルパー関数に依存しています。次の  `GetDomValue` ヘルパー関数用のコードを、  `myCombo_Changed` イベント ハンドラー関数の下に貼り付けます。 
+8. 上記のコード例は、`GetDomValue` ヘルパー関数に応じて異なります。`myCombo_Changed` イベント ハンドラー関数の下に、次の `GetDomValue` ヘルパー関数のコードを貼り付けます。 
     
    ```cs
     private string GetDomValue(string XpathToGet)
@@ -277,14 +277,14 @@ InfoPath フォームのコードから、SharePoint オブジェクト モデ�
     End Function
    ```
 
-9. 次の手順を使用してフォームを発行します。
+9. 次の手順を実行してフォームを発行します。
     
-    1. Backstage の [ **発行**] タブで [ **SharePoint サーバー**] をクリックします。 
+    1. Backstage の **[発行]** タブで **[SharePoint Server]** をクリックします。 
         
     2. 発行先の SharePoint サイトの URL を入力し、[ **次へ**] をクリックします。 
         
        > [!IMPORTANT]
-       > [!重要] このフォーム テンプレートをセキュリティで保護されたソリューションとして発行するためには、このサイトのサイト コレクション管理者である必要があります。 
+       > このフォーム テンプレートをセキュリティで保護されたソリューションとして発行するためには、このサイトのサイト コレクション管理者である必要があります。 
     
     3. [ **フォーム ライブラリ**] をクリックし、[ **次へ**] をクリックします。
         

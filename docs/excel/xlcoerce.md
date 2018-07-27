@@ -10,50 +10,50 @@ keywords:
 - xlcoerce function [excel 2007]
 localization_priority: Normal
 ms.assetid: 9d47c16c-a7e7-4998-b594-9cf001827b7b
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: e0474b81a6d24663fe85303efc8fe2fd62cfdd82
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798976"
 ---
 # <a name="xlcoerce"></a>xlCoerce
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-**XLOPER**/ **XLOPER12** �̌^��ʂ̌^�ɕϊ����邩�A�V�[�g�̃Z���̒l��������܂��B 
+**XLOPER**/ **XLOPER12** の型を別の型に変換するか、シートのセルの値を検索します。 
   
 ```cs
 Excel12(xlCoerce, LPXLOPER12 pxRes, 2, LPXLOPER12 pxSource, LPXLOPER12 pxDestType);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _pxSource_
   
-�ϊ��Ώۂ̃\�[�X **XLOPER**/ **XLOPER12**�B 
+変換対象のソース **XLOPER**/ **XLOPER12**。 
   
- _pxDestType_(**xltypeInt**)
+ _pxDestType_ (**xltypeInt**)
   
-(省略可能)。 結果の型のビット マスクを受け入れるように喜んでいます。 複数の使用可能な型を指定するのには、ビットごとの**OR**演算子 (|) を使用してください。 この引数を省略すると、1 つのセルへの参照が値型の**xltypeStr**、 **xltypeNum**、 **xltypeBool**、 **xltypeErr**、 **xltypeNil** (参照先セルが空の場合)、およびブロックへの参照のいずれかに変換されます。セルは、 **xltypeMulti**に変換されます。 これにより、 **xlCoerce**はセルの値を検索する最も便利な方法です。 
+(省略可能)。 受け入れ可能な変換後の型のビット マスク。 ビット単位の **OR** 演算子 ( | ) を使用して、複数の使用可能な型を指定します。 この引数を省略すると、単一セルへの参照が **xltypeStr**、**xltypeNum**、**xltypeBool**、**xltypeErr**、**xltypeNil** (参照先セルが空の場合) の値型のいずれかに変換され、セルのブロックへの参照は **xltypeMulti** に変換されます。 これにより **xlCoerce** はセル値を検索する最も便利な方法になります。 
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-(**XltypeStr**、 **xltypeNum**、 **xltypeBool**、 **xltypeErr**、 **xltypeNil**、または**xltypeMulti**) は、強制変換された値を返します。
+強制変換された値 (**xltypeStr**、**xltypeNum**、**xltypeBool**、**xltypeErr**、**xltypeNil**、または **xltypeMulti**) を返します。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
- **xlCoerce** �� **xltypeBigData** �܂��� **xltypeFlow** �ɕϊ��ł����A���̋t�̕ϊ���ł��܂���B **xltypeMissing** �܂��� **xltypeNil** �̌^��  _pxDestType_ �Ƃ��ēn�����Ƃ́A������ȗ����邱�Ƃɑ������܂��B�ꍇ�ɂ���ẮA�ϊ������s����ꍇ������܂��B���Ƃ��΁A������ɂ͐����ɕϊ��łȂ���̂�����܂��B 
+ **xlCoerce** は **xltypeBigData** または **xltypeFlow** に変換できず、その逆の変換もできません。**xltypeMissing** または **xltypeNil** の型を _pxDestType_ として渡すことは、引数を省略することに相当します。たとえば、文字列には数字に変換でないものがあります。 
   
-�z��܂��͕����Z���̎Q�Ƃ�P��l�̌^�ɕϊ�����ƁA���ʂ͈�ԏ�̍��̃Z���܂��͔z��̗v�f�̒l�ɂȂ�܂��B
+配列または複数セルの参照を単一値の型に変換すると、結果は一番上の左のセルまたは配列の要素の値になります。
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̃R�[�h�́A `\SAMPLES\EXAMPLE\EXAMPLE.C` �ɂ���܂��B 
+次のコードは、`\SAMPLES\EXAMPLE\EXAMPLE.C` にあります。 
   
 > [!NOTE]
-> [!����] �����Ɏ�����鋭���菇���폜����A **xInt** ������ **xlcAlert** �ɓn�����悤�ɁA **xlcAlert** �֐��͈ÖٓI�Ɉ����𕶎���ɕϊ����悤�Ƃ��܂��B **xlcAlert** �̓R�}���h�̃}�N���ł��邽�߁A���̃R�[�h�̓}�N�� �V�[�g����Ăяo���ꂽ�Ƃ��̂ݐ������쓮���܂��B 
+> ここに示される強制手順が削除され、**xInt** が直接 **xlcAlert** に渡されるように、**XlcAlert** 関数は暗黙的に引数を文字列に変換しようとします。**xlcAlert** はコマンドのマクロであるため、このコードはマクロ シートから呼び出されたときのみ正しく作動します。 
   
 ```cs
 short WINAPI xlCoerceExample(short iVal)
@@ -70,12 +70,12 @@ short WINAPI xlCoerceExample(short iVal)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
 [xlSet](xlset.md)
 
 
-[DLL �܂��� XLL ����̂݌Ăяo���\�� C API �֐�](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+[DLL または XLL からのみ呼び出し可能な C API 関数](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 関数ウィザードまたは [置換] ダイアログ ボックスから XLL 関数の呼び出し
+title: 関数ウィザードまたは [置換] ダイアログ ボックスから XLL 関数を呼び出す
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,38 +8,38 @@ keywords:
 - xll functions [excel 2007], calling from replace dialog box,Replace dialog box [Excel 2007], calling XLL functions,Function Wizard [Excel 2007], calling XLL functions,XLL functions [Excel 2007], calling from Function Wizard
 localization_priority: Normal
 ms.assetid: dc7e840e-6d1d-427b-97f9-7912e60ec954
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 7ebb33a5b98cebedfca7fb5923e62486bfd85696
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798894"
 ---
-# <a name="call-xll-functions-from-the-function-wizard-or-replace-dialog-boxes"></a>関数ウィザードまたは [置換] ダイアログ ボックスから XLL 関数の呼び出し
+# <a name="call-xll-functions-from-the-function-wizard-or-replace-dialog-boxes"></a>関数ウィザードまたは [置換] ダイアログ ボックスから XLL 関数を呼び出す
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-�����̏ꍇ�AMicrosoft Excel �̓u�b�N (�v�Z���}�N���̐��䉺�ɂ���ꍇ�̓u�b�N�̈ꕔ) �̒ʏ�̍Čv�Z���� XLL �֐���Ăяo���܂��B�֐��͖��O�t���͈͂����t�������ݒ莮�Ɋ܂܂�Ă��邱�Ƃ�����A�Z���̐����ɂ͑��݂��Ȃ����Ƃ�����_�ɒ��ӂ��Ă��������B
+多くの場合、Microsoft Excel はブック (計算がマクロの制御下にある場合はブックの一部) の通常の再計算中に XLL 関数を呼び出します。関数は名前付き範囲や条件付き書式設定式に含まれていることがあり、セルの数式には存在しないことがある点に注意してください。
   
-2 つ、[Excel] ダイアログ ボックスから関数を呼び出すことができます。 1 つは、**貼り付けの関数の引数**] ダイアログ ボックスは、ユーザーが同時に関数呼び出しの 1 つの引数を構築することです。 数式がされているときは、もう一方を変更し、[**置換**] ダイアログ ボックスで Excel を使用して再入力します。 ダイアログ ボックスの [**貼り付けの関数の引数**は、正常に実行する関数をしないことも。 実行に時間がかかるし、ダイアログ ボックスを使用して速度が低下しない可能性があります。 
+Excel ダイアログ ボックスから関数が呼び出される状況は 2 つあります。 1 つは、**[関数の貼り付けの引数]** ダイアログ ボックスです。ユーザーは、このボックスで一度に 1 つの引数を使用して関数呼び出しを作成できます。 もう 1 つは、Excel の **[置換]** ダイアログ ボックスで数式が変更および再入力されたときです。 **[Paste Function Arguments]** ダイアログ ボックスでは通常、関数を実行しません。 その理由は、実行に長い時間がかかり、ダイアログ ボックスの使用による速度低下を望まないためです。 
   
-**[関数貼り付け**] ダイアログ ボックスと、[**置換**] ダイアログ ボックスの両方がある Windows クラスの名前・ **bosa_sdm_XL**・ n、n は数値です。 Windows には、 **GetClassName**Windows のハンドル、HWND 変数の型からこの名前を取得する API 関数が用意されています。 また、 **EnumWindows**、(DLL) 内で指定されたコールバック関数を呼び出す別の関数と現在開いているすべてのトップレベル ウィンドウの。
+**[関数の貼り付け]** ダイアログ ボックスと **[置換]** ダイアログ ボックスには、どちらにも Windows のクラス名 **bosa_sdm_XL**nn が付いています (n は数値)。 Windows の API 関数 **GetClassName** を使用すると、この名前を Windows ハンドル (HWND 変数型) から取得できます。 さらに、別の関数 **EnumWindows** では、現在開いているトップレベルのウィンドウごとに 1 回、指定したコールバック関数 (DLL 内にあるもの) を呼び出せます。
   
-�R�[���o�b�N�֐��́A���̎菇�ł̂ݎ��s����K�v������܂��B
+コールバック関数は、次の手順でのみ実行する必要があります。
   
-1. ���̃E�B���h�E�̐e�� Excel �̌��݂̃C���X�^���X�ł��邱�Ƃ�m�F���܂� (���s���̃C���X�^���X����������ꍇ)�B
+1. このウィンドウの親が Excel の現在のインスタンスであることを確認します (実行中のインスタンスが複数ある場合)。
     
-2. Windows �ɂ���ēn���ꂽ�n���h������N���X����擾���܂��B
+2. Windows によって渡されたハンドルからクラス名を取得します。
     
-3. �N���X���� **bosa_sdm_XL**n �̌`���ł��邱�Ƃ�m�F���܂��B
+3. クラス名が **bosa_sdm_XL**n の形式であることを確認します。
     
-4. 2 つのダイアログ ボックスの間の区別をする場合は、ダイアログ ボックスのタイトルに識別するテキストが含まれているかどうかを確認してください。 **GetWindowText**Windows API 呼び出しを使用して、ウィンドウのタイトルを取得します。
+4. 2 つのダイアログ ボックスを区別する必要がある場合は、特定できるテキストがダイアログ ボックスのタイトルに含まれていることを確認します。 ウィンドウのタイトルは、Windows API 呼び出しの **GetWindowText** を使用することで取得できます。
     
-���� C++ �R�[�h�́AWindows �ɓn�����N���X�ƃR�[���o�b�N������Ă��܂� (��L�̎菇����s���܂�)�B����́A�Y������_�C�A���O �{�b�N�X�̂ǂ��炩�ɐ�p�̃e�X�g��Ăяo���֐�����Ăяo���܂��B 
+次の C++ コードは、Windows に渡されるクラスとコールバックを示しています (上記の手順を実行します)。これは、該当するダイアログ ボックスのどちらかに専用のテストを呼び出す関数から呼び出します。 
   
 > [!NOTE]
-> [!����] ������ Excel �̃o�[�W�����̃E�B���h�E �^�C�g���͕ύX�����\��������A���̃R�[�h�������ɂȂ邱�Ƃ�����܂��B�܂��A **window_title_text** �� **NULL** �ɐݒ肷��ƁA�R�[���o�b�N�̌����ŃE�B���h�E �^�C�g���𖳎�����Ƃ������ʂ������܂��B 
+> 将来の Excel のバージョンのウィンドウ タイトルは変更される可能性があり、このコードが無効になることがあります。また、**window_title_text** を **NULL** に設定すると、コールバックの検索でウィンドウ タイトルを無視するという効果が得られます。 
   
 ```cs
 #define CLASS_NAME_BUFFSIZE  50
@@ -98,7 +98,7 @@ BOOL CALLBACK xldlg_enum_proc(HWND hwnd, xldlg_enum_struct *p_enum)
 }
 ```
 
-**[�֐��̓\��t��]** �_�C�A���O �{�b�N�X�ɂ̓^�C�g��������܂���B���̂��߁A���Ɏ����֐��ł́A�^�C�g���̂Ȃ��E�B���h�E�Ƃ�����v�����\�����߂ɁA�^�C�g�������̕�����ɋ�̕�����ł��� "" ��R�[���o�b�N�֐��ɓn���Ă��܂��B 
+**[関数の貼り付け]** ダイアログ ボックスにはタイトルがありません。そのため、次に示す関数では、タイトルのないウィンドウという一致条件を表すために、タイトル検索の文字列に空の文字列である "" をコールバック関数に渡しています。 
   
 ```cs
 bool called_from_paste_fn_dlg(void)
@@ -115,13 +115,13 @@ bool called_from_paste_fn_dlg(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[Excel �� XLL �R�[�h�ɃA�N�Z�X����](accessing-xll-code-in-excel.md)
+[Excel での XLL コードへのアクセス](accessing-xll-code-in-excel.md)
   
-[DLL �܂��� XLL ���� Excel �ɌĂяo��](calling-into-excel-from-the-dll-or-xll.md)
+[DLL または XLL から Excel に呼び出す](calling-into-excel-from-the-dll-or-xll.md)
   
-[Excel XLL �̊J��](developing-excel-xlls.md)
+[Excel XLL の開発](developing-excel-xlls.md)
 

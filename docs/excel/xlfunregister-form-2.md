@@ -1,5 +1,5 @@
 ---
-title: xlfUnregister (�`�� 2)
+title: xlfUnregister (形式 2)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -10,55 +10,55 @@ keywords:
 - xlfunregister [excel 2007]
 localization_priority: Normal
 ms.assetid: 39c6eba7-ba41-4e7b-9a28-2b662378ff5a
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: e0154e380b65b8c57e7e96a98ef131e26b49e203
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798996"
 ---
-# <a name="xlfunregister-form-2"></a>xlfUnregister (�`�� 2)
+# <a name="xlfunregister-form-2"></a>xlfUnregister (形式 2)
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-Microsoft Excel �ɂ���Ă��ꎩ�̂��Ăяo����� DLL �� XLL �R�}���h����Ăяo�����Ƃ��ł��܂��B����́A **UNREGISTER** �� Excel XLM �}�N�� �V�[�g����Ăяo���̂Ɠ����ł��B 
+Microsoft Excel から呼び出された DLL コマンドまたは XLL コマンドから呼び出すことができます。これは、**UNREGISTER** を Excel XLM マクロ シートから呼び出すのと同等です。 
   
-**xlfUnregister** �́A2 �̌`���ŌĂяo�����Ƃ��ł��܂��B 
+**xlfUnregister** 関数は、次の 2 つの形式で呼び出すことができます。 
   
-- �`�� 1:�X�̃R�}���h��֐��̓o�^�������܂��B
+- 形式 1: 個々のコマンドや関数の登録を解除します。
     
-- �`�� 2:XLL �̃A�����[�h�Ɣ�A�N�e�B�x�[�g����s���܂��B
+- 形式 2: XLL のアンロードと非アクティブ化を行います。
     
-�`�� 2 �ŌĂяo�����ƁA���̊֐��� DLL ��R�[�h ���\�[�X�̊��S�ȃA�����[�h��������܂��B�ʂ̃}�N���Ō��ݎg���Ă��Ă�ADLL ��̂��ׂĂ̊֐��̓o�^�������܂��B�֐��̎g�p�ɂ��čl������܂���B���̊֐��� **xlAutoClose** ��Ăяo���Ă���ADLL ��̂��ׂĂ̊֐��̓o�^�������܂��B
+形式 2 で呼び出されると、この関数は DLL やコード リソースの完全なアンロードを強制します。別のマクロで現在使われていても、DLL 内のすべての関数の登録を解除します。関数の使用について考慮されません。この関数は **xlAutoClose** を呼び出してから、DLL 内のすべての関数の登録を解除します。
   
 ```cs
 Excel12(xlfUnregister, LPXLOPER12 pxRes, 1, LPXLOPER12 pxModuleText);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-_pxModuleText_(**xltypeStr**)
+_pxModuleText_ (**xltypeStr**)
   
-DLL �̖��O�B
+DLL の名前。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-成功した場合は、 **TRUE** (**xltypeBool**) を返します。 失敗した場合は、 **FALSE**が返されます。
+成功した場合、**TRUE** (**xltypeBool**) を返します。 失敗した場合は、**FALSE** を返します。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
 > [!NOTE] 
-> 呼び出さないで関数の形式はこの[xlAutoClose](xlautoclose.md)の実装から 1 つの単純な関数呼び出しを使用して、DLL のリソースのすべての登録を解除しようとしてください。 これ**xlAutoClose**とスタック オーバーフローの再帰的な呼び出しにつながります。 
+> この形式の関数を [xlAutoClose](xlautoclose.md) の実装から呼び出して、1 つの単純な関数の呼び出しにより DLL のすべてのリソースの登録を解除しようとしないでください。 これにより、**xlAutoClose** の再帰呼び出しがなされスタック オーバーフローになります。 
   
-### <a name="remember-to-delete-names"></a>名前を削除することを忘れないでください。
+### <a name="remember-to-delete-names"></a>名前を削除することを忘れないでください
 
-_pxFunctionText_ ������ **xlfRegister** �Ɏw�肷��ꍇ�́ADLL �̊֐��ƃR�}���h�̓o�^���ɁA���ꂼ��ɂ��� 2 �ڂ̈�����ȗ����� **xlfSetName** ��Ăяo���A�֐����֐��E�B�U�[�h�ɕ\������Ȃ��悤�ɖ��O�𖾎��I�ɍ폜����K�v������܂��B�ڂ����́u [Excel �A�h�C�� (XLL) �J���ɂ�������m�̖��](known-issues-in-excel-xll-development.md)�v��������������B
+_pxFunctionText_ 引数を **xlfRegister** に指定する場合は、DLL の関数とコマンドの登録時に、それぞれについて 2 つ目の引数を省略して **xlfSetName** を呼び出し、関数が関数ウィザードに表示されないように名前を明示的に削除する必要があります。詳細については、「[Excel アドイン (XLL) 開発における既知の問題](known-issues-in-excel-xll-development.md)」を参照してください。
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
-- [xlfRegister (�`�� 1)](xlfregister-form-1.md)
+- [xlfRegister (形式 1)](xlfregister-form-1.md)
 - [xlfRegisterId](xlfregisterid.md)
-- [xlfUnregister (�`�� 1)](xlfunregister-form-1.md)
-- [�d�v�Ŗ�ɗ��� C API XLM �֐�](essential-and-useful-c-api-xlm-functions.md)
+- [xlfUnregister (形式 1)](xlfunregister-form-1.md)
+- [重要で役に立つ C API XLM 関数](essential-and-useful-c-api-xlm-functions.md)
 

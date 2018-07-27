@@ -10,7 +10,7 @@ ms.assetid: 3b355b98-dd7d-4f16-8257-367e5dd61b34
 description: Outlook 2013 で天気予報バー用サードパーティの天気予報 Web サービスをプラグインとして指定して、ユーザーの選択する場所の天気予報データを提供する方法について説明します。
 ms.openlocfilehash: 6b2462615813b056ec09168ab512d456e1a7bdd6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804477"
@@ -39,15 +39,15 @@ Outlook の天気予報バーには、地理上の場所における気象情報
   
 1. 気象データ サービスでは、Web サービスのベース URL がサポートされます。たとえば、Contoso Weather Web サービスのベース URL は http://service.contoso.com/data.aspx という具合です。
     
-2. Web サービスにより、Outlook は、ベース URL に以下のパラメーターを付加して、場所コードを要求することが可能です。 
+2. この Web サービスにより、Outlook が場所コードを要求するために次のパラメーターをベース URL に追加できるようになります。 
     
-   - outputview = 検索: このパラメーターの場合、要求が場所の検索であることを示します。
+   - outputview=search: このパラメーターは、要求が場所の検索であることを示すものです。
     
-   - weasearchstr_市区_町村: このパラメーターは、_市区町村_、対象のユーザーが (たとえば、London) の天気予報の場所を示します。
+   - weasearchstr= _city_: このパラメーターは、ユーザーが天気予報を調べる対象となる場所 _city_ です (London など)。
     
-   - カルチャ_の LCID_を =: このパラメーターは、そのコンピューター上のユーザーに対してインストールされている Office のバージョンのカルチャを示します。 LCID 値は、「[[RFC4646] 言語特定のためのタグ](http://www.ietf.org/rfc/rfc4646.txt)」で定義されています。
+   - culture= _LCID_: このパラメーターは、コンピューター上でそのユーザー用にインストールされている Office のバージョンのカルチャを示します。 LCID 値は「[[RFC4646] 言語を識別するタグ](http://www.ietf.org/rfc/rfc4646.txt)」で定義されています。
     
-   - src = outlook: このパラメーターの場合、Outlook が、サービスを要求するクライアント アプリケーションであることを示します。
+   - src=outlook: このパラメーターは、Outlook がサービス要求元クライアント アプリケーションであることを示します。
     
    これらのパラメーターにより Outlook は、ユーザーが対象として指定する場所に関連する場所コードとして気象データ サービスでサポートされるものを検索します。Web サービスから Outlook に対して、「[Outlook Weather Location XML Schema](outlook-weather-location-xml-schema.md)」に準拠した XML の形式で場所コードが応答として返されるはずです。図 2 に、場所コードの Web サービス要求と応答についてまとめます。
     
@@ -55,15 +55,15 @@ Outlook の天気予報バーには、地理上の場所における気象情報
 
    ![天気予報の場所の要求と応答](media/ol15_WeatherBar_Fig02.gif)
   
-3. さらに Web サービスにより Outlook は、以下のパラメーターを付加することにより、場所コードの予報情報を要求することができます。
+3. またこの Web サービスにより、Outlook は場所コードの天気予報情報を要求するために次のパラメーターを追加できます。
     
-   - wealocations_コード_: このパラメーターの_コード_は、Outlook は、手順 2 から取得し、ユーザーに興味を示している場所に対応する場所コードです。 
+   - wealocations= _code_:このパラメーターの _code_ は、Outlook がステップ 2 で得た場所コードであり、それはユーザーが対象として指定した場所に対応するものです。 
     
-   - weadegreetype = _degreetype_: このパラメーターは、温度のメートル法またはインペリアル単位を使用するかどうかを指定します。 _degreetype_ に、摂氏の場合は c を指定し、華氏の場合は f を指定します。 このパラメーターは省略可能であり、Web サービス要求において必ずしも存在するとは限りません。
+   - weadegreetype= _degreetype_: このパラメーターは、気温の測定単位として摂氏を使うか華氏を使うかを指定します。 _degreetype_ には、摂氏の場合は c を、華氏の場合は f を指定します。 このパラメーターは省略可能であり、Web サービス要求に常に指定されているわけではありません。
     
-   - カルチャ_の LCID_を =: このパラメーターは、そのコンピューター上のユーザーに対してインストールされている Office のバージョンのカルチャを示します。 LCID 値は、「[[RFC4646] 言語特定のためのタグ](http://www.ietf.org/rfc/rfc4646.txt)」で定義されています。
+   - culture= _LCID_: このパラメーターは、コンピューター上でそのユーザー用にインストールされている Office のバージョンのカルチャを示します。 LCID 値は「[[RFC4646] 言語を識別するタグ](http://www.ietf.org/rfc/rfc4646.txt)」で定義されています。
     
-   - src = outlook: このパラメーターの場合、Outlook が、サービスを要求するクライアント アプリケーションであることを示します。
+   - src=outlook: このパラメーターは、Outlook がサービス要求元クライアント アプリケーションであることを示します。
     
    これらのパラメーターにより Outlook は、ステップ 2 で返される場所コードについて、天気予報データ サービスに対して予報を要求することができます。Web サービスからは、Outlook に対する応答として、「[Outlook Weather Information XML Schema](outlook-weather-information-xml-schema.md)」に準拠した XML の形式で、対応する気象データが返されます。図 3 に、指定された場所コードの天気予報データのための Web サービス要求と応答をまとめます。
     
@@ -208,14 +208,14 @@ Contoso Weather は、以下の XML を応答として返すことにより、�
 
 Outlook は既定で MSN Weather を使用することになっていますが、ユーザーが天気予報バーをカスタマイズして別の天気予報サービスを使用するようにした後、再び MSN Weather を使用する場合、ユーザーは、単に Windows レジストリの **WeatherServiceUrl** キーを削除することができます。このレジストリ キーを削除すると、Outlook がリセットされ、MSN Weather が使用されるようになります。 
   
-## <a name="conclusion"></a>結論
+## <a name="conclusion"></a>終わりに
 <a name="ol15_weatherbar_conclusion"> </a>
 
 Outlook 予定表の天気予報バーでは、指定された場所の天気予報を提供するため、既定値として MSN Weather が使用されます。ユーザーは、指定した場所の天気予報情報を表示できます。また、Outlook Weather Location XML Schema および Outlook Weather Information XML Schema をサポートし、Outlook とのシンプルな Web サービス プロトコルに準拠することにより、天気予報バーにサードパーティ天気予報データ サービスを統合することもできます。
   
 ## <a name="see-also"></a>関連項目
 
-- [Outlook Weather Location XML Schema](outlook-weather-location-xml-schema.md)   
+- [Outlook 天気予報の場所 XML スキーマ](outlook-weather-location-xml-schema.md)   
 - [Outlook Weather Information XML Schema](outlook-weather-information-xml-schema.md)
     
 

@@ -1,26 +1,26 @@
 ---
-title: 下位互換性
+title: 下位互換機能
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- version compatibility [excel 2007],XLL compatibility [Excel 2007],backward compatibility [Excel 2007]
+- バージョン互換性 [excel 2007],XLL 互換性 [Excel 2007],下位互換性 [Excel 2007]
 localization_priority: Normal
 ms.assetid: ac200824-0620-4f03-8bd2-59226c1e79d7
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 095961fa909a67b354ed43a7e093b79a9ebb4f18
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798771"
 ---
-# <a name="backward-compatibility"></a>下位互換性
+# <a name="backward-compatibility"></a>下位互換機能
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-���̃g�s�b�N�ł́AMicrosoft Excel �̊e�o�[�W�����ɂ����� XLL �݊����̖��ɂ��Đ�����܂��B
+このトピックでは、Microsoft Excel の各バージョンにおける XLL 互換性の問題について説明します。
   
 ## <a name="useful-constant-definitions"></a>便利な定数の定義
 
@@ -37,43 +37,43 @@ XLL プロジェクト コードに、次に示すような定義を組み込ん
 #define MAX_XL12_STR_LEN        32767u
 ```
 
-## <a name="getting-the-running-version"></a>実行中のバージョンを取得します。
+## <a name="getting-the-running-version"></a>実行中のバージョンの取得
 
-バージョンを使用して実行しているを検出する必要があります`Excel4(xlfGetWorkspace, &amp;version, 1, &amp;arg)`、 `arg` **XLOPER**が 2 に設定する数値は、バージョンは、 **XLOPER**を整数値に強制的に変換する文字列です。 Microsoft Excel 2013 では、これは 15.0 です。 または、 [xlAutoOpen](xlautoopen.md)関数でこれを行う必要があります。 すべての Excel のバージョンを実行して、プロジェクト内のモジュールに通知するためのグローバル変数を設定できます。 **Excel12**および**XLOPER12**の s を使用して、 **Excel4** **XLOPER**の s を使用してを使用してまたは C の API を呼び出すか、コードを選択できます。
+実行中のバージョンは、`Excel4(xlfGetWorkspace, &amp;version, 1, &amp;arg)` を使用して検出します。この `arg` は 2 に設定された数値型の **XLOPER** です。また、version は文字列型の **XLOPER** であり、後から強制的に整数に変換できます。 Microsoft Excel 2013 では、これは 15.0 です。 この操作には、[xlAutoOpen](xlautoopen.md) 関数を使用する必要があります。 その後、グローバル変数を設定することで、どのバージョンの Excel を実行しているかについて、プロジェクトに含まれるすべてのモジュールに通知できます。 これにより、コード内で **Excel12** と **XLOPER12** を使用する C API を呼び出すか、**Excel4** と **XLOPER** を使用する C API を呼び出すかを決定します。
   
-C API �̃o�[�W��������o���邽�߂� **XLCallVer** ��Ăяo�����Ƃ��ł��܂����A���̕��@�ł́AExcel 2007 ���O�̂ǂ̃o�[�W��������s���Ă��邩�ɂ��Ă͎�����܂���B 
+C API のバージョンを検出するために **XLCallVer** を呼び出すことができますが、この方法では、Excel 2007 より前のどのバージョンを実行しているかについては示されません。 
   
-## <a name="creating-add-ins-that-export-dual-interfaces"></a>デュアル インターフェイスをエクスポートするアドインを作成します。
+## <a name="creating-add-ins-that-export-dual-interfaces"></a>デュアル インターフェイスをエクスポートするアドインの作成
 
-1 �̕������󂯎��A���[�N�V�[�g�̃f�[�^�^�̂����ꂩ�ɂȂ� 1 �̒l��Ԃ� XLL �֐��ɂ��čl���Ă݂܂��傤�B"PD" �^�Ƃ��ēo�^����A���Ɏ����悤�Ƀv���g�^�C�v���ꂽ�֐���G�N�X�|�[�g�ł��܂��B������́A�����J�E���g�t���o�C�g������Ƃ��ēn����Ă��܂��B
+1 つの文字列を受け取り、ワークシートのデータ型のいずれかになる 1 つの値を返す XLL 関数について考えてみましょう。"PD" 型として登録され、次に示すようにプロトタイプされた関数をエクスポートできます。文字列は、長さカウント付きバイト文字列として渡されています。
   
 `LPXLOPER WINAPI my_xll_fn(unsigned char *arg);`
   
-����͊����ɓ��삵�܂����A�������̗��R����AExcel 2007 �ȍ~�̃R�[�h�ɑ΂��闝�z�I�ȃC���^�[�t�F�C�X�ɂ͂Ȃ�܂���B
+これは完璧に動作しますが、いくつかの理由から、Excel 2007 以降のコードに対する理想的なインターフェイスにはなりません。
   
-- C API �̃o�C�g������Ɋւ��鐧�����������AExcel 2007 �ȍ~�ŃT�|�[�g����钷�� Unicode ������ɃA�N�Z�X�ł��܂���B
+- C API のバイト文字列に関する制限が課せられ、Excel 2007 以降でサポートされる長い Unicode 文字列にアクセスできません。
     
-- Excel 2007 �ȍ~�� Excel �́A **XLOPER** �̎󂯓n�����\�ł��B�������A����͓���I�� **XLOPER12** �ɕϊ�����邽�߁AExcel 2007 �ȍ~�ł́A�ȑO�� Excel �̃o�[�W�����̃R�[�h�Ŏ��s����ꍇ�ɂ͑��݂��Ȃ��ÖٓI�ȕϊ��̃I�[�o�[�w�b�h���������܂��B
+- Excel 2007 以降の Excel は、**XLOPER** の受け渡しが可能です。ただし、これは内部で **XLOPER12** に変換されるため、Excel 2007 以降では、以前の Excel のバージョンのコードで実行する場合には存在しない暗黙的な変換のオーバーヘッドが発生します。
     
-- ���̊֐��̓X���b�h �Z�[�t�ɂ���Ă���\��������܂����A�^������  `PD$` �ɕύX�����ƁAExcel 2007 �ȍ~�ł͓o�^�Ɏ��s���܂��B
+- この関数はスレッド セーフにされている可能性がありますが、型文字列が `PD$` に変更されると、Excel 2007 以降では登録に失敗します。
     
-�����̗��R����AExcel 2007 �ȍ~�ł�  `QD%$` �Ƃ��ēo�^����Ă������[�U�[�ɑ΂��āA�R�[�h���X���b�h �Z�[�t�ł���Ƒz�肵�āA���̂悤�Ƀv���g�^�C�v���ꂽ�֐���G�N�X�|�[�g����K�v������܂��B
+これらの理由から、Excel 2007 以降では `QD%$` として登録されていたユーザーに対して、コードがスレッド セーフであると想定して、次のようにプロトタイプされた関数をエクスポートする必要があります。
   
 `LPXLOPER12 WINAPI my_xll_fn_v12(wchar_t *arg);`
   
-Excel 2007 �ȍ~�ł͕ʂ̊֐���o�^���邱�Ƃ��]�܂������ 1 �̗��R�́AXLL �֐����ő� 255 �̈�����󂯓���� (�ȑO�̃o�[�W�����ł� 30 �ɐ�������Ă��܂���)�B
+Excel 2007 以降では別の関数を登録することが望ましいもう 1 つの理由は、XLL 関数が最大 255 個の引数を受け入れる (以前のバージョンでは 30 個に制限されていました)。
   
-�D�s���Ȃ��ƂɁA�v���W�F�N�g���痼���̃o�[�W������G�N�X�|�[�g����ƁA�����̃����b�g�������܂��B���̌�A���s���� Excel �o�[�W��������o���āA�œK�Ȋ֐������ɂ���ēo�^���܂��B�ڍׂƎ�����ɂ��ẮA�u[Excel 2007 �̃A�h�C�� (XLLs) �̊J��](http://msdn.microsoft.com/en-us/library/aa730920.aspx)�v��Q�Ƃ��Ă��������B
+好都合なことに、プロジェクトから両方のバージョンをエクスポートすると、両方のメリットが得られます。その後、実行中の Excel バージョンを検出して、最適な関数を条件によって登録します。詳細と実装例については、「[Excel 2007 のアドイン (XLL) の開発](http://msdn.microsoft.com/ja-JP/library/aa730920.aspx)」を参照してください。
   
-���̃A�v���[�`�ł́A�������[�N�V�[�g�� Excel 2003 �Ŏ��s�����ꍇ�ƁAExcel 2007 �ȍ~�Ŏ��s�����ꍇ�ł́A�قȂ錋�ʂ��\�������\��������܂��B���Ƃ��΁AExcel 2003 �ł� Excel 2003 ���[�N�V�[�g �Z����� Unicode ������� ASCII �o�C�g������Ƀ}�b�s���O���A���̕������؂�l�߂Ă��� XLL �֐��ɓn���܂��BExcel 2007 �ȍ~�� Excel �ł́A�K�؂ȕ��@�œo�^���ꂽ XLL �֐��ɁA�ϊ�����Ă��Ȃ� Unicode �������n���܂��B���ꂪ�A�قȂ錋�ʂ̌����ɂȂ�܂��B���̂悤�ȉ\���ƃ��[�U�[�ւ̉e���ɑ΂��钍�ӂ́A�A�b�v�O���[�h���ȊO�ɂ�K�v�ɂȂ�܂��B���Ƃ��΁A�������̑g�ݍ��݂̐��l�֐��́AExcel 2000 �� Excel 2003 �Ƃ̊Ԃŉ��P����Ă��܂��B
+このアプローチでは、同じワークシートを Excel 2003 で実行した場合と、Excel 2007 以降で実行した場合では、異なる結果が表示される可能性があります。たとえば、Excel 2003 では Excel 2003 ワークシート セル内の Unicode 文字列を ASCII バイト文字列にマッピングし、その文字列を切り詰めてから XLL 関数に渡します。Excel 2007 以降の Excel では、適切な方法で登録された XLL 関数に、変換されていない Unicode 文字列を渡します。これが、異なる結果の原因になります。このような可能性とユーザーへの影響に対する注意は、アップグレード時以外にも必要になります。たとえば、いくつかの組み込みの数値関数は、Excel 2000 と Excel 2003 との間で改善されています。
   
 ## <a name="new-worksheet-functions-and-analysis-toolpak-functions"></a>新しいワークシート関数と分析ツール関数
 
-分析ツール (ATP) 関数は、Excel 2007 で Excel の一部です。 以前は、XLL は ATP 関数を呼び出す[xlUDF](xludf.md)を使用して、可能性がありますだけです。 Excel 2007 以降では、分析ツール関数が呼び出される xlcall.h で定義されている関数の列挙体を使用します。 Dll から関数を呼び出すユーザー定義の例は、2 つの方法を示します。
+分析ツール (ATP) 関数は、Excel 2007 以降の Excel に含まれています。 以前は、XLL では [xlUDF](xludf.md) を使用することでのみ ATP 関数を呼び出せました。 Excel 2007 以降では、xlcall.h で定義されている関数の列挙値を使用して、ATP 関数を呼び出す必要があります。 「DLL からのユーザー定義関数の呼び出し」の例では、2 通りの方法を示しています。
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
-- [C API �R�[���o�b�N�֐� Excel4�AExcel12](c-api-callback-functions-excel4-excel12.md) 
-- [Excel �ł� C API ��g�p�����v���O���~���O](programming-with-the-c-api-in-excel.md)
-- [Excel �p C API �̐V�@�[](what-s-new-in-the-c-api-for-excel.md)(what-s-new-in-the-c-api-for-excel.md)
+- [C API コールバック関数 Excel4、Excel12](c-api-callback-functions-excel4-excel12.md) 
+- [Excel での C API を使用したプログラミング](programming-with-the-c-api-in-excel.md)
+- [Excel 用 C API の新機能](what-s-new-in-the-c-api-for-excel.md)
 

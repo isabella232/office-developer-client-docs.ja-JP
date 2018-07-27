@@ -10,57 +10,57 @@ keywords:
 - xlset function [excel 2007]
 localization_priority: Normal
 ms.assetid: 121e6212-0692-4430-97be-4792b53719bf
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 63f50e441f5d851677f36754a17bcd6403705239
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799001"
 ---
 # <a name="xlset"></a>xlSet
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-�萔�l��Z����͈͂ɂ��΂₭�z�u���܂��B�ڂ����́A�u[Excel �A�h�C�� (XLL) �J���ɂ�������m�̖��](known-issues-in-excel-xll-development.md)�v�́uxlSet �Ɣz�񐔎���܂ރu�b�N�v��������������B
+定数値をセルや範囲にすばやく配置します。詳しくは、「[Excel アドイン (XLL) 開発における既知の問題](known-issues-in-excel-xll-development.md)」の「xlSet と配列数式を含むブック」をご覧ください。
   
 ```cs
 Excel12(xlSet, LPXLOPER12 pxRes, 2, LPXLOPER12 pxReference, LPXLOPER pxValue);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-_pxReference_(**xltypeRef**または**xltypeSRef**)
+_pxReference_ (**xltypeRef** または **xltypeSRef**)
   
-目的セルまたはセルを記述する四角形の参照です。 参照が、隣接するセルを記述する必要があります**xltypeRef**で`val.mref.lpmref->count`を 1 に設定する必要があります。 
+ターゲット セルを説明する長方形のリファレンスです。 **xltypeRef** `val.mref.lpmref->count` が 1 に設定されるようにするには、リファレンスは隣接するセルを説明する必要があります。 
   
 _pxValue_
   
-�Z���ɔz�u�����l�ł��B�ڂ����́A�u���v�Z�N�V������������������B
+セルに配置される値です。詳しくは、「解説」セクションを参照してください。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
 ### <a name="pxvalue-argument"></a>pxValue 引数
 
-_pxValue_は、値または配列の場合か。 値の場合は、全体の目的の範囲にその値が格納されます。 配列 (**xltypeMulti**) である場合、配列の要素は、四角形内の対応する場所に配置されます。
+_pxValue_ には、値または配列のいずれかを指定できます。 値の場合は、指定の範囲全体にその値が入力されます。 配列 (**xltypeMulti**) の場合は、配列の要素が長方形の対応する場所に配置されます。
   
-2 番目の引数の横方向の配列を使用する場合、重複していますダウン全体の四角形を塗りつぶす。 縦方向の配列を使用する場合は、四角形全体を入力するには、右、重複しています。 四角形の配列を使用すると、四角形の範囲内に配置するのには小さすぎますが、その範囲に **#N/A**s が埋め込まれます。
+2 番目の引数に水平配列を使用する場合、長方形全体が埋まるように配列が下に複製されます。 垂直配列を使用する場合、長方形全体が埋まるように配列が右に複製されます。 長方形の配列を使用する場合、それが配置先の長方形の範囲よりも小さすぎる場合は、その範囲が **#N/A** で埋められます。
   
-�Ώ۔͈͂��\�[�X�z�����������ꍇ�́A�Ώ۔͈͂̋��E�܂Œl���R�s�[����A�]���ȃf�[�^�͖�������܂��B
+対象範囲がソース配列よりも小さい場合は、対象範囲の境界まで値がコピーされ、余分なデータは無視されます。
   
-�w��̒����**** �S�̂��������ɂ́A2 �Ԗڂ̈�����ȗ����܂��B 
+指定の長方形の要素を消去する場合は、ソース配列で **xltypeNil** 型の配列要素を使用します。指定の長方形全体を消去するには、2 番目の引数を省略します。 
   
-### <a name="restrictions"></a>����
+### <a name="restrictions"></a>制限
 
-**xlSet** ����ɖ߂����Ƃ͂ł��܂���B�܂��A�ȑO�͎g�p�\�������A���ɖ߂�����Ɋւ����񂪔j������܂��B 
+**xlSet** を元に戻すことはできません。また、以前は使用可能だった、元に戻す操作に関する情報が破棄されます。 
   
-**xlSet** �ł́A�Z���ɒ萔�݂̂�z�u�ł��A�����͔z�u�ł��܂���B 
+**xlSet** では、セルに定数のみを配置でき、数式は配置できません。 
   
-**xlSet** �́A�N���X 3 �R�}���h�Ɠ����̊֐��Ƃ��ē��삵�܂��B�܂�ADLL ���I�u�W�F�N�g�A�}�N���A���j���[�A�c�[���o�[�A�V���[�g�J�b�g �L�[�A **[�}�N��]** �_�C�A���O �{�b�N�X�� **[���s]** �{�^�� (Excel 2007 �Ŏn�܂郊�{���� **[�\��]** �^�u�A����шȑO�̃o�[�W�����ł� **[�c�[��]** ���j���[����A�N�Z�X�ł��܂�) ����Ăяo���ꂽ�ꍇ�ɂ̂� DLL �Ŏg�p�ł��܂��B 
+**xlSet** は、クラス 3 コマンドと同等の関数として動作します。つまり、DLL がオブジェクト、マクロ、メニュー、ツールバー、ショートカット キー、**[マクロ]** ダイアログ ボックスの **[実行]** ボタン (Excel 2007 以降ではリボンの **[表示]** タブ、以前のバージョンでは **[ツール]** メニューからアクセス可能) から呼び出された場合にのみ DLL で使用できます。 
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̗�ł́A�}�N������n���ꂽ�l�� B205:B206 �ɓ��͂���܂��B���̃R�}���h�֐��̗�ɂ͈������K�v�ł���A **Application.Run** ���\�b�h��g�p���āAXLM �}�N�� �V�[�g�� VBA ���W���[������Ăяo�����ꍇ�ɂ̂ݓ��삵�܂��B 
+次の例では、マクロから渡された値が B205:B206 に入力されます。このコマンド関数の例には引数が必要であり、**Application.Run** メソッドを使用して、XLM マクロ シートや VBA モジュールから呼び出される場合にのみ動作します。 
   
 `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -81,8 +81,8 @@ short WINAPI xlSetExample(short int iVal)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 - [xlCoerce](xlcoerce.md)
-- [DLL �܂��� XLL ����̂݌Ăяo���\�� C API �֐�](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+- [DLL または XLL からのみ呼び出し可能な C API 関数](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 

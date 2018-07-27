@@ -1,36 +1,36 @@
 ---
-title: Excel のインスタンスをアクセスし、メイン ウィンドウのハンドル
+title: Excel インスタンスと メイン ウィンドウ ハンドルへのアクセス
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- accessing excel handles,handles [Excel 2007], accessing,Excel instances, accessing,window handles [Excel 2007], accessing
+- Excel のハンドルへのアクセス,ハンドル [Excel 2007], アクセス,Excel インスタンス, アクセス,ウィンドウのハンドル [Excel 2007], アクセス
 localization_priority: Normal
 ms.assetid: 21e1dbdc-06fa-4514-9437-c4cffc3b4621
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 035cd2a8423e3ab14f4b2ca4b73fbc39641e54d6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798897"
 ---
-# <a name="access-excel-instance-and-main-window-handles"></a>Excel のインスタンスをアクセスし、メイン ウィンドウのハンドル
+# <a name="access-excel-instance-and-main-window-handles"></a>Excel インスタンスと メイン ウィンドウ ハンドルへのアクセス
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-Windows ���Ńv���O���~���O�����ꍇ�AMicrosoft Excel �̃C���X�^���X �n���h���܂��̓��C�� �E�B���h�E�̃n���h���̗�����K�v�ɂȂ邱�Ƃ�����܂��B���Ƃ��΁A�����̃n���h���́A�J�X�^���� Windows �_�C�A���O �{�b�N�X��쐬���A�\������̂ɖ𗧂��܂��B
+Windows 環境でプログラミングをする場合、Microsoft Excel のインスタンス ハンドルまたはメイン ウィンドウのハンドルの理解が必要になることがあります。たとえば、これらのハンドルは、カスタムの Windows ダイアログ ボックスを作成し、表示するのに役立ちます。
   
-�����̃n���h���ւ̃A�N�Z�X��񋟂��� 2 �� XLL ��p�� C API �֐�������܂��B���ꂼ��ɑΉ����� [xlGetInst](xlgetinst.md) �֐��� [xlGetHwnd](xlgethwnd.md) �֐��ł��BWin32 �ł́A���ׂẴn���h���� 32 �r�b�g�̐����ł��B�������A **XLOPER** ���݌v���ꂽ�Ƃ��AWindows �� 16 �r�b�g �V�X�e���ł����B���������āA�\���̂� 16 �r�b�g �n���h���̂݉\�ł��BWin32 �ł́A **Excel4** �܂��� **Excel4v** �ŌĂяo���ꂽ�Ƃ��ɁA **xlGetInst** �֐��� **xlGetHwnd** �֐��́A���S�� 32 �r�b�g �n���h���̉��ʕ����݂̂�Ԃ��܂��B 
+これらのハンドルへのアクセスを提供する 2 つの XLL 専用の C API 関数があります。それぞれに対応する [xlGetInst](xlgetinst.md) 関数と [xlGetHwnd](xlgethwnd.md) 関数です。Win32 では、すべてのハンドルは 32 ビットの整数です。ただし、**XLOPER** が設計されたとき、Windows は 16 ビット システムでした。したがって、構造体は 16 ビット ハンドルのみ可能です。Win32 では、**Excel4** または **Excel4v** で呼び出されたときに、**xlGetInst** 関数と **xlGetHwnd** 関数は、完全な 32 ビット ハンドルの下位部分のみを返します。 
   
-Excel 2007 �ȍ~�̃o�[�W�����ł́A[Excel12](excel4-excel12.md) �܂��� [Excel12v](excel4v-excel12v.md) �ł����̊֐����Ăяo�����ƁA�Ԃ���� **XLOPER12** �͊��S�� 32 �r�b�g �n���h�����琬���Ă��܂��B 
+Excel 2007 以降のバージョンでは、[Excel12](excel4-excel12.md) または [Excel12v](excel4v-excel12v.md) でこれらの関数が呼び出されると、返される **XLOPER12** は完全な 32 ビット ハンドルから成っています。 
   
-���S�ȃC���X�^���X �n���h���̎擾�́A�ǂ̃o�[�W������ Excel �ł�e�Ղł��BDLL ���ǂݍ��܂��Ƃ��ɌĂяo����� Windows �R�[���o�b�N **DllMain** �ɁA���S�ȃC���X�^���X �n���h�����n����܂��B���̃C���X�^���X �n���h����O���[�o���ϐ��ɋL�^����ꍇ�A **xlGetInst** �֐���Ăяo���K�v�͂���܂���B 
+完全なインスタンス ハンドルの取得は、どのバージョンの Excel でも容易です。DLL が読み込まれるときに呼び出される Windows コールバック **DllMain** に、完全なインスタンス ハンドルが渡されます。このインスタンス ハンドルをグローバル変数に記録する場合、**xlGetInst** 関数を呼び出す必要はありません。 
   
-## <a name="obtaining-the-main-excel-handle-in-excel-2003-and-earlier"></a>Excel 2003 �ȑO�̃o�[�W�����ł� ���C�� Excel �n���h���̎擾
+## <a name="obtaining-the-main-excel-handle-in-excel-2003-and-earlier"></a>Excel 2003 以前のバージョンでの メイン Excel ハンドルの取得
 
-Excel 2003 �ȑO�� 32 �r�b�g �o�[�W�����̃��C�� Excel �n���h����擾����ɂ́A�܂� **xlGetHwnd** �֐���Ăяo���A���ۂ̃n���h���̉��ʃ��[�h��擾���܂��B���ɁA�Ԃ��ꂽ���ʃ��[�h�ƈ�v�����̂�������邽�߂ɁA�g�b�v���x�� �E�B���h�E�̈ꗗ�𔽕���������K�v������܂��B���̃R�[�h�́A���̋Z�@������Ă��܂��B 
+Excel 2003 以前の 32 ビット バージョンのメイン Excel ハンドルを取得するには、まず **xlGetHwnd** 関数を呼び出し、実際のハンドルの下位ワードを取得します。次に、返された下位ワードと一致するものを検索するために、トップレベル ウィンドウの一覧を反復処理する必要があります。次のコードは、その技法を示しています。 
   
 ```cs
 typedef struct _EnumStruct
@@ -81,13 +81,13 @@ BOOL GetHwnd(HWND * pHwnd)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[DLL �܂��� XLL �t�@�C���̒�����_�C�A���O �{�b�N�X��\������](displaying-dialog-boxes-from-within-a-dll-or-xll.md)
+[DLL または XLL ファイルの中からダイアログ ボックスを表示する](displaying-dialog-boxes-from-within-a-dll-or-xll.md)
   
-[DLL �܂��� XLL ����̂݌Ăяo���\�� C API �֐�](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+[DLL または XLL からのみ呼び出し可能な C API 関数](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
   
-[Excel XLL �̊J��](developing-excel-xlls.md)
+[Excel XLL の開発](developing-excel-xlls.md)
 

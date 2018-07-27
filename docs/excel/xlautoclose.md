@@ -10,61 +10,61 @@ keywords:
 - xlautoclose function [excel 2007]
 localization_priority: Normal
 ms.assetid: 147e46cd-d4d7-49eb-acdc-5a2ebc2fb6c2
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 3cbe1cd879fb5a91d14b38f8a659a7f77d943fe7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798977"
 ---
 # <a name="xlautoclose"></a>xlAutoClose
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-XLL �t�@�C������A�N�e�B�u�ɂȂ邽�тɁAMicrosoft Excel �ɌĂяo����܂��BExcel �Z�b�V����������ɏI������ƁA�A�h�C���͔�A�N�e�B�u�ɂȂ�܂��B�A�h�C���́AExcel �Z�b�V�������Ƀ��[�U�[�ɂ���Ĕ�A�N�e�B�u�������ꍇ������܂��B���̊֐��͂��̏ꍇ�ɌĂяo����܂��B
+XLL ファイルが非アクティブになるたびに、Microsoft Excel に呼び出されます。Excel セッションが正常に終了すると、アドインは非アクティブになります。アドインは、Excel セッション中にユーザーによって非アクティブ化される場合があります。この関数はその場合に呼び出されます。
   
-�֐��ƃR�}���h�̓o�^����A���\�[�X�̉���A�J�X�^�}�C�Y����ɖ߂����ƂȂǂ� XLL �����s�ł���悤���邽�߂ɓK�؂Ȃ��Ƃł͂���܂����AExcel �͂��̊֐���������G�N�X�|�[�g����̂ɁAXLL ��K�v�Ƃ��܂���B�֐��ƃR�}���h�� XLL �������I�ɓo�^������Ȃ��ꍇ�A **xlAutoClose** �֐���Ăяo������AExcel �͂������s���܂��B 
+関数とコマンドの登録解除、リソースの解放、カスタマイズを元に戻すことなどを XLL が実行できるようするために適切なことではありますが、Excel はこの関数を実装しエクスポートするのに、XLL を必要としません。関数とコマンドを XLL が明示的に登録解除しない場合、**xlAutoClose** 関数を呼び出した後、Excel はこれを実行します。 
   
 ```cs
 int WINAPI xlAutoClose(void);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-���̊֐��Ɉ����͂���܂���B
+この関数に引数はありません。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-この関数の実装では、1 (**int**) を返す必要があります。
+この関数を実装する場合、1 (**int**) を返す必要があります。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-XLL ����A�N�e�B�u�ɂȂ�A�܂胁��������A�����[�h����邽�тɁAExcel �� **xlAutoClose** �֐���Ăяo���܂��B�ȉ��̏󋵂ŁAXLL �͔�A�N�e�B�u�ɂȂ�܂��B 
+XLL が非アクティブになる、つまりメモリからアンロードされるたびに、Excel は **xlAutoClose** 関数を呼び出します。以下の状況で、XLL は非アクティブになります。 
   
-- �Z�b�V�������ɃA�N�e�B�u�ȏꍇ�ɁAExcel �Z�b�V����������ɏI���������_�B
+- セッション中にアクティブな場合に、Excel セッションが正常に終了した時点。
     
-- Excel �Z�b�V�������ɖ����I�ɃA�����[�h���ꂽ�ꍇ�B
+- Excel セッション中に明示的にアンロードされた場合。
     
-- XLL �͈ȉ��̂������̕��@�ŃA�����[�h�����\��������܂��B
+- XLL は以下のいくつかの方法でアンロードされる可能性があります。
     
-- �A�h�C�� �}�l�[�W���[��g�p����B
+- アドイン マネージャーを使用する。
     
-- ���� DLL �̖��O��B��̈����Ƃ��� [xlfUnregister](xlfunregister-form-1.md) ��Ăяo���ʂ� XLL ����B 
+- この DLL の名前を唯一の引数として取る [xlfUnregister](xlfunregister-form-1.md) を呼び出す別の XLL から。 
     
-- ���� DLL �̖��O��B��̈����Ƃ��� [UNREGISTER](xlfunregister-form-1.md) ��Ăяo�� XLM �}�N�� �V�[�g����B 
+- この DLL の名前を唯一の引数として取る [UNREGISTER](xlfunregister-form-1.md) を呼び出す XLM マクロ シートから。 
     
-���̊֐��́A�ȉ�����s���܂��B
+この関数は、以下を実行します。
   
-- XLL ���ǉ������C�ӂ̃��j���[�܂��̓��j���[���ڂ�폜����B
+- XLL が追加した任意のメニューまたはメニュー項目を削除する。
     
-- �C�ӂ̕K�v�ȃO���[�o�� �N���[���A�b�v����s����B
+- 任意の必要なグローバル クリーンアップを実行する。
     
-- �쐬���ꂽ�C�ӂ̖��O�A���ɃG�N�X�|�[�g���ꂽ�֐��̖��O��폜����B **REGISTER** �ւ� 4 �Ԗڂ̈��������݂���ꍇ�A�֐��̓o�^���������̖��O��쐬���錴���ɂȂ�ꍇ�����邱�Ƃɂ����ӂ��������B 
+- 作成された任意の名前、特にエクスポートされた関数の名前を削除する。**REGISTER** に 4 番目の引数が指定されていると、関数の登録が原因で複数の名前が作成される可能性があることに注意してください。 
     
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-���̊֐��̎���������  `SAMPLES\EXAMPLE\EXAMPLE.C` �t�@�C����  `SAMPLES\GENERIC\GENERIC.C` �t�@�C����Q�Ƃ��Ă��������B���̃R�[�h�́A  `SAMPLES\GENERIC\GENERIC.C` �ɂ���܂��B
+この関数の実装例については、`SAMPLES\EXAMPLE\EXAMPLE.C` ファイルと `SAMPLES\GENERIC\GENERIC.C` ファイルを参照してください。次のコードは、`SAMPLES\GENERIC\GENERIC.C` から抜粋しています。
   
 ```cs
 int WINAPI xlAutoClose(void)
@@ -109,12 +109,12 @@ int WINAPI xlAutoClose(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
 [xlAutoOpen](xlautoopen.md)
 
 
-[�A�h�C�� �}�l�[�W���[�� XLL �C���^�[�t�F�C�X�֐�](add-in-manager-and-xll-interface-functions.md)
+[アドイン マネージャーと XLL インターフェイス関数](add-in-manager-and-xll-interface-functions.md)
 

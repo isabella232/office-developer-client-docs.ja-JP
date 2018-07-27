@@ -1,5 +1,5 @@
 ---
-title: xlfUnregister (�`�� 1)
+title: xlfUnregister (形式 1)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -10,51 +10,51 @@ keywords:
 - xlfunregister function [excel 2007]
 localization_priority: Normal
 ms.assetid: 850bf65f-a151-44d6-b49f-d53ae2c83760
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 6077027a27c054c5a5e65a751373c41a87cb3836
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798981"
 ---
-# <a name="xlfunregister-form-1"></a>xlfUnregister (�`�� 1)
+# <a name="xlfunregister-form-1"></a>xlfUnregister (形式 1)
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-Microsoft Excel �ɂ���Ă��ꎩ�̂��Ăяo����� DLL �� XLL �R�}���h����Ăяo�����Ƃ��ł��܂��B����́A **UNREGISTER** �� Excel XLM �}�N�� �V�[�g����Ăяo���̂Ɠ����ł��B 
+Microsoft Excel から呼び出された DLL コマンドまたは XLL コマンドから呼び出すことができます。これは、**UNREGISTER** を Excel XLM マクロ シートから呼び出すのと同等です。 
   
-**xlfUnregister** �́A2 �̌`���ŌĂяo�����Ƃ��ł��܂��B 
+**xlfUnregister** 関数は、次の 2 つの形式で呼び出すことができます。 
   
-- �`�� 1:�X�̃R�}���h��֐��̓o�^�������܂��B
+- 形式 1: 個々のコマンドや関数の登録を解除します。
     
-- �`�� 2XLL �̃A�����[�h�Ɣ�A�N�e�B�u����s���܂��B
+- 形式 2: XLL のアンロードと非アクティブ化を行います。
     
-�`�� 1 �ŌĂяo�����ƁA���̊֐��́A **xlfRegister** �܂��� **REGISTER** ��g�p���Ċ��ɓo�^����Ă��� DLL �֐��܂��̓R�}���h�̎g�p�J�E���g����炵�܂��B���Ɏg�p�J�E���gDLL ��̂��ׂĂ̊֐��̎g�p�J�E���g�� 0 �ɂȂ�ƁADLL �̓���������A�����[�h����܂��B
+形式 1 で呼び出されると、この関数は、**xlfRegister** または **REGISTER** を使用して既に登録されている DLL 関数またはコマンドの使用カウントを減らします。既に使用カウントが 0 の場合、この関数の効果はありません。DLL 内のすべての関数の使用カウントが 0 になると、DLL はメモリからアンロードされます。
   
-**xlfRegister** (�__ ���܂��B�֐��̓o�^��������ꍇ�́A�֐��E�B�U�[�h�ɂ��̊֐��̖��O���\������Ȃ��Ȃ�悤�ɁA **xlfSetName** ��g�p���Ă��̖��O��폜����K�v������܂��B�ڂ����́u [Excel �A�h�C�� (XLL) �J���ɂ�������m�̖��](known-issues-in-excel-xll-development.md)�v��������������B
+**xlfRegister** (形式 1) は、関数またはコマンドの登録 ID ともみなされる非表示名 (関数のテキスト引数 _pxFunctionText_) も定義します。関数の登録を解除する場合は、関数ウィザードにその関数の名前が表示されなくなるように、**xlfSetName** を使用してこの名前を削除する必要があります。詳しくは、「[Excel アドイン (XLL) 開発における既知の問題](known-issues-in-excel-xll-development.md)」を参照してください。
   
 ```cs
 Excel4(xlfUnregister, LPXLOPER pxRes, 1, LPXLOPER pxRegisterId);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
-_pxRegisterId_(**xltypeNum**)
+_pxRegisterId_ (**xltypeNum**)
   
-�o�^��������֐��̓o�^ ID�B
+登録を解除する関数の登録 ID。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-成功した場合を返します**TRUE** (**xltypeBool**)、それ以外の場合は FALSE を返します。
+成功した場合は **TRUE** (**xltypeBool**) を返します。それ以外の場合は FALSE を返します。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-�֐��̓o�^ ID �́A�֐��̍ŏ��̓o�^���� **xlfRegister** �ɂ���ĕԂ���܂��B�܂��A [xlfRegisterId �֐�](xlfregisterid.md) �܂��� [xlfEvaluate �֐�](xlfevaluate.md)��Ăяo���Ď擾���邱�Ƃ�ł��܂��B�֐����܂��o�^����Ă��Ȃ��ꍇ�́AxlfRegisterId �͂��̊֐���o�^���悤�Ƃ��邱�Ƃɂ����ӂ��������B���̂��߁A�P�Ɋ֐��̓o�^��������ړI�� ID ��擾���悤�Ƃ��Ă���̂ł���΁A�o�^���ꂽ���O�� **xlfEvaluate** �ɓn���� ID ��擾���邱�Ƃ�����߂��܂��B�֐����o�^����Ă��Ȃ��ꍇ�A **xlfEvaluate** �� #NAME? �G���[�Ŏ��s���܂��B 
+関数の登録 ID は、関数の最初の登録時に **xlfRegister** によって返されます。また、[xlfRegisterId 関数](xlfregisterid.md) または [xlfEvaluate 関数](xlfevaluate.md)を呼び出して取得することもできます。関数がまだ登録されていない場合は、xlfRegisterId はその関数を登録しようとすることにご注意ください。このため、単に関数の登録を解除する目的で ID を取得しようとしているのであれば、登録された名前を **xlfEvaluate** に渡して ID を取得することをお勧めします。関数が登録されていない場合、**xlfEvaluate** は #NAME? エラーで失敗します。 
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
-**** �� `\SAMPLES\GENERIC\GENERIC.C` �֐��̃R�[�h����Q�Ƃ��������B
+`\SAMPLES\GENERIC\GENERIC.C` の **fExit** 関数のコードを参照してください。
   
 ```cs
 int WINAPI fExit(void)
@@ -89,10 +89,10 @@ int WINAPI fExit(void)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
-- [xlfRegister (�`�� 1)](xlfregister-form-1.md)
+- [xlfRegister (形式 1)](xlfregister-form-1.md)
 - [xlfRegisterId](xlfregisterid.md)
-- [xlfUnregister (�`�� 2)](xlfunregister-form-2.md)
-- [�d�v�Ŗ�ɗ��� C API XLM �֐�](essential-and-useful-c-api-xlm-functions.md)
+- [xlfUnregister (形式 2)](xlfunregister-form-2.md)
+- [重要で役に立つ C API XLM 関数](essential-and-useful-c-api-xlm-functions.md)
 
