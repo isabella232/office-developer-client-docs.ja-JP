@@ -8,7 +8,7 @@ ms.assetid: beba316b-1dfe-4e1b-adae-42418906c177
 description: この記事では、プレゼンスの表示や連絡先カードからのインスタント メッセージの送信など、Office 2013 のソーシャル機能と統合するように、インスタント メッセージ (IM) クライアント アプリケーションを構成する方法について説明します。
 ms.openlocfilehash: 383aac24be347cf637d9e2f255623035eea8bc40
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804699"
@@ -25,7 +25,7 @@ ms.locfileid: "19804699"
 Office 2013 は、Lync 2013 などの IM クライアント アプリケーションとの多機能な統合を提供します。この統合は、ユーザーに、Word 2013、Excel 2013、PowerPoint 2013、Outlook 2013、Visio 2013、Project 2013、および OneNote 2013 内からの IM 機能を提供し、さらに SharePoint 2013 ページでのプレゼンス統合を提供します。連絡先リストに含まれる個人について、写真、名前、プレゼンス ステータス、連絡先データを表示できます。IM セッション、ビデオ通話、電話通話を連絡先カード (連絡先情報や通信オプションを示す Office 2013 内の UI 要素) から直接開始することができます。Office 2013 により、メールやドキュメントの外に出ることなく連絡先と接続された状態を保つことが容易になります。 
   
 > [!NOTE]
-> [!メモ] この記事では、コンピューターにインストールされた IM サービスと通信するアプリケーションを特に表すために、 IM クライアント アプリケーションという用語を使用します。たとえば、Lync 2013 は IM クライアント アプリケーションとみなされます。この記事では、IM クライアント アプリケーションが IM サービスと通信する方法や、IM サービス自体については詳しく説明しません。 
+> この記事では、コンピューターにインストールされた IM サービスと通信するアプリケーションを特に表すために、 IM クライアント アプリケーションという用語を使用します。たとえば、Lync 2013 は IM クライアント アプリケーションとみなされます。この記事では、IM クライアント アプリケーションが IM サービスと通信する方法や、IM サービス自体については詳しく説明しません。 
   
 Office と通信できるように、IM のクライアント アプリケーションをカスタマイズすることができます。具体的には、Office UI 内に次の情報が表示されるように、IM のアプリケーションを変更できます。
   
@@ -55,19 +55,19 @@ Office と通信できるように、IM のクライアント アプリケーシ
     
 **図 1. Office 2013 での連絡先カード**
 
-![Office 2013 でユーザー カード](media/ocom15_peoplecard.png "Office 2013 でユーザー カード")
+![Office 2013 の連絡先カード](media/ocom15_peoplecard.png "Office 2013 の連絡先カード")
   
 Office とのこの統合を有効にするために、IM のクライアント アプリケーションは、Office に接続するために提供されている一連のインターフェイスを実装する必要があります。この統合の API は、Lync / Skype for Business を含むバージョンの Office 2013 と共にインストールされる Microsoft.Office.UC.dll ファイル内にある [UCCollborationLib](http://msdn.microsoft.com/en-au/library/uccollaborationlib.aspx) 名前空間に含まれています。 **UCCollaborationLib** 名前空間には、Office と統合するために実装する必要のあるインターフェイスが含まれています。 
   
 > [!IMPORTANT] 
-> Lync 2013/Skype のビジネスで必要なインターフェイスのタイプ ライブラリが埋め込まれます。 サード パーティ インテグレーターの場合、これは Lync 2013 と Skype for Business の両方が対象コンピューターにインストールされている場合にのみ動作します。 Office 標準を使用して統合している場合は、タイプ ライブラリを抽出して、対象コンピューターにインストールする必要があります。 [Lync 2013 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=36824) には、Microsoft.Office.UC.dll ファイルが含まれています。 
+> Lync 2013/Skype for Business には、必要なインターフェイスのタイプ ライブラリが埋め込まれています。 サード パーティ インテグレーターの場合、これは Lync 2013 と Skype for Business の両方が対象コンピューターにインストールされている場合にのみ動作します。 Office 標準を使用して統合している場合は、タイプ ライブラリを抽出して、対象コンピューターにインストールする必要があります。 [Lync 2013 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=36824) には、Microsoft.Office.UC.dll ファイルが含まれています。 
   
 > [!NOTE]
->  サードパーティの IM プロバイダーのアプリケーションと同様にいくつかの Office 2010 アプリケーションを統合できます。 Outlook 2010、Word 2010、Excel 2010、PowerPoint 2010、および SharePoint Server 2010 を使用して、ActiveX コントロール)。 Office 2013 と統合するために必要な手順の多くに Office 2010 も適用します。 IM プロバイダー アプリケーションと Office 2010 を統合する方法のいくつかの重要な違いがあります。 
->  - Office 2010 では、連絡先の写真が表示されません。 
->  - Microsoft.Office.Uc.dll ファイルは、Office 2010 から個別にダウンロードする必要があります。 [Lync 2010 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=18898)には、Office 2010 の Microsoft.Office.UC.dll ファイルが含まれています。 
->  - Office アプリケーションでは、IM クライアント アプリケーションの[IUCOfficeIntegration.GetAuthenticationInfo](integrating-im-applications-with-office.md#off15_IMIntegration_ImplementRequired_IUCOfficeIntegration)メソッドを呼び出し、「14.0.0.0」という文字列で渡されます。 
->  - Office 2010 では、IM クライアント アプリケーションに接続するとすぐにすべてのグループとメンバーを列挙します。 
+>  少数の Office 2010 アプリケーションは、同様に、次のサード パーティ IM プロバイダーのアプリケーションと統合できます: Outlook 2010、Word 2010、Excel 2010、PowerPoint 2010、および SharePoint Server 2010 (ActiveX コントロールを使用)。 Office 2013 との統合に必要な手順の多くは、Office 2010 にも同様に適用されます。 Office 2010 が IM プロバイダー アプリケーションと統合する方法には、いくつかの重要な相違があります。 
+>  - Office 2010 には、連絡先の写真が表示されません。 
+>  - Microsoft.Office.Uc.dll ファイルは、Office 2010 とは別にダウンロードする必要があります。 [Lync 2010 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=18898) には、Office 2010 のための Microsoft.Office.UC.dll ファイルが含まれています。 
+>  - Office アプリケーションが IM クライアント アプリケーションで [IUCOfficeIntegration.GetAuthenticationInfo](integrating-im-applications-with-office.md#off15_IMIntegration_ImplementRequired_IUCOfficeIntegration) メソッドを呼び出すときには、文字列「14.0.0.0」が渡されます。 
+>  - Office 2010 は、IM クライアント アプリケーションに接続した直後に、すべてのグループと連絡先を列挙します。 
   
 ## <a name="how-office-integrates-with-an-im-client-application"></a>IM クライアント アプリケーションとの Office の統合方法
 <a name="off15_IMIntegration_How"> </a>
@@ -108,7 +108,7 @@ Office アプリケーションが、既定の IM のクライアント アプ�
 
 Office アプリケーションは、IM クライアント アプリケーションへの接続を確立した後に、以下を行います。
   
-1. Office アプリケーションは、[IUnknown::QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx) メソッドを呼び出して、 [IUCOfficeIntegration](integrating-im-applications-with-office.md#off15_IMIntegration_ImplementRequired_IUCOfficeIntegration) インターフェースを検索します。 
+1. Office アプリケーションは、[IUnknown::QueryInterface](http://msdn.microsoft.com/ja-JP/library/ms682521%28v=VS.85%29.aspx) メソッドを呼び出して、 [IUCOfficeIntegration](integrating-im-applications-with-office.md#off15_IMIntegration_ImplementRequired_IUCOfficeIntegration) インターフェースを検索します。 
     
 2. その後、Office アプリケーションは **IUCOfficeIntegration.GetAuthenticationInfo** メソッドを呼び出して、サポートされる最高の統合バージョン (たとえば、「15.0.0.0」) を渡します。 
     
@@ -117,7 +117,7 @@ Office アプリケーションは、IM クライアント アプリケーショ
     `<authenticationinfo>`
     
    > [!NOTE]
-   > [!メモ] 従来のものにも対応できるように、IM クライアント アプリケーションは、パラメーターとして渡された Office のバージョンをサポートしている場合、正確な値の  `<authenticationinfo>` を **GetAuthenticationInfo** への呼び出しに戻す必要があります。 
+   > 従来のものにも対応できるように、IM クライアント アプリケーションは、パラメーターとして渡された Office のバージョンをサポートしている場合、正確な値の  `<authenticationinfo>` を **GetAuthenticationInfo** への呼び出しに戻す必要があります。 
   
 4. IM クライアント アプリケーションが値を返すことに失敗した場合、Office アプリケーションは、サポートされる次に高位の Office のバージョン (たとえば、「14.0.0.0」) を指定して **GetAuthenticationInfo** メソッドを再び呼び出します。 
     
@@ -192,7 +192,7 @@ Office 2013 アプリケーションは、IM アプリケーションからの *
 ||ProcessName  <br/> |REG_SZ  <br/> |サード パーティ製の IM クライアント アプリケーションのプロセス名。  <br/> |litware.exe  <br/> |
 ||GUID  <br/> |REG_SZ  <br/> |ルートのクラス ID (CLSID)、 IM アプリケーションでの共同作成可能なクラス ( **IUCOfficeIntegration** インターフェイスを実装するクラス)。  <br/> |(A GUID)  <br/> |
 |HKEY_CURRENT_USER\Software\IM Providers  <br/> |DefaultIMApp  <br/> |REG_SZ  <br/> |IM クライアント アプリケーションの名前。これは、HKEY_LOCAL_MACHINE の最上位レベルのレジストリ キー (ハイブ) と同じ名前でなければなりません。  <br/> |Litware  <br/> |
-|HKEY_CURRENT_USER\Software\IM Providers\\<アプリケーション名\>  <br/> |UpAndRunning  <br/> |REG_DWORD  <br/> | 0 ～ 2 の整数値。  <br/>  0実行していない  <br/>  1開始中  <br/>  2実行中  <br/> <br/>**注**: レジストリ キーには、アプリケーションの名前は DefaultIMApp エントリの値と同じである必要があります。           ||
+|HKEY_CURRENT_USER\Software\IM Providers\\<アプリケーション名\>  <br/> |UpAndRunning  <br/> |REG_DWORD  <br/> | 0 ～ 2 の整数値。  <br/>  0—実行していない  <br/>  1—開始中  <br/>  2—実行中  <br/> <br/>**メモ**: アプリケーション名のレジストリ キーは、DefaultIMApp エントリの値と同一の必要があります。           ||
    
 ## <a name="implementing-the-required-interfaces-for-integration-with-office"></a>Office との統合のために必要なインターフェイスを実装する
 <a name="off15_IMIntegration_ImplementRequired"> </a>
@@ -201,9 +201,9 @@ Office 2013 アプリケーションは、IM アプリケーションからの *
   
 必要なインターフェイスは、次のとおりです。
   
-- [IUCOfficeIntegration](integrating-im-applications-with-office.md#off15_IMIntegration_ImplementRequired_IUCOfficeIntegration)必須ではありませんが、 **_IUCOfficeIntegrationEvents** インターフェイスも同じ派生クラス内に実装される必要があります。 
+- [IUCOfficeIntegration](integrating-im-applications-with-office.md#off15_IMIntegration_ImplementRequired_IUCOfficeIntegration)必須ではありませんが、 **_IUCOfficeIntegrationEvents** インターフェイスも同じ派生クラス内に実装される必要があります。 
     
-- [ILyncClient](integrating-im-applications-with-office.md#off15_IMIntegration_ImplementRequired_ILyncClient)必須ではありませんが、 **_ILyncClientEvents** インターフェイスも同じ派生クラス内に実装される必要があります。 
+- [ILyncClient](integrating-im-applications-with-office.md#off15_IMIntegration_ImplementRequired_ILyncClient)必須ではありませんが、 **_ILyncClientEvents** インターフェイスも同じ派生クラス内に実装される必要があります。 
     
 - [IAutomation](integrating-im-applications-with-office.md#off15_IMIntegration_ImplementRequired_IAutomation)
     
@@ -217,7 +217,7 @@ Office 2013 アプリケーションは、IM アプリケーションからの *
 表 2 は、 **IUCOfficeIntegration** と **_IUCOfficeIntegration** から継承するクラスに実装されている必要のあるメンバーを示しています。
   
 > [!NOTE]
-> [!メモ] **IUCOfficeIntegration** と **_IUCOfficeIntegrationEvents** インターフェイス、およびそのメンバーについて詳しくは、 [UCCollaborationLib.IUCOfficeIntegration](http://msdn.microsoft.com/library/UCCollaborationLib.IUCOfficeIntegration) と [UCCollaborationLib._IUCOfficeIntegrationEvents](http://msdn.microsoft.com/library/UCCollaborationLib._IUCOfficeIntegrationEvents) を参照してください。 
+> **IUCOfficeIntegration** と **_IUCOfficeIntegrationEvents** インターフェイス、およびそのメンバーについて詳しくは、 [UCCollaborationLib.IUCOfficeIntegration](http://msdn.microsoft.com/library/UCCollaborationLib.IUCOfficeIntegration) と [UCCollaborationLib._IUCOfficeIntegrationEvents](http://msdn.microsoft.com/library/UCCollaborationLib._IUCOfficeIntegrationEvents) を参照してください。 
   
 **表 2. IUCOfficeIntegration と _IUCOfficeIntegrationEvents インターフェイスの実装**
 
@@ -243,7 +243,7 @@ public class LitwareClientAppObject : IUCOfficeIntegration
 
 ```
 
-**GetAuthenticationInfo** メソッドは、文字列を  _version_ パラメーターの引数として取得します。 Office アプリケーションは、このメソッドを呼び出すと、Office のバージョンに応じて引数の 2 つの文字列のいずれかで渡します。 Office アプリケーションで IM クライアント アプリケーションをサポートしている Office のバージョンのメソッドを提供する場合 (つまり、機能をサポート)、 **GetAuthenticationInfo**メソッドは、ハード コーディングされた XML 文字列を返します`<authenticationinfo>`。 
+**GetAuthenticationInfo** メソッドは、文字列を  _version_ パラメーターの引数として取得します。 Office アプリケーションは、このメソッドを呼び出すと、Office のバージョンに応じて引数の 2 つの文字列のいずれかで渡します。 Office アプリケーションがメソッドに IM クライアント アプリケーションでサポートされる (つまり機能がサポートされる) Office のバージョンを提供すると、**GetAuthenticationInfo** メソッドは、ハード コーディングされた XML 文字列 「`<authenticationinfo>`」を返します。 
   
 次のコードを使用して、IM クライアント アプリケーションのコード内で **GetAuthentication** メソッドを実装します。 
   
@@ -307,8 +307,8 @@ public object GetInterface(string _version, OIInterface _interface)
 **GetSupportedFeatures**メソッドは、IM クライアント アプリケーションによってサポートされる IM 機能に関する情報を返します。その唯一のパラメーター  _version_ は、文字列を取ります。Office アプリケーションが **GetSupportFeatures**メソッドを呼び出すと、メソッドは [UCCollaborationLib.OIFeature ](http://msdn.microsoft.com/library/UCCollaborationLib.OIFeature)列挙からの値を返します。返される値は IM のクライアントの機能を示し、値にフラグを追加することによって、IM クライアント アプリケーションの各機能が Office アプリケーションに対して指定されます。 
   
 > [!NOTE]
->  Office 2013 アプリケーションは、 **OIFeature**列挙体の次の定数を無視します。 
-> - **oiFeaturePictures**(2) 
+>  Office 2013 アプリケーションは、**OIFeature** 列挙の以下の定数を無視します。 
+> - **oiFeaturePictures** (2) 
 > - **oiFeatureFreeBusyIntegration**
 > - **oiFeaturePhoneNormalization**
   
@@ -331,12 +331,12 @@ public OIFeature GetSupportedFeatures(string _version)
   
 さらに、 **ILyncClient** インターフェイスを実装するクラスは、 **_ILyncClientEvents** インターフェイスも実装する必要があります。 **_ILyncClientEvents** インターフェイスは、IM クライアント アプリケーションの状態を監視するために必要ないくつかのイベントを公開します。 
   
-表 3 は、 **ILyncClient** と **_ILyncClientEvents** から継承するクラスに実装されている必要のあるメンバーを示しています。
+表 3 は、**ILyncClient** と **_ILyncClientEvents** から継承するクラスに実装されている必要のあるメンバーを示しています。
   
 > [!NOTE]
-> **ILyncClient**の任意のメンバーまたは**\_ILyncClientEvents**の表に表示されていないインターフェイスが存在する必要がありますが、実装する必要はありません。 実装されていませんが、存在するメンバーが、 **NotImplementedException**をスローまたは**E\_NOTIMPL**エラーです。 
+> 表に記載されていない **ILyncClient** または **\_ILyncClientEvents** インターフェイスのメンバーは、存在している必要がありますが、実装されている必要はありません。 存在していても実装されていないメンバーは、**NotImplementedException** または **E\_NOTIMPL** エラーをスローすることがあります。 
 > 
-> **ILyncClient**および **_ILyncClientEvents**インターフェイスとそのメンバーに関する詳細については、 [UCCollaborationLib.ILyncClient](http://msdn.microsoft.com/library/UCCollaborationLib.ILyncClient)および[UCCollaborationLib._ILyncClientEvents](http://msdn.microsoft.com/library/UCCollaborationLib._ILyncClientEvents)を参照してください。 
+> **ILyncClient** と **_ILyncClientEvents** インターフェイス、およびそのメンバーの詳細については、「[UCCollaborationLib.ILyncClient](http://msdn.microsoft.com/library/UCCollaborationLib.ILyncClient)」および「[UCCollaborationLib._ILyncClientEvents](http://msdn.microsoft.com/library/UCCollaborationLib._ILyncClientEvents)」を参照してください。 
   
 **表 3. ILyncClient と ILyncClientEvents インターフェイスの実装**
 
@@ -661,9 +661,9 @@ namespace SampleImplementation
 表 4 は、 **IAutomation** から継承するクラスに実装されている必要のあるメンバーを示しています。
   
 > [!NOTE]
-> [!メモ] 表に記載されていない **IAutomation** インターフェイスのメンバーは、存在している必要がありますが、実装されている必要はありません。 存在していても実装されていないメンバーは、 **NotImplementedException** または **E_NOTIMPL** エラーをスローすることがあります。 
+> 表に記載されていない **IAutomation** インターフェイスのメンバーは、存在している必要がありますが、実装されている必要はありません。 存在していても実装されていないメンバーは、**NotImplementedException** または **E_NOTIMPL** エラーをスローすることがあります。 
 > 
-> **IAutomation**インターフェイスとそのメンバーに関する詳細については、 [UCCollaborationLib.IAutomation](http://msdn.microsoft.com/library/UCCollaborationLib.IAutomation)を参照してください。 
+> **IAutomation** インターフェイスとそのメンバーの詳細については、「[UCCollaborationLib.IAutomation](http://msdn.microsoft.com/library/UCCollaborationLib.IAutomation)」を参照してください。 
   
 **表 4. IAutomation インターフェイスの実装**
 
@@ -698,9 +698,9 @@ namespace SampleImplementation
 表 5 は、 **IContact** から継承するクラスに実装されている必要のあるメンバーを示しています。
   
 > [!NOTE]
-> [!メモ] 表に記載されていない **IContact** インターフェイスのメンバーは、存在している必要がありますが、実装されている必要はありません。 存在していても実装されていないメンバーは、 **NotImplementedException** または **E_NOTIMPL** エラーをスローすることがあります。 
+> 表に記載されていない **IContact** インターフェイスのメンバーは、存在している必要がありますが、実装されている必要はありません。 存在していても実装されていないメンバーは、**NotImplementedException** または **E_NOTIMPL** エラーをスローすることがあります。 
 >
-> **IContact**インターフェイスとそのメンバーに関する詳細については、 [UCCollaborationLib.IContact](http://msdn.microsoft.com/library/UCCollaborationLib.IContact)を参照してください。 
+> **IContact** インターフェイスとそのメンバーの詳細については、「[UCCollaborationLib.IContact](http://msdn.microsoft.com/library/UCCollaborationLib.IContact)」を参照してください。 
   
 **表 5. IContact インターフェイスの実装**
 
@@ -825,7 +825,7 @@ public IMClientGroupCollection CustomGroups
 表 6 は、 **ISelf** から継承するクラスに実装されている必要のあるメンバーを示しています。
   
 > [!NOTE]
-> [!メモ] 表に記載されていない **ISelf** インターフェイスのメンバーは、存在している必要がありますが、実装されている必要はありません。存在していても実装されていないメンバーは、 **NotImplementedException** または **E_NOTIMPL** エラーをスローすることがあります。 
+> 表に記載されていない **ISelf** インターフェイスのメンバーは、存在している必要がありますが、実装されている必要はありません。存在していても実装されていないメンバーは、 **NotImplementedException** または **E_NOTIMPL** エラーをスローすることがあります。 
   
 **表 6. ISelf インターフェイスの実装**
 
@@ -870,9 +870,9 @@ public class IMClientSelf : ISelf
 表 7 は、 **IContactManager** と **_IContactManagerEvents** から継承するクラスに実装されている必要のあるメンバーを示しています。
   
 > [!NOTE]
-> [!メモ] 表に記載されていない **IContactManager** インターフェイスのメンバーは、存在している必要がありますが、実装されている必要はありません。 実装されていませんが、存在するメンバーが、 **NotImplementedException**をスローまたは**E\_NOTIMPL**エラーです。 
+> 表に記載されていない **IContactManager** インターフェイスのメンバーは、存在している必要がありますが、実装されている必要はありません。 存在していても実装されていないメンバーは、**NotImplementedException** または **E\_NOTIMPL** エラーをスローすることがあります。 
 >
-> **IContactManager**および **_IContactManagerEvents**インターフェイスとそのメンバーに関する詳細については、 [UCCollaborationLib.IContactManager](http://msdn.microsoft.com/library/UCCollaborationLib.IContactManager)および[UCCollaborationLib._IContactManagerEvents](http://msdn.microsoft.com/library/UCCollaborationLib._IContactManagerEvents)を参照してください。 
+> **IContactManager** と **_IContactManagerEvents** インターフェイス、およびそのメンバーの詳細については、「[UCCollaborationLib.IContactManager](http://msdn.microsoft.com/library/UCCollaborationLib.IContactManager)」および「[UCCollaborationLib._IContactManagerEvents](http://msdn.microsoft.com/library/UCCollaborationLib._IContactManagerEvents)」を参照してください。 
   
 **表 7. IContactManager と _IContactManagerEvents インターフェイスの実装**
 
@@ -936,9 +936,9 @@ public IMClientContactSubscription CreateSubscription()
 表 9 は、以下の表の **IGroup** と **IGroupCollection** から継承するクラスに実装されている必要のあるメンバーを示しています。 
   
 > [!NOTE]
-> [!メモ] 表に記載されていない **IGroup** インターフェイスのメンバーは、存在している必要がありますが、実装されている必要はありません。 存在していても実装されていないメンバーは、 **NotImplementedException** または **E_NOTIMPL** エラーをスローすることがあります。 
+> 表に記載されていない **IGroup** インターフェイスのメンバーは、存在している必要がありますが、実装されている必要はありません。 存在していても実装されていないメンバーは、**NotImplementedException** または **E_NOTIMPL** エラーをスローすることがあります。 
 >
-> **IGroup**および**IGroupCollection**インターフェイスとそのメンバーに関する詳細については、 [UCCollaborationLib.IGroup](http://msdn.microsoft.com/library/UCCollaborationLib.IGroup)および[UCCollaborationLib.IGroupCollection](http://msdn.microsoft.com/library/UCCollaborationLib.IGroupCollection)を参照してください。 
+> **IGroup** と **IGroupCollection** インターフェイス、およびそのメンバーの詳細については、「[UCCollaborationLib.IGroup](http://msdn.microsoft.com/library/UCCollaborationLib.IGroup)」および「[UCCollaborationLib.IGroupCollection](http://msdn.microsoft.com/library/UCCollaborationLib.IGroupCollection)」を参照してください。 
   
 **表 9. IGroup と IGroupCollection インターフェイスの実装**
 
@@ -958,9 +958,9 @@ Office アプリケーションは、ローカル ユーザーの情報を取得
 表 10 は、 **IContactSubscription** から継承するクラスに実装されている必要のあるメンバーを示しています。
   
 > [!NOTE]
-> [!メモ] 表に記載されていない **IContactSubscription** インターフェイスのメンバーは、存在している必要がありますが、実装されている必要はありません。 存在していても実装されていないメンバーは、 **NotImplementedException** または **E_NOTIMPL** エラーをスローすることがあります。
+> 表に記載されていない **IContactSubscription** インターフェイスのメンバーは、存在している必要がありますが、実装されている必要はありません。 存在していても実装されていないメンバーは、**NotImplementedException** または **E_NOTIMPL** エラーをスローすることがあります。
 >
-> **IContactSubscription**インターフェイスとそのメンバーに関する詳細については、 [UCCollaborationLib.IContactSubscription](http://msdn.microsoft.com/library/UCCollaborationLib.IContactSubscription)を参照してください。 
+> **IContactSubscription** インターフェイスとそのメンバーの詳細については、「[UCCollaborationLib.IContactSubscription](http://msdn.microsoft.com/library/UCCollaborationLib.IContactSubscription)」を参照してください。 
   
 **表 10. IContactSubscription インターフェイスの実装**
 
@@ -991,9 +991,9 @@ public void AddContact(IMClientContact _contact)
 表 11 は、 **IContactEndPoint** から継承するクラスに実装されている必要のあるメンバーを示しています。
   
 > [!NOTE]
-> [!メモ] 表に記載されていない **IContactEndPoint** インターフェイスのメンバーは、存在している必要がありますが、実装されている必要はありません。 存在していても実装されていないメンバーは、 **NotImplementedException** または **E_NOTIMPL** エラーをスローすることがあります。
+> 表に記載されていない **IContactEndPoint** インターフェイスのメンバーは、存在している必要がありますが、実装されている必要はありません。 存在していても実装されていないメンバーは、**NotImplementedException** または **E_NOTIMPL** エラーをスローすることがあります。
 >
-> **IContactEndPoint**インターフェイスとそのメンバーに関する詳細については、 [UCCollaborationLib.IContactEndpoint](http://msdn.microsoft.com/library/UCCollaborationLib.IContactEndpoint)を参照してください。 
+> **IContactEndPoint** インターフェイスとそのメンバーの詳細については、「[UCCollaborationLib.IContactEndpoint](http://msdn.microsoft.com/library/UCCollaborationLib.IContactEndpoint)」を参照してください。 
   
 **表 11. IContactEndPoint インターフェイスの実装**
 
@@ -1011,9 +1011,9 @@ public void AddContact(IMClientContact _contact)
 表 12 は、 **ILocaleString** から継承するクラスに実装されている必要のあるメンバーを示しています。
   
 > [!NOTE]
-> [!メモ] 表に記載されていない **ILocaleString** インターフェイスのメンバーは、存在している必要がありますが、実装されている必要はありません。 存在していても実装されていないメンバーは、 **NotImplementedException** または **E_NOTIMPL** エラーをスローすることがあります。
+> 表に記載されていない **ILocaleString** インターフェイスのメンバーは、存在している必要がありますが、実装されている必要はありません。 存在していても実装されていないメンバーは、**NotImplementedException** または **E_NOTIMPL** エラーをスローすることがあります。
 >
-> **ILocalString**インターフェイスとそのメンバーに関する詳細については、 [UCCollaborationLib.ILocaleString](http://msdn.microsoft.com/library/UCCollaborationLib.ILocaleString)を参照してください。 
+> **ILocalString** インターフェイスとそのメンバーの詳細については、「[UCCollaborationLib.ILocaleString](http://msdn.microsoft.com/library/UCCollaborationLib.ILocaleString)」を参照してください。 
   
 **表 12. ILocaleString インターフェイスの実装**
 

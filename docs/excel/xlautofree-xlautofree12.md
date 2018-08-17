@@ -10,62 +10,62 @@ keywords:
 - xlautofree function [excel 2007]
 localization_priority: Normal
 ms.assetid: f73d292c-d6d8-4be5-89c0-bef15db236d6
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: a2d2b8e60b484ba8156acc80d543493e3ec9c564
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798967"
 ---
 # <a name="xlautofreexlautofree12"></a>xlAutoFree/xlAutoFree12
 
- **適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+ **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-XLL ���[�N�V�[�g�֐��� **XLOPER**/ **XLOPER12** ��Ԃ�������ɁAXLL �ŉ������K�v�̂��郁�������܂����邱�Ƃ�����t���O��ݒ肷�邽�߂� Excel �ɂ���ČĂяo����܂��B����ɂ��A���I�Ɋ��蓖�Ă�ꂽ�z��A�����񂨂�ъO���Q�Ƃ������ ���[�N�Ȃ��� XLL �Ń��[�N�V�[�g�ɕԂ���悤�ɂȂ�܂��B�ڍׂɂ��ẮA�u [Excel �̃������Ǘ�](memory-management-in-excel.md)�v��Q�Ƃ��Ă��������B
+XLL ワークシート関数が **XLOPER**/ **XLOPER12** を返した直後に、XLL で解放する必要のあるメモリがまだあることを示すフラグを設定するために Excel によって呼び出されます。これにより、動的に割り当てられた配列、文字列および外部参照をメモリ リークなしに XLL でワークシートに返せるようになります。詳細については、「[Excel でのメモリ管理](memory-management-in-excel.md)」を参照してください。
   
-**xlAutoFree12** �֐��� **XLOPER12** �f�[�^�^�́AExcel 2007 �ȍ~�ŃT�|�[�g����Ă��܂��B 
+**xlAutoFree12** 関数と **XLOPER12** データ型は、Excel 2007 以降でサポートされています。 
   
-Excel �ł́AXLL ������炢���ꂩ�̊֐���������ăG�N�X�|�[�g���邱�Ƃ͕s�v�ł��B�������A���I�Ƀ����������蓖�Ă��Ă���A�܂��͓��I�Ɋ��蓖�Ă�ꂽ�������ւ̃|�C���^��܂�ł��� XLOPER �܂��� XLOPER12 �� XLL �֐����Ԃ��ꍇ�́A���̕K�v������܂��B�����̃f�[�^�^�ɑI����郁�����Ǘ��̕��@�́AXLL �S�̂ł̈�ѐ���m�ۂ��A **xlAutoFree** ����� **xlAutoFree12** �̎������@�Ɩ������Ȃ��悤�ɂ��܂��B
+Excel では、XLL がこれらいずれかの関数を実装してエクスポートする必要はありません。ただし、動的にメモリが割り当てられている、または動的に割り当てられたメモリへのポインターを含んでいる XLOPER または XLOPER12 を XLL 関数が返す場合は、その必要があります。これらのデータ型に選択するメモリ管理の方法は、XLL 全体での一貫性を確保し、**xlAutoFree** および **xlAutoFree12** の実装方法と矛盾しないようにします。
   
-**xlAutoFree**/ **xlAutoFree12** �֐��̓���ł́AExcel �ւ̃R�[���o�b�N�͖���������Ă��܂��B����ɂ� 1 �̗�O������AExcel �ɂ���Ċ��蓖�Ă�ꂽ�������������邽�߂� **xlFree** �̌Ăяo���͉\�ł��B 
+**xlAutoFree**/ **xlAutoFree12** 関数の内部では、Excel へのコールバックは無効化されています。これには 1 つの例外があり、Excel によって割り当てられたメモリを解放するための **xlFree** の呼び出しは可能です。 
   
 ```cs
 void WINAPI xlAutoFree(LPXLOPER pxFree);
 void WINAPI xlAutoFree12(LPXLOPER12 pxFree);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
- _pxFree_(**XlAutoFree の場合 LPXLOPER**)
+ _pxFree_ (**LPXLOPER in the case of xlAutoFree**)
   
- _pxFree_(**XlAutoFree12 の場合 LPXLOPER12**)
+ _pxFree_ (**LPXLOPER12 in the case of xlAutoFree12**)
   
-�������K�v�̂��郁���������蓖�Ă��Ă��� **XLOPER** �܂��� **XLOPER12** �ւ̃|�C���^�[�B 
+解放する必要のあるメモリが割り当てられている **XLOPER** または **XLOPER12** へのポインター。 
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-���̊֐��͒l��Ԃ��܂���Bvoid ��Ԃ��悤�ɐ錾����Ă���K�v������܂��B
+この関数は値を返しません。void を返すように宣言されている必要があります。
   
-## <a name="remarks"></a>����
+## <a name="remarks"></a>注釈
 
-Excel ���}���`�X���b�h�̃u�b�N�̍Čv�Z��g�p����悤�ɍ\������Ă���ꍇ�A **xlAutoFree**/ **xlAutoFree12** �́A�����Ԃ����֐��̌Ăяo���Ɏg�p���ꂽ�X���b�h�Ɠ����X���b�h�ŌĂяo����܂��B **xlAutoFree**/ **xlAutoFree12** �̌Ăяo���́A��ɁA���̃X���b�h�Ō㑱�̃��[�N�V�[�g�̃Z�����]�������O�ɍs���܂��B����ɂ��AXLL �ł̃X���b�h �Z�[�t�Ȑ݌v���ȒP�ɂȂ�܂��B 
+Excel がマルチスレッドのブックの再計算を使用するように構成されている場合、**xlAutoFree**/ **xlAutoFree12** は、それを返した関数の呼び出しに使用されたスレッドと同じスレッドで呼び出されます。**xlAutoFree**/ **xlAutoFree12** の呼び出しは、常に、そのスレッドで後続のワークシートのセルが評価される前に行われます。これにより、XLL でのスレッド セーフな設計が簡単になります。 
   
-�J�X�^���� **xlAutoFree**/ **xlAutoFree12** �֐���  **pxFree** �� _xltype_ �t�B�[���h�𒲂ׂ�ꍇ�́A **xlbitDLLFree** �r�b�g���ݒ肳�ꂽ�܂܂ɂȂ��Ă���_�ɒ��ӂ��Ă��������B 
+カスタムの **xlAutoFree**/ **xlAutoFree12** 関数で _pxFree_ の **xltype** フィールドを調べる場合は、**xlbitDLLFree** ビットが設定されたままになっている点に注意してください。 
   
-## <a name="example"></a>��
+## <a name="example"></a>例
 
- **������ 1**
+ **実装例 1**
   
-`\SAMPLES\EXAMPLE\EXAMPLE.C` �̍ŏ��̃R�[�h�ł́A���ɓ���� **xlAutoFree** �̎����������Ă��܂��B����� 1 �̊֐� **fArray** �����Ɏg�p����悤�ɐ݌v����Ă��܂��B��ʂɁAXLL �ɂ͉������K�v�̂��郁������Ԃ��֐�����������܂��B���̏ꍇ�́A���܂����I�łȂ��������K�v�ɂȂ�܂��B 
+`\SAMPLES\EXAMPLE\EXAMPLE.C` の最初のコードでは、非常に特殊な **xlAutoFree** の実装例を示しています。これは 1 つの関数 **fArray** だけに使用するように設計されています。一般に、XLL には解放する必要のあるメモリを返す関数が複数あります。その場合は、あまり限定的でない実装が必要になります。 
   
- **������ 2**
+ **実装例 2**
   
-2 �Ԗڂ̎�����́A�Z�N�V���� 1.6.3�Axl12_Str_example�Axl12_Ref_example�A����� xl12_Multi_example �� **XLOPER12** �̍쐬��Ŏg�p�����O�����ɓK�����܂��B���̑O�����Ƃ́u **xlbitDLLFree** �r�b�g���ݒ肳��Ă���Ƃ��ɂ́A���ׂĂ̕�����A�z��A����ъO���Q�ƃ������� **malloc** ��g�p���ē��I�Ɋ��蓖�Ă��Ă��āAfree �̌Ăяo���ŉ������K�v������v�Ƃ������Ƃł��B
+2 番目の実装例は、セクション 1.6.3、xl12_Str_example、xl12_Ref_example、および xl12_Multi_example の **XLOPER12** の作成例で使用した前提条件に適合します。その前提条件とは、「**xlbitDLLFree** ビットが設定されているときには、すべての文字列、配列、および外部参照メモリが **malloc** を使用して動的に割り当てられていて、free の呼び出しで解放する必要がある」というものです。
   
- **������ 3**
+ **実装例 3**
   
-3 �Ԗڂ̎�����́A **malloc** ��g�p���� **XLOPER12** �����蓖�Ă�������A�O���Q�Ƃ���єz���Ԃ��֐���G�N�X�|�[�g���� XLL�A�܂��� **XLOPER12** ���̂���I�Ɋ��蓖�Ă�ꂽ XLL �ɓK�����܂��B���I�Ɋ��蓖�Ă�ꂽ **XLOPER12** �ւ̃|�C���^�[��������ɕԂ���邱�ƂŁA�֐����X���b�h �Z�[�t�ł��邱�Ƃ�ۏ؂��܂��B 
+3 番目の実装例は、**malloc** を使用して **XLOPER12** が割り当てた文字列、外部参照および配列を返す関数をエクスポートした XLL、または **XLOPER12** 自体も動的に割り当てられた XLL に適合します。動的に割り当てられた **XLOPER12** へのポインターが一方向に返されることで、関数がスレッド セーフであることを保証します。 
   
 ```cs
 //////////////////////////////////////////
@@ -175,9 +175,9 @@ void WINAPI xlAutoFree12(LPXLOPER pxFree)
 }
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[�A�h�C�� �}�l�[�W���[�� XLL �C���^�[�t�F�C�X�֐�](add-in-manager-and-xll-interface-functions.md)
+[アドイン マネージャーと XLL インターフェイス関数](add-in-manager-and-xll-interface-functions.md)
 
