@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0f22ccf2-1004-4731-9d68-f66c01b4588b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c4859fa4f8f55af7913c884e25c96727c063ba79
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19800165"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 トランスポート ニュートラル カプセル化形式 (TNEF) ストリームのコード ページを決定します。
   
@@ -37,7 +37,7 @@ HRESULT GetTnefStreamCodepage(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpStream_
   
@@ -51,7 +51,7 @@ HRESULT GetTnefStreamCodepage(
   
 > [out]ストリームのサブコードのページへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
  **S_OK**
   
@@ -65,7 +65,7 @@ HRESULT GetTnefStreamCodepage(
   
 > ストリームが TNEF ストリームではないか、attOemCodepage 属性を読み取り中にエラーが発生しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 TNEF ストリームのコード ページとサブコードのページを決定するのにの**attOemCodepage**属性を読み取ることには、 **GetTnefStreamCodepage**関数を使用します。 **AttOemCodepage**が見つからない場合、 **GetTnefStreamCodepage**は、コード ページ 437 と 0 のサブコードのページを返します。 
   

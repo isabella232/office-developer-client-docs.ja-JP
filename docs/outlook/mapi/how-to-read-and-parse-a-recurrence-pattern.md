@@ -17,7 +17,7 @@ ms.locfileid: "19800247"
 ---
 # <a name="read-and-parse-a-recurrence-pattern"></a>読み取り、定期的なパターンの解析
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 読み取り、予定の定期的なパターンを解析するのには、MAPI を使用できます。
   

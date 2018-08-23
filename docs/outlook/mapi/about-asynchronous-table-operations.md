@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 57219d96-bd9e-4e9a-b34a-dd3aad97bfd9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 99bff153d4ce4bac3f85e0ed0feeaffafa6bf3f6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19799595"
 ---
 # <a name="about-asynchronous-table-operations"></a>非同期テーブルの操作について
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **IMAPITable**インターフェイスには、非同期的に動作する 3 つのメソッドと非同期操作を制御するための 3 つの方法が含まれています。 次の表に、これらのメソッドを示します。 
   

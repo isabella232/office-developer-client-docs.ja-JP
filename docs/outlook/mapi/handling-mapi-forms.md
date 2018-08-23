@@ -17,7 +17,7 @@ ms.locfileid: "19800195"
 ---
 # <a name="handling-mapi-forms"></a>MAPI フォームの処理
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI フォームは、特定のクラスのメッセージ用のビューアーです。 さまざまなメッセージ クラスに属しているメッセージを処理するユーザーを許可するクライアントは、MAPI フォームのさまざまなを処理するために書き込む必要があります。 複数のフォームを処理するには、クライアントは、次の 3 つのオブジェクトが含まれているフォーム ビューアーと呼ばれるコンポーネントを実装します。
   
@@ -68,5 +68,5 @@ MAPI フォームは、特定のクラスのメッセージ用のビューアー
 ## <a name="see-also"></a>関連項目
 
 - [MAPI フォーム](mapi-forms.md)
-- [MAPI フォームのサーバーの開発](developing-mapi-form-servers.md)
+- [MAPI フォーム サーバーの開発](developing-mapi-form-servers.md)
 

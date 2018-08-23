@@ -29,7 +29,7 @@ ms.locfileid: "19799104"
     
 - [使用 Microsoft.Office.Interop.InfoPath.SemiTrust メンバーをされていない InfoPath 2003 と互換性](how-to-use-microsoft-office-interop-infopath-semitrust-members.md): [Microsoft.Office.Interop.InfoPath.SemiTrust](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx)名前空間に追加された新しいオブジェクト モデルのメンバーを操作する方法について説明しますOffice InfoPath 2007 と InfoPath 2010。 
     
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連情報
 
 - [作成するフォーム テンプレートを使用して InfoPath 2003 オブジェクト モデル](creating-form-templates-using-the-infopath-2003-object-model.md): 初期化およびクリーンアップ コードをについて説明、イベント ハンドラーを追加する方法をデバッグおよびスレッド処理のサポートでは、InfoPath 2003 と互換性のあるオブジェクト モデルを使用する InfoPath フォーム テンプレートを展開する方法および Microsoft XML Core Services (MSXML) で動作します。
     

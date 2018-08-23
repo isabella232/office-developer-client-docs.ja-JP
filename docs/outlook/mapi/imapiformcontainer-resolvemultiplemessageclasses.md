@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f18c2dd1-366f-48b4-b335-ebbc0651f467
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c1da292943d6e4d9625c6ce37019c630471e200b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800534"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームのコンテナー内のフォームにメッセージ クラスのグループを解決し、それらのフォームのオブジェクトの情報、フォームの配列を返します。
   
@@ -35,7 +35,7 @@ HRESULT ResolveMultipleMessageClasses(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pMsgClassArray_
   
@@ -83,7 +83,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [IMAPIFormContainer::ResolveMessageClass](imapiformcontainer-resolvemessageclass.md)
   
-[IMAPIFormContainer: IUnknown](imapiformcontaineriunknown.md)
+[IMAPIFormContainer : IUnknown](imapiformcontaineriunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

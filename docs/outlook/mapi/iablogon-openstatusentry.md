@@ -23,7 +23,7 @@ ms.locfileid: "19800347"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロバイダーの状態のオブジェクトを開きます。
   
@@ -36,7 +36,7 @@ HRESULT OpenStatusEntry(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpInterface_
   
@@ -64,7 +64,7 @@ S_OK
   
 > 呼び出しが成功し、状態オブジェクトが開かれています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 アドレス帳プロバイダーは、その状態のオブジェクトへのアクセスを許可する**OpenStatusEntry**メソッドを実装します。 すべてのアドレス帳プロバイダーは、最低限、 [IMAPIStatus::ValidateState](imapistatus-validatestate.md)メソッドがサポートする状態オブジェクトを実装する必要があります。 詳細については、[状態オブジェクトの実装](status-object-implementation.md)を参照してください。
   
@@ -72,11 +72,11 @@ S_OK
 
 
 
-[IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)
+[IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
   
 [IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md)
   
 [IMAPIStatus::ValidateState](imapistatus-validatestate.md)
   
-[IABLogon: IUnknown](iablogoniunknown.md)
+[IABLogon : IUnknown](iablogoniunknown.md)
 

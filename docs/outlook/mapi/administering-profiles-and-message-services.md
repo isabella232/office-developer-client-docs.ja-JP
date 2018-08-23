@@ -19,7 +19,7 @@ ms.locfileid: "19799647"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロファイルとメッセージのサービスの管理は、新しいプロファイルを作成する、古いプロファイルを削除して、メッセージ サービス、およびそれらに含まれているサービス ・ プロバイダーを変更することで既存のプロファイルの内容を変更することを含めることができます。 すべてのクライアントは、標準的な機能としてのプロファイルとメッセージ サービスの管理をサポートします。 一部のクライアントがある以外のユーザーは、ログオン時にいずれかの選択を許可するよりも、プロファイルを使用して操作を行います。
   
@@ -37,19 +37,19 @@ ms.locfileid: "19799647"
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-[プロファイルを作成します。](creating-a-profile.md)
+[プロファイルの作成](creating-a-profile.md)
   
 > プロファイルを作成する方法について説明します。
     
-[プロファイルをコピーします。](copying-a-profile.md)
+[プロファイルのコピー](copying-a-profile.md)
   
 > プロファイルをコピーする方法について説明します。
     
-[プロファイルを削除します。](deleting-a-profile.md)
+[プロファイルの削除](deleting-a-profile.md)
   
 > プロファイルを削除する方法について説明します。
     
-[既定のプロファイルを設定します。](setting-a-default-profile.md)
+[既定のプロファイルの設定](setting-a-default-profile.md)
   
 > 既定のプロファイルを設定する方法について説明します。
     
@@ -57,11 +57,11 @@ ms.locfileid: "19799647"
   
 > プロファイルの名前を検索する方法について説明します。
     
-[メッセージ サービスを追加します。](adding-a-message-service.md)
+[メッセージ サービスの追加](adding-a-message-service.md)
   
 > メッセージ サービスを追加する方法について説明します。
     
-[メッセージ サービスを構成します。](configuring-a-message-service.md)
+[メッセージ サービスの構成](configuring-a-message-service.md)
   
 > メッセージ サービスを構成する方法について説明します。
     
@@ -69,11 +69,11 @@ ms.locfileid: "19799647"
   
 > メッセージ サービスをプロファイルにコピーする方法について説明します。
     
-[メッセージ サービスを削除します。](deleting-a-message-service.md)
+[メッセージ サービスの削除](deleting-a-message-service.md)
   
 > メッセージ サービスを削除する方法について説明します。
     
-[追加するか、メッセージ サービスのプロバイダーを削除します。](adding-or-deleting-providers-in-a-message-service.md)
+[メッセージ サービスのプロバイダーの追加または削除](adding-or-deleting-providers-in-a-message-service.md)
   
 > メッセージ サービス内のプロバイダーを追加、削除する方法について説明します。
     

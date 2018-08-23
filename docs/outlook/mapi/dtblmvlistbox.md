@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1c22f842-d0e7-44f0-a7d5-c9c2aa6b8820
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0de5bf5d5bb4d8c5606e97bdbc6e70493609a05f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799988"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ディスプレイ テーブルから組み込まれているダイアログ ボックスに表示される複数値の一覧について説明します。
   
@@ -40,7 +40,7 @@ typedef struct _DTBLMVLISTBOX
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulFlags**
   
@@ -50,7 +50,7 @@ typedef struct _DTBLMVLISTBOX
   
 > PT_MV_TSTRING の種類の複数値を持つプロパティのプロパティ タグです。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **DTBLMVLISTBOX**構造体では、項目の読み取り専用リストを持つ標準的な複数値を持つリストについて説明します。 標準的な複数値リストを使用すると、すぐに値が表示されます。 
   

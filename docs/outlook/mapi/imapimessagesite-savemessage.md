@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 94c44952-d297-4705-9778-90373dfa5ad6
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ec85f7bdfc9d2d275bdb5ffe7ba0113ad4a35c3b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800605"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 現在のメッセージを保存するように要求します。
   
@@ -31,7 +31,7 @@ ms.locfileid: "19800605"
 HRESULT SaveMessage( void );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 なし。
   
@@ -59,10 +59,10 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)
+[IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォームのインタ フェース](mapi-form-interfaces.md)
+[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
 

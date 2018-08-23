@@ -23,7 +23,7 @@ ms.locfileid: "19800354"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージングのユーザー、配布リスト、または別のコンテナーにすることができますが、新しいエントリを作成します。
   
@@ -36,7 +36,7 @@ HRESULT CreateEntry(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -72,7 +72,7 @@ S_OK
   
 > 新しいエントリが正しく作成されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IABContainer::CreateEntry**メソッドは、インターフェイスの実装のエントリにさらにアクセスするためにポインターを返す、指定したコンテナーに特定の種類の新しいエントリを作成します。 新しいエントリを作成するには、その一時テーブルで公開されている、利用可能なテンプレートのコンテナーの一覧から選択されているテンプレートを使用します。 呼び出し元の[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出すと、 **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) のプロパティを要求しているコンテナーの一時テーブルにアクセスします。 
   
@@ -114,7 +114,7 @@ _UlCreateFlags_フラグをすべてサポートする必要があります。 �
   
 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)
   
-[PidTagCreateTemplates の標準的なプロパティ](pidtagcreatetemplates-canonical-property.md)
+[PidTagCreateTemplates 標準プロパティ Property](pidtagcreatetemplates-canonical-property.md)
   
-[これにより: IMAPIContainer](iabcontainerimapicontainer.md)
+[IABContainer : IMAPIContainer](iabcontainerimapicontainer.md)
 

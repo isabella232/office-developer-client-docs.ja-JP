@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f85bd23d-c285-4448-a946-7ab4fc0f03be
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0f65cf5d6ec486499bffbc2bc42a5b1d5d731c43
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799765"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [SMAPIFormProp](smapiformprop.md)構造体の指定された数を含んでいる既存の[SMAPIFormPropArray](smapiformproparray.md)構造体のバイト数を計算します。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19799765"
 CbMAPIFormPropArray (_c)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  __c_
   

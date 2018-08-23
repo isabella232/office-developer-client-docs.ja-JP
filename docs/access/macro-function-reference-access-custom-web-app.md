@@ -1,5 +1,5 @@
 ---
-title: マクロ関数リファレンス (カスタム web アプリケーションのアクセス)
+title: マクロ関数リファレンス (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 08/17/2017
 ms.audience: Developer
@@ -13,12 +13,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798545"
 ---
-# <a name="macro-function-reference-access-custom-web-app"></a>マクロ関数リファレンス (カスタム web アプリケーションのアクセス)
+# <a name="macro-function-reference-access-custom-web-app"></a>マクロ関数リファレンス (Access カスタム Web アプリ)
 
 ## <a name="in-this-section"></a>このセクションの内容
 
 > [!IMPORTANT]
-> [!重要] 現在 Microsoft では、SharePoint での Access Web アプリの作成や使用は推奨していません。代替策として、[Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) を使用して、Web およびモバイル デバイス用の、コーディングが不要なビジネス ソリューションを構築することを検討してください。 
+> 現在 Microsoft では、SharePoint での Access Web アプリの作成や使用は推奨していません。代替策として、[Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) を使用して、Web およびモバイル デバイス用の、コーディングが不要なビジネス ソリューションを構築することを検討してください。 
   
 - [データ ブロック (カスタム web アプリケーションのアクセス)](data-blocksaccess-custom-web-app.md)
     

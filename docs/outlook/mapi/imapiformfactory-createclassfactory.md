@@ -23,7 +23,7 @@ ms.locfileid: "19800547"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームのクラス ファクトリ オブジェクトを返します。
   
@@ -35,7 +35,7 @@ HRESULT CreateClassFactory(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _clsidForm_
   
@@ -55,7 +55,7 @@ S_OK
   
 > クラス ファクトリ オブジェクトが返されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム ビューアーは、特定のフォームのクラス ファクトリを取得する**IMAPIFormFactory::CreateClassFactory**メソッドを呼び出します。 クラス ファクトリは、特定のクラスのメッセージを処理するフォームのインスタンスを作成して、これらのインスタンスへのアクセスを制御するために使用されます。 
   
@@ -71,5 +71,5 @@ S_OK
 
 
 
-[IMAPIFormFactory: IUnknown](imapiformfactoryiunknown.md)
+[IMAPIFormFactory : IUnknown](imapiformfactoryiunknown.md)
 

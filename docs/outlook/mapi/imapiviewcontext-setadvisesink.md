@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4799084a-b5d1-48c3-a889-b2f0e9d68c30
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: abee768dd29cc807b605a7d13570a579cb271b2c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800873"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ビューアーの変更についての通知を受信するフォームの登録を管理します。 
   
@@ -33,7 +33,7 @@ LPMAPIFORMADVISESINK pmvns
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pmvns_
   
@@ -45,7 +45,7 @@ S_OK
   
 > 登録またはフォームの通知の取り消しに成功しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム オブジェクトは、いずれかの登録フォーム ビューアーでの変更点について説明する前の登録をキャンセルする**IMAPIViewContext::SetAdviseSink**メソッドを呼び出します。 _Pmvns_を NULL に設定すると、フォームは、登録をキャンセルしようとします。 有効なフォームに_pmvns_ポイントは、シンクをアドバイス、フォームの今後の通知を登録しようとします。 
   

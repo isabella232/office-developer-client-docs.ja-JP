@@ -1,5 +1,5 @@
 ---
-title: 通知を強制します。
+title: 通知の強制
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800091"
 ---
-# <a name="forcing-a-notification"></a>通知を強制します。
+# <a name="forcing-a-notification"></a>通知の強制
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 サービス プロバイダーの使用の場合、 [IMAPISupport: IUnknown](imapisupportiunknown.md)通知は、MAPI の方法が非表示のウィンドウとその対応するウィンドウ プロシージャを使用して通知を提供します。 各プロセスが通知を受信するには、MAPI は、非表示のウィンドウに特別なメッセージを投稿します。 このメッセージは、MAPIDEFS で定義されている定数**szMAPINotificationMsg**と呼ばれます。H. 
   

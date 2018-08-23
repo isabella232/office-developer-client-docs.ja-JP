@@ -17,7 +17,7 @@ ms.locfileid: "19800228"
 ---
 # <a name="display-a-progress-indicator"></a>進行状況インジケーターを表示します。
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 進行状況インジケーターを表示するには、現在のフラグの設定を取得するために[IMAPIProgress::GetFlags](imapiprogress-getflags.md)を呼び出します。 
   

@@ -29,7 +29,7 @@ ACCT_VARIANT *pVar
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _dwProp_
   
@@ -47,7 +47,7 @@ _pVar_
 |E_ACCT_NOT_FOUND  <br/> |指定したアカウントのプロパティが見つかりませんでした。  <br/> |
 |E_INVALIDARG  <br/> |プロパティの無効なタグが指定されています。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 アカウントのプロパティの値がバイナリまたは文字列型の場合、このメソッドが返されると、 [IOlkAccount::FreeMemory](iolkaccount-freememory.md)を使用して、 *pVar*を解放する必要があります。
   

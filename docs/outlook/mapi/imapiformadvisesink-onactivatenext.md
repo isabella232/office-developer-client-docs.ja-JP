@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: db621dfd-c6ad-42d2-8089-db40a63cab36
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3ce4d57ab4837f40ffbc898fde68e44cc802676f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800504"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームを表示するのには、次のメッセージのメッセージ クラスを処理できるかどうかを示します。
   
@@ -36,7 +36,7 @@ HRESULT OnActivateNext(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpszMessageClass_
   
@@ -64,7 +64,7 @@ S_FALSE
   
 > フォームでは、次のメッセージのメッセージ クラスは処理されません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォームの閲覧者は、フォルダー内の次のメッセージを表示できるかどうかを決定するフォームのために**IMAPIFormAdviseSink::OnActivateNext**メソッドを呼び出します。 次のメッセージは、任意のクラスのメッセージである可能性がありますが、通常同じクラスの関連するクラスです。 こうと、可能な場合、フォーム オブジェクトを再利用するクライアント アプリケーションを有効にするとより効率的な同じクラスの複数のメッセージを読み取って処理します。 
   
@@ -98,15 +98,15 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md)
   
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
   
 [IPersistMessage::Load](ipersistmessage-load.md)
   
-[PidTagMessageFlags の標準的なプロパティ](pidtagmessageflags-canonical-property.md)
+[PidTagMessageFlags 標準プロパティ](pidtagmessageflags-canonical-property.md)
   
-[PidTagMessageStatus の標準的なプロパティ](pidtagmessagestatus-canonical-property.md)
+[PidTagMessageStatus 標準プロパティ](pidtagmessagestatus-canonical-property.md)
   
-[IMAPIFormAdviseSink: IUnknown](imapiformadvisesinkiunknown.md)
+[IMAPIFormAdviseSink : IUnknown](imapiformadvisesinkiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

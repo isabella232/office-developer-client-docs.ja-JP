@@ -1,5 +1,5 @@
 ---
-title: アドレス帳のエントリを追加します。
+title: アドレス帳エントリの追加
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799628"
 ---
-# <a name="adding-address-book-entries"></a>アドレス帳のエントリを追加します。
+# <a name="adding-address-book-entries"></a>アドレス帳エントリの追加
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 コンテナー、 [IAddrBook::NewEntry](iaddrbook-newentry.md)のクライアントの呼び出し、またはプロバイダーに、メッセージングのユーザーまたは配布リストを追加するのには、 _lpEIDContainer_パラメーター内の移行先コンテナーのエントリの識別子を使用して[IMAPISupport::NewEntry](imapisupport-newentry.md)を呼び出します。 MAPI は、次に、一時テーブルから 1 回限りのテンプレートを使用してエントリを作成するコンテナーの[IABContainer::CreateEntry](iabcontainer-createentry.md)のメソッドを呼び出します。 1 回限りのテンプレートは、特定の種類の新しい受信者を作成するクライアントを使用します。 ほとんどのフィールドは、編集できます。 _LpEntryID_パラメーターで指定されたテンプレートでは、いずれかのプロバイダーを提供する可能性がありますか、プロバイダーが外部のテンプレートをサポートしている場合、外部プロバイダーからのテンプレートがあります。 **CreateEntry**の外部のテンプレートからの受信者を作成できるプロバイダーの実装は、常にすることはできませんプロバイダーの実装よりも複雑です。 
   

@@ -15,13 +15,13 @@ ms.locfileid: "19800159"
 ---
 # <a name="getting-started-with-the-outlook-mapi-reference"></a>Outlook MAPI 参照の概要
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Microsoft Outlook 2013 ���b�Z�[�W API (MAPI) ���t�@�����X�ł́A Microsoft Outlook 2013��g�p���� MAPI �\�����[�V������쐬������@�ɂ��Đ�����܂��B���̃Z�N�V�����ł́A Outlook 2013 MAPI ���t�@�����X�ł��܂��܂ȎQ�ƁA�T�O�I�ȃ��\�[�X�����������@�ɂ��Đ�����܂��B
   
 �V���� Outlook �̃\�����[�V������J������ꍇ�́A [API �܂��� Outlook 2013 �̃\�����[�V������J���̋Z�p��I��]([](http://msdn.microsoft.com/en-us/library/jj900714.aspx) Api �ƁA�j�[�Y�ɍł�K�����e�N�m���W����肷���Q�Ƃ��Ă��������B 
   
-## <a name="in-this-section"></a>���̃Z�N�V�����̓�e
+## <a name="in-this-section"></a>このセクションの内容
 
 - [Outlook MAPI リファレンス](outlook-mapi-reference-overview.md): Outlook 2013 の MAPI リファレンスの概要について説明します。
     

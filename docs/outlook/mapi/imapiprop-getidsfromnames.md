@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e3f501a4-a8ee-43d7-bd83-c94e7980c398
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5247ca71c88b9c0f8591a732746a17204265741c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800660"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 1 つまたは複数のプロパティ名に対応するプロパティの識別子を提供します。
   
@@ -36,7 +36,7 @@ HRESULT GetIDsFromNames(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cPropNames_
   
@@ -80,7 +80,7 @@ MAPI_W_ERRORS_RETURNED
   
 > 呼び出しは完了しましたが、1 つまたは複数のプロパティの識別子は返されませんでした。 使用できないプロパティごとに対応するプロパティの型は、 **PT_ERROR**とその id を 0 に設定されています。 この警告が返されると、その成功と呼び出しを処理します。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 [エラー処理のためのマクロを使用する](using-macros-for-error-handling.md)を参照してください。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIProp::GetIDsFromNames**メソッドは、1 つまたは複数の名前付きプロパティのプロパティの識別子を保持するプロパティ タグの配列を取得します。 **IMAPIProp::GetIDsFromNames**は、次の操作を呼び出すことができます。 
   
@@ -132,12 +132,12 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [MAPIUID](mapiuid.md)
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
 [MAPI ���O�t���v���p�e�B](mapi-named-properties.md)
   
-[エラー処理のためのマクロを使用してください。](using-macros-for-error-handling.md)
+[エラー処理のためのマクロの使用](using-macros-for-error-handling.md)
 

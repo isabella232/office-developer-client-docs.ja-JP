@@ -1,5 +1,5 @@
 ---
-title: 受信者リストを作成します。
+title: 受信者リストの作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799878"
 ---
-# <a name="creating-a-recipient-list"></a>受信者リストを作成します。
+# <a name="creating-a-recipient-list"></a>受信者リストの作成
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 受信者一覧は、各メッセージの受信者のプロパティの値の構造体の配列を含む[ADRLIST](adrlist.md)構造体など、メッセージの送信先。 受信者には、人間のユーザー、コンピューター、またはフォルダーを表すことができます。 すべてのメッセージを送信するには、名前解決プロセスを使用された 1 つ以上の受信者が必要とする、受信者のプロパティの値の配列で、 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) のプロパティが含まれていることを確認するプロセスです。 
   

@@ -19,7 +19,7 @@ ms.locfileid: "19799739"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **AttSentFor**属性は、文字列の配置のエンド ・ ツー ・ エンドのようにエンコードされます。 **AttSentFor**の形式は次のとおりです。 
   

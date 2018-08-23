@@ -5,7 +5,7 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 46976bea-c6bb-2e37-2e67-4cbccaa03aec
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: dbe81a2a27f302a38eba6f3c5045df905d8db682
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19800417"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  このトピックでは、レプリケーションの状態のコンピューターのアイドル状態のときに動作について説明します。 
   
@@ -45,7 +45,7 @@ ms.locfileid: "19800417"
   
 [MAPI �萔](mapi-constants.md)
   
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [同期状態](syncstate.md)
 

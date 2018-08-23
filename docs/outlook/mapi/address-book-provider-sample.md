@@ -1,5 +1,5 @@
 ---
-title: アドレス帳プロバイダーのサンプル
+title: アドレス帳プロバイダー サンプル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 2ccf1643-5604-4fee-92cc-3d6af00e7f98
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c32017598407760d5dbbb01ee6c28267bbffd152
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799639"
 ---
-# <a name="address-book-provider-sample"></a>アドレス帳プロバイダーのサンプル
+# <a name="address-book-provider-sample"></a>アドレス帳プロバイダー サンプル
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このサンプルには、表示名と電子メール アドレスは、バイナリのフラット ファイルからの読み取りは、1 つの読み取り専用コンテナーがサポートしています。 サンプルには、1 回限りのテンプレートおよびプロファイル ウィザードを除くすべての構成オプションがサポートされています。
   

@@ -23,7 +23,7 @@ ms.locfileid: "19800631"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オフライン オブジェクトのコールバックをキャンセルします。
   
@@ -50,7 +50,7 @@ S_OK
   
 > 呼び出しが正常になされました。 この呼び出しでは、S_OK を返す必要があります。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 *UlAdviseToken* **[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)** 前回の呼び出しから返されると、関連付けられているコールバックの登録を削除します。 *UlAdviseToken*に関連付けられている**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** オブジェクトの参照を解放する**IMAPIOfflineMgr**オブジェクトが発生します。 
   

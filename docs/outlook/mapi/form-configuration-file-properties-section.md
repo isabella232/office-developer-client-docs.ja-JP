@@ -1,5 +1,5 @@
 ---
-title: フォーム構成ファイルの [プロパティ] セクション
+title: フォーム構成ファイル [Properties] セクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800115"
 ---
-# <a name="form-configuration-file-properties-section"></a>フォーム構成ファイルの [プロパティ] セクション
+# <a name="form-configuration-file-properties-section"></a>フォーム構成ファイル [Properties] セクション
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **[プロパティ]** セクションでフォームを使用し、公開のプロパティの完全なセットを一覧表示します。作成し、そのカスタム メッセージを MAPI クライアント アプリケーションのプロパティは、検索結果フォルダーの設定、内容のテーブルのフィルター処理、列を表示するときに使用し、ためにできます。 このプロパティ リスト内の各エントリを参照して、その後 **[プロパティ**。 _文字列_**]** のセクションに示すように次のようです。 
   

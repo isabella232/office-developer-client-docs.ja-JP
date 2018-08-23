@@ -23,7 +23,7 @@ ms.locfileid: "19800774"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳へのアクセスを提供します。
   
@@ -35,7 +35,7 @@ LPADRBOOK FAR * lppAdrBook
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpInterface_
   
@@ -59,7 +59,7 @@ MAPI_W_ERRORS_RETURNED
   
 > 呼び出しが成功したが、1 つまたは複数のアドレス帳プロバイダーをロードできませんでした。 この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 サービス プロバイダーのサポートのすべてのオブジェクトの**IMAPISupport::OpenAddressBook**メソッドを実装します。 サービス プロバイダーでは、通常は、密結合のメッセージは、ストア、トランスポート プロバイダー、およびアドレス帳へのアクセスを取得する**OpenAddressBook**を呼び出します。 さまざまなメッセージング ユーザーは、表示するアドレス] ダイアログ ボックスの検索、アドレス帳コンテナーを開くことを含め、アドレス帳のタスクでは、 **IAddrBook**の戻り値のポインターを使用できます。 
   
@@ -73,7 +73,7 @@ MAPI_W_ERRORS_RETURNED
 
 
 
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
   
 [IMAPISession::OpenAddressBook](imapisession-openaddressbook.md)
   

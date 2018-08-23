@@ -23,7 +23,7 @@ ms.locfileid: "19800625"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オフライン オブジェクトに対してコールバックを受信するようにクライアントを登録します。
   
@@ -63,7 +63,7 @@ E_NOINTERFACE
   
 > *PAdviseInfo*で指定されたコールバック インターフェイスが有効ではありません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **[HrOpenOfflineObj](hropenofflineobj.md)** を使用してオフラインのオブジェクトを開くには、クライアントは、 **IMAPIOfflineMgr**をサポートしているオフラインのオブジェクトを取得します。 クライアントは、 **[IMAPIOffline::GetCapabilities](imapioffline-getcapabilities.md)** を使用して、オブジェクトがサポートするコールバックの種類を確認できます。 クライアントには、型とその他の詳細が、そのオブジェクトについては、このようなコールバックを受信するように登録するのには**IMAPIOfflineMgr::Advise**を呼び出し、コールバックを決定できます。 
   

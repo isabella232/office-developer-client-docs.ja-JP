@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: df02bdc5-903a-4ce2-9f43-5f4513ea19b3
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 64031725e06a949464e7bfabb0a2f114d325470e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800559"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [IMAPIFormContainer](imapiformcontaineriunknown.md)インターフェイスの特定のフォームのコンテナーを開きます。 
   
@@ -35,7 +35,7 @@ HRESULT OpenFormContainer(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _hfrmreg_
   
@@ -75,7 +75,7 @@ MAPI_E_NO_INTERFACE
   
 > _Lpunk_が指すオブジェクトは、必要なインターフェイスをサポートしていません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム ビューアーは、特定のフォームのコンテナーの**IMAPIFormContainer**インターフェイスを開くに**IMAPIFormMgr::OpenFormContainer**メソッドを呼び出します。 このインターフェイスにインストールを実行するフォームとフォームのコンテナーから削除するフォームを使用できます。 
   
@@ -104,7 +104,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [MAPIOpenLocalFormContainer](mapiopenlocalformcontainer.md)
   
-[IMAPIFormMgr: IUnknown](imapiformmgriunknown.md)
+[IMAPIFormMgr : IUnknown](imapiformmgriunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

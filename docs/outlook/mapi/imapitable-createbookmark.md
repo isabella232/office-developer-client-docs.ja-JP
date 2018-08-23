@@ -23,7 +23,7 @@ ms.locfileid: "19800822"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルの現在の位置にブックマークを作成します。
   
@@ -33,7 +33,7 @@ BOOKMARK FAR * lpbkPosition
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpbkPosition_
   
@@ -49,7 +49,7 @@ MAPI_E_UNABLE_TO_COMPLETE
   
 > 要求された操作を完了できませんでした。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::CreateBookmark**メソッドは、ブックマークと呼ばれる値を作成することによって、テーブルの位置をマークします。 ブックマークで識別される位置に戻るには、ブックマークを使用できます。 ブックマークの位置は、テーブル内で行の位置にあるオブジェクトに関連付けられます。 
   
@@ -75,5 +75,5 @@ MAPI_E_UNABLE_TO_COMPLETE
   
 [IMAPITable::SeekRow](imapitable-seekrow.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

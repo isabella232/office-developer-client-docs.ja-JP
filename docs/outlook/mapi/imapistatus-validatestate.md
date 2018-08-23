@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 036b9b15-86e1-4a37-8e4b-e37b2963d8fb
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3ff29ac7e7f9b7876bb678930390ca556351ecf6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19800741"
 ---
 # <a name="imapistatusvalidatestate"></a>IMAPIStatus::ValidateState
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI リソースまたはサービス プロバイダーの使用可能な外部のステータス情報を確認します。 ステータスのすべてのオブジェクトでこのメソッドがサポートされています。 
   
@@ -32,7 +32,7 @@ HRESULT ValidateState(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _ulUIParam_
   
@@ -92,7 +92,7 @@ MAPI_E_USER_CANCEL
   
 > ユーザー操作がキャンセルされました検証、通常ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 リモート トランスポート プロバイダーによってのみ、この値が返されます。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIStatus::ValidateState**メソッドは、状態オブジェクトに関連付けられているリソースの状態をチェックします。 [IMAPIStatus](imapistatusimapiprop.md)インターフェイスの状態のすべてのオブジェクトに必要な唯一の方法は、 **ValidateState**です。 このメソッドの実際の動作は実装によって異なります。 次の表では、状態オブジェクトのさまざまな種類のそれぞれの実装について説明します。 
   
@@ -192,9 +192,9 @@ SUPPRESS_UI フラグを設定すると、プロパティ シートの構成や�
 - [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md)
 - [IXPLogon::AddressTypes](ixplogon-addresstypes.md)
 - [IXPLogon::FlushQueues](ixplogon-flushqueues.md)
-- [PidTagRemoteValidateOk の標準的なプロパティ](pidtagremotevalidateok-canonical-property.md)
-- [PidTagResourceMethods の標準的なプロパティ](pidtagresourcemethods-canonical-property.md)
-- [PidTagStatusCode の標準的なプロパティ](pidtagstatuscode-canonical-property.md)
-- [PidTagStatusString の標準的なプロパティ](pidtagstatusstring-canonical-property.md)
-- [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)
+- [PidTagRemoteValidateOk 標準プロパティ](pidtagremotevalidateok-canonical-property.md)
+- [PidTagResourceMethods 標準プロパティ](pidtagresourcemethods-canonical-property.md)
+- [PidTagStatusCode 標準プロパティ](pidtagstatuscode-canonical-property.md)
+- [PidTagStatusString 標準プロパティ](pidtagstatusstring-canonical-property.md)
+- [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3890dd50-e6ca-4859-bada-f6752ab61d41
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e6963fc373f771289e3dbff3a0b41857352b4b9a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800067"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルの行のセットに含まれるすべてのテーブルの行を検証します。
   
@@ -39,13 +39,13 @@ BOOL FBadRowSet(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpRowSet_
   
 > [in][SRowSet](srowset.md)構造体を検証する設定の行を識別するへのポインター。 ポインターが NULL の場合は、構造が正しくありません。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 TRUE 
   

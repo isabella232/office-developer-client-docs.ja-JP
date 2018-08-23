@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a5bfc190-b58f-44c3-893c-8727df14ee58
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3ab069728f872d82246e8925c5ad35c07f41f02e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800855"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 指定した条件に一致する行のみに設定した行を減らすこと、テーブルにフィルターを適用します。
   
@@ -34,7 +34,7 @@ ULONG ulFlags
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpRestriction_
   
@@ -66,7 +66,7 @@ MAPI_E_TOO_COMPLEX
   
 > テーブルは、 _lpRestriction_パラメーターで指定された特定のフィルターが複雑すぎるために、操作を実行できません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::Restrict**メソッドは、制限、またはテーブル上のフィルターを設定します。 以前の制限がある場合は、それは破棄され、新しいものが適用されます。 制限を適用するのには影響しません、テーブルの基になるデータだけで、制限を満たすデータを含む行を取得できる行数を制限することによってビューを変更します。 
   
@@ -117,7 +117,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [SPropertyRestriction](spropertyrestriction.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

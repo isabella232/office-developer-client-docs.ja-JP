@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c14d1012-f3d4-47eb-8a90-3160331f94e8
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fb7a8ea39d6e7b1d7df1560658ceb67a79d39d92
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800807"
 ---
-# <a name="imapisync--iunknown"></a>IMAPISync: IUnknown
+# <a name="imapisync--iunknown"></a>IMAPISync : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 トランスポート API を使用する代わりに e メールを同期するためのメカニズムを提供します。 ストア オブジェクトには、このインターフェイスは公開されています。 このインターフェイスを使用して、 [IMAPISyncProgressCallback: IUnknown](imapisyncprogresscallbackiunknown.md)トランスポート プロバイダーより良い進行状況を提供できるし、エラー メッセージよりも、Microsoft Outlook で [送受信] ダイアログ ボックスに表示されます。
   
@@ -46,7 +46,7 @@ ms.locfileid: "19800807"
 
 
 
-[IMAPISyncProgressCallback: IUnknown](imapisyncprogresscallbackiunknown.md)
+[IMAPISyncProgressCallback : IUnknown](imapisyncprogresscallbackiunknown.md)
 
 
 [MAPI インターフェイス](mapi-interfaces.md)

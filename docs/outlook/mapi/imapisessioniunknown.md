@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5650fa2a-6e62-451c-964e-363f7bee2344
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a37d8138547c8c4e9308dbb0ebbc6750b152d795
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800715"
 ---
-# <a name="imapisession--iunknown"></a>IMAPISession: IUnknown
+# <a name="imapisession--iunknown"></a>IMAPISession : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI ログオン セッションに関連付けられているオブジェクトを管理します。
   

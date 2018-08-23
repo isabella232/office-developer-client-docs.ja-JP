@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 41b6c162-9984-43a3-b38e-44f0afae67de
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 13c151a134e4334e8ed2e75e031a6fc9dddbf941
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800452"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 コンテナーの検索条件を取得します。
   
@@ -88,7 +88,7 @@ MAPI_E_NOT_INITIALIZED
   
 > コンテナーには、検索条件は確立されたことはありません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIContainer::GetSearchCriteria**メソッドは、通常の検索結果フォルダーの検索をサポートするコンテナーの検索条件を取得します。 検索条件を作成するには、コンテナーの**IMAPIContainer::SetSearchCriteria**メソッドを呼び出すとします。 
   
@@ -118,9 +118,9 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[PidTagSearch の標準的なプロパティ](pidtagsearch-canonical-property.md)
+[PidTagSearch 標準プロパティ](pidtagsearch-canonical-property.md)
   
-[IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)
+[IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

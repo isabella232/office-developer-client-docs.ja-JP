@@ -56,7 +56,7 @@ Udf を有効にした後、ユーザー定義関数が含まれているバイ�
     
 - **AssemblyLocation**
     
-- **有効にします。**(既定では、False に設定) 
+- **Enable** (既定で False に設定されます) 
     
 - **説明**
     
@@ -66,7 +66,7 @@ Udf を有効にした後、ユーザー定義関数が含まれているバイ�
   
 `New-OfficeWebAppsExcelUserDefinedFunction -Assembly "CompanyName.Hierarchichal.MyUdfNamespace.MyUdfClassName.dll, Version=1.1.0.0, Culture=en, PublicKeyToken=e8123117d7ba9ae38" -AssemblyLocation GAC -Enable:$true -Description "My GAC Server UDFs"`
   
-新しい UDF 参照を作成した後は、すぐに参照を選択するのにはサーバー上で**iisreset**を実行します。 
+新しい UDF 参照を作成した後、サーバーで **iisreset** を実行して、その参照をすぐに選択します。 
   
 ## <a name="additional-office-online-server-preview-udf-windows-powershell-commands"></a>Office オンライン サーバー プレビュー UDF Windows PowerShell コマンドを追加
 
@@ -74,9 +74,9 @@ Udf を使用するには、次の Windows PowerShell コマンドレットを�
   
 - **Get OfficeWebAppsExcelUserDefinedFunction**(必要なパラメーターなし) の Office オンライン サーバーのプレビューに設定されている UDF の定義の一覧を返します。 
     
-- **セット OfficeWebAppsExcelUserDefinedFunction**(Identity パラメーターが必要) では、既存の UDF の定義にプロパティを設定します。 
+- **Set- OfficeWebAppsExcelUserDefinedFunction** (ID パラメーターが必要) - 既存の UDF 定義にプロパティを設定します。 
     
-- **削除 OfficeWebAppsExcelUserDefinedFunction**(Identity パラメーターが必要) では、既存の UDF の定義を削除します。 
+- **Remove-OfficeWebAppsExcelUserDefinedFunction** (ID パラメーターが必要) - 既存の UDF 定義を削除します。 
     
 ## <a name="udf-sample"></a>UDF のサンプル
 
@@ -88,6 +88,6 @@ Udf を使用するには、次の Windows PowerShell コマンドレットを�
 ## <a name="see-also"></a>関連項目
 
 - [Excel のオンライン管理の設定を構成します。](https://technet.microsoft.com/en-us/library/jj219698%28v=office.16%29.aspx)  
-- [Office オンラインのサーバーのプレビュー](https://technet.microsoft.com/en-us/library/jj219456%28v=office.16%29.aspx)
+- [Office Online Server プレビュー](https://technet.microsoft.com/en-us/library/jj219456%28v=office.16%29.aspx)
     
 

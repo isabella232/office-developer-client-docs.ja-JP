@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e537c25f-51b5-4f06-a20a-44ee540b9a1f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 730c24a179cc6aaf8dc2068199ffc206d30156b4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19800275"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 複数の Exchange プロファイルに安全に 2 つのアドレス帳**エントリ Id**を比較します。 [IAddrBook::CompareEntryIDs](iaddrbook-compareentryids.md)の交換用の関数です。
   
@@ -43,7 +43,7 @@ HRESULT HrCompareABEntryIDsWithExchangeContext(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pmsess_
   

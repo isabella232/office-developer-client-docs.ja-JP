@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: bcacfbdf-edff-4810-a985-e6d2c9271901
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fefd81a7d6cdfda24df93ec928cd3305cb8ef8be
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800375"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 一時アドレスのエントリ id を作成します。
   
@@ -38,7 +38,7 @@ HRESULT CreateOneOff(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpszName_
   
@@ -78,7 +78,7 @@ S_OK
   
 > 一時エントリ id が正常に作成されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントが 1 回限りの受信者のエントリ id を作成する**CreateOneOff**メソッドを呼び出して、現在読み込まれているアドレス帳プロバイダーのいずれかから任意のコンテナーに属していない受信者です。 一時受信者は、セッションのすべての種類のアクティブなアドレス帳のプロバイダーの 1 つによってサポートされているアドレスを持つことができます。 
   
@@ -102,7 +102,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [IMAPISupport::CreateOneOff](imapisupport-createoneoff.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

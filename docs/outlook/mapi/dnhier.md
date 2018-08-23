@@ -17,7 +17,7 @@ ms.locfileid: "19799968"
 ---
 # <a name="dnhier"></a>DNHIER
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 階層サーバーからのダウンロード、[階層の状態をダウンロード](download-hierarchy-state.md)する時に完全な階層の同期の一部の情報です。 このダウンロードのプロセスでは、Microsoft Exchange 増分変更の同期 (ICS) を使用します。 ICS の詳細については、 [ICS の評価基準](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
   
@@ -35,7 +35,7 @@ struct DNHIER
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 _ulFlags_
   
@@ -67,6 +67,6 @@ _cEntDel_
     
 ## <a name="see-also"></a>関連項目
 
-- [レプリケーション状態マシンについて](about-the-replication-state-machine.md) 
+- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md) 
 - [MAPI �萔](mapi-constants.md)
 

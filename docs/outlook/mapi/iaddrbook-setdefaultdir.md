@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d5d60150-15e4-41ff-bfb0-0c67e2abcacc
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 00d5b2bfc6b0c024f0ef12ce19fed90ef0af6721
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800379"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳の既定のコンテナーとして、指定されたコンテナーを確立します。
   
@@ -34,7 +34,7 @@ HRESULT SetDefaultDir(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -50,7 +50,7 @@ S_OK
   
 > 既定のアドレス帳コンテナーは正常に設定されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントとサービス ・ プロバイダーは、新しい既定のアドレス帳コンテナーを確立するために**SetDefaultDir**メソッドを呼び出します。 既定のコンテナーは、ユーザーに表示されるアドレス帳を最初に開いたときに、アドレス帳に表示されるコンテナーです。 **SetDefaultDir**は、プロファイル内のエントリとして、既定のコンテナーを保存します。 コンテナーは、同じセッションで、または別のセッションでは、 **SetDefaultDir**を別の呼び出しが行われるか、コンテナーが削除されるまで、既定値として残ります。 
   
@@ -77,7 +77,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [MAPILogonEx](mapilogonex.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

@@ -15,7 +15,7 @@ ms.locfileid: "19800246"
 ---
 # <a name="programmatically-set-the-resolution-order-for-address-lists"></a>アドレス一覧の解決の順序をプログラムで設定します。
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックには、c++ プログラムを使用してアドレス一覧の受信者に電子メールでメッセージおよび会議出席依頼に出席者は、解決の順序を設定するコード サンプルが含まれています。
   
@@ -266,5 +266,5 @@ STDMETHODIMP CopySBinary(
 
 ## <a name="see-also"></a>関連項目
 
-- [Outlook でアドレス一覧の解決の順序を設定する方法](about-setting-the-resolution-order-for-address-lists-in-outlook.md)
+- [Outlook でのアドレス一覧の解決順序の設定について](about-setting-the-resolution-order-for-address-lists-in-outlook.md)
 

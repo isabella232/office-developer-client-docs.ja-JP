@@ -17,13 +17,13 @@ ms.locfileid: "19800126"
 ---
 # <a name="form-states"></a>フォームの状態
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム オブジェクトは、それらにどのようなメソッドが呼び出された、およびそれらのメソッドを実行する際にエラーが発生しているかどうかによって、5 つの異なる状態のいずれかで指定できます。 状態は次のトピックで説明します。
   
-- [初期化されていない状態](uninitialized-state.md)
+- [Uninitialized 状態](uninitialized-state.md)
     
-- [通常の状態](normal-state.md)
+- [Normal 状態](normal-state.md)
     
 - [NoScribble 状態](noscribble-state.md)
     
@@ -40,5 +40,5 @@ ms.locfileid: "19800126"
   
 ## <a name="see-also"></a>関連項目
 
-- [MAPI フォームのサーバーの開発](developing-mapi-form-servers.md)
+- [MAPI フォーム サーバーの開発](developing-mapi-form-servers.md)
 

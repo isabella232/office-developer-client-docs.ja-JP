@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 93e38f6c-4b67-4f2d-bc94-631efec86852
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7d6ccd64fea0af30e81a2db0bcb9630062b4b64d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800682"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI セッションを終了します。
   
@@ -35,7 +35,7 @@ HRESULT Logoff(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -63,7 +63,7 @@ S_OK
   
 > ログオフ操作が正常に完了しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPISession::Logoff**メソッドでは、MAPI セッションを終了します。 **ログオフ**が返されるときは[リ ス](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx)を除くメソッド呼び出すことができます。 
   
@@ -93,5 +93,5 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI セッションを終了](ending-a-mapi-session.md)
+[MAPI セッションの終了](ending-a-mapi-session.md)
 

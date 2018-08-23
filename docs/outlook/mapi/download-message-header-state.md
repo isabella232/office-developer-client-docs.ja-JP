@@ -1,11 +1,11 @@
 ---
-title: ダウンロード メッセージ ヘッダーの状態
+title: メッセージ ヘッダー ダウンロード状態
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 03f69592-a5ea-e30b-9674-9cfa895163d8
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7407b6606634ecc0151f582e4481ecbff5e7dc57
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799951"
 ---
-# <a name="download-message-header-state"></a>ダウンロード メッセージ ヘッダーの状態
+# <a name="download-message-header-state"></a>メッセージ ヘッダー ダウンロード状態
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  このトピックでは、ダウンロード メッセージ ヘッダー マシンの状態、レプリケーション状態中の動作について説明します。 
   
@@ -47,7 +47,7 @@ ms.locfileid: "19799951"
   
 [MAPI �萔](mapi-constants.md)
   
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [同期状態](syncstate.md)
 

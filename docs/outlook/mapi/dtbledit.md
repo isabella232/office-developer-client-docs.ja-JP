@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ec3566a0-75ad-466d-a61e-f7d61ccb946d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d0418ac2ec5d01d58c63e4ad48a1066cc386e946
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799980"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ディスプレイ テーブルから作成されたダイアログ ボックスで使用するエディット コントロールについて説明します。
   
@@ -43,7 +43,7 @@ typedef struct _DTBLEDIT
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulbLpszCharsAllowed**
   
@@ -73,7 +73,7 @@ MAPI_UNICODE
   
 > 型 PT_TSTRING のプロパティのプロパティ タグです。 **UlPropTag**メンバーは、文字列のプロパティがデータを表示および編集コントロールでは編集を識別します。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **DTBLEDIT**構造体は、エディット コントロールに英数字の情報を含むダイアログ ボックス上の領域を説明します。 ほぼすべてのダイアログ ボックスには、少なくとも 1 つのエディット コントロールがあります。 エディット コントロールは、ユーザーが変更可能または読み取り専用にできます。 
   
@@ -89,7 +89,7 @@ MAPI_UNICODE
   
 [IMAPIProp::GetProps](imapiprop-getprops.md)
   
-[PidTagControlType の標準的なプロパティ](pidtagcontroltype-canonical-property.md)
+[PidTagControlType 標準プロパティ](pidtagcontroltype-canonical-property.md)
 
 
 [MAPI の構造](mapi-structures.md)

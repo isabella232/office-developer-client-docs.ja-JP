@@ -1,5 +1,5 @@
 ---
-title: フォームを使用して新しいメッセージを作成します。
+title: フォームを使用した新しいメッセージの作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799802"
 ---
-# <a name="composing-a-new-message-by-using-a-form"></a>フォームを使用して新しいメッセージを作成します。
+# <a name="composing-a-new-message-by-using-a-form"></a>フォームを使用した新しいメッセージの作成
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームを使用して、新しいメッセージを作成するのには、まず、新しいカスタム メッセージ オブジェクトを作成します。
   

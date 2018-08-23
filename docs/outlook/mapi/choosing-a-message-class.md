@@ -1,5 +1,5 @@
 ---
-title: メッセージ クラスを選択します。
+title: メッセージ クラスの選択
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799816"
 ---
-# <a name="choosing-a-message-class"></a>メッセージ クラスを選択します。
+# <a name="choosing-a-message-class"></a>メッセージ クラスの選択
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [MAPI メッセージ クラス](mapi-message-classes.md)で説明したとおり、メッセージ クラスは、カスタム メッセージのさらに、拡張して、フォーム サーバー自体の間での型の間の関係を確立するために重要です。 幸いなことに、メッセージ クラスの文字列を選択することは非常に簡単です。 メッセージ クラスのメッセージ クラスの文字列は、任意の文字列ですが、次の表記規則を使用する必要があります。
   
@@ -55,5 +55,5 @@ ms.locfileid: "19799816"
 
 
 
-[MAPI フォームのサーバーの開発](developing-mapi-form-servers.md)
+[MAPI フォーム サーバーの開発](developing-mapi-form-servers.md)
 

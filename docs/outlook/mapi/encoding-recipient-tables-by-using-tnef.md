@@ -1,5 +1,5 @@
 ---
-title: TNEF を使用して受信者テーブルのエンコーディング
+title: TNEF を使用した受信者テーブルのエンコード
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800014"
 ---
-# <a name="encoding-recipient-tables-by-using-tnef"></a>TNEF を使用して受信者テーブルのエンコーディング
+# <a name="encoding-recipient-tables-by-using-tnef"></a>TNEF を使用した受信者テーブルのエンコード
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 TNEF ストリームに、受信者テーブルのエンコーディングは、多くのメッセージング システムの受信者の一覧を直接サポートするために必要はほとんどありません。 一般に、受信者のプロパティは、メッセージのヘッダーで送信されます。 受信者テーブルを含めることが必要な場合は、TNEF は、通常の処理の一部として受信者テーブルをエンコードできます。 これは、は、TNEF の処理の初期段階で行われます。 トランスポート プロバイダーは、信頼のリストで指定されている**PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) プロパティを使用して、 [ITnef::AddProps](itnef-addprops.md)メソッドを呼び出すことによって、メッセージの受信者テーブルを含めることができます。 TNEF は、メッセージの受信者テーブルを取得、列セットに対してクエリを実行し、TNEF ストリームに、テーブルのすべての行を処理します。
   

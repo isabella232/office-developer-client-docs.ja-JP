@@ -1,5 +1,5 @@
 ---
-title: フォーム テンプレートの InfoPath 開発者用リファレンス
+title: InfoPath フォーム テンプレートの開発者向けリファレンス
 ms.author: mroberts
 author: mroberts
 manager: soliver
@@ -19,7 +19,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799127"
 ---
-# <a name="infopath-developer-reference-for-form-templates"></a>フォーム テンプレートの InfoPath 開発者用リファレンス
+# <a name="infopath-developer-reference-for-form-templates"></a>InfoPath フォーム テンプレートの開発者向けリファレンス
 
 InfoPath 2013 フォーム テンプレートの開発者向けリファレンスへようこそ。このドキュメントには、Visual Basic または Visual C# で記述されたビジネス ロジックを含む InfoPath フォーム テンプレートの構築に役立つ、概要、プログラミング タスク、およびクラス ライブラリ リファレンス情報が記載されています。
   
@@ -35,6 +35,6 @@ InfoPath 2013 フォーム テンプレートの開発者向けリファレン�
   
 [Microsoft アクセシビリティ](http://www.microsoft.com/ENABLE/)
   
-[Microsoft �v���C�o�V�[�Ɋւ��鐺��](http://privacy.microsoft.com/en-us/default.mspx)
+[Microsoft プライバシーに関する声明](http://privacy.microsoft.com/en-us/default.mspx)
   
 

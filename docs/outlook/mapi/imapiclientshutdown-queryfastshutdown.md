@@ -23,7 +23,7 @@ ms.locfileid: "19800463"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クエリ、MAPI サブシステムの高速シャット ダウンをサポートして読み込まれている MAPI プロバイダーによって提供されます。
   
@@ -41,7 +41,7 @@ MAPI_E_NO_SUPPORT
   
 > MAPI プロバイダーは、高速シャット ダウンを実行するのには MAPI クライアントをサポートしていません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI サブシステムが高速シャット ダウンを実行するのには MAPI クライアントをサポートしているかどうかは、ユーザーの Windows レジストリ設定または高速シャット ダウンのために MAPI クライアントの既定の動作によって異なります。 高速シャット ダウンをサポートするために読み込まれている MAPI プロバイダーの機能によっても異なります。 詳細については、[高速シャット ダウンのユーザー オプション](fast-shutdown-user-options.md)を参照してください。
   
@@ -49,7 +49,7 @@ MAPI サブシステムが高速シャット ダウンを実行するのには M
 
 
 
-[IMAPIClientShutdown: IUnknown](imapiclientshutdowniunknown.md)
+[IMAPIClientShutdown : IUnknown](imapiclientshutdowniunknown.md)
 
 
 [Mapi クライアントのシャット ダウン](client-shutdown-in-mapi.md)

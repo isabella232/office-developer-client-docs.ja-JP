@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4dd58b0b-dc39-4782-a9ec-05e353c90927
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0d8d1b8509f699b20f6e436d8af2c1d0d97cf4ba
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800048"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 2 つの MAPI 名前付きプロパティが同じかどうかを判断します。 
   
@@ -40,7 +40,7 @@ BOOL FEqualNames(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpName1_
   
@@ -50,7 +50,7 @@ BOOL FEqualNames(
   
 > [in]2 番目の名前付きプロパティを記述する**MAPINAMEID**構造体へのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 TRUE 
   
@@ -60,7 +60,7 @@ FALSE
   
 > 2 つのプロパティ名が等しくないです。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **FEqualNames**関数は、 **MAPINAMEID**構造体は[GUID](guid.md)が含まれていて、複数の方法でプロパティ名自体を表すことができますので便利です。 つまり、バイナリの簡単な方法で 2 つの構造体を比較することはできません。 
   

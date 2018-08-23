@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: cffc05a0-95e4-4b9f-bf8f-c4272a75afa8
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0789b566eb814fe984ae78670d22ad2937b0c3a5
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799876"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 通貨の値を表す 64 ビットの符号付き整数が含まれています。 
   
@@ -40,7 +40,7 @@ typedef struct tagCY
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **Lo**
   
@@ -50,7 +50,7 @@ typedef struct tagCY
   
 > 通貨型の値の上位の 32 ビットです。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **通貨**の構造は、小数点の右側に 4 桁の 10 進数の位取り整数表現です。 327500 の格納された値は 32.7500 の通貨値を表すものとして解釈されます。 
   

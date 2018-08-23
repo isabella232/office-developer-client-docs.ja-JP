@@ -1,5 +1,5 @@
 ---
-title: フォームのインタ フェースを宣言します。
+title: フォーム インターフェイスの宣言
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799880"
 ---
-# <a name="declaring-form-interfaces"></a>フォームのインタ フェースを宣言します。
+# <a name="declaring-form-interfaces"></a>フォーム インターフェイスの宣言
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI フォームのインターフェイスの実装の宣言は、マクロを使用して、MAPI_ _interface__METHOD、Mapiform.h ヘッダー ファイルで定義されているフォームのインタ フェースの_インタ フェース_が簡略化できます。 これらのマクロを使用する必要はありませんが、宣言は、Mapiform.h ヘッダー ファイル内の宣言に準拠している特定の注意を行う必要がない場合は。 たとえば、次のように、フォームのサーバーのフォーム オブジェクトのクラスを宣言できます。 
   

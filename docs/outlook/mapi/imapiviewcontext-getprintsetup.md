@@ -23,7 +23,7 @@ ms.locfileid: "19800880"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 現在、印刷情報を取得します。
   
@@ -54,7 +54,7 @@ S_OK
   
 > 印刷の情報が正常に取得しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム オブジェクトは、現在のメッセージを印刷する前に、プリンターのセットアップに関する情報を取得するために**IMAPIViewContext::GetPrintSetup**メソッドを呼び出します。 
   
@@ -74,5 +74,5 @@ S_OK
 
 [FORMPRINTSETUP](formprintsetup.md)
   
-[IMAPIViewContext: IUnknown](imapiviewcontextiunknown.md)
+[IMAPIViewContext : IUnknown](imapiviewcontextiunknown.md)
 

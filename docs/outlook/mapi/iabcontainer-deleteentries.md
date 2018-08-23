@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 70a24811-0c41-4b44-8c63-7ef807bc9051
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c744407790fecde6b6d89dff669ea4db07ce7701
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800330"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 一般ユーザー、配布リスト、またはその他のコンテナーをメッセージング、1 つまたは複数のエントリを削除します。
   
@@ -34,7 +34,7 @@ HRESULT DeleteEntries(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpEntries_
   
@@ -66,7 +66,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[これにより: IMAPIContainer](iabcontainerimapicontainer.md)
+[IABContainer : IMAPIContainer](iabcontainerimapicontainer.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

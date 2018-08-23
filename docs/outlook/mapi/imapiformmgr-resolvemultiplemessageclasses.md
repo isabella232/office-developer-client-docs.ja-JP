@@ -23,7 +23,7 @@ ms.locfileid: "19800558"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームのコンテナー内でユーザーがフォームにメッセージ クラスのグループを解決し、それらのフォームのオブジェクトの情報、フォームの配列を返します。
   
@@ -36,7 +36,7 @@ HRESULT ResolveMultipleMessageClasses(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pMsgClasses_
   
@@ -86,5 +86,5 @@ S_OK
 
 [IMAPIFormMgr::ResolveMessageClass](imapiformmgr-resolvemessageclass.md)
   
-[IMAPIFormMgr: IUnknown](imapiformmgriunknown.md)
+[IMAPIFormMgr : IUnknown](imapiformmgriunknown.md)
 

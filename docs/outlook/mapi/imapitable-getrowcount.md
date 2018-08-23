@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 44a12c92-7462-4acf-9520-5d4c2d7f1d47
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a591a49c1cb0ec936d09d59b4632d15e4842dd2a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800845"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブル内の行の合計数を返します。 
   
@@ -62,7 +62,7 @@ MAPI_W_APPROX_COUNT
   
 > 呼び出しが成功したが、行数の正確な判断できませんでした可能性のあるメモリの制約があるために、おおよその行数が返されました。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 [エラー処理のためのマクロを使用する](using-macros-for-error-handling.md)を参照してください。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::GetRowCount**メソッドは、テーブル内の行の合計数を取得します。 
   
@@ -98,7 +98,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IMAPITable::WaitForCompletion](imapitable-waitforcompletion.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

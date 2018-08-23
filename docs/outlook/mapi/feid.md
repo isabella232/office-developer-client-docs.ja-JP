@@ -19,7 +19,7 @@ ms.locfileid: "19800054"
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォルダーの識別子です。 エントリ id とその他の関連する情報が含まれています。
   
@@ -35,7 +35,7 @@ struct FEID
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  _abFlags_
   
@@ -57,7 +57,7 @@ struct FEID
 
 
 
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [MAPI �萔](mapi-constants.md)
   
@@ -65,5 +65,5 @@ struct FEID
   
 [UPFLD](upfld.md)
   
-[同期](sync.md)
+[SYNC](sync.md)
 

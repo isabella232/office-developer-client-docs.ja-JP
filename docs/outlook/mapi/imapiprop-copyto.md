@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e56042e9-5bb7-4a99-b6de-1546d4ca07f0
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: aa2869b1e3495bfb8a431e79a55d11a1ee1c5ca6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800649"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 明確に除外されたプロパティ以外のすべてのプロパティを移動またはコピーします。
   
@@ -41,7 +41,7 @@ HRESULT CopyTo(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ciidExclude_
   
@@ -139,7 +139,7 @@ MAPI_E_UNEXPECTED_TYPE
   
 > プロパティの型は、呼び出し元の型ではありません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 既定では、 **IMAPIProp::CopyTo**メソッドは、コピーまたは、すべての現在のオブジェクトのプロパティをコピー先のオブジェクトに移動します。 **CopyTo**は、オブジェクトをコピーまたはすべてまたはほとんどのプロパティをそのままの状態を正確に移動する必要があるときに使用されます。 
   
@@ -210,9 +210,9 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IMAPIProp::GetLastError](imapiprop-getlasterror.md)
   
-[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)
+[IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
   
-[IMAPIProgress: IUnknown](imapiprogressiunknown.md)
+[IMAPIProgress : IUnknown](imapiprogressiunknown.md)
   
 [IMAPISupport::DoProgressDialog](imapisupport-doprogressdialog.md)
   
@@ -220,23 +220,23 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[PidTagContainerContents の標準的なプロパティ](pidtagcontainercontents-canonical-property.md)
+[PidTagContainerContents 標準プロパティ](pidtagcontainercontents-canonical-property.md)
   
-[PidTagContainerHierarchy の標準的なプロパティ](pidtagcontainerhierarchy-canonical-property.md)
+[PidTagContainerHierarchy 標準プロパティ](pidtagcontainerhierarchy-canonical-property.md)
   
-[PidTagMessageAttachments の標準的なプロパティ](pidtagmessageattachments-canonical-property.md)
+[PidTagMessageAttachments 標準プロパティ](pidtagmessageattachments-canonical-property.md)
   
-[PidTagMessageDeliveryTime の標準的なプロパティ](pidtagmessagedeliverytime-canonical-property.md)
+[PidTagMessageDeliveryTime 標準プロパティ](pidtagmessagedeliverytime-canonical-property.md)
   
-[PidTagMessageRecipients の標準的なプロパティ](pidtagmessagerecipients-canonical-property.md)
+[PidTagMessageRecipients 標準プロパティ](pidtagmessagerecipients-canonical-property.md)
   
-[PidTagObjectType の標準的なプロパティ](pidtagobjecttype-canonical-property.md)
+[PidTagObjectType 標準プロパティ](pidtagobjecttype-canonical-property.md)
   
 [SPropProblemArray](spropproblemarray.md)
   
 [SPropTagArray](sproptagarray.md)
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

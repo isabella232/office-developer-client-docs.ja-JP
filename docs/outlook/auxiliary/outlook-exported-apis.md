@@ -1,5 +1,5 @@
 ---
-title: Outlook は、Api をエクスポートします。
+title: Outlook でエクスポートされている API
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799547"
 ---
-# <a name="outlook-exported-apis"></a>Outlook は、Api をエクスポートします。
+# <a name="outlook-exported-apis"></a>Outlook でエクスポートされている API
 
 ここでは、Outlook にエクスポートする Api のリファレンス コンテンツを提供します。
 
@@ -24,7 +24,7 @@ ms.locfileid: "19799547"
     
 - [Functions](functions-outlook-exported-apis.md)
     
-- [インタ フェース](interfaces-outlook-exported-apis.md)
+- [インターフェイス](interfaces-outlook-exported-apis.md)
     
 - [使用可能なイベントの dispid (Outlook エクスポート Api)](available-events-and-their-dispids-outlook-exported-apis.md)
     

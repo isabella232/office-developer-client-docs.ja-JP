@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a7823c16-efda-45c2-b931-3e1fbc823b0b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: aa72085c4e50fcef1f2d3da81e5409af3d55d89b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800376"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 宛先リスト内の受信者にエントリの識別子を割り当て、名前解決を実行します。
   
@@ -36,7 +36,7 @@ HRESULT ResolveName(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -84,7 +84,7 @@ MAPI_E_NOT_FOUND
   
 > _LpAdrList_パラメーターで 1 つ以上の受信者を解決できません。 通常、MAPI_DIALOG フラグを設定すると、ダイアログ ボックスの表示を禁止する場合にこの値が返されます。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントとサービス ・ プロバイダーは、名前解決プロセスを開始する**ResolveName**メソッドを呼び出します。 未解決のエントリは、エントリがないまだエントリの識別子またはプロパティの**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) です。
   
@@ -135,7 +135,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IAddrBook::Address](iaddrbook-address.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

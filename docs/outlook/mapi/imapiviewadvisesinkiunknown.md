@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1231391d-803a-4b41-b252-4d986f99361a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: f16585a96164835784bfa1af3752bd652daf76e8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800860"
 ---
-# <a name="imapiviewadvisesink--iunknown"></a>IMAPIViewAdviseSink: IUnknown
+# <a name="imapiviewadvisesink--iunknown"></a>IMAPIViewAdviseSink : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームからの通知を受信します。 
   

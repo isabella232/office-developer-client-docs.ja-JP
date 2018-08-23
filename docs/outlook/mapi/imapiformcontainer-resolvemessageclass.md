@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ce13f11-5787-4ea5-a84f-b1e3824529ee
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 713a177d5ceddf5fd4d97a0e35d87b2250748faf
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800529"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームのコンテナー内のフォームにメッセージ クラスを解決し、そのフォームのフォームについてはオブジェクトを取得します。
   
@@ -35,7 +35,7 @@ HRESULT ResolveMessageClass(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _szMessageClass_
   
@@ -63,7 +63,7 @@ MAPI_E_NOT_FOUND
   
 > _SzMessageClass_パラメーターで渡されたメッセージ クラスでは、フォームのコンテナー内の任意のフォームのメッセージ クラスが一致しません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアント アプリケーションは、フォームのコンテナー内のフォームにメッセージ クラスを解決するのには**IMAPIFormContainer::ResolveMessageClass**メソッドを呼び出します。 _Ppforminfo_パラメーターに返されるフォームの情報オブジェクトを特定のメッセージ クラスのフォームのプロパティへのアクセスをさらに提供します。 
   
@@ -85,11 +85,11 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IMAPIFormInfo: IMAPIProp](imapiforminfoimapiprop.md)
+[IMAPIFormInfo : IMAPIProp](imapiforminfoimapiprop.md)
   
 [IMAPIFormMgr::CreateForm](imapiformmgr-createform.md)
   
 [IMAPIFormMgr::PrepareForm](imapiformmgr-prepareform.md)
   
-[IMAPIFormContainer: IUnknown](imapiformcontaineriunknown.md)
+[IMAPIFormContainer : IUnknown](imapiformcontaineriunknown.md)
 

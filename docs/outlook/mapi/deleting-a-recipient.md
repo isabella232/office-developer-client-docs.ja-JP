@@ -1,5 +1,5 @@
 ---
-title: 受信者を削除します。
+title: 受信者の削除
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799891"
 ---
-# <a name="deleting-a-recipient"></a>受信者を削除します。
+# <a name="deleting-a-recipient"></a>受信者の削除
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  **変更可能なコンテナーから 1 つまたは複数のアドレス帳のエントリを削除するのには**
   

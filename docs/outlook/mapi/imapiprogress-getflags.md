@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7af74fcc-c0df-4f58-a2d4-0a79c96b2e81
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8964ba8c4341bec431bdbc1690d639b345df8b1d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800634"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 返します。 操作の進行状況に関する情報は、計算対象のレベルに進行中のオブジェクトから設定にフラグを設定します。
   
@@ -33,7 +33,7 @@ HRESULT GetFlags(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulFlags_
   
@@ -49,7 +49,7 @@ S_OK
   
 > フラグの値が正常に返されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI 最上位のオブジェクトを区別するためにサービス プロバイダーを有効にし、MAPI_TOP_LEVEL フラグを使用してサブオブジェクト操作ですべてのオブジェクトが含まれるように実装を使用できます同じ[IMAPIProgress](imapiprogressiunknown.md)の進行状況を表示します。 インジケーターの表示をスムーズに進むと 1 つの正の方向に発生します。 MAPI_TOP_LEVEL フラグが設定されているかどうかは、サービス プロバイダーが実行中のオブジェクトへの以降の呼び出しで他のパラメーターを設定する方法を決定します。 
   
@@ -77,12 +77,12 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [IMAPIProgress::SetLimits](imapiprogress-setlimits.md)
   
-[IMAPIProgress: IUnknown](imapiprogressiunknown.md)
+[IMAPIProgress : IUnknown](imapiprogressiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[進行状況インジケーターを表示します。](how-to-display-a-progress-indicator.md)
+[進行状況インジケーターを表示する](how-to-display-a-progress-indicator.md)
   
-[進行状況のインジケーターを実装します。](implementing-a-progress-indicator.md)
+[進行状況インジケーターの実装](implementing-a-progress-indicator.md)
 

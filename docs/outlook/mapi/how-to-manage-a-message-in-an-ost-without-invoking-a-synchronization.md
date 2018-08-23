@@ -15,7 +15,7 @@ ms.locfileid: "19800248"
 ---
 # <a name="manage-messages-in-ost-without-invoking-a-synchronization-in-cached-exchange-mode"></a>OST 内のメッセージを Exchange キャッシュ モードで同期を呼び出すことがなく管理します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックには、c++ を使用する方法を示すコード サンプルが含まれています`IID_IMessageRaw`メッセージ全体のダウンロードを強制することがなく、オフライン フォルダー ファイル (OST) でメッセージを管理している**[IMessage](imessageimapiprop.md)** インターフェイスを取得するのには**[IMsgStore::OpenEntry](imsgstore-openentry.md)** で、クライアントExchange キャッシュ モードでは。 
   
@@ -62,6 +62,6 @@ HRESULT HrOpenRawMessage (
 ## <a name="see-also"></a>関連項目
 
 - [MAPI の追加について](about-mapi-additions.md) 
-- [Exchange キャッシュ モードでは、リモート サーバーと Outlook のストアのアクセス](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)
-- [ストアがリモート サーバーと Outlook の Exchange キャッシュ モードでは、開いています。](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
+- [Outlook が Exchange キャッシュ モードの場合にリモート サーバーでストアにアクセスする](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)
+- [Outlook が Exchange キャッシュ モードの場合にリモート サーバーでストアを開く](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
 

@@ -21,7 +21,7 @@ ms.locfileid: "19800407"
 # <a name="iconvertersessionmapitomimestm"></a>IConverterSession::MAPIToMIMEStm
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI メッセージを MIME ストリームに変換します。
   
@@ -33,7 +33,7 @@ HRESULT IConverterSession::MAPIToMIMEStm(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pmsg_
   
@@ -93,7 +93,7 @@ E_INVALIDARG
   
 > 無効なフラグが渡された、または*pmsg*または*pstm*では NULL です。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 標準の Outlook メッセージの種類に対してのみサポートされています。
   
@@ -110,7 +110,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IConverterSession: IUnknown](iconvertersessioniunknown.md)
+[IConverterSession : IUnknown](iconvertersessioniunknown.md)
   
 [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)
   
@@ -126,7 +126,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IConverterSession::SetTextWrapping](iconvertersession-settextwrapping.md)
   
-[PidTagMessageEditorFormat の標準的なプロパティ](pidtagmessageeditorformat-canonical-property.md)
+[PidTagMessageEditorFormat 標準プロパティ](pidtagmessageeditorformat-canonical-property.md)
   
 [PidLidUseTnef ���K���̃v���p�e�B](pidlidusetnef-canonical-property.md)
 

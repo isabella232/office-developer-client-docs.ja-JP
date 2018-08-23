@@ -1,5 +1,5 @@
 ---
-title: 自動構成の新しいドメインの登録について
+title: 自動構成のための新しいドメインの登録について
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799301"
 ---
-# <a name="about-registering-a-new-domain-for-automatic-configuration"></a>自動構成の新しいドメインの登録について
+# <a name="about-registering-a-new-domain-for-automatic-configuration"></a>自動構成のための新しいドメインの登録について
 
 Outlook には、新しいメッセージ サービス用のドメインを自動構成を指定し、アカウントを構成するのにはメッセージ サービス プロバイダーを使用する方法が用意されています。
   
@@ -24,7 +24,7 @@ Outlook には、新しいメッセージ サービス用のドメインを自�
   
 キーには、`<domain name>`は、ドメインを自動的に構成します。 このドメイン名は、ワイルドカードをサポートしています\*開始時のみです。 次の表は、このキーがサポートされている値を示します。 
   
-| 値 | 種類 | 説明 |
+| 値 | 型 | 説明 |
 |:-----|:-----|:-----|
 |フレンドリ名  <br/> |REG_SZ  <br/> |自動構成中にユーザーに表示されているドメイン名です。  <br/> |
 |サービス名  <br/> |REG_SZ  <br/> |メッセージ サービスは、このドメインをサポートしている mapisvc.inf に登録します。  <br/> |
@@ -39,5 +39,5 @@ Outlook が[IMsgServiceAdmin::CreateMsgService](http://msdn.microsoft.com/librar
   
 ## <a name="see-also"></a>関連項目
 
-- [MapiSvc.inf ファイルの形式](http://msdn.microsoft.com/library/b48eda17-83a8-4dc4-85c8-4ca827d13d25%28Office.15%29.aspx)
+- [MapiSvc.inf のファイル形式](http://msdn.microsoft.com/library/b48eda17-83a8-4dc4-85c8-4ca827d13d25%28Office.15%29.aspx)
 

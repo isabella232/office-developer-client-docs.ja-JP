@@ -23,7 +23,7 @@ ms.locfileid: "19800802"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI の標準的な形式のエントリ id をメッセージ ・ ストアの内部のエントリの識別子に変換します。
   
@@ -36,7 +36,7 @@ LPENTRYID FAR * lppWrappedEntry
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbOrigEntry_
   
@@ -60,7 +60,7 @@ S_OK
   
 > エントリ id が正常に折り返されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 サービス プロバイダーのサポートのすべてのオブジェクトの**IMAPISupport::WrapStoreEntryID**メソッドを実装します。 サービス プロバイダーは、ストアの内部のエントリの識別子をラップするメッセージ ・ ストアのエントリ識別子を生成する MAPI を使用して**WrapStoreEntryID**を使用します。 
   

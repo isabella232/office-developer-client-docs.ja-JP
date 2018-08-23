@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ca8fbac6-b6f1-46ab-90a1-fc16f0d5824c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2c5d4ec8381d6614cc2bc92fb0a762b068a97a81
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800132"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [ADRLIST](adrlist.md)構造体を破棄し、すべてのアレイ メンバーと構造体に割り当てられたメモリを含む、関連付けられているメモリを解放します。 
   
@@ -39,7 +39,7 @@ void FreePadrlist(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _padrlist_
   

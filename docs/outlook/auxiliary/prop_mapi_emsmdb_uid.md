@@ -27,9 +27,9 @@ Exchange アカウントの UID を含む[ACCT_BIN](acct_bin.md)構造体を表�
 |識別子:  <br/> |0x2009  <br/> |
 |プロパティの種類:  <br/> |PT_BINARY  <br/> |
 |プロパティ タグ。  <br/> |0x20090102  <br/> |
-|アクセス:  <br/> |値の取得のみ可能です。  <br/> |
+|アクセス:  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [IOlkAccount::GetProp](iolkaccount-getprop.md)を使用してこのプロパティを取得します。
   
@@ -39,6 +39,6 @@ Exchange アカウントの UID を含む[ACCT_BIN](acct_bin.md)構造体を表�
 
 - [アカウント管理 API について](about-the-account-management-api.md) 
 - [定数 (アカウント管理 API)](constants-account-management-api.md)
-- [複数の Exchange アカウントを使用します。](http://msdn.microsoft.com/library/4e1804bf-4c50-4942-a7ab-9a8caf1be7e5%28Office.15%29.aspx)  
+- [複数の Exchange アカウントの使用](http://msdn.microsoft.com/library/4e1804bf-4c50-4942-a7ab-9a8caf1be7e5%28Office.15%29.aspx)  
 - [PidTagExchangeProfileSectionId ���K���̃v���p�e�B](http://msdn.microsoft.com/library/4ad2f417-be8f-4fc8-9321-82097289074b%28Office.15%29.aspx)
 

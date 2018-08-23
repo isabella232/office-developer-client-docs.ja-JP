@@ -31,7 +31,7 @@ ms.locfileid: "19799488"
 |:-----|:-----|
 |[Notify](iolkaccountnotify-notify.md) <br/> |指定したアカウントへの変更がクライアントに通知します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このインターフェイスは、通知を設定するときに、 [IOlkAccountManager::Advise](iolkaccountmanager-advise.md)に渡されます。 
   

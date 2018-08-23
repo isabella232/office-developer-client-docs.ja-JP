@@ -23,7 +23,7 @@ ms.locfileid: "19800757"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI メモリの割り当てと割り当て解除関数 ([MAPIAllocateBuffer](mapiallocatebuffer.md)、 [MAPIAllocateMore](mapiallocatemore.md)、および[MAPIFreeBuffer](mapifreebuffer.md)) のアドレスを取得します。
   
@@ -35,7 +35,7 @@ HRESULT GetMemAllocRoutines(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lppAllocateBuffer_
   
@@ -55,7 +55,7 @@ S_OK
   
 > 関数のアドレスが正常に返されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 サポートのすべてのオブジェクトの**IMAPISupport::GetMemAllocRoutines**メソッドを実装します。 サービス プロバイダーは、 [ABProviderInit](abproviderinit.md)、 [MSProviderInit](msproviderinit.md)、( [XPProviderInit](xpproviderinit.md)) は、その初期化関数に渡される 3 つのメモリ割り当て関数のアドレスを取得するのには**GetMemAllocRoutines**を呼び出します。 
   

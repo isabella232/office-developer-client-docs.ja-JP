@@ -1,5 +1,5 @@
 ---
-title: テーブルを表示します。
+title: 表示テーブル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c314ff6d-3e60-4b81-87ac-6ca6753ff633
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 556d7551f64e075d1f15a945ddb1409c3b5a775f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799966"
 ---
-# <a name="display-tables"></a>テーブルを表示します。
+# <a name="display-tables"></a>表示テーブル
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 表示テーブルが特定の種類のダイアログ ボックスを表示する方法について説明などを表示して、おそらく 1 つまたは複数のプロパティを編集するのには専用の 1 つまたは複数のタブ付きプロパティ ページを持つ 1 つ。 関連付けられているテーブルは、すべてのディスプレイで、 [IMAPIProp: IUnknown](imapipropiunknown.md)インターフェイスの実装です。 **IMAPIProp**の実装では、ダイアログ ボックスに表示されるプロパティ データを保持します。 
   

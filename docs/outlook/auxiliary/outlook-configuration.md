@@ -18,10 +18,10 @@ ms.locfileid: "19799544"
 
 このセクションでは、項目の競合を解決するには、オフライン アドレス帳の更新時間を決定して自動構成のドメインを登録するように Outlook を構成する方法について説明します。
 
-- [カスタムの項目の種類の競合の解決について](about-conflict-resolution-for-custom-item-types.md)
+- [ユーザー設定アイテム タイプの競合解決について](about-conflict-resolution-for-custom-item-types.md)
     
-- [オフライン アドレス帳の最終更新時刻について](about-the-last-update-time-of-an-offline-address-book.md)
+- [オフライン アドレス帳の最終更新時について](about-the-last-update-time-of-an-offline-address-book.md)
     
-- [自動構成の新しいドメインの登録について](about-registering-a-new-domain-for-automatic-configuration.md)
+- [自動構成のための新しいドメインの登録について](about-registering-a-new-domain-for-automatic-configuration.md)
     
 

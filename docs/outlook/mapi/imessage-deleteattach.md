@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0a5cb49f-c4f3-4893-8616-80d6332efcfc
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 93f264cc91118e40f7a2869d29e7e53d404ae381
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800897"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 添付ファイルを削除します。
   
@@ -36,7 +36,7 @@ ULONG ulFlags
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulAttachmentNum_
   
@@ -64,7 +64,7 @@ S_OK
   
 > 添付ファイルが正常に削除されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMessage::DeleteAttach**メソッドは、メッセージ内から添付ファイルを削除します。 
   

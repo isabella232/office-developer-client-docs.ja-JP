@@ -19,9 +19,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/21/2018
 ms.locfileid: "19800394"
 ---
-# <a name="iaddrbookopenentry"></a>アドレス帳コンテナー
+# <a name="iaddrbookopenentry"></a>IAddrBook::OpenEntry
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳エントリを開き、エントリにアクセスするために使用するインターフェイスへのポインターを返します。
   
@@ -36,7 +36,7 @@ HRESULT OpenEntry(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _cbEntryID_
   
@@ -107,7 +107,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > _LpEntryID_で指定されたエントリの識別子を指定することはありません。 この値は通常、対応するエントリのアドレス帳プロバイダーが開いていない場合に返されます。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントおよびサービス プロバイダーを開くには、アドレス帳のエントリの**アドレス帳コンテナー**のメソッドを呼び出します。 MAPI では、 _lpEntryID_パラメーターで渡されたエントリの識別子に含まれる[MAPIUID](mapiuid.md)構造に基づく、適切なアドレス帳プロバイダーへの呼び出しを転送します。 _UlFlags_パラメーターで MAPI_MODIFY または MAPI_BEST_ACCESS フラグが設定されていない場合、アドレス帳プロバイダーには読み取り専用でエントリが開きます。 ただし、これらのフラグは、ご提案します。 アドレス帳プロバイダーが要求されたエントリの変更を許可していない場合は、MAPI_E_NO_ACCESS を返します。 
   
@@ -115,5 +115,5 @@ _LpInterface_パラメーターでは、開かれているエントリにアク�
   
 ## <a name="see-also"></a>関連項目
 
-- [IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+- [IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

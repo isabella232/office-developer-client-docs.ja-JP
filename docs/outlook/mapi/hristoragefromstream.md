@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 1cdc95b8-a156-4600-9e20-caaa02680e87
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: bd2d0a662585e8aba91250786f88dd310fe37e32
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800310"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **IStream**オブジェクト上に**IStorage**インターフェイスをレイヤーにします。 
   
@@ -42,7 +42,7 @@ HRESULT HrIStorageFromStream(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpUnkIn_
   

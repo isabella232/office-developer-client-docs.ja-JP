@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8d0a381a-e714-4663-9a57-b0e1cdbd6ba7
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 4dcdce72781669988a0cb15eb9b3a7cd73494bfb
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800315"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロパティのインターフェイスから、つまり、 [IMAPIProp](imapipropiunknown.md)から派生したインターフェイスには、1 つのプロパティの値を取得します。 
   
@@ -41,7 +41,7 @@ HrGetOneProp(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pmp_
   
@@ -55,13 +55,13 @@ HrGetOneProp(
   
 > [out]取得したプロパティ値を定義する、返される[SPropValue](spropvalue.md)構造へのポインターへのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 MAPI_E_NOT_FOUND 
   
 > 要求されたプロパティは、指定されたインターフェイスからは使用できません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 、 [IMAPIProp::GetProps](imapiprop-getprops.md)メソッドとは異なり、 **HrGetOneProp**関数は決して警告を返します。 1 つのプロパティを取得するために単に成功または失敗します。 複数のプロパティを取得するため**GetProps**が高速です。 
   

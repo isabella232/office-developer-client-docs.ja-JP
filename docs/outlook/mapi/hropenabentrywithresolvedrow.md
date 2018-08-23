@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ce3a583c-16a9-4268-9476-926d2780eae5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0e39f4edc871b49675f1ffcc1bc541345c8829d5
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19800333"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 自動的に解決された行から**emsabpUID**を取得し、**エントリ Id**を表示することを除いては、 [HrOpenABEntryWithExchangeContext](hropenabentrywithexchangecontext.md)と同じ機能を実行します。
   
@@ -42,7 +42,7 @@ HRESULT HrOpenABEntryWithResolvedRow(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _prwResolved_
   

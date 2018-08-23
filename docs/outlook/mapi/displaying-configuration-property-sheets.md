@@ -17,7 +17,7 @@ ms.locfileid: "19799939"
 ---
 # <a name="displaying-configuration-property-sheets"></a>構成のプロパティ シートを表示します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 トランスポート プロバイダーは、プロパティ シートの構成を実装するために[IMAPISupport::DoConfigPropsheet](imapisupport-doconfigpropsheet.md)メソッドを使用します。 **DoConfigPropSheet**を呼び出すと、トランスポート プロバイダーはそれらを表示する方法についての情報とプロパティの配列をポインターで渡します。 MAPI ではユーザーにプロパティが、標準のダイアログ ボックスを使用してに表示されます。 一貫性のあるインターフェイスのユーザーにとってのメリットのためのトランスポート プロバイダーを実装する場合、このプロパティ シートのメカニズムを使用するよう強くお勧めします。
   

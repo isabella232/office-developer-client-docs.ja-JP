@@ -1,5 +1,5 @@
 ---
-title: 通知スレッド セーフを確保します。
+title: スレッド セーフ通知の確認
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800004"
 ---
-# <a name="ensuring-a-thread-safe-notification"></a>通知スレッド セーフを確保します。
+# <a name="ensuring-a-thread-safe-notification"></a>スレッド セーフ通知の確認
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアントは、マルチ スレッドのプラットフォームで実行している場合は、特定のスレッドで、 [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドの呼び出しが発生することを保証する必要があります。 **OnNotify**への呼び出しは、任意のスレッドで発生することが通常、ために、エラーの原因をデバッグするが難しいことと、予期しない、望ましくないスレッドで通知を受信することができます。 
   

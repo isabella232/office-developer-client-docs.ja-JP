@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b5eb1841-e450-4024-aeaa-3b5a492ddb99
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 93578300e2520dda4a9621b05ac6a79c54eca2ef
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800462"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 コンテナーの検索基準を確立します。
   
@@ -35,7 +35,7 @@ HRESULT SetSearchCriteria(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpRestriction_
   
@@ -87,7 +87,7 @@ MAPI_E_TOO_COMPLEX
   
 > サービス プロバイダーは、指定された検索条件をサポートしていません。
     
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
 **IMAPIContainer::SetSearchCriteria**メソッドは、通常の検索結果フォルダーの検索をサポートするコンテナーの検索基準を確立します。 検索結果フォルダーには、検索条件に一致するメッセージへのリンクが含まれています。実際のメッセージは、元の場所に保存されています。 検索結果のフォルダーに含まれているのみに固有のデータは、その内容のテーブルです。 検索結果フォルダーの内容のテーブルでは、検索の制限が適用された後にメッセージ ・ ストアがマージされた内容があります。 
   
@@ -133,7 +133,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IMAPIFolder::CreateFolder](imapifolder-createfolder.md)
   
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
   
 [SPropertyRestriction](spropertyrestriction.md)
   
@@ -141,7 +141,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [SSubRestriction](ssubrestriction.md)
   
-[IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)
+[IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

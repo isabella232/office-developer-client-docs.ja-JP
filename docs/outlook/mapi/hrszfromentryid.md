@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5e3ed6b2-8eaf-44ab-bc6a-d3faabe84a93
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1b957c02f331038ee9104f01806720d2f8e0b542
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800314"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 エントリ識別子は、ASCII 文字列にエンコードします。 
   
@@ -41,7 +41,7 @@ HrSzFromEntryID(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cb_
   
@@ -59,7 +59,7 @@ HrSzFromEntryID(
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [HrEntryIDFromSz](hrentryidfromsz.md)と**HrSzFromEntryID**関数は、文字列とエントリの識別子のバイナリ フォーマット間の変換を提供します。 MAPI では、バイナリ データを含む構造体を使用してください。 
   

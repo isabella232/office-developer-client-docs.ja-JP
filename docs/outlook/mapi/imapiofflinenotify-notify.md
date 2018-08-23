@@ -23,7 +23,7 @@ ms.locfileid: "19800644"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 接続状態の変更についてクライアントに通知を送信します。
   
@@ -33,13 +33,13 @@ void STDMETHODCALLTYPE Notify(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pNotifyInfo_
   
 > [in]Outlook をクライアントに送信する通知します。 通知では、接続状態が変更されたこと、以前の接続状態、および新しい接続の状態の一部を示します。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 Outlook では、このメソッドを使用して、通知のコールバックをクライアントに送信します。 Microsoft Outlook 2010 または Microsoft Outlook 2013 にこのインターフェイスを使用できるようにするには、クライアントする必要がありますこのインターフェイスを実装し、 **[IMAPIOfflineMgr::Advise を使用してコールバックをセットアップするときの**[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** のメンバーとして、それへのポインターを渡す](imapiofflinemgr-advise.md)**. 
   
@@ -51,7 +51,7 @@ Outlook では、このメソッドを使用して、通知のコールバック
 
 
 
-[オフラインの状態の API について](about-the-offline-state-api.md)
+[オフライン状態 API について](about-the-offline-state-api.md)
   
 [MAPIOFFLINE_NOTIFY](mapioffline_notify.md)
 

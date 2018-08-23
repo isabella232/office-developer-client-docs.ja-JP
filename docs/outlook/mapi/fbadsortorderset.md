@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b7f80e0a-8ddd-4b24-ab63-2078a8152058
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0e200ea20c55cfd5729ce4c1f590de2d61ca73bc
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800041"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メモリの割り当てを確認し、設定の並べ替え順序を検証します。 
   
@@ -39,13 +39,13 @@ ULONG FBadSortOrderSet(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpsos_
   
 > [in]設定を検証する並べ替え順序を識別する[SSortOrderSet](ssortorderset.md)構造体へのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 TRUE 
   
@@ -55,7 +55,7 @@ FALSE
   
 > 有効では、指定した並べ替え順序を設定します。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **FBadSortOrderSet**関数は、 [IMAPITable::SortTable](imapitable-sorttable.md)メソッドのような並べ替えメソッドへの呼び出しの準備に使用できます。 
   

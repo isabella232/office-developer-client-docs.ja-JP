@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c0a65d2b-a9b8-4477-a1c7-18c8478126f6
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c79d9ebb5be1d8af6c9136514d8a2b695513f755
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800273"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 追加または既存のテーブルの先頭に列を移動します。 
   
@@ -44,7 +44,7 @@ HRESULT HrAddColumnsEx(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lptbl_
   
@@ -76,7 +76,7 @@ S_OK
   
 > 呼び出しが成功し、指定された列の移動先または追加されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 _LpproptagColumnsNew_パラメーターを使用して**HrAddColumnsEx**に渡されるプロパティは、 [IMAPITable::QueryRows](imapitable-queryrows.md)メソッドへの後続の呼び出しで公開されている最初のプロパティになります。 追加、移動、すべてのプロパティの後は、 _lpproptagColumnsNew_パラメーターで指定されていないテーブルの以前の任意のプロパティが公開されています。 
   

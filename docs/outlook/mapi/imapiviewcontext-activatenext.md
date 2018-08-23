@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 25ce90ac-526e-48a0-9edb-bd266375d4f4
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 150a0c6eb7efa83f5ff1d12d915351bf5ca9d45a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19800888"
 ---
 # <a name="imapiviewcontextactivatenext"></a>IMAPIViewContext::ActivateNext
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ビューの順序で次または前のメッセージをアクティブにします。 
   
@@ -32,7 +32,7 @@ LPCRECT prcPosRect
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _ulDir_
   
@@ -70,7 +70,7 @@ S_FALSE
   
 > メッセージが正常にアクティブ化されたが、プロセスで開いているフォームの別の種類です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム オブジェクトは、ユーザーに表示されているメッセージを変更するのには**IMAPIViewContext::ActivateNext**メソッドを呼び出します。 _UlDir_パラメーターで渡された値は、どのようなメッセージがアクティブ化され、一部にする必要があることを示します、場合によってはその理由です。 VCDIR_NEXT と VCDIR_PREVIOUS のフラグは、ユーザーがビューでは、**次**または**前**のコマンドを選択すると、それぞれに対応します。 これらの操作は、通常 1 つのメッセージのメッセージ フォーム ビューアーの一覧で上下に移動するのには対応しています。 
   
@@ -95,6 +95,6 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 ## <a name="see-also"></a>関連項目
 
 - [IMAPIViewContext::GetViewStatus](imapiviewcontext-getviewstatus.md)
-- [IMAPIViewContext: IUnknown](imapiviewcontextiunknown.md)
+- [IMAPIViewContext : IUnknown](imapiviewcontextiunknown.md)
 - [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
 

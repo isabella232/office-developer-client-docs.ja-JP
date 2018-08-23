@@ -23,7 +23,7 @@ ms.locfileid: "19800732"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オブジェクトの 1 つまたは複数のプロパティを別のオブジェクトを移動またはコピーします。
   
@@ -41,7 +41,7 @@ HRESULT DoCopyProps(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpSrcInterface_
   
@@ -131,7 +131,7 @@ MAPI_E_UNEXPECTED_TYPE
   
 > プロパティの型は、呼び出し元が要求する型ではありません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージ ストア プロバイダーのサポート オブジェクトの**IMAPISupport::DoCopyProps**メソッドを実装します。 メッセージ ストア プロバイダーは、そのフォルダーとメッセージの[IMAPIProp::CopyProps](imapiprop-copyprops.md)メソッドを実装するために**DoCopyProps**を呼び出すことができます。 **DoCopyProps**にコピーまたは移動のプロパティで_lpIncludeProps_で指定されたプロパティ タグ配列を識別し、 _lpSrcObj_が指すオブジェクトに存在します。 
   
@@ -165,15 +165,15 @@ _LpSrcInterface_および_lpDestInterface_パラメーターが同じインタ�
   
 [IMAPISupport::GetLastError](imapisupport-getlasterror.md)
   
-[PidTagContainerContents の標準的なプロパティ](pidtagcontainercontents-canonical-property.md)
+[PidTagContainerContents 標準プロパティ](pidtagcontainercontents-canonical-property.md)
   
-[PidTagContainerHierarchy の標準的なプロパティ](pidtagcontainerhierarchy-canonical-property.md)
+[PidTagContainerHierarchy 標準プロパティ](pidtagcontainerhierarchy-canonical-property.md)
   
-[PidTagFolderAssociatedContents の標準的なプロパティ](pidtagfolderassociatedcontents-canonical-property.md)
+[PidTagFolderAssociatedContents 標準プロパティ](pidtagfolderassociatedcontents-canonical-property.md)
   
-[PidTagMessageAttachments の標準的なプロパティ](pidtagmessageattachments-canonical-property.md)
+[PidTagMessageAttachments 標準プロパティ](pidtagmessageattachments-canonical-property.md)
   
-[PidTagMessageRecipients の標準的なプロパティ](pidtagmessagerecipients-canonical-property.md)
+[PidTagMessageRecipients 標準プロパティ](pidtagmessagerecipients-canonical-property.md)
   
 [SPropProblemArray](spropproblemarray.md)
   

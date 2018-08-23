@@ -1,5 +1,5 @@
 ---
-title: 数値演算関数 (カスタム web アプリケーションのアクセス)
+title: 数学関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 08/18/2017
 ms.audience: Developer
@@ -13,12 +13,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798555"
 ---
-# <a name="math-functions-access-custom-web-app"></a>数値演算関数 (カスタム web アプリケーションのアクセス)
+# <a name="math-functions-access-custom-web-app"></a>数学関数 (Access カスタム Web アプリ)
 
 ## <a name="in-this-section"></a>このセクションの内容
 
 > [!IMPORTANT]
-> [!重要] 現在 Microsoft では、SharePoint での Access Web アプリの作成や使用は推奨していません。代替策として、[Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) を使用して、Web およびモバイル デバイス用の、コーディングが不要なビジネス ソリューションを構築することを検討してください。 
+> 現在 Microsoft では、SharePoint での Access Web アプリの作成や使用は推奨していません。代替策として、[Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) を使用して、Web およびモバイル デバイス用の、コーディングが不要なビジネス ソリューションを構築することを検討してください。 
   
 - [Abs 関数 (カスタム web アプリケーションのアクセス)](abs-function-access-custom-web-app.md)
     

@@ -1,5 +1,5 @@
 ---
-title: 日付/時刻関数 (カスタム web アプリケーションのアクセス)
+title: 日付/時刻関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 08/18/2017
 ms.audience: Developer
@@ -13,10 +13,10 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798557"
 ---
-# <a name="datetime-functions-access-custom-web-app"></a>日付/時刻関数 (カスタム web アプリケーションのアクセス)
+# <a name="datetime-functions-access-custom-web-app"></a>日付/時刻関数 (Access カスタム Web アプリ)
 
 > [!IMPORTANT]
-> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
 
 
 - [DateAdd 関数 (カスタム web アプリケーションのアクセス)](dateadd-function-access-custom-web-app.md)

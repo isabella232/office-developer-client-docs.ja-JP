@@ -17,7 +17,7 @@ ms.locfileid: "19800216"
 ---
 # <a name="create-a-complex-recurrent-appointment-item"></a>複雑な定期的な予定アイテムを作成します。
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 定期的な予定アイテムを作成するのには、MAPI を使用できます。
   

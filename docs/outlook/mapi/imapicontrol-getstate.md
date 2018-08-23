@@ -23,7 +23,7 @@ ms.locfileid: "19800451"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ボタン コントロールを有効または無効にするかどうかを示す値を取得します。
   
@@ -58,7 +58,7 @@ S_OK
   
 > ボタン コントロールの状態が正常に取得しました。
     
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
 サービス プロバイダーでは、MAPI をボタン コントロールの状態を提供する**IMAPIControl::GetState**メソッドを実装します。 ボタンが有効の場合は、マウス クリックやキー入力に応答できます。 無効の場合ボタンは淡色表示とマウス クリックやキー入力に応答しません。 
   
@@ -70,5 +70,5 @@ S_OK
 
 [IMAPIControl::Activate](imapicontrol-activate.md)
   
-[IMAPIControl: IUnknown](imapicontroliunknown.md)
+[IMAPIControl : IUnknown](imapicontroliunknown.md)
 

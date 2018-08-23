@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2c1c25c6-1aec-4d9e-a2a3-bf1b4a2908b8
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5961e7a2118a46bdc9c0e66138363976ae2f7154
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800477"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 サブフォルダーを移動またはコピーします。
   
@@ -40,7 +40,7 @@ HRESULT CopyFolder(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -120,7 +120,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > 呼び出しが成功したが、すべてのエントリが正常にコピーされました。 この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIFolder::CopyFolder**メソッドは、コピーまたはサブフォルダーを別の場所に移動します。 サブフォルダーのコピーや移動は、サブフォルダーとして、コピー先のフォルダーに追加されます。 
   
@@ -164,7 +164,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

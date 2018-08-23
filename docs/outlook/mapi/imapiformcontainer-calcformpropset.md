@@ -23,7 +23,7 @@ ms.locfileid: "19800520"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームのコンテナーにインストールされているすべてのフォームで使用されるプロパティの配列を返します。
   
@@ -66,7 +66,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > か、MAPI_UNICODE フラグが設定された実装は Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、実装は、Unicode だけをサポートしています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアント アプリケーションは、フォームのコンテナーにインストールされているすべてのフォームで使用されるプロパティの配列を取得する**IMAPIFormContainer::CalcFormPropSet**メソッドを呼び出します。 **IMAPIFormContainer::CalcFormPropSet**は、特定のコンテナーに登録されているすべてのフォーム上で動作する点を除いて、 [IMAPIFormMgr::CalcFormPropSet](imapiformmgr-calcformpropset.md)メソッドと同様に動作します。 
   
@@ -88,5 +88,5 @@ _UlFlags_で、クライアントが、MAPI_UNICODE フラグを渡すと、す�
   
 [SMAPIFormPropArray](smapiformproparray.md)
   
-[IMAPIFormContainer: IUnknown](imapiformcontaineriunknown.md)
+[IMAPIFormContainer : IUnknown](imapiformcontaineriunknown.md)
 

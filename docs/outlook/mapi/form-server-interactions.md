@@ -17,11 +17,11 @@ ms.locfileid: "19800095"
 ---
 # <a name="form-server-interactions"></a>フォームのサーバー間のやり取り
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このセクションのトピックでは、クライアント アプリケーション、MAPI フォーム マネージャー、フォーム サーバー、およびさまざまなメッセージを開き、新しいメッセージを作成するなどの一般的な操作のためのフォーム オブジェクト間の相互作用について説明します。
   
 ## <a name="see-also"></a>関連項目
 
-- [MAPI フォームのサーバーの開発](developing-mapi-form-servers.md)
+- [MAPI フォーム サーバーの開発](developing-mapi-form-servers.md)
 

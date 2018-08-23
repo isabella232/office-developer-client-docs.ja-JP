@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5ca500c3-c737-45a5-b0fc-473b75c1d68d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1f3a876269868c30df48e0a0b62036cfdc199955
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800549"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームを開くには既存のメッセージを開始します。
   
@@ -43,7 +43,7 @@ HRESULT LoadForm(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -111,7 +111,7 @@ MAPI_E_NOT_FOUND
   
 > _LpszMessageClass_に渡されるメッセージ クラスでは、フォーム ライブラリ内の任意のフォームのメッセージ クラスが一致しません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォームの閲覧者は、既存のメッセージのフォームを開くに**IMAPIFormMgr::LoadForm**メソッドを呼び出します。 **LoadForm**フォーム オブジェクトを開きます、フォーム オブジェクトにメッセージを読み込みます、必要に応じて、適切なビューのコンテキストを設定し、フォーム オブジェクトの要求されたインターフェイスを返します。 
   
@@ -133,13 +133,13 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[PidTagMessageClass の標準的なプロパティ](pidtagmessageclass-canonical-property.md)
+[PidTagMessageClass 標準プロパティ](pidtagmessageclass-canonical-property.md)
   
-[PidTagMessageFlags の標準的なプロパティ](pidtagmessageflags-canonical-property.md)
+[PidTagMessageFlags 標準プロパティ](pidtagmessageflags-canonical-property.md)
   
-[PidTagMessageStatus の標準的なプロパティ](pidtagmessagestatus-canonical-property.md)
+[PidTagMessageStatus 標準プロパティ](pidtagmessagestatus-canonical-property.md)
   
-[IMAPIFormMgr: IUnknown](imapiformmgriunknown.md)
+[IMAPIFormMgr : IUnknown](imapiformmgriunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

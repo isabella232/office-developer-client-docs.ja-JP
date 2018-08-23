@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7e244d40-595e-432c-aa8c-f9f62ca3c138
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9ed02e19a2934f785b03bb8553a08e16c7bb30e0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800894"
 ---
-# <a name="imessage--imapiprop"></a>IMessage: IMAPIProp
+# <a name="imessage--imapiprop"></a>IMessage : IMAPIProp
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ、添付ファイル、および受信者を管理します。
   
@@ -54,31 +54,31 @@ ms.locfileid: "19800894"
   
 |**クラスのすべてのメッセージに必要なプロパティ**|**Access**|
 |:-----|:-----|
-|**PR_CREATION_TIME**([PidTagCreationTime](pidtagcreationtime-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_DISPLAY_BCC**([PidTagDisplayBcc](pidtagdisplaybcc-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_DISPLAY_CC**([PidTagDisplayCc](pidtagdisplaycc-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_DISPLAY_TO**([PidTagDisplayTo](pidtagdisplayto-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_LAST_MODIFICATION_TIME**([PidTagLastModificationTime](pidtaglastmodificationtime-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_MESSAGE_ATTACHMENTS**([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
+|**PR_CREATION_TIME**([PidTagCreationTime](pidtagcreationtime-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_DISPLAY_BCC**([PidTagDisplayBcc](pidtagdisplaybcc-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_DISPLAY_CC**([PidTagDisplayCc](pidtagdisplaycc-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_DISPLAY_TO**([PidTagDisplayTo](pidtagdisplayto-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_LAST_MODIFICATION_TIME**([PidTagLastModificationTime](pidtaglastmodificationtime-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_MESSAGE_ATTACHMENTS**([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_MESSAGE_CLASS**([PidTagMessageClass](pidtagmessageclass-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
 |**PR_MESSAGE_FLAGS**([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
-|**PR_MESSAGE_RECIPIENTS**([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_MESSAGE_SIZE**([PidTagMessageSize](pidtagmessagesize-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_MESSAGE_CC_ME**([PidTagMessageCcMe](pidtagmessageccme-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_MESSAGE_RECIP_ME**([PidTagMessageRecipientMe](pidtagmessagerecipientme-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_MESSAGE_TO_ME**([PidTagMessageToMe](pidtagmessagetome-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_NORMALIZED_SUBJECT**([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_ORIGINATOR**プロパティ  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_PARENT_DISPLAY**([PidTagParentDisplay](pidtagparentdisplay-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_PARENT_ENTRYID**([PidTagParentEntryId](pidtagparententryid-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_RECEIVED_BY**プロパティ  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_RECIPIENT_TYPE**([PidTagRecipientType](pidtagrecipienttype-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_SEARCH_KEY**([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_SENDER**プロパティ  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_STORE_ENTRYID**([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_STORE_RECORD_KEY**([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
+|**PR_MESSAGE_RECIPIENTS**([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_MESSAGE_SIZE**([PidTagMessageSize](pidtagmessagesize-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_MESSAGE_CC_ME**([PidTagMessageCcMe](pidtagmessageccme-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_MESSAGE_RECIP_ME**([PidTagMessageRecipientMe](pidtagmessagerecipientme-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_MESSAGE_TO_ME**([PidTagMessageToMe](pidtagmessagetome-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_NORMALIZED_SUBJECT**([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_ORIGINATOR**プロパティ  <br/> |読み取り専用  <br/> |
+|**PR_PARENT_DISPLAY**([PidTagParentDisplay](pidtagparentdisplay-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_PARENT_ENTRYID**([PidTagParentEntryId](pidtagparententryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RECEIVED_BY**プロパティ  <br/> |読み取り専用  <br/> |
+|**PR_RECIPIENT_TYPE**([PidTagRecipientType](pidtagrecipienttype-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_SEARCH_KEY**([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_SENDER**プロパティ  <br/> |読み取り専用  <br/> |
+|**PR_STORE_ENTRYID**([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_STORE_RECORD_KEY**([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
 次のプロパティはすべて読み取り専用**PR_BODY**以外のクライアントには。 クライアントは、レポートを処理する際に、このプロパティを作成します。
   
@@ -104,12 +104,12 @@ ms.locfileid: "19800894"
    
 |**メッセージの受信者のプロパティ**|**Access**|**必須または省略可能です**|
 |:-----|:-----|:-----|
-|**PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |必須  <br/> |
+|**PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |読み取り専用  <br/> |必須  <br/> |
 |**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |必須  <br/> |
 |**PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |必須  <br/> |
-|**PR_EMAIL_ADDRESS**([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |省略可能  <br/> |
-|**PR_ENTRYID** <br/> |値の取得のみ可能です。  <br/> |必須  <br/> |
-|**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |必須  <br/> |
-|**PR_SEARCH_KEY** <br/> |値の取得のみ可能です。  <br/> |省略可能  <br/> |
+|**PR_EMAIL_ADDRESS**([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |読み取り専用  <br/> |省略可能  <br/> |
+|**PR_ENTRYID** <br/> |読み取り専用  <br/> |必須  <br/> |
+|**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |必須  <br/> |
+|**PR_SEARCH_KEY** <br/> |読み取り専用  <br/> |省略可能  <br/> |
    
 

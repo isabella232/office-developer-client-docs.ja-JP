@@ -19,7 +19,7 @@ ms.locfileid: "19800017"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Microsoft Office Outlook プロファイル内のアカウントが接続されている Microsoft Exchange Server のバージョン情報を格納します。
   
@@ -35,7 +35,7 @@ typedef struct {
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  _wMajorVersion_
   
@@ -59,5 +59,5 @@ typedef struct {
 
 [MAPI の追加について](about-mapi-additions.md)
   
-[PidTagProfileServerFullVersion の標準的なプロパティ](pidtagprofileserverfullversion-canonical-property.md)
+[PidTagProfileServerFullVersion 標準プロパティ](pidtagprofileserverfullversion-canonical-property.md)
 

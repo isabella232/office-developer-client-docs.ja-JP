@@ -29,7 +29,7 @@ HRESULT IOlkAccountHelper::GetIdentity (
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _pwszIdentity_
   
@@ -47,7 +47,7 @@ _pcch_
 |E_OUTOFMEMORY  <br/> |返されるプロファイル名は、 _pwszIdentity_のサイズを超えています。  <br/> |
 |E_INVALIDARG  <br/> | _pcch_は、NULL です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 _PwszIdentity_プロファイルの名前を保持するには小さすぎる場合は、返された場合は、設定できませんし、 _pcch_ _pwszIdentity_に必要なサイズをポイントします。
   

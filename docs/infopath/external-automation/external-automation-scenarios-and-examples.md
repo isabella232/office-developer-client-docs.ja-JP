@@ -30,31 +30,31 @@ InfoPath を自動化するためのマネージ コードを記述するには�
   
 次の手順では、Visual Studio プロジェクトに Microsoft Office InfoPath プライマリ相互運用機能アセンブリと InfoPath XML 相互運用機能アセンブリの参照を設定する方法について説明します。
   
-Microsoft.Office.Interop.InfoPath のプライマリ相互運用機能アセンブリへの参照を設定するには、[ **COM** ] タブの [**参照の追加**] ダイアログ ボックスの**Microsoft InfoPath 3.0 のタイプ ライブラリ**への参照を設定します。 **[COM** ] タブから参照を設定する場合でもグローバル アセンブリ キャッシュ (GAC) に InfoPath セットアップ プログラムによってインストールされる Microsoft.Office.Interop.InfoPath.dll のプライマリ相互運用機能アセンブリへの参照が確立されます。 
+Microsoft.Office.Interop.InfoPath プライマリ相互運用機能アセンブリの参照を設定するには、**[参照の追加]** ダイアログ ボックスの **[COM]** タブ上で **Microsoft InfoPath 3.0 タイプ ライブラリ**の参照を設定します。**[COM]** タブから参照を設定するものの、InfoPath セットアップ プログラムがグローバル アセンブリ キャッシュ (GAC) にインストールした Microsoft.Office.Interop.InfoPath.dll プライマリ相互運用機能アセンブリへの参照が確立されます。 
   
 ### <a name="set-a-reference-to-the-microsoftofficeinteropinfopath-primary-interop-assembly"></a>Microsoft.Office.Interop.InfoPath プライマリ相互運用機能アセンブリへの参照を設定する
 
 1. Visual Studio のマネージ コード プロジェクトを開きます。
     
-2. **ソリューション エクスプ ローラー**では、**参照**のを右クリックし、 **[参照の追加**] をクリックします。
+2. **ソリューション エクスプローラー**で [**参照**] を右クリックし、[**参照の追加**] をクリックします。
     
-3. [ **COM** ] タブでは、 **Microsoft InfoPath 3.0 のタイプ ライブラリ**をダブルクリックし、し、[ **OK**] をクリックします。
+3. **[COM]** タブの **[Microsoft InfoPath 3.0 タイプ ライブラリ]** をダブルクリックし、**[OK]** をクリックします。
     
 Microsoft.Office.Interop.InfoPath.Xml の相互運用機能アセンブリへの参照を設定するには、<_ドライブ_> に既定でインストールされている Microsoft.Office.Interop.InfoPath.Xml.dll ファイルを参照: \Program Files\Microsoft Office\OFFICE14 フォルダー. 場合でも、アセンブリのコピーをローカル ファイル システムに指定すると、この手順は、グローバル アセンブリ キャッシュ (GAC) に InfoPath セットアップ プログラムによってインストールされる Microsoft.Office.Interop.InfoPath.Xml.dll のアセンブリへの参照を確立します。
   
 ### <a name="set-a-reference-to-the-microsoftofficeinteropinfopathxml-interop-assembly"></a>Microsoft.Office.Interop.InfoPath Xml 相互運用機能アセンブリへの参照を設定する
 
-1. 開くか、**コンソール アプリケーション**や**Windows アプリケーション**など、Visual Studio のマネージ コード プロジェクトを作成します。
+1. **コンソール アプリケーション**または **Windows アプリケーション**などの Visual Studio マネージ コード プロジェクトを開くか、作成します。
     
 2. **ソリューション エクスプ ローラー**では、**参照**のを右クリックし、 **[参照の追加**] をクリックします。
     
 3. [ **.NET** ] タブの [**参照**] をクリックします、<_ドライブ_> に移動: \Program Files\Microsoft Office\OFFICE14 フォルダーでは、[Microsoft.Office.Interop.InfoPath.Xml.dll] をクリックします。
     
-4. [ **OK**] をクリックします。
+4. **[OK]** をクリックします。
     
 ## <a name="automate-changing-the-value-of-a-field"></a>フィールドの値の変更を自動化します。
 
-「企業 A」から「b 社」自分の名前が最近変更された InfoPath の売上報告書フォーム テンプレートのユーザーの顧客の 1 つとします 開発者が名前の変更を反映するには、このフォーム テンプレートから保存された売上報告書フォームを自動的に更新するコードを記述しようとしています。 次のシナリオでは、様をという名前のフィールドにバインドされているテキスト ボックスを含むフォームを想定しています。
+InfoPath の売上報告書フォーム テンプレートのユーザーの顧客企業の 1 社が「Company A」から「Company B」に自社名を先日変更したとします。開発者は、このフォーム テンプレートから保存された売上報告書フォームを自動的に更新して社名変更を反映するコードを記述するように依頼されました。次のシナリオでは、[customerName] フィールドにバインドされたテキスト ボックスを含むフォームを想定します。
   
 ### <a name="create-the-sample-form-template-and-form"></a>サンプル フォーム テンプレートおよびフォームを作成する
 
@@ -62,21 +62,21 @@ Microsoft.Office.Interop.InfoPath.Xml の相互運用機能アセンブリへの
     
 2. フォームに**テキスト ボックス**コントロールを追加し、コントロール様にバインドされているフィールド名を入力します。
     
-3. [**フィールド**] 作業ウィンドウで、 **[マイフィールド**] フォルダーを右クリックし、[**プロパティ**] をクリックします。
+3. **[フィールド]** タスク ウィンドウの **[マイフィールド]** フォルダーを右クリックし、**[プロパティ]** をクリックします。
     
-4. [**詳細**] タブを選択し、以下の値をコピー **Namespace:**、し、これをメモ帳または取得できる他の場所に貼り付けます。 **SelectionNamespaces**プロパティの値を設定する、コード内のこの値を後で必要があります。 
+4. **[詳細]** タブから、次の値の **[名前空間:]** に続く値を選択してコピーし、これをメモ帳または取得できる他の場所に貼り付けます。この値は、コード内の **SelectionNamespaces** プロパティの値を設定する時に必要になります。 
     
-5. C:\Test という名前のフォルダーにフォーム テンプレートを発行し、既定の名前、Template1 を受け入れます。 
+5. C:\Test という名前のフォルダーにフォーム テンプレートを発行し、「Template1」という既定の名前とします。 
     
-6. フォーム テンプレートを開いて、「A 社」のテキスト ボックスにフィールドに連結する、得意先名を追加し、"Form1"としてフォームを保存します。 
+6. フォーム テンプレートを開き、[customerName] フィールドにバインドされているテキストボックスに「Company A」を入力し、フォームを「Form1」として保存します。 
     
 ### <a name="create-a-managed-code-console-application-to-change-the-name-from-company-a-to-company-b"></a>企業名を「Company A」から「Company B」変更するマネージ コード コンソール アプリケーションを作成します。
 
-1. Visual Studio を開き、新しい Visual C# または Visual Basic コンソール アプリケーションの UpdateCustomer をという名前を作成します。
+1. Visual Studio を開き、[UpdateCustomer]という名前で新しい Visual C# または Visual Basic コンソール アプリケーションを作成します。
     
 2. 前述のように、Microsoft Office InfoPath プライマリ相互運用機能アセンブリおよび InfoPath XML 相互運用機能アセンブリのへ参照を確立します。
     
-3. Program.cs または Module1.vb ファイル、サンプル フォームを作成したときにコピーした値で、 **SelectionNamespaces**プロパティの設定の名前空間の値を更新することを確認するには、次のコードを追加します。 
+3. 次のコードを Program.cs または Module1.vb ファイルに追加し、サンプル フォームを作成したときにコピーした値に、**SelectionNamespaces** プロパティ設定の名前空間の値が更新されることを確認します。 
     
    ```cs
     using System;
@@ -188,23 +188,23 @@ Microsoft.Office.Interop.InfoPath.Xml の相互運用機能アセンブリへの
     
    ```
 
-4. コンパイルしてコンソール アプリケーションを実行するのには [**デバッグ**] メニューの [**デバッグ開始**] をクリックします。 
+4. **[デバッグ]** メニューの **[デバッグの開始]** をクリックし、コンソール アプリケーションをコンパイルして実行します。 
     
-   アプリケーションは、Form1.xml、会社 A の値が含まれている得意先のすべての要素をループとして保存したフォームを開き、会社 B にその値を変更操作が完了すると、C:\Test フォルダー内の Form2.xml として、フォームの新しいコピーが保存されます。 
+   アプリケーションは Form1.xml として保存されているフォームを開き、「Company A」という値を含むすべての customerName 要素をループし、その値を「Company B」に変更します。操作が完了すると、フォームの新しいコピーが C:\Test フォルダーに Form2.xml として保存されます。 
     
 ## <a name="automate-opening-a-form-and-populating-field-values"></a>フォームを開くと、フィールドの値を設定を自動化します。
 
-次の使用例は、空白のフォームを開き、名、姓、名、およびフォームのフィールドのアドレスを作成を自動化します。 このシナリオでは、という名前の姓、姓、およびアドレスのフィールドにバインドされている 3 つのテキスト ボックスを含むフォームを想定しています。
+次の例では、空白のフォームを開き、フォームの名、姓、アドレスの各フィールドを設定する操作を自動で行います。このシナリオでは、“名”、“姓”、“アドレス” という名前の各フィールドにバインドされた 3 つのテキスト ボックスを含むフォームを想定します。
   
 ### <a name="create-the-sample-form-template-and-form"></a>サンプル フォーム テンプレートおよびフォームを作成する
 
 1. InfoPath を開き、空白のフォームを作成します。
     
-2. 3 つのテキスト ボックス コントロールをフォームに追加し、コントロールにバインドされたフィールドの名前: 姓、姓、およびアドレス。 必要なその他のフィールドを追加します。
+2. テキスト ボックス コントロールを 3 つ追加し、コントロールにバインドされたフィールドの名前を“名”、“姓”、“アドレス” にします。必要なその他のフィールドを追加します。
     
-3. [**フィールド**] 作業ウィンドウで、 **[マイフィールド**] フォルダーを右クリックし、[**プロパティ**] をクリックします。
+3. **[フィールド]** タスク ウィンドウの **[マイフィールド]** フォルダーを右クリックし、**[プロパティ]** をクリックします。
     
-4. [**詳細**] タブを選択し、以下の値をコピー **Namespace:**、し、これをメモ帳または取得できる他の場所に貼り付けます。 **SelectionNamespaces**プロパティの値を設定する、コード内のこの値を後で必要があります。 
+4. **[詳細]** タブから、次の値の **[名前空間:]** に続く値を選択してコピーし、これをメモ帳または取得できる他の場所に貼り付けます。この値は、コード内の **SelectionNamespaces** プロパティの値を設定する時に必要になります。 
     
 5. C:\Test という名前のフォルダーにフォーム テンプレートを発行し、「Template1」という既定の名前とします。
     
@@ -216,7 +216,7 @@ Microsoft.Office.Interop.InfoPath.Xml の相互運用機能アセンブリへの
     
 2. 前述のように、Microsoft Office InfoPath プライマリ相互運用機能アセンブリおよび InfoPath XML 相互運用機能アセンブリのへ参照を確立します。
     
-3. Program.cs または Module1.vb ファイル、サンプル フォームを作成したときにコピーした値で、 **SelectionNamespaces**プロパティの設定の名前空間の値を更新することを確認するには、次のコードを追加します。 
+3. 次のコードを Program.cs または Module1.vb ファイルに追加し、サンプル フォームを作成したときにコピーした値に、**SelectionNamespaces** プロパティ設定の名前空間の値が更新されることを確認します。 
     
    ```cs
     using System;
@@ -292,12 +292,12 @@ Microsoft.Office.Interop.InfoPath.Xml の相互運用機能アセンブリへの
     
    ```
 
-4. **[デバッグ**] メニューの [**デバッグの開始**をコンパイルしてコンソール アプリケーションを実行するをクリックします。 
+4. **[デバッグ]** メニューの **[デバッグの開始]** をクリックし、コンソール アプリケーションをコンパイルして実行します。 
     
-   アプリケーションは Form1.xml として保存するフォームを開くコードでは、指定した値で、[部署名]、[姓]、およびアドレス フィールドに入力および InfoPath を開いたまま、フォームを保存します。 
+   アプリケーションは Form1.xml として保存されているフォームを開き、"名"、"姓"、および "アドレス" の各フィールドにコードで指定された値を入力し、InfoPath を開いたまま、フォームを保存します。 
     
 ## <a name="see-also"></a>関連項目
 
-- [Microsoft Office InfoPath のプライマリ相互運用機能アセンブリについて](about-the-microsoft-office-infopath-primary-interop-assembly.md)
+- [Microsoft Office InfoPath プライマリ相互運用機能アセンブリについて](about-the-microsoft-office-infopath-primary-interop-assembly.md)
 - [InfoPath XML 相互運用機能アセンブリについて](about-the-infopath-xml-interop-assembly.md)
 

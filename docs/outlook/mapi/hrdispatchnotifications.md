@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 42ec4266-67b9-416e-8b9b-163c95011626
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 28afa338b37e747ed441a8767981b7e63808e741
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800295"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォースは、キューに登録されたすべての通知のディスパッチします。 
   
@@ -59,7 +59,7 @@ MAPI_E_NOT_INITIALIZED
   
 > MAPI は初期化されませんでした。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **HrDispatchNotifications**関数は、MAPI メッセージのディスパッチを待たずに、MAPI 通知エンジンにキューイングされているすべての通知をディスパッチするときに発生します。 これにより、メモリの使用率に効果をもたらさないことができます。 詳細については、[強制的に通知](forcing-a-notification.md)を参照してください。 
   

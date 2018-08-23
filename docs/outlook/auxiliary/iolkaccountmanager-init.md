@@ -54,7 +54,7 @@ _dwFlags_
 |E_OLK_ALREADY_INITIALIZED  <br/> |**初期化**が既に呼び出されています。  <br/> |
 |E_OLK_REGISTRY  <br/> |アカウント管理者に必要なレジストリ設定にアクセスできませんでした。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントは、アカウント マネージャーを使用してアカウントにアクセスしたり、通知を設定する前にアカウントを初期化するために**IOlkAccountManager::Init**マネージャーを呼び出す必要があります。 Outlook は起動時にアカウントを使用して MAPI サービスを自動的に同期をするため、同期するのには特定の原因がない限り、 **ACCT_INIT_NOSYNCH_MAPI_ACCTS**を使用します。 
   

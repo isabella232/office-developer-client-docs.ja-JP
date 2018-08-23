@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 971b4837-6823-4f28-9803-3c22b2ec091f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 04fbfb2e6938c1ae5971e90b30f5ef749e7963e1
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799981"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ディスプレイ テーブルから組み込まれているダイアログ ボックスで使用するリストについて説明します。
   
@@ -41,7 +41,7 @@ typedef struct _DTBLLBX
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulFlags**
   
@@ -63,7 +63,7 @@ MAPI_NO_VBAR
   
 > PT_OBJECT、 **OpenProperty**を使用して開くことができる種類のテーブルのプロパティのプロパティ タグを呼び出します。 テーブルに含める列の数は、リストの 1 つまたは複数選択リストがかどうかによって異なります。 **UlPRSetProperty**メンバーは、 **PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) に設定されている場合は、一覧は、複数選択できます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **DTBLLBX**構造体では、複数のアイテムを表示して、ユーザーが 1 つまたは複数の項目を選択するようにするために使用されるコントロールの一覧について説明します。 
   

@@ -1,5 +1,5 @@
 ---
-title: 処理を保留します。
+title: 処理の延期
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799881"
 ---
-# <a name="deferring-processing"></a>処理を保留します。
+# <a name="deferring-processing"></a>処理の延期
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メソッドの呼び出しを可能な限りに MAPI_DEFERRED_ERRORS フラグを渡します。 MAPI メソッドの呼び出しの多くは、一度に複数のタスクを実行することができます設定したり、不要になった結果を得るまでか、要求されたタスクを延期するのにはプロバイダーの原因と、このフラグを受け入れるように最適化されています。
   

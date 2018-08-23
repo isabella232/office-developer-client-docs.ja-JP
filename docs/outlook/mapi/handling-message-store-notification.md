@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 3e0cc2f9-a88d-4cec-bef5-b60f2ec80f1c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 898f8b6ff3d0b0dd42a670596b54171f18b4a5e3
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19800187"
 ---
 # <a name="handling-message-store-notification"></a>メッセージ ストアの通知を処理します。
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ストアの通知を登録するに[IMAPISession::Advise](imapisession-advise.md)または[IMsgStore::Advise](imsgstore-advise.md)のいずれかのメソッドを呼び出すし、 _lpEntryID_パラメーターの内容のメッセージ ・ ストア、フォルダー、またはメッセージのエントリ id を指定します。 メッセージ ストア プロバイダーは、オブジェクトと表の両方の通知をサポートします。 方法および特定のメッセージ ストアのオブジェクトと、これらのオブジェクトを表すフォルダーの階層と内容のテーブルまたは両方のオブジェクトを登録して、テーブルは、表示、操作を実行する呼び出しの通知に依存するかどうかメッセージ ストア プロバイダーは、通知をサポートしています。 
   
@@ -37,12 +37,12 @@ MAPI プロバイダーが通知をサポートする方法に柔軟性が許可
   
 |**Operation**|**イベントの種類**|**ソースをアドバイスします。**|
 |:-----|:-----|:-----|
-|フォルダーを作成する  <br/> | _fnevObjectCreated_ <br/> |メッセージ ・ ストア  <br/> |
-|フォルダーを削除する  <br/> | _fnevObjectDeleted_ <br/> |メッセージ ストアの削除済みフォルダー  <br/> |
+|フォルダーの作成  <br/> | _fnevObjectCreated_ <br/> |メッセージ ・ ストア  <br/> |
+|フォルダーの削除  <br/> | _fnevObjectDeleted_ <br/> |メッセージ ストアの削除済みフォルダー  <br/> |
 |1 つのフォルダーから別のフォルダーを移動します。  <br/> | _fnevObjectMoved_ <br/> |メッセージ ストアのフォルダーの移動  <br/> |
 |1 つのフォルダーから別のフォルダーをコピーします。  <br/> | _fnevObjectCopied_ <br/> |メッセージを格納し、( _fnevObjectCreated_通知は、フォルダーの新しいコピーを送信)] フォルダーをコピー  <br/> |
 |(**PR_SUBFOLDERS** ([PidTagSubfolders](pidtagsubfolders-canonical-property.md)) **PR_CONTENT_UNREAD** ([PidTagContentUnreadCount](pidtagcontentunreadcount-canonical-property.md))、 **PR_CONTENT_COUNT** ([PidTagContentCount](pidtagcontentcount-canonical-property.md)) は、計算済みのフォルダー プロパティの変更します。  <br/> | _fnevObjectModified_ <br/> |ストアの変更されたフォルダー (親フォルダーに通知がない)  <br/> |
-|メッセージを作成します。  <br/> | _fnevObjectCreated_ <br/> |メッセージ ・ ストア  <br/> |
+|メッセージを作成する  <br/> | _fnevObjectCreated_ <br/> |メッセージ ・ ストア  <br/> |
 |変更されて、親フォルダーの**PR_CONTENT_COUNT**プロパティ、メッセージを削除します。  <br/> | _fnevObjectDeleted_ <br/> |削除済みメッセージのメッセージ ストア  <br/> |
 |1 つのフォルダーからメッセージを移動します。  <br/> | _fnevObjectMoved_ <br/> |メッセージが移動されたメッセージを保存します。  <br/> |
 |1 つのフォルダーからメッセージをコピーします。  <br/> | _fnevObjectCopied_ <br/> |メッセージのストア コピー メッセージ (ない_fnevObjectCreated_のコピーを新しいメッセージの通知)  <br/> |

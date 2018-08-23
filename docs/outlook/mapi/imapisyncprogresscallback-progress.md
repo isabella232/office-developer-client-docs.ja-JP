@@ -23,7 +23,7 @@ ms.locfileid: "19800805"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [送受信] ダイアログ ボックスの状態を更新します。 ストア プロバイダーは、定期的にこの関数を呼び出します。
   
@@ -35,7 +35,7 @@ HRESULT Progress(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  **pwczsProgress**
   
@@ -59,5 +59,5 @@ S_OK
 
 
 
-[IMAPISyncProgressCallback: IUnknown](imapisyncprogresscallbackiunknown.md)
+[IMAPISyncProgressCallback : IUnknown](imapisyncprogresscallbackiunknown.md)
 

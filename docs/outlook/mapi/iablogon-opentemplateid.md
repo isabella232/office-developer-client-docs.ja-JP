@@ -23,7 +23,7 @@ ms.locfileid: "19800357"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ホストのアドレス帳プロバイダーに存在するデータが含まれている受信者のエントリが表示されます。
   
@@ -39,7 +39,7 @@ HRESULT OpenTemplateID(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbTemplateID_
   
@@ -87,7 +87,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > アドレス帳プロバイダーでは、 _lpTemplateID_パラメーターに渡されるテンプレート識別子は認識されません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IABLogon::OpenTemplateID**メソッドは、ホスト プロバイダーのコンテナー内にあるそれぞれのエントリのコピーの制御を維持する必要のあるアドレス帳プロバイダーによってのみ実装されます。 **OpenTemplateID**を実装するプロバイダーは、外部のアドレス帳プロバイダーと呼ばれます。 ホスト プロバイダーがコピーしたエントリを作成またはコピーした項目を開くには、 [IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md)を呼び出すし、MAPI は、 **IABLogon::OpenTemplateID**の呼び出しに渡されます。 **IABLogon::OpenTemplateID**は、エントリを表示し、ホスト プロバイダー内のデータにそれを制御するコードをバインドします。 
   
@@ -133,7 +133,7 @@ _LpTemplateID_に渡されたエントリ id を認識していない場合は�
   
 [IPropData: IMAPIProp](ipropdataimapiprop.md)
   
-[PidTagTemplateid の標準的なプロパティ](pidtagtemplateid-canonical-property.md)
+[PidTagTemplateid 標準プロパティ](pidtagtemplateid-canonical-property.md)
   
-[IABLogon: IUnknown](iablogoniunknown.md)
+[IABLogon : IUnknown](iablogoniunknown.md)
 

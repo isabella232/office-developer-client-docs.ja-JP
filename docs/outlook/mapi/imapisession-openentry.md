@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a4df4860-cf4f-4e97-97c4-fcd89b7f1f91
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: f23b4855b7e2faeb599868f8c2db52ae9cbfbfd8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800687"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オブジェクトを開き、追加のアクセスのインターフェイス ポインターを返します。
   
@@ -38,7 +38,7 @@ HRESULT OpenEntry(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -110,7 +110,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > _LpEntryID_パラメーターで渡されたエントリ id が、認識できない形式です。 この値は通常、オブジェクトが含まれているサービス プロバイダーが開いていない場合に返されます。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージが保存、またはアドレス帳オブジェクト、インターフェイスへのポインターを返す**IMAPISession::OpenEntry**メソッドが表示は、オブジェクトへのアクセスに使用できます。 
   
@@ -139,13 +139,13 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[アドレス帳コンテナー](iaddrbook-openentry.md)
+[IAddrBook::OpenEntry](iaddrbook-openentry.md)
   
-[IDistList: IMAPIContainer](idistlistimapicontainer.md)
+[IDistList : IMAPIContainer](idistlistimapicontainer.md)
   
-[IMailUser: IMAPIProp](imailuserimapiprop.md)
+[IMailUser : IMAPIProp](imailuserimapiprop.md)
   
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
   
 [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md)
   

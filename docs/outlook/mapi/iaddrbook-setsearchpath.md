@@ -23,7 +23,7 @@ ms.locfileid: "19800395"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 名前解決の処理に使用されるプロファイルに新しい検索パスを設定します。 
   
@@ -54,7 +54,7 @@ MAPI_E_MISSING_REQUIRED_COLUMN
   
 > **PR_ENTRYID**プロパティは、 **SRowSet**構造で説明されているコンテナーの 1 つ含まれていません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントとサービス ・ プロバイダーは、 [IAddrBook::ResolveName](iaddrbook-resolvename.md)メソッドを使用して名前を解決するために使用されるコンテナーの検索順序に加えられた変更を保存する**SetSearchPath**メソッドを呼び出します。 検索パスは、セッションのインスタンス間で保存されます。 
   
@@ -66,11 +66,11 @@ MAPI_E_MISSING_REQUIRED_COLUMN
 
 [IAddrBook::GetDefaultDir](iaddrbook-getdefaultdir.md)
   
-[られたユーザーのプライマリ](iaddrbook-getpab.md)
+[IAddrBook::GetPAB](iaddrbook-getpab.md)
   
 [IAddrBook::GetSearchPath](iaddrbook-getsearchpath.md)
   
-[PidTagContainerFlags の標準的なプロパティ](pidtagcontainerflags-canonical-property.md)
+[PidTagContainerFlags 標準プロパティ](pidtagcontainerflags-canonical-property.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

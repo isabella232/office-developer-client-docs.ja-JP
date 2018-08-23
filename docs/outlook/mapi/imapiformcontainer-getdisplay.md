@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6829e273-4a75-4278-b58a-ae7543e075ac
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0f9826dab72968055604c5bb9f8f537facc5618e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800537"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームのコンテナーの表示名を返します。
   
@@ -66,7 +66,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IMAPIFormContainer: IUnknown](imapiformcontaineriunknown.md)
+[IMAPIFormContainer : IUnknown](imapiformcontaineriunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

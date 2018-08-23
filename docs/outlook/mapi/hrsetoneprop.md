@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 14ae3242-fddf-4199-a9a7-4ab153b31064
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8af0d5c6eaff0c1e01e01c24c46f299e0c637f68
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800320"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 インターフェイスでは、プロパティ、つまり、 [IMAPIProp](imapipropiunknown.md)から派生したインターフェイスの 1 つのプロパティの値を変更または設定します。 
   
@@ -40,7 +40,7 @@ HrSetOneProp(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pmp_
   
@@ -54,7 +54,7 @@ HrSetOneProp(
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [IMAPIProp::SetProps](imapiprop-setprops.md)メソッドとは異なり、 **HrSetOneProp**関数は決して警告を返します。 1 つのプロパティを設定しているため、単に成功または失敗します。 設定、または複数のプロパティを変更する、 **SetProps**が高速です。 
   

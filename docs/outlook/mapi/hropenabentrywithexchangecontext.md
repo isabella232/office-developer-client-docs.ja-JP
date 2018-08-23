@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: b640a5aa-4e36-4983-bf11-9428809e830b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fcedaf689db8280b4649662ba61c8468d0f98305
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19800306"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **PEmsmdbUID**によって識別される、Exchange アドレス帳を使用して**エントリ Id**が表示されます。 この関数は、予想される Exchange アドレス帳プロバイダーを使用して、[アドレス帳コンテナー](iaddrbook-openentry.md)を開くことにより、この関数を使用することを除いて[IAddrBook::Details](iaddrbook-details.md)に同様に動作します。 
   
@@ -41,7 +41,7 @@ HRESULT HrDoABDetailsWithExchangeContext(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pmsess_
   

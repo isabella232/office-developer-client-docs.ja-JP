@@ -19,11 +19,11 @@ ms.locfileid: "19798727"
 テキスト値を、指定された回数だけ繰り返します。
   
 > [!IMPORTANT]
-> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="syntax"></a>構文
 
- **複製**(*TextExpression*、 *NumberOfTimes*) 
+ **Replicate** (TextExpression**, NumberOfTimes**) 
   
 **Replicate** 関数の引数は次のとおりです。 
   

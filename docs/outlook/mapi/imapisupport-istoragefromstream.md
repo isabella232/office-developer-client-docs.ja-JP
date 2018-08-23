@@ -23,7 +23,7 @@ ms.locfileid: "19800753"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ストリームにアクセスするためのストレージ オブジェクトを実装します。
   
@@ -36,7 +36,7 @@ HRESULT IStorageFromStream(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpUnkIn_
   
@@ -76,7 +76,7 @@ S_OK
   
 > ストレージ オブジェクトは正しく作成されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 サービス プロバイダーのサポートのすべてのオブジェクトの**IMAPISupport::IStorageFromStream**メソッドを実装します。 サービス プロバイダーは、特定のプロパティを開くときに使用するストレージ オブジェクトを作成するのには**IStorageFromStream**を呼び出します。 [IStorage](http://msdn.microsoft.com/en-us/library/aa380015%28VS.85%29.aspx)インターフェイスの独自の実装を持つサービス ・ プロバイダーは、 **IStorageFromStream**を呼び出す必要はありません。 
   

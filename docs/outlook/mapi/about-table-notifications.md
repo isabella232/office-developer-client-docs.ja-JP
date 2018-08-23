@@ -1,5 +1,5 @@
 ---
-title: テーブルの通知について
+title: テーブル通知について
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799606"
 ---
-# <a name="about-table-notifications"></a>テーブルの通知について
+# <a name="about-table-notifications"></a>テーブル通知について
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアントは、多くの場合については、オブジェクトから直接通知を受け取るに登録する代わりにオブジェクトへの変更の通知をテーブルに依存しています。 通知の送信が発生する一般的な変更には、追加、削除、または行と、重大なエラーの修正が含まれます。 通知が到着したとき、クライアントは、テーブルを再ロードするのには別の呼び出しを行うかどうかを判断できます。 
   

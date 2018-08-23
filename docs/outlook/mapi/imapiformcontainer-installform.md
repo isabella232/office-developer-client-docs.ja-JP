@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b39ca52c-4dbe-41c0-9e1b-3998a9dc9742
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d329d3a14b6026d0bd62df9feba6ccff251e4151
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800524"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム ライブラリにフォームをインストールします。
   
@@ -35,7 +35,7 @@ HRESULT InstallForm(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -115,7 +115,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [MAPIERROR](mapierror.md)
   
-[IMAPIFormContainer: IUnknown](imapiformcontaineriunknown.md)
+[IMAPIFormContainer : IUnknown](imapiformcontaineriunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

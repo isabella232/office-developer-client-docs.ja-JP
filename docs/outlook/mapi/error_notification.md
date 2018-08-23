@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6c5bb383-f8e2-4d79-bcf2-aa86c130e8b1
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 86fe4b0a1a7521c310788505b99f53bc8657de75
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800020"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 重大なエラーに関連する情報をについて説明します。 これが原因でエラーの通知を生成します。 
   
@@ -42,7 +42,7 @@ typedef struct _ERROR_NOTIFICATION
 } ERROR_NOTIFICATION;
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cbEntryID**
   
@@ -68,7 +68,7 @@ MAPI_UNICODE
   
 > エラーを説明する[MAPIERROR](mapierror.md)構造体へのポインター。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **ERROR_NOTIFICATION**構造では、[通知](notification.md)の構造体のメンバー**情報**に含まれる構造体の共用体のメンバーの 1 つです。 **通知**の構造体のメンバー**情報**には、 **ERROR_NOTIFICATION**構造体が含まれている、**通知**の構造体の**ulEventType**メンバーは、 _fnevCriticalError_に設定されています。
   
@@ -78,9 +78,9 @@ MAPI_UNICODE
   
 |**トピック**|**説明**|
 |:-----|:-----|
-|[MAPI でのイベントの通知](event-notification-in-mapi.md) <br/> |通知と通知のイベントの概要です。  <br/> |
+|[MAPI のイベント通知](event-notification-in-mapi.md) <br/> |通知と通知のイベントの概要です。  <br/> |
 |[通知の処理](handling-notifications.md) <br/> |クライアントが通知を処理する方法について説明します。  <br/> |
-|[イベント通知をサポートしています。](supporting-event-notification.md) <br/> |サービス プロバイダーが、 **IMAPISupport**メソッドを使用して、通知を生成する方法について説明します。  <br/> |
+|[イベント通知のサポート](supporting-event-notification.md) <br/> |サービス プロバイダーが、 **IMAPISupport**メソッドを使用して、通知を生成する方法について説明します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -23,7 +23,7 @@ ms.locfileid: "19800434"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI インターフェイスの識別子を記述するために使用する[GUID](guid.md)構造体について説明します。 
   
@@ -38,11 +38,11 @@ typedef struct _GUID
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 **GUID**構造体を参照してください。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI インターフェイスを一意に識別して、特定のインターフェイスをオブジェクトに関連付けるには、 **IID**の構造体が使用されます。 などの場合、クライアントへの呼び出し[IMAPISession::OpenEntry](imapisession-openentry.md)フォルダーを開き、クライアント パラメーターを設定_lpInterface_ **IID**を指すように、 [IMAPIFolder](imapifolderimapicontainer.md)インターフェイスを表します。 MAPI では、IID_IMAPIFolder に**IMAPIFolderIID**を定義します。 **IID**の構造は、OLE インターフェイスを一意に識別するのにも使用されます。 
   

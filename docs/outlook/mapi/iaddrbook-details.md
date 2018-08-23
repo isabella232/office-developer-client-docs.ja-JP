@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4eee4382-98c3-4714-8920-8d72edef00b8
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fbe7f02555f76532896c951f50648c528c250a58
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800390"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 特定のアドレス帳のエントリに関する詳細情報を表示するダイアログ ボックスが表示されます。
   
@@ -41,7 +41,7 @@ HRESULT Details(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulUIParam_
   
@@ -101,7 +101,7 @@ S_OK
   
 > 詳細] ダイアログ ボックスは、アドレス帳のエントリを正常に表示されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアント アプリケーションでは、アドレス帳の特定のエントリに関する詳細情報を提供するダイアログ ボックスを表示する**詳細**のメソッドを呼び出します。 ボタンを追加する、クライアントの定義] ダイアログ ボックスに、 _lpfButtonCallback_、 _lpvButtonContext_、および_lpszButtonText_パラメーターを使用できます。 ボタンがクリックされると、MAPI は、 _lpvButtonContext_のボタンとデータの両方のエントリ id を渡すこと_lpfButtonCallback_で指定されたコールバック関数を呼び出します。 場合は、[拡張] ボタンを使用する必要はありません、 _lpszButtonText_は NULL である必要があります。 
   
@@ -125,7 +125,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [LPFNBUTTON](lpfnbutton.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

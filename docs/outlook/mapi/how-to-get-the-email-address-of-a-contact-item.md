@@ -15,7 +15,7 @@ ms.locfileid: "19800227"
 ---
 # <a name="get-the-email-address-of-a-contact-item"></a>連絡先アイテムの電子メール アドレスを取得します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックでは、Microsoft Outlook 2010 または Microsoft Outlook 2013 の連絡先アイテムの電子メール アドレスを表す名前付きプロパティの値を取得する方法を示します。
   

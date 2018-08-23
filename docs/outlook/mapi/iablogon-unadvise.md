@@ -23,7 +23,7 @@ ms.locfileid: "19800356"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [IABLogon::Advise](iablogon-advise.md)メソッドの呼び出しで以前設定された通知をキャンセルします。 
   
@@ -33,7 +33,7 @@ HRESULT Unadvise(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulConnection_
   
@@ -45,7 +45,7 @@ S_OK
   
 > 通知の登録は取り消されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI では、メッセージングのユーザーまたは配布リスト オブジェクトのコンテナーであり、通知の登録をキャンセルするのには**Unadvise**メソッドを呼び出します。 
   
@@ -63,5 +63,5 @@ MAPI では、メッセージングのユーザーまたは配布リスト オ�
   
 [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)
   
-[IABLogon: IUnknown](iablogoniunknown.md)
+[IABLogon : IUnknown](iablogoniunknown.md)
 

@@ -29,7 +29,7 @@ ms.locfileid: "19799571"
 |プロパティ タグ。  <br/> |0x000C001F  <br/> |
 |アクセス:  <br/> |値の取得および設定が可能です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
  **PROP_ACCT_USER_EMAIL_ADDR**は、すべてのアカウントが存在するように想定されていません。 [PROP_MAPI_IDENTITY_ENTRYID](prop_mapi_identity_entryid.md)がない**PROP_ACCT_USER_EMAIL_ADDR**、たとえば、Exchange アカウントがある、SMTP と POP3 アカウントの中にこの状況が一変します。
   

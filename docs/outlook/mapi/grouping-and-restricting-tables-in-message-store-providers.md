@@ -1,5 +1,5 @@
 ---
-title: グループ化し、メッセージ ストア プロバイダーのテーブルを制限します。
+title: メッセージ ストア プロバイダーでのテーブルのグループ化と制限
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 01df4be4-98a1-4159-a06d-9ccf4337198f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 33c76cdd0e7850f82949349ac2e5bb0dd4e056ef
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800172"
 ---
-# <a name="grouping-and-restricting-tables-in-message-store-providers"></a>グループ化し、メッセージ ストア プロバイダーのテーブルを制限します。
+# <a name="grouping-and-restricting-tables-in-message-store-providers"></a>メッセージ ストア プロバイダーでのテーブルのグループ化と制限
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアント アプリケーション頻繁にできるように、フォルダーの内容を表示する方法を制御します。 通常、ユーザーはメッセージを 1 つまたは複数のメッセージのプロパティの値に基づいてグループ化することができますか、特定の条件に一致するメッセージを除外することができます。 使用して、これは、 [IMAPITable: IUnknown](imapitableiunknown.md)インタ フェースです。 クライアント アプリケーションは、ユーザーが指定されている基準に、テーブルから返される行を制限できます。 したがって、メッセージは、次**IMAPITable**メソッドを実装するプロバイダーのニーズを格納します。 
   

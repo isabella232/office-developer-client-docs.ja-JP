@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f114f1fa-bc05-4587-875b-71548c5912ea
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6478f2c6c8196fa332a7b019269e6a6266485d1d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800849"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルのステータスおよび種類を返します。
   
@@ -34,7 +34,7 @@ ULONG FAR * lpulTableType
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulTableStatus_
   
@@ -94,7 +94,7 @@ S_OK
   
 > テーブルの状態が正常に返されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPTable::GetStatus**メソッドは、テーブルの種類と現在の状態に関する情報を取得します。 
   
@@ -126,7 +126,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IMAPITable::SortTable](imapitable-sorttable.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

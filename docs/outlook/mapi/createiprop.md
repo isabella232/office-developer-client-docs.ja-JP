@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9bf68814-2564-433d-b762-3d2c83ca3c60
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 906dc4a24b994e079a977808c3f501aaaea9d84f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799859"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロパティのデータ オブジェクトは、 [IPropData](ipropdataimapiprop.md)オブジェクトを作成します。 
   
@@ -44,7 +44,7 @@ SCODE CreateIProp(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpInterface_
   
@@ -80,7 +80,7 @@ MAPI_E_INTERFACE_NOT_SUPPORTED
   
 > このオブジェクトには、要求されたインターフェイスはサポートされていません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 _LpAllocateBuffer_、 _lpAllocateMore_、および_lpFreeBuffer_の入力パラメーターは、それぞれ[MAPIAllocateBuffer](mapiallocatebuffer.md)、 [MAPIAllocateMore](mapiallocatemore.md)、および[MAPIFreeBuffer](mapifreebuffer.md)関数では、] をポイントします。 **CreateIProp**を呼び出すクライアント アプリケーションが MAPI の関数を同じ名前でポインターを渡しますサービス プロバイダーは、これらの関数は、初期化の呼び出しで受信した、 [IMAPISupport::GetMemAllocRoutines](imapisupport-getmemallocroutines.md)メソッドの呼び出しで取得したポインターを渡します。 
   

@@ -23,7 +23,7 @@ ms.locfileid: "19800619"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オフライン オブジェクトの現在のオンラインまたはオフラインの状態を取得します。
   
@@ -33,7 +33,7 @@ HRESULT GetCurrentState(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pulState_
   

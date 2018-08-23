@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2e5ec914-7171-41ce-a6fe-78dd80ac32ff
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fb543f4188578483333614cb5768f903c9f243d2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800901"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ビューアーの現在の状態を取得します。 
   
@@ -33,7 +33,7 @@ ULONG FAR * lpulStatus
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulStatus_
   
@@ -77,7 +77,7 @@ S_OK
   
 > ビューアーのステータスが正常に返されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム オブジェクトのいずれかのフォーム ビューでアクティブにするより多くのメッセージがあるかどうかを決定する**IMAPIViewContext::GetViewStatus**メソッドを呼び出して、または双方向は、**次**のコマンドをアクティブにする方向でのメッセージで、**前**のコマンドが、メッセージをアクティブにする方向または双方向にします。 VCSTATUS_NEXT と VCSTATUS_PREV のフラグが[IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md)に対して有効かどうかを確認するのには、 _lpulStatus_パラメーターが指す値が使用されます。 フラグの場合、VCSTATUS_DELETE セットがない、VCSTATUS_READONLY フラグは、 [IMAPIMessageSite::DeleteMessage](imapimessagesite-deletemessage.md)メソッドを使用してメッセージを削除することができますし。 
   
@@ -99,7 +99,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [IMAPIMessageSite::GetSiteStatus](imapimessagesite-getsitestatus.md)
   
-[IMAPIViewContext: IUnknown](imapiviewcontextiunknown.md)
+[IMAPIViewContext : IUnknown](imapiviewcontextiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6b14c383-8bc6-4e86-bd92-0500272af40d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 694ee8b12b9918502e60c0c6ea92992cc1062945
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800606"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 現在のメッセージが配信のキューに置かれることを要求します。
   
@@ -69,10 +69,10 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [IPersistMessage::HandsOffMessage](ipersistmessage-handsoffmessage.md)
   
-[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)
+[IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォームのインタ フェース](mapi-form-interfaces.md)
+[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
 

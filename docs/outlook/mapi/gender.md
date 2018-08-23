@@ -1,5 +1,5 @@
 ---
-title: 性別
+title: Gender
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800154"
 ---
-# <a name="gender"></a>性別
+# <a name="gender"></a>Gender
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージング ユーザーの性別の値を指定します。
   
@@ -37,7 +37,7 @@ enum Gender {
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  _genderMin_
   
@@ -67,5 +67,5 @@ enum Gender {
 
 
 
-[PidTagGender の標準的なプロパティ](pidtaggender-canonical-property.md)
+[PidTagGender 標準プロパティ](pidtaggender-canonical-property.md)
 

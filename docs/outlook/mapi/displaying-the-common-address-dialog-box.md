@@ -1,5 +1,5 @@
 ---
-title: 共通のアドレス] ダイアログ ボックスを表示します。
+title: '[よく使うアドレス] ダイアログ ボックスの表示'
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799961"
 ---
-# <a name="displaying-the-common-address-dialog-box"></a>共通のアドレス] ダイアログ ボックスを表示します。
+# <a name="displaying-the-common-address-dialog-box"></a>[よく使うアドレス] ダイアログ ボックスの表示
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI の [アドレス] コモン ダイアログ ボックスは、さまざまな受信者リストを構築するなどのアドレス指定のタスクを使用できます。 このダイアログ ボックスを表示するには、 **IAddrBook::Address**を呼び出します。 多くのパラメーターを設定して、それらの組み合わせによって、特定のコンテナーから、特定の種類のエントリを表示を制限できます。
   

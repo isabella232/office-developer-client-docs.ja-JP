@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 80ba893d-3380-4db1-9175-f5b84cb57def
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 69ee06ef8c8f5499dec41232d3dc7b374b15a744
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799747"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブル ビューがリリースされたとき、テーブルのデータ オブジェクトをリリースできるコールバック関数を定義します。 
   
@@ -41,7 +41,7 @@ void CALLERRELEASE(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulCallerData_
   
@@ -55,11 +55,11 @@ void CALLERRELEASE(
   
 > [in]ポインター、 [IMAPITable: IUnknown](imapitableiunknown.md)リリースされている表形式のビューのインターフェイスです。 これは、リリースするオブジェクトを作成した[ITableData::HrGetView](itabledata-hrgetview.md)メソッドの_lppMAPITable_パラメーターで返される table オブジェクトのインターフェイスです。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 なし 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアント アプリケーションまたはサービス プロバイダーのテーブルのデータ オブジェクトにデータを設定するには、読み取り専用で、並べ替えられたテーブルのビューを作成する[ITableData::HrGetView](itabledata-hrgetview.md)を呼び出すことができます。 **HrGetView**への呼び出しは、 **CALLERRELEASE**ベースのコールバック関数とテーブル ・ ビューを保存するコンテキストへのポインターを渡します。 テーブル ビューの参照カウントがゼロに戻ります、ビューがリリースされている、 **IMAPITable**実装は、コンテキストを_ulCallerData_パラメーターに渡して、コールバック関数を呼び出します。 
   

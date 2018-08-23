@@ -22,13 +22,13 @@ ms.locfileid: "19799552"
 
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidInetAcctStamp  <br/> |
+|関連するプロパティ:  <br/> |dispidInetAcctStamp  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x00008581  <br/> |
-|データを入力します。  <br/> |PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_UNICODE  <br/> |
 |領域:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、メッセージを配信しているアカウントについては、アカウント管理 API プロパティの[PROP_ACCT_STAMP](prop_acct_stamp.md)から返される値と同じ値を格納する必要があります。 
   
@@ -52,5 +52,5 @@ ms.locfileid: "19799552"
 
 - [アカウント管理 API について](about-the-account-management-api.md) 
 - [定数 (アカウント管理 API)](constants-account-management-api.md)
-- [PidLidInternetAccountStamp の標準的なプロパティ](http://msdn.microsoft.com/library/819179fe-e58e-415c-abc7-1949036745ee%28Office.15%29.aspx)
+- [PidLidInternetAccountStamp 標準プロパティ](http://msdn.microsoft.com/library/819179fe-e58e-415c-abc7-1949036745ee%28Office.15%29.aspx)
 

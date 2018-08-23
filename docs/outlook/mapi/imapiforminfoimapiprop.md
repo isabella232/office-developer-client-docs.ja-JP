@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a9fda518-11ba-42aa-85ef-dd2279e0319d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fa439d0a6fa59bac787f09c3f894a750948a0a3e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800541"
 ---
-# <a name="imapiforminfo--imapiprop"></a>IMAPIFormInfo: IMAPIProp
+# <a name="imapiforminfo--imapiprop"></a>IMAPIFormInfo : IMAPIProp
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームの定義には特定のプロパティには、クライアント アプリケーション アクセスを提供します。 フォームの情報を保持する別のオブジェクトに、フォーム ライブラリのプロバイダーは、フォームをアクティブにすることがなくクライアントにフォームを記述できます。
   
@@ -47,7 +47,7 @@ ms.locfileid: "19800541"
 |[SaveForm](imapiforminfo-saveform.md) <br/> |構成ファイル内の特定のフォームの説明を保存します。  <br/> |
 |[OpenFormContainer](imapiforminfo-openformcontainer.md) <br/> |特定のフォームがインストールされているフォームのコンテナーへのポインターを返します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MapiForm.h ヘッダー ファイルで定義されているほとんどのインタ フェースとは異なり、 [IMAPIProp::GetProps](imapiprop-getprops.md)メソッドの呼び出しを通じてほとんどのフォームの情報をエクスポートするため**IMAPIFormInfo**を[IMAPIProp](imapipropiunknown.md)インターフェイスから継承します。 
   

@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: be72a893-a3bc-4dea-8234-47f3e1db4515
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: db5ce6576da6f925093ae413c5c5124b2a1a996f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19800240"
 ---
 # <a name="link-to-mapi-functions"></a>MAPI の関数へのリンクします。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 リンクの 3 つの方法があります: 暗黙的なリンク、明示的なリンク、および MAPI スタブ ライブラリを使用して新しいハイブリッド モデルです。
   
@@ -126,9 +126,9 @@ MAPI スタブ ライブラリのファイルにアクセスし、ビルドし�
 ## <a name="see-also"></a>関連項目
 
 - [MAPI �v���O���~���O�̊T�v](mapi-programming-overview.md)
-- [MAPI サブシステムをインストールします。](installing-the-mapi-subsystem.md)
-- [MAPI ヘッダー ファイルをインストールします。](how-to-install-mapi-header-files.md)
-- [MAPI 負荷からの特定のバージョンを選択します。](how-to-choose-a-specific-version-of-mapi-to-load.md)
+- [MAPI サブシステムのインストール](installing-the-mapi-subsystem.md)
+- [MAPI ヘッダー ファイルをインストールする](how-to-install-mapi-header-files.md)
+- [読み込む MAPI の特定のバージョンを選択する](how-to-choose-a-specific-version-of-mapi-to-load.md)
 - [使用するリンク方式の使い分け](http://msdn.microsoft.com/en-us/library/253b8k2c.aspx)
 - [実行可能ファイルを DLL にリンクします。](http://msdn.microsoft.com/en-us/library/9yd93633.aspx)
 - [MAPI DLL の MSI のキーの設定](http://msdn.microsoft.com/en-us/library/ee909494%28v=VS.85%29.aspx)

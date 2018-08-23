@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c35d9e38-f4cf-4908-aaa1-a4263b58f7e8
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d5d0f465ecdf4865ca86448448c56d54d5df4505
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800598"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 現在のメッセージを作成または開いたの MAPI セッションを返します。
   
@@ -33,7 +33,7 @@ HRESULT GetSession(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ppSession_
   
@@ -49,7 +49,7 @@ S_FALSE
   
 > 現在のメッセージのセッションが存在しません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォームのサーバーに関連付けられているインターフェイスの一覧は、 [MAPI フォームのインタ フェース](mapi-form-interfaces.md)を参照してください。
   
@@ -65,7 +65,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)
+[IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

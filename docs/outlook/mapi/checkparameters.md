@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ba33866a-c9c4-454a-9549-72455c61ee97
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a693c06d933c7e93d384aac8da8d5311eaf1d9da
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799815"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI によって呼び出されるサービス プロバイダーのメソッドのデバッグ パラメーターを検証するために内部の関数を呼び出します。 
   
@@ -40,7 +40,7 @@ HRESULT CheckParameters(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _」方法_
   
@@ -56,7 +56,7 @@ S_OK
   
 > 呼び出しが成功しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [CheckParms](checkparms.md)マクロでは、 **CheckParameters**マクロを置き換えられています。 すべてのプラットフォームでは、 **CheckParms**をお勧めします。 
   

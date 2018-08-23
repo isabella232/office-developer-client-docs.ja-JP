@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b6a5096f-ad27-48b3-b569-f33efc20fa72
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e68211049bc0f958ae24975f4ab4063953eef567
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800464"
 ---
-# <a name="imapiclientshutdown--iunknown"></a>IMAPIClientShutdown: IUnknown
+# <a name="imapiclientshutdown--iunknown"></a>IMAPIClientShutdown : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアント プロセスの高速シャット ダウンを実行するために MAPI クライアントを有効にします。 
   
@@ -44,7 +44,7 @@ ms.locfileid: "19800464"
 |[NotifyProcessShutdown](imapiclientshutdown-notifyprocessshutdown.md) <br/> |続行するのには MAPI クライアントの意図をシャット ダウンを示します。  <br/> |
 |[DoFastShutdown](imapiclientshutdown-dofastshutdown.md) <br/> |MAPI クライアントのクライアントのプロセスを即座に終了するという意図を示しています。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 高速シャット ダウンでは、MAPI クライアントと、読み込まれている MAPI プロバイダーにすると、MAPI クライアントは、MAPI の設定とデータを保存するのにはアクティブな MAPI セッションを許可します。 これにより、MAPI クライアントをすべての外部参照を切断して、データの損失を発生させることがなく終了します。 高速シャット ダウンを行うに必要な MAPI クライアントでは、 **IMAPIClientShutdown**インターフェイスを使用する必要があります。 MAPI クライアントは、 [IMAPISession](imapisessioniunknown.md)オブジェクトの IUnknown::QueryInterface メソッドを呼び出して、このインターフェイスへのポインターを取得できます。 
   

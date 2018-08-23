@@ -23,7 +23,7 @@ ms.locfileid: "19800572"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 開始するためのフォームをダウンロードします。
   
@@ -35,7 +35,7 @@ HRESULT PrepareForm(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -73,5 +73,5 @@ S_OK
   
 [IMAPIFormMgr::LoadForm](imapiformmgr-loadform.md)
   
-[IMAPIFormMgr: IUnknown](imapiformmgriunknown.md)
+[IMAPIFormMgr : IUnknown](imapiformmgriunknown.md)
 

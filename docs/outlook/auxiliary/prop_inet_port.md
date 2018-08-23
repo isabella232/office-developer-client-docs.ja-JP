@@ -25,14 +25,14 @@ ms.locfileid: "19799575"
 |識別子:  <br/> |0x0104  <br/> |
 |プロパティの種類:  <br/> |PT_DWORD  <br/> |
 |プロパティ タグ。  <br/> |0x01040003  <br/> |
-|アクセス:  <br/> |値の取得のみ可能です。  <br/> |
+|アクセス:  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 例は、POP アカウントは 110 です。
   
 ## <a name="see-also"></a>関連項目
 
-- [管理メッセージは、POP3 アカウントのダウンロードします。](managing-message-downloads-for-pop3-accounts.md) 
+- [POP3 アカウントのメッセージ ダウンロードの管理](managing-message-downloads-for-pop3-accounts.md) 
 - [定数 (アカウント管理 API)](constants-account-management-api.md)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: fe340182-f41e-42e7-b8e8-cc005b1e9a5f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 784430f1286c9a017337a0fae4b269757a56a3e8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800368"
 ---
-# <a name="iablogon--iunknown"></a>IABLogon: IUnknown
+# <a name="iablogon--iunknown"></a>IABLogon : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳プロバイダー内のリソースをアクセスします。
   
@@ -51,7 +51,7 @@ ms.locfileid: "19800368"
 |[GetOneOffTable](iablogon-getoneofftable.md) <br/> |送信メッセージの受信者の一覧に追加する受信者を作成するための 1 回限りのテンプレートのテーブルを返します。  <br/> |
 |[PrepareRecips](iablogon-preparerecips.md) <br/> |メッセージング システムによって後で使用できる受信者のリストを準備します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IABLogon**インターフェイスのメソッドの詳細については、[実装するサービス プロバイダーへのログオン](implementing-service-provider-logon.md)を参照してください。
   

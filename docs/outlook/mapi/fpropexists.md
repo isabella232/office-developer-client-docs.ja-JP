@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 33c00752-cdc1-4cbe-8fca-6b06c78bd362
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ccfb503f62ef039700f79cd8852883685f329dfe
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800123"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **IMAPIProp**、 [IMessage](imessageimapiprop.md)や[IMAPIFolder](imapifolderimapicontainer.md)などから派生した[IMAPIProp](imapipropiunknown.md)インターフェイスまたはインターフェイスの指定されたプロパティ タグを検索します。 
   
@@ -40,7 +40,7 @@ BOOL FPropExists(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pobj_
   
@@ -50,7 +50,7 @@ BOOL FPropExists(
   
 > [in]検索するプロパティ タグです。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 TRUE 
   
@@ -60,7 +60,7 @@ FALSE
   
 > 指定されたプロパティ タグの一致は見つかりませんでした。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 型 PT_UNSPECIFIED、 _ulPropTag_パラメーターのプロパティ タグの場合、 **FPropExists**関数は、プロパティの識別子にのみ基づいて一致するを探します。 それ以外の場合、一致が、型を含め、全体のプロパティ タグです。 
   

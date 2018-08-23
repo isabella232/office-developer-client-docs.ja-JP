@@ -23,7 +23,7 @@ ms.locfileid: "19800874"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 新規または既存のメッセージがフォームで読み込まれているフォーム ビューアーを通知します。
   
@@ -31,7 +31,7 @@ ms.locfileid: "19800874"
 HRESULT OnNewMessage( void );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 なし
   
@@ -41,7 +41,7 @@ S_OK
   
 > 通知が成功しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム オブジェクトは、 [IPersistMessage::InitNew](ipersistmessage-initnew.md)または[IPersistMessage::Load](ipersistmessage-load.md)のいずれかのメソッドを使用してフォームのメッセージが読み込まれるたびに、 **IMAPIViewAdviseSink::OnNewMessage**メソッドを呼び出します。 
   
@@ -55,11 +55,11 @@ S_OK
 
 
 
-[IMAPIForm: IUnknown](imapiformiunknown.md)
+[IMAPIForm : IUnknown](imapiformiunknown.md)
   
 [IPersistMessage::InitNew](ipersistmessage-initnew.md)
   
 [IPersistMessage::Load](ipersistmessage-load.md)
   
-[IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)
+[IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md)
 

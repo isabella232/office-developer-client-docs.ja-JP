@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e3608c47-06be-4476-a6ef-060fac252387
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 08ecb718572944db07c2888e0aae1464bd5c0f98
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800178"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 グローバル一意識別子 (GUID) をについて説明します。 
   
@@ -42,7 +42,7 @@ typedef struct _GUID
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **Data1**
   
@@ -60,7 +60,7 @@ typedef struct _GUID
   
 > 符号なしの文字の配列。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
  **GUID**構造体は、次のようの MAPI で使用されます。 
   

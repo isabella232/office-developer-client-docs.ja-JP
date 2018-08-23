@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: b4e7fed2-88e4-4e14-90b6-913a1b7e338a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: cb6138072cd5dedc528168d4056041661c40fd06
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19800298"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **OpenEntry**メソッドが必要な Exchange のアドレス帳プロバイダーで開かれているようにします。 この関数は、 [IAddrBook::Details](iaddrbook-details.md)と同様に動作しますが、 _pEmsmdbUID_パラメーターで指定された Exchange のアドレス帳を使用して**エントリ Id**を表示します。 
   
@@ -47,7 +47,7 @@ HRESULT HrOpenABEntryWithExchangeContext(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pmsess_
   

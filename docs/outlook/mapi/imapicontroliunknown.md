@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5a647e15-ba22-4a7c-b235-75cd76b77c1a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 395e44c2ea54816fab9f29dbedfe5e165e98c7b7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800453"
 ---
-# <a name="imapicontrol--iunknown"></a>IMAPIControl: IUnknown
+# <a name="imapicontrol--iunknown"></a>IMAPIControl : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ボタン コントロールを無効にでき、クライアント アプリケーションのユーザーが有効なコントロールをクリックしたときにタスクを実行します。 サービス プロバイダーは、設定プロパティ シートの表示のテーブルを使用して定義されているなどのダイアログ ボックスにカスタム ボタンを作成するコントロール オブジェクトを実装します。 
   

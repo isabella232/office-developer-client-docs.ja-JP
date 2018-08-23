@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a8ada6fe-9963-4c25-b4b4-db77f9517368
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 85161fb87e798bbb03b267f9760870da1246e48d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799909"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI システムからのアイドル状態のルーチンを削除する[FNIDLE](fnidle.md)に基づいています。 
   
@@ -39,7 +39,7 @@ VOID DeregisterIdleRoutine(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ftg_
   
@@ -49,13 +49,13 @@ VOID DeregisterIdleRoutine(
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 _Ftg_の有効なパラメーターを持っている、アイドル状態のルーチンはクライアント アプリケーションまたはサービス プロバイダーの任意のタスクの登録を解除できます。 具体的には、アイドル、ルーチンが登録を解除自体。 
   
 次の関数では、MAPI アイドル エンジンと[FNIDLE](fnidle.md)関数のプロトタイプに基づくのアイドル処理ルーチンを処理します。 
   
-|**アイドル状態の日常的な関数**|**使用例**|
+|**アイドル状態の日常的な関数**|**使用状況**|
 |:-----|:-----|
 |[ChangeIdleRoutine](changeidleroutine.md) <br/> |登録されているアイドル状態のルーチンの特性を変更します。  <br/> |
 |**DeregisterIdleRoutine** <br/> |MAPI システムから登録されているアイドル状態のルーチンを削除します。  <br/> |

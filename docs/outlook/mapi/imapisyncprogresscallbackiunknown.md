@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 146b5e36-8d73-4949-9fed-1074f707423d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: bce70d891bc33dcddb94fc05992c09991c6cdc63
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800818"
 ---
-# <a name="imapisyncprogresscallback--iunknown"></a>IMAPISyncProgressCallback: IUnknown
+# <a name="imapisyncprogresscallback--iunknown"></a>IMAPISyncProgressCallback : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPISIB 構造体のフィールドとしての呼び出し中に、ストア プロバイダーを渡します[IMAPISync: SynchronizeInBackground](imapisyncsynchronizeinbackground.md)。 ストア プロバイダーでは、このインターフェイスを使用して、Microsoft Outlook に同期の状態に関するフィードバックを提供します。
   
@@ -40,14 +40,14 @@ MAPISIB 構造体のフィールドとしての呼び出し中に、ストア �
 |||
 |:-----|:-----|
 |[Progress](imapisyncprogresscallback-progress.md) <br/> |ストア プロバイダーは、定期的に [送受信] ダイアログ ボックスのステータスを更新するには、この関数を呼び出します。  <br/> |
-|[Error](imapisyncprogresscallback-error.md) <br/> |同期中にエラーが発生する場合、ストア プロバイダーは、[送受信] ダイアログ ボックスに表示される詳細情報を提供するには、この関数を呼び出します。  <br/> |
+|[エラー](imapisyncprogresscallback-error.md) <br/> |同期中にエラーが発生する場合、ストア プロバイダーは、[送受信] ダイアログ ボックスに表示される詳細情報を提供するには、この関数を呼び出します。  <br/> |
 |[終了](imapisyncprogresscallback-done.md) <br/> |ストア プロバイダーは、Outlook の同期が完了したことを通知するためにこの関数を呼び出します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[IMAPISync: IUnknown](imapisynciunknown.md)
+[IMAPISync : IUnknown](imapisynciunknown.md)
 
 
 [MAPI インターフェイス](mapi-interfaces.md)

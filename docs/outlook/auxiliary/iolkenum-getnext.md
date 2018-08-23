@@ -29,7 +29,7 @@ HRESULT IOlkEnum:: GetNext(
 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _ppunk_
   
@@ -42,7 +42,7 @@ _ppunk_
 |S_OK  <br/> |呼び出しが成功しました。  <br/> |
 |S_FALSE  <br/> |列挙子には、末尾に到達します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 *Ppunk*によって指定されたインターフェイスは、 **IUnknown**から継承します。 クライアントは、 **IOlkAccount**インターフェイスへのポインターを取得する ( **IUnknown::QueryInterface**を使用して) このインターフェイスを問い合わせることができますを取得したり、このアカウントの情報を設定します。 
   

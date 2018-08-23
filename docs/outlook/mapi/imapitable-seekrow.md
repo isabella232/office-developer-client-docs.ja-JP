@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 93ac63ae-f254-45e1-a9b1-347d69d2ed9f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 143ca03a5e98d638d29394f5c0803e349ab4de25
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800848"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブル内の特定の位置にカーソルを移動します。
   
@@ -35,7 +35,7 @@ LONG FAR * lplRowsSought
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _bkOrigin_
   
@@ -79,7 +79,7 @@ MAPI_W_POSITION_CHANGED
   
 > 呼び出しが成功したが、最後に使用されたときと同じ行に、 _bkOrigin_パラメーターで指定されたブックマークが設定されないことです。 ブックマークが使用されていない場合は不要になった同じ位置に作成されたときと同じ この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::SeekRow**メソッドは、カーソルの新しい BOOKMARK_CURRENT の位置を確立します。 _LRowCount_パラメーターでは、カーソルを移動する行と移動の方向の数を示します。 
   
@@ -123,7 +123,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IMAPITable::SeekRowApprox](imapitable-seekrowapprox.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

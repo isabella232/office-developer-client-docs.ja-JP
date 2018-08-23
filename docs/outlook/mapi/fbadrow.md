@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 205d00df-488d-4888-8782-a1f70f54d720
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c3025c353c71958a19303c5e79cec319a3bf8015
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800060"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブル内の行を検証します。
   
@@ -39,13 +39,13 @@ ULONG FBadRow(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lprow_
   
 > [in]検証する行を識別する[SRow](srow.md)構造体へのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 TRUE 
   

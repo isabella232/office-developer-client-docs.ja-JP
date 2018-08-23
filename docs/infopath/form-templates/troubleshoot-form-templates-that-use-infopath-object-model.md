@@ -25,7 +25,7 @@ ms.locfileid: "19799231"
     
 [トラブルシューティング フォーム テンプレートを InfoPath 2003 オブジェクト モデルで設計時間を使用する](troubleshoot-form-templates-that-use-infopath-object-model-at-design-time.md): InfoPath 2003 と互換性のあるオブジェクト モデルを使用するマネージ コード フォーム テンプレートをデザインするときに発生する可能性がある問題のトラブルシューティングを説明します。
     
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連情報
 
 [コードを含む InfoPath フォーム テンプレートの展開](how-to-deploy-infopath-form-templates-with-code.md): 展開モデルを選択するときに考慮すべき問題と同様にセキュリティ上の問題を含め、ソリューションの配置に関する情報を提供します。
     

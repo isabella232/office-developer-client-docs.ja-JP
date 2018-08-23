@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c085e3e4-5d1e-42ab-8c44-2c326c032aea
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 04dd3ddf43b1dcbab188ce75ef5c6a69186e3f9d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799771"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロパティの属性の指定された番号を含む新しい[SPropAttrArray](spropattrarray.md)構造体に割り当てるバイト数を計算します。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19799771"
 CbNewSPropAttrArray (_cattr)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  __cattr_
   

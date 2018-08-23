@@ -23,7 +23,7 @@ ms.locfileid: "19800446"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ダイアログ ボックスを表示する、クライアント アプリケーションのユーザーは、ボタン コントロールをクリックすると、プログラムの操作を開始するなどのタスクを実行します。
   
@@ -50,7 +50,7 @@ S_OK
   
 > ボタン コントロールが正常にアクティブ化します。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIControl::Activate**メソッドでは、次のボタン コントロールのクリックをユーザーのタスクを実行します。 、表示された表の処理の一部として、クリックが発生した MAPI 後ボタンが有効になっているかどうかを決定する最初の呼び出し[IMAPIControl::GetState](imapicontrol-getstate.md) **をアクティブにする**呼び出しが行われます。 
   
@@ -62,5 +62,5 @@ S_OK
 
 [IMAPIControl::GetState](imapicontrol-getstate.md)
   
-[IMAPIControl: IUnknown](imapicontroliunknown.md)
+[IMAPIControl : IUnknown](imapicontroliunknown.md)
 

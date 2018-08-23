@@ -172,5 +172,5 @@ ms.locfileid: "19799219"
 
 - [InfoPath 2003 オブジェクト モデルを使用する初期化コードと後処理コード](initialization-and-clean-up-code-using-infopath-2003-object-model.md)
 - [InfoPath 2003 互換オブジェクト モデル](infopath-2003-compatible-object-models.md)
-- [InfoPath 2003 オブジェクト モデルを使用してイベント ハンドラーを追加します。](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)
+- [InfoPath 2003 オブジェクト モデルを使用してイベント ハンドラーを追加する](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)
 

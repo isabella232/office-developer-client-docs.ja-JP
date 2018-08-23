@@ -17,7 +17,7 @@ ms.locfileid: "19799614"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI クラッシュ回復 API では、個人用フォルダー ファイル (PST) またはオフライン フォルダー ファイル (OST) の状態データが整合性の取れた状態であることを確認するためのメモリの共有を確認します。 コンシス テント状態の場合は、 [MAPICrashRecovery](mapicrashrecovery.md)関数は、開いているの pst ファイルまたは Ost からのデータをディスクに移動し pst ファイルまたは Ost をロックしの読み取りとデータへの書き込みアクセスが許可されません。 これにより、プロセスが終了するまでは、整合性の取れた状態にデータが残っています。 ことによって、pst ファイルまたは Ost 整合性の取れた状態でプロセスが終了する前に、Microsoft Outlook 2013 および Microsoft Outlook 2010 が次のエラー メッセージを表示することを防止し、パフォーマンスの問題を回避できます。 
   
@@ -37,5 +37,5 @@ MAPI クラッシュ回復 API では、個人用フォルダー ファイル (P
 
 
 
-[MAPI クラッシュ回復 API を使用します。](how-to-use-the-mapi-crash-recovery-api.md)
+[MAPI クラッシュ回復 API を使用する](how-to-use-the-mapi-crash-recovery-api.md)
 

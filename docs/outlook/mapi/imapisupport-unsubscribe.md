@@ -23,7 +23,7 @@ ms.locfileid: "19800810"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [IMAPISupport::Subscribe](imapisupport-subscribe.md)メソッドを呼び出して、以前に設定されている通知を送信するための責任をキャンセルします。 
   
@@ -33,7 +33,7 @@ ULONG ulConnection
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulConnection_
   
@@ -49,7 +49,7 @@ MAPI_E_NOT_FOUND
   
 > _UlConnection_パラメーターに渡される接続の数は存在しません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 サービス プロバイダーのサポートのすべてのオブジェクトの**IMAPISupport::Unsubscribe**メソッドを実装します。 サービス プロバイダーでは、**購読**していた設定、通知の登録をキャンセルする**購読の取り消し**を呼び出します。 **購読**は、**購読**の呼び出しで渡されたアドバイズ シンク ポインターを解放して、登録をキャンセルします。 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 25af3683-3a65-2d39-6f6e-76c8d36f866d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 032f071e18af3a89a2850cf2bd1e141f34bc86d2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800415"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オプションの文字セットを MAPI MIME コンバーターの使用する MAPI メッセージを MIME ストリームに変換するときを指定します。
   
@@ -34,7 +34,7 @@ HRESULT SetCharset(
      CSETAPPLYTYPE csetapplytype); 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _fApply_
   
@@ -67,7 +67,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IConverterSession: IUnknown](iconvertersessioniunknown.md)
+[IConverterSession : IUnknown](iconvertersessioniunknown.md)
   
 [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)
   

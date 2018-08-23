@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a2cdda90-5457-49a7-b98c-7273ffe5cbbc
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c8f05707d63f922c9ce22e6e520c6c57e686f884
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800705"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 セッションのプライマリ id を提供するオブジェクトのエントリ id を返します。
   
@@ -34,7 +34,7 @@ HRESULT QueryIdentity(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpcbEntryID_
   
@@ -54,7 +54,7 @@ MAPI_W_NO_SERVICE
   
 > 呼び出しが成功したが、セッションのプライマリ id がありません。 この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPISession::QueryIdentity**メソッドは、現在のセッションのプライマリ id を取得し、 _lppEntryID_パラメーターを使用して値を返します。 プライマリ id は、通常、メッセージング、ユーザー セッションのユーザーを表すオブジェクトです。  _lppEntryID_は、 [IMailUser](imailuserimapiprop.md)オブジェクトは、 [PidTagEntryID](pidtagentryid-canonical-property.md)プロパティも格納されているプライマリ id を返します。 [IMAPISession::OpenEntry](imapisession-openentry.md)を使用して**IMailUser**オブジェクトを開くには、 _lppEntryID_で返される値を使用できます。
   
@@ -111,9 +111,9 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [MAPI のプライマリ Id](mapi-primary-identity.md)
   
-[プライマリ デバイスとプロバイダーの Id を取得しています。](retrieving-primary-and-provider-identity.md)
+[プライマリとプロバイダー ID の取得](retrieving-primary-and-provider-identity.md)
   
-[エラー処理のためのマクロを使用してください。](using-macros-for-error-handling.md)
+[エラー処理のためのマクロの使用](using-macros-for-error-handling.md)
   
-[状態テーブルとオブジェクトの状態](status-table-and-status-objects.md)
+[状態テーブルと状態オブジェクト](status-table-and-status-objects.md)
 

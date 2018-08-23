@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d29e1f8e-bde8-4a6e-aee8-188cee94fe1a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 34822a2b451fd20a754e275e5d15f4c557de9e1c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799788"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 既存の[SRowSet](srowset.md)構造体のバイト数を計算します。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19799788"
 CbSRowSet (_lprowset)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  __lprowset_
   

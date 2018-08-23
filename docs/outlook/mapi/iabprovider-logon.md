@@ -23,7 +23,7 @@ ms.locfileid: "19800360"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アクティブなセッションへの接続を確立します。
   
@@ -40,7 +40,7 @@ HRESULT Logon(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpMAPISup_
   
@@ -112,7 +112,7 @@ MAPI_E_USER_CANCEL
   
 > ユーザー操作がキャンセルされました、通常、[ログオン] ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 各アドレス帳プロバイダーには、クライアントが、 [IMAPISession::OpenAddressBook](imapisession-openaddressbook.md)メソッドを呼び出すと、セッション ・ プロファイルで接続を確立します。 **OpenAddressBook**は、各プロバイダーの**ログオン**メソッドを呼び出します。 
   
@@ -152,5 +152,5 @@ MAPI_E_FAILONEPROVIDER エラーが発生する場合の戻り値は、メッセ
   
 [MSGSERVICEENTRY](msgserviceentry.md)
   
-[IABProvider: IUnknown](iabprovideriunknown.md)
+[IABProvider : IUnknown](iabprovideriunknown.md)
 

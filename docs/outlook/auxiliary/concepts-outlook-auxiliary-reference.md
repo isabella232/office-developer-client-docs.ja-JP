@@ -22,7 +22,7 @@ ms.locfileid: "19799314"
     
 - [データの劣化層 API について](about-the-data-degradation-layer-api.md)
     
-- [Outlook によってエクスポートされた Api について](about-apis-exported-by-outlook.md)
+- [Outlook によりエクスポートされる API について](about-apis-exported-by-outlook.md)
     
 - [Outlook の構成](outlook-configuration.md)
     

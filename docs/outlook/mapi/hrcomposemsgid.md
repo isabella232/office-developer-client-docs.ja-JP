@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: bb76b147-6552-4cc4-920f-699170aea17f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 418ffdd19412dcf948d36a5e7df33f7978d0df3c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800276"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 通常メッセージ ストア内のメッセージ オブジェクトは、複合のエントリの識別子を表す ASCII 文字列を作成します。 
   
@@ -44,7 +44,7 @@ HrComposeMsgID(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _psession_
   
@@ -74,7 +74,7 @@ HrComposeMsgID(
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージ ストアでメッセージまたは複合のエントリの識別子を作成するための他のオブジェクトが存在する場合、識別子の文字列は、オブジェクトのエントリ id とストアのレコードのキーから作成されます。 オブジェクトがストア内にない場合は、 _cbStoreRecordKey_パラメーターで渡されたストアのレコードのキーのバイト数が 0 の場合オブジェクトのエントリ id は、単にコピーされ、文字列に変換します。 
   

@@ -1,5 +1,5 @@
 ---
-title: (アカウント管理 API) のプロパティ
+title: プロパティ (アカウント管理 API)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799609"
 ---
-# <a name="properties-account-management-api"></a>(アカウント管理 API) のプロパティ
+# <a name="properties-account-management-api"></a>プロパティ (アカウント管理 API)
 
 このセクションでは、アカウント管理 API のプロパティについて説明します。
   

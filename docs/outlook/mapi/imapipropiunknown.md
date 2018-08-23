@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3c9e4e05-cd3a-4b56-9dff-879e33ff6fd5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 02d2b136ed1437ba53ce1e54a202d70a48b2abe9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800673"
 ---
-# <a name="imapiprop--iunknown"></a>IMAPIProp: IUnknown
+# <a name="imapiprop--iunknown"></a>IMAPIProp : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロパティを操作するには、クライアント、サービス プロバイダー、および MAPI を有効にします。 プロパティをサポートするすべてのオブジェクトは、このインターフェイスを実装します。
   
@@ -53,7 +53,7 @@ ms.locfileid: "19800673"
 |[GetNamesFromIDs](imapiprop-getnamesfromids.md) <br/> |1 つまたは複数のプロパティの識別子に対応するプロパティ名を提供します。  <br/> |
 |[GetIDsFromNames](imapiprop-getidsfromnames.md) <br/> |1 つまたは複数のプロパティ名に対応するプロパティの識別子を提供します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
  **IMAPIProp**は、次のインターフェイスの基本インターフェイスです。 
   

@@ -28,7 +28,7 @@ HRESULT IOlkEnum::Skip(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _cSkip_
   

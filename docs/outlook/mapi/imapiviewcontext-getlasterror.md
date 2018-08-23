@@ -23,7 +23,7 @@ ms.locfileid: "19800870"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ビュー コンテキスト オブジェクトが発生する前のエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。 
   
@@ -35,7 +35,7 @@ LPMAPIERROR FAR * lppMAPIError
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _hResult_
   
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > か、MAPI_UNICODE フラグが設定された**発生しました**が、Unicode をサポートしていませんまたは MAPI_UNICODE が設定されていないと**GetLastError**を Unicode のみサポートしています。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIViewContext::GetLastError**メソッドでは、失敗したメソッド呼び出しに関する情報を提供します。 呼び出し元は、ダイアログ ボックスに**MAPIERROR**構造体のデータを含めることによって、エラーの詳細情報をユーザーを提供できます。 
   
@@ -81,5 +81,5 @@ MAPI_E_BAD_CHARWIDTH
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[IMAPIViewContext: IUnknown](imapiviewcontextiunknown.md)
+[IMAPIViewContext : IUnknown](imapiviewcontextiunknown.md)
 

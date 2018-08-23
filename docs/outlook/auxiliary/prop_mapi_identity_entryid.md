@@ -29,7 +29,7 @@ ms.locfileid: "19799568"
 |プロパティ タグ。  <br/> |0x20020102  <br/> |
 |アクセス:  <br/> |値の取得および設定が可能です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
  **プロペラ\_MAPI\_の ID\_エントリ ID**のすべてのアカウントの存在ではありません。 たとえば、Exchange アカウントがある**プロペラ\_MAPI\_の ID\_ENTRYID**設定ではなく[プロペラ\_ACCT_USER_EMAIL_ADDR](prop_acct_user_email_addr.md)、SMTP と POP3 アカウントの場合は、逆です。 **プロペラ\_MAPI_IDENTITY_ENTRYID** [IMAPISession::QueryIdentity](http://msdn.microsoft.com/library/a2cdda90-5457-49a7-b98c-7273ffe5cbbc%28Office.15%29.aspx)の_lppEntryID_によって返される値を次のようなエントリ ID を返します。 
   

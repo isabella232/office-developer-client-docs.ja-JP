@@ -1,5 +1,5 @@
 ---
-title: ディスク インスタンスおよびキャッシュのテーブル
+title: ディスク インスタンスとキャッシュ テーブル
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,9 +15,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799926"
 ---
-# <a name="disk-instances-and-cache-tables"></a>ディスク インスタンスおよびキャッシュのテーブル
+# <a name="disk-instances-and-cache-tables"></a>ディスク インスタンスとキャッシュ テーブル
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームをアクティブにするには、実行可能ファイルをユーザーのコンピューターで使用できるにする必要があります。 利用できない場合は、これらでローカル ディスクにフォーム ライブラリからにコピーする必要があります。 これを行うには、既定のフォーム マネージャーは、フォームの実行可能ファイルを格納するユーザーの Windows ディレクトリのサブディレクトリを作成 (。Exe、します。HLPs)。 このディレクトリは、"フォームのディスク インスタンス"と呼ばれます。
   

@@ -17,7 +17,7 @@ ms.locfileid: "19800185"
 ---
 # <a name="handling-named-property-errors"></a>名前付きプロパティのエラーの処理
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)�܂���[IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)�傫�����鏈�����������悤�ɗv������ꍇ�A�G���[�l MAPI_E_TOO_BIG ���Ԃ���܂��B���M�҂ɉ�������K�v������܂��A�o�Ȉ˗��ɕ����A�������̈˗��A���[�v�œK�؂ȃ��\�b�h���܂��B 
   

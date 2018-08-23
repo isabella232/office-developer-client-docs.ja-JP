@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d6341acc-c6ca-4605-93af-77230040339d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 96fd317c28d95335a3acc5d0603298f2fe8345e9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800844"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルの列の一覧を返します。
   
@@ -58,7 +58,7 @@ MAPI_E_BUSY
   
 > 別の操作により、列の進行状況の設定の取得操作の開始されます。 実行中の操作を完了できるか、それを停止する必要があります。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 取得する場合に、 **IMAPITable::QueryColumns**メソッドを呼び出すことができます。 
   
@@ -94,7 +94,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [SPropTagArray](sproptagarray.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

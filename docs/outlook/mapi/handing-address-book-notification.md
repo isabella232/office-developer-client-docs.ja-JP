@@ -17,7 +17,7 @@ ms.locfileid: "19800168"
 ---
 # <a name="handing-address-book-notification"></a>アドレス帳の通知の処理
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳の通知は、任意のアドレス帳のエントリに、または特定のエントリに、発生するイベントを取得するためのクライアントを使用できます。 [IAddrBook::Advise](iaddrbook-advise.md)を呼び出すことによって、MAPI アドレス帳またはアドレス帳コンテナーの階層構造または内容のテーブルを介して、これらの通知を登録するには、 [IMAPITable::Advise](imapitable-advise.md)を呼び出すことです。 
   

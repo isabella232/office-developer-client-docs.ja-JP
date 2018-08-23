@@ -23,7 +23,7 @@ ms.locfileid: "19800816"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ストアの正常型解放を要求します。
   
@@ -33,7 +33,7 @@ ULONG FAR * lpulFlags
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulFlags_
   
@@ -83,7 +83,7 @@ S_OK
   
 > ログオフ プロシージャが正常に完了しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージ ストア プロバイダーのサポート オブジェクトの**IMAPISupport::StoreLogoffTransports**メソッドを実装します。 メッセージ ストア プロバイダーは、クライアント アプリケーションにメッセージ ・ ストアとして MAPI ハンドル トランスポート プロバイダーのアクティビティを終了する方法をある程度制御を提供する**StoreLogoffTransports**を呼び出します。 
   

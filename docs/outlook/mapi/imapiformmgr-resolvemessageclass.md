@@ -23,7 +23,7 @@ ms.locfileid: "19800587"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームのコンテナー内のフォームにメッセージ クラスを解決し、そのフォームのフォームについてはオブジェクトを取得します。
   
@@ -36,7 +36,7 @@ HRESULT ResolveMessageClass(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _szMsgClass_
   
@@ -68,7 +68,7 @@ MAPI_E_NOT_FOUND
   
 > _SzMsgClass_パラメーターで渡されたメッセージ クラスでは、フォーム ライブラリ内の任意のフォームのメッセージ クラスが一致しません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォームの閲覧者は、フォームのコンテナー内のフォームにメッセージ クラスを解決するのには**IMAPIFormMgr::ResolveMessageClass**メソッドを呼び出します。 _PpResult_パラメーターに返されるフォームの情報オブジェクトを特定のメッセージ クラスを含むフォームのプロパティへのアクセスをさらに提供します。 
   
@@ -86,11 +86,11 @@ MAPI_E_NOT_FOUND
 
 
 
-[IMAPIFormInfo: IMAPIProp](imapiforminfoimapiprop.md)
+[IMAPIFormInfo : IMAPIProp](imapiforminfoimapiprop.md)
   
 [IMAPIFormMgr::CreateForm](imapiformmgr-createform.md)
   
 [IMAPIFormMgr::PrepareForm](imapiformmgr-prepareform.md)
   
-[IMAPIFormMgr: IUnknown](imapiformmgriunknown.md)
+[IMAPIFormMgr : IUnknown](imapiformmgriunknown.md)
 

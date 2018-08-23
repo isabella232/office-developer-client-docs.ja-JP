@@ -1,5 +1,5 @@
 ---
-title: 使用可能なイベントと、dispid を (Outlook でエクスポートされた Api)
+title: 使用可能なイベントの dispid (Outlook エクスポート Api)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799312"
 ---
-# <a name="available-events-and-their-dispids-outlook-exported-apis"></a>使用可能なイベントと、dispid を (Outlook でエクスポートされた Api)
+# <a name="available-events-and-their-dispids-outlook-exported-apis"></a>使用可能なイベントの dispid (Outlook エクスポート Api)
 
 このセクションでは、Outlook で使用可能なイベントのディスパッチ識別子について説明します。
   
@@ -29,8 +29,8 @@ Dispid を使用して聴くし、イベントを処理する方法の例を参�
   
 ## <a name="see-also"></a>関連項目
 
-- [Outlook は、Api をエクスポートします。](outlook-exported-apis.md)
+- [Outlook でエクスポートされている API](outlook-exported-apis.md)
 - [(Outlook エクスポート Api) 定数](constants-outlook-exported-apis.md)
-- [Outlook によってエクスポートされた Api について](about-apis-exported-by-outlook.md)
+- [Outlook によりエクスポートされる API について](about-apis-exported-by-outlook.md)
 - [MFC C 2003 .NET のシンクを Outlook 2002/XP のイベントを実装します。](http://www.codeproject.com/Articles/4230/Implementing-Outlook-2002-XP-Event-Sinks-in-MFC-C)
 

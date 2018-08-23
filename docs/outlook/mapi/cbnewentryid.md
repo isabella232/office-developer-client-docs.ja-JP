@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 69cb8e0b-4da0-46ef-b1c0-df5e3a791b08
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d9b782be440e1af50cb5994691268aa098a1a7cd
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799760"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 指定したサイズの新しい[エントリ ID](entryid.md)の構造体に割り当てるバイト数を計算します。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19799760"
 CbNewENTRYID (_cb)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  __cb_
   

@@ -23,7 +23,7 @@ ms.locfileid: "19800803"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [送受信] ダイアログ ボックスに表示される詳細情報を提供します。 同期中にエラーが発生する場合、ストア プロバイダーは、この関数を呼び出します。
   
@@ -34,7 +34,7 @@ HRESULT Error(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  **hResult**
   
@@ -54,5 +54,5 @@ S_OK
 
 
 
-[IMAPISyncProgressCallback: IUnknown](imapisyncprogresscallbackiunknown.md)
+[IMAPISyncProgressCallback : IUnknown](imapisyncprogresscallbackiunknown.md)
 

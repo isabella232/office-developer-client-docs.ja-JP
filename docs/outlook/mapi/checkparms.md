@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 328f12f0-e4e7-407f-8eb8-0d4bf543962d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e7a4fde57515f0b8a41b9acf4adb01dd177a7a19
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799791"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI によって呼び出されるサービス プロバイダーのメソッドのデバッグ パラメーターを検証するために内部の関数を呼び出します。 
   
@@ -40,7 +40,7 @@ HRESULT CheckParms(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _」方法_
   
@@ -56,7 +56,7 @@ S_OK
   
 > 呼び出しが成功しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [ValidateParms](validateparms.md)と[UlValidateParms](ulvalidateparms.md)のマクロとは異なり、 **CheckParms**マクロでは、完全なパラメーターの検証は実行されません。 MAPI とサービスの間で渡されるパラメーター プロバイダーと見なされ、正しい**CheckParms**デバッグ検証のみを実行するようにします。 
   

@@ -23,7 +23,7 @@ ms.locfileid: "19800550"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームに独自のメッセージの競合を処理できるかどうかを決定します。 メッセージとは競合している場合は複数のユーザーによって同時に編集されましたが。 パブリック フォルダー内のメッセージに可能性があります。
   
@@ -35,7 +35,7 @@ HRESULT IsInConflict(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulMessageFlags_
   
@@ -63,7 +63,7 @@ S_FALSE
   
 > フォームは、独自のメッセージの競合を処理または対象の情報が渡されたメッセージは競合ではないです。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム ビューアーは、特定のフォームが独自のメッセージの競合を処理していないかどうかを検出する**IMAPIFormMgr::IsInConflict**メソッドを呼び出します。 **IsInConflict**では、競合のフラグが存在する_ulMessageFlags_および_ulMessageStatus_パラメーターにビットマスクがチェックされます。 競合のフラグが設定されている場合、 **IsInConflict**は、 _szMessageClass_パラメーターに渡されるメッセージ クラスを解決し、フォームは、独自の競合を処理しない場合は、S_OK を返します。 **IsInConflict**は、フォームは、独自の競合を処理する場合に S_FALSE を返します。 
   
@@ -79,9 +79,9 @@ S_FALSE
 
 [IMAPIFormAdviseSink::OnActivateNext](imapiformadvisesink-onactivatenext.md)
   
-[PidTagMessageFlags の標準的なプロパティ](pidtagmessageflags-canonical-property.md)
+[PidTagMessageFlags 標準プロパティ](pidtagmessageflags-canonical-property.md)
   
-[PidTagMessageStatus の標準的なプロパティ](pidtagmessagestatus-canonical-property.md)
+[PidTagMessageStatus 標準プロパティ](pidtagmessagestatus-canonical-property.md)
   
-[IMAPIFormMgr: IUnknown](imapiformmgriunknown.md)
+[IMAPIFormMgr : IUnknown](imapiformmgriunknown.md)
 

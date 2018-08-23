@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: cee1a940-fe01-d364-5d7c-c9e9dfeb8979
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ac6584819b5dfa96a5f7816f1d77b89323e3eaf8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800332"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 特定のプロファイルでオフラインのオブジェクトを開きます。
   
@@ -45,7 +45,7 @@ typedef HRESULT (STDMETHODCALLTYPE HROPENOFFLINEOBJ)(
 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulReserved_
   
@@ -77,7 +77,7 @@ MAPI_E_NOT_FOUND
   
 - 関数呼び出しが失敗しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これは、クライアントでクライアントは、特定のプロファイルの接続状態の変更の通知を希望する場合は、最初の呼び出しです。 **HrOpenOfflineObj**を呼び出すと、時に、クライアントは、 **IMAPIOfflineMgr**をサポートしているオフラインのオブジェクトを取得します。 クライアントを使用して[IMAPIOffline::GetCapabilities](imapioffline-getcapabilities.md))、オブジェクトがサポートするコールバックの種類を確認し、コールバックを (を使用して設定[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md))。
   
@@ -89,12 +89,12 @@ Msmapi32.dll のこの関数のアドレスを検索するには、 [GetProcAddr
 
 
 
-[IMAPIOffline: IUnknown](imapiofflineiunknown.md)
+[IMAPIOffline : IUnknown](imapiofflineiunknown.md)
   
-[IMAPIOfflineMgr: IMAPIOffline](imapiofflinemgrimapioffline.md)
+[IMAPIOfflineMgr : IMAPIOffline](imapiofflinemgrimapioffline.md)
 
 
-[オフラインの状態の API について](about-the-offline-state-api.md)
+[オフライン状態 API について](about-the-offline-state-api.md)
   
 [MAPI �萔](mapi-constants.md)
 

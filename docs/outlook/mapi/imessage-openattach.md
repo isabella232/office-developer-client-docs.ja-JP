@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b680f5a7-0df3-4e7b-bf3b-f149eb42be8d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c702e4063bf5e5a06a9e476a02172a780c7e326a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800892"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 添付ファイルを開きます。 
   
@@ -36,7 +36,7 @@ HRESULT OpenAttach(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulAttachmentNum_
   
@@ -72,7 +72,7 @@ S_OK
   
 > 添付ファイルが正常に開かれました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMessage::OpenAttach**メソッドは、メッセージの添付ファイルを開きます。 
   

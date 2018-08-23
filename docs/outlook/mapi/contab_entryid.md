@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 84251222-dac4-4f4d-97b9-aa0e2cd26c44
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2c8661f24ed9555547446cf63fc08a3be7e6e941
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19799813"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 連絡先フォルダーのエントリ ID が含まれています。
   
@@ -42,7 +42,7 @@ typedef struct _contab_entryid
 #pragma pack() 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **abFlags**
   
@@ -77,7 +77,7 @@ typedef struct _contab_entryid
   
 > 連絡先アドレス帳内のこのエントリに関連付けられている取引先担当者のメッセージのエントリ id です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 連絡先のアドレス帳は、アドレス帳を電子メール アドレスまたは fax 番号のいずれかを持つ連絡先フォルダー内のすべての連絡先アイテムを含むです。 連絡先のアドレス帳内の各エントリは、電子メール アドレスまたは fax 番号のいずれかに関連付けられます。 連絡先アイテムは、最大 3 つの電子メール アドレスを持つことができますので、3 つの fax 番号を 6 つまでのエントリに対応する連絡先のアドレス帳で連絡先アイテムを表すことができます。
   

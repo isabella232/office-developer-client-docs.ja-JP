@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9eec90d3-2369-4340-86ed-0efa58918ed5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 73eb92b0c1b88e114775231695b91157a3d26a2b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800435"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 通知に応答するには、1 つまたは複数のタスクを実行します。 実行するタスクは、イベントおよび通知を生成するオブジェクトの種類によって異なります。 
   
@@ -34,7 +34,7 @@ ULONG OnNotify(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cNotif_
   
@@ -50,7 +50,7 @@ S_OK
   
 > 通知が正常に処理されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントまたは MAPI は、特定のオブジェクトの特定の種類の通知を受け取るに登録するのには**サービス プロバイダーのメソッド**を呼び出しを行うときに、通知の処理が開始されます。 **アドバイズ**メソッドにパラメーターの 1 つは、 [IMAPIAdviseSink](imapiadvisesinkiunknown.md)インターフェイスを実装するアドバイズ シンク オブジェクトへのポインターです。 MAPI を介して直接または間接的を登録済みの通知は、サービス プロバイダーに対応するターゲット オブジェクトにイベントが発生したときは、アドバイズ シンクの**OnNotify**メソッドを呼び出します。 
   
@@ -109,7 +109,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [�ʒm](notification.md)
   
-[IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md)
+[IMAPIAdviseSink : IUnknown](imapiadvisesinkiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

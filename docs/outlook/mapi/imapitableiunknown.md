@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f25be2b1-0f94-4a0c-b29d-d2201dc70ab7
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0ffaf5909c978059343067c93a2b30f5969327e4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800852"
 ---
-# <a name="imapitable--iunknown"></a>IMAPITable: IUnknown
+# <a name="imapitable--iunknown"></a>IMAPITable : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルの読み取り専用ビューを提供します。 **IMAPITable**は、テーブルの表示方法を操作するクライアントとサービス ・ プロバイダーによって使用されます。 
   

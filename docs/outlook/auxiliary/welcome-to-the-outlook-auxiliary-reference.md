@@ -30,23 +30,23 @@ Outlook オブジェクト モデルの詳細については、 [Outlook の VBA
   
 - [スパム対策の設定について](about-anti-spam-settings.md)
     
-- [管理メッセージは、POP3 アカウントのダウンロードします。](managing-message-downloads-for-pop3-accounts.md)
+- [POP3 アカウントのメッセージ ダウンロードの管理](managing-message-downloads-for-pop3-accounts.md)
     
 - [POP3 アカウントのメッセージのダウンロードの履歴を検索します。](locating-the-message-download-history-for-a-pop3-account.md)
     
 - [POP3 アカウントのメッセージのダウンロードの履歴の解析](parsing-the-message-download-history-for-a-pop3-account.md)
     
-- [カスタムの項目の種類の競合の解決について](about-conflict-resolution-for-custom-item-types.md)
+- [ユーザー設定アイテム タイプの競合解決について](about-conflict-resolution-for-custom-item-types.md)
     
-- [オフライン アドレス帳の最終更新時刻について](about-the-last-update-time-of-an-offline-address-book.md)
+- [オフライン アドレス帳の最終更新時について](about-the-last-update-time-of-an-offline-address-book.md)
     
-- [自動構成の新しいドメインの登録について](about-registering-a-new-domain-for-automatic-configuration.md)
+- [自動構成のための新しいドメインの登録について](about-registering-a-new-domain-for-automatic-configuration.md)
     
 - [情報更新および完全な更新としての会議出席依頼について](about-meeting-requests-as-informational-updates-and-full-updates.md)
     
 - [夏時間のプログラムを使用して予定表を再配置について](about-rebasing-calendars-programmatically-for-daylight-saving-time.md)(インストーラーが用意されても、再配布可能なサード ・ パーティの予定表の再配置ツールの以前のバージョンの Outlook にも、Outlook 2010 以降です。 インストーラーをダウンロードするを参照してください[Outlook 2010: 補助型の参照の再頒布可能なインストーラーと再配置の予定表のヘッダー ファイル](http://www.microsoft.com/downloads/details.aspx?FamilyID=77748863-4352-4b99-ae57-1d4ae803983b)。)。
     
-- [バイナリ プロパティをストリームに永続化の TZDEFINITION について](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
+- [バイナリ プロパティにコミットするためにストリームに TZDEFINITION を保持することについて](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
 
 ## <a name="reference"></a>リファレンス
 
@@ -60,21 +60,21 @@ Outlook オブジェクト モデルの詳細については、 [Outlook の VBA
     
 - [空き/予約済みの API](about-the-free-busy-api.md)は、特定の時間範囲内の特定のユーザー アカウントの空き時間情報のステータス情報を提供します。 
 
-## <a name="sample-tasks"></a>サンプル タスク (英語)
+## <a name="sample-tasks"></a>サンプル タスク
 
 Outlook 補助リファレンスに関する「方法」タスクの例を以下に示します。
     
-- [Outlook アイテムが変更されたが、(Outlook の補助参照) が保存されていないかどうかを決定します。](how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
+- [Outlook アイテムが変更されたが保存されていないかどうかを確認する (Outlook の補助リファレンス)](how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
     
-- [TZDEFINITION 構造体を読み取るためのバイナリのプロパティからのストリームを解析します。](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md)
+- [バイナリ プロパティからのストリームを解析し、TZDEFINITION 構造体を読み取る](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md)
     
-- [TZREG 構造体を読み取るためのバイナリのプロパティからのストリームを解析します。](how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md)
+- [バイナリ プロパティからのストリームを解析し、TZREG 構造体を読み取る](how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md)
     
 - [予定からタイム ゾーンのプロパティを読み取る](how-to-read-time-zone-properties-from-an-appointment.md)
     
-- [(Outlook の補助参照) を Outlook で連絡先の画像を表示するかどうかを指定します。](https://msdn.microsoft.com/en-us/library/office/gg262879.aspx)
+- [Outlook (Outlook の補助リファレンス) で、連絡先の画像を表示するかどうかを指定](https://msdn.microsoft.com/en-us/library/office/gg262879.aspx)
     
-- [空き時間情報データにアクセスする相対時間を使用します。](how-to-use-relative-time-to-access-free-busy-data.md)
+- [空き時間情報データにアクセスするのに相対時間を使用する](how-to-use-relative-time-to-access-free-busy-data.md)
     
 各 API への参照には、定数、型定義、およびその他の機能を使用する開発者が実装する必要があるインターフェイスが一覧表示されます。
   

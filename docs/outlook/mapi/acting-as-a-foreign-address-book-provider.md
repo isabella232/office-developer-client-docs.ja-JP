@@ -17,7 +17,7 @@ ms.locfileid: "19799621"
 ---
 # <a name="acting-as-a-foreign-address-book-provider"></a>外部のアドレス帳プロバイダーとして動作しています。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 外部のプロバイダーは、アドレス帳プロバイダーです。 
   

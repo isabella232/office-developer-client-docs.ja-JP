@@ -21,7 +21,7 @@ ms.locfileid: "19800765"
 ---
 # <a name="imapisupportnotify"></a>IMAPISupport::Notify
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 通知の[IMAPISupport::Subscribe](imapisupport-subscribe.md)メソッドを最初に登録されたアドバイズ ソースに指定されたイベントの通知を送信します。 
   
@@ -34,7 +34,7 @@ ULONG FAR * lpulFlags
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _lpKey_
   
@@ -68,7 +68,7 @@ S_OK
   
 > 通知が正常に生成されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 サービス プロバイダーのサポートのすべてのオブジェクトの**IMAPISupport::Notify**メソッドを実装します。 サービス プロバイダーでは、MAPI が以前に**IMAPISupport::Subscribe**メソッドを介して通知の登録がアドバイズ シンクに通知を生成することを要求する**通知**を呼び出します。 
   
@@ -95,6 +95,6 @@ _LpKey_パラメーターに渡された通知のキーは、 _lpKey_ 、 **IMAP
 - [NOTIFCALLBACK](notifcallback.md) 
 - [�ʒm](notification.md)  
 - [NOTIFKEY](notifkey.md)  
-- [PidTagRecordKey の標準的なプロパティ](pidtagrecordkey-canonical-property.md)  
+- [PidTagRecordKey 標準プロパティ](pidtagrecordkey-canonical-property.md)  
 - [IMAPISupport: IUnknown](imapisupportiunknown.md)
 

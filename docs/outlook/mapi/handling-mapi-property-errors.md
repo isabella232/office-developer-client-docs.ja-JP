@@ -17,7 +17,7 @@ ms.locfileid: "19800174"
 ---
 # <a name="handling-mapi-property-errors"></a>MAPI プロパティのエラーを処理します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 �S�ʓI�Ɏ��s�����܂��͐��������ꍇ�́A����ɂ́A���� **IMAPIProp**���@�́A�����I�Ȑ�����񍐂��܂��B 
   
@@ -39,7 +39,7 @@ ms.locfileid: "19800174"
   
 **GetLastError**�́AWindows SDK �ɓ������O�̊֐��Ɏ��Ă��܂��B�߂�l�Ŏg�p�ł���ł͂Ȃ����ڍׂȃG���[�Ɋւ�����̑o����񋟂��܂��B���҂́A�O�̃G���[�������������ƂɊւ������Ԃ��܂��B���́AWin32 **GetLastError**�֐��̌Ăяo�����̃X���b�h�ɂ���Đ������ꂽ�G���[ ���|�[�g **IMAPIProp::GetLastError**����݂̃I�u�W�F�N�g�ɂ���Đ������ꂽ�G���[�̕񍐂ł��B�܂�A�N���C�A���g�ł́A���b�Z�[�W�� MAPI_E_NO_ACCESS �� **DeleteProps**��Ăяo���ꍇ�́A���̃��b�Z�[�W�͓ǂݎ���p�A **GetLastError**���b�Z�[�W����񋟂��ꂽ�f�[�^��Ԃ����Ƃ�����Ԃ���܂��B 
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
-- [MAPI Property Overview](mapi-property-overview.md)
+- [MAPI のプロパティの概要](mapi-property-overview.md)
 

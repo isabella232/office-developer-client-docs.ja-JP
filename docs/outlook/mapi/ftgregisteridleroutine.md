@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8d9557ba-7919-42c6-9e2f-f10214437d53
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0d3f24c41f2cfbd499d92e050c74da904dd4c377
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19800139"
 ---
 # <a name="ftgregisteridleroutine"></a>FtgRegisterIdleRoutine
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI システムには、 [FNIDLE](fnidle.md)関数に基づくアイドル ルーチンを追加します。 
   
@@ -41,7 +41,7 @@ FTG FtgRegisterIdleRoutine(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _pfnIdle_
   
@@ -91,15 +91,15 @@ _iroIdle_
     
   > _CsecIdle_パラメーターによって指定される時間は、ユーザー何もしなかったため、MAPI アイドル エンジンは、最初にアイドル ルーチンを呼び出す前に必要な経過時間の最小期間です。 この時間が経過した後、アイドル状態のエンジンでは必要に応じてアイドル ルーチンを呼び出すことができます。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 **FtgRegisterIdleRoutine**関数では、MAPI システムに追加されたアイドル ルーチンを識別する関数のタグを取得します。 **FtgRegisterIdleRoutine**は、クライアント アプリケーションまたはサービス プロバイダーのアイドル状態のルーチンを登録できません、する場合は、メモリの問題のため NULL を返します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 次の関数では、MAPI アイドル エンジンと[FNIDLE](fnidle.md)関数のプロトタイプに基づくのアイドル処理ルーチンを扱います。 
   
-|**アイドル状態の日常的な関数**|**使用例**|
+|**アイドル状態の日常的な関数**|**使用状況**|
 |:-----|:-----|
 |[ChangeIdleRoutine](changeidleroutine.md) <br/> |登録されているアイドル状態のルーチンの特性を変更します。  <br/> |
 |[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |MAPI システムから登録されているアイドル状態のルーチンを削除します。  <br/> |

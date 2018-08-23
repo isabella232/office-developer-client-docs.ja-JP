@@ -1,5 +1,5 @@
 ---
-title: attConversationID と attParentID
+title: attConversationID and attParentID
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,21 +15,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799698"
 ---
-# <a name="attconversationid-and-attparentid"></a>attConversationID と attParentID
+# <a name="attconversationid-and-attparentid"></a>attConversationID and attParentID
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ワークグループ 3.1 メールの会話のキーのウィンドウは、テキスト文字列です。 MAPI 対応は、バイナリ値です。 下位互換性を提供するには、TNEF の実装はバイナリ データをテキストに変換し、終端の null 文字を追加します。
   
 > [!NOTE]
 > MAPI に対応するプロパティに、これらの TNEF の属性がマップされている PR_CONVERSATION_KEY と PR_PARENT_KEY では削除されて Microsoft Exchange Server: **PR_CONVERSATION_KEY**PidTagConversationKey の標準的な[の使用プロパティ](pidtagconversationkey-canonical-property.md)、のみは IPM の**を検索するため、Outlook 内で永続化します。MessageManager**メッセージです。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **PR_CONVERSATION_KEY**プロパティは、 **PR_CONVERSATION_INDEX** [PidTagConversationIndex の標準的なプロパティ](pidtagconversationindex-canonical-property.md)と**PR_CONVERSATION_TOPIC**PidTagConversationTopic の標準的な[のそれ以外の場合古い前身プロパティ](pidtagconversationtopic-canonical-property.md)を代わりに使用する必要があります。
   
 ## <a name="see-also"></a>関連項目
 
 - [IPM サブツリー](ipm-subtree.md)
-- [MAPI の特別なフォルダーです。](mapi-special-folders.md)
+- [MAPI ���ʂȃt�H���_�[](mapi-special-folders.md)
 

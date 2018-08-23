@@ -1,5 +1,5 @@
 ---
-title: フォーム構成ファイルの [拡張子] セクション
+title: フォーム構成ファイル [Extensions] セクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800080"
 ---
-# <a name="form-configuration-file-extensions-section"></a>フォーム構成ファイルの [拡張子] セクション
+# <a name="form-configuration-file-extensions-section"></a>フォーム構成ファイル [Extensions] セクション
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **[拡張機能]** セクションには、フォーム構成ファイルの **[説明]** セクションに記載されている基本的なもの以外の任意の属性には、フォームでは、通常、名前付きプロパティを設定するの拡張属性が一覧表示されます。 拡張属性は、プロパティ タグで設定する上位ビットの**IMAPIFormInfo**オブジェクトの**GetProps**メソッドへの呼び出しから返されるプロパティです。 クライアント アプリケーションは、該当する場合、これらのタグを取得することによって、フォームの拡張属性を決定できます。 これを行うには、クライアントは、フォームのプロパティの名前を渡して、 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)メソッドを呼び出すし、プロパティを取得する[IMAPIProp::GetProps](imapiprop-getprops.md)メソッドを呼び出します。 
   

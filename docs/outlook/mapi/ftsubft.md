@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6619fc41-5518-44ce-85c1-6b0077ed5cb9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 954630b0b92772d961dc61084c28a9ab419e4c2f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800146"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 別の 1 つの符号なし 64 ビット整数を減算します。 
   
@@ -40,7 +40,7 @@ FILETIME FtSubFt(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _被減数_
   
@@ -50,7 +50,7 @@ FILETIME FtSubFt(
   
 > [in]_被減数_パラメーターで指定された値から減算する符号なし 64 ビット整数を格納する**FILETIME**構造体。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 **FtSubFt**関数では、減算の結果を格納する**FILETIME**構造体を返します。 2 つの入力パラメーターは変更されません。 
   

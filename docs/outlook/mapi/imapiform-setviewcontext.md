@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a7b10007-42d8-4755-8362-f8ad9a8dad68
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c1ba49ba1b4deacb684da1411d86ebd4dd19e63f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800513"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームのビュー コンテキストを確立します。 
   
@@ -33,7 +33,7 @@ HRESULT SetViewContext(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pViewContext_
   
@@ -45,7 +45,7 @@ S_OK
   
 > ビュー コンテキストが正常に設定されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム ビューアーは、現在として、特定のフォーム ビューのコンテキストを確立するために**IMAPIForm::SetViewContext**メソッドを呼び出します。 フォームでは、同時にのみ 1 つのビュー コンテキストを持つことができます。 
   
@@ -81,7 +81,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IMAPIViewContext::SetAdviseSink](imapiviewcontext-setadvisesink.md)
   
-[IMAPIForm: IUnknown](imapiformiunknown.md)
+[IMAPIForm : IUnknown](imapiformiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

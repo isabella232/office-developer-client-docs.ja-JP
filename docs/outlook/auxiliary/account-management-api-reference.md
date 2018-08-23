@@ -23,7 +23,7 @@ ms.locfileid: "19799298"
     
 - [データ型](data-types-account-management-api.md)
     
-- [インタ フェース](interfaces-account-management-api.md)
+- [インターフェイス](interfaces-account-management-api.md)
     
 - [名前付きプロパティ](named-properties-account-management-api.md)
     

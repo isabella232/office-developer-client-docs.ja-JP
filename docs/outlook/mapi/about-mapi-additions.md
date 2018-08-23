@@ -15,7 +15,7 @@ ms.locfileid: "19799612"
 ---
 # <a name="about-mapi-additions"></a>MAPI の追加について
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI の追加機能は、Api などのデータ型、関数、およびプロパティは、以前いない公開され、MAPI のプログラマーズ リファレンスの一部として記述する MAPI メッセージング アプリケーション プログラミング インターフェイス () が属しています。 次の定義とプロパティが含まれます。
   
@@ -29,11 +29,11 @@ MAPI の追加機能は、Api などのデータ型、関数、およびプロ�
     
 - **[FollowUpStatus](followupstatus.md)**
     
-- **[性別](gender.md)**
+- **[Gender](gender.md)**
     
 - **[OlFlagIcon](olflagicon.md)**
     
-## <a name="functions"></a>�֐�
+## <a name="functions"></a>関数
 
 - **[FixMAPI](fixmapi.md)**
     
@@ -233,8 +233,8 @@ MAPI の追加機能は、Api などのデータ型、関数、およびプロ�
     
 ## <a name="see-also"></a>関連項目
 
-- [Exchange キャッシュ モードでは、リモート サーバーと Outlook のストアのアクセス](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)  
-- [Outlook プロファイルに Exchange Server のバージョンを検出します。](how-to-detect-the-version-of-exchange-server-in-an-outlook-profile.md)
-- [ストアがリモート サーバーと Outlook の Exchange キャッシュ モードでは、開いています。](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
-- [OST 内のメッセージを Exchange キャッシュ モードで同期を呼び出すことがなく管理します。](how-to-manage-a-message-in-an-ost-without-invoking-a-synchronization.md)
+- [Outlook が Exchange キャッシュ モードの場合にリモート サーバーでストアにアクセスする](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)  
+- [Outlook プロファイルで Exchange Server のバージョンを検出する](how-to-detect-the-version-of-exchange-server-in-an-outlook-profile.md)
+- [Outlook が Exchange キャッシュ モードの場合にリモート サーバーでストアを開く](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
+- [Exchange キャッシュ モードで同期を呼び出すことなく OST でメッセージを管理する](how-to-manage-a-message-in-an-ost-without-invoking-a-synchronization.md)
 

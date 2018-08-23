@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d4f153b2-939f-4153-85fb-dc510193848c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 21ea5faaccb81e763d6d062b6ff567db509d9d35
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800795"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 またはサービスの要求のステータスが変更された、MAPI スプーラーに通知します。 
   
@@ -88,7 +88,7 @@ S_OK
   
 > 通知が正常に完了しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPISupport::SpoolerNotify**メソッドはメッセージの格納およびプロバイダーのサポートのオブジェクトを転送します。 これらのプロバイダーは、状態、またはサービスの要求が変更された、MAPI スプーラーを通知するために**SpoolerNotify**を呼び出します。 **SpoolerNotify**は主にトランスポート プロバイダーによって呼び出され、セッション中にいつでも呼び出すことができます。 
   
@@ -112,7 +112,7 @@ _UlFlags_を NOTIFY_CRITICAL_ERROR に設定すると、MAPI スプーラーに�
   
 **SpoolerNotify**を呼び出す方法の詳細については、次のトピックを参照してください。
   
-- [FlushQueues メソッドを実装します。](implementing-the-flushqueues-method.md)
+- [FlushQueues メソッドの実装](implementing-the-flushqueues-method.md)
     
 - [MAPI スプーラーとの対話](interacting-with-the-mapi-spooler.md)
     

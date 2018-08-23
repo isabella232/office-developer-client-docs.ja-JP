@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 341ad06b-1caa-49bb-b859-cb512f6fb55d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e0e1535a770d4f1b437faf6a90c5f6415f6000ca
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800143"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 別の 1 つの符号なし 64 ビット整数を追加します。
   
@@ -40,7 +40,7 @@ FILETIME FtAddFt(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _Addend1_
   
@@ -50,7 +50,7 @@ FILETIME FtAddFt(
   
 > [in]追加する 2 番目の符号なし 64 ビット整数を格納する**FILETIME**構造体。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 **FtAddFt**関数は、2 つの整数の合計を格納する**FILETIME**構造体を返します。 2 つの入力パラメーターは変更されません。 
   

@@ -23,7 +23,7 @@ ms.locfileid: "19800716"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ユーザー インターフェイスを表示せずには、サービス プロバイダーのパスワードを変更します。 サービス プロバイダーを実装する状態オブジェクトには、このメソッドはサポートされて必要に応じてします。
   
@@ -35,7 +35,7 @@ HRESULT ChangePassword(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpOldPass_
   
@@ -67,7 +67,7 @@ MAPI_E_NO_SUPPORT
   
 > 状態オブジェクトは、この操作をサポートしていません状態オブジェクトの**PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) のプロパティに STATUS_CHANGE_PASSWORD フラグがない場合で示される。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 ステータスのすべてのオブジェクトは、 **IMAPIStatus::ChangePassword**メソッドをサポートします。 クライアントがパスワードの入力を必要とするサービス ・ プロバイダーでのみサポートされています。 MAPI が実装している状態のオブジェクトの [なし] は、パスワードの変更操作をサポートします。 
   
@@ -81,7 +81,7 @@ MAPI_E_NO_SUPPORT
 
 
 
-[PidTagResourceMethods の標準的なプロパティ](pidtagresourcemethods-canonical-property.md)
+[PidTagResourceMethods 標準プロパティ](pidtagresourcemethods-canonical-property.md)
   
-[IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)
+[IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
 

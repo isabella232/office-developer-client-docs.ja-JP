@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3b8b8d9f-33e1-45c3-b024-9afcaab8839c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: dd828f599d87e3912bf36c46aaee2703a4e2673a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799779"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [SRow](srow.md)構造体によって表される行の指定した番号を含む新しい[SRowSet](srowset.md)構造体に割り当てられるバイト数を計算します。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19799779"
 CbNewSRowSet (_crow)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  __クロウズ_
   

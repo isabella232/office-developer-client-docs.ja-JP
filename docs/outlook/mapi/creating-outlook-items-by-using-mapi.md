@@ -1,5 +1,5 @@
 ---
-title: MAPI を使用して Outlook アイテムを作成します。
+title: MAPI を使用した Outlook アイテムの作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,31 +15,31 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799868"
 ---
-# <a name="creating-outlook-items-by-using-mapi"></a>MAPI を使用して Outlook アイテムを作成します。
+# <a name="creating-outlook-items-by-using-mapi"></a>MAPI を使用した Outlook アイテムの作成
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このセクションのトピックでは、MAPI を使用して Outlook アイテムを作成する方法をデモンストレーションします。
   
-- [このセクションで使用されるサンプルをインストールします。](how-to-install-the-samples-used-in-this-section.md)
+- [このセクションで使用されるサンプルをインストールする](how-to-install-the-samples-used-in-this-section.md)
     
     このトピックでは、インストールして、このセクションで説明したサンプルを表示する方法を説明します。
     
-- [簡易メール アイテムを作成します。](how-to-create-a-simple-mail-item.md)
+- [単純なメール アイテムを作成する](how-to-create-a-simple-mail-item.md)
     
     このトピックでは、開封確認メッセージを要求する単純なメール アイテムを作成する方法を示します。
     
-- [単純な繰り返しのタスク アイテムを作成します。](how-to-create-a-simple-recurrent-task-item.md)
+- [単純な定期実行タスク アイテムを作成する](how-to-create-a-simple-recurrent-task-item.md)
     
     このトピックでは、毎週に発生する簡単な作業項目を作成する方法を示します。
     
-- [複雑な定期的な予定アイテムを作成します。](how-to-create-a-complex-recurrent-appointment-item.md)
+- [複雑な定期実行予定アイテムを作成する](how-to-create-a-complex-recurrent-appointment-item.md)
     
     このトピックも考慮するタイム ゾーンに関連する考慮事項を毎週定期的な予定アイテムを作成する方法を示します。
     
-- [読み取り、定期的なパターンの解析](how-to-read-and-parse-a-recurrence-pattern.md)
+- [定期実行パターンを読んで解析する](how-to-read-and-parse-a-recurrence-pattern.md)
     
     このトピックでは、読み取り、予定アイテムの定期的なパターンを解析する方法を示します。
     

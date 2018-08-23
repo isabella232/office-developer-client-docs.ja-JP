@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 19f0dad9-9704-4bbe-a689-9531e7198351
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e9d8565cfaa17764e92bddafb29e744d23872515
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800868"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [IMAPITable::Advise](imapitable-advise.md)メソッドへの呼び出しは、設定済みの通知の送信をキャンセルします。 
   
@@ -33,7 +33,7 @@ ULONG_PTR ulConnection
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulConnection_
   
@@ -45,7 +45,7 @@ S_OK
   
 > 呼び出しが成功しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::Advise**通知の登録をキャンセルするために以前の呼び出しで_lpAdviseSink_パラメーターで渡されたアドバイズ シンク オブジェクトへのポインターを解放するのにには、 **IMAPITable::Unadvise**メソッドを使用します。 アドバイズ シンク オブジェクトへのポインターを破棄することの一環として、オブジェクト**が**呼び出されます。 **リリース**が呼び出される一般的には、別のスレッドがいる、アドバイズ シンクの[IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出す場合は、 **Unadvise**の呼び出し中に**リリース**の呼び出し、 **OnNotify**まで延期メソッドを返します。 
   
@@ -67,7 +67,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IMAPITable::Advise](imapitable-advise.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

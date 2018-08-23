@@ -23,7 +23,7 @@ ms.locfileid: "19800879"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 現在のメッセージを保存するために使用するストリームを取得します。
   
@@ -35,7 +35,7 @@ LPSTREAM FAR * ppstm
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pulFlags_
   
@@ -67,7 +67,7 @@ S_OK
   
 > ストリームが正常に取得しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム オブジェクトは、ストリーム形式のビューアーで、名前を付けて動詞の処理をサポートするために**IStream**インターフェイスを実装するオブジェクトを取得する**IMAPIViewContext::GetSaveStream**メソッドを呼び出します。 メッセージが完全に適切な文字列形式に変換し、適切なストリームに配置されるまで、 [IMAPIForm::DoVerb](imapiform-doverb.md)メソッドは、フォームのサーバーに実装されているし、動詞を呼び出すフォーム ビューアーによって呼び出されます、する必要があります返されません。 
   
@@ -79,5 +79,5 @@ S_OK
 
 
 
-[IMAPIViewContext: IUnknown](imapiviewcontextiunknown.md)
+[IMAPIViewContext : IUnknown](imapiviewcontextiunknown.md)
 

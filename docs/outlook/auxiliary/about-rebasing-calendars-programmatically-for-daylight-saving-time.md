@@ -1,5 +1,5 @@
 ---
-title: 夏時間のプログラムを使用して予定表を再配置について
+title: 夏時間に合わせてプログラムにより予定表を調整することについて
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799295"
 ---
-# <a name="about-rebasing-calendars-programmatically-for-daylight-saving-time"></a>夏時間のプログラムを使用して予定表を再配置について
+# <a name="about-rebasing-calendars-programmatically-for-daylight-saving-time"></a>夏時間に合わせてプログラムにより予定表を調整することについて
 
 多くの国では、夜が長くなります (夏時間) できるように、時計を進めることで夏時間 (DST) を観察します。 、春に今後 1 時間時計を設定することによってこれは、通常、秋の 1 時間にバックアップの時計の設定。 このトピックでは、春と秋の間には、この期間を DST の期間と呼びます。 ほとんどの国では、DST の開始時と終了時の独自の規制があります。 DST の期間の日付から 1 年に 1 年を変更できます、ユーザーする必要があります更新、Microsoft Outlook の予定表毎回 DST 規則を変更することです。 
   
@@ -66,9 +66,9 @@ Tzmovelib.dll アセンブリを取得するには、「OutlookTimeZoneMoveLibRe
   
 ## <a name="see-also"></a>関連項目
 
-- [バイナリ プロパティをストリームに永続化の TZDEFINITION について](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
-- [TZDEFINITION 構造体を読み取るためのバイナリのプロパティからのストリームを解析します。](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md)
-- [TZREG 構造体を読み取るためのバイナリのプロパティからのストリームを解析します。](how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md)
+- [バイナリ プロパティにコミットするためにストリームに TZDEFINITION を保持することについて](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
+- [バイナリ プロパティからのストリームを解析し、TZDEFINITION 構造体を読み取る](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md)
+- [バイナリ プロパティからのストリームを解析し、TZREG 構造体を読み取る](how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md)
 - [予定からタイム ゾーンのプロパティを読み取る](how-to-read-time-zone-properties-from-an-appointment.md)
 - [夏時間のヘルプとサポート センター](http://support.microsoft.com/gp/cp_dst)
 - [Exchange 予定表更新ツールを使用して夏時間に対応する方法](http://support.microsoft.com/kb/941018)

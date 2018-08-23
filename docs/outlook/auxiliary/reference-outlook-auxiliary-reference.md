@@ -22,8 +22,8 @@ ms.locfileid: "19799587"
     
 - [データの低下のレイヤー API リファレンス](data-degradation-layer-api-reference.md)
     
-- [空き時間情報の API リファレンス](free-busy-api-reference.md)
+- [空き時間情報 API リファレンス](free-busy-api-reference.md)
     
-- [Outlook は、Api をエクスポートします。](outlook-exported-apis.md)
+- [Outlook でエクスポートされている API](outlook-exported-apis.md)
     
 

@@ -27,9 +27,9 @@ ms.locfileid: "19799557"
 |識別子:  <br/> |0x000E  <br/> |
 |プロパティの種類:  <br/> |PT_UNICODE  <br/> |
 |プロパティ タグ。  <br/> |0x000E001F  <br/> |
-|アクセス:  <br/> |値の取得のみ可能です。  <br/> |
+|アクセス:  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [IOlkAccount::GetProp](iolkaccount-getprop.md)を使用してこのプロパティを取得します。 クライアントがこのプロパティを設定しようとすると、このプロパティは**E_OLK_PROP_READ_ONLY**を返します。 
   

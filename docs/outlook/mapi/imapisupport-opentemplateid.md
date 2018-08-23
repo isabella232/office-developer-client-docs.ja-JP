@@ -23,7 +23,7 @@ ms.locfileid: "19800785"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 外部のアドレス帳で受信者のエントリが表示されます。
   
@@ -39,7 +39,7 @@ LPMAPIPROP lpMAPIPropSibling
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbTemplateID_
   
@@ -83,7 +83,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > 外部のアドレス帳プロバイダーが存在しません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPISupport::OpenTemplateID**メソッドは、アドレス帳プロバイダーのサポートのオブジェクトに対してのみ実装されます。 **OpenTemplateID**は、他のアドレス帳プロバイダーとも呼ばれる外部プロバイダーに属しているエントリのホストとして機能する、アドレス帳プロバイダーによってのみ呼び出されます。 ホスト プロバイダーは、ホスト プロバイダー内のデータが外部のプロバイダーのコードにバインドされている場合に発生する、外部のエントリを開くには、 **OpenTemplateID**を呼び出します。 
   
@@ -103,7 +103,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 [IPropData: IMAPIProp](ipropdataimapiprop.md)
   
-[PidTagTemplateid の標準的なプロパティ](pidtagtemplateid-canonical-property.md)
+[PidTagTemplateid 標準プロパティ](pidtagtemplateid-canonical-property.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 

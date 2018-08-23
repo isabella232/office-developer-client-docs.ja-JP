@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8b582571-b448-4476-91d9-4cc94dbec710
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9ea44c9ba75390f06ff12ddeed0c7b652538e07d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800538"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームは、タスクをどのような実行要求は、特定の動作に関連付けます。
   
@@ -36,7 +36,7 @@ HRESULT DoVerb(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _iVerb_
   
@@ -64,7 +64,7 @@ OLEOBJ_S_CANNOT_DOVERB_NOW
   
 > _IVerb_パラメーターによって表される動詞が有効ですが、フォームがそれに関連付けられている操作を実行できません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォームの閲覧者は、フォームがフォームをサポートしている各動詞に関連付けることのタスクを実行することを要求する**IMAPIForm::DoVerb**メソッドを呼び出します。 
   
@@ -112,7 +112,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IMAPIViewContext::GetViewStatus](imapiviewcontext-getviewstatus.md)
   
-[IMAPIForm: IUnknown](imapiformiunknown.md)
+[IMAPIForm : IUnknown](imapiformiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

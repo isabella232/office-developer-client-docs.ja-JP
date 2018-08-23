@@ -1,5 +1,5 @@
 ---
-title: データ劣化層 API について
+title: データ変換レイヤー API について
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799296"
 ---
-# <a name="about-the-data-degradation-layer-api"></a>データ劣化層 API について
+# <a name="about-the-data-degradation-layer-api"></a>データ変換レイヤー API について
 
 データ劣化のレイヤーの API には、オブジェクトのネイティブな文字の形式ではなく、優先される文字の形式でオブジェクトにアクセスするクライアントを許可する、Outlook オブジェクトの基になるネイティブな文字書式を非表示にする機能が提供されます。 [定数 (データの劣化層 API)](constants-data-degradation-layer-api.md)、および[HrCreateNewWrappedObject](hrcreatenewwrappedobject.md)の指定した形式でラップされた Outlook オブジェクトを返す関数で表示されている定数の定義を提供します。 
   

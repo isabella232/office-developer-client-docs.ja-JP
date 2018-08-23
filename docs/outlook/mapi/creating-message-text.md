@@ -17,7 +17,7 @@ ms.locfileid: "19799888"
 ---
 # <a name="creating-message-text"></a>メッセージ テキストを作成します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 いくつかのメッセージは、受信者一覧と件名の行では、IPM では具体的には、ほとんどのメッセージの内容よりもそれ以上の構成されています。メッセージに注意してください、テキストが含まれています。 メッセージをテキスト形式または書式設定された、3 つのプロパティに格納されます: **PR\_本体**([PidTagBody](pidtagbody-canonical-property.md)) **PR\_HTML** ([PidTagHtml](pidtaghtml-canonical-property.md))、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))。 
 

@@ -23,7 +23,7 @@ ms.locfileid: "19800792"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 サービス プロバイダーを一意に表す[MAPIUID](mapiuid.md)構造体を登録します。 
   
@@ -34,7 +34,7 @@ ULONG ulFlags
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpProviderID_
   
@@ -50,7 +50,7 @@ S_OK
   
 > **MAPIUID**構造体は正常に登録されました。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 アドレス帳、メッセージ ストア プロバイダーのサポート オブジェクトの**IMAPISupport::SetProviderUID**メソッドを実装します。 これらのプロバイダーは、 _lpProviderID_に設定されている**MAPIUID**構造体で記載されている一意の識別子を登録するのには**SetProviderUID**を呼び出します。 プロバイダーには、すべてのエントリの識別子を作成するのにこの識別子が含まれます。 
   

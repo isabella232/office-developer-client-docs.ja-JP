@@ -31,7 +31,7 @@ ms.locfileid: "19799491"
 
 |||
 |:-----|:-----|
-|[初期化](iolkaccountmanager-init.md) <br/> |使用のアカウント マネージャーを初期化します。  <br/> |
+|[Init](iolkaccountmanager-init.md) <br/> |使用のアカウント マネージャーを初期化します。  <br/> |
 |[DisplayAccountList](iolkaccountmanager-displayaccountlist.md) <br/> |**アカウントの設定**または**新しいアカウントの追加**] ダイアログ ボックスが表示されます。  <br/> |
 | *プレース ホルダー メンバー*  <br/> | *サポートされているまたは文書化されていません。*  <br/> |
 | *プレース ホルダー メンバー*  <br/> | *サポートされているまたは文書化されていません。*  <br/> |

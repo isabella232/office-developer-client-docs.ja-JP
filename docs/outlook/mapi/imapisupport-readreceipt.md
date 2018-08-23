@@ -23,7 +23,7 @@ ms.locfileid: "19800800"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 読み取りまたはメッセージの nonread のレポートを生成します。
   
@@ -59,7 +59,7 @@ S_OK
   
 > レポートが正常に生成されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPISupport::ReadReceipt**メソッドは、メッセージ ストア プロバイダーのサポートのオブジェクトに対してのみ実装されます。 メッセージ ストア プロバイダーは、読み取りまたは_lpReadMessage_パラメーターで指定されたメッセージの nonread のレポートを生成するための MAPI に指示するために**ReadReceipt**を呼び出します。 
   
@@ -93,7 +93,7 @@ _LppEmptyMessage_パラメーターは、MAPI は、 **ReadReceipt**から返さ
   
 [IMessage::SubmitMessage](imessage-submitmessage.md)
   
-[PidTagReadReceiptRequested の標準的なプロパティ](pidtagreadreceiptrequested-canonical-property.md)
+[PidTagReadReceiptRequested 標準プロパティ](pidtagreadreceiptrequested-canonical-property.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d1b662e2-1516-46b2-ba94-4092d79b5a39
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 17c9a7ba54d7dd0b4d97c06f6343e563223f8100
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800595"
 ---
-# <a name="imapigetsession--iunknown"></a>IMAPIGetSession: IUnknown
+# <a name="imapigetsession--iunknown"></a>IMAPIGetSession : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 サポート オブジェクトに関連付けられている現在の MAPI セッションへのアクセスを提供します。 MAPI プロバイダーには、このインターフェイスは、MAPI のサポート オブジェクトを照会できます。 サポート オブジェクトの詳細については、[オブジェクトのサポートの概要](support-object-overview.md)を参照してください。
   

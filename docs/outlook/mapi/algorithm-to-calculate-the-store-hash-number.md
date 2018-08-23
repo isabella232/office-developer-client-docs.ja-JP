@@ -1,5 +1,5 @@
 ---
-title: 番号を保存するハッシュを計算するアルゴリズム
+title: ストア ハッシュ値を計算するアルゴリズム
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,9 +13,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799654"
 ---
-# <a name="algorithm-to-calculate-the-store-hash-number"></a>番号を保存するハッシュを計算するアルゴリズム
+# <a name="algorithm-to-calculate-the-store-hash-number"></a>ストア ハッシュ値を計算するアルゴリズム
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI 統一リソース ロケーター (URL) の中で、ストア プロバイダーはストアのハッシュ値をインデックス作成の準備ができているオブジェクトを識別する MAPI プロトコル ハンドラーに送信します。 MAPI プロトコル ハンドラーでは、このストアのハッシュ値を使用して、ストアを識別します。 一般的には、ストア プロバイダーでは、ハッシュ番号を保存するストアには、 **[PR_MAPPING_SIGNATURE](pidtagmappingsignature-canonical-property.md)** プロパティは、グローバル プロファイル セクションで定義されている場合、ストア マッピング署名に基づいて計算されます。 ストア プロバイダーが、ストア エントリ ID を使用する場合は、 番号を保存するハッシュを計算するアルゴリズムは、ストアを識別するあいまいさを最小限に抑える必要があります。 
   
@@ -242,6 +242,6 @@ void ComputeStoreHash(LPMAPISESSION lpMAPISession, LPSBinary lpEntryID, LPSBinar
   
 ## <a name="see-also"></a>関連項目
 
-- [ストアの通知に基づくインデックスの作成について](about-notification-based-store-indexing.md)
-- [MAPI Url の通知に基づくインデックス作成について](about-mapi-urls-for-notification-based-indexing.md)
+- [通知ベースのストア インデックス作成について](about-notification-based-store-indexing.md)
+- [通知ベースのインデックス作成の MAPI URL について](about-mapi-urls-for-notification-based-indexing.md)
 

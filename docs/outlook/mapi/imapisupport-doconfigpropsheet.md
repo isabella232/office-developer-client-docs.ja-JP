@@ -23,7 +23,7 @@ ms.locfileid: "19800744"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 構成のプロパティ シートを表示します。
   
@@ -38,7 +38,7 @@ HRESULT DoConfigPropsheet(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -70,7 +70,7 @@ S_OK
   
 > 構成のプロパティ シートが表示されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 サポートのすべてのオブジェクトの**IMAPISupport::DoConfigPropsheet**メソッドを実装します。 **DoConfigPropSheet**は、サービス プロバイダーとサービスのメッセージのプロパティを表示するための標準のユーザー インターフェイスを提供します。 ユーザーは、一貫性のある Windows のインターフェイスから利用できるように、すべての構成プロパティが表示されますのこの標準のダイアログ ボックスを使用してください。 
   
@@ -90,11 +90,11 @@ S_OK
   
 [IABProvider::Logon](iabprovider-logon.md)
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
   
 [IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
   
 [IMSProvider::Logon](imsprovider-logon.md)
   

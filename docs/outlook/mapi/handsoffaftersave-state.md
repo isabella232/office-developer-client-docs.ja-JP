@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: ffdfed49-2c52-445c-8051-6e566f61eedc
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 4bc4d680903d81b51a39ed39db3861597443d116
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.locfileid: "19800200"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 HandsOffAfterSave の状態は、恒久的に保存するフォームの内容を保存するプロセスの一部です。 この状態のときにフォーム オブジェクト避ける必要がある、メモリ内のコピー、メッセージのプロパティの値を変更するため、別の機会をこれらの変更を保存することができません。 次の表では、HandsOffAfterSave の状態から有効な遷移について説明します。
   
-|**IPersistMessage メソッド**|**アクション**|**新しい状態**|
+|**IPersistMessage メソッド**|**操作**|**新しい状態**|
 |:-----|:-----|:-----|
 |[IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md)(_pMessage! =_ NULL)  <br/> |埋め込みオブジェクトを開きます。 _PMessage_に格納されているメッセージ内のデータを保証して、以前の[IPersistMessage::Save](ipersistmessage-save.md)の呼び出し内のメッセージと同じであります。 **SaveCompleted**の呼び出しが成功した場合は、通常の状態を入力します。 それ以外の場合、E_OUTOFMEMORY を最後にエラーを設定し、HandsOffAfterSave 状態のままです。  <br/> |[標準](normal-state.md)または HandsOffAfterSave  <br/> |
 |**IPersistMessage::SaveCompleted**(_pMessage = =_ NULL)  <br/> |E_INVALIDARG、E_UNEXPECTED を最後にエラーを設定します。  <br/> |HandsOffAfterSave  <br/> |

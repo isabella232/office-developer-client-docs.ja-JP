@@ -1,5 +1,5 @@
 ---
-title: MAPI フォームのサーバーの開発
+title: MAPI フォーム サーバーの開発
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799920"
 ---
-# <a name="developing-mapi-form-servers"></a>MAPI フォームのサーバーの開発
+# <a name="developing-mapi-form-servers"></a>MAPI フォーム サーバーの開発
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このセクションでは、フォーム サーバーの実行可能ファイルとカスタム MAPI フォームを作成するためのフォーム構成ファイルを作成するプロセスについて説明します。 このセクションを読む前にする必要があります理解する[MAPI フォーム](mapi-forms.md)内の情報です。
   
@@ -45,5 +45,5 @@ ms.locfileid: "19799920"
 
 
 
-[MAPI �̊T�O](mapi-concepts.md)
+[MAPI の概念](mapi-concepts.md)
 

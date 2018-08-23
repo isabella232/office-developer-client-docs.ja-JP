@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f6b31bb4-69dd-43de-b62b-abfa99557641
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: bf1a84a1f305580fc9d9085753ab7eb5c62b8aa9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19800093"
 ---
 # <a name="fnidle"></a>FNIDLE
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI アイドル エンジンを呼び出すの優先順位に従って定期的にアイドル状態のルーチンを定義します。 
   
@@ -38,19 +38,19 @@ BOOL (STDAPICALLTYPE FNIDLE)(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpvContext_
   
 > [in]アイドル ルーチンへの MAPI のパスは時間、メモリ ブロックへのポインターは、それを呼び出します。 このポインターは、 [FtgRegisterIdleRoutine](ftgregisteridleroutine.md)で、 _pvIdleParam_パラメーターでは、MAPI アイドル エンジンに渡されます。 メモリ ブロック内のデータは、操作対象のオブジェクトなど、アイドル状態のルーチンまたは時間のかかる操作の現在の状態への呼び出しのコンテキストを提供できます。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 FALSE 
   
 > **FNIDLE**プロトタイプでアイドル状態のルーチンは、FALSE を返す常にする必要があります。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 アイドル ルーチンの特定の機能は、実装することによって決定されますクライアント アプリケーションまたはサービス プロバイダーです。 
   
@@ -60,7 +60,7 @@ FALSE
   
 次の関数では、MAPI アイドル エンジンと FNIDLE 関数のプロトタイプに基づくのアイドル処理ルーチンを処理します。 
   
-|**アイドル状態の日常的な関数**|**使用例**|
+|**アイドル状態の日常的な関数**|**使用状況**|
 |:-----|:-----|
 |[ChangeIdleRoutine](changeidleroutine.md) <br/> |登録されているアイドル状態のルーチンの特性を変更します。  <br/> |
 |[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |MAPI システムから登録されているアイドル状態のルーチンを削除します。  <br/> |

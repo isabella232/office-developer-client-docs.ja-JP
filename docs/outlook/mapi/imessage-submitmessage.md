@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ce93469-c55d-48d1-9abb-a637716ed4f2
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1d325c67c836e727d8285bd2dceecf88bf68327c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800900"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 すべてのメッセージのプロパティを保存し、メッセージを送信する準備が完了としてマークを付けます。
   
@@ -53,7 +53,7 @@ MAPI_E_NO_RECIPIENTS
   
 > メッセージの受信者テーブルは空です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMessage::SubmitMessage**メソッドは、メッセージを送信する準備が完了としてをマークします。 MAPI は、メッセージを送信するためマークされている順序で基になるメッセージング システムに渡します。 この機能では、しばらくの間は、基になるメッセージング システムにそれを担当するためにメッセージのメッセージ ストアに常に可能性があります。 先に領収書の順序は、基になるメッセージング システムのコントロールし、メッセージの送信に使用された順序と必ずしも一致しません。 
   

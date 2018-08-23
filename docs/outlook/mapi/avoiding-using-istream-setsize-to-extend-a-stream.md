@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799749"
 ---
-# <a name="avoiding-using-istreamsetsize-to-extend-a-stream"></a>IStream::SetSize を使用してストリームを拡張することを避ける
+# <a name="avoiding-using-istreamsetsize-to-extend-a-stream"></a>IStream::SetSize を使用したストリーム拡張の回避
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 、ストリームに書き込むときの初期サイズが十分でないために、それらを拡大する必要があります。 OLE メソッド**IStream::Write**を使用して、これを実現する**IStream::SetSize**ではなく。 **IStream::Write**は、ストリームを自動的に拡張すること * * IStream::SetSize * * 不要な。 **IStream::SetSize**に**IStream::Write**を呼び出すことは、3 回まで呼び出し**を記述**する前に、 **SetSize**を行うよりも高速。
   

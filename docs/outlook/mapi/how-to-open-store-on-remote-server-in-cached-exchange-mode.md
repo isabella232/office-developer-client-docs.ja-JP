@@ -15,7 +15,7 @@ ms.locfileid: "19800255"
 ---
 # <a name="open-a-store-on-the-remote-server-when-outlook-is-in-cached-exchange-mode"></a>Outlook が Exchange キャッシュ モードではときに、リモート サーバー上のストアを開く
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックには、 **MDB_ONLINE**フラグを使用して Exchange キャッシュ モードでは、Microsoft Outlook 2010 または Microsoft Outlook 2013 には、リモート サーバー上のメッセージ ストアを開く方法を示している C++ でのコード サンプルが含まれています。 
   
@@ -92,5 +92,5 @@ HRESULT HrRemoteMessageStore(
 
 - [MAPI の追加について](about-mapi-additions.md) 
 - [MAPI �萔](mapi-constants.md)
-- [Exchange キャッシュ モードでは、リモート サーバーと Outlook のストアのアクセス](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)
+- [Outlook が Exchange キャッシュ モードの場合にリモート サーバーでストアにアクセスする](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)
 

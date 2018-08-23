@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 53428f8d-4838-46d1-a0ab-cafb194f4cc3
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7de404f421a405d80dd7f98beba5168969222fc9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800691"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ステータス テーブル、セッション内のすべての MAPI リソースに関する情報が含まれているテーブルへのアクセスを提供します。
   
@@ -54,7 +54,7 @@ S_OK
   
 > テーブルが正常に返されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPISession::GetStatusTable**メソッドは、セッション内のすべての MAPI リソースに関する情報を含むステータス テーブルへのアクセスを提供します。 MAPI サブシステムについての情報のテーブルの 1 行、1 行、MAPI スプーラーを無効、統合アドレス帳の 1 つの行とプロファイルには、各サービス プロバイダーの 1 つの行があります。 
   
@@ -74,7 +74,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
   
 [IMAPITable::QueryColumns](imapitable-querycolumns.md)
   
@@ -91,5 +91,5 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[ステータス ・ テーブル](status-tables.md)
+[状態テーブル](status-tables.md)
 

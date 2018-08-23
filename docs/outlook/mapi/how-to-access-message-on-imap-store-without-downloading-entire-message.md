@@ -15,7 +15,7 @@ ms.locfileid: "19800238"
 ---
 # <a name="access-a-message-on-an-imap-store-without-downloading-the-entire-message"></a>IMAP ストアにメッセージをメッセージ全体をダウンロードすることがなくアクセスします。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックは、 **[IProxyStoreObject](iproxystoreobject.md)** インターフェイスでは、メッセージ ・ ストアにクエリを実行し、返されたポインターと、 **[IProxyStoreObject::UnwrapNoRef](iproxystoreobject-unwrapnoref.md)** 関数を使用してされた IMAP ストア オブジェクトへのポインターを取得するための C++ のコード サンプルを示しますラップ解除します。 このラップが解除されたストアを使用すると、メッセージ全体のダウンロードを呼び出すことがなく、現在の状態のメッセージへのアクセスができます。 
   

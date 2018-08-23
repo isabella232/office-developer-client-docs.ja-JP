@@ -1,5 +1,5 @@
 ---
-title: 受信者を作成します。
+title: 受信者の作成
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 586c901f-d9f9-44f2-a328-051775a81265
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c596cb219cb1096f186e616c05b8372fef3b42a0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799870"
 ---
-# <a name="creating-a-recipient"></a>受信者を作成します。
+# <a name="creating-a-recipient"></a>受信者の作成
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアントは、メッセージのアドレスを指定するとき、および変更可能なアドレス帳コンテナーにエントリを追加するには、受信者を作成します。 MAPI には、受信者を作成するための 3 つの方法が用意されています。
   

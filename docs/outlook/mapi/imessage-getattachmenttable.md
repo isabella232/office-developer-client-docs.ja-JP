@@ -23,7 +23,7 @@ ms.locfileid: "19800889"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージの添付ファイル テーブルを返します。
   
@@ -58,7 +58,7 @@ S_OK
   
 > 添付ファイル テーブルが正常に取得しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMessage::GetAttachmentTable**メソッドは、メッセージ内のすべての添付ファイルに関する情報が含まれています、メッセージの添付ファイル テーブルにポインターを返します。 クライアントは、添付ファイル テーブルを介してのみ添付ファイルへのアクセスを取得できます。 添付ファイルの数を取得することによって**PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティは、クライアントが使用できる**IMessage**の方法のいくつかの添付ファイルを操作します。 
   

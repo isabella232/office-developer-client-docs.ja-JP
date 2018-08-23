@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ccacbc0-10d5-40f9-a12b-d090a21d0d49
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0e39f2603a1eef45c456b7fb58744b79c6b75f16
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800384"
 ---
-# <a name="iaddrbook--imapiprop"></a>IAddrBook: IMAPIProp
+# <a name="iaddrbook--imapiprop"></a>IAddrBook : IMAPIProp
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI アドレス帳へのアクセスをサポートし、一般的なダイアログ ボックスを表示するなどの操作が含まれていますコンテナーでは、メッセージングのユーザー、および配布を開くの一覧が表示されます。名前解決を実行します。
   
@@ -48,8 +48,8 @@ MAPI アドレス帳へのアクセスをサポートし、一般的なダイア
 |[CreateOneOff](iaddrbook-createoneoff.md) <br/> |一時アドレスのエントリ id を作成します。  <br/> |
 |[NewEntry](iaddrbook-newentry.md) <br/> |アドレス帳コンテナー、または送信メッセージの受信者の一覧には、新しい受信者を追加します。  <br/> |
 |[ResolveName](iaddrbook-resolvename.md) <br/> |宛先リスト内の受信者にエントリの識別子を割り当て、名前解決を実行します。  <br/> |
-|[Address](iaddrbook-address.md) <br/> |Outlook アドレス帳] ダイアログ ボックスが表示されます。  <br/> |
-|[詳細情報](iaddrbook-details.md) <br/> |特定のアドレス帳のエントリに関する詳細情報を表示するダイアログ ボックスが表示されます。  <br/> |
+|[住所](iaddrbook-address.md) <br/> |Outlook アドレス帳] ダイアログ ボックスが表示されます。  <br/> |
+|[詳細](iaddrbook-details.md) <br/> |特定のアドレス帳のエントリに関する詳細情報を表示するダイアログ ボックスが表示されます。  <br/> |
 |**RecipOptions** <br/> | *いないサポートまたは文書化されています。*  <br/> |
 |**QueryDefaultRecipOpt** <br/> | *いないサポートまたは文書化されています。*  <br/> |
 |[GetPAB](iaddrbook-getpab.md) <br/> |個人用アドレス帳 (PAB) として指定されているコンテナーのエントリの識別子を返します。  <br/> |

@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 99e2c485-af84-46f4-84b4-fca2117b5a21
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6f0ebd2112b65140a106a1376896f6de9c00da1c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19800013"
 ---
 # <a name="error-handling-in-mapi"></a>MAPI でのエラー処理
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ハンドル、または HRESULT を結果として呼ばれる 32 ビットの数値を使用して成功、警告、エラー値が返されます。 HRESULT は本当に何もへのハンドル値のエンコードされたいくつかのフィールドを持つ 32 ビット値だけですることをお勧めします。 ゼロという結果は成功を示し、0 以外の結果は失敗を示します。
   
@@ -25,7 +25,7 @@ MAPI 32 ビットのプラットフォームでは、HRESULT の値でのみ動�
   
 次の図では、32 ビット プラットフォーム用の HRESULT の形式を示します。
   
-**HRESULT の形式**
+**HRESULT の書式**
   
 ![HRESULT の形式](media/amapi_49.gif "HRESULT の形式")
   

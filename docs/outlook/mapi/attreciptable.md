@@ -17,7 +17,7 @@ ms.locfileid: "19799723"
 ---
 # <a name="attreciptable"></a>attRecipTable
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 受信者テーブルがエンコードされている場合、各受信者は、一連の MAPI プロパティとしてエンコードされます。 形式は次のとおりです。 
   

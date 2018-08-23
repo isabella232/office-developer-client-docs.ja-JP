@@ -15,7 +15,7 @@ ms.locfileid: "19800259"
 ---
 # <a name="retrieve-body-of-message-in-compressed-rtf-and-convert-to-its-native-format"></a>圧縮された rtf 形式でメッセージの本文を取得し、ネイティブ形式に変換
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Microsoft C では、このコード例は、関数を使用して、エクスポートされた Microsoft Outlook 2010 または Microsoft Outlook 2013 [WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md)の本文を取得して、圧縮された rtf 形式でカプセル化されたメッセージの本文にアクセスする方法を示します、ネイティブ形式です。 
   

@@ -1,5 +1,5 @@
 ---
-title: フォーム構成ファイルの [動詞] セクション
+title: フォーム構成ファイル [Verbs] セクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800097"
 ---
-# <a name="form-configuration-file-verbs-section"></a>フォーム構成ファイルの [動詞] セクション
+# <a name="form-configuration-file-verbs-section"></a>フォーム構成ファイル [Verbs] セクション
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **[動詞]** セクションには、フォームでサポートされている動詞の完全なセットが一覧表示されます。 **[動詞]** セクションの形式は次のとおりです。 
   

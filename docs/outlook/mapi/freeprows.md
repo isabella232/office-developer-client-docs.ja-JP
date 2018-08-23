@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 0f8f9fc4-4940-4c0a-92cc-2a6409b9a13f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 93659a28969efd0d04e9fc44f8926e89586f7773
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800125"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [SRowSet](srowset.md)構造体を破棄し、すべてのアレイ メンバーと構造体に割り当てられたメモリを含む、関連付けられているメモリを解放します。 
   
@@ -39,7 +39,7 @@ void FreeProws(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _prows_
   

@@ -1,11 +1,11 @@
 ---
-title: レプリケーション状態マシンについて
+title: レプリケーション ステート マシンについて
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: cf36c6cb-57b4-7b2b-e23d-e0bc8696de96
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9ea18f8e5c7eb758780727829fb1e18d2a19ec92
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799611"
 ---
-# <a name="about-the-replication-state-machine"></a>レプリケーション状態マシンについて
+# <a name="about-the-replication-state-machine"></a>レプリケーション ステート マシンについて
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックには、Microsoft Outlook 2013 および Microsoft Outlook 2010 のデータ ・ レプリケーションのステート マシンの概要が含まれています。
   
@@ -48,16 +48,16 @@ ms.locfileid: "19799611"
 |:-----|:-----|:-----|:-----|
 |**State** <br/> |**レプリケートされたデータ** <br/> |**状態識別子** <br/> |**データ構造体** <br/> |
 |[アイドル状態](idle-state.md) <br/> | *None*  <br/> |**LR_SYNC_IDLE** <br/> | *None*  <br/> |
-|[状態を同期します。](synchronize-state.md) <br/> |フォルダーまたはアイテム  <br/> |**LR_SYNC** <br/> |**[同期](sync.md)** <br/> |
+|[状態を同期します。](synchronize-state.md) <br/> |フォルダーまたはアイテム  <br/> |**LR_SYNC** <br/> |**[SYNC](sync.md)** <br/> |
 |[階層の状態をアップロードします。](upload-hierarchy-state.md) <br/> |フォルダー  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**[UPHIER](uphier.md)** <br/> |
 |[アップロード フォルダーの状態](upload-folder-state.md) <br/> |Folder  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**[UPFLD](upfld.md)** <br/> |
-|[内容の状態を同期します。](synchronize-contents-state.md) <br/> |アイテム  <br/> |**LR_SYNC_CONTENTS** <br/> |**[SYNCCONT](synccont.md)** <br/> |
-|[テーブルの状態をアップロードします。](upload-table-state.md) <br/> |アイテム  <br/> |**LR_SYNC_UPLOAD_TABLE** <br/> |**[UPTBL](uptbl.md)** <br/> |
-|[メッセージの状態をアップロードします。](upload-message-state.md) <br/> |Item  <br/> |**LR_SYNC_UPLOAD_MESSAGE** <br/> |**[UPMSG](upmsg.md)** <br/> |
-|[読み取りステータスをアップロードします。](upload-read-status-state.md) <br/> |アイテム  <br/> |**LR_SYNC_UPLOAD_MESSAGE_READ** <br/> |**[UPREAD](upread.md)** <br/> |
-|[削除ステータスをアップロードします。](upload-delete-status-state.md) <br/> |アイテム  <br/> |**LR_SYNC_UPLOAD_MESSAGE_DEL** <br/> |**[UPDEL](updel.md)** <br/> |
+|[内容の状態を同期します。](synchronize-contents-state.md) <br/> |Items  <br/> |**LR_SYNC_CONTENTS** <br/> |**[SYNCCONT](synccont.md)** <br/> |
+|[テーブルの状態をアップロードします。](upload-table-state.md) <br/> |Items  <br/> |**LR_SYNC_UPLOAD_TABLE** <br/> |**[UPTBL](uptbl.md)** <br/> |
+|[メッセージの状態をアップロードします。](upload-message-state.md) <br/> |アイテム  <br/> |**LR_SYNC_UPLOAD_MESSAGE** <br/> |**[UPMSG](upmsg.md)** <br/> |
+|[読み取りステータスをアップロードします。](upload-read-status-state.md) <br/> |Items  <br/> |**LR_SYNC_UPLOAD_MESSAGE_READ** <br/> |**[UPREAD](upread.md)** <br/> |
+|[削除ステータスをアップロードします。](upload-delete-status-state.md) <br/> |Items  <br/> |**LR_SYNC_UPLOAD_MESSAGE_DEL** <br/> |**[UPDEL](updel.md)** <br/> |
 |[階層の状態をダウンロードします。](download-hierarchy-state.md) <br/> |フォルダー  <br/> |**LR_SYNC_DOWNLOAD_HIERARCHY** <br/> |**[DNHIER](dnhier.md)** <br/> |
-|[テーブルの状態をダウンロードします。](download-table-state.md) <br/> |アイテム  <br/> |**LR_SYNC_DOWNLOAD_TABLE** <br/> |**[DNTBL](dntbl.md)** <br/> |
+|[テーブルの状態をダウンロードします。](download-table-state.md) <br/> |Items  <br/> |**LR_SYNC_DOWNLOAD_TABLE** <br/> |**[DNTBL](dntbl.md)** <br/> |
 |[メッセージ ヘッダーの状態をダウンロードします。](download-message-header-state.md) <br/> |メッセージのヘッダー  <br/> |**LR_SYNC_DOWNLOAD_HEADER** <br/> |**[HDRSYNC](hdrsync.md)** <br/> |
    
 ## <a name="state-transition-diagram"></a>状態遷移図
@@ -72,7 +72,7 @@ ms.locfileid: "19799611"
   
 |||||
 |:-----|:-----|:-----|:-----|
-|**手順** <br/> |**アクション** <br/> |**State** <br/> |**関連するデータ構造体** <br/> |
+|**手順** <br/> |**操作** <br/> |**State** <br/> |**関連するデータ構造体** <br/> |
 |1。  <br/> |クライアントは、 **IOSTX::SyncBeg**と階層構造のアップロードを開始します。  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
 |2。  <br/> |2013 の outlook または Outlook 2010 は、クライアントの情報が**UPHIER**に表示されます。 [Out] パラメーターの初期化が含まれます: *iEnt*は、0、およびアップロードする必要がある階層内のフォルダーの数には、*セント*に設定されています。  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
 |3。  <br/> |クライアントには、実際の階層構造のアップロードが行われます。 たとえば、*セント*が、10 個のフォルダーのそれぞれについて、10 の場合、クライアントは**IOSTX::SyncBeg**、適切な状態の識別子およびフォルダーをアップロードするデータ構造体を指定するを呼び出します。  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |

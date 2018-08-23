@@ -23,7 +23,7 @@ ms.locfileid: "19800382"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [IAddrBook::ResolveName](iaddrbook-resolvename.md)メソッドによって開始された名前解決の処理に含まれるコンテナーのエントリ id の順序付きリストを返します。 
   
@@ -54,7 +54,7 @@ S_OK
   
 > 検索パスが正常に取得しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントとサービス ・ プロバイダーは、 **ResolveName**メソッドを使用して名前を解決するために使用される検索パスを取得する**GetSearchPath**メソッドを呼び出します。 通常、クライアントは、それを取得するために**GetSearchPath**を呼び出す前に、プロファイルにコンテナーの検索パスを確立するために[IAddrBook::SetSearchPath](iaddrbook-setsearchpath.md)メソッドを呼び出します。 ただし、 **SetSearchPath**の呼び出しは、省略可能です。 
   
@@ -78,5 +78,5 @@ S_OK
   
 [SRowSet](srowset.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c1cfe71b-01f3-429a-8b4c-73191a2ffea0
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b481eaf00b7568da5f02ffa3301e8f2698a98e1e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800567"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 、フォームを選択するユーザーを有効にする] ダイアログ ボックスを表示し、そのフォームを記述するフォームの情報オブジェクトを返します。
   
@@ -37,7 +37,7 @@ HRESULT SelectForm(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -77,7 +77,7 @@ MAPI_E_USER_CANCEL
   
 > ユーザー操作がキャンセルされました、通常] ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム ビューアー メソッドを呼び出して、 **IMAPIFormMgr::SelectForm**最初の存在するフォームを選択するユーザーを有効にする] ダイアログ ボックスと、選択したフォームを説明する情報のフォーム オブジェクトを取得するために、します。 ダイアログ ボックスには、1 つのフォームを選択するのにはユーザーが制限されます。 
   
@@ -97,7 +97,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IMAPIFormMgr: IUnknown](imapiformmgriunknown.md)
+[IMAPIFormMgr : IUnknown](imapiformmgriunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

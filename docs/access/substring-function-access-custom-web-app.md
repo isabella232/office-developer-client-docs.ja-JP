@@ -19,11 +19,11 @@ ms.locfileid: "19798752"
 文字列式の一部が返されます。
   
 > [!IMPORTANT]
-> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="syntax"></a>構文
 
- **部分文字列**(*TextExpression*、*開始*、*長さ*) 
+ **SubString** (*TextExpression*, *Start*, *Length*) 
   
 **SubString** 関数には次の引数があります。 
   

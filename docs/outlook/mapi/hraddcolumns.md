@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8c980257-9372-4478-b635-bd91d0a66af9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: dc7fa8b546783819b701604a5e489f0fd030ae86
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19800267"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 追加または既存のテーブルの先頭に列を移動します。
   
@@ -38,7 +38,7 @@ HRESULT HrAddColumns(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lptbl_
   
@@ -56,13 +56,13 @@ HRESULT HrAddColumns(
   
 > [in]**MAPIFreeBuffer**関数へのポインター。 メモリを解放するために使用します。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
  **S_OK**
   
 > 呼び出しが成功し、指定された列の移動先または追加されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **HrAddColumns**関数では、 _lpfnFilterColumns_を NULL に設定で**HrAddColumnsEx**を使用するのと同じです。 
   

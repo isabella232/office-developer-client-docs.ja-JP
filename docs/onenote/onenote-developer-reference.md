@@ -1,5 +1,5 @@
 ---
-title: OneNote の開発者用リファレンス
+title: OneNote 開発者用リファレンス
 manager: soliver
 ms.date: 05/16/2016
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799291"
 ---
-# <a name="onenote-developer-reference"></a>OneNote の開発者用リファレンス
+# <a name="onenote-developer-reference"></a>OneNote 開発者用リファレンス
 
 このリファレンスには、概念の概要および OneNote 2013 デスクトップ クライアント アプリケーションのためのソリューションを開発するときにプログラムの参照が含まれています。 すべての追加機能が含まれています、OneNote の 2013年のアプリケーション プログラミング インターフェイス (API) に変更され、OneNote の一部のタスクを実行する方法を表示する C# のコード サンプルが用意されています。 OneNote 2013 API では、プログラムからアクセスし、OneNote のコンテンツを編集することができます。 ユーザーは、OneNote ウィンドウのビューに変更をすることもできます。
   
@@ -30,7 +30,7 @@ ms.locfileid: "19799291"
 - [エラー コード](error-codes-onenote.md): OneNote 2013 オブジェクト モデル内のエラー コードを一覧表示します。
     
 > [!NOTE]
-> [!メモ] このドキュメントに記載する API は、未接続のシナリオにおける OneNote Win32 デスクトップ クライアント ソリューションのみを対象としています。接続のシナリオの場合は、推奨する OneNote サービス API を使用してください。詳細については、[dev.onenote.com](http://go.microsoft.com/fwlink/?LinkID=390615) にアクセスしてください。 
+> このドキュメントに記載する API は、未接続のシナリオにおける OneNote Win32 デスクトップ クライアント ソリューションのみを対象としています。接続のシナリオの場合は、推奨する OneNote サービス API を使用してください。詳細については、[dev.onenote.com](http://go.microsoft.com/fwlink/?LinkID=390615) にアクセスしてください。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -40,10 +40,10 @@ ms.locfileid: "19799291"
     
 - [マイクロソフト製品のアクセシビリティ機能](http://www.microsoft.com/enable/products/default.aspx)
     
-- [�h�L�������g�̂��߂̕\�L�K��](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
+- [ドキュメントの表記規則](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
     
 - [OneNote の開発者リファレンスの著作権情報](https://msdn.microsoft.com/en-us/library/office/jj680116.aspx)
     
-- [Microsoft �v���C�o�V�[�Ɋւ��鐺��](http://privacy.microsoft.com/en-us/default.mspx)
+- [Microsoft プライバシーに関する声明](http://privacy.microsoft.com/en-us/default.mspx)
     
 

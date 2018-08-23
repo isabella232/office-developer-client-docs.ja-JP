@@ -15,7 +15,7 @@ ms.locfileid: "19800260"
 ---
 # <a name="verify-an-attachment-is-blocked"></a>添付ファイルがブロックされていることを確認します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 C++ では、このコード サンプルを使用する方法を示しています、 [IAttachmentSecurity: IUnknown](iattachmentsecurityiunknown.md)インターフェイスを表示して、インデックス作成の Microsoft Outlook 2010 または Microsoft Outlook 2013 で添付ファイルがブロックされているかどうかを確認します。 
   

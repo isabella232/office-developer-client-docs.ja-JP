@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3e430308-190c-c9bb-fffc-c26ffecb73a5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 644fad96c8aec3701233351469a84ef93341b397
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800645"
 ---
-# <a name="imapiofflinemgr--imapioffline"></a>IMAPIOfflineMgr: IMAPIOffline
+# <a name="imapiofflinemgr--imapioffline"></a>IMAPIOfflineMgr : IMAPIOffline
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ユーザー アカウントの接続状態の変更の通知コールバックの登録をサポートします。
   
@@ -48,7 +48,7 @@ ms.locfileid: "19800645"
 | *プレース ホルダー メンバー*  <br/> | *このメンバーは、プレース ホルダーではサポートされていません。*  <br/> |
 | *プレース ホルダー メンバー*  <br/> | *このメンバーは、プレース ホルダーではサポートされていません。*  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **[HrOpenOfflineObj](hropenofflineobj.md)** を使用してユーザー ・ アカウント ・ プロファイルのオフラインのオブジェクトを開くには、クライアントは、 **IMAPIOfflineMgr**をサポートしているオフラインのオブジェクトを取得します。 
   
@@ -60,10 +60,10 @@ ms.locfileid: "19800645"
 
 
 
-[IMAPIOffline: IUnknown](imapiofflineiunknown.md)
+[IMAPIOffline : IUnknown](imapiofflineiunknown.md)
 
 
-[オフラインの状態の API について](about-the-offline-state-api.md)
+[オフライン状態 API について](about-the-offline-state-api.md)
   
 [MAPI �萔](mapi-constants.md)
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 17b2aa43-0267-45b6-8c57-11b7a5c67333
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e36a987174ffb2abb4c0f5fc95bf695f31af942e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800719"
 ---
-# <a name="imapistatus--imapiprop"></a>IMAPIStatus: IMAPIProp
+# <a name="imapistatus--imapiprop"></a>IMAPIStatus : IMAPIProp
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI サブシステム、内蔵のアドレス帳、および MAPI スプーラーに関するステータス情報を提供します。 サービス プロバイダーは、独自のステータスに関する情報を提供する**IMAPIStatus**を実装します。 
   
@@ -46,17 +46,17 @@ MAPI サブシステム、内蔵のアドレス帳、および MAPI スプーラ
 |[パスワードの変更](imapistatus-changepassword.md) <br/> |ユーザー インターフェイスを表示せずには、サービス プロバイダーのパスワードを変更します。  <br/> |
 |[FlushQueues](imapistatus-flushqueues.md) <br/> |送信またはアップロードまたはダウンロードをすぐに受信を待機しているすべてのメッセージを強制的にします。  <br/> |
    
-|**必要なプロパティ**|**Access**|
+|**必須のプロパティ**|**Access**|
 |:-----|:-----|
 |**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
 |**PR_PROVIDER_DISPLAY**([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
-|**PR_PROVIDER_DLL_NAME**([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_RESOURCE_FLAGS**([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_RESOURCE_METHODS**([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_RESOURCE_TYPE**([PidTagResourceType](pidtagresourcetype-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_STATUS_CODE**([PidTagStatusCode](pidtagstatuscode-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
+|**PR_PROVIDER_DLL_NAME**([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RESOURCE_FLAGS**([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RESOURCE_METHODS**([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RESOURCE_TYPE**([PidTagResourceType](pidtagresourcetype-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_STATUS_CODE**([PidTagStatusCode](pidtagstatuscode-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI が実装している状態のオブジェクトでは、次のメソッドをサポートします。
   

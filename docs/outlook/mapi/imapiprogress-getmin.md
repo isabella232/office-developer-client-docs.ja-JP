@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: caceddf1-0f7c-47b5-97bf-17ffe3440a6c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ab92aee6a8254a16c48352e371b711932bbe7427
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800636"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 進捗状況の情報が表示されます、 [IMAPIProgress::SetLimits](imapiprogress-setlimits.md)メソッドでは、最小値を返します。 
   
@@ -33,7 +33,7 @@ HRESULT GetMin(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulMin_
   
@@ -45,7 +45,7 @@ S_OK
   
 > 操作内のアイテムの最小数を取得するとします。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 最小値は、数値形式での操作の開始を表します。 値は、全体の進行状況表示の範囲を表すために使用、グローバルな最大値またはローカル値になっているため、画面の一部のみを表すために使用できます。 
   
@@ -75,12 +75,12 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IMAPIProgress::SetLimits](imapiprogress-setlimits.md)
   
-[IMAPIProgress: IUnknown](imapiprogressiunknown.md)
+[IMAPIProgress : IUnknown](imapiprogressiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[進行状況インジケーターを表示します。](how-to-display-a-progress-indicator.md)
+[進行状況インジケーターを表示する](how-to-display-a-progress-indicator.md)
   
-[進行状況のインジケーターを実装します。](implementing-a-progress-indicator.md)
+[進行状況インジケーターの実装](implementing-a-progress-indicator.md)
 

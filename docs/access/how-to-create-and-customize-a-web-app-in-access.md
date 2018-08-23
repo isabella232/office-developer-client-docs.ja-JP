@@ -1,5 +1,5 @@
 ---
-title: 作成し、Access で web アプリケーションをカスタマイズします。
+title: Access で Web アプリを作成してカスタマイズする
 manager: kelbow
 ms.date: 08/18/2017
 ms.audience: Developer
@@ -13,10 +13,10 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798606"
 ---
-# <a name="create-and-customize-a-web-app-in-access"></a>作成し、Access で web アプリケーションをカスタマイズします。
+# <a name="create-and-customize-a-web-app-in-access"></a>Access で Web アプリを作成してカスタマイズする
 
 > [!IMPORTANT]
-> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 Access 2013を特徴付けるものとして、新しいアプリケーション モデルがあります。これにより、領域の専門家は Web ベース アプリケーションをすばやく作成できます。Access に含まれる一連のテンプレートを使用してアプリケーションの作成にすぐに着手できます。
 
@@ -235,7 +235,7 @@ Access デスクトップ (.accdb) データベースでは、テーブル間の
 
 ![電話番号を使用して更新の問題の表示](media/odc_Access15_CreateAndCustomizeWebApp_Figure10.jpg "電話番号を使用して更新の問題の表示")
   
-## <a name="conclusion"></a>まとめ
+## <a name="conclusion"></a>終わりに
 
 Access Web アプリの作成にすぐに着手するには、 に含まれるスキーマ テンプレートの 1 つを使用することをお勧めします。自動的に作成されるビューには、Access デーストップ データベースへの実装にユーザー設定コードが必要とされる高度な機能が含まれています。 
   

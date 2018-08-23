@@ -17,7 +17,7 @@ ms.locfileid: "19799967"
 ---
 # <a name="dntbl"></a>DNTBL
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ストアの内容の完全な同期の一部として、[テーブルの状態をダウンロード](download-table-state.md)、実行中にサーバーからフォルダーの内容をダウンロードするための情報です。
   
@@ -47,7 +47,7 @@ struct DNTBL
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 _ulFlags_
   
@@ -123,7 +123,7 @@ _pReserved2_
     
 ## <a name="see-also"></a>関連項目
 
-- [レプリケーション状態マシンについて](about-the-replication-state-machine.md)  
+- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)  
 - [MAPI �萔](mapi-constants.md) 
 - [DNTBLE](dntble.md)
 

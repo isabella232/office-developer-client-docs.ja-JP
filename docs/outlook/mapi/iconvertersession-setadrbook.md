@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d276ab19-17f4-01c7-4b44-b578e631b5fe
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e6880a32e30b8f208ce5ba0a2d30e635ff464461
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800410"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI メッセージを MIME ストリームに変換するときにあいまいなアドレスを解決するのには MIME コンバーターに MAPI を使用して MAPI アドレス帳を指定します。
   
@@ -32,7 +32,7 @@ HRESULT IConverterSession::SetAdrBook(
 LPADRBOOK pab); 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _個人用アドレス帳_
   
@@ -44,7 +44,7 @@ S_OK
   
 > 関数の呼び出しが成功します。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI に変換するメッセージを MIME ストリームを一般的には必要ありません MAPI プロファイルにログオンします。 ただし、変換するための MAPI アドレス帳を指定する場合は、アドレス帳を取得するのにはプロファイルにログオンしている必要があります。
   
@@ -61,7 +61,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IConverterSession: IUnknown](iconvertersessioniunknown.md)
+[IConverterSession : IUnknown](iconvertersessioniunknown.md)
   
 [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)
   

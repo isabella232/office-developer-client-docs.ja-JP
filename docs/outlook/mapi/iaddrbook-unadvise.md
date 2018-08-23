@@ -23,7 +23,7 @@ ms.locfileid: "19800399"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳エントリを以前に確立された通知の登録をキャンセルします。
   
@@ -33,7 +33,7 @@ HRESULT Unadvise(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulConnection_
   
@@ -45,7 +45,7 @@ S_OK
   
 > 登録は取り消されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントは、特定のアドレス帳のエントリへの変更に関する通知の受信を停止するのには**Unadvise**メソッドを呼び出します。 通知の登録をキャンセルする場合、呼び出し元へのポインターは、シンクをアドバイスのアドレス帳プロバイダーのリリースです。 ただし、リリース発生**Unadvise**の呼び出し時に、または後で、別のスレッドが、 [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出している場合。 進行状況の通知がある場合、リリースは**OnNotify**メソッドが戻るまで遅延します。 
   
@@ -57,5 +57,5 @@ S_OK
   
 [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

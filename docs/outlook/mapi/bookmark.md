@@ -1,5 +1,5 @@
 ---
-title: ブックマーク
+title: BOOKMARK
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 678bdc52-3404-48b2-9154-64ce2a941555
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8f5f3bc454e18b1dbab434fc1b7cc094b0d6a360
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799906"
 ---
-# <a name="bookmark"></a>ブックマーク
+# <a name="bookmark"></a>BOOKMARK
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブル内の位置を記憶するためのブックマークのデータを定義します。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19799906"
 typedef ULONG_PTR BOOKMARK;
 ```
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI には、以下のとおり、3 つのブックマークが定義されています。
   

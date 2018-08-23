@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7f851ce8-bd01-4ea5-86e0-e44323cc0aab
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0d2c908f86ccd66ffd3a2eb2506d129ee2a14d48
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800519"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 特定のフォームは、フォームのコンテナーから削除します。
   
@@ -33,7 +33,7 @@ HRESULT RemoveForm(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _szMessageClass_
   
@@ -61,7 +61,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IMAPIFormContainer: IUnknown](imapiformcontaineriunknown.md)
+[IMAPIFormContainer : IUnknown](imapiformcontaineriunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

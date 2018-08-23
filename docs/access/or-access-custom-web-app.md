@@ -19,7 +19,7 @@ ms.locfileid: "19798707"
 2 つの条件を結合します。2 つの条件のいずれかが true の場合に TRUE を返します。
   
 > [!IMPORTANT]
-> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="syntax"></a>構文
 
@@ -39,7 +39,7 @@ ms.locfileid: "19798707"
   
 ||**場合は TRUE。**|**FALSE**|
 |:-----|:-----|:-----|
-|**場合は TRUE。** <br/> |TRUE  <br/> |TRUE  <br/> |
+|**TRUE** <br/> |TRUE  <br/> |TRUE  <br/> |
 |**FALSE** <br/> |TRUE  <br/> |FALSE  <br/> |
    
 

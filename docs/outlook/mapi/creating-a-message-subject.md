@@ -1,5 +1,5 @@
 ---
-title: メッセージの件名を作成します。
+title: メッセージの件名の作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799872"
 ---
-# <a name="creating-a-message-subject"></a>メッセージの件名を作成します。
+# <a name="creating-a-message-subject"></a>メッセージの件名の作成
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **あるの PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md))、メッセージの件名は、メッセージの目的を要約するために使用、省略可能なプロパティです。 設定する場合は、文字列を作成して文字 128 バイト以内です。 128 バイトの制限は、MAPI のによって課された制限ではありません。いくつかのメッセージ ストア プロバイダーによって課された制限することをお勧めします。 それを課すはプロバイダーとの相互運用性を確保するには、サブジェクトが 128 バイトに制限します。 
   

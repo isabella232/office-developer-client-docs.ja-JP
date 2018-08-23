@@ -1,5 +1,5 @@
 ---
-title: MAPI Url の通知に基づくインデックス作成について
+title: 通知ベースのインデックス作成の MAPI URL について
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,9 +13,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799593"
 ---
-# <a name="about-mapi-urls-for-notification-based-indexing"></a>MAPI Url の通知に基づくインデックス作成について
+# <a name="about-mapi-urls-for-notification-based-indexing"></a>通知ベースのインデックス作成の MAPI URL について
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ストア プロバイダーには、オブジェクトのインデックス作成の準備が整っているインデクサーが通知された、MAPI プロトコル ハンドラー オブジェクトを一意に識別する MAPI URL が生成されます。 MAPI Url、Unicode でエンコードされた、次の形式。 
   
@@ -90,6 +90,6 @@ WCHAR  wszProviderItemID
     
 ## <a name="see-also"></a>関連項目
 
-- [ストアの通知に基づくインデックスの作成について](about-notification-based-store-indexing.md)
+- [通知ベースのストア インデックス作成について](about-notification-based-store-indexing.md)
 - [MAPI �萔](mapi-constants.md)
 

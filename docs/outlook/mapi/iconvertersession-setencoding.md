@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a9624d3f-a636-0267-5cbd-de0db42f9c22
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a13d4e54900989c692add85add6853a1b511f448
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19800420"
 ---
 # <a name="iconvertersessionsetencoding"></a>IConverterSession::SetEncoding
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 変換時に使用するエンコーディングを初期化します。
   
@@ -31,7 +31,7 @@ HRESULT IConverterSession:: SetEncoding (
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _et_
   
@@ -43,13 +43,13 @@ _et_
    - IET_7BIT
    - IET_8BIT
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 E_INVALIDARG
   
 > 渡されるエンコードの種類が無効でした。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)を使用して変換を実行する前に、 **SetEncoding**を呼び出します。 
   
@@ -66,7 +66,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
    
 ## <a name="see-also"></a>関連項目
 
-- [IConverterSession: IUnknown](iconvertersessioniunknown.md)
+- [IConverterSession : IUnknown](iconvertersessioniunknown.md)
 - [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)
 - [IConverterSession::MIMEToMAPI](iconvertersession-mimetomapi.md)
 - [IConverterSession::SetAdrBook](iconvertersession-setadrbook.md)

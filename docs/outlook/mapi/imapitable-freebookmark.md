@@ -23,7 +23,7 @@ ms.locfileid: "19800838"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ブックマークに関連付けられているメモリを解放します。
   
@@ -33,7 +33,7 @@ BOOKMARK bkPosition
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _bkPosition_
   
@@ -49,7 +49,7 @@ MAPI_E_INVALID_BOOKMARK
   
 > 指定されたブックマークは存在しません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::FreeBookmark**メソッドでは、不要になったブックマークを解放します。 ブックマークは、この呼び出しの後は有効ではありません。 テーブルがメモリからリリースされる、すべての関連付けられているブックマークのも解放されます。 
   
@@ -63,5 +63,5 @@ MAPI_E_INVALID_BOOKMARK
 
 [IMAPITable::CreateBookmark](imapitable-createbookmark.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

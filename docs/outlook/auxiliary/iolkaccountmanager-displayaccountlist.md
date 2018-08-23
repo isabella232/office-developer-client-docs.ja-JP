@@ -77,7 +77,7 @@ _pclsidType_
 |MAPI_E_INVALID_PARAMETER  <br/> |_CCategories_、 _rgclsidCategories_、または_pclsidType_パラメーターは、NULL 以外です。  <br/> |
 |MAPI_E_USER_CANCEL  <br/> |**アカウント設定**] ダイアログ ボックスには、エラーが返されます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 _CCategories_、 _rgclsidCategories_、および_pclsidType_パラメーターは、この時点では使用されず、NULL にする必要があります。  _wszTitle_は、使用しないと、NULL 必要があります。 
   

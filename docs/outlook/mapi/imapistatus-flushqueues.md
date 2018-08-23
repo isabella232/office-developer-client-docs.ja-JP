@@ -23,7 +23,7 @@ ms.locfileid: "19800713"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 送信またはアップロードまたはダウンロードをすぐに受信を待機しているすべてのメッセージを強制的にします。 MAPI スプーラーの状態のオブジェクトおよびトランスポート プロバイダーを実装する状態オブジェクトは、このメソッドをサポートします。
   
@@ -36,7 +36,7 @@ HRESULT FlushQueues(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -88,7 +88,7 @@ MAPI_E_NO_SUPPORT
   
 > 状態オブジェクトは、この操作をサポートしていません状態オブジェクトの**PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) のプロパティに STATUS_FLUSH_QUEUES フラグがない場合で示される。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIStatus::FlushQueues**メソッドは、MAPI スプーラーを無効またはトランスポート プロバイダーすぐに発信キュー内のすべてのメッセージを送信または受信キューからすべてのメッセージを受信するを要求します。 **FlushQueues**は、MAPI スプーラーの状態のオブジェクトのみが、トランスポート プロバイダーの供給状態のオブジェクトによって実装されます。 
   
@@ -108,9 +108,9 @@ MAPI スプーラーの状態のオブジェクトへの呼び出しは、する
 
 
 
-[PidTagResourceMethods の標準的なプロパティ](pidtagresourcemethods-canonical-property.md)
+[PidTagResourceMethods 標準プロパティ](pidtagresourcemethods-canonical-property.md)
   
-[PidTagStatusCode の標準的なプロパティ](pidtagstatuscode-canonical-property.md)
+[PidTagStatusCode 標準プロパティ](pidtagstatuscode-canonical-property.md)
   
-[IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)
+[IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
 

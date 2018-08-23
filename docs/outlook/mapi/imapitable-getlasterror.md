@@ -23,7 +23,7 @@ ms.locfileid: "19800837"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルの前のエラーに関する情報を含む[MAPIERROR](mapierror.md)構造体を返します。 
   
@@ -35,7 +35,7 @@ LPMAPIERROR FAR * lppMAPIError
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _hResult_
   
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > か、MAPI_UNICODE フラグが設定された実装は Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、実装には、Unicode のみサポートしています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::GetLastError**メソッドは、可能な場合、失敗したメソッド呼び出しに関する詳細についてを返します。 メッセージまたはダイアログ ボックスでは、この情報を表示できます。 
   
@@ -85,5 +85,5 @@ MAPI_E_BAD_CHARWIDTH
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

@@ -38,7 +38,7 @@ void STDAPICALLTYPE RebaseTaskComplete(
 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _ulRowIndex_
   

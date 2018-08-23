@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 375d65b1-607d-4e2a-8052-9bcbf08fc2ac
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 926fef0e1b2f905d510102e69afb667414e6cce3
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800355"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 コンテナー、ユーザー、または配布リストをメッセージに影響を与える特定のイベントの通知を受け取る呼び出し元を登録します。
   
@@ -37,7 +37,7 @@ HRESULT Advise(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -86,7 +86,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > アドレス帳プロバイダーは、 _lpEntryID_に渡されたエントリ id を処理できません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 アドレス帳プロバイダーは、そのコンテナーのいずれかのオブジェクトに変更が発生したときに通知する呼び出し元を登録するのには**IABLogon::Advise**メソッドを実装します。 呼び出し元は、メッセージングのユーザー、配布リスト、または全体のコンテナーに関する通知を登録できます。 
   
@@ -130,5 +130,5 @@ MAPI サポートされている方法を使用する場合、 **Subscribe**を�
   
 [�ʒm](notification.md)
   
-[IABLogon: IUnknown](iablogoniunknown.md)
+[IABLogon : IUnknown](iablogoniunknown.md)
 

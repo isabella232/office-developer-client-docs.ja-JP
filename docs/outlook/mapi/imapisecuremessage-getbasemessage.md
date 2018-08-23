@@ -23,7 +23,7 @@ ms.locfileid: "19800666"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 基になるを取得[IMessage: IMAPIProp](imessageimapiprop.md)この[IMAPISecureMessage: IUnknown](imapisecuremessageiunknown.md)カプセル化することです。 
   
@@ -33,7 +33,7 @@ HRESULT GetBaseMessage(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ppmsg_
   
@@ -49,7 +49,7 @@ S_OK
 
 
 
-[IMAPISecureMessage: IUnknown](imapisecuremessageiunknown.md)
+[IMAPISecureMessage : IUnknown](imapisecuremessageiunknown.md)
   
 [IMessage: IMAPIProp](imessageimapiprop.md)
 

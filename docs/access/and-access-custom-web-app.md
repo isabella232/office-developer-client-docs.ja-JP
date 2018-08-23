@@ -18,13 +18,13 @@ ms.locfileid: "19798584"
 ブール型の 2 つの式を結合し、両方の式が TRUE の場合、TRUE を返します。 
   
 > [!IMPORTANT]
-> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="syntax"></a>構文
 
- *boolean_expression***と***boolean_expression* 
+ boolean_expression** **AND   boolean_expression** ** 
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 両方の式が TRUE の場合、TRUE を返します。
   

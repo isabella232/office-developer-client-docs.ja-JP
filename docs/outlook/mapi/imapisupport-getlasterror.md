@@ -23,7 +23,7 @@ ms.locfileid: "19800735"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 以前のサポート オブジェクトのエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。 
   
@@ -35,7 +35,7 @@ HRESULT GetLastError(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _hResult_
   
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > か、MAPI_UNICODE フラグが設定された MAPI が Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、MAPI は、Unicode だけをサポートしています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 サポートのすべてのオブジェクトの**IMAPISupport::GetLastError**メソッドを実装します。 呼び出し元は、ダイアログ ボックスに**MAPIERROR**構造体のデータを含めることによって、エラーの詳細情報をユーザーを提供できます。 
   
@@ -86,5 +86,5 @@ MAPI によって割り当てられたすべてのメモリを解放するには
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 
 
-[MAPI の拡張エラー](mapi-extended-errors.md)
+[MAPI �g���G���[](mapi-extended-errors.md)
 

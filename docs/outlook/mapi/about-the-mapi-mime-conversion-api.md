@@ -1,5 +1,5 @@
 ---
-title: MAPI から MIME 変換 API について
+title: MAPI-MIME 会話 API について
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799608"
 ---
-# <a name="about-the-mapi-mime-conversion-api"></a>MAPI から MIME 変換 API について
+# <a name="about-the-mapi-mime-conversion-api"></a>MAPI-MIME 会話 API について
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI から MIME 変換 API では、MAPI メッセージの MIME のオブジェクトとの間で変換するメール プロバイダーを使用します。 定数の定義、クラス識別子、および[MAPI の定数](mapi-constants.md)のように、インターフェイス識別子を提供します。 メール プロバイダーでは、 **CoCreateInstance**関数を呼び出すことによって、 **[IConverterSession](iconvertersessioniunknown.md)** のインスタンスを作成する必要があります。 
   

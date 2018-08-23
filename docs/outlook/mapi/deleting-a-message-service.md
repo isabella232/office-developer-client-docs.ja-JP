@@ -1,5 +1,5 @@
 ---
-title: メッセージ サービスを削除します。
+title: メッセージ サービスの削除
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799900"
 ---
-# <a name="deleting-a-message-service"></a>メッセージ サービスを削除します。
+# <a name="deleting-a-message-service"></a>メッセージ サービスの削除
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  **メッセージ サービスをプロファイルから削除するのには**
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f26384f1-467e-4343-92b3-0425da9d2123
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a6659f64f6e8d2e3dc61819b2263efe672cdd15c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800865"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 現在のカーソル位置から開始し、テーブルから 1 つまたは複数の行を返します。
   
@@ -35,7 +35,7 @@ LPSRowSet FAR * lppRows
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lRowCount_
   
@@ -67,7 +67,7 @@ MAPI_E_INVALID_PARAMETER
   
 > _IRowCount_パラメーターは、0 に設定されています。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::QueryRows**メソッドは、テーブルから 1 つまたは複数行のデータを取得します。 _IRowCount_パラメーターの値は、検索の開始点に影響します。 _IRowCount_が正の場合は、現在位置から前方に行が読み取られます。 _IRowCount_が負の場合は、**スプーラー**は、指定された行の数を逆方向に移動開始点をリセットします。 カーソルをリセットした後は、前方の順序で行が読み取られます。 
   
@@ -141,7 +141,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [SRowSet](srowset.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

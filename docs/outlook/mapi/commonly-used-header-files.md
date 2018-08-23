@@ -1,5 +1,5 @@
 ---
-title: 一般的に使用されるヘッダー ファイル
+title: よく使用されるヘッダー ファイル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: bf23b72c-0171-444c-96bc-7af2499b4d6a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a87f7595eb03062e54ea3aa8f7dca1f1b0f1e568
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799801"
 ---
-# <a name="commonly-used-header-files"></a>一般的に使用されるヘッダー ファイル
+# <a name="commonly-used-header-files"></a>よく使用されるヘッダー ファイル
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 各リファレンス トピックには、API 要素が定義されている MAPI ヘッダー ファイルの名前を示すテーブルが含まれています。 次の表では、開発者が頻繁に使用している MAPI ヘッダー ファイルについて説明します。
   
@@ -49,5 +49,5 @@ MAPI ヘッダー ファイルを入手する方法の詳細については、 [
 
 
 
-[Outlook �� MAPI �Q�Ƃ̎g�p��J�n���܂��B](getting-started-with-the-outlook-mapi-reference.md)
+[Outlook MAPI リファレンスの概要](getting-started-with-the-outlook-mapi-reference.md)
 

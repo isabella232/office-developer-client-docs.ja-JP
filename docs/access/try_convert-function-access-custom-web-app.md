@@ -19,11 +19,11 @@ ms.locfileid: "19798772"
 指定したデータ型に値を変換します。変換が無効な場合は Null を返します。
   
 > [!IMPORTANT]
-> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="syntax"></a>構文
 
- **Try_Convert**(*データ型*、*式*) 
+ **Try_Convert** (*DataType*, *Expression*) 
   
 **Try_Convert** 関数の引数は次のとおりです。 
   

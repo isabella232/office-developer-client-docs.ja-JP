@@ -34,7 +34,7 @@ ms.locfileid: "19799457"
 |[GetMapiSession](iolkaccounthelper-getmapisession.md) <br/> |MAPI セッションを開くし、アカウント マネージャーのセッションへの参照を保持します。  <br/> |
 |[HandsOffSession](iolkaccounthelper-handsoffsession.md) <br/> |[IOlkAccountHelper::GetMapiSession](iolkaccounthelper-getmapisession.md)によって返された MAPI セッション オブジェクトを解放します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このインターフェイスは、アカウント マネージャーを初期化するときに、 [IOlkAccountManager::Init](iolkaccountmanager-init.md)に渡されます。 
   

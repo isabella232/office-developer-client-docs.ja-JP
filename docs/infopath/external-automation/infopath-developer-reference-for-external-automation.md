@@ -1,5 +1,5 @@
 ---
-title: 外部の自動化のための InfoPath 開発者用リファレンス
+title: InfoPath 外部自動化の開発者向けリファレンス
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799019"
 ---
-# <a name="infopath-developer-reference-for-external-automation"></a>外部の自動化のための InfoPath 開発者用リファレンス
+# <a name="infopath-developer-reference-for-external-automation"></a>InfoPath 外部自動化の開発者向けリファレンス
 
 InfoPath 2013 外部自動化の開発者向けリファレンスへようこそ。このドキュメントには、外部アプリケーションまたはアドインから InfoPath を自動化するマネージ コード ソリューションの作成に役立つ、概要、プログラミング タスク、およびクラス ライブラリ リファレンス情報が記載されています。
   
@@ -29,6 +29,6 @@ InfoPath 2013 外部自動化の開発者向けリファレンスへようこそ
 - [Microsoft Office デベロッパー センター](http://msdn.microsoft.com/en-us/office/default.aspx)
 - [Office 開発者向けドキュメントのドキュメントの表記規則](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
 - [Microsoft アクセシビリティ](http://www.microsoft.com/ENABLE/)
-- [Microsoft �v���C�o�V�[�Ɋւ��鐺��](http://privacy.microsoft.com/en-us/default.mspx)
+- [Microsoft プライバシーに関する声明](http://privacy.microsoft.com/en-us/default.mspx)
   
 

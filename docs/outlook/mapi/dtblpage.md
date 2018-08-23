@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f899f434-a5d7-4b4f-98f9-c14c9f21b24b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 86cd30b15402f35e8396dedf6b685050ee4fb45e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800002"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ディスプレイ テーブルから組み込まれているダイアログ ボックスで使用するタブ付きのページを説明します。 
   
@@ -43,7 +43,7 @@ typedef struct _DTBLPAGE
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulbLpszLabel**
   
@@ -65,7 +65,7 @@ MAPI_UNICODE
   
 > **UlbLpszComponent**のメンバーによって定義されている文字列のタブ付きページの一意の識別子です。 **UlbLpszComponent**メンバーと**ulContext**のメンバーの両方を操作するのには [**ヘルプ**] ボタンを 0 以外の値にする必要があります。 この識別子は 0 をし、コンポーネントの文字列が NULL の場合、ページに関連付けられているヘルプはありません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **DTBLPAGE**構造体では、タブ付きページの関連するダイアログ ボックスがいくつかの区切りに使用するコントロールについて説明します。 通常、これらのダイアログ ボックスは、構成、メッセージ、または受信者のオプションを表示するためのプロパティ シートです。 タブをクリックすると、ユーザーは別に 1 つのシートからに切り替えることができます。 
   

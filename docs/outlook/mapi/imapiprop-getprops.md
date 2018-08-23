@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1c7a9cd2-d765-4218-9aee-52df1a2aae6c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 33351235db2a9a3f9d9b67f59e8356a0fa8abfa8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800656"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オブジェクトの 1 つまたは複数のプロパティのプロパティ値を取得します。
   
@@ -72,7 +72,7 @@ MAPI_E_INVALID_PARAMETER
   
 > **あう**、 **SPropTagArray**構造体のメンバー _lpPropTagArray_で示される 0 が渡されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIProp::GetProps**メソッドは、オブジェクトの 1 つまたは複数のプロパティのプロパティ値を取得します。 
   
@@ -190,12 +190,12 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [SPropValue](spropvalue.md)
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
 [MAPI プロパティを取得します。](retrieving-mapi-properties.md)
   
-[エラー処理のためのマクロを使用してください。](using-macros-for-error-handling.md)
+[エラー処理のためのマクロの使用](using-macros-for-error-handling.md)
 

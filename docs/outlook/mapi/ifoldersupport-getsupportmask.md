@@ -23,7 +23,7 @@ ms.locfileid: "19800436"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 共有フォルダーのサポートに関する情報を取得します。
   
@@ -33,7 +33,7 @@ HRESULT GetSupportMask(
 ); 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pdwSupportMask_
   

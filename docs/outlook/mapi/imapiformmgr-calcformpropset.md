@@ -23,7 +23,7 @@ ms.locfileid: "19800539"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームのグループを使用するプロパティの配列を返します。
   
@@ -35,7 +35,7 @@ HRESULT CalcFormPropSet(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pfrminfoarray_
   
@@ -71,7 +71,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > か、MAPI_UNICODE フラグが設定された実装は Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、実装は、Unicode だけをサポートしています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォームの閲覧者は、フォームのグループを使用するプロパティの配列を取得する**IMAPIFormMgr::CalcFormPropSet**メソッドを呼び出します。 **CalcFormPropSet**には、交差、または共用体のこれらのフォームのプロパティ セットには、 _ulFlags_パラメーターとその設定のフラグによっての結果として得られるグループを格納する**SMAPIFormPropArray**構造体を返します。プロパティです。 
   
@@ -85,5 +85,5 @@ MAPI_E_BAD_CHARWIDTH
 
 [SMAPIFormPropArray](smapiformproparray.md)
   
-[IMAPIFormMgr: IUnknown](imapiformmgriunknown.md)
+[IMAPIFormMgr : IUnknown](imapiformmgriunknown.md)
 

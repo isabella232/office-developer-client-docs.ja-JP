@@ -19,7 +19,7 @@ ms.locfileid: "19799995"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [テーブルの状態をダウンロード](download-table-state.md)する時にサーバーからフォルダーの内容をダウンロードするための情報です。 このダウンロードのプロセスでは、Microsoft Exchange 増分変更の同期 (ICS) を使用します。 ICS の詳細については、 [ICS の評価基準](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
   
@@ -35,7 +35,7 @@ struct DNTBLE
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  _cEntNew_
   
@@ -57,7 +57,7 @@ struct DNTBLE
 
 
 
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [MAPI �萔](mapi-constants.md)
   

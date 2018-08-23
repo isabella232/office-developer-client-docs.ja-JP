@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9a39cf8d-df0f-493c-b272-f15c65b3f15e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9eeab1e1186aeb5a9b458facd59bd4cc155e8014
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800847"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 特定のプロパティと、テーブル内の列として表示するプロパティの順序を定義します。
   
@@ -62,7 +62,7 @@ MAPI_E_BUSY
   
 > 別進行中に、列の操作の開始を設定しないようにします。 実行中の操作を完了できるか、それを停止する必要があります。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 テーブルの列のセットは、テーブル内の行の列を構成するプロパティのグループです。 テーブルの種類ごとに設定する既定の列があります。 自動的にテーブルの作成者を含むプロパティの既定の列セットが構成されています。 テーブルのユーザーには、この既定値は、 **IMAPITable::SetColumns**メソッドを呼び出すことによって設定を変更できます。 その他の列がテーブルの作成者はこれらの列を削除することや、列の順序を変更することをサポートしている場合は、設定の既定値に追加することを要求することができます。 **SetColumns**では、それぞれの行と行にこれらの列の順序で返される列を指定します。 
   
@@ -141,7 +141,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [TABLE_NOTIFICATION](table_notification.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

@@ -23,7 +23,7 @@ ms.locfileid: "19800815"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 配信し、配信不能レポートを生成します。
   
@@ -34,7 +34,7 @@ LPADRLIST lpRecipList
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpMessage_
   
@@ -54,7 +54,7 @@ MAPI_W_ERRORS_RETURNED
   
 > 呼び出しは完了しましたが、この種類の受信者の受信者のオプションはありません。 この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 トランスポート プロバイダーのサポート オブジェクトの**IMAPISupport::StatusRecips**メソッドを実装します。 トランスポート プロバイダーは、その MAPI の送信を要求する**StatusRecips**の 1 つまたは複数のメッセージの受信者に配信または配信不能レポートを呼び出します。 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 73b68614-6aca-4669-b879-5631c5d6483c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3a5188ea9f83d05722c6b5ab81d9e796b33ef254
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799969"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ダイアログ ボックスが表示テーブルの構築に使用するコンボ ボックス コントロールについて説明します。
   
@@ -44,7 +44,7 @@ typedef struct _DTBLCOMBOBOX
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulbLpszCharsAllowed**
   
@@ -78,7 +78,7 @@ MAPI_UNICODE
   
 > **IMAPITable**インターフェイスを**OpenProperty**呼び出しを使用して開くことができる型 PT_OBJECT のプロパティのプロパティ タグです。 テーブルには、1 つの列プロパティは、 **ulPRPropertyName**のメンバーによって識別されるプロパティと同じ型を持つ必要があります。 リストを作成するテーブルの行を使用します。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **DTBLCOMBOBOX**構造体では、コンボ ボックスの一覧と、[選択] フィールドで構成されるコントロールについて説明します。 一覧には、情報をユーザーが選択できる、選択フィールドには、現在の選択範囲が表示されますが表示されます。 選択フィールドは、エディット コントロールにテキストを入力されていないリストも使用できます。 
   
@@ -96,7 +96,7 @@ MAPI_UNICODE
 
 [DTCTL](dtctl.md)
   
-[PidTagControlType の標準的なプロパティ](pidtagcontroltype-canonical-property.md)
+[PidTagControlType 標準プロパティ](pidtagcontroltype-canonical-property.md)
 
 
 [MAPI の構造](mapi-structures.md)

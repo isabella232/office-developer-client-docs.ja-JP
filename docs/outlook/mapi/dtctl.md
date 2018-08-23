@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6d1589e9-b171-427a-9a3e-b4154ee8ceb6
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 68c621f5f73073ed127767cc1db189769dab227d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19800012"
 ---
 # <a name="dtctl"></a>DTCTL
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ディスプレイ テーブルから作成されたダイアログ ボックスで使用するコントロールについて説明します。 
   
@@ -58,7 +58,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 **ulCtlType**
   
@@ -168,7 +168,7 @@ DT_SET_IMMEDIATE
   
 > コントロールのデータを保持し、 **PR_CONTROL_STRUCTURE** ([PidTagControlStructure](pidtagcontrolstructure-canonical-property.md)) のプロパティに対応する構造体です。 コントロールの種類ごとには、さまざまな構造体があります。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **DTCTL**構造体では、任意の型の 1 つのコントロールについて説明します。 ほとんどのメンバーを使用して、コントロールのプロパティを設定します。 
   

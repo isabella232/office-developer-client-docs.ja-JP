@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 14c171ec-0aec-43ab-8be8-e6bc0ce28a58
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2b7ef789c80f85f3539ec3bbd0caf4a8adc50f3e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800297"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ASCII エンコードからエントリ識別子を再作成します。 
   
@@ -41,7 +41,7 @@ HRESULT HrEntryIDFromSz(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _sz_
   
@@ -65,7 +65,7 @@ MAPI_E_INVALID_ENTRYID
   
 > エントリ ID が無効でした。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **HrEntryIDFromSz**と[HrSzFromEntryID](hrszfromentryid.md)関数は、文字列とエントリの識別子のバイナリ フォーマット間の変換を提供します。 
   

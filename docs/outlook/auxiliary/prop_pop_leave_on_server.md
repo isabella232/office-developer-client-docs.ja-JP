@@ -25,9 +25,9 @@ POP アカウントのサーバーにメッセージのコピーを残すかを�
 |識別子:  <br/> |0x1000  <br/> |
 |プロパティの種類:  <br/> |PT_DWORD  <br/> |
 |プロパティ タグ。  <br/> |0x10000003  <br/> |
-|アクセス:  <br/> |値の取得のみ可能です。  <br/> |
+|アクセス:  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 次の表は、可能な値を一覧します。 定数の詳細については[定数 (アカウント管理 API)](constants-account-management-api.md)を参照してください。 
   
@@ -41,6 +41,6 @@ POP アカウントのサーバーにメッセージのコピーを残すかを�
    
 ## <a name="see-also"></a>関連項目
 
-- [管理メッセージは、POP3 アカウントのダウンロードします。](managing-message-downloads-for-pop3-accounts.md) 
+- [POP3 アカウントのメッセージ ダウンロードの管理](managing-message-downloads-for-pop3-accounts.md) 
 - [定数 (アカウント管理 API)](constants-account-management-api.md)
 

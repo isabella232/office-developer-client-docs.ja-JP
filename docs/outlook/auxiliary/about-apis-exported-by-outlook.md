@@ -30,7 +30,7 @@ ms.locfileid: "19799289"
     
 - [TZRULE](tzrule.md)
     
-### <a name="functions"></a>�֐�
+### <a name="functions"></a>関数
   
 - [HrCreateApptRebaser](hrcreateapptrebaser.md)
     
@@ -50,8 +50,8 @@ ms.locfileid: "19799289"
     
 また、ディスパッチ識別子、 **dispidFDirty**および **dispidShowSenderPhoto**を使用して実現できます、次のタスク。
   
-- [Outlook アイテムが変更されたが、(Outlook の補助参照) が保存されていないかどうかを決定します。](how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
+- [Outlook アイテムが変更されたが保存されていないかどうかを確認する (Outlook の補助リファレンス)](how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
     
-- [(Outlook の補助参照) を Outlook で連絡先の画像を表示するかどうかを指定します。](https://msdn.microsoft.com/en-us/library/office/gg262879.aspx)
+- [Outlook (Outlook の補助リファレンス) で、連絡先の画像を表示するかどうかを指定](https://msdn.microsoft.com/en-us/library/office/gg262879.aspx)
     
 

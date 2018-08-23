@@ -23,7 +23,7 @@ ms.locfileid: "19800542"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームのアイコンのプロパティのいずれかからアイコンを作成します。
   
@@ -34,7 +34,7 @@ HRESULT MakeIconFromBinary(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _nPropID_
   
@@ -58,5 +58,5 @@ S_OK
 
 
 
-[IMAPIFormInfo: IMAPIProp](imapiforminfoimapiprop.md)
+[IMAPIFormInfo : IMAPIProp](imapiforminfoimapiprop.md)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e408fe16-a2fc-4714-895d-31b8c3763e3e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 356c7e800bdcac84c3cc8062e40372112727999e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799778"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [MTSID](mtsid.md)既存の構造体のバイト数を計算します。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19799778"
 CbMTSID (_lpentry)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  __lpentry_
   

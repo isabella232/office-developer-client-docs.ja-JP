@@ -17,7 +17,7 @@ ms.locfileid: "19800163"
 ---
 # <a name="handling-a-transport-provider"></a>トランスポート プロバイダーの処理
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアントは、MAPI スプーラーとトランスポート プロバイダーによって提供される状態オブジェクトを介してトランスポート プロバイダーと通信します。 クライアントは、状態テーブルを取得するために[IMAPISession::GetStatusTable](imapisession-getstatustable.md)を呼び出すことによって状態オブジェクトをアクセスします。 ステータス オブジェクトの実装、 [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)インタ フェースのプロバイダーを構成する、フラッシュの受信および送信メッセージのキュー、パスワードの設定、および状態の検証の方法があります。 ステータス オブジェクトの詳細については、[状態テーブルおよび状態オブジェクト](status-table-and-status-objects.md)を参照してください。
 

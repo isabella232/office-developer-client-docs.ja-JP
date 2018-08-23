@@ -23,7 +23,7 @@ ms.locfileid: "19800498"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム ビューアーの形式に影響するイベント通知を登録します。
   
@@ -34,7 +34,7 @@ HRESULT Advise(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pAdvise_
   
@@ -54,7 +54,7 @@ E_OUTOFMEMORY
   
 > 登録にメモリ不足のため失敗しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム ビューアーでは、フォームに変更が発生したときに通知を登録するのには、フォームの**IMAPIForm::Advise**メソッドを呼び出します。 
   
@@ -74,12 +74,12 @@ E_OUTOFMEMORY
 
 [IMAPIForm::Unadvise](imapiform-unadvise.md)
   
-[IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)
+[IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md)
   
-[IMAPIForm: IUnknown](imapiformiunknown.md)
+[IMAPIForm : IUnknown](imapiformiunknown.md)
 
 
-[MAPI でのイベントの通知](event-notification-in-mapi.md)
+[MAPI のイベント通知](event-notification-in-mapi.md)
   
-[フォームの通知を送受信します。](sending-and-receiving-form-notifications.md)
+[フォーム通知の送受信](sending-and-receiving-form-notifications.md)
 

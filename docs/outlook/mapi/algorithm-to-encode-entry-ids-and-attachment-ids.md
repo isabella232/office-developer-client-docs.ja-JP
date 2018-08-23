@@ -1,5 +1,5 @@
 ---
-title: エントリ Id と添付ファイルの Id をエンコードするためのアルゴリズム
+title: エントリ ID と添付 ID をエンコードするためのアルゴリズム
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799677"
 ---
-# <a name="algorithm-to-encode-entry-ids-and-attachment-ids"></a>エントリ Id と添付ファイルの Id をエンコードするためのアルゴリズム
+# <a name="algorithm-to-encode-entry-ids-and-attachment-ids"></a>エントリ ID と添付 ID をエンコードするためのアルゴリズム
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ストア プロバイダーに送信できます MAPI 統一リソース ロケーター (URL) の一部として、エントリ ID と、添付ファイル ID MAPI プロトコル ハンドラーでインデックス作成の準備が整っているオブジェクトを識別します。 ストア プロバイダーは、ID と ID の添付ファイルのエントリを Unicode 文字列としてエンコードします。 このトピックは、エントリ ID または添付ファイル ID のコンパクトな表現を生成するアルゴリズムを示しています。
   
@@ -56,7 +56,7 @@ LPWSTR EncodeID(ULONG cbEID, LPENTRYID rgbID)
 
 
 
-[ストアの通知に基づくインデックスの作成について](about-notification-based-store-indexing.md)
+[通知ベースのストア インデックス作成について](about-notification-based-store-indexing.md)
   
-[MAPI Url の通知に基づくインデックス作成について](about-mapi-urls-for-notification-based-indexing.md)
+[通知ベースのインデックス作成の MAPI URL について](about-mapi-urls-for-notification-based-indexing.md)
 

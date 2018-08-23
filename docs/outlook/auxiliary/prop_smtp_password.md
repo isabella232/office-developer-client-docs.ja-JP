@@ -25,10 +25,10 @@ SMTP アカウントのパスワードを表します。
 |識別子:  <br/> |0x0205  <br/> |
 |プロパティの種類:  <br/> |PT_UNICODE|SECURE_FLAG  <br/> |
 |プロパティ タグ。  <br/> |0x2058001F  <br/> |
-|アクセス:  <br/> |値の取得のみ可能です。  <br/> |
+|アクセス:  <br/> |読み取り専用  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [管理メッセージは、POP3 アカウントのダウンロードします。](managing-message-downloads-for-pop3-accounts.md) 
+- [POP3 アカウントのメッセージ ダウンロードの管理](managing-message-downloads-for-pop3-accounts.md) 
 - [定数 (アカウント管理 API)](constants-account-management-api.md)
 

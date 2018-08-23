@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: cf60584c-4357-44c7-9d51-f30f7e510c0c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2db95697cd98e66da9fb3d0cd0180b238c0a8dff
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799971"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ダイアログ ボックスが表示テーブルの構築に使用するドロップダウン リスト コントロールについて説明します。
   
@@ -42,7 +42,7 @@ typedef struct _DTBLDDLBX
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulFlags**
   
@@ -60,7 +60,7 @@ typedef struct _DTBLDDLBX
   
 > PT_OBJECT、 **OpenProperty**を使用して開くことができる種類のテーブルのプロパティのプロパティ タグを呼び出します。 テーブルが 2 つの列を持つ必要があります: **ulPRDisplayProperty**と**ulPRSetProperty**。 テーブルの行は、リスト内の項目に対応します。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **DTBLDDLBX**構造体では、展開するまでに、1 つの項目として表示されているドロップダウン リスト コントロールについて説明します。 
   
@@ -89,7 +89,7 @@ typedef struct _DTBLDDLBX
   
 [表示テーブルの実装](display-table-implementation.md)
   
-[テーブルを表示します。](display-tables.md)
+[表示テーブル](display-tables.md)
   
 [MAPI プロパティの型の概要](mapi-property-type-overview.md)
 

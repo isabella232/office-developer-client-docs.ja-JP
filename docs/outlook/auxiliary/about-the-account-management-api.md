@@ -1,5 +1,5 @@
 ---
-title: アカウント管理 API の概要
+title: アカウント管理 API について
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799297"
 ---
-# <a name="about-the-account-management-api"></a>アカウント管理 API の概要
+# <a name="about-the-account-management-api"></a>アカウント管理 API について
 
 アカウント管理 API では、アカウント情報へのアクセスを提供し、アカウントの変更の通知をサポートします。 この API のクライアントとしてメール プロバイダーの次の操作を行います。
   

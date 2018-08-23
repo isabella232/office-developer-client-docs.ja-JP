@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b4c0655c-1a3a-4f89-a977-0431db596512
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2cf5ff69e8453b2da26fd5044823ddf4f99a9f45
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800074"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 名前解決の処理中にアドレス エントリのステータスを示すために使用されるフラグの一覧が含まれています。
   
@@ -40,7 +40,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cFlags**
   
@@ -62,7 +62,7 @@ MAPI_UNRESOLVED
   
 > エントリは解決されていません。 他のアドレス帳コンテナーは、この受信者を解決するようにしてください。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **FLAGLIST**構造体は、 [IABContainer::ResolveNames](iabcontainer-resolvenames.md)のパラメーターとして使用されます。 各受信者を解決するのには、 [ADRLIST](adrlist.md)構造体に含まれます。 アドレス帳コンテナーは、各受信者を解決しようとすると、 **FLAGLIST**構造体に対応するエントリに適切なフラグを設定します。 **ADRLIST**構造体のエントリと同じ順序では、 **FLAGLIST**構造体のエントリのすべてです。 これにより、フラグの設定を受信者に関連付けるには簡単です。 
   

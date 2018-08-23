@@ -23,7 +23,7 @@ ms.locfileid: "19800780"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オブジェクトを開き、さらにアクセスするためのインターフェイス ポインターを返します。 
   
@@ -38,7 +38,7 @@ LPUNKNOWN FAR * lppUnk
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -94,7 +94,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > _LpEntryID_パラメーターで渡されたエントリ id が、認識できない形式です。 この値は通常、オブジェクトが含まれるアドレス帳プロバイダーが開いていない場合に返されます。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 サービス プロバイダーのサポートのすべてのオブジェクトの**IMAPISupport::OpenEntry**メソッドを実装します。 サービス プロバイダーは、特定のオブジェクトへのアクセスに使用できるインターフェイスへのポインターを取得するために**IMAPISupport::OpenEntry**を呼び出します。 
   

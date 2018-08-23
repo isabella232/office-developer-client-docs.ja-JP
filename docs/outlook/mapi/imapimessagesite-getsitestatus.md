@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 02718898-7857-4e43-8f46-622269f812e6
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7d81533b13f4f44a0644215e009dc3477717e9a2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800592"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージに関するメッセージのサイト オブジェクトの現在のメッセージのサイトの機能に対応する情報を返します。
   
@@ -33,7 +33,7 @@ HRESULT GetSiteStatus(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulStatus_
   
@@ -99,12 +99,12 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md)
   
-[PidTagIpmWastebasketEntryId の標準的なプロパティ](pidtagipmwastebasketentryid-canonical-property.md)
+[PidTagIpmWastebasketEntryId 標準プロパティ](pidtagipmwastebasketentryid-canonical-property.md)
   
-[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)
+[IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォームのインタ フェース](mapi-form-interfaces.md)
+[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
 

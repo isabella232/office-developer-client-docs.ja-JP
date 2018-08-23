@@ -23,7 +23,7 @@ ms.locfileid: "19800650"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 前のエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。 
   
@@ -35,7 +35,7 @@ HRESULT GetLastError(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _hResult_
   
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > か、MAPI_UNICODE フラグが設定された実装は Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、実装は、Unicode だけをサポートしています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIProp::GetLastError**メソッドでは、失敗したメソッド呼び出しに関する情報を提供します。 クライアントは、ダイアログ ボックスに**MAPIERROR**構造体のデータを含めることによって、エラーの詳細情報をユーザーを提供できます。 
   
@@ -85,14 +85,14 @@ HRESULT 値のさまざまな原因となる特定のエラー条件が異なる
 
 
 
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
   
 [MAPIERROR](mapierror.md)
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
-[MAPI の拡張エラー](mapi-extended-errors.md)
+[MAPI �g���G���[](mapi-extended-errors.md)
 

@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 17cba69b-2b25-4b99-99d9-ec68fb8a35b5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 74660de551d43c589cb903b5c3852136f2f18269
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19800307"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 _PEmsmdbUID_パラメーターとして従来の**emsmdbUID**を使用する[HrOpenABEntryWithExchangeContext](hropenabentrywithexchangecontext.md)と同じ機能を実行します。 [HrOpenABEntryWithExchangeContext](hropenabentrywithexchangecontext.md)への呼び出しの正しい**emsmdbUID**を取得することはできない場合に、この関数を使用しません。
   
@@ -42,7 +42,7 @@ HRESULT HrOpenABEntryUsingDefaultContext(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pmsess_
   

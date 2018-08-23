@@ -1,5 +1,5 @@
 ---
-title: コンテナーの一時テーブルを実装します。
+title: コンテナーの 1 回限りのテーブルの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800909"
 ---
-# <a name="implementing-a-container-one-off-table"></a>コンテナーの一時テーブルを実装します。
+# <a name="implementing-a-container-one-off-table"></a>コンテナーの 1 回限りのテーブルの実装
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 コンテナーの 1 つに属している一時テーブルにアクセスするには、MAPI は**IMAPITable**と**PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) のプロパティを開くには、コンテナーの[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出します。インタ フェースです。 コンテナーがクライアント アプリケーションでコンテナーに受信者を追加しようとするときに、一時テーブルを取得しようとしています。 コンテナーは、いずれかの受信者を許可している場合、プロバイダー独自のテーブルの実装を返すか、MAPI 実装を取得する[IMAPISupport::GetOneOffTable](imapisupport-getoneofftable.md)を呼び出します。 
   

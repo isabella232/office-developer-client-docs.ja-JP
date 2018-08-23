@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: d218ba2d-7a2e-4c33-a09b-a8c7e27f9726
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: dce3f4b5bfdcb34148c25c880d8d2d8173755b37
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19799754"
 ---
 # <a name="building-mapi-applications-on-32-bit-and-64-bit-platforms"></a>32 ビットと 64 ビット プラットフォーム上の MAPI アプリケーションの構築
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックでは、MAPI 開発者が変更し、64 ビット プラットフォーム上で実行するのには MAPI アプリケーションを 32 ビットと 32 ビット プラットフォーム上で実行する 64 ビット アプリケーションを再ビルドする実行する操作について説明します。 このトピックでは、64 ビット プラットフォームとは、64 ビットの Microsoft Outlook と 64 ビットの Windows がインストールされているコンピューターで 32 ビット プラットフォームとは、Outlook の 32 ビットと 32 ビットまたは 64 ビットの Windows がインストールされているコンピューター。 
   
@@ -81,5 +81,5 @@ Outlook の 32 ビットと 32 ビットまたは 64 ビットの Windows がイ
   
 ## <a name="see-also"></a>関連項目
 
-- [MAPI の関数へのリンク](how-to-link-to-mapi-functions.md)
+- [MAPI 機能へのリンク](how-to-link-to-mapi-functions.md)
 

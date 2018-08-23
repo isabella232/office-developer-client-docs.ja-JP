@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5fa091a4-3a84-4881-91b3-e34fd9ca6f38
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 4b6f850c8f88088863b37bd94de6b1f3d4c48d4f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799669"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 受信者に所属する 0 個以上のプロパティについて説明します。
   
@@ -41,7 +41,7 @@ typedef struct _ADRENTRY
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulReserved1**
   
@@ -55,7 +55,7 @@ typedef struct _ADRENTRY
   
 > 受信者のプロパティを記述するプロパティ値の配列へのポインター。 **RgPropVals**のメンバーには、NULL を指定できます。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **ADRENTRY**構造体では、1 人の受信者のプロパティについて説明します。 受信者の記述に使用される一般的なプロパティを以下に示します。 
   

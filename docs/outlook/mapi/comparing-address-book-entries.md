@@ -1,5 +1,5 @@
 ---
-title: アドレス帳のエントリを比較します。
+title: アドレス帳エントリの比較
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799797"
 ---
-# <a name="comparing-address-book-entries"></a>アドレス帳のエントリを比較します。
+# <a name="comparing-address-book-entries"></a>アドレス帳エントリの比較
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [IABLogon::CompareEntryIDs](iablogon-compareentryids.md)プロバイダーは、プロバイダーのオブジェクトの 2 つのエントリ id を比較します。 MAPI は、 [MAPIUID](mapiuid.md)を登録して、プロバイダーを 2 つのエントリの識別子が含まれていることを確認した後に、このメソッドを呼び出します。 したがって、 **CompareEntryIDs**メソッドでは、 _lpEntryID1_および_lpEntryID2_パラメーターに渡されたエントリ id をプロバイダーに属している必要があります調べません。 
   

@@ -23,7 +23,7 @@ ms.locfileid: "19800728"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 特定のアドレス帳のエントリに関する詳細情報を表示するダイアログ ボックスが表示されます。
   
@@ -41,7 +41,7 @@ HRESULT Details(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulUIParam_
   
@@ -97,7 +97,7 @@ S_OK
   
 > 詳細] ダイアログ ボックスは、アドレス帳のエントリを正常に表示されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 アドレス帳プロバイダーのサポート オブジェクトの**IMAPISupport::Details**メソッドを実装します。 アドレス帳プロバイダーは、アドレス帳の特定のエントリについて説明するダイアログ ボックスを表示する**詳細情報**を呼び出します。 ボタンを追加する、クライアントの定義] ダイアログ ボックスには、 _lpfButtonCallback_、 _lpvButtonContext_、および_lpszButtonText_パラメーターを使用できます。 ボタンがクリックされると、MAPI は、 _lpvButtonContext_のボタンとデータの両方のエントリ id を渡すこと_lpfButtonCallback_で指定されたコールバック関数を呼び出します。 拡張ボタンが必要でない場合_lpszButtonText_は NULL である必要があります。 
   

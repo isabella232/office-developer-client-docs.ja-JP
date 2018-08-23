@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 325b6b47-b6a6-503e-e9bb-65ef7b73d659
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7595fac4346a537eed86550432f56a761c27c0ec
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19800190"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プライベートの Exchange ストアの Exchange キャッシュ モードが有効になっているかどうか、ポリシーによって適用されるには、これかどうかを示します。
   
@@ -36,7 +36,7 @@ BOOL GetDefCachedMode(BOOL *pfPolicy);
 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pfPolicy_
   

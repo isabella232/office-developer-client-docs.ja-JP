@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 180022af-4c1c-408c-a3fe-ed075cef79ab
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fd2575d401aa8a39d6f3b2cd08377b587b430ef1
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800517"
 ---
-# <a name="imapiformadvisesink--iunknown"></a>IMAPIFormAdviseSink: IUnknown
+# <a name="imapiformadvisesink--iunknown"></a>IMAPIFormAdviseSink : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームの閲覧者から通知を受信するフォームのサーバーを使用できます。 
   
@@ -43,7 +43,7 @@ ms.locfileid: "19800517"
 |[OnChange](imapiformadvisesink-onchange.md) <br/> |フォーム ビューアーのステータスに変更が発生したことを示します。  <br/> |
 |[OnActivateNext](imapiformadvisesink-onactivatenext.md) <br/> |フォームを表示するのには、次のメッセージのメッセージ クラスを処理できるかどうかを示します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム、フォームのサーバーの使用は、そのフォーム オブジェクトに含めての代わりに**IMAPIFormAdviseSink**を実装するシンク オブジェクトを案内します。 したがって、フォームの閲覧者はこのインターフェイスへのポインターを取得するフォームの[IUnknown::QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx)メソッドに失敗した呼び出しを想定します。 
   

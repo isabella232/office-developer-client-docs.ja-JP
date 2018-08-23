@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2b6a4c6a-bb71-4ea1-a3b6-90a2722880fb
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: dcde242f5f2e956d1926d6914431008383f5aa55
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800686"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 さらにアクセスするための[IAddrBook](iaddrbookimapiprop.md)ポインターを返す MAPI 統合アドレス帳を開きます。 
   
@@ -36,7 +36,7 @@ HRESULT OpenAddressBook(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -68,7 +68,7 @@ MAPI_W_ERRORS_RETURNED
   
 > 呼び出しが成功したが、1 つまたは複数のアドレス帳プロバイダーのコンテナーを開くことができませんでした。 この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPISession::OpenAddressBook**メソッドでは、MAPI の統合のアドレス帳をプロファイル内のアドレス帳プロバイダーのすべての最上位のコンテナーのコレクションを開きます。 _LppAdrBook_パラメーターで返されるポインターをアドレス帳の内容へのアクセスをさらに提供します。 これにより、個々 のコンテナーを開き、メッセージング ユーザーの検索、および共通のアドレス] ダイアログ ボックスを表示するなどのタスクを実行する呼び出し元です。 
   
@@ -90,7 +90,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
   
 [IMAPISession::GetLastError](imapisession-getlasterror.md)
   

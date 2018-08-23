@@ -1,5 +1,5 @@
 ---
-title: 検査関数 (カスタム web アプリケーションのアクセス)
+title: 特殊評価関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 08/18/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798563"
 ---
-# <a name="inspection-functions-access-custom-web-app"></a>検査関数 (カスタム web アプリケーションのアクセス)
+# <a name="inspection-functions-access-custom-web-app"></a>特殊評価関数 (Access カスタム Web アプリ)
 
 > [!IMPORTANT]
 > [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 

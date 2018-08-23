@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 655b66e8-8642-43ad-8392-048578f96820
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a2865441e16ed31931042abbc42eb8c56b686525
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799750"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 既存の[FLATENTRY](flatentry.md)構造体のバイト数を計算します。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19799750"
 CbFLATENTRY (_lpentry)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  __lpentry_
   

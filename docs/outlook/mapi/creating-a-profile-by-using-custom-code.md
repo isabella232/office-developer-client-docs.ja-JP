@@ -1,5 +1,5 @@
 ---
-title: カスタム コードを使用してプロファイルを作成します。
+title: ユーザー設定コードを使用したプロファイルの作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799865"
 ---
-# <a name="creating-a-profile-by-using-custom-code"></a>カスタム コードを使用してプロファイルを作成します。
+# <a name="creating-a-profile-by-using-custom-code"></a>ユーザー設定コードを使用したプロファイルの作成
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロファイルを作成するコードを記述することを選択する場合は、プロファイル エントリの種類と各エントリのために必要な情報の量を注文する方法を理解することを確認します。 プロファイル内のエントリの順序の影響は、 [MAPI プロファイル](mapi-profiles.md)で説明しています。
   

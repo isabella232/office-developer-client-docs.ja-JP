@@ -1,5 +1,5 @@
 ---
-title: TNEF を有効にしたトランスポート プロバイダーの開発
+title: TNEF 対応のトランスポート プロバイダーの開発
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799915"
 ---
-# <a name="developing-a-tnef-enabled-transport-provider"></a>TNEF を有効にしたトランスポート プロバイダーの開発
+# <a name="developing-a-tnef-enabled-transport-provider"></a>TNEF 対応のトランスポート プロバイダーの開発
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI の機能の別のセットをサポートするためのメッセージング システム間の相互運用性を昇格させるには、MAPI は、データを転送する標準の方法としてトランスポート ニュートラル カプセル化形式 (TNEF) を提供します。 この形式は、トランスポート プロバイダーは、それを送信するときのメッセージと共に転送されるバイナリ ストリームに、基になるメッセージング システムでサポートされていない MAPI プロパティをカプセル化します。 トランスポート プロバイダーは、メッセージを受信するは、元のメッセージのすべてのプロパティを取得し、クライアント アプリケーションに使用できるようにするバイナリ ストリームをデコードし、ことができます。 TNEF の運用モデルは、次のとおりです。
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ef2112c7-35cd-4106-ad18-a45e1dbe07d6
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 10f8f2cf44bf1a8e00f8c2b1a76826db5fc07161
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800364"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Outlook アドレス帳] ダイアログ ボックスが表示されます。 
   
@@ -35,7 +35,7 @@ HRESULT Address(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulUIParam_
   
@@ -55,7 +55,7 @@ S_OK
   
 > 共通のアドレス] ダイアログ ボックスが正常に表示されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 Outlook では無視されます、 **ulFlags**のメンバー、 _lpAdrParms_パラメーターは、出力時に、モードレス ダイアログ ボックスのウィンドウ ハンドルの戻り値を予測し DIALOG_SDI に設定されている場合Outlook 以外のクライアントでは、モーダル ダイアログ ボックスのバージョンは常に表示します。 
   
@@ -115,7 +115,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [SRowSet](srowset.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

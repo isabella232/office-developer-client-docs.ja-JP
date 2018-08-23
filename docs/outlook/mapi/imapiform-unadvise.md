@@ -23,7 +23,7 @@ ms.locfileid: "19800528"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [IMAPIForm::Advise](imapiform-advise.md)を呼び出すことによって確立されていたフォーム ビューアーを使用して通知の登録をキャンセルします。
   
@@ -33,7 +33,7 @@ HRESULT Unadvise(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulConnection_
   
@@ -49,7 +49,7 @@ E_INVALIDARG
   
 > _UlConnection_パラメーターに渡される接続数は、有効な登録を表していません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォームの閲覧者は、 **IMAPIForm::Advise**メソッドを呼び出すことによって最初に確立したことを示す通知の登録をキャンセルする**IMAPIForm::Unadvise**メソッドを呼び出します。 
   
@@ -63,7 +63,7 @@ E_INVALIDARG
 
 [IMAPIForm::Advise](imapiform-advise.md)
   
-[IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)
+[IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md)
   
-[IMAPIForm: IUnknown](imapiformiunknown.md)
+[IMAPIForm : IUnknown](imapiformiunknown.md)
 

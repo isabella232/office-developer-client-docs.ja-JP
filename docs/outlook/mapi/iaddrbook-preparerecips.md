@@ -23,7 +23,7 @@ ms.locfileid: "19800405"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージング システムによって後で使用できる受信者のリストを準備します。 
   
@@ -59,7 +59,7 @@ S_OK
   
 > 宛先リストの準備ができました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントとサービス ・ プロバイダーは、以下を実行する**PrepareRecips**メソッドを呼び出します。 
   
@@ -83,11 +83,11 @@ PT_ERROR 詳細については、[プロパティの型](property-types.md)を�
   
 [IMessage::ModifyRecipients](imessage-modifyrecipients.md)
   
-[PidTagEntryId の標準的なプロパティ](pidtagentryid-canonical-property.md)
+[PidTagEntryId 標準プロパティ](pidtagentryid-canonical-property.md)
   
 [SPropValue](spropvalue.md)
   
 [SRowSet](srowset.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

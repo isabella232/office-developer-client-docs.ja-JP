@@ -1,5 +1,5 @@
 ---
-title: テーブルの行と列を表示します。
+title: テーブルの行と列の表示
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 49567a8d-b58d-4636-bead-a1f84b4f111d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ee60e64559a0b4163074ddb62ed72c4600c8e03d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799945"
 ---
-# <a name="displaying-table-rows-and-columns"></a>テーブルの行と列を表示します。
+# <a name="displaying-table-rows-and-columns"></a>テーブルの行と列の表示
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  新しい電子メールの受信者を定義するユーザーを有効にするのには、アドレス帳プロバイダーがプロパティ ページを使用できます。 
   

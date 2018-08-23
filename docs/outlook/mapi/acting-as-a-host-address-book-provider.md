@@ -1,5 +1,5 @@
 ---
-title: ホストのアドレス帳プロバイダーとして動作しています。
+title: ホスト アドレス帳プロバイダーとして機能
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799634"
 ---
-# <a name="acting-as-a-host-address-book-provider"></a>ホストのアドレス帳プロバイダーとして動作しています。
+# <a name="acting-as-a-host-address-book-provider"></a>ホスト アドレス帳プロバイダーとして機能
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ホスト プロバイダーとは、そのコンテナー内の他のプロバイダーからの受信者が含まれていて、受信者のメンテナンスを部分的に制御するその他のプロバイダーの実装に依存しているアドレス帳プロバイダーです。 ホスト プロバイダーでは、これらの受信者が外部のテンプレート識別子を使用して、外部プロバイダーのコードにこれらの受信者に対してデータをバインドします。 プロバイダーは、 **PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) のプロパティ、受信者を取得し、 [IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md)への呼び出しに渡されます場合は、バインディング プロセスが開始されます。 
   

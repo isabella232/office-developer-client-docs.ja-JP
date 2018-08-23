@@ -23,7 +23,7 @@ ms.locfileid: "19800763"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 一意の識別子として使用する新しい[MAPIUID](mapiuid.md)構造体を作成します。 
   
@@ -33,7 +33,7 @@ LPMAPIUID lpMuid
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpMuid_
   
@@ -45,7 +45,7 @@ S_OK
   
 > 新しい**MAPIUID**構造体が作成されました。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 サポートのすべてのオブジェクトの**IMAPISupport::NewUID**メソッドを実装します。 サービス プロバイダーおよびメッセージ サービスは、長期的な一意の識別子を生成する必要があるたびに**NewUID**を呼び出します。 メッセージは、たとえば、プロバイダーを格納、 **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) のプロパティに新しく作成したメッセージを配置するには**MAPIUID**を取得する**NewUID**を呼び出すことがあります。
   

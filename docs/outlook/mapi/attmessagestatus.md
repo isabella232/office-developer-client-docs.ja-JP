@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 8f55470a-65b3-4210-a7d2-9031cb17ca80
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 158e4db4b0f80b80385e85c8afa16fa515dc61b1
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19799721"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI メッセージのフラグは、下位互換性を保持するためにフラグを TNEF にマップされます。 すべてのフラグがグループ化され、1 バイトでエンコードします。 マッピングは次のとおりです。
   

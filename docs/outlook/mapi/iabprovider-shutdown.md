@@ -23,7 +23,7 @@ ms.locfileid: "19800367"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アクティブなセッションへの接続をキャンセルします。
   
@@ -33,7 +33,7 @@ HRESULT Shutdown(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulFlags_
   
@@ -53,5 +53,5 @@ S_OK
 
 
 
-[IABProvider: IUnknown](iabprovideriunknown.md)
+[IABProvider : IUnknown](iabprovideriunknown.md)
 

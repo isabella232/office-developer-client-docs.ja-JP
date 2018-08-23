@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 883448f5-0d3f-486d-80a3-7b961c209cd0
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 75ef8d6f2134e0269745f92dab1f790228692853
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800615"
 ---
-# <a name="imapimessagesite--iunknown"></a>IMAPIMessageSite: IUnknown
+# <a name="imapimessagesite--iunknown"></a>IMAPIMessageSite : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージを操作して、このような操作に応答するフォーム ビューアー コード (通常はクライアント アプリケーション) によって実装されます。
   

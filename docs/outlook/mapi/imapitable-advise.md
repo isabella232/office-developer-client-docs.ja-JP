@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e8b5d21e-dc14-4b61-96b3-a51bcfa0d232
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 781146193748cdd9408a3320e90a73a070ced2af
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800835"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルに影響を与えず、指定されたイベントの通知を受信するアドバイズ シンク オブジェクトを登録します。
   
@@ -35,7 +35,7 @@ ULONG_PTR FAR * lpulConnection
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulEventMask_
   
@@ -61,7 +61,7 @@ MAPI_E_NO_SUPPORT
   
 > テーブルの実装は、その行と列への変更をサポートしていませんか、または通知をサポートしていません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 通知コールバックのプロバイダーに実装されている table オブジェクトを登録するのには、 **IMAPITable::Advise**メソッドを使用します。 Table オブジェクトに変更が発生するたびに、プロバイダーはどのようなイベント マスクのビットは、 _ulEventMask_パラメーターで設定された、つまりどのような種類の変更が発生したを確認します。 ビットが設定されている場合、プロバイダーはイベントを通知する_lpAdviseSink_パラメーターで指定されたアドバイズ シンク オブジェクトの[IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出しますし。 **OnNotify**ルーチンに渡された通知の構造体のデータでは、イベントについて説明します。 
   
@@ -95,7 +95,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [TABLE_NOTIFICATION](table_notification.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

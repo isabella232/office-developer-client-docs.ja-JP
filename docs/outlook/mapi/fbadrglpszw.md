@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 880eb35d-7045-4fdd-bb33-0f14557a7316
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: da31da0ae0437e1578a681d9232b0693932b2aec
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800036"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Unicode 文字列の配列内のすべての文字列を検証します。 
   
@@ -40,7 +40,7 @@ BOOL FBadRglpszW(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lppszW_
   
@@ -50,7 +50,7 @@ BOOL FBadRglpszW(
   
 > [in]_LppszW_パラメーターが指す配列内の文字列の数です。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 TRUE 
   

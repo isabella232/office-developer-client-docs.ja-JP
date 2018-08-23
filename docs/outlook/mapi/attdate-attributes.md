@@ -1,5 +1,5 @@
 ---
-title: attDate 属性
+title: attDate の属性
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799710"
 ---
-# <a name="attdate-attributes"></a>attDate 属性
+# <a name="attdate-attributes"></a>attDate の属性
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 日付と時刻に関連するすべての MAPI プロパティは、 **attDate**プレフィックスを持つ TNEF の属性にマップされます。 これら**DTR**の構造体としてすべてエンコードします。 日付と時刻の添付ファイルの属性は、 **DTR**も同様の構造体としてエンコードされます。 
   

@@ -1,5 +1,5 @@
 ---
-title: セッションを使用してオブジェクトへのアクセス
+title: セッションを使用したオブジェクトへのアクセス
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: ecada707-2960-41ec-be7e-619cad257c57
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ee20e73e5bc7bb6854b956da541d3a318a267d0f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799640"
 ---
-# <a name="accessing-objects-by-using-the-session"></a>セッションを使用してオブジェクトへのアクセス
+# <a name="accessing-objects-by-using-the-session"></a>セッションを使用したオブジェクトへのアクセス
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 さまざまなオブジェクトにアクセスするのには、 [MAPILogonEx](mapilogonex.md)呼び出しから受信したセッションのポインターを使用できます。 さまざまなオブジェクトへのアクセスに使用されるメソッドを次の表に一覧します。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19799640"
 |**オブジェクト**|**メソッド**|
 |:-----|:-----|
 |ログオン オブジェクトのアドレス帳プロバイダー  <br/> |[IABLogon::OpenEntry](iablogon-openentry.md) <br/> |
-|アドレス帳  <br/> |[アドレス帳コンテナー](iaddrbook-openentry.md) <br/> |
+|アドレス帳  <br/> |[IAddrBook::OpenEntry](iaddrbook-openentry.md) <br/> |
 |アドレス帳コンテナー  <br/> |[IMAPIContainer::OpenEntry](imapicontainer-openentry.md) <br/> |
 |セッション  <br/> |[IMAPISession::OpenEntry](imapisession-openentry.md) <br/> |
 |メッセージ ・ ストア  <br/> |[IMsgStore::OpenEntry](imsgstore-openentry.md) <br/> |

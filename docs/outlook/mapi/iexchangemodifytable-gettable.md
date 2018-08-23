@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 97df32c4-07c6-41f1-84e7-c6e87d396e34
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0cf9373c68d533908b857a4d8f1c0e71aa11846f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800442"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI テーブルのオブジェクトのインターフェイスへのポインターを返します。
   
@@ -69,7 +69,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)
+[IExchangeModifyTable : IUnknown](iexchangemodifytableiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

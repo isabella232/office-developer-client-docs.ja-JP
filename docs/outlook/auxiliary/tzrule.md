@@ -28,7 +28,7 @@ typedef struct {
 } TZRULE;
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 _wFlags_
   
@@ -46,7 +46,7 @@ _TZReg_
   
 > タイム ゾーン規則のタイム ゾーン情報。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この構造体は、タイム ゾーン規則が有効になるときを示す追加情報を提供することによって[TZREG](tzreg.md)を補強します。 
   

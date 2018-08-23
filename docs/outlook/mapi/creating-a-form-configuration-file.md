@@ -1,5 +1,5 @@
 ---
-title: フォーム構成ファイルを作成します。
+title: フォーム構成ファイルの作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799860"
 ---
-# <a name="creating-a-form-configuration-file"></a>フォーム構成ファイルを作成します。
+# <a name="creating-a-form-configuration-file"></a>フォーム構成ファイルの作成
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム構成ファイルは、フォーム マネージャーを使用しているとクライアント アプリケーションの両方のフォームに関する情報を提供します。 フォーム構成ファイルには、メッセージング クライアント、フォームによって実装された動詞およびフォームでサポートされているプラットフォームで使用するフォームによって公開されたプロパティを含むフォームの場合、広範な仕様が含まれています。
   
@@ -33,7 +33,7 @@ ms.locfileid: "19799860"
     
 - パス名
     
-- 整数型 (Integer)
+- 整数
     
 - GUID
     
@@ -43,5 +43,5 @@ ms.locfileid: "19799860"
 
 
 
-[MAPI フォームのサーバーの開発](developing-mapi-form-servers.md)
+[MAPI フォーム サーバーの開発](developing-mapi-form-servers.md)
 

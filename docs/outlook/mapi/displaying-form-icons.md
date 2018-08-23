@@ -1,5 +1,5 @@
 ---
-title: フォームのアイコンを表示します。
+title: フォーム アイコンの表示
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799940"
 ---
-# <a name="displaying-form-icons"></a>フォームのアイコンを表示します。
+# <a name="displaying-form-icons"></a>フォーム アイコンの表示
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 、フォルダー内のメッセージの一覧を表示するとき、ユーザーに役に立つ場合は標準の IPM とカスタム メッセージ クラスを持つメッセージを区別します。メッセージに注意してください。 カスタム メッセージ クラスは、フォームのサーバーに対応し、フォーム サーバーが自身を表すアイコンを提供します。 ユーザーがメッセージを開く前に、各メッセージのメッセージ クラスにユーザーに警告するメッセージの一覧にこれらのアイコンを表示できます。 通常、フォームの**PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)) のプロパティのアイコンは、メッセージの一覧に表示する必要があります。 フォームには、プロパティ シートでフォームが最小化したときに表示できる**PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) プロパティが設定されています。
   

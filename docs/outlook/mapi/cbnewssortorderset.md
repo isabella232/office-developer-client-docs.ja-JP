@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a2fb67e0-ccdb-4eb0-9f8c-75213442159f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a0bfd96dd814ed027db953e4aabc8af2ab63d25f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799784"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [SSortOrder](ssortorder.md)構造体によって表される並べ替え順の指定した番号を含む新しい[SizedSSortOrderSet](sizedssortorderset.md)構造体に割り当てられるバイト数を計算します。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19799784"
 CbNewSSortOrderSet (_csort)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  __csort_
   

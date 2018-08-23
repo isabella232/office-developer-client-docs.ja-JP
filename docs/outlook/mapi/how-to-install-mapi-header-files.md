@@ -17,7 +17,7 @@ ms.locfileid: "19800226"
 ---
 # <a name="install-mapi-header-files"></a>MAPI ヘッダー ファイルをインストールします。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックでは、入手して、MAPI ヘッダー ファイルとライブラリ ファイルをインストールする方法について説明します。
 
@@ -28,6 +28,6 @@ MAPI ヘッダー ファイルの一覧は、[一般的に使用したヘッダ�
 ## <a name="see-also"></a>関連項目
 
 - [MAPI �v���O���~���O�̊T�v](mapi-programming-overview.md) 
-- [MAPI の関数へのリンク](how-to-link-to-mapi-functions.md)
+- [MAPI 機能へのリンク](how-to-link-to-mapi-functions.md)
 - [�悭�g����w�b�_�[ �t�@�C��](commonly-used-header-files.md)
 

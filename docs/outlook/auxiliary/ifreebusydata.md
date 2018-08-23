@@ -39,7 +39,7 @@ ms.locfileid: "19799343"
 |[Placeholder6](ifreebusydata-placeholder6.md) <br/> | *このメンバーは、プレース ホルダーではサポートされていません。*  <br/> |
 |[GetFBPublishRange](ifreebusydata-getfbpublishrange.md) <br/> |ユーザーのデータのブロックの空き時間情報の列挙型の事前に設定された時間の範囲を取得します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このインターフェイスのメンバーのほとんどは、Outlook の内部使用に予約されているプレース ホルダーであるし、変更されることが。 空き/予約済みプロバイダーする必要があります実装のみとして指定した場合は、のみ、指定した戻り値を返します。
   

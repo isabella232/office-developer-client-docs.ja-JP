@@ -23,7 +23,7 @@ ms.locfileid: "19800437"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Table オブジェクトには、最後に発生したエラーに関する情報を返します。
   
@@ -35,7 +35,7 @@ HRESULT GetLastError(
 ); 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _hResult_
   
@@ -53,7 +53,7 @@ HRESULT GetLastError(
 
 
 
-[IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)
+[IExchangeModifyTable : IUnknown](iexchangemodifytableiunknown.md)
   
 [MAPIERROR](mapierror.md)
 

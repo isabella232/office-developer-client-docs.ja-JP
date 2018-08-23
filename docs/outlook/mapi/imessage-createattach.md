@@ -23,7 +23,7 @@ ms.locfileid: "19800898"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 新しい添付ファイルを作成します。
   
@@ -36,7 +36,7 @@ LPATTACH FAR * lppAttach
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpInterface_
   
@@ -64,7 +64,7 @@ S_OK
   
 > 添付ファイルが正常に作成されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMessage::CreateAttach**メソッドでは、メッセージに新しい添付ファイルを作成します。 新しい添付ファイルと、それに設定されている任意のプロパティは利用可能な添付ファイルの[IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドとメッセージの**IMAPIProp::SaveChanges**メソッドの両方にクライアントが呼び出されるまで。 
   

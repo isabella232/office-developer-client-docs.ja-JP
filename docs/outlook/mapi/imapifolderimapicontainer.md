@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: bc2e8d17-7687-43c2-8f01-b677703f7288
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 64a64029c3507d9ac4b520076a44e23170dd9bd4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800508"
 ---
-# <a name="imapifolder--imapicontainer"></a>IMAPIFolder: IMAPIContainer
+# <a name="imapifolder--imapicontainer"></a>IMAPIFolder : IMAPIContainer
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォルダー内のメッセージとサブフォルダーに対して操作を実行します。
   
@@ -53,16 +53,16 @@ ms.locfileid: "19800508"
 |[SaveContentsSort](imapifolder-savecontentssort.md) <br/> |フォルダーの内容のテーブルの既定の並べ替え順序を設定します。  <br/> |
 |[EmptyFolder](imapifolder-emptyfolder.md) <br/> |フォルダー自体を削除することがなく、フォルダーからすべてのメッセージとサブフォルダーを削除します。  <br/> |
    
-|**必要なプロパティ**|**Access**|
+|**必須のプロパティ**|**Access**|
 |:-----|:-----|
 |**PR_DISPLAY_NAME**([PidTagDisplayNamePrefix](pidtagdisplaynameprefix-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
-|**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
+|**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_FOLDER_TYPE**([PidTagFolderType](pidtagfoldertype-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
-|**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_PARENT_ENTRYID**([PidTagParentEntryId](pidtagparententryid-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_STORE_ENTRYID**([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_STORE_RECORD_KEY**([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
+|**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_PARENT_ENTRYID**([PidTagParentEntryId](pidtagparententryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_STORE_ENTRYID**([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_STORE_RECORD_KEY**([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: サービス プロバイダーのエントリ ポイント関数を実装します。
+title: サービス プロバイダー エントリ ポイント関数の実装
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 83ff54c4-86ce-4529-ae45-260dfb763b30
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 632aff9c0f6fc60ee9730b5e43667b5b610ae8df
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800920"
 ---
-# <a name="implementing-a-service-provider-entry-point-function"></a>サービス プロバイダーのエントリ ポイント関数を実装します。
+# <a name="implementing-a-service-provider-entry-point-function"></a>サービス プロバイダー エントリ ポイント関数の実装
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 すべてのサービス プロバイダーの DLL には、それをロードするのには MAPI を呼び出す関数をポイントするエントリがあります。 このエントリ ポイント関数は[DllMain](http://msdn.microsoft.com/en-us/library/ms682583.aspx)、Win32 DLL エントリ ポイント関数の場合と同様に注意します。
   
@@ -53,5 +53,5 @@ ms.locfileid: "19800920"
 
 
 
-[サービス プロバイダーを開始します。](starting-a-service-provider.md)
+[サービス プロバイダーの開始](starting-a-service-provider.md)
 

@@ -19,7 +19,7 @@ ms.locfileid: "19799842"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアントとサービス ・ プロバイダーにコピーできます 1 つまたは複数オブジェクトのプロパティの次の**IMAPIProp**メソッドおよび API 関数をクリックすると。 
   
@@ -39,5 +39,5 @@ API 関数は、上記リスト プロパティのコピーを別のオブジェ
 
 
 
-[MAPI Property Overview](mapi-property-overview.md)
+[MAPI のプロパティの概要](mapi-property-overview.md)
 

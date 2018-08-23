@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6058c78b-05d4-45a3-988c-1fbf8322125e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2505f555fd8867fdc24a14f523a74b6f478a3e70
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799975"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ディスプレイ テーブルから作成されたダイアログ ボックスのボタン コントロールに関する情報が含まれています。
   
@@ -42,7 +42,7 @@ typedef struct _DTBLBUTTON
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulbLpszLabel**
   
@@ -60,7 +60,7 @@ MAPI_UNICODE
   
 > PT_OBJECT [IMAPIControl](imapicontroliunknown.md)インターフェイスを実装する種類のプロパティのプロパティ タグです。 ボタンをクリックすると、MAPI は、このプロパティを取得するために表示された表の[IMAPIProp](imapipropiunknown.md)の実装の[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出します。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 ボタン コントロールを記述する**DTBLBUTTON**構造体をクリックすると、操作を開始するユーザーに許可します。 通常、ボタンをクリックすると、表示されるモーダル ダイアログ ボックスまたはプログラムのタスクが呼び出されます。 サービス プロバイダーには、ボタン コントロールで何かを実装できます。 ボタンは、他のコントロールの値に基づいてタスクを実行することになって場合、それらのコントロールが、DT_SET_IMMEDIATE フラグを設定した必要があります。 
   

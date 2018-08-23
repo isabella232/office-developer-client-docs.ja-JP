@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2d02ebf6-bb8b-42bb-9bd0-870dbae9aeb4
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0ae35166f01f597c2c3ab399a1b66e5760ab0dc8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19800896"
 ---
 # <a name="imessagesetreadflag"></a>IMessage::SetReadFlag
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 設定し、メッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) のプロパティに MSGFLAG_READ フラグをクリアまたはリードのレポートの送信を管理します。
   
@@ -69,7 +69,7 @@ MAPI_E_INVALID_PARAMETER
     
    - CLEAR_READ_FLAG |GENERATE_RECEIPT_ONLY
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMessage::SetReadFlag**メソッドを設定または、 **PR_MESSAGE_FLAGS**プロパティと、メッセージを保存するのには[IMAPIProp::SaveChanges](imapiprop-savechanges.md)の呼び出しでのメッセージの MSGFLAG_READ フラグをクリアします。 MSGFLAG_READ フラグを設定は、必ずしも目的の受信者がメッセージを読むには実際には、読み取りとメッセージをマークします。 
   
@@ -123,7 +123,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 - [IMAPIFolder::SetReadFlags](imapifolder-setreadflags.md)  
 - [IMAPIProp::GetProps](imapiprop-getprops.md)  
 - [IMAPIProp::SaveChanges](imapiprop-savechanges.md) 
-- [PidTagMessageFlags の標準的なプロパティ](pidtagmessageflags-canonical-property.md) 
+- [PidTagMessageFlags 標準プロパティ](pidtagmessageflags-canonical-property.md) 
 - [IMessage: IMAPIProp](imessageimapiprop.md)
 - [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
 

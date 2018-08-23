@@ -17,7 +17,7 @@ ms.locfileid: "19799856"
 ---
 # <a name="copying-or-moving-a-message-or-a-folder"></a>コピーまたはメッセージまたはフォルダーを移動します。
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアントは、コピーまたはメッセージまたはフォルダーを移動する 4 つの方法のいずれかを使用できます。
   

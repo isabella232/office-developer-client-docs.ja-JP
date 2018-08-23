@@ -23,13 +23,13 @@ ms.locfileid: "19799088"
 
 プロジェクトを作成および開発する際によく行う作業。
   
-- [InfoPath 2003 オブジェクト モデルを使用してフォーム テンプレートを作成します。](how-to-create-a-form-template-using-the-infopath-2003-object-model.md)
+- [InfoPath 2003 オブジェクト モデルを使用してフォーム テンプレートを作成する](how-to-create-a-form-template-using-the-infopath-2003-object-model.md)
     
-- [InfoPath 2003 オブジェクト モデルを使用してイベント ハンドラーを追加します。](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)
+- [InfoPath 2003 オブジェクト モデルを使用してイベント ハンドラーを追加する](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)
     
-- [InfoPath 2003 オブジェクト モデルを使用して InfoPath プロジェクトをデバッグします。](how-to-debug-infopath-projects-using-the-infopath-2003-object-model.md)
+- [InfoPath 2003 オブジェクト モデルを使用して InfoPath プロジェクトをデバッグする](how-to-debug-infopath-projects-using-the-infopath-2003-object-model.md)
     
-- [追加し、カスタム アセンブリを参照](how-to-add-and-reference-custom-assemblies.md)
+- [カスタム アセンブリを追加および参照する](how-to-add-and-reference-custom-assemblies.md)
     
 - [[ウォークスルー] InfoPath 2003 オブジェクト モデルを使用して基本的なフォーム テンプレートを作成およびデバッグする方法](walkthrough-create-and-debug-basic-form-template-using-infopath-object-model.md)
     
@@ -37,19 +37,19 @@ ms.locfileid: "19799088"
 
 マネージ コード フォーム テンプレートをプログラミングする際によく行う作業。
   
-- [フォーム、InfoPath 2003 オブジェクト モデルを使用してイベントに応答します。](how-to-respond-to-form-events-using-the-infopath-2003-object-model.md)
+- [InfoPath 2003 オブジェクト モデルを使用してフォーム イベントに応答する](how-to-respond-to-form-events-using-the-infopath-2003-object-model.md)
     
-- [InfoPath 2003 オブジェクト モデルを使用してビューに関する作業します。](how-to-work-with-views-using-the-infopath-2003-object-model.md)
+- [InfoPath 2003 オブジェクト モデルを使用してビューを操作する](how-to-work-with-views-using-the-infopath-2003-object-model.md)
     
-- [InfoPath 2003 オブジェクト モデルを使用してフォーム ウィンドウを操作します。](how-to-work-with-form-windows-using-the-infopath-2003-object-model.md)
+- [InfoPath 2003 オブジェクト モデルを使用してフォーム ウィンドウを操作する](how-to-work-with-form-windows-using-the-infopath-2003-object-model.md)
     
-- [通知と、InfoPath 2003 オブジェクト モデルを使用してダイアログ ボックスを表示します。](how-to-display-alerts-and-dialog-boxes-using-the-infopath-2003-object-model.md)
+- [InfoPath 2003 オブジェクト モデルを使用して警告とダイアログ ボックスを表示する](how-to-display-alerts-and-dialog-boxes-using-the-infopath-2003-object-model.md)
     
-- [InfoPath 2003 オブジェクト モデルを使用してエラーを処理します。](how-to-handle-errors-using-the-infopath-2003-object-model.md)
+- [InfoPath 2003 オブジェクト モデルを使用してエラーを処理する](how-to-handle-errors-using-the-infopath-2003-object-model.md)
     
-- [InfoPath 2003 オブジェクト モデルを使用して、デジタル署名を使用します。](how-to-work-with-digital-signatures-using-the-infopath-2003-object-model.md)
+- [InfoPath 2003 オブジェクト モデルを使用してデジタル署名を操作する](how-to-work-with-digital-signatures-using-the-infopath-2003-object-model.md)
     
-- [InfoPath 2003 オブジェクト モデルを使用してソリューションをオフラインで作業します。](how-to-work-with-offline-solutions-using-the-infopath-2003-object-model.md)
+- [InfoPath 2003 オブジェクト モデルを使用してオフライン ソリューションを操作する](how-to-work-with-offline-solutions-using-the-infopath-2003-object-model.md)
     
 - [InfoPath 2003 オブジェクト モデルを使用して MSXML および System.Xml を操作する](working-with-msxml-and-system-xml-using-the-infopath-2003-object-model.md)
     
@@ -57,11 +57,11 @@ ms.locfileid: "19799088"
 
 データを操作する際によく行う作業。
   
-- [InfoPath 2003 オブジェクト モデルを使用してアプリケーション データにアクセス](how-to-access-application-data-using-the-infopath-2003-object-model.md)
+- [InfoPath 2003 オブジェクト モデルを使用してアプリケーション データにアクセスする](how-to-access-application-data-using-the-infopath-2003-object-model.md)
     
-- [InfoPath 2003 オブジェクト モデルを使用して外部データ ソースのアクセス](how-to-access-external-data-sources-using-the-infopath-2003-object-model.md)
+- [InfoPath 2003 オブジェクト モデルを使用して外部データ ソースにアクセスする](how-to-access-external-data-sources-using-the-infopath-2003-object-model.md)
     
-- [InfoPath 2003 オブジェクト モデルを使用してフォーム データにアクセス](how-to-access-form-data-using-the-infopath-2003-object-model.md)
+- [InfoPath 2003 オブジェクト モデルを使用してフォーム データにアクセスする](how-to-access-form-data-using-the-infopath-2003-object-model.md)
     
 ## <a name="security-and-deployment"></a>セキュリティと展開
 
@@ -69,11 +69,11 @@ ms.locfileid: "19799088"
   
 - [コードを含むフォーム テンプレートのセキュリティ モデルについて](about-the-security-model-for-form-templates-with-code.md)
     
-- [コードを含む InfoPath フォーム テンプレートを展開します。](how-to-deploy-infopath-form-templates-with-code.md)
+- [コードを含む InfoPath フォーム テンプレートを展開する](how-to-deploy-infopath-form-templates-with-code.md)
     
-- [コードを含むフォーム テンプレートのセキュリティ設定を構成します。](how-to-configure-security-settings-for-form-templates-with-code.md)
+- [コードを含むフォーム テンプレートのセキュリティ設定を構成する](how-to-configure-security-settings-for-form-templates-with-code.md)
     
-- [プレビューし、完全な信頼を必要とするフォーム テンプレートのデバッグ](how-to-preview-and-debug-form-templates-that-require-full-trust.md)
+- [完全信頼が必要なフォーム テンプレートをプレビューおよびデバッグする](how-to-preview-and-debug-form-templates-that-require-full-trust.md)
     
 ## <a name="see-also"></a>関連項目
 

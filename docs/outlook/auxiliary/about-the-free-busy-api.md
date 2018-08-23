@@ -1,5 +1,5 @@
 ---
-title: 空き/予約済み API について
+title: 空き時間情報 API について
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799300"
 ---
-# <a name="about-the-freebusy-api"></a>空き/予約済み API について
+# <a name="about-the-freebusy-api"></a>空き時間情報 API について
 
 空き/予約済み API では、指定の時間範囲内の指定したユーザー アカウントの空き時間情報のステータス情報を提供するメール プロバイダーを使用します。 ユーザーの予定表で時間帯の空き時間情報のステータスは、次のいずれか: 不在時の使用中、仮承諾、または無料です。
   
@@ -43,7 +43,7 @@ Outlook で空き時間情報のプロバイダーを登録するにメール �
     
    `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\14.0\Outlook\SchedulingInformation\FreeBusySupport`
     
-   |名前 |種類 |値 |
+   |名前 |型 |値 |
    |:-----|:-----|:-----|
    |SMTP  |REG_SZ  |{CLSID} IFreeBusySupport のそれぞれの実装について  |
    

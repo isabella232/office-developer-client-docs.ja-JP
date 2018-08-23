@@ -23,7 +23,7 @@ ms.locfileid: "19800492"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォルダーの内容のテーブルの既定の並べ替え順序を設定します。
   
@@ -34,7 +34,7 @@ HRESULT SaveContentsSort(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpSortCriteria_
   
@@ -58,7 +58,7 @@ MAPI_E_NO_SUPPORT
   
 > メッセージ ストア プロバイダーでは、そのフォルダーの内容のテーブルの並べ替え順序を保存することはできません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIFolder::SaveContentsSort**メソッドは、フォルダーの内容のテーブルの既定の並べ替え順序を確立します。 **SaveContentsSort**コードの呼び出しの後、クライアントがフォルダーの[IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md)メソッドを呼び出すと、返されるコンテンツ テーブル内の行は**SaveContentsSort**によって確立された順序で表示されます。
   
@@ -72,5 +72,5 @@ MAPI_E_NO_SUPPORT
   
 [SSortOrderSet](ssortorderset.md)
   
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
 

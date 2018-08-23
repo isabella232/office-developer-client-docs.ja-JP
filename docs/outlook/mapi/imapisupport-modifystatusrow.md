@@ -23,7 +23,7 @@ ms.locfileid: "19800748"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ステータス テーブルを変更するには、新しい行を追加したり、既存の行を変更します。
   
@@ -35,7 +35,7 @@ ULONG ulFlags
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _あう_
   
@@ -59,7 +59,7 @@ S_OK
   
 > 状態テーブルは正しく更新されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 サービス プロバイダーのサポートのすべてのオブジェクトの**IMAPISupport::ModifyStatusRow**メソッドを実装します。 サービス プロバイダーは、状態テーブルに行を追加するのにはログオン時に、行を更新するのにはセッション中に他の時間に**ModifyStatusRow**を呼び出します。 **ModifyStatusRow**は、状態テーブルを構築するために必要な情報を使用して MAPI を提供します。 
   

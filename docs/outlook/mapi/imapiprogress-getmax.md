@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 88a910ed-b55a-4e5b-a43d-eb3ea795a70e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: bbd52116a108be12df7697f45df41b03adeba68e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800633"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 情報を表示する進行中の操作では、アイテムの最大数を返します。
   
@@ -33,7 +33,7 @@ HRESULT GetMax(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulMax_
   
@@ -45,7 +45,7 @@ S_OK
   
 > 操作内のアイテムの最大数を取得するとします。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 最大値は、数値形式での操作の終了を表します。 値は、全体の進行状況表示の範囲を表すために使用、グローバルな最大値またはローカル値になっているため、画面の一部のみを表すために使用できます。 
   
@@ -75,12 +75,12 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IMAPIProgress::SetLimits](imapiprogress-setlimits.md)
   
-[IMAPIProgress: IUnknown](imapiprogressiunknown.md)
+[IMAPIProgress : IUnknown](imapiprogressiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[進行状況インジケーターを表示します。](how-to-display-a-progress-indicator.md)
+[進行状況インジケーターを表示する](how-to-display-a-progress-indicator.md)
   
-[進行状況のインジケーターを実装します。](implementing-a-progress-indicator.md)
+[進行状況インジケーターの実装](implementing-a-progress-indicator.md)
 

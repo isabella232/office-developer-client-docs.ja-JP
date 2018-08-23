@@ -1,5 +1,5 @@
 ---
-title: MAPI クラッシュ回復 API を使用します。
+title: MAPI クラッシュ回復 API を使用する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,9 +13,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800264"
 ---
-# <a name="use-the-mapi-crash-recovery-api"></a>MAPI クラッシュ回復 API を使用します。
+# <a name="use-the-mapi-crash-recovery-api"></a>MAPI クラッシュ回復 API を使用する
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックには、 [UnhandledExceptionFilter](http://msdn.microsoft.com/en-us/library/ms681401%28VS.85%29.aspx)関数から、 [MAPICrashRecovery](mapicrashrecovery.md)関数を呼び出す方法を示す C++ でのコード サンプルが含まれています。 [MAPICrashRecovery](mapicrashrecovery.md)関数は、共有メモリを個人用フォルダー ファイル (PST) またはオフライン フォルダー ファイル (OST) の状態をチェックします。 
 

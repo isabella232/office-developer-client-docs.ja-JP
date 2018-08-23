@@ -1,5 +1,5 @@
 ---
-title: 会議の更新のオプションのプロパティを非表示にします。
+title: 会議更新オプションのプロパティを非表示にする
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9e7b413f-a88a-a4ec-8d57-1f3058cce4a4
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 25942df6f6156266f16cf6e681270dbb530472e8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800207"
 ---
-# <a name="hide-meeting-update-option-property"></a>会議の更新のオプションのプロパティを非表示にします。
+# <a name="hide-meeting-update-option-property"></a>会議更新オプションのプロパティを非表示にする
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 のみ追加または削除された出席者に会議の更新を送信するオプションを非表示にします。
   
@@ -37,7 +37,7 @@ ms.locfileid: "19800207"
 |プロパティの種類:  <br/> |PT_BOOLEAN  <br/> |
 |アクセスの種類:  <br/> |値の取得および設定が可能です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 ストア機能を提供するストア プロバイダーを実装する必要があります[IMAPIProp: IUnknown](imapipropiunknown.md) 、 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)の呼び出しに渡されたこれらのプロパティのいずれかのプロパティの有効なタグを返すとします。 これらのプロパティのいずれかのプロパティ タグが[IMAPIProp::GetProps](imapiprop-getprops.md)に渡されると、ストア プロバイダーを使用、正しいプロパティ値を返す必要があります。 ストア プロバイダーには、取得、またはこれらのプロパティを設定するには、 [HrGetOneProp](hrgetoneprop.md)と[HrSetOneProp](hrsetoneprop.md)を呼び出すことができます。 
   

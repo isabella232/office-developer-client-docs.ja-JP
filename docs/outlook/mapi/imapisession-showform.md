@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 233cf936-34db-42d4-b5e3-17a93acb2009
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d20c8e7432903ef9334f066df31694752384d034
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800710"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームが表示されます。
   
@@ -43,7 +43,7 @@ HRESULT ShowForm(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -107,7 +107,7 @@ MAPI_E_USER_CANCEL
   
 > ユーザー操作がキャンセルされました、通常ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPISession::ShowForm**メソッドには、 **IMAPISession::PrepareForm**メソッドによって準備されているメッセージ フォームが表示されます。 
   

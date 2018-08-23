@@ -1,5 +1,5 @@
 ---
-title: 起動時に特定のメソッドを避けること。
+title: 起動時に特定のメソッドを回避
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799741"
 ---
-# <a name="avoiding-certain-methods-at-startup"></a>起動時に特定のメソッドを避けること。
+# <a name="avoiding-certain-methods-at-startup"></a>起動時に特定のメソッドを回避
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 起動時にパフォーマンスを向上させるには、次の呼び出しを回避します。
   

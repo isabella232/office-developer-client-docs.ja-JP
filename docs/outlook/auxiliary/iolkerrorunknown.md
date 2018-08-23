@@ -31,7 +31,7 @@ ms.locfileid: "19799487"
 |:-----|:-----|
 |[発生しました](iolkerrorunknown-getlasterror.md) <br/> |指定されたエラー メッセージ文字列を取得します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このインターフェイスは、 [IOlkAccountManager](iolkaccountmanager.md)、 [IOlkAccountNotify](iolkaccountnotify.md)、および[IOlkAccount](iolkaccount.md)でのエラーに関する追加情報を提供します。 また、 **IOlkAccountManager**、 **IOlkAccountNotify**、および**IOlkAccount**の基本インターフェイスです。 
   

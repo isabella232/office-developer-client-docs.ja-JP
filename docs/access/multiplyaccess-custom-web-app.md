@@ -19,17 +19,17 @@ ms.locfileid: "19798701"
 2 つの式を乗算します。
   
 > [!IMPORTANT]
-> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="syntax"></a>構文
 
 `* (Multiply)`
 
-*式*  \*  *式* 
+*expression*  \*  *expression* 
   
 *式* 数値カテゴリ内のデータ型のいずれかの任意の有効な式。 
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 優先順位の高い引数のデータ型を返します。
   

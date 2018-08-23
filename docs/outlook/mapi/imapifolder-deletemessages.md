@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5a16e62b-9d33-41cd-af2b-9abd403b6f2e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7845abc4f3010daf8e13d56ac4b13d0333bad07e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800491"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 1 つまたは複数のメッセージを削除します。
   
@@ -36,7 +36,7 @@ HRESULT DeleteMessages(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpMsgList_
   
@@ -72,7 +72,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > 呼び出しが成功したが、すべてのメッセージが正常に削除されました。 この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIFolder::DeleteMessages**メソッドは、フォルダーからメッセージを削除します。 存在せず、別の場所に移動されている、読み取り/書き込み権限で開かれている、または送信される現在のメッセージを削除することはできません。 
   
@@ -110,10 +110,10 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [ENTRYLIST](entrylist.md)
   
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[エラー処理のためのマクロを使用してください。](using-macros-for-error-handling.md)
+[エラー処理のためのマクロの使用](using-macros-for-error-handling.md)
 

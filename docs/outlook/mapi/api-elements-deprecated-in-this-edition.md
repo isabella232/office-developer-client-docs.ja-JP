@@ -1,5 +1,5 @@
 ---
-title: このエディションでは非推奨 API の要素
+title: このエディションで非推奨の API 要素
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799676"
 ---
-# <a name="api-elements-deprecated-in-this-edition"></a>このエディションでは非推奨 API の要素
+# <a name="api-elements-deprecated-in-this-edition"></a>このエディションで非推奨の API 要素
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Microsoft Outlook 2013 では、次の API 要素は推奨されていません。 サポートされていませんし、新しいプロジェクトで使用する必要がありません。
   
@@ -45,5 +45,5 @@ Microsoft Outlook 2013 では、次の API 要素は推奨されていません�
 
 
 
-[Outlook �� MAPI �Q�Ƃ̎g�p��J�n���܂��B](getting-started-with-the-outlook-mapi-reference.md)
+[Outlook MAPI リファレンスの概要](getting-started-with-the-outlook-mapi-reference.md)
 

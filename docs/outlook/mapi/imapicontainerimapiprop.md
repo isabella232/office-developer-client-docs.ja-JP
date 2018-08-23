@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d83fdd83-3e86-43c8-a73f-8e9e01b53371
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e24f5ebd73a4652876282099f1460762c150b94d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800455"
 ---
-# <a name="imapicontainer--imapiprop"></a>IMAPIContainer: IMAPIProp
+# <a name="imapicontainer--imapiprop"></a>IMAPIContainer : IMAPIProp
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳、配布リスト、フォルダーなどのコンテナー オブジェクトの高度な処理を管理します。 [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)、[これにより: IMAPIContainer](iabcontainerimapicontainer.md)、および[IDistList: IMAPIContainer](idistlistimapicontainer.md)インタ フェースは、 **IMAPIContainer**から派生します。
   
@@ -47,10 +47,10 @@ ms.locfileid: "19800455"
 |[SetSearchCriteria](imapicontainer-setsearchcriteria.md) <br/> |コンテナーの検索基準を確立します。  <br/> |
 |[GetSearchCriteria](imapicontainer-getsearchcriteria.md) <br/> |コンテナーの検索条件を取得します。  <br/> |
    
-|**必要なプロパティ**|**Access**|
+|**必須のプロパティ**|**Access**|
 |:-----|:-----|
-|**PR_CONTAINER_HIERARCHY**([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_CONTAINER_CONTENTS**([PidTagContainerContents](pidtagcontainercontents-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
+|**PR_CONTAINER_HIERARCHY**([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_CONTAINER_CONTENTS**([PidTagContainerContents](pidtagcontainercontents-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_CONTAINER_FLAGS**([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
    
 ## <a name="see-also"></a>関連項目

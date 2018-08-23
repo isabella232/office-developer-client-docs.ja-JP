@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b96dd8f6-e648-4014-8a1d-ae1da771c439
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1b3d8c74d85696e733b378a4cac2b8e2a3b6a072
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800823"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 リーフまたは表形式ビューをカテゴリに属している下位レベルの見出しの行を追加する、折りたたまれているテーブルのカテゴリを展開します。
   
@@ -38,7 +38,7 @@ ULONG FAR * lpulMoreRows
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbInstanceKey_
   
@@ -74,7 +74,7 @@ MAPI_E_NOT_FOUND
   
 > _PbInstanceKey_パラメーターで指定された行が存在しません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::ExpandRow**メソッドでは、リーフやテーブル ・ ビューをカテゴリに属している下位レベルの見出しの行を追加する、折りたたまれているテーブルのカテゴリを展開します。 _LppRows_パラメーターで返される行の数に制限は、 _ulRowCount_パラメーターで指定できます。 _UlRowCount_が 0 より大きい値に設定すると、 _lppRows_で指定された行セットの 1 つまたは複数の行が返されます、BOOKMARK_CURRENT は、行の最後の行の直後の行に移動するブックマークの位置を設定します。
   
@@ -106,7 +106,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [IMAPITable::CollapseRow](imapitable-collapserow.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

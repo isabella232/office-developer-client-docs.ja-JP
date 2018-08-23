@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 35cd57b4-9901-456c-bf06-1f84e274eb4e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ad26cb9b77404d6470f7a8d787eb85edc5cce402
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19799667"
 ---
 # <a name="adrparm"></a>ADRPARM
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 表示と共通のアドレス] ダイアログ ボックスの動作について説明します。 
   
@@ -54,7 +54,7 @@ typedef struct _ADRPARM
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 **cbABContEntryID**
   
@@ -160,7 +160,7 @@ DIALOG_SDI
   
 > ダイアログ ボックスに表示されるアドレスのエントリを提供できるアドレス帳コンテナーを制限する**SRestriction**構造体へのポインター。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 コモン アドレス] ダイアログ ボックスの動作と外観を制御するクライアントとサービス ・ プロバイダーによって使用されるは、 **ADRPARM**構造体です。 [アドレス] ダイアログ ボックスの 2 つの種類があります: モードレスとモーダルです。 **ADRPARM**構造体のメンバーのいくつかのダイアログ ボックスの両方のバージョンに適用しますが、いくつかは、2 つのバージョンのいずれかにのみ適用します。 次の表には、共通のアドレス] ダイアログ ボックスで、使用する**ADRPARM**構造体のメンバーが関連しています。 
   
@@ -170,11 +170,11 @@ DIALOG_SDI
 |**ulFlags** <br/> |モーダルおよびモードレス  <br/> |
 |**lpReserved** <br/> |モーダルおよびモードレス  <br/> |
 |**ulHelpContext**と**lpszHelpFileName** <br/> |モーダルおよびモードレス  <br/> |
-|**lpfnABSDI** <br/> |モードレス  <br/> |
-|**lpfnDismiss**と**lpvDismissContext** <br/> |モードレス  <br/> |
+|**lpfnABSDI** <br/> |Modeless  <br/> |
+|**lpfnDismiss**と**lpvDismissContext** <br/> |Modeless  <br/> |
 |**lpszCaption** <br/> |モーダルおよびモードレス  <br/> |
-|**lpszNewEntryTitle** <br/> |モーダル  <br/> |
-|**lpszDestWellsTitle**、 **cDestFields**、 **nDestFieldFocus**、 **lppszDestTitles**、および**lpulDestComps** <br/> |モーダル  <br/> |
+|**lpszNewEntryTitle** <br/> |Modal  <br/> |
+|**lpszDestWellsTitle**、 **cDestFields**、 **nDestFieldFocus**、 **lppszDestTitles**、および**lpulDestComps** <br/> |Modal  <br/> |
 |**lpContRestriction** <br/> |モーダルおよびモードレス  <br/> |
 |**lpHierRestriction** <br/> |モーダルおよびモードレス  <br/> |
    

@@ -21,7 +21,7 @@ ms.locfileid: "19800857"
 ---
 # <a name="imapitablesorttable"></a>IMAPITable::SortTable
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **IMAPITable::SortTable**メソッドは、条件の並べ替えによって、テーブルの行を指示します。 
   
@@ -32,7 +32,7 @@ ULONG ulFlags
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _lpSortCriteria_
   
@@ -84,7 +84,7 @@ MAPI_E_TOO_COMPLEX
     
    - 以外の**PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)) は前方からのテーブルを処理する 1 つの並べ替え操作は、このような並べ替えをサポートしている添付ファイル テーブルに対してのみ指定されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::SortTable**メソッドでは、表形式ビューで行を順序付けします。 いくつかのテーブルでは、標準と分類の両方のさまざまな並べ替えのキー列の並べ替えをサポートするが、他のテーブルは多くのサポートに制限します。 通常、アドレス帳プロバイダーはテーブルの並べ替えをサポートしていません。 メッセージ ストア プロバイダーは、通常、(テーブル制限なし) の完全テーブルが並べ替えられたときに発生する、フォルダーの並べ替え順序を維持する並べ替えをサポートします。 
   
@@ -116,5 +116,5 @@ MVI_FLAG フラグが設定されていない複数値を持つプロパティ�
 - [IMAPITable::QuerySortOrder](imapitable-querysortorder.md)
 - [IMAPITable::SetColumns](imapitable-setcolumns.md)
 - [SSortOrderSet](ssortorderset.md)
-- [IMAPITable: IUnknown](imapitableiunknown.md)
+- [IMAPITable : IUnknown](imapitableiunknown.md)
 

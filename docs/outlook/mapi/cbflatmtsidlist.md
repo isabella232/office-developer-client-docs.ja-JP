@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1ecc7c15-ca8a-4af2-9256-b572b70be093
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c69ee41fe4cf170deb12ba92e5629627b9cd1bd0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799753"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 既存の[FLATMTSIDLIST](flatmtsidlist.md)構造体のバイト数を計算します。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19799753"
 CbFLATMTSIDLIST (_lplist)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  __lplist_
   

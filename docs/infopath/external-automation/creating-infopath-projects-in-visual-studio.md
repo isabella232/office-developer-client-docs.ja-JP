@@ -21,7 +21,7 @@ ms.locfileid: "19799015"
 
 - [InfoPath にカスタム機能を追加する COM アドインを作成する](how-to-create-a-com-add-in-to-add-custom-features-to-infopath.md): InfoPath にカスタム機能を追加する COM アドインを作成する方法について説明します。
     
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連情報
 
 - [コードを含む InfoPath フォーム テンプレートの開発](http://msdn.microsoft.com/library/b43ada73-349d-498f-a8bb-e8fd5020d207%28Office.15%29.aspx): に対して、 [Microsoft.Office.InfoPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx)名前空間のメンバー (Visual Basic または C#)、マネージ コードで記述されたビジネス ロジックを持つ InfoPath フォーム テンプレート用のプロジェクトを作成する方法を説明します。 
     

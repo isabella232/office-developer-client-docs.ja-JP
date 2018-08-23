@@ -17,7 +17,7 @@ ms.locfileid: "19799818"
 
 
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 コンテンツを表示しようとしたが利用可能ではありません。 それが削除されたかより新しいバージョンに置き換えられます。 この一連の快適にするためのリンクを表示します。
   
@@ -25,7 +25,7 @@ ms.locfileid: "19799818"
 
 - [Outlook MAPI リファレンス](outlook-mapi-reference.md)
     
-- [Outlook �� MAPI �Q�Ƃ̎g�p��J�n���܂��B](getting-started-with-the-outlook-mapi-reference.md)
+- [Outlook MAPI リファレンスの概要](getting-started-with-the-outlook-mapi-reference.md)
     
 - [MAPI Samples](mapi-samples.md)
     

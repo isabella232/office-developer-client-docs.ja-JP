@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 85539a7f-74b6-4267-86ea-00da2c900c34
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d0bce7b3a12f259b7ac5f28219c8a92dd2200f07
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19800213"
 ---
 # <a name="choose-a-specific-version-of-mapi-to-load"></a>ロードするのには MAPI の特定のバージョンを選択します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI の実装を明示的にリンクする場合、ロードする実装を慎重に選択する必要があります。 
   
@@ -107,7 +107,7 @@ MFCMAPI では、MAPI の別の実装を使用する場合、既定では、MAPI
 
 - [FGetComponentPath](fgetcomponentpath.md)
 - [MAPI �v���O���~���O�̊T�v](mapi-programming-overview.md)
-- [MAPI の関数へのリンク](how-to-link-to-mapi-functions.md)
+- [MAPI 機能へのリンク](how-to-link-to-mapi-functions.md)
 - [Mapi32.dll スタブのレジストリ設定](http://msdn.microsoft.com/en-us/library/ms531218%28EXCHG.10%29.aspx)
 - [MAPI DLL の MSI のキーの設定](http://msdn.microsoft.com/en-us/library/ee909494%28VS.85%29.aspx)
 - [MAPI MAPI Dll への呼び出しを明示的にマッピング](http://msdn.microsoft.com/en-us/library/ee909490%28VS.85%29.aspx)

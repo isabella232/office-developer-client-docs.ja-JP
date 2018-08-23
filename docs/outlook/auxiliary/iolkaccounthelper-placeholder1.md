@@ -30,7 +30,7 @@ HRESULT IOlkAccountHelper::Placeholder1 (
 
 常に E_NOTIMP、このメンバーは、 [IOlkAccountHelper](iolkaccounthelper.md)内のプレース ホルダーがあるためにサポート。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このメンバーは、E_NOTIMPL を返す常にする必要があります。
   

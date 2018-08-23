@@ -17,7 +17,7 @@ ms.locfileid: "19799732"
 ---
 # <a name="attoriginalmessageclass"></a>attOriginalMessageClass
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ クラスは、文字列として格納されます。 エンコードされた文字列は、通常、MAPI が指定したクラスの名前、メッセージを保持します。
   

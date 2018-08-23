@@ -19,7 +19,7 @@ ms.locfileid: "19799707"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **AttAttachRenddata**属性は、メッセージの添付ファイルを表示する場所と方法を説明する**RENDDATA**構造体としてエンコードされます。 **RENDDATA**構造体は、 **sizeof(RENDDATA)** バイトの**RENDDATA**構造体の最初のメンバーで始まるだけで TNEF ストリームにエンコードされます。 **RENDDATA**構造体の**dwFlags**のメンバーの値は、 **MAC_BINARY**に設定されている場合、次の添付ファイルのデータに格納されます MacBinary 形式です。それ以外の場合、添付ファイルのデータは、いつものようにエンコードされます。
   

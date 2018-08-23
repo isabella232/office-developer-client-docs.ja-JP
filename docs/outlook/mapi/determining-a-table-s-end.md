@@ -1,5 +1,5 @@
 ---
-title: テーブルの終了を決定します。
+title: テーブルの末尾の判別
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799910"
 ---
-# <a name="determining-a-tables-end"></a>テーブルの終了を決定します。
+# <a name="determining-a-tables-end"></a>テーブルの末尾の判別
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  一般的なエラーでは、こと、テーブルの末尾に達しました場合を想定しています。 
   

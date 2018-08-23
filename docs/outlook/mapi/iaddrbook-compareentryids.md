@@ -23,7 +23,7 @@ ms.locfileid: "19800361"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 同じアドレス帳オブジェクトを参照しているかどうかを判断するのには、特定のアドレス帳プロバイダーに属している 2 つのエントリ id を比較します。 
   
@@ -38,7 +38,7 @@ HRESULT CompareEntryIDs(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID1_
   
@@ -74,7 +74,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > _LpEntryID1_または_lpEntryID2_パラメーターで渡されたエントリ id の一方または両方が、アドレス帳プロバイダーで認識されません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアント アプリケーションとサービス プロバイダーの呼び出し、 **CompareEntryIDs**メソッド 2 つのエントリ id を比較するのには同じオブジェクトを参照しているかどうかを決定する 1 つのアドレス帳プロバイダーに属しています。 **CompareEntryIDs**は、オブジェクトが 1 つ以上の有効なエントリ id を持つことができますので便利です。 このような状況には、たとえば、アドレス帳プロバイダーの新しいバージョンをインストールした後が発生します。 
   
@@ -86,5 +86,5 @@ MAPI アドレス帳プロバイダーに、エントリの識別子で登録さ
 
 
 
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

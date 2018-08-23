@@ -17,7 +17,7 @@ ms.locfileid: "19799600"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI �ł́A����̃v���p�e�B�ɖ��O����蓖�Ă�A�ŗL�̎��ʎq����̖��O��}�b�s���O���邽�߁A�Z�b�V�����̊Ԃŉi���I�Ȃ��̖��O�̎��ʎq�̃}�b�s���O��쐬���邽�߂̋@�\��񋟂��܂��B���O�t���v���p�e�B�́A���O�ƃv���p�e�B�̐ݒ�̃O���[�o���Ɉ�ӂ̎��ʎq (GUID) �ɂ���Ď��ʂ��܂��B���O�ɂ́A���l�܂��͕����񂪂ł��܂��BMicrosoft Outlook 2013�܂���Microsoft Outlook 2010�v���p�e�B�̐ݒ��Outlook 2013�܂���Outlook 2010�A **PSETID_Appointment** �Ȃǂɂ���Ē�`���ꂽ���O��Ԃł͑����̏ꍇ�B 
   
@@ -185,9 +185,9 @@ Outlook 2013 および Outlook 2010 は、MAPI 名前付きプロパティなど
 
 [MAPI �萔](mapi-constants.md)
   
-[Outlook がメッセージのヘッダーのみをダウンロードするかどうかを決定します。](how-to-determine-if-outlook-downloaded-only-the-header-of-a-message.md)
+[Outlook がメッセージのヘッダーのみをダウンロードしたかどうかを判別する](how-to-determine-if-outlook-downloaded-only-the-header-of-a-message.md)
   
-[連絡先アイテムの電子メール アドレスを取得します。](how-to-get-the-email-address-of-a-contact-item.md)
+[連絡先アイテムのメール アドレスを取得する](how-to-get-the-email-address-of-a-contact-item.md)
   
-[ユーザー設定のフォーム定義を保存し、メッセージを削除します。](how-to-remove-custom-form-definition-saved-with-a-message.md)
+[メッセージと共に保存されているユーザー設定フォーム定義を削除する](how-to-remove-custom-form-definition-saved-with-a-message.md)
 

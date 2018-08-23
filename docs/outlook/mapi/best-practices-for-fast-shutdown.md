@@ -1,5 +1,5 @@
 ---
-title: 高速シャット ダウンのためのベスト プラクティス
+title: 高速シャットダウンのためのベスト プラクティス
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799752"
 ---
-# <a name="best-practices-for-fast-shutdown"></a>高速シャット ダウンのためのベスト プラクティス
+# <a name="best-practices-for-fast-shutdown"></a>高速シャットダウンのためのベスト プラクティス
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックでは、管理者、MAPI クライアントでは、および MAPI プロバイダーがクライアントのシャット ダウン時にデータの損失を最小限に抑えるため、Windows レジストリの設定と高速シャット ダウン インターフェイスを使用するためのベスト プラクティスを推奨します。
   
@@ -41,7 +41,7 @@ ms.locfileid: "19799752"
 
 [Mapi クライアントのシャット ダウン](client-shutdown-in-mapi.md)
   
-[高速シャット ダウンの概要](fast-shutdown-overview.md)
+[高速シャットダウンの概要](fast-shutdown-overview.md)
   
-[高速シャット ダウンのユーザー オプション](fast-shutdown-user-options.md)
+[高速シャットダウンのユーザー オプション](fast-shutdown-user-options.md)
 

@@ -27,9 +27,9 @@ ms.locfileid: "19799572"
 |識別子:  <br/> |0x0022  <br/> |
 |プロパティの種類:  <br/> |PT_BINARY  <br/> |
 |プロパティ タグ。  <br/> |0x00220102  <br/> |
-|アクセス:  <br/> |値の取得のみ可能です。  <br/> |
+|アクセス:  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [IMAPISupport::OpenProfileSection](http://msdn.microsoft.com/library/cd1fa994-9531-46c4-94e5-505e7f90b884%28Office.15%29.aspx)への呼び出しで**PROP_ACCT_PREFERENCES_UID**を使用すると、アカウントの基本設定を含むプロファイル セクションを取得します。 
   

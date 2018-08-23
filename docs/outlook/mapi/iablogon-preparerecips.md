@@ -21,7 +21,7 @@ ms.locfileid: "19800353"
 ---
 # <a name="iablogonpreparerecips"></a>IABLogon::PrepareRecips
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージング システムによって後で使用できる受信者のリストを準備します。
   
@@ -59,7 +59,7 @@ MAPI_E_NOT_FOUND
   
 > _LpRecipList_パラメーター内の受信者のいずれかが存在しません。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 クライアントでは、1 つまたは複数の受信者のプロパティのセットを再配置を変更または MAPI の[IAddrBook::PrepareRecips](iaddrbook-preparerecips.md)メソッドを呼び出します。 受信者は、送信メッセージの受信者の一覧の一部ではないです。 MAPI は、アドレス帳プロバイダーの**IABLogon::PrepareRecips**メソッドへの呼び出しを転送します。 
   
@@ -106,7 +106,7 @@ _LpRecipList_パラメーターに**ADRENTRY**構造体には、受信者ごと�
 
 - [ADRLIST](adrlist.md)
 - [IMAPIProp::GetProps](imapiprop-getprops.md)
-- [PidTagEntryId の標準的なプロパティ](pidtagentryid-canonical-property.md)
+- [PidTagEntryId 標準プロパティ](pidtagentryid-canonical-property.md)
 - [SPropValue](spropvalue.md)
-- [IABLogon: IUnknown](iablogoniunknown.md)
+- [IABLogon : IUnknown](iablogoniunknown.md)
 

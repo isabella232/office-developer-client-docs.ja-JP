@@ -1,5 +1,5 @@
 ---
-title: メッセージ ストア プロバイダーの構成インターフェイスを実装します。
+title: メッセージ ストア プロバイダー用の構成インターフェイスの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800893"
 ---
-# <a name="implementing-a-configuration-interface-for-message-store-providers"></a>メッセージ ストア プロバイダーの構成インターフェイスを実装します。
+# <a name="implementing-a-configuration-interface-for-message-store-providers"></a>メッセージ ストア プロバイダー用の構成インターフェイスの実装
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ストア プロバイダーは、そのユーザーのコンピューター上で実行するメッセージ ストア プロバイダーを構成するユーザーをできるようにするインターフェイスを実装する必要があります。 通常、メッセージ ストア プロバイダーは、ユーザーのプロファイルに追加するときに、メッセージ ストア プロバイダーが構成されます。 メッセージ ストア プロバイダーの構成インターフェイスは一般にユーザー名とパスワードに必要なファイルへのパスを選択する、保護されたメッセージ ストアを設定するなどのタスクを処理し、基になるストレージ機構を作成するには、必要に応じて使用します。
   

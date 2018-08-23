@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: cd4d7b11-fad0-4f05-a99e-9567abcab45c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0451d8635848705ef912b9a575d6390898251f4f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800597"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 現在のメッセージをフォルダーに移動します。
   
@@ -35,7 +35,7 @@ HRESULT MoveMessage(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pFolderDestination_
   
@@ -59,7 +59,7 @@ MAPI_E_NO_SUPPORT
   
 > このメッセージのサイトでは、操作はサポートされていません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム オブジェクトは、現在のメッセージを新しいフォルダーに移動するのには**IMAPIMessageSite::MoveMessage**メソッドを呼び出します。 
   
@@ -87,10 +87,10 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md)
   
-[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)
+[IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォームのインタ フェース](mapi-form-interfaces.md)
+[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
 

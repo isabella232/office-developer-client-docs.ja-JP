@@ -23,7 +23,7 @@ ms.locfileid: "19800854"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 1 つまたは複数の非同期操作の進行状況でテーブルに完了するまでの処理を中断します。
   
@@ -63,7 +63,7 @@ MAPI_E_TIMEOUT
   
 > 非同期操作または操作は、指定した時間に完了しませんでした。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::WaitForCompletion**メソッドは、テーブルのため現在の非同期操作が完了するまでの処理を中断します。 **WaitForCompletion**ことができます、非同期操作のいずれか完全に完了または中断される前に、 _ulTimeout_で示されたミリ秒数を実行します。 進行中の非同期操作を検出するためには、 [IMAPITable::GetStatus](imapitable-getstatus.md)メソッドを呼び出します。 
   
@@ -81,5 +81,5 @@ MAPI_E_TIMEOUT
   
 [IMAPITable::SortTable](imapitable-sorttable.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

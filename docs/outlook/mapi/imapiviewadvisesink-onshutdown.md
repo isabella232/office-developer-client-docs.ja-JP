@@ -23,7 +23,7 @@ ms.locfileid: "19800862"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム ビューアーに、フォームが閉じられることを通知します。
   
@@ -31,7 +31,7 @@ ms.locfileid: "19800862"
 HRESULT OnShutdown( void );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 なし
   
@@ -41,7 +41,7 @@ S_OK
   
 > 通知が成功しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォームの通知の詳細については、[送信およびフォームの通知の受信](sending-and-receiving-form-notifications.md)を参照してください。
   
@@ -49,5 +49,5 @@ S_OK
 
 
 
-[IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)
+[IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md)
 

@@ -1,5 +1,5 @@
 ---
-title: TZDEFINITION 構造体を読み取るためのバイナリのプロパティからのストリームを解析します。
+title: バイナリ プロパティからのストリームを解析し、TZDEFINITION 構造体を読み取る
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799322"
 ---
-# <a name="parse-a-stream-from-a-binary-property-to-read-the-tzdefinition-structure"></a>TZDEFINITION 構造体を読み取るためのバイナリのプロパティからのストリームを解析します。
+# <a name="parse-a-stream-from-a-binary-property-to-read-the-tzdefinition-structure"></a>バイナリ プロパティからのストリームを解析し、TZDEFINITION 構造体を読み取る
 
 このトピックでは、バイナリのプロパティに格納されている永続化された形式からの[TZDEFINITION](tzdefinition.md)構造体を読み取る方法を示します。 
   
@@ -85,6 +85,6 @@ TZDEFINITION* BinToTZDEFINITION(ULONG cbDef, LPBYTE lpbDef)
 
 ## <a name="see-also"></a>関連項目
 
-- [バイナリ プロパティをストリームに永続化の TZDEFINITION について](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
+- [バイナリ プロパティにコミットするためにストリームに TZDEFINITION を保持することについて](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
 - [予定からタイム ゾーンのプロパティを読み取る](how-to-read-time-zone-properties-from-an-appointment.md)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3f98d982-156d-43d7-8b0b-94d8c24debef
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 10d646bb2d6fbc11e726a50ba32e34ba172ec1e5
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800365"
 ---
-# <a name="iabprovider--iunknown"></a>IABProvider: IUnknown
+# <a name="iabprovider--iunknown"></a>IABProvider : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳プロバイダー オブジェクトへのログオン方法およびアドレス帳プロバイダー オブジェクトを無効にするメソッドを提供します。
   
@@ -41,7 +41,7 @@ ms.locfileid: "19800365"
 |||
 |:-----|:-----|
 |[Logon](iabprovider-logon.md) <br/> |アクティブなセッションへの接続を確立します。  <br/> |
-|[シャット ダウン](iabprovider-shutdown.md) <br/> |アクティブなセッションへの接続をキャンセルします。  <br/> |
+|[シャットダウン](iabprovider-shutdown.md) <br/> |アクティブなセッションへの接続をキャンセルします。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

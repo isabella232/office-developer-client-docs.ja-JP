@@ -1,5 +1,5 @@
 ---
-title: フォーム ビューアーを実装します。
+title: フォーム ビューアーの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800905"
 ---
-# <a name="implementing-a-form-viewer"></a>フォーム ビューアーを実装します。
+# <a name="implementing-a-form-viewer"></a>フォーム ビューアーの実装
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム ビューアーには、3 つのオブジェクトが含まれています: メッセージのサイトでは、ビューのアドバイズ シンク、およびビューのコンテキスト。 これらの各オブジェクトにより、フォームのサーバーと、フォームと対話することができます。
   

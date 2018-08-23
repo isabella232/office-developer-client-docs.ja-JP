@@ -17,7 +17,7 @@ ms.locfileid: "19799597"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 レプリケーション API は、サーバーとプライベート .pst ベース ローカル ストア プロバイダーの作成は、Microsoft Outlook 2013 または Microsoft Outlook 2010 の項目を同期するには、MAPI メッセージ ストア プロバイダーの機能を提供します。 
   
@@ -70,7 +70,7 @@ ms.locfileid: "19799597"
     
 - **[SKEY](skey.md)**
     
-- **[同期](sync.md)**
+- **[SYNC](sync.md)**
     
 - **[SYNCCONT](synccont.md)**
     

@@ -15,7 +15,7 @@ ms.locfileid: "19800239"
 ---
 # <a name="check-the-version-of-outlook"></a>Outlook のバージョンを確認します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 �����ł́A�C���X�g�[������Ă���o�[�W������Microsoft Outlook 2013�A Microsoft Outlook 2010�A Microsoft Office Outlook 2007�A�܂���Microsoft Outlook 2003�ꍇ�́A Microsoft Outlook�̃o�[�W�����̃o�[�W��������m�F������Љ�܂��BOutlook�̃o�[�W������m�F����� MAPI �A�v���P�[�V�����Ăяo�� API �v�fOutlook�̎��s���̃o�[�W�����ŃT�|�[�g����Ă��邱�Ƃ�m�F����K�v���ł�B
 

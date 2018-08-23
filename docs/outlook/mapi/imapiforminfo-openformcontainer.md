@@ -23,7 +23,7 @@ ms.locfileid: "19800536"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 特定のフォームがインストールされているフォームのコンテナーへのポインターを返します。
   
@@ -33,7 +33,7 @@ HRESULT OpenFormContainer(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ppformcontainer_
   
@@ -49,5 +49,5 @@ S_OK
 
 
 
-[IMAPIFormInfo: IMAPIProp](imapiforminfoimapiprop.md)
+[IMAPIFormInfo : IMAPIProp](imapiforminfoimapiprop.md)
 

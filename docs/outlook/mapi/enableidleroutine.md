@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 332ea831-bdf9-4dbd-b9c7-a80f8ba11b3b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 00b5c123e588636654fb4287cc7b45500d47d89c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800001"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 有効または[FNIDLE](fnidle.md)ベース アイドル ルーチンを無効にします。 
   
@@ -40,7 +40,7 @@ VOID EnableIdleRoutine(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ftg_
   
@@ -54,11 +54,11 @@ VOID EnableIdleRoutine(
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 次の関数では、MAPI アイドル エンジンと[FNIDLE](fnidle.md)関数のプロトタイプに基づくのアイドル処理ルーチンを処理します。 
   
-|**アイドル状態の日常的な関数**|**使用例**|
+|**アイドル状態の日常的な関数**|**使用状況**|
 |:-----|:-----|
 |[ChangeIdleRoutine](changeidleroutine.md) <br/> |登録されているアイドル状態のルーチンの特性を変更します。  <br/> |
 |[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |MAPI システムから登録されているアイドル状態のルーチンを削除します。  <br/> |

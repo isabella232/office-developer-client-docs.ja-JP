@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5837facf-acd3-48fe-9610-f88085d99aef
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 28f6471f74fb0fcc4f7e2f4114f0790e1564e17e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799987"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ディスプレイ テーブルから組み込まれているダイアログ ボックスで使用するラベルについて説明します。
   
@@ -41,7 +41,7 @@ typedef struct _DTBLLABEL
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulbLpszLabelName**
   
@@ -55,7 +55,7 @@ MAPI_UNICODE
   
 > ラベルは、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式のラベルです。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **DTBLLABEL**構造体では、別の種類の意味をそのコントロールに追加するコントロールに表示されるラベル コントロールのテキストについて説明します。 たとえば、入力する情報の種類のユーザーに通知するラベルの横にあるほとんどのエディット コントロールが配置されます。 グループ ボックスやラジオ ボタンなど、いくつかのコントロールは、独自のラベルを保持します。 
   

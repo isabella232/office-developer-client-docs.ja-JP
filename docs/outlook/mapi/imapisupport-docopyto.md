@@ -23,7 +23,7 @@ ms.locfileid: "19800754"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 明確に除外されたプロパティを 1 つのオブジェクトのすべてのプロパティを別のオブジェクトを移動またはコピーします。
   
@@ -43,7 +43,7 @@ HRESULT DoCopyTo(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpSrcInterface_
   
@@ -145,7 +145,7 @@ MAPI_E_UNEXPECTED_TYPE
   
 > プロパティの型は、呼び出し元の型ではありません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージ ストア プロバイダーのサポート オブジェクトの**IMAPISupport::DoCopyTo**メソッドを実装します。 メッセージ ストア プロバイダーは、そのフォルダーとメッセージの[IMAPIProp::CopyTo](imapiprop-copyto.md)メソッドを実装するために**DoCopyTo**を呼び出すことができます。 
   
@@ -193,15 +193,15 @@ _LpDestInterface_で受け入れ可能なインタ フェース識別子が_lpDe
   
 [IMAPISupport::GetLastError](imapisupport-getlasterror.md)
   
-[PidTagContainerContents の標準的なプロパティ](pidtagcontainercontents-canonical-property.md)
+[PidTagContainerContents 標準プロパティ](pidtagcontainercontents-canonical-property.md)
   
-[PidTagContainerHierarchy の標準的なプロパティ](pidtagcontainerhierarchy-canonical-property.md)
+[PidTagContainerHierarchy 標準プロパティ](pidtagcontainerhierarchy-canonical-property.md)
   
-[PidTagMessageAttachments の標準的なプロパティ](pidtagmessageattachments-canonical-property.md)
+[PidTagMessageAttachments 標準プロパティ](pidtagmessageattachments-canonical-property.md)
   
-[PidTagMessageDeliveryTime の標準的なプロパティ](pidtagmessagedeliverytime-canonical-property.md)
+[PidTagMessageDeliveryTime 標準プロパティ](pidtagmessagedeliverytime-canonical-property.md)
   
-[PidTagMessageRecipients の標準的なプロパティ](pidtagmessagerecipients-canonical-property.md)
+[PidTagMessageRecipients 標準プロパティ](pidtagmessagerecipients-canonical-property.md)
   
 [SPropProblemArray](spropproblemarray.md)
   

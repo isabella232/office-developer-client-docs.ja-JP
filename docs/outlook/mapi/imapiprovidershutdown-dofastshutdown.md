@@ -23,7 +23,7 @@ ms.locfileid: "19800654"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 示します MAPI プロバイダーに MAPI クライアントが、すぐに終了している MAPI プロバイダーがデータの損失を防ぐために加えられた変更を永続化できるようにします。
   
@@ -41,7 +41,7 @@ S_OK
 
 
 
-[IMAPIProviderShutdown: IUnknown](imapiprovidershutdowniunknown.md)
+[IMAPIProviderShutdown : IUnknown](imapiprovidershutdowniunknown.md)
 
 
 [Mapi クライアントのシャット ダウン](client-shutdown-in-mapi.md)

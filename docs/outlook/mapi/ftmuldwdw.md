@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8c1a342c-d7ae-4e26-b327-a63cdd3c3ee6
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 16dca82b94225afc88bcb6c4e698a50565d6b088
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800140"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 別の 1 つの符号なし 32 ビット整数を乗算します。
   
@@ -40,7 +40,7 @@ FILETIME FtMulDwDw(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _被乗数_
   
@@ -50,7 +50,7 @@ FILETIME FtMulDwDw(
   
 > [in]マルチ プライアで 32 ビットの符号なし整数を含むダブル ワード。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 **FtMulDwDw**関数は、2 つの整数の積を格納する[FILETIME](filetime.md)構造体を返します。 2 つの入力パラメーターは変更されません。 
   

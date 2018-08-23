@@ -1,5 +1,5 @@
 ---
-title: コンポーネント オブジェクト モデルおよび MAPI
+title: コンポーネント オブジェクト モデルと MAPI
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: cca4c70d-b73a-4834-80b5-9cb5889f63cc
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: cf687a7bfadb0981ca3440c2f81bc5de8f910924
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799820"
 ---
-# <a name="component-object-model-and-mapi"></a>コンポーネント オブジェクト モデルおよび MAPI
+# <a name="component-object-model-and-mapi"></a>コンポーネント オブジェクト モデルと MAPI
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Windows SDK ドキュメントには、コンポーネント オブジェクト モデル (COM) に準拠しているオブジェクトを実装するための規則の包括的な説明が含まれています。 これらの規則は、以下を実行する方法を対処します。
   

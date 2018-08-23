@@ -23,7 +23,7 @@ ms.locfileid: "19800872"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームの現在のメッセージが保存されているフォーム ビューアーを通知します。
   
@@ -31,7 +31,7 @@ ms.locfileid: "19800872"
 HRESULT OnSaved( void );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 なし
   
@@ -51,5 +51,5 @@ S_OK
 
 
 
-[IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)
+[IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md)
 

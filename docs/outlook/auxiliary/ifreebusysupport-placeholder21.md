@@ -34,7 +34,7 @@ HRESULT Placeholder21(
 
 常に S_OK、ため、このメンバーのプレース ホルダーは、サポートされています。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このメンバーには、S_OK を返す必要があります。
   

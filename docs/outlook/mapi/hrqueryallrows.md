@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b08fadcf-cdf3-48b7-9489-d7f745266482
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5c62e5919c6e605aa4b60f48072996ed1fd4c355
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800317"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルのすべての行を取得します。 
   
@@ -44,7 +44,7 @@ HRESULT HrQueryAllRows(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _参照を必要_
   
@@ -80,7 +80,7 @@ MAPI_E_TABLE_TOO_BIG
   
 > テーブル内の行の数は、 _crowsMax_パラメーターに渡された値よりも大きくなります。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアント アプリケーションまたはサービス プロバイダーには、 **HrQueryAllRows**を取得しよう、制限を課すことによって指す_プレス_パラメーター以外の行の数を制御がありません。 _CrowsMax_パラメーターは、テーブルのロー数を取得を制限することはできませんではなく取得したすべての行を保持するために使用できるメモリの最大量を定義します。 大容量のメモリのオーバーフローに対する唯一の防策は、 _crowsMax_を設定することによって提供される暫定的な機能です。 エラーの戻り値が MAPI_E_TABLE_TOO_BIG では、テーブルには、すべてを一度にメモリに保持するが多すぎる行が含まれています。 
   

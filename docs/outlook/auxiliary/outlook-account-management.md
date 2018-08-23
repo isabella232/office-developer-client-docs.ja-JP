@@ -1,5 +1,5 @@
 ---
-title: Outlook アカウントの管理
+title: Outlook アカウント管理
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799545"
 ---
-# <a name="outlook-account-management"></a>Outlook アカウントの管理
+# <a name="outlook-account-management"></a>Outlook アカウント管理
 
 このセクションでは、アカウント情報へのアクセスを提供し、アカウントの変更通知をサポートしているアカウント管理 API について説明します。 迷惑メールからアカウントを保護して、POP3 アカウントのメッセージのダウンロードを管理する方法についても含まれています。
 
@@ -22,6 +22,6 @@ ms.locfileid: "19799545"
     
 - [スパム対策の設定について](about-anti-spam-settings.md)
     
-- [管理メッセージは、POP3 アカウントのダウンロードします。](managing-message-downloads-for-pop3-accounts.md)
+- [POP3 アカウントのメッセージ ダウンロードの管理](managing-message-downloads-for-pop3-accounts.md)
     
 

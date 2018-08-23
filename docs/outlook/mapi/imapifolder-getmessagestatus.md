@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3ddbb129-5d6b-4eca-aba0-3620609ed0c1
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: bac363183c15a2d53c15b46724266b6cb5744075
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800490"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 (たとえば、あるかどうかそのメッセージは削除対象としてマーク) は、特定のフォルダー内のメッセージに関連付けられたステータスを取得します。
   
@@ -36,7 +36,7 @@ HRESULT GetMessageStatus(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -84,7 +84,7 @@ S_OK
   
 > メッセージの状態が正常に取得しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIFolder::GetMessageStatus**メソッドは、メッセージのステータスを返します。 メッセージの状態は、メッセージの**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) のプロパティに格納されます。 
   
@@ -109,9 +109,9 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IMAPISession::ShowForm](imapisession-showform.md)
   
-[PidTagMessageStatus の標準的なプロパティ](pidtagmessagestatus-canonical-property.md)
+[PidTagMessageStatus 標準プロパティ](pidtagmessagestatus-canonical-property.md)
   
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

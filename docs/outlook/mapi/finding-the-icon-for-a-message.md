@@ -1,5 +1,5 @@
 ---
-title: メッセージのアイコンを検索します。
+title: メッセージのアイコンの検索
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800049"
 ---
-# <a name="finding-the-icon-for-a-message"></a>メッセージのアイコンを検索します。
+# <a name="finding-the-icon-for-a-message"></a>メッセージのアイコンの検索
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  **メッセージに関連付けられているアイコンを検索するには**
   

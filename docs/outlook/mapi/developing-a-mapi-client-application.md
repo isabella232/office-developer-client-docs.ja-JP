@@ -1,5 +1,5 @@
 ---
-title: MAPI クライアント アプリケーションを開発
+title: MAPI クライアント アプリケーションの開発
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799912"
 ---
-# <a name="developing-a-mapi-client-application"></a>MAPI クライアント アプリケーションを開発
+# <a name="developing-a-mapi-client-application"></a>MAPI クライアント アプリケーションの開発
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI クライアント アプリケーションは、オブジェクト指向の MAPI クライアント インターフェイスを使用して書き込まれます。 MAPI クライアントは、MAPI のサブシステムと MAPI 準拠のサービス プロバイダーを 1 つまたは複数のメッセージング システムと対話します。 この相互作用は、多くの異なる方法で発生する可能性クライアント アプリケーションで、膨大な種類があります。 ほとんどのクライアントは、クライアントでは、メッセージング、確立された機能セットをまたはメッセージングの主要な機能として実行することを統合するかをメッセージは。 MAPI クライアントが提供するその他の機能は、プロファイルの管理やアドレス帳とメッセージ ・ ストアの管理。
   

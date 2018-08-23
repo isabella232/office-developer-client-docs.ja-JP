@@ -1,5 +1,5 @@
 ---
-title: オフラインの状態の API について
+title: オフライン状態 API について
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799623"
 ---
-# <a name="about-the-offline-state-api"></a>オフラインの状態の API について
+# <a name="about-the-offline-state-api"></a>オフライン状態 API について
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オフラインの状態の API は、Microsoft Outlook 2013 および Microsoft Outlook 2010 でのユーザーの接続状態の変化を示すコールバックをサポートしています: からのオフライン中に Outlook 2013 または Outlook 2010 でオンラインにします。 API は、特定のユーザー ・ アカウント ・ プロファイルには、このような変更を追跡するために Outlook 2013 または Outlook 2010 でのオフラインのグローバル オブジェクトを使用します。 通知は、コールバックの形式でのみサポートされています。 この API のクライアントとしてこのような接続状態の変更の通知を受ける必要があるメールのプロバイダー、次の操作を行います。
   

@@ -27,9 +27,9 @@ ms.locfileid: "19799553"
 |識別子:  <br/> |0x0014  <br/> |
 |プロパティの種類:  <br/> |PT_LONG  <br/> |
 |プロパティ タグ。  <br/> |0x00140003  <br/> |
-|アクセス:  <br/> |値の取得のみ可能です。  <br/> |
+|アクセス:  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [IOlkAccount::GetProp](iolkaccount-getprop.md)を使用してこのプロパティを取得します。 クライアントがこのプロパティを設定しようとすると、このプロパティは**E_OLK_PROP_READ_ONLY**を返します。 
   

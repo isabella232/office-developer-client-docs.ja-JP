@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ec1bbaa-7707-4239-9994-21ad1116430b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0bbad04e728c9283df0a9b7ceb7a8e303f0595dc
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799759"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [ADRENTRY](adrentry.md)構造体で表される受信者の指定した番号を含む新しい[ADRLIST](adrlist.md)構造体に割り当てるバイト数を計算します。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19799759"
 CbNewADRLIST (_centries)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  __centries_
   

@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e238f6bc-e9f6-4ea4-a2e4-ff5da2a04bd5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: dc97abcb4b316b696032f2788f4e653717e1396b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19799664"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ほかの割り当てし、メモリを解放する方法を指定するは、MAPI は、パブリック インターフェイスのメソッドと API 関数の呼び出しを解放する必要がありますとの間にメモリが渡された場合を把握するためのモデルを定義します。 モデルは、文字列、構造体へのポインターなどのインターフェイスへのポインターではないパラメーターに割り当てられたメモリにのみ適用されます。 インターフェイス ポインターは、参照カウント メカニズムを**IUnknown**を使用して実装を使用します。 割り当てと解放の非 MAPI クライアント アプリケーションまたはサービス プロバイダーの内部でメモリに関連する、意味をどのようなメカニズムを使用します。 
   

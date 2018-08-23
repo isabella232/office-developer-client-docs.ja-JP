@@ -1,5 +1,5 @@
 ---
-title: サーバー フォルダーのサイズ プロパティの表示
+title: サーバー フォルダーのサイズ プロパティを表示する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 38429fdb-be93-213a-a780-80f9837f55fa
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1ddf4501918d598169a3a74fd1c8d2ac38499cd2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799929"
 ---
-# <a name="display-server-folder-sizes-property"></a>サーバー フォルダーのサイズ プロパティの表示
+# <a name="display-server-folder-sizes-property"></a>サーバー フォルダーのサイズ プロパティを表示する
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Outlook の **[フォルダー サイズ**] ダイアログ ボックスでサーバー上の指定したフォルダーのサイズを表示します。 
   
@@ -37,7 +37,7 @@ Outlook の **[フォルダー サイズ**] ダイアログ ボックスでサ�
 |プロパティの種類:  <br/> |PT_BOOLEAN  <br/> |
 |アクセスの種類:  <br/> |値の取得および設定が可能です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 ストア機能を提供するストア プロバイダーを実装する必要があります[IMAPIProp: IUnknown](imapipropiunknown.md) 、 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)の呼び出しに渡されたこれらのプロパティのいずれかのプロパティの有効なタグを返すとします。 これらのプロパティのいずれかのプロパティ タグが[IMAPIProp::GetProps](imapiprop-getprops.md)に渡されると、ストア プロバイダーを使用、正しいプロパティ値を返す必要があります。 ストア プロバイダーには、取得、またはこれらのプロパティを設定するには、 [HrGetOneProp](hrgetoneprop.md)と[HrSetOneProp](hrsetoneprop.md)を呼び出すことができます。 
   

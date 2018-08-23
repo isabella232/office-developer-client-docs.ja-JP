@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ce018fb0-4e23-4451-a31a-52bd0977a061
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 267624cc89ce7cd72720a2b296f3dab5c79385e6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799773"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [SPropProblem](spropproblem.md)構造体の指定した番号を含む新しい[SPropProblemArray](spropproblemarray.md)構造体に割り当てられるバイト数を計算します。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19799773"
 CbNewSPropProblemArray (_cprob)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  __cprob_
   

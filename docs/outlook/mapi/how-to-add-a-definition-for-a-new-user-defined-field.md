@@ -15,7 +15,7 @@ ms.locfileid: "19800211"
 ---
 # <a name="add-a-definition-for-a-new-user-defined-field"></a>新しいユーザー定義フィールドの定義を追加します。
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Microsoft Outlook アイテムにユーザー定義フィールドを追加するときは、 [PropertyDefinition](propertydefinition-stream-structure.md)ストリームの対応する構造体にフィールドの定義を追加します。 PropertyDefinition ストリームの構造体への新しいフィールド定義を追加するのにには、次の手順を使用します。 
   

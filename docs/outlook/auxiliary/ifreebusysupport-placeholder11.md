@@ -32,7 +32,7 @@ BOOL Placeholder11(
 
 常に**false**、ため、このメンバーのプレース ホルダーは、サポートされています。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このメンバーは**false**で返す必要があります。
   

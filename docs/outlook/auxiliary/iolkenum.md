@@ -36,7 +36,7 @@ ms.locfileid: "19799503"
 |[GetNext](iolkenum-getnext.md) <br/> |列挙子では、次のアカウントを取得します。  <br/> |
 |[スキップ](iolkenum-skip.md) <br/> |列挙子内のアカウントの指定した数をスキップします。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 アカウントの列挙子を取得するときは、 **IOlkAccountManager::EnumerateAccounts**によってこのインターフェイスが返されます。 
   

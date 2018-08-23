@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 17cb53c4-7154-4a4e-b4ec-de720fa055cb
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 69bbed644a8173bf9291ca48a63960f693108318
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19800116"
 ---
 # <a name="fpropcompareprop"></a>FPropCompareProp
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 指定したリレーショナル演算子を使用して 2 つのプロパティ値を比較します。 
   
@@ -39,7 +39,7 @@ BOOL FPropCompareProp(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _lpSPropValue1_
   
@@ -53,7 +53,7 @@ _lpSPropValue2_
   
 > [in]**SPropValue**構造体の比較の 2 番目のプロパティの値を定義することへのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 TRUE 
   
@@ -63,7 +63,7 @@ FALSE
   
 > プロパティの値は、指定したリレーションシップを満たしていません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 比較メソッドは、 [SPropValue](spropvalue.md)プロパティの定義で指定されたプロパティの型によって異なります。 テーブルを生成するための制限を準備するのには、 **FPropCompareProp**と[FPropContainsProp](fpropcontainsprop.md)関数を使用できます。 
   

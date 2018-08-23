@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 500f60ed-fdec-4d70-8cf5-664c46643956
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a187245b2594282bc9908b3075852440f418af2b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800006"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [BuildDisplayTable](builddisplaytable.md)関数によって、表示された表から組み込まれているダイアログ ボックスについて説明します。 
   
@@ -46,7 +46,7 @@ typedef struct DTPAGE
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cctl**
   
@@ -68,7 +68,7 @@ typedef struct DTPAGE
   
 > ページ上の各コントロールのいずれかの[DTCTL](dtctl.md)構造体の配列へのポインター。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 タブ付きページのヘルプ ファイルを特定するには、整数リソース識別子にハード コーディングされた文字列への**lpszComponent**のメンバーまたは**ulItemID**のメンバーのいずれかを設定します。 
   

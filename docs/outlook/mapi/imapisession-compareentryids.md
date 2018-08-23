@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 319f10e9-db8d-4d16-aa1f-6cf5fef493eb
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: df6347298aab5404ec69bd9ac876863e31b741d0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800698"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 同じオブジェクトを参照しているかどうかを決定する 2 つのエントリ id を比較します。 
   
@@ -38,7 +38,7 @@ HRESULT CompareEntryIDs(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID1_
   
@@ -74,7 +74,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > いずれかまたは両方のパラメーターとして指定されているエントリの識別子を参照しないオブジェクト、可能性のあるこれらのオブジェクトは、現在開かれていないと使用できないためです。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPISession::CompareEntryIDs**メソッドは、同じオブジェクトを参照しているかどうかを決定する 1 つのサービス プロバイダーに属している 2 つのエントリ id を比較します。 MAPI は、オブジェクトを担当するサービス ・ プロバイダーを決定するエントリの識別子から[MAPIUID](mapiuid.md)の部分を抽出し、比較を実行するのには、そのログオン オブジェクトの**CompareEntryIDs**メソッドを呼び出して、します。 
   

@@ -34,7 +34,7 @@ HRESULT WINAPI HrProcessConvActionForSentItem(
     DWORD dwFlags)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _pmbinStoreEid_
   
@@ -63,7 +63,7 @@ _dwFlags_
 |S_OK  <br/> |呼び出しが正常になされました。  <br/> |
 |E_INVALIDARG  <br/> | _dwFlags_には、不明なフラグが含まれています。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 カテゴリでは、個人情報と見なされます、ユーザーのメールボックス以外の場所は転送されません。 したがって、 **HrProcessConvActionForSentItem**をは、未送信のメール アイテムには呼び出さないようにしてください。 代わりに、アイテムを送信し、アーカイブされたコピーで**HrProcessConvActionForSentItem**を呼び出します。 アーカイブされたコピーは、送信済みアイテム フォルダー、または同等の場所に格納されている可能性があります。 
   

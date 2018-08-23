@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 487fab39-5c2c-4e1a-9f90-4da64f5e198b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 850d4d952102e11d11234fa3184b88e280a98c21
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800702"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ サービスを変更する場合、 [IMsgServiceAdmin](imsgserviceadminiunknown.md)ポインターを返します。 
   
@@ -66,7 +66,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
   
 [IProfAdmin::AdminServices](iprofadmin-adminservices.md)
   

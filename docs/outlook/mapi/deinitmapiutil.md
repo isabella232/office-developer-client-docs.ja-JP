@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: e0b8dc9c-cc46-4d27-9497-7a55a0bfdff5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ae6f7d7066638ef1b149d3e411443384d531184d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799882"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ユーティリティ関数が明示的に呼び出される[ScInitMapiUtil](scinitmapiutil.md)関数によって、暗黙的に[生じます](mapiinitialize.md)を解放します。 
   
@@ -37,15 +37,15 @@ ms.locfileid: "19799882"
 VOID DeinitMapiUtil( void );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 なし 
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 なし 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **DeinitMapiUtil**関数は、 [ScInitMapiUtil](scinitmapiutil.md)または[生じます](mapiinitialize.md)を使用して初期化関数を解放します。 
   

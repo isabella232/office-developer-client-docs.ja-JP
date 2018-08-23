@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 39d07fc8-09aa-4122-af32-b02f2c893d29
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 36fd729b1ca3e5d877d03358d581b83fc6d4782c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800484"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 新しいサブフォルダーを作成します。
   
@@ -38,7 +38,7 @@ HRESULT CreateFolder(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulFolderType_
   
@@ -98,7 +98,7 @@ MAPI_E_COLLISION
   
 > 既に、 _lpszFolderName_パラメーターで指定された名前を持つフォルダーが存在します。 フォルダー名は一意である必要があります。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIFolder::CreateFolder**メソッドは現在のフォルダーにサブフォルダーを作成し、新しいフォルダーのエントリ id を割り当てます。 
   
@@ -126,7 +126,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [IMAPIProp::GetProps](imapiprop-getprops.md)
   
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

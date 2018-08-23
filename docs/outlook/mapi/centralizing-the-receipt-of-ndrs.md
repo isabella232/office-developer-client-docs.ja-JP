@@ -17,7 +17,7 @@ ms.locfileid: "19799782"
 ---
 # <a name="centralizing-the-receipt-of-ndrs"></a>Ndr を受信確認を一元化すること。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **配信不能レポート (Ndr) が到着したを中心に、クライアントの複数のインスタンスを同時に実行しているとき**
   

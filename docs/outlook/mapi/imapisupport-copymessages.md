@@ -23,7 +23,7 @@ ms.locfileid: "19800723"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 別のフォルダーに 1 つのフォルダーからのコピーや移動メッセージです。
   
@@ -40,7 +40,7 @@ HRESULT CopyMessages(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpSrcInterface_
   
@@ -92,7 +92,7 @@ MAPI_E_USER_CANCEL
   
 > ユーザー操作がキャンセルされました、通常ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージ ストア プロバイダーのサポート オブジェクトの**IMAPISupport::CopyMessages**メソッドを実装します。 メッセージ ストア プロバイダーは、コピーまたは別の 1 つのフォルダーから 1 つまたは複数のメッセージを移動するのには、 [IMAPIFolder::CopyMessages](imapifolder-copymessages.md)の実装では、 **IMAPISupport::CopyMessages**を呼び出すことができます。 **IMAPISupport::CopyMessages**の呼び出しの一部として、メッセージ ストア プロバイダーが、MAPI は、進行状況インジケーターを表示することを指定できます。 
   

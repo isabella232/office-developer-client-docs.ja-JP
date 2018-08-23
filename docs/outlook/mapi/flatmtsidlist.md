@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b66c2815-72bc-4535-b34c-899bb830f29e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ea841ef4bc551581fb2d9ca90201b4615e67f134
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800075"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 それぞれの X.400 メッセージ転送システム (MTS) エントリ識別子が含まれています、 [MTSID](mtsid.md)構造体の配列が含まれています。 
   
@@ -42,7 +42,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cMTSIDs**
   
@@ -56,7 +56,7 @@ typedef struct
   
 > **MTSID**の構造体 1 つまたは複数にはが含まれているバイト配列。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 X.400 メッセージングの**FLATMTSIDLIST**構造体の使用は、MAPI メッセージの[FLATENTRYLIST](flatentrylist.md)構造体の使用に対応します。 MAPI は、メッセージの処理中に、X.400 のプロパティを維持するために**FLATMTSIDLIST**構造体を使用します。 サービス プロバイダーは、着信および発信 X.400 メッセージを処理する場合、 **FLATMTSIDLIST**構造体を使用します。 
   

@@ -23,7 +23,7 @@ ms.locfileid: "19800720"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 一時アドレスのエントリ id を作成します。
   
@@ -38,7 +38,7 @@ HRESULT CreateOneOff(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpszName_
   
@@ -78,7 +78,7 @@ S_OK
   
 > 一時エントリ id が正常に作成されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 サービス プロバイダーのサポートのすべてのオブジェクトの**IMAPISupport::CreateOneOff**メソッドを実装します。 サービス プロバイダーでは、一時受信者 (現在ロードされているアドレス帳プロバイダーのいずれかから任意のコンテナーに属していない受信者) のエントリ id を作成するのには**CreateOneOff**を呼び出します。 
   
@@ -96,9 +96,9 @@ S_OK
 
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[PidTagDisplayName の標準的なプロパティ](pidtagdisplayname-canonical-property.md)
+[PidTagDisplayName 標準プロパティ](pidtagdisplayname-canonical-property.md)
   
-[PidTagSendRichInfo の標準的なプロパティ](pidtagsendrichinfo-canonical-property.md)
+[PidTagSendRichInfo 標準プロパティ](pidtagsendrichinfo-canonical-property.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 

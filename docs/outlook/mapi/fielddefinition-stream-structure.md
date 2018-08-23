@@ -5,7 +5,7 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 93acdbc8-381f-45d5-be6c-0cad066269fe
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 775dc1b5fdcf40867f67fbab25879bd97de24f4a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,7 +15,7 @@ ms.locfileid: "19800046"
 ---
 # <a name="fielddefinition-stream-structure"></a>FieldDefinition ストリームの構造
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 FieldDefinition ストリームの構造体には、ユーザー定義のフィールドのフィールドの定義または組み込みのフィールドのデータ バインディングの設定のセットのいずれかが含まれています。
   
@@ -89,7 +89,7 @@ FieldDefinition ストリームの構造体には、ユーザー定義のフィ�
     
 ## <a name="see-also"></a>関連項目
 
-- [Outlook アイテムおよびフィールド](outlook-items-and-fields.md)
+- [Outlook のアイテムとフィールド](outlook-items-and-fields.md)
 - [ストリームの構造](stream-structures.md)
 - [PropertyDefinition ストリームの構造](propertydefinition-stream-structure.md)
 

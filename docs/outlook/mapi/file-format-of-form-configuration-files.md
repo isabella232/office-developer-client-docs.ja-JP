@@ -17,7 +17,7 @@ ms.locfileid: "19800044"
 ---
 # <a name="file-format-of-form-configuration-files"></a>フォーム構成ファイルの形式
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム構成ファイルは、フォームを定義するのにはフォームの開発者によって作成された形式のファイルです。
   

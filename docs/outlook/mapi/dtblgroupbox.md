@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5e444b62-d6b6-4cfc-8601-d34aa004c1e6
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9295c37a46d3566089f708aaaa0b9fc3b5f30db2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799986"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ディスプレイ テーブルから作成されたダイアログ ボックスで使用するグループ ボックス コントロールについて説明します。
   
@@ -41,7 +41,7 @@ typedef struct _DTBLGROUPBOX
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulbLpszLabel**
   
@@ -55,7 +55,7 @@ MAPI_UNICODE
   
 > ラベルは、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式のラベルです。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **DTBLGROUPBOX**構造体では、ダイアログ ボックスで他のコントロールを視覚的に関連付けるために使用される、グループ ボックス コントロールについて説明します。 強調表示の方法は、ボックスで他のコントロールを囲む必要があります。 
   

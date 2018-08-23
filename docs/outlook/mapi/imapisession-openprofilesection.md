@@ -23,7 +23,7 @@ ms.locfileid: "19800706"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 現在のプロファイルのセクションを開き、さらにアクセスするための[IProfSect](iprofsectimapiprop.md)ポインターを返します。 
   
@@ -36,7 +36,7 @@ HRESULT OpenProfileSection(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpUID_
   
@@ -80,7 +80,7 @@ MAPI_E_NOT_FOUND
   
 > 要求したプロファイル セクションが存在しません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPISession::OpenProfileSection**メソッドは、プロファイルのセクションまたは**IProfSect**インターフェイスをサポートするオブジェクトを開きます。 プロファイルのセクションでは、情報の読み込みおよびセッション ・ プロファイル情報を書き込むのために使用されます。 
   
@@ -98,9 +98,9 @@ MAPI_MODIFY フラグと、 _lpUID_パラメーターに存在しない**MAPIUID
 
 
 
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
   
-[IProfSect: IMAPIProp](iprofsectimapiprop.md)
+[IProfSect : IMAPIProp](iprofsectimapiprop.md)
   
 [MAPIUID](mapiuid.md)
   

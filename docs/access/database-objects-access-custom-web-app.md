@@ -20,7 +20,7 @@ ms.locfileid: "19798572"
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [GoToControl マクロ アクション (カスタム web アプリケーションのアクセス)](gotocontrol-macro-action-access-custom-web-app.md)
+- [GoToControl マクロ アクション (Access カスタム Web アプリ)](gotocontrol-macro-action-access-custom-web-app.md)
     
 - [GoToRecord マクロ アクション (カスタム web アプリケーションのアクセス)](gotorecord-macro-action-access-custom-web-app.md)
     

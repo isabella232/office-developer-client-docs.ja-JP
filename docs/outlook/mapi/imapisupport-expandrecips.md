@@ -23,7 +23,7 @@ ms.locfileid: "19800745"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージの受信者リスト、特定の配布リストの展開を完了します。
   
@@ -34,7 +34,7 @@ HRESULT ExpandRecips(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpMessage_
   
@@ -58,7 +58,7 @@ S_OK
   
 > メッセージの受信者の一覧が正常に処理されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージ ストア プロバイダーのサポート オブジェクトの**IMAPISupport::ExpandRecips**メソッドを実装します。 メッセージ ストア プロバイダーは、次のタスクを実行するための MAPI メッセージを表示するのには**ExpandRecips**を呼び出します。 
   

@@ -23,7 +23,7 @@ ms.locfileid: "19800282"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 エラーまたは警告を記述するために使用される 32 ビット値です。
   
@@ -31,7 +31,7 @@ ms.locfileid: "19800282"
 typedef LONG HRESULT;
 ```
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **HRESULT**のデータ型は、 [SCODE](scode.md)のデータ型と同じです。 
   

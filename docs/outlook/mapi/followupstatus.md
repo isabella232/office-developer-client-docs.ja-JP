@@ -19,7 +19,7 @@ ms.locfileid: "19800084"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージの別のフォロー アップのステータスを指定します。
   
@@ -34,7 +34,7 @@ enum FollowUpStatus {
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  _flwupNone_
   
@@ -56,5 +56,5 @@ enum FollowUpStatus {
 
 
 
-[PidTagFlagStatus の標準的なプロパティ](pidtagflagstatus-canonical-property.md)
+[PidTagFlagStatus 標準プロパティ](pidtagflagstatus-canonical-property.md)
 

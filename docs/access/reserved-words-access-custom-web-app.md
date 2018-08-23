@@ -19,7 +19,7 @@ ms.locfileid: "19798744"
 Microsoft Access は、データベースを定義、操作、およびアクセスする目的で予約済みキーワードを使用します。予約済みキーワードは、Access が SQL ステートメントを解析して理解する目的で使用する言語の文法の部分です。 
   
 > [!IMPORTANT]
-> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="access-reserved-keywords"></a>予約アクセス キーワード
 
@@ -95,7 +95,7 @@ Microsoft Access は、データベースを定義、操作、およびアクセ
 |EXISTS  <br/> |PRIMARY  <br/> |WRITETEXT  <br/> |
 |EXIT  <br/> |PRINT  <br/> |Year  <br/> |
 |EXTERNAL  <br/> |PROC  <br/> |Yes  <br/> |
-|FETCH  <br/> |PROCEDURE  <br/> |いいえ文字  <br/> |
+|FETCH  <br/> |PROCEDURE  <br/> |YesNo  <br/> |
 |FILE  <br/> |PUBLIC  <br/> ||
    
 

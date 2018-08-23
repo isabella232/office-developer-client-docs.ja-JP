@@ -17,7 +17,7 @@ ms.locfileid: "19800047"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 FirstSkipBlockContent ストリームの構造体は、 [FieldDefinition](fielddefinition-stream-structure.md)ストリームの SkipBlocks データ要素内の最初の[SkipBlock](skipblock-stream-structure.md)構造体の内容です。 FirstSkipBlockContent ストリームは、単に単一のデータ要素、フィールド名です。 
   
@@ -27,7 +27,7 @@ FirstSkipBlockContent ストリームの構造体は、 [FieldDefinition](fieldd
 
 
 
-[Outlook アイテムおよびフィールド](outlook-items-and-fields.md)
+[Outlook のアイテムとフィールド](outlook-items-and-fields.md)
   
 [ストリームの構造](stream-structures.md)
   

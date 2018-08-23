@@ -34,7 +34,7 @@ HRESULT Placeholder5(
 
 常に E_NOTIMP、このメンバーは、 **IFreeBusyData**内のプレース ホルダーがあるためにサポート。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このメンバーは、E_NOTIMPL を返す必要があります。
   

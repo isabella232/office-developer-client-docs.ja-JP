@@ -23,7 +23,7 @@ ms.locfileid: "19800842"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルの現在の並べ替え順序を取得します。
   
@@ -33,7 +33,7 @@ LPSSortOrderSet FAR * lppSortCriteria
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lppSortCriteria_
   
@@ -49,7 +49,7 @@ MAPI_E_BUSY
   
 > 別の操作は、並べ替え順の取得操作の開始を防止する処理中です。 実行中の操作を完了できるか、それを停止する必要があります。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::QuerySortOrder**メソッドは、テーブルの現在の並べ替え順序を取得します。 [SSortOrderSet](ssortorderset.md)構造体のソート順を説明しています。 
   
@@ -77,5 +77,5 @@ MAPI_E_BUSY
   
 [SSortOrderSet](ssortorderset.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

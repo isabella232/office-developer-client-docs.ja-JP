@@ -5,7 +5,7 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 30e5e887-a324-4ed2-ba2a-eb4c19ba38d2
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 72c71a6109f55f7ec06499e214a1aa11292a9e52
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,7 +15,7 @@ ms.locfileid: "19800079"
 ---
 # <a name="folderuserfields-stream-sample"></a>FolderUserFields ストリームのサンプル
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックでは、FolderUserFields ストリームの例について説明します。 ストリームには、ユーザー定義のフィールドの定義が含まれている`TextField1`。 型は、**テキスト**、および FolderUserFields ストリームには、FolderUserFieldsAnsi と FolderUserFieldsUnicode の両方のパーツが含まれています。 詳細については、[フォルダー フィールドのストリームの構造体](folder-fields-stream-structures.md)を参照してください。
   
@@ -161,7 +161,7 @@ ms.locfileid: "19800079"
     
 ## <a name="see-also"></a>関連項目
 
-- [Outlook アイテムおよびフィールド](outlook-items-and-fields.md)
+- [Outlook のアイテムとフィールド](outlook-items-and-fields.md)
 - [PropertyDefinition ストリームの構造](propertydefinition-stream-structure.md)
 - [FieldDefinition ストリームの構造](fielddefinition-stream-structure.md)
 - [SkipBlock ストリームの構造](skipblock-stream-structure.md)

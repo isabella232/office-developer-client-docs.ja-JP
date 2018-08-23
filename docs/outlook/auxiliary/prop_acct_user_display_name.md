@@ -29,7 +29,7 @@ ms.locfileid: "19799558"
 |プロパティ タグ。  <br/> |0x000B001F  <br/> |
 |アクセス:  <br/> |値の取得および設定が可能です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 取得または[IOlkAccount::GetProp](iolkaccount-getprop.md)または[IOlkAccount::SetProp](iolkaccount-setprop.md)をそれぞれ使用して、このプロパティを設定します。
   

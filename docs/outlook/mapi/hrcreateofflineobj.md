@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 04d57c1d-ce91-42ce-9f0f-00563092f6f4
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 465121d37489b6810ca141d798b6c96d3f14980e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19800286"
 ---
 # <a name="hrcreateofflineobj"></a>HrCreateOfflineObj
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  オンラインとオフラインを出たときに、MAPI を通知するためにプロバイダーが、ストアで使用される MAPI オフライン オブジェクトを作成します。 
   

@@ -23,7 +23,7 @@ ms.locfileid: "19800829"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 現在を再構築するために必要なデータを返しますは、折りたたむか、カテゴリ別のテーブルの状態を展開します。
   
@@ -73,7 +73,7 @@ MAPI_E_NO_SUPPORT
   
 > テーブルは、分類し、展開と縮小のビューをサポートしていません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::GetCollapseState**メソッドは、ユーザーの分類されたテーブルのビューを変更するのには[IMAPITable::SetCollapseState](imapitable-setcollapsestate.md)メソッドを使用して動作します。 **GetCollapseState**は、 **SetCollapseState**を使用して適切なカテゴリに分類されたテーブルのビューを再構築するのに必要なデータを保存します。 サービス プロバイダーは、保存するデータを決定します。 ただし、 **GetCollapseState**を実装するほとんどのサービス プロバイダーは、次を保存します。 
   
@@ -99,5 +99,5 @@ _LppbCollapseState_パラメーターでは、テーブルのすべてのノー�
 
 [IMAPITable::SetCollapseState](imapitable-setcollapsestate.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

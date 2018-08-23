@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: fd5ef226-39e6-4604-a751-2f6cc49c4895
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 562fff0654def6cf2f05aa5f0b95a4df243c7abf
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799766"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 指定したサイズのメッセージ転送エージェントの識別子を持つ新しい[MTSID](mtsid.md)構造体に割り当てるバイト数を計算します。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19799766"
 CbNewMTSID (_cb)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  __cb_
   

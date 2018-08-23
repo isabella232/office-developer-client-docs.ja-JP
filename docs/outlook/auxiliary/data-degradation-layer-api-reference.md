@@ -1,5 +1,5 @@
 ---
-title: データ劣化レイヤー API のリファレンス
+title: データ変換レイヤー API リファレンス
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799313"
 ---
-# <a name="data-degradation-layer-api-reference"></a>データ劣化レイヤー API のリファレンス
+# <a name="data-degradation-layer-api-reference"></a>データ変換レイヤー API リファレンス
 
 データ劣化レイヤー API の Outlook オブジェクトの基になるネイティブな文字書式を非表示にする機能を提供するのではなく、優先される文字の形式でオブジェクトにアクセスするクライアントを許可する参照の内容を説明しますオブジェクトのネイティブな文字の書式設定します。
   

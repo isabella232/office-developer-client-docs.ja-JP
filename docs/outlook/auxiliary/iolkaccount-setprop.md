@@ -29,7 +29,7 @@ HRESULT IOlkAccount::SetProp(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _dwProp_
   
@@ -46,7 +46,7 @@ _pVar_
 |S_OK  <br/> |メソッドの呼び出しに成功しました。  <br/> |
 |E_INVALIDARG  <br/> |プロパティの無効なタグが指定されました。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [IOlkAccount::SaveChanges](iolkaccount-savechanges.md)を使用して、アカウントのプロパティの値に変更を保存します。 
   

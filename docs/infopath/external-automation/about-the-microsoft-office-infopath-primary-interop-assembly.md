@@ -27,7 +27,7 @@ InfoPath によってインストールされる 3 つの相互運用アセン�
     
 - Microsoft.Office.Interop.InfoPath.Xml.dll
     
-このトピックでは、専用外部オートメーション コードの使用は、Microsoft.Office.Interop.InfoPath の相互運用機能アセンブリによって公開されるオブジェクト モデルについて説明します。 Microsoft.Office.Interop.InfoPath.SemiTrust アセンブリを記述し、InfoPath フォーム テンプレート (.xsn) 内から実行するマネージ コードを実行するためだけに使用する方法については、 [InfoPath 2003 の互換性のあるオブジェクト モデル](http://msdn.microsoft.com/library/e4511af6-d7e7-44ad-a50d-1b7ee04f8215%28Office.15%29.aspx)を参照してください。
+このトピックでは、Microsoft.Office.Interop.InfoPath の相互運用機能アセンブリによって公開されるオブジェクト モデルについて説明します。これは、外部オートメーション コードでのみ使用されます。InfoPath フォーム テンプレート (.xsn) 内から実行するマネージ コードの作成と実行のためにのみ使用される Microsoft.Office.Interop.InfoPath.SemiTrust アセンブリの詳細については、「[InfoPath 2003 の互換性のあるオブジェクト モデル](http://msdn.microsoft.com/library/e4511af6-d7e7-44ad-a50d-1b7ee04f8215%28Office.15%29.aspx)」を参照してください。
   
 ## <a name="important-installation-information"></a>インストールに関する重要な情報
 
@@ -39,7 +39,7 @@ Microsoft.Office.Interop.InfoPath アセンブリが GAC に表示されない�
   
 ## <a name="the-microsoftofficeinteropinfopath-namespace"></a>Microsoft.Office.Interop.InfoPath 名前空間
 
-所定のタスク用のコードがまたは JScript では、 **Microsoft.Office.Interop.InfoPath**を表示するときに公開されるオブジェクト モデルの Visual Basic for Applications などの言語を使用して同じタスクを実行することに非常に類似したドキュメントの作成プロセスの管理Microsoft Visual Studio の**オブジェクト ブラウザー**からの名前空間より複雑な検索します。 これは、.NET Framework の相互運用性と、.NET Framework 自体に必要ないくつか追加の構成要素を使用して、すべてのパブリック インターフェイスを公開する COM サーバーを必要とするためです。 相互運用機能アセンブリによって公開されるオブジェクト モデルがより複雑な表示方法とその理由の詳細については、 [InfoPath 2003 の互換性のあるオブジェクト モデル](http://msdn.microsoft.com/library/e4511af6-d7e7-44ad-a50d-1b7ee04f8215%28Office.15%29.aspx)のトピックの「方法 COM オブジェクトが公開するマネージ コード」セクションを参照してください。 
+特定のタスクのマネージ コードを作成するプロセスは、Visual Basic for Applications や JScript などの言語を使用して行う同じタスクと似ていますが、Microsoft Visual Studio の**オブジェクト ブラウザー**から **Microsoft.Office.Interop.InfoPath** 名前空間を表示するときに公開されるオブジェクト モデルはさらに複雑です。これは、.NET Framework の相互運用性は、すべての public インターフェイスを公開する COM サーバー、および .NET Framework 自体に必要ないくつかの追加の構成要素を必要とするためです。相互運用機能アセンブリによって公開されるオブジェクト モデルがどのように複雑に見えるか、またその理由の詳細については、「[InfoPath 2003 の互換性のあるオブジェクト モデル](http://msdn.microsoft.com/library/e4511af6-d7e7-44ad-a50d-1b7ee04f8215%28Office.15%29.aspx)」のトピックの「COM オブジェクトが InfoPath 2003 互換オブジェクト モデルに公開されるしくみ」を参照してください。 
   
 ### <a name="using-intellisense"></a>IntelliSense を使用する
 
@@ -57,7 +57,7 @@ Dim myApp As Application = _
     New Microsoft.Office.Interop.InfoPath.Application()
 ```
 
-オブジェクト変数を作成した後には、変数名に続けて、ピリオドを入力するとき] ボックスの一覧が表示されますを選択するのには、**アプリケーション**クラスのメンバー。 
+オブジェクト変数を作成した後で、変数名に続けてピリオドを入力すると、**Application** クラスの選択できるメンバーのドロップダウン リストが表示されます。  
   
 InfoPath フォームを操作するには、 [XDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.XDocument.aspx)の型のオブジェクト変数を宣言し、 [XDocuments](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.XDocuments.aspx)コレクションの次のコード行に示すように**アプリケーション**オブジェクトの変数からフォームを開くことで初期化します。 
   
@@ -73,7 +73,7 @@ Dim myXDoc As XDocument = myApp.XDocuments.Open( _
     XdDocumentVersionMode.xdFailOnVersionOlder)
 ```
 
-**XDocument**クラスのメンバーの IntelliSense のステートメント入力候補のドロップダウン ・ リストは、ピリオドの後に変数の名前を入力するときに表示されます。 
+変数の名前とその後のピリオドを入力すると、**XDocument** クラスのメンバーの IntelliSense ステートメント入力候補のドロップダウン リストが表示されます。 
   
 Microsoft XML Core Services (MSXML) を使用して、フォームの基になる XML ドキュメントの内容を操作するには必要があります[IXMLDOMDocument2](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument2.aspx)の型の変数を作成し、XML を割り当てるには、 **XDocument**クラスの[DOM](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._XDocument2.DOM.aspx)プロパティを使用してドキュメント オブジェクト モデル (DOM) その変数をフォームのです。 
   
@@ -85,7 +85,7 @@ IXMLDOMDocument2 doc= myXDoc.DOM as IXMLDOMDocument2;
 Dim doc As IXMLDOMDocument2 = myXDoc.DOM
 ```
 
-使用すると、MSXML を使用して、XML ドキュメントで作業するのには、ピリオドの後に変数の名前を入力するときは、 **IXMLDOMDocument2**クラスのメンバーの IntelliSense のステートメント入力候補のドロップダウン リストが表示されます。 
+変数の名前とその後のピリオドを入力すると、**IXMLDOMDocument2** クラスのメンバーの IntelliSense ステートメント入力候補のドロップダウン リストが表示されるので、MSXML を使用して XML ドキュメントを操作できます。 
   
 ### <a name="using-the-class-library-reference-documentation"></a>クラス ライブラリ リファレンス ドキュメントを使用する
 

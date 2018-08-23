@@ -15,7 +15,7 @@ ms.locfileid: "19800223"
 ---
 # <a name="determine-if-outlook-downloaded-only-the-header-of-a-message"></a>Outlook がメッセージのヘッダーのみをダウンロードするかどうかを決定します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックでは、Microsoft Outlook 2013 がメッセージのヘッダーのみまたは、ヘッダーとメッセージの本文をダウンロードするかどうかを判断するのには、名前付きの[PidLidHeaderItem の標準的なプロパティ](pidlidheaderitem-canonical-property.md)を使用している Visual C++ でのコード サンプルを示します。 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 88c7a666-875d-473a-b126-dbbb7009f7d9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 871dafd7bf8959cf814d65991fe08fdb2b283c08
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800459"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 コンテナーの内容のテーブルへのポインターを返します。
   
@@ -78,7 +78,7 @@ MAPI_E_NO_SUPPORT
   
 > コンテナーでは、内容がないので、内容のテーブルを提供することはできません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIContainer::GetContentsTable**メソッドは、コンテナーの内容のテーブルへのポインターを返します。 コンテンツ テーブルには、コンテナー内のオブジェクトについての概要情報が含まれています。 
   
@@ -158,11 +158,11 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IMAPIProp::OpenProperty](imapiprop-openproperty.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
   
-[PidTagContainerContents の標準的なプロパティ](pidtagcontainercontents-canonical-property.md)
+[PidTagContainerContents 標準プロパティ](pidtagcontainercontents-canonical-property.md)
   
-[IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)
+[IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

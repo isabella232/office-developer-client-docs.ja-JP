@@ -23,7 +23,7 @@ ms.locfileid: "19800864"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [IMAPITable::GetCollapseState](imapitable-getcollapsestate.md)メソッドへの前回の呼び出しによって保存されたデータを使用して分類されたテーブルの現在の展開または折りたたみの状態を再構築します。 
   
@@ -68,7 +68,7 @@ MAPI_E_UNABLE_TO_COMPLETE
   
 > テーブルでは、折りたたまれた状態または展開されたビューの再構築が完了できませんでした。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::SetCollapseState**メソッドは、テーブル ビューの展開または折りたたみの状態を再確立します。 **SetCollapseState**および**GetCollapseState**が次のように協力しています。 
   
@@ -98,5 +98,5 @@ MAPI_E_UNABLE_TO_COMPLETE
   
 [IMAPITable::GetCollapseState](imapitable-getcollapsestate.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

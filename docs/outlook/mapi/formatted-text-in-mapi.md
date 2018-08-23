@@ -1,5 +1,5 @@
 ---
-title: MAPI で書式設定されたテキスト
+title: MAPI の書式付きテキスト
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800118"
 ---
-# <a name="formatted-text-in-mapi"></a>MAPI で書式設定されたテキスト
+# <a name="formatted-text-in-mapi"></a>MAPI の書式付きテキスト
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージのテキストは格納できるテキスト形式を使用して転送したり、書式設定されたテキスト。 書式設定されたテキストで、1 つまたは複数のフォント、フォント サイズなど、テキストの色の外観を変更することによりメッセージのテキストを強化します。 お勧めしますがすべてのクライアントとすべてのメッセージ ストア プロバイダーが書式設定されたテキストをサポート可能な限り、します。 メッセージの読みやすさを向上し、容易かつ効率的にメッセージの処理をすることによって値を追加するメッセージの書式設定されたテキストをサポートします。
   
@@ -29,27 +29,27 @@ MAPI は、これら 2 つのメッセージ テキストのプロパティを�
   
 ### 
 
-[テキストを同期して、書式設定](synchronizing-text-and-formatting.md)
+[テキストと書式設定の同期](synchronizing-text-and-formatting.md)
   
 > RTF メッセージ テキストの書式設定と同期を維持する方法について説明します。
     
-[送信メッセージ内のテキストを書式設定のサポート: クライアントの責任](supporting-formatted-text-in-outgoing-messages-client-responsibilities.md)
+[送信メッセージでの書式付きテキストのサポート: クライアントの責任](supporting-formatted-text-in-outgoing-messages-client-responsibilities.md)
   
 > 送信するメッセージの書式設定されたテキストをサポートするためのクライアント アプリケーションの責任について説明します。
     
-[受信メッセージ内のテキストを書式設定のサポート: クライアントの責任](supporting-formatted-text-in-incoming-messages-client-responsibilities.md)
+[受信メッセージでの書式付きテキストのサポート: クライアントの責任](supporting-formatted-text-in-incoming-messages-client-responsibilities.md)
   
 > 受信メッセージの書式設定されたテキストをサポートするためのクライアント アプリケーションの責任について説明します。
     
-[メッセージ ・ ストアの責任を書式設定されたテキストをサポートします。](supporting-formatted-text-message-store-responsibilities.md)
+[書式付きテキストのサポート: メッセージ ストアの責任](supporting-formatted-text-message-store-responsibilities.md)
   
 > 書式設定されたテキストをサポートするためのメッセージ ストアの役割について説明します。
     
-[添付ファイルを表示する書式設定されたテキストをサポートします。](supporting-formatted-text-rendering-attachments.md)
+[書式付きテキストのサポート: 添付ファイルの表示](supporting-formatted-text-rendering-attachments.md)
   
 > 添付ファイルを表示する場所を選択する方法について説明します。
     
-[ゲートウェイの役割を書式設定されたテキストをサポートします。](supporting-formatted-text-gateway-responsibilities.md)
+[書式付きテキストのサポート: ゲートウェイの責任](supporting-formatted-text-gateway-responsibilities.md)
   
 > 書式設定されたテキスト メッセージを送信および受信のゲートウェイの役割について説明します。
     

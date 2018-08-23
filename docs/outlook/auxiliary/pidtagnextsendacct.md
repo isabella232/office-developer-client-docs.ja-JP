@@ -22,12 +22,12 @@ ms.locfileid: "19799560"
 
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_NEXT_SEND_ACCT  <br/> |
+|関連するプロパティ:  <br/> |PR_NEXT_SEND_ACCT  <br/> |
 |識別子:  <br/> |0x0E29  <br/> |
-|データを入力します。  <br/> |PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_UNICODE  <br/> |
 |領域:  <br/> |Outlook アプリケーション  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、MAPI のメッセージ オブジェクトに適用されます。 受信したメッセージは、サブ アカウントの「送信」タイムスタンプは、プライマリ アカウントを使用して転送、または返信を送信できない場合、転送または返信を送信するアカウントを示します。 、送信メッセージのスタンプを「送信」サブ アカウントをプライマリ アカウントでメッセージを送信できない場合にメッセージを送信するアカウントを決定します。 その値が、 [PROP_ACCT_SEND_STAMP](prop_acct_send_stamp.md) 、 [IOlkAccount](iolkaccount.md)のインターフェイス、メッセージが送信されているアカウントからです。 
   
@@ -35,5 +35,5 @@ ms.locfileid: "19799560"
 
 - [定数 (アカウント管理 API)](constants-account-management-api.md)
 - [MAPI プロパティ](http://msdn.microsoft.com/library/3b980217-b65b-442b-8c18-b8b9f3ff487a%28Office.15%29.aspx) 
-- [PidTagNextSendAcct の標準的なプロパティ](http://msdn.microsoft.com/library/b7429c2e-0d9d-4921-9f56-9ecad817f8cb%28Office.15%29.aspx)
+- [PidTagNextSendAcct 標準プロパティ](http://msdn.microsoft.com/library/b7429c2e-0d9d-4921-9f56-9ecad817f8cb%28Office.15%29.aspx)
 

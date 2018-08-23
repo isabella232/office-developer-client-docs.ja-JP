@@ -1,5 +1,5 @@
 ---
-title: サンプルの PST ストア プロバイダーをラップ
+title: ラップされた PST ストア プロバイダーのサンプルについて
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799605"
 ---
-# <a name="about-the-sample-wrapped-pst-store-provider"></a>サンプルの PST ストア プロバイダーをラップ
+# <a name="about-the-sample-wrapped-pst-store-provider"></a>ラップされた PST ストア プロバイダーのサンプルについて
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ## <a name="overview-of-message-store-providers"></a>メッセージ ストア プロバイダーの概要
 
@@ -37,11 +37,11 @@ ms.locfileid: "19799605"
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [PST ストア プロバイダーをラップして、サンプルをインストールします。](installing-the-sample-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーのサンプルのインストール](installing-the-sample-wrapped-pst-store-provider.md)
     
 - ダウンロードしてサンプル ラップ PST ストア プロバイダーをインストールする方法について説明します。
     
-- [ラップされた PST ストア プロバイダーを初期化しています。](initializing-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)
     
 - ラップされた PST ストア プロバイダーの実装では、まず初期化し、ラップされた PST ストア プロバイダーを構成します。
     
@@ -49,11 +49,11 @@ ms.locfileid: "19799605"
     
 - ラップされた PST ストア プロバイダーを初期化すると後、は、できるように、MAPI スプーラーと MAPI にログオンできるラップの PST ストア プロバイダー関数を実装する必要があります。
     
-- [ラップされた PST ストア プロバイダーを使用します。](using-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーの使用](using-a-wrapped-pst-store-provider.md)
     
 - ラップされた PST ストアを使用するには、プロバイダーの一般的な実装するために**[IMAPISupport::IUnknown](imapisupportiunknown.md)** インターフェイスをラップする必要があります PST ストア プロバイダーのタスクをラップします。 
     
-- [ラップされた PST ストア プロバイダーをシャット ダウン](shutting-down-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーのシャットダウン](shutting-down-a-wrapped-pst-store-provider.md)
     
 - ラップされた PST ストア プロバイダーを使用してが完了したら後、は、ラップされた PST ストア プロバイダーをシャット ダウンする必要があります正しく。
     

@@ -23,7 +23,7 @@ ms.locfileid: "19800825"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI 経由の通知を受信するアドバイズ シンクを登録します。
   
@@ -37,7 +37,7 @@ ULONG FAR * lpulConnection
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpKey_
   
@@ -105,7 +105,7 @@ S_OK
   
 > 通知の登録に成功しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 サービス プロバイダーのサポートのすべてのオブジェクトの**IMAPISupport::Subscribe**メソッドを実装します。 サービス プロバイダーでは、 **Subscribe**を呼び出してから通知を管理するために MAPI を使用して**アドバイズ**メソッドのいずれかです。 
   

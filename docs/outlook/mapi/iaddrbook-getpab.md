@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9830e09c-700f-469b-a54d-4e4e0583aa84
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3d67d71effde87711e3be9aca1b979627acda37d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800389"
 ---
-# <a name="iaddrbookgetpab"></a>られたユーザーのプライマリ
+# <a name="iaddrbookgetpab"></a>IAddrBook::GetPAB
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 個人用アドレス帳 (PAB) として指定されているコンテナーのエントリの識別子を返します。
   
@@ -34,7 +34,7 @@ HRESULT GetPAB(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpcbEntryID_
   
@@ -50,7 +50,7 @@ S_OK
   
 > 個人アドレス帳のエントリ id が正常に返されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントは、個人用アドレス帳として指定されているコンテナーのエントリの識別子を取得するために**GetPAB**メソッドを呼び出します。 場合は、プロファイルに個人用アドレス帳が確立されていない、MAPI、個人用アドレス帳として最初のコンテナーの選択、アドレス帳階層の変更を可能にします。 
   
@@ -70,9 +70,9 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[PidTagContainerFlags の標準的なプロパティ](pidtagcontainerflags-canonical-property.md)
+[PidTagContainerFlags 標準プロパティ](pidtagcontainerflags-canonical-property.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

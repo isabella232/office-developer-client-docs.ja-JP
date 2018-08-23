@@ -17,7 +17,7 @@ ms.locfileid: "19800031"
 ---
 # <a name="fast-shutdown-user-options"></a>高速シャット ダウンのユーザー オプション
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックでは、3 つ Windows レジストリ設定、使用可能な Microsoft Outlook 2010 で起動して、Microsoft Outlook 2013 では、ユーザーの MAPI クライアントの高速シャット ダウンを含むについて説明します。 管理者は、クライアントの高速シャット ダウンの MAPI プロバイダーのサポートによって優先するクライアントのシャット ダウン動作を指定するのにこれらのレジストリ設定を使用できます。 管理者の設定には、MAPI サブシステムが高速シャット ダウンの利用可能なサポートの観点から[IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md)の MAPI クライアントの呼び出しに応答する方法を決定します。 
   
@@ -76,6 +76,6 @@ MAPI プロバイダーが、MAPI のサブシステムを返します S を選�
 ## <a name="see-also"></a>関連項目
 
 - [Mapi クライアントのシャット ダウン](client-shutdown-in-mapi.md)
-- [高速シャット ダウンの概要](fast-shutdown-overview.md)
-- [高速シャット ダウンのためのベスト プラクティス](best-practices-for-fast-shutdown.md)
+- [高速シャットダウンの概要](fast-shutdown-overview.md)
+- [高速シャットダウンのためのベスト プラクティス](best-practices-for-fast-shutdown.md)
 

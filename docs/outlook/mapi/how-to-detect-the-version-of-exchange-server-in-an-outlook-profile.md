@@ -15,7 +15,7 @@ ms.locfileid: "19800218"
 ---
 # <a name="detect-the-version-of-exchange-server-in-an-outlook-profile"></a>Outlook プロファイルに Exchange Server のバージョンを検出します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックには、アクティブなアカウントが Microsoft Exchange Server のバージョン情報を取得するのには、 **[PR_PROFILE_SERVER_VERSION](pidtagprofileserverversion-canonical-property.md)** プロパティと**[PR_PROFILE_SERVER_FULL_VERSION](pidtagprofileserverfullversion-canonical-property.md)** プロパティを使用する方法について説明する C++ のコード サンプルが含まれています接続されています。 
   

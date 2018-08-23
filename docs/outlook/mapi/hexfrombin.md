@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 12b95657-1926-4a24-be63-40305ea6f990
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c1d333c7c019c30c3f6c6b3567453f2f022d4b5d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800236"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 2 進数を 16 進数の文字列形式に変換します。 
   
@@ -41,7 +41,7 @@ void HexFromBin(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pb_
   
@@ -59,7 +59,7 @@ void HexFromBin(
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **HexFromBin**関数は、バイナリ データのサイズが_cb_パラメーターで示される単位にポインターを受け取ります。 内_sz_文字列で返します (2 * _cb_) + 1 バイトのメモリ、16 進数のバイナリ情報を表したものです。 バイトの値が 10 進数の 10 の場合は、たとえば、16 進数の文字列になります 0 a、文字列内の 2 つのバイトは 1 バイトに変換。 
   

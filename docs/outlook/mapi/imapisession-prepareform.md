@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 98c0eab1-fd7e-46c3-8619-ccd6dc7cf8f7
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 026a120406b714a50a9191e4761021693a250b94
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800696"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージにアクセスする[IMAPISession::ShowForm](imapisession-showform.md)メソッドを使用する数値のトークンを作成します。 
   
@@ -35,7 +35,7 @@ HRESULT PrepareForm(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpInterface_
   
@@ -55,7 +55,7 @@ S_OK
   
 > フォームの準備が正常に完了しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPISession::PrepareForm**メソッドでは、 _lpMessage_パラメーターで指定されたメッセージのメッセージのトークンを作成し、メッセージの[IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出します。 このトークンは、 **IMAPISession::ShowForm**に、 _ulMessageToken_パラメーターに渡されます。 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 85f0d8a5-6dd3-4f33-b31a-246d286d6286
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b2d3dce7835f92d9ad78f7d8837e655fdd8fd412
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19799657"
 ---
 # <a name="adrlist"></a>ADRLIST
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 1 つまたは複数の受信者に所属する 0 個以上のプロパティについて説明します。 
   
@@ -39,7 +39,7 @@ typedef struct _ADRLIST
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 **cEntries**
   
@@ -49,7 +49,7 @@ typedef struct _ADRLIST
   
 > [ADRENTRY](adrentry.md)構造体の配列、各受信者の 1 つの構造体です。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **ADRLIST**構造体は、各受信者のプロパティを記述する 1 つまたは複数の**ADRENTRY**構造体を格納します。 受信者が解決することができます。 これは、プロパティ値の配列内のエントリ識別子を欠けていることを意味します。 受信者が解決されたことを意味します**PR\_エントリ ID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) のプロパティが含まれます。 通常、受信者の解決は、電子メール アドレス ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) である**PR_EMAIL_ADDRESS**プロパティもあります。 ただし、電子メール アドレスは必要ではありません。 **ADRLIST**構造体は、たとえば、MAPI アドレス帳にエントリを表示するのには、送信メッセージの受信者の一覧を記述する使用されます。 
   

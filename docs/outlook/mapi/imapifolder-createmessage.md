@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e0222afa-c148-4735-a603-cac7be6c91f9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8d7e6dfbf9e6a751845adb2319b66462bcde651f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800472"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 新しいメッセージを作成します。
   
@@ -35,7 +35,7 @@ HRESULT CreateMessage(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpInterface_
   
@@ -67,7 +67,7 @@ S_OK
   
 > メッセージが正常に作成されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIFolder::CreateMessage**メソッドでは、ジェネリック、または関連するコンテンツを含む新しいメッセージを作成し、エントリ id を割り当てます。 エントリの識別子は、メッセージ ストア プロバイダーを表す部分と個々 のメッセージを表す部分で構成されます。 
   
@@ -101,7 +101,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)
   
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

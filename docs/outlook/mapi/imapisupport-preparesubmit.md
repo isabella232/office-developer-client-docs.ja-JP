@@ -23,7 +23,7 @@ ms.locfileid: "19800801"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI スプーラーに送信するためには、メッセージを準備します。
   
@@ -34,7 +34,7 @@ ULONG FAR * lpulFlags
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpMessage_
   
@@ -50,7 +50,7 @@ S_OK
   
 > メッセージの準備ができました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージ ストア プロバイダーのサポート オブジェクトの**IMAPISupport::PrepareSubmit**メソッドを実装します。 メッセージ ストア プロバイダーは、MAPI スプーラーに送信するためのメッセージを準備するのには[IMessage::SubmitMessage](imessage-submitmessage.md)メソッドの実装では、 **PrepareSubmit**を呼び出します。 
   

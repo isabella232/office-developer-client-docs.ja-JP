@@ -37,7 +37,7 @@ void STDAPICALLTYPE RebaseTaskProgress(
 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _ulMin_
   

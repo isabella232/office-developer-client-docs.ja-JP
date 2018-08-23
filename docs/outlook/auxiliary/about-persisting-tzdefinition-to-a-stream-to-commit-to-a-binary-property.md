@@ -1,5 +1,5 @@
 ---
-title: バイナリ プロパティをコミットするためのストリームに永続化する TZDEFINITION について
+title: バイナリ プロパティにコミットするためにストリームに TZDEFINITION を保持することについて
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799294"
 ---
-# <a name="about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property"></a>バイナリ プロパティをコミットするためのストリームに永続化する TZDEFINITION について
+# <a name="about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property"></a>バイナリ プロパティにコミットするためにストリームに TZDEFINITION を保持することについて
 
 タイム ゾーンのプロパティ、 [PidLidAppointmentTimeZoneDefinitionEndDisplay](http://msdn.microsoft.com/library/7b6193cb-612b-408e-b9bc-285df313e2cc%28Office.15%29.aspx)、 [PidLidAppointmentTimeZoneDefinitionRecur](http://msdn.microsoft.com/library/52fd57a0-9e34-4452-9ecd-2acb454446c9%28Office.15%29.aspx)、および[PidLidAppointmentTimeZoneDefinitionStartDisplay](http://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx)はバイナリのプロパティを名前付きの[TZDEFINITION](tzdefinition.md)構造体の保存形式に対応するストリームが含まれています。 
   
@@ -64,6 +64,6 @@ if (TZDEFINITION_FLAG_VALID_KEYNAME)
 ## <a name="see-also"></a>関連項目
 
 - [(Outlook エクスポート Api) 定数](constants-outlook-exported-apis.md)
-- [TZDEFINITION 構造体を読み取るためのバイナリのプロパティからのストリームを解析します。](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md)
+- [バイナリ プロパティからのストリームを解析し、TZDEFINITION 構造体を読み取る](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md)
 - [予定からタイム ゾーンのプロパティを読み取る](how-to-read-time-zone-properties-from-an-appointment.md)
 

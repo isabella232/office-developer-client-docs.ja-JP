@@ -17,7 +17,7 @@ ms.locfileid: "19800243"
 ---
 # <a name="install-the-samples-used-in-this-section"></a>このセクションで使用されるサンプルをインストールします。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MFCMAPI アプリケーションと CreateOutlookItemsAddin のプロジェクトを表示しを[MAPI を使用して Outlook アイテムを作成する](creating-outlook-items-by-using-mapi.md)セクションのトピックによって参照されているサンプル コードを実行するをインストールするには、以下の手順を実行します。 
 
@@ -78,8 +78,8 @@ MFCMAPI アプリケーションと CreateOutlookItemsAddin のプロジェク�
     
 ## <a name="see-also"></a>関連項目
 
-- [簡易メール アイテムを作成します。](how-to-create-a-simple-mail-item.md)
-- [単純な繰り返しのタスク アイテムを作成します。](how-to-create-a-simple-recurrent-task-item.md)
-- [複雑な定期的な予定アイテムを作成します。](how-to-create-a-complex-recurrent-appointment-item.md)
-- [読み取り、定期的なパターンの解析](how-to-read-and-parse-a-recurrence-pattern.md)
+- [単純なメール アイテムを作成する](how-to-create-a-simple-mail-item.md)
+- [単純な定期実行タスク アイテムを作成する](how-to-create-a-simple-recurrent-task-item.md)
+- [複雑な定期実行予定アイテムを作成する](how-to-create-a-complex-recurrent-appointment-item.md)
+- [定期実行パターンを読んで解析する](how-to-read-and-parse-a-recurrence-pattern.md)
 

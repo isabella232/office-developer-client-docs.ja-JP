@@ -15,7 +15,7 @@ ms.locfileid: "19800233"
 ---
 # <a name="access-a-store-on-the-remote-server-when-outlook-is-in-cached-exchange-mode"></a>Outlook が Exchange キャッシュ モードではリモート サーバー上のストアにアクセスします。
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックには、 **MAPI_NO_CACHE**フラグを使用して Microsoft Office Outlook が Exchange キャッシュ モードではときに、フォルダーまたはリモート サーバー上のメッセージ ストアにメッセージを開く方法を示している C++ でのコード サンプルが含まれています。 
   
@@ -49,6 +49,6 @@ HRESULT HrOpenRootFolder (
 ## <a name="see-also"></a>関連項目
 
 - [MAPI の追加について](about-mapi-additions.md)
-- [ストアがリモート サーバーと Outlook の Exchange キャッシュ モードでは、開いています。](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
-- [OST 内のメッセージを Exchange キャッシュ モードで同期を呼び出すことがなく管理します。](how-to-manage-a-message-in-an-ost-without-invoking-a-synchronization.md)
+- [Outlook が Exchange キャッシュ モードの場合にリモート サーバーでストアを開く](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
+- [Exchange キャッシュ モードで同期を呼び出すことなく OST でメッセージを管理する](how-to-manage-a-message-in-an-ost-without-invoking-a-synchronization.md)
 

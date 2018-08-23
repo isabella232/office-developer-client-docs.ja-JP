@@ -1,5 +1,5 @@
 ---
-title: メッセージ サービスを追加します。
+title: メッセージ サービスの追加
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799626"
 ---
-# <a name="adding-a-message-service"></a>メッセージ サービスを追加します。
+# <a name="adding-a-message-service"></a>メッセージ サービスの追加
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  **新しいメッセージ サービスをプロファイルに追加し、新しいメッセージ サービスへのアクセス**
   

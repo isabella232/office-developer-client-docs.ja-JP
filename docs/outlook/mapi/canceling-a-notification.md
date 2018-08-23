@@ -1,5 +1,5 @@
 ---
-title: 通知をキャンセルします。
+title: 通知の取り消し
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799756"
 ---
-# <a name="canceling-a-notification"></a>通知をキャンセルします。
+# <a name="canceling-a-notification"></a>通知の取り消し
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 通知をキャンセルするには、クライアントは、アドバイス、ソースの**Unadvise**メソッドを呼び出します。 アドバイズ シンクへの参照を解放するのにはサービス ・ プロバイダーが発生するため、 **Unadvise**を呼び出すことが重要です。 サービス プロバイダーは、アドバイズ シンクへの参照を管理している限り、アドバイズ シンクは、 [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)呼び出しの受信を続行できます。 実際には、非同期であるのため、イベントの通知、クライアントが通知成功**Unadvise**の呼び出し後にも。 クライアントは、いつでも通知の受信を処理できる必要があります。 
   

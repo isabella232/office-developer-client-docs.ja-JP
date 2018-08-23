@@ -1,5 +1,5 @@
 ---
-title: メッセージ サービスを構成します。
+title: メッセージ サービスの構成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799795"
 ---
-# <a name="configuring-a-message-service"></a>メッセージ サービスを構成します。
+# <a name="configuring-a-message-service"></a>メッセージ サービスの構成
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  **メッセージ サービスですべてのサービス プロバイダーを構成するのには**
   

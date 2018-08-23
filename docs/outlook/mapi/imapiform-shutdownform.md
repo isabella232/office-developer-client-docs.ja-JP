@@ -23,7 +23,7 @@ ms.locfileid: "19800505"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームを閉じます。
   
@@ -33,7 +33,7 @@ HRESULT ShutdownForm(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulSaveOptions_
   
@@ -61,7 +61,7 @@ E_UNEXPECTED
   
 > **ShutdownForm**の前回の呼び出しで、フォームが既に閉じました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォームの閲覧者は、フォームを終了するのには**IMAPIForm::ShutdownForm**メソッドを呼び出します。 
   
@@ -108,5 +108,5 @@ E_UNEXPECTED
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[IMAPIForm: IUnknown](imapiformiunknown.md)
+[IMAPIForm : IUnknown](imapiformiunknown.md)
 

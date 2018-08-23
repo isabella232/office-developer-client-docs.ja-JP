@@ -1,5 +1,5 @@
 ---
-title: 受信者にコピー
+title: 受信者のコピー
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799836"
 ---
-# <a name="copying-a-recipient"></a>受信者にコピー
+# <a name="copying-a-recipient"></a>受信者のコピー
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 別の 1 つのコンテナー、または同じコンテナーには、1 つまたは複数の受信者をコピーするに最初の移行先コンテナーが変更可能なことを確認します。 コンテナーを変更することは、 **PR_CONTAINER_FLAGS** ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md)) のプロパティで、AB_MODIFIABLE フラグを設定します。
   

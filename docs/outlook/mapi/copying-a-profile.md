@@ -1,5 +1,5 @@
 ---
-title: プロファイルをコピーします。
+title: プロファイルのコピー
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799827"
 ---
-# <a name="copying-a-profile"></a>プロファイルをコピーします。
+# <a name="copying-a-profile"></a>プロファイルのコピー
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロファイルを作成する方法の 1 つでは、既存のプロファイルからコピーし、必要なメッセージ サービスおよびサービス ・ プロバイダーを変更します。 プロファイルをコピーするには、 [MAPIAdminProfiles](mapiadminprofiles.md)関数によって、MAPI によって提供されるプロファイルの管理オブジェクトを使用する必要があります。 
   

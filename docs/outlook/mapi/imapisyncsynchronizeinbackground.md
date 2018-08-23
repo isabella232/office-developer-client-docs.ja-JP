@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800819"
 ---
-# <a name="imapisync--synchronizeinbackground"></a>IMAPISync: SynchronizeInBackground
+# <a name="imapisync--synchronizeinbackground"></a>IMAPISync : SynchronizeInBackground
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  同期を開始します。 このメソッドは、Microsoft Outlook 2010 と Microsoft Outlook 2013 で呼び出され、メッセージ ストア プロバイダーによって実装されています。 
   
@@ -33,7 +33,7 @@ HRESULT SynchronizeInBackground (
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _psibpb_
   
@@ -49,7 +49,7 @@ S_OK
 
 
 
-[IMAPISync: IUnknown](imapisynciunknown.md)
+[IMAPISync : IUnknown](imapisynciunknown.md)
   
 [MAPISIB](mapisib.md)
 

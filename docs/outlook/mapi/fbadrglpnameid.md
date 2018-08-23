@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: fec5d5ac-bca6-4fff-b264-45cdb6b37f55
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3f04c5be240f63d35ea8dba0f7abbf1085f2a41d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800034"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 名前付きプロパティを記述する構造体の配列を検証し、その割り当てを確認します。 
   
@@ -40,7 +40,7 @@ BOOL FBadRglpNameID(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lppNameId_
   
@@ -50,7 +50,7 @@ BOOL FBadRglpNameID(
   
 > [in]_LppNameId_パラメーターが指す配列内の名前付きプロパティの構造体の数です。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 TRUE 
   
@@ -60,7 +60,7 @@ FALSE
   
 > 指定したプロパティの名前の構造体は、すべて有効です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)または[IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)への呼び出しをセットアップするとき、 **FBadRglpNameID**関数を使用できます。 
   

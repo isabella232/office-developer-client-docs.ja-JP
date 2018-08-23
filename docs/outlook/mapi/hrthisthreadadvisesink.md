@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 12c07302-472f-4e4f-8087-1bdf0dc09a5a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 744d9a7588bff89e9d306e516a24da2db3038d4d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800344"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 スレッドの安全のための既存のアドバイズ シンクをラップするアドバイズ シンクを作成します。 
   
@@ -40,7 +40,7 @@ HrThisThreadAdviseSink(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpAdviseSink_
   
@@ -54,7 +54,7 @@ HrThisThreadAdviseSink(
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 ラッパーでは、通知が**HrThisThreadAdviseSink**関数を呼び出した同じスレッドで呼び出されることになっていることを確認します。 この関数は、特定のスレッド上で実行する必要があります通知コールバックを保護するために使用されます。 
   

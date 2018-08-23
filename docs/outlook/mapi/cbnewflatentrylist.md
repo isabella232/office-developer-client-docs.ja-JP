@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f7182631-7f0e-4f4a-995d-22c0bedd7b6a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a6a6febb82368aee78506f7864f178f1f5dfedf9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799770"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 指定したサイズのいくつかの[FLATENTRY](flatentry.md)構造体を含む新しい[FLATENTRYLIST](flatentrylist.md)構造体に割り当てるバイト数を計算します。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19799770"
 CbNewFLATENTRY (_cb)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  __cb_
   

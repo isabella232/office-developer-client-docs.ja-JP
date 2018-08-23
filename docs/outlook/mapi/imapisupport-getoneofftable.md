@@ -23,7 +23,7 @@ ms.locfileid: "19800737"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI の一時テーブル (すべてのアドレスが新しい受信者を作成するためのサポートについてプロバイダーを登録しているテンプレートの一覧) へのポインターを返します。
   
@@ -54,7 +54,7 @@ S_OK
   
 > 一時テーブルが正常に取得しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 アドレス帳プロバイダーのサポート オブジェクトの**IMAPISupport::GetOneOffTable**メソッドを実装します。 アドレス帳プロバイダーは、新しい受信者を作成するためのテンプレートの完全な一覧を取得するために**GetOneOffTable**を呼び出します。 このテーブルには、MAPI をサポートしているテンプレートと同様に、セッションでアクティブになっているアドレス帳プロバイダーがサポートするテンプレートが含まれています。 
   
@@ -76,7 +76,7 @@ _UlFlags_パラメーターに MAPI_UNICODE フラグを設定する、 [IMAPITa
   
 [IMAPISupport::NewEntry](imapisupport-newentry.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
   
 [IMAPITable::QueryColumns](imapitable-querycolumns.md)
   
@@ -84,10 +84,10 @@ _UlFlags_パラメーターに MAPI_UNICODE フラグを設定する、 [IMAPITa
   
 [IMAPITable::QuerySortOrder](imapitable-querysortorder.md)
   
-[PidTagCreateTemplates の標準的なプロパティ](pidtagcreatetemplates-canonical-property.md)
+[PidTagCreateTemplates 標準プロパティ Property](pidtagcreatetemplates-canonical-property.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 
 
-[一時テーブル](one-off-tables.md)
+[1 回限りのテーブル](one-off-tables.md)
 

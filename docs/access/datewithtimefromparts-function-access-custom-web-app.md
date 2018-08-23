@@ -18,11 +18,11 @@ ms.locfileid: "19798538"
 指定した年、月、日、および時刻に基づく日付時刻を返します。
   
 > [!NOTE]
-> [!メモ] この記事で説明されているクラウド ストレージ機能は、Office 2013 および Office 2016 ではサポートされなくなっているため、次のエラーが発生する可能性があります。 >  *申し訳ございません。サーバーで問題が発生しているため、現在 \<サービス\> を追加できません。後でもう一度お試しください。* > Office Online、Office for iOS、Office for Android のクラウド ストレージについて、[Office クラウド ストレージ パートナー プログラム](https://dev.office.com/programs/officecloudstorage)でお調べいただけます。 
+> この記事で説明されているクラウド ストレージ機能は、Office 2013 および Office 2016 ではサポートされなくなっているため、次のエラーが発生する可能性があります。 >  *申し訳ございません。サーバーで問題が発生しているため、現在 \<サービス\> を追加できません。後でもう一度お試しください。* > Office Online、Office for iOS、Office for Android のクラウド ストレージについて、[Office クラウド ストレージ パートナー プログラム](https://dev.office.com/programs/officecloudstorage)でお調べいただけます。 
   
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>構文
 
-**DateWithTimeFromParts**(*年*、*月*、*日*、*時間*、*分*、 *2 つ目*) 
+**DateWithTimeFromParts** (*Year*, *Month*, *Day*, *Hour*, *Minute*, *Second*) 
   
 **DateWithTimeFromParts** 関数には次の引数があります。 
   
@@ -31,9 +31,9 @@ ms.locfileid: "19798538"
 | *年*  <br/> |年を指定する整数式。  <br/> |
 | *Month*  <br/> |月を指定する整数式。  <br/> |
 | *日*  <br/> |日を指定する整数式。  <br/> |
-| *1 時間*  <br/> |時を指定する整数式。  <br/> |
-| *1 分*  <br/> |分を指定する整数式。  <br/> |
-| *1 秒*  <br/> |秒を指定する整数式。  <br/> |
+| *Hour*  <br/> |時を指定する整数式。  <br/> |
+| *Minute*  <br/> |分を指定する整数式。  <br/> |
+| *Second*  <br/> |秒を指定する整数式。  <br/> |
    
 ## <a name="remarks"></a>解説
 

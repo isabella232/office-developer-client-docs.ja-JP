@@ -23,7 +23,7 @@ ms.locfileid: "19800411"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 指定した添付ファイルが表示して、インデックス作成の Microsoft Outlook 2010 または Microsoft Outlook 2013 でブロックされているかどうかを確認します。
   
@@ -34,7 +34,7 @@ HRESULT IAttachmentSecurity::IsAttachmentBlocked(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pwszFileName_
   
@@ -50,5 +50,5 @@ HRESULT IAttachmentSecurity::IsAttachmentBlocked(
 
 [MAPI �萔](mapi-constants.md)
   
-[添付ファイルがブロックされていることを確認します。](how-to-verify-an-attachment-is-blocked.md)
+[添付がプロセスされていることを確認する](how-to-verify-an-attachment-is-blocked.md)
 

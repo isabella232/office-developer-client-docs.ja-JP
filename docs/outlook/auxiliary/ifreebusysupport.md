@@ -54,7 +54,7 @@ ms.locfileid: "19799382"
 |[Placeholder21](ifreebusysupport-placeholder21.md) <br/> | *このメンバーは、プレース ホルダーではサポートされていません。*  <br/> |
 |[Placeholder22](ifreebusysupport-placeholder22.md) <br/> | *このメンバーは、プレース ホルダーではサポートされていません。*  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このインターフェイスのメンバーのほとんどは、Outlook の内部使用に予約されているプレース ホルダーであるし、変更されることが。 空き/予約済みプロバイダーする必要があります実装のみとして指定した場合は、のみ、指定した戻り値を返します。
   

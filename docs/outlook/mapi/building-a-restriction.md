@@ -17,7 +17,7 @@ ms.locfileid: "19799745"
 ---
 # <a name="building-a-restriction"></a>制限を作成します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 制限を作成するには、クライアント アプリケーションは、さまざまな種類の 1 つまたは複数の制限の構造の階層を作成して、 [IMAPITable::Restrict](imapitable-restrict.md)または[IMAPITable::FindRow](imapitable-findrow.md)メソッドを階層構造にポインターを渡します。 次の図および[制限のサンプル コード](sample-restriction-code.md)のサンプル コードは、さまざまな種類の構造体をリンクの制限を持つ標準的な制限を実装する方法をデモンストレーションします。 
 
@@ -27,7 +27,7 @@ ms.locfileid: "19799745"
   
 配列の 2 番目と 3 番目のメンバーより簡単です。 両方ともは、コンテンツの制限、構造体、 **PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md)) プロパティが設定された"Sam"と**あるの PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) プロパティに設定されているメッセージを検索する 1 つをポイント」バレーボール。」
   
-**制限の実装**
+**実装の制限**
   
 ![制限の実装](media/amapi_61.gif "制限の実装")
   

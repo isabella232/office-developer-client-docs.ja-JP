@@ -28,7 +28,7 @@ HRESULT Clone(
 ); 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _ppclone_
   

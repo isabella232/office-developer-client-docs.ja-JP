@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6c3e883c-80c0-4eda-8f81-8277d933a74b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 15cf8ff7e282035ddff53565aa92e81e3886729c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800470"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 サブフォルダーを削除します。
   
@@ -37,7 +37,7 @@ HRESULT DeleteFolder(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -89,7 +89,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > 呼び出しが成功したが、すべてのエントリが正常に削除されました。 この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIFolder::DeleteFolder**メソッドでは、サブフォルダーを削除します。 既定では、 **DeleteFolder**が空のフォルダーに対してのみ動作する使用することが、正常に空でないフォルダーに 2 つのフラグを設定することによって: DEL_FOLDERS と DEL_MESSAGES。 空のフォルダーまたは**DeleteFolder**の呼び出しに DEL_FOLDERS と DEL_MESSAGES の両方のフラグを設定するフォルダーのみを削除できます。 DEL_FOLDERS により、すべてのフォルダー内のサブフォルダーを削除します。DEL_MESSAGES は、すべてのフォルダーのメッセージを削除するを有効にします。 
   
@@ -123,7 +123,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

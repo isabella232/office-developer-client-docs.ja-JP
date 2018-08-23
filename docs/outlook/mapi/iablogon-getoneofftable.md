@@ -23,7 +23,7 @@ ms.locfileid: "19800345"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 送信メッセージの受信者の一覧に追加する受信者を作成するための 1 回限りのテンプレートのテーブルを返します。
   
@@ -62,7 +62,7 @@ MAPI_E_NO_SUPPORT
   
 > アドレス帳プロバイダーは、1 回限りのテンプレートを提供していません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI では、受信者を作成するのには使用可能な 1 回限りのテンプレートを作成する**GetOneOffTable**メソッドを呼び出します。 新しい受信者は、送信メッセージの受信者の一覧に追加されます。 アドレス帳プロバイダーは、MAPI のテンプレートの変更を通知するために一時テーブルの通知をサポートする必要があります。 MAPI では、動的更新を有効にするのには開いている一時テーブルを保持します。 
   
@@ -80,5 +80,5 @@ MAPI では、受信者を作成するのには使用可能な 1 回限りのテ
   
 [IMAPISupport::GetOneOffTable](imapisupport-getoneofftable.md)
   
-[IABLogon: IUnknown](iablogoniunknown.md)
+[IABLogon : IUnknown](iablogoniunknown.md)
 

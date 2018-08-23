@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5e6a9f3e-79be-4ffd-9d42-3a14cabb1435
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3095907498b1ce7ae6b3666e0678dd0c5f76c23e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800280"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ・ ストア内のメッセージでは通常、オブジェクトの複合のエントリ id ストア内のオブジェクトのエントリ id とストアのエントリの識別子に ASCII 文字を分離します。 
   
@@ -44,7 +44,7 @@ HrDecomposeMsgID(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _psession_
   
@@ -74,7 +74,7 @@ HrDecomposeMsgID(
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 _SzMsgID_パラメーターで指定された識別子は、複合、ascii 変換し、メッセージ ・ ストア内のオブジェクトのエントリ id とストアのエントリ id を分割します。 単に普通のエントリの識別子の文字列が変換され、コピーされます。 複合識別子文字列が区切られている、通常は[HrComposeMsgID](hrcomposemsgid.md)関数によって作成されます。 
   

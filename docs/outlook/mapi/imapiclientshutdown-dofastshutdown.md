@@ -23,7 +23,7 @@ ms.locfileid: "19800444"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI クライアントのクライアントのプロセスを即座に終了するという意図を示しています。
   
@@ -41,7 +41,7 @@ MAPI_E_NO_SUPPORT
   
 > MAPI サブシステムは、クライアントの高速シャット ダウンをサポートしていません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI クライアントの高速シャット ダウンからのデータの損失を避けるためには、MAPI クライアントが、MAPI サブシステムによって返される S_OK の結果に基づく[IMAPIClientShutdown::NotifyProcessShutdown](imapiclientshutdown-notifyprocessshutdown.md)と**IMAPIClientShutdown::DoFastShutdown**のメソッドを呼び出す必要があります。[IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md)メソッドです。 詳細については、[高速シャット ダウンのベスト ・ プラクティス](best-practices-for-fast-shutdown.md)を参照してください。
   
@@ -49,7 +49,7 @@ MAPI クライアントの高速シャット ダウンからのデータの損�
 
 
 
-[IMAPIClientShutdown: IUnknown](imapiclientshutdowniunknown.md)
+[IMAPIClientShutdown : IUnknown](imapiclientshutdowniunknown.md)
 
 
 [Mapi クライアントのシャット ダウン](client-shutdown-in-mapi.md)

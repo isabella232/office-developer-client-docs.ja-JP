@@ -1,5 +1,5 @@
 ---
-title: 空き/予約済みの API リファレンス
+title: 空き時間情報 API リファレンス
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799321"
 ---
-# <a name="freebusy-api-reference"></a>空き/予約済みの API リファレンス
+# <a name="freebusy-api-reference"></a>空き時間情報 API リファレンス
 
 ここでは、指定の時間範囲内の指定したユーザー アカウントの空き時間情報のステータス情報を提供するメール プロバイダーでは、空き/予約済み API の参照の内容を説明します。
 
@@ -22,6 +22,6 @@ ms.locfileid: "19799321"
     
 - [データ型](data-types-free-busy-api.md)
     
-- [インタ フェース](interfaces-free-busy-api.md)
+- [インターフェイス](interfaces-free-busy-api.md)
     
 

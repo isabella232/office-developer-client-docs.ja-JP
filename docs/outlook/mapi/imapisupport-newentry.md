@@ -23,7 +23,7 @@ ms.locfileid: "19800761"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳コンテナーに直接、または送信メッセージの受信者の一覧には、新しい受信者を追加します。
   
@@ -40,7 +40,7 @@ HRESULT NewEntry(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -80,7 +80,7 @@ S_OK
   
 > 新しいエントリが正しく作成されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 アドレス帳プロバイダーのサポート オブジェクトの**IMAPISupport::NewEntry**メソッドを実装します。 アドレス帳プロバイダーは、新しいアドレス帳エントリは、コンテナーに直接追加する、送信メッセージに対処するために作成する**NewEntry**を呼び出します。 
   
@@ -112,7 +112,7 @@ S_OK
   
 [IMAPISupport::OpenEntry](imapisupport-openentry.md)
   
-[PidTagCreateTemplates の標準的なプロパティ](pidtagcreatetemplates-canonical-property.md)
+[PidTagCreateTemplates 標準プロパティ Property](pidtagcreatetemplates-canonical-property.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 

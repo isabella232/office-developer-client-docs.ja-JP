@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 43da5b59-7691-49aa-b83c-753d43bfd8fd
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: abf33e4167d836aeb88fdefb30ba05840e80ce63
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19800120"
 ---
 # <a name="fpropcontainsprop"></a>FPropContainsProp
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 文字列またはバイナリ配列は、1 つが含まれている他の一般的に、2 つのプロパティ値を比較します。 
   
@@ -39,7 +39,7 @@ BOOL FPropContainsProp(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _lpSPropValueDst_
   
@@ -69,7 +69,7 @@ _ulFuzzyLevel_
         
     - FL_LOOSE: 比較が一致する限り、大文字と小文字を示す必要がありますと小文字を区別し、非スペーシング文字。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 TRUE 
   
@@ -79,7 +79,7 @@ FALSE
   
 > PT_STRING8 または PT_BINARY 型は比較対象のプロパティ値、プロパティ値は、さまざまな種類のまたは_lpSPropValueSrc_の検索文字列が含まれていない_lpSPropValueDst_のプロパティの値で指定しました。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 比較メソッドは、 [SPropValue](spropvalue.md)プロパティの定義で指定されたプロパティの型および_ulFuzzyLevel_パラメーターで指定したあいまいレベル ヒューリスティックによって異なります。 テーブルを生成するための制限を準備するのには、 [FPropCompareProp](fpropcompareprop.md)と**FPropContainsProp**関数を使用できます。 
   

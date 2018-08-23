@@ -1,5 +1,5 @@
 ---
-title: Outlook MAPI のサンプルをダウンロード
+title: Outlook MAPI のサンプルのダウンロード
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799965"
 ---
-# <a name="downloading-the-outlook-mapi-samples"></a>Outlook MAPI のサンプルをダウンロード
+# <a name="downloading-the-outlook-mapi-samples"></a>Outlook MAPI のサンプルのダウンロード
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Microsoft Outlook MAPI サンプルには、アドレス帳プロバイダー、メッセージ ストア プロバイダー、およびトランスポート プロバイダーが含まれます。
   
@@ -39,9 +39,9 @@ Microsoft Outlook MAPI サンプルには、アドレス帳プロバイダー、
 
 
 
-[アドレス帳プロバイダーのサンプル](address-book-provider-sample.md)
+[アドレス帳プロバイダー サンプル](address-book-provider-sample.md)
   
-[メッセージ ストア プロバイダーのサンプル](message-store-provider-sample.md)
+[メッセージ ストア プロバイダー サンプル](message-store-provider-sample.md)
   
-[トランスポート プロバイダーのサンプル](transport-provider-sample.md)
+[トランスポート プロバイダー サンプル](transport-provider-sample.md)
 

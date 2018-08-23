@@ -23,7 +23,7 @@ ms.locfileid: "19800514"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム ビューアーのステータスに変更が発生したことを示します。 
   
@@ -33,7 +33,7 @@ HRESULT OnChange(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulDir_
   
@@ -73,7 +73,7 @@ S_OK
   
 > 通知が正常に完了しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム ビューアーは、ビューアーのステータスの変更のフォームを通知するために**IMAPIFormAdviseSink::OnChange**メソッドを呼び出します。 通常、唯一の変更は設定か、ビューアー内の次または前のメッセージの有無に基づいて、VCSTATUS_NEXT または VCSTATUS_PREVIOUS フラグをオフにします。 したがって、フォーム オブジェクトは、有効または、サポートする前または次のアクションを無効にします。 
   
@@ -89,5 +89,5 @@ VCSTATUS_MODAL と VCSTATUS_INTERACTIVE の設定は、それが作成された�
 
 [IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md)
   
-[IMAPIFormAdviseSink: IUnknown](imapiformadvisesinkiunknown.md)
+[IMAPIFormAdviseSink : IUnknown](imapiformadvisesinkiunknown.md)
 

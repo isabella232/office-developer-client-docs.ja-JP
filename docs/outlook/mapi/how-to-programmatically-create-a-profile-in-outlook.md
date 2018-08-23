@@ -320,6 +320,6 @@ Cleanup:
   
 ## <a name="see-also"></a>�֘A����
 
-- [MFCMAPI を使用して Outlook プロファイルを作成します。](https://msdn.microsoft.com/en-us/library/office/mt723322.aspx)
+- [MFCMAPI を使用して Outlook プロファイルを作成する](https://msdn.microsoft.com/en-us/library/office/mt723322.aspx)
   
 

@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9e055269-f3bf-4b64-8384-3cbc372c0b34
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2af9d529cb92e1040427eba69270908dcf4a5d9f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19799934"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ディレクトリのエントリ id のプロパティについて説明します。
   
@@ -40,7 +40,7 @@ typedef struct _dir_entryid
 #pragma pack()
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **abFlags**
   
@@ -68,7 +68,7 @@ typedef struct _dir_entryid
   
 > ログオン オブジェクトを識別する GUID です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **DIR_ENTRYID**と[CONTAB_ENTRYID](contab_entryid.md)の構造体では、 **ulType**メンバーを除くと同じです。 **UlType**メンバーの内容は、どの構造体は、残りのフィールドの適切なを確認します。 
   

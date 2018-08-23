@@ -1,5 +1,5 @@
 ---
-title: MFCMAPI を使用して Outlook プロファイルを作成します。
+title: MFCMAPI を使用して Outlook プロファイルを作成する
 ms.date: 05/18/2016
 ms.audience: Developer
 localization_priority: Normal
@@ -12,7 +12,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800225"
 ---
-# <a name="create-an-outlook-profile-using-mfcmapi"></a>MFCMAPI を使用して Outlook プロファイルを作成します。
+# <a name="create-an-outlook-profile-using-mfcmapi"></a>MFCMAPI を使用して Outlook プロファイルを作成する
 
 MFCMAPI では、Exchange と Outlook の問題の調査を容易にして、MAPI の開発のためのサポートを開発者に提供するのには、MAPI ストアへのアクセスを提供します。
 
@@ -104,6 +104,6 @@ MFCMAPI では、Exchange と Outlook の問題の調査を容易にして、MAP
 ## <a name="see-also"></a>関連項目
 
 - [Outlook MAPI リファレンス](https://msdn.microsoft.com/en-us/library/office/cc765775.aspx)  
-- [プログラムで Outlook のプロファイルを作成します。](https://msdn.microsoft.com/en-us/library/office/mt707568.aspx)
+- [Outlook でプログラムによりプロファイルを作成する](https://msdn.microsoft.com/en-us/library/office/mt707568.aspx)
     
 

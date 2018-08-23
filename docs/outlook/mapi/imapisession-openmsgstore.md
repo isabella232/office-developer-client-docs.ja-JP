@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7f73b5cf-7093-42e9-8acc-63d73df77cf5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 983c22772acfea7837e85d409b7928a35aed91ce
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19800699"
 ---
 # <a name="imapisessionopenmsgstore"></a>IMAPISession::OpenMsgStore
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ストアを開き、さらにアクセスするための[IMsgStore](imsgstoreimapiprop.md)ポインターを返します。 
   
@@ -36,7 +36,7 @@ HRESULT OpenMsgStore(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _ulUIParam_
   
@@ -102,7 +102,7 @@ MAPI_W_ERRORS_RETURNED
   
 > 呼び出しが成功したが、メッセージ ストア プロバイダーが使用可能なエラー情報を持ちます。 この警告が返されると、呼び出しを成功として処理する必要があります。 プロバイダーからエラー情報を取得するには、 [IMAPISession::GetLastError](imapisession-getlasterror.md)メソッドを呼び出します。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPISession::OpenMsgStore**メソッドは、特定のメッセージ ストアを開きます。 
   
@@ -158,5 +158,5 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 - [IMAPIProp::OpenProperty](imapiprop-openproperty.md)
 - [IMAPISession: IUnknown](imapisessioniunknown.md)
 - [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
-- [エラー処理のためのマクロを使用してください。](using-macros-for-error-handling.md)
+- [エラー処理のためのマクロの使用](using-macros-for-error-handling.md)
 

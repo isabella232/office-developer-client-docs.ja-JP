@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c1b746e6-c9df-4e92-a8b8-7a00b2de53e7
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6673a38a478c080a880dcf70c8528ef93a1b4886
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799758"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [SMAPIVerb](smapiverb.md)構造体の指定された数を含んでいる既存の[SMAPIVerbArray](smapiverbarray.md)構造体のバイト数を計算します。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19799758"
 int CbMAPIVerbArray (_c)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  __c_
   

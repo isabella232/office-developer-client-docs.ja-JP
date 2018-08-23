@@ -1,5 +1,5 @@
 ---
-title: 小さなテーブルのスプーラーを呼び出す
+title: 小さいテーブルに対する QueryRows の呼び出し
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799744"
 ---
-# <a name="calling-queryrows-for-small-tables"></a>小さなテーブルのスプーラーを呼び出す
+# <a name="calling-queryrows-for-small-tables"></a>小さいテーブルに対する QueryRows の呼び出し
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 小さなテーブルから行を検索する場合は、最初に制約を作成する代わりに[IMAPITable::QueryRows](imapitable-queryrows.md)を呼び出します。 制限、パフォーマンスに与える影響を作成するは、プロバイダーがテーブルをまず作成する必要がありますので、元のテーブルに一致する行を検索し、新しいテーブルに行をコピーします。 テーブル内の行の合計数が 100 未満の場合は、すべての行を読み取るし、該当する行を見つけるには、 [IMAPITable::FindRow](imapitable-findrow.md)を呼び出すにはより効果的な可能性があります。 これは、この情報が常時必要な場合に特に効果的な戦略です。 
   

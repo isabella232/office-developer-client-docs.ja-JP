@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: da67dcf4-1411-4fc9-992c-115485019bd3
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b7d4d758f7031c55aa3a23b662ec8727ea1e0719
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19799624"
 ---
 # <a name="accelerateabsdi"></a>ACCELERATEABSDI
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 モードレスのアドレス帳のダイアログ ボックスのアクセラレータ キーを処理するコールバック関数を定義します。 
   
@@ -38,7 +38,7 @@ BOOL (STDMETHODCALLTYPE ACCELERATEABSDI)(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -48,11 +48,11 @@ BOOL (STDMETHODCALLTYPE ACCELERATEABSDI)(
   
 > [in]Windows メッセージへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 **ACCELERATEABSDI**のプロトタイプを持つ関数は、メッセージを処理する場合に TRUE を返します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **ACCELERATEABSDI**のプロトタイプでは関数は、クライアント アプリケーションが、 _ulFlags_ 、 [ADRPARM](adrparm.md)構造体のメンバーで、DIALOG_SDI フラグを設定する場合にのみは、モードレス ダイアログ ボックスでのみ使用します。 
   

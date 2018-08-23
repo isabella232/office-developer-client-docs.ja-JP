@@ -15,7 +15,7 @@ ms.locfileid: "19800241"
 ---
 # <a name="obtain-a-contact-message-given-a-contacts-address-book-entry"></a>連絡先の連絡先アドレス帳のエントリを指定したメッセージを取得します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックには、C++ では、例が含まれている`HrOpenContact`、関連付けられている連絡先の MAPI メッセージを取得するのには、連絡先のアドレス帳のエントリを識別する[CONTAB_ENTRYID](contab_entryid.md)構造体を使用する方法を示します。 
   

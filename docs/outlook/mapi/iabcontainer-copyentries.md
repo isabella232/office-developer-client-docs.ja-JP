@@ -23,7 +23,7 @@ ms.locfileid: "19800327"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 1 つまたは複数のエントリ、メッセージを通常のユーザーまたは配布リストにコピーします。
   
@@ -36,7 +36,7 @@ HRESULT CopyEntries(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpEntries_
   
@@ -80,7 +80,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > コピー操作は完了しましたが、1 つまたは複数のエントリをコピーできませんでした。 この値が返されると、呼び出しを成功として処理する必要があります。 この値をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IABContainer::CopyEntries**メソッドは、同じコンテナーまたは別のコンテナーからエントリをコピーします。 **CopyEntries**への呼び出しは、コピーするには、各エントリの次の呼び出しと同等の機能です。 
   
@@ -120,9 +120,9 @@ CREATE_REPLACE; をサポートする必要はありません。CREATE_REPLACE �
   
 [IABContainer::CreateEntry](iabcontainer-createentry.md)
   
-[IMAPIProgress: IUnknown](imapiprogressiunknown.md)
+[IMAPIProgress : IUnknown](imapiprogressiunknown.md)
   
 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)
   
-[これにより: IMAPIContainer](iabcontainerimapicontainer.md)
+[IABContainer : IMAPIContainer](iabcontainerimapicontainer.md)
 

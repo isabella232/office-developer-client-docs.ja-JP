@@ -23,7 +23,7 @@ ms.locfileid: "19800718"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI が実装している状態のオブジェクトでこのメソッドがサポートされていないサービス ・ プロバイダーの構成を変更するユーザーを有効にするプロパティ シートを表示します。
   
@@ -34,7 +34,7 @@ HRESULT SettingsDialog(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -58,7 +58,7 @@ MAPI_E_NO_SUPPORT
   
 > 状態オブジェクトは、このメソッドをサポートしていません**PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) のプロパティに STATUS_SETTINGS_DIALOG フラグがない場合で示される。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIStatus::SettingsDialog**メソッドでは、[設定] プロパティ シートが表示されます。 すべてのサービス プロバイダーは、 **SettingsDialog**メソッドをサポートする必要がありますが、必須ではありません。 サービス プロバイダーでは、独自のプロパティ シートを実装したり、サポート オブジェクトの[IMAPISupport::DoConfigPropsheet](imapisupport-doconfigpropsheet.md)メソッドで指定された実装を使用することができます。 **DoConfigPropsheet**は、読み取り/書き込みプロパティ シートを作成します。 
   
@@ -100,7 +100,7 @@ MAPI_E_NO_SUPPORT
 
 [IMAPISupport::DoConfigPropsheet](imapisupport-doconfigpropsheet.md)
   
-[PidTagResourceMethods の標準的なプロパティ](pidtagresourcemethods-canonical-property.md)
+[PidTagResourceMethods 標準プロパティ](pidtagresourcemethods-canonical-property.md)
   
-[IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)
+[IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
 

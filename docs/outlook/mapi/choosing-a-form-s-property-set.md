@@ -17,7 +17,7 @@ ms.locfileid: "19799796"
 ---
 # <a name="choosing-a-forms-property-set"></a>フォームのプロパティ セットを選択します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム サーバーを実装する場合は、個々 のメッセージ クラスに必要な情報のプロパティを持つ必要があります。 これらのプロパティは、MAPI のプロパティ、定義済みまたはカスタム プロパティを定義することができます。 プロパティの使用についての詳細については、 [MAPI プロパティの概要](mapi-property-overview.md)を参照してください。
   
@@ -38,5 +38,5 @@ MAPI には、ほとんどのアプリケーションで十分に定義済みの
   
 ## <a name="see-also"></a>関連項目
 
-- [MAPI フォームのサーバーの開発](developing-mapi-form-servers.md)
+- [MAPI フォーム サーバーの開発](developing-mapi-form-servers.md)
 

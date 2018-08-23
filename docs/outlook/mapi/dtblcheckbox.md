@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0dd12990-5431-4768-9d64-27d4ef6b7b20
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c6726b852176fa31bf879b5a32b63c35ce2be514
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799964"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ダイアログ ボックスが表示テーブルの構築に使用するチェック ボックスに関する情報が含まれています。 
   
@@ -42,7 +42,7 @@ typedef struct _DTBLCHECKBOX
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulbLpszLabel**
   
@@ -60,7 +60,7 @@ MAPI_UNICODE
   
 > 型 PT_BOOLEAN のプロパティのプロパティ タグです。 このプロパティの値は、チェック ボックスの状態の影響を受けます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **DTBLCHECKBOX**構造体が 2 つの状態を反映するコントロールのチェック ボックスを示します: (チェック ボックス) を有効になっているか、(空のボックス) を無効にします。 
   
@@ -78,7 +78,7 @@ MAPI_UNICODE
 
 [DTCTL](dtctl.md)
   
-[PidTagControlType の標準的なプロパティ](pidtagcontroltype-canonical-property.md)
+[PidTagControlType 標準プロパティ](pidtagcontroltype-canonical-property.md)
 
 
 [MAPI の構造](mapi-structures.md)

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 0846415b-6fe1-4504-8620-108af6719015
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b821394f32a938f4878ee93e685aafbeb0786597
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799763"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロパティ ページのデータが 1 つまたは複数の[DTPAGE](dtpage.md)構造体に含まれているから、表示された表を作成します。 
   
@@ -48,7 +48,7 @@ STDAPI BuildDisplayTable(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpAllocateBuffer_
   
@@ -94,11 +94,11 @@ MAPI_UNICODE
   
 > [で [チェック アウト]_LppTable_パラメーターで返されるテーブルの[ITableData](itabledataiunknown.md)インターフェイスを公開するテーブルのデータ オブジェクトへのポインターへのポインター。 テーブルのデータ オブジェクトが必要ない場合、ポインターの値ではなく、 _lppTblData_を NULL に設定する必要があります。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 なし
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MAPI が to で指された_lpAllocateBuffer_、 _lpAllocateMore_、および多くのメモリの割り当てと解放のための_lpFreeBuffer_具体的にはオブジェクトのインターフェイスを呼び出すときにクライアント アプリケーションで使用するメモリの割り当て関数を使用してください。[IMAPIProp::GetProps](imapiprop-getprops.md) 、 [IMAPITable::QueryRows](imapitable-queryrows.md)などです。 
   

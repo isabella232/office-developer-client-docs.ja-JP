@@ -19,7 +19,7 @@ ms.locfileid: "19798562"
 " **ExitForEachRecord/レコードごとに終了** " アクションを使用して、 **[ForEachRecord](foreachrecord-data-block-access-custom-web-app.md)** データ ブロックを即座に終了できます。 
   
 > [!IMPORTANT]
-> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 > [!NOTE]
 > [!メモ] " **ExitForEachRecord/レコードごとに終了** " アクションは、データ マクロでのみ使用できます。 

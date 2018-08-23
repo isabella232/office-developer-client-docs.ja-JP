@@ -1,11 +1,11 @@
 ---
-title: フォルダー フィールドの構造体をストリーム配信します。
+title: フォルダー フィールド ストリームの構造
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: edbc9e6c-008c-4c13-9a0c-cb47ac0f3686
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d6724914896fe7c40e9a456785aa5c92b84532fe
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -13,9 +13,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800081"
 ---
-# <a name="folder-fields-stream-structures"></a>フォルダー フィールドの構造体をストリーム配信します。
+# <a name="folder-fields-stream-structures"></a>フォルダー フィールド ストリームの構造
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージの[PidTagUserFields](pidtaguserfields-canonical-property.md)プロパティには、バイナリ ストリーム、フォルダーのユーザー定義フィールドの定義が含まれている、FolderUserFields が含まれています。 このトピックでは、フォルダーのユーザー定義フィールドの定義についてはストリームの構造体について説明します。 
 
@@ -97,12 +97,12 @@ FolderFieldDefinitionW ストリームの構造体には、Unicode で格納さ�
 |名前|値|意味|
 |:-----|:-----|:-----|
 |ftNull  <br/> |0x0  <br/> |フィールド定義の配列を null で終了するのには、この種類のフィールドが使用されます。  <br/> |
-|ftString  <br/> |0x1  <br/> |テキスト型 (Text)  <br/> |
-|ftInteger  <br/> |0x3  <br/> |整数型 (Integer)  <br/> |
+|ftString  <br/> |0x1  <br/> |テキスト  <br/> |
+|ftInteger  <br/> |0x3  <br/> |整数  <br/> |
 |ftTime  <br/> |0x5  <br/> |日付/時刻型  <br/> |
 |ftBoolean  <br/> |0x6  <br/> |はい/いいえ  <br/> |
-|ftDuration  <br/> |0x7  <br/> |期間  <br/> |
-|ftMultiString  <br/> |0 xb  <br/> |キーワード  <br/> |
+|ftDuration  <br/> |0x7  <br/> |Duration  <br/> |
+|ftMultiString  <br/> |0 xb  <br/> |Keywords  <br/> |
 |ftFloat  <br/> |0xC  <br/> |数値または割合  <br/> |
 |ftCurrency  <br/> |0xE  <br/> |通貨型 (Currency)  <br/> |
 |ftCalc  <br/> |0x12  <br/> |式  <br/> |
@@ -171,5 +171,5 @@ FolderFieldDefinitionCommon ストリームの構造体には、FolderFieldDefin
 ## <a name="see-also"></a>関連項目
 
 - [FolderUserFields ストリームのサンプル](folderuserfields-stream-sample.md)
-- [新しいユーザー定義フィールドの定義を追加します。](how-to-add-a-definition-for-a-new-user-defined-field.md)
+- [新しいユーザー定義フィールドの定義を追加する](how-to-add-a-definition-for-a-new-user-defined-field.md)
 

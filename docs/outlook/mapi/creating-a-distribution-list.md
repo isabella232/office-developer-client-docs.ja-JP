@@ -17,7 +17,7 @@ ms.locfileid: "19799852"
 ---
 # <a name="creating-a-distribution-list"></a>配布リストを作成します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアントは、個人用アドレス帳 (PAB) などの変更可能なコンテナーに直接配布リストを作成することができます。
   

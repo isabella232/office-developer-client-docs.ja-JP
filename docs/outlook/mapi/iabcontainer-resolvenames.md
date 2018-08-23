@@ -23,7 +23,7 @@ ms.locfileid: "19800341"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 1 つまたは複数の受信者のエントリの名前解決を実行します。
   
@@ -92,7 +92,7 @@ MAPI_E_NO_SUPPORT
   
 > アドレス帳プロバイダーは、このメソッドを使用して一括名前解決をサポートしていません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **ResolveNames**メソッドは、このアドレス帳コンテナー内の受信者に、 _lpAdrList_パラメーター内のエントリの配列からの未解決の受信者に一致しようとします。 未解決の受信者には、通常、 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティのみと可能性のあるいくつかの他のプロパティがあります。 未解決の受信者にプロパティがない、 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) と MAPI_UNRESOLVED に、 _lpFlagList_パラメーターに対応する、フラグを設定します。 逆に、解決済みの受信者は常に少なくとも**PR_ENTRYID**プロパティと**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))、 **PR_DISPLAY_NAME**、 **PR_ADDRTYPE** ([などの他のいくつかのプロパティPidTagAddressType](pidtagaddresstype-canonical-property.md))。
   
@@ -150,9 +150,9 @@ _LpPropTagArray_パラメーターのプロパティの一部が表示されま�
   
 [IMessage::ModifyRecipients](imessage-modifyrecipients.md)
   
-[PidTagAnr の標準的なプロパティ](pidtaganr-canonical-property.md)
+[PidTagAnr 標準プロパティ](pidtaganr-canonical-property.md)
   
 [SPropertyRestriction](spropertyrestriction.md)
   
-[これにより: IMAPIContainer](iabcontainerimapicontainer.md)
+[IABContainer : IMAPIContainer](iabcontainerimapicontainer.md)
 

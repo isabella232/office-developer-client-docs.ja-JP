@@ -23,7 +23,7 @@ ms.locfileid: "19800841"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 小数部の値に基づいて、カーソルの現在のテーブルの行位置を取得します。
   
@@ -35,7 +35,7 @@ ULONG FAR * lpulDenominator
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulRow_
   
@@ -55,7 +55,7 @@ S_OK
   
 > メソッドでは、 _lpulRow_、 _lpulNumerator_、 _lpulDenominator_で有効な値が返されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::QueryPosition**メソッドは、現在の行位置を指定し、現在の行とテーブルの末尾には、相対的な位置を示す小数部の値の番号の両方を返します。 MAPI は、読み取られる次の行として、現在の行を定義します。 
   
@@ -79,5 +79,5 @@ _LpulDenominator_パラメーターのテーブルの行の正確な数を取得
 
 [IMAPITable::SeekRowApprox](imapitable-seekrowapprox.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

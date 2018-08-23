@@ -1,5 +1,5 @@
 ---
-title: メッセージを削除します。
+title: メッセージの削除
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799895"
 ---
-# <a name="deleting-a-message"></a>メッセージを削除します。
+# <a name="deleting-a-message"></a>メッセージの削除
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアントが閉じていると、ユーザーがコンテンツのテーブルを表示するときに開いているし、ユーザーが読み取りまたはメッセージを削除できます。 メッセージを誤って削除してからユーザーを保護するためには、MAPI は、2 段階の処理としてメッセージの削除を定義します。
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 47e6c576-bd99-4410-8e41-7dd3159b23b7
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 64d205ee7f51c0ce6a6eb1e982659c6cda675f8e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800057"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 バイナリ データを 16 進数の文字列形式に変換します。 
   
@@ -40,7 +40,7 @@ BOOL FBinFromHex(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _sz_
   
@@ -50,7 +50,7 @@ BOOL FBinFromHex(
   
 > [out]返される 2 進数へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 TRUE 
   

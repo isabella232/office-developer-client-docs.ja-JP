@@ -31,7 +31,7 @@ typedef struct RenTimeZone {
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 _lBias_
   
@@ -53,7 +53,7 @@ _stDaylightDate_
   
 > 夏時間への切り替えにかかる時間です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この構造体は、 **TIME_ZONE_INFORMATION**に似ています。 これは、定期的なミーティングのタイム ゾーン情報を保存するのにはレガシ クライアントで使用する構造体です。
   

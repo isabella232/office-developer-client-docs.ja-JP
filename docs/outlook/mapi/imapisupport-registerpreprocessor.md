@@ -23,7 +23,7 @@ ms.locfileid: "19800789"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 トランスポート プロバイダーのプリプロセッサ関数 ( [PreprocessMessage](preprocessmessage.md)プロトタイプに準拠する関数) を登録します。 
   
@@ -38,7 +38,7 @@ ULONG ulFlags
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpMuid_
   
@@ -70,7 +70,7 @@ S_OK
   
 > プリプロセッサ関数が正常に登録されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 だけに、トランスポート プロバイダーのサポート オブジェクトの**IMAPISupport::RegisterPreprocessor**メソッドを実装します。 トランスポート プロバイダーは、プリプロセッサ関数 ( [PreprocessMessage](preprocessmessage.md)プロトタイプに準拠する関数) を登録するのには**RegisterPreprocessor**を呼び出します。 MAPI スプーラーを呼び出すことができますには、プリプロセッサ関数を登録する必要があります。 
   

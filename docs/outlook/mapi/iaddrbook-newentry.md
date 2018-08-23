@@ -23,7 +23,7 @@ ms.locfileid: "19800397"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳コンテナー、または送信メッセージの受信者の一覧には、新しい受信者を追加します。
   
@@ -40,7 +40,7 @@ HRESULT NewEntry(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -84,7 +84,7 @@ S_OK
   
 > 新しいアドレス帳のエントリが正しく作成されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **NewEntry**メソッドは、新しいアドレス帳のエントリ、または送信するメッセージに対処するために使用するコンテナーに直接追加するを作成します。 
   
@@ -112,11 +112,11 @@ S_OK
 
 
 
-[アドレス帳コンテナー](iaddrbook-openentry.md)
+[IAddrBook::OpenEntry](iaddrbook-openentry.md)
   
 [IMAPIProp::OpenProperty](imapiprop-openproperty.md)
   
-[PidTagCreateTemplates の標準的なプロパティ](pidtagcreatetemplates-canonical-property.md)
+[PidTagCreateTemplates 標準プロパティ Property](pidtagcreatetemplates-canonical-property.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

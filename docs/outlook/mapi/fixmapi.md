@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 32676003-ba32-886f-1185-4760cb0e30e3
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3c064301a18a8adbfb6109170ed16cb6981d96c2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19800058"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 によってバックアップ コピーが mapi32.dll のコピーの現在のクライアント コンピューター、および MAPI スタブ ライブラリのリストア mapi32.dll mapistub.dll。
   
@@ -41,7 +41,7 @@ DWORD STDAPICALLTYPE FixMAPI(void);
   
 関数が失敗した場合は 0 を返します。 拡張エラー情報を取得するには、Microsoft Windows ソフトウェア開発キット (SDK) 関数、 **[GetLastError](http://msdn.microsoft.com/en-us/library/ms679360.aspx)** を呼び出します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
  **FixMAPI**では、ファイルが読み取り専用としてマークされている場合、現在の mapi32.dll ファイルは置換されません。 
   

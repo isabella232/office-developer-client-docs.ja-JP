@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 0027fd5a-f30a-4025-b670-c21869b3a480
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 146c8b4d711982118fd9da185a5b095a1bae6b2a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19800113"
 ---
 # <a name="forwarding-a-message"></a>メッセージを転送
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 元のメッセージを送信すると同じタスクの多くは、メッセージを転送します。 まず、既定のメッセージ ストアと、送信トレイでは通常、送信されるメッセージを保持するために指定されているフォルダーを開くしを転送するメッセージを作成するのには、このフォルダーの[IMAPIFolder::CreateMessage](imapifolder-createmessage.md)メソッドを呼び出す必要があります。 受信トレイでは通常、元のメッセージを保持しているフォルダーを開く必要があります。 別のフォルダーを開く方法については、[メッセージ ストアのフォルダーを開く](opening-a-message-store-folder.md)を参照してください。
   
@@ -72,5 +72,5 @@ ms.locfileid: "19800113"
     
 ## <a name="see-also"></a>関連項目
 
-- [PidTagMessageAttachments の標準的なプロパティ](pidtagmessageattachments-canonical-property.md)
+- [PidTagMessageAttachments 標準プロパティ](pidtagmessageattachments-canonical-property.md)
 

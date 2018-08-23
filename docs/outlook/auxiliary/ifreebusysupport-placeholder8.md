@@ -33,7 +33,7 @@ BOOL
 
 常に E_NOTIMP をこのメンバーのプレース ホルダーは、サポート。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このメンバーは、E_NOTIMPL を返す必要があります。
   

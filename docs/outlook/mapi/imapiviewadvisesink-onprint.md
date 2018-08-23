@@ -23,7 +23,7 @@ ms.locfileid: "19800858"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム ビューアーのフォームの印刷の状態を通知します。
   
@@ -34,7 +34,7 @@ HRESULT hrStatus
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _dwPageNumber_
   
@@ -66,7 +66,7 @@ MAPI_E_USER_CANCEL
   
 > ユーザー操作がキャンセルされました、通常ダイアログ ボックスで [キャンセル] ボタンをクリックするとします。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム オブジェクトは、ビューアーの印刷の進行状況を通知するために印刷中に**IMAPIViewAdviseSink::OnPrint**メソッドを呼び出します。 
   
@@ -80,5 +80,5 @@ MAPI_E_USER_CANCEL
 
 
 
-[IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)
+[IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md)
 

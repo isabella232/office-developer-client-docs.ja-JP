@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8cbd1a42-7de6-43e0-8c77-7711773843d5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 4fdd50a1108a6546445516664b01fb0f994fbfdb
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800574"
 ---
-# <a name="imapiformmgr--iunknown"></a>IMAPIFormMgr: IUnknown
+# <a name="imapiformmgr--iunknown"></a>IMAPIFormMgr : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームの閲覧者に関する情報を取得し、フォームのサーバーをアクティブ化を有効にします。 
   

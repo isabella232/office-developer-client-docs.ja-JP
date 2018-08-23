@@ -23,7 +23,7 @@ ms.locfileid: "19800522"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 開いているフォームのサーバーは、メモリ内に保持します。
   
@@ -62,5 +62,5 @@ S_OK
 
 
 
-[IMAPIFormFactory: IUnknown](imapiformfactoryiunknown.md)
+[IMAPIFormFactory : IUnknown](imapiformfactoryiunknown.md)
 

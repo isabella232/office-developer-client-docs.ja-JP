@@ -1,5 +1,5 @@
 ---
-title: ストアの通知に基づくインデックスの作成について
+title: 通知ベースのストア インデックス作成について
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799601"
 ---
-# <a name="about-notification-based-store-indexing"></a>ストアの通知に基づくインデックスの作成について
+# <a name="about-notification-based-store-indexing"></a>通知ベースのストア インデックス作成について
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI ストア プロバイダーは、ストアでの MAPI プロトコル ハンドラーのクロールとインデックスのメッセージかどうか、またはかどうか、ストアに通知を送信、インデクサー インデックスを作成するメッセージがある場合に指定できます。 後者し、呼ばれ通知ベースのインデックス作成、通知ベースのインデックス作成をサポートしているストアは、プッシュ型ストアとして、知られています。
   

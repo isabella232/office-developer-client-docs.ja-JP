@@ -44,9 +44,9 @@ InfoPath オブジェクト モデルのメンバーにオプションのパラ�
   
 ## <a name="see-also"></a>関連項目
 
-- [コードを含むフォーム テンプレートのセキュリティ モデルについて](about-the-security-model-for-form-templates-with-code.md)
-- [コードを含む InfoPath フォーム テンプレートを展開します。](how-to-deploy-infopath-form-templates-with-code.md)
-- [InfoPath 2003 オブジェクト モデルを使用してエラーを処理します。](how-to-handle-errors-using-the-infopath-2003-object-model.md)
-- [プレビューし、完全な信頼を必要とするフォーム テンプレートのデバッグ](how-to-preview-and-debug-form-templates-that-require-full-trust.md)
-- [InfoPath 2003 オブジェクト モデルを使用して InfoPath プロジェクトをデバッグします。](how-to-debug-infopath-projects-using-the-infopath-2003-object-model.md)
+- [コードを含むフォーム テンプレートのためのセキュリティ モデルについて](about-the-security-model-for-form-templates-with-code.md)
+- [コードを含む InfoPath フォーム テンプレートを展開する](how-to-deploy-infopath-form-templates-with-code.md)
+- [InfoPath 2003 オブジェクト モデルを使用してエラーを処理する](how-to-handle-errors-using-the-infopath-2003-object-model.md)
+- [完全信頼が必要なフォーム テンプレートをプレビューおよびデバッグする](how-to-preview-and-debug-form-templates-that-require-full-trust.md)
+- [InfoPath 2003 オブジェクト モデルを使用して InfoPath プロジェクトをデバッグする](how-to-debug-infopath-projects-using-the-infopath-2003-object-model.md)
 

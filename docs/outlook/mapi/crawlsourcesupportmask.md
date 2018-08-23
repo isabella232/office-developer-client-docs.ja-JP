@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d0a2f7ea-df6a-89e8-18c2-ac92e0a20edc
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a1754a7c82d7164617c97df97b762efb1555ccda
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799850"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Microsoft Office Outlook では、ナビゲーション ウィンドウに表示する起動時に、連絡先、カレンダー、およびタスクのフォルダーを含むストア内のフォルダーをスキャンするかどうかを指定します。
   
@@ -37,7 +37,7 @@ Microsoft Office Outlook では、ナビゲーション ウィンドウに表示
 |プロパティの種類:  <br/> |PT_LONG  <br/> |
 |アクセスの種類:  <br/> |読み取り専用または読み取り/書き込みによってストア プロバイダー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 ストア機能を提供するストア プロバイダーを実装する必要があります[IMAPIProp: IUnknown](imapipropiunknown.md) 、 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)の呼び出しに渡されたこれらのプロパティのいずれかのプロパティの有効なタグを返すとします。 これらのプロパティのいずれかのプロパティ タグが[IMAPIProp::GetProps](imapiprop-getprops.md)に渡されると、ストア プロバイダーを使用、正しいプロパティ値を返す必要があります。 ストア プロバイダーには、取得、またはこれらのプロパティを設定するには、 [HrGetOneProp](hrgetoneprop.md)と[HrSetOneProp](hrsetoneprop.md)を呼び出すことができます。 
   

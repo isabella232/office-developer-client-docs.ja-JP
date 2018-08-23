@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0170dc9d-dc72-48e2-a522-374f199b18ea
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 362afb1efeddeae72cc19256c377cb2c0f7ecba0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800540"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームを使用する動詞の完全なセットへのポインターを返します。
   
@@ -58,7 +58,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > か、MAPI_UNICODE フラグが設定された実装は Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、実装は、Unicode だけをサポートしています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアント アプリケーションは、フォームで使用されている動詞のセットへのポインターを取得する**IMAPIFormInfo::CalcVerbSet**メソッドを呼び出します。 _PpMAPIVerbArray_パラメーターに返される**SMAPIVerbArray**構造で、動詞がインデックス番号の順に返されます。**lVerb**メンバーでは、各動詞のインデックスが検索されます。 クライアント アプリケーションでは、動的にメニューを作成、非表示にするまたはボタンを表示すると、動詞の配列を使用できます。 
   
@@ -76,7 +76,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [SMAPIVerbArray](smapiverbarray.md)
   
-[IMAPIFormInfo: IMAPIProp](imapiforminfoimapiprop.md)
+[IMAPIFormInfo : IMAPIProp](imapiforminfoimapiprop.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

@@ -23,7 +23,7 @@ ms.locfileid: "19800859"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム ビューアーの現在のメッセージが MAPI スプーラーに送信されたことを通知します。
   
@@ -31,7 +31,7 @@ ms.locfileid: "19800859"
 HRESULT OnSubmitted( void );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 なし
   
@@ -41,7 +41,7 @@ S_OK
   
 > 通知が成功しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム オブジェクトは、 [IMAPIMessageSite::SubmitMessage](imapimessagesite-submitmessage.md)への呼び出しが正常に返された後に、 **IMAPIViewAdviseSink::OnSubmitted**メソッドを呼び出します。 
   
@@ -57,5 +57,5 @@ S_OK
 
 [IMAPIMessageSite::SubmitMessage](imapimessagesite-submitmessage.md)
   
-[IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)
+[IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md)
 

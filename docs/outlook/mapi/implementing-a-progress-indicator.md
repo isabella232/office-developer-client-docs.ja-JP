@@ -1,5 +1,5 @@
 ---
-title: 進行状況のインジケーターを実装します。
+title: 進行状況インジケーターの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800915"
 ---
-# <a name="implementing-a-progress-indicator"></a>進行状況のインジケーターを実装します。
+# <a name="implementing-a-progress-indicator"></a>進行状況インジケーターの実装
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 多くのクライアントによって開始された操作により、かなりの時間がかかります。 進行中のオブジェクトへのポインターは、これらの可能性のある時間のかかる操作への入力パラメーターの 1 つ-を実装するオブジェクトの[IMAPIProgress: IUnknown](imapiprogressiunknown.md)インタ フェースです。 進行状況オブジェクトでは、進行状況インジケーターの表示と外観を制御してと MAPI クライアントによって実装されます。 進行中のオブジェクトを実装するかどうかを選択することができます。 MAPI 実装は、実装を提供するように選択する場合に使用するサービス プロバイダーを使用できます。 
   

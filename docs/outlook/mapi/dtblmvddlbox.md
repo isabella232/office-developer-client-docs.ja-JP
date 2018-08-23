@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0e6283dc-9a08-460f-9400-03f0ceb4081c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ede0a448a32565446e614fc2d14f2a72a9549dad
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799990"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ディスプレイ テーブルから組み込まれているダイアログ ボックスで使用するボックスの一覧について説明します。
   
@@ -40,7 +40,7 @@ typedef struct _DTBLMVDDLBX
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulFlags**
   
@@ -50,7 +50,7 @@ typedef struct _DTBLMVDDLBX
   
 > PT_MV_TSTRING の種類の複数値を持つプロパティのプロパティ タグです。 このプロパティの値は、ドロップ ダウン リストの個別のエントリとして表示されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **DTBLMVDDLBOX**構造体では、複数値を持つドロップ ダウン リスト項目の読み取り専用の一覧について説明します。 複数値を持つドロップ ダウン リストを使用すると、ユーザーがスクロール バーをクリックすると値が表示されます。 
   

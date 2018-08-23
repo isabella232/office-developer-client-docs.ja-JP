@@ -30,7 +30,7 @@ HRESULT Next(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _celt_
   

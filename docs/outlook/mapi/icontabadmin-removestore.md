@@ -23,7 +23,7 @@ ms.locfileid: "19800404"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 連絡先アドレス帳 (CAB) のアドレス帳の階層から指定されたエントリ ID で指定されたを削除します。
   
@@ -34,7 +34,7 @@ LPENTRYID lpEntryID
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   

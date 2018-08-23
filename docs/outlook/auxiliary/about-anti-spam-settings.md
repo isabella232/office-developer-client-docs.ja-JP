@@ -1,5 +1,5 @@
 ---
-title: スパム対策の設定について
+title: 迷惑メール対策の設定について
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799287"
 ---
-# <a name="about-anti-spam-settings"></a>スパム対策の設定について
+# <a name="about-anti-spam-settings"></a>迷惑メール対策の設定について
 
 Outlook では、迷惑メールからアカウントを保護するために各アカウントの設定を指定することができます。 このような迷惑メール対策設定は、ユーザーのプロファイルで、そのアカウント用に指定されたセクションに格納されます。 [PROP_ACCT_PREFERENCES_UID](prop_acct_preferences_uid.md)プロパティを使用すると、スパム対策の設定を含む、このアカウントのユーザーの環境設定が格納されているプロファイルのセクションの固有 ID (UID) を取得します。 
   

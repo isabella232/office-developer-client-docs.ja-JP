@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 24f7a14a-aa6f-4045-054b-4a7aefef25e4
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a89b1a93b2b03f97426a3988739e9b0d8411f113
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800426"
 ---
-# <a name="iconvertersession--iunknown"></a>IConverterSession: IUnknown
+# <a name="iconvertersession--iunknown"></a>IConverterSession : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MIME オブジェクト、および MAPI メッセージ間の変換を使用できます。 これは、インターネット経由でメッセージの転送に便利なことができます。
   
@@ -49,7 +49,7 @@ MIME オブジェクト、および MAPI メッセージ間の変換を使用で
 | *プレース ホルダー メンバー*  <br/> | *いないサポートまたは文書化されています。*  <br/> |
 |**[SetCharSet](iconvertersession-setcharset.md)** <br/> |MIME コンバーターに MAPI が MAPI メッセージを MIME ストリームに変換するときに使用する、省略可能な文字の設定を指定します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **MAPIToMIMEStm**を使用して変換を実行する前に、 **SetEncoding**を呼び出します。 
   
@@ -57,7 +57,7 @@ MIME オブジェクト、および MAPI メッセージ間の変換を使用で
 
 
 
-[MAPI から MIME 変換 API について](about-the-mapi-mime-conversion-api.md)
+[MAPI-MIME 会話 API について](about-the-mapi-mime-conversion-api.md)
   
 [MAPI �萔](mapi-constants.md)
 

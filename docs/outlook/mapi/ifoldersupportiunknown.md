@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a4b03a66-cf6d-cd20-f1df-b247d3ee87aa
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a4a1c78e65d9a515b2b42d7e0a2bc3a8b4bd8869
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800466"
 ---
-# <a name="ifoldersupport--iunknown"></a>IFolderSupport: IUnknown
+# <a name="ifoldersupport--iunknown"></a>IFolderSupport : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 共有フォルダーのサポートに関する情報を提供します。
   
@@ -38,7 +38,7 @@ ms.locfileid: "19800466"
 |:-----|:-----|
 |**[GetSupportMask](ifoldersupport-getsupportmask.md)** <br/> |共有フォルダーのサポートに関する情報を取得します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 一般に、Microsoft Office Outlook は MAPI プロバイダーは、フォルダーを共有する必要がある場合は、このインターフェイスを実装するプロバイダーを格納する必要があります。 例外は、Exchange Server のストア プロバイダーでこのインターフェイスを実装しなくてもフォルダーを共有することができます。
   

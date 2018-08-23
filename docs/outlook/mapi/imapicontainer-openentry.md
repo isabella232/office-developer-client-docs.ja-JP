@@ -23,7 +23,7 @@ ms.locfileid: "19800445"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 コンテナーで、さらにアクセスするためのインターフェイス ポインターを返すには、オブジェクトを開きます。
   
@@ -38,7 +38,7 @@ HRESULT OpenEntry(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -98,7 +98,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > _LpEntryID_パラメーターのエントリの識別子は、コンテナーによって認識される形式のではありません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIContainer::OpenEntry**メソッドは、コンテナー全体にわたってオブジェクトを開き、さらにアクセスに使用するインターフェイスの実装にポインターを返します。 
   
@@ -112,5 +112,5 @@ MAPI_E_UNKNOWN_ENTRYID
 
 
 
-[IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)
+[IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 

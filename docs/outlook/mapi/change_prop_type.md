@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 95513b5a-fd3b-46f2-a6c0-094500ae4ca7
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 26dfd40ed8b4cd2b2261abff4d2692de46acb6fd
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799786"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロパティ タグのプロパティの型を指定した値に更新されます。 プロパティの識別子は変更はありません。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19799786"
 CHANGE_PROP_TYPE (ulPropTag, ulPropType)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulPropTag_
   

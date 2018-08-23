@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 456c207f-5d41-4d0c-94b6-0c58893a6bed
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e3c4125bf4fcf1881a0cba9b04a8bb6aa71f527d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800700"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 セッションの既定のメッセージ ストアとしてのメッセージ ・ ストアを確立します。
   
@@ -75,7 +75,7 @@ S_OK
   
 > 呼び出しが成功し、予期される値または値が返されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPISession::SetDefaultStore**メソッドは、次のいずれかとしてメッセージ ストアを確立します。 
   
@@ -117,9 +117,9 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[PidTagResourceFlags の標準的なプロパティ](pidtagresourceflags-canonical-property.md)
+[PidTagResourceFlags 標準プロパティ](pidtagresourceflags-canonical-property.md)
   
-[PidTagStoreSupportMask の標準的なプロパティ](pidtagstoresupportmask-canonical-property.md)
+[PidTagStoreSupportMask 標準プロパティ](pidtagstoresupportmask-canonical-property.md)
   
 [TABLE_NOTIFICATION](table_notification.md)
   

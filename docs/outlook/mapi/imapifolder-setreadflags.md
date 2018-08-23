@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 95a40c8a-0a8b-46c7-a07a-cbc6a7de8a3c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a52c0501040d77ddb8172b212bf341a08704dcc3
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19800495"
 ---
 # <a name="imapifoldersetreadflags"></a>IMAPIFolder::SetReadFlags
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 設定または、 **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) のプロパティに 1 つまたは複数のフォルダーのメッセージでは、MSGFLAG_READ フラグをクリアし、リードのレポートの送信を管理します。 
   
@@ -34,7 +34,7 @@ HRESULT SetReadFlags(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _lpMsgList_
   
@@ -90,7 +90,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > 呼び出しが成功したが、すべてのメッセージを正常に処理されました。 この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIFolder::SetReadFlags**メソッドを設定またはフォルダーのメッセージの 1 つ以上の**PR_MESSAGE_FLAGS**プロパティに MSGFLAG_READ フラグをクリアします。 開封は必ずしも、目的の受信者がメッセージを読むには実際にメッセージをマークする MSGFLAG_READ フラグを設定します。 
   
@@ -154,9 +154,9 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 - [ENTRYLIST](entrylist.md) 
 - [IMessage::SetReadFlag](imessage-setreadflag.md)  
-- [PidTagMessageFlags の標準的なプロパティ](pidtagmessageflags-canonical-property.md)  
-- [PidTagReadReceiptRequested の標準的なプロパティ](pidtagreadreceiptrequested-canonical-property.md)  
-- [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+- [PidTagMessageFlags 標準プロパティ](pidtagmessageflags-canonical-property.md)  
+- [PidTagReadReceiptRequested 標準プロパティ](pidtagreadreceiptrequested-canonical-property.md)  
+- [IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
 - [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)  
-- [エラー処理のためのマクロを使用してください。](using-macros-for-error-handling.md)
+- [エラー処理のためのマクロの使用](using-macros-for-error-handling.md)
 

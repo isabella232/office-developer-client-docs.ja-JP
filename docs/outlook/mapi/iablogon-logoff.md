@@ -23,7 +23,7 @@ ms.locfileid: "19800350"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ログオフ処理を開始します。
   
@@ -45,7 +45,7 @@ S_OK
   
 > ログオフ処理が正常に開始されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 ログオフ処理は通常、クライアントがセッションを終了するのには[IMAPISession::Logoff](imapisession-logoff.md)メソッドを呼び出すときに起動します。 MAPI は、ログオフ処理を開始するのには、各アドレス帳プロバイダーの**IABLogon::Logoff**メソッドを呼び出します。 
   
@@ -63,5 +63,5 @@ S_OK
 
 [IABProvider::Logon](iabprovider-logon.md)
   
-[IABLogon: IUnknown](iablogoniunknown.md)
+[IABLogon : IUnknown](iablogoniunknown.md)
 

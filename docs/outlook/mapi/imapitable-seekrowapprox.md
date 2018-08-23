@@ -23,7 +23,7 @@ ms.locfileid: "19800863"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルのおおよその小数部から成る位置にカーソルを移動します。 
   
@@ -34,7 +34,7 @@ ULONG ulDenominator
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulNumerator_
   
@@ -54,7 +54,7 @@ MAPI_E_BUSY
   
 > 別の操作は、シーク操作の開始行を防止する処理中です。 実行中の操作を完了できるか、それを停止する必要があります。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::SeekRowApprox**メソッドを呼び出した後、テーブルのカーソル位置は、ヒューリスティックによって、正確なことができない場合があります分数です。 たとえば、特定のプロバイダーを実装バイナリ ツリーは、上にテーブル パフォーマンス上の理由から、ツリーの最上部にテーブルの中間点を扱うこと。 ツリーのバランスがとれていない場合、使用される中間点があります、表の途中で正確に。 
   
@@ -68,5 +68,5 @@ MAPI_E_BUSY
 
 
 
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

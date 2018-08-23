@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 74c25870-62d9-484a-9a99-4dc35c52479e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0c70d16d294426d30f3ac5f00b6bc46992386a86
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800447"
 ---
-# <a name="imailuser--imapiprop"></a>IMailUser: IMAPIProp
+# <a name="imailuser--imapiprop"></a>IMailUser : IMAPIProp
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージング ユーザーに関連付けられている多くのプロパティへのアクセスを提供します。 **IMailUser**インターフェイスは、メッセージング ユーザーのオブジェクトによって実装されます。 **IMailUser**を継承、 [IMAPIProp: IUnknown](imapipropiunknown.md)インタ フェースし、独自の一意のメソッドがありません。 
   
@@ -41,18 +41,18 @@ ms.locfileid: "19800447"
 
 このインターフェイスには、固有のメソッドがありません。
   
-|**必要なプロパティ**|**Access**|
+|**必須のプロパティ**|**Access**|
 |:-----|:-----|
 |**PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
 |**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
-|**PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
+|**PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_EMAIL_ADDRESS**([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
-|**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_SEARCH_KEY**([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
+|**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_SEARCH_KEY**([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 受信者のベース アドレス プロパティとして 5 つの必須プロパティの確認されています。
   

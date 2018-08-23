@@ -1,5 +1,5 @@
 ---
-title: POP3 アカウントのメッセージのダウンロードの履歴の解析
+title: POP3 アカウントのメッセージ ダウンロード履歴の解析
 manager: soliver
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799549"
 ---
-# <a name="parsing-the-message-download-history-for-a-pop3-account"></a>POP3 アカウントのメッセージのダウンロードの履歴の解析
+# <a name="parsing-the-message-download-history-for-a-pop3-account"></a>POP3 アカウントのメッセージ ダウンロード履歴の解析
 
 このトピックでは、ダウンロードまたはそのアカウントの削除されたメッセージを特定するのには、POP3 アカウントのメッセージのダウンロードの履歴を表す POP3 の BLOB の構造について説明します。
 
@@ -89,7 +89,7 @@ POP BLOB 構造では、表 1 で説明したようは、**バージョン**お�
 ## <a name="see-also"></a>関連項目
 <a name="OL15Con_AuxRef_ParsingMsgsHistory_AdditionalRsc"> </a>
 
-- [管理メッセージは、POP3 アカウントのダウンロードします。](managing-message-downloads-for-pop3-accounts.md)    
+- [POP3 アカウントのメッセージ ダウンロードの管理](managing-message-downloads-for-pop3-accounts.md)    
 - [POP3 アカウントのメッセージのダウンロードの履歴を検索します。](locating-the-message-download-history-for-a-pop3-account.md)    
 - [POP3 UIDL 履歴の解析](http://blogs.msdn.com/b/stephen_griffin/archive/2012/12/04/parsing-the-pop3-uidl-history.aspx)
     

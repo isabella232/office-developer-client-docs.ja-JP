@@ -1,5 +1,5 @@
 ---
-title: 一般的に使用されるオブジェクト
+title: よく使用されるオブジェクト
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799789"
 ---
-# <a name="commonly-used-objects"></a>一般的に使用されるオブジェクト
+# <a name="commonly-used-objects"></a>よく使用されるオブジェクト
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オブジェクトに関する情報は、Microsoft Outlook 2013 MAPI リファレンスのさまざまなセクションに記載されています。 MAPI オブジェクトのほとんどすべてが 1 つの MAPI インターフェイスを公開するためアプローチでは、オブジェクトと、公開されたインターフェイスを同義語として扱います。
   
@@ -33,7 +33,7 @@ ms.locfileid: "19799789"
     
     MAPI に関連する、MAPI オブジェクトの階層構造とコンテインメント モデルについて説明、インターフェイス、オブジェクトにマッピングし、実装の責任についての説明は、コンポーネント オブジェクト モデルを紹介します。
     
-- [MAPI Property Overview](mapi-property-overview.md)
+- [MAPI のプロパティの概要](mapi-property-overview.md)
     
     オブジェクトを管理して、プロパティを使用してクライアントの動作方法について説明します。
     
@@ -49,7 +49,7 @@ ms.locfileid: "19799789"
     
     次の種類のオブジェクトに関する情報を提供します。
     
-  - フォーム (Outlook の操作方法)
+  - フォーム
     
   - メッセージ
     
@@ -61,7 +61,7 @@ ms.locfileid: "19799789"
     
   - プロファイルとメッセージのサービス オブジェクト
     
-- [MAPI クライアント アプリケーションを開発](developing-a-mapi-client-application.md)
+- [MAPI クライアント アプリケーションの開発](developing-a-mapi-client-application.md)
     
     MAPI クライアント アプリケーションを実装するオブジェクトを使用する方法について説明します。
     
@@ -81,7 +81,7 @@ ms.locfileid: "19799789"
     
     メッセージ ストアのログオン、およびプロバイダーのオブジェクト、メッセージ ・ ストア、フォルダー、メッセージ、添付ファイル、受信者、および関連するテーブルを実装する方法について説明します。
     
-- [MAPI フォームのサーバーの開発](developing-mapi-form-servers.md)
+- [MAPI フォーム サーバーの開発](developing-mapi-form-servers.md)
     
     フォーム オブジェクトを実装する方法について説明します。
     

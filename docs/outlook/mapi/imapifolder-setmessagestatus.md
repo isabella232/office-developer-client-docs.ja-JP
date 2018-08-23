@@ -23,7 +23,7 @@ ms.locfileid: "19800501"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 (たとえば、あるかどうかそのメッセージは削除対象としてマーク) は、メッセージに関連付けられたステータスを設定します。
   
@@ -37,7 +37,7 @@ HRESULT SetMessageStatus(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -89,7 +89,7 @@ S_OK
   
 > メッセージの状態が正常に設定されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIFolder::SetMessageStatus**メソッドは、メッセージの状態を**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) のプロパティに格納されている値に設定します。 
   
@@ -109,7 +109,7 @@ S_OK
 
 [IMAPIFolder::GetMessageStatus](imapifolder-getmessagestatus.md)
   
-[PidTagMessageStatus の標準的なプロパティ](pidtagmessagestatus-canonical-property.md)
+[PidTagMessageStatus 標準プロパティ](pidtagmessagestatus-canonical-property.md)
   
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
 

@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: eaa988ea-aee1-4066-8c78-2b6c28def5e0
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 262b1aa2cd4a785b612ac0917b4b24358742ea6f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19800329"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 この関数を使用することはしません。
   
@@ -41,7 +41,7 @@ HRESULT HrOpenABEntryWithSupport(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpSup_
   

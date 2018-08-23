@@ -19,7 +19,7 @@ ms.locfileid: "19800204"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [メッセージ ヘッダーの状態をダウンロード](download-message-header-state.md)する時にメッセージ ヘッダーを同期するための情報です。
   
@@ -36,7 +36,7 @@ struct HDRSYNC
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  _pupmsg_
   
@@ -76,7 +76,7 @@ struct HDRSYNC
 
 [レプリケーション API について](about-the-replication-api.md)
   
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [MAPI �萔](mapi-constants.md)
   

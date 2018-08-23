@@ -23,7 +23,7 @@ ms.locfileid: "19800342"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 コンテナー、ユーザー、または配布リストにメッセージを開き、さらにアクセスを提供するインターフェイスの実装にポインターを返します。
   
@@ -38,7 +38,7 @@ HRESULT OpenEntry(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -76,7 +76,7 @@ MAPI_MODIFY
   
 > [out]開かれたオブジェクトへのポインターへのポインター。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 S_OK 
   
@@ -94,7 +94,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > _LpEntryID_パラメーターのエントリ id がアドレス帳プロバイダーで認識される形式ではありません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI では、ユーザー、または配布リストにメッセージを開くには、コンテナーでは、 **OpenEntry**メソッドを呼び出します。 
   
@@ -112,5 +112,5 @@ MAPI では、 _lpEntryID_に NULL が成功した場合は、コンテナー階
 
 
 
-[IABLogon: IUnknown](iablogoniunknown.md)
+[IABLogon : IUnknown](iablogoniunknown.md)
 

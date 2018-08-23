@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a6a6b6b1-31e2-4899-a5fe-74d5d1c2ccfc
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 45033ab924dcf443e9d231b3a7b4348119758935
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800692"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 セッションに影響を与える特定のイベントの通知を受け取ることを登録します。
   
@@ -37,7 +37,7 @@ HRESULT Advise(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -113,7 +113,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > _LpEntryID_で指定されたエントリの識別子は、プロファイル内のサービス プロバイダーのいずれかが処理できません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPISession::Advise**メソッドでは、シンク オブジェクト、セッション、および必要に応じて、サービス プロバイダーにアドバイスの呼び出し元の間の接続を確立します。 この接続を使用していずれかのアドバイズ シンクに通知を送信するか、 _lpEntryID_が指すオブジェクトに、 _ulEventMask_パラメーターで指定されたその他のイベントが発生します。 _LpEntryID_が NULL の場合は、ターゲット オブジェクトは、セッションとのみ、重大なエラー、および拡張イベントの通知を送信します。 
   
@@ -158,5 +158,5 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI でのイベントの通知](event-notification-in-mapi.md)
+[MAPI のイベント通知](event-notification-in-mapi.md)
 

@@ -19,7 +19,7 @@ ms.locfileid: "19798590"
 **ForEachRecord** データ ブロックは、ドメイン内のレコードごとにステートメントのセットを繰り返します。 
   
 > [!IMPORTANT]
-> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 > [!NOTE]
 > [!メモ] **ForEachRecord** データ ブロックは、データ マクロでのみ使用できます。 
@@ -34,7 +34,7 @@ ms.locfileid: "19798590"
 |**Where Condition** <br/> |いいえ  <br/> |**ForEachRecord**データ ブロックのデータの範囲を制限するために使用する文字列式を実行するとします。 抽出条件を指定する SQL 式の WHERE 句にはあります。 条件は省略すると、 **ForEachRecord**データ ブロック*に*引数で指定されたドメイン全体で動作します。 条件に含まれる任意のフィールドは、フィールド*内*にもあります。  <br/> |
 |**エイリアス** <br/> |いいえ  <br/> |** 引数で指定されたドメインの代替名を提供する文字列です。 あいまいな参照を防ぐへの参照のテーブル名を短くには、よく使用されます。 *エイリアス*が指定されていない場合、テーブルまたはクエリの名前がエイリアスとして使用します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [ForEachRecord](exitforeachrecord-macro-action-access-custom-web-app.md) データ ブロックを即座に終了するには、" ****ExitForEachRecord/レコードごとに終了**** " アクションを使用します。 
   

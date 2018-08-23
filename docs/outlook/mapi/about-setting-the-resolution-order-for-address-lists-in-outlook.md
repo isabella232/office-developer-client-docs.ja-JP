@@ -17,7 +17,7 @@ ms.locfileid: "19799596"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロファイルごとに複数のアドレス一覧をサポートしている Microsoft Office Outlook と電子メールの受信者がメッセージおよび会議出席依頼に出席者は解決されたアドレス一覧の順序を手動で指定できます。 たとえば、名が最初に Outlook アドレス帳、およびに対して、グローバル アドレス一覧に解決されるように、解決の順序を設定できます。 コンピューターでは、ユーザーがアドレス帳を開き、**ツール**と**オプション**をクリックし、この解決の順序を指定します。 ただし、企業環境でプログラムを使用して、名前が解決されるアドレス一覧の順序を設定するのには IT 管理者の方が効率的です。 このようなコードは、管理者が企業内に展開する起動自動化スクリプトの一部として使用できます。 
   
@@ -25,7 +25,7 @@ MAPI には、 **[IAddrBook](iaddrbookimapiprop.md)** インターフェイス�
   
 �A�h���X�ꗗ�� [�J�X�^�������p�X��w�肷����@�̗����Ɏ����܂��B
   
-- [アドレス一覧の解決の順序をプログラムで設定します。](how-to-programmatically-set-the-resolution-order-for-address-lists.md)
+- [アドレス一覧の解決順序をプログラムにより設定する](how-to-programmatically-set-the-resolution-order-for-address-lists.md)
     
 - [KB 292590: SetSearchPath �ƃA�h���X���̕��בւ�������ύX������@](http://support.microsoft.com/kb/292590)
     

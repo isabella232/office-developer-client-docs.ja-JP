@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 03e53e08-9113-4101-84c9-ccf6d43127f6
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2f5f4d50b085c437d1caab5f70dcb741afe090bb
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800069"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [エントリ ID](entryid.md)の構造体と構造体**エントリ ID**のサイズを指定するバイト数です。 
   
@@ -41,7 +41,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cb**
   
@@ -51,7 +51,7 @@ typedef struct
   
 > フラグ、およびバイナリ データの配列を含む完全なエントリの識別子です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **FLATENTRY**構造体では、[エントリ ID](entryid.md)の構造が似ています。 ただし、これにはいくつか相違点があります。 
   

@@ -23,7 +23,7 @@ ms.locfileid: "19800722"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 共通のアドレス] ダイアログ ボックスが表示されます。 
   
@@ -35,7 +35,7 @@ HRESULT Address(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulUIParam_
   
@@ -55,7 +55,7 @@ S_OK
   
 > [アドレス] ダイアログ ボックスが正常に表示されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 アドレス帳プロバイダーのサポート オブジェクトの**IMAPISupport::Address**メソッドを実装します。 アドレス帳プロバイダーは、メッセージの受信者の一覧を作成または**アドレス**を呼び出します。 
   
@@ -113,15 +113,15 @@ S_OK
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[PidTagAddressType の標準的なプロパティ](pidtagaddresstype-canonical-property.md)
+[PidTagAddressType 標準プロパティ](pidtagaddresstype-canonical-property.md)
   
-[PidTagDisplayName の標準的なプロパティ](pidtagdisplayname-canonical-property.md)
+[PidTagDisplayName 標準プロパティ](pidtagdisplayname-canonical-property.md)
   
-[PidTagDisplayType の標準的なプロパティ](pidtagdisplaytype-canonical-property.md)
+[PidTagDisplayType 標準プロパティ](pidtagdisplaytype-canonical-property.md)
   
-[PidTagEntryId の標準的なプロパティ](pidtagentryid-canonical-property.md)
+[PidTagEntryId 標準プロパティ](pidtagentryid-canonical-property.md)
   
-[PidTagRecipientType の標準的なプロパティ](pidtagrecipienttype-canonical-property.md)
+[PidTagRecipientType 標準プロパティ](pidtagrecipienttype-canonical-property.md)
   
 [SPropValue](spropvalue.md)
   
@@ -130,5 +130,5 @@ S_OK
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 
 
-[ADRLIST および SRowSet 構造体のメモリを管理します。](managing-memory-for-adrlist-and-srowset-structures.md)
+[ADRLIST および SRowSet 構造のためのメモリ管理](managing-memory-for-adrlist-and-srowset-structures.md)
 

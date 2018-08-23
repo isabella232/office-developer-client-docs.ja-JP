@@ -1,5 +1,5 @@
 ---
-title: 空き時間情報データにアクセスする相対時間を使用します。
+title: 空き時間情報データにアクセスするのに相対時間を使用する
 manager: soliver
 ms.date: 12/08/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799323"
 ---
-# <a name="use-relative-time-to-access-freebusy-data"></a>空き時間情報データにアクセスする相対時間を使用します。
+# <a name="use-relative-time-to-access-freebusy-data"></a>空き時間情報データにアクセスするのに相対時間を使用する
 
 空き/予約済み API の[IFreeBusyData](ifreebusydata.md)インタ フェースは 1601 年 1 月 1 日からの分を世界協定時刻 (UTC) での表現の数は、相対的な時間の概念を使用して、 **LONG**型の値です。 
   

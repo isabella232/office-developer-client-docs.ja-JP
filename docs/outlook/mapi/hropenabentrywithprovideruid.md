@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 83821a86-abff-460c-bb8e-9fd9d232dc6b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e33e656e70802437ab8b8717c5e175e2a13e384e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19800303"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 _PEmsabpUID_によって識別される、Exchange アドレス帳を使用して**エントリ Id**が表示されます。 この関数は、この関数を使用すると、予想される Exchange アドレス帳プロバイダーを使用して[アドレス帳コンテナー](iaddrbook-openentry.md)が開かれていることを除いてに、[アドレス帳コンテナー](iaddrbook-openentry.md)同様に動作します。 
   
@@ -42,7 +42,7 @@ HRESULT HrOpenABEntryWithProviderUID(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pEmsmdbUID_
   

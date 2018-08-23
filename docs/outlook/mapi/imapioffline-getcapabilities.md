@@ -23,7 +23,7 @@ ms.locfileid: "19800612"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 コールバックは、オフラインのオブジェクトによってサポートされている条件を取得します。
   
@@ -33,7 +33,7 @@ HRESULT GetCapabilities(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pulCapablities_
   
@@ -47,7 +47,7 @@ MAPIOFFLINE_CAPABILITY_ONLINE
   
 > オフラインのオブジェクトでは、オンラインの通知を提供することができます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **[HrOpenOfflineObj](hropenofflineobj.md)** を使用してオフラインのオブジェクトを開くときにクライアントは、 **IMAPIOffline**インターフェイスへのポインターを取得し、サポートされているコールバックを確認するのには、 **IMAPIOffline::GetCapabilities**を呼び出すには、 [IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)に問い合わせることができます。オブジェクトです。 **IMAPIOfflineMgr**を使用してコールバックを設定するクライアントを選択できます。
   
@@ -63,7 +63,7 @@ MAPIOFFLINE_CAPABILITY_ONLINE
   
 [IMAPIOffline::SetCurrentState](imapioffline-setcurrentstate.md)
   
-[IMAPIOfflineMgr: IMAPIOffline](imapiofflinemgrimapioffline.md)
+[IMAPIOfflineMgr : IMAPIOffline](imapiofflinemgrimapioffline.md)
 
 
 [MAPI �萔](mapi-constants.md)

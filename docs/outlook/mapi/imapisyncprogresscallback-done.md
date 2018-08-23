@@ -23,7 +23,7 @@ ms.locfileid: "19800808"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  Microsoft Outlook に通知の同期が完了しています。 
   
@@ -34,7 +34,7 @@ HRESULT Done(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  **hThreadDoneEvent**
   
@@ -54,5 +54,5 @@ S_OK
 
 
 
-[IMAPISyncProgressCallback: IUnknown](imapisyncprogresscallbackiunknown.md)
+[IMAPISyncProgressCallback : IUnknown](imapisyncprogresscallbackiunknown.md)
 

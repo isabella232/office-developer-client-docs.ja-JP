@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d0c54092-86a3-47e0-8133-72e119e74b65
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b30c6e9840ed5dddfd2d3a5f149a3f0f6e8da605
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800474"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 コンテナーの階層構造のテーブルへのポインターを返します。
   
@@ -74,7 +74,7 @@ MAPI_E_NO_SUPPORT
   
 > コンテナーは、子コンテナーがないと、階層テーブルを提供することはできません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIContainer::GetHierarchyTable**メソッドは、コンテナーの階層テーブルにポインターを返します。 階層テーブルは、コンテナー内の子コンテナーに関する要約情報を保持します。 フォルダーの階層テーブルには、サブフォルダーの情報を保持します。アドレス帳階層テーブルは、アドレス帳コンテナーや配布リストに子に関する情報を保持します。 
   
@@ -114,11 +114,11 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IMAPIProp::GetProps](imapiprop-getprops.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
   
-[PidTagContainerHierarchy の標準的なプロパティ](pidtagcontainerhierarchy-canonical-property.md)
+[PidTagContainerHierarchy 標準プロパティ](pidtagcontainerhierarchy-canonical-property.md)
   
-[IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)
+[IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2def89ed-e4ce-446a-8b80-132d11ae8f8b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8214390af883432d72f608452b8b944417884fd2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800374"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳の 1 つまたは複数のエントリへの変更に関する通知を受信するクライアントまたはサービス プロバイダーを登録します。
   
@@ -37,7 +37,7 @@ HRESULT Advise(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -87,7 +87,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > _LpEntryID_に渡されたエントリ id は、プロファイル内のアドレス帳プロバイダーのいずれかが処理できません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントとサービス ・ プロバイダー**の特定の種類または種類のアドレス帳エントリに通知を登録するメソッド**を呼び出します。 通知の種類は、 _ulEventMask_パラメーターに渡されるイベント マスクによって示されます。 
   
@@ -113,5 +113,5 @@ MAPI では、 _lpEntryID_パラメーターのエントリの識別子で示さ
   
 [�ʒm](notification.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

@@ -17,7 +17,7 @@ ms.locfileid: "19800913"
 ---
 # <a name="implementing-a-sample-object"></a>サンプル オブジェクトを実装します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 通知シンク オブジェクト-オブジェクトをサポートする、 [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md)インターフェイス-は、MAPI オブジェクトの通知を処理するためのクライアント アプリケーションを実装することです。 **IMAPIAdviseSink**では、 [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx)から直接継承し、 **OnNotify**1 つのメソッドが含まれています。 したがって、アドバイズ シンク オブジェクトを実装するには、クライアントは**IUnknown**の 3 つの方法と[OnNotify](imapiadvisesink-onnotify.md)コードを作成します。
   
@@ -115,6 +115,6 @@ lpMyObj->lpVtbl = &vtblADVISE;
 
 ## <a name="see-also"></a>関連項目
 
-- [MAPI Property Overview](mapi-property-overview.md)
-- [MAPI オブジェクトを実装します。](implementing-mapi-objects.md)
+- [MAPI のプロパティの概要](mapi-property-overview.md)
+- [MAPI オブジェクトの実装](implementing-mapi-objects.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 書式設定されたテキストをレンダリングするための情報を追加します。
+title: 書式付きテキストへのレンダリング情報の追加
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799642"
 ---
-# <a name="adding-rendering-information-to-formatted-text"></a>書式設定されたテキストをレンダリングするための情報を追加します。
+# <a name="adding-rendering-information-to-formatted-text"></a>書式付きテキストへのレンダリング情報の追加
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 添付ファイルが表示される書式設定されたテキストの位置を指定するには、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) のプロパティをメッセージのプレース ホルダー文字のシーケンスを挿入する必要があります。 プレース ホルダーの順序は、次の文字で構成されて: `\objattph`。
   

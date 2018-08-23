@@ -25,14 +25,14 @@ SMTP アカウントのセキュア ソケット レイヤー (SSL) プロトコ
 |識別子:  <br/> |0x0202  <br/> |
 |プロパティの種類:  <br/> |PT_DWORD  <br/> |
 |プロパティ タグ。  <br/> |0x02020003  <br/> |
-|アクセス:  <br/> |値の取得のみ可能です。  <br/> |
+|アクセス:  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 ゼロの値の SSL 暗号化を使用して、SSL 暗号化を使用して、それ以外の場合はありません。
   
 ## <a name="see-also"></a>関連項目
 
-- [管理メッセージは、POP3 アカウントのダウンロードします。](managing-message-downloads-for-pop3-accounts.md) 
+- [POP3 アカウントのメッセージ ダウンロードの管理](managing-message-downloads-for-pop3-accounts.md) 
 - [定数 (アカウント管理 API)](constants-account-management-api.md)
 

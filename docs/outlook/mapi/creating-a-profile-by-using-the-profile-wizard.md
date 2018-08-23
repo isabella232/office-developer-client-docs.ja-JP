@@ -1,5 +1,5 @@
 ---
-title: プロファイル ウィザードを使用してプロファイルを作成します。
+title: プロファイル ウィザードを使用したプロファイルの作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799857"
 ---
-# <a name="creating-a-profile-by-using-the-profile-wizard"></a>プロファイル ウィザードを使用してプロファイルを作成します。
+# <a name="creating-a-profile-by-using-the-profile-wizard"></a>プロファイル ウィザードを使用したプロファイルの作成
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロファイル ウィザードは、可能な最も簡単な方法でプロファイルを作成するユーザーを有効にする MAPI 機能です。 プロファイル ウィザードでは、一連のメッセージ サービスを選択し、いくつかの最も重要な構成プロパティの値を入力するように求めるダイアログ ボックスが表示されます。 その他の必要なプロパティのほとんどは、プロファイル ウィザードは、既定値を使用します。 プロファイル ウィザードを起動するには、 **LaunchWizard**、 [LAUNCHWIZARDENTRY](launchwizardentry.md)のプロトタイプでは関数を呼び出します。 
   

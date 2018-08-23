@@ -1,5 +1,5 @@
 ---
-title: フォーム構成ファイルの [説明] セクション
+title: フォーム構成ファイル [Description] セクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,9 +15,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800086"
 ---
-# <a name="form-configuration-file-description-section"></a>フォーム構成ファイルの [説明] セクション
+# <a name="form-configuration-file-description-section"></a>フォーム構成ファイル [Description] セクション
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **[説明]** セクションには、フォームのコントロールでは、[フォームのユーザー インターフェイスでは、フォームの検索に使用される属性に関連付けられているすべてのプロパティが一覧表示されます。 **MessageClass**、 **Clsid**、および**表示名**のエントリは、フォームのメッセージ クラス、その GUID、およびメッセージ クラスの表示名の名前をそれぞれ識別するには、フォーム ライブラリ内でフォームを検索するため、必要なエントリをします。. 残りのエントリはオプションです。 **[説明]** セクションの形式は次のとおりです。 
   

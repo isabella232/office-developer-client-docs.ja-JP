@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 64cef938-ef6f-43bb-8f6e-d4cd4d6c9888
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: dee12ba9da83d2167afe13d00270a900bf0d73d2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799989"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オプション ボタン グループの一部となる 1 つのラジオ ・ ボタンをについて説明します。 ラジオ ボタン グループは、表示された表から組み込まれているダイアログ ボックスで使用されます。
   
@@ -43,7 +43,7 @@ typedef struct _DTBLRADIOBUTTON
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulbLpszLabel**
   
@@ -69,7 +69,7 @@ MAPI_UNICODE
   
 > 選択したボタンを識別する一意の番号です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **DTBLRADIOBUTTON**構造体では、ラジオ ボタンのボタンのグループに関連付けられているボタン コントロールについて説明します。 グループ内のボタンを 1 つだけをチェックすることができます。設定するグループの他のボタンを 1 つのボタンを設定します。 
   

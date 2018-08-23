@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7a872296-0378-456f-b4d6-cb4d96b09d6e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 975c01457515a400d1d442fedc432dc000f06665
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800651"
 ---
-# <a name="imapiprogress--iunknown"></a>IMAPIProgress: IUnknown
+# <a name="imapiprogress--iunknown"></a>IMAPIProgress : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 進行状況インジケーターが表示されて、クライアント アプリケーションを提供する進行中のオブジェクトを実装します。 進行状況のインジケーターは、メッセージ ストア間でフォルダーをコピーするなど、操作の完了の割合が表示されるユーザー インターフェイスの表示です。 MAPI およびクライアント アプリケーションが実行中オブジェクトを実装し、サービス ・ プロバイダーを使用しています。 
   
@@ -46,7 +46,7 @@ ms.locfileid: "19800651"
 |[GetMin](imapiprogress-getmin.md) <br/> |進捗状況の情報が表示されます、 [SetLimits](imapiprogress-setlimits.md)メソッドでは、最小値を返します。  <br/> |
 |[SetLimits](imapiprogress-setlimits.md) <br/> |操作、および操作の進行状況の情報を計算する方法を制御するフラグでは、アイテム数の上限と下限の制限を設定します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI には、時間のかかる可能性のある操作を実行するメソッドの多くに、 _lpProgress_パラメーターが含まれています。  _lpProgress_は、実行中のオブジェクトのクライアントの実装を示しています。 **IMAPIProgress**インターフェイスを実装するクライアントは、それぞれの実装を指すには、このパラメーターを設定します。**IMAPIProgress**を実装していないクライアントは、パラメーターを NULL に設定されます。 操作の処理中に進行状況のインジケーターを表示するには、サービス プロバイダーは、可能な場合は、クライアントによって提供される進行中のオブジェクトまたは MAPI 実装では、( _lpProgress_は NULL に設定するときに示されます) を使用します。 
   
@@ -56,7 +56,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 |**ファイル**|**�֐�**|**�R�����g**|
 |:-----|:-----|:-----|
-|MapiProgress.h と MapiProgress.cpp  <br/> |該当しない  <br/> |IMAPIProgress の設定を有効にすると、MFCMAPI 通過**IMAPIProgress**実装すべての関数 MFCMAPI を起動するに実装を受け入れることにします。  <br/> |
+|MapiProgress.h と MapiProgress.cpp  <br/> |該当なし  <br/> |IMAPIProgress の設定を有効にすると、MFCMAPI 通過**IMAPIProgress**実装すべての関数 MFCMAPI を起動するに実装を受け入れることにします。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

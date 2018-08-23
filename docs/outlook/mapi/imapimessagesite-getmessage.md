@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 49d12c49-84f8-44ac-bc4a-2ee44a46f8c1
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b3cdd9994de3e2a02a5302068881abce57a632a0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800586"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 現在のメッセージを返します。
   
@@ -33,7 +33,7 @@ HRESULT GetMessage(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ppmsg_
   
@@ -49,7 +49,7 @@ S_FALSE
   
 > メッセージ現在存在しない呼び出し元のフォームにします。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォームでは、現在のメッセージのメッセージのインターフェイスを取得する**IMAPIMessageSite::GetMessage**メソッドを呼び出します。 現在のメッセージは、 [IPersistMessage::InitNew](ipersistmessage-initnew.md)、 [IPersistMessage::Load](ipersistmessage-load.md)、または[IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md)メソッドに渡されたものでは以前と同じメッセージ。 
   
@@ -73,16 +73,16 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IPersistMessage::InitNew](ipersistmessage-initnew.md)
   
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
   
 [IPersistMessage::Load](ipersistmessage-load.md)
   
 [IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md)
   
-[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)
+[IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォームのインタ フェース](mapi-form-interfaces.md)
+[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
 

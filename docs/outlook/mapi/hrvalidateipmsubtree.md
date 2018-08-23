@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6454c1fa-5216-4934-a908-48c634ac4a07
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8b6d4fa1d9ffa6ab5f800bad9f02ac5aa9abd8c0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800319"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ・ ストアには、標準的な個人間メッセージ (IPM) のフォルダーを追加します。 
   
@@ -43,7 +43,7 @@ HrValidateIPMSubtree(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpMDB_
   
@@ -95,7 +95,7 @@ MAPI_FULL_IPM_TREE
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI は、ストアを最初に開いたとき、またはストアが既定の保存を行った場合、メッセージ ストア内の標準の IPM サブツリーを作成するのには内部的に**HrValidateIPMSubtree**関数を使用します。 この関数は、標準的なメッセージのフォルダーを修復または検証するクライアント アプリケーションによっても使用できます。 
   

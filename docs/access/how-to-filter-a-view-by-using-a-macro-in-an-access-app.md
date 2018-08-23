@@ -1,5 +1,5 @@
 ---
-title: アクセス アプリケーションでマクロを使用してビューをフィルター処理します。
+title: Access アプリでマクロを使用してビューをフィルター処理する
 manager: kelbow
 ms.date: 08/18/2017
 ms.audience: Developer
@@ -14,12 +14,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798621"
 ---
-# <a name="filter-a-view-by-using-a-macro-in-an-access-app"></a>アクセス アプリケーションでマクロを使用してビューをフィルター処理します。
+# <a name="filter-a-view-by-using-a-macro-in-an-access-app"></a>Access アプリでマクロを使用してビューをフィルター処理する
 
 RequeryRecords マクロ アクションおよびデータ マクロを使用して Access アプリでビューをフィルター処理する方法について説明します。
   
 > [!IMPORTANT]
-> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
 
 Access アプリの既定のリスト ビューを使用すると、フィールドに含まれている値の問題をフィルター処理できます。値の一致ではなく、一連の条件に基づいてビューをフィルターする状況も考えられます。そのためには、マクロを作成する必要があります。この記事では、ビューをフィルター処理して、期限を過ぎているタスク、または次の 7 日以内が期限のタスクをフィルター処理するマクロを作成する方法を示します。
   

@@ -23,7 +23,7 @@ ms.locfileid: "19800752"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 進行状況インジケーターを表示する進行中のオブジェクトを取得します。
   
@@ -35,7 +35,7 @@ HRESULT DoProgressDialog(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -59,7 +59,7 @@ S_OK
   
 > 進行中のオブジェクトが正常に取得しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 アドレス帳、メッセージ ストア プロバイダーのサポート オブジェクトの**IMAPISupport::DoProgressDialog**メソッドを実装します。 これらのプロバイダーは、MAPI インターフェイスの実装、 [IMAPIProgress](imapiprogressiunknown.md) 、進捗状況の情報を計算し、標準のダイアログ ボックスを表示するにアクセスするために**DoProgressDialog**を呼び出します。 
   
@@ -69,12 +69,12 @@ S_OK
 
 
 
-[IMAPIProgress: IUnknown](imapiprogressiunknown.md)
+[IMAPIProgress : IUnknown](imapiprogressiunknown.md)
   
 [IMAPIProgress::Progress](imapiprogress-progress.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 
 
-[進行状況インジケーターを表示します。](how-to-display-a-progress-indicator.md)
+[進行状況インジケーターを表示する](how-to-display-a-progress-indicator.md)
 

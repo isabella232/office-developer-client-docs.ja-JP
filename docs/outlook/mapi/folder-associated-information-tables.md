@@ -1,5 +1,5 @@
 ---
-title: 情報のフォルダーに関連付けられているテーブル
+title: フォルダー関連情報テーブル
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800088"
 ---
-# <a name="folder-associated-information-tables"></a>情報のフォルダーに関連付けられているテーブル
+# <a name="folder-associated-information-tables"></a>フォルダー関連情報テーブル
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI では、関連する情報のテーブルを処理するときに使用する各種の MAPI コンポーネントの MAPI_ASSOCIATED フラグを定義します。 メッセージ ・ ストア内の各フォルダーには、標準的な内容のテーブルと、関連する内容のテーブルが必要です。 クライアント アプリケーションでは、フォームとビューを保持するためにフォルダーの内容が関連付けられているテーブルに特別なメッセージを保存します。 実際には、フォームとビューをサポートするため、メッセージ ストア プロバイダーは、関連付けられている内容のテーブルを実装しなければなりません。
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6511368c-9777-497e-9eea-cf390c04b92e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: cb777074d1657a3ee5c2f1e9f70d2b304858c1b2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800832"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 特定の検索条件に一致し、その行にカーソルを移動するテーブル内の次の行を検索します。
   
@@ -35,7 +35,7 @@ ULONG ulFlags
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpRestriction_
   
@@ -83,7 +83,7 @@ MAPI_W_POSITION_CHANGED
   
 > 呼び出しが成功したが、ときに最後に使用されたのと同じ行に、操作で使用するブックマークが設定されていません。ブックマークが使用されていない場合は不要になったと同じ位置に作成されたとき この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 [エラー処理のためのマクロを使用する](using-macros-for-error-handling.md)を参照してください。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::FindRow**メソッドは、 _lpRestriction_パラメーターが指す**SRestriction**構造で説明されている検索条件のセットに一致するテーブル内の最初の行を検索します。 
   
@@ -127,7 +127,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [SRestriction](srestriction.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

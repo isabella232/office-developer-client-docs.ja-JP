@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5cc642de-21f0-4826-bf21-aac4bcfc1328
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8eb19f9a2d3458e153b0758b56c502ce612be0cc
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800667"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オブジェクトから 1 つまたは複数のプロパティを削除します。 
   
@@ -54,7 +54,7 @@ MAPI_E_NO_ACCESS
   
 > 呼び出し側では、プロパティを削除するのには十分なアクセス許可を持っています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIProp::DeleteProps**メソッドは、現在のオブジェクトから 1 つまたは複数のプロパティを削除します。 
   
@@ -96,7 +96,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [SPropTagArray](sproptagarray.md)
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

@@ -19,7 +19,7 @@ Microsoft InfoPath では、**アプリケーション**のオブジェクトお
   
 ## <a name="overview-of-the-application-and-xdocument-objects"></a>アプリケーションおよび XDocument オブジェクトの概要
 
-**アプリケーション**オブジェクトには、次のオートメーションに使用されるメソッドが含まれています。 
+**Application** オブジェクトには、オートメーションに使用される次のメソッドが含まれています。 
   
 |**メソッド**|**説明**|
 |:-----|:-----|
@@ -28,7 +28,7 @@ Microsoft InfoPath では、**アプリケーション**のオブジェクトお
 |**RegisterSolution** <br/> |指定された Microsoft Office InfoPath フォーム テンプレートをインストールします。  <br/> |
 |**UnregisterSolution** <br/> |指定された Microsoft Office InfoPath フォーム テンプレートをアンインストールします。  <br/> |
    
-**XDocuments**コレクションには、外部の自動化に使用できる以下の方法が含まれています。 
+**XDocuments** コレクションには、外部の自動化に使用できる以下のメソッドが含まれています。 
   
 |**メソッド**|**説明**|
 |:-----|:-----|
@@ -38,7 +38,7 @@ Microsoft InfoPath では、**アプリケーション**のオブジェクトお
 |**NewFromSolutionWithData** メソッド  <br/> |指定した XML データとフォーム テンプレートを使用して、新しい Microsoft Office InfoPath フォームを作成します。  <br/> |
 |**Open** メソッド  <br/> |指定された Microsoft Office InfoPath フォームを開きます。  <br/> |
    
-外部アプリケーションから**アプリケーション**オブジェクトを使用するには、InfoPath アプリケーションを表すオブジェクト変数を作成するのに InfoPath アプリケーション ("InfoPath.Application") の ProgID を持つ、 **CreateObject**関数を使用します。 **XDocuments**コレクションにアクセスし、そのメソッドを使用して開くか、InfoPath フォームを作成し、 **XDocuments**プロパティを使用できます。 次の使用例は、Microsoft Visual Basic 6.0 または Visual Basic for Applications (VBA) プログラミング言語を使用して**アプリケーション**オブジェクトへの参照の作成を示しています。 
+外部アプリケーションから **Application** オブジェクトを使用するには、**CreateObject** 関数と InfoPath アプリケーションの ProgID ("InfoPath.Application") を使用して、InfoPath アプリケーションを表すオブジェクト変数を作成します。次に、**XDocuments** プロパティを使用して **XDocuments** コレクションにアクセスし、メソッドを使用して InfoPath フォームを開くか作成します。次の例では、Microsoft Visual Basic 6.0 または Visual Basic for Applications (VBA) プログラミング言語を使用する **Application** オブジェクトへの参照の作成を示します。 
   
 ```vb
 Dim objIP As Object 
@@ -54,6 +54,6 @@ objIP.XDocuments.NewFromSolution ("C:\MyFolder\MyForm.xsn")
 ```
 
 > [!NOTE]
-> **CreateObject**関数では、遅延バインディングを使用してオブジェクト変数を作成するため、ステートメントの自動補完は、Visual Basic エディターで利用可能なできません。 正しい呼び出し構文の詳細については上記のテーブルにあるリンクを参照してください。 
+> **CreateObject** 関数は、遅延バインディングを使用してオブジェクト変数を作成するため、Visual Basic Editor ではステートメントの自動補完を利用できません。正しい呼び出し構文の詳細については、上記の表のリンクを参照してください。 
   
 

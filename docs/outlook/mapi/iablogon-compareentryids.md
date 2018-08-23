@@ -23,7 +23,7 @@ ms.locfileid: "19800351"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 同じオブジェクトを参照しているかどうかを決定する 2 つのエントリ id を比較します。
   
@@ -38,7 +38,7 @@ HRESULT CompareEntryIDs(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID1_
   
@@ -74,7 +74,7 @@ MAPI_E_INVALID_ENTRYID
   
 > いずれかまたは両方のエントリの識別子は、アドレス帳プロバイダーに属していません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 アドレス帳プロバイダーは、同じオブジェクトを参照しているかどうかを決定する 2 つのエントリ id を比較する**CompareEntryIDs**メソッドを実装します。 
   
@@ -86,5 +86,5 @@ MAPI_E_INVALID_ENTRYID
 
 
 
-[IABLogon: IUnknown](iablogoniunknown.md)
+[IABLogon : IUnknown](iablogoniunknown.md)
 

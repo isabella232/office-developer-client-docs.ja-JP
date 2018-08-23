@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 75daf9d4-6975-435f-91e5-1b41e0047ab7
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3f13a4d278b85ffae33e8f44f3a15eb499fb11b3
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800400"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 個人用アドレス帳 (PAB) には、特定のコンテナーを指定します。
   
@@ -34,7 +34,7 @@ HRESULT SetPAB(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -50,7 +50,7 @@ S_OK
   
 > 指定したコンテナーは、個人用アドレス帳として確立されています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントとサービス ・ プロバイダーとして、個人用アドレス帳の特定のコンテナーを指定するのには**SetPAB**メソッドを呼び出します。 個人アドレス帳は、他のコンテナーと同様に新しいエントリからコピーしたエントリで構成されるコンテナーです。 
   
@@ -70,13 +70,13 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[られたユーザーのプライマリ](iaddrbook-getpab.md)
+[IAddrBook::GetPAB](iaddrbook-getpab.md)
   
 [IAddrBook::GetSearchPath](iaddrbook-getsearchpath.md)
   
-[PidTagContainerFlags の標準的なプロパティ](pidtagcontainerflags-canonical-property.md)
+[PidTagContainerFlags 標準プロパティ](pidtagcontainerflags-canonical-property.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

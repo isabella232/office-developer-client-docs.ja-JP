@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 92a07f7b-d34c-4085-ab11-eadcd918fa1b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2fd79cfe18e7d39f26563c87b8fb15553bf32ddf
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19799701"
 ---
 # <a name="attachment-tables"></a>添付ファイル テーブル
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 添付ファイル テーブルには、すべての送信されたメッセージや、メッセージは、コンポジションに関連付けられている添付ファイルのオブジェクトに関する情報が含まれています。 
   

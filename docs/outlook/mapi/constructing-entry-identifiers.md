@@ -1,5 +1,5 @@
 ---
-title: エントリの識別子を構築します。
+title: エントリ ID の作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799807"
 ---
-# <a name="constructing-entry-identifiers"></a>エントリの識別子を構築します。
+# <a name="constructing-entry-identifiers"></a>エントリ ID の作成
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 エントリ id は、[エントリ ID](entryid.md)の構造で構成されます。 **エントリ ID**の構造は、エントリ id と、実際のエントリの識別子の属性を記述するフラグで構成されます。 
   

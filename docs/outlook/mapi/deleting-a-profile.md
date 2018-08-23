@@ -1,5 +1,5 @@
 ---
-title: プロファイルを削除します。
+title: プロファイルの削除
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799892"
 ---
-# <a name="deleting-a-profile"></a>プロファイルを削除します。
+# <a name="deleting-a-profile"></a>プロファイルの削除
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  **プロファイルを削除するには**
   

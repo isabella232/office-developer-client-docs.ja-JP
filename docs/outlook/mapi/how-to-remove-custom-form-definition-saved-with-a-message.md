@@ -15,7 +15,7 @@ ms.locfileid: "19800254"
 ---
 # <a name="remove-custom-form-definition-saved-with-a-message"></a>ユーザー設定のフォーム定義を保存し、メッセージを削除します。
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックでは、フォーム定義を含まない通常のメッセージにユーザー設定のフォーム定義に保存されているメッセージに変換する C++ のコード例を示します。
   

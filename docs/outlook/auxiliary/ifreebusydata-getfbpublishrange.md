@@ -30,7 +30,7 @@ HRESULT GetFBPublishRange(
 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _prtmStart_
   
@@ -52,7 +52,7 @@ _prtmEnd_
   
 ## <a name="see-also"></a>関連項目
 
-- [空き時間情報データにアクセスする相対時間を使用します。](how-to-use-relative-time-to-access-free-busy-data.md)
+- [空き時間情報データにアクセスするのに相対時間を使用する](how-to-use-relative-time-to-access-free-busy-data.md)
 - [IFreeBusyData::EnumBlocks](ifreebusydata-enumblocks.md)
 - [IFreeBusyData::SetFBRange](ifreebusydata-setfbrange.md)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 09955996-b904-4c0d-8ba5-954a8875c055
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: da6de94342c8d8bbd378a3cde2fb065c97632291
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800582"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 現在のメッセージを削除します。
   
@@ -34,7 +34,7 @@ HRESULT DeleteMessage(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pViewContext_
   
@@ -54,7 +54,7 @@ MAPI_E_NO_SUPPORT
   
 > このメッセージのサイトでは、操作はサポートされていません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム オブジェクトは、フォームが現在表示されているメッセージを削除するのには**IMAPIMessageSite::DeleteMessage**メソッドを呼び出します。 
   
@@ -100,10 +100,10 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IPersistMessage::Save](ipersistmessage-save.md)
   
-[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)
+[IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォームのインタ フェース](mapi-form-interfaces.md)
+[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
 

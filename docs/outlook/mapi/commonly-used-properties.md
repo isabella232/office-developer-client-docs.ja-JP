@@ -1,5 +1,5 @@
 ---
-title: 一般的に使用されるプロパティ
+title: よく使用されるプロパティ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,46 +15,46 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799814"
 ---
-# <a name="commonly-used-properties"></a>一般的に使用されるプロパティ
+# <a name="commonly-used-properties"></a>よく使用されるプロパティ
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 必須およびオプションの MAPI プロパティのリストは、いくつかの場所に記載されています。
   
 これらのインタ フェースをサポートするオブジェクトに関連付けられているプロパティの一覧については、次のインターフェイスを参照してください。
   
-- [これにより: IMAPIContainer](iabcontainerimapicontainer.md)
+- [IABContainer : IMAPIContainer](iabcontainerimapicontainer.md)
     
-- [IAttach: IMAPIProp](iattachimapiprop.md)
+- [IAttach : IMAPIProp](iattachimapiprop.md)
     
-- [IDistList: IMAPIContainer](idistlistimapicontainer.md)
+- [IDistList : IMAPIContainer](idistlistimapicontainer.md)
     
-- [IMailUser: IMAPIProp](imailuserimapiprop.md)
+- [IMailUser : IMAPIProp](imailuserimapiprop.md)
     
-- [IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)
+- [IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
     
-- [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)
+- [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
     
 - [IMessage: IMAPIProp](imessageimapiprop.md)
     
 - [IMsgStore: IMAPIProp](imsgstoreimapiprop.md)
     
-- [IProfSect: IMAPIProp](iprofsectimapiprop.md)
+- [IProfSect : IMAPIProp](iprofsectimapiprop.md)
     
 テーブルに必要なプロパティの一覧は、 [MAPI テーブル](mapi-tables.md)内のテーブルの各種類のドキュメントを参照してください。
   
 MAPI によって定義されているメッセージのクラスの必須およびオプションのメッセージのプロパティのリストは、次のトピックを参照してください。 
   
-- [すべてのメッセージに必要なプロパティ](required-properties-for-all-messages.md)
+- [すべてのメッセージの必須プロパティ](required-properties-for-all-messages.md)
     
-- [必要なレポートのメッセージのプロパティ](required-report-message-properties.md)
+- [必須レポート メッセージ プロパティ](required-report-message-properties.md)
     
-- [オプションのレポート メッセージのプロパティ](optional-report-message-properties.md)
+- [オプションのレポート メッセージ プロパティ](optional-report-message-properties.md)
     
-- [すべてのメッセージの受信者のプロパティ](recipient-properties-for-all-messages.md)
+- [すべてのメッセージの受信者プロパティ](recipient-properties-for-all-messages.md)
     
-- [配信ステータス レポートの受信者のプロパティ](recipient-properties-for-delivery-status-reports.md)
+- [配信状態レポートの受信者プロパティ](recipient-properties-for-delivery-status-reports.md)
     
 

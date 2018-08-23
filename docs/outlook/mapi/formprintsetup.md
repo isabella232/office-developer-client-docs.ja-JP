@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6e82fe94-47bd-4a25-b25b-0ab6fe2db274
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ff46c58fbb352d56ae3df09d6949cdd5f614673f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800108"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム オブジェクトの印刷のセットアップ情報をについて説明します。 
   
@@ -43,7 +43,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulFlags**
   
@@ -69,7 +69,7 @@ MAPI_UNICODE
   
 > 印刷する添付ファイルがあるかどうかを示すフラグです。 添付ファイルを印刷する場合は、 **ulFPrintAttachments**メンバーが 1 に設定されています。 印刷するのには添付ファイルがない場合は、0 に設定されています。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **FORMPRINTSETUP**構造体を使用して、フォーム オブジェクトの印刷のセットアップ情報について説明します。 [IMAPIViewContext::GetPrintSetup](imapiviewcontext-getprintsetup.md)の実装は、 **FORMPRINTSETUP**構造体を入力し、 **GetPrintSetup**の_lppFormPrintSetup_の出力パラメーターの内容に返します。
   

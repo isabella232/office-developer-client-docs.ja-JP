@@ -1,5 +1,5 @@
 ---
-title: (Outlook でエクスポートされた Api) の定数
+title: (Outlook エクスポート Api) 定数
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799304"
 ---
-# <a name="constants-outlook-exported-apis"></a>(Outlook でエクスポートされた Api) の定数
+# <a name="constants-outlook-exported-apis"></a>(Outlook エクスポート Api) 定数
 
 このトピックには、Outlook にエクスポートする Api の定数の定義が含まれています。
   
@@ -48,9 +48,9 @@ const WORD  TZDEFINITION_FLAG_VALID_KEYNAME = 0x0002;
    
 ## <a name="see-also"></a>関連項目
 
-- [Outlook は、Api をエクスポートします。](outlook-exported-apis.md)
-- [Outlook によってエクスポートされた Api について](about-apis-exported-by-outlook.md)
-- [Outlook アイテムが変更されたが、(Outlook の補助参照) が保存されていないかどうかを決定します。](how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
-- [(Outlook の補助参照) を Outlook で連絡先の画像を表示するかどうかを指定します。](https://msdn.microsoft.com/en-us/library/office/gg262879.aspx)
+- [Outlook でエクスポートされている API](outlook-exported-apis.md)
+- [Outlook によりエクスポートされる API について](about-apis-exported-by-outlook.md)
+- [Outlook アイテムが変更されたが保存されていないかどうかを確認する (Outlook の補助リファレンス)](how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
+- [Outlook (Outlook の補助リファレンス) で、連絡先の画像を表示するかどうかを指定](https://msdn.microsoft.com/en-us/library/office/gg262879.aspx)
 - [使用可能なイベントの dispid (Outlook エクスポート Api)](available-events-and-their-dispids-outlook-exported-apis.md)
 

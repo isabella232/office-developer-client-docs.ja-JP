@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b465d015-9b62-4986-b0df-118121f60602
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a8f17c3cf3d3d00930f87acd004b24f683a3fc8c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19800071"
 ---
 # <a name="flatentrylist"></a>FLATENTRYLIST
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [FLATENTRY](flatentry.md)構造体の配列が含まれています。 
   
@@ -40,7 +40,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 **cEntries**
   
@@ -54,7 +54,7 @@ typedef struct
   
 > バイト配列 1 つまたは複数の**FLATENTRY**構造体を含むエンド ・ ツー ・ エンド配置します。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **AbEntries**アレイでは、各**FLATENTRY**構造体が揃えられた自然な境界に揃えられます。 余分なバイトは、確かに自然の配置の 2 つの**FLATENTRY**構造体の間に埋め込み文字として含まれます。 配列内の最初の**FLATENTRY**構造体は、 **abEntries**メンバーのオフセットが 8 であるために常に、正しく配置されます。 次の構造体のオフセットの計算には、最初のエントリのサイズを使用して、次に 4 の倍数に切り上げられます。 **FLATENTRY**構造体のサイズを計算するのにには、 [CbFLATENTRY](cbflatentry.md)マクロを使用します。 
   
@@ -71,6 +71,6 @@ typedef struct
 ## <a name="see-also"></a>関連項目
 
 - [FLATENTRY](flatentry.md)
-- [PidTagReplyRecipientEntries の標準的なプロパティ](pidtagreplyrecipiententries-canonical-property.md)
+- [PidTagReplyRecipientEntries 標準プロパティ](pidtagreplyrecipiententries-canonical-property.md)
 - [MAPI の構造](mapi-structures.md)
 

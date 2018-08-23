@@ -67,7 +67,7 @@ ms.locfileid: "19799445"
 |[PROP_MAPI_IDENTITY_ENTRYID](prop_mapi_identity_entryid.md) <br/> |取得または、アカウントのアドレス帳のエントリ ID を設定します。  <br/> |
 |[PROP_MAPI_TRANSPORT_FLAGS](prop_mapi_transport_flags.md) <br/> |Microsoft Outlook を使用して必要な同期タスクを決定し、アカウントをサポートしないユーザー インターフェイス (UI) 要素を無効にするトランスポートの設定を表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 列挙子内の次のアカウントを取得するときに**IOlkAccount**と**IOlkEnum::GetNext**をサポートしているアカウントを検索するときは、 **IOlkAccountManager::FindAccount**によってこのインターフェイスが返されます。 
   

@@ -23,7 +23,7 @@ ms.locfileid: "19800045"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プライベート Mapi32.dll へのパスを返します。
   
@@ -37,7 +37,7 @@ BOOL FGetComponentPath(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _szComponent_
   
@@ -59,7 +59,7 @@ BOOL FGetComponentPath(
   
 > [in]それが存在しない場合は、プライベート、Mapi32.dll コンポーネントをインストールするのには MAPI を指示します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
  **true**
   
@@ -69,7 +69,7 @@ BOOL FGetComponentPath(
   
 > パスが見つかりませんでした。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 プライベート Mapi32.dll へのパスを取得したい場合に、 **FGetComponentPath**関数を使用します。 
   
@@ -77,7 +77,7 @@ BOOL FGetComponentPath(
 
 
 
-[MAPI 負荷からの特定のバージョンを選択します。](how-to-choose-a-specific-version-of-mapi-to-load.md)
+[読み込む MAPI の特定のバージョンを選択する](how-to-choose-a-specific-version-of-mapi-to-load.md)
 
 
 [Mapi32.dll スタブのレジストリ設定](http://msdn.microsoft.com/en-us/library/dd162409.aspx)

@@ -23,7 +23,7 @@ ms.locfileid: "19800545"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 構成ファイル内の特定のフォームの説明を保存します。
   
@@ -33,7 +33,7 @@ HRESULT SaveForm(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _szFileName_
   
@@ -53,7 +53,7 @@ MAPI_E_NO_SUPPORT
   
 > **SaveForm**は、ローカルのフォームのコンテナー内のフォームを保存する可能性がありますと呼ばれます。 **SaveForm**は、ローカルのフォームのコンテナーではサポートされていません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアント アプリケーションは、指定したファイル名を持つファイルの現在のフォームの説明を保存するのには**IMAPIFormInfo::SaveForm**メソッドを呼び出します。 **SaveForm**は、構成ファイルを作成します。 
   
@@ -71,5 +71,5 @@ MAPI_E_EXTENDED_ERROR、 **SaveForm**場合、 [IMAPIProp::GetLastError](imapipr
   
 [MAPIERROR](mapierror.md)
   
-[IMAPIFormInfo: IMAPIProp](imapiforminfoimapiprop.md)
+[IMAPIFormInfo : IMAPIProp](imapiforminfoimapiprop.md)
 

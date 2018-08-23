@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 03691187-7c65-620b-576f-6ebe62a80830
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: da466fc9add8cbc385014782f31749d3b6522da9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800289"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Microsoft Exchange 2007 サーバーの自動検出サービスから取得した情報を表す拡張マークアップ言語 (XML) のストリームを返します。
   
@@ -45,7 +45,7 @@ HRESULT HrGetAutoDiscoverXML(
 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pwzAddress_
   

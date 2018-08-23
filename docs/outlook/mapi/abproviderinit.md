@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c3dcd0d4-018a-47b0-b040-227034ed59d8
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 03375a11be3f6f128db5f6147c5fbe901d0a0fa9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19799613"
 ---
 # <a name="abproviderinit"></a>ABProviderInit
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 操作のためのアドレス帳プロバイダーを初期化します。 
   
@@ -45,7 +45,7 @@ HRESULT ABProviderInit(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _hInstance_
   
@@ -97,7 +97,7 @@ MAPI_E_VERSION
   
 > MAPI によって使用されている SPI のバージョンは、このプロバイダーで使用されている SPI との互換性ではありません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI は、クライアント ログオンの後、アドレス帳プロバイダーを初期化するために**ABProviderInit**エントリ ポイント関数が呼び出されます。 
   
@@ -113,7 +113,7 @@ MAPI は、クライアント ログオンの後、アドレス帳プロバイ�
   
 ## <a name="see-also"></a>関連項目
 
-- [IABProvider: IUnknown](iabprovideriunknown.md) 
+- [IABProvider : IUnknown](iabprovideriunknown.md) 
 - [MSProviderInit](msproviderinit.md)
 - [XPProviderInit](xpproviderinit.md)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7a9fdf3f-fd76-40fb-8217-967c6efba5f6
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7309f65965fe3c88f927eeba0bbcccff97c479af
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800383"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 初期のアドレス帳コンテナーのエントリの識別子を返します。
   
@@ -34,7 +34,7 @@ HRESULT GetDefaultDir(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpcbEntryID_
   
@@ -50,7 +50,7 @@ S_OK
   
 > 既定のコンテナーのエントリ id が正常に返されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアント アプリケーションとサービス ・ プロバイダーは、既定のアドレス帳コンテナーのエントリの識別子を取得するために**GetDefaultDir**メソッドを呼び出します。 既定のコンテナーは、どのようなユーザーに表示されるアドレス帳を最初に開いたときに、アドレス帳に表示されます。 [IAddrBook::SetDefaultDir](iaddrbook-setdefaultdir.md)メソッドを呼び出すことで、既定のコンテナーが設定されていない場合は、MAPI は個人用アドレス帳 (PAB) ではない名前を持つ最初のコンテナーをデフォルトのコンテナーとして割り当てます。 このようなコンテナーが見つからない場合、個人用アドレス帳が既定のコンテナーになります。 
   
@@ -74,9 +74,9 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[PidTagContainerFlags の標準的なプロパティ](pidtagcontainerflags-canonical-property.md)
+[PidTagContainerFlags 標準プロパティ](pidtagcontainerflags-canonical-property.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

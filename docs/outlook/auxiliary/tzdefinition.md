@@ -29,7 +29,7 @@ typedef struct {
 } TZDEFINITION;
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 _wFlags_
   
@@ -47,7 +47,7 @@ _rgRules_
   
 > シフトが発生する可能性を示す規則の配列。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 *RgRules*では、少なくとも 1 つのルールをする必要があります。 *RgRules*の最初のルールは、最初のルールの*stStart*に関係なく、2 番目のルールが開始されるまでに使用するルールを使用すると見なされます。 
   

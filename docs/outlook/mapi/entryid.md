@@ -1,5 +1,5 @@
 ---
-title: エントリ ID
+title: ENTRYID
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8ebb21ca-5ad1-4dcc-97b6-2390664b5d8d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1b55703c9ad12e3645e6e9cb3dcfcbdf21b90d25
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800008"
 ---
-# <a name="entryid"></a>エントリ ID
+# <a name="entryid"></a>ENTRYID
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI オブジェクトのエントリ id が含まれています。 
   
@@ -41,7 +41,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **abFlags**
   
@@ -71,7 +71,7 @@ MAPI_THISSESSION
   
 > サービス プロバイダーによって使用されるバイナリ データの配列を示します。 クライアント アプリケーションは、この配列を使用できません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **エントリ ID**の構造を使用してメッセージを格納し、アドレス帳プロバイダーは、オブジェクトの一意の識別子を作成します。 次の種類のオブジェクトを識別するエントリの識別子が使用されます。 
   
@@ -125,7 +125,7 @@ MAPI_THISSESSION
   
 [IMAPISupport::CompareEntryIDs](imapisupport-compareentryids.md)
   
-[PidTagRecordKey の標準的なプロパティ](pidtagrecordkey-canonical-property.md)
+[PidTagRecordKey 標準プロパティ](pidtagrecordkey-canonical-property.md)
 
 
 [MAPI の構造](mapi-structures.md)

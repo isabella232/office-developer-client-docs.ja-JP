@@ -23,7 +23,7 @@ ms.locfileid: "19800820"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルの現在進行中のすべての非同期操作を停止します。
   
@@ -31,7 +31,7 @@ ms.locfileid: "19800820"
 HRESULT Abort( void );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 なし
   
@@ -45,7 +45,7 @@ MAPI_E_UNABLE_TO_ABORT
   
 > 非同期操作の進行中および停止することはできませんまたはが既に完了しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPITable::Abort**メソッドは、実行中である非同期操作を停止します。 
   
@@ -67,5 +67,5 @@ MAPI_E_UNABLE_TO_ABORT
   
 [IMAPITable::SortTable](imapitable-sorttable.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

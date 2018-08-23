@@ -23,7 +23,7 @@ ms.locfileid: "19800772"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 現在のプロファイルのセクションを開き、さらにアクセスするための[IProfSect](iprofsectimapiprop.md)ポインターを返します。 
   
@@ -35,7 +35,7 @@ LPPROFSECT FAR * lppProfileObj
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpUid_
   
@@ -75,7 +75,7 @@ MAPI_E_UNKNOWN_FLAGS
   
 > 予約またはサポートされていないフラグを使用し、操作が完了しなかったため、します。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 サポートのすべてのオブジェクトの**IMAPISupport::OpenProfileSection**メソッドを実装します。 サービス プロバイダーおよびメッセージ サービスは、プロファイルのセクションを開くし、 **IProfSect**インターフェイスの実装へのポインターを取得する**OpenProfileSection**を呼び出します。 
   
@@ -89,9 +89,9 @@ MAPI_E_UNKNOWN_FLAGS
 
 
 
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
   
-[IProfSect: IMAPIProp](iprofsectimapiprop.md)
+[IProfSect : IMAPIProp](iprofsectimapiprop.md)
   
 [MAPIUID](mapiuid.md)
   

@@ -23,7 +23,7 @@ ms.locfileid: "19800740"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ サービスのサポート オブジェクトを作成します。
   
@@ -50,7 +50,7 @@ S_OK
   
 > 構成のサポート オブジェクトが正常に作成されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 サポートのすべてのオブジェクトの**IMAPISupport::GetSvcConfigSupportObj**メソッドを実装します。 サービス プロバイダーは、メッセージ サービスのエントリ ポイント関数に渡す設定のサポート オブジェクトを作成するのには**GetSvcConfigSupportObj**を呼び出します。 
   
@@ -60,13 +60,13 @@ S_OK
 
 
 
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
   
 [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)
   
 [IMsgServiceAdmin::CreateMsgService](imsgserviceadmin-createmsgservice.md)
   
-[IProfAdmin: IUnknown](iprofadminiunknown.md)
+[IProfAdmin : IUnknown](iprofadminiunknown.md)
   
 [MSGSERVICEENTRY](msgserviceentry.md)
   

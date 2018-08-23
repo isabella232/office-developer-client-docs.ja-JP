@@ -1,5 +1,5 @@
 ---
-title: 高速シャット ダウンの概要
+title: 高速シャットダウンの概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,9 +15,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800028"
 ---
-# <a name="fast-shutdown-overview"></a>高速シャット ダウンの概要
+# <a name="fast-shutdown-overview"></a>高速シャットダウンの概要
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 高速シャット ダウンは、簡易クライアントがクライアント プロセスが終了する前に、データや設定を保存するのにはアクティブな MAPI セッションを持っているすべてのプロバイダーに通知する、クライアント プロセスのシャット ダウンを開始するのには MAPI クライアントのための機構です。 このトピックでは、高速シャット ダウンの基本的なメカニズムについて説明します。 
 
@@ -50,6 +50,6 @@ MAPI サブシステムは、Microsoft Outlook 2010 で起動して、Microsoft 
 ## <a name="see-also"></a>関連項目
 
 - [Mapi クライアントのシャット ダウン](client-shutdown-in-mapi.md)
-- [高速シャット ダウンのユーザー オプション](fast-shutdown-user-options.md)
-- [高速シャット ダウンのためのベスト プラクティス](best-practices-for-fast-shutdown.md)
+- [高速シャットダウンのユーザー オプション](fast-shutdown-user-options.md)
+- [高速シャットダウンのためのベスト プラクティス](best-practices-for-fast-shutdown.md)
 

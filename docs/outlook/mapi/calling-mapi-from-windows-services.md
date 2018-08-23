@@ -1,5 +1,5 @@
 ---
-title: Windows サービスからの MAPI の呼び出し
+title: Windows サービスからの MAPI 呼び出し
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799742"
 ---
-# <a name="calling-mapi-from-windows-services"></a>Windows サービスからの MAPI の呼び出し
+# <a name="calling-mapi-from-windows-services"></a>Windows サービスからの MAPI 呼び出し
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI に準拠したサービス ・ プロバイダーで動作する Windows サービスとして記述されている MAPI クライアント アプリケーションを有効にするには、MAPI には、いくつかの制限事項と要件が課されます。
   
@@ -43,12 +43,12 @@ Windows サービスとして作成され、MAPI クライアント ・ イン�
 
 
 
-[生じます](mapiinitialize.md)
+[MAPIInitialize](mapiinitialize.md)
   
 [MAPIINIT_0](mapiinit_0.md)
   
 [MAPILogonEx](mapilogonex.md)
 
 
-[操作環境についての問題](operating-environment-issues.md)
+[操作環境の問題](operating-environment-issues.md)
 

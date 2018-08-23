@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a0a17309-fc59-4822-be9b-b6f623b68bb1
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c190691c8cfcb9b049bcf9ee4f21436e20955def
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19799790"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ セッションおよびそのセッション内で作成されたすべてのメッセージを閉じます。 
   
@@ -39,7 +39,7 @@ VOID CloseIMsgSession(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpMsgSess_
   
@@ -49,7 +49,7 @@ VOID CloseIMsgSession(
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージ セッションは、クライアント アプリケーションと基になる OLE **IStorage**オブジェクトの上に構築されたいくつかの関連する MAPI **IMessage**オブジェクトを処理するサービス プロバイダーによって使用されます。 クライアントまたはプロバイダーは、 [OpenIMsgSession](openimsgsession.md)と**CloseIMsgSession**関数を使用して、メッセージ セッション中には、このようなメッセージの作成をラップします。 メッセージ セッションを開くと、クライアントまたはプロバイダーのポインターに渡します - **IStorage**オブジェクトの新しい**IMessage**を作成する[OpenIMsgOnIStg](openimsgonistg.md)への呼び出しで。 
   
