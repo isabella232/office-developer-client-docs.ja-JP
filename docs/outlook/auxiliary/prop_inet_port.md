@@ -14,25 +14,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799575"
 ---
-# <a name="propinetport"></a><span data-ttu-id="d6ca3-103">PROP_INET_PORT</span><span class="sxs-lookup"><span data-stu-id="d6ca3-103">PROP_INET_PORT</span></span>
+# <a name="propinetport"></a><span data-ttu-id="e5d24-103">PROP_INET_PORT</span><span class="sxs-lookup"><span data-stu-id="e5d24-103">PROP_INET_PORT</span></span>
 
-<span data-ttu-id="d6ca3-104">一般的なインターネット メールボックスのポート番号を表します。</span><span class="sxs-lookup"><span data-stu-id="d6ca3-104">Represents the port number for a general Internet mailbox.</span></span>
+<span data-ttu-id="e5d24-104">一般的なインターネット メールボックスのポート番号を表します。</span><span class="sxs-lookup"><span data-stu-id="e5d24-104">Represents the port number for a general Internet mailbox.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="d6ca3-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="d6ca3-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="e5d24-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="e5d24-105">Quick info</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="d6ca3-106">識別子:</span><span class="sxs-lookup"><span data-stu-id="d6ca3-106">Identifier:</span></span>  <br/> |<span data-ttu-id="d6ca3-107">0x0104</span><span class="sxs-lookup"><span data-stu-id="d6ca3-107">0x0104</span></span>  <br/> |
-|<span data-ttu-id="d6ca3-108">プロパティの種類:</span><span class="sxs-lookup"><span data-stu-id="d6ca3-108">Property type:</span></span>  <br/> |<span data-ttu-id="d6ca3-109">PT_DWORD</span><span class="sxs-lookup"><span data-stu-id="d6ca3-109">PT_DWORD</span></span>  <br/> |
-|<span data-ttu-id="d6ca3-110">プロパティ タグ。</span><span class="sxs-lookup"><span data-stu-id="d6ca3-110">Property tag:</span></span>  <br/> |<span data-ttu-id="d6ca3-111">0x01040003</span><span class="sxs-lookup"><span data-stu-id="d6ca3-111">0x01040003</span></span>  <br/> |
-|<span data-ttu-id="d6ca3-112">アクセス:</span><span class="sxs-lookup"><span data-stu-id="d6ca3-112">Access:</span></span>  <br/> |<span data-ttu-id="d6ca3-113">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="d6ca3-113">Read-only</span></span>  <br/> |
+|<span data-ttu-id="e5d24-106">識別子:</span><span class="sxs-lookup"><span data-stu-id="e5d24-106">Identifier:</span></span>  <br/> |<span data-ttu-id="e5d24-107">0x0104</span><span class="sxs-lookup"><span data-stu-id="e5d24-107">0x0104</span></span>  <br/> |
+|<span data-ttu-id="e5d24-108">プロパティの種類:</span><span class="sxs-lookup"><span data-stu-id="e5d24-108">Property type:</span></span>  <br/> |<span data-ttu-id="e5d24-109">PT_DWORD</span><span class="sxs-lookup"><span data-stu-id="e5d24-109">PT_DWORD</span></span>  <br/> |
+|<span data-ttu-id="e5d24-110">プロパティ タグ。</span><span class="sxs-lookup"><span data-stu-id="e5d24-110">Property tag:</span></span>  <br/> |<span data-ttu-id="e5d24-111">0x01040003</span><span class="sxs-lookup"><span data-stu-id="e5d24-111">0x01040003</span></span>  <br/> |
+|<span data-ttu-id="e5d24-112">アクセス:</span><span class="sxs-lookup"><span data-stu-id="e5d24-112">Access:</span></span>  <br/> |<span data-ttu-id="e5d24-113">読み取り専用</span><span class="sxs-lookup"><span data-stu-id="e5d24-113">Read-only</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="d6ca3-114">備考</span><span class="sxs-lookup"><span data-stu-id="d6ca3-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e5d24-114">注釈</span><span class="sxs-lookup"><span data-stu-id="e5d24-114">Remarks</span></span>
 
-<span data-ttu-id="d6ca3-115">例は、POP アカウントは 110 です。</span><span class="sxs-lookup"><span data-stu-id="d6ca3-115">An example is 110 for POP accounts.</span></span>
+<span data-ttu-id="e5d24-115">例は、POP アカウントは 110 です。</span><span class="sxs-lookup"><span data-stu-id="e5d24-115">An example is 110 for POP accounts.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="d6ca3-116">関連項目</span><span class="sxs-lookup"><span data-stu-id="d6ca3-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e5d24-116">関連項目</span><span class="sxs-lookup"><span data-stu-id="e5d24-116">See also</span></span>
 
-- [<span data-ttu-id="d6ca3-117">管理メッセージは、POP3 アカウントのダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="d6ca3-117">Managing message downloads for POP3 accounts</span></span>](managing-message-downloads-for-pop3-accounts.md) 
-- [<span data-ttu-id="d6ca3-118">定数 (アカウント管理 API)</span><span class="sxs-lookup"><span data-stu-id="d6ca3-118">Constants (Account management API)</span></span>](constants-account-management-api.md)
+- [<span data-ttu-id="e5d24-117">POP3 アカウントのメッセージ ダウンロードの管理</span><span class="sxs-lookup"><span data-stu-id="e5d24-117">Managing message downloads for POP3 accounts</span></span>](managing-message-downloads-for-pop3-accounts.md) 
+- [<span data-ttu-id="e5d24-118">定数 (アカウント管理 API)</span><span class="sxs-lookup"><span data-stu-id="e5d24-118">Constants (Account management API)</span></span>](constants-account-management-api.md)
 

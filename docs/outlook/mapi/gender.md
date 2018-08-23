@@ -1,5 +1,5 @@
 ---
-title: 性別
+title: Gender
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,15 +15,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800154"
 ---
-# <a name="gender"></a><span data-ttu-id="185b5-103">性別</span><span class="sxs-lookup"><span data-stu-id="185b5-103">Gender</span></span>
+# <a name="gender"></a><span data-ttu-id="a6248-103">Gender</span><span class="sxs-lookup"><span data-stu-id="a6248-103">Gender</span></span>
 
   
   
-<span data-ttu-id="185b5-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="185b5-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="a6248-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="a6248-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="185b5-105">メッセージング ユーザーの性別の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="185b5-105">Specifies the possible values for the gender of a messaging user.</span></span>
+<span data-ttu-id="a6248-105">メッセージング ユーザーの性別の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="a6248-105">Specifies the possible values for the gender of a messaging user.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="185b5-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="185b5-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="a6248-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="a6248-106">Quick info</span></span>
 
 ```cpp
 enum Gender { 
@@ -37,35 +37,35 @@ enum Gender {
 
 ```
 
-## <a name="members"></a><span data-ttu-id="185b5-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="185b5-107">Members</span></span>
+## <a name="members"></a><span data-ttu-id="a6248-107">Members</span><span class="sxs-lookup"><span data-stu-id="a6248-107">Members</span></span>
 
- <span data-ttu-id="185b5-108">_genderMin_</span><span class="sxs-lookup"><span data-stu-id="185b5-108">_genderMin_</span></span>
+ <span data-ttu-id="a6248-108">_genderMin_</span><span class="sxs-lookup"><span data-stu-id="a6248-108">_genderMin_</span></span>
   
-> <span data-ttu-id="185b5-109">性別のサポートされている別の値の最小数です。</span><span class="sxs-lookup"><span data-stu-id="185b5-109">The minimum number of different values supported for the gender.</span></span>
+> <span data-ttu-id="a6248-109">性別のサポートされている別の値の最小数です。</span><span class="sxs-lookup"><span data-stu-id="a6248-109">The minimum number of different values supported for the gender.</span></span>
     
- <span data-ttu-id="185b5-110">_genderUnspecified_</span><span class="sxs-lookup"><span data-stu-id="185b5-110">_genderUnspecified_</span></span>
+ <span data-ttu-id="a6248-110">_genderUnspecified_</span><span class="sxs-lookup"><span data-stu-id="a6248-110">_genderUnspecified_</span></span>
   
-> <span data-ttu-id="185b5-111">メッセージング ユーザーの性別は指定されていません。</span><span class="sxs-lookup"><span data-stu-id="185b5-111">The gender is not specified for the messaging user.</span></span>
+> <span data-ttu-id="a6248-111">メッセージング ユーザーの性別は指定されていません。</span><span class="sxs-lookup"><span data-stu-id="a6248-111">The gender is not specified for the messaging user.</span></span>
     
- <span data-ttu-id="185b5-112">_genderFemale_</span><span class="sxs-lookup"><span data-stu-id="185b5-112">_genderFemale_</span></span>
+ <span data-ttu-id="a6248-112">_genderFemale_</span><span class="sxs-lookup"><span data-stu-id="a6248-112">_genderFemale_</span></span>
   
-> <span data-ttu-id="185b5-113">メッセージングのユーザーは、(メス) です。</span><span class="sxs-lookup"><span data-stu-id="185b5-113">The messaging user is female.</span></span>
+> <span data-ttu-id="a6248-113">メッセージングのユーザーは、(メス) です。</span><span class="sxs-lookup"><span data-stu-id="a6248-113">The messaging user is female.</span></span>
     
- <span data-ttu-id="185b5-114">_genderMale_</span><span class="sxs-lookup"><span data-stu-id="185b5-114">_genderMale_</span></span>
+ <span data-ttu-id="a6248-114">_genderMale_</span><span class="sxs-lookup"><span data-stu-id="a6248-114">_genderMale_</span></span>
   
-> <span data-ttu-id="185b5-115">メッセージングのユーザーは、(オス) です。</span><span class="sxs-lookup"><span data-stu-id="185b5-115">The messaging user is male.</span></span>
+> <span data-ttu-id="a6248-115">メッセージングのユーザーは、(オス) です。</span><span class="sxs-lookup"><span data-stu-id="a6248-115">The messaging user is male.</span></span>
     
- <span data-ttu-id="185b5-116">_genderCount_</span><span class="sxs-lookup"><span data-stu-id="185b5-116">_genderCount_</span></span>
+ <span data-ttu-id="a6248-116">_genderCount_</span><span class="sxs-lookup"><span data-stu-id="a6248-116">_genderCount_</span></span>
   
-> <span data-ttu-id="185b5-117">性別のサポートされている別の値の数。</span><span class="sxs-lookup"><span data-stu-id="185b5-117">The number of different values supported for the gender.</span></span>
+> <span data-ttu-id="a6248-117">性別のサポートされている別の値の数。</span><span class="sxs-lookup"><span data-stu-id="a6248-117">The number of different values supported for the gender.</span></span>
     
- <span data-ttu-id="185b5-118">_genderMax_</span><span class="sxs-lookup"><span data-stu-id="185b5-118">_genderMax_</span></span>
+ <span data-ttu-id="a6248-118">_genderMax_</span><span class="sxs-lookup"><span data-stu-id="a6248-118">_genderMax_</span></span>
   
-> <span data-ttu-id="185b5-119">性別のサポートされている別の値の最大数です。</span><span class="sxs-lookup"><span data-stu-id="185b5-119">The maximum number of different values supported for the gender.</span></span>
+> <span data-ttu-id="a6248-119">性別のサポートされている別の値の最大数です。</span><span class="sxs-lookup"><span data-stu-id="a6248-119">The maximum number of different values supported for the gender.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="185b5-120">関連項目</span><span class="sxs-lookup"><span data-stu-id="185b5-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a6248-120">関連項目</span><span class="sxs-lookup"><span data-stu-id="a6248-120">See also</span></span>
 
 
 
-[<span data-ttu-id="185b5-121">PidTagGender の標準的なプロパティ</span><span class="sxs-lookup"><span data-stu-id="185b5-121">PidTagGender Canonical Property</span></span>](pidtaggender-canonical-property.md)
+[<span data-ttu-id="a6248-121">PidTagGender 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="a6248-121">PidTagGender Canonical Property</span></span>](pidtaggender-canonical-property.md)
 

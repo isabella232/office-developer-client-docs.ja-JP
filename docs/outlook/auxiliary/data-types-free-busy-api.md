@@ -14,14 +14,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799332"
 ---
-# <a name="data-types-freebusy-api"></a><span data-ttu-id="b4ddc-103">(空き時間情報の API) のデータ型</span><span class="sxs-lookup"><span data-stu-id="b4ddc-103">Data types (Free/busy API)</span></span>
+# <a name="data-types-freebusy-api"></a><span data-ttu-id="4d864-103">(空き時間情報の API) のデータ型</span><span class="sxs-lookup"><span data-stu-id="4d864-103">Data types (Free/busy API)</span></span>
 
-<span data-ttu-id="b4ddc-104">このセクションでは、空き/予約済み API 内のデータ型について説明します。</span><span class="sxs-lookup"><span data-stu-id="b4ddc-104">This section describes the data types in the Free/Busy API.</span></span>
+<span data-ttu-id="4d864-104">このセクションでは、空き/予約済み API 内のデータ型について説明します。</span><span class="sxs-lookup"><span data-stu-id="4d864-104">This section describes the data types in the Free/Busy API.</span></span>
   
-|<span data-ttu-id="b4ddc-105">**データ型**</span><span class="sxs-lookup"><span data-stu-id="b4ddc-105">**Data type**</span></span>|<span data-ttu-id="b4ddc-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="b4ddc-106">**Description**</span></span>|
+|<span data-ttu-id="4d864-105">**データ型**</span><span class="sxs-lookup"><span data-stu-id="4d864-105">**Data type**</span></span>|<span data-ttu-id="4d864-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="4d864-106">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="b4ddc-107">FBBlock_1</span><span class="sxs-lookup"><span data-stu-id="b4ddc-107">FBBlock_1</span></span>](fbblock_1.md) <br/> |<span data-ttu-id="b4ddc-108">空き時間情報データ ブロックを定義します。</span><span class="sxs-lookup"><span data-stu-id="b4ddc-108">Defines a free/busy block of data.</span></span>  <br/> |
-|[<span data-ttu-id="b4ddc-109">FBStatus</span><span class="sxs-lookup"><span data-stu-id="b4ddc-109">FBStatus</span></span>](fbstatus.md) <br/> |<span data-ttu-id="b4ddc-110">空き/予約済みブロックの空き/予約済みの状態の列挙です。</span><span class="sxs-lookup"><span data-stu-id="b4ddc-110">An enumeration for the free/busy status of free/busy blocks.</span></span>  <br/> |
-|[<span data-ttu-id="b4ddc-111">FBUser</span><span class="sxs-lookup"><span data-stu-id="b4ddc-111">FBUser</span></span>](fbuser.md) <br/> |<span data-ttu-id="b4ddc-112">利用可能な空き時間情報データがない可能性がありますまたは可能性のあるユーザーを識別します。</span><span class="sxs-lookup"><span data-stu-id="b4ddc-112">Identifies a user that may or may not have free/busy data available.</span></span>  <br/> |
+|[<span data-ttu-id="4d864-107">FBBlock_1</span><span class="sxs-lookup"><span data-stu-id="4d864-107">FBBlock_1</span></span>](fbblock_1.md) <br/> |<span data-ttu-id="4d864-108">空き時間情報データ ブロックを定義します。</span><span class="sxs-lookup"><span data-stu-id="4d864-108">Defines a free/busy block of data.</span></span>  <br/> |
+|[<span data-ttu-id="4d864-109">FBStatus</span><span class="sxs-lookup"><span data-stu-id="4d864-109">FBStatus</span></span>](fbstatus.md) <br/> |<span data-ttu-id="4d864-110">空き/予約済みブロックの空き/予約済みの状態の列挙です。</span><span class="sxs-lookup"><span data-stu-id="4d864-110">An enumeration for the free/busy status of free/busy blocks.</span></span>  <br/> |
+|[<span data-ttu-id="4d864-111">FBUser</span><span class="sxs-lookup"><span data-stu-id="4d864-111">FBUser</span></span>](fbuser.md) <br/> |<span data-ttu-id="4d864-112">利用可能な空き時間情報データがない可能性がありますまたは可能性のあるユーザーを識別します。</span><span class="sxs-lookup"><span data-stu-id="4d864-112">Identifies a user that may or may not have free/busy data available.</span></span>  <br/> |
    
 

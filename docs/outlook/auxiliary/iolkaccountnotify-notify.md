@@ -14,13 +14,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799489"
 ---
-# <a name="iolkaccountnotifynotify"></a><span data-ttu-id="42806-103">IOlkAccountNotify::Notify</span><span class="sxs-lookup"><span data-stu-id="42806-103">IOlkAccountNotify::Notify</span></span>
+# <a name="iolkaccountnotifynotify"></a><span data-ttu-id="f38ec-103">IOlkAccountNotify::Notify</span><span class="sxs-lookup"><span data-stu-id="f38ec-103">IOlkAccountNotify::Notify</span></span>
 
-<span data-ttu-id="42806-104">指定したアカウントへの変更がクライアントに通知します。</span><span class="sxs-lookup"><span data-stu-id="42806-104">Notifies the client of changes to the specified account.</span></span>
+<span data-ttu-id="f38ec-104">指定したアカウントへの変更がクライアントに通知します。</span><span class="sxs-lookup"><span data-stu-id="f38ec-104">Notifies the client of changes to the specified account.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="42806-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="42806-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="f38ec-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="f38ec-105">Quick info</span></span>
 
-<span data-ttu-id="42806-106">[IOlkAccountNotify](iolkaccountnotify.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="42806-106">See [IOlkAccountNotify](iolkaccountnotify.md).</span></span>
+<span data-ttu-id="f38ec-106">[IOlkAccountNotify](iolkaccountnotify.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f38ec-106">See [IOlkAccountNotify](iolkaccountnotify.md).</span></span>
   
 ```cpp
 HRESULT IOlkAccount::Notify(  
@@ -31,36 +31,36 @@ HRESULT IOlkAccount::Notify(
 
 ```
 
-## <a name="parameters"></a><span data-ttu-id="42806-107">Parameters</span><span class="sxs-lookup"><span data-stu-id="42806-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="f38ec-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f38ec-107">Parameters</span></span>
 
-<span data-ttu-id="42806-108">_dwNotify_</span><span class="sxs-lookup"><span data-stu-id="42806-108">_dwNotify_</span></span>
+<span data-ttu-id="f38ec-108">_dwNotify_</span><span class="sxs-lookup"><span data-stu-id="f38ec-108">_dwNotify_</span></span>
   
-> <span data-ttu-id="42806-109">[in]通知の種類です。</span><span class="sxs-lookup"><span data-stu-id="42806-109">[in] The type of notification.</span></span> <span data-ttu-id="42806-110">値は、次のいずれかする必要があります。</span><span class="sxs-lookup"><span data-stu-id="42806-110">The value must be one of the following:</span></span>
+> <span data-ttu-id="f38ec-109">[in]通知の種類です。</span><span class="sxs-lookup"><span data-stu-id="f38ec-109">[in] The type of notification.</span></span> <span data-ttu-id="f38ec-110">値は、次のいずれかする必要があります。</span><span class="sxs-lookup"><span data-stu-id="f38ec-110">The value must be one of the following:</span></span>
     
-   - <span data-ttu-id="42806-111">NOTIFY_ACCT_CHANGED</span><span class="sxs-lookup"><span data-stu-id="42806-111">NOTIFY_ACCT_CHANGED</span></span> 
+   - <span data-ttu-id="f38ec-111">NOTIFY_ACCT_CHANGED</span><span class="sxs-lookup"><span data-stu-id="f38ec-111">NOTIFY_ACCT_CHANGED</span></span> 
     
-   - <span data-ttu-id="42806-112">NOTIFY_ACCT_CREATED</span><span class="sxs-lookup"><span data-stu-id="42806-112">NOTIFY_ACCT_CREATED</span></span> 
+   - <span data-ttu-id="f38ec-112">NOTIFY_ACCT_CREATED</span><span class="sxs-lookup"><span data-stu-id="f38ec-112">NOTIFY_ACCT_CREATED</span></span> 
     
-   - <span data-ttu-id="42806-113">NOTIFY_ACCT_DELETED</span><span class="sxs-lookup"><span data-stu-id="42806-113">NOTIFY_ACCT_DELETED</span></span>
+   - <span data-ttu-id="f38ec-113">NOTIFY_ACCT_DELETED</span><span class="sxs-lookup"><span data-stu-id="f38ec-113">NOTIFY_ACCT_DELETED</span></span>
     
-   - <span data-ttu-id="42806-114">NOTIFY_ACCT_ORDER_CHANGED</span><span class="sxs-lookup"><span data-stu-id="42806-114">NOTIFY_ACCT_ORDER_CHANGED</span></span> 
+   - <span data-ttu-id="f38ec-114">NOTIFY_ACCT_ORDER_CHANGED</span><span class="sxs-lookup"><span data-stu-id="f38ec-114">NOTIFY_ACCT_ORDER_CHANGED</span></span> 
     
-   - <span data-ttu-id="42806-115">NOTIFY_ACCT_PREDELETED</span><span class="sxs-lookup"><span data-stu-id="42806-115">NOTIFY_ACCT_PREDELETED</span></span> 
+   - <span data-ttu-id="f38ec-115">NOTIFY_ACCT_PREDELETED</span><span class="sxs-lookup"><span data-stu-id="f38ec-115">NOTIFY_ACCT_PREDELETED</span></span> 
     
- <span data-ttu-id="42806-116">_dwAcctID_</span><span class="sxs-lookup"><span data-stu-id="42806-116">_dwAcctID_</span></span>
+ <span data-ttu-id="f38ec-116">_dwAcctID_</span><span class="sxs-lookup"><span data-stu-id="f38ec-116">_dwAcctID_</span></span>
   
-> <span data-ttu-id="42806-117">[in]作成されており、変更すると、アカウントのアカウント ID は、削除、または削除済みです。</span><span class="sxs-lookup"><span data-stu-id="42806-117">[in] The account ID of the account that has been created, changed, deleted, or pre-deleted.</span></span>
+> <span data-ttu-id="f38ec-117">[in]作成されており、変更すると、アカウントのアカウント ID は、削除、または削除済みです。</span><span class="sxs-lookup"><span data-stu-id="f38ec-117">[in] The account ID of the account that has been created, changed, deleted, or pre-deleted.</span></span>
     
- <span data-ttu-id="42806-118">_dwFlags_</span><span class="sxs-lookup"><span data-stu-id="42806-118">_dwFlags_</span></span>
+ <span data-ttu-id="f38ec-118">_dwFlags_</span><span class="sxs-lookup"><span data-stu-id="f38ec-118">_dwFlags_</span></span>
   
->  <span data-ttu-id="42806-119">[in]使用されません。</span><span class="sxs-lookup"><span data-stu-id="42806-119">[in] Not used.</span></span> <span data-ttu-id="42806-120">OLK_ACCOUNT_NO_FLAGS は、唯一サポートされている値です。</span><span class="sxs-lookup"><span data-stu-id="42806-120">OLK_ACCOUNT_NO_FLAGS is the only supported value.</span></span> 
+>  <span data-ttu-id="f38ec-119">[in]使用されません。</span><span class="sxs-lookup"><span data-stu-id="f38ec-119">[in] Not used.</span></span> <span data-ttu-id="f38ec-120">OLK_ACCOUNT_NO_FLAGS は、唯一サポートされている値です。</span><span class="sxs-lookup"><span data-stu-id="f38ec-120">OLK_ACCOUNT_NO_FLAGS is the only supported value.</span></span> 
     
-## <a name="return-values"></a><span data-ttu-id="42806-121">戻り値</span><span class="sxs-lookup"><span data-stu-id="42806-121">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="f38ec-121">戻り値</span><span class="sxs-lookup"><span data-stu-id="f38ec-121">Return values</span></span>
 
-<span data-ttu-id="42806-122">呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="42806-122">S_OK if the call succeeded; otherwise, an error code.</span></span>
+<span data-ttu-id="f38ec-122">呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="f38ec-122">S_OK if the call succeeded; otherwise, an error code.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="42806-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="42806-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f38ec-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="f38ec-123">See also</span></span>
 
-- [<span data-ttu-id="42806-124">定数 (アカウント管理 API)</span><span class="sxs-lookup"><span data-stu-id="42806-124">Constants (Account management API)</span></span>](constants-account-management-api.md)  
-- [<span data-ttu-id="42806-125">IOlkAccountManager</span><span class="sxs-lookup"><span data-stu-id="42806-125">IOlkAccountManager</span></span>](iolkaccountmanager.md)
+- [<span data-ttu-id="f38ec-124">定数 (アカウント管理 API)</span><span class="sxs-lookup"><span data-stu-id="f38ec-124">Constants (Account management API)</span></span>](constants-account-management-api.md)  
+- [<span data-ttu-id="f38ec-125">IOlkAccountManager</span><span class="sxs-lookup"><span data-stu-id="f38ec-125">IOlkAccountManager</span></span>](iolkaccountmanager.md)
 

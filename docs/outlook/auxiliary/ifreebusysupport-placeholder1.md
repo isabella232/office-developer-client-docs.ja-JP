@@ -14,13 +14,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799346"
 ---
-# <a name="ifreebusysupportplaceholder1"></a><span data-ttu-id="79c76-103">IFreeBusySupport::Placeholder1</span><span class="sxs-lookup"><span data-stu-id="79c76-103">IFreeBusySupport::Placeholder1</span></span>
+# <a name="ifreebusysupportplaceholder1"></a><span data-ttu-id="32911-103">IFreeBusySupport::Placeholder1</span><span class="sxs-lookup"><span data-stu-id="32911-103">IFreeBusySupport::Placeholder1</span></span>
 
-<span data-ttu-id="79c76-104">このメンバーは、プレース ホルダーではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="79c76-104">This member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="32911-104">このメンバーは、プレース ホルダーではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="32911-104">This member is a placeholder and is not supported.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="79c76-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="79c76-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="32911-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="32911-105">Quick info</span></span>
 
-<span data-ttu-id="79c76-106">[IFreeBusySupport](ifreebusysupport.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="79c76-106">See [IFreeBusySupport](ifreebusysupport.md).</span></span>
+<span data-ttu-id="32911-106">[IFreeBusySupport](ifreebusysupport.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="32911-106">See [IFreeBusySupport](ifreebusysupport.md).</span></span>
   
 ```cpp
 HRESULT Placeholder1( 
@@ -31,12 +31,12 @@ HRESULT Placeholder1(
 
 ```
 
-## <a name="return-values"></a><span data-ttu-id="79c76-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="79c76-107">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="32911-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="32911-107">Return values</span></span>
 
-<span data-ttu-id="79c76-108">S_OK</span><span class="sxs-lookup"><span data-stu-id="79c76-108">S_OK</span></span>
+<span data-ttu-id="32911-108">S_OK</span><span class="sxs-lookup"><span data-stu-id="32911-108">S_OK</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="79c76-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="79c76-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="32911-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="32911-109">See also</span></span>
 
-- [<span data-ttu-id="79c76-110">定数 (空き時間情報の API)</span><span class="sxs-lookup"><span data-stu-id="79c76-110">Constants (Free/busy API)</span></span>](constants-free-busy-api.md)
-- [<span data-ttu-id="79c76-111">IFreeBusySupport::LoadFreeBusyData</span><span class="sxs-lookup"><span data-stu-id="79c76-111">IFreeBusySupport::LoadFreeBusyData</span></span>](ifreebusysupport-loadfreebusydata.md)
+- [<span data-ttu-id="32911-110">定数 (空き時間情報の API)</span><span class="sxs-lookup"><span data-stu-id="32911-110">Constants (Free/busy API)</span></span>](constants-free-busy-api.md)
+- [<span data-ttu-id="32911-111">IFreeBusySupport::LoadFreeBusyData</span><span class="sxs-lookup"><span data-stu-id="32911-111">IFreeBusySupport::LoadFreeBusyData</span></span>](ifreebusysupport-loadfreebusydata.md)
 

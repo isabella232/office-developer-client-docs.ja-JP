@@ -14,13 +14,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799464"
 ---
-# <a name="iolkaccountmanagerfreememory"></a><span data-ttu-id="cf097-103">IOlkAccountManager::FreeMemory</span><span class="sxs-lookup"><span data-stu-id="cf097-103">IOlkAccountManager::FreeMemory</span></span>
+# <a name="iolkaccountmanagerfreememory"></a><span data-ttu-id="9c5c6-103">IOlkAccountManager::FreeMemory</span><span class="sxs-lookup"><span data-stu-id="9c5c6-103">IOlkAccountManager::FreeMemory</span></span>
 
-<span data-ttu-id="cf097-104">[IOlkAccountManager](iolkaccountmanager.md)インターフェイスによって割り当てられたメモリを解放します。</span><span class="sxs-lookup"><span data-stu-id="cf097-104">Frees memory allocated by the [IOlkAccountManager](iolkaccountmanager.md) interface.</span></span> 
+<span data-ttu-id="9c5c6-104">[IOlkAccountManager](iolkaccountmanager.md)インターフェイスによって割り当てられたメモリを解放します。</span><span class="sxs-lookup"><span data-stu-id="9c5c6-104">Frees memory allocated by the [IOlkAccountManager](iolkaccountmanager.md) interface.</span></span> 
   
-## <a name="quick-info"></a><span data-ttu-id="cf097-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="cf097-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="9c5c6-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="9c5c6-105">Quick info</span></span>
 
-<span data-ttu-id="cf097-106">See [IOlkAccountManager](iolkaccountmanager.md).</span><span class="sxs-lookup"><span data-stu-id="cf097-106">See [IOlkAccountManager](iolkaccountmanager.md).</span></span>
+<span data-ttu-id="9c5c6-106">See [IOlkAccountManager](iolkaccountmanager.md).</span><span class="sxs-lookup"><span data-stu-id="9c5c6-106">See [IOlkAccountManager](iolkaccountmanager.md).</span></span>
   
 ```cpp
 HRESULT IOlkAccountManager::FreeMemory (  
@@ -28,21 +28,21 @@ HRESULT IOlkAccountManager::FreeMemory (
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="cf097-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="cf097-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="9c5c6-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="9c5c6-107">Parameters</span></span>
 
-<span data-ttu-id="cf097-108">_pv_</span><span class="sxs-lookup"><span data-stu-id="cf097-108">_pv_</span></span>
+<span data-ttu-id="9c5c6-108">_pv_</span><span class="sxs-lookup"><span data-stu-id="9c5c6-108">_pv_</span></span>
   
-> <span data-ttu-id="cf097-109">[in]解放するメモリへのポインター。</span><span class="sxs-lookup"><span data-stu-id="cf097-109">[in] A pointer to the memory to free.</span></span>
+> <span data-ttu-id="9c5c6-109">[in]解放するメモリへのポインター。</span><span class="sxs-lookup"><span data-stu-id="9c5c6-109">[in] A pointer to the memory to free.</span></span>
     
-## <a name="return-values"></a><span data-ttu-id="cf097-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="cf097-110">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="9c5c6-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="9c5c6-110">Return values</span></span>
 
-<span data-ttu-id="cf097-111">呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="cf097-111">S_OK if the call succeeded; otherwise, an error code.</span></span>
+<span data-ttu-id="9c5c6-111">呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="9c5c6-111">S_OK if the call succeeded; otherwise, an error code.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="cf097-112">解釈</span><span class="sxs-lookup"><span data-stu-id="cf097-112">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9c5c6-112">解釈</span><span class="sxs-lookup"><span data-stu-id="9c5c6-112">Remarks</span></span>
 
-<span data-ttu-id="cf097-113">[IOlkAccountManager::GetOrder](iolkaccountmanager-getorder.md)によって割り当てられたメモリを解放するのにには、このメソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="cf097-113">Use this method to release memory allocated by [IOlkAccountManager::GetOrder](iolkaccountmanager-getorder.md).</span></span>
+<span data-ttu-id="9c5c6-113">[IOlkAccountManager::GetOrder](iolkaccountmanager-getorder.md)によって割り当てられたメモリを解放するのにには、このメソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="9c5c6-113">Use this method to release memory allocated by [IOlkAccountManager::GetOrder](iolkaccountmanager-getorder.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="cf097-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="cf097-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9c5c6-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="9c5c6-114">See also</span></span>
 
-- [<span data-ttu-id="cf097-115">IOlkAccountManager::GetOrder</span><span class="sxs-lookup"><span data-stu-id="cf097-115">IOlkAccountManager::GetOrder</span></span>](iolkaccountmanager-getorder.md)
+- [<span data-ttu-id="9c5c6-115">IOlkAccountManager::GetOrder</span><span class="sxs-lookup"><span data-stu-id="9c5c6-115">IOlkAccountManager::GetOrder</span></span>](iolkaccountmanager-getorder.md)
 

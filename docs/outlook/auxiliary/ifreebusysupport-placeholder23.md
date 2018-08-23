@@ -14,13 +14,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799358"
 ---
-# <a name="ifreebusysupportplaceholder23"></a><span data-ttu-id="b3faf-103">IFreeBusySupport::Placeholder23</span><span class="sxs-lookup"><span data-stu-id="b3faf-103">IFreeBusySupport::Placeholder23</span></span>
+# <a name="ifreebusysupportplaceholder23"></a><span data-ttu-id="6a7c2-103">IFreeBusySupport::Placeholder23</span><span class="sxs-lookup"><span data-stu-id="6a7c2-103">IFreeBusySupport::Placeholder23</span></span>
 
-<span data-ttu-id="b3faf-104">このメンバーは、プレース ホルダーではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b3faf-104">This member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="6a7c2-104">このメンバーは、プレース ホルダーではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6a7c2-104">This member is a placeholder and is not supported.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="b3faf-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="b3faf-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="6a7c2-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="6a7c2-105">Quick info</span></span>
 
-<span data-ttu-id="b3faf-106">[IFreeBusySupport](ifreebusysupport.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b3faf-106">See [IFreeBusySupport](ifreebusysupport.md).</span></span>
+<span data-ttu-id="6a7c2-106">[IFreeBusySupport](ifreebusysupport.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6a7c2-106">See [IFreeBusySupport](ifreebusysupport.md).</span></span>
   
 ```cpp
 HRESULT Placeholder23( 
@@ -32,16 +32,16 @@ HRESULT Placeholder23(
 );
 ```
 
-## <a name="return-values"></a><span data-ttu-id="b3faf-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="b3faf-107">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="6a7c2-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="6a7c2-107">Return values</span></span>
 
-<span data-ttu-id="b3faf-108">常に E_NOTIMP をこのメンバーのプレース ホルダーは、サポート。</span><span class="sxs-lookup"><span data-stu-id="b3faf-108">Always E_NOTIMPL, because this member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="6a7c2-108">常に E_NOTIMP をこのメンバーのプレース ホルダーは、サポート。</span><span class="sxs-lookup"><span data-stu-id="6a7c2-108">Always E_NOTIMPL, because this member is a placeholder and is not supported.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="b3faf-109">備考</span><span class="sxs-lookup"><span data-stu-id="b3faf-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6a7c2-109">注釈</span><span class="sxs-lookup"><span data-stu-id="6a7c2-109">Remarks</span></span>
 
-<span data-ttu-id="b3faf-110">このメンバーは、E_NOTIMPL を返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="b3faf-110">This member must return E_NOTIMPL.</span></span>
+<span data-ttu-id="6a7c2-110">このメンバーは、E_NOTIMPL を返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="6a7c2-110">This member must return E_NOTIMPL.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="b3faf-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="b3faf-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6a7c2-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="6a7c2-111">See also</span></span>
 
-- [<span data-ttu-id="b3faf-112">定数 (空き時間情報の API)</span><span class="sxs-lookup"><span data-stu-id="b3faf-112">Constants (Free/busy API)</span></span>](constants-free-busy-api.md) 
-- [<span data-ttu-id="b3faf-113">IFreeBusySupport::LoadFreeBusyData</span><span class="sxs-lookup"><span data-stu-id="b3faf-113">IFreeBusySupport::LoadFreeBusyData</span></span>](ifreebusysupport-loadfreebusydata.md)
+- [<span data-ttu-id="6a7c2-112">定数 (空き時間情報の API)</span><span class="sxs-lookup"><span data-stu-id="6a7c2-112">Constants (Free/busy API)</span></span>](constants-free-busy-api.md) 
+- [<span data-ttu-id="6a7c2-113">IFreeBusySupport::LoadFreeBusyData</span><span class="sxs-lookup"><span data-stu-id="6a7c2-113">IFreeBusySupport::LoadFreeBusyData</span></span>](ifreebusysupport-loadfreebusydata.md)
 

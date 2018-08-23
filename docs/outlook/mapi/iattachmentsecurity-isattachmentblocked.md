@@ -19,13 +19,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800411"
 ---
-# <a name="iattachmentsecurityisattachmentblocked"></a><span data-ttu-id="378ec-103">IAttachmentSecurity::IsAttachmentBlocked</span><span class="sxs-lookup"><span data-stu-id="378ec-103">IAttachmentSecurity::IsAttachmentBlocked</span></span>
+# <a name="iattachmentsecurityisattachmentblocked"></a><span data-ttu-id="b24c3-103">IAttachmentSecurity::IsAttachmentBlocked</span><span class="sxs-lookup"><span data-stu-id="b24c3-103">IAttachmentSecurity::IsAttachmentBlocked</span></span>
 
   
   
-<span data-ttu-id="378ec-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="378ec-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="b24c3-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="b24c3-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="378ec-105">指定した添付ファイルが表示して、インデックス作成の Microsoft Outlook 2010 または Microsoft Outlook 2013 でブロックされているかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="378ec-105">Checks if a specified attachment is blocked by Microsoft Outlook 2010 or Microsoft Outlook 2013 for viewing and indexing.</span></span>
+<span data-ttu-id="b24c3-105">指定した添付ファイルが表示して、インデックス作成の Microsoft Outlook 2010 または Microsoft Outlook 2013 でブロックされているかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="b24c3-105">Checks if a specified attachment is blocked by Microsoft Outlook 2010 or Microsoft Outlook 2013 for viewing and indexing.</span></span>
   
 ```cpp
 HRESULT IAttachmentSecurity::IsAttachmentBlocked( 
@@ -34,21 +34,21 @@ HRESULT IAttachmentSecurity::IsAttachmentBlocked(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="378ec-106">Parameters</span><span class="sxs-lookup"><span data-stu-id="378ec-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="b24c3-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b24c3-106">Parameters</span></span>
 
- <span data-ttu-id="378ec-107">_pwszFileName_</span><span class="sxs-lookup"><span data-stu-id="378ec-107">_pwszFileName_</span></span>
+ <span data-ttu-id="b24c3-107">_pwszFileName_</span><span class="sxs-lookup"><span data-stu-id="b24c3-107">_pwszFileName_</span></span>
   
-> <span data-ttu-id="378ec-108">[in]添付ファイルのファイル名へのポインター。</span><span class="sxs-lookup"><span data-stu-id="378ec-108">[in] Pointer to the filename of an attachment.</span></span>
+> <span data-ttu-id="b24c3-108">[in]添付ファイルのファイル名へのポインター。</span><span class="sxs-lookup"><span data-stu-id="b24c3-108">[in] Pointer to the filename of an attachment.</span></span>
     
- <span data-ttu-id="378ec-109">_pfBlocked_</span><span class="sxs-lookup"><span data-stu-id="378ec-109">_pfBlocked_</span></span>
+ <span data-ttu-id="b24c3-109">_pfBlocked_</span><span class="sxs-lookup"><span data-stu-id="b24c3-109">_pfBlocked_</span></span>
   
-> <span data-ttu-id="378ec-110">[out]ポインターの値を示す**true の**場合は、指定した添付ファイルはブロックされます。それ以外の場合、 **false を指定**します。</span><span class="sxs-lookup"><span data-stu-id="378ec-110">[out] Pointer to a value indicating **true** if the specified attachment is blocked; otherwise, **false**.</span></span>
+> <span data-ttu-id="b24c3-110">[out]ポインターの値を示す**true の**場合は、指定した添付ファイルはブロックされます。それ以外の場合、 **false を指定**します。</span><span class="sxs-lookup"><span data-stu-id="b24c3-110">[out] Pointer to a value indicating **true** if the specified attachment is blocked; otherwise, **false**.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="378ec-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="378ec-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b24c3-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="b24c3-111">See also</span></span>
 
 
 
-[<span data-ttu-id="378ec-112">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="378ec-112">MAPI Constants</span></span>](mapi-constants.md)
+[<span data-ttu-id="b24c3-112">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="b24c3-112">MAPI Constants</span></span>](mapi-constants.md)
   
-[<span data-ttu-id="378ec-113">添付ファイルがブロックされていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="378ec-113">Verify an Attachment is Blocked</span></span>](how-to-verify-an-attachment-is-blocked.md)
+[<span data-ttu-id="b24c3-113">添付がプロセスされていることを確認する</span><span class="sxs-lookup"><span data-stu-id="b24c3-113">Verify an Attachment is Blocked</span></span>](how-to-verify-an-attachment-is-blocked.md)
 

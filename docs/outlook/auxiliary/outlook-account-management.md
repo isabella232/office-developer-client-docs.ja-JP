@@ -1,5 +1,5 @@
 ---
-title: Outlook アカウントの管理
+title: Outlook アカウント管理
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,14 +14,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799545"
 ---
-# <a name="outlook-account-management"></a><span data-ttu-id="dba7e-104">Outlook アカウントの管理</span><span class="sxs-lookup"><span data-stu-id="dba7e-104">Outlook account management</span></span>
+# <a name="outlook-account-management"></a><span data-ttu-id="c7839-104">Outlook アカウント管理</span><span class="sxs-lookup"><span data-stu-id="c7839-104">Outlook account management</span></span>
 
-<span data-ttu-id="dba7e-105">このセクションでは、アカウント情報へのアクセスを提供し、アカウントの変更通知をサポートしているアカウント管理 API について説明します。</span><span class="sxs-lookup"><span data-stu-id="dba7e-105">This section describes the Account Management API which provides access to account information and supports account-change notifications.</span></span> <span data-ttu-id="dba7e-106">迷惑メールからアカウントを保護して、POP3 アカウントのメッセージのダウンロードを管理する方法についても含まれています。</span><span class="sxs-lookup"><span data-stu-id="dba7e-106">It also includes information about protecting accounts from spam and managing message downloads for POP3 accounts.</span></span>
+<span data-ttu-id="c7839-105">このセクションでは、アカウント情報へのアクセスを提供し、アカウントの変更通知をサポートしているアカウント管理 API について説明します。</span><span class="sxs-lookup"><span data-stu-id="c7839-105">This section describes the Account Management API which provides access to account information and supports account-change notifications.</span></span> <span data-ttu-id="c7839-106">迷惑メールからアカウントを保護して、POP3 アカウントのメッセージのダウンロードを管理する方法についても含まれています。</span><span class="sxs-lookup"><span data-stu-id="c7839-106">It also includes information about protecting accounts from spam and managing message downloads for POP3 accounts.</span></span>
 
-- [<span data-ttu-id="dba7e-107">アカウント管理 API について</span><span class="sxs-lookup"><span data-stu-id="dba7e-107">About the Account Management API</span></span>](about-the-account-management-api.md)
+- [<span data-ttu-id="c7839-107">アカウント管理 API について</span><span class="sxs-lookup"><span data-stu-id="c7839-107">About the Account Management API</span></span>](about-the-account-management-api.md)
     
-- [<span data-ttu-id="dba7e-108">スパム対策の設定について</span><span class="sxs-lookup"><span data-stu-id="dba7e-108">About anti-spam settings</span></span>](about-anti-spam-settings.md)
+- [<span data-ttu-id="c7839-108">スパム対策の設定について</span><span class="sxs-lookup"><span data-stu-id="c7839-108">About anti-spam settings</span></span>](about-anti-spam-settings.md)
     
-- [<span data-ttu-id="dba7e-109">管理メッセージは、POP3 アカウントのダウンロードします。</span><span class="sxs-lookup"><span data-stu-id="dba7e-109">Managing message downloads for POP3 accounts</span></span>](managing-message-downloads-for-pop3-accounts.md)
+- [<span data-ttu-id="c7839-109">POP3 アカウントのメッセージ ダウンロードの管理</span><span class="sxs-lookup"><span data-stu-id="c7839-109">Managing message downloads for POP3 accounts</span></span>](managing-message-downloads-for-pop3-accounts.md)
     
 

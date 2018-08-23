@@ -15,33 +15,33 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799871"
 ---
-# <a name="default-message-stores"></a><span data-ttu-id="894c4-103">����̃��[���̕ۑ��ꏊ</span><span class="sxs-lookup"><span data-stu-id="894c4-103">Default Message Stores</span></span>
+# <a name="default-message-stores"></a><span data-ttu-id="f4587-103">����̃��[���̕ۑ��ꏊ</span><span class="sxs-lookup"><span data-stu-id="f4587-103">Default Message Stores</span></span>
 
   
   
-<span data-ttu-id="894c4-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="894c4-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="f4587-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="f4587-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="894c4-105">既定のメッセージ ストアは、いずれかの一般的な目的のタスクをメッセージングのクライアント アプリケーションを使用できます。</span><span class="sxs-lookup"><span data-stu-id="894c4-105">A default message store is one that client applications can use for general purpose messaging tasks.</span></span> <span data-ttu-id="894c4-106">いくつかのメッセージ ストア プロバイダーは、既定のメッセージ ストアとして使用する場合に必要になるメッセージ ストア プロバイダーの省略可能な機能があります。</span><span class="sxs-lookup"><span data-stu-id="894c4-106">There are a number of optional features for message store providers that become required if the message store provider is to be used as the default message store.</span></span> <span data-ttu-id="894c4-107">これは、とおりです。</span><span class="sxs-lookup"><span data-stu-id="894c4-107">They are as follows:</span></span>
+<span data-ttu-id="f4587-105">既定のメッセージ ストアは、いずれかの一般的な目的のタスクをメッセージングのクライアント アプリケーションを使用できます。</span><span class="sxs-lookup"><span data-stu-id="f4587-105">A default message store is one that client applications can use for general purpose messaging tasks.</span></span> <span data-ttu-id="f4587-106">いくつかのメッセージ ストア プロバイダーは、既定のメッセージ ストアとして使用する場合に必要になるメッセージ ストア プロバイダーの省略可能な機能があります。</span><span class="sxs-lookup"><span data-stu-id="f4587-106">There are a number of optional features for message store providers that become required if the message store provider is to be used as the default message store.</span></span> <span data-ttu-id="f4587-107">これは、とおりです。</span><span class="sxs-lookup"><span data-stu-id="f4587-107">They are as follows:</span></span>
   
-- <span data-ttu-id="894c4-108">実装の特別なフォルダー: 受信トレイ、送信トレイ、および検索結果のフォルダーです。</span><span class="sxs-lookup"><span data-stu-id="894c4-108">Implementing the special folders: the Inbox, Outbox, and search-results folders.</span></span>
+- <span data-ttu-id="f4587-108">実装の特別なフォルダー: 受信トレイ、送信トレイ、および検索結果のフォルダーです。</span><span class="sxs-lookup"><span data-stu-id="f4587-108">Implementing the special folders: the Inbox, Outbox, and search-results folders.</span></span>
     
-- <span data-ttu-id="894c4-109">�J���� nonread �̃��|�[�g��񋟂��܂��B</span><span class="sxs-lookup"><span data-stu-id="894c4-109">Providing read and nonread reports.</span></span>
+- <span data-ttu-id="f4587-109">�J���� nonread �̃��|�[�g��񋟂��܂��B</span><span class="sxs-lookup"><span data-stu-id="f4587-109">Providing read and nonread reports.</span></span>
     
-- <span data-ttu-id="894c4-110">���M����є��M�������b�Z�[�W�̑��M������܂��B</span><span class="sxs-lookup"><span data-stu-id="894c4-110">Allowing incoming and outgoing message submissions.</span></span>
+- <span data-ttu-id="f4587-110">���M����є��M�������b�Z�[�W�̑��M������܂��B</span><span class="sxs-lookup"><span data-stu-id="f4587-110">Allowing incoming and outgoing message submissions.</span></span>
     
-- <span data-ttu-id="894c4-111">�N���X�̔C�ӂ̃��b�Z�[�W����b�Z�[�W�̍쐬������܂��B</span><span class="sxs-lookup"><span data-stu-id="894c4-111">Allowing the creation of messages with arbitrary message classes.</span></span>
+- <span data-ttu-id="f4587-111">�N���X�̔C�ӂ̃��b�Z�[�W����b�Z�[�W�̍쐬������܂��B</span><span class="sxs-lookup"><span data-stu-id="f4587-111">Allowing the creation of messages with arbitrary message classes.</span></span>
     
-- <span data-ttu-id="894c4-112">���O�t���ƕ����l�̃v���p�e�B��T�|�[�g���܂��B</span><span class="sxs-lookup"><span data-stu-id="894c4-112">Supporting named and multiple-value properties.</span></span>
+- <span data-ttu-id="f4587-112">���O�t���ƕ����l�̃v���p�e�B��T�|�[�g���܂��B</span><span class="sxs-lookup"><span data-stu-id="f4587-112">Supporting named and multiple-value properties.</span></span>
     
-- <span data-ttu-id="894c4-113">メッセージ ストア プロバイダーは、トランスポート プロバイダーと密接に関連があって、 [IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md)メソッドをサポートします。</span><span class="sxs-lookup"><span data-stu-id="894c4-113">Supporting the [IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md) method, even if the message store provider is tightly coupled with a transport provider.</span></span> 
+- <span data-ttu-id="f4587-113">メッセージ ストア プロバイダーは、トランスポート プロバイダーと密接に関連があって、 [IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md)メソッドをサポートします。</span><span class="sxs-lookup"><span data-stu-id="f4587-113">Supporting the [IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md) method, even if the message store provider is tightly coupled with a transport provider.</span></span> 
     
-- <span data-ttu-id="894c4-p102">�֘A����R���e���c�̃e�[�u����T�|�[�g���܂��B�ڍׂɂ��ẮA [�e�[�u���ȓ�e](contents-tables.md)��Q�Ƃ��Ă��������B</span><span class="sxs-lookup"><span data-stu-id="894c4-p102">Supporting associated contents tables. For more information, see [Contents Tables](contents-tables.md).</span></span>
+- <span data-ttu-id="f4587-p102">�֘A����R���e���c�̃e�[�u����T�|�[�g���܂��B�ڍׂɂ��ẮA [�e�[�u���ȓ�e](contents-tables.md)��Q�Ƃ��Ă��������B</span><span class="sxs-lookup"><span data-stu-id="f4587-p102">Supporting associated contents tables. For more information, see [Contents Tables](contents-tables.md).</span></span>
     
-- <span data-ttu-id="894c4-116">���M���b�Z�[�W�Ƀ��b�Z�[�W������ꍇ�ɁAMAPI �X�v�[���[�̒ʒm��T�|�[�g���܂��B</span><span class="sxs-lookup"><span data-stu-id="894c4-116">Supporting notification of the MAPI spooler when there are messages in the outgoing message queue.</span></span>
+- <span data-ttu-id="f4587-116">���M���b�Z�[�W�Ƀ��b�Z�[�W������ꍇ�ɁAMAPI �X�v�[���[�̒ʒm��T�|�[�g���܂��B</span><span class="sxs-lookup"><span data-stu-id="f4587-116">Supporting notification of the MAPI spooler when there are messages in the outgoing message queue.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="894c4-117">�֘A����</span><span class="sxs-lookup"><span data-stu-id="894c4-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f4587-117">�֘A����</span><span class="sxs-lookup"><span data-stu-id="f4587-117">See also</span></span>
 
 
 
-<span data-ttu-id="894c4-118">[MAPI ���b�Z�[�W �X�g�A �v���o�C�_�[�̊J��](developing-a-mapi-message-store-provider.md)</span><span class="sxs-lookup"><span data-stu-id="894c4-118">[Developing a MAPI Message Store Provider](developing-a-mapi-message-store-provider.md)</span></span>
+<span data-ttu-id="f4587-118">[MAPI ���b�Z�[�W �X�g�A �v���o�C�_�[�̊J��](developing-a-mapi-message-store-provider.md)</span><span class="sxs-lookup"><span data-stu-id="f4587-118">[Developing a MAPI Message Store Provider](developing-a-mapi-message-store-provider.md)</span></span>
 

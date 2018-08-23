@@ -14,13 +14,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799327"
 ---
-# <a name="ienumfbblockskip"></a><span data-ttu-id="04e30-103">IEnumFBBlock::Skip</span><span class="sxs-lookup"><span data-stu-id="04e30-103">IEnumFBBlock::Skip</span></span>
+# <a name="ienumfbblockskip"></a><span data-ttu-id="4c0d4-103">IEnumFBBlock::Skip</span><span class="sxs-lookup"><span data-stu-id="4c0d4-103">IEnumFBBlock::Skip</span></span>
 
-<span data-ttu-id="04e30-104">指定された空き時間情報データのブロック数をスキップします。</span><span class="sxs-lookup"><span data-stu-id="04e30-104">Skips a specified number of blocks of free/busy data.</span></span>
+<span data-ttu-id="4c0d4-104">指定された空き時間情報データのブロック数をスキップします。</span><span class="sxs-lookup"><span data-stu-id="4c0d4-104">Skips a specified number of blocks of free/busy data.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="04e30-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="04e30-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="4c0d4-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="4c0d4-105">Quick info</span></span>
 
-<span data-ttu-id="04e30-106">[IEnumFBBlock](ienumfbblock.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="04e30-106">See [IEnumFBBlock](ienumfbblock.md).</span></span>
+<span data-ttu-id="4c0d4-106">[IEnumFBBlock](ienumfbblock.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4c0d4-106">See [IEnumFBBlock](ienumfbblock.md).</span></span>
   
 ```cpp
 HRESULT Skip(  
@@ -28,20 +28,20 @@ HRESULT Skip(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="04e30-107">Parameters</span><span class="sxs-lookup"><span data-stu-id="04e30-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="4c0d4-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4c0d4-107">Parameters</span></span>
 
-<span data-ttu-id="04e30-108">_celt_</span><span class="sxs-lookup"><span data-stu-id="04e30-108">_celt_</span></span>
+<span data-ttu-id="4c0d4-108">_celt_</span><span class="sxs-lookup"><span data-stu-id="4c0d4-108">_celt_</span></span>
   
->  <span data-ttu-id="04e30-109">[in]スキップするのには、空き/予約済みブロックの数。</span><span class="sxs-lookup"><span data-stu-id="04e30-109">[in] The number of free/busy blocks to skip.</span></span> 
+>  <span data-ttu-id="4c0d4-109">[in]スキップするのには、空き/予約済みブロックの数。</span><span class="sxs-lookup"><span data-stu-id="4c0d4-109">[in] The number of free/busy blocks to skip.</span></span> 
     
-## <a name="return-values"></a><span data-ttu-id="04e30-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="04e30-110">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="4c0d4-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="4c0d4-110">Return values</span></span>
 
-<span data-ttu-id="04e30-111">呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="04e30-111">S_OK if the call succeeded; otherwise, an error code.</span></span>
+<span data-ttu-id="4c0d4-111">呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="4c0d4-111">S_OK if the call succeeded; otherwise, an error code.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="04e30-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="04e30-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4c0d4-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="4c0d4-112">See also</span></span>
 
-- [<span data-ttu-id="04e30-113">IEnumFBBlock::Clone</span><span class="sxs-lookup"><span data-stu-id="04e30-113">IEnumFBBlock::Clone</span></span>](ienumfbblock-clone.md)  
-- [<span data-ttu-id="04e30-114">IEnumFBBlock::Next</span><span class="sxs-lookup"><span data-stu-id="04e30-114">IEnumFBBlock::Next</span></span>](ienumfbblock-next.md)  
-- [<span data-ttu-id="04e30-115">IEnumFBBlock::Reset</span><span class="sxs-lookup"><span data-stu-id="04e30-115">IEnumFBBlock::Reset</span></span>](ienumfbblock-reset.md)  
-- [<span data-ttu-id="04e30-116">IEnumFBBlock::Restrict</span><span class="sxs-lookup"><span data-stu-id="04e30-116">IEnumFBBlock::Restrict</span></span>](ienumfbblock-restrict.md)
+- [<span data-ttu-id="4c0d4-113">IEnumFBBlock::Clone</span><span class="sxs-lookup"><span data-stu-id="4c0d4-113">IEnumFBBlock::Clone</span></span>](ienumfbblock-clone.md)  
+- [<span data-ttu-id="4c0d4-114">IEnumFBBlock::Next</span><span class="sxs-lookup"><span data-stu-id="4c0d4-114">IEnumFBBlock::Next</span></span>](ienumfbblock-next.md)  
+- [<span data-ttu-id="4c0d4-115">IEnumFBBlock::Reset</span><span class="sxs-lookup"><span data-stu-id="4c0d4-115">IEnumFBBlock::Reset</span></span>](ienumfbblock-reset.md)  
+- [<span data-ttu-id="4c0d4-116">IEnumFBBlock::Restrict</span><span class="sxs-lookup"><span data-stu-id="4c0d4-116">IEnumFBBlock::Restrict</span></span>](ienumfbblock-restrict.md)
 

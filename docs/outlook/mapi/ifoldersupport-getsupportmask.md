@@ -19,13 +19,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800436"
 ---
-# <a name="ifoldersupportgetsupportmask"></a><span data-ttu-id="0fa64-103">IFolderSupport::GetSupportMask</span><span class="sxs-lookup"><span data-stu-id="0fa64-103">IFolderSupport::GetSupportMask</span></span>
+# <a name="ifoldersupportgetsupportmask"></a><span data-ttu-id="03dcd-103">IFolderSupport::GetSupportMask</span><span class="sxs-lookup"><span data-stu-id="03dcd-103">IFolderSupport::GetSupportMask</span></span>
 
   
   
-<span data-ttu-id="0fa64-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="0fa64-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="03dcd-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="03dcd-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="0fa64-105">共有フォルダーのサポートに関する情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="0fa64-105">Gets information about a folder's support for sharing.</span></span>
+<span data-ttu-id="03dcd-105">共有フォルダーのサポートに関する情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="03dcd-105">Gets information about a folder's support for sharing.</span></span>
   
 ```cpp
 HRESULT GetSupportMask( 
@@ -33,24 +33,24 @@ HRESULT GetSupportMask(
 ); 
 ```
 
-## <a name="parameters"></a><span data-ttu-id="0fa64-106">Parameters</span><span class="sxs-lookup"><span data-stu-id="0fa64-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="03dcd-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="03dcd-106">Parameters</span></span>
 
- <span data-ttu-id="0fa64-107">_pdwSupportMask_</span><span class="sxs-lookup"><span data-stu-id="0fa64-107">_pdwSupportMask_</span></span>
+ <span data-ttu-id="03dcd-107">_pdwSupportMask_</span><span class="sxs-lookup"><span data-stu-id="03dcd-107">_pdwSupportMask_</span></span>
   
-> <span data-ttu-id="0fa64-108">[out]フォルダーが共有をサポートしているかを示すビットマスクです。</span><span class="sxs-lookup"><span data-stu-id="0fa64-108">[out] A bitmask indicating if the folder supports sharing.</span></span>
+> <span data-ttu-id="03dcd-108">[out]フォルダーが共有をサポートしているかを示すビットマスクです。</span><span class="sxs-lookup"><span data-stu-id="03dcd-108">[out] A bitmask indicating if the folder supports sharing.</span></span>
     
- <span data-ttu-id="0fa64-109">**FS_NONE**</span><span class="sxs-lookup"><span data-stu-id="0fa64-109">**FS_NONE**</span></span>
+ <span data-ttu-id="03dcd-109">**FS_NONE**</span><span class="sxs-lookup"><span data-stu-id="03dcd-109">**FS_NONE**</span></span>
   
-> <span data-ttu-id="0fa64-110">フォルダーを共有するサポートしていないことを示します。</span><span class="sxs-lookup"><span data-stu-id="0fa64-110">Indicates that the folder does not support sharing.</span></span>
+> <span data-ttu-id="03dcd-110">フォルダーを共有するサポートしていないことを示します。</span><span class="sxs-lookup"><span data-stu-id="03dcd-110">Indicates that the folder does not support sharing.</span></span>
     
- <span data-ttu-id="0fa64-111">**FS_SUPPORTS_SHARING**</span><span class="sxs-lookup"><span data-stu-id="0fa64-111">**FS_SUPPORTS_SHARING**</span></span>
+ <span data-ttu-id="03dcd-111">**FS_SUPPORTS_SHARING**</span><span class="sxs-lookup"><span data-stu-id="03dcd-111">**FS_SUPPORTS_SHARING**</span></span>
   
-> <span data-ttu-id="0fa64-112">共有フォルダーをサポートしていることを示します。</span><span class="sxs-lookup"><span data-stu-id="0fa64-112">Indicates that the folder supports sharing.</span></span>
+> <span data-ttu-id="03dcd-112">共有フォルダーをサポートしていることを示します。</span><span class="sxs-lookup"><span data-stu-id="03dcd-112">Indicates that the folder supports sharing.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="0fa64-113">�߂�l</span><span class="sxs-lookup"><span data-stu-id="0fa64-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="03dcd-113">�߂�l</span><span class="sxs-lookup"><span data-stu-id="03dcd-113">Return value</span></span>
 
-<span data-ttu-id="0fa64-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="0fa64-114">S_OK</span></span> 
+<span data-ttu-id="03dcd-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="03dcd-114">S_OK</span></span> 
   
-> <span data-ttu-id="0fa64-115">呼び出しが正常になされました。</span><span class="sxs-lookup"><span data-stu-id="0fa64-115">The call was successful.</span></span>
+> <span data-ttu-id="03dcd-115">呼び出しが正常になされました。</span><span class="sxs-lookup"><span data-stu-id="03dcd-115">The call was successful.</span></span>
     
 

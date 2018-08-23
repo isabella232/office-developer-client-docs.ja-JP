@@ -14,11 +14,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799311"
 ---
-# <a name="acctbin"></a><span data-ttu-id="76a22-103">ACCT_BIN</span><span class="sxs-lookup"><span data-stu-id="76a22-103">ACCT_BIN</span></span>
+# <a name="acctbin"></a><span data-ttu-id="64579-103">ACCT_BIN</span><span class="sxs-lookup"><span data-stu-id="64579-103">ACCT_BIN</span></span>
 
-<span data-ttu-id="76a22-104">このデータ型の変数では、バイナリの値を保持します。</span><span class="sxs-lookup"><span data-stu-id="76a22-104">A variable of this data type holds a binary value.</span></span>
+<span data-ttu-id="64579-104">このデータ型の変数では、バイナリの値を保持します。</span><span class="sxs-lookup"><span data-stu-id="64579-104">A variable of this data type holds a binary value.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="76a22-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="76a22-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="64579-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="64579-105">Quick info</span></span>
 
 ```cpp
 typedef struct { 
@@ -28,14 +28,14 @@ typedef struct {
 
 ```
 
-## <a name="members"></a><span data-ttu-id="76a22-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="76a22-106">Members</span></span>
+## <a name="members"></a><span data-ttu-id="64579-106">Members</span><span class="sxs-lookup"><span data-stu-id="64579-106">Members</span></span>
 
-<span data-ttu-id="76a22-107">_cb_</span><span class="sxs-lookup"><span data-stu-id="76a22-107">_cb_</span></span>
+<span data-ttu-id="64579-107">_cb_</span><span class="sxs-lookup"><span data-stu-id="64579-107">_cb_</span></span>
   
-> <span data-ttu-id="76a22-108">_Pb_が示すバイト数です。</span><span class="sxs-lookup"><span data-stu-id="76a22-108">Number of bytes that  _pb_ points to.</span></span> 
+> <span data-ttu-id="64579-108">_Pb_が示すバイト数です。</span><span class="sxs-lookup"><span data-stu-id="64579-108">Number of bytes that  _pb_ points to.</span></span> 
     
-<span data-ttu-id="76a22-109">_pb_</span><span class="sxs-lookup"><span data-stu-id="76a22-109">_pb_</span></span>
+<span data-ttu-id="64579-109">_pb_</span><span class="sxs-lookup"><span data-stu-id="64579-109">_pb_</span></span>
   
-> <span data-ttu-id="76a22-110">バイナリ情報へのポインター。</span><span class="sxs-lookup"><span data-stu-id="76a22-110">Pointer to binary information.</span></span>
+> <span data-ttu-id="64579-110">バイナリ情報へのポインター。</span><span class="sxs-lookup"><span data-stu-id="64579-110">Pointer to binary information.</span></span>
     
 

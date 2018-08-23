@@ -14,24 +14,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799356"
 ---
-# <a name="ifreebusysupportplaceholder3"></a><span data-ttu-id="7033e-103">IFreeBusySupport::Placeholder3</span><span class="sxs-lookup"><span data-stu-id="7033e-103">IFreeBusySupport::Placeholder3</span></span>
+# <a name="ifreebusysupportplaceholder3"></a><span data-ttu-id="c27e0-103">IFreeBusySupport::Placeholder3</span><span class="sxs-lookup"><span data-stu-id="c27e0-103">IFreeBusySupport::Placeholder3</span></span>
 
-<span data-ttu-id="7033e-104">このメンバーは、プレース ホルダーではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7033e-104">This member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="c27e0-104">このメンバーは、プレース ホルダーではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c27e0-104">This member is a placeholder and is not supported.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="7033e-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="7033e-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="c27e0-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="c27e0-105">Quick info</span></span>
 
-<span data-ttu-id="7033e-106">[IFreeBusySupport](ifreebusysupport.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7033e-106">See [IFreeBusySupport](ifreebusysupport.md).</span></span>
+<span data-ttu-id="c27e0-106">[IFreeBusySupport](ifreebusysupport.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c27e0-106">See [IFreeBusySupport](ifreebusysupport.md).</span></span>
   
 ```cpp
 HRESULT Placeholder3();
 ```
 
-## <a name="return-values"></a><span data-ttu-id="7033e-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="7033e-107">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="c27e0-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="c27e0-107">Return values</span></span>
 
-<span data-ttu-id="7033e-108">常に S_OK、ため、このメンバーのプレース ホルダーは、サポートされています。</span><span class="sxs-lookup"><span data-stu-id="7033e-108">Always S_OK, because this member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="c27e0-108">常に S_OK、ため、このメンバーのプレース ホルダーは、サポートされています。</span><span class="sxs-lookup"><span data-stu-id="c27e0-108">Always S_OK, because this member is a placeholder and is not supported.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="7033e-109">備考</span><span class="sxs-lookup"><span data-stu-id="7033e-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c27e0-109">注釈</span><span class="sxs-lookup"><span data-stu-id="c27e0-109">Remarks</span></span>
 
-<span data-ttu-id="7033e-110">このメンバーには、S_OK を返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="7033e-110">This member must return S_OK.</span></span>
+<span data-ttu-id="c27e0-110">このメンバーには、S_OK を返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="c27e0-110">This member must return S_OK.</span></span>
   
 

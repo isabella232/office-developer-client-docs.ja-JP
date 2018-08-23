@@ -15,12 +15,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799924"
 ---
-# <a name="developing-a-mapi-transport-provider"></a><span data-ttu-id="5c4eb-103">MAPI トランスポート プロバイダーの開発</span><span class="sxs-lookup"><span data-stu-id="5c4eb-103">Developing a MAPI Transport Provider</span></span>
+# <a name="developing-a-mapi-transport-provider"></a><span data-ttu-id="3f885-103">MAPI トランスポート プロバイダーの開発</span><span class="sxs-lookup"><span data-stu-id="3f885-103">Developing a MAPI Transport Provider</span></span>
 
   
   
-<span data-ttu-id="5c4eb-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="5c4eb-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="3f885-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="3f885-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="5c4eb-105">理解の C++ 言語では、MAPI サブシステムのアーキテクチャやトランスポート プロバイダーを開発する前にさまざまな Windows プラットフォーム用のダイナミック リンク ライブラリ (Dll) を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5c4eb-105">You should be familiar with the MAPI subsystem architecture, the C++ language, and with writing dynamic-link libraries (DLLs) for the various Windows platforms before developing a transport provider.</span></span>
+<span data-ttu-id="3f885-105">理解の C++ 言語では、MAPI サブシステムのアーキテクチャやトランスポート プロバイダーを開発する前にさまざまな Windows プラットフォーム用のダイナミック リンク ライブラリ (Dll) を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3f885-105">You should be familiar with the MAPI subsystem architecture, the C++ language, and with writing dynamic-link libraries (DLLs) for the various Windows platforms before developing a transport provider.</span></span>
   
 

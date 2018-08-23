@@ -14,13 +14,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799550"
 ---
-# <a name="named-properties-account-management-api"></a><span data-ttu-id="dcf96-103">名前付きプロパティ (アカウント管理 API)</span><span class="sxs-lookup"><span data-stu-id="dcf96-103">Named properties (Account management API)</span></span>
+# <a name="named-properties-account-management-api"></a><span data-ttu-id="6800b-103">名前付きプロパティ (アカウント管理 API)</span><span class="sxs-lookup"><span data-stu-id="6800b-103">Named properties (Account management API)</span></span>
 
-<span data-ttu-id="dcf96-104">このセクションでは、アカウント管理 API の名前付きのプロパティについて説明します。</span><span class="sxs-lookup"><span data-stu-id="dcf96-104">This section describes the named properties in the Account Management API.</span></span>
+<span data-ttu-id="6800b-104">このセクションでは、アカウント管理 API の名前付きのプロパティについて説明します。</span><span class="sxs-lookup"><span data-stu-id="6800b-104">This section describes the named properties in the Account Management API.</span></span>
   
-|<span data-ttu-id="dcf96-105">**名前付きプロパティ**</span><span class="sxs-lookup"><span data-stu-id="dcf96-105">**Named property**</span></span>|<span data-ttu-id="dcf96-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="dcf96-106">**Description**</span></span>|
+|<span data-ttu-id="6800b-105">**名前付きプロパティ**</span><span class="sxs-lookup"><span data-stu-id="6800b-105">**Named property**</span></span>|<span data-ttu-id="6800b-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="6800b-106">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="dcf96-107">PidLidInternetAccountName</span><span class="sxs-lookup"><span data-stu-id="dcf96-107">PidLidInternetAccountName</span></span>](pidlidinternetaccountname.md) <br/> |<span data-ttu-id="dcf96-108">メッセージを配信しているアカウントの表示名を返します。</span><span class="sxs-lookup"><span data-stu-id="dcf96-108">Returns the display name of the account that delivered the message.</span></span>  <br/> |
-|[<span data-ttu-id="dcf96-109">PidLidInternetAccountStamp</span><span class="sxs-lookup"><span data-stu-id="dcf96-109">PidLidInternetAccountStamp</span></span>](pidlidinternetaccountstamp.md) <br/> |<span data-ttu-id="dcf96-110">メッセージを配信するアカウントのアカウントのタイムスタンプを返します。</span><span class="sxs-lookup"><span data-stu-id="dcf96-110">Returns the account stamp of the account that delivered the message.</span></span>  <br/> |
+|[<span data-ttu-id="6800b-107">PidLidInternetAccountName</span><span class="sxs-lookup"><span data-stu-id="6800b-107">PidLidInternetAccountName</span></span>](pidlidinternetaccountname.md) <br/> |<span data-ttu-id="6800b-108">メッセージを配信しているアカウントの表示名を返します。</span><span class="sxs-lookup"><span data-stu-id="6800b-108">Returns the display name of the account that delivered the message.</span></span>  <br/> |
+|[<span data-ttu-id="6800b-109">PidLidInternetAccountStamp</span><span class="sxs-lookup"><span data-stu-id="6800b-109">PidLidInternetAccountStamp</span></span>](pidlidinternetaccountstamp.md) <br/> |<span data-ttu-id="6800b-110">メッセージを配信するアカウントのアカウントのタイムスタンプを返します。</span><span class="sxs-lookup"><span data-stu-id="6800b-110">Returns the account stamp of the account that delivered the message.</span></span>  <br/> |
    
 

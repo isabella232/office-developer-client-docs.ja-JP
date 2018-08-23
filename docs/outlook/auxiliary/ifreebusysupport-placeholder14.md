@@ -14,13 +14,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799345"
 ---
-# <a name="ifreebusysupportplaceholder14"></a><span data-ttu-id="e6ff5-103">IFreeBusySupport::Placeholder14</span><span class="sxs-lookup"><span data-stu-id="e6ff5-103">IFreeBusySupport::Placeholder14</span></span>
+# <a name="ifreebusysupportplaceholder14"></a><span data-ttu-id="309b0-103">IFreeBusySupport::Placeholder14</span><span class="sxs-lookup"><span data-stu-id="309b0-103">IFreeBusySupport::Placeholder14</span></span>
 
-<span data-ttu-id="e6ff5-104">このメンバーは、プレース ホルダーではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e6ff5-104">This member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="309b0-104">このメンバーは、プレース ホルダーではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="309b0-104">This member is a placeholder and is not supported.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="e6ff5-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="e6ff5-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="309b0-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="309b0-105">Quick info</span></span>
 
-<span data-ttu-id="e6ff5-106">[IFreeBusySupport](ifreebusysupport.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6ff5-106">See [IFreeBusySupport](ifreebusysupport.md).</span></span>
+<span data-ttu-id="309b0-106">[IFreeBusySupport](ifreebusysupport.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="309b0-106">See [IFreeBusySupport](ifreebusysupport.md).</span></span>
   
 ```cpp
 HRESULT Placeholder14( 
@@ -29,12 +29,12 @@ HRESULT Placeholder14(
 
 ```
 
-## <a name="return-values"></a><span data-ttu-id="e6ff5-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="e6ff5-107">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="309b0-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="309b0-107">Return values</span></span>
 
-<span data-ttu-id="e6ff5-108">常に E_NOTIMP をこのメンバーのプレース ホルダーは、サポート。</span><span class="sxs-lookup"><span data-stu-id="e6ff5-108">Always E_NOTIMPL, because this member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="309b0-108">常に E_NOTIMP をこのメンバーのプレース ホルダーは、サポート。</span><span class="sxs-lookup"><span data-stu-id="309b0-108">Always E_NOTIMPL, because this member is a placeholder and is not supported.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="e6ff5-109">備考</span><span class="sxs-lookup"><span data-stu-id="e6ff5-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="309b0-109">注釈</span><span class="sxs-lookup"><span data-stu-id="309b0-109">Remarks</span></span>
 
-<span data-ttu-id="e6ff5-110">このメンバーは、E_NOTIMPL を返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="e6ff5-110">This member must return E_NOTIMPL.</span></span>
+<span data-ttu-id="309b0-110">このメンバーは、E_NOTIMPL を返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="309b0-110">This member must return E_NOTIMPL.</span></span>
   
 

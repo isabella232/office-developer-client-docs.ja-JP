@@ -19,13 +19,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800808"
 ---
-# <a name="imapisyncprogresscallbackdone"></a><span data-ttu-id="a163a-103">IMAPISyncProgressCallback::Done</span><span class="sxs-lookup"><span data-stu-id="a163a-103">IMAPISyncProgressCallback::Done</span></span>
+# <a name="imapisyncprogresscallbackdone"></a><span data-ttu-id="27cad-103">IMAPISyncProgressCallback::Done</span><span class="sxs-lookup"><span data-stu-id="27cad-103">IMAPISyncProgressCallback::Done</span></span>
 
   
   
-<span data-ttu-id="a163a-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="a163a-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="27cad-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="27cad-104">**Applies to**: Outlook</span></span> 
   
- <span data-ttu-id="a163a-105">Microsoft Outlook に通知の同期が完了しています。</span><span class="sxs-lookup"><span data-stu-id="a163a-105">Informs Microsoft Outlook that synchronization is complete.</span></span> 
+ <span data-ttu-id="27cad-105">Microsoft Outlook に通知の同期が完了しています。</span><span class="sxs-lookup"><span data-stu-id="27cad-105">Informs Microsoft Outlook that synchronization is complete.</span></span> 
   
 ```cpp
 HRESULT Done(
@@ -34,25 +34,25 @@ HRESULT Done(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="a163a-106">Parameters</span><span class="sxs-lookup"><span data-stu-id="a163a-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="27cad-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="27cad-106">Parameters</span></span>
 
- <span data-ttu-id="a163a-107">**hThreadDoneEvent**</span><span class="sxs-lookup"><span data-stu-id="a163a-107">**hThreadDoneEvent**</span></span>
+ <span data-ttu-id="27cad-107">**hThreadDoneEvent**</span><span class="sxs-lookup"><span data-stu-id="27cad-107">**hThreadDoneEvent**</span></span>
   
-> <span data-ttu-id="a163a-108">ハンドルを閉じるための Microsoft Outlook を許可するのに渡されるイベントです。</span><span class="sxs-lookup"><span data-stu-id="a163a-108">An event that is passed back to allow Microsoft Outlook to close the handle.</span></span> <span data-ttu-id="a163a-109">NULL にすることができます。</span><span class="sxs-lookup"><span data-stu-id="a163a-109">It can be NULL.</span></span>
+> <span data-ttu-id="27cad-108">ハンドルを閉じるための Microsoft Outlook を許可するのに渡されるイベントです。</span><span class="sxs-lookup"><span data-stu-id="27cad-108">An event that is passed back to allow Microsoft Outlook to close the handle.</span></span> <span data-ttu-id="27cad-109">NULL にすることができます。</span><span class="sxs-lookup"><span data-stu-id="27cad-109">It can be NULL.</span></span>
     
- <span data-ttu-id="a163a-110">**hResult**</span><span class="sxs-lookup"><span data-stu-id="a163a-110">**hResult**</span></span>
+ <span data-ttu-id="27cad-110">**hResult**</span><span class="sxs-lookup"><span data-stu-id="27cad-110">**hResult**</span></span>
   
-> <span data-ttu-id="a163a-111">進行状況の最終的な状態を示す HRESULT。</span><span class="sxs-lookup"><span data-stu-id="a163a-111">An HRESULT indicating final status of the progress.</span></span>
+> <span data-ttu-id="27cad-111">進行状況の最終的な状態を示す HRESULT。</span><span class="sxs-lookup"><span data-stu-id="27cad-111">An HRESULT indicating final status of the progress.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="a163a-112">�߂�l</span><span class="sxs-lookup"><span data-stu-id="a163a-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="27cad-112">�߂�l</span><span class="sxs-lookup"><span data-stu-id="27cad-112">Return value</span></span>
 
-<span data-ttu-id="a163a-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="a163a-113">S_OK</span></span> 
+<span data-ttu-id="27cad-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="27cad-113">S_OK</span></span> 
   
-> <span data-ttu-id="a163a-114">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="a163a-114">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="27cad-114">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="27cad-114">The call succeeded and has returned the expected value or values.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="a163a-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="a163a-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="27cad-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="27cad-115">See also</span></span>
 
 
 
-[<span data-ttu-id="a163a-116">IMAPISyncProgressCallback: IUnknown</span><span class="sxs-lookup"><span data-stu-id="a163a-116">IMAPISyncProgressCallback : IUnknown</span></span>](imapisyncprogresscallbackiunknown.md)
+[<span data-ttu-id="27cad-116">IMAPISyncProgressCallback : IUnknown</span><span class="sxs-lookup"><span data-stu-id="27cad-116">IMAPISyncProgressCallback : IUnknown</span></span>](imapisyncprogresscallbackiunknown.md)
 

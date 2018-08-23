@@ -1,5 +1,5 @@
 ---
-title: TZREG 構造体を読み取るためのバイナリのプロパティからのストリームを解析します。
+title: バイナリ プロパティからのストリームを解析し、TZREG 構造体を読み取る
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,9 +14,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799320"
 ---
-# <a name="parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure"></a><span data-ttu-id="115aa-103">TZREG 構造体を読み取るためのバイナリのプロパティからのストリームを解析します。</span><span class="sxs-lookup"><span data-stu-id="115aa-103">Parse a stream from a binary property to read the TZREG structure</span></span>
+# <a name="parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure"></a><span data-ttu-id="aa772-103">バイナリ プロパティからのストリームを解析し、TZREG 構造体を読み取る</span><span class="sxs-lookup"><span data-stu-id="aa772-103">Parse a stream from a binary property to read the TZREG structure</span></span>
 
-<span data-ttu-id="115aa-104">このトピックでは、 [PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)のバイナリのプロパティに格納されている永続化された形式からの[TZREG](tzreg.md)構造体を読み取る方法を示します。</span><span class="sxs-lookup"><span data-stu-id="115aa-104">This topic shows how to read the [TZREG](tzreg.md) structure from the persisted format stored in the binary property [PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx).</span></span>
+<span data-ttu-id="aa772-104">このトピックでは、 [PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)のバイナリのプロパティに格納されている永続化された形式からの[TZREG](tzreg.md)構造体を読み取る方法を示します。</span><span class="sxs-lookup"><span data-stu-id="aa772-104">This topic shows how to read the [TZREG](tzreg.md) structure from the persisted format stored in the binary property [PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx).</span></span>
   
 ```cpp
 TZREG* BinToTZREG(ULONG cbReg, LPBYTE lpbReg)  
@@ -55,7 +55,7 @@ TZREG* BinToTZREG(ULONG cbReg, LPBYTE lpbReg)
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="115aa-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="115aa-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="aa772-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="aa772-105">See also</span></span>
 
-- [<span data-ttu-id="115aa-106">予定からタイム ゾーンのプロパティを読み取る</span><span class="sxs-lookup"><span data-stu-id="115aa-106">Read time zone properties from an appointment</span></span>](how-to-read-time-zone-properties-from-an-appointment.md)
+- [<span data-ttu-id="aa772-106">予定からタイム ゾーンのプロパティを読み取る</span><span class="sxs-lookup"><span data-stu-id="aa772-106">Read time zone properties from an appointment</span></span>](how-to-read-time-zone-properties-from-an-appointment.md)
 

@@ -14,12 +14,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799308"
 ---
-# <a name="functions-data-degradation-layer-api"></a><span data-ttu-id="95f20-103">関数 (データの劣化層 API)</span><span class="sxs-lookup"><span data-stu-id="95f20-103">Functions (Data degradation layer API)</span></span>
+# <a name="functions-data-degradation-layer-api"></a><span data-ttu-id="da9c9-103">関数 (データの劣化層 API)</span><span class="sxs-lookup"><span data-stu-id="da9c9-103">Functions (Data degradation layer API)</span></span>
 
-<span data-ttu-id="95f20-104">データ劣化レイヤー API の関数について説明します。</span><span class="sxs-lookup"><span data-stu-id="95f20-104">This section describes the functions in the Data Degradation Layer API.</span></span>
+<span data-ttu-id="da9c9-104">データ劣化レイヤー API の関数について説明します。</span><span class="sxs-lookup"><span data-stu-id="da9c9-104">This section describes the functions in the Data Degradation Layer API.</span></span>
   
-|<span data-ttu-id="95f20-105">**関数**</span><span class="sxs-lookup"><span data-stu-id="95f20-105">**Function**</span></span>|<span data-ttu-id="95f20-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="95f20-106">**Description**</span></span>|
+|<span data-ttu-id="da9c9-105">**関数**</span><span class="sxs-lookup"><span data-stu-id="da9c9-105">**Function**</span></span>|<span data-ttu-id="da9c9-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="da9c9-106">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="95f20-107">HrCreateNewWrappedObject</span><span class="sxs-lookup"><span data-stu-id="95f20-107">HrCreateNewWrappedObject</span></span>](hrcreatenewwrappedobject.md) <br/> |<span data-ttu-id="95f20-108">優先される文字の形式では、クライアントがアクセスできるオブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="95f20-108">Creates an object that a client can access in a preferred character format.</span></span>  <br/> |
+|[<span data-ttu-id="da9c9-107">HrCreateNewWrappedObject</span><span class="sxs-lookup"><span data-stu-id="da9c9-107">HrCreateNewWrappedObject</span></span>](hrcreatenewwrappedobject.md) <br/> |<span data-ttu-id="da9c9-108">優先される文字の形式では、クライアントがアクセスできるオブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="da9c9-108">Creates an object that a client can access in a preferred character format.</span></span>  <br/> |
    
 

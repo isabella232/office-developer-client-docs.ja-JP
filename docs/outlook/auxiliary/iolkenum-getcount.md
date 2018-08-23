@@ -14,13 +14,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799493"
 ---
-# <a name="iolkenumgetcount"></a><span data-ttu-id="cd945-103">IOlkEnum::GetCount</span><span class="sxs-lookup"><span data-stu-id="cd945-103">IOlkEnum::GetCount</span></span>
+# <a name="iolkenumgetcount"></a><span data-ttu-id="a4681-103">IOlkEnum::GetCount</span><span class="sxs-lookup"><span data-stu-id="a4681-103">IOlkEnum::GetCount</span></span>
 
-<span data-ttu-id="cd945-104">列挙子では、アカウントの数を取得します。</span><span class="sxs-lookup"><span data-stu-id="cd945-104">Gets the number of accounts in the enumerator.</span></span>
+<span data-ttu-id="a4681-104">列挙子では、アカウントの数を取得します。</span><span class="sxs-lookup"><span data-stu-id="a4681-104">Gets the number of accounts in the enumerator.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="cd945-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="cd945-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="a4681-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="a4681-105">Quick info</span></span>
 
-<span data-ttu-id="cd945-106">[IOlkEnum](iolkenum.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cd945-106">See [IOlkEnum](iolkenum.md).</span></span>
+<span data-ttu-id="a4681-106">[IOlkEnum](iolkenum.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a4681-106">See [IOlkEnum](iolkenum.md).</span></span>
   
 ```cpp
 HRESULT IOlkEnum::GetCount ( 
@@ -29,19 +29,19 @@ HRESULT IOlkEnum::GetCount (
 
 ```
 
-## <a name="parameters"></a><span data-ttu-id="cd945-107">Parameters</span><span class="sxs-lookup"><span data-stu-id="cd945-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="a4681-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="a4681-107">Parameters</span></span>
 
-<span data-ttu-id="cd945-108">_pulCount_</span><span class="sxs-lookup"><span data-stu-id="cd945-108">_pulCount_</span></span>
+<span data-ttu-id="a4681-108">_pulCount_</span><span class="sxs-lookup"><span data-stu-id="a4681-108">_pulCount_</span></span>
   
-> <span data-ttu-id="cd945-109">[out]列挙するオブジェクトの数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="cd945-109">[out] A pointer to the number of objects being enumerated.</span></span>
+> <span data-ttu-id="a4681-109">[out]列挙するオブジェクトの数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="a4681-109">[out] A pointer to the number of objects being enumerated.</span></span>
     
-## <a name="return-values"></a><span data-ttu-id="cd945-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="cd945-110">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="a4681-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="a4681-110">Return values</span></span>
 
-<span data-ttu-id="cd945-111">呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="cd945-111">S_OK if the call succeeded; otherwise, an error code.</span></span>
+<span data-ttu-id="a4681-111">呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="a4681-111">S_OK if the call succeeded; otherwise, an error code.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="cd945-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="cd945-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a4681-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="a4681-112">See also</span></span>
 
-- [<span data-ttu-id="cd945-113">IOlkEnum::GetNext</span><span class="sxs-lookup"><span data-stu-id="cd945-113">IOlkEnum::GetNext</span></span>](iolkenum-getnext.md)  
-- [<span data-ttu-id="cd945-114">IOlkEnum::Reset</span><span class="sxs-lookup"><span data-stu-id="cd945-114">IOlkEnum::Reset</span></span>](iolkenum-reset.md) 
-- [<span data-ttu-id="cd945-115">IOlkEnum::Skip</span><span class="sxs-lookup"><span data-stu-id="cd945-115">IOlkEnum::Skip</span></span>](iolkenum-skip.md)
+- [<span data-ttu-id="a4681-113">IOlkEnum::GetNext</span><span class="sxs-lookup"><span data-stu-id="a4681-113">IOlkEnum::GetNext</span></span>](iolkenum-getnext.md)  
+- [<span data-ttu-id="a4681-114">IOlkEnum::Reset</span><span class="sxs-lookup"><span data-stu-id="a4681-114">IOlkEnum::Reset</span></span>](iolkenum-reset.md) 
+- [<span data-ttu-id="a4681-115">IOlkEnum::Skip</span><span class="sxs-lookup"><span data-stu-id="a4681-115">IOlkEnum::Skip</span></span>](iolkenum-skip.md)
 

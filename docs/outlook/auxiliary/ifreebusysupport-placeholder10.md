@@ -14,28 +14,28 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799360"
 ---
-# <a name="ifreebusysupportplaceholder10"></a><span data-ttu-id="40620-103">IFreeBusySupport::Placeholder10</span><span class="sxs-lookup"><span data-stu-id="40620-103">IFreeBusySupport::Placeholder10</span></span>
+# <a name="ifreebusysupportplaceholder10"></a><span data-ttu-id="7f58b-103">IFreeBusySupport::Placeholder10</span><span class="sxs-lookup"><span data-stu-id="7f58b-103">IFreeBusySupport::Placeholder10</span></span>
 
-<span data-ttu-id="40620-104">このメンバーは、プレース ホルダーではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="40620-104">This member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="7f58b-104">このメンバーは、プレース ホルダーではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7f58b-104">This member is a placeholder and is not supported.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="40620-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="40620-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="7f58b-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="7f58b-105">Quick info</span></span>
 
-<span data-ttu-id="40620-106">[IFreeBusySupport](ifreebusysupport.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="40620-106">See [IFreeBusySupport](ifreebusysupport.md).</span></span>
+<span data-ttu-id="7f58b-106">[IFreeBusySupport](ifreebusysupport.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7f58b-106">See [IFreeBusySupport](ifreebusysupport.md).</span></span>
   
 ```cpp
 HRESULT Placeholder10();
 ```
 
-## <a name="return-values"></a><span data-ttu-id="40620-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="40620-107">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="7f58b-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="7f58b-107">Return values</span></span>
 
-<span data-ttu-id="40620-108">常に S_OK、ため、このメンバーのプレース ホルダーは、サポートされています。</span><span class="sxs-lookup"><span data-stu-id="40620-108">Always S_OK, because this member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="7f58b-108">常に S_OK、ため、このメンバーのプレース ホルダーは、サポートされています。</span><span class="sxs-lookup"><span data-stu-id="7f58b-108">Always S_OK, because this member is a placeholder and is not supported.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="40620-109">備考</span><span class="sxs-lookup"><span data-stu-id="40620-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7f58b-109">注釈</span><span class="sxs-lookup"><span data-stu-id="7f58b-109">Remarks</span></span>
 
-<span data-ttu-id="40620-110">このメンバーには、S_OK を返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="40620-110">This member must return S_OK.</span></span>
+<span data-ttu-id="7f58b-110">このメンバーには、S_OK を返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f58b-110">This member must return S_OK.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="40620-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="40620-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7f58b-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="7f58b-111">See also</span></span>
 
-- [<span data-ttu-id="40620-112">定数 (空き時間情報の API)</span><span class="sxs-lookup"><span data-stu-id="40620-112">Constants (Free/busy API)</span></span>](constants-free-busy-api.md)
-- [<span data-ttu-id="40620-113">IFreeBusySupport::LoadFreeBusyData</span><span class="sxs-lookup"><span data-stu-id="40620-113">IFreeBusySupport::LoadFreeBusyData</span></span>](ifreebusysupport-loadfreebusydata.md)
+- [<span data-ttu-id="7f58b-112">定数 (空き時間情報の API)</span><span class="sxs-lookup"><span data-stu-id="7f58b-112">Constants (Free/busy API)</span></span>](constants-free-busy-api.md)
+- [<span data-ttu-id="7f58b-113">IFreeBusySupport::LoadFreeBusyData</span><span class="sxs-lookup"><span data-stu-id="7f58b-113">IFreeBusySupport::LoadFreeBusyData</span></span>](ifreebusysupport-loadfreebusydata.md)
 

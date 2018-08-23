@@ -15,10 +15,10 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799732"
 ---
-# <a name="attoriginalmessageclass"></a><span data-ttu-id="1525b-103">attOriginalMessageClass</span><span class="sxs-lookup"><span data-stu-id="1525b-103">attOriginalMessageClass</span></span>
+# <a name="attoriginalmessageclass"></a><span data-ttu-id="1a788-103">attOriginalMessageClass</span><span class="sxs-lookup"><span data-stu-id="1a788-103">attOriginalMessageClass</span></span>
 
-<span data-ttu-id="1525b-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="1525b-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="1a788-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="1a788-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="1525b-105">メッセージ クラスは、文字列として格納されます。</span><span class="sxs-lookup"><span data-stu-id="1525b-105">A message class is stored as a string.</span></span> <span data-ttu-id="1525b-106">エンコードされた文字列は、通常、MAPI が指定したクラスの名前、メッセージを保持します。</span><span class="sxs-lookup"><span data-stu-id="1525b-106">The encoded string usually holds the MAPI-specified name of the message class.</span></span>
+<span data-ttu-id="1a788-105">メッセージ クラスは、文字列として格納されます。</span><span class="sxs-lookup"><span data-stu-id="1a788-105">A message class is stored as a string.</span></span> <span data-ttu-id="1a788-106">エンコードされた文字列は、通常、MAPI が指定したクラスの名前、メッセージを保持します。</span><span class="sxs-lookup"><span data-stu-id="1a788-106">The encoded string usually holds the MAPI-specified name of the message class.</span></span>
   
 

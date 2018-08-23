@@ -19,35 +19,35 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800862"
 ---
-# <a name="imapiviewadvisesinkonshutdown"></a><span data-ttu-id="30604-103">IMAPIViewAdviseSink::OnShutdown</span><span class="sxs-lookup"><span data-stu-id="30604-103">IMAPIViewAdviseSink::OnShutdown</span></span>
+# <a name="imapiviewadvisesinkonshutdown"></a><span data-ttu-id="3e12e-103">IMAPIViewAdviseSink::OnShutdown</span><span class="sxs-lookup"><span data-stu-id="3e12e-103">IMAPIViewAdviseSink::OnShutdown</span></span>
 
   
   
-<span data-ttu-id="30604-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="30604-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="3e12e-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="3e12e-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="30604-105">フォーム ビューアーに、フォームが閉じられることを通知します。</span><span class="sxs-lookup"><span data-stu-id="30604-105">Notifies the form viewer that a form is being closed.</span></span>
+<span data-ttu-id="3e12e-105">フォーム ビューアーに、フォームが閉じられることを通知します。</span><span class="sxs-lookup"><span data-stu-id="3e12e-105">Notifies the form viewer that a form is being closed.</span></span>
   
 ```cpp
 HRESULT OnShutdown( void );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="30604-106">Parameters</span><span class="sxs-lookup"><span data-stu-id="30604-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="3e12e-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3e12e-106">Parameters</span></span>
 
-<span data-ttu-id="30604-107">なし</span><span class="sxs-lookup"><span data-stu-id="30604-107">None</span></span>
+<span data-ttu-id="3e12e-107">なし</span><span class="sxs-lookup"><span data-stu-id="3e12e-107">None</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="30604-108">�߂�l</span><span class="sxs-lookup"><span data-stu-id="30604-108">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="3e12e-108">�߂�l</span><span class="sxs-lookup"><span data-stu-id="3e12e-108">Return value</span></span>
 
-<span data-ttu-id="30604-109">S_OK</span><span class="sxs-lookup"><span data-stu-id="30604-109">S_OK</span></span> 
+<span data-ttu-id="3e12e-109">S_OK</span><span class="sxs-lookup"><span data-stu-id="3e12e-109">S_OK</span></span> 
   
-> <span data-ttu-id="30604-110">通知が成功しました。</span><span class="sxs-lookup"><span data-stu-id="30604-110">The notification succeeded.</span></span>
+> <span data-ttu-id="3e12e-110">通知が成功しました。</span><span class="sxs-lookup"><span data-stu-id="3e12e-110">The notification succeeded.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="30604-111">備考</span><span class="sxs-lookup"><span data-stu-id="30604-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3e12e-111">注釈</span><span class="sxs-lookup"><span data-stu-id="3e12e-111">Remarks</span></span>
 
-<span data-ttu-id="30604-112">フォームの通知の詳細については、[送信およびフォームの通知の受信](sending-and-receiving-form-notifications.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="30604-112">For more information about form notifications, see [Sending and Receiving Form Notifications](sending-and-receiving-form-notifications.md).</span></span>
+<span data-ttu-id="3e12e-112">フォームの通知の詳細については、[送信およびフォームの通知の受信](sending-and-receiving-form-notifications.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3e12e-112">For more information about form notifications, see [Sending and Receiving Form Notifications](sending-and-receiving-form-notifications.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="30604-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="30604-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3e12e-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="3e12e-113">See also</span></span>
 
 
 
-[<span data-ttu-id="30604-114">IMAPIViewAdviseSink: IUnknown</span><span class="sxs-lookup"><span data-stu-id="30604-114">IMAPIViewAdviseSink : IUnknown</span></span>](imapiviewadvisesinkiunknown.md)
+[<span data-ttu-id="3e12e-114">IMAPIViewAdviseSink : IUnknown</span><span class="sxs-lookup"><span data-stu-id="3e12e-114">IMAPIViewAdviseSink : IUnknown</span></span>](imapiviewadvisesinkiunknown.md)
 

@@ -14,13 +14,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799497"
 ---
-# <a name="iolkerrorunknowngetlasterror"></a><span data-ttu-id="e0f40-103">IOlkErrorUnknown::GetLastError</span><span class="sxs-lookup"><span data-stu-id="e0f40-103">IOlkErrorUnknown::GetLastError</span></span>
+# <a name="iolkerrorunknowngetlasterror"></a><span data-ttu-id="800b7-103">IOlkErrorUnknown::GetLastError</span><span class="sxs-lookup"><span data-stu-id="800b7-103">IOlkErrorUnknown::GetLastError</span></span>
 
-<span data-ttu-id="e0f40-104">指定されたエラー メッセージ文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="e0f40-104">Gets a message string for the specified error.</span></span> 
+<span data-ttu-id="800b7-104">指定されたエラー メッセージ文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="800b7-104">Gets a message string for the specified error.</span></span> 
   
-## <a name="quick-info"></a><span data-ttu-id="e0f40-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="e0f40-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="800b7-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="800b7-105">Quick info</span></span>
 
-<span data-ttu-id="e0f40-106">[IOlkErrorUnknown](iolkerrorunknown.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e0f40-106">See [IOlkErrorUnknown](iolkerrorunknown.md).</span></span>
+<span data-ttu-id="800b7-106">[IOlkErrorUnknown](iolkerrorunknown.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="800b7-106">See [IOlkErrorUnknown](iolkerrorunknown.md).</span></span>
   
 ```cpp
 HRESULT IOlkErrorUnknown::GetLastError(  
@@ -30,24 +30,24 @@ HRESULT IOlkErrorUnknown::GetLastError(
 
 ```
 
-## <a name="parameters"></a><span data-ttu-id="e0f40-107">Parameters</span><span class="sxs-lookup"><span data-stu-id="e0f40-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="800b7-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="800b7-107">Parameters</span></span>
 
-<span data-ttu-id="e0f40-108">_hr_</span><span class="sxs-lookup"><span data-stu-id="e0f40-108">_hr_</span></span>
+<span data-ttu-id="800b7-108">_hr_</span><span class="sxs-lookup"><span data-stu-id="800b7-108">_hr_</span></span>
   
-> <span data-ttu-id="e0f40-109">[in]参照するエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="e0f40-109">[in] The error code to look up.</span></span>
+> <span data-ttu-id="800b7-109">[in]参照するエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="800b7-109">[in] The error code to look up.</span></span>
     
-<span data-ttu-id="e0f40-110">_ppwszError_</span><span class="sxs-lookup"><span data-stu-id="e0f40-110">_ppwszError_</span></span>
+<span data-ttu-id="800b7-110">_ppwszError_</span><span class="sxs-lookup"><span data-stu-id="800b7-110">_ppwszError_</span></span>
   
-> <span data-ttu-id="e0f40-111">[out]対応するエラー メッセージに*hr* 。</span><span class="sxs-lookup"><span data-stu-id="e0f40-111">[out] The error message that corresponds to  *hr*  .</span></span> 
+> <span data-ttu-id="800b7-111">[out]対応するエラー メッセージに*hr* 。</span><span class="sxs-lookup"><span data-stu-id="800b7-111">[out] The error message that corresponds to  *hr*  .</span></span> 
     
-## <a name="return-values"></a><span data-ttu-id="e0f40-112">戻り値</span><span class="sxs-lookup"><span data-stu-id="e0f40-112">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="800b7-112">戻り値</span><span class="sxs-lookup"><span data-stu-id="800b7-112">Return values</span></span>
 
-|<span data-ttu-id="e0f40-113">**HRESULT 型**</span><span class="sxs-lookup"><span data-stu-id="e0f40-113">**HRESULT**</span></span>|<span data-ttu-id="e0f40-114">**Description**</span><span class="sxs-lookup"><span data-stu-id="e0f40-114">**Description**</span></span>|
+|<span data-ttu-id="800b7-113">**HRESULT 型**</span><span class="sxs-lookup"><span data-stu-id="800b7-113">**HRESULT**</span></span>|<span data-ttu-id="800b7-114">**Description**</span><span class="sxs-lookup"><span data-stu-id="800b7-114">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="e0f40-115">S_OK</span><span class="sxs-lookup"><span data-stu-id="e0f40-115">S_OK</span></span>  <br/> |<span data-ttu-id="e0f40-116">呼び出しが成功しました。</span><span class="sxs-lookup"><span data-stu-id="e0f40-116">The call succeeded.</span></span>  <br/> |
-|<span data-ttu-id="e0f40-117">E_INVALIDARG</span><span class="sxs-lookup"><span data-stu-id="e0f40-117">E_INVALIDARG</span></span>  <br/> |<span data-ttu-id="e0f40-118">いくつかの引数は無効です。</span><span class="sxs-lookup"><span data-stu-id="e0f40-118">One or more arguments are invalid.</span></span>  <br/> |
+|<span data-ttu-id="800b7-115">S_OK</span><span class="sxs-lookup"><span data-stu-id="800b7-115">S_OK</span></span>  <br/> |<span data-ttu-id="800b7-116">呼び出しが成功しました。</span><span class="sxs-lookup"><span data-stu-id="800b7-116">The call succeeded.</span></span>  <br/> |
+|<span data-ttu-id="800b7-117">E_INVALIDARG</span><span class="sxs-lookup"><span data-stu-id="800b7-117">E_INVALIDARG</span></span>  <br/> |<span data-ttu-id="800b7-118">いくつかの引数は無効です。</span><span class="sxs-lookup"><span data-stu-id="800b7-118">One or more arguments are invalid.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="e0f40-119">関連項目</span><span class="sxs-lookup"><span data-stu-id="e0f40-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="800b7-119">関連項目</span><span class="sxs-lookup"><span data-stu-id="800b7-119">See also</span></span>
 
-- [<span data-ttu-id="e0f40-120">定数 (アカウント管理 API)</span><span class="sxs-lookup"><span data-stu-id="e0f40-120">Constants (Account management API)</span></span>](constants-account-management-api.md)
+- [<span data-ttu-id="800b7-120">定数 (アカウント管理 API)</span><span class="sxs-lookup"><span data-stu-id="800b7-120">Constants (Account management API)</span></span>](constants-account-management-api.md)
 

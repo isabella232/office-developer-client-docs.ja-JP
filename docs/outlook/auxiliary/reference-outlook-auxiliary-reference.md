@@ -14,16 +14,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19799587"
 ---
-# <a name="reference-outlook-auxiliary-reference"></a><span data-ttu-id="b7299-103">参照 (Outlook の補助参照)</span><span class="sxs-lookup"><span data-stu-id="b7299-103">Reference (Outlook auxiliary reference)</span></span>
+# <a name="reference-outlook-auxiliary-reference"></a><span data-ttu-id="e43b0-103">参照 (Outlook の補助参照)</span><span class="sxs-lookup"><span data-stu-id="e43b0-103">Reference (Outlook auxiliary reference)</span></span>
 
-<span data-ttu-id="b7299-104">このセクションには、Outlook 2013 補助リファレンスは、次の Api のリファレンス コンテンツが含まれます。</span><span class="sxs-lookup"><span data-stu-id="b7299-104">This section includes reference content for the following APIs in the Outlook 2013 Auxiliary Reference.</span></span>
+<span data-ttu-id="e43b0-104">このセクションには、Outlook 2013 補助リファレンスは、次の Api のリファレンス コンテンツが含まれます。</span><span class="sxs-lookup"><span data-stu-id="e43b0-104">This section includes reference content for the following APIs in the Outlook 2013 Auxiliary Reference.</span></span>
 
-- [<span data-ttu-id="b7299-105">アカウント管理 API リファレンス</span><span class="sxs-lookup"><span data-stu-id="b7299-105">Account management API reference</span></span>](account-management-api-reference.md)
+- [<span data-ttu-id="e43b0-105">アカウント管理 API リファレンス</span><span class="sxs-lookup"><span data-stu-id="e43b0-105">Account management API reference</span></span>](account-management-api-reference.md)
     
-- [<span data-ttu-id="b7299-106">データの低下のレイヤー API リファレンス</span><span class="sxs-lookup"><span data-stu-id="b7299-106">Data degradation layer API reference</span></span>](data-degradation-layer-api-reference.md)
+- [<span data-ttu-id="e43b0-106">データの低下のレイヤー API リファレンス</span><span class="sxs-lookup"><span data-stu-id="e43b0-106">Data degradation layer API reference</span></span>](data-degradation-layer-api-reference.md)
     
-- [<span data-ttu-id="b7299-107">空き時間情報の API リファレンス</span><span class="sxs-lookup"><span data-stu-id="b7299-107">Free/busy API reference</span></span>](free-busy-api-reference.md)
+- [<span data-ttu-id="e43b0-107">空き時間情報 API リファレンス</span><span class="sxs-lookup"><span data-stu-id="e43b0-107">Free/busy API reference</span></span>](free-busy-api-reference.md)
     
-- [<span data-ttu-id="b7299-108">Outlook は、Api をエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="b7299-108">Outlook exported APIs</span></span>](outlook-exported-apis.md)
+- [<span data-ttu-id="e43b0-108">Outlook でエクスポートされている API</span><span class="sxs-lookup"><span data-stu-id="e43b0-108">Outlook exported APIs</span></span>](outlook-exported-apis.md)
     
 

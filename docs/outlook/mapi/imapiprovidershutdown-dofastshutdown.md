@@ -19,30 +19,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800654"
 ---
-# <a name="imapiprovidershutdowndofastshutdown"></a><span data-ttu-id="ef266-103">IMAPIProviderShutdown::DoFastShutdown</span><span class="sxs-lookup"><span data-stu-id="ef266-103">IMAPIProviderShutdown::DoFastShutdown</span></span>
+# <a name="imapiprovidershutdowndofastshutdown"></a><span data-ttu-id="bfdbc-103">IMAPIProviderShutdown::DoFastShutdown</span><span class="sxs-lookup"><span data-stu-id="bfdbc-103">IMAPIProviderShutdown::DoFastShutdown</span></span>
 
   
   
-<span data-ttu-id="ef266-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="ef266-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="bfdbc-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="bfdbc-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="ef266-105">示します MAPI プロバイダーに MAPI クライアントが、すぐに終了している MAPI プロバイダーがデータの損失を防ぐために加えられた変更を永続化できるようにします。</span><span class="sxs-lookup"><span data-stu-id="ef266-105">Indicates to the MAPI provider that the MAPI client is exiting immediately, so that the MAPI provider will persist changes to prevent data loss.</span></span>
+<span data-ttu-id="bfdbc-105">示します MAPI プロバイダーに MAPI クライアントが、すぐに終了している MAPI プロバイダーがデータの損失を防ぐために加えられた変更を永続化できるようにします。</span><span class="sxs-lookup"><span data-stu-id="bfdbc-105">Indicates to the MAPI provider that the MAPI client is exiting immediately, so that the MAPI provider will persist changes to prevent data loss.</span></span>
   
 ```cpp
 HRESULT DoFastShutdown ();
 ```
 
-## <a name="return-value"></a><span data-ttu-id="ef266-106">�߂�l</span><span class="sxs-lookup"><span data-stu-id="ef266-106">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="bfdbc-106">�߂�l</span><span class="sxs-lookup"><span data-stu-id="bfdbc-106">Return value</span></span>
 
-<span data-ttu-id="ef266-107">S_OK</span><span class="sxs-lookup"><span data-stu-id="ef266-107">S_OK</span></span>
+<span data-ttu-id="bfdbc-107">S_OK</span><span class="sxs-lookup"><span data-stu-id="bfdbc-107">S_OK</span></span>
   
-> <span data-ttu-id="ef266-108">MAPI プロバイダーを即座に終了するのには MAPI クライアントの準備ができました。</span><span class="sxs-lookup"><span data-stu-id="ef266-108">The MAPI provider is ready for the MAPI client to exit immediately.</span></span> 
+> <span data-ttu-id="bfdbc-108">MAPI プロバイダーを即座に終了するのには MAPI クライアントの準備ができました。</span><span class="sxs-lookup"><span data-stu-id="bfdbc-108">The MAPI provider is ready for the MAPI client to exit immediately.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="ef266-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="ef266-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bfdbc-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="bfdbc-109">See also</span></span>
 
 
 
-[<span data-ttu-id="ef266-110">IMAPIProviderShutdown: IUnknown</span><span class="sxs-lookup"><span data-stu-id="ef266-110">IMAPIProviderShutdown : IUnknown</span></span>](imapiprovidershutdowniunknown.md)
+[<span data-ttu-id="bfdbc-110">IMAPIProviderShutdown : IUnknown</span><span class="sxs-lookup"><span data-stu-id="bfdbc-110">IMAPIProviderShutdown : IUnknown</span></span>](imapiprovidershutdowniunknown.md)
 
 
-[<span data-ttu-id="ef266-111">Mapi クライアントのシャット ダウン</span><span class="sxs-lookup"><span data-stu-id="ef266-111">Client Shutdown in MAPI</span></span>](client-shutdown-in-mapi.md)
+[<span data-ttu-id="bfdbc-111">Mapi クライアントのシャット ダウン</span><span class="sxs-lookup"><span data-stu-id="bfdbc-111">Client Shutdown in MAPI</span></span>](client-shutdown-in-mapi.md)
 

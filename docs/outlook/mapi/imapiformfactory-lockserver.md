@@ -19,13 +19,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800522"
 ---
-# <a name="imapiformfactorylockserver"></a><span data-ttu-id="a6bad-103">IMAPIFormFactory::LockServer</span><span class="sxs-lookup"><span data-stu-id="a6bad-103">IMAPIFormFactory::LockServer</span></span>
+# <a name="imapiformfactorylockserver"></a><span data-ttu-id="6e03e-103">IMAPIFormFactory::LockServer</span><span class="sxs-lookup"><span data-stu-id="6e03e-103">IMAPIFormFactory::LockServer</span></span>
 
   
   
-<span data-ttu-id="a6bad-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="a6bad-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="6e03e-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="6e03e-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="a6bad-105">開いているフォームのサーバーは、メモリ内に保持します。</span><span class="sxs-lookup"><span data-stu-id="a6bad-105">Keeps an open form server in memory.</span></span>
+<span data-ttu-id="6e03e-105">開いているフォームのサーバーは、メモリ内に保持します。</span><span class="sxs-lookup"><span data-stu-id="6e03e-105">Keeps an open form server in memory.</span></span>
   
 ```cpp
 HRESULT LockServer(
@@ -34,33 +34,33 @@ HRESULT LockServer(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="a6bad-106">�p�����[�^�[</span><span class="sxs-lookup"><span data-stu-id="a6bad-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="6e03e-106">�p�����[�^�[</span><span class="sxs-lookup"><span data-stu-id="6e03e-106">Parameters</span></span>
 
- <span data-ttu-id="a6bad-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="a6bad-107">_ulFlags_</span></span>
+ <span data-ttu-id="6e03e-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="6e03e-107">_ulFlags_</span></span>
   
-> <span data-ttu-id="a6bad-108">[����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="a6bad-108">[in] Reserved; must be zero.</span></span>
+> <span data-ttu-id="6e03e-108">[����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="6e03e-108">[in] Reserved; must be zero.</span></span>
     
- <span data-ttu-id="a6bad-109">_fLockServer_</span><span class="sxs-lookup"><span data-stu-id="a6bad-109">_fLockServer_</span></span>
+ <span data-ttu-id="6e03e-109">_fLockServer_</span><span class="sxs-lookup"><span data-stu-id="6e03e-109">_fLockServer_</span></span>
   
-> <span data-ttu-id="a6bad-110">[in]の**場合は true**ロック カウントをインクリメントするのにはそれ以外の場合、 **false を指定**します。</span><span class="sxs-lookup"><span data-stu-id="a6bad-110">[in] **true** to increment the lock count; otherwise, **false**.</span></span>
+> <span data-ttu-id="6e03e-110">[in]の**場合は true**ロック カウントをインクリメントするのにはそれ以外の場合、 **false を指定**します。</span><span class="sxs-lookup"><span data-stu-id="6e03e-110">[in] **true** to increment the lock count; otherwise, **false**.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="a6bad-111">�߂�l</span><span class="sxs-lookup"><span data-stu-id="a6bad-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6e03e-111">�߂�l</span><span class="sxs-lookup"><span data-stu-id="6e03e-111">Return value</span></span>
 
-<span data-ttu-id="a6bad-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="a6bad-112">S_OK</span></span> 
+<span data-ttu-id="6e03e-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="6e03e-112">S_OK</span></span> 
   
-> <span data-ttu-id="a6bad-113">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="a6bad-113">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="6e03e-113">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="6e03e-113">The call succeeded and has returned the expected value or values.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="a6bad-114">����</span><span class="sxs-lookup"><span data-stu-id="a6bad-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6e03e-114">����</span><span class="sxs-lookup"><span data-stu-id="6e03e-114">Remarks</span></span>
 
-<span data-ttu-id="a6bad-115">フォーム ビューアーは、開いているフォームのサーバー アプリケーションをメモリに保持する**IMAPIFormFactory::LockServer**メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="a6bad-115">Form viewers call the **IMAPIFormFactory::LockServer** method to keep an open form server application in memory.</span></span> <span data-ttu-id="a6bad-116">フォーム サーバーをメモリに保持では、頻繁にフォームが作成され、リリースされたときに、パフォーマンスが向上します。</span><span class="sxs-lookup"><span data-stu-id="a6bad-116">Keeping the form server in memory improves its performance when forms are frequently created and released.</span></span> 
+<span data-ttu-id="6e03e-115">フォーム ビューアーは、開いているフォームのサーバー アプリケーションをメモリに保持する**IMAPIFormFactory::LockServer**メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="6e03e-115">Form viewers call the **IMAPIFormFactory::LockServer** method to keep an open form server application in memory.</span></span> <span data-ttu-id="6e03e-116">フォーム サーバーをメモリに保持では、頻繁にフォームが作成され、リリースされたときに、パフォーマンスが向上します。</span><span class="sxs-lookup"><span data-stu-id="6e03e-116">Keeping the form server in memory improves its performance when forms are frequently created and released.</span></span> 
   
-## <a name="notes-to-implementers"></a><span data-ttu-id="a6bad-117">実装者へのメモ</span><span class="sxs-lookup"><span data-stu-id="a6bad-117">Notes to implementers</span></span>
+## <a name="notes-to-implementers"></a><span data-ttu-id="6e03e-117">実装者へのメモ</span><span class="sxs-lookup"><span data-stu-id="6e03e-117">Notes to implementers</span></span>
 
-<span data-ttu-id="a6bad-118">**IMAPIFormFactory::LockServer**メソッドでは、 [IClassFactory::LockServer](http://msdn.microsoft.com/ja-jp/library/ms682332%28v=VS.85%29.aspx)メソッドによく似ています。</span><span class="sxs-lookup"><span data-stu-id="a6bad-118">The **IMAPIFormFactory::LockServer** method is very similar to the [IClassFactory::LockServer](http://msdn.microsoft.com/ja-jp/library/ms682332%28v=VS.85%29.aspx) method.</span></span> <span data-ttu-id="a6bad-119">本質的に、 **IMAPIFormFactory::LockServer**メソッドを維持何度の数が呼び出されました。そのカウントが 0 より大きい場合に限り、メソッドは、メモリからアンロードされるフォームのサーバーを防ぎます。</span><span class="sxs-lookup"><span data-stu-id="a6bad-119">Essentially, the **IMAPIFormFactory::LockServer** method maintains a count of how many times it has been called; as long as that count is greater than 0, the method prevents the form server from being unloaded from memory.</span></span> <span data-ttu-id="a6bad-120">[CoLockObjectExternal](http://msdn.microsoft.com/ja-jp/library/ms680592%28VS.85%29.aspx)関数を使用すると、この機能を実装します。</span><span class="sxs-lookup"><span data-stu-id="a6bad-120">You can use the [CoLockObjectExternal](http://msdn.microsoft.com/ja-jp/library/ms680592%28VS.85%29.aspx) function to implement this.</span></span> 
+<span data-ttu-id="6e03e-118">**IMAPIFormFactory::LockServer**メソッドでは、 [IClassFactory::LockServer](http://msdn.microsoft.com/en-us/library/ms682332%28v=VS.85%29.aspx)メソッドによく似ています。</span><span class="sxs-lookup"><span data-stu-id="6e03e-118">The **IMAPIFormFactory::LockServer** method is very similar to the [IClassFactory::LockServer](http://msdn.microsoft.com/en-us/library/ms682332%28v=VS.85%29.aspx) method.</span></span> <span data-ttu-id="6e03e-119">本質的に、 **IMAPIFormFactory::LockServer**メソッドを維持何度の数が呼び出されました。そのカウントが 0 より大きい場合に限り、メソッドは、メモリからアンロードされるフォームのサーバーを防ぎます。</span><span class="sxs-lookup"><span data-stu-id="6e03e-119">Essentially, the **IMAPIFormFactory::LockServer** method maintains a count of how many times it has been called; as long as that count is greater than 0, the method prevents the form server from being unloaded from memory.</span></span> <span data-ttu-id="6e03e-120">[CoLockObjectExternal](http://msdn.microsoft.com/en-us/library/ms680592%28VS.85%29.aspx)関数を使用すると、この機能を実装します。</span><span class="sxs-lookup"><span data-stu-id="6e03e-120">You can use the [CoLockObjectExternal](http://msdn.microsoft.com/en-us/library/ms680592%28VS.85%29.aspx) function to implement this.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="a6bad-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="a6bad-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6e03e-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="6e03e-121">See also</span></span>
 
 
 
-[<span data-ttu-id="a6bad-122">IMAPIFormFactory: IUnknown</span><span class="sxs-lookup"><span data-stu-id="a6bad-122">IMAPIFormFactory : IUnknown</span></span>](imapiformfactoryiunknown.md)
+[<span data-ttu-id="6e03e-122">IMAPIFormFactory : IUnknown</span><span class="sxs-lookup"><span data-stu-id="6e03e-122">IMAPIFormFactory : IUnknown</span></span>](imapiformfactoryiunknown.md)
 

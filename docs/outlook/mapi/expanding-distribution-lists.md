@@ -15,16 +15,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800025"
 ---
-# <a name="expanding-distribution-lists"></a><span data-ttu-id="911ec-103">配布リストの展開</span><span class="sxs-lookup"><span data-stu-id="911ec-103">Expanding Distribution Lists</span></span>
+# <a name="expanding-distribution-lists"></a><span data-ttu-id="2b119-103">配布リストの展開</span><span class="sxs-lookup"><span data-stu-id="2b119-103">Expanding Distribution Lists</span></span>
 
   
   
-<span data-ttu-id="911ec-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="911ec-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="2b119-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="2b119-104">**Applies to**: Outlook</span></span> 
   
- <span data-ttu-id="911ec-105">**配布リストを展開するための MAPI メッセージを表示するのには**</span><span class="sxs-lookup"><span data-stu-id="911ec-105">**To prompt MAPI to expand a distribution list**</span></span>
+ <span data-ttu-id="2b119-105">**配布リストを展開するための MAPI メッセージを表示するのには**</span><span class="sxs-lookup"><span data-stu-id="2b119-105">**To prompt MAPI to expand a distribution list**</span></span>
   
-- <span data-ttu-id="911ec-106">MAPIPDL に、 **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) のプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="911ec-106">Set its **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) property to MAPIPDL.</span></span>
+- <span data-ttu-id="2b119-106">MAPIPDL に、 **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) のプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="2b119-106">Set its **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) property to MAPIPDL.</span></span>
     
-    <span data-ttu-id="911ec-107">MAPI は、トランスポート プロバイダーにメッセージを送信する前にこのタイプのアドレスを展開します。</span><span class="sxs-lookup"><span data-stu-id="911ec-107">MAPI expands addresses with this type before sending the message to the transport provider.</span></span>
+    <span data-ttu-id="2b119-107">MAPI は、トランスポート プロバイダーにメッセージを送信する前にこのタイプのアドレスを展開します。</span><span class="sxs-lookup"><span data-stu-id="2b119-107">MAPI expands addresses with this type before sending the message to the transport provider.</span></span>
     
 
