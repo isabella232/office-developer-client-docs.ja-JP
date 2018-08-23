@@ -1,5 +1,5 @@
 ---
-title: PidLidFileUnderList の標準的なプロパティ
+title: PidLidFileUnderList 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: a84d8143-5fe7-4a33-bce4-aebf7a824d5f
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: cec541db3cc46c108d2a5c41b1d5fbd4d8fac4f2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 353734d28dd10da1e503e268f9e06e9bf9c86cfc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801971"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567567"
 ---
-# <a name="pidlidfileunderlist-canonical-property"></a>PidLidFileUnderList の標準的なプロパティ
+# <a name="pidlidfileunderlist-canonical-property"></a>PidLidFileUnderList 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **DispidFileUnderId** ([PidLidFileUnderId](pidlidfileunderid-canonical-property.md)) のプロパティに指定できる値の一覧を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidFileUnderList  <br/> |
+|関連するプロパティ:  <br/> |dispidFileUnderList  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Address  <br/> |
 |長い ID (LID):  <br/> |0x00008026  <br/> |
-|データを入力します。  <br/> |PT_MV_LONG  <br/> |
-|領域:  <br/> |連絡先  <br/> |
+|データの種類 :   <br/> |PT_MV_LONG  <br/> |
+|領域:  <br/> |Contact  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 複数値プロパティ内の各値は、 [[MS OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)で指定されている**dispidFileUnderId**の可能な値のいずれかである必要があります。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

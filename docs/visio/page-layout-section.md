@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805943"
 ---
-# <a name="page-layout-section"></a>[Page Layout] セクション
+# <a name="page-layout-section"></a>[ページ レイアウト] セクション
 
 ページ上にあるすべての図形間の間隔やコネクタ間の間隔、およびすべてのコネクタに対する迂回方法など、図形とコネクタに関するページ設定を制御するセルを格納します。
   

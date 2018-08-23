@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 18623a44-719e-f46f-0f04-d6089a19c85d
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 319dcb95de6fafcdac9a1a755163206a4849d8d9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 7dc60cf3c49032a2c871872765b19e96c49f6da5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800964"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568785"
 ---
-# <a name="imscapabilities--iunknown"></a>IMSCapabilities: IUnknown
+# <a name="imscapabilities--iunknown"></a>IMSCapabilities : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ストアのサポートについてを説明します。
   
@@ -38,7 +38,7 @@ ms.locfileid: "19800964"
 |:-----|:-----|
 |**[GetCapabilities](imscapabilities-getcapabilities.md)** <br/> |指定された選択範囲に基づいてストアの機能を返します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
  **IMSCapabilities**では、ストアは、このインターフェイスをサポートしている場合に、ストアにサポートに関する情報を提供します。 
   

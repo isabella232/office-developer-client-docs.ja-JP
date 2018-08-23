@@ -21,7 +21,7 @@ ms.locfileid: "19805956"
 |:-----|:-----|
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
-|**拡張機能の基本** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |なし  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -54,7 +54,7 @@ ms.locfileid: "19805956"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[接続](connects-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> ||
+|[Connects](connects-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> ||
 |[Shapes](shapes-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Shapes_Type](shapes_type-complextypevisio-xml.md) <br/> ||
    
 ### <a name="attributes"></a>属性

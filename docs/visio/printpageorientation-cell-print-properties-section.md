@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806115"
 ---
-# <a name="printpageorientation-cell-print-properties-section"></a>[PrintPageOrientation] セル ([Print Properties] セクション)
+# <a name="printpageorientation-cell-print-properties-section"></a>[PrintPageOrientation] セル ([印刷のプロパティ] セクション)
 
 ページの印刷方向を、縦向きにするか横向きにするかを指定します。
   
@@ -26,17 +26,17 @@ ms.locfileid: "19806115"
 | 1  <br/> | 縦  <br/> |**visPPOPortrait** <br/> |
 |2  <br/> |横  <br/> |**visPPOLandscape** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 ドキュメントに新しいページを挿入すると、この設定は既定で作業中のページで設定します。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[PrintPageOrientation] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [PrintPageOrientation] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | PrintPageOrientation  <br/> |
    
-プログラムから、インデックスによって [PrintPageOrientation] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [PrintPageOrientation] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

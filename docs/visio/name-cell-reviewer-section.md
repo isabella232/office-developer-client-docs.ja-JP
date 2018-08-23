@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805917"
 ---
-# <a name="name-cell-reviewer-section"></a>[Name] セル ([Reviewer] セクション)
+# <a name="name-cell-reviewer-section"></a>[Name] セル ([レビュー担当者] セクション)
 
 図面校閲者の名前が含まれます。
   
@@ -30,7 +30,7 @@ ms.locfileid: "19805917"
 |:-----|:-----|
 | セル名:  <br/> | Reviewer.Name [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
    
-プログラムから、インデックスによって [Name] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [Name] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   
 |||
 |:-----|:-----|

@@ -22,7 +22,7 @@ _Color1_と_color2_の色合いの差を返します。
 
 HUEDIFF (* * *color1* * *、* * *color2* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|

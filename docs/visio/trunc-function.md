@@ -24,14 +24,14 @@ ms.locfileid: "19806688"
 
 TRUNC (* **番号** *、* * *numberofdigits* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _number_ <br/> |必須  <br/> |**数値** <br/> |切り捨ての対象となる数値を指定します。  <br/> |
-| _numberofdigits_ <br/> |必須  <br/> |**数値** <br/> |切り捨てる_数値_を桁の数です。  <br/> |
+| _number_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |切り捨ての対象となる数値を指定します。  <br/> |
+| _numberofdigits_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |切り捨てる_数値_を桁の数です。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 数値
   

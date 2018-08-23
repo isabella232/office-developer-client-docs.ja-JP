@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806842"
 ---
-# <a name="y-justify-cell-action-tags-section"></a>[Y Justify] セル ([Action Tags] セクション)
+# <a name="y-justify-cell-action-tags-section"></a>[Y Justify] セル ([操作タグ] セクション)
 
 *Y* X と Y セルによって定義された点を基準にして、操作タグ ボタンのオフセット。 
   
@@ -29,17 +29,17 @@ ms.locfileid: "19806842"
 | 1  <br/> | 中央揃え  <br/> |**visSmartTagYJustifyMiddle** <br/> |
 | 2  <br/> | 下揃えします。  <br/> |**visSmartTagYJustifyBottom** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 X Justify] および [Y Justify] の各セルは、X と Y のセルで定義されているポイントを基準にして、操作タグ ボタンを配置する場所を決定します。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[Y Justify] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Y Justify] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | スマート タグです。  *名*です。YJustify、スマート タグです。 *タグのアクション行の名前します。*  <br/> |
    
-プログラムから、インデックスによって [Y Justify] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [Y Justify] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

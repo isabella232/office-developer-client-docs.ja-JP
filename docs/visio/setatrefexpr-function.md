@@ -24,11 +24,11 @@ ms.locfileid: "19806388"
 
 SETATREFEXPR ([* * *expr_opt* * *]) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _expr_opt_ <br/> |省略可能  <br/> |**によって異なります** <br/> |値または SETATREF 関数で参照されているセルに代入される式によって置き換えられる式です。 指定されていない場合、初期値は 0 (ゼロ) にします。  <br/> |
+| _expr_opt_ <br/> |省略可能  <br/> |**多様** <br/> |値または SETATREF 関数で参照されているセルに代入される式によって置き換えられる式です。 指定されていない場合、初期値は 0 (ゼロ) にします。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -56,6 +56,6 @@ User.GridY =2 in
   
 ## <a name="example-3"></a>例 3
 
-SETATREFEXPR 関数を SETATREF 関数の使用例は、 [SETATREF](setatref-function.md)関数を参照してください。 
+SETATREFEXPR 関数を SETATREF 関数と共に使用する例については、[SETATREF](setatref-function.md) 関数を参照してください。 
   
 

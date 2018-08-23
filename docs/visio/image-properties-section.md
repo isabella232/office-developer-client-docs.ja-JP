@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805562"
 ---
-# <a name="image-properties-section"></a>[Image Properties] セクション
+# <a name="image-properties-section"></a>[画像のプロパティ] セクション
 
 ビットマップ (ピクセルで構成されたイメージ) のガンマ、明るさ、コントラスト、ぼかし、鮮明さ、およびノイズ除去の値が含まれます。ビットマップのオブジェクトの [シェイプシート] ウィンドウにのみ表示されます。
   

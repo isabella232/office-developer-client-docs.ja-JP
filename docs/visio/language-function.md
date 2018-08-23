@@ -20,19 +20,20 @@ ms.locfileid: "19805675"
   
 ## <a name="version-information"></a>バージョン情報
 
-Visio 2013 のバージョンが追加されます。 
+追加バージョン: Visio 2013
+ 
   
 ## <a name="syntax"></a>構文
 
  **言語**( _lcid_or_bcp47_)
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _lcid_or_bcp47_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |言語の LCID または BCP 47 の値です。  <br/> |
    
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 整数型 (Integer)
   

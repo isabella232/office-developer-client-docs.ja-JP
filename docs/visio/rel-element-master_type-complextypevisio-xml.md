@@ -22,7 +22,7 @@ ms.locfileid: "19806177"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[Rel_Type](rel_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[Rel_Type](rel_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |pages.xml、masters.xml、recordsets.xml、ページ番号の .xml、マスター # .xml  <br/> |
@@ -54,7 +54,7 @@ ms.locfileid: "19806177"
 |:-----|:-----|:-----|:-----|:-----|
 |r: id  <br/> |xsd:string  <br/> 注釈を参照してください。  <br/> |必須  <br/> |パーツへのリレーションシップを指定します。  <br/> |「# を削除する」  <br/> 注釈を参照してください。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **R: id**属性の値は、 **ST_RelationshipID**型である必要があります。 **ST_RelationshipID**型は、文字列形式にする必要がある 'rId #'、最後の文字がいくつかをする必要があります。 数は、 **Rel**の要素のすべての兄弟要素間で一意である必要があります。 
   

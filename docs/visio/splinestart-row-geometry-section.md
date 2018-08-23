@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806559"
 ---
-# <a name="splinestart-row-geometry-section"></a>[SplineStart] 行 ([Geometry] セクション)
+# <a name="splinestart-row-geometry-section"></a>[SplineStart] 行 ([図形座標] セクション)
 
 *X*および*y*が含まれています-スプラインの 2 番目の制御点、2 番目のノット、最初のノット、最後のノット、およびスプラインの角度の座標です。 
   

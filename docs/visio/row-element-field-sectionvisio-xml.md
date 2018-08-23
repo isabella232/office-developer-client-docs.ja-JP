@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7883cb55-a7db-10c0-be20-5d3c561e490f
-description: 関数と、[フィールド] ダイアログ ボックスを使用して図形のテキストに挿入された数式が表示されます。
+description: '[フィールド] ダイアログ ボックスを使用して図形のテキストに挿入した関数および数式を表示します。'
 ms.openlocfilehash: ec01ae3743eaf5345685c7273404bfdb826579ba
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -16,13 +16,13 @@ ms.locfileid: "19806295"
 ---
 # <a name="row-element-field-section-visio-xml"></a>行要素 ([フィールド]) ('Visio XML')
 
-関数と、[フィールド] ダイアログ ボックスを使用して図形のテキストに挿入された数式が表示されます。
+[フィールド] ダイアログ ボックスを使用して図形のテキストに挿入した関数および数式を表示します。
   
 ## <a name="element-information"></a>要素情報
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[FieldRow_Type](fieldrow_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[FieldRow_Type](fieldrow_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml をマスター、# .xml のページ  <br/> |
@@ -42,7 +42,7 @@ ms.locfileid: "19806295"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Section](section-element-sheet_type-complextypevisio-xml.md) <br/> |[Section_Type](section_type-complextypevisio-xml.md) <br/> |関数と、[フィールド] ダイアログ ボックスを使用して図形のテキストに挿入された数式が表示されます。  <br/> |
+|[セクション](section-element-sheet_type-complextypevisio-xml.md) <br/> |[Section_Type](section_type-complextypevisio-xml.md) <br/> |[フィールド] ダイアログ ボックスを使用して図形のテキストに挿入した関数および数式を表示します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -57,7 +57,7 @@ ms.locfileid: "19806295"
 |Del  <br/> |xsd:boolean  <br/> |省略可能  <br/> |マスター シェイプから継承される行が削除されたかどうかを指定します。  <br/> |Xsd:boolean の値を入力します。  <br/> |
 |IX  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |1 から始まる行の識別子を指定します。 特有である必要があり、同じセクションの他の識別子を超える。IX 属性は、文字、接続、フィールド、FillGradient、ジオメトリ、レイヤー、LineGradient、段落、校閲者、自由、およびタブのセクションでのみ使用します。 行は、IX または N の属性の 1 つだけ配置できます。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
 |LocalName  <br/> |xsd:string  <br/> |省略可能  <br/> |行の一意の言語に依存する名前を指定します。  <br/> |Xsd:string の値を入力します。  <br/> |
-|MultipleCriticalPaths 要素  <br/> |xsd:string  <br/> |省略可能  <br/> |行の一意の言語に依存しない名前を指定します。N 属性は、ユーザー、プロパティ、動作、コントロール、接続、ハイパーリンク、および ActionTag のセクションでのみ使用します。 行は、IX または N の属性の 1 つだけ配置できます。  <br/> |Xsd:string の値を入力します。  <br/> |
+|N  <br/> |xsd:string  <br/> |省略可能  <br/> |行の一意の言語に依存しない名前を指定します。N 属性は、ユーザー、プロパティ、動作、コントロール、接続、ハイパーリンク、および ActionTag のセクションでのみ使用します。 行は、IX または N の属性の 1 つだけ配置できます。  <br/> |Xsd:string の値を入力します。  <br/> |
 |SV 要素  <br/> |xsd:string  <br/> |省略可能  <br/> |行によって表され、ジオメトリの視覚エフェクトで使用される幾何学的なパスの種類を指定します。 T 属性は、[Geometry] セクションでのみ使用します。  <br/> |Xsd:string の値を入力します。  <br/> |
    
 

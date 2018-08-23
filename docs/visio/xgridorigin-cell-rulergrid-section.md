@@ -1,5 +1,5 @@
 ---
-title: XGridOrigin セル (ルーラー&amp;グリッド セクション)
+title: '[XGridOrigin] セル ([ルーラーとグリッド] セクション)'
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806822"
 ---
-# <a name="xgridorigin-cell-ruler-amp-grid-section"></a>XGridOrigin セル (ルーラー&amp;グリッド セクション)
+# <a name="xgridorigin-cell-ruler-amp-grid-section"></a>[XGridOrigin] セル ([ルーラーとグリッド] セクション)
 
 グリッド原点の水平方向の座標を指定します。
   
@@ -24,13 +24,13 @@ ms.locfileid: "19806822"
 
 このセルは水平方向の**グリッドの基準**に対応してオプションで、**ルーラー&amp;グリッド**] ダイアログ ボックス ([**表示**] タブで、矢印をクリック**を表示**します。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[XGridOrigin] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [XGridOrigin] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |XGridOrigin  <br/> |
    
-プログラムから、インデックスによって [XGridOrigin] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [XGridOrigin] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

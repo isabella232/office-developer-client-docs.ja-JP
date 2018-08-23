@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806618"
 ---
-# <a name="text-block-format-section"></a>[Text Block Format] セクション
+# <a name="text-block-format-section"></a>[テキスト ブロックの書式設定] セクション
 
 図形のテキスト ブロックでのテキストの配置、余白、およびタブ位置を制御するセルを格納します。
   

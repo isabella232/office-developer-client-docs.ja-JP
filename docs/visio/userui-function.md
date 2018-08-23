@@ -24,7 +24,7 @@ _状態_の値に応じて、2 つの式のいずれかを評価します。
 
 USERUI (* **状態** *、* * *defaultexpression* * *、* * *userexpression* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
@@ -32,7 +32,7 @@ USERUI (* **状態** *、* * *defaultexpression* * *、* * *userexpression* * *)
 | _defaultexpression_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |既定の式。  <br/> |
 | _userexpression_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |ユーザーによって指定された式を指定します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 _状態_が 0 の場合、USERUI 関数は_defaultexpression_を評価します。 _状態_が 1 の場合は、 _userexpression_を評価します。
   

@@ -24,21 +24,22 @@ ms.locfileid: "19806593"
 
  代用 (* **テキスト** *、* **文字列** *、* **と** * [、* **開始** *] [、* * *ignore_case_opt* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _text_ <br/> |必須  <br/> |**文字列型 (String)** <br/> | 置換前の文字列を含む文字列、またはその文字列を含むセルに対する参照を指定します。  <br/> |
-| _文字列_ <br/> |必須  <br/> |**文字列型 (String)** <br/> | 置換するテキストです。  <br/> |
+| _文字列_ <br/> |必須  <br/> |**文字列型 (String)** <br/> | 置換前の文字列を指定します。
+  <br/> |
 | _置換_ <br/> |必須  <br/> |**文字列型 (String)** <br/> | _文字列_の置換に使用するテキストです。  <br/> |
-| _start_num_opt_ <br/> |省略可能  <br/> |**数値** <br/> |何番目の old_text を置換するかを指定します。  <br/> |
+| _start_num_opt_ <br/> |省略可能  <br/> |**数値型 (Numeric)** <br/> |何番目の old_text を置換するかを指定します。  <br/> |
 | _ignore_case_opt_ <br/> |省略可能  <br/> |**ブール型 (Boolean)** <br/> |大文字と小文字を区別する場合は FALSE、区別しない場合は TRUE です。既定値は FALSE です。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 String
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
  _Start_num_opt_を指定する場合のみ、検索_文字列_が置き換えられます。 _テキスト__文字列_に一致するすべてを変更する場合は、_置換します_。
   

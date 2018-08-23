@@ -22,7 +22,7 @@ ms.locfileid: "19806331"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[RuleSet_Type](ruleset_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[RuleSet_Type](ruleset_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |validation.xml  <br/> |
@@ -56,7 +56,7 @@ ms.locfileid: "19806331"
 |**属性**|**型**|**必須**|**説明**|**使用可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
 |説明  <br/> |xsd:string  <br/> |省略可能  <br/> |検証ルール セットのユーザー インターフェイスに表示される説明を指定します。 既定値は空の文字列です。  <br/> |Xsd:string の値を入力します。  <br/> |
-|Enabled  <br/> |xsd:boolean  <br/> |省略可能  <br/> |現在のドキュメントの検証が発生したときに指定された検証規則セットに規則をチェックするかどうかを指定します。 既定では True です。  <br/> |Xsd:boolean の値を入力します。  <br/> |
+|有効  <br/> |xsd:boolean  <br/> |省略可能  <br/> |現在のドキュメントの検証が発生したときに指定された検証規則セットに規則をチェックするかどうかを指定します。 既定では true を指定 します。  <br/> |Xsd:boolean の値を入力します。  <br/> |
 |ID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |検証ルール セットの一意の識別子を指定します。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
 |名前  <br/> |xsd:string  <br/> |省略可能  <br/> |ローカル検証ルール セットの名前を指定します。 NameU 属性の値を既定値です。  <br/> |Xsd:string の値を入力します。  <br/> |
 |NameU  <br/> |xsd:string  <br/> |必須  <br/> |検証ルール セットの汎用名を指定します。  <br/> |Xsd:string の値を入力します。  <br/> |

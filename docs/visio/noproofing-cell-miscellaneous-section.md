@@ -1,5 +1,5 @@
 ---
-title: NoProofing セル ([その他] セクション)
+title: '[NoProofing] セル ([その他] セクション)'
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/21/2018
 ms.locfileid: "19805924"
 ---
-# <a name="noproofing-cell-miscellaneous-section"></a>NoProofing セル ([その他] セクション)
+# <a name="noproofing-cell-miscellaneous-section"></a>[NoProofing] セル ([その他] セクション)
 
 スペル チェックが自動的に修正されたかどうかと、選択した図形のスペル ミスを表示するかどうかを決定します。 **ブール**値を受け取ります。 
   
@@ -23,7 +23,7 @@ ms.locfileid: "19805924"
 |TRUE  <br/> |スペル チェックが自動的に修正されないと、選択した図形のスペル チェックのエラーは表示されません。  <br/> |
 |FALSE  <br/> |スペル チェックが自動的に修正され、選択した図形のスペル チェックのエラーが表示されます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 取得する NoProofing] セルへの参照名を別の数式からまたはプログラムでは、 **CellsU**プロパティを使用して、次のコマンドを使用します。 
   

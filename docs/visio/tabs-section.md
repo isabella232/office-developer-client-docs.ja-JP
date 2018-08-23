@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806596"
 ---
-# <a name="tabs-section"></a>[Tabs] セクション
+# <a name="tabs-section"></a>[タブ] セクション
 
 タブの停止位置や配置を制御する、図形およびスタイルのセルを格納します。
   

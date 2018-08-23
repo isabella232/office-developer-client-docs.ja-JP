@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805973"
 ---
-# <a name="pagesx-cell-print-properties-section"></a>[PagesX] セル ([Print Properties] セクション)
+# <a name="pagesx-cell-print-properties-section"></a>[PagesX] セル ([印刷のプロパティ] セクション)
 
 図面ページに左右を揃えるプリンター ページの番号を指定します。 
   
@@ -24,13 +24,13 @@ ms.locfileid: "19805973"
 
 この値は、[OnPage] セルが TRUE に設定されているときに限り使用されます。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [pagesx] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [PagesX] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | [Pagesx]  <br/> |
    
-プログラムから、インデックスによって [pagesx] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [PagesX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

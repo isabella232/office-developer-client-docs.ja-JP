@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806091"
 ---
-# <a name="pos-cell-character-section"></a>[Pos] セル ([Character] セクション)
+# <a name="pos-cell-character-section"></a>[Pos] セル ([文字] セクション)
 
 基線に対する、図形のテキストの位置を指定します。
   
@@ -26,15 +26,15 @@ ms.locfileid: "19806091"
 | 1  <br/> | 上付き  <br/> |**visPosSuper** <br/> |
 | 2  <br/> | 下付き  <br/> |**visPosSub** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[Pos] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Pos] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | Char.Pos [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
    
-プログラムから、インデックスによって [Pos] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [Pos] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

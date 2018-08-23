@@ -16,19 +16,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806445"
 ---
-# <a name="sharpen-cell-image-properties-section"></a>[Sharpen] セル ([Image Properties] セクション)
+# <a name="sharpen-cell-image-properties-section"></a>[Sharpen] セル ([画像のプロパティ] セクション)
 
 ビットマップ イメージを鮮明にします。既定値は 0% です。イメージを鮮明にすると、隣接するピクセルのコントラストが上がり、イメージがはっきりと表示されます。
   
 ## <a name="remarks"></a>備考
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって sharpen] セルへの参照を取得するには、次のコマンドを使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Sharpen] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | Sharpen  <br/> |
    
-プログラムから、インデックスによって [sharpen] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [Sharpen] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

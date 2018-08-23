@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 3e296f6d-4833-4c68-9b84-df0b09878474
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a865a751f3e274008c7004315906d6705ba55161
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 811be1f6506cee092e487af3bd43bdf6e136d4eb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801067"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568897"
 ---
 # <a name="imslogongetlasterror"></a>IMSLogon::GetLastError
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストアのオブジェクトに対して発生した最後のエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。 
   
@@ -35,7 +35,7 @@ HRESULT GetLastError(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _hResult_
   
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > か、MAPI_UNICODE フラグが設定された実装は Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、実装は、Unicode だけをサポートしています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 最後に、メッセージ ストアのオブジェクトのメソッドの呼び出しから返されるエラーに関するユーザーへのメッセージに表示するのに情報を取得するために**IMSLogon::GetLastError**メソッドを使用します。 
   
@@ -79,5 +79,5 @@ MAPI_E_BAD_CHARWIDTH
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[IMSLogon: IUnknown](imslogoniunknown.md)
+[IMSLogon : IUnknown](imslogoniunknown.md)
 

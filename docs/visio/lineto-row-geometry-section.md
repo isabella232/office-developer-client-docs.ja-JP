@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805700"
 ---
-# <a name="lineto-row-geometry-section"></a>[LineTo] 行 ([Geometry] セクション)
+# <a name="lineto-row-geometry-section"></a>[LineTo] 行 ([図形座標] セクション)
 
 *X*が含まれています- と*y*が直線の線分の終点の座標です。 
   

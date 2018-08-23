@@ -24,7 +24,7 @@ ms.locfileid: "19806719"
 
 TYPE ()
   
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 数値
   

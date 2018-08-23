@@ -16,18 +16,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805909"
 ---
-# <a name="moveto-row-geometry-section"></a>[MoveTo] 行 ([Geometry] セクション)
+# <a name="moveto-row-geometry-section"></a>[MoveTo] 行 ([図形座標] セクション)
 
 *X*および*y*が含まれています、図形の最初の頂点の座標または*x*を表すと*y*のパス内の改行の後の最初の頂点の座標です。 
   
-**[Moveto]** 行には、次のセルが含まれています。 
+[**MoveTo**] 行には次のセルが含まれます。 
   
 |**Cell**|**説明**|
 |:-----|:-----|
 |[X](x-cell-geometry-section.md) <br/> |**[Moveto]** 行がセクションの最初の行の場合は、[X] セルは*x*を表しますが、図形の最初の頂点の座標です。 [X] セルが*x*を表す 2 つの行の間、 **[moveto]** 行が表示されている場合のパスを切断した後の最初の頂点の座標です。  <br/> |
 |[Y](y-cell-geometry-section.md) <br/> |**[Moveto]** 行がセクションの最初の行の場合は、[Y] セルは*y*を表す-図形の最初の頂点の座標です。 [Y] セルが*y*を表す 2 つの行の間、 **[moveto]** 行が表示されている場合のパスを切断した後の最初の頂点の座標です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **[Moveto]** 行には、 *x*および*y*が含まれています- **[moveto]** 行がセクションの最初の行である場合の図形の最初の頂点の座標です。 通常これは図形が描画されて、および 1-d 図形の始点に必ずしも対応していないときに配置する最初の頂点です。 
   

@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806625"
 ---
-# <a name="thedata-cell-events-section"></a>[TheData] セル ([Events] セクション)
+# <a name="thedata-cell-events-section"></a>[TheData] セル ([イベント] セクション)
 
 今後使用するために予約されています。
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7f24910a-e14e-44a1-8477-d8968130ba74
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 954dc467a0d83466b1b16a3ead5b6404d372ecab
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 8dfa777480af48819e5357fad9b1e7524148a8b7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800978"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568813"
 ---
 # <a name="imsgserviceadminopenprofilesection"></a>IMsgServiceAdmin::OpenProfileSection
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 現在のプロファイルのセクションを開き、さらにアクセスするための[IProfSect](iprofsectimapiprop.md)ポインターを返します。 
   
@@ -36,7 +36,7 @@ HRESULT OpenProfileSection(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpUID_
   
@@ -80,7 +80,7 @@ MAPI_E_NOT_FOUND
   
 > 要求したプロファイル セクションが存在しません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgServiceAdmin::OpenProfileSection**メソッドは、プロファイルのセクションでは、 [IProfSect](iprofsectimapiprop.md)インターフェイスをサポートするオブジェクトを開きます。 プロファイルのセクションでは、情報の読み込みおよびセッション ・ プロファイル情報を書き込むのために使用されます。 
   
@@ -106,15 +106,15 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
   
 [IMAPISession::OpenProfileSection](imapisession-openprofilesection.md)
   
-[IProfSect: IMAPIProp](iprofsectimapiprop.md)
+[IProfSect : IMAPIProp](iprofsectimapiprop.md)
   
 [MAPIUID](mapiuid.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

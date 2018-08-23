@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806414"
 ---
-# <a name="shapeshdwobliqueangle-cell-fill-format-section"></a>[ShapeShdwObliqueAngle] セル ([Fill Format] セクション)
+# <a name="shapeshdwobliqueangle-cell-fill-format-section"></a>[ShapeShdwObliqueAngle] セル ([塗りつぶしの書式設定] セクション)
 
 図形の斜体の影に角度を指定します。
   
@@ -24,15 +24,15 @@ ms.locfileid: "19806414"
 
 このセルの値がゼロ (0) の場合は影の傾きの角度が真上で、時計回りに角度を指定します。
   
-この値は、[**影**] ダイアログ ボックスの [**方向**] の設定の値に対応 ([**ホーム**] タブの [**図形**] グループで、**シャドウ**] をクリックし、[**影のオプション**] をクリック) します。
+この値は、[**影**] ダイアログ ボックスの [**方向**] 設定の値に対応しています (このダイアログ ボックスを開くには、[**ホーム**] タブの [**図形**] グループで、[**影**] をクリックし、[**影のオプション**] をクリックします)。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ShapeShdwObliqueAngle] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ShapeShdwObliqueAngle] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | ShapeShdwObliqueAngle  <br/> |
    
-プログラムから、インデックスによって [ShapeShdwObliqueAngle] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ShapeShdwObliqueAngle] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

@@ -16,21 +16,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806351"
 ---
-# <a name="scalex-cell-print-properties-section"></a>[ScaleX] セル ([Print Properties] セクション)
+# <a name="scalex-cell-print-properties-section"></a>[ScaleX] セル ([印刷のプロパティ] セクション)
 
 [プリンター] ページで、図面ページの表示倍率の割合を指定します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [Onpage] セルの値が FALSE である場合にのみ、この値が使用されます。 ScaleX と ScaleY のセルは、同じ値が、[**ページ設定**] ダイアログ ボックスの [**印刷設定**] タブの **[拡大/縮小**設定の値に対応して常にある ([**デザイン**] タブで、矢印をクリック、 **[ページ設定**)。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [scalex] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ScaleX] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名 :  <br/> |[Scalex]  <br/> |
    
-プログラムから、インデックスによって [scalex] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ScaleX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

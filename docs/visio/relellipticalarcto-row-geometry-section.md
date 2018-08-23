@@ -21,7 +21,7 @@ ms.locfileid: "19806185"
 > [!NOTE]
 > **RelEllipticalArcTo**行は、.vsdx、.vsdm、.vstx、.vstm、.vssx、および .vssm のファイル形式でのみ保持できます。 Visio 2003 から 2010 年の形式にファイルを保存すると、 **RelEllipticalArcTo**行が[EllipticalArcTo](ellipticalarcto-row-geometry-section.md)の行に変換されます。 
   
-**RelEllipticalArcTo**行には、次のセルが含まれています。 
+[**RelEllipticalArcTo**] 行には次のセルが含まれます。 
   
 |**Cell**|**説明**|
 |:-----|:-----|

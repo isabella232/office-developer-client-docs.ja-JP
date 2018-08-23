@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19805773"
 ---
-# <a name="lockgroup-cell-protection-section"></a>[LockGroup] セル ([Protection] セクション)
+# <a name="lockgroup-cell-protection-section"></a>[LockGroup] セル ([保護] セクション)
 
 グループをロックして、グループを解除できないようにします。
   
@@ -29,13 +29,13 @@ ms.locfileid: "19805773"
 
 [LockGroupCell] 値を TRUE に設定すると、グループのメンバーである図形が削除されるのを防ぐこともできます。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [lockgroup] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LockGroup] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |[Lockgroup]  <br/> |
    
-プログラムから、インデックスによって [lockgroup] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [LockGroup] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

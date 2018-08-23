@@ -22,7 +22,7 @@ Visio ファイル内のドキュメント パーツ間の関係を再計算す�
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[Trigger_Type](trigger_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[Trigger_Type](trigger_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml をマスター、# .xml のページ  <br/> |
@@ -58,9 +58,9 @@ Visio ファイル内のドキュメント パーツ間の関係を再計算す�
 
 |**属性**|**型**|**必須**|**説明**|**使用可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|MultipleCriticalPaths 要素  <br/> |xsd:string  <br/> |必須  <br/> |トリガーがアクティブになったときに呼び出される数式の名前です。  <br/> 「解説」を参照してください。  <br/> |Xsd:string の値を入力します。  <br/> |
+|N  <br/> |xsd:string  <br/> |必須  <br/> |トリガーがアクティブになったときに呼び出される数式の名前です。  <br/> 「解説」を参照してください。  <br/> |Xsd:string の値を入力します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この**トリガー**の要素の**N**属性は、限られたトリガーの命令に対応する値のいずれかである必要があります。 この**トリガー**の要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   
@@ -88,6 +88,6 @@ Visio ファイル内のドキュメント パーツ間の関係を再計算す�
 |RecalcType  <br/> |[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |**種類**の関数を使用してクロス部分の参照が存在する場合、図形に表示するトリガーです。  <br/> |
 |RelChanged  <br/> |[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |**CONTAINERMEMBERCOUNT**関数を使用してクロス部分の参照が存在する場合、図形に表示するトリガーです。  <br/> |
 |ZOrderChanged  <br/> |[PageSheet (Page_Type complexType)](pagesheet-element-page_type-complextypevisio-xml.md) <br/> |**CONTAINERSHEETREF**関数を使用してクロス部分の参照が存在する場合は、ページに表示するトリガーです。  <br/> |
-|パス  <br/> |[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |**POINTALONGPATH**、 **PATHLENGTH**、または**PATHSEGMENT**関数を使用してクロス部分の参照操作を実行すると、ページに表示されるトリガーが存在しています。  <br/> |
+|Path  <br/> |[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |**POINTALONGPATH**、 **PATHLENGTH**、または**PATHSEGMENT**関数を使用してクロス部分の参照操作を実行すると、ページに表示されるトリガーが存在しています。  <br/> |
    
 

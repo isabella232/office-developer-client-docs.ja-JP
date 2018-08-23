@@ -16,19 +16,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805580"
 ---
-# <a name="indright-cell-paragraph-section"></a>[IndRight] セル ([Paragraph] セクション)
+# <a name="indright-cell-paragraph-section"></a>[IndRight] セル ([段落] セクション)
 
 段落にあるテキストのすべての行について、テキスト ブロックの右余白からインデントする距離を表します。この値は、図面の縮尺による影響を受けません。図面の縮尺を変更しても、右インデントは変わりません。
   
 ## <a name="remarks"></a>備考
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [indright] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [IndRight] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | Para.IndRight [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
    
-プログラムから、インデックスによって [indright] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [IndRight] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

@@ -18,11 +18,11 @@ ms.locfileid: "19805505"
 
 線のグラデーションについて、グラデーションの分岐点の色、透過性、および位置を格納します。
   
-**グラデーション停止**の行には、次のセルが含まれています。 
+[**Gradient Stop**] 行には次のセルが含まれます。 
   
 |**Cell**|**説明**|
 |:-----|:-----|
-|**Color** <br/> |グラデーション終了位置のカラー値です。 または (例えば)、 [RGB](rgb-function-visioshapesheet.md)、 [THEMEVAL](themeval-function.md)、または[HSL](hsl-function.md)関数を使用してドキュメント パレットの色のインデックス番号としては、この値を表現できます。  <br/> |
+|**Color** <br/> |グラデーションの分岐点の色の値。この値は、文書パレットで色のインデックス番号として記述するか、[RGB](rgb-function-visioshapesheet.md)、[THEMEVAL](themeval-function.md)、または [HSL](hsl-function.md) 関数 (例として) を使用して記述できます。<br/> |
 |**ColorTrans** <br/> |グラデーション色の透明度をパーセントで表します。  <br/> |
 |**Position** <br/> |線のグラデーションに沿ったグラデーションの分岐点の位置を、グラデーションの起点から行の外縁までのパーセントで表します。  <br/> |
    

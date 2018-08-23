@@ -20,23 +20,24 @@ ms.locfileid: "19805519"
   
 ## <a name="version-information"></a>バージョン情報
 
-Visio 2010 のバージョンが追加されます。 
+追加バージョン: Visio 2010
+ 
   
 ## <a name="syntax"></a>構文
 
 HASCATEGORY (* **カテゴリ** *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _category_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |検索するカテゴリ。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
  **ブール型 (Boolean)**
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
  *カテゴリ*は、図形を分類するために使用できるユーザー定義の文字列です。 User.msvShapeCategories 図形のシェイプ シート セルでは、カテゴリを定義することができます。 カテゴリをセミコロンで区切ると、図形の複数のカテゴリを定義できます。 
   

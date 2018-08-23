@@ -16,21 +16,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805789"
 ---
-# <a name="locpiny-cell-shape-transform-section"></a>[LocPinY] セル ([Shape Transform] セクション)
+# <a name="locpiny-cell-shape-transform-section"></a>[LocPinY] セル ([図形変換] セクション)
 
 *Y*を表す-図形の原点を基準として、図形の pin (回転の中心) の座標。 [Locpiny] を決定するための既定の数式は次のとおりです。 
   
 = 高さ\*0.5
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [locpiny] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LocPinY] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | [Locpiny]  <br/> |
    
-プログラムから、インデックスによって [locpiny] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [LocPinY] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805724"
 ---
-# <a name="linerouteext-cell-page-layout-section"></a>[LineRouteExt] セル ([Page Layout] セクション)
+# <a name="linerouteext-cell-page-layout-section"></a>[LineRouteExt] セル ([ページ レイアウト] セクション)
 
 図面ページにあるすべてのコネクタの既定の外観を指定します。
   
@@ -26,15 +26,15 @@ ms.locfileid: "19805724"
 | 1  <br/> | 直線  <br/> |**visLORouteExtStraight** <br/> |
 | 2  <br/> | 曲線  <br/> |**visLORouteExtNURBS** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[LineRouteExt] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LineRouteExt] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | LineRouteExt  <br/> |
    
-プログラムから、インデックスによって [LineRouteExt] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [LineRouteExt] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

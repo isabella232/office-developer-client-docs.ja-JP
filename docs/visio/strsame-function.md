@@ -24,7 +24,7 @@ ms.locfileid: "19806567"
 
 STRSAME ("* * *string1* * *「,」* **文字列 2* * *」、* * *ignoreCase* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
@@ -32,9 +32,9 @@ STRSAME ("* * *string1* * *「,」* **文字列 2* * *」、* * *ignoreCase* * *
 | _文字列 2_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |比較する 2 番目の文字列を指定します。  <br/> |
 | _ignoreCase_ <br/> |省略可能  <br/> |**ブール型 (Boolean)** <br/> |大文字/小文字を区別しない場合は TRUE を、大文字/小文字を区別する場合は FALSE を指定します。既定値は FALSE です。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
-ブール型 (Boolean)
+ブール型
   
 ## <a name="remarks"></a>注釈
 

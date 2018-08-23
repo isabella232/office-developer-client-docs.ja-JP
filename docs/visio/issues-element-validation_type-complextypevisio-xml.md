@@ -22,7 +22,7 @@ ms.locfileid: "19805622"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[Issues_Type](issues_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[Issues_Type](issues_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |validation.xml  <br/> |

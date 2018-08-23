@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806557"
 ---
-# <a name="splineknot-row-geometry-section"></a>[SplineKnot] 行 ([Geometry] セクション)
+# <a name="splineknot-row-geometry-section"></a>[SplineKnot] 行 ([図形座標] セクション)
 
 *X*および*y*が含まれています-座標、スプラインの制御点をスプラインのノットです。 
   

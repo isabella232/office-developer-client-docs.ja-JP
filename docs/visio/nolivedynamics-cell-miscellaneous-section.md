@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805920"
 ---
-# <a name="nolivedynamics-cell-miscellaneous-section"></a>[NoLiveDynamics] セル ([Miscellaneous] セクション)
+# <a name="nolivedynamics-cell-miscellaneous-section"></a>[NoLiveDynamics] セル ([その他] セクション)
 
 図形を操作するときに、図形のサイズを動的に変更したり、回転させるかどうかを指定します。
   
@@ -29,13 +29,13 @@ ms.locfileid: "19805920"
 
 ライブ ダイナミクスを無効にして、2 次元 (2-D) 図形をサイズ変更または回転すると、選択ボックスが表示されます。図形が 1 次元 (1-D) の場合は、ビジュアル フィードバックは [DynFeedback] セルの値に基づいて行われます。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[NoLiveDynamics] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [NoLiveDynamics] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | NoLiveDynamics  <br/> |
    
-プログラムから、インデックスによって [NoLiveDynamics] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [NoLiveDynamics] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   
 |||
 |:-----|:-----|

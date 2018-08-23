@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806099"
 ---
-# <a name="prompt-cell-actions-section"></a>[Prompt] セル ([Actions] セクション)
+# <a name="prompt-cell-actions-section"></a>[Prompt] セル ([操作] セクション)
 
 Visio 2002 以降、このセルは使用されなくなりました。
   

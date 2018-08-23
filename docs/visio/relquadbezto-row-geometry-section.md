@@ -21,7 +21,7 @@ ms.locfileid: "19806231"
 > [!NOTE]
 > **RelQuadBezTo**行は、.vsdx、.vsdm、.vstx、.vstm、.vssx、および .vssm のファイル形式でのみ保持できます。 ファイル保存すると、Visio 2003 から 2010 年の書式には、 **RelQuadBezTo**行が[[nurbsto]](nurbsto-row-geometry-section.md)行に変換されます。 
   
-**RelQuadBezTo**行には、次のセルが含まれています。 
+[**RelQuadBezTo**] 行には次のセルが含まれます。 
   
 |**Cell**|**説明**|
 |:-----|:-----|

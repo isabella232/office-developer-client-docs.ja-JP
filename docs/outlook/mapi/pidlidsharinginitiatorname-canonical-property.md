@@ -1,5 +1,5 @@
 ---
-title: PidLidSharingInitiatorName の標準的なプロパティ
+title: PidLidSharingInitiatorName 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: f2b126fc-41fa-4dc4-9f13-07bc4f621d0b
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 1b20c2171f77451d9b7e85573260acff3243238f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 66ec6ecb33336c51ce76dd080a80af4c26e098f2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802160"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563038"
 ---
-# <a name="pidlidsharinginitiatorname-canonical-property"></a>PidLidSharingInitiatorName の標準的なプロパティ
+# <a name="pidlidsharinginitiatorname-canonical-property"></a>PidLidSharingInitiatorName 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 共有メッセージのプロパティとして指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidSharingInitiatorName  <br/> |
+|関連するプロパティ:  <br/> |dispidSharingInitiatorName  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Sharing  <br/> |
 |長い ID (LID):  <br/> |0x00008A07  <br/> |
-|データを入力します。  <br/> |PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_UNICODE  <br/> |
 |領域:  <br/> |共有  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、 **dispidSharingInitiatorEid** ([PidLidSharingInitiatorEntryId](pidlidsharinginitiatorentryid-canonical-property.md)) で識別されるアドレス帳からの**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) の値を設定する必要があります、無視してください。 
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

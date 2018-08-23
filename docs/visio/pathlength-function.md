@@ -20,24 +20,25 @@ ms.locfileid: "19805981"
   
 ## <a name="version-information"></a>バージョン情報
 
-Visio 2010 のバージョンが追加されます。 
+追加バージョン: Visio 2010
+ 
   
 ## <a name="syntax"></a>構文
 
 PATHLENGTH (* **で** * * * *[] セグメント** *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _section_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |パスを表す [Geometry] セクション。[Path] セルへの参照によって指定されます (Geometry1.Path など)。  <br/> |
 | _セグメント_ <br/> |省略可能  <br/> |**整数型 (Integer)** <br/> |測定するパスの 1 から始まるセグメント。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
  **Double**
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _セクション_または_セグメント_が存在しない場合 Microsoft Visio は #ref! を返します。 
   

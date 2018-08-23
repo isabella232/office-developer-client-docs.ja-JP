@@ -22,7 +22,7 @@ Visio Services を使用して Microsoft SharePoint Server 2013 で、ダイア�
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[PublishSettings_Type](publishsettings_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[PublishSettings_Type](publishsettings_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |

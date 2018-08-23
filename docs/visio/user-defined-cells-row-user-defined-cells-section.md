@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806731"
 ---
-# <a name="user-defined-cells-row-user-defined-cells-section"></a>[User-defined Cells] 行 ([User-defined Cells] セクション)
+# <a name="user-defined-cells-row-user-defined-cells-section"></a>[User-defined Cells] 行 ([ユーザー定義セル] セクション)
 
 ソリューションでのユーザー定義のセルに関する、値と説明プロンプトを格納します。図形には、ユーザー定義の [Value]/[Prompt] セルの各組み合わせに対して 1 つの [User-defined Cells] 行があります。
   

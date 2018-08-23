@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806708"
 ---
-# <a name="type--c-cell-connection-points-section"></a>[Type / C] セル ([Connection Points] セクション)
+# <a name="type--c-cell-connection-points-section"></a>[Type / C] セル ([接続ポイント] セクション)
 
 接続ポイントの種類を指定します。
   
@@ -26,17 +26,17 @@ ms.locfileid: "19806708"
 |1  <br/> |外向き  <br/> |**visCnnctTypeOutward** <br/> |
 |2  <br/> |内側&amp;外向き  <br/> |**visCnnctTypeInwardOutward** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**コネクタ**ツールを選択する、図形を選択し、接続ポイントを右クリックし、接続ポイントの種類を設定することもできます。 これを行うには、[開発](run-in-developer-mode-display-the-developer-tab.md)モードで実行する必要があります。 
+接続ポイントの種類は、[**コネクタ**] ツールを選択し、図形を選択してから、接続ポイントを右クリックして設定することもできます。この操作は、[開発](run-in-developer-mode-display-the-developer-tab.md)モードで実行する必要があります。 
   
-型への参照を取得するのには C は、 **CellsU**プロパティを使用して、別の数式からまたはプログラムの名前でセルとします。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Type / C] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |Connections.Type [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
    
-型への参照を取得するのには C] セルをプログラムから、インデックスによって、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [Type / C] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

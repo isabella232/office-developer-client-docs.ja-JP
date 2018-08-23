@@ -24,13 +24,13 @@ ms.locfileid: "19806732"
 
 使用 ("* **名前** *") 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _name_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |有効なマスター シェイプの名前である、任意の文字列を指定します。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 数値
   

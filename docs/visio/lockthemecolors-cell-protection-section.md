@@ -15,19 +15,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19805775"
 ---
-# <a name="lockthemecolors-cell-protection-section"></a>[LockThemeColors] セル ([Protection] セクション)
+# <a name="lockthemecolors-cell-protection-section"></a>[LockThemeColors] セル ([保護] セクション)
 
 図形には、テーマの色のアプリケーションを防止します。 
   
-LockThemeColors セルの値は、**テーマの色**] チェック ボックスの設定、[**保護**] ダイアログ ボックスでに対応します。 
+[LockThemeColors] セルの値は、[**保護**] ダイアログ ボックスの [**テーマの色を適用不可にする**] チェックボックスの設定に対応します。 
   
-別の数式または**CellsU**プロパティを使用して、プログラムから、名前によって [LockThemeColors] セルへ参照するには、次のコマンドを使用します。 
+別の数式または  **CellsU** プロパティを使用したプログラムから、名前によって [LockThemeColors] セルを参照するには、次の値を使用します。
+
+ 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |LockThemeColors  <br/> |
    
-プログラムからは、インデックスによって [LockThemeColors] セルへ参照してください、次の引数で**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [LockThemeColors] セルを参照するには、**CellsSRC** プロパティを使用し、次の引数を指定します。
+
+ 
   
 |||
 |:-----|:-----|

@@ -24,13 +24,13 @@ ms.locfileid: "19806065"
 
 Pnt 関数 (* * *x y* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _x, y_ <br/> |必須  <br/> |**番号** <br/> |現在の図形の座標系にある点の座標を指定します。  <br/> |
+| _x, y_ <br/> |必須  <br/> |**数値型 (Number),数値型 (Number)** <br/> |現在の図形の座標系にある点の座標を指定します。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 点
   

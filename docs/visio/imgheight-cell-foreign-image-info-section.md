@@ -16,21 +16,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805574"
 ---
-# <a name="imgheight-cell-foreign-image-info-section"></a>[ImgHeight] セル ([Foreign Image Info] セクション)
+# <a name="imgheight-cell-foreign-image-info-section"></a>[ImgHeight] セル ([外部画像情報] セクション)
 
 枠内におけるオブジェクトのイメージの高さを指定します。既定の数式は次のとおりです。
   
 = 高さ\*1
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [imgheight] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ImgHeight] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | [Imgheight]  <br/> |
    
-プログラムから、インデックスによって [imgheight] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ImgHeight] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

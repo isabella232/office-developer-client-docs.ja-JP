@@ -16,19 +16,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805462"
 ---
-# <a name="geometry-section"></a>[Geometry] セクション
+# <a name="geometry-section"></a>[図形座標] セクション
 
 直線と図形を構成する円弧の頂点の座標を一覧表示する行が含まれています。 
   
 **ジオメトリ**の複数のセクションでは、図形の形状を表すことができます。 複数のパスは、さまざまなプロパティ ([イメージのクリッピング](clippingpath-cell-foreign-image-info-section.md)・ パスなど) を複数のパスがあるときに役に立ちます。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **[Geometry** ] セクションには、次の行の種類が含まれています。 詳細については、各行のトピックを参照してください。 
   
 |**Row**|**説明**|
 |:-----|:-----|
-|[[Moveto]](moveto-row-geometry-section.md) <br/> |目的の座標に移動します。  <br/> |
+|[MoveTo](moveto-row-geometry-section.md) <br/> |目的の座標に移動します。  <br/> |
 |[[Lineto]](lineto-row-geometry-section.md) <br/> |座標までの線を描画します。  <br/> |
 |[ArcTo](arcto-row-geometry-section.md) <br/> |座標までの真円の弧を描画します。  <br/> |
 |[EllipticalArcTo](ellipticalarcto-row-geometry-section.md) <br/> |座標までの楕円の弧を描画します。  <br/> |
@@ -44,6 +44,6 @@ ms.locfileid: "19805462"
 |[RelMoveTo](relmoveto-row-geometry-section.md) <br/> |図形の高さと幅を基準にして座標に移動します。  <br/> |
 |[RelQuadBezTo](relquadbezto-row-geometry-section.md) <br/> |図形の高さと幅の 2 次ベジエ曲線を描画します。  <br/> |
    
-このセクション内の行タイプを変更するのには、行を右クリックし、し、ショートカット メニューの [**行の種類の変更**] をクリックします。 
+このセクションにある行の種類を変更するには、行を右クリックして、ショートカット メニューの [**図形要素の変更**] をクリックします。 
   
 

@@ -1,5 +1,5 @@
 ---
-title: Visio シェイプシート リファレンス
+title: Visio ShapeSheet のリファレンス
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,13 +14,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806773"
 ---
-# <a name="visio-shapesheet-reference"></a>Visio シェイプシート リファレンス
+# <a name="visio-shapesheet-reference"></a>Visio ShapeSheet のリファレンス
 
 このリファレンスには、概念の概要、プログラミング タスク、サンプル、および Visio 2013 に基づくソリューションを開発するときに参照が含まれています。
   
 このコンテンツに関する質問、コメントをお待ちします。 **[Docthis@microsoft.com](mailto:docthis@microsoft.com)** にフィードバックを送信することができます。 
   
- **初期の文書**: 2012 年 7 月。**更新**: 2012年 10 月
+ **初版**: 2012 年 7 月 | **更新**: 2012 年 10 月
   
 ここでは、次のセクションを掲載しています。
   
@@ -28,7 +28,7 @@ ms.locfileid: "19806773"
     
 - [概念](concepts-visio-shapesheet.md): Visio シェイプ シートのカスタム ソリューションを開発するための重要な概念を提供します。
     
-- [共通タスク](common-tasks-visio-shapesheet.md): シェイプ シートの一般的なタスクのいくつかの短い手順が用意されています。
+- [一般的な作業](common-tasks-visio-shapesheet.md): ShapeSheet の一般的な作業のための簡単な手順をいくつか提供します。
     
 - [参照](reference-visio-shapesheet.md): 参照は、Visio のシェイプ シートの関数、セル、行、およびセクションの資料です。
     
@@ -38,10 +38,10 @@ ms.locfileid: "19806773"
     
 - [マイクロソフト製品のアクセシビリティ機能](http://www.microsoft.com/enable/products/default.aspx)
     
-- [�h�L�������g�̂��߂̕\�L�K��](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
+- [ドキュメントの表記規則](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
     
 - [Visio SDK の著作権表示](visio-sdk-copyright-notice.md)
     
-- [Microsoft �v���C�o�V�[�Ɋւ��鐺��](http://privacy.microsoft.com/en-us/default.mspx)
+- [Microsoft プライバシーに関する声明](http://privacy.microsoft.com/en-us/default.mspx)
     
 

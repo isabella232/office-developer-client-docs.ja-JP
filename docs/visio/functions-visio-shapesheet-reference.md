@@ -21,7 +21,7 @@ ms.locfileid: "19805467"
     
 - [ACOS 関数](acos-function.md)
     
-- [関数](and-function.md)
+- [AND 関数](and-function.md)
     
 - [ANG360 関数](ang360-function.md)
     
@@ -49,11 +49,11 @@ ms.locfileid: "19805467"
     
 - [BKGPAGENAME 関数](bkgpagename-function.md)
     
-- [ブレンド関数](blend-function.md)
+- [BLEND 関数](blend-function.md)
     
 - [BLOB 関数](blob-function.md)
     
-- [青い関数](blue-function.md)
+- [BLUE 関数](blue-function.md)
     
 - [BOUNDINGBOXDIST 関数](boundingboxdist-function.md)
     
@@ -67,13 +67,13 @@ ms.locfileid: "19805467"
     
 - [CALLTHIS 関数](callthis-function.md)
     
-- [カテゴリの関数](category-function.md)
+- [CATEGORY 関数](category-function.md)
     
-- [天井関数](ceiling-function.md)
+- [CEILING 関数](ceiling-function.md)
     
-- [関数を焼きます。](char-function.md)
+- [CHAR 関数](char-function.md)
     
-- [会社関数](company-function.md)
+- [COMPANY 関数](company-function.md)
     
 - [CONTAINERCOUNT 関数](containercount-function.md)
     
@@ -83,9 +83,9 @@ ms.locfileid: "19805467"
     
 - [COSH 関数](cosh-function.md)
     
-- [COS 関数 (VisioShapeSheet)](cos-function-visioshapesheet.md)
+- [COS Function (VisioShapeSheet)](cos-function-visioshapesheet.md)
     
-- [作成関数](creator-function.md)
+- [CREATOR 関数](creator-function.md)
     
 - [CY 関数](cy-function.md)
     
@@ -95,15 +95,15 @@ ms.locfileid: "19805467"
     
 - [DATA3 関数](data3-function.md)
     
-- [日付時刻関数](datetime-function.md)
+- [DATETIME 関数](datetime-function.md)
     
-- [DATEVALUE 関数 (VisioShapeSheet)](datevalue-function-visioshapesheet.md)
+- [DATEVALUE Function (VisioShapeSheet)](datevalue-function-visioshapesheet.md)
     
-- [DATE 関数 (VisioShapeSheet)](date-function-visioshapesheet.md)
+- [DATE Function (VisioShapeSheet)](date-function-visioshapesheet.md)
     
 - [DAYOFYEAR 関数](dayofyear-function.md)
     
-- [DAY 関数 (VisioShapeSheet)](day-function-visioshapesheet.md)
+- [DAY Function (VisioShapeSheet)](day-function-visioshapesheet.md)
     
 - [DECIMALSEP 関数](decimalsep-function.md)
     
@@ -113,9 +113,9 @@ ms.locfileid: "19805467"
     
 - [DEPENDSON 関数](dependson-function.md)
     
-- [説明関数](description-function.md)
+- [DESCRIPTION 関数](description-function.md)
     
-- [ディレクトリ関数](directory-function.md)
+- [DIRECTORY 関数](directory-function.md)
     
 - [DISTTOPATH 関数](disttopath-function.md)
     
@@ -137,17 +137,17 @@ ms.locfileid: "19805467"
     
 - [FIELDPICTURE 関数](fieldpicture-function.md)
     
-- [ファイル名の関数](filename-function.md)
+- [FILENAME 関数](filename-function.md)
     
 - [FIND 関数](find-function.md)
     
-- [フロア関数](floor-function.md)
+- [FLOOR 関数](floor-function.md)
     
-- [フォント関数](font-function.md)
+- [FONT 関数](font-function.md)
     
 - [FONTTOID 関数](fonttoid-function.md)
     
-- [FORMATEX 関数は、](formatex-function.md)
+- [FORMATEX 関数](formatex-function.md)
     
 - [FORMAT 関数](format-function.md)
     
@@ -159,27 +159,27 @@ ms.locfileid: "19805467"
     
 - [GOTOPAGE 関数](gotopage-function.md)
     
-- [重力加速度の関数](gravity-function.md)
+- [GRAVITY 関数](gravity-function.md)
     
-- [グリーン関数](green-function.md)
+- [GREEN 関数](green-function.md)
     
 - [GUARD 関数](guard-function.md)
     
 - [HASCATEGORY 関数](hascategory-function.md)
     
-- [ヘルプ機能](help-function.md)
+- [HELP 関数](help-function.md)
     
-- [HOUR 関数 (VisioShapeSheet)](hour-function-visioshapesheet.md)
+- [HOUR Function (VisioShapeSheet)](hour-function-visioshapesheet.md)
     
 - [HSL 関数](hsl-function.md)
     
 - [HUEDIFF 関数](huediff-function.md)
     
-- [色相関数](hue-function.md)
+- [HUE 関数](hue-function.md)
     
 - [HYPERLINKBASE 関数](hyperlinkbase-function.md)
     
-- [ハイパーリンク関数](hyperlink-function.md)
+- [HYPERLINK 関数](hyperlink-function.md)
     
 - [ID 関数](id-function.md)
     
@@ -187,7 +187,7 @@ ms.locfileid: "19805467"
     
 - [IF 関数](if-function.md)
     
-- [インデックス関数](index-function.md)
+- [INDEX 関数](index-function.md)
     
 - [INTERSECTX 関数](intersectx-function.md)
     
@@ -201,7 +201,7 @@ ms.locfileid: "19805467"
     
 - [ISERRNA 関数](iserrna-function.md)
     
-- [ISERROR 関数 (VisioShapeSheet)](iserror-function-visioshapesheet.md)
+- [ISERROR Function (VisioShapeSheet)](iserror-function-visioshapesheet.md)
     
 - [ISERRVALUE 関数](iserrvalue-function.md)
     
@@ -209,9 +209,9 @@ ms.locfileid: "19805467"
     
 - [ISTHEMED 関数](isthemed-function.md)
     
-- [キーワード関数](keywords-function.md)
+- [KEYWORDS 関数](keywords-function.md)
     
-- [言語の関数](language-function.md)
+- [LANGUAGE 関数](language-function.md)
     
 - [LEFT 関数 (VisioShapeSheet)](left-function-visioshapesheet.md)
     
@@ -233,7 +233,7 @@ ms.locfileid: "19805467"
     
 - [LOCTOPAR 関数](loctopar-function.md)
     
-- [LOC 関数 (VisioShapeSheet)](loc-function-visioshapesheet.md)
+- [LOC Function (VisioShapeSheet)](loc-function-visioshapesheet.md)
     
 - [LOG10 関数](log10-function.md)
     
@@ -243,11 +243,11 @@ ms.locfileid: "19805467"
     
 - [LUMDIFF 関数](lumdiff-function.md)
     
-- [明るさ関数](lum-function.md)
+- [LUM 関数](lum-function.md)
     
-- [絶対値の関数](magnitude-function.md)
+- [MAGNITUDE 関数](magnitude-function.md)
     
-- [マネージャーの機能](manager-function.md)
+- [MANAGER 関数](manager-function.md)
     
 - [MASTERNAME 関数](mastername-function.md)
     
@@ -255,11 +255,11 @@ ms.locfileid: "19805467"
     
 - [MID 関数 (VisioShapeSheet)](mid-function-visioshapesheet.md)
     
-- [MINUTE 関数 (VisioShapeSheet)](minute-function-visioshapesheet.md)
+- [MINUTE Function (VisioShapeSheet)](minute-function-visioshapesheet.md)
     
 - [MIN 関数](min-function.md)
     
-- [剰余関数](modulus-function.md)
+- [MODULUS 関数](modulus-function.md)
     
 - [MONTH 関数 (VisioShapeSheet)](month-function-visioshapesheet.md)
     
@@ -267,15 +267,15 @@ ms.locfileid: "19805467"
     
 - [MSOTINT 関数](msotint-function.md)
     
-- [関数の名前](name-function.md)
+- [NAME 関数](name-function.md)
     
 - [NA 関数](na-function.md)
     
 - [NEARESTPOINTONPATH 関数](nearestpointonpath-function.md)
     
-- [関数ではありません。](not-function.md)
+- [NOT 関数](not-function.md)
     
-- [NOW 関数 (VisioShapeSheet)](now-function-visioshapesheet.md)
+- [NOW Function (VisioShapeSheet)](now-function-visioshapesheet.md)
     
 - [NURBS 関数](nurbs-function.md)
     
@@ -287,7 +287,7 @@ ms.locfileid: "19805467"
     
 - [OPENTEXTWIN 関数](opentextwin-function.md)
     
-- [または関数](or-function.md)
+- [OR 関数](or-function.md)
     
 - [PAGECOUNT 関数](pagecount-function.md)
     
@@ -309,11 +309,11 @@ ms.locfileid: "19805467"
     
 - [PNTY 関数](pnty-function.md)
     
-- [Pnt 関数の関数](pnt-function.md)
+- [PNT 関数](pnt-function.md)
     
 - [POINTALONGPATH 関数](pointalongpath-function.md)
     
-- [ポリライン関数](polyline-function.md)
+- [POLYLINE 関数](polyline-function.md)
     
 - [POW 関数](pow-function.md)
     
@@ -325,7 +325,7 @@ ms.locfileid: "19805467"
     
 - [RECTSECT 関数](rectsect-function.md)
     
-- [赤い関数](red-function.md)
+- [RED 関数](red-function.md)
     
 - [REF 関数](ref-function.md)
     
@@ -339,7 +339,7 @@ ms.locfileid: "19805467"
     
 - [RIGHT 関数 (VisioShapeSheet)](right-function-visioshapesheet.md)
     
-- [ROUND 関数 (VisioShapeSheet)](round-function-visioshapesheet.md)
+- [ROUND Function (VisioShapeSheet)](round-function-visioshapesheet.md)
     
 - [RUNADDONWARGS 関数](runaddonwargs-function.md)
     
@@ -351,7 +351,7 @@ ms.locfileid: "19805467"
     
 - [SAT 関数](sat-function.md)
     
-- [2 つ目の関数 (VisioShapeSheet)](second-function-visioshapesheet.md)
+- [SECOND Function (VisioShapeSheet)](second-function-visioshapesheet.md)
     
 - [SEGMENTCOUNT 関数](segmentcount-function.md)
     
@@ -363,7 +363,7 @@ ms.locfileid: "19805467"
     
 - [SETF 関数](setf-function.md)
     
-- [網掛けの関数](shade-function.md)
+- [SHADE 関数](shade-function.md)
     
 - [SHAPETEXT 関数](shapetext-function.md)
     
@@ -373,15 +373,15 @@ ms.locfileid: "19805467"
     
 - [SINH 関数](sinh-function.md)
     
-- [SIN 関数 (VisioShapeSheet)](sin-function-visioshapesheet.md)
+- [SIN Function (VisioShapeSheet)](sin-function-visioshapesheet.md)
     
 - [SQRT 関数](sqrt-function.md)
     
-- [場合は、STRSAMEEX 関数](strsameex-function.md)
+- [STRSAMEEX 関数](strsameex-function.md)
     
 - [STRSAME 関数](strsame-function.md)
     
-- [件名関数](subject-function.md)
+- [SUBJECT 関数](subject-function.md)
     
 - [SUBSTITUTE 関数](substitute-function.md)
     
@@ -395,7 +395,7 @@ ms.locfileid: "19805467"
     
 - [TEXTWIDTH 関数](textwidth-function.md)
     
-- [テーマ関数](theme-function.md)
+- [THEME 関数](theme-function.md)
     
 - [THEMECBV 関数](themecbv-function.md)
     
@@ -405,15 +405,15 @@ ms.locfileid: "19805467"
     
 - [THEMEVAL 関数](themeval-function.md)
     
-- [TIMEVALUE 関数 (VisioShapeSheet)](timevalue-function-visioshapesheet.md)
+- [TIMEVALUE Function (VisioShapeSheet)](timevalue-function-visioshapesheet.md)
     
-- [時間の関数 (VisioShapeSheet)](time-function-visioshapesheet.md)
+- [TIME Function (VisioShapeSheet)](time-function-visioshapesheet.md)
     
-- [濃淡関数](tint-function.md)
+- [TINT 関数](tint-function.md)
     
-- [タイトル関数](title-function.md)
+- [TITLE 関数](title-function.md)
     
-- [トーン機能](tone-function.md)
+- [TONE 関数](tone-function.md)
     
 - [TRIM 関数](trim-function.md)
     
@@ -421,20 +421,20 @@ ms.locfileid: "19805467"
     
 - [TYPEDESC 関数](typedesc-function.md)
     
-- [型関数](type-function.md)
+- [TYPE 関数](type-function.md)
     
 - [UNICHAR 関数](unichar-function.md)
     
-- [上位関数](upper-function.md)
+- [UPPER 関数](upper-function.md)
     
 - [USERUI 関数](userui-function.md)
     
-- [関数を使用します。](use-function.md)
+- [USE 関数](use-function.md)
     
-- [バージョンの関数](version-function.md)
+- [VERSION 関数](version-function.md)
     
 - [WEEKDAY 関数 (VisioShapeSheet)](weekday-function-visioshapesheet.md)
     
-- [YEAR 関数 (VisioShapeSheet)](year-function-visioshapesheet.md)
+- [YEAR Function (VisioShapeSheet)](year-function-visioshapesheet.md)
     
 

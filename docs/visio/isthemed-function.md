@@ -20,17 +20,18 @@ ms.locfileid: "19805646"
   
 ## <a name="version-information"></a>バージョン情報
 
-Visio 2013 のバージョンが追加されます。 
+追加バージョン: Visio 2013
+ 
   
 ## <a name="syntax"></a>構文
 
  **ISTHEMED**()
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 ブール型
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
 > [!NOTE]
 > Visio 2013 には、 **ISTHEMED**関数は、Visio の以前のバージョンから**CELLISTHEMED**関数を置き換えます。 

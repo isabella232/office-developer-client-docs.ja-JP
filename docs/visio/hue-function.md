@@ -24,13 +24,13 @@ ms.locfileid: "19805542"
 
 色相 (* **式** *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _expression_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |色として評価される式を指定します。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 数値
   

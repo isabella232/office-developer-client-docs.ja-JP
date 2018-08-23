@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806156"
 ---
-# <a name="reference-a-cell-in-a-formula"></a>数式でセルを参照する
+# <a name="reference-a-cell-in-a-formula"></a>数式内でセルを参照する
 
 1. 参照元となるセルをダブルクリックし、次に数式内で参照先のセルを挿入する位置にカーソルを置きます。
     

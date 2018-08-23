@@ -24,20 +24,20 @@ dstUnit で記述された形式に従って書式設定された文字列とし
 
 FORMATEX (* **式** *、"* **形式** *]、[* * *srcUnit* * *]、[* * *dstUnit* * *]、[* * *langID* * *] [、* * *calID* * *]) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _expression_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |定数、演算子、関数、およびシェイプシートのセルに対する参照を組み合わせたもので、結果が値となる式です。  <br/> |
-| _format_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |図の書式設定文字列の書式を設定するために使用します。 書式形式についての詳細については、[書式形式について](about-format-pictures.md)を参照してください。  <br/> |
+| _format_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |文字列の書式設定に使用する図の書式設定。図の書式設定の詳細については、「[図の書式設定](about-format-pictures.md)」を参照してください。<br/> |
 | _srcUnit_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> | 式を評価するために使用する単位 (in、cm など) です。  <br/> |
 | _dstUnit_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |式の結果に使用する単位 (in、cm など) です。  <br/> |
 | _langID_ <br/> |省略可能  <br/> |**番号** <br/> |Microsoft Office system の日付/時間形式の書式設定に使用する言語です。  <br/> |
 | _calID_ <br/> |省略可能  <br/> |**番号** <br/> |Microsoft Office system の日付/時間形式を書式設定するときのカレンダーです。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
-文字列
+String
   
 ## <a name="remarks"></a>Remarks
 

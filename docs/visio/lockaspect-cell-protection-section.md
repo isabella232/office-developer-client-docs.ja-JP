@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805747"
 ---
-# <a name="lockaspect-cell-protection-section"></a>[LockAspect] セル ([Protection] セクション)
+# <a name="lockaspect-cell-protection-section"></a>[LockAspect ] セル ([保護] セクション)
 
 図形の縦横比をロックします。ロックすると、図形のサイズを変更するときに縦横比が維持されます。上下、左右のいずれか一方向だけサイズを変更することができなくなります。
   
@@ -27,13 +27,13 @@ ms.locfileid: "19805747"
    
 ## <a name="remarks"></a>備考
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[LockAspect] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LockAspect] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | LockAspect  <br/> |
    
-プログラムから、インデックスによって [LockAspect] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [LockAspect] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

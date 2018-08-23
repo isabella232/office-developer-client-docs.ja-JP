@@ -1,5 +1,5 @@
 ---
-title: ルーラー&amp;グリッド セクション
+title: '[ルーラーとグリッド] セクション'
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806318"
 ---
-# <a name="ruler-amp-grid-section"></a>ルーラー&amp;グリッド セクション
+# <a name="ruler-amp-grid-section"></a>[ルーラーとグリッド] セクション
 
 ページのルーラーとグリッドに関する現在の設定を表示します。
   

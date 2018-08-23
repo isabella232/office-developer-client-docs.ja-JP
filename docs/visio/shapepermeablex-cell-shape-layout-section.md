@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19806401"
 ---
-# <a name="shapepermeablex-cell-shape-layout-section"></a>[ShapePermeableX] セル ([Shape Layout] セクション)
+# <a name="shapepermeablex-cell-shape-layout-section"></a>[ShapePermeableX] セル ([図形レイアウト] セクション)
 
 コネクタの接続経路が、配置可能な図形上を水平方向に通過するかどうかを指定します。
   
@@ -31,13 +31,13 @@ ms.locfileid: "19806401"
   
 Visio 2000 より前のバージョンでは、[Miscellaneous] セクションで [ObjInteract] セルを使用してこの動作を設定していました。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ShapePermeableX] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ShapePermeableX] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名 :  <br/> |ShapePermeableX  <br/> |
    
-プログラムから、インデックスによって [ShapePermeableX] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ShapePermeableX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

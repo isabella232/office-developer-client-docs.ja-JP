@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806781"
 ---
-# <a name="walkpreference-cell-glue-info-section"></a>[WalkPreference] セル ([Glue Info] セクション)
+# <a name="walkpreference-cell-glue-info-section"></a>[WalkPreference] セル ([接着情報] セクション)
 
 1-D 図形をあいまいな位置に移動したときに、その図形の端点が、動的接着によって接着先の図形にある水平方向の接続ポイントに移動するのか、または垂直方向の接続ポイントに移動するのかを指定します。既定では、1-D 図形の始点と終点の両方とも水平方向の接続ポイントに移動します。
   
@@ -29,13 +29,13 @@ ms.locfileid: "19806781"
 
 このセルは、動的コネクタには影響を与えません。動的コネクタの動作は、その迂回方法によって決まります。ページ上のすべての動的コネクタに対する既定の迂回方法については [RouteStyle] セルを、特定の動的コネクタの迂回方法については [ShapeRouteStyle] を参照してください。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[WalkPreference] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [WalkPreference] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | WalkPreference  <br/> |
    
-プログラムから、インデックスによって [WalkPreference] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [WalkPreference] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

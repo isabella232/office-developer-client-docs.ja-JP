@@ -22,7 +22,7 @@ ms.locfileid: "19806472"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[ShowGuides_Type](showguides_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[ShowGuides_Type](showguides_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |windows.xml  <br/> |
@@ -42,7 +42,8 @@ ms.locfileid: "19806472"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Window](window-element-windows_type-complextypevisio-xml.md) <br/> |[Window_Type](window_type-complextypevisio-xml.md) <br/> |Microsoft Visio のインスタンスで開いているウィンドウを表します。  <br/> |
+|[Window](window-element-windows_type-complextypevisio-xml.md) <br/> |[Window_Type](window_type-complextypevisio-xml.md) <br/> |Microsoft Visio インスタンスで開いているウィンドウを表します。
+  <br/> |
    
 ### <a name="child-elements"></a>子要素
 

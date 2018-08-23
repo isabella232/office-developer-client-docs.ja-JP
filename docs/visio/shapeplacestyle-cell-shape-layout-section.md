@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806404"
 ---
-# <a name="shapeplacestyle-cell-shape-layout-section"></a>[ShapePlaceStyle] セル ([Shape Layout] セクション)
+# <a name="shapeplacestyle-cell-shape-layout-section"></a>[ShapePlaceStyle] セル ([図形レイアウト] セクション)
 
 図形の配置方法のページで、[**レイアウトの構成**] ダイアログ ボックスをオンにして図形をレイアウトするときを指定する ([**デザイン**] タブの [**レイアウト**] で、**ページの再レイアウト**] をクリックし、**他のレイアウト オプション**をクリックし、)。 **VisCellIndices**からレイアウト スタイルと整列の値を格納します。 
   
@@ -51,13 +51,17 @@ ms.locfileid: "19806404"
 |**visLOPlaceRightToLeft** <br/> |5  <br/> |
 |**visLOPlaceTopToBottom** <br/> |1  <br/> |
    
-参照してください ShapePlaceStyle] セルへの名前で別の数式または**CellsU**プロパティを使用したプログラムから、次のコマンドを使用します。 
+別の数式または  **CellsU** プロパティを使用したプログラムから、名前によって [ShapePlaceStyle] セルを参照するには、次の値を使用します。
+
+ 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |ShapePlaceStyle  <br/> |
    
-ShapePlaceStyle] セルへのインデックスでプログラムから、参照するには、次の引数で**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ShapePlaceStyle] セルを参照するには、 **CellsSRC** プロパティを使用し、次の引数を指定します。
+
+ 
   
 |||
 |:-----|:-----|

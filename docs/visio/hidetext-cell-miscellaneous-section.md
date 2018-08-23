@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805536"
 ---
-# <a name="hidetext-cell-miscellaneous-section"></a>[HideText] セル ([Miscellaneous] セクション)
+# <a name="hidetext-cell-miscellaneous-section"></a>[HideText] セル ([その他] セクション)
 
 図形のテキストを非表示にします。テキストを非表示にしても、テキスト ブロック内のテキストの参照、プロパティの編集、およびスタイルの適用は可能ですが、[HideText] の値を FALSE (0) に戻すまで、変更内容は表示されません。
   

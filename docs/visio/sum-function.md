@@ -24,15 +24,15 @@ ms.locfileid: "19806591"
 
 合計 (* * *[数値 1]* * *、* **数値 2* * *,...、* * *[numberN]* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _number1_ <br/> |必須  <br/> |**数値** <br/> |最初の数値を指定します。  <br/> |
-| _number2_ <br/> |必須  <br/> |**数値** <br/> |2 番目の数値を指定します。  <br/> |
-| _numberN_ <br/> |省略可能  <br/> |**数値** <br/> |n 番目の数値を指定します。  <br/> |
+| _number1_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |最初の数値を指定します。  <br/> |
+| _number2_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |2 番目の数値を指定します。  <br/> |
+| _numberN_ <br/> |省略可能  <br/> |**数値型 (Numeric)** <br/> |n 番目の数値を指定します。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 数値型 (Numeric)
   

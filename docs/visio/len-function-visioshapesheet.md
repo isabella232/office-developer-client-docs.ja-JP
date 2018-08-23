@@ -24,13 +24,13 @@ ms.locfileid: "19805689"
 
 LEN (* **テキスト** *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _text_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |長さを計測する文字列を指定します。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 数値型 (Numeric)
   

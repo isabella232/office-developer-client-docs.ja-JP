@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805550"
 ---
-# <a name="hyperlink-row-hyperlinks-section"></a>[Hyperlink] 行 ([Hyperlinks] セクション)
+# <a name="hyperlink-row-hyperlinks-section"></a>[Hyperlink] 行 ([ハイパーリンク] セクション)
 
 図形に関連付けられた、単一のハイパーリンクの情報を格納します。図形には、各ハイパーリンクに対して 1 つの [Hyperlink] 行があります。
   
@@ -25,7 +25,7 @@ ms.locfileid: "19805550"
 |**Cell**|**説明**|
 |:-----|:-----|
 |[説明](description-cell-hyperlinks-section.md) <br/> |ハイパーリンクを説明するテキスト文字列です。  <br/> |
-|[Address](address-cell-hyperlinks-section.md) <br/> |移動先の URL アドレス、MS-DOS ファイル名、または UNC パスです。  <br/> |
+|[住所](address-cell-hyperlinks-section.md) <br/> |移動先の URL アドレス、MS-DOS ファイル名、または UNC パスです。  <br/> |
 |[サブアドレス](subaddress-cell-hyperlinks-section.md) <br/> |リンク先のターゲット図面内での位置です。  <br/> |
 |[ExtraInfo](extrainfo-cell-hyperlinks-section.md) <br/> |URL の解決に使用される情報を渡す文字列です。  <br/> |
 |[フレーム](frame-cell-hyperlinks-section.md) <br/> |ActiveX コンテナーで、ActiveX の図面として Microsoft Office Visio の図面を開く場合に、ターゲットとするフレームの名前です。既定では、空の文字列です。  <br/> |

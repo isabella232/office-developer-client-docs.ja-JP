@@ -1,5 +1,5 @@
 ---
-title: PidTagContactAddressBookStoreSupportMask の標準的なプロパティ
+title: PidTagContactAddressBookStoreSupportMask 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 34f649c8-29bf-470f-9b05-31b69d069259
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 5cd113c263c97ba306fcf7bf97c750e710eac922
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 7219a8936381c498e7b27898f5efae8e40697b59
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802579"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565614"
 ---
-# <a name="pidtagcontactaddressbookstoresupportmask-canonical-property"></a>PidTagContactAddressBookStoreSupportMask の標準的なプロパティ
+# <a name="pidtagcontactaddressbookstoresupportmask-canonical-property"></a>PidTagContactAddressBookStoreSupportMask 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 連絡先フォルダーを含むストアから取得した**PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagcontactaddressbookstoresupportmask-canonical-property.md)) のプロパティが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_CONTAB_STORE_SUPPORT_MASK  <br/> |
+|関連するプロパティ:  <br/> |PR_CONTAB_STORE_SUPPORT_MASK  <br/> |
 |識別子:  <br/> |0x6611  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |連絡先のアドレス帳  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 連絡先アドレス帳プロバイダーは、このプロパティを使用して、ストアのサポートされている機能の妥当性を評価します。 これは、連絡先のアドレス帳コンテナー、および連絡先のアドレス帳コンテナーのテーブル内の列のプロパティです。
   
@@ -58,7 +58,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

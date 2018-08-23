@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805929"
 ---
-# <a name="objectkind-cell-text-fields-section"></a>[ObjectKind] セル ([Text Fields] セクション)
+# <a name="objectkind-cell-text-fields-section"></a>[ObjectKind] セル ([テキスト フィールド] セクション)
 
 テキスト フィールドの種類を示します。
   
@@ -33,13 +33,13 @@ ms.locfileid: "19805929"
     
 - 縦中横 : 縦書きテキストの内部に設定された横書きテキストであることを示すフィールドです。
     
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ObjectKind] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** を使用したプログラムから、名前によって [ObjectKind] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | Fields.ObjectKind [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
    
-プログラムから、インデックスによって [ObjectKind] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ObjectKind] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   
 |||
 |:-----|:-----|

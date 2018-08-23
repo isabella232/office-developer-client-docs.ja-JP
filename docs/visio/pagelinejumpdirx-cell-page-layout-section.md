@@ -16,25 +16,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805961"
 ---
-# <a name="pagelinejumpdirx-cell-page-layout-section"></a>[PageLineJumpDirX] セル ([Page Layout] セクション)
+# <a name="pagelinejumpdirx-cell-page-layout-section"></a>[PageLineJumpDirX] セル ([ページ レイアウト] セクション)
 
 図面ページ上にある水平方向の動的コネクタに対して、固有の飛び越し点の方向を適用していない場合、そのコネクタに表示される飛び越し点の方向を指定します。
   
-|**値**|**線の飛び越し点の方向**|**オートメーション定数**|
+|**値**|**飛び越し点の方向**|**オートメーション定数**|
 |:-----|:-----|:-----|
 | 0  <br/> | 既定値です。左、またはページの設定に従います。  <br/> |**visLOJumpDirXDefault** <br/> |
 | 1  <br/> | 上  <br/> |**visLOJumpDirXUp** <br/> |
 | 2  <br/> | 下  <br/> |**visLOJumpDirXDown** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[PageLineJumpDirX] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前による [PageLineJumpDirX] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | PageLineJumpDirX  <br/> |
    
-プログラムから、インデックスによって [PageLineJumpDirX] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによる [PageLineJumpDirX] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   
 |||
 |:-----|:-----|

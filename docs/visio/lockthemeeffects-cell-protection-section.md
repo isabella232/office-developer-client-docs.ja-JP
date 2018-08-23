@@ -15,19 +15,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805779"
 ---
-# <a name="lockthemeeffects-cell-protection-section"></a>[LockThemeEffects] セル ([Protection] セクション)
+# <a name="lockthemeeffects-cell-protection-section"></a>[LockThemeEffects] セル ([保護] セクション)
 
 図形にテーマの効果の適用を防止します。 
   
 **テーマの効果を**チェック ボックスの設定で、[**保護**] ダイアログ ボックスに対応します。 
   
-別の数式または**CellsU**プロパティを使用して、プログラムから、名前で ti LockThemeColors セルを参照するには、次のコマンドを使用します。 
+別の数式または  **CellsU** プロパティを使用したプログラムから、名前によって [LockThemeColors] セルを参照するには、次の値を使用します。
+
+ 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |LockThemeEffects  <br/> |
    
-LockThemeEffects] セルへのインデックスでプログラムから、参照するには、次の引数で**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [LockThemeEffects] セルを参照するには、 **CellsSRC** プロパティを使用し、次の引数を指定します。
+
+ 
   
 |||
 |:-----|:-----|

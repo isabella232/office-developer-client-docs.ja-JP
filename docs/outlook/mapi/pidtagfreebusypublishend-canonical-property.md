@@ -1,5 +1,5 @@
 ---
-title: PidTagFreeBusyPublishEnd の標準的なプロパティ
+title: PidTagFreeBusyPublishEnd 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: df239741-6a63-4cd4-9bbb-42c0f5c668a5
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 1f7f439b211b60f7acad3a9dd19c50a21923c1cc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: b539de9793c45e4b393452c264d72dda6fa58c4e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802786"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568799"
 ---
-# <a name="pidtagfreebusypublishend-canonical-property"></a>PidTagFreeBusyPublishEnd の標準的なプロパティ
+# <a name="pidtagfreebusypublishend-canonical-property"></a>PidTagFreeBusyPublishEnd 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 公開の範囲の終了時刻が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_FREEBUSY_PUBLISH_END  <br/> |
+|関連するプロパティ:  <br/> |PR_FREEBUSY_PUBLISH_END  <br/> |
 |識別子:  <br/> |0x6848  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |空き/予約済み  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 公開の範囲の開始日の**PR_FREEBUSY_COUNT_MONTHS** ([PidTagFreeBusyCountMonths](pidtagfreebusycountmonths-canonical-property.md)) の値を追加することによってこのプロパティの値が計算されます。 この値は、1601 年 1 月 1 日世界協定時刻 (UTC) で、午前 0 時以降の時間を分単位で表されます。
   
@@ -68,7 +68,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

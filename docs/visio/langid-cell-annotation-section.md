@@ -16,24 +16,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805655"
 ---
-# <a name="langid-cell-annotation-section"></a>[LangID] セル ([Annotation] セクション)
+# <a name="langid-cell-annotation-section"></a>[LangID] セル ([注釈] セクション)
 
 コメントの記入に使用した言語を示します。
   
 > [!NOTE]
 > このセルは、Microsoft Visio 2013 で .vsd ファイルを開くときにのみ、または .vsd ファイルの形式で .vsdx ファイルを保存するときにコメントを追跡するために使用されます。 Visio 2013 で .vsdx のドキュメント内のコメントを追跡するためには使用されません。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この値は、ロケール ID (LCID) のコメントが入力されたときに、言語バーでアクティブになっている言語です。 Microsoft Office アプリケーションでサポートされる言語のリストは、 [[doclangid]](doclangid-cell-document-properties-section.md)セル ([ドキュメント プロパティ] セクションで) のトピックを参照してください。 
+この値は、コメントを記入したときに言語バーでアクティブになっている言語のロケール ID (LCID) です。Microsoft Office のアプリケーションがサポートしている言語の一覧は、[[DocLangID](doclangid-cell-document-properties-section.md)] セル ([Document Properties] セクション) を参照してください。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって langid] セルへの参照を取得するには、次のコマンドを使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LangID] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | Annotation.LangID [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
    
-プログラムから、インデックスによって [langid] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [LangID] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

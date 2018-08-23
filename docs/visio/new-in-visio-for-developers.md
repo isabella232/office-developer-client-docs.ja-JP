@@ -39,15 +39,15 @@ Visio 2013 で導入された新しいファイル形式は、Open Packaging Con
   
 - .vsdx (Visio 図面)
     
-- .vsdm (マクロを有効にした図面)
+- .vsdm (Visio マクロ対応図面)
     
 - .vssx (Visio ステンシル)
     
-- .vssm (マクロが有効なステンシル)
+- .vssm (Visio マクロ対応ステンシル)
     
 - .vstx (Visio テンプレート)
     
-- .vstm (Visio マクロ有効テンプレート)
+- .vstm (Visio マクロ対応テンプレート)
     
 読み取りと書き込み ( [System.IO.Packaging](https://msdn.microsoft.com/library/System.IO.Packaging.aspx) ) などのファイル形式のパッケージを ( [System.Xml.Linq](https://msdn.microsoft.com/library/System.Xml.Linq.aspx) ) の XML を解析して、既存のサポートを使用して、新しいファイル形式をプログラムで操作できます。 
   
@@ -60,7 +60,7 @@ Visio Services では、ブラウザーで Visio Web 図面 (.vdw) 形式のフ�
 
 テーマのデザインは Visio 2013 で変更され、図形とアートの効果の統合など、より多彩な効果やスタイルを使用するようになっています。 ユーザーことができます今すぐテーマを適用することにより、包括的なスタイルを決定、テーマのバリエーションを含むダイアグラムをカスタマイズおよびクイック スタイルを使用して個々 の図形を強調表示します。 シェイプ シート開発者では、新しい機能と、[シェイプ シートのセルのこれらの機能を利用できます。
   
-[ページ](http://msdn.microsoft.com/library/7a7f37ab-b448-eb70-b4f1-c185dfbd511e%28Office.15%29.aspx)、[シェイプ](http://msdn.microsoft.com/library/da7a8872-4ebb-a607-e0ed-eebf68ff5630%28Office.15%29.aspx)、および[選択](http://msdn.microsoft.com/library/e5734140-6dbe-7de8-9695-1a22fb4ac628%28Office.15%29.aspx)オブジェクト レベルでテーマを操作することもできます。 Api 使用するテーマを使用するにはには、 [Page.SetTheme](http://msdn.microsoft.com/library/5a186f58-9a7a-bd8a-826b-85da75a4d59f%28Office.15%29.aspx)メソッド、 [Page.SetThemeVariant](http://msdn.microsoft.com/library/8393a95f-83ca-0efa-d987-ae498bfe5e9d%28Office.15%29.aspx)メソッド、 [Shape.SetQuickStyle](http://msdn.microsoft.com/library/aebe80cb-fae9-0be7-e903-882f6eb58b63%28Office.15%29.aspx)メソッドと[Selection.SetQuickStyle](http://msdn.microsoft.com/library/39b810b5-0738-daed-0103-8a2df07559c6%28Office.15%29.aspx)メソッドが含まれます。 
+テーマの操作は、[ページ](http://msdn.microsoft.com/library/7a7f37ab-b448-eb70-b4f1-c185dfbd511e%28Office.15%29.aspx)、[図形](http://msdn.microsoft.com/library/da7a8872-4ebb-a607-e0ed-eebf68ff5630%28Office.15%29.aspx)、および[選択範囲](http://msdn.microsoft.com/library/e5734140-6dbe-7de8-9695-1a22fb4ac628%28Office.15%29.aspx)オブジェクトのレベルでも実行できます。テーマを操作するための新しい API には、[Page.SetTheme](http://msdn.microsoft.com/library/5a186f58-9a7a-bd8a-826b-85da75a4d59f%28Office.15%29.aspx) メソッド、[Page.SetThemeVariant](http://msdn.microsoft.com/library/8393a95f-83ca-0efa-d987-ae498bfe5e9d%28Office.15%29.aspx) メソッド、[Shape.SetQuickStyle](http://msdn.microsoft.com/library/aebe80cb-fae9-0be7-e903-882f6eb58b63%28Office.15%29.aspx) メソッド、および [Selection.SetQuickStyle](http://msdn.microsoft.com/library/39b810b5-0738-daed-0103-8a2df07559c6%28Office.15%29.aspx) メソッドなどがあります。 
   
 Visio 2013 の新しい Api の詳細については、この資料の[Visio オブジェクト モデルの変更](#vis15_WhatsNew_NewOM)」を参照してください。 Visio 2013 の新しいシェイプ シート セルの詳細については、 [Visio のシェイプ シート開発者向けの新はどのような](what-s-new-for-visio-shapesheet-developers.md)資料を参照してください。
   
@@ -141,17 +141,17 @@ Visio 2013 の新機能のプログラミングのサポートを提供するの
 
 Visio のオブジェクト モデル内の既存のオブジェクトには、次のメンバーが追加されました。
   
- **表 1 です。Visio オブジェクト モデルの強化**
+ **表 1. Visio オブジェクト モデルの機能拡張**
   
 |**オブジェクトまたはコレクション**|**新しいメンバー**|
 |:-----|:-----|
-|[アプリケーション オブジェクト (Visio)](http://msdn.microsoft.com/library/5b3c8939-793f-116f-11b8-1d4170d95a63%28Office.15%29.aspx) <br/> |[Application.AfterReplaceShapes イベント (Visio)](http://msdn.microsoft.com/library/b02de031-086a-41cc-d832-5434b8096444%28Office.15%29.aspx) <br/> |
+|[Application オブジェクト (Visio)](http://msdn.microsoft.com/library/5b3c8939-793f-116f-11b8-1d4170d95a63%28Office.15%29.aspx) <br/> |[Application.AfterReplaceShapes イベント (Visio)](http://msdn.microsoft.com/library/b02de031-086a-41cc-d832-5434b8096444%28Office.15%29.aspx) <br/> |
 ||[Application.BeforeReplaceShapes イベント (Visio)](http://msdn.microsoft.com/library/fbf44569-0539-9292-ce20-1f9e34238b33%28Office.15%29.aspx) <br/> |
 ||[Application.QueryCancelReplaceShapes イベント (Visio)](http://msdn.microsoft.com/library/50c0f2a6-f534-f3af-7e83-c865abda8bf9%28Office.15%29.aspx) <br/> |
 ||[Application.ReplaceShapesCanceled イベント (Visio)](http://msdn.microsoft.com/library/e8eecd64-e4bd-d2c4-b942-c5ff607a4121%28Office.15%29.aspx) <br/> |
 |[ApplicationSettings オブジェクト (Visio)](http://msdn.microsoft.com/library/f2e24211-ecc6-e0f5-4c00-fc50f98a3505%28Office.15%29.aspx) <br/> |[ApplicationSettings.EnterCommitsText プロパティ (Visio)](http://msdn.microsoft.com/library/ba9ce9fa-d224-cdc3-668d-46c1849911c7%28Office.15%29.aspx) <br/> |
 ||[ApplicationSettings.SVGExportFormat プロパティ (Visio)](http://msdn.microsoft.com/library/9e7ca1cb-5ace-b75b-0e59-61566b9a0169%28Office.15%29.aspx) <br/> |
-|[ドキュメント オブジェクト (Visio)](http://msdn.microsoft.com/library/21640062-13a2-a2b2-7c61-7e707671207c%28Office.15%29.aspx) <br/> |[Document.AfterDocumentMerge イベント (Visio)](http://msdn.microsoft.com/library/50658da5-592a-4d16-908f-c6abe3050f09%28Office.15%29.aspx) <br/> |
+|[Document オブジェクト (Visio)](http://msdn.microsoft.com/library/21640062-13a2-a2b2-7c61-7e707671207c%28Office.15%29.aspx) <br/> |[Document.AfterDocumentMerge イベント (Visio)](http://msdn.microsoft.com/library/50658da5-592a-4d16-908f-c6abe3050f09%28Office.15%29.aspx) <br/> |
 ||[Document.Comments プロパティ (Visio)](http://msdn.microsoft.com/library/15a322ad-70eb-1487-701d-76e2fde73309%28Office.15%29.aspx) <br/> |
 ||[Document.CompatibilityMode プロパティ (Visio)](http://msdn.microsoft.com/library/98fc00d3-5d2b-218e-9828-b5581ee7313d%28Office.15%29.aspx) <br/> |
 |[ドキュメント オブジェクト (Visio)](http://msdn.microsoft.com/library/e9291149-964e-c6fb-4c62-bf2f35a6a0a7%28Office.15%29.aspx) <br/> |[Documents.AfterDocumentMerge イベント (Visio)](http://msdn.microsoft.com/library/cac0544d-77b9-b722-cfdb-e42475ce2558%28Office.15%29.aspx) <br/> |
@@ -189,7 +189,7 @@ Visio のオブジェクト モデル内の既存のオブジェクトには、�
 
 Visio オブジェクト モデルには、次のオブジェクトが追加されました。
   
- **表 2 になります。Visio オブジェクト モデルの追加**
+ **表 2. Visio オブジェクト モデルへの追加**
   
 |**オブジェクト**|**プロパティ**|**メソッド**|
 |:-----|:-----|:-----|
@@ -200,7 +200,7 @@ Visio オブジェクト モデルには、次のオブジェクトが追加さ�
    
 新しい列挙体と Visio 2013 で導入された定数は、次を表します。
   
- **表 3。Visio の列挙の追加**
+ **表 3. Visio の列挙の追加**
   
 |**列挙**|**説明**|
 |:-----|:-----|
@@ -213,9 +213,9 @@ Visio オブジェクト モデルには、次のオブジェクトが追加さ�
 
 次の表は、非推奨のオブジェクトと Visio 2013 で導入されたメンバーを一覧します。 のみメンバーが**メンバーを非推奨**] 列に一覧表示されたオブジェクトは使用されなくなりました。 
   
- **表 4 です。Visio オブジェクト モデルの deprecations**
+ **表 4. Visio オブジェクト モデルで使用されていないメンバー**
   
-|**オブジェクトまたはコレクション**|**非推奨メンバー**|
+|**オブジェクトまたはコレクション**|**使用されていないメンバー**|
 |:-----|:-----|
 |**ウィンドウ**オブジェクト  <br/> |**PageTabWidth**プロパティ  <br/> |
    
@@ -224,9 +224,9 @@ Visio オブジェクト モデルには、次のオブジェクトが追加さ�
 
 - [開発者は、Visio](http://msdn.microsoft.com/en-us/office/aa905478.aspx)
     
-- [Visio シェイプ シート開発者用の新します。](what-s-new-for-visio-shapesheet-developers.md)
+- [Visio ShapeSheet 開発者向け新機能](what-s-new-for-visio-shapesheet-developers.md)
     
-- [SharePoint 2013 での Visio のサービス](http://msdn.microsoft.com/en-us/library/jj164027%28office.15%29.aspx)
+- [SharePoint 2013 の Visio Services](http://msdn.microsoft.com/en-us/library/jj164027%28office.15%29.aspx)
     
 - [(Office.com) の Visio の新機能](http://office.com/redir/HA102749364.aspx)
     

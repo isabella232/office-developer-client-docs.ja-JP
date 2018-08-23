@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806711"
 ---
-# <a name="type-a-new-formula-for-a-cell"></a>セルに新しい数式を入力する
+# <a name="type-a-new-formula-for-a-cell"></a>セルの新しい数式を入力する
 
 1. セルを選択します。
     

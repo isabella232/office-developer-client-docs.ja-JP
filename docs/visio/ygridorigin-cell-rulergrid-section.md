@@ -1,5 +1,5 @@
 ---
-title: YGridOrigin セル (ルーラー&amp;グリッド セクション)
+title: '[YGridOrigin] セル ([ルーラーとグリッド] セクション)'
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806840"
 ---
-# <a name="ygridorigin-cell-ruler-amp-grid-section"></a>YGridOrigin セル (ルーラー&amp;グリッド セクション)
+# <a name="ygridorigin-cell-ruler-amp-grid-section"></a>[YGridOrigin] セル ([ルーラーとグリッド] セクション)
 
 グリッド原点の垂直方向の座標を指定します。
   
@@ -24,13 +24,13 @@ ms.locfileid: "19806840"
 
 このセルが垂直方向の**グリッドの基準**に対応してオプションで、**ルーラー&amp;グリッド**] ダイアログ ボックス ([**表示**] タブで、矢印をクリック**を表示する**)。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[YGridOrigin] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [YGridOrigin] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名 :  <br/> |YGridOrigin  <br/> |
    
-プログラムから、インデックスによって [YGridOrigin] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [YGridOrigin] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

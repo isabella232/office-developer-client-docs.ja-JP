@@ -24,13 +24,13 @@ ms.locfileid: "19806615"
 
 TAN (* **角度** *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _角度_ <br/> |必須  <br/> |**数値** <br/> |タンジェントを取得する対象の角度です。  <br/> |
+| _角度_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |タンジェントを取得する対象の角度です。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 数値型 (Numeric)
   

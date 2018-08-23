@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806841"
 ---
-# <a name="y-cell-geometry-section"></a>[Y] セル ([Geometry] セクション)
+# <a name="y-cell-geometry-section"></a>[Y] セル ([図形座標] セクション)
 
 の*y*を表す-ローカル座標で図形の座標です。 この表に、各行で [Y] セルの。 
   
@@ -33,24 +33,24 @@ ms.locfileid: "19806841"
 |[InfiniteLine](infiniteline-row-geometry-section.md) <br/> | *Y -* 無限線上の点の座標です。  <br/> |
 |[楕円](ellipse-row-geometry-section.md) <br/> | *Y*の楕円の中心の座標です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [Y] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Y] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | ジオメトリの*i*です。Y *j* 、 *i*および*j* = < 1 > では、2、3.  <br/> |
 || ジオメトリの*i*です。Y1 (InfiniteLine と楕円の行)、 *i* = < 1 > では、2、3.  <br/> |
    
-プログラムから、インデックスによって [Y] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [Y] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionFirstComponent** +  *i* 、 *i* = 0, 1, 2.  <br/> |
 | 行インデックス:  <br/> |**visRowVertex** +  *j* 、 *j* = 0, 1, 2.  <br/> |
-||**visRowVertex**(InfiniteLine と楕円の行)  <br/> |
-| セル インデックス:  <br/> |**visY**([Moveto]、[lineto]、ArcTo、EllipticalArcTo、[nurbsto]、ポリライン、[a、および SplineKnot 行)  <br/> |
-||**visInfiniteLineY1**(InfiniteLine 行)  <br/> |
-||**visEllipseCenterY**([Ellipse] 行)  <br/> |
+||**visRowVertex** ([InfiniteLine] 行および [Ellipse] 行)  <br/> |
+| セル インデックス:  <br/> |**visY** ([MoveTo]、[LineTo]、[ArcTo]、[EllipticalArcTo]、[NURBSTo]、[Polyline]、[SplineStart]、および [SplineKnot] 行)  <br/> |
+||**visInfiniteLineY1** ([InfiniteLine] 行)  <br/> |
+||**visEllipseCenterY** ([Ellipse] 行)  <br/> |
    
 

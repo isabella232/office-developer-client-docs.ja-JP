@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805947"
 ---
-# <a name="noobjhandles-cell-miscellaneous-section"></a>[NoObjHandles] セル ([Miscellaneous] セクション)
+# <a name="noobjhandles-cell-miscellaneous-section"></a>[NoObjHandles] セル ([その他] セクション)
 
 選択した図形の選択ハンドルの表示/非表示を切り替えます。
   
@@ -27,13 +27,13 @@ ms.locfileid: "19805947"
    
 ## <a name="remarks"></a>備考
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[NoObjHandles] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [NoObjHandles] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | NoObjHandles  <br/> |
    
-プログラムから、インデックスによって [NoObjHandles] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [NoObjHandles] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   
 |||
 |:-----|:-----|

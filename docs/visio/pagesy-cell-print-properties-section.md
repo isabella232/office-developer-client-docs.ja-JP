@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805966"
 ---
-# <a name="pagesy-cell-print-properties-section"></a>[PagesY] セル ([Print Properties] セクション)
+# <a name="pagesy-cell-print-properties-section"></a>[PagesY] セル ([印刷のプロパティ] セクション)
 
 図面ページに上下を揃えるプリンター ページの番号を指定します。 
   
@@ -24,13 +24,13 @@ ms.locfileid: "19805966"
 
 この値は、[OnPage] セルが TRUE に設定されているときに限り使用されます。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [pagesy] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [PagesY] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | [Pagesy]  <br/> |
    
-プログラムから、インデックスによって [pagesy] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [PagesY] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

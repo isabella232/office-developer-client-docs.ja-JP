@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/21/2018
 ms.locfileid: "19805959"
 ---
-# <a name="page-properties-section"></a>[Page Properties] セクション
+# <a name="page-properties-section"></a>[ページのプロパティ] セクション
 
 ページの幅、高さ、縮尺などの、ページの属性を制御するセルを格納します。
   

@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 43b23fd7-999a-42c0-8f4d-47f5de266bdb
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 39d6df6db329abf7509f816165341ea0eda8331b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4bab31dbcd1f7139980d7df5559c1ee52a6f167f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801672"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563647"
 ---
 # <a name="opening-a-message-store"></a>メッセージ ストアを開く
 
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロファイルによっては、クライアントは、通常のセッション中に 1 つまたは複数のメッセージ ストアを開く必要があります。 ポインターへのアクセスは、メッセージ ストアを開く、 [IMsgStore: IMAPIProp](imsgstoreimapiprop.md)の実装です。 **IMsgStore**インターフェイスは、通知、フォルダーの割り当て、およびフォルダーやメッセージにアクセスするためのメソッドを提供します。 
   

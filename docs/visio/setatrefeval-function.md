@@ -24,18 +24,18 @@ SETATREF 関数の_式_のパラメーターで使用すると、SETATREF_参照
 
 SETATREFEVAL (* * *expr* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _expr_ <br/> |必須  <br/> |**によって異なります** <br/> | SETATREF 関数は、_セット式_を別のセルにリダイレクトするときに評価される式を指定します。  <br/> |
+| _expr_ <br/> |必須  <br/> |**多様** <br/> | SETATREF 関数は、_セット式_を別のセルにリダイレクトするときに評価される式を指定します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 SETATREF 関数の*式*のパラメーターを参照先のセルに代入すると、Microsoft Visio に書き込みます*セット式*セル式としてデフォルトで。 ただし、*セット式*のパラメーターの任意の部分は、SETATREFEVAL 関数によってラップされたが、Visio は式を評価し、SETATREF 式を解決する前にその結果で SETATREFEVAL 関数を置き換えます。 
   
 ## <a name="example"></a>例
 
-例については、 [SETATREF](setatref-function.md)関数を参照してください。 
+例については、[SETATREF](setatref-function.md) 関数を参照してください。 
   
 

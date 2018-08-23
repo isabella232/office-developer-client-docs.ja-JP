@@ -23,25 +23,26 @@ ms.locfileid: "19805427"
   
 ## <a name="version-information"></a>バージョン情報
 
-Visio 2013 のバージョンが追加されます。 
+追加バージョン: Visio 2013
+ 
   
 ## <a name="syntax"></a>構文
 
  **フォント**( _"font_name_string"_)
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _font_name_string_ <br/> |必須  <br/> |**string** <br/> |フォント名を指定します。  <br/> |
    
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
-整数型 (Integer)
+整数
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
-*Font_name_string*の指定された文字列で、フォントが一致しない場合、この関数は、#VALUE を返します。 エラーです。 
+*Font_name_string*の指定された文字列で、フォントが一致しない場合、この関数は、#VALUE を返します。 エラーを返します。 
   
 ## <a name="example"></a>例
 

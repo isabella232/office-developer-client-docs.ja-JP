@@ -16,26 +16,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805541"
 ---
-# <a name="hideforapply-cell-style-properties-section"></a>[HideForApply] セル ([Style Properties] セクション)
+# <a name="hideforapply-cell-style-properties-section"></a>[HideForApply] セル ([スタイルのプロパティ] セクション)
 
 Microsoft Visio ユーザー インターフェイスのスタイルを表示する場所を決定します。
   
 |**値**|**説明**|
 |:-----|:-----|
-| TRUE  <br/> | **ドローイング エクスプ ローラー**でのみスタイルを表示します。  <br/> |
-| FALSE  <br/> | **ドローイング エクスプ ローラー]** でスタイルを表示します。  <br/> |
+| TRUE  <br/> | 
+          [**ドローイング エクスプローラー**] だけにスタイルを表示します。
+  <br/> |
+| FALSE  <br/> | 
+          [**ドローイング エクスプローラー**] にスタイルを表示します。
+  <br/> |
    
 ## <a name="remarks"></a>備考
 
 表示されていないスタイルに基づいて新しいスタイルを作成する場合は、この属性は継承されません。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[HideForApply] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [HideForApply] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | HideForApply  <br/> |
    
-プログラムから、インデックスによって [HideForApply] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [HideForApply] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

@@ -24,7 +24,7 @@ ms.locfileid: "19806340"
 
 RUNMACRO (* **マクロ名** * [、* * *projname_opt* * *]) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
@@ -47,7 +47,7 @@ RUNMACRO 関数を使用するセルを含んだ図面を閉じる必要があ�
     
 - 図面を閉じる代わりに、ウィンドウを閉じるためのウィンドウ メッセージを図面に通知します。
     
-Visio のコードの実行の詳細については、[セキュリティ設定、および Visio のコードの実行について](about-security-settings-and-running-code-in-visio-shapesheet.md)のこの「シェイプ シート リファレンスを参照してください。 
+Visio でのコードの実行に関する詳細については、この『シェイプシート リファレンス』の「[Visio のセキュリティ設定およびコードの実行について](about-security-settings-and-running-code-in-visio-shapesheet.md)」を参照してください。 
   
 ## <a name="example"></a>例
 

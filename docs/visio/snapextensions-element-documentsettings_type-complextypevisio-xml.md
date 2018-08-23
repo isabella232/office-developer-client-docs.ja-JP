@@ -22,7 +22,7 @@ ms.locfileid: "19806516"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[SnapExtensions_Type](snapextensions_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[SnapExtensions_Type](snapextensions_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
@@ -52,7 +52,7 @@ ms.locfileid: "19806516"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SnapExtensions**要素の値は、次の表の値の合計にできます。 
   
@@ -66,7 +66,9 @@ ms.locfileid: "19806516"
 |16  <br/> |拡張子の中間点にスナップします。  <br/> |
 |32  <br/> |線形拡張子にスナップします。  <br/> |
 |64  <br/> |拡張子のカーブにスナップします。  <br/> |
-|128  <br/> |端点の垂直な拡張子にスナップします。  <br/> |
+| 
+128 
+  <br/> |端点の垂直な拡張子にスナップします。  <br/> |
 |256  <br/> |垂直な拡張機能の中間点にスナップします。  <br/> |
 |512  <br/> |水平引き出し線の端点にスナップします。  <br/> |
 |1024  <br/> |垂直引き出し線の端点にスナップします。  <br/> |

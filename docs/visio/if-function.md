@@ -24,15 +24,15 @@ _Logicalexpression_が TRUE の場合に、 _valueiftrue_を返します。 _Val
 
 IF (* * *logicalexpression* * *、* * *valueiftrue* * *、* * *valueiffalse* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _logicalexpression_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |評価する式を指定します。  <br/> |
-| _valueiftrue_ <br/> |必須  <br/> |**によって異なります** <br/> |_Logicalexpression_が true のかどうかに返す値です。  <br/> |
-| _valueiffalse_ <br/> |必須  <br/> |**によって異なります** <br/> | _Logicalexpression_が false のかどうかに返す値です。  <br/> |
+| _valueiftrue_ <br/> |必須  <br/> |**多様** <br/> |_Logicalexpression_が true のかどうかに返す値です。  <br/> |
+| _valueiffalse_ <br/> |必須  <br/> |**多様** <br/> | _Logicalexpression_が false のかどうかに返す値です。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 可変値
   

@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251498
 localization_priority: Normal
 ms.assetid: 5a6ddb97-39b8-4e24-9b89-7a1e3bb261d5
-description: 角度の正弦を返します。
+description: 角度のサインを返します。
 ms.openlocfilehash: 19504f2f19b8523e0f081dbba0359986a940762b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -18,19 +18,21 @@ ms.locfileid: "19806487"
 ---
 # <a name="sin-function-visioshapesheet"></a>SIN 関数 (VisioShapeSheet)
 
-角度の正弦を返します。 
+角度のサインを返します。
+    
+ 
   
 ## <a name="syntax"></a>構文
 
 SIN (* **角度** *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _角度_ <br/> |必須  <br/> |**数値** <br/> |サインを取得する角度を指定します。  <br/> |
+| _角度_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |サインを取得する角度を指定します。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 数値
   

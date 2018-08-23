@@ -1,5 +1,5 @@
 ---
-title: YGridSpacing セル (ルーラー&amp;グリッド セクション)
+title: '[YGridSpacing] セル ([ルーラーとグリッド] セクション)'
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806848"
 ---
-# <a name="ygridspacing-cell-ruler-amp-grid-section"></a>YGridSpacing セル (ルーラー&amp;グリッド セクション)
+# <a name="ygridspacing-cell-ruler-amp-grid-section"></a>[YGridSpacing] セル ([ルーラーとグリッド] セクション)
 
 固定グリッド (YGridDensity = 0) の垂直線の間隔を指定します。
   
@@ -24,13 +24,13 @@ ms.locfileid: "19806848"
 
 垂直方向の**最小間隔**に対応するオプションで、**ルーラー&amp;グリッド**] ダイアログ ボックス ([**表示**] タブで、矢印をクリック**を表示する**)。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[YGridSpacing] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [YGridSpacing] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名 :  <br/> |YGridSpacing  <br/> |
    
-プログラムから、インデックスによって [YGridSpacing] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [YGridSpacing] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

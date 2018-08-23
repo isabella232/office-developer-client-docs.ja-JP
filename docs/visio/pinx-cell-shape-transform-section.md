@@ -16,19 +16,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19805983"
 ---
-# <a name="pinx-cell-shape-transform-section"></a>[PinX] セル ([Shape Transform] セクション)
+# <a name="pinx-cell-shape-transform-section"></a>[PinX] セル ([図形変換] セクション)
 
 *X*を表しますが、親の原点を基準として、図形の pin (回転の中心) の座標。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [pinx] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [PinX] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | [Pinx]  <br/> |
    
-プログラムから、インデックスによって [pinx] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [PinX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

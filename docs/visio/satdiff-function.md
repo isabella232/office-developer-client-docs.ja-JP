@@ -22,14 +22,14 @@ _Color1_と_color2_の鮮やかさの差を返します。
 
 SATDIFF (* * *color1* * *、* * *color2* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _color1_ <br/> |必須  <br/> |**数値** <br/> |最初の色の Microsoft Visio カラー インデックスまたは RGB 値を指定します。  <br/> |
 | _color2_ <br/> |必須  <br/> |**数値** <br/> |2 番目の色の Microsoft Visio カラー インデックスまたは RGB 値を指定します。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 数値型 (Numeric)
   

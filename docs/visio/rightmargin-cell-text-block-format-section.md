@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806236"
 ---
-# <a name="rightmargin-cell-text-block-format-section"></a>[RightMargin] セル ([Text Block Format] セクション)
+# <a name="rightmargin-cell-text-block-format-section"></a>[RightMargin] セル ([テキスト ブロックの書式設定] セクション)
 
 テキスト ブロックの右の枠線と、そのブロックに含まれるテキストとの間隔を指定します。既定値は 0.1 インチです。
   
@@ -24,13 +24,13 @@ ms.locfileid: "19806236"
 
 この値は、図面の縮尺による影響を受けません。図面の縮尺を変更しても、右余白は変わりません。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって RightMargin] セルへの参照を取得するには、次のコマンドを使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [RightMargin] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | 右マージン  <br/> |
+| セル名 :  <br/> | RightMargin  <br/> |
    
-プログラムから、インデックスによって [RightMargin] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [RightMargin] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

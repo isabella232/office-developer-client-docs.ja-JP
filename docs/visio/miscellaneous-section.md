@@ -16,13 +16,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805904"
 ---
-# <a name="miscellaneous-section"></a>[Miscellaneous] セクション
+# <a name="miscellaneous-section"></a>[その他] セクション
 
 図形やグループに関するさまざまな属性を格納します。たとえば、図形選択時の表示状態を制御する属性が含まれます。
   
 ## <a name="remarks"></a>注釈
 
-または [**動作**] ダイアログ ボックスの [**動作**] タブ、[シェイプ シート] ウィンドウでは、このセクションの多くのセルの値を設定することができます (**図形のデザイン**] で [[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**動作**] をクリック) します。 図面ウィンドウです。 グループのプロパティ] セクションのセルを使用して他のグループのプロパティを設定することができます。 
+[シェイプシート] ウィンドウ、または図面ウィンドウから [**基本動作**] ダイアログ ボックス ([[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで、[**基本動作**] をクリック) の [**基本動作**] タブで、このセクションの多くのセルに値を設定できます。[Group Properties] セクションのセルを使用して、その他のグループのプロパティを設定できます。 
   
 Visio 5.0 の製品では、このセクションには、 **ObjInteract** ] および [ **ObjBehavior** ] セルが含まれます。 **ObjInteract** ] セルの動作は、[Shape Layout] セクションで次のセルにマップされました: **ShapeFixedCode**、 **ShapePermeableX**、 **ShapePermeableY**、および**ShapePermeablePlace**。 ObjBehavior] セルの動作は、[ **ConFixedCode** ] および [ **ShapeRouteStyle** ] セルにマップされました。 
   

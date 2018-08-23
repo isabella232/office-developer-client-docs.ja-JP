@@ -24,7 +24,7 @@ ms.locfileid: "19806144"
 
 RAND( )
   
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 浮動小数点数
   

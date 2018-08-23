@@ -13,19 +13,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19805768"
 ---
-# <a name="lockfromgroupformat-cell-protection-section"></a>[LockFromGroupFormat] セル ([Protection] セクション)
+# <a name="lockfromgroupformat-cell-protection-section"></a>[LockFromGroupFormat] セル ([保護] セクション)
 
 フォーマットを変更してグループ図形を直接選択したサブ図形の書式を設定するユーザーを許可する一方、サブ図形に反映されません。 
   
-LockFromGroupFormat セルの値は、**グループの書式設定**チェック ボックスの設定、[**保護**] ダイアログ ボックスでに対応します。 
+[LockFromGroupFormat] セルの値は、[**保護**] ダイアログ ボックスにある [**グループ書式設定を適用不可にする**] チェック ボックスの設定に対応します。 
   
-別の数式または**CellsU**プロパティを使用して、プログラムから、名前で、[LockFromGroupFormat] セルへ参照するには、次のコマンドを使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LockFromGroupFormat] セルへの参照を取得するには、次の値を使用します。
+
+ 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |LockFromGroupFormat  <br/> |
    
-LockFromGroupFormat] セルへインデックスを使用してプログラムから、参照するには、次の引数で**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [LockFromGroupFormat] セルを参照するには、**CellsSRC** プロパティを使用し、次の引数を指定します。
+
+ 
   
 |||
 |:-----|:-----|

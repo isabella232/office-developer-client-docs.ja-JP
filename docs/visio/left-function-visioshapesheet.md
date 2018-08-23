@@ -24,18 +24,18 @@ ms.locfileid: "19805686"
 
 左 (* **テキスト** *、[、* * *num_chars_opt* * *]) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _text_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |抽出する文字を含む文字列を指定します。  <br/> |
-| _num_chars_opt_ <br/> |省略可能  <br/> |**数値** <br/> |抽出する文字数を指定します。  <br/> |
+| _num_chars_opt_ <br/> |省略可能  <br/> |**数値型 (Numeric)** <br/> |抽出する文字数を指定します。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 String
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
 _Num_chars_opt_の値は、以上のゼロ (0) にする必要があります。 
   

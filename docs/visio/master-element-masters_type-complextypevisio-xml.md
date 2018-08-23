@@ -22,7 +22,7 @@ ms.locfileid: "19805829"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[Master_Type](master_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[Master_Type](master_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |masters.xml  <br/> |
@@ -42,13 +42,13 @@ ms.locfileid: "19805829"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[マスター](masters-elementvisio-xml.md) <br/> |[Masters_Type](masters_type-complextypevisio-xml.md) <br/> |ドキュメントの**マスター**の要素が含まれています。  <br/> |
+|[Masters](masters-elementvisio-xml.md) <br/> |[Masters_Type](masters_type-complextypevisio-xml.md) <br/> |ドキュメントの**マスター**の要素が含まれています。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[接続](connects-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> |図面内の 2 つの図形間の各接続の**接続**の要素が含まれています。  <br/> |
+|[Connects](connects-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> |図面内の 2 つの図形間の各接続の**接続**の要素が含まれています。  <br/> |
 |[Icon](icon-element-master_type-complextypevisio-xml.md) <br/> |[Icon_Type](icon_type-complextypevisio-xml.md) <br/> |エンコードされたバイナリ] アイコン (.ico 形式) をドキュメント内の**マスター シェイプ**または**MasterShortcut**要素の MIME (多目的インターネット メール拡張機能) を指定します。  <br/> |
 |[PageSheet](pagesheet-element-master_type-complextypevisio-xml.md) <br/> |[PageSheet_Type](pagesheet_type-complextypevisio-xml.md) <br/> |**マスター シェイプ**または**ページ**の要素のページ シートを定義する要素が含まれています。  <br/> |
 |Shapes  <br/> |Shapes_Type  <br/> |**図形**要素のコレクションが含まれています。  <br/> |
@@ -67,7 +67,7 @@ ms.locfileid: "19805829"
 |名前  <br/> |xsd:string  <br/> |省略可能  <br/> |要素の名前です。  <br/> |Xsd:string の値を入力します。  <br/> |
 |NameU  <br/> |xsd:string  <br/> |省略可能  <br/> |要素の汎用名です。  <br/> |Xsd:string の値を入力します。  <br/> |
 |PatternFlags  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> |マスターのユーザー設定のパターンとして動作するかどうかを決定します。  <br/> |Xsd:unsignedShort の値を入力します。  <br/> |
-|Prompt  <br/> |xsd:string  <br/> |省略可能  <br/> |ステータス バー、ツールは、要素の prompt ヒントです。  <br/> |Xsd:string の値を入力します。  <br/> |
+|プロンプト  <br/> |xsd:string  <br/> |省略可能  <br/> |ステータス バー、ツールは、要素の prompt ヒントです。  <br/> |Xsd:string の値を入力します。  <br/> |
 |UniqueID  <br/> |xsd:string  <br/> |省略可能  <br/> |ドキュメント内のマスターを識別する GUID です。  <br/> |Xsd:string の値を入力します。  <br/> |
    
 

@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806011"
 ---
-# <a name="polylineto-row-geometry-section"></a>[PolylineTo] 行 ([Geometry] セクション)
+# <a name="polylineto-row-geometry-section"></a>[PolylineTo] 行 ([図形座標] セクション)
 
 *X*および*y*が含まれていますが、ポリラインとポリラインの数式の最後の点の座標です。 
   
@@ -30,8 +30,8 @@ ms.locfileid: "19806011"
    
 ## <a name="remarks"></a>備考
 
-ポリライン行として表される行は、[lineto] 行のシーケンスとして表される行と同じですが、ポリライン行の方が効率的です。 [Lineto] 行を [polylineto] 行を変更するには、図形の形状を簡単に確認することができますように。 [Polylineto] 行を右クリックし、ショートカット メニューの [**行の展開**] をクリックします。 
+[Polyline] 行として表示される行は、一連の [LineTo] 行として表示される行と同じものです。ただし、[Polyline] 行の方が高機能です。図形の座標をより見やすくするために、[PolylineTo] 行から [LineTo] 行に変更することができます。これを行うには、[Polyline] 行を右クリックして、ショートカット メニューの **[行の拡張]** をクリックします。 
   
-行の種類を [polylineto] 行に変更するには、行を右クリックし、し、ショートカット メニューの [**行の種類の変更**] をクリックします。 
+行の種類を [PolylineTo] 行に変更するには、行を右クリックして、ショートカット メニューの [**図形要素の変更**] をクリックします。 
   
 

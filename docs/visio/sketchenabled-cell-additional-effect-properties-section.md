@@ -14,11 +14,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806506"
 ---
-# <a name="sketchenabled-cell-additional-effect-properties-section"></a>[SketchEnabled] セルl ([追加効果のプロパティ] セクション)
+# <a name="sketchenabled-cell-additional-effect-properties-section"></a>[SketchEnabled] セル ([追加効果のプロパティ] セクション)
 
 図形の上またはブール値としてではなく、スケッチ効果が表示されるかどうかを決定します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **セル**要素の**N**属性の値によって、別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ **SketchEnabled** ] セルへの参照を取得、次のように使用します。 
   

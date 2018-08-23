@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805593"
 ---
-# <a name="invisible-cell-actions-section"></a>[Invisible] セル ([Actions] セクション)
+# <a name="invisible-cell-actions-section"></a>[Invisible] セル ([操作] セクション)
 
 アクション タグ メニューまたはショートカット メニューに、アクションを表示するかどうかを示します。 
   
@@ -30,13 +30,13 @@ ms.locfileid: "19805593"
    
 ## <a name="remarks"></a>注釈
 
-参照を取得する非表示のセルに名前で別の数式からまたはプログラムから**CellsU**プロパティを使用して、次のコマンドを使用します。 
+別の数式から、または **CellsU** プロパティを使用してプログラムから、名前によって [Invisible] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |アクションです。 *名*です。Invisiblewhere アクションです。  *アクション行の名前します。*  <br/> |
    
-プログラムから、インデックスによって [Invisible] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [Invisible] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

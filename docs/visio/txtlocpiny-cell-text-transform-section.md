@@ -16,21 +16,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806699"
 ---
-# <a name="txtlocpiny-cell-text-transform-section"></a>[TxtLocPinY] セル ([Text Transform] セクション)
+# <a name="txtlocpiny-cell-text-transform-section"></a>[TxtLocPinY] セル ([テキスト変換] セクション)
 
 *Y*が決まりますが、テキスト ブロックのテキスト ブロックの原点を基準として回転の中心の座標。 既定の数式は次のとおりです。 
   
 = [Txtheight] \* 0.5
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって TxtLocPinY] セルへの参照を取得するには、次のコマンドを使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [TxtLocPinY] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | TxtLocPinY  <br/> |
    
-プログラムから、インデックスによって [TxtLocPinY] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [TxtLocPinY] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

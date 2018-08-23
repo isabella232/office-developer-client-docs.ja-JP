@@ -24,15 +24,15 @@ ms.locfileid: "19806696"
 
 トリミング (* **テキスト** *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _text_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |空白を削除する文字列を指定します。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
-文字列
+String
   
 ## <a name="remarks"></a>注釈
 

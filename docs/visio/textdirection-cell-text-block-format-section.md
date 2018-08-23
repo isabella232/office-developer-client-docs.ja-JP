@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806644"
 ---
-# <a name="textdirection-cell-text-block-format-section"></a>[TextDirection] セル ([Text Block Format] セクション)
+# <a name="textdirection-cell-text-block-format-section"></a>[TextDirection] セル ([テキスト ブロックの書式設定] セクション)
 
 テキスト ブロック内にある文字の方向を指定します。
   
@@ -29,13 +29,13 @@ ms.locfileid: "19806644"
 
 Visio Version 5.0 日本語版では、このセルの値は [Miscellaneous] セクションの [VerticalText] セルに格納されていました。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[TextDirection] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [TextDirection] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | TextDirection  <br/> |
    
-プログラムから、インデックスによって [TextDirection] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [TextDirection] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

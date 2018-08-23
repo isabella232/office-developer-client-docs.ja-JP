@@ -24,15 +24,15 @@ ms.locfileid: "19805745"
 
 LOCALFORMULAEXISTS (* * *cellref* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _cellref_ <br/> |必須  <br/> |**文字列型 (String)** <br/> | 数式があるかどうかを調べるセルを指定します。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
-ブール型 (Boolean)
+ブール型
   
 ## <a name="remarks"></a>注釈
 

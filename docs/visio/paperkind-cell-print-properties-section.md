@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805974"
 ---
-# <a name="paperkind-cell-print-properties-section"></a>[PaperKind] セル ([Print Properties] セクション)
+# <a name="paperkind-cell-print-properties-section"></a>[PaperKind] セル ([印刷のプロパティ] セクション)
 
 ページを印刷する用紙の種類を指定します。
   
@@ -26,13 +26,13 @@ ms.locfileid: "19805974"
   
 用紙の Microsoft Windows wingdi.h ファイル内のこのセルにマップが付いて DMPAPER) の定数に含まれる数値が定義されています。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[PaperKind] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [PageKind] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |PaperKind  <br/> |
    
-プログラムから、インデックスによって [PaperKind] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [PaperKind] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

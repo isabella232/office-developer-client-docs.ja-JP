@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806428"
 ---
-# <a name="shapesplit-cell-shape-layout-section"></a>[ShapeSplit] セル ([Shape Layout] セクション)
+# <a name="shapesplit-cell-shape-layout-section"></a>[ShapeSplit] セル ([図形レイアウト] セクション)
 
 この図形が、分割可能な図形を分割できるかどうかを示します。
   
@@ -43,7 +43,7 @@ ms.locfileid: "19806428"
 |:-----|:-----|
 | セル名 :  <br/> | [Shapesplit]  <br/> |
    
-プログラムから、インデックスによって [shapesplit] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ShapeSplit] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

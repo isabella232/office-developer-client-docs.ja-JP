@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806631"
 ---
-# <a name="textposafterbullet-cell-paragraph-section"></a>[TextPosAfterBullet] セル ([Paragraph] セクション)
+# <a name="textposafterbullet-cell-paragraph-section"></a>[TextPosAfterBullet] セル ([段落] セクション)
 
 段落の第 1 行目と箇条書き行頭文字の間の距離を表します。 
   
@@ -24,13 +24,13 @@ ms.locfileid: "19806631"
 
 この距離は、[IndFirst] セル内に含まれている距離 (既定の左インデント) に追加されます。この値は、図面の縮尺による影響を受けません。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[TextPosAfterBullet] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [TextPosAfterBullet] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | Para.TextPosAfterBullet [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
    
-プログラムから、インデックスによって [TextPosAfterBullet] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [TextPosAfterBullet] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

@@ -20,17 +20,18 @@ ms.locfileid: "19805612"
   
 ## <a name="version-information"></a>バージョン情報
 
-Visio 2010 のバージョンが追加されます。 
+追加バージョン: Visio 2010
+ 
   
 ## <a name="syntax"></a>構文
 
 IS1D()
   
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
  **ブール型 (Boolean)**
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
 シート (図形) がページまたは図面の場合、IS1D 関数は #REF! を返します。
   

@@ -24,7 +24,7 @@ REF 関数は、エラー値 #ref! を返します。
 
 REF( )
   
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 String
   

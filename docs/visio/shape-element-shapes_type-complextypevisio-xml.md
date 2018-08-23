@@ -22,7 +22,7 @@ ms.locfileid: "19806399"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[ShapeSheet_Type](shapesheet_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[ShapeSheet_Type](shapesheet_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml のページで、マスターの # .xml  <br/> |
@@ -54,7 +54,7 @@ ms.locfileid: "19806399"
 |[Data2](data2-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Data_Type](data_type-complextypevisio-xml.md) <br/> |図形に関する追加情報を提供するために使用される任意の文字列値が含まれています。  <br/> |
 |[Data3](data3-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Data_Type](data_type-complextypevisio-xml.md) <br/> |図形に関する追加情報を提供するために使用される任意の文字列値が含まれています。  <br/> |
 |[ForeignData](foreigndata-element-shapesheet_type-complextypevisio-xml.md) <br/> |[ForeignData_Type](foreigndata_type-complextypevisio-xml.md) <br/> |Windows メタファイル、ビットマップ、または OLE データなどの画像データの MIME (多目的インターネット メール拡張機能) のエンコードされた BLOB が含まれています。  <br/> |
-|[Section](section-element-sheet_type-complextypevisio-xml.md) <br/> |[Section_Type](section_type-complextypevisio-xml.md) <br/> |関連するプロパティのコレクションを指定します。  <br/> |
+|[セクション](section-element-sheet_type-complextypevisio-xml.md) <br/> |[Section_Type](section_type-complextypevisio-xml.md) <br/> |関連するプロパティのコレクションを指定します。  <br/> |
 |[Shapes](shapes-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Shapes_Type](shapes_type-complextypevisio-xml.md) <br/> |図形のコレクションを指定します。  <br/> |
 |[Text](text-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Text_Type](text_type-complextypevisio-xml.md) <br/> |図形のテキストが含まれています。  <br/> |
    
@@ -72,8 +72,8 @@ ms.locfileid: "19806399"
 |MasterShape  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |マスターの ID 要素は、図形のデータを継承します。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
 |名前  <br/> |xsd:string  <br/> |省略可能  <br/> |要素の名前です。  <br/> |Xsd:string の値を入力します。  <br/> |
 |NameU  <br/> |xsd:string  <br/> |省略可能  <br/> |要素の汎用名です。  <br/> |Xsd:string の値を入力します。  <br/> |
-|テキスト スタイル  <br/> |xsd:unsignedInt  <br/> ||この図形の継承元のテキストの書式設定スタイル シートの ID です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|種類  <br/> |xsd:token  <br/> |省略可能  <br/> |図形の種類。 次の値の 1 つがあります: グループ、図形、ガイド、または外部。  <br/> |Xsd:token の値を入力します。  <br/> |
+|TextStyle  <br/> |xsd:unsignedInt  <br/> ||この図形の継承元のテキストの書式設定スタイル シートの ID です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
+|型  <br/> |xsd:token  <br/> |省略可能  <br/> |図形の種類。 次の値の 1 つがあります: グループ、図形、ガイド、または外部。  <br/> |Xsd:token の値を入力します。  <br/> |
 |UniqueID  <br/> |xsd:string  <br/> |省略可能  <br/> |図形に割り当てられた GUID (グローバル一意識別子) です。  <br/> |Xsd:string の値を入力します。  <br/> |
    
 

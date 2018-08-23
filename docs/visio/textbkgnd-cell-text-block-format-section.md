@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806641"
 ---
-# <a name="textbkgnd-cell-text-block-format-section"></a>[TextBkgnd] セル ([Text Block Format] セクション)
+# <a name="textbkgnd-cell-text-block-format-section"></a>[TextBkgnd] セル ([テキスト ブロックの書式設定] セクション)
 
 図形のテキストの背景色を指定します。
   
@@ -28,13 +28,13 @@ ms.locfileid: "19806641"
   
 テキストの背景色の透過性は [TextBkgndTrans] セルで設定できます。
   
-取得する [textbkgnd] セルへの参照を名前で別の数式からまたはプログラムから**CellsU**プロパティを使用して、次のコマンドを使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [TextBkgnd] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |[Textbkgnd]  <br/> |
    
-プログラムから、インデックスによって [textbkgnd] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [TextBkgnd] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

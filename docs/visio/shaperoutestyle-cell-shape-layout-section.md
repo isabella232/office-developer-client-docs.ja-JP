@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806410"
 ---
-# <a name="shaperoutestyle-cell-shape-layout-section"></a>[ShapeRouteStyle] セル ([Shape Layout] セクション)
+# <a name="shaperoutestyle-cell-shape-layout-section"></a>[ShapeRouteStyle] セル ([図形レイアウト] セクション)
 
 図面ページ上にある選択したコネクタの迂回方法と方向を指定します。
   
@@ -46,7 +46,7 @@ ms.locfileid: "19806410"
 |21  <br/> |シンプル 横 - 縦  <br/> |なし  <br/> |**visLORouteSimpleHV** <br/> |
 |22  <br/> |シンプル 縦 - 横  <br/> |なし  <br/> |**visLORouteSimpleVH** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **動作**] ダイアログ ボックスで [**コネクタ**] タブで特定のコネクタのこのセルの値を設定することもできます (選択したコネクタで [[開発](run-in-developer-mode-display-the-developer-tab.md)] タブで、[**動作**] をクリックし、 **[コネクタ**] タブをクリックし、)。 
   
@@ -54,13 +54,13 @@ ms.locfileid: "19806410"
   
 Visio 2000 より前のバージョンでは、[Miscellaneous] セクションで [ObjBehavior] セルを使用してこの動作を設定していました。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ShapeRouteStyle] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ShapeRouteStyle] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名 :  <br/> |ShapeRouteStyle  <br/> |
    
-プログラムから、インデックスによって [ShapeRouteStyle] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ShapeRouteStyle] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

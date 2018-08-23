@@ -24,7 +24,7 @@ ms.locfileid: "19805954"
 
 NOW ( )
   
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 日付/時刻
   

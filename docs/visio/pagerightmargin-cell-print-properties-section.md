@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805963"
 ---
-# <a name="pagerightmargin-cell-print-properties-section"></a>[PageRightMargin] セル ([Print Properties] セクション)
+# <a name="pagerightmargin-cell-print-properties-section"></a>[PageRightMargin] セル ([印刷のプロパティ] セクション)
 
 印刷ページの右余白を指定します。
   
@@ -24,13 +24,13 @@ ms.locfileid: "19805963"
 
 この値は物理単位を表し、縮尺または図面の単位には影響されません。たとえば、このセルの値が 0.25 インチなら、ページ単位がフィートの場合でも、この余白は 0.25 インチです。単位が明示されていない場合、既定ではこの値にページ単位が使用されます。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[PageRightMargin] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** を使用したプログラムから、名前による [PageRightMargin] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | PageRightMargin  <br/> |
    
-プログラムから、インデックスによって [PageRightMargin] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによる [PageRightMargin] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   
 |||
 |:-----|:-----|

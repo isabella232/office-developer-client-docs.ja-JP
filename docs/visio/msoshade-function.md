@@ -20,20 +20,21 @@ ms.locfileid: "19805911"
   
 ## <a name="version-information"></a>バージョン情報
 
-Visio 2010 のバージョンが追加されます。 
+追加バージョン: Visio 2010
+ 
   
 ## <a name="syntax"></a>構文
 
 MSOSHADE (* **色** *、* * *deltaLum-* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _color_ <br/> |必須  <br/> |**RGB** <br/> |標準の RGB (red、green、blue) による色の値または色への参照。  <br/> |
 | _-deltaLum_ <br/> |必須  <br/> |**Integer** <br/> |白に向かって変化率 (-100%)] または [_色_の値から黒 (100%)。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 近い_色_の値は、白または黒、小さな変更には特定_の deltaLum_の値によって生成される影。 
   

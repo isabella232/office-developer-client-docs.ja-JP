@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805585"
 ---
-# <a name="inhibitsnap-cell-page-properties-section"></a>[InhibitSnap] セル ([Page Properties] セクション)
+# <a name="inhibitsnap-cell-page-properties-section"></a>[InhibitSnap] セル ([ページのプロパティ] セクション)
 
 前景ページ上の図形を、同じページにある他のオブジェクトや背景ページ上の図形にスナップするかどうかを指定します。
   
@@ -27,13 +27,13 @@ ms.locfileid: "19805585"
    
 ## <a name="remarks"></a>備考
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[InhibitSnap] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [InhibitSnap] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | InhibitSnap  <br/> |
    
-プログラムから、インデックスによって [InhibitSnap] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [InhibitSnap] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

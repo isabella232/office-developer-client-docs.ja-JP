@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806438"
 ---
-# <a name="shapeshdwscalefactor-cell-fill-format-section"></a>[ShapeShdwScaleFactor] セル ([Fill Format] セクション)
+# <a name="shapeshdwscalefactor-cell-fill-format-section"></a>[ShapeShdwScaleFactor] セル ([塗りつぶしの書式設定] セクション)
 
 図形の影を拡大または縮小できる割合を、パーセントで指定します。
   
@@ -26,15 +26,15 @@ ms.locfileid: "19806438"
   
 この値をページのすべての図形に設定するには、[Page Properties] セクションで [ShdwScaleFactor] セルを使用します。
   
-この値は、[**影**] ダイアログ ボックスで**表示倍率**の設定の値に対応 ([**ホーム**] タブの [**図形**] グループで、**シャドウ**] をクリックし、[**影のオプション**] をクリック) します。
+この値は、[**影**] ダイアログ ボックスの [**倍率**] 設定の値に対応しています (このダイアログ ボックスを開くには、[**ホーム**] タブの [**図形**] グループで、[**影**] をクリックして、[**影のオプション**] をクリックします)。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ShapeShdwScaleFactor] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ShapeShdwScaleFactor] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名 :  <br/> |ShapeShdwScaleFactor  <br/> |
    
-プログラムから、インデックスによって [ShapeShdwScaleFactor] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ShapeShdwScaleFactor] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

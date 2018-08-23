@@ -22,7 +22,7 @@ ms.locfileid: "19805521"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[HeaderFooter_Type](headerfooter_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[HeaderFooter_Type](headerfooter_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
@@ -48,10 +48,10 @@ ms.locfileid: "19805521"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[中央](footercenter-element-headerfooter_type-complextypevisio-xml.md) <br/> |[FooterCenter_Type](footercenter_type-complextypevisio-xml.md) <br/> |図面のフッターの中央の部分に表示されるテキスト文字列が含まれています。  <br/> |
+|[FooterCenter](footercenter-element-headerfooter_type-complextypevisio-xml.md) <br/> |[FooterCenter_Type](footercenter_type-complextypevisio-xml.md) <br/> |図面のフッターの中央の部分に表示されるテキスト文字列が含まれています。  <br/> |
 |[FooterLeft](footerleft-element-headerfooter_type-complextypevisio-xml.md) <br/> |[FooterLeft_Type](footerleft_type-complextypevisio-xml.md) <br/> |図面のフッターの左部分に表示されるテキスト文字列が含まれています。  <br/> |
 |[FooterMargin](footermargin-element-headerfooter_type-complextypevisio-xml.md) <br/> |[FooterMargin_Type](footermargin_type-complextypevisio-xml.md) <br/> |図面のフッターの余白を指定します。  <br/> |
-|[フッター](footerright-element-headerfooter_type-complextypevisio-xml.md) <br/> |[FooterRight_Type](footerright_type-complextypevisio-xml.md) <br/> |図面のフッターの右側に表示されるテキスト文字列が含まれています。  <br/> |
+|[FooterRight](footerright-element-headerfooter_type-complextypevisio-xml.md) <br/> |[FooterRight_Type](footerright_type-complextypevisio-xml.md) <br/> |図面のフッターの右側に表示されるテキスト文字列が含まれています。  <br/> |
 |[HeaderCenter](headercenter-element-headerfooter_type-complextypevisio-xml.md) <br/> |[HeaderCenter_Type](headercenter_type-complextypevisio-xml.md) <br/> |図面のヘッダーの中央の部分に表示されるテキスト文字列が含まれています。  <br/> |
 |[HeaderFooterFont](headerfooterfont-element-headerfooter_type-complextypevisio-xml.md) <br/> |[HeaderFooterFont_Type](headerfooterfont_type-complextypevisio-xml.md) <br/> |ヘッダーおよびフッターのテキストに使用するフォントを指定します。  <br/> |
 |[HeaderLeft](headerleft-element-headerfooter_type-complextypevisio-xml.md) <br/> |[HeaderLeft_Type](headerleft_type-complextypevisio-xml.md) <br/> |図面のヘッダーの左側の部分に表示されるテキスト文字列が含まれています。  <br/> |

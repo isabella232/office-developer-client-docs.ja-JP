@@ -24,7 +24,7 @@ ms.locfileid: "19805908"
 
 月 ("* * *datetime* * *」。* **式** * [、* * *lcid* * *]) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
@@ -32,11 +32,11 @@ ms.locfileid: "19805908"
 | _expression_ <br/> |必須  <br/> |**文字列型 (String)** <br/> | 日付および時刻を算出する式を指定します。  <br/> |
 | _lcid_ <br/> |省略可能  <br/> |**番号** <br/> |現地以外の日時を計算するときに使用するロケール識別子を指定します。ロケール識別子は、システムのヘッダー ファイルに記述されている数字です。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
-整数型 (Integer)
+整数
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
 _日時_または_式_の時間の構成要素は破棄されます。 
   

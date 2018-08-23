@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806474"
 ---
-# <a name="shdwobliqueangle-cell-page-properties-section"></a>[ShdwObliqueAngle] セル ([Page Properties] セクション)
+# <a name="shdwobliqueangle-cell-page-properties-section"></a>[ShdwObliqueAngle] セル ([ページのプロパティ] セクション)
 
 既定のページの影の種類を適用したときの、斜めの方向を示す数字を指定します。
   
@@ -28,13 +28,13 @@ ms.locfileid: "19806474"
   
 個々の図形に対してこの動作を設定するには、[Fill Format] セクションで [ShapeShdwObliqueAngle] セルを使用します。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ShdwObliqueAngle] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ShdwObliqueAngle] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | ShdwObliqueAngle  <br/> |
    
-プログラムから、インデックスによって [ShdwObliqueAngle] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ShdwObliqueAngle] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

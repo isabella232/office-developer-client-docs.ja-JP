@@ -1,5 +1,5 @@
 ---
-title: PidTagCreationTime の標準的なプロパティ
+title: PidTagCreationTime 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 13122af2-06c8-4342-983d-e38178743d8f
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 475c93e7f2c246e0351f3054b0f827fb7ee015a1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 03c4c0810c69f8dd8f22ce84212200d3ccad1dab
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802643"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563241"
 ---
-# <a name="pidtagcreationtime-canonical-property"></a>PidTagCreationTime の標準的なプロパティ
+# <a name="pidtagcreationtime-canonical-property"></a>PidTagCreationTime 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージの作成日時が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_CREATION_TIME  <br/> |
+|関連するプロパティ:  <br/> |PR_CREATION_TIME  <br/> |
 |識別子:  <br/> |0x3007  <br/> |
-|データを入力します。  <br/> |PT_SYSTIME  <br/> |
+|データの種類 :   <br/> |PT_SYSTIME  <br/> |
 |領域:  <br/> |メッセージの時刻  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージ ストアは、作成された各メッセージに対してこのプロパティを設定します。
   
@@ -68,7 +68,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

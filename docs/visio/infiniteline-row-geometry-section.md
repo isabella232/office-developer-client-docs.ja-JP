@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805579"
 ---
-# <a name="infiniteline-row-geometry-section"></a>[InfiniteLine] 行 ([Geometry] セクション)
+# <a name="infiniteline-row-geometry-section"></a>[InfiniteLine] 行 ([図形座標] セクション)
 
 *X*および*y*が含まれています-無限線上の 2 つの点の座標です。 
   

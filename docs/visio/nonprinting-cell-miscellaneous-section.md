@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805922"
 ---
-# <a name="nonprinting-cell-miscellaneous-section"></a>[NonPrinting] セル ([Miscellaneous] セクション)
+# <a name="nonprinting-cell-miscellaneous-section"></a>[NonPrinting] セル ([その他] セクション)
 
 選択した図形の印刷のオン/オフを切り替えます。
   
@@ -29,13 +29,13 @@ ms.locfileid: "19805922"
 
 ガイドを選択し、その [NonPrinting] セルの値を FALSE に設定すると、ガイドを印刷できます。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[NonPrinting] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [NonPrinting] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | 印刷できません。  <br/> |
    
-プログラムから、インデックスによって [NonPrinting] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [NonPrinting] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   
 |||
 |:-----|:-----|

@@ -1,5 +1,5 @@
 ---
-title: PidTagContactAddressBookStoreEntryIds の標準的なプロパティ
+title: PidTagContactAddressBookStoreEntryIds 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b0f5393b-f923-4802-8ea0-daf58cd4bace
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: e8266b0fcac8318420bd67cfd90e8ff594638cf0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 545249f4777abc7d1a0a566631c777a6a1ba190b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802583"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563763"
 ---
-# <a name="pidtagcontactaddressbookstoreentryids-canonical-property"></a>PidTagContactAddressBookStoreEntryIds の標準的なプロパティ
+# <a name="pidtagcontactaddressbookstoreentryids-canonical-property"></a>PidTagContactAddressBookStoreEntryIds 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 帳のエントリが見つかった連絡先のアドレスとして機能するフォルダー内のストアのエントリ Id が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_CONTAB_STORE_ENTRYIDS  <br/> |
+|関連するプロパティ:  <br/> |PR_CONTAB_STORE_ENTRYIDS  <br/> |
 |識別子:  <br/> |0x6626  <br/> |
-|データを入力します。  <br/> |PT_MV_BINARY  <br/> |
+|データの種類 :   <br/> |PT_MV_BINARY  <br/> |
 |領域:  <br/> |連絡先のアドレス帳  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これは、アドレス帳の連絡先のプロファイル セクションのプロパティです。
   
@@ -58,7 +58,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

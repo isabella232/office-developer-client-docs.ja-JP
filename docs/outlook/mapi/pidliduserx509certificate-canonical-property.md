@@ -1,5 +1,5 @@
 ---
-title: PidLidUserX509Certificate の標準的なプロパティ
+title: PidLidUserX509Certificate 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,29 +11,29 @@ api_name:
 api_type:
 - COM
 ms.assetid: f40cd807-7aac-49f4-8e82-b0e5e1634b08
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 7c356e01b2f1bdf30d72f901bc1e4dd6da8b0dc5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: d388ab81be33689612872795d690a26efca064f7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802270"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563066"
 ---
-# <a name="pidliduserx509certificate-canonical-property"></a>PidLidUserX509Certificate の標準的なプロパティ
+# <a name="pidliduserx509certificate-canonical-property"></a>PidLidUserX509Certificate 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージング ユーザーの X.509 version 3 のセキュリティ証明書が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidEMSAbX509Cert  <br/> |
+|関連するプロパティ:  <br/> |dispidEMSAbX509Cert  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Address  <br/> |
 |長い ID (LID):  <br/> |0x000080D9  <br/> |
-|データを入力します。  <br/> |PT_MV_BINARY  <br/> |
-|領域:  <br/> |連絡先  <br/> |
+|データの種類 :   <br/> |PT_MV_BINARY  <br/> |
+|領域:  <br/> |Contact  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
@@ -61,7 +61,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

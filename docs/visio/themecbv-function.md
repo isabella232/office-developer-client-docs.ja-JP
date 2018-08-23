@@ -20,24 +20,25 @@ ms.locfileid: "19806649"
   
 ## <a name="version-information"></a>バージョン情報
 
-Visio 2013 のバージョンが追加されます。 
+追加バージョン: Visio 2013
+ 
   
 ## <a name="syntax"></a>構文
 
  **THEMECBV**(_カラー_、 _gradient_stop_number_)
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _color_ <br/> |必須  <br/> |**番号** <br/> |ドキュメントのカラー パレット内のインデックスを表す数値。  <br/> |
 | _gradient_stop_number_ <br/> |必須  <br/> |**番号** <br/> |色に適用する、アクティブなテーマのグラデーションの設定に格納された、グラデーションの分岐点 (濃淡または網かけ)。  <br/> |
    
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
  **番号**
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 > [!NOTE]
 > THEMECBV 関数では、図形に割り当てられている QuickStyle でグラデーションを設定していない場合、引数として渡された色にしません。 
@@ -50,7 +51,7 @@ Visio 2013 のバージョンが追加されます。
 
  `THEMECBV(FillForegnd, 5)`
   
-**FillForegnd** ] セルに指定した色にグラデーションの 5 番目のグラデーション終了位置の網掛けまたは濃淡を適用することによって作成された色を返します。 
+[**FillForegnd**] セルで指定した色へのグラデーションの、グラデーションの 5 番目の分岐点に、濃淡または網かけを適用することで作成された色を返します。 
   
  `THEMECBV(RGB(255,0,0), 2)`
   

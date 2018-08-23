@@ -24,13 +24,13 @@ ms.locfileid: "19805733"
 
 LN (* **番号** *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _number_ <br/> |必須  <br/> |**数値** <br/> | 自然対数を調べる数値を指定します。  <br/> |
+| _number_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> | 自然対数を調べる数値を指定します。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 数値型 (Numeric)
   

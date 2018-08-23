@@ -16,12 +16,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805504"
 ---
-# <a name="group-properties-section"></a>[Group Properties] セクション
+# <a name="group-properties-section"></a>[グループのプロパティ] セクション
 
 グループに関するセルを格納します。このセルによって、グループへの図形の追加方法、グループのメンバーの移動方法、およびグループの選択方法を制御します。 
   
 ## <a name="remarks"></a>注釈
 
-[**動作**] タブ、[**動作**] ダイアログ ボックスでこれらの値を設定することもできます (**図形のデザイン**] で [[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**動作**] をクリック) します。 
+これらの値は、[**基本動作**] ダイアログ ボックスの [**基本動作**] タブで設定することもできます (このダイアログ ボックスを開くには、[[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで [**基本動作**] をクリックします)。 
   
 

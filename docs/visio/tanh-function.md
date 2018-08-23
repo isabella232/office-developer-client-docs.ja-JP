@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251503
 localization_priority: Normal
 ms.assetid: 0ffdfc22-cbae-b397-226a-2cfcc6ca56c7
-description: 角度の双曲線逆正接を返します。
+description: 角度の双曲正接を返します。
 ms.openlocfilehash: 1cef04ab03cdc0acfdb6970cd9699a9340a63077
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -18,19 +18,21 @@ ms.locfileid: "19806604"
 ---
 # <a name="tanh-function"></a>TANH 関数
 
-角度の双曲線逆正接を返します。 
+角度の双曲正接を返します。
+    
+ 
   
 ## <a name="syntax"></a>構文
 
 TANH (* **角度** *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _角度_ <br/> |必須  <br/> |**数値** <br/> |Hypbolic タンジェントを取得する対象の角度です。  <br/> |
+| _角度_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |Hypbolic タンジェントを取得する対象の角度です。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 数値型 (Numeric)
   

@@ -24,7 +24,7 @@ _Cellreference_の値が、エラーの種類である場合は TRUE を返し�
 
 ISERR (* * *cellreference* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
@@ -32,7 +32,7 @@ ISERR (* * *cellreference* * *)
    
 ## <a name="example-1"></a>例 1
 
-|**Cell**|**Formula**|**返される値**|
+|**Cell**|**Formula**|**戻り値**|
 |:-----|:-----|:-----|
 |Scratch.A1  <br/> |=NA( )  <br/> |#N/A!  <br/> |
 |Scratch.B1  <br/> |=ISERR(Scratch.A1)  <br/> |FALSE  <br/> |
@@ -41,7 +41,7 @@ ISERR 関数は #N/A! エラーを認識しないため、FALSE を返します�
   
 ## <a name="example-2"></a>例 2
 
-|**Cell**|**Formula**|**返される値**|
+|**Cell**|**Formula**|**戻り値**|
 |:-----|:-----|:-----|
 |Scratch.X1  <br/> |="House"  <br/> |#VALUE!  <br/> |
 |Scratch.A1  <br/> |=ISERR(Scratch.X1)  <br/> |TRUE  <br/> |

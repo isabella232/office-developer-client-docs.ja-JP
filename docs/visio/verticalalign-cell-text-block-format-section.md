@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806768"
 ---
-# <a name="verticalalign-cell-text-block-format-section"></a>[VerticalAlign] セル ([Text Block Format] セクション)
+# <a name="verticalalign-cell-text-block-format-section"></a>[VerticalAlign] セル ([テキスト ブロックの書式設定] セクション)
 
 テキスト ブロック内にあるテキストに対して、垂直方向の整列方法を指定します。
   
@@ -26,15 +26,15 @@ ms.locfileid: "19806768"
 | 1  <br/> | 中央揃え  <br/> |**visVertMiddle** <br/> |
 | 2  <br/> | 下揃え  <br/> |**visVertBottom** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[VerticalAlign] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [VerticalAlign] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | VerticalAlign  <br/> |
    
-プログラムから、インデックスによって [VerticalAlign] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [VerticalAlign] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

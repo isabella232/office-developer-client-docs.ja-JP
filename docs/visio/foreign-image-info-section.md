@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805449"
 ---
-# <a name="foreign-image-info-section"></a>[Foreign Image Info] セクション
+# <a name="foreign-image-info-section"></a>[外部画像情報] セクション
 
 Microsoft Visio の図面で使用される別のプログラムのオブジェクトの幅と高さを格納します。このセクションは、該当するオブジェクトの [シェイプシート] ウィンドウにのみ表示されます。オブジェクトのイメージが枠の中でオフセットされる距離も示します。
   

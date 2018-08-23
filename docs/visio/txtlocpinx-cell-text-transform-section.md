@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806690"
 ---
-# <a name="txtlocpinx-cell-text-transform-section"></a>[TxtLocPinX] セル ([Text Transform] セクション)
+# <a name="txtlocpinx-cell-text-transform-section"></a>[TxtLocPinX] セル ([テキスト変換] セクション)
 
 *X*が決まりますが、テキスト ブロックのテキスト ブロックの原点を基準として回転の中心の座標。 既定の数式は次のとおりです。 
   
@@ -26,13 +26,13 @@ ms.locfileid: "19806690"
   
 ## <a name="remarks"></a>備考
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[TxtLocPinX] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [TxtLocPinX] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | TxtLocPinX  <br/> |
    
-プログラムから、インデックスによって [TxtLocPinX] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [TxtLocPinX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

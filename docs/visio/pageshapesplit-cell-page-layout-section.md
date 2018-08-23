@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805976"
 ---
-# <a name="pageshapesplit-cell-page-layout-section"></a>[PageShapeSplit] セル ([Page Layout] セクション)
+# <a name="pageshapesplit-cell-page-layout-section"></a>[PageShapeSplit] セル ([ページ レイアウト] セクション)
 
 ページの図形が自動的に分割されるかどうかを示します。
   
@@ -33,13 +33,13 @@ ms.locfileid: "19805976"
   
 図形レベルで分割を無効にするを有効またはは、[shapesplit] および [ShapeSplittable] セルを参照してください。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[PageShapeSplit] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [PageShapeSplit] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |PageShapeSplit  <br/> |
    
-プログラムから、インデックスによって [PageShapeSplit] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [PageShapeSplit] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

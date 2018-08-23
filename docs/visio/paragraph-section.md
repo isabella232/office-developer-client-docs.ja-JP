@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805978"
 ---
-# <a name="paragraph-section"></a>[Paragraph] セクション
+# <a name="paragraph-section"></a>[段落] セクション
 
 図形のテキストに対する、段落の書式属性を表示します。属性には、インデント、行間隔、箇条書き、および段落の水平方向の配置などがあります。
   

@@ -22,7 +22,7 @@ XML は、図面に格納されているソリューションの 1 つのイン�
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[Solution_Type](solution_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[Solution_Type](solution_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |solutions.xml  <br/> |
@@ -51,7 +51,7 @@ XML は、図面に格納されているソリューションの 1 つのイン�
    
 ### <a name="attributes"></a>属性
 
-|**属性**|**型**|**必須**|**説明**|**使用可能な値**|
+|**属性**|**型**|**必須**|**説明**|**使用できる値**|
 |:-----|:-----|:-----|:-----|:-----|
 |名前  <br/> |xsd:string  <br/> |必須  <br/> |ソリューションの名前です。  <br/> |Xsd:string の値を入力します。  <br/> |
    

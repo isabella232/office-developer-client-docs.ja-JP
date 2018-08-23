@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805742"
 ---
-# <a name="lockcalcwh-cell-protection-section"></a>[LockCalcWH] セル ([Protection] セクション)
+# <a name="lockcalcwh-cell-protection-section"></a>[LockCalcWH] セル ([保護] セクション)
 
 図形の選択範囲をロックして、頂点を編集した場合や、行の種類を [Geometry] セクションで変更した場合に再計算できないようにします。
   
@@ -27,13 +27,13 @@ ms.locfileid: "19805742"
    
 ## <a name="remarks"></a>備考
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[LockCalcWH] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LockCalcWH] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | LockCalcWH  <br/> |
    
-プログラムから、インデックスによって [LockCalcWH] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [LockCalcWH] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

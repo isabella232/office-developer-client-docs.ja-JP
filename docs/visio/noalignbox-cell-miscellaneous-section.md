@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805916"
 ---
-# <a name="noalignbox-cell-miscellaneous-section"></a>[NoAlignBox] セル ([Miscellaneous] セクション)
+# <a name="noalignbox-cell-miscellaneous-section"></a>[NoAlignBox] セル ([その他] セクション)
 
 選択した図形の選択範囲の表示/非表示を切り替えます。
   
@@ -27,13 +27,13 @@ ms.locfileid: "19805916"
    
 ## <a name="remarks"></a>備考
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[NoAlignBox] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** を使用したプログラムから、名前によって [NoAlignBox] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | NoAlignBox  <br/> |
    
-プログラムから、インデックスによって [NoAlignBox] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [NoAlignBox] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   
 |||
 |:-----|:-----|

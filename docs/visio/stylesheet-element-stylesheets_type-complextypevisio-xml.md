@@ -22,7 +22,7 @@ ms.locfileid: "19806594"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[StyleSheet_Type](stylesheet_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[StyleSheet_Type](stylesheet_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
@@ -48,7 +48,7 @@ ms.locfileid: "19806594"
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
 |[Cell](cell-elementvisio-xml.md) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |1 つのプロパティを指定します。  <br/> |
-|[Section](section-element-sheet_type-complextypevisio-xml.md) <br/> |[Section_Type](section_type-complextypevisio-xml.md) <br/> |関連するプロパティのコレクションを指定します。  <br/> |
+|[セクション](section-element-sheet_type-complextypevisio-xml.md) <br/> |[Section_Type](section_type-complextypevisio-xml.md) <br/> |関連するプロパティのコレクションを指定します。  <br/> |
    
 ### <a name="attributes"></a>属性
 
@@ -61,6 +61,6 @@ ms.locfileid: "19806594"
 |LineStyle  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |このスタイルが継承している行の書式設定スタイル シートの要素の ID です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
 |名前  <br/> |xsd:string  <br/> |省略可能  <br/> |要素の名前です。  <br/> |Xsd:string の値を入力します。  <br/> |
 |NameU  <br/> |xsd:string  <br/> |省略可能  <br/> |要素の汎用名です。  <br/> |Xsd:string の値を入力します。  <br/> |
-|テキスト スタイル  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |このスタイルを継承するテキストの書式設定スタイル シートの要素の ID です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
+|TextStyle  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |このスタイルを継承するテキストの書式設定スタイル シートの要素の ID です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
    
 

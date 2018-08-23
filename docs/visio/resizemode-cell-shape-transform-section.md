@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806261"
 ---
-# <a name="resizemode-cell-shape-transform-section"></a>[ResizeMode] セル ([Shape Transform] セクション)
+# <a name="resizemode-cell-shape-transform-section"></a>[ResizeMode] セル ([図形変換] セクション)
 
 図形に対して現在設定されているサイズ変更の動作の方法を示します。
   
@@ -26,7 +26,7 @@ ms.locfileid: "19806261"
 |1  <br/> |位置のみを変更します。  <br/> |**visXFormResizeSpread** <br/> |
 |2  <br/> |グループに合わせてサイズを変更します。  <br/> |**visXFormResizeScale** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [**動作**] タブ、[**動作**] ダイアログ ボックスでこの値を設定することもできます ([[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] で、[**動作**] をクリック) します。 別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ResizeMode] セルへの参照を取得、次のように使用します。 
   
@@ -34,7 +34,7 @@ ms.locfileid: "19806261"
 |:-----|:-----|
 |セル名:  <br/> |ResizeMode  <br/> |
    
-プログラムから、インデックスによって [ResizeMode] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ResizeMode] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

@@ -24,14 +24,14 @@ ms.locfileid: "19806627"
 
 TEXTWIDTH (* **なります。[Thetext]* * * * * *[] maximumwidth* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _なります! テキスト_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |セルへの参照では、接続先の図形の [thetext] という名前です。  _なります!_ テキストを取得する図形の名前です。  <br/> |
-| _maximumwidth_ <br/> |省略可能  <br/> |**数値** <br/> |テキスト ブロックの最大幅を指定します。  <br/> |
+| _maximumwidth_ <br/> |省略可能  <br/> |**数値型 (Numeric)** <br/> |テキスト ブロックの最大幅を指定します。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 String
   

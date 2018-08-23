@@ -6,7 +6,9 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: da776276-e8c2-085b-9b23-e5b1f5ba64cd
-description: Microsoft Visio のインスタンスで開いているウィンドウを表します。 この要素には、正確に、ファイルは Visio で最初に開いたときにアプリケーション ワークスペース内のユーザー インターフェイスのウィンドウを再作成に必要な情報が含まれています。
+description: >-
+  Microsoft Visio インスタンスで開いているウィンドウを表します。
+   この要素には、正確に、ファイルは Visio で最初に開いたときにアプリケーション ワークスペース内のユーザー インターフェイスのウィンドウを再作成に必要な情報が含まれています。
 ms.openlocfilehash: 762b689d625c7865696a0bf8bb8c4acc25e3d8eb
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -16,13 +18,14 @@ ms.locfileid: "19806795"
 ---
 # <a name="window-element-windowstype-complextype-visio-xml"></a>ウィンドウの要素 (Windows_Type complexType)'Visio XML (')
 
-Microsoft Visio のインスタンスで開いているウィンドウを表します。 この要素には、正確に、ファイルは Visio で最初に開いたときにアプリケーション ワークスペース内のユーザー インターフェイスのウィンドウを再作成に必要な情報が含まれています。
+Microsoft Visio インスタンスで開いているウィンドウを表します。
+ この要素には、正確に、ファイルは Visio で最初に開いたときにアプリケーション ワークスペース内のユーザー インターフェイスのウィンドウを再作成に必要な情報が含まれています。
   
 ## <a name="element-information"></a>要素情報
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[Window_Type](window_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[Window_Type](window_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |windows.xml  <br/> |
@@ -82,7 +85,7 @@ Microsoft Visio のインスタンスで開いているウィンドウを表し�
 |WindowLeft  <br/> |xsd:short  <br/> |省略可能  <br/> |ウィンドウの四角形の左端の座標です。  <br/> |Xsd:short の値を入力します。  <br/> |
 |WindowState  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |ビット フラグを指定する整数です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
 |WindowTop  <br/> |xsd:short  <br/> |省略可能  <br/> |ウィンドウの四角形の上端の座標。  <br/> |Xsd:short の値を入力します。  <br/> |
-|サービス クラス  <br/> |xsd:token  <br/> |必須  <br/> |可能性のある次のいずれかの列挙値: 図面、シート、ステンシル、またはアイコンです。  <br/> |Xsd:token の値を入力します。  <br/> |
+|WindowType  <br/> |xsd:token  <br/> |必須  <br/> |可能性のある次のいずれかの列挙値: 図面、シート、ステンシル、またはアイコンです。  <br/> |Xsd:token の値を入力します。  <br/> |
 |WindowWidth  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |ウィンドウの四角形の幅です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
    
 

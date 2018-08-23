@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806386"
 ---
-# <a name="shapefixedcode-cell-shape-layout-section"></a>[ShapeFixedCode] セル ([Shape Layout] セクション)
+# <a name="shapefixedcode-cell-shape-layout-section"></a>[ShapeFixedCode] セル ([図形レイアウト] セクション)
 
 配置可能な図形について、配置時の動作を指定します。
   
@@ -29,7 +29,7 @@ ms.locfileid: "19806386"
 |&amp;H40 (64)  <br/> |接続ポイントがある側だけに迂回します。  <br/> |**visSLOFixedConnPtsOnly** <br/> |
 |&amp;H80 (128)  <br/> |この図形の外周には接着しません。代わりに、図形の図形枠に接着します。  <br/> |**visSLOFixedNoFoldToShape** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **動作**] ダイアログ ボックスの [**配置**] タブで、このセルの値を設定することもできます (図形を選択して、[[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] で、[**動作**] をクリックし、[**配置**] タブをクリックして). 
   
@@ -37,13 +37,13 @@ ms.locfileid: "19806386"
   
 Visio 2000 より前のバージョンでは、[Miscellaneous] セクションで [ObjInteract] セルを使用してこの動作を設定していました。 
   
-取得する、[ShapeFixedCode] セルへの参照名で別の数式からまたはプログラムから**CellsU**プロパティを使用して、次のコマンドを使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ShapeFixedCode] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名 :  <br/> |ShapeFixedCode  <br/> |
    
-プログラムから、インデックスによって [ShapeFixedCode] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ShapeFixedCode] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

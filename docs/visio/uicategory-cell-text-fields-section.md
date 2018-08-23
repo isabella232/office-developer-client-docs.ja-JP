@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806722"
 ---
-# <a name="uicategory-cell-text-fields-section"></a>[UICategory] セル ([Text Fields] セクション)
+# <a name="uicategory-cell-text-fields-section"></a>[UICategory] セル ([テキスト フィールド] セクション)
 
 Visio 2000 よりも前のバージョンの Visio に挿入するフィールドのカテゴリを指定します。
   
@@ -24,13 +24,13 @@ Visio 2000 よりも前のバージョンの Visio に挿入するフィール�
 
 このセルは [シェイプシート] ウィンドウには表示されません。Visio バージョン 2000 の図面を Visio Version 5.0 ファイル形式で保存するなど、下位互換性の問題に対処する必要がある場合に、このセルを使用します。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[UICategory] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [UICategory] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | Fields.UICat [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
    
-プログラムから、インデックスによって [UICategory] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [UICategory] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

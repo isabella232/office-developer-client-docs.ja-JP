@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806581"
 ---
-# <a name="style-properties-section"></a>[Style Properties] セクション
+# <a name="style-properties-section"></a>[スタイルのプロパティ] セクション
 
 スタイルがテキスト、線、塗りつぶしの属性を含むかどうかなどの、スタイルの動作を制御するセルを格納します。
   

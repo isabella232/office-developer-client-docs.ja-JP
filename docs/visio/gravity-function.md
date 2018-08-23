@@ -24,7 +24,7 @@ ms.locfileid: "19805487"
 
 重力加速度 (* **角度** *、[* * *limit1* * *]、[* * *limit2* * *]) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
@@ -32,7 +32,7 @@ ms.locfileid: "19805487"
 | _limit1_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |回転の最初の制限角度を指定します。既定の制限角度は 90°です。  <br/> |
 | _limit2_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |回転の 2 番目の制限角度を指定します。既定の制限角度は 270°です。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 String
   

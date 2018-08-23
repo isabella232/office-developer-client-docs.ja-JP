@@ -24,13 +24,13 @@ ms.locfileid: "19806343"
 
 RUNADDON (以下"*文字列*") 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _string_ <br/> |必須  <br/> |**文字列型 (String)** <br/> | **Addons**コレクション内のアドオンまたは VBA プロジェクト内のマクロの名前です。  <br/> |
+| _string_ <br/> |必須  <br/> |**文字列型 (String)** <br/> | VBA プロジェクト内の **Addons** コレクションまたはマクロ内のアドオンの名前を指定します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 RUNADDON 関数呼び出しを含む図面のプロジェクト (または別のプロジェクトが参照されている場合) は_文字列_をという名前のマクロ (引数を持たないプロシージャ) を持たない場合、Microsoft Visio は、 _string_という名前のアドオンを実行します。 _String_という名前のアドオンが見つからない場合、Visio は何もし、エラーは報告されません。 ( **TraceFlags**プロパティはプロシージャを実行しようとしている Visio のアドオンを監視するのに使用ことができます)。 
   
@@ -41,7 +41,7 @@ RUNADDON 関数呼び出しを含む図面のプロジェクト (または別の
 > [!NOTE]
 >  Visio 2002 以降、RUNADDON 関数は任意の VBA コードを含む文字列を実行できなくなりました。従来 RUNADDON 関数に渡されていたコードは、RUNADDON 関数から呼び出される図面の VBA プロジェクト内のプロシージャへ移動することができます。 
   
-Visio のコードの実行の詳細について[セキュリティ設定について、Visio でのコードの実行](about-security-settings-and-running-code-in-visio-shapesheet.md)でこの「シェイプ シート リファレンスを参照してください。 
+Visio でのコードの実行に関する詳細については、この『シェイプシート リファレンス』の「[Visio のセキュリティ設定とコードの実行について](about-security-settings-and-running-code-in-visio-shapesheet.md)」を参照してください。 
   
 以前のバージョンの Visio では、この関数は _RUNADDON に相当します。Visio 4.0 以降のバージョンでは、どちらのスタイルも使用できます。 
   
@@ -61,10 +61,10 @@ Array Shapes という名の (VSL 実装) アドオンを起動します。
 
 RUNADDON("ThisDocument.ReportStatistics")
   
-この関数の呼び出しが含まれているドキュメント プロジェクトの**ThisDocument**モジュール内の ReportStatistics マクロを呼び出します。 
+この関数呼び出しを含む図面プロジェクト内の **ThisDocument** モジュール内で ReportStatistics マクロを呼び出します。 
   
 > [!NOTE]
->  **ThisDocument**モジュール内のマクロを呼び出すには、"ThisDocument"のように文字列を付ける必要があります。 
+>  **ThisDocument** モジュール内でマクロを起動するには文字列の前に「ThisDocument」を付ける必要があります。 
   
 ## <a name="example-4"></a>例 4
 

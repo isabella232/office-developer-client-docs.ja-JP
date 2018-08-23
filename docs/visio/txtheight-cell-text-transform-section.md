@@ -16,21 +16,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806703"
 ---
-# <a name="txtheight-cell-text-transform-section"></a>[TxtHeight] セル ([Text Transform] セクション)
+# <a name="txtheight-cell-text-transform-section"></a>[TxtHeight] セル ([テキスト変換] セクション)
 
 テキスト ブロックの高さを指定します。既定の数式は次のとおりです。
   
 = 高さ\*1
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [txtheight] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [TxtHeight] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | [Txtheight]  <br/> |
    
-プログラムから、インデックスによって [txtheight] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [TxtHeight] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

@@ -24,7 +24,7 @@ ms.locfileid: "19805723"
 
 LISTSEP ()
   
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 String
   

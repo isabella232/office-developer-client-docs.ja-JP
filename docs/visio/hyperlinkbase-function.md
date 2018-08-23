@@ -24,7 +24,7 @@ ms.locfileid: "19805537"
 
 HYPERLINKBASE ()
   
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 String
   

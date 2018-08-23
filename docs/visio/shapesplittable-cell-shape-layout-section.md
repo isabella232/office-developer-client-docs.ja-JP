@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806435"
 ---
-# <a name="shapesplittable-cell-shape-layout-section"></a>[ShapeSplittable] セル ([Shape Layout] セクション)
+# <a name="shapesplittable-cell-shape-layout-section"></a>[ShapeSplittable] セル ([図形レイアウト] セクション)
 
 この 1 次元図形が分割可能かどうかを示します。 
   
@@ -35,7 +35,7 @@ ms.locfileid: "19806435"
   
 ページの分割を無効にするを有効または、 [PageShapeSplit](pageshapesplit-cell-page-layout-section.md)のセルを参照してください。 
   
-1 次元の分割可能図形を分割できる図形には、 [[shapesplit]](shapesplit-cell-shape-layout-section.md)セルを参照してください。 
+図形が 1 次元の分割可能図形を分割できるようにするには、[[ShapeSplit]](shapesplit-cell-shape-layout-section.md) セルを使用します。 
   
 取得する、[ShapeSplittable] セルへの参照名で別の数式からまたはプログラムから**CellsU**プロパティを使用して、次のコマンドを使用します。 
   
@@ -43,7 +43,7 @@ ms.locfileid: "19806435"
 |:-----|:-----|
 | セル名:  <br/> | ShapeSplittable  <br/> |
    
-プログラムから、インデックスによって [ShapeSplittable] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ShapeSplittable] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

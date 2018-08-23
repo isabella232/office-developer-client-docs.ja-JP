@@ -19,21 +19,21 @@ ms.locfileid: "19806357"
 
 - [[1-D Endpoints] セクション](1-d-endpoints-section.md)
     
-- [3-D 回転のプロパティ] セクション](3-d-rotation-properties-section.md)
+- [[3-D 回転のプロパティ] セクション](3-d-rotation-properties-section.md)
     
 - [[操作タグ] セクション](action-tag-section.md)
     
 - [[Actions] セクション](actions-section.md)
     
-- [その他のエフェクトのプロパティ] セクション](additional-effect-properties-section.md)
+- [[追加効果のプロパティ] セクション](additional-effect-properties-section.md)
     
 - [[Alignment] セクション](alignment-section.md)
     
 - [[Annotation] セクション](annotation-section.md)
     
-- [傾斜面のプロパティ] セクション](bevel-properties-section.md)
+- [[ベベルのプロパティ] セクション](bevel-properties-section.md)
     
-- [図形の動作] セクションの変更](change-shape-behavior-section.md)
+- [[図形動作の変更] セクション](change-shape-behavior-section.md)
     
 - [[Character] セクション](character-section.md)
     
@@ -47,7 +47,7 @@ ms.locfileid: "19806357"
     
 - [[Fill Format] セクション](fill-format-section.md)
     
-- [グラデーションでを塗りつぶし](fill-gradient-section.md)
+- [[塗りつぶしグラデーション] セクション](fill-gradient-section.md)
     
 - [[Foreign Image Info] セクション](foreign-image-info-section.md)
     
@@ -55,7 +55,7 @@ ms.locfileid: "19806357"
     
 - [[Glue Info] セクション](glue-info-section.md)
     
-- [グラデーションのプロパティ] セクション](gradient-properties-section.md)
+- [[グラデーションのプロパティ] セクション](gradient-properties-section.md)
     
 - [[Group Properties] セクション](group-properties-section.md)
     
@@ -69,7 +69,7 @@ ms.locfileid: "19806357"
     
 - [[Line Format] セクション](line-format-section.md)
     
-- [線のグラデーション]](line-gradient-section.md)
+- [[線のグラデーション] セクション](line-gradient-section.md)
     
 - [[Miscellaneous] セクション](miscellaneous-section.md)
     
@@ -83,7 +83,7 @@ ms.locfileid: "19806357"
     
 - [[Protection] セクション](protection-section.md)
     
-- [[クイック スタイル]](quick-style-section.md)
+- [[クイック スタイル] セクション](quick-style-section.md)
     
 - [[Reviewer] セクション](reviewer-section.md)
     
@@ -107,7 +107,7 @@ ms.locfileid: "19806357"
     
 - [[Text Transform] セクション](text-transform-section.md)
     
-- [テーマのプロパティ] セクション](theme-properties-section.md)
+- [[テーマのプロパティ] セクション](theme-properties-section.md)
     
 - [[User-defined Cells] セクション](user-defined-cells-section.md)
     

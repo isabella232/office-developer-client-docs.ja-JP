@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: e400e6cc-4e36-43fc-9304-b688a0a7fd77
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 656e5c5532edfc6c791ca30aa30f4c4d96847295
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: e5f35474910f2257e18bcdc3b6b1dc661e2dc63a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800661"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563976"
 ---
 # <a name="imapipropopenproperty"></a>IMAPIProp::OpenProperty
 
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロパティにアクセスするために使用するインターフェイスへのポインターを返します。
   
@@ -35,7 +35,7 @@ HRESULT OpenProperty(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulPropTag_
   
@@ -99,7 +99,7 @@ MAPI_E_INVALID_PARAMETER
   
 > タグのプロパティの型は、PT_UNSPECIFIED に設定されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIProp::OpenProperty**メソッドは、特定のインターフェイスからプロパティへのアクセスを提供します。 **OpenProperty**は、 [IMAPIProp::GetProps](imapiprop-getprops.md)と[IMAPIProp::SetProps](imapiprop-setprops.md)メソッドの代替です。 **GetProps**または**SetProps**のいずれかのプロパティには、大きすぎる、または複雑すぎるために失敗した場合、 **OpenProperty**を呼び出します。 **OpenProperty**は、PT_OBJECT の種類のプロパティにアクセスするのには通常使用されます。 
   
@@ -145,8 +145,8 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 - [IMAPIProp::GetProps](imapiprop-getprops.md)
 - [IMAPIProp::SetProps](imapiprop-setprops.md)
 - [IMAPISupport::IStorageFromStream](imapisupport-istoragefromstream.md)
-- [IMAPITable: IUnknown](imapitableiunknown.md)
-- [IMAPIProp: IUnknown](imapipropiunknown.md)
+- [IMAPITable : IUnknown](imapitableiunknown.md)
+- [IMAPIProp : IUnknown](imapipropiunknown.md)
 - [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
 - [添付ファイルを開く](opening-an-attachment.md)
 

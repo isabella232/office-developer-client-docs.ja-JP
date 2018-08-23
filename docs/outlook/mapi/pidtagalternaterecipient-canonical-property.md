@@ -1,5 +1,5 @@
 ---
-title: PidTagAlternateRecipient の標準的なプロパティ
+title: PidTagAlternateRecipient 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: df787b60-2f53-42ac-89b5-1b52c906f472
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: ea78d9487e4929c2df3d49a9b85ba4aefac90a59
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: c3ebb520de8929185a8b67b585976b4d768727b4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802438"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22562954"
 ---
-# <a name="pidtagalternaterecipient-canonical-property"></a>PidTagAlternateRecipient の標準的なプロパティ
+# <a name="pidtagalternaterecipient-canonical-property"></a>PidTagAlternateRecipient 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 元の受信者が指定されている代替の受信者のエントリの識別子の一覧が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ALTERNATE_RECIPIENT  <br/> |
+|関連するプロパティ:  <br/> |PR_ALTERNATE_RECIPIENT  <br/> |
 |識別子:  <br/> |0x3A01  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |Address  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 自動転送済みのメッセージにこのプロパティが使用されます。 代理受信者の[FLATENTRYLIST](flatentrylist.md)構造体が含まれています。 自動転送が許可されていない場合、または別の受信者が指定されていない場合は、配信不能レポートが生成されます。 
   
@@ -79,7 +79,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

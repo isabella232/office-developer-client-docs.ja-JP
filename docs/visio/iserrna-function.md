@@ -24,7 +24,7 @@ _Cellreference_の値が #n/a エラーの種類である場合は、TRUE を返
 
 ISERRNA (* * *cellreference* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
@@ -32,7 +32,7 @@ ISERRNA (* * *cellreference* * *)
    
 ## <a name="example-1"></a>例 1
 
-|**Cell**|**Formula**|**返される値**|
+|**Cell**|**Formula**|**戻り値**|
 |:-----|:-----|:-----|
 |Scratch.A1  <br/> |="5 + 3"  <br/> |「8」  <br/> |
 |Scratch.B1  <br/> |=ISERRNA(Scratch.A1)  <br/> |FALSE  <br/> |
@@ -41,7 +41,7 @@ ISERRNA (* * *cellreference* * *)
   
 ## <a name="example-2"></a>例 2
 
-|**Cell**|**Formula**|**返される値**|
+|**Cell**|**Formula**|**戻り値**|
 |:-----|:-----|:-----|
 |Scratch.A1  <br/> |=NA( )  <br/> |#N/A!  <br/> |
 |Scratch.B1  <br/> |=ISERRNA(Scratch.A1)  <br/> |TRUE  <br/> |

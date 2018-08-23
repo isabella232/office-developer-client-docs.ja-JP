@@ -22,7 +22,7 @@ Windows メタファイル、ビットマップ、または OLE データなど�
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[ForeignData_Type](foreigndata_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[ForeignData_Type](foreigndata_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml のページで、マスターの # .xml  <br/> |

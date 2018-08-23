@@ -20,20 +20,21 @@ ms.locfileid: "19805570"
   
 ## <a name="version-information"></a>バージョン情報
 
-Visio 2010 のバージョンが追加されます。 
+追加バージョン: Visio 2010
+ 
   
 ## <a name="syntax"></a>構文
 
 IFERROR (* **式** *、* **代替式** *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _プライマリ式_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |評価する最初の式。  <br/> |
 | _代替式_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |一次式がエラーに評価される場合に評価する代替式。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 可変型 (Varies)
   

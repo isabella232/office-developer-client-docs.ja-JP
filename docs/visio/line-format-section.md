@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805687"
 ---
-# <a name="line-format-section"></a>[Line Format] セクション
+# <a name="line-format-section"></a>[線の書式設定] セクション
 
 パターン、太さ、色など、図形の線の属性を制御するセルを格納します。線の端点を書式設定するかどうか (たとえば、矢印など)、線の端点の書式サイズ、線に適用する角の丸みの半径、および線端の形 (丸または四角) を指定します。
   

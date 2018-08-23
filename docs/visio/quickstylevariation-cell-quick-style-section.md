@@ -1,5 +1,5 @@
 ---
-title: QuickStyleVariation セル ([クイック スタイル] セクション)
+title: '[QuickStyleVariation] セル ([クイック スタイル] セクション)'
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806140"
 ---
-# <a name="quickstylevariation-cell-quick-style-section"></a>QuickStyleVariation セル ([クイック スタイル] セクション)
+# <a name="quickstylevariation-cell-quick-style-section"></a>[QuickStyleVariation] セル ([クイック スタイル] セクション)
 
 数式とテキスト、線、および塗りつぶし色 (またはこれらのプロパティの組み合わせ) の色を使用して値を上書きするかどうかにその図の背景のコントラストを決定します。 値は、0、1、2、4、および 8 のビット単位の OR です。
   
@@ -26,7 +26,7 @@ ms.locfileid: "19806140"
 |4  <br/> |背景色が指定されているテーマのに対して表示されたままにするには、必要に応じて図形の線の色を変更します。  <br/> |
 |8  <br/> |背景色が指定されているテーマのに対して表示されたままにするには、必要な場合は、図形の塗りつぶしの色を変更します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 QuickStyleVariation セルを使用して、(たとえば、ネットワーク図などの図形の下端の下のテキスト ボックスは、図形) で表示されている図形ジオメトリの外側である場合、行またはテキストのいずれかの可視性を保証します。 セルの既定値は、0 であり、その動作がアクティブであることを意味します。 その他の値は、セルの動作をトリガーします。
   

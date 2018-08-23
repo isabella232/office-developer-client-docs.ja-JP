@@ -1,5 +1,5 @@
 ---
-title: PidTagAdditionalRenEntryIds の標準的なプロパティ
+title: PidTagAdditionalRenEntryIds 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8c6e7ca2-1824-4cca-bf69-3c1ea52727de
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: e63d661ab8c7e410d6a0dd786819cc189813017e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 5b357a068249b12468be52f8782f646f394e4060
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802422"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567826"
 ---
-# <a name="pidtagadditionalrenentryids-canonical-property"></a>PidTagAdditionalRenEntryIds の標準的なプロパティ
+# <a name="pidtagadditionalrenentryids-canonical-property"></a>PidTagAdditionalRenEntryIds 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 エントリ特定の特殊フォルダーの Id にはが含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ADDITIONAL_REN_ENTRYIDS  <br/> |
+|関連するプロパティ:  <br/> |PR_ADDITIONAL_REN_ENTRYIDS  <br/> |
 |識別子:  <br/> |0x36D8  <br/> |
-|データを入力します。  <br/> |PT_MV_BINARY  <br/> |
+|データの種類 :   <br/> |PT_MV_BINARY  <br/> |
 |領域:  <br/> |Outlook アプリケーション  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この複数値を持つプロパティの最初の 5 つのエントリは、ストア内に存在する場合に、次の特別なフォルダーに適用されます。
   
@@ -84,9 +84,9 @@ Mapidefs.h
 
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 
 
 [ストア API について](http://msdn.microsoft.com/en-us/library/aa192884.aspx)

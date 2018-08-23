@@ -24,18 +24,18 @@ _Formatpicture_に従って書式設定された文字列としての_式_の結
 
 形式 (* **式** *、"* * *formatpicture* * *") 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _expression_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |定数、演算子、関数、およびシェイプシートのセルに対する参照を組み合わせたもので、結果が値となる式です。  <br/> |
 | _formatpicture_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |文字列を書式設定するための書式形式です。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 String
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
 式の型と、図の書式設定で指定された型は、返される文字列の動作を制御します。 _Formatpicture_は、式のタイプに対応する必要があります。 書式形式を指定する方法の詳細については、[書式形式について](about-format-pictures.md)を参照してください。
   

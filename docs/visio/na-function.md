@@ -26,9 +26,9 @@ ms.locfileid: "19805921"
 
 NA( )
   
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
-文字列
+String
   
 ## <a name="remarks"></a>注釈
 

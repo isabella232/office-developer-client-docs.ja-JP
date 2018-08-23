@@ -24,7 +24,7 @@ ms.locfileid: "19806727"
 
 UNICHAR (* **番号** *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|

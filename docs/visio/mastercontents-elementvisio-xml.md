@@ -22,7 +22,7 @@ ms.locfileid: "19805826"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[PageContents_Type](pagecontents_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[PageContents_Type](pagecontents_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |マスター # .xml  <br/> |
@@ -46,7 +46,7 @@ ms.locfileid: "19805826"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[接続](connects-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> |図面内の 2 つの図形間の各接続の**接続**の要素が含まれています。  <br/> |
+|[Connects](connects-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> |図面内の 2 つの図形間の各接続の**接続**の要素が含まれています。  <br/> |
 |[Shapes](shapes-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Shapes_Type](shapes_type-complextypevisio-xml.md) <br/> |**図形**要素のコレクションが含まれています。  <br/> |
    
 ### <a name="attributes"></a>属性

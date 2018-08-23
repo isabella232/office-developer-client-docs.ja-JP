@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805639"
 ---
-# <a name="istextedittarget-cell-group-properties-section"></a>[IsTextEditTarget] セル ([Group Properties] セクション)
+# <a name="istextedittarget-cell-group-properties-section"></a>[IsTextEditTarget] セル ([グループのプロパティ] セクション)
 
 グループに対するテキストの割り当て方を指定します。
   
@@ -27,17 +27,17 @@ ms.locfileid: "19805639"
    
 ## <a name="remarks"></a>注釈
 
-[[開発](run-in-developer-mode-display-the-developer-tab.md)] タブ**の動作**をクリックすると、グループを選択し、**グループのテキストを編集**する] チェック ボックスをオンを選択してこの値を設定することもできます。 
+このセルの値は、グループを選択して、[[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブで [**基本動作**] をクリックし、[**グループのテキストを編集**] チェック ボックスをオンにして設定することもできます。 
   
 Visio 2000 より前のバージョンで作成したグループの場合、既定値は FALSE です。Visio バージョン 2000 以降、既定値は TRUE になっています。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[IsTextEditTarget] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [IsTextEditTarget] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |IsTextEditTarget  <br/> |
    
-プログラムから、インデックスによって [IsTextEditTarget] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [IsTextEditTarget] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

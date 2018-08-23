@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805931"
 ---
-# <a name="nurbsto-row-geometry-section"></a>[NURBSTo] 行 ([Geometry] セクション)
+# <a name="nurbsto-row-geometry-section"></a>[NURBSTo] 行 ([図形座標] セクション)
 
 *X*と*y*の座標、2 番目の最後のノットの位置、最後のウェイトの位置、最初のノットの位置、最初のウェイトとの不均一な合理性のある B スプライン (NURBS) の数式の位置。 
   
@@ -34,6 +34,6 @@ ms.locfileid: "19805931"
    
 ## <a name="remarks"></a>備考
 
-Nurbs カーブは、カーブを数学的に表すための一般的な方法です。 **(フリー フォーム)** ツールを使用して、NURBS を作成できます。 
+NURBS は曲線を数理的に表すための一般的な方法です。**[自在曲線ツール]** を使用して、NURBS を作成できます。 
   
 

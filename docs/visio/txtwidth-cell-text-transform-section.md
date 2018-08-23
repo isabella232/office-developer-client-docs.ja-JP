@@ -16,21 +16,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806723"
 ---
-# <a name="txtwidth-cell-text-transform-section"></a>[TxtWidth] セル ([Text Transform] セクション)
+# <a name="txtwidth-cell-text-transform-section"></a>[TxtWidth] セル ([テキスト変換] セクション)
 
 テキスト ブロックの幅を指定します。既定の数式は次のとおりです。
   
 = 幅\*1
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [txtwidth] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [TxtWidth] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | [Txtwidth]  <br/> |
    
-プログラムから、インデックスによって [txtwidth] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [TxtWidth] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

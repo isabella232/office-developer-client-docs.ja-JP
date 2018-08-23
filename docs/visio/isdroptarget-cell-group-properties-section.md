@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805611"
 ---
-# <a name="isdroptarget-cell-group-properties-section"></a>[IsDropTarget] セル ([Group Properties] セクション)
+# <a name="isdroptarget-cell-group-properties-section"></a>[IsDropTarget] セル ([グループのプロパティ] セクション)
 
 グループにドロップされた図形を、そのグループが受け入れるかどうかを決定します。
   
@@ -27,17 +27,17 @@ ms.locfileid: "19805611"
    
 ## <a name="remarks"></a>注釈
 
-[[開発](run-in-developer-mode-display-the-developer-tab.md)] タブ**の動作**をクリックすると、グループを選択し、**ドロップした図形を受け入れる**] チェック ボックスをオンを選択してこの値を設定することもできます。 
+このセルの値は、グループを選択して、[[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**基本動作**] をクリックし、[**ドロップした図形を受け入れる**] チェック ボックスをオンにして設定することもできます。 
   
-グループにドロップしてグループに図形を追加するものような図形の動作を有効にする必要があります。 図形を選択し、[[開発](run-in-developer-mode-display-the-developer-tab.md)] タブで、[**動作**] をクリックして、[**ドロップ時にグループに図形を追加**する] チェック ボックスを選択する必要があります。 この値は、[その他] セクションの IsDropSource セルに格納されます。 
+図形をグループ上にドロップしてそのグループに追加するには、図形に対してもこの動作を有効にする必要があります。有効にするには、図形を選択して [[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**基本動作**] をクリックし、[**ドロップ時にグループに図形を追加**] チェック ボックスをオンにします。この値は、[Miscellaneous] セクションの [IsDropSource] セルに格納されます。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[IsDropTarget] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [IsDropTarget] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |IsDropTarget  <br/> |
    
-プログラムから、インデックスによって [IsDropTarget] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [IsDropTarget] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

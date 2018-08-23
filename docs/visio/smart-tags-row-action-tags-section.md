@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806542"
 ---
-# <a name="smart-tags-row-action-tags-section"></a>[Smart Tags] 行 ([Action Tags] セクション)
+# <a name="smart-tags-row-action-tags-section"></a>[Smart Tags] 行 ([操作タグ] セクション)
 
 図形またはページに関連付けられている 1 つのアクション タグの情報が含まれています。 図形またはページには、各アクションのタグの 1 つのスマート タグ行が含まれています。
   
@@ -35,7 +35,7 @@ ms.locfileid: "19806542"
 |[DisplayMode](displaymode-cell-action-tags-section.md) <br/> |どのようなときにアクション タグを表示するかを指定します。  <br/> |
 |[ButtonFace](buttonface-cell-action-tags-section.md) <br/> |アクション タグ ボタンの表面に表示する画像の ID です。  <br/> |
 |[説明](description-cell-action-tags-section.md) <br/> |アクション タグを説明する文字列です。  <br/> |
-|[無効になっています。](disabled-cell-action-tags-section.md) <br/> |アクション タグが無効かどうかを示します。  <br/> |
+|[Disabled](disabled-cell-action-tags-section.md) <br/> |アクション タグが無効かどうかを示します。  <br/> |
    
 ## <a name="remarks"></a>備考
 

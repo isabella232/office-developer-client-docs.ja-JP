@@ -24,7 +24,7 @@ ms.locfileid: "19806371"
 
 SETATREF (* **参照** * [、* **式** * [、* * *ignore_eval* * *]) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
@@ -32,7 +32,7 @@ SETATREF (* **参照** * [、* **式** * [、* * *ignore_eval* * *])
 | _セット式_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |_参照_に割り当てられている式を指定します。  <br/> |
 | _ignore_eval_ <br/> |省略可能  <br/> |**ブール型 (Boolean)** <br/> |SETATREF 関数の評価 (0) に TRUE の場合、ゼロです。FALSE の場合 (既定値) SETATREF 関数評価_の参照_の値にします。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 SETATREF 数式を含むセルを更新するための Microsoft Visio 図面ウィンドウ、またはオートメーション メソッドでは、ユーザーの操作が発生した場合と、値は SETATREF 数式 (_参照_) で参照されているセルへ代わりにリダイレクトされます。 SETATREF 関数を含むセルの数式はそのままの状態のままになります。
   

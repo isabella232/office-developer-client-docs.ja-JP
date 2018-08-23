@@ -29,9 +29,9 @@ ms.locfileid: "19806298"
     
 - [[EllipticalArcTo] 行 ([Geometry] セクション)](ellipticalarcto-row-geometry-section.md)
     
-- [グラデーション停止行 (塗りつぶしのグラデーションのセクション)](gradient-stop-row-fill-gradient-section.md)
+- [[Gradient Stop] 行 ([塗りつぶしグラデーション] セクション)](gradient-stop-row-fill-gradient-section.md)
     
-- [グラデーション停止の行 (行のグラデーションのセクション)](gradient-stop-row-line-gradient-section.md)
+- [[Gradient Stop] 行 ([線のグラデーション] セクション)](gradient-stop-row-line-gradient-section.md)
     
 - [[Hyperlink] 行 ([Hyperlinks] セクション)](hyperlink-row-hyperlinks-section.md)
     
@@ -45,15 +45,15 @@ ms.locfileid: "19806298"
     
 - [[PolylineTo] 行 ([Geometry] セクション)](polylineto-row-geometry-section.md)
     
-- [RelCubBezTo 行 ([Geometry] セクション)](relcubbezto-row-geometry-section.md)
+- [[RelCubBezTo] 行 ([図形座標] セクション)](relcubbezto-row-geometry-section.md)
     
-- [RelEllipticalArcTo 行 ([Geometry] セクション)](relellipticalarcto-row-geometry-section.md)
+- [[RelEllipticalArcTo] 行 ([図形座標] セクション)](relellipticalarcto-row-geometry-section.md)
     
-- [RelLineTo 行 ([Geometry] セクション)](rellineto-row-geometry-section.md)
+- [[RelLineTo] 行 ([図形座標] セクション)](rellineto-row-geometry-section.md)
     
-- [RelMoveTo 行 ([Geometry] セクション)](relmoveto-row-geometry-section.md)
+- [[RelMoveTo] 行 ([図形座標] セクション)](relmoveto-row-geometry-section.md)
     
-- [RelQuadBezTo 行 ([Geometry] セクション)](relquadbezto-row-geometry-section.md)
+- [[RelQuadBezTo] 行 ([図形座標] セクション)](relquadbezto-row-geometry-section.md)
     
 - [[Shape Data] 行 ([Shape Data] セクション)](shape-data-row-shape-data-section.md)
     

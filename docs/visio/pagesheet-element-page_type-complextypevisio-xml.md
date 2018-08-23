@@ -22,7 +22,7 @@ ms.locfileid: "19805968"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[PageSheet_Type](pagesheet_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[PageSheet_Type](pagesheet_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |pages.xml  <br/> |
@@ -54,7 +54,7 @@ ms.locfileid: "19805968"
 |:-----|:-----|:-----|:-----|:-----|
 |FillStyle  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |塗りつぶしの書式設定を継承するスタイル シートの ID を指定します。 図面内の**StyleSheet_Type**に関連付けられている**ID**属性の値である必要があります。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
 |LineStyle  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |線の書式設定を継承するスタイル シートの ID を指定します。 図面内の**StyleSheet_Type**に関連付けられている**ID**属性の値である必要があります。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|テキスト スタイル  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |テキストの書式設定を継承するスタイル シートの ID を指定します。 図面内の**StyleSheet_Type**に関連付けられている**ID**属性の値である必要があります。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
+|TextStyle  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |テキストの書式設定を継承するスタイル シートの ID を指定します。 図面内の**StyleSheet_Type**に関連付けられている**ID**属性の値である必要があります。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
 |UniqueID  <br/> |xsd:string  <br/> |省略可能  <br/> |その親要素内の要素の一意の ID。  <br/> |Xsd:string の値を入力します。  <br/> |
    
 

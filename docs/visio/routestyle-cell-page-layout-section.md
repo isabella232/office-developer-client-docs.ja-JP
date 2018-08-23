@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806272"
 ---
-# <a name="routestyle-cell-page-layout-section"></a>[RouteStyle] セル ([Page Layout] セクション)
+# <a name="routestyle-cell-page-layout-section"></a>[RouteStyle] セル ([ページ レイアウト] セクション)
 
 ローカルな迂回方法を持たない図面ページ上のすべてのコネクタに対して、迂回方法と方向を指定します。
   
@@ -46,19 +46,19 @@ ms.locfileid: "19806272"
 |21  <br/> |シンプル 横 - 縦  <br/> |なし  <br/> |**visLORouteSimpleHV** <br/> |
 |22  <br/> |シンプル 縦 - 横  <br/> |なし  <br/> |**visLORouteSimpleVH** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **[ページ設定**] ダイアログ ボックスで、[**レイアウトと経路**] タブで、このセルの値を設定することもできます ([**デザイン**] タブで、 **[ページ設定**の矢印をクリックして、[**レイアウトと経路**、および、[**間隔**] をクリック) します。 
   
 [Shape Layout] セクションの [ShapeRouteStyle] セルでコネクタのローカルな迂回方法を設定できます。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[RouteStyle] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [RouteStyle] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名 :  <br/> |RouteStyle  <br/> |
    
-プログラムから、インデックスによって [RouteStyle] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [RouteStyle] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

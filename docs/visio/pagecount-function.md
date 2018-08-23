@@ -24,7 +24,7 @@ ms.locfileid: "19805960"
 
 PAGECOUNT ()
   
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 数値
   

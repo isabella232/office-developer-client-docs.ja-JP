@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805759"
 ---
-# <a name="lockmovey-cell-protection-section"></a>[LockMoveY] セル ([Protection] セクション)
+# <a name="lockmovey-cell-protection-section"></a>[LockMoveY] セル ([保護] セクション)
 
 図形の垂直位置をロックします。ロックすると、図形は垂直方向に移動できなくなります。
   
@@ -27,13 +27,13 @@ ms.locfileid: "19805759"
    
 ## <a name="remarks"></a>備考
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [lockmovey] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LockMoveY] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | [Lockmovey]  <br/> |
    
-プログラムから、インデックスによって [lockmovey] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [LockMoveY] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

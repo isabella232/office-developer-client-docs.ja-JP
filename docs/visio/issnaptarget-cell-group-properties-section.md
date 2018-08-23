@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805626"
 ---
-# <a name="issnaptarget-cell-group-properties-section"></a>[IsSnapTarget] セル ([Group Properties] セクション)
+# <a name="issnaptarget-cell-group-properties-section"></a>[IsSnapTarget] セル ([グループのプロパティ] セクション)
 
 グループにスナップするかグループ内の図形にスナップするかを指定します。
   
@@ -27,15 +27,15 @@ ms.locfileid: "19805626"
    
 ## <a name="remarks"></a>注釈
 
-[[開発](run-in-developer-mode-display-the-developer-tab.md)] タブ**の動作**をクリックすると、グループを選択し、 **[メンバー図形にスナップ**] チェック ボックスをオンにしてこの値を設定することもできます。 
+このセルの値は、グループを選択して、[[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**基本動作**] をクリックし、[**メンバー図形にスナップ**] チェック ボックスをオンにして設定することもできます。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[IsSnapTarget] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [IsSnapTarget] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |IsSnapTarget  <br/> |
    
-プログラムから、インデックスによって [IsSnapTarget] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [IsSnapTarget] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

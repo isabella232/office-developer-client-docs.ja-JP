@@ -24,15 +24,15 @@ _Logicalexpression_が FALSE の場合は、TRUE (1) を返します。 それ�
 
 されません (* * *logicalexpression* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _logicalexpression_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |評価する論理式を指定します。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
-ブール型 (Boolean)
+ブール型 (Boolean)。
   
 ## <a name="example"></a>例
 

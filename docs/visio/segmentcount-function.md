@@ -22,15 +22,15 @@ ms.locfileid: "19806376"
 
 SEGMENTCOUNT (* * *pathRef* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _pathRef_ <br/> |必須  <br/> |**Integer** <br/> |パスを表す [Geometry] セクション。[Path] セルへの参照によって指定されます (Geometry1.Path など)。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
-整数型 (Integer)
+整数
   
 ## <a name="remarks"></a>注釈
 

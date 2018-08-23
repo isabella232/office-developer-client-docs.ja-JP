@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806786"
 ---
-# <a name="width-cell-shape-transform-section"></a>[Width] セル ([Shape Transform] セクション)
+# <a name="width-cell-shape-transform-section"></a>[Width] セル ([図形変換] セクション)
 
 選択した図形の幅を図面の単位で表した値が表示されます。1-D 図形の幅を決定する既定の数式は次のとおりです。
   
@@ -24,13 +24,13 @@ ms.locfileid: "19806786"
   
 ## <a name="remarks"></a>備考
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[Width] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Width] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | Width  <br/> |
    
-プログラムから、インデックスによって [Width] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [Width] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

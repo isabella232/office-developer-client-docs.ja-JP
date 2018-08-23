@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806780"
 ---
-# <a name="viewmarkup-cell-document-properties-section"></a>[ViewMarkup] セル ([Document Properties] セクション
+# <a name="viewmarkup-cell-document-properties-section"></a>[ViewMarkup] セル ([ドキュメントのプロパティ] セクション)
 
 図面ウィンドウに校正履歴を表示するかどうかを指定します。 
   
@@ -31,15 +31,15 @@ ms.locfileid: "19806780"
   
 図面にコメントを挿入した場合、校正履歴の記録機能がオンかどうかに関わらず、[ViewMarkup] セルは TRUE に設定されます。[ViewMarkup] セルが TRUE でなければ、図面内にコメントが表示されません。
   
-このセルは、[**校閲**] タブには、**マークアップ**のグループ内の**コメントの表示**コマンドに対応します。 
+このセルは、[**校閲**] タブの [**校正履歴**] グループにある [**変更履歴とコメントの表示**] コマンドに対応しています。 
   
-取得する、[ViewMarkup] セルへの参照名を別の数式からまたはプログラムから**CellsU**プロパティを使用して、次のコマンドを使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ViewMarkup] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名 :  <br/> |ViewMarkup  <br/> |
    
-プログラムから、インデックスによって [ViewMarkup] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ViewMarkup] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

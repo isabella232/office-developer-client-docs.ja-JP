@@ -1,5 +1,5 @@
 ---
-title: PidLidSharingResponseType の標準的なプロパティ
+title: PidLidSharingResponseType 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: c27b1239-3612-4bb3-9f22-4b89ee9900cd
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: a645ee26b56355c6594f5667585becbcff2e3eec
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: beb2c46b43ae77de08900aeb987d875e85575aba
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802180"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563185"
 ---
-# <a name="pidlidsharingresponsetype-canonical-property"></a>PidLidSharingResponseType の標準的なプロパティ
+# <a name="pidlidsharingresponsetype-canonical-property"></a>PidLidSharingResponseType 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 共有要求の受信者が返信している応答の種類を指定します。 これは、共有メッセージのプロパティです。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidSharingResponseType  <br/> |
+|関連するプロパティ:  <br/> |dispidSharingResponseType  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Sharing  <br/> |
 |長い ID (LID):  <br/> |0x00008A27  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |共有  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティの値を次の値のいずれかに設定する必要があります。
   
@@ -71,7 +71,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

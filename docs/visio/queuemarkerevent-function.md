@@ -24,13 +24,13 @@ ms.locfileid: "19806134"
 
 QUEUEMARKEREVENT (* * *event_string* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _event_string_ <br/> |必須  <br/> |**文字列型 (String)** <br/> | イベント ハンドラーに渡す文字列です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 QUEUEMARKEREVENT 関数には、シェイプ シートのセルからコードを通知し、ソリューションに固有の情報を渡す方法を開発者が用意されています。 QUEUEMARKEREVENT 関数で数式を含むセルが評価されると、アプリケーションはマーカー イベントを発生し、 **MarkerEvent**イベントをリッスンしているすべてのイベント ハンドラーに_event_string_を渡します。 
   
@@ -40,6 +40,6 @@ QUEUEMARKEREVENT 関数には、シェイプ シートのセルからコード�
 
 QUEUEMARKEREVENT ("MyCustomNotification") 
   
-アプリケーションが、マーカー イベントを発生し、 **MarkerEvent**イベントをリッスンしているイベント ハンドラーに、文字列"MyCustomNotification"を渡します。 
+アプリケーションはマーカー イベントを発生し、**MarkerEvent** イベントを受信しているイベント ハンドラーに文字列 "MyCustomNotification" を渡します。 
   
 

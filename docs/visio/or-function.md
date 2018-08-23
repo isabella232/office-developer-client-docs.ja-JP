@@ -24,7 +24,7 @@ ms.locfileid: "19805948"
 
 または (* * *logicalexpression1* * *、* * *logicalexpression2* * *、* * *logicalexpressionN* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
@@ -32,9 +32,9 @@ ms.locfileid: "19805948"
 | _logicalexpression2_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |真を評価する 2 番目の式を指定します。  <br/> |
 | _logicalexpressionN_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |真を評価する n 番目の式を指定します。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
-ブール型 (Boolean)
+ブール型
   
 ## <a name="remarks"></a>注釈
 

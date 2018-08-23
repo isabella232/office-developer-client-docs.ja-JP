@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805919"
 ---
-# <a name="newwindow-cell-hyperlinks-section"></a>[NewWindow] セル ([Hyperlinks] セクション)
+# <a name="newwindow-cell-hyperlinks-section"></a>[NewWindow] セル ([ハイパーリンク] セクション)
 
 ハイパーリンクを新しいウィンドウで開くかどうかを指定します。
   
@@ -27,13 +27,13 @@ ms.locfileid: "19805919"
    
 ## <a name="remarks"></a>備考
 
-別の数式または**CellsU**プロパティを使用したプログラムからは、名前によって、[NewWindow] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [NewWindow] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | ハイパーリンク  *名*です。NewWindow いるハイパーリンク。  *名前*は、行の名前  <br/> |
    
-プログラムから、インデックスによって [NewWindow] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [NewWindow] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   
 |||
 |:-----|:-----|

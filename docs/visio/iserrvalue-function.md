@@ -24,7 +24,7 @@ _Cellreference_の値がエラーの場合は TRUE を返しますが、数式�
 
 ISERRVALUE (* * *cellreference* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
@@ -36,7 +36,7 @@ ISERRVALUE (* * *cellreference* * *)
   
 ## <a name="example-1"></a>例 1
 
-|**Cell**|**Formula**|**返される値**|
+|**Cell**|**Formula**|**戻り値**|
 |:-----|:-----|:-----|
 |Scratch.X1  <br/> |= "House"  <br/> |#VALUE!  <br/> |
 |Scratch.A1  <br/> |= If (ISERRVALUE(Scratch.X1),2,Scratch.X1)  <br/> |2  <br/> |
@@ -45,7 +45,7 @@ ISERRVALUE (* * *cellreference* * *)
   
 ## <a name="example-2"></a>例 2
 
-|**Cell**|**Formula**|**返される値**|
+|**Cell**|**Formula**|**戻り値**|
 |:-----|:-----|:-----|
 |Scratch.A1  <br/> |="5 +7"  <br/> |5 + 7  <br/> |
 |Scratch.B1  <br/> |=If (ISERRVALUE(Scratch.A1),2,Scratch.A1)  <br/> |5 + 7  <br/> |

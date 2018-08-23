@@ -16,19 +16,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806864"
 ---
-# <a name="y-dynamics-cell-controls-section"></a>[Y Dynamics] セル ([Controls] セクション)
+# <a name="y-dynamics-cell-controls-section"></a>[Y Dynamics] セル ([コントロール] セクション)
 
 *Y*を表す-ローカル座標でのコントロール ハンドルのアンカー ポイントの座標です。 アンカー ポイントは、ダイナミックス機能を使うときのラバーバンディングに使用されます。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[Y Dynamics] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Y Dynamics] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | 制御します。  *名*です。YDynwhere を制御します。  *名*は、コントロールの行の名前です。  <br/> |
    
-プログラムから、インデックスによって [Y Dynamics] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [Y Dynamics] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

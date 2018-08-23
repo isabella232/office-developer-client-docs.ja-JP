@@ -1,5 +1,5 @@
 ---
-title: Visio ファイル形式リファレンス
+title: Visio ファイル形式のリファレンス
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806774"
 ---
-# <a name="visio-file-format-reference"></a>Visio ファイル形式リファレンス
+# <a name="visio-file-format-reference"></a>Visio ファイル形式のリファレンス
 
 このリファレンスには、概念の概要のトピックおよび Visio ファイル形式を使用してソリューションを開発するときに、例を含む、参照トピックが含まれています (\*.vsdx)。
   
@@ -26,7 +26,7 @@ ms.locfileid: "19806774"
   
 - [Visio ファイル形式 (.vsdx) の概要](introduction-to-the-visio-file-formatvsdx.md)
     
-- [Visio ファイル形式をプログラムによって操作します。](how-to-manipulate-the-visio-file-format-programmatically.md)
+- [プログラムを使用して Visio ファイル形式を操作する](how-to-manipulate-the-visio-file-format-programmatically.md)
     
 - [スキーマ マップ](schema-mapvisio-xml.md): Visio ファイル形式の XML スキーマを表示します。
     
@@ -40,10 +40,10 @@ ms.locfileid: "19806774"
     
 - [マイクロソフト製品のアクセシビリティ機能](http://www.microsoft.com/enable/products/default.aspx)
     
-- [�h�L�������g�̂��߂̕\�L�K��](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
+- [ドキュメントの表記規則](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
     
 - [Visio SDK の著作権表示](visio-sdk-copyright-notice.md)
     
-- [Microsoft �v���C�o�V�[�Ɋւ��鐺��](http://privacy.microsoft.com/en-us/default.mspx)
+- [Microsoft プライバシーに関する声明](http://privacy.microsoft.com/en-us/default.mspx)
     
 

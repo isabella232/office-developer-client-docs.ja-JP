@@ -21,7 +21,7 @@ ms.locfileid: "19806459"
 |:-----|:-----|
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
-|**拡張機能の基本** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |なし  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -73,7 +73,7 @@ ms.locfileid: "19806459"
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
 |[Cell](cell-elementvisio-xml.md) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> ||
-|[Section](section-element-sheet_type-complextypevisio-xml.md) <br/> |[Section_Type](section_type-complextypevisio-xml.md) <br/> ||
+|[セクション](section-element-sheet_type-complextypevisio-xml.md) <br/> |[Section_Type](section_type-complextypevisio-xml.md) <br/> ||
 |[Trigger](trigger-elementvisio-xml.md) <br/> |[Trigger_Type](trigger_type-complextypevisio-xml.md) <br/> ||
    
 ### <a name="attributes"></a>属性
@@ -82,6 +82,6 @@ ms.locfileid: "19806459"
 |:-----|:-----|:-----|:-----|:-----|
 |FillStyle  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> ||Xsd:unsignedInt の値を入力します。  <br/> |
 |LineStyle  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> ||Xsd:unsignedInt の値を入力します。  <br/> |
-|テキスト スタイル  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> ||Xsd:unsignedInt の値を入力します。  <br/> |
+|TextStyle  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> ||Xsd:unsignedInt の値を入力します。  <br/> |
    
 

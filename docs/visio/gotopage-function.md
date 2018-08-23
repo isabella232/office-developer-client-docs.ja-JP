@@ -24,7 +24,7 @@ ms.locfileid: "19805494"
 
 GOTOPAGE ("* **指定した pagename* * *") 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|

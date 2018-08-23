@@ -22,7 +22,7 @@ ms.locfileid: "19805835"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[MasterShortcut_Type](mastershortcut_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[MasterShortcut_Type](mastershortcut_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |マスター # .xml  <br/> |
@@ -42,7 +42,7 @@ ms.locfileid: "19805835"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[マスター](masters-elementvisio-xml.md) <br/> |[Masters_Type](masters_type-complextypevisio-xml.md) <br/> |ドキュメントの**マスター**の要素が含まれています。  <br/> |
+|[Masters](masters-elementvisio-xml.md) <br/> |[Masters_Type](masters_type-complextypevisio-xml.md) <br/> |ドキュメントの**マスター**の要素が含まれています。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -60,7 +60,7 @@ ms.locfileid: "19805835"
 |名前  <br/> |xsd:string  <br/> |省略可能  <br/> |要素の名前です。  <br/> |Xsd:string の値を入力します。  <br/> |
 |NameU  <br/> |xsd:string  <br/> |省略可能  <br/> |要素の汎用名です。  <br/> |Xsd:string の値を入力します。  <br/> |
 |PatternFlags  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> |マスターのユーザー設定のパターンとして動作するかどうかを決定します。  <br/> |Xsd:unsignedShort の値を入力します。  <br/> |
-|Prompt  <br/> |xsd:string  <br/> |省略可能  <br/> |ステータス バー、ツールは、要素の prompt ヒントです。  <br/> |Xsd:string の値を入力します。  <br/> |
+|プロンプト  <br/> |xsd:string  <br/> |省略可能  <br/> |ステータス バー、ツールは、要素の prompt ヒントです。  <br/> |Xsd:string の値を入力します。  <br/> |
 |ShortcutHelp  <br/> |xsd:string  <br/> |省略可能  <br/> |要素のヘルプ文字列です。  <br/> |Xsd:string の値を入力します。  <br/> |
 |ShortcutURL  <br/> |xsd:string  <br/> |省略可能  <br/> |**MasterShortcut**要素の URL です。  <br/> |Xsd:string の値を入力します。  <br/> |
    

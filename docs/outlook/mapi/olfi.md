@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 44bfaadf-36f9-bd8e-6158-646533f6849e
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: ff23472254df2bd9d2195c7cf2c4258b856ec430
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7d01f07b5eb5ca34b4bd825b62b7d1520b853d6b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801679"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564263"
 ---
 # <a name="olfi"></a>OLFI
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 新しいメッセージまたはオフライン モードでのフォルダーのエントリ ID を割り当てるには、個人用フォルダー ファイル (PST) のストア プロバイダーによって使用される ID 構造体は、常に長期的なキューです。
   
@@ -37,7 +37,7 @@ typedef struct {
 } OLFI, *POLFI;
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  _ulVersion_
   
@@ -67,7 +67,7 @@ typedef struct {
   
 - 長期的な ID の構造が次の使用可能なエントリを識別します。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 エントリ ID は、フォルダーまたはメッセージの 4 バイト MAPI エントリ識別子です。 詳細については、[エントリ ID](http://msdn.microsoft.com/en-us/library/ms836424)を参照してください。
   
@@ -87,7 +87,7 @@ PST ストア プロバイダーをラップするプロバイダーは、それ
 
 [レプリケーション API について](about-the-replication-api.md)
   
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [LTID](ltid.md)
 

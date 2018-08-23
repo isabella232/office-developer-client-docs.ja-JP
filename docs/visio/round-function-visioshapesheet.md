@@ -24,7 +24,7 @@ ms.locfileid: "19806260"
 
 ラウンド (* **番号** *、* * *numberofdigits* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|

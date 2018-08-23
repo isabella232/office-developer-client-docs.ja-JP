@@ -22,14 +22,14 @@ ms.locfileid: "19805986"
 
 PATHSEGMENT (* **で** *、* **旅行** *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _section_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |パスを表す [Geometry] セクション。[Path] セルへの参照によって指定されます (Geometry1.Path など)。  <br/> |
 | _旅行_ <br/> |必須  <br/> |**Double** <br/> |スキャンするパスの始点から終点までの割合。0 ～ 1 の値を指定する必要があります。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 整数型 (Integer)
   

@@ -1,5 +1,5 @@
 ---
-title: Visio シェイプ シート開発者用の新します。
+title: Visio ShapeSheet 開発者向け新機能
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806797"
 ---
-# <a name="whats-new-for-visio-shapesheet-developers"></a>Visio シェイプ シート開発者用の新します。
+# <a name="whats-new-for-visio-shapesheet-developers"></a>Visio ShapeSheet 開発者向け新機能
 
 Visio 2013 は、カスタム描画ソリューションの 1 つの強力なプラットフォームを提供します。 新しいシェイプ シート セルと関数、および新しいオートメーション オブジェクト、プロパティ、メソッド、およびイベントを定義し、ソリューション内の要素の動作を制御するその他のオプションを提供します。
   
@@ -25,7 +25,7 @@ Visio 2013 は、カスタム描画ソリューションの 1 つの強力なプ
 
 Visio 2013 の [シェイプ シート] ソリューションの構築に使用できる新しいセルを次の表に一覧します。
   
-|**新しいセル**|**Section**|
+|**新しいセル**|**セクション**|
 |:-----|:-----|
 |[BevelBottomHeight](bevelbottomheight-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
 |[BevelBottomType](bevelbottomtype-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
@@ -109,7 +109,7 @@ Visio 2013 に変更されているセルを次の表に一覧します。
 
 Visio 2013 の [シェイプ シート] ソリューションの構築に使用できる新しい行を次の表に一覧します。
   
-|**新しい行**|**Section**|
+|**新しい行**|**セクション**|
 |:-----|:-----|
 |[GradientStop](gradient-stop-row-fill-gradient-section.md) <br/> |塗りつぶしのグラデーション  <br/> |
 |[GradientStop](gradient-stop-row-line-gradient-section.md) <br/> |線のグラデーション  <br/> |
@@ -137,6 +137,6 @@ Visio 2013 で廃止予定の関数を次の表に一覧します。
   
 |**非推奨の関数**|**メモ**|
 |:-----|:-----|
-|**CELLISTHEMED** <br/> |[ISTHEMED](isthemed-function.md)関数に置き換えられます。  <br/> |
+|**CELLISTHEMED** <br/> |[ISTHEMED](isthemed-function.md) 関数に置き換えられました。  <br/> |
    
 

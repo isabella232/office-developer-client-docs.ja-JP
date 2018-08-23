@@ -21,7 +21,7 @@ ms.locfileid: "19805820"
 |:-----|:-----|
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
-|**拡張機能の基本** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |なし  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -127,7 +127,7 @@ ms.locfileid: "19805820"
 |名前  <br/> |xsd:string  <br/> |省略可能  <br/> ||Xsd:string の値を入力します。  <br/> |
 |NameU  <br/> |xsd:string  <br/> |省略可能  <br/> ||Xsd:string の値を入力します。  <br/> |
 |PatternFlags  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> ||Xsd:unsignedShort の値を入力します。  <br/> |
-|Prompt  <br/> |xsd:string  <br/> |省略可能  <br/> ||Xsd:string の値を入力します。  <br/> |
+|プロンプト  <br/> |xsd:string  <br/> |省略可能  <br/> ||Xsd:string の値を入力します。  <br/> |
 |UniqueID  <br/> |xsd:string  <br/> |省略可能  <br/> ||Xsd:string の値を入力します。  <br/> |
    
 

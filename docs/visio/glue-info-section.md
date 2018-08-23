@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805482"
 ---
-# <a name="glue-info-section"></a>[Glue Info] セクション
+# <a name="glue-info-section"></a>[接着情報] セクション
 
 1-D 図形が別の図形に接着されたときに 1-D 図形に対して生成された数式を格納します。
   
