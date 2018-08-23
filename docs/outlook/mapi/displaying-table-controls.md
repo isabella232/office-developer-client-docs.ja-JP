@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 0882be14-573c-440c-954f-76ef70eea33e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 11b3279582c4cfb0d2c2249c6f4eddd7f0260b49
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7af1e710006986807091c5c36d54da86204a71d7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799948"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568463"
 ---
 # <a name="displaying-table-controls"></a>テーブル コントロールの表示
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 さまざまな種類のコントロールは、MAPI に固有の [なし] があります。 ただし、MAPI では、各制御に関連するデータの一意のセットを記述するのには[BuildDisplayTable](builddisplaytable.md)と組み合わせて使用する独自の構造を定義します。 
   

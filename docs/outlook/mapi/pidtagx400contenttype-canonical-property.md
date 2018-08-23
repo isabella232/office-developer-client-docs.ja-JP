@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c8959592-53f3-48cf-b623-91d199df0629
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ac79c37c8d646e5fa722af240972a0638d1bcec7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fc120a863fb9a061381eac81be04e385831cf484
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803664"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566790"
 ---
 # <a name="pidtagx400contenttype-canonical-property"></a>PidTagX400ContentType 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このプロパティには、送信されたメッセージのコンテンツ タイプが含まれています。
   

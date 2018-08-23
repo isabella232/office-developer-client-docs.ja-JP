@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 4c4ef9e8-6b30-481b-8023-2e1280bcbcc9
 description: このリファレンスには、概念の概要および OneNote 2013 デスクトップ クライアント アプリケーションのためのソリューションを開発するときにプログラムの参照が含まれています。
-ms.openlocfilehash: 8af3f0b8623f0b457250ea11f185a25cadec7386
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6a3dde524dfa5357c4523db3b545ac583eaa3274
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799291"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566580"
 ---
 # <a name="onenote-developer-reference"></a>OneNote 開発者用リファレンス
 
@@ -34,16 +34,11 @@ ms.locfileid: "19799291"
   
 ## <a name="see-also"></a>関連項目
 
-- [OneNote の開発者](http://go.microsoft.com/fwlink/?LinkID=390615)
-    
-- [GitHub のサンプル](https://github.com/OneNoteDev/)(OneNote サービス Api) 
-    
-- [マイクロソフト製品のアクセシビリティ機能](http://www.microsoft.com/enable/products/default.aspx)
-    
-- [ドキュメントの表記規則](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
-    
+- [OneNote の開発者](http://go.microsoft.com/fwlink/?LinkID=390615)   
+- [GitHub のサンプル](https://github.com/OneNoteDev/)(OneNote サービス Api)     
+- [マイクロソフト製品のアクセシビリティ機能](http://www.microsoft.com/enable/products/default.aspx)    
+- [ドキュメントの表記規則](http://msdn.microsoft.com/en-us/office/aa905365.aspx)    
 - [OneNote の開発者リファレンスの著作権情報](https://msdn.microsoft.com/en-us/library/office/jj680116.aspx)
     
-- [Microsoft プライバシーに関する声明](http://privacy.microsoft.com/en-us/default.mspx)
     
 

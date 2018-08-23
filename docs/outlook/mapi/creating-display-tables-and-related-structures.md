@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: a8548040-13ed-4a9f-a7ca-de610f94d7df
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 177fe21537e921a4b94a34ad531847701b16c344
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e17306e2b90f26dcef0a0214e78080fe78752e5f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799858"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568568"
 ---
 # <a name="creating-display-tables-and-related-structures"></a>表示のテーブルと関連する構造体を作成します。
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 表示テーブルを作成することは、スクリプト言語でプログラムを記述に似ています。 [BuildDisplayTable](builddisplaytable.md)を呼び出すか、またはテーブルの列と行を作成するカスタム コードを作成するか、表示テーブルを作成することができます。 一般に、簡単であるために、 **BuildDisplayTable**テクニックを使用してください。 
   

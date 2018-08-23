@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 42cd946c-c55a-4371-99ee-05e2248fdd5f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ea24b5e721317668c8f43278a5e4c38d73b3e91c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e8370a613162e3bc8d4395a18e9a7e177255b9b3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803577"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567301"
 ---
 # <a name="pidtagstatusstring-canonical-property"></a>PidTagStatusString 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 セッション リソースの現在の状態を示すメッセージが含まれています。 
   

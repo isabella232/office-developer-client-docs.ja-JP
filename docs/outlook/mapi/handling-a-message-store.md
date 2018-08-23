@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 7eca0e1f-a855-4ef7-b892-0bddee59de5e
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f915a17b8271f7ec4173f507504bf165a6084085
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0712407a7882c449c065cb6816694b4a1611036f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800188"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568470"
 ---
 # <a name="handling-a-message-store"></a>メッセージ ストアの処理
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストアの処理は、任意のクライアントの一連のタスクの重要な部分です。 開く、コピー、移動、追加、およびフォルダーと、さまざまなテーブルを表示する、プロパティの設定、およびアクセス レベルを制御するメッセージを削除して、これらのタスクが含まれます。
 

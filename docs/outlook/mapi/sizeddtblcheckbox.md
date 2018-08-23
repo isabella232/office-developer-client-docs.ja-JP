@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: 9d04a124-54d4-43ac-967f-ea8e7a09b1d0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9a30554253bc11c8905273079429e4b41c20583a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6120439ea0d98ed6b64fe1542a4372265574723a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803915"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567532"
 ---
 # <a name="sizeddtblcheckbox"></a>SizedDtblCheckBox
  
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 チェック ボックス コントロールと指定した長さのラベルを記述するための[DTBLCHECKBOX](dtblcheckbox.md)構造体を含む名前付き構造体を作成します。 
   

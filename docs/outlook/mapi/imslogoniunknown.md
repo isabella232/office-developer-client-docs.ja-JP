@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d87093dc-f705-465f-ab3c-944ca0cd3e54
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 42e2633ac6d534be2c75c47b24c1da5ed9771e18
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 013903f36bf648c4aed194c88104e7dd981b199f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801056"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563941"
 ---
-# <a name="imslogon--iunknown"></a>IMSLogon: IUnknown
+# <a name="imslogon--iunknown"></a>IMSLogon : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージへのアクセスのリソースでは、ログオン オブジェクトを格納します。
   
@@ -48,7 +48,7 @@ ms.locfileid: "19801056"
 |[アドバイズ中止します。](imslogon-unadvise.md) <br/> |**IMSLogon::Advise**メソッドへの呼び出しを使用して、以前に確立されたメッセージ ストアの変更を通知するためのオブジェクトの登録を削除します。  <br/> |
 |[OpenStatusEntry](imslogon-openstatusentry.md) <br/> |状態オブジェクトを開きます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージ ストアのログオン オブジェクトは、MAPI を直接呼び出す、開いているメッセージ ストア プロバイダーの一部です。 MAPI 呼び出しとメッセージは、クライアント アプリケーションは、次の呼び出しはオブジェクトを格納するメッセージ ストア ログオン オブジェクトが 1 対 1 対応ログオンと思われるし、2 つのインターフェイスを公開する 1 つのオブジェクトとしてオブジェクトを格納できます。 2 つのオブジェクトは、同時解放と連携して作成されます。
   

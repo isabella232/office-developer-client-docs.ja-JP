@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9f4b4147-ed98-47cb-a799-ddf028f8e826
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ea95ea4efbbf50e5551a27eb81fe5d5ab3b73948
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 78fb610c5afc3cac4f6de84240f734e5ae196110
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800579"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565544"
 ---
 # <a name="imapimessagesitegetfolder"></a>IMAPIMessageSite::GetFolder
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このようなフォルダーが存在する場合は、フォルダーを現在のメッセージを作成または開いたを返します。 このメソッドは、埋め込みメッセージは、フォルダーに直接格納されていないために_ppFolder_パラメーターで NULL を返します。 
   

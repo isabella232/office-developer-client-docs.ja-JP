@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 2fcff3b3-01e7-4758-9c49-0af41abf0d6b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 57e6974219059c301786295b2d5e6b9a8fb724bc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2963e65f97534cbba368b909fef79c982e81ec26
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801295"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568526"
 ---
 # <a name="mapi-address-book-provider-objects"></a>MAPI アドレス帳プロバイダー オブジェクト
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 標準プロバイダーとログオン オブジェクトでは、他は、アドレス帳プロバイダーは、アドレス帳コンテナー、配布リスト、メッセージング ユーザー、テーブル、オブジェクトの状態、および制御を実装します。
   

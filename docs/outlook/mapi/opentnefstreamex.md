@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: eb84c408-2d8b-453b-92f4-5fd8851b84ca
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 52fd844954f41d5d09b5e78f7c23ff6f7469bb43
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b651a913855e99e2f26dfd99fb725cc332201932
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801704"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565187"
 ---
 # <a name="opentnefstreamex"></a>OpenTnefStreamEx
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 エンコードまたは TNEF データ ストリームを使用するメッセージ オブジェクトをデコードするトランスポートまたはゲートウェイとメッセージ ストアで使用できるトランスポート ニュートラル カプセル化形式 (TNEF) オブジェクトを作成します。 これは、TNEF のアクセスのエントリ ポイントです。 
   

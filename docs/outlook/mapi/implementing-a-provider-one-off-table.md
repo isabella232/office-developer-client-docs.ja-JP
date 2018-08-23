@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 8b0dcbfe-6bed-4fb8-a906-009f1d009055
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 99146f93dcf634be6766f5c6fcc0d1c610b84d4d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f484174bd0a83c9bb874bec4896fe3dd925405c7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800923"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568239"
 ---
 # <a name="implementing-a-provider-one-off-table"></a>プロバイダーの 1 回限りのテーブルの実装
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI は、クライアント アプリケーションのユーザーは、送信メッセージに受信者を追加するときに、プロバイダーの[IABLogon::GetOneOffTable](iablogon-getoneofftable.md)メソッドを呼び出します。 通常、要求されたアドレスの種類は、メッセージング システムに固有です。 プロバイダーは、受信者の作成をサポートする場合、サポートされている受信者のアドレスの種類ごとにテンプレートを公開する一時テーブルが必要です。 プロバイダーが受信者の作成をサポートしていない場合は、 **GetOneOffTable**の呼び出しから MAPI_E_NO_SUPPORT を返します。 
   

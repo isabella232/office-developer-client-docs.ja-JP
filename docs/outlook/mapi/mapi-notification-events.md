@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: ef082d7b-9b2d-4267-beb5-d3ed1d9c7bbf
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 76974c29f1d1efef376e6d23bb0d1f8b3b0d54c1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8acf197f305373c082ef411732d631535201d488
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801408"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567252"
 ---
 # <a name="mapi-notification-events"></a>MAPI 通知イベント
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアント アプリケーションは、イベント通知を登録するときに 1 つまたは複数のイベントを指定する必要があります。 イベントを指定することを意図したアドバイスのソースをサポートするイベントのセットによって異なります。 定数で表されるごとに、クライアントとサービス ・ プロバイダーを登録できる通知の 10 種類あります。 オブジェクトのステータスの通知は、例外です。 オブジェクトのステータスの通知は、内部の MAPI 通知です。クライアントを登録できませんし、サービス プロバイダーが生成できません。 次の表では、イベントとそれらをサポートするアドバイスのソース オブジェクトの種類について説明します。 イベント定数は、イベントの種類に含まれています。
   

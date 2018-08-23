@@ -1,5 +1,5 @@
 ---
-title: PidLidContactCharacterSet の標準的なプロパティ
+title: PidLidContactCharacterSet 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: a167e199-a9b2-47f9-a90e-2abc7c29828c
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 9706d1060347609708070140aae51d9dcadbb9c2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 70d8266bf0eb8543b9bea7d2258b576b6f02bcc2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801876"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567735"
 ---
-# <a name="pidlidcontactcharacterset-canonical-property"></a>PidLidContactCharacterSet の標準的なプロパティ
+# <a name="pidlidcontactcharacterset-canonical-property"></a>PidLidContactCharacterSet 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 この連絡先に使用する文字セットを指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidContactCharSet  <br/> |
+|関連するプロパティ:  <br/> |dispidContactCharSet  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Address  <br/> |
 |長い ID (LID):  <br/> |0x00008023  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
-|領域:  <br/> |連絡先  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
+|領域:  <br/> |Contact  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 アプリケーションは、 **dispidFileUnder** ([PidLidFileUnder](pidlidfileunder-canonical-property.md))、 **dispidFileUnderList** ([PidLidFileUnderList](pidlidfileunderlist-canonical-property.md)) と**dispidFileUnderId のオプションの文字セットの依存リストを生成する場合に支援するためにこのプロパティを使用することができます。**([PidLidFileUnderId](pidlidfileunderid-canonical-property.md)) のプロパティです。 プロパティの値が"0x00000000"または"0x00000001"の場合は、アプリケーションとして設定されていないプロパティを扱う必要があります。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 
