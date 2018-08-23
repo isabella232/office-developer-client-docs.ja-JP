@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: c611640b-1a70-4a76-b7ff-c8ad8d320892
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 49c9b0a80f9bc3b45dfafa6f4e037fe55af289d5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7019ef5e23d0325d43b17009137dd29a2ec95c0e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802483"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593537"
 ---
 # <a name="pidtagaddressbookhierarchicalrootdepartment"></a>PidTagAddressBookHierarchicalRootDepartment
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
  (HAB) の階層構造のアドレスのルートの識別名 (DN) が含まれています。 
   

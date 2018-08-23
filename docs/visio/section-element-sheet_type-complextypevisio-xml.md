@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2e7e5dcc-f667-a08c-caa0-4b81e3126ef9
 description: 関連するプロパティのコレクションを指定します。
-ms.openlocfilehash: 7cb5e1c30960e69b252abc7af38e021607fd3502
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c729ddd18da7b19499be72a71a9d0666791da207
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806365"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593523"
 ---
 # <a name="section-element-sheettype-complextype-visio-xml"></a>セクションの要素 (Sheet_Type complexType)'Visio XML (')
 
@@ -53,7 +53,7 @@ ms.locfileid: "19806365"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Cell](http://msdn.microsoft.com/library/70a9d6d6-a4ff-2b0d-febc-789a04a2f5b0%28Office.15%29.aspx) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |1 つのプロパティを指定します。  <br/> |
+|[Cell](cell-elementvisio-xml.md) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |1 つのプロパティを指定します。  <br/> |
 |[Row](http://msdn.microsoft.com/library/c978e3eb-b895-8fb7-e2ba-88c50e57b3db%28Office.15%29.aspx) <br/> |[Row_Type](row_type-complextypevisio-xml.md) <br/> |**Cell_Type**要素のコレクションを指定します。  <br/> |
    
 ### <a name="attributes"></a>属性
