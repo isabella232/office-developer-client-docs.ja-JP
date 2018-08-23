@@ -6,24 +6,24 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5f516e1a-e789-8085-1cc3-70514910eb26
-ms.openlocfilehash: 1da1418e2256f7750ac2e963bac0f78321233c99
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 670c060cc6f12c664eb615fffb8ec1234891f2b5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805354"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592137"
 ---
-# <a name="extensionstype-complextype-visio-xml"></a><span data-ttu-id="5e6fc-102">Extensions_Type complexType'Visio XML (')</span><span class="sxs-lookup"><span data-stu-id="5e6fc-102">Extensions_Type complexType ('Visio XML')</span></span>
+# <a name="extensionstype-complextype-visio-xml"></a><span data-ttu-id="6dcf6-102">Extensions_Type complexType'Visio XML (')</span><span class="sxs-lookup"><span data-stu-id="6dcf6-102">Extensions_Type complexType ('Visio XML')</span></span>
 
-## <a name="type-information"></a><span data-ttu-id="5e6fc-103">型情報</span><span class="sxs-lookup"><span data-stu-id="5e6fc-103">Type information</span></span>
+## <a name="type-information"></a><span data-ttu-id="6dcf6-103">型情報</span><span class="sxs-lookup"><span data-stu-id="6dcf6-103">Type information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="5e6fc-104">**名前空間**</span><span class="sxs-lookup"><span data-stu-id="5e6fc-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|<span data-ttu-id="5e6fc-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="5e6fc-105">**Schema file**</span></span> <br/> |<span data-ttu-id="5e6fc-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="5e6fc-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
-|<span data-ttu-id="5e6fc-107">**拡張ベース**</span><span class="sxs-lookup"><span data-stu-id="5e6fc-107">**Extension base**</span></span> <br/> |<span data-ttu-id="5e6fc-108">なし</span><span class="sxs-lookup"><span data-stu-id="5e6fc-108">None</span></span>  <br/> |
+|<span data-ttu-id="6dcf6-104">**名前空間**</span><span class="sxs-lookup"><span data-stu-id="6dcf6-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|<span data-ttu-id="6dcf6-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="6dcf6-105">**Schema file**</span></span> <br/> |<span data-ttu-id="6dcf6-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="6dcf6-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
+|<span data-ttu-id="6dcf6-107">**拡張ベース**</span><span class="sxs-lookup"><span data-stu-id="6dcf6-107">**Extension base**</span></span> <br/> |<span data-ttu-id="6dcf6-108">なし</span><span class="sxs-lookup"><span data-stu-id="6dcf6-108">None</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="5e6fc-109">定義</span><span class="sxs-lookup"><span data-stu-id="5e6fc-109">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="6dcf6-109">定義</span><span class="sxs-lookup"><span data-stu-id="6dcf6-109">Definition</span></span>
 
 ```XML
           <xs:complexType name="Extensions_Type">
@@ -52,20 +52,20 @@ ms.locfileid: "19805354"
       
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="5e6fc-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="5e6fc-110">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="6dcf6-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="6dcf6-110">Elements and attributes</span></span>
 
-<span data-ttu-id="5e6fc-111">スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="5e6fc-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="6dcf6-111">スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="6dcf6-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="child-elements"></a><span data-ttu-id="5e6fc-112">子要素</span><span class="sxs-lookup"><span data-stu-id="5e6fc-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="6dcf6-112">子要素</span><span class="sxs-lookup"><span data-stu-id="6dcf6-112">Child elements</span></span>
 
-|<span data-ttu-id="5e6fc-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="5e6fc-113">**Element**</span></span>|<span data-ttu-id="5e6fc-114">**型**</span><span class="sxs-lookup"><span data-stu-id="5e6fc-114">**Type**</span></span>|<span data-ttu-id="5e6fc-115">**説明**</span><span class="sxs-lookup"><span data-stu-id="5e6fc-115">**Description**</span></span>|
+|<span data-ttu-id="6dcf6-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="6dcf6-113">**Element**</span></span>|<span data-ttu-id="6dcf6-114">**型**</span><span class="sxs-lookup"><span data-stu-id="6dcf6-114">**Type**</span></span>|<span data-ttu-id="6dcf6-115">**説明**</span><span class="sxs-lookup"><span data-stu-id="6dcf6-115">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="5e6fc-116">CellDef</span><span class="sxs-lookup"><span data-stu-id="5e6fc-116">CellDef</span></span>](http://msdn.microsoft.com/library/8fb193f0-5c88-6891-1cda-f1df486aabfc%28Office.15%29.aspx) <br/> |[<span data-ttu-id="5e6fc-117">CellDef_Type</span><span class="sxs-lookup"><span data-stu-id="5e6fc-117">CellDef_Type</span></span>](celldef_type-complextypevisio-xml.md) <br/> ||
-|[<span data-ttu-id="5e6fc-118">FunctionDef</span><span class="sxs-lookup"><span data-stu-id="5e6fc-118">FunctionDef</span></span>](http://msdn.microsoft.com/library/dad99181-c14c-cce7-3883-106fe05f20a6%28Office.15%29.aspx) <br/> |[<span data-ttu-id="5e6fc-119">FunctionDef_Type</span><span class="sxs-lookup"><span data-stu-id="5e6fc-119">FunctionDef_Type</span></span>](functiondef_type-complextypevisio-xml.md) <br/> ||
-|[<span data-ttu-id="5e6fc-120">SectionDef</span><span class="sxs-lookup"><span data-stu-id="5e6fc-120">SectionDef</span></span>](http://msdn.microsoft.com/library/751da480-f387-4c68-6699-8948271c23ac%28Office.15%29.aspx) <br/> |[<span data-ttu-id="5e6fc-121">SectionDef_Type</span><span class="sxs-lookup"><span data-stu-id="5e6fc-121">SectionDef_Type</span></span>](sectiondef_type-complextypevisio-xml.md) <br/> ||
+|<span data-ttu-id="6dcf6-116">CellDef</span><span class="sxs-lookup"><span data-stu-id="6dcf6-116">CellDef</span></span> <br/> |[<span data-ttu-id="6dcf6-117">CellDef_Type</span><span class="sxs-lookup"><span data-stu-id="6dcf6-117">CellDef_Type</span></span>](celldef_type-complextypevisio-xml.md) <br/> ||
+|<span data-ttu-id="6dcf6-118">FunctionDef</span><span class="sxs-lookup"><span data-stu-id="6dcf6-118">FunctionDef</span></span> <br/> |[<span data-ttu-id="6dcf6-119">FunctionDef_Type</span><span class="sxs-lookup"><span data-stu-id="6dcf6-119">FunctionDef_Type</span></span>](functiondef_type-complextypevisio-xml.md) <br/> ||
+|<span data-ttu-id="6dcf6-120">SectionDef</span><span class="sxs-lookup"><span data-stu-id="6dcf6-120">SectionDef</span></span> <br/> |[<span data-ttu-id="6dcf6-121">SectionDef_Type</span><span class="sxs-lookup"><span data-stu-id="6dcf6-121">SectionDef_Type</span></span>](sectiondef_type-complextypevisio-xml.md) <br/> ||
    
-### <a name="attributes"></a><span data-ttu-id="5e6fc-122">属性</span><span class="sxs-lookup"><span data-stu-id="5e6fc-122">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="6dcf6-122">属性</span><span class="sxs-lookup"><span data-stu-id="6dcf6-122">Attributes</span></span>
 
-<span data-ttu-id="5e6fc-123">なし。</span><span class="sxs-lookup"><span data-stu-id="5e6fc-123">None.</span></span>
+<span data-ttu-id="6dcf6-123">なし。</span><span class="sxs-lookup"><span data-stu-id="6dcf6-123">None.</span></span>
   
 

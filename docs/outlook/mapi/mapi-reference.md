@@ -9,56 +9,39 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 807d1b76-ccc1-4cbe-bbe3-5d5cadffbef4
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 8e85db25df01deb295f88a9352451395ddf96cdd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: MAPI のプログラミング要素について説明します。
+ms.openlocfilehash: a3f489754eb06792c64cc271a5f1dc8e43c842a3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801450"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585914"
 ---
-# <a name="mapi-reference"></a><span data-ttu-id="c5142-103">MAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="c5142-103">MAPI Reference</span></span>
+# <a name="mapi-reference"></a><span data-ttu-id="bf632-103">MAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="bf632-103">MAPI Reference</span></span>
+ 
+<span data-ttu-id="bf632-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="bf632-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+  
+<span data-ttu-id="bf632-105">ここでは、MAPI のプログラミング要素を説明します。</span><span class="sxs-lookup"><span data-stu-id="bf632-105">This section documents the MAPI programming elements.</span></span>
+  
+## <a name="in-this-section"></a><span data-ttu-id="bf632-106">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="bf632-106">In this section</span></span>
 
-  
-  
-<span data-ttu-id="c5142-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="c5142-104">**Applies to**: Outlook</span></span> 
-  
-<span data-ttu-id="c5142-105">ここでは、MAPI のプログラミング要素を説明します。</span><span class="sxs-lookup"><span data-stu-id="c5142-105">This section documents the MAPI programming elements.</span></span>
-  
-## <a name="in-this-section"></a><span data-ttu-id="c5142-106">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="c5142-106">In this section</span></span>
+- [<span data-ttu-id="bf632-107">MAPI インターフェイス</span><span class="sxs-lookup"><span data-stu-id="bf632-107">MAPI Interfaces</span></span>](mapi-interfaces.md)
+    
+- [<span data-ttu-id="bf632-108">MAPI の関数、コールバック、およびマクロ</span><span class="sxs-lookup"><span data-stu-id="bf632-108">MAPI Functions, Callbacks, and Macros</span></span>](mapi-functions-callbacks-and-macros.md)
+    
+- [<span data-ttu-id="bf632-109">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="bf632-109">MAPI Properties</span></span>](mapi-properties.md)
+    
+- [<span data-ttu-id="bf632-110">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="bf632-110">MAPI Structures</span></span>](mapi-structures.md)
+    
+- [<span data-ttu-id="bf632-111">構造体に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="bf632-111">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+    
+- [<span data-ttu-id="bf632-112">MAPI データ型</span><span class="sxs-lookup"><span data-stu-id="bf632-112">MAPI Data Types</span></span>](mapi-data-types.md)
+    
+## <a name="related-sections"></a><span data-ttu-id="bf632-113">関連情報</span><span class="sxs-lookup"><span data-stu-id="bf632-113">Related sections</span></span>
 
-[<span data-ttu-id="c5142-107">MAPI インターフェイス</span><span class="sxs-lookup"><span data-stu-id="c5142-107">MAPI Interfaces</span></span>](mapi-interfaces.md)
-  
-> <span data-ttu-id="c5142-108">MAPI インターフェイス、およびインターフェイスのメソッドに関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="c5142-108">Contains information about the MAPI interfaces and interface methods.</span></span>
-    
-[<span data-ttu-id="c5142-109">MAPI の関数、コールバック、およびマクロ</span><span class="sxs-lookup"><span data-stu-id="c5142-109">MAPI Functions, Callbacks, and Macros</span></span>](mapi-functions-callbacks-and-macros.md)
-  
-> <span data-ttu-id="c5142-110">機能、コールバック、および MAPI で使用されているマクロに関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="c5142-110">Contains information about the functions, callbacks, and macros used in MAPI.</span></span>
-    
-[<span data-ttu-id="c5142-111">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="c5142-111">MAPI Properties</span></span>](mapi-properties.md)
-  
-> <span data-ttu-id="c5142-112">MAPI のプロパティに関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="c5142-112">Contains information about MAPI properties.</span></span>
-    
-[<span data-ttu-id="c5142-113">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="c5142-113">MAPI Structures</span></span>](mapi-structures.md)
-  
-> <span data-ttu-id="c5142-114">MAPI で使用されている構造体に関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="c5142-114">Contains information about the structures used in MAPI.</span></span>
-    
-[<span data-ttu-id="c5142-115">構造体に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="c5142-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
-  
-> <span data-ttu-id="c5142-116">MAPI で使用される構造体に関連するマクロについての情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="c5142-116">Contains information about the macros related to structures used in MAPI.</span></span>
-    
-[<span data-ttu-id="c5142-117">MAPI データ型</span><span class="sxs-lookup"><span data-stu-id="c5142-117">MAPI Data Types</span></span>](mapi-data-types.md)
-  
-> <span data-ttu-id="c5142-118">MAPI で使用されるデータ型に関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="c5142-118">Contains information about the data types used in MAPI.</span></span>
-    
-## <a name="related-sections"></a><span data-ttu-id="c5142-119">関連情報</span><span class="sxs-lookup"><span data-stu-id="c5142-119">Related sections</span></span>
-
-[<span data-ttu-id="c5142-120">Outlook MAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="c5142-120">Outlook MAPI Reference</span></span>](outlook-mapi-reference.md)
-  
-[<span data-ttu-id="c5142-121">Outlook MAPI リファレンスの概要</span><span class="sxs-lookup"><span data-stu-id="c5142-121">Getting Started with the Outlook MAPI Reference</span></span>](getting-started-with-the-outlook-mapi-reference.md)
-  
-[<span data-ttu-id="c5142-122">MAPI Samples</span><span class="sxs-lookup"><span data-stu-id="c5142-122">MAPI Samples</span></span>](mapi-samples.md)
-  
-[<span data-ttu-id="c5142-123">MAPI �̊T�O</span><span class="sxs-lookup"><span data-stu-id="c5142-123">MAPI Concepts</span></span>](mapi-concepts.md)
+- [<span data-ttu-id="bf632-114">Outlook MAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="bf632-114">Outlook MAPI Reference</span></span>](outlook-mapi-reference.md) 
+- [<span data-ttu-id="bf632-115">Outlook MAPI リファレンスの概要</span><span class="sxs-lookup"><span data-stu-id="bf632-115">Getting Started with the Outlook MAPI Reference</span></span>](getting-started-with-the-outlook-mapi-reference.md)
+- [<span data-ttu-id="bf632-116">MAPI Samples</span><span class="sxs-lookup"><span data-stu-id="bf632-116">MAPI Samples</span></span>](mapi-samples.md)
+- [<span data-ttu-id="bf632-117">MAPI �̊T�O</span><span class="sxs-lookup"><span data-stu-id="bf632-117">MAPI Concepts</span></span>](mapi-concepts.md)
   
 

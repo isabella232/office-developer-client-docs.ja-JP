@@ -8,17 +8,17 @@ api_type:
 - COM
 ms.assetid: a0aac5e9-4d66-41fc-a2da-dec6ab1f1035
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2ef05fdc6e7eb72021b6079e5bfe53aaa0749f13
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 96cc758074586b180c47afab2ad8f63c11d49df5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799732"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585886"
 ---
-# <a name="attoriginalmessageclass"></a><span data-ttu-id="1a788-103">attOriginalMessageClass</span><span class="sxs-lookup"><span data-stu-id="1a788-103">attOriginalMessageClass</span></span>
+# <a name="attoriginalmessageclass"></a><span data-ttu-id="13b2b-103">attOriginalMessageClass</span><span class="sxs-lookup"><span data-stu-id="13b2b-103">attOriginalMessageClass</span></span>
 
-<span data-ttu-id="1a788-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="1a788-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="13b2b-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="13b2b-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="1a788-105">メッセージ クラスは、文字列として格納されます。</span><span class="sxs-lookup"><span data-stu-id="1a788-105">A message class is stored as a string.</span></span> <span data-ttu-id="1a788-106">エンコードされた文字列は、通常、MAPI が指定したクラスの名前、メッセージを保持します。</span><span class="sxs-lookup"><span data-stu-id="1a788-106">The encoded string usually holds the MAPI-specified name of the message class.</span></span>
+<span data-ttu-id="13b2b-105">メッセージ クラスは、文字列として格納されます。</span><span class="sxs-lookup"><span data-stu-id="13b2b-105">A message class is stored as a string.</span></span> <span data-ttu-id="13b2b-106">エンコードされた文字列は、通常、MAPI が指定したクラスの名前、メッセージを保持します。</span><span class="sxs-lookup"><span data-stu-id="13b2b-106">The encoded string usually holds the MAPI-specified name of the message class.</span></span>
   
 

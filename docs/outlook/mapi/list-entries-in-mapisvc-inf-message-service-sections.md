@@ -8,20 +8,20 @@ api_type:
 - COM
 ms.assetid: f4f052d6-ef63-421a-9d8c-4f3c6df83863
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: cfb06e8dd305add6049d035c44685be047dc744f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c5b5c468b56e5b34d265e7f00bbee96142a88e1c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801271"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591122"
 ---
-# <a name="list-entries-in-mapisvcinf-message-service-sections"></a><span data-ttu-id="7cb34-103">MapiSvc.inf メッセージ サービス セクションのリスト エントリ</span><span class="sxs-lookup"><span data-stu-id="7cb34-103">List Entries in MapiSvc.inf Message Service Sections</span></span>
+# <a name="list-entries-in-mapisvcinf-message-service-sections"></a><span data-ttu-id="80818-103">MapiSvc.inf メッセージ サービス セクションのリスト エントリ</span><span class="sxs-lookup"><span data-stu-id="80818-103">List Entries in MapiSvc.inf Message Service Sections</span></span>
 
   
   
-<span data-ttu-id="7cb34-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="7cb34-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="80818-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="80818-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="7cb34-105">セクションのリストのエントリの 2 種類があります: サービス プロバイダー セクションおよびその他のメッセージ サービスに固有のセクションを一覧表示する一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="7cb34-105">There are two types of section list entries: one that lists service provider sections and one that lists miscellaneous message service-specific sections.</span></span> <span data-ttu-id="7cb34-106">Mapisvc.inf の以下のファイル形式でこれらの 2 種類のエントリが表示されます。</span><span class="sxs-lookup"><span data-stu-id="7cb34-106">These two types of entries appear in mapisvc.inf using the following formats:</span></span>
+<span data-ttu-id="80818-105">セクションのリストのエントリの 2 種類があります: サービス プロバイダー セクションおよびその他のメッセージ サービスに固有のセクションを一覧表示する一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="80818-105">There are two types of section list entries: one that lists service provider sections and one that lists miscellaneous message service-specific sections.</span></span> <span data-ttu-id="80818-106">Mapisvc.inf の以下のファイル形式でこれらの 2 種類のエントリが表示されます。</span><span class="sxs-lookup"><span data-stu-id="80818-106">These two types of entries appear in mapisvc.inf using the following formats:</span></span>
   
 ```cpp
 Providersprovider section1, provider section2, ...... provider sectionX
@@ -29,9 +29,9 @@ Sectionssection name1, section name2, ......section nameX
 
 ```
 
-<span data-ttu-id="7cb34-107">**プロバイダー**エントリ内の各セクションは、メッセージ サービスが属するサービス ・ プロバイダーの構成情報を提供する個々 のセクションにマップされます。</span><span class="sxs-lookup"><span data-stu-id="7cb34-107">Each section in the **Providers** entry maps to an individual section providing configuration information for a service provider that belongs to the message service.</span></span> <span data-ttu-id="7cb34-108">**セクション**エントリ内の各セクションは、メッセージ サービスで必要となる余分な構成情報を含むセクションにマップされます。</span><span class="sxs-lookup"><span data-stu-id="7cb34-108">Each section in the **Sections** entry maps to a section that contains extra configuration information needed by the message service.</span></span> <span data-ttu-id="7cb34-109">メッセージ サービスの実装者は、標準のセクションに適合しない特殊な情報が含まれている場合、余分なセクションを定義します。</span><span class="sxs-lookup"><span data-stu-id="7cb34-109">Message service implementers define extra sections when they want to include special information that does not fit in the standard sections.</span></span> <span data-ttu-id="7cb34-110">複雑な構成通常メッセージ サービスでは、余分な情報を追加するのに**セクション**のエントリを使用します。</span><span class="sxs-lookup"><span data-stu-id="7cb34-110">Message services that have complicated configurations typically use the **Sections** entry to add extra information.</span></span> <span data-ttu-id="7cb34-111">メッセージ サービスのすべてのセクションには、**プロバイダー**のエントリのリストに少なくとも 1 つのセクションでメッセージ サービスのすべてのセクションでは、**セクション**のエントリがあります。</span><span class="sxs-lookup"><span data-stu-id="7cb34-111">Every message services section has a **Providers** entry with at least one section in the list; not all message service sections have a **Sections** entry.</span></span> 
+<span data-ttu-id="80818-107">**プロバイダー**エントリ内の各セクションは、メッセージ サービスが属するサービス ・ プロバイダーの構成情報を提供する個々 のセクションにマップされます。</span><span class="sxs-lookup"><span data-stu-id="80818-107">Each section in the **Providers** entry maps to an individual section providing configuration information for a service provider that belongs to the message service.</span></span> <span data-ttu-id="80818-108">**セクション**エントリ内の各セクションは、メッセージ サービスで必要となる余分な構成情報を含むセクションにマップされます。</span><span class="sxs-lookup"><span data-stu-id="80818-108">Each section in the **Sections** entry maps to a section that contains extra configuration information needed by the message service.</span></span> <span data-ttu-id="80818-109">メッセージ サービスの実装者は、標準のセクションに適合しない特殊な情報が含まれている場合、余分なセクションを定義します。</span><span class="sxs-lookup"><span data-stu-id="80818-109">Message service implementers define extra sections when they want to include special information that does not fit in the standard sections.</span></span> <span data-ttu-id="80818-110">複雑な構成通常メッセージ サービスでは、余分な情報を追加するのに**セクション**のエントリを使用します。</span><span class="sxs-lookup"><span data-stu-id="80818-110">Message services that have complicated configurations typically use the **Sections** entry to add extra information.</span></span> <span data-ttu-id="80818-111">メッセージ サービスのすべてのセクションには、**プロバイダー**のエントリのリストに少なくとも 1 つのセクションでメッセージ サービスのすべてのセクションでは、**セクション**のエントリがあります。</span><span class="sxs-lookup"><span data-stu-id="80818-111">Every message services section has a **Providers** entry with at least one section in the list; not all message service sections have a **Sections** entry.</span></span> 
   
-<span data-ttu-id="7cb34-112">メッセージ サービスのセクションの 2 つの例に従います。</span><span class="sxs-lookup"><span data-stu-id="7cb34-112">Two examples of message service sections follow.</span></span> <span data-ttu-id="7cb34-113">最初のセクションでは、図では、1 つのサービス プロバイダーの簡単なメッセージ サービスからアドレス帳の既定のサービスのこと。</span><span class="sxs-lookup"><span data-stu-id="7cb34-113">The first section is for the Default Address Book service from the earlier illustration, a straightforward message service with a single service provider.</span></span> <span data-ttu-id="7cb34-114">2 番目のセクションは、MsgService サービスは、次の 3 つのサービス プロバイダーとのより複雑なサンプル メッセージ サービスです。</span><span class="sxs-lookup"><span data-stu-id="7cb34-114">The second section is for the MsgService service, a more complex sample message service with three service providers.</span></span> 
+<span data-ttu-id="80818-112">メッセージ サービスのセクションの 2 つの例に従います。</span><span class="sxs-lookup"><span data-stu-id="80818-112">Two examples of message service sections follow.</span></span> <span data-ttu-id="80818-113">最初のセクションでは、図では、1 つのサービス プロバイダーの簡単なメッセージ サービスからアドレス帳の既定のサービスのこと。</span><span class="sxs-lookup"><span data-stu-id="80818-113">The first section is for the Default Address Book service from the earlier illustration, a straightforward message service with a single service provider.</span></span> <span data-ttu-id="80818-114">2 番目のセクションは、MsgService サービスは、次の 3 つのサービス プロバイダーとのより複雑なサンプル メッセージ サービスです。</span><span class="sxs-lookup"><span data-stu-id="80818-114">The second section is for the MsgService service, a more complex sample message service with three service providers.</span></span> 
   
 ```cpp
 [AB]
@@ -53,7 +53,7 @@ PR_RESOURCE_FLAGS=SERVICE_SINGLE_COPY
 
 ```
 
-<span data-ttu-id="7cb34-115">**[MsgService]** セクションの**セクション**のエントリの一覧の他の 2 つのセクション、1 つと呼ばれる **[First_Special_Section]** と **[Second_Special_Section]** と呼ばれる別のです。</span><span class="sxs-lookup"><span data-stu-id="7cb34-115">The **Sections** entry in the **[MsgService]** section lists two additional sections, one called **[First_Special_Section]** and the other called **[Second_Special_Section]**.</span></span> <span data-ttu-id="7cb34-116">余分なセクション内に表示されるデータは、特定のメッセージ サービスに有効です。</span><span class="sxs-lookup"><span data-stu-id="7cb34-116">The data that might appear in extra sections is meaningful to the specific message service.</span></span> <span data-ttu-id="7cb34-117">これらのセクションには、余分なセクションを説明するために次の情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="7cb34-117">These sections appear following to illustrate extra sections.</span></span> 
+<span data-ttu-id="80818-115">**[MsgService]** セクションの**セクション**のエントリの一覧の他の 2 つのセクション、1 つと呼ばれる **[First_Special_Section]** と **[Second_Special_Section]** と呼ばれる別のです。</span><span class="sxs-lookup"><span data-stu-id="80818-115">The **Sections** entry in the **[MsgService]** section lists two additional sections, one called **[First_Special_Section]** and the other called **[Second_Special_Section]**.</span></span> <span data-ttu-id="80818-116">余分なセクション内に表示されるデータは、特定のメッセージ サービスに有効です。</span><span class="sxs-lookup"><span data-stu-id="80818-116">The data that might appear in extra sections is meaningful to the specific message service.</span></span> <span data-ttu-id="80818-117">これらのセクションには、余分なセクションを説明するために次の情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="80818-117">These sections appear following to illustrate extra sections.</span></span> 
   
 ```cpp
 [First_Special_Section]

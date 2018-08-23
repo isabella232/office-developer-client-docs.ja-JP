@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 2a5fcf5c-8a5a-4774-b8c9-1ac1ff27947d
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 868f38eaf52d3d0a3787623983a4a587de8fdc3b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2ec8a28dc52e2aa1f1fa63410b6bd6c13fb5bd57
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800404"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583989"
 ---
-# <a name="icontabadminremovestore"></a><span data-ttu-id="e42ae-103">IContabAdmin::RemoveStore</span><span class="sxs-lookup"><span data-stu-id="e42ae-103">IContabAdmin::RemoveStore</span></span>
+# <a name="icontabadminremovestore"></a><span data-ttu-id="c4fb9-103">IContabAdmin::RemoveStore</span><span class="sxs-lookup"><span data-stu-id="c4fb9-103">IContabAdmin::RemoveStore</span></span>
 
   
   
-<span data-ttu-id="e42ae-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="e42ae-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="c4fb9-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c4fb9-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="e42ae-105">連絡先アドレス帳 (CAB) のアドレス帳の階層から指定されたエントリ ID で指定されたを削除します。</span><span class="sxs-lookup"><span data-stu-id="e42ae-105">Removes the Contact Address Book (CAB) specified by the given entry ID from the address book hierarchy.</span></span>
+<span data-ttu-id="c4fb9-105">連絡先アドレス帳 (CAB) のアドレス帳の階層から指定されたエントリ ID で指定されたを削除します。</span><span class="sxs-lookup"><span data-stu-id="c4fb9-105">Removes the Contact Address Book (CAB) specified by the given entry ID from the address book hierarchy.</span></span>
   
 ```cpp
 HRESULT RemoveStore(
@@ -34,14 +34,14 @@ LPENTRYID lpEntryID
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="e42ae-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="e42ae-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="c4fb9-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="c4fb9-106">Parameters</span></span>
 
- <span data-ttu-id="e42ae-107">_cbEntryID_</span><span class="sxs-lookup"><span data-stu-id="e42ae-107">_cbEntryID_</span></span>
+ <span data-ttu-id="c4fb9-107">_cbEntryID_</span><span class="sxs-lookup"><span data-stu-id="c4fb9-107">_cbEntryID_</span></span>
   
-> <span data-ttu-id="e42ae-108">[in]_LpEntryID_パラメーターで指定されたエントリの識別子のバイト数です。</span><span class="sxs-lookup"><span data-stu-id="e42ae-108">[in] The byte count in the entry identifier pointed to by the  _lpEntryID_ parameter.</span></span> 
+> <span data-ttu-id="c4fb9-108">[in]_LpEntryID_パラメーターで指定されたエントリの識別子のバイト数です。</span><span class="sxs-lookup"><span data-stu-id="c4fb9-108">[in] The byte count in the entry identifier pointed to by the  _lpEntryID_ parameter.</span></span> 
     
- <span data-ttu-id="e42ae-109">_lpEntryID_</span><span class="sxs-lookup"><span data-stu-id="e42ae-109">_lpEntryID_</span></span>
+ <span data-ttu-id="c4fb9-109">_lpEntryID_</span><span class="sxs-lookup"><span data-stu-id="c4fb9-109">_lpEntryID_</span></span>
   
-> <span data-ttu-id="e42ae-110">[in]開くにはオブジェクトのエントリの識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="e42ae-110">[in] A pointer to the entry identifier of the object to open.</span></span>
+> <span data-ttu-id="c4fb9-110">[in]開くにはオブジェクトのエントリの識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="c4fb9-110">[in] A pointer to the entry identifier of the object to open.</span></span>
     
 

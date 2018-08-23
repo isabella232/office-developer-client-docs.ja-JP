@@ -12,42 +12,42 @@ api_type:
 - COM
 ms.assetid: c14d1012-f3d4-47eb-8a90-3160331f94e8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fb7a8ea39d6e7b1d7df1560658ceb67a79d39d92
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8e2e7a3f9279485d862fac5bb6413b3d3eb1343e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800807"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589085"
 ---
-# <a name="imapisync--iunknown"></a><span data-ttu-id="b28c1-103">IMAPISync : IUnknown</span><span class="sxs-lookup"><span data-stu-id="b28c1-103">IMAPISync : IUnknown</span></span>
+# <a name="imapisync--iunknown"></a><span data-ttu-id="67aaf-103">IMAPISync : IUnknown</span><span class="sxs-lookup"><span data-stu-id="67aaf-103">IMAPISync : IUnknown</span></span>
 
   
   
-<span data-ttu-id="b28c1-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="b28c1-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="67aaf-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="67aaf-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="b28c1-105">トランスポート API を使用する代わりに e メールを同期するためのメカニズムを提供します。</span><span class="sxs-lookup"><span data-stu-id="b28c1-105">Provides a mechanism for synchronizing email instead of using the Transport API.</span></span> <span data-ttu-id="b28c1-106">ストア オブジェクトには、このインターフェイスは公開されています。</span><span class="sxs-lookup"><span data-stu-id="b28c1-106">This interface is exposed on a store object.</span></span> <span data-ttu-id="b28c1-107">このインターフェイスを使用して、 [IMAPISyncProgressCallback: IUnknown](imapisyncprogresscallbackiunknown.md)トランスポート プロバイダーより良い進行状況を提供できるし、エラー メッセージよりも、Microsoft Outlook で [送受信] ダイアログ ボックスに表示されます。</span><span class="sxs-lookup"><span data-stu-id="b28c1-107">By using this interface and [IMAPISyncProgressCallback : IUnknown](imapisyncprogresscallbackiunknown.md), a transport provider can provide better progress and error messages than those that appear in the Send/Receive dialog in Microsoft Outlook.</span></span>
+<span data-ttu-id="67aaf-105">トランスポート API を使用する代わりに e メールを同期するためのメカニズムを提供します。</span><span class="sxs-lookup"><span data-stu-id="67aaf-105">Provides a mechanism for synchronizing email instead of using the Transport API.</span></span> <span data-ttu-id="67aaf-106">ストア オブジェクトには、このインターフェイスは公開されています。</span><span class="sxs-lookup"><span data-stu-id="67aaf-106">This interface is exposed on a store object.</span></span> <span data-ttu-id="67aaf-107">このインターフェイスを使用して、 [IMAPISyncProgressCallback: IUnknown](imapisyncprogresscallbackiunknown.md)トランスポート プロバイダーより良い進行状況を提供できるし、エラー メッセージよりも、Microsoft Outlook で [送受信] ダイアログ ボックスに表示されます。</span><span class="sxs-lookup"><span data-stu-id="67aaf-107">By using this interface and [IMAPISyncProgressCallback : IUnknown](imapisyncprogresscallbackiunknown.md), a transport provider can provide better progress and error messages than those that appear in the Send/Receive dialog in Microsoft Outlook.</span></span>
   
-<span data-ttu-id="b28c1-108">[送信トレイ] は、既定のストアにまだが。</span><span class="sxs-lookup"><span data-stu-id="b28c1-108">The outbox is still in the default store.</span></span> <span data-ttu-id="b28c1-109">トランスポート Api を使用して送信するメッセージは、外部ストアにすることはできませんので、メールを送信するのには、outlook が続行されます。</span><span class="sxs-lookup"><span data-stu-id="b28c1-109">Outlook will continue to use the Transport APIs to send mail because the outgoing message cannot be in the external store.</span></span>
+<span data-ttu-id="67aaf-108">[送信トレイ] は、既定のストアにまだが。</span><span class="sxs-lookup"><span data-stu-id="67aaf-108">The outbox is still in the default store.</span></span> <span data-ttu-id="67aaf-109">トランスポート Api を使用して送信するメッセージは、外部ストアにすることはできませんので、メールを送信するのには、outlook が続行されます。</span><span class="sxs-lookup"><span data-stu-id="67aaf-109">Outlook will continue to use the Transport APIs to send mail because the outgoing message cannot be in the external store.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="b28c1-110">によって公開されます。</span><span class="sxs-lookup"><span data-stu-id="b28c1-110">Exposed by:</span></span>  <br/> |<span data-ttu-id="b28c1-111">ストアおよびトランスポート プロバイダー</span><span class="sxs-lookup"><span data-stu-id="b28c1-111">Store and transport providers</span></span>  <br/> |
-|<span data-ttu-id="b28c1-112">によって実装されます。</span><span class="sxs-lookup"><span data-stu-id="b28c1-112">Implemented by:</span></span>  <br/> |<span data-ttu-id="b28c1-113">Outlook</span><span class="sxs-lookup"><span data-stu-id="b28c1-113">Outlook</span></span>  <br/> |
-|<span data-ttu-id="b28c1-114">によって呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="b28c1-114">Called by:</span></span>  <br/> |<span data-ttu-id="b28c1-115">ストアおよびトランスポート プロバイダー</span><span class="sxs-lookup"><span data-stu-id="b28c1-115">Store and Transport providers</span></span>  <br/> |
-|<span data-ttu-id="b28c1-116">インターフェイスの識別子。</span><span class="sxs-lookup"><span data-stu-id="b28c1-116">Interface identifier:</span></span>  <br/> |<span data-ttu-id="b28c1-117">IID_IMAPISync</span><span class="sxs-lookup"><span data-stu-id="b28c1-117">IID_IMAPISync</span></span>  <br/> |
+|<span data-ttu-id="67aaf-110">によって公開されます。</span><span class="sxs-lookup"><span data-stu-id="67aaf-110">Exposed by:</span></span>  <br/> |<span data-ttu-id="67aaf-111">ストアおよびトランスポート プロバイダー</span><span class="sxs-lookup"><span data-stu-id="67aaf-111">Store and transport providers</span></span>  <br/> |
+|<span data-ttu-id="67aaf-112">によって実装されます。</span><span class="sxs-lookup"><span data-stu-id="67aaf-112">Implemented by:</span></span>  <br/> |<span data-ttu-id="67aaf-113">Outlook</span><span class="sxs-lookup"><span data-stu-id="67aaf-113">Outlook</span></span>  <br/> |
+|<span data-ttu-id="67aaf-114">によって呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="67aaf-114">Called by:</span></span>  <br/> |<span data-ttu-id="67aaf-115">ストアおよびトランスポート プロバイダー</span><span class="sxs-lookup"><span data-stu-id="67aaf-115">Store and Transport providers</span></span>  <br/> |
+|<span data-ttu-id="67aaf-116">インターフェイスの識別子。</span><span class="sxs-lookup"><span data-stu-id="67aaf-116">Interface identifier:</span></span>  <br/> |<span data-ttu-id="67aaf-117">IID_IMAPISync</span><span class="sxs-lookup"><span data-stu-id="67aaf-117">IID_IMAPISync</span></span>  <br/> |
    
-## <a name="vtable-order"></a><span data-ttu-id="b28c1-118">Vtable の順序</span><span class="sxs-lookup"><span data-stu-id="b28c1-118">Vtable order</span></span>
+## <a name="vtable-order"></a><span data-ttu-id="67aaf-118">Vtable の順序</span><span class="sxs-lookup"><span data-stu-id="67aaf-118">Vtable order</span></span>
 
 |||
 |:-----|:-----|
-|[<span data-ttu-id="b28c1-119">SynchronizeInBackground</span><span class="sxs-lookup"><span data-stu-id="b28c1-119">SynchronizeInBackground</span></span>](imapisyncsynchronizeinbackground.md) <br/> |<span data-ttu-id="b28c1-120">メッセージ ストア プロバイダーによって実装されます。</span><span class="sxs-lookup"><span data-stu-id="b28c1-120">Implemented by message store providers.</span></span> <span data-ttu-id="b28c1-121">このメソッドは同期を開始するには、Outlook 2010、Outlook 2013 で呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="b28c1-121">This method is called by Outlook 2010 and Outlook 2013 to start synchronization.</span></span>  <br/> |
+|[<span data-ttu-id="67aaf-119">SynchronizeInBackground</span><span class="sxs-lookup"><span data-stu-id="67aaf-119">SynchronizeInBackground</span></span>](imapisyncsynchronizeinbackground.md) <br/> |<span data-ttu-id="67aaf-120">メッセージ ストア プロバイダーによって実装されます。</span><span class="sxs-lookup"><span data-stu-id="67aaf-120">Implemented by message store providers.</span></span> <span data-ttu-id="67aaf-121">このメソッドは同期を開始するには、Outlook 2010、Outlook 2013 で呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="67aaf-121">This method is called by Outlook 2010 and Outlook 2013 to start synchronization.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="b28c1-122">関連項目</span><span class="sxs-lookup"><span data-stu-id="b28c1-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="67aaf-122">関連項目</span><span class="sxs-lookup"><span data-stu-id="67aaf-122">See also</span></span>
 
 
 
-[<span data-ttu-id="b28c1-123">IMAPISyncProgressCallback : IUnknown</span><span class="sxs-lookup"><span data-stu-id="b28c1-123">IMAPISyncProgressCallback : IUnknown</span></span>](imapisyncprogresscallbackiunknown.md)
+[<span data-ttu-id="67aaf-123">IMAPISyncProgressCallback : IUnknown</span><span class="sxs-lookup"><span data-stu-id="67aaf-123">IMAPISyncProgressCallback : IUnknown</span></span>](imapisyncprogresscallbackiunknown.md)
 
 
-[<span data-ttu-id="b28c1-124">MAPI インターフェイス</span><span class="sxs-lookup"><span data-stu-id="b28c1-124">MAPI Interfaces</span></span>](mapi-interfaces.md)
+[<span data-ttu-id="67aaf-124">MAPI インターフェイス</span><span class="sxs-lookup"><span data-stu-id="67aaf-124">MAPI Interfaces</span></span>](mapi-interfaces.md)
 

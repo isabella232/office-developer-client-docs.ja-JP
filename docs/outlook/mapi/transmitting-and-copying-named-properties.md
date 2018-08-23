@@ -8,28 +8,28 @@ api_type:
 - COM
 ms.assetid: 37075cfc-461d-4983-9045-d9f1da6739be
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a5d2244270463fcc2fe0a9786112590e741a8a66
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1c225712e354d72b79313ee4c3f36da55f11b0a3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804125"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587517"
 ---
-# <a name="transmitting-and-copying-named-properties"></a><span data-ttu-id="02bd9-103">名前付きプロパティの送信とコピー</span><span class="sxs-lookup"><span data-stu-id="02bd9-103">Transmitting and Copying Named Properties</span></span>
+# <a name="transmitting-and-copying-named-properties"></a><span data-ttu-id="d7afc-103">名前付きプロパティの送信とコピー</span><span class="sxs-lookup"><span data-stu-id="d7afc-103">Transmitting and Copying Named Properties</span></span>
 
   
   
-<span data-ttu-id="02bd9-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="02bd9-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="d7afc-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d7afc-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="02bd9-105">名前付きプロパティが送信されるたびに移動すると、コピー、または、名前は変わりませんが目的のオブジェクトへのマッピングに準拠する識別子を変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="02bd9-105">Whenever a named property is sent, moved, or copied, the name remains constant but the identifier must change to adhere to the mapping of the destination object.</span></span> <span data-ttu-id="02bd9-106">この規則の唯一の例外は、ソースとターゲットのシグネチャを持つ、同じマッピング、ときに再マッピングを不要にすることです。</span><span class="sxs-lookup"><span data-stu-id="02bd9-106">The only exception to this rule is when the source and destination have the same mapping signature, making remapping unnecessary.</span></span>
+<span data-ttu-id="d7afc-105">名前付きプロパティが送信されるたびに移動すると、コピー、または、名前は変わりませんが目的のオブジェクトへのマッピングに準拠する識別子を変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d7afc-105">Whenever a named property is sent, moved, or copied, the name remains constant but the identifier must change to adhere to the mapping of the destination object.</span></span> <span data-ttu-id="d7afc-106">この規則の唯一の例外は、ソースとターゲットのシグネチャを持つ、同じマッピング、ときに再マッピングを不要にすることです。</span><span class="sxs-lookup"><span data-stu-id="d7afc-106">The only exception to this rule is when the source and destination have the same mapping signature, making remapping unnecessary.</span></span>
   
-<span data-ttu-id="02bd9-107">ターゲットで動作する適切な識別子を転送の名前付きプロパティの名前を再マップするトランスポート プロバイダーの役割です。</span><span class="sxs-lookup"><span data-stu-id="02bd9-107">It is the responsibility of the transport provider to remap the names of transmitted named properties to appropriate identifiers that work at the destination.</span></span> <span data-ttu-id="02bd9-108">適切なマッピングとは、宛先に送信側のトランスポート プロバイダーを知ることはできません。名前を送信し、動作する識別子にマップするのには受信側のトランスポート プロバイダーに依存して、必要があります。</span><span class="sxs-lookup"><span data-stu-id="02bd9-108">The sending transport provider cannot know what the correct mapping is at the destination; it must transmit the names and rely on the receiving transport provider to map them to identifiers that work.</span></span> <span data-ttu-id="02bd9-109">TNEF の MAPI 実装では、トランスポート プロバイダーの名前付きプロパティの再割り当てを処理します。</span><span class="sxs-lookup"><span data-stu-id="02bd9-109">The MAPI implementation of TNEF handles the remapping of named properties for transport providers.</span></span> <span data-ttu-id="02bd9-110">トランスポート プロバイダー再マッピングを手動で処理か、TNEF の実装を使用します。</span><span class="sxs-lookup"><span data-stu-id="02bd9-110">Transport providers can either handle the remapping manually or use the TNEF implementation.</span></span> 
+<span data-ttu-id="d7afc-107">ターゲットで動作する適切な識別子を転送の名前付きプロパティの名前を再マップするトランスポート プロバイダーの役割です。</span><span class="sxs-lookup"><span data-stu-id="d7afc-107">It is the responsibility of the transport provider to remap the names of transmitted named properties to appropriate identifiers that work at the destination.</span></span> <span data-ttu-id="d7afc-108">適切なマッピングとは、宛先に送信側のトランスポート プロバイダーを知ることはできません。名前を送信し、動作する識別子にマップするのには受信側のトランスポート プロバイダーに依存して、必要があります。</span><span class="sxs-lookup"><span data-stu-id="d7afc-108">The sending transport provider cannot know what the correct mapping is at the destination; it must transmit the names and rely on the receiving transport provider to map them to identifiers that work.</span></span> <span data-ttu-id="d7afc-109">TNEF の MAPI 実装では、トランスポート プロバイダーの名前付きプロパティの再割り当てを処理します。</span><span class="sxs-lookup"><span data-stu-id="d7afc-109">The MAPI implementation of TNEF handles the remapping of named properties for transport providers.</span></span> <span data-ttu-id="d7afc-110">トランスポート プロバイダー再マッピングを手動で処理か、TNEF の実装を使用します。</span><span class="sxs-lookup"><span data-stu-id="d7afc-110">Transport providers can either handle the remapping manually or use the TNEF implementation.</span></span> 
   
-<span data-ttu-id="02bd9-111">これらのプロパティがメッセージ ストア間でコピーされると、名前付きプロパティの再マッピングのような必要があります。</span><span class="sxs-lookup"><span data-stu-id="02bd9-111">A similar remapping of named properties must occur when these properties are copied between message stores.</span></span> <span data-ttu-id="02bd9-112">ただし、メッセージ ストア プロバイダーは、識別子のマッピング先の名前を取得できる、ため、プロパティをすぐに再マップし、メッセージの保存先のストアに依存していませんが。</span><span class="sxs-lookup"><span data-stu-id="02bd9-112">However, because message store providers can retrieve the name to identifier mapping of the destination, they can remap the properties right away and not have to rely on the destination message store.</span></span> 
+<span data-ttu-id="d7afc-111">これらのプロパティがメッセージ ストア間でコピーされると、名前付きプロパティの再マッピングのような必要があります。</span><span class="sxs-lookup"><span data-stu-id="d7afc-111">A similar remapping of named properties must occur when these properties are copied between message stores.</span></span> <span data-ttu-id="d7afc-112">ただし、メッセージ ストア プロバイダーは、識別子のマッピング先の名前を取得できる、ため、プロパティをすぐに再マップし、メッセージの保存先のストアに依存していませんが。</span><span class="sxs-lookup"><span data-stu-id="d7afc-112">However, because message store providers can retrieve the name to identifier mapping of the destination, they can remap the properties right away and not have to rely on the destination message store.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="02bd9-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="02bd9-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d7afc-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="d7afc-113">See also</span></span>
 
 
 
-[<span data-ttu-id="02bd9-114">MAPI ���O�t���v���p�e�B</span><span class="sxs-lookup"><span data-stu-id="02bd9-114">MAPI Named Properties</span></span>](mapi-named-properties.md)
+[<span data-ttu-id="d7afc-114">MAPI ���O�t���v���p�e�B</span><span class="sxs-lookup"><span data-stu-id="d7afc-114">MAPI Named Properties</span></span>](mapi-named-properties.md)
 
