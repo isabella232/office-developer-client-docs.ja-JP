@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2b46966d-c63d-4241-92d4-001d6a674e97
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f534a4738eb18519dc62cc18cfb79391ea39633b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e05cf37d7605942abc9a2073957264503b8d92db
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801824"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574070"
 ---
 # <a name="pidlidattendeecriticalchange-canonical-property"></a>PidLidAttendeeCriticalChange 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 会議に関連するオブジェクトが送信されたときの日時を指定します。
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: d6c57be6-2397-4ab1-a912-028454dffc44
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 573709c4374786bb1bd3d763c8ba91de59f7fb1e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a34c21e20fa45cd3265ec42c9d992eb828203f66
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801405"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563914"
 ---
 # <a name="mapi-profile-overview"></a>MAPI プロファイルの概要
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロファイルは、メッセージ サービスとクライアント アプリケーションのユーザーが特定の MAPI セッション中に使用できるサービス プロバイダーに関する情報のコレクションです。 すべてのユーザーには、少なくとも 1 つのプロファイルです。多くのユーザーは、いくつかしてください。 たとえば、ユーザーには、サーバー ベースのメッセージ ・ ストア ・ サービスを使用する 1 つのプロファイルとローカル コンピューター上のメッセージ ストアのサービスを操作する別のプロファイルがあります。 1 日と 1 日の残りの部分の他の部分の適切なトランスポート サービスを使用してメッセージング システムの 1 つのセットにアクセスする場合があります。 プロファイルでは、メッセージング システムのサービスの組み合わせを選択するのには柔軟な方法を提供します。 
   

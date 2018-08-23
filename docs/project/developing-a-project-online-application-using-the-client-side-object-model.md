@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5740d0b2-5d36-40e4-9e83-577cb186359f
 description: この資料では、デスクトップ アプリケーションを.NET Framework 4.0 を使用してプロジェクトをオンラインでマイクロソフトのアプリケーション開発について説明します。 この資料に記載されているアプリケーションは、ホストしているサーバーから情報を取得します。
-ms.openlocfilehash: a0a2b4042d4db127c56c5ba873ebe25418344571
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a65dbbdedb371fae9b8f0b99ea113ae38cbaffb5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804564"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572880"
 ---
 # <a name="developing-a-project-online-application-using-the-client-side-object-model"></a>クライアント側オブジェクト モデルを使用してプロジェクトのオンライン アプリケーションを開発
 
@@ -639,6 +639,6 @@ Value: Red
 
 ## <a name="see-also"></a>関連項目
 
-ドキュメントとオンライン プロジェクトと CSOM を使用したアプリケーション開発に関連するサンプルでは、[プロジェクト開発のポータル](http://dev.office.com/project.aspx)を参照してください。
+ドキュメントとオンライン プロジェクトと CSOM を使用したアプリケーション開発に関連するサンプルでは、[プロジェクト開発のポータル](https://developer.microsoft.com/en-us/project)を参照してください。
     
 

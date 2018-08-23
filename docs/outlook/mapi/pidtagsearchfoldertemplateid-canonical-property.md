@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 56288f55-b3ba-42df-9c90-f9b5857f19a1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4e752d3264a64ad7b467947c44d01eb7c47ec863
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7077210504614d7d95a7f545ea6f37ce02c92fdf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803503"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563248"
 ---
 # <a name="pidtagsearchfoldertemplateid-canonical-property"></a>PidTagSearchFolderTemplateId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 検索に使用されているテンプレートの ID が含まれています。
   

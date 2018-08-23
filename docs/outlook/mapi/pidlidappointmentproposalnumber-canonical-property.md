@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f985aeaf-653f-44cb-ac70-6e784bc6c848
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 65f5f7311d35ce764d06726780f757771c872f8f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: db9d84697ed9b89e1c19659d35dabdf01922fffc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801742"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570549"
 ---
 # <a name="pidlidappointmentproposalnumber-canonical-property"></a>PidLidAppointmentProposalNumber 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 承諾または開催者によって拒否されていないカウンターの提案を送信した参加者の数を指定します。
   

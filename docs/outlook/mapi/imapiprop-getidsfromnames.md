@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e3f501a4-a8ee-43d7-bd83-c94e7980c398
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5247ca71c88b9c0f8591a732746a17204265741c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7f7c243995c633389ab8fa80a26dddd152347276
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800660"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565362"
 ---
 # <a name="imapipropgetidsfromnames"></a>IMAPIProp::GetIDsFromNames
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 1 つまたは複数のプロパティ名に対応するプロパティの識別子を提供します。
   

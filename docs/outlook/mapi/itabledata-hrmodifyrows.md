@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d295c896-9882-4d6f-9689-5cf40db208c0
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 15d98183548d4b73c35368d690ef63d5c3dfd9af
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 06356d60b43d7e5be61d944c07001570bdd5c678
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801233"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571109"
 ---
 # <a name="itabledatahrmodifyrows"></a>ITableData::HrModifyRows
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 既存の行が上書きされる、複数のテーブル行を挿入します。
   

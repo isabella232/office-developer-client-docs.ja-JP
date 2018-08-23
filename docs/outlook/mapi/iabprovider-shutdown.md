@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 1fbe6dc1-254b-4557-92c8-9fa42a8efd64
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2f1872c6f95f8ab12014de9890b0d03789bc5f0d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0a93dd44960a01996672a55501a7626d0ff56986
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800367"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567889"
 ---
 # <a name="iabprovidershutdown"></a>IABProvider::Shutdown
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アクティブなセッションへの接続をキャンセルします。
   

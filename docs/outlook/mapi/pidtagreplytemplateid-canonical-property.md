@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 3645e7a6-ef30-494f-bf71-fa06f819bc0c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 03569d05f724df773b1ca3aaf8b7a8f5132b8681
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b8af182d905a1b7449d96a525696fb6af912d3ef
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803333"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563794"
 ---
 # <a name="pidtagreplytemplateid-canonical-property"></a>PidTagReplyTemplateId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 返信用テンプレートのグローバル一意識別子 (GUID) が含まれています。
   

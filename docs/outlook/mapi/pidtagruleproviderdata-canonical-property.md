@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b04a277c-b483-4f54-b360-311034b9a7ee
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 054299e6bdf685163bc23678a2070f5d702a4529
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f4f1070b89971c631fd855a6f84d56b699152421
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803423"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566846"
 ---
 # <a name="pidtagruleproviderdata-canonical-property"></a>PidTagRuleProviderData 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアントの設定は、クライアントが排他的に使用する不透明なプロパティです。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c0aa0df2-79f9-2558-7eb6-accae9bef4b2
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 15e2d5c2aca595c3a06d215cd069c23da3e48125
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 13a4cf401cf51241a52401668eef008d65aa5459
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800620"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567140"
 ---
 # <a name="imapiofflinesetcurrentstate"></a>IMAPIOffline::SetCurrentState
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 オフライン オブジェクトをオンラインまたはオフラインの現在の状態を設定します。
   

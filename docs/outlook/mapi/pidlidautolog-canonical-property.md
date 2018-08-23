@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 60b7a411-a884-4836-8aca-a205bd503fef
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 84118414b9960c42babe91b43b13982f90d376bd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a2f4f6ec43d7bebb7c27b6fad26aa5d831b548ac
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801823"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568582"
 ---
 # <a name="pidlidautolog-canonical-property"></a>PidLidAutoLog 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 この連絡先に関連付けられている各アクションの仕訳帳を作成するかどうかを指定します。
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0dd12990-5431-4768-9d64-27d4ef6b7b20
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c6726b852176fa31bf879b5a32b63c35ce2be514
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fa7f6ac116bf5255d2598465085bab2695ae2c25
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799964"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564515"
 ---
 # <a name="dtblcheckbox"></a>DTBLCHECKBOX
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ダイアログ ボックスが表示テーブルの構築に使用するチェック ボックスに関する情報が含まれています。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9ea1c029-d53c-4c28-b413-560083b6215a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 444d98c4e8e32e0cc7d2eb8af753a394af1f020c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fb048d622aaf3cfa97f380e21324749d7421603e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803615"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563689"
 ---
 # <a name="pidtagsubmitflags-canonical-property"></a>PidTagSubmitFlags 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージの送信に関する詳細情報を示すフラグのビットマスクを格納します。
   

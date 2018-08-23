@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 031b7e18-59b2-445c-a747-348fda92f458
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3c480c420753b2da6c57b3961589d5c2e2e8022a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 36b8381e2bf98f5ddcb88a54b56f2b5c91b3b668
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801675"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572600"
 ---
 # <a name="notifkey"></a>NOTIFKEY
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アドバイズ シンク、アドバイズ ソースと MAPI との間の接続を一意に識別します。
   

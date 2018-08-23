@@ -1,23 +1,23 @@
 ---
-title: ニックネームのキャッシュ
+title: ニックネーム キャッシュ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 2813c102-6778-4443-ab4b-b573f3568705
 description: '最終更新日: 2013 年 1 月 30 日'
-ms.openlocfilehash: 1ea1d3e6f636cf6a3ad47b6fdfe88d0f7130a5f3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 547733f815c7d8c8762e79febce40ee9fec07d3a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801661"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574532"
 ---
-# <a name="nickname-cache"></a>ニックネームのキャッシュ
+# <a name="nickname-cache"></a>ニックネーム キャッシュ
 
  
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 Microsoft Office Outlook 2007、Microsoft Outlook 2010 では、および Microsoft Outlook 2013 の対話、ニックネームのキャッシュとも呼ばれる「オートコンプリートのストリーム。」 オートコンプリートのストリームでは、Outlook には、オートコンプリートの一覧**に** **[cc]**、[表示名のリストが引き続き発生して、ユーザーが電子メールを作成するときに、 **[Bcc** ] ボックス。 このトピックでは、Outlook 2007 と Outlook 2010、Outlook 2013 がオートコンプリートのストリームとどのようにやり取りする方法について説明し、オートコンプリートのストリームと対話するための推奨される方法と、ファイルのバイナリ形式についても説明します。 
   

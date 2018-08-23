@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d619b5e7-2867-44fc-9b42-123bb1bf7bde
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cbc934eec5331a0302ba222108ee92a0dc696b1f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 252a5f9cbb923728b78a232666a275ebbd2576c4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803307"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568708"
 ---
 # <a name="pidtagrecipienttrackstatus-canonical-property"></a>PidTagRecipientTrackStatus 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 出席者によって返される応答のステータスを示します。
   

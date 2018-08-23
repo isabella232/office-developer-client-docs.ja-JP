@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f47e20e1-2a30-4c9e-8ca6-e8c5e72f44a1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 66e318c3b7b772f2713b5c730590ce4a8ad5965b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ce9c8b189991e4102fcc9d17b88747d4ce55efec
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800387"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570913"
 ---
 # <a name="iattach--imapiprop"></a>IAttach : IMAPIProp
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 保持し、メッセージの添付ファイルのプロパティへのアクセスを提供します。 **IAttach**インターフェイスには、独自の一意のメソッドがありません。 添付ファイルを使用する方法の詳細については、 [MAPI の添付ファイル](mapi-attachments.md)や[添付ファイル テーブル](attachment-tables.md)を参照してください。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d45ea1e4-727e-434a-b6b7-73179baa3e5b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 24682906f6f018822f50bc1461fadd48996c46aa
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e442d57a75fac2292bc70b287da20bdcc5100dc9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802314"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570101"
 ---
 # <a name="pidnameauthor-canonical-property"></a>PidNameAuthor 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ドキュメントに関連付けられているファイルの作成者を表します。
   

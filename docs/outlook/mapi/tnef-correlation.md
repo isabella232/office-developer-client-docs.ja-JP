@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 93d1716d-a0be-45aa-85d2-6c9be65f5fd2
 description: '最終更新日: 2013 年 3 月 12 日'
-ms.openlocfilehash: b8b30dcc2fcf0c8e75004e36b6fd9f4f4583e304
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5b5af5cee7c58eb300e4020c763431fd96bdd295
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804114"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563764"
 ---
 # <a name="tnef-correlation"></a>TNEF 関連付け
 
  
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 いくつかのメッセージング システムでは、TNEF ストリームはそのメッセージを実際に属していることを確認するのには受信メッセージに添付する任意のトランスポート ニュートラル カプセル化形式 (TNEF) ストリームの相互関係のチェックを実行します。 TNEF ストリーム内のいくつかのプロパティに格納されている値のコピーを受信メッセージのヘッダーにいくつかのフィールドの値と一致するが含まれます。 おそらく、メッセージごとに、メッセージの ID 番号などの一意の値は通常、これを使用します。 トランスポートまたは TNEF ストリームを作成するゲートウェイは、メッセージ ヘッダーから適切な値を選択して、TNEF ストリームに送信するメッセージのプロパティをエンコードする前に適切なプロパティにコピーを配置することです。 ゲートウェイまたはトランスポートするメッセージが表示される TNEF ストリームからプロパティを抽出し、その値が対応する受信メッセージのヘッダー フィールドの値と一致していることを確認します。
   

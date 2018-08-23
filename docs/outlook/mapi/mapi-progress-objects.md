@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: e446004e-1ef2-4e58-b764-de7b4dcefaf1
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3007aeb5ac3810c57ed6fb4a555d5ce22e831768
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c6079a62464231536c0fa6b5bacc291997fe38d9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801413"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567924"
 ---
 # <a name="mapi-progress-objects"></a>MAPI オブジェクトの進行状況
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メソッドの実行中のオブジェクトのデータとインジケーターが進行状況を報告する方法を制御できます。 クライアントまたは MAPI 処理中のオブジェクトには、進行状況表示の正確性を確保する作業の大半はサービス プロバイダーであります。 特定の順序との進行中のオブジェクトのメソッドに渡されるパラメーター値を指定することにより、その正確性を保証できます。
   

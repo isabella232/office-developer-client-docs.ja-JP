@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 1b3afeaa-4ede-41eb-a3c1-b8947a46ef97
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 91bc0641723a92d8dc86bf3d1037d8e9936930ce
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 29132f24547dc744efcd6f2b6e4a8f6af87ab53c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801378"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574413"
 ---
 # <a name="mapi-forms-overview"></a>MAPI フォームの概要
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI フォームは、メッセージ ビューアーです。 すべてのメッセージには、そのビューアーとして使用されている特定のフォームを決定するメッセージ クラスがあります。 MAPI では、いくつかのメッセージ クラスを定義し、これらのクラスのメッセージを表示するためのフォームを実装しました。 クライアント ソフトウェアの開発者には、メッセージの新しいクラスと新しいクラスを使用して作成されたメッセージを表示するためのカスタム フォームを作成できます。
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: b9a41f44-4c7e-4c57-b536-63fb85e4fae6
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: dd68bc2054136a7f587b05dc56dbeabd06de1f08
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0105ac92c53424199685e76223e6d75792fb674e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799836"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566909"
 ---
 # <a name="copying-a-recipient"></a>受信者のコピー
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 別の 1 つのコンテナー、または同じコンテナーには、1 つまたは複数の受信者をコピーするに最初の移行先コンテナーが変更可能なことを確認します。 コンテナーを変更することは、 **PR_CONTAINER_FLAGS** ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md)) のプロパティで、AB_MODIFIABLE フラグを設定します。
   

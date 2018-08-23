@@ -10,18 +10,18 @@ api_type:
 - COM
 ms.assetid: 9cb4af50-3735-4029-a608-a6e7927019dd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 295b20ebc0c41104a8b1c8e46e2064c3ef32f99e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6b71feb6d5967eab3aa490a256825a2803381f40
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803240"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569093"
 ---
 # <a name="pidtagpstpathhint-canonical-property"></a>PidTagPstPathHint 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 構成] ダイアログ ボックスには、ユーザーが編集できる、個人用領域 (.pst ファイル) のテーブル名を提供します。 
   

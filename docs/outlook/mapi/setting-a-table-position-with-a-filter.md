@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 0d66124b-a018-4db4-b55b-a0e5ed467e14
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 4c3a5c13433fb2f037be24ddd4c877579429f7bb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6c4db9c67fc712143657fe66b86ea33ef2b9c272
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803892"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565593"
 ---
 # <a name="setting-a-table-position-with-a-filter"></a>フィルターによるテーブルの位置設定
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 テーブルのユーザーは、一連のフィルター条件に一致する行にカーソルを移動できます。 フィルターは、さまざまな列プロパティの値やビットマスク、サブオブジェクトなどのガイドラインに基づいていることができます。 [SRestriction](srestriction.md)構造体を使用して MAPI では、フィルターが指定されています。 
   

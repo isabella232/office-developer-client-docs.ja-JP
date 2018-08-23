@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: f0b9c2f4-7011-414d-8e6c-ab22893ef132
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2eb92c3f1555407a77332bd6ec3b2b7202f0553f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7622baaebf6918cf84c48e53291cf5ec2c0b1a4a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803945"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572565"
 ---
 # <a name="sizedssortorderset"></a>SizedSSortOrderSet
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 並べ替え順の指定した数値を含む名前付き[SSortOrderSet](ssortorderset.md)構造体を作成します。 
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 2e1287a3-0f15-4d9a-b7ee-738fce9cd51f
 description: 'COM ms.assetid: 2e1287a3-0f15-4d9a-b7ee-738fce9cd51f description: "�ŏI�X�V��: 2015�N3��9��"'
-ms.openlocfilehash: 619bd2d5e3b40e49da835d774035ba237af06699
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a305b9c9ea2802ac63a22118b55274bcdff23617
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801424"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569009"
 ---
 # <a name="mapi-receive-folders"></a>MAPI �t�H���_�[���\������܂��B
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 受信フォルダーは、特定のメッセージ クラスの受信メッセージを保持します。 クライアントによって、メッセージ ストア プロバイダー、または MAPI の関連付けを確立することができますフォルダーが表示されます。 MAPI には、2 つの既定のフォルダーが表示されます: メッセージ ・ ストアのルート フォルダーと、個人間メッセージ (IPM) サブツリーの [受信トレイ] フォルダー。 メッセージ ・ ストアのルート フォルダーは、既定のフォルダーのすべてのプロセス間通信 (IPC) メッセージを受信します。
   

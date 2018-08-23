@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 14fc5571-acc0-4d75-8598-964aee5ba01c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: bc16e88035f091a4f42a03342a70e7e3a1da5e0c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 53772fca5e8137dfd602d4c7d6f5e6ad40f9c50f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802861"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573433"
 ---
 # <a name="pidtaginstancekey-canonical-property"></a>PidTagInstanceKey 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 テーブル内の行を一意に識別する値が含まれています。 
   

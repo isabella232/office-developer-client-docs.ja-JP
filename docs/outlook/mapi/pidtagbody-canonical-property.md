@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 47c0d0fe-4d57-4b81-bdb5-336de85c194c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 23d943d5576f5e9d7694b03c90dea79a878dee64
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cbcfdf44044e3cf9e42b0f0503928c9f8720ec1f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802511"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574420"
 ---
 # <a name="pidtagbody-canonical-property"></a>PidTagBody 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ テキストが含まれています。
   

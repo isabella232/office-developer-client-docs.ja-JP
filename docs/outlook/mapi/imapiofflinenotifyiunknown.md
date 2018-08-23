@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a593d2a1-29f8-7e23-85bf-02fa3cfebe1b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 37f21c438a0a337eecf5c15a27a0b891d19bcfb8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: adcb8e78d4e85e19d4102795aa4d43f06a7f86ba
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800632"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568148"
 ---
 # <a name="imapiofflinenotify--iunknown"></a>IMAPIOfflineNotify : IUnknown
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 通知コールバックをクライアントに送信するのには、Microsoft Outlook 2010 と Microsoft Outlook 2013 をサポートしています。
   

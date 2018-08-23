@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 31325e8f-1cf9-49b2-8118-953996b0037f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 252b6d6c7ff74acd5f0b288af48ff2901c2330ad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 51c239897e5e225a0765f78404526e2836371f30
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800864"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567903"
 ---
 # <a name="imapitablesetcollapsestate"></a>IMAPITable::SetCollapseState
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [IMAPITable::GetCollapseState](imapitable-getcollapsestate.md)メソッドへの前回の呼び出しによって保存されたデータを使用して分類されたテーブルの現在の展開または折りたたみの状態を再構築します。 
   

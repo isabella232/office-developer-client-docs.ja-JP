@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4847838a-2ad8-4927-8f78-7fa5c8eb54eb
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e66d48b6caefe0fee67f41ea829db3201751cf27
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7cae156e29503c8b50755c99023805aa6d14e704
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800291"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573370"
 ---
 # <a name="hrdecomposeeid"></a>HrDecomposeEID
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ストア内のオブジェクトのエントリ id とストアのエントリの識別子、メッセージ ・ ストア内のメッセージでは通常、オブジェクトの複合のエントリ id に分割します。
   

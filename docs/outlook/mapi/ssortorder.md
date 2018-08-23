@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: fe181b9a-5903-4cc0-bcd5-2061b440b5b1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7cb511c7a021c4e65214acc7efa785be0e02ffc8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 331dc05b30390bb803d186f157e0fe9edb779ab0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803999"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571669"
 ---
 # <a name="ssortorder"></a>SSortOrder
  
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 並べ替えキー、および並べ替えの方向として使用するには、どのような列、テーブルの行をソートする方法を定義します。 
   

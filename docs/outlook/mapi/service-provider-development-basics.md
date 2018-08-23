@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 00efb70f-405e-4efb-94bc-b39c310332cf
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7113c70c5e60954a63e7efe21ad0dc91c90517d8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0f53c0b758db69e798b9f15c7749f12dcf3b17e1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803886"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566132"
 ---
 # <a name="service-provider-development-basics"></a>サービス プロバイダー開発の基本
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このセクションには、独自の MAPI サービス プロバイダーを作成する前に確認する必要がある概要情報が含まれます。
   

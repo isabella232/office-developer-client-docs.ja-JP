@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: f9559afb-8db1-ce72-3e11-9b3d47bb80b6
 description: '最終更新日: 2012 年 7 月 6 日'
-ms.openlocfilehash: 676d74c6441716203006f2db3e4a7d5777320a98
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: aa1981c365e2a8e81dcd688a32fca25178c7fe52
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800246"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577325"
 ---
 # <a name="programmatically-set-the-resolution-order-for-address-lists"></a>アドレス一覧の解決の順序をプログラムで設定します。
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このトピックには、c++ プログラムを使用してアドレス一覧の受信者に電子メールでメッセージおよび会議出席依頼に出席者は、解決の順序を設定するコード サンプルが含まれています。
   

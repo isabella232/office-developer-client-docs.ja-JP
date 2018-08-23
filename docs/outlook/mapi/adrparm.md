@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: 35cd57b4-9901-456c-bf06-1f84e274eb4e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ad26cb9b77404d6470f7a8d787eb85edc5cce402
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 560cae5e8a3d73d80a4907fd0fec43b389ef9fc5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "19799667"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572026"
 ---
 # <a name="adrparm"></a>ADRPARM
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 表示と共通のアドレス] ダイアログ ボックスの動作について説明します。 
   

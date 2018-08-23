@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f64cde12-7ed1-444f-8ca4-51cb3ea514cf
 description: '最終更新日: 2012 年 2 月 21 日'
-ms.openlocfilehash: f5cb63ca3d421073b00a448f762ecf0137494f2a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6957888f6727175d73d277cf4f5b84dc234d22ea
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801663"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570038"
 ---
 # <a name="mnlswidechartomultibyte"></a>MNLS_WideCharToMultiByte
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 この関数は、 **WideCharToMultiByte**utf-16 (ワイド文字) の文字列を新しい文字列にマップするに似ています。 新しい文字の文字列とは限りませんマルチバイトの文字からは設定されません。
   
@@ -35,7 +35,7 @@ int MNLS_WideCharToMultiByte(
   BOOL FAR *lpfUsedDefaultChar);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _uCodePage_
   
@@ -69,11 +69,11 @@ int MNLS_WideCharToMultiByte(
   
 > [out]省略可能です。 関数が変換時に既定の文字を使用されるかどうかであることを示すフラグへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 正常終了した場合、 _lpMultiByteStr_が指すバッファーに書き込まれたバイト数を返します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この関数は、 **WideCharToMultiByte**関数をラップします。 詳細については、 [WideCharToMultiByte](http://msdn.microsoft.com/en-us/library/dd374130%28VS.85%29.aspx)を参照してください。
   

@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: da7f2b16-cbd6-4a98-b577-31841e60a656
 description: CSOM 開発入門 JavaScript と.NET Framework、作業ウィンドウ内のアドイン プロジェクトの評価のため、プロジェクトのサーバーのインターフェイスを使用して、Project 2013 のプラットフォームの主要な部分については、このセクションの情報へのリンクを検索し、OData のレポート作成サービスです。
-ms.openlocfilehash: 84af1edcee75d529fbdbacf5e40fe91cdc3523c6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e19fae2a187a9a4f809eaec4d8dade128b9529bb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804676"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570304"
 ---
 # <a name="project-conceptual-and-how-to-articles"></a>プロジェクトの概念と操作方法に関する記事
 
@@ -27,7 +27,7 @@ Project Server 2013 は、Office Project Server 2007 で導入されたプロジ
   
 - [Project 2013 のクライアント側オブジェクト モデル (CSOM)](client-side-object-model-csom-for-project-2013.md)には、JavaScript と.NET Framework を使用して、CSOM の開発を開始するためのトピックが含まれています。 
   
-- [プロジェクト クライアント プログラミングには](project-client-programming.md)には、評価のためのプロジェクトでの作業ウィンドウ アドインの概要が含まれています。 個別の SDK には、プロジェクトとその他の Office 2013 のクライアントでの記事や、アドインへの参照が含まれます。 詳細については、Office アドインの[開発者向けドキュメント](https://msdn.microsoft.com/library/office/jj220060.aspx)を参照してください。 
+- [プロジェクト クライアント プログラミングには](project-client-programming.md)には、評価のためのプロジェクトでの作業ウィンドウ アドインの概要が含まれています。 個別の SDK には、プロジェクトとその他の Office 2013 のクライアントでの記事や、アドインへの参照が含まれます。 詳細については、 [Office アドイン](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)の開発者向けドキュメントを参照してください。 
   
 - [プロジェクトのプログラミング タスク](project-programming-tasks.md)は、Project 2013 用のアドインを開発、需要管理のワークフローを作成、Project Web App のリボンをカスタマイズする、Web パーツ、および詳細を作成する方法を示します。 
   

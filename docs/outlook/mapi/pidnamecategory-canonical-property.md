@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 931a004f-3f20-452b-8d9e-422ee2dba106
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e83029e1813126351593b9311a71ca9dbbbba45a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 23b364a5b4c9cec3832a4e939fa53d53d3e15420
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802329"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574119"
 ---
 # <a name="pidnamecategory-canonical-property"></a>PidNameCategory 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ドキュメントに添付ファイルのカテゴリを指定します。
   

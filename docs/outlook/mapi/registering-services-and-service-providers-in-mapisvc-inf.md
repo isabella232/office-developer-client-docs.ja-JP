@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a04acf17-4b2d-458e-9852-b6074acac096
 description: '最終更新日: 2013 年 7 月 18 日'
-ms.openlocfilehash: 2eb7f1b496e0732b157ea4f9105a0e067329c52f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c74257b84636952b26c5a624f4f7f76f66be9149
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803736"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566923"
 ---
 # <a name="registering-services-and-service-providers-in-mapisvcinf"></a>MapiSvc.inf でのサービスおよびサービス プロバイダーの登録
 
  
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 システムに新しいプロバイダーをインストールするには、新しいプロバイダーを指すように、MapiSvc.inf ファイルを更新する必要があります。 通知 MAPI プロバイダーのダイナミック リンク ライブラリ (.dll) を検索する場所の次のよう、標準のプロパティの構成中に設定します。
   

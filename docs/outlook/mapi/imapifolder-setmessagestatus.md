@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 42ffbbe0-d678-474a-a016-91c71255613e
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: fcca6a7e8fa70a2df9042e8b3c2b28825cee9a7b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d06523625a20760faec7a6c73a6beaef757818b3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800501"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575078"
 ---
 # <a name="imapifoldersetmessagestatus"></a>IMAPIFolder::SetMessageStatus
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 (たとえば、あるかどうかそのメッセージは削除対象としてマーク) は、メッセージに関連付けられたステータスを設定します。
   

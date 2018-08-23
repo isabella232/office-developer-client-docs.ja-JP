@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d57ce5c8-1f60-4709-b86a-4468c4208dfe
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7fdb8781c39d7814ff2c38ff4df4545511d28a5f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6e856cc8dc131c1b6266181a954a8da9cfb1d1ea
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803378"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566104"
 ---
 # <a name="pidtagrowtype-canonical-property"></a>PidTagRowType 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 テーブル内の行の種類を示す値が含まれています。
   

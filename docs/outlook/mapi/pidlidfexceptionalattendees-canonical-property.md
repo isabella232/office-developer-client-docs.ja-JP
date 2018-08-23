@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f1f489a3-e83a-4e96-bf9a-d98bc17d29f5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7c7f654d42df7856b0e69bf276a763ccd29d1d87
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 68ad6bd888594d09ab8e1dac050f8181341f7ee4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801961"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570783"
 ---
 # <a name="pidlidfexceptionalattendees-canonical-property"></a>PidLidFExceptionalAttendees 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このプロパティは、1 つまたは複数の例外の定期的な予定表オブジェクトを少なくとも 1 つの RecipientRow には、埋め込まれている例外メッセージの少なくとも 1 つかどうかを示します。
   

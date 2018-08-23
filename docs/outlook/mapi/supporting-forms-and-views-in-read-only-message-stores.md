@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: da5f080d-4397-4ce6-8561-73dd13445e77
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 1ef9b85fd8dad980f92f5e06a4b54daf146fbcec
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 52aebb53f2bc0e5af72f2da47b91ba2806d7f709
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804044"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563353"
 ---
 # <a name="supporting-forms-and-views-in-read-only-message-stores"></a>�ǂݎ���p�̃��b�Z�[�W �X�g�A�ł̃t�H�[���ƃr���[�̃T�|�[�g
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストア プロバイダーは、基になるストレージ機構に読み取り専用のアクセス許可を許可している場合クライアント アプリケーションと MAPI フォーム マネージャーができないことを行います。 具体的には、クライアントを追加またはユーザー設定のビューを変更することはできませんし、MAPI フォームのマネージャーがストアのフォルダーの内容が関連付けられているテーブルにフォームをインストールすることができません。
   

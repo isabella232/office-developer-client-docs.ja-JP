@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 3a1f0aa2-813f-222c-f871-0501de5d9dec
 description: Exchange キャッシュ モードでは、クライアントと、メッセージ全体のダウンロードを強制することがなく IMsgStore::OpenEntry に IID_IMessageRaw を使用して、オフライン フォルダー ファイル (OST) でメッセージを管理している IMessage インターフェイスを取得する方法について説明する C++ のコード サンプルが含まれていますモードです。
-ms.openlocfilehash: e32bf4f64bfb91979133ee983e45481b3d5b9732
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f094f5a7deae705ed64b912483726aeb409fb107
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800248"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568106"
 ---
 # <a name="manage-messages-in-ost-without-invoking-a-synchronization-in-cached-exchange-mode"></a>OST 内のメッセージを Exchange キャッシュ モードで同期を呼び出すことがなく管理します。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このトピックには、c++ を使用する方法を示すコード サンプルが含まれています`IID_IMessageRaw`メッセージ全体のダウンロードを強制することがなく、オフライン フォルダー ファイル (OST) でメッセージを管理している**[IMessage](imessageimapiprop.md)** インターフェイスを取得するのには**[IMsgStore::OpenEntry](imsgstore-openentry.md)** で、クライアントExchange キャッシュ モードでは。 
   

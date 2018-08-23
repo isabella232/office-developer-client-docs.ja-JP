@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 08dc1f81-964b-4059-9167-e517391b26e9
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f0310d8dcde9acc1e14f0be124543897e9867951
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 263af656af8d236f4efb55a423f09b594c79cb71
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803290"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575232"
 ---
 # <a name="pidtagrecipientproposedendtime-canonical-property"></a>PidTagRecipientProposedEndTime 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 会議の提案した終了時刻を示します。
   

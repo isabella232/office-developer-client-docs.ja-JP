@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 87a452e6-dedf-414d-b7cf-07c8b02dd94a
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f5bdf4a4cbf67aa9524819ffe4eee14b62714632
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d2df6dcb2e20cf1750d78f2e0b3200026b51f712
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801396"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567427"
 ---
 # <a name="mapi-message-store-provider-objects"></a>MAPI メッセージ ストア プロバイダー オブジェクト
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストア プロバイダーは、すべてのサービス プロバイダーとプロバイダーとログオン オブジェクトを実装します。 また、メッセージ ストアのオブジェクト、フォルダー、メッセージ、添付ファイル、およびテーブルを実装します。 オプションとしては、いくつかのメッセージ ストア プロバイダーは、状態オブジェクトを実装します。
   

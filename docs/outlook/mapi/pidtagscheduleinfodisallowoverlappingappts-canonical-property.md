@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 27978a09-daf7-4a50-927a-96d9c4a97d02
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3719c0d86b0f14324e65b963d2a81a27f6cd52ba
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c563284eb261d9b1fe4823f5d3ae90629144e1f8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803457"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565628"
 ---
 # <a name="pidtagscheduleinfodisallowoverlappingappts-canonical-property"></a>PidTagScheduleInfoDisallowOverlappingAppts 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 予定の重複が許可されていない場合、TRUE が格納されます。
   

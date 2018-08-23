@@ -1,5 +1,5 @@
 ---
-title: PidLidToDoTitle の標準的なプロパティ
+title: PidLidToDoTitle 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 94cf031f-4c78-441d-9c01-55905b4974e0
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 66208b2d31ca379389f3249abf281dd4d040e276
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 9973e68dbceea03f31bfc47ede34f004fa3f39b6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802256"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570416"
 ---
-# <a name="pidlidtodotitle-canonical-property"></a>PidLidToDoTitle の標準的なプロパティ
+# <a name="pidlidtodotitle-canonical-property"></a>PidLidToDoTitle 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 統合の to do リストでは、このメッセージ オブジェクトを識別するユーザーを指定できるテキストが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidToDoTitle  <br/> |
+|関連するプロパティ:  <br/> |dispidToDoTitle  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x000085A4  <br/> |
-|データを入力します。  <br/> |PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_UNICODE  <br/> |
 |領域:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 タスクでこのプロパティを設定しない必要があります。 空のプロパティを指定するには、長さ 0 の文字列にこのプロパティを設定しないでが代わりにそれを削除します。 
   
@@ -67,7 +67,7 @@ Mapidefs.h
 
 
 
-[PidTagNormalizedSubject の標準的なプロパティ](pidtagnormalizedsubject-canonical-property.md)
+[PidTagNormalizedSubject 標準プロパティ](pidtagnormalizedsubject-canonical-property.md)
   
 [PidLidFlagRequest ���K���̃v���p�e�B](pidlidflagrequest-canonical-property.md)
 
@@ -76,7 +76,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

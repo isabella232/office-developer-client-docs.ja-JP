@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 144c7179-b390-479f-a2aa-324974f04eba
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 87f8b4f4011e405d9848f12b5cae56f27fff1ab8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a4245b5dd1b70d4cf695190c65b447cf92566ef7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803845"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574483"
 ---
 # <a name="selecting-a-receive-folder"></a>受信フォルダーの選択
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 受信フォルダーは、特定クラスの着信メッセージを配置する場所です。 IPM と関連するレポート メッセージは、MAPI では、既定のフォルダーを受信するように、[受信トレイ] が割り当てられます。 IPC および関連するレポート メッセージは、MAPI では、既定のフォルダーを受信するようにメッセージ ・ ストアのルート フォルダーが割り当てられます。 これらの割り当てを変更したり、他のメッセージ クラスの追加の割り当てを確認できます。 行う明示的な受信フォルダーの割り当て、クライアントでサポートされているクラスは、省略可能なメッセージです。
   

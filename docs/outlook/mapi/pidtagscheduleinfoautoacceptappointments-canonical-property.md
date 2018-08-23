@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 79505b29-2706-472b-b084-ab74be7b3405
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4f2cab31d6eed19a262bd0e667166bc79f428877
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 15feea923c31bd7f88fcb3b346905e37af106d84
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803448"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564074"
 ---
 # <a name="pidtagscheduleinfoautoacceptappointments-canonical-property"></a>PidTagScheduleInfoAutoAcceptAppointments 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアントまたはサーバーに自動的に応答すべての会議出席依頼に出席者またはリソースの場合、TRUE が格納されます。
   

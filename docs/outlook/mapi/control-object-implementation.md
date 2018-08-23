@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 4ad62ff0-c527-4e75-a2af-b5906a7588e8
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 268ad60cf8161fb2b58370f89aae623aabd7da7c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b4b225f7e048ef40a79c4b258629cb01b79368d7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799826"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565831"
 ---
 # <a name="control-object-implementation"></a>コントロール オブジェクトの実装
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 オブジェクト、またはサポートしているオブジェクトを制御する、 [IMAPIControl: IUnknown](imapicontroliunknown.md)インタ フェースで、MAPI ダイアログ ボックスに表示されるボタンに機能を追加するのにはプロバイダーによって実装されます。 コントロール オブジェクトは、ボタンの場合にのみ実装できます。 
   

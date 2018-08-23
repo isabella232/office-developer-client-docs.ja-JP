@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 52ce22a9-3ec2-481c-bb91-7a5bcca817f5
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 17b55de84c38deb515dfb528e0ed01306934739d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 783b8972c29b80e1005f0d55e00487dd0e2757b4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804140"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572061"
 ---
 # <a name="types-of-client-applications"></a>クライアント アプリケーションの種類
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージング クライアントの主に 2 つの種類があります: 個人間メッセージ (IPM) を処理して、プロセス間通信 (IPC) のメッセージを処理します。 それらの型内でメッセージング クライアント アプリケーション分類できます次のようになります。
   

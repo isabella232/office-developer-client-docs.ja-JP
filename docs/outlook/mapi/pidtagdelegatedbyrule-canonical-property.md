@@ -1,5 +1,5 @@
 ---
-title: PidTagDelegatedByRule の標準的なプロパティ
+title: PidTagDelegatedByRule 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 284b5001-5de6-4c4e-8e5c-0593ae1b301f
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: d851f5cfa2697ea2a81f80c90e8051c59172d549
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: e9337a49067e9789ece40ed932dbaae133aac0f0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802660"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568183"
 ---
-# <a name="pidtagdelegatedbyrule-canonical-property"></a>PidTagDelegatedByRule の標準的なプロパティ
+# <a name="pidtagdelegatedbyrule-canonical-property"></a>PidTagDelegatedByRule 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォルダーのメッセージがルールによって委任されたかどうかを示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_DELEGATED_BY_RULE  <br/> |
+|関連するプロパティ:  <br/> |PR_DELEGATED_BY_RULE  <br/> |
 |識別子:  <br/> |0x3FE3  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |MAPI のステータス  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -64,7 +64,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

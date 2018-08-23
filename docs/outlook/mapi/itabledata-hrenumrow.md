@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b25d9f2b-9454-4983-98f7-6a051a3b8a04
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 6c149a215a048b96408025e08df55972fa989f46
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 140efe0b2d1b428a94b5bb2919d461779613932a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801215"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564683"
 ---
 # <a name="itabledatahrenumrow"></a>ITableData::HrEnumRow
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 テーブル内の位置に基づいて行を取得します。 
   

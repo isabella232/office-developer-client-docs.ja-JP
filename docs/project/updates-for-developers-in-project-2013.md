@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5b2b22cd-6e28-43a8-9092-b411da8bfb53
 description: 新しい機能には、プロジェクトのクライアント用のクライアント側オブジェクト モデル (CSOM)、残りのインターフェイス、レポート、リモート イベント レシーバー、宣言型ワークフローは、および作業ウィンドウ アドインの OData サービスが含まれます。
-ms.openlocfilehash: facd52c5ba2473de41f2a6bede431af0f55ba4ac
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e524fe7b8cfa813bd198e99a99cf77d6e2b1905d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804692"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567840"
 ---
 # <a name="updates-for-developers-in-project"></a>プロジェクトの開発者用の更新プログラム
 
@@ -24,7 +24,7 @@ Project Server データベースを結合して 1 つのデータベースにOD
 図および Project Server 2013 の主な変更点の詳細については、 [Project Server 2013 のアーキテクチャ](project-server-2013-architecture.md)を参照してください。
   
 > [!NOTE]
-> Project Server 2013 は、プラットフォーム上に構築、SharePoint Server 2013、および Project 2013 には、他の Office 2013 アプリケーションとインフラストラクチャの大部分が含まれています。 モデルのドキュメントを SharePoint のアドイン、SharePoint ベースのワークフローでは、Web パーツ、その他の SharePoint の機能、および Office アドインのドキュメントを使用して開発を参照してください[Office および SharePoint のアドイン](http://msdn.microsoft.com/library/fp161507%28office.15%29.aspx)、SharePoint 2013 開発の[概要](http://msdn.microsoft.com/library/jj164084%28office.15%29.aspx)。 
+> Project Server 2013 は、プラットフォーム上に構築、SharePoint Server 2013、および Project 2013 には、他の Office 2013 アプリケーションとインフラストラクチャの大部分が含まれています。 モデルのドキュメントを SharePoint のアドイン、SharePoint ベースのワークフローでは、Web パーツ、その他の SharePoint の機能、および Office アドインのドキュメントを使用して開発を参照してください[SharePoint アドイン](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-add-ins)、 [Office アドイン](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)、および SharePoint の[2013 開発の概要](http://msdn.microsoft.com/library/jj164084%28office.15%29.aspx)。 
   
 ## <a name="major-new-features-in-project-2013"></a>Project 2013 の主な新機能
 <a name="pj15_WhatsNew_MajorNewFeatures"> </a>
@@ -78,7 +78,7 @@ Visual Studio 2012 ののための Office 開発ツール、AppManifext.xml フ�
 > [!NOTE]
 > Project Server 2013 とオンライン プロジェクトは、SharePoint 2013 の ( [SharePoint 2013 で追加の認証ポリシー型](http://msdn.microsoft.com/library/124879c7-a746-4c10-96a7-da76ad5327f0%28Office.15%29.aspx)を参照してください) のアプリケーション専用の認証モデルを使わないでください。 
   
-開発方法の詳細については、配布する、ホスト、およびアドインを管理するを参照してください[SharePoint のアドイン](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70%28Office.15%29.aspx)と[Office アドイン](http://msdn.microsoft.com/library/1e123201-6e70-45c1-a48c-d5b955896ddb%28Office.15%29.aspx)、および SharePoint Server 2013 と Office 2013 の開発者向けドキュメントに関連するトピックです。 アクセス許可要求のスコープの他の SharePoint のアドインの詳細については、 [SharePoint 2013 で追加のアクセス許可](http://msdn.microsoft.com/library/5f7a8440-3c09-4cf8-83ec-c236bfa2d6c4%28Office.15%29.aspx)を参照してください。
+開発方法の詳細については、配布する、ホスト、およびアドインを管理するを参照してください[SharePoint のアドイン](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-add-ins)と[Office アドイン](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)、および SharePoint Server 2013 と Office 2013 の開発者向けドキュメントに関連するトピックです。 アクセス許可要求スコープの他の SharePoint のアドインについては、 [SharePoint 2013 で追加のアクセス許可](http://msdn.microsoft.com/library/5f7a8440-3c09-4cf8-83ec-c236bfa2d6c4%28Office.15%29.aspx)を参照してください。
   
 ### <a name="integrating-with-sharepoint-server"></a>SharePoint Server との統合
 <a name="pj15_WhatsNew_IntegrationWSS"> </a>
@@ -162,7 +162,7 @@ Project Server 2010 の 4 つのデータベースは、Project Server 2013 の 
   
 Project Server 2013 の OData サービスをオンラインに導入、設置型のアクセス。 オンラインのレポート テーブルおよびビューが、OData インターフェイスだけが公開されています。設置型で使用するため、odata を使用したり、レポートのテーブルと SharePoint ファーム内の ProjectService データベース内のビューに直接アクセスできます。 プロジェクトのオンラインでは、マルチ テナント データベースをサポートしていません。 それぞれの Project Web App の複数のインスタンスでは、独自のプロジェクトのデータベースがあります。 OData サービスは内部的にレポート テーブルおよびビュー、SQL クエリを実行し、XML または JSON ペイロードを提供します。 **ProjectData**スキーマの参照、Project Server 2013 に報告するために、OData サービスの概要については、 [ProjectData - プロジェクトの OData サービスの参照](https://msdn.microsoft.com/en-us/library/office/jj163015.aspx)を参照してください。
   
-OData クエリに関する一般的な情報を参照してください[OData: URI 規則](http://www.odata.org/developers/protocols/uri-conventions#FilterSystemQueryOption)。 たとえば、Project Web App のブラウザーで次のクエリを使用してプロジェクト名を"Test"で始まる場所の設置型のインスタンス内のプロジェクトのすべてを表示できます。 ブラウザーのページ内を右クリックし、**ソースの表示**] をクリックします。
+OData クエリに関する一般的な情報を参照してください[OData: URI 規則](https://www.odata.org/documentation/)。 たとえば、Project Web App のブラウザーで次のクエリを使用してプロジェクト名を"Test"で始まる場所の設置型のインスタンス内のプロジェクトのすべてを表示できます。 ブラウザーのページ内を右クリックし、**ソースの表示**] をクリックします。
   
 ```html
 http://ServerName /ProjectServerName /_api/ProjectData/Projects?$filter=startswith(ProjectName, 'Test') eq true
@@ -239,7 +239,7 @@ Project Server イベント ハンドラーを展開する前にインストー�
   
 - **拡張機能**[PSI 拡張機能のシナリオ](https://msdn.microsoft.com/library/office/ff843378%28v=office.14%29.aspx)は推奨されていませんし、将来のリリースではサポートされません。 設置 Project Server 2013 のシナリオでは、カスタムの Windows Communication Foundation (WCF) サービスを使用して統合が有効になります。 
   
-- **プロジェクト PSI**PSI の[プロジェクトのクラス](https://msdn.microsoft.com/library/office/websvcproject.project_di_pj14mref.aspx%28Office.15%29.aspx)の使用は推奨されていません。 すべての新しい開発[プロジェクトの CSOM](https://msdn.microsoft.com/library/office/microsoft.projectserver.client_di_pj14mref.aspx%28Office.15%29.aspx)を使用します。 プロジェクトの PSI を使用して Project Server 2013 のアプリケーションは引き続き動作が、プロジェクトのオンライン アプリケーションは CSOM と同じメソッドにすべてのプロジェクト クラスの PSI メソッドを置換する必要があります。
+- **プロジェクト PSI**PSI の[プロジェクトのクラス](https://docs.microsoft.com/en-us/office/client-developer/project/project-psi-reference-overview)の使用は推奨されていません。 すべての新しい開発[プロジェクトの CSOM](client-side-object-model-csom-for-project-2013.md)を使用します。 プロジェクトの PSI を使用して Project Server 2013 のアプリケーションは引き続き動作が、プロジェクトのオンライン アプリケーションは CSOM と同じメソッドにすべてのプロジェクト クラスの PSI メソッドを置換する必要があります。
   
 - **リソース計画の PSI**[リソース計画の PSI](https://msdn.microsoft.com/library/office/websvcresourceplan_di_pj14mref.aspx)の使用は推奨されていません。 Project 2013 の開発をサポートするのに続行されますが、将来のリリースではサポートされません。 
   
@@ -272,7 +272,7 @@ Project Server イベント ハンドラーを展開する前にインストー�
 ## <a name="comparing-project-server-on-premises-with-project-online"></a>オンプレミスの Project Server と Project Online との比較
 <a name="pj15_WhatsNew_Comparing"> </a>
 
-プロジェクト サーバー設置型またはオンラインのプロジェクトを使用するかどうか、どのような種類の拡張を作成するいずれの場合を決定するために、表 2 のオンライン プロジェクトを Project Server 2013 の設置型インストールの拡張機能を比較します。 表 2 では、展開、管理、または使用法の相違点は含まれません。 オンライン プロジェクトと Project Server 2013 の詳細については、 [Project 2013 の開発者](http://msdn.microsoft.com/en-US/office/fp161502)と[オンライン プロジェクト](http://www.microsoft.com/project/)を参照してください。
+プロジェクト サーバー設置型またはオンラインのプロジェクトを使用するかどうか、どのような種類の拡張を作成するいずれの場合を決定するために、表 2 のオンライン プロジェクトを Project Server 2013 の設置型インストールの拡張機能を比較します。 表 2 では、展開、管理、または使用法の相違点は含まれません。 オンライン プロジェクトと Project Server 2013 の詳細については、 [Project 2013 の開発者](http://msdn.microsoft.com/en-US/office/fp161502)と[オンライン プロジェクト](https://developer.microsoft.com/en-us/project)を参照してください。
   
 **表 2. オンプレミスの Project Server と Project Online の拡張性**
 
@@ -309,6 +309,6 @@ Office アドインでは、ソリューションを販売し、プロジェク�
 - [Office 開発者向け](http://msdn.microsoft.com/en-US/office)   
 - [SharePoint のアプリケーションでイベントの処理](http://msdn.microsoft.com/en-us/library/jj220048%28office.15%29.aspx)   
 - [Office ストア](http://office.microsoft.com/en-us/store/)   
-- [Project Online](http://www.microsoft.com/project/)
+- [Project Online](https://developer.microsoft.com/en-us/project)
     
 

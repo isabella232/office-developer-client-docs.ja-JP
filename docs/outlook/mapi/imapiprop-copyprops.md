@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: f65da1c8-d49b-44e8-8c66-9c53d088d334
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: ff8f13a1dcf678e1d05b6e8e083597156422b83d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: ee6fcaf2fa168f6be91b798efa249799f738bfa0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800668"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571081"
 ---
 # <a name="imapipropcopyprops"></a>IMAPIProp::CopyProps
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 選択したプロパティのコピーまたは移動します。 
   
@@ -39,7 +39,7 @@ HRESULT CopyProps(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpIncludeProps_
   
@@ -129,7 +129,7 @@ MAPI_E_UNEXPECTED_TYPE
   
 > プロパティの型は、呼び出し元の型ではありません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIProp::CopyProps**メソッドは、コピーまたは、選択したプロパティを現在のオブジェクトからコピー先のオブジェクトに移動します。 **CopyProps**は、返信または転送するメッセージ、返信を移動またはコピーを転送元のメッセージからのプロパティの一部のみ、主に使用されます。 
   
@@ -180,7 +180,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [IMAPIFolder::CopyMessages](imapifolder-copymessages.md)
   
-[IMAPIProgress: IUnknown](imapiprogressiunknown.md)
+[IMAPIProgress : IUnknown](imapiprogressiunknown.md)
   
 [IMAPIProp::CopyTo](imapiprop-copyto.md)
   
@@ -192,25 +192,25 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[PidTagContainerContents の標準的なプロパティ](pidtagcontainercontents-canonical-property.md)
+[PidTagContainerContents 標準プロパティ](pidtagcontainercontents-canonical-property.md)
   
-[PidTagContainerHierarchy の標準的なプロパティ](pidtagcontainerhierarchy-canonical-property.md)
+[PidTagContainerHierarchy 標準プロパティ](pidtagcontainerhierarchy-canonical-property.md)
   
-[PidTagDisplayName の標準的なプロパティ](pidtagdisplayname-canonical-property.md)
+[PidTagDisplayName 標準プロパティ](pidtagdisplayname-canonical-property.md)
   
-[PidTagFolderAssociatedContents の標準的なプロパティ](pidtagfolderassociatedcontents-canonical-property.md)
+[PidTagFolderAssociatedContents 標準プロパティ](pidtagfolderassociatedcontents-canonical-property.md)
   
-[PidTagMessageAttachments の標準的なプロパティ](pidtagmessageattachments-canonical-property.md)
+[PidTagMessageAttachments 標準プロパティ](pidtagmessageattachments-canonical-property.md)
   
-[PidTagMessageRecipients の標準的なプロパティ](pidtagmessagerecipients-canonical-property.md)
+[PidTagMessageRecipients 標準プロパティ](pidtagmessagerecipients-canonical-property.md)
   
-[PidTagObjectType の標準的なプロパティ](pidtagobjecttype-canonical-property.md)
+[PidTagObjectType 標準プロパティ](pidtagobjecttype-canonical-property.md)
   
 [SPropProblemArray](spropproblemarray.md)
   
 [SPropTagArray](sproptagarray.md)
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

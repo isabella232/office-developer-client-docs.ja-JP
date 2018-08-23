@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: ac67bb83-e4f3-4c82-995b-c11a2a195e90
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: ad5f4e896b748dc0d7495c428af093af57bc7cdd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 91c1d9293108b96fde43b769c97ec673f82a8cb7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800145"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563031"
 ---
 # <a name="gateway-mapping-responsibilities"></a>ゲートウェイ マッピングの責任
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI 対応のゲートウェイは、ゲートウェイのマッピングが可能なプロパティを持つように指定された特別なプロパティ セットの 1 つの名前付きプロパティを含むメッセージを受信するときにゲートウェイする必要がありますすべてのプロパティにマップ リンク先のメッセージング システムのプロトコル。 ゲートウェイが 2 つだけを処理するために期待されるが、MAPI では、ゲートウェイが、特別なプロパティ セット内のすべての名前付きプロパティを処理することをお勧め、: 電子メール アドレス、アドレスの種類です。 電子メール アドレスとアドレスの種類のプロパティは、メッセージの送信に直接影響、ために、ゲートウェイがこれら 2 つのプロパティのマッピングをサポートすることが重要です。 検索キーは、ユーザーのアドレスの種類とアドレスで構成されています、ためにを可能であれば、変換することもか。
   

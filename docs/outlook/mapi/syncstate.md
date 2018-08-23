@@ -8,16 +8,16 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 63c47e94-f603-aef9-afed-e3819bd79408
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 080556a7ed4530bb96db20fd96d9dda86672a720
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a27f38e759862c7091205a6f9a8aa1cde90c38e3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804093"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575533"
 ---
 # <a name="syncstate"></a>SYNCSTATE
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 この構造体は、レプリケーションの状態機械の状態を定義します。
   

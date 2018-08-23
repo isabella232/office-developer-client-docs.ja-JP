@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 017a62c0-49c6-47fb-acce-db58e6bb9cc5
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: c36c70eacffcb4a41af0e73eea85143ab737867f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cd86b9cc86f30aac75b732b97208933de4d336e9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801695"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566433"
 ---
 # <a name="opening-address-book-entries"></a>アドレス帳のエントリを開く
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアントまたはプロバイダーが要求されると、オブジェクトの 1 つを開くことを MAPI は、プロバイダーの[IABLogon::OpenEntry](iablogon-openentry.md)メソッドを呼び出します。 MAPI では、ターゲット オブジェクトを表すエントリの識別子が、 [MAPIUID](mapiuid.md)の部分のエントリ id を調べ、**への呼び出しでは、プロバイダーが登録されている**MAPIUID**に一致することによって、プロバイダーに属することを決定します。IMAPISupport::SetProviderUID**。 MAPI は、 **OpenEntry**メソッドを呼び出します。 プロバイダーが対応するオブジェクトを取得することで応答する必要があります: コンテナー、配布リスト、またはメッセージングのユーザーです。 
   

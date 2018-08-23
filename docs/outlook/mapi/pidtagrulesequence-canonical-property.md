@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c42f2539-f7d6-464a-a82c-f0ac51823168
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 29579f91a85e74b568610c749d9408f813f157f6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7f36562ba189cd8f547056b93c0f0373ee9a3360
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803442"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563493"
 ---
 # <a name="pidtagrulesequence-canonical-property"></a>PidTagRuleSequence 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ルールを評価および実行の順序を決定するために使用する値です。 
   

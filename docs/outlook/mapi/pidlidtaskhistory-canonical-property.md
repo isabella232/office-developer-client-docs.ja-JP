@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 104ef21c-b607-48b7-9b06-bc53b7d9b68a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6e53d91a80d7e3b3bb4bf02ff3446eb385293c6c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ba900ec4b8c8f1bcc2c85aae6c78ab59a43ee3cc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802228"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563626"
 ---
 # <a name="pidlidtaskhistory-canonical-property"></a>PidLidTaskHistory 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 タスクを最後に加えられた変更の種類を示します。
   

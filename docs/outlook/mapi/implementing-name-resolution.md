@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: a4c71b08-c47a-4421-8603-d5356d32dca9
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 4d55404149baca07a64b75d460bdfb2a8c541725
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 489a5888014fa9299b407ebf91759627427b69bc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800936"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571389"
 ---
 # <a name="implementing-name-resolution"></a>名前解決の実装
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アドレス帳プロバイダーは、名前解決をサポートするため、表示名を持つエントリ識別子を関連付けるプロセスです。 クライアントは、送信メッセージの受信者の一覧の各メンバーが有効なアドレスに対応していることを確認するのには[IAddrBook::ResolveName](iaddrbook-resolvename.md)を呼び出すときに名前解決を開始します。 
   

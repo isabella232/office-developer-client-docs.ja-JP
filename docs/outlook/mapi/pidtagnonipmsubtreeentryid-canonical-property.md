@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 03ad4bd7-3c0f-4355-9a19-51c99e6c6f7d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8ea4d975e59a57f6b5df7bdc0fd6aee72888fdf4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 52cff2c0738622abf17992b2fc5557afef8e69bc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803032"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563458"
 ---
 # <a name="pidtagnonipmsubtreeentryid-canonical-property"></a>PidTagNonIpmSubtreeEntryId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 Exchange のパブリック フォルダー ストア内の**NON_IPM_SUBTREE**フォルダーのエントリ ID を示します。 
   

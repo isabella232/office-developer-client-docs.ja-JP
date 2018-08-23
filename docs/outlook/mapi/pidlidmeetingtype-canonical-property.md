@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 290b290c-7836-4a7e-bf1a-8d0225a07e56
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e61ce7798c9e41dbb707d0d5773b116f7cce02d6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ebc7ed4563040e16c71e1df1094667f87a4c09b2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802039"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572369"
 ---
 # <a name="pidlidmeetingtype-canonical-property"></a>PidLidMeetingType 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 会議出席依頼または会議の更新の種類を示します。
   

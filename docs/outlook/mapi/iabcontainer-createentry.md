@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ea1daf74-d9e3-4304-bf5d-889afeea6ae9
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: acf9cee9bf0713b909b0d82fc606b015ac28474e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2f8a6baa9a910b91e633084f1d9cd8ac52b24d5b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800354"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575603"
 ---
 # <a name="iabcontainercreateentry"></a>IABContainer::CreateEntry
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージングのユーザー、配布リスト、または別のコンテナーにすることができますが、新しいエントリを作成します。
   

@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 1b3ae03c-6951-49e4-a489-4712d3f7ba72
 description: Visual C# や Visual Basic などのマネージ コード言語を使用して InfoPath ソリューションの作成をサポートするには、InfoPath セットアップ プログラムで [.NET プログラミング サポート] オプションは、次の 3 つの相互運用機能アセンブリをインストールします。
-ms.openlocfilehash: b6b37254773d758dc064e22045d68f29febe7bbe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 95c42e4b4fce9d51a0cc97d456c7700a8022013a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799012"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564130"
 ---
 # <a name="about-the-microsoft-office-infopath-primary-interop-assembly"></a>Microsoft Office InfoPath プライマリ相互運用機能アセンブリについて
 
@@ -35,11 +35,11 @@ InfoPath セットアップ プログラムの既定のインストール オプ
   
 Microsoft.Office.Interop.InfoPath アセンブリが GAC に表示されない場合は、InfoPath が正しくインストールされていることを確認する必要があります。 **マイ コンピューターから実行**まで、.NET Framework 1.1 再配布可能な.NET Framework 1.1 ソフトウェア開発キット (SDK)、またはそれ以降のバージョンの.NET Framework のセットアップ プログラムで [ **.NET プログラミング サポート**] オプションを設定する既定では、セットアップを実行する前にインストールされています。 これらの相互運用機能アセンブリがコンピューターで利用できない場合は、1.1 以降の.NET Framework がインストールされていると **.NET のプログラミング機能を設定することにより設定を変更するのには**プログラムと機能**、[**コントロール パネル**] からを使用しているを確認する必要があります。サポート**[ **Microsoft Office InfoPath**で **[マイ コンピューターから実行**する] オプション。
   
-.NET Framework 1.1 再配布可能なダウンロードについては、 [.NET Framework 1.1 再配布可能な](http://msdn.microsoft.com/netframework/technologyinfo/redist/default.aspx)を参照してください。
+.NET Framework 1.1 再配布可能なダウンロードの詳細については、 [.NET Framework 1.1 再配布可能な](https://www.microsoft.com/en-us/download/details.aspx?id=26)を参照してください。
   
 ## <a name="the-microsoftofficeinteropinfopath-namespace"></a>Microsoft.Office.Interop.InfoPath 名前空間
 
-特定のタスクのマネージ コードを作成するプロセスは、Visual Basic for Applications や JScript などの言語を使用して行う同じタスクと似ていますが、Microsoft Visual Studio の**オブジェクト ブラウザー**から **Microsoft.Office.Interop.InfoPath** 名前空間を表示するときに公開されるオブジェクト モデルはさらに複雑です。これは、.NET Framework の相互運用性は、すべての public インターフェイスを公開する COM サーバー、および .NET Framework 自体に必要ないくつかの追加の構成要素を必要とするためです。相互運用機能アセンブリによって公開されるオブジェクト モデルがどのように複雑に見えるか、またその理由の詳細については、「[InfoPath 2003 の互換性のあるオブジェクト モデル](http://msdn.microsoft.com/library/e4511af6-d7e7-44ad-a50d-1b7ee04f8215%28Office.15%29.aspx)」のトピックの「COM オブジェクトが InfoPath 2003 互換オブジェクト モデルに公開されるしくみ」を参照してください。 
+特定のタスクのマネージ コードを作成するプロセスは、Visual Basic for Applications や JScript などの言語を使用して行う同じタスクと似ていますが、Microsoft Visual Studio の**オブジェクト ブラウザー**から **Microsoft.Office.Interop.InfoPath** 名前空間を表示するときに公開されるオブジェクト モデルはさらに複雑です。これは、.NET Framework の相互運用性は、すべての public インターフェイスを公開する COM サーバー、および .NET Framework 自体に必要ないくつかの追加の構成要素を必要とするためです。相互運用機能アセンブリによって公開されるオブジェクト モデルがどのように複雑に見えるか、またその理由の詳細については、「[InfoPath 2003 の互換性のあるオブジェクト モデル](../form-templates/infopath-2003-compatible-object-models.md)」のトピックの「COM オブジェクトが InfoPath 2003 互換オブジェクト モデルに公開されるしくみ」を参照してください。 
   
 ### <a name="using-intellisense"></a>IntelliSense を使用する
 

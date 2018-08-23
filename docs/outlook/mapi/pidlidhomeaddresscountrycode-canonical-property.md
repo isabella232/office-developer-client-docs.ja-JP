@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 048ce01d-f2c2-40d1-88aa-25206be58dd1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f1da798d23e4ddf903844de6091f631d78bf44b2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1c775d982c02225fed5e4a78cd17294c4e83e7a2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802008"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575764"
 ---
 # <a name="pidlidhomeaddresscountrycode-canonical-property"></a>PidLidHomeAddressCountryCode 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 連絡先の自宅の住所の国コードを指定します。
   

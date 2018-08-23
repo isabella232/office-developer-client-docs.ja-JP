@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a651af84-1711-449e-ba7e-5ce09cafa02b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 54fe624c98ddb631326853f387372468a61b2f70
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d2917f2119fde38686397b65956113bc430b2e31
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803535"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570815"
 ---
 # <a name="pidtagservicedllname-canonical-property"></a>PidTagServiceDllName 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 構成にするのにはメッセージ サービス プロバイダーのエントリ ポイント関数を含む DLL のファイル名が含まれています。
   

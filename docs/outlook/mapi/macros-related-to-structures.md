@@ -10,18 +10,18 @@ api_type:
 - COM
 ms.assetid: e58c4954-e6b5-469d-898b-cef0a8fd612c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e60ba98bdf82f7e0f02aefc858f2eefd4c7d91f7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 177a453f64dd41197b18418eefbfdf9868ad2849
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801284"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571641"
 ---
 # <a name="macros-related-to-structures"></a>構造体に関連するマクロ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このセクションのトピックでは、MAPI の構造体に関連するマクロについて説明します。 詳細については、相互参照の他の文書に、またはこのドキュメントの他のトピックも含まれています。 
   

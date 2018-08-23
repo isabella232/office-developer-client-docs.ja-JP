@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 3e506b29-c7e3-40d6-a08b-22fa87088c2d
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d9f69098f9c53e75dea6f485248d61d277e181c0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3fbf8b423cfd4206a0143b5639c85dbcacce2fae
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800356"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570983"
 ---
 # <a name="iablogonunadvise"></a>IABLogon::Unadvise
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [IABLogon::Advise](iablogon-advise.md)メソッドの呼び出しで以前設定された通知をキャンセルします。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e4071307-6205-4079-ab65-7499d14f145c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b90639675fa566a83dd78c6ac250f743d68480e9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6cafa336bf915abd35de07a11ee65baf9ac4d69f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803487"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572691"
 ---
 # <a name="pidtagsearchfolderlastused-canonical-property"></a>PidTagSearchFolderLastUsed 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォルダーにアクセスした最後の時間を表します。
   

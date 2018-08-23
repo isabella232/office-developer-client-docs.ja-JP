@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 95db4837-400f-476f-b313-60e8baa1c6d1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: aa144ca93e8fad9b9b5a5da1ee457e5cc3bbd841
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7c72b87eec6d0a14b0ebba10529ef5d898747028
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803398"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572978"
 ---
 # <a name="pidtagrtfsyncbodycrc-canonical-property"></a>PidTagRtfSyncBodyCrc 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ テキストに計算された巡回冗長検査 (CRC) が含まれています。
   

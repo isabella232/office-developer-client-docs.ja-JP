@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 7974cae1-10f1-42e9-8be4-c02f2bd86714
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 7c3c4479cd401a163e34c819ecd44e86d1d01965
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 6393de45dbfd130e15a0678f2b6a7f18968dfa03
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801477"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573216"
 ---
 # <a name="mapi-tables"></a>MAPI テーブル
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI テーブルは、特定の種類の場合は、その他の MAPI オブジェクトに属するプロパティのコレクションを表示するために使用される MAPI オブジェクトです。 MAPI テーブルは、オブジェクトとオブジェクトのプロパティを表す各列を表すすべての行と行と列の形式で構成されています。 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) のプロパティを開き、オブジェクトを変更するために使用する識別子は、通常それぞれの行に含まれるプロパティの 1 つ。 
   
@@ -39,7 +39,7 @@ MAPI では次の図は、テーブルの頻繁に使用されるのいずれか
    
 メッセージに表示されるプロパティのセットをテーブルに表示される列のセットと同じことを確認します。 テーブルの実装者は、ここでは、メッセージ ・ ストア プロバイダー、既定の順序で列の既定の設定は装置です。 クライアントでは、追加の列を要求するか、既定を拒否することは、この列のセットを変更でき、特定の方法で注文することを確認することができます。 クライアントも注文できます、行、1 つまたは複数の列の値に基づいて並べ替えること。
   
-**フォルダーの内容を表示するテーブルを使用してください。**
+**テーブルを使用してフォルダーの内容を表示**
   
 ![フォルダーの内容を表示するテーブルを使用してください。](media/amapi_54.gif "フォルダーの内容を表示するテーブルを使用してください。")
   
@@ -51,5 +51,5 @@ MAPI では次の図は、テーブルの頻繁に使用されるのいずれか
     
 ## <a name="see-also"></a>関連項目
 
-- [MAPI �̊T�O](mapi-concepts.md)
+- [MAPI の概念](mapi-concepts.md)
 

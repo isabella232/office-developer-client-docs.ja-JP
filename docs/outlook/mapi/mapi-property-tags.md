@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 380dad4c-7fbf-4c49-b67c-ab612c923499
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 8dc37f1b594eeaa199b48f5946d10e60427d4988
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 314d2d6987a8bc669239652b83a31b5927723c68
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801434"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22562926"
 ---
 # <a name="mapi-property-tags"></a>MAPI プロパティ タグ
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロパティ タグは、16 から 31 のビットの一意のプロパティ識別子とプロパティの型のビット 0 ~ 15 は次の図に示すように含まれている 32 ビットの数値です。 
   

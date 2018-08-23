@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 7d601cee-ffc4-4c7c-8006-40b717dee247
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 9c0ba8f1f0bf31bb892f380df310cd9fa7a8a24f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2346ec8541e1a8b7f5ea198722833447f9f5a289
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801093"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566475"
 ---
 # <a name="invalidating-an-object"></a>オブジェクトの無効化
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロバイダーのシャット ダウン プロセスの一環として、オブジェクトを無効にすることもできます。 オブジェクトが無効では、vtable と vtable が同じ 3 つの**IUnknown**メソッドの実装が含まれている: **AddRef**、**リリース**、および**バージョン管理規則によって**。 [IMAPISupport::MakeInvalid](imapisupport-makeinvalid.md)、3 つの一般的なプロバイダーの種類のそれぞれのサポート オブジェクトに含まれるメソッドを呼び出すことによってオブジェクトを無効にします。 プロバイダーは、通常、ログオン オブジェクトの**ログオフ時**のメソッドの実装ではこの呼び出しを作成します。 
   

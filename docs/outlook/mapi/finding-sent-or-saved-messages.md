@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 6b6714a5-7f36-4a72-9a2a-0d7fdf0e21b7
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 6e8b618e477475e8e7f45c266791086af63d8bfb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5a2e4f4b248cb8eefd5ee37c0c90d5ef9c0d0cac
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800072"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565019"
 ---
 # <a name="finding-sent-or-saved-messages"></a>送信または保存されたメッセージの検索
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
  **保存または送信したすべての送信メッセージを検索するには**
   

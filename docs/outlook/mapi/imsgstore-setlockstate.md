@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4b1176ec-4126-43f5-856d-cbab8d622825
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a4e924489f2ec656f473f28407d528e9c2ddda5c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2efee531e277b6295b7d4bc299eefc789a805d34
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801005"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571088"
 ---
 # <a name="imsgstoresetlockstate"></a>IMsgStore::SetLockState
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ロックまたはメッセージのロックを解除します。 このメソッドは、MAPI スプーラーによってのみ呼び出されます。
   

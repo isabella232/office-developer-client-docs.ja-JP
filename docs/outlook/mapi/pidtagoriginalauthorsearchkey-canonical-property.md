@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4a10cf99-c5e6-4a24-b531-3aebb7800bfe
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e5b283376d018b7b2675e05f994d586126437590
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 225c0813139a74b735b5b8a3d5a729e630cd3511
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803052"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563339"
 ---
 # <a name="pidtagoriginalauthorsearchkey-canonical-property"></a>PidTagOriginalAuthorSearchKey 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 転送または返信する前にメッセージは、メッセージの最初のバージョンの作成者の検索キーが含まれています。
   

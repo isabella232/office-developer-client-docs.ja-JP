@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 0246138f-c55e-4353-8e53-e973f524d52c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 41f5acddf273de39a7d5952ccb00e868170c692d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 119d162b50048e69168aa864e5d19ad806758456
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801669"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575995"
 ---
 # <a name="noscribble-state"></a>NoScribble 状態
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 NoScribble 状態では、メッセージに対する変更が保存されていることを示します。 クライアント アプリケーションによってフォーム オブジェクトの[IPersistMessage::Save](ipersistmessage-save.md)メソッドが呼び出されたときに、フォーム オブジェクトのユーザー インターフェイスに格納されている値の実際の保存が発生します。 次の表では、NoScribble の状態から有効な遷移について説明します。 
   

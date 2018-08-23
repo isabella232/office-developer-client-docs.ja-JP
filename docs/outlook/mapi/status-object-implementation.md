@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 48fd3e28-c2d2-474d-9487-5e2f08ca7319
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 379378f2092f7b119a40ac44cbdcfa03f254b448
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e019ad8d0063514cd41017b459cc701c45c22a2e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804019"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569597"
 ---
 # <a name="status-object-implementation"></a>ステータス オブジェクトの実装
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 すべてのサービス プロバイダーは、状態オブジェクトを実装し、セッション ・ ステータス ・ テーブルからのプロパティを提供する必要があります。 制御するリソースの数によっては、状態テーブルでは、1 つまたは複数の行を含めることができます。 たとえば、トランスポート プロバイダーは、状態テーブルには、各メッセージ キューの管理行を作成する必要があります。 を変更した場合は、適切な状態のテーブルの行を更新しなければなりません。 状態オブジェクトを実装すると、状態テーブルに含まれている情報およびテーブルに含まれていないその他の情報へのアクセスを提供できます。
   

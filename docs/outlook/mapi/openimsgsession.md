@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f75229e3-5f44-4298-8706-9eddf0ef124c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e7f652e7426792d8b4c878b7f6738439aec65348
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 39dd053b2896ebcfcdec97d976af3e75e19f8c0b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801681"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564956"
 ---
 # <a name="openimsgsession"></a>OpenIMsgSession
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 作成し、その中に作成されたメッセージをグループ化するメッセージ セッションを開きます。 
   
@@ -45,7 +45,7 @@ SCODE OpenIMsgSession(
 
  _lpMalloc_
   
-> [in]OLE [IMalloc](http://msdn.microsoft.com/library/047f281e-2665-4d6d-9a0b-918cd3339447%28Office.15%29.aspx)インターフェイスを公開すること、メモリ アロケーター オブジェクトへのポインター。 MAPI では、OLE [IStorage](http://msdn.microsoft.com/library/stg.istorage%28Office.15%29.aspx)インターフェイスを使用する場合、この割り当てメソッドを使用する必要があります。 
+> [in]OLE [IMalloc](https://docs.microsoft.com/en-us/windows/desktop/api/objidl/nn-objidl-imalloc)インターフェイスを公開すること、メモリ アロケーター オブジェクトへのポインター。 MAPI では、OLE [IStorage](https://docs.microsoft.com/en-us/windows/desktop/api/objidl/nn-objidl-istorage)インターフェイスを使用する場合、この割り当てメソッドを使用する必要があります。 
     
  _ulFlags_
   

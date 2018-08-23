@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 8668ba4f-3236-4a87-a5aa-9cf7eea3d87b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6cf81a5b4c10cb7bff5f03a1b25d11bbaa8ff277
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b49398b822e6972a8a6d02e1dff9c2316ce6eb33
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803102"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566636"
 ---
 # <a name="pidtagoriginalsubject-canonical-property"></a>PidTagOriginalSubject 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージに関するレポートで使用するための元のメッセージの件名が含まれています。
   

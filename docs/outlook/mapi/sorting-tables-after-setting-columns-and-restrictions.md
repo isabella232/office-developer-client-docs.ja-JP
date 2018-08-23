@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 57db0314-1df0-4fd2-b443-223b0512f1ad
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 9e75143cb59e782993b9a7f9937432f0b4894d5f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9f975ed1b9036bce5ed225b2a9020262260f4f57
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803988"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572145"
 ---
 # <a name="sorting-tables-after-setting-columns-and-restrictions"></a>列および制限の設定後のテーブルの並べ替え
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 並べ替えられたテーブルのビューを制限するには、常に確認する必要があります次**IMAPITable**は次の順序で呼び出されます。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 5e6a9f3e-79be-4ffd-9d42-3a14cabb1435
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3095907498b1ce7ae6b3666e0678dd0c5f76c23e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 828d7ebcbceead02441165e3af92ec7b47d9f001
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800280"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564627"
 ---
 # <a name="hrdecomposemsgid"></a>HrDecomposeMsgID
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ・ ストア内のメッセージでは通常、オブジェクトの複合のエントリ id ストア内のオブジェクトのエントリ id とストアのエントリの識別子に ASCII 文字を分離します。 
   

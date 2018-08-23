@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 773f6671-cc21-4d1f-a11d-308bc71c852d
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 16f192ae816aba2dd0e34a42fba211c3ef70ba47
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b5c8fd8c757de995e2a2e4239be614cf171fcb44
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801542"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566188"
 ---
 # <a name="mappings-and-mapping-signatures"></a>マッピングとマッピングの署名
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 サービス プロバイダーは、名前付きプロパティをサポートする場合、id と名前のペアの各セットをマッピングと呼びます。 マッピングの 1 つまたは複数のサービス プロバイダーをサポートできます。 1 つのメッセージ ストア プロバイダー、たとえば、すべてのメッセージ、フォルダー、およびメッセージ ストアのオブジェクト名と、対応する識別子の 1 つのリストを操作するのに**GetIDsFromNames**および**GetNamesFromIDs**メソッドを実装できます。 別のメッセージ ストア プロバイダーは、すべてのフォルダーと、それに含まれるメッセージの 1 つのリストまたはすべてのメッセージとすべてのフォルダーの一意のリストを実装可能性があります。 メッセージごとに固有のマッピングを使用するメッセージ ストア プロバイダーは、指定したプロパティ名のプロパティの識別子がメッセージからを異なるため、フォルダーの内容のテーブルに表示する名前付きプロパティを許可できません。 MAPI では、プロバイダーがシンプルにして、すべてのテーブルを含むオブジェクトの 1 つのリストで、操作をお勧めします。 
   

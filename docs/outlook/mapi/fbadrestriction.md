@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 6ad3638c-d088-4a89-9b0d-f5b672162203
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 43e0d8d28836b3114ab2029bc1f241197c569ffc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3d729e2a12ee19ee3aa4ded71263697eb739f154
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800040"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566307"
 ---
 # <a name="fbadrestriction"></a>FBadRestriction
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 テーブルのビューを制限するために使用制限を検証します。 
   

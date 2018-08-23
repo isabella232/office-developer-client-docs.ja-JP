@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: de3a2297-e0cc-427b-a978-52bade4d9bce
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1593152786a3345827089e5f6702454896944b1f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 876c8fc3667929e3c2e7403e71e6d392981d34f1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801676"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573356"
 ---
 # <a name="objectnotification"></a>OBJECT_NOTIFICATION
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 変更が行われて、次のようにしてコピーまたは変更されたオブジェクトに関する情報が含まれています。
   

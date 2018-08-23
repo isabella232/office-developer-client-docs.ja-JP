@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d9561d13-8d52-500c-5369-15a2cf5c92c3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 498a740a6523434cc6c70793cf98fd1e2ccfbdb3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0f65c197999f23d959657cbfee9c6fbb0aaf439f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803488"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566286"
 ---
 # <a name="pidtagsearchrecipientemailbcc-canonical-property"></a>PidTagSearchRecipientEmailBcc 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 照会中の電子メール アドレスまたはストアに未送信のメッセージの **[bcc]** 行に受信者の表示名の一覧で、Unicode 文字列が含まれています。 
   

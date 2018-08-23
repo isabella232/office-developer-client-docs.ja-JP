@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 7676f6f8-28a6-4409-b669-fd2cd1a9f0ab
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4b4b025fb43e78829206bec964aa6c6b5b51ebba
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a689812204354f82dc6c8ffb13771f0415a8935d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801918"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22562996"
 ---
 # <a name="pidlidfax2addresstype-canonical-property"></a>PidLidFax2AddressType 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 連絡先の自宅の fax アドレスのアドレスの種類を指定します。
   

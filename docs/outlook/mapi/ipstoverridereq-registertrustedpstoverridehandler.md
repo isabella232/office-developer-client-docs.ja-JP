@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4a73c77c-7e32-4302-bffe-a1ea13574731
 description: '最終更新日: 2013 年 2 月 24 日'
-ms.openlocfilehash: 4fc3b7427fc13a024aab38c7b7df1d940a4730ac
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 62269b823810964fc0e5749aa6a57d39c503e2b4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801186"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573580"
 ---
 # <a name="ipstoverridereqregistertrustedpstoverridehandler"></a>IPSTOVERRIDEREQ::RegisterTrustedPSTOverrideHandler
 
  
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 個人用フォルダー (.pst) ファイルのロックを解除する手順を開始します。
   

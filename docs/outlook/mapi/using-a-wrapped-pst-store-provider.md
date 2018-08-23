@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 98f08432-e86c-cba6-45fd-5a6c94d50aaf
 description: '最終更新日: 2012 年 7 月 3 日'
-ms.openlocfilehash: 4a2ccbbcdd3459af6b69156d80b37695251ba8d6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e74ccd44797bb5629bfe4f390b099771c6932a9b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804194"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566468"
 ---
 # <a name="using-a-wrapped-pst-store-provider"></a>ラップされた PST ストア プロバイダーを使用します。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ラップされた個人用フォルダー ファイル (PST) のストア プロバイダーを使用することができます、前に初期化し、ラップされた PST ストア プロバイダーを構成する必要があります。 ラップされた PST ストア プロバイダーを構成した後、できるように、MAPI スプーラーと MAPI にログオンできます、メッセージ ストア プロバイダーの機能を実装しなければなりません。 初期化し、ラップされた PST ストア プロバイダーへのログインの詳細については、[ラップ PST ストア プロバイダーを初期化](initializing-a-wrapped-pst-store-provider.md)し、[ラップ PST ストア プロバイダーへのログ](logging-on-to-a-wrapped-pst-store-provider.md)を参照してください。
   

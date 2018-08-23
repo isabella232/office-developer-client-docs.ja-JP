@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b79aa2b7-b6e0-46dc-89f1-f801a6b5737a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 316bd4169e3e714e7d36a16cab417a1ee2068594
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0872a2c0ebef5e83052fe671e4b463e980bc4e8b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802082"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563290"
 ---
 # <a name="pidlidownercriticalchange-canonical-property"></a>PidLidOwnerCriticalChange 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 日付と時刻を開催者が会議出席依頼が送信されたときを指定します。
   

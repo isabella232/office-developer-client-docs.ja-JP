@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 41e5c88c-d79d-4e9f-81f4-c4365cfaa15d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e23c73931c9051b61d30b7ea7e9c54d06a4d9c33
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 99a8473abf01467c534c0ea829e342fa46489e99
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800911"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568022"
 ---
 # <a name="implementing-a-logon-object"></a>ログオン オブジェクトの実装
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 すべてのアドレス帳、メッセージ ・ ストア、およびトランスポート プロバイダーは、 [IABProvider::Logon](iabprovider-logon.md)、 [IMSProvider::Logon](imsprovider-logon.md)、または[IXPProvider::TransportLogon](ixpprovider-transportlogon.md)の実装の一部としてのログオン オブジェクトをインスタンス化します。 ログオン オブジェクトでは、MAPI クライアントの要求のためのメソッドを実装します。 サービス プロバイダーの種類によっては、ログオン オブジェクトは次のインターフェイスのいずれかでサポートされます。 
   

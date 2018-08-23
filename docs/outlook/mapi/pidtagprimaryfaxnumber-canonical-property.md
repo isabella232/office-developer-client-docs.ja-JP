@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a95330ab-fde7-4ad1-82ce-143ff2120306
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5d08bd4d3932c2e0b4d7d179bb9e0cb04467e8d3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8be851270b4b4212928728eb8c7f44996f91d6fa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803176"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563668"
 ---
 # <a name="pidtagprimaryfaxnumber-canonical-property"></a>PidTagPrimaryFaxNumber 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 受信者のプライマリの fax の電話番号が含まれています。
   

@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 25787ee0-0cd3-e448-a54e-a6aa03b8b718
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 40f8f2b2d1b4dc6316e1716e102217de43198833
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9711a930424deb8a9a9bc2b61f6da6e87f15ce6b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803404"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567224"
 ---
 # <a name="pidtagrpcoverhttpproxyserver-canonical-property"></a>PidTagRpcOverHttpProxyServer 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 HTTP プロトコルであるか、または URL の前にあるハイパー テキスト転送プロトコル セキュア (HTTPS) プロトコルに Microsoft Outlook を Microsoft Exchange Server に接続するために使用するプロキシ サーバーの URL が含まれています。
   

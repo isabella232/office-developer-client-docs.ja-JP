@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: b72a0d36-c489-41d6-af57-72fbf4b7a3f5
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 09cac591aac9d266571348531e378974b86a3a9d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9c9c75d0ae4b9fe060d6717dfa11ad418cbb715b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800088"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564648"
 ---
 # <a name="folder-associated-information-tables"></a>フォルダー関連情報テーブル
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI では、関連する情報のテーブルを処理するときに使用する各種の MAPI コンポーネントの MAPI_ASSOCIATED フラグを定義します。 メッセージ ・ ストア内の各フォルダーには、標準的な内容のテーブルと、関連する内容のテーブルが必要です。 クライアント アプリケーションでは、フォームとビューを保持するためにフォルダーの内容が関連付けられているテーブルに特別なメッセージを保存します。 実際には、フォームとビューをサポートするため、メッセージ ストア プロバイダーは、関連付けられている内容のテーブルを実装しなければなりません。
   

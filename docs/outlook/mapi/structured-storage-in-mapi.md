@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 642a678b-4bf2-4246-85cb-c798de23e36f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 462ee84d5e9acd26f80bae6516179f21651749be
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 937643d90534f73477b90fd7ce883615a7e296f2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804041"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569716"
 ---
 # <a name="structured-storage-in-mapi"></a>MAPI での構造化ストレージ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 COM で導入されたストレージの階層的な組織には、構造化ストレージ 構造化ストレージ環境でのオブジェクトの 2 つまたは 3 つのタイプにストレージが構成されています。 
   

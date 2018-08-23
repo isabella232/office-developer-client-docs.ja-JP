@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 8316ff89-104d-43fd-902b-476fe567e23b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 1b59071758aad9c71939eb9efc029005806b2a37
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fe722e8723fdc3868cbbc3188f03e13ef3f466f3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801009"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575337"
 ---
 # <a name="imsgstoregetoutgoingqueue"></a>IMsgStore::GetOutgoingQueue
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 発信キュー テーブル、メッセージ ストアの送信キュー内のすべてのメッセージに関する情報が含まれているテーブルへのアクセスを提供します。 このメソッドは、MAPI スプーラーによってのみ呼び出されます。
   

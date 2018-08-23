@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 80ba893d-3380-4db1-9175-f5b84cb57def
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 69ee06ef8c8f5499dec41232d3dc7b374b15a744
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e97e1d5302d8247cb09ce7cb1b581582405300a5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799747"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568130"
 ---
 # <a name="callerrelease"></a>CALLERRELEASE
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 テーブル ビューがリリースされたとき、テーブルのデータ オブジェクトをリリースできるコールバック関数を定義します。 
   

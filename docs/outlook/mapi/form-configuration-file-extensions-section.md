@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 4817e446-982d-491c-abcf-cc888a771afa
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7c26b86ad4d6c7fd565abddbfc76f50ac3dccaf8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 459c5f5a34421583141028cd9accad5e242d31ad
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800080"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573559"
 ---
 # <a name="form-configuration-file-extensions-section"></a>フォーム構成ファイル [Extensions] セクション
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **[拡張機能]** セクションには、フォーム構成ファイルの **[説明]** セクションに記載されている基本的なもの以外の任意の属性には、フォームでは、通常、名前付きプロパティを設定するの拡張属性が一覧表示されます。 拡張属性は、プロパティ タグで設定する上位ビットの**IMAPIFormInfo**オブジェクトの**GetProps**メソッドへの呼び出しから返されるプロパティです。 クライアント アプリケーションは、該当する場合、これらのタグを取得することによって、フォームの拡張属性を決定できます。 これを行うには、クライアントは、フォームのプロパティの名前を渡して、 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)メソッドを呼び出すし、プロパティを取得する[IMAPIProp::GetProps](imapiprop-getprops.md)メソッドを呼び出します。 
   

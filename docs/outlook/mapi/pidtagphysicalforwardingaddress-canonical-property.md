@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f9506faf-a75a-47a9-b32b-00780e1c5df4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0306abff23002fd8a55e353e38f0c1bc5dd336b3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7aa56e8c472da4d597733393313e44dbf1c1028f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803184"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569632"
 ---
 # <a name="pidtagphysicalforwardingaddress-canonical-property"></a>PidTagPhysicalForwardingAddress 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージの受信者の物理的な転送先アドレスが含まれていて、メッセージのレポートでのみ使用します。
   

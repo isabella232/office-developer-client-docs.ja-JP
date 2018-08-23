@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d1ca619e-8bdc-417b-aed6-23dd30e6eafa
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2787150a9fa0fc41e04c58b4a4310ffa844f3743
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1f4e6c49ca1c537f78ccce708c4a0b00f81ad7e4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800596"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567931"
 ---
 # <a name="imapimessagesitegetstore"></a>IMAPIMessageSite::GetStore
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このようなストアが存在する場合は、現在のメッセージを含むメッセージ ストアを返します。 埋め込まれたメッセージは、メッセージ ・ ストア内で直接の代わりに別のメッセージに格納されている_ppStore_パラメーターでは、このメソッドは NULL を返します。 
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 632d3ef9-43c5-429a-84d7-2dce543d49fb
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 96e2ca38391931508dd9f3f78f3ba69e6f8b9c15
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 47b209b9a8818cf235b7c28593da5778dd944989
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801276"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568701"
 ---
 # <a name="loading-message-store-providers"></a>メッセージ ストア プロバイダーの読み込み
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアント アプリケーションは、メッセージ ストアを開いたら、MAPI は、メッセージ ストア プロバイダーの DLL をメモリに読み込みます。 MAPI には、DLL が読み込まれたら、メッセージ ストア プロバイダーが、MAPI の間で非常に特定、一連のメソッド呼び出しが発生します。 このメソッドの呼び出し順序が最上位レベルを取得するための MAPI を有効に[IMSProvider: IUnknown](imsprovideriunknown.md)、 [IMSLogon: IUnknown](imslogoniunknown.md)、および[IMsgStore: IMAPIProp](imsgstoreimapiprop.md)インターフェイス、およびメッセージ ストア プロバイダーは、MAPI のサポート オブジェクトを取得することができます。 呼び出しシーケンスの後メッセージ ストア プロバイダーがクライアントからのログオンを使用する準備があります。 
   

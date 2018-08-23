@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 670fb896-9aaf-4a96-83f7-76237409e956
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 1eb4e150be68ea01060c7afaed489c8759b576db
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0366e889f1c63e5fe40760ca80cec701cd6b3713
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801671"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573538"
 ---
 # <a name="opening-the-default-message-store"></a>既定のメッセージ ストアを開く
 
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 特定のセッションでは、1 つのメッセージ ・ ストアは、既定のメッセージ ストアとして機能します。 既定のメッセージ ストアには、次の特徴があります。
   

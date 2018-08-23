@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 7180bff2-91ad-4e11-923e-2a9acefa3215
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 4272edef5b1b72944d1d27f0e4dd99ee4956aa57
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 834b010dc4810e26264bb418de9630bc83b99810
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800975"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565292"
 ---
 # <a name="imsgserviceadmingetprovidertable"></a>IMsgServiceAdmin::GetProviderTable
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロバイダー テーブル、プロファイル内のサービス プロバイダーの一覧へのアクセスを提供します。
   

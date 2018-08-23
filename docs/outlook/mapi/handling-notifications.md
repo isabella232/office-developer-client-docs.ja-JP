@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 451b71da-a888-4d8f-9814-12f9f846de05
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: fdd66e4a27209e6b80757bcf52408eb0cea43794
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4c19e88ac1cfb29a9841ec78516410e23b3e5403
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800183"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567581"
 ---
 # <a name="handling-notifications"></a>通知の処理
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 通知が別に通知する 1 つのオブジェクトを有効にするオブジェクトの変更が行われています。 変更の種類は、"イベント"と呼ばれます。 MAPI では、通知を生成するいくつかのイベントを定義します。 
   

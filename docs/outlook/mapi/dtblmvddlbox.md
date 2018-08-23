@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0e6283dc-9a08-460f-9400-03f0ceb4081c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ede0a448a32565446e614fc2d14f2a72a9549dad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 910f779f3463ee5dccd052655a442ef24c2cce58
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799990"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570682"
 ---
 # <a name="dtblmvddlbox"></a>DTBLMVDDLBOX
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ディスプレイ テーブルから組み込まれているダイアログ ボックスで使用するボックスの一覧について説明します。
   

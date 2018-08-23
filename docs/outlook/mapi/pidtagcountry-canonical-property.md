@@ -1,5 +1,5 @@
 ---
-title: PidTagCountry の標準的なプロパティ
+title: PidTagCountry 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c9470496-fb37-4019-ae1b-b4f93ac55048
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: f9c09e963ecbb5ddeecff1ad43e021d8718e0729
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 14d51b0af4828dc22127322f3f41f28b419e5ea8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802658"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569919"
 ---
-# <a name="pidtagcountry-canonical-property"></a>PidTagCountry の標準的なプロパティ
+# <a name="pidtagcountry-canonical-property"></a>PidTagCountry 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 受信者の国または地域の名前が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_COUNTRY、PR_COUNTRY_A、PR_COUNTRY_W、PR_BUSINESS_ADDRESS_COUNTRY、PR_BUSINESS_ADDRESS_COUNTRY_A、PR_BUSINESS_ADDRESS_COUNTRY_W  <br/> |
+|関連するプロパティ:  <br/> |PR_COUNTRY、PR_COUNTRY_A、PR_COUNTRY_W、PR_BUSINESS_ADDRESS_COUNTRY、PR_BUSINESS_ADDRESS_COUNTRY_A、PR_BUSINESS_ADDRESS_COUNTRY_W  <br/> |
 |識別子:  <br/> |0x3A26  <br/> |
-|データを入力します。  <br/> |PT_UNICODE、PT_STRING8  <br/> |
-|領域:  <br/> |連絡先  <br/> |
+|データの種類 :   <br/> |PT_UNICODE、PT_STRING8  <br/> |
+|領域:  <br/> |Contact  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これらのプロパティでは、id、および受信者に関する情報にアクセスを提供するプロパティの例を示します。 これらのプロパティは、受信者と受信者の組織によって定義されます。
   
@@ -72,7 +72,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3a6b34eb-9d46-488f-8d02-91b27c35de67
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 0a3021ed386aa00777694452a755693fc4078093
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: e0d3d669982bee309901f913612ac1fb1622e60a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800967"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571144"
 ---
 # <a name="imsgserviceadmindeletemsgservice"></a>IMsgServiceAdmin::DeleteMsgService
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ サービスをプロファイルから削除します。
   
@@ -33,7 +33,7 @@ HRESULT DeleteMsgService(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpuid_
   
@@ -49,7 +49,7 @@ MAPI_E_NOT_FOUND
   
 > _Lpuid_で指定された**MAPIUID**では、既存のメッセージ サービスが一致しません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgServiceAdmin::DeleteMsgService**メソッドは、メッセージ サービスをプロファイルから削除します。 **DeleteMsgService**は、メッセージ サービスに関連するすべてのプロファイル セクションを削除します。 
   
@@ -81,7 +81,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [MAPIUID](mapiuid.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

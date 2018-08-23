@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 33747835-6eeb-4e07-8f92-3cfa81eecd0f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 94fea23f71e6bc29b038db38f6f06cda0f85d635
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6350202eb22edc478f7738bebf6d7f0bc4684ee0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801415"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566244"
 ---
 # <a name="mapi-object-containment-hierarchy"></a>MAPI オブジェクトの包含階層
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 オブジェクト間の包含関係は、他のオブジェクトをアクセスするためにいくつかのオブジェクトを持つ依存関係を指定します。 クライアント アプリケーションでは、特定のオブジェクトへのアクセスは他のユーザーへのアクセスを使用できます。 場合によっては、サービス プロバイダーによって実装されたオブジェクトとの間の包含関係に依存して、論理的な階層。 それ以外の場合は、任意です。 
   

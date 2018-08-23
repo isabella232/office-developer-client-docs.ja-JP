@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f6b7ff0c-19a0-4cad-8868-c05397fcebf4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7c5cfa8f80895896eab9af5ce1f249b9b06cf425
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e2f4b1fda57eb74e0573834c6e8fb443acf7ab12
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803108"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563906"
 ---
 # <a name="pidtagoriginatingmtacertificate-canonical-property"></a>PidTagOriginatingMtaCertificate 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージを生成したメッセージ転送エージェント (MTA) の識別子が含まれています。
   

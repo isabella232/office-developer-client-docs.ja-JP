@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: a97993c2-52e4-4b71-ac03-2c02d82447d8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 301ebbf8e7a3e2a2deb303af5b198fd11511d495
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d5f4be5a8593cfc483dfed1cffbb59f596e2e408
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804026"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567651"
 ---
 # <a name="supporting-formatted-text-message-store-responsibilities"></a>書式付きテキストのサポート: メッセージ ストアの責任
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストア プロバイダーで書式設定されたテキストを格納するかどうかは、RTF を認識されている場合、リッチ テキスト形式式 (RTF)、HTML テキストを処理できるかどうかを公開する**PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) プロパティを使用して、圧縮または非圧縮形式です。 メッセージ ストア プロバイダーは、ある RTF に対応して、STORE_RTF_OK ビットを設定することによって、格納していること、書式設定されたテキスト、未圧縮の形式で STORE_UNCOMPRESSED_RTF ビットを設定することによってを示します。 メッセージ ストア プロバイダーは、STORE_HTML_OK ビットを設定することによって HTML に対応していることを示します。
   

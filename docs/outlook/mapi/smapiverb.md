@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 45066528-2447-4178-aaa3-7513ed0b3ba4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4d060d62deb685b4691846c2b8e48a82ae3195ea
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 11f11ae2d90a951a119895f3e0e3e3ca0dbc0fc5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803976"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573699"
 ---
 # <a name="smapiverb"></a>SMAPIVerb
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI 動詞をについて説明します。
   

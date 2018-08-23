@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 9224c694-b26f-42c7-9404-ee2dd832cfbb
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 598ced18d659fcbe52ded07cc3bb80dc396eddbf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 504ae8dddbddb1c7049574b1bdcc575a10a62c8f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801691"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570094"
 ---
 # <a name="one-off-addresses"></a>一時アドレス
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 1 回限りのアドレスを使用して、セッションのアドレス帳コンテナーのいずれかに対応するエントリを持たない受信者の一時受信者にメッセージを送信します。 クライアントは、アドレス帳または新しい受信者が送信するメッセージの受信者の一覧に新しいエントリを追加するとき、一時アドレスを作成できます。 一時アドレスは、変更可能なすべてのコンテナーに追加できます。
   

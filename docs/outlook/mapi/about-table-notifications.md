@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 00c9c6c2-fc21-4b9c-91fa-629450a22d37
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3dfc67c8bcd899396da5371c614fd221cd9b2251
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d6fd49e1a004202e0de02e262f6977ca8a07019d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799606"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571942"
 ---
 # <a name="about-table-notifications"></a>テーブル通知について
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアントは、多くの場合については、オブジェクトから直接通知を受け取るに登録する代わりにオブジェクトへの変更の通知をテーブルに依存しています。 通知の送信が発生する一般的な変更には、追加、削除、または行と、重大なエラーの修正が含まれます。 通知が到着したとき、クライアントは、テーブルを再ロードするのには別の呼び出しを行うかどうかを判断できます。 
   

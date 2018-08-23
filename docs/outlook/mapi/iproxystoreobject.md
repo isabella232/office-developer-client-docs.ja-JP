@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 567bede4-39a3-bfb4-af85-ba678e2cf4a5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f6566f567c228b6416a64dbd58653561bb592e6d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b842bee8d9e243aa38bafe39d786a31b5527b054
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801171"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567945"
 ---
 # <a name="iproxystoreobject"></a>IProxyStoreObject
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ラップするがされたため、同期を呼び出すと、アイテムをダウンロードしなくても、個人用フォルダー ファイル (PST) 内のアイテムへのアクセスを許可するインターネット メッセージ アクセス プロトコル (IMAP) ストア オブジェクトを提供します。
   

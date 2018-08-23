@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0101d291-00ca-4f66-b857-75d74b9f91a1
 description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 8441a4898659a5cd278265cb0199bb9097244aa3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 64b0c0501a6ef4471f97e82b231ef430681f1306
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801140"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573391"
 ---
 # <a name="ipropdatahrgetpropaccess"></a>IPropData::HrGetPropAccess
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 �A�N�Z�X ���x���� 1 �܂��͕����̃I�u�W�F�N�g�̃v���p�e�B�̏�Ԃ�擾���܂��B
   

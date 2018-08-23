@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0cd1026a-342d-4d05-91ed-d3decced5bf3
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b667f56553b717f1bc938b6ce045dbfdde8fdc0c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e09a1de5f85edd7e352a090c573fed9ca16f017f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800716"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565551"
 ---
 # <a name="imapistatuschangepassword"></a>IMAPIStatus::ChangePassword
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ユーザー インターフェイスを表示せずには、サービス プロバイダーのパスワードを変更します。 サービス プロバイダーを実装する状態オブジェクトには、このメソッドはサポートされて必要に応じてします。
   

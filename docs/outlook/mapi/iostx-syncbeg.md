@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4a935df3-98c4-2742-206e-4e16eda7b9bc
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: ddc61aa42b1087ed5f0ecb7986125ceef27cddce
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 37d37d6402b165ea57626fe4791cfb1a4bcf76cc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801085"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565117"
 ---
 # <a name="iostxsyncbeg"></a>IOSTX::SyncBeg
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 特定の状態の同期をローカル ストアを準備し、複製に必要な情報を取得します。
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 26372539-e9fe-464d-95c7-90b58c20b98f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: cf22e360a0319a662c9b7dd31856dbb6eccec02a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5d8fc10f876408d616c5acefb664ba5d61c927a2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803742"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22562975"
 ---
 # <a name="rendering-an-attachment-in-rtf-text"></a>RTF テキスト形式での添付ファイルの表示
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 リッチ テキスト形 (式 RTF) に対応していないクライアントはメッセージの**PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) のプロパティで、次のエスケープ シーケンスを探すことで RTF メッセージ テキストのレンダリング位置の情報を取得することができます。
   

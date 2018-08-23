@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9aa0b71e-1ee7-411c-a595-cccc5b7c4b0e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 10784dbf0b65dc4b95b37cfff1d057247702e375
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 63a29bd2e61aa63e1771145af58dd9e0e860f226
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801920"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574966"
 ---
 # <a name="pidlidfax1entryid-canonical-property"></a>PidLidFax1EntryId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ビジネス、連絡先の fax アドレスのエントリ Id を指定します。
   

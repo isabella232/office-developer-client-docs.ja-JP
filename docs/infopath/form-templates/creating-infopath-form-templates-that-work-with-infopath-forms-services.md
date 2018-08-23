@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 7bd4fbbb-49c6-46a1-9584-895e5aa9a772
 description: Microsoft SharePoint Server 2013 と InfoPath Forms Services に展開されるブラウザー互換フォームでは、大部分の InfoPath フォーム使用シナリオで利用される機能とコントロールをサポートしています。しかし、InfoPath Forms Services で提供されるブラウザー互換フォームでは、InfoPath 機能をすべてサポートしているわけではありません。一部の機能とコントロールはサーバーに実装されません。また、サーバーには対応する機能がないこともあります。
-ms.openlocfilehash: 65201358fc651325920bd3eefc863e839bb1f1a6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c633c93eef5fa2d773ed1497f933f2cc3ee0e3bb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799138"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595455"
 ---
 # <a name="creating-infopath-form-templates-that-work-with-infopath-forms-services"></a>InfoPath Forms Services で動作する InfoPath フォーム テンプレートを作成する
 

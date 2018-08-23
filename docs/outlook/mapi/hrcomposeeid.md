@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 8aba90d8-ea1f-4636-af80-17bfeadbdfa0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a9aa6deeca930da82db61ba517796bfbc0676467
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 335fac38ff3f084195a000ad32a27adcb85c1cc6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800277"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564816"
 ---
 # <a name="hrcomposeeid"></a>HrComposeEID
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 通常メッセージ ストア内のメッセージ オブジェクトは、複合のエントリの識別子を作成します。 
   

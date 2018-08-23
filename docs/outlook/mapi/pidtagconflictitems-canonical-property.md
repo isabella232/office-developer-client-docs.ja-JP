@@ -1,5 +1,5 @@
 ---
-title: PidTagConflictItems の標準的なプロパティ
+title: PidTagConflictItems 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,19 +11,19 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 0d147827-f0e2-dcc1-4427-c4a2f48ca801
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 61176ec6f9ff00fa5a38a2b385cb5281fa40961e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 3ff428d96de40e70e63659c5a3e5fa1c7cf0d564
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802543"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569114"
 ---
-# <a name="pidtagconflictitems-canonical-property"></a>PidTagConflictItems の標準的なプロパティ
+# <a name="pidtagconflictitems-canonical-property"></a>PidTagConflictItems 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 1 つまたは複数のエントリが自動競合解決に関係している項目の Id が含まれています。
   
@@ -31,12 +31,12 @@ ms.locfileid: "19802543"
 
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_CONFLICT_ITEMS  <br/> |
+|関連するプロパティ:  <br/> |PR_CONFLICT_ITEMS  <br/> |
 |識別子:  <br/> |0x1098  <br/> |
 |プロパティの種類:  <br/> |PT_MV_BINARY  <br/> |
 |領域:  <br/> |ICS  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 自動競合の解決をサポートする標準の Outlook アイテムの種類には、次の標準的な項目の種類が含まれます: 予定表アイテム、連絡先アイテム、履歴項目、メール アイテム、会議アイテム、付箋項目、および作業項目です。 これらの標準的な項目の種類のいずれかから派生したメッセージ クラスに属するアイテムが自動競合の解決をサポートします。 Microsoft Outlook 2003 と Microsoft Office Outlook 2007 では、Outlook がアイテムを同期し、結果のコピーにすべての重要なデータが含まれていない可能性があります可能性があることを考慮すると Outlook コピーが格納されて、競合している**競合****同期の失敗**フォルダーの下のフォルダーです。 
   
@@ -77,7 +77,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

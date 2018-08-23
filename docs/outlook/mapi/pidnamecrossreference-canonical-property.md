@@ -1,5 +1,5 @@
 ---
-title: PidNameCrossReference の標準的なプロパティ
+title: PidNameCrossReference 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d16e1adf-c911-427e-9c98-678a303e6791
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 148d71dc0e99e23ffe10445068170617cb26b01b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 5daf8c1ee249cfc7fb1bc1ffb6dfc68b400fe953
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802349"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571130"
 ---
-# <a name="pidnamecrossreference-canonical-property"></a>PidNameCrossReference の標準的なプロパティ
+# <a name="pidnamecrossreference-canonical-property"></a>PidNameCrossReference 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [RFC3282] Xref ヘッダー フィールドの値が含まれています。
   
@@ -32,10 +32,10 @@ ms.locfileid: "19802349"
 |フレンドリ名:  <br/> |なし  <br/> |
 |プロパティを設定します。  <br/> |PS_INTERNET_HEADERS  <br/> |
 |プロパティ名:  <br/> |相互参照  <br/> |
-|データを入力します。  <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |Email  <br/> |
+|データの種類 :   <br/> |PT_UNICODE  <br/> |
+|領域:  <br/> |メール  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティの値を設定するには、多目的インターネット メッセージの拡張機能 (MIME) クライアントは、相互参照のヘッダー フィールドに目的の値を記述する必要があります。 MIME のリーダーは、このプロパティの値を相互参照のヘッダー フィールドの値をコピーする必要があります。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

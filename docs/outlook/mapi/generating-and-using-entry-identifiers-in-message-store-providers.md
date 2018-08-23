@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 0c43546a-4788-4852-bc89-d6baa4f33c94
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3bfda4a1dbe464c744917c2e9b3ca66eaf88fd20
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 10634305130b0f465482cce025018d4929350513
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800169"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565453"
 ---
 # <a name="generating-and-using-entry-identifiers-in-message-store-providers"></a>生成して、メッセージのエントリ id を使用してプロバイダーを格納します。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 新しいフォルダーまたはメッセージがメッセージ ・ ストアに作成されると、メッセージ ストア プロバイダーが、クライアント アプリケーションが参照できるように、そのオブジェクトのエントリ id を割り当ています。 メッセージ ストア プロバイダー削除されたオブジェクトの非アクティブの長期的なエントリ id を再利用するか、新しい id を作成します。 不要の方法の 1 つまたは別のメッセージ ストア プロバイダーです。ただし、実現可能な場合は、メッセージ ストア プロバイダーする必要がありますは常に生成の再利用の古いものではなく、新しいオブジェクトの新しい長期的なエントリ id です。 参照しているオブジェクトが削除されたときは、短期的なエントリ id を再利用するのには十分です。
   

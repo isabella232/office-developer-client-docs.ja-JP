@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 3e17a528-b5f6-43f6-9e2f-c6a257beff6f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ff74ef880db286beb5f48ba299a83f2f944170b0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c4510cdffa711f6b8aa0cc5ba1622d4d55557871
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799780"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563729"
 ---
 # <a name="cbspropproblemarray"></a>CbSPropProblemArray
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 既存の[SPropProblemArray](spropproblemarray.md)構造体のバイト数を計算します。 
   

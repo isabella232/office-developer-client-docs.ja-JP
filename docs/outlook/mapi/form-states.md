@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: dfc9fbf1-90d4-4756-92d9-032ac56a9c50
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 969aca6fd37f237a607df36cc58f249828449e27
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 195a82bfcc163ee01d2d42c71e79a8f5c9c620e5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800126"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564634"
 ---
 # <a name="form-states"></a>フォームの状態
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォーム オブジェクトは、それらにどのようなメソッドが呼び出された、およびそれらのメソッドを実行する際にエラーが発生しているかどうかによって、5 つの異なる状態のいずれかで指定できます。 状態は次のトピックで説明します。
   

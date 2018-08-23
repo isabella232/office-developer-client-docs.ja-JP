@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 70d1fb24-91a9-4043-8c9d-be1523012e6b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 38be3bc2df8931ca45da12e43436377545e8a977
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bd840c7bef0607db37c6477bd8f4a7320a8188c6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799888"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574756"
 ---
 # <a name="creating-message-text"></a>メッセージ テキストを作成します。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 いくつかのメッセージは、受信者一覧と件名の行では、IPM では具体的には、ほとんどのメッセージの内容よりもそれ以上の構成されています。メッセージに注意してください、テキストが含まれています。 メッセージをテキスト形式または書式設定された、3 つのプロパティに格納されます: **PR\_本体**([PidTagBody](pidtagbody-canonical-property.md)) **PR\_HTML** ([PidTagHtml](pidtaghtml-canonical-property.md))、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))。 
 

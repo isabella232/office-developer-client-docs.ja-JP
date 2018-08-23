@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 48b634d7-deea-422b-8944-a8d929d83838
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5d494577721feba01dd9cb93f344308251a8ed33
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 56f14488812842d5e9fe63ae228c325059ebe679
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803379"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575092"
 ---
 # <a name="pidtagresourcetype-canonical-property"></a>PidTagResourceType 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 サービス プロバイダーの種類を示す値が含まれています。
   

@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b3685890-117c-9acc-e19f-cf22a349a088
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 338ae3c3c8d8b4037ab0c7b46916e45cf5a8ded2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 125147ed7d6cd90c1069aa5cc1c759abe752dfe2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799601"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564522"
 ---
 # <a name="about-notification-based-store-indexing"></a>通知ベースのストア インデックス作成について
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI ストア プロバイダーは、ストアでの MAPI プロトコル ハンドラーのクロールとインデックスのメッセージかどうか、またはかどうか、ストアに通知を送信、インデクサー インデックスを作成するメッセージがある場合に指定できます。 後者し、呼ばれ通知ベースのインデックス作成、通知ベースのインデックス作成をサポートしているストアは、プッシュ型ストアとして、知られています。
   

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 197b21ed-9f2f-425f-a6ed-cae1208fa2ca
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a6a3eb88377777a3d27687179bfdcb82057be3a9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c9c12d3e8314dea5be67727d0f286e7df13038fa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802988"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574371"
 ---
 # <a name="pidtagmessageeditorformat-canonical-property"></a>PidTagMessageEditorFormat 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 エディターを使用してメッセージを表示する形式を指定します。
   

@@ -10,18 +10,18 @@ api_type:
 - COM
 ms.assetid: 3d314d4e-553b-4767-a64a-b9cf1839de52
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 32dfd966ae4c31618a316e1dd396a1b40c71c639
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 85b31361ad39370cf4c935363b341c8378f85e19
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801347"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572743"
 ---
 # <a name="mapi-data-types"></a>MAPI データ型
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アルファベット順の次のエントリには、MAPI メソッド、関数、および構造体で使用されるデータの種類のドキュメントが含まれています。 
   

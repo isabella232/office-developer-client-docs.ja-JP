@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e78287ff-f8cc-45ea-8da8-e7a7359e651c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 14207e513e935a296ff9b953b92ab1ab9ab41fd2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5fca47055d0c88293156483a53118667c1c72276
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802191"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574099"
 ---
 # <a name="pidlidtaskdeadoccurrence-canonical-property"></a>PidLidTaskDeadOccurrence 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 新しい文字列を生成する必要があるかどうかを示します。
   

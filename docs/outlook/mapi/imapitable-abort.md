@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 73291a5b-b626-494c-b5d9-f7709e34bac2
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 4b578f287a532475b53fb69cc4499662b6c4b6d7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 68d40a6e152698554fcb88c6f7e5bfd4a7ff0ce3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800820"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574007"
 ---
 # <a name="imapitableabort"></a>IMAPITable::Abort
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 テーブルの現在進行中のすべての非同期操作を停止します。
   

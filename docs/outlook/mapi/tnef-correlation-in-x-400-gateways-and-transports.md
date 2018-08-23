@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 0ffa0802-bfdd-4993-b4a3-142e5d15bfb4
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: ea5ca41ef21c72377ade72370e0aee1b313c92d9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 297fff3482a4b7aea391c3e1869cd127cc49cad2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804110"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566818"
 ---
 # <a name="tnef-correlation-in-x400-gateways-and-transports"></a>X.400 ゲートウェイおよびトランスポートでの TNEF 関連付け
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ゲートウェイおよび X.400 ベースのシステムに接続するためのトランスポートは、TNEF の相関関係を実装するために IM_THIS_IPM の X.400 属性および**attMessageID**の TNEF の属性の値を使用します。 
   

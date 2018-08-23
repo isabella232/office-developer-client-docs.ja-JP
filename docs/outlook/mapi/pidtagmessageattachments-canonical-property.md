@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 85762771-b823-4227-9a7b-75b6ac280b2d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5b76a73a0fde8f4531b99a58646b927724162e81
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b375ef279fc50aecca75b60d8379438c56f13420
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802959"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569338"
 ---
 # <a name="pidtagmessageattachments-canonical-property"></a>PidTagMessageAttachments 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 制限に一致する添付ファイルの下位オブジェクトが含まれているすべてのメッセージを検索する内容のテーブルに適用される制限の一覧が含まれています。 
   

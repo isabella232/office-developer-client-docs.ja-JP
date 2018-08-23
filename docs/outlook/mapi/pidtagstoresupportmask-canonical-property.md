@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ada5694a-b5b1-471f-be33-906fc052681a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8d9f6311b19ddb489885004a9e507f780d9f1ea9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1936cb8e95e3faef8c92d6bf28f5b63b3ff72df5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803597"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572705"
 ---
 # <a name="pidtagstoresupportmask-canonical-property"></a>PidTagStoreSupportMask 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フラグのビットマスクにはメッセージ ・ ストアの特性を判断するのにはそのクライアント アプリケーションのクエリが含まれています。 
   

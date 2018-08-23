@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 83692674-0b5a-468d-9cd7-a2ac3d140bda
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 040c851d64f60c319250fd0e08620285b6f2f0db
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 36233d51f47c53d6a69494c0fcd799a7c83add29
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799922"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567875"
 ---
 # <a name="developing-a-mapi-message-store-provider"></a>MAPI メッセージ ストア プロバイダーの開発
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 その他の MAPI サービス プロバイダーでは、ようなメッセージ ・ ストアは MAPI クライアント アプリケーションと MAPI スプーラーを基になるストレージ ・ メカニズムのサービスを提供するダイナミック リンク ライブラリ (Dll) がします。 メッセージ ストア プロバイダーは、階層的な一連のフォルダーとメッセージの MAPI クライアントと、MAPI スプーラーを使用すると基になるストレージ機構について説明します。
   

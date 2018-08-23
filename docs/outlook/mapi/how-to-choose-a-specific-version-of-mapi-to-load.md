@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 85539a7f-74b6-4267-86ea-00da2c900c34
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d0bce7b3a12f259b7ac5f28219c8a92dd2200f07
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c5a7ba301d61468c0ff43a7e99d05976d55d239d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19800213"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576672"
 ---
 # <a name="choose-a-specific-version-of-mapi-to-load"></a>ロードするのには MAPI の特定のバージョンを選択します。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI の実装を明示的にリンクする場合、ロードする実装を慎重に選択する必要があります。 
   

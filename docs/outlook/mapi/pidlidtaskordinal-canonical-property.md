@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 1021860e-4c40-4c22-aa68-b568d046aaf7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 033bc038988373b11f3eac863a256717624999f9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c3b7c37c800230749f841ba64f4d52cfc9877af0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802225"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563654"
 ---
 # <a name="pidlidtaskordinal-canonical-property"></a>PidLidTaskOrdinal 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 カスタムの並べ替え操作を支援するために用意されています。
   

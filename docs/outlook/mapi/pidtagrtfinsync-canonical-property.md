@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 443cc68e-7898-4285-a606-f916fcd18554
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 85e517601d291f144652befa267d8fd8f76dea64
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b182d2b568a3c7cf874dfe2fcf7a7503aa44193f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803393"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574490"
 ---
 # <a name="pidtagrtfinsync-canonical-property"></a>PidTagRtfInSync 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) である**PR_RTF_COMPRESSED**プロパティにこのメッセージの**PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) のプロパティと同じテキストの内容がある場合、TRUE が格納されます。
   

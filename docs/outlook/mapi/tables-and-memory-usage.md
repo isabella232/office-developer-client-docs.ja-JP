@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 7ac11e60-6b2c-4241-96e2-20219f84d949
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 390cec0cc59f189f83af2c5339512d82e125771e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 383c03a00509447222204ab729c56f5eeac553df
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804095"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563017"
 ---
 # <a name="tables-and-memory-usage"></a>テーブルとメモリ使用量
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 テーブルからデータを取得するのに接続されている重要な問題は、メモリ使用量です。 メモリ不足の発生することが[IMAPITable::QueryRows](imapitable-queryrows.md)と[HrQueryAllRows](hrqueryallrows.md)が失敗し、返す行の必要な数よりも少ない。 またはテーブルのデータを取得するために使用する関数を決定する際に依存テーブルがメモリに収まるように期待できるかどうか、できない場合は、失敗が許容される場合。 
   

@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 7632d784-00d8-48fd-a73b-73778efbef7f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: aaba816ca7efab6cee939087a18332561f31b81b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e29b909e90d2767bcf1bb9382a46e6f2c1cd9f2a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803865"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569800"
 ---
 # <a name="sending-messages-by-using-message-store-providers"></a>ストア プロバイダーによってメッセージを使用してメッセージを送信します。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストア プロバイダーは、送信メッセージの送信 (つまり、クライアント アプリケーションがメッセージを送信するメッセージ ストア プロバイダーを使用する機能) をサポートする必要はありません。 クライアント アプリケーションをどこかに格納されているメッセージのデータがある必要がありますので、メッセージを送信するときに、メッセージ ストアを使用する必要があるユーザーが完了するまでの間と、MAPI スプーラー用のトランスポート プロバイダーにメッセージを提供する時間を構成します。基になるメッセージング システムに送信します。 メッセージ ストア プロバイダーが送信メッセージの送信をサポートしていない場合は、既定のメッセージ ストアとして使用できません。
   

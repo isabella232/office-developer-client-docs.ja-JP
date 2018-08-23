@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 8eda1251-3858-4832-ac43-d817b4a7ea59
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0fcd1c79d1c0debfb18d270dc0e40de42842c6d9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ebe10ae741975b33ee58e1e99032aaca64ef38d8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804123"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569730"
 ---
 # <a name="tnef-stream-structure"></a>TNEF ストリームの構造
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 TNEF ストリームは、TNEF ストリームとストリームを識別する 32 ビットの署名で開始します。 次の署名は、タグ付けされたメッセージのテキスト内の位置に添付ファイルを相互参照するキーとして使用される 16 ビットの符号なし整数です。 ストリームの残りの部分は、TNEF の属性のシーケンスです。 TNEF ストリームで指定されたメッセージの属性が先頭に表示され、添付ファイルの属性に従います。 特定の添付ファイルに属している属性グループ化、 **attAttachRenddata**属性を使用して開始します。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 74c25870-62d9-484a-9a99-4dc35c52479e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0c70d16d294426d30f3ac5f00b6bc46992386a86
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7a6971504ec8f4f5ac8593b6b78777a12ff92b3d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800447"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564564"
 ---
 # <a name="imailuser--imapiprop"></a>IMailUser : IMAPIProp
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージング ユーザーに関連付けられている多くのプロパティへのアクセスを提供します。 **IMailUser**インターフェイスは、メッセージング ユーザーのオブジェクトによって実装されます。 **IMailUser**を継承、 [IMAPIProp: IUnknown](imapipropiunknown.md)インタ フェースし、独自の一意のメソッドがありません。 
   

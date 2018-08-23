@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 84251222-dac4-4f4d-97b9-aa0e2cd26c44
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2c8661f24ed9555547446cf63fc08a3be7e6e941
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ff088dc5bf62f407692c9eec649ff388f79d549d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799813"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567154"
 ---
 # <a name="contabentryid"></a>CONTAB_ENTRYID
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 連絡先フォルダーのエントリ ID が含まれています。
   

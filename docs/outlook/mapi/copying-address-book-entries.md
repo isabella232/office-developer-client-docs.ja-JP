@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 285abeb4-45c8-4e82-9a16-b935b4651afe
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ce7f7e2db341be62912935b7a55d69eaf5db8ab5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: eca0c9f63a4efaaa7f9fd066cf5dce451b8f6175
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799828"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565887"
 ---
 # <a name="copying-address-book-entries"></a>アドレス帳エントリのコピー
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 コンテナーの[IABContainer::CopyEntries](iabcontainer-copyentries.md)メソッドが呼び出されますから、同じ 1 つまたは複数の受信者このコンテナーにコピーするか、別のコンテナーです。 **CopyEntries**は、4 つの入力パラメーターを持つ: コピーする受信者を表すエントリの識別子、進行状況インジケーター、進行中のオブジェクト ポインター、およびフラグの値のウィンドウ ハンドルの配列。 プロバイダーは、AB_NO_DIALOG フラグが設定されていないと、オブジェクトを使用して、進行状況、 _lpProgress_パラメーターからが NULL でない場合、進行状況を表示する必要があります。 _LpProgress_が NULL の場合は、MAPI 処理中のオブジェクトを使用して[IMAPISupport::DoProgressDialog](imapisupport-doprogressdialog.md)を呼び出します。 進行状況を表示する方法についての詳細については、[進行状況のインジケーターを表示する](mapi-progress-indicators.md)を参照してください。
   

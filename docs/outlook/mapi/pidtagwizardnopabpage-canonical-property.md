@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9cec22cd-798d-41f6-9ebd-c7354f2162c2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b393155d00b47fa8cce23c1b5ac7043237a58983
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cdb7dde4853188eb0621dc3c2f45c2dc713441d3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803689"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570241"
 ---
 # <a name="pidtagwizardnopabpage-canonical-property"></a>PidTagWizardNoPabPage 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このプロパティには、プロファイル ウィザードでは、個人用アドレス帳 (PAB) のページを非表示にする場合は TRUE が含まれています。
   

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 278a77f2-65ec-4281-b406-942cc416a476
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5ba76b5735687e3bb65e530b3de0d257754559c1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e7dc8c06fca48c5f7c124a1fdf2228ebeb9da450
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802797"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569982"
 ---
 # <a name="pidtagfreebusycountmonths-canonical-property"></a>PidTagFreeBusyCountMonths 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 パブリック フォルダーに公開する空き時間情報データの範囲の開始と終了日を計算するための値が含まれています。
   

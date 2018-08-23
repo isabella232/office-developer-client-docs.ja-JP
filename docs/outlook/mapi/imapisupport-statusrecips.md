@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9c34538e-5ba4-47c8-8002-85afa9d6c067
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f3642c890c3922611d57dea6f03aca5606876864
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cda629cf78d3f7915b64c130867ed4f8ebbd6f8d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800815"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563843"
 ---
 # <a name="imapisupportstatusrecips"></a>IMAPISupport::StatusRecips
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 配信し、配信不能レポートを生成します。
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 13ca726d-ae7a-4da9-9c8e-3db3c479f839
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6ecd84e4ffa0959a037574998b5ff12d8f539c95
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 708e77e4df097f5a0de008e09808ffcbc0289f61
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803197"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574581"
 ---
 # <a name="pidtagprofilename-canonical-property"></a>PidTagProfileName 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロファイルの名前が含まれています。
   

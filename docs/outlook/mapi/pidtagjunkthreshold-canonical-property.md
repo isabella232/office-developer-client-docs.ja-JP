@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 8067e2b5-02df-4b96-8f66-509f5a48c8aa
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0f8484e195b1cda8e1d633133cdff89c571d8ecd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7d4337105b2dcae94956f0b1badf66c663467dc3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802915"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565663"
 ---
 # <a name="pidtagjunkthreshold-canonical-property"></a>PidTagJunkThreshold 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 どの程度積極的に示す [迷惑メール] フォルダーに受信メールを送信する必要があります。
   

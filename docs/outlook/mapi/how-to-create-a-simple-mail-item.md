@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: bbf99c4b-3008-4475-a60a-648eaed59d01
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 1bbf80c8f614fc5e69773407c7882f3df8c0c81b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2f7e1c131bcdaa19fa4001c0ca566714cfffa456
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800209"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571424"
 ---
 # <a name="create-a-simple-mail-item"></a>簡易メール アイテムを作成します。
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 作成し、開封確認メッセージを要求するメッセージを送信するのには、MAPI を使用できます。 開封確認メッセージが要求されると、メッセージング システムが生成し、受信者がメッセージを開いたとき、リードのレポートを送信者に返します。
   

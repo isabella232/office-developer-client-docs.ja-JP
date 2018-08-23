@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: decd5d7d-1f47-47c2-b9c4-be0e652c99dd
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 8cd96dd22daeb98646a62672bd17f7de4d2f7dab
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 50d1fb451cbfcd07f97c5b12a9c86c03a435faa6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799756"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564774"
 ---
 # <a name="canceling-a-notification"></a>通知の取り消し
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 通知をキャンセルするには、クライアントは、アドバイス、ソースの**Unadvise**メソッドを呼び出します。 アドバイズ シンクへの参照を解放するのにはサービス ・ プロバイダーが発生するため、 **Unadvise**を呼び出すことが重要です。 サービス プロバイダーは、アドバイズ シンクへの参照を管理している限り、アドバイズ シンクは、 [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)呼び出しの受信を続行できます。 実際には、非同期であるのため、イベントの通知、クライアントが通知成功**Unadvise**の呼び出し後にも。 クライアントは、いつでも通知の受信を処理できる必要があります。 
   

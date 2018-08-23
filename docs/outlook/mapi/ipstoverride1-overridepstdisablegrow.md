@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ea8c003f-91d6-4641-aff9-fcf807150c6f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 04905de8b7dbd5195b3963932750d7f5f09950ec
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d32f5c7c25b2569a23bed77d48257f4d0394cb1f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801169"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563346"
 ---
 # <a name="ipstoverride1overridepstdisablegrow"></a>IPSTOVERRIDE1::OverridePSTDisableGrow
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 PSTDisableGrow ポリシーをオーバーライドするセッションは、個人用フォルダー (.pst) ファイルを解除します。
   

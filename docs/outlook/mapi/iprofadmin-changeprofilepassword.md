@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a41f707a-5c84-49aa-aeb6-469b2600e181
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: c57f945d16cc80c637b1a4074b25f9cf1fb1edc0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 41066d4418760a676fbc02241bfc12d83275da9d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801138"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572999"
 ---
 # <a name="iprofadminchangeprofilepassword"></a>IProfAdmin::ChangeProfilePassword
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 現在は廃止されています。 プロファイルのパスワードを変更します。
   

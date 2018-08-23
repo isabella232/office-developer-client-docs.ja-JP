@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: a1936ec2-bf8a-4242-a41d-64d26b813bd0
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: cb26771e9968175ab67366e35cf019ce23d51b8d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3a89588294f07dca97fb48e56d2cde890c3f80ae
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801483"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568820"
 ---
 # <a name="mapi-view-folders"></a>MAPI フォルダーの表示
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォルダーの表示は、個人間メッセージ (IPM) のフォルダーの内容の別の表示のレイアウトを定義するのには関連する情報を含むルート フォルダーです。 フォルダーの表示では、メッセージ ・ ストアのルートの下に存在する、したがって、一般的なクライアント アプリケーションで表示されているではありません。 すべてのメッセージ ストアには、フォルダー表示; にはが含まれています。セッションの既定のメッセージ ストアとして機能するように構成されている唯一のメッセージ ・ ストアには、それらを含める必要があります。  
   

@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5ed122a2-0967-4de3-a2ee-69f81ae77b16
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d3a3545c544c7b5cf5200468a94edf720dd326e1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: afb50c2aaffd507cb269b80f1fb59f548685f2cc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803529"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564921"
 ---
 # <a name="pidtagsentrepresentingsmtpaddress-canonical-property"></a>PidTagSentRepresentingSmtpAddress 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 送信者はメッセージのユーザーの簡易メール転送プロトコル (SMTP) 電子メール アドレスが含まれています。
   

@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2635a829-0f3a-49ed-a672-2f350a2cf979
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9be25dc655536ff5d32a635da57c54ebd12fea0f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f073dbb9655585ee56ab38be35bea4ef320042c0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800138"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569772"
 ---
 # <a name="ftadcft"></a>FtAdcFt
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 キャリー フラグを使用して必要に応じて、別の 1 つの符号なし 64 ビット整数を追加します。
   

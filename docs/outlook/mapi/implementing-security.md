@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 62db34a0-887c-4607-94ad-d8cae68b35c2
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f09d96fd8b35df6cafa81b3830642cf6d67806e7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c2926e7c94178d5a3135f34e2ab3b3ae11d145dd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800953"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568484"
 ---
 # <a name="implementing-security"></a>セキュリティの実装
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージング システムは、それを必要とする場合は、トランスポート プロバイダーはメッセージング システムへのアクセスのセキュリティの適切なレベルの実装を担当します。 各 MAPI スプーラーによってトランスポート プロバイダーを通じて送信された着信または発信メッセージは、プロバイダーのログオン セッションのコンテキストで処理されます。 トランスポート プロバイダーは、このような接続を確立する前にユーザーの資格情報の入力を求めるユーザーに、[ログオン] ダイアログ ボックスを表示できます。 代わりに、トランスポート プロバイダーは、プロファイル セクション内にあるセキュリティで保護されたプロパティの範囲のユーザーの前に入力した資格情報を格納し、メッセージを表示せずアクセスに使用します。
   

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: e4fc8bd9-2ec4-462e-b6cb-e533b323bd05
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8d435907c150de2ad3273ac263e7c93fb19e92a6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 309d2ee5310f4e329b3f08eabe98bdf834a4fd92
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802945"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563094"
 ---
 # <a name="pidtaglastverbexecutiontime-canonical-property"></a>PidTagLastVerbExecutionTime 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 最後の動詞が実行された時刻が含まれています。
   

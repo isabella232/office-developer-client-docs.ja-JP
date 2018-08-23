@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 39a5c97c-5ac8-47a8-b193-a4b3ba6a02a5
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7f31162e669af6efaf9e935c7c400d105c1321c2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 423992e0485e8e3092cfc4126164576906d51149
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803691"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567064"
 ---
 # <a name="property-identifiers-and-types"></a>プロパティの識別子と型
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 すべての MAPI プロパティは、プロパティ タグで表されます。 プロパティ タグは、高でのプロパティの識別子を格納する 32 ビット符号なし整数値が 16 ビットを注文し、下位のプロパティの型は、16 ビットを注文します。 Mapitags.h ヘッダー ファイルでは、MAPI によって定義されたプロパティのすべてのプロパティ タグが含まれます。
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 683d0d00-1b93-445d-86ff-180a3e6d2323
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e8a0daa2afe2397f39b7f37a31ef718ba65a3350
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 076fb4946af9a80e53fb8452d720c22b351f5ef6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803890"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572523"
 ---
 # <a name="setattribimsgonistg"></a>SetAttribIMsgOnIStg
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [OpenIMsgOnIStg](openimsgonistg.md)関数によって提供された[IMessage](imessageimapiprop.md)オブジェクトのプロパティの属性を変更または設定します。 
   

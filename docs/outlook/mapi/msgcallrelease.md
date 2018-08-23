@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 23c08597-41f0-4f48-a63e-79962fa812bc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: aaa1adaa170349c3df3a2256802a502cb2512b20
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e9a1c416cbf992c9cbcfb5de42d302ff16e7f521
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801647"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573188"
 ---
 # <a name="msgcallrelease"></a>MSGCALLRELEASE
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [OpenIMsgOnIStg](openimsgonistg.md)関数を使用してその上に構築された**IMessage**オブジェクトの最終的なリリース後**IStorage**インターフェイスを解放するコールバック関数を定義します。 
   

@@ -1,5 +1,5 @@
 ---
-title: PidTagDefaultProfile の標準的なプロパティ
+title: PidTagDefaultProfile 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 47f745a4-5a9c-42af-b076-a72548ef4d31
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 6cd255c60987ec7a279e509aa2925a8029cce62e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: a315f1564f2980ad16ce2ba3da2308960f7d4b88
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802649"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578893"
 ---
-# <a name="pidtagdefaultprofile-canonical-property"></a>PidTagDefaultProfile の標準的なプロパティ
+# <a name="pidtagdefaultprofile-canonical-property"></a>PidTagDefaultProfile 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージング ユーザー プロファイルが既定の MAPI プロファイルの場合、TRUE が格納されます。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_DEFAULT_PROFILE  <br/> |
+|関連するプロパティ:  <br/> |PR_DEFAULT_PROFILE  <br/> |
 |識別子:  <br/> |0x3D04  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |MAPI プロファイル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 プロファイル テーブルに列としてのみですが、任意のオブジェクトのプロパティとしては、このプロパティは表示されません。 クライアント アプリケーションは、既定のプロファイルを指定するのには[IProfAdmin::SetDefaultProfile](iprofadmin-setdefaultprofile.md)メソッドを使用することができます。 
   
@@ -54,14 +54,14 @@ Mapitags.h
 
 
 
-[PidTagDefaultStore の標準的なプロパティ](pidtagdefaultstore-canonical-property.md)
+[PidTagDefaultStore 標準プロパティ](pidtagdefaultstore-canonical-property.md)
 
 
 [MAPI プロパティ](mapi-properties.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 953c97ef-bc38-4e30-9906-b16373cd33c2
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2701aaebe7a3554499af1ba43225737d38aae888
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: de0d2d7c0b03f7002d07e6703d2f7854b5c6b64c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801453"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564998"
 ---
 # <a name="mapi-service-provider-samples"></a>MAPI サービス プロバイダーのサンプル
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このセクションには、3 つの MAPI サービス プロバイダーのコード サンプルが含まれています。
   

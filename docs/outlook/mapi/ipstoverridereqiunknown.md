@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 22f497de-4afe-4433-965d-c3b5a66b05da
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6ee4524d08e334df858c2f035f1b21bd2b0a1c8b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c299af87976336656b7f52f6a24a43f59fc60710
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801183"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570136"
 ---
 # <a name="ipstoverridereq--iunknown"></a>IPSTOVERRIDEREQ : IUnknown
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロバイダーを格納する個人用フォルダー ファイル (PST) のリソースをアクセスします。
   

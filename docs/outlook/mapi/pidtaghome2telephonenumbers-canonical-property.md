@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 5a3cc16a-145f-4a40-bca9-99871a26b0ef
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: db255f13d356ec6e10bbe90bea6decd6cb9e0f20
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 243843b625cf17a3286ff2da87824f8867050090
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802843"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570339"
 ---
 # <a name="pidtaghome2telephonenumbers-canonical-property"></a>PidTagHome2TelephoneNumbers 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 受信者の自宅での二次的な電話番号の一覧が含まれています。
   

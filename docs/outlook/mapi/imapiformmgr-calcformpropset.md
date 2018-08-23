@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ab302bfd-5cff-49b4-b0d2-308ae5af478d
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: abd2a3e2a1a810f902ad977413c89f2e8b0113a0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5380b6541e609c17a9005c3390c6d5db06155306
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800539"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567245"
 ---
 # <a name="imapiformmgrcalcformpropset"></a>IMAPIFormMgr::CalcFormPropSet
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォームのグループを使用するプロパティの配列を返します。
   

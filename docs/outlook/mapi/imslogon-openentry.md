@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 612cbab7-60cb-48bb-906e-18d9135e7a86
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e9d9ca56a877c0106c76242fe97ce43321e62e08
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 619357a608dd160cbe4811cc7db7ae3b392db858
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801050"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576891"
 ---
 # <a name="imslogonopenentry"></a>IMSLogon::OpenEntry
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォルダーまたはメッセージのオブジェクトを開くし、さらにアクセスを提供するオブジェクトへのポインターを返します。 
   
@@ -38,7 +38,7 @@ HRESULT OpenEntry(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -98,5 +98,5 @@ MAPI では、 **IMSLogon::OpenEntry**を呼び出し、前に、最初に指定
   
 [IMsgStore::OpenEntry](imsgstore-openentry.md)
   
-[IMSLogon: IUnknown](imslogoniunknown.md)
+[IMSLogon : IUnknown](imslogoniunknown.md)
 

@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: edbc9e6c-008c-4c13-9a0c-cb47ac0f3686
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d6724914896fe7c40e9a456785aa5c92b84532fe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1ba4be04e7241a9c58138ec6b4ef72f7e0f14105
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800081"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567161"
 ---
 # <a name="folder-fields-stream-structures"></a>フォルダー フィールド ストリームの構造
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージの[PidTagUserFields](pidtaguserfields-canonical-property.md)プロパティには、バイナリ ストリーム、フォルダーのユーザー定義フィールドの定義が含まれている、FolderUserFields が含まれています。 このトピックでは、フォルダーのユーザー定義フィールドの定義についてはストリームの構造体について説明します。 
 
@@ -130,7 +130,7 @@ FolderFieldDefinitionCommon ストリームの構造体には、FolderFieldDefin
     |FCAPM_MULTILINE_TEXT  <br/> |0x00000100  <br/> |フィールドは、複数行のテキストを保持できます。  <br/> |
     |FCAPM_PERCENT  <br/> |0x01000000  <br/> |この型 ftFloat は、割合フィールドです。  <br/> |
     |FCAPM_DATEONLY  <br/> |0x01000000  <br/> |型 ftTime のこのフィールドは、日付だけの時間フィールドです。  <br/> |
-    |FCAPM_UNITLESS  <br/> |0x01000000  <br/> |型 ftInteger のこのフィールドの単位は許可されませんの表示形式です。たとえばなどのフォーマット [コンピューター - 640 K.." 許可されていません。  <br/> |
+    |FCAPM_UNITLESS  <br/> |0x01000000  <br/> |型 ftInteger のこのフィールドの単位は許可されませんの表示形式です。としてこのような形式の"コンピューター - 640 の K.."は許可されていません。  <br/> |
     |FCAPM_CAN_EDIT_IN_ITEM  <br/> |0x80000000  <br/> |アイテムでフィールドを編集することができます: これは、具体的にはユーザー設定フォームです。  <br/> |
    
 - **dwString**: DWORD (4 バイト)。 最初の次の注を参照してください。

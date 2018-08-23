@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: cbc4585d-f970-4b22-ac08-d7fc91bff3d3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6f65d67903fa9ebb255345f8666cd53de5512cab
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bc61fb1ac3fce317be283b7f05813ad485791cea
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802491"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563535"
 ---
 # <a name="pidtagattachmimetag-canonical-property"></a>PidTagAttachMimeTag 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 多目的インターネット メール拡張 (MIME) の添付文書に関する書式情報が含まれています。 
   

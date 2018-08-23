@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2e027c0c-2370-437a-ad98-2bbb5e41e525
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 43d0387f1c25c5ac86168caaddddd9fb9171c827
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 31324dff3c5780f693b1dc055fc2067436496cd3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803100"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573650"
 ---
 # <a name="pidtagoriginalsubmittime-canonical-property"></a>PidTagOriginalSubmitTime 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 元の提出日と、レポート内のメッセージの時間が含まれています。
   

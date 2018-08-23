@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 416008b4-13aa-4387-8c12-f8f2ca252391
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b14529e987b85d1dcbe3689d4e852a9efd39a396
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 17b038fea2dd1614f94f005e32b9e6ba4423dbda
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801664"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566265"
 ---
 # <a name="notifcallback"></a>NOTIFCALLBACK
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI 呼び出しをイベント通知を送信するコールバック関数を定義します。 このコールバック関数は、 [HrAllocAdviseSink](hrallocadvisesink.md)関数を呼び出すことによって作成されたアドバイズ シンク オブジェクトにラップするときにのみ使用できます。 
   

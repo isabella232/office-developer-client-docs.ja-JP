@@ -1,5 +1,5 @@
 ---
-title: PidLidFax3EntryId の標準的なプロパティ
+title: PidLidFax3EntryId 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,29 +11,29 @@ api_name:
 api_type:
 - COM
 ms.assetid: c0740644-63fb-41cf-a39e-1265390fc9bc
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 390347e57423755d5d653720216433a2982bf8ce
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 3e90b2714edbac1e494a68b2c4d0a8687fe85ffa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801964"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570668"
 ---
-# <a name="pidlidfax3entryid-canonical-property"></a>PidLidFax3EntryId の標準的なプロパティ
+# <a name="pidlidfax3entryid-canonical-property"></a>PidLidFax3EntryId 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 連絡先のエントリ Id はの他の fax アドレスを指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidFax3EntryID  <br/> |
+|関連するプロパティ:  <br/> |dispidFax3EntryID  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Address  <br/> |
 |長い ID (LID):  <br/> |0x000080D1  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |連絡先  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
+|領域:  <br/> |Contact  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
@@ -61,7 +61,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: 85f0d8a5-6dd3-4f33-b31a-246d286d6286
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b2d3dce7835f92d9ad78f7d8837e655fdd8fd412
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 87b91b66807ce79533029a8d5b5c4956bc4d5ce9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799657"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565768"
 ---
 # <a name="adrlist"></a>ADRLIST
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 1 つまたは複数の受信者に所属する 0 個以上のプロパティについて説明します。 
   

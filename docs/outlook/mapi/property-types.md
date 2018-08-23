@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 71967150-1005-4c85-90f1-76fc7876c0d0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fd0f25f20c9e628a80d27f2b70e01dacc98229b7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fba09af82a3eccc05c72e44ffea14ca979714ff0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803709"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563598"
 ---
 # <a name="property-types"></a>プロパティの型
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI には、単一値および複数値プロパティの両方がサポートされています。 単一値プロパティが、プロパティの基本型の値です。 複数値プロパティでは、基本データ型の複数の値があります。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f4068ff0-2aa2-4332-be7d-ecebda30dfff
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6e74dbb1f8e0e64feb2c86eb04e146e201089a4e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: dd1daddbdf4e953dac53d44181fedf371ce3beb3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802138"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573881"
 ---
 # <a name="pidlidremindertime-canonical-property"></a>PidLidReminderTime 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アラームの初期のシグナルの時間を指定します。
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 824eb670-16b7-49bf-9992-39fe0586a552
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: addf93cadae418017a40ba448328d2e1fc1decf6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a56223e909edf89d0f7fe2ba7f6d281509002429
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801438"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563682"
 ---
 # <a name="mapi-report-messages"></a>MAPI レポート メッセージ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 送信者へのメッセージのステータス情報を表示メッセージを報告します。
   

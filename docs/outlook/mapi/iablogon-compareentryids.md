@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: cb4a38ff-2fdd-40ac-a613-12c3f11a1df9
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 03256f2dec62d0228c4d5456dcd1b60f66b13ad2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b161c8c0da78b5ca872b87cad9a297169426d4cd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800351"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565005"
 ---
 # <a name="iablogoncompareentryids"></a>IABLogon::CompareEntryIDs
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 同じオブジェクトを参照しているかどうかを決定する 2 つのエントリ id を比較します。
   

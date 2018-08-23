@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e4cb1613-7e81-432a-ae3a-7fedb05dac65
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2b4dcdcb50fb04410ed93940b46ea7a0d74fff41
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 00791ab47cc3c6bd435d6f581e5ada53ae59d73b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801710"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569198"
 ---
 # <a name="packedunicodestring-stream-structure"></a>PackedUnicodeString ストリームの構造
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 PackedUnicodeString ストリームの構造体には、Unicode (utf-16) 形式文字列にはが含まれています。 この文字列は null 文字で終了していません。 このストリーム内のデータ要素は、以下に示す順序で互いのすぐ後、リトル エンディアンのバイト順で格納されます。 存在する実際のデータ要素は、utf-16 形式で文字列の長さによって異なります。
   

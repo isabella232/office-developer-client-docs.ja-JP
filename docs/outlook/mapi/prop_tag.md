@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: d8c9d18c-4043-41f3-8501-8be8e3a2c9ac
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9e53c39b713aa782eb387b85667f5ded6193006f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cbead0a9953ae5106e1fcc7d07d965d4dc7bacb9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803682"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570990"
 ---
 # <a name="proptag"></a>PROP_TAG
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 指定したプロパティの型と識別子を組み合わせることによって作成されたプロパティ タグを返します。 
   

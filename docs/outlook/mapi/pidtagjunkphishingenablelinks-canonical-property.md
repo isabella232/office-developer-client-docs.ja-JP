@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 6b885c36-6e27-4f74-95c3-ce1cdc8a808a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e8b2f23c10a0557744f483c894b7b2d00a7947df
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ee97f1a88213c05b41af07d682d2891baa0015a2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802925"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572180"
 ---
 # <a name="pidtagjunkphishingenablelinks-canonical-property"></a>PidTagJunkPhishingEnableLinks 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 示す、TRUE の場合、メッセージのフィッシング詐欺のタイムスタンプを無視することです。
   

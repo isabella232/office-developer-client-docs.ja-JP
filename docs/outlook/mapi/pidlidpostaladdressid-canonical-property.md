@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 30fdfb20-1e12-442a-bfa0-8c18c15fa5c3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6b344986989a47c4f1159fcf50c1d067ae716e98
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 32dddc77eee2e16dddb57f29bdb836d5962e29d6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802105"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567455"
 ---
 # <a name="pidlidpostaladdressid-canonical-property"></a>PidLidPostalAddressId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 どの物理アドレスは、連絡先の郵送先住所を指定します。
   

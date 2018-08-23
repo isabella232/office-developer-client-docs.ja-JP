@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9ec1bbaa-7707-4239-9994-21ad1116430b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0bbad04e728c9283df0a9b7ceb7a8e303f0595dc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 898876863223aefa868fd37deced2948bd5a5694
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799759"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569751"
 ---
 # <a name="cbnewadrlist"></a>CbNewADRLIST
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [ADRENTRY](adrentry.md)構造体で表される受信者の指定した番号を含む新しい[ADRLIST](adrlist.md)構造体に割り当てるバイト数を計算します。 
   

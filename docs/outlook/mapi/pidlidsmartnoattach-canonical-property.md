@@ -1,5 +1,5 @@
 ---
-title: PidLidSmartNoAttach の標準的なプロパティ
+title: PidLidSmartNoAttach 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 60299c1b-1b46-4c3a-8fb9-a2b4d3383aac
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 43e10652a7dccdf0da6592df0f9fc2daf5ea9bee
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: e4a0e87b24789e3ee4cb5ed6684d508b62e65b30
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802166"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575974"
 ---
-# <a name="pidlidsmartnoattach-canonical-property"></a>PidLidSmartNoAttach の標準的なプロパティ
+# <a name="pidlidsmartnoattach-canonical-property"></a>PidLidSmartNoAttach 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージの添付ファイルと見なされますかどうかを非表示にします。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidSmartNoAttach  <br/> |
+|関連するプロパティ:  <br/> |dispidSmartNoAttach  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x00008514  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |実行時の構成  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージの添付ファイルと見なされる場合は、このプロパティは TRUE を非表示にします。
   
@@ -67,7 +67,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c0a65d2b-a9b8-4477-a1c7-18c8478126f6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c79d9ebb5be1d8af6c9136514d8a2b695513f755
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 566a9d23c46ec717eb5eed711fff801b15d49fc1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800273"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564235"
 ---
 # <a name="hraddcolumnsex"></a>HrAddColumnsEx
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 追加または既存のテーブルの先頭に列を移動します。 
   

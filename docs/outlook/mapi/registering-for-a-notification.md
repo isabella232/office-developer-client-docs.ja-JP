@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 45625387-dbd2-4ca8-926b-ef87998d01d7
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2d01527bb3c5176087aabeb69dbc8d99738df772
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5a35add66fb685b3c17464269456edf6b456711e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803749"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570213"
 ---
 # <a name="registering-for-a-notification"></a>通知の登録
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアントは、その初期化プロセスの一部としてアドレス帳またはメッセージ ストアの通知を登録できます。
   

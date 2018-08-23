@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: d8cb407e-5c3a-4b4c-b20e-78efcd373081
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1b33f051426e5bdf5ab4f949fa59535081e49185
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ead835b9ace2bb775c06421a25b439ed22d93e0f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802697"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566930"
 ---
 # <a name="pidtagdepartmentname-canonical-property"></a>PidTagDepartmentName 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 受信者が使用される部門の名前が含まれています。 
   

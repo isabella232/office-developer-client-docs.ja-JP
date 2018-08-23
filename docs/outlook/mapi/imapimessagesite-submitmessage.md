@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 6b14c383-8bc6-4e86-bd92-0500272af40d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 694ee8b12b9918502e60c0c6ea92992cc1062945
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 587b8bbb7ac25a7977d8962535f1909464ffc248
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800606"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571102"
 ---
 # <a name="imapimessagesitesubmitmessage"></a>IMAPIMessageSite::SubmitMessage
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 現在のメッセージが配信のキューに置かれることを要求します。
   

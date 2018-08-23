@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 22ee8157-d74e-4a94-9c76-b9ac736d5211
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5f1dac712731175978bc639cc7296171448a41e9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d896d66db13b2114c1c333084d5f3b1d3a341796
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801087"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574791"
 ---
 # <a name="initializing-mapi"></a>MAPI の初期化
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI ライブラリを使用するすべてのクライアント アプリケーションは**生じます**関数を呼び出す必要があります。 詳細については、[生じます](mapiinitialize.md)を参照してください。 **生じます**では、セッションのグローバル データを初期化し、呼び出しを受け入れるため、MAPI ライブラリを準備します。 いくつかの状況で設定するのには重要ないくつかのフラグがあります。 
   

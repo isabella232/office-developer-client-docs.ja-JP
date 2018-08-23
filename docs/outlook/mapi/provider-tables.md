@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 99709a4c-cb52-436e-a322-02ded5d65ce5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a613bd744a113b4378c5bef94fb51f6ae3aa4041
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ccc51f33ff681021492949c2180fe70940157f4f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803707"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566139"
 ---
 # <a name="provider-tables"></a>プロバイダー テーブル
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロバイダー テーブルには、サービス プロバイダーに関する情報が含まれています。 別のプロバイダーの 2 つのテーブルは、MAPI によって実装され、クライアントによって使用される両方。 アクセス、 [IMsgServiceAdmin::GetProviderTable](imsgserviceadmin-getprovidertable.md)メソッドを呼び出すことによって、最初の表は、すべての現在のプロファイル プロバイダーに関する情報を保持します。 2 番目のテーブルでは、 [IProviderAdmin::GetProviderTable](iprovideradmin-getprovidertable.md)を使用してアクセスは、すべてのメッセージ サービスのサービス プロバイダーに関する情報を格納するテーブルを作成します。
   

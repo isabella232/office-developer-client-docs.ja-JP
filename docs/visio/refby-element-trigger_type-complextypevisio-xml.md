@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 09f2430a-184d-eaa2-2cb9-51bb24345c51
 description: 図面のページへの参照を指定します。
-ms.openlocfilehash: 57ac63c4488b68d3af3c6e4a75417e2c7937723c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e4726a8fe49a7492cd2f7833bbcf5e6810bae18d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806160"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572432"
 ---
 # <a name="refby-element-triggertype-complextype-visio-xml"></a>RefBy 要素 (Trigger_Type complexType)'Visio XML (')
 
@@ -42,9 +42,8 @@ ms.locfileid: "19806160"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Trigger](http://msdn.microsoft.com/library/6dbd2c66-3b29-03f6-648f-723d359ded0d%28Office.15%29.aspx) <br/> |[Trigger_Type](trigger_type-complextypevisio-xml.md) <br/> |Visio ファイル内のドキュメント パーツ間の関係を再計算するための Microsoft Visio に指示を提供します。  <br/> |
-|[Trigger](http://msdn.microsoft.com/library/e4eeb238-f6d0-fb23-db1c-01d55b0a8d88%28Office.15%29.aspx) <br/> |[Trigger_Type](trigger_type-complextypevisio-xml.md) <br/> |Visio ファイル内のドキュメント パーツ間の関係を再計算するための Microsoft Visio に指示を提供します。  <br/> |
 |[Trigger](trigger-elementvisio-xml.md) <br/> |[Trigger_Type](trigger_type-complextypevisio-xml.md) <br/> |Visio ファイル内のドキュメント パーツ間の関係を再計算するための Microsoft Visio に指示を提供します。  <br/> |
+
    
 ### <a name="child-elements"></a>子要素
 

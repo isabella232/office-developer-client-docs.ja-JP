@@ -1,5 +1,5 @@
 ---
-title: Project Server エラー コード
+title: Project Server のエラー コード
 manager: soliver
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -14,55 +14,55 @@ keywords:
 localization_priority: Normal
 ms.assetid: db78a09c-ebef-47cc-8623-40abe117aa08
 description: このトピックには、Project Server 2013 のプロジェクト Server インターフェイス (PSI) のエラー コードのテーブルが含まれています。 機能領域とエラー ・ コードの範囲によっては、テーブルが配置されます。
-ms.openlocfilehash: 9d63ed0dde638d123098ec4ffb8de083ddbb4fc6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4d4960c0452c90e267c48ee06de014b9e04b038f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804723"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564144"
 ---
-# <a name="project-server-error-codes"></a>Project Server エラー コード
+# <a name="project-server-error-codes"></a>Project Server のエラー コード
 
 このトピックには、Project Server 2013 のプロジェクト Server インターフェイス (PSI) のエラー コードのテーブルが含まれています。 機能領域とエラー ・ コードの範囲によっては、テーブルが配置されます。
    
-Project Server 2013 のプロセスと、アドインの機能領域で一般に配置されたエラー コード番号があります。 [Microsoft.Office.Project.Server.Library.PSErrorID](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Library.PSErrorID.aspx)列挙型と重複して[WebSvcProject.PSErrorID](https://msdn.microsoft.com/library/WebSvcProject.PSErrorID.aspx)。名でアルファベット順のエラー コードをリスト表示します。 このトピックでは、PSI クラスまたは機能領域、およびエラーの識別子 (ID) 番号に配置されたテーブルのエラー コードを示します。 
+Project Server 2013 のプロセスと、アドインの機能領域で一般に配置されたエラー コード番号があります。 [Microsoft.Office.Project.Server.Library.PSErrorID](https://msdn.microsoft.com/en-us/library/microsoft.office.project.server.library.pserrorid_di_pj14mref(v=office.14).aspx)列挙型と重複して[WebSvcProject.PSErrorID](https://msdn.microsoft.com/en-us/library/office/websvcproject.pserrorid_di_pj14mref.aspx)。名でアルファベット順のエラー コードをリスト表示します。 このトピックでは、PSI クラスまたは機能領域、およびエラーの識別子 (ID) 番号に配置されたテーブルのエラー コードを示します。 
   
 > [!NOTE]
 >  エラー コードの多くは汎用的なもので、複数の原因が考えられることもあります。エラーの詳細を調べるには、次の方法があります。 
-> - ASMX ベースのアプリケーションでは、PSI メソッドの呼び出しでリストまたはエラーの階層を表示するのに**PSClientError**オブジェクトに**System.Web.Services.Protocols.SoapException**を使用します。 [ASMX のエラー コードの例](#pj15_ErrorCodes_ASMXExample)を参照してください。 
-> - WCF ベースのアプリケーションでは、 **PSClientError**オブジェクトを取得し、追加のエラー情報を取得する**System.ServiceModel.FaultException**を使用できます。 [WCF のエラー コードの例](#pj15_ErrorCodes_WCFExample)を参照してください。 
+> - ASMX ベースのアプリケーションの場合は、**System.Web.Services.Protocols.SoapException** を **PSClientError** オブジェクトと共に使用して、PSI メソッド呼び出しでのエラーの一覧または階層を表示する。「[ASMX のエラー コード例](#pj15_ErrorCodes_ASMXExample)」を参照してください。 
+> - WCF ベースのアプリケーションの場合は、**System.ServiceModel.FaultException** を使用して **PSClientError** オブジェクトを取得すると共に、追加エラー情報を取得する。「[WCF のエラー コード例](#pj15_ErrorCodes_WCFExample)」を参照してください。 
 > - Project Server コンピューター上のアプリケーション イベント ログを使用する。
 > - ユニファイド ログ サービス (ULS) のトレース ログを使用します。 詳細については、 [Project 2010 の開発を開始する](http://msdn.microsoft.com/en-us/library/gg607685.aspx)*エラーをチェック*する」を参照してください。 
 > - 詳細については、ULS ログを使用して、プロジェクトのサポートのブログの記事を参照してください[Project Server 2010: 予期、予期しないを取得する場合にどのような](http://blogs.msdn.com/b/brismith/archive/2010/03/24/project-server-2010-what-to-expect-when-you-get-the-unexpected.aspx)のブログを検索して「ログ ULS を読む」 
 > - 検索または ULS データ内の特定の問題を監視するために、するには、 [ULS ビューアー](http://www.codeproject.com/Articles/458052/ULS-Log-Viewer)を使用します。 
-> - キャッチしたり、データベースのエラーを監視するのにには、Microsoft SQL Server プロファイラーを使用します。 詳細については、 [SQL Server プロファイラー](http://msdn.microsoft.com/library/3ad5f33d-559e-41a4-bde6-bb98792f7f1a.aspx)を参照してください。 
-> - エラー コードの多くは、内部でのみ使用されています。 たとえば、 **ExchangeSync** 、 **PWA** web サービスは、サードパーティの開発ではサポートされていません、ためする**ルール**および**StatusReports**メソッドなど、これらの領域内のメソッドからエラー コードが表示される可能性ではできません。 ただし、この記事の表には、完全を期すのため、すべての Project Server エラー コードが含まれます。 
+> - Microsoft SQL Server Profiler は、データベース エラーの検出と監視に役立ちます。詳細については、「[SQL Server Profiler](http://msdn.microsoft.com/library/3ad5f33d-559e-41a4-bde6-bb98792f7f1a.aspx)」を参照してください。 
+> - エラー コードの多くは内部でのみ使用されます。たとえば、**ExchangeSync** と **PWA** の Web サービスはサードパーティの開発に対応していないので、これらの領域のメソッド (**Rules** メソッドや **StatusReports** メソッドなど) のエラー コードを目にする可能性はほとんどありません。ただし、この記事の表では完全を期すために Project Server のすべてのエラー コードを紹介します。 
   
 ## <a name="table-1-error-code-functional-areas-and-related-number-ranges"></a>表 1. エラー コードの機能領域と関連する数値の範囲
 
-|サーバーの機能領域をプロジェクトします。|エラー コードの数値の範囲|
+|Project Server の機能領域|エラー コードの数値の範囲|
 |:-----|:-----|
 |[表 3: 一般的なエラー コード](#pj15_ErrorCodes_General) <br/> |0 - 99 です。500-999 です。9131;10000-10099 です。20000-20099 です。26000-26099  <br/> |
-|[表 4: アクティブなキャッシュ](#pj15_ErrorCodes_ActiveCache) <br/> |12000-12099  <br/> |
-|[表 5: Active Directory の同期](#pj15_ErrorCodes_ActiveDirectory) <br/> |27000-27999  <br/> |
-|[表 6: 管理 web サービス](#pj15_ErrorCodes_Admin) <br/> |16600 ～ 16699、19011、19012、19032、20003、25000 ～ 25099  <br/> |
-|[(バックアップと復元)、表 7: アーカイブ](#pj15_ErrorCodes_Archive) <br/> |25000 ～ 25999、29000 ～ 29099  <br/> |
+|[表 4: アクティブ キャッシュ](#pj15_ErrorCodes_ActiveCache) <br/> |12000-12099  <br/> |
+|[表 5: Active Directory 同期](#pj15_ErrorCodes_ActiveDirectory) <br/> |27000-27999  <br/> |
+|[表 6: 管理 Web サービス](#pj15_ErrorCodes_Admin) <br/> |16600 ～ 16699、19011、19012、19032、20003、25000 ～ 25099  <br/> |
+|[表 7: アーカイブ (バックアップと復元)](#pj15_ErrorCodes_Archive) <br/> |25000 ～ 25999、29000 ～ 29099  <br/> |
 |[表 8: 割り当て](#pj15_ErrorCodes_Assignments) <br/> |120-199  <br/> |
 |[表 9: カレンダー](#pj15_ErrorCodes_Calendar) <br/> |77、13000 ～ 13999  <br/> |
 |[表 10: キューブ作成サービス (CBS)](#pj15_ErrorCodes_CBS) <br/> |17000-17999  <br/> |
 |[表 11: チェックイン、チェック アウト](#pj15_ErrorCodes_CICO) <br/> |10100-10199  <br/> |
 |[表 12: ユーザー設定フィールド](#pj15_ErrorCodes_CustomFields) <br/> |11500-11999  <br/> |
-|[表 13: ルックアップ テーブル](#pj15_ErrorCodes_LookupTables) <br/> |11000-11499  <br/> |
+|[表 13: 参照テーブル](#pj15_ErrorCodes_LookupTables) <br/> |11000-11499  <br/> |
 |[表 14: その他](#pj15_ErrorCodes_Miscellaneous) <br/> |11000-11499  <br/> |
 |[表 15: 通知](#pj15_ErrorCodes_Notifications) <br/> |16000-16599  <br/> |
-|[表 16: オプティマイザー](#pj15_ErrorCodes_Optimizer)(プロジェクト ポートフォリオ分析)  <br/> |29000-29999  <br/> |
-|[表 17: プランナー](#pj15_ErrorCodes_Planner)(プロジェクト ポートフォリオ分析)  <br/> |28000-28999  <br/> |
+|[表 16 : オプティマイザー](#pj15_ErrorCodes_Optimizer) (プロジェクト ポートフォリオ分析)  <br/> |29000-29999  <br/> |
+|[表 17 : プランナー](#pj15_ErrorCodes_Planner) (プロジェクト ポートフォリオ分析)  <br/> |28000-28999  <br/> |
 |[表 18: プロジェクト](#pj15_ErrorCodes_Projects) <br/> |100-499 です。1000-1199。9100-9199 です。23000 23999  <br/> |
-|[表 19: レポート データ サービス](#pj15_ErrorCodes_RDS)(RDS)  <br/> |24000-24999  <br/> |
+|[表 19: Reporting Data Service](#pj15_ErrorCodes_RDS) (RDS)  <br/> |24000-24999  <br/> |
 |[表 20: リソース](#pj15_ErrorCodes_Resources) <br/> |2000-2999  <br/> |
 |[表 21: リソース計画](#pj15_ErrorCodes_ResourcePlans) <br/> |30000-30999  <br/> |
-|[表 22: ルール](#pj15_ErrorCodes_Rules) <br/> |21000 から 21099  <br/> |
-|[表 23: セキュリティ](#pj15_ErrorCodes_Security) <br/> |19000-19099  <br/> |
+|[表 22: 規則](#pj15_ErrorCodes_Rules) <br/> |21000 から 21099  <br/> |
+|[表 23 : セキュリティ](#pj15_ErrorCodes_Security) <br/> |19000-19099  <br/> |
 |[表 24: サーバーのイベント](#pj15_ErrorCodes_Events) <br/> |19033、22000 ～ 22999  <br/> |
 |[表 25: 状態管理](#pj15_ErrorCodes_Statusing) <br/> |3100-3199  <br/> |
 |[表 26: 進捗レポート](#pj15_ErrorCodes_StatusReports) <br/> |12100-12299  <br/> |
@@ -70,13 +70,13 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 |[表 28: タイムシート](#pj15_ErrorCodes_Timesheets) <br/> |3200-3299  <br/> |
 |[表 29: ユーザーの委任](#pj15_ErrorCodes_UserDelegation) <br/> |43000-43500  <br/> |
 |[表 30: ワークフロー](#pj15_ErrorCodes_Workflow) <br/> |35000 ～ 35999: ワークフロー  <br/> |
-|[表 31: WSSInterop と ObjectLinkProvider (SharePoint の統合)](#pj15_ErrorCodes_WSS) <br/> |16400 ～ 16499: SharePoint 統合とプロジェクト ワークスペース  <br/> 18000 ～ 18099: オブジェクト リンク プロバイダーと SharePoint プロジェクトのインポート  <br/> |
+|[表 31 : WSSInterop と ObjectLinkProvider (SharePoint 統合)](#pj15_ErrorCodes_WSS) <br/> |16400 ～ 16499: SharePoint 統合とプロジェクト ワークスペース  <br/> 18000 ～ 18099: オブジェクト リンク プロバイダーと SharePoint プロジェクトのインポート  <br/> |
    
 ## <a name="table-2-error-code-table-by-number-range"></a>表 2. 数値の範囲によるエラー コードの表
 
-|エラー ・ コードの範囲|エラーコード表|
+|エラー コードの範囲 |エラー コードの表|
 |:-----|:-----|
-|0 - 99  <br/> |[表 3: 一般的なエラー コード](#pj15_ErrorCodes_General)では、77 点を除いて、[表 9: カレンダー](#pj15_ErrorCodes_Calendar) <br/> |
+|0 - 99  <br/> |[表 3: 一般的なエラー コード](#pj15_ErrorCodes_General) (ただし 77 は「[表 9: カレンダー](#pj15_ErrorCodes_Calendar)」に掲載) <br/> |
 |100-119  <br/> |[表 18: プロジェクト](#pj15_ErrorCodes_Projects) <br/> |
 |120-199  <br/> |[表 8: 割り当て](#pj15_ErrorCodes_Assignments) <br/> |
 |500-999  <br/> |[表 3: 一般的なエラー コード](#pj15_ErrorCodes_General) <br/> |
@@ -85,36 +85,36 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 |3100-3199  <br/> |[表 25: 状態管理](#pj15_ErrorCodes_Statusing) <br/> |
 |3200-3299  <br/> |[表 28: タイムシート](#pj15_ErrorCodes_Timesheets) <br/> |
 |7000-7099  <br/> |[表 27: タスク](#pj15_ErrorCodes_Tasks) <br/> |
-|9100-9199  <br/> |[表 18: プロジェクト](#pj15_ErrorCodes_Projects)9131 がある点を除いて、[表 3: 一般的なエラー コード](#pj15_ErrorCodes_General) <br/> |
+|9100-9199  <br/> |[表 18: プロジェクト](#pj15_ErrorCodes_Projects) (ただし 9131 は「[表 3: 一般的なエラー コード](#pj15_ErrorCodes_General)」に掲載) <br/> |
 |10000-10099  <br/> |[表 3: 一般的なエラー コード](#pj15_ErrorCodes_General) <br/> |
 |10100-10199  <br/> |[表 11: チェックイン、チェック アウト](#pj15_ErrorCodes_CICO) <br/> |
-|11000-11499  <br/> |[表 13: ルックアップ テーブル](#pj15_ErrorCodes_LookupTables) <br/> |
+|11000-11499  <br/> |[表 13: 参照テーブル](#pj15_ErrorCodes_LookupTables) <br/> |
 |11500-11999  <br/> |[表 12: ユーザー設定フィールド](#pj15_ErrorCodes_CustomFields) <br/> |
-|12000-12099  <br/> |[表 4: アクティブなキャッシュ](#pj15_ErrorCodes_ActiveCache) <br/> |
+|12000-12099  <br/> |[表 4: アクティブ キャッシュ](#pj15_ErrorCodes_ActiveCache) <br/> |
 |12100-12299  <br/> |[表 26: 進捗レポート](#pj15_ErrorCodes_StatusReports) <br/> |
 |13000-13999  <br/> |[表 9: カレンダー](#pj15_ErrorCodes_Calendar) <br/> |
 |16000-16399  <br/> |[表 15: 通知](#pj15_ErrorCodes_Notifications) <br/> |
-|16400-16499  <br/> |[表 31: WssInterop とオブジェクト リンク プロバイダー (SharePoint の統合)](#pj15_ErrorCodes_WSS) <br/> |
-|16600-16699  <br/> |[表 6: 管理 web サービス](#pj15_ErrorCodes_Admin) <br/> |
+|16400-16499  <br/> |[表 31 : WssInterop と Object Link Provider (SharePoint 統合)](#pj15_ErrorCodes_WSS) <br/> |
+|16600-16699  <br/> |[表 6: 管理 Web サービス](#pj15_ErrorCodes_Admin) <br/> |
 |17000-17999  <br/> |[表 10: キューブ作成サービス (CBS)](#pj15_ErrorCodes_CBS) <br/> |
-|18000-18099  <br/> |[表 31: SharePoint の統合](#pj15_ErrorCodes_WSS) <br/> |
-|19000-19099  <br/> |[表 23: セキュリティ](#pj15_ErrorCodes_Security): 19011、19012、19032 は、内のコードのセキュリティに関連する点を除いて、[表 6: 管理 web サービス](#pj15_ErrorCodes_Admin) <br/> |
-|20000-20099  <br/> |[表 3: 一般的なエラー コード](#pj15_ErrorCodes_General)20003 がある点を除いて、[表 6: 管理 web サービス](#pj15_ErrorCodes_Admin) <br/> |
-|21000 から 21099  <br/> |[表 22: ルール](#pj15_ErrorCodes_Rules) <br/> |
+|18000-18099  <br/> |[表 31 : SharePoint 統合](#pj15_ErrorCodes_WSS) <br/> |
+|19000-19099  <br/> |[表 23: セキュリティ](#pj15_ErrorCodes_Security) (ただし、19011、19012、19032 は「[表 6: 管理 Web サービス](#pj15_ErrorCodes_Admin)」のセキュリティ関連のコードに掲載) <br/> |
+|20000-20099  <br/> |[表 3: 一般的なエラー コード](#pj15_ErrorCodes_General) (ただし 20003 は「[表 6: 管理 Web サービス](#pj15_ErrorCodes_Admin)」に掲載) <br/> |
+|21000 から 21099  <br/> |[表 22: 規則](#pj15_ErrorCodes_Rules) <br/> |
 |22000-22999  <br/> |[表 24: サーバーのイベント](#pj15_ErrorCodes_Events) <br/> |
 |23000-23999  <br/> |[表 18: プロジェクト](#pj15_ErrorCodes_Projects) <br/> |
-|24000-24999  <br/> |[表 19: レポート データ サービス](#pj15_ErrorCodes_RDS)(RDS)  <br/> |
-|25000-25999  <br/> |[表 7: アーカイブ (バックアップと復元)](#pj15_ErrorCodes_Archive)を除く 25004、25006 は[表 6: 管理 web サービス](#pj15_ErrorCodes_Admin) <br/> |
+|24000-24999  <br/> |[表 19: Reporting Data Service](#pj15_ErrorCodes_RDS) (RDS)  <br/> |
+|25000-25999  <br/> |[表 7: アーカイブ (バックアップと復元)](#pj15_ErrorCodes_Archive) (ただし 25004、25006 は「[表 6: 管理 Web サービス](#pj15_ErrorCodes_Admin)」に掲載) <br/> |
 |26000-26099  <br/> |[表 3: 一般的なエラー コード](#pj15_ErrorCodes_General) <br/> |
-|27000-27999  <br/> |[表 5: Active Directory の同期](#pj15_ErrorCodes_ActiveDirectory) <br/> |
-|28000-28999  <br/> |[表 17: プランナー](#pj15_ErrorCodes_Planner)(プロジェクト ポートフォリオ分析)  <br/> |
-|29000-29999  <br/> |[表 16: オプティマイザー](#pj15_ErrorCodes_Optimizer)(プロジェクト ポートフォリオ分析)、29021 がある点を除いて[表 7: アーカイブ](#pj15_ErrorCodes_Archive) <br/> |
+|27000-27999  <br/> |[表 5: Active Directory 同期](#pj15_ErrorCodes_ActiveDirectory) <br/> |
+|28000-28999  <br/> |[表 17 : プランナー](#pj15_ErrorCodes_Planner) (プロジェクト ポートフォリオ分析)  <br/> |
+|29000-29999  <br/> |[表 16: オプティマイザー](#pj15_ErrorCodes_Optimizer) (プロジェクト ポートフォリオ分析) (ただし 29021 は「[表 7: アーカイブ](#pj15_ErrorCodes_Archive)」に掲載) <br/> |
 |30000-30999  <br/> |[表 21: リソース計画](#pj15_ErrorCodes_ResourcePlans) <br/> |
-|31000-31999  <br/> 32000-32100  <br/> |[表 14: その他](#pj15_ErrorCodes_Miscellaneous)(監査は使用されません)  <br/> プロジェクト詳細ページ  <br/> |
+|31000-31999  <br/> 32000-32100  <br/> |[表 14 : その他](#pj15_ErrorCodes_Miscellaneous) (監査; 未使用)  <br/> プロジェクト詳細ページ  <br/> |
 |35000-35999  <br/> 40000-40499  <br/> |[表 30: ワークフロー](#pj15_ErrorCodes_Workflow) <br/> |
-|40500-40999  <br/> 42000-42999  <br/> |[表 14: その他](#pj15_ErrorCodes_Miscellaneous)(**ExchangeSync**内部で使用)。  <br/> Project Web App のタイムライン  <br/> |
+|40500-40999  <br/> 42000-42999  <br/> |[表 14: その他](#pj15_ErrorCodes_Miscellaneous) (**ExchangeSync**、内部で使用)  <br/> Project Web App のタイムライン  <br/> |
 |43000-43500  <br/> |[表 29: ユーザーの委任](#pj15_ErrorCodes_UserDelegation) <br/> |
-|50000-51999  <br/> |[表 14: その他](#pj15_ErrorCodes_Miscellaneous)(データベース エラーが発生)  <br/> |
+|50000-51999  <br/> |[表 14 : その他](#pj15_ErrorCodes_Miscellaneous) (データベースのエラー)  <br/> |
 
 <a name="pj15_ErrorCodes_General"></a>
 
@@ -145,9 +145,9 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 |GeneralQueueException = 9131  <br/> |例外: キュー サービスで一般エラーが発生しました。  <br/> |
 |GeneralItemDoesNotExist = 10000  <br/> |指定されたアイテムが存在しません。  <br/> |
 |GeneralLCIDInvalid = 10001  <br/> |ロケール識別子 (言語 ID) が無効です。  <br/> |
-|GeneralRowDoesNotExist = 10002  <br/> |**データ テーブル**内の指定された行が存在しません。  <br/> |
-|GeneralInvalidColumnValue = 20000  <br/> |**データ テーブル**の列の値が有効ではありません。  <br/> |
-|GeneralInvalidDataRowState = 20001  <br/> |**DataRow**の状態が有効ではありません。  <br/> |
+|GeneralRowDoesNotExist = 10002  <br/> |**DataTable** の指定された行が存在しません。  <br/> |
+|GeneralInvalidColumnValue = 20000  <br/> |**DataTable** の列の値が無効です。  <br/> |
+|GeneralInvalidDataRowState = 20001  <br/> |**DataRow** 状態が無効です。  <br/> |
 |GeneralDuplicatedNames = 20004  <br/> |重複する名前が存在します。名前は一意である必要があります。  <br/> |
 |GeneralReadOnlyColumn = 20005  <br/> |列は読み取り専用です。  <br/> |
 |GeneralReadOnlyRow = 20006  <br/> |行は読み取り専用です。  <br/> |
@@ -181,7 +181,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 |GeneralQueueInvalidGroupPriority = 26009  <br/> |キューのグループの優先度が無効です。  <br/> |
 |GeneralQueueInvalidCorrelationPriority = 26010  <br/> |キューの相互関係の優先度が無効です。  <br/> |
 |GeneralQueueInvalidQueueID = 26011  <br/> |キューの識別番号が無効です。  <br/> |
-|GeneralQueueInvalidAdminAction = 26012  <br/> |キューの**管理**操作が正しくありません。  <br/> |
+|GeneralQueueInvalidAdminAction = 26012  <br/> |キューに対して **Admin** アクションが無効です。  <br/> |
 |GeneralQueueInvalidStatType = 26013  <br/> |キューの状態の種類が無効です。  <br/> |
 |GeneralQueueInvalidBlockPolicy = 26014  <br/> |キューのブロック ポリシーが無効です。  <br/> |
 |GeneralQueueCannotRetryJob = 26015  <br/> |キューがジョブを再試行できません。  <br/> |
@@ -190,14 +190,14 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 |GeneralDalErrorGettingConnectionStrings = 26018  <br/> |データ アクセス層 (DAL) の接続文字列取得エラー。  <br/> |
 |GeneralDalErrorConnectingToDatabase = 26019  <br/> |データベースに接続する DAL のエラー。  <br/> |
 |GeneralDalInvalidArgumentCountCreatingFilter = 26020  <br/> |フィルターを作成するための引数の数が無効です。  <br/> |
-|GeneralDataTableCannotBeNull = 26024  <br/> |**DataTable**を**null**にすることはできません。  <br/> |
-|GeneralDatasetConstraints = 26025  <br/> |**データセット**の制約でエラーが発生しました。  <br/> |
-|GeneralInvalidDataSetStructure = 26027  <br/> |**データセット**の構造が有効ではありません。  <br/> |
+|GeneralDataTableCannotBeNull = 26024  <br/> |**DataTable** を **null** にすることはできません。  <br/> |
+|GeneralDatasetConstraints = 26025  <br/> |**DataSet** 制約のエラー。  <br/> |
+|GeneralInvalidDataSetStructure = 26027  <br/> |**DataSet** 構造が無効です。  <br/> |
 |GeneralDalNoRowsUpdated = 26028  <br/> |データ アクセス レイヤー (DAL) で行が更新されていません。  <br/> |
-|GeneralDataTableCannotBeEmpty = 26029  <br/> |**データ テーブル**を空にすることはできません。  <br/> |
+|GeneralDataTableCannotBeEmpty = 26029  <br/> |**DataTable** を空にすることはできません。  <br/> |
 |GeneralWSSContentDBNotWritable = 26030  <br/> |SharePoint コンテンツ データベースに書き込めません。 コンテンツ データベースが読み取り専用か、サイト コレクションのレベルでロックがかかっています。  <br/> |
 |GeneralSPValidateFormDigestError = 26031  <br/> |タイムアウトのため通常、Project Web App のコールバックのフォーム ダイジェストの検証でエラーが発生しました。  <br/> |
-|GeneralDelegationActiveForCurrentUser = 26032  <br/> |現在のユーザーは、作業中の委任を持っています。 Project Professional の**WinProj**サービスの web メソッドでは、このエラーが発生します。  <br/> |
+|GeneralDelegationActiveForCurrentUser = 26032  <br/> |現在のユーザーに有効な委任が設定されています。このエラーは、Project Professional 用の **WinProj** サービスの Web メソッドで発生します。<br/> |
 
 <a name="pj15_ErrorCodes_ActiveCache"></a>
 
@@ -225,7 +225,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 
 ## <a name="table-5-active-directory-synchronization"></a>表 5. 作業中のディレクトリ同期
 
-|アクティブなディレクトリ同期のエラー コード|説明|
+|Active Directory 同期のエラー コード|説明|
 |:-----|:-----|
 |AdSyncUpdateTimerJobFailed = 27002  <br/> |Active Directory ディレクトリ サービスとの同期で、更新タイマー ジョブが失敗しました。  <br/> |
 |AdSyncDeleteTimerJobFailed = 27003  <br/> |Active Directory との同期で、削除タイマー ジョブが失敗しました。  <br/> |
@@ -259,8 +259,8 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 |AdminUserAccountNameNull = 28021  <br/> |ユーザー アカウント名が null です。  <br/> |
 |AdminIsWindowsUserNull = 28022  <br/> |Windows (NTLM) ユーザー アカウントが null と表示されています。  <br/> |
 |AdminInvalidTimePeriodState = 28023  <br/> |期間の状態が無効です。  <br/> |
-|AdminGlobalUpdateFailed = 28024  <br/> |**SetServerCurrency**への呼び出し中に、エンタープライズ グローバルな更新ができませんでした。  <br/> |
-|AdminGlobalCheckedOut = 28025  <br/> |エンタープライズ グローバル テンプレートは**SetServerCurrency**への呼び出し中に既にチェック アウトされています。  <br/> |
+|AdminGlobalUpdateFailed = 28024  <br/> |**SetServerCurrency** の呼び出し時にエンタープライズ グローバルの更新が失敗しました。  <br/> |
+|AdminGlobalCheckedOut = 28025  <br/> |**SetServerCurrency** の呼び出し時にエンタープライズ グローバル テンプレートが既にチェックアウトされています。  <br/> |
 |AdminInvalidDatabaseTimeout = 28026  <br/> |データベースが無効なためタイムアウトしました。  <br/> |
 |AdminInvalidDatabaseTimeoutType = 28027  <br/> |データベースの種類が無効なためタイムアウトしました。  <br/> |
 |AdminInvalidEntityType = 28028  <br/> |エンティティの種類が正しくありません。 [EntityCollection](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Library.EntityCollection.aspx)を参照してください。  <br/> |
@@ -334,7 +334,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 
 <a name="pj15_ErrorCodes_Calendar"></a>
 
-## <a name="table-9-calendar"></a>表 9. カレンダー
+## <a name="table-9-calendar"></a>表 9. 予定表
 
 |カレンダーのエラー コード|説明|
 |:-----|:-----|
@@ -367,7 +367,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 |CalCalendarUniqueIdToDuplicateShouldBeNull = 13035  <br/> |カレンダーを複製するには GUID は null である必要があります。  <br/> |
 |CalendarInvalidBaseCalendarUniqueId = 13037  <br/> |基本カレンダー GUID が無効です。  <br/> |
 |CalendarInvalidUniqueIdToDuplicate = 13038  <br/> |GUID が無効なため、カレンダーを複製できません。  <br/> |
-|CalendarUnusedCalendarException = 13039  <br/> |カレンダーの例外には、対応する予定はありません。 **ResourceDataSet.CalendarExceptions**テーブルがない**BaseCalendarUniqueId**を [**リソース**] テーブルには、そのリソースのエントリがある場合は、 **UpdateResources**メソッドを使用するときに発生します。  <br/> |
+|CalendarUnusedCalendarException = 13039  <br/> |カレンダーの例外に対応するカレンダーがありません。**UpdateResources** メソッドを使用していて、**ResourceDataSet.CalendarExceptions** テーブルにはエントリがあっても、そのリソースに対する **BaseCalendarUniqueId** が **Resources** テーブルにない場合に発生します。<br/> |
 |CalendarCannotDeleteStandardCalendar = 13040  <br/> |標準カレンダーを削除できません。  <br/> |
 |CalendarCannotRenameStandardCalendar = 13041  <br/> |標準カレンダーの名前を変更できません。  <br/> |
 |CalendarCannotDeleteCalendarUsedByEnterpriseResource = 13042  <br/> |カレンダーはエンタープライズ リソースにより使用されているため、削除できません。  <br/> |
@@ -418,7 +418,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 
 ## <a name="table-11-check-in-and-check-out"></a>表 11。 チェックインおよびチェック アウト
 
-|チェックイン - エラー コードをチェック アウト|説明|
+|チェックインとチェックアウトのエラー コード|説明|
 |:-----|:-----|
 |CICOCheckedOutToOtherUser = 10100  <br/> |別のユーザーにチェックアウトしました。  <br/> |
 |CICOAlreadyCheckedOutToYou = 10101  <br/> |既に現在のユーザーにチェックアウトしています。  <br/> |
@@ -492,7 +492,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 |CustomFieldCannotModifyDepartmentUidOnBuiltinFields = 11732  <br/> |組み込みユーザー設定フィールドの部署 GUID は変更できません。  <br/> |
 |CustomFieldCannotHaveBothLookupTableAndMultilineText = 11733  <br/> |ユーザー設定フィールドに参照テーブルと複数行テキストの両方を含めることはできません。  <br/> |
 |CustomFieldCannotHaveBothFormulaAndMultilineText = 11734  <br/> |ユーザー設定フィールドに式と複数行テキストの両方を含めることはできません。  <br/> |
-|CustomFieldDescriptionExceedsLimit = 11735  <br/> |カスタム フィールドの説明が長すぎます。 **MD_PROP_DESCRIPTION**プロパティの最大長は、1000 文字です。  <br/> |
+|CustomFieldDescriptionExceedsLimit = 11735  <br/> |ユーザー設定フィールドの説明が長すぎます。**MD_PROP_DESCRIPTION** プロパティの最大長は 1000 文字です。<br/> |
 |CustomFieldOnlyTextFieldsCanHaveMultilineText = 11736  <br/> |複数行テキストを格納できるのはテキストのユーザー設定フィールドのみです。  <br/> |
 |CustomFieldOnlyProjectFieldsCanHaveMultilineText = 11737  <br/> |複数行テキストを格納できるのはプロジェクトのユーザー設定フィールドのみです。  <br/> |
 |CustomFieldCannotChangeWorkflowControlledBehaviorForNonProjectCustomFields = 11738  <br/> |ユーザー設定フィールドは、ワークフローによって制御されている非プロジェクトのユーザー設定フィールドの動作を変更できません。  <br/> |
@@ -512,7 +512,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 
 ## <a name="table-13-lookup-table"></a>表 13 です。 参照テーブル
 
-|ルックアップ テーブルのエラー コード|説明|
+|参照テーブルのエラー コード|説明|
 |:-----|:-----|
 |LookupTableMaskNotDefined = 11000  <br/> |参照テーブルのコードの書式設定が定義されていません。  <br/> |
 |LookupTableMaskHasTooManyValues = 11001  <br/> |参照テーブルのコードの書式設定に値が多すぎます。  <br/> |
@@ -582,8 +582,8 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 |ProjectDetailPagesUnavailableWorker = 32002  <br/> |プロジェクト ドリルダウンの読み込みに失敗しました。使用できるワーカーがありません。  <br/> |
 |ProjectDetailPagesFailedToLoadProjectInWorker = 32003  <br/> |ワーカーの読み込みに失敗しました。  <br/> |
 |AppPermissionInvalidAppPermissionId = 32300  <br/> |アプリケーション権限 ID に問題があります。  <br/> |
-|InvariantValidationPSIFailed = 40000  <br/> |プライベート メソッドは、 **ValidationMethodFailed**を返す場合に、 **PWA**メソッドによって返されます。 内部で使用します。  <br/> |
-|ValidationMethodFailed = 40001  <br/> |データベースの不整合を検出すると、 **PWA**のプライベート メソッドによって返されます。 内部で使用します。  <br/> |
+|InvariantValidationPSIFailed = 40000  <br/> |プライベート メソッドが **ValidationMethodFailed** を返した場合に、**PWA** のメソッドがこのエラーを返します。内部で使用されます。<br/> |
+|ValidationMethodFailed = 40001  <br/> |**PWA** のプライベート メソッドがデータベースの不整合を検出したときにこのエラーを返します。<br/> |
 |GeneralExchangeSyncError = 40500  <br/> |Microsoft Exchange の同期処理に関する一般的なエラーです。内部で使用されます。  <br/> |
 |ExchangeSyncRootFolderCreationFailed = 40501  <br/> |Microsoft Exchange の同期処理でルート フォルダーの作成に失敗しました。  <br/> |
 |ExchangeSyncTaskFolderCreationFailed = 40502  <br/> |タスク フォルダーの作成に失敗しました。  <br/> |
@@ -606,7 +606,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 
 <a name="pj15_ErrorCodes_Notifications"></a>
 
-## <a name="table-15-notification"></a>表 15。 通知
+## <a name="table-15-notification"></a>表 15。 Notification
 
 |通知のエラー コード|説明|
 |:-----|:-----|
@@ -791,7 +791,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 |PlannerCannotDeleteSolution = 28902  <br/> |プランナーがソリューションを削除できません。  <br/> |
 |PlannerCannotCreateMultipleSolutions = 28903  <br/> |プランナーは複数のソリューションを作成できません。  <br/> |
 |PlannerCannotUpdateMultipleSolutions = 28904  <br/> |プランナーは複数のソリューションを更新できません。  <br/> |
-|PlannerTableIsReadOnly = 28907  <br/> |**DataTable**は、読み取り専用です。  <br/> |
+|PlannerTableIsReadOnly = 28907  <br/> |**DataTable** は読み取り専用です。  <br/> |
 |PlannerCannotCommitSolution = 28908  <br/> |プランナーはソリューションをデータベースにコミットできません。  <br/> |
 |PlannerFieldIsReadOnly = 28909  <br/> |フィールドは読み取り専用です。  <br/> |
 |PlannerProjectNotInParentSolution = 28910  <br/> |プロジェクトは親ソリューションではありません。  <br/> |
@@ -843,7 +843,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 |ProjectOptCurrencyDigitsInvalid = 1037  <br/> |オプションの通貨桁数が無効です。  <br/> |
 |ProjectOptCurrencySymbolTooLong = 1038  <br/> |オプションの通貨記号が長すぎます。  <br/> |
 |ProjectCannotDelete = 1039  <br/> |プロジェクトを削除できません。通常のプロジェクトまたはテンプレート サーバー側のプロジェクトのみを削除できます。  <br/> |
-|ProjectCannotAdd = 1040  <br/> |サーバー側のプロジェクトで、 **AddToProject**メソッドを使用することはできません。  <br/> |
+|ProjectCannotAdd = 1040  <br/> |サーバー側のプロジェクトでは **AddToProject** メソッドを使用できません。  <br/> |
 |ProjectOptCurrencySymbolInvalid = 1041  <br/> |オプションの通貨記号が無効です。  <br/> |
 |ProjectHasNoWriteLock = 1042  <br/> |プロジェクトには書き込みロックがありません。  <br/> |
 |ProjectFilterInvalid = 1043  <br/> |プロジェクト フィルターが無効です。  <br/> |
@@ -857,10 +857,10 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 |ProjectIsNotPublished = 1051  <br/> |プロジェクトが発行されていません。  <br/> |
 |ProjectExceededLWPTaskLimit = 1052  <br/> |プロジェクトの提案 (ライトウェイト プロジェクト) のタスクの制限を超過しました。  <br/> |
 |ProjectOptFinishDateInvalid = 1053  <br/> |プロジェクト オプションの終了日付が無効です。  <br/> |
-|ProjectExceededItemsLimit = 1054  <br/> |処理するアイテムの制限を超えました。 Project Server サービス アプリケーションは、すべてのテーブルの合計が 1,000 以上の項目を追加または**ProjectDataSet**を使用できません。 1,000 以上の項目を処理するを使用して、複数の呼び出しでは、たとえば、 **QueueUpdateProject**に。  <br/> |
+|ProjectExceededItemsLimit = 1054  <br/> |処理するアイテムの制限を超過しました。Project Server Service アプリケーションは **ProjectDataSet** を使用してすべてのテーブルで 1000 を超えるアイテムを追加または更新することはできません。1000 を超えるアイテムを処理するには、**QueueUpdateProject** などの複数の呼び出しを使用します。<br/> |
 |ProjectColumnNotReadOnly = 1055  <br/> |列は読み取り専用ではありません。  <br/> |
 |ProjectInvalidOwner = 1056  <br/> |プロジェクトの所有者が無効です。  <br/> |
-|ProjectCantEditPctWrkCompForNonWrkRscs = 1057  <br/> |実際の作業の割り当てがないタスクの**PctWorkComplete**を編集することはできません。  <br/> |
+|ProjectCantEditPctWrkCompForNonWrkRscs = 1057  <br/> |実際の作業割り当てを持たないタスクの **PctWorkComplete** を編集することはできません。  <br/> |
 |ProjectCannotEditMaterialResource = 1058  <br/> |数量単価型リソースを編集できません。  <br/> |
 |ProjectCannotEditFieldWhenTaskHasNoWorkAssignment = 1059  <br/> |タスクに作業割り当てがないため、フィールドを編集できません。  <br/> |
 |ProjectSubProjectNotFound = 1070  <br/> |サブプロジェクトが見つかりません。  <br/> |
@@ -912,7 +912,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 
 ## <a name="table-19-reporting-data-service-rds"></a>表 19。 レポート データ サービス (RDS)
 
-|RDS エラー コード|説明|
+|RDS のエラー コード|説明|
 |:-----|:-----|
 |ReportingAttributeCubeSettingsChangedMessageFailed = 24000  <br/> |キューブ設定の属性に対して RDS の変更メッセージが失敗しました。  <br/> |
 |ReportingBaseCalendarChangeMessageFailed = 24001  <br/> |基本カレンダーに対して RDS の変更メッセージが失敗しました。  <br/> |
@@ -1046,11 +1046,11 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 |ResourcePlanInvalidProjectUID = 30011  <br/> |リソース計画のプロジェクト GUID が無効です。  <br/> |
 |ResourcePlanResourceAlreadyExists = 30012  <br/> |リソース計画には既にリソースが存在します。  <br/> |
    
-表 22 のエラー コードは、**ルール**内のメソッド、 **PWA** web サービスです。 内部的に使用されます。 
+表 22 のエラー コードは、**PWA** Web サービス内の **Rules** メソッドに関するものです。これらのエラー コードは内部で使用されます。 
 
 <a name="pj15_ErrorCodes_Rules"></a>
 
-## <a name="table-22-rules"></a>表 22。 ルール
+## <a name="table-22-rules"></a>表 22。 Rules
 
 |規則のエラー コード|説明|
 |:-----|:-----|
@@ -1068,7 +1068,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 
 ## <a name="table-23-security"></a>表 23 です。 セキュリティ
 
-|セキュリティ エラー コード|説明|
+|セキュリティのエラー コード|説明|
 |:-----|:-----|
 |SecurityGroupCouldNotBeCreated = 19001  <br/> |セキュリティ グループを作成できません。  <br/> |
 |SecurityFieldAccessIDInvalid = 19003  <br/> |セキュリティ フィールド アクセス コードの識別番号が無効です。  <br/> |
@@ -1126,7 +1126,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 
 ## <a name="table-24-project-server-event"></a>表 24 です。 プロジェクトのサーバーのイベント
 
-|プロジェクトのサーバー イベントのエラー コード|説明|
+|Project Server イベントのエラー コード|説明|
 |:-----|:-----|
 |ServerEventInvalidEventId = 19033  <br/> |Project Server イベントの識別番号が無効です。  <br/> |
 |ServerEventServiceNotFound = 22003  <br/> |Project Server イベント サービスが見つかりません。このエラーは Project Server のコードでは使用されませんが、生の統合ログ サービス (ULS) イベントにマッピングされます。  <br/> |
@@ -1146,38 +1146,38 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 
 |状態管理 web サービスのエラー コード|説明|
 |:-----|:-----|
-|StatusingInvalidEntity = 3102  <br/> |**状態管理**のエンティティを使用することはできません。  <br/> |
+|StatusingInvalidEntity = 3102  <br/> |**Statusing** のエンティティが無効です。  <br/> |
 |StatusingGetDataForTaskFailed = 3103  <br/> |タスクの状態に関するデータの取得に失敗しました。  <br/> |
 |StatusingGetTaskOrAssnCntrFailed = 3104  <br/> |状態のタスクまたは Assignment Center の取得に失敗しました。  <br/> |
-|StatusingInvalidPIDForProjCntr = 3105  <br/> |プロジェクト センターの**状態管理**プロパティの id 番号が正しくありません。  <br/> |
-|StatusingDeleteAssnFailed = 3106  <br/> |**状態管理**のプロセスで割り当てを削除できませんでした。  <br/> |
-|StatusingAssnSaveFailed = 3107  <br/> |**状態管理**のプロセスに割り当てを保存できませんでした。  <br/> |
-|StatusingTaskSaveFailed = 3108  <br/> |**状態管理**のプロセスのタスクを保存できませんでした。  <br/> |
-|StatusingInvalidPID = 3109  <br/> |**状態管理**プロパティの id 番号が正しくありません。  <br/> |
-|StatusingSetDataValueInvalid = 3111  <br/> |**状態管理**データの値が有効ではありません。  <br/> |
-|StatusingSetDataFailed = 3112  <br/> |**状態管理**データの値を設定できませんでした。  <br/> |
-|StatusingInvalidDelegationStart = 3113  <br/> |**DelegateAssignments**メソッドで割り当ての開始時刻が正しくありません。  <br/> |
+|StatusingInvalidPIDForProjCntr = 3105  <br/> |プロジェクト センターに関する **Statusing** プロパティの識別番号が無効です。  <br/> |
+|StatusingDeleteAssnFailed = 3106  <br/> |**Statusing** プロセスで割り当ての削除に失敗しました。  <br/> |
+|StatusingAssnSaveFailed = 3107  <br/> |**Statusing** プロセスで割り当ての保存に失敗しました。  <br/> |
+|StatusingTaskSaveFailed = 3108  <br/> |**Statusing** プロセスでタスクの保存に失敗しました。  <br/> |
+|StatusingInvalidPID = 3109  <br/> |**Statusing** プロパティの識別番号が無効です。  <br/> |
+|StatusingSetDataValueInvalid = 3111  <br/> |**Statusing** データ値が無効です。  <br/> |
+|StatusingSetDataFailed = 3112  <br/> |**Statusing** データ値の設定に失敗しました。  <br/> |
+|StatusingInvalidDelegationStart = 3113  <br/> |**DelegateAssignments** メソッドの割り当ての開始時刻が無効です。  <br/> |
 |StatusingApprovalUpdateFailed = 3114  <br/> |状態の承認の更新に失敗しました。  <br/> |
 |StatusingInvalidApprovalType = 3115  <br/> |状態の承認の種類が無効です。  <br/> |
-|StatusingInternalError = 3116  <br/> |**状態管理**の方法で内部処理エラーが発生しました。  <br/> |
-|StatusingInvalidUpdateData = 3117  <br/> |**状態管理**の方法でデータの更新が有効ではありません。  <br/> |
-|StatusingProjectUpdateFailed = 3118  <br/> |プロジェクトの**状態管理**の更新に失敗しました。  <br/> |
-|StatusingInvalidPreviewData = 3119  <br/> |**状態管理**データのプレビューが正しくありません。  <br/> |
-|StatusingInvalidTransaction = 3120  <br/> |**状態管理**のトランザクションが有効ではありません。  <br/> |
+|StatusingInternalError = 3116  <br/> |**Statusing** メソッドの内部処理エラー。  <br/> |
+|StatusingInvalidUpdateData = 3117  <br/> |**Statusing** メソッドの更新データが無効です。  <br/> |
+|StatusingProjectUpdateFailed = 3118  <br/> |プロジェクトの **Statusing** の更新に失敗しました。  <br/> |
+|StatusingInvalidPreviewData = 3119  <br/> |**Statusing** プレビュー データが無効です。  <br/> |
+|StatusingInvalidTransaction = 3120  <br/> |**Statusing** トランザクションが無効です。  <br/> |
 |StatusingTooManyResults = 3121  <br/> |結果が多すぎます。時間配分状態データを読み込む際に 5000 を超える行が返されます。  <br/> |
-|StatusingInvalidInterval = 3122  <br/> |**状態管理**メソッドの間隔が正しくありません。 間隔は分以内にする必要があり、0 より大きい必要があります。  <br/> |
-|StatusingApplyUpdatesFailed = 3123  <br/> |適用に失敗した最新の**状態管理**エンキュー要求します。  <br/> |
-|StatusingApplyUpdatesFailure = 3124  <br/> |キューの処理中に**状態管理**の更新プログラムを適用できませんでした。  <br/> |
-|StatusingInvalidWorkData = 3125  <br/> |**状態管理**の作業データが有効ではありません。  <br/> |
-|StatusingMissingNameAttribute = 3126  <br/> |**状態管理**の名前属性がありません。  <br/> |
-|StatusingInvalidNameAttribute = 3127  <br/> |**状態管理**の [名前] 属性が有効ではありません。  <br/> |
-|StatusingInvalidData = 3128  <br/> |**状態管理**データが有効ではありません。  <br/> |
+|StatusingInvalidInterval = 3122  <br/> |**Statusing** メソッドの間隔が無効です。間隔は分単位で、ゼロよりも大きい必要があります。<br/> |
+|StatusingApplyUpdatesFailed = 3123  <br/> |要求をキューに入れる際に **Statusing** 更新を適用することに失敗しました。  <br/> |
+|StatusingApplyUpdatesFailure = 3124  <br/> |キューの処理中に **Statusing** 更新を適用することに失敗しました。  <br/> |
+|StatusingInvalidWorkData = 3125  <br/> |**Statusing** の作業データが無効です。  <br/> |
+|StatusingMissingNameAttribute = 3126  <br/> |**Statusing** の所在不明の名前属性。  <br/> |
+|StatusingInvalidNameAttribute = 3127  <br/> |**Statusing** の名前属性が無効です。  <br/> |
+|StatusingInvalidData = 3128  <br/> |**Statusing** データが無効です。  <br/> |
 |StatusingInvalidChangelist = 3130  <br/> |**UpdateStatus**メソッドの_changexml_パラメーターに XML データが正しくありません。  <br/> |
-|StatusingInsufficientAssignmentRights = 3131  <br/> |**SetAssignmentWorkData**は、ユーザーにアクセス許可があるないために、割り当てを更新できません。  <br/> |
-|StatusingInvalidChangeNumber = 3132  <br/> |**状態管理**の変更番号が正しくありません。  <br/> |
-|StatusingPidNotEditable = 3133  <br/> |**状態管理**プロパティの id 番号が編集可能ではありません。  <br/> |
-|StatusingCannotSetTimephasedDataInManualTasks = 3134  <br/> |**状態管理**の手動タスクのタイム スケール領域のデータを設定できません。  <br/> |
-|StatusingCannotChangeTaskMode = 3135  <br/> |**状態管理**のタスク モードを変更することはできません。  <br/> |
+|StatusingInsufficientAssignmentRights = 3131  <br/> |ユーザーに権限がないため、**SetAssignmentWorkData** は割り当てを更新できません。  <br/> |
+|StatusingInvalidChangeNumber = 3132  <br/> |**Statusing** の変更番号が無効です。  <br/> |
+|StatusingPidNotEditable = 3133  <br/> |**Statusing** プロパティの識別番号が無効です。  <br/> |
+|StatusingCannotSetTimephasedDataInManualTasks = 3134  <br/> |**Statusing** の手動タスクでは時間単位のデータを設定できません。  <br/> |
+|StatusingCannotChangeTaskMode = 3135  <br/> |**Statusing** のタスク モードを変更できません。  <br/> |
    
 **PWA** web サービスの**StatusReports**メソッドは、表 26 のエラー コードです。 Project Web App で内部的に使用されます。 
 
@@ -1185,9 +1185,9 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 
 ## <a name="table-26-statusreports"></a>表 26 です。 StatusReports 
 
-|ステータス レポートのエラー コード|説明|
+|進捗レポートのエラー コード|説明|
 |:-----|:-----|
-|StatusReportsUnknownError = 12100  <br/> |**StatusReports**で不明なエラーが発生しました。  <br/> |
+|StatusReportsUnknownError = 12100  <br/> |**StatusReports** の不明なエラー。  <br/> |
 |StatusReportsPeriodUnmatched = 12101  <br/> |進捗レポート期間を一致させることができません。  <br/> |
 |StatusReportsPeriodUnavailable = 12102  <br/> |進捗レポート期間が利用できません。  <br/> |
 |StatusReportsInvalidFormInput = 12103  <br/> |進捗レポート フォーム内のデータが無効です。  <br/> |
@@ -1326,7 +1326,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 |WorkflowMultipleStagesInProgress = 35119  <br/> |ワークフロー内に進行中のステージが複数あります。  <br/> |
 |WorkflowActivityInvalidArgument = 35120  <br/> |ワークフロー アクティビティが無効な引数を受け取った場合に返されるメッセージ。  <br/> |
 |WorkflowMTWConfigurationError = 35121  <br/> |Microsoft Azure のワークフローの構成エラーです。  <br/> |
-|EnterpriseProjectTypeInvalidEnterpriseProjectTypeUid = 35200  <br/> |**ENTERPRISE_PROJECT_TYPE_UID**が有効ではありません。  <br/> |
+|EnterpriseProjectTypeInvalidEnterpriseProjectTypeUid = 35200  <br/> |**ENTERPRISE_PROJECT_TYPE_UID** が無効です。  <br/> |
 |EnterpriseProjectTypeCannotCreateEnterpriseProjectType = 35201  <br/> |エンタープライズ プロジェクトの種類を作成できません。  <br/> |
 |EnterpriseProjectTypeCannotUpdateEnterpriseProjectType = 35202  <br/> |エンタープライズ プロジェクトの種類を更新できません。  <br/> |
 |EnterpriseProjectTypeCannotDeleteEnterpriseProjectType = 35203  <br/> |エンタープライズ プロジェクトの種類を削除できません。  <br/> |
@@ -1339,7 +1339,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 |EnterpriseProjectTypeCannotReadWssSettings = 35210  <br/> |SharePoint の設定を読み取れません。  <br/> |
 |EnterpriseProjectTypeCannotReadWssLanguagesAndTemplates = 35211  <br/> |SharePoint の言語とサイト テンプレートを読み取れません。  <br/> |
 |EnterpriseProjectTypeInvalidDepartmentUid = 35212  <br/> |[DEPARTMENT_UID](https://msdn.microsoft.com/library/WebSvcWorkflow.WorkflowDataSet.EnterpriseProjectTypeDepartmentsRow.DEPARTMENT_UID.aspx)が有効ではありません。  <br/> |
-|EnterpriseProjectTypeInvalidUri = 35213  <br/> |[ENTERPRISE_PROJECT_TYPE_UID](https://msdn.microsoft.com/library/WebSvcWorkflow.WorkflowDataSet.EnterpriseProjectTypeDepartmentsRow.ENTERPRISE_PROJECT_TYPE_UID.aspx)が有効ではありません。  <br/> |
+|EnterpriseProjectTypeInvalidUri = 35213  <br/> |[ENTERPRISE_PROJECT_TYPE_UID](https://msdn.microsoft.com/library/WebSvcWorkflow.WorkflowDataSet.EnterpriseProjectTypeDepartmentsRow.ENTERPRISE_PROJECT_TYPE_UID.aspx) が無効です。  <br/> |
 |EnterpriseProjectTypeUriRequiresHttp = 35214  <br/> |エンタープライズ プロジェクトの種類の URI には HTTP プロトコルが必要です。  <br/> |
 |EnterpriseProjectTypeCannotDeleteDefault = 35215  <br/> |既定のエンタープライズ プロジェクトの種類は削除できません。  <br/> |
 |EnterpriseProjectTypeCannotChangeDefault = 35216  <br/> |既定のエンタープライズ プロジェクトの種類は変更できません。  <br/> |
@@ -1347,7 +1347,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 |EnterpriseProjectTypeCreatePDPIsRequired = 35218  <br/> |ワークフローのエンタープライズ プロジェクト テンプレート (EPT) には、関連付けられている*作成*の種類のプロジェクト詳細ページ (PDP) で、EPT を使用してプロジェクトを作成する必要があります。 PDP が EPT 定義に含まれていない場合、このエラーが発生します。 他の PDP な種類の*標準*ワークフローに関連するプロジェクトの詳細を表示するためのプロジェクトおよび*ワークフローの状態*を編集します。  <br/> |
 |EnterpriseProjectTypeOnlyOneCreatePDPAllowed = 35219  <br/> |EPT 定義は、1 つだけ*を作成する*種類のプロジェクト詳細ページを使用できます。  <br/> |
 |EnterpriseProjectTypeHasWorkflowOnlyCreatePDPAllowed = 35220  <br/> |ワークフローのエンタープライズ プロジェクト テンプレート (EPT) には、関連付けられている*作成*の種類のプロジェクト詳細ページ (PDP) で、EPT を使用してプロジェクトを作成する必要があります。 ワークフロー EPT 定義に PDP の別の型の場合、このエラーが発生します。 他の PDP な種類の*標準*ワークフローに関連するプロジェクトの詳細を表示するためのプロジェクトおよび*ワークフローの状態*を編集します。  <br/> |
-|EnterpriseProjectTypeInvalidData = 35221  <br/> |エンタープライズ プロジェクトの種類の**WorkflowDataSet**には、無効なデータがあります。  <br/> |
+|EnterpriseProjectTypeInvalidData = 35221  <br/> |エンタープライズ プロジェクトの種類の **WorkflowDataSet** に無効なデータが含まれています。  <br/> |
 |EnterpriseProjectNoDefaultEnterpriseProjectTypeDefined = 35222  <br/> |エンタープライズ プロジェクトの種類が定義されていません。  <br/> |
 |EnterpriseProjectTypeAtLeastOnePDPIsRequired = 35223  <br/> |エンタープライズ プロジェクトの種類には、少なくとも 1 つのプロジェクト詳細ページが必要です。  <br/> |
 |EnterpriseProjectTypeWorkflowStatusPDPNotAllowed = 35224  <br/> |エンタープライズ プロジェクトの種類では、ワークフローの状態に関するプロジェクト詳細ページは許可されていません。  <br/> |
@@ -1357,7 +1357,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 
 ## <a name="table-31-wssinterop-and-objectlinkprovider-sharepoint-integration"></a>表 31 です。 WssInterop と ObjectLinkProvider (SharePoint の統合)
 
-|SharePoint 統合エラー コード|説明|
+|SharePoint との統合のエラー コード|説明|
 |:-----|:-----|
 |WSSCreateSiteFailure = 16400  <br/> |プロジェクト ワークスペース用の SharePoint サイトの作成に失敗しました。  <br/> |
 |WSSCannotCreateWebWithBlankName = 16401  <br/> |名前が空白の SharePoint Web サイトを作成することはできません。  <br/> |
@@ -1380,10 +1380,10 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 |WSSWebCannotStartOrEndOnPeriod = 16418  <br/> |SharePoint Web 名の先頭または末尾にはピリオドを使用できません。  <br/> |
 |WSSCannotDeleteSiteCollection = 16419  <br/> |Web サイト コレクションを削除できません。  <br/> |
 |WSSListUidInvalid = 16420  <br/> |SharePoint リスト GUID が無効です。  <br/> |
-|WSSSyncDataSetListUidMismatch = 16421  <br/> |SharePoint リストの GUID では、リストの同期の**データセット**内の GUID が一致しません。  <br/> |
-|WSSSyncDataSetMissingProjectSettingsRow = 16422  <br/> |SharePoint と同期するための**データセット**には、プロジェクトの設定の行がありません。  <br/> |
-|WSSSyncDataSetTaskMappingsNotAllowed = 16423  <br/> |SharePoint と同期するためは、**データセット**内のタスクのマッピングは使用できません。  <br/> |
-|WSSSyncDataSetWssListUidEmpty = 16424  <br/> |SharePoint リストの GUID は SharePoint と同期するための**データセット**の空です。  <br/> |
+|WSSSyncDataSetListUidMismatch = 16421  <br/> |SharePoint リスト GUID が、同期する **DataSet** 内のリスト GUID と一致しません。  <br/> |
+|WSSSyncDataSetMissingProjectSettingsRow = 16422  <br/> |SharePoint との同期に使用する **DataSet** に、プロジェクト設定の行がありません。  <br/> |
+|WSSSyncDataSetTaskMappingsNotAllowed = 16423  <br/> |SharePoint との同期に使用する **DataSet** ではタスク マップが許可されていません。  <br/> |
+|WSSSyncDataSetWssListUidEmpty = 16424  <br/> |SharePoint との同期に使用する **DataSet** 内の SharePoint リスト GUID が空です。  <br/> |
 |WSSSyncDataNotFound = 16425  <br/> |SharePoint との同期処理でデータが不足しています。  <br/> |
 |WSSSyncCriticalDataValidationError = 16426  <br/> |SharePoint との同期処理で重大なデータ検証エラーが発生しました。  <br/> |
 |WSSSyncSharePointListNotAccessibleError = 16427  <br/> |SharePoint リストにアクセスできません。  <br/> |
@@ -1609,8 +1609,6 @@ CustomFieldRequiredValueNotProvided
 
 ## <a name="see-also"></a>関連項目
 
-- [Microsoft.Office.Project.Server.Library.PSErrorID](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Library.PSErrorID.aspx)
-- [WebSvcProject.PSErrorID](https://msdn.microsoft.com/library/WebSvcProject.PSErrorID.aspx)
 - [プロジェクトの概念と操作方法に関する記事](project-conceptual-and-how-to-articles.md)
 - [SQL Server プロファイラー](http://msdn.microsoft.com/library/3ad5f33d-559e-41a4-bde6-bb98792f7f1a.aspx)
 - [プロジェクトの Server 2010: どのような予期しないを取得する場合に期待する](http://blogs.msdn.com/b/brismith/archive/2010/03/24/project-server-2010-what-to-expect-when-you-get-the-unexpected.aspx)

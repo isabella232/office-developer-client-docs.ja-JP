@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 08cc60d4-cac8-4ba5-bd7f-a56e63697be3
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 4430b52b470b89bd7d81922b98b121b3a455768f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0ba9958588c476ae330b0f4a413361e80d54667a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800927"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571970"
 ---
 # <a name="implementing-advanced-searching"></a>高度な検索の実装
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 いくつかのアドレス帳コンテナーは、クライアントの**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) 以外のプロパティで検索できるようにする、高度な検索機能をサポートします。 高度な検索をサポートするために、プロバイダーは、他のコンテナーの**PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md)) プロパティを通じてアクセスできる特別なコンテナーを実装しなければなりません。 **PR_SEARCH**を入力し、高度な検索条件を編集するために使用するダイアログ ボックスについて説明する表示のテーブルへのアクセスを提供するコンテナー オブジェクトが含まれています。 
   

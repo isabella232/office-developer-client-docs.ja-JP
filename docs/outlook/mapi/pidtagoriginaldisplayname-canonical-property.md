@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 176245d9-724d-44f1-b7a3-eddf652533b2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4a43bc33f13d8325a55d09b5ef3031dc632cf587
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4d168082a16ad5e8df205d976349fd6406d9d18a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803059"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570773"
 ---
 # <a name="pidtagoriginaldisplayname-canonical-property"></a>PidTagOriginalDisplayName 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 個人用アドレス帳またはその他の書き込み可能なアドレス帳をアドレス帳からコピーされるエントリの元の表示名が含まれています。
   

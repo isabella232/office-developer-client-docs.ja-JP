@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 637be364-c393-430a-84b3-2c96aa553c22
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 651ef6a7c1af70c75a85e13414c4fd7632d30290
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b2aa08ea14df87f24cda3da0137ae4bfa2c50b40
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800546"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576016"
 ---
 # <a name="imapiformfactory--iunknown"></a>IMAPIFormFactory : IUnknown
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 分散コンピューティング環境では、構成可能な実行時のフォームの使用をサポートしています。 
   

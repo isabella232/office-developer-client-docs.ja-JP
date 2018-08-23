@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 26195406-dcef-4504-bb74-d0705d952897
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 39abd90027d7a3d767da186b0dab0ba7f278e4f0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 21bbcc32cd71899a2546b17f8023ef49744ba5e6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802383"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570805"
 ---
 # <a name="pidtagabproviders-canonical-property"></a>PidTagAbProviders 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 現在のプロファイルで、アドレス帳プロバイダーの識別子の一覧が含まれています。 
   

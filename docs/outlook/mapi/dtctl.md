@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: 6d1589e9-b171-427a-9a3e-b4154ee8ceb6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 68c621f5f73073ed127767cc1db189769dab227d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1ce379ac70f140aae24880b118ca7293f2e72aa4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800012"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574714"
 ---
 # <a name="dtctl"></a>DTCTL
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ディスプレイ テーブルから作成されたダイアログ ボックスで使用するコントロールについて説明します。 
   

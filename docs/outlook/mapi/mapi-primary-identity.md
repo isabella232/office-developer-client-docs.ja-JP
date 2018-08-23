@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 8787a873-6752-4b17-8ea3-8fed793e1371
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: bd6fe1298a38733cb9d4916a931138c616e110bf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: de1fe8fd5ef5a6e79934478c62b2403c48f85b5e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801416"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565880"
 ---
 # <a name="mapi-primary-identity"></a>MAPI のプライマリ Id
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ほとんどの MAPI セッションには、セッションのプライマリ id を提供する特定のサービス プロバイダーがあります。 通常、そのメッセージ オブジェクトをユーザーまたは配布リストのいずれかを通じて id を提供する、アドレス帳プロバイダーです。 実際には、MAPI では、アドレス帳プロバイダーは、メッセージ サービスを使用して、そのオブジェクトのいずれかのプライマリ id のお勧めします。 メッセージ サービスが属するサービス ・ プロバイダーには、プライマリ id が用意されて、すべての他のサービス プロバイダーは、メッセージ サービスでこの id を共有します。
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: ffceaa03-76f2-42e0-b28d-226f1f9cc889
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 8d1b94c70e4de6310d2e84cf002c4e3199fced2b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 66aa5fe08b1c0be3906fa9a0483bbdec37c095c5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801285"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564501"
 ---
 # <a name="launching-a-new-compose-form"></a>新しい作成フォームの起動
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォーム サーバーの実装は次の一連のフォームのサーバーへのメソッド呼び出しを期待する必要があり、フォーム オブジェクトの場合、クライアント アプリケーションを作成するための新しいメッセージを開きます。
   

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: f57f20d5-5a63-42d1-be59-9880456bb05c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 10f8d93ad19cbe16627806b7718d851740d05d58
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 719d0240dfae08fd5c583df3f8c192636c8bccee
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802733"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570934"
 ---
 # <a name="pidtagexceptionendtime-canonical-property"></a>PidTagExceptionEndTime 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 例外が作成されると、最後の日付と時刻、コンピューターのローカル タイム ゾーンの例外を示します。
   

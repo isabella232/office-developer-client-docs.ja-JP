@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: d5fabc40-71e8-4afa-9846-533da605ce6c
 description: '�ŏI�X�V��: 2015�N12��7��'
-ms.openlocfilehash: e3d6844f8fe6121d6ea063a9594aaf1fed581ee5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a94d1230f4f26d080976fd15768bdfeb6ea04748
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804029"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576100"
 ---
 # <a name="supporting-message-attachments-for-message-store-providers"></a>メッセージ ストア プロバイダーでのメッセージ添付ファイルのサポート
 
  
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストア プロバイダーは、メッセージの添付ファイルをサポートする必要はありません。 ただし、多くのクライアント アプリケーションは、メッセージに添付ファイルを追加するのにはできるはずです。 作成または IPM を格納する場合は、メッセージ ・ ストアが使用されます。メッセージの添付ファイルをサポートする必要がありますし、メッセージに注意してください。 既定のメッセージ ストア プロバイダーは、メッセージの添付ファイルもサポートする必要があります。 詳細については、 [MAPI メッセージ クラス](mapi-message-classes.md)、および[既定のメッセージ ストア](default-message-stores.md)を参照してください。
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 6511e1b5-697e-4ed1-80af-aa8ca56fd045
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 3f1cab24ef6bbd632ee3dc204e93f59e6f9ac846
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 1f931382e790da13e7d4a746e286d9dc176b7b6b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801466"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571907"
 ---
 # <a name="mapi-service-providers"></a>MAPI サービス プロバイダー
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 次の 3 つの一般的なサービス ・ プロバイダーの種類があります。
   
@@ -33,10 +33,10 @@ ms.locfileid: "19801466"
   
 |**アドレス帳プロバイダー インターフェイス**|**メッセージ ストア プロバイダーのインターフェイス**|
 |:-----|:-----|
-|[これにより: IMAPIContainer](iabcontainerimapicontainer.md) <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) <br/> |
-|[IDistList: IMAPIContainer](idistlistimapicontainer.md) <br/> |[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md) <br/> |
-|[IMailUser: IMAPIProp](imailuserimapiprop.md) <br/> |[IMessage: IMAPIProp](imessageimapiprop.md) <br/> |
-| <br/> |[IAttach: IMAPIProp](iattachimapiprop.md) <br/> |
+|[IABContainer : IMAPIContainer](iabcontainerimapicontainer.md) <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) <br/> |
+|[IDistList : IMAPIContainer](idistlistimapicontainer.md) <br/> |[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md) <br/> |
+|[IMailUser : IMAPIProp](imailuserimapiprop.md) <br/> |[IMessage: IMAPIProp](imessageimapiprop.md) <br/> |
+| <br/> |[IAttach : IMAPIProp](iattachimapiprop.md) <br/> |
    
 トランスポート プロバイダーは、クライアントで MAPI と通信する方法で、アドレス帳、メッセージ ストア プロバイダーによって異なります。 トランスポート プロバイダーは、通常の通信を開始するのではなく、情報を要求するには MAPI の待機します。 他のプロバイダーとは異なりトランスポート プロバイダーはさまざまなオブジェクトとクライアントが頻繁にアクセスされるテーブルをサポートしていません。 ただし、サポートして状態オブジェクトでは、すべてのサービス プロバイダーの操作を行い、状態テーブル内のプロパティを公開します。 トランスポート プロバイダーがする[IXPLogon::AddressTypes](ixplogon-addresstypes.md)メソッドを呼び出しますが、アドレス帳、メッセージ ストア プロバイダーは、それらのエントリの識別子を構築するための一意の識別子を登録するのには[IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md)メソッドを呼び出して、処理の特定のメッセージの配信のための一意の識別子とアドレスの種類を登録します。 
   
@@ -60,5 +60,5 @@ ms.locfileid: "19801466"
 
 
 
-[MAPI �̊T�O](mapi-concepts.md)
+[MAPI の概念](mapi-concepts.md)
 

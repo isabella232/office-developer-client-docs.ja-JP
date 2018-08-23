@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: bc9b00b6-6337-411b-9219-067dd6c1add3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 158aae90d9e3f90ff6a53026ac299059d6b2a9c0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 677457e3e774cfca09fd65ec44ef599e58ea81d4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802317"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568379"
 ---
 # <a name="pidnamecomments-canonical-property"></a>PidNameComments 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ドキュメントに関連付けられているファイルのコメントを指定します。
   

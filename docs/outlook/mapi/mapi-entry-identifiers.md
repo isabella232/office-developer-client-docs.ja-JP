@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 84c37696-da7a-42e0-b8c0-29658a6c9a48
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b8212f4a055125858b77ee615a5d929a4a62bb82
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d8c9fb0b24d8954fae75274bfbedca9d7c62de93
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801353"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567861"
 ---
 # <a name="mapi-entry-identifiers"></a>MAPI エントリの識別子
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 エントリの識別子は、一意に識別し、MAPI オブジェクトを開くに使用される[エントリ ID](entryid.md)の構造体に格納されているバイナリのデータの一部です。 MAPI オブジェクトのほとんどは、エントリ id を持ちます。 オブジェクトのエントリ id は、ファイルのファイル名に似ています。 ただし、送信できる、できないに発生したシステム以外のシステムでは使用できません。 
   

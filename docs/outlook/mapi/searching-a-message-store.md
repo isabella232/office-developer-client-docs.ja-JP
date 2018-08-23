@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 9e8d4639-7507-4d98-b56f-a65be369dc40
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 90ed7da43d7f9e5e8b5f3024f1eee99a2d7a2b5c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 74b63719f6d72e3c92cbcef6fdb26ee106d4b9aa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803848"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571837"
 ---
 # <a name="searching-a-message-store"></a>メッセージ ストアを検索
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアント アプリケーションは、検索条件に一致するメッセージを探して、1 つまたは複数のフォルダーを検索できます。 最も簡単な検索方法は、抽出条件を定義するのには制限を適用する必要があり、または以前の検索の検索条件に明示的に作成、検索結果フォルダーに結果を配置すること。 すべてのメッセージ ストアは、この手法をサポートします。 
 

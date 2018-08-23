@@ -1,5 +1,5 @@
 ---
-title: 追加するか、メッセージ サービスのプロバイダーを削除します。
+title: メッセージ サービスのプロバイダーの追加または削除
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 44bb4d34-ca96-4d5a-93fe-85e09bd7971d
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 05d6d548032476062127f21b23aa2ce141ed1b65
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 569c9d8a7ed3f56d88d83ea6fdac4477d39e50a2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799643"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569485"
 ---
-# <a name="adding-or-deleting-providers-in-a-message-service"></a>追加するか、メッセージ サービスのプロバイダーを削除します。
+# <a name="adding-or-deleting-providers-in-a-message-service"></a>メッセージ サービスのプロバイダーの追加または削除
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ サービスのサービス プロバイダーを追加削除するを使用して、 [IProviderAdmin: IUnknown](iprovideradminiunknown.md)インタ フェースです。 [IMsgServiceAdmin::AdminProviders](imsgserviceadmin-adminproviders.md)を呼び出すことによって、 **IProviderAdmin**ポインターを取得できます。 プロバイダー テーブルでは、 [IProviderAdmin::GetProviderTable](iprovideradmin-getprovidertable.md)からアクセスでは、メッセージ サービスで現在インストールされているサービス プロバイダーに関する情報が表示されます。 クライアントとサービス ・ プロバイダーは、プロバイダー DLL ファイルまたは**MAPIUID**表示名、およびメッセージ サービスに関する情報だけでなくプロバイダーの型の名前にアクセスするのにはプロバイダーのテーブルを使用できます。 詳細については、[プロバイダーのテーブル](provider-tables.md)を参照してください。
   

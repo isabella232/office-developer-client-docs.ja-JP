@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: b0465a67-3c4c-422b-9aa0-7c4c556cbd50
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 99c62910cf5cedf8117aa796131d1162d91d04d7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e417b4b98ce8050a74caead3ba5ad609860c1f24
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799723"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563822"
 ---
 # <a name="attreciptable"></a>attRecipTable
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 受信者テーブルがエンコードされている場合、各受信者は、一連の MAPI プロパティとしてエンコードされます。 形式は次のとおりです。 
   

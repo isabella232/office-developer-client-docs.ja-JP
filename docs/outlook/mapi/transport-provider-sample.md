@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: ec6eb6c0-bfe3-4989-9071-89a14c0e7bdd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1d0538f02f852580c064560460bb8b2ba54a2f65
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3b3ae4170cab109ae96a51eae6e70c674895eeae
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804169"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575785"
 ---
 # <a name="transport-provider-sample"></a>トランスポート プロバイダー サンプル
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このサンプルでは、メッセージを送受信するためのファイルとディレクトリを使用します。 実装し、各送信メッセージにテキストの行を追加する非常に単純なプリプロセッサを登録します。 サンプルでは、トランスポート ニュートラル カプセル化形式 (TNEF) とテキストの間でメッセージの内容を分割する方法を示します。 すべての (プロパティ シート、ウィザード、およびプログラムの構成) の構成オプションとメッセージ オプションもサポートしています。 リモート トランスポート インターフェイスにサポートしていません。 
   

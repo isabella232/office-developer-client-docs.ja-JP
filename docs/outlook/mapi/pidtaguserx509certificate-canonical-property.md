@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 278bb9e4-3ff6-4bef-b208-7924f7a5e9b1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d27ef47a3ba387ae2e7acbcefc75b07ddd794e80
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7686f36ca105ab92161757d492a86b4b78461dfd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803665"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564081"
 ---
 # <a name="pidtaguserx509certificate-canonical-property"></a>PidTagUserX509Certificate 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージング ユーザーの X.509 version 3 のセキュリティ証明書が含まれています。 
   

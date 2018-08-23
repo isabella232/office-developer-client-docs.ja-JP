@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d0d003b0-f12f-4422-b71f-26886169461f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: bdda950cd1fab66db46590e0b9141bb3d2a75221
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 73a4c07c69fb10044cba6e9368cd4bc86c11ad54
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801001"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575071"
 ---
 # <a name="imsgstorenotifynewmail"></a>IMsgStore::NotifyNewMail
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 �V�������b�Z�[�W�������������b�Z�[�W �X�g�A�ɒʒm���܂��B���̕��@�́AMAPI �X�v�[���[�ɂ���Ă̂݌Ăяo����܂��B
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: cd8d60df-98fb-4e08-b547-0836bb31be79
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 84c2d02da840dfcad077462954cb10894ba153d9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1046c8d92feec16428329636257ed9c1f0ec8719
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803686"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571480"
 ---
 # <a name="profile-tables"></a>プロファイル テーブル
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロファイルの一覧には、特定のクライアント アプリケーションに関連付けられているすべてのプロファイルに関する情報が表示されます。 1 つのプロファイル テーブルのすべてのセッションでは、クライアントが使用する MAPI によって実装されています。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: cc55089b-e389-405e-8174-f5b5ec352f78
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8a2199ee2bba8b3b41af7bf26de6cdd3d8d0956e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f18d726c1b06a6fb7f79964165bbdb9074a6d4d7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803360"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571368"
 ---
 # <a name="pidtagrequesteddeliverymethod-canonical-property"></a>PidTagRequestedDeliveryMethod 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このプロパティには、メッセージの送信元の優先順位に従って指定の配送方法 (サービス プロバイダー) のバイナリの配列が含まれています。
   

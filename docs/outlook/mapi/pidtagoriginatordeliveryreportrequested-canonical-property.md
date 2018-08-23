@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4461b35d-e2b9-41ff-b079-31bfef02e2bb
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 07cea7606654bf32c1fe70e49254afeeb04f0e98
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9e508f9c3d84272a0641a27e18c94e0620a7072c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803126"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574406"
 ---
 # <a name="pidtagoriginatordeliveryreportrequested-canonical-property"></a>PidTagOriginatorDeliveryReportRequested 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージの送信者は、メッセージがメッセージ ・ ストアに配置される前に特定の受信者のメッセージング システムから、配信レポートを要求した場合、TRUE が格納されます。
   

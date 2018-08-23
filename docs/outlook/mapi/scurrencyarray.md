@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d28852ab-b542-40e1-b2ec-85d20a2eddfd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c440bb7d8f3d2d3002a4d1a80ca3a671b49f4d2b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1b262ba9c83e9890719f716a373c566be172ae73
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803851"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572453"
 ---
 # <a name="scurrencyarray"></a>SCurrencyArray
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 PT_MV_CURRENCY の種類のプロパティを説明するために使用する通貨値の配列が含まれています。 
   

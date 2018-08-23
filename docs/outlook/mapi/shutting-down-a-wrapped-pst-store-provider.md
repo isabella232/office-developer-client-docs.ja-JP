@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 0c9e5917-1b96-323d-bf8b-1d3aa1f677d0
 description: '最終更新日: 2012 年 7 月 2 日'
-ms.openlocfilehash: 5c8ad7443b0c1aa05f48284e4b09859ab53dd2c3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 43a65548bedc1729ff2bcb62bc3df78d2408bf12
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803910"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571746"
 ---
 # <a name="shutting-down-a-wrapped-pst-store-provider"></a>ラップされた PST ストア プロバイダーのシャットダウン
 
  
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ラップされた個人用フォルダー ファイル (PST) のストア プロバイダーの使用が終了したら後、は、ラップされた PST ストア プロバイダーをシャット ダウンする必要があります正しく。 ラップされた PST ストア プロバイダーの使用に関する詳細については、「[ラップされた PST ストア プロバイダー](using-a-wrapped-pst-store-provider.md)」を参照してください。
   

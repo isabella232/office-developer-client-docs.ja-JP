@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: a863494f-0071-4d97-a6c4-26707ee00e04
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d969fd806e5038e6c918da45041402a981554a49
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 69945bc03d9183ea18a436186523741ce534b71e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799903"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568491"
 ---
 # <a name="delegate-access"></a>�㗝�l�A�N�Z�X
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 代理人アクセスは、別のユーザーとしてメッセージを送信または別のユーザーに対してメッセージが表示するユーザーのことを指します。 代理人アクセスは、mapi トランスポート プロバイダーは、選択した場合をサポートできるサービス プロバイダーに依存しない機能です。 ただし、これを行うプロバイダーは必要ありません。 代理人アクセスは、ユーザーとして、メッセージを送信したり、別のユーザーまたはユーザーが別のユーザーのメッセージ ストアにアクセスする必要があるときの受信メッセージをフィルター処理する必要がある場合に重要です。 他のユーザーのストアに接続するための代理ユーザーを許可する前に、メッセージ ストア プロバイダーは代理人ユーザーが適切な権限を持っているを確認する必要があります。 
   

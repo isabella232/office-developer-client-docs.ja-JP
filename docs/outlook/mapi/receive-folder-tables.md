@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 5ff1a5e3-5b96-4f08-9b9b-aeb14304b23b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5f3bcda3beb29fa91629ea1639522ef24dc6eb32
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b88545ede6275bd834fad5869d972e2860a6c77e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803724"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573181"
 ---
 # <a name="receive-folder-tables"></a>フォルダー受信テーブル
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 受信フォルダー テーブルには、メッセージ ストアの受信フォルダーとして指定されているすべてのフォルダーの情報が含まれています。 受信フォルダーは、特定のメッセージ クラスの着信メッセージが配置されているフォルダーです。 メッセージ ストア プロバイダーの実装には、フォルダーのテーブルが表示され、 [IMsgStore::GetReceiveFolderTable](imsgstore-getreceivefoldertable.md)メソッドを呼び出すことによって、クライアント アプリケーションを使用します。 
   

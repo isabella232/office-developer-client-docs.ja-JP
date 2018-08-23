@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4bb65c2a-9926-42da-9161-47836e8de40a
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2bded946a1fc7d7ab181d3953defa24e247c003c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 82490dbe597ebd3f7198aa7e0c904a10202ecd77
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800756"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568211"
 ---
 # <a name="imapisupportdosentmail"></a>IMAPISupport::DoSentMail
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ���M���ꂽ���b�Z�[�W��������܂��B
   

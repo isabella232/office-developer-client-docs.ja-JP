@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 6ddf9158-3c10-408a-aeaf-5a382c4339e7
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a99ef76e63e634c661bf82bdab10b86c843e0df0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c98427ab326ada0b717282dc4077d526780aa45c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800103"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568162"
 ---
 # <a name="form-storage"></a>フォームの記憶データ
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォームが物理的に格納されている方法のすべての詳細を把握する必要はありませんが、いくつかの主要な概念を理解しておくことをお勧めします。 したがって、フォーム ライブラリの既定のフォーム マネージャーでサポートされている 3 つのタイプを説明するには、前にここでフォームを保存する方法の概要について説明します。
   

@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: d45d5ed9-41cd-4aaf-91d2-1e4a27bb16d4
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5705af6c8efaf42ae27d1b39bb28d162971ebf9b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d6ec40005683cc67c51a63d6b186c042c8e170d7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800175"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568176"
 ---
 # <a name="handling-an-incoming-message"></a>受信メッセージを処理します。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 受信メッセージは、1 つまたは複数のメッセージング システム間で送信されたメッセージです。 送られた場合にのみ、または他の多くの受信者にします。 受信メッセージは、特定のクラスのメッセージを保持するために指定された受信フォルダーに配置されます。 設定することができます、さまざまな処理または、すべてのクラスの 1 つのフォルダーを使用するメッセージ クラスごとにフォルダーが表示されます。
   

@@ -1,5 +1,5 @@
 ---
-title: PidLidTimeZoneStruct の標準的なプロパティ
+title: PidLidTimeZoneStruct 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2acf0036-2f3e-4f90-8614-7aa667860f74
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: a1a96cdb3aed03b9621097f1ef858a09391c0693
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: c9c55aa308072db08e6103418be01f91d0d31a82
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802246"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566314"
 ---
-# <a name="pidlidtimezonestruct-canonical-property"></a>PidLidTimeZoneStruct の標準的なプロパティ
+# <a name="pidlidtimezonestruct-canonical-property"></a>PidLidTimeZoneStruct 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 定期的な予定または会議出席依頼の開始と終了時に使用するタイム ゾーンを記述する[TZREG](http://msdn.microsoft.com/en-us/library/bb820983%28v=office.12%29.aspx)構造体の保存形式に対応するストリームが含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidTimeZoneStruct  <br/> |
+|関連するプロパティ:  <br/> |dispidTimeZoneStruct  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008233  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |カレンダー  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
+|領域:  <br/> |予定表  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 Microsoft Office Outlook 2003 では、以前のバージョンの Outlook、およびユーザーが Outlook または Exchange Server によって提供される予定表更新ツールを実行していないのでは、コラボレーション データ オブジェクト (CDO) 1.21 をベースとするアプリケーションは、開始時刻と終了時刻を格納します。予定かの相対的な時間として会議出席依頼を定期的な予定と**dispidTimeZoneStruct**で、予定または会議出席依頼を作成する場所のタイム ゾーンを格納します。 ただし、このスキームは、時間の経過と共にタイム ゾーン規則を変更できるように、ユーザーは、ルールが変更され、不適切なタイミングで発生する前にスケジュールするにいくつかの予定および会議の結果を無視します。 ユーザーと管理者が Windows Vista を実行していない、またはされていて、自動更新を有効にしないのは、このような予定と会議出席依頼の時刻を調整するには、Outlook または Exchange Server によって提供されるツールを再配置する予定表を使用してください。 これらの再配置ツールの予定表と予定表を再配置するための Api の詳細については、[夏時間から標準時のプログラムを使用して予定表を再配置の詳細](http://msdn.microsoft.com/library/38b342d9-ab10-04b6-5490-9a45f847a60f%28Office.15%29.aspx)を参照してください。
   
@@ -79,7 +79,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

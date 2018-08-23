@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 15be5a8c-4299-4434-b521-c901215b9dda
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5d1654908c50c348a27e1281168756100b7a88a2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4e5f19258fb7716e741928f02a0a87f3939c74e0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800043"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575099"
 ---
 # <a name="fbadcolumnset"></a>FBadColumnSet
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [IMAPITable::SetColumns](imapitable-setcolumns.md)メソッドへの後続の呼び出しにサービス ・ プロバイダーがテーブルの列の有効性の設定のテストを使用します。 
   

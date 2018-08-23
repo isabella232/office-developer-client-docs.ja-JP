@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.assetid: e0c04f98-3d66-4ab5-ba05-69f9df539fcf
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4a4d3c940539c23be8ec212cb85e3dd4f3a04aab
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 23c43586157806c603ad7fd8c146270a9d71170a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802745"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563787"
 ---
 # <a name="pidtagextendedfolderflags-canonical-property"></a>PidTagExtendedFolderFlags 標準プロパティ
  
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォルダーの拡張のフラグが含まれています。
   

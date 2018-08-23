@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e869a583-2b8f-4782-8c23-74c20a895d8c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6e3ebca954427489313219e8c906b2d9e4c078a8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 91a2fcbb9d4fb26531bd6786b49df34e86027ee3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801845"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566615"
 ---
 # <a name="pidlidclassified-canonical-property"></a>PidLidClassified 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージが分類されることを示します。
   

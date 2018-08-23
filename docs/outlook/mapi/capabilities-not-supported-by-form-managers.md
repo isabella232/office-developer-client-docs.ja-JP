@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: b51e9e03-a333-4fdc-b6fe-87bd4e947b9f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 86c91353b620482ca0862aa998aae1b3329cfc94
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a84c0a93f80080b71f6049e73f0a0094c38c28ef
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799748"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566874"
 ---
 # <a name="capabilities-not-supported-by-form-managers"></a>フォーム マネージャーでサポートされていない機能
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 次の機能は、パフォーマンス上の理由から、既定のフォーム マネージャーでサポートされていないが、カスタム フォーム マネージャーをサポートできます。
   

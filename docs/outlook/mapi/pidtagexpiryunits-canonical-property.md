@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: f6a1ca22-cf4c-4e59-8846-6bd937fa8f6e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1c753bb84ccbfe2fa6869d56806fd042a6d60e9c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c6aab4228af0f584d96a2a8cc02c5f36e05a01e8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802725"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569604"
 ---
 # <a name="pidtagexpiryunits-canonical-property"></a>PidTagExpiryUnits 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **PR_EXPIRY_NUMBER** ([PidTagExpiryNumber](pidtagexpirynumber-canonical-property.md)) のプロパティを乗算すると時間の単位について説明します。
   

@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: b4e7fed2-88e4-4e14-90b6-913a1b7e338a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cb6138072cd5dedc528168d4056041661c40fd06
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d882fa1e705969ae06da46710fc7216625ca932e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800298"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566377"
 ---
 # <a name="hrdoabdetailswithexchangecontext"></a>HrDoABDetailsWithExchangeContext
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **OpenEntry**メソッドが必要な Exchange のアドレス帳プロバイダーで開かれているようにします。 この関数は、 [IAddrBook::Details](iaddrbook-details.md)と同様に動作しますが、 _pEmsmdbUID_パラメーターで指定された Exchange のアドレス帳を使用して**エントリ Id**を表示します。 
   

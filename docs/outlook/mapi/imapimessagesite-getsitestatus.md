@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 02718898-7857-4e43-8f46-622269f812e6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7d81533b13f4f44a0644215e009dc3477717e9a2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9b804728541b0f2a0499bbf0078bfee2e5aed6ee
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800592"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563808"
 ---
 # <a name="imapimessagesitegetsitestatus"></a>IMAPIMessageSite::GetSiteStatus
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージに関するメッセージのサイト オブジェクトの現在のメッセージのサイトの機能に対応する情報を返します。
   

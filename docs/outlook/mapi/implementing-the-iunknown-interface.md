@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 01bba63b-a2a1-490e-8b78-5c9ba8d9547b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 55bf8831af8f78767b2607c21ab54c32f6e4245f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f9ab3b75743d882aca0145b73b8ef707204cc8de
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800961"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571900"
 ---
 # <a name="implementing-the-iunknown-interface"></a>IUnknown インターフェイスの実装
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 すべての MAPI オブジェクトに実装されている、 [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx)インターフェイスのメソッドをサポートして通信とオブジェクト管理を決める基準について説明します。 
   

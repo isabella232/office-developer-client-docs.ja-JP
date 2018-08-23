@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c3aae4f5-7f00-45bf-b007-370041ba360e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2292d53997fd4d54e9272789be83ea94a93c6a3e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e28bde9571081d61b37f6939a991c11ddeb75a4c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801914"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566048"
 ---
 # <a name="pidlidexceptionreplacetime-canonical-property"></a>PidLidExceptionReplaceTime 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 内での定期的な例外を置き換えるときの日時を指定します。
   

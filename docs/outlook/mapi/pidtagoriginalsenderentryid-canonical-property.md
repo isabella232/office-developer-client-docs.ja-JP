@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: bd182589-afea-4967-92f5-ba1914e4db3f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f18587e28c6a3954b86dd58f0167e826d3086c51
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0b30a61d3bce6d1e6295edb1e93e27b9f7fc8363
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803082"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574446"
 ---
 # <a name="pidtagoriginalsenderentryid-canonical-property"></a>PidTagOriginalSenderEntryId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 最初のバージョンのメッセージを転送または返信する前にメッセージは、送信者のエントリ id が含まれています。
   

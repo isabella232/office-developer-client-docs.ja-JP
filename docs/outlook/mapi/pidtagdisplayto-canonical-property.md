@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 700cc03b-5d98-40ce-adb5-a11fdac8aa28
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d83683fded6a650a947caa7119d138f6f4105e1b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 79a0307aaf8b91a50485234acc2e1cbdd2314b47
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802706"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574168"
 ---
 # <a name="pidtagdisplayto-canonical-property"></a>PidTagDisplayTo 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プライマリ (する、セミコロン (;)、メッセージの受信者) の表示名の一覧が含まれています。 
   

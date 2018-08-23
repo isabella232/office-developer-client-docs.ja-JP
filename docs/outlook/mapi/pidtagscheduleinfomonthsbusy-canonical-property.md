@@ -10,18 +10,18 @@ api_type:
 - COM
 ms.assetid: b15447d6-89aa-40ad-93fc-21fbfa5e3d0e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 293e8648374b61784f5bda0db124506f345b2701
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7723897c6d249bbb53a0de5aa68ad8d1bc79830f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803482"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563728"
 ---
 # <a name="pidtagscheduleinfomonthsbusy-canonical-property"></a>PidTagScheduleInfoMonthsBusy 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ビジー状態の種類のデータを空き/予約済みの空き時間情報メッセージ内に存在する月が含まれています。
   

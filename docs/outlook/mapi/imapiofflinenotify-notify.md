@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 10c7cb9d-2e9d-72eb-6b07-31eed892e646
 description: '�ŏI�X�V��: 2012�N6��25��'
-ms.openlocfilehash: 54843339c6843e075ec769da5751ae2fe753f302
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a84114a3363f9cbcd9455bce12d3171843bd18a4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800644"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571116"
 ---
 # <a name="imapiofflinenotifynotify"></a>IMAPIOfflineNotify::Notify
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 接続状態の変更についてクライアントに通知を送信します。
   

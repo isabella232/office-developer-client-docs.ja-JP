@@ -1,5 +1,5 @@
 ---
-title: MAPI フォームのサーバー コードを Windows のコードと統合します。
+title: MAPI フォーム サーバー コードと Windows コードの統合
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 47ec3e97-ad2b-43ea-842a-b2a0675eef48
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 31f09b1c2f7b23d63e17f59c28b7bcf377b769d6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b37ae47e40906342aeecf179848311556a7d4ba4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801068"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573993"
 ---
-# <a name="integrating-mapi-form-server-code-with-windows-code"></a>MAPI フォームのサーバー コードを Windows のコードと統合します。
+# <a name="integrating-mapi-form-server-code-with-windows-code"></a>MAPI フォーム サーバー コードと Windows コードの統合
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォーム サーバーが Win32 アプリケーションであることに注意します。 などは、フォームのサーバーをメモリに読み込むと、正常に終了に関連するいくつかのタスクがあります。 すべての Windows アプリケーションと同様に、フォームのサーバーのエントリ ポイントが**WinMain**関数です。 この関数は、次のタスクを実行する適切な場所です。 
   

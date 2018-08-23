@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: bd3f9f59-9020-46e6-9560-86a7a0eeca20
 description: '�ŏI�X�V��: 2015�N12��7��'
-ms.openlocfilehash: 41157b97eb28787deaf19c2e974da23dfb77e0be
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1404239a54f9b8991099a66831e3364d9a683d1d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803765"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566335"
 ---
 # <a name="retrieving-mapi-properties"></a>MAPI プロパティを取得します。
 
  
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアントまたはサービス プロバイダーは、オブジェクトからプロパティを取得、プロパティの値、型、および識別子、オブジェクトに、利用できます。 
   

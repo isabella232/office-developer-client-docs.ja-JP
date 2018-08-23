@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 55b3e692-753d-45e9-a40d-22adc81b75da
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0cea1a1008ecbff698b757d6c67af5c279954656
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bd86e5d06e868ebc540d8eb779c059089045cd8a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803677"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574182"
 ---
 # <a name="processing-a-sent-message"></a>送信したメッセージの処理
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 それらが送信された後、送信メッセージの数をおくことができますを保持するために指定されたフォルダーに移動されているフォルダーは、メッセージを送信または削除、[送信トレイ] にします。 処理の種類は、かどうか設定したメッセージ ・ ストア ・ プロパティによって異なります。
   

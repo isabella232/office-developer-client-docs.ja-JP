@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 48d5ab42-ee70-4f6e-9184-18d22b08ea1b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 62b5a42a540a4fb96761c45cd51c510f12225e9e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 218238bea277a2d57c77fcc9d71cd622f7da42fa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803901"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571949"
 ---
 # <a name="sexistrestriction"></a>SExistRestriction
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 テーブル内の列として、特定のプロパティが存在するかどうかをテストするために既存の制限について説明します。 
   

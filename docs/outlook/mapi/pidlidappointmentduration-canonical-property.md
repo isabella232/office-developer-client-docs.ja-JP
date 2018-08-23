@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 92c07a81-9dec-4118-af1f-02ecad340f07
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0d124bd3aa4350863351284a9e4b19ca4533e382
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cfe5ad9a088fb4c02842e8be9d11a3623be749e3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801732"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574909"
 ---
 # <a name="pidlidappointmentduration-canonical-property"></a>PidLidAppointmentDuration 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 分単位で予定をスケジュールするときの時間の長さを表します。
   

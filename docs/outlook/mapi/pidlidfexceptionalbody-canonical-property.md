@@ -1,5 +1,5 @@
 ---
-title: PidLidFExceptionalBody の標準的なプロパティ
+title: PidLidFExceptionalBody 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 327516e8-ed3f-40fc-9604-03a70aecef5a
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: a2adbee409649f0268d96502a7dd3f658433052a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 7653d7a56302deaad75443746ff7e83834af260f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801969"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571361"
 ---
-# <a name="pidlidfexceptionalbody-canonical-property"></a>PidLidFExceptionalBody の標準的なプロパティ
+# <a name="pidlidfexceptionalbody-canonical-property"></a>PidLidFExceptionalBody 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 例外オブジェクトには、定期的な予定表オブジェクトとは異なるボディ メッセージが埋め込まれていることを示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidFExceptionalBody  <br/> |
+|関連するプロパティ:  <br/> |dispidFExceptionalBody  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008206  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティの値が TRUE の場合は、例外によってオブジェクトには、本体が必要です。 メッセージが埋め込まれています。 このプロパティの値が FALSE の場合、またはプロパティが存在しない場合は、クライアントまたはサーバーする必要があります本体から取得、定期的な予定表オブジェクト。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

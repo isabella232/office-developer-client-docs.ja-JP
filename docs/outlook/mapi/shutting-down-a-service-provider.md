@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: e518830b-0aaa-4ce4-a85a-07e4f00750a9
 description: '�ŏI�X�V��: 2015�N12��7��'
-ms.openlocfilehash: 71706fc970170f74aa5555da29d904c08c0422f2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 70db0b0a62568cc499cf915634756bb422ae82ca
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803919"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567196"
 ---
 # <a name="shutting-down-a-service-provider"></a>サービス プロバイダーのシャットダウン
 
  
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアントがセッションを終了し、すべてのアクティブなサービス プロバイダーをシャット ダウンするには、 [IMAPISession::Logoff](imapisession-logoff.md)メソッドを呼び出すと、MAPI は順に次メソッドを呼び出します。 
   

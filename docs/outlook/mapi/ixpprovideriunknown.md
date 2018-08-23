@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d5507785-c924-4981-ae80-19709ceb054d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e12f69e3486e5eeb9087b30753735f7f910dc6f4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 49cb500279540317059cde2d9baba28fcbf06165
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801280"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574112"
 ---
 # <a name="ixpprovider--iunknown"></a>IXPProvider : IUnknown
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 トランスポート プロバイダーのオブジェクトを初期化し、不要になったときに、オブジェクトをシャット ダウンします。
   

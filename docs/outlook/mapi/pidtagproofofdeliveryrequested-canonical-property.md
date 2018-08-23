@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4d752d3f-bf36-4711-b1d4-68cd575a062f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d5cb5807f4a3c24bf8ab1af1db2c57f361b32ae1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2eb811a88cd15ad05d016c690d3939a6b1e00ca3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803201"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567798"
 ---
 # <a name="pidtagproofofdeliveryrequested-canonical-property"></a>PidTagProofOfDeliveryRequested 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このプロパティには、メッセージの送信者は、特定の受信者の配達証明を要求する場合は TRUE が含まれています。
   

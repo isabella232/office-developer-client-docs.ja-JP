@@ -1,5 +1,5 @@
 ---
-title: PidTagAssistant の標準的なプロパティ
+title: PidTagAssistant 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 24892aff-5a98-4d61-b740-17f74f8ae95d
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 8e3ace1ff36e433ea7687304a3b1ba26a88309e4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 581d99e72fcdc6996e03f04f9c8b5e906049f1c4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802452"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574917"
 ---
-# <a name="pidtagassistant-canonical-property"></a>PidTagAssistant の標準的なプロパティ
+# <a name="pidtagassistant-canonical-property"></a>PidTagAssistant 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 受信者の管理アシスタントの名前が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ASSISTANT、PR_ASSISTANT_A、PR_ASSISTANT_W  <br/> |
+|関連するプロパティ:  <br/> |PR_ASSISTANT、PR_ASSISTANT_A、PR_ASSISTANT_W  <br/> |
 |識別子:  <br/> |0x3A30  <br/> |
-|データを入力します。  <br/> |PT_UNICODE、PT_STRING8  <br/> |
+|データの種類 :   <br/> |PT_UNICODE、PT_STRING8  <br/> |
 |領域:  <br/> |Address  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これらのプロパティでは、識別を提供し、受信者の情報にアクセスします。 受信者とその構造によって定義されます。 
   
@@ -68,14 +68,14 @@ Mapitags.h
 
 
 
-[PidTagAssistantTelephoneNumber の標準的なプロパティ](pidtagassistanttelephonenumber-canonical-property.md)
+[PidTagAssistantTelephoneNumber 標準プロパティ](pidtagassistanttelephonenumber-canonical-property.md)
 
 
 [MAPI プロパティ](mapi-properties.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

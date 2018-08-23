@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c57ada0e-b9a1-496b-8548-75686d8cba4e
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5b96a45bab4cd00d23604d0b0b25f3e772277395
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 559f1c609000608d0eb920a0240ac8848e4bc2a7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800995"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570794"
 ---
 # <a name="imsgserviceadminmsgservicetransportorder"></a>IMsgServiceAdmin::MsgServiceTransportOrder
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 どのトランスポートにメッセージを配信するプロバイダーの呼び出し順序を設定します。
   

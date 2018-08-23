@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 911a41c3-c10f-4473-8853-fafb56b721ba
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: ee3307836e8b167efbc2cdc870e698257526ef97
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 78f6083cf17bb21152df1a7ea09825f3be7f0e37
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804243"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572943"
 ---
 # <a name="working-with-multivalued-columns"></a>複数値列の操作
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 複数値の列には、1 つの値ではなく基本データ型の値の配列を含むプロパティは、複数値を持つプロパティのデータが含まれています。 テーブルの [なし] は、複数値を持つプロパティの既定の列セットであるため、テーブルのユーザーが要求した場合のみ複数値を持つプロパティがテーブルに含まれます。 
   

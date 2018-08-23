@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 08bc256c-9706-4f3e-9a12-3e9cca5e4caa
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 979415f1d792f92e593a7073cc84cfd6ba832b6c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: eb3b3b3c9c2e9cffb77febf9c96baed40ce3f9e8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803814"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566223"
 ---
 # <a name="sccopyprops"></a>ScCopyProps
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 コピーのプロパティは、新しいターゲットに[SPropValue](spropvalue.md)構造体の配列によって定義されます。 
   

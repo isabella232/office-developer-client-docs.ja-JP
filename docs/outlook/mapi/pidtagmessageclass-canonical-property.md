@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 1e704023-1992-4b43-857e-0a7da7bc8e87
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d4e478b053bc1aa81643a60899480ac2ad9d4265
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f54bdb70e9f48c89cb50e8238f8638deac8a93b0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802966"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567819"
 ---
 # <a name="pidtagmessageclass-canonical-property"></a>PidTagMessageClass 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 IPM などのメッセージの送信者が定義されているクラスを識別する文字列が含まれています。注意してください。 
   

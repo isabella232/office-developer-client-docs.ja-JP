@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a263894b-b3da-f1e4-a7da-ca3695bddc94
 description: '最終更新日: 2013 年 8 月 13 日'
-ms.openlocfilehash: 346e6bc471f5257aacb34c2e7d02a0aade1bb46e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 472b5847053c0a18026c76b8055a26551331d8dd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800241"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564543"
 ---
 # <a name="obtain-a-contact-message-given-a-contacts-address-book-entry"></a>連絡先の連絡先アドレス帳のエントリを指定したメッセージを取得します。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このトピックには、C++ では、例が含まれている`HrOpenContact`、関連付けられている連絡先の MAPI メッセージを取得するのには、連絡先のアドレス帳のエントリを識別する[CONTAB_ENTRYID](contab_entryid.md)構造体を使用する方法を示します。 
   
