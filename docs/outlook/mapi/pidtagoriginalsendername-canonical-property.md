@@ -12,63 +12,63 @@ api_type:
 - COM
 ms.assetid: 5e3b7764-b122-4405-be4f-7fec571c7dfc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ae0ae8536f4f088bae4561e123afce716b623414
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 11f8df87dd9248a9d6061892bb0500274478646d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803083"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579166"
 ---
-# <a name="pidtagoriginalsendername-canonical-property"></a><span data-ttu-id="2299c-103">PidTagOriginalSenderName 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="2299c-103">PidTagOriginalSenderName Canonical Property</span></span>
+# <a name="pidtagoriginalsendername-canonical-property"></a><span data-ttu-id="41f1d-103">PidTagOriginalSenderName 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="41f1d-103">PidTagOriginalSenderName Canonical Property</span></span>
 
   
   
-<span data-ttu-id="2299c-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="2299c-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="41f1d-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="41f1d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="2299c-105">転送または返信する前にメッセージは、メッセージの最初のバージョンの送信者の表示名が含まれています。</span><span class="sxs-lookup"><span data-stu-id="2299c-105">Contains the display name of the sender of the first version of a message, that is, the message before being forwarded or replied to.</span></span>
+<span data-ttu-id="41f1d-105">転送または返信する前にメッセージは、メッセージの最初のバージョンの送信者の表示名が含まれています。</span><span class="sxs-lookup"><span data-stu-id="41f1d-105">Contains the display name of the sender of the first version of a message, that is, the message before being forwarded or replied to.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="2299c-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="2299c-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="2299c-107">PR_ORIGINAL_SENDER_NAME、PR_ORIGINAL_SENDER_NAME_A、PR_ORIGINAL_SENDER_NAME_W</span><span class="sxs-lookup"><span data-stu-id="2299c-107">PR_ORIGINAL_SENDER_NAME, PR_ORIGINAL_SENDER_NAME_A, PR_ORIGINAL_SENDER_NAME_W</span></span>  <br/> |
-|<span data-ttu-id="2299c-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="2299c-108">Identifier:</span></span>  <br/> |<span data-ttu-id="2299c-109">0x005A</span><span class="sxs-lookup"><span data-stu-id="2299c-109">0x005A</span></span>  <br/> |
-|<span data-ttu-id="2299c-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="2299c-110">Data type:</span></span>  <br/> |<span data-ttu-id="2299c-111">PT_STRING8、PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="2299c-111">PT_STRING8, PT_UNICODE</span></span>  <br/> |
-|<span data-ttu-id="2299c-112">領域:</span><span class="sxs-lookup"><span data-stu-id="2299c-112">Area:</span></span>  <br/> |<span data-ttu-id="2299c-113">メッセージ全般</span><span class="sxs-lookup"><span data-stu-id="2299c-113">General messaging</span></span>  <br/> |
+|<span data-ttu-id="41f1d-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="41f1d-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="41f1d-107">PR_ORIGINAL_SENDER_NAME、PR_ORIGINAL_SENDER_NAME_A、PR_ORIGINAL_SENDER_NAME_W</span><span class="sxs-lookup"><span data-stu-id="41f1d-107">PR_ORIGINAL_SENDER_NAME, PR_ORIGINAL_SENDER_NAME_A, PR_ORIGINAL_SENDER_NAME_W</span></span>  <br/> |
+|<span data-ttu-id="41f1d-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="41f1d-108">Identifier:</span></span>  <br/> |<span data-ttu-id="41f1d-109">0x005A</span><span class="sxs-lookup"><span data-stu-id="41f1d-109">0x005A</span></span>  <br/> |
+|<span data-ttu-id="41f1d-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="41f1d-110">Data type:</span></span>  <br/> |<span data-ttu-id="41f1d-111">PT_STRING8、PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="41f1d-111">PT_STRING8, PT_UNICODE</span></span>  <br/> |
+|<span data-ttu-id="41f1d-112">領域:</span><span class="sxs-lookup"><span data-stu-id="41f1d-112">Area:</span></span>  <br/> |<span data-ttu-id="41f1d-113">メッセージ全般</span><span class="sxs-lookup"><span data-stu-id="41f1d-113">General messaging</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="2299c-114">注釈</span><span class="sxs-lookup"><span data-stu-id="2299c-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="41f1d-114">注釈</span><span class="sxs-lookup"><span data-stu-id="41f1d-114">Remarks</span></span>
 
-<span data-ttu-id="2299c-115">これらのプロパティでは、メッセージの元の送信者のアドレスのプロパティの例を示します。</span><span class="sxs-lookup"><span data-stu-id="2299c-115">These properties are examples of the address properties for the original sender of a message.</span></span> <span data-ttu-id="2299c-116">メッセージの最初の提出書類は、クライアント アプリケーションは、 **PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md)) プロパティの値にこれらのプロパティを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2299c-116">At first submission of the message, a client application should set these properties to the value of the **PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md)) property.</span></span> <span data-ttu-id="2299c-117">メッセージを転送または返信するときは変更されません。</span><span class="sxs-lookup"><span data-stu-id="2299c-117">It is never changed when the message is forwarded or replied to.</span></span>
+<span data-ttu-id="41f1d-115">これらのプロパティでは、メッセージの元の送信者のアドレスのプロパティの例を示します。</span><span class="sxs-lookup"><span data-stu-id="41f1d-115">These properties are examples of the address properties for the original sender of a message.</span></span> <span data-ttu-id="41f1d-116">メッセージの最初の提出書類は、クライアント アプリケーションは、 **PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md)) プロパティの値にこれらのプロパティを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="41f1d-116">At first submission of the message, a client application should set these properties to the value of the **PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md)) property.</span></span> <span data-ttu-id="41f1d-117">メッセージを転送または返信するときは変更されません。</span><span class="sxs-lookup"><span data-stu-id="41f1d-117">It is never changed when the message is forwarded or replied to.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="2299c-118">関連リソース</span><span class="sxs-lookup"><span data-stu-id="2299c-118">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="41f1d-118">関連リソース</span><span class="sxs-lookup"><span data-stu-id="41f1d-118">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="2299c-119">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="2299c-119">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="41f1d-119">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="41f1d-119">Protocol specifications</span></span>
 
-<span data-ttu-id="2299c-120">[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="2299c-120">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="41f1d-120">[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="41f1d-120">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="2299c-121">関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="2299c-121">Provides references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="41f1d-121">関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="41f1d-121">Provides references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="2299c-122">[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="2299c-122">[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="41f1d-122">[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="41f1d-122">[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="2299c-123">プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="2299c-123">Specifies the properties and operations that are permissible on email message objects.</span></span>
+> <span data-ttu-id="41f1d-123">プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="41f1d-123">Specifies the properties and operations that are permissible on email message objects.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="2299c-124">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="2299c-124">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="41f1d-124">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="41f1d-124">Header files</span></span>
 
-<span data-ttu-id="2299c-125">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="2299c-125">Mapidefs.h</span></span>
+<span data-ttu-id="41f1d-125">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="41f1d-125">Mapidefs.h</span></span>
   
-> <span data-ttu-id="2299c-126">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="2299c-126">Provides data type definitions.</span></span>
+> <span data-ttu-id="41f1d-126">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="41f1d-126">Provides data type definitions.</span></span>
     
-<span data-ttu-id="2299c-127">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="2299c-127">Mapitags.h</span></span>
+<span data-ttu-id="41f1d-127">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="41f1d-127">Mapitags.h</span></span>
   
-> <span data-ttu-id="2299c-128">代替名として記載されているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="2299c-128">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="41f1d-128">代替名として記載されているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="41f1d-128">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="2299c-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="2299c-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="41f1d-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="41f1d-129">See also</span></span>
 
 
 
-[<span data-ttu-id="2299c-130">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="2299c-130">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="41f1d-130">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="41f1d-130">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="2299c-131">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="2299c-131">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="41f1d-131">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="41f1d-131">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="2299c-132">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="2299c-132">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="41f1d-132">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="41f1d-132">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="2299c-133">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="2299c-133">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="41f1d-133">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="41f1d-133">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

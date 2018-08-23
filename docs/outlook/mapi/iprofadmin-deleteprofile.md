@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 730af2da-4c4a-42a7-9d52-56d914107d64
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 249d2dcf3a298abde85bdc53620680146d43c168
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: aa3c010eafeba7908498965bc0491c993a4a9120
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801144"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572088"
 ---
-# <a name="iprofadmindeleteprofile"></a><span data-ttu-id="d0cd8-103">IProfAdmin::DeleteProfile</span><span class="sxs-lookup"><span data-stu-id="d0cd8-103">IProfAdmin::DeleteProfile</span></span>
+# <a name="iprofadmindeleteprofile"></a><span data-ttu-id="bcb5c-103">IProfAdmin::DeleteProfile</span><span class="sxs-lookup"><span data-stu-id="bcb5c-103">IProfAdmin::DeleteProfile</span></span>
 
   
   
-<span data-ttu-id="d0cd8-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="d0cd8-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="bcb5c-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="bcb5c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="d0cd8-105">プロファイルを削除します。</span><span class="sxs-lookup"><span data-stu-id="d0cd8-105">Deletes a profile.</span></span>
+<span data-ttu-id="bcb5c-105">プロファイルを削除します。</span><span class="sxs-lookup"><span data-stu-id="bcb5c-105">Deletes a profile.</span></span>
   
 ```cpp
 HRESULT DeleteProfile(
@@ -34,52 +34,52 @@ HRESULT DeleteProfile(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="d0cd8-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d0cd8-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="bcb5c-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bcb5c-106">Parameters</span></span>
 
- <span data-ttu-id="d0cd8-107">_lpszProfileName_</span><span class="sxs-lookup"><span data-stu-id="d0cd8-107">_lpszProfileName_</span></span>
+ <span data-ttu-id="bcb5c-107">_lpszProfileName_</span><span class="sxs-lookup"><span data-stu-id="bcb5c-107">_lpszProfileName_</span></span>
   
-> <span data-ttu-id="d0cd8-108">[in]削除するプロファイルの名前へのポインター。</span><span class="sxs-lookup"><span data-stu-id="d0cd8-108">[in] A pointer to the name of the profile to be deleted.</span></span>
+> <span data-ttu-id="bcb5c-108">[in]削除するプロファイルの名前へのポインター。</span><span class="sxs-lookup"><span data-stu-id="bcb5c-108">[in] A pointer to the name of the profile to be deleted.</span></span>
     
- <span data-ttu-id="d0cd8-109">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="d0cd8-109">_ulFlags_</span></span>
+ <span data-ttu-id="bcb5c-109">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="bcb5c-109">_ulFlags_</span></span>
   
-> <span data-ttu-id="d0cd8-110">[in]常に NULL を返します。</span><span class="sxs-lookup"><span data-stu-id="d0cd8-110">[in] Always NULL.</span></span> 
+> <span data-ttu-id="bcb5c-110">[in]常に NULL を返します。</span><span class="sxs-lookup"><span data-stu-id="bcb5c-110">[in] Always NULL.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="d0cd8-111">�߂�l</span><span class="sxs-lookup"><span data-stu-id="d0cd8-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="bcb5c-111">�߂�l</span><span class="sxs-lookup"><span data-stu-id="bcb5c-111">Return value</span></span>
 
-<span data-ttu-id="d0cd8-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="d0cd8-112">S_OK</span></span> 
+<span data-ttu-id="bcb5c-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="bcb5c-112">S_OK</span></span> 
   
-> <span data-ttu-id="d0cd8-113">プロファイルが正常に削除されました。</span><span class="sxs-lookup"><span data-stu-id="d0cd8-113">The profile was successfully deleted.</span></span>
+> <span data-ttu-id="bcb5c-113">プロファイルが正常に削除されました。</span><span class="sxs-lookup"><span data-stu-id="bcb5c-113">The profile was successfully deleted.</span></span>
     
-<span data-ttu-id="d0cd8-114">MAPI_E_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="d0cd8-114">MAPI_E_NOT_FOUND</span></span> 
+<span data-ttu-id="bcb5c-114">MAPI_E_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="bcb5c-114">MAPI_E_NOT_FOUND</span></span> 
   
-> <span data-ttu-id="d0cd8-115">指定されたプロファイルが存在しません。</span><span class="sxs-lookup"><span data-stu-id="d0cd8-115">The specified profile does not exist.</span></span>
+> <span data-ttu-id="bcb5c-115">指定されたプロファイルが存在しません。</span><span class="sxs-lookup"><span data-stu-id="bcb5c-115">The specified profile does not exist.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="d0cd8-116">注釈</span><span class="sxs-lookup"><span data-stu-id="d0cd8-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bcb5c-116">注釈</span><span class="sxs-lookup"><span data-stu-id="bcb5c-116">Remarks</span></span>
 
-<span data-ttu-id="d0cd8-117">**IProfAdmin::DeleteProfile**メソッドは、プロファイルを削除します。</span><span class="sxs-lookup"><span data-stu-id="d0cd8-117">The **IProfAdmin::DeleteProfile** method deletes a profile.</span></span> <span data-ttu-id="d0cd8-118">**DeleteProfile**が呼び出されたときに削除するプロファイルを使用している場合、 **DeleteProfile**は S_OK を返しますが、すぐに、プロファイルは削除されません。</span><span class="sxs-lookup"><span data-stu-id="d0cd8-118">If the profile to delete is in use when **DeleteProfile** is called, **DeleteProfile** returns S_OK but does not delete the profile immediately.</span></span> <span data-ttu-id="d0cd8-119">代わりに、 **DeleteProfile**は、プロファイルの削除をマークし、不要になった使用されている、すべてのアクティブ ・ セッションの終了したときに後でそれを削除します。</span><span class="sxs-lookup"><span data-stu-id="d0cd8-119">Instead, **DeleteProfile** marks the profile for deletion and deletes it after it is no longer being used, when all of its active sessions have ended.</span></span> 
+<span data-ttu-id="bcb5c-117">**IProfAdmin::DeleteProfile**メソッドは、プロファイルを削除します。</span><span class="sxs-lookup"><span data-stu-id="bcb5c-117">The **IProfAdmin::DeleteProfile** method deletes a profile.</span></span> <span data-ttu-id="bcb5c-118">**DeleteProfile**が呼び出されたときに削除するプロファイルを使用している場合、 **DeleteProfile**は S_OK を返しますが、すぐに、プロファイルは削除されません。</span><span class="sxs-lookup"><span data-stu-id="bcb5c-118">If the profile to delete is in use when **DeleteProfile** is called, **DeleteProfile** returns S_OK but does not delete the profile immediately.</span></span> <span data-ttu-id="bcb5c-119">代わりに、 **DeleteProfile**は、プロファイルの削除をマークし、不要になった使用されている、すべてのアクティブ ・ セッションの終了したときに後でそれを削除します。</span><span class="sxs-lookup"><span data-stu-id="bcb5c-119">Instead, **DeleteProfile** marks the profile for deletion and deletes it after it is no longer being used, when all of its active sessions have ended.</span></span> 
   
-<span data-ttu-id="d0cd8-120">プロファイルでは、各メッセージ サービスのエントリ ポイント関数は、 _ulContext_パラメーターに設定された MSG_SERVICE_DELETE 値で呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="d0cd8-120">The entry point function for each message service in the profile is called with the MSG_SERVICE_DELETE value set in the  _ulContext_ parameter.</span></span> <span data-ttu-id="d0cd8-121">関数は、サービスを削除し、サービスのプロファイル セクションを削除し、最初に、します。</span><span class="sxs-lookup"><span data-stu-id="d0cd8-121">First, the function deletes the service, and then it deletes the service's profile section.</span></span> <span data-ttu-id="d0cd8-122">サービスが削除された後、メッセージ サービスのエントリ ポイント関数は再び呼び出されません。</span><span class="sxs-lookup"><span data-stu-id="d0cd8-122">The message service entry point function is not called again after the service has been deleted.</span></span> 
+<span data-ttu-id="bcb5c-120">プロファイルでは、各メッセージ サービスのエントリ ポイント関数は、 _ulContext_パラメーターに設定された MSG_SERVICE_DELETE 値で呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="bcb5c-120">The entry point function for each message service in the profile is called with the MSG_SERVICE_DELETE value set in the  _ulContext_ parameter.</span></span> <span data-ttu-id="bcb5c-121">関数は、サービスを削除し、サービスのプロファイル セクションを削除し、最初に、します。</span><span class="sxs-lookup"><span data-stu-id="bcb5c-121">First, the function deletes the service, and then it deletes the service's profile section.</span></span> <span data-ttu-id="bcb5c-122">サービスが削除された後、メッセージ サービスのエントリ ポイント関数は再び呼び出されません。</span><span class="sxs-lookup"><span data-stu-id="bcb5c-122">The message service entry point function is not called again after the service has been deleted.</span></span> 
   
-<span data-ttu-id="d0cd8-123">パスワードがプロファイルを削除する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="d0cd8-123">No password is required to delete a profile.</span></span>
+<span data-ttu-id="bcb5c-123">パスワードがプロファイルを削除する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="bcb5c-123">No password is required to delete a profile.</span></span>
   
-## <a name="mfcmapi-reference"></a><span data-ttu-id="d0cd8-124">MFCMAPI 参照</span><span class="sxs-lookup"><span data-stu-id="d0cd8-124">MFCMAPI reference</span></span>
+## <a name="mfcmapi-reference"></a><span data-ttu-id="bcb5c-124">MFCMAPI 参照</span><span class="sxs-lookup"><span data-stu-id="bcb5c-124">MFCMAPI reference</span></span>
 
-<span data-ttu-id="d0cd8-125">MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B</span><span class="sxs-lookup"><span data-stu-id="d0cd8-125">For MFCMAPI sample code, see the following table.</span></span>
+<span data-ttu-id="bcb5c-125">MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B</span><span class="sxs-lookup"><span data-stu-id="bcb5c-125">For MFCMAPI sample code, see the following table.</span></span>
   
-|<span data-ttu-id="d0cd8-126">**�t�@�C��**</span><span class="sxs-lookup"><span data-stu-id="d0cd8-126">**File**</span></span>|<span data-ttu-id="d0cd8-127">**�֐�**</span><span class="sxs-lookup"><span data-stu-id="d0cd8-127">**Function**</span></span>|<span data-ttu-id="d0cd8-128">**�R�����g**</span><span class="sxs-lookup"><span data-stu-id="d0cd8-128">**Comment**</span></span>|
+|<span data-ttu-id="bcb5c-126">**�t�@�C��**</span><span class="sxs-lookup"><span data-stu-id="bcb5c-126">**File**</span></span>|<span data-ttu-id="bcb5c-127">**�֐�**</span><span class="sxs-lookup"><span data-stu-id="bcb5c-127">**Function**</span></span>|<span data-ttu-id="bcb5c-128">**�R�����g**</span><span class="sxs-lookup"><span data-stu-id="bcb5c-128">**Comment**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="d0cd8-129">MAPIProfileFunctions.cpp</span><span class="sxs-lookup"><span data-stu-id="d0cd8-129">MAPIProfileFunctions.cpp</span></span>  <br/> |<span data-ttu-id="d0cd8-130">HrRemoveProfile</span><span class="sxs-lookup"><span data-stu-id="d0cd8-130">HrRemoveProfile</span></span>  <br/> |<span data-ttu-id="d0cd8-131">MFCMAPI では、 **IProfAdmin::DeleteProfile**メソッドを使用して、選択したプロファイルを削除します。</span><span class="sxs-lookup"><span data-stu-id="d0cd8-131">MFCMAPI uses the **IProfAdmin::DeleteProfile** method to delete the selected profile.</span></span>  <br/> |
+|<span data-ttu-id="bcb5c-129">MAPIProfileFunctions.cpp</span><span class="sxs-lookup"><span data-stu-id="bcb5c-129">MAPIProfileFunctions.cpp</span></span>  <br/> |<span data-ttu-id="bcb5c-130">HrRemoveProfile</span><span class="sxs-lookup"><span data-stu-id="bcb5c-130">HrRemoveProfile</span></span>  <br/> |<span data-ttu-id="bcb5c-131">MFCMAPI では、 **IProfAdmin::DeleteProfile**メソッドを使用して、選択したプロファイルを削除します。</span><span class="sxs-lookup"><span data-stu-id="bcb5c-131">MFCMAPI uses the **IProfAdmin::DeleteProfile** method to delete the selected profile.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="d0cd8-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="d0cd8-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bcb5c-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="bcb5c-132">See also</span></span>
 
 
 
-[<span data-ttu-id="d0cd8-133">IMsgServiceAdmin::DeleteMsgService</span><span class="sxs-lookup"><span data-stu-id="d0cd8-133">IMsgServiceAdmin::DeleteMsgService</span></span>](imsgserviceadmin-deletemsgservice.md)
+[<span data-ttu-id="bcb5c-133">IMsgServiceAdmin::DeleteMsgService</span><span class="sxs-lookup"><span data-stu-id="bcb5c-133">IMsgServiceAdmin::DeleteMsgService</span></span>](imsgserviceadmin-deletemsgservice.md)
   
-[<span data-ttu-id="d0cd8-134">MSGSERVICEENTRY</span><span class="sxs-lookup"><span data-stu-id="d0cd8-134">MSGSERVICEENTRY</span></span>](msgserviceentry.md)
+[<span data-ttu-id="bcb5c-134">MSGSERVICEENTRY</span><span class="sxs-lookup"><span data-stu-id="bcb5c-134">MSGSERVICEENTRY</span></span>](msgserviceentry.md)
   
-[<span data-ttu-id="d0cd8-135">IProfAdmin : IUnknown</span><span class="sxs-lookup"><span data-stu-id="d0cd8-135">IProfAdmin : IUnknown</span></span>](iprofadminiunknown.md)
+[<span data-ttu-id="bcb5c-135">IProfAdmin : IUnknown</span><span class="sxs-lookup"><span data-stu-id="bcb5c-135">IProfAdmin : IUnknown</span></span>](iprofadminiunknown.md)
 
 
-<span data-ttu-id="d0cd8-136">[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)</span><span class="sxs-lookup"><span data-stu-id="d0cd8-136">[MFCMAPI as a Code Sample](mfcmapi-as-a-code-sample.md)</span></span>
+<span data-ttu-id="bcb5c-136">[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)</span><span class="sxs-lookup"><span data-stu-id="bcb5c-136">[MFCMAPI as a Code Sample](mfcmapi-as-a-code-sample.md)</span></span>
 
