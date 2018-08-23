@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d83b8ea8-a3b8-4038-a226-de1869c5d722
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 771b466e58bf57a7eb4285c6f6ce94c815ec7288
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803824"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [ユーティリティ関数だけを使用する場合に[生じます](mapiinitialize.md)を置き換えます。 
   

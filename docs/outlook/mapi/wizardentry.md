@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e807c6b5-06cd-4ade-9d9e-69ba6abd1614
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2c307d18c5b62e5190aa10632a47a3f16b80e81f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804226"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロファイル ウィザードは、プロバイダーの構成のプロパティ シートを表示するための十分な情報を取得するためにはサービス プロバイダーのエントリ ポイント関数を定義します。 
   
@@ -43,7 +43,7 @@ ULONG WIZARDENTRY(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _hProviderDLLInstance_
   
@@ -75,7 +75,7 @@ MAPI_E_CALL_FAILED
   
 > 予期しない、または不明な発生元のエラーでは、操作を完了できませんでした。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 プロファイル ウィザードは、サービス プロバイダーの構成のユーザー インターフェイスを表示する準備ができたときに、ベースの**WIZARDENTRY**関数を呼び出します。 プロファイル ウィザードがすべてのプロバイダーの構成が完了すると、 [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)を呼び出すことによって、プロファイルに構成プロパティを書き込みます。 
   

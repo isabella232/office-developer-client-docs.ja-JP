@@ -1,11 +1,11 @@
 ---
-title: アップロード ステータスのステートを削除
+title: 削除状況アップロード状態
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: dee566ad-b46d-1015-4b0b-6c3313060142
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ff957e649d5de64c65ac169b3bc413ac7b6c9491
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804180"
 ---
-# <a name="upload-delete-status-state"></a>アップロード ステータスのステートを削除
+# <a name="upload-delete-status-state"></a>削除状況アップロード状態
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  このトピックでは、アップロード削除状態マシンの状態、レプリケーション状態中の動作について説明します。 
   
@@ -49,7 +49,7 @@ ms.locfileid: "19804180"
   
 [MAPI �萔](mapi-constants.md)
   
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [同期状態](syncstate.md)
 

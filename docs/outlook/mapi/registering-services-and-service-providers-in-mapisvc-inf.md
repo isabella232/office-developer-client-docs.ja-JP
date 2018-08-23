@@ -1,5 +1,5 @@
 ---
-title: MapiSvc.inf のサービスおよびサービス ・ プロバイダーを登録します。
+title: MapiSvc.inf でのサービスおよびサービス プロバイダーの登録
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803736"
 ---
-# <a name="registering-services-and-service-providers-in-mapisvcinf"></a>MapiSvc.inf のサービスおよびサービス ・ プロバイダーを登録します。
+# <a name="registering-services-and-service-providers-in-mapisvcinf"></a>MapiSvc.inf でのサービスおよびサービス プロバイダーの登録
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 システムに新しいプロバイダーをインストールするには、新しいプロバイダーを指すように、MapiSvc.inf ファイルを更新する必要があります。 通知 MAPI プロバイダーのダイナミック リンク ライブラリ (.dll) を検索する場所の次のよう、標準のプロパティの構成中に設定します。
   

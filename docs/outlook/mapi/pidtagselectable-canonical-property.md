@@ -1,5 +1,5 @@
 ---
-title: PidTagSelectable の標準的なプロパティ
+title: PidTagSelectable 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: eeecd957-dd50-4849-9698-8bc7106301e9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 225c435107ba79183c737ddb8e09cda1ffbd83f4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803496"
 ---
-# <a name="pidtagselectable-canonical-property"></a>PidTagSelectable の標準的なプロパティ
+# <a name="pidtagselectable-canonical-property"></a>PidTagSelectable 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 一時テーブル内のエントリを選択できる場合、TRUE が格納されます。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_SELECTABLE  <br/> |
+|関連するプロパティ:  <br/> |PR_SELECTABLE  <br/> |
 |識別子:  <br/> |0x3609  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |アドレス帳コンテナー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 一時テーブルの見た目を整えるためには、主にこのプロパティを使用します。 グループの見出しを示すエントリを作成するテンプレートをグループ化することができます。 見出しの場合は FALSE にこのプロパティの設定により、ユーザーがグループに、この見出しエントリではないので実際のテンプレートのみを選択できます。 
   
@@ -76,14 +76,14 @@ Mapitags.h
 
 [IABLogon::GetOneOffTable](iablogon-getoneofftable.md)
   
-[PidTagFolderType の標準的なプロパティ](pidtagfoldertype-canonical-property.md)
+[PidTagFolderType 標準プロパティ](pidtagfoldertype-canonical-property.md)
 
 
 [MAPI プロパティ](mapi-properties.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

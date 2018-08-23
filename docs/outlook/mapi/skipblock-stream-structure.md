@@ -17,7 +17,7 @@ ms.locfileid: "19803939"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 SkipBlock ストリームの構造体は、ブロックの残りの部分の長さを指定する整数値で始まるデータのブロックです。 このストリームの構造体は、フィールド定義は、PropDefV2 形式の場合、 [FieldDefinition](fielddefinition-stream-structure.md)ストリームに存在します。 
   
@@ -33,7 +33,7 @@ SkipBlock ストリームの構造体の目的は、FieldDefinition ストリー
 
 
 
-[Outlook アイテムおよびフィールド](outlook-items-and-fields.md)
+[Outlook のアイテムとフィールド](outlook-items-and-fields.md)
   
 [ストリームの構造](stream-structures.md)
   

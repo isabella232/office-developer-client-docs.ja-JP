@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3fbaa77a-be43-4fce-af67-1826ee101799
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3fd61828cd631c4abc0131da867ca213a3c44d20
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803997"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 1 つまたは複数の[SPropProblem](spropproblem.md)構造体の配列が含まれています。 
   
@@ -41,7 +41,7 @@ typedef struct _SPropProblemArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cProblem**
   
@@ -51,7 +51,7 @@ typedef struct _SPropProblemArray
   
 > プロパティのエラーを記述する**SPropProblem**構造体の配列。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 プロパティに関連するエラーと**SPropProblem**と**SPropProblemArray**の構造体のしくみの詳細については、 [MAPI 名前付きプロパティ](mapi-named-properties.md)を参照してください。 
   

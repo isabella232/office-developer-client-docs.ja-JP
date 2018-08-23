@@ -27,7 +27,7 @@ Outlook ソーシャル コネクタ (OSC) プロバイダーのサイトの Url
 
 OSC プロバイダーのサイトの Url を表す文字列の配列を指定する構造体へのポインター。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 プロバイダーは、複数のサイトの Url をサポートできます。 OSC では、選択したサイトの URL のプロバイダーを通知するために[ISocialSession::SiteUrl](isocialsession-siteurl.md)プロパティを設定します。 
   
@@ -35,5 +35,5 @@ OSC では、既定のサイトの URL として、配列の最初の要素を�
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialProvider: IUnknown](isocialprovideriunknown.md)
+- [ISocialProvider : IUnknown](isocialprovideriunknown.md)
 

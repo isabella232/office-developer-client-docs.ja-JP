@@ -20,13 +20,14 @@ ms.locfileid: "19805255"
   
 ## <a name="version-information"></a>バージョン情報
 
-Visio 2010 のバージョンが追加されます。 
+追加バージョン: Visio 2010
+ 
   
 ## <a name="syntax"></a>構文
 
 DISTTOPATH (* **で** *、* * *x* * *、* * *y* * *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
@@ -34,11 +35,11 @@ DISTTOPATH (* **で** *、* * *x* * *、* * *y* * *)
 | _x_ <br/> |必須  <br/> |**Double** <br/> |_X_-点の座標です。  <br/> |
 | _y_ <br/> |必須  <br/> |**Double** <br/> |_Y_-点の座標です。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
  **Double**
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Microsoft Visio では、#REF を返す! _セクション_が存在しません。 場合、 
   

@@ -17,7 +17,7 @@ ms.locfileid: "19804178"
 ---
 # <a name="uphier"></a>UPHIER
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [階層の状態をアップロード](upload-hierarchy-state.md)する際にフォルダー階層を同期するための情報です。
   
@@ -33,7 +33,7 @@ struct UPHIER
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 _ulFlags_
   
@@ -60,6 +60,6 @@ _セント_
 ## <a name="see-also"></a>関連項目
 
 - [レプリケーション API について](about-the-replication-api.md)
-- [レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
 - [MAPI �萔](mapi-constants.md)
 

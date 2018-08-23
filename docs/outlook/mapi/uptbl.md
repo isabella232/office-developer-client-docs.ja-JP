@@ -17,7 +17,7 @@ ms.locfileid: "19804214"
 ---
 # <a name="uptbl"></a>UPTBL
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [テーブルの状態をアップロード](upload-table-state.md)する時にフォルダーの内容をアップロードする方法の詳細については。
   
@@ -39,7 +39,7 @@ struct UPTBL
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 _ulFlags_
   
@@ -92,7 +92,7 @@ _保持_
 ## <a name="see-also"></a>関連項目
 
 - [レプリケーション API について](about-the-replication-api.md)
-- [レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
 - [MAPI �萔](mapi-constants.md)
 - [UPTBLE](uptble.md)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 201ceb76-41bc-4d7b-835d-5196bf3dc234
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 59911531b6d8f9c094ef8563510aaa176e3a63b8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804010"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 PT_MV_SHORT の種類のプロパティを説明するために使用する符号なし整数値の配列が含まれています。
   
@@ -40,7 +40,7 @@ typedef struct _SShortArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **あう**
   
@@ -50,7 +50,7 @@ typedef struct _SShortArray
   
 > 符号なし整数値の配列へのポインター。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 PT_MV_SHORT およびその他のプロパティの種類の詳細については、[プロパティの型](property-types.md)を参照してください。 
   

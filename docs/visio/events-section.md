@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805348"
 ---
-# <a name="events-section"></a>[Events] セクション
+# <a name="events-section"></a>[イベント] セクション
 
 図形のイベントを制御する数式を格納します。イベント セルはイベントの発生時にのみ評価されます。数式の入力時には評価されません。
   

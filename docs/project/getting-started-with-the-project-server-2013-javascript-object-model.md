@@ -62,24 +62,24 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトを取得
     
     1. [ **新しいプロジェクト**] ダイアログ ボックスで、上部のドロップダウン リストから [ **.NET Framework 4.5**] を選択します。 
         
-    2. テンプレート カテゴリの一覧では、 **Office SharePoint**カテゴリを選択し、 **SharePoint 2013 のプロジェクト**テンプレートを選択し。 
+    2. テンプレート カテゴリの一覧で、[**Office SharePoint**] カテゴリを選択し、[**SharePoint 2013 Project**] テンプレートを選択します。 
         
     3. GetProjectsJSOM、プロジェクトの名前し、 **[OK** ] ボタンをクリックします。 
         
-    4. **SharePoint カスタマイズ ウィザード**] ダイアログ ボックスで**ファーム ソリューションとして配置する**] を選択し、[ **OK** ] を選択し、します。 
+    4. [**SharePoint カスタマイズ ウィザード**] ダイアログ ボックスで、[**ファーム ソリューションとして配置する**] を選択し、[**OK**] ボタンを選択します。 
     
 3. ソリューション エクスプ ローラーで、Project Web App インスタンスの URL と一致する**ProjectsJSOM**プロジェクトの**サイトの URL**プロパティの値を編集します (たとえば、 `http://ServerName/PWA`)。
     
-4. **GetProjectsJSOM**プロジェクトのショートカット メニューを開き、SharePoint を追加し、「レイアウト」フォルダーがマップされています。 
+4. [**GetProjectsJSOM**] プロジェクトのショートカット メニューを開き、SharePoint "レイアウト" のマップされたフォルダーを追加します。 
     
 5. **レイアウト**フォルダーに**GetProjectsJSOM**フォルダーのショートカット メニューを開くし、ProjectsList.aspx をという名前の新しい SharePoint アプリケーション ページを追加します。
     
    > [!NOTE]
    > 次の使用例は、アプリケーション ページの Visual Studio 2012 を作成する分離コード ファイルを使用しません。 
   
-6. **ProjectsList.aspx**ページのショートカット メニューを開き、**スタートアップ アイテムとして設定**] を選択します。
+6. **ProjectsList.aspx** ページのショートカット メニューを開き、[**スタートアップ アイテムとして設定**] を選択します。
     
-7. **ProjectsList.aspx**ページのマークアップで次のようにテーブルと、"Main" **asp: コンテンツ**のタグの内部メッセージのプレース ホルダーを定義します。 
+7. 次のように、[**ProjectsList.aspx**] ページのマークアップで、"Main" の **asp:Content** タグ内にテーブルとメッセージ プレースホルダーを定義します。 
     
     ```HTML
     <table width="100%" id="tblProjects">
@@ -100,13 +100,13 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトを取得
 
 次の手順では、プロジェクト コレクションを取得および初期化します。
   
-1. 後終了**div**タグは、ファイルを参照する、PS.js、次のように**SharePoint:ScriptLink**タグを追加します。 
+1. 次のように、**div** 終了タグの後ろに、PS.js ファイルを参照する **SharePoint:ScriptLink** タグを追加します。 
     
    ```HTML
     <SharePoint:ScriptLink name="PS.js" runat="server" ondemand="false" localizable="false" loadafterui="true" />
    ```
 
-2. **SharePoint:ScriptLink**タグの下に次のように**スクリプト**タグを追加します。 
+2. 次のように、**SharePoint:ScriptLink** タグの下に **script** タグを追加します。 
     
    ```HTML
     <script type="text/javascript">
@@ -120,7 +120,7 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトを取得
    var projects;
    ```
 
-4. **の SP を呼び出すSOD.executeOrDelayUntilScriptLoaded**メソッドにカスタム コードが実行される前に、PS.js ファイルがロードされていることを確認します。 
+4. ユーザー設定コードの実行前に PS.js ファイルが確実に読み込まれるようにするための **SP.SOD.executeOrDelayUntilScriptLoaded** メソッドを呼び出します。 
     
    ```js
    SP.SOD.executeOrDelayUntilScriptLoaded(GetProjects, "PS.js");
@@ -143,15 +143,15 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトを取得
     }
    ```
 
-   コンテキストを取得するいくつかのクライアント オブジェクトが含まれていないデータが初期化されるまでオブジェクトが初期化されるまでは、オブジェクトのプロパティ値にアクセスできません。 さらに、 **ValueObject**の種類のプロパティは、必要があります明示的に要求したプロパティの値にアクセスすることができます前にします。 (が初期化される前にプロパティにアクセスしようとする場合、 **PropertyOrFieldNotInitializedException**例外表示) されます。 
+   このコンテキストで取得されるいくつかのクライアント オブジェクトは、初期化されるまでデータが格納されません。つまり、オブジェクトを初期化するまでオブジェクトのプロパティ値にアクセスできません。また、**ValueObject** 型のプロパティの場合、値にアクセスするには明示的にプロパティを要求する必要があります (初期化する前にプロパティにアクセスしようとすると、**PropertyOrFieldNotInitializedException** 例外が発生します)。 
     
-   オブジェクトを初期化するには、 **load**メソッド (または、 **loadQuery**メソッド) を呼び出すと、 **executeQueryAsync**メソッドでは。 
+   オブジェクトを初期化するには、**load** メソッド (または **loadQuery** メソッド) を呼び出し、次に **executeQueryAsync** メソッドを呼び出します。 
     
-   - **読み込み**または**loadQuery**関数を呼び出して、サーバー上で実行する要求を登録します。 取得するオブジェクトを表すパラメーターを渡します。 **ValueObject**プロパティを使用して作業している場合、またを要求するパラメーターのプロパティ。 
+   - **load** 関数または **loadQuery** 関数を呼び出すと、サーバー上で実行する要求が登録されます。取得するオブジェクトを表すパラメーターを渡します。**ValueObject** プロパティを操作する場合は、そのプロパティもパラメーターで要求します。 
     
-   - **ExecuteQueryAsync**関数を呼び出すと、サーバーにクエリ要求が非同期的に送信します。 成功コールバック関数、およびサーバーの応答が受信されたときに呼び出すの失敗コールバック関数を渡します。 
+   - **executeQueryAsync** 関数を呼び出すと、クエリ要求がサーバーに非同期に送信されます。サーバーから応答を受け取ったときに呼び出す成功のコールバック関数と失敗のコールバック関数を渡します。 
     
-   ネットワーク トラフィックを減らすためには、**読み込み**関数を呼び出すときに使用するプロパティだけを要求します。 さらに、複数のオブジェクトで作業している場合をグループ化**を読み込む**関数を複数回呼び出すことが可能な場合、 **executeQueryAsync**関数を呼び出す前に。 
+   ネットワーク トラフィックを減らすには、**load** 関数を呼び出すときに、操作するプロパティのみを要求します。また、複数のオブジェクトを操作する場合、可能であれば **load** 関数の複数の呼び出しをまとめてから、**executeQueryAsync** 関数を呼び出します。 
     
 ### <a name="iterating-through-the-projects-collection"></a>プロジェクト コレクションの反復処理
 <a name="pj15_GetStartedJSOM_IterateProjs"> </a>
@@ -184,7 +184,7 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトを取得
     }
     ```
 
-3. メニュー バーの [アプリケーション] ページをテストするのには、**デバッグ**、**デバッグの開始**を選択します。 Web.config ファイルを変更するメッセージが表示されたら、 **[ok]** を選択します。
+3. アプリケーション ページをテストするには、メニュー バーの [**デバッグ**] を選択し、[**デバッグの開始**] をクリックします。web.config ファイルの変更を求められたら、[**OK**] を選択します。
 
 <a name="pj15_GetStartedJSOM_CompleteExample"> </a>
 
@@ -268,6 +268,6 @@ My Application Page
 
 - [作成、取得、更新、およびプロジェクトのサーバーの JavaScript オブジェクト モデルを使用してプロジェクトを削除します。](create-retrieve-update-delete-projects-using-project-server-javascript.md)  
 - [Project 2013 のクライアント側オブジェクト モデル (CSOM)](client-side-object-model-csom-for-project-2013.md)
-- [プロジェクト サーバー CSOM および .NET の概要](getting-started-with-the-project-server-csom-and-net.md)
+- [Project Server CSOM および .NET の概要](getting-started-with-the-project-server-csom-and-net.md)
     
 

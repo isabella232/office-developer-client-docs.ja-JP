@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805057"
 ---
-# <a name="complexscriptfont-cell-character-section"></a>[ComplexScriptFont] セル ([Character] セクション)
+# <a name="complexscriptfont-cell-character-section"></a>[ComplexScriptFont] セル ([文字] セクション)
 
 合成テキストの書式設定に使用するフォントの番号が含まれます。フォント番号は、ユーザーのシステムにインストールされているフォントによって異なります。 
   
@@ -26,13 +26,13 @@ ms.locfileid: "19805057"
   
 番号 0 (ゼロ) では、フォントが指定されていないことを示します。 ラテン フォントまたは既定のフォントが使用されます。
   
-取得する、[ComplexScriptSize] セルへの参照名で別の数式からまたはプログラムから**CellsU**プロパティを使用して、次のコマンドを使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ComplexScriptSize] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |Char.ComplexScriptFont [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
    
-プログラムから、インデックスによって [ComplexScriptFont] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ComplexScriptFont] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

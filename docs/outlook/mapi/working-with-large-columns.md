@@ -1,5 +1,5 @@
 ---
-title: 大規模な列の使用
+title: 大規模列の操作
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804220"
 ---
-# <a name="working-with-large-columns"></a>大規模な列の使用
+# <a name="working-with-large-columns"></a>大規模列の操作
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 文字列またはバイナリ プロパティ データを持つ列が大きくなる可能性のある膨大な数のバイト長です。 ビューで、数百バイトの 1 つまたは複数の列を含む多くの場合実用的ではありません、ために、MAPI には、テーブル実装側は、255 バイトには多くの場合、使用頻度は少ない 510 バイトに値を切り詰めますが有効にします。 可能な限り、テーブルの実装者は、テーブルの列にプロパティの完全な値を含める必要があります。 最初の 255 バイトを含めることをお勧めします。
   

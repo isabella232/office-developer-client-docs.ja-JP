@@ -22,7 +22,7 @@ ms.locfileid: "19805133"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[CustomMenusFile_Type](custommenusfile_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[CustomMenusFile_Type](custommenusfile_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |

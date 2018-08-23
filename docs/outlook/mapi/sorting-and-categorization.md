@@ -19,7 +19,7 @@ ms.locfileid: "19803963"
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルを並べ替えると、そのビューアーに意味のある順序で行が配置されます。 たとえば、1 つのビューアー会話のすべてのスレッドはまとめて別のビューアーはメッセージの送信者の名前で並べ替える必要がありますように、メッセージの件名でソートするフォルダーの内容を表示する方がよい。 必ずしも、新しくインスタンス化されたテーブルは、特定の順序では並べ替えられません。 
   
@@ -67,19 +67,19 @@ ms.locfileid: "19803963"
   
 - [SSortOrder](ssortorder.md)
     
-- [PidTagSubject の標準的なプロパティ](pidtagsubject-canonical-property.md)
+- [PidTagSubject 標準プロパティ](pidtagsubject-canonical-property.md)
     
-- [PidTagSubjectPrefix の標準的なプロパティ](pidtagsubjectprefix-canonical-property.md)
+- [PidTagSubjectPrefix 標準プロパティ](pidtagsubjectprefix-canonical-property.md)
     
-- [PidTagNormalizedSubject の標準的なプロパティ](pidtagnormalizedsubject-canonical-property.md)
+- [PidTagNormalizedSubject 標準プロパティ](pidtagnormalizedsubject-canonical-property.md)
     
-- [PidTagConversationTopic の標準的なプロパティ](pidtagconversationtopic-canonical-property.md)
+- [PidTagConversationTopic 標準プロパティ](pidtagconversationtopic-canonical-property.md)
     
-- [PidTagConversationIndex の標準的なプロパティ](pidtagconversationindex-canonical-property.md)
+- [PidTagConversationIndex 標準プロパティ](pidtagconversationindex-canonical-property.md)
     
 - [ScCreateConversationIndex](sccreateconversationindex.md)
     
-- [列と制約を設定した後のテーブルの並べ替え](sorting-tables-after-setting-columns-and-restrictions.md)
+- [列および制限の設定後のテーブルの並べ替え](sorting-tables-after-setting-columns-and-restrictions.md)
     
 ## <a name="see-also"></a>関連項目
 

@@ -19,7 +19,7 @@ ms.locfileid: "19804032"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 場所でメッセージの添付ファイルはレンダリングを考慮するクライアント アプリケーションは、メッセージの形式の中にこれらの添付ファイルの**PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)) のプロパティを設定します。 レンダリング配置しないクライアントは、設定を解除このプロパティを残します。
   

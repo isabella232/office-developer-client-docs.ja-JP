@@ -30,5 +30,5 @@ ms.locfileid: "19804487"
 ## <a name="see-also"></a>関連項目
 
 - [ISocialSession::LoggedOnUserID](isocialsession-loggedonuserid.md)  
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

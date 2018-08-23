@@ -695,9 +695,9 @@ Office 365 クライアント更新プログラムにより、管理ソフトウ
     
 -  *Arch*: この更新プログラムに関連付けられているプロセッサ アーキテクチャを識別します。 
     
--  *xmlVer*: この更新プログラムの基本イメージの作成に使用する XML ファイルのリストのバージョンです。 
+-  *xmlVer*: この更新プログラムの基本イメージの作成に使用する XML ファイル リストのバージョンです。 
     
--  *xmlPath*: OFL へのパスです。XML ファイルが含まれている CAB ファイルが一覧表示されます。 
+-  *xmlPath*: XML ファイル リストを格納している OFL.CAB ファイルへのパスです。 
     
 -  *mlFile*: この更新プログラムを使用する [ファイル] ボックスの一覧の名前。 この値は、O365Client_32bit または O365Client_64bit で、Arch と一致します。 
     
@@ -748,7 +748,7 @@ http://officecdn.microsoft.com/pr/wsus/ofl.cab は、この更新プログラム
   
 **\<SKU\>** ノードでは、個別の SKU を識別します。 
   
-- *[商品コード]* 属性では、密接に関連を使用する場合、configuration.xml 内の ID 属性として渡される ID を識別します。 たとえば、`<Product ID="O365ProPlusRetail">`。 
+- *[商品コード]* 属性では、密接に関連を使用する場合、configuration.xml 内の ID 属性として渡される ID を識別します。 たとえば、`<Product ID="O365ProPlusRetail">` などです。 
     
 - *Default*  属性では、推奨される SKU を識別します (True に設定されている場合)。 
     

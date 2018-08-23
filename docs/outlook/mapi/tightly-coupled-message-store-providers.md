@@ -1,5 +1,5 @@
 ---
-title: 密結合のメッセージ ストア プロバイダー
+title: 密結合メッセージ ストア プロバイダー
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804101"
 ---
-# <a name="tightly-coupled-message-store-providers"></a>密結合のメッセージ ストア プロバイダー
+# <a name="tightly-coupled-message-store-providers"></a>密結合メッセージ ストア プロバイダー
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ストア プロバイダーは、トランスポート プロバイダーと密接に関連することができます。 ストア プロバイダーが、トランスポート プロバイダーは、プロセスをより効率的にメッセージを送受信するために通信できるように、2 つのプロバイダーを実装する MAPI サービス プロバイダーの手段が緊密に結び付けられます。 この方法の利点は、MAPI スプーラーを使用してではなく、相互に直接対話できる 2 つのサービス プロバイダーとパフォーマンスの向上が発生することです。 トランスポート プロバイダーにメッセージ ストア プロバイダーが密に結合するには、トランスポート プロバイダーでは、トランスポート プロバイダーの**PR_OWN_STORE_ENTRYID** ([PidTagOwnStoreEntryId](pidtagownstoreentryid-canonical-property.md)) のプロパティで、メッセージ ストア プロバイダーのエントリの識別子を置く必要があります。MAPI 状態テーブル内の行です。 これにより、MAPI スプーラーを無効にして、トランスポート プロバイダーは、ストア プロバイダーに接続できます。
   

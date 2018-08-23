@@ -1,5 +1,5 @@
 ---
-title: メッセージ ストア プロバイダーの読み取りおよび Nonread のレポートを提供します。
+title: メッセージ ストア プロバイダー用の開封済みレポートと未開封レポートの提供
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803738"
 ---
-# <a name="providing-read-and-nonread-reports-for-message-store-providers"></a>メッセージ ストア プロバイダーの読み取りおよび Nonread のレポートを提供します。
+# <a name="providing-read-and-nonread-reports-for-message-store-providers"></a>メッセージ ストア プロバイダー用の開封済みレポートと未開封レポートの提供
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ストア プロバイダーはメッセージを受信する場合に、読み取りとメッセージ ストア プロバイダーによって受信されたメッセージの nonread のレポートをサポートする必要があります。 メッセージ ・ ストアは、ユーザーが、メッセージを開いたとき、ソース ファイルを送信者に通知メッセージを送信**PR_READ_RECEIPT_REQUESTED** ([PidTagReadReceiptRequested](pidtagreadreceiptrequested-canonical-property.md)) のプロパティが受信したメッセージに含まれている場合は、そのプロパティの値は TRUE をメッセージが読み取られたことを示します。 同様に、ユーザーは、開く前に、メッセージを削除した場合、メッセージ ・ ストアする必要がありますメッセージが読まれていることを示す送信者への応答を発行します。
   

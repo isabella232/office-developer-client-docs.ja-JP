@@ -1,5 +1,5 @@
 ---
-title: 書式設定されたテキストを書き込み、圧縮されていません。
+title: 非圧縮書式付きテキストの作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804246"
 ---
-# <a name="writing-uncompressed-formatted-text"></a>書式設定されたテキストを書き込み、圧縮されていません。
+# <a name="writing-uncompressed-formatted-text"></a>非圧縮書式付きテキストの作成
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 書式設定されたテキストを含むメッセージを送信する準備ができたら、いずれかの**PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) のプロパティをメッセージの圧縮または非圧縮のテキストに設定します。 **PR_RTF_COMPRESSED**プロパティに圧縮されたテキストを書き込む、非常に CPU 負荷の高い操作は、パフォーマンスに大きく影響します。 
   

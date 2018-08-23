@@ -1,5 +1,5 @@
 ---
-title: 友人の XML の例
+title: 友だち XML の例
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804326"
 ---
-# <a name="friends-xml-example"></a>友人の XML の例
+# <a name="friends-xml-example"></a>友だち XML の例
 
 XML の例をこのトピックでは、 [ISocialPerson::GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md)メソッドが呼び出された後に、Outlook ソーシャル コネクタ (OSC) が返されるフレンド XML 文字列です。 例は、**人**の要素で区切られた各、2 つの友人の**友人**の XML を示します。 各友人は、ソーシャル ネットワーク上の**ユーザー Id**の要素に一意の値を指定します。 
   

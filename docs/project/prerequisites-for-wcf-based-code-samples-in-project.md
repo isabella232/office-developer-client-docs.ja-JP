@@ -40,7 +40,7 @@ Office Project Server 2007 用に開発されたサンプルから変更され�
   
     場合によっては、サーバー上でリモート デバッグを実行する必要があります。 SharePoint ファーム内の各プロジェクトのサーバー コンピューター上のイベント ハンドラー アセンブリをインストールして、一般に、プロジェクトのサーバーの設定] ページを使用して、Project Web App インスタンスのイベント ハンドラーを構成して、イベント ハンドラーを設定する必要がありますもSharePoint サーバーの管理のアプリケーションの設定です。
     
-2. **開発用コンピューターを設定します。**
+2. **開発用コンピューターをセットアップする。**
     
     通常、PSI にはネットワーク経由でアクセスします。コード サンプルは、記載されている場合を除き、サーバーから分離されたクライアントで動作するように作られています。
     
@@ -52,9 +52,9 @@ Office Project Server 2007 用に開発されたサンプルから変更され�
     
        - Microsoft.Office.Project.Server.Library.dll
     
-    3. コンパイルし、PSI の WCF サービスの ProjectServerServices.dll プロキシ アセンブリを使用する方法の詳細については、 [PSI プロキシ アセンブリおよび IntelliSense の説明を使用して](#pj15_PrerequisitesWCF_BuildingProxy)参照してください。
+    3. PSI で WCF サービスの ProjectServerServices.dll プロキシ アセンブリをコンパイルして使用する方法に関する情報については、「[Intellisense の説明を備えた PSI プロキシ アセンブリを使用する](#pj15_PrerequisitesWCF_BuildingProxy)」を参照してください。
     
-3. **IntelliSense ファイルをインストールします。**
+3. **IntelliSense ファイルをインストールする。**
     
     Project 2013 SDK から更新された IntelliSense XML ファイルは、コピーである Project Server アセンブリのクラスとメンバーの IntelliSense の説明を使用するには、Project Server アセンブリが配置されている同じディレクトリにダウンロードします。 たとえば、アプリケーションが Microsoft.Office.Project.Server.Library.dll アセンブリへの参照に設定されているディレクトリに Microsoft.Office.Project.Server.Library.xml ファイルをコピーします。
     
@@ -65,19 +65,19 @@ Office Project Server 2007 用に開発されたサンプルから変更され�
 
 1. **コンソール アプリケーションを作成します。**
     
-    **[新しいプロジェクト**] ダイアログ ボックスのドロップダウン ボックスの一覧で、コンソール アプリケーションを作成するときは、 **.NET Framework 4**を選択します。 新しいアプリケーションには、PSI のコード例をコピーできます。
+    コンソール アプリケーションを作成するには、[**新しいプロジェクト**] ダイアログ ボックスのドロップダウン リストから [**.NET Framework 4**] を選択します。この新しいアプリケーションに PSI サンプル コードをコピーできます。
     
-2. **WCF に必要な参照を追加します。**
+2. **WCF に必要な参照を追加する。**
     
     ソリューション エクスプ ローラーで、 **System.ServiceModel**への参照を追加します (図 1 を参照してください)。 Web アプリケーションでは、 **System.ServiceModel.Web**を使用します。
     
-    **System.Runtime.Serialization**への参照を追加もできます。
+    **System.Runtime.Serialization** への参照も追加します。
     
-    **図 1 です。WCF ベースのアプリケーション用の Visual Studio で参照を追加します。**
+    **図 1. Visual Studio での WCF ベースのアプリケーションへの参照の追加**
 
     ![WCF への参照を追加します。](media/pj15_PrerequisitesWCF_AddReference.gif "WCF への参照を追加します。")
   
-3. **コードをコピー**します。
+3. **コードをコピーする。**
     
     コード サンプル全体をコンソール アプリケーションの Program.cs ファイルにコピーします。
     
@@ -87,17 +87,17 @@ Office Project Server 2007 用に開発されたサンプルから変更され�
     
     たとえば、 [ReadResource](https://msdn.microsoft.com/library/WebSvcResource.Resource.ReadResource.aspx)のコード サンプルは、 **Microsoft.SDK.Project.Samples.CreateResourceTest**名前空間を持っています。 **ResourceTest**の Visual Studio プロジェクトの名前が表示された場合、Program.cs ファイルから名前空間をコピーし、プロジェクト**のプロパティ**] ウィンドウを開きます ( **[プロジェクト**] メニューで、 **ResourceTest プロパティ**] をクリックすると)。 [**アプリケーション**] タブで、名前空間を**既定の名前空間**] テキスト ボックスにコピーします。 
     
-5. **サービス参照を設定します。**
+5. **サービス参照を設定する。**
     
     多くの例では、1 つ以上の PSI サービスへの参照が必要です。これらは、サンプル自体、またはサンプルの前にあるコメントに示されています。サービス参照の適切な名前空間を取得するには、最初にアプリケーションの既定の名前空間を設定する必要があります。
     
     WCF サービス参照を追加する方法として次の 3 つがあります。
     
-    - という名前の ProjectServerServices.dll、PSI プロキシ アセンブリをビルドし、アセンブリへの参照を設定します。 [PSI プロキシ アセンブリおよび IntelliSense の説明を使用して](#pj15_PrerequisitesWCF_BuildingProxy)参照してください。
+    - ProjectServerServices.dll という名前の PSI プロキシ アセンブリを作成してから、このアセンブリへの参照を設定します。詳細については「[Intellisense の説明を備えた PSI プロキシ アセンブリを使用する](#pj15_PrerequisitesWCF_BuildingProxy)」を参照してください。
     
-    - Svcutil.exe 出力からプロキシ ファイルを Visual Studio ソリューションに追加します。 [PSI プロキシ ファイルを追加する](#pj15_PrerequisitesWCF_AddingProxyFile)を参照してください。
+    - svcutil.exe 出力からのプロキシ ファイルを Visual Studio ソリューションに追加します。「[PSI プロキシ ファイルを追加する](#pj15_PrerequisitesWCF_AddingProxyFile)」を参照してください。
     
-    - サービス参照を追加するには、Visual Studio を使用します。 [サービス参照の追加](#pj15_PrerequisitesWCF_AddingServiceReference)を参照してください。
+    - Visual Studio を使用してサービス参照を追加します。「[サービス参照を追加する](#pj15_PrerequisitesWCF_AddingServiceReference)」を参照してください。
     
 ### <a name="using-a-psi-proxy-assembly-and-intellisense-descriptions"></a>Intellisense の説明を備えた PSI プロキシ アセンブリを使用する
 <a name="pj15_PrerequisitesWCF_BuildingProxy"> </a>
@@ -111,9 +111,9 @@ Project Server のサービス パックおよび更新プログラムの場合�
 > 
 > 内のスクリプト、`Documentation\IntelliSense\ASMX`フォルダーは、WCF ベースのアプリケーションでは機能しません。 GenASMXProxyAssembly.cmd スクリプトでは、ASMX サービスのソース コード ファイルを生成する、Wsdl.exe を呼び出します。 ASMX プロキシ ファイルには、さまざまなクラスとプロパティが含まれます。 などの資源の ASMX ベース web サービスには、WCF ベースのリソースのサービスには、**リソース**インターフェイス、 **ResourceChannel**インターフェイス、および**ResourceClient**のクラスが含まれていますに、**リソース**のクラスが含まれます。 
   
-ASMX web サービスと WCF サービスの両方に対して作成された任意の名前空間は、IntelliSense の ProjectServerServices.xml ファイルは、どちらかのアセンブリで動作するよう、同じです。 ASMX ベースのプロキシ アセンブリの WCF ベースのプロキシ アセンブリ内のリソース サービスの名前空間は**SvcResource**です。 名前空間の名前を変更することができます、もちろん、-プロキシ アセンブリおよび IntelliSense の ProjectServerServices.xml ファイルに一致しているかどうかを確認します。
+ASMX Web サービスと WCF サービスのために作成された恣意的な名前空間はどちらも同じなので、Intellisense 用の ProjectServerServices.xml ファイルはどちらのアセンブリでも動作します。たとえば、WCF ベースのプロキシ アセンブリでも ASMX ベースのプロキシ アセンブリでも、Resource サービスの名前空間は **SvcResource** です。もちろん、この名前空間の名前は変更できます。ただし、その名前はプロキシ アセンブリと ProjectServerServices.xml Intellisense ファイルで一致する必要があります。
   
-コード サンプルでは、PSI サービス名前空間に別の名前を使用する場合など**ProjectWebSvc**IntelliSense を実行するには、名前空間がプロキシ アセンブリと一致するように**SvcProject**を使用するサンプルを変更しなければなりません。 
+あるコード サンプルが PSI サービスの名前空間に別の名前 (**ProjectWebSvc** など) を使用している場合、IntelliSense が動作するためには、**SvcProject** を使用するようにそのサンプルを変更して、名前空間とプロキシ アセンブリを一致させる必要があります。 
   
 WCF ベースのプロキシ アセンブリを使用する利点は、次のとおりです。
   
@@ -123,7 +123,7 @@ WCF ベースのプロキシ アセンブリを使用する利点は、次のと
     
 - ProjectServerServices.dll プロキシ アセンブリへの参照を設定するのと同じディレクトリに ProjectServerServices.xml ファイルを追加する場合は、PSI のクラスおよびメンバーの IntelliSense の説明を取得できます。 詳細についてを参照してください [ReadMe_IntelliSense] で、 `Documentation\IntelliSense` Project 2013 SDK ダウンロードのフォルダーです。 
     
-**図 2 になります。リソース サービスのメソッドの IntelliSense を使用します。**
+**図 2. Resource サービスのメソッドに対する IntelliSense の使用**
 
 ![ReadResource メソッドの Intellisense を使用します。](media/pj15_PrerequisitesWCF_Intellisense.gif "ReadResource メソッドの Intellisense を使用します。")
   
@@ -134,7 +134,7 @@ WCF ベースのプロキシ アセンブリを使用する利点は、次のと
 
 Project 2013 SDK ダウンロードには、プロキシ アセンブリの SvcUtil.exe コマンドによって生成されるソース ファイルが含まれています。 Source.zip ファイル内には、ソース ファイル、`Documentation\IntelliSense\WCF`のサブディレクトリです。 プロキシ アセンブリへの参照を設定する代わりに、Visual Studio のソリューションに 1 つまたは複数のソース ファイルを追加できます。 など、プロジェクトのサービスおよびリソースのサービスを使用するには、wcf を追加します。Project.cs と wcf。ソリューションのファイルを Resource.cs。 
   
-WCF では、各 PSI サービスのプライマリ クラスがインターフェイスで定義されているし、クライアント クラスのメンバーにアクセスするために実装されています。 たとえば、 **SvcProject.Resource**インターフェイスは、 **SvcProject.ResourceClient**クラスに実装されます。 **ResourceClient**をという名前のクラス変数として**ResourceClient**オブジェクトを定義するには、次のコードを使用します。 この例では、 **SetClientEndpoints**メソッドは、app.config ファイルで定義されている**basicHttp_Project**のエンドポイントを使用する**resourceClient**オブジェクトを作成します。 App.config ファイルの詳細については、[サービス構成ファイルを追加する](#pj15_PrerequisitesWCF_AddConfig)を参照してください。 
+WCF では、それぞれの PSI サービスの主要なクラスが、インターフェイスによって定義され、そのメンバーにアクセスするためのクライアント クラス内で実装されます。たとえば、**SvcProject.Resource** インターフェイスは **SvcProject.ResourceClient** クラス内で実装されています。**ResourceClient** オブジェクトを、たとえば **resourceClient** という名前のクラス変数として定義するには、以下のコードを使用します。この例では、**SetClientEndpoints** メソッドによって、**basicHttp_Project** エンドポイントを使用する **resourceClient** オブジェクトが作成されます。このエンドポイントは app.config ファイルで定義されています。app.config ファイルの詳細については、「[サービス構成ファイルを追加する](#pj15_PrerequisitesWCF_AddConfig)」セクションを参照してください。 
   
 ```cs
 private static SvcResource.ResourceClient resourceClient;
@@ -152,7 +152,7 @@ public void DisposeClients()
 ```
 
 > [!NOTE]
-> PSI プロキシ アセンブリを使用した場合、または**SvcResource**という名前のプロジェクトの [サービス参照のプロキシ ファイルを追加するかどうかは、 **resourceClient**オブジェクトを作成したりするに同じコードを使用します。 
+> PSI プロキシ アセンブリを使用する場合も、プロキシ ファイルを追加して **SvcResource** という名前の Project サービス参照を追加する場合も、**resourceClient** オブジェクトの作成と廃棄には同じコードが使用されます。 
   
 ### <a name="adding-a-service-reference"></a>サービス参照の追加
 <a name="pj15_PrerequisitesWCF_AddingServiceReference"> </a>
@@ -166,7 +166,7 @@ PSI サービスのプロキシ ファイルを追加または WCF ベースの�
   
 1. バックエンド WCF サービスへのアクセスを取得するには、Project Server コンピューターで Visual Studio を実行します。
     
-2. **ソリューション エクスプ ローラー**で、[**参照**] フォルダーを右クリックし、し、[**サービス参照の追加**」を選択します。 
+2. **ソリューション エクスプローラー**で、[**参照設定**] フォルダーを右クリックし、[**サービス参照の追加**] をクリックします。 
     
 3. [**サービス参照の追加**] ダイアログ ボックスの [**アドレス**] テキスト ボックスに、入力http://localhost:32843//psi/ _ServiceName_.svc の_GUID_、し、 **Enter**キーを押します。 _GUID_を 534c37eb00d74ccfadcecf9827e95239 など、Project Server サービス アプリケーションの仮想ディレクトリ名に置き換えます。 リソースなど、サービスの名前と_アドレス_を交換して (図 3 を参照してください)。 
     
@@ -174,7 +174,7 @@ PSI サービスのプロキシ ファイルを追加または WCF ベースの�
     
    - お使いのブラウザーでは、SharePoint 2013 のサーバーの管理アプリケーションを開きます。 **サービス アプリケーションの管理**を選択し、使用する Project Server の PSI サービス アプリケーションを選択します。 たとえば、 **ProjectServerService**を選択します。 Project Web App サイトの管理] ページの URL には、仮想ディレクトリ名が含まれています。 たとえば、 `http://ServerName:8080/_admin/pwa/managepwa.aspx?appid=534c37eb-00d7-4ccf-adce-cf9827e95239`、仮想ディレクトリ名は、 `534c37eb00d74ccfadcecf9827e95239` (ディレクトリ名にハイフンが含まれていません)。 
     
-   - Project Server コンピューター上の**インターネット インフォメーション サービス (IIS) マネージャー** ] ダイアログ ボックスを開きます。 **[接続**] ウィンドウで [ **SharePoint Web サービス**] ノードを展開し、PSI フォルダーを含むディレクトリが見つかるまで、サービスの仮想ディレクトリを展開します。 ディレクトリを選択し、[**操作**] ウィンドウで、 **[詳細設定**を選択して、**仮想パス**] フィールドにディレクトリ名をコピーします。 
+   - Project Server コンピューターで [**インターネット インフォメーション サービス (IIS) マネージャー**] ダイアログ ボックスを開きます。[**接続**] ウィンドウの [**SharePoint Web サービス**] ノードを展開し、PSI フォルダーを含むディレクトリが見つかるまで、その下位にあるサービス仮想ディレクトリを展開していきます。見つかったディレクトリを選択し、[**操作**] ウィンドウの [**詳細設定**] をクリックして、そのディレクトリ名を [**仮想パス**] フィールドにコピーします。 
     
       > [!NOTE]
       > プロジェクト サーバーのサービスの 1 つ以上の仮想ディレクトリがあります。 Project Web App インスタンスが含まれている仮想ディレクトリを選択することを確認します。 
@@ -209,7 +209,7 @@ PSI サービスのプロキシ ファイルを追加または WCF ベースの�
     
 4. サービス参照が解決した後は、 **Namespace** ] テキスト ボックスに参照名を入力します。 Project 2013 開発者向けドキュメントのコード例では、任意の名前空間の名前**サービスの_アドレス_** を使用します。 たとえば、リソース サービスのコード例では**SvcResource**という名前します。
     
-    **図 3 です。リソースの WCF ベースのサービス参照を追加します。**
+    **図 3. WCF ベースの Resource サービス参照の追加**
 
     ![リソースの WCF ベースのサービス参照を追加します。](media/pj15_PrerequisitesWCF_AddSvcReference.gif "リソースの WCF ベースのサービス参照を追加します。")
   
@@ -222,9 +222,9 @@ PSI サービスのプロキシ ファイルを追加または WCF ベースの�
   
 コード サンプルのローカル参照は、サンプルの上部の**using**ステートメントに表示されます。 
   
-1. **ソリューション エクスプ ローラー**で、[**参照**] フォルダーを右クリックし、**参照の追加**を選択し、
+1. **ソリューション エクスプローラー**で、[**参照設定**] フォルダーを右クリックし、[**参照の追加**] をクリックします。
     
-2. **[参照**] を選択し、以前にコピーしたプロジェクトのサーバー Dll を格納する場所を参照します。 、必要な Dll を選択し、[ **ok]** をクリックします。
+2. [**参照**] をクリックして、以前にコピーした Project Server の DLL を格納した場所を参照します。必要な DLL を選択し、[**OK**] をクリックします。
     
 > [!NOTE]
 > 開発用コンピューター上のアセンブリのバージョンがターゲット Project Server コンピューターのものと厳密に一致していることを確認します。 
@@ -232,7 +232,7 @@ PSI サービスのプロキシ ファイルを追加または WCF ベースの�
 ## <a name="adding-a-service-configuration-file"></a>サービス構成ファイルを追加する
 <a name="pj15_PrerequisitesWCF_AddConfig"> </a>
 
-アプリケーションは、WCF サービスをプログラムによって構成、サービス構成ファイルを使用しません。 それ以外の場合、Windows アプリケーションやコンソール アプリケーションを使用して、 **system.serviceModel**要素、app.config ファイルにweb アプリケーションには、web.config ファイルでの**system.serviceModel**をが含まれています。App.config ファイルを使用してまたはプログラムを使用して WCF サービスの構成に関する詳細についてを参照してください[チュートリアル: PSI の開発アプリケーションが WCF を使用して](http://msdn.microsoft.com/library/65707234-c3da-44e4-8364-32a6be28f645%28Office.15%29.aspx)。
+アプリケーションがプログラムによって WCF サービスを構成する場合、サービス構成ファイルは使用されません。それ以外の場合、Windows アプリケーションまたはコンソール アプリケーションでは app.config ファイルの **system.serviceModel** 要素を使用し、Web アプリケーションでは web.config ファイルの **system.serviceModel** をインクルードします。app.config ファイルの使用方法や、WCF サービスをプログラムで構成する方法については、「[[ウォークスルー] WCF を使用して PSI アプリケーションを開発する](http://msdn.microsoft.com/library/65707234-c3da-44e4-8364-32a6be28f645%28Office.15%29.aspx)」を参照してください。
   
 サービス プロキシのソース ファイルが生成されると、SvcUtil.exe コマンドは、output.config ファイルに app.config ファイルで既定の**system.serviceModel**要素の基になるか、web.config ファイルにも作成されます。 Project 2013 SDK ダウンロードには、サンプルの output.config ファイルが含まれています`Documentation\IntelliSense\WCF\Source.zip`。 などの output.config の既定のファイル SvcUtil.exe を作成するリソースのサービスには、 **BasicHttpBinding_Resource**および**BasicHttpBinding_Resource1**という名前の 2 つのバインディングが含まれています。 **クライアント**要素には、2 つの既定のエンドポイントが含まれています。 1 つのエンドポイントは、セキュリティで保護されたアドレスへのアクセス、HTTP ポート 32843 では次のようにポート 32843、通常のアクセスは、他の. 
   
@@ -302,7 +302,7 @@ PSI サービス構成では、既定のバインドやエンドポイントを�
             name="basicHttp_Resource" />
     ```
 
-5. 使用するには複数の 1 つの PSI サービスにはの各サービスおよび各サービスを使用する**バインディング**要素の 1 つの**エンドポイント**要素を作成します。 たとえば、次のエンドポイントは、プロジェクトのサービスおよび QueueSystem サービスの基本的な HTTP バインディングを使用するクライアントを構成します。 
+5. 複数の PSI サービスを使用するには、サービスごとに、またサービスが使用する **binding** ごとに、1 つの **endpoint** 要素を作成します。たとえば、以下のエンドポイントでは、Project サービスと QueueSystem サービスで基本的な HTTP バインドを使用するようにクライアントを構成しています。 
     
     > [!NOTE]
     > アプリケーションの実行時に、サーバーがビジー状態である、または HTTP 要求が許可されていないことを示すエラーが表示される場合は、app.config ファイルのエンドポイント アドレスが正しいことを確認してください。 
@@ -324,13 +324,13 @@ PSI サービス構成では、既定のバインドやエンドポイントを�
 
 App.config ファイルを編集するには、Visual Studio で**WCF サービス構成エディター**を使用する ([**ツール**] メニュー)。 図 4 は、 **Microsoft のサービス構成エディター** ] ダイアログ ボックスで、**契約**の要素を設定する方法を示します。 ソリューションでは、PSI プロキシ アセンブリを使用されている場合に ProjectServerServices.dll を開き、 `bin\debug` Visual Studio のソリューションのディレクトリです。 **コントラクト型ブラウザー** ] ダイアログ ボックスには、(図 5 を参照)、WCF サービス コントラクトのすべてが表示されます。 
   
-**図 4 です。WCF サービス構成エディターを使用してください。**
+**図 4. WCF サービス構成エディターの使用**
 
 ![WCF サービス構成エディターを使用してください。](media/pj15_PrerequisitesWCF_ServiceConfigurationEditor.gif "WCF サービス構成エディターを使用してください。")
   
 ソリューションは、wcfResource.cs など、サービスのプロキシ ファイルを使用している場合アプリケーションをコンパイルし、実行可能ファイルを開き、`bin\debug`ディレクトリです。 App.config ファイルを編集の詳細についてを参照してください[チュートリアル: PSI の開発アプリケーションが WCF を使用して](http://msdn.microsoft.com/library/65707234-c3da-44e4-8364-32a6be28f645%28Office.15%29.aspx)。
   
-**図 5。コントラクト型ブラウザーには、WCF サービス構成エディターを使用します。**
+**図 5. WCF サービス構成エディターでのコントラクト型ブラウザーの使用**
 
 ![コントラクト型ブラウザーを使用してください。](media/pj15_PrerequisitesWCF_ContractTypeBrowser.gif "コントラクト型ブラウザーを使用してください。")
   
@@ -341,11 +341,11 @@ Windows 認証またはフォーム認証では、オンプレミスの Project 
   
 `The server was unable to process the request due to an internal error. For more information about the error, either turn on Include ExceptionDetailInFaults (either from ServiceBehaviorAttribute or from the <serviceDebug> configuration behavior) on the server in order to send the exception information back to the client, or turn on tracing as per the Microsoft .NET Framework 3.0 SDK documentation and inspect the server trace logs.`
 
-WCF に対して、問題を解決するには、各 PSI サービス用に定義されている**OperationContextScope**内 PSI メソッドへのすべての呼び出しがあります。 複数サービスのスコープを入れ子にしないでたとえば、リソースとプロジェクトのサービスへの呼び出しを使用して、呼び出しの各セット必要がありますそのスコープ内で。 
+WCF のこの問題を修正するには、PSI メソッドのすべての呼び出しをそれぞれの PSI サービスに対して定義される **OperationContextScope** 内に置く必要があります。ただし、複数のサービスに対するスコープを入れ子にしないでください。たとえば、Resource サービスと Project サービスを使用する際には、それぞれの呼び出しセットを各自のスコープ内に置く必要があります。 
   
 次の例では、アプリケーション内のすべての**OperationContextScope**セクションから、 **DisableFormsAuth**メソッドを呼び出すことができます。 メソッドは、 _isWindowsAuth_パラメーターが**false**の場合、フォーム認証を行えるように、フォーム認証を無効に設定されているヘッダーの値を削除します。 _IsWindowsAuth_が**true**の場合、 **DisableFormsAuth**メソッドには、フォーム認証が無効になります。 
   
-メソッドでは、 **WcfSample** 、 **projectClient**オブジェクトは、PSI の**SvcProject.ProjectClient**クラスのインスタンスです。 
+**WcfSample** メソッド内の **projectClient** オブジェクトは、PSI の **SvcProject.ProjectClient** クラスのインスタンスです。 
   
 ```cs
 // Class variable that determines whether to disable Forms authentication.
@@ -376,7 +376,7 @@ private void WcfSample()
 ```
 
 > [!NOTE]
-> **OperationContextScope**内の PSI 呼び出しを実行することは、複数認証環境で実行されるアプリケーションでのみ必要があります。 Project Server は、Windows 認証のみを使用する場合は、スコープを設定し、フォーム認証を無効にする web 要求ヘッダーを追加する必要はありません。 
+> **OperationContextScope** 内での PSI 呼び出しが必要になるのは、複数認証の環境で動作するアプリケーションのみです。Project Server で Windows 認証のみを使用する場合、スコープの設定や、フォーム認証を無効にする Web 要求ヘッダーの追加は不要です。 
 > 
 > ASMX ベースのアプリケーション用の修正プログラムは、異なります。 詳細については、[プロジェクト内の ASMX ベースのコード サンプルの前提条件](prerequisites-for-asmx-based-code-samples-in-project.md)で*を使用する複数の認証*] セクションを参照してください。 
   
@@ -406,7 +406,7 @@ const string PROJECT_SERVER_URI = "http://ServerName/ProjectServerName/";
     
 - Project Web App の [サーバー設定] ページを使用して ( `http://ServerName/ProjectServerName/_layouts/15/pwa/admin/admin.aspx`) とすべてのキュー ジョブの管理、削除、またはチェックインのエンタープライズ オブジェクトを強制的にします。 [サーバーの設定] ページで、これらのリンクにアクセスする管理者の権限がある必要があります。
     
-- Project Server データベースのテーブルに対してクエリを実行するのにには、 **Microsoft SQL Server Management Studio の**を使用します。 たとえば、ワークフロー ステージでプロジェクト詳細ページ (Pdp) に関する情報を表示するのに MSP_WORKFLOW_STAGE_PDPS テーブルの上の 200 行を選択するのには次のクエリを使用します。 
+- **Microsoft SQL Server Management Studio** を使用して、Project Server データベースのテーブルにクエリを実行します。たとえば、以下のクエリを使用して、MSP_WORKFLOW_STAGE_PDPS テーブルの先頭 200 行を選択し、ワークフロー ステージのプロジェクト詳細ページ (PDP) に関する情報を表示します。 
     
 ```sql
         SELECT TOP 200 [STAGE_UID]
@@ -428,11 +428,11 @@ const string PROJECT_SERVER_URI = "http://ServerName/ProjectServerName/";
   
 - **エンタープライズ ユーザー設定フィールドと参照テーブル**
     
-- **キュー ジョブを管理します。**
+- **キュー ジョブの管理**
     
-- **エンタープライズ オブジェクトを削除します。**
+- **エンタープライズ オブジェクトの削除**
     
-- **チェックインのエンタープライズ オブジェクトを強制的に**
+- **エンタープライズ オブジェクトの強制チェックイン**
     
 - **エンタープライズ プロジェクトの種類**
     
@@ -444,9 +444,9 @@ const string PROJECT_SERVER_URI = "http://ServerName/ProjectServerName/";
     
 - **タイムシート期間**
     
-- **タイムシートの設定と既定の設定**
+- **タイムシートの設定および既定値**
     
-- **行の分類**
+- **管理用行の分類**
     
 特定の Project Web App サーバーの設定ページではなく、Project Web App インスタンスごとに、SharePoint Server 2013 では、追加の設定が管理されます。 SharePoint サーバーの全体管理アプリケーションで、**アプリケーションの全般的な設定**を選択し、**プロジェクトのサーバーの設定**、[**管理**] を選択を [サーバーの設定] ページで、ドロップダウン ボックスの一覧で、Project Web App インスタンスを選択. たとえば、選択した Project Web App インスタンスのイベント ハンドラーを追加、削除する**サーバー側のイベント ハンドラー**を選択します。 
   

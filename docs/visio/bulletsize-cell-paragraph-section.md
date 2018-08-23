@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804922"
 ---
-# <a name="bulletsize-cell-paragraph-section"></a>[BulletSize] セル ([Paragraph] セクション)
+# <a name="bulletsize-cell-paragraph-section"></a>[BulletSize] セル ([段落] セクション)
 
 箇条書きのサイズを指定します。 
   
@@ -26,13 +26,13 @@ ms.locfileid: "19804922"
   
 値がゼロ (0) の場合は、行頭文字は、段落の最初の文字と同じフォント サイズ。 値がパーセント値の場合は、行頭文字、段落の最初の文字のフォント サイズに対する割合でサイズが。 負の値は、パーセンテージとして扱われます。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[BulletSize] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [BulletSize] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | Para.BulletFontSize [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
    
-プログラムから、インデックスによって [BulletSize] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [BulletSize] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: bd6c0d8e-68cc-4d60-9029-13ed81c816cd
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: f8ac73b1977886208290285fec2d1bd0de1b4f92
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19803789"
 ---
 # <a name="rowentry"></a>ROWENTRY
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 行および[IExchangeModifyTable](iexchangemodifytableiunknown.md)インターフェイスを使用して、テーブルにその行に対して実行される操作が含まれています。 
   
@@ -34,7 +34,7 @@ typedef struct
 }  ROWENTRY, FAR * LPROWENTRY;
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 **ulRowFlags**
   
@@ -66,6 +66,6 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
    
 ## <a name="see-also"></a>関連項目
   
-- [IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)
+- [IExchangeModifyTable : IUnknown](iexchangemodifytableiunknown.md)
 - [MAPI の構造](mapi-structures.md)
 

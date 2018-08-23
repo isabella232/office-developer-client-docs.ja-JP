@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 48e478c4-6e9a-40ab-a7bb-e6219b743b08
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fd77473ce728a51220a4c039f1d12d03d90e7f36
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19804094"
 ---
 # <a name="tablenotification"></a>TABLE_NOTIFICATION
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 何らかの変更やエラーなどのイベントによって影響のあるテーブル内の行について説明します。 テーブル通知が生成されますが発生します。 
   
@@ -41,7 +41,7 @@ typedef struct _TABLE_NOTIFICATION
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 **ulTableEvent**
   
@@ -109,7 +109,7 @@ TABLE_SORT_DONE
   
 > [SRow](srow.md)の構造が影響を受ける行を記述します。 この構造体は、テーブルのすべての通知イベントに入力されます。 テーブル通知、イベントの行データを渡さない、**あう**、 **SRow**構造体のメンバーを 0 に設定し、 **lpProps**メンバーは NULL に設定します。 この**SRow**の構造が読み取り専用であるためクライアントは、変更を加える必要がある場合のコピーを行う必要があります。 コピーを作成するのには、 [ScDupPropset](scduppropset.md)関数を使用できます。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **テーブル\_通知**構造体は、[通知](notification.md)の構造体のメンバー**情報**に含まれる構造体の共用体のメンバーの 1 つです。 **情報**メンバーが含まれています、**テーブル\_通知**、 **ulEventType**構造体のメンバーが_fnevTableModified_に設定されている場合を構造化します。
   
@@ -119,9 +119,9 @@ TABLE_SORT_DONE
   
 |**トピック**|**説明**|
 |:-----|:-----|
-|[MAPI でのイベントの通知](event-notification-in-mapi.md) <br/> |通知と通知のイベントの概要です。  <br/> |
+|[MAPI のイベント通知](event-notification-in-mapi.md) <br/> |通知と通知のイベントの概要です。  <br/> |
 |[通知の処理](handling-notifications.md) <br/> |クライアントが通知を処理する方法について説明します。  <br/> |
-|[イベント通知をサポートしています。](supporting-event-notification.md) <br/> |サービス プロバイダーが、 **IMAPISupport**メソッドを使用して、通知を生成する方法について説明します。  <br/> |
+|[イベント通知のサポート](supporting-event-notification.md) <br/> |サービス プロバイダーが、 **IMAPISupport**メソッドを使用して、通知を生成する方法について説明します。  <br/> |
    
 テーブルの通知は非同期であるために、クライアントは別の方法で追加について学習した後、追加された行の通知を受信できます。 **IMAPITable::Sort**、 **IMAPITable::Restrict**、または**IMAPITable::SetColumns**メソッドでエラーが表示されるか、プロセスで、テーブルを更新しようとした、基になるときは、TABLE_ERROR イベントを受信することはまたは行を変更します。 
   

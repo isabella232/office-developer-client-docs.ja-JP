@@ -1,5 +1,5 @@
 ---
-title: イベント通知をサポートしています。
+title: イベント通知のサポート
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804020"
 ---
-# <a name="supporting-event-notification"></a>イベント通知をサポートしています。
+# <a name="supporting-event-notification"></a>イベント通知のサポート
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 イベント通知をサポートできますが、複雑なために、MAPI には、プロセスの最も困難な部分を実装する 3 つのサポート オブジェクトのメソッドが用意されています。 これらのメソッドは、ユニットとして動作し、3 つのすべてまたはどれも、プロバイダーを使用する必要があります。
   

@@ -1,5 +1,5 @@
 ---
-title: DisplayMode セル (アクション タグのセクション)
+title: '[DisplayMode] セル ([操作タグ] セクション)'
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805219"
 ---
-# <a name="displaymode-cell-action-tags-section"></a>DisplayMode セル (アクション タグのセクション)
+# <a name="displaymode-cell-action-tags-section"></a>[DisplayMode] セル ([操作タグ] セクション)
 
 アクションのタグには、ユーザーがタグの上、ポインターを移動すると、図形が選択されている場合、またはすべての時間が表示されるかどうかを決定します。
   
@@ -35,13 +35,13 @@ ms.locfileid: "19805219"
   
 ページに対してアクション タグが定義されていて、このセルの値が 1 の場合、ページは選択できないためタグは表示されません。 
   
-取得する DisplayMode] セルへの参照の名前を別の数式からまたはプログラムから**CellsU**プロパティを使用して、次のコマンドを使用します。 
+別の数式から、または **CellsU** プロパティを使用してプログラムから、名前によって [DisplayMode] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | スマート タグです。  *名*です。DisplayMode、スマート タグです。 *タグのアクション行の名前します。*  <br/> |
    
-プログラムから、インデックスによって [DisplayMode] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [DisplayMode] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

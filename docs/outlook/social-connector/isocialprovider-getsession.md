@@ -23,17 +23,17 @@ ms.locfileid: "19804368"
 HRESULT _stdcall GetSession([out, retval] ISocialSession** session);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
-_セッション_
+_session_
   
-> [out]**ISocialSession**インターフェイスです。 
+> [out] **ISocialSession** インターフェイス。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 Outlook ソーシャル コネクタ (OSC) では、ソーシャル ネットワークにログオンするのには、 **ISocialSession**インターフェイスを使用します。 
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialProvider: IUnknown](isocialprovideriunknown.md)
+- [ISocialProvider : IUnknown](isocialprovideriunknown.md)
 

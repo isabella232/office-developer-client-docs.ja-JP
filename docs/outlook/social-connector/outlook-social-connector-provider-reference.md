@@ -1,5 +1,5 @@
 ---
-title: Outlook ソーシャル コネクタ プロバイダーの参照
+title: Outlook Social Connector プロバイダーのリファレンス
 manager: soliver
 ms.date: 04/04/2016
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804454"
 ---
-# <a name="outlook-social-connector-provider-reference"></a>Outlook ソーシャル コネクタ プロバイダーの参照
+# <a name="outlook-social-connector-provider-reference"></a>Outlook Social Connector プロバイダーのリファレンス
 
 Outlook の社会的コネクタ 2013 では、個人と専門的な通信の通信ハブを提供します。 SharePoint Server、SharePoint ワークスペースでは、Lync クライアントで動作する Outlook ソーシャル コネクタ (OSC) とプレゼンス情報および連絡先カードをサポートするすべての Office クライアント アプリケーションは、OSC をサポートします。 
 
@@ -48,8 +48,8 @@ Outlook ソリューションの開発に慣れていない場合は、Api と�
 ## <a name="see-also"></a>関連項目
 
 - [Outlook ソーシャル コネクタ 2013 プロバイダー リファレンスの著作権情報](outlook-social-connector-2013-provider-reference-copyright-notice.md) 
-- [�h�L�������g�̂��߂̕\�L�K��](http://msdn.microsoft.com/en-us/office/aa905365.aspx)   
+- [ドキュメントの表記規則](http://msdn.microsoft.com/en-us/office/aa905365.aspx)   
 - [マイクロソフト製品のアクセシビリティ機能](http://www.microsoft.com/enable/products/default.aspx)  
-- [Microsoft �v���C�o�V�[�Ɋւ��鐺��](https://privacy.microsoft.com/en-us/privacystatement)
+- [Microsoft プライバシーに関する声明](https://privacy.microsoft.com/en-us/privacystatement)
     
 

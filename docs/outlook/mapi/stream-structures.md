@@ -17,7 +17,7 @@ ms.locfileid: "19804021"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Outlook アイテムのユーザー定義のフィールドの定義は、 [PidLidPropertyDefinitionStream](pidlidpropertydefinitionstream-canonical-property.md)プロパティに格納されます。 このプロパティの値は、ユーザー定義フィールドと組み込みの Outlook アイテムのフィールドのデータ バインディングの設定の定義を格納するバイナリ ストリームです。 このセクションでは、ストリームの構造体を次に分割されて、バイナリ ストリームの構造に関する情報を提供します。 
   
@@ -40,9 +40,9 @@ Outlook アイテムのユーザー定義のフィールドの定義は、 [PidL
 
 
 
-[Outlook アイテムおよびフィールド](outlook-items-and-fields.md)
+[Outlook のアイテムとフィールド](outlook-items-and-fields.md)
   
-[新しいユーザー定義フィールドの定義を追加します。](how-to-add-a-definition-for-a-new-user-defined-field.md)
+[新しいユーザー定義フィールドの定義を追加する](how-to-add-a-definition-for-a-new-user-defined-field.md)
   
 [PropertyDefinition ストリームのサンプル](propertydefinition-stream-sample.md)
 

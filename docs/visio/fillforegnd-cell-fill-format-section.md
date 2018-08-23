@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805392"
 ---
-# <a name="fillforegnd-cell-fill-format-section"></a>[FillForegnd] セル ([Fill Format] セクション)
+# <a name="fillforegnd-cell-fill-format-section"></a>[FillForegnd] セル ([塗りつぶしの書式設定] セクション)
 
 図形の塗りつぶしのパターンで前景 (ストローク部分) に使用する色を指定します。
   
@@ -28,13 +28,13 @@ ms.locfileid: "19805392"
   
 前景の塗りつぶしの色に関する透過性を設定するには、[FillForegndTrans] セルを使用します。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[FillForegnd] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [FillForegnd] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |FillForegnd  <br/> |
    
-プログラムから、インデックスによって [FillForegnd] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [FillForegnd] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

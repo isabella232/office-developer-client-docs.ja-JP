@@ -21,7 +21,7 @@ ms.locfileid: "19804977"
 |:-----|:-----|
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
-|**拡張機能の基本** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |なし  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -62,7 +62,7 @@ ms.locfileid: "19804977"
 |:-----|:-----|:-----|:-----|:-----|
 |ExternalTaskProject 要素  <br/> |xsd:string  <br/> |省略可能  <br/> ||Xsd:string の値を入力します。  <br/> |
 |IX  <br/> |xsd:unsignedByte  <br/> |省略可能  <br/> ||Xsd:unsignedByte の値を入力します。  <br/> |
-|MultipleCriticalPaths 要素  <br/> |xsd:string  <br/> |必須  <br/> ||Xsd:string の値を入力します。  <br/> |
+|N  <br/> |xsd:string  <br/> |必須  <br/> ||Xsd:string の値を入力します。  <br/> |
 |S  <br/> |xsd:unsignedByte  <br/> |省略可能  <br/> ||Xsd:unsignedByte の値を入力します。  <br/> |
 |SV 要素  <br/> |xsd:token  <br/> |必須  <br/> ||Xsd:token の値を入力します。  <br/> |
    

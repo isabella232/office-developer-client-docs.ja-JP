@@ -23,7 +23,7 @@ ms.locfileid: "19804379"
 HRESULT _stdcall LogonCached([in] BSTR connectIn, [in] BSTR userName, [in] BSTR password,  [out] BSTR connectOut);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _connectIn_
   
@@ -41,7 +41,7 @@ _connectOut_
   
 > [out]資格情報が含まれている不透明な文字列です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **機能** [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)から返された XML の**場合は true**として**useLogonCached**が設定されている場合にのみ、認証にこのメソッドが呼び出されます。
   
@@ -51,5 +51,5 @@ _ConnectOut_パラメーターでは、OSC に不透明な文字列し、は、�
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialSession2: IUnknown](isocialsession2iunknown.md)
+- [ISocialSession2 : IUnknown](isocialsession2iunknown.md)
 

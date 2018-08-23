@@ -1,5 +1,5 @@
 ---
-title: 列と制約を設定した後のテーブルの並べ替え
+title: 列および制限の設定後のテーブルの並べ替え
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803988"
 ---
-# <a name="sorting-tables-after-setting-columns-and-restrictions"></a>列と制約を設定した後のテーブルの並べ替え
+# <a name="sorting-tables-after-setting-columns-and-restrictions"></a>列および制限の設定後のテーブルの並べ替え
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 並べ替えられたテーブルのビューを制限するには、常に確認する必要があります次**IMAPITable**は次の順序で呼び出されます。 
   

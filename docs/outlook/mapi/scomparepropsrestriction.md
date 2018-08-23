@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3231a91a-1ef2-4dd8-9f3e-79ca56d2eae9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6ebc4e9cbc79a71a91f1f2f3eec0d40de979ab18
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19803832"
 ---
 # <a name="scomparepropsrestriction"></a>SComparePropsRestriction
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 リレーショナル演算子を使用して 2 つのプロパティをテストする比較プロパティの制限について説明します。 
   
@@ -39,7 +39,7 @@ typedef struct _SComparePropsRestriction
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 **relop**
   
@@ -67,7 +67,7 @@ typedef struct _SComparePropsRestriction
   
 > 比較する 2 番目のプロパティのプロパティ タグです。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 比較の順序は、 _(1) (関係演算子) のプロパティ タグ (プロパティ タグ 2)_。 比較するプロパティは、同じ型でなければなりません。 構造体はパラメーターとして渡す[IMAPITable](imapitableiunknown.md)メソッドからエラー値 MAPI_E_TOO_COMPLEX を取得するには、MAPI またはサービス プロバイダーは、さまざまな種類のプロパティを比較しようとしています。 
   

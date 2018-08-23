@@ -22,7 +22,7 @@ ms.locfileid: "19805326"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[EventItem_Type](eventitem_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[EventItem_Type](eventitem_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
@@ -53,7 +53,7 @@ ms.locfileid: "19805326"
 |**属性**|**型**|**必須**|**説明**|**使用可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
 |アクション  <br/> |xsd:unsignedShort  <br/> |必須  <br/> |**EventItem**の親要素のアクション コードを指定します。  <br/> |Xsd:unsignedShort の値を入力します。  <br/> |
-|Enabled  <br/> |xsd:boolean  <br/> |省略可能  <br/> |イベントが有効か無効になっているかどうかを示すフラグを表します。  <br/> |Xsd:boolean の値を入力します。  <br/> |
+|有効  <br/> |xsd:boolean  <br/> |省略可能  <br/> |イベントが有効か無効になっているかどうかを示すフラグを表します。  <br/> |Xsd:boolean の値を入力します。  <br/> |
 |EventCode  <br/> |xsd:unsignedShort  <br/> |必須  <br/> |アドオンをトリガーするイベントを示すコードです。  <br/> |Xsd:unsignedShort の値を入力します。  <br/> |
 |ID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |イベントの ID。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
 |ターゲット  <br/> |xsd:string  <br/> |必須  <br/> |イベントのターゲットを指定します。  <br/> |Xsd:string の値を入力します。  <br/> |

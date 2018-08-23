@@ -1,5 +1,5 @@
 ---
-title: 活動の XML
+title: アクティビティ用 XML
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804475"
 ---
-# <a name="xml-for-activities"></a>活動の XML
+# <a name="xml-for-activities"></a>アクティビティ用 XML
 
 このトピックには、Outlook ソーシャル コネクタ (OSC) プロバイダーに、OSC プロバイダーを実装し、OSC では、アクティビティの情報を取得する機能拡張 API の呼び出しを表示するシナリオ例にはが含まれています。 情報は、OSC プロバイダーの XML スキーマに準拠する XML 文字列で表されます。
   

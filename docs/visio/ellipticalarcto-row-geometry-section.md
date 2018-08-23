@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805302"
 ---
-# <a name="ellipticalarcto-row-geometry-section"></a>[EllipticalArcTo] 行 ([Geometry] セクション)
+# <a name="ellipticalarcto-row-geometry-section"></a>[EllipticalArcTo] 行 ([図形座標] セクション)
 
 *X*および*y* 、 *x*の楕円の円弧の終点の座標が含まれていますと*y*の、円弧のコントロール ポイントの座標が*x*の角度の軸には、楕円の長軸、および楕円のメジャーと mino の比率。r 軸です。 
   

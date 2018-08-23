@@ -1,5 +1,5 @@
 ---
-title: テーブルの行からデータを取得します。
+title: テーブルの行からデータを所得する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 19a42794-a3a2-4336-af2a-473f24431252
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 91b1fa06fd47321e9c19d9751caac793e27e8f16
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803771"
 ---
-# <a name="retrieving-data-from-table-rows"></a>テーブルの行からデータを取得します。
+# <a name="retrieving-data-from-table-rows"></a>テーブルの行からデータを所得する
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルから行を取得する必要があります。
   

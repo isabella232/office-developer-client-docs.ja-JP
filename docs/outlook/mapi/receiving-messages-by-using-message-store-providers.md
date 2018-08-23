@@ -1,5 +1,5 @@
 ---
-title: メッセージ ストア プロバイダーを使用してメッセージを受信
+title: メッセージ ストア プロバイダーを使用したメッセージ受信
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803723"
 ---
-# <a name="receiving-messages-by-using-message-store-providers"></a>メッセージ ストア プロバイダーを使用してメッセージを受信
+# <a name="receiving-messages-by-using-message-store-providers"></a>メッセージ ストア プロバイダーを使用したメッセージ受信
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ストア プロバイダーは、受信メッセージの送信をサポートする必要はありません (メッセージを使用するには、トランスポート プロバイダーおよび MAPI スプーラーは、メッセージの配信場所としてプロバイダーを格納するは、機能をサポートする)。 ただし、メッセージ ストア プロバイダーが受信したメッセージの送信をサポートしていない場合、既定のメッセージ ストアとして使用できません。
   

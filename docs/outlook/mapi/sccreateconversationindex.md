@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3ccfc15d-f3c6-4c7b-b1cc-855af66036de
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 43765cddb2f06bfbe58e0a4000c7eadfdc5f3347
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803831"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージのスレッドでメッセージが属していることを示します。 
   
@@ -42,7 +42,7 @@ SCODE ScCreateConversationIndex(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbParent_
   

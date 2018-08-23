@@ -27,11 +27,11 @@ ms.locfileid: "19804357"
 
 プロバイダーのバージョン番号を含む文字列です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 バージョン文字列は、 _MajorVersion_を使用してください。 _マイナー バージョン_の形式 (たとえば、1.4730) です。 
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialProvider: IUnknown](isocialprovideriunknown.md)
+- [ISocialProvider : IUnknown](isocialprovideriunknown.md)
 

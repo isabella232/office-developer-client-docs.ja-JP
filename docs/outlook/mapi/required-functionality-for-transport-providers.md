@@ -1,5 +1,5 @@
 ---
-title: トランスポート プロバイダーに必要な機能
+title: トランスポート プロバイダーの必須機能
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803773"
 ---
-# <a name="required-functionality-for-transport-providers"></a>トランスポート プロバイダーに必要な機能
+# <a name="required-functionality-for-transport-providers"></a>トランスポート プロバイダーの必須機能
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 すべての MAPI トランスポート プロバイダーが必要です。
   

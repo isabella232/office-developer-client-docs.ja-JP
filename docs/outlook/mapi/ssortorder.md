@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: fe181b9a-5903-4cc0-bcd5-2061b440b5b1
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7cb511c7a021c4e65214acc7efa785be0e02ffc8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19803999"
 ---
 # <a name="ssortorder"></a>SSortOrder
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 並べ替えキー、および並べ替えの方向として使用するには、どのような列、テーブルの行をソートする方法を定義します。 
   
@@ -38,7 +38,7 @@ typedef struct _SSortOrder
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 **ulPropTag**
   
@@ -60,7 +60,7 @@ typedef struct _SSortOrder
       
   - TABLE_SORT_CATEG_MIN: 前の**SSortOrderSet**構造体の並べ替え順序で指定されたカテゴリ内のデータ行の**ulPropTag**メンバーの最小値のテーブルを並べ替える必要があります。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SSortOrder**構造体を使用して、標準的な並べ替え操作またはカテゴリ別に並べ替え操作を実行する方法について説明します。 **SSortOrder**構造体を複数の並べ替えキーと方向を記述する**SSortOrderSet**構造に組み合わせます。 **SSortOrderSet**構造体は、次の関数やインターフェイス メソッドで使用されます。 
   

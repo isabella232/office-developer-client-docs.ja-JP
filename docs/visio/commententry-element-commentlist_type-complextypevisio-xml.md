@@ -22,7 +22,7 @@ ms.locfileid: "19805043"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[CommentEntry_Type](commententry_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[CommentEntry_Type](commententry_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |comments.xml  <br/> |
@@ -54,7 +54,7 @@ ms.locfileid: "19805043"
 |:-----|:-----|:-----|:-----|:-----|
 |著者 Id  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |作成者を識別する 1 から始まる値です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
 |CommentID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |図面ページにコメントを識別する一意の値です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|Date  <br/> |xsd:dateTime  <br/> |必須  <br/> |コメントが作成された日時を指定します。  <br/> |Xsd:dateTime の値を入力します。  <br/> |
+|日付  <br/> |xsd:dateTime  <br/> |必須  <br/> |コメントが作成された日時を指定します。  <br/> |Xsd:dateTime の値を入力します。  <br/> |
 |終了  <br/> |xsd:boolean  <br/> |省略可能  <br/> |コメントの現在の状態を指定します。  <br/> |Xsd:boolean の値を入力します。  <br/> |
 |EditDate  <br/> |xsd:dateTime  <br/> |省略可能  <br/> |コメントが最後に変更された日時を指定します。  <br/> |Xsd:dateTime の値を入力します。  <br/> |
 |PageID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |コメントするには図面のページを識別する値です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 95db96ef-f95f-41da-b216-f717c23bffd2
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5b34e2c21ac967b0874872986c0cf484750f4e72
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804168"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **** OLE メソッドを呼び出す別の方法を提供します。 
   
@@ -39,7 +39,7 @@ ULONG UlRelease(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _パンク_
   
@@ -55,7 +55,7 @@ MAPI_E_CALL_FAILED
   
 > 予期しない、または不明な発生元のエラーでは、操作を完了できませんでした。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 参照カウントは、既存のポインターを解放するオブジェクトの数です。 
   

@@ -18,32 +18,32 @@ ms.locfileid: "19805049"
 
 このナビゲーション ページには、Visio でのプログラミングの概要に関するトピックへのリンクが表示されています。次のリンクをクリックするか、または、目次を使用して次のトピックを表示してください。
   
-- [追加、変更、または、[シェイプ シートの行を削除](add-change-or-delete-rows-in-the-shapesheet.md)
+- [シェイプシートの行の追加、変更、削除を行う](add-change-or-delete-rows-in-the-shapesheet.md)
     
 - [セクションの追加、表示、非表示、または削除](add-show-hide-or-delete-a-section.md)
     
-- [名前を変更し、図形の ID を表示します。](change-the-name-and-view-the-id-of-a-shape.md)
+- [図形の名前を変更したり ID を表示したりする](change-the-name-and-view-the-id-of-a-shape.md)
     
-- [コピーし、1 つのセルから数式を貼り付ける](copy-and-paste-a-formula-from-one-cell-into-another.md)
+- [セル間での数式のコピーおよび貼り付け](copy-and-paste-a-formula-from-one-cell-into-another.md)
     
-- [セルの数式または値を表示します。](display-formulas-or-values-in-cells.md)
+- [セルの数式または値を表示する](display-formulas-or-values-in-cells.md)
     
-- [数式の一部を編集します。](edit-a-part-of-a-formula.md)
+- [数式の一部を編集する](edit-a-part-of-a-formula.md)
     
-- [空の数式を入力してください。](enter-an-empty-formula.md)
+- [空の数式を入力する](enter-an-empty-formula.md)
     
-- [シェイプ シート ウィンドウを移動します。](move-around-a-shapesheet-window.md)
+- [シェイプシート ウィンドウでの移動する](move-around-a-shapesheet-window.md)
     
 - [各シェイプシートを同じウィンドウ内で開く](open-each-shapesheet-in-the-same-window.md)
     
-- [図形、ページ、またはドキュメントのシェイプ シートを開く](open-the-shapesheet-for-a-shape-page-or-document.md)
+- [図形、ページ、ドキュメントのためのシェイプシートを開く](open-the-shapesheet-for-a-shape-page-or-document.md)
     
-- [数式内のセルを参照します。](reference-a-cell-in-a-formula.md)
+- [数式内でセルを参照する](reference-a-cell-in-a-formula.md)
     
-- [開発モード ([開発] タブを表示する) で実行します。](run-in-developer-mode-display-the-developer-tab.md)
+- [開発者モードで実行する (開発者タブを表示する)](run-in-developer-mode-display-the-developer-tab.md)
     
-- [シェイプ シート ウィンドウでオブジェクトを表示します。](show-an-object-in-the-shapesheet-window.md)
+- [シェイプシート ウィンドウにオブジェクトを表示する](show-an-object-in-the-shapesheet-window.md)
     
-- [セルに新しい数式を入力します。](type-a-new-formula-for-a-cell.md)
+- [セルに新しい数式を入力する](type-a-new-formula-for-a-cell.md)
     
 

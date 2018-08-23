@@ -22,7 +22,7 @@ ms.locfileid: "19804961"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml をマスター、# .xml のページ  <br/> |
@@ -42,7 +42,7 @@ ms.locfileid: "19804961"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[行要素 (ハイパーリンクを参照)](row-element-hyperlink-sectionvisio-xml.md) <br/> |[HyperlinkRow_Type](hyperlinkrow_type-complextypevisio-xml.md) <br/> |図形に関連付けられている 1 つのハイパーリンクの情報が含まれています。 図形には、ハイパーリンクごとに 1 つの**ハイパーリンク**の行が含まれています。  <br/> |
+|[Row 要素 ([ハイパーリンク] セクション)](row-element-hyperlink-sectionvisio-xml.md) <br/> |[HyperlinkRow_Type](hyperlinkrow_type-complextypevisio-xml.md) <br/> |図形に関連付けられている 1 つのハイパーリンクの情報が含まれています。 図形には、ハイパーリンクごとに 1 つの**ハイパーリンク**の行が含まれています。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -54,20 +54,20 @@ ms.locfileid: "19804961"
 
 |**属性**|**型**|**必須**|**説明**|**使用可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|DurationFormat 要素  <br/> |xsd:string  <br/> |省略可能  <br/> |数式がエラーが発生することを示します。 **E**の値は、現在の値 (エラー メッセージの文字列) です。**V**属性の値は、最後の有効な値です。  <br/> |エラー メッセージの文字列です。  <br/> |
+|E  <br/> |xsd:string  <br/> |省略可能  <br/> |数式がエラーが発生することを示します。 **E**の値は、現在の値 (エラー メッセージの文字列) です。**V**属性の値は、最後の有効な値です。  <br/> |エラー メッセージの文字列です。  <br/> |
 |ExternalTaskProject 要素  <br/> |xsd:string  <br/> |省略可能  <br/> | 要素の式を表します。 この属性は、次の文字列のいずれかを含めることができます。  <br/>  '(いくつかの数式)' の数式がローカルに存在する場合  <br/>  `No Formula`数式がローカルで削除されるか、ブロックされている場合  <br/>  `Inh`場合は、数式が継承されます。  <br/> |数式です。  <br/> |
-|MultipleCriticalPaths 要素  <br/> |xsd:string  <br/> |必須  <br/> |シェイプ シート セルの名前を表します。  <br/> |シェイプ シート セルの名前です。  <br/> 以下の「解説」セクションを参照してください。  <br/> |
+|N  <br/> |xsd:string  <br/> |必須  <br/> |シェイプ シート セルの名前を表します。  <br/> |シェイプ シート セルの名前です。  <br/> 以下の「解説」セクションを参照してください。  <br/> |
 |U  <br/> |xsd:string  <br/> |省略可能  <br/> |既定の測定単位を表しますが、DL です。  <br/> |セルの単位です。  <br/> |
 |V  <br/> |xsd:string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプ シート セルの値です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この**セル**要素の**N**属性は、限られた一連のシェイプ シートのセルに対応する値のいずれかである必要があります。 この**セル**要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   
-|**値**|**説明**|**詳細については**|
+|**値**|**説明**|**詳細情報**|
 |:-----|:-----|:-----|
 |Address  <br/> |移動先の URL アドレス、ファイル名、または UNC パスを指定します。  <br/> |[[Address] セル ([Hyperlinks] セクション)](address-cell-hyperlinks-section.md) <br/> |
-|Default  <br/> |図形またはページの既定のハイパーリンクを指定します。  <br/> |[[Default] セル ([Hyperlinks] セクション)](default-cell-hyperlinks-section.md) <br/> |
+|既定値  <br/> |図形またはページの既定のハイパーリンクを指定します。  <br/> |[[Default] セル ([Hyperlinks] セクション)](default-cell-hyperlinks-section.md) <br/> |
 |説明  <br/> |ハイパーリンクの説明文を表示します。  <br/> |[[Description] セル ([Hyperlinks] セクション)](description-cell-hyperlinks-section.md) <br/> |
 |ExtraInfo  <br/> |イメージ マップの座標など、URL の解決に使用される情報を渡す文字列を表します。  <br/> |[[ExtraInfo] セル ([Hyperlinks] セクション)](extrainfo-cell-hyperlinks-section.md) <br/> |
 |Frame  <br/> |コンテナー アプリケーション内で、Visio アプリケーションが ActiveX の文書として開く場合、ターゲットとなるフレームの名前を表します。既定では、空の文字列です。  <br/> |[[Frame] セル ([Hyperlinks] セクション)](frame-cell-hyperlinks-section.md) <br/> |

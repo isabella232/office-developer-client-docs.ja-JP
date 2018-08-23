@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 491170af-db35-4d7e-a912-44ffe8c7506b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 814cfeab61854469f460cc38f927b0e3723f6f0d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19803926"
 ---
 # <a name="sizedentryid"></a>SizedENTRYID
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 指定したサイズの**ab**のメンバーを含む名前付き[エントリ ID](entryid.md)構造体を作成します。 
   
@@ -34,7 +34,7 @@ ms.locfileid: "19803926"
 SizedENTRYID (_cb, _name)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 __cb_
   
@@ -44,7 +44,7 @@ __名_
   
 > 新しい構造体の名前です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SizedENTRYID**マクロを使用して、配列の長さの要件を認識した後に、エントリの識別子を定義できます。 明示的な境界を持つエントリ識別子を作成するのにには、このマクロを使用します。 
   

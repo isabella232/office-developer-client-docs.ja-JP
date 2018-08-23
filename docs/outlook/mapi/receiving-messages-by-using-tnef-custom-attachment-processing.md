@@ -1,5 +1,5 @@
 ---
-title: TNEF の添付ファイルのカスタム処理を使用してメッセージを受信
+title: TNEF ユーザー設定添付ファイル処理を使用したメッセージの受信
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803744"
 ---
-# <a name="receiving-messages-by-using-tnef-custom-attachment-processing"></a>TNEF の添付ファイルのカスタム処理を使用してメッセージを受信
+# <a name="receiving-messages-by-using-tnef-custom-attachment-processing"></a>TNEF ユーザー設定添付ファイル処理を使用したメッセージの受信
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 TNEF メッセージを受信するには、添付ファイルの処理をカスタマイズします。
   

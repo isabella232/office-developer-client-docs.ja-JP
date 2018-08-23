@@ -15,7 +15,7 @@ ms.locfileid: "19803899"
 ---
 # <a name="setting-up-an-offline-state-add-in"></a>オフライン状態のアドインを設定します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オフライン状態のアドインを実装するには、接続、初期化、およびその他のセットアップ機能を実装しなければなりません。 このトピック、これらの接続、初期化、およびセットアップの機能は、オフライン状態のサンプル アドイン内のコード例を使用して説明します。 オフライン状態のサンプル アドインは、COM アドインを Outlook に、**オフライン状態**のメニューを追加し、オフライン状態 API を使用してします。 **オフライン状態**] メニューの [使用を有効にするまたは状態の監視を無効にする、現在の状態を確認して現在の状態を変更できます。 ダウンロードしてオフライン状態のサンプル アドインをインストールする方法の詳細については[、オフライン状態のサンプル アドインをインストールする](installing-the-sample-offline-state-add-in.md)」を参照してください。 オフライン状態 API の詳細については、[の「オフライン状態 API](about-the-offline-state-api.md)を参照してください。
   
@@ -289,9 +289,9 @@ HRESULT CMyAddin::HrAddMenuItems()
 
 ## <a name="see-also"></a>関連項目
 
-- [オフラインの状態の API について](about-the-offline-state-api.md) 
-- [サンプル オフライン状態のアドインをインストールします。](installing-the-sample-offline-state-add-in.md)
-- [アドインの状態をオフラインのサンプルについて](about-the-sample-offline-state-add-in.md)
-- [接続状態の監視は、アドインを使用して、オフライン状態を変更します。](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
-- [オフライン状態の追加の接続を切断します。](disconnecting-an-offline-state-add-in.md)
+- [オフライン状態 API について](about-the-offline-state-api.md) 
+- [サンプルのオフライン状態アドインのインストール](installing-the-sample-offline-state-add-in.md)
+- [サンプルのオフライン状態アドインについて](about-the-sample-offline-state-add-in.md)
+- [オフライン状態アドインを使用した接続状態変更のモニター](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
+- [オフライン状態アドインの切断](disconnecting-an-offline-state-add-in.md)
 

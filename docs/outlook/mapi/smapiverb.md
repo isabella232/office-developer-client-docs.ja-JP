@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 45066528-2447-4178-aaa3-7513ed0b3ba4
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 4d060d62deb685b4691846c2b8e48a82ae3195ea
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803976"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI 動詞をについて説明します。
   
@@ -43,7 +43,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **lVerb**
   
@@ -69,7 +69,7 @@ MAPI_UNICODE
   
 > 表示名は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の表示名です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SMAPIVerb**構造体は、次のメソッドのパラメーターとして渡されます。 
   

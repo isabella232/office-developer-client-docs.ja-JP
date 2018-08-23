@@ -1,5 +1,5 @@
 ---
-title: 検証して、メッセージ ストアを初期化しています。
+title: メッセージ ストアの検証と初期化
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804224"
 ---
-# <a name="validating-and-initializing-a-message-store"></a>検証して、メッセージ ストアを初期化しています。
+# <a name="validating-and-initializing-a-message-store"></a>メッセージ ストアの検証と初期化
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MDB_NO_MAIL フラグを設定せずには、 [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md)メソッドで、メッセージ ストアを開く、MAPI はいくつかのフォルダーを作成し、それらに既定の名前とロールを割り当てます。 MAPI は、クライアントまたはメッセージ ストア プロバイダーの作成を担当する場合としない発生する必然的に非互換性を避けるためにこれらのフォルダーを作成する必要があります。 
   

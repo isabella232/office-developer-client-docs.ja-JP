@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805001"
 ---
-# <a name="centerx-cell-print-properties-section"></a>[CenterX] セル ([Print Properties] セクション)
+# <a name="centerx-cell-print-properties-section"></a>[CenterX] セル ([印刷のプロパティ] セクション)
 
 図面ページをプリンター ページの左右の中央に揃えるかどうかを指定します。 
   
@@ -29,13 +29,13 @@ ms.locfileid: "19805001"
 
 既定では、図面ページはプリンター ページの上と左に揃えられます。[CenterX] セルと [CenterY] セルを TRUE に設定すると、図面ページはプリンター ページの中央 (並べて表示する必要がある場合は複数ページの中央) に揃えられます。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [centerx] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [CenterX] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | [Centerx]  <br/> |
    
-プログラムから、インデックスによって [centerx] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [CenterX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

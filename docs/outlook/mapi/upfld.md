@@ -17,7 +17,7 @@ ms.locfileid: "19804176"
 ---
 # <a name="upfld"></a>UPFLD
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [フォルダーの状態をアップロード](upload-folder-state.md)する際にフォルダーをアップロードする方法の詳細については。
   
@@ -33,7 +33,7 @@ struct UPFLD
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 _ulFlags_
   
@@ -70,6 +70,6 @@ _feid_
 ## <a name="see-also"></a>関連項目
 
 - [レプリケーション API について](about-the-replication-api.md) 
-- [レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
 - [MAPI �萔](mapi-constants.md)
 

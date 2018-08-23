@@ -1,5 +1,5 @@
 ---
-title: メッセージ ストア プロバイダーの検索をサポートしています。
+title: メッセージ ストア プロバイダーでの検索のサポート
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804056"
 ---
-# <a name="supporting-searches-in-message-store-providers"></a>メッセージ ストア プロバイダーの検索をサポートしています。
+# <a name="supporting-searches-in-message-store-providers"></a>メッセージ ストア プロバイダーでの検索のサポート
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアント アプリケーションでは、メッセージ ・ ストア内のメッセージを検索するのには熱心なユーザー インターフェイス コンポーネントがいくつかが頻繁にあります。 検索条件が指定の[IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md) 、 [IMAPIContainer::SetSearchCriteria](imapicontainer-setsearchcriteria.md)および[IMAPIContainer::GetSearchCriteria](imapicontainer-getsearchcriteria.md)メソッドを使用してインターフェイスです。 
   

@@ -22,7 +22,7 @@ ms.locfileid: "19804975"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml、masters.xml、マスターの # .xml、pages.xml ページ # .xml  <br/> |
@@ -42,7 +42,7 @@ ms.locfileid: "19804975"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[行要素 (ユーザー定義セル-部分)](row-element-user-defined-cells-sectionvisio-xml.md) <br/> |[UserRow_Type](userrow_type-complextypevisio-xml.md) <br/> |1 つのプロパティ、ユーザー指定の情報の他のセルやアドオン ツールによって参照できます。  <br/> |
+|[Row 要素 ([ユーザー定義セル] セクション)](row-element-user-defined-cells-sectionvisio-xml.md) <br/> |[UserRow_Type](userrow_type-complextypevisio-xml.md) <br/> |1 つのプロパティ、ユーザー指定の情報の他のセルやアドオン ツールによって参照できます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -54,19 +54,19 @@ ms.locfileid: "19804975"
 
 |**属性**|**型**|**必須**|**説明**|**使用可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|DurationFormat 要素  <br/> |xsd:string  <br/> |省略可能  <br/> |数式がエラーが発生することを示します。 **E**の値は、現在の値 (エラー メッセージの文字列) です。**V**属性の値は、最後の有効な値です。  <br/> |エラー メッセージの文字列です。  <br/> |
+|E  <br/> |xsd:string  <br/> |省略可能  <br/> |数式がエラーが発生することを示します。 **E**の値は、現在の値 (エラー メッセージの文字列) です。**V**属性の値は、最後の有効な値です。  <br/> |エラー メッセージの文字列です。  <br/> |
 |ExternalTaskProject 要素  <br/> |xsd:string  <br/> |省略可能  <br/> | 要素の式を表します。 この属性は、次の文字列のいずれかを含めることができます。  <br/>  '(いくつかの数式)' の数式がローカルに存在する場合  <br/>  `No Formula`数式がローカルで削除されるか、ブロックされている場合  <br/>  `Inh`場合は、数式が継承されます。  <br/> |数式です。  <br/> |
-|MultipleCriticalPaths 要素  <br/> |xsd:string  <br/> |必須  <br/> |シェイプ シート セルの名前を表します。  <br/> |シェイプ シート セルの名前です。  <br/> 以下の「解説」セクションを参照してください。  <br/> |
+|N  <br/> |xsd:string  <br/> |必須  <br/> |シェイプ シート セルの名前を表します。  <br/> |シェイプ シート セルの名前です。  <br/> 以下の「解説」セクションを参照してください。  <br/> |
 |U  <br/> |xsd:string  <br/> |省略可能  <br/> |既定の測定単位を表しますが、DL です。  <br/> |セルの単位です。  <br/> |
 |V  <br/> |xsd:string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプ シート セルの値です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この**セル**要素の**N**属性は、限られた一連のシェイプ シートのセルに対応する値のいずれかである必要があります。 この**セル**要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   
-|**値**|**説明**|**詳細については**|
+|**値**|**説明**|**詳細情報**|
 |:-----|:-----|:-----|
-|Prompt  <br/> |ユーザー定義のセルに関する説明プロンプトまたはコメントを指定します。  <br/> |[[Prompt] セル ([User-Defined Cells] セクション)](prompt-cell-user-defined-cells-section.md) <br/> |
+|プロンプト  <br/> |ユーザー定義のセルに関する説明プロンプトまたはコメントを指定します。  <br/> |[[Prompt] セル ([User-Defined Cells] セクション)](prompt-cell-user-defined-cells-section.md) <br/> |
 |値  <br/> |対応するユーザー定義のセルの値を指定します。  <br/> |[[Value] セル ([User-Defined Cells] セクション)](value-cell-user-defined-cells-section.md) <br/> |
    
 

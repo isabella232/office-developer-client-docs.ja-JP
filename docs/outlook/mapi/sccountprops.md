@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 76e4cc52-e1a0-4e0b-a2a6-a17644f6b2e7
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 97dad50fed4179526e46381c4d9ea9d12d568377
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803846"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロパティ値の配列のバイト単位のサイズを決定し、配列に関連付けられているメモリを確認します。 
   
@@ -41,7 +41,7 @@ SCODE ScCountProps(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cprop_
   
@@ -65,7 +65,7 @@ MAPI_E_INVALID_PARAMETER
   
 > PROP_ID_NULL または PROP_ID_INVALID の識別子のプロパティ値の配列内の少なくとも 1 つのプロパティまたはプロパティ配列には、複数値を持つプロパティ値のないプロパティが含まれています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 _Pcb_のパラメーターに NULL が渡されると、通知の配列を検証する**ScCountProps**関数が、カウントは行われません。 **ScCountNotifications**関数が配列のサイズを決定し、原因を格納する_pcb_の null 以外の値が渡された場合_pcb_です。 _Pcb_のパラメーターは、配列全体を格納できる大きさである必要があります。 
   

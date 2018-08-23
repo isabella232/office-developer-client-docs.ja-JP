@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805140"
 ---
-# <a name="d-cell-geometry-section"></a>[D] セル ([Geometry] セクション)
+# <a name="d-cell-geometry-section"></a>[D] セル ([図形座標] セクション)
 
 各行に対応する情報を表示します。次の表に、各行で [D] セルが示す内容を説明します。
   
@@ -27,25 +27,25 @@ ms.locfileid: "19805140"
 |[[A](splinestart-row-geometry-section.md) <br/> | スプラインの角度 (1 ～ 25 の整数) です。  <br/> |
 |[楕円](ellipse-row-geometry-section.md) <br/> | *Y* -楕円上の点の座標対応する*x*の座標は、[ [C](c-cell-geometry-section.md) ] セルで表されます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [D] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [D] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | ジオメトリの*i*です。D *j* 、 *i*および*j* = < 1 > では、2、3.  <br/> |
 || ジオメトリの*i*です。D1 ([Ellipse] 行)、 *i* = < 1 > では、2、3.  <br/> |
    
-プログラムから、インデックスによって [D] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [D] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionFirstComponent** +  *i* 、 *i* = 0, 1, 2.  <br/> |
 | 行インデックス:  <br/> |**visRowVertex** +  *j* 、 *j* = 0, 1, 2.  <br/> |
-||**visRowVertex**([Ellipse] 行)  <br/> |
-| セル インデックス:  <br/> |**visAspectRatio**(EllipticalArcTo 行)  <br/> |
-||**visNURBSWeightPrev**([Nurbsto] 行)  <br/> |
-||**visSplineDegree**([A 行)  <br/> |
-||**visEllipseMinorY**([Ellipse] 行)  <br/> |
+||**visRowVertex** ([Ellipse] 行)  <br/> |
+| セル インデックス:  <br/> |**visAspectRatio** ([EllipticalArcTo] 行)  <br/> |
+||**visNURBSWeightPrev** ([NURBSTo] 行)  <br/> |
+||**visSplineDegree** ([SplineStart] 行)  <br/> |
+||**visEllipseMinorY** ([Ellipse] 行)  <br/> |
    
 

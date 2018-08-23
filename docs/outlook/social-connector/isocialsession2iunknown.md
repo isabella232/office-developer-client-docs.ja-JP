@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804376"
 ---
-# <a name="isocialsession2--iunknown"></a>ISocialSession2: IUnknown
+# <a name="isocialsession2--iunknown"></a>ISocialSession2 : IUnknown
 
 キャッシュされた資格情報を使用して、友人、友人の同期をオン ・ デマンドまたはハイブリッド、活動、またはソーシャル ネットワークへのログオンのオンデマンドの同期を追加することをサポートします。
   
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 次の表は、 **ISocialSession2**インターフェイスで使用可能なメンバーを示します。 
   
@@ -30,7 +30,7 @@ ms.locfileid: "19804376"
 |[GetPeopleDetails](isocialsession2-getpeopledetails.md) <br/> |メソッド  <br/> |_PersonsAddresses_パラメーターで指定されたユーザーのユーザーと画像の詳細情報のコレクションを格納する文字列を返します。  <br/> |
 |[LogonCached](isocialsession2-logoncached.md) <br/> |メソッド  <br/> |キャッシュされた資格情報を使用して、ソーシャル ネットワーク サイトにログオンします。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 プロバイダーがキャッシュされた資格情報を使用して、友人のオン ・ デマンドまたはハイブリッドの同期、オンデマンドの同期活動、またはソーシャル ネットワークへのログオンをサポートしている場合、このインターフェイスを実装するために、Outlook ソーシャル コネクタ (OSC) プロバイダーを選択できます。 OSC プロバイダーは、 **ISocialSession2**と次の人をソーシャル ネットワークのサポートを実装する場合は、OSC では、 [ISocialSession::FollowPerson](isocialsession-followperson.md)、代わりに[ISocialSession2::FollowPersonEx](isocialsession2-followpersonex.md)を呼び出して、プロバイダーを実装する必要があります。**ISocialSession2::FollowPersonEx**も同様です。
   

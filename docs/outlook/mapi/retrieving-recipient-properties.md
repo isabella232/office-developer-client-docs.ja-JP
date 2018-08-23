@@ -17,7 +17,7 @@ ms.locfileid: "19803762"
 ---
 # <a name="retrieving-recipient-properties"></a>受信者のプロパティを取得します。
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ### <a name="to-access-one-or-more-properties-of-an-address-book-entry"></a>アドレス帳エントリの 1 つまたは複数のプロパティにアクセスするのには
   

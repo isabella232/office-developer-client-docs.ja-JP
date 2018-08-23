@@ -1,5 +1,5 @@
 ---
-title: 既定のプロファイルを設定します。
+title: 既定のプロファイルの設定
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803880"
 ---
-# <a name="setting-a-default-profile"></a>既定のプロファイルを設定します。
+# <a name="setting-a-default-profile"></a>既定のプロファイルの設定
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 既定のプロファイルは、明示的に指定しない[MAPILogonEx](mapilogonex.md)、MAPI_USE_DEFAULT フラグを設定する代わりに呼び出しのいずれかの場合に使用されるプロファイルです。
   

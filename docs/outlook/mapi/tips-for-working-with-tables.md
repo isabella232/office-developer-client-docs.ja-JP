@@ -1,5 +1,5 @@
 ---
-title: テーブルを操作するためのヒント
+title: テーブルの操作のヒント
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804099"
 ---
-# <a name="tips-for-working-with-tables"></a>テーブルを操作するためのヒント
+# <a name="tips-for-working-with-tables"></a>テーブルの操作のヒント
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI を使用するテーブルは、リレーショナル データベースのテーブルに like 作業を少しです。 ユーザーは、ビューの行と列の数を制限し、それらの順序を指定できます。 行には、同時にまたはグループで、取得した 1 つをすることができます。 カーソルの現在位置を追跡するテーブル内の特定の場所に移動できます。 
   

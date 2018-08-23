@@ -43,8 +43,8 @@ Project 2013 SDK ダウンロードには、**プロジェクト オブジェク
     
 - [Project 2013 SDK のダウンロード](https://www.microsoft.com/en-us/download/details.aspx?id=30435%20)
     
-- [Office および SharePoint アドイン](http://msdn.microsoft.com/en-us/library/office/fp161507%28v=office.15%29)
+- [Office アドインと SharePoint アドイン](http://msdn.microsoft.com/en-us/library/office/fp161507%28v=office.15%29)
     
-- [Office アドイン](http://msdn.microsoft.com/en-us/library/office/apps/jj220060%28v=office.15%29)
+- [Office 用アプリの作成](http://msdn.microsoft.com/en-us/library/office/apps/jj220060%28v=office.15%29)
     
 

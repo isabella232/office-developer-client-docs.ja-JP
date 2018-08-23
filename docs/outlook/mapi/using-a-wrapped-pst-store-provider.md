@@ -15,7 +15,7 @@ ms.locfileid: "19804194"
 ---
 # <a name="using-a-wrapped-pst-store-provider"></a>ラップされた PST ストア プロバイダーを使用します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ラップされた個人用フォルダー ファイル (PST) のストア プロバイダーを使用することができます、前に初期化し、ラップされた PST ストア プロバイダーを構成する必要があります。 ラップされた PST ストア プロバイダーを構成した後、できるように、MAPI スプーラーと MAPI にログオンできます、メッセージ ストア プロバイダーの機能を実装しなければなりません。 初期化し、ラップされた PST ストア プロバイダーへのログインの詳細については、[ラップ PST ストア プロバイダーを初期化](initializing-a-wrapped-pst-store-provider.md)し、[ラップ PST ストア プロバイダーへのログ](logging-on-to-a-wrapped-pst-store-provider.md)を参照してください。
   
@@ -56,9 +56,9 @@ STDMETHODIMP CSupport::OpenProfileSection(
 
 ## <a name="see-also"></a>関連項目
 
-- [サンプルの PST ストア プロバイダーをラップ](about-the-sample-wrapped-pst-store-provider.md)
-- [PST ストア プロバイダーをラップして、サンプルをインストールします。](installing-the-sample-wrapped-pst-store-provider.md)
-- [ラップされた PST ストア プロバイダーを初期化しています。](initializing-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーのサンプルについて](about-the-sample-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーのサンプルのインストール](installing-the-sample-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)
 - [ラップされた PST ストア プロバイダーへのログオン](logging-on-to-a-wrapped-pst-store-provider.md)
-- [ラップされた PST ストア プロバイダーをシャット ダウン](shutting-down-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーのシャットダウン](shutting-down-a-wrapped-pst-store-provider.md)
 

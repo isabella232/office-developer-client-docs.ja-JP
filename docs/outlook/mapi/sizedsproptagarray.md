@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1d2dc6e9-735d-4b5b-af6f-adf6a32a666d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7505c5dbcfc98a8b868424ae51cbe9c47b1d4338
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19803930"
 ---
 # <a name="sizedsproptagarray"></a>SizedSPropTagArray
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロパティ タグの指定された番号を格納する名前付きの[SPropTagArray](sproptagarray.md)構造を作成します。 
   
@@ -34,7 +34,7 @@ ms.locfileid: "19803930"
 SizedSPropTagArray (_ctag, _name)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 __ctag_
   
@@ -44,7 +44,7 @@ __名_
   
 > 新しい構造体の名前です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SizedSPropTagArray**マクロを使用すると、明示的な境界を持つプロパティ タグ配列を作成します。 
   

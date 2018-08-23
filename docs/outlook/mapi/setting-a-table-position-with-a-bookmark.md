@@ -1,5 +1,5 @@
 ---
-title: テーブルの位置にブックマークを設定します。
+title: ブックマークによるテーブルの位置設定
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 56ab37f9-5aa6-4e9d-9dc8-b3d95aa19f35
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d53f15cb439494ae99ff45509ed14c0928756d8f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803887"
 ---
-# <a name="setting-a-table-position-with-a-bookmark"></a>テーブルの位置にブックマークを設定します。
+# <a name="setting-a-table-position-with-a-bookmark"></a>ブックマークによるテーブルの位置設定
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ブックマークは、テーブル内の特定の場所を示すリソースです。 ブックマークの設定は、後で、テーブルの操作のパフォーマンスを大幅に向上する機能の状態に戻します。 MAPI には、標準的な 3 つのブックマークが定義されています。 
   

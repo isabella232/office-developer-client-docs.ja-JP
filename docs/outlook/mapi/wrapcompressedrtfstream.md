@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0949e066-aa28-4ede-ac88-b2dccd5098e8
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9025bcebdd5e656070b31cd82e6519166a3e3791
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804250"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 圧縮されていない形式 (リッチ テキスト) ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) である**PR_RTF_COMPRESSED**プロパティで使用されている圧縮形式からテキストのストリームを作成します。 
   
@@ -41,7 +41,7 @@ HRESULT WrapCompressedRTFStream(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpCompressedRTFStream_
   
@@ -83,5 +83,5 @@ _UlFlags_パラメーターに 0 を渡した場合、 _lpCompressedRTFStream_�
 
 
 
-[へ](rtfsync.md)
+[RTFSync](rtfsync.md)
 

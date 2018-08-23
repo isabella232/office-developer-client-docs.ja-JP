@@ -23,17 +23,17 @@ ms.locfileid: "19804341"
 HRESULT _stdcall GetPicture([out, retval] SAFEARRAY(unsigned char)* picture);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _画像_
   
 > [out]人の画像リソースを表すバイトの配列を指定する構造体へのポインター。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 リソースは .bmp、.jpeg、または .png 形式で、画像をサポートします。
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialPerson: IUnknown](isocialpersoniunknown.md)
+- [ISocialPerson : IUnknown](isocialpersoniunknown.md)
 

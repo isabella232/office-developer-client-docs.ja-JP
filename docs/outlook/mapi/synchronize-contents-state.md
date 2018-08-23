@@ -1,11 +1,11 @@
 ---
-title: 内容の状態を同期します。
+title: コンテンツ同期状態
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 52216bc3-8cbd-3856-ea46-78f7d0dd66ff
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 216691f2c1f94d658a5aa968d6a19148a9b3c06a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804065"
 ---
-# <a name="synchronize-contents-state"></a>内容の状態を同期します。
+# <a name="synchronize-contents-state"></a>コンテンツ同期状態
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  このトピックでは、同期内容マシンの状態、レプリケーション状態中の動作について説明します。 
   
@@ -51,7 +51,7 @@ ms.locfileid: "19804065"
   
 [MAPI �萔](mapi-constants.md)
   
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [同期状態](syncstate.md)
 

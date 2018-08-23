@@ -1,5 +1,5 @@
 ---
-title: 受信トレイにメッセージを保存します。
+title: 受信トレイへのメッセージの保存
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803791"
 ---
-# <a name="saving-a-message-in-the-inbox"></a>受信トレイにメッセージを保存します。
+# <a name="saving-a-message-in-the-inbox"></a>受信トレイへのメッセージの保存
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  **いずれかの受信者に受信トレイにメッセージを格納するには**
   

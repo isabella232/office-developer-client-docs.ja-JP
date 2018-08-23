@@ -27,11 +27,11 @@ ms.locfileid: "19804482"
 
 ソーシャル ネットワークのアイコンが含まれているバイトの配列を指定する構造体へのポインター。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 画像がサポートされているリソースとは、.bmp、.jpeg、および .png 形式です。
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialProvider: IUnknown](isocialprovideriunknown.md)
+- [ISocialProvider : IUnknown](isocialprovideriunknown.md)
 

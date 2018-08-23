@@ -23,7 +23,7 @@ ms.locfileid: "19804102"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ANSI、DBCS、または Unicode の文字列を記述するために使用する Win32 文字の文字列です。 ANSI と DBCS のプラットフォームの TCHAR は次のように定義されます。
   
@@ -32,7 +32,7 @@ typedef char TCHAR;
 
 ```
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 Unicode プラットフォームの場合は、TCHAR は WCHAR 型と同じ意味として定義されます。 
   

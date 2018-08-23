@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805412"
 ---
-# <a name="flipx-cell-shape-transform-section"></a>[FlipX] セル ([Shape Transform] セクション)
+# <a name="flipx-cell-shape-transform-section"></a>[FlipX] セル ([図形変換] セクション)
 
 図形が左右反転されているかを示します。
   
@@ -27,13 +27,13 @@ ms.locfileid: "19805412"
    
 ## <a name="remarks"></a>備考
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [flipx] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [FlipX] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | [Flipx]  <br/> |
    
-プログラムから、インデックスによって [flipx] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [FlipX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

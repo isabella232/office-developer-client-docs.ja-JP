@@ -19,7 +19,7 @@ ms.locfileid: "19804469"
 
 このトピックでは、Outlook の天気予報の場所の XML スキーマ内の要素が一覧表示されます。
   
-- [気象要素](weather-element-weatherdata-elementoutlook-weather-location-schema.md)
+- [weather 要素](weather-element-weatherdata-elementoutlook-weather-location-schema.md)
     
 - [weatherdata 要素](weatherdata-element-outlook-weather-location-schema.md)
     

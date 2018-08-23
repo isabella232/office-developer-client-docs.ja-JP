@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 99709a4c-cb52-436e-a322-02ded5d65ce5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a613bd744a113b4378c5bef94fb51f6ae3aa4041
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19803707"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロバイダー テーブルには、サービス プロバイダーに関する情報が含まれています。 別のプロバイダーの 2 つのテーブルは、MAPI によって実装され、クライアントによって使用される両方。 アクセス、 [IMsgServiceAdmin::GetProviderTable](imsgserviceadmin-getprovidertable.md)メソッドを呼び出すことによって、最初の表は、すべての現在のプロファイル プロバイダーに関する情報を保持します。 2 番目のテーブルでは、 [IProviderAdmin::GetProviderTable](iprovideradmin-getprovidertable.md)を使用してアクセスは、すべてのメッセージ サービスのサービス プロバイダーに関する情報を格納するテーブルを作成します。
   

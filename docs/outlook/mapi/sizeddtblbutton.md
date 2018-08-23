@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ee73ced9-14d8-4a30-9b9f-d54ed9c3a454
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3de56b12fa7d34004fddbfe3633b8b8307c0ffc1
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803913"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ボタンと指定された長さのラベルを記述するための[DTBLBUTTON](dtblbutton.md)構造体を含む名前付き構造体を作成します。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "19803913"
 SizedDtblButton (n, u)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _n_
   
@@ -46,7 +46,7 @@ SizedDtblButton (n, u)
   
 > 新しい構造体の名前です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 新しい構造体は、次のメンバーで作成されます。
   

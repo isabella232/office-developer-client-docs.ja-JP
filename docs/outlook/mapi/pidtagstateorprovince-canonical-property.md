@@ -1,5 +1,5 @@
 ---
-title: PidTagStateOrProvince の標準的なプロパティ
+title: PidTagStateOrProvince 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5f17874f-fab5-4119-b2eb-845c1f70d882
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: da4ed488498d820c7080a87752f58c5b8c524e1d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803571"
 ---
-# <a name="pidtagstateorprovince-canonical-property"></a>PidTagStateOrProvince の標準的なプロパティ
+# <a name="pidtagstateorprovince-canonical-property"></a>PidTagStateOrProvince 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 受信者の都道府県の名前が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_STATE_OR_PROVINCE、PR_STATE_OR_PROVINCE_A、PR_STATE_OR_PROVINCE_W、PR_BUSINESS_ADDRESS_STATE_OR_PROVINCE、PR_BUSINESS_ADDRESS_STATE_OR_PROVINCE_A、PR_BUSINESS_ADDRESS_STATE_OR_PROVINCE_W  <br/> |
+|関連するプロパティ:  <br/> |PR_STATE_OR_PROVINCE、PR_STATE_OR_PROVINCE_A、PR_STATE_OR_PROVINCE_W、PR_BUSINESS_ADDRESS_STATE_OR_PROVINCE、PR_BUSINESS_ADDRESS_STATE_OR_PROVINCE_A、PR_BUSINESS_ADDRESS_STATE_OR_PROVINCE_W  <br/> |
 |識別子:  <br/> |0x3A28  <br/> |
-|データを入力します。  <br/> |PT_STRING8、PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |領域:  <br/> |MAPI メール ユーザー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これらのプロパティでは、識別を提供し、受信者の情報にアクセスします。 受信者と受信者の組織によって定義されます。 
   
@@ -72,7 +72,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

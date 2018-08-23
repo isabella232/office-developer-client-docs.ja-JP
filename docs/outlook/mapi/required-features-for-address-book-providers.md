@@ -1,5 +1,5 @@
 ---
-title: アドレス帳プロバイダーに必要な機能
+title: アドレス帳プロバイダーの必須機能
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e2ccddd7-65e8-41f6-8e21-a4ae98190a96
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ac76d1caf5db0b041a17d40d08671665b5427051
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803750"
 ---
-# <a name="required-features-for-address-book-providers"></a>アドレス帳プロバイダーに必要な機能
+# <a name="required-features-for-address-book-providers"></a>アドレス帳プロバイダーの必須機能
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳プロバイダーは、一時的または永続的なローカルまたはリモート、1 つまたは複数のメッセージング システムで認識されています、ディスク ファイルまたはデータベース テーブルの書式設定された受信者の情報を操作できます。 さまざまな値を追加して、クライアントおよびその他のプロバイダーとの相互運用性を向上させるために、アドレス帳プロバイダーが実装できる機能があります。 ただし、いくつかの機能は、必要があります。
   

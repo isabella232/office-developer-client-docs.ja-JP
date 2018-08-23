@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805355"
 ---
-# <a name="extrainfo-cell-hyperlinks-section"></a>[ExtraInfo] セル ([Hyperlinks] セクション)
+# <a name="extrainfo-cell-hyperlinks-section"></a>[ExtraInfo] セル ([ハイパーリンク] セクション)
 
 イメージ マップの座標など、URL の解決に使用される情報を渡す文字列を表します。 ExtraInfo] セルで、"x = 41&amp;y = 7"イメージ マップの座標を指定します。
   
@@ -24,13 +24,13 @@ ms.locfileid: "19805355"
 
 イベント セルはイベントの発生時にのみ評価されます。数式の入力時には評価されません。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ExtraInfo] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ExtraInfo] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | ハイパーリンク  *名*です。ExtraInfo いるハイパーリンク。  *名前*は、行の名前  <br/> |
    
-プログラムから、インデックスによって [ExtraInfo] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ExtraInfo] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805304"
 ---
-# <a name="enablelineprops-cell-style-properties-section"></a>[EnableLineProps] セル ([Style Properties] セクション)
+# <a name="enablelineprops-cell-style-properties-section"></a>[EnableLineProps] セル ([スタイルのプロパティ] セクション)
 
 スタイルに線のプロパティを含めるかどうかを指定します。
   
@@ -27,13 +27,13 @@ ms.locfileid: "19805304"
    
 ## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[EnableLineProps] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [EnableLineProps] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名 :  <br/> |EnableLineProps  <br/> |
    
-プログラムから、インデックスによって [EnableLineProps] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [EnableLineProps] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

@@ -17,7 +17,7 @@ ms.locfileid: "19804162"
 ---
 # <a name="updating-mapi-properties"></a>MAPI プロパティの更新
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアントとサービス ・ プロバイダーは、呼び出しによってプロパティの値を更新できます。
   
@@ -46,5 +46,5 @@ ms.locfileid: "19804162"
 
 ## <a name="see-also"></a>関連項目
 
-- [MAPI Property Overview](mapi-property-overview.md)
+- [MAPI のプロパティの概要](mapi-property-overview.md)
 

@@ -14,11 +14,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805216"
 ---
-# <a name="distancefromground-cell-3-d-rotation-properties"></a>[DistanceFromGround] セル ([3-D 回転のプロパティ)
+# <a name="distancefromground-cell-3-d-rotation-properties"></a>[DistanceFromGround] セル ([3-D 回転のプロパティ] セクション)
 
 オブジェクトに 3-D の回転時に地面から発生する距離を指定します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **セル**要素の**N**属性の値によって、別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ **DistanceFromGround** ] セルへの参照を取得、次のように使用します。 
   

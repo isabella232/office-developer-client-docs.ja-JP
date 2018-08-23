@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804764"
 ---
-# <a name="alignment-section"></a>[Alignment] セクション
+# <a name="alignment-section"></a>[配置] セクション
 
 ガイドまたはガイドに図形の配置を示す図形が接着されている] をポイントします。 **Alignment** ] セクションは、ガイドに接着されている図形に対してのみ表示されます。 
   

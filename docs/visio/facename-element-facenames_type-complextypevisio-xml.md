@@ -22,7 +22,7 @@ ms.locfileid: "19805332"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[FaceName_Type](facename_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[FaceName_Type](facename_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
@@ -53,7 +53,7 @@ ms.locfileid: "19805332"
 |**属性**|**型**|**必須**|**説明**|**使用可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
 |文字集合  <br/> |xsd:string  <br/> |省略可能  <br/> |サポートされている文字のフォントを設定します。  <br/> |Xsd:string の値を入力します。  <br/> |
-|フラグ  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |次に示すフラグ: フォント、デフォルトのフォント、アジア言語のフォント、複雑なフォント、縦書きフォント、およびフォントの種類がありません。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
+|Flags  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |次に示すフラグ: フォント、デフォルトのフォント、アジア言語のフォント、複雑なフォント、縦書きフォント、およびフォントの種類がありません。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
 |NameU  <br/> |xsd:string  <br/> |必須  <br/> |Utf-16 Unicode 文字列のフォントの名前。  <br/> ||
 |Panos  <br/> |xsd:string  <br/> |省略可能  <br/> |フォントの panose 署名します。 Panose は、その視覚的特性に基づくに分類されている書体の分類システムです。  <br/> |Xsd:string の値を入力します。  <br/> |
 |UnicodeRanges  <br/> |xsd:string  <br/> |省略可能  <br/> |フォントのサポートされている Unicode の範囲です。  <br/> |Xsd:string の値を入力します。  <br/> |

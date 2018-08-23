@@ -1,5 +1,5 @@
 ---
-title: PidTagSentRepresentingName の標準的なプロパティ
+title: PidTagSentRepresentingName 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,7 +9,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: bfee6c5e-d4c6-442e-af71-23156569fed5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5417b73fe13937a74bc01520a2dd9db359e894ed
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,22 +17,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803534"
 ---
-# <a name="pidtagsentrepresentingname-canonical-property"></a>PidTagSentRepresentingName の標準的なプロパティ
+# <a name="pidtagsentrepresentingname-canonical-property"></a>PidTagSentRepresentingName 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 送信者によって表されるメッセージング ユーザーの表示名が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_SENT_REPRESENTING_NAME、PR_SENT_REPRESENTING_NAME_A、PR_SENT_REPRESENTING_NAME_W  <br/> |
+|関連するプロパティ:  <br/> |PR_SENT_REPRESENTING_NAME、PR_SENT_REPRESENTING_NAME_A、PR_SENT_REPRESENTING_NAME_W  <br/> |
 |識別子:  <br/> |0x0042  <br/> |
-|データを入力します。  <br/> |PT_UNICODE、PT_STRING8  <br/> |
+|データの種類 :   <br/> |PT_UNICODE、PT_STRING8  <br/> |
 |領域:  <br/> |Address  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これらのプロパティでは、送信者によって表されるメッセージング ユーザーのアドレスのプロパティの例を示します。 クライアント アプリケーションは、別のクライアントの代わりにメッセージを送信するときは、そのクライアントの値に表される送信者のすべてのプロパティを設定にする必要があります。 通常それ自体の代わりに送信するメッセージのユーザーのまま表される送信者のプロパティ設定を解除します。
   
@@ -104,14 +104,14 @@ Mapitags.h
 
 
 
-[PidTagDisplayName の標準的なプロパティ](pidtagdisplayname-canonical-property.md)
+[PidTagDisplayName 標準プロパティ](pidtagdisplayname-canonical-property.md)
 
 
 [MAPI プロパティ](mapi-properties.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

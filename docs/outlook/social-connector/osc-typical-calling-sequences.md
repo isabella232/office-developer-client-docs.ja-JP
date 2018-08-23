@@ -39,7 +39,7 @@ OSC プロバイダーの機能拡張インターフェイス、OSC プロバイ
 
 - [Outlook ソーシャル コネクタ プロバイダーの参照](outlook-social-connector-provider-reference-0.md)
   
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連情報
 
 - [Outlook Social Connector プロバイダーの開発の概要 (英語)(機械翻訳)](getting-started-with-developing-an-outlook-social-connector-provider.md)
   

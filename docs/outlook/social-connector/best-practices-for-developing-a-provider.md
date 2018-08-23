@@ -1,5 +1,5 @@
 ---
-title: プロバイダーを開発するためのベスト プラクティス
+title: プロバイダー開発のためのベスト プラクティス
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804327"
 ---
-# <a name="best-practices-for-developing-a-provider"></a>プロバイダーを開発するためのベスト プラクティス
+# <a name="best-practices-for-developing-a-provider"></a>プロバイダー開発のためのベスト プラクティス
 
 Outlook ソーシャル コネクタ 2013 (OSC) プロバイダーを開発する場合は、以下のプラクティスに従う必要があります。
   

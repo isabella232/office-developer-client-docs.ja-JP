@@ -1,5 +1,5 @@
 ---
-title: PidTagX400ContentType の標準的なプロパティ
+title: PidTagX400ContentType 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c8959592-53f3-48cf-b623-91d199df0629
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ac79c37c8d646e5fa722af240972a0638d1bcec7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,19 +19,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803664"
 ---
-# <a name="pidtagx400contenttype-canonical-property"></a>PidTagX400ContentType の標準的なプロパティ
+# <a name="pidtagx400contenttype-canonical-property"></a>PidTagX400ContentType 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このプロパティには、送信されたメッセージのコンテンツ タイプが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_X400_CONTENT_TYPE  <br/> |
+|関連するプロパティ:  <br/> |PR_X400_CONTENT_TYPE  <br/> |
 |識別子:  <br/> |0x003C  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |X400  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -54,7 +54,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

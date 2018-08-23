@@ -20,13 +20,14 @@ ms.locfileid: "19804797"
   
 ## <a name="version-information"></a>バージョン情報
 
-Visio 2010 のバージョンが追加されます。 
+追加バージョン: Visio 2010
+ 
   
 ## <a name="syntax"></a>構文
 
 ANGLEALONGPATH (* **で** *、* **旅行** * * * *[] セグメント** *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
@@ -34,11 +35,11 @@ ANGLEALONGPATH (* **で** *、* **旅行** * * * *[] セグメント** *)
 | _旅行_ <br/> |必須  <br/> |**Double** <br/> |パスの始点から終点までの割合。0 ～ 1 の値を指定する必要があります。  <br/> |
 | _セグメント_ <br/> |省略可能  <br/> |**整数型 (Integer)** <br/> |接線角度を計算するパスの 1 から始まるセグメント。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
  **Double**
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _セグメント_の値を含めると、ANGLEALONGPATH はそのセグメントのみの値を返します。 
   

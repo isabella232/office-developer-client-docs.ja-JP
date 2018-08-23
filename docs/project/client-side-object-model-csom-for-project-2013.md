@@ -41,17 +41,17 @@ REST インターフェイスで CSOM で使用可能なエンティティを表
   
 表 1 は、Project Server のオブジェクトを表す**ProjectContext**のプロパティを一覧表示します。 割り当てやタスクなど、他の Project Server 2013 のエンティティを取得するためにこれらのオブジェクトを使用できます。 
   
-**表 1 です。CSOM および JSOM のプロジェクトのサーバー オブジェクトへのアクセスを提供する ProjectContext プロパティ**
+**表 1. CSOM と JSOM の Project Server オブジェクトにアクセスするための ProjectContext プロパティ**
 
-|**CSOM (.NET、Silverlight、および Windows Phone)**|**JSOM**|
+|**CSOM (.NET、Silverlight、Windows Phone)**|**JSOM**|
 |:-----|:-----|
-|[名](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.CustomFields.aspx) <br/> |名  <br/> |
+|[CustomFields](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.CustomFields.aspx) <br/> |名  <br/> |
 |[EnterpriseProjectTypes](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.EnterpriseProjectTypes.aspx) <br/> |enterpriseProjectTypes  <br/> |
 |[EnterpriseResources](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.EnterpriseResources.aspx) <br/> |enterpriseResources  <br/> |
 |[Entitytype](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.EntityTypes.aspx) <br/> |Entitytype  <br/> |
 |[EventHandlers](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.EventHandlers.aspx) <br/> |eventHandlers  <br/> |
 |[イベント](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.Events.aspx) <br/> |events  <br/> |
-|[LookupTables](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.LookupTables.aspx) <br/> |lookupTables  <br/> |
+|[参照テーブル](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.LookupTables.aspx) <br/> |lookupTables  <br/> |
 |[フェーズ](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.Phases.aspx) <br/> |phases  <br/> |
 |[Projects](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.Projects.aspx) <br/> |projects  <br/> |
 |[ステージ](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.Stages.aspx) <br/> |stages  <br/> |
@@ -66,9 +66,9 @@ REST インターフェイスで CSOM で使用可能なエンティティを表
   
 CSOM の使用方法を示す次の記事も確認してください。
   
-- [ユーザー設定フィールドの更新プログラムを一括して、ワークフロー プロジェクトをオンラインでのプロジェクト サイトを作成](bulk-update-custom-fields-and-create-project-sites-from-workflow-in-project.md)
+- [Project Online でユーザー設定フィールドを一括更新し、ワークフローからプロジェクト サイトを作成する](bulk-update-custom-fields-and-create-project-sites-from-workflow-in-project.md)
     
-- [JavaScript オブジェクト モデルを使用してプロジェクトの作業します。](create-retrieve-update-delete-projects-using-project-server-javascript.md)
+- [JavaScript オブジェクト モデルを使用してプロジェクトを操作する](create-retrieve-update-delete-projects-using-project-server-javascript.md)
     
 > [!NOTE]
 > CSOM を使用して.NET Framework 4 の開発に Visual Studio 2010 を使用することもできます。 

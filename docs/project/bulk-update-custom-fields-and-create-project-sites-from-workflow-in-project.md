@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804565"
 ---
-# <a name="bulk-update-custom-fields-and-create-project-sites-from-a-workflow-in-project-online"></a>ユーザー設定フィールドの更新プログラムを一括して、ワークフロー プロジェクトをオンラインでのプロジェクト サイトを作成
+# <a name="bulk-update-custom-fields-and-create-project-sites-from-a-workflow-in-project-online"></a>Project Online でユーザー設定フィールドを一括更新し、ワークフローからプロジェクト サイトを作成する
 
 お客様のオンライン プロジェクトを最大限に活用し、当社のサービスの拡張性と柔軟性を向上させるために、2 つの方法オンライン プロジェクトのアプリケーションとワークフローで使用できるクライアント側オブジェクト モデルに追加しました。
   
@@ -75,10 +75,10 @@ ms.locfileid: "19804565"
   
 4. 辞書には、次の 2 つの項目を追加します。
     
-    |名前|種類|値|
+    |名前|型|値|
     |:-----|:-----|:-----|
-    |承諾  <br/> |String  <br/> |アプリケーションまたは json です。odata = 詳細  <br/> |
-    |コンテンツ タイプ  <br/> |String  <br/> |アプリケーションまたは json です。odata = 詳細  <br/> |
+    |Accept  <br/> |String  <br/> |アプリケーションまたは json です。odata = 詳細  <br/> |
+    |Content-Type  <br/> |String  <br/> |アプリケーションまたは json です。odata = 詳細  <br/> |
    
     ![Accept ヘッダーを追加します。](media/2f2e2016-3c49-4cac-b1e7-f2b8118b840c.png "Accept ヘッダーを追加します。")
   
@@ -121,7 +121,7 @@ ms.locfileid: "19804565"
        > [!NOTE]
        > これらの値は、例示目的でのみです。 使用するキーと値のペアは、PWA のデータによって異なります。 
   
-       |名前|種類|値|
+       |名前|型|値|
        |:-----|:-----|:-----|
        |customFieldDictionary (0)/__metadata/タイプ  <br/> |String  <br/> |SP へKeyValue  <br/> |
        |customFieldDictionary (0)/キー  <br/> |String  <br/> |カスタム\_ce23fbf43fa0e411941000155d3c8201  <br/> |
@@ -196,10 +196,10 @@ ms.locfileid: "19804565"
   
 3. 辞書には、次の 2 つの項目を追加します。
     
-    |名前|種類|値|
+    |名前|型|値|
     |:-----|:-----|:-----|
-    |承諾  <br/> |String  <br/> |アプリケーションまたは json です。odata = 詳細  <br/> |
-    |コンテンツ タイプ  <br/> |String  <br/> |アプリケーションまたは json です。odata = 詳細  <br/> |
+    |Accept  <br/> |String  <br/> |アプリケーションまたは json です。odata = 詳細  <br/> |
+    |Content-Type  <br/> |String  <br/> |アプリケーションまたは json です。odata = 詳細  <br/> |
    
     ![Accept ヘッダーを追加します。](media/2f2e2016-3c49-4cac-b1e7-f2b8118b840c.png "Accept ヘッダーを追加します。")
   
@@ -217,7 +217,7 @@ ms.locfileid: "19804565"
   
 ## <a name="see-also"></a>関連項目
 
-- [プロジェクトのプログラミング タスク](project-programming-tasks.md)
+- [Project のプログラミング タスク](project-programming-tasks.md)
 - [Project 2013 のクライアント側オブジェクト モデル (CSOM)](client-side-object-model-csom-for-project-2013.md)
 - [Microsoft SharePoint 2010 SDK へようこそ](http://msdn.microsoft.com/library/e0602371-ae22-44be-8a7e-9e47e9f046d6%28Office.15%29.aspx)
     

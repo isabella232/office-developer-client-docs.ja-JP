@@ -1,5 +1,5 @@
 ---
-title: 複数値を持つ列の使用
+title: 複数値列の操作
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804243"
 ---
-# <a name="working-with-multivalued-columns"></a>複数値を持つ列の使用
+# <a name="working-with-multivalued-columns"></a>複数値列の操作
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 複数値の列には、1 つの値ではなく基本データ型の値の配列を含むプロパティは、複数値を持つプロパティのデータが含まれています。 テーブルの [なし] は、複数値を持つプロパティの既定の列セットであるため、テーブルのユーザーが要求した場合のみ複数値を持つプロパティがテーブルに含まれます。 
   

@@ -17,7 +17,7 @@ ms.locfileid: "19804200"
 ---
 # <a name="uptble"></a>UPTBLE
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [テーブルの状態をアップロード](upload-table-state.md)する時にフォルダーの内容をアップロードするための情報を拡張します。
   
@@ -35,7 +35,7 @@ struct UPTBLE
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  _iEntMod_
   
@@ -64,6 +64,6 @@ struct UPTBLE
 ## <a name="see-also"></a>関連項目
 
 - [レプリケーション API について](about-the-replication-api.md) 
-- [レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
 - [UPTBL](uptbl.md)
 

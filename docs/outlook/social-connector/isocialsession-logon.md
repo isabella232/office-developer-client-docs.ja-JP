@@ -23,7 +23,7 @@ ms.locfileid: "19804367"
 HRESULT _stdcall Logon([in] BSTR username, [in] BSTR password);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _ユーザー名_
   
@@ -35,5 +35,5 @@ _password_
     
 ## <a name="see-also"></a>関連項目
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

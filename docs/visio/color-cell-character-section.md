@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805007"
 ---
-# <a name="color-cell-character-section"></a>[Color] セル ([Character] セクション)
+# <a name="color-cell-character-section"></a>[Color] セル ([文字] セクション)
 
 図形のテキストに使用する色を指定します。
   
@@ -28,13 +28,13 @@ ms.locfileid: "19805007"
   
 テキストの色の透過性を設定するには、[Transparency] セルを使用します。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[Color] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Color] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |Char.Color [ *i* ]、 *i* = < 1 > では、2、3、.  <br/> |
    
-プログラムから、インデックスによって [Color] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [Color] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

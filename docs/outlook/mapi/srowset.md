@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7e3761be-afd6-46cb-9a08-25e9016c1241
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5c634fe200dde4bfe6f190f8bfa9e5dfa0868db4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804017"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [SRow](srow.md)構造体の配列が含まれています。 各**SRow**構造体では、テーブルからの行について説明します。 
   
@@ -41,7 +41,7 @@ typedef struct _SRowSet
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **カラス**
   
@@ -51,7 +51,7 @@ typedef struct _SRowSet
   
 > **SRow**構造体の配列です。 テーブル内の行ごとに 1 つの構造があります。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SRowSet**構造体を使用して、複数のテーブルからデータ行を記述します。 **SRowSet**構造体は、次の関数だけでなく、 [IAddrBook](iaddrbookimapiprop.md)、 [ITableData](itabledataiunknown.md)、および[IMAPITable](imapitableiunknown.md)インターフェイス メソッドで使用されます。 
   

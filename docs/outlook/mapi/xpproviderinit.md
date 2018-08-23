@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: df6eacf4-1cf9-4c25-806f-f87c38dad597
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0415e782a98102314ce732f744c0d29590f646c2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804245"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 操作のためのトランスポート プロバイダーを初期化します。
   
@@ -47,7 +47,7 @@ HRESULT XPProviderInit(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _hInstance_
   
@@ -99,7 +99,7 @@ MAPI_E_VERSION
   
 > MAPI によって使用されている SPI のバージョンは、このプロバイダーで使用されている SPI との互換性ではありません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI は、クライアント ログオンを次のトランスポート プロバイダーを初期化するために**XPProviderInit**エントリ ポイント関数が呼び出されます。 **XPProviderInit**は、クライアントのプロファイルで指定されたトランスポート プロバイダーごとに 1 回呼び出されます。 
   
@@ -119,7 +119,7 @@ MAPI は、クライアント ログオンを次のトランスポート プロ�
 
 [ABProviderInit](abproviderinit.md)
   
-[IXPProvider: IUnknown](ixpprovideriunknown.md)
+[IXPProvider : IUnknown](ixpprovideriunknown.md)
   
 [MSProviderInit](msproviderinit.md)
 

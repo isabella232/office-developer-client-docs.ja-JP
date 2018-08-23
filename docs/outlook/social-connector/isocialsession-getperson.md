@@ -23,7 +23,7 @@ _ユーザー Id_のパラメーターに基づいて、 [ISocialPerson](isocial
 HRESULT _stdcall GetPerson([in] BSTR userId, [out, retval] ISocialPerson** result);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _userId_
   
@@ -33,11 +33,11 @@ _result_
   
 > [out]**ISocialPerson**インターフェイスです。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 _ユーザー Id_パラメーターは、ユーザーの ID または SMTP アドレスである必要があります。 
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

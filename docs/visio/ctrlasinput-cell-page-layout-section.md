@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805141"
 ---
-# <a name="ctrlasinput-cell-page-layout-section"></a>[CtrlAsInput] セル ([Page Layout] セクション)
+# <a name="ctrlasinput-cell-page-layout-section"></a>[CtrlAsInput] セル ([ページ レイアウト] セクション)
 
 コントロール ハンドルを使用して図形を操作するときに、どの図形を親図形にするかを指定します。このセルの値は、図面ページ上にあるすべての図形の動作に適用されます。
   
@@ -27,13 +27,13 @@ ms.locfileid: "19805141"
    
 ## <a name="remarks"></a>備考
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[CtrlAsInput] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [CtrlAsInput] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | CtrlAsInput  <br/> |
    
-プログラムから、インデックスによって [CtrlAsInput] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [CtrlAsInput] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

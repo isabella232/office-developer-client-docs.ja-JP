@@ -25,7 +25,7 @@ ms.locfileid: "19804558"
 |:-----|:-----|
 |**名前空間** <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherlocation.xsd  <br/> |
 |**スキーマ ファイル** <br/> |getweatherlocation.xsd  <br/> |
-|**拡張機能の基本** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |なし  <br/> |
    
 ## <a name="definition"></a>定義
 

@@ -1,5 +1,5 @@
 ---
-title: メッセージ ストア プロバイダーのメッセージの添付ファイルをサポートしています。
+title: メッセージ ストア プロバイダーでのメッセージ添付ファイルのサポート
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804029"
 ---
-# <a name="supporting-message-attachments-for-message-store-providers"></a>メッセージ ストア プロバイダーのメッセージの添付ファイルをサポートしています。
+# <a name="supporting-message-attachments-for-message-store-providers"></a>メッセージ ストア プロバイダーでのメッセージ添付ファイルのサポート
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ストア プロバイダーは、メッセージの添付ファイルをサポートする必要はありません。 ただし、多くのクライアント アプリケーションは、メッセージに添付ファイルを追加するのにはできるはずです。 作成または IPM を格納する場合は、メッセージ ・ ストアが使用されます。メッセージの添付ファイルをサポートする必要がありますし、メッセージに注意してください。 既定のメッセージ ストア プロバイダーは、メッセージの添付ファイルもサポートする必要があります。 詳細については、 [MAPI メッセージ クラス](mapi-message-classes.md)、および[既定のメッセージ ストア](default-message-stores.md)を参照してください。
   

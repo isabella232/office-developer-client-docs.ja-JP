@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5f7012f7-060d-4f2d-bcff-2aa9f6980e71
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 152f3032876d6473f1716afa46507196cd5ecc55
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804001"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージの添付ファイルや受信者テーブルの行をフィルター処理に使用されるサブ オブジェクトの制限について説明します。
   
@@ -40,7 +40,7 @@ typedef struct _SSubRestriction
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulSubObject**
   
@@ -58,7 +58,7 @@ PR_MESSAGE_ATTACHMENTS
   
 > [SRestriction](srestriction.md)構造体へのポインター。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 サブ オブジェクトの制限事項は、すべてのテーブルではサポートされていません。 通常、だけフォルダーの内容をテーブルと、検索結果のフォルダーでは、それらをサポートします。 などの特定の種類の添付ファイル、または受信者がメッセージを検索するのには下位のオブジェクトの制限が使用されます。 
   

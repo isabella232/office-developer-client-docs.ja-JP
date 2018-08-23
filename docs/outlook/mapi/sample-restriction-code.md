@@ -17,7 +17,7 @@ ms.locfileid: "19803786"
 ---
 # <a name="sample-restriction-code"></a>制限のサンプル コード
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 次のサンプル コードは、件名に「バレーボール」という単語が含まれていないすべてのメッセージをフィルターする制約を作成する方法を示していますし、、Sam から政美に送信されなかった。 [SRestriction](srestriction.md)構造のツリーは、 [SAndRestriction](sandrestriction.md)構造体を使用して実装、**および**制限をされている最上位のノードを持つ必要は。 政美に送信されたメッセージを検索するサブオブジェクトの制限、Sam からのメッセージを検索するコンテンツの制限とメッセージを検索するもう 1 つ**と**制限は、 **AND**演算で結ばれている 3 つの制限「バレーボール」を含む件名が指定されています。 **あるの PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) は、必要なプロパティではないため、**既存**の制限に含める必要があります。 
   

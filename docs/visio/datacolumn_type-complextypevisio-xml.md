@@ -21,7 +21,7 @@ ms.locfileid: "19805156"
 |:-----|:-----|
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
-|**拡張機能の基本** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |なし  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -88,14 +88,14 @@ ms.locfileid: "19805156"
 
 |**属性**|**型**|**必須**|**説明**|**使用可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|カレンダー  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> ||Xsd:unsignedShort の値を入力します。  <br/> |
+|予定表  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> ||Xsd:unsignedShort の値を入力します。  <br/> |
 |ColumnNameID  <br/> |xsd:string  <br/> |必須  <br/> ||Xsd:string の値を入力します。  <br/> |
 |通貨型 (Currency)  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> ||Xsd:unsignedShort の値を入力します。  <br/> |
 |DataType  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> ||Xsd:unsignedShort の値を入力します。  <br/> |
-|度  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> ||Xsd:unsignedInt の値を入力します。  <br/> |
+|Degree  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> ||Xsd:unsignedInt の値を入力します。  <br/> |
 |DisplayOrder  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> ||Xsd:unsignedInt の値を入力します。  <br/> |
 |DisplayWidth  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> ||Xsd:unsignedInt の値を入力します。  <br/> |
-|ハイパーリンク  <br/> |xsd:boolean  <br/> |省略可能  <br/> ||Xsd:boolean の値を入力します。  <br/> |
+|Hyperlink  <br/> |xsd:boolean  <br/> |省略可能  <br/> ||Xsd:boolean の値を入力します。  <br/> |
 |ラベル  <br/> |xsd:string  <br/> |必須  <br/> ||Xsd:string の値を入力します。  <br/> |
 |LangID  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> ||Xsd:unsignedInt の値を入力します。  <br/> |
 |マップ  <br/> |xsd:boolean  <br/> |省略可能  <br/> ||Xsd:boolean の値を入力します。  <br/> |

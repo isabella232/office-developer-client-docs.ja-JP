@@ -1,5 +1,5 @@
 ---
-title: MAPI を使用してメッセージを送信します。
+title: MAPI を使用したメッセージの送信
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803866"
 ---
-# <a name="sending-messages-by-using-mapi"></a>MAPI を使用してメッセージを送信します。
+# <a name="sending-messages-by-using-mapi"></a>MAPI を使用したメッセージの送信
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアント アプリケーションは、メッセージを送信する[IMessage::SubmitMessage](imessage-submitmessage.md)メソッドを呼び出します。 **SubmitMessage**では、MAPI スプーラーを無効にするか、コントロールを転送する前に、またはトランスポート プロバイダーに直接メッセージを保存するのには[IMAPIProp::SaveChanges](imapiprop-savechanges.md)を呼び出します。 
   

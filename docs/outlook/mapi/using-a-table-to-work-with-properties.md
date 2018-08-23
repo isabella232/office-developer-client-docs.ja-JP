@@ -1,5 +1,5 @@
 ---
-title: プロパティを使用して作業するテーブルを使用します。
+title: テーブルを使用したプロパティの操作
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804189"
 ---
-# <a name="using-a-table-to-work-with-properties"></a>プロパティを使用して作業するテーブルを使用します。
+# <a name="using-a-table-to-work-with-properties"></a>テーブルを使用したプロパティの操作
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 多くのプロパティでは、オブジェクトがサポートするからとテーブルの列の両方が利用できます。 可能な限り、これらのプロパティをテーブルを取得します。
   

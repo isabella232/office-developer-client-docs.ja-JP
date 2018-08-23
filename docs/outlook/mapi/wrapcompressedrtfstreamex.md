@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 45abee1c-d7fb-b0f9-522d-8ba34caf1094
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: bdb879a2412c817b7b314cd7bf6de1fa4c9f40d2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19804228"
 ---
 # <a name="wrapcompressedrtfstreamex"></a>WrapCompressedRTFStreamEx
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 圧縮解除で圧縮されたリッチ テキスト形式式 (RTF)、電子メール メッセージの本文圧縮解除ストリームの形式を指定、必要に応じてネイティブ形式、圧縮解除されたストリームに変換し、いずれかの圧縮解除されたストリームを返しますまたは、。ネイティブ ストリームを変換します。
   
@@ -38,7 +38,7 @@ HRESULT __stdcall WrapCompressedRTFStreamEx(
 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _lpCompressedRTFStream_
   
@@ -68,7 +68,7 @@ MAPI_E_INVALID_PARAMETER
   
 - **MAPI_NATIVE_BODY**フラグは、 **ulFlags** 、**について**構造体のフィールドで示される*pWCSInfo*の**MAPI_MODIFY**フラグを使用している場合、この関数が返されます。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **WrapCompressedRTFStreamEx**は、ストリームを圧縮解除、圧縮された rtf 形式でカプセル化された電子メール メッセージの本文にアクセスできるように、圧縮解除されたストリームの形式では、および必要に応じてネイティブ形式の本文のストリームを返します。 ネイティブ形式の本文のストリームは、RTF、プレーン テキスト、または HTML で指定できます。 
   
@@ -78,5 +78,5 @@ Microsoft Office Outlook オブジェクト モデルでは、 **MailItem**オ�
   
 ## <a name="see-also"></a>関連項目
 
-- [圧縮された rtf 形式でメッセージの本文を取得し、ネイティブ形式に変換します。](how-to-retrieve-the-body-of-a-message-in-compressed-rtf-and-convert.md)
+- [圧縮 RTF 内のメッセージ本体を取り出し、ネイティブ形式に変換する](how-to-retrieve-the-body-of-a-message-in-compressed-rtf-and-convert.md)
 

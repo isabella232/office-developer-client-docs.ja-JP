@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804694"
 ---
-# <a name="what-the-psi-does-and-does-not-do"></a>PSI が行うこと、行わないこと
+# <a name="what-the-psi-does-and-does-not-do"></a>PSI のすること、しないこと
 
 プロジェクト Server インターフェイス (PSI) は、Project Server 2013 のオンプレミスのインストール環境で多くのサーバー側プロセスを自動化するのに役立ちます。 ですが、いくつかの関数は、Microsoft Project Professional 2013 の使用を要求します。
   
@@ -71,7 +71,7 @@ PSI が行えることはたくさんありますが、PSI が行えないこと
   
 EPTs ワークフローがないとしているか、従来の WF3.5 定義 (Project Server 2010 のワークフローのバージョン) を使用するとプロジェクトを作成するのには、PSI を使用できます。 WF4 定義を持つ、EPT でプロジェクトを作成するには、CSOM を使用します。
   
- **Project Professional を必要とする操作。**
+ **Project Professional を必要とするアクション:**
   
 次のリストは、PSI と CSOM のどちらでも行うことのできない処理を示しています。
   
@@ -204,7 +204,7 @@ EPTs ワークフローがないとしているか、従来の WF3.5 定義 (Pro
     
 - プロジェクトの作成後、プロジェクトの基本カレンダー ([CAL_UID](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.ProjectRow.CAL_UID.aspx) ) を変更します。 
     
-- 計算のオプションを変更します。 プロジェクトが作成されるオプションを変更すると、Project Professional が必要ですと、次の計算オプションを設定するのには PSI を使用することができます。 (Backstage ビューで、**オプション**を選択、**プロジェクトのオプション**] ダイアログ ボックスで、[**スケジュール**] タブを選択) 
+- 計算のオプションの変更。プロジェクトの作成時に、PSI を使用して以下の計算オプションを設定できますが、これらのオプションを変更するには Project Professional が必要です (Backstage ビューで、[**オプション**] を選択し、[**Project のオプション**] ダイアログ ボックスの [**スケジュール**] タブを選択します)。 
     
   - [PROJ_OPT_CALC_ACT_COSTS](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.ProjectRow.PROJ_OPT_CALC_ACT_COSTS.aspx)
     
@@ -233,12 +233,12 @@ EPTs ワークフローがないとしているか、従来の WF3.5 定義 (Pro
 ## <a name="see-also"></a>関連項目
 <a name="pj14_WhatPSIDoes_AR"> </a>
 
-- [CSOM とものはありません。](what-the-csom-does-and-does-not-do.md)
+- [CSOM のすること、しないこと](what-the-csom-does-and-does-not-do.md)
     
-- [プロジェクト サーバー プログラミング](project-server-programmability.md)
+- [Project Server プログラミング](project-server-programmability.md)
     
-- [SharePoint のクレーム ベース認証を使用して、オンラインでリモートの認証](http://msdn.microsoft.com/library/49067f7a-3020-478f-ba97-4b7ce3ea9b87%28Office.15%29.aspx)
+- [クレーム ベース認証を使用した SharePoint Online でのリモート認証](http://msdn.microsoft.com/library/49067f7a-3020-478f-ba97-4b7ce3ea9b87%28Office.15%29.aspx)
     
-- [Office アドイン](http://msdn.microsoft.com/library/1e123201-6e70-45c1-a48c-d5b955896ddb%28Office.15%29.aspx)
+- [Office 用アプリの作成](http://msdn.microsoft.com/library/1e123201-6e70-45c1-a48c-d5b955896ddb%28Office.15%29.aspx)
     
 

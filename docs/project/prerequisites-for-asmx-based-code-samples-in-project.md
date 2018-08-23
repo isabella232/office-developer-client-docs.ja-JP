@@ -37,7 +37,7 @@ Project 2013 SDK の新しい PSI のサンプルは、Windows Communication Fou
 ## <a name="setting-up-the-development-environment"></a>開発環境を設定する
 <a name="pj15_PrerequisitesASMX_Setup"> </a>
 
-1. **テスト プロジェクトのサーバー システムを設定**します。
+1. **テスト Project Server システムを設定する**。
     
    開発やテストを行う際には常にテスト Project Server システムを使用します。たとえコードが完全に動作しても、プロジェクト間の依存関係、レポート、またはその他の環境要因が意図しない結果を引き起こす可能性があります。 
     
@@ -46,7 +46,7 @@ Project 2013 SDK の新しい PSI のサンプルは、Windows Communication Fou
   
    場合によっては、サーバー上でリモート デバッグを実行する必要があります。 SharePoint ファーム内の各プロジェクトのサーバー コンピューター上のイベント ハンドラー アセンブリをインストールして、一般に、プロジェクトのサーバーの設定] ページを使用して、Project Web App インスタンスのイベント ハンドラーを構成して、イベント ハンドラーを設定する必要がありますもSharePoint サーバーの管理のアプリケーションの設定です。
     
-2. **開発用コンピューターを設定します。**
+2. **開発用コンピューターをセットアップする。**
     
    通常、PSI にはネットワーク経由でアクセスします。コード サンプルは、記載されている場合を除き、サーバーから分離されたクライアントで動作するように作られています。
     
@@ -57,9 +57,9 @@ Project 2013 SDK の新しい PSI のサンプルは、Windows Communication Fou
       - Microsoft.Office.Project.Server.Events.Receivers.dll
       - Microsoft.Office.Project.Server.Library.dll
         
-   3. コンパイルし、PSI の ASMX web サービスの ProjectServerServices.dll のプロキシ アセンブリを使用する方法の詳細については、 [PSI プロキシ アセンブリおよび IntelliSense の説明を使用して](#pj15_PrerequisitesASMX_BuildingProxy)参照してください。
+   3. PSI で ASMX Web サービスの ProjectServerServices.dll プロキシ アセンブリをコンパイルして使用する方法については、「[IntelliSense の説明を備えた PSI プロキシ アセンブリを使用する](#pj15_PrerequisitesASMX_BuildingProxy)」を参照してください。
     
-3. **IntelliSense ファイルをインストールします。**
+3. **IntelliSense ファイルをインストールする。**
     
     Project 2013 SDK から更新された IntelliSense XML ファイルは、コピーである Project Server アセンブリのクラスとメンバーの IntelliSense の説明を使用するには、Project Server アセンブリが配置されている同じディレクトリにダウンロードします。 たとえば、アプリケーションが Microsoft.Office.Project.Server.Library.dll アセンブリへの参照に設定されているディレクトリに Microsoft.Office.Project.Server.Library.xml ファイルをコピーします。
     
@@ -68,29 +68,29 @@ Project 2013 SDK の新しい PSI のサンプルは、Windows Communication Fou
 ## <a name="creating-the-application-and-adding-a-web-service-reference"></a>アプリケーションを作成して Web サービス参照を追加する
 <a name="pj15_PrerequisitesASMX_Configure"> </a>
 
-1. **コンソール アプリケーションを作成します**。
+1. **コンソール アプリケーションを作成する**。
     
-   **[新しいプロジェクト**] ダイアログ ボックスのドロップダウン ボックスの一覧で、コンソール アプリケーションを作成するときは、 **.NET Framework 4**を選択します。 新しいアプリケーションには、PSI のコード例をコピーできます。
+   コンソール アプリケーションを作成するには、[**新しいプロジェクト**] ダイアログ ボックスのドロップダウン リストから [**.NET Framework 4**] を選択します。この新しいアプリケーションに PSI サンプル コードをコピーできます。
     
-2. **Asmx サービスに必要な参照を追加します。**
+2. **ASMX に必要な参照を追加する。**
     
-   ソリューション エクスプ ローラーで、 **System.Web.Services**への参照を追加します (図 1 を参照してください)。 
+   ソリューション エクスプローラーで、**System.Web.Services** への参照を追加します (図 1 を参照)。 
     
-   **図 1 です。Visual Studio で参照を追加します。**
+   **図 1. Visual Studio での参照の追加**
 
    ![Visual Studio で参照を追加します。](media/pj15_PrerequisitesASMX_AddReference.gif "Visual Studio で参照を追加します。")
   
-3. **コードをコピー**します。
+3. **コードをコピーする。**
     
    コード サンプル全体をコンソール アプリケーションの Program.cs ファイルにコピーします。
     
-4. **サンプル アプリケーションの名前空間を設定**します。
+4. **サンプル アプリケーションの名前空間を設定する**。
     
    サンプルの上部に記されている名前空間をアプリケーションの既定の名前空間に変更するか、アプリケーションの既定の名前空間をサンプルに合わせて変更することができます。アプリケーションの既定の名前空間は、アプリケーションのプロパティを変更することによって変更できます。
     
    たとえば、 [QueueRenameProject](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueRenameProject.aspx)のコード サンプルは、 **Microsoft.SDK.Project.Samples.RenameProject**名前空間を持っています。 Visual Studio プロジェクトの名前が**RenameProject**の場合は、Program.cs ファイルから名前空間をコピーし、プロジェクト**のプロパティ**] ウィンドウを開きます ( **[プロジェクト**] メニューで、 **RenameProject のプロパティ**] をクリックすると)。 [**アプリケーション**] タブで、名前空間を**既定の名前空間**] テキスト ボックスにコピーします。 
     
-5. **Web 参照を設定**します。
+5. **Web 参照を設定する。**
     
    多くの例では、1 つ以上の PSI Web サービスへの参照が必要です。これらは、サンプル自体、またはサンプルの前にあるコメントに示されています。Web 参照の適切な名前空間を取得するには、最初にアプリケーションの既定の名前空間を設定する必要があります。
     
@@ -98,9 +98,9 @@ Project 2013 SDK の新しい PSI のサンプルは、Windows Communication Fou
     
    - という名前の ProjectServerServices.dll、PSI プロキシ アセンブリをビルドし、アセンブリへの参照を設定します。 IntelliSense を取得するには、これは、PSI の参照を追加するのには推奨される方法です。 [PSI プロキシ アセンブリおよび IntelliSense の説明を使用して](#pj15_PrerequisitesASMX_BuildingProxy)参照してください。
     
-   - Wsdl.exe 出力からプロキシ ファイルを Visual Studio ソリューションに追加します。 [PSI プロキシ ファイルを追加する](#pj15_PrerequisitesASMX_AddingProxyFile)を参照してください。
+   - wsdl.exe から出力されるプロキシ ファイルを Visual Studio ソリューションに追加します。 「[PSI プロキシ ファイルを追加する](#pj15_PrerequisitesASMX_AddingProxyFile)」を参照してください。
     
-   - Web サービス参照を追加するには、Visual Studio を使用します。 [サービス参照の追加、web](#pj15_PrerequisitesASMX_AddingServiceReference)を参照してください。
+   - Visual Studio を使用して Web サービス参照を追加します。「[Web サービス参照を追加する](#pj15_PrerequisitesASMX_AddingServiceReference)」を参照してください。
 
 <a name="pj15_PrerequisitesASMX_BuildingProxy"> </a>
 
@@ -166,13 +166,13 @@ WssInterop
 
 このスクリプトは ProjectServerServices.dll という名前のアセンブリを作成します。WCF ベースのアセンブリ用の ProjectServerServices.dll と混同しないようにしてください。ProjectServerServices.xml IntelliSense ファイルを使用していずれかのアセンブリの使用を有効にする場合、アセンブリ名は同じです。
   
-ASMX web サービスと WCF サービスの両方のスクリプトが作成した任意の名前空間は、どちらかのアセンブリの IntelliSense の ProjectServerServices.xml ファイルが機能するようにします。 ASMX ベースのプロキシ アセンブリの WCF ベースのプロキシ アセンブリ内のリソース サービスの名前空間は**SvcResource**です。 名前空間の名前を変更することができます、もちろん、-プロキシ アセンブリおよび IntelliSense の ProjectServerServices.xml ファイルに一致しているかどうかを確認します。
+ASMX Web サービスと WCF サービスの両方について、スクリプトによって作成される任意の名前空間は同一です。そのため、ProjectServerServices.xml IntelliSense ファイルはどちらのアセンブリでも使用できます。たとえば、WCF ベースのプロキシ アセンブリと ASMX ベースのプロキシ アセンブリ内の Resource サービスの名前空間は、**SvcResource** です。名前空間の名前を変更することもできますが、プロキシ アセンブリ内と ProjectServerServices.xml IntelliSense ファイル内では一致している必要があります。
   
-コード サンプルでは、PSI web サービスの名前空間に別の名前を使用する場合など**ProjectWebSvc**IntelliSense を実行するには、名前空間がプロキシ アセンブリと一致するように**SvcProject**を使用するサンプルを変更しなければなりません。 
+コード サンプルで PSI Web サービス名前空間の異なる名前を使用する場合 (たとえば **ProjectWebSvc**)、IntelliSense が機能するためには、**SvcProject** を使用するようにサンプルを変更し、名前空間がプロキシ アセンブリと一致するようにします。 
   
 ASMX ベースのプロキシ アセンブリを使用する利点は、すべて PSI web サービス名前空間が含まれています。複数の web 参照を作成する必要はありません。 別の利点としては、ProjectServerServices.dll プロキシ アセンブリへの参照を設定するのと同じディレクトリに ProjectServerServices.xml ファイルを追加する場合ことができます IntelliSense の説明、PSI のクラスおよびメンバーの。 図 2 は、 **Project.QueueCreateProject**メソッドの IntelliSense のテキストを示します。 詳細については、Project 2013 SDK ダウンロードの [IntelliSense] フォルダーで [ReadMe_IntelliSense] ファイルを参照してください。 
   
-**図 2 になります。プロジェクトの web サービスのメソッドの IntelliSense を使用します。**
+**図 2. Project Web サービスのメソッドでの IntelliSense の使用**
 
 ![PSI サービスのメソッドの Intellisense を使用します。](media/pj15_PrerequisitesASMX_Intellisense.gif "PSI サービスのメソッドの Intellisense を使用します。")
   
@@ -189,7 +189,7 @@ set WSDL="C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bin\x64\wsdl.exe"
 %WSDL% /nologo /l:cs /namespace:SvcProject /out:wsdl.Project.cs %VDIR%/Project.asmx?wsdl
 ```
 
-クラス変数名の**プロジェクト**として、**プロジェクト**のオブジェクトを定義するには、次のコードを使用します。 **AddContextInfo**メソッドでは、Windows 認証とフォーム ベース認証の**プロジェクト**のオブジェクトにコンテキスト情報を追加します。 
+**Project** オブジェクトを **project** という名前のクラス変数として定義するには、以下のコードを使用します。**AddContextInfo** メソッドによって、Windows 認証およびフォームベース認証を使用するためのコンテキスト情報が **project** オブジェクトに追加されます。 
   
 ```cs
 private static SvcProject.Project project;
@@ -208,18 +208,18 @@ public void AddContextInfo()
 ```
 
 > [!NOTE]
-> PSI プロキシ アセンブリを使用した場合、または**SvcProject**という名前のプロジェクトの [サービス参照のプロキシ ファイルを追加するかどうかは、**プロジェクト**のオブジェクトを作成するのには同じコードを使用します。 
+> PSI プロキシ アセンブリを使用する場合も、プロキシ ファイルを追加して **SvcProject** という名前の Project サービス参照を追加する場合も、同じコードを使用して **project** オブジェクトを使用します。 
   
 ### <a name="adding-a-web-service-reference"></a>Web サービス参照を追加する
 <a name="pj15_PrerequisitesASMX_AddingServiceReference"> </a>
 
 ASMX ベースのプロキシ アセンブリを使用したり、WSDL 出力ファイルを追加しない、する場合は、1 つまたは複数の個別の web 参照を設定できます。 次の手順では、Visual Studio 2012 を使用して web 参照を設定する方法を示します。
   
-1. **ソリューション エクスプ ローラー**で、[**参照**] フォルダーを右クリックし、し、[**サービス参照の追加**」を選択します。 
+1. **ソリューション エクスプローラー**で、[**参照設定**] フォルダーを右クリックし、[**サービス参照の追加**] をクリックします。 
     
-2. **サービス参照の追加**] ダイアログ ボックスで、[**詳細設定**を選択します。
+2. [**サービス参照の追加**] ダイアログ ボックスで、[**詳細設定**] を選択します。
     
-3. **[サービス参照設定**] ダイアログ ボックスで、[ **Web 参照の追加**を選択します。
+3. [**サービス参照の設定**] ダイアログ ボックスで、[**Web 参照の追加**] を選択します。
     
 4. [ **URL** ] テキスト ボックスに入力`http:// _ServerName_/ _ProjectServerName_/_vti_bin/psi/ _ServiceName_.asmx?wsdl`、および**Enter**キーを押してまたは、[**移動**] アイコンを選択します。 Secure Sockets Layer (SSL) がインストールされている場合は、HTTP プロトコルではなく HTTPS プロトコルを使用する必要があります。 
 
@@ -229,7 +229,7 @@ ASMX ベースのプロキシ アセンブリを使用したり、WSDL 出力フ
     
 5. 参照が解決した後は、 **Web 参照名**] テキスト ボックスに参照名を入力します。 Project 2013 開発者向けドキュメントのコード例では、 **Svc _ServiceName_** の任意の標準的な参照名を使用します。 **SvcProject**の名前は、プロジェクトの web サービス (図 3 を参照してください)。 
     
-   **図 3 です。ASMX web サービスの参照を追加します。**
+   **図 3. ASMX Web サービス参照の追加**
 
    ![ASMX web サービスの参照を追加します。](media/pj15_PrerequisitesASMX_AddWebSvcReference.gif "ASMX web サービスの参照を追加します。")
   
@@ -240,11 +240,11 @@ Project Server コンピューター上で実行する必要があります、�
 
 プロジェクトのサーバー アプリケーションは、多くの場合、SharePoint Server 2013 web サービスなどのサービスを使用します。 その他のサービスが必要な場合は、例に記載されています。
   
-コード サンプルのローカル参照は、サンプルの上部にある**using**ステートメントのとおりです。 
+コード サンプルのローカル参照は、サンプルの上部の **using** ステートメントに一覧表示されています。 
   
-1. **ソリューション エクスプ ローラー**で、[**参照**] フォルダーを右クリックし、**参照の追加**を選択し、
+1. **ソリューション エクスプローラー**で、[**参照設定**] フォルダーを右クリックし、[**参照の追加**] をクリックします。
     
-2. **[参照**] を選択し、以前にコピーしたプロジェクトのサーバー Dll を格納する場所を参照します。 Dll する必要がある、し、[ **ok]** を選択します。
+2. [**参照**] をクリックして、以前にコピーした Project Server の DLL を格納した場所を参照します。必要な DLL を選択して、[**OK**] を選択します。
     
 > [!NOTE]
 > 開発用コンピューター上のアセンブリのバージョンがターゲット Project Server コンピューターのものと厳密に一致していることを確認します。 
@@ -256,12 +256,12 @@ Windows 認証またはフォーム認証では、オンプレミスの Project 
   
 `The server was unable to process the request due to an internal error. . . .`
 
-ASMX の問題が解決するのには、各 PSI web サービスに対して定義されている派生クラスに PSI メソッドへのすべての呼び出しがあります。 派生クラスは、派生の PSI サービス クラスの cookie を取得するのに**SvcLoginWindows.LoginWindows**クラスを使用する必要がありますもします。 次の例では、 **ProjectDerived**クラスは、 **SvcProject.Project**クラスから派生します。 **プロジェクト**のクラスのメソッドを呼び出すたびに web 要求ヘッダーをオーバーライドし、派生クラスの**EnforceWindowsAuth**プロパティを追加します。 **EnforceWindowsAuth**プロパティが**true**の場合は、 **GetWebRequest**メソッドは、フォーム認証を無効にするヘッダーを追加します。 **EnforceWindowsAuth**が**false**の場合は、フォーム認証を続行できます。
+ASMX のこの問題を修正するには、PSI メソッドのすべての呼び出しをそれぞれの PSI Web サービスに対して定義される派生クラスに対して実行する必要があります。また、派生クラスは **SvcLoginWindows.LoginWindows** クラスを使用して派生 PSI サービス クラスの Cookie を取得する必要があります。以下の例で、**ProjectDerived** クラスは **SvcProject.Project** クラスから派生します。派生したクラスによって **EnforceWindowsAuth** プロパティが追加され、**Project** クラスのメソッドに対するすべての呼び出しの Web 要求ヘッダーが上書きされます。**EnforceWindowsAuth** プロパティが **true** の場合、**GetWebRequest** メソッドによって、フォーム認証を無効にするヘッダーが追加されます。**EnforceWindowsAuth** が **false** の場合、フォーム認証を続行できます。
   
-次の**ASMXLogon_MultiAuth**サンプルを使用するには、コンソール アプリケーションを作成、手順を実行は[、アプリケーションを作成し web サービス参照の追加](#pj15_PrerequisitesASMX_Configure)、および wsdl を追加し。LoginWindows.cs プロキシ ファイルと wsdl です。プロキシ ファイルを Project.cs。 **Main**メソッドでは、 **ProjectDerived**クラスの**プロジェクト**のインスタンスを作成します。 サンプルでは、**プロジェクトの**CookieContainer**オブジェクトを取得するのに**LoginWindowsDerived**クラスを派生を使用する必要があります。CookieContainer**プロパティで、Windows 認証とフォーム認証を区別します。 **プロジェクト**のオブジェクトは、 **SvcProject.Project**クラスの任意のメソッドへの呼び出しに使用できます。 
+以下の **ASMXLogon_MultiAuth** サンプルを使用するには、コンソール アプリケーションを作成し、「[アプリケーションを作成して Web サービス参照を追加する](#pj15_PrerequisitesASMX_Configure)」の手順に従います。その後、wsdl.LoginWindows.cs プロキシ ファイルと wsdl.Project.cs プロキシ ファイルを追加します。**Main** メソッドによって、**ProjectDerived** クラスの **project** インスタンスが作成されます。サンプルでは派生した **LoginWindowsDerived** クラスを使用して、**project.CookieContainer** プロパティの **CookieContainer** オブジェクトを取得する必要があります。このオブジェクトによって、フォーム認証と Windows 認証が識別されます。その後、**project** オブジェクトを使用して **SvcProject.Project** クラスの任意のメソッドを呼び出すことができます。 
   
 > [!NOTE]
-> **LoginWindows**サービスは、複数認証環境でのアプリケーションの asmx サービスに対してのみ必要です。 サンプルでは、 **ASMXLogon_MultiAuth** 、 **GetLogonCookie**メソッドは、 **loginWindows**オブジェクトの cookie を取得します。 **プロジェクトです。CookieContainer** **loginWindows.CookieContainer**の値にプロパティを設定します。 
+> **LoginWindows** サービスは、複数認証環境の ASMX アプリケーションでのみ必要です。**ASMXLogon_MultiAuth** サンプルでは、**GetLogonCookie** メソッドによって **loginWindows** オブジェクトの Cookie が取得されます。**project.CookieContainer** プロパティは **loginWindows.CookieContainer** 値に設定されます。 
   
 ```cs
 using System;
@@ -361,7 +361,7 @@ namespace ASMXLogon_MultiAuth
 }
 ```
 
-派生**LoginWindows**クラスを使用して、フォーム認証を無効にする web 要求ヘッダーの PSI 呼び出しを行うには、複数認証環境で実行されるアプリケーションに必要です。 Project Server では、クレーム認証のみを使用する場合は、web 要求のヘッダーを追加するクラスを派生させる必要はありません。 前の例は、両方の環境で実行されます。 
+派生した **LoginWindows** クラスを使用して、フォーム認証を無効化する Web 要求ヘッダーを持つ PSI 呼び出しを行うことは、複数認証環境で実行されるアプリケーションでは必須です。Project Server がクレーム認証のみを使用している場合は、Web 要求ヘッダーを追加するクラスを派生させる必要はありません。前に示した例は両方の環境で動作します。 
   
 WCF ベースのアプリケーション用の修正プログラムは、異なります。 詳細については、[プロジェクト内の WCF ベースのコード サンプルの前提条件](prerequisites-for-wcf-based-code-samples-in-project.md)で*複数の認証を使用して*セクションを参照してください。
   
@@ -391,7 +391,7 @@ const string PROJECT_SERVER_URI = "http://ServerName/ProjectServerName/";
     
 - Project Web App の [サーバー設定] ページを使用して ( `http://ServerName/ProjectServerName/_layouts/15/pwa/admin/admin.aspx`) とすべてのキュー ジョブの管理、削除、またはチェックインのエンタープライズ オブジェクトを強制的にします。 [サーバーの設定] ページで、これらのリンクにアクセスする管理者の権限がある必要があります。
     
-- **Microsoft SQL Server Management Studio の**を使用して、プロジェクト データベース内のテーブルに対してクエリを実行します。 たとえば、pub の上位 200 行を選択するのには次のクエリを使用します。ワークフロー ステージの詳細ページ (Pdp) のプロジェクトに関する情報を表示するのには MSP_WORKFLOW_STAGE_PDPS テーブルです。 
+- **Microsoft SQL Server Management Studio** を使用して Project データベース内のテーブルに対するクエリを実行します。たとえば、次のクエリを使用して、pub.MSP_WORKFLOW_STAGE_PDPS テーブルの先頭から 200 行を選択し、ワークフロー ステージにプロジェクト詳細ページ (PDP) についての情報を表示します。 
     
    ```sql
     SELECT TOP 200 [STAGE_UID]
@@ -413,11 +413,11 @@ const string PROJECT_SERVER_URI = "http://ServerName/ProjectServerName/";
   
 - **エンタープライズ ユーザー設定フィールドと参照テーブル**
     
-- **キュー ジョブを管理します。**
+- **キュー ジョブの管理**
     
-- **エンタープライズ オブジェクトを削除します。**
+- **エンタープライズ オブジェクトの削除**
     
-- **チェックインのエンタープライズ オブジェクトを強制的に**
+- **エンタープライズ オブジェクトの強制チェックイン**
     
 - **エンタープライズ プロジェクトの種類**
     
@@ -429,9 +429,9 @@ const string PROJECT_SERVER_URI = "http://ServerName/ProjectServerName/";
     
 - **タイムシート期間**
     
-- **タイムシートの設定と既定の設定**
+- **タイムシートの設定および既定値**
     
-- **行の分類**
+- **管理用行の分類**
     
 特定の Project Web App サーバーの設定ページではなく、Project Web App インスタンスごとに、SharePoint Server 2013 では、追加の設定が管理されます。 SharePoint サーバーの全体管理アプリケーションで、**アプリケーションの全般的な設定**を選択し、**プロジェクトのサーバーの設定**、[**管理**] を選択を [サーバーの設定] ページで、ドロップダウン ボックスの一覧で、Project Web App インスタンスを選択. たとえば、選択した Project Web App インスタンスのイベント ハンドラーを追加、削除する**サーバー側のイベント ハンドラー**を選択します。 
   

@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805350"
 ---
-# <a name="eventxfmod-cell-events-section"></a>[EventXFMod] セル ([Events] セクション)
+# <a name="eventxfmod-cell-events-section"></a>[EventXFMod] セル ([イベント] セクション)
 
 ページ上で、図形の位置または向きの変更 ("XF") が行われたときに評価されるイベント セルです。
   
@@ -24,13 +24,13 @@ ms.locfileid: "19805350"
 
 イベント セルはイベントの発生時にのみ評価されます。数式の入力時には評価されません。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [eventxfmod] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [EventXFMod] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | [Eventxfmod]  <br/> |
    
-プログラムから、インデックスによって [eventxfmod] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [EventXFMod] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

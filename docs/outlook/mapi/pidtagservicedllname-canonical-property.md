@@ -1,5 +1,5 @@
 ---
-title: PidTagServiceDllName の標準的なプロパティ
+title: PidTagServiceDllName 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a651af84-1711-449e-ba7e-5ce09cafa02b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 54fe624c98ddb631326853f387372468a61b2f70
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803535"
 ---
-# <a name="pidtagservicedllname-canonical-property"></a>PidTagServiceDllName の標準的なプロパティ
+# <a name="pidtagservicedllname-canonical-property"></a>PidTagServiceDllName 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 構成にするのにはメッセージ サービス プロバイダーのエントリ ポイント関数を含む DLL のファイル名が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_SERVICE_DLL_NAME、PR_SERVICE_DLL_NAME_A、PR_SERVICE_DLL_NAME_W  <br/> |
+|関連するプロパティ:  <br/> |PR_SERVICE_DLL_NAME、PR_SERVICE_DLL_NAME_A、PR_SERVICE_DLL_NAME_W  <br/> |
 |識別子:  <br/> |0x3D0A  <br/> |
-|データを入力します。  <br/> |PT_STRING8、PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |領域:  <br/> |MAPI プロファイル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **PR_SERVICE_ENTRY_NAME** ([PidTagServiceEntryName](pidtagserviceentryname-canonical-property.md)) メソッドのエントリ ポイント関数名が表示されたら、エントリ ポイントが存在することを示します。
   
@@ -58,14 +58,14 @@ Mapitags.h
 
 
 
-[PidTagProviderDllName の標準的なプロパティ](pidtagproviderdllname-canonical-property.md)
+[PidTagProviderDllName 標準プロパティ](pidtagproviderdllname-canonical-property.md)
 
 
 [MAPI プロパティ](mapi-properties.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

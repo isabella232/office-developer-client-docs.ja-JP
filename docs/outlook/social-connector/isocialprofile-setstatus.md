@@ -25,5 +25,5 @@ HRESULT _stdcall SetStatus(BSTR status);
 
 ## <a name="see-also"></a>関連項目
 
-- [ISocialProfile: ISocialPerson](isocialprofileisocialperson.md)
+- [ISocialProfile : ISocialPerson](isocialprofileisocialperson.md)
 

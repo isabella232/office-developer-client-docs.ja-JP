@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 30dd19d9-0840-49e9-aec6-ec8d19b1f91d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e9ad675e6df88265238a28f18e5cfcdacfdfbb5f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803985"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オブジェクトのプロパティの属性の一覧が含まれています。 
   
@@ -41,7 +41,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **あう**
   
@@ -59,7 +59,7 @@ typedef struct
     
     - PROPATTR_NOT_PRESENT
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SPropAttrArray**構造体を使用して実装されているデータ オブジェクトのプロパティで、 [IPropData: IMAPIProp](ipropdataimapiprop.md)インタ フェースです。 MAPI の実装で使用されても[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)に基づいて構造化ストレージは。 
   
@@ -69,7 +69,7 @@ typedef struct
 
 [IPropData: IMAPIProp](ipropdataimapiprop.md)
   
-[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)
+[IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
   
 [CbNewSPropAttrArray](cbnewspropattrarray.md)
   

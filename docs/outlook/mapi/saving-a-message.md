@@ -19,7 +19,7 @@ ms.locfileid: "19803800"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアントではメッセージのテキストのプロパティ、添付ファイルのプロパティ、**あるの PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md))、およびプロパティだけでなく、いくつかのプロパティを設定するのには、メッセージの[IMAPIProp::SetProps](imapiprop-setprops.md)メソッドを呼び出す通常メッセージを保存すると、前に受信者のリストに関連付けられています。
   

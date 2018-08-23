@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805121"
 ---
-# <a name="copy-and-paste-a-formula-from-one-cell-into-another"></a>セル間で数式をコピーし、貼り付ける
+# <a name="copy-and-paste-a-formula-from-one-cell-into-another"></a>セル間での数式のコピーおよび貼り付け
 
 1. コピーする数式を含むセルを選択します。
     

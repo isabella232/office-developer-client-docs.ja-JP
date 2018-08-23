@@ -22,7 +22,7 @@ ms.locfileid: "19805180"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[DataColumn_Type](datacolumn_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[DataColumn_Type](datacolumn_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |recordsets.xml  <br/> |
@@ -52,14 +52,14 @@ ms.locfileid: "19805180"
 
 |**属性**|**型**|**必須**|**説明**|**使用可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|カレンダー  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> |データ列の予定表の ID です。  <br/> |Xsd:unsignedShort の値を入力します。  <br/> |
+|予定表  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> |データ列の予定表の ID です。  <br/> |Xsd:unsignedShort の値を入力します。  <br/> |
 |ColumnNameID  <br/> |xsd:string  <br/> |必須  <br/> |データ列の外部名。 [**外部データ**] ウィンドウおよび [データ グラフィックのラベルでは、見出しに表示されます。  <br/> |Xsd:string の値を入力します。  <br/> |
 |通貨型 (Currency)  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> |データ列の通貨の ID です。  <br/> |Xsd:unsignedShort の値を入力します。  <br/> |
 |DataType  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> |データ列内のデータの種類です。  <br/> |Xsd:unsignedShort の値を入力します。  <br/> |
-|度  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |単位、たとえば、乗、2 乗の程度 (電源) を指定します。 既定値 (省略可能な属性) とは、1 です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
+|Degree  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |単位、たとえば、乗、2 乗の程度 (電源) を指定します。 既定値 (省略可能な属性) とは、1 です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
 |DisplayOrder  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |(最大値) の右端の列の一番左の列 (0) から、**外部データ**ウィンドウでデータ列の表示位置を定義します。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
 |DisplayWidth  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |[**外部データ**] ウィンドウで [データ] 列の幅です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|ハイパーリンク  <br/> |xsd:boolean  <br/> |省略可能  <br/> |かどうか、データ列は、図形がデータにリンクされている場合、図形にハイパーリンクを作成します。  <br/> |Xsd:boolean の値を入力します。  <br/> |
+|Hyperlink  <br/> |xsd:boolean  <br/> |省略可能  <br/> |かどうか、データ列は、図形がデータにリンクされている場合、図形にハイパーリンクを作成します。  <br/> |Xsd:boolean の値を入力します。  <br/> |
 |ラベル  <br/> |xsd:string  <br/> |必須  <br/> |データ列のラベルです。  <br/> |Xsd:string の値を入力します。  <br/> |
 |LangID  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |データ列の言語 ID です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
 |マップ  <br/> |xsd:boolean  <br/> |省略可能  <br/> |[**外部データ**] ウィンドウの列が表示されているかどうかを指定します。 表示されている列の true (1)列を表示するのには false (0)。 (省略可能な属性) の既定値は、列を表示するは。  <br/> |Xsd:boolean の値を入力します。  <br/> |

@@ -17,7 +17,7 @@ ms.locfileid: "19804193"
 ---
 # <a name="upmsg"></a>UPMSG
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [メッセージの状態をアップロード](upload-message-state.md)する際に Outlook アイテムをアップロードする方法の詳細については。
   
@@ -38,7 +38,7 @@ struct UPMSG
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  _ulFlags_
   
@@ -119,7 +119,7 @@ _skeySrc_
 ## <a name="see-also"></a>関連項目
 
 - [レプリケーション API について](about-the-replication-api.md)
-- [レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
 - [MAPI �萔](mapi-constants.md)
 - [FEID](feid.md)
 - [MEID](meid.md)

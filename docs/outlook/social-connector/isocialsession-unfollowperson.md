@@ -23,19 +23,19 @@ ms.locfileid: "19804373"
 HRESULT _stdcall UnFollowPerson([in] BSTR userID);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _ユーザー Id_
   
 > [in]人のソーシャル ネットワークのユーザー ID を含む文字列です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 _ユーザー Id_パラメーターは、ソーシャル ネットワーク上のユーザーの有効なユーザー ID である必要があります。 
   
-Outlook ソーシャル コネクタ (OSC) プロバイダーは、**該当****機能**の XML で**doNotFollowPerson**を設定するには、プロバイダーは、ユーザーの ID が渡されますが、ネットワーク上のユーザーと一致しないことの場合は OSC_E_NOT_FOUND エラーを返す必要があります。 設定した場合、プロバイダー **doNotFollowPerson** **false**として**の機能**で、プロバイダーは、OSC_E_FAIL エラーを返す必要があります。 エラー コードの詳細については、 [Outlook ソーシャル コネクタ プロバイダーのエラー コード](outlook-social-connector-provider-error-codes.md)を参照してください。
+Outlook ソーシャル コネクタ (OSC) プロバイダーは、**該当****機能**の XML で**doNotFollowPerson**を設定するには、プロバイダーは、ユーザーの ID が渡されますが、ネットワーク上のユーザーと一致しないことの場合は OSC_E_NOT_FOUND エラーを返す必要があります。 設定した場合、プロバイダー **doNotFollowPerson** **false**として**の機能**で、プロバイダーは、OSC_E_FAIL エラーを返す必要があります。 エラー コードの詳細については、「[Outlook Social Connector Provider Error Codes](outlook-social-connector-provider-error-codes.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

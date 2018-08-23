@@ -1,5 +1,5 @@
 ---
-title: プロジェクト詳細ページに追加する一部のプロジェクト ID を取得します。
+title: プロジェクト詳細ページのアドインの部分でプロジェクト ID を取得する
 manager: soliver
 ms.date: 08/10/2016
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804542"
 ---
-# <a name="get-the-project-id-in-an-add-in-part-on-a-project-details-page"></a>プロジェクト詳細ページに追加する一部のプロジェクト ID を取得します。
+# <a name="get-the-project-id-in-an-add-in-part-on-a-project-details-page"></a>プロジェクト詳細ページのアドインの部分でプロジェクト ID を取得する
 
 パーツの追加では、ホスト ページから完全に隔離されている**iframe**要素内でホストされています。 プロジェクト詳細ページ (PDP) に追加のパーツから現在のプロジェクトに関する情報を取得するには、 **window.postMessage**メソッド、イベント ・ リスナー、およびメッセージからのプロジェクト ID を解析するイベント ハンドラーを使用できます。 
   
@@ -250,8 +250,8 @@ AppManifest.xml ファイルで、アドインを Project Server のデータ、
 
 ## <a name="see-also"></a>関連項目
 
-- [プロジェクトのプログラミング タスク](project-programming-tasks.md)
-- [Project Server の SharePoint でホストされているアドインの作成します。](create-a-sharepoint-hosted-project-server-add-in.md)
+- [Project のプログラミング タスク](project-programming-tasks.md)
+- [SharePoint をホストとする Project Server アドインを作成する](create-a-sharepoint-hosted-project-server-add-in.md)
 - [アドイン パーツを作成して SharePoint アドインと共にインストールする](http://msdn.microsoft.com/library/a2664289-6c56-4cb1-987a-22367fad55eb%28Office.15%29.aspx)
     
 

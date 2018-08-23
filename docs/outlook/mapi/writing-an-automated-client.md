@@ -1,5 +1,5 @@
 ---
-title: 自動のクライアントを作成します。
+title: 自動化クライアントの作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804225"
 ---
-# <a name="writing-an-automated-client"></a>自動のクライアントを作成します。
+# <a name="writing-an-automated-client"></a>自動化クライアントの作成
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 自動化されたクライアント アプリケーションは、ユーザー インターフェイスを表示しない、無人で実行されるアプリケーションです。
   

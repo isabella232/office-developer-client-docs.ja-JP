@@ -1,5 +1,5 @@
 ---
-title: PidTagScheduleInfoMonthsMerged の標準的なプロパティ
+title: PidTagScheduleInfoMonthsMerged 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b13b5d7b-413e-4405-8a35-0422477a9e86
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c1096df0eff4b43239978620f4ccf2e9d221095a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803485"
 ---
-# <a name="pidtagscheduleinfomonthsmerged-canonical-property"></a>PidTagScheduleInfoMonthsMerged の標準的なプロパティ
+# <a name="pidtagscheduleinfomonthsmerged-canonical-property"></a>PidTagScheduleInfoMonthsMerged 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ タイプを使用中の空き時間情報データや、不在 (時 OOF) の月の空き時間メッセージにリストが含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_SCHDINFO_MONTHS_MERGED  <br/> |
+|関連するプロパティ:  <br/> |PR_SCHDINFO_MONTHS_MERGED  <br/> |
 |識別子:  <br/> |0x684F  <br/> |
-|データを入力します。  <br/> |PT_MV_LONG  <br/> |
+|データの種類 :   <br/> |PT_MV_LONG  <br/> |
 |領域:  <br/> |空き/予約済み  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 仮の予定の空き時間情報の種類のイベントは、このプロパティには含まれません。 構文と形式およびこのプロパティの制約は、 **PR_SCHDINFO_MONTHS_TENTATIVE** ([PidTagScheduleInfoMonthsTentative](pidtagscheduleinfomonthstentative-canonical-property.md)) のものと同じですが、関連付けられているカレンダー オブジェクトの不在時または取り込み中にマークされている予定を参照してください。 
   
@@ -68,7 +68,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

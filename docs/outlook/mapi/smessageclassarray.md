@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 05f8c191-db2b-4174-8b3c-a9fdabfe6ac8
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 01563e3655d42abc62ea88a12f2878e5d81129d7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803975"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ クラスの文字列へのポインターの配列が含まれています。
   
@@ -41,7 +41,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **あう**
   
@@ -51,7 +51,7 @@ typedef struct
   
 > メッセージ クラスの文字列へのポインターの配列です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SMessageClassArray**構造体は、次のメソッドのパラメーターとして渡されます。 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ac31cf65-a2bc-4c8e-91a4-d2903aa98776
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 28a802ffc43b08d3e2ec2be26dd98fa78f474d91
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803811"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 イベント通知のグループを単一のメモリ ブロックにコピーします。 
   
@@ -42,7 +42,7 @@ SCODE ScCopyNotifications(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cntf_
   
@@ -70,7 +70,7 @@ E_INVALIDARG
   
 > 無効な通知が発生しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 _Pcb_のパラメーターに NULL を渡した場合は、コピーは実行されません。_pcb_の null 以外の値が渡された場合、 **ScCopyNotifications**関数は、単一ブロックのメモリをアレイとアレイ自体のサイズをコピーします。 _Pcb_が NULL でない場合は、 _pvDst_パラメーターに格納されているバイト数に設定されています。 _PvDst_パラメーターは、配列全体を格納できる大きさである必要があります。 
   

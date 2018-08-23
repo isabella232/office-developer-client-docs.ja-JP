@@ -1,5 +1,5 @@
 ---
-title: へ
+title: RTFSync
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 627f95e9-39ac-4d43-8f02-687783b09785
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: f6afa890f61bb2f394e3cf69e0f2c54699a2ad9e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,9 +19,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803801"
 ---
-# <a name="rtfsync"></a>へ
+# <a name="rtfsync"></a>RTFSync
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 リッチ テキスト形式 (RTF) メッセージのテキストがテキスト形式のバージョンと一致していることを確認します。 RTF 形式を読み取る前に、RTF 形式を変更した後にこの関数を呼び出す必要があります。 
   
@@ -39,7 +39,7 @@ HRESULT RTFSync(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _lpMessage_
   

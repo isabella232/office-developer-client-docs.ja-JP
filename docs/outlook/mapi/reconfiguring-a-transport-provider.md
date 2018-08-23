@@ -1,5 +1,5 @@
 ---
-title: トランスポート プロバイダーを再構成します。
+title: 転送プロバイダーの再構成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803728"
 ---
-# <a name="reconfiguring-a-transport-provider"></a>トランスポート プロバイダーを再構成します。
+# <a name="reconfiguring-a-transport-provider"></a>転送プロバイダーの再構成
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロバイダーのプロパティの一部を変更するのには、トランスポート プロバイダーの状態のオブジェクトを使用できます。 変更可能なプロパティの範囲は、プロバイダーのプロパティ シートとプロパティを定義する方法に含まれているプロパティに依存します。 
   

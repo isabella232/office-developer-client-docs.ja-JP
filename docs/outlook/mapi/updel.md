@@ -19,7 +19,7 @@ ms.locfileid: "19804171"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ローカル ストアで削除済みアイテムの情報です。 [アップロード ステータスの状態を削除](upload-delete-status-state.md)する時にこの情報が使用されます。
   
@@ -33,7 +33,7 @@ struct UPDEL
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  _pupde_
   
@@ -49,7 +49,7 @@ struct UPDEL
 
 [レプリケーション API について](about-the-replication-api.md)
   
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [MAPI �萔](mapi-constants.md)
 

@@ -17,7 +17,7 @@ ms.locfileid: "19804058"
 ---
 # <a name="synccont"></a>SYNCCONT
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [内容の状態を同期](synchronize-contents-state.md)する際にサーバーとローカル ストア内の指定したフォルダーの内容を同期するための情報です。 これだけのアップロード、またはアップロードし、ダウンロードを含む完全な同期が含まれます。
   
@@ -35,7 +35,7 @@ struct SYNCCONT
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 _ulFlags_
   
@@ -68,6 +68,6 @@ _psosReserved_
 ## <a name="see-also"></a>関連項目
 
 - [レプリケーション API について](about-the-replication-api.md)
-- [レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
 - [MAPI �萔](mapi-constants.md)
 

@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805214"
 ---
-# <a name="defaulttabstop-cell-text-block-format-section"></a>[DefaultTabstop] セル ([Text Block Format] セクション)
+# <a name="defaulttabstop-cell-text-block-format-section"></a>[DefaultTabstop] セル ([テキスト ブロックの書式設定] セクション)
 
 テキスト ブロックの既定のタブ位置の間隔を指定します。 
   
@@ -24,13 +24,13 @@ ms.locfileid: "19805214"
 
 既定値は、英国単位で図面を作成した場合は 0.5 インチ、メートル法単位の場合は 1.5 cm になります。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[DefaultTabstop] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [DefaultTabstop] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |DefaultTabstop  <br/> |
    
-プログラムから、インデックスによって [DefaultTabstop] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [DefaultTabstop] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

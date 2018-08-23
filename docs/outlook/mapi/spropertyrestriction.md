@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2bbf13e9-05b3-4498-8e08-d9e07505190d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: f59b0041f271010e56dda2f73d2248f133bc1325
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19803978"
 ---
 # <a name="spropertyrestriction"></a>SPropertyRestriction
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロパティの値を持つ定数を一致させるために使用されるプロパティの制限について説明します。
   
@@ -39,7 +39,7 @@ typedef struct _SPropertyRestriction
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 **relop**
   
@@ -67,7 +67,7 @@ typedef struct _SPropertyRestriction
   
 > 比較で使用される定数値を含む[SPropValue](spropvalue.md)構造体へのポインター。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SPropertyRestriction**構造体では、2 つのプロパティ タグがあります。 1 **ulPropTag**のメンバーで、 **lpProp**が指す**SPropValue**構造体の**ulPropTag**メンバーには、他のです。 MAPI には、プロパティの識別子フィールドとプロパティの種類] フィールドの両方が必要です。 **SPropertyRestriction**で**ulPropTag**では、対応するプロパティと**SPropValue**の**ulPropTag**の型に**SPropertyRestriction**の**lpProp**のポインターを示す方法のメンバーの値、**lpProp**共用体が解釈されます。 2 つのプロパティの型が一致する必要がありますが、そのエラー値の制限は、 [IMAPITable::Restrict](imapitable-restrict.md)または[IMAPITable::FindRow](imapitable-findrow.md)への呼び出しで使用すると MAPI_E_TOO_COMPLEX が返されます。 
   

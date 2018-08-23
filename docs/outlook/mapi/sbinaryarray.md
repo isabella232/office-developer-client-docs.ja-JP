@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2d5b7302-cad2-4522-beb1-7c6c711f42e6
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fd9a8d731d141dbb71a204a2d20b268951bef42f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803802"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 バイナリ値の配列が含まれています。 
   
@@ -40,7 +40,7 @@ typedef struct _SBinaryArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **あう**
   
@@ -50,7 +50,7 @@ typedef struct _SBinaryArray
   
 > バイナリ値を格納する[SBinary](sbinary.md)構造体の配列へのポインター。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SBinaryArray**構造体を使用して、PT_MV_BINARY の種類のプロパティを記述します。 
   

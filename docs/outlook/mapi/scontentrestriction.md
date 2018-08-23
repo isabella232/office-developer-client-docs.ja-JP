@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 784c8a5a-493e-48e6-8784-ba8122c76e3d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 34177aee48adad7eecb40836a247705fc22d2a32
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19803840"
 ---
 # <a name="scontentrestriction"></a>SContentRestriction
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 検索文字列に一致する内容を持つ列を含む行だけを表形式ビューを制限するために使用されるコンテンツの制限について説明します。 
   
@@ -39,7 +39,7 @@ typedef struct _SContentRestriction
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 **ulFuzzyLevel**
   
@@ -69,7 +69,7 @@ typedef struct _SContentRestriction
   
 > 検索文字列として使用する文字列値を格納するプロパティ値の構造体へのポインター。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SContentRestriction**構造体には 2 つのプロパティ タグがあります: **lpProp**が指す**ulPropTag**のメンバーと、 **ulPropTag** 、 **SPropValue**構造体のメンバーで、その他のいずれかです。 両方のタグでは、MAPI プロパティの種類のフィールドだけが必要ですでプロパティの識別子フィールドは無視されます。 ただし、2 つのプロパティの型が一致する必要がありますか、またはエラー値の制限は、 [IMAPITable::Restrict](imapitable-restrict.md)または[IMAPITable::FindRow](imapitable-findrow.md)への呼び出しで使用すると MAPI_E_TOO_COMPLEX が返されます。 
   

@@ -58,7 +58,7 @@ Project 2013 SDK のダウンロードは、 [Microsoft ダウンロード セ�
 
 Project 2013 SDK の主な目的は、プロジェクトの評価のためのアプリケーション、プロジェクト Server インターフェイス (PSI) サービス、および作業ウィンドウのアプリケーションを作成するためのプログラミングの概要について説明し、CSOM および関連機能のマニュアルを提供します。 Project 2013 SDK には、Project Server 2013 と (プロジェクトの標準的な 2013、評価のためのプロジェクト、および Project Web App の) プロジェクトのクライアントのカスタマイズの主要な領域の例手順にはが含まれています。 ドキュメントが不完全です。以降のリリースより多くのコンテンツが追加されます。 
   
-ネットワーク通信の基盤となるテクノロジーは、PSI を使用してオンプレミス開発プロジェクト サーバー CSOM を使用するクラウドのシナリオを含む、Project Server 2013 のように、Windows Communication Foundation (WCF) です。 従来の ASMX web サービス参照は、WCF アーキテクチャに基づきます。 Project Server 2013 の PSI web サービス (ASMX ファイル) への参照を設定する場合は、追加する必要があります、`?wsdl`のパスを [URL] です。 たとえば、 `http://ServerName/ProjectServerName/_vti_bin/PSI/Resource.asmx?wsdl`。
+ネットワーク通信の基盤となるテクノロジーは、PSI を使用してオンプレミス開発プロジェクト サーバー CSOM を使用するクラウドのシナリオを含む、Project Server 2013 のように、Windows Communication Foundation (WCF) です。 従来の ASMX web サービス参照は、WCF アーキテクチャに基づきます。 Project Server 2013 の PSI web サービス (ASMX ファイル) への参照を設定する場合は、追加する必要があります、`?wsdl`のパスを [URL] です。 例: `http://ServerName/ProjectServerName/_vti_bin/PSI/Resource.asmx?wsdl`。
   
 > [!NOTE]
 > Project Server の機能を頻繁に使用されるのみに対応して、お勧めを使用すること、CSOM 可能なアプリケーションの両方に設置型とクラウドで。 Project Server 2013 では使用可能であるが、PSI の ASMX インターフェイスは使用されなくなりました。 PSI へのフル アクセスを必要とする設置型のアプリケーションでは、ASMX インターフェイスではなく、PSI の WCF インターフェイスを使用してください。 
@@ -75,7 +75,7 @@ Project Server 2013 では、設置型の両方の Microsoft SharePoint Designer
   
 - [プロジェクト SharePoint でホストされているサーバーを作成するアドイン](create-a-sharepoint-hosted-project-server-add-in.md)には、Project Server 2013 とオンライン プロジェクトで使用できるアプリケーションのリモートの開発に Visual Studio を使用する方法を示します。 
     
-- [Project Server 2013 のアーキテクチャ](project-server-2013-architecture.md)では、Project Server プラットフォームの主な新機能について説明します。 
+- 「[Project Server 2013 architecture](project-server-2013-architecture.md)」では、Project Server プラットフォームの主要な新機能について説明します。 
     
 - [Project Server 2013 の JavaScript オブジェクト モデルを使うにあたって](getting-started-with-the-project-server-2013-javascript-object-model.md)は、Project Server にアクセスできる web アプリケーションを開発する方法を示します。 
     
@@ -103,7 +103,7 @@ Project 2013 SDK には、最上位レベルの 2 つのセクションがあり
     
 - [Project Server 2013 のクラス ライブラリと web サービス参照](http://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)のセクションでは、CSOM および PSI サービスのパブリック アセンブリ、Microsoft.ProjectServer.Client.dll アセンブリのオブジェクト モデルを説明します。 
     
-次のような**概念および方法を説明した記事**のセクションがあります。 
+「**概念と方法の記事**」セクションの内容は、以下のとおりです。 
   
 - [新アウトは、どのような開発者向け](updates-for-developers-in-project-2013.md)新しいプログラミングの主な機能の説明および Project 2013 の機能は使用されなくなりました。 
     
@@ -119,7 +119,7 @@ Project 2013 SDK には、最上位レベルの 2 つのセクションがあり
 ## <a name="see-also"></a>関連項目
 <a name="pj15_Welcome_AR"> </a>
 
-- [Project 2013 の開発者用の更新プログラム](updates-for-developers-in-project-2013.md)
+- [Project 2013 の開発者向けの新機能](updates-for-developers-in-project-2013.md)
     
 - [Project Server 2013 のアーキテクチャ](project-server-2013-architecture.md)
     
@@ -131,7 +131,7 @@ Project 2013 SDK には、最上位レベルの 2 つのセクションがあり
     
 - [Office 開発者向けドキュメント](http://msdn.microsoft.com/office)
     
-- [Project 2010 の開発を開始します。](http://msdn.microsoft.com/en-us/library/gg607685.aspx)
+- [Project 2010 の開発を開始する](http://msdn.microsoft.com/en-us/library/gg607685.aspx)
     
 - [ドキュメントの表記規則](http://msdn.microsoft.com/library/6b38829f-1a9d-4fb6-ad3b-01182628080a.aspx)
     

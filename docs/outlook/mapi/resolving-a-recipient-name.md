@@ -1,5 +1,5 @@
 ---
-title: 受信者名を解決します。
+title: 受信者名の解決
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803761"
 ---
-# <a name="resolving-a-recipient-name"></a>受信者名を解決します。
+# <a name="resolving-a-recipient-name"></a>受信者名の解決
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージが処理されると、ときに、各受信者に関連するプロパティを持つ受信者のリストが組み込まれています。 メッセージが送信されるまでに、長期のエントリ id を受信者のこれらのプロパティのいずれかの必要があります。 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) のプロパティが各受信者に含まれていることを確認するには、受信者リストは、 [IAddrBook への呼び出し内のパラメーターに_lpAdrList_の内容を記述する[ADRLIST](adrlist.md)構造体を渡します。ResolveName](iaddrbook-resolvename.md)。
   

@@ -19,10 +19,10 @@ ms.locfileid: "19804535"
 
 このトピックでは、Outlook の気象情報の XML スキーマの種類が一覧表示されます。
   
-- [currentType 複合型](currenttype-complextype-outlook-weather-information-schema.md)
+- [currentType complexType](currenttype-complextype-outlook-weather-information-schema.md)
     
-- [forecastType 複合型](forecasttype-complextype-outlook-weather-information-schema.md)
+- [forecastType complexType](forecasttype-complextype-outlook-weather-information-schema.md)
     
-- [weatherType 複合型](weathertype-complextype-outlook-weather-information-schema.md)
+- [weatherType complexType](weathertype-complextype-outlook-weather-information-schema.md)
     
 

@@ -14,19 +14,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805054"
 ---
-# <a name="compoundtype-cell-line-format-section"></a>[CompoundType] セル ([線の形式] セクション)
+# <a name="compoundtype-cell-line-format-section"></a>[CompoundType] セル ([線の書式設定] セクション)
 
 複合図形の線の種類を決定します。 
   
 |**値**|**説明**|
 |:-----|:-----|
 |0  <br/> |Simple/標準  <br/> |
-|1  <br/> |倍精度浮動小数点型 (Double)  <br/> |
+|1  <br/> |倍精度浮動小数点数  <br/> |
 |2  <br/> |太さシンします。  <br/> |
 |3  <br/> |細い太い  <br/> |
-|4  <br/> |トリプル  <br/> |
+|4  <br/> |Triple  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **セル**要素の**N**属性の値によって、別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ **CompoundType** ] セルへの参照を取得、次のように使用します。 
   

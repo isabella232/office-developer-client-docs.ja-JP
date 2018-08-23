@@ -1,5 +1,5 @@
 ---
-title: 名前付け規則の値を返す
+title: 戻り値の名前付け規則
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803783"
 ---
-# <a name="return-value-naming-convention"></a>名前付け規則の値を返す
+# <a name="return-value-naming-convention"></a>戻り値の名前付け規則
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPICODE。H ヘッダー ファイルには、多くのクライアントまたはサービス プロバイダーはインターフェイス メソッドの実装から返すことがありますか、呼び出しから返される可能性があります参照してください値が含まれています。
   

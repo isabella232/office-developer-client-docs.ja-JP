@@ -15,28 +15,28 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804479"
 ---
-# <a name="isocialprovider--iunknown"></a>ISocialProvider: IUnknown
+# <a name="isocialprovider--iunknown"></a>ISocialProvider : IUnknown
 
 Outlook ソーシャル コネクタ (OSC) プロバイダーのインスタンスを表します。
   
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 次の表は、 **ISocialProvider**インターフェイスで使用可能なメンバーを示します。 
   
 |**名前**|**メンバーの種類**|**説明**|
 |:-----|:-----|:-----|
-|[DefaultSiteUrls](isocialprovider-defaultsiteurls.md) <br/> |Property  <br/> |OSC プロバイダーのサイトの Url を指定する文字列の配列を返します。  <br/> |
-|[GetAutoConfiguredSession](isocialprovider-getautoconfiguredsession.md) <br/> |メソッド  <br/> |自動的に構成されている[ISocialSession](isocialsessioniunknown.md)インターフェイスを取得します。  <br/> |
+|[DefaultSiteUrls](isocialprovider-defaultsiteurls.md) <br/> |プロパティ  <br/> |OSC プロバイダーのサイトの Url を指定する文字列の配列を返します。  <br/> |
+|[GetAutoConfiguredSession](isocialprovider-getautoconfiguredsession.md) <br/> |メソッド  <br/> |自動構成された [ISocialSession](isocialsessioniunknown.md) インターフェイスを取得します。  <br/> |
 |[GetCapabilities](isocialprovider-getcapabilities.md) <br/> |メソッド  <br/> |プロバイダーの機能を説明する文字列を取得します。  <br/> |
 |[GetSession](isocialprovider-getsession.md) <br/> |メソッド  <br/> |[ISocialSession](isocialsessioniunknown.md)インターフェイスを取得します。  <br/> |
 |[GetStatusSettings](isocialprovider-getstatussettings.md) <br/> |メソッド  <br/> |このメソッドは現在サポートされていません。  <br/> |
 |[Load](isocialprovider-load.md) <br/> |メソッド  <br/> |OSC プロバイダーを初期化します。  <br/> |
-|[SocialNetworkGuid](isocialprovider-socialnetworkguid.md) <br/> |Property  <br/> |ソーシャル ネットワークの一意の識別子を表す GUID を返します。  <br/> |
-|[SocialNetworkIcon](isocialprovider-socialnetworkicon.md) <br/> |Property  <br/> |ソーシャル ネットワークのアイコンを表すバイトの配列を返します。  <br/> |
-|[SocialNetworkName](isocialprovider-socialnetworkname.md) <br/> |Property  <br/> |ソーシャル ネットワーク名を表す文字列を返します。  <br/> |
-|[バージョン](isocialprovider-version.md) <br/> |Property  <br/> |このソーシャル ネットワーク プロバイダーのバージョン番号を表す文字列を返します。  <br/> |
+|[SocialNetworkGuid](isocialprovider-socialnetworkguid.md) <br/> |プロパティ  <br/> |ソーシャル ネットワークの一意の識別子を表す GUID を返します。  <br/> |
+|[SocialNetworkIcon](isocialprovider-socialnetworkicon.md) <br/> |プロパティ  <br/> |ソーシャル ネットワークのアイコンを表すバイトの配列を返します。  <br/> |
+|[SocialNetworkName](isocialprovider-socialnetworkname.md) <br/> |プロパティ  <br/> |ソーシャル ネットワーク名を表す文字列を返します。  <br/> |
+|[バージョン](isocialprovider-version.md) <br/> |プロパティ  <br/> |このソーシャル ネットワーク プロバイダーのバージョン番号を表す文字列を返します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 OSC プロバイダーでは、OSC と通信するには、このインターフェイスを実装する必要があります。
   

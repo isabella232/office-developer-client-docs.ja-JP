@@ -1,5 +1,5 @@
 ---
-title: この
+title: RTF_WCSRETINFO
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 62561d8d-33cb-e482-7fa0-132afe2b464a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3a38a4604230c0aa3f5b0d104ae3b838f544b31d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,9 +15,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803788"
 ---
-# <a name="rtfwcsretinfo"></a>この
+# <a name="rtfwcsretinfo"></a>RTF_WCSRETINFO
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 この構造体は、ネイティブ形式の圧縮されたリッチ テキスト形式 (RTF) でカプセル化されたメッセージの本文を圧縮解除から返されるストリームに関する情報を提供します。
   
@@ -30,7 +30,7 @@ typedef struct {
 } RTF_WCSRETINFO;
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 _size_
   

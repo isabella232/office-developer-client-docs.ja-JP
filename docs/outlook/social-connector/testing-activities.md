@@ -1,5 +1,5 @@
 ---
-title: アクティビティをテストします。
+title: アクティビティのテスト
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804466"
 ---
-# <a name="testing-activities"></a>アクティビティをテストします。
+# <a name="testing-activities"></a>アクティビティのテスト
 
 テストおよび以外の友人や友人の活動を適切に取得するのには Outlook ソーシャル コネクタ (OSC) プロバイダーがオンデマンドの同期を使用することを確認するシナリオについて説明します。
 

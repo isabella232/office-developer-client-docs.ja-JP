@@ -1,5 +1,5 @@
 ---
-title: X.400 ゲートウェイおよび配送で TNEF 相関関係
+title: X.400 ゲートウェイおよびトランスポートでの TNEF 関連付け
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804110"
 ---
-# <a name="tnef-correlation-in-x400-gateways-and-transports"></a>X.400 ゲートウェイおよび配送で TNEF 相関関係
+# <a name="tnef-correlation-in-x400-gateways-and-transports"></a>X.400 ゲートウェイおよびトランスポートでの TNEF 関連付け
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ゲートウェイおよび X.400 ベースのシステムに接続するためのトランスポートは、TNEF の相関関係を実装するために IM_THIS_IPM の X.400 属性および**attMessageID**の TNEF の属性の値を使用します。 
   

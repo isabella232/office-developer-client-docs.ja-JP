@@ -17,7 +17,7 @@ ms.locfileid: "19804325"
 ---
 # <a name="getting-started-with-developing-an-outlook-social-connector-provider"></a>Outlook ソーシャル コネクタ、プロバイダーの開発の概要
 
-Outlook ソーシャル コネクタ (OSC) プロバイダーの参照では、OSC プロバイダーの拡張機能を使用して、OSC プロバイダーを開発する方法について説明します。 Outlook ソリューションの開発に慣れていない場合は、Api とはお客様のニーズに最も適しているテクノロジを確認する[、API または Outlook ソリューションの開発のためのテクノロジを選択する](http://msdn.microsoft.com/library/8295da20-e567-4d08-b8e4-5c9b4498edd4%28Office.15%29.aspx)を参照してください。 
+Outlook ソーシャル コネクタ (OSC) プロバイダーの参照では、OSC プロバイダーの拡張機能を使用して、OSC プロバイダーを開発する方法について説明します。 Outlook のソリューション開発に慣れていない場合、「[Selecting an API or Technology for Developing Outlook Solutions](http://msdn.microsoft.com/library/8295da20-e567-4d08-b8e4-5c9b4498edd4%28Office.15%29.aspx)」をご覧になり、ご自身の必要に最も適した API とテクノロジを識別してください。 
 
 このセクションでは、OSC は、OSC プロバイダーとプロバイダー、技術要件、ベスト ・ プラクティス、プロバイダーを開発するための開発方法の学習の便利なクイック ステップは、どのように、このリリースの新機能の概要を示します。 
   
@@ -39,7 +39,7 @@ Outlook ソーシャル コネクタ (OSC) プロバイダーの参照では、O
 
 - [Outlook ソーシャル コネクタ プロバイダーの参照](outlook-social-connector-provider-reference-0.md)
   
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連情報
 
 - [OSC サンプル テンプレート](osc-sample-templates.md)
   

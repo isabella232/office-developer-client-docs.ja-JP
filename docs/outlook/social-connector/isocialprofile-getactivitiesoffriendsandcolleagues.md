@@ -23,7 +23,7 @@ Outlook ソーシャル コネクタ 2013 では、このメソッドは廃止�
 HRESULT _stdcall GetActivitiesOfFriendsAndColleagues([in] DATE startTime, [out, retval] BSTR* activitiesCollection);
 ```
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 Outlook ソーシャル コネクタ 2013、OSC の活動のみ、オンデマンド同期をサポートしている、キャッシュされていない、または活動のハイブリッド同期を開始します。 OSC では、XML の機能の**cacheActivities**の設定を無視し、不要になったこのメソッドを呼び出します。 参照の動的な活動をサポートするには、 [ISocialSession2::GetActivitiesEx](isocialsession2-getactivitiesex.md)メソッドを実装します。 **GetActivities**と**dynamicActivitiesLookupEx**を**true を指定**する代わりに**ISocialSession2::GetActivitiesEx**を呼び出す OSC を求めるメッセージが表示に設定します。 
   
@@ -31,5 +31,5 @@ OSC が友人の活動を取得する方法の詳細については、[同期の
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialProfile: ISocialPerson](isocialprofileisocialperson.md)
+- [ISocialProfile : ISocialPerson](isocialprofileisocialperson.md)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3e2d5190-e67a-470d-8177-0f0ba20c7b82
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 649046aa48f293caa5bd71cc670481b5c205459a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19803891"
 ---
 # <a name="servicewizarddlgproc"></a>SERVICEWIZARDDLGPROC
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロバイダーのプロパティ シートまたはページが表示されているときに、ユーザー イベントに応答するサービス プロバイダーを使用してプロファイル ウィザードによって呼び出されるコールバック関数を定義します。 
   
@@ -40,7 +40,7 @@ BOOL SERVICEWIZARDDLGPROC(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _hDlg_
   
@@ -87,7 +87,7 @@ _lParam_
   
 > [in]ウィンドウのメッセージに関連付けられている 32 ビットのパラメーター。 使用可能な値は、 _wMsgID_パラメーターで指定されたメッセージに依存します。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 **SERVICEWIZARDDLGPROC**ベースの関数によって返される値は、ウィンドウ メッセージを受信しました。 比類のない WIZ_QUERYNUMPAGES メッセージの値を返すに特に注意してください。 通常の戻り値は次のとおりです。 
   
@@ -99,7 +99,7 @@ FALSE
   
 > サービス プロバイダーは、受信されたウィンドウ メッセージを処理していません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 ユーザーを移動する 1 つのプロパティ ページから、ときに、プロバイダーは、次または前のページのコントロールの表示と古いページのコントロールを非表示にします。 ユーザーは、[**次へ**] をクリックすると、 **SERVICEWIZARDDLGPROC**ベースの機能、 _wParam_パラメーターに WM_COMMAND メッセージと WIZ_NEXT で呼び出されます。 次の手順では、最初のプロバイダーの構成ページが表示される時間と、ユーザーは**次**をクリックすると時間の間で行われる処理について説明します。 
   

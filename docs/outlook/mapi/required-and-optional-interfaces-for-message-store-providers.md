@@ -1,5 +1,5 @@
 ---
-title: メッセージ ストア プロバイダーの必須およびオプションのインターフェイス
+title: メッセージ ストア プロバイダーの必須インターフェイスおよびオプションのインターフェイス
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803746"
 ---
-# <a name="required-and-optional-interfaces-for-message-store-providers"></a>メッセージ ストア プロバイダーの必須およびオプションのインターフェイス
+# <a name="required-and-optional-interfaces-for-message-store-providers"></a>メッセージ ストア プロバイダーの必須インターフェイスおよびオプションのインターフェイス
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI は、メッセージ ストア プロバイダーに関連するインターフェイスのセットを定義します。 により、広範囲の機能を実装するのには、メッセージ ・ ストアを選択できますが、これらのインタ フェースの一部と必要のいくつかです。 次の表は、メッセージ ストア プロバイダーに関連する MAPI インターフェイスを一覧表示、インターフェイスが必須またはオプションでは、およびその目的を説明かどうかを指定します。
   

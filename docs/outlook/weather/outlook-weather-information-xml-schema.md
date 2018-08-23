@@ -1,5 +1,5 @@
 ---
-title: Outlook の気象情報の XML スキーマ
+title: Outlook 天気予報の情報 XML スキーマ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804537"
 ---
-# <a name="outlook-weather-information-xml-schema"></a>Outlook の気象情報の XML スキーマ
+# <a name="outlook-weather-information-xml-schema"></a>Outlook 天気予報の情報 XML スキーマ
 
 このセクションには、Outlook の気象情報の XML スキーマの Outlook 2013 スキーマの参照が含まれています。 このスキーマでは、Outlook では、気象・ バーの情報を表示できるように、Outlook には、web サービスの応答として指定した場所の天気予報の情報を送信するのには、気象サービス プロバイダーを使用できます。
   
@@ -27,7 +27,7 @@ ms.locfileid: "19804537"
     
 - [(Outlook の気象情報のスキーマ) の種類](types-outlook-weather-information-schema.md)
     
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連情報
 
 [Outlook の天気予報バーの拡張](extending-the-weather-bar-in-outlook.md)
   

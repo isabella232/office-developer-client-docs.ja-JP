@@ -1,5 +1,5 @@
 ---
-title: Rtf 形式のテキストの添付ファイルを表示します。
+title: RTF テキスト形式での添付ファイルの表示
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803742"
 ---
-# <a name="rendering-an-attachment-in-rtf-text"></a>Rtf 形式のテキストの添付ファイルを表示します。
+# <a name="rendering-an-attachment-in-rtf-text"></a>RTF テキスト形式での添付ファイルの表示
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 リッチ テキスト形 (式 RTF) に対応していないクライアントはメッセージの**PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) のプロパティで、次のエスケープ シーケンスを探すことで RTF メッセージ テキストのレンダリング位置の情報を取得することができます。
   

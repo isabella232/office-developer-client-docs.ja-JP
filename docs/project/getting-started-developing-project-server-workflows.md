@@ -1,5 +1,5 @@
 ---
-title: Project Server ワークフローの開発を開始する
+title: Project Server ワークフロー開発の作業開始
 manager: soliver
 ms.date: 08/10/2016
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804540"
 ---
-# <a name="getting-started-developing-project-server-workflows"></a>Project Server ワークフローの開発を開始する
+# <a name="getting-started-developing-project-server-workflows"></a>Project Server ワークフロー開発の作業開始
 
 Project Server 2013 の管理プロセスを支援するワークフローを含む要求は、プロジェクトの提案とポートフォリオ分析を管理します。 このセクションには、Project Server のワークフローを作成する方法を説明する記事が含まれています。
   
@@ -26,7 +26,7 @@ SharePoint Designer 2013 を使用すると、比較的単純な宣言型ワー�
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-[需要管理に Project Server ワークフローを作成します。](create-a-project-server-workflow-for-demand-management.md)
+[需要管理用の Project Server ワークフローの作成](create-a-project-server-workflow-for-demand-management.md)
   
 ## <a name="see-also"></a>関連項目
 
@@ -35,7 +35,7 @@ SharePoint Designer 2013 を使用すると、比較的単純な宣言型ワー�
 [更新プログラムのユーザー設定フィールドを一括して、オンラインのプロジェクトのワークフローからプロジェクト サイトを作成](bulk-update-custom-fields-and-create-project-sites-from-workflow-in-project.md)
 
 
-[SharePoint Designer 2013 と Visio 2013 でワークフローの開発](http://msdn.microsoft.com/en-us/library/jj163272%28office.15%29.aspx)
+[Workflow development in SharePoint Designer 2013 and Visio 2013](http://msdn.microsoft.com/en-us/library/jj163272%28office.15%29.aspx)
   
 [SharePoint ワークフローの新機能](http://msdn.microsoft.com/en-us/library/jj163177.aspx)
   
@@ -43,7 +43,7 @@ SharePoint Designer 2013 を使用すると、比較的単純な宣言型ワー�
   
 [Visual Studio 2012 を使用してプロジェクトのワークフローを作成します。](http://blogs.msdn.com/b/project_programmability/archive/2012/11/07/creating-project-workflows-using-visual-studio-2012.aspx)
   
-[Windows ワークフロー Foundation](http://msdn.microsoft.com/en-us/library/dd489441.aspx)
+[Windows Workflow Foundation](http://msdn.microsoft.com/en-us/library/dd489441.aspx)
   
 [Windows ワークフロー Foundation (WF) .NET 4 での開発者の概要](http://msdn.microsoft.com/en-us/library/ee342461.aspx)
   

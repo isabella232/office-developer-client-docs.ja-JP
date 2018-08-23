@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6ddaced5-49bb-41fe-95da-4e3300883bf7
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ad4b9d3f7c2ca1766ecca4fe9467fc49098f2212
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803695"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 指定されたプロパティ タグのプロパティの識別子を返します。
   
@@ -36,13 +36,13 @@ ms.locfileid: "19803695"
 PROP_ID (ulPropTag)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulPropTag_
   
 > 返される識別子を格納するプロパティ タグです。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 プロパティのすべてのタグには、下位ワード (ビット 0 ~ 15) のプロパティの型と、上位ワード (16 ~ 31 のビット) のプロパティの識別子が含まれています。 **PROP_ID**マクロは、プロパティの識別子を抽出し返される整数の 15 からビット 0 に入れます。 戻り値の残りのビットは、0 に設定されます。 
   

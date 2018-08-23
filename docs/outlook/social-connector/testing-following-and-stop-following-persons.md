@@ -1,5 +1,5 @@
 ---
-title: 次と停止次の人のテスト
+title: フォローおよびフォロー停止のテスト
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804455"
 ---
-# <a name="testing-following-and-stop-following-persons"></a>次と停止次の人のテスト
+# <a name="testing-following-and-stop-following-persons"></a>フォローおよびフォロー停止のテスト
 
 このトピックでは、友人に従うと、ソーシャル ネットワーク上の友人のフォローを停止する、Outlook ソーシャル コネクタ (OSC) プロバイダーの機能をテストするシナリオについて説明します。
   

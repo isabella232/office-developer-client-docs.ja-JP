@@ -29,5 +29,5 @@ ms.locfileid: "19804366"
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

@@ -1,11 +1,11 @@
 ---
-title: アップロード階層の状態
+title: 階層アップロード状態
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e39c4198-4913-5e86-900a-32e5ba5d801c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d53790cb51b660c781190cf41ca317c823a021e8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804186"
 ---
-# <a name="upload-hierarchy-state"></a>アップロード階層の状態
+# <a name="upload-hierarchy-state"></a>階層アップロード状態
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  このトピックでは、レプリケーション状態マシンのアップロードの階層状態中の動作について説明します。 
   
@@ -47,7 +47,7 @@ ms.locfileid: "19804186"
   
 [MAPI �萔](mapi-constants.md)
   
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [同期状態](syncstate.md)
 

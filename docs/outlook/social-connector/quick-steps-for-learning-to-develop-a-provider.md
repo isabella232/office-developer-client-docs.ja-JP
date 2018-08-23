@@ -1,5 +1,5 @@
 ---
-title: プロバイダーを開発する学習のためのクイック ステップ
+title: プロバイダー開発方法を学習するためのクイック手順
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804458"
 ---
-# <a name="quick-steps-for-learning-to-develop-a-provider"></a>プロバイダーを開発する学習のためのクイック ステップ
+# <a name="quick-steps-for-learning-to-develop-a-provider"></a>プロバイダー開発方法を学習するためのクイック手順
 
 OSC プロバイダーを開発するには、次の一般的な手順を完了する必要があります。
   

@@ -17,7 +17,7 @@ ms.locfileid: "19804030"
 ---
 # <a name="supporting-message-service-configuration"></a>メッセージ サービスの構成をサポートしています。
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ サービスの構成をサポートするには、次の手順を使用します。
   

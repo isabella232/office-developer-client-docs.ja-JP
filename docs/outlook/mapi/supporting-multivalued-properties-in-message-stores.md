@@ -19,7 +19,7 @@ ms.locfileid: "19804060"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 �����̒l�̃v���p�e�B��T�|�[�g���邽�߂̗v���́A [MAPI Property Overview](mapi-property-overview.md)�ɋL�ڂ���Ă��܂��B�����l�̃v���p�e�B�̃T�|�[�g�͕s�v�ȃ��b�Z�[�W �X�g�A �v���o�C�[�[�ł́A���Ƀ��b�Z�[�W �X�g�A�̊���̃v���o�C�](mapi-property-overview.md)�[�̏ꍇ�A�����߂��܂��B�t�H�[�� ���C�u�����̃t�H���_�[�ȂǁA���̑��̋@�\�ɂ͕����l�̃v���p�e�B�̃T�|�[�g���K�v�ł��B
   

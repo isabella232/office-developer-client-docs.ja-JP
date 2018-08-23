@@ -1,5 +1,5 @@
 ---
-title: PidTagSearchFolderStorageType の標準的なプロパティ
+title: PidTagSearchFolderStorageType 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1ec21942-47db-43a5-a6ee-ec6fd2135e8b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: bd9af0c2862cf2c780a0ec6e6ffd8e1a0ec56af7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803499"
 ---
-# <a name="pidtagsearchfolderstoragetype-canonical-property"></a>PidTagSearchFolderStorageType の標準的なプロパティ
+# <a name="pidtagsearchfolderstoragetype-canonical-property"></a>PidTagSearchFolderStorageType 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **PR_WB_SF_DEFINITION** ([PidTagSearchFolderDefinition](pidtagsearchfolderdefinition-canonical-property.md)) のプロパティに表示されるバイナリ ラージ オブジェクト (BLOB) データを指定するフラグが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_WB_SF_STORAGE_TYPE  <br/> |
+|関連するプロパティ:  <br/> |PR_WB_SF_STORAGE_TYPE  <br/> |
 |識別子:  <br/> |0x6846  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |検索  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フラグの定義は、 [[MS OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)で指定されます。 **PR_WB_SF_STORAGE_TYPE**を検索します。
   
@@ -68,7 +68,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

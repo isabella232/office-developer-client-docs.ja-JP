@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 772ecab1-7e91-415b-bae8-af8ffb7b7ed9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 4a0ab660b8df2fb32f21f9bc93932a9187c37b7b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19804144"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 すべてのトランスポート プロバイダーは、次のように、標準的な機能の範囲をサポートします。
   

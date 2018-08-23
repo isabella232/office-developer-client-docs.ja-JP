@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: a1fc4f20-511f-4721-8f09-ec2a5fd0ccb0
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 36456c6226b2eb74b8f15995ad0925381302523a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19804145"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 別に、提示されている情報の種類ごとのテーブルの多くの種類があります。 テーブルは、クライアント アプリケーションと容易にアクセスし、重要な多くの種類のオブジェクトのプロパティを操作するサービス プロバイダーを有効にします。 
   

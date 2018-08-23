@@ -1,5 +1,5 @@
 ---
-title: オンライン プロジェクトに 60 を 0 から
+title: Project Online の基本
 manager: soliver
 ms.date: 11/08/2016
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804548"
 ---
-# <a name="from-0-to-60-with-project-online"></a>オンライン プロジェクトに 60 を 0 から
+# <a name="from-0-to-60-with-project-online"></a>Project Online の基本
 
 アプリケーション開発者は、スタンドアロン アプリケーションやプロジェクトのアドインを使用する (SharePoint がホストされている) プロジェクトのオンライン サイトをカスタマイズできます。アプリケーションの豊富なは、範囲の PMO サポート関数では、次のいずれかのようにプロジェクトの関係者のニーズに対応可能です。
   
@@ -163,7 +163,7 @@ ms.locfileid: "19804548"
     
 - [プロジェクトのオンライン追加の JavaScript オブジェクト モデル (JSOM) を使用して開発](developing-a-project-online-add-in-using-the-javascript-object-model-jsom.md)
     
-- [オンライン プロジェクトのエンタープライズ ユーザー設定フィールドにアクセスします。](accessing-project-online-enterprise-custom-fields.md)
+- [Project Online エンタープライズ ユーザー設定フィールドへのアクセス](accessing-project-online-enterprise-custom-fields.md)
     
 ## <a name="see-also"></a>関連項目
 

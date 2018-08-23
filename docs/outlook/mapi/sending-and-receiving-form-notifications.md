@@ -1,5 +1,5 @@
 ---
-title: フォームの通知を送受信します。
+title: フォーム通知の送受信
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803860"
 ---
-# <a name="sending-and-receiving-form-notifications"></a>フォームの通知を送受信します。
+# <a name="sending-and-receiving-form-notifications"></a>フォーム通知の送受信
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームの通知は、MAPI の両方のビューアーに、フォームとフォームに、ビューアーからの通信を容易にするために使用されます。
   

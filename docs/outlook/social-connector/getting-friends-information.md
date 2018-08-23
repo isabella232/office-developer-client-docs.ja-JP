@@ -1,5 +1,5 @@
 ---
-title: フレンド情報の取得
+title: 友だち情報の取得
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804329"
 ---
-# <a name="getting-friends-information"></a>フレンド情報の取得
+# <a name="getting-friends-information"></a>友だち情報の取得
 
 Outlook ソーシャル コネクタ (OSC) では、ソーシャル ネットワークの OSC プロバイダーの機能を決定する[ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)メソッドを呼び出します。 **機能**の返された XML 内の**getFriends**と**cacheFriends**の要素を示す OSC プロバイダーには、取得の友人がサポートしていることと、対応する連絡先フォルダー内のアイテムが Outlook とキャッシュの友人にお問い合わせください、OSC のことができます。次の呼び出しシーケンスです。 OSC では、取得する情報と画像 ( [ISocialPerson](isocialpersoniunknown.md)インターフェイスでサポートされている)、ソーシャル ネットワーク上の友人のこの順序でメソッドを呼び出します。 
   

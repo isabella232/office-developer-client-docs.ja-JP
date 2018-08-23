@@ -1,5 +1,5 @@
 ---
-title: PidTagUserFields の標準的なプロパティ
+title: PidTagUserFields 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: db3a6947-f640-43e8-a2df-71e96560fd81
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5abfd9c98c5a83ca45792f094d0c9573b8affb85
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,22 +15,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803653"
 ---
-# <a name="pidtaguserfields-canonical-property"></a>PidTagUserFields の標準的なプロパティ
+# <a name="pidtaguserfields-canonical-property"></a>PidTagUserFields 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 名前、データ型、およびその他のユーザー定義のフィールド情報が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_USERFIELDS  <br/> |
+|関連するプロパティ:  <br/> |PR_USERFIELDS  <br/> |
 |識別子:  <br/> |0x36E3  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |MAPI フォルダー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 、各項目については、Outlook は、対応する**IMessage**オブジェクトの[PidLidPropertyDefinitionStream](pidlidpropertydefinitionstream-canonical-property.md)プロパティにユーザー定義のすべてのフィールドの定義を格納します。 **PidLidPropertyDefinitionStream**プロパティには、 [PropertyDefinition](propertydefinition-stream-structure.md)、フィールド定義が含まれていると呼ばれるバイナリ ストリームが含まれています。 ストリームの構造体フィールドの定義の詳細については、[ストリームの構造](stream-structures.md)を参照してください。
   
@@ -59,9 +59,9 @@ Mapidefs.h
 
 
 
-[Outlook アイテムおよびフィールド](outlook-items-and-fields.md)
+[Outlook のアイテムとフィールド](outlook-items-and-fields.md)
   
-[新しいユーザー定義フィールドの定義を追加します。](how-to-add-a-definition-for-a-new-user-defined-field.md)
+[新しいユーザー定義フィールドの定義を追加する](how-to-add-a-definition-for-a-new-user-defined-field.md)
   
 [PropertyDefinition ストリームのサンプル](propertydefinition-stream-sample.md)
   
@@ -69,7 +69,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

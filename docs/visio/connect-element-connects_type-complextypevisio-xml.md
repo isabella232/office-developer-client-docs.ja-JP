@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6e1ad47b-ee28-6b9a-f2f9-642e09ca28d4
-description: 線と組織図内のボックスなど、図面内の 2 つの図形間の接続を表します。
+description: "\n			組織図の線やボックスなど、図面内の 2 つの図形の接続を表します。\n"
 ms.openlocfilehash: 1bd3e1f006afe8d5bbb698e0b3a2179b74728315
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -16,13 +16,15 @@ ms.locfileid: "19805090"
 ---
 # <a name="connect-element-connectstype-complextype-visio-xml"></a>要素 (Connects_Type の複合型) を接続 ' Visio XML (')
 
-線と組織図内のボックスなど、図面内の 2 つの図形間の接続を表します。
+
+			組織図の線やボックスなど、図面内の 2 つの図形の接続を表します。
+
   
 ## <a name="element-information"></a>要素情報
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[Connect_Type](connect_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[Connect_Type](connect_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml のページで、マスターの # .xml  <br/> |
@@ -42,7 +44,7 @@ ms.locfileid: "19805090"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[接続](connects-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> |図面内の 2 つの図形間の各接続の**接続**の要素が含まれています。  <br/> |
+|[Connects](connects-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> |図面内の 2 つの図形間の各接続の**接続**の要素が含まれています。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f5eeb75d-debb-4ac1-b239-e8e852460ce0
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6389bbf2094f51711d80896db0db9862059826cc
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803964"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム オブジェクトの情報へのポインターの配列が含まれています。 
   
@@ -41,7 +41,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cForms**
   
@@ -51,7 +51,7 @@ typedef struct
   
 > フォーム オブジェクトの情報へのポインターの配列へのポインター。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SMAPIFormInfoArray**構造体は、次のメソッドのパラメーターとして渡されます。 
   

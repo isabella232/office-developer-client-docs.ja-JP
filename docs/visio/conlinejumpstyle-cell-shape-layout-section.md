@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805094"
 ---
-# <a name="conlinejumpstyle-cell-shape-layout-section"></a>[ConLineJumpStyle] セル ([Shape Layout] セクション)
+# <a name="conlinejumpstyle-cell-shape-layout-section"></a>[ConLineJumpStyle] セル ([図形レイアウト] セクション)
 
 動的コネクタの飛び越し点のスタイルを指定します。
   
@@ -39,16 +39,16 @@ ms.locfileid: "19805094"
 |行インデックス:  <br/> |**visRowShapeLayout** <br/> |
 |セル インデックス:  <br/> |**visSLOJumpStyle** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 設定できますでは、このセルの値、動的コネクタを**図形のデザイン**] で [[開発](run-in-developer-mode-display-the-developer-tab.md)] タブで、**動作**をクリックして、[**コネクタ**] タブをクリックします。 
   
-取得する、[ConLineJumpStyle] セルへの参照名で別の数式からまたはプログラムから**CellsU**プロパティを使用して、次のコマンドを使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ConLineJumpStyle] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |ConLineJumpStyle  <br/> |
    
-プログラムから、インデックスによって [ConLineJumpStyle] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ConLineJumpStyle] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 

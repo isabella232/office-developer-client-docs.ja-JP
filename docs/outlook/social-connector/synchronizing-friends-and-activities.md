@@ -1,5 +1,5 @@
 ---
-title: 友人や活動を同期します。
+title: 友だちとアクティビティの同期
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804465"
 ---
-# <a name="synchronizing-friends-and-activities"></a>友人や活動を同期します。
+# <a name="synchronizing-friends-and-activities"></a>友だちとアクティビティの同期
 
 Outlook ソーシャル コネクタ (OSC) は、連絡先カードで、または Outlook 人物情報ウィンドウに、ソーシャル ネットワークから、ある人物に関する情報の表示をサポートしています。 SharePoint Server、SharePoint ワークスペース、Lync クライアント、およびプレゼンス情報をサポートするすべての Office クライアント アプリケーションは、連絡先カードをサポートします。
   

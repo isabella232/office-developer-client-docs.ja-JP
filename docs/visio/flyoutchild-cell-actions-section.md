@@ -16,19 +16,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805407"
 ---
-# <a name="flyoutchild-cell-actions-section"></a>[FlyoutChild] セル ([Actions] セクション)
+# <a name="flyoutchild-cell-actions-section"></a>[FlyoutChild] セル ([操作] セクション)
 
 行が、サブ項目の子ではない行の上の最終行の子サブ項目メニューかどうかを指定します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-参照を取得する FlyoutChild のセルに名前を別の数式からまたはプログラムから**CellsU**プロパティを使用して、次の手順を使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [FlyoutChild] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |アクションです。 *名*です。FlyoutChildwhere アクションです。  *アクション行の名前します。*  <br/> |
    
-プログラムから、インデックスによって [FlyoutChild] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [FlyoutChild] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

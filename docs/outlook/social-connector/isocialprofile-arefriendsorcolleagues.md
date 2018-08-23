@@ -23,7 +23,7 @@ ms.locfileid: "19804345"
 HRESULT _stdcall AreFriendsOrColleagues(SAFEARRAY(BSTR) userIds, [out, retval] SAFEARRAY(VARIANT_BOOL)* results);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _ユーザー Id_
   
@@ -33,11 +33,11 @@ _結果_
   
 > [out]_ユーザー Id_の配列で対応する人が友人であるかどうかを示すブール型の値の配列を指定する構造体へのポインター。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 人ごとに、_ユーザー Id_のパラメーターの入力配列で表されるは、このメソッドは、_結果_のパラメーターの出力配列の対応する要素を設定します。 **true**は、人、友人は、 **false の場合、人が友人ではないこと**を示します。 
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialProfile: ISocialPerson](isocialprofileisocialperson.md)
+- [ISocialProfile : ISocialPerson](isocialprofileisocialperson.md)
 

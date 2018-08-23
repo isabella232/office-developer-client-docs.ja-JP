@@ -1,5 +1,5 @@
 ---
-title: PidTagStreetAddress の標準的なプロパティ
+title: PidTagStreetAddress 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 41262e7a-5f5f-4830-b80c-f1be3e9a3276
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 39a83868548990ec89bdb9e8cf0733a822650a42
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803601"
 ---
-# <a name="pidtagstreetaddress-canonical-property"></a>PidTagStreetAddress の標準的なプロパティ
+# <a name="pidtagstreetaddress-canonical-property"></a>PidTagStreetAddress 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 受信者の住所が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_STREET_ADDRESS、PR_STREET_ADDRESS_A、PR_STREET_ADDRESS_W、PR_BUSINESS_ADDRESS_STREET、PR_BUSINESS_ADDRESS_STREET_A、PR_BUSINESS_ADDRESS_STREET_W  <br/> |
+|関連するプロパティ:  <br/> |PR_STREET_ADDRESS、PR_STREET_ADDRESS_A、PR_STREET_ADDRESS_W、PR_BUSINESS_ADDRESS_STREET、PR_BUSINESS_ADDRESS_STREET_A、PR_BUSINESS_ADDRESS_STREET_W  <br/> |
 |識別子:  <br/> |0x3A29  <br/> |
-|データを入力します。  <br/> |PT_STRING8、PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |領域:  <br/> |MAPI メール ユーザー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これらのプロパティでは、識別を提供し、受信者の情報にアクセスします。 受信者と受信者の組織によって定義されます。 
   
@@ -72,7 +72,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -51,7 +51,7 @@ ms.locfileid: "19805052"
     
 - [[AvenueSizeY] セル ([Page Layout] セクション)](avenuesizey-cell-page-layout-section.md)
     
-- [AvoidPageBreaks セル ([ページ レイアウト] セクション)](avoidpagebreaks-cell-page-layout-section.md)
+- [[AvoidPageBreaks] セル ([ページ レイアウト] セクション)](avoidpagebreaks-cell-page-layout-section.md)
     
 - [[B] セル ([Geometry] セクション)](b-cell-geometry-section.md)
     
@@ -67,31 +67,31 @@ ms.locfileid: "19805052"
     
 - [[BegTrigger] セル ([Glue Info] セクション)](begtrigger-cell-glue-info-section.md)
     
-- [BevelBottomHeight セル (傾斜面のプロパティ] セクションで)](bevelbottomheight-cell-bevel-properties-section.md)
+- [[BevelBottomHeight] セル ([ベベルのプロパティ] セクション)](bevelbottomheight-cell-bevel-properties-section.md)
     
-- [BevelBottomType セル (傾斜面のプロパティ] セクションで)](bevelbottomtype-cell-bevel-properties-section.md)
+- [[BevelBottomType] セル ([ベベルのプロパティ] セクション)](bevelbottomtype-cell-bevel-properties-section.md)
     
-- [BevelBottomWidth セル (傾斜面のプロパティ] セクションで)](bevelbottomwidth-cell-bevel-properties-section.md)
+- [[BevelBottomWidth] セル ([ベベルのプロパティ] セクション)](bevelbottomwidth-cell-bevel-properties-section.md)
     
-- [BevelContourColor セル (傾斜面のプロパティ] セクションで)](bevelcontourcolor-cell-bevel-properties-section.md)
+- [[BevelContourColor] セル ([ベベルのプロパティ] セクション)](bevelcontourcolor-cell-bevel-properties-section.md)
     
-- [BevelContourSize セル (傾斜面のプロパティ] セクションで)](bevelcontoursize-cell-bevel-properties-section.md)
+- [[BevelContourSize] セル ([ベベルのプロパティ] セクション)](bevelcontoursize-cell-bevel-properties-section.md)
     
-- [BevelDepthColor セル (傾斜面のプロパティ] セクションで)](beveldepthcolor-cell-bevel-properties-section.md)
+- [[BevelDepthColor] セル ([ベベルのプロパティ] セクション)](beveldepthcolor-cell-bevel-properties-section.md)
     
-- [BevelDepthSize セル (傾斜面のプロパティ] セクションで)](beveldepthsize-cell-bevel-properties-section.md)
+- [[BevelDepthSize] セル ([ベベルのプロパティ] セクション)](beveldepthsize-cell-bevel-properties-section.md)
     
-- [BevelLightingAngle セル (傾斜面のプロパティ] セクションで)](bevellightingangle-cell-bevel-properties-section.md)
+- [[BevelLightingAngle] セル ([ベベルのプロパティ] セクション)](bevellightingangle-cell-bevel-properties-section.md)
     
-- [BevelLightingType セル (傾斜面のプロパティ] セクションで)](bevellightingtype-cell-bevel-properties-section.md)
+- [[BevelLightingType] セル ([ベベルのプロパティ] セクション)](bevellightingtype-cell-bevel-properties-section.md)
     
-- [BevelMaterialType セル (傾斜面のプロパティ] セクションで)](bevelmaterialtype-cell-bevel-properties-section.md)
+- [[BevelMaterialType] セル ([ベベルのプロパティ] セクション)](bevelmaterialtype-cell-bevel-properties-section.md)
     
-- [BevelTopHeight セル (傾斜面のプロパティ] セクションで)](beveltopheight-cell-bevel-properties-section.md)
+- [[BevelTopHeight] セル ([ベベルのプロパティ] セクション)](beveltopheight-cell-bevel-properties-section.md)
     
-- [BevelTopType セル (傾斜面のプロパティ] セクションで)](beveltoptype-cell-bevel-properties-section.md)
+- [[BevelTopType] セル ([ベベルのプロパティ] セクション)](beveltoptype-cell-bevel-properties-section.md)
     
-- [BevelTopWidth セル (傾斜面のプロパティ] セクションで)](beveltopwidth-cell-bevel-properties-section.md)
+- [[BevelTopWidth] セル ([ベベルのプロパティ] セクション)](beveltopwidth-cell-bevel-properties-section.md)
     
 - [[BlockSizeX] セル ([Page Layout] セクション)](blocksizex-cell-page-layout-section.md)
     
@@ -133,7 +133,7 @@ ms.locfileid: "19805052"
     
 - [[Checked] セル ([Actions] セクション)](checked-cell-actions-section.md)
     
-- [ClippingPath セル (外部イメージ情報」セクション)](clippingpath-cell-foreign-image-info-section.md)
+- [[ClippingPath] セル ([外部画像情報] セクション)](clippingpath-cell-foreign-image-info-section.md)
     
 - [[Color] セル ([Character] セクション)](color-cell-character-section.md)
     
@@ -141,7 +141,7 @@ ms.locfileid: "19805052"
     
 - [[Color] セル ([Reviewer] セクション)](color-cell-reviewer-section.md)
     
-- [ColorSchemeIndex セル ([プロパティ] セクションのテーマ)](colorschemeindex-cell-theme-properties-section.md)
+- [[ColorSchemeIndex] セル ([テーマのプロパティ] セクション)](colorschemeindex-cell-theme-properties-section.md)
     
 - [[Comment] セル ([Annotation] セクション)](comment-cell-annotation-section.md)
     
@@ -151,7 +151,7 @@ ms.locfileid: "19805052"
     
 - [[ComplexScriptSize] セル ([Character] セクション)](complexscriptsize-cell-character-section.md)
     
-- [CompoundType セル (行の書式セクション)](compoundtype-cell-line-format-section.md)
+- [[CompoundType] セル ([線の書式設定] セクション)](compoundtype-cell-line-format-section.md)
     
 - [[ConFixedCode] セル ([Shape Layout] セクション)](confixedcode-cell-shape-layout-section.md)
     
@@ -165,7 +165,7 @@ ms.locfileid: "19805052"
     
 - [[ConLineRouteExt] セル ([Shape Layout] セクション)](conlinerouteext-cell-shape-layout-section.md)
     
-- [ConnectorSchemeIndex セル ([プロパティ] セクションのテーマ)](connectorschemeindex-cell-theme-properties-section.md)
+- [[ConnectorSchemeIndex] セル ([テーマのプロパティ] セクション)](connectorschemeindex-cell-theme-properties-section.md)
     
 - [[Contrast] セル ([Image Properties] セクション)](contrast-cell-image-properties-section.md)
     
@@ -195,19 +195,19 @@ ms.locfileid: "19805052"
     
 - [[Disabled] セル ([Actions] セクション)](disabled-cell-actions-section.md)
     
-- [DisplayLevel セル ([図形のレイアウト] セクション)](displaylevel-cell-shape-layout-section.md)
+- [[DisplayLevel] セル ([図形レイアウト] セクション)](displaylevel-cell-shape-layout-section.md)
     
 - [[DisplayMode] セル ([Group Properties] セクション)](displaymode-cell-group-properties-section.md)
     
 - [[DisplayMode] セル ([Smart Tags] セクション)](displaymode-cell-action-tags-section.md)
     
-- [DistanceFromGround セル (3-D の回転プロパティ)](distancefromground-cell-3-d-rotation-properties.md)
+- [[DistanceFromGround] セル ([3-D 回転のプロパティ] セクション)](distancefromground-cell-3-d-rotation-properties.md)
     
 - [[DocLangID] セル ([Document Properties] セクション)](doclangid-cell-document-properties-section.md)
     
-- [DocLockDuplicatePage セル (ドキュメントのプロパティ] セクション)](doclockduplicatepage-cell-document-properties-section.md)
+- [[DocLockDuplicatePage] セル ([ドキュメントのプロパティ] セクション)](doclockduplicatepage-cell-document-properties-section.md)
     
-- [DocLockReplace セル (ドキュメントのプロパティ] セクション)](doclockreplace-cell-document-properties-section.md)
+- [[DocLockReplace] セル ([ドキュメントのプロパティ] セクション)](doclockreplace-cell-document-properties-section.md)
     
 - [[DontMoveChildren] セル ([Group Properties] セクション)](dontmovechildren-cell-group-properties-section.md)
     
@@ -215,7 +215,7 @@ ms.locfileid: "19805052"
     
 - [[DoubleULine] セル ([Character] セクション)](doubleuline-cell-character-section.md)
     
-- [DrawingResizeType セル ([ページ プロパティ] セクションで)](drawingresizetype-cell-page-properties-section.md)
+- [[DrawingResizeType] セル ([ページのプロパティ] セクション)](drawingresizetype-cell-page-properties-section.md)
     
 - [[DrawingScale] セル ([Page Properties] セクション)](drawingscale-cell-page-properties-section.md)
     
@@ -231,9 +231,9 @@ ms.locfileid: "19805052"
     
 - [[E] セル ([Geometry] セクション)](e-cell-geometry-section.md)
     
-- [EffectSchemeIndex セル ([プロパティ] セクションのテーマ)](effectschemeindex-cell-theme-properties-section.md)
+- [[EffectSchemeIndex] セル ([テーマのプロパティ] セクション)](effectschemeindex-cell-theme-properties-section.md)
     
-- [EmbellishmentIndex セル ([プロパティ] セクションのテーマ)](embellishmentindex-cell-theme-properties-section.md)
+- [[EmbellishmentIndex] セル ([テーマのプロパティ] セクション)](embellishmentindex-cell-theme-properties-section.md)
     
 - [[EnableFillProps] セル ([Style Properties] セクション)](enablefillprops-cell-style-properties-section.md)
     
@@ -257,7 +257,7 @@ ms.locfileid: "19805052"
     
 - [[EventDrop] セル ([Events] セクション)](eventdrop-cell-events-section.md)
     
-- [EventMultiDrop セル ([イベント] セクション)](eventmultidrop-cell-events-section.md)
+- [[EventMultiDrop] セル ([イベント] セクション)](eventmultidrop-cell-events-section.md)
     
 - [[EventXFMod] セル ([Events] セクション)](eventxfmod-cell-events-section.md)
     
@@ -271,11 +271,11 @@ ms.locfileid: "19805052"
     
 - [[FillForegndTrans] セル ([Fill Format] セクション)](fillforegndtrans-cell-fill-format-section.md)
     
-- [FillGradientAngle セル (グラデーションのプロパティ] セクション)](fillgradientangle-cell-gradient-properties-section.md)
+- [[FillGradientAngle] セル ([グラデーションのプロパティ] セクション)](fillgradientangle-cell-gradient-properties-section.md)
     
-- [FillGradientDir セル (グラデーションのプロパティ] セクション)](fillgradientdir-cell-gradient-properties-section.md)
+- [[FillGradientDir] セル ([グラデーションのプロパティ] セクション)](fillgradientdir-cell-gradient-properties-section.md)
     
-- [FillGradientEnabled セル (グラデーションのプロパティ] セクション)](fillgradientenabled-cell-gradient-properties-section.md)
+- [[FillGradientEnabled] セル ([グラデーションのプロパティ] セクション)](fillgradientenabled-cell-gradient-properties-section.md)
     
 - [[FillPattern] セル ([Fill Format] セクション)](fillpattern-cell-fill-format-section.md)
     
@@ -285,11 +285,11 @@ ms.locfileid: "19805052"
     
 - [[FlipY] セル ([Shape Transform] セクション)](flipy-cell-shape-transform-section.md)
     
-- [FlyoutChild セル ([Actions] セクション)](flyoutchild-cell-actions-section.md)
+- [[FlyoutChild] セル ([操作] セクション)](flyoutchild-cell-actions-section.md)
     
 - [[Font] セル ([Character] セクション)](font-cell-character-section.md)
     
-- [FontSchemeIndex セル (テーマのプロパティ] セクション](fontschemeindex-cell-theme-properties-section.md)
+- [[FontSchemeIndex] セル ([テーマのプロパティ] セクション)](fontschemeindex-cell-theme-properties-section.md)
     
 - [[Format] セル ([Shape Data] セクション)](format-cell-shape-data-section.md)
     
@@ -299,11 +299,11 @@ ms.locfileid: "19805052"
     
 - [[Gamma] セル ([Image Properties] セクション)](gamma-cell-image-properties-section.md)
     
-- [GlowColor セル ([プロパティ] セクションの他の効果)](glowcolor-cell-additional-effect-properties-section.md)
+- [[GlowColor] セル ([追加効果のプロパティ] セクション)](glowcolor-cell-additional-effect-properties-section.md)
     
-- [GlowColorTrans セル ([プロパティ] セクションの他の効果)](glowcolortrans-cell-additional-effect-properties-section.md)
+- [[GlowColorTrans] セル ([追加効果のプロパティ] セクション)](glowcolortrans-cell-additional-effect-properties-section.md)
     
-- [GlowSize セル ([プロパティ] セクションの他の効果)](glowsize-cell-additional-effect-properties-section.md)
+- [[GlowSize] セル ([追加効果のプロパティ] セクション)](glowsize-cell-additional-effect-properties-section.md)
     
 - [[Glue] セル ([Layers] セクション)](glue-cell-layers-section.md)
     
@@ -349,7 +349,7 @@ ms.locfileid: "19805052"
     
 - [[IsTextEditTarget] セル ([Group Properties] セクション)](istextedittarget-cell-group-properties-section.md)
     
-- [KeepTextFlat セル ([3-D 回転オプション プロパティ] セクションで)](keeptextflat-cell-3-d-rotation-properties-section.md)
+- [[KeepTextFlat] セル ([3-D 回転のプロパティ] セクション)](keeptextflat-cell-3-d-rotation-properties-section.md)
     
 - [[Label] セル ([Shape Data] セクション)](label-cell-shape-data-section.md)
     
@@ -373,11 +373,11 @@ ms.locfileid: "19805052"
     
 - [[LineColorTrans] セル ([Line Format] セクション)](linecolortrans-cell-line-format-section.md)
     
-- [LineGradientAngle セル (グラデーションのプロパティ] セクション)](linegradientangle-cell-gradient-properties-section.md)
+- [[LineGradientAngle] セル ([グラデーションのプロパティ] セクション)](linegradientangle-cell-gradient-properties-section.md)
     
-- [LineGradientDir セル (グラデーションのプロパティ] セクション)](linegradientdir-cell-gradient-properties-section.md)
+- [[LineGradientDir] セル ([グラデーションのプロパティ] セクション)](linegradientdir-cell-gradient-properties-section.md)
     
-- [LineGradientEnabled セル (グラデーションのプロパティ] セクション)](linegradientenabled-cell-gradient-properties-section.md)
+- [[LineGradientEnabled] セル ([グラデーションのプロパティ] セクション)](linegradientenabled-cell-gradient-properties-section.md)
     
 - [[LineJumpCode] セル ([Page Layout] セクション)](linejumpcode-cell-page-layout-section.md)
     
@@ -421,7 +421,7 @@ ms.locfileid: "19805052"
     
 - [[LockFormat] セル ([Protection] セクション)](lockformat-cell-protection-section.md)
     
-- [LockFromGroupFormat セル (セクションの保護)](lockfromgroupformat-cell-protection-section.md)
+- [[LockFromGroupFormat] セル ([保護] セクション)](lockfromgroupformat-cell-protection-section.md)
     
 - [[LockGroup] セル ([Protection] セクション)](lockgroup-cell-protection-section.md)
     
@@ -433,7 +433,7 @@ ms.locfileid: "19805052"
     
 - [[LockPreview] セル ([Document Properties] セクション)](lockpreview-cell-document-properties-section.md)
     
-- [LockReplace セル (セクションの保護)](lockreplace-cell-protection-section.md)
+- [[LockReplace] セル ([保護] セクション)](lockreplace-cell-protection-section.md)
     
 - [[LockRotate] セル ([Protection] セクション)](lockrotate-cell-protection-section.md)
     
@@ -441,17 +441,17 @@ ms.locfileid: "19805052"
     
 - [[LockTextEdit] セル ([Protection] セクション)](locktextedit-cell-protection-section.md)
     
-- [LockThemeColors セル (セクションの保護)](lockthemecolors-cell-protection-section.md)
+- [[LockThemeColors] セル ([保護] セクション)](lockthemecolors-cell-protection-section.md)
     
-- [LockThemeConnectors セル (セクションの保護)](lockthemeconnectors-cell-protection-section.md)
+- [[LockThemeConnectors] セル ([保護] セクション)](lockthemeconnectors-cell-protection-section.md)
     
-- [LockThemeFonts セル (セクションの保護)](lockthemefonts-cell-protection-section.md)
+- [[LockThemeFonts] セル ([保護] セクション)](lockthemefonts-cell-protection-section.md)
     
-- [LockThemeIndex セル (セクションの保護)](lockthemeindex-cell-protection-section.md)
+- [[LockThemeIndex] セル ([保護] セクション)](lockthemeindex-cell-protection-section.md)
     
-- [LockThemeEffects セル (セクションの保護)](lockthemeeffects-cell-protection-section.md)
+- [[LockThemeEffects] セル ([保護] セクション)](lockthemeeffects-cell-protection-section.md)
     
-- [LockVariation セル (セクションの保護)](lockvariation-cell-protection-section.md)
+- [[LockVariation] セル ([保護] セクション)](lockvariation-cell-protection-section.md)
     
 - [[LockVtxEdit] セル ([Protection] セクション)](lockvtxedit-cell-protection-section.md)
     
@@ -469,7 +469,7 @@ ms.locfileid: "19805052"
     
 - [[NoAlignBox] セル ([Miscellaneous] セクション)](noalignbox-cell-miscellaneous-section.md)
     
-- [NoCoauth セル (ドキュメントのプロパティ] セクション)](nocoauth-cell-document-properties-section.md)
+- [[NoCoauth] セル ([ドキュメントのプロパティ] セクション)](nocoauth-cell-document-properties-section.md)
     
 - [[NoCtlHandles] セル ([Miscellaneous] セクション)](noctlhandles-cell-miscellaneous-section.md)
     
@@ -483,9 +483,9 @@ ms.locfileid: "19805052"
     
 - [[NoObjHandles] セル ([Miscellaneous] セクション)](noobjhandles-cell-miscellaneous-section.md)
     
-- [NoProofing セル ([その他] セクション)](noproofing-cell-miscellaneous-section.md)
+- [[NoProofing] セル ([その他] セクション)](noproofing-cell-miscellaneous-section.md)
     
-- [NoQuickDrag セル ([Geometry] セクション)](noquickdrag-cell-geometry-section.md)
+- [[NoQuickDrag] セル ([図形座標] セクション)](noquickdrag-cell-geometry-section.md)
     
 - [[NoShow] セル ([Geometry] セクション)](noshow-cell-geometry-section.md)
     
@@ -511,9 +511,9 @@ ms.locfileid: "19805052"
     
 - [[PageLineJumpDirY] セル ([Page Layout] セクション)](pagelinejumpdiry-cell-page-layout-section.md)
     
-- [PageLockDuplicate セル ([ページ プロパティ] セクションで)](pagelockduplicate-cell-page-properties-section.md)
+- [[PageLockDuplicate] セル ([ページのプロパティ] セクション)](pagelockduplicate-cell-page-properties-section.md)
     
-- [PageLockReplace セル ([ページ プロパティ] セクションで)](pagelockreplace-cell-page-properties-section.md)
+- [[PageLockReplace] セル ([ページのプロパティ] セクション)](pagelockreplace-cell-page-properties-section.md)
     
 - [[PageRightMargin] セル ([Print Properties] セクション)](pagerightmargin-cell-print-properties-section.md)
     
@@ -533,7 +533,7 @@ ms.locfileid: "19805052"
     
 - [[PaperSource] セル ([PrintProperties] セクション)](papersource-cell-printproperties-section.md)
     
-- [分析観点のセル ([3-D 回転オプション プロパティ] セクションで)](perspective-cell-3-d-rotation-properties-section.md)
+- [[Perspective] セル ([3-D 回転のプロパティ] セクション)](perspective-cell-3-d-rotation-properties-section.md)
     
 - [[PinX] セル ([Shape Transform] セクション)](pinx-cell-shape-transform-section.md)
     
@@ -543,7 +543,7 @@ ms.locfileid: "19805052"
     
 - [[PlaceFlip] セル ([Page Layout] セクション)](placeflip-cell-page-layout-section.md)
     
-- [PlaceStyle セル ([ページ レイアウト] セクション)](placestyle-cell-page-layout-section.md)
+- [[PlaceStyle] セル ([ページ レイアウト] セクション)](placestyle-cell-page-layout-section.md)
     
 - [[PlowCode] セル ([Page Layout] セクション)](plowcode-cell-page-layout-section.md)
     
@@ -567,45 +567,45 @@ ms.locfileid: "19805052"
     
 - [[Prompt] セル ([User-Defined Cells] セクション)](prompt-cell-user-defined-cells-section.md)
     
-- [QuickStyleEffectsMatrix セル ([クイック スタイル] セクション)](quickstyleeffectsmatrix-cell-quick-style-section.md)
+- [[QuickStyleEffectsMatrix] セル ([クイック スタイル] セクション)](quickstyleeffectsmatrix-cell-quick-style-section.md)
     
-- [QuickStyleFillColor セル ([クイック スタイル] セクション)](quickstylefillcolor-cell-quick-style-section.md)
+- [[QuickStyleFillColor] セル ([クイック スタイル] セクション)](quickstylefillcolor-cell-quick-style-section.md)
     
-- [QuickStyleFillMatrix セル ([クイック スタイル] セクション)](quickstylefillmatrix-cell-quick-style-section.md)
+- [[QuickStyleFillMatrix] セル ([クイック スタイル] セクション)](quickstylefillmatrix-cell-quick-style-section.md)
     
-- [QuickStyleFontColor セル ([クイック スタイル] セクション)](quickstylefontcolor-cell-quick-style-section.md)
+- [[QuickStyleFontColor] セル ([クイック スタイル] セクション)](quickstylefontcolor-cell-quick-style-section.md)
     
-- [QuickStyleFontMatrix セル ([クイック スタイル] セクション)](quickstylefontmatrix-cell-quick-style-section.md)
+- [[QuickStyleFontMatrix] セル ([クイック スタイル] セクション)](quickstylefontmatrix-cell-quick-style-section.md)
     
-- [QuickStyleLineColor セル ([クイック スタイル] セクション)](quickstylelinecolor-cell-quick-style-section.md)
+- [[QuickStyleLineColor] セル ([クイック スタイル] セクション)](quickstylelinecolor-cell-quick-style-section.md)
     
-- [QuickStyleLineMatrix セル ([クイック スタイル] セクション)](quickstylelinematrix-cell-quick-style-section.md)
+- [[QuickStyleLineMatrix] セル ([クイック スタイル] セクション)](quickstylelinematrix-cell-quick-style-section.md)
     
-- [QuickStyleShadowColor セル ([クイック スタイル] セクション)](quickstyleshadowcolor-cell-quick-style-section.md)
+- [[QuickStyleShadowColor] セル ([クイック スタイル] セクション)](quickstyleshadowcolor-cell-quick-style-section.md)
     
-- [QuickStyleType セル ([クイック スタイル] セクション)](quickstyletype-cell-quick-style-section.md)
+- [[QuickStyleType] セル ([クイック スタイル] セクション)](quickstyletype-cell-quick-style-section.md)
     
-- [QuickStyleVariation セル ([クイック スタイル] セクション)](quickstylevariation-cell-quick-style-section.md)
+- [[QuickStyleVariation] セル ([クイック スタイル] セクション)](quickstylevariation-cell-quick-style-section.md)
     
 - [[ReadOnly] セル ([Actions] セクション)](readonly-cell-actions-section.md)
     
-- [ReflectionBlur セル ([プロパティ] セクションの他の効果)](reflectionblur-cell-additional-effect-properties-section.md)
+- [[ReflectionBlur] セル ([追加効果のプロパティ] セクション)](reflectionblur-cell-additional-effect-properties-section.md)
     
-- [ReflectionDist セル ([プロパティ] セクションの他の効果)](reflectiondist-cell-additional-effect-properties-section.md)
+- [[ReflectionDist] セル ([追加効果のプロパティ] セクション)](reflectiondist-cell-additional-effect-properties-section.md)
     
-- [ReflectionSize セル ([プロパティ] セクションの他の効果)](reflectionsize-cell-additional-effect-properties-section.md)
+- [[ReflectionSize] セル ([追加効果のプロパティ] セクション)](reflectionsize-cell-additional-effect-properties-section.md)
     
-- [ReflectionTrans セル ([プロパティ] セクションの他の効果)](reflectiontrans-cell-additional-effect-properties-section.md)
+- [[ReflectionTrans] セル ([追加効果のプロパティ] セクション)](reflectiontrans-cell-additional-effect-properties-section.md)
     
-- [関係セル ([図形のレイアウト] セクション)](relationships-cell-shape-layout-section.md)
+- [[Relationships] セル ([図形レイアウト] セクション)](relationships-cell-shape-layout-section.md)
     
-- [ReplaceCopyCells セル (変更の図形の動作セクション)](replacecopycells-cell-change-shape-behavior-section.md)
+- [[ReplaceCopyCells] セル ([図形動作の変更] セクション)](replacecopycells-cell-change-shape-behavior-section.md)
     
-- [ReplaceLockFormat セル (変更の図形の動作セクション)](replacelockformat-cell-change-shape-behavior-section.md)
+- [[ReplaceLockFormat] セル ([図形動作の変更] セクション)](replacelockformat-cell-change-shape-behavior-section.md)
     
-- [ReplaceLockShapeData セル (変更の図形の動作セクション)](replacelockshapedata-cell-change-shape-behavior-section.md)
+- [[ReplaceLockShapeData] セル ([図形動作の変更] セクション)](replacelockshapedata-cell-change-shape-behavior-section.md)
     
-- [ReplaceLockText セル (変更の図形の動作セクション)](replacelocktext-cell-change-shape-behavior-section.md)
+- [[ReplaceLockText] セル ([図形動作の変更] セクション)](replacelocktext-cell-change-shape-behavior-section.md)
     
 - [[ResizeMode] セル ([Shape Transform] セクション)](resizemode-cell-shape-transform-section.md)
     
@@ -613,15 +613,15 @@ ms.locfileid: "19805052"
     
 - [[RightMargin] セル ([Text Block Format] セクション)](rightmargin-cell-text-block-format-section.md)
     
-- [RotateGradientWithShape セル (グラデーションのプロパティ] セクション)](rotategradientwithshape-cell-gradient-properties-section.md)
+- [[RotateGradientWithShape] セル ([グラデーションのプロパティ] セクション)](rotategradientwithshape-cell-gradient-properties-section.md)
     
-- [RotationType セル ([3-D 回転オプション プロパティ] セクションで)](rotationtype-cell-3-d-rotation-properties-section.md)
+- [[RotationType] セル ([3-D 回転のプロパティ] セクション)](rotationtype-cell-3-d-rotation-properties-section.md)
     
-- [RotationXAngle セル ([3-D 回転オプション プロパティ] セクションで)](rotationxangle-cell-3-d-rotation-properties-section.md)
+- [[RotationXAngle] セル ([3-D 回転のプロパティ] セクション)](rotationxangle-cell-3-d-rotation-properties-section.md)
     
-- [RotationYAngle セル ([3-D 回転オプション プロパティ] セクションで)](rotationyangle-cell-3-d-rotation-properties-section.md)
+- [[RotationYAngle] セル ([3-D 回転のプロパティ] セクション)](rotationyangle-cell-3-d-rotation-properties-section.md)
     
-- [RotationZAngle セル ([3-D 回転オプション プロパティ] セクションで)](rotationzangle-cell-3-d-rotation-properties-section.md)
+- [[RotationZAngle] セル ([3-D 回転のプロパティ] セクション)](rotationzangle-cell-3-d-rotation-properties-section.md)
     
 - [[Rounding] セル ([Line Format] セクション)](rounding-cell-line-format-section.md)
     
@@ -645,13 +645,13 @@ ms.locfileid: "19805052"
     
 - [[ShapePlaceFlip] セル ([Shape Layout] セクション)](shapeplaceflip-cell-shape-layout-section.md)
     
-- [ShapePlaceStyle セル ([図形のレイアウト] セクション)](shapeplacestyle-cell-shape-layout-section.md)
+- [[ShapePlaceStyle] セル ([図形レイアウト] セクション)](shapeplacestyle-cell-shape-layout-section.md)
     
 - [[ShapePlowCode] セル ([Shape Layout] セクション)](shapeplowcode-cell-shape-layout-section.md)
     
 - [[ShapeRouteStyle] セル ([Shape Layout] セクション)](shaperoutestyle-cell-shape-layout-section.md)
     
-- [ShapeShdwBlur セル (塗りつぶしの書式設定])](shapeshdwblur-cell-fill-format-section.md)
+- [[ShapeShdwBlur] セル ([塗りつぶしの書式設定] セクション)](shapeshdwblur-cell-fill-format-section.md)
     
 - [[ShapeShdwObliqueAngle] セル ([Fill Format] セクション)](shapeshdwobliqueangle-cell-fill-format-section.md)
     
@@ -661,7 +661,7 @@ ms.locfileid: "19805052"
     
 - [[ShapeShdwScaleFactor] セル ([Fill Format] セクション)](shapeshdwscalefactor-cell-fill-format-section.md)
     
-- [ShapeShdwShow セル (塗りつぶしの書式設定])](shapeshdwshow-cell-fill-format-section.md)
+- [[ShapeShdwShow] セル ([塗りつぶしの書式設定] セクション)](shapeshdwshow-cell-fill-format-section.md)
     
 - [[ShapeShdwType] セル ([Fill Format] セクション)](shapeshdwtype-cell-fill-format-section.md)
     
@@ -689,21 +689,21 @@ ms.locfileid: "19805052"
     
 - [[Size] セル ([Character] セクション)](size-cell-character-section.md)
     
-- [SketchAmount セル ([プロパティ] セクションの他の効果)](sketchamount-cell-additional-effect-properties-section.md)
+- [[SketchAmount] セル ([追加効果のプロパティ] セクション)](sketchamount-cell-additional-effect-properties-section.md)
     
-- [SketchEnabled セル ([プロパティ] セクションの他の効果)](sketchenabled-cell-additional-effect-properties-section.md)
+- [[SketchEnabled] セル ([追加効果のプロパティ] セクション)](sketchenabled-cell-additional-effect-properties-section.md)
     
-- [SketchFillChange セル ([プロパティ] セクションの他の効果)](sketchfillchange-cell-additional-effect-properties-section.md)
+- [[SketchFillChange] セル ([追加効果のプロパティ] セクション)](sketchfillchange-cell-additional-effect-properties-section.md)
     
-- [SketchLineChange セル ([プロパティ] セクションの他の効果)](sketchlinechange-cell-additional-effect-properties-section.md)
+- [[SketchLineChange] セル ([追加効果のプロパティ] セクション)](sketchlinechange-cell-additional-effect-properties-section.md)
     
-- [SketchLineWeight セル ([プロパティ] セクションの他の効果)](sketchlineweight-cell-additional-effect-properties-section.md)
+- [[SketchLineWeight] セル ([追加効果のプロパティ] セクション)](sketchlineweight-cell-additional-effect-properties-section.md)
     
-- [SketchSeed セル ([プロパティ] セクションの他の効果)](sketchseed-cell-additional-effect-properties-section.md)
+- [[SketchSeed] セル ([追加効果のプロパティ] セクション)](sketchseed-cell-additional-effect-properties-section.md)
     
 - [[Snap] セル ([Layers] セクション)](snap-cell-layers-section.md)
     
-- [SoftEdgesSize セル ([プロパティ] セクションの他の効果)](softedgessize-cell-additional-effect-properties-section.md)
+- [[SoftEdgesSize] セル ([追加効果のプロパティ] セクション)](softedgessize-cell-additional-effect-properties-section.md)
     
 - [[SortKey] セル ([Actions] セクション)](sortkey-cell-actions-section.md)
     
@@ -739,7 +739,7 @@ ms.locfileid: "19805052"
     
 - [[TheData] セル ([Events] セクション)](thedata-cell-events-section.md)
     
-- [ThemeIndex セル ([プロパティ] セクションのテーマ)](themeindex-cell-theme-properties-section.md)
+- [[ThemeIndex] セル ([テーマのプロパティ] セクション)](themeindex-cell-theme-properties-section.md)
     
 - [[TheText] セル ([Events] セクション)](thetext-cell-events-section.md)
     
@@ -783,7 +783,7 @@ ms.locfileid: "19805052"
     
 - [[UpdateAlignBox] セル ([Miscellaneous] セクション)](updatealignbox-cell-miscellaneous-section.md)
     
-- [UseGroupGradient セル (グラデーションのプロパティ] セクション)](usegroupgradient-cell-gradient-properties-section.md)
+- [[UseGroupGradient] セル ([グラデーションのプロパティ] セクション)](usegroupgradient-cell-gradient-properties-section.md)
     
 - [[Value] セル ([Shape Data] セクション)](value-cell-shape-data-section.md)
     
@@ -791,9 +791,9 @@ ms.locfileid: "19805052"
     
 - [[Value] セル ([User-Defined Cells] セクション)](value-cell-user-defined-cells-section.md)
     
-- [VariationColorIndex セル ([プロパティ] セクションのテーマ)](variationcolorindex-cell-theme-properties-section.md)
+- [[VariationColorIndex] セル ([テーマのプロパティ] セクション)](variationcolorindex-cell-theme-properties-section.md)
     
-- [VariationStyleIndex セル ([プロパティ] セクションのテーマ)](variationstyleindex-cell-theme-properties-section.md)
+- [[VariationStyleIndex] セル ([テーマのプロパティ] セクション)](variationstyleindex-cell-theme-properties-section.md)
     
 - [[VerticalAlign] セル ([Text Block Format] セクション)](verticalalign-cell-text-block-format-section.md)
     

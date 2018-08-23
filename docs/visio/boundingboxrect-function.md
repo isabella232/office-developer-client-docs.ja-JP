@@ -20,27 +20,28 @@ ms.locfileid: "19804928"
   
 ## <a name="version-information"></a>バージョン情報
 
-Visio 2010 のバージョンが追加されます。 
+追加バージョン: Visio 2010
+ 
   
 ## <a name="syntax"></a>構文
 
 BOUNDINGBOXRECT (* **インデックス** *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _Index_ <br/> |必須  <br/> |**Integer** <br/> |座標を取得する図形の境界ボックスの端。使用可能な値については、「備考」を参照してください。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
  **番号**
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
  *インデックス*には、次の値のいずれかを指定できます。 
   
-|**アイテム**|**値**|
+|**Item**|**値**|
 |:-----|:-----|
 |左端  <br/> |0  <br/> |
 |右端  <br/> |1  <br/> |

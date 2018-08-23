@@ -16,19 +16,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804790"
 ---
-# <a name="avoidpagebreaks-cell-page-layout-section"></a>[AvoidPageBreaks] セル ([Page Layout] セクション)
+# <a name="avoidpagebreaks-cell-page-layout-section"></a>[AvoidPageBreaks] セル ([ページ レイアウト] セクション)
 
 図形を整列するか、均等に配置するか、またはその両方を行う場合に、図形を改ページの上に配置できるかどうかを指定します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-参照を取得する AvoidPageBreaks のセルに名前を別の数式からまたはプログラムから**CellsU**プロパティを使用して、次の手順を使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [AvoidPageBreaks] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |AvoidPageBreaks  <br/> |
    
-プログラムから、インデックスによって [AvoidPageBreaks] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [AvoidPageBreaks] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

@@ -1,5 +1,5 @@
 ---
-title: 小数値を含むテーブルの位置を設定
+title: 小数値によるテーブルの位置設定
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803894"
 ---
-# <a name="setting-table-position-with-a-fractional-value"></a>小数値を含むテーブルの位置を設定
+# <a name="setting-table-position-with-a-fractional-value"></a>小数値によるテーブルの位置設定
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルのユーザーは、合計を基準にして行のおおよその割合を表す位置に移動できます。 行を正確に移動するのではなく分割を配置するのには、このメソッドの部分にテーブルに基づく分数。 テーブルのユーザーは、テーブルの半分のポイントに、またはテーブルを使用する方法の 7/8 の行に移動できます。 
   

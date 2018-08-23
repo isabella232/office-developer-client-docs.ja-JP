@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c7cb8cf9-7abd-4ee3-b88c-d61695f4ed31
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c2e275e373677e50510a0aa87f5060070a870a0f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19803937"
 ---
 # <a name="sizeddtbllabel"></a>SizedDtblLabel
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Label コントロールと関連付けられている指定された長さのラベルを記述するための[DTBLLABEL](dtbllabel.md)構造体を含む名前付き構造体を作成します。 
   
@@ -34,7 +34,7 @@ Label コントロールと関連付けられている指定された長さの�
 SizedDtblLabel (n, u)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _n_
   
@@ -44,7 +44,7 @@ _u_
   
 > 新しい構造体の名前です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SizedDtblLabel**マクロを使用して、ラベルの文字数がわかっている場合、表示テーブルのラベルを定義できます。 新しい構造体は、次のメンバーで作成されます。 
   

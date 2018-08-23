@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f0b9c2f4-7011-414d-8e6c-ab22893ef132
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2eb92c3f1555407a77332bd6ec3b2b7202f0553f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19803945"
 ---
 # <a name="sizedssortorderset"></a>SizedSSortOrderSet
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 並べ替え順の指定した数値を含む名前付き[SSortOrderSet](ssortorderset.md)構造体を作成します。 
   
@@ -34,7 +34,7 @@ ms.locfileid: "19803945"
 SizedSSortOrderSet (_csort,_name)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 __csort_
   
@@ -44,7 +44,7 @@ __名_
   
 > 新しい構造体の名前です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 明示的な境界を使用して設定の並べ替え順序を作成するのにには、 **SizedSSortOrderSet**マクロを使用します。 
   

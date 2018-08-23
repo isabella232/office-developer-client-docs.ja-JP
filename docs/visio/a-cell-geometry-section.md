@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804740"
 ---
-# <a name="a-cell-geometry-section"></a>[A] セル ([Geometry] セクション)
+# <a name="a-cell-geometry-section"></a>[A] セル ([図形座標] セクション)
 
 各行に対応する情報を表示します。次の表に、各行で [A] セルが示す内容を説明します。
   
@@ -31,29 +31,29 @@ ms.locfileid: "19804740"
 |[InfiniteLine](infiniteline-row-geometry-section.md) <br/> | *X* -無限の線の上の点の座標対応する*y*の座標は、[ [B](b-cell-geometry-section.md) ] セルで表されます。  <br/> |
 |[楕円](ellipse-row-geometry-section.md) <br/> | *X* -楕円上の点の座標対応する*y*の座標は、[ [B](b-cell-geometry-section.md) ] セルで表されます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用して、プログラムから、名前によって、[A] セルへの参照を取得するには、次のコマンドを使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [A] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | ジオメトリの*i*です。*J* 、 *i*および*j* = < 1 > では、2、3.  <br/> |
 || ジオメトリの*i*です。A1 (InfiniteLine と楕円の行)、 *i* = < 1 > では、2、3.  <br/> |
    
-プログラムから、インデックスによって [A] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [A] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionFirstComponent** +  *i* 、 *i* = 0, 1, 2.  <br/> |
 | 行インデックス:  <br/> |**visRowVertex** +  *j* 、 *j* = 0, 1, 2.  <br/> |
-||**visRowVertex**(InfiniteLine と楕円の行)  <br/> |
-| セル インデックス:  <br/> |**visBow**(ArcTo 行)  <br/> |
-||**visControlX**(EllipticalArcTo 行)  <br/> |
-||**visControlY**(EllipticalArcTo 行)  <br/> |
-||**visPolylineData**(ポリライン行)  <br/> |
-||**visNURBSKnot**([Nurbsto] 行)  <br/> |
-||**visSplineKnot**([A と SplineKnot 行)  <br/> |
-||**visInfiniteLineX2**(InfiniteLine 行)  <br/> |
-||**visEllipseMajorX**([Ellipse] 行)  <br/> |
+||**visRowVertex** ([InfiniteLine] 行および [Ellipse] 行)  <br/> |
+| セル インデックス:  <br/> |**visBow** ([ArcTo] 行)  <br/> |
+||**visControlX** ([EllipticalArcTo] 行)  <br/> |
+||**visControlY** ([EllipticalArcTo] 行)  <br/> |
+||**visPolylineData** ([Polyline] 行)  <br/> |
+||**visNURBSKnot** ([NURBSTo] 行)  <br/> |
+||**visSplineKnot** ([SplineStart] 行および [SplineKnot] 行)  <br/> |
+||**visInfiniteLineX2** ([InfiniteLine] 行)  <br/> |
+||**visEllipseMajorX** ([Ellipse] 行)  <br/> |
    
 

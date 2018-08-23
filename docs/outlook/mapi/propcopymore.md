@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 133d47cf-3592-44f3-8cdd-be402d160ee4
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 750d8b8d50acb9cf7340e6553062412667398665
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803693"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 1 つのプロパティの値を元の場所から先の場所にコピーします。 
   
@@ -42,7 +42,7 @@ SCODE PropCopyMore(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpSPropValueDest_
   
@@ -70,7 +70,7 @@ MAPI_E_NO_SUPPORT
   
 > 不明なプロパティの種類が発生しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアント アプリケーションまたはサービス プロバイダーは、それを別の場所で使用するために解放しようとしているテーブルのプロパティをコピーするのには、 **PropCopyMore**関数を使用することができます。 
   

@@ -17,7 +17,7 @@ ms.locfileid: "19804047"
 ---
 # <a name="structure-of-message-store-providers"></a>メッセージ ストア プロバイダーの構造
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メモリで実行されているとき、メッセージのストア プロバイダーは、 [IMSProvider: IUnknown](imsprovideriunknown.md)インタ フェースです。 **IMSProvider**インタ フェースにより、クライアント アプリケーションと MAPI スプーラーを無効にして、メッセージ ・ ストアからログオンします。 フォルダーとメッセージ ・ ストア内のメッセージにアクセスするクライアント アプリケーションと MAPI スプーラーを使用しているインタ フェースは、 [IMSLogon](imslogoniunknown.md)と[IMsgStore](imsgstoreimapiprop.md)のインターフェイスです。 これらのインタ フェースは通常、メッセージ ・ ストアが最初にログオンしているときに、作成、メッセージの[MSProviderInit](msproviderinit.md)エントリ ポイントの格納が DLL 可能性がありますも作成します。 
   

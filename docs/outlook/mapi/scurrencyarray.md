@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d28852ab-b542-40e1-b2ec-85d20a2eddfd
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c440bb7d8f3d2d3002a4d1a80ca3a671b49f4d2b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803851"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 PT_MV_CURRENCY の種類のプロパティを説明するために使用する通貨値の配列が含まれています。 
   
@@ -40,7 +40,7 @@ typedef struct _SCurrencyArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **あう**
   
@@ -50,7 +50,7 @@ typedef struct _SCurrencyArray
   
 > 通貨値が含まれている[通貨](currency.md)の構造体の配列へのポインター。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 PT_MV_CURRENCY については、[プロパティの種類の一覧](property-types.md)を参照してください。 
   
@@ -58,7 +58,7 @@ PT_MV_CURRENCY については、[プロパティの種類の一覧](property-ty
 
 
 
-[通貨](currency.md)
+[CURRENCY](currency.md)
   
 [SPropValue](spropvalue.md)
 

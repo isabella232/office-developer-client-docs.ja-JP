@@ -1,5 +1,5 @@
 ---
-title: PidTagStatusCode の標準的なプロパティ
+title: PidTagStatusCode 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e29190c5-52c3-4ef7-98db-699487c54325
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: efd0dcc8fc01fa433cbbf30936244e4818f8b14a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803584"
 ---
-# <a name="pidtagstatuscode-canonical-property"></a>PidTagStatusCode の標準的なプロパティ
+# <a name="pidtagstatuscode-canonical-property"></a>PidTagStatusCode 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 セッション リソースの現在の状態を示すフラグのビットマスクを格納します。 すべてのサービス プロバイダーは、MAPI サブシステム、MAPI スプーラーを無効、および統合されたアドレス帳のステータスを報告するように、ステータス コードを設定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_STATUS_CODE  <br/> |
+|関連するプロパティ:  <br/> |PR_STATUS_CODE  <br/> |
 |識別子:  <br/> |0x3E04  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |MAPI のステータス  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 ステータス コードは必要があります、すべてのプロバイダー、Mapisvc.inf ファイルに表示されます。 
   
@@ -98,14 +98,14 @@ Mapitags.h
 
 
 
-[PidTagStatusString の標準的なプロパティ](pidtagstatusstring-canonical-property.md)
+[PidTagStatusString 標準プロパティ](pidtagstatusstring-canonical-property.md)
 
 
 [MAPI プロパティ](mapi-properties.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

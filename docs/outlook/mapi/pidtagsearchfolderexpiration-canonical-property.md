@@ -1,5 +1,5 @@
 ---
-title: PidTagSearchFolderExpiration の標準的なプロパティ
+title: PidTagSearchFolderExpiration 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e5746090-c850-4e95-b1e7-a07e42c87179
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: bd70d18242fadee964ad96305728e63617a0276f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803490"
 ---
-# <a name="pidtagsearchfolderexpiration-canonical-property"></a>PidTagSearchFolderExpiration の標準的なプロパティ
+# <a name="pidtagsearchfolderexpiration-canonical-property"></a>PidTagSearchFolderExpiration 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 検索フォルダーのコンテナーを古くなっている、時間が含まれていて、更新または再作成する必要があります。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_WB_SF_EXPIRATION  <br/> |
+|関連するプロパティ:  <br/> |PR_WB_SF_EXPIRATION  <br/> |
 |識別子:  <br/> |0x683A  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |検索  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 午前 0 時世界協定時刻 (UTC) 1601 年 1 月 1 日以降の分の数としては、このプロパティをフォーマットしなければなりません。
   
@@ -68,7 +68,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

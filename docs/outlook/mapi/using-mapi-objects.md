@@ -17,13 +17,13 @@ ms.locfileid: "19804210"
 ---
 # <a name="using-mapi-objects"></a>MAPI オブジェクトを使用します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアントとサービス ・ プロバイダーは、そのインターフェイスの実装でのメソッドの呼び出しによって MAPI オブジェクトを使用します。 MAPI オブジェクトを使用することができることの唯一の方法は、このMAPI インターフェイスの外部オブジェクトによって実装されるメソッドは、パブリックにアクセス可能ではありません。 すべてのオブジェクトのインターフェイスは継承によって関連しているために、オブジェクトのユーザーは同じインターフェイスに属しているかのように基本インターフェイスまたは継承されたインターフェイスのいずれかのいずれかのメソッドを呼び出すことができます。 
   
 メソッドへの呼び出しを実行しようとしているオブジェクトのユーザーと、そのオブジェクトには、継承によって関連するいくつかのインターフェイスが実装されて、ユーザー知る必要はありませんどのインタ フェースにメソッドが属しています。 ユーザーは、オブジェクトへのポインターを 1 つのインターフェイスのいずれかの任意のメソッドを呼び出すことができます。 たとえば、次の図では、folder オブジェクトをクライアント アプリケーションが使用する方法を示しています。 フォルダー オブジェクトの実装、 [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)から間接的に[IUnknown](http://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx)から継承するインターフェイスは、 [IMAPIProp: IUnknown](imapipropiunknown.md)と[IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)。 **IMAPIProp**メソッドで、 [IMAPIProp::GetProps](imapiprop-getprops.md)などの 1 つは、いずれかのクライアントが呼び出すことができます、 [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)などのメソッドを[IMAPIFolder::CreateMessage](imapifolder-createmessage.md)、同じオブジェクトへのポインターと同じようにします。 クライアントは、、またはこれらの呼び出しは、別のインターフェイスに属しているという事実によって影響を受ける。
   
-**フォルダー オブジェクトのクライアントの使用**
+**クライアントがフォルダー オブジェクトを使用**
   
 ![クライアントは、フォルダー オブジェクトの使用](media/amapi_40.gif "クライアントは、フォルダー オブジェクトの使用")
   

@@ -17,7 +17,7 @@ ms.locfileid: "19804196"
 ---
 # <a name="upreade"></a>UPREADE
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [アップロード ステータスの状態を読み取り](upload-read-status-state.md)中にはアイテムの読み取り状態をアップロードする情報を拡張します。
   
@@ -31,7 +31,7 @@ struct UPREADE
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 _ulFlags_
   
@@ -60,7 +60,7 @@ _skey_
 ## <a name="see-also"></a>関連項目
 
 - [レプリケーション API について](about-the-replication-api.md)
-- [レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
 - [MAPI �萔](mapi-constants.md)
 - [UPREAD](upread.md)
 

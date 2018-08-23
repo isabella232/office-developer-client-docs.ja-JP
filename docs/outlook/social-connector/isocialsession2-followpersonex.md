@@ -23,7 +23,7 @@ ms.locfileid: "19804382"
 HRESULT _stdcall FollowPersonEx([in] SAFEARRAY(BSTR) emailAddresses, [in] BSTR displayName);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _emailAddresses_
   
@@ -33,7 +33,7 @@ _displayName_
   
 > [in]友人として追加するユーザーの表示名を含む文字列です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 Outlook ソーシャル コネクタ (OSC) は、多くの場合よりも OSC プロバイダー、 **emailAddresses**パラメーターの配列内の SMTP アドレスの最初の要素は、プライマリ SMTP アドレスと仮定できます。 
   
@@ -45,5 +45,5 @@ Outlook ソーシャル コネクタ (OSC) は、多くの場合よりも OSC �
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialSession2: IUnknown](isocialsession2iunknown.md)
+- [ISocialSession2 : IUnknown](isocialsession2iunknown.md)
 

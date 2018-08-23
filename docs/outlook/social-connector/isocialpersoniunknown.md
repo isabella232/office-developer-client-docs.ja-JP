@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804350"
 ---
-# <a name="isocialperson--iunknown"></a>ISocialPerson: IUnknown
+# <a name="isocialperson--iunknown"></a>ISocialPerson : IUnknown
 
 ソーシャル ネットワーク上のユーザーを表します。
   
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 次の表は、 **ISocialPerson**インターフェイスで使用可能なメンバーを示します。 
   
@@ -32,7 +32,7 @@ ms.locfileid: "19804350"
 |[GetPicture](isocialperson-getpicture.md) <br/> |メソッド  <br/> |個人の画像リソースを格納するバイトの配列を取得します。  <br/> |
 |[GetStatus](isocialperson-getstatus.md) <br/> |メソッド  <br/> |このメソッドは現在サポートされていません。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 Outlook ソーシャル コネクタ (OSC) プロバイダーには、OSC と通信するには、このインターフェイスを実装しなければなりません。
   

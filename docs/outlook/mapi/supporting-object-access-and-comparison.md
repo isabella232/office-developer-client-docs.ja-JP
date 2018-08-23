@@ -1,5 +1,5 @@
 ---
-title: オブジェクトへのアクセスとの比較をサポートしています。
+title: オブジェクトのアクセスと比較のサポート
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804069"
 ---
-# <a name="supporting-object-access-and-comparison"></a>オブジェクトへのアクセスとの比較をサポートしています。
+# <a name="supporting-object-access-and-comparison"></a>オブジェクトのアクセスと比較のサポート
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 サービス プロバイダーでは、開くし、プロバイダーやその他のプロバイダーに属しているオブジェクトを比較する、 [IMAPISupport::OpenEntry](imapisupport-openentry.md)メソッドと[IMAPISupport::CompareEntryIDs](imapisupport-compareentryids.md)メソッドを使用できます。 
   

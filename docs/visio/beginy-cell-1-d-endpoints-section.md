@@ -16,19 +16,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804801"
 ---
-# <a name="beginy-cell-1-d-endpoints-section"></a>[BeginY] セル ([1-D Endpoints] セクション)
+# <a name="beginy-cell-1-d-endpoints-section"></a>[BeginY] セル ([1-D エンドポイント] セクション)
 
 *Y*を表すが、親の原点を基準として、1 次元図形の始点の座標です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [beginy] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [BeginY] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | [Beginy]  <br/> |
    
-プログラムから、インデックスによって [beginy] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [BeginY] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

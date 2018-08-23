@@ -54,7 +54,7 @@ Project Server 2013 をインストールするときに、SharePoint Web サー
 > [!NOTE]
 > Project Web App でいくつかの管理ページ、PWA の設定] ページなど、編集可能にしていないし、**ページの編集**] コマンドを表示しません。 Project Web App では、SharePoint Designer 2013 を使用してページを編集できません。 SharePoint Designer 2013 を使用してプロジェクト サイトのページを編集することができます。 
   
-**図 1 です。Project Web App でページの編集] メニューを使用します。**
+**図 1. Project Web App の [ページの編集] メニューの使用**
 
 ![Project Web Access のホーム ページの編集](media/pj15_Programmability_PWAHome.gif "Project Web Access のホーム ページの編集")
   
@@ -74,11 +74,11 @@ Project Web App では、SharePoint アプリケーションの場合は、プ�
   
 PSEntityProvision.xsd スキーマ ファイルは、Project 2013 SDK のダウンロードに使用可能で、`Documentation\Schemas\AppProvisioning`のサブディレクトリです。 図 2 は、 **LookupTable**シーケンスが展開されている、 **PSEntityProvision**スキーマの Visual Studio で XML スキーマのエクスプ ローラー ビューを示しています。 
   
-**図 2 になります。スキーマの準備の Project Server エンティティの Visual Studio の表示**
+**図 2. Project Server エンティティ準備スキーマの Visual Studio ビュー**
 
 ![Project Server エンティティのスキーマの表示](media/pj15_Programmability_EntitySchema.gif "Project Server エンティティのスキーマの表示")
   
-SharePoint パッケージの Project Server の機能をインストールするには、 **PSEntityProvision**スキーマに従って、1 つまたは複数の elements.xml ファイルを含めることができます。 単一の XML ファイル内の Project Server エンティティは、次の順序で表示する必要があります。 
+Project Server 用の機能をインストールする SharePoint パッケージには、**PSEntityProvision** スキーマに従った elements.xml ファイルを 1 つまたは複数含めることができます。1 つの XML ファイル内の Project Server エンティティは、次の順序で出現する必要があります。 
   
 1. ワークフロー フェーズ
     
@@ -99,7 +99,7 @@ Project Server エンティティを含む SharePoint パッケージを作成�
 ## <a name="upgrading-applications-with-the-project-server-apis"></a>Project Server API によるアプリケーションのアップグレード
 <a name="pj15_Programmability_APIs"> </a>
 
-Project Server の以前のバージョン用に開発されたアプリケーションをアップグレードするときにプログラムのインターフェイスを作成、読み取り、更新、およびプロジェクトのエンティティ (CRUD 操作) を削除するメソッドが含まれているため、CSOM または PSI のいずれかを使用することができます。 内部的に、PSI を呼び出すと、CSOM、置き換えることはしません完全にすべての PSI メソッドです。 シナリオと制限、CSOM および PSI は、[何の PSI を行い実行しません](what-the-psi-does-and-does-not-do.md)し、[どのような「CSOM はしない](what-the-csom-does-and-does-not-do.md)を参照してください。
+前のバージョンの Project Server 向けに開発されたアプリケーションをアップグレードする場合は、プロジェクト エンティティの作成、読み取り、更新、および削除のためのメソッド (CRUD 操作) を含むプログラム インターフェイスとして CSOM と PSI のどちらを使用するかを選択できます。CSOM は内部で PSI を呼び出しますが、すべての PSI メソッドに完全に代わるものではありません。PSI と CSOM のシナリオと制約については、「[What the PSI does and does not do](what-the-psi-does-and-does-not-do.md)」および「[What the CSOM does and does not do](what-the-csom-does-and-does-not-do.md)」を参照してください。
   
 > [!NOTE]
 > CSOM には、必要な機能が含まれている場合は、CSOM を使用するアプリケーションをアップグレードすることをお勧めします。 CSOM は、オンプレミスと Project Server 2013 のオンライン インストールの両方に使用するアプリケーションを有効にします。 
@@ -153,7 +153,7 @@ PDS 用に開発されたアプリケーションは、それ以降のバージ�
 > [!NOTE]
 > PDS アプリケーションは、Project Server 2013 を一新する必要があります、ため、CSOM を使用することをお勧めします。 
   
-PDS の互換性と PDS PSI 拡張機能を移植するためのガイドラインの詳細については、 [PDS のパリティでは、PSI Web サービス](http://msdn.microsoft.com/library/61a0b0c7-9b74-46d1-87ed-66ffdd8017f8%28Office.15%29.aspx)を参照してください。
+PDS の互換性の詳細と PDS 拡張機能を PSI に移植するときのガイドラインについては、「[PDS Parity in PSI Web Services](http://msdn.microsoft.com/library/61a0b0c7-9b74-46d1-87ed-66ffdd8017f8%28Office.15%29.aspx)」を参照してください。
   
 ### <a name="porting-applications-built-for-project-server-2007-and-project-server-2010"></a>Project Server 2007 および Project Server 2010 用に構築されたアプリケーションの移植
 <a name="pj15_Programmability_Porting2007"> </a>
@@ -279,13 +279,13 @@ Project Server データベースにアクセスするための Microsoft SQL Se
   
 ## <a name="see-also"></a>関連項目
 
-- [Project 2013 の開発者用の更新プログラム](updates-for-developers-in-project-2013.md)    
+- [Project 2013 の開発者向けの新機能](updates-for-developers-in-project-2013.md)    
 - [Project Server 2013 のアーキテクチャ](project-server-2013-architecture.md)    
-- [PSI とものはありません。](what-the-psi-does-and-does-not-do.md)   
-- [CSOM とものはありません。](what-the-csom-does-and-does-not-do.md)    
+- [PSI のすること、しないこと](what-the-psi-does-and-does-not-do.md)   
+- [CSOM のすること、しないこと](what-the-csom-does-and-does-not-do.md)    
 - [Project 2013 のクライアント側オブジェクト モデル (CSOM)](client-side-object-model-csom-for-project-2013.md)    
-- [開発 Project Server ワークフローの開始を取得します。](getting-started-developing-project-server-workflows.md)    
-- [Project 2013 のプログラミング リファレンス](project-2013-programming-references.md)    
+- [Project Server ワークフロー開発の作業開始](getting-started-developing-project-server-workflows.md)    
+- [Project 2013 プログラミング リファレンス](project-2013-programming-references.md)    
 - [プロジェクト PSI リファレンスの概要](project-psi-reference-overview.md)    
 - [SharePoint 用アプリを使用して配置するカスタム アクションを作成します。](http://msdn.microsoft.com/en-us/library/office/apps/jj163954%28v=office.15%29.aspx)    
 - [Project 2010 での非アクティブなタスクの概要](http://blogs.msdn.com/b/project/archive/2010/06/10/introducing-inactive-tasks-in-project-2010.aspx)    

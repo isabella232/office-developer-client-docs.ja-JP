@@ -16,16 +16,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804988"
 ---
-# <a name="change-the-name-and-view-the-id-of-a-shape"></a>図形の名前を変更して ID を表示する
+# <a name="change-the-name-and-view-the-id-of-a-shape"></a>図形の名前を変更したり ID を表示したりする
 
 1. 図面ウィンドウで図形を選択します。
     
-2. [[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] で、**図形の名前**をクリックします。
+2. [[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで、[**図形名**] をクリックします。
     
 3. **図形の名前**] ダイアログ ボックスで、名前を入力します。 
     
     図形の ID は、**図形の名前**] ダイアログ ボックスの上部に表示されます。 
     
-4. [ **OK**] をクリックします。
+4. **[OK]** をクリックします。
     
 

@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804347"
 ---
-# <a name="isocialprofile--isocialperson"></a>ISocialProfile: ISocialPerson
+# <a name="isocialprofile--isocialperson"></a>ISocialProfile : ISocialPerson
 
 ユーザーのログオンを表します。 
   
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 次の表は、 **ISocialProfile**インターフェイスで使用可能なメンバーを示します。 
   
@@ -29,7 +29,7 @@ ms.locfileid: "19804347"
 |[GetActivitiesOfFriendsAndColleagues](isocialprofile-getactivitiesoffriendsandcolleagues.md) <br/> |メソッド  <br/> |Outlook ソーシャル コネクタ 2013 以降、このメソッドは廃止されました。  <br/> |
 |[SetStatus](isocialprofile-setstatus.md) <br/> |メソッド  <br/> |このメソッドは現在サポートされていません。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 Outlook ソーシャル コネクタ (OSC) プロバイダーには、OSC と通信するには、このインターフェイスを実装しなければなりません。
   

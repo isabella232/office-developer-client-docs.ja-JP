@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 90dafeae-6b61-40e3-8341-d6a11799d0f2
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d83fce761afb4673b71df9d620ac3fd794d6009f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19803843"
 ---
 # <a name="sending-a-reply"></a>返信を送信
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアント アプリケーションは、通常、返信の 2 つの種類をサポートします。 元のメッセージと送信者だけでなく、元のメッセージの受信者のリストに含まれている他のすべての受信者に送信される 1 つの送信者にのみ送信される 1 つ。 この 2 つ目の種の応答は、すべてのメッセージの返信とも呼ばれます。
   

@@ -1,5 +1,5 @@
 ---
-title: 必要なレポートのメッセージのプロパティ
+title: 必須レポート メッセージ プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 68b14538-332d-4bdb-9a5c-8bb27272e089
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 902b991dcca8a48597a26c52081b8c1993c911b4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803764"
 ---
-# <a name="required-report-message-properties"></a>必要なレポートのメッセージのプロパティ
+# <a name="required-report-message-properties"></a>必須レポート メッセージ プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 次の表では、クライアントが期待できますを参照してくださいサポートされているレポートのメッセージのプロパティについて説明します。
   

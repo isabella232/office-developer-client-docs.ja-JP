@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f21b5e6c-7a63-46bf-acbf-0e042e3519f7
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fe07ed7c7f9c76f82b54732c019b9b5f8beb5db2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803799"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 PT_BINARY の型のプロパティについて説明します。
   
@@ -40,7 +40,7 @@ typedef struct _SBinary
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cb**
   
@@ -50,7 +50,7 @@ typedef struct _SBinary
   
 > PT_BINARY プロパティの値へのポインター。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 プロパティの型については、 [MAPI プロパティの種類の概要](mapi-property-type-overview.md)を参照してください。
   

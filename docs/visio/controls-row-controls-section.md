@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805117"
 ---
-# <a name="controls-row-controls-section"></a>[Controls] 行 ([Controls] セクション)
+# <a name="controls-row-controls-section"></a>[Controls] 行 ([コントロール] セクション)
 
 *X*および*y*を定義するセルが含まれています-図形の座標、および各コントロール ハンドルの動作を定義します。 図形には、各コントロール ハンドルの 1 つのコントロールの行が含まれています。 
   

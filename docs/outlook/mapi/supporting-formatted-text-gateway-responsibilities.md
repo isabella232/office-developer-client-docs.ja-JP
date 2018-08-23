@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804040"
 ---
-# <a name="supporting-formatted-text-gateway-responsibilities"></a>ゲートウェイの役割を書式設定されたテキストをサポートします。
+# <a name="supporting-formatted-text-gateway-responsibilities"></a>書式付きテキストのサポート: ゲートウェイの責任
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  **ゲートウェイ、送信メッセージのリッチ テキスト形式を処理するために**
   

@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804693"
 ---
-# <a name="what-the-csom-does-and-does-not-do"></a>CSOM が行うこと、行わないこと
+# <a name="what-the-csom-does-and-does-not-do"></a>CSOM のすること、しないこと
 
 クライアント側オブジェクト モデル (CSOM) は、オンラインの両方に設計された Project Server 2013 の Api のセットと設置は Pc、モバイル デバイス、およびタブレットを開発できるアプリケーションで使用します。 この記事は、CSOM を使用するためのいくつかの一般的なシナリオが含まれていて、CSOM の制限事項の一覧も。
   
@@ -108,7 +108,7 @@ CSOM では、PSI で使用できる拡張機能などは使用できません�
 
 Project Server 2013 で CSOM は、CSOM 実装では、SharePoint Server 2013 は、上に構築し、要求の最大サイズの制限を継承します。 SharePoint では、操作要求には、2 MB の制限と、送信済みのバイナリ オブジェクトのサイズを 50 MB の制限があります。 要求のサイズは、バイナリ ラージ オブジェクトの遅延を処理および操作の極端に長いキューからサーバーを保護するために制限されています。
   
-などの場合は、CSOM を使用してプロジェクトを作成し、短い形式の名前、タスクの GUID、および 1 d の期間などの情報量の最小値が 252 のタスクを追加するプロジェクトを編集すると、 **DraftProject.Update**要求内のデータの合計量がより小さい2 MB です。 ですが、空のプロジェクトにこのような 253 のタスクを追加しようとすると、2 MB の制限を超過すると、その次の例外を取得する: **Microsoft.SharePoint.Client.ServerException: 要求が多すぎるリソースを使用する**
+たとえば、CSOM を使用してプロジェクトを作成してから、短い名前、タスク GUID、有効期間 1d などの最小限の情報で 252 個のタスクを追加した場合、**DraftProject.Update** 要求の合計のデータ量は 2 MB 未満になります。しかし、このようなタスクを空のプロジェクトに 253 個追加しようとすると、2 MB の制限を超過し、[**Microsoft.SharePoint.Client.ServerException: 要求で使用されているリソースが多すぎます**] という例外が発生します。
   
 HTTP または HTTPS では、CSOM 要求内のデータをキャプチャするには、 [Fiddler](http://www.fiddler2.com)などのツールをデバッグする web を使用することができます (http://www.fiddler2.com)。 コード例を要求のサイズのテストを実装しを小さなグループに大きな要求を分割するためのソリューションが含まれています、 [DraftProject.Update](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.DraftProject.Update.aspx)を参照してください。 
   
@@ -117,7 +117,7 @@ HTTP または HTTPS では、CSOM 要求内のデータをキャプチャする
 
 - [Project Server のクライアント側オブジェクト モデル (CSOM)](client-side-object-model-csom-for-project-2013.md)
     
-- [PSI とものはありません。](what-the-psi-does-and-does-not-do.md)
+- [PSI のすること、しないこと](what-the-psi-does-and-does-not-do.md)
     
 - [Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx)
     

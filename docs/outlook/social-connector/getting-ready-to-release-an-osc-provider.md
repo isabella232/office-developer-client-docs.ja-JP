@@ -37,7 +37,7 @@ OSC プロバイダーを指定する機能に関して、OSC プロバイダー
 
 - [Outlook ソーシャル コネクタ プロバイダーの参照](outlook-social-connector-provider-reference-0.md)
   
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連情報
 
 - [OSC サンプル テンプレート](osc-sample-templates.md)
   

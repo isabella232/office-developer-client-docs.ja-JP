@@ -1,5 +1,5 @@
 ---
-title: 機能、認証、および構成のテスト
+title: 機能、認証、構成のテスト
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804464"
 ---
-# <a name="testing-capabilities-authentication-and-configuration"></a>機能、認証、および構成のテスト
+# <a name="testing-capabilities-authentication-and-configuration"></a>機能、認証、構成のテスト
 
 このトピックでは、機能、およびアカウントの構成とソーシャル ネットワークのユーザーの認証のシナリオを取得するためのテストについて説明します。
   

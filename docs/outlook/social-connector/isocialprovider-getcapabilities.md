@@ -23,13 +23,13 @@ ms.locfileid: "19804352"
 HRESULT _stdcall GetCapabilities([out, retval] BSTR* result);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _result_
   
 > [out]Outlook ソーシャル コネクタ (OSC) プロバイダーの機能を表す XML 文字列です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 返される_結果_の XML 文字列は、OSC プロバイダーの拡張機能の XML スキーマで定義されている**機能**要素のスキーマ定義に従う必要があります。 
   
@@ -37,5 +37,5 @@ _result_
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialProvider: IUnknown](isocialprovideriunknown.md)
+- [ISocialProvider : IUnknown](isocialprovideriunknown.md)
 

@@ -49,5 +49,5 @@ ms.locfileid: "19804675"
 
 [JavaScript API for Office](http://msdn.microsoft.com/en-us/library/fp142185.aspx)
   
-[Project 2013 VBA 開発者用リファレンス](http://msdn.microsoft.com/en-us/library/jj235035.aspx)
+[Project 2013 VBA 開発者向けリファレンス](http://msdn.microsoft.com/en-us/library/jj235035.aspx)
 

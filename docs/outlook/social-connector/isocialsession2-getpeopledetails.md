@@ -23,7 +23,7 @@ _PersonsAddresses_パラメーターで指定されたユーザーのユーザ�
 HRESULT _stdcall GetPeopleDetails([in] BSTR personsAddresses, [out, retval] BSTR* personsCollection);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _personsAddresses_
   
@@ -33,7 +33,7 @@ _personsCollection_
   
 > [out]人と画像の詳細のコレクションを格納する XML 文字列です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 OSC プロバイダー以外の友人や友人のオン ・ デマンドまたはハイブリッドの同期をサポートしている場合、Outlook ソーシャル コネクタ (OSC) は**GetPeopleDetails**を呼び出します。 
   
@@ -43,6 +43,6 @@ OSC では、メモリ内の_personsCollection_パラメーターによって返
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialSession2: IUnknown](isocialsession2iunknown.md)
+- [ISocialSession2 : IUnknown](isocialsession2iunknown.md)
 - [友人や活動を同期します。](synchronizing-friends-and-activities.md)
 

@@ -19,6 +19,6 @@ ms.locfileid: "19804539"
 
 このトピックでは、Outlook の天気予報の場所の XML スキーマ内の型を示します。
   
-- [weatherType 複合型](weathertype-complextype-outlook-weather-location-schema.md)
+- [weatherType complexType](weathertype-complextype-outlook-weather-location-schema.md)
     
 

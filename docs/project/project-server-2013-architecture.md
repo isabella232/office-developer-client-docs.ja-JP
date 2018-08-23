@@ -32,14 +32,14 @@ Project Server 2013 で Project アプリケーション サービスは、Share
   
 フル コントロールがある場合、project Server がプロジェクトを保持します。Project Professional では、Project Server に直接データを保存します。 表 1 は、Project Server にフル コントロールがある場合のタスクの一覧、スケジュールの web パーツ、その他の機能およびインポートされたプロジェクトのタスク リストの SharePoint コントロールの動作を比較します。 スケジュールの web パーツには、プロジェクトのスケジュールを編集することができます、Project Web App ページ上のグリッドが含まれています。 結合モードでは、状態管理のデータが入力される 1 回の両方のタスクとタイムシートです。1 つのエントリのモードでは、タイムシートから、タスクの状態管理データが別々 に入力します。
   
-**表 1 です。SharePoint タスク リストおよびフル コントロールの比較**
+**表 1. SharePoint タスク リストとフル コントロールの比較**
 
 | 機能 | タスク リスト | フル コントロール |
 |:-----|:-----|:-----|
-|**Sharepoint タスク リスト** <br/> |読み取り/書き込み  <br/> |読み取り専用  <br/> |
+|**SharePoint のタスク リスト** <br/> |読み取り/書き込み  <br/> |読み取り専用  <br/> |
 |**スケジュールの web パーツ** <br/> |読み取り専用  <br/> |読み取り/書き込み  <br/> |
 |**レポート** <br/> |Project Server を介した豊富なレポート機能  <br/> |Project Server を介した豊富なレポート機能  <br/> |
-|**その他の Project Server の機能** <br/> | ブロックされる機能:  <br/>-サーバー側プロジェクト編集では、Project Web App またはカスタムのクライアント ・ アプリケーションで  <br/>-状態管理  <br/>-タスクがリンク付けされているモードで表示されません。  <br/> |フル機能が有効  <br/> |
+|**Project Server のその他の機能** <br/> | ブロックされる機能:  <br/>-サーバー側プロジェクト編集では、Project Web App またはカスタムのクライアント ・ アプリケーションで  <br/>-状態管理  <br/>-タスクがリンク付けされているモードで表示されません。  <br/> |フル機能が有効  <br/> |
    
 ### <a name="managing-projects-as-sharepoint-task-lists"></a>SharePoint タスク リストとしてのプロジェクトの管理
 <a name="pj15_Architecture_VisibilityMode"> </a>
@@ -56,7 +56,7 @@ Project Server は、SharePoint の管理、タスク ・ リストおよびド�
     
 - (D) と、Project Professional の新しいプロジェクトが発行されると、ユーザーは、プロジェクトのプロジェクト サイトを作成するオプションを持ちます。 プロジェクトは、SharePoint タスク リストのプロジェクトの種類、またはフル コントロールのエンタープライズ プロジェクトの種類 (EPT) として、Project Web App で作成することもできます。 手順 (D) は、フル コントロール EPT を示しています。
     
-**図 1 です。Sharepoint プロジェクトのサイトを使用してタスク ・ リストします。**
+**図 1. SharePoint タスク リストとしてのプロジェクト サイトの使用**
 
 ![表示/非表示モードでのプロジェクトのサイトを使用します。](media/pj15_Architecture_VisibilityMode.gif "表示/非表示モードでのプロジェクトのサイトを使用します。")
 
@@ -78,7 +78,7 @@ Project Server は、サイト コレクションに関連付けられてし、�
     
 - (C) と、Project Professional の新しいプロジェクトが発行されると、ユーザーは、プロジェクトのプロジェクト サイトを作成するオプションを持ちます。 プロジェクトのフル コントロール EPT と、Project Web App で作成したし、プロジェクト サイトのサイト コレクションに読み取り専用のタスク ・ リストの発行もできます。
     
-**図 2 になります。フル コントロールを持つプロジェクトのサイトを使用します。**
+**図 2. フル コントロールの権限を使用したプロジェクト サイトの使用**
 
 ![管理モードでのプロジェクトのサイトを使用します。](media/pj15_Architecture_ManagedMode.gif "管理モードでのプロジェクトのサイトを使用します。")
   
@@ -89,7 +89,7 @@ Project Server は、サイト コレクションに関連付けられてし、�
   
 バックエンド プロジェクト サービス アプリケーションと通信する複数の Project Web App インスタンスが存在することができます。 設置型インストール、WFE を SharePoint ファーム構成で別のサーバーにすることができます。 またはプロジェクト サービス アプリケーションと同じ SharePoint サーバーのことができます。 オンライン プロジェクトにはには、WFE、プロジェクト サービス アプリケーション、およびローカルまたはリモート ワークフロー マネージャーのクライアント 1.0 サーバーが含まれています。 
   
-**図 3 です。Project Server 2013 の全般的なアーキテクチャ**
+**図 3. Project Server 2013 のアーキテクチャの概要**
 
 ![Project Server のアーキテクチャ](media/pj15_Architecture_ProjectServiceApp_WFE.gif "Project Server のアーキテクチャ")
 
@@ -141,7 +141,7 @@ WFE および企業イントラネット内の複数の WFE サーバーのイ�
   
 - リモート クライアントから PSI への呼び出しを最適化します。
     
-- プロジェクト サーバーのキュー サービスを必要とする PSI の呼び出しとそうでないものが区別されます。 非同期 PSI メソッド名は、キュー、 **QueueCreateProject**などで始まります。
+- Project Server Queue Service を必要とする PSI の呼び出しと、必要としない呼び出しを区別します。非同期 PSI メソッドの名前は Queue で始まります (**QueueCreateProject** など)。
     
 - 登録されているローカル イベント ハンドラーを呼び出す PSI 呼び出しを識別します。
     
@@ -169,7 +169,7 @@ PSI は 22 の公共サービス、**プロジェクト**、**リソース**、*
   
 図 4 は、ワークフロー マネージャーのクライアント 1.0 の SharePoint Server 2013 は、Project Server 2013 とローカルのワークフローの管理サイトの単一サーバー インストールの [**インターネット インフォメーション サービス (IIS) マネージャー**の **[接続**] ウィンドウを示します。 SharePoint サイト コレクション (A) には、フロント エンドの PSI サービスが含まれています、`_vti_bin\PSI`仮想サブディレクトリです。 SharePoint Web サービス アプリケーション (B) には、プロジェクト サービス アプリケーションのバックエンドの PSI サービスに、`508c23fb7dfd4c83a8919fae24bc68c5/PSI`仮想サブディレクトリです。 GUID は、Project Server のインストールのプロジェクト サービス アプリケーション インスタンスの名前です。 
   
-**図 4 です。IIS マネージャーは、フロント エンド PSI (A)、およびバック ・ エンドの PSI (B) を表示しています。**
+**図 4. フロントエンド PSI (A) とバックエンド PSI (B) が表示された IIS マネージャー**
 
 ![PSI をフロント エンドとバックエンドの PSI](media/pj15_Architecture_PSI_IIS.gif "PSI をフロント エンドとバックエンドの PSI")
   
@@ -189,11 +189,11 @@ Project Server の内部オブジェクト モデルには、プロジェクト�
   
 ビジネス オブジェクトはサードパーティの開発者に公開されません。PSI が API とビジネス オブジェクトのマッピングを処理し、CSOM が API と PSI をマッピングします。ビジネス オブジェクトの論理エンティティは、3 種類に分類できます。
   
-- **コア エンティティ**は、プロジェクト、タスク、割り当て、リソース、および予定表などのオブジェクトです。 コア エンティティには、アクセス許可の名前付け規則などの基本的なビジネス ロジックが含まれます。 
+- **コア エンティティ**は、プロジェクト、タスク、割り当て、リソース、カレンダーなどのオブジェクトです。コア エンティティには、権限や名前付け規則などの基本的なビジネス ロジックが含まれます。 
     
-- **ビジネス エンティティ**は、タイムシート、プロジェクトのポートフォリオ、モデルなどのオブジェクトです。 ビジネス エンティティは、追加のビジネス ロジックを含めるし、通常、コア エンティティの組み合わせから構築します。 
+- **ビジネス エンティティ**は、タイムシート、プロジェクト ポートフォリオ、モデルなどのオブジェクトです。ビジネス エンティティは追加のビジネス ロジックを含み、通常はコア エンティティの組み合わせから構築されます。 
     
-- **サポートのエンティティ**は、セキュリティや検証などのオブジェクトです。 
+- **サポート エンティティ**は、セキュリティ、検証などのオブジェクトです。 
     
 Project Server 2010 では、すべてのビジネス オブジェクトは、プロジェクト サービス アプリケーションで実装されます。 Project Server 2013 で、WFE は多くの同期メソッドを処理し、プロジェクトの計算サービスを必要としないビジネス オブジェクトをホストします。 **DeleteProject**や**ReadAssignments**などの同期の PSI メソッドは、Project Server キューのサービスを使用しません。 PSI での非同期メソッドで始まる名前を持つ`Queue`、 **QueueCreateProject**や**QueueUpdateTimesheet**などです。 非同期メソッドは、コントロールがユーザーに返されるときに、メソッドの処理をスケジュールするプロジェクト サーバー キュー サービスにメッセージを送ります。
   
@@ -261,11 +261,11 @@ Project Server では、以下の手順により、プロジェクト マネー�
     
 ## <a name="see-also"></a>関連項目
 
-- [開発者の Project 2013 の概要](http://msdn.microsoft.com/library/8da91ab0-af4f-429f-8241-490600e3f7bd%28Office.15%29.aspx)
-- [プロジェクト サーバー プログラミング](project-server-programmability.md)  
+- [開発者向け Project 2013 の概要](http://msdn.microsoft.com/library/8da91ab0-af4f-429f-8241-490600e3f7bd%28Office.15%29.aspx)
+- [Project Server プログラミング](project-server-programmability.md)  
 - [Project 2013 のクライアント側オブジェクト モデル (CSOM)](client-side-object-model-csom-for-project-2013.md)  
-- [PSI とものはありません。](what-the-psi-does-and-does-not-do.md)  
-- [開発 Project Server ワークフローの開始を取得します。](getting-started-developing-project-server-workflows.md)   
+- [PSI のすること、しないこと](what-the-psi-does-and-does-not-do.md)  
+- [Project Server ワークフロー開発の作業開始](getting-started-developing-project-server-workflows.md)   
 - [プロジェクト PSI リファレンスの概要](project-psi-reference-overview.md)   
 - [Open Data Protocol](http://www.odata.org/)
     

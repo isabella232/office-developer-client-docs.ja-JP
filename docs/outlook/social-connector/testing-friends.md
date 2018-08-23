@@ -1,5 +1,5 @@
 ---
-title: 友人のテスト
+title: 友だちのテスト
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804481"
 ---
-# <a name="testing-friends"></a>友人のテスト
+# <a name="testing-friends"></a>友だちのテスト
 
 このトピックでは、テストおよび該当する場合、プロバイダーでサポートされている同期モードによって、Outlook ソーシャル コネクタ (OSC) プロバイダーがその友人や、友人以外のデータを適切に返すことを確認するシナリオについて説明します。
 

@@ -1,5 +1,5 @@
 ---
-title: すべてのメッセージに必要なプロパティ
+title: すべてのメッセージの必須プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: df7e122f-0c44-4d81-8174-3a2d51671ba9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ebe4622ec9ed25be5ee8a736ed15e2f230ff05e3
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803770"
 ---
-# <a name="required-properties-for-all-messages"></a>すべてのメッセージに必要なプロパティ
+# <a name="required-properties-for-all-messages"></a>すべてのメッセージの必須プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 次の表では、クライアントが期待できます設定またはを参照してくださいサポートされているすべてのクラスのメッセージのプロパティについて説明します。
   

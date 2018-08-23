@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804027"
 ---
-# <a name="supporting-formatted-text-in-outgoing-messages-client-responsibilities"></a>送信メッセージ内のテキストを書式設定のサポート: クライアントの責任
+# <a name="supporting-formatted-text-in-outgoing-messages-client-responsibilities"></a>送信メッセージでの書式付きテキストのサポート: クライアントの責任
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアント アプリケーションは、([PidTagBody](pidtagbody-canonical-property.md)) である**PR_BODY**プロパティ、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) のプロパティ、または送信メッセージの**PR_HTML** ([PidTagHtml](pidtaghtml-canonical-property.md)) のプロパティを設定します。 プレーン テキストのみをサポートするクライアントは、 **PR_BODY**プロパティのみを設定します。 リッチ テキスト形 (式 RTF) のクライアント設定**PR_BODY**と**PR_RTF_COMPRESSED**プロパティの両方、またはのみ**PR_RTF_COMPRESSED**、メッセージによって使用されているプロバイダーを格納するに注意してください。 HTML に対応していないクライアントは、 **PR_HTML**プロパティを設定します。 
   

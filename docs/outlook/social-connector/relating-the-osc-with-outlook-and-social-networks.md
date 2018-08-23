@@ -1,5 +1,5 @@
 ---
-title: Outlook とソーシャル ネットワークの OSC の関連
+title: OSC と Outlook およびソーシャル ネットワークとの関連付け
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804462"
 ---
-# <a name="relating-the-osc-with-outlook-and-social-networks"></a>Outlook とソーシャル ネットワークの OSC の関連
+# <a name="relating-the-osc-with-outlook-and-social-networks"></a>OSC と Outlook およびソーシャル ネットワークとの関連付け
 
 Outlook ソーシャル コネクタ (OSC) は、同僚、友人、またはすべてのユーザーに関連付けられている場合の Office の連絡先カードおよび Outlook 人物情報ウィンドウのアクティビティ、状態、または写真の更新プログラムで表示できます。 既定では、OSC が Outlook の電子メールの添付ファイルを表示し、選択したユーザーから受信した会議出席依頼します。 選択したユーザーと Office ユーザーは、SharePoint サイトの共同作業する場合、OSC も、ドキュメントの更新とその SharePoint サイトから他のサイトのアクティビティが表示されます。 Office ユーザーが基幹業務アプリケーション、企業の内部の web サイトまたは LinkedIn などの本格的なソーシャル ネットワーク サイトのさまざまな OSC プロバイダーのインストール時に、Office ユーザーに興味を示している関連のコンテキストに応じてFacebook、および Windows Live をします。
   
@@ -31,7 +31,7 @@ OSC のプロバイダーのアーキテクチャは、OSC の中核となるエ
 
 ![ソーシャル ネットワーク、OSC プロバイダー、OSC、Office](media/off15OSCRef_Architecture.gif)
   
-## <a name="terminology"></a>用語
+## <a name="terminology"></a>用語集
 
 この Outlook ソーシャル コネクタ プロバイダー リファレンスで、ソーシャル ネットワークを使用して、次の種類のサイトを参照してください。 
   

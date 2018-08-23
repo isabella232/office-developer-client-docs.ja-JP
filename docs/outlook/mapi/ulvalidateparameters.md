@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: fb9050c9-5797-44f0-8bf5-6264f4e6d7c3
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 42b2f8e9695b1dbdc5ea02db5a4e8a0eaba6099c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804177"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 パラメーターのクライアント アプリケーションが、サービス ・ プロバイダーおよび MAPI 経過をチェックする内部関数が呼び出されます。 
   
@@ -40,7 +40,7 @@ HRESULT UlValidateParameters(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _」方法_
   
@@ -60,7 +60,7 @@ MAPI_E_CALL_FAILED
   
 > 予期しない、または不明な発生元のエラーでは、操作を完了できませんでした。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [UlValidateParms](ulvalidateparms.md)マクロでは、 **UlValidateParameters**マクロを置き換えられています。 **UlValidateParameters**は、RISC プラットフォームで正常に動作しないとしてコンパイルができなきます。 それをコンパイルし、インテルのプラットフォームで正常に動作しますが、すべてのプラットフォームで**UlValidateParms**をお勧めします。 
   

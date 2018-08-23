@@ -1,5 +1,5 @@
 ---
-title: PidTagSearchKey の標準的なプロパティ
+title: PidTagSearchKey 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,7 +9,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: fcab369a-a1f4-4425-a272-e35046914a4d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 169afc3b8cf982c4767802542b900ae80822cd01
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,22 +17,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803501"
 ---
-# <a name="pidtagsearchkey-canonical-property"></a>PidTagSearchKey の標準的なプロパティ
+# <a name="pidtagsearchkey-canonical-property"></a>PidTagSearchKey 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 検索の相関関係を持つオブジェクトを識別するバイナリの比較可能なキーが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_SEARCH_KEY  <br/> |
+|関連するプロパティ:  <br/> |PR_SEARCH_KEY  <br/> |
 |識別子:  <br/> |0x300B  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |ID プロパティ  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、メッセージのコピーなどの関連オブジェクトのトレースを提供し、重複した受信者などの不要なアイテムの検索が容易になります。
   
@@ -87,16 +87,16 @@ Mapitags.h
 
 
 
-[PidTagResponsibility の標準的なプロパティ](pidtagresponsibility-canonical-property.md)
+[PidTagResponsibility 標準プロパティ](pidtagresponsibility-canonical-property.md)
   
-[PidTagStoreRecordKey の標準的なプロパティ](pidtagstorerecordkey-canonical-property.md)
+[PidTagStoreRecordKey 標準プロパティ](pidtagstorerecordkey-canonical-property.md)
 
 
 [MAPI プロパティ](mapi-properties.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

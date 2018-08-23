@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d8c9d18c-4043-41f3-8501-8be8e3a2c9ac
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9e53c39b713aa782eb387b85667f5ded6193006f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19803682"
 ---
 # <a name="proptag"></a>PROP_TAG
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 指定したプロパティの型と識別子を組み合わせることによって作成されたプロパティ タグを返します。 
   
@@ -34,7 +34,7 @@ ms.locfileid: "19803682"
 PROP_TAG (ulPropType, ulPropID)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _ulPropType_
   
@@ -44,7 +44,7 @@ _ulPropID_
   
 > 新しいプロパティ タグのプロパティの識別子です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **プロペラ\_タグ**マクロは型の_ulPropType_と_ulPropID_で指定されている識別子のプロパティのプロパティ タグを作成します。 たとえば、次のように、 **PROP_TAG**マクロを使用してエントリ識別子のプロパティ タグを作成できます。 
   

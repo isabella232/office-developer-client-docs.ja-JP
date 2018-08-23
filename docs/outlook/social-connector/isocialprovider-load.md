@@ -23,7 +23,7 @@ Outlook ソーシャル コネクタ (OSC) プロバイダーを初期化しま�
 HRESULT _stdcall Load([in] BSTR socialProviderInterfaceVersion, [in] BSTR languageTag);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _socialProviderInterfaceVersion_
   
@@ -33,11 +33,11 @@ _languageTag_
   
 > [in][[RFC4646]](http://www.ietf.org/rfc/rfc4646.txt)と[[RFC4647]](http://www.ietf.org/rfc/rfc4647.txt)、現在の Outlook ユーザー インターフェイスの言語を表すによって定義されているインターネット技術標準化委員会 (IETF) の言語タグ。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 _SocialProviderInterfaceVersion_パラメーターのバージョンの形式は、 _X_です。_xxxx_、 _X_はメジャー バージョンで_xxxx_は、OSC のマイナー バージョンです。 Office 2013 では、15 の中のメジャー バージョンを確認してください。 
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialProvider: IUnknown](isocialprovideriunknown.md)
+- [ISocialProvider : IUnknown](isocialprovideriunknown.md)
 

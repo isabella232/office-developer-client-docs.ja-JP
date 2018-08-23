@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c12b4409-da6f-480b-87af-1e5baea2e8bd
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9748229799641d62b1649491c432f10164b49192
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803998"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 特定の行をテーブルの表示を制限するフィルターについて説明します。 
   
@@ -53,7 +53,7 @@ typedef struct _SRestriction
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **rt**
   
@@ -122,7 +122,7 @@ RES_SUBRESTRICTION
 |RES_SIZE  <br/> |[SSizeRestriction](ssizerestriction.md) <br/> |
 |RES_SUBRESTRICTION  <br/> |[SSubRestriction](ssubrestriction.md) <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントは、数とそれぞれのテーブルのビュー内の行の種類を制限して、フォルダー内の特定のメッセージを検索するに**SRestriction**構造体を使用します。 テーブルの制限を適用するには、クライアントは、 [IMAPITable::Restrict](imapitable-restrict.md)または[IMAPITable::FindRow](imapitable-findrow.md)のいずれかを呼び出します。 フォルダーの制限を課すには、クライアントは、フォルダーの[IMAPIContainer::SetSearchCriteria](imapicontainer-setsearchcriteria.md)メソッドを呼び出します。 
   

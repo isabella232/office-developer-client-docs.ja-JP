@@ -21,7 +21,7 @@ ms.locfileid: "19803827"
 ---
 # <a name="scode"></a>SCODE
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 エラーまたは警告を記述するために使用される 32 ビットのステータス値です。 
   
@@ -30,7 +30,7 @@ typedef ULONG SCODE;
 
 ```
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **データは、 [HRESULT](hresult.md)のデータ型と同じです。** 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 80f1c2e0-3567-4b16-86cb-d5e6ac95c2ee
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 73475c5ee4e715796e06642756c05746b271d128
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803946"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームで使用される名前付きプロパティをについて説明します。 
   
@@ -52,7 +52,7 @@ typedef struct _SMAPIFormProp
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulFlags**
   
@@ -102,7 +102,7 @@ FPST_ENUM_PROP
   
 > それぞれの名前付きプロパティの値を保持する**SMAPIFormPropEnumVal**構造体の配列へのポインター。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SMAPIFormProp**構造体には、 [IMAPIFormInfo](imapiforminfoimapiprop.md)インターフェイスの定義の一部として使用されるフォームのプロパティに関する情報が含まれています。**nSpecialType**には、 **SMAPIFormProp**の一部である**u**の和集合に適用されるタグが含まれています。
   

@@ -22,7 +22,7 @@ ms.locfileid: "19804982"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml、# .xml をマスター、# .xml のページ  <br/> |
@@ -42,7 +42,7 @@ ms.locfileid: "19804982"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[行要素 ([Tabs] セクション)](row-element-tabs-sectionvisio-xml.md) <br/> |[TabsRow_Type](tabsrow_type-complextypevisio-xml.md) <br/> |図形および [スタイル] タブの停止位置や配置を制御するプロパティを指定します。  <br/> |
+|[Row 要素 ([タブ] セクション)](row-element-tabs-sectionvisio-xml.md) <br/> |[TabsRow_Type](tabsrow_type-complextypevisio-xml.md) <br/> |図形および [スタイル] タブの停止位置や配置を制御するプロパティを指定します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -54,19 +54,19 @@ ms.locfileid: "19804982"
 
 |**属性**|**型**|**必須**|**説明**|**使用可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|DurationFormat 要素  <br/> |xsd:string  <br/> |省略可能  <br/> |数式がエラーが発生することを示します。 **E**の値は、現在の値 (エラー メッセージの文字列) です。**V**属性の値は、最後の有効な値です。  <br/> |エラー メッセージの文字列です。  <br/> |
+|E  <br/> |xsd:string  <br/> |省略可能  <br/> |数式がエラーが発生することを示します。 **E**の値は、現在の値 (エラー メッセージの文字列) です。**V**属性の値は、最後の有効な値です。  <br/> |エラー メッセージの文字列です。  <br/> |
 |ExternalTaskProject 要素  <br/> |xsd:string  <br/> |省略可能  <br/> | 要素の式を表します。 この属性は、次の文字列のいずれかを含めることができます。  <br/>  '(いくつかの数式)' の数式がローカルに存在する場合  <br/>  `No Formula`数式がローカルで削除されるか、ブロックされている場合  <br/>  `Inh`場合は、数式が継承されます。  <br/> |数式です。  <br/> |
-|MultipleCriticalPaths 要素  <br/> |xsd:string  <br/> |必須  <br/> |シェイプ シート セルの名前を表します。  <br/> |シェイプ シート セルの名前です。  <br/> 以下の「解説」セクションを参照してください。  <br/> |
+|N  <br/> |xsd:string  <br/> |必須  <br/> |シェイプ シート セルの名前を表します。  <br/> |シェイプ シート セルの名前です。  <br/> 以下の「解説」セクションを参照してください。  <br/> |
 |U  <br/> |xsd:string  <br/> |省略可能  <br/> |既定の測定単位を表しますが、DL です。  <br/> |セルの単位です。  <br/> |
 |V  <br/> |xsd:string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプ シート セルの値です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この**セル**要素の**N**属性は、限られた一連のシェイプ シートのセルに対応する値のいずれかである必要があります。 この**セル**要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   
-|**値**|**説明**|**詳細については**|
+|**値**|**説明**|**詳細情報**|
 |:-----|:-----|:-----|
 |位置揃え  <br/> |タブの整列方法を指定します。  <br/> |[[Alignment] セル ([Tabs] セクション)](alignment-cell-tabs-section.md) <br/> |
-|位置  <br/> |タブ位置を指定します。タブ位置は図面の縮尺による影響を受けません。図面の縮尺を変更しても、タブ位置は変わりません。  <br/> |[[Position] セル ([Tabs] セクション)](position-cell-tabs-section.md) <br/> |
+|Position  <br/> |タブ位置を指定します。タブ位置は図面の縮尺による影響を受けません。図面の縮尺を変更しても、タブ位置は変わりません。  <br/> |[[Position] セル ([Tabs] セクション)](position-cell-tabs-section.md) <br/> |
    
 

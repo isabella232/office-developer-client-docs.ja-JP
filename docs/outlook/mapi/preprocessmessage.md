@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: dda50325-74b3-445e-986e-115f6536561f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 22562e1177c9a649bc66b25b5e8e9e6ecc8e397c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803687"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージの内容またはメッセージの形式を指定する関数を定義します。
   
@@ -48,7 +48,7 @@ HRESULT PreprocessMessage(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpvSession_
   
@@ -96,7 +96,7 @@ S_OK
   
 > メッセージの内容は、正常にプリプロセス済みでした。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージ トランスポート プロバイダー プリプロセッサでは、メッセージのプリプロセス中に進行状況のインジケーターを表示できます。 ただし、メッセージのプリプロセス中にユーザーとの対話を必要とするダイアログ ボックスが表示されない必要があります。 
   
@@ -112,9 +112,9 @@ MAPI スプーラーは、メッセージを送信するタスクを所有して
 
 
 
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
   
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 

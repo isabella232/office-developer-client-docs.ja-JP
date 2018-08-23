@@ -21,7 +21,7 @@ ms.locfileid: "19805036"
 |:-----|:-----|
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
-|**拡張機能の基本** <br/> |xsd:string  <br/> |
+|**拡張ベース** <br/> |xsd:string  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -79,7 +79,7 @@ ms.locfileid: "19805036"
 |著者 Id  <br/> |xsd:unsignedInt  <br/> |必須  <br/> ||Xsd:unsignedInt の値を入力します。  <br/> |
 |AutoCommentType  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> ||Xsd:unsignedInt の値を入力します。  <br/> |
 |CommentID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> ||Xsd:unsignedInt の値を入力します。  <br/> |
-|Date  <br/> |xsd:dateTime  <br/> |必須  <br/> ||Xsd:dateTime の値を入力します。  <br/> |
+|日付  <br/> |xsd:dateTime  <br/> |必須  <br/> ||Xsd:dateTime の値を入力します。  <br/> |
 |終了  <br/> |xsd:boolean  <br/> |省略可能  <br/> ||Xsd:boolean の値を入力します。  <br/> |
 |EditDate  <br/> |xsd:dateTime  <br/> |省略可能  <br/> ||Xsd:dateTime の値を入力します。  <br/> |
 |PageID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> ||Xsd:unsignedInt の値を入力します。  <br/> |

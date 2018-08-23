@@ -1,5 +1,5 @@
 ---
-title: サービス プロバイダーの開発の基本
+title: サービス プロバイダー開発の基本
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803886"
 ---
-# <a name="service-provider-development-basics"></a>サービス プロバイダーの開発の基本
+# <a name="service-provider-development-basics"></a>サービス プロバイダー開発の基本
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このセクションには、独自の MAPI サービス プロバイダーを作成する前に確認する必要がある概要情報が含まれます。
   

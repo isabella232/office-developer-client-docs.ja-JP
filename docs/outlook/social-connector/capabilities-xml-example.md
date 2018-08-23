@@ -1,5 +1,5 @@
 ---
-title: 機能の XML の例
+title: 機能 XML の例
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804335"
 ---
-# <a name="capabilities-xml-example"></a>機能の XML の例
+# <a name="capabilities-xml-example"></a>機能 XML の例
 
 ここでの XML の例は、ソーシャル ネットワークの[ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)メソッドが呼び出された後に、Outlook ソーシャル コネクタ (OSC) が返される XML 文字列です。 XML は、その機能や、OSC の要件に、OSC プロバイダーを指定する方法を示しています。 
   

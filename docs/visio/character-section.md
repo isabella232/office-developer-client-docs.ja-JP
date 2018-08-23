@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805005"
 ---
-# <a name="character-section"></a>[Character] セクション
+# <a name="character-section"></a>[文字] セクション
 
 フォント、色、テキストのスタイル、大文字/小文字、上下位置の調整、およびポイント サイズなど、図形のテキストについての書式設定属性を表示します。
   

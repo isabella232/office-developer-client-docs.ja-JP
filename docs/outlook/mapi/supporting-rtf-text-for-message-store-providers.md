@@ -1,5 +1,5 @@
 ---
-title: メッセージ ストア プロバイダーの rtf 形式のテキストをサポートしています。
+title: メッセージ ストア プロバイダーでの RTF 形式テキストのサポート
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804070"
 ---
-# <a name="supporting-rtf-text-for-message-store-providers"></a>メッセージ ストア プロバイダーの rtf 形式のテキストをサポートしています。
+# <a name="supporting-rtf-text-for-message-store-providers"></a>メッセージ ストア プロバイダーでの RTF 形式テキストのサポート
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 一部のクライアント アプリケーションは、メッセージでリッチ テキスト形式 (RTF) のテキストを使用するようにします。 メッセージは、メッセージ内の rtf 形式のテキストをサポートするためにプロバイダーのニーズを保存する場合 ([PidTagBody](pidtagbody-canonical-property.md)) である**PR_BODY**プロパティだけでなく、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) のプロパティを処理する必要があります。 主に、つまり、両方のプロパティを格納する**PR_BODY には** **PR_RTF_COMPRESSED**内のテキストのプレーン テキスト版が含まれていることを確認します。 [](rtfsync.md)関数は、この目的のために役立ちます。 
   

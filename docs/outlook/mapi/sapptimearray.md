@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5a1ff95a-9862-4165-8a70-bd2eeb7fe683
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 834a7141f0e7150140fa27c21d88db422d6f5561
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803794"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 時刻の値の配列が含まれています。
   
@@ -40,7 +40,7 @@ typedef struct _SAppTimeArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **あう**
   
@@ -50,7 +50,7 @@ typedef struct _SAppTimeArray
   
 > アプリケーションの時刻の値の配列へのポインター。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SAppTimeArray**構造体を使用して、PT_MV_APPTIME の種類のプロパティを定義します。 PT_MV_APPTIME の詳細については、[プロパティの種類の一覧](property-types.md)を参照してください。
   

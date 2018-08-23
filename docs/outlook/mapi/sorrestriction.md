@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6fee29ce-9a34-4e0c-bb71-03120c3f1117
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 06b9b6a046aaa0f16418f75d402cc5be44f845a3
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803974"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 制約を論理**OR**演算を適用するために使用する**か**制限について説明します。 
   
@@ -40,7 +40,7 @@ typedef struct _SOrRestriction
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cRes**
   
@@ -50,7 +50,7 @@ typedef struct _SOrRestriction
   
 > 論理**OR**演算を使用して参加している制限を表す[SRestriction](srestriction.md)構造体へのポインター。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SOrRestriction**構造体の詳細については、[制限の詳細](about-restrictions.md)を参照してください。 
   

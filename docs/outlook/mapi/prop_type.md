@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 746d63fa-bfb7-479f-94dc-ba40011c1ec9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 91a9d15544ebc71d27c8a9a6f930f3c32ecaa4fe
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803684"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 指定されたプロパティ タグのプロパティの型を返します。
   
@@ -36,13 +36,13 @@ ms.locfileid: "19803684"
 PROP_TYPE (ulPropTag)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulPropTag_
   
 > プロパティ タグを取得するプロパティの型が含まれています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 プロパティの種類を調べるには、 **PROP_TYPE**マクロを使用できます。 PT_BINARY が返される値の PROP_TYPE (**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))) の結果を呼び出すなどです。
   

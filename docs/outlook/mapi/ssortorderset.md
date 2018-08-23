@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e7f9be6a-92e7-44a8-93ee-b087713a31df
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1604c4a1a0d1bf4008595b0d150b4f7eb3d1c2ed
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804002"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 標準またはカテゴリ別に並べ替えに使用されるテーブルの並べ替えキーのコレクションを定義します。
   
@@ -43,7 +43,7 @@ typedef struct _SSortOrderSet
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cSorts**
   
@@ -61,7 +61,7 @@ typedef struct _SSortOrderSet
   
 > 並べ替え順序を定義する各**SSortOrder**の構造体の配列です。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SSortOrderSet**構造体は、標準的なカテゴリ別に並べ替えのさまざまな並べ替え順序を定義するために使用されます。 
   

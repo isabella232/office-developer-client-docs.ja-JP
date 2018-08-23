@@ -16,11 +16,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805264"
 ---
-# <a name="drawingscale-cell-page-properties-section"></a>[DrawingScale] セル ([Page Properties] セクション)
+# <a name="drawingscale-cell-page-properties-section"></a>[DrawingScale] セル ([ページのプロパティ] セクション)
 
 現在の図面縮尺で、図面単位の値を表します。ページの図面縮尺は、[DrawingScale] セルに表示される図面単位に対して [PageScale] セルに表示されるページ単位の比率です。
   
-DrawingScale セルをプログラムから、ページのルーラーの単位を変更するを設定することができます。 ここでは、寸法の単位をインチからプログラムからセンチメートルに変更する例です。 この例では、メソッドを使用して、 **ConvertResult**同じ距離を維持しますが、それを別の単位で表現します。 
+プログラムで [DrawingScale] セルを設定して、ページのルーラーの単位を変更できます。次の例では、プログラムで測定単位をインチからセンチメートルに変更しています。この例の場合、**ConvertResult** メソッドを使用して、元の単位の値を、別の単位の同等な値に変換しています。 
   
 ```vb
 Public Sub SetActivePageMeasurementToCM() 
@@ -39,9 +39,9 @@ debug.print ActivePage.PageSheet.Cells("DrawingScale").Units = _
  visCentimeters 
 ```
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-このセルは、[**ページ設定**] ダイアログ ボックスの設定に対応して ([**ホーム**] タブの **[ページ設定**の矢印をクリック) します。 
+このセルは、[**ページ設定**] ダイアログ ボックスの設定に対応しています (このダイアログ ボックスを開くには、[**ホーム**] タブの [**ページ設定**] 矢印をクリックします)。 
   
 [DrawingScale] セルの数式の単位は、図面ウィンドウのルーラーが使用する測定単位を決定します。図面の縮尺が変更されないようにするには、次のいずれかの操作を行います。
   
@@ -49,13 +49,13 @@ debug.print ActivePage.PageSheet.Cells("DrawingScale").Units = _
     
 - [PageScale] セルに表示されている距離を、[DrawingScale] と同じ内容に変更します。
     
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[DrawingScale] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [DrawingScale] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |DrawingScale  <br/> |
    
-プログラムから、インデックスによって [DrawingScale] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [DrawingScale] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

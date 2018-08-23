@@ -1,5 +1,5 @@
 ---
-title: TNEF の添付ファイルのカスタム処理を使用してメッセージを送信します。
+title: TNEF ユーザー設定添付ファイル処理を使用したメッセージの送信
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803858"
 ---
-# <a name="sending-messages-by-using-tnef-custom-attachment-processing"></a>TNEF の添付ファイルのカスタム処理を使用してメッセージを送信します。
+# <a name="sending-messages-by-using-tnef-custom-attachment-processing"></a>TNEF ユーザー設定添付ファイル処理を使用したメッセージの送信
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージを送信するときは、添付ファイルの処理をカスタマイズします。
   

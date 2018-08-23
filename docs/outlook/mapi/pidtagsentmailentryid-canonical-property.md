@@ -1,5 +1,5 @@
 ---
-title: PidTagSentMailEntryId の標準的なプロパティ
+title: PidTagSentMailEntryId 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8f14dc15-d7d7-4894-b6a8-0d589f576c42
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 869f7f0bb4ea5e7222201083cb6d41754d241396
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803520"
 ---
-# <a name="pidtagsentmailentryid-canonical-property"></a>PidTagSentMailEntryId の標準的なプロパティ
+# <a name="pidtagsentmailentryid-canonical-property"></a>PidTagSentMailEntryId 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 送信後のメッセージの移動先フォルダーのエントリ id が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_SENTMAIL_ENTRYID  <br/> |
+|関連するプロパティ:  <br/> |PR_SENTMAIL_ENTRYID  <br/> |
 |識別子:  <br/> |0x0E0A  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |MAPI 以外から送信できます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 多くの場合、このプロパティは、 **PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md)) は、クライアント アプリケーションの標準の [送信済みアイテム フォルダーからコピーされます。
   
@@ -74,7 +74,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

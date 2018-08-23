@@ -1,5 +1,5 @@
 ---
-title: エラー処理のためのマクロを使用してください。
+title: エラー処理のためのマクロの使用
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 351405ca-b72b-4e9e-bc8e-947344588970
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c4e216f2204f4ee97d9eeac81f77ce6a82fff3f0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804199"
 ---
-# <a name="using-macros-for-error-handling"></a>エラー処理のためのマクロを使用してください。
+# <a name="using-macros-for-error-handling"></a>エラー処理のためのマクロの使用
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 HRESULT 値を操作するが容易にいくつかのマクロがあります。
   

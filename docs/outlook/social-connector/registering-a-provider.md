@@ -1,5 +1,5 @@
 ---
-title: プロバイダーを登録します。
+title: プロバイダーの登録
 manager: soliver
 ms.date: 03/05/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804452"
 ---
-# <a name="registering-a-provider"></a>プロバイダーを登録します。
+# <a name="registering-a-provider"></a>プロバイダーの登録
 
 このトピックでは、Outlook ソーシャル コネクタ (OSC) プロバイダーをインストールするときに使用される Windows のレジストリの場所について説明します。
   

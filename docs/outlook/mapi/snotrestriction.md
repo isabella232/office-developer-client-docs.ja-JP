@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e86ca032-d973-4b79-976e-5240ab38a0da
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a07a7737e9b9354514a2d5ac2ec37a393a3cd4e4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803966"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **しない**制限、制約を論理**NOT**演算を適用するために使用について説明します。 
   
@@ -40,7 +40,7 @@ typedef struct _SNotRestriction
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulReserved**
   
@@ -50,7 +50,7 @@ typedef struct _SNotRestriction
   
 > 論理**NOT**演算子に参加している制限を記述する[SRestriction](srestriction.md)構造体へのポインター。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SNotRestriction**構造体の詳細については、[制限の詳細](about-restrictions.md)を参照してください。 
   

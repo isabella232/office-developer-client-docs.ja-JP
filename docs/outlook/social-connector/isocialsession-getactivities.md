@@ -23,11 +23,11 @@ OSC 1.1 に、このメソッドは廃止されました。
 HRESULT GetActivities([in] SAFEARRAY(BSTR) emailAddresses, [in] DATE startTime, [out, retval] BSTR *activities);
 ```
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 OSC 1.1 以降では、OSC は不要になった、 **GetActivities**を呼び出します。 OSC では、 **dynamicActivitiesLookup**の値を無視します。 参照の動的な活動をサポートするには、 [ISocialSession2::GetActivitiesEx](isocialsession2-getactivitiesex.md)メソッドを実装します。 **False**、 **getActivities**と**true を指定**する代わりに**ISocialSession2::GetActivitiesEx**を呼び出す OSC を求めるメッセージが表示、 **dynamicActivitiesLookupEx** 、 **cacheActivities**を設定します。 
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

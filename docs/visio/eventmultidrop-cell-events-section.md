@@ -13,19 +13,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805338"
 ---
-# <a name="eventmultidrop-cell-events-section"></a>[EventMultiDrop] セル ([Events] セクション)
+# <a name="eventmultidrop-cell-events-section"></a>[EventMultiDrop] セル ([イベント] セクション)
 
 インスタンスまたはシェイプを複製したり貼り付けたときに、図面ページに複数の図形をドロップしたときに評価されるイベント セルです。
   
 イベント セルはイベントの発生時にのみ評価されます。数式の入力時には評価されません。
   
-参照してください EventMultiDrop] セルへの名前で別の数式または**CellsU**プロパティを使用したプログラムから、次のコマンドを使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [EventMultiDrop] セルを参照するには、次の値を使用します。
+
+ 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |EventMultiDrop  <br/> |
    
-EventMultiDrop] セルへインデックスを使用してプログラムから、参照するには、次の引数で**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [EventMultiDrop] セルを参照するには、**CellsSRC** プロパティを使用し、次の引数を指定します。
+
+ 
   
 |||
 |:-----|:-----|

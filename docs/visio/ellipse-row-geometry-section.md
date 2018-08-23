@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805300"
 ---
-# <a name="ellipse-row-geometry-section"></a>[Ellipse] 行 ([Geometry] セクション)
+# <a name="ellipse-row-geometry-section"></a>[Ellipse] 行 ([図形座標] セクション)
 
 *X*および*y*が含まれていますが、楕円の中心点および楕円上の 2 つの点の座標です。 
   

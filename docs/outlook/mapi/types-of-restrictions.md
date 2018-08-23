@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 0d3bd58b-7100-4117-91ac-27139715c85b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7e3459c639cac449cdc03361949c9618827515b9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19804141"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 上にある多くの種類の制限の一部対象とする特定の列。 テーブルのすべての実装は、現在の列セットの列の制限をサポートする必要があります。 ただし、値を追加するには、テーブルの実装もサポートできます、現在のテーブル ビューにないオブジェクトのプロパティに基づいて制限。
   
@@ -35,9 +35,9 @@ ms.locfileid: "19804141"
 |**AND** <br/> |[SAndRestriction](sandrestriction.md) <br/> |制限の 2 つ以上の論理**AND**演算を実行します。  <br/> |
 |**または** <br/> |[SOrRestriction](sorrestriction.md) <br/> |制限の 2 つ以上の論理**OR**演算を実行します。  <br/> |
 |**NOT** <br/> |[SNotRestriction](snotrestriction.md) <br/> |制限の 2 つ以上の論理**NOT**演算を実行します。  <br/> |
-|コンテンツ  <br/> |[SContentRestriction](scontentrestriction.md) <br/> |指定されたデータを検索します。  <br/> |
-|Property  <br/> |[SPropertyRestriction](spropertyrestriction.md) <br/> |照合のための条件として、特定のプロパティ値を指定します。 使用できます、たとえば、特定の種類の添付ファイルを検索します。  <br/> |
-|ビットマスク  <br/> |[SBitMaskRestriction](sbitmaskrestriction.md) <br/> |特定のフラグが設定されているかどうかを判断するのには通常、PT_LONG プロパティに 1 を適用します。  <br/> |
+|Content  <br/> |[SContentRestriction](scontentrestriction.md) <br/> |指定されたデータを検索します。  <br/> |
+|プロパティ  <br/> |[SPropertyRestriction](spropertyrestriction.md) <br/> |照合のための条件として、特定のプロパティ値を指定します。 使用できます、たとえば、特定の種類の添付ファイルを検索します。  <br/> |
+|Bitmask  <br/> |[SBitMaskRestriction](sbitmaskrestriction.md) <br/> |特定のフラグが設定されているかどうかを判断するのには通常、PT_LONG プロパティに 1 を適用します。  <br/> |
 |サイズ  <br/> |[SSizeRestriction](ssizerestriction.md) <br/> |標準の関係演算子を使用してプロパティのサイズをテストします。  <br/> |
 |存在  <br/> |[SExistRestriction](sexistrestriction.md) <br/> |オブジェクトがプロパティの値を持つかどうかをテストします。  <br/> |
 |サブオブジェクト  <br/> |[SSubRestriction](ssubrestriction.md) <br/> |下位オブジェクト、またはエントリ id、受信者や添付ファイルなどにアクセスできないオブジェクトを検索するために使用します。 使用できます、たとえば、特定の受信者のメッセージを検索します。  <br/> |

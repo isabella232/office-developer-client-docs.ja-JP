@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 80aadd11-5409-4636-8fad-fa2206336671
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 921417d8fc73ca9c1f126b2cb0add23f6625e3f4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804216"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 パラメーターのクライアント アプリケーションがサービス プロバイダーに渡されますが確認するのには内部の関数を呼び出します。 
   
@@ -40,7 +40,7 @@ HRESULT ValidateParameters(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _」方法_
   
@@ -60,7 +60,7 @@ MAPI_E_CALL_FAILED
   
 > 1 つまたは複数のパラメーターが有効ではありません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [ValidateParms](validateparms.md)マクロでは、 **ValidateParameters**マクロを置き換えられています。 **ValidateParameters**は、RISC プラットフォームで正常に動作しないとしてコンパイルができなきます。 それをコンパイルし、インテルのプラットフォームで正常に動作しますが、すべてのプラットフォームで**ValidateParms**をお勧めします。 
   

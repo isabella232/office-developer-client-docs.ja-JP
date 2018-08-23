@@ -27,11 +27,11 @@ ms.locfileid: "19804371"
 
 ソーシャル ネットワークの一意の識別子を表す GUID 値へのポインター。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 GUID は不変である必要があり、プロバイダーのバージョンが変更された場合でも変更する必要があります。
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialProvider: IUnknown](isocialprovideriunknown.md)
+- [ISocialProvider : IUnknown](isocialprovideriunknown.md)
 

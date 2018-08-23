@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804782"
 ---
-# <a name="arcto-row-geometry-section"></a>[ArcTo] 行 ([Geometry] セクション)
+# <a name="arcto-row-geometry-section"></a>[ArcTo] 行 ([図形座標] セクション)
 
 *X*と*y*の座標、円弧の弓。 
   
@@ -32,6 +32,6 @@ ms.locfileid: "19804782"
 
 Visio で描画する弧は、真円に基づいている場合でも、楕円の弧になります。既定では、描画された弧は [シェイプシート] ウィンドウの [EllipticalArcTo] 行で表されます。[ArcTo] 行を [シェイプシート] ウィンドウに表示するには、弧を描画してから、行の種類を [EllipticalArcTo] から [ArcTo] に変更します。この結果、楕円の弧が真円の弧に変換されます。
   
-行の種類を変更するに、行を右クリックし、し、ショートカット メニューの [**行の種類の変更**] をクリックします。 
+行の種類を変更するには、行を右クリックして、ショートカット メニューの [**図形要素の変更**] をクリックします。 
   
 

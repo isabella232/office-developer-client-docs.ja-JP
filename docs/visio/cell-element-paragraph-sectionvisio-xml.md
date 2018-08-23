@@ -22,7 +22,7 @@ ms.locfileid: "19804972"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml、# .xml をマスター、# .xml のページ  <br/> |
@@ -42,7 +42,7 @@ ms.locfileid: "19804972"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[行要素 ([Paragraph] セクション)](row-element-paragraph-sectionvisio-xml.md) <br/> |[ParagraphRow_Type](paragraphrow_type-complextypevisio-xml.md) <br/> |段落のインデント、行間隔、箇条書き、または段落の水平方向の配置などの図形のテキストの属性を指定します。  <br/> |
+|[Row 要素 ([段落] セクション)](row-element-paragraph-sectionvisio-xml.md) <br/> |[ParagraphRow_Type](paragraphrow_type-complextypevisio-xml.md) <br/> |段落のインデント、行間隔、箇条書き、または段落の水平方向の配置などの図形のテキストの属性を指定します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -54,23 +54,23 @@ ms.locfileid: "19804972"
 
 |**属性**|**型**|**必須**|**説明**|**使用可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|DurationFormat 要素  <br/> |xsd:string  <br/> |省略可能  <br/> |数式がエラーが発生することを示します。 **E**の値は、現在の値 (エラー メッセージの文字列) です。**V**属性の値は、最後の有効な値です。  <br/> |エラー メッセージの文字列です。  <br/> |
+|E  <br/> |xsd:string  <br/> |省略可能  <br/> |数式がエラーが発生することを示します。 **E**の値は、現在の値 (エラー メッセージの文字列) です。**V**属性の値は、最後の有効な値です。  <br/> |エラー メッセージの文字列です。  <br/> |
 |ExternalTaskProject 要素  <br/> |xsd:string  <br/> |省略可能  <br/> | 要素の式を表します。 この属性は、次の文字列のいずれかを含めることができます。  <br/>  '(いくつかの数式)' の数式がローカルに存在する場合  <br/>  `No Formula`数式がローカルで削除されるか、ブロックされている場合  <br/>  `Inh`場合は、数式が継承されます。  <br/> |数式です。  <br/> |
-|MultipleCriticalPaths 要素  <br/> |xsd:string  <br/> |必須  <br/> |シェイプ シート セルの名前を表します。  <br/> |シェイプ シート セルの名前です。  <br/> 以下の「解説」セクションを参照してください。  <br/> |
+|N  <br/> |xsd:string  <br/> |必須  <br/> |シェイプ シート セルの名前を表します。  <br/> |シェイプ シート セルの名前です。  <br/> 以下の「解説」セクションを参照してください。  <br/> |
 |U  <br/> |xsd:string  <br/> |省略可能  <br/> |既定の測定単位を表しますが、DL です。  <br/> |セルの単位です。  <br/> |
 |V  <br/> |xsd:string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプ シート セルの値です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この**セル**要素の**N**属性は、限られた一連のシェイプ シートのセルに対応する値のいずれかである必要があります。 この**セル**要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   
-|**値**|**説明**|**詳細については**|
+|**値**|**説明**|**詳細情報**|
 |:-----|:-----|:-----|
 |行頭文字  <br/> |箇条書きのスタイルを指定します。  <br/> |[[Bullet] セル ([Paragraph] セクション)](bullet-cell-paragraph-section.md) <br/> |
 |BulletFont  <br/> |ユーザー設定の箇条書き文字列を指定し、[Bullet] セルの値がゼロ以外のとき、テキストの書式設定に使用するフォントの番号を表します。  <br/> |[[BulletFont] セル ([Paragraph] セクション)](bulletfont-cell-paragraph-section.md) <br/> |
 |BulletFontSize  <br/> |箇条書きのサイズを指定します。  <br/> |[[BulletSize] セル ([Paragraph] セクション)](bulletsize-cell-paragraph-section.md) <br/> |
 |BulletStr  <br/> |箇条書きのスタイルをカスタマイズできます。  <br/> |[[BulletString] セル ([Paragraph] セクション)](bulletstring-cell-paragraph-section.md) <br/> |
-|フラグ  <br/> |テキストの方向が左から右か、右から左かを示します。  <br/> |[[Flags] セル ([Paragraph] セクション)](flags-cell-paragraph-section.md) <br/> |
+|Flags  <br/> |テキストの方向が左から右か、右から左かを示します。  <br/> |[[Flags] セル ([Paragraph] セクション)](flags-cell-paragraph-section.md) <br/> |
 |HorzAlign  <br/> |図形のテキスト ブロックにあるテキストの水平方向の配置を指定します。  <br/> |[[HAlign] セル ([Paragraph] セクション)](halign-cell-paragraph-section.md) <br/> |
 |[Indfirst]  <br/> |図形のテキスト ブロック内にある各段落の先頭行について、段落の左インデントからインデントする距離を表します。この値は、図面の縮尺による影響を受けません。図面の縮尺を変更しても、先頭行のインデントは変わりません。  <br/> |[[IndFirst] セル ([Paragraph] セクション)](indfirst-cell-paragraph-section.md) <br/> |
 |[Indleft]  <br/> |段落にあるテキストのすべての行について、テキスト ブロックの左余白からインデントする距離を表します。この値は、図面の縮尺による影響を受けません。図面の縮尺を変更しても、左インデントは変わりません。  <br/> |[[IndLeft] セル ([Paragraph] セクション)](indleft-cell-paragraph-section.md) <br/> |

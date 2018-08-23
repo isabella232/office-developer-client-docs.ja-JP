@@ -22,7 +22,7 @@ ms.locfileid: "19805099"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml のページで、マスターの # .xml  <br/> |
@@ -49,7 +49,9 @@ ms.locfileid: "19805099"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Connect](connect-element-connects_type-complextypevisio-xml.md) <br/> |[Connect_Type](connect_type-complextypevisio-xml.md) <br/> |線と組織図内のボックスなど、図面内の 2 つの図形間の接続を表します。  <br/> |
+|[Connect](connect-element-connects_type-complextypevisio-xml.md) <br/> |[Connect_Type](connect_type-complextypevisio-xml.md) <br/> |
+			組織図の線やボックスなど、図面内の 2 つの図形の接続を表します。
+  <br/> |
    
 ### <a name="attributes"></a>属性
 

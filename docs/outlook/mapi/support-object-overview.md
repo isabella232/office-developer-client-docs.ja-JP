@@ -19,7 +19,7 @@ ms.locfileid: "19804022"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI をサポート オブジェクトを実装するオブジェクトを提供する、 [IMAPISupport: IUnknown](imapisupportiunknown.md)インタ フェースは、ログオン時にすべてのサービス プロバイダーとすべてのメッセージ サービスの構成中にします。 
   

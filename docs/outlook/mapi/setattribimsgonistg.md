@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 683d0d00-1b93-445d-86ff-180a3e6d2323
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e8a0daa2afe2397f39b7f37a31ef718ba65a3350
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803890"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [OpenIMsgOnIStg](openimsgonistg.md)関数によって提供された[IMessage](imessageimapiprop.md)オブジェクトのプロパティの属性を変更または設定します。 
   
@@ -42,7 +42,7 @@ HRESULT SetAttribIMsgOnIStg(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpObject_
   
@@ -70,7 +70,7 @@ MAPI_W_ERRORS_RETURNED
   
 > 呼び出しは完了しましたが、1 つまたは複数のプロパティにアクセスできませんでしたし、PT_ERROR のプロパティの種類と返されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 プロパティの属性は、プロパティ オブジェクト、つまり、オブジェクトを実装することでのみアクセスできます、 [IMAPIProp: IUnknown](imapipropiunknown.md)インタ フェースです。 [OpenIMsgOnIStg](openimsgonistg.md)ビルドの MAPI プロパティを OLE 構造化ストレージ オブジェクトで使用できるようにするのには、 [IMessage: IMAPIProp](imessageimapiprop.md) OLE **IStorage**オブジェクト上にあるオブジェクトです。 このようなオブジェクトのプロパティの属性の設定または**SetAttribIMsgOnIStg**に変更し、 [GetAttribIMsgOnIStg](getattribimsgonistg.md)を取得します。 
   

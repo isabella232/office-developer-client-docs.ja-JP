@@ -1,5 +1,5 @@
 ---
-title: 技術的な要件
+title: 技術的要件
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804460"
 ---
-# <a name="technical-requirements"></a>技術的な要件
+# <a name="technical-requirements"></a>技術的要件
 
 ここでサポートされているプログラミング言語について説明、COM の可視性とメソッドが型の要件、および Outlook ソーシャル コネクタ (OSC) プロバイダーの拡張機能 DLL の詳細を返します。 
   

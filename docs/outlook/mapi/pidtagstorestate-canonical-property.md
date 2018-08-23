@@ -1,5 +1,5 @@
 ---
-title: PidTagStoreState の標準的なプロパティ
+title: PidTagStoreState 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 36e49cf5-1411-42c5-9112-09958243996d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a50a38825434ef1e76f0ea5ff2e4d6d5d847a975
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803631"
 ---
-# <a name="pidtagstorestate-canonical-property"></a>PidTagStoreState の標準的なプロパティ
+# <a name="pidtagstorestate-canonical-property"></a>PidTagStoreState 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ・ ストアの状態を記述するフラグが含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_STORE_STATE  <br/> |
+|関連するプロパティ:  <br/> |PR_STORE_STATE  <br/> |
 |識別子:  <br/> |0x340E  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |MAPI メッセージ ストア  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは動的であり、 **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) のプロパティとは異なり、ユーザーの操作に基づいて変更できます。 
   
@@ -74,7 +74,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

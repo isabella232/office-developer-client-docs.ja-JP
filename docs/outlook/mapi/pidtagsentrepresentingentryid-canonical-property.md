@@ -1,5 +1,5 @@
 ---
-title: PidTagSentRepresentingEntryId の標準的なプロパティ
+title: PidTagSentRepresentingEntryId 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f23bde8b-94cc-48c8-891a-166aa39aa3ee
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 49c7f697b6fffee15a47b56566c6fbc552a11b60
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803513"
 ---
-# <a name="pidtagsentrepresentingentryid-canonical-property"></a>PidTagSentRepresentingEntryId の標準的なプロパティ
+# <a name="pidtagsentrepresentingentryid-canonical-property"></a>PidTagSentRepresentingEntryId 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 送信者によって表されるメッセージのユーザーのエントリ id が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_SENT_REPRESENTING_ENTRYID  <br/> |
+|関連するプロパティ:  <br/> |PR_SENT_REPRESENTING_ENTRYID  <br/> |
 |識別子:  <br/> |0x0041  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |Address  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、メッセージに送信者によって表されるユーザーのアドレスのプロパティのいずれかです。 クライアント アプリケーションは、別のクライアントの代わりにメッセージを送信するときは、そのクライアントの値に表される送信者のすべてのプロパティを設定にする必要があります。 通常それ自体の代わりに送信するメッセージのユーザーのまま表される送信者のプロパティ設定を解除します。
   
@@ -86,14 +86,14 @@ Mapitags.h
 
 
 
-[PidTagEntryId の標準的なプロパティ](pidtagentryid-canonical-property.md)
+[PidTagEntryId 標準プロパティ](pidtagentryid-canonical-property.md)
 
 
 [MAPI プロパティ](mapi-properties.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805298"
 ---
-# <a name="dynfeedback-cell-miscellaneous-section"></a>[DynFeedback] セル ([Miscellaneous] セクション)
+# <a name="dynfeedback-cell-miscellaneous-section"></a>[DynFeedback] セル ([その他] セクション)
 
 コネクタをドラッグしたときにユーザーに対して表示されるフィードバックの種類を変更します。マウス ボタンを離した後に表示されるコネクタ図形は、この設定の影響を受けません。またこの設定は、経路指定が可能なコネクタには適用されません。
   
@@ -26,15 +26,15 @@ ms.locfileid: "19805298"
 | 1  <br/> | ドラッグすると脚を 3 本表示します。  <br/> |**visDynFBUCon3Leg** <br/> |
 | 2  <br/> | ドラッグすると脚を 5 本表示します。  <br/> |**visDynFBUCon5Leg** <br/> |
    
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[DynFeedback] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [DynFeedback] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | DynFeedback  <br/> |
    
-プログラムから、インデックスによって [DynFeedback] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [DynFeedback] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

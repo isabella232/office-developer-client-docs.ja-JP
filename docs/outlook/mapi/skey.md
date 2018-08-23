@@ -19,7 +19,7 @@ ms.locfileid: "19803944"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Outlook アイテムのソースのキーです。
   
@@ -33,7 +33,7 @@ struct SKEY
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  _guid_
   
@@ -45,7 +45,7 @@ struct SKEY
 
 [レプリケーション API について](about-the-replication-api.md)
   
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [UPDELE](updele.md)
   

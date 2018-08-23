@@ -100,7 +100,7 @@ VS ソリューションには、ProjectServerClient アセンブリ プロジ�
     
    必要な場合は、**参照...** ] をクリックします。 ダイアログ ボックスの下部にあるボタンをクリックし、アセンブリを検索するのには Project 2013 SDK のインストール ディレクトリに移動します。 
     
-3. [ **OK**] をクリックします。 
+3. **[OK]** をクリックします。 
     
 4. .Cs ファイルには、PrjoctServer クライアント名前空間を追加します。
     
@@ -132,7 +132,7 @@ System.Security アセンブリは、.NET Framework の一部であるし、フ�
     
 2. 選択**アセンブリ =\>フレームワーク**参照マネージャーのダイアログ ボックスの左側のペインで**System.Security**を確認します。 
     
-3. [ **OK**] をクリックします。 
+3. **[OK]** をクリックします。 
     
 4. .Cs ファイルには、System.Security 名前空間を追加します。
     
@@ -144,7 +144,7 @@ System.Security アセンブリは、.NET Framework の一部であるし、フ�
   
 - System/システム
     
-- あります
+- System.Collections.Generic
     
 - System.Linq
     

@@ -27,11 +27,11 @@ ms.locfileid: "19804356"
 
 ソーシャル ネットワーク名を含む文字列です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 Outlook ソーシャル コネクタ (OSC) プロバイダーには、ソーシャル ネットワークの名前をローカライズする必要があります。
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialProvider: IUnknown](isocialprovideriunknown.md)
+- [ISocialProvider : IUnknown](isocialprovideriunknown.md)
 

@@ -1,5 +1,5 @@
 ---
-title: プライマリ デバイスとプロバイダーの Id を取得しています。
+title: プライマリとプロバイダー ID の取得
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803766"
 ---
-# <a name="retrieving-primary-and-provider-identity"></a>プライマリ デバイスとプロバイダーの Id を取得しています。
+# <a name="retrieving-primary-and-provider-identity"></a>プライマリとプロバイダー ID の取得
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 通常のアドレス帳プロバイダー、サービス ・ プロバイダーには、さまざまな状況でセッションを表すために使用できる id を指定するオプションがあります。 3 つのプロパティでは、プロバイダーの識別情報について説明します。
   

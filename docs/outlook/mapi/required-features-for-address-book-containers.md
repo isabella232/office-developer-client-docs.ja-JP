@@ -1,5 +1,5 @@
 ---
-title: アドレス帳コンテナーの必要な機能
+title: アドレス帳コンテナーの必須機能
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 3e221944-5dc9-4cce-8b47-73af84427aea
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5eeaa9a8c1965954ad2eb0a6bfd2a174a355f10d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803767"
 ---
-# <a name="required-features-for-address-book-containers"></a>アドレス帳コンテナーの必要な機能
+# <a name="required-features-for-address-book-containers"></a>アドレス帳コンテナーの必須機能
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ほとんどのアドレス帳プロバイダーが少なくとも 1 つのコンテナーがあり、それらの変更の一部をサポートします。 内容と階層構造のテーブル、検索機能、および名前解決、アドレス帳コンテナーを指定できます。 変更可能なコンテナーは、ユーザー、配布リスト、またはその他のコンテナーおよび 1 回限りのテンプレートからその他のコンテナー内のエントリからエントリの追加のメッセージングなどのエントリの削除を使用します。
   
@@ -37,6 +37,6 @@ ms.locfileid: "19803767"
 |コンテナーに関する詳細情報を提供します。  <br/> |コンテナーの**PR_DETAILS_TABLE**プロパティをサポートしてください。 詳細については、[受信者の情報を表示して](displaying-recipient-information.md)[表示のテーブル](display-tables.md)を参照してください。  <br/> |
 |コンテナーの階層リストを提供します。  <br/> |**PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) のコンテナーのプロパティをサポートします。 詳細については、[階層テーブル](hierarchy-tables.md)を参照してください。  <br/> |
 |メッセージング ユーザーのプロパティをサポートします。  <br/> |実装、 [IMailUser: IMAPIProp](imailuserimapiprop.md)インタ フェースです。  <br/> |
-|あいまいな名前を解決するには  <br/> | **PR_ANR** ([PidTagAnr](pidtaganr-canonical-property.md)) のプロパティの制限をサポートしてください。  <br/>  必要に応じて[IABContainer::ResolveNames](iabcontainer-resolvenames.md)メソッドを実装します。 詳細については、[名前解決の実装](implementing-name-resolution.md)を参照してください。  <br/> |
+|あいまいな名前を解決する  <br/> | **PR_ANR** ([PidTagAnr](pidtaganr-canonical-property.md)) のプロパティの制限をサポートしてください。  <br/>  必要に応じて[IABContainer::ResolveNames](iabcontainer-resolvenames.md)メソッドを実装します。 詳細については、[名前解決の実装](implementing-name-resolution.md)を参照してください。  <br/> |
    
 

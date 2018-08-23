@@ -45,9 +45,9 @@ Project Server 2013 は、SharePoint Server 2013 で緊密に統合されてい�
   
 [Project Server プログラミング](project-server-programmability.md)では、Project Server 2013、Project Web App では、Project Server の以前のバージョン用に構築されたアプリケーションのアップグレードのカスタマイズの主要な拡張機能について説明します。 
   
-[何の PSI は行われない](what-the-psi-does-and-does-not-do.md)、PSI を使用できるシナリオについて説明し、PSI を実行できないことを示します。 
+「[What the PSI does and does not do](what-the-psi-does-and-does-not-do.md)」では、PSI を使用できるシナリオと PSI で実行できない操作について説明します。 
   
-[どのような「CSOM が行われない](what-the-csom-does-and-does-not-do.md)CSOM を使用できるシナリオについて説明します CSOM を実行できないことを示します。 
+「[What the CSOM does and does not do](what-the-csom-does-and-does-not-do.md)」では、CSOM を使用できるシナリオと CSOM で実行できない操作について説明します。 
   
 ### <a name="topics-not-covered"></a>扱わない内容
 
@@ -58,8 +58,8 @@ Project Standard および Project Professional 内では、Visual Basic Editor 
 ## <a name="see-also"></a>関連項目
 <a name="bk_addresources"> </a>
 
-- [Project 2013 の開発者用の更新プログラム](updates-for-developers-in-project-2013.md)
+- [Project 2013 の開発者向けの新機能](updates-for-developers-in-project-2013.md)
     
-- [開発 Project Server ワークフローの開始を取得します。](getting-started-developing-project-server-workflows.md)
+- [Project Server ワークフローの開発を開始する](getting-started-developing-project-server-workflows.md)
     
 

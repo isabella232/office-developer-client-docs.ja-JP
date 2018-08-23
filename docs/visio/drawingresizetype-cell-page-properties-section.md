@@ -16,19 +16,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805268"
 ---
-# <a name="drawingresizetype-cell-page-properties-section"></a>[DrawingResizeType] セル ([Page Properties] セクション)
+# <a name="drawingresizetype-cell-page-properties-section"></a>[DrawingResizeType] セル ([ページのプロパティ] セクション)
 
 図に合わせて、図面ページが自動的にサイズ変更するかどうかを決定します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-参照を取得する DrawingResizeType のセルに名前を別の数式からまたはプログラムから**CellsU**プロパティを使用して、次の手順を使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [DrawingResizeType] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |DrawingResizeType  <br/> |
    
-プログラムから、インデックスによって [DrawingResizeType] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [DrawingResizeType] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

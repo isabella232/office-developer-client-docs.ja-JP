@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5f570d9b-eb3d-4fc7-bcbe-348a0b8fe9e9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6d2bb6bdb934e0b02831b813b1246a3df4193e0d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803949"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 PT_MV_STRING8 の種類のプロパティを説明するために使用する文字列値の配列が含まれています。
   
@@ -40,7 +40,7 @@ typedef struct _SLPSTRArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **あう**
   
@@ -50,7 +50,7 @@ typedef struct _SLPSTRArray
   
 > 8 ビット文字の null 終了文字列の配列へのポインター。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 PT_MV_STRING8 の詳細については、[プロパティの種類の一覧](property-types.md)を参照してください。
   

@@ -20,13 +20,14 @@ ms.locfileid: "19805102"
   
 ## <a name="version-information"></a>バージョン情報
 
-Visio 2010 のバージョンが追加されます。 
+追加バージョン: Visio 2010
+ 
   
 ## <a name="syntax"></a>構文
 
 CONTAINERCOUNT()
   
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
  **Integer**
   

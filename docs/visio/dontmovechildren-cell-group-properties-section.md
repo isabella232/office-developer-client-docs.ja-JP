@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805257"
 ---
-# <a name="dontmovechildren-cell-group-properties-section"></a>[DontMoveChildren] セル ([Group Properties] セクション)
+# <a name="dontmovechildren-cell-group-properties-section"></a>[DontMoveChildren] セル ([グループのプロパティ] セクション)
 
 グループ内の図形をマウスを使用してドラッグできるかどうかを指定します。
   
@@ -31,13 +31,13 @@ ms.locfileid: "19805257"
   
 Visio 2000 より前のバージョンの Visio で作成されたマスター シェイプのグループまたはマスター シェイプのインスタンスのグループの場合、このセルの値は TRUE に設定されます。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[DontMoveChildren] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [DontMoveChildren] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | DontMoveChildren  <br/> |
    
-プログラムから、インデックスによって [DontMoveChildren] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [DontMoveChildren] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

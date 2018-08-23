@@ -1,5 +1,5 @@
 ---
-title: プロバイダーを展開します。
+title: プロバイダーの展開
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804363"
 ---
-# <a name="deploying-a-provider"></a>プロバイダーを展開します。
+# <a name="deploying-a-provider"></a>プロバイダーの展開
 
 Outlook ソーシャル コネクタ (OSC) プロバイダーを展開する推奨される方法は、Windows インストーラー (.msi) パッケージを使用します。 ローカル ハード ディスクにインストール パッケージをダウンロードした後は、Office ユーザーは、OSC プロバイダーをインストールします。 プロバイダーのインストールが完了した後、ユーザーは OSC プロバイダーに接続し、ソーシャル ネットワーク アカウントにログオン資格情報を提供できます。 OSC プロバイダーをアンインストールする場合、ユーザー、ユーザーで使用できます**プログラムと機能**コントロール パネルをアンインストールします。 
   
@@ -29,7 +29,7 @@ Outlook ソーシャル コネクタ (OSC) プロバイダーを展開する推�
 
 - [Outlook ソーシャル コネクタ プロバイダーの参照](outlook-social-connector-provider-reference-0.md)
   
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連情報
 
 - [Outlook Social Connector プロバイダーの開発の概要 (英語)(機械翻訳)](getting-started-with-developing-an-outlook-social-connector-provider.md)
   

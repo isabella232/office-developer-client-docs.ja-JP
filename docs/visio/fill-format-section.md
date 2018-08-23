@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805369"
 ---
-# <a name="fill-format-section"></a>[Fill Format] セクション
+# <a name="fill-format-section"></a>[塗りつぶしの書式設定] セクション
 
 図形と図形の影に関する、現在の塗りつぶし書式の属性を表示します。属性には、パターン、前景の色、背景の色などがあります。 
   

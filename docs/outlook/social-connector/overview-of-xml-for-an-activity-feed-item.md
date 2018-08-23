@@ -1,5 +1,5 @@
 ---
-title: フィード項目のアクティビティの XML の概要
+title: アクティビティ フィード アイテムのための XML の概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804472"
 ---
-# <a name="overview-of-xml-for-an-activity-feed-item"></a>フィード項目のアクティビティの XML の概要
+# <a name="overview-of-xml-for-an-activity-feed-item"></a>アクティビティ フィード アイテムのための XML の概要
 
 アクティビティ フィードは、ソーシャル ネットワーク上で発生する 1 つまたは複数のアクティビティで構成されています。 各アクティビティ フィードは、 **activityFeed**要素によって表されるし、の特徴は、これら 3 つの情報。 
   

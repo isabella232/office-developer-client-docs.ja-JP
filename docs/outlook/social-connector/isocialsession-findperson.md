@@ -23,7 +23,7 @@ _ユーザー Id_パラメーターに一致する 1 つまたは複数の人物
 HRESULT _stdcall FindPerson([in] BSTR userId, [out, retval] BSTR* result);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _userId_
   
@@ -33,11 +33,11 @@ _result_
   
 > [out]_ユーザー Id_パラメーターで指定された識別情報に一致する 1 つまたは複数の担当者を表す XML 文字列です。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 1 つまたは複数の担当者には、 **FindPerson**要求が一致すると、このメソッドは、_結果_のパラメーターにしている人の情報を返します。 _結果_の XML 文字列は、Outlook ソーシャル コネクタ (OSC) プロバイダーの機能拡張のスキーマで定義されている**友人**のスキーマ定義に従う必要があります。 
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

@@ -1,5 +1,5 @@
 ---
-title: サービス プロバイダーを開始します。
+title: サービス プロバイダーの開始
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804005"
 ---
-# <a name="starting-a-service-provider"></a>サービス プロバイダーを開始します。
+# <a name="starting-a-service-provider"></a>サービス プロバイダーの開始
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ある時点で、クライアントで MAPI セッションを開始した後、サービス ・ プロバイダーが開始されます。 トランスポート プロバイダーは、クライアントがそのサービスの要求を行うときに開始されます。 アドレス帳、メッセージ ストア プロバイダーは、クライアントのログオン処理中に開始されます。
   

@@ -35,6 +35,6 @@ Project Server 2013 は、Office Project Server 2007 で導入されたプロジ
   
 ## <a name="see-also"></a>関連項目
 
-- [Project Server 2013 のクラス ライブラリと web サービスを参照](http://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)
+- [Project Server 2013 のクラス ライブラリと Web サービス参照](http://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)
   
 

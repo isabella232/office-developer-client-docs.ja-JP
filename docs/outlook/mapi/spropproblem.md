@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 55943197-fd11-442d-bb4b-0bff565b846e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 32aa91d43e4674c0de20a0dbb670dcb9e2c782cf
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803980"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロパティを含む操作に関連するエラーについて説明します。
   
@@ -41,7 +41,7 @@ typedef struct _SPropProblem
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulIndex**
   
@@ -55,7 +55,7 @@ typedef struct _SPropProblem
   
 > エラー値がプロパティを使用して問題を説明します。 この値は、任意の MAPI [SCODE](scode.md)の値を指定できます。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SPropProblem**構造体の配列は次のメソッドから返されます。 
   

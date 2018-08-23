@@ -1,5 +1,5 @@
 ---
-title: 通知を登録します。
+title: 通知の登録
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803749"
 ---
-# <a name="registering-for-a-notification"></a>通知を登録します。
+# <a name="registering-for-a-notification"></a>通知の登録
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアントは、その初期化プロセスの一部としてアドレス帳またはメッセージ ストアの通知を登録できます。
   

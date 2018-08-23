@@ -23,13 +23,13 @@ ms.locfileid: "19804348"
 HRESULT _stdcall GetFriendsAndColleagues([out, retval] BSTR* personsCollection);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _personsCollection_
   
 > [out]XML 文字列をユーザーの友人のセットを表し、Outlook ソーシャル コネクタ (OSC) プロバイダーの機能拡張用の XML スキーマで定義されている、**友人**の定義に準拠しています。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 OSC は、ソーシャル ネットワーク上の**GetFriendsAndColleagues** OSC プロバイダーをサポートしていますがキャッシュされている場合、またはハイブリッドの同期の友人を呼び出します。 OSC 最初にメソッドを呼び出して、 **GetFriendsAndColleagues** **GetFriendsAndColleagues** 、ソーシャル ネットワークにログオンしている Outlook ユーザーのソーシャル ネットワークにログオン中のユーザーの友人を表す XML 文字列を返します。 XML 文字列では、**友人**の XML スキーマ定義に準拠し、各フレンドの**人**の要素 (OSC プロバイダーのスキーマ定義に準拠しても) を指定します。 
   
@@ -43,6 +43,6 @@ _PersonsCollection_パラメーターで返される各フレンドの情報は�
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialPerson: IUnknown](isocialpersoniunknown.md)
+- [ISocialPerson : IUnknown](isocialpersoniunknown.md)
 - [フレンド情報の取得](getting-friends-information.md)
 

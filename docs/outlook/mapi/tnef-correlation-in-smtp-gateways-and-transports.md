@@ -1,5 +1,5 @@
 ---
-title: SMTP ゲートウェイおよび配送で TNEF 相関関係
+title: SMTP ゲートウェイおよびトランスポートでの TNEF 関連付け
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804113"
 ---
-# <a name="tnef-correlation-in-smtp-gateways-and-transports"></a>SMTP ゲートウェイおよび配送で TNEF 相関関係
+# <a name="tnef-correlation-in-smtp-gateways-and-transports"></a>SMTP ゲートウェイおよびトランスポートでの TNEF 関連付け
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ゲートウェイとインターネットに接続するためのトランスポートは、システムでは、SMTP を使用して、TNEF の相関関係を実装するために SMTP のメッセージ Id ヘッダーと、 **PR_TNEF_CORRELATION_KEY**プロパティの値を使用しているものに基づいています。 
   

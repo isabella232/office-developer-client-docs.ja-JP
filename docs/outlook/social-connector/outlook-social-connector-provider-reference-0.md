@@ -1,5 +1,5 @@
 ---
-title: Outlook ソーシャル コネクタ プロバイダーの参照
+title: Outlook Social Connector プロバイダーのリファレンス
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,19 +15,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804448"
 ---
-# <a name="outlook-social-connector-provider-reference"></a>Outlook ソーシャル コネクタ プロバイダーの参照
+# <a name="outlook-social-connector-provider-reference"></a>Outlook Social Connector プロバイダーのリファレンス
 
 このセクションには、Outlook ソーシャル コネクタ (OSC) プロバイダーの機能拡張のリファレンス トピックが含まれています。
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [インタ フェース](outlook-social-connector-provider-interfaces.md)
+- [インターフェイス](outlook-social-connector-provider-interfaces.md)
   
 - [XML スキーマ](outlook-social-connector-provider-xml-schema.md)
   
 - [エラー コード](outlook-social-connector-provider-error-codes.md)
   
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連情報
 
 - [プロバイダーを開発するためのベスト プラクティス](best-practices-for-developing-a-provider.md)
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 07631ae1-981e-4c8e-a30b-1213904fe079
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2185b059f2b831a14b90bad3a3c286ed72f8234d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803826"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 制限の注釈を付けるためには、コメントの制限について説明します。 
   
@@ -41,7 +41,7 @@ typedef struct _SCommentRestriction
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **あう**
   
@@ -55,7 +55,7 @@ typedef struct _SCommentRestriction
   
 > プロパティ タグと名前付きプロパティの値をそれぞれ含む[SPropValue](spropvalue.md)構造体の配列へのポインター。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SCommentRestriction**構造体は、一連の名前付きプロパティとオブジェクトを関連付けます。 コメントの制限は他の制限とは異なりは評価されません。 [IMAPITable::Restrict](imapitable-restrict.md)メソッドによって、それらは無視されます。 **IMAPITable::Restrict**の呼び出しが行われた後に、 [IMAPITable::QueryRows](imapitable-queryrows.md)メソッドによって返された行には影響はありません。 
   

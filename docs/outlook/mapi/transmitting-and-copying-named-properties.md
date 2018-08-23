@@ -1,5 +1,5 @@
 ---
-title: 送信し、名前付きプロパティのコピー
+title: 名前付きプロパティの送信とコピー
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804125"
 ---
-# <a name="transmitting-and-copying-named-properties"></a>送信し、名前付きプロパティのコピー
+# <a name="transmitting-and-copying-named-properties"></a>名前付きプロパティの送信とコピー
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 名前付きプロパティが送信されるたびに移動すると、コピー、または、名前は変わりませんが目的のオブジェクトへのマッピングに準拠する識別子を変更する必要があります。 この規則の唯一の例外は、ソースとターゲットのシグネチャを持つ、同じマッピング、ときに再マッピングを不要にすることです。
   

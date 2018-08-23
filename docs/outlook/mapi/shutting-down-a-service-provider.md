@@ -1,5 +1,5 @@
 ---
-title: サービス プロバイダーをシャット ダウン
+title: サービス プロバイダーのシャットダウン
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803919"
 ---
-# <a name="shutting-down-a-service-provider"></a>サービス プロバイダーをシャット ダウン
+# <a name="shutting-down-a-service-provider"></a>サービス プロバイダーのシャットダウン
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアントがセッションを終了し、すべてのアクティブなサービス プロバイダーをシャット ダウンするには、 [IMAPISession::Logoff](imapisession-logoff.md)メソッドを呼び出すと、MAPI は順に次メソッドを呼び出します。 
   

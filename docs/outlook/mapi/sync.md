@@ -1,5 +1,5 @@
 ---
-title: 同期
+title: SYNC
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804067"
 ---
-# <a name="sync"></a>同期
+# <a name="sync"></a>SYNC
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ローカル ストアとサーバ間の同期を開始するための情報です。 この情報は、[状態を同期](synchronize-state.md)する際に使用されます。
   
@@ -37,7 +37,7 @@ struct SYNC
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  _ulFlags_
   
@@ -90,7 +90,7 @@ struct SYNC
 
 [レプリケーション API について](about-the-replication-api.md)
   
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [MAPI �萔](mapi-constants.md)
 

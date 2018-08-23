@@ -1,5 +1,5 @@
 ---
-title: OSC の XML スキーマを使用してプロバイダーの開発
+title: OSC XML スキーマによるプロバイダーの開発
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804346"
 ---
-# <a name="developing-a-provider-with-the-osc-xml-schema"></a>OSC の XML スキーマを使用してプロバイダーの開発
+# <a name="developing-a-provider-with-the-osc-xml-schema"></a>OSC XML スキーマによるプロバイダーの開発
 
 Outlook ソーシャル コネクタ (OSC) プロバイダーの XML スキーマでは、膨大な OSC をソーシャル ネットワークからネットワークの OSC プロバイダーを通じて渡される情報の形式を定義します。 XML スキーマでは、プロバイダー、友人、またはアクティビティ フィードのアイテムの 3 つの主要な要素、**機能**、**友人**、および**activityFeed**、およびその子を使用して、ソーシャル ネットワーク上の機能を指定するのには、OSC プロバイダー要素です。 OSC プロバイダーにより、OSC プロバイダーの機能拡張のインターフェイスとそのメソッドを実装 OSC プロバイダーの XML スキーマに準拠している出力パラメーターとしての XML 文字列を返すことが実現します。 OSC では、XML スキーマで定義されていることが理解できる情報を取得するこれらのメソッドを呼び出します。
   
@@ -38,7 +38,7 @@ Outlook ソーシャル コネクタ (OSC) プロバイダーの XML スキー�
 
 - [Outlook ソーシャル コネクタ プロバイダーの参照](outlook-social-connector-provider-reference-0.md)
   
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連情報
 
 - [Outlook Social Connector プロバイダーの開発の概要 (英語)(機械翻訳)](getting-started-with-developing-an-outlook-social-connector-provider.md)
   

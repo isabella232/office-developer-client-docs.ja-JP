@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: cc4abf1a-c08c-4462-9d7c-6af506dc07c9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 667eda2a018d2a5d712950a31e05ec0ba9bb32ff
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803849"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 汎用名前付け規則 (UNC) パスに対応する指定されたローカル パスを検索します。
   
@@ -41,7 +41,7 @@ SCODE ScUNCFromLocalPath(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _szLocal_
   

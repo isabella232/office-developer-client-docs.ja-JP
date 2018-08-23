@@ -1,5 +1,5 @@
 ---
-title: 活動を取得します。
+title: アクティビティの取得
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804332"
 ---
-# <a name="getting-activities"></a>活動を取得します。
+# <a name="getting-activities"></a>アクティビティの取得
 
 OSC では、ソーシャル ネットワークの OSC プロバイダーの機能を決定する[ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)メソッドを呼び出します。 **GetActivities**と**dynamicActivitiesLookupEx** **機能**の返された XML 要素では、OSC プロバイダーが要求と活動をメモリに格納することで取得の活動をサポートしていることを示す、OSC、次のことができます。呼び出しシーケンスです。 OSC では、ハッシュ関数を**実装しています。** 要素で XML の**機能**を指定もメモします。 OSC では、活動と情報を取得 ( [ISocialPerson](isocialpersoniunknown.md)インターフェイスでサポートされている)、ソーシャル ネットワーク上の非友人や友人を次の順序でメソッドを呼び出します。 
   

@@ -1,5 +1,5 @@
 ---
-title: メッセージ サービスのインストールをサポートしています。
+title: メッセージ サービス インストールのサポート
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804045"
 ---
-# <a name="supporting-message-service-installation"></a>メッセージ サービスのインストールをサポートしています。
+# <a name="supporting-message-service-installation"></a>メッセージ サービス インストールのサポート
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ サービスをインストールするためのセットアップ プログラムは、次の操作を行います。
   

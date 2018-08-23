@@ -19,7 +19,7 @@ ms.locfileid: "19803973"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 受信トレイ、送信トレイ、および検索結果のフォルダーなどの特別なフォルダーを事前に作成およびメッセージ ストア プロバイダーによって保護されている可能性があります。 フォルダーが存在しない場合は、MAPI は、 [HrValidateIPMSubtree](hrvalidateipmsubtree.md)関数を呼び出して、メッセージ ・ ストアで作成しようとします。 詳細については、 [MAPI の特別なフォルダー](mapi-special-folders.md)を参照してください。
   

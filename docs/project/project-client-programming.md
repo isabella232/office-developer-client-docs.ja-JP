@@ -1,5 +1,5 @@
 ---
-title: プロジェクト クライアントのプログラミング
+title: Project クライアントのプログラミング
 manager: soliver
 ms.date: 08/10/2016
 ms.audience: Developer
@@ -20,7 +20,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804679"
 ---
-# <a name="project-client-programming"></a>プロジェクト クライアントのプログラミング
+# <a name="project-client-programming"></a>Project クライアントのプログラミング
 
 Project 2013 のデスクトップ クライアント アプリケーション-標準 2013 のプロジェクトとプロジェクトの評価のため、カスタマイズし、マクロを作成するのには VBA を使用して拡張できます。 Visual Studio 2012 を使用するにはリボンのユーザー インターフェイスをカスタマイズし、新しい機能拡張モデルの一般的な Office 2013 のプラットフォームに組み込まれているプロジェクトでの作業ウィンドウに Office アドインを有効に複雑なアドインを作成します。 プロジェクト標準 2013 および評価のためのプロジェクトは一般的な Office のアドインを実行し、アドインを使用して作業ウィンドウの SharePoint、他の web サイトや web アプリケーション、および外部のデータと統合するプロジェクト専用に開発されました。
   
@@ -37,7 +37,7 @@ Project 2013 のデスクトップ クライアント アプリケーション-�
 
 [プロジェクトの VBA の開発者用リファレンス](http://msdn.microsoft.com/en-us/library/ee861523%28office.15%29.aspx)入門が含まれていて、VBA ヘルプの記事です。 
   
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連情報
 
 [Project Server 2013 のアーキテクチャ](project-server-2013-architecture.md)クライアント プロジェクトが Project Server とどのようにやり取りする方法を示しています。 
   

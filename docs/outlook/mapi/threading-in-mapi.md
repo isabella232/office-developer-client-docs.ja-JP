@@ -1,5 +1,5 @@
 ---
-title: MAPI でのスレッド
+title: MAPI のスレッド処理
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 259297d2-acd7-4bc5-9a77-0df92cbfa33e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 15fb6113e9c3428cff3865307736592fd6e2b2f7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804105"
 ---
-# <a name="threading-in-mapi"></a>MAPI でのスレッド
+# <a name="threading-in-mapi"></a>MAPI のスレッド処理
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 スレッドは、オペレーティング システムが CPU 時間を割り当てる基本的なエンティティです。 スレッド独自のレジスタ、スタック、優先順位、およびストレージがアクセス トークンなどのアドレス領域と処理リソースを共有します。 スレッドは、別のスレッドが書き込まれた内容を読み取り、1 つのスレッドでも、メモリを共有します。
   

@@ -1,5 +1,5 @@
 ---
-title: PidTagScheduleInfoMonthsBusy の標準的なプロパティ
+title: PidTagScheduleInfoMonthsBusy 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,7 +9,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: b15447d6-89aa-40ad-93fc-21fbfa5e3d0e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 293e8648374b61784f5bda0db124506f345b2701
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,22 +17,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803482"
 ---
-# <a name="pidtagscheduleinfomonthsbusy-canonical-property"></a>PidTagScheduleInfoMonthsBusy の標準的なプロパティ
+# <a name="pidtagscheduleinfomonthsbusy-canonical-property"></a>PidTagScheduleInfoMonthsBusy 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ビジー状態の種類のデータを空き/予約済みの空き時間情報メッセージ内に存在する月が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_SCHDINFO_MONTHS_BUSY  <br/> |
+|関連するプロパティ:  <br/> |PR_SCHDINFO_MONTHS_BUSY  <br/> |
 |識別子:  <br/> |0x6853  <br/> |
-|データを入力します。  <br/> |PT_MV_LONG  <br/> |
+|データの種類 :   <br/> |PT_MV_LONG  <br/> |
 |領域:  <br/> |空き/予約済み  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 形式、計算し、このプロパティの制約は、 **PR_SCHDINFO_MONTHS_TENTATIVE** ([PidTagScheduleInfoMonthsTentative](pidtagscheduleinfomonthstentative-canonical-property.md)) のものと同じですが、関連付けられているカレンダー オブジェクトの使用中としてマークされている予定を参照してください。
   
@@ -66,7 +66,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

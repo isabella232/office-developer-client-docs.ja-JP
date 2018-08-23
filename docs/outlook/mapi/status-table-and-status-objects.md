@@ -1,5 +1,5 @@
 ---
-title: 状態テーブルとオブジェクトの状態
+title: 状態テーブルと状態オブジェクト
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804008"
 ---
-# <a name="status-table-and-status-objects"></a>状態テーブルとオブジェクトの状態
+# <a name="status-table-and-status-objects"></a>状態テーブルと状態オブジェクト
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI は MAPI のサブシステム、MAPI スプーラー、アドレス帳、または特定のサービス プロバイダーのステータスに関する情報を持つテーブルを提供します。 [IMAPISession::GetStatusTable](imapisession-getstatustable.md)を呼び出すことによってこのテーブルにアクセスできます。
   
@@ -59,7 +59,7 @@ MAPI は MAPI のサブシステム、MAPI スプーラー、アドレス帳、�
 
 
 
-[ステータス ・ テーブル](status-tables.md)
+[状態テーブル](status-tables.md)
   
 [MAPI オブジェクトのステータス](mapi-status-objects.md)
 

@@ -24,7 +24,7 @@ ms.locfileid: "19805212"
 
 DEPENDSON (* * *cellref* * * [、* * *cellref2* * *,...]) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|

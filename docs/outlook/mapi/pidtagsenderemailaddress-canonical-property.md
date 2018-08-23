@@ -1,5 +1,5 @@
 ---
-title: PidTagSenderEmailAddress の標準的なプロパティ
+title: PidTagSenderEmailAddress 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6e1531ac-489b-4224-921a-8fd13ace9497
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b97446c946c31ca8b55ce6c412814b48f4ee363c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803500"
 ---
-# <a name="pidtagsenderemailaddress-canonical-property"></a>PidTagSenderEmailAddress の標準的なプロパティ
+# <a name="pidtagsenderemailaddress-canonical-property"></a>PidTagSenderEmailAddress 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ送信者の電子メール アドレスが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_SENDER_EMAIL_ADDRESS、PR_SENDER_EMAIL_ADDRESS_A、PR_SENDER_EMAIL_ADDRESS_W  <br/> |
+|関連するプロパティ:  <br/> |PR_SENDER_EMAIL_ADDRESS、PR_SENDER_EMAIL_ADDRESS_A、PR_SENDER_EMAIL_ADDRESS_W  <br/> |
 |識別子:  <br/> |0x0C1F  <br/> |
-|データを入力します。  <br/> |PT_UNICOIDE、PT_STRING8  <br/> |
+|データの種類 :   <br/> |PT_UNICOIDE、PT_STRING8  <br/> |
 |領域:  <br/> |Address  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これらのプロパティでは、メッセージの送信者のアドレスのプロパティの例を示します。 以前の既存の値を反映する必要があることはありませんが、送信トランスポート プロバイダーによって設定されなければなりません。
   
@@ -90,7 +90,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

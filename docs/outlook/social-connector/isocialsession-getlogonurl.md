@@ -23,17 +23,17 @@ Web 認証時にユーザーにブラウザー ベースのフォームを表示
 HRESULT _stdcall GetLogonUrl([out, retval] BSTR* url);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _url_
   
 > [out]Web 認証で使用するフォームの URL を含む文字列です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォームは、ユーザーに提示された後は、 _connectIn_パラメーターに空の文字列で[ISocialSession::LogonWeb](isocialsession-logonweb.md)メソッドが呼び出されます。 
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

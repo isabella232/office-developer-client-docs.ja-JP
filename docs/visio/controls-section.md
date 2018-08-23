@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805129"
 ---
-# <a name="controls-section"></a>[Controls] セクション
+# <a name="controls-section"></a>[コントロール] セクション
 
 図形に定義された各コントロール ハンドルに関する、行およびセルを格納します。
   

@@ -19,7 +19,7 @@ ms.locfileid: "19803722"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 受信者テーブルには、メッセージのすべての受信者に関する情報が含まれています。 メッセージ ストア プロバイダーは、受信者テーブルを実装し、クライアント アプリケーションが使用します。 クライアントは、 [IMessage::GetRecipientTable](imessage-getrecipienttable.md)メソッドを呼び出すことによって受信者テーブルにアクセスまたは場合は、メッセージ ・ ストア プロバイダーでサポートされている、 [IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドにします。 インターフェイス識別子のプロパティ タグと IID_IMAPITable の**PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) を指定することによって**OpenProperty**を持つ受信者テーブルをクライアントにアクセスします。 受信者テーブルへの変更は、 [IMessage::ModifyRecipients](imessage-modifyrecipients.md)メソッドを呼び出すことによって可能です。 
   

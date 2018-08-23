@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1e5ea9f2-1029-4584-845a-890d3e956036
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fea2b496a34d7aa7f9469158fae14daf6a770608
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19803932"
 ---
 # <a name="sizeddtblcombobox"></a>SizedDtblComboBox
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 コンボ ボックス コントロールと関連付けられたエディット コントロールに入力できる文字の最大数を記述するための[DTBLCOMBOBOX](dtblcombobox.md)構造体を含む名前付き構造体を作成します。 
   
@@ -34,7 +34,7 @@ ms.locfileid: "19803932"
 SizedDtblComboBox (n, u)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _n_
   
@@ -44,7 +44,7 @@ _u_
   
 > 新しい構造体の名前です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SizedDtblComboBox**マクロを使用して、有効な文字の文字列の長さがわかっている場合は、コンボ ボックスを定義できます。 新しい構造体は、次のメンバーで作成されます。 
   

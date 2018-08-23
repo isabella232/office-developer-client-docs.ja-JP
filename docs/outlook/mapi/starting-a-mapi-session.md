@@ -1,5 +1,5 @@
 ---
-title: MAPI セッションを開始
+title: MAPI セッションの開始
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804000"
 ---
-# <a name="starting-a-mapi-session"></a>MAPI セッションを開始
+# <a name="starting-a-mapi-session"></a>MAPI セッションの開始
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 セッション開始時に実行される作業のかなりの量ですが、必要な作業は最小限にします。 この作業の大半は、MAPI で作業が[生じます](mapiinitialize.md)し、 [MAPILogonEx](mapilogonex.md)の呼び出しの処理です。 どちらの関数は、セッション通知の処理とユーザー インターフェイスなどの側面を制御するための入力パラメーターとしてフラグを受け入れます。 MAPI ライブラリを初期化するために**生じます**し、MAPI サブシステムにログオンする**MAPILogonEx**を呼び出すときに、これらのフラグを設定することの影響をよく理解するのには重要です。 
   
@@ -35,19 +35,19 @@ ms.locfileid: "19804000"
     
 ## <a name="in-this-section"></a>このセクションの内容
 
-[MAPI を初期化しています。](initializing-mapi.md)
+[MAPI の初期化](initializing-mapi.md)
   
 > セッションの MAPI を初期化する方法について説明します。
     
-[MAPI の OLE の初期化](initializing-ole-for-mapi.md)
+[OLE for MAPI の初期化](initializing-ole-for-mapi.md)
   
 > MAPI を使用するための OLE を初期化するための呼び出しについて説明します。
     
-[MAPI ユーティリティを初期化しています。](initializing-the-mapi-utilities.md)
+[MAPI ユーティリティの初期化](initializing-the-mapi-utilities.md)
   
 > MAPI ユーティリティを初期化する方法について説明します。
     
-[MAPI にログオンします。](logging-on-to-mapi.md)
+[MAPI へのログオン](logging-on-to-mapi.md)
   
 > クライアント アプリケーションが MAPI サブシステムにログオンする方法について説明します。
     

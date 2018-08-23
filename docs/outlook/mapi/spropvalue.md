@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: faf795a2-84db-432d-a05f-082f25a5cab5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: f378bdd473410b846328cbe1f911eba9401f88cf
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804003"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI プロパティをについて説明します。
   
@@ -42,7 +42,7 @@ typedef struct _SPropValue
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulPropTag**
   
@@ -64,7 +64,7 @@ typedef struct _SPropValue
 |PT_R4 または PT_FLOAT  <br/> |**flt** <br/> |浮動小数点数  <br/> |
 |PT_R8 または PT_DOUBLE  <br/> |**複列** <br/> |double  <br/> |
 |PT_BOOLEAN  <br/> |**b** <br/> |符号なし短整数  <br/> |
-|PT_CURRENCY  <br/> |**cur** <br/> |[通貨](currency.md) <br/> |
+|PT_CURRENCY  <br/> |**cur** <br/> |[CURRENCY](currency.md) <br/> |
 |PT_APPTIME  <br/> |**で** <br/> |double  <br/> |
 |PT_SYSTIME  <br/> |**ft** <br/> |[FILETIME](filetime.md) <br/> |
 |PT_STRING8  <br/> |**lpszA** <br/> |LPSTR  <br/> |
@@ -88,7 +88,7 @@ typedef struct _SPropValue
 |PT_NULL または PT_OBJECT  <br/> |**x** <br/> |長  <br/> |
 |PT_PTR  <br/> |**lpv** <br/> |VOID\*  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **UlPropTag**メンバーは、2 つの部分で構成されています。 
   

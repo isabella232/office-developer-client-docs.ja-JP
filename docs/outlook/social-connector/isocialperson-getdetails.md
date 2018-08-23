@@ -23,13 +23,13 @@ ms.locfileid: "19804339"
 HRESULT _stdcall GetDetails([out, retval] BSTR* details);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _詳細情報_
   
 > [out]個人の詳細情報を表す XML 文字列値。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 返される_詳細情報_の XML 文字列は、Outlook ソーシャル コネクタ (OSC) プロバイダーの機能拡張のスキーマで定義されている**人**の場合は、スキーマ定義に従う必要があります。
   
@@ -37,5 +37,5 @@ OSC は、ソーシャル ネットワーク上の**GetDetails** OSC プロバ�
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialPerson: IUnknown](isocialpersoniunknown.md)
+- [ISocialPerson : IUnknown](isocialpersoniunknown.md)
 

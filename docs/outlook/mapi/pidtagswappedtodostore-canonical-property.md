@@ -1,5 +1,5 @@
 ---
-title: PidTagSwappedToDoStore の標準的なプロパティ
+title: PidTagSwappedToDoStore 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1edae9ac-fc9a-4bfe-b053-99de848c5144
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: cbe1915df46010c5574065826ac1814f45c8c093
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803652"
 ---
-# <a name="pidtagswappedtodostore-canonical-property"></a>PidTagSwappedToDoStore の標準的なプロパティ
+# <a name="pidtagswappedtodostore-canonical-property"></a>PidTagSwappedToDoStore 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 必要性を決定するの転送、電子メールの処理後です。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_SWAPPED_TODO_STORE  <br/> |
+|関連するプロパティ:  <br/> |PR_SWAPPED_TODO_STORE  <br/> |
 |識別子:  <br/> |0x0E2C  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |MAPI 以外から送信できます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 下書きメッセージにこのプロパティが設定されている場合は、メッセージの**PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md)) のプロパティの値にその値を設定する必要があります。
   
@@ -74,7 +74,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -22,11 +22,11 @@ ms.locfileid: "19804735"
   
 **形式**または**FORMATEX**関数の引数と、[図形データ] セクションのセルの**書式設定**では、書式形式を使用できます。 テキスト フィールドを挿入するとき、[**フィールド**] ダイアログ ボックス ([**挿入**] タブ) の形式の一覧で形式の画像が表示されます。 
   
-## <a name="using-functions-to-format-strings"></a>書式指定文字列に関数を使用します。
+## <a name="using-functions-to-format-strings"></a>文字列の書式設定に関数を使用する
 
 カスタム テキスト フィールドの数式を含む文字列に解決されるすべての数式には、 **FORMAT**または**FORMATEX**関数を使用できます。 FORMAT 関数は、書式付き出力の文字列を返します。 **FORMATEX**関数は、型指定されていない入力を変換する単位に書式設定された結果を選択します。 
   
-## <a name="displaying-formatted-shape-data"></a>書式設定された図形データを表示します。
+## <a name="displaying-formatted-shape-data"></a>書式設定された図形データを表示する
 
 図形データの表示値の書式は、[Format] セルに書式形式を入力することにより設定できます。
   
@@ -36,7 +36,7 @@ Microsoft Visio では、コントロール パネルの [**地域と言語**の
   
 文字列を通貨の値に変換して値を計算できるようにするには、CY 関数を使用します。
   
-## <a name="using-functions-to-manipulate-text-strings"></a>テキスト文字列を操作する関数を使用します。
+## <a name="using-functions-to-manipulate-text-strings"></a>文字列の操作に関数を使用する
 
 文字列中の特定の文字を検索または置換するなどの、文字列の操作には関数を使用できます。文字列内の、ある文字の位置に関する情報を取得したり、文字列の最初の文字や最後の文字を識別することもできます。 
   

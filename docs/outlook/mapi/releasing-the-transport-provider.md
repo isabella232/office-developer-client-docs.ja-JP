@@ -1,5 +1,5 @@
 ---
-title: トランスポート プロバイダーを解放します。
+title: トランスポート プロバイダーの解放
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803739"
 ---
-# <a name="releasing-the-transport-provider"></a>トランスポート プロバイダーを解放します。
+# <a name="releasing-the-transport-provider"></a>トランスポート プロバイダーの解放
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI、または MAPI スプーラーが終了したときトランスポート ログオン オブジェクトを使用します。
   

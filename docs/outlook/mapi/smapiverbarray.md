@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8736f75c-3e95-42dd-9bc1-2f0bd23c4a02
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1767c86cb5390572b95530060f2295034ed35f43
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803972"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI の動詞を記述する[SMAPIVerb](smapiverb.md)構造体の配列が含まれています。 
   
@@ -41,7 +41,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cForms**
   
@@ -51,7 +51,7 @@ typedef struct
   
 > MAPI の動詞の配列です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SMAPIVerbArray**構造体は、 [IMAPIFormInfo::CalcVerbSet](imapiforminfo-calcverbset.md)メソッドのパラメーターとして渡されます。 
   

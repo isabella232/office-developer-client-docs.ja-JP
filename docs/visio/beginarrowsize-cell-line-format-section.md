@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804796"
 ---
-# <a name="beginarrowsize-cell-line-format-section"></a>[BeginArrowSiz] セル ([Line Format] セクション)
+# <a name="beginarrowsize-cell-line-format-section"></a>[BeginArrowSize] セル ([線の書式設定] セクション)
 
 線の開始位置にある矢印のサイズを指定します。
   
@@ -30,17 +30,17 @@ ms.locfileid: "19804796"
 | 5  <br/> | 超特大  <br/> |**visArrowSizeJumbo** <br/> |
 | 6  <br/> | 巨大  <br/> |**visArrowSizeColossal** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**線**] ダイアログ ボックスで、矢印のサイズを設定することもできます。 
+矢印のサイズは [**線**] ダイアログ ボックスでも設定できます。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[BeginArrowSize] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [BeginArrowSize] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | BeginArrowSize  <br/> |
    
-プログラムから、インデックスによって [BeginArrowSize] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [BeginArrowSize] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

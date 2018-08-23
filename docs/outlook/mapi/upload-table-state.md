@@ -1,11 +1,11 @@
 ---
-title: アップロード ・ テーブルの状態
+title: テーブル アップロード状態
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: fe167c90-c817-b627-0728-5c6393477c22
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 454df4dde2062d20855e4d9bceaf4400669693ac
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804185"
 ---
-# <a name="upload-table-state"></a>アップロード ・ テーブルの状態
+# <a name="upload-table-state"></a>テーブル アップロード状態
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  このトピックでは、アップロード テーブル マシンの状態、レプリケーション状態中の動作について説明します。 
   
@@ -47,7 +47,7 @@ ms.locfileid: "19804185"
   
 [MAPI �萔](mapi-constants.md)
   
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [同期状態](syncstate.md)
 

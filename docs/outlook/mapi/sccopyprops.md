@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 08bc256c-9706-4f3e-9a12-3e9cca5e4caa
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 979415f1d792f92e593a7073cc84cfd6ba832b6c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803814"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 コピーのプロパティは、新しいターゲットに[SPropValue](spropvalue.md)構造体の配列によって定義されます。 
   
@@ -42,7 +42,7 @@ SCODE ScCopyProps(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cprop_
   
@@ -70,7 +70,7 @@ MAPI_E_INVALID_PARAMETER
   
 > 不明なプロパティの種類が発生しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 新しい配列とそのデータは、1 つの割り当てで作成されたバッファー内に存在し、個別の[SPropValue](spropvalue.md)構造体のポインターを調整する[ScRelocProps](screlocprops.md)関数を使用することができます。 この調整をする前に、ポインターは有効です。 
   

@@ -1,5 +1,5 @@
 ---
-title: Unicode 列の使用
+title: Unicode 列の操作
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804221"
 ---
-# <a name="working-with-unicode-columns"></a>Unicode 列の使用
+# <a name="working-with-unicode-columns"></a>Unicode 列の操作
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 PT_STRING8 プロパティの型であり、標準の 8 ビット文字または 16 ビット Unicode 文字は、PT_UNICODE プロパティの型は、使用して、テーブル内の文字列を表すことができます。 テーブルの実装側は、自由に、それぞれのテーブルが Unicode 文字列をサポートするかどうかを選択します。 Unicode では、機能セットを拡張することによって、クライアントとサービス ・ プロバイダーの両方の値を追加、ためには、Unicode をサポート可能な限りことをお勧めします。 
   

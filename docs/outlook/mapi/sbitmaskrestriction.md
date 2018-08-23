@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ddd42180-6e4f-410c-9f78-d868a91452dc
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: f0cf6fa03d8f38b7d160a8747111445cfdac1ae9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803804"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ビットごとの**AND**演算を実行し、結果をテストするために使用されるビットマスクの制限について説明します。 
   
@@ -41,7 +41,7 @@ typedef struct _SBitMaskRestriction
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **relBMR**
   
@@ -63,7 +63,7 @@ BMR_NEZ
   
 > **UlPropTag**によって識別されるプロパティに適用するビットマスクです。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SBitMaskRestriction**構造体は、 **ulMask**のメンバーと**ulPropTag**のメンバーによって記述されたプロパティの値で説明するビットマスクを使用してビットごとの**AND**演算を実行します。 結果がゼロの場合は、BMR_EQZ が満たされます。 0 以外の場合は、プロパティの値を持つ**ulMask**、としてセットされている同じビットが少なくとも 1 つの場合、BMR_NEZ、満たされます。
   

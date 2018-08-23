@@ -1,5 +1,5 @@
 ---
-title: トランスポート プロバイダーのサンプル
+title: トランスポート プロバイダー サンプル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: ec6eb6c0-bfe3-4989-9071-89a14c0e7bdd
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1d0538f02f852580c064560460bb8b2ba54a2f65
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804169"
 ---
-# <a name="transport-provider-sample"></a>トランスポート プロバイダーのサンプル
+# <a name="transport-provider-sample"></a>トランスポート プロバイダー サンプル
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このサンプルでは、メッセージを送受信するためのファイルとディレクトリを使用します。 実装し、各送信メッセージにテキストの行を追加する非常に単純なプリプロセッサを登録します。 サンプルでは、トランスポート ニュートラル カプセル化形式 (TNEF) とテキストの間でメッセージの内容を分割する方法を示します。 すべての (プロパティ シート、ウィザード、およびプログラムの構成) の構成オプションとメッセージ オプションもサポートしています。 リモート トランスポート インターフェイスにサポートしていません。 
   
@@ -94,7 +94,7 @@ ms.locfileid: "19804169"
     > [!IMPORTANT]
     > このパスが存在する必要があります。 
   
-6. [ **OK**] をクリックします。
+6. **[OK]** をクリックします。
     
 7. **電子メール アカウントの追加**] ダイアログ ボックスで [ **OK**を] をクリックします。 [**完了**] をクリックし、[**閉じる**] をクリックします。
     

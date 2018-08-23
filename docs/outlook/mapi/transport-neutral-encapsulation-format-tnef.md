@@ -1,5 +1,5 @@
 ---
-title: トランスポート ニュートラル カプセル化形式 (TNEF)
+title: Transport-Neutral Encapsulation Format (TNEF)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804132"
 ---
-# <a name="transport-neutral-encapsulation-format-tnef"></a>トランスポート ニュートラル カプセル化形式 (TNEF)
+# <a name="transport-neutral-encapsulation-format-tnef"></a>Transport-Neutral Encapsulation Format (TNEF)
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 TNEF は、MAPI プロパティのセットを変換するための形式: MAPI メッセージ-シリアル データ ストリームにします。 TNEF 関数は、これらのプロパティを直接サポートしていないメッセージング システムを通じて送信するための MAPI メッセージのプロパティをエンコードするために必要とするトランスポート プロバイダーによって主に使用します。 など、SMTP ベースのトランスポートでは、SMTP メッセージの構造体に直接表現されていない**PR_SENT_REPRESENTING_NAME** ([PidTagSentRepresentingName](pidtagsentrepresentingname-canonical-property.md)) などのプロパティをエンコードするために TNEF を使用します。
   

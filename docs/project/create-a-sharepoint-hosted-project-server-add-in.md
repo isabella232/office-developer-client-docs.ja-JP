@@ -1,5 +1,5 @@
 ---
-title: Project Server の SharePoint でホストされているアドインの作成します。
+title: SharePoint をホストとする Project Server アドインを作成する
 manager: soliver
 ms.date: 08/10/2016
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804579"
 ---
-# <a name="create-a-sharepoint-hosted-project-server-add-in"></a>Project Server の SharePoint でホストされているアドインの作成します。
+# <a name="create-a-sharepoint-hosted-project-server-add-in"></a>SharePoint をホストとする Project Server アドインを作成する
 
 3 種類のアプリケーションのオンライン プロジェクト (autohosted、プロバイダーによってホストされ、SharePoint でホストされている) を作成することができる SharePoint によってホストされるアプリケーションの作成および展開する最も簡単です。 SharePoint によってホストされるアプリケーションは、OAuth 認証を必要とは Azure を使用して、やではなくプロバイダーでホストされているリソースのローカル サイトのメンテナンスを必要とします。 Visual Studio で**SharePoint 2013 のアプリケーション**テンプレートは、発行し、Office ストアで販売または SharePoint 上のプライベート アプリケーション カタログに配置できるアプリケーションを開発するための便利なフレームワークです。 
   
@@ -775,7 +775,7 @@ Project Web App などの SharePoint web アプリケーションにアプリケ
   
 6. 評価のためのプロジェクトで、最新の状態が表示されている前に、変更を承認のため送信し、プロジェクト管理者によって承認する必要があります。
     
-テストには、利便性が向上するように**QuickStatus**アプリケーションで行う必要のある他のいくつかの変更が表示されます。 次に例を示します。
+テストには、利便性が向上するように**QuickStatus**アプリケーションで行う必要のある他のいくつかの変更が表示されます。 例:
 
 - 追加のエラー チェックやテキスト ボックスの値の検証の必要があります。 現時点では、ユーザーには、数値以外の値または悪意のあるエラー メッセージの結果の達成率は、負の値を入力できます。 たとえば、負の値、エラー メッセージは、**の割り当てを更新中のエラー: PJClientCallableException: StatusingSetDataValueInvalid**。
     
@@ -1221,7 +1221,7 @@ Project Web App などの SharePoint web アプリケーションにアプリケ
 
 ## <a name="see-also"></a>関連項目
 
-- [プロジェクト サーバー プログラミング タスク](project-programming-tasks.md)
+- [Project Server のプログラミング タスク](project-programming-tasks.md)
 - [SharePoint アドイン](http://msdn.microsoft.com/library/jj163230.aspx)
 - [Project Web App の [タスクの更新を管理します。](https://technet.microsoft.com/en-us/library/hh767481%28v=office.14%29.aspx)
 - [カスタム アクションを作成して SharePoint アドインで展開する](http://msdn.microsoft.com/library/jj163954.aspx)

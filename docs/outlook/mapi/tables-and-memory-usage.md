@@ -17,7 +17,7 @@ ms.locfileid: "19804095"
 ---
 # <a name="tables-and-memory-usage"></a>テーブルとメモリ使用量
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルからデータを取得するのに接続されている重要な問題は、メモリ使用量です。 メモリ不足の発生することが[IMAPITable::QueryRows](imapitable-queryrows.md)と[HrQueryAllRows](hrqueryallrows.md)が失敗し、返す行の必要な数よりも少ない。 またはテーブルのデータを取得するために使用する関数を決定する際に依存テーブルがメモリに収まるように期待できるかどうか、できない場合は、失敗が許容される場合。 
   

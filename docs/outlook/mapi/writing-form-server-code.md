@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: ff33badc-ceed-4364-b99c-8af3af83ceb6
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 860b0150fd1ec66fa8fee387d8d4a96e8bb79761
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19804232"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム サーバーとして、次の考えることができます。 
   
@@ -43,15 +43,15 @@ MAPI フォームのインタ フェースは、フォームのサーバーを�
   
 |**インターフェイス**|**説明**|**Status**|
 |:-----|:-----|:-----|
-|[IMAPIForm: IUnknown](imapiformiunknown.md) <br/> |クライアント フォームのサーバーの読み込みに使用する主要なインターフェイスは、フォームの動詞を実行し、フォームのサーバーをシャット ダウンします。 これは、フォーム オブジェクトが実装するインターフェイスについては、他の OLE コンポーネントを通知するために使用される OLE **IUnknown**から派生するインターフェイス。  <br/> |必須  <br/> |
-|[IPersistMessage: IUnknown](ipersistmessageiunknown.md) <br/> |フォーム オブジェクトからのメッセージの保存との間にメッセージを読み込むときに使用します。  <br/> |必須  <br/> |
-|[IMAPIFormAdviseSink: IUnknown](imapiformadvisesinkiunknown.md) <br/> |メッセージング クライアントのステータスを追跡して、フォーム オブジェクトがフォルダー内の次または前のメッセージを表示できるかどうかを確認するのには、フォーム オブジェクトによって使用されます。  <br/> |省略可能  <br/> |
+|[IMAPIForm : IUnknown](imapiformiunknown.md) <br/> |クライアント フォームのサーバーの読み込みに使用する主要なインターフェイスは、フォームの動詞を実行し、フォームのサーバーをシャット ダウンします。 これは、フォーム オブジェクトが実装するインターフェイスについては、他の OLE コンポーネントを通知するために使用される OLE **IUnknown**から派生するインターフェイス。  <br/> |必須  <br/> |
+|[IPersistMessage : IUnknown](ipersistmessageiunknown.md) <br/> |フォーム オブジェクトからのメッセージの保存との間にメッセージを読み込むときに使用します。  <br/> |必須  <br/> |
+|[IMAPIFormAdviseSink : IUnknown](imapiformadvisesinkiunknown.md) <br/> |メッセージング クライアントのステータスを追跡して、フォーム オブジェクトがフォルダー内の次または前のメッセージを表示できるかどうかを確認するのには、フォーム オブジェクトによって使用されます。  <br/> |省略可能  <br/> |
 |[IClassFactory](http://msdn.microsoft.com/library/f624f833-2b69-43bc-92cd-c4ecbe6051c5%28Office.15%29.aspx) <br/> |OLE クラス ファクトリのメカニズムに準拠するために、フォーム オブジェクトによって使用される OLE クラス ファクトリ インターフェイスです。  <br/> |必須  <br/> |
-|[IMAPIFormFactory: IUnknown](imapiformfactoryiunknown.md) <br/> |フォーム サーバーが複数の種類のフォームをサポートしている場合に使用されます。 この例では、 **IMAPIFormFactory**インターフェイスを使用 (フォーム サーバーがサポートするフォームの種類ごとに 1 つ) 複数の**IClassFactory**インターフェイスにアクセスするクライアント アプリケーション、フォームのサーバーを実装する必要がありますもことです。  <br/> |省略可能  <br/> |
+|[IMAPIFormFactory : IUnknown](imapiformfactoryiunknown.md) <br/> |フォーム サーバーが複数の種類のフォームをサポートしている場合に使用されます。 この例では、 **IMAPIFormFactory**インターフェイスを使用 (フォーム サーバーがサポートするフォームの種類ごとに 1 つ) 複数の**IClassFactory**インターフェイスにアクセスするクライアント アプリケーション、フォームのサーバーを実装する必要がありますもことです。  <br/> |省略可能  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI フォームのサーバーの開発](developing-mapi-form-servers.md)
+[MAPI フォーム サーバーの開発](developing-mapi-form-servers.md)
 

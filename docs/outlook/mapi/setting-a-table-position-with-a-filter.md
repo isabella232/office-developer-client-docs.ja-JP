@@ -1,5 +1,5 @@
 ---
-title: フィルターを使用してテーブルの位置を設定します。
+title: フィルターによるテーブルの位置設定
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803892"
 ---
-# <a name="setting-a-table-position-with-a-filter"></a>フィルターを使用してテーブルの位置を設定します。
+# <a name="setting-a-table-position-with-a-filter"></a>フィルターによるテーブルの位置設定
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルのユーザーは、一連のフィルター条件に一致する行にカーソルを移動できます。 フィルターは、さまざまな列プロパティの値やビットマスク、サブオブジェクトなどのガイドラインに基づいていることができます。 [SRestriction](srestriction.md)構造体を使用して MAPI では、フィルターが指定されています。 
   

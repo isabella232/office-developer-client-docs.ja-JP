@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805331"
 ---
-# <a name="endarrowsize-cell-line-format-section"></a>[EndArrowSize] セル ([Line Format] セクション)
+# <a name="endarrowsize-cell-line-format-section"></a>[EndArrowSize] セル ([線の書式設定] セクション)
 
 線の終端にある矢印のサイズを指定します。
   
@@ -30,17 +30,17 @@ ms.locfileid: "19805331"
 |5  <br/> |超特大  <br/> |**visArrowSizeJumbo** <br/> |
 |6  <br/> |巨大  <br/> |**visArrowSizeColossal** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**線**] ダイアログ ボックスでこの値を設定することもできます ([**ホーム**] タブの [**図形**] グループで、[**行**] をクリックして、**矢印**] をポイントし、**複数の矢印**をクリックして)。
+この値は、[**線**] ダイアログ ボックスで設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブの [**図形**] グループで、[**線**] をクリックし、[**矢印**]、[**その他の矢印**] の順にクリックします)。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[EndArrowSize] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [EndArrowSize] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名 :  <br/> |EndArrowSize  <br/> |
    
-プログラムから、インデックスによって [EndArrowSize] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [EndArrowSize] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

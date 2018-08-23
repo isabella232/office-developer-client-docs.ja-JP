@@ -1,5 +1,5 @@
 ---
-title: フォームのプロパティを取得します。
+title: フォーム プロパティの取得
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803778"
 ---
-# <a name="retrieving-form-properties"></a>フォームのプロパティを取得します。
+# <a name="retrieving-form-properties"></a>フォーム プロパティの取得
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 カスタム メッセージの種類に意味のあるクエリを発行するには、アプリケーションはそのメッセージに対して予測されるプロパティを確認する必要があります。 カスタム メッセージ クラスを使用するプロパティの一覧を取得するには、クライアント アプリケーションでは、MAPI フォーム マネージャーを照会します。 フォーム マネージャーは、クライアント アプリケーションがこの情報は、フォーム サーバー自体をアクティブ化のオーバーヘッドを生じさせずに使用できるように、適切なフォーム構成ファイルからこの情報を取得します。 これを行うは、クライアント アプリケーションは、 [IMAPIFormMgr::ResolveMessageClass](imapiformmgr-resolvemessageclass.md)メソッドを次のように呼び出します。 
   
@@ -35,5 +35,5 @@ hr = pfrmmgr->ResolveMessageClass("IPM.Demo", 0L, NULL, &amp;pfrminf);
 
 
 
-[フォームのサーバー間のやり取り](form-server-interactions.md)
+[フォーム サーバーの相互作用](form-server-interactions.md)
 

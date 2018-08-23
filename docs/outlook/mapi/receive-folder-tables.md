@@ -1,5 +1,5 @@
 ---
-title: フォルダー テーブルが表示されます。
+title: フォルダー受信テーブル
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803724"
 ---
-# <a name="receive-folder-tables"></a>フォルダー テーブルが表示されます。
+# <a name="receive-folder-tables"></a>フォルダー受信テーブル
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 受信フォルダー テーブルには、メッセージ ストアの受信フォルダーとして指定されているすべてのフォルダーの情報が含まれています。 受信フォルダーは、特定のメッセージ クラスの着信メッセージが配置されているフォルダーです。 メッセージ ストア プロバイダーの実装には、フォルダーのテーブルが表示され、 [IMsgStore::GetReceiveFolderTable](imsgstore-getreceivefoldertable.md)メソッドを呼び出すことによって、クライアント アプリケーションを使用します。 
   

@@ -1,5 +1,5 @@
 ---
-title: トランスポート オーダを設定
+title: 転送順序の設定
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803895"
 ---
-# <a name="setting-transport-order"></a>トランスポート オーダを設定
+# <a name="setting-transport-order"></a>転送順序の設定
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI スプーラーに送信メッセージを処理できるトランスポート プロバイダーを宣言するための識別子とアドレスの種類に基づく責任が割り当てられます。 トランスポート プロバイダーがサポートされているアドレスの種類と識別子のリストを発行する- **MAPIUID**構造体に格納されている: MAPI がログオンの直後に、 [IXPLogon::AddressTypes](ixplogon-addresstypes.md)メソッドを呼び出すとします。 受信者のアドレスの種類は、 **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) プロパティに格納されます。
   

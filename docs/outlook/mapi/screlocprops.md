@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4aafb254-6074-4a7c-b915-d3d33304ac38
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 06590fe55cb02b1abf036156877fd308548436f7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803864"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [SPropValue](spropvalue.md)配列のポインターは、配列とそのデータがコピーまたは新しい場所に移動された後に調整します。 
   
@@ -43,7 +43,7 @@ SCODE ScRelocProps(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cprop_
   
@@ -75,7 +75,7 @@ MAPI_E_INVALID_PARAMETER
   
 > 1 つまたは両方のパラメーターが有効でなかったか、不明なプロパティの種類が発生しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **ScRelocProps**関数は、ポインターが調整のプロパティ値の配列が最初に割り当てられたの**ScCopyProps**関数の呼び出しのような 1 つの呼び出しであるという前提で動作します。 切り離されたメモリ ブロックから構築されたプロパティの値では、クライアント アプリケーションまたはサービス プロバイダーが動作している場合は、代わりにプロパティをコピーするのには[ScCopyProps](sccopyprops.md)を使用してください。 
   

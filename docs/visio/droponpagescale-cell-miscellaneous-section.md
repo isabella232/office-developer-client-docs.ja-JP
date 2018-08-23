@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805272"
 ---
-# <a name="droponpagescale-cell-miscellaneous-section"></a>[DropOnPageScale] セル ([Miscellaneous] セクション)
+# <a name="droponpagescale-cell-miscellaneous-section"></a>[DropOnPageScale] セル ([その他] セクション)
 
 図形を図面ページにドロップしたときの縮尺のパーセント値が含まれます。
   
@@ -31,13 +31,13 @@ DropOnPageScale] セルの割合が、縮小される因数を Visio 図形の�
   
 縮尺図面の測定済み図形または非縮尺図面の未測定図形では、この値は 100% です。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[DropOnPageScale] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [DropOnPageScale] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | DropOnPageScale  <br/> |
    
-プログラムから、インデックスによって [DropOnPageScale] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [DropOnPageScale] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

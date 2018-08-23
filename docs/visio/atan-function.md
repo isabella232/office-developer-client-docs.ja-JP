@@ -24,11 +24,11 @@ ms.locfileid: "19804779"
 
 ATAN (* **番号** *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _number_ <br/> |必須  <br/> |**数値** <br/> |角度のタンジェントを指定します。  <br/> |
+| _number_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |角度のタンジェントを指定します。  <br/> |
    
 ## <a name="example"></a>例
 

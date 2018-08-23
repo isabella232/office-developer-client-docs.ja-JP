@@ -1,5 +1,5 @@
 ---
-title: ROWLIST で
+title: ROWLIST
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ce0be0d5-4962-4d53-828f-c93d1c5aae32
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d0427e36d07d1cdc4f88e471f9ca006e737b73f2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803787"
 ---
-# <a name="rowlist"></a>ROWLIST で
+# <a name="rowlist"></a>ROWLIST
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 行と[IExchangeModifyTable](iexchangemodifytableiunknown.md)インターフェイスを使用して、テーブルの行に対して実行される操作を表す[ROWENTRY](rowentry.md)構造体の配列が含まれています。 
   
@@ -36,7 +36,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cEntries**
   
@@ -60,7 +60,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [ROWENTRY](rowentry.md)
   
-[IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)
+[IExchangeModifyTable : IUnknown](iexchangemodifytableiunknown.md)
 
 
 [MAPI の構造](mapi-structures.md)

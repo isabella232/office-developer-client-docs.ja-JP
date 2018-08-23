@@ -17,7 +17,7 @@ ms.locfileid: "19804187"
 ---
 # <a name="upmov"></a>UPMOV
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 移動されたアイテムをアップロードする方法の詳細については。 [アップロード ステータスの状態を削除](upload-delete-status-state.md)し、[テーブルの状態をアップロード](upload-table-state.md)中には、この情報が使用されます。
   
@@ -39,7 +39,7 @@ struct UPMOV
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 _ulFlags_
   
@@ -99,7 +99,7 @@ _cEntMov_
 ## <a name="see-also"></a>関連項目
 
 - [レプリケーション API について](about-the-replication-api.md)
-- [レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
 - [MAPI �萔](mapi-constants.md)
 - [FEID](feid.md)
 

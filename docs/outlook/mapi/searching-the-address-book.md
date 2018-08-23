@@ -17,7 +17,7 @@ ms.locfileid: "19803856"
 ---
 # <a name="searching-the-address-book"></a>アドレス帳を検索
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI �ł́A�����@�\�� 2 �̃��x�����������A�h���X���̃v���o�C�_�[���L���ɂ��܂��B
   
@@ -29,7 +29,7 @@ MAPI �ł́A�����@�\�� 2 �̃��x��������
   
 検索をサポートするコンテナー、 [IMAPIContainer::GetSearchCriteria](imapicontainer-getsearchcriteria.md)を呼び出すことによって確立された条件を取得します。 コンテナーの内容のテーブルが表示される前に、ユーザーを検索条件を求められる点を要求することもできます。 このオプションを選択するには、コンテナーの**PR_CONTAINER_FLAGS** ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md)) のプロパティの AB_FIND_ON_OPEN フラグを設定します。 抽出条件を入力すると後、は、制限として保存され、 **SetSearchCriteria**メソッドに渡されることが。 設定 AB_FIND_ON_OPEN は、オンライン サービス、またはそのデータを低速リンクしているすべてのアドレス帳プロバイダーを使用する場合に特に便利です。 
   
-### <a name="to-perform-a-basic-search-in-an-address-book-container"></a>アドレス帳コンテナーの基本的な検索を実行するには
+### <a name="to-perform-a-basic-search-in-an-address-book-container"></a>�A�h���X���R���e�i�[�̊�{�I�Ȍ�������s����ɂ�
   
 1. ���̓�e�̃e�[�u����J�����߂̃R���e�i�[��[IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md)���\�b�h��Ăяo���܂��B 
     

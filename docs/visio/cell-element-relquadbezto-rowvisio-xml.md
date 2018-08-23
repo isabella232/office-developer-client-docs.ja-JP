@@ -22,7 +22,7 @@ ms.locfileid: "19804983"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml をマスター、# .xml のページ  <br/> |
@@ -52,21 +52,21 @@ ms.locfileid: "19804983"
 
 |**属性**|**型**|**必須**|**説明**|**使用可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|DurationFormat 要素  <br/> |xsd:string  <br/> |省略可能  <br/> |数式がエラーが発生することを示します。 **E**の値は、現在の値 (エラー メッセージの文字列) です。**V**属性の値は、最後の有効な値です。  <br/> |エラー メッセージの文字列です。  <br/> |
+|E  <br/> |xsd:string  <br/> |省略可能  <br/> |数式がエラーが発生することを示します。 **E**の値は、現在の値 (エラー メッセージの文字列) です。**V**属性の値は、最後の有効な値です。  <br/> |エラー メッセージの文字列です。  <br/> |
 |ExternalTaskProject 要素  <br/> |xsd:string  <br/> |省略可能  <br/> | 要素の式を表します。 この属性は、次の文字列のいずれかを含めることができます。  <br/>  '(いくつかの数式)' の数式がローカルに存在する場合  <br/>  `No Formula`数式がローカルで削除されるか、ブロックされている場合  <br/>  `Inh`場合は、数式が継承されます。  <br/> |数式です。  <br/> |
-|MultipleCriticalPaths 要素  <br/> |xsd:string  <br/> |必須  <br/> |シェイプ シート セルの名前を表します。  <br/> |シェイプ シート セルの名前です。  <br/> 以下の「解説」セクションを参照してください。  <br/> |
+|N  <br/> |xsd:string  <br/> |必須  <br/> |シェイプ シート セルの名前を表します。  <br/> |シェイプ シート セルの名前です。  <br/> 以下の「解説」セクションを参照してください。  <br/> |
 |U  <br/> |xsd:string  <br/> |省略可能  <br/> |既定の測定単位を表しますが、DL です。  <br/> |セルの単位です。  <br/> |
 |V  <br/> |xsd:string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプ シート セルの値です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この**セル**要素の**N**属性は、限られた一連のシェイプ シートのセルに対応する値のいずれかである必要があります。 この**セル**要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   
-|**値**|**説明**|**詳細については**|
+|**値**|**説明**|**詳細情報**|
 |:-----|:-----|:-----|
-|X  <br/> |図形の幅を基準にして二次ベジェ曲線の終点の x 座標。  <br/> |[RelQuadBezTo 行 ([Geometry] セクション)](relquadbezto-row-geometry-section.md) <br/> |
-|Y  <br/> |図形の高さを基準にして二次ベジェ曲線の終点の y 座標。  <br/> |[RelQuadBezTo 行 ([Geometry] セクション)](relquadbezto-row-geometry-section.md) <br/> |
-|A  <br/> |曲線のコントロールの x 座標は図形の幅を基準にしてポイントします。円弧上の点。コントロール ポイントは、最初と最後の円弧の頂点の間で途中で最適に配置します。  <br/> |[RelQuadBezTo 行 ([Geometry] セクション)](relquadbezto-row-geometry-section.md) <br/> |
-|B  <br/> |曲線のコントロールの y 座標は、図形の高さに対して相対的なポイントです。  <br/> |[RelQuadBezTo 行 ([Geometry] セクション)](relquadbezto-row-geometry-section.md) <br/> |
+|X  <br/> |図形の幅に相対する、2 次ベジエ曲線の最後の頂点の x 座標。  <br/> |[[RelQuadBezTo] 行 ([図形座標] セクション)](relquadbezto-row-geometry-section.md) <br/> |
+|Y  <br/> |図形の高さに相対する、2 次ベジエ曲線の最後の頂点の y 座標。  <br/> |[[RelQuadBezTo] 行 ([図形座標] セクション)](relquadbezto-row-geometry-section.md) <br/> |
+|A  <br/> |曲線のコントロールの x 座標は図形の幅を基準にしてポイントします。円弧上の点。コントロール ポイントは、最初と最後の円弧の頂点の間で途中で最適に配置します。  <br/> |[[RelQuadBezTo] 行 ([図形座標] セクション)](relquadbezto-row-geometry-section.md) <br/> |
+|B  <br/> |曲線のコントロールの y 座標は、図形の高さに対して相対的なポイントです。  <br/> |[[RelQuadBezTo] 行 ([図形座標] セクション)](relquadbezto-row-geometry-section.md) <br/> |
    
 

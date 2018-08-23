@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804381"
 ---
-# <a name="isocialsession--iunknown"></a>ISocialSession: IUnknown
+# <a name="isocialsession--iunknown"></a>ISocialSession : IUnknown
 
 ソーシャル ネットワーク サイトへの接続を表します。
   
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 次の表は、 **ISocialSession**インターフェイスで使用可能なメンバーを示します。 
   
@@ -32,14 +32,14 @@ ms.locfileid: "19804381"
 |[GetLogonUrl](isocialsession-getlogonurl.md) <br/> |メソッド  <br/> |Web 認証時にユーザーにブラウザー ベースのフォームを表示するために使用される URL を表す文字列を取得します。  <br/> |
 |[GetNetworkIdentifier](isocialsession-getnetworkidentifier.md) <br/> |メソッド  <br/> |特定のソーシャル ネットワークの接続のソーシャル ネットワークの一意の識別子を表す文字列を取得します。  <br/> |
 |[GetPerson](isocialsession-getperson.md) <br/> |メソッド  <br/> |_ユーザー Id_のパラメーターに基づいて、 [ISocialPerson](isocialpersoniunknown.md)インターフェイスを取得します。  <br/> |
-|[LoggedOnUserID](isocialsession-loggedonuserid.md) <br/> |Property  <br/> |現在ログオンしているユーザーのソーシャル ネットワークのユーザー ID を表す文字列を返します。  <br/> |
-|[LoggedOnUserName](isocialsession-loggedonusername.md) <br/> |Property  <br/> |ログオン時に使用されるユーザー名を表す文字列を返します。  <br/> |
+|[LoggedOnUserID](isocialsession-loggedonuserid.md) <br/> |プロパティ  <br/> |現在ログオンしているユーザーのソーシャル ネットワークのユーザー ID を表す文字列を返します。  <br/> |
+|[LoggedOnUserName](isocialsession-loggedonusername.md) <br/> |プロパティ  <br/> |ログオン時に使用されるユーザー名を表す文字列を返します。  <br/> |
 |[Logon](isocialsession-logon.md) <br/> |メソッド  <br/> |指定されたユーザー名とパスワードを使用して、ソーシャル ネットワーク サイトにログオンします。  <br/> |
 |[LogonWeb](isocialsession-logonweb.md) <br/> |メソッド  <br/> |フォーム ベース認証を使用して、ソーシャル ネットワーク サイトにログオンします。  <br/> |
-|[SiteUrl](isocialsession-siteurl.md) <br/> |Property  <br/> |ソーシャル ネットワーク サイトの URL を設定します。  <br/> |
+|[SiteUrl](isocialsession-siteurl.md) <br/> |プロパティ  <br/> |ソーシャル ネットワーク サイトの URL を設定します。  <br/> |
 |[UnFollowPerson](isocialsession-unfollowperson.md) <br/> |メソッド  <br/> |ソーシャル ネットワークの友人として、_ユーザー Id_のパラメーターで識別されるユーザーを削除します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 OSC プロバイダーでは、OSC と通信するには、このインターフェイスを実装する必要があります。
   

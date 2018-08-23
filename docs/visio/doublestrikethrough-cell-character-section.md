@@ -16,19 +16,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805278"
 ---
-# <a name="doublestrikethrough-cell-character-section"></a>[DoubleStrikethrough] セル ([Character] セクション)
+# <a name="doublestrikethrough-cell-character-section"></a>[DoubleStrikethrough] セル ([文字] セクション)
 
 テキストを二重取り消し線で書式設定するかどうかを指定します。
   
 ## <a name="remarks"></a>備考
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[DoubleStrikethrough] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [DoubleStrikethrough] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | Char.DoubleStrikethrough [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
    
-プログラムから、インデックスによって [DoubleStrikethrough] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [DoubleStrikethrough] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

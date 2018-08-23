@@ -23,7 +23,7 @@ ms.locfileid: "19804575"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> ||
+|**要素の種類** <br/> ||
 |**名前空間** <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherlocation.xsd  <br/> |
 |**スキーマ ファイル** <br/> |getweatherlocation.xsd  <br/> |
    

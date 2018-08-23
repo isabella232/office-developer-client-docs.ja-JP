@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805249"
 ---
-# <a name="document-properties-section"></a>[Document Properties] セクション
+# <a name="document-properties-section"></a>[ドキュメントのプロパティ] セクション
 
 プレビューの品質、範囲、および出力形式を制御するための、図面のセルを格納します。
   

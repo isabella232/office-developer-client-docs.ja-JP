@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804937"
 ---
-# <a name="buttonface-cell-actions-section"></a>[ButtonFace] セル ([Actions] セクション)
+# <a name="buttonface-cell-actions-section"></a>[ButtonFace] セル ([操作] セクション)
 
 ショートカット メニューまたはアクション タグ メニューで、項目の横に表示されるアイコンを指定します。
   
@@ -29,13 +29,13 @@ ms.locfileid: "19804937"
   
 ButtonFace] セルに使用できる Id は、 **CommandBarButton**オブジェクトの**FaceID**プロパティで使用される Id と同じです。 これらの Id の詳細については、MSDN の「コマンド バー ボタンのイメージを使用する」を検索してください。 
   
-取得する ButtonFace] セルへの参照の名前を別の数式からまたはプログラムから**CellsU**プロパティを使用して、次のコマンドを使用します。 
+別の数式から、または **CellsU** プロパティを使用してプログラムから、名前によって [ButtonFace] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |**アクション**です。  *名*です。 **ButtonFace**で**動作**します。  *アクション行の名前します。*  <br/> |
    
-プログラムから、インデックスによって [ButtonFace] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ButtonFace] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

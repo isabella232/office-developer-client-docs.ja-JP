@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805062"
 ---
-# <a name="complexscriptsize-cell-character-section"></a>[ComplexScriptSize] セル ([Character] セクション)
+# <a name="complexscriptsize-cell-character-section"></a>[ComplexScriptSize] セル ([文字] セクション)
 
 合成テキストの書式設定に使用するフォントのサイズです。 
   
@@ -26,13 +26,13 @@ ms.locfileid: "19805062"
   
 この値には、明示的なポイント サイズまたはパーセントを入力することができます。パーセントを指定した場合、[Size] セルの値を基に値が設定されます。既定値の 0 (ゼロ) は 100% を意味します。 
   
-取得する、[ComplexScriptSize] セルへの参照名で別の数式からまたはプログラムから**CellsU**プロパティを使用して、次のコマンドを使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ComplexScriptSize] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |Char.ComplexScriptSize [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
    
-プログラムから、インデックスによって [ComplexScriptSize] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ComplexScriptSize] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

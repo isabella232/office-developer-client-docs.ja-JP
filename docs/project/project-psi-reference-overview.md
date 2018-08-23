@@ -108,7 +108,7 @@ PSI サービスの名前空間には、マニュアルの目的で生成され�
     
   - [Microsoft.Office.Project.Server.Library](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Library.aspx)名前空間には、Project Server のオンプレミス アプリケーションに多くの列挙体、およびクラスのフィールドおよび頻繁に使用されるプロパティが含まれます。 たとえば、開発者は通常**CustomField.Type**、 **PSClientError**、 **PSErrorInfo**、および**フィルター**のクラスなどの列挙体を使用します。 
     
-    **Microsoft.Office.Project.Server.Library**名前空間には、次の 7 つのプロパティのクラスには、3,200 以上のサブクラスが含まれますが含まれています。 
+    **Microsoft.Office.Project.Server.Library** 名前空間には、次の 7 つのプロパティ クラスと、3,200 以上のサブクラスも含まれます。 
     
       - **AssignmentProperties**  
       - **CalendarProperties**
@@ -140,7 +140,7 @@ PSI サービスの名前空間には、マニュアルの目的で生成され�
     
 - **Microsoft.Office.Project.Server.Events.Receivers.dll**[Microsoft.Office.Project.Server.Events](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.aspx)は、このアセンブリ内で唯一の名前空間です。 イベント レシーバーと PSI サービス用のイベント引数クラスおよびその他の内部クラスが含まれています。 
     
-  開発者は、イベント レシーバーのクラスから派生するイベント ハンドラーを記述します。 ほとんどの PSI サービスのプライマリ クラスには、対応するイベント レシーバー クラスがあります。 などの**ProjectEventReceiver**クラスには、PSI で**プロジェクト**のクラス内のメソッドに対応するプレ イベントとポスト イベント レシーバーのメソッドが含まれています。 **OnCreating**メソッドと、 **OnCreated**メソッドは、 **QueueCreateProject**メソッドのプレ イベントとポスト イベント レシーバーのメソッドです。 
+  開発者は、イベント レシーバーのクラスを継承するイベント ハンドラーを作成します。PSI サービスのプライマリ クラスの多くには、対応するイベント レシーバー クラスがあります。たとえば、**ProjectEventReceiver** クラスには、PSI の **Project** クラスのメソッドに対応するプレイベント レシーバー メソッドとポストイベント レシーバー メソッドが含まれます。**OnCreating** メソッドと **OnCreated** メソッドは、**QueueCreateProject** メソッドのプレイベント レシーバー メソッドおよびポストイベント レシーバー メソッドです。 
     
   開発者は、通常、次のイベント レシーバー クラスを使用します。
   <br/>  
@@ -171,7 +171,7 @@ PSI サービスの名前空間には、マニュアルの目的で生成され�
   
   イベント ハンドラーが Project Server コンピューターにインストールされる完全信頼イベント ハンドラーを使用する一部のアプリケーションでは、Microsoft.Office.Project.Schema.dll アセンブリへの参照を設定する必要があります。次に、2 つの例を示します。
     
-  - 完全信頼**OnCreated**ポスト イベント ハンドラーでユーザー設定フィールドのすることができます、 **e.CustomFieldInformation**イベントの引数を使用**Microsoft.Office.Project.Server.Schema**名前空間を参照して**CustomFieldDataSet**および**CustomFieldsRow**を定義します。 
+  - ユーザー設定フィールド用の完全信頼 **OnCreated** ポストイベント ハンドラーでは、**e.CustomFieldInformation** イベント引数を、**CustomFieldDataSet** および **CustomFieldsRow** の定義に対する **Microsoft.Office.Project.Server.Schema** 名前空間への参照と共に使用できます。 
    
      ```cs
         using PSLibrary = Microsoft.Office.Project.Server.Library;
@@ -193,7 +193,7 @@ PSI サービスの名前空間には、マニュアルの目的で生成され�
         }
      ```
 
-  - ユーザー定義ワークフロー活動は、**データセット**の定義の**Microsoft.Office.Project.Server.Schema**への参照を要求することができます。 
+  - カスタム ワークフロー アクティビティでは、**DataSet** の定義に対する **Microsoft.Office.Project.Server.Schema** への参照が必要な場合があります。 
     
 ## <a name="psi-services"></a>PSI サービス
 <a name="pj15_PSIRefOverview_PSI"> </a>
@@ -229,14 +229,14 @@ PSI サービスの Web メソッドを含むすべてのクラスは次のと�
     
 9. **ExchangeSync**これは、Exchange Server のイベントを処理する内部のプロジェクトのサーバー サービスです。 Project Web App では、 **ExchangeSync**を使用して、Office Project Server 2007 と Outlook クライアントと直接同期する代わりに、Project Server と Exchange Server の間の割り当てを同期します。 
     
-    **ExchangeSync**サービスへのアクセスは、 **ProjectServiceApplication**の URL からのみ使用できます。 **ExchangeSync**クラスおよびメンバーは、サードパーティの開発はサポートされていません。 
+    **ExchangeSync** サービスへのアクセスは、**ProjectServiceApplication** URL を使用してだけ行えます。**ExchangeSync** のクラスとメンバーは、サードパーティの開発用としてはサポートされていません。 
     
 10. [LoginForms](https://msdn.microsoft.com/library/WebSvcLoginForms.LoginForms.aspx)フォーム ベース認証での**ログイン**と**ログオフ**の方法を提供します。 **LoginForms**サービスへのアクセスは、Project Web App サイトをフロント エンド サーバー上でのみ使用できます。 
     
 11. [LoginWindows](https://msdn.microsoft.com/library/WebSvcLoginWindows.LoginWindows.aspx)ASMX ベースのアプリケーションの複数の認証と Windows 認証に使用される**ログイン**と**ログオフ**の方法が用意されています (要求およびフォーム ベース) Project Server 2013 のインストールします。 **LoginWindows**サービスへのアクセスは、Project Web App サイトをフロント エンド サーバー上でのみ使用できます。 
     
     > [!CAUTION]
-    > **LoginWindows**サービスされていない WCF ベースのアプリケーション、またはクレーム認証または**OAuth**; のみを使用する Project Server のインストールで実行されるアプリケーションのような場合は、 **Login**メソッドは常に**false**を返します。 クレーム認証では、統合 Windows 認証を処理します。 
+    > **LoginWindows** サービスは、WCF ベースのアプリケーションや、クレーム認証または **OAuth** のみを使用する Project Server インストールで実行するアプリケーションでは使用されません。これらの場合は、**Login** メソッドは常に **false** を返します。クレーム認証は統合 Windows 認証を処理します。 
   
 12. [LookupTable](https://msdn.microsoft.com/library/WebSvcLookupTable.LookupTable.aspx)参照テーブル、多言語参照テーブル、およびその対応するコード マスクを管理します。 チェック アウト、チェックイン、読み取り、作成、削除、更新します。 
     
@@ -265,7 +265,7 @@ PSI サービスの Web メソッドを含むすべてのクラスは次のと�
     
 20. **PWA**タスク更新承認ルールと進捗レポートを管理するためのメソッドを含む、Project Web App に対して最適化された多くのメソッドが含まれています。 **PWA**メソッドが特別なことがよくありますし、少し冗長に他の PSI サービスと同じメソッドと比較します。 **PWA**メソッドを使用して、または、他の PSI メソッドと同じデータセットの多くを取得します。 
     
-    **PWA**サービスへのアクセスは、 **ProjectServiceApplication**の URL からのみ使用できます。 **PWA**クラスおよびメンバーは、サードパーティの開発はサポートされていません。 
+    **PWA** サービスへのアクセスは、**ProjectServiceApplication** URL を使用してだけ行えます。**PWA** のクラスとメンバーは、サードパーティの開発用としてはサポートされていません。 
     
 21. [QueueSystem](https://msdn.microsoft.com/library/WebSvcQueueSystem.QueueSystem.aspx)Project Server キューを管理します。 指定されたプロジェクトのジョブ数、ジョブやジョブ グループの待ち時間、すべてのジョブ、指定されたジョブ、呼び出し元が所有するジョブまたはジョブのステータスを取得します。 ジョブの相互関係を管理し、キューを構成します。 
     
@@ -283,13 +283,13 @@ PSI サービスの Web メソッドを含むすべてのクラスは次のと�
     
 27. **ビュー**サービスの**表示**は、Project Web App 内でのみ使用するよう設計されています。 **ビュー**クラスのメソッドは、ビューの管理しレポートを表示し、ビュー内のフィールドを参照します。 
     
-    **表示**サービスへのアクセスは、 **ProjectServiceApplication**の URL からのみ使用できます。 サードパーティの開発方法の**表示**はサポートされていません。 
+    **View** サービスへのアクセスは、**ProjectServiceApplication** URL を使用してだけ行えます。**View** メソッドは、サードパーティの開発用にはサポートされていません。 
     
 28. **WinProj****WinProj**サービスは、Project Professional でのみ使用するために設計されています。 サード パーティの開発者は、Project Server を使用するプログラミングの**WinProj**メソッドを使用しないでください。 
     
-    **WinProj**メソッドは、 **ProjectRelationsDataSet** **ResourceDataSet** **プロジェクト**と**リソース**のサービスも使用するが特定のプロパティと Project Professional の機能を必要とするなどのデータセットを使用します。 
+    一部の **WinProj** メソッドは、**Project** および **Resource** サービスでも使用される、**ProjectRelationsDataSet** や **ResourceDataSet** のようなデータセットを使用しますが、Project Professional の特定のプロパティと機能を必要とします。 
     
-    **WinProj**サービスへのアクセスは、 **ProjectServiceApplication**の URL からのみ使用できます。 **WinProj**メソッドは、サードパーティの開発はサポートされていません。 
+    **WinProj** サービスへのアクセスは、**ProjectServiceApplication** URL を使用してだけ行えます。**WinProj** メソッドは、サードパーティの開発用にはサポートされていません。 
     
 29. [ワークフロー](https://msdn.microsoft.com/library/WebSvcWorkflow.Workflow.aspx)エンタープライズ プロジェクトの種類およびワークフローのフェーズおよびステージを管理する CRUD メソッドが含まれています。 ワークフローの実行、ステータス情報を設定し、需要管理ワークフローでのプロジェクト詳細ページ (PDP) の段階を管理します。 Project Server ワークフローを開発するには、開発者は宣言型ワークフローは SharePoint Designer 2013 を使用して、または、[Office 開発者ツールを使用して.NET Framework 4 と、[を使用して開発の Visual Studio 2012 のMicrosoft.ProjectServer.Client.WorkflowActivities](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.WorkflowActivities.aspx) 、CSOM のクラスです。 
     
@@ -297,15 +297,15 @@ PSI サービスの Web メソッドを含むすべてのクラスは次のと�
     
 各サービスの名前空間には、**データセット**スキーマおよびイベント ハンドラー クラスのサービスを使用するすべてが含まれます。 たとえば、 `Calendar.svc` (または`Calendar.asmx?wsdl`は、ASMX web サービス)**カレンダー**サービスについて説明します。 **WebSvcCalendar**の参照の名前を指定する場合、プライマリ**予定表** **CheckInCalendars**のメソッドを持つクラス、 **CheckOutCalendars**、およびようにプロキシの名前空間が含まれます。 **WebSvcCalendar**プロキシの名前空間には、 **CalendarDataSet**クラスとそのすべてのサブクラスも含まれています。 
   
-PSI サービスの一部には、重複する**データセット**クラスが含まれています。 など、**プロジェクト**のサービスと**状態管理**サービスの両方が含まれます**ProjectDataSet**クラスには。 **ProjectDataSet**を参照している**プロジェクト**のサービスと**状態管理**サービスの両方のメソッドと、関連する参照を設定し、アプリケーションをコンパイルする際に作成されるプロキシ アセンブリが含まれているためにです。データセットです。 **プロジェクト**サービス、および**状態管理**サービスは、 **ProjectDataSet.ProjectRow**クラス内の別のフィールドの値を要求することができます。 
+一部の PSI サービスには、重複する **DataSet** クラスが含まれます。たとえば、**Project** サービスと **Statusing** サービスのどちらにも、**ProjectDataSet** クラスが含まれます。これは、**Project** サービスと **Statusing** サービスの両方のメソッドに **ProjectDataSet** への参照が含まれ、参照を設定してアプリケーションをコンパイルすると作成されるプロキシ アセンブリに関連するデータセットが含まれるためです。**Project** サービスと **Statusing** サービスでは、**ProjectDataSet.ProjectRow** クラスの異なるフィールドの値が必要になる場合があります。 
   
-**プロジェクト**サービスの web メソッドを参照してください、**内容**の一覧で **[web サービス プロジェクト]** 名前空間を展開し、**プロジェクト**を展開し、たとえば、PSI の参照のクラスと名前空間を移動するときクラスです。 
+PSI リファレンスの名前空間とクラスをナビゲートするときは (たとえば、**Project** サービスの Web メソッドを参照するとき)、[**コンテンツ**] リストで [**Project Web サービス**] 名前空間を展開した後、**Project** クラスを展開します。 
   
 ## <a name="see-also"></a>関連項目
 
 - [Project Server 2013 のアーキテクチャ](project-server-2013-architecture.md)
-- [プロジェクト サーバー プログラミング](project-server-programmability.md)   
-- [PSI とものはありません。](what-the-psi-does-and-does-not-do.md)   
+- [Project Server プログラミング](project-server-programmability.md)   
+- [PSI のすること、しないこと](what-the-psi-does-and-does-not-do.md)   
 - [プロジェクト内の ASMX ベースのコード サンプルの前提条件](prerequisites-for-asmx-based-code-samples-in-project.md)   
 - [プロジェクト内の WCF ベースのコード サンプルの前提条件](prerequisites-for-wcf-based-code-samples-in-project.md)   
 - [.NET Framework デベロッパー センター](http://msdn.microsoft.com/en-us/netframework/aa496123.aspx)

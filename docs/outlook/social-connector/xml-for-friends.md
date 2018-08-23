@@ -1,5 +1,5 @@
 ---
-title: 友人の XML
+title: 友だち用 XML
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804485"
 ---
-# <a name="xml-for-friends"></a>友人の XML
+# <a name="xml-for-friends"></a>友だち用 XML
 
 Microsoft Outlook ・ ソーシャル コネクタ (OSC) プロバイダーの XML スキーマで**友人**の要素では、ソーシャル ネットワークでは、Outlook ユーザーに関連付けられている担当者の一覧についての情報を指定するのには、OSC プロバイダーを使用します。 OSC プロバイダーは、キャッシュの同期をサポートする場合、ソーシャル ネットワーク上の Outlook ユーザーのフレンドのみがこの人の一覧に含まれます。 OSC では、オン ・ デマンドまたはハイブリッドの同期をサポートする場合このリストは Outlook ユーザーの非友人や友人の両方を含む可能性があります。 
 
@@ -79,7 +79,7 @@ OSC プロバイダーの XML スキーマ内の**ユーザー**要素の子要�
 |**アドレス** <br/> |人の物理的な住所。  <br/> |
 |**記念日** <br/> |イベント、個人の記念日。  <br/> |
 |**askmeabout** <br/> |利息またはユーザーの専門知識のトピックを示します。  <br/> |
-|**誕生日** <br/> |担当者の生年月日の日付です。  <br/> |
+|**birthday** <br/> |担当者の生年月日の日付です。  <br/> |
 |**businessAddress** <br/> |人の職場の物理的な住所。  <br/> |
 |**businessCity** <br/> |人の職場の市町村。  <br/> |
 |**businessCountryOrRegion** <br/> |国または地域のワークプ レースです。  <br/> |
@@ -102,21 +102,21 @@ OSC プロバイダーの XML スキーマ内の**ユーザー**要素の子要�
 |**homePhone** <br/> |ユーザーの自宅電話番号です。  <br/> |
 |**index** <br/> |_PersonsAddresses_文字列パラメーターでのユーザーのハッシュ化されたアドレスの場所は、 **ISocialSession2::GetPeopleDetails**メソッドの呼び出しに渡されます。 人の**人**XML の**GetPeopleDetails**によって返される_personsCollection_の文字列を示します。  <br/> |
 |**業界** <br/> |人が行っている業界です。  <br/> |
-|**興味のあること** <br/> |興味や趣味の人です。  <br/> |
+|**interests** <br/> |興味や趣味の人です。  <br/> |
 |**lastModificationTime** <br/> |ソーシャル ネットワークのユーザーのプロファイルが最後に変更された時刻です。  <br/> |
 |**lastName** <br/> |最後の名前またはユーザーの姓です。  <br/> |
 |**location** <br/> |人の場所です。  <br/> |
 |**ニックネーム** <br/> |短い名前、またはユーザーの名前が作成されました。  <br/> |
-|**かまいません** <br/> |人の代替住所です。  <br/> |
+|**otherAddress** <br/> |人の代替住所です。  <br/> |
 |**otherCity** <br/> |人の代替住所の市町村。  <br/> |
 |**otherCountryOrRegion** <br/> |国または地域の代替住所です。  <br/> |
 |**otherState** <br/> |人の代替住所の都道府県です。  <br/> |
 |**otherZip** <br/> |Zip または人の代替住所の郵便番号です。  <br/> |
 |**電話** <br/> |担当者の主な連絡先の電話番号です。  <br/> |
 |**pictureUrl** <br/> |人のプロフィールの画像の URL です。  <br/> |
-|**関係** <br/> |ログオン中のユーザーにこの人の関係です。  <br/> |
+|**リレーションシップ** <br/> |ログオン中のユーザーにこの人の関係です。  <br/> |
 |**学校** <br/> |人またはにする学校です。  <br/> |
-|**スキル** <br/> |人の個人のスキルです。  <br/> |
+|**skills** <br/> |人の個人のスキルです。  <br/> |
 |**state** <br/> |人の住所の都道府県です。  <br/> |
 |**title** <br/> |ユーザーの名前を追加指定します。  <br/> |
 |**ユーザー Id** <br/> |ソーシャル ネットワーク上のユーザーを識別する ID です。  <br/> |

@@ -19,7 +19,7 @@ ms.locfileid: "19803795"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 多くのオブジェクトは、トランザクション モデルのため、プロパティを変更できない永続的なものは後でコミットされるまでの処理をサポートします。 プロパティへの変更は、 [IMAPIProp::SetProps](imapiprop-setprops.md)および[IMAPIProp::DeleteProps](imapiprop-deleteprops.md)メソッドは、一方、commit の手順は、 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)によって処理されます。 **失敗 savechanges メソッド**の呼び出し、最新のオブジェクトのプロパティにアクセスできることが終了するまでではありません。 
   
@@ -37,5 +37,5 @@ FORCE_SAVE フラグを使用して**SaveChanges**を呼び出すことでは、
 
 
 
-[MAPI Property Overview](mapi-property-overview.md)
+[MAPI のプロパティの概要](mapi-property-overview.md)
 

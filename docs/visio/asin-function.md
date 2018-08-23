@@ -24,11 +24,11 @@ ms.locfileid: "19804808"
 
 ASIN (* **番号** *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _number_ <br/> |必須  <br/> |**数値** <br/> |角度のサインを指定します。  <br/> |
+| _number_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |角度のサインを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

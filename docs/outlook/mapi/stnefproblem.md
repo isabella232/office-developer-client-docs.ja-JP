@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3fe651b7-0ddf-42fd-8277-9224505be1a8
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8595cdb411e68f2aed3ac063b2b81965e9b4d975
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804024"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 エンコードまたはトランスポート ニュートラル カプセル化形式 (TNEF) ストリームのデコード中に発生するプロパティまたは属性の処理の問題についての情報が含まれています。
   
@@ -42,7 +42,7 @@ typedef struct _STnefProblem
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulComponent**
   
@@ -68,7 +68,7 @@ typedef struct _STnefProblem
   
 > エラーの処理中に発生した問題を示す値。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **STnefProblem**構造体は、属性またはプロパティの処理中に生成されていない場合場合は、アプリケーションがその属性またはプロパティの処理が成功したことを前提として続けることができます。 唯一の例外は、ブロックをカプセル化のデコード中に問題が発生したときに発生します。 この例では、ブロックに対応するコンポーネントのデコードを停止して、別のコンポーネントが続きますをデコードすること。 
   
@@ -78,7 +78,7 @@ typedef struct _STnefProblem
 
 [STnefProblemArray](stnefproblemarray.md)
   
-[PidTagAttachNumber の標準的なプロパティ](pidtagattachnumber-canonical-property.md)
+[PidTagAttachNumber 標準プロパティ](pidtagattachnumber-canonical-property.md)
 
 
 [MAPI の構造](mapi-structures.md)

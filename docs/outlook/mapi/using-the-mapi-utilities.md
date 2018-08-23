@@ -1,5 +1,5 @@
 ---
-title: MAPI ユーティリティを使用します。
+title: MAPI ユーティリティの使用
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804207"
 ---
-# <a name="using-the-mapi-utilities"></a>MAPI ユーティリティを使用します。
+# <a name="using-the-mapi-utilities"></a>MAPI ユーティリティの使用
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI ユーティリティでは、その他の機能をサポートするためにテーブルのデータとデータ オブジェクトのプロパティ、およびさまざまな機能の構成します。 これらのユーティリティを必要していないサービス ・ プロバイダーとの接続を確立するために MAPI サブシステムにログオンするクライアントのことができます。 API 関数[ScInitMapiUtil](scinitmapiutil.md)を呼び出す場合は、クライアントは、このカテゴリに適合して、初期化時に[生じます](mapiinitialize.md)関数ではなく。 
   

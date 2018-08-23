@@ -1,5 +1,5 @@
 ---
-title: MapiSvc.inf メッセージ サービス セクション内のプロパティ エントリ
+title: MapiSvc.inf メッセージ サービス セクションのプロパティ エントリ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803688"
 ---
-# <a name="property-entries-in-mapisvcinf-message-service-sections"></a>MapiSvc.inf メッセージ サービス セクション内のプロパティ エントリ
+# <a name="property-entries-in-mapisvcinf-message-service-sections"></a>MapiSvc.inf メッセージ サービス セクションのプロパティ エントリ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロパティを設定するエントリは、この形式を使用します。
   

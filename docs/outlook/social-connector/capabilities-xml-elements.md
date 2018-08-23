@@ -1,5 +1,5 @@
 ---
-title: XML 要素の機能
+title: 機能 XML の要素
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804328"
 ---
-# <a name="capabilities-xml-elements"></a>XML 要素の機能
+# <a name="capabilities-xml-elements"></a>機能 XML の要素
 
 このトピックの表は、**機能**XML の子要素を説明しをサポートしている領域ごとにグループ化します。 **機能**の各要素の既定値は、 **false を指定**します。 **機能**、 [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)メソッドによって返される XML 要素を指定しない場合は、要素の値は**false**です。
   

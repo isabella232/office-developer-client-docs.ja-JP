@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 369c2d5c-8c2b-4314-9cb2-aaa89580aa2b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8b4e090b3dd6bf8ecd2517dee57093106147e22d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19804004"
 ---
 # <a name="srow"></a>SRow
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 特定のオブジェクトの選択したプロパティを含むテーブルから行を説明します。 
   
@@ -39,7 +39,7 @@ typedef struct _SRow
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 **ulAdrEntryPad**
   
@@ -53,7 +53,7 @@ typedef struct _SRow
   
 > 行の列のプロパティ値を記述する[SPropValue](spropvalue.md)構造体の配列へのポインター。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SRow**構造体では、テーブル内の行について説明します。 それはテーブルの通知に付随する[TABLE_NOTIFICATION](table_notification.md)構造体に含まれます。 
   
@@ -79,7 +79,7 @@ typedef struct _SRow
   
 **SRow**と**SRowSet**のデータ構造間の関係を次の図に示します。 
   
-**SRow と SRowSet との関係**
+**SRow と SRowSet の関係**
   
 ![SRow と SRowSet との関係](media/amapi_17.gif "SRow と SRowSet との関係")
   
@@ -94,5 +94,5 @@ typedef struct _SRow
 - [SRowSet](srowset.md)
 - [TABLE_NOTIFICATION](table_notification.md)
 - [MAPI の構造](mapi-structures.md)
-- [ADRLIST および SRowSet 構造体のメモリを管理します。](managing-memory-for-adrlist-and-srowset-structures.md)
+- [ADRLIST および SRowSet 構造のためのメモリ管理](managing-memory-for-adrlist-and-srowset-structures.md)
 

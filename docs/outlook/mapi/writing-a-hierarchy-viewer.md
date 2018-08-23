@@ -1,5 +1,5 @@
 ---
-title: 階層ビューアーを作成します。
+title: 階層ビューアーの作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804241"
 ---
-# <a name="writing-a-hierarchy-viewer"></a>階層ビューアーを作成します。
+# <a name="writing-a-hierarchy-viewer"></a>階層ビューアーの作成
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 階層ビューアーは、フォルダーとアドレス帳コンテナーの階層テーブルを表示するために使用されるユーザー インターフェイス コンポーネントです。 階層ビューアーでは、さまざまなレベル、オン ・ デマンドでの各レベルを変更することで、階層のメンバーを表示できます。
   

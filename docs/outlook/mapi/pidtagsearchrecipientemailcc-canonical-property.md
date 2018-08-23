@@ -1,5 +1,5 @@
 ---
-title: PidTagSearchRecipientEmailCc の標準的なプロパティ
+title: PidTagSearchRecipientEmailCc 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 38fe217d-cf2e-51de-c97a-acb015129fd3
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6fe59bf837d6123e5655e853531d6ab53393af91
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803502"
 ---
-# <a name="pidtagsearchrecipientemailcc-canonical-property"></a>PidTagSearchRecipientEmailCc の標準的なプロパティ
+# <a name="pidtagsearchrecipientemailcc-canonical-property"></a>PidTagSearchRecipientEmailCc 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 照会中の電子メール アドレスまたはストア内のメッセージの [ **CC** ] 行でアドレス指定された受信者の表示名の一覧で、Unicode 文字列が含まれています。 
   
@@ -27,7 +27,7 @@ ms.locfileid: "19803502"
 
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_SEARCH_RECIP_EMAIL_CC_W  <br/> |
+|関連するプロパティ:  <br/> |PR_SEARCH_RECIP_EMAIL_CC_W  <br/> |
 |識別子:  <br/> |0x0EA7  <br/> |
 |プロパティの種類:  <br/> |PT_UNICODE  <br/> |
 |領域:  <br/> |検索  <br/> |
@@ -65,7 +65,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

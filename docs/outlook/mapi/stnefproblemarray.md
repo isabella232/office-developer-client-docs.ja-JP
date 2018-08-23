@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 115d845b-4168-4d49-b880-219ee28baa9a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: baa2ac2e859b42234fcb07dd2bf521424ef9b465
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804035"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 エンコード中に発生した問題を処理する 1 つまたは複数、またはトランスポート ニュートラル カプセル化形式 (TNEF) ストリームのデコードを記述する**STnefProblem**構造体の配列が含まれています。 
   
@@ -40,7 +40,7 @@ typedef struct _STnefProblemArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cProblem**
   
@@ -50,7 +50,7 @@ typedef struct _STnefProblemArray
   
 > [STnefProblem](stnefproblem.md)構造体の配列です。 各構造体には、プロパティまたは属性の問題の処理に関する情報が含まれています。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [ITnef::ExtractProps](itnef-extractprops.md)メソッドと[ITnef::Finish](itnef-finish.md)メソッドの出力パラメーターが、構造体の**STnefProblemArray**と**ExtractProps へのポインターを受信する属性またはプロパティの処理中に問題が発生した場合****終了**各 MAPI_W_ERRORS_RETURNED の値を返すとします。 このエラー値は、処理中に問題が発生したし、 **STnefProblemArray**構造体が生成されたことを示します。 
   

@@ -1,5 +1,5 @@
 ---
-title: 受信者の準備をしています。
+title: 受信者の準備
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803683"
 ---
-# <a name="preparing-a-recipient"></a>受信者の準備をしています。
+# <a name="preparing-a-recipient"></a>受信者の準備
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアント アプリケーションでは、長期のエントリ id を短期的なエントリの識別子を変換して可能性のある追加、変更、またはプロパティの順序を変更して受信者を準備します。 メッセージの受信者のリストの一部である受信者またはメッセージに関連ではない受信者を準備できます。 通常、クライアントは、共通のアドレス] ダイアログ ボックスに含まれる受信者のエントリ id を長期的な短期的なエントリの識別子に変換するには、直接[IAddrBook::PrepareRecips](iaddrbook-preparerecips.md)を呼び出します。 送信メッセージに関連付けられている受信者、受信者の準備が名前解決処理によって処理されます。 
   

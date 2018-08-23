@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 165ffbd0-54aa-4692-8bd1-09e6ff3762df
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5b93f84026cacd8568dc5ceec5574d144f6d1633
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803836"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI のメモリ、 [ScCopyProps](sccopyprops.md)および[ScCountProps](sccountprops.md)関数の操作を組み合わせることの 1 つのブロックでは、プロパティ値の配列を複製します。 
   
@@ -42,7 +42,7 @@ SCODE ScDupPropset(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cprop_
   

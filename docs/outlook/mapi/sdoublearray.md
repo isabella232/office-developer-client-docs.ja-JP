@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b63b26de-faf9-453c-ab8b-fb703ed09ae8
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: cde59b73381458533910dc8f0a728cc4e6ca0c01
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803853"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 PT_MV_DOUBLE の種類のプロパティを説明するために使用する double 値の配列が含まれています。
   
@@ -40,7 +40,7 @@ typedef struct _SDoubleArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **あう**
   
@@ -50,7 +50,7 @@ typedef struct _SDoubleArray
   
 > Double 値の配列へのポインター。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 PT_MV_DOUBLE の詳細については、[プロパティの種類の一覧](property-types.md)を参照してください。
   

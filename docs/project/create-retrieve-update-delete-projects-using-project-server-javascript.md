@@ -47,7 +47,7 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトへの投
     
 3. [ **新しいプロジェクト**] ダイアログ ボックスで、上部のドロップダウン リストから [ **.NET Framework 4.5**] を選択します。 
     
-4. **Office、SharePoint**テンプレートのカテゴリでは、 **SharePoint ソリューション**を選択し、 **SharePoint 2013 のプロジェクト**テンプレートを選択し、します。 
+4. [**Office/SharePoint**] テンプレート カテゴリで、[**SharePoint ソリューション**] を選択してから、[**SharePoint 2013 プロジェクト**] テンプレートを選択します。 
     
 5. ProjectsJSOM、プロジェクトの名前し、 **[OK** ] ボタンをクリックします。 
     
@@ -57,13 +57,13 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトへの投
     
 ### <a name="to-create-the-application-page-in-visual-studio"></a>Visual Studio でアプリケーション ページを作成するには
 
-1. **ソリューション エクスプ ローラー**で、 **ProjectsJSOM**プロジェクトのショートカット メニューを開くし、SharePoint を追加し、「レイアウト」フォルダーがマップされています。 
+1. **ソリューション エクスプローラー**で、**ProjectsJSOM** プロジェクトのショートカット メニューを開き、SharePoint のマップされた "Layouts" フォルダーを追加します。 
     
 2. **レイアウト**フォルダーに**ProjectsJSOM**フォルダーのショートカット メニューを開くし、ProjectsList.aspx をという名前の新しい SharePoint アプリケーション ページを追加します。
     
-3. **ProjectsList.aspx**ページのショートカット メニューを開き、**スタートアップ アイテムとして設定**] を選択します。
+3. **ProjectsList.aspx** ページのショートカット メニューを開き、[**スタートアップ アイテムとして設定**] を選択します。
     
-4. **ProjectsList.aspx**ページのマークアップでは、次のよう、"Main" **asp: コンテンツ**のタグ内のユーザー インターフェイス コントロールを定義します。 
+4. **ProjectsList.aspx** ページのマークアップで、"Main" **asp:Content** タグ内のユーザー インターフェイス コントロールを次のように定義します。 
     
    ```HTML
     <table width="100%" id="tblProjects">
@@ -80,9 +80,9 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトへの投
    ```
 
    > [!NOTE]
-   > これらのコントロールは、すべてのシナリオでは使用できません。 たとえば、シナリオを作成するプロジェクト」では、**テキスト領域**と**ボタン**のコントロールは使用しません。 
+   > これらのコントロールは、すべてのシナリオで使用されるとは限りません。たとえば、"プロジェクトの作成" シナリオでは **textarea** および **button**コントロールを使用しません。 
   
-5. **またがる**終了後にタグ付け、次のように**SharePoint:ScriptLink**タグや**SharePoint:FormDigest**タグでは、**スクリプト**タグを追加します。 
+5. **span** タグを閉じた後で、**SharePoint:ScriptLink** タグ、**SharePoint:FormDigest** タグ、および **script** タグを次のように追加します。 
     
    ```HTML
     <SharePoint:ScriptLink id="ScriptLink" name="PS.js" runat="server" ondemand="false" localizable="false" loadafterui="true" />
@@ -102,24 +102,24 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトへの投
     
    - [JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを削除します。](#pj15_CRUDProjectsJSOM_DeleteProjects)
     
-7. メニュー バーの [アプリケーション] ページをテストするのには、**デバッグ**、**デバッグの開始**を選択します。 Web.config ファイルを変更するメッセージが表示されたら、 **[ok]** を選択します。
+7. アプリケーション ページをテストするには、メニュー バーで、[**デバッグ**]、[**デバッグ開始**] の順に選択します。web.config ファイルの変更を確認するプロンプトが表示されたら、[**OK**] をクリックします。
     
 ## <a name="create-project-server-2013-projects-by-using-the-javascript-object-model"></a>JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを作成します。
 <a name="pj15_CRUDProjectsJSOM_CreateProjects"> </a>
 
 このセクションの手順では、JavaScript オブジェクト モデルを使用してプロジェクトを作成します。 プロシージャには、次の大まかな手順が含まれています。
   
-1. **ProjectContext**の現在のインスタンスを取得します。 
+1. 現在の **ProjectContext** インスタンスを取得します。 
     
-2. プロジェクトの初期のプロパティを指定するのには、 **ProjectCreationInformation**オブジェクトを作成します。 必要な**名前**のプロパティを指定するには、 **ProjectCreationInformation.set_name**関数を使用します。 
+2. **ProjectCreationInformation** オブジェクトを作成して、プロジェクトの初期プロパティを指定します。**ProjectCreationInformation.set_name** 関数を使用して、必要な **name** プロパティを指定します。 
     
-3. **ProjectContext.get_projects**関数を使用して、サーバーから発行されたプロジェクトを取得します。 **Get_projects**関数は、 **ProjectCollection**オブジェクトを返します。 
+3. **ProjectContext.get_projects** 関数を使用して、発行済みのプロジェクトをサーバーから取得します。**get_projects** 関数は **ProjectCollection** オブジェクトを返します。 
     
-4. **ProjectCollection.add**関数を使用して、 **ProjectCreationInformation**オブジェクトを渡すことによって、コレクションに新しいプロジェクトを追加します。 
+4. **ProjectCollection.add** 関数を使用し、**ProjectCreationInformation** オブジェクトを渡して、コレクションに新しいプロジェクトを追加します。 
     
-5. **ProjectCollection.update**関数および**ProjectContext.waitForQueueAsync**関数を使用してコレクションを更新します。 **更新**関数は、 **waitForQueueAsync**に渡された**QueueJob**オブジェクトを返します。 この呼び出しは、プロジェクトを発行します。
+5. **ProjectCollection.update** 関数および **ProjectContext.waitForQueueAsync** 関数を使用してコレクションを更新します。**update** 関数は、**waitForQueueAsync** に渡す **QueueJob** オブジェクトを返します。この呼び出しは、プロジェクトも発行します。
     
-**Visual Studio でアプリケーション ページを作成する**手順で追加した**スクリプト**タグの間で次のコードを貼り付けます。 
+「**Visual Studio でアプリケーション ページを作成するには**」の手順で追加した **script** タグの間に、次に示すコードを貼り付けます。 
   
 ```js
     // Declare a global variable to store the project collection.
@@ -192,21 +192,21 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトへの投
 
 このセクションの手順では、JavaScript オブジェクト モデルを使用して、プロジェクトの**開始日**のプロパティを更新します。 プロシージャには、次の大まかな手順が含まれています。 
   
-1. **ProjectContext**の現在のインスタンスを取得します。 
+1. 現在の **ProjectContext** インスタンスを取得します。 
     
-2. **ProjectContext.get_projects**関数を使用して、サーバーから発行されたプロジェクトを取得します。 **Get_projects**関数は、 **ProjectCollection**オブジェクトを返します。 
+2. **ProjectContext.get_projects** 関数を使用して、発行済みのプロジェクトをサーバーから取得します。**get_projects** 関数は **ProjectCollection** オブジェクトを返します。 
     
-3. **ProjectContext.load**関数および**ProjectContext.executeQueryAsync**関数を使用してサーバーに要求を実行します。 
+3. **ProjectContext.load** 関数と **ProjectContext.executeQueryAsync** 関数を使用して、サーバーで要求を実行します。 
     
-4. **PublishedProject**オブジェクトを取得するには、 **ProjectContext.getById**関数を使用します。 
+4. **ProjectContext.getById** 関数を使用して、**PublishedProject** オブジェクトを取得します。 
     
-5. **Project.checkOut**関数を使用する対象となるプロジェクトをチェック_アウトします。 **チェック アウト**機能は、発行されたプロジェクトの下書きバージョンを返します。 
+5. **Project.checkOut** 関数を使用してターゲット プロジェクトをチェックアウトします。**checkOut** 関数は、発行されたプロジェクトのドラフト バージョンを返します。 
     
-6. プロジェクトの開始日を変更するには、 **DraftProject.set_startDate**関数を使用します。 
+6. **DraftProject.set_startDate** 関数を使用して、プロジェクトの開始日を変更します。 
     
-7. **DraftProject.publish**関数および**ProjectContext.waitForQueueAsync**関数を使用してプロジェクトを発行します。 **発行**機能では、 **waitForQueueAsync**に渡すと、 **QueueJob**オブジェクトを返します。
+7. **DraftProject.publish** 関数と **ProjectContext.waitForQueueAsync** 関数を使用してプロジェクトを発行します。**publish** 関数は、**waitForQueueAsync** に渡す **QueueJob** オブジェクトを返します。
     
-**Visual Studio でアプリケーション ページを作成する**手順で追加した**スクリプト**タグの間で次のコードを貼り付けます。 
+「**Visual Studio でアプリケーション ページを作成するには**」の手順で追加した **script** タグの間に、次に示すコードを貼り付けます。 
   
 ```js
     // Declare global variables.
@@ -275,19 +275,19 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトへの投
 
 このセクションの手順では、JavaScript オブジェクト モデルを使用してプロジェクトを削除します。 プロシージャには、次の大まかな手順が含まれています。
   
-1. **ProjectContext**の現在のインスタンスを取得します。 
+1. 現在の **ProjectContext** インスタンスを取得します。 
     
-2. **ProjectContext.get_projects**関数を使用して、サーバーから発行されたプロジェクトを取得します。 **Get_projects**関数は、 **ProjectCollection**オブジェクトを返します。 
+2. **ProjectContext.get_projects** 関数を使用して、発行済みのプロジェクトをサーバーから取得します。**get_projects** 関数は **ProjectCollection** オブジェクトを返します。 
     
-3. **ProjectContext.load**関数および**ProjectContext.executeQueryAsync**関数を使用してサーバーに要求を実行します。 
+3. **ProjectContext.load** 関数と **ProjectContext.executeQueryAsync** 関数を使用して、サーバーで要求を実行します。 
     
-4. **PublishedProject**オブジェクトを取得するには、 **ProjectCollection.getById**関数を使用します。 
+4. **ProjectCollection.getById** 関数を使用して、**PublishedProject** オブジェクトを取得します。 
     
-5. **ProjectCollection.remove**関数に渡すことによって、プロジェクトを削除します。 
+5. **ProjectCollection.remove** 関数に渡すことでプロジェクトを削除します。 
     
-6. **ProjectCollection.update**関数および**ProjectContext.waitForQueueAsync**関数を使用してコレクションを更新します。 **更新**関数は、 **waitForQueueAsync**に渡された**QueueJob**オブジェクトを返します。
+6. **ProjectCollection.update** 関数と **ProjectContext.waitForQueueAsync** 関数を使用してコレクションを更新します。**update** 関数は、**waitForQueueAsync** に渡す **QueueJob** オブジェクトを返します。
     
-**Visual Studio でアプリケーション ページを作成する**手順で追加した**スクリプト**タグの間で次のコードを貼り付けます。 
+「**Visual Studio でアプリケーション ページを作成するには**」の手順で追加した **script** タグの間に、次に示すコードを貼り付けます。 
   
 ```js
     // Declare global variables.
@@ -351,7 +351,7 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトへの投
 
 ## <a name="see-also"></a>関連項目
 
-- [プロジェクトのプログラミング タスク](project-programming-tasks.md)
+- [Project のプログラミング タスク](project-programming-tasks.md)
 - [Project 2013 のクライアント側オブジェクト モデル (CSOM)](client-side-object-model-csom-for-project-2013.md)
     
 

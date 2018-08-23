@@ -26,7 +26,7 @@ Visual Studio 2010 または Visual Studio 2012 を使用するには、プロ�
   
 リモート開発用コンピューターに Project Server コンピューターから、または Project 2013 SDK ダウンロードから CSOM アセンブリする必要があることをコピーできます。 このトピックに記載されている**QueueCreateProject**のコンソール アプリケーションは、Silverlight アプリケーションや Windows Phone 8 アプリケーションでは、Microsoft.ProjectServer.Client.dll アセンブリを作成する必要があります。 CSOM は独立の WCF ベースまたは ASMX ベース プロジェクト Server インターフェイス (PSI) であるために、PSI のサービス参照を設定するか、 **Microsoft.Office.Project.Server.Library**名前空間を使用する必要はありません。 
   
-**QueueCreateProject**アプリケーションは、キューのタイムアウトの制限を作成するプロジェクトの名前をコマンドライン引数を使用します。 手順 1 で、コマンドラインを解析するルーチンを追加、コマンド ・ ラインにエラーがある場合は、使用法のメッセージを追加する基本的なコンソール アプリケーションを作成します。 
+**QueueCreateProject** アプリケーションでは、作成するプロジェクトの名前とキューのタイムアウト制限をコマンド ライン引数で指定します。手順 1 では、基本的なコンソール アプリケーションを作成し、コマンド ラインを解析するルーチンを追加し、コマンド ラインでエラーが発生した場合に使用方法を説明するメッセージを追加します。 
   
 ### <a name="procedure-1-to-create-a-csom-project-in-visual-studio"></a>手順 1. Visual Studio で CSOM プロジェクトを作成するには
 
@@ -37,7 +37,7 @@ Visual Studio 2010 または Visual Studio 2012 を使用するには、プロ�
 3. Visual Studio では、Windows コンソール アプリケーションを作成し、ターゲット フレームワークを.NET Framework 4 に設定します。 たとえば、QueueCreateProject アプリケーションの名前を付けます。
     
    > [!NOTE]
-   > 忘れた場合は Visual Studio がプロジェクトを作成した後、適切なターゲットを設定するのには、 **[プロジェクト**] メニューの**QueueCreateProject プロパティ**を開きます。 [**アプリケーション**] タブで、**ターゲット フレームワーク**ドロップダウン ボックスの一覧で、 **.NET Framework 4**を選択します。 **.NET Framework 4 のクライアント プロファイル**を使用することはしません。 
+   > 適切なターゲットの設定を忘れた場合、Visual Studio でプロジェクトを作成した後で、[**プロジェクト**] メニューの [**QueueCreateProject のプロパティ**] を開きます。[**アプリケーション**] タブの [**対象のフレームワーク**] ドロップダウン リストで、[**.NET Framework 4**] を選択します。[**.NET Framework 4 Client Profile**] は使用しないでください。 
   
 4. ソリューション エクスプローラーで、次のアセンブリへの参照を設定します。
     
@@ -157,13 +157,13 @@ CSOM の開発には、Project Web App の URL を使用して初期化する**P
 ## <a name="getting-an-enterprise-project-type"></a>エンタープライズ プロジェクトの種類を取得する
 <a name="pj15_GettingStartedCSOM_GettingEPT"> </a>
 
-**QueueCreateProject**サンプル アプリケーションでは、エンタープライズ プロジェクト EPT のアプリケーションがプロジェクトの EPT を選択する方法を表示するのには、明示的に選択します。 プロジェクトの作成については、EPT の GUID を指定しない場合、アプリケーションは、既定の EPT を使用します。 **GetEptUid**メソッドは、手順 4 に記載されている**CreateTestProject**メソッドによって使用されます。 
+**QueueCreateProject** サンプル アプリケーションでは、エンタープライズ プロジェクト テンプレート (EPT) を明示的に選択して、アプリケーションでのプロジェクトの EPT の選択方法を示しています。プロジェクトの作成情報に EPT の GUID が指定されていない場合、アプリケーションは既定の EPT を使用します。**GetEptUid** メソッドは、手順 4 で説明されている **CreateTestProject** メソッドで使用されます。 
   
-**GetEptUid**メソッドは、EPT の名前が指定された名前に相当する、 **EnterpriseProjectTypes**のコレクションの**ProjectContext**オブジェクトを照会します。 クエリを実行した後は、 **eptUid**変数は、 **eptList**コレクション内の最初の**EnterpriseProjectType**オブジェクトの GUID に設定されます。 EPT の名前は一意であるため、指定された名前を持つ 1 つの**EnterpriseProjectType**オブジェクトがあります。 
+**GetEptUid** メソッドは、**EnterpriseProjectTypes** のコレクションに対し、EPT 名が指定した名前と等しい **ProjectContext** オブジェクトに対してクエリを実行します。クエリの実行後、**eptUid** 変数は **eptList** コレクションの最初の **EnterpriseProjectType** オブジェクトの GUID に設定されます。EPT 名は一意であるため、指定した名前を持つ **EnterpriseProjectType** オブジェクトは 1 つのみ存在します。 
   
 ### <a name="procedure-3-to-get-the-guid-of-an-ept-for-a-new-project"></a>手順 3. 新しいプロジェクトの EPT の GUID を取得するには
 
-- **プログラム**のクラスに**GetEptUid**メソッドを追加します。 
+- **GetEptUid** メソッドを **Program** クラスに追加します。 
     
    ```cs
     // Get the GUID of the specified enterprise project type.
@@ -190,7 +190,7 @@ CSOM の開発には、Project Web App の URL を使用して初期化する**P
     }
    ```
 
-EPT の GUID を検索するのにはいくつかの方法があります。 EPT 名に一致する 1 つの**EnterpriseProjectType**オブジェクトのみをダウンロードするため、 **GetEptUid**メソッドに示すようにクエリが効率的です。 次の代替ルーチンは、EPTs の完全な一覧をクライアント アプリケーションにダウンロードし、リストを反復処理するため、効率が低下します。 
+EPT の GUID の検索方法はいくつかあります。**GetEptUid** メソッドで示されているクエリは、EPT 名と一致する **EnterpriseProjectType** オブジェクトを 1 つだけダウンロードするため、効率的です。次に示す代替ルーチンは、EPT のリスト全体をクライアント アプリケーションにダウンロードしてリストを反復処理するため、効率が低くなります。 
 
 ```cs
 foreach (EnterpriseProjectType ept in projSvr.EnterpriseProjectTypes)
@@ -203,7 +203,7 @@ foreach (EnterpriseProjectType ept in projSvr.EnterpriseProjectTypes)
 }
 ```
 
-次のルーチンは EPT オブジェクトを選択するのには、LINQ クエリ式とラムダ式を使用してですが、まだすべての**EnterpriseProjectType**オブジェクトをダウンロードします。 
+次のルーチンでは LINQ クエリとラムダ式を使用して EPT オブジェクトを選択しますが、すべての **EnterpriseProjectType** オブジェクトをダウンロードします。 
 
 ```cs
 var eptList = projContext.LoadQuery(projContext.EnterpriseProjectTypes);
@@ -214,13 +214,13 @@ eptUid = eptList.First(ept => ept.Name == eptName).Id;
 ## <a name="setting-the-creation-information-and-publishing-the-project"></a>作成情報を設定し、プロジェクトを発行する
 <a name="pj15_GettingStartedCSOM_ProjectCreation"> </a>
 
-**CreateTestProject**メソッドでは、 **ProjectCreationInformation**オブジェクトを作成し、プロジェクトを作成するために必要な情報を指定します。 プロジェクト GUID と名前が必要です。開始日、プロジェクトの説明、および GUID の EPT はオプションです。 
+**CreateTestProject** メソッドは **ProjectCreationInformation** オブジェクトを作成し、プロジェクトの作成に必要な情報を指定します。プロジェクトの GUID と名前は必須であり、開始日、プロジェクトの説明、EPT の GUID は省略可能です。 
   
-新しいプロジェクトのプロパティを設定した後は、 **Projects.Add**メソッドは、**プロジェクト**コレクションにプロジェクトを追加します。 保存し、プロジェクトを発行、Project Server キューにメッセージを送信し、プロジェクトを作成するには、 **Projects.Update**メソッドを呼び出す必要があります。 
+新しいプロジェクトのプロパティを設定した後、**Projects.Add** メソッドでプロジェクトを **Projects** コレクションに追加します。プロジェクトを保存して発行するには、**Projects.Update** メソッドを呼び出して Project Server キューにメッセージを送信し、プロジェクトを作成します。 
   
 ### <a name="procedure-4-to-set-the-new-project-properties-create-the-project-and-publish-the-project"></a>手順 4. 新しいプロジェクトのプロパティを設定し、プロジェクトを作成して、発行するには
 
-1. **プログラム**のクラスに**CreateTestProject**メソッドを追加します。 次のコードは作成されますが、プロジェクトを発行し、キュー ジョブが完了するまで待機しません。 
+1. **CreateTestProject** メソッドを **Program** クラスに追加します。次のコードではプロジェクトを作成して発行しますが、キューのジョブが完了するまで待機しません。 
     
    ```cs
     // Create a project.
@@ -254,7 +254,7 @@ eptUid = eptList.First(ept => ept.Name == eptName).Id;
 
 2. 交換、`/* Add code here to wait for the queue. */`キュー ジョブを待機する次のコードにコメントします。 ルーチンでは、最大秒数を指定した**timeoutSeconds**を待機するか、タイムアウトする前にキューのジョブが終了した場合に行われます。 キュー ジョブの状態は、 [Microsoft.ProjectServer.Client.JobState](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.JobState.aspx)を参照してください。 
     
-   **QueueJob**オブジェクトの**Load**メソッドと、 **ExecuteQuery**メソッドを呼び出すことは、省略可能です。 **WaitForQueue**メソッドを呼び出すときに、 **QueueJob**オブジェクトが初期化されていない場合は、Project Server によって初期化します。 
+   **QueueJob** オブジェクトの **Load** メソッドおよび **ExecuteQuery** メソッドの呼び出しは省略可能です。**WaitForQueue** メソッドの呼び出し時に **QueueJob** オブジェクトが未初期化の場合、Project Server で初期化されます。 
     
    ```cs
     // Calling Load and ExecuteQuery for the queue job is optional.
@@ -283,7 +283,7 @@ eptUid = eptList.First(ept => ept.Name == eptName).Id;
   
 ### <a name="procedure-5-to-list-the-published-projects"></a>手順 5. 発行したプロジェクトを一覧表示するには
 
-1. **プログラム**のクラスに**ListPublishedProjects**メソッドを追加します。 
+1. **ListPublishedProjects** メソッドを **Program** クラスに追加します。 
     
    ```cs
     // List the published projects.
@@ -337,7 +337,7 @@ eptUid = eptList.First(ept => ept.Name == eptName).Id;
 
 3. 10 秒あたりのキューのタイムアウトの既定値を使用するのには、以下のコマンドライン引数を持つ別のテストを実行します。`-n "Test proj 2"`
     
-   **QueueCreateProject**アプリケーションは、作成し、テスト プロジェクト 2 の名前のプロジェクトを発行します。 
+   **QueueCreateProject** アプリケーションは Test proj 2 という名前のプロジェクトを作成して発行します。 
     
 4. 次のコマンドライン引数を指定するには、別のテストを実行し、タイムアウト時間を終了するに対して短すぎるのキュー ジョブを設定します。`-n "Test proj 3" -t 1`
     
@@ -372,7 +372,7 @@ eptUid = eptList.First(ept => ept.Name == eptName).Id;
 
 6. アプリケーションを再コンパイルし、次のコマンドライン引数を持つ別のテストを実行します。`-n "Test proj 4"`
     
-   **WaitForQueue**ルーチンがコメント アウトされているため、アプリケーションは既定のタイムアウト値を使用しません。 アプリケーションがキューを待っていない場合でも、Project Server に発行操作が十分に高速の場合、テスト プロジェクト 4 を表示ことがあります。 
+   **WaitForQueue** ルーチンがコメント アウトされているため、アプリケーションでは既定のタイムアウト値は使用されません。アプリケーションはキューを待機しませんが、Project Server の発行処理が十分に高速であれば、Test proj 4 が表示される可能性があります。 
     
    ```MS-DOS
     Creating project: Test proj 4 ...
@@ -388,7 +388,7 @@ eptUid = eptList.First(ept => ept.Name == eptName).Id;
 
 Project Web App の [プロジェクト センター] ページを更新 (`http://ServerName/ProjectServerName/Projects.aspx`)、発行済みのプロジェクトを表示します。 次の図は、テスト プロジェクトが発行されたことを示します。
 
-**Project Web App での発行済みのプロジェクトをチェック**
+**Project Web App で発行済みプロジェクトを確認する**
 
 ![Project Web App での発行済みのプロジェクトをチェック](media/pj15_GetStartedCSOMNET_pwa.gif "Project Web App での発行済みのプロジェクトをチェック")
   
@@ -578,7 +578,7 @@ namespace QueueCreateProject
 
 ## <a name="see-also"></a>関連項目
 
-- [Project 2013 の開発者用の更新プログラム](updates-for-developers-in-project-2013.md) 
+- [Project 2013 の開発者向けの新機能](updates-for-developers-in-project-2013.md) 
 - [Project 2013 のクライアント側オブジェクト モデル (CSOM)](client-side-object-model-csom-for-project-2013.md)
     
 

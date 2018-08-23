@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: bb243bc4-4974-4ad6-aa76-2426c1ebe84b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d907f2e8ecb9b6126898ff35b13427b088af9561
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803956"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [SMAPIFormProp](smapiformprop.md)構造体の配列が含まれています。 
   
@@ -42,7 +42,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cProps**
   
@@ -56,7 +56,7 @@ typedef struct
   
 > フォームのプロパティの配列です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **SMAPIFormPropArray**構造体は次の方法をパラメーターとして渡されます。 
   

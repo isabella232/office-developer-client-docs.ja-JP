@@ -1,5 +1,5 @@
 ---
-title: 機能のための XML
+title: 機能の XML
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804461"
 ---
-# <a name="xml-for-capabilities"></a>機能のための XML
+# <a name="xml-for-capabilities"></a>機能の XML
 
 (OSC) プロバイダーの XML スキーマ内の**機能**要素では、OSC プロバイダーの機能を指定することができます。 このような機能には次のものが含まれています。 
   

@@ -1,5 +1,5 @@
 ---
-title: アドレス帳オプションの設定
+title: アドレス帳のオプションの設定
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803889"
 ---
-# <a name="setting-address-book-options"></a>アドレス帳オプションの設定
+# <a name="setting-address-book-options"></a>アドレス帳のオプションの設定
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳を使用するためのオプションについて説明する 3 つのプロパティを設定することができます。
   
@@ -41,5 +41,5 @@ ms.locfileid: "19803889"
 
 
 
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

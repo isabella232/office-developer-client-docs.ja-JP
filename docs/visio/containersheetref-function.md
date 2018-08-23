@@ -20,20 +20,21 @@ ms.locfileid: "19805111"
   
 ## <a name="version-information"></a>バージョン情報
 
-Visio 2010 のバージョンが追加されます。 
+追加バージョン: Visio 2010
+ 
   
 ## <a name="syntax"></a>構文
 
 CONTAINERSHEETREF (* **インデックス** * * * *[] カテゴリ** *) 
   
-### <a name="parameters"></a>Parameters
+### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _index_ <br/> |必須  <br/> |**Integer** <br/> |コンテナーの 1 から始まるインデックス。詳細については、「備考」を参照してください。  <br/> |
 | _category_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |コンテナーのカテゴリ。詳細については、「備考」を参照してください。  <br/> |
    
-### <a name="return-value"></a>�߂�l
+### <a name="return-value"></a>戻り値
 
 シェイプシート参照
   

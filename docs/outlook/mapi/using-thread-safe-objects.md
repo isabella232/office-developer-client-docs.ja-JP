@@ -1,5 +1,5 @@
 ---
-title: スレッド セーフなオブジェクトを使用します。
+title: スレッド セーフ オブジェクトの使用
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804223"
 ---
-# <a name="using-thread-safe-objects"></a>スレッド セーフなオブジェクトを使用します。
+# <a name="using-thread-safe-objects"></a>スレッド セーフ オブジェクトの使用
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアント アプリケーションは、オブジェクトが直接使用されるか、コールバックとは、常にスレッド セーフである場合を除き以下のような場合を想定します。
   

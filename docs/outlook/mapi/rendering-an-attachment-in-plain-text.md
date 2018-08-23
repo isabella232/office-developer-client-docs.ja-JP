@@ -1,5 +1,5 @@
 ---
-title: テキスト形式の添付ファイルを表示します。
+title: テキスト形式での添付ファイルの表示
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803758"
 ---
-# <a name="rendering-an-attachment-in-plain-text"></a>テキスト形式の添付ファイルを表示します。
+# <a name="rendering-an-attachment-in-plain-text"></a>テキスト形式での添付ファイルの表示
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 レンダリングするテキスト形式のメッセージで添付ファイル添付ファイルの**PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)) のプロパティを取得し、 **PR_ATTACH_RENDERING** ([PidTagAttachRendering](pidtagattachrendering-canonical-property.md)) 内のデータに適用します。プロパティです。 **PR_RENDERING_POSITION**を取得する 2 とおりの方法があります。
   

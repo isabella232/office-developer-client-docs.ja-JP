@@ -5,7 +5,7 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 7919f4d7-04df-4a96-a5b1-b7b460890486
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3d0c337bd3e5a73bbbcbb72a109320cfb84efd50
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,7 +15,7 @@ ms.locfileid: "19803706"
 ---
 # <a name="propertydefinition-stream-sample"></a>PropertyDefinition ストリームのサンプル
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 PropertyDefinition ストリームの例について説明します。 ストリームには、ユーザー定義のフィールドの定義が含まれている`TextField1`。 型は、**テキスト**、および PropDefV2 の形式では、定義します。
   
@@ -102,7 +102,7 @@ PropertyDefinition ストリームのサンプル データの解析は、次の
     
 ## <a name="see-also"></a>関連項目
 
-- [Outlook アイテムおよびフィールド](outlook-items-and-fields.md)
+- [Outlook のアイテムとフィールド](outlook-items-and-fields.md)
 - [ストリームの構造](stream-structures.md)
 - [PropertyDefinition ストリームの構造](propertydefinition-stream-structure.md)
 - [FieldDefinition ストリームの構造](fielddefinition-stream-structure.md)

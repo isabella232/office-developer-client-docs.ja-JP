@@ -41,7 +41,7 @@ REST インターフェイスで Project Server の機能をアクセスする�
 
 - [Project 2013 開発者向けドキュメント](project-2013-developer-documentation.md)   
 - [Project Server のクライアント側オブジェクト モデル (CSOM)](client-side-object-model-csom-for-project-2013.md)   
-- [JavaScript オブジェクト モデルの概要](getting-started-with-the-project-server-2013-javascript-object-model.md)  
-- [JavaScript オブジェクト モデルを使用してプロジェクトの作業します。](create-retrieve-update-delete-projects-using-project-server-javascript.md)
+- [JavaScript オブジェクト モデルの作業の開始](getting-started-with-the-project-server-2013-javascript-object-model.md)  
+- [JavaScript オブジェクト モデルを使用してプロジェクトを操作する](create-retrieve-update-delete-projects-using-project-server-javascript.md)
     
 

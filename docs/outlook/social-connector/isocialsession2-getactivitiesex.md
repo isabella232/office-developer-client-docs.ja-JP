@@ -23,7 +23,7 @@ _HashedAddresses_パラメーターで指定されたユーザーのそれぞれ
 HRESULT _stdcall GetActivitiesEx([in] SAFEARRAY(BSTR) hashedAddresses, [in] DATE startTime, [out, retval] BSTR *activities);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _hashedAddresses_
   
@@ -37,7 +37,7 @@ _アクティビティ_
   
 > [out]_開始時刻_以降に、ソーシャル ネットワーク上の_hashedAddresses_で指定されたユーザーのアクティビティのセットを表す XML 文字列です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 OSC は、OSC プロバイダーには、活動のオン ・ デマンドの同期がサポートされている場合に**GetActivitiesEx**を呼び出します。 OSC では、メモリ内_のアクティビティ_に返される情報を格納します。 OSC を使用してメモリ内には、この情報を更新する方法の詳細については、[同期の友人との活動](synchronizing-friends-and-activities.md)を参照してください。
   
@@ -53,6 +53,6 @@ _開始時刻_パラメーターは、世界協定時刻 (UTC) で**日付**値�
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialSession2: IUnknown](isocialsession2iunknown.md)
+- [ISocialSession2 : IUnknown](isocialsession2iunknown.md)
 - [友人や活動を同期します。](synchronizing-friends-and-activities.md)
 

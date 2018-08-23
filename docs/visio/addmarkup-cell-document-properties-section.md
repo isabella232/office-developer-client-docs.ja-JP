@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804776"
 ---
-# <a name="addmarkup-cell-document-properties-section"></a>[AddMarkup] セル ([Document Properties] セクション)
+# <a name="addmarkup-cell-document-properties-section"></a>[AddMarkup] セル ([ドキュメントのプロパティ] セクション)
 
 図面が校正履歴用にチェックされているかどうかを示します。
   
@@ -32,15 +32,15 @@ AddMarkup セルが TRUE に設定、レビュー担当者は、元の図面ペ�
 > [!NOTE]
 > GUARD 関数を使用して、ドキュメントのマークアップを防ぐことができます。 AddMarkup セルに数式が含まれている場合は = GUARD(FALSE)、校正履歴の**記録**を無効にします。 
   
-この設定は、[**校閲**] タブには、**マークアップ**のグループで**校正履歴の記録**] コマンドの設定に対応します。 
+この設定は、[**校閲**] タブの [**校正履歴**] グループにある [**校正履歴の記録**] コマンドに相当します。 
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [addmarkup] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [AddMarkup] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |[Addmarkup]  <br/> |
    
-プログラムから、インデックスによって [addmarkup] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [AddMarkup] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

@@ -1,5 +1,5 @@
 ---
-title: 受信トレイ フォルダーを通過します。
+title: 受信トレイ フォルダーのスキャン
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804139"
 ---
-# <a name="traversing-the-inbox-folder"></a>受信トレイ フォルダーを通過します。
+# <a name="traversing-the-inbox-folder"></a>受信トレイ フォルダーのスキャン
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  **すべての受信トレイのメッセージを順番に表示**
   

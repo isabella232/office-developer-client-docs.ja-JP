@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c1ae24ad-1bbb-4dee-b414-b5226593b6fa
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1578e26ec96f69975c2304cb185f352193a52c2d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804061"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 PT_MV_UNICODE の種類のプロパティを説明するために使用する文字の文字列の配列が含まれています。 
   
@@ -40,7 +40,7 @@ typedef struct _SWStringArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **あう**
   
@@ -50,7 +50,7 @@ typedef struct _SWStringArray
   
 > Unicode 文字の null 終了文字列の配列へのポインター。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 PT_MV_UNICODE の詳細については、[プロパティの型](property-types.md)を参照してください。
   

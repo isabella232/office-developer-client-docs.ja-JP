@@ -1,5 +1,5 @@
 ---
-title: ラップされた PST ストア プロバイダーをシャット ダウン
+title: ラップされた PST ストア プロバイダーのシャットダウン
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803910"
 ---
-# <a name="shutting-down-a-wrapped-pst-store-provider"></a>ラップされた PST ストア プロバイダーをシャット ダウン
+# <a name="shutting-down-a-wrapped-pst-store-provider"></a>ラップされた PST ストア プロバイダーのシャットダウン
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ラップされた個人用フォルダー ファイル (PST) のストア プロバイダーの使用が終了したら後、は、ラップされた PST ストア プロバイダーをシャット ダウンする必要があります正しく。 ラップされた PST ストア プロバイダーの使用に関する詳細については、「[ラップされた PST ストア プロバイダー](using-a-wrapped-pst-store-provider.md)」を参照してください。
   
@@ -46,13 +46,13 @@ STDMETHODIMP CMSProvider::Shutdown(ULONG * pulFlags)
 
 
 
-[サンプルの PST ストア プロバイダーをラップ](about-the-sample-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーのサンプルについて](about-the-sample-wrapped-pst-store-provider.md)
   
-[PST ストア プロバイダーをラップして、サンプルをインストールします。](installing-the-sample-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーのサンプルのインストール](installing-the-sample-wrapped-pst-store-provider.md)
   
-[ラップされた PST ストア プロバイダーを初期化しています。](initializing-a-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)
   
 [ラップされた PST ストア プロバイダーへのログオン](logging-on-to-a-wrapped-pst-store-provider.md)
   
-[ラップされた PST ストア プロバイダーを使用します。](using-a-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーの使用](using-a-wrapped-pst-store-provider.md)
 

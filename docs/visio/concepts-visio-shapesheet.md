@@ -18,15 +18,15 @@ ms.locfileid: "19805066"
 
 このナビゲーション ・ ページには、Visio でのプログラミングの概要に関するトピックへのリンクが含まれています。 以下のリンクをクリックするか、目次を使用して、次のトピックを移動するのには。
   
-- [セルの参照について](about-cell-references.md)
+- [セル参照について](about-cell-references.md)
     
 - [通貨定数について](about-currency-constants.md)
     
-- [日付、時刻、および期間の値について](about-date-time-and-duration-values.md)
+- [日付、時刻、期間の値について](about-date-time-and-duration-values.md)
     
 - [エラー値について](about-error-values.md)
     
-- [書式形式について](about-format-pictures.md)
+- [書式設定ピクチャについて](about-format-pictures.md)
     
 - [数式について](about-formulas.md)
     
@@ -40,7 +40,7 @@ ms.locfileid: "19805066"
     
 - [[数式トレース] ウィンドウについて](about-the-formula-tracing-window.md)
     
-- [シェイプ シートのスプレッドシートについて](about-the-shapesheet-spreadsheet.md)
+- [シェイプシート スプレッドシートについて](about-the-shapesheet-spreadsheet.md)
     
 - [[スタイル エクスプローラー] ウィンドウについて](about-the-style-explorer-window.md)
     

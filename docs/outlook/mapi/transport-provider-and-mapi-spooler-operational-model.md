@@ -1,5 +1,5 @@
 ---
-title: トランスポート プロバイダーおよび MAPI スプーラーの動作モデル
+title: トランスポート プロバイダーと MAPI スプーラー運用モデル
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804138"
 ---
-# <a name="transport-provider-and-mapi-spooler-operational-model"></a>トランスポート プロバイダーおよび MAPI スプーラーの動作モデル
+# <a name="transport-provider-and-mapi-spooler-operational-model"></a>トランスポート プロバイダーと MAPI スプーラー運用モデル
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 トランスポート プロバイダーの初期化、起動、処理、シャット ダウン、二つの後処理は、一連の MAPI スプーラーからトランスポート プロバイダーへの呼び出しによって実行されます。 呼び出しは次のように順序付けられました。
   

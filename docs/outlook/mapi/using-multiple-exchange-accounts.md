@@ -17,7 +17,7 @@ ms.locfileid: "19804204"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Microsoft Outlook 2010 および Microsoft Outlook 2013 は、複数の exchange 電子メール アカウントとの統合をサポートします。 Outlook 2010 または Outlook 2013 では、ユーザーが同じプロファイルに 2 つの exchange アカウントを追加を活用し、ながら発行済みのグローバル アドレス一覧 (GAL)、Exchange の出力を Office の構成では、フォルダーの共有など、Exchange の豊富な機能です。
   

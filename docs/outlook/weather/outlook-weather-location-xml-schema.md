@@ -1,5 +1,5 @@
 ---
-title: Outlook 天気の場所の XML スキーマ
+title: Outlook 天気予報の場所 XML スキーマ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804547"
 ---
-# <a name="outlook-weather-location-xml-schema"></a>Outlook 天気の場所の XML スキーマ
+# <a name="outlook-weather-location-xml-schema"></a>Outlook 天気予報の場所 XML スキーマ
 
 このセクションには、Outlook の天気予報の場所の XML スキーマの Outlook 2013 スキーマの参照が含まれます。 このスキーマでは、場所のコードの場合は、Outlook web サービス要求に応答する天気予報サービスのプロバイダーを使用できます。 場所コードは、ユーザーが天気予報バーで気象情報を要求する場所に対応します。
   
@@ -27,7 +27,7 @@ ms.locfileid: "19804547"
     
 - [(Outlook の天気予報の場所のスキーマ) の種類](types-outlook-weather-location-schema.md)
     
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連情報
 
 [Outlook の天気予報バーの拡張](extending-the-weather-bar-in-outlook.md)
   

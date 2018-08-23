@@ -1,5 +1,5 @@
 ---
-title: サービス プロバイダーの一意の識別子を登録します。
+title: サービス プロバイダー一意識別子の登録
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803737"
 ---
-# <a name="registering-service-provider-unique-identifiers"></a>サービス プロバイダーの一意の識別子を登録します。
+# <a name="registering-service-provider-unique-identifiers"></a>サービス プロバイダー一意識別子の登録
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳、メッセージ ・ ストア、およびトランスポート プロバイダーは、さまざまな種類のサービス オブジェクトを登録するのには、 [MAPIUID](mapiuid.md)と呼ばれる一意の識別子を使用します。 の**MAPIUID**は、GUID を格納する 16 バイトの識別子です。 次の手順を使用して、 **MAPIUID**を作成します。 
   
@@ -51,5 +51,5 @@ ms.locfileid: "19803737"
 
 
 
-[サービス プロバイダーへのログオンを実装します。](implementing-service-provider-logon.md)
+[サービス プロバイダー ログオンの実装](implementing-service-provider-logon.md)
 

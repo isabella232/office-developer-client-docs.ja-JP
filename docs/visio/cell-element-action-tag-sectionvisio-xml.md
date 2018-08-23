@@ -22,7 +22,7 @@ ms.locfileid: "19804936"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |ページ # .xml、masters.xml、マスターの # .xml、pages.xml  <br/> |
@@ -54,26 +54,26 @@ ms.locfileid: "19804936"
 
 |**属性**|**型**|**必須**|**説明**|**使用可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|DurationFormat 要素  <br/> |xsd:string  <br/> |省略可能  <br/> |数式がエラーが発生することを示します。 **E**の値は、現在の値 (エラー メッセージの文字列) です。**V**属性の値は、最後の有効な値です。  <br/> |エラー メッセージの文字列です。  <br/> |
+|E  <br/> |xsd:string  <br/> |省略可能  <br/> |数式がエラーが発生することを示します。 **E**の値は、現在の値 (エラー メッセージの文字列) です。**V**属性の値は、最後の有効な値です。  <br/> |エラー メッセージの文字列です。  <br/> |
 |ExternalTaskProject 要素  <br/> |xsd:string  <br/> |省略可能  <br/> | 要素の式を表します。 この属性は、次の文字列のいずれかを含めることができます。  <br/>  '(いくつかの数式)' の数式がローカルに存在する場合  <br/>  `No Formula`数式がローカルで削除されるか、ブロックされている場合  <br/>  `Inh`場合は、数式が継承されます。  <br/> |数式です。  <br/> |
-|MultipleCriticalPaths 要素  <br/> |xsd:string  <br/> |必須  <br/> |シェイプ シート セルの名前を表します。  <br/> |シェイプ シート セルの名前です。  <br/> 以下の「解説」セクションを参照してください。  <br/> |
+|N  <br/> |xsd:string  <br/> |必須  <br/> |シェイプ シート セルの名前を表します。  <br/> |シェイプ シート セルの名前です。  <br/> 以下の「解説」セクションを参照してください。  <br/> |
 |U  <br/> |xsd:string  <br/> |省略可能  <br/> |既定の測定単位を表しますが、DL です。  <br/> |セルの単位です。  <br/> |
 |V  <br/> |xsd:string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプ シート セルの値です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この**セル**要素の**N**属性は、限られた一連のシェイプ シートのセルに対応する値のいずれかである必要があります。 この**セル**要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   
-|**値**|**説明**|**詳細については**|
+|**値**|**説明**|**詳細情報**|
 |:-----|:-----|:-----|
 |ButtonFace  <br/> |アクション タグ ボタンに表示されるボタン イメージの ID を示します。  <br/> |[[ButtonFace] セル ([Action Tags] セクション)](buttonface-cell-action-tags-section.md) <br/> |
 |説明  <br/> |アクション タグの説明文の文字列を格納します。この説明は、ユーザーがタグの上にポインターを置いたときに、ツール ヒントとして表示されます。  <br/> |[[Description] セル ([Action Tags] セクション)](description-cell-action-tags-section.md) <br/> |
-|無効  <br/> |図面ウィンドウに、アクション タグを表示するかどうかを示します。  <br/> |[[Disabled] セル ([Action Tags] セクション)](disabled-cell-action-tags-section.md) <br/> |
+|Disabled  <br/> |図面ウィンドウに、アクション タグを表示するかどうかを示します。  <br/> |[[Disabled] セル ([Action Tags] セクション)](disabled-cell-action-tags-section.md) <br/> |
 |DisplayMode  <br/> |アクションのタグには、ユーザーがタグの上、ポインターを移動すると、図形が選択されている場合、またはすべての時間が表示されるかどうかを決定します。  <br/> |[[DisplayMode] セル ([Smart Tags] セクション)](displaymode-cell-action-tags-section.md) <br/> |
 |[Tagname]  <br/> |アクション タグとそのアクションを関連付けるキーとして使用されるアクション タグの名前です。  <br/> |[[TagName] セル ([Action Tags] セクション)](tagname-cell-action-tags-section.md) <br/> |
-|X  <br/> |図形のローカル座標で中心となるアクション タグ ボタンの x 座標の位置に配置されます。  <br/> |[[X] セル ([Action Tags] セクション)](x-cell-action-tags-section.md) <br/> |
-|XJustify  <br/> |X と Y セルによって定義された点を基準にして、操作タグ ボタンの x オフセット。  <br/> |[[X Justify] セル ([Action Tags] セクション)](x-justify-cell-action-tags-section.md) <br/> |
-|Y  <br/> |図形のローカル座標で中心となるアクション タグ ボタンの y 座標の位置に配置されます。  <br/> |[[Y] セル ([Action Tags] セクション)](y-cell-action-tags-section.md) <br/> |
-|YJustify  <br/> |X と Y セルによって定義された点を基準にして、操作タグ ボタンの y オフセット。  <br/> |[[Y Justify] セル ([Action Tags] セクション)](y-justify-cell-action-tags-section.md) <br/> |
+|X  <br/> |図形内で、アクション タグ ボタンが配置されるローカルの x 座標の位置です。  <br/> |[[X] セル ([Action Tags] セクション)](x-cell-action-tags-section.md) <br/> |
+|XJustify  <br/> |[X] セルと [Y] セルによって定義された点に対する、アクション タグ ボタンの x 座標のオフセット値です。  <br/> |[[X Justify] セル ([Action Tags] セクション)](x-justify-cell-action-tags-section.md) <br/> |
+|Y  <br/> |図形内で、アクション タグ ボタンが配置されるローカルの y 座標の位置です。  <br/> |[[Y] セル ([Action Tags] セクション)](y-cell-action-tags-section.md) <br/> |
+|YJustify  <br/> |[X] セルと [Y] セルによって定義された点に対する、アクション タグ ボタンの y 座標のオフセット値です。  <br/> |[[Y Justify] セル ([Action Tags] セクション)](y-justify-cell-action-tags-section.md) <br/> |
    
 

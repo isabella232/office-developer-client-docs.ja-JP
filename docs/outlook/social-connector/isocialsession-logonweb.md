@@ -23,7 +23,7 @@ ms.locfileid: "19804372"
 HRESULT _stdcall LogonWeb([in] BSTR connectIn, [out] BSTR* connectOut);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _connectIn_
   
@@ -33,7 +33,7 @@ _connectOut_
   
 > [out]ログオン資格情報を含む文字列です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 Outlook ソーシャル コネクタ (OSC) は、プロバイダーでは、フォーム ベース認証をサポートしていることを示している場合にのみ、 **LogonWeb**メソッドを呼び出します。 プロバイダーでは、**該当****機能**の XML ファイルで**useLogonWebAuth**を設定することでフォーム ベースの認証が必要なことを示します。 プロバイダーでは、 **useLogonWebAuth**が**false**に設定、OSC は基本認証を使用し、 [ISocialSession::Logon](isocialsession-logon.md)メソッドを呼び出します。 
   
@@ -55,10 +55,10 @@ Outlook ソーシャル コネクタ (OSC) は、プロバイダーでは、フ�
     
 OSC プロバイダーは、キャッシュされた資格情報を使用してログオンをサポートする場合は、XML の**機能**で**は** **useLogonCached**を指定します。 プロバイダーは、プロバイダーは、接続での格納に OSC をしようとしている_connectOut_の文字列に、ログオン資格情報を配置する必要があります。 OSC では、 _connectOut_の文字列は解釈されません。 OSC では、その**useLogonCached**が**true**を確認した後、OSC は、Windows レジストリに格納する前にセキュリティのための文字列を暗号化します。 OSC は、 [ISocialSession2::LogonCached](isocialsession2-logoncached.md)を呼び出すことによって、ソーシャル ネットワークへのログオンに 2 回目以降に、 _connectIn_パラメーターにこの文字列を渡します。 
   
-エラー コードの詳細については、 [Outlook ソーシャル コネクタ プロバイダーのエラー コード](outlook-social-connector-provider-error-codes.md)を参照してください。
+エラー コードの詳細については、「[Outlook Social Connector Provider Error Codes](outlook-social-connector-provider-error-codes.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 - [フォーム ベースの認証](forms-based-authentication.md)
 

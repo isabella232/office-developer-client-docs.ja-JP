@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805323"
 ---
-# <a name="eventdblclick-cell-events-section"></a>[EventDblClick] セル ([Events] セクション)
+# <a name="eventdblclick-cell-events-section"></a>[EventDblClick] セル ([イベント] セクション)
 
 図形をダブルクリックしたときに評価されるイベント セルです。
   
@@ -24,13 +24,13 @@ ms.locfileid: "19805323"
 
 イベント セルはイベントの発生時にのみ評価されます。数式の入力時には評価されません。
   
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって EventDblClick] セルへの参照を取得するには、次のコマンドを使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [EventDblClick] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | EventDblClick  <br/> |
    
-プログラムから、インデックスによって [EventDblClick] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [EventDblClick] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

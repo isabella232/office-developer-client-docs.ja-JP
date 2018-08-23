@@ -23,17 +23,17 @@ ms.locfileid: "19804486"
 HRESULT _stdcall GetNetworkIdentifier([out, retval] BSTR* networkIdentifier);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _networkIdentifier_
   
 > [out]ソーシャル ネットワークの一意な識別子を含む文字列です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 ネットワークの一意の識別子は、Outlook ソーシャル コネクタ (OSC) プロバイダーのソーシャル ネットワークを識別する文字列です。 このメソッドは E_NOTIMPL を返すこともします。
   
 ## <a name="see-also"></a>関連項目
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

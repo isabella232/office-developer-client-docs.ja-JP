@@ -1,5 +1,5 @@
 ---
-title: メッセージの TNEF のタグ付きテキスト
+title: TNEF タグ付きメッセージ テキスト
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804116"
 ---
-# <a name="tnef-tagged-message-text"></a>メッセージの TNEF のタグ付きテキスト
+# <a name="tnef-tagged-message-text"></a>TNEF タグ付きメッセージ テキスト
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 タグ付きのメッセージのテキストは、親メッセージの添付ファイルの位置を解決するのには TNEF が使用されます。 これは、は、添付ファイルの位置にあるメッセージのテキストのプレース ホルダーを追加することによって行われます。 このプレース ホルダー、または添付ファイルのタグは、TNEF 添付ファイルとの位置を解決する方法を知っていることのような方法で添付ファイルを説明します。 タグの形式は次のとおりです。
   

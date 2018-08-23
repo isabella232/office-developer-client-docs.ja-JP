@@ -1,11 +1,11 @@
 ---
-title: アップロード フォルダーの状態
+title: フォルダー アップロード状態
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 270b1df0-c5cd-0d0f-7b57-2726dee978ab
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 82b00a33c5de11b3fc9ccd3bde4cf31c79b99c2a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804174"
 ---
-# <a name="upload-folder-state"></a>アップロード フォルダーの状態
+# <a name="upload-folder-state"></a>フォルダー アップロード状態
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  アップロード フォルダー マシンの状態、レプリケーション状態中の動作について説明します。 
   
@@ -52,7 +52,7 @@ ms.locfileid: "19804174"
   
 [MAPI �萔](mapi-constants.md)
   
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [同期状態](syncstate.md)
 

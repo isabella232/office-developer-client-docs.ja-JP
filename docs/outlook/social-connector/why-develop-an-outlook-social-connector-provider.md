@@ -1,5 +1,5 @@
 ---
-title: Outlook ソーシャル コネクタ プロバイダーを開発する理由
+title: Outlook Social Connector プロバイダーを開発する理由
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804480"
 ---
-# <a name="why-develop-an-outlook-social-connector-provider"></a>Outlook ソーシャル コネクタ プロバイダーを開発する理由
+# <a name="why-develop-an-outlook-social-connector-provider"></a>Outlook Social Connector プロバイダーを開発する理由
 
 Outlook ソーシャル コネクタ (OSC) のプロバイダーでは、ソーシャル情報の更新の集計が担当者、ソーシャル ネットワーク サイトに適用されている Office クライアント アプリケーション内で表示するのには Office のユーザーを許可します。 SharePoint Server、SharePoint ワークスペース、Lync クライアント、およびプレゼンス情報と連絡先カードをサポートするすべての Office クライアント アプリケーションは、OSC をサポートします。
   

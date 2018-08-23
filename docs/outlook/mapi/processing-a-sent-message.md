@@ -1,5 +1,5 @@
 ---
-title: 送信済みメッセージの処理
+title: 送信したメッセージの処理
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 55b3e692-753d-45e9-a40d-22adc81b75da
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0cea1a1008ecbff698b757d6c67af5c279954656
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803677"
 ---
-# <a name="processing-a-sent-message"></a>送信済みメッセージの処理
+# <a name="processing-a-sent-message"></a>送信したメッセージの処理
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 それらが送信された後、送信メッセージの数をおくことができますを保持するために指定されたフォルダーに移動されているフォルダーは、メッセージを送信または削除、[送信トレイ] にします。 処理の種類は、かどうか設定したメッセージ ・ ストア ・ プロパティによって異なります。
   

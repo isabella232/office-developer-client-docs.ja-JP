@@ -1,5 +1,5 @@
 ---
-title: プロバイダーの新しい
+title: プロバイダーの新機能
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804478"
 ---
-# <a name="whats-new-for-providers"></a>プロバイダーの新しい
+# <a name="whats-new-for-providers"></a>プロバイダーの新機能
 
 このトピックでは、Outlook ソーシャル コネクタ 2013 (OSC) での主な変更点を示します。 Outlook ソーシャル コネクタ 2013 と Outlook ソーシャル コネクタ 1.1 の間で利用できる機能の比較を表示します。 インターフェイスのメンバーと追加、変更、または廃止されている XML 要素についても説明します。 
   
@@ -31,7 +31,7 @@ Outlook ソーシャル コネクタ 2013 で、いくつかの主な変更点�
     
 次の表は、Outlook ソーシャル コネクタ 1.1 と比較した場合、Outlook ソーシャル コネクタ 2013 でさまざまな機能の可用性を示します。
   
-|**機能**|**Outlook ソーシャル コネクタ 2013**|**Outlook ソーシャル コネクタ 1.1**|
+|**機能**|**Outlook Social Connector 2013**|**Outlook ソーシャル コネクタ 1.1**|
 |:-----|:-----|:-----|
 |エンド ・ ユーザー ・ インタ フェース  <br/> |SharePoint Server、SharePoint ワークスペースでは、Lync クライアント、すべての Office クライアント アプリケーションで連絡先カードおよび outlook 人物情報ウィンドウ  <br/> |Outlook 人物情報ウィンドウ  <br/> |
 |基本認証  <br/> |はい  <br/> |はい  <br/> |
@@ -61,7 +61,7 @@ Outlook ソーシャル コネクタ 2013 で、いくつかの主な変更点�
   
 |**スキーマ要素**|**Comment**|
 |:-----|:-----|
-|**機能** <br/> |Outlook ソーシャル コネクタ 2013 の追加: **allowChangesToAutoConfigure**要素です。  <br/> Outlook ソーシャル コネクタ 2013 では非推奨: **cacheActivities**要素です。  <br/> |
+|**capabilities** <br/> |Outlook ソーシャル コネクタ 2013 の追加: **allowChangesToAutoConfigure**要素です。  <br/> Outlook ソーシャル コネクタ 2013 では非推奨: **cacheActivities**要素です。  <br/> |
 |**人物** <br/> |Outlook ソーシャル コネクタ 2013 の追加: **askmeabout**、 **businessAddress**、 **businessCity**、 **businessCountryOrRegion**、 **businessState**、 **businessZip**、**業界**、**興味のあること**、 **場所**、**かまいません**、 **otherCity**、 **otherCountryOrRegion**、 **otherState**、 **otherZip**、**スキル**、**学校**、および**web サイト**の要素です。  <br/> |
    
 ## <a name="see-also"></a>関連項目

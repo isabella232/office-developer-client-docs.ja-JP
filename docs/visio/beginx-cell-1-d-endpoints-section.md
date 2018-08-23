@@ -16,19 +16,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804816"
 ---
-# <a name="beginx-cell-1-d-endpoints-section"></a>[BeginX] セル ([1-D Endpoints] セクション)
+# <a name="beginx-cell-1-d-endpoints-section"></a>[BeginX] セル ([1-D エンドポイント] セクション)
 
 *X*を表しますが、親の原点を基準として、1 次元図形の始点の座標です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [beginx] セルへの参照を取得、次のように使用します。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [BeginX] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名 :  <br/> | [Beginx]  <br/> |
    
-プログラムから、インデックスによって [beginx] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [BeginX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

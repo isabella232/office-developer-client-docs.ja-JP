@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4e7340d1-3cb9-4276-b83f-1c8f94acb909
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 134eb844ef7b72d396c300b27a87a3a7ae320cf1
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804012"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロパティの値のサイズをテストするために使用するサイズの制限について説明します。 
   
@@ -41,7 +41,7 @@ typedef struct _SSizeRestriction
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **relop**
   
@@ -83,7 +83,7 @@ RELOP_EQ
   
 > プロパティの値のバイト数をカウントします。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 制限のしくみの概要については、[制限の詳細](about-restrictions.md)を参照してください。 
   

@@ -1,5 +1,5 @@
 ---
-title: 名前付きプロパティをサポートしています。
+title: 名前付きプロパティのサポート
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804048"
 ---
-# <a name="supporting-named-properties"></a>名前付きプロパティをサポートしています。
+# <a name="supporting-named-properties"></a>名前付きプロパティのサポート
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 実装する任意のオブジェクト、 [IMAPIProp: IUnknown](imapipropiunknown.md)インターフェイスは、名前付きプロパティをサポートできます。 名前付きプロパティのサポートに必要です。 
   

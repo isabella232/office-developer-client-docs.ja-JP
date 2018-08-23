@@ -1,5 +1,5 @@
 ---
-title: メッセージ ストア プロバイダーをシャット ダウン
+title: メッセージ ストア プロバイダーのシャットダウン
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803917"
 ---
-# <a name="shutting-down-a-message-store-provider"></a>メッセージ ストア プロバイダーをシャット ダウン
+# <a name="shutting-down-a-message-store-provider"></a>メッセージ ストア プロバイダーのシャットダウン
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロバイダーがメッセージ ストア プロバイダーの場合は、それをシャット ダウンできる次の方法のいずれかで。
   
@@ -45,5 +45,5 @@ MAPI は、メッセージ ・ ストアの**リ ス**の実装で、次のタ�
 
 
 
-[サービス プロバイダーをシャット ダウン](shutting-down-a-service-provider.md)
+[サービス プロバイダーのシャットダウン](shutting-down-a-service-provider.md)
 

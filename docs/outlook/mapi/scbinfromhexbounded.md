@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: edac715c-6edb-4b05-82e5-c08c3c7cb6d4
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a00a9b2200f76dfd600f72bf387467b5792599c6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803807"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 16 進数の文字列形式の指定部分を 2 進数に変換します。 
   
@@ -41,7 +41,7 @@ SCODE ScBinFromHexBounded(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _sz_
   

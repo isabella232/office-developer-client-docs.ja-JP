@@ -19,7 +19,7 @@ ms.locfileid: "19803765"
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアントまたはサービス プロバイダーは、オブジェクトからプロパティを取得、プロパティの値、型、および識別子、オブジェクトに、利用できます。 
   
@@ -72,5 +72,5 @@ ms.locfileid: "19803765"
 
 
 
-[MAPI Property Overview](mapi-property-overview.md)
+[MAPI のプロパティの概要](mapi-property-overview.md)
 

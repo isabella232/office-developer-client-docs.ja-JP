@@ -25,5 +25,5 @@ HRESULT _stdcall GetStatus([out, retval] BSTR* status);
 
 ## <a name="see-also"></a>関連項目
 
-- [ISocialPerson: IUnknown](isocialpersoniunknown.md)
+- [ISocialPerson : IUnknown](isocialpersoniunknown.md)
 

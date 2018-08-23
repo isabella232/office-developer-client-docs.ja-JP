@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4a9e1579-bebe-4a51-8ced-6dba9c3bcb63
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5cfad1c75aaab9afae47de5798f9e6b7ea530940
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803986"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロパティ タグの配列が含まれています。 
   
@@ -41,7 +41,7 @@ typedef struct _SPropTagArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **あう**
   
@@ -51,7 +51,7 @@ typedef struct _SPropTagArray
   
 > プロパティ タグの配列です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 プロパティ タグは、2 つの部分で構成される 32 ビット符号なし整数です。 
   

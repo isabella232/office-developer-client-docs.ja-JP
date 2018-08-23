@@ -1,5 +1,5 @@
 ---
-title: プロパティ識別子と型
+title: プロパティの識別子と型
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803691"
 ---
-# <a name="property-identifiers-and-types"></a>プロパティ識別子と型
+# <a name="property-identifiers-and-types"></a>プロパティの識別子と型
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 すべての MAPI プロパティは、プロパティ タグで表されます。 プロパティ タグは、高でのプロパティの識別子を格納する 32 ビット符号なし整数値が 16 ビットを注文し、下位のプロパティの型は、16 ビットを注文します。 Mapitags.h ヘッダー ファイルでは、MAPI によって定義されたプロパティのすべてのプロパティ タグが含まれます。
   

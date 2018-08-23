@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b20107e3-5e23-4cde-9cd6-670c914ea70a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: aff46cca7a7d530b2eede1790176058e3b91abc8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804229"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージング システムがメッセージ ストアの内部のエントリの識別子をより使用可能なエントリ id に変換します。 
   
@@ -78,7 +78,7 @@ MAPI_UNICODE
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージ ストアのオブジェクトは、そのメッセージ ・ ストアのサービス プロバイダーの coresident にのみ意味を持つエントリの内部識別子を保持します。 その他のメッセージング コンポーネントでは、MAPI には、ラップされたメッセージ ・ ストアに属していると認識可能な内部のエントリ id のバージョンが用意されています。 Coresident サービス ・ プロバイダーは常に指定する元のラップが解除されたメッセージ ストアのエントリ id です。クライアント アプリケーションは、常にでは、その使用可能な任意の場所のメッセージング ドメインと他のドメインに、ラップされたバージョンを指定してする必要があります。 
   

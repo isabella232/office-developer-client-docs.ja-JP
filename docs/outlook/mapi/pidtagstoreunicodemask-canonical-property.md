@@ -1,5 +1,5 @@
 ---
-title: PidTagStoreUnicodeMask の標準的なプロパティ
+title: PidTagStoreUnicodeMask 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a6082162-2a74-4850-a0df-4bdbc67b41d8
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 010b17de08ee5836a26c56f300b36822df2e981e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803600"
 ---
-# <a name="pidtagstoreunicodemask-canonical-property"></a>PidTagStoreUnicodeMask の標準的なプロパティ
+# <a name="pidtagstoreunicodemask-canonical-property"></a>PidTagStoreUnicodeMask 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアント アプリケーションはメッセージ ストアの特性を決定するクエリを実行するためのフラグのビットマスクを格納します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_STORE_UNICODE_MASK  <br/> |
+|関連するプロパティ:  <br/> |PR_STORE_UNICODE_MASK  <br/> |
 |識別子:  <br/> |0x340F  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |MAPI メッセージ ストア  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、メッセージを送信するクライアント アプリケーションにメッセージ ・ ストアの機能を公開します。 フラグは、クライアントまたは別のストア ([PidTagBody](pidtagbody-canonical-property.md)) である**PR_BODY** **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) をのみを送信するかどうかなど、意思決定を促進できます。 クライアントでは、このプロパティを設定する必要があることはありません。 しようとするには、 **MAPI_E_COMPUTED**をが返されます。 
   
@@ -150,7 +150,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -19,11 +19,11 @@ ms.locfileid: "19804471"
 
 このトピックでは、Outlook の気象情報の XML スキーマ内の要素が一覧表示されます。
   
-- [現在の要素](current-element-weathertype-complextypeoutlook-weather-information-schema.md)
+- [current 要素](current-element-weathertype-complextypeoutlook-weather-information-schema.md)
     
-- [要素を予測します。](forecast-element-weathertype-complextypeoutlook-weather-information-schema.md)
+- [forecast 要素](forecast-element-weathertype-complextypeoutlook-weather-information-schema.md)
     
-- [気象要素](weather-element-weatherdata-elementoutlook-weather-information-schema.md)
+- [weather 要素](weather-element-weatherdata-elementoutlook-weather-information-schema.md)
     
 - [weatherdata 要素](weatherdata-element-outlook-weather-information-schema.md)
     

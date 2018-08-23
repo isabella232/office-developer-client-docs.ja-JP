@@ -1,5 +1,5 @@
 ---
-title: 同期状態
+title: SYNCSTATE
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,9 +15,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804093"
 ---
-# <a name="syncstate"></a>同期状態
+# <a name="syncstate"></a>SYNCSTATE
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 この構造体は、レプリケーションの状態機械の状態を定義します。
   
@@ -44,6 +44,6 @@ typedef enum {
 ## <a name="see-also"></a>関連項目
 
 - [レプリケーション API について](about-the-replication-api.md)
-- [レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
 - [MAPI �萔](mapi-constants.md)
 

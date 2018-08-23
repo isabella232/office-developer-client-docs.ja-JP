@@ -1,5 +1,5 @@
 ---
-title: テキストを同期して、書式設定
+title: テキストと書式設定の同期
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: d7e166f0-1214-4571-b9a8-366960772a7a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 40d7a45ab97e0d2f8e9d3db1e1d38eb3bdb75158
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804087"
 ---
-# <a name="synchronizing-text-and-formatting"></a>テキストを同期して、書式設定
+# <a name="synchronizing-text-and-formatting"></a>テキストと書式設定の同期
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 リッチ テキスト形式 (RTF) メッセージを送信する主な課題には、テキストの書式設定と同期し続けることです。 されることを確認メッセージが送信先に到着すると、発信者の意図とすると、テキストと書式設定の同期はを MAPI に[行う](rtfsync.md)機能が用意されています。 **** 通常と呼ばれる受信したメッセージを表示する前に、rtf 形式に対応していないクライアントと、MAPI スプーラーによってトランスポート プロバイダーにメッセージをダウンロードする際です。 呼び出しを**行う**1 つまたは 2 つのフラグを渡すことによって可能な不一致の領域を指定します。
   

@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 642a678b-4bf2-4246-85cb-c798de23e36f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 462ee84d5e9acd26f80bae6516179f21651749be
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19804041"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 COM で導入されたストレージの階層的な組織には、構造化ストレージ 構造化ストレージ環境でのオブジェクトの 2 つまたは 3 つのタイプにストレージが構成されています。 
   

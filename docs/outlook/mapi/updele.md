@@ -17,7 +17,7 @@ ms.locfileid: "19804172"
 ---
 # <a name="updele"></a>UPDELE
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ローカル ストアで削除済みアイテムの情報を拡張します。 [アップロード ステータスの状態を削除](upload-delete-status-state.md)する時にこの情報が使用されます。
   
@@ -36,7 +36,7 @@ struct UPDELE
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 _ulFlags_
   
@@ -93,7 +93,7 @@ _pupmov_
 ## <a name="see-also"></a>関連項目
 
 - [レプリケーション API について](about-the-replication-api.md) 
-- [レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
 - [MAPI �萔](mapi-constants.md)
 - [SKEY](skey.md)
 - [UPDEL](updel.md)

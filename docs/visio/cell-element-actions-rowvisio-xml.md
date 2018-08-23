@@ -22,7 +22,7 @@ ms.locfileid: "19804932"
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |ページ # .xml、masters.xml、マスターの # .xml、pages.xml  <br/> |
@@ -42,7 +42,7 @@ ms.locfileid: "19804932"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[行要素 ([Actions] セクション)](row-element-actions-sectionvisio-xml.md) <br/> |[ActionsRow_Type](actionsrow_type-complextypevisio-xml.md) <br/> |カスタム メニューのコマンドをショートカット メニューまたは操作タグに関連付けられているアクションの 1 つのプロパティを指定します。  <br/> |
+|[Row 要素 ([操作] セクション)](row-element-actions-sectionvisio-xml.md) <br/> |[ActionsRow_Type](actionsrow_type-complextypevisio-xml.md) <br/> |カスタム メニューのコマンドをショートカット メニューまたは操作タグに関連付けられているアクションの 1 つのプロパティを指定します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -54,24 +54,24 @@ ms.locfileid: "19804932"
 
 |**属性**|**型**|**必須**|**説明**|**使用可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|DurationFormat 要素  <br/> |xsd:string  <br/> |省略可能  <br/> |数式がエラーが発生することを示します。 **E**の値は、現在の値 (エラー メッセージの文字列) です。**V**属性の値は、最後の有効な値です。  <br/> |エラー メッセージの文字列です。  <br/> |
+|E  <br/> |xsd:string  <br/> |省略可能  <br/> |数式がエラーが発生することを示します。 **E**の値は、現在の値 (エラー メッセージの文字列) です。**V**属性の値は、最後の有効な値です。  <br/> |エラー メッセージの文字列です。  <br/> |
 |ExternalTaskProject 要素  <br/> |xsd:string  <br/> |省略可能  <br/> | 要素の式を表します。 この属性は、次の文字列のいずれかを含めることができます。  <br/>  '(いくつかの数式)' の数式がローカルに存在する場合  <br/>  `No Formula`数式がローカルで削除されるか、ブロックされている場合  <br/>  `Inh`場合は、数式が継承されます。  <br/> |数式です。  <br/> |
-|MultipleCriticalPaths 要素  <br/> |xsd:string  <br/> |必須  <br/> |シェイプ シート セルの名前を表します。  <br/> |シェイプ シート セルの名前です。  <br/> 以下の「解説」セクションを参照してください。  <br/> |
+|N  <br/> |xsd:string  <br/> |必須  <br/> |シェイプ シート セルの名前を表します。  <br/> |シェイプ シート セルの名前です。  <br/> 以下の「解説」セクションを参照してください。  <br/> |
 |U  <br/> |xsd:string  <br/> |省略可能  <br/> |既定の測定単位を表しますが、DL です。  <br/> |セルの単位です。  <br/> |
 |V  <br/> |xsd:string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプ シート セルの値です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この**セル**要素の**N**属性は、限られた一連のシェイプ シートのセルに対応する値のいずれかである必要があります。 この**セル**要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   
-|**値**|**説明**|**詳細については**|
+|**値**|**説明**|**詳細情報**|
 |:-----|:-----|:-----|
 |アクション  <br/> |ショートカット メニューまたはアクション タグ メニューのコマンドを選択したときに実行される数式が格納されています。  <br/> |[[Action] セル ([Actions] セクション)](action-cell-actions-section.md) <br/> |
 |BeginGroup  <br/> |このアクションのメニューに区切り記号を挿入するかどうかを示します。  <br/> |[[BeginGroup] セル ([Actions] セクション)](begingroup-cell-actions-section.md) <br/> |
 |ButtonFace  <br/> |ショートカット メニューまたはアクション タグ メニューで、項目の横に表示されるアイコンを指定します。  <br/> |[[ButtonFace] セル ([Actions] セクション)](buttonface-cell-actions-section.md) <br/> |
 |オン  <br/> |ショートカット メニューまたはアクション タグ メニューで項目がチェックされているかどうかを示します。  <br/> |[[Checked] セル ([Actions] セクション)](checked-cell-actions-section.md) <br/> |
-|無効  <br/> |ショートカット メニューまたはアクション タグ メニューの項目が使用不可であるかどうかを示します。  <br/> |[[Disabled] セル ([Actions] セクション)](disabled-cell-actions-section.md) <br/> |
-|FlyoutChild  <br/> |行が、サブ項目の子ではない行の上の最終行の子サブ項目メニューかどうかを指定します。  <br/> |[FlyoutChild セル ([Actions] セクション)](flyoutchild-cell-actions-section.md) <br/> |
+|Disabled  <br/> |ショートカット メニューまたはアクション タグ メニューの項目が使用不可であるかどうかを示します。  <br/> |[[Disabled] セル ([Actions] セクション)](disabled-cell-actions-section.md) <br/> |
+|FlyoutChild  <br/> |行が、サブ項目の子ではない行の上の最終行の子サブ項目メニューかどうかを指定します。  <br/> |[[FlyoutChild] セル ([操作] セクション)](flyoutchild-cell-actions-section.md) <br/> |
 |非表示  <br/> |アクション タグ メニューまたはショートカット メニューに、アクションを表示するかどうかを示します。  <br/> |[[Invisible] セル ([Actions] セクション)](invisible-cell-actions-section.md) <br/> |
 |Menu  <br/> |図形またはページに対するショートカット メニューまたはアクション タグ メニューに表示するメニュー項目の名前を定義します。  <br/> |[[Menu] セル ([Actions] セクション)](menu-cell-actions-section.md) <br/> |
 |ReadOnly  <br/> |ショートカット メニューまたはアクション タグ メニューのアクションを読み取り専用にするかどうかを制御します。  <br/> |[[ReadOnly] セル ([Actions] セクション)](readonly-cell-actions-section.md) <br/> |

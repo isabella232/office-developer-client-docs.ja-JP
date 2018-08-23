@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 240f1144-0805-4cd1-9e7d-f2a550a2f160
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: bc00270b167c9f7317fa466d790d5020d961676f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804151"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 1 つのプロパティの値のサイズを返します。 
   
@@ -39,7 +39,7 @@ ULONG UlPropSize(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpSPropValue_
   
@@ -55,7 +55,7 @@ MAPI_E_CALL_FAILED
   
 > 予期しない、または不明な発生元のエラーでは、操作を完了できませんでした。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **UlPropSize**関数は、指定されたプロパティのプロパティ値のバイト単位のサイズを返します。 **SPropValue**構造体の残りの部分のサイズを無視します。 
   

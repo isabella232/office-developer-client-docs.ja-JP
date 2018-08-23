@@ -1,5 +1,5 @@
 ---
-title: 展開をテスト
+title: 展開のテスト
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804476"
 ---
-# <a name="testing-deployment"></a>展開をテスト
+# <a name="testing-deployment"></a>展開のテスト
 
 このトピックをインストールして、Outlook ソーシャル コネクタ (OSC) プロバイダーをアンインストールに関するテストをするいくつかのシナリオについて説明します。
 

@@ -22,7 +22,7 @@ DocumentSheet 構造体を指定します。
 
 |||
 |:-----|:-----|
-|**要素の型** <br/> |[DocumentSheet_Type](documentsheet_type-complextypevisio-xml.md) <br/> |
+|**要素の種類** <br/> |[DocumentSheet_Type](documentsheet_type-complextypevisio-xml.md) <br/> |
 |**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
@@ -58,6 +58,6 @@ DocumentSheet 構造体を指定します。
 |IsCustomNameU  <br/> |xsd:boolean  <br/> |省略可能  <br/> |汎用名がユーザーによってカスタマイズされているかどうかについて説明します。  <br/> |Xsd:Boolean の値を入力します。  <br/> |
 |名前  <br/> |xsd:string  <br/> |省略可能  <br/> |DocumentSheet の言語に依存する名前を指定します。  <br/> |Xsd:string の値を入力します。  <br/> |
 |NameU  <br/> |xsd:string  <br/> |省略可能  <br/> |DocumentSheet の言語に依存しない名前を指定します。  <br/> |Xsd:string の値を入力します。  <br/> |
-|UniqueID  <br/> |xsd:string  <br/> |省略可能  <br/> |省略可能です。 図形を識別する GUID (グローバルに一意の識別子)。  <br/> |Xsd:string の値を入力します。  <br/> |
+|UniqueID  <br/> |xsd:string  <br/> |省略可能  <br/> |オプションの string。 図形を識別する GUID (グローバルに一意の識別子)。  <br/> |Xsd:string の値を入力します。  <br/> |
    
 

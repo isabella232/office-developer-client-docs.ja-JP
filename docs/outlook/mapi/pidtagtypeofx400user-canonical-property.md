@@ -1,5 +1,5 @@
 ---
-title: PidTagTypeOfX400User の標準的なプロパティ
+title: PidTagTypeOfX400User 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1351ec3c-984d-4b3e-8009-7c39f18d71a5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 85c14f635872aab2e4c9cc648939bc352cf4a015
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,19 +19,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803651"
 ---
-# <a name="pidtagtypeofx400user-canonical-property"></a>PidTagTypeOfX400User の標準的なプロパティ
+# <a name="pidtagtypeofx400user-canonical-property"></a>PidTagTypeOfX400User 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このプロパティには、レポートで使用するためのメッセージの受信者の種類が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_TYPE_OF_MTS_USER  <br/> |
+|関連するプロパティ:  <br/> |PR_TYPE_OF_MTS_USER  <br/> |
 |識別子:  <br/> |0x0C1C  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |MAPI 受信者  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -54,7 +54,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

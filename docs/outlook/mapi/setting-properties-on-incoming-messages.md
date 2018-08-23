@@ -1,5 +1,5 @@
 ---
-title: 受信メッセージのプロパティの設定
+title: 受信メッセージに対するプロパティの設定
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: cf4a0501-f42b-4652-a239-003022686475
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: f6233afffd532c420ae170ae45b1bf93d6571865
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803914"
 ---
-# <a name="setting-properties-on-incoming-messages"></a>受信メッセージのプロパティの設定
+# <a name="setting-properties-on-incoming-messages"></a>受信メッセージに対するプロパティの設定
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI サブシステム内のクライアント アプリケーションは、受信したメッセージのプロパティの数を期待しています。 トランスポート プロバイダーは、MAPI メッセージが表示するとき、にこれらのプロパティを設定して、ためには、必要な情報のみ、プロセスは、情報の最適なソースでは、少なくとも、または後必要があります。
   

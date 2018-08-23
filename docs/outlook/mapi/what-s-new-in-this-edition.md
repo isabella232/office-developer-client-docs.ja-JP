@@ -19,7 +19,7 @@ ms.locfileid: "19804213"
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 さまざまな新機能のマニュアルを含めるため、Microsoft Outlook 2013 MAPI の参照が更新されました。 
   
@@ -31,7 +31,7 @@ ms.locfileid: "19804213"
     
   - [Outlook MAPI リファレンス](outlook-mapi-reference.md)
     
-  - [Outlook MAPI ���t�@�����X�̊T�v](outlook-mapi-reference-overview.md)
+  - [Outlook MAPI リファレンス概要](outlook-mapi-reference-overview.md)
     
 - **メッセージ ストア プロバイダーの例**などを認識し、Outlook 2013 に対応する[PST ストア プロバイダーのラップのサンプル](message-store-provider-sample.md)コードが変更されたようになりました。 詳細については、このトピックで以前修正されたコンテンツを参照してください。 
     
@@ -39,7 +39,7 @@ ms.locfileid: "19804213"
     
   - [MAPI プロファイル](mapi-profiles.md)
     
-  - [ニックネームのキャッシュ](nickname-cache.md)
+  - [ニックネーム キャッシュ](nickname-cache.md)
     
   - [オートコンプリート ストリーム](autocomplete-stream.md)
     
@@ -47,13 +47,13 @@ ms.locfileid: "19804213"
     
 - **プロパティ**-プロパティ ([PidTagConversationKey の標準的なプロパティ](pidtagconversationkey-canonical-property.md)のトピックを名前付きの**PR_CONVERSATION_KEY**が追加され、IPM の**に関連しています。MessageManager** Outlook MAPI でのメッセージのみです。 トランスポート ニュートラル カプセル化形式 (TNEF) ストリームのドキュメントに関連する次のトピックが更新されています。 
     
-  - [MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+  - [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
     
-  - [MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+  - [MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
     
-  - [TNEF の MAPI プロパティの属性のマッピング](mapping-of-tnef-attributes-to-mapi-properties.md)
+  - [TNEF の属性から MAPI プロパティへのマッピング](mapping-of-tnef-attributes-to-mapi-properties.md)
     
-  - [attConversationID と attParentID](attconversationid-and-attparentid.md)
+  - [attConversationID and attParentID](attconversationid-and-attparentid.md)
     
 ## <a name="previously-revised-content"></a>以前の改訂内容
 
@@ -111,7 +111,7 @@ ms.locfileid: "19804213"
 
 
 
-[Outlook �� MAPI �Q�Ƃ̎g�p��J�n���܂��B](getting-started-with-the-outlook-mapi-reference.md)
+[Outlook MAPI リファレンスの概要](getting-started-with-the-outlook-mapi-reference.md)
   
 [CodePlex](http://mapistublibrary.codeplex.com/)
 

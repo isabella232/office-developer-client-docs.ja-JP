@@ -19,7 +19,7 @@ ms.locfileid: "19804188"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [アップロード ステータスの状態を読み取り](upload-read-status-state.md)中にはアイテムの読み取り状態をアップロードする方法の詳細については。
   
@@ -33,7 +33,7 @@ struct UPREAD
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  _pupre_
   
@@ -49,7 +49,7 @@ struct UPREAD
 
 [レプリケーション API について](about-the-replication-api.md)
   
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [MAPI �萔](mapi-constants.md)
   

@@ -5,7 +5,7 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: ab677a06-6d7d-47e7-99ea-535b0b24389a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 289227ee171c2325cad0ed321dab4f635a0ca724
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,7 +15,7 @@ ms.locfileid: "19803713"
 ---
 # <a name="propertydefinition-stream-structure"></a>PropertyDefinition ストリームの構造
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 PropertyDefinition ストリームの構造体は、Microsoft Outlook アイテム内のすべてのユーザー定義フィールドの定義で、いくつかの組み込みのフィールドのデータ バインディングの設定を含む[FieldDefinition](fielddefinition-stream-structure.md)ストリームの構造体の配列です。 
   
@@ -38,8 +38,8 @@ PropertyDefinition ストリームの構造体のフィールド定義には、2
     
 ## <a name="see-also"></a>関連項目
 
-- [Outlook アイテムおよびフィールド](outlook-items-and-fields.md)
-- [新しいユーザー定義フィールドの定義を追加します。](how-to-add-a-definition-for-a-new-user-defined-field.md)
+- [Outlook のアイテムとフィールド](outlook-items-and-fields.md)
+- [新しいユーザー定義フィールドの定義を追加する](how-to-add-a-definition-for-a-new-user-defined-field.md)
 - [PropertyDefinition ストリームのサンプル](propertydefinition-stream-sample.md)
 - [ストリームの構造](stream-structures.md)
 

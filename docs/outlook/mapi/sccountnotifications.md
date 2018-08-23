@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 13e80bdc-cb59-47a5-8de0-404e22f87f82
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c27472a309c26882051744a23fbe05e41c36aa3f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19803837"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 イベント通知では、配列のバイト単位のサイズを決定し、配列に関連付けられているメモリを確認します。
   
@@ -41,7 +41,7 @@ SCODE ScCountNotifications(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cntf_
   
@@ -65,7 +65,7 @@ MAPI_E_INVALID_PARAMETER
   
 > 無効な通知が発生しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 _Pcb_のパラメーターに NULL が渡されると、 **ScCountNotifications**関数は、さまざまな通知だけを検証が、カウントは行われません。**ScCountNotifications**が配列のサイズを決定し、原因を格納する_pcb_の null 以外の値が渡された場合_pcb_です。 _Pcb_のパラメーターは、配列全体を格納できる大きさである必要があります。 
   

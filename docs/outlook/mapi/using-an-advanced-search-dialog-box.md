@@ -1,5 +1,5 @@
 ---
-title: 高度な検索のダイアログ ボックスを使用します。
+title: '[高度な検索] ダイアログ ボックスの使用'
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804201"
 ---
-# <a name="using-an-advanced-search-dialog-box"></a>高度な検索のダイアログ ボックスを使用します。
+# <a name="using-an-advanced-search-dialog-box"></a>[高度な検索] ダイアログ ボックスの使用
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 いくつかのアドレス帳コンテナーは、クライアントの**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) 以外のプロパティで検索できるようにする、高度な検索機能をサポートします。 高度な検索をサポートしているアドレス帳コンテナーには、 **PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md)) と呼ばれるコンテナー オブジェクト プロパティが設定されています。 このコンテナー オブジェクトは、[検索] ダイアログ ボックスを説明する表示のテーブルへのアクセスを提供: ダイアログ ボックスを入力し、高度な検索条件を編集するために使用します。
   

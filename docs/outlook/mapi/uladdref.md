@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9b897cbc-90b2-4c60-b5f1-dc78e7e7952d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fc6c12d914e581c3f975e94809f0bdea73020099
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19804146"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 OLE メソッド**IUnknown::AddRef**を起動する別の方法を提供します。 
   
@@ -39,7 +39,7 @@ ULONG UlAddRef(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _パンク_
   
@@ -55,7 +55,7 @@ MAPI_E_CALL_FAILED
   
 > 予期しない、または不明な発生元のエラーでは、操作を完了できませんでした。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
  **UlAddRef**は、インターフェイスの参照カウントの新しい値では、 **IUnknown::AddRef**メソッドによって返される値を返します。 値は、0 以外の値です。 
   

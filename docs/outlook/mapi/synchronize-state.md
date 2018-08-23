@@ -1,11 +1,11 @@
 ---
-title: 状態を同期します。
+title: 同期状態
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 270ff414-514c-b1fc-db48-761bf6de8867
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 36bdeecfaaa94492b1e719dbd1cf455bfa40db47
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804075"
 ---
-# <a name="synchronize-state"></a>状態を同期します。
+# <a name="synchronize-state"></a>同期状態
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  このトピックでは、レプリケーションの状態マシンの同期状態中の動作について説明します。 
   
@@ -26,7 +26,7 @@ ms.locfileid: "19804075"
 |||
 |:-----|:-----|
 |状態識別子。  <br/> |**LR_SYNC** <br/> |
-|関連するデータ構造体。  <br/> |**[同期](sync.md)** <br/> |
+|関連するデータ構造体。  <br/> |**[SYNC](sync.md)** <br/> |
 |この状態。  <br/> |[アイドル状態](idle-state.md) <br/> |
 |この状態。  <br/> |[階層の状態をダウンロード](download-hierarchy-state.md)[内容の状態を同期](synchronize-contents-state.md)[階層の状態をアップロード](upload-hierarchy-state.md)、またはアイドル状態  <br/> |
    
@@ -49,7 +49,7 @@ ms.locfileid: "19804075"
   
 [MAPI �萔](mapi-constants.md)
   
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [同期状態](syncstate.md)
 

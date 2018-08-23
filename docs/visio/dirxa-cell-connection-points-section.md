@@ -16,19 +16,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805246"
 ---
-# <a name="dirx--a-cell-connection-points-section"></a>[DirX / A] セル ([Connection Points] セクション)
+# <a name="dirx--a-cell-connection-points-section"></a>[DirX / A] セル ([接続ポイント] セクション)
 
 *X*を決定に対応する接続ポイントの必要な整列ベクトルのコンポーネントです。 DirX/動的コネクタに付いている足の方向を設定するセルを使用しても。 このセルでは浮動小数点値です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-DirX への参照を取得するのには**CellsU**プロパティを使用を使用して別の数式からまたはプログラムの名前のセルとします。 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [DirX / A] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 | セル名:  <br/> | Connections.DirX [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
    
-DirX への参照を取得するのには、プログラムから、インデックスによってセルが次の引数で**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [DirX / A] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
