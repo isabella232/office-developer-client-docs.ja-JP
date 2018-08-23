@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 845140c8-5454-4b47-acec-ab5aff00b768
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f7b273be8c123bd9fb9daf7993720cb36a9cbf35
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: dbc575345ba2e707dd64e35c11f00a08113f5eee
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802504"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571214"
 ---
 # <a name="pidtagautoconfigurationuseremail-canonical-property"></a>PidTagAutoConfigurationUserEmail 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ユーザーの電子メール アドレスを表します。
   
