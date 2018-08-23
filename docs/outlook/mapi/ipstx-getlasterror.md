@@ -19,13 +19,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801199"
 ---
-# <a name="ipstxgetlasterror"></a><span data-ttu-id="48218-103">IPSTX::GetLastError</span><span class="sxs-lookup"><span data-stu-id="48218-103">IPSTX::GetLastError</span></span>
+# <a name="ipstxgetlasterror"></a><span data-ttu-id="0d982-103">IPSTX::GetLastError</span><span class="sxs-lookup"><span data-stu-id="0d982-103">IPSTX::GetLastError</span></span>
 
   
   
-<span data-ttu-id="48218-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="48218-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="0d982-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="0d982-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="48218-105">最後のエラーに関する情報を拡張します。</span><span class="sxs-lookup"><span data-stu-id="48218-105">Gets extended information about the last error.</span></span>
+<span data-ttu-id="0d982-105">最後のエラーに関する情報を拡張します。</span><span class="sxs-lookup"><span data-stu-id="0d982-105">Gets extended information about the last error.</span></span>
   
 ```cpp
 HRESULT GetLastError( 
@@ -35,25 +35,25 @@ HRESULT GetLastError(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="48218-106">Parameters</span><span class="sxs-lookup"><span data-stu-id="48218-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="0d982-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d982-106">Parameters</span></span>
 
- <span data-ttu-id="48218-107">_hResult_</span><span class="sxs-lookup"><span data-stu-id="48218-107">_hResult_</span></span>
+ <span data-ttu-id="0d982-107">_hResult_</span><span class="sxs-lookup"><span data-stu-id="0d982-107">_hResult_</span></span>
   
->  <span data-ttu-id="48218-108">[in]エラー コードです。</span><span class="sxs-lookup"><span data-stu-id="48218-108">[in] Error code.</span></span> 
+>  <span data-ttu-id="0d982-108">[in]エラー コードです。</span><span class="sxs-lookup"><span data-stu-id="0d982-108">[in] Error code.</span></span> 
     
- <span data-ttu-id="48218-109">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="48218-109">_ulFlags_</span></span>
+ <span data-ttu-id="0d982-109">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="0d982-109">_ulFlags_</span></span>
   
->  <span data-ttu-id="48218-110">[in]動作を変更するフラグです。</span><span class="sxs-lookup"><span data-stu-id="48218-110">[in] Flags to modify behavior.</span></span> <span data-ttu-id="48218-111">0 でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="48218-111">This must be 0.</span></span> 
+>  <span data-ttu-id="0d982-110">[in]動作を変更するフラグです。</span><span class="sxs-lookup"><span data-stu-id="0d982-110">[in] Flags to modify behavior.</span></span> <span data-ttu-id="0d982-111">0 でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="0d982-111">This must be 0.</span></span> 
     
- <span data-ttu-id="48218-112">_lppMAPIError_</span><span class="sxs-lookup"><span data-stu-id="48218-112">_lppMAPIError_</span></span>
+ <span data-ttu-id="0d982-112">_lppMAPIError_</span><span class="sxs-lookup"><span data-stu-id="0d982-112">_lppMAPIError_</span></span>
   
->  <span data-ttu-id="48218-113">[out]エラーに関する拡張情報を格納する**MAPIERROR**構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="48218-113">[out] Pointer to the **MAPIERROR** structure that contains the extended information for the error.</span></span> <span data-ttu-id="48218-114">**LPMAPIERROR**の型の定義の mapidefs.h を参照してください。</span><span class="sxs-lookup"><span data-stu-id="48218-114">See mapidefs.h for the type definition of **LPMAPIERROR**.</span></span> 
+>  <span data-ttu-id="0d982-113">[out]エラーに関する拡張情報を格納する**MAPIERROR**構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="0d982-113">[out] Pointer to the **MAPIERROR** structure that contains the extended information for the error.</span></span> <span data-ttu-id="0d982-114">**LPMAPIERROR**の型の定義の mapidefs.h を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0d982-114">See mapidefs.h for the type definition of **LPMAPIERROR**.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="48218-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="48218-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0d982-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="0d982-115">See also</span></span>
 
 
 
-[<span data-ttu-id="48218-116">IPSTX::EmulateSpooler</span><span class="sxs-lookup"><span data-stu-id="48218-116">IPSTX::EmulateSpooler</span></span>](ipstx-emulatespooler.md)
+[<span data-ttu-id="0d982-116">IPSTX::EmulateSpooler</span><span class="sxs-lookup"><span data-stu-id="0d982-116">IPSTX::EmulateSpooler</span></span>](ipstx-emulatespooler.md)
   
-[<span data-ttu-id="48218-117">IPSTX::GetSyncObject</span><span class="sxs-lookup"><span data-stu-id="48218-117">IPSTX::GetSyncObject</span></span>](ipstx-getsyncobject.md)
+[<span data-ttu-id="0d982-117">IPSTX::GetSyncObject</span><span class="sxs-lookup"><span data-stu-id="0d982-117">IPSTX::GetSyncObject</span></span>](ipstx-getsyncobject.md)
 

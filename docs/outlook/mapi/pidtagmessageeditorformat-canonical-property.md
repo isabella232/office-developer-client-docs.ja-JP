@@ -1,5 +1,5 @@
 ---
-title: PidTagMessageEditorFormat の標準的なプロパティ
+title: PidTagMessageEditorFormat 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 197b21ed-9f2f-425f-a6ed-cae1208fa2ca
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a6a3eb88377777a3d27687179bfdcb82057be3a9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,75 +19,75 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802988"
 ---
-# <a name="pidtagmessageeditorformat-canonical-property"></a><span data-ttu-id="752a9-103">PidTagMessageEditorFormat の標準的なプロパティ</span><span class="sxs-lookup"><span data-stu-id="752a9-103">PidTagMessageEditorFormat Canonical Property</span></span>
+# <a name="pidtagmessageeditorformat-canonical-property"></a><span data-ttu-id="6ab40-103">PidTagMessageEditorFormat 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="6ab40-103">PidTagMessageEditorFormat Canonical Property</span></span>
 
   
   
-<span data-ttu-id="752a9-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="752a9-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="6ab40-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="6ab40-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="752a9-105">エディターを使用してメッセージを表示する形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="752a9-105">Specifies the format for an editor to use to display a message.</span></span>
+<span data-ttu-id="6ab40-105">エディターを使用してメッセージを表示する形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="6ab40-105">Specifies the format for an editor to use to display a message.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="752a9-106">関連するプロパティ。</span><span class="sxs-lookup"><span data-stu-id="752a9-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="752a9-107">PR_MSG_EDITOR_FORMAT</span><span class="sxs-lookup"><span data-stu-id="752a9-107">PR_MSG_EDITOR_FORMAT</span></span>  <br/> |
-|<span data-ttu-id="752a9-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="752a9-108">Identifier:</span></span>  <br/> |<span data-ttu-id="752a9-109">0x5909</span><span class="sxs-lookup"><span data-stu-id="752a9-109">0x5909</span></span>  <br/> |
-|<span data-ttu-id="752a9-110">データを入力します。</span><span class="sxs-lookup"><span data-stu-id="752a9-110">Data type:</span></span>  <br/> |<span data-ttu-id="752a9-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="752a9-111">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="752a9-112">領域:</span><span class="sxs-lookup"><span data-stu-id="752a9-112">Area:</span></span>  <br/> |<span data-ttu-id="752a9-113">その他</span><span class="sxs-lookup"><span data-stu-id="752a9-113">Miscellaneous</span></span>  <br/> |
+|<span data-ttu-id="6ab40-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="6ab40-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="6ab40-107">PR_MSG_EDITOR_FORMAT</span><span class="sxs-lookup"><span data-stu-id="6ab40-107">PR_MSG_EDITOR_FORMAT</span></span>  <br/> |
+|<span data-ttu-id="6ab40-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="6ab40-108">Identifier:</span></span>  <br/> |<span data-ttu-id="6ab40-109">0x5909</span><span class="sxs-lookup"><span data-stu-id="6ab40-109">0x5909</span></span>  <br/> |
+|<span data-ttu-id="6ab40-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="6ab40-110">Data type:</span></span>  <br/> |<span data-ttu-id="6ab40-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="6ab40-111">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="6ab40-112">領域:</span><span class="sxs-lookup"><span data-stu-id="6ab40-112">Area:</span></span>  <br/> |<span data-ttu-id="6ab40-113">その他</span><span class="sxs-lookup"><span data-stu-id="6ab40-113">Miscellaneous</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="752a9-114">備考</span><span class="sxs-lookup"><span data-stu-id="752a9-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6ab40-114">注釈</span><span class="sxs-lookup"><span data-stu-id="6ab40-114">Remarks</span></span>
 
-<span data-ttu-id="752a9-115">**PR_MSG_EDITOR_FORMAT**の有効な値には、次のいずれかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="752a9-115">The possible values for **PR_MSG_EDITOR_FORMAT** can be one of the following:</span></span> 
+<span data-ttu-id="6ab40-115">**PR_MSG_EDITOR_FORMAT**の有効な値には、次のいずれかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="6ab40-115">The possible values for **PR_MSG_EDITOR_FORMAT** can be one of the following:</span></span> 
   
-|<span data-ttu-id="752a9-116">**値**</span><span class="sxs-lookup"><span data-stu-id="752a9-116">**Value**</span></span>|<span data-ttu-id="752a9-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="752a9-117">**Description**</span></span>|
+|<span data-ttu-id="6ab40-116">**値**</span><span class="sxs-lookup"><span data-stu-id="6ab40-116">**Value**</span></span>|<span data-ttu-id="6ab40-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="6ab40-117">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="752a9-118">**EDITOR_FORMAT_DONTKNOW**</span><span class="sxs-lookup"><span data-stu-id="752a9-118">**EDITOR_FORMAT_DONTKNOW**</span></span> <br/> |<span data-ttu-id="752a9-119">使用するエディターの形式が不明です。</span><span class="sxs-lookup"><span data-stu-id="752a9-119">The format for the editor to use is unknown.</span></span>  <br/> |
-|<span data-ttu-id="752a9-120">**EDITOR_FORMAT_PLAINTEXT**</span><span class="sxs-lookup"><span data-stu-id="752a9-120">**EDITOR_FORMAT_PLAINTEXT**</span></span> <br/> |<span data-ttu-id="752a9-121">エディターは、テキスト形式でメッセージを表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="752a9-121">The editor should display the message in plain text format.</span></span>  <br/> |
-|<span data-ttu-id="752a9-122">**EDITOR_FORMAT_HTML**</span><span class="sxs-lookup"><span data-stu-id="752a9-122">**EDITOR_FORMAT_HTML**</span></span> <br/> |<span data-ttu-id="752a9-123">エディターは、HTML 形式でメッセージを表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="752a9-123">The editor should display the message in HTML format.</span></span>  <br/> |
-|<span data-ttu-id="752a9-124">**EDITOR_FORMAT_RTF**</span><span class="sxs-lookup"><span data-stu-id="752a9-124">**EDITOR_FORMAT_RTF**</span></span> <br/> |<span data-ttu-id="752a9-125">エディターでは、リッチ テキスト形式でメッセージを表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="752a9-125">The editor should display the message in Rich Text Format.</span></span>  <br/> |
+|<span data-ttu-id="6ab40-118">**EDITOR_FORMAT_DONTKNOW**</span><span class="sxs-lookup"><span data-stu-id="6ab40-118">**EDITOR_FORMAT_DONTKNOW**</span></span> <br/> |<span data-ttu-id="6ab40-119">使用するエディターの形式が不明です。</span><span class="sxs-lookup"><span data-stu-id="6ab40-119">The format for the editor to use is unknown.</span></span>  <br/> |
+|<span data-ttu-id="6ab40-120">**EDITOR_FORMAT_PLAINTEXT**</span><span class="sxs-lookup"><span data-stu-id="6ab40-120">**EDITOR_FORMAT_PLAINTEXT**</span></span> <br/> |<span data-ttu-id="6ab40-121">エディターは、テキスト形式でメッセージを表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6ab40-121">The editor should display the message in plain text format.</span></span>  <br/> |
+|<span data-ttu-id="6ab40-122">**EDITOR_FORMAT_HTML**</span><span class="sxs-lookup"><span data-stu-id="6ab40-122">**EDITOR_FORMAT_HTML**</span></span> <br/> |<span data-ttu-id="6ab40-123">エディターは、HTML 形式でメッセージを表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6ab40-123">The editor should display the message in HTML format.</span></span>  <br/> |
+|<span data-ttu-id="6ab40-124">**EDITOR_FORMAT_RTF**</span><span class="sxs-lookup"><span data-stu-id="6ab40-124">**EDITOR_FORMAT_RTF**</span></span> <br/> |<span data-ttu-id="6ab40-125">エディターでは、リッチ テキスト形式でメッセージを表示する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6ab40-125">The editor should display the message in Rich Text Format.</span></span>  <br/> |
    
-<span data-ttu-id="752a9-126">既定では、メールのメッセージ (メッセージ クラス IPM の**です。注**またはカスタム メッセージ クラスが IPM の**から派生します。注意してください**) 送信される POP3 または SMTP メールのアカウントはトランスポート ニュートラル カプセル化形式 (TNEF) で送信されます。</span><span class="sxs-lookup"><span data-stu-id="752a9-126">By default, mail messages (with the message class **IPM.Note** or with a custom message class derived from **IPM.Note**) sent from a POP3/SMTP mail account are sent in the Transport Neutral Encapsulation Format (TNEF).</span></span> <span data-ttu-id="752a9-127">メッセージを送信するときに、プレーン テキストと、TNEF ではないだけを適用するのには、 **PR_MSG_EDITOR_FORMAT**プロパティを使用できます。</span><span class="sxs-lookup"><span data-stu-id="752a9-127">The **PR_MSG_EDITOR_FORMAT** property can be used to enforce only plain text, and not TNEF, when sending a message.</span></span> <span data-ttu-id="752a9-128">**PR_MSG_EDITOR_FORMAT**は、 **EDITOR_FORMAT_PLAINTEXT**に設定されている場合は、メッセージが TNEF なしのテキストとして送信されます。</span><span class="sxs-lookup"><span data-stu-id="752a9-128">If **PR_MSG_EDITOR_FORMAT** is set to **EDITOR_FORMAT_PLAINTEXT**, the message is sent as plain text without TNEF.</span></span> <span data-ttu-id="752a9-129">**PR_MSG_EDITOR_FORMAT**は、 **EDITOR_FORMAT_RTF**に設定されている場合は、TNEF エンコードは暗黙的に有効になっていると Outlook クライアントで指定されている既定のインターネット メール形式を使用してメッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="752a9-129">If **PR_MSG_EDITOR_FORMAT** is set to **EDITOR_FORMAT_RTF**, TNEF encoding is implicitly enabled, and the message is sent by using the default Internet format that is specified in the Outlook client.</span></span>
+<span data-ttu-id="6ab40-126">既定では、メールのメッセージ (メッセージ クラス IPM の**です。注**またはカスタム メッセージ クラスが IPM の**から派生します。注意してください**) 送信される POP3 または SMTP メールのアカウントはトランスポート ニュートラル カプセル化形式 (TNEF) で送信されます。</span><span class="sxs-lookup"><span data-stu-id="6ab40-126">By default, mail messages (with the message class **IPM.Note** or with a custom message class derived from **IPM.Note**) sent from a POP3/SMTP mail account are sent in the Transport Neutral Encapsulation Format (TNEF).</span></span> <span data-ttu-id="6ab40-127">メッセージを送信するときに、プレーン テキストと、TNEF ではないだけを適用するのには、 **PR_MSG_EDITOR_FORMAT**プロパティを使用できます。</span><span class="sxs-lookup"><span data-stu-id="6ab40-127">The **PR_MSG_EDITOR_FORMAT** property can be used to enforce only plain text, and not TNEF, when sending a message.</span></span> <span data-ttu-id="6ab40-128">**PR_MSG_EDITOR_FORMAT**は、 **EDITOR_FORMAT_PLAINTEXT**に設定されている場合は、メッセージが TNEF なしのテキストとして送信されます。</span><span class="sxs-lookup"><span data-stu-id="6ab40-128">If **PR_MSG_EDITOR_FORMAT** is set to **EDITOR_FORMAT_PLAINTEXT**, the message is sent as plain text without TNEF.</span></span> <span data-ttu-id="6ab40-129">**PR_MSG_EDITOR_FORMAT**は、 **EDITOR_FORMAT_RTF**に設定されている場合は、TNEF エンコードは暗黙的に有効になっていると Outlook クライアントで指定されている既定のインターネット メール形式を使用してメッセージを送信します。</span><span class="sxs-lookup"><span data-stu-id="6ab40-129">If **PR_MSG_EDITOR_FORMAT** is set to **EDITOR_FORMAT_RTF**, TNEF encoding is implicitly enabled, and the message is sent by using the default Internet format that is specified in the Outlook client.</span></span>
   
-<span data-ttu-id="752a9-130">メッセージを送信するときは、TNEF の使用を強制する他の 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="752a9-130">There are two other ways to enforce the use of TNEF when sending a message.</span></span>
+<span data-ttu-id="6ab40-130">メッセージを送信するときは、TNEF の使用を強制する他の 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="6ab40-130">There are two other ways to enforce the use of TNEF when sending a message.</span></span>
   
-- <span data-ttu-id="752a9-131">**DispidUseTNEF** ([PidLidUseTnef](pidlidusetnef-canonical-property.md)) という名前のプロパティをメッセージに True を設定するには、MAPI から MIME と SMTP メッセージに変換するときは、TNEF を付属する必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="752a9-131">Setting the **dispidUseTNEF** ([PidLidUseTnef](pidlidusetnef-canonical-property.md)) named property to True on a message indicates TNEF should be included when converting the message from MAPI to MIME/SMTP.</span></span> <span data-ttu-id="752a9-132">その**dispidUseTNEF**は、メッセージは、POP3 または SMTP のメール アカウントから送信され、Microsoft Exchange Server など、他のプロバイダーによって、メッセージが送信されるときは適用されませんがある場合にのみ適用されますに注意してください。</span><span class="sxs-lookup"><span data-stu-id="752a9-132">Note that **dispidUseTNEF** only applies when the message is sent from a POP3/SMTP mail account, and does not apply when the message is sent by other providers, such as Microsoft Exchange Server.</span></span> <span data-ttu-id="752a9-133">**dispidUseTNEF**は、 **PR_MSG_EDITOR_FORMAT**の設定を上書きします。</span><span class="sxs-lookup"><span data-stu-id="752a9-133">**dispidUseTNEF** overrides the setting in **PR_MSG_EDITOR_FORMAT**.</span></span>
+- <span data-ttu-id="6ab40-131">**DispidUseTNEF** ([PidLidUseTnef](pidlidusetnef-canonical-property.md)) という名前のプロパティをメッセージに True を設定するには、MAPI から MIME と SMTP メッセージに変換するときは、TNEF を付属する必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="6ab40-131">Setting the **dispidUseTNEF** ([PidLidUseTnef](pidlidusetnef-canonical-property.md)) named property to True on a message indicates TNEF should be included when converting the message from MAPI to MIME/SMTP.</span></span> <span data-ttu-id="6ab40-132">その**dispidUseTNEF**は、メッセージは、POP3 または SMTP のメール アカウントから送信され、Microsoft Exchange Server など、他のプロバイダーによって、メッセージが送信されるときは適用されませんがある場合にのみ適用されますに注意してください。</span><span class="sxs-lookup"><span data-stu-id="6ab40-132">Note that **dispidUseTNEF** only applies when the message is sent from a POP3/SMTP mail account, and does not apply when the message is sent by other providers, such as Microsoft Exchange Server.</span></span> <span data-ttu-id="6ab40-133">**dispidUseTNEF**は、 **PR_MSG_EDITOR_FORMAT**の設定を上書きします。</span><span class="sxs-lookup"><span data-stu-id="6ab40-133">**dispidUseTNEF** overrides the setting in **PR_MSG_EDITOR_FORMAT**.</span></span>
     
-- <span data-ttu-id="752a9-134">[IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)を呼び出すときに**CCSF_USE_TNEF**フラグを使用して送信、MAPI メッセージを MIME ストリームに変換すると、TNEF にも適用できます。</span><span class="sxs-lookup"><span data-stu-id="752a9-134">Using the **CCSF_USE_TNEF** flag when calling [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md) to convert an outgoing MAPI message to a MIME stream can also enforce TNEF.</span></span> <span data-ttu-id="752a9-135">これは、 **dispidUseTNEF**が設定されていない場合でも適用されます。</span><span class="sxs-lookup"><span data-stu-id="752a9-135">This applies even if **dispidUseTNEF** is not set.</span></span> 
+- <span data-ttu-id="6ab40-134">[IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)を呼び出すときに**CCSF_USE_TNEF**フラグを使用して送信、MAPI メッセージを MIME ストリームに変換すると、TNEF にも適用できます。</span><span class="sxs-lookup"><span data-stu-id="6ab40-134">Using the **CCSF_USE_TNEF** flag when calling [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md) to convert an outgoing MAPI message to a MIME stream can also enforce TNEF.</span></span> <span data-ttu-id="6ab40-135">これは、 **dispidUseTNEF**が設定されていない場合でも適用されます。</span><span class="sxs-lookup"><span data-stu-id="6ab40-135">This applies even if **dispidUseTNEF** is not set.</span></span> 
     
-## <a name="related-resources"></a><span data-ttu-id="752a9-136">関連リソース</span><span class="sxs-lookup"><span data-stu-id="752a9-136">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="6ab40-136">関連リソース</span><span class="sxs-lookup"><span data-stu-id="6ab40-136">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="752a9-137">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="752a9-137">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="6ab40-137">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="6ab40-137">Protocol specifications</span></span>
 
-<span data-ttu-id="752a9-138">[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="752a9-138">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="6ab40-138">[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="6ab40-138">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="752a9-139">関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="752a9-139">Provides references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="6ab40-139">関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="6ab40-139">Provides references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="752a9-140">[[MS OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="752a9-140">[[MS-OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="6ab40-140">[[MS OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="6ab40-140">[[MS-OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="752a9-141">リモート操作で使用される基本的なデータ構造を定義します。</span><span class="sxs-lookup"><span data-stu-id="752a9-141">Defines the basic data structures that are used in remote operations.</span></span>
+> <span data-ttu-id="6ab40-141">リモート操作で使用される基本的なデータ構造を定義します。</span><span class="sxs-lookup"><span data-stu-id="6ab40-141">Defines the basic data structures that are used in remote operations.</span></span>
     
-<span data-ttu-id="752a9-142">[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="752a9-142">[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="6ab40-142">[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="6ab40-142">[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="752a9-143">プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="752a9-143">Specifies the properties and operations that are permissible for email message objects.</span></span>
+> <span data-ttu-id="6ab40-143">プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="6ab40-143">Specifies the properties and operations that are permissible for email message objects.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="752a9-144">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="752a9-144">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="6ab40-144">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="6ab40-144">Header files</span></span>
 
-<span data-ttu-id="752a9-145">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="752a9-145">Mapidefs.h</span></span>
+<span data-ttu-id="6ab40-145">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="6ab40-145">Mapidefs.h</span></span>
   
-> <span data-ttu-id="752a9-146">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="752a9-146">Provides data type definitions.</span></span>
+> <span data-ttu-id="6ab40-146">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="6ab40-146">Provides data type definitions.</span></span>
     
-<span data-ttu-id="752a9-147">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="752a9-147">Mapitags.h</span></span>
+<span data-ttu-id="6ab40-147">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="6ab40-147">Mapitags.h</span></span>
   
-> <span data-ttu-id="752a9-148">代替名として記載されているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="752a9-148">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="6ab40-148">代替名として記載されているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="6ab40-148">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="752a9-149">関連項目</span><span class="sxs-lookup"><span data-stu-id="752a9-149">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6ab40-149">関連項目</span><span class="sxs-lookup"><span data-stu-id="6ab40-149">See also</span></span>
 
 
 
-[<span data-ttu-id="752a9-150">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="752a9-150">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="6ab40-150">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="6ab40-150">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="752a9-151">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="752a9-151">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="6ab40-151">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="6ab40-151">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="752a9-152">MAPI 名への標準的なプロパティ名のマッピング</span><span class="sxs-lookup"><span data-stu-id="752a9-152">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="6ab40-152">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="6ab40-152">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="752a9-153">MAPI 名前を標準のプロパティ名にマップします。</span><span class="sxs-lookup"><span data-stu-id="752a9-153">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="6ab40-153">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="6ab40-153">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

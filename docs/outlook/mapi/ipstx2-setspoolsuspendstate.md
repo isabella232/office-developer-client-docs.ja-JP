@@ -19,13 +19,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801181"
 ---
-# <a name="ipstx2setspoolsuspendstate"></a><span data-ttu-id="a6ed9-103">IPSTX2::SetSpoolSuspendState</span><span class="sxs-lookup"><span data-stu-id="a6ed9-103">IPSTX2::SetSpoolSuspendState</span></span>
+# <a name="ipstx2setspoolsuspendstate"></a><span data-ttu-id="3743a-103">IPSTX2::SetSpoolSuspendState</span><span class="sxs-lookup"><span data-stu-id="3743a-103">IPSTX2::SetSpoolSuspendState</span></span>
 
   
   
-<span data-ttu-id="a6ed9-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="a6ed9-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="3743a-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="3743a-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="a6ed9-105">スプーラーを一時停止の状態を設定します。</span><span class="sxs-lookup"><span data-stu-id="a6ed9-105">Sets the suspended state on the spooler.</span></span>
+<span data-ttu-id="3743a-105">スプーラーを一時停止の状態を設定します。</span><span class="sxs-lookup"><span data-stu-id="3743a-105">Sets the suspended state on the spooler.</span></span>
   
 ```cpp
 void SetSpoolSuspendState( 
@@ -33,23 +33,23 @@ void SetSpoolSuspendState(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="a6ed9-106">Parameters</span><span class="sxs-lookup"><span data-stu-id="a6ed9-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="3743a-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3743a-106">Parameters</span></span>
 
- <span data-ttu-id="a6ed9-107">_ulState_</span><span class="sxs-lookup"><span data-stu-id="a6ed9-107">_ulState_</span></span>
+ <span data-ttu-id="3743a-107">_ulState_</span><span class="sxs-lookup"><span data-stu-id="3743a-107">_ulState_</span></span>
   
-> <span data-ttu-id="a6ed9-108">[in]スプーラーに設定する状態です。</span><span class="sxs-lookup"><span data-stu-id="a6ed9-108">[in] The state to set the spooler to.</span></span> <span data-ttu-id="a6ed9-109">次の値のいずれかを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a6ed9-109">It must be one of the following values:</span></span>
+> <span data-ttu-id="3743a-108">[in]スプーラーに設定する状態です。</span><span class="sxs-lookup"><span data-stu-id="3743a-108">[in] The state to set the spooler to.</span></span> <span data-ttu-id="3743a-109">次の値のいずれかを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3743a-109">It must be one of the following values:</span></span>
     
- <span data-ttu-id="a6ed9-110">**SS_ACTIVE**</span><span class="sxs-lookup"><span data-stu-id="a6ed9-110">**SS_ACTIVE**</span></span>
-  
-> 
-    
- <span data-ttu-id="a6ed9-111">**SS_SUSPENDED**</span><span class="sxs-lookup"><span data-stu-id="a6ed9-111">**SS_SUSPENDED**</span></span>
+ <span data-ttu-id="3743a-110">**SS_ACTIVE**</span><span class="sxs-lookup"><span data-stu-id="3743a-110">**SS_ACTIVE**</span></span>
   
 > 
     
-## <a name="see-also"></a><span data-ttu-id="a6ed9-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="a6ed9-112">See also</span></span>
+ <span data-ttu-id="3743a-111">**SS_SUSPENDED**</span><span class="sxs-lookup"><span data-stu-id="3743a-111">**SS_SUSPENDED**</span></span>
+  
+> 
+    
+## <a name="see-also"></a><span data-ttu-id="3743a-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="3743a-112">See also</span></span>
 
 
 
-[<span data-ttu-id="a6ed9-113">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="a6ed9-113">MAPI Constants</span></span>](mapi-constants.md)
+[<span data-ttu-id="3743a-113">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="3743a-113">MAPI Constants</span></span>](mapi-constants.md)
 

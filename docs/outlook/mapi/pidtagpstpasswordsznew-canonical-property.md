@@ -1,5 +1,5 @@
 ---
-title: PidTagPstPasswordSzNew の標準的なプロパティ
+title: PidTagPstPasswordSzNew 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,7 +9,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e4c5ca77-328c-4f5a-bf94-b9e90e837557
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 79ac68e7e24524c7667b0a37622956fd041eb9d4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,48 +17,48 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803227"
 ---
-# <a name="pidtagpstpasswordsznew-canonical-property"></a><span data-ttu-id="554b8-103">PidTagPstPasswordSzNew の標準的なプロパティ</span><span class="sxs-lookup"><span data-stu-id="554b8-103">PidTagPstPasswordSzNew Canonical Property</span></span>
+# <a name="pidtagpstpasswordsznew-canonical-property"></a><span data-ttu-id="5f50c-103">PidTagPstPasswordSzNew 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="5f50c-103">PidTagPstPasswordSzNew Canonical Property</span></span>
 
   
   
-<span data-ttu-id="554b8-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="554b8-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="5f50c-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="5f50c-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="554b8-105">将来的にアクセスするため、個人用フォルダー ストアを使用する新しいパスワードが含まれています。</span><span class="sxs-lookup"><span data-stu-id="554b8-105">Contains the new password to use for future access to the personal folder store.</span></span>
+<span data-ttu-id="5f50c-105">将来的にアクセスするため、個人用フォルダー ストアを使用する新しいパスワードが含まれています。</span><span class="sxs-lookup"><span data-stu-id="5f50c-105">Contains the new password to use for future access to the personal folder store.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="554b8-106">関連するプロパティ。</span><span class="sxs-lookup"><span data-stu-id="554b8-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="554b8-107">PR_PST_PW_SZ_NEW、PR_PST_PW_SZ_NEW_A、PR_PST_PW_SZ_NEW_W</span><span class="sxs-lookup"><span data-stu-id="554b8-107">PR_PST_PW_SZ_NEW, PR_PST_PW_SZ_NEW_A, PR_PST_PW_SZ_NEW_W</span></span>  <br/> |
-|<span data-ttu-id="554b8-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="554b8-108">Identifier:</span></span>  <br/> |<span data-ttu-id="554b8-109">0x6704</span><span class="sxs-lookup"><span data-stu-id="554b8-109">0x6704</span></span>  <br/> |
-|<span data-ttu-id="554b8-110">データを入力します。</span><span class="sxs-lookup"><span data-stu-id="554b8-110">Data type:</span></span>  <br/> |<span data-ttu-id="554b8-111">PT_STRING8、PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="554b8-111">PT_STRING8, PT_UNICODE</span></span>  <br/> |
-|<span data-ttu-id="554b8-112">領域:</span><span class="sxs-lookup"><span data-stu-id="554b8-112">Area:</span></span>  <br/> |<span data-ttu-id="554b8-113">パーソナル ストレージ表 (.pst) 内部</span><span class="sxs-lookup"><span data-stu-id="554b8-113">Personal storage table (.pst) internal</span></span>  <br/> |
+|<span data-ttu-id="5f50c-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="5f50c-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="5f50c-107">PR_PST_PW_SZ_NEW、PR_PST_PW_SZ_NEW_A、PR_PST_PW_SZ_NEW_W</span><span class="sxs-lookup"><span data-stu-id="5f50c-107">PR_PST_PW_SZ_NEW, PR_PST_PW_SZ_NEW_A, PR_PST_PW_SZ_NEW_W</span></span>  <br/> |
+|<span data-ttu-id="5f50c-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="5f50c-108">Identifier:</span></span>  <br/> |<span data-ttu-id="5f50c-109">0x6704</span><span class="sxs-lookup"><span data-stu-id="5f50c-109">0x6704</span></span>  <br/> |
+|<span data-ttu-id="5f50c-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="5f50c-110">Data type:</span></span>  <br/> |<span data-ttu-id="5f50c-111">PT_STRING8、PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="5f50c-111">PT_STRING8, PT_UNICODE</span></span>  <br/> |
+|<span data-ttu-id="5f50c-112">領域:</span><span class="sxs-lookup"><span data-stu-id="5f50c-112">Area:</span></span>  <br/> |<span data-ttu-id="5f50c-113">パーソナル ストレージ表 (.pst) 内部</span><span class="sxs-lookup"><span data-stu-id="5f50c-113">Personal storage table (.pst) internal</span></span>  <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="554b8-114">関連リソース</span><span class="sxs-lookup"><span data-stu-id="554b8-114">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="5f50c-114">関連リソース</span><span class="sxs-lookup"><span data-stu-id="5f50c-114">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="554b8-115">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="554b8-115">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="5f50c-115">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="5f50c-115">Protocol specifications</span></span>
 
-<span data-ttu-id="554b8-116">[MS OXPROPS]</span><span class="sxs-lookup"><span data-stu-id="554b8-116">[[MS-OXPROPS]]</span></span> 
+<span data-ttu-id="5f50c-116">[MS OXPROPS]</span><span class="sxs-lookup"><span data-stu-id="5f50c-116">[[MS-OXPROPS]]</span></span> 
   
-> <span data-ttu-id="554b8-117">関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="554b8-117">Provides references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="5f50c-117">関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="5f50c-117">Provides references to related Exchange Server protocol specifications.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="554b8-118">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="554b8-118">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="5f50c-118">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="5f50c-118">Header files</span></span>
 
-<span data-ttu-id="554b8-119">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="554b8-119">Mapidefs.h</span></span>
+<span data-ttu-id="5f50c-119">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="5f50c-119">Mapidefs.h</span></span>
   
-> <span data-ttu-id="554b8-120">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="554b8-120">Provides data type definitions.</span></span>
+> <span data-ttu-id="5f50c-120">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="5f50c-120">Provides data type definitions.</span></span>
     
-<span data-ttu-id="554b8-121">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="554b8-121">Mapitags.h</span></span>
+<span data-ttu-id="5f50c-121">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="5f50c-121">Mapitags.h</span></span>
   
-> <span data-ttu-id="554b8-122">関連付けられているプロパティとして記載されているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="554b8-122">Contains definitions of properties listed as associated properties.</span></span>
+> <span data-ttu-id="5f50c-122">関連付けられているプロパティとして記載されているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="5f50c-122">Contains definitions of properties listed as associated properties.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="554b8-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="554b8-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5f50c-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="5f50c-123">See also</span></span>
 
 
 
-[<span data-ttu-id="554b8-124">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="554b8-124">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="5f50c-124">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="5f50c-124">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="554b8-125">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="554b8-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="5f50c-125">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="5f50c-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="554b8-126">MAPI 名への標準的なプロパティ名のマッピング</span><span class="sxs-lookup"><span data-stu-id="554b8-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="5f50c-126">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="5f50c-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="554b8-127">MAPI 名前を標準のプロパティ名にマップします。</span><span class="sxs-lookup"><span data-stu-id="554b8-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="5f50c-127">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="5f50c-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

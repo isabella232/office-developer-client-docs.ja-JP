@@ -1,5 +1,5 @@
 ---
-title: PidLidLogDocumentRouted の標準的なプロパティ
+title: PidLidLogDocumentRouted 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 604f8859-469f-4745-b4b5-8f69737867a3
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e88c240b4219ac66bc9a1d4b8fa11ffc47682dd9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,49 +19,49 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802026"
 ---
-# <a name="pidlidlogdocumentrouted-canonical-property"></a><span data-ttu-id="1e8b8-103">PidLidLogDocumentRouted の標準的なプロパティ</span><span class="sxs-lookup"><span data-stu-id="1e8b8-103">PidLidLogDocumentRouted Canonical Property</span></span>
+# <a name="pidlidlogdocumentrouted-canonical-property"></a><span data-ttu-id="2828a-103">PidLidLogDocumentRouted 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="2828a-103">PidLidLogDocumentRouted Canonical Property</span></span>
 
   
   
-<span data-ttu-id="1e8b8-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="1e8b8-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="2828a-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="2828a-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="1e8b8-105">ルーティング受信者にジャーナル処理中にドキュメントが送信されたかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="1e8b8-105">Indicates whether the document was sent to a routing recipient during journaling.</span></span>
+<span data-ttu-id="2828a-105">ルーティング受信者にジャーナル処理中にドキュメントが送信されたかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="2828a-105">Indicates whether the document was sent to a routing recipient during journaling.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="1e8b8-106">関連するプロパティ。</span><span class="sxs-lookup"><span data-stu-id="1e8b8-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="1e8b8-107">dispidLogDocRouted</span><span class="sxs-lookup"><span data-stu-id="1e8b8-107">dispidLogDocRouted</span></span>  <br/> |
-|<span data-ttu-id="1e8b8-108">プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="1e8b8-108">Property set:</span></span>  <br/> |<span data-ttu-id="1e8b8-109">PSETID_Log</span><span class="sxs-lookup"><span data-stu-id="1e8b8-109">PSETID_Log</span></span>  <br/> |
-|<span data-ttu-id="1e8b8-110">長い ID (LID):</span><span class="sxs-lookup"><span data-stu-id="1e8b8-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="1e8b8-111">0x00008710</span><span class="sxs-lookup"><span data-stu-id="1e8b8-111">0x00008710</span></span>  <br/> |
-|<span data-ttu-id="1e8b8-112">データを入力します。</span><span class="sxs-lookup"><span data-stu-id="1e8b8-112">Data type:</span></span>  <br/> |<span data-ttu-id="1e8b8-113">PT_BOOLEAN</span><span class="sxs-lookup"><span data-stu-id="1e8b8-113">PT_BOOLEAN</span></span>  <br/> |
-|<span data-ttu-id="1e8b8-114">領域:</span><span class="sxs-lookup"><span data-stu-id="1e8b8-114">Area:</span></span>  <br/> |<span data-ttu-id="1e8b8-115">�W���[�i��</span><span class="sxs-lookup"><span data-stu-id="1e8b8-115">Journal</span></span>  <br/> |
+|<span data-ttu-id="2828a-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="2828a-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="2828a-107">dispidLogDocRouted</span><span class="sxs-lookup"><span data-stu-id="2828a-107">dispidLogDocRouted</span></span>  <br/> |
+|<span data-ttu-id="2828a-108">プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="2828a-108">Property set:</span></span>  <br/> |<span data-ttu-id="2828a-109">PSETID_Log</span><span class="sxs-lookup"><span data-stu-id="2828a-109">PSETID_Log</span></span>  <br/> |
+|<span data-ttu-id="2828a-110">長い ID (LID):</span><span class="sxs-lookup"><span data-stu-id="2828a-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="2828a-111">0x00008710</span><span class="sxs-lookup"><span data-stu-id="2828a-111">0x00008710</span></span>  <br/> |
+|<span data-ttu-id="2828a-112">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="2828a-112">Data type:</span></span>  <br/> |<span data-ttu-id="2828a-113">PT_BOOLEAN</span><span class="sxs-lookup"><span data-stu-id="2828a-113">PT_BOOLEAN</span></span>  <br/> |
+|<span data-ttu-id="2828a-114">領域:</span><span class="sxs-lookup"><span data-stu-id="2828a-114">Area:</span></span>  <br/> |<span data-ttu-id="2828a-115">ジャーナル</span><span class="sxs-lookup"><span data-stu-id="2828a-115">Journal</span></span>  <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="1e8b8-116">関連リソース</span><span class="sxs-lookup"><span data-stu-id="1e8b8-116">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="2828a-116">関連リソース</span><span class="sxs-lookup"><span data-stu-id="2828a-116">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="1e8b8-117">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="1e8b8-117">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="2828a-117">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="2828a-117">Protocol specifications</span></span>
 
-<span data-ttu-id="1e8b8-118">[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="1e8b8-118">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="2828a-118">[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="2828a-118">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="1e8b8-119">プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="1e8b8-119">Provides property set definition and references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="2828a-119">プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="2828a-119">Provides property set definition and references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="1e8b8-120">[[MS OXOJRNL]](http://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="1e8b8-120">[[MS-OXOJRNL]](http://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="2828a-120">[[MS OXOJRNL]](http://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="2828a-120">[[MS-OXOJRNL]](http://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="1e8b8-121">プロパティとは、仕訳帳の許可の操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="1e8b8-121">Specifies the properties and operations that are permissible for journals.</span></span>
+> <span data-ttu-id="2828a-121">プロパティとは、仕訳帳の許可の操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="2828a-121">Specifies the properties and operations that are permissible for journals.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="1e8b8-122">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="1e8b8-122">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="2828a-122">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="2828a-122">Header files</span></span>
 
-<span data-ttu-id="1e8b8-123">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="1e8b8-123">Mapidefs.h</span></span>
+<span data-ttu-id="2828a-123">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="2828a-123">Mapidefs.h</span></span>
   
-> <span data-ttu-id="1e8b8-124">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="1e8b8-124">Provides data type definitions.</span></span>
+> <span data-ttu-id="2828a-124">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="2828a-124">Provides data type definitions.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="1e8b8-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="1e8b8-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2828a-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="2828a-125">See also</span></span>
 
 
 
-[<span data-ttu-id="1e8b8-126">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="1e8b8-126">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="2828a-126">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="2828a-126">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="1e8b8-127">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="1e8b8-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="2828a-127">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="2828a-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="1e8b8-128">MAPI 名への標準的なプロパティ名のマッピング</span><span class="sxs-lookup"><span data-stu-id="1e8b8-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="2828a-128">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="2828a-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="1e8b8-129">MAPI 名前を標準のプロパティ名にマップします。</span><span class="sxs-lookup"><span data-stu-id="1e8b8-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="2828a-129">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="2828a-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

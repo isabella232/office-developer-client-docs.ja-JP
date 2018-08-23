@@ -15,13 +15,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801651"
 ---
-# <a name="mnlsisbadstringptrw"></a><span data-ttu-id="0cb2e-103">MNLS_IsBadStringPtrW</span><span class="sxs-lookup"><span data-stu-id="0cb2e-103">MNLS_IsBadStringPtrW</span></span>
+# <a name="mnlsisbadstringptrw"></a><span data-ttu-id="c8676-103">MNLS_IsBadStringPtrW</span><span class="sxs-lookup"><span data-stu-id="c8676-103">MNLS_IsBadStringPtrW</span></span>
 
   
   
-<span data-ttu-id="0cb2e-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="0cb2e-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="c8676-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="c8676-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="0cb2e-105">ワイド文字列へのポインターが有効であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="0cb2e-105">Verifies that a pointer to a wide string is valid.</span></span>
+<span data-ttu-id="c8676-105">ワイド文字列へのポインターが有効であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="c8676-105">Verifies that a pointer to a wide string is valid.</span></span>
   
 ```cpp
 BOOL MNLS_IsBadStringPtrW(
@@ -29,22 +29,22 @@ BOOL MNLS_IsBadStringPtrW(
   UINT ucchMax);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="0cb2e-106">Parameters</span><span class="sxs-lookup"><span data-stu-id="0cb2e-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="c8676-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="c8676-106">Parameters</span></span>
 
- <span data-ttu-id="0cb2e-107">_lpsz_</span><span class="sxs-lookup"><span data-stu-id="0cb2e-107">_lpsz_</span></span>
+ <span data-ttu-id="c8676-107">_lpsz_</span><span class="sxs-lookup"><span data-stu-id="c8676-107">_lpsz_</span></span>
   
-> <span data-ttu-id="0cb2e-108">[in]ワイド文字列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="0cb2e-108">[in] A pointer to the wide character string.</span></span>
+> <span data-ttu-id="c8676-108">[in]ワイド文字列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="c8676-108">[in] A pointer to the wide character string.</span></span>
     
- <span data-ttu-id="0cb2e-109">_ucchMax_</span><span class="sxs-lookup"><span data-stu-id="0cb2e-109">_ucchMax_</span></span>
+ <span data-ttu-id="c8676-109">_ucchMax_</span><span class="sxs-lookup"><span data-stu-id="c8676-109">_ucchMax_</span></span>
   
-> <span data-ttu-id="0cb2e-110">[in]文字列の終端文字を含む文字の最大長。</span><span class="sxs-lookup"><span data-stu-id="0cb2e-110">[in] The maximum length of the string in characters including terminator.</span></span>
+> <span data-ttu-id="c8676-110">[in]文字列の終端文字を含む文字の最大長。</span><span class="sxs-lookup"><span data-stu-id="c8676-110">[in] The maximum length of the string in characters including terminator.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="0cb2e-111">�߂�l</span><span class="sxs-lookup"><span data-stu-id="0cb2e-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c8676-111">戻り値</span><span class="sxs-lookup"><span data-stu-id="c8676-111">Return value</span></span>
 
-<span data-ttu-id="0cb2e-112">ブール値、文字列が無効な場合は true を返します。</span><span class="sxs-lookup"><span data-stu-id="0cb2e-112">Returns a Boolean that is true if the string is bad.</span></span>
+<span data-ttu-id="c8676-112">ブール値、文字列が無効な場合は true を返します。</span><span class="sxs-lookup"><span data-stu-id="c8676-112">Returns a Boolean that is true if the string is bad.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="0cb2e-113">備考</span><span class="sxs-lookup"><span data-stu-id="0cb2e-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c8676-113">注釈</span><span class="sxs-lookup"><span data-stu-id="c8676-113">Remarks</span></span>
 
-<span data-ttu-id="0cb2e-114">この関数は、 [IsBadStringPtr](http://msdn.microsoft.com/ja-jp/library/aa366714%28VS.85%29.aspx)をラップします。</span><span class="sxs-lookup"><span data-stu-id="0cb2e-114">This function wraps [IsBadStringPtr](http://msdn.microsoft.com/ja-jp/library/aa366714%28VS.85%29.aspx).</span></span> <span data-ttu-id="0cb2e-115">詳細については、 [IsBadStringPtr](http://msdn.microsoft.com/ja-jp/library/aa366714%28VS.85%29.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0cb2e-115">For more information, see [IsBadStringPtr](http://msdn.microsoft.com/ja-jp/library/aa366714%28VS.85%29.aspx).</span></span>
+<span data-ttu-id="c8676-114">この関数は、 [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx)をラップします。</span><span class="sxs-lookup"><span data-stu-id="c8676-114">This function wraps [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx).</span></span> <span data-ttu-id="c8676-115">詳細については、 [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c8676-115">For more information, see [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx).</span></span>
   
 

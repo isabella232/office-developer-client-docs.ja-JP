@@ -19,13 +19,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801086"
 ---
-# <a name="iostxsetsyncresult"></a><span data-ttu-id="39c81-103">IOSTX::SetSyncResult</span><span class="sxs-lookup"><span data-stu-id="39c81-103">IOSTX::SetSyncResult</span></span>
+# <a name="iostxsetsyncresult"></a><span data-ttu-id="d2012-103">IOSTX::SetSyncResult</span><span class="sxs-lookup"><span data-stu-id="d2012-103">IOSTX::SetSyncResult</span></span>
 
   
   
-<span data-ttu-id="39c81-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="39c81-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="d2012-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="d2012-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="39c81-105">同期の結果を設定します。</span><span class="sxs-lookup"><span data-stu-id="39c81-105">Sets the result of the synchronization.</span></span>
+<span data-ttu-id="d2012-105">同期の結果を設定します。</span><span class="sxs-lookup"><span data-stu-id="d2012-105">Sets the result of the synchronization.</span></span>
   
 ```cpp
 HRESULT SetSyncResult( 
@@ -33,32 +33,32 @@ HRESULT SetSyncResult(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="39c81-106">Parameters</span><span class="sxs-lookup"><span data-stu-id="39c81-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="d2012-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d2012-106">Parameters</span></span>
 
- <span data-ttu-id="39c81-107">_hrSync_</span><span class="sxs-lookup"><span data-stu-id="39c81-107">_hrSync_</span></span>
+ <span data-ttu-id="d2012-107">_hrSync_</span><span class="sxs-lookup"><span data-stu-id="d2012-107">_hrSync_</span></span>
   
->  <span data-ttu-id="39c81-108">[in]同期の結果を返します。</span><span class="sxs-lookup"><span data-stu-id="39c81-108">[in] The result of the synchronization.</span></span> 
+>  <span data-ttu-id="d2012-108">[in]同期の結果を返します。</span><span class="sxs-lookup"><span data-stu-id="d2012-108">[in] The result of the synchronization.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="39c81-109">備考</span><span class="sxs-lookup"><span data-stu-id="39c81-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d2012-109">注釈</span><span class="sxs-lookup"><span data-stu-id="d2012-109">Remarks</span></span>
 
-<span data-ttu-id="39c81-110">ローカル ストアの同期の結果を通知するために**IOSTX::SyncEnd**を呼び出す前に**IOSTX::SetSyncResult**を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="39c81-110">Call **IOSTX::SetSyncResult** before calling **IOSTX::SyncEnd** to inform the local store of the result of synchronization.</span></span> 
+<span data-ttu-id="d2012-110">ローカル ストアの同期の結果を通知するために**IOSTX::SyncEnd**を呼び出す前に**IOSTX::SetSyncResult**を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="d2012-110">Call **IOSTX::SetSyncResult** before calling **IOSTX::SyncEnd** to inform the local store of the result of synchronization.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="39c81-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="39c81-111">See also</span></span>
-
-
-
-[<span data-ttu-id="39c81-112">IOSTX::GetLastError</span><span class="sxs-lookup"><span data-stu-id="39c81-112">IOSTX::GetLastError</span></span>](iostx-getlasterror.md)
-  
-[<span data-ttu-id="39c81-113">IOSTX::InitSync</span><span class="sxs-lookup"><span data-stu-id="39c81-113">IOSTX::InitSync</span></span>](iostx-initsync.md)
-  
-[<span data-ttu-id="39c81-114">IOSTX::SyncBeg</span><span class="sxs-lookup"><span data-stu-id="39c81-114">IOSTX::SyncBeg</span></span>](iostx-syncbeg.md)
-  
-[<span data-ttu-id="39c81-115">IOSTX::SyncEnd</span><span class="sxs-lookup"><span data-stu-id="39c81-115">IOSTX::SyncEnd</span></span>](iostx-syncend.md)
-  
-[<span data-ttu-id="39c81-116">IOSTX::SyncHdrBeg</span><span class="sxs-lookup"><span data-stu-id="39c81-116">IOSTX::SyncHdrBeg</span></span>](iostx-synchdrbeg.md)
-  
-[<span data-ttu-id="39c81-117">IOSTX::SyncHdrEnd</span><span class="sxs-lookup"><span data-stu-id="39c81-117">IOSTX::SyncHdrEnd</span></span>](iostx-synchdrend.md)
+## <a name="see-also"></a><span data-ttu-id="d2012-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="d2012-111">See also</span></span>
 
 
-[<span data-ttu-id="39c81-118">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="39c81-118">MAPI Constants</span></span>](mapi-constants.md)
+
+[<span data-ttu-id="d2012-112">IOSTX::GetLastError</span><span class="sxs-lookup"><span data-stu-id="d2012-112">IOSTX::GetLastError</span></span>](iostx-getlasterror.md)
+  
+[<span data-ttu-id="d2012-113">IOSTX::InitSync</span><span class="sxs-lookup"><span data-stu-id="d2012-113">IOSTX::InitSync</span></span>](iostx-initsync.md)
+  
+[<span data-ttu-id="d2012-114">IOSTX::SyncBeg</span><span class="sxs-lookup"><span data-stu-id="d2012-114">IOSTX::SyncBeg</span></span>](iostx-syncbeg.md)
+  
+[<span data-ttu-id="d2012-115">IOSTX::SyncEnd</span><span class="sxs-lookup"><span data-stu-id="d2012-115">IOSTX::SyncEnd</span></span>](iostx-syncend.md)
+  
+[<span data-ttu-id="d2012-116">IOSTX::SyncHdrBeg</span><span class="sxs-lookup"><span data-stu-id="d2012-116">IOSTX::SyncHdrBeg</span></span>](iostx-synchdrbeg.md)
+  
+[<span data-ttu-id="d2012-117">IOSTX::SyncHdrEnd</span><span class="sxs-lookup"><span data-stu-id="d2012-117">IOSTX::SyncHdrEnd</span></span>](iostx-synchdrend.md)
+
+
+[<span data-ttu-id="d2012-118">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="d2012-118">MAPI Constants</span></span>](mapi-constants.md)
 

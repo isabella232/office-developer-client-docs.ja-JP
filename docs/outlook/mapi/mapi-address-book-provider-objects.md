@@ -15,17 +15,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801295"
 ---
-# <a name="mapi-address-book-provider-objects"></a><span data-ttu-id="659ad-103">MAPI アドレス帳プロバイダー オブジェクト</span><span class="sxs-lookup"><span data-stu-id="659ad-103">MAPI address book provider objects</span></span>
+# <a name="mapi-address-book-provider-objects"></a><span data-ttu-id="87ffe-103">MAPI アドレス帳プロバイダー オブジェクト</span><span class="sxs-lookup"><span data-stu-id="87ffe-103">MAPI address book provider objects</span></span>
   
-<span data-ttu-id="659ad-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="659ad-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="87ffe-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="87ffe-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="659ad-105">標準プロバイダーとログオン オブジェクトでは、他は、アドレス帳プロバイダーは、アドレス帳コンテナー、配布リスト、メッセージング ユーザー、テーブル、オブジェクトの状態、および制御を実装します。</span><span class="sxs-lookup"><span data-stu-id="659ad-105">In addition to the standard provider and logon objects, address book providers implement address book containers, distribution lists, messaging users, tables, status objects, and controls.</span></span>
+<span data-ttu-id="87ffe-105">標準プロバイダーとログオン オブジェクトでは、他は、アドレス帳プロバイダーは、アドレス帳コンテナー、配布リスト、メッセージング ユーザー、テーブル、オブジェクトの状態、および制御を実装します。</span><span class="sxs-lookup"><span data-stu-id="87ffe-105">In addition to the standard provider and logon objects, address book providers implement address book containers, distribution lists, messaging users, tables, status objects, and controls.</span></span>
   
-<span data-ttu-id="659ad-106">次の図は、これらのオブジェクト、対応するインターフェイス、およびそれらを使用する MAPI コンポーネントを示します。</span><span class="sxs-lookup"><span data-stu-id="659ad-106">The following illustration shows these objects, their corresponding interfaces, and the MAPI components that use them.</span></span>
+<span data-ttu-id="87ffe-106">次の図は、これらのオブジェクト、対応するインターフェイス、およびそれらを使用する MAPI コンポーネントを示します。</span><span class="sxs-lookup"><span data-stu-id="87ffe-106">The following illustration shows these objects, their corresponding interfaces, and the MAPI components that use them.</span></span>
   
-<span data-ttu-id="659ad-107">![アドレス帳プロバイダーを実装するオブジェクト](media/amapi_64.gif "アドレス帳プロバイダーを実装するオブジェクト")</span><span class="sxs-lookup"><span data-stu-id="659ad-107">![Objects that address book providers implement](media/amapi_64.gif "Objects that address book providers implement")</span></span>
+<span data-ttu-id="87ffe-107">![アドレス帳プロバイダーを実装するオブジェクト](media/amapi_64.gif "アドレス帳プロバイダーを実装するオブジェクト")</span><span class="sxs-lookup"><span data-stu-id="87ffe-107">![Objects that address book providers implement](media/amapi_64.gif "Objects that address book providers implement")</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="659ad-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="659ad-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="87ffe-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="87ffe-108">See also</span></span>
 
-- [<span data-ttu-id="659ad-109">MAPI サービス プロバイダー オブジェクト</span><span class="sxs-lookup"><span data-stu-id="659ad-109">MAPI Service Provider Objects</span></span>](mapi-service-provider-objects.md)
+- [<span data-ttu-id="87ffe-109">MAPI サービス プロバイダー オブジェクト</span><span class="sxs-lookup"><span data-stu-id="87ffe-109">MAPI Service Provider Objects</span></span>](mapi-service-provider-objects.md)
 

@@ -19,29 +19,29 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801169"
 ---
-# <a name="ipstoverride1overridepstdisablegrow"></a><span data-ttu-id="1e9d7-103">IPSTOVERRIDE1::OverridePSTDisableGrow</span><span class="sxs-lookup"><span data-stu-id="1e9d7-103">IPSTOVERRIDE1::OverridePSTDisableGrow</span></span>
+# <a name="ipstoverride1overridepstdisablegrow"></a><span data-ttu-id="db547-103">IPSTOVERRIDE1::OverridePSTDisableGrow</span><span class="sxs-lookup"><span data-stu-id="db547-103">IPSTOVERRIDE1::OverridePSTDisableGrow</span></span>
 
   
   
-<span data-ttu-id="1e9d7-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="1e9d7-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="db547-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="db547-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="1e9d7-105">PSTDisableGrow ポリシーをオーバーライドするセッションは、個人用フォルダー (.pst) ファイルを解除します。</span><span class="sxs-lookup"><span data-stu-id="1e9d7-105">Unlocks a Personal Folders (.pst) file for a session, overriding the PSTDisableGrow policy.</span></span>
+<span data-ttu-id="db547-105">PSTDisableGrow ポリシーをオーバーライドするセッションは、個人用フォルダー (.pst) ファイルを解除します。</span><span class="sxs-lookup"><span data-stu-id="db547-105">Unlocks a Personal Folders (.pst) file for a session, overriding the PSTDisableGrow policy.</span></span>
   
 ```cpp
 HRESULT OverridePSTDisableGrow();
 ```
 
-## <a name="return-value"></a><span data-ttu-id="1e9d7-106">�߂�l</span><span class="sxs-lookup"><span data-stu-id="1e9d7-106">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="db547-106">�߂�l</span><span class="sxs-lookup"><span data-stu-id="db547-106">Return value</span></span>
 
-<span data-ttu-id="1e9d7-107">S_OK</span><span class="sxs-lookup"><span data-stu-id="1e9d7-107">S_OK</span></span>
+<span data-ttu-id="db547-107">S_OK</span><span class="sxs-lookup"><span data-stu-id="db547-107">S_OK</span></span>
   
-> <span data-ttu-id="1e9d7-108">関数の呼び出しに成功しました。</span><span class="sxs-lookup"><span data-stu-id="1e9d7-108">The function call was successful.</span></span>
+> <span data-ttu-id="db547-108">関数の呼び出しに成功しました。</span><span class="sxs-lookup"><span data-stu-id="db547-108">The function call was successful.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="1e9d7-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="1e9d7-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="db547-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="db547-109">See also</span></span>
 
 
 
-[<span data-ttu-id="1e9d7-110">IPSTOVERRIDE1: IUnknown</span><span class="sxs-lookup"><span data-stu-id="1e9d7-110">IPSTOVERRIDE1 : IUnknown</span></span>](ipstoverride1iunknown.md)
+[<span data-ttu-id="db547-110">IPSTOVERRIDE1 : IUnknown</span><span class="sxs-lookup"><span data-stu-id="db547-110">IPSTOVERRIDE1 : IUnknown</span></span>](ipstoverride1iunknown.md)
   
-[<span data-ttu-id="1e9d7-111">IPSTOVERRIDEREQ: IUnknown</span><span class="sxs-lookup"><span data-stu-id="1e9d7-111">IPSTOVERRIDEREQ : IUnknown</span></span>](ipstoverridereqiunknown.md)
+[<span data-ttu-id="db547-111">IPSTOVERRIDEREQ : IUnknown</span><span class="sxs-lookup"><span data-stu-id="db547-111">IPSTOVERRIDEREQ : IUnknown</span></span>](ipstoverridereqiunknown.md)
 
