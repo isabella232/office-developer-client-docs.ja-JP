@@ -8,20 +8,20 @@ api_type:
 - COM
 ms.assetid: 9b82097c-dbd6-4ba0-a6cb-292301f9402b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 4f41abe2ee41946f68e1d79c75b36791364ea970
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: dab13577e503a063ed1ebb48a3d6a5c531179b21
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803786"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570262"
 ---
-# <a name="sample-restriction-code"></a><span data-ttu-id="d1cda-103">制限のサンプル コード</span><span class="sxs-lookup"><span data-stu-id="d1cda-103">Sample restriction code</span></span>
+# <a name="sample-restriction-code"></a><span data-ttu-id="a6505-103">制限のサンプル コード</span><span class="sxs-lookup"><span data-stu-id="a6505-103">Sample restriction code</span></span>
 
-<span data-ttu-id="d1cda-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="d1cda-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="a6505-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="a6505-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="d1cda-105">次のサンプル コードは、件名に「バレーボール」という単語が含まれていないすべてのメッセージをフィルターする制約を作成する方法を示していますし、、Sam から政美に送信されなかった。</span><span class="sxs-lookup"><span data-stu-id="d1cda-105">The following sample code shows how to create a restriction that filters out all messages that do not contain the word "volleyball" in the subject line and were not sent to Sue from Sam.</span></span> <span data-ttu-id="d1cda-106">[SRestriction](srestriction.md)構造のツリーは、 [SAndRestriction](sandrestriction.md)構造体を使用して実装、**および**制限をされている最上位のノードを持つ必要は。</span><span class="sxs-lookup"><span data-stu-id="d1cda-106">A tree of [SRestriction](srestriction.md) structures is required, with the top node being an **AND** restriction implemented with an [SAndRestriction](sandrestriction.md) structure.</span></span> <span data-ttu-id="d1cda-107">政美に送信されたメッセージを検索するサブオブジェクトの制限、Sam からのメッセージを検索するコンテンツの制限とメッセージを検索するもう 1 つ**と**制限は、 **AND**演算で結ばれている 3 つの制限「バレーボール」を含む件名が指定されています。</span><span class="sxs-lookup"><span data-stu-id="d1cda-107">The three restrictions that are joined by the **AND** operation are a subobject restriction that searches for messages sent to Sue, a content restriction that searches for messages from Sam, and another **AND** restriction that searches for messages that have a subject containing "volleyball."</span></span> <span data-ttu-id="d1cda-108">**あるの PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) は、必要なプロパティではないため、**既存**の制限に含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="d1cda-108">Because **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) is not a required property, an **Exist** restriction must be included.</span></span> 
+<span data-ttu-id="a6505-105">次のサンプル コードは、件名に「バレーボール」という単語が含まれていないすべてのメッセージをフィルターする制約を作成する方法を示していますし、、Sam から政美に送信されなかった。</span><span class="sxs-lookup"><span data-stu-id="a6505-105">The following sample code shows how to create a restriction that filters out all messages that do not contain the word "volleyball" in the subject line and were not sent to Sue from Sam.</span></span> <span data-ttu-id="a6505-106">[SRestriction](srestriction.md)構造のツリーは、 [SAndRestriction](sandrestriction.md)構造体を使用して実装、**および**制限をされている最上位のノードを持つ必要は。</span><span class="sxs-lookup"><span data-stu-id="a6505-106">A tree of [SRestriction](srestriction.md) structures is required, with the top node being an **AND** restriction implemented with an [SAndRestriction](sandrestriction.md) structure.</span></span> <span data-ttu-id="a6505-107">政美に送信されたメッセージを検索するサブオブジェクトの制限、Sam からのメッセージを検索するコンテンツの制限とメッセージを検索するもう 1 つ**と**制限は、 **AND**演算で結ばれている 3 つの制限「バレーボール」を含む件名が指定されています。</span><span class="sxs-lookup"><span data-stu-id="a6505-107">The three restrictions that are joined by the **AND** operation are a subobject restriction that searches for messages sent to Sue, a content restriction that searches for messages from Sam, and another **AND** restriction that searches for messages that have a subject containing "volleyball."</span></span> <span data-ttu-id="a6505-108">**あるの PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) は、必要なプロパティではないため、**既存**の制限に含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="a6505-108">Because **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) is not a required property, an **Exist** restriction must be included.</span></span> 
   
-<span data-ttu-id="d1cda-109">このコードを使用して、動的な割り当てと初期化します。割り当ておよび同様に静的に初期化することはできます。</span><span class="sxs-lookup"><span data-stu-id="d1cda-109">This code uses dynamic allocation and initialization; it is possible to allocate and initialize statically as well.</span></span> <span data-ttu-id="d1cda-110">簡潔に、次に発生する必要がありますエラーのチェック割り当て呼び出しに含まれていないサンプルです。</span><span class="sxs-lookup"><span data-stu-id="d1cda-110">In the interest of brevity, the error checking that must occur following the allocation calls is not included in the sample.</span></span> 
+<span data-ttu-id="a6505-109">このコードを使用して、動的な割り当てと初期化します。割り当ておよび同様に静的に初期化することはできます。</span><span class="sxs-lookup"><span data-stu-id="a6505-109">This code uses dynamic allocation and initialization; it is possible to allocate and initialize statically as well.</span></span> <span data-ttu-id="a6505-110">簡潔に、次に発生する必要がありますエラーのチェック割り当て呼び出しに含まれていないサンプルです。</span><span class="sxs-lookup"><span data-stu-id="a6505-110">In the interest of brevity, the error checking that must occur following the allocation calls is not included in the sample.</span></span> 
   
 ```cpp
 HRESULT BuildRestriction (LPSTR pszSent, LPSTR pszFrom,
@@ -96,7 +96,7 @@ HRESULT BuildRestriction (LPSTR pszSent, LPSTR pszFrom,
  
 ```
 
-## <a name="see-also"></a><span data-ttu-id="d1cda-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="d1cda-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a6505-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="a6505-111">See also</span></span>
 
-- [<span data-ttu-id="d1cda-112">MAPI テーブル</span><span class="sxs-lookup"><span data-stu-id="d1cda-112">MAPI Tables</span></span>](mapi-tables.md)
+- [<span data-ttu-id="a6505-112">MAPI テーブル</span><span class="sxs-lookup"><span data-stu-id="a6505-112">MAPI Tables</span></span>](mapi-tables.md)
 

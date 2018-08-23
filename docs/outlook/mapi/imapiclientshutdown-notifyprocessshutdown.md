@@ -12,41 +12,41 @@ api_type:
 - COM
 ms.assetid: 42dd7889-5e00-419a-91e7-8350be4efd35
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 04a9b631c3a4f33282bce44e06d92e089349c76b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1c66032788758b04558a37a4c35ff4dd6c702fa2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800438"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568267"
 ---
-# <a name="imapiclientshutdownnotifyprocessshutdown"></a><span data-ttu-id="e95b9-103">IMAPIClientShutdown::NotifyProcessShutdown</span><span class="sxs-lookup"><span data-stu-id="e95b9-103">IMAPIClientShutdown::NotifyProcessShutdown</span></span>
+# <a name="imapiclientshutdownnotifyprocessshutdown"></a><span data-ttu-id="18c19-103">IMAPIClientShutdown::NotifyProcessShutdown</span><span class="sxs-lookup"><span data-stu-id="18c19-103">IMAPIClientShutdown::NotifyProcessShutdown</span></span>
 
   
   
-<span data-ttu-id="e95b9-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="e95b9-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="18c19-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="18c19-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="e95b9-105">続行するのには MAPI クライアントの意図をシャット ダウンを示します。</span><span class="sxs-lookup"><span data-stu-id="e95b9-105">Indicates the intention of the MAPI client to proceed with shut down.</span></span>
+<span data-ttu-id="18c19-105">続行するのには MAPI クライアントの意図をシャット ダウンを示します。</span><span class="sxs-lookup"><span data-stu-id="18c19-105">Indicates the intention of the MAPI client to proceed with shut down.</span></span>
   
 ```cpp
 HRESULT NotifyProcessShutdown ();
 ```
 
-## <a name="return-value"></a><span data-ttu-id="e95b9-106">�߂�l</span><span class="sxs-lookup"><span data-stu-id="e95b9-106">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="18c19-106">�߂�l</span><span class="sxs-lookup"><span data-stu-id="18c19-106">Return value</span></span>
 
-<span data-ttu-id="e95b9-107">S_OK</span><span class="sxs-lookup"><span data-stu-id="e95b9-107">S_OK</span></span>
+<span data-ttu-id="18c19-107">S_OK</span><span class="sxs-lookup"><span data-stu-id="18c19-107">S_OK</span></span>
   
-> <span data-ttu-id="e95b9-108">MAPI サブシステムは、MAPI プロバイダーが読み込まれている MAPI クライアントが高速シャット ダウンを実行しようとしていることを通知しようとしています。</span><span class="sxs-lookup"><span data-stu-id="e95b9-108">The MAPI subsystem has attempted to notify loaded MAPI providers that the MAPI client is going to do a fast shutdown.</span></span>
+> <span data-ttu-id="18c19-108">MAPI サブシステムは、MAPI プロバイダーが読み込まれている MAPI クライアントが高速シャット ダウンを実行しようとしていることを通知しようとしています。</span><span class="sxs-lookup"><span data-stu-id="18c19-108">The MAPI subsystem has attempted to notify loaded MAPI providers that the MAPI client is going to do a fast shutdown.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="e95b9-109">注釈</span><span class="sxs-lookup"><span data-stu-id="e95b9-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="18c19-109">注釈</span><span class="sxs-lookup"><span data-stu-id="18c19-109">Remarks</span></span>
 
-<span data-ttu-id="e95b9-110">MAPI クライアントの高速シャット ダウンからのデータの損失を避けるためには、MAPI クライアントが、MAPI サブシステムによって返される S_OK の結果に基づく**IMAPIClientShutdown::NotifyProcessShutdown**と[IMAPIClientShutdown::DoFastShutdown](imapiclientshutdown-dofastshutdown.md)のメソッドを呼び出す必要があります。[IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md)メソッドです。</span><span class="sxs-lookup"><span data-stu-id="e95b9-110">To avoid data loss from the fast shutdown of a MAPI client, MAPI clients should call the **IMAPIClientShutdown::NotifyProcessShutdown** and [IMAPIClientShutdown::DoFastShutdown](imapiclientshutdown-dofastshutdown.md) methods based on the S_OK result returned by the MAPI subsystem in the [IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) method.</span></span> <span data-ttu-id="e95b9-111">詳細については、[高速シャット ダウンのベスト ・ プラクティス](best-practices-for-fast-shutdown.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e95b9-111">For more information, see [Best Practices for Fast Shutdown](best-practices-for-fast-shutdown.md).</span></span>
+<span data-ttu-id="18c19-110">MAPI クライアントの高速シャット ダウンからのデータの損失を避けるためには、MAPI クライアントが、MAPI サブシステムによって返される S_OK の結果に基づく**IMAPIClientShutdown::NotifyProcessShutdown**と[IMAPIClientShutdown::DoFastShutdown](imapiclientshutdown-dofastshutdown.md)のメソッドを呼び出す必要があります。[IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md)メソッドです。</span><span class="sxs-lookup"><span data-stu-id="18c19-110">To avoid data loss from the fast shutdown of a MAPI client, MAPI clients should call the **IMAPIClientShutdown::NotifyProcessShutdown** and [IMAPIClientShutdown::DoFastShutdown](imapiclientshutdown-dofastshutdown.md) methods based on the S_OK result returned by the MAPI subsystem in the [IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) method.</span></span> <span data-ttu-id="18c19-111">詳細については、[高速シャット ダウンのベスト ・ プラクティス](best-practices-for-fast-shutdown.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="18c19-111">For more information, see [Best Practices for Fast Shutdown](best-practices-for-fast-shutdown.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="e95b9-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="e95b9-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="18c19-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="18c19-112">See also</span></span>
 
 
 
-[<span data-ttu-id="e95b9-113">IMAPIClientShutdown : IUnknown</span><span class="sxs-lookup"><span data-stu-id="e95b9-113">IMAPIClientShutdown : IUnknown</span></span>](imapiclientshutdowniunknown.md)
+[<span data-ttu-id="18c19-113">IMAPIClientShutdown : IUnknown</span><span class="sxs-lookup"><span data-stu-id="18c19-113">IMAPIClientShutdown : IUnknown</span></span>](imapiclientshutdowniunknown.md)
 
 
-[<span data-ttu-id="e95b9-114">Mapi クライアントのシャット ダウン</span><span class="sxs-lookup"><span data-stu-id="e95b9-114">Client Shutdown in MAPI</span></span>](client-shutdown-in-mapi.md)
+[<span data-ttu-id="18c19-114">Mapi クライアントのシャット ダウン</span><span class="sxs-lookup"><span data-stu-id="18c19-114">Client Shutdown in MAPI</span></span>](client-shutdown-in-mapi.md)
 

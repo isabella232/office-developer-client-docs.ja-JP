@@ -8,26 +8,26 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 45abee1c-d7fb-b0f9-522d-8ba34caf1094
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: bdb879a2412c817b7b314cd7bf6de1fa4c9f40d2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4b7e59c9ffccb2e063962b2cc4947b4fa54757bf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804228"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572719"
 ---
-# <a name="wrapcompressedrtfstreamex"></a><span data-ttu-id="b95b7-103">WrapCompressedRTFStreamEx</span><span class="sxs-lookup"><span data-stu-id="b95b7-103">WrapCompressedRTFStreamEx</span></span>
+# <a name="wrapcompressedrtfstreamex"></a><span data-ttu-id="2d662-103">WrapCompressedRTFStreamEx</span><span class="sxs-lookup"><span data-stu-id="2d662-103">WrapCompressedRTFStreamEx</span></span>
 
-<span data-ttu-id="b95b7-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="b95b7-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="2d662-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="2d662-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="b95b7-105">圧縮解除で圧縮されたリッチ テキスト形式式 (RTF)、電子メール メッセージの本文圧縮解除ストリームの形式を指定、必要に応じてネイティブ形式、圧縮解除されたストリームに変換し、いずれかの圧縮解除されたストリームを返しますまたは、。ネイティブ ストリームを変換します。</span><span class="sxs-lookup"><span data-stu-id="b95b7-105">Decompresses the the body of an email message that is in compressed Rich Text Format (RTF), indicates the format of the decompressed stream, optionally converts the decompressed stream to its native format, and returns either the decompressed stream or the converted native stream.</span></span>
+<span data-ttu-id="2d662-105">圧縮解除で圧縮されたリッチ テキスト形式式 (RTF)、電子メール メッセージの本文圧縮解除ストリームの形式を指定、必要に応じてネイティブ形式、圧縮解除されたストリームに変換し、いずれかの圧縮解除されたストリームを返しますまたは、。ネイティブ ストリームを変換します。</span><span class="sxs-lookup"><span data-stu-id="2d662-105">Decompresses the the body of an email message that is in compressed Rich Text Format (RTF), indicates the format of the decompressed stream, optionally converts the decompressed stream to its native format, and returns either the decompressed stream or the converted native stream.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="b95b7-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="b95b7-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="2d662-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="2d662-106">Quick info</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="b95b7-107">によってエクスポートされます。</span><span class="sxs-lookup"><span data-stu-id="b95b7-107">Exported by:</span></span>  <br/> |<span data-ttu-id="b95b7-108">msmapi32.dll</span><span class="sxs-lookup"><span data-stu-id="b95b7-108">msmapi32.dll</span></span>  <br/> |
-|<span data-ttu-id="b95b7-109">によって呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="b95b7-109">Called by:</span></span>  <br/> |<span data-ttu-id="b95b7-110">クライアント</span><span class="sxs-lookup"><span data-stu-id="b95b7-110">Client</span></span>  <br/> |
-|<span data-ttu-id="b95b7-111">によって実装されます。</span><span class="sxs-lookup"><span data-stu-id="b95b7-111">Implemented by:</span></span>  <br/> |<span data-ttu-id="b95b7-112">Outlook</span><span class="sxs-lookup"><span data-stu-id="b95b7-112">Outlook</span></span>  <br/> |
+|<span data-ttu-id="2d662-107">によってエクスポートされます。</span><span class="sxs-lookup"><span data-stu-id="2d662-107">Exported by:</span></span>  <br/> |<span data-ttu-id="2d662-108">msmapi32.dll</span><span class="sxs-lookup"><span data-stu-id="2d662-108">msmapi32.dll</span></span>  <br/> |
+|<span data-ttu-id="2d662-109">によって呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="2d662-109">Called by:</span></span>  <br/> |<span data-ttu-id="2d662-110">クライアント</span><span class="sxs-lookup"><span data-stu-id="2d662-110">Client</span></span>  <br/> |
+|<span data-ttu-id="2d662-111">によって実装されます。</span><span class="sxs-lookup"><span data-stu-id="2d662-111">Implemented by:</span></span>  <br/> |<span data-ttu-id="2d662-112">Outlook</span><span class="sxs-lookup"><span data-stu-id="2d662-112">Outlook</span></span>  <br/> |
    
 ```cpp
 HRESULT __stdcall WrapCompressedRTFStreamEx( 
@@ -38,45 +38,45 @@ HRESULT __stdcall WrapCompressedRTFStreamEx(
 
 ```
 
-## <a name="parameters"></a><span data-ttu-id="b95b7-113">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b95b7-113">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="2d662-113">パラメーター</span><span class="sxs-lookup"><span data-stu-id="2d662-113">Parameters</span></span>
 
-<span data-ttu-id="b95b7-114">_lpCompressedRTFStream_</span><span class="sxs-lookup"><span data-stu-id="b95b7-114">_lpCompressedRTFStream_</span></span>
+<span data-ttu-id="2d662-114">_lpCompressedRTFStream_</span><span class="sxs-lookup"><span data-stu-id="2d662-114">_lpCompressedRTFStream_</span></span>
   
-> <span data-ttu-id="b95b7-115">[in]これは、メッセージの[既定のプロパティの PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)で開かれているストリームへのポインターです。</span><span class="sxs-lookup"><span data-stu-id="b95b7-115">[in] This is a pointer to a stream that is opened on the [PidTagRtfCompressed Canonical Property](pidtagrtfcompressed-canonical-property.md) of a message.</span></span> 
+> <span data-ttu-id="2d662-115">[in]これは、メッセージの[既定のプロパティの PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)で開かれているストリームへのポインターです。</span><span class="sxs-lookup"><span data-stu-id="2d662-115">[in] This is a pointer to a stream that is opened on the [PidTagRtfCompressed Canonical Property](pidtagrtfcompressed-canonical-property.md) of a message.</span></span> 
     
-<span data-ttu-id="b95b7-116">_pWCSInfo_</span><span class="sxs-lookup"><span data-stu-id="b95b7-116">_pWCSInfo_</span></span>
+<span data-ttu-id="2d662-116">_pWCSInfo_</span><span class="sxs-lookup"><span data-stu-id="2d662-116">_pWCSInfo_</span></span>
   
-> <span data-ttu-id="b95b7-117">[in]ポインターは、</span><span class="sxs-lookup"><span data-stu-id="b95b7-117">[in] This is a pointer to a</span></span> 
+> <span data-ttu-id="2d662-117">[in]ポインターは、</span><span class="sxs-lookup"><span data-stu-id="2d662-117">[in] This is a pointer to a</span></span> 
     
-   <span data-ttu-id="b95b7-118">関数のオプションを含む[について](rtf_wcsinfo.md)構造体です。</span><span class="sxs-lookup"><span data-stu-id="b95b7-118">[RTF_WCSINFO](rtf_wcsinfo.md) structure that contains options for the function.</span></span> 
+   <span data-ttu-id="2d662-118">関数のオプションを含む[について](rtf_wcsinfo.md)構造体です。</span><span class="sxs-lookup"><span data-stu-id="2d662-118">[RTF_WCSINFO](rtf_wcsinfo.md) structure that contains options for the function.</span></span> 
     
-<span data-ttu-id="b95b7-119">_lppUncompressedRTFStream_</span><span class="sxs-lookup"><span data-stu-id="b95b7-119">_lppUncompressedRTFStream_</span></span>
+<span data-ttu-id="2d662-119">_lppUncompressedRTFStream_</span><span class="sxs-lookup"><span data-stu-id="2d662-119">_lppUncompressedRTFStream_</span></span>
   
-> <span data-ttu-id="b95b7-120">[out]これは、圧縮解除の rtf 形式のストリームが返される位置の場所へのポインターです。</span><span class="sxs-lookup"><span data-stu-id="b95b7-120">[out] This is a pointer to the location where a stream for the decompressed RTF is returned.</span></span> 
+> <span data-ttu-id="2d662-120">[out]これは、圧縮解除の rtf 形式のストリームが返される位置の場所へのポインターです。</span><span class="sxs-lookup"><span data-stu-id="2d662-120">[out] This is a pointer to the location where a stream for the decompressed RTF is returned.</span></span> 
     
-<span data-ttu-id="b95b7-121">_pRetInfo_</span><span class="sxs-lookup"><span data-stu-id="b95b7-121">_pRetInfo_</span></span>
+<span data-ttu-id="2d662-121">_pRetInfo_</span><span class="sxs-lookup"><span data-stu-id="2d662-121">_pRetInfo_</span></span>
   
-> <span data-ttu-id="b95b7-122">[out]これは、返された圧縮解除ストリームの形式に関する情報が含まれている[この](rtf_wcsretinfo.md)構造体へのポインターです。</span><span class="sxs-lookup"><span data-stu-id="b95b7-122">[out] This is a pointer to a [RTF_WCSRETINFO](rtf_wcsretinfo.md) structure that contains information about the format of the returned decompressed stream.</span></span> 
+> <span data-ttu-id="2d662-122">[out]これは、返された圧縮解除ストリームの形式に関する情報が含まれている[この](rtf_wcsretinfo.md)構造体へのポインターです。</span><span class="sxs-lookup"><span data-stu-id="2d662-122">[out] This is a pointer to a [RTF_WCSRETINFO](rtf_wcsretinfo.md) structure that contains information about the format of the returned decompressed stream.</span></span> 
     
-## <a name="return-values"></a><span data-ttu-id="b95b7-123">戻り値</span><span class="sxs-lookup"><span data-stu-id="b95b7-123">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="2d662-123">戻り値</span><span class="sxs-lookup"><span data-stu-id="2d662-123">Return values</span></span>
 
-<span data-ttu-id="b95b7-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="b95b7-124">S_OK</span></span> 
+<span data-ttu-id="2d662-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="2d662-124">S_OK</span></span> 
   
-- <span data-ttu-id="b95b7-125">関数の呼び出しが成功します。</span><span class="sxs-lookup"><span data-stu-id="b95b7-125">The function call is successful.</span></span>
+- <span data-ttu-id="2d662-125">関数の呼び出しが成功します。</span><span class="sxs-lookup"><span data-stu-id="2d662-125">The function call is successful.</span></span>
     
-<span data-ttu-id="b95b7-126">MAPI_E_INVALID_PARAMETER</span><span class="sxs-lookup"><span data-stu-id="b95b7-126">MAPI_E_INVALID_PARAMETER</span></span> 
+<span data-ttu-id="2d662-126">MAPI_E_INVALID_PARAMETER</span><span class="sxs-lookup"><span data-stu-id="2d662-126">MAPI_E_INVALID_PARAMETER</span></span> 
   
-- <span data-ttu-id="b95b7-127">**MAPI_NATIVE_BODY**フラグは、 **ulFlags** 、**について**構造体のフィールドで示される*pWCSInfo*の**MAPI_MODIFY**フラグを使用している場合、この関数が返されます。</span><span class="sxs-lookup"><span data-stu-id="b95b7-127">This is returned if the **MAPI_NATIVE_BODY** flag is combined with the **MAPI_MODIFY** flag in the **ulFlags** field of the **RTF_WCSINFO** structure pointed at by  *pWCSInfo*  .</span></span> 
+- <span data-ttu-id="2d662-127">**MAPI_NATIVE_BODY**フラグは、 **ulFlags** 、**について**構造体のフィールドで示される*pWCSInfo*の**MAPI_MODIFY**フラグを使用している場合、この関数が返されます。</span><span class="sxs-lookup"><span data-stu-id="2d662-127">This is returned if the **MAPI_NATIVE_BODY** flag is combined with the **MAPI_MODIFY** flag in the **ulFlags** field of the **RTF_WCSINFO** structure pointed at by  *pWCSInfo*  .</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="b95b7-128">注釈</span><span class="sxs-lookup"><span data-stu-id="b95b7-128">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2d662-128">注釈</span><span class="sxs-lookup"><span data-stu-id="2d662-128">Remarks</span></span>
 
-<span data-ttu-id="b95b7-129">**WrapCompressedRTFStreamEx**は、ストリームを圧縮解除、圧縮された rtf 形式でカプセル化された電子メール メッセージの本文にアクセスできるように、圧縮解除されたストリームの形式では、および必要に応じてネイティブ形式の本文のストリームを返します。</span><span class="sxs-lookup"><span data-stu-id="b95b7-129">**WrapCompressedRTFStreamEx** allows you to access the body of an email message encapsulated in compressed RTF by decompressing the stream, returns the decompressed stream and its format, and optionally the native body stream.</span></span> <span data-ttu-id="b95b7-130">ネイティブ形式の本文のストリームは、RTF、プレーン テキスト、または HTML で指定できます。</span><span class="sxs-lookup"><span data-stu-id="b95b7-130">The native body stream can be in RTF, plain text, or HTML.</span></span> 
+<span data-ttu-id="2d662-129">**WrapCompressedRTFStreamEx**は、ストリームを圧縮解除、圧縮された rtf 形式でカプセル化された電子メール メッセージの本文にアクセスできるように、圧縮解除されたストリームの形式では、および必要に応じてネイティブ形式の本文のストリームを返します。</span><span class="sxs-lookup"><span data-stu-id="2d662-129">**WrapCompressedRTFStreamEx** allows you to access the body of an email message encapsulated in compressed RTF by decompressing the stream, returns the decompressed stream and its format, and optionally the native body stream.</span></span> <span data-ttu-id="2d662-130">ネイティブ形式の本文のストリームは、RTF、プレーン テキスト、または HTML で指定できます。</span><span class="sxs-lookup"><span data-stu-id="2d662-130">The native body stream can be in RTF, plain text, or HTML.</span></span> 
   
-<span data-ttu-id="b95b7-131">Microsoft Office Outlook オブジェクト モデルでは、 **MailItem**オブジェクトおよび本文テキストの書式を示す[MailItem.BodyFormat プロパティ (Outlook)](http://msdn.microsoft.com/library/f635a0bc-20b7-206c-f558-a4ca2519670f%28Office.15%29.aspx)の**本文**のプロパティを提供します。</span><span class="sxs-lookup"><span data-stu-id="b95b7-131">The Microsoft Office Outlook object model provides a **Body** property for **MailItem** objects and a [MailItem.BodyFormat Property (Outlook)](http://msdn.microsoft.com/library/f635a0bc-20b7-206c-f558-a4ca2519670f%28Office.15%29.aspx) that indicates the format of the body text.</span></span> <span data-ttu-id="b95b7-132">仕様では、Outlook で信頼されていないソリューションは、セキュリティに関するダイアログ ボックスで Outlook セキュリティ ガードの生成を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="b95b7-132">By design, a solution that is not trusted by Outlook invokes security dialog boxes generated by the Outlook Security Guard.</span></span> <span data-ttu-id="b95b7-133">エクスポートされた MAPI 関数**WrapCompressedRTFStreamEx**を使用すると、MAPI を使用して、Outlook オブジェクト モデルではなく、これらのセキュリティ] ダイアログ ボックスを回避するソリューションができます。</span><span class="sxs-lookup"><span data-stu-id="b95b7-133">Using the exported MAPI function **WrapCompressedRTFStreamEx** allows a solution to use MAPI instead of the Outlook object model and avoid these security dialog boxes.</span></span> 
+<span data-ttu-id="2d662-131">Microsoft Office Outlook オブジェクト モデルでは、 **MailItem**オブジェクトおよび本文テキストの書式を示す[MailItem.BodyFormat プロパティ (Outlook)](http://msdn.microsoft.com/library/f635a0bc-20b7-206c-f558-a4ca2519670f%28Office.15%29.aspx)の**本文**のプロパティを提供します。</span><span class="sxs-lookup"><span data-stu-id="2d662-131">The Microsoft Office Outlook object model provides a **Body** property for **MailItem** objects and a [MailItem.BodyFormat Property (Outlook)](http://msdn.microsoft.com/library/f635a0bc-20b7-206c-f558-a4ca2519670f%28Office.15%29.aspx) that indicates the format of the body text.</span></span> <span data-ttu-id="2d662-132">仕様では、Outlook で信頼されていないソリューションは、セキュリティに関するダイアログ ボックスで Outlook セキュリティ ガードの生成を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="2d662-132">By design, a solution that is not trusted by Outlook invokes security dialog boxes generated by the Outlook Security Guard.</span></span> <span data-ttu-id="2d662-133">エクスポートされた MAPI 関数**WrapCompressedRTFStreamEx**を使用すると、MAPI を使用して、Outlook オブジェクト モデルではなく、これらのセキュリティ] ダイアログ ボックスを回避するソリューションができます。</span><span class="sxs-lookup"><span data-stu-id="2d662-133">Using the exported MAPI function **WrapCompressedRTFStreamEx** allows a solution to use MAPI instead of the Outlook object model and avoid these security dialog boxes.</span></span> 
   
-<span data-ttu-id="b95b7-134">**MAPI\_NATIVE_BODY**とフラグを組み合わせることはできません、 **MAPI\_変更**の**ulFlags**フィールドのフラグ、 **RTF\_WCSINFO** *pWCSInfo*が指す構造体のみを使用するネイティブ読み取り専用モードで本文のストリーム。</span><span class="sxs-lookup"><span data-stu-id="b95b7-134">Because the **MAPI\_NATIVE_BODY** flag cannot be combined with the **MAPI\_MODIFY** flag in the **ulFlags** field of the **RTF\_WCSINFO** structure pointed at by *pWCSInfo*, you can only access the native body stream in read-only mode.</span></span> <span data-ttu-id="b95b7-135">読み取り/書き込みモードでのネイティブ形式の本文のストリームにアクセスするには、 **WrapCompressedRTFStream**関数を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b95b7-135">To access the native body stream in read/write mode, you should use the **WrapCompressedRTFStream** function.</span></span> 
+<span data-ttu-id="2d662-134">**MAPI\_NATIVE_BODY**とフラグを組み合わせることはできません、 **MAPI\_変更**の**ulFlags**フィールドのフラグ、 **RTF\_WCSINFO** *pWCSInfo*が指す構造体のみを使用するネイティブ読み取り専用モードで本文のストリーム。</span><span class="sxs-lookup"><span data-stu-id="2d662-134">Because the **MAPI\_NATIVE_BODY** flag cannot be combined with the **MAPI\_MODIFY** flag in the **ulFlags** field of the **RTF\_WCSINFO** structure pointed at by *pWCSInfo*, you can only access the native body stream in read-only mode.</span></span> <span data-ttu-id="2d662-135">読み取り/書き込みモードでのネイティブ形式の本文のストリームにアクセスするには、 **WrapCompressedRTFStream**関数を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2d662-135">To access the native body stream in read/write mode, you should use the **WrapCompressedRTFStream** function.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="b95b7-136">関連項目</span><span class="sxs-lookup"><span data-stu-id="b95b7-136">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2d662-136">関連項目</span><span class="sxs-lookup"><span data-stu-id="2d662-136">See also</span></span>
 
-- [<span data-ttu-id="b95b7-137">圧縮 RTF 内のメッセージ本体を取り出し、ネイティブ形式に変換する</span><span class="sxs-lookup"><span data-stu-id="b95b7-137">Retrieve the Body of a Message in Compressed RTF and Convert It to Its Native Format</span></span>](how-to-retrieve-the-body-of-a-message-in-compressed-rtf-and-convert.md)
+- [<span data-ttu-id="2d662-137">圧縮 RTF 内のメッセージ本体を取り出し、ネイティブ形式に変換する</span><span class="sxs-lookup"><span data-stu-id="2d662-137">Retrieve the Body of a Message in Compressed RTF and Convert It to Its Native Format</span></span>](how-to-retrieve-the-body-of-a-message-in-compressed-rtf-and-convert.md)
 
