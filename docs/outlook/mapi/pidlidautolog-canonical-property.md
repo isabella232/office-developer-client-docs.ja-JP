@@ -1,5 +1,5 @@
 ---
-title: PidLidAutoLog の標準的なプロパティ
+title: PidLidAutoLog 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 60b7a411-a884-4836-8aca-a205bd503fef
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 84118414b9960c42babe91b43b13982f90d376bd
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,21 +19,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801823"
 ---
-# <a name="pidlidautolog-canonical-property"></a>PidLidAutoLog の標準的なプロパティ
+# <a name="pidlidautolog-canonical-property"></a>PidLidAutoLog 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 この連絡先に関連付けられている各アクションの仕訳帳を作成するかどうかを指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidAutoLog  <br/> |
+|関連するプロパティ:  <br/> |dispidAutoLog  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Address  <br/> |
 |長い ID (LID):  <br/> |0x00008025  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |連絡先  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
+|領域:  <br/> |Contact  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
@@ -61,7 +61,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

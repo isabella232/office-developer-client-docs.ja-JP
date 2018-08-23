@@ -23,7 +23,7 @@ ms.locfileid: "19801249"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 トランスポート プロバイダーの状態のオブジェクトを開きます。
   
@@ -36,7 +36,7 @@ HRESULT OpenStatusEntry(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpInterface_
   
@@ -64,7 +64,7 @@ S_OK
   
 > 呼び出しが成功し、予期される値または値が返されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI スプーラーは、クライアント アプリケーションは、トランスポート プロバイダーの状態のテーブルの行のエントリ id の**OpenEntry**メソッドを呼び出すときに、 **IXPLogon::OpenStatusEntry**メソッドを呼び出します。 **OpenStatusEntry**は、この特定のトランスポート プロバイダーへのログオンに関連付けられている**IMAPIStatus**インターフェイスを持つオブジェクトを開きます。 (たとえば、 [IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md)メソッドを使用してログオン セッションを再構成するか、[を使用してログオン セッションの状態を検証するために**IMAPIStatus**メソッドを呼び出すクライアント アプリケーションを有効にするのにはこのオブジェクトを使用してIMAPIStatus::ValidateState](imapistatus-validatestate.md)メソッド)。 
   
@@ -72,7 +72,7 @@ MAPI スプーラーは、クライアント アプリケーションは、ト�
 
 
 
-[IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)
+[IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 

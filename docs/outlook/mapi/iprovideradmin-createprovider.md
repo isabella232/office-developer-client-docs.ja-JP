@@ -21,7 +21,7 @@ ms.locfileid: "19801172"
 ---
 # <a name="iprovideradmincreateprovider"></a>IProviderAdmin::CreateProvider
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ サービスにサービス プロバイダーを追加します。 
   
@@ -36,7 +36,7 @@ HRESULT CreateProvider(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpszProvider_
   
@@ -76,7 +76,7 @@ MAPI_E_USER_CANCEL
   
 > ユーザー操作がキャンセルされました、通常ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IProviderAdmin::CreateProvider**メソッドでは、メッセージ サービスにサービス プロバイダーを追加します。 _LpszProvider_パラメーターは、メッセージ サービスに属しているプロバイダーの名前をポイントする必要があります。 **CreateProvider**は名前がサービスのプロバイダーの名前と一致するかどうかを確認していません。渡された名前がサービス名に一致しない場合、呼び出しが成功したが、結果は予測できません。 ほとんどのメッセージ サービスでは、プロバイダーを追加または削除、プロファイルを使用している間は許可されません。 
   
@@ -87,5 +87,5 @@ MAPI_E_USER_CANCEL
 - [MAPIUID](mapiuid.md)  
 - [MSGSERVICEENTRY](msgserviceentry.md)  
 - [SPropValue](spropvalue.md)  
-- [IProviderAdmin: IUnknown](iprovideradminiunknown.md)
+- [IProviderAdmin : IUnknown](iprovideradminiunknown.md)
 

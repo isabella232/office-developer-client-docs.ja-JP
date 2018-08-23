@@ -1,5 +1,5 @@
 ---
-title: MAPI プログラミングの概要
+title: MAPI �v���O���~���O�̊T�v
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801414"
 ---
-# <a name="mapi-programming-overview"></a>MAPI プログラミングの概要
+# <a name="mapi-programming-overview"></a>MAPI �v���O���~���O�̊T�v
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 この Microsoft Outlook メッセージング API (MAPI) の参照は、C に書かれてと、C++ 開発者は、さまざまなニーズし、メッセージが発生します。 開発者にとって、メッセージング機能を持つアプリケーションを拡張するために MAPI を使用する、特定の前提となる知識は必要ありません。 メッセージの背景と、コンポーネント オブジェクト モデル (COM) 本格的なワークグループ アプリケーション、または特殊なメッセージング システムのサービス用のドライバーを作成するのには MAPI を使用する必要があります。
   

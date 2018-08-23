@@ -1,5 +1,5 @@
 ---
-title: PidLidAppointmentTimeZoneDefinitionEndDisplay の標準的なプロパティ
+title: PidLidAppointmentTimeZoneDefinitionEndDisplay 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7b6193cb-612b-408e-b9bc-285df313e2cc
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 119cd7edc5b9b615a39cea6aa1c405c396ce2afa
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801813"
 ---
-# <a name="pidlidappointmenttimezonedefinitionenddisplay-canonical-property"></a>PidLidAppointmentTimeZoneDefinitionEndDisplay の標準的なプロパティ
+# <a name="pidlidappointmenttimezonedefinitionenddisplay-canonical-property"></a>PidLidAppointmentTimeZoneDefinitionEndDisplay 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 単独の予定または会議出席依頼の終了時刻が選択されているときに使用されるタイム ゾーンの説明を格納する[TZDEFINITION](http://msdn.microsoft.com/library/0ae21571-2299-6407-807c-428668bb6798%28Office.15%29.aspx)構造体の保存形式に対応するストリームが含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidApptTZDefEndDisplay  <br/> |
+|関連するプロパティ:  <br/> |dispidApptTZDefEndDisplay  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x0000825F  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |カレンダー  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
+|領域:  <br/> |予定表  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 2003 または以前のバージョンを Microsoft Office Outlook とソリューションにコラボレーション データ オブジェクト (CDO) 1.2.1 を置くし、Outlook または Microsoft Exchange Server では、予定表更新ツールを実行していないことは、シングル ・ インスタンスの終了時刻と開始時刻を格納します。予定および会議出席依頼で世界協定時刻 (UTC)。 これらのクライアントは、予定または会議出席依頼を作成する場所のタイム ゾーンの情報を格納していません。
   
@@ -71,7 +71,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 長期のエントリ Id
+title: 長期エントリ ID
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801289"
 ---
-# <a name="long-term-entry-identifiers"></a>長期のエントリ Id
+# <a name="long-term-entry-identifiers"></a>長期エントリ ID
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 長期のエントリ id は、オブジェクトには、長寿命を持つ識別子が必要な場合、オブジェクトへのサービス プロバイダーによって割り当てられます。 長期のエントリ id は、常に有効期間は数週間または数か月と、プロバイダーによって、他のワークステーションで有効にすることができます。 カスタム受信者のアドレス帳のプロバイダーによって作成された長期的な識別子は、汎用的に有効です。 
   

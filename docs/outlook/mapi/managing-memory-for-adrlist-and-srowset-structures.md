@@ -17,7 +17,7 @@ ms.locfileid: "19801304"
 ---
 # <a name="managing-memory-for-adrlist-and-srowset-structures"></a>ADRLIST と SRowSet 構造体のメモリを管理するには」
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 バッファーに割り当てるすべてのメモリを 1 つの**MAPIAllocateBuffer**呼び出しを可能な限り要件は、アドレス一覧、または**ADRLIST**、および行セット、または**SRowSet**、構造体を使用する場合に適用されません。 
   

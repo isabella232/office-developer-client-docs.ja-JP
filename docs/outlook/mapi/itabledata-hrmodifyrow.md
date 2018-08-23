@@ -23,7 +23,7 @@ ms.locfileid: "19801239"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 既存の行が上書きされる、テーブルの新しい行を挿入します。
   
@@ -33,7 +33,7 @@ HRESULT HrModifyRow(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpSRow_
   
@@ -49,7 +49,7 @@ MAPI_E_INVALID_PARAMETER
   
 > 渡された行には、インデックス列がありません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **ITableData::HrModifyRow**メソッドは、 _lpSRow_パラメーターが指す**SRow**の構造体によって記述された行を挿入します。 テーブル内に既に存在する場合は、その_lpSRow_ポイントの行とそのインデックス列に対して同じ値を持つ行を既存の行が置き換えられます。 行が存在しない場合、 **SRow**構造体に含まれる 1 つに一致する、 **HrModifyRow**は、テーブルの末尾に行を追加します。 
   
@@ -67,5 +67,5 @@ _LpSRow_で指定された行の列をテーブル内の列と同じ順序にす
   
 [TABLE_NOTIFICATION](table_notification.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

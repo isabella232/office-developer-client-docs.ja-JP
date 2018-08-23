@@ -1,5 +1,5 @@
 ---
-title: メッセージ ・ ストアの機能
+title: メッセージ ストアの機能
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: d9167cd2-fc88-46b1-9a26-151955fb606c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a26701b5b0f9f31277a442321e5e3016cfcb4d1e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801636"
 ---
-# <a name="message-store-features"></a>メッセージ ・ ストアの機能
+# <a name="message-store-features"></a>メッセージ ストアの機能
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ストア プロバイダーは、その他の MAPI サービス プロバイダーよりもより複雑なメッセージ ストア プロバイダーがある幅広いオプションの機能を実装することができます。 メッセージ ストア プロバイダーに必要な機能の一覧は、非常に短い。 ただし、一般的なメッセージ ストア プロバイダー サポートのオプション機能は、省略可能な機能の多くは、非常に有用なまたはほとんどの MAPI クライアントで必要なためです。 メッセージ ストア プロバイダーを実装できますされいることかどうか各機能は、必要なすべてのメッセージの省略可能なストア プロバイダーの既定のメッセージ ストア プロバイダーの主要な機能を次の表に一覧します。
   

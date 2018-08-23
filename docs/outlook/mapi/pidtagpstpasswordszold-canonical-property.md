@@ -1,5 +1,5 @@
 ---
-title: PidTagPstPasswordSzOld の標準的なプロパティ
+title: PidTagPstPasswordSzOld 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,7 +9,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: eca2ba85-27bf-445b-8f87-b56ae879a72f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 69d62c4433d85a0e6cd9cf9b3f10acb9d758ffb1
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,19 +17,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803228"
 ---
-# <a name="pidtagpstpasswordszold-canonical-property"></a>PidTagPstPasswordSzOld の標準的なプロパティ
+# <a name="pidtagpstpasswordszold-canonical-property"></a>PidTagPstPasswordSzOld 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 パーソナル ストレージ表 (.pst ファイル) のように構成されているパスワードが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_PST_PW_SZ_OLD、PR_PST_PW_SZ_OLD_A、PR_PST_PW_SZ_OLD_W  <br/> |
+|関連するプロパティ:  <br/> |PR_PST_PW_SZ_OLD、PR_PST_PW_SZ_OLD_A、PR_PST_PW_SZ_OLD_W  <br/> |
 |識別子:  <br/> |0x6703  <br/> |
-|データを入力します。  <br/> |PT_STRING8、PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |領域:  <br/> |パーソナル ストレージ表 (.pst) 内部  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -58,7 +58,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

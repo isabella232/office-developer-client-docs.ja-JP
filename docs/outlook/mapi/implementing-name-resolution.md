@@ -1,5 +1,5 @@
 ---
-title: 名前解決を実装します。
+title: 名前解決の実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800936"
 ---
-# <a name="implementing-name-resolution"></a>名前解決を実装します。
+# <a name="implementing-name-resolution"></a>名前解決の実装
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳プロバイダーは、名前解決をサポートするため、表示名を持つエントリ識別子を関連付けるプロセスです。 クライアントは、送信メッセージの受信者の一覧の各メンバーが有効なアドレスに対応していることを確認するのには[IAddrBook::ResolveName](iaddrbook-resolvename.md)を呼び出すときに名前解決を開始します。 
   

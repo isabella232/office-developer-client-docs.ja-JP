@@ -1,5 +1,5 @@
 ---
-title: PidTagContainerClass の標準的なプロパティ
+title: PidTagContainerClass 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: db249e9e-f1f0-4b95-8cd9-daa7c53ddb32
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9d40c21cde6bf3a6e8e37dda80dd6f900f233a0e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802590"
 ---
-# <a name="pidtagcontainerclass-canonical-property"></a>PidTagContainerClass の標準的なプロパティ
+# <a name="pidtagcontainerclass-canonical-property"></a>PidTagContainerClass 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォルダーの種類を説明する文字列が含まれています。 このプロパティを無視することが一般的には、Exchange Server 2003 のメールボックス マネージャーの前に、Microsoft® Exchange Server のバージョンはこのプロパティが存在することを期待しています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_CONTAINER_CLASS、PR_CONTAINER_CLASS_A、PR_CONTAINER_CLASS_W  <br/> |
+|関連するプロパティ:  <br/> |PR_CONTAINER_CLASS、PR_CONTAINER_CLASS_A、PR_CONTAINER_CLASS_W  <br/> |
 |識別子:  <br/> |0x3613  <br/> |
-|データを入力します。  <br/> |PT_STRING8、PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |領域:  <br/> |Container  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これらのプロパティは、通常は Exchange Server では使用されません。 ただし、Microsoft Office Outlook® に添付のメールボックス フォルダーです。 さらに、Exchange Server 2003 のメールボックス マネージャーの前に Exchange Server のバージョンが正しく処理されないこれらのプロパティを持たないフォルダーです。
   
@@ -89,7 +89,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

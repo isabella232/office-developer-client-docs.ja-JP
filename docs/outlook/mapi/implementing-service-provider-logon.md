@@ -1,5 +1,5 @@
 ---
-title: サービス プロバイダーへのログオンを実装します。
+title: サービス プロバイダー ログオンの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,9 +15,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800949"
 ---
-# <a name="implementing-service-provider-logon"></a>サービス プロバイダーへのログオンを実装します。
+# <a name="implementing-service-provider-logon"></a>サービス プロバイダー ログオンの実装
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI は、エントリ ポイント関数から返すするポインターを使用してログオン プロセスを開始するのには、プロバイダーのオブジェクトでメソッドを呼び出します。 方法は異なります、サービス ・ プロバイダーの種類によって次のように。
   
@@ -67,5 +67,5 @@ MAPI は、エントリ ポイント関数から返すするポインターを�
   
 ## <a name="see-also"></a>関連項目
 
-- [サービス プロバイダーを開始します。](starting-a-service-provider.md)
+- [サービス プロバイダーの開始](starting-a-service-provider.md)
 

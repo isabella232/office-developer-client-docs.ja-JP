@@ -1,5 +1,5 @@
 ---
-title: PidLidLinkedTaskItems の標準的なプロパティ
+title: PidLidLinkedTaskItems 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ee735ae8-e527-4538-a633-c3f57a36f0a1
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d91e7ceb877a4f1a7ce10d33e1a25a8773db0547
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802023"
 ---
-# <a name="pidlidlinkedtaskitems-canonical-property"></a>PidLidLinkedTaskItems の標準的なプロパティ
+# <a name="pidlidlinkedtaskitems-canonical-property"></a>PidLidLinkedTaskItems 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 予定表に関連するタスクの**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) のプロパティの一覧を指定します。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidLinkedTaskItems  <br/> |
+|関連するプロパティ:  <br/> |dispidLinkedTaskItems  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x0000820C  <br/> |
-|データを入力します。  <br/> |PT_MV_BINARY  <br/> |
+|データの種類 :   <br/> |PT_MV_BINARY  <br/> |
 |領域:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティが必要ではありません。
   
@@ -61,14 +61,14 @@ Mapidefs.h
 
 
 
-[PidTagEntryId の標準的なプロパティ](pidtagentryid-canonical-property.md)
+[PidTagEntryId 標準プロパティ](pidtagentryid-canonical-property.md)
 
 
 [MAPI プロパティ](mapi-properties.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

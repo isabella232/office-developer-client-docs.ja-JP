@@ -1,5 +1,5 @@
 ---
-title: PidTagReadReceiptRequested の標準的なプロパティ
+title: PidTagReadReceiptRequested 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7db0645b-f3ab-4fc4-b865-68c952aeb359
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1d4d4404d175458d5b708948b11c93b734a8bd1f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803242"
 ---
-# <a name="pidtagreadreceiptrequested-canonical-property"></a>PidTagReadReceiptRequested の標準的なプロパティ
+# <a name="pidtagreadreceiptrequested-canonical-property"></a>PidTagReadReceiptRequested 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージの送信者は受信者がメッセージを読んだときは、リードのレポートを生成するメッセージング システムを希望する場合は TRUE が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_READ_RECEIPT_REQUESTED  <br/> |
+|関連するプロパティ:  <br/> |PR_READ_RECEIPT_REQUESTED  <br/> |
 |識別子:  <br/> |0x0029  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |Email  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
+|領域:  <br/> |メール  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、[ **PR_READ_RECEIPT_ENTRYID** ([PidTagReadReceiptEntryId](pidtagreadreceiptentryid-canonical-property.md)) と**PR_READ_RECEIPT_SEARCH_KEY** ([PidTagReadReceiptSearchKey](pidtagreadreceiptsearchkey-canonical-property.md)) のプロパティ値を検証するのには TRUE に設定する必要があります。
   
@@ -70,7 +70,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,5 +1,5 @@
 ---
-title: IUnknown インターフェイスを実装します。
+title: IUnknown インターフェイスの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800961"
 ---
-# <a name="implementing-the-iunknown-interface"></a>IUnknown インターフェイスを実装します。
+# <a name="implementing-the-iunknown-interface"></a>IUnknown インターフェイスの実装
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 すべての MAPI オブジェクトに実装されている、 [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx)インターフェイスのメソッドをサポートして通信とオブジェクト管理を決める基準について説明します。 
   
@@ -36,5 +36,5 @@ ms.locfileid: "19800961"
 
 
 
-[MAPI オブジェクトを実装します。](implementing-mapi-objects.md)
+[MAPI オブジェクトの実装](implementing-mapi-objects.md)
 

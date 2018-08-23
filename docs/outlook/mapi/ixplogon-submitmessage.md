@@ -23,7 +23,7 @@ ms.locfileid: "19801269"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI スプーラーがメッセージを配信するトランスポート プロバイダーを持っていることを示します。
   
@@ -84,7 +84,7 @@ MAPI_E_WAIT
   
 > 一時的な問題では、トランスポート プロバイダーがメッセージを処理できなくなります。 _LpulReturnParm_パラメーターは、MAPI スプーラーが、メッセージを再送信するまでの秒数を設定する必要があります。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI スプーラーは、必要があるメッセージを配信するトランスポート プロバイダーの場合、 **IXPLogon::SubmitMessage**メソッドを呼び出します。 メッセージは、 _lpMessage_パラメーターを使用して、トランスポート プロバイダーに渡されます。 
   
@@ -128,5 +128,5 @@ MAPI スプーラーは、必要があるメッセージを配信するトラン
   
 [IXPLogon::TransportNotify](ixplogon-transportnotify.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 

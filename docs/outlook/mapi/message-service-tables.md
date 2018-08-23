@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: b93ab837-3918-4427-b013-bedc6f5276e4
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 81772115fcd4f081718dd560759f6ab93dc7c11c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19801652"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ サービス テーブルには、現在のプロファイル内のメッセージ サービスに関する情報が含まれています。 MAPI セッションごとに MAPI によって実装され、構成のサポートを提供する特別な目的のクライアント アプリケーションによって使用されるメッセージ サービスの 1 つのテーブルがあります。 
   

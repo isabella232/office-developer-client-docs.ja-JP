@@ -1,5 +1,5 @@
 ---
-title: PidTagOriginalEntryId の標準的なプロパティ
+title: PidTagOriginalEntryId 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8197d2c7-8665-41b8-bd3a-e9c1c2e642e9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d60531b087d00ca63a060a4dbfac559ba3b01788
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803075"
 ---
-# <a name="pidtagoriginalentryid-canonical-property"></a>PidTagOriginalEntryId の標準的なプロパティ
+# <a name="pidtagoriginalentryid-canonical-property"></a>PidTagOriginalEntryId 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 個人用アドレス帳にアドレス帳やその他の書き込み可能なアドレス帳からコピーしたエントリの元のエントリ id が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ORIGINAL_ENTRYID  <br/> |
+|関連するプロパティ:  <br/> |PR_ORIGINAL_ENTRYID  <br/> |
 |識別子:  <br/> |0x3A12  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、コピーしたエントリの元のソースに関する情報を含むプロパティのいずれかです。
   
@@ -74,7 +74,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

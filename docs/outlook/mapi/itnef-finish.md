@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 01a868f4-afda-43ba-bc17-c33ae56b7b7d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2b95e0dd62d83dd83a064ee4627811fcb24af921
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801244"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 完了するとキューに登録されたすべてのトランスポート ニュートラル カプセル化形式 (TNEF) 操作を処理し、待機しています。 
   
@@ -55,7 +55,7 @@ S_OK
   
 > 呼び出しが成功し、予期される値または値が返されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 プロバイダー、メッセージ ストア プロバイダーでは、どのエンコーディングのすべてのプロパティのエンコーディングを実行する**ITnef::Finish**メソッドは、 [ITnef::AddProps](itnef-addprops.md)メソッドと[ITnef::SetProps](itnef-setprops.md)メソッドの呼び出しで要求されたゲートウェイの呼び出しを転送します。 TNEF オブジェクトは、 [OpenTnefStream](opentnefstream.md)または[OpenTnefStreamEx](opentnefstreamex.md)関数の TNEF_ENCODE フラグを使用して開かれた、**完了**メソッドは要求されたプロパティをそのオブジェクトに渡されるカプセル化のストリームにエンコードします。 TNEF_DECODE フラグを使用して、TNEF オブジェクトが開かれた場合、**終了**メソッドは TNEF ストリームからプロパティをデコードしに属しているメッセージに書き戻されます。 
   
@@ -87,11 +87,11 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [OpenTnefStreamEx](opentnefstreamex.md)
   
-[PidTagAttachNumber の標準的なプロパティ](pidtagattachnumber-canonical-property.md)
+[PidTagAttachNumber 標準プロパティ](pidtagattachnumber-canonical-property.md)
   
 [STnefProblemArray](stnefproblemarray.md)
   
-[ITnef: IUnknown](itnefiunknown.md)
+[ITnef : IUnknown](itnefiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

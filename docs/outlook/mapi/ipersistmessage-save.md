@@ -23,7 +23,7 @@ ms.locfileid: "19801113"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 変更後のフォームを元に読み込みまたは作成したメッセージに保存します。
   
@@ -34,7 +34,7 @@ HRESULT Save(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pMessage_
   
@@ -50,7 +50,7 @@ S_OK
   
 > フォームが正常に保存されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォームの閲覧者は、変更後のフォームを元に読み込みまたは作成したメッセージに保存するのには**IPersistMessage::Save**メソッドを呼び出します。 
   
@@ -72,7 +72,7 @@ _FSameAsLoad_が TRUE に設定されている場合は、フォームの既存�
 
 
 
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 
 
 [フォームの状態](form-states.md)

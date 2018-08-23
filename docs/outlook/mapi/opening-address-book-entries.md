@@ -17,7 +17,7 @@ ms.locfileid: "19801695"
 ---
 # <a name="opening-address-book-entries"></a>アドレス帳のエントリを開く
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアントまたはプロバイダーが要求されると、オブジェクトの 1 つを開くことを MAPI は、プロバイダーの[IABLogon::OpenEntry](iablogon-openentry.md)メソッドを呼び出します。 MAPI では、ターゲット オブジェクトを表すエントリの識別子が、 [MAPIUID](mapiuid.md)の部分のエントリ id を調べ、**への呼び出しでは、プロバイダーが登録されている**MAPIUID**に一致することによって、プロバイダーに属することを決定します。IMAPISupport::SetProviderUID**。 MAPI は、 **OpenEntry**メソッドを呼び出します。 プロバイダーが対応するオブジェクトを取得することで応答する必要があります: コンテナー、配布リスト、またはメッセージングのユーザーです。 
   

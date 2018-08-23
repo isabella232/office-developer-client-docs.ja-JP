@@ -1,5 +1,5 @@
 ---
-title: フォームにメッセージを読み込む
+title: フォームへのメッセージ読み込み
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801277"
 ---
-# <a name="loading-a-message-into-a-form"></a>フォームにメッセージを読み込む
+# <a name="loading-a-message-into-a-form"></a>フォームへのメッセージ読み込み
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームのサーバーを使用してフォームに既存のメッセージをロードするには、次の方法のいずれかを使用します。
   

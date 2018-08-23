@@ -23,7 +23,7 @@ ms.locfileid: "19801169"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 PSTDisableGrow ポリシーをオーバーライドするセッションは、個人用フォルダー (.pst) ファイルを解除します。
   
@@ -41,7 +41,7 @@ S_OK
 
 
 
-[IPSTOVERRIDE1: IUnknown](ipstoverride1iunknown.md)
+[IPSTOVERRIDE1 : IUnknown](ipstoverride1iunknown.md)
   
-[IPSTOVERRIDEREQ: IUnknown](ipstoverridereqiunknown.md)
+[IPSTOVERRIDEREQ : IUnknown](ipstoverridereqiunknown.md)
 

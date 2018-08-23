@@ -1,5 +1,5 @@
 ---
-title: PidTagObsoletedMessageIds の標準的なプロパティ
+title: PidTagObsoletedMessageIds 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: bc979398-f1ad-4496-b982-428b95719369
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b15b87064cc30035004596e93c20ca7d5f653c9f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803055"
 ---
-# <a name="pidtagobsoletedmessageids-canonical-property"></a>PidTagObsoletedMessageIds の標準的なプロパティ
+# <a name="pidtagobsoletedmessageids-canonical-property"></a>PidTagObsoletedMessageIds 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このメッセージの優先するメッセージの識別子が含まれます。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_OBSOLETED_IPMS  <br/> |
+|関連するプロパティ:  <br/> |PR_OBSOLETED_IPMS  <br/> |
 |識別子:  <br/> |0x001F  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティに含まれている識別子は、標準の検索キーが**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) のプロパティの形式を使用してです。
   
@@ -58,7 +58,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

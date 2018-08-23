@@ -1,5 +1,5 @@
 ---
-title: サンプル オフライン状態のアドインをインストールします。
+title: サンプルのオフライン状態アドインのインストール
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801092"
 ---
-# <a name="installing-the-sample-offline-state-add-in"></a>サンプル オフライン状態のアドインをインストールします。
+# <a name="installing-the-sample-offline-state-add-in"></a>サンプルのオフライン状態アドインのインストール
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックでは、ダウンロードしてオフライン状態のサンプル アドインをインストールする手順について説明します。 オフライン状態のサンプル アドインは、COM アドインを Outlook に、**オフライン状態**のメニューを追加し、オフライン状態 API を利用してします。 [オフラインの状態] メニューを有効にするまたは状態の監視を無効にする現在の状態を確認して現在の状態を変更します。 オフライン状態のアドインを実装する方法の詳細については、[アドインの設定をオフラインの状態](setting-up-an-offline-state-add-in.md)を参照してください。
   
@@ -60,15 +60,15 @@ ms.locfileid: "19801092"
 
 
 
-[オフラインの状態の API について](about-the-offline-state-api.md)
+[オフライン状態 API について](about-the-offline-state-api.md)
   
-[サンプル オフライン状態のアドインをインストールします。](installing-the-sample-offline-state-add-in.md)
+[サンプルのオフライン状態アドインのインストール](installing-the-sample-offline-state-add-in.md)
   
-[アドインの状態をオフラインのサンプルについて](about-the-sample-offline-state-add-in.md)
+[サンプルのオフライン状態アドインについて](about-the-sample-offline-state-add-in.md)
   
-[オフライン状態のアドインを設定します。](setting-up-an-offline-state-add-in.md)
+[オフライン状態アドインの設定](setting-up-an-offline-state-add-in.md)
   
-[接続状態の監視は、アドインを使用して、オフライン状態を変更します。](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
+[オフライン状態アドインを使用した接続状態変更のモニター](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
   
-[オフライン状態の追加の接続を切断します。](disconnecting-an-offline-state-add-in.md)
+[オフライン状態アドインの切断](disconnecting-an-offline-state-add-in.md)
 

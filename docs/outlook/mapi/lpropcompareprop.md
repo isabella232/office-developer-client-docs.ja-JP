@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f14ad568-fe45-4875-957d-415d39dc6f28
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d214cb5d449e2f7e42e7ee72774fdc146495adb4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801299"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 等しいかどうかを確認するのには 2 つのプロパティの値を比較します。 
   
@@ -40,7 +40,7 @@ LONG LPropCompareProp(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpSPropValueA_
   
@@ -50,7 +50,7 @@ LONG LPropCompareProp(
   
 > [in]**SPropValue**構造体を比較する 2 番目のプロパティの値を定義することへのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
  **LPropCompareProp**では、ほとんどのプロパティの種類を次の値のいずれかを返します。 
   
@@ -62,7 +62,7 @@ LONG LPropCompareProp(
     
 ブール値など、組み込みの順序がないプロパティの種類またはエラーの種類は、 **LPropCompareProp**関数は、2 つのプロパティの値が等しくない場合に未定義の値を返します。 この未定義の値は 0 以外の値と一貫性のある複数の呼び出し 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 のみを比較する 2 つのプロパティの型が同じ場合は、 **LPropCompareProp**関数を使用します。 
   

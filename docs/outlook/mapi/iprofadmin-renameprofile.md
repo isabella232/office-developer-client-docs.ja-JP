@@ -23,7 +23,7 @@ ms.locfileid: "19801133"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロファイルに新しい名前が割り当てられます。
   
@@ -37,7 +37,7 @@ HRESULT RenameProfile(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpszOldProfileName_
   
@@ -73,7 +73,7 @@ MAPI_E_USER_CANCEL
   
 > ユーザー操作がキャンセルされました、通常ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IProfAdmin::RenameProfile**メソッドは、1 つがある場合、プロファイルに新しい名前を割り当てます。 名前を変更するプロファイルがクライアントによる使用の場合、 **RenameProfile**が呼び出されたときに、 **RenameProfile**は、プロファイルをマークし、プロファイルを使用している間は、名前の変更操作を試みたのではなく、S_OK を返します。 プロファイルが使用されていないと、 **RenameProfile**によって新しい名前が割り当てられます。 
   
@@ -89,5 +89,5 @@ _LpszPassword_は NULL または長さ 0 の文字列へのポインターに常
 
 
 
-[IProfAdmin: IUnknown](iprofadminiunknown.md)
+[IProfAdmin : IUnknown](iprofadminiunknown.md)
 

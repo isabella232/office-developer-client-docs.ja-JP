@@ -19,7 +19,7 @@ ms.locfileid: "19801286"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 汎用長い用語 ID は、Outlook、ストア内のオブジェクト。
   
@@ -34,7 +34,7 @@ struct LTID
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  _guid_
   
@@ -54,7 +54,7 @@ struct LTID
 
 [レプリケーション API について](about-the-replication-api.md)
   
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [FEID](feid.md)
 

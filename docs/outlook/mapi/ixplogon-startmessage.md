@@ -23,7 +23,7 @@ ms.locfileid: "19801263"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI スプーラーをトランスポート プロバイダーからの受信メッセージの転送を開始します。
   
@@ -93,5 +93,5 @@ Nontransmittable プロパティは、受信した場合トランスポート �
   
 [IXPLogon::TransportNotify](ixplogon-transportnotify.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 

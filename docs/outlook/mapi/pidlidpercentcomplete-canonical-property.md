@@ -1,5 +1,5 @@
 ---
-title: PidLidPercentComplete の標準的なプロパティ
+title: PidLidPercentComplete 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e63792b1-9580-4702-a6d7-dd3ae5007a4a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: f4675362de1e9efe4ef16285723cddeface9c403
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802091"
 ---
-# <a name="pidlidpercentcomplete-canonical-property"></a>PidLidPercentComplete の標準的なプロパティ
+# <a name="pidlidpercentcomplete-canonical-property"></a>PidLidPercentComplete 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 タスクの進行状況のユーザーが行ったことを示します。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidPercentComplete  <br/> |
+|関連するプロパティ:  <br/> |dispidPercentComplete  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Task  <br/> |
 |長い ID (LID):  <br/> |0x00008102  <br/> |
-|データを入力します。  <br/> |PT_R8  <br/> |
+|データの種類 :   <br/> |PT_R8  <br/> |
 |領域:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティの値は、0.0 以上の番号をする必要があり、作業が開始されていないことを示すよりも 1.0、1.0 が作業が完了したことを示す位置に、かつ、0.0 未満です。
   
@@ -83,7 +83,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

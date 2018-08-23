@@ -1,5 +1,5 @@
 ---
-title: アドレス帳プロバイダーへのログオンとログオフの実装
+title: アドレス帳プロバイダーのログオンとログオフの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,13 +15,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800929"
 ---
-# <a name="implementing-address-book-provider-logon-and-logoff"></a>アドレス帳プロバイダーへのログオンとログオフの実装
+# <a name="implementing-address-book-provider-logon-and-logoff"></a>アドレス帳プロバイダーのログオンとログオフの実装
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳プロバイダーのメソッドを実装することによってセッションのログオンとログオフをサポートする、 [IABProvider: IUnknown](iabprovideriunknown.md)インタ フェースです。 * * IABProvider * * インターフェイス**IUnknown**から直接継承し、他の 2 つの方法:**ログオン**と**シャット ダウン**します。 
   
-## <a name="logoff"></a>ログオフ
+## <a name="logoff"></a>Logoff
 
 MAPI は、プロバイダーが現在のプロファイルに追加し、クライアントは、動的再構成をサポートしているときに、すべてのセッションの冒頭に、プロバイダーの[IABProvider::Logon](iabprovider-logon.md)メソッドを呼び出します。 MAPI では、 **IABProvider::Logon**メソッドを呼び出して、アドレス帳プロバイダーは、ログオン プロセスを開始します。 
   

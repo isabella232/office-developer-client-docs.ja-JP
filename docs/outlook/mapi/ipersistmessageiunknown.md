@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 40ec6dd4-2206-4e59-aafe-53aaf693f973
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 62fb2b069a50408713eea741cf837c421a749fcd
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801141"
 ---
-# <a name="ipersistmessage--iunknown"></a>IPersistMessage: IUnknown
+# <a name="ipersistmessage--iunknown"></a>IPersistMessage : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームのさまざまな状態間の遷移にストレージを処理するためにフォームのビューアーを使用できます。
   
@@ -49,7 +49,7 @@ ms.locfileid: "19801141"
 |[SaveCompleted](ipersistmessage-savecompleted.md) <br/> |フォームに通知する、保存操作が完了しました。  <br/> |
 |[HandsOffMessage](ipersistmessage-handsoffmessage.md) <br/> |フォームの現在のメッセージを解放するが発生します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 すべてのフォームは、 **IPersistMessage**インターフェイスを実装する必要があります。 
   

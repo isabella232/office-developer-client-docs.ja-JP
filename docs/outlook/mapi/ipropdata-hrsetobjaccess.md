@@ -23,7 +23,7 @@ ms.locfileid: "19801135"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 �I�u�W�F�N�g�̃A�N�Z�X ���x����ݒ肵�܂��B
   

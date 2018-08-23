@@ -23,7 +23,7 @@ ms.locfileid: "19800986"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ストアのサポートに関する情報を取得は、指定されたセレクターに基づいています。
   
@@ -33,13 +33,13 @@ MSCAP_SELECTOR mscapSelector
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  *mscapSelector* 
   
 > [in]セレクターを取得する機能を示します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 MSCAP_SECURE_FOLDER_HOMEPAGES
   

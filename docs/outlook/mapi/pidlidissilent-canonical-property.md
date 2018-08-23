@@ -1,5 +1,5 @@
 ---
-title: PidLidIsSilent の標準的なプロパティ
+title: PidLidIsSilent 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e00d8887-0db4-422d-96db-84cefe65dfc1
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 316a8c9b943af7a3bd13a882b223f7fbcf4e6749
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,20 +19,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802019"
 ---
-# <a name="pidlidissilent-canonical-property"></a>PidLidIsSilent の標準的なプロパティ
+# <a name="pidlidissilent-canonical-property"></a>PidLidIsSilent 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ユーザーは会議の返信の本文に文字列が含ましなかったことを示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |LID_IS_SILENT  <br/> |
+|関連するプロパティ:  <br/> |LID_IS_SILENT  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Meeting  <br/> |
 |長い ID (LID):  <br/> |0x00000004  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |会議  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -61,7 +61,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

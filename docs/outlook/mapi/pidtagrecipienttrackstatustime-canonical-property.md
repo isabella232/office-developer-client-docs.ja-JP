@@ -1,5 +1,5 @@
 ---
-title: PidTagRecipientTrackStatusTime の標準的なプロパティ
+title: PidTagRecipientTrackStatusTime 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f14dfe47-a9f8-4475-bb26-7da3411d8c6f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0db4efcf1e05536ee7abb3459caa0159f84ef798
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803293"
 ---
-# <a name="pidtagrecipienttrackstatustime-canonical-property"></a>PidTagRecipientTrackStatusTime の標準的なプロパティ
+# <a name="pidtagrecipienttrackstatustime-canonical-property"></a>PidTagRecipientTrackStatusTime 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 出席者が反応したときの日時が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_RECIPIENT_TRACKSTATUS_TIME  <br/> |
+|関連するプロパティ:  <br/> |PR_RECIPIENT_TRACKSTATUS_TIME  <br/> |
 |識別子:  <br/> |0x5FFB  <br/> |
-|データを入力します。  <br/> |PT_SYSTIME  <br/> |
+|データの種類 :   <br/> |PT_SYSTIME  <br/> |
 |領域:  <br/> |トランスポートにおける受取人  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 値は、世界協定時刻 (UTC) で指定する必要があります。
   
@@ -68,7 +68,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

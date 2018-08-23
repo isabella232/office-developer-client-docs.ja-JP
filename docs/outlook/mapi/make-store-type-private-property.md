@@ -1,5 +1,5 @@
 ---
-title: ストアの種類のプライベート プロパティ
+title: ストアの種類をプライベート プロパティにする
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7f489f55-46d4-8a88-6ebe-9db6446e69a5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7f60d9524af18bb7f2e876386c45b84f207d42bc
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801314"
 ---
-# <a name="make-store-type-private-property"></a>ストアの種類のプライベート プロパティ
+# <a name="make-store-type-private-property"></a>ストアの種類をプライベート プロパティにする
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 セカンダリ ・ ストアは、プライベートとして扱います。
   
@@ -37,7 +37,7 @@ ms.locfileid: "19801314"
 |プロパティの種類:  <br/> |PT_BOOLEAN  <br/> |
 |アクセスの種類:  <br/> |値の取得および設定が可能です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 ストア機能を提供するストア プロバイダーを実装する必要があります[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) 、 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)の呼び出しに渡されたこれらのプロパティのいずれかのプロパティの有効なタグを返すとします。 これらのプロパティのいずれかのプロパティ タグが[IMAPIProp::GetProps](imapiprop-getprops.md)に渡されると、ストア プロバイダーを使用、正しいプロパティ値を返す必要があります。 ストア プロバイダーには、取得、またはこれらのプロパティを設定するには、 [HrGetOneProp](hrgetoneprop.md)と[HrSetOneProp](hrsetoneprop.md)を呼び出すことができます。 
   

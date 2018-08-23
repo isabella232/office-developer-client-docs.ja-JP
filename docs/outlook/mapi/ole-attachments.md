@@ -19,7 +19,7 @@ ms.locfileid: "19801668"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 OLE �I�u�W�F�N�g�́AOLE 1 �Ƃ��ăG���R�[�h�́A�Y�t�t�@�C���́A�I�u�W�F�N�g�̉��ʌ݊�����X�g���[�~���O���܂��B�{���Ɍ��̃I�u�W�F�N�g�� OLE 2 **IStorage**�I�u�W�F�N�g�̏ꍇ�́A�I�u�W�F�N�g�� OLE 1 �X�g���[���ɕϊ�����K�v������܂��BWin32 OLE ���C�u�����̈ꕔ�ł��� **OleConvertIStorageToOLESTREAM** �֐���g�p���Ă��̕ϊ������s����܂��B 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9be6b88e-2510-4b82-8b35-5f20a0f99fc0
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e2871f5804cda172328fbd3ebdc43f860de939ab
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801007"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 発信キューからメッセージを削除しようとしています。
   
@@ -35,7 +35,7 @@ AbortSubmit(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -63,7 +63,7 @@ MAPI_E_UNABLE_TO_ABORT
   
 > _LpEntryID_によって識別されるメッセージは、MAPI スプーラーによってロックされているし、操作は中止できません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgStore::AbortSubmit**メソッドは、メッセージ ストアの送信キューから送信されたメッセージを削除しようとします。 
   

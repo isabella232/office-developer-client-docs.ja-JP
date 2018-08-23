@@ -1,5 +1,5 @@
 ---
-title: ライブラリにフォームをインストールします。
+title: ライブラリへのフォームのインストール
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801082"
 ---
-# <a name="installing-a-form-into-a-library"></a>ライブラリにフォームをインストールします。
+# <a name="installing-a-form-into-a-library"></a>ライブラリへのフォームのインストール
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Windows SDK に付属している既定の MAPI フォーム マネージャーでは、各種のフォーム ライブラリにフォームをインストールするためのユーザー インターフェイスを行いません。 このため、小規模なアプリケーションを作成する必要がある、または一連の命令の詳細: ユーザーがフォームをインストールするのには使用できます。
   
@@ -46,5 +46,5 @@ Windows SDK に付属している既定の MAPI フォーム マネージャー�
 
 
 
-[MAPI フォームのサーバーの開発](developing-mapi-form-servers.md)
+[MAPI フォーム サーバーの開発](developing-mapi-form-servers.md)
 

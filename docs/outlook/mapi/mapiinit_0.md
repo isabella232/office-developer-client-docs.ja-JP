@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 70739711-ff43-407d-bc8b-6baf7a476fef
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 31b2353b76bbac5cd58cd791f4a289c7dbabdb78
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801486"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [生じます](mapiinitialize.md)にオプションを伝達します。 
   
@@ -40,7 +40,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulVersion**
   
@@ -62,7 +62,7 @@ MAPI_NO_COINIT
   
 > [CoInitialize](http://msdn.microsoft.com/library/0f171cf4-87b9-43a6-97f2-80ed344fe376%28Office.15%29.aspx)の呼び出しで COM を初期化するために**生じます**が試みないように、MAPI_NO_COINT フラグを設定します。 **MAPIINIT_0**構造体が渡された場合に**生じます** _ulFlags_ MAPI_NO_COINIT に設定すると、MAPI は、COM が既に初期化されているし、 **CoInitialize**の呼び出しが省略されますと見なされます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 マルチ スレッド クライアントでは、MAPI_MULTITHREAD_NOTIFICATIONS フラグを設定する必要があります。 フラグが設定されていない場合**生じます**への最初の呼び出しを行うために使用するスレッドに通知を生成します。 
   
@@ -72,7 +72,7 @@ MAPI_NO_COINIT
 
 
 
-[生じます](mapiinitialize.md)
+[MAPIInitialize](mapiinitialize.md)
 
 
 [MAPI の構造](mapi-structures.md)

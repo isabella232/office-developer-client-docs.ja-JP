@@ -23,7 +23,7 @@ ms.locfileid: "19801228"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージのトランスポート ニュートラル カプセル化形式 (TNEF) データ ストリーム内のメッセージの受信者テーブルのビューをエンコードします。
   
@@ -50,7 +50,7 @@ S_OK
   
 > 呼び出しが成功し、予期される値または値が返されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 プロバイダー、メッセージ ストア プロバイダーでは、TNEF エンコード受信者テーブルの特定のビューを実行するのにはゲートウェイの呼び出し、 **ITnef::EncodeRecips**メソッドを転送します。 TNEF エンコードは便利ですが、たとえば、プロバイダーまたはゲートウェイが必要な場合、特定の列のセット、並べ替え順、または制限、受信者テーブルのです。 
   
@@ -68,7 +68,7 @@ _LpRecipientTable_に NULL を使用して**EncodeRecips**を呼び出す、す�
   
 [ITnef::AddProps](itnef-addprops.md)
   
-[PidTagMessageRecipients の標準的なプロパティ](pidtagmessagerecipients-canonical-property.md)
+[PidTagMessageRecipients 標準プロパティ](pidtagmessagerecipients-canonical-property.md)
   
-[ITnef: IUnknown](itnefiunknown.md)
+[ITnef : IUnknown](itnefiunknown.md)
 

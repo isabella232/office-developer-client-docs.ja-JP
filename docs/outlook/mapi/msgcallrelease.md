@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 23c08597-41f0-4f48-a63e-79962fa812bc
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: aaa1adaa170349c3df3a2256802a502cb2512b20
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801647"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [OpenIMsgOnIStg](openimsgonistg.md)関数を使用してその上に構築された**IMessage**オブジェクトの最終的なリリース後**IStorage**インターフェイスを解放するコールバック関数を定義します。 
   
@@ -39,7 +39,7 @@ typedef void (STDAPICALLTYPE MSGCALLRELEASE)(
   LPMESSAGE  lpMessage );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulCallerData_
   

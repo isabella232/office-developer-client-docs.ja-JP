@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 20090114-b183-4767-8971-a304a9aa47e6
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 426333e6e2624adcd7cb6bc6dc4982b3d1ef1999
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801028"
 ---
-# <a name="imsgstore--imapiprop"></a>IMsgStore: IMAPIProp
+# <a name="imsgstore--imapiprop"></a>IMsgStore : IMAPIProp
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ情報を格納して、メッセージおよびフォルダーへのアクセスを提供します。
   
@@ -55,16 +55,16 @@ ms.locfileid: "19801028"
 |[FinishedMsg](imsgstore-finishedmsg.md) <br/> |メッセージ ストア プロバイダーは、送信されたメッセージの処理を実行できるようにします。  <br/> |
 |[NotifyNewMail](imsgstore-notifynewmail.md) <br/> |新しいメッセージが到着したメッセージ ・ ストアに通知します。  <br/> |
    
-|**必要なプロパティ**|**アクセス レベル**|
+|**必須のプロパティ**|**アクセス レベル**|
 |:-----|:-----|
 |**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
-|**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_STORE_ENTRYID**([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_STORE_RECORD_KEY**([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_MDB_PROVIDER**([PidTagStoreProvider](pidtagstoreprovider-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_STORE_SUPPORT_MASK**([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
+|**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_STORE_ENTRYID**([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_STORE_RECORD_KEY**([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_MDB_PROVIDER**([PidTagStoreProvider](pidtagstoreprovider-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_STORE_SUPPORT_MASK**([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
 次のプロパティは、メッセージ ストアの個人間メッセージ (IPM) のことです。
   

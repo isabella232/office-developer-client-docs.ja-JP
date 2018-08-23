@@ -1,5 +1,5 @@
 ---
-title: C++ では IUnknown の実装
+title: C++ での IUnknown の実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,9 +15,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800944"
 ---
-# <a name="implementing-iunknown-in-c"></a>C++ では IUnknown の実装
+# <a name="implementing-iunknown-in-c"></a>C++ での IUnknown の実装
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 C++ では[IUnknown::QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx)、 [IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx)、および[リ ス](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx)の[IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx)インターフェイスのメソッドを実装することは非常に簡単です。 渡されるパラメーターのいくつかの標準的な検証をした後は、 **QueryInterface**の実装は、サポートされているインターフェイスの一覧に対して要求されたインターフェイスの識別子をチェックします。 要求された識別子がサポートされている間にある場合は、 **AddRef**が呼び出され、 **this**ポインターが返されます。 要求された識別子がサポートされているリストにない場合は、出力のポインターは NULL に設定し、MAPI_E_INTERFACE_NOT_SUPPORTED の値が返されます。 
   
@@ -67,6 +67,6 @@ ULONG CMyMAPIObject::Release()
 
 ## <a name="see-also"></a>関連項目
 
-- [MAPI オブジェクトを実装します。](implementing-mapi-objects.md)
-- [IUnknown インターフェイスを実装します。](implementing-the-iunknown-interface.md)
+- [MAPI オブジェクトの実装](implementing-mapi-objects.md)
+- [IUnknown インターフェイスの実装](implementing-the-iunknown-interface.md)
 

@@ -1,5 +1,5 @@
 ---
-title: MAPI の参照
+title: MAPI リファレンス
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -17,11 +17,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801450"
 ---
-# <a name="mapi-reference"></a>MAPI の参照
+# <a name="mapi-reference"></a>MAPI リファレンス
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ここでは、MAPI のプログラミング要素を説明します。
   
@@ -51,11 +51,11 @@ ms.locfileid: "19801450"
   
 > MAPI で使用されるデータ型に関する情報が含まれています。
     
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連情報
 
 [Outlook MAPI リファレンス](outlook-mapi-reference.md)
   
-[Outlook �� MAPI �Q�Ƃ̎g�p��J�n���܂��B](getting-started-with-the-outlook-mapi-reference.md)
+[Outlook MAPI リファレンスの概要](getting-started-with-the-outlook-mapi-reference.md)
   
 [MAPI Samples](mapi-samples.md)
   

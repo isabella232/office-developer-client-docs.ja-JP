@@ -23,7 +23,7 @@ ms.locfileid: "19801084"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 同期を開始しようとしていますが、ローカル メッセージ ストアに通知します。
   
@@ -55,7 +55,7 @@ HRESULT InitSync(
   
 [IOSTX::SyncHdrEnd](iostx-synchdrend.md)
   
-[IOSTX: IUnknown](iostxiunknown.md)
+[IOSTX : IUnknown](iostxiunknown.md)
 
 
 [MAPI �萔](mapi-constants.md)

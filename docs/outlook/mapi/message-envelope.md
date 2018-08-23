@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 613956da-c49b-4836-9fde-4601510e8b89
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: bbdc5993a07209f381065ce1b60f860ba54c35d5
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19801648"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 RFC 822 ヘッダーは、MAPI プロパティに次のようにマップされます。 PR_SENDER_\*は、次の 5 つのプロパティの省略形。
   

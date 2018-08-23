@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 83161011-90b4-49cb-9bcd-153a21a10977
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7a82ce9a46017993adfc6c4c755b6c97b847e579
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19801125"
 ---
 # <a name="ipersistmessagesavecompleted"></a>IPersistMessage::SaveCompleted
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームに通知する、保存操作が完了しました。 
   
@@ -31,7 +31,7 @@ HRESULT SaveCompleted(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _pMessage_
   
@@ -57,7 +57,7 @@ E_UNEXPECTED
     
    - [NoScribble](noscribble-state.md)
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IPersistMessage::SaveCompleted**メソッドは、すべての保留中の変更が保存されているフォームを通知するためにフォーム ビューアーによって呼び出されます。 **SaveCompleted**は、フォームが次の状態のいずれかの場合にのみ呼び出す必要があります。 
   
@@ -89,7 +89,7 @@ E_UNEXPECTED
 
 
 
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 
 
 [フォームの状態](form-states.md)

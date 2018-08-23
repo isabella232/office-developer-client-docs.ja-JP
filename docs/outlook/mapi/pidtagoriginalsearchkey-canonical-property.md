@@ -1,5 +1,5 @@
 ---
-title: PidTagOriginalSearchKey の標準的なプロパティ
+title: PidTagOriginalSearchKey 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ac5eb91d-31c9-459b-bb22-f4ccfc92d1db
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 26854b640669bbc6479ce90ba9cad18cdf4d9264
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803097"
 ---
-# <a name="pidtagoriginalsearchkey-canonical-property"></a>PidTagOriginalSearchKey の標準的なプロパティ
+# <a name="pidtagoriginalsearchkey-canonical-property"></a>PidTagOriginalSearchKey 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 個人用アドレス帳にアドレス帳やその他の書き込み可能なアドレス帳からコピーしたエントリの元の検索キーが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ORIGINAL_SEARCH_KEY  <br/> |
+|関連するプロパティ:  <br/> |PR_ORIGINAL_SEARCH_KEY  <br/> |
 |識別子:  <br/> |0x3A14  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、コピーしたエントリの元のソースに関する情報を含むプロパティのいずれかです。
   
@@ -70,7 +70,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

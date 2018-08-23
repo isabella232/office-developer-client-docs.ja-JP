@@ -9,7 +9,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 3d314d4e-553b-4767-a64a-b9cf1839de52
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 32dfd966ae4c31618a316e1dd396a1b40c71c639
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,13 +21,13 @@ ms.locfileid: "19801347"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アルファベット順の次のエントリには、MAPI メソッド、関数、および構造体で使用されるデータの種類のドキュメントが含まれています。 
   
 ||
 |:-----|
-|[ブックマーク](bookmark.md) <br/> |
+|[BOOKMARK](bookmark.md) <br/> |
 |[DNHIER](dnhier.md) <br/> |
 |[DNTBL](dntbl.md) <br/> |
 |[DNTBLE](dntble.md) <br/> |
@@ -48,7 +48,7 @@ ms.locfileid: "19801347"
 |[OlFlagIcon](olflagicon.md) <br/> |
 |[SCODE](scode.md) <br/> |
 |[SKEY](skey.md) <br/> |
-|[同期](sync.md) <br/> |
+|[SYNC](sync.md) <br/> |
 |[SYNCCONT](synccont.md) <br/> |
 |[同期状態](syncstate.md) <br/> |
 |[TCHAR](tchar.md) <br/> |

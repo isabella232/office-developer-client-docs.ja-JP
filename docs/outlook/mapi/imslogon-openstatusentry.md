@@ -23,7 +23,7 @@ ms.locfileid: "19801043"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 状態オブジェクトを開きます。
   
@@ -36,7 +36,7 @@ HRESULT OpenStatusEntry(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpInterface_
   
@@ -72,11 +72,11 @@ S_OK
 
 
 
-[IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)
+[IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
   
 [IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md)
   
 [IMAPIStatus::ValidateState](imapistatus-validatestate.md)
   
-[IMSLogon: IUnknown](imslogoniunknown.md)
+[IMSLogon : IUnknown](imslogoniunknown.md)
 

@@ -1,5 +1,5 @@
 ---
-title: PidTagAccessControlListTable の標準的なプロパティ
+title: PidTagAccessControlListTable 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 48667fda-ddc4-42ac-9231-761db0a4c1a9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d992c7ac43c736e01184e1f12b3ad366587c9b06
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802398"
 ---
-# <a name="pidtagaccesscontrollisttable-canonical-property"></a>PidTagAccessControlListTable の標準的なプロパティ
+# <a name="pidtagaccesscontrollisttable-canonical-property"></a>PidTagAccessControlListTable 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 すべてのシステム アクセス制御リスト (SACL) のフォルダーに適用されるので構成されるテーブルが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ACL_TABLE  <br/> |
+|関連するプロパティ:  <br/> |PR_ACL_TABLE  <br/> |
 |識別子:  <br/> |0x3FE0  <br/> |
-|データを入力します。  <br/> |PT_OBJECT  <br/> |
+|データの種類 :   <br/> |PT_OBJECT  <br/> |
 |領域:  <br/> |アクセス制御  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティでは、Exchange Server 上のすべてのフォルダー オブジェクト上に存在します。 値がこのプロパティに含まれているは、読み取り用に使用され、フォルダーのリスト (Acl) のアクセス制御を変更します。 **IID_IExchangeModifyTable**インターフェイス識別子を使用して[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを使用するにを取得するのには、 [IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)フォルダーの ACL テーブルへのインターフェイスです。 読み取りおよびそれらの Acl を変更するには、このインターフェイスを使用します。 
   
@@ -58,7 +58,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

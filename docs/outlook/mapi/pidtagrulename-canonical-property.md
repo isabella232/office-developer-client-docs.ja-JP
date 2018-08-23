@@ -1,5 +1,5 @@
 ---
-title: PidTagRuleName の標準的なプロパティ
+title: PidTagRuleName 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: eb326037-bc44-4b04-812c-7d1adf854cc9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 94373a412f20040a79b90219b1fb4949cfdf2299
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,19 +19,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803420"
 ---
-# <a name="pidtagrulename-canonical-property"></a>PidTagRuleName の標準的なプロパティ
+# <a name="pidtagrulename-canonical-property"></a>PidTagRuleName 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ルールのユーザーが判読できる名前を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_RULE_NAME  <br/> |
+|関連するプロパティ:  <br/> |PR_RULE_NAME  <br/> |
 |識別子:  <br/> |0x6682  <br/> |
-|データを入力します。  <br/> |PT_STRING8  <br/> |
+|データの種類 :   <br/> |PT_STRING8  <br/> |
 |領域:  <br/> |サーバー側のルール  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -68,7 +68,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

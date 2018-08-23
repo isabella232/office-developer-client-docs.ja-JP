@@ -23,7 +23,7 @@ ms.locfileid: "19801235"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 トランスポート ニュートラル カプセル化形式 (TNEF) ストリームに同時に 1 つのメッセージからの個々 のコンポーネントを処理します。
   
@@ -110,5 +110,5 @@ _LppProblems_で返される値は、呼び出しが S_OK を返す場合にの�
   
 [STnefProblemArray](stnefproblemarray.md)
   
-[ITnef: IUnknown](itnefiunknown.md)
+[ITnef : IUnknown](itnefiunknown.md)
 

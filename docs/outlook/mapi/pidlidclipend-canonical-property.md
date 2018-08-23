@@ -1,5 +1,5 @@
 ---
-title: PidLidClipEnd の標準的なプロパティ
+title: PidLidClipEnd 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 17c8db96-80dd-4a7a-9a1b-ab1b37ba616c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1353289da2b428fb58adecc6f7830a2eea4b519a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801848"
 ---
-# <a name="pidlidclipend-canonical-property"></a>PidLidClipEnd の標準的なプロパティ
+# <a name="pidlidclipend-canonical-property"></a>PidLidClipEnd 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 カレンダー オブジェクトのインスタンスを 1 つのイベントの終了日時に世界協定時刻 (UTC) を指定します。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidClipEnd  <br/> |
+|関連するプロパティ:  <br/> |dispidClipEnd  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008236  <br/> |
-|データを入力します。  <br/> |PT_SYSTIME  <br/> |
-|領域:  <br/> |カレンダー  <br/> |
+|データの種類 :   <br/> |PT_SYSTIME  <br/> |
+|領域:  <br/> |予定表  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 カレンダー オブジェクトのインスタンスを 1 つのイベントの終了日時を UTC で指定します。 定期的な一連のこのプロパティを指定の午前 0 時 (UTC) での定期的な系列の最後のインスタンスの日付に定期的に終了すると、大文字と小文字の値が 31 年 8 月をする必要がありますがあるない場合を除き、4500、午後 11 時 59 分
   
@@ -67,7 +67,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

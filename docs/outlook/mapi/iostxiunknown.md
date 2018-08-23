@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f374d8d9-be8e-2489-d5fe-8a92e0ecfc6f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7419a0df7a2f3b76caeeb1ca564624d437eddd52
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801112"
 ---
-# <a name="iostx--iunknown"></a>IOSTX: IUnknown
+# <a name="iostx--iunknown"></a>IOSTX : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 同期メソッドを提供します。 このインターフェイスは、サーバーとローカル ストアに変更をサーバーにローカルでの変更をレプリケートするために必要な情報を取得します。
   
@@ -45,7 +45,7 @@ ms.locfileid: "19801112"
 |[SetSyncResult](iostx-setsyncresult.md) <br/> |同期の結果を設定します。  <br/> |
 | *プレース ホルダー メンバー*  <br/> | *いないサポートまたは文書化されています。*  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントは、アップロードまたはフォルダーとローカル ストア上のフォルダーの内容を同期化、ローカル ストア 1 つの状態からに移動別で[レプリケーションの状態マシン](about-the-replication-state-machine.md)の状態遷移図で示されています。 ローカル ストアを別の 1 つの状態に移動するクライアントのイベントの順序は、次のようにします。
   

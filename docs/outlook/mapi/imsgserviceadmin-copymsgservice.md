@@ -23,7 +23,7 @@ ms.locfileid: "19800991"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ サービスをプロファイルにコピーします。 
   
@@ -39,7 +39,7 @@ HRESULT CopyMsgService(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpUID_
   
@@ -87,7 +87,7 @@ MAPI_E_NOT_FOUND
   
 > _LpUID_で示される**MAPIUID**は、既存のメッセージ サービスを参照していません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgServiceAdmin::CopyMsgService**メソッドは、メッセージ サービスをアクティブなプロファイルまたは別のプロファイル、プロファイルにコピーします。 コピーするメッセージ サービスを含むプロファイルと変換先は、同じプロファイルを使用するはありませんが、ことができます。 
   
@@ -101,5 +101,5 @@ MAPI_E_NOT_FOUND
   
 [MAPIUID](mapiuid.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 

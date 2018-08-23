@@ -23,7 +23,7 @@ ms.locfileid: "19801264"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 適切な順序でトランスポート プロバイダーを閉じます。
   
@@ -33,7 +33,7 @@ HRESULT Shutdown (
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulFlags_
   
@@ -45,7 +45,7 @@ S_OK
   
 > トランスポート プロバイダーのシャット ダウンの呼び出しに成功しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI スプーラーでは、トランスポート プロバイダーのオブジェクトを解放する前に**IXPProvider::Shutdown**メソッドを呼び出します。 **シャット ダウン**を呼び出す前に、MAPI は、プロバイダーのすべてのログオン オブジェクトを解放します。
   
@@ -55,5 +55,5 @@ MAPI スプーラーでは、トランスポート プロバイダーのオブ�
 
 [XPProviderInit](xpproviderinit.md)
   
-[IXPProvider: IUnknown](ixpprovideriunknown.md)
+[IXPProvider : IUnknown](ixpprovideriunknown.md)
 

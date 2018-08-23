@@ -1,5 +1,5 @@
 ---
-title: PidTagJunkAddRecipientsToSafeSendersList の標準的なプロパティ
+title: PidTagJunkAddRecipientsToSafeSendersList 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 78543caa-e6ec-4ac7-bfdd-70c56f8fd955
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8c104af106a885f42f8063bcf5fb55d654f2688e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802907"
 ---
-# <a name="pidtagjunkaddrecipientstosafesenderslist-canonical-property"></a>PidTagJunkAddRecipientsToSafeSendersList の標準的なプロパティ
+# <a name="pidtagjunkaddrecipientstosafesenderslist-canonical-property"></a>PidTagJunkAddRecipientsToSafeSendersList 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メール受信者が差出人セーフ リストに追加するかどうかを示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_JUNK_ADD_RECIPS_TO_SSL  <br/> |
+|関連するプロパティ:  <br/> |PR_JUNK_ADD_RECIPS_TO_SSL  <br/> |
 |識別子:  <br/> |0x6103  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |スパム  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 存在する場合、このプロパティが 0 または 1 に設定する必要があります。 1 の値は、メール受信者が差出人セーフ リストに追加することを示します。 0 の値は、メール受信者が差出人セーフ リストに追加されないことを示します。
   
@@ -70,7 +70,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

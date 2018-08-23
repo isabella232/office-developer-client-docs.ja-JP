@@ -1,5 +1,5 @@
 ---
-title: Outlook メッセージング API (MAPI) の参照の著作権について
+title: Outlook Messaging API (MAPI) リファレンスの著作権情報
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801712"
 ---
-# <a name="outlook-messaging-api-mapi-reference-copyright-notice"></a>Outlook メッセージング API (MAPI) の参照の著作権について
+# <a name="outlook-messaging-api-mapi-reference-copyright-notice"></a>Outlook Messaging API (MAPI) リファレンスの著作権情報
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Url およびその他のインターネット web サイトの参照を含み、このドキュメントの情報は、通知なく変更されることです。 特に断らない限り、企業、組織、製品、ドメイン名、電子メール アドレス、ロゴ、人物、場所、およびイベントの例をここに示されている架空のものです。 関連会社、組織、製品、ドメイン名、電子メール アドレス、ロゴ、人物、場所、またはイベントを対象としていますが、推論する必要があります。 著作権に関する法律を遵守することは、ユーザーの責任です。 著作権を制限することがなくこのドキュメントのいかなる部分が再現に格納されているまたは検索システムに導入またはいかなる形式または手段 (電子的、機械的、写真複写、録音、またはその他のまたは、その目的を送信せず、米国 Microsoft Corporation の書面による許可します。
   

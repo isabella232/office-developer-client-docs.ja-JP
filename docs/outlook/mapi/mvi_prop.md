@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d7f07524-6935-4a60-aaf3-3f753ea8d86a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: f8f58ee18095dec8a222ae8b5a19cbefbaafa663
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801687"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 指定したプロパティの MVI_FLAG を設定します。 
   
@@ -36,13 +36,13 @@ ms.locfileid: "19801687"
 MVI_PROP (tag)
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _タグ_
   
 > 変更するプロパティ タグです。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MVI_FLAG として、複数値を持つプロパティを識別する、MV_FLAG、MV_INSTANCE、複数の行のテーブルに、複数値を持つプロパティが表示されることを要求するの設定を結合します。 影響を受けるプロパティのプロパティの型が変更されたが、識別子は変更されません。 
   

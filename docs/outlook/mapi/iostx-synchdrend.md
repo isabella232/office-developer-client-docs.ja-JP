@@ -23,7 +23,7 @@ ms.locfileid: "19801090"
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ヘッダーの同期を終了します。
   
@@ -33,13 +33,13 @@ HRESULT SyncHdrEnd(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pprog_
   
 > [in]同期のための**[IMAPIProgress](imapiprogressiunknown.md)** インタ フェースは、移動またはメッセージをコピーします。 **LPMAPIPROGRESS**の型の定義の mapidefs.h を参照してください。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **[IOSTX::SyncBeg](iostx-syncbeg.md)**、時に、ローカル ストアは、[メッセージ ヘッダーの状態をダウンロード](download-message-header-state.md)するを入力します。 クライアントは、( *pmsgFull*の**[HDRSYNC](hdrsync.md)** で) として、完全なメッセージ項目をダウンロードします。 これが成功した場合は、クライアントも*ulFlags*の設定**HDRSYNC** **HSF_OK**とします。 **IOSTX::SyncHdrEnd**、時に、Outlook は**HDRSYNC**の結果をチェックし、ローカル メッセージのヘッダーを更新するのには、 **HDRSYNC**で*pprog*との情報を使用します。 
   
@@ -61,7 +61,7 @@ HRESULT SyncHdrEnd(
   
 [IOSTX::SyncHdrBeg](iostx-synchdrbeg.md)
   
-[IOSTX: IUnknown](iostxiunknown.md)
+[IOSTX : IUnknown](iostxiunknown.md)
 
 
 [MAPI �萔](mapi-constants.md)

@@ -1,5 +1,5 @@
 ---
-title: 新規作成フォームを起動します。
+title: 新しい作成フォームの起動
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801285"
 ---
-# <a name="launching-a-new-compose-form"></a>新規作成フォームを起動します。
+# <a name="launching-a-new-compose-form"></a>新しい作成フォームの起動
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム サーバーの実装は次の一連のフォームのサーバーへのメソッド呼び出しを期待する必要があり、フォーム オブジェクトの場合、クライアント アプリケーションを作成するための新しいメッセージを開きます。
   
@@ -39,5 +39,5 @@ ms.locfileid: "19801285"
 
 
 
-[フォームのサーバー間のやり取り](form-server-interactions.md)
+[フォーム サーバーの相互作用](form-server-interactions.md)
 

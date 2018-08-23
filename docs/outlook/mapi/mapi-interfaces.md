@@ -9,7 +9,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 34a66cf0-b4e0-4fd5-b937-cd157888961d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e485079de800c63b02d71b3c3ccb90d66101c64b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19801392"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 各インタ フェースのマニュアルは、次の情報を含むテーブルの後にインタ フェースの目的の簡単な説明を含む紹介の章で構成されます。
   
@@ -41,9 +41,9 @@ ms.locfileid: "19801392"
   
 |**見出し**|**コンテンツ**|
 |:-----|:-----|
-|Parameters  <br/> |メソッドの各パラメーターの説明です。  <br/> |
+|パラメーター  <br/> |メソッドの各パラメーターの説明です。  <br/> |
 |戻り値  <br/> |メソッドが返すことができる一意の値の説明です。 これらは、値がコード内の呼び出し元を確認することです。  <br/> |
-|備考  <br/> |メソッドを使用する理由と方法の説明です。  <br/> |
+|注釈  <br/> |メソッドを使用する理由と方法の説明です。  <br/> |
 |関連項目  <br/> |このリファレンスでは、他のトピックへの相互参照。  <br/> |
    
 ## <a name="see-also"></a>関連項目

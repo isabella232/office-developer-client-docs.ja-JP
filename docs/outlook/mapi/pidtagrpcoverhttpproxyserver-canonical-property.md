@@ -1,5 +1,5 @@
 ---
-title: PidTagRpcOverHttpProxyServer の標準的なプロパティ
+title: PidTagRpcOverHttpProxyServer 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 25787ee0-0cd3-e448-a54e-a6aa03b8b718
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 40f8f2b2d1b4dc6316e1716e102217de43198833
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803404"
 ---
-# <a name="pidtagrpcoverhttpproxyserver-canonical-property"></a>PidTagRpcOverHttpProxyServer の標準的なプロパティ
+# <a name="pidtagrpcoverhttpproxyserver-canonical-property"></a>PidTagRpcOverHttpProxyServer 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 HTTP プロトコルであるか、または URL の前にあるハイパー テキスト転送プロトコル セキュア (HTTPS) プロトコルに Microsoft Outlook を Microsoft Exchange Server に接続するために使用するプロキシ サーバーの URL が含まれています。
   
@@ -27,7 +27,7 @@ HTTP プロトコルであるか、または URL の前にあるハイパー テ
 
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ROH_PROXY_SERVER  <br/> |
+|関連するプロパティ:  <br/> |PR_ROH_PROXY_SERVER  <br/> |
 |識別子:  <br/> |0x6622  <br/> |
 |プロパティの種類:  <br/> |PT_UNICODE  <br/> |
 |領域:  <br/> |その他  <br/> |
@@ -66,7 +66,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

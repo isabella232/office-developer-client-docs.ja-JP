@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 5d07c259-0ceb-4ea5-98b4-b01720edfe2a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fe5549e41008dbf5b5f50f9f32769f1a820e3bc0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19801386"
 ---
 # <a name="mapi-implemented-objects"></a>MAPI 実装オブジェクト
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI は、クライアント アプリケーションとサービス ・ プロバイダーで使用するためのいくつかのオブジェクトを実装します。 セッション オブジェクトは、テーブルにアクセスし、サービス プロバイダーと通信するためにセッションのサービスを使用するクライアントを許可します。 アドレス帳のオブジェクトは、すべての別のアドレス帳プロバイダーへの統合されたアクセスを持つクライアントを提供します。 
   
@@ -48,12 +48,12 @@ MAPI には、サービス ・ プロバイダー向けの 2 つのオブジェ�
    
 MAPI が実装しているオブジェクト、継承、インターフェイス、およびそれらを使用するコンポーネント間の関係を次の図に示します。 
   
-**MAPI を実装するオブジェクト**
+**MAPI が実装するオブジェクト**
   
 ![MAPI を実装するオブジェクト](media/amapi_68.gif "MAPI を実装するオブジェクト")
   
 ## <a name="see-also"></a>関連項目
 
-- [IMAPIProp: IUnknown](imapipropiunknown.md)
+- [IMAPIProp : IUnknown](imapipropiunknown.md)
 - [MAPI オブジェクトとインターフェイスの概要](mapi-object-and-interface-overview.md)
 

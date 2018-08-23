@@ -1,5 +1,5 @@
 ---
-title: PidLidAppointmentReplyTime の標準的なプロパティ
+title: PidLidAppointmentReplyTime 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 80a2608b-fc44-455a-86be-d6235caba99e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5bc2af5205e6e07b56212a6cf7077f9ef4bee89c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801817"
 ---
-# <a name="pidlidappointmentreplytime-canonical-property"></a>PidLidAppointmentReplyTime の標準的なプロパティ
+# <a name="pidlidappointmentreplytime-canonical-property"></a>PidLidAppointmentReplyTime 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 出席者が、受信した会議出席依頼または会議の更新に応答したときの日時を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidApptReplyTime  <br/> |
+|関連するプロパティ:  <br/> |dispidApptReplyTime  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008220  <br/> |
-|データを入力します。  <br/> |PT_SYSTIME  <br/> |
+|データの種類 :   <br/> |PT_SYSTIME  <br/> |
 |領域:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 値は、世界協定時刻 (UTC) で指定する必要があります。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

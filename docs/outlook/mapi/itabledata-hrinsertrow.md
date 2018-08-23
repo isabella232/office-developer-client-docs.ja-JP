@@ -23,7 +23,7 @@ ms.locfileid: "19801211"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルの行を挿入します。 
   
@@ -34,7 +34,7 @@ HRESULT HrInsertRow(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _uliRow_
   
@@ -54,7 +54,7 @@ MAPI_E_INVALID_PARAMETER
   
 > テーブルに既に挿入する行が存在するとそのインデックス列に対して同じ値を持つ行です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **ITableData::HrInsertRow**メソッドでは、特定の位置にあるテーブルに行を挿入します。 _UliRow_パラメーターによって指定された位置にある行の後に、新しい行が挿入されます。 
   
@@ -74,5 +74,5 @@ _UliRow_は、テーブル内の行の数に設定されている場合は、テ
   
 [TABLE_NOTIFICATION](table_notification.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

@@ -23,7 +23,7 @@ ms.locfileid: "19801128"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 新しいプロファイルを作成します。
   
@@ -36,7 +36,7 @@ HRESULT CreateProfile(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpszProfileName_
   
@@ -72,7 +72,7 @@ MAPI_E_NO_ACCESS
   
 > 指定された新しいプロファイルが既に存在します。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IProfAdmin::CreateProfile**メソッドは、新しいプロファイルを作成します。 
   
@@ -102,5 +102,5 @@ _LpszPassword_パラメーターは、NULL または長さ 0 の文字列への�
   
 [MSGSERVICEENTRY](msgserviceentry.md)
   
-[IProfAdmin: IUnknown](iprofadminiunknown.md)
+[IProfAdmin : IUnknown](iprofadminiunknown.md)
 

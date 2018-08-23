@@ -1,5 +1,5 @@
 ---
-title: PidTagHasDeferredActionMessages の標準的なプロパティ
+title: PidTagHasDeferredActionMessages 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f9085c59-18b1-451d-85d7-b08377708a9d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9ed460a377e2a2f0d2780f97eaebff1f76b9d9fe
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,20 +19,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802799"
 ---
-# <a name="pidtaghasdeferredactionmessages-canonical-property"></a>PidTagHasDeferredActionMessages の標準的なプロパティ
+# <a name="pidtaghasdeferredactionmessages-canonical-property"></a>PidTagHasDeferredActionMessages 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージに遅延処理の 1 つ以上のルールがある場合、TRUE が格納されます。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_HAS_DAMS  <br/> |
+|関連するプロパティ:  <br/> |PR_HAS_DAMS  <br/> |
 |識別子:  <br/> |0x3FEA  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |ルール  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
+|領域:  <br/> |Rules  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
@@ -64,7 +64,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,5 +1,5 @@
 ---
-title: MAPI プロパティにインターネットのメール属性のマッピング
+title: インターネット メールの属性から MAPI のプロパティへのマッピング
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/21/2018
 ms.locfileid: "19801544"
 ---
-# <a name="mapping-of-internet-mail-attributes-to-mapi-properties"></a>MAPI プロパティにインターネットのメール属性のマッピング
+# <a name="mapping-of-internet-mail-attributes-to-mapi-properties"></a>インターネット メールの属性から MAPI のプロパティへのマッピング
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 この付録では、MAPI トランスポート プロバイダーまたはインターネットに接続している MAPI 対応のゲートウェイを MAPI メッセージのプロパティと簡易メール転送プロトコル (SMTP) メッセージの属性の間で翻訳する必要がある方法について説明します。 SMTP は、インターネットの多くで使用されているメッセージング プロトコルです。 SMTP メッセージのヘッダーのセットを定義する-メッセージ エンベロープ、およびメッセージのコンテンツ形式。 SMTP は RFC 821 および RFC 822 は、公開されているいくつかの FTP と WWW のサイトで、インターネット上の 2 つのドキュメントのセットに完全に記載されています。
   

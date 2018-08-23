@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4172e2d3-6343-385b-c691-a64c1e198051
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 22f17df9347b4744dfe6598e7007469ffb9e5251
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19801520"
 ---
 # <a name="mapicrashrecovery"></a>MAPICrashRecovery
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **MAPICrashRecovery**関数は、共有メモリを個人用フォルダー ファイル (PST) またはオフライン フォルダー ファイル (OST) の状態をチェックします。 メモリは、一貫性のある状態では、 **MAPICrashRecovery**関数はデータをディスクに移動して、プロセスが終了するまでに、さらに読み取りまたは書き込みアクセスを防ぐことが。 
   
@@ -49,7 +49,7 @@ _ulFlags_
     
    - **MAPICRASH\_SYSTEM_SHUTDOWN**: pst ファイルまたは Ost が一貫性のある状態にある場合は、ディスクをロックする読み取りまたは書き込みアクセスを防止するには、pst ファイルまたは Ost のデータを移動します。 Pst ファイルまたは Ost を使用してロックを解除することはできません**MAPICRASH\_続行**。 組み合わせて使用する必要があります**MAPICRASH\_回復**。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 上位バイト (0xFF000000) は、プロバイダーの特定のクラッシュ復旧のフラグは予約されています。
   
@@ -58,5 +58,5 @@ _ulFlags_
 ## <a name="see-also"></a>関連項目
 
 - [MAPI クラッシュ回復 API について](about-the-mapi-crash-recovery-api.md)
-- [MAPI クラッシュ回復 API を使用します。](how-to-use-the-mapi-crash-recovery-api.md)
+- [MAPI クラッシュ回復 API を使用する](how-to-use-the-mapi-crash-recovery-api.md)
 

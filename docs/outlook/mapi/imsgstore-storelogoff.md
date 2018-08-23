@@ -23,7 +23,7 @@ ms.locfileid: "19801015"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ・ ストアの通常のログオフを有効にします。
   
@@ -33,7 +33,7 @@ HRESULT StoreLogoff(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulFlags_
   
@@ -79,7 +79,7 @@ S_OK
   
 > ログオフが正常に完了しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgStore::StoreLogoff**メソッドは、コントロールを行使メッセージの相互関係を保存し、トランスポート プロバイダーのログオフ処理中にします。 **StoreLogoff**の呼び出しは、呼び出し元だけが使用されているメッセージ ストアに対してのみ有効です。 などの 2 つのクライアントは、同じメッセージ ストアを使用しているし、 **StoreLogoff**を呼び出すことのいずれか、メッセージ ・ ストアがすぐに解放され、コントロールが呼び出し元のクライアントに返されます。
   

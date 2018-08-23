@@ -1,5 +1,5 @@
 ---
-title: PidTagMappingSignature の標準的なプロパティ
+title: PidTagMappingSignature 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: a5e9f807-12a9-4bc9-a6a5-17579e747ffa
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0a83e0aa8f7ab1eb1f30e3ba97d3ea36f16fd873
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802958"
 ---
-# <a name="pidtagmappingsignature-canonical-property"></a>PidTagMappingSignature の標準的なプロパティ
+# <a name="pidtagmappingsignature-canonical-property"></a>PidTagMappingSignature 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 特定の MAPI オブジェクトの名前付きプロパティのマッピングの署名が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_MAPPING_SIGNATURE  <br/> |
+|関連するプロパティ:  <br/> |PR_MAPPING_SIGNATURE  <br/> |
 |識別子:  <br/> |0x0FF8  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |その他  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 名前付きプロパティを持つオブジェクトがこのプロパティを公開することをお勧めします。 という名前の別の 1 つのオブジェクトからプロパティをコピーするとき、クライアント アプリケーションは両方のオブジェクトの**PR_MAPPING_SIGNATURE**プロパティを確認する必要があります。 このプロパティの使用方法は、コピーされたプロパティの名前と id の間の変換を最小限にできます。 
   
@@ -77,7 +77,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

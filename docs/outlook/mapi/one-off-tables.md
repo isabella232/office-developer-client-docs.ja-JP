@@ -1,5 +1,5 @@
 ---
-title: 一時テーブル
+title: 1 回限りのテーブル
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,9 +15,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801667"
 ---
-# <a name="one-off-tables"></a>一時テーブル
+# <a name="one-off-tables"></a>1 回限りのテーブル
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 一時テーブルには、新しい受信者を作成するため、アドレス帳プロバイダーがサポートしているテンプレートに関する情報が含まれています。 一時テーブルは、アドレス帳プロバイダーは、個々 のアドレス帳コンテナーと MAPI によって実装され、永続的または一時的にすることができます。 
   

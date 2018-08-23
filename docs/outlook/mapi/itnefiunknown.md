@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: eddca896-9497-4425-9904-87ef3cbae298
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e8267b254648870cea4e16b4dea0e9c92e316fb3
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801258"
 ---
-# <a name="itnef--iunknown"></a>ITnef: IUnknown
+# <a name="itnef--iunknown"></a>ITnef : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージに関連付けることができるバイナリ ストリームに、メッセージング システムがサポートされていない MAPI プロパティをカプセル化するためのメソッドを提供します。 このカプセル化に使用される形式は、トランスポート ニュートラル カプセル化形式 (TNEF) です。 ターゲット トランスポート プロバイダーまたは MAPI ベースのクライアント アプリケーション、TNEF の添付ファイルを含むメッセージを受信するには、回復できます、プロパティ、添付ファイルから。
   

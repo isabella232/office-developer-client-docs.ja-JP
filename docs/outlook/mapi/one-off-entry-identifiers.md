@@ -17,11 +17,11 @@ ms.locfileid: "19801670"
 ---
 # <a name="one-off-entry-identifiers"></a>一時エントリ id
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 一時エントリ id は、 **IAddrBook::CreateOneOff**メソッドでは、MAPI とゲートウェイ ・ コンポーネントなど、MAPI サブシステムへのアクセス権を持たないコンポーネントによって作成されます。 �ڍׂɂ��ẮA [IAddrBook::CreateOneOff](iaddrbook-createoneoff.md)��Q�Ƃ��Ă��������B 一時エントリ id の形式を次の図に示します。
   
-**一時エントリの識別子の形式**
+**一時エントリ識別子の形式**
   
 ![一時エントリの識別子の形式](media/amapi_69.gif "一時エントリの識別子の形式")
   

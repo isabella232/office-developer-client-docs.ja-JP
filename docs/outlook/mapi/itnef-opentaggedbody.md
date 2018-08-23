@@ -23,7 +23,7 @@ ms.locfileid: "19801229"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 カプセル化されたメッセージのテキストのストリームのインタ フェースを開きます。
   
@@ -35,7 +35,7 @@ HRESULT OpenTaggedBody(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpMessage_
   
@@ -63,7 +63,7 @@ S_OK
   
 > 呼び出しが成功し、予期される値または値が返されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 トランスポート プロバイダー、メッセージ ストア プロバイダー、およびゲートウェイがカプセル化されたメッセージのテキストのストリーム インターフェイスを開くに**ITnef::OpenTaggedBody**メソッドを呼び出します (つまり、TNEF のオブジェクト)。 
   
@@ -85,7 +85,7 @@ S_OK
   
 [OpenTnefStreamEx](opentnefstreamex.md)
   
-[PidTagBody の標準的なプロパティ](pidtagbody-canonical-property.md)
+[PidTagBody 標準プロパティ](pidtagbody-canonical-property.md)
   
-[ITnef: IUnknown](itnefiunknown.md)
+[ITnef : IUnknown](itnefiunknown.md)
 

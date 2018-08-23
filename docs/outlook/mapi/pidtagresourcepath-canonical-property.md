@@ -1,5 +1,5 @@
 ---
-title: PidTagResourcePath の標準的なプロパティ
+title: PidTagResourcePath 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ac49538e-6ee8-4ab4-9d79-88a83c7d0149
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d7385ea403e7ea45c97f6fd98e422ad7eb762c4c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803358"
 ---
-# <a name="pidtagresourcepath-canonical-property"></a>PidTagResourcePath の標準的なプロパティ
+# <a name="pidtagresourcepath-canonical-property"></a>PidTagResourcePath 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 サービス プロバイダーのサーバーへのパスが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_RESOURCE_PATH、PR_RESOURCE_PATH_A、PR_RESOURCE_PATH_W  <br/> |
+|関連するプロパティ:  <br/> |PR_RESOURCE_PATH、PR_RESOURCE_PATH_A、PR_RESOURCE_PATH_W  <br/> |
 |識別子:  <br/> |0x3E07  <br/> |
-|データを入力します。  <br/> |PT_STRING8、PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |領域:  <br/> |MAPI のステータス  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これらのプロパティに含まれているパスは、ユーザーがリソースを検索する場所として推奨されるパスを表します。 これらのプロパティの定義は、特定のプロバイダーです。 などのスケジュール アプリケーションは、そのスケジュールのアプリケーション ファイルの推奨される場所を指定するのにこれらのプロパティを使用します。
   
@@ -62,7 +62,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

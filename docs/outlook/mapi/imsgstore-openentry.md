@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a63c42cf-36af-466b-b41e-d6b53ce1c9fb
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 124208a3f5c6bb300aca3699a04b15e842c46cd1
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801023"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォルダーまたはメッセージを開き、さらにアクセスするためのインターフェイス ポインターを返します。 
   
@@ -38,7 +38,7 @@ HRESULT OpenEntry(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -90,7 +90,7 @@ MAPI_NO_CACHE
   
 > ストアをキャッシュ モードで開くときに、クライアントまたはサービス プロバイダーは、 **IMsgStore::OpenEntry**項目、またはリモートのストア上のフォルダーを開くに MAPI_NO_CACHE フラグを設定を呼び出すことができます。 リモート サーバー上で MDB_ONLINE フラグを使用してメッセージ ・ ストアを開く場合、MAPI_NO_CACHE フラグを使用する必要はありません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgStore::OpenEntry**メソッドは、フォルダーまたはメッセージを開くし、さらにアクセスするために使用できるインターフェイスへのポインターを返します。 
   

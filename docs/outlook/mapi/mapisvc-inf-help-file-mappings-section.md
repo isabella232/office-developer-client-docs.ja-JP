@@ -1,5 +1,5 @@
 ---
-title: MapiSvc.inf [ヘルプ ファイルのマッピング] セクション
+title: MapiSvc.inf [Help File Mappings] セクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801534"
 ---
-# <a name="mapisvcinf-help-file-mappings-section"></a>MapiSvc.inf [ヘルプ ファイルのマッピング] セクション
+# <a name="mapisvcinf-help-file-mappings-section"></a>MapiSvc.inf [Help File Mappings] セクション
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **[ヘルプ ファイルのマッピング]** セクションには、サービスによって生成されるエラーのヘルプを提供するファイルを 1 つのメッセージ サービスをマップの各エントリが含まれています。 このセクションのエントリは、次の形式を使用します。 
   

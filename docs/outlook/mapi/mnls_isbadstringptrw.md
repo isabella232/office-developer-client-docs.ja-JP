@@ -19,7 +19,7 @@ ms.locfileid: "19801651"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ワイド文字列へのポインターが有効であることを確認します。
   
@@ -29,7 +29,7 @@ BOOL MNLS_IsBadStringPtrW(
   UINT ucchMax);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpsz_
   
@@ -39,11 +39,11 @@ BOOL MNLS_IsBadStringPtrW(
   
 > [in]文字列の終端文字を含む文字の最大長。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 ブール値、文字列が無効な場合は true を返します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この関数は、 [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx)をラップします。 詳細については、 [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx)を参照してください。
   

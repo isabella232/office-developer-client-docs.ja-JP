@@ -1,5 +1,5 @@
 ---
-title: PidTagLastVerbExecuted の標準的なプロパティ
+title: PidTagLastVerbExecuted 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 502f0261-697f-41bf-8530-75e1d0f503e5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3c1a1313a6d24e06cf4d92f5eb57368696a4862e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802937"
 ---
-# <a name="pidtaglastverbexecuted-canonical-property"></a>PidTagLastVerbExecuted の標準的なプロパティ
+# <a name="pidtaglastverbexecuted-canonical-property"></a>PidTagLastVerbExecuted 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 実行された最後の動詞が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_LAST_VERB_EXECUTED  <br/> |
+|関連するプロパティ:  <br/> |PR_LAST_VERB_EXECUTED  <br/> |
 |識別子:  <br/> |0x1081  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |履歴  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは次の値。
   
@@ -60,7 +60,7 @@ ms.locfileid: "19802937"
 |Office メールから  <br/> |0x0000011B  <br/> |
 |メールを取り消し  <br/> |0x0000011C  <br/> |
 |メッセージの追跡  <br/> |0x00000139  <br/> |
-|連絡先  <br/> |0x00000200  <br/> |
+|Contact  <br/> |0x00000200  <br/> |
 |配布リスト  <br/> |0x00000201  <br/> |
 |付箋、青  <br/> |0x00000300  <br/> |
 |付箋、緑  <br/> |0x00000301  <br/> |
@@ -72,7 +72,7 @@ ms.locfileid: "19802937"
 |単一インスタンスの会議  <br/> |0x00000402  <br/> |
 |定期的な会議  <br/> |0x00000403  <br/> |
 |会議出席要求し、更新プログラムの完全な  <br/> |0x00000404  <br/> |
-|承諾  <br/> |0x00000405  <br/> |
+|Accept  <br/> |0x00000405  <br/> |
 |辞退  <br/> |0x00000406  <br/> |
 |仮承諾します。  <br/> |0x00000407  <br/> |
 |キャンセル  <br/> |0x00000408  <br/> |
@@ -134,7 +134,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

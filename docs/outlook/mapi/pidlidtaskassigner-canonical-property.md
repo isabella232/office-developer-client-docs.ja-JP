@@ -1,5 +1,5 @@
 ---
-title: PidLidTaskAssigner の標準的なプロパティ
+title: PidLidTaskAssigner 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f7047e4e-0fb3-476b-9568-8f1135e6d970
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5b711b1e0db0fab93016d3f1c979d81a142c9946
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802195"
 ---
-# <a name="pidlidtaskassigner-canonical-property"></a>PidLidTaskAssigner の標準的なプロパティ
+# <a name="pidlidtaskassigner-canonical-property"></a>PidLidTaskAssigner 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
  名が前回したユーザーにタスクが割り当てられます。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidTaskDelegator  <br/> |
+|関連するプロパティ:  <br/> |dispidTaskDelegator  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Task  <br/> |
 |長い ID (LID):  <br/> |0x00008121  <br/> |
-|データを入力します。  <br/> |PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_UNICODE  <br/> |
 |領域:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 タスクが割り当てられていない場合は、このプロパティが未設定のままにします。 クライアントは、タスク実施者が仕事の依頼を受信した後にこのプロパティを設定、ために、タスクの作業仕事を割り当てた人のコピーのプロパティが設定できません。 クライアントを追加または**dispidTaskMyDelegators** ([PidLidTaskAssigners](pidlidtaskassigners-canonical-property.md)) は、 **dispidTaskDelegator** ([PidLidTaskAssigner](pidlidtaskassigner-canonical-property.md)) のプロパティの [タスク] 仕事を割り当てた人リストから仕事を割り当てた人タスクを削除するときに、追加設定をする必要があります。または、タスクが削除された仕事を割り当てた人。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -19,23 +19,23 @@ ms.locfileid: "19801453"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このセクションには、3 つの MAPI サービス プロバイダーのコード サンプルが含まれています。
   
-- [Outlook MAPI のサンプルをダウンロード](downloading-the-outlook-mapi-samples.md)
+- [Outlook MAPI のサンプルのダウンロード](downloading-the-outlook-mapi-samples.md)
     
     このトピックでは、サンプルをダウンロードする方法について説明します。
     
-- [アドレス帳プロバイダーのサンプル](address-book-provider-sample.md)
+- [アドレス帳プロバイダー サンプル](address-book-provider-sample.md)
     
     このサンプルには、表示名と電子メール アドレスは、バイナリのフラット ファイルからの読み取りは、1 つの読み取り専用コンテナーがサポートしています。
     
-- [メッセージ ストア プロバイダーのサンプル](message-store-provider-sample.md)
+- [メッセージ ストア プロバイダー サンプル](message-store-provider-sample.md)
     
     このサンプルでは、メッセージとしてフォルダーとドキュメントのファイルを OLE 2.0 とのディレクトリを使用します。 サンプルでは、既定のメッセージ ストアのすべての必要な機能をサポートしています。
     
-- [トランスポート プロバイダーのサンプル](transport-provider-sample.md)
+- [トランスポート プロバイダー サンプル](transport-provider-sample.md)
     
     このサンプルでは、メッセージを送受信するためのファイルとディレクトリを使用します。
     

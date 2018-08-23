@@ -9,7 +9,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e58c4954-e6b5-469d-898b-cef0a8fd612c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e60ba98bdf82f7e0f02aefc858f2eefd4c7d91f7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19801284"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このセクションのトピックでは、MAPI の構造体に関連するマクロについて説明します。 詳細については、相互参照の他の文書に、またはこのドキュメントの他のトピックも含まれています。 
   

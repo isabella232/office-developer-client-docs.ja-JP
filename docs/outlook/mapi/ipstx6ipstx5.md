@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2fe6c1ef-c923-23b9-73ed-a149f7336754
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e1f12760607c86a9e076df7565696a58fdead32c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801207"
 ---
-# <a name="ipstx6--ipstx5"></a>IPSTX6: IPSTX5
+# <a name="ipstx6--ipstx5"></a>IPSTX6 : IPSTX5
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このインターフェイスは、IOSTX インターフェイスを使用するレプリケーションを実行するときに、ヘルパー機能を提供します。
   

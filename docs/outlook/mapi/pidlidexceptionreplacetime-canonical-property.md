@@ -1,5 +1,5 @@
 ---
-title: PidLidExceptionReplaceTime の標準的なプロパティ
+title: PidLidExceptionReplaceTime 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c3aae4f5-7f00-45bf-b007-370041ba360e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2292d53997fd4d54e9272789be83ea94a93c6a3e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801914"
 ---
-# <a name="pidlidexceptionreplacetime-canonical-property"></a>PidLidExceptionReplaceTime の標準的なプロパティ
+# <a name="pidlidexceptionreplacetime-canonical-property"></a>PidLidExceptionReplaceTime 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 内での定期的な例外を置き換えるときの日時を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidExceptionReplaceTime  <br/> |
+|関連するプロパティ:  <br/> |dispidExceptionReplaceTime  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008228  <br/> |
-|データを入力します。  <br/> |PT_SYSTIME  <br/> |
-|領域:  <br/> |カレンダー  <br/> |
+|データの種類 :   <br/> |PT_SYSTIME  <br/> |
+|領域:  <br/> |予定表  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 値は、世界協定時刻 (UTC) で指定する必要があります。 このプロパティは、例外の添付オブジェクトを検索する特定のインスタンスを使用します。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

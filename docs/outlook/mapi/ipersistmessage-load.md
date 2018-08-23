@@ -23,7 +23,7 @@ ms.locfileid: "19801114"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 指定されたメッセージのフォームが読み込まれます。
   
@@ -36,7 +36,7 @@ HRESULT Load(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pMessageSite_
   
@@ -60,7 +60,7 @@ S_OK
   
 > フォームが正常に読み込まれました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォームの閲覧者は、既存のメッセージのフォームをロードする**IPersistMessage::Load**メソッドを呼び出します。 
   
@@ -86,14 +86,14 @@ S_OK
 
 
 
-[PidTagMessageFlags の標準的なプロパティ](pidtagmessageflags-canonical-property.md)
+[PidTagMessageFlags 標準プロパティ](pidtagmessageflags-canonical-property.md)
   
-[PidTagMessageStatus の標準的なプロパティ](pidtagmessagestatus-canonical-property.md)
+[PidTagMessageStatus 標準プロパティ](pidtagmessagestatus-canonical-property.md)
   
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 
 
-[初期化されていない状態](uninitialized-state.md)
+[Uninitialized 状態](uninitialized-state.md)
   
 [HandsOffAfterSave 状態](handsoffaftersave-state.md)
   

@@ -23,7 +23,7 @@ ms.locfileid: "19801233"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 既存の行が上書きされる、複数のテーブル行を挿入します。
   
@@ -54,7 +54,7 @@ MAPI_E_INVALID_PARAMETER
   
 > 渡された行の 1 つ以上には、インデックス列がありません。 このエラーが返された場合、行は変更されません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **ITableData::HrModifyRows**メソッドは、 _lpSRowSet_パラメーターが指す[SRowSet](srowset.md)構造体によって記述された行を挿入します。 行セット内の行のインデックス列の値には、テーブル内の既存の行の値が一致すると、既存の行が置き換えられます。 行が存在しない場合**SRowSet**構造体に含まれる 1 つに一致する、 **HrModifyRows**は、テーブルの末尾に行を追加します。 
   
@@ -70,5 +70,5 @@ _LpSRowSet_で指定された行の列をテーブル内の列と同じ順序に
 
 [SRowSet](srowset.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

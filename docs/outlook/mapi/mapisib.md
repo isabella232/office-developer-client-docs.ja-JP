@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 16452798-7a95-43da-b95e-908debcea050
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a8044eb6647e6f437c87bb4d8b021c62ea15f606
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19801524"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 この構造体は、 [IMAPISync::SynchronizeInBackground](imapisyncsynchronizeinbackground.md)で使用されます。
   
@@ -34,7 +34,7 @@ HANDLE          *phSyncDoneEvent;
 } MAPISIB, *PMAPISIB
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulSize**
   
@@ -70,7 +70,7 @@ HANDLE          *phSyncDoneEvent;
 
 
 
-[IMAPISyncProgressCallback: IUnknown](imapisyncprogresscallbackiunknown.md)
+[IMAPISyncProgressCallback : IUnknown](imapisyncprogresscallbackiunknown.md)
   
-[IMAPISync: IUnknown](imapisynciunknown.md)
+[IMAPISync : IUnknown](imapisynciunknown.md)
 

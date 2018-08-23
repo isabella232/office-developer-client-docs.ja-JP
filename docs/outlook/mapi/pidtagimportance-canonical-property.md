@@ -1,5 +1,5 @@
 ---
-title: PidTagImportance の標準的なプロパティ
+title: PidTagImportance 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 274dd444-a863-4b53-bdbc-3763c375c43c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9f6a67dcff6c74f44bbc64ae8b95f3e0ec284a90
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802852"
 ---
-# <a name="pidtagimportance-canonical-property"></a>PidTagImportance の標準的なプロパティ
+# <a name="pidtagimportance-canonical-property"></a>PidTagImportance 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージの重要度のメッセージの送信者の意見を示す値が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_IMPORTANCE  <br/> |
+|関連するプロパティ:  <br/> |PR_IMPORTANCE  <br/> |
 |識別子:  <br/> |0x0017  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、 **PR_PRIORITY** ([PidTagPriority](pidtagpriority-canonical-property.md)) は混同しないでください。 重要性は、優先順位は、順序や速度のメッセージがメッセージング システムのソフトウェアが送信することを示します。 ユーザーに値を示します。 高い優先度は、通常より高いコストを示します。 重要度が高く通常は、ユーザー インターフェイスで別のディスプレイに関連付けられています。 
   
@@ -82,7 +82,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

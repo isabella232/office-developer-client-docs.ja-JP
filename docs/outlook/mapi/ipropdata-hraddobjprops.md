@@ -23,7 +23,7 @@ ms.locfileid: "19801148"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 PT_OBJECT の種類の 1 つまたは複数のプロパティをオブジェクトに追加します。
   
@@ -62,7 +62,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > すべてではなく、いくつかのプロパティが追加されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IPropData::HrAddObjProps**メソッドは、PT_OBJECT の種類の 1 つまたは複数のプロパティをオブジェクトに追加します。 **SetProps**を呼び出すことによってオブジェクトのプロパティを作成することはできませんので、 **HrAddObjProps**は代わりに、オブジェクトのプロパティの[IMAPIProp::SetProps](imapiprop-setprops.md)メソッドを提供します。 [IMAPIProp::GetPropList](imapiprop-getproplist.md)メソッドで返されるプロパティ タグのリストに含まれているプロパティ タグでオブジェクトのプロパティの結果を追加します。 
   

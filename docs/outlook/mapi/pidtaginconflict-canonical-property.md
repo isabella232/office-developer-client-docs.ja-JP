@@ -1,5 +1,5 @@
 ---
-title: PidTagInConflict の標準的なプロパティ
+title: PidTagInConflict 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: e83c05c6-a7c0-486c-a112-58a39255767a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 573e0ba37d4117d85193933a3a5045b5060fbd3d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802858"
 ---
-# <a name="pidtaginconflict-canonical-property"></a>PidTagInConflict の標準的なプロパティ
+# <a name="pidtaginconflict-canonical-property"></a>PidTagInConflict 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 添付ファイルが別のレプリカを表す場合、TRUE が格納されます。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_IN_CONFLICT  <br/> |
+|関連するプロパティ:  <br/> |PR_IN_CONFLICT  <br/> |
 |識別子:  <br/> |0x666C  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |競合メモ  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 電子メール クライアントとサーバーは、レプリカの同期中にメッセージの現在のバージョンとの競合を検出すると、競合解決メッセージを生成する必要があります。 ローカルのレプリカに、メッセージの現在のバージョンが現在の同期操作中に転送されることができることを理解する重要です。 競合既にが存在する場合、サーバー上でローカルのレプリカに矛盾したメッセージのいずれかにダウンロードされた前にこの行われます。 競合を解決すると、メッセージが競合する Pcl を持つ独立したレプリカと同期する必要があります。 メッセージ自体は、クライアントとサーバー間で同期されませんする必要があります、競合の解決します。独立したレプリカのみを交換する必要があります。 同期パートナーは、競合のメッセージの構造に一致する新しいメッセージを生成する必要があります。 したがって、クライアントとサーバーのどちらが「勝者」の項目を検出するために同じアルゴリズムを使用することがあります。 「勝者」を検出するためには、次の規則を適用する必要があります。
   
@@ -72,7 +72,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

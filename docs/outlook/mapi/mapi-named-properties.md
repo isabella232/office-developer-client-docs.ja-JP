@@ -1,5 +1,5 @@
 ---
-title: MAPI プロパティを名前付き
+title: MAPI ���O�t���v���p�e�B
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,9 +15,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801402"
 ---
-# <a name="mapi-named-properties"></a>MAPI プロパティを名前付き
+# <a name="mapi-named-properties"></a>MAPI ���O�t���v���p�e�B
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI には、プロパティに名前を割り当てるため、これらの名前を一意の識別子にマップするため、および永続的なこのマッピングを行うための機能が用意されています。 識別子のマッピングへの永続的な名前は、セッション間でプロパティ名が有効なまま、です。
   
@@ -61,5 +61,5 @@ lpMAPIProp->GetNamesFromIDs (lppPropTags,
 
 ## <a name="see-also"></a>関連項目
 
-- [MAPI Property Overview](mapi-property-overview.md)
+- [MAPI のプロパティの概要](mapi-property-overview.md)
 

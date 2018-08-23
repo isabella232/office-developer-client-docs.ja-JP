@@ -1,5 +1,5 @@
 ---
-title: PidLidGlobalObjectId の標準的なプロパティ
+title: PidLidGlobalObjectId 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a4e3f9ab-b7ee-4dff-b7bd-2462c561735c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ba79af79ddadba2ca2223008e367738299475f02
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802020"
 ---
-# <a name="pidlidglobalobjectid-canonical-property"></a>PidLidGlobalObjectId の標準的なプロパティ
+# <a name="pidlidglobalobjectid-canonical-property"></a>PidLidGlobalObjectId 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 カレンダー オブジェクトの一意の識別子を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |LID_GLOBAL_OBJID  <br/> |
+|関連するプロパティ:  <br/> |LID_GLOBAL_OBJID  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Meeting  <br/> |
 |長い ID (LID):  <br/> |0x00000003  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 カレンダー オブジェクトを一度設定するには、このプロパティの値を変更しないでください。 形式の詳細については、 [[MS OXOCAL]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)を参照しています。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

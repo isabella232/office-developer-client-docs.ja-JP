@@ -1,5 +1,5 @@
 ---
-title: PidLidAppointmentSubType の標準的なプロパティ
+title: PidLidAppointmentSubType 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e2e00af3-1fb3-4314-936a-f480674d3d83
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: cb9f4e0f58ea27d36ba911ed60527a2e53f23727
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801804"
 ---
-# <a name="pidlidappointmentsubtype-canonical-property"></a>PidLidAppointmentSubType の標準的なプロパティ
+# <a name="pidlidappointmentsubtype-canonical-property"></a>PidLidAppointmentSubType 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 イベントが 1 日であるかどうかを指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidApptSubType  <br/> |
+|関連するプロパティ:  <br/> |dispidApptSubType  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008215  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |カレンダー  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
+|領域:  <br/> |予定表  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、イベントは、終日イベントでは、ユーザーが指定されているかどうかを指定します。 TRUE の値は、イベントが終日イベントでは、場合に、開始時刻と終了時刻する必要があることで、午前 0 時 24 時間の倍数の期間とは、少なくとも 24 時間を示します。 値が FALSE の場合、またはこのプロパティがない場合は、イベントが終日イベントではないことを示します。 クライアントまたはサーバーではイベントが開始され、午前 0 時に終了した場合でも、ユーザーが 24 時間であるイベントを作成する場合、値は TRUE としてを推測こと必要がありますいません。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

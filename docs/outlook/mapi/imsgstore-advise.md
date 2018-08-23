@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8c57e743-a798-4e39-a61a-46dff8b1ac7c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6a315cef8263f7e241a815a0f054dc3174d88fa7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800989"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ・ ストアに影響を与える特定のイベントの通知を受け取ることを登録します。
   
@@ -37,7 +37,7 @@ HRESULT Advise(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -113,7 +113,7 @@ MAPI_E_NO_SUPPORT
   
 > メッセージ ストア プロバイダーは、メッセージ ・ ストアを使用して通知の登録をサポートしていません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgStore::Advise**メソッドでは、シンク オブジェクトと、メッセージ ストアまたはメッセージ ・ ストア内のオブジェクトにアドバイスの呼び出し元の間の接続を確立します。 この接続を使用していずれかのアドバイズ シンクに通知を送信するか、アドバイズ ソース オブジェクトに、 _ulEventMask_パラメーターで指定されているより多くのイベントが発生します。 _LpEntryID_パラメーターが有効なエントリの識別子にポイントして、アドバイズ ソースは、このエントリの識別子によって識別されるオブジェクト。 _LpEntryID_が NULL の場合は、アドバイスのソースは、メッセージ ストアです。 
   

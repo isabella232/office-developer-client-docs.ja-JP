@@ -1,5 +1,5 @@
 ---
-title: PidTagOriginalEits の標準的なプロパティ
+title: PidTagOriginalEits 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9908039e-6b88-428f-b241-b04144cbcf5c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3bb3226868f88baf12e8778f0122f975c1cadd84
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,19 +19,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803074"
 ---
-# <a name="pidtagoriginaleits-canonical-property"></a>PidTagOriginalEits の標準的なプロパティ
+# <a name="pidtagoriginaleits-canonical-property"></a>PidTagOriginalEits 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージのテキストの元のエンコードされた情報タイプ (含む) のコピーが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ORIGINAL_EITS  <br/> |
+|関連するプロパティ:  <br/> |PR_ORIGINAL_EITS  <br/> |
 |識別子:  <br/> |0x0021  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |Server  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -54,7 +54,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

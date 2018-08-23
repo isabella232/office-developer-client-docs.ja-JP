@@ -1,5 +1,5 @@
 ---
-title: PidTagRead の標準的なプロパティ
+title: PidTagRead 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2dcd9ff3-f380-48c7-ae9e-d4c717a9e41f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 48b79765f64f8c75ee0e0c95302c98641b919c6d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,19 +19,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803276"
 ---
-# <a name="pidtagread-canonical-property"></a>PidTagRead の標準的なプロパティ
+# <a name="pidtagread-canonical-property"></a>PidTagRead 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルの行が読み取られたかどうかを示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_READ  <br/> |
+|関連するプロパティ:  <br/> |PR_READ  <br/> |
 |識別子:  <br/> |0x0E69  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |MAPI 以外から送信できます。  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -64,7 +64,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,5 +1,5 @@
 ---
-title: PidTagIconIndex の標準的なプロパティ
+title: PidTagIconIndex 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 35bb0d6d-41d4-47d6-b161-be3721894201
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 83ab01363d478d197286bfa8f7b5b092a7ffd5a6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802834"
 ---
-# <a name="pidtagiconindex-canonical-property"></a>PidTagIconIndex の標準的なプロパティ
+# <a name="pidtagiconindex-canonical-property"></a>PidTagIconIndex 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 電子メールのオブジェクトのグループを表示するときに使用するアイコンを表す数字が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ICON_INDEX  <br/> |
+|関連するプロパティ:  <br/> |PR_ICON_INDEX  <br/> |
 |識別子:  <br/> |0x1080  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、存在する場合は、クライアントへのヒントです。 クライアントは、このプロパティの値を無視することがあります。 
   
@@ -61,7 +61,7 @@ ms.locfileid: "19802834"
 |Office メールから  <br/> |0x0000011B  <br/> |
 |メールを取り消し  <br/> |0x0000011C  <br/> |
 |メッセージの追跡  <br/> |0x00000130  <br/> |
-|連絡先  <br/> |0x00000200  <br/> |
+|Contact  <br/> |0x00000200  <br/> |
 |配布リスト  <br/> |0x00000202  <br/> |
 |付箋の青  <br/> |0x00000300  <br/> |
 |付箋緑  <br/> |0x00000301  <br/> |
@@ -73,7 +73,7 @@ ms.locfileid: "19802834"
 |単一インスタンスの会議  <br/> |0x00000402  <br/> |
 |定期的な会議  <br/> |0x00000403  <br/> |
 |会議出席依頼  <br/> |0x00000404  <br/> |
-|承諾  <br/> |0x00000405  <br/> |
+|Accept  <br/> |0x00000405  <br/> |
 |辞退  <br/> |0x00000406  <br/> |
 |Tentativly  <br/> |0x00000407  <br/> |
 |キャンセル  <br/> |0x00000408  <br/> |
@@ -142,7 +142,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

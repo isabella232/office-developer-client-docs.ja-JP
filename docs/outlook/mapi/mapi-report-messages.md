@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 824eb670-16b7-49bf-9992-39fe0586a552
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: addf93cadae418017a40ba448328d2e1fc1decf6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19801438"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 送信者へのメッセージのステータス情報を表示メッセージを報告します。
   
@@ -57,7 +57,7 @@ Nonread レポートは、メッセージの読み取りのフラグが設定さ
   
 |**レポートの種類**|**メッセージ クラスで使用される定数**|
 |:-----|:-----|
-|読み取り  <br/> |IPNRN  <br/> |
+|Read  <br/> |IPNRN  <br/> |
 |Nonread  <br/> |IPNNRN  <br/> |
 |配信  <br/> |災害復旧  <br/> |
 |配信不能  <br/> |NDR  <br/> |

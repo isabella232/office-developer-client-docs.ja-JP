@@ -19,7 +19,7 @@ ms.locfileid: "19801380"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 登録して、フォーム オブジェクトからの通知の処理は、その他の MAPI オブジェクトよりも別のプロセスです。 アドバイズ シンク フォームの通知の実装のいずれか**IMAPIAdviseSink**ではなく、 **IMAPIViewAdviseSink**または**IMAPIFormAdviseSink**のインタ フェースです。 [IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)と[IMAPIFormAdviseSink: IUnknown](imapiformadvisesinkiunknown.md)複数のメソッドを持つそれぞれ、対応する、ソースを通知する可能性があるイベントごとに 1 つが生成できます。 たとえば、 **IMAPIFormAdviseSink**には 2 つの方法: フォーム ビューアーのステータスと正しいフォームで新しいメッセージを表示する[IMAPIFormAdviseSink::OnActivateNext](imapiformadvisesink-onactivatenext.md)への変更を処理するために[IMAPIFormAdviseSink::OnChange](imapiformadvisesink-onchange.md) 。 
   

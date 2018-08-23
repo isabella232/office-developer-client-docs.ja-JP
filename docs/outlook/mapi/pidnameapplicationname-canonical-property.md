@@ -1,5 +1,5 @@
 ---
-title: PidNameApplicationName の標準的なプロパティ
+title: PidNameApplicationName 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9f7e91f5-63a8-4529-9fb4-6275027af145
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 195cc6454dd5d29839d36e3cf206b0354d5761a9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802299"
 ---
-# <a name="pidnameapplicationname-canonical-property"></a>PidNameApplicationName の標準的なプロパティ
+# <a name="pidnameapplicationname-canonical-property"></a>PidNameApplicationName 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ドキュメントに関連付けられているファイルを開くことを指定します。
   
@@ -32,7 +32,7 @@ ms.locfileid: "19802299"
 |フレンドリ名:  <br/> |なし  <br/> |
 |プロパティを設定します。  <br/> |PS_PUBLIC_STRINGS  <br/> |
 |プロパティ名:  <br/> |AppName  <br/> |
-|データを入力します。  <br/> |PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_UNICODE  <br/> |
 |領域:  <br/> |Common  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -61,7 +61,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

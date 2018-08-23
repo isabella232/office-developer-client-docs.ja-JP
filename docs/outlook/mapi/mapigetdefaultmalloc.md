@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 148695dd-d886-4a06-9cfe-749059ae91ed
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b236b24c10a241dbdecc28bf2e04de5f69e989e5
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801490"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 既定の MAPI のメモリ割り当て関数のアドレスを取得します。
   
@@ -37,7 +37,7 @@ ms.locfileid: "19801490"
 LPMALLOC MAPIGetDefaultMalloc( );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 なし。 
   

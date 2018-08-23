@@ -1,5 +1,5 @@
 ---
-title: PidLidReminderSet の標準的なプロパティ
+title: PidLidReminderSet 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 06b7792c-1b43-4e20-9a3b-44f2664b2125
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fd40be7733934002b81482a8bf5cfe8c9ce12313
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802135"
 ---
-# <a name="pidlidreminderset-canonical-property"></a>PidLidReminderSet の標準的なプロパティ
+# <a name="pidlidreminderset-canonical-property"></a>PidLidReminderSet 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オブジェクトにアラームを設定するかどうかを指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidReminderSet  <br/> |
+|関連するプロパティ:  <br/> |dispidReminderSet  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x00008503  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |アラーム  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
+|領域:  <br/> |Reminder  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 定期的な予定表オブジェクトにこのプロパティを TRUE に設定がある場合、クライアントは例外の値をオーバーライドできます。
   
@@ -67,7 +67,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

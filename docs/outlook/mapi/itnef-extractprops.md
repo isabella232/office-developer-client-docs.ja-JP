@@ -23,7 +23,7 @@ ms.locfileid: "19801247"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 TNEF のカプセル化のプロパティを抽出します。 
   
@@ -67,7 +67,7 @@ MAPI_E_CORRUPT_DATA
   
 > ストリームにデコードされたデータが壊れています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 トランスポート プロバイダー、メッセージ ストア プロバイダー、およびゲートウェイ メソッドを呼び出す**ITnef::ExtractProps**を抽出する (これをデコード) は、プロパティをメッセージまたは[OpenTnefStream](opentnefstream.md)関数に渡された添付ファイルをカプセル化します。 呼び出し元のプロバイダーまたはゲートウェイには、デコードするためのプロパティの一覧を指定できます。 プロバイダーとゲートウェイも使用できます**ExtractProps**の添付ファイルに対して特別な処理情報を提供します。 
   
@@ -104,5 +104,5 @@ _LpProblems_で返される値は、呼び出しが S_OK を返す場合にの�
   
 [STnefProblemArray](stnefproblemarray.md)
   
-[ITnef: IUnknown](itnefiunknown.md)
+[ITnef : IUnknown](itnefiunknown.md)
 

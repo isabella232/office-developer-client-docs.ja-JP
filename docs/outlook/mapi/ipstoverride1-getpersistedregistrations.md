@@ -23,7 +23,7 @@ ms.locfileid: "19801163"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 個人用フォルダー (.pst) ファイルの登録の一覧を取得します。
   
@@ -31,7 +31,7 @@ ms.locfileid: "19801163"
 HRESULT GetPersistedRegistration(SPropValue **ppmval);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ppmval_
   
@@ -50,7 +50,7 @@ S_OK
 
 
 
-[IPSTOVERRIDE1: IUnknown](ipstoverride1iunknown.md)
+[IPSTOVERRIDE1 : IUnknown](ipstoverride1iunknown.md)
   
-[IPSTOVERRIDEREQ: IUnknown](ipstoverridereqiunknown.md)
+[IPSTOVERRIDEREQ : IUnknown](ipstoverridereqiunknown.md)
 

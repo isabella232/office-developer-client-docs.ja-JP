@@ -17,7 +17,7 @@ ms.locfileid: "19801680"
 ---
 # <a name="opening-a-message"></a>メッセージを開く
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ### <a name="to-open-a-message"></a>メッセージを開く
   

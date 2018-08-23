@@ -1,5 +1,5 @@
 ---
-title: PidLidTaskFFixOffline の標準的なプロパティ
+title: PidLidTaskFFixOffline 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: bbaf7df4-2de0-4da3-9125-eb24dfa94cd8
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b8da927fe0080a83748bbb2941979dcb246222fa
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802216"
 ---
-# <a name="pidlidtaskffixoffline-canonical-property"></a>PidLidTaskFFixOffline の標準的なプロパティ
+# <a name="pidlidtaskffixoffline-canonical-property"></a>PidLidTaskFFixOffline 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **DispidTaskOwner** ([PidLidTaskOwner](pidlidtaskowner-canonical-property.md)) のプロパティの正確性を示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidTaskFFixOffline  <br/> |
+|関連するプロパティ:  <br/> |dispidTaskFFixOffline  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Task  <br/> |
 |長い ID (LID):  <br/> |0x0000812C  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **DispidTaskFFixOffline**プロパティが FALSE に設定が設定されていない場合、 **dispidTaskOwner**プロパティの値が正しい。 **DispidTaskFFixOffline**が TRUE に設定されている場合、クライアントは、 **dispidTaskOwner**の正確な値を特定できません。 その場合は、クライアントでは、「不明」などの汎用の所有者の名前に**dispidTaskOwner**を設定できます。 ただし、クライアントが真の**dispidTaskFFixOffline**の値を検出すると、正確な所有者名を決定することができます、クライアントは**dispidTaskOwner**を更新する必要があり、 **dispidTaskFFixOffline**が FALSE に設定。 
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

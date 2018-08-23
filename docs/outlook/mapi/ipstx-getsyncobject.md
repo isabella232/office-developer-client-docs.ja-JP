@@ -23,7 +23,7 @@ ms.locfileid: "19801196"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 同期セッションを開始し、関連付けられている**[IOSTX](iostxiunknown.md)** インターフェイスを取得します。 
   
@@ -33,13 +33,13 @@ HRESULT GetSyncObject(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ppostx_
   
 >  [out]取得する**IOSTX**インターフェイスへのポインター。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 呼び出し元は、同じフォルダーが 2 つ以上のスレッドで同時に同期されていないことを確認する必要があります。
   

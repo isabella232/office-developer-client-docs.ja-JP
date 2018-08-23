@@ -1,5 +1,5 @@
 ---
-title: 読み込みメッセージ ストア プロバイダー
+title: メッセージ ストア プロバイダーの読み込み
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801276"
 ---
-# <a name="loading-message-store-providers"></a>読み込みメッセージ ストア プロバイダー
+# <a name="loading-message-store-providers"></a>メッセージ ストア プロバイダーの読み込み
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアント アプリケーションは、メッセージ ストアを開いたら、MAPI は、メッセージ ストア プロバイダーの DLL をメモリに読み込みます。 MAPI には、DLL が読み込まれたら、メッセージ ストア プロバイダーが、MAPI の間で非常に特定、一連のメソッド呼び出しが発生します。 このメソッドの呼び出し順序が最上位レベルを取得するための MAPI を有効に[IMSProvider: IUnknown](imsprovideriunknown.md)、 [IMSLogon: IUnknown](imslogoniunknown.md)、および[IMsgStore: IMAPIProp](imsgstoreimapiprop.md)インターフェイス、およびメッセージ ストア プロバイダーは、MAPI のサポート オブジェクトを取得することができます。 呼び出しシーケンスの後メッセージ ストア プロバイダーがクライアントからのログオンを使用する準備があります。 
   

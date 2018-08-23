@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 22f497de-4afe-4433-965d-c3b5a66b05da
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6ee4524d08e334df858c2f035f1b21bd2b0a1c8b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801183"
 ---
-# <a name="ipstoverridereq--iunknown"></a>IPSTOVERRIDEREQ: IUnknown
+# <a name="ipstoverridereq--iunknown"></a>IPSTOVERRIDEREQ : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロバイダーを格納する個人用フォルダー ファイル (PST) のリソースをアクセスします。
   
@@ -40,7 +40,7 @@ ms.locfileid: "19801183"
 |:-----|:-----|
 |[IPSTOVERRIDEREQ::RegisterTrustedPSTOverrideHandler](ipstoverridereq-registertrustedpstoverridehandler.md) <br/> |個人用フォルダー (.pst) ファイルのロックを解除する手順を開始します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 PST をオーバーライドするハンドラーのインターフェイス識別子は可能性があります現在がある場合は、 [MAPI の定数](mapi-constants.md)のトピックで検索してコピーし、コードに追加のダウンロード可能なヘッダー ファイルで定義されていません。 値はシンボル名のグローバル一意識別子 (GUID) を関連付けるには、Microsoft Windows ソフトウェア開発キット (SDK) のヘッダー ファイル guiddef.h に定義されている DEFINE_GUID マクロを使用します。 
   
@@ -50,5 +50,5 @@ PST をオーバーライドするハンドラーのインターフェイス識�
 
 
 
-[IPSTOVERRIDE1: IUnknown](ipstoverride1iunknown.md)
+[IPSTOVERRIDE1 : IUnknown](ipstoverride1iunknown.md)
 

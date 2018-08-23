@@ -1,5 +1,5 @@
 ---
-title: PidTagDepartmentName の標準的なプロパティ
+title: PidTagDepartmentName 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d8cb407e-5c3a-4b4c-b20e-78efcd373081
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1b33f051426e5bdf5ab4f949fa59535081e49185
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802697"
 ---
-# <a name="pidtagdepartmentname-canonical-property"></a>PidTagDepartmentName の標準的なプロパティ
+# <a name="pidtagdepartmentname-canonical-property"></a>PidTagDepartmentName 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 受信者が使用される部門の名前が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_DEPARTMENT_NAME、PR_DEPARTMENT_NAME_A、PR_DEPARTMENT_NAME_W  <br/> |
+|関連するプロパティ:  <br/> |PR_DEPARTMENT_NAME、PR_DEPARTMENT_NAME_A、PR_DEPARTMENT_NAME_W  <br/> |
 |識別子:  <br/> |0x3A18  <br/> |
-|データを入力します。  <br/> |PT_STRING8、PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |領域:  <br/> |MAPI メール ユーザー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これらのプロパティでは、識別を提供し、受信者に関する情報にアクセスします。 受信者とその構造によって定義されます。 
   
@@ -72,7 +72,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

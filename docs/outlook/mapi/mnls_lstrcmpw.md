@@ -19,7 +19,7 @@ ms.locfileid: "19801644"
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 2 つの Unicode 文字列を比較します。
   
@@ -29,7 +29,7 @@ int MNLS_lstrcmpW(
   LPCWSTR lpString2);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpString1_
   
@@ -39,11 +39,11 @@ int MNLS_lstrcmpW(
   
 > [in]比較する 2 番目の Unicode 文字列へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 CSTR_EQUAL を除く**MNLS_CompareStringW**に同等の呼び出しの値を返します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
  _MNLS_lstrcmpW_ GetUserDefaultLCID、フラグ、0 のロケールで[MNLS_CompareStringW](mnls_comparestringw.md)を呼び出すことによって比較を実行して cch1 と cch2 の場合は-1 です。 
   

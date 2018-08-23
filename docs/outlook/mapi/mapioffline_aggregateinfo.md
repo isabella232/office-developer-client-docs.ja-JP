@@ -19,7 +19,7 @@ ms.locfileid: "19801504"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [HrCreateOfflineObj](hrcreateofflineobj.md)構造体が使用されます。 
   
@@ -32,7 +32,7 @@ typedef struct
 } MAPIOFFLINE_AGGREGATEINFO;
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulSize**
   

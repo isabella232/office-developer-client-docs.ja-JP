@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 064dd5ca-0108-4045-b17b-0bb29cb93346
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 588a32cb2a468c84dfc513af5e4abf6a9a1d0286
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801024"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ サービス テーブルで、[プロファイルのメッセージ サービスの一覧へのアクセスを提供します。
   
@@ -50,7 +50,7 @@ S_OK
   
 > メッセージ サービス テーブルは正常に返されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgServiceAdmin::GetMsgServiceTable**メソッドは、メッセージ サービス テーブルで、セッション ・ プロファイルに現在インストールされているメッセージ サービスを一覧表示する MAPI を保持するテーブルへのアクセスを提供します。 メッセージ サービス テーブル内の列の一覧については、[メッセージ サービス テーブル](message-service-tables.md)を参照してください。
   
@@ -72,7 +72,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IMsgServiceAdmin::DeleteMsgService](imsgserviceadmin-deletemsgservice.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

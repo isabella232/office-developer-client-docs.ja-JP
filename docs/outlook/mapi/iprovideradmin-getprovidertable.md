@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e9deaa7c-430b-4e97-8ed6-f7c615956e0f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2ad57b91a1b9d06ab8284fa53c283d17e4eb5613
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801167"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ サービスのプロバイダーのテーブル、メッセージ サービスのサービス プロバイダーの一覧へのアクセスを提供します。
   
@@ -54,7 +54,7 @@ S_OK
   
 > プロバイダー テーブルは正常に返されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IProviderAdmin::GetProviderTable**メソッドは、メッセージ サービスのプロバイダーのテーブル、MAPI は、メッセージ サービスでは、各サービス プロバイダーに関する情報が含まれていることを保持するテーブルへのポインターを取得します。 
   
@@ -98,7 +98,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IMsgServiceAdmin::GetProviderTable](imsgserviceadmin-getprovidertable.md)
   
-[IProviderAdmin: IUnknown](iprovideradminiunknown.md)
+[IProviderAdmin : IUnknown](iprovideradminiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

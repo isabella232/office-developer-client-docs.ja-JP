@@ -1,5 +1,5 @@
 ---
-title: メッセージのプロパティの概要
+title: メッセージ プロパティの概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801641"
 ---
-# <a name="message-properties-overview"></a>メッセージのプロパティの概要
+# <a name="message-properties-overview"></a>メッセージ プロパティの概要
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI は、メッセージのプロパティを次の 3 種類に分割します。
   

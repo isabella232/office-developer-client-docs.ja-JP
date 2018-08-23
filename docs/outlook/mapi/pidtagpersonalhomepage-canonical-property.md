@@ -1,5 +1,5 @@
 ---
-title: PidTagPersonalHomePage の標準的なプロパティ
+title: PidTagPersonalHomePage 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1ce4cb8b-b1f7-420a-b0b2-322c70e4b0f3
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 685ca78367ac4e0a8334a3d14c2fda9d57161e1d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803155"
 ---
-# <a name="pidtagpersonalhomepage-canonical-property"></a>PidTagPersonalHomePage の標準的なプロパティ
+# <a name="pidtagpersonalhomepage-canonical-property"></a>PidTagPersonalHomePage 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ユーザーの個人のホーム ページの URL が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_PERSONAL_HOME_PAGE、PR_PERSONAL_HOME_PAGE_A、PR_PERSONAL_HOME_PAGE_W  <br/> |
+|関連するプロパティ:  <br/> |PR_PERSONAL_HOME_PAGE、PR_PERSONAL_HOME_PAGE_A、PR_PERSONAL_HOME_PAGE_W  <br/> |
 |識別子:  <br/> |0x3A50  <br/> |
-|データを入力します。  <br/> |PT_STRING8、PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |領域:  <br/> |MAPI メール ユーザー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これらのプロパティは、ユーザーまたはユーザーの組織によって定義されます。
   
@@ -72,7 +72,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

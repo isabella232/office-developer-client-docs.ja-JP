@@ -23,7 +23,7 @@ ms.locfileid: "19801216"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルの行を削除します。
   
@@ -33,7 +33,7 @@ HRESULT HrDeleteRow(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpSPropValue_
   
@@ -49,7 +49,7 @@ MAPI_E_NOT_FOUND
   
 > _LpSPropValue_パラメーターで指定されたプロパティは、テーブル内の行を識別しません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **ITableData::HrDeleteRow**メソッドは、 _lpSPropValue_パラメーターで指定されたプロパティに一致する列を含むテーブルの行を削除します。 行のデータが削除され、行は、開いているすべてのビューから削除されます。 
   
@@ -71,5 +71,5 @@ MAPI_E_NOT_FOUND
   
 [TABLE_NOTIFICATION](table_notification.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

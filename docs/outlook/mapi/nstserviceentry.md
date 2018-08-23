@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5ada6363-2406-4c0a-8326-a299a8bbefe1
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b5902c25197c2ae5790e654a8f29227e107b4a72
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19801666"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI のメッセージ サービスのエントリ ポイントの関数では、NST ストアとして PST ベースのローカル ストアをラップするプロバイダーを格納します。 
   
@@ -45,7 +45,7 @@ HRESULT NSTServiceEntry(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  **NSTServiceEntry**は、 **[MSGSERVICEENTRY](msgserviceentry.md)** 関数のプロトタイプを使用します。 そのパラメーターについては、 **[MSGSERVICEENTRY](msgserviceentry.md)** を参照してください。 
   
@@ -53,7 +53,7 @@ HRESULT NSTServiceEntry(
 
 戻り値については、 **[MSGSERVICEENTRY](msgserviceentry.md)** を参照してください。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 Msmapi32.dll のこの関数のアドレスを検索するには、 **[GetProcAddress](http://msdn.microsoft.com/en-us/library/ms683212.aspx)** を使用して、プロシージャ名として"NSTServiceEntry"を指定します。 
   

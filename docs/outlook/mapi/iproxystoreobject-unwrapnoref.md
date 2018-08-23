@@ -23,7 +23,7 @@ ms.locfileid: "19801151"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 同期を呼び出すと、アイテムをダウンロードせず、元の個人用フォルダー ファイル (PST) へのアクセスを提供する、インターネット メッセージ アクセス プロトコル (IMAP) ラップ解除済みストア オブジェクトにポインターを取得します。
   
@@ -31,7 +31,7 @@ ms.locfileid: "19801151"
 HRESULT IProxyStoreObject::UnwrapNoRef (     LPVOID *ppvObject ); 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ppvObject_
   
@@ -43,7 +43,7 @@ S_OK
   
 - 呼び出しが成功したし、 _ppvObject_で返されたラップが解除されたインターフェイスへのポインター。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 せず、最初に、IMAP ストアのラップを解除、ストア内のメッセージにアクセスすることができます、強制的に同期メッセージ全体をダウンロードしようとします。 ラップが解除されたストアを使用すると、ダウンロードをトリガーすることがなく現在の状態のメッセージへのアクセスができます。
   

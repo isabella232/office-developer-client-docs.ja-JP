@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c32493fa-aa42-485b-9ea4-f93b835906df
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9da9a13f87eac097fba078da1f1d6c3f78f69c0e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801014"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ストア プロバイダーは、送信されたメッセージの処理を実行できるようにします。 このメソッドは、MAPI スプーラーによってのみ呼び出されます。
   
@@ -59,7 +59,7 @@ MAPI_E_NO_SUPPORT
   
 > メッセージ ストア プロバイダーは、送信済みメッセージの処理をサポートしていません。 呼び出し元は、MAPI スプーラーではない場合、エラー値が返されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgStore::FinishedMsg**メソッドでは、送信されたメッセージの処理を実行します。 この処理には、別のフォルダー、または両方のアクションに移動すること、メッセージの削除が含まれます。 処理の種類は、 **PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) と**PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) のプロパティを設定するかどうかによって異なります。 
   

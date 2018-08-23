@@ -23,7 +23,7 @@ ms.locfileid: "19801126"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 前のプロファイルの管理オブジェクトに発生したエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。 
   
@@ -35,7 +35,7 @@ HRESULT GetLastError(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _hResult_
   
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > か、MAPI_UNICODE フラグが設定された実装は Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、実装は、Unicode だけをサポートしています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IProfAdmin::GetLastError**メソッドは、プロファイルの管理オブジェクトのメソッドの呼び出しから返された最後のエラーに関する情報を取得します。 
   
@@ -83,5 +83,5 @@ MAPI が提供を 1 つ**返します**は S_OK を返し、 _lppMAPIError_パ�
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[IProfAdmin: IUnknown](iprofadminiunknown.md)
+[IProfAdmin : IUnknown](iprofadminiunknown.md)
 

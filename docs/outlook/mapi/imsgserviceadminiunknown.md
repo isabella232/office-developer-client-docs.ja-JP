@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5905b9e9-c462-451d-a49f-1f3a8aa506a6
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 21889bf626d7f9128d1e01b3e6a15b5fa0d2e696
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801020"
 ---
-# <a name="imsgserviceadmin--iunknown"></a>IMsgServiceAdmin: IUnknown
+# <a name="imsgserviceadmin--iunknown"></a>IMsgServiceAdmin : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロファイル内のメッセージ サービスを変更します。
   
@@ -53,7 +53,7 @@ ms.locfileid: "19801020"
 |[SetPrimaryIdentity](imsgserviceadmin-setprimaryidentity.md) <br/> |メッセージ サービス プロファイルのプライマリ id のサプライヤーになることを指定します。  <br/> |
 |[GetProviderTable](imsgserviceadmin-getprovidertable.md) <br/> |プロバイダー テーブル、プロファイル内のサービス プロバイダーの一覧へのアクセスを提供します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 実装は 2 つの方法に**IMsgServiceAdmin**インターフェイスにポインターを取得することができます: [IMAPISession::AdminServices](imapisession-adminservices.md)メソッドを呼び出すことによって、または[IProfAdmin::AdminServices](iprofadmin-adminservices.md)メソッドを呼び出しています。 MAPI セッション プロバイダーのログ出力しないために、クライアント プロファイルの構成とパフォーマンスに着目は、 **IProfAdmin::AdminServices** 、 **IMsgServiceAdmin**のインターフェイスを取得する優先方法です。 クライアントは、アクティブなプロファイルを変更する機能を必要とする場合、 **IMsgServiceAdmin**のポインターを取得する**IMAPISession::AdminServices**を呼び出す必要があります。 MAPI プロファイルを削除するのには使用されていることはできません、がないクライアントのプロファイルのすべてのメッセージ サービスを削除することを防ぐための安全対策に注意します。 
   

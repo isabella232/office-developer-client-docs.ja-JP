@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 888c60e3-7376-4d66-8ee2-ce81abafb185
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0e4e5d5910a7ff3551057760f065e79155d65e49
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19801202"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 呼び出し元のプロセスがメモリの指定された範囲に読み取りアクセス権を持っていることを確認します。
   
@@ -36,7 +36,7 @@ BOOL IsBadBoundedStringPtr(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpsz_
   
@@ -46,13 +46,13 @@ BOOL IsBadBoundedStringPtr(
   
 > [in]文字数、文字列の最大サイズです。 関数は、文字列の終端の null 文字までのすべての文字の読み取りアクセス権のチェック、またはこのパラメーターで指定された文字の数は、どちらかが小さい。 このパラメーターが 0 の場合は 0 を返します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 呼び出し元のプロセスが、文字列の終端の null 文字までのすべての文字への読み取りアクセスまたは_cchMax_で指定された文字数までの読み取りアクセス権を持つ場合は、0 を返します。
   
 呼び出し元のプロセスが、文字列の終端の null 文字までのすべての文字への読み取りアクセスまたは_cchMax_で指定された文字数までの読み取りアクセス権があるないときは、0 以外を返します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IsBadBoundedStringPtr**関数は、 **IsBadStringPtr**を使用すると同じです。
   

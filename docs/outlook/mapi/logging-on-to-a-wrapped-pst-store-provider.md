@@ -15,7 +15,7 @@ ms.locfileid: "19801270"
 ---
 # <a name="logging-on-to-a-wrapped-pst-store-provider"></a>ラップされた PST ストア プロバイダーにログオンしています。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI は、ラップされた PST ストア プロバイダーにログオンすることができます、前に初期化し、ラップされた個人用フォルダー ファイル (PST) のストア プロバイダーを構成する必要があります。 詳細については、[ラップの PST ストア プロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)を参照してください。
   
@@ -159,9 +159,9 @@ STDMETHODIMP CMSProvider::SpoolerLogon (
 
 ## <a name="see-also"></a>関連項目
 
-- [サンプルの PST ストア プロバイダーをラップ](about-the-sample-wrapped-pst-store-provider.md) 
-- [PST ストア プロバイダーをラップして、サンプルをインストールします。](installing-the-sample-wrapped-pst-store-provider.md) 
-- [ラップされた PST ストア プロバイダーを初期化しています。](initializing-a-wrapped-pst-store-provider.md)
-- [ラップされた PST ストア プロバイダーを使用します。](using-a-wrapped-pst-store-provider.md)
-- [ラップされた PST ストア プロバイダーをシャット ダウン](shutting-down-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーのサンプルについて](about-the-sample-wrapped-pst-store-provider.md) 
+- [ラップされた PST ストア プロバイダーのサンプルのインストール](installing-the-sample-wrapped-pst-store-provider.md) 
+- [ラップされた PST ストア プロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーの使用](using-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーのシャットダウン](shutting-down-a-wrapped-pst-store-provider.md)
 

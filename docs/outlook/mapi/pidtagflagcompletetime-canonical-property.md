@@ -1,5 +1,5 @@
 ---
-title: PidTagFlagCompleteTime の標準的なプロパティ
+title: PidTagFlagCompleteTime 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: effc738a-30f4-4a5e-b21d-04b50dad1f45
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: efaa8cf84204234697431a190a5cb6745b55ecae
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802737"
 ---
-# <a name="pidtagflagcompletetime-canonical-property"></a>PidTagFlagCompleteTime の標準的なプロパティ
+# <a name="pidtagflagcompletetime-canonical-property"></a>PidTagFlagCompleteTime 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 世界協定世界時 (UTC) メッセージ オブジェクトが完了したものとしてフラグが設定では、日付と時刻を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_FLAG_COMPLETE_TIME  <br/> |
+|関連するプロパティ:  <br/> |PR_FLAG_COMPLETE_TIME  <br/> |
 |識別子:  <br/> |0x1091  <br/> |
-|データを入力します。  <br/> |PT_SYSTIME  <br/> |
+|データの種類 :   <br/> |PT_SYSTIME  <br/> |
 |領域:  <br/> |その他  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージ オブジェクトが完全なフラグが設定されない場合、このプロパティは削除されます。 時間の最小解像度は、(値は 600,000,000 の倍数である必要があります) の分である必要があります。 このプロパティは、オブジェクトでは、会議に関連するオブジェクトおよび task オブジェクト上に存在する必要がある場合に存在する必要があります。
   
@@ -68,7 +68,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

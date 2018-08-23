@@ -17,7 +17,7 @@ ms.locfileid: "19801459"
 ---
 # <a name="mapi-sessions"></a>MAPI セッション
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ��ɂȂ郁�b�Z�[�W���O �V�X�e���Ăяo���N���C�A���g �A�v���P�[�V�����ɂ́A�O�ɁA�Z�b�V�����A�܂��� MAPI �T�u�V�X�e���Ƃ̐ڑ���m������K�v������܂��B
   

@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f98eb842-fe76-4f60-b5e2-d2217d1a66ad
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fc92cc8deb3d12c4bc8fca4c680fd4a675b4a578
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19801638"
 ---
 # <a name="mfcmapi-as-a-code-sample"></a>MFCMAPI をコード サンプルとして
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MFCMAPI サンプルでは、メッセージング API を使用して、グラフィカル ユーザー インターフェイスによって、MAPI ストアへのアクセスを提供します。 このサンプルをダウンロードした後は、MAPI インターフェイス、および参照の多くの例の使用状況を確認するのにはソース ファイルを使用できます。 詳細については、 [MAPI インターフェイス](mapi-interfaces.md)を参照してください。
   

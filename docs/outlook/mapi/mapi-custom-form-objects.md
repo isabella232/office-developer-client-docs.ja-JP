@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 306d62b1-d541-4039-9759-3903f62e0f26
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ecb40262959834ec511601ec3176887c919d944f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19801346"
 ---
 # <a name="mapi-custom-form-objects"></a>MAPI オブジェクトのユーザー設定フォーム
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 カスタム フォームのオブジェクトは、3 つの異なるコンポーネントによって実装されます。
   
@@ -49,7 +49,7 @@ ms.locfileid: "19801346"
    
 次の図は、カスタム フォームのコンポーネント、オブジェクトと、実装するインターフェイス、およびオブジェクトのユーザーは、コンポーネント間の関係を示します。 、他のほとんどの MAPI オブジェクトとは異なり、フォーム オブジェクトを実装する直接の継承関係のない 2 つのインターフェイスに注意してください。 オブジェクトは、複数の独立したインターフェイスを公開する場合、インタ フェースのいずれかにポインターを持っているオブジェクトのユーザーは、他のインターフェイスのいずれかへのポインターを取得できます。 オブジェクトのインターフェイスの実装の間で移動するには、この機能は、 [IUnknown::QueryInterface](http://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx)メソッドの機能です。 
   
-**カスタム フォームのコンポーネント**
+**カスタム フォーム コンポーネント**
   
 ![ユーザー設定フォームのコンポーネント](media/amapi_67.gif "ユーザー設定フォームのコンポーネント")
   

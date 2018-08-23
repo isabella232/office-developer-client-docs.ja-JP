@@ -23,7 +23,7 @@ ms.locfileid: "19801109"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームを管理するフォームのサーバーを表す識別子を返します。 
   
@@ -33,7 +33,7 @@ HRESULT GetClassID(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpClassID_
   
@@ -45,7 +45,7 @@ S_OK
   
 > クラス識別子が正常に返されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IPersistMessge::GetClassID**メソッドは、フォーム サーバーのクラス id に_lpClassID_パラメーターの内容を設定し、S_OK を返します。 フォーム ビューアーは、 **GetClassID**を呼び出すし、正常に返されます、フォームが[初期化されていない](uninitialized-state.md)状態で配置されます。 
   
@@ -55,5 +55,5 @@ S_OK
 
 
 
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 

@@ -21,7 +21,7 @@ ms.locfileid: "19801308"
 ---
 # <a name="ixpprovidertransportlogon"></a>IXPProvider::TransportLogon
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアント アプリケーションへのログオンに、トランスポート プロバイダーのセッションを確立します。 
   
@@ -36,7 +36,7 @@ HRESULT TransportLogon(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _lpMAPISup_: [in] コールバック関数は、このセッションの MAPI 内のトランスポート プロバイダーのサポートのオブジェクトへのポインター。 このオブジェクトは、トランスポート プロバイダーは、それを解放するまで、有効なままになります。
     
@@ -70,7 +70,7 @@ _lppMAPIError_: [出力] 返された**MAPIERROR**構造体へのポインター
     
 _lppXPLogon_: [出力] 返されたトランスポート プロバイダー ログオン オブジェクトへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK: 呼び出しが成功し、予期される値または値が返されました。
     
@@ -84,7 +84,7 @@ MAPI_E_UNKNOWN_LCID: プロバイダーは、クライアントのロケール�
     
 MAPI_E_USER_CANCEL: ユーザー操作がキャンセルされました、通常ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI スプーラーでは、ユーザーのログオン セッションを確立するために**IXPProvider::TransportLogon**メソッドを呼び出します。 
   
@@ -112,7 +112,7 @@ MAPI スプーラーでは、ユーザーのログオン セッションを確�
   
 ## <a name="see-also"></a>関連項目
 
-- [IXPProvider: IUnknown](ixpprovideriunknown.md)  
+- [IXPProvider : IUnknown](ixpprovideriunknown.md)  
 - [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md)  
 - [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md)  
 - [IXPLogon::AddressTypes](ixplogon-addresstypes.md)  

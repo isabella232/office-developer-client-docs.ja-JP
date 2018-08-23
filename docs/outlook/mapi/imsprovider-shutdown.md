@@ -23,7 +23,7 @@ ms.locfileid: "19801052"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 適切な順序で、メッセージ ストア プロバイダーを閉じます。
   
@@ -33,7 +33,7 @@ HRESULT Shutdown(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulFlags_
   
@@ -45,7 +45,7 @@ S_OK
   
 > 呼び出しが成功し、予期される値または値が返されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI は、メッセージ ストア プロバイダー オブジェクトを解放する前に、 **IMSProvider::Shutdown**メソッドを呼び出します。 MAPI では、そのプロバイダーの**シャット ダウン**を呼び出す前に、プロバイダーのすべてのログオン オブジェクトを解放します。 
   
@@ -53,5 +53,5 @@ MAPI は、メッセージ ストア プロバイダー オブジェクトを解
 
 
 
-[IMSProvider: IUnknown](imsprovideriunknown.md)
+[IMSProvider : IUnknown](imsprovideriunknown.md)
 

@@ -1,5 +1,5 @@
 ---
-title: アドレス帳プロバイダーのオプションの機能
+title: アドレス帳プロバイダーのオプション機能
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f1558259-7f0b-4731-80d2-88e51e203df0
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ffdd1203316b2c80aba34c980745a0330ec19888
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801694"
 ---
-# <a name="optional-features-for-address-book-providers"></a>アドレス帳プロバイダーのオプションの機能
+# <a name="optional-features-for-address-book-providers"></a>アドレス帳プロバイダーのオプション機能
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳プロバイダーの多くのオプション機能があります。 さらに一般的に実装された機能は次のとおりです。
   

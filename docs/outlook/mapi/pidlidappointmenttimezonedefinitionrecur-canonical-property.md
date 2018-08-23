@@ -1,5 +1,5 @@
 ---
-title: PidLidAppointmentTimeZoneDefinitionRecur の標準的なプロパティ
+title: PidLidAppointmentTimeZoneDefinitionRecur 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 52fd57a0-9e34-4452-9ecd-2acb454446c9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5cff6ec7b39c26eec098d250688d98bf1e4799ea
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801837"
 ---
-# <a name="pidlidappointmenttimezonedefinitionrecur-canonical-property"></a>PidLidAppointmentTimeZoneDefinitionRecur の標準的なプロパティ
+# <a name="pidlidappointmenttimezonedefinitionrecur-canonical-property"></a>PidLidAppointmentTimeZoneDefinitionRecur 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 定期的な予定または会議出席依頼の作成時に使用されるタイム ゾーンの説明を格納する[TZDEFINITION](http://msdn.microsoft.com/library/0ae21571-2299-6407-807c-428668bb6798%28Office.15%29.aspx)構造体の保存形式に対応するストリームが含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidApptTZDefRecur  <br/> |
+|関連するプロパティ:  <br/> |dispidApptTZDefRecur  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008260  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |カレンダー  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
+|領域:  <br/> |予定表  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 Outlook または Exchange Server の予定表を実行している Microsoft Outlook を Microsoft Office Outlook 2007 では、ソリューションでは、コラボレーション データ オブジェクト (CDO) 1.2.1 以降のバージョンは、ツールの使用方法**dispidApptTZDefRecur**と**を更新します。dispidTimeZoneStruct** ([PidLidTimeZoneStruct](pidlidtimezonestruct-canonical-property.md)) のプロパティをタイム ゾーンの規則を変更する場合に、定期的な会議を調整する必要があるかどうかを確認します。 古いクライアントが、 **dispidTimeZoneStruct**プロパティを操作するため、これらのプロパティを同期する必要があります。 2 つのプロパティーを同期するかどうかを検出するには、 **dispidTimeZoneStruct**に一致するルールの**wFlags**メンバーに、TZRULE_FLAG_RECUR_CURRENT_TZREG フラグを設定する必要があります。 このフラグは設定されていない、または設定されている、 **dispidTimeZoneStruct**プロパティの規則は、マークされたルールと一致しない場合、 **dispidApptTZDefRecur**プロパティを破棄する必要があり、 **dispidTimeZoneStruct**を代わりに使用する必要があります。 
   
@@ -71,7 +71,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

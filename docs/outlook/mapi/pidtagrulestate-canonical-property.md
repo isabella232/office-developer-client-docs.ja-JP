@@ -1,5 +1,5 @@
 ---
-title: PidTagRuleState の標準的なプロパティ
+title: PidTagRuleState 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f62f3055-b855-4203-aa5c-6ba28b58c6f7
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 519ee2b91275e4253845afa35a9a80470071966d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803428"
 ---
-# <a name="pidtagrulestate-canonical-property"></a>PidTagRuleState の標準的なプロパティ
+# <a name="pidtagrulestate-canonical-property"></a>PidTagRuleState 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ルールの状態を指定するフラグのビットマスクの組み合わせとして解釈される値です。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_RULE_STATE  <br/> |
+|関連するプロパティ:  <br/> |PR_RULE_STATE  <br/> |
 |識別子:  <br/> |0x6677  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |サーバー側のルール  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 次の表は、このプロパティの値を定義します。
   
@@ -112,7 +112,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

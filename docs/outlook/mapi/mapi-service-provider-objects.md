@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f8ade454-2450-49e6-a76f-93801055a7e5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 505b27b469a4ab197b41058ea5b933608818f0d7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19801444"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 サービス プロバイダーは、多くのオブジェクトを実装します。 MAPI によって主に使用される、いくつかと、クライアント アプリケーションによって使用されます。 サービス ・ プロバイダーのすべての種類によって、いくつかのオブジェクトの実装します。残りの部分は、1 つのプロバイダーの種類に固有です。 次の表では、すべてのサービス プロバイダー オブジェクトについて説明します。
   
@@ -30,7 +30,7 @@ ms.locfileid: "19801444"
 |コントロール  <br/> |またはボタンを無効にでき、ボタンがクリックされたときの処理を開始します。  <br/> |
 |配布リスト  <br/> |個々 のメッセージの受信者のグループ化をについて説明します。  <br/> |
 |Folder  <br/> |メッセージおよびその他のメッセージのコンテナーが含まれています。  <br/> |
-|ログオン  <br/> |ハンドルは、プロバイダーのイベントの通知とクライアントの要求をサービスします。  <br/> |
+|Logon  <br/> |ハンドルは、プロバイダーのイベントの通知とクライアントの要求をサービスします。  <br/> |
 |メッセージング ユーザー  <br/> |メッセージの各受信者をについて説明します。  <br/> |
 |Message  <br/> |1 つまたは複数の受信者に送信できる情報が含まれています。  <br/> |
 |メッセージ ・ ストア  <br/> |メッセージの階層構造のデータベースとして機能します。  <br/> |
@@ -55,20 +55,20 @@ ms.locfileid: "19801444"
 
 
 
-[ITnef: IUnknown](itnefiunknown.md)
+[ITnef : IUnknown](itnefiunknown.md)
   
-[IMSProvider: IUnknown](imsprovideriunknown.md)
+[IMSProvider : IUnknown](imsprovideriunknown.md)
   
-[IMSLogon: IUnknown](imslogoniunknown.md)
+[IMSLogon : IUnknown](imslogoniunknown.md)
   
-[IABProvider: IUnknown](iabprovideriunknown.md)
+[IABProvider : IUnknown](iabprovideriunknown.md)
   
-[IABLogon: IUnknown](iablogoniunknown.md)
+[IABLogon : IUnknown](iablogoniunknown.md)
   
-[IXPProvider: IUnknown](ixpprovideriunknown.md)
+[IXPProvider : IUnknown](ixpprovideriunknown.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 
 
-[TNEF を有効にしたトランスポート プロバイダーの開発](developing-a-tnef-enabled-transport-provider.md)
+[TNEF 対応のトランスポート プロバイダーの開発](developing-a-tnef-enabled-transport-provider.md)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b6de7c6a-f2e7-4248-adea-d354924a8bbf
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e4f4cdd1d0ed2e03d49f471e6e91464b7973c920
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801501"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 呼び出し元のアプリケーションの MAPI アイドル エンジンを初期化します。 
   
@@ -39,17 +39,17 @@ LONG MAPIInitIdle(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpvReserved_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 **MAPIInitIdle**関数は、初期化、および 1 それ以外の場合に 0 を返します。 **MAPIInitIdle**は、複数回呼び出されると、その他のすべての呼び出しは成功しますが、参照カウントをインクリメントする以外は無視されます。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアント アプリケーションまたはサービス プロバイダーは、他のアイドル状態のエンジンの関数を呼び出す前に**MAPIInitIdle**を呼び出す必要があります。 
   
@@ -57,7 +57,7 @@ LONG MAPIInitIdle(
   
 次の関数では、MAPI アイドル エンジンと[FNIDLE](fnidle.md)関数のプロトタイプに基づくのアイドル処理ルーチンを処理します。 
   
-|**アイドル状態の日常的な関数**|**使用例**|
+|**アイドル状態の日常的な関数**|**使用状況**|
 |:-----|:-----|
 |[ChangeIdleRoutine](changeidleroutine.md) <br/> |登録されているアイドル状態のルーチンの特性を変更します。  <br/> |
 |[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |MAPI システムから登録されているアイドル状態のルーチンを削除します。  <br/> |

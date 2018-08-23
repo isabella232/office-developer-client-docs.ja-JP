@@ -23,7 +23,7 @@ ms.locfileid: "19800992"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ サービス プロファイルのプライマリ id のサプライヤーになることを指定します。
   
@@ -34,7 +34,7 @@ HRESULT SetPrimaryIdentity(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpUID_
   
@@ -54,7 +54,7 @@ MAPI_E_NO_ACCESS
   
 > **SetPrimaryIdentity**では、SERVICE_NO_PRIMARY_IDENTITY フラグの**PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) プロパティを設定するメッセージ サービスを指定しようとしています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgServiceAdmin::SetPrimaryIdentity**メソッドは、プロファイルのプライマリ id の提供元として、メッセージ サービスを確立します。 プライマリ id は、通常はメッセージ サービスにログオンしているユーザーです。 3 つのプロパティによって表されます。 
   
@@ -78,5 +78,5 @@ MAPI_E_NO_ACCESS
   
 [MAPIUID](mapiuid.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 

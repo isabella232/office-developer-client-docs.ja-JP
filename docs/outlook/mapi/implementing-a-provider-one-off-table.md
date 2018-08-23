@@ -1,5 +1,5 @@
 ---
-title: プロバイダーの一時テーブルを実装します。
+title: プロバイダーの 1 回限りのテーブルの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800923"
 ---
-# <a name="implementing-a-provider-one-off-table"></a>プロバイダーの一時テーブルを実装します。
+# <a name="implementing-a-provider-one-off-table"></a>プロバイダーの 1 回限りのテーブルの実装
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI は、クライアント アプリケーションのユーザーは、送信メッセージに受信者を追加するときに、プロバイダーの[IABLogon::GetOneOffTable](iablogon-getoneofftable.md)メソッドを呼び出します。 通常、要求されたアドレスの種類は、メッセージング システムに固有です。 プロバイダーは、受信者の作成をサポートする場合、サポートされている受信者のアドレスの種類ごとにテンプレートを公開する一時テーブルが必要です。 プロバイダーが受信者の作成をサポートしていない場合は、 **GetOneOffTable**の呼び出しから MAPI_E_NO_SUPPORT を返します。 
   

@@ -17,7 +17,7 @@ ms.locfileid: "19801689"
 ---
 # <a name="opening-message-text"></a>開始メッセージのテキスト
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージのテキストが格納されているいずれかでその**PR\_本文**プロパティまたは**PR\_RTF\_圧縮**プロパティ。 詳細についてを参照してください**PR\_本体**([PidTagBody](pidtagbody-canonical-property.md)) **PR\_HTML** ([PidTagHtml](pidtaghtml-canonical-property.md)) と**PR\_RTF\_圧縮**([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))。 
 

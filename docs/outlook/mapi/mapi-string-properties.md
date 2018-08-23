@@ -19,7 +19,7 @@ ms.locfileid: "19801467"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI には、文字列のプロパティを記述する 3 つのプロパティの種類が用意されています。
   
@@ -55,5 +55,5 @@ Unicode 文字の文字列をサポートするか、クライアント、また
 
 
 
-[MAPI Property Overview](mapi-property-overview.md)
+[MAPI のプロパティの概要](mapi-property-overview.md)
 

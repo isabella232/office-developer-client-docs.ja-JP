@@ -1,5 +1,5 @@
 ---
-title: PidTagReplyTemplateId の標準的なプロパティ
+title: PidTagReplyTemplateId 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3645e7a6-ef30-494f-bf71-fa06f819bc0c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 03569d05f724df773b1ca3aaf8b7a8f5132b8681
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,20 +19,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803333"
 ---
-# <a name="pidtagreplytemplateid-canonical-property"></a>PidTagReplyTemplateId の標準的なプロパティ
+# <a name="pidtagreplytemplateid-canonical-property"></a>PidTagReplyTemplateId 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 返信用テンプレートのグローバル一意識別子 (GUID) が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_REPLY_TEMPLATE_ID  <br/> |
+|関連するプロパティ:  <br/> |PR_REPLY_TEMPLATE_ID  <br/> |
 |識別子:  <br/> |0x65C2  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |ルール  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
+|領域:  <br/> |Rules  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
@@ -64,7 +64,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

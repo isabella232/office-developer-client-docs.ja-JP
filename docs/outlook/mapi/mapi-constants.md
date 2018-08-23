@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8fa5ac8d-3f63-499c-bb4e-439984773e4a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d6d6c55776c1379ec1dab0e9a6f7ef0943d2480e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19801350"
 ---
 # <a name="mapi-constants"></a>MAPI の定数
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックには、定数の定義、MAPI インターフェイスの宣言、および MAPI Api で使用されるクラスとインタ フェースの識別子が含まれています。
   
@@ -101,7 +101,7 @@ DEFINE_GUID(IID_IConverterSession, 0x4b401570, 0xb77b, 0x11d0, 0x9d, 0xa5, 0x0, 
 |MAPIOFFLINE_FLAG_BLOCK  <br/> |0x00002000  <br/> |
 |MAPIOFFLINE_FLAG_DEFAULT  <br/> |0x00000000  <br/> |
 |MAPIOFFLINE_STATE_ALL  <br/> |0x003f037f  <br/> |
-|**オンラインまたはオフライン** <br/> ||
+|**オンラインあるいはオフライン** <br/> ||
 |MAPIOFFLINE_STATE_OFFLINE_MASK  <br/> |0x00000003  <br/> |
 |MAPIOFFLINE_STATE_OFFLINE  <br/> |0x00000001  <br/> |
 |MAPIOFFLINE_STATE_ONLINE  <br/> |0x00000002  <br/> |
@@ -679,8 +679,8 @@ DEFINE_GUID(IID_IPSTOVERRIDE1, 0xfbb68d34, 0xf561, 0x44fb, 0xa8, 0xca, 0xae, 0x3
 ## <a name="see-also"></a>関連項目
 
 - [MAPI の追加について](about-mapi-additions.md) 
-- [Outlook で使用される名前付きのプロパティについて](about-named-properties-used-by-outlook.md)
-- [Exchange キャッシュ モードでは、リモート サーバーと Outlook のストアのアクセス](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)
-- [ストアがリモート サーバーと Outlook の Exchange キャッシュ モードでは、開いています。](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
-- [OST 内のメッセージを Exchange キャッシュ モードで同期を呼び出すことがなく管理します。](how-to-manage-a-message-in-an-ost-without-invoking-a-synchronization.md)
+- [Outlook で使用される名前付きプロパティについて](about-named-properties-used-by-outlook.md)
+- [Outlook が Exchange キャッシュ モードの場合にリモート サーバーでストアにアクセスする](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)
+- [Outlook が Exchange キャッシュ モードの場合にリモート サーバーでストアを開く](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
+- [Exchange キャッシュ モードで同期を呼び出すことなく OST でメッセージを管理する](how-to-manage-a-message-in-an-ost-without-invoking-a-synchronization.md)
 

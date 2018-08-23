@@ -1,5 +1,5 @@
 ---
-title: PidTagRpcOverHttpProxyPrincipalName の標準的なプロパティ
+title: PidTagRpcOverHttpProxyPrincipalName 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f9dd58c7-4119-90db-54f3-e1dd8e48451e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 68a45e0bfedf01b846fd77a638587fa4fb35fe7e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803373"
 ---
-# <a name="pidtagrpcoverhttpproxyprincipalname-canonical-property"></a>PidTagRpcOverHttpProxyPrincipalName の標準的なプロパティ
+# <a name="pidtagrpcoverhttpproxyprincipalname-canonical-property"></a>PidTagRpcOverHttpProxyPrincipalName 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ハイパー テキスト転送プロトコル (HTTP) 経由でリモート プロシージャ コール (RPC) を使用して Microsoft Exchange Server に接続するのには Microsoft Outlook で使用されるプロキシ サーバーのプリンシパル名が含まれています。
   
@@ -27,7 +27,7 @@ ms.locfileid: "19803373"
 
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ROH_PROXY_PRINCIPAL_NAME  <br/> |
+|関連するプロパティ:  <br/> |PR_ROH_PROXY_PRINCIPAL_NAME  <br/> |
 |識別子:  <br/> |0x6625  <br/> |
 |プロパティの種類:  <br/> |PT_UNICODE  <br/> |
 |領域:  <br/> |その他  <br/> |
@@ -66,7 +66,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,5 +1,5 @@
 ---
-title: PidTagBusinessTelephoneNumber の標準的なプロパティ
+title: PidTagBusinessTelephoneNumber 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: e691f428-fdb2-4ec5-b6e6-33fe01725c5c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 690b2c45a8a6226c006a714133e75f48528b5b87
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802532"
 ---
-# <a name="pidtagbusinesstelephonenumber-canonical-property"></a>PidTagBusinessTelephoneNumber の標準的なプロパティ
+# <a name="pidtagbusinesstelephonenumber-canonical-property"></a>PidTagBusinessTelephoneNumber 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ビジネスの受信者の場所の主な電話番号が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_BUSINESS_TELEPHONE_NUMBER、PR_BUSINESS_TELEPHONE_NUMBER_A、PR_BUSINESS_TELEPHONE_NUMBER_W、PR_OFFICE_TELEPHONE_NUMBER、PR_OFFICE_TELEPHONE_NUMBER_A、PR_OFFICE_TELEPHONE_NUMBER_W  <br/> |
+|関連するプロパティ:  <br/> |PR_BUSINESS_TELEPHONE_NUMBER、PR_BUSINESS_TELEPHONE_NUMBER_A、PR_BUSINESS_TELEPHONE_NUMBER_W、PR_OFFICE_TELEPHONE_NUMBER、PR_OFFICE_TELEPHONE_NUMBER_A、PR_OFFICE_TELEPHONE_NUMBER_W  <br/> |
 |識別子:  <br/> |0x3A08  <br/> |
-|データを入力します。  <br/> |PT_UNICODE、PT_STRING8  <br/> |
-|領域:  <br/> |連絡先  <br/> |
+|データの種類 :   <br/> |PT_UNICODE、PT_STRING8  <br/> |
+|領域:  <br/> |Contact  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これらのプロパティでは、id、および受信者に関する情報にアクセスを提供するプロパティの例を示します。 これらのプロパティは、受信者と受信者の組織によって定義されます。 
   
@@ -72,7 +72,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,5 +1,5 @@
 ---
-title: PidLidFShouldTNEF の標準的なプロパティ
+title: PidLidFShouldTNEF 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3cab23b6-f0e3-4703-a83b-12a617537651
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 15354a4a07304913cce06d50564b66abe5062a96
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801998"
 ---
-# <a name="pidlidfshouldtnef-canonical-property"></a>PidLidFShouldTNEF の標準的なプロパティ
+# <a name="pidlidfshouldtnef-canonical-property"></a>PidLidFShouldTNEF 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 トランスポート ニュートラル カプセル化形式 (TNEF) を持つアイテムをエンコードするかどうかを示します。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidFShouldTNEF  <br/> |
+|関連するプロパティ:  <br/> |dispidFShouldTNEF  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x000085A5  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |実行時の構成  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 電子メール エディターとして Word を設定し、リッチ テキスト形式 (RTF) のストリームに埋め込まれている OLE オブジェクトを送信するとき、このプロパティが設定されています。
   
@@ -61,7 +61,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

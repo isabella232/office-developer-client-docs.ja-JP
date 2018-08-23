@@ -17,7 +17,7 @@ ms.locfileid: "19801690"
 ---
 # <a name="opening-an-address-book-container"></a>アドレス帳コンテナーを開く
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI を開くには、アドレス帳が統合されて後、は、1 つまたは複数のアドレス帳コンテナー内の受信者にアクセスを開きます。
   

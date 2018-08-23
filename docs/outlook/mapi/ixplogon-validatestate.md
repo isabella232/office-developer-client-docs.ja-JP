@@ -23,7 +23,7 @@ ms.locfileid: "19801283"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 トランスポート プロバイダーの外部の状況をチェックします。 
   
@@ -34,7 +34,7 @@ HRESULT ValidateState(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -90,7 +90,7 @@ MAPI_E_USER_CANCEL
   
 > ユーザー操作がキャンセルされました、通常ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI スプーラーは、状態オブジェクトの[IMAPIStatus::ValidateState](imapistatus-validatestate.md)メソッドの呼び出しをサポートするために**IXPLogon::ValidateState**メソッドを呼び出します。 トランスポート プロバイダーは、正確に場合と、MAPI スプーラーが現在のログオン セッションの状態のオブジェクトを開くし、そのオブジェクトに**IMAPIStatus::ValidateState**と呼ばれる**IXPLogon::ValidateState**の呼び出しに応答します。 
   
@@ -104,5 +104,5 @@ MAPI スプーラーは、状態オブジェクトの[IMAPIStatus::ValidateState
   
 [IXPLogon::AddressTypes](ixplogon-addresstypes.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 

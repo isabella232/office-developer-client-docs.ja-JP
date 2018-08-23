@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: cebccd2d-8215-486e-9964-7fc42412cec6
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c942bdbf27590dde04b84970e345f265bc645045
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801139"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロファイル テーブルのすべての利用可能なプロファイルに関する情報を格納するテーブルへのアクセスを提供します。
   
@@ -50,7 +50,7 @@ S_OK
   
 > プロファイル テーブルが正常に取得しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IProfAdmin::GetProfileTable**メソッドは、すべての利用可能なプロファイルの 1 つの行が含まれているプロファイルのテーブルへのアクセスを提供します。 各行の 2 つの列がある: プロファイルの表示名、およびプロファイルが既定値であるかどうかを示すフラグ。 
   
@@ -72,11 +72,11 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
   
 [MAPILogonEx](mapilogonex.md)
   
-[IProfAdmin: IUnknown](iprofadminiunknown.md)
+[IProfAdmin : IUnknown](iprofadminiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

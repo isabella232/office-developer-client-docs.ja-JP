@@ -1,5 +1,5 @@
 ---
-title: PidLidCategories の標準的なプロパティ
+title: PidLidCategories 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6ad2aedc-405b-475e-ac76-7ecbbef28f73
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 01d4391850067d00645b5c0248e1bf858c2a9049
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801840"
 ---
-# <a name="pidlidcategories-canonical-property"></a>PidLidCategories の標準的なプロパティ
+# <a name="pidlidcategories-canonical-property"></a>PidLidCategories 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アイテムのカテゴリの一覧を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidCategories  <br/> |
+|関連するプロパティ:  <br/> |dispidCategories  <br/> |
 |プロパティを設定します。  <br/> |PS_PUBLIC_STRINGS  <br/> |
 |長い ID (LID):  <br/> |0x00002328  <br/> |
-|データを入力します。  <br/> |PT_MV_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_MV_UNICODE  <br/> |
 |領域:  <br/> |Common  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 キーワード ヘッダー フィールドを生成するには、クライアントは、目的の値にこのプロパティの値を設定する必要があります。 このプロパティは、複数の文字列です。各カテゴリは、1 つのキーワードにマップする必要があります。
   
@@ -67,7 +67,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

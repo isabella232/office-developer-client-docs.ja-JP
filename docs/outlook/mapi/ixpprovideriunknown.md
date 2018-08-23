@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d5507785-c924-4981-ae80-19709ceb054d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e12f69e3486e5eeb9087b30753735f7f910dc6f4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801280"
 ---
-# <a name="ixpprovider--iunknown"></a>IXPProvider: IUnknown
+# <a name="ixpprovider--iunknown"></a>IXPProvider : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 トランスポート プロバイダーのオブジェクトを初期化し、不要になったときに、オブジェクトをシャット ダウンします。
   
@@ -40,7 +40,7 @@ ms.locfileid: "19801280"
 
 |||
 |:-----|:-----|
-|[シャット ダウン](ixpprovider-shutdown.md) <br/> |適切な順序でトランスポート プロバイダーを閉じます。  <br/> |
+|[シャットダウン](ixpprovider-shutdown.md) <br/> |適切な順序でトランスポート プロバイダーを閉じます。  <br/> |
 |[TransportLogon](ixpprovider-transportlogon.md) <br/> |クライアント アプリケーションへのログオンに、トランスポート プロバイダーのセッションを確立します。  <br/> |
    
 

@@ -1,5 +1,5 @@
 ---
-title: PidLidSharingProviderName の標準的なプロパティ
+title: PidLidSharingProviderName 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 67e6497c-e053-4b2d-a81c-c6cf6017f8bd
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a184207463e1f6139df2baa064101e8d2d8dc896
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802186"
 ---
-# <a name="pidlidsharingprovidername-canonical-property"></a>PidLidSharingProviderName の標準的なプロパティ
+# <a name="pidlidsharingprovidername-canonical-property"></a>PidLidSharingProviderName 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **DispidSharingProviderGuid** ([PidLidSharingProviderGuid](pidlidsharingproviderguid-canonical-property.md)) によって識別される共有プロバイダーの表示名を指定します。 これは、共有メッセージのプロパティです。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidSharingProviderName  <br/> |
+|関連するプロパティ:  <br/> |dispidSharingProviderName  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Sharing  <br/> |
 |長い ID (LID):  <br/> |0x00008A02  <br/> |
-|データを入力します。  <br/> |PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_UNICODE  <br/> |
 |領域:  <br/> |共有  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは無視されます。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

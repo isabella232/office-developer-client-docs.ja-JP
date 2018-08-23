@@ -1,5 +1,5 @@
 ---
-title: MapiSvc.inf [既定のサービス] セクション
+title: MapiSvc.inf [Default Services] セクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801526"
 ---
-# <a name="mapisvcinf-default-services-section"></a>MapiSvc.inf [既定のサービス] セクション
+# <a name="mapisvcinf-default-services-section"></a>MapiSvc.inf [Default Services] セクション
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **[既定のサービス]** セクションには、すべてのメッセージ サービスの既定値として選択されているメッセージ サービスが一覧表示されます。 これらの既定メッセージ サービスは、 **[サービス]** セクションに記載されているメッセージ サービスのサブセットです。 プロファイルの構成プログラムは、既定のプロファイルを作成する場合、このセクションのメッセージ サービスは、自動的に含まれています。 
   

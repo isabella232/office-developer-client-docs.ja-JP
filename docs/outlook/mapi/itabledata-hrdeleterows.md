@@ -23,7 +23,7 @@ ms.locfileid: "19801212"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 複数のテーブル行を削除します。
   
@@ -59,7 +59,7 @@ S_OK
   
 > テーブルの行は削除されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **ITableData::HrDeleteRows**メソッドは、検索し、行の各**aRow**のエントリの**lpProps**のメンバーによって設定するのにはポイントのプロパティに一致する列を含むテーブルの行を削除します。 インデックス列を使用して各行を識別します。この列には、 [CreateTable](createtable.md)関数への呼び出し内の_ulPropTagIndexColumn_パラメーターで渡されたプロパティ タグと同じプロパティ タグが必要です。 
   
@@ -83,5 +83,5 @@ _CRowsDeleted_では、実際に削除された行の数が返されます。 1 
   
 [TABLE_NOTIFICATION](table_notification.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

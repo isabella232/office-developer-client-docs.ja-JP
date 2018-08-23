@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 539aa31d-7dec-4dbb-93f7-fa060c43565a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 17ab26c62bcbb57ff8e53b5412ca27ed414fb725
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19801511"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 この構造体は、 [HrCreateOfflineObj](hrcreateofflineobj.md)で使用されます。
   
@@ -39,7 +39,7 @@ typedef struct
 } MAPIOFFLINE_CREATEINFO;
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulSize**
   

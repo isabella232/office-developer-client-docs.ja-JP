@@ -23,7 +23,7 @@ ms.locfileid: "19801181"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 スプーラーを一時停止の状態を設定します。
   
@@ -33,7 +33,7 @@ void SetSpoolSuspendState(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulState_
   

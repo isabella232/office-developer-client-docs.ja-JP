@@ -1,5 +1,5 @@
 ---
-title: PidLidTaskLastUpdate の標準的なプロパティ
+title: PidLidTaskLastUpdate 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 65b73d0f-f1f1-4c11-8834-f7c736a30ffc
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: acd06027f1f9aa051a36192f07efa3ca0671a82e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,20 +19,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802215"
 ---
-# <a name="pidlidtasklastupdate-canonical-property"></a>PidLidTaskLastUpdate の標準的なプロパティ
+# <a name="pidlidtasklastupdate-canonical-property"></a>PidLidTaskLastUpdate 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 世界協定時刻 (UTC) と、タスクに加えられたおよび**dispidTaskHistory** ([PidLidTaskHistory](pidlidtasklastupdate-canonical-property.md)) のプロパティで示された最新の変更の日付を示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidTaskLastUpdate  <br/> |
+|関連するプロパティ:  <br/> |dispidTaskLastUpdate  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Task  <br/> |
 |長い ID (LID):  <br/> |0x00008115  <br/> |
-|データを入力します。  <br/> |PT_SYSTIME  <br/> |
+|データの種類 :   <br/> |PT_SYSTIME  <br/> |
 |領域:  <br/> |タスク  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -61,7 +61,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

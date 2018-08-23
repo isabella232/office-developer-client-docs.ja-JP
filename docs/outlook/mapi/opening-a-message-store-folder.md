@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: d858e4fe-822e-4330-9ed3-4b7d22fa51dc
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 63b8224ad56e2b9985c9d733e2a3c27c67eb2f7f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19801686"
 ---
 # <a name="opening-a-message-store-folder"></a>メッセージ ストアのフォルダーを開く
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 任意のフォルダーを開くには、そのエントリの識別子が利用できなければなりません。 ほとんどのフォルダーの**PR_ENTRYID**プロパティの取得を意味します。 IPM サブツリー フォルダーおよびその他のルート フォルダーの一部などの特別なフォルダーには、MAPI は、メッセージ ストアの**IMAPIProp::GetProps**メソッドを呼び出すことによってアクセス可能な特別なエントリの識別子のプロパティを定義します。 これらのエントリの識別子は常に長期的なありです。 
   
@@ -69,6 +69,6 @@ ms.locfileid: "19801686"
     
 ## <a name="see-also"></a>関連項目
 
-- [PidTagEntryId の標準的なプロパティ](pidtagentryid-canonical-property.md) 
+- [PidTagEntryId 標準プロパティ](pidtagentryid-canonical-property.md) 
 - [IMAPIProp::GetProps](imapiprop-getprops.md)
 

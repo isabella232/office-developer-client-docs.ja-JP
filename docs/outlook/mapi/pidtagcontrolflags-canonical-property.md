@@ -1,5 +1,5 @@
 ---
-title: PidTagControlFlags の標準的なプロパティ
+title: PidTagControlFlags 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b97a9e72-fbb7-49ab-a19d-5e9bd1b8a80d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: f6947efe1aa6866efb7a5a3d96262d021c68013f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802638"
 ---
-# <a name="pidtagcontrolflags-canonical-property"></a>PidTagControlFlags の標準的なプロパティ
+# <a name="pidtagcontrolflags-canonical-property"></a>PidTagControlFlags 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ディスプレイ テーブルから作成されたダイアログ ボックスで使用するコントロールの動作を制御するフラグのビットマスクを格納します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_CONTROL_FLAGS  <br/> |
+|関連するプロパティ:  <br/> |PR_CONTROL_FLAGS  <br/> |
 |識別子:  <br/> |0x3F00  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |MAPI 表示テーブル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 次のフラグの 1 つ以上は、このプロパティを設定できます。
   
@@ -109,7 +109,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

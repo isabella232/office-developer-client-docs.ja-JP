@@ -1,5 +1,5 @@
 ---
-title: アドバイズ シンク オブジェクトを実装します。
+title: アドバイス シンク オブジェクトの実装
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 7461c4f6-7030-4ba2-ada4-26ebfbbfa001
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a95222f8ec75c519558636cf54111f28cbe14066
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800928"
 ---
-# <a name="implementing-an-advise-sink-object"></a>アドバイズ シンク オブジェクトを実装します。
+# <a name="implementing-an-advise-sink-object"></a>アドバイス シンク オブジェクトの実装
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアント独自のアドバイズ シンク オブジェクトを実装するか、 [HrAllocAdviseSink](hrallocadvisesink.md)のユーティリティ関数を使用します。 **HrAllocAdviseSink**は、コールバック関数を呼び出す**OnNotify**の実装とアドバイズ シンク オブジェクトを作成します。 
   

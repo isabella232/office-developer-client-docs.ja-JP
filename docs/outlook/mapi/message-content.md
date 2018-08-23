@@ -19,7 +19,7 @@ ms.locfileid: "19801633"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージの内容の 2 つの可能なエンコーディングがあります: 1 つ、他の MIME を使用して uuencode を使用しています。 MIME は、使用するエンコーディングします。 さらに、MAPI は、 **PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) は、送信メッセージで TNEF 情報を含める必要があるかどうかを指定する、受信者ごとのプロパティを定義します。 これは合計で 4 つの方法のメッセージ コンテンツのエンコードがあります。
   

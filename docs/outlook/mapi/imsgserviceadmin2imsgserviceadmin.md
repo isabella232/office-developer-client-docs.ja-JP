@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 14654259-e884-46bf-84ff-9e3c1a8cd60d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8938f4f237f5d566b13c86e33fc721ab49e2081b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800993"
 ---
-# <a name="imsgserviceadmin2--imsgserviceadmin"></a>IMsgServiceAdmin2: IMsgServiceAdmin
+# <a name="imsgserviceadmin2--imsgserviceadmin"></a>IMsgServiceAdmin2 : IMsgServiceAdmin
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロファイル内のメッセージ サービスを変更します。
   
@@ -42,7 +42,7 @@ ms.locfileid: "19800993"
 |:-----|:-----|
 |[CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md) <br/> |サービス UID を新しく追加すること、現在のプロファイルには、メッセージ サービスを追加します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgServiceAdmin2**インタ フェースは、 [IMsgServiceAdmin](imsgserviceadminiunknown.md)インターフェイスを公開するのと同じオブジェクトによって公開され、MAPI サブシステムの Microsoft Outlook 2003 以降の Outlook の実装を使用して提供されています。 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 9412594f-8acc-4c7e-a668-4ec1da0ad9cf
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 22aad12010a4f367e18443d8c0831c6262cc37fc
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801521"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [MAPIAllocateBuffer](mapiallocatebuffer.md)関数または[MAPIAllocateMore](mapiallocatemore.md)関数の呼び出しで割り当てられたメモリ バッファーを解放します。 
   
@@ -39,7 +39,7 @@ ULONG MAPIFreeBuffer(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpBuffer_
   
@@ -51,7 +51,7 @@ S_OK
   
 > 呼び出しが成功し、要求されたメモリを解放します。 **MAPIFreeBuffer**では、既に解放された場所または**MAPIAllocateBuffer**と**MAPIAllocateMore**を持つメモリ ブロックが割り当てられていないかどうかに S_OK を返すこともします。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 通常、クライアント アプリケーションまたはサービス プロバイダーを呼び出すと[MAPIAllocateBuffer](mapiallocatebuffer.md)または[MAPIAllocateMore](mapiallocatemore.md)、1 つの連続するメモリ バッファーにオペレーティング システムの構成要素のポインターの複数のレベルの 1 つまたは複数の複雑な構造です。 MAPI の関数またはメソッドは、このような内容でバッファーを作成するとき、クライアントは後で**MAPIFreeBuffer**にバッファーを作成した MAPI 関数から返されるバッファーへのポインターを渡すことによって、バッファーに含まれるすべての構造体を解放できます。 サービス プロバイダーが**MAPIFreeBuffer**を使用してメモリ バッファーを解放するには、プロバイダーのサポート オブジェクトが返されるバッファーへのポインターを渡す必要があること。 
   

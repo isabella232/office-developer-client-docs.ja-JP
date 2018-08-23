@@ -1,5 +1,5 @@
 ---
-title: MAPI アプリケーションの開発
+title: '[MAPI �A�v���P��V�����̊J��'
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801310"
 ---
-# <a name="mapi-application-development"></a>MAPI アプリケーションの開発
+# <a name="mapi-application-development"></a>[MAPI �A�v���P��V�����̊J��
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このセクションのトピックでは、クライアント アプリケーションとサービス ・ プロバイダーの開発者に適用されます。 これらのトピックは、重要度順に配置されます。 すべてのプログラマにとって重要なトピックが先頭に表示され、最後には最低限の重要性のいずれかまたはすべてのプログラマには適用されませんのトピックが表示されます。
   

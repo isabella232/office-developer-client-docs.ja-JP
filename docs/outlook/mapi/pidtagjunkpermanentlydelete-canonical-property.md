@@ -1,5 +1,5 @@
 ---
-title: PidTagJunkPermanentlyDelete の標準的なプロパティ
+title: PidTagJunkPermanentlyDelete 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 5f06ad00-7205-48d8-a9ff-f5c6b5e38c5e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7ca24cc0db307715f71be1c030d200c9ca973360
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,19 +19,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802904"
 ---
-# <a name="pidtagjunkpermanentlydelete-canonical-property"></a>PidTagJunkPermanentlyDelete の標準的なプロパティ
+# <a name="pidtagjunkpermanentlydelete-canonical-property"></a>PidTagJunkPermanentlyDelete 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 スパムを完全に削除することがありますように、メッセージを 1 に設定が確認された場合は、意味します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_JUNK_PERMANENTLY_DELETE  <br/> |
+|関連するプロパティ:  <br/> |PR_JUNK_PERMANENTLY_DELETE  <br/> |
 |識別子:  <br/> |0x6102  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |スパム  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -64,7 +64,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

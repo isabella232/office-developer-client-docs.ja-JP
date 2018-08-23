@@ -1,5 +1,5 @@
 ---
-title: 発信キュー テーブル
+title: 送信キュー テーブル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 070377ca-ba9e-42ef-ac6b-ff7548b5ccf5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 10890c1fe430ddbc45c16908df3ac340284c9f18
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801698"
 ---
-# <a name="outgoing-queue-tables"></a>発信キュー テーブル
+# <a name="outgoing-queue-tables"></a>送信キュー テーブル
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 発信のキュー テーブルには、メッセージ ストアのすべての送信メッセージについての情報が含まれています。 メッセージ ストア プロバイダーは、MAPI スプーラーを使用するための発信キュー テーブルを実装します。 ストアの送信をサポートしていないか、メッセージの送受信が必要な次の表を実装しません。 
   

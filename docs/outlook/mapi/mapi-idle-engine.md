@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 755d096a-2a61-44d2-a765-5d464a857756
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c535da245be09f930a70c5fae2a892f33087ebf9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19801384"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI には、アイドル状態のエンジンと総称されますいくつかの関数が用意されています。 これらの関数は、セッション、または低速に応答のピーク時にさまざまなタスクを実行するには、クライアント、アドレス帳プロバイダー、およびメッセージ ストア プロバイダーを使用できます。 クライアントとサービス ・ プロバイダーが遅い操作を延期など、長期間使用されていないままのファイルを閉じる。 トランスポート プロバイダー通常ために使用しないでアイドル状態のエンジン、 **IXPLogon::Idle**メソッドを引き継ぎます。 詳細については、 [IXPLogon::Idle](ixplogon-idle.md)を参照してください。
   

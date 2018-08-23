@@ -1,5 +1,5 @@
 ---
-title: MAPI を初期化しています。
+title: MAPI の初期化
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801087"
 ---
-# <a name="initializing-mapi"></a>MAPI を初期化しています。
+# <a name="initializing-mapi"></a>MAPI の初期化
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI ライブラリを使用するすべてのクライアント アプリケーションは**生じます**関数を呼び出す必要があります。 詳細については、[生じます](mapiinitialize.md)を参照してください。 **生じます**では、セッションのグローバル データを初期化し、呼び出しを受け入れるため、MAPI ライブラリを準備します。 いくつかの状況で設定するのには重要ないくつかのフラグがあります。 
   

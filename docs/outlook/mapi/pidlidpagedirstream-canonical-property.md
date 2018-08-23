@@ -1,5 +1,5 @@
 ---
-title: PidLidPageDirStream の標準的なプロパティ
+title: PidLidPageDirStream 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e94f0daf-fccb-41b6-b38b-5ef4167a6e9d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 809209863af912113ac5f0795cc7c3b0cf51e792
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,20 +19,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802083"
 ---
-# <a name="pidlidpagedirstream-canonical-property"></a>PidLidPageDirStream の標準的なプロパティ
+# <a name="pidlidpagedirstream-canonical-property"></a>PidLidPageDirStream 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージに関連付けられているユーザー設定フォームのページに関する情報を表します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidPageDirStream  <br/> |
+|関連するプロパティ:  <br/> |dispidPageDirStream  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x00008513  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |実行時の構成  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -57,7 +57,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

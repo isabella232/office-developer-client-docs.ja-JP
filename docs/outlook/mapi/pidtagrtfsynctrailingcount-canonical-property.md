@@ -1,5 +1,5 @@
 ---
-title: PidTagRtfSyncTrailingCount の標準的なプロパティ
+title: PidTagRtfSyncTrailingCount 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3f0e5b24-767e-46f5-bb3d-e9cb82cb935b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3174ebbcf70104c82305e2a20df1e183d30265d6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803389"
 ---
-# <a name="pidtagrtfsynctrailingcount-canonical-property"></a>PidTagRtfSyncTrailingCount の標準的なプロパティ
+# <a name="pidtagrtfsynctrailingcount-canonical-property"></a>PidTagRtfSyncTrailingCount 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージの重要な文字の後に表示される、無視できる文字の数が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_RTF_SYNC_TRAILING_COUNT  <br/> |
+|関連するプロパティ:  <br/> |PR_RTF_SYNC_TRAILING_COUNT  <br/> |
 |識別子:  <br/> |0x1011  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |MAPI メッセージ  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、リッチ テキスト形式 (RFT) 補助プロパティです。 これらのプロパティ[へ](rtfsync.md)の関数で使用され、クライアント アプリケーションで直接使用するものではありません。 
   
@@ -68,7 +68,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

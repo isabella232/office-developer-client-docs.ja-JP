@@ -19,7 +19,7 @@ ms.locfileid: "19801645"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ストアを取得する機能を指定します。
   
@@ -36,7 +36,7 @@ typedef enum
 } MSCAP_SELECTOR;
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  *MSCAP_SEL_RESERVED1* 
   

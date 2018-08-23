@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5778dffa-f01b-46b3-9c19-862793740918
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d80671331c2760c574ab32d79115a352ee4bcf25
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801288"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 1 つまたは複数のメッセージ サービスをプロファイルに追加するためのプロファイル ウィザード アプリケーションを起動する関数を定義します。 
   
@@ -43,7 +43,7 @@ HRESULT LAUNCHWIZARDENTRY(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _hParentWnd_
   
@@ -95,7 +95,7 @@ MAPI_E_CALL_FAILED
   
 > 予期しない、または不明な発生元のエラーでは、操作を完了できませんでした。 ダイアログ ボックスから取得する既定のプロファイル、およびエラーにアクセスできない可能性には、プロファイル ウィザードは、MAPI サブシステムを初期化するためにエラーが含まれている。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **LAUNCHWIZARDENTRY**関数のプロトタイプの MAPI 実装は、MAPI プロファイル ウィザードのアプリケーションへのエントリ ポイントです。 MAPI では、このエントリ ポイント**LaunchWizard**を名前です。 
   

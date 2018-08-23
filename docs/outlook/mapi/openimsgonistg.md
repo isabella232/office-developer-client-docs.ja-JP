@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: a98b0b26-9b19-44ca-9b4e-0ad4d1c54325
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 27a5978d85cf06a31f583b82cd39d0001852876b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19801685"
 ---
 # <a name="openimsgonistg"></a>OpenIMsgOnIStg
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ セッション内で使用する、既存の OLE **IStorage**オブジェクトの上に新しい[IMessage](imessageimapiprop.md)オブジェクトを構築します。 
   
@@ -47,7 +47,7 @@ SCODE OpenIMsgOnIStg(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _lpMsgSess_
   

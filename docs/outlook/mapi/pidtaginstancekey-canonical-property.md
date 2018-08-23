@@ -1,5 +1,5 @@
 ---
-title: PidTagInstanceKey の標準的なプロパティ
+title: PidTagInstanceKey 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 14fc5571-acc0-4d75-8598-964aee5ba01c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: bc16e88035f091a4f42a03342a70e7e3a1da5e0c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802861"
 ---
-# <a name="pidtaginstancekey-canonical-property"></a>PidTagInstanceKey の標準的なプロパティ
+# <a name="pidtaginstancekey-canonical-property"></a>PidTagInstanceKey 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブル内の行を一意に識別する値が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_INSTANCE_KEY  <br/> |
+|関連するプロパティ:  <br/> |PR_INSTANCE_KEY  <br/> |
 |識別子:  <br/> |0x0FF6  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |テーブル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、表形式ビュー内の行を一意に識別するバイナリ値です。 ほとんどのテーブルの必要な列があります。 行が 2 つのビューに含まれている場合は、2 つの別のインスタンスのキーがあります。 行のインスタンスのキーは、テーブルを開くたびに異なる場合がありますが、テーブルの中に一定に開いています。 テーブルの使用中に追加された行は、使用していたインスタンスのキーを再利用しません。 
   
@@ -80,7 +80,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

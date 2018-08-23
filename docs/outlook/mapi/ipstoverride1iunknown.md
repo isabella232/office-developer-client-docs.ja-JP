@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d26cee81-45ea-4fd3-8a54-5f35264b5d6a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: db2853080b1fc2ff3a346dcfb8d112237b7f3459
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801190"
 ---
-# <a name="ipstoverride1--iunknown"></a>IPSTOVERRIDE1: IUnknown
+# <a name="ipstoverride1--iunknown"></a>IPSTOVERRIDE1 : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 PSTDisableGrow ポリシーを無効にするには個人用フォルダー ファイル (PST) のストア プロバイダーを使用できます。
   
@@ -42,7 +42,7 @@ PSTDisableGrow ポリシーを無効にするには個人用フォルダー フ�
 |[IPSTOVERRIDE1::SetPersistedRegistrations](ipstoverride1-setpersistedregistrations.md) <br/> |HrTrustedPSTOverrideHandlerCallback それ以降の呼び出しを回避する自動ロック解除では、個人用フォルダー ファイルを登録します。  <br/> |
 |[IPSTOVERRIDE1::OverridePSTDisableGrow](ipstoverride1-overridepstdisablegrow.md) <br/> |成長のための個人用フォルダー ファイルのロックを解除します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 PST をオーバーライドするハンドラーのインターフェイス識別子は可能性があります現在がある場合は、 [MAPI の定数](mapi-constants.md)のトピックで検索してコピーし、コードに追加のダウンロード可能なヘッダー ファイルで定義されていません。 値はシンボル名のグローバル一意識別子 (GUID) を関連付けるには、Microsoft Windows ソフトウェア開発キット (SDK) のヘッダー ファイル guiddef.h に定義されている DEFINE_GUID マクロを使用します。 
   
@@ -52,5 +52,5 @@ PST をオーバーライドするハンドラーのインターフェイス識�
 
 
 
-[IPSTOVERRIDEREQ: IUnknown](ipstoverridereqiunknown.md)
+[IPSTOVERRIDEREQ : IUnknown](ipstoverridereqiunknown.md)
 

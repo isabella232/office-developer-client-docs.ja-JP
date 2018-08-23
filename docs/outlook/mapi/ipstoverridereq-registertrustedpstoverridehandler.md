@@ -23,7 +23,7 @@ ms.locfileid: "19801186"
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 個人用フォルダー (.pst) ファイルのロックを解除する手順を開始します。
   
@@ -35,7 +35,7 @@ HRESULT RegisterTrustedPSTOverrideHandler (
 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pwzDllPath_
   
@@ -51,7 +51,7 @@ S_OK
   
 > 関数の呼び出しに成功しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 WzDllPath パラメーターで指定された DLL は、デジタル証明書を使用して署名する必要があります。 DLL では、次のシグネチャを持つ関数をエクスポートする必要がありますもします。
   
@@ -67,7 +67,7 @@ Pst ファイルの IMsgStore オブジェクトへのポインター、IPSTOVER
 
 
 
-[IPSTOVERRIDE1: IUnknown](ipstoverride1iunknown.md)
+[IPSTOVERRIDE1 : IUnknown](ipstoverride1iunknown.md)
   
-[IPSTOVERRIDEREQ: IUnknown](ipstoverridereqiunknown.md)
+[IPSTOVERRIDEREQ : IUnknown](ipstoverridereqiunknown.md)
 

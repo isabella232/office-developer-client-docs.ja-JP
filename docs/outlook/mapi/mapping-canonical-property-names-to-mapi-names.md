@@ -1,5 +1,5 @@
 ---
-title: MAPI 名への標準的なプロパティ名のマッピング
+title: 標準プロパティ名から MAPI 名へのマッピング
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 43c7225b-8f9f-47a2-aadf-36a249b2d78e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6693326df818d2792d7448407148e57d53fff86f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801621"
 ---
-# <a name="mapping-canonical-property-names-to-mapi-names"></a>MAPI 名への標準的なプロパティ名のマッピング
+# <a name="mapping-canonical-property-names-to-mapi-names"></a>標準プロパティ名から MAPI 名へのマッピング
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックは、MAPI プロパティまたはプロパティを表す各標準のプロパティ名をマップします。 トピックには、3 つのテーブルが含まれています: 数値識別子を持つ名前付きプロパティのテーブル、1 秒は文字列の識別子を持つ名前付きプロパティのテーブルし、タグ付きのプロパティの表の 3 分の 1 です。
   
@@ -313,7 +313,7 @@ ms.locfileid: "19801621"
 |[PidNameAttachmentMacContentType](pidnameattachmentmaccontenttype-canonical-property.md) <br/> |AttachmentMacContentType  <br/> |
 |[PidNameAttachmentMacInfo](pidnameattachmentmacinfo-canonical-property.md) <br/> |AttachmentMacInfo  <br/> |
 |[PidNameAudioNotes](pidnameaudionotes-canonical-property.md) <br/> |UMAudioNotes  <br/> |
-|[PidNameAuthor](pidnameauthor-canonical-property.md) <br/> |作成者  <br/> |
+|[PidNameAuthor](pidnameauthor-canonical-property.md) <br/> |Author  <br/> |
 |[PidNameByteCount](pidnamebytecount-canonical-property.md) <br/> |ByteCount  <br/> |
 |[PidNameCategory](pidnamecategory-canonical-property.md) <br/> |カテゴリ  <br/> |
 |[PidNameCharacterCount](pidnamecharactercount-canonical-property.md) <br/> |CharCount  <br/> |
@@ -322,13 +322,13 @@ ms.locfileid: "19801621"
 |[PidNameContentBase](pidnamecontentbase-canonical-property.md) <br/> |コンテンツ ・ ベース  <br/> |
 |[PidNameContentClass](pidnamecontentclass-canonical-property.md) <br/> |コンテンツ クラス  <br/> |
 |[PidNameContentTransferEncoding](pidnamecontenttransferencoding-canonical-property.md) <br/> |コンテンツ転送エンコード  <br/> |
-|[PidNameContentType](pidnamecontenttype-canonical-property.md) <br/> |コンテンツ タイプ  <br/> |
+|[PidNameContentType](pidnamecontenttype-canonical-property.md) <br/> |Content-Type  <br/> |
 |[PidNameCreateDateTimeReadOnly](pidnamecreatedatetimereadonly-canonical-property.md) <br/> |CreateDtmRo  <br/> |
 |[PidNameCrossReference](pidnamecrossreference-canonical-property.md) <br/> |相互参照  <br/> |
 |[PidNameEditTime](pidnameedittime-canonical-property.md) <br/> |EditTime  <br/> |
 |[PidNameExchangeJunkEmailMoveStamp](pidnameexchangejunkemailmovestamp-canonical-property.md) <br/> |http://schemas.microsoft.com/exchange/junkemailmovestamp  <br/> |
 |[PidNameHiddenCount](pidnamehiddencount-canonical-property.md) <br/> |HiddenCount  <br/> |
-|[PidNameKeywords](pidnamekeywords-canonical-property.md) <br/> |キーワード  <br/> |
+|[PidNameKeywords](pidnamekeywords-canonical-property.md) <br/> |Keywords  <br/> |
 |[PidNameLastAuthor](pidnamelastauthor-canonical-property.md) <br/> |LastAuthor  <br/> |
 |[PidNameLastPrinted](pidnamelastprinted-canonical-property.md) <br/> |LastPrinted  <br/> |
 |[PidNameLastSaveDateTime](pidnamelastsavedatetime-canonical-property.md) <br/> |LastSaveDtm  <br/> |
@@ -344,7 +344,7 @@ ms.locfileid: "19801621"
 |[PidNameRightsManagementLicense](pidnamerightsmanagementlicense-canonical-property.md) <br/> |DRMLicense  <br/> |
 |[PidNameSecurity](pidnamesecurity-canonical-property.md) <br/> |セキュリティ  <br/> |
 |[PidNameSlideCount](pidnameslidecount-canonical-property.md) <br/> |SlideCount  <br/> |
-|[PidNameSubject](pidnamesubject-canonical-property.md) <br/> |件名  <br/> |
+|[PidNameSubject](pidnamesubject-canonical-property.md) <br/> |対象  <br/> |
 |[PidNameTemplate](pidnametemplate-canonical-property.md) <br/> |Template  <br/> |
 |[PidNameTitle](pidnametitle-canonical-property.md) <br/> |Title  <br/> |
 |[PidNameWordCount](pidnamewordcount-canonical-property.md) <br/> |WordCount  <br/> |
@@ -939,7 +939,7 @@ ms.locfileid: "19801621"
 |[PidTagStatusCode](pidtagstatuscode-canonical-property.md) <br/> |PR_STATUS_CODE  <br/> |
 |[PidTagStatusString](pidtagstatusstring-canonical-property.md) <br/> |PR_STATUS_STRING、PR_STATUS_STRING_A、PR_STATUS_STRING_W  <br/> |
 |[PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md) <br/> |PR_STORE_ENTRYID  <br/> |
-|[PidTagStoreEntryIdEmsmdbV1 の標準的なプロパティ](pidtagstoreentryidemsmdbv1-canonical-property.md) <br/> |PR_STORE_ENTRYID_EMSMDB_V1  <br/> |
+|[PidTagStoreEntryIdEmsmdbV1 標準プロパティ](pidtagstoreentryidemsmdbv1-canonical-property.md) <br/> |PR_STORE_ENTRYID_EMSMDB_V1  <br/> |
 |[PidTagStoreProvider](pidtagstoreprovider-canonical-property.md) <br/> |PR_MDB_PROVIDER  <br/> |
 |[PidTagStoreProviders](pidtagstoreproviders-canonical-property.md) <br/> |PR_STORE_PROVIDERS  <br/> |
 |[PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md) <br/> |PR_STORE_RECORD_KEY  <br/> |

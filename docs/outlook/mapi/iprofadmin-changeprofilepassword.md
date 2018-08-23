@@ -23,7 +23,7 @@ ms.locfileid: "19801138"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 現在は廃止されています。 プロファイルのパスワードを変更します。
   
@@ -36,7 +36,7 @@ HRESULT ChangeProfilePassword(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpszProfileName_
   
@@ -64,7 +64,7 @@ S_OK
   
 > このメソッドが呼び出されると、S_OK を返します。 ただし、動作も起こりません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このメソッドを使用することはしません。 MAPI は、プロファイルのパスワードをサポートしていません。
   
@@ -72,5 +72,5 @@ S_OK
 
 
 
-[IProfAdmin: IUnknown](iprofadminiunknown.md)
+[IProfAdmin : IUnknown](iprofadminiunknown.md)
 

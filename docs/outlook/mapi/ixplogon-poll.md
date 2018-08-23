@@ -23,7 +23,7 @@ ms.locfileid: "19801255"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 トランスポート プロバイダーが 1 つまたは複数の受信メッセージを受信したかどうかを示します。
   
@@ -33,7 +33,7 @@ HRESULT Poll(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulIncoming_
   
@@ -57,5 +57,5 @@ MAPI スプーラーは、トランスポート プロバイダーは、新し�
   
 [IXPProvider::TransportLogon](ixpprovider-transportlogon.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 

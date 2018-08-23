@@ -1,5 +1,5 @@
 ---
-title: メッセージを表示するためのフォームを起動します。
+title: メッセージを読むためのフォームの起動
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801272"
 ---
-# <a name="launching-a-form-to-read-a-message"></a>メッセージを表示するためのフォームを起動します。
+# <a name="launching-a-form-to-read-a-message"></a>メッセージを読むためのフォームの起動
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム サーバーの実装では、クライアント アプリケーションがメッセージを読み込むとき、サーバーのフォームとフォーム オブジェクトのメソッド呼び出しの次の順序の期待される結果必要があります。
   
@@ -37,5 +37,5 @@ ms.locfileid: "19801272"
 
 
 
-[フォームのサーバー間のやり取り](form-server-interactions.md)
+[フォーム サーバーの相互作用](form-server-interactions.md)
 

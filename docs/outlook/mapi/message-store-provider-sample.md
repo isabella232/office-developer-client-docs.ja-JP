@@ -1,5 +1,5 @@
 ---
-title: メッセージ ストア プロバイダーのサンプル
+title: メッセージ ストア プロバイダー サンプル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f1e4077b-7a95-440d-a326-a8dc9cdab4fe
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b3c907b0a53a41a52516b23ffb1cf7400d887d89
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801637"
 ---
-# <a name="message-store-provider-sample"></a>メッセージ ストア プロバイダーのサンプル
+# <a name="message-store-provider-sample"></a>メッセージ ストア プロバイダー サンプル
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 サンプル ラップ PST ストア プロバイダーは、データを格納するためのバックエンドとして、個人用フォルダー ファイル (PST) プロバイダーを使用します。 レプリケーション API とは、ラップされた PST ストア プロバイダーを使用してください。 
   
@@ -40,13 +40,13 @@ ms.locfileid: "19801637"
   
 - [レプリケーション API について](about-the-replication-api.md)
     
-- [ラップされた PST ストア プロバイダーを初期化しています。](initializing-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)
     
 - [ラップされた PST ストア プロバイダーへのログオン](logging-on-to-a-wrapped-pst-store-provider.md)
     
-- [ラップされた PST ストア プロバイダーを使用します。](using-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーの使用](using-a-wrapped-pst-store-provider.md)
     
-- [ラップされた PST ストア プロバイダーをシャット ダウン](shutting-down-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーのシャットダウン](shutting-down-a-wrapped-pst-store-provider.md)
     
  **サンプル ラップ PST ストア プロバイダーをインストールするのには**
   

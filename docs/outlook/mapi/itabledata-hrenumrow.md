@@ -23,7 +23,7 @@ ms.locfileid: "19801215"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブル内の位置に基づいて行を取得します。 
   
@@ -34,7 +34,7 @@ HRESULT HrEnumRow(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulRowNumber_
   
@@ -50,7 +50,7 @@ S_OK
   
 > 行が正常に取得されたか、 _ulRowNumber_パラメーターで指定された行番号の行が存在しません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **ITableData::HrEnumRow**メソッドは、序数に基づく行を取得します。 この番号は、挿入の順序を表します (最初の行は 0 し、-1 行の数は、最後の行を示します)。 MAPI では、この時系列テーブルのデータ オブジェクトの有効期間の行を挿入の順序を維持します。 
   
@@ -70,5 +70,5 @@ MAPI では、テーブルのデータ オブジェクトが作成されたと�
   
 [SRow](srow.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

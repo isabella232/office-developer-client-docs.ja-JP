@@ -19,7 +19,7 @@ ms.locfileid: "19801401"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 すべてのメッセージには、 **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) の種類、目的、またはメッセージの内容を識別する、メッセージ クラス プロパティがあります。 **PR_MESSAGE_CLASS**は、すべての新規メッセージに必要なプロパティです。 メッセージのクラスでは、受信メッセージを配置するフォルダーをユーザーにメッセージを表示するために使用されるフォームを決定します。 
   

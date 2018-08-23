@@ -1,5 +1,5 @@
 ---
-title: MAPI セッションの処理
+title: MAPI �Z�b�V�����̏���
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,33 +15,33 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801456"
 ---
-# <a name="mapi-session-handling"></a>MAPI セッションの処理
+# <a name="mapi-session-handling"></a>MAPI �Z�b�V�����̏���
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 サービス プロバイダーと、基になるメッセージング システムと通信するには、セッションを確立する必要があります。 MAPI セッションは、クライアントからその他の MAPI コンポーネントへのリンクです。 結果として正常にセッションを開始、MAPI クライアントに返しますセッション オブジェクトへのポインター、 **IMAPISession**インターフェイスを実装するオブジェクトです。 詳細についてを参照してください[IMAPISession: IUnknown](imapisessioniunknown.md)。 アドレス帳、メッセージ ストア プロバイダーのオブジェクトにアクセスする、いくつかのテーブルにアクセス、フォームを表示する、トランスポート プロバイダーのプロパティを設定およびプロファイルおよびメッセージ サービス管理を実行するのには、 **IMAPISession**インターフェイスのメソッドを使用できます。 
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-[MAPI セッションを開始](starting-a-mapi-session.md)
+[MAPI セッションの開始](starting-a-mapi-session.md)
   
 > MAPI セッションを開始する方法について説明しより詳細な情報を含むトピックへのリンクが含まれています。
     
-[MAPI セッションを終了](ending-a-mapi-session.md)
+[MAPI セッションの終了](ending-a-mapi-session.md)
   
 > MAPI セッションを終了する方法について説明します。
     
-[セッションを使用してオブジェクトへのアクセス](accessing-objects-by-using-the-session.md)
+[セッションを使用したオブジェクトへのアクセス](accessing-objects-by-using-the-session.md)
   
 > セッション オブジェクトにアクセスするセッションのポインターを使用する方法について説明します。
     
-[プライマリ デバイスとプロバイダーの Id を取得しています。](retrieving-primary-and-provider-identity.md)
+[プライマリとプロバイダー ID の取得](retrieving-primary-and-provider-identity.md)
   
 > プロバイダーの id、プライマリを取得するためのプロパティについて説明します。
     
-[状態テーブルとオブジェクトの状態](status-table-and-status-objects.md)
+[状態テーブルと状態オブジェクト](status-table-and-status-objects.md)
   
 > 状態テーブルから情報にアクセスする方法をについて説明します。
     

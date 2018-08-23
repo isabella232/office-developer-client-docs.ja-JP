@@ -23,7 +23,7 @@ ms.locfileid: "19800975"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロバイダー テーブル、プロファイル内のサービス プロバイダーの一覧へのアクセスを提供します。
   
@@ -50,7 +50,7 @@ S_OK
   
 > プロバイダー テーブルは正常に返されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgServiceAdmin::GetProviderTable**メソッドでは、MAPI プロバイダーのテーブル、すべてのアドレス帳、メッセージ ・ ストア、およびプロファイルに現在インストールされているトランスポート プロバイダーの一覧が表示されるテーブルへのアクセスを提供します。 
   
@@ -94,5 +94,5 @@ _UlFlags_パラメーターに MAPI_UNICODE フラグを設定は、次を行い
   
 [IProviderAdmin::GetProviderTable](iprovideradmin-getprovidertable.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 

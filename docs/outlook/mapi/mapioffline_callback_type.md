@@ -19,7 +19,7 @@ ms.locfileid: "19801506"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 コールバックのサポートされている型の列挙体。
   
@@ -37,7 +37,7 @@ typedef enum
 
 
 
-[オフラインの状態の API について](about-the-offline-state-api.md)
+[オフライン状態 API について](about-the-offline-state-api.md)
   
 [MAPI �萔](mapi-constants.md)
   

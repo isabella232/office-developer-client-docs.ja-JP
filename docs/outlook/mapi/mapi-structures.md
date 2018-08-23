@@ -9,7 +9,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f84c6e70-e74e-4ca2-961c-0260ea277b00
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 91820ae945ba44d36221e3a92ce5ee2fd47c02eb
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,14 +21,14 @@ ms.locfileid: "19801470"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アルファベット順の次のエントリでは、MAPI の構造体について説明します。 詳細については、相互参照の他の文書に、またはこのドキュメントの他のトピックも含まれています。
   
 |||
 |:-----|:-----|
 |[ADRENTRY](adrentry.md) <br/> |[ADRLIST](adrlist.md) <br/> |
-|[ADRPARM](adrparm.md) <br/> |[通貨](currency.md) <br/> |
+|[ADRPARM](adrparm.md) <br/> |[CURRENCY](currency.md) <br/> |
 |[CONTAB_ENTRYID](contab_entryid.md) <br/> |[DIR_ENTRYID](dir_entryid.md) <br/> |
 |[DTBLBUTTON](dtblbutton.md) <br/> |[DTBLCHECKBOX](dtblcheckbox.md) <br/> |
 |[DTBLCOMBOBOX](dtblcombobox.md) <br/> |[DTBLDDLBX](dtblddlbx.md) <br/> |
@@ -48,7 +48,7 @@ ms.locfileid: "19801470"
 |[MTSID](mtsid.md) <br/> |[NEWMAIL_NOTIFICATION](newmail_notification.md) <br/> |
 |[�ʒm](notification.md) <br/> |[NOTIFKEY](notifkey.md) <br/> |
 |[OBJECT_NOTIFICATION](object_notification.md) <br/> |[ROWENTRY](rowentry.md) <br/> |
-|[ROWLIST で](rowlist.md) <br/> |[SAndRestriction](sandrestriction.md) <br/> |
+|[ROWLIST](rowlist.md) <br/> |[SAndRestriction](sandrestriction.md) <br/> |
 |[SAppTimeArray](sapptimearray.md) <br/> |[SBinary](sbinary.md) <br/> |
 |[SBinaryArray](sbinaryarray.md) <br/> |[SBitMaskRestriction](sbitmaskrestriction.md) <br/> |
 |[SCommentRestriction](scommentrestriction.md) <br/> |[SComparePropsRestriction](scomparepropsrestriction.md) <br/> |

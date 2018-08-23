@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9a92e9cd-8282-4cf0-93af-4089b3763594
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c3a21e8a6e69cae9d8b757a60fe56d63e079b3ea
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801498"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 名前付きプロパティをについて説明します。 
   
@@ -45,7 +45,7 @@ typedef struct _MAPINAMEID
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **lpguid**
   
@@ -79,7 +79,7 @@ MNID_STRING
   
 > 共用体の名前付きプロパティの名前を記述します。 名前は**カバー**に格納されている整数値、または**lpwstrName**に格納されている Unicode 文字の文字列のいずれかにできます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **MAPINAMEID**構造体を使用して、0x8000 以上の識別子を持つ名前付きプロパティのプロパティを記述します。 プロパティ セットは、重要な部分の名前付きプロパティです。 たとえば PS_PUBLIC_STRINGS または PS_ROUTING_ADDRTYPE は、MAPI によって定義されているプロパティのセットです。 
   

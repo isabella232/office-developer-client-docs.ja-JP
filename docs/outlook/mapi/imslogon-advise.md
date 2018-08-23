@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a3c5d937-642b-463b-b5a0-5d099e651895
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 87be00bce55fabda6271b472a9e5c446aaf8054a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801033"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ・ ストア内の変更についての通知のメッセージ ストア プロバイダー オブジェクトに登録します。 メッセージ ・ ストアに登録済みのオブジェクトの変更に関する通知が送付されます。
   
@@ -37,7 +37,7 @@ HRESULT Advise(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbEntryID_
   
@@ -81,7 +81,7 @@ MAPI_E_NO_SUPPORT
   
 > MAPI または 1 つまたは複数のサービス プロバイダーによっては、操作はサポートされていません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージ ストア プロバイダーは、通知のコールバック オブジェクトを登録するのには**IMSLogon::Advise**メソッドを実装します。 指定したオブジェクトに変更が発生するたびに、プロバイダーはどのようなイベント マスク ビットが設定されて、 _ulEventMask_パラメーターであり、したがってどのような種類の変更が発生したを確認します。 ビットが設定されている場合、プロバイダーはイベントを通知する_lpAdviseSink_パラメーターで指定されたアドバイズ シンク オブジェクトの[IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出します。 **OnNotify**ルーチンに渡された通知の構造体のデータでは、イベントについて説明します。 
   
@@ -105,5 +105,5 @@ _LpAdviseSink_へのポインターのコピーを保持する**アドバイス*
   
 [�ʒm](notification.md)
   
-[IMSLogon: IUnknown](imslogoniunknown.md)
+[IMSLogon : IUnknown](imslogoniunknown.md)
 

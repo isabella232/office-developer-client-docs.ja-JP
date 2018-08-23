@@ -19,7 +19,7 @@ ms.locfileid: "19801642"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 2 つの Unicode 文字列を比較します。
   
@@ -33,7 +33,7 @@ int MNLS_CompareStringW (
   int cch2);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lcid_
   
@@ -59,11 +59,11 @@ int MNLS_CompareStringW (
   
 > [in]2 番目の Unicode 文字列は、終端の null 文字を除いた文字数。 アプリケーションは、文字列が null で終わる場合、負の値を指定できます。 この場合、関数は長さを自動的に決定します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 [CompareStringEx](http://msdn.microsoft.com/en-us/library/dd317761%28VS.85%29.aspx)に記載されている値を返します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この関数は、 [CompareStringW](http://msdn.microsoft.com/en-us/library/dd317759%28VS.85%29.aspx)をラップします。 **MNLS_CompareStringW**では、同じパラメーターを取得し、 [CompareStringW](http://msdn.microsoft.com/en-us/library/dd317759%28VS.85%29.aspx)と同じ動作をしました。
   

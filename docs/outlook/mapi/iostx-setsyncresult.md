@@ -23,7 +23,7 @@ ms.locfileid: "19801086"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 同期の結果を設定します。
   
@@ -33,13 +33,13 @@ HRESULT SetSyncResult(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _hrSync_
   
 >  [in]同期の結果を返します。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 ローカル ストアの同期の結果を通知するために**IOSTX::SyncEnd**を呼び出す前に**IOSTX::SetSyncResult**を呼び出します。 
   

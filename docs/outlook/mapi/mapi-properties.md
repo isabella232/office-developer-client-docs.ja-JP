@@ -21,7 +21,7 @@ ms.locfileid: "19801419"
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このセクションには、Microsoft Outlook メッセージング API (MAPI) によってサポートされる標準のプロパティが含まれています。 各標準的なプロパティは、1 つまたは複数の関連する MAPI プロパティに対応します。 標準のプロパティの詳細については、[標準の MAPI プロパティ](mapi-canonical-properties.md)を参照してください。 MAPI プロパティと、各オブジェクトに使用できるプロパティの一覧の動作の一般的な説明については、 [MAPI プロパティの概要](mapi-property-overview.md)を参照してください。 プロパティに関連するマクロの詳細については、 [SPropValue](spropvalue.md)構造体のリファレンス ページを参照してください。 MAPI プロパティと既定のプロパティ名の対応の包括的な一覧は、 [MAPI 名前を標準のプロパティ名にマッピング](mapping-mapi-names-to-canonical-property-names.md)し、 [MAPI の名前を標準のプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)を参照してください。 
   

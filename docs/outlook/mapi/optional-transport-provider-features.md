@@ -1,5 +1,5 @@
 ---
-title: 省略可能なトランスポート プロバイダーの機能
+title: トランスポート プロバイダーのオプション機能
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801693"
 ---
-# <a name="optional-transport-provider-features"></a>省略可能なトランスポート プロバイダーの機能
+# <a name="optional-transport-provider-features"></a>トランスポート プロバイダーのオプション機能
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 トランスポート プロバイダーを実装するオプションの機能は次のとおりです。
   

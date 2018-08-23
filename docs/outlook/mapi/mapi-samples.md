@@ -1,5 +1,5 @@
 ---
-title: MAPI のサンプル
+title: MAPI Samples
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801454"
 ---
-# <a name="mapi-samples"></a>MAPI のサンプル
+# <a name="mapi-samples"></a>MAPI Samples
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このセクションには、特定のタスクを達成するか、MAPI を使用して特定のサービス プロバイダーを実装する方法を示すコード サンプルが含まれています。 MFCMAPI は Api の多くの使用を示すために、この参照にも使用されます。 Windows Vista、Windows Server 2008、Windows XP または Windows Server 2003 オペレーティング システム上のサンプルのいずれかを実行するには、まず MAPI ランタイム システムを設定する必要があります。 詳細については、 [MAPI プログラミングの概要」](mapi-programming-overview.md)を参照してください。
   
@@ -31,13 +31,13 @@ ms.locfileid: "19801454"
   
 > MAPI サービス プロバイダーの例を示します。
     
-[MAPI を使用して Outlook アイテムを作成します。](creating-outlook-items-by-using-mapi.md)
+[MAPI を使用した Outlook アイテムの作成](creating-outlook-items-by-using-mapi.md)
   
 > MAPI を使用して Outlook アイテムを作成する方法のコード例を示します。
     
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連情報
 
-[Outlook �� MAPI �Q�Ƃ̎g�p��J�n���܂��B](getting-started-with-the-outlook-mapi-reference.md)
+[Outlook MAPI リファレンスの概要](getting-started-with-the-outlook-mapi-reference.md)
   
 [MAPI �̊T�O](mapi-concepts.md)
   

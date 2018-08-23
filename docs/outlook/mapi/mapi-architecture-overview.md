@@ -17,7 +17,7 @@ ms.locfileid: "19801320"
 ---
 # <a name="mapi-architecture-overview"></a>MAPI アーキテクチャの概要
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI は、次の図に示すように、モジュラー型アーキテクチャを定義します。  
   

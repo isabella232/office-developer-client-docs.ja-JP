@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e04c2228-aa0a-4958-b5b2-6467e93ab613
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d0ddff638e26940ea74932a8a491455f67cc8dd8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801489"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オペレーティング システム、MAPI、またはサービス プロバイダーによって生成される通常のエラーに関する詳細な情報を提供します。 
   
@@ -43,7 +43,7 @@ typedef struct _MAPIERROR
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulVersion**
   
@@ -65,7 +65,7 @@ typedef struct _MAPIERROR
   
 > エラーの発生場所を識別する**lpszComponent**のメンバーが指すコンポーネントの位置を表す値です。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **MAPIERROR**構造体を使用して、エラー情報を記述します。 クライアントとサービス ・ プロバイダー、 [IMAPIProp::GetLastError](imapiprop-getlasterror.md)メソッドの_lppMAPIError_パラメーター内の**MAPIERROR**構造体へのポインターを渡します。 **GetLastError**は、前のオブジェクトに対して発生したエラーに関する情報を返します。 **GetLastError**の呼び出し元は、 [MAPIFreeBuffer](mapifreebuffer.md)を呼び出すことによって、 **MAPIERROR**構造体のメモリを解放します。
   

@@ -1,5 +1,5 @@
 ---
-title: オブジェクトを無効化
+title: オブジェクトの無効化
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801093"
 ---
-# <a name="invalidating-an-object"></a>オブジェクトを無効化
+# <a name="invalidating-an-object"></a>オブジェクトの無効化
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロバイダーのシャット ダウン プロセスの一環として、オブジェクトを無効にすることもできます。 オブジェクトが無効では、vtable と vtable が同じ 3 つの**IUnknown**メソッドの実装が含まれている: **AddRef**、**リリース**、および**バージョン管理規則によって**。 [IMAPISupport::MakeInvalid](imapisupport-makeinvalid.md)、3 つの一般的なプロバイダーの種類のそれぞれのサポート オブジェクトに含まれるメソッドを呼び出すことによってオブジェクトを無効にします。 プロバイダーは、通常、ログオン オブジェクトの**ログオフ時**のメソッドの実装ではこの呼び出しを作成します。 
   
@@ -29,5 +29,5 @@ MAPI オブジェクトに関連付けられているメモリを解放する最
 
 
 
-[サービス プロバイダーをシャット ダウン](shutting-down-a-service-provider.md)
+[サービス プロバイダーのシャットダウン](shutting-down-a-service-provider.md)
 

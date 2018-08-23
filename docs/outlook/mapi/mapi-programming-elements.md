@@ -17,11 +17,11 @@ ms.locfileid: "19801418"
 ---
 # <a name="mapi-programming-elements"></a>MAPI プログラミング要素
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ここには、 [MAPI 参照](mapi-reference.md)内のプログラミング要素の概要が含まれています。 
   
 ## <a name="see-also"></a>関連項目
 
-- [MAPI �̊T�O](mapi-concepts.md)
+- [MAPI の概念](mapi-concepts.md)
 

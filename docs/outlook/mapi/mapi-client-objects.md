@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 11304a4c-d986-4ad9-a140-19a59825a8df
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fb37c15e6544798a956e865e6c8c6d62bee44d28
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19801342"
 ---
 # <a name="mapi-client-objects"></a>MAPI クライアント オブジェクト
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージング クライアント アプリケーションの標準的な実装の 1 つのオブジェクト、アドバイズ シンクします。 シンクの継承からのアドバイス、 [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md)インタ フェースおよび MAPI によってし、イベント通知のためのプロバイダーのサービスを提供します。 一部のクライアントでは、進行状況ダイアログ ボックスの表示をサポートするために進行中のオブジェクトも実装します。 
   
@@ -43,8 +43,8 @@ ms.locfileid: "19801342"
   
 ## <a name="see-also"></a>関連項目
 
-- [IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md) 
-- [IMAPIViewContext: IUnknown](imapiviewcontextiunknown.md)  
-- [IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)
+- [IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md) 
+- [IMAPIViewContext : IUnknown](imapiviewcontextiunknown.md)  
+- [IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md)
 - [MAPI オブジェクトとインターフェイスの概要](mapi-object-and-interface-overview.md)
 

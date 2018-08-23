@@ -23,7 +23,7 @@ ms.locfileid: "19800982"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 現在は廃止されています。 メッセージ サービスに新しい名前が割り当てられます。 
   
@@ -35,7 +35,7 @@ HRESULT RenameMsgService(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpUID_
   
@@ -49,13 +49,13 @@ HRESULT RenameMsgService(
   
 > [in]メッセージ サービスの新しい名前へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 MAPI_E_NO_SUPPORT 
   
 > MAPI では、このメッセージ サービスの名前を変更することはできません。 **RenameMsgService**は、常にこの値を返します。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージ サービスに新しい名前を割り当てるには、クライアントは、メッセージ サービスの**PR_SERVICE_NAME** ([PidTagServiceName](pidtagservicename-canonical-property.md)) プロパティを使用してください。 メッセージ サービスのサービス プロバイダーの名前は、それらのプロパティの**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) に格納されます。 
   
@@ -65,5 +65,5 @@ MAPI_E_NO_SUPPORT
 
 [MAPIUID](mapiuid.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 

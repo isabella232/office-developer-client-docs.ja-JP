@@ -1,5 +1,5 @@
 ---
-title: PidLidAttendeeCriticalChange の標準的なプロパティ
+title: PidLidAttendeeCriticalChange 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2b46966d-c63d-4241-92d4-001d6a674e97
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: f534a4738eb18519dc62cc18cfb79391ea39633b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801824"
 ---
-# <a name="pidlidattendeecriticalchange-canonical-property"></a>PidLidAttendeeCriticalChange の標準的なプロパティ
+# <a name="pidlidattendeecriticalchange-canonical-property"></a>PidLidAttendeeCriticalChange 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 会議に関連するオブジェクトが送信されたときの日時を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |LID_ATTENDEE_CRITICAL_CHANGE  <br/> |
+|関連するプロパティ:  <br/> |LID_ATTENDEE_CRITICAL_CHANGE  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Meeting  <br/> |
 |長い ID (LID):  <br/> |0x00000001  <br/> |
-|データを入力します。  <br/> |PT_SYSTIME  <br/> |
+|データの種類 :   <br/> |PT_SYSTIME  <br/> |
 |領域:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 値は、世界協定時刻 (UTC) で指定する必要があります。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,5 +1,5 @@
 ---
-title: PidTagJunkThreshold の標準的なプロパティ
+title: PidTagJunkThreshold 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8067e2b5-02df-4b96-8f66-509f5a48c8aa
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0f8484e195b1cda8e1d633133cdff89c571d8ecd
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802915"
 ---
-# <a name="pidtagjunkthreshold-canonical-property"></a>PidTagJunkThreshold の標準的なプロパティ
+# <a name="pidtagjunkthreshold-canonical-property"></a>PidTagJunkThreshold 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 どの程度積極的に示す [迷惑メール] フォルダーに受信メールを送信する必要があります。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_JUNK_THRESHOLD  <br/> |
+|関連するプロパティ:  <br/> |PR_JUNK_THRESHOLD  <br/> |
 |識別子:  <br/> |0x6101  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |スパム  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、高と低に対応/の設定にフィルターを適用します。 "0 xffffffff"の値は、ブロック リストを適用する必要がありますが、スパム フィルターが適用されないことを示します。 「0x80000000」値は、すべてのメールはを除き、これらのメッセージの差出人セーフ リストに送信者からの迷惑メールや、信頼された受信者リストの受信者に送信されることを示します。 この値は次のとおりです。
   
@@ -75,7 +75,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

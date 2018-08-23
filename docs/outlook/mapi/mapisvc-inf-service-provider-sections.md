@@ -1,5 +1,5 @@
 ---
-title: MapiSvc.inf サービス プロバイダー セクション
+title: MapiSvc.inf サービス プロバイダーセクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,9 +15,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801537"
 ---
-# <a name="mapisvcinf-service-provider-sections"></a>MapiSvc.inf サービス プロバイダー セクション
+# <a name="mapisvcinf-service-provider-sections"></a>MapiSvc.inf サービス プロバイダーセクション
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Mapisvc.inf には、メッセージ サービスの前のセクションで**プロバイダー**のエントリに記載されているエントリのそれぞれのサービス プロバイダーの 1 つのセクションが含まれています。 **サービス**プロバイダー セクションと似ていますがメッセージ サービスのセクションでセクションの両方の種類には、この形式のエントリが含まれています。 
   

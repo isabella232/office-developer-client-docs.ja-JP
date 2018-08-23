@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: cb91ae1d-1ea8-4f02-a1f1-f2a356a71477
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e1f15a5f031f5c5a9568b8a36722eaac011b814c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801279"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI が、アドレス帳] ダイアログ ボックスで、オプション ボタン コントロールをアクティブにするために呼び出すコールバック関数を定義します。 このボタンは、通常、**詳細**ボタンです。 
   
@@ -43,7 +43,7 @@ SCODE (STDMETHODCALLTYPE FAR * LPFNBUTTON)(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   

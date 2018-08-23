@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4e704044-5230-4521-a0d2-b7c2f981c954
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c0653caec5f3cac531206e1bb9c4330cac5f3133
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801158"
 ---
-# <a name="iprofsect--imapiprop"></a>IProfSect: IMAPIProp
+# <a name="iprofsect--imapiprop"></a>IProfSect : IMAPIProp
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロファイル セクション オブジェクトのプロパティを使用します。 
   
@@ -41,10 +41,10 @@ ms.locfileid: "19801158"
 
 このインターフェイスには、固有のメソッドがありません。
   
-|**必要なプロパティ**|**Access**|
+|**必須のプロパティ**|**Access**|
 |:-----|:-----|
-|**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
-|**PR_PROFILE_NAME**([PidTagProfileName](pidtagprofilename-canonical-property.md))  <br/> |値の取得のみ可能です。  <br/> |
+|**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_PROFILE_NAME**([PidTagProfileName](pidtagprofilename-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 

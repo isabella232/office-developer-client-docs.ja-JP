@@ -1,5 +1,5 @@
 ---
-title: PidTagAccess の標準的なプロパティ
+title: PidTagAccess 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8c8a882e-62c1-4c57-8c63-ee5849f656b0
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: bb00d4e0e1437f9b3c13ac5e7d0a9dc4f3610d32
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,29 +19,29 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802416"
 ---
-# <a name="pidtagaccess-canonical-property"></a>PidTagAccess の標準的なプロパティ
+# <a name="pidtagaccess-canonical-property"></a>PidTagAccess 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オブジェクトのクライアントに利用可能な操作を示すフラグのビットマスクを格納します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ACCESS  <br/> |
+|関連するプロパティ:  <br/> |PR_ACCESS  <br/> |
 |識別子:  <br/> |0x0FF4  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |コントロール プロパティにアクセスします。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、クライアントに対しては読み取り専用です。 ビットごと**または**次の表の値を 0 個以上の必要があります。 
   
 |**名前**|**値**|**説明**|
 |:-----|:-----|:-----|
 |MAPI_ACCESS_MODIFY  <br/> |0x00000001  <br/> |書き込み  <br/> |
-|MAPI_ACCESS_READ  <br/> |0x00000002  <br/> |読み取り  <br/> |
+|MAPI_ACCESS_READ  <br/> |0x00000002  <br/> |Read  <br/> |
 |MAPI_ACCESS_DELETE  <br/> |0x00000004  <br/> |削除  <br/> |
 |MAPI_ACCESS_CREATE_HIERARCHY  <br/> |0x00000008  <br/> |フォルダー階層のサブフォルダーを作成します。  <br/> |
 |MAPI_ACCESS_CREATE_CONTENTS  <br/> |0x00000010  <br/> |内容のメッセージを作成します。  <br/> |
@@ -79,7 +79,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

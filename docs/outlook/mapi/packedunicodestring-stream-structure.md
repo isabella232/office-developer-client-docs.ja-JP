@@ -17,7 +17,7 @@ ms.locfileid: "19801710"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 PackedUnicodeString ストリームの構造体には、Unicode (utf-16) 形式文字列にはが含まれています。 この文字列は null 文字で終了していません。 このストリーム内のデータ要素は、以下に示す順序で互いのすぐ後、リトル エンディアンのバイト順で格納されます。 存在する実際のデータ要素は、utf-16 形式で文字列の長さによって異なります。
   
@@ -39,7 +39,7 @@ PackedUnicodeString ストリームの構造体には、Unicode (utf-16) 形式�
 
 
 
-[Outlook アイテムおよびフィールド](outlook-items-and-fields.md)
+[Outlook のアイテムとフィールド](outlook-items-and-fields.md)
   
 [ストリームの構造](stream-structures.md)
   

@@ -15,7 +15,7 @@ ms.locfileid: "19801080"
 ---
 # <a name="initializing-a-wrapped-pst-store-provider"></a>ラップされた PST ストア プロバイダーを初期化しています。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ラップされた個人用フォルダー ファイル (PST) のストア プロバイダーを実装するためのエントリ ポイントとして、 **[MSProviderInit](msproviderinit.md)** 関数を使用して、ラップされた PST ストア プロバイダーを初期化する必要があります。 プロバイダーの DLL が初期化された後、 **[MSGSERVICEENTRY](msgserviceentry.md)** 関数は、ラップされた PST ストア プロバイダーを構成します。 
   
@@ -243,9 +243,9 @@ HRESULT STDAPICALLTYPE ServiceEntry (
 
 ## <a name="see-also"></a>関連項目
 
-- [サンプルの PST ストア プロバイダーをラップ](about-the-sample-wrapped-pst-store-provider.md)
-- [PST ストア プロバイダーをラップして、サンプルをインストールします。](installing-the-sample-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーのサンプルについて](about-the-sample-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーのサンプルのインストール](installing-the-sample-wrapped-pst-store-provider.md)
 - [ラップされた PST ストア プロバイダーへのログオン](logging-on-to-a-wrapped-pst-store-provider.md)
-- [ラップされた PST ストア プロバイダーを使用します。](using-a-wrapped-pst-store-provider.md)
-- [ラップされた PST ストア プロバイダーをシャット ダウン](shutting-down-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーの使用](using-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーのシャットダウン](shutting-down-a-wrapped-pst-store-provider.md)
 

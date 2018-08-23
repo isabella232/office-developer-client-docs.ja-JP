@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 73752f57-6fbc-0201-bf95-0e75c56c04e6
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 4e7df570851aa515e07117d05103f7c0631c90f9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801205"
 ---
-# <a name="ipstx--iunknown"></a>IPSTX: IUnknown
+# <a name="ipstx--iunknown"></a>IPSTX : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このインターフェイスは、 **[IOSTX](iostxiunknown.md)** インターフェイスを使用するレプリケーションを実行するときに、ヘルパー機能を提供します。 
   

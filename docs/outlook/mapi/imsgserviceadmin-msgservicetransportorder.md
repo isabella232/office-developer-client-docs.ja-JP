@@ -23,7 +23,7 @@ ms.locfileid: "19800995"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 どのトランスポートにメッセージを配信するプロバイダーの呼び出し順序を設定します。
   
@@ -35,7 +35,7 @@ HRESULT MsgServiceTransportOrder(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cUID_
   
@@ -63,7 +63,7 @@ MAPI_E_NOT_FOUND
   
 > _LpUIDList_パラメーターで渡された[MAPIUID](mapiuid.md)の構造体の 1 つ以上は、プロファイルの現在のトランスポート プロバイダーを参照しません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgServiceAdmin::MsgServiceTransportOrder**メソッドは、プロファイルに、トランスポート プロバイダーの配信順序を設定します。 _LpUIDList_パラメーターには、 [IMsgServiceAdmin から返されるテーブルの**PR_PROVIDER_UID** ([PidTagProviderUid](pidtagprovideruid-canonical-property.md)) のプロパティから取得したトランスポート プロバイダーのエントリの識別子の一覧が含まれている必要があります。GetProviderTable](imsgserviceadmin-getprovidertable.md)メソッドです。 クライアント アプリケーションは、 _lpUIDList_の完全なリストを渡す必要があります。
   
@@ -75,5 +75,5 @@ MAPI_E_NOT_FOUND
 
 [MAPIUID](mapiuid.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 

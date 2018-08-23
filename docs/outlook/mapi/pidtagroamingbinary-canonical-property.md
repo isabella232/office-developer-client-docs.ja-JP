@@ -1,5 +1,5 @@
 ---
-title: PidTagRoamingBinary の標準的なプロパティ
+title: PidTagRoamingBinary 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f06bf063-fc95-46f9-b5fa-3f127a59ebda
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 97650550704ba844f10131f1a3045ebbfaaaefff
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,22 +15,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803374"
 ---
-# <a name="pidtagroamingbinary-canonical-property"></a>PidTagRoamingBinary の標準的なプロパティ
+# <a name="pidtagroamingbinary-canonical-property"></a>PidTagRoamingBinary 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **IPM のサブクラスに関連付けられているメッセージ ストリームが含まれています。構成**クラス。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ROAMING_BINARYSTREAM  <br/> |
+|関連するプロパティ:  <br/> |PR_ROAMING_BINARYSTREAM  <br/> |
 |識別子:  <br/> |0x7C09  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |Configuration  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティには、IPM、**に関連付けられているデータ ストリームが含まれています。構成**メッセージ クラスのメッセージです。 ストリームの形式は、メッセージ クラスによって異なります。 たとえば、クラス型 IPM の**のメッセージです。Configuration.Autocomplete**ように、[オートコンプリートのストリーム](autocomplete-stream.md)としてフォーマットされます。
   
@@ -64,7 +64,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

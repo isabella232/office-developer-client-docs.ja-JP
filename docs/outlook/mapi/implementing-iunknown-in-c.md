@@ -1,5 +1,5 @@
 ---
-title: C の IUnknown の実装
+title: C での IUnknown の実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,9 +15,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800946"
 ---
-# <a name="implementing-iunknown-in-c"></a>C の IUnknown の実装
+# <a name="implementing-iunknown-in-c"></a>C での IUnknown の実装
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 C の[IUnknown::QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx)メソッドの実装は、C++ の実装に非常に似ています。 実装に 2 つの基本的な手順があります。 
   
@@ -132,6 +132,6 @@ STDMETHODIMP_(ULONG) STATUS_Release(LPMYSTATUSOBJ lpMyObj)
 
 ## <a name="see-also"></a>関連項目
 
-- [MAPI オブジェクトを実装します。](implementing-mapi-objects.md)
-- [IUnknown インターフェイスを実装します。](implementing-the-iunknown-interface.md)
+- [MAPI オブジェクトの実装](implementing-mapi-objects.md)
+- [IUnknown インターフェイスの実装](implementing-the-iunknown-interface.md)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 01fa459f-597d-4b16-b340-a79fb270cd71
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8c246968dcac719a8ee8177e20e802f9c7033435
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801701"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ファイルの内容にアクセスするのには OLE **IStream**オブジェクトを初期化します。 この関数は、パスとファイルの拡張子、そのため、 [OpenStreamOnFileW](openstreamonfilew.md)では、この関数の Unicode バージョンの使用を含むファイル名が推奨されている ANSI 文字列を受け取ります。
   
@@ -44,7 +44,7 @@ HRESULT STDMETHODCALLTYPE OpenStreamOnFile(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpAllocateBuffer_
   
@@ -104,7 +104,7 @@ MAPI_E_NOT_FOUND
   
 > 指定のファイルが存在しません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **OpenStreamOnFile**の関数には、SOF_UNIQUEFILENAME フラグの設定によって、2 つの重要な用途があります。 **OpenStreamOnFile**が**IStream**オブジェクトの例では、 **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) のプロパティに**IStream を使用して添付ファイルの内容をコピーするのには、既存のファイルを開きますこのフラグが設定されていない場合:: CopyTo**メソッドです。 ここで_場合_のパラメーターは、ファイルのファイル名とパスを指定します。 
   

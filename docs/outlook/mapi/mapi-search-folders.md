@@ -19,7 +19,7 @@ ms.locfileid: "19801443"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 �������ʂ̃t�H���[�[�ł́A���ۂ̃��b�Z�[�W�ł͂Ȃ��A��ʓI�ȃt�H���](imapifolder-createfolder.md)�[��̃��b�Z�[�W�ւ̃����N��ێ����܂��B�N���C�A���g�ł́A  _ulFolderType_�p�����[�^�[�Ƃ��� FOLDER_SEARCH [IMAPIFolder::CreateFolder](imapifolder-createfolder.md)���\�b�h��g�p���Č������ʂ̃t�H���[�[��쐬���܂��B�N���C�A���g�̃Z�b�g�A�b�v�ƌ��������K�p���āA�������ʂ̃t�H���](imapicontainer-setsearchcriteria.md)�[����͂���: ���[�������̓���������郁�b�Z�[�W��t�B���^�[�������܂��B���������[IMAPIContainer::SetSearchCriteria](imapicontainer-setsearchcriteria.md)���\�b�h��g�p���ăZ�b�g�A�b�v���܂��B�N���C�A���g�ł́A���������K�p���āA [SetSearchCriteria](srestriction.md)�ɓn����\�� 1 �܂��͕�����**SRestriction**�\����쐬���܂��B **SetSearchCriteria**������h���C��������t�H���_�[�̈ꗗ����уZ�b�g��w�肷��t���O�̌�������s������@�𐧌䂵�܂��B 
   

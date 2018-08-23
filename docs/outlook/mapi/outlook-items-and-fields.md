@@ -1,5 +1,5 @@
 ---
-title: Outlook アイテムおよびフィールド
+title: Outlook のアイテムとフィールド
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,11 +13,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801706"
 ---
-# <a name="outlook-items-and-fields"></a>Outlook アイテムおよびフィールド
+# <a name="outlook-items-and-fields"></a>Outlook のアイテムとフィールド
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 Microsoft Outlook には、(たとえば、メール アイテム、予定、連絡先、タスク、およびメモ) は、その機能に特化している項目の種類が用意されています。 Outlook では、一般的には組み込みのフィールドと呼ばれます、項目の種類ごとの標準フィールドが用意されています。 Outlook では、一般的にはユーザー定義フィールドと呼ばれます、カスタム フィールドを作成することもできます。 各フィールドは、データ型と値に関連付けられます。 データ型には、**通貨****日付/時刻**、**期間**、**整数**、**キーワード**、および**テキスト**があります。 ユーザーは、Outlook のフォーム デザイナーを使用してユーザー設定フィールドを定義できます。
   
@@ -35,7 +35,7 @@ Microsoft Outlook には、(たとえば、メール アイテム、予定、連
 
 
 
-[新しいユーザー定義フィールドの定義を追加します。](how-to-add-a-definition-for-a-new-user-defined-field.md)
+[新しいユーザー定義フィールドの定義を追加する](how-to-add-a-definition-for-a-new-user-defined-field.md)
   
 [PropertyDefinition ストリームのサンプル](propertydefinition-stream-sample.md)
   

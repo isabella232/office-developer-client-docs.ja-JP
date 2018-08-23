@@ -21,7 +21,7 @@ ms.locfileid: "19801382"
 
  
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アルファベット順の次のエントリには、MAPI の関数、コールバック、およびマクロのドキュメントが含まれています。 
   
@@ -71,7 +71,7 @@ ms.locfileid: "19801382"
 |[MAPIAllocateBuffer](mapiallocatebuffer.md) <br/> |[MAPIAllocateMore](mapiallocatemore.md) <br/> |
 |[MAPICrashRecovery](mapicrashrecovery.md) <br/> |[MAPIDeInitIdle](mapideinitidle.md) <br/> |
 |[MAPIFreeBuffer](mapifreebuffer.md) <br/> |[MAPIGetDefaultMalloc](mapigetdefaultmalloc.md) <br/> |
-|[生じます](mapiinitialize.md) <br/> |[MAPIInitIdle](mapiinitidle.md) <br/> |
+|[MAPIInitialize](mapiinitialize.md) <br/> |[MAPIInitIdle](mapiinitidle.md) <br/> |
 |[MAPILogonEx](mapilogonex.md) <br/> |[MAPIOFFLINE_AGGREGATEINFO](mapioffline_aggregateinfo.md) <br/> |
 |[MAPIOFFLINE_CREATEINFO](mapioffline_createinfo.md) <br/> |[MAPIOpenFormMgr](mapiopenformmgr.md) <br/> |
 |[MAPIOpenLocalFormContainer](mapiopenlocalformcontainer.md) <br/> |[MAPIReallocateBuffer](mapireallocatebuffer.md) <br/> |
@@ -87,7 +87,7 @@ ms.locfileid: "19801382"
 |[OpenTnefStream](opentnefstream.md) <br/> |[OpenTnefStreamEx](opentnefstreamex.md) <br/> |
 |[PpropFindProp](ppropfindprop.md) <br/> |[PreprocessMessage](preprocessmessage.md) <br/> |
 |[PropCopyMore](propcopymore.md) <br/> |[RemovePreprocessInfo](removepreprocessinfo.md) <br/> |
-|[へ](rtfsync.md) <br/> |[ScBinFromHexBounded](scbinfromhexbounded.md) <br/> |
+|[RTFSync](rtfsync.md) <br/> |[ScBinFromHexBounded](scbinfromhexbounded.md) <br/> |
 |[ScCopyNotifications](sccopynotifications.md) <br/> |[ScCopyProps](sccopyprops.md) <br/> |
 |[ScCountNotifications](sccountnotifications.md) <br/> |[ScCountProps](sccountprops.md) <br/> |
 |[ScCreateConversationIndex](sccreateconversationindex.md) <br/> |[ScDupPropset](scduppropset.md) <br/> |

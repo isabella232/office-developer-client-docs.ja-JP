@@ -1,5 +1,5 @@
 ---
-title: MAPI プロバイダーおよびコンポーネントの相互作用
+title: MAPI プロバイダーとコンポーネントの相互作用
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801098"
 ---
-# <a name="interaction-of-mapi-providers-and-components"></a>MAPI プロバイダーおよびコンポーネントの相互作用
+# <a name="interaction-of-mapi-providers-and-components"></a>MAPI プロバイダーとコンポーネントの相互作用
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 どのような種類の MAPI サービス プロバイダーは、その他の MAPI コンポーネントを操作する特定のガイドラインに従う必要があります。 各サービス プロバイダーにする必要があります。
   

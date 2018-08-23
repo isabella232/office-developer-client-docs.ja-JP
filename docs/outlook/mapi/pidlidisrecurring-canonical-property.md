@@ -1,5 +1,5 @@
 ---
-title: PidLidIsRecurring の標準的なプロパティ
+title: PidLidIsRecurring 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1f8ecc22-badc-4278-a3c6-fcd398f5bf24
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c21f2885f7e9475c2149e42e2a8d947311916b4f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802025"
 ---
-# <a name="pidlidisrecurring-canonical-property"></a>PidLidIsRecurring の標準的なプロパティ
+# <a name="pidlidisrecurring-canonical-property"></a>PidLidIsRecurring 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オブジェクトが定期的に関連付けられているかどうかを指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |LID_IS_RECURRING  <br/> |
+|関連するプロパティ:  <br/> |LID_IS_RECURRING  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Meeting  <br/> |
 |長い ID (LID):  <br/> |0x00000005  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 TRUE の値は、オブジェクトが一連の定期的なまたは例外 (孤立したインスタンスを含む) のいずれかを表すことを示します。 値 FALSE、または、このプロパティがない場合は、オブジェクトが 1 つのインスタンスを表すことを示します。 このプロパティは、 **PR_RECURRING** ([PidLidRecurring](pidlidrecurring-canonical-property.md)) のプロパティの違いに注意してください。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

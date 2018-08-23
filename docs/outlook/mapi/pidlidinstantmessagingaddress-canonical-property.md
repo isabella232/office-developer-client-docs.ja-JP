@@ -1,5 +1,5 @@
 ---
-title: PidLidInstantMessagingAddress の標準的なプロパティ
+title: PidLidInstantMessagingAddress 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ddc0095-cd65-431c-afa9-f2fb5a7ac382
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 091c57f9bc68a43bcfa1eda49190c19a7293e2f0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,21 +19,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802012"
 ---
-# <a name="pidlidinstantmessagingaddress-canonical-property"></a>PidLidInstantMessagingAddress の標準的なプロパティ
+# <a name="pidlidinstantmessagingaddress-canonical-property"></a>PidLidInstantMessagingAddress 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 連絡先のインスタント メッセージング アドレスを指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidInstMsg  <br/> |
+|関連するプロパティ:  <br/> |dispidInstMsg  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Address  <br/> |
 |長い ID (LID):  <br/> |0x00008062  <br/> |
-|データを入力します。  <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |連絡先  <br/> |
+|データの種類 :   <br/> |PT_UNICODE  <br/> |
+|領域:  <br/> |Contact  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
@@ -61,7 +61,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

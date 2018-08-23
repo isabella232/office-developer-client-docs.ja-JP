@@ -23,7 +23,7 @@ ms.locfileid: "19801115"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム オブジェクトでは、前のエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。 
   
@@ -35,7 +35,7 @@ HRESULT GetLastError(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _hResult_
   
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > MAPI_UNICODE フラグが設定されたアドレス帳プロバイダーが Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、アドレス帳プロバイダーは、Unicode だけをサポートしています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム オブジェクトでは、失敗したメソッド呼び出しに関する情報を提供する**IPersistMessage::GetLastError**メソッドを実装します。 フォーム ビューアーは、ダイアログ ボックスに[MAPIERROR](mapierror.md)構造体のデータを含めることによって、ユーザーにエラーに関する詳細な情報を提供できます。 
   
@@ -83,5 +83,5 @@ MAPI_E_BAD_CHARWIDTH
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 

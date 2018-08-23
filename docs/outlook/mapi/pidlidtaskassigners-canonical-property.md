@@ -1,5 +1,5 @@
 ---
-title: PidLidTaskAssigners の標準的なプロパティ
+title: PidLidTaskAssigners 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 07500bd0-bcff-4b03-8ed3-80508875e253
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 89e0b6eae35de9e40dba411afb82e19aa81fb635
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802183"
 ---
-# <a name="pidlidtaskassigners-canonical-property"></a>PidLidTaskAssigners の標準的なプロパティ
+# <a name="pidlidtaskassigners-canonical-property"></a>PidLidTaskAssigners 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 タスク assigners を表すエントリのスタックが含まれています。 最新作業仕事を割り当てた人は、スタックの一番上に表示されます。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidTaskMyDelegators  <br/> |
+|関連するプロパティ:  <br/> |dispidTaskMyDelegators  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Task  <br/> |
 |長い ID (LID):  <br/> |0x00008117  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントでは、仕事の依頼を受信すると、 [[MS OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)、タスクの送信者を表すエントリにどのような構造が定義されている、このプロパティに追加します。 クライアントは、タスクの辞退を受信すると、クライアントは、このプロパティからタスクの最後の仕事を割り当てた人エントリを削除します。 クライアントは、タスクの応答を送信するクライアントは、前回作業仕事を割り当てた人にこのプロパティの値を一覧表示するに送信します。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

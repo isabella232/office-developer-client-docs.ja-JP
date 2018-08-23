@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 230c66c4-ab04-4fa6-946f-9f4b704f2842
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: cf1febe89c49b29cdfaf8d27760c4fb27b4c4990
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801655"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 操作のメッセージ ストア プロバイダーを初期化します。
   
@@ -47,7 +47,7 @@ HRESULT MSProviderInit(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _hInstance_
   
@@ -99,7 +99,7 @@ MAPI_E_VERSION
   
 > MAPI によって使用されている SPI のバージョンは、このプロバイダーで使用されている SPI との互換性ではありません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI は、クライアント ログオンの後、メッセージ ストア プロバイダーを初期化するために**MSProviderInit**エントリ ポイント関数が呼び出されます。 
   
@@ -121,7 +121,7 @@ Mapix.dll で、プロバイダーの DLL をリンクしないようにしま�
 
 [ABProviderInit](abproviderinit.md)
   
-[IMSProvider: IUnknown](imsprovideriunknown.md)
+[IMSProvider : IUnknown](imsprovideriunknown.md)
   
 [XPProviderInit](xpproviderinit.md)
 

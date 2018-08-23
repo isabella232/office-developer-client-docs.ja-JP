@@ -1,5 +1,5 @@
 ---
-title: 生じます
+title: MAPIInitialize
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b9584226-79d2-4d83-8f31-dbfbc50f16c5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d22c24088960debcd18ccd818dad23656f6a01f2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801513"
 ---
-# <a name="mapiinitialize"></a>生じます
+# <a name="mapiinitialize"></a>MAPIInitialize
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI サブシステムの参照カウントをインクリメントし、MAPI DLL のグローバル データを初期化します。 
   
@@ -39,7 +39,7 @@ HRESULT MAPIInitialize(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpMapiInit_
   
@@ -51,7 +51,7 @@ S_OK
   
 > MAPI サブシステムの初期化に成功しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI のサブシステム、および[MAPIUninitialize](mapiuninitialize.md)関数をデクリメントの MAPI リファレンス カウントが**生じます**関数単位の内部参照カウントします。 したがって、1 つの関数への呼び出しの数は、他の呼び出しの数に等しくなければなりません。 **生じます**は、MAPI が以前に初期化されていない場合は S_OK を返します。 
   

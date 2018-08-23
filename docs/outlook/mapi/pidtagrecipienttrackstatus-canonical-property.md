@@ -1,5 +1,5 @@
 ---
-title: PidTagRecipientTrackStatus の標準的なプロパティ
+title: PidTagRecipientTrackStatus 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d619b5e7-2867-44fc-9b42-123bb1bf7bde
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: cbc934eec5331a0302ba222108ee92a0dc696b1f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803307"
 ---
-# <a name="pidtagrecipienttrackstatus-canonical-property"></a>PidTagRecipientTrackStatus の標準的なプロパティ
+# <a name="pidtagrecipienttrackstatus-canonical-property"></a>PidTagRecipientTrackStatus 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 出席者によって返される応答のステータスを示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_RECIPIENT_TRACKSTATUS  <br/> |
+|関連するプロパティ:  <br/> |PR_RECIPIENT_TRACKSTATUS  <br/> |
 |識別子:  <br/> |0x5FFF  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |トランスポートにおける受取人  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この値が設定されていない場合 respNone を使用することを前提する必要があります。 それ以外の場合、次のいずれかである必要があります。
   
@@ -79,7 +79,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

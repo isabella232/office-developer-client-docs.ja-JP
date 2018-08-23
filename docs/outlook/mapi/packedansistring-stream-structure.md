@@ -17,7 +17,7 @@ ms.locfileid: "19801707"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 PackedAnsiString ストリームの構造体には、ANSI 形式 Microsoft Outlook を実行しているコンピューターの ANSI コード ページに基づいて、文字列にはが含まれています。 この文字列は null 文字で終了していません。 このストリーム内のデータ要素は、以下に示す順序で互いのすぐ後、リトル エンディアンのバイト順で格納されます。 存在する実際のデータ要素は、ANSI 形式の文字列の長さによって異なります。
   
@@ -39,7 +39,7 @@ PackedAnsiString ストリームの構造体には、ANSI 形式 Microsoft Outlo
 
 
 
-[Outlook アイテムおよびフィールド](outlook-items-and-fields.md)
+[Outlook のアイテムとフィールド](outlook-items-and-fields.md)
   
 [ストリームの構造](stream-structures.md)
   

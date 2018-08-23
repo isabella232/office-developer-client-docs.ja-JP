@@ -23,7 +23,7 @@ ms.locfileid: "19801234"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルの行の通知を送信します。
   
@@ -67,5 +67,5 @@ S_OK
   
 [TABLE_NOTIFICATION](table_notification.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

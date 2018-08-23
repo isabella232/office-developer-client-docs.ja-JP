@@ -23,7 +23,7 @@ ms.locfileid: "19801245"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 トランスポート プロバイダーは、MAPI スプーラーに送信メッセージの処理が完了したことを通知します。
   
@@ -34,7 +34,7 @@ HRESULT EndMessage(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulMsgRef_
   
@@ -62,7 +62,7 @@ S_OK
   
 > 呼び出しが成功し、予期される値または値が返されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI スプーラーは、拡張の配信または配信不能の情報を提供することに関連する処理が完了した後に、 **IXPLogon::EndMessage**メソッドを呼び出します。 
   
@@ -80,5 +80,5 @@ MAPI スプーラーは、トランスポート プロバイダーに渡され�
   
 [IXPLogon::SubmitMessage](ixplogon-submitmessage.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 

@@ -1,5 +1,5 @@
 ---
-title: PidLidFExceptionalAttendees の標準的なプロパティ
+title: PidLidFExceptionalAttendees 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f1f489a3-e83a-4e96-bf9a-d98bc17d29f5
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7c7f654d42df7856b0e69bf276a763ccd29d1d87
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801961"
 ---
-# <a name="pidlidfexceptionalattendees-canonical-property"></a>PidLidFExceptionalAttendees の標準的なプロパティ
+# <a name="pidlidfexceptionalattendees-canonical-property"></a>PidLidFExceptionalAttendees 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このプロパティは、1 つまたは複数の例外の定期的な予定表オブジェクトを少なくとも 1 つの RecipientRow には、埋め込まれている例外メッセージの少なくとも 1 つかどうかを示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidFExceptionalAttendees  <br/> |
+|関連するプロパティ:  <br/> |dispidFExceptionalAttendees  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x0000822B  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 値の false の場合、または、このプロパティがない場合は、カレンダー オブジェクトが例外を含んでいないか、または埋め込まれている例外メッセージは、RecipientRows のことを示します。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

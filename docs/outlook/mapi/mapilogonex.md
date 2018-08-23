@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 98091e5b-1abd-4814-9c7a-583b420ee11d
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 08782fe616fe260388cff8982dfbb09951453a00
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801493"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージング システムとのセッションに、クライアント アプリケーションを記録します。 
   
@@ -43,7 +43,7 @@ HRESULT MAPILogonEx(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -135,7 +135,7 @@ MAPI_E_USER_CANCEL
   
 > ユーザー操作がキャンセルされました、通常ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI クライアント アプリケーションでは、メッセージング システムとのセッションにログオンする MAPILogonEx 関数を呼び出します。 渡されして、MAPI の呼び出しから返されるすべての文字列は null で終わるが現在の文字セットで指定する必要がありますや、コードの呼び出し元のクライアントやプロバイダーのオペレーティング システムのページ。
   

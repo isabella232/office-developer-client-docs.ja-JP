@@ -19,7 +19,7 @@ ms.locfileid: "19801395"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI オブジェクトは、オブジェクト クラスの C++ または C のデータ構造体の 1 つまたは複数の MAPI インターフェイス、または関連する関数のコレクションから継承します。 関連する関数のこれらのコレクションは、C++ 開発者にとって、純粋仮想関数と呼ばれます。 純粋仮想関数では、MAPI には、のみ関数プロトタイプ実装ではなくが用意されています。 クライアント アプリケーション、サービス プロバイダー、または MAPI を提供するこの実装はメッセージング API の関数の説明に準拠しているインターフェイスを継承するオブジェクト クラスを作成して予定です。 MAPI インターフェイスは、継承クラスでのみインスタンス化できます。
   
@@ -33,10 +33,10 @@ MAPI オブジェクトは、オブジェクト クラスの C++ または C の
 
 
 
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
   
-[IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)
+[IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 
 
-[MAPI �̊T�O](mapi-concepts.md)
+[MAPI の概念](mapi-concepts.md)
 

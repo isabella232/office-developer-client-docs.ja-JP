@@ -1,5 +1,5 @@
 ---
-title: MAPI オブジェクトを実装します。
+title: MAPI オブジェクトの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800931"
 ---
-# <a name="implementing-mapi-objects"></a>MAPI オブジェクトを実装します。
+# <a name="implementing-mapi-objects"></a>MAPI オブジェクトの実装
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI オブジェクトは、C++ のクラスや言語によっては、C のデータ構造を使用して実装できる API のクライアントの設定やサービス プロバイダーを使用します。 MAPI サービス プロバイダー インターフェイスと C または C++ でサービス プロバイダーを記述できます。クライアント アプリケーションは、C または C++ を使用することもできます。 可能であれば、クライアントとオブジェクト指向プログラミング ・ インタ フェースを使用するサービス プロバイダーは、C を使用する必要があります。 
   

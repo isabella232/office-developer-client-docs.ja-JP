@@ -1,5 +1,5 @@
 ---
-title: アドレス帳プロバイダーのエントリ ポイント関数を実装します。
+title: アドレス帳プロバイダー エントリ ポイント関数の実装
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 9375b351-1c84-4728-bcdf-e3e7a44820ed
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b60a80bc0ede0c2800f6cfd98a98f498b93a1d8c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19800924"
 ---
-# <a name="implementing-an-address-book-provider-entry-point-function"></a>アドレス帳プロバイダーのエントリ ポイント関数を実装します。
+# <a name="implementing-an-address-book-provider-entry-point-function"></a>アドレス帳プロバイダー エントリ ポイント関数の実装
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロバイダーとその他のすべてのプロファイルの一部である場合、クライアント アプリケーションの呼び出し[MAPILogonEx](mapilogonex.md)アドレス帳プロバイダーが含まれているプロファイルを使用してセッションを開始するのには、MAPI を読み込みます。 MAPI は、プロファイルを参照して、プロバイダーのエントリ ポイント関数の名前を学習します。 この関数ではありません、DLL エントリ ポイント関数と同じです。**DllMain**の Win32 のドキュメントでのドキュメントを参照してください。 
   

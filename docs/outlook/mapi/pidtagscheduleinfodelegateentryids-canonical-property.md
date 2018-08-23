@@ -1,5 +1,5 @@
 ---
-title: PidTagScheduleInfoDelegateEntryIds の標準的なプロパティ
+title: PidTagScheduleInfoDelegateEntryIds 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c178a4e4-6f4c-409c-9db3-f6338bd4f40f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8ea60fb989cd85b23e6dd9302bc03a9b5befd20f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803453"
 ---
-# <a name="pidtagscheduleinfodelegateentryids-canonical-property"></a>PidTagScheduleInfoDelegateEntryIds の標準的なプロパティ
+# <a name="pidtagscheduleinfodelegateentryids-canonical-property"></a>PidTagScheduleInfoDelegateEntryIds 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 デリゲートの**エントリ Id**が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_SCHDINFO_DELEGATE_ENTRYIDS  <br/> |
+|関連するプロパティ:  <br/> |PR_SCHDINFO_DELEGATE_ENTRYIDS  <br/> |
 |識別子:  <br/> |0x6845  <br/> |
-|データを入力します。  <br/> |PT_MV_BINARY  <br/> |
+|データの種類 :   <br/> |PT_MV_BINARY  <br/> |
 |領域:  <br/> |空き/予約済み  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 各エントリには、各デリゲートのアドレス帳のエントリの**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティの値を含める必要があります。 代理人の情報オブジェクトにこのプロパティを設定する必要があります。
   
@@ -68,7 +68,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

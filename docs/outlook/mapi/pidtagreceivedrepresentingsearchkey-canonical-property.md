@@ -1,5 +1,5 @@
 ---
-title: PidTagReceivedRepresentingSearchKey の標準的なプロパティ
+title: PidTagReceivedRepresentingSearchKey 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 234c797c-4a3c-4e05-be22-2a2fa377871f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 834e97d8bd7bf31a1241fcf0454594b015902673
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803270"
 ---
-# <a name="pidtagreceivedrepresentingsearchkey-canonical-property"></a>PidTagReceivedRepresentingSearchKey の標準的なプロパティ
+# <a name="pidtagreceivedrepresentingsearchkey-canonical-property"></a>PidTagReceivedRepresentingSearchKey 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 受信側のユーザーによって表されるメッセージのユーザーの検索キーが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_RCVD_REPRESENTING_SEARCH_KEY  <br/> |
+|関連するプロパティ:  <br/> |PR_RCVD_REPRESENTING_SEARCH_KEY  <br/> |
 |識別子:  <br/> |0x0052  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |Address  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、受信側のユーザーによって表されるメッセージング ユーザーのアドレスのプロパティのいずれかです。 承認または代理人の確認を担当するも、受信トランスポート プロバイダーによって設定しなければなりません。 表されるは、メッセージング ユーザーがない場合、このプロパティは**PR_RECEIVED_BY_SEARCH_KEY** ([PidTagReceivedBySearchKey](pidtagreceivedbysearchkey-canonical-property.md)) のプロパティに含まれている検索キーを設定する必要があります。
   
@@ -82,14 +82,14 @@ Mapitags.h
 
 
 
-[PidTagSearchKey の標準的なプロパティ](pidtagsearchkey-canonical-property.md)
+[PidTagSearchKey 標準プロパティ](pidtagsearchkey-canonical-property.md)
 
 
 [MAPI プロパティ](mapi-properties.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

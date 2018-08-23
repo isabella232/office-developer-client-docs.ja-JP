@@ -23,7 +23,7 @@ ms.locfileid: "19801253"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 システムがアイドル状態、優先度の低い操作を実行するトランスポート プロバイダーを有効にすることを示します。
   
@@ -45,7 +45,7 @@ S_OK
   
 > 呼び出しが成功し、予期される値または値が返されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI スプーラーは、時間の場合、システムがアイドル状態、現在のセッションを開いている[IXPProvider::TransportLogon](ixpprovider-transportlogon.md)メソッドの呼び出しで、XP_LOGON_SP フラグを渡すことによって、要求された場合定期的に、 **IXPLogon::Idle**メソッドを呼び出します。 システムがアイドル状態のときに、トランスポート プロバイダーは、適切な他の呼び出し時にまたは定期的に発生する必要があるバック グラウンドの操作を実行できます。 
   
@@ -55,5 +55,5 @@ MAPI スプーラーは、時間の場合、システムがアイドル状態、
 
 [IXPProvider::TransportLogon](ixpprovider-transportlogon.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 

@@ -23,7 +23,7 @@ ms.locfileid: "19801100"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 新しいメッセージを初期化します。
   
@@ -34,7 +34,7 @@ HRESULT InitNew(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _pMessageSite_
   
@@ -50,7 +50,7 @@ S_OK
   
 > 新しいメッセージが正常に初期化しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォーム ビューアーは、ユーザーがフォームを処理するメッセージ クラスが所属する新しいメッセージを書き込むときに、 **IPersistMessage::InitNew**メソッドを呼び出します。 フォーム オブジェクトに有効なユーザー インターフェイスのポインターがある場合は、メッセージ オブジェクトのユーザー インターフェイスが表示されます。 
   
@@ -92,5 +92,5 @@ S_OK
 
 
 
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 

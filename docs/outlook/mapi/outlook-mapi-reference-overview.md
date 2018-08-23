@@ -1,5 +1,5 @@
 ---
-title: Outlook MAPI リファレンスの概要
+title: Outlook MAPI リファレンス概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,9 +15,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801700"
 ---
-# <a name="outlook-mapi-reference-overview"></a>Outlook MAPI リファレンスの概要
+# <a name="outlook-mapi-reference-overview"></a>Outlook MAPI リファレンス概要
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このトピックでは、Outlook 2013 MAPI のリファレンス ドキュメントの概要情報を提供します。
   
@@ -46,7 +46,7 @@ MAPI は MAPI ストア内のデータへの低レベルのアクセスや、ト
     
 Outlook の MAPI アプリケーションの開発に慣れていない場合は、次のトピックを参照してください。
   
-- [API または Outlook 2013 のためのソリューションを開発するためのテクノロジーを選択](http://msdn.microsoft.com/en-us/library/jj900714.aspx)
+- [Outlook 2013 用のソリューションを開発するための API またはテクノロジの選択](http://msdn.microsoft.com/en-us/library/jj900714.aspx)
     
 - [�悭�g����w�b�_�[ �t�@�C��](commonly-used-header-files.md)
     
@@ -64,7 +64,7 @@ Outlook の MAPI アプリケーションの開発に慣れていない場合は
     
 ## <a name="see-also"></a>関連項目
 
-- [Outlook �� MAPI �Q�Ƃ̎g�p��J�n���܂��B](getting-started-with-the-outlook-mapi-reference.md)
+- [Outlook MAPI リファレンスの概要](getting-started-with-the-outlook-mapi-reference.md)
 - [MAPI Samples](mapi-samples.md)
 - [MAPI �̊T�O](mapi-concepts.md)
 

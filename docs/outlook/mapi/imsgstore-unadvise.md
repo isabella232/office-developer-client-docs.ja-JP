@@ -23,7 +23,7 @@ ms.locfileid: "19801041"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [IMsgStore::Advise](imsgstore-advise.md)メソッドへの呼び出しは、設定済みの通知の送信をキャンセルします。 
   
@@ -33,7 +33,7 @@ HRESULT Unadvise(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulConnection_
   
@@ -45,7 +45,7 @@ S_OK
   
 > 登録は取り消されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgStore::Unadvise**メソッドは、通知の登録をキャンセルします。 **Unadvise**リリースがそのポインターを呼び出し元のシンクの登録に使用される**アドバイス**の呼び出しで、受け取ったに案内します。 
   

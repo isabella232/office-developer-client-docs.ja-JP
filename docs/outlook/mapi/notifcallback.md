@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 416008b4-13aa-4387-8c12-f8f2ca252391
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b14529e987b85d1dcbe3689d4e852a9efd39a396
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801664"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI 呼び出しをイベント通知を送信するコールバック関数を定義します。 このコールバック関数は、 [HrAllocAdviseSink](hrallocadvisesink.md)関数を呼び出すことによって作成されたアドバイズ シンク オブジェクトにラップするときにのみ使用できます。 
   
@@ -41,7 +41,7 @@ ULONG (STDAPICALLTYPE NOTIFCALLBACK)(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpvContext_
   
@@ -55,11 +55,11 @@ ULONG (STDAPICALLTYPE NOTIFCALLBACK)(
   
 > [out]この関数が書き込む場所[通知](notification.md)の構造体の配列をバッファーへのポインターには、イベント通知が含まれています。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 **NOTIFCALLBACK**関数のプロトタイプ用の有効な戻り値のセットは、クライアント アプリケーションまたはサービス プロバイダーでこの関数を実装するかどうかによって異なります。 クライアントは、S_OK を返す常にする必要があります。 プロバイダーには、S_OK または CALLBACK_DISCONTINUE のいずれかを返すことができます。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 CALLBACK_DISCONTINUE は、有効な戻り値の同期のコールバック関数だけです。MAPI すぐに停止するこの通知のコールバックの処理を要求します。 CALLBACK_DISCONTINUE が返された場合は、MAPI は[IMAPISupport::Notify](imapisupport-notify.md)すると、NOTIFY_CANCELED に_lpUlFlags_パラメーターを設定します。 
   

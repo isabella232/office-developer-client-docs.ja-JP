@@ -1,5 +1,5 @@
 ---
-title: MAPI にログオンします。
+title: MAPI へのログオン
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,9 +15,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801296"
 ---
-# <a name="logging-on-to-mapi"></a>MAPI にログオンします。
+# <a name="logging-on-to-mapi"></a>MAPI へのログオン
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **MAPILogonEx**関数を呼び出すことによって、MAPI サブシステムには、クライアント アプリケーションがログオンするとします。 詳細については、 [MAPILogonEx](mapilogonex.md)を参照してください。 **MAPILogonEx**では、プロファイルの選択と、プロファイル内の各サービス プロバイダーの構成を検証します。 構成にすると、MAPI は、メッセージ ストア プロバイダーを開始する前に、アドレス帳プロバイダーを起動します。 トランスポート プロバイダーは、そのサービスは、まず、必要なときに開始されます。 
   

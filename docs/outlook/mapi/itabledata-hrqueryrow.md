@@ -23,7 +23,7 @@ ms.locfileid: "19801231"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルの行を取得します。
   
@@ -35,7 +35,7 @@ HRESULT HrQueryRow(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpSPropValue_
   
@@ -59,7 +59,7 @@ MAPI_E_INVALID_PARAMETER
   
 > [SPropValue](spropvalue.md)構造をその_lpSPropValue_が指すインデックス列のプロパティが含まれていません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **ITableData::HrQueryRow**メソッドは、すべての_lpSPropValue_が指すプロパティの構造体に含まれているインデックス列の値に一致するインデックス列を持つ行のプロパティを取得します。 **HrQueryRow**は、呼び出し元が要求した場合、テーブル内の行の位置を識別するにも、行番号を返します。 
   
@@ -77,5 +77,5 @@ MAPI_E_INVALID_PARAMETER
   
 [SRow](srow.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

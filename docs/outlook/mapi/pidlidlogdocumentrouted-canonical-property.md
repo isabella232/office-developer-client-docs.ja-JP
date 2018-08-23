@@ -1,5 +1,5 @@
 ---
-title: PidLidLogDocumentRouted の標準的なプロパティ
+title: PidLidLogDocumentRouted 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 604f8859-469f-4745-b4b5-8f69737867a3
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e88c240b4219ac66bc9a1d4b8fa11ffc47682dd9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,21 +19,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802026"
 ---
-# <a name="pidlidlogdocumentrouted-canonical-property"></a>PidLidLogDocumentRouted の標準的なプロパティ
+# <a name="pidlidlogdocumentrouted-canonical-property"></a>PidLidLogDocumentRouted 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ルーティング受信者にジャーナル処理中にドキュメントが送信されたかどうかを示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidLogDocRouted  <br/> |
+|関連するプロパティ:  <br/> |dispidLogDocRouted  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Log  <br/> |
 |長い ID (LID):  <br/> |0x00008710  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |�W���[�i��  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
+|領域:  <br/> |ジャーナル  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
@@ -61,7 +61,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

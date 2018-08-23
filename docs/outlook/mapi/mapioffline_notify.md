@@ -17,7 +17,7 @@ ms.locfileid: "19801516"
 ---
 # <a name="mapiofflinenotify"></a>MAPIOFFLINE_NOTIFY
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 これは、接続状態の変更を通知します。 接続状態が変更されたこと、以前の接続状態、および新しい接続の状態の一部を示します。
   
@@ -42,7 +42,7 @@ typedef struct
 } MAPIOFFLINE_NOTIFY;
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  _ulSize_
   
@@ -82,7 +82,7 @@ typedef struct
     
    - MAPIOFFLINE_STATE_ONLINE
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 オフラインの状態の API では、オンラインとオフラインの変更の通知のみをサポートしています。 クライアントは、Outlook が実際の変更を確認する前に次の値を返すことを確認する必要があります。
   
@@ -94,7 +94,7 @@ Outlook がサポートされていないその他の変更のクライアント
   
 ## <a name="see-also"></a>関連項目
 
-- [オフラインの状態の API について](about-the-offline-state-api.md)  
+- [オフライン状態 API について](about-the-offline-state-api.md)  
 - [MAPI �萔](mapi-constants.md)  
 - [MAPIOFFLINE_NOTIFY_TYPE](mapioffline_notify_type.md)
 

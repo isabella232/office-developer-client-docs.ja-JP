@@ -19,7 +19,7 @@ ms.locfileid: "19801634"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 トランスポート プロバイダーは、かどうか、MAPI スプーラーを無効する必要がありますポーリング受信メール用、または新着メールが届いたときに MAPI スプーラーに呼び出しを実行してかどうかを制御します。 トランスポート プロバイダーは、ポーリングを要求する[IXPProvider::TransportLogon](ixpprovider-transportlogon.md)すると、SP_LOGON_POLL フラグを設定します。 それ以外の場合、トランスポート プロバイダーは、受信メールがある場合、 [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md)を使用します。 、受信メールが利用できることを学習した後 MAPI スプーラー新しいメッセージを開き、メッセージを受信したメッセージのプロパティを格納するトランスポート プロバイダーを確認します。 
   

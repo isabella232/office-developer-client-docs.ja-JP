@@ -1,5 +1,5 @@
 ---
-title: PidTagMessageFlags の標準的なプロパティ
+title: PidTagMessageFlags 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 7561112b-ca72-4c49-a8a0-cc1879a4e151
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: f2e565dc8137edee441643a5d02a154f78737099
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802990"
 ---
-# <a name="pidtagmessageflags-canonical-property"></a>PidTagMessageFlags の標準的なプロパティ
+# <a name="pidtagmessageflags-canonical-property"></a>PidTagMessageFlags 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 原点とメッセージの現在の状態を示すフラグのビットマスクを格納します。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_MESSAGE_FLAGS  <br/> |
+|関連するプロパティ:  <br/> |PR_MESSAGE_FLAGS  <br/> |
 |識別子:  <br/> |0x0E07  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、送信側と関連するクライアント アプリケーションまたはストア プロバイダーによって値が異なると、転送の終了を受信の両方で公開されている nontransmittable メッセージ プロパティです。 このプロパティは、状態メッセージが作成され、最初に保存しし、定期的に更新されるメッセージ ストア プロバイダー、トランスポート プロバイダーでは、MAPI スプーラーによってメッセージが処理されるときにクライアントまたはメッセージのストア プロバイダーを初期化します。変更します。 
   
@@ -143,7 +143,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

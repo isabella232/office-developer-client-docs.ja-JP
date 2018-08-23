@@ -1,5 +1,5 @@
 ---
-title: 操作環境についての問題
+title: 操作環境の問題
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801692"
 ---
-# <a name="operating-environment-issues"></a>操作環境についての問題
+# <a name="operating-environment-issues"></a>操作環境の問題
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オペレーティング システムおよびオペレーティング環境の問題は、MAPI 開発者が、開発環境および Windows SDK のインストールのための環境を選択するときに重要です。
   

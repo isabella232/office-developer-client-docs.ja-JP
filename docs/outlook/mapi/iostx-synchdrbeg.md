@@ -23,7 +23,7 @@ ms.locfileid: "19801088"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ ヘッダーの同期を開始します。
   
@@ -35,7 +35,7 @@ HRESULT SyncHdrBeg(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbeid_
   
@@ -49,7 +49,7 @@ HRESULT SyncHdrBeg(
   
 >  [内] と [出力] メッセージ ヘッダーの**[HDRSYNC](hdrsync.md)** 構造体へのポインター。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IOSTX::SyncHdrBeg**、時に、ローカルは、[メッセージ ヘッダーの状態をダウンロードする](download-message-header-state.md)に効果を格納します。 Outlook は、クライアントがストアに格納され、親フォルダーのメッセージのヘッダーの現在の表現を**HDRSYNC**構造体を初期化します。 クライアントは、( *pmsgFull*の**HDRSYNC**で) として、完全なメッセージ項目をダウンロードする必要があります。 これが成功した場合、クライアントも*ulFlags*の設定**HDRSYNC** **HSF_OK**とします。 **[IOSTX::SyncHdrEnd](iostx-synchdrend.md)**、時に、Outlook は**HDRSYNC**の結果をチェックし、 **HDRSYNC**で情報を使用して、ローカルのメッセージ ヘッダーを更新します。 
   
@@ -69,7 +69,7 @@ HRESULT SyncHdrBeg(
   
 [IOSTX::SyncHdrEnd](iostx-synchdrend.md)
   
-[IOSTX: IUnknown](iostxiunknown.md)
+[IOSTX : IUnknown](iostxiunknown.md)
 
 
 [MAPI �萔](mapi-constants.md)

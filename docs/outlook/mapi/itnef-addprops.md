@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e85641fb-6d3c-494a-981c-01781c7bf5bb
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2d37898b100398218d4f8762cdd3a16943d8f11a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801226"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージまたは添付ファイルをカプセル化するプロパティを追加するのには、呼び出し元のサービス プロバイダーまたはゲートウェイを有効にします。 
   
@@ -110,9 +110,9 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [OpenTnefStreamEx](opentnefstreamex.md)
   
-[PidTagAttachTransportName の標準的なプロパティ](pidtagattachtransportname-canonical-property.md)
+[PidTagAttachTransportName 標準プロパティ](pidtagattachtransportname-canonical-property.md)
   
-[ITnef: IUnknown](itnefiunknown.md)
+[ITnef : IUnknown](itnefiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

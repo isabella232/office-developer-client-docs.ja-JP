@@ -17,7 +17,7 @@ ms.locfileid: "19800947"
 ---
 # <a name="implementing-objects-in-c"></a>C 言語でオブジェクトを実装します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 クライアント アプリケーションとサービス プロバイダーが C で書かれたデータ構造体と、仮想関数テーブルまたは vtable と呼ばれる順序付けられた関数ポインターの配列を作成することで MAPI オブジェクトを定義します。 Vtable へのポインターは、データ構造体の最初のメンバーである必要があります。
   
@@ -81,5 +81,5 @@ lpMyObj->lpVtbl->ValidateState(lpMyObj, ulUIParam, ulFlags);
 
 ## <a name="see-also"></a>関連項目
 
-- [MAPI オブジェクトを実装します。](implementing-mapi-objects.md)
+- [MAPI オブジェクトの実装](implementing-mapi-objects.md)
 

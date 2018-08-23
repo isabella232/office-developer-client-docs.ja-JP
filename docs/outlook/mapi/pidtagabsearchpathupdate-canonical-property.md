@@ -1,5 +1,5 @@
 ---
-title: PidTagAbSearchPathUpdate の標準的なプロパティ
+title: PidTagAbSearchPathUpdate 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 5ea20b49-8b57-4ad0-a70d-6547a01c8344
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 4886749bf65d8bbb603d4b7d5fa38ad56b72ab97
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802420"
 ---
-# <a name="pidtagabsearchpathupdate-canonical-property"></a>PidTagAbSearchPathUpdate の標準的なプロパティ
+# <a name="pidtagabsearchpathupdate-canonical-property"></a>PidTagAbSearchPathUpdate 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ユーザーが明示的に構成されている、アドレス帳コンテナーのエントリの識別子の一覧が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_AB_SEARCH_PATH_UPDATE  <br/> |
+|関連するプロパティ:  <br/> |PR_AB_SEARCH_PATH_UPDATE  <br/> |
 |識別子:  <br/> |0x3D11  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |アドレス帳  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティを使用しません。 MAPI によって使用するために予約されています。
   
@@ -56,7 +56,7 @@ Mapidefs.h
 
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,5 +1,5 @@
 ---
-title: PidTagMessageToMe の標準的なプロパティ
+title: PidTagMessageToMe 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: aeb0fa71-f471-46c5-ad9c-f8afb3fed533
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 42aec7a8d617bdf1abd385add30d903efa2b73d2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802998"
 ---
-# <a name="pidtagmessagetome-canonical-property"></a>PidTagMessageToMe の標準的なプロパティ
+# <a name="pidtagmessagetome-canonical-property"></a>PidTagMessageToMe 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 このメッセージング ユーザーが具体的には (このメッセージの受信者宛先) プライマリという配布リストの一部ではない場合、TRUE が格納されます。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_MESSAGE_TO_ME  <br/> |
+|関連するプロパティ:  <br/> |PR_MESSAGE_TO_ME  <br/> |
 |識別子:  <br/> |0x0057  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティを確認するかどうかユーザー名に明示的に、プライマリ受信者ボックスの一覧で、リスト内のすべてのエントリを検査せずに便利な方法を提供します。 
   
@@ -74,7 +74,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

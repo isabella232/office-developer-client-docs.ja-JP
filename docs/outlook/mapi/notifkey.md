@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 031b7e18-59b2-445c-a747-348fda92f458
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3c480c420753b2da6c57b3961589d5c2e2e8022a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801675"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドバイズ シンク、アドバイズ ソースと MAPI との間の接続を一意に識別します。
   
@@ -40,7 +40,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cb**
   
@@ -50,7 +50,7 @@ typedef struct
   
 > 通知キーを記述するバイトの配列です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [IMAPISupport](imapisupportiunknown.md)の[購読](imapisupport-subscribe.md)と[通知](imapisupport-notify.md)方法は、適切なアドバイスのソースに関する適切なアドバイズ シンクに通知を生成するのに**NOTIFKEY**構造体を使用します。 
   

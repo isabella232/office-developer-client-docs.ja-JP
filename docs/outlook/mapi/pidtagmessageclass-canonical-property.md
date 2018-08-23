@@ -1,5 +1,5 @@
 ---
-title: PidTagMessageClass の標準的なプロパティ
+title: PidTagMessageClass 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 1e704023-1992-4b43-857e-0a7da7bc8e87
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d4e478b053bc1aa81643a60899480ac2ad9d4265
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802966"
 ---
-# <a name="pidtagmessageclass-canonical-property"></a>PidTagMessageClass の標準的なプロパティ
+# <a name="pidtagmessageclass-canonical-property"></a>PidTagMessageClass 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 IPM などのメッセージの送信者が定義されているクラスを識別する文字列が含まれています。注意してください。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_MESSAGE_CLASS、PR_MESSAGE_CLASS_A、PR_MESSAGE_CLASS_W  <br/> |
+|関連するプロパティ:  <br/> |PR_MESSAGE_CLASS、PR_MESSAGE_CLASS_A、PR_MESSAGE_CLASS_W  <br/> |
 |識別子:  <br/> |0x001A  <br/> |
-|データを入力します。  <br/> |PT_UNICODE、PT_STRING8  <br/> |
+|データの種類 :   <br/> |PT_UNICODE、PT_STRING8  <br/> |
 |領域:  <br/> |Common  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージ クラスは、メッセージの種類を指定します。 一連のメッセージは、情報メッセージの種類を表す、定義されているプロパティとメッセージを処理する方法を決定します。 
   
@@ -101,7 +101,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

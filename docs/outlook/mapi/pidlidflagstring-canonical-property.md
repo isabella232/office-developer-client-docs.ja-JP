@@ -1,5 +1,5 @@
 ---
-title: PidLidFlagString の標準的なプロパティ
+title: PidLidFlagString 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4cf1e08b-c869-4965-a1e4-512a0684700f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 53fe309fb15807ad698fef5a06781e5c3e0bae0c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801984"
 ---
-# <a name="pidlidflagstring-canonical-property"></a>PidLidFlagString の標準的なプロパティ
+# <a name="pidlidflagstring-canonical-property"></a>PidLidFlagString 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フラグに関連付けられている定義済みのテキスト文字列のセットのいずれかを識別するインデックスが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidFlagStringEnum  <br/> |
+|関連するプロパティ:  <br/> |dispidFlagStringEnum  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x000085C0  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントが (たとえば、現在のユーザーの言語に翻訳された文字列を置換する)、以下の表に対応する文字列値を使用する必要があり、 **dispidFlagRequest** ([で設定された値を無視する必要がありますこのプロパティが設定されている場合PidLidFlagRequest](pidlidflagrequest-canonical-property.md)) と**dispidValidFlagStringProof** ([PidLidValidFlagStringProof](pidlidvalidflagstringproof-canonical-property.md))。 
   
@@ -94,7 +94,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,5 +1,5 @@
 ---
-title: PidTagRowid の標準的なプロパティ
+title: PidTagRowid 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0fdcb55a-2971-4c7d-b61e-7ada2d19d0e6
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e8d0e79e01040c1cc3d46e73a7e6a456a915a67f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803363"
 ---
-# <a name="pidtagrowid-canonical-property"></a>PidTagRowid の標準的なプロパティ
+# <a name="pidtagrowid-canonical-property"></a>PidTagRowid 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 受信者テーブルまたはステータス テーブル内で受信者の一意の識別子が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ROWID  <br/> |
+|関連するプロパティ:  <br/> |PR_ROWID  <br/> |
 |識別子:  <br/> |0x3000  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |一般的な MAPI  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、テーブルを所有するオブジェクトの有効期間にのみ有効な一時的な値です。 テーブルの列として表示されますが、保存されていません。
   
@@ -73,7 +73,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

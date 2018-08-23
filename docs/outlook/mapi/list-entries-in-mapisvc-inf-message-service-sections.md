@@ -1,5 +1,5 @@
 ---
-title: MapiSvc.inf のメッセージ サービスのセクションで、リストのエントリ
+title: MapiSvc.inf メッセージ サービス セクションのリスト エントリ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801271"
 ---
-# <a name="list-entries-in-mapisvcinf-message-service-sections"></a>MapiSvc.inf のメッセージ サービスのセクションで、リストのエントリ
+# <a name="list-entries-in-mapisvcinf-message-service-sections"></a>MapiSvc.inf メッセージ サービス セクションのリスト エントリ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 セクションのリストのエントリの 2 種類があります: サービス プロバイダー セクションおよびその他のメッセージ サービスに固有のセクションを一覧表示する一覧を表示します。 Mapisvc.inf の以下のファイル形式でこれらの 2 種類のエントリが表示されます。
   

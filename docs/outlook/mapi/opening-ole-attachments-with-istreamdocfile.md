@@ -17,7 +17,7 @@ ms.locfileid: "19801702"
 ---
 # <a name="opening-ole-attachments-with-istreamdocfile"></a>IStreamDocfile を持つ OLE 添付ファイルを開く
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 OLE オブジェクトの添付ファイルを開くときは、 **IStreamDocfile**インターフェイスではなく[IStream](http://msdn.microsoft.com/en-us/library/windows/desktop/aa380034%28v=vs.85%29.aspx)または[IStorage](http://msdn.microsoft.com/en-us/library/windows/desktop/aa380015%28v=vs.85%29.aspx)を使用します。 
 

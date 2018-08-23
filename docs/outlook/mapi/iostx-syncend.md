@@ -23,7 +23,7 @@ ms.locfileid: "19801095"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 現在の状態で同期を終了し、その状態を終了します。
   
@@ -31,7 +31,7 @@ ms.locfileid: "19801095"
 HRESULT SyncEnd();
 ```
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントは、 [IOSTX::SyncBeg](iostx-syncbeg.md)を呼び出すたびに**IOSTX::SyncEnd**を呼び出す必要があります。 対応するデータ構造は、クライアントが Outlook では、内部の状態をクリーンアップできるように現在の状態を完了正常にかどうかを示す情報を保持します。
   
@@ -51,7 +51,7 @@ HRESULT SyncEnd();
   
 [IOSTX::SyncHdrEnd](iostx-synchdrend.md)
   
-[IOSTX: IUnknown](iostxiunknown.md)
+[IOSTX : IUnknown](iostxiunknown.md)
 
 
 [MAPI �萔](mapi-constants.md)

@@ -23,7 +23,7 @@ ms.locfileid: "19801250"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 トランスポート プロバイダーを処理する受信者の種類を返します。
   
@@ -37,7 +37,7 @@ HRESULT AddressTypes(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulFlags_
   
@@ -97,5 +97,5 @@ MAPI スプーラーを使用して、文字列の_lpppszAdrTypeArray_パラメ�
   
 [MAPIUID](mapiuid.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 

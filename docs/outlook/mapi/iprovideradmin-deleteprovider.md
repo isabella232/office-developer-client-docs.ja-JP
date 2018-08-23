@@ -23,7 +23,7 @@ ms.locfileid: "19801142"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ サービスからサービス プロバイダーを削除します。
   
@@ -33,7 +33,7 @@ HRESULT DeleteProvider(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpUID_
   
@@ -49,7 +49,7 @@ MAPI_E_NOT_FOUND
   
 > _LpUID_パラメーターで指定された**MAPIUID**が認識されませんでした。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IProviderAdmin::DeleteProvider**メソッドは、メッセージ サービスのサービス プロバイダーを削除します。 **DeleteProvider**は、アクティブなサービスのプロバイダーが登録されている識別子のセットを_lpUID_で指定された**MAPIUID**構造を照合することによって削除するのにはサービス ・ プロバイダーを決定します。 
   
@@ -71,5 +71,5 @@ MAPI_E_NOT_FOUND
   
 [MSGSERVICEENTRY](msgserviceentry.md)
   
-[IProviderAdmin: IUnknown](iprovideradminiunknown.md)
+[IProviderAdmin : IUnknown](iprovideradminiunknown.md)
 

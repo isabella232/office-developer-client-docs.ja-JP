@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f1fc7fc5-c71f-44f7-930a-571773eb6809
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8ba00ecc1d9ff1c0b7db63d3e6d667b374245742
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801484"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メモリ バッファーを割り当てます。 
   
@@ -40,7 +40,7 @@ SCODE MAPIAllocateBuffer(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _cbSize_
   
@@ -56,7 +56,7 @@ S_OK
   
 > 呼び出しが成功し、要求されたメモリ バッファーが返されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **MAPIAllocateBuffer**の中に処理を呼び出す、呼び出し元の実装は、オペレーティング システムからメモリ ブロックを取得します。 メモリ バッファーは、偶数のバイト アドレスに割り当てられます。 長整数型のアクセスがより効率的なプラットフォームでは、オペレーティング システムは、バイト単位でサイズが 4 の倍数のアドレスにバッファーを割り当てます。 
   

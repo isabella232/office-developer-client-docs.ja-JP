@@ -1,5 +1,5 @@
 ---
-title: PidTagOwnerAppointmentId の標準的なプロパティ
+title: PidTagOwnerAppointmentId 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b5eea554-6bca-42d1-b943-1327f0d70584
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a6fc194a3ef7d82be656a8d6c3f5fb9ad8326ceb
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803137"
 ---
-# <a name="pidtagownerappointmentid-canonical-property"></a>PidTagOwnerAppointmentId の標準的なプロパティ
+# <a name="pidtagownerappointmentid-canonical-property"></a>PidTagOwnerAppointmentId 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 所有者のスケジュールで予定の識別子が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_OWNER_APPT_ID  <br/> |
+|関連するプロパティ:  <br/> |PR_OWNER_APPT_ID  <br/> |
 |識別子:  <br/> |0x0062  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |Appointment  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、会議出席依頼で使用されます。 エントリの識別子ですが、送信者のスケジュールで予定を一意に識別する長整数型を表していません。
   
@@ -72,14 +72,14 @@ mapitags.h
 
 
 
-[PidTagOriginalAuthorSearchKey の標準的なプロパティ](pidtagoriginalauthorsearchkey-canonical-property.md)
+[PidTagOriginalAuthorSearchKey 標準プロパティ](pidtagoriginalauthorsearchkey-canonical-property.md)
 
 
 [MAPI プロパティ](mapi-properties.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

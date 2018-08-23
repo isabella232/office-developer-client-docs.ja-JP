@@ -23,7 +23,7 @@ ms.locfileid: "19801120"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 最後の保存以降に加えた変更のフォームをチェックします。
   
@@ -31,7 +31,7 @@ ms.locfileid: "19801120"
 HRESULT IsDirty( void );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 なし
   
@@ -45,7 +45,7 @@ S_FALSE
   
 > フォームには、最後に保存された後に加えられた変更はありません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォームの閲覧者は、メッセージのデータが保存されているかどうかを決定する**IPersistMessage::IsDirty**メソッドを呼び出します。 
   
@@ -53,5 +53,5 @@ S_FALSE
 
 
 
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 

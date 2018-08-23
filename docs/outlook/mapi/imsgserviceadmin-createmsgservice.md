@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0135f049-0311-45e5-9685-78597d599a4e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6e0bdd7108bacd17134592ac05ba71510fde76d8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801011"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 使用されなくなりました。 [IMsgServiceAdmin2::CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md)の使用をお勧めします。 メッセージ サービスは、現在のプロファイルに追加します。 
   
@@ -36,7 +36,7 @@ HRESULT CreateMsgService(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpszService_
   
@@ -80,7 +80,7 @@ MAPI_E_NOT_FOUND
   
 > メッセージ サービス名は、MapiSvc.inf の **[サービス]** セクションではありません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgServiceAdmin::CreateMsgService**メソッドは、メッセージ サービスを現在のプロファイルに追加します。 **CreateMsgService**は、サービス固有の構成タスクを実行するのには、メッセージ サービスのエントリ ポイント関数を呼び出します。 _UlFlags_パラメーターに SERVICE_UI_ALLOWED フラグを設定すると、メッセージ サービスがインストールされているがその設定を構成するユーザーを有効にするプロパティ シートを表示できます。 
   
@@ -120,7 +120,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 
 
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

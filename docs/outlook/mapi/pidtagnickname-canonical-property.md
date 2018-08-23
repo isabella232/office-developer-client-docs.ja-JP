@@ -1,5 +1,5 @@
 ---
-title: PidTagNickname の標準的なプロパティ
+title: PidTagNickname 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 088ffc58-d456-471b-af2f-7961e9c701f3
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5e0aea21d48692c354c77750a8cb2d6e0b39b715
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803014"
 ---
-# <a name="pidtagnickname-canonical-property"></a>PidTagNickname の標準的なプロパティ
+# <a name="pidtagnickname-canonical-property"></a>PidTagNickname 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 連絡先のニックネームが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_NICKNAME、PR_NICKNAME_A、PR_NICKNAME_W  <br/> |
+|関連するプロパティ:  <br/> |PR_NICKNAME、PR_NICKNAME_A、PR_NICKNAME_W  <br/> |
 |識別子:  <br/> |0x3A4F  <br/> |
-|データを入力します。  <br/> |PT_UNICODE、PT_STRING8  <br/> |
+|データの種類 :   <br/> |PT_UNICODE、PT_STRING8  <br/> |
 |領域:  <br/> |Address  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これらのプロパティはオプションです。 その内容は、ユーザーによって定義されます。
   
@@ -72,7 +72,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,5 +1,5 @@
 ---
-title: フォーム ライブラリを維持します。
+title: フォーム ライブラリの管理
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801292"
 ---
-# <a name="maintaining-a-form-library"></a>フォーム ライブラリを維持します。
+# <a name="maintaining-a-form-library"></a>フォーム ライブラリの管理
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォーム ライブラリを保持するすべてのフォームに関する重要な情報: プロパティ、動詞、およびそのサーバーの実行可能ファイルです。 何人かのように、管理、インストール、またはフォームのサーバーを削除します。 この機能をユーザーに提供する場合へのアクセスが必要です。
   

@@ -19,7 +19,7 @@ ms.locfileid: "19800942"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [IMessage: IMAPIProp](imessageimapiprop.md)のようなインターフェイスでは、 [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)インターフェイスの両方のインターフェイスから派生する、 [IMAPIProp: IUnknown](imapipropiunknown.md)インタ フェース。 クライアントは、メッセージの内容にアクセスするための**IMAPIProp**メソッドを使用します。 **IMessage**インターフェイスには、メッセージ (添付ファイルを追加または、メッセージの受信者を変更するなど) を操作するための他の方法が用意されています。 **IMessage**インターフェイス内のメソッドは、メッセージのプロパティに直接格納されていないメッセージの属性を変更します。 
   

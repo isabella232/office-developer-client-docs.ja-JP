@@ -23,7 +23,7 @@ ms.locfileid: "19801268"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ログオフ処理を開始します。 
   
@@ -45,7 +45,7 @@ S_OK
   
 > 呼び出しが成功し、予期される値または値が返されます。 以外 S_OK が返された場合、プロバイダーがログオフされます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI スプーラーは、特定のユーザー用のトランスポート プロバイダー セッションを終了する**IXPLogon::TransportLogoff**メソッドを呼び出します。 **TransportLogoff**を呼び出す前に、MAPI スプーラーは、 [IXPLogon::AddressTypes](ixplogon-addresstypes.md)メソッドに渡されたこのセッションでサポートされているメッセージング アドレスの種類に関するデータを破棄します。 
   
@@ -71,5 +71,5 @@ MAPI スプーラーは、特定のユーザー用のトランスポート プ�
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 

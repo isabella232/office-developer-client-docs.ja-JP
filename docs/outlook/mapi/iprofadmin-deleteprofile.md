@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 730af2da-4c4a-42a7-9d52-56d914107d64
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 249d2dcf3a298abde85bdc53620680146d43c168
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801144"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロファイルを削除します。
   
@@ -34,7 +34,7 @@ HRESULT DeleteProfile(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpszProfileName_
   
@@ -54,7 +54,7 @@ MAPI_E_NOT_FOUND
   
 > 指定されたプロファイルが存在しません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IProfAdmin::DeleteProfile**メソッドは、プロファイルを削除します。 **DeleteProfile**が呼び出されたときに削除するプロファイルを使用している場合、 **DeleteProfile**は S_OK を返しますが、すぐに、プロファイルは削除されません。 代わりに、 **DeleteProfile**は、プロファイルの削除をマークし、不要になった使用されている、すべてのアクティブ ・ セッションの終了したときに後でそれを削除します。 
   
@@ -78,7 +78,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [MSGSERVICEENTRY](msgserviceentry.md)
   
-[IProfAdmin: IUnknown](iprofadminiunknown.md)
+[IProfAdmin : IUnknown](iprofadminiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

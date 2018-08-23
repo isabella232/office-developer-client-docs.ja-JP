@@ -1,5 +1,5 @@
 ---
-title: PidNameAudioNotes の標準的なプロパティ
+title: PidNameAudioNotes 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: aec4d328-c192-4672-a478-b08442352794
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2eb1f0a517b430f2c96161e94faa22ec4d67ac41
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802325"
 ---
-# <a name="pidnameaudionotes-canonical-property"></a>PidNameAudioNotes の標準的なプロパティ
+# <a name="pidnameaudionotes-canonical-property"></a>PidNameAudioNotes 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ボイス メッセージに関連付けられている注釈テキストを指定します。
   
@@ -32,10 +32,10 @@ ms.locfileid: "19802325"
 |フレンドリ名:  <br/> |UMAudioNotes  <br/> |
 |プロパティを設定します。  <br/> |PSETID_UnifiedMessaging  <br/> |
 |プロパティ名:  <br/> |UMAudioNotes  <br/> |
-|データを入力します。  <br/> |PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_UNICODE  <br/> |
 |領域:  <br/> |ユニファイド メッセージング  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 閲覧、ボイス メッセージに直接オーディオ ノートを編集して、エンド ・ ユーザーを有効にするには、クライアントには、音声メッセージのオブジェクトのこのプロパティに追加されるメモのセットをユーザーが入力できる編集ボックスが用意されています。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

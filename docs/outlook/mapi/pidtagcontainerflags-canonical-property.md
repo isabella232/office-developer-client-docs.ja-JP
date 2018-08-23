@@ -1,5 +1,5 @@
 ---
-title: PidTagContainerFlags の標準的なプロパティ
+title: PidTagContainerFlags 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 66b8d333-227e-464d-8cf9-cd8a5ff15efb
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c13acd1c3b759602a5fbe07c21ca8b784e0fe4d1
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802592"
 ---
-# <a name="pidtagcontainerflags-canonical-property"></a>PidTagContainerFlags の標準的なプロパティ
+# <a name="pidtagcontainerflags-canonical-property"></a>PidTagContainerFlags 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 アドレス帳コンテナーの機能を記述するフラグのビットマスクを格納します。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_CONTAINER_FLAGS  <br/> |
+|関連するプロパティ:  <br/> |PR_CONTAINER_FLAGS  <br/> |
 |識別子:  <br/> |0x3600  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |アドレス帳  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 1 つ以上次のフラグのビットマスクを設定できます。
   
@@ -98,7 +98,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

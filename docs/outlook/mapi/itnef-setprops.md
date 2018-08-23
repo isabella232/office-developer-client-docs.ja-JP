@@ -23,7 +23,7 @@ ms.locfileid: "19801238"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 元のメッセージまたは添付ファイルを変更することがなくカプセル化されたメッセージまたは添付ファイルの 1 つまたは複数のプロパティの値を設定します。 
   
@@ -64,7 +64,7 @@ S_OK
   
 > 呼び出しが成功し、予期される値または値が返されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 プロバイダー、転送メッセージ ストア プロバイダーでは、プロパティを設定するのにはゲートウェイの呼び出し、 **ITnef::SetProps**メソッドに含める元のメッセージまたは添付ファイルを変更することがなく、メッセージまたは添付ファイルをカプセル化します。 この呼び出しで設定されたプロパティは、カプセル化されたメッセージ内の既存のプロパティをオーバーライドします。 
   
@@ -83,9 +83,9 @@ S_OK
   
 [OpenTnefStreamEx](opentnefstreamex.md)
   
-[PidTagAttachNumber の標準的なプロパティ](pidtagattachnumber-canonical-property.md)
+[PidTagAttachNumber 標準プロパティ](pidtagattachnumber-canonical-property.md)
   
 [SPropValue](spropvalue.md)
   
-[ITnef: IUnknown](itnefiunknown.md)
+[ITnef : IUnknown](itnefiunknown.md)
 

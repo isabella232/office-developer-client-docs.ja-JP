@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ac7ae09f-ce19-45cf-8963-fad5bba75452
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 968768fe75286b93bf12e349a4845fdfaa1923e9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801232"
 ---
-# <a name="itabledata--iunknown"></a>ITableData: IUnknown
+# <a name="itabledata--iunknown"></a>ITableData : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 テーブルを操作するためのユーティリティ メソッドを提供します。 MAPI には、データ オブジェクトのテーブルまたはテーブルのメンテナンスを実行するサービス プロバイダーのために**ITableData**を実装するオブジェクトが用意されています。 テーブルのデータ オブジェクトを取得するには、サービス プロバイダーは、 [CreateTable](createtable.md)関数を呼び出します。 
   
@@ -50,7 +50,7 @@ ms.locfileid: "19801232"
 |[HrModifyRows](itabledata-hrmodifyrows.md) <br/> |既存の行が上書きされる、複数のテーブル行を挿入します。  <br/> |
 |[HrDeleteRows](itabledata-hrdeleterows.md) <br/> |複数のテーブル行を削除します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **ITableData**の MAPI 実装では、非常に大きなテーブルでの使用に適していませんので、メモリ内のすべてのデータと関連付けられている制限を押しながら、テーブルと連携します。 大規模な制限や分類などの複雑な操作はサポートされていません。 
   

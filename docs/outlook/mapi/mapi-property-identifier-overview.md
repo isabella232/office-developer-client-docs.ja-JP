@@ -19,7 +19,7 @@ ms.locfileid: "19801421"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロパティの識別子は、プロパティの使用を示すために使用される番号およびその責任者です。 プロパティ識別子は、MAPI によって範囲に分かれています。識別子が範囲に該当する場所は、その使用法と所有権を示します。 
   
@@ -35,5 +35,5 @@ ms.locfileid: "19801421"
 
 
 
-[MAPI Property Overview](mapi-property-overview.md)
+[MAPI のプロパティの概要](mapi-property-overview.md)
 

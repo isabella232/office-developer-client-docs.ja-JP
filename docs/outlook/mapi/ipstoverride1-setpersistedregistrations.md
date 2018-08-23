@@ -21,7 +21,7 @@ ms.locfileid: "19801187"
 ---
 # <a name="ipstoverride1setpersistedregistrations"></a>IPSTOVERRIDE1::SetPersistedRegistrations
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 それ以降、HrTrustedPSTOverrideHandlerCallback の呼び出しを回避する自動ロック解除では、個人用フォルダー (.pst) ファイルを登録します。
   
@@ -31,7 +31,7 @@ HRESULT SetPersistedRegistrations(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 _pmval_
   
@@ -50,7 +50,7 @@ S_OK
   
 > 関数の呼び出しに成功しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 永続的な登録には、pst ファイルを開く Windows デスクトップ サーチでは、Outlook などのアプリケーションのパフォーマンスに悪影響を与える可能性があります。 使用するか、永続的な登録の使用法を拡張するときにパフォーマンスに与える影響を検討してください。
   
@@ -59,6 +59,6 @@ S_OK
   
 ## <a name="see-also"></a>関連項目
 
-- [IPSTOVERRIDE1: IUnknown](ipstoverride1iunknown.md) 
-- [IPSTOVERRIDEREQ: IUnknown](ipstoverridereqiunknown.md)
+- [IPSTOVERRIDE1 : IUnknown](ipstoverride1iunknown.md) 
+- [IPSTOVERRIDEREQ : IUnknown](ipstoverridereqiunknown.md)
 

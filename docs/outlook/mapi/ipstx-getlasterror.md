@@ -23,7 +23,7 @@ ms.locfileid: "19801199"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 最後のエラーに関する情報を拡張します。
   
@@ -35,7 +35,7 @@ HRESULT GetLastError(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _hResult_
   

@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 182ab0c6-c9d3-4cc8-892f-f6b09312ceb9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 26dcc31f2ebdd1892f966bfb95fda1a65c5140cb
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "19801522"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メモリ バッファーを再割り当ています。 [MAPIAllocateBuffer](mapiallocatebuffer.md)関数で使用されます。 
   
@@ -37,7 +37,7 @@ LPVOID * lppv
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpv_
   
@@ -51,7 +51,7 @@ LPVOID * lppv
   
 > 返されるバッファーへのポインター。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
  **MAPIReallocateBuffer**は、新しい要求されたサイズのメモリ ブロックを割り当て、この新しいメモリのブロックに渡されるバッファーの内容をコピーします。 渡されたメモリのブロックには、内部ポインターが含まれている場合、ポインターが新しい位置に合わせて変更されません。 
   

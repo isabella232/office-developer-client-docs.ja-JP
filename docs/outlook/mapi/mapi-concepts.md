@@ -15,7 +15,7 @@ ms.locfileid: "19801335"
 ---
 # <a name="mapi-concepts"></a>MAPI の概念
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ここでは、理解し、MAPI を使用したプログラミングの概要を示します。
   
@@ -37,9 +37,9 @@ ms.locfileid: "19801335"
   
 > MAPI サービス プロバイダーに関する基本的な情報を提供します。
     
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連情報
 
-- [Outlook �� MAPI �Q�Ƃ̎g�p��J�n���܂��B](getting-started-with-the-outlook-mapi-reference.md)
+- [Outlook MAPI リファレンスの概要](getting-started-with-the-outlook-mapi-reference.md)
   
 - [MAPI Samples](mapi-samples.md)
   

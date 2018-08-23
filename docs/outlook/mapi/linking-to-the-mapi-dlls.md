@@ -1,5 +1,5 @@
 ---
-title: MAPI Dll にリンクします。
+title: MAPI DLL へのリンク
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801265"
 ---
-# <a name="linking-to-the-mapi-dlls"></a>MAPI Dll にリンクします。
+# <a name="linking-to-the-mapi-dlls"></a>MAPI DLL へのリンク
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI クライアントにリンクできます MAPI Dll、暗黙的にまたは明示的に Windows 関数**LoadLibrary**と**GetProcAddress**を使用しています。 MAPI Dll を明示的にリンクする方法の詳細については、 [MAPI の関数へのリンク](how-to-link-to-mapi-functions.md)を参照してください。
   
@@ -29,7 +29,7 @@ MAPI には、MAPIX の種類の定義ステートメントが用意されてい
   
 [MAPIUninitialize](mapiuninitialize.md)
   
-[生じます](mapiinitialize.md)
+[MAPIInitialize](mapiinitialize.md)
   
 [MAPIAllocateBuffer](mapiallocatebuffer.md)
   

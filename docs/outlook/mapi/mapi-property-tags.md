@@ -17,11 +17,11 @@ ms.locfileid: "19801434"
 ---
 # <a name="mapi-property-tags"></a>MAPI プロパティ タグ
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロパティ タグは、16 から 31 のビットの一意のプロパティ識別子とプロパティの型のビット 0 ~ 15 は次の図に示すように含まれている 32 ビットの数値です。 
   
-**プロパティ タグの要素**
+**プロパティ タグ要素**
   
 ![プロパティ タグの要素](media/amapi_10.gif "プロパティ タグの要素")
   
@@ -33,5 +33,5 @@ ms.locfileid: "19801434"
   
 ## <a name="see-also"></a>関連項目
 
-- [MAPI Property Overview](mapi-property-overview.md)
+- [MAPI のプロパティの概要](mapi-property-overview.md)
 

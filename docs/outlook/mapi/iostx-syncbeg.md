@@ -23,7 +23,7 @@ ms.locfileid: "19801085"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 特定の状態の同期をローカル ストアを準備し、複製に必要な情報を取得します。
   
@@ -34,7 +34,7 @@ HRESULT SyncBeg(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _uiSync_
   
@@ -100,7 +100,7 @@ LR_SYNC_DOWNLOAD_TABLE
   
 > 
     
-[同期](sync.md)
+[SYNC](sync.md)
   
 > 
     
@@ -148,7 +148,7 @@ LR_SYNC_DOWNLOAD_TABLE
   
 > 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアントでは、同期の結果を設定するのには**[IOSTX::SetSyncResult](iostx-setsyncresult.md)** を呼び出すし、その状態を終了するのには**[IOSTX::SyncEnd](iostx-syncend.md)** を呼び出します。 クライアントは、状態が正常にレプリケートされたかどうかを判断するために**IOSTX::SyncBeg**が呼び出されるたびに、 **[IOSTX::SyncEnd](iostx-syncend.md)** を呼び出す必要があります。 これが判明すると、Outlook の内部の状態をクリーンアップするのには開始できます。 
   
@@ -170,7 +170,7 @@ LR_SYNC_DOWNLOAD_TABLE
   
 [IOSTX::SyncHdrEnd](iostx-synchdrend.md)
   
-[IOSTX: IUnknown](iostxiunknown.md)
+[IOSTX : IUnknown](iostxiunknown.md)
 
 
 [MAPI �萔](mapi-constants.md)

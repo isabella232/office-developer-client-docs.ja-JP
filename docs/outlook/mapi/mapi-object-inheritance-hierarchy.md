@@ -17,17 +17,17 @@ ms.locfileid: "19801398"
 ---
 # <a name="mapi-object-inheritance-hierarchy"></a>MAPI オブジェクトの継承階層
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 MAPI オブジェクトによって実装されるすべてのインタ フェースは、最終的には、 [IUnknown](http://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx)を通信するためにオブジェクトを有効にする OLE インターフェイスから継承します。 ほとんどのインターフェイスは、 **IUnknown**から直接継承するが、他の 2 つの基本インターフェイスのいずれかの一部を継承: [IMAPIProp: IUnknown](imapipropiunknown.md)または[IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)。 次の図では、MAPI の完全な継承階層を示します。
   
-**MAPI の継承の階層構造**
+**MAPI 継承階層**
   
 ![MAPI の継承の階層構造](media/amapi_06.gif "MAPI の継承の階層構造")
   
 ## <a name="see-also"></a>関連項目
 
-- [IMAPIProp: IUnknown](imapipropiunknown.md) 
-- [IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)
+- [IMAPIProp : IUnknown](imapipropiunknown.md) 
+- [IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 - [MAPI オブジェクトとインターフェイスの概要](mapi-object-and-interface-overview.md)
 

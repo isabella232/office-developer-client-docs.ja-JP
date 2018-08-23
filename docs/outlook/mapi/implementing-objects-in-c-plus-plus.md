@@ -17,7 +17,7 @@ ms.locfileid: "19800937"
 ---
 # <a name="implementing-objects-in-c"></a>C++ でオブジェクトを実装します。
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 C++ クライアントおよびサービス ・ プロバイダーは、それらを実装しているインターフェイスから継承するクラスを作成することで MAPI オブジェクトを定義します。 クラスのデストラクターとコンス トラクターは、インターフェイスのメソッドはパブリックで。 クラスは、追加のメソッドを持っている場合、パブリックまたはプライベートの実装によって、できます。 すべてのデータ メンバーは、プライベートです。 
   
@@ -57,5 +57,5 @@ lpMyObj->ValidateState(ulUIParam, ulFlags);
 
 ## <a name="see-also"></a>関連項目
 
-- [MAPI オブジェクトを実装します。](implementing-mapi-objects.md)
+- [MAPI オブジェクトの実装](implementing-mapi-objects.md)
 

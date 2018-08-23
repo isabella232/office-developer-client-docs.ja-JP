@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 0f4e54dc-80e5-49a7-9703-0225d8133492
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c1a78889ea98133af46089fdc93b0c1c4bb24226
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801546"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 、参照カウントのクリーンアップ処理をデクリメントし、削除インスタンスごとのグローバルなデータの MAPI DLL です。 
   
@@ -37,7 +37,7 @@ ms.locfileid: "19801546"
 void MAPIUninitialize ( void );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 なし 
   
@@ -45,7 +45,7 @@ void MAPIUninitialize ( void );
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアント アプリケーションでは、[生じます](mapiinitialize.md)関数の呼び出しによって開始されている MAPI との対話を終了する**MAPIUninitialize**関数を呼び出します。 **MAPIUninitialize**が呼び出されると、その他の MAPI 呼び出し可能ないクライアントです。 
   

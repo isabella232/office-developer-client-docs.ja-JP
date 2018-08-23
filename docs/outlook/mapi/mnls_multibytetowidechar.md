@@ -19,7 +19,7 @@ ms.locfileid: "19801653"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **MultiByteToWideChar**文字の文字列を utf-16 (ワイド文字) の文字列にマップするに似ています。 文字の文字列とは限りませんマルチバイトの文字からは設定されません。
   
@@ -33,7 +33,7 @@ int MNLS_MultiByteToWideChar(
   int cchWideChar);
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _uCodePage_
   
@@ -59,11 +59,11 @@ int MNLS_MultiByteToWideChar(
   
 > [in]_LpWideCharStr_で示されるバッファーの文字のサイズです。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 正常終了した場合は、 _lpWideCharStr_で示されるバッファーに書き込まれた文字数を返します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この関数は、 **MultiByteToWideChar**の関数をラップします。 詳細については、 [MultiByteToWideChar](http://msdn.microsoft.com/en-us/library/dd319072%28VS.85%29.aspx)を参照してください。
   

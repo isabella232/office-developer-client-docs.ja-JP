@@ -15,7 +15,7 @@ ms.locfileid: "19801643"
 ---
 # <a name="monitoring-connection-state-changes-using-an-offline-state-add-in"></a>オフライン状態のアドインを使用して、監視のための接続状態の変更
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オフライン状態アドインを使用するには接続状態の変更を監視するのには、前に設定し、アドインを初期化する関数を実装する必要があります。 詳細については、[アドインの設定をオフラインの状態](setting-up-an-offline-state-add-in.md)を参照してください。
   
@@ -308,9 +308,9 @@ void CMyOfflineNotify::Notify(const MAPIOFFLINE_NOTIFY *pNotifyInfo)
 
 ## <a name="see-also"></a>関連項目
 
-- [オフラインの状態の API について](about-the-offline-state-api.md)
-- [サンプル オフライン状態のアドインをインストールします。](installing-the-sample-offline-state-add-in.md)
-- [アドインの状態をオフラインのサンプルについて](about-the-sample-offline-state-add-in.md)
-- [オフライン状態のアドインを設定します。](setting-up-an-offline-state-add-in.md)
-- [オフライン状態の追加の接続を切断します。](disconnecting-an-offline-state-add-in.md)
+- [オフライン状態 API について](about-the-offline-state-api.md)
+- [サンプルのオフライン状態アドインのインストール](installing-the-sample-offline-state-add-in.md)
+- [サンプルのオフライン状態アドインについて](about-the-sample-offline-state-add-in.md)
+- [オフライン状態アドインの設定](setting-up-an-offline-state-add-in.md)
+- [オフライン状態アドインの切断](disconnecting-an-offline-state-add-in.md)
 

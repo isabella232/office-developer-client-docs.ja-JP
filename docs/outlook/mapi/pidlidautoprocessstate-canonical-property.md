@@ -1,5 +1,5 @@
 ---
-title: PidLidAutoProcessState の標準的なプロパティ
+title: PidLidAutoProcessState 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9e724af6-5b56-4eb3-a94c-1015ebce197c
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 86ef98ac7b4084de3a96210298fe0d5509d12103
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801822"
 ---
-# <a name="pidlidautoprocessstate-canonical-property"></a>PidLidAutoProcessState の標準的なプロパティ
+# <a name="pidlidautoprocessstate-canonical-property"></a>PidLidAutoProcessState 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 電子メール メッセージの自動処理で使用されるオプションを指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidSniffState  <br/> |
+|関連するプロパティ:  <br/> |dispidSniffState  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x0000851A  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 プロパティは"0x00000000"の既定値を使用する場合に入力が失われている可能性があります。 設定するとこのプロパティに次の表の値のいずれかに設定します。
   
@@ -71,7 +71,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

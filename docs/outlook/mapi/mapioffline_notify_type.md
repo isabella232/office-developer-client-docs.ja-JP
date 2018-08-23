@@ -19,7 +19,7 @@ ms.locfileid: "19801512"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 通知の MAPIOFFLINE_NOTIFY_TYPE では、接続状態の変更を実行しようとしていますが行われて、または完了した場合を識別します。 
   
@@ -39,7 +39,7 @@ typedef enum {
 
 
 
-[オフラインの状態の API について](about-the-offline-state-api.md)
+[オフライン状態 API について](about-the-offline-state-api.md)
   
 [MAPI �萔](mapi-constants.md)
   

@@ -23,7 +23,7 @@ ms.locfileid: "19801122"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロファイルをコピーします。
   
@@ -37,7 +37,7 @@ HRESULTCopyProfile(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpszOldProfileName_
   
@@ -85,7 +85,7 @@ MAPI_E_USER_CANCEL
   
 > ユーザー操作がキャンセルされました、通常ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IProfAdmin::CopyProfile**メソッドは、 _lpszNewProfileName_で指定された名前を付けることが_lpszOldProfileName_を指すプロファイルのコピーを使用します。 プロファイルのコピー元と同じパスワードを使用してコピーを残します。
   
@@ -103,5 +103,5 @@ MAPI_E_USER_CANCEL
 
 
 
-[IProfAdmin: IUnknown](iprofadminiunknown.md)
+[IProfAdmin : IUnknown](iprofadminiunknown.md)
 

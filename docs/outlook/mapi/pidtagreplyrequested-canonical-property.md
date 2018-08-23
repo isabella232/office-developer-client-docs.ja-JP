@@ -1,5 +1,5 @@
 ---
-title: PidTagReplyRequested の標準的なプロパティ
+title: PidTagReplyRequested 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 204f8ef2-c7ec-41c5-ab7d-6ef7a864dcb9
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 34862cf40f38d3baaac304e77c82081974d28585
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,19 +19,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803326"
 ---
-# <a name="pidtagreplyrequested-canonical-property"></a>PidTagReplyRequested の標準的なプロパティ
+# <a name="pidtagreplyrequested-canonical-property"></a>PidTagReplyRequested 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージの送信者が受信者からの返信を要求した場合、TRUE が格納されます。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_REPLY_REQUESTED  <br/> |
+|関連するプロパティ:  <br/> |PR_REPLY_REQUESTED  <br/> |
 |識別子:  <br/> |0x0C17  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |MAPI 受信者  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -72,7 +72,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

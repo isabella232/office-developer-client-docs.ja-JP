@@ -19,7 +19,7 @@ ms.locfileid: "19801442"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 ���ׂẴ��b�Z�[�W�𑗐M����̂ɂ́A1 �܂��͕����̈���A�܂��͈�A�̃��b�Z�[�W�̔z�M���\���v���p�e�B�����܂��B��M�҂����b�Z�[�W�̃R���e�L�X�g�ł̂ݎg�p���邽�� MAPI �̌ʂ̃I�u�W�F�N�g�̑���Ƀ��b�Z�[�W�̃I�u�W�F�N�g�ƌ��Ȃ���܂��B�N���C�A���g�ƃv���o�C�_�[ **IMessage** �C���^�[�t�F�C�X��g�p���Ď�M�҂�g�p���܂��B�ڍׂɂ��ẮA [IMessage: IMAPIProp](imessageimapiprop.md)��Q�Ƃ��Ă��������B
   

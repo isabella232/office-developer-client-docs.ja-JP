@@ -1,5 +1,5 @@
 ---
-title: 通知
+title: NOTIFICATION
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 01b6e695-a649-4efd-a893-7586b476467e
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7a8d25dc7cac4226f38baab593b254108210549e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,9 +19,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801683"
 ---
-# <a name="notification"></a>通知
+# <a name="notification"></a>NOTIFICATION
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 イベントが発生したことと、イベントによって影響のあるデータに関する情報が含まれています。
   
@@ -46,7 +46,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 **ulEventType**
   
@@ -96,7 +96,7 @@ typedef struct
   
 > イベントの特定の種類の影響を受けるデータを記述する通知の構造体の共用体です。 **情報**のメンバーに含まれている構造体は、 **ulEventType**メンバーの値によって異なります。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 1 つまたは複数の**通知**の構造体は、登録されているアドバイズ シンクの[IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出すたびに、入力パラメーターとして渡されます。 **通知**の構造体は、発生し、影響を受けるオブジェクトについて説明する特定のイベントに関する情報を格納します。 
   
@@ -114,9 +114,9 @@ printf("%s\n", pNotif -> newmail.lpszMessageClass)
   
 |**トピック**|**説明**|
 |:-----|:-----|
-|[MAPI でのイベントの通知](event-notification-in-mapi.md) <br/> |通知と通知のイベントの概要です。  <br/> |
+|[MAPI のイベント通知](event-notification-in-mapi.md) <br/> |通知と通知のイベントの概要です。  <br/> |
 |[通知の処理](handling-notifications.md) <br/> |クライアントが通知を処理する方法について説明します。  <br/> |
-|[イベント通知をサポートしています。](supporting-event-notification.md) <br/> |サービス プロバイダーが、 [IMAPISupport](imapisupportiunknown.md)メソッドを使用して、通知を生成する方法について説明します。  <br/> |
+|[イベント通知のサポート](supporting-event-notification.md) <br/> |サービス プロバイダーが、 [IMAPISupport](imapisupportiunknown.md)メソッドを使用して、通知を生成する方法について説明します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

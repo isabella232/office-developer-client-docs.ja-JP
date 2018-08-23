@@ -1,5 +1,5 @@
 ---
-title: PidLidEmail3OriginalEntryId の標準的なプロパティ
+title: PidLidEmail3OriginalEntryId 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b290d4a4-8d70-4656-9254-191c5179662f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: dc850be73432873b88d5f6106dd62b0e8fd6e662
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,23 +19,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801902"
 ---
-# <a name="pidlidemail3originalentryid-canonical-property"></a>PidLidEmail3OriginalEntryId の標準的なプロパティ
+# <a name="pidlidemail3originalentryid-canonical-property"></a>PidLidEmail3OriginalEntryId 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 3 番目の電子メール アドレスに対応するオブジェクトの**エントリ Id**を指定します。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidEmail3OriginalEntryID  <br/> |
+|関連するプロパティ:  <br/> |dispidEmail3OriginalEntryID  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Address  <br/> |
 |長い ID (LID):  <br/> |0x000080A5  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |連絡先  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
+|領域:  <br/> |Contact  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティの値は、この電子メール アドレスを 1 回限りの**エントリ Id**または有効なアドレス帳オブジェクトの**エントリ Id**のいずれかである必要があります。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

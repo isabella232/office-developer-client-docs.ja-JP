@@ -23,7 +23,7 @@ ms.locfileid: "19801108"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 フォームの現在のメッセージを解放するが発生します。
   
@@ -31,7 +31,7 @@ ms.locfileid: "19801108"
 HRESULT HandsOffMessage( void );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 なし
   
@@ -41,7 +41,7 @@ S_OK
   
 > メッセージは正常にリリースされました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 HandsOff の 2 つの状態への移行をフォームします。
   
@@ -63,7 +63,7 @@ HandsOff の 2 つの状態への移行をフォームします。
 
 
 
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 
 
 [フォームの状態](form-states.md)

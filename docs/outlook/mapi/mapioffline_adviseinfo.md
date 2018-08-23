@@ -17,7 +17,7 @@ ms.locfileid: "19801503"
 ---
 # <a name="mapiofflineadviseinfo"></a>MAPIOFFLINE_ADVISEINFO
  
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 オフライン オブジェクトに対してコールバックを登録するのには**[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)** の情報を提供します。 
   
@@ -37,7 +37,7 @@ typedef struct
 } MAPIOFFLINE_ADVISEINFO;
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 _ulSize_: **MAPIOFFLINE_ADVISEINFO**のサイズです。 
     
@@ -58,7 +58,7 @@ _ulStateMask_: MAPIOFFLINE_STATE_ALL は、唯一サポートされている状�
 ## <a name="see-also"></a>関連項目
 
 - [IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)
-- [オフラインの状態の API について](about-the-offline-state-api.md) 
+- [オフライン状態 API について](about-the-offline-state-api.md) 
 - [MAPI �萔](mapi-constants.md) 
 - [MAPIOFFLINE_CALLBACK_TYPE](mapioffline_callback_type.md)
 

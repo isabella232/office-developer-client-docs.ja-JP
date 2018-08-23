@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 469f0412-1343-47ce-b6e8-e0d5e56c29bb
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c30c38e1dbc944fd3016badf2621aef5de1e08f4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19801027"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 特定のメッセージ クラスの着信メッセージの送信先として、フォルダーを確立します。
   
@@ -36,7 +36,7 @@ HRESULT SetReceiveFolder(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpszMessageClass_
   
@@ -64,7 +64,7 @@ S_OK
   
 > 受信フォルダーが正常に確立しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgStore::SetReceiveFolder**メソッドは、特定のメッセージ クラスに対応する受信フォルダーを変更または設定します。 **SetReceiveFolder**とクライアント指定することも、後続の呼び出しを使用して、別に定義されたメッセージ クラスごとにフォルダーが表示されるか複数のメッセージ クラスのすべての受信メッセージが同じフォルダーに移動するかを指定します。 などのクライアントは独自のフォルダーに到着したメッセージの独自クラスを持つことができます。 Fax アプリケーションには、ストア プロバイダーが着信 fax を格納する 1 つのフォルダーと、プロバイダーが発信 fax を配置する別のフォルダーを指定できます。
   

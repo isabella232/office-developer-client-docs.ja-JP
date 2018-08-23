@@ -23,7 +23,7 @@ ms.locfileid: "19801137"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 設定またはクライアントの既定のプロファイルを削除します。
   
@@ -34,7 +34,7 @@ HRESULT SetDefaultProfile(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpszProfileName_
   
@@ -58,7 +58,7 @@ MAPI_E_NOT_FOUND
   
 > 指定されたプロファイルが存在しません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IProfAdmin::SetDefaultProfile**メソッドは、クライアントの既定のプロファイルとして特定のプロファイルを確立するか、または現在の既定のプロファイルを削除します。 既定のプロファイルは、クライアントは、MAPI セッションを開始するたびに自動的に使用されるプロファイルです。 **SetDefaultProfile**は、新しい既定のプロファイルの**PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) のプロパティを TRUE に設定します。
   
@@ -74,7 +74,7 @@ MAPI_E_NOT_FOUND
   
 [MAPILogonEx](mapilogonex.md)
   
-[PidTagDefaultProfile の標準的なプロパティ](pidtagdefaultprofile-canonical-property.md)
+[PidTagDefaultProfile 標準プロパティ](pidtagdefaultprofile-canonical-property.md)
   
-[IProfAdmin: IUnknown](iprofadminiunknown.md)
+[IProfAdmin : IUnknown](iprofadminiunknown.md)
 

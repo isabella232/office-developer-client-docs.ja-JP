@@ -1,5 +1,5 @@
 ---
-title: PidTagRecipientType の標準的なプロパティ
+title: PidTagRecipientType 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 67e31027-6bc2-4a40-9b00-d61baef4ab0f
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0218ff558e9dfca2f73bbad2dc42cdb7bd7121fc
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803317"
 ---
-# <a name="pidtagrecipienttype-canonical-property"></a>PidTagRecipientType の標準的なプロパティ
+# <a name="pidtagrecipienttype-canonical-property"></a>PidTagRecipientType 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージの受信者の受信者の種類が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_RECIPIENT_TYPE  <br/> |
+|関連するプロパティ:  <br/> |PR_RECIPIENT_TYPE  <br/> |
 |識別子:  <br/> |0x0C15  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |MAPI 受信者  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティに格納されている受信者の種類は、1 つの必要な値と省略可能なフラグの 1 つで構成されます。
   
@@ -110,20 +110,20 @@ Mapitags.h
 
 
 
-[PidTagRecipientStatus の標準的なプロパティ](pidtagrecipientstatus-canonical-property.md)
+[PidTagRecipientStatus 標準プロパティ](pidtagrecipientstatus-canonical-property.md)
   
-[PidTagDisplayTo の標準的なプロパティ](pidtagdisplayto-canonical-property.md)
+[PidTagDisplayTo 標準プロパティ](pidtagdisplayto-canonical-property.md)
   
-[PidTagDisplayBcc の標準的なプロパティ](pidtagdisplaybcc-canonical-property.md)
+[PidTagDisplayBcc 標準プロパティ](pidtagdisplaybcc-canonical-property.md)
   
-[PidTagDisplayCc の標準的なプロパティ](pidtagdisplaycc-canonical-property.md)
+[PidTagDisplayCc 標準プロパティ](pidtagdisplaycc-canonical-property.md)
 
 
 [MAPI プロパティ](mapi-properties.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

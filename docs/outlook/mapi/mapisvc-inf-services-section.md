@@ -1,5 +1,5 @@
 ---
-title: MapiSvc.inf [サービス] セクション
+title: MapiSvc.inf [Services] セクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19801531"
 ---
-# <a name="mapisvcinf-services-section"></a>MapiSvc.inf [サービス] セクション
+# <a name="mapisvcinf-services-section"></a>MapiSvc.inf [Services] セクション
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 **[サービス]** セクションには、コンピューターにインストールされているメッセージ サービスが一覧表示されます。 このセクションのエントリは、次の形式を使用します。 
   

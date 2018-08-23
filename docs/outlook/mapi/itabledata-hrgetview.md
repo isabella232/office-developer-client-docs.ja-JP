@@ -23,7 +23,7 @@ ms.locfileid: "19801222"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 [IMAPITable](imapitableiunknown.md)実装へのポインターを返す表形式ビューを作成します。 
   
@@ -36,7 +36,7 @@ HRESULT HrGetView(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpSSortOrderSet_
   
@@ -60,7 +60,7 @@ S_OK
   
 > ビューは正しく作成されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **ITableData::HrGetView**メソッドは、 _lpSSortOrderSet_パラメーターで指定された順序で並べ替え、テーブルのデータの読み取り専用ビューを作成します。 カーソルは、ビューの最初の行の先頭に配置されます。 ビューにアクセスするため**IMAPITable**インターフェイスの実装が返されます。 
   
@@ -74,9 +74,9 @@ S_OK
 
 [CALLERRELEASE](callerrelease.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
   
 [SSortOrderSet](ssortorderset.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

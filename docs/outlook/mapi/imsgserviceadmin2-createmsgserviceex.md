@@ -23,7 +23,7 @@ ms.locfileid: "19800981"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 サービス UID を新しく追加すること、現在のプロファイルには、メッセージ サービスを追加します。
   
@@ -37,7 +37,7 @@ HRESULT CreateMsgServiceEx(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpszService_
   
@@ -85,7 +85,7 @@ MAPI_E_NOT_FOUND
   
 > メッセージ サービス名は、MapiSvc.inf の **[サービス]** セクションではありません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgServiceAdmin2::CreateMsgServiceEx**メソッドは、メッセージ サービスを現在のプロファイルに追加します。 **CreateMsgServiceEx**は、サービス固有の構成タスクを実行するのには、メッセージ サービスのエントリ ポイント関数を呼び出します。 _UlFlags_パラメーターに SERVICE_UI_ALLOWED フラグを設定すると、メッセージ サービスがインストールされているがその設定を構成するユーザーを有効にすると、プロパティ シートを表示できます。 
   
@@ -109,7 +109,7 @@ MapiSvc.inf からすべての情報がコピーされた後は、 _ulContext_�
 
 
 
-[IMsgServiceAdmin2: IMsgServiceAdmin](imsgserviceadmin2imsgserviceadmin.md)
+[IMsgServiceAdmin2 : IMsgServiceAdmin](imsgserviceadmin2imsgserviceadmin.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)

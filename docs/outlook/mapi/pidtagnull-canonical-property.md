@@ -1,5 +1,5 @@
 ---
-title: PidTagNull の標準的なプロパティ
+title: PidTagNull 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 192cdab8-c615-47b9-9f04-a1414eaf0c77
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 55db507055692c9e929b0125abf719d8c03ac967
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19803039"
 ---
-# <a name="pidtagnull-canonical-property"></a>PidTagNull の標準的なプロパティ
+# <a name="pidtagnull-canonical-property"></a>PidTagNull 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 配列の領域を予約または、null 値またはプロパティの設定を表します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_NULL  <br/> |
+|関連するプロパティ:  <br/> |PR_NULL  <br/> |
 |識別子:  <br/> |0x0000  <br/> |
-|データを入力します。  <br/> |PT_NULL  <br/> |
+|データの種類 :   <br/> |PT_NULL  <br/> |
 |領域:  <br/> |Common  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [SPropValue](spropvalue.md)構造体の配列の領域を予約するのにはこのプロパティを使用します。 **SPropValue**構造体の返される配列内の領域を予約する方法を指示する[SPropTagArray](sproptagarray.md)構造体の配列で使用されます。 安価な方法で設定されるプロパティを計算できます。 
   
@@ -66,7 +66,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

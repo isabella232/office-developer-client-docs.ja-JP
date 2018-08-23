@@ -1,5 +1,5 @@
 ---
-title: PidTagMessageSize の標準的なプロパティ
+title: PidTagMessageSize 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c67fb54b-8cc7-4fbc-8204-36fcddfa6192
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7da0e480af9761c1317c1941da1d68d448a1ef63
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,22 +19,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19802996"
 ---
-# <a name="pidtagmessagesize-canonical-property"></a>PidTagMessageSize の標準的なプロパティ
+# <a name="pidtagmessagesize-canonical-property"></a>PidTagMessageSize 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 メッセージ オブジェクトのすべてのプロパティのサイズの合計 (バイト単位) にはが含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_MESSAGE_SIZE  <br/> |
+|関連するプロパティ:  <br/> |PR_MESSAGE_SIZE  <br/> |
 |識別子:  <br/> |0x0E08  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 メッセージ オブジェクトがこのプロパティを公開することをお勧めします。 メッセージのサイズは、メッセージが別の 1 つのメッセージ ・ ストアに移動した場合に転送されるバイトのおおよその数を示します。 メッセージ オブジェクトのすべてのプロパティのサイズの合計である、多くのメッセージのテキストだけよりもかなり大きいです。 
   
@@ -78,7 +78,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

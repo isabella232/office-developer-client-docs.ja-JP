@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 493c87a4-317d-47ec-850b-342cac59594b
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7f241fde8aedeae9debc66f728ee21c1c6bed6fb
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,13 +19,13 @@ ms.locfileid: "19801417"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 プロファイルは、サービス ・ プロバイダーおよびコンピューターにインストールされているメッセージのサービスに関する情報を格納します。 すべてのセッションは、ログオン時にクライアントは、使用するプロバイダーとのサービスを説明する 1 つのプロファイルを選択します。 できるプロファイルのコレクションから選択して、クライアントが必要な場合は、既定値として 1 つを確立します。 既定のプロファイルは、クライアントがセッションを開始して、プロファイルを明示的に指定することがないときに自動的に選択されているプロファイルです。
   
 これらのトピックでは、バイナリ ストリームに格納されているニックネームのキャッシュの詳細を検索は。
   
-- [ニックネームのキャッシュ](nickname-cache.md)
+- [ニックネーム キャッシュ](nickname-cache.md)
     
 - [オートコンプリート ストリーム](autocomplete-stream.md)
     

@@ -21,7 +21,7 @@ ms.locfileid: "19801266"
 ---
 # <a name="ixplogontransportnotify"></a>IXPLogon::TransportNotify
 
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 トランスポート プロバイダーが通知を要求するイベントの発生を通知します。
   
@@ -32,7 +32,7 @@ HRESULT TransportNotify(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulFlags_
   
@@ -88,7 +88,7 @@ S_OK
   
 > 呼び出しが成功し、予期される値または値が返されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI スプーラーは、通知の要求対象となるイベントのトランスポート プロバイダーを通知する**IXPLogon::TransportNotify**メソッドを呼び出します。 これらのイベントには、メッセージの転送、先頭または、着信または発信の転送操作の終了と開始またはキャンセル操作の終了を受信または送信メッセージのキューを消去する MAPI スプーラーの要求が含まれます。 
   
@@ -108,5 +108,5 @@ MAPI スプーラーは、通知の要求対象となるイベントのトラン
 - [IXPLogon::StartMessage](ixplogon-startmessage.md)
 - [IXPLogon::SubmitMessage](ixplogon-submitmessage.md)
 - [IXPProvider::TransportLogon](ixpprovider-transportlogon.md)
-- [IXPLogon: IUnknown](ixplogoniunknown.md)
+- [IXPLogon : IUnknown](ixplogoniunknown.md)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ccd9d623-a3cb-4e66-9649-78c3887cb726
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: f58bd8499b63bcd526906f78143b76092f194cb4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19800996"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 または、指定したメッセージ クラスの既定値として受信したメッセージの送信先には、メッセージ ストアのフォルダーが表示されるように設定されているフォルダーを取得します。
   
@@ -37,7 +37,7 @@ HRESULT GetReceiveFolder(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpszMessageClass_
   
@@ -69,7 +69,7 @@ S_OK
   
 > 受信フォルダーが正常に返されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMsgStore::GetReceiveFolder**メソッドは、特定のメッセージ クラスのメッセージを受信する指定されたフォルダー、受信フォルダーのエントリ id を取得します。 呼び出し元が_lpszMessageClass_パラメーターでは、メッセージ クラスまたは NULL を指定できます。 _LpszMessageClass_が NULL の場合は、 **GetReceiveFolder**は、次の値を返します。 
   

@@ -23,7 +23,7 @@ ms.locfileid: "19801254"
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 
   
 要求がトランスポート プロバイダーは、すべての保留の受信または送信メッセージを即座に配信します。
   
@@ -36,7 +36,7 @@ HRESULT FlushQueues(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulUIParam_
   
@@ -76,7 +76,7 @@ S_OK
   
 > 呼び出しが成功し、予期される値または値が返されます。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI スプーラーは、MAPI スプーラーがメッセージの処理を開始しようとしていますが、トランスポート プロバイダーに通知する**IXPLogon::FlushQueues**メソッドを呼び出します。 トランスポート プロバイダーは、 **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) のプロパティの [状態] 行で、適切なビットの状態を設定するのには[IMAPISupport::ModifyStatusRow](imapisupport-modifystatusrow.md)メソッドを呼び出す必要があります。 その [状態] 行を更新した後には、トランスポート プロバイダーは、必要があります、 **FlushQueues**の呼び出しに、S_OK を返します。 MAPI スプーラーは、MAPI スプーラーを無効に同期されている操作をメッセージの送信を開始します。 
   
@@ -88,5 +88,5 @@ MAPI スプーラーは、MAPI スプーラーがメッセージの処理を開�
 
 [IMAPIStatus::FlushQueues](imapistatus-flushqueues.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 
