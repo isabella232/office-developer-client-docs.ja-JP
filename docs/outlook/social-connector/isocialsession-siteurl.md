@@ -15,19 +15,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804366"
 ---
-# <a name="isocialsessionsiteurl"></a><span data-ttu-id="adf77-103">ISocialSession::SiteUrl</span><span class="sxs-lookup"><span data-stu-id="adf77-103">ISocialSession::SiteUrl</span></span>
+# <a name="isocialsessionsiteurl"></a><span data-ttu-id="b5ba2-103">ISocialSession::SiteUrl</span><span class="sxs-lookup"><span data-stu-id="b5ba2-103">ISocialSession::SiteUrl</span></span>
 
-<span data-ttu-id="adf77-104">ソーシャル ネットワーク サイトの URL を設定します。</span><span class="sxs-lookup"><span data-stu-id="adf77-104">Sets the social network site URL.</span></span> 
+<span data-ttu-id="b5ba2-104">ソーシャル ネットワーク サイトの URL を設定します。</span><span class="sxs-lookup"><span data-stu-id="b5ba2-104">Sets the social network site URL.</span></span> 
   
 ```cpp
 [propput] HRESULT _stdcall siteUrl([in] BSTR rhs);
 ```
 
-## <a name="property-value"></a><span data-ttu-id="adf77-105">プロパティ値</span><span class="sxs-lookup"><span data-stu-id="adf77-105">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="b5ba2-105">プロパティ値</span><span class="sxs-lookup"><span data-stu-id="b5ba2-105">Property value</span></span>
 
-<span data-ttu-id="adf77-106">ソーシャル ネットワーク サイトの URL を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="adf77-106">A string that represents a social network site URL.</span></span>
+<span data-ttu-id="b5ba2-106">ソーシャル ネットワーク サイトの URL を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="b5ba2-106">A string that represents a social network site URL.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="adf77-107">関連項目</span><span class="sxs-lookup"><span data-stu-id="adf77-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b5ba2-107">関連項目</span><span class="sxs-lookup"><span data-stu-id="b5ba2-107">See also</span></span>
 
-- [<span data-ttu-id="adf77-108">ISocialSession: IUnknown</span><span class="sxs-lookup"><span data-stu-id="adf77-108">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
+- [<span data-ttu-id="b5ba2-108">ISocialSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="b5ba2-108">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
 

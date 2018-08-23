@@ -15,20 +15,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804487"
 ---
-# <a name="isocialsessionloggedonusername"></a><span data-ttu-id="8f8f2-103">ISocialSession::LoggedOnUserName</span><span class="sxs-lookup"><span data-stu-id="8f8f2-103">ISocialSession::LoggedOnUserName</span></span>
+# <a name="isocialsessionloggedonusername"></a><span data-ttu-id="b2e89-103">ISocialSession::LoggedOnUserName</span><span class="sxs-lookup"><span data-stu-id="b2e89-103">ISocialSession::LoggedOnUserName</span></span>
 
-<span data-ttu-id="8f8f2-104">ログオン時に使用されるユーザー名を表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="8f8f2-104">Returns a string that represents the user name that is used when logging on.</span></span>
+<span data-ttu-id="b2e89-104">ログオン時に使用されるユーザー名を表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="b2e89-104">Returns a string that represents the user name that is used when logging on.</span></span>
   
 ```cpp
 [propget] HRESULT _stdcall LoggedOnUserName([out, retval] BSTR* result);
 ```
 
-## <a name="property-value"></a><span data-ttu-id="8f8f2-105">プロパティ値</span><span class="sxs-lookup"><span data-stu-id="8f8f2-105">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="b2e89-105">プロパティ値</span><span class="sxs-lookup"><span data-stu-id="b2e89-105">Property value</span></span>
 
-<span data-ttu-id="8f8f2-106">ログオン ユーザーのユーザー名を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="8f8f2-106">A string that represents the user name of the logged-on user.</span></span>
+<span data-ttu-id="b2e89-106">ログオン ユーザーのユーザー名を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="b2e89-106">A string that represents the user name of the logged-on user.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="8f8f2-107">関連項目</span><span class="sxs-lookup"><span data-stu-id="8f8f2-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b2e89-107">関連項目</span><span class="sxs-lookup"><span data-stu-id="b2e89-107">See also</span></span>
 
-- [<span data-ttu-id="8f8f2-108">ISocialSession::LoggedOnUserID</span><span class="sxs-lookup"><span data-stu-id="8f8f2-108">ISocialSession::LoggedOnUserID</span></span>](isocialsession-loggedonuserid.md)  
-- [<span data-ttu-id="8f8f2-109">ISocialSession: IUnknown</span><span class="sxs-lookup"><span data-stu-id="8f8f2-109">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
+- [<span data-ttu-id="b2e89-108">ISocialSession::LoggedOnUserID</span><span class="sxs-lookup"><span data-stu-id="b2e89-108">ISocialSession::LoggedOnUserID</span></span>](isocialsession-loggedonuserid.md)  
+- [<span data-ttu-id="b2e89-109">ISocialSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="b2e89-109">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
 

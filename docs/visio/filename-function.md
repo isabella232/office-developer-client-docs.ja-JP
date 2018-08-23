@@ -16,16 +16,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805375"
 ---
-# <a name="filename-function"></a><span data-ttu-id="dbbe1-103">FILENAME 関数</span><span class="sxs-lookup"><span data-stu-id="dbbe1-103">FILENAME Function</span></span>
+# <a name="filename-function"></a><span data-ttu-id="b9016-103">FILENAME 関数</span><span class="sxs-lookup"><span data-stu-id="b9016-103">FILENAME Function</span></span>
 
-<span data-ttu-id="dbbe1-104">ドキュメントのファイル名を文字列として返します。</span><span class="sxs-lookup"><span data-stu-id="dbbe1-104">Returns a document's file name as a string.</span></span>
+<span data-ttu-id="b9016-104">ドキュメントのファイル名を文字列として返します。</span><span class="sxs-lookup"><span data-stu-id="b9016-104">Returns a document's file name as a string.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="dbbe1-105">構文</span><span class="sxs-lookup"><span data-stu-id="dbbe1-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b9016-105">構文</span><span class="sxs-lookup"><span data-stu-id="b9016-105">Syntax</span></span>
 
-<span data-ttu-id="dbbe1-106">FILENAME ()</span><span class="sxs-lookup"><span data-stu-id="dbbe1-106">FILENAME ()</span></span>
+<span data-ttu-id="b9016-106">FILENAME ()</span><span class="sxs-lookup"><span data-stu-id="b9016-106">FILENAME ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="dbbe1-107">�߂�l</span><span class="sxs-lookup"><span data-stu-id="dbbe1-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b9016-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="b9016-107">Return value</span></span>
 
-<span data-ttu-id="dbbe1-108">String</span><span class="sxs-lookup"><span data-stu-id="dbbe1-108">String</span></span>
+<span data-ttu-id="b9016-108">String</span><span class="sxs-lookup"><span data-stu-id="b9016-108">String</span></span>
   
 

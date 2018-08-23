@@ -16,26 +16,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804935"
 ---
-# <a name="calendar-cell-miscellaneous-section"></a><span data-ttu-id="c4f4e-103">[Calendar] セル ([Miscellaneous] セクション)</span><span class="sxs-lookup"><span data-stu-id="c4f4e-103">Calendar Cell (Miscellaneous Section)</span></span>
+# <a name="calendar-cell-miscellaneous-section"></a><span data-ttu-id="08b99-103">[Calendar] セル ([その他] セクション)</span><span class="sxs-lookup"><span data-stu-id="08b99-103">Calendar Cell (Miscellaneous Section)</span></span>
 
-<span data-ttu-id="c4f4e-104">セル数式が Date 情報を含むときに使用するカレンダーを指定します。</span><span class="sxs-lookup"><span data-stu-id="c4f4e-104">Determines the calendar that is used when a cell formula contains Date information.</span></span>
+<span data-ttu-id="08b99-104">セル数式が Date 情報を含むときに使用するカレンダーを指定します。</span><span class="sxs-lookup"><span data-stu-id="08b99-104">Determines the calendar that is used when a cell formula contains Date information.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="c4f4e-105">備考</span><span class="sxs-lookup"><span data-stu-id="c4f4e-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="08b99-105">備考</span><span class="sxs-lookup"><span data-stu-id="08b99-105">Remarks</span></span>
 
-<span data-ttu-id="c4f4e-106">使用できる値は、0 (西暦)、1 (イスラム暦)、2 (ヘブライ太陰暦)、3 (台湾暦)、4 (和暦)、5 (タイ仏暦)、6 (韓国檀紀)、7 (サカ暦)、8 (英語 (音訳))、および 9 (フランス語 (音訳)) です。</span><span class="sxs-lookup"><span data-stu-id="c4f4e-106">The possible values are: 0 (Western), 1 (Arabic Hijri), 2 (Hebrew Lunar), 3 (Taiwan Calendar), 4 (Japanese Emperor Reign), 5 (Thai Buddhist), 6 (Korean Danki), 7 (Saka Era), 8 (English transliterated), and 9 (French transliterated ).</span></span> 
+<span data-ttu-id="08b99-106">使用できる値は、0 (西暦)、1 (イスラム暦)、2 (ヘブライ太陰暦)、3 (台湾暦)、4 (和暦)、5 (タイ仏暦)、6 (韓国檀紀)、7 (サカ暦)、8 (英語 (音訳))、および 9 (フランス語 (音訳)) です。</span><span class="sxs-lookup"><span data-stu-id="08b99-106">The possible values are: 0 (Western), 1 (Arabic Hijri), 2 (Hebrew Lunar), 3 (Taiwan Calendar), 4 (Japanese Emperor Reign), 5 (Thai Buddhist), 6 (Korean Danki), 7 (Saka Era), 8 (English transliterated), and 9 (French transliterated ).</span></span> 
   
-<span data-ttu-id="c4f4e-107">別の数式または**CellsU**プロパティを使用したプログラムから、予定表のセルへの参照を名前によって取得するには、次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="c4f4e-107">To get a reference to the Calendar cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="08b99-107">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Calendar] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="08b99-107">To get a reference to the Calendar cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="c4f4e-108">セル名 :</span><span class="sxs-lookup"><span data-stu-id="c4f4e-108">Cell name:</span></span>  <br/> | <span data-ttu-id="c4f4e-109">Calendar</span><span class="sxs-lookup"><span data-stu-id="c4f4e-109">Calendar</span></span>  <br/> |
+| <span data-ttu-id="08b99-108">セル名 :</span><span class="sxs-lookup"><span data-stu-id="08b99-108">Cell name:</span></span>  <br/> | <span data-ttu-id="08b99-109">Calendar</span><span class="sxs-lookup"><span data-stu-id="08b99-109">Calendar</span></span>  <br/> |
    
-<span data-ttu-id="c4f4e-110">プログラムから、インデックスによって [calendar] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="c4f4e-110">To get a reference to the Calendar cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="08b99-110">プログラムから、インデックスによって [Calendar] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="08b99-110">To get a reference to the Calendar cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="c4f4e-111">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="c4f4e-111">Section index:</span></span>  <br/> |<span data-ttu-id="c4f4e-112">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="c4f4e-112">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="c4f4e-113">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="c4f4e-113">Row index:</span></span>  <br/> |<span data-ttu-id="c4f4e-114">**visRowMisc**</span><span class="sxs-lookup"><span data-stu-id="c4f4e-114">**visRowMisc**</span></span> <br/> |
-| <span data-ttu-id="c4f4e-115">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="c4f4e-115">Cell index:</span></span>  <br/> |<span data-ttu-id="c4f4e-116">**visObjCalendar**</span><span class="sxs-lookup"><span data-stu-id="c4f4e-116">**visObjCalendar**</span></span> <br/> |
+| <span data-ttu-id="08b99-111">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="08b99-111">Section index:</span></span>  <br/> |<span data-ttu-id="08b99-112">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="08b99-112">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="08b99-113">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="08b99-113">Row index:</span></span>  <br/> |<span data-ttu-id="08b99-114">**visRowMisc**</span><span class="sxs-lookup"><span data-stu-id="08b99-114">**visRowMisc**</span></span> <br/> |
+| <span data-ttu-id="08b99-115">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="08b99-115">Cell index:</span></span>  <br/> |<span data-ttu-id="08b99-116">**visObjCalendar**</span><span class="sxs-lookup"><span data-stu-id="08b99-116">**visObjCalendar**</span></span> <br/> |
    
 

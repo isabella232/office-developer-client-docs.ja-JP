@@ -16,29 +16,29 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805398"
 ---
-# <a name="flipy-cell-shape-transform-section"></a><span data-ttu-id="3439a-103">[FlipY] セル ([Shape Transform] セクション)</span><span class="sxs-lookup"><span data-stu-id="3439a-103">FlipY Cell (Shape Transform Section)</span></span>
+# <a name="flipy-cell-shape-transform-section"></a><span data-ttu-id="f73e4-103">[FlipY] セル ([図形変換] セクション)</span><span class="sxs-lookup"><span data-stu-id="f73e4-103">FlipY Cell (Shape Transform Section)</span></span>
 
-<span data-ttu-id="3439a-104">図形が上下反転されているかを示します。</span><span class="sxs-lookup"><span data-stu-id="3439a-104">Indicates whether the shape has been flipped vertically.</span></span>
+<span data-ttu-id="f73e4-104">図形が上下反転されているかを示します。</span><span class="sxs-lookup"><span data-stu-id="f73e4-104">Indicates whether the shape has been flipped vertically.</span></span>
   
-|<span data-ttu-id="3439a-105">**値**</span><span class="sxs-lookup"><span data-stu-id="3439a-105">**Value**</span></span>|<span data-ttu-id="3439a-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="3439a-106">**Description**</span></span>|
+|<span data-ttu-id="f73e4-105">**値**</span><span class="sxs-lookup"><span data-stu-id="f73e4-105">**Value**</span></span>|<span data-ttu-id="f73e4-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="f73e4-106">**Description**</span></span>|
 |:-----|:-----|
-| <span data-ttu-id="3439a-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="3439a-107">TRUE</span></span>  <br/> | <span data-ttu-id="3439a-108">図形は上下反転されています。</span><span class="sxs-lookup"><span data-stu-id="3439a-108">The shape has been flipped vertically.</span></span>  <br/> |
-| <span data-ttu-id="3439a-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="3439a-109">FALSE</span></span>  <br/> | <span data-ttu-id="3439a-110">図形は上下反転されていません。</span><span class="sxs-lookup"><span data-stu-id="3439a-110">The shape has not been flipped vertically.</span></span>  <br/> |
+| <span data-ttu-id="f73e4-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="f73e4-107">TRUE</span></span>  <br/> | <span data-ttu-id="f73e4-108">図形は上下反転されています。</span><span class="sxs-lookup"><span data-stu-id="f73e4-108">The shape has been flipped vertically.</span></span>  <br/> |
+| <span data-ttu-id="f73e4-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="f73e4-109">FALSE</span></span>  <br/> | <span data-ttu-id="f73e4-110">図形は上下反転されていません。</span><span class="sxs-lookup"><span data-stu-id="f73e4-110">The shape has not been flipped vertically.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="3439a-111">備考</span><span class="sxs-lookup"><span data-stu-id="3439a-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f73e4-111">備考</span><span class="sxs-lookup"><span data-stu-id="f73e4-111">Remarks</span></span>
 
-<span data-ttu-id="3439a-112">別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [flipy] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="3439a-112">To get a reference to the FlipY cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="f73e4-112">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [FlipY] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="f73e4-112">To get a reference to the FlipY cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="3439a-113">セル名:</span><span class="sxs-lookup"><span data-stu-id="3439a-113">Cell name:</span></span>  <br/> | <span data-ttu-id="3439a-114">[Flipy]</span><span class="sxs-lookup"><span data-stu-id="3439a-114">FlipY</span></span>  <br/> |
+| <span data-ttu-id="f73e4-113">セル名:</span><span class="sxs-lookup"><span data-stu-id="f73e4-113">Cell name:</span></span>  <br/> | <span data-ttu-id="f73e4-114">[Flipy]</span><span class="sxs-lookup"><span data-stu-id="f73e4-114">FlipY</span></span>  <br/> |
    
-<span data-ttu-id="3439a-115">プログラムから、インデックスによって [flipy] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="3439a-115">To get a reference to the FlipY cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="f73e4-115">プログラムから、インデックスによって [FlipY] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="f73e4-115">To get a reference to the FlipY cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="3439a-116">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="3439a-116">Section index:</span></span>  <br/> |<span data-ttu-id="3439a-117">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="3439a-117">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="3439a-118">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="3439a-118">Row index:</span></span>  <br/> |<span data-ttu-id="3439a-119">**visRowXFormOut**</span><span class="sxs-lookup"><span data-stu-id="3439a-119">**visRowXFormOut**</span></span> <br/> |
-| <span data-ttu-id="3439a-120">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="3439a-120">Cell index:</span></span>  <br/> |<span data-ttu-id="3439a-121">**visXFormFlipY**</span><span class="sxs-lookup"><span data-stu-id="3439a-121">**visXFormFlipY**</span></span> <br/> |
+| <span data-ttu-id="f73e4-116">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="f73e4-116">Section index:</span></span>  <br/> |<span data-ttu-id="f73e4-117">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="f73e4-117">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="f73e4-118">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="f73e4-118">Row index:</span></span>  <br/> |<span data-ttu-id="f73e4-119">**visRowXFormOut**</span><span class="sxs-lookup"><span data-stu-id="f73e4-119">**visRowXFormOut**</span></span> <br/> |
+| <span data-ttu-id="f73e4-120">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="f73e4-120">Cell index:</span></span>  <br/> |<span data-ttu-id="f73e4-121">**visXFormFlipY**</span><span class="sxs-lookup"><span data-stu-id="f73e4-121">**visXFormFlipY**</span></span> <br/> |
    
 

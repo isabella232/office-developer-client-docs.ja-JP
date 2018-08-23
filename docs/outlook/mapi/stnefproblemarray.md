@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 115d845b-4168-4d49-b880-219ee28baa9a
-description: '�ŏI�X�V��: 2015�N3��9��'
+description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: baa2ac2e859b42234fcb07dd2bf521424ef9b465
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -19,17 +19,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804035"
 ---
-# <a name="stnefproblemarray"></a><span data-ttu-id="9fd94-103">STnefProblemArray</span><span class="sxs-lookup"><span data-stu-id="9fd94-103">STnefProblemArray</span></span>
+# <a name="stnefproblemarray"></a><span data-ttu-id="7c8d8-103">STnefProblemArray</span><span class="sxs-lookup"><span data-stu-id="7c8d8-103">STnefProblemArray</span></span>
 
   
   
-<span data-ttu-id="9fd94-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="9fd94-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="7c8d8-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="7c8d8-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="9fd94-105">エンコード中に発生した問題を処理する 1 つまたは複数、またはトランスポート ニュートラル カプセル化形式 (TNEF) ストリームのデコードを記述する**STnefProblem**構造体の配列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="9fd94-105">Contains an array of **STnefProblem** structures describing one or more processing problems that occurred during the encoding or decoding of a Transport Neutral Encapsulation Format (TNEF) stream.</span></span> 
+<span data-ttu-id="7c8d8-105">エンコード中に発生した問題を処理する 1 つまたは複数、またはトランスポート ニュートラル カプセル化形式 (TNEF) ストリームのデコードを記述する**STnefProblem**構造体の配列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="7c8d8-105">Contains an array of **STnefProblem** structures describing one or more processing problems that occurred during the encoding or decoding of a Transport Neutral Encapsulation Format (TNEF) stream.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="9fd94-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="9fd94-106">Header file:</span></span>  <br/> |<span data-ttu-id="9fd94-107">Tnef.h</span><span class="sxs-lookup"><span data-stu-id="9fd94-107">Tnef.h</span></span>  <br/> |
+|<span data-ttu-id="7c8d8-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="7c8d8-106">Header file:</span></span>  <br/> |<span data-ttu-id="7c8d8-107">Tnef.h</span><span class="sxs-lookup"><span data-stu-id="7c8d8-107">Tnef.h</span></span>  <br/> |
    
 ```cpp
 typedef struct _STnefProblemArray
@@ -40,30 +40,30 @@ typedef struct _STnefProblemArray
 
 ```
 
-## <a name="members"></a><span data-ttu-id="9fd94-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="9fd94-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="7c8d8-108">Members</span><span class="sxs-lookup"><span data-stu-id="7c8d8-108">Members</span></span>
 
- <span data-ttu-id="9fd94-109">**cProblem**</span><span class="sxs-lookup"><span data-stu-id="9fd94-109">**cProblem**</span></span>
+ <span data-ttu-id="7c8d8-109">**cProblem**</span><span class="sxs-lookup"><span data-stu-id="7c8d8-109">**cProblem**</span></span>
   
-> <span data-ttu-id="9fd94-110">**かかわる問題**のメンバーで指定された配列内の要素の数。</span><span class="sxs-lookup"><span data-stu-id="9fd94-110">Count of elements in the array specified in the **aProblem** member.</span></span> 
+> <span data-ttu-id="7c8d8-110">**かかわる問題**のメンバーで指定された配列内の要素の数。</span><span class="sxs-lookup"><span data-stu-id="7c8d8-110">Count of elements in the array specified in the **aProblem** member.</span></span> 
     
- <span data-ttu-id="9fd94-111">**かかわる問題**</span><span class="sxs-lookup"><span data-stu-id="9fd94-111">**aProblem**</span></span>
+ <span data-ttu-id="7c8d8-111">**かかわる問題**</span><span class="sxs-lookup"><span data-stu-id="7c8d8-111">**aProblem**</span></span>
   
-> <span data-ttu-id="9fd94-112">[STnefProblem](stnefproblem.md)構造体の配列です。</span><span class="sxs-lookup"><span data-stu-id="9fd94-112">Array of [STnefProblem](stnefproblem.md) structures.</span></span> <span data-ttu-id="9fd94-113">各構造体には、プロパティまたは属性の問題の処理に関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="9fd94-113">Each structure contains information about a property or attribute processing problem.</span></span> 
+> <span data-ttu-id="7c8d8-112">[STnefProblem](stnefproblem.md)構造体の配列です。</span><span class="sxs-lookup"><span data-stu-id="7c8d8-112">Array of [STnefProblem](stnefproblem.md) structures.</span></span> <span data-ttu-id="7c8d8-113">各構造体には、プロパティまたは属性の問題の処理に関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="7c8d8-113">Each structure contains information about a property or attribute processing problem.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="9fd94-114">備考</span><span class="sxs-lookup"><span data-stu-id="9fd94-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7c8d8-114">注釈</span><span class="sxs-lookup"><span data-stu-id="7c8d8-114">Remarks</span></span>
 
-<span data-ttu-id="9fd94-115">[ITnef::ExtractProps](itnef-extractprops.md)メソッドと[ITnef::Finish](itnef-finish.md)メソッドの出力パラメーターが、構造体の**STnefProblemArray**と**ExtractProps へのポインターを受信する属性またはプロパティの処理中に問題が発生した場合****終了**各 MAPI_W_ERRORS_RETURNED の値を返すとします。</span><span class="sxs-lookup"><span data-stu-id="9fd94-115">If a problem occurs during attribute or property processing, an output parameter in the [ITnef::ExtractProps](itnef-extractprops.md) method and in the [ITnef::Finish](itnef-finish.md) method each receive a pointer to an **STnefProblemArray** structure and **ExtractProps** and **Finish** each return the value MAPI_W_ERRORS_RETURNED.</span></span> <span data-ttu-id="9fd94-116">このエラー値は、処理中に問題が発生したし、 **STnefProblemArray**構造体が生成されたことを示します。</span><span class="sxs-lookup"><span data-stu-id="9fd94-116">This error value indicates that a problem arose during processing and an **STnefProblemArray** structure was generated.</span></span> 
+<span data-ttu-id="7c8d8-115">[ITnef::ExtractProps](itnef-extractprops.md)メソッドと[ITnef::Finish](itnef-finish.md)メソッドの出力パラメーターが、構造体の**STnefProblemArray**と**ExtractProps へのポインターを受信する属性またはプロパティの処理中に問題が発生した場合****終了**各 MAPI_W_ERRORS_RETURNED の値を返すとします。</span><span class="sxs-lookup"><span data-stu-id="7c8d8-115">If a problem occurs during attribute or property processing, an output parameter in the [ITnef::ExtractProps](itnef-extractprops.md) method and in the [ITnef::Finish](itnef-finish.md) method each receive a pointer to an **STnefProblemArray** structure and **ExtractProps** and **Finish** each return the value MAPI_W_ERRORS_RETURNED.</span></span> <span data-ttu-id="7c8d8-116">このエラー値は、処理中に問題が発生したし、 **STnefProblemArray**構造体が生成されたことを示します。</span><span class="sxs-lookup"><span data-stu-id="7c8d8-116">This error value indicates that a problem arose during processing and an **STnefProblemArray** structure was generated.</span></span> 
   
-<span data-ttu-id="9fd94-117">**STnefProblem**構造体は、属性またはプロパティの処理中に生成されていない場合場合は、クライアント アプリケーションがその属性またはプロパティの処理が成功したことがあると仮定して続行できます。</span><span class="sxs-lookup"><span data-stu-id="9fd94-117">If an **STnefProblem** structure is not generated during the processing of an attribute or property, the client application can continue under the assumption that the processing of that attribute or property succeeded.</span></span> <span data-ttu-id="9fd94-118">唯一の例外は、ブロックをカプセル化のデコード中に問題が発生したときに発生します。</span><span class="sxs-lookup"><span data-stu-id="9fd94-118">The only exception occurs when the problem arose during decoding of an encapsulation block.</span></span> <span data-ttu-id="9fd94-119">このデコード中にエラーが発生した場合は、構造体に[SCODE](scode.md)として MAPI_E_UNABLE_TO_COMPLETE が返されます。</span><span class="sxs-lookup"><span data-stu-id="9fd94-119">If the error occurred during this decoding, MAPI_E_UNABLE_TO_COMPLETE can be returned as the [SCODE](scode.md) in the structure.</span></span> <span data-ttu-id="9fd94-120">この例では、ブロックに対応するコンポーネントのデコードを停止して、別のコンポーネントが続きますをデコードすること。</span><span class="sxs-lookup"><span data-stu-id="9fd94-120">In this case, the decoding of the component corresponding to the block is stopped and decoding is continued in another component.</span></span> 
+<span data-ttu-id="7c8d8-117">**STnefProblem**構造体は、属性またはプロパティの処理中に生成されていない場合場合は、クライアント アプリケーションがその属性またはプロパティの処理が成功したことがあると仮定して続行できます。</span><span class="sxs-lookup"><span data-stu-id="7c8d8-117">If an **STnefProblem** structure is not generated during the processing of an attribute or property, the client application can continue under the assumption that the processing of that attribute or property succeeded.</span></span> <span data-ttu-id="7c8d8-118">唯一の例外は、ブロックをカプセル化のデコード中に問題が発生したときに発生します。</span><span class="sxs-lookup"><span data-stu-id="7c8d8-118">The only exception occurs when the problem arose during decoding of an encapsulation block.</span></span> <span data-ttu-id="7c8d8-119">このデコード中にエラーが発生した場合は、構造体に[SCODE](scode.md)として MAPI_E_UNABLE_TO_COMPLETE が返されます。</span><span class="sxs-lookup"><span data-stu-id="7c8d8-119">If the error occurred during this decoding, MAPI_E_UNABLE_TO_COMPLETE can be returned as the [SCODE](scode.md) in the structure.</span></span> <span data-ttu-id="7c8d8-120">この例では、ブロックに対応するコンポーネントのデコードを停止して、別のコンポーネントが続きますをデコードすること。</span><span class="sxs-lookup"><span data-stu-id="7c8d8-120">In this case, the decoding of the component corresponding to the block is stopped and decoding is continued in another component.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="9fd94-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="9fd94-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7c8d8-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="7c8d8-121">See also</span></span>
 
 
 
-[<span data-ttu-id="9fd94-122">STnefProblem</span><span class="sxs-lookup"><span data-stu-id="9fd94-122">STnefProblem</span></span>](stnefproblem.md)
+[<span data-ttu-id="7c8d8-122">STnefProblem</span><span class="sxs-lookup"><span data-stu-id="7c8d8-122">STnefProblem</span></span>](stnefproblem.md)
   
-[<span data-ttu-id="9fd94-123">SCODE</span><span class="sxs-lookup"><span data-stu-id="9fd94-123">SCODE</span></span>](scode.md)
+[<span data-ttu-id="7c8d8-123">SCODE</span><span class="sxs-lookup"><span data-stu-id="7c8d8-123">SCODE</span></span>](scode.md)
 
 
-[<span data-ttu-id="9fd94-124">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="9fd94-124">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="7c8d8-124">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="7c8d8-124">MAPI Structures</span></span>](mapi-structures.md)
 

@@ -16,12 +16,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805369"
 ---
-# <a name="fill-format-section"></a><span data-ttu-id="5f2e0-103">[Fill Format] セクション</span><span class="sxs-lookup"><span data-stu-id="5f2e0-103">Fill Format Section</span></span>
+# <a name="fill-format-section"></a><span data-ttu-id="ab2f4-103">[塗りつぶしの書式設定] セクション</span><span class="sxs-lookup"><span data-stu-id="ab2f4-103">Fill Format Section</span></span>
 
-<span data-ttu-id="5f2e0-104">図形と図形の影に関する、現在の塗りつぶし書式の属性を表示します。属性には、パターン、前景の色、背景の色などがあります。</span><span class="sxs-lookup"><span data-stu-id="5f2e0-104">Shows the current fill formatting attributes for the shape and the shape's drop shadow, including pattern, foreground color, and background color.</span></span> 
+<span data-ttu-id="ab2f4-104">図形と図形の影に関する、現在の塗りつぶし書式の属性を表示します。属性には、パターン、前景の色、背景の色などがあります。</span><span class="sxs-lookup"><span data-stu-id="ab2f4-104">Shows the current fill formatting attributes for the shape and the shape's drop shadow, including pattern, foreground color, and background color.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="5f2e0-105">注釈</span><span class="sxs-lookup"><span data-stu-id="5f2e0-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ab2f4-105">注釈</span><span class="sxs-lookup"><span data-stu-id="ab2f4-105">Remarks</span></span>
 
-<span data-ttu-id="5f2e0-106">塗りつぶしの書式を設定するには、[**図形の書式設定**] ウィンドウで [**ホーム**] タブの [**図形のスタイル**] で、[**塗りつぶし**] をクリック、し、[**オートフィル オプション**] をクリックして)、塗りつぶしのスタイルを適用することによって、または**塗りつぶし書式**のセルに入力をすることによってセクションです。</span><span class="sxs-lookup"><span data-stu-id="5f2e0-106">You can set fill formats in the **Format Shape** pane (on the **Home** tab, in the **Shape Styles** group, click **Fill**, and then click **Fill Options**), by applying a fill style, or by making an entry in a cell in the **Fill Format** section.</span></span> 
+<span data-ttu-id="ab2f4-106">塗りつぶしの書式を設定するには、[**図形の書式設定**] ウィンドウで [**ホーム**] タブの [**図形のスタイル**] で、[**塗りつぶし**] をクリック、し、[**オートフィル オプション**] をクリックして)、塗りつぶしのスタイルを適用することによって、または**塗りつぶし書式**のセルに入力をすることによってセクションです。</span><span class="sxs-lookup"><span data-stu-id="ab2f4-106">You can set fill formats in the **Format Shape** pane (on the **Home** tab, in the **Shape Styles** group, click **Fill**, and then click **Fill Options**), by applying a fill style, or by making an entry in a cell in the **Fill Format** section.</span></span> 
   
 

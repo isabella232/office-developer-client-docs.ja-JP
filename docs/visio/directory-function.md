@@ -16,12 +16,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805209"
 ---
-# <a name="directory-function"></a><span data-ttu-id="b05c2-104">DIRECTORY 関数</span><span class="sxs-lookup"><span data-stu-id="b05c2-104">DIRECTORY Function</span></span>
+# <a name="directory-function"></a><span data-ttu-id="a6230-104">DIRECTORY 関数</span><span class="sxs-lookup"><span data-stu-id="a6230-104">DIRECTORY Function</span></span>
 
-<span data-ttu-id="b05c2-105">ドキュメントが保存されている、文字列としてのディレクトリ (フォルダー) への完全パスを返します。</span><span class="sxs-lookup"><span data-stu-id="b05c2-105">Returns the full path of the directory (folder) in which a document is saved, as a string.</span></span> <span data-ttu-id="b05c2-106">ドキュメントが保存されていない場合は、空の文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="b05c2-106">Returns an empty string if the document has not been saved.</span></span>
+<span data-ttu-id="a6230-105">ドキュメントが保存されている、文字列としてのディレクトリ (フォルダー) への完全パスを返します。</span><span class="sxs-lookup"><span data-stu-id="a6230-105">Returns the full path of the directory (folder) in which a document is saved, as a string.</span></span> <span data-ttu-id="a6230-106">ドキュメントが保存されていない場合は、空の文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="a6230-106">Returns an empty string if the document has not been saved.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="b05c2-107">構文</span><span class="sxs-lookup"><span data-stu-id="b05c2-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="a6230-107">構文</span><span class="sxs-lookup"><span data-stu-id="a6230-107">Syntax</span></span>
 
-<span data-ttu-id="b05c2-108">DIRECTORY ()</span><span class="sxs-lookup"><span data-stu-id="b05c2-108">DIRECTORY ()</span></span>
+<span data-ttu-id="a6230-108">DIRECTORY ()</span><span class="sxs-lookup"><span data-stu-id="a6230-108">DIRECTORY ()</span></span>
   
 

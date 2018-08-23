@@ -15,21 +15,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804484"
 ---
-# <a name="isocialsessiongetloggedonuser"></a><span data-ttu-id="27961-103">ISocialSession::GetLoggedOnUser</span><span class="sxs-lookup"><span data-stu-id="27961-103">ISocialSession::GetLoggedOnUser</span></span>
+# <a name="isocialsessiongetloggedonuser"></a><span data-ttu-id="2c3e2-103">ISocialSession::GetLoggedOnUser</span><span class="sxs-lookup"><span data-stu-id="2c3e2-103">ISocialSession::GetLoggedOnUser</span></span>
 
-<span data-ttu-id="27961-104">ログオン中のユーザーを表す[ISocialProfile](isocialprofileisocialperson.md)インターフェイスを取得します。</span><span class="sxs-lookup"><span data-stu-id="27961-104">Gets an [ISocialProfile](isocialprofileisocialperson.md) interface that represents the logged-on user.</span></span> 
+<span data-ttu-id="2c3e2-104">ログオン中のユーザーを表す[ISocialProfile](isocialprofileisocialperson.md)インターフェイスを取得します。</span><span class="sxs-lookup"><span data-stu-id="2c3e2-104">Gets an [ISocialProfile](isocialprofileisocialperson.md) interface that represents the logged-on user.</span></span> 
   
 ```cpp
 HRESULT _stdcall GetLoggedOnUser([out, retval] ISocialProfile** result);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="27961-105">Parameters</span><span class="sxs-lookup"><span data-stu-id="27961-105">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="2c3e2-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="2c3e2-105">Parameters</span></span>
 
-<span data-ttu-id="27961-106">_result_</span><span class="sxs-lookup"><span data-stu-id="27961-106">_result_</span></span>
+<span data-ttu-id="2c3e2-106">_result_</span><span class="sxs-lookup"><span data-stu-id="2c3e2-106">_result_</span></span>
   
-> <span data-ttu-id="27961-107">[out]**ISocialProfile**インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="27961-107">[out] An **ISocialProfile** interface.</span></span> 
+> <span data-ttu-id="2c3e2-107">[out]**ISocialProfile**インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="2c3e2-107">[out] An **ISocialProfile** interface.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="27961-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="27961-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2c3e2-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="2c3e2-108">See also</span></span>
 
-- [<span data-ttu-id="27961-109">ISocialSession: IUnknown</span><span class="sxs-lookup"><span data-stu-id="27961-109">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
+- [<span data-ttu-id="2c3e2-109">ISocialSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="2c3e2-109">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
 

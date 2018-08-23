@@ -15,25 +15,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804368"
 ---
-# <a name="isocialprovidergetsession"></a><span data-ttu-id="ceb4e-103">ISocialProvider::GetSession</span><span class="sxs-lookup"><span data-stu-id="ceb4e-103">ISocialProvider::GetSession</span></span>
+# <a name="isocialprovidergetsession"></a><span data-ttu-id="3fe2d-103">ISocialProvider::GetSession</span><span class="sxs-lookup"><span data-stu-id="3fe2d-103">ISocialProvider::GetSession</span></span>
 
-<span data-ttu-id="ceb4e-104">[ISocialSession](isocialsessioniunknown.md)インターフェイスを取得します。</span><span class="sxs-lookup"><span data-stu-id="ceb4e-104">Gets an [ISocialSession](isocialsessioniunknown.md) interface.</span></span> 
+<span data-ttu-id="3fe2d-104">[ISocialSession](isocialsessioniunknown.md)インターフェイスを取得します。</span><span class="sxs-lookup"><span data-stu-id="3fe2d-104">Gets an [ISocialSession](isocialsessioniunknown.md) interface.</span></span> 
   
 ```cpp
 HRESULT _stdcall GetSession([out, retval] ISocialSession** session);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="ceb4e-105">Parameters</span><span class="sxs-lookup"><span data-stu-id="ceb4e-105">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="3fe2d-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3fe2d-105">Parameters</span></span>
 
-<span data-ttu-id="ceb4e-106">_セッション_</span><span class="sxs-lookup"><span data-stu-id="ceb4e-106">_session_</span></span>
+<span data-ttu-id="3fe2d-106">_session_</span><span class="sxs-lookup"><span data-stu-id="3fe2d-106">_session_</span></span>
   
-> <span data-ttu-id="ceb4e-107">[out]**ISocialSession**インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="ceb4e-107">[out] An **ISocialSession** interface.</span></span> 
+> <span data-ttu-id="3fe2d-107">[out] **ISocialSession** インターフェイス。</span><span class="sxs-lookup"><span data-stu-id="3fe2d-107">[out] An **ISocialSession** interface.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="ceb4e-108">備考</span><span class="sxs-lookup"><span data-stu-id="ceb4e-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3fe2d-108">注釈</span><span class="sxs-lookup"><span data-stu-id="3fe2d-108">Remarks</span></span>
 
-<span data-ttu-id="ceb4e-109">Outlook ソーシャル コネクタ (OSC) では、ソーシャル ネットワークにログオンするのには、 **ISocialSession**インターフェイスを使用します。</span><span class="sxs-lookup"><span data-stu-id="ceb4e-109">The Outlook Social Connector (OSC) uses the **ISocialSession** interface to log on to the social network.</span></span> 
+<span data-ttu-id="3fe2d-109">Outlook ソーシャル コネクタ (OSC) では、ソーシャル ネットワークにログオンするのには、 **ISocialSession**インターフェイスを使用します。</span><span class="sxs-lookup"><span data-stu-id="3fe2d-109">The Outlook Social Connector (OSC) uses the **ISocialSession** interface to log on to the social network.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="ceb4e-110">関連項目</span><span class="sxs-lookup"><span data-stu-id="ceb4e-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3fe2d-110">関連項目</span><span class="sxs-lookup"><span data-stu-id="3fe2d-110">See also</span></span>
 
-- [<span data-ttu-id="ceb4e-111">ISocialProvider: IUnknown</span><span class="sxs-lookup"><span data-stu-id="ceb4e-111">ISocialProvider : IUnknown</span></span>](isocialprovideriunknown.md)
+- [<span data-ttu-id="3fe2d-111">ISocialProvider : IUnknown</span><span class="sxs-lookup"><span data-stu-id="3fe2d-111">ISocialProvider : IUnknown</span></span>](isocialprovideriunknown.md)
 

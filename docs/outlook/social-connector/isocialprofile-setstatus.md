@@ -15,15 +15,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804369"
 ---
-# <a name="isocialprofilesetstatus"></a><span data-ttu-id="70bd3-103">ISocialProfile::SetStatus</span><span class="sxs-lookup"><span data-stu-id="70bd3-103">ISocialProfile::SetStatus</span></span>
+# <a name="isocialprofilesetstatus"></a><span data-ttu-id="8d092-103">ISocialProfile::SetStatus</span><span class="sxs-lookup"><span data-stu-id="8d092-103">ISocialProfile::SetStatus</span></span>
 
-<span data-ttu-id="70bd3-104">このメソッドは現在サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="70bd3-104">This method is currently not supported.</span></span> 
+<span data-ttu-id="8d092-104">このメソッドは現在サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8d092-104">This method is currently not supported.</span></span> 
   
 ```cpp
 HRESULT _stdcall SetStatus(BSTR status);
 ```
 
-## <a name="see-also"></a><span data-ttu-id="70bd3-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="70bd3-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8d092-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="8d092-105">See also</span></span>
 
-- [<span data-ttu-id="70bd3-106">ISocialProfile: ISocialPerson</span><span class="sxs-lookup"><span data-stu-id="70bd3-106">ISocialProfile : ISocialPerson</span></span>](isocialprofileisocialperson.md)
+- [<span data-ttu-id="8d092-106">ISocialProfile : ISocialPerson</span><span class="sxs-lookup"><span data-stu-id="8d092-106">ISocialProfile : ISocialPerson</span></span>](isocialprofileisocialperson.md)
 

@@ -15,25 +15,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804359"
 ---
-# <a name="isocialsessiongetlogonurl"></a><span data-ttu-id="f290f-103">ISocialSession::GetLogonUrl</span><span class="sxs-lookup"><span data-stu-id="f290f-103">ISocialSession::GetLogonUrl</span></span>
+# <a name="isocialsessiongetlogonurl"></a><span data-ttu-id="a1e42-103">ISocialSession::GetLogonUrl</span><span class="sxs-lookup"><span data-stu-id="a1e42-103">ISocialSession::GetLogonUrl</span></span>
 
-<span data-ttu-id="f290f-104">Web 認証時にユーザーにブラウザー ベースのフォームを表示するために使用される URL を表す文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="f290f-104">Gets a string that represents a URL that is used for presenting a browser-based form to the user during web authentication.</span></span>
+<span data-ttu-id="a1e42-104">Web 認証時にユーザーにブラウザー ベースのフォームを表示するために使用される URL を表す文字列を取得します。</span><span class="sxs-lookup"><span data-stu-id="a1e42-104">Gets a string that represents a URL that is used for presenting a browser-based form to the user during web authentication.</span></span>
   
 ```cpp
 HRESULT _stdcall GetLogonUrl([out, retval] BSTR* url);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="f290f-105">Parameters</span><span class="sxs-lookup"><span data-stu-id="f290f-105">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="a1e42-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="a1e42-105">Parameters</span></span>
 
-<span data-ttu-id="f290f-106">_url_</span><span class="sxs-lookup"><span data-stu-id="f290f-106">_url_</span></span>
+<span data-ttu-id="a1e42-106">_url_</span><span class="sxs-lookup"><span data-stu-id="a1e42-106">_url_</span></span>
   
-> <span data-ttu-id="f290f-107">[out]Web 認証で使用するフォームの URL を含む文字列です。</span><span class="sxs-lookup"><span data-stu-id="f290f-107">[out] A string that contains a URL for the form used in web authentication.</span></span>
+> <span data-ttu-id="a1e42-107">[out]Web 認証で使用するフォームの URL を含む文字列です。</span><span class="sxs-lookup"><span data-stu-id="a1e42-107">[out] A string that contains a URL for the form used in web authentication.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="f290f-108">備考</span><span class="sxs-lookup"><span data-stu-id="f290f-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a1e42-108">注釈</span><span class="sxs-lookup"><span data-stu-id="a1e42-108">Remarks</span></span>
 
-<span data-ttu-id="f290f-109">フォームは、ユーザーに提示された後は、 _connectIn_パラメーターに空の文字列で[ISocialSession::LogonWeb](isocialsession-logonweb.md)メソッドが呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="f290f-109">After the form is presented to the user, the [ISocialSession::LogonWeb](isocialsession-logonweb.md) method is called with an empty string for the  _connectIn_ parameter.</span></span> 
+<span data-ttu-id="a1e42-109">フォームは、ユーザーに提示された後は、 _connectIn_パラメーターに空の文字列で[ISocialSession::LogonWeb](isocialsession-logonweb.md)メソッドが呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="a1e42-109">After the form is presented to the user, the [ISocialSession::LogonWeb](isocialsession-logonweb.md) method is called with an empty string for the  _connectIn_ parameter.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="f290f-110">関連項目</span><span class="sxs-lookup"><span data-stu-id="f290f-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a1e42-110">関連項目</span><span class="sxs-lookup"><span data-stu-id="a1e42-110">See also</span></span>
 
-- [<span data-ttu-id="f290f-111">ISocialSession: IUnknown</span><span class="sxs-lookup"><span data-stu-id="f290f-111">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
+- [<span data-ttu-id="a1e42-111">ISocialSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="a1e42-111">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
 

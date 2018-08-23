@@ -16,12 +16,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805210"
 ---
-# <a name="description-function"></a><span data-ttu-id="e87b3-103">DESCRIPTION 関数</span><span class="sxs-lookup"><span data-stu-id="e87b3-103">DESCRIPTION Function</span></span>
+# <a name="description-function"></a><span data-ttu-id="e8058-103">DESCRIPTION 関数</span><span class="sxs-lookup"><span data-stu-id="e8058-103">DESCRIPTION Function</span></span>
 
-<span data-ttu-id="e87b3-104">ドキュメントのプロパティの [**説明**] フィールドからテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="e87b3-104">Returns the text from the **Description** field of a document's properties.</span></span> 
+<span data-ttu-id="e8058-104">ドキュメントのプロパティの [**説明**] フィールドからテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="e8058-104">Returns the text from the **Description** field of a document's properties.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="e87b3-105">構文</span><span class="sxs-lookup"><span data-stu-id="e87b3-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e8058-105">構文</span><span class="sxs-lookup"><span data-stu-id="e8058-105">Syntax</span></span>
 
-<span data-ttu-id="e87b3-106">DESCRIPTION ()</span><span class="sxs-lookup"><span data-stu-id="e87b3-106">DESCRIPTION ()</span></span>
+<span data-ttu-id="e8058-106">DESCRIPTION ()</span><span class="sxs-lookup"><span data-stu-id="e8058-106">DESCRIPTION ()</span></span>
   
 

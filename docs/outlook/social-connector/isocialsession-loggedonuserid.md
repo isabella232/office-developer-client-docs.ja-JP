@@ -15,20 +15,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804365"
 ---
-# <a name="isocialsessionloggedonuserid"></a><span data-ttu-id="b177c-103">ISocialSession::LoggedOnUserID</span><span class="sxs-lookup"><span data-stu-id="b177c-103">ISocialSession::LoggedOnUserID</span></span>
+# <a name="isocialsessionloggedonuserid"></a><span data-ttu-id="bdf0c-103">ISocialSession::LoggedOnUserID</span><span class="sxs-lookup"><span data-stu-id="bdf0c-103">ISocialSession::LoggedOnUserID</span></span>
 
-<span data-ttu-id="b177c-104">現在ログオンしているユーザーのソーシャル ネットワークのユーザー ID を表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="b177c-104">Returns a string that represents the social network user ID of the user who is currently logged on.</span></span> 
+<span data-ttu-id="bdf0c-104">現在ログオンしているユーザーのソーシャル ネットワークのユーザー ID を表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="bdf0c-104">Returns a string that represents the social network user ID of the user who is currently logged on.</span></span> 
   
 ```cpp
 [propget] HRESULT _stdcall LoggedOnUserID([out, retval] BSTR* result);
 ```
 
-## <a name="property-value"></a><span data-ttu-id="b177c-105">プロパティ値</span><span class="sxs-lookup"><span data-stu-id="b177c-105">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="bdf0c-105">プロパティ値</span><span class="sxs-lookup"><span data-stu-id="bdf0c-105">Property value</span></span>
 
-<span data-ttu-id="b177c-106">ログオンしたユーザーのソーシャル ネットワークのユーザー ID を含む文字列です。</span><span class="sxs-lookup"><span data-stu-id="b177c-106">A string that contains the social network user ID of the logged-on user.</span></span>
+<span data-ttu-id="bdf0c-106">ログオンしたユーザーのソーシャル ネットワークのユーザー ID を含む文字列です。</span><span class="sxs-lookup"><span data-stu-id="bdf0c-106">A string that contains the social network user ID of the logged-on user.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="b177c-107">関連項目</span><span class="sxs-lookup"><span data-stu-id="b177c-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bdf0c-107">関連項目</span><span class="sxs-lookup"><span data-stu-id="bdf0c-107">See also</span></span>
 
-- [<span data-ttu-id="b177c-108">ISocialSession::LoggedOnUserName</span><span class="sxs-lookup"><span data-stu-id="b177c-108">ISocialSession::LoggedOnUserName</span></span>](isocialsession-loggedonusername.md)  
-- [<span data-ttu-id="b177c-109">ISocialSession: IUnknown</span><span class="sxs-lookup"><span data-stu-id="b177c-109">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
+- [<span data-ttu-id="bdf0c-108">ISocialSession::LoggedOnUserName</span><span class="sxs-lookup"><span data-stu-id="bdf0c-108">ISocialSession::LoggedOnUserName</span></span>](isocialsession-loggedonusername.md)  
+- [<span data-ttu-id="bdf0c-109">ISocialSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="bdf0c-109">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
 

@@ -16,30 +16,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805087"
 ---
-# <a name="conlinerouteext-cell-shape-layout-section"></a><span data-ttu-id="eda91-103">[ConLineRouteExt] セル ([Shape Layout] セクション)</span><span class="sxs-lookup"><span data-stu-id="eda91-103">ConLineRouteExt Cell (Shape Layout Section)</span></span>
+# <a name="conlinerouteext-cell-shape-layout-section"></a><span data-ttu-id="d973f-103">[ConLineRouteExt] セル ([図形レイアウト] セクション)</span><span class="sxs-lookup"><span data-stu-id="d973f-103">ConLineRouteExt Cell (Shape Layout Section)</span></span>
 
-<span data-ttu-id="eda91-104">コネクタの外観を指定します。</span><span class="sxs-lookup"><span data-stu-id="eda91-104">Determines the appearance of a connector.</span></span>
+<span data-ttu-id="d973f-104">コネクタの外観を指定します。</span><span class="sxs-lookup"><span data-stu-id="d973f-104">Determines the appearance of a connector.</span></span>
   
-|<span data-ttu-id="eda91-105">**値**</span><span class="sxs-lookup"><span data-stu-id="eda91-105">**Value**</span></span>|<span data-ttu-id="eda91-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="eda91-106">**Description**</span></span>|<span data-ttu-id="eda91-107">**オートメーション定数**</span><span class="sxs-lookup"><span data-stu-id="eda91-107">**Automation constant**</span></span>|
+|<span data-ttu-id="d973f-105">**値**</span><span class="sxs-lookup"><span data-stu-id="d973f-105">**Value**</span></span>|<span data-ttu-id="d973f-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="d973f-106">**Description**</span></span>|<span data-ttu-id="d973f-107">**オートメーション定数**</span><span class="sxs-lookup"><span data-stu-id="d973f-107">**Automation constant**</span></span>|
 |:-----|:-----|:-----|
-| <span data-ttu-id="eda91-108">0</span><span class="sxs-lookup"><span data-stu-id="eda91-108">0</span></span>  <br/> | <span data-ttu-id="eda91-109">既定値です。ページの設定を使用します。</span><span class="sxs-lookup"><span data-stu-id="eda91-109">Default; use page setting</span></span>  <br/> |<span data-ttu-id="eda91-110">**visLORouteExtDefault**</span><span class="sxs-lookup"><span data-stu-id="eda91-110">**visLORouteExtDefault**</span></span> <br/> |
-| <span data-ttu-id="eda91-111">1</span><span class="sxs-lookup"><span data-stu-id="eda91-111">1</span></span>  <br/> | <span data-ttu-id="eda91-112">直線</span><span class="sxs-lookup"><span data-stu-id="eda91-112">Straight</span></span>  <br/> |<span data-ttu-id="eda91-113">**visLORouteExtStraight**</span><span class="sxs-lookup"><span data-stu-id="eda91-113">**visLORouteExtStraight**</span></span> <br/> |
-| <span data-ttu-id="eda91-114">2</span><span class="sxs-lookup"><span data-stu-id="eda91-114">2</span></span>  <br/> | <span data-ttu-id="eda91-115">曲線</span><span class="sxs-lookup"><span data-stu-id="eda91-115">Curved</span></span>  <br/> |<span data-ttu-id="eda91-116">**visLORouteExtNURBS**</span><span class="sxs-lookup"><span data-stu-id="eda91-116">**visLORouteExtNURBS**</span></span> <br/> |
+| <span data-ttu-id="d973f-108">0</span><span class="sxs-lookup"><span data-stu-id="d973f-108">0</span></span>  <br/> | <span data-ttu-id="d973f-109">既定値です。ページの設定を使用します。</span><span class="sxs-lookup"><span data-stu-id="d973f-109">Default; use page setting</span></span>  <br/> |<span data-ttu-id="d973f-110">**visLORouteExtDefault**</span><span class="sxs-lookup"><span data-stu-id="d973f-110">**visLORouteExtDefault**</span></span> <br/> |
+| <span data-ttu-id="d973f-111">1</span><span class="sxs-lookup"><span data-stu-id="d973f-111">1</span></span>  <br/> | <span data-ttu-id="d973f-112">直線</span><span class="sxs-lookup"><span data-stu-id="d973f-112">Straight</span></span>  <br/> |<span data-ttu-id="d973f-113">**visLORouteExtStraight**</span><span class="sxs-lookup"><span data-stu-id="d973f-113">**visLORouteExtStraight**</span></span> <br/> |
+| <span data-ttu-id="d973f-114">2</span><span class="sxs-lookup"><span data-stu-id="d973f-114">2</span></span>  <br/> | <span data-ttu-id="d973f-115">曲線</span><span class="sxs-lookup"><span data-stu-id="d973f-115">Curved</span></span>  <br/> |<span data-ttu-id="d973f-116">**visLORouteExtNURBS**</span><span class="sxs-lookup"><span data-stu-id="d973f-116">**visLORouteExtNURBS**</span></span> <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="eda91-117">備考</span><span class="sxs-lookup"><span data-stu-id="eda91-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d973f-117">注釈</span><span class="sxs-lookup"><span data-stu-id="d973f-117">Remarks</span></span>
 
-<span data-ttu-id="eda91-118">別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ConLineRouteExt] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="eda91-118">To get a reference to the ConLineRouteExt cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="d973f-118">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ConLineRouteExt] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="d973f-118">To get a reference to the ConLineRouteExt cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="eda91-119">セル名:</span><span class="sxs-lookup"><span data-stu-id="eda91-119">Cell name:</span></span>  <br/> | <span data-ttu-id="eda91-120">ConLineRouteExt</span><span class="sxs-lookup"><span data-stu-id="eda91-120">ConLineRouteExt</span></span>  <br/> |
+| <span data-ttu-id="d973f-119">セル名:</span><span class="sxs-lookup"><span data-stu-id="d973f-119">Cell name:</span></span>  <br/> | <span data-ttu-id="d973f-120">ConLineRouteExt</span><span class="sxs-lookup"><span data-stu-id="d973f-120">ConLineRouteExt</span></span>  <br/> |
    
-<span data-ttu-id="eda91-121">プログラムから、インデックスによって [ConLineRouteExt] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="eda91-121">To get a reference to the ConLineRouteExt cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="d973f-121">プログラムから、インデックスによって [ConLineRouteExt] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="d973f-121">To get a reference to the ConLineRouteExt cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="eda91-122">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="eda91-122">Section index:</span></span>  <br/> |<span data-ttu-id="eda91-123">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="eda91-123">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="eda91-124">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="eda91-124">Row index:</span></span>  <br/> |<span data-ttu-id="eda91-125">**visRowShapeLayout**</span><span class="sxs-lookup"><span data-stu-id="eda91-125">**visRowShapeLayout**</span></span> <br/> |
-| <span data-ttu-id="eda91-126">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="eda91-126">Cell index:</span></span>  <br/> |<span data-ttu-id="eda91-127">**visSLOLineRouteExt**</span><span class="sxs-lookup"><span data-stu-id="eda91-127">**visSLOLineRouteExt**</span></span> <br/> |
+| <span data-ttu-id="d973f-122">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="d973f-122">Section index:</span></span>  <br/> |<span data-ttu-id="d973f-123">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="d973f-123">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="d973f-124">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="d973f-124">Row index:</span></span>  <br/> |<span data-ttu-id="d973f-125">**visRowShapeLayout**</span><span class="sxs-lookup"><span data-stu-id="d973f-125">**visRowShapeLayout**</span></span> <br/> |
+| <span data-ttu-id="d973f-126">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="d973f-126">Cell index:</span></span>  <br/> |<span data-ttu-id="d973f-127">**visSLOLineRouteExt**</span><span class="sxs-lookup"><span data-stu-id="d973f-127">**visSLOLineRouteExt**</span></span> <br/> |
    
 

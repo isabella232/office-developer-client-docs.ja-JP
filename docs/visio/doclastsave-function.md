@@ -16,16 +16,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805266"
 ---
-# <a name="doclastsave-function"></a><span data-ttu-id="dbd52-103">DOCLASTSAVE 関数</span><span class="sxs-lookup"><span data-stu-id="dbd52-103">DOCLASTSAVE Function</span></span>
+# <a name="doclastsave-function"></a><span data-ttu-id="2397e-103">DOCLASTSAVE 関数</span><span class="sxs-lookup"><span data-stu-id="2397e-103">DOCLASTSAVE Function</span></span>
 
-<span data-ttu-id="dbd52-104">ドキュメントが最後に保存された、シリアル値として日付を返します。</span><span class="sxs-lookup"><span data-stu-id="dbd52-104">Returns the date and time a document was last saved, as a serial value.</span></span>
+<span data-ttu-id="2397e-104">ドキュメントが最後に保存された、シリアル値として日付を返します。</span><span class="sxs-lookup"><span data-stu-id="2397e-104">Returns the date and time a document was last saved, as a serial value.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="dbd52-105">構文</span><span class="sxs-lookup"><span data-stu-id="dbd52-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="2397e-105">構文</span><span class="sxs-lookup"><span data-stu-id="2397e-105">Syntax</span></span>
 
-<span data-ttu-id="dbd52-106">DOCLASTSAVE ()</span><span class="sxs-lookup"><span data-stu-id="dbd52-106">DOCLASTSAVE ()</span></span>
+<span data-ttu-id="2397e-106">DOCLASTSAVE ()</span><span class="sxs-lookup"><span data-stu-id="2397e-106">DOCLASTSAVE ()</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="dbd52-107">注釈</span><span class="sxs-lookup"><span data-stu-id="dbd52-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2397e-107">注釈</span><span class="sxs-lookup"><span data-stu-id="2397e-107">Remarks</span></span>
 
-<span data-ttu-id="dbd52-108">戻り値を書式設定するには、FORMAT 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="dbd52-108">Use the FORMAT function to format the value.</span></span> 
+<span data-ttu-id="2397e-108">戻り値を書式設定するには、FORMAT 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="2397e-108">Use the FORMAT function to format the value.</span></span> 
   
 

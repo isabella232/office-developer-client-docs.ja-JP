@@ -15,23 +15,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804356"
 ---
-# <a name="isocialprovidersocialnetworkname"></a><span data-ttu-id="dda47-103">ISocialProvider::SocialNetworkName</span><span class="sxs-lookup"><span data-stu-id="dda47-103">ISocialProvider::SocialNetworkName</span></span>
+# <a name="isocialprovidersocialnetworkname"></a><span data-ttu-id="2660e-103">ISocialProvider::SocialNetworkName</span><span class="sxs-lookup"><span data-stu-id="2660e-103">ISocialProvider::SocialNetworkName</span></span>
 
-<span data-ttu-id="dda47-104">ソーシャル ネットワーク名を表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="dda47-104">Returns a string that represents the social network name.</span></span> 
+<span data-ttu-id="2660e-104">ソーシャル ネットワーク名を表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="2660e-104">Returns a string that represents the social network name.</span></span> 
   
 ```cpp
 [propget] HRESULT _stdcall SocialNetworkName([out, retval] BSTR* networkName);
 ```
 
-## <a name="property-value"></a><span data-ttu-id="dda47-105">プロパティ値</span><span class="sxs-lookup"><span data-stu-id="dda47-105">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="2660e-105">プロパティ値</span><span class="sxs-lookup"><span data-stu-id="2660e-105">Property value</span></span>
 
-<span data-ttu-id="dda47-106">ソーシャル ネットワーク名を含む文字列です。</span><span class="sxs-lookup"><span data-stu-id="dda47-106">A string that contains the social network name.</span></span>
+<span data-ttu-id="2660e-106">ソーシャル ネットワーク名を含む文字列です。</span><span class="sxs-lookup"><span data-stu-id="2660e-106">A string that contains the social network name.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="dda47-107">備考</span><span class="sxs-lookup"><span data-stu-id="dda47-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2660e-107">注釈</span><span class="sxs-lookup"><span data-stu-id="2660e-107">Remarks</span></span>
 
-<span data-ttu-id="dda47-108">Outlook ソーシャル コネクタ (OSC) プロバイダーには、ソーシャル ネットワークの名前をローカライズする必要があります。</span><span class="sxs-lookup"><span data-stu-id="dda47-108">Outlook Social Connector (OSC) providers should localize the social network name.</span></span>
+<span data-ttu-id="2660e-108">Outlook ソーシャル コネクタ (OSC) プロバイダーには、ソーシャル ネットワークの名前をローカライズする必要があります。</span><span class="sxs-lookup"><span data-stu-id="2660e-108">Outlook Social Connector (OSC) providers should localize the social network name.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="dda47-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="dda47-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2660e-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="2660e-109">See also</span></span>
 
-- [<span data-ttu-id="dda47-110">ISocialProvider: IUnknown</span><span class="sxs-lookup"><span data-stu-id="dda47-110">ISocialProvider : IUnknown</span></span>](isocialprovideriunknown.md)
+- [<span data-ttu-id="2660e-110">ISocialProvider : IUnknown</span><span class="sxs-lookup"><span data-stu-id="2660e-110">ISocialProvider : IUnknown</span></span>](isocialprovideriunknown.md)
 

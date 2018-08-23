@@ -14,18 +14,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805391"
 ---
-# <a name="fill-gradient-section"></a><span data-ttu-id="49548-103">[塗りつぶしのグラデーション] セクション</span><span class="sxs-lookup"><span data-stu-id="49548-103">Fill Gradient Section</span></span>
+# <a name="fill-gradient-section"></a><span data-ttu-id="e78be-103">[塗りつぶしグラデーション] セクション</span><span class="sxs-lookup"><span data-stu-id="e78be-103">Fill Gradient Section</span></span>
 
-<span data-ttu-id="49548-104">図形に適用する塗りつぶしのグラデーションの色の値を表示します。</span><span class="sxs-lookup"><span data-stu-id="49548-104">Shows the color values for the fill gradient applied to the shape.</span></span> 
+<span data-ttu-id="e78be-104">図形に適用する塗りつぶしのグラデーションの色の値を表示します。</span><span class="sxs-lookup"><span data-stu-id="e78be-104">Shows the color values for the fill gradient applied to the shape.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="49548-105">Remarks</span><span class="sxs-lookup"><span data-stu-id="49548-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e78be-105">Remarks</span><span class="sxs-lookup"><span data-stu-id="e78be-105">Remarks</span></span>
 
-<span data-ttu-id="49548-106">各[グラデーション停止 (グラデーションの塗りつぶし])](gradient-stop-row-fill-gradient-section.md)行、セクションでは、塗りつぶしのグラデーションの分岐点を表します。</span><span class="sxs-lookup"><span data-stu-id="49548-106">Each [Gradient Stop Row (Fill Gradient Section)](gradient-stop-row-fill-gradient-section.md) row in the section represents a gradient stop in the fill.</span></span> <span data-ttu-id="49548-107">このセクションを空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="49548-107">This section can be empty.</span></span> 
+<span data-ttu-id="e78be-106">各[グラデーション停止 (グラデーションの塗りつぶし])](gradient-stop-row-fill-gradient-section.md)行、セクションでは、塗りつぶしのグラデーションの分岐点を表します。</span><span class="sxs-lookup"><span data-stu-id="e78be-106">Each [Gradient Stop Row (Fill Gradient Section)](gradient-stop-row-fill-gradient-section.md) row in the section represents a gradient stop in the fill.</span></span> <span data-ttu-id="e78be-107">このセクションを空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="e78be-107">This section can be empty.</span></span> 
   
-<span data-ttu-id="49548-108">グラデーションの設定によっては、セクションに含まれる最初の 10 行のみが使用されます。</span><span class="sxs-lookup"><span data-stu-id="49548-108">Only the first 10 rows contained in the section are used by the gradient settings.</span></span> <span data-ttu-id="49548-109">10 を超えるすべての**グラデーション停止**行は無視されます。</span><span class="sxs-lookup"><span data-stu-id="49548-109">All **Gradient Stop** rows beyond 10 are ignored.</span></span> 
+<span data-ttu-id="e78be-p102">グラデーションの設定では、セクションに格納された最初の 10 行のみが使用されます。10 行を超える [**Gradient Stop**] 行はすべて無視されます。</span><span class="sxs-lookup"><span data-stu-id="e78be-p102">Only the first 10 rows contained in the section are used by the gradient settings. All **Gradient Stop** rows beyond 10 are ignored.</span></span> 
   
-<span data-ttu-id="49548-110">**図形の書式設定**] ウィンドウで、塗りつぶしグラデーション プロパティを設定できます ([**ホーム**] タブの [**図形のスタイル**] で、[**塗りつぶし**] をクリックし、[**オートフィル オプション**] をクリック) します。</span><span class="sxs-lookup"><span data-stu-id="49548-110">You can set the fill gradient properties in the **Format Shape** pane (on the **Home** tab, in the **Shape Styles** group, click **Fill**, and then click **Fill Options**).</span></span> 
+<span data-ttu-id="e78be-110">[**図形の書式設定**] ウィンドウでは、塗りつぶしのグラデーションのプロパティを設定できます。このウィンドウは、[**ホーム**] タブの、[**図形のスタイル**] グループで、[**塗りつぶし**] をクリックして、[**塗りつぶしのオプション**] をクリックすると表示されます。</span><span class="sxs-lookup"><span data-stu-id="e78be-110">You can set the fill gradient properties in the **Format Shape** pane (on the **Home** tab, in the **Shape Styles** group, click **Fill**, and then click **Fill Options**).</span></span> 
   
-<span data-ttu-id="49548-111">有効にしたり、 [FillGradientEnabled (グラデーション プロパティ] セクションで)](fillgradientenabled-cell-gradient-properties-section.md)セルの値を変更することによって、図形のグラデーションの塗りを無効にできます。</span><span class="sxs-lookup"><span data-stu-id="49548-111">You can enable or disable a gradient fill for the shape by changing the value of the [FillGradientEnabled Cell (Gradient Properties Section)](fillgradientenabled-cell-gradient-properties-section.md) cell.</span></span> 
+<span data-ttu-id="e78be-111">有効にしたり、 [FillGradientEnabled (グラデーション プロパティ] セクションで)](fillgradientenabled-cell-gradient-properties-section.md)セルの値を変更することによって、図形のグラデーションの塗りを無効にできます。</span><span class="sxs-lookup"><span data-stu-id="e78be-111">You can enable or disable a gradient fill for the shape by changing the value of the [FillGradientEnabled Cell (Gradient Properties Section)](fillgradientenabled-cell-gradient-properties-section.md) cell.</span></span> 
   
 

@@ -15,23 +15,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804357"
 ---
-# <a name="isocialproviderversion"></a><span data-ttu-id="d65f5-103">ISocialProvider::Version</span><span class="sxs-lookup"><span data-stu-id="d65f5-103">ISocialProvider::Version</span></span>
+# <a name="isocialproviderversion"></a><span data-ttu-id="757e3-103">ISocialProvider::Version</span><span class="sxs-lookup"><span data-stu-id="757e3-103">ISocialProvider::Version</span></span>
 
-<span data-ttu-id="d65f5-104">このソーシャル ネットワーク プロバイダーのバージョン番号を表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="d65f5-104">Returns a string that represents the version number of the provider for this social network.</span></span> 
+<span data-ttu-id="757e3-104">このソーシャル ネットワーク プロバイダーのバージョン番号を表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="757e3-104">Returns a string that represents the version number of the provider for this social network.</span></span> 
   
 ```cpp
 [propget] HRESULT _stdcall Version([out, retval] BSTR* Version);
 ```
 
-## <a name="property-value"></a><span data-ttu-id="d65f5-105">プロパティ値</span><span class="sxs-lookup"><span data-stu-id="d65f5-105">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="757e3-105">プロパティ値</span><span class="sxs-lookup"><span data-stu-id="757e3-105">Property value</span></span>
 
-<span data-ttu-id="d65f5-106">プロバイダーのバージョン番号を含む文字列です。</span><span class="sxs-lookup"><span data-stu-id="d65f5-106">A string that contains the version number of the provider.</span></span>
+<span data-ttu-id="757e3-106">プロバイダーのバージョン番号を含む文字列です。</span><span class="sxs-lookup"><span data-stu-id="757e3-106">A string that contains the version number of the provider.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="d65f5-107">備考</span><span class="sxs-lookup"><span data-stu-id="d65f5-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="757e3-107">注釈</span><span class="sxs-lookup"><span data-stu-id="757e3-107">Remarks</span></span>
 
-<span data-ttu-id="d65f5-108">バージョン文字列は、 _MajorVersion_を使用してください。</span><span class="sxs-lookup"><span data-stu-id="d65f5-108">The version string should use the  _MajorVersion_.</span></span> <span data-ttu-id="d65f5-109">_マイナー バージョン_の形式 (たとえば、1.4730) です。</span><span class="sxs-lookup"><span data-stu-id="d65f5-109">_MinorVersion_ format (for example, 1.4730).</span></span> 
+<span data-ttu-id="757e3-108">バージョン文字列は、 _MajorVersion_を使用してください。</span><span class="sxs-lookup"><span data-stu-id="757e3-108">The version string should use the  _MajorVersion_.</span></span> <span data-ttu-id="757e3-109">_マイナー バージョン_の形式 (たとえば、1.4730) です。</span><span class="sxs-lookup"><span data-stu-id="757e3-109">_MinorVersion_ format (for example, 1.4730).</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="d65f5-110">関連項目</span><span class="sxs-lookup"><span data-stu-id="d65f5-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="757e3-110">関連項目</span><span class="sxs-lookup"><span data-stu-id="757e3-110">See also</span></span>
 
-- [<span data-ttu-id="d65f5-111">ISocialProvider: IUnknown</span><span class="sxs-lookup"><span data-stu-id="d65f5-111">ISocialProvider : IUnknown</span></span>](isocialprovideriunknown.md)
+- [<span data-ttu-id="757e3-111">ISocialProvider : IUnknown</span><span class="sxs-lookup"><span data-stu-id="757e3-111">ISocialProvider : IUnknown</span></span>](isocialprovideriunknown.md)
 

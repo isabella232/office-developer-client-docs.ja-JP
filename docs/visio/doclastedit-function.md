@@ -14,16 +14,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805270"
 ---
-# <a name="doclastedit-function"></a><span data-ttu-id="7df4a-103">DOCLASTEDIT 関数</span><span class="sxs-lookup"><span data-stu-id="7df4a-103">DOCLASTEDIT Function</span></span>
+# <a name="doclastedit-function"></a><span data-ttu-id="6b842-103">DOCLASTEDIT 関数</span><span class="sxs-lookup"><span data-stu-id="6b842-103">DOCLASTEDIT Function</span></span>
 
-<span data-ttu-id="7df4a-104">図面が最後に編集された日時をシリアル値として返します。</span><span class="sxs-lookup"><span data-stu-id="7df4a-104">Returns, as a serial value, the date and the time that a document was last edited.</span></span>
+<span data-ttu-id="6b842-104">図面が最後に編集された日時をシリアル値として返します。</span><span class="sxs-lookup"><span data-stu-id="6b842-104">Returns, as a serial value, the date and the time that a document was last edited.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="7df4a-105">構文</span><span class="sxs-lookup"><span data-stu-id="7df4a-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6b842-105">構文</span><span class="sxs-lookup"><span data-stu-id="6b842-105">Syntax</span></span>
 
-<span data-ttu-id="7df4a-106">DOCLASTEDIT()</span><span class="sxs-lookup"><span data-stu-id="7df4a-106">DOCLASTEDIT()</span></span>
+<span data-ttu-id="6b842-106">DOCLASTEDIT()</span><span class="sxs-lookup"><span data-stu-id="6b842-106">DOCLASTEDIT()</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="7df4a-107">注釈</span><span class="sxs-lookup"><span data-stu-id="7df4a-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6b842-107">注釈</span><span class="sxs-lookup"><span data-stu-id="6b842-107">Remarks</span></span>
 
-<span data-ttu-id="7df4a-108">値の書式を設定するのにには、 [FORMAT](format-function.md)関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="7df4a-108">Use the [FORMAT](format-function.md) function to format the value.</span></span> 
+<span data-ttu-id="6b842-108">値の書式を設定するのにには、 [FORMAT](format-function.md)関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="6b842-108">Use the [FORMAT](format-function.md) function to format the value.</span></span> 
   
 

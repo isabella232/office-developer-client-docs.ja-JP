@@ -16,12 +16,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804942"
 ---
-# <a name="category-function"></a><span data-ttu-id="af409-103">CATEGORY 関数</span><span class="sxs-lookup"><span data-stu-id="af409-103">CATEGORY Function</span></span>
+# <a name="category-function"></a><span data-ttu-id="3865e-103">CATEGORY 関数</span><span class="sxs-lookup"><span data-stu-id="3865e-103">CATEGORY Function</span></span>
 
-<span data-ttu-id="af409-104">ドキュメントのプロパティの [**カテゴリ**] フィールドからテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="af409-104">Returns the text from the **Category** field of a document's properties.</span></span> 
+<span data-ttu-id="3865e-104">ドキュメントのプロパティの [**カテゴリ**] フィールドからテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="3865e-104">Returns the text from the **Category** field of a document's properties.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="af409-105">構文</span><span class="sxs-lookup"><span data-stu-id="af409-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="3865e-105">構文</span><span class="sxs-lookup"><span data-stu-id="3865e-105">Syntax</span></span>
 
-<span data-ttu-id="af409-106">CATEGORY ( )</span><span class="sxs-lookup"><span data-stu-id="af409-106">CATEGORY ( )</span></span>
+<span data-ttu-id="3865e-106">CATEGORY ( )</span><span class="sxs-lookup"><span data-stu-id="3865e-106">CATEGORY ( )</span></span>
   
 

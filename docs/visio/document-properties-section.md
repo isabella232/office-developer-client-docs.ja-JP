@@ -16,12 +16,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805249"
 ---
-# <a name="document-properties-section"></a><span data-ttu-id="a01ba-103">[Document Properties] セクション</span><span class="sxs-lookup"><span data-stu-id="a01ba-103">Document Properties Section</span></span>
+# <a name="document-properties-section"></a><span data-ttu-id="40a79-103">[ドキュメントのプロパティ] セクション</span><span class="sxs-lookup"><span data-stu-id="40a79-103">Document Properties Section</span></span>
 
-<span data-ttu-id="a01ba-104">プレビューの品質、範囲、および出力形式を制御するための、図面のセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="a01ba-104">Contains cells for a document that control preview quality, scope, and output format.</span></span>
+<span data-ttu-id="40a79-104">プレビューの品質、範囲、および出力形式を制御するための、図面のセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="40a79-104">Contains cells for a document that control preview quality, scope, and output format.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="a01ba-105">注釈</span><span class="sxs-lookup"><span data-stu-id="a01ba-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="40a79-105">注釈</span><span class="sxs-lookup"><span data-stu-id="40a79-105">Remarks</span></span>
 
- <span data-ttu-id="a01ba-106">[**プロパティ**] ダイアログ ボックスを使用してこれらの値を設定することもできます (、[**ファイル**] タブをクリックして、[**情報**] をクリックして、**プロパティ**] をクリックし、**プロパティの詳細設定**] をクリック) します。</span><span class="sxs-lookup"><span data-stu-id="a01ba-106">You can also set these values by using the **Properties** dialog box (click the **File** tab, click **Info**, click **Properties**, and then click **Advanced Properties**).</span></span>
+ <span data-ttu-id="40a79-106">[**プロパティ**] ダイアログ ボックスを使用してこれらの値を設定することもできます (、[**ファイル**] タブをクリックして、[**情報**] をクリックして、**プロパティ**] をクリックし、**プロパティの詳細設定**] をクリック) します。</span><span class="sxs-lookup"><span data-stu-id="40a79-106">You can also set these values by using the **Properties** dialog box (click the **File** tab, click **Info**, click **Properties**, and then click **Advanced Properties**).</span></span>
   
 

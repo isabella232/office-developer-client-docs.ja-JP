@@ -16,16 +16,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805243"
 ---
-# <a name="doclastprint-function"></a><span data-ttu-id="2ca5c-103">DOCLASTPRINT 関数</span><span class="sxs-lookup"><span data-stu-id="2ca5c-103">DOCLASTPRINT Function</span></span>
+# <a name="doclastprint-function"></a><span data-ttu-id="8ab3e-103">DOCLASTPRINT 関数</span><span class="sxs-lookup"><span data-stu-id="8ab3e-103">DOCLASTPRINT Function</span></span>
 
-<span data-ttu-id="2ca5c-104">ドキュメントが最後に印刷されたシリアル値として日付を返します。</span><span class="sxs-lookup"><span data-stu-id="2ca5c-104">Returns the date and time a document was last printed, as a serial value.</span></span>
+<span data-ttu-id="8ab3e-104">ドキュメントが最後に印刷されたシリアル値として日付を返します。</span><span class="sxs-lookup"><span data-stu-id="8ab3e-104">Returns the date and time a document was last printed, as a serial value.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="2ca5c-105">構文</span><span class="sxs-lookup"><span data-stu-id="2ca5c-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="8ab3e-105">構文</span><span class="sxs-lookup"><span data-stu-id="8ab3e-105">Syntax</span></span>
 
-<span data-ttu-id="2ca5c-106">DOCLASTPRINT ()</span><span class="sxs-lookup"><span data-stu-id="2ca5c-106">DOCLASTPRINT ()</span></span>
+<span data-ttu-id="8ab3e-106">DOCLASTPRINT ()</span><span class="sxs-lookup"><span data-stu-id="8ab3e-106">DOCLASTPRINT ()</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="2ca5c-107">注釈</span><span class="sxs-lookup"><span data-stu-id="2ca5c-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8ab3e-107">注釈</span><span class="sxs-lookup"><span data-stu-id="8ab3e-107">Remarks</span></span>
 
-<span data-ttu-id="2ca5c-108">戻り値を書式設定するには、FORMAT 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="2ca5c-108">Use the FORMAT function to format the value.</span></span> 
+<span data-ttu-id="8ab3e-108">戻り値を書式設定するには、FORMAT 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="8ab3e-108">Use the FORMAT function to format the value.</span></span> 
   
 

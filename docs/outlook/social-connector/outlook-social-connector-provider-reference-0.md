@@ -1,5 +1,5 @@
 ---
-title: Outlook ソーシャル コネクタ プロバイダーの参照
+title: Outlook Social Connector プロバイダーのリファレンス
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,22 +15,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804448"
 ---
-# <a name="outlook-social-connector-provider-reference"></a><span data-ttu-id="61ad1-103">Outlook ソーシャル コネクタ プロバイダーの参照</span><span class="sxs-lookup"><span data-stu-id="61ad1-103">Outlook Social Connector provider reference</span></span>
+# <a name="outlook-social-connector-provider-reference"></a><span data-ttu-id="6bc52-103">Outlook Social Connector プロバイダーのリファレンス</span><span class="sxs-lookup"><span data-stu-id="6bc52-103">Outlook Social Connector provider reference</span></span>
 
-<span data-ttu-id="61ad1-104">このセクションには、Outlook ソーシャル コネクタ (OSC) プロバイダーの機能拡張のリファレンス トピックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="61ad1-104">This section contains reference topics for Outlook Social Connector (OSC) provider extensibility.</span></span>
+<span data-ttu-id="6bc52-104">このセクションには、Outlook ソーシャル コネクタ (OSC) プロバイダーの機能拡張のリファレンス トピックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="6bc52-104">This section contains reference topics for Outlook Social Connector (OSC) provider extensibility.</span></span>
   
-## <a name="in-this-section"></a><span data-ttu-id="61ad1-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="61ad1-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="6bc52-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="6bc52-105">In this section</span></span>
 
-- [<span data-ttu-id="61ad1-106">インタ フェース</span><span class="sxs-lookup"><span data-stu-id="61ad1-106">Interfaces</span></span>](outlook-social-connector-provider-interfaces.md)
+- [<span data-ttu-id="6bc52-106">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="6bc52-106">Interfaces</span></span>](outlook-social-connector-provider-interfaces.md)
   
-- [<span data-ttu-id="61ad1-107">XML スキーマ</span><span class="sxs-lookup"><span data-stu-id="61ad1-107">XML Schema</span></span>](outlook-social-connector-provider-xml-schema.md)
+- [<span data-ttu-id="6bc52-107">XML スキーマ</span><span class="sxs-lookup"><span data-stu-id="6bc52-107">XML Schema</span></span>](outlook-social-connector-provider-xml-schema.md)
   
-- [<span data-ttu-id="61ad1-108">エラー コード</span><span class="sxs-lookup"><span data-stu-id="61ad1-108">Error Codes</span></span>](outlook-social-connector-provider-error-codes.md)
+- [<span data-ttu-id="6bc52-108">エラー コード</span><span class="sxs-lookup"><span data-stu-id="6bc52-108">Error Codes</span></span>](outlook-social-connector-provider-error-codes.md)
   
-## <a name="related-sections"></a><span data-ttu-id="61ad1-109">関連セクション</span><span class="sxs-lookup"><span data-stu-id="61ad1-109">Related sections</span></span>
+## <a name="related-sections"></a><span data-ttu-id="6bc52-109">関連情報</span><span class="sxs-lookup"><span data-stu-id="6bc52-109">Related sections</span></span>
 
-- [<span data-ttu-id="61ad1-110">プロバイダーを開発するためのベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="61ad1-110">Best Practices for Developing a Provider</span></span>](best-practices-for-developing-a-provider.md)
+- [<span data-ttu-id="6bc52-110">プロバイダーを開発するためのベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="6bc52-110">Best Practices for Developing a Provider</span></span>](best-practices-for-developing-a-provider.md)
   
-- [<span data-ttu-id="61ad1-111">OSC サンプル テンプレート</span><span class="sxs-lookup"><span data-stu-id="61ad1-111">OSC Sample Templates</span></span>](osc-sample-templates.md)
+- [<span data-ttu-id="6bc52-111">OSC サンプル テンプレート</span><span class="sxs-lookup"><span data-stu-id="6bc52-111">OSC Sample Templates</span></span>](osc-sample-templates.md)
   
 

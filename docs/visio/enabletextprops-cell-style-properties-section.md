@@ -16,29 +16,29 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805306"
 ---
-# <a name="enabletextprops-cell-style-properties-section"></a><span data-ttu-id="c25fc-103">[EnableTextProps] セル ([Style Properties] セクション)</span><span class="sxs-lookup"><span data-stu-id="c25fc-103">EnableTextProps Cell (Style Properties Section)</span></span>
+# <a name="enabletextprops-cell-style-properties-section"></a><span data-ttu-id="1099d-103">[EnableTextProps] セル ([スタイルのプロパティ] セクション)</span><span class="sxs-lookup"><span data-stu-id="1099d-103">EnableTextProps Cell (Style Properties Section)</span></span>
 
-<span data-ttu-id="c25fc-104">スタイルにテキストのプロパティを含めるかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="c25fc-104">Determines whether a style includes text properties.</span></span>
+<span data-ttu-id="1099d-104">スタイルにテキストのプロパティを含めるかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="1099d-104">Determines whether a style includes text properties.</span></span>
   
-|<span data-ttu-id="c25fc-105">**値**</span><span class="sxs-lookup"><span data-stu-id="c25fc-105">**Value**</span></span>|<span data-ttu-id="c25fc-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="c25fc-106">**Description**</span></span>|
+|<span data-ttu-id="1099d-105">**値**</span><span class="sxs-lookup"><span data-stu-id="1099d-105">**Value**</span></span>|<span data-ttu-id="1099d-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="1099d-106">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="c25fc-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="c25fc-107">TRUE</span></span>  <br/> |<span data-ttu-id="c25fc-108">テキストのプロパティを含めます。</span><span class="sxs-lookup"><span data-stu-id="c25fc-108">Include text properties.</span></span>  <br/> |
-|<span data-ttu-id="c25fc-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="c25fc-109">FALSE</span></span>  <br/> |<span data-ttu-id="c25fc-110">テキストのプロパティを含めません。</span><span class="sxs-lookup"><span data-stu-id="c25fc-110">Exclude text properties.</span></span>  <br/> |
+|<span data-ttu-id="1099d-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="1099d-107">TRUE</span></span>  <br/> |<span data-ttu-id="1099d-108">テキストのプロパティを含めます。</span><span class="sxs-lookup"><span data-stu-id="1099d-108">Include text properties.</span></span>  <br/> |
+|<span data-ttu-id="1099d-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="1099d-109">FALSE</span></span>  <br/> |<span data-ttu-id="1099d-110">テキストのプロパティを含めません。</span><span class="sxs-lookup"><span data-stu-id="1099d-110">Exclude text properties.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="c25fc-111">注釈</span><span class="sxs-lookup"><span data-stu-id="c25fc-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1099d-111">注釈</span><span class="sxs-lookup"><span data-stu-id="1099d-111">Remarks</span></span>
 
-<span data-ttu-id="c25fc-112">別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[EnableTextProps] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="c25fc-112">To get a reference to the EnableTextProps cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="1099d-112">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [EnableTextProps] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="1099d-112">To get a reference to the EnableTextProps cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="c25fc-113">セル名 :</span><span class="sxs-lookup"><span data-stu-id="c25fc-113">Cell name:</span></span>  <br/> |<span data-ttu-id="c25fc-114">EnableTextProps</span><span class="sxs-lookup"><span data-stu-id="c25fc-114">EnableTextProps</span></span>  <br/> |
+|<span data-ttu-id="1099d-113">セル名 :</span><span class="sxs-lookup"><span data-stu-id="1099d-113">Cell name:</span></span>  <br/> |<span data-ttu-id="1099d-114">EnableTextProps</span><span class="sxs-lookup"><span data-stu-id="1099d-114">EnableTextProps</span></span>  <br/> |
    
-<span data-ttu-id="c25fc-115">プログラムから、インデックスによって [EnableTextProps] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="c25fc-115">To get a reference to the EnableTextProps cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="1099d-115">プログラムから、インデックスによって [EnableTextProps] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="1099d-115">To get a reference to the EnableTextProps cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="c25fc-116">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="c25fc-116">Section index:</span></span>  <br/> |<span data-ttu-id="c25fc-117">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="c25fc-117">**visSectionObject**</span></span> <br/> |
-|<span data-ttu-id="c25fc-118">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="c25fc-118">Row index:</span></span>  <br/> |<span data-ttu-id="c25fc-119">**visRowStyle**</span><span class="sxs-lookup"><span data-stu-id="c25fc-119">**visRowStyle**</span></span> <br/> |
-|<span data-ttu-id="c25fc-120">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="c25fc-120">Cell index:</span></span>  <br/> |<span data-ttu-id="c25fc-121">**visStyleIncludesText**</span><span class="sxs-lookup"><span data-stu-id="c25fc-121">**visStyleIncludesText**</span></span> <br/> |
+|<span data-ttu-id="1099d-116">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="1099d-116">Section index:</span></span>  <br/> |<span data-ttu-id="1099d-117">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="1099d-117">**visSectionObject**</span></span> <br/> |
+|<span data-ttu-id="1099d-118">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="1099d-118">Row index:</span></span>  <br/> |<span data-ttu-id="1099d-119">**visRowStyle**</span><span class="sxs-lookup"><span data-stu-id="1099d-119">**visRowStyle**</span></span> <br/> |
+|<span data-ttu-id="1099d-120">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="1099d-120">Cell index:</span></span>  <br/> |<span data-ttu-id="1099d-121">**visStyleIncludesText**</span><span class="sxs-lookup"><span data-stu-id="1099d-121">**visStyleIncludesText**</span></span> <br/> |
    
 

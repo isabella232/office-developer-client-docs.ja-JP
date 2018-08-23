@@ -16,12 +16,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805053"
 ---
-# <a name="company-function"></a><span data-ttu-id="e6209-103">COMPANY 関数</span><span class="sxs-lookup"><span data-stu-id="e6209-103">COMPANY Function</span></span>
+# <a name="company-function"></a><span data-ttu-id="bee24-103">COMPANY 関数</span><span class="sxs-lookup"><span data-stu-id="bee24-103">COMPANY Function</span></span>
 
-<span data-ttu-id="e6209-104">ドキュメントのプロパティの [**会社名**] フィールドからテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="e6209-104">Returns the text from the **Company** field of a document's properties.</span></span> 
+<span data-ttu-id="bee24-104">ドキュメントのプロパティの [**会社名**] フィールドからテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="bee24-104">Returns the text from the **Company** field of a document's properties.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="e6209-105">構文</span><span class="sxs-lookup"><span data-stu-id="e6209-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="bee24-105">構文</span><span class="sxs-lookup"><span data-stu-id="bee24-105">Syntax</span></span>
 
-<span data-ttu-id="e6209-106">会社)</span><span class="sxs-lookup"><span data-stu-id="e6209-106">COMPANY ()</span></span>
+<span data-ttu-id="bee24-106">会社)</span><span class="sxs-lookup"><span data-stu-id="bee24-106">COMPANY ()</span></span>
   
 

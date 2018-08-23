@@ -16,26 +16,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805193"
 ---
-# <a name="default-cell-hyperlinks-section"></a><span data-ttu-id="854c7-104">[Default] セル ([Hyperlinks] セクション)</span><span class="sxs-lookup"><span data-stu-id="854c7-104">Default Cell (Hyperlinks Section)</span></span>
+# <a name="default-cell-hyperlinks-section"></a><span data-ttu-id="ad7c1-104">[Default] セル ([ハイパーリンク] セクション)</span><span class="sxs-lookup"><span data-stu-id="ad7c1-104">Default Cell (Hyperlinks Section)</span></span>
 
-<span data-ttu-id="854c7-p102">図形またはページの既定のハイパーリンクを指定します。既定のハイパーリンクを設定するには、このセルの値を TRUE に設定します。</span><span class="sxs-lookup"><span data-stu-id="854c7-p102">Determines the default hyperlink for a shape or page. Set the value of this cell to TRUE to set a hyperlink as the default.</span></span>
+<span data-ttu-id="ad7c1-p102">図形またはページの既定のハイパーリンクを指定します。既定のハイパーリンクを設定するには、このセルの値を TRUE に設定します。</span><span class="sxs-lookup"><span data-stu-id="ad7c1-p102">Determines the default hyperlink for a shape or page. Set the value of this cell to TRUE to set a hyperlink as the default.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="854c7-107">注釈</span><span class="sxs-lookup"><span data-stu-id="854c7-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ad7c1-107">注釈</span><span class="sxs-lookup"><span data-stu-id="ad7c1-107">Remarks</span></span>
 
-<span data-ttu-id="854c7-108">図形を選択すると、[**挿入**] タブで、**ハイパーリンク**をクリックすると、ハイパーリンクを選択すると、 **] をクリック**して既定のハイパーリンクを設定することもできます。</span><span class="sxs-lookup"><span data-stu-id="854c7-108">You can also set the default hyperlink by selecting a shape, clicking **Hyperlink** on the **Insert** tab, selecting a hyperlink, and then clicking **Default**.</span></span> <span data-ttu-id="854c7-109">既定のハイパーリンクは太字で表示されます。</span><span class="sxs-lookup"><span data-stu-id="854c7-109">The default hyperlink appears in bold text.</span></span>
+<span data-ttu-id="ad7c1-p103">既定のハイパーリンクは、図形をクリックして [**挿入**] タブの [**ハイパーリンク**] をクリックし、[**既定値**] をクリックすることで設定することもできます。既定のハイパーリンクは太字で表示されます。</span><span class="sxs-lookup"><span data-stu-id="ad7c1-p103">You can also set the default hyperlink by selecting a shape, clicking **Hyperlink** on the **Insert** tab, selecting a hyperlink, and then clicking **Default**. The default hyperlink appears in bold text.</span></span>
   
-<span data-ttu-id="854c7-110">別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[Default] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="854c7-110">To get a reference to the Default cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="ad7c1-110">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Default] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="ad7c1-110">To get a reference to the Default cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="854c7-111">セル名:</span><span class="sxs-lookup"><span data-stu-id="854c7-111">Cell name:</span></span>  <br/> |<span data-ttu-id="854c7-112">ハイパーリンク</span><span class="sxs-lookup"><span data-stu-id="854c7-112">Hyperlink.</span></span> <span data-ttu-id="854c7-113">*名*です。既定の場所のハイパーリンクです。</span><span class="sxs-lookup"><span data-stu-id="854c7-113">*Name*  .Default           where Hyperlink.</span></span> <span data-ttu-id="854c7-114">*名前*は、行の名前</span><span class="sxs-lookup"><span data-stu-id="854c7-114">*Name*  is the row name</span></span>  <br/> |
+|<span data-ttu-id="ad7c1-111">セル名:</span><span class="sxs-lookup"><span data-stu-id="ad7c1-111">Cell name:</span></span>  <br/> |<span data-ttu-id="ad7c1-112">ハイパーリンク</span><span class="sxs-lookup"><span data-stu-id="ad7c1-112">Hyperlink.</span></span> <span data-ttu-id="ad7c1-113">*名*です。既定の場所のハイパーリンクです。</span><span class="sxs-lookup"><span data-stu-id="ad7c1-113">*Name*  .Default           where Hyperlink.</span></span> <span data-ttu-id="ad7c1-114">*名前*は、行の名前</span><span class="sxs-lookup"><span data-stu-id="ad7c1-114">*Name*  is the row name</span></span>  <br/> |
    
-<span data-ttu-id="854c7-115">プログラムから、インデックスによって [Default] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="854c7-115">To get a reference to the Default cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="ad7c1-115">プログラムから、インデックスによって [Default] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="ad7c1-115">To get a reference to the Default cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="854c7-116">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="854c7-116">Section index:</span></span>  <br/> |<span data-ttu-id="854c7-117">**visSectionHyperlink**</span><span class="sxs-lookup"><span data-stu-id="854c7-117">**visSectionHyperlink**</span></span> <br/> |
-|<span data-ttu-id="854c7-118">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="854c7-118">Row index:</span></span>  <br/> |<span data-ttu-id="854c7-119">**visRow1stHyperlink** +  *i* 、 *i* = 0, 1, 2.</span><span class="sxs-lookup"><span data-stu-id="854c7-119">**visRow1stHyperlink** +  *i*           where  *i*  = 0, 1, 2...</span></span>  <br/> |
-|<span data-ttu-id="854c7-120">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="854c7-120">Cell index:</span></span>  <br/> |<span data-ttu-id="854c7-121">**visHLinkDefault**</span><span class="sxs-lookup"><span data-stu-id="854c7-121">**visHLinkDefault**</span></span> <br/> |
+|<span data-ttu-id="ad7c1-116">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="ad7c1-116">Section index:</span></span>  <br/> |<span data-ttu-id="ad7c1-117">**visSectionHyperlink**</span><span class="sxs-lookup"><span data-stu-id="ad7c1-117">**visSectionHyperlink**</span></span> <br/> |
+|<span data-ttu-id="ad7c1-118">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="ad7c1-118">Row index:</span></span>  <br/> |<span data-ttu-id="ad7c1-119">**visRow1stHyperlink** +  *i* 、 *i* = 0, 1, 2.</span><span class="sxs-lookup"><span data-stu-id="ad7c1-119">**visRow1stHyperlink** +  *i*           where  *i*  = 0, 1, 2...</span></span>  <br/> |
+|<span data-ttu-id="ad7c1-120">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="ad7c1-120">Cell index:</span></span>  <br/> |<span data-ttu-id="ad7c1-121">**visHLinkDefault**</span><span class="sxs-lookup"><span data-stu-id="ad7c1-121">**visHLinkDefault**</span></span> <br/> |
    
 

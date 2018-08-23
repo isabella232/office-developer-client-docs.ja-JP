@@ -16,18 +16,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805121"
 ---
-# <a name="copy-and-paste-a-formula-from-one-cell-into-another"></a><span data-ttu-id="34062-102">セル間で数式をコピーし、貼り付ける</span><span class="sxs-lookup"><span data-stu-id="34062-102">Copy and Paste a Formula from One Cell into Another</span></span>
+# <a name="copy-and-paste-a-formula-from-one-cell-into-another"></a><span data-ttu-id="96fa3-102">セル間での数式のコピーおよび貼り付け</span><span class="sxs-lookup"><span data-stu-id="96fa3-102">Copy and Paste a Formula from One Cell into Another</span></span>
 
-1. <span data-ttu-id="34062-103">コピーする数式を含むセルを選択します。</span><span class="sxs-lookup"><span data-stu-id="34062-103">Select the cell that contains the formula you want.</span></span>
+1. <span data-ttu-id="96fa3-103">コピーする数式を含むセルを選択します。</span><span class="sxs-lookup"><span data-stu-id="96fa3-103">Select the cell that contains the formula you want.</span></span>
     
-2. <span data-ttu-id="34062-104">CTRL キーを押しながら C キーを押します。</span><span class="sxs-lookup"><span data-stu-id="34062-104">Press CTRL+C.</span></span>
+2. <span data-ttu-id="96fa3-104">CTRL キーを押しながら C キーを押します。</span><span class="sxs-lookup"><span data-stu-id="96fa3-104">Press CTRL+C.</span></span>
     
-    <span data-ttu-id="34062-105">数式全体を置き換えるには、置換する数式を含むセルを選択します。</span><span class="sxs-lookup"><span data-stu-id="34062-105">To replace the entire formula, select the cell whose formula you want to replace.</span></span>
+    <span data-ttu-id="96fa3-105">数式全体を置き換えるには、置換する数式を含むセルを選択します。</span><span class="sxs-lookup"><span data-stu-id="96fa3-105">To replace the entire formula, select the cell whose formula you want to replace.</span></span>
     
-    <span data-ttu-id="34062-106">既存の数式に、数式を貼り付ける、セルをダブルクリックし、数式を貼り付ける挿入点をクリックし、します。</span><span class="sxs-lookup"><span data-stu-id="34062-106">To paste the formula into an existing formula, double-click the cell, and then click an insertion point where you want to paste the formula.</span></span>
+    <span data-ttu-id="96fa3-106">既存の数式に、数式を貼り付ける、セルをダブルクリックし、数式を貼り付ける挿入点をクリックし、します。</span><span class="sxs-lookup"><span data-stu-id="96fa3-106">To paste the formula into an existing formula, double-click the cell, and then click an insertion point where you want to paste the formula.</span></span>
     
-3. <span data-ttu-id="34062-107">Ctrl キーを押しながら V キーを押します。</span><span class="sxs-lookup"><span data-stu-id="34062-107">Press CTRL+V</span></span>
+3. <span data-ttu-id="96fa3-107">Ctrl キーを押しながら V キーを押します。</span><span class="sxs-lookup"><span data-stu-id="96fa3-107">Press CTRL+V</span></span>
     
-4. <span data-ttu-id="34062-108">数式を適用する場合は、Enter キーを押します。</span><span class="sxs-lookup"><span data-stu-id="34062-108">Press ENTER to accept the formula.</span></span>
+4. <span data-ttu-id="96fa3-108">数式を適用する場合は、Enter キーを押します。</span><span class="sxs-lookup"><span data-stu-id="96fa3-108">Press ENTER to accept the formula.</span></span>
     
 

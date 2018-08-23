@@ -15,9 +15,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804538"
 ---
-# <a name="schema-map-outlook-weather-location-schema"></a><span data-ttu-id="061a1-103">スキーマ マップ (Outlook の天気予報の場所のスキーマ)</span><span class="sxs-lookup"><span data-stu-id="061a1-103">Schema map (Outlook Weather Location Schema)</span></span>
+# <a name="schema-map-outlook-weather-location-schema"></a><span data-ttu-id="eab35-103">スキーマ マップ (Outlook の天気予報の場所のスキーマ)</span><span class="sxs-lookup"><span data-stu-id="eab35-103">Schema map (Outlook Weather Location Schema)</span></span>
 
-<span data-ttu-id="061a1-104">このトピックでは、Outlook の天気予報の場所の XML スキーマのスキーマ定義を示します。</span><span class="sxs-lookup"><span data-stu-id="061a1-104">This topic shows the schema definition for the Outlook Weather Location XML Schema.</span></span>
+<span data-ttu-id="eab35-104">このトピックでは、Outlook の天気予報の場所の XML スキーマのスキーマ定義を示します。</span><span class="sxs-lookup"><span data-stu-id="eab35-104">This topic shows the schema definition for the Outlook Weather Location XML Schema.</span></span>
   
 ```XML
 <?xml version="1.0" ?>

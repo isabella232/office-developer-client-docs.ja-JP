@@ -14,12 +14,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804804"
 ---
-# <a name="bevel-properties-section"></a><span data-ttu-id="dd1ee-103">[ベベルのプロパティ] セクション</span><span class="sxs-lookup"><span data-stu-id="dd1ee-103">Bevel Properties Section</span></span>
+# <a name="bevel-properties-section"></a><span data-ttu-id="a179b-103">[ベベルのプロパティ] セクション</span><span class="sxs-lookup"><span data-stu-id="a179b-103">Bevel Properties Section</span></span>
 
-<span data-ttu-id="dd1ee-104">シェイプにベベル効果の属性を示しています。</span><span class="sxs-lookup"><span data-stu-id="dd1ee-104">Shows the attributes for any bevel effects applied to the shape.</span></span> 
+<span data-ttu-id="a179b-104">シェイプにベベル効果の属性を示しています。</span><span class="sxs-lookup"><span data-stu-id="a179b-104">Shows the attributes for any bevel effects applied to the shape.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="dd1ee-105">備考</span><span class="sxs-lookup"><span data-stu-id="dd1ee-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a179b-105">注釈</span><span class="sxs-lookup"><span data-stu-id="a179b-105">Remarks</span></span>
 
-<span data-ttu-id="dd1ee-106">**図形の書式設定**] ウィンドウ内の図形にベベルを適用することができます (**ホーム** > **図形のスタイル** > **べ** > **3-D オプション**] の**面取りのプロパティ**] セクションのセルを変更することや、シェイプ シート。</span><span class="sxs-lookup"><span data-stu-id="dd1ee-106">You can apply a bevel to a shape in the **Format Shape** pane (**Home** > **Shape Styles** > **Bevel** > **3-D Options**, or by making changes to the cells in the **Bevel Properties** section of the ShapeSheet.</span></span> 
+<span data-ttu-id="a179b-106">**図形の書式設定**] ウィンドウ内の図形にベベルを適用することができます (**ホーム** > **図形のスタイル** > **べ** > **3-D オプション**] の**面取りのプロパティ**] セクションのセルを変更することや、シェイプ シート。</span><span class="sxs-lookup"><span data-stu-id="a179b-106">You can apply a bevel to a shape in the **Format Shape** pane (**Home** > **Shape Styles** > **Bevel** > **3-D Options**, or by making changes to the cells in the **Bevel Properties** section of the ShapeSheet.</span></span> 
   
 

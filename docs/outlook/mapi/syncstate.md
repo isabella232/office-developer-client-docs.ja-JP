@@ -1,5 +1,5 @@
 ---
-title: 同期状態
+title: SYNCSTATE
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,13 +15,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804093"
 ---
-# <a name="syncstate"></a><span data-ttu-id="d9e96-103">同期状態</span><span class="sxs-lookup"><span data-stu-id="d9e96-103">SYNCSTATE</span></span>
+# <a name="syncstate"></a><span data-ttu-id="a490c-103">SYNCSTATE</span><span class="sxs-lookup"><span data-stu-id="a490c-103">SYNCSTATE</span></span>
 
-<span data-ttu-id="d9e96-104">**適用されます**: Outlook</span><span class="sxs-lookup"><span data-stu-id="d9e96-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="a490c-104">**適用対象**: Outlook</span><span class="sxs-lookup"><span data-stu-id="a490c-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="d9e96-105">この構造体は、レプリケーションの状態機械の状態を定義します。</span><span class="sxs-lookup"><span data-stu-id="d9e96-105">This structure defines the states for the replication state machine.</span></span>
+<span data-ttu-id="a490c-105">この構造体は、レプリケーションの状態機械の状態を定義します。</span><span class="sxs-lookup"><span data-stu-id="a490c-105">This structure defines the states for the replication state machine.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="d9e96-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="d9e96-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="a490c-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="a490c-106">Quick info</span></span>
 
 ```cpp
 typedef enum { 
@@ -41,9 +41,9 @@ typedef enum {
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="d9e96-107">関連項目</span><span class="sxs-lookup"><span data-stu-id="d9e96-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a490c-107">関連項目</span><span class="sxs-lookup"><span data-stu-id="a490c-107">See also</span></span>
 
-- [<span data-ttu-id="d9e96-108">レプリケーション API について</span><span class="sxs-lookup"><span data-stu-id="d9e96-108">About the Replication API</span></span>](about-the-replication-api.md)
-- [<span data-ttu-id="d9e96-109">レプリケーション状態マシンについて</span><span class="sxs-lookup"><span data-stu-id="d9e96-109">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)
-- [<span data-ttu-id="d9e96-110">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="d9e96-110">MAPI Constants</span></span>](mapi-constants.md)
+- [<span data-ttu-id="a490c-108">レプリケーション API について</span><span class="sxs-lookup"><span data-stu-id="a490c-108">About the Replication API</span></span>](about-the-replication-api.md)
+- [<span data-ttu-id="a490c-109">レプリケーション ステート マシンについて</span><span class="sxs-lookup"><span data-stu-id="a490c-109">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)
+- [<span data-ttu-id="a490c-110">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="a490c-110">MAPI Constants</span></span>](mapi-constants.md)
 

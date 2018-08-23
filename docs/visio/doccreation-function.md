@@ -16,16 +16,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805253"
 ---
-# <a name="doccreation-function"></a><span data-ttu-id="23b73-103">DOCCREATION 関数</span><span class="sxs-lookup"><span data-stu-id="23b73-103">DOCCREATION Function</span></span>
+# <a name="doccreation-function"></a><span data-ttu-id="ea8ce-103">DOCCREATION 関数</span><span class="sxs-lookup"><span data-stu-id="ea8ce-103">DOCCREATION Function</span></span>
 
-<span data-ttu-id="23b73-104">シリアル値として、ドキュメントが作成された日時を返します。</span><span class="sxs-lookup"><span data-stu-id="23b73-104">Returns the date and time a document was created, as a serial value.</span></span>
+<span data-ttu-id="ea8ce-104">シリアル値として、ドキュメントが作成された日時を返します。</span><span class="sxs-lookup"><span data-stu-id="ea8ce-104">Returns the date and time a document was created, as a serial value.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="23b73-105">構文</span><span class="sxs-lookup"><span data-stu-id="23b73-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ea8ce-105">構文</span><span class="sxs-lookup"><span data-stu-id="ea8ce-105">Syntax</span></span>
 
-<span data-ttu-id="23b73-106">DOCCREATION ()</span><span class="sxs-lookup"><span data-stu-id="23b73-106">DOCCREATION ()</span></span>
+<span data-ttu-id="ea8ce-106">DOCCREATION ()</span><span class="sxs-lookup"><span data-stu-id="ea8ce-106">DOCCREATION ()</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="23b73-107">注釈</span><span class="sxs-lookup"><span data-stu-id="23b73-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ea8ce-107">注釈</span><span class="sxs-lookup"><span data-stu-id="ea8ce-107">Remarks</span></span>
 
-<span data-ttu-id="23b73-108">戻り値を書式設定するには、FORMAT 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="23b73-108">Use the FORMAT function to format the value.</span></span> 
+<span data-ttu-id="ea8ce-108">戻り値を書式設定するには、FORMAT 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="ea8ce-108">Use the FORMAT function to format the value.</span></span> 
   
 

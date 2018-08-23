@@ -16,26 +16,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805321"
 ---
-# <a name="eventdrop-cell-events-section"></a><span data-ttu-id="16a6a-103">[EventDrop] セル ([Events] セクション)</span><span class="sxs-lookup"><span data-stu-id="16a6a-103">EventDrop Cell (Events Section)</span></span>
+# <a name="eventdrop-cell-events-section"></a><span data-ttu-id="a9088-103">[EventDrop] セル ([イベント] セクション)</span><span class="sxs-lookup"><span data-stu-id="a9088-103">EventDrop Cell (Events Section)</span></span>
 
-<span data-ttu-id="16a6a-104">図面ページに図形をインスタンスとしてドロップしたとき、または図形を複製したり貼り付けたときに評価されるイベント セルです。</span><span class="sxs-lookup"><span data-stu-id="16a6a-104">An event cell that is evaluated when a shape is dropped on the drawing page, either as an instance or when the shape is duplicated or pasted.</span></span>
+<span data-ttu-id="a9088-104">図面ページに図形をインスタンスとしてドロップしたとき、または図形を複製したり貼り付けたときに評価されるイベント セルです。</span><span class="sxs-lookup"><span data-stu-id="a9088-104">An event cell that is evaluated when a shape is dropped on the drawing page, either as an instance or when the shape is duplicated or pasted.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="16a6a-105">備考</span><span class="sxs-lookup"><span data-stu-id="16a6a-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a9088-105">備考</span><span class="sxs-lookup"><span data-stu-id="a9088-105">Remarks</span></span>
 
-<span data-ttu-id="16a6a-106">イベント セルはイベントの発生時にのみ評価されます。数式の入力時には評価されません。</span><span class="sxs-lookup"><span data-stu-id="16a6a-106">Event cells are evaluated only when the event occurs, not upon formula entry.</span></span>
+<span data-ttu-id="a9088-106">イベント セルはイベントの発生時にのみ評価されます。数式の入力時には評価されません。</span><span class="sxs-lookup"><span data-stu-id="a9088-106">Event cells are evaluated only when the event occurs, not upon formula entry.</span></span>
   
-<span data-ttu-id="16a6a-107">別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [eventdrop] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="16a6a-107">To get a reference to the EventDrop cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="a9088-107">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [EventDrop] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="a9088-107">To get a reference to the EventDrop cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="16a6a-108">セル名 :</span><span class="sxs-lookup"><span data-stu-id="16a6a-108">Cell name:</span></span>  <br/> | <span data-ttu-id="16a6a-109">[Eventdrop]</span><span class="sxs-lookup"><span data-stu-id="16a6a-109">EventDrop</span></span>  <br/> |
+| <span data-ttu-id="a9088-108">セル名 :</span><span class="sxs-lookup"><span data-stu-id="a9088-108">Cell name:</span></span>  <br/> | <span data-ttu-id="a9088-109">[Eventdrop]</span><span class="sxs-lookup"><span data-stu-id="a9088-109">EventDrop</span></span>  <br/> |
    
-<span data-ttu-id="16a6a-110">プログラムから、インデックスによって [eventdrop] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="16a6a-110">To get a reference to the EventDrop cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="a9088-110">プログラムから、インデックスによって [EventDrop] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="a9088-110">To get a reference to the EventDrop cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="16a6a-111">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="16a6a-111">Section index:</span></span>  <br/> |<span data-ttu-id="16a6a-112">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="16a6a-112">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="16a6a-113">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="16a6a-113">Row index:</span></span>  <br/> |<span data-ttu-id="16a6a-114">**visRowEvent**</span><span class="sxs-lookup"><span data-stu-id="16a6a-114">**visRowEvent**</span></span> <br/> |
-| <span data-ttu-id="16a6a-115">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="16a6a-115">Cell index:</span></span>  <br/> |<span data-ttu-id="16a6a-116">**visEvtCellDrop**</span><span class="sxs-lookup"><span data-stu-id="16a6a-116">**visEvtCellDrop**</span></span> <br/> |
+| <span data-ttu-id="a9088-111">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="a9088-111">Section index:</span></span>  <br/> |<span data-ttu-id="a9088-112">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="a9088-112">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="a9088-113">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="a9088-113">Row index:</span></span>  <br/> |<span data-ttu-id="a9088-114">**visRowEvent**</span><span class="sxs-lookup"><span data-stu-id="a9088-114">**visRowEvent**</span></span> <br/> |
+| <span data-ttu-id="a9088-115">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="a9088-115">Cell index:</span></span>  <br/> |<span data-ttu-id="a9088-116">**visEvtCellDrop**</span><span class="sxs-lookup"><span data-stu-id="a9088-116">**visEvtCellDrop**</span></span> <br/> |
    
 

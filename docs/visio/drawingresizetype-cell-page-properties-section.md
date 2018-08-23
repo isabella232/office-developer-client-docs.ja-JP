@@ -16,24 +16,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805268"
 ---
-# <a name="drawingresizetype-cell-page-properties-section"></a><span data-ttu-id="a8bb9-103">[DrawingResizeType] セル ([Page Properties] セクション)</span><span class="sxs-lookup"><span data-stu-id="a8bb9-103">DrawingResizeType Cell (Page Properties Section)</span></span>
+# <a name="drawingresizetype-cell-page-properties-section"></a><span data-ttu-id="32ef1-103">[DrawingResizeType] セル ([ページのプロパティ] セクション)</span><span class="sxs-lookup"><span data-stu-id="32ef1-103">DrawingResizeType Cell (Page Properties Section)</span></span>
 
-<span data-ttu-id="a8bb9-104">図に合わせて、図面ページが自動的にサイズ変更するかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="a8bb9-104">Determines whether the drawing page resizes automatically to fit the diagram.</span></span> 
+<span data-ttu-id="32ef1-104">図に合わせて、図面ページが自動的にサイズ変更するかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="32ef1-104">Determines whether the drawing page resizes automatically to fit the diagram.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="a8bb9-105">備考</span><span class="sxs-lookup"><span data-stu-id="a8bb9-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="32ef1-105">注釈</span><span class="sxs-lookup"><span data-stu-id="32ef1-105">Remarks</span></span>
 
-<span data-ttu-id="a8bb9-106">参照を取得する DrawingResizeType のセルに名前を別の数式からまたはプログラムから**CellsU**プロパティを使用して、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="a8bb9-106">To get a reference to the DrawingResizeType cell by name from another formula, or from a program by using the **CellsU** property, use the following.</span></span> 
+<span data-ttu-id="32ef1-106">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [DrawingResizeType] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="32ef1-106">To get a reference to the DrawingResizeType cell by name from another formula, or from a program by using the **CellsU** property, use the following.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="a8bb9-107">セル名:</span><span class="sxs-lookup"><span data-stu-id="a8bb9-107">Cell name:</span></span>  <br/> |<span data-ttu-id="a8bb9-108">DrawingResizeType</span><span class="sxs-lookup"><span data-stu-id="a8bb9-108">DrawingResizeType</span></span>  <br/> |
+|<span data-ttu-id="32ef1-107">セル名:</span><span class="sxs-lookup"><span data-stu-id="32ef1-107">Cell name:</span></span>  <br/> |<span data-ttu-id="32ef1-108">DrawingResizeType</span><span class="sxs-lookup"><span data-stu-id="32ef1-108">DrawingResizeType</span></span>  <br/> |
    
-<span data-ttu-id="a8bb9-109">プログラムから、インデックスによって [DrawingResizeType] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="a8bb9-109">To get a reference to the DrawingResizeType cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="32ef1-109">プログラムから、インデックスによって [DrawingResizeType] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="32ef1-109">To get a reference to the DrawingResizeType cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="a8bb9-110">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="a8bb9-110">Section index:</span></span>  <br/> |<span data-ttu-id="a8bb9-111">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="a8bb9-111">**visSectionObject**</span></span> <br/> |
-|<span data-ttu-id="a8bb9-112">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="a8bb9-112">Row index:</span></span>  <br/> |<span data-ttu-id="a8bb9-113">**visRowPage**</span><span class="sxs-lookup"><span data-stu-id="a8bb9-113">**visRowPage**</span></span> <br/> |
-|<span data-ttu-id="a8bb9-114">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="a8bb9-114">Cell index:</span></span>  <br/> |<span data-ttu-id="a8bb9-115">**visPageDrawResizeType**</span><span class="sxs-lookup"><span data-stu-id="a8bb9-115">**visPageDrawResizeType**</span></span> <br/> |
+|<span data-ttu-id="32ef1-110">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="32ef1-110">Section index:</span></span>  <br/> |<span data-ttu-id="32ef1-111">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="32ef1-111">**visSectionObject**</span></span> <br/> |
+|<span data-ttu-id="32ef1-112">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="32ef1-112">Row index:</span></span>  <br/> |<span data-ttu-id="32ef1-113">**visRowPage**</span><span class="sxs-lookup"><span data-stu-id="32ef1-113">**visRowPage**</span></span> <br/> |
+|<span data-ttu-id="32ef1-114">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="32ef1-114">Cell index:</span></span>  <br/> |<span data-ttu-id="32ef1-115">**visPageDrawResizeType**</span><span class="sxs-lookup"><span data-stu-id="32ef1-115">**visPageDrawResizeType**</span></span> <br/> |
    
 
