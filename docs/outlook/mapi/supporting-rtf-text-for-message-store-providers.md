@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 0022fe70-cf11-49a5-9c97-a6bc5b5b13aa
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d7d64c8a7d4df4898502f4574ca879c736547b37
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3e65ebd3ea485ca54978d622e8aaf093dc5eff74
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804070"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594069"
 ---
 # <a name="supporting-rtf-text-for-message-store-providers"></a>メッセージ ストア プロバイダーでの RTF 形式テキストのサポート
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 一部のクライアント アプリケーションは、メッセージでリッチ テキスト形式 (RTF) のテキストを使用するようにします。 メッセージは、メッセージ内の rtf 形式のテキストをサポートするためにプロバイダーのニーズを保存する場合 ([PidTagBody](pidtagbody-canonical-property.md)) である**PR_BODY**プロパティだけでなく、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) のプロパティを処理する必要があります。 主に、つまり、両方のプロパティを格納する**PR_BODY には** **PR_RTF_COMPRESSED**内のテキストのプレーン テキスト版が含まれていることを確認します。 [](rtfsync.md)関数は、この目的のために役立ちます。 
   

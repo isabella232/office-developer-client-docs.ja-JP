@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 93acdbc8-381f-45d5-be6c-0cad066269fe
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 775dc1b5fdcf40867f67fbab25879bd97de24f4a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a43d4f12aa28de29116d7d074b743d6c0d61d964
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800046"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594510"
 ---
 # <a name="fielddefinition-stream-structure"></a>FieldDefinition ストリームの構造
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 FieldDefinition ストリームの構造体には、ユーザー定義のフィールドのフィールドの定義または組み込みのフィールドのデータ バインディングの設定のセットのいずれかが含まれています。
   

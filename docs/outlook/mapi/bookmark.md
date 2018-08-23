@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 678bdc52-3404-48b2-9154-64ce2a941555
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8f5f3bc454e18b1dbab434fc1b7cc094b0d6a360
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: be41a9916b6b231d5715cf18fe2b0d804434f2ea
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799906"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594482"
 ---
 # <a name="bookmark"></a>BOOKMARK
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 テーブル内の位置を記憶するためのブックマークのデータを定義します。 
   

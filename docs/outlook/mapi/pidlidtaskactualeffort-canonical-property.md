@@ -1,5 +1,5 @@
 ---
-title: PidLidTaskActualEffort の標準的なプロパティ
+title: PidLidTaskActualEffort 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8e9a9432-bf50-4333-82ec-fba19dff8006
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 0782191010341019ebea71ebf545dec490521520
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: a145a103620d23dae4f6a48c225251e8aecc278e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802179"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593670"
 ---
-# <a name="pidlidtaskactualeffort-canonical-property"></a>PidLidTaskActualEffort の標準的なプロパティ
+# <a name="pidlidtaskactualeffort-canonical-property"></a>PidLidTaskActualEffort 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ユーザーがタスクを実行した分の数を示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidTaskActualEffort  <br/> |
+|関連するプロパティ:  <br/> |dispidTaskActualEffort  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Task  <br/> |
 |長い ID (LID):  <br/> |0x00008110  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 値は、0 以上で 0x5AE980DF (1,525,252,319) より小さい、480 分と等しい 1 日 2400 分と等しい 1 週間 (1 日の作業で、稼働日の 5 日間は 8 時間) をする必要があります。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

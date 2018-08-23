@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: 1e5ea9f2-1029-4584-845a-890d3e956036
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fea2b496a34d7aa7f9469158fae14daf6a770608
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 39854c320078d2e2ca2365244f094e28962380d0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803932"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593656"
 ---
 # <a name="sizeddtblcombobox"></a>SizedDtblComboBox
  
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 コンボ ボックス コントロールと関連付けられたエディット コントロールに入力できる文字の最大数を記述するための[DTBLCOMBOBOX](dtblcombobox.md)構造体を含む名前付き構造体を作成します。 
   

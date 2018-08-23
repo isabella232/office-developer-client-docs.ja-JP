@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9dfb9b6d-2fb4-45bf-a12f-bd10a799ce29
 description: Outlook ソーシャル コネクタ (OSC) プロバイダーを正常にインストールするための前提条件について説明し、インストールが正常に動作する、プロバイダーのインストーラーを完了しなければならないことを確認します。
-ms.openlocfilehash: cb8ed24db28c3b0e945c4db4b2daa4a2470d7dd5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d9854bf5c2b524c6d735fe974046583dab990012
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804349"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593999"
 ---
 # <a name="installation-checklist"></a>インストール チェックリスト
 
@@ -90,7 +90,7 @@ _Glink_さまざまなバージョンと、Outlook のビット数の値とサ�
       
       `{A3B82DA3-8AD9-4935-AEA8-54B754459483}`
       
-      制限されたコンポーネントの ID は、単一レベルの間接指定のポインターのようなメソッドを提供する GUID です。 Windows インストーラーの詳細については、 [Windows インストーラーのドキュメントへのロードマップ](http://msdn.microsoft.com/library/_msi_roadmap_to_windows_installer_documentation.aspx)を参照してください。
+      制限されたコンポーネントの ID は、単一レベルの間接指定のポインターのようなメソッドを提供する GUID です。 Windows インストーラーの詳細については、 [Windows インストーラーのドキュメントへのロードマップ](https://docs.microsoft.com/en-us/windows/desktop/msi/roadmap-to-windows-installer-documentation)を参照してください。
       
    2. 修飾された、指定したコンポーネントが存在する場合は、OSC のバージョンがインストールされています。 OSC の最新バージョンをインストールするために準備するのには現在の Outlook ユーザー インターフェイスのロケールを検索するのには 5 の手順に進みます。
       

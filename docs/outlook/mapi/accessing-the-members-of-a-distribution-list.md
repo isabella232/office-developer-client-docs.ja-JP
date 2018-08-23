@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: f724cac8-2d5d-42bc-a15e-99f77a99ce21
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 21975482c458998cbe158a84d535f911156ac392
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a32552343fa90dfbbb3571f50846976a5f5f5edd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799635"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595364"
 ---
 # <a name="accessing-the-members-of-a-distribution-list"></a>配布リストのメンバーへのアクセス
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
  **配布リストのメンバーを取得するには**
   

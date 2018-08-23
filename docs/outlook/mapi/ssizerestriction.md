@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4e7340d1-3cb9-4276-b83f-1c8f94acb909
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 134eb844ef7b72d396c300b27a87a3a7ae320cf1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 990fe49d39a73c5bf80b9fdda96d2e5997869edf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804012"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595420"
 ---
 # <a name="ssizerestriction"></a>SSizeRestriction
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロパティの値のサイズをテストするために使用するサイズの制限について説明します。 
   

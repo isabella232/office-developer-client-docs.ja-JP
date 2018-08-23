@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: 2fc3febb-8c69-4315-a112-a28eee98013d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b8521172b441bd26a6562aa28f836d453544928f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bbced8412c2c3438c58af74ef072a46606b59ddc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803927"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594615"
 ---
 # <a name="sizedspropproblemarray"></a>SizedSPropProblemArray
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [SPropProblem](spropproblem.md)構造体の指定した数値を含む名前付き[SPropProblemArray](spropproblemarray.md)構造体を作成します。 
   

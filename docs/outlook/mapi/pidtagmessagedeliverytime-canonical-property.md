@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 4f9d44f2-4faa-4f16-9e33-22f80c17db85
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4fd74e99a8073db03ad47292677ff98efca58af3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b635ad72acc2bd98ca0c207dea71ea2df757e22b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802975"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593936"
 ---
 # <a name="pidtagmessagedeliverytime-canonical-property"></a>PidTagMessageDeliveryTime 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージが配信されたときの日時が含まれています。 
   

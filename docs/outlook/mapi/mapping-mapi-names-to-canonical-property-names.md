@@ -1,5 +1,5 @@
 ---
-title: MAPI 名前を標準のプロパティ名にマップします。
+title: MAPI 名から標準プロパティ名へのマッピング
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 38376abb-60de-40f1-9bc9-d8c4f9e3368b
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: e82dee1c0acea4e84e15cfe5c6993f9110246bd6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 8ecf98d1e6b267d212d23959cdbde0d53f8c961a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801575"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594692"
 ---
-# <a name="mapping-mapi-names-to-canonical-property-names"></a>MAPI 名前を標準のプロパティ名にマップします。
+# <a name="mapping-mapi-names-to-canonical-property-names"></a>MAPI 名から標準プロパティ名へのマッピング
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このトピックでは、各 MAPI プロパティを対応する標準的なプロパティ名にマップします。 トピックには、3 つのテーブルが含まれています: 数値識別子を持つ名前付きプロパティのテーブル、1 秒は文字列の識別子を持つ名前付きプロパティのテーブルし、タグ付きのプロパティの表の 3 分の 1 です。
   
@@ -312,7 +312,7 @@ ms.locfileid: "19801575"
 |AppName  <br/> |[PidNameApplicationName](pidnameapplicationname-canonical-property.md) <br/> |
 |AttachmentMacContentType  <br/> |[PidNameAttachmentMacContentType](pidnameattachmentmaccontenttype-canonical-property.md) <br/> |
 |AttachmentMacInfo  <br/> |[PidNameAttachmentMacInfo](pidnameattachmentmacinfo-canonical-property.md) <br/> |
-|作成者  <br/> |[PidNameAuthor](pidnameauthor-canonical-property.md) <br/> |
+|Author  <br/> |[PidNameAuthor](pidnameauthor-canonical-property.md) <br/> |
 |ByteCount  <br/> |[PidNameByteCount](pidnamebytecount-canonical-property.md) <br/> |
 |カテゴリ  <br/> |[PidNameCategory](pidnamecategory-canonical-property.md) <br/> |
 |CharCount  <br/> |[PidNameCharacterCount](pidnamecharactercount-canonical-property.md) <br/> |
@@ -321,14 +321,14 @@ ms.locfileid: "19801575"
 |コンテンツ ・ ベース  <br/> |[PidNameContentBase](pidnamecontentbase-canonical-property.md) <br/> |
 |コンテンツ クラス  <br/> |[PidNameContentClass](pidnamecontentclass-canonical-property.md) <br/> |
 |コンテンツ転送エンコード  <br/> |[PidNameContentTransferEncoding](pidnamecontenttransferencoding-canonical-property.md) <br/> |
-|コンテンツ タイプ  <br/> |[PidNameContentType](pidnamecontenttype-canonical-property.md) <br/> |
+|Content-Type  <br/> |[PidNameContentType](pidnamecontenttype-canonical-property.md) <br/> |
 |CreateDtmRo  <br/> |[PidNameCreateDateTimeReadOnly](pidnamecreatedatetimereadonly-canonical-property.md) <br/> |
 |DRMLicense  <br/> |[PidNameRightsManagementLicense](pidnamerightsmanagementlicense-canonical-property.md) <br/> |
 |EditTime  <br/> |[PidNameEditTime](pidnameedittime-canonical-property.md) <br/> |
 |HiddenCount  <br/> |[PidNameHiddenCount](pidnamehiddencount-canonical-property.md) <br/> |
 |http://schemas.microsoft.com/exchange/junkemailmovestamp  <br/> |[PidNameExchangeJunkEmailMoveStamp](pidnameexchangejunkemailmovestamp-canonical-property.md) <br/> |
 |http://schemas.microsoft.com/outlook/phishingstamp  <br/> |[PidNameOutlookPhishingstamp](pidnamephishingstamp-canonical-property.md) <br/> |
-|キーワード  <br/> |[PidNameKeywords](pidnamekeywords-canonical-property.md) <br/> |
+|Keywords  <br/> |[PidNameKeywords](pidnamekeywords-canonical-property.md) <br/> |
 |LastAuthor  <br/> |[PidNameLastAuthor](pidnamelastauthor-canonical-property.md) <br/> |
 |LastPrinted  <br/> |[PidNameLastPrinted](pidnamelastprinted-canonical-property.md) <br/> |
 |LastSaveDtm  <br/> |[PidNameLastSaveDateTime](pidnamelastsavedatetime-canonical-property.md) <br/> |
@@ -342,7 +342,7 @@ ms.locfileid: "19801575"
 |RevNumber  <br/> |[PidNameRevisionNumber](pidnamerevisionnumber-canonical-property.md) <br/> |
 |セキュリティ  <br/> |[PidNameSecurity](pidnamesecurity-canonical-property.md) <br/> |
 |SlideCount  <br/> |[PidNameSlideCount](pidnameslidecount-canonical-property.md) <br/> |
-|件名  <br/> |[PidNameSubject](pidnamesubject-canonical-property.md) <br/> |
+|対象  <br/> |[PidNameSubject](pidnamesubject-canonical-property.md) <br/> |
 |Template  <br/> |[PidNameTemplate](pidnametemplate-canonical-property.md) <br/> |
 |Title  <br/> |[PidNameTitle](pidnametitle-canonical-property.md) <br/> |
 |UMAudioNotes  <br/> |[PidNameAudioNotes](pidnameaudionotes-canonical-property.md) <br/> |

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 1353d494-c266-4715-afe7-14543a1bbe1b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: cbaf37415608dd1d79a06be65b34632f2b4afc89
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ce2b2497bd89f00ce7f063d3e482752fabfeb731
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804133"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594335"
 ---
 # <a name="tnef-stream-syntax"></a>TNEF ストリームの構文
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 TNEF ストリームの構文の説明のような Bakus ・ Nauer をここに示します。 この説明では、斜体文字で終端要素をさらに定義を持ちます。 定数とリテラルの項目は、太字で。 要素のシーケンスは、1 つの行に順に並んでいます。 たとえば、_ストリーム_の項目は、定数**TNEF_SIGNATURE**、_キー_、_オブジェクト_の後に続くので構成されます。 アイテムに複数の可能な実装がある場合は、連続する行の代替案のとおりです。 たとえば、_オブジェクト_は、 _Message_Seq_、 _Message_Seq_ _Attach_Seq_、または単に_Attach_Seq_に続くので構成できます。
   

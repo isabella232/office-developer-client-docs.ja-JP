@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: a63bf0a7-24e6-4eef-98e8-3744ce5f9f2d
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 1ecc80feec2b0a86f35d03f1ca4f75ea9ff094e4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 27999c141fdeb3e1610213db128bc4ad3d049e6d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800100"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594104"
 ---
 # <a name="form-verbs"></a>フォームの動詞
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 通常、フォームのユーザー インターフェイスは、メニュー項目、または何らかの形式でアクションを実行するユーザーを有効にするコントロールを提供します。 これらのユーザー アクションを処理するためにフォームのサーバーの仕事です。 このインターフェイスは標準的な Win32 Api を使用します。標準の Win32 プログラムの他のインターフェイスの記述と同じようには 1 つを記述します。
   

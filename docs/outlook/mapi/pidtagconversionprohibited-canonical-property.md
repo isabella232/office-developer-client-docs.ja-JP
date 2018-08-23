@@ -1,5 +1,5 @@
 ---
-title: PidTagConversionProhibited の標準的なプロパティ
+title: PidTagConversionProhibited 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 9bd67185-9449-4db2-b3ee-93ea513e10e2
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 645ea2be2f690701780932e891da3dc32bb1716f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 1e15a0b09057d9aab1e6c5bec6c314463f15e329
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802650"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593943"
 ---
-# <a name="pidtagconversionprohibited-canonical-property"></a>PidTagConversionProhibited の標準的なプロパティ
+# <a name="pidtagconversionprohibited-canonical-property"></a>PidTagConversionProhibited 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージの変換が関連付けられたメッセージング ユーザーの既定の設定によって禁止されている場合 TRUE が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_CONVERSION_PROHIBITED  <br/> |
+|関連するプロパティ:  <br/> |PR_CONVERSION_PROHIBITED  <br/> |
 |識別子:  <br/> |0x3A03  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |Address  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -54,7 +54,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

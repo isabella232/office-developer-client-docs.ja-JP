@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 88950eda-85ae-ad7a-46c6-0e1933d35e04
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 00d92f8e2ec3af766d5b241d1a911be304b346d6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 152afd68bea44f3485b2cc566f3f0d2768590704
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800017"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594475"
 ---
 # <a name="exchangestoreversionnum"></a>EXCHANGE_STORE_VERSION_NUM
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 Microsoft Office Outlook プロファイル内のアカウントが接続されている Microsoft Exchange Server のバージョン情報を格納します。
   

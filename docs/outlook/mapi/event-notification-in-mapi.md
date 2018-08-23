@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 7b3b625b-6dea-4b12-99a9-152935bdfe39
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 9c1fd58a31481d8666ca931408c16bd73aaba660
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 18ce10ad73ba769f0ecc0bd9e4f12096f4227e42
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800033"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594545"
 ---
 # <a name="event-notification-in-mapi"></a>MAPI でのイベントの通知
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 イベント通知は、2 つの MAPI オブジェクト間で情報の通信です。 を通じて、オブジェクトのいずれか、クライアントまたはサービス プロバイダーを変更または他のオブジェクトで発生する可能性があります、イベントと呼ばれる、エラーの通知を登録します。 イベントが発生すると、最初のオブジェクトが変更またはエラーの通知されます。 アドバイズ シンクに通知を受信するオブジェクトと呼びます通知用に使用するオブジェクトは、アドバイズ ソースと呼ばれます。
   

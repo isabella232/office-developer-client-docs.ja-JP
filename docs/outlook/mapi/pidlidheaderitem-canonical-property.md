@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 69b308dd-d3f5-44fe-8976-e4ed9a433ad8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0c278ebc8a60187870e9eeb82ec639e5306a866d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 916797012d62c5ce0b67dedf957dde09ba9ba27b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801991"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595140"
 ---
 # <a name="pidlidheaderitem-canonical-property"></a>PidLidHeaderItem 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 かどうか Outlook のダウンロードがクライアント コンピューターに、メッセージまたはヘッダーとメッセージの本文のヘッダーのみ Exchange キャッシュ モードで Outlook が構成されている場合を指定します。
   

@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1a9871c2-b9bb-332e-b67e-85c50f7f685c
 description: '�ŏI�X�V��: 2012�N6��25��'
-ms.openlocfilehash: 8ac75bfb686496c151b5edc3a692c99a6e47ee96
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 41d70c2ab94712e40de9011bc752c79d8c859161
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800264"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595182"
 ---
 # <a name="use-the-mapi-crash-recovery-api"></a>MAPI クラッシュ回復 API を使用する
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このトピックには、 [UnhandledExceptionFilter](http://msdn.microsoft.com/en-us/library/ms681401%28VS.85%29.aspx)関数から、 [MAPICrashRecovery](mapicrashrecovery.md)関数を呼び出す方法を示す C++ でのコード サンプルが含まれています。 [MAPICrashRecovery](mapicrashrecovery.md)関数は、共有メモリを個人用フォルダー ファイル (PST) またはオフライン フォルダー ファイル (OST) の状態をチェックします。 
 

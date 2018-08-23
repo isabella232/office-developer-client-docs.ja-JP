@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 467242e3-96c9-4280-9cbc-9ecfe3f279cf
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f6902b45cde3e5349d69b6f35c3f8980deb031b4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5f45a6457bba738b290d967260bbd34c0f88f93f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800801"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595063"
 ---
 # <a name="imapisupportpreparesubmit"></a>IMAPISupport::PrepareSubmit
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI スプーラーに送信するためには、メッセージを準備します。
   

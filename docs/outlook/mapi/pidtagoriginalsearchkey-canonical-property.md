@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ac5eb91d-31c9-459b-bb22-f4ccfc92d1db
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 26854b640669bbc6479ce90ba9cad18cdf4d9264
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 69108529b13c8c5523f0ea92ef627c69a6722469
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803097"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594580"
 ---
 # <a name="pidtagoriginalsearchkey-canonical-property"></a>PidTagOriginalSearchKey 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 個人用アドレス帳にアドレス帳やその他の書き込み可能なアドレス帳からコピーしたエントリの元の検索キーが含まれています。
   

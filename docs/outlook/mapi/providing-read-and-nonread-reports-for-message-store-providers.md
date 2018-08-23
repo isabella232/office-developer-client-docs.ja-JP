@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 9644b8c5-ecc0-4ea3-972a-2169c78b99e5
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b082d063cc77be46fcd3d4e07ec6753f78f8f335
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8e2552cbeaf528de634c39a5ebd175a2615782b3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803738"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594440"
 ---
 # <a name="providing-read-and-nonread-reports-for-message-store-providers"></a>メッセージ ストア プロバイダー用の開封済みレポートと未開封レポートの提供
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストア プロバイダーはメッセージを受信する場合に、読み取りとメッセージ ストア プロバイダーによって受信されたメッセージの nonread のレポートをサポートする必要があります。 メッセージ ・ ストアは、ユーザーが、メッセージを開いたとき、ソース ファイルを送信者に通知メッセージを送信**PR_READ_RECEIPT_REQUESTED** ([PidTagReadReceiptRequested](pidtagreadreceiptrequested-canonical-property.md)) のプロパティが受信したメッセージに含まれている場合は、そのプロパティの値は TRUE をメッセージが読み取られたことを示します。 同様に、ユーザーは、開く前に、メッセージを削除した場合、メッセージ ・ ストアする必要がありますメッセージが読まれていることを示す送信者への応答を発行します。
   

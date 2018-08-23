@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 20ff2b63-e4a3-4ba9-bad0-2c1873fb69b5
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 6673e1d51a7c030a35a7c5c3cbc955341afba299
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0d3fb5d2ce5036c6491e24bba8d3541b123eaab1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803856"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595126"
 ---
 # <a name="searching-the-address-book"></a>アドレス帳を検索
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI �ł́A�����@�\�� 2 �̃��x�����������A�h���X���̃v���o�C�_�[���L���ɂ��܂��B
   

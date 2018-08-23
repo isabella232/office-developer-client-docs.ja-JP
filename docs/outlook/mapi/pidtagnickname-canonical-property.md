@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 088ffc58-d456-471b-af2f-7961e9c701f3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5e0aea21d48692c354c77750a8cb2d6e0b39b715
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 410a92c38c6eb4e8ee9b8ffce47f0cd00904e1be
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803014"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594048"
 ---
 # <a name="pidtagnickname-canonical-property"></a>PidTagNickname 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 連絡先のニックネームが含まれています。
   

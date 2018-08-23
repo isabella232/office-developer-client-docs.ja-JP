@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 180022af-4c1c-408c-a3fe-ed075cef79ab
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fd2575d401aa8a39d6f3b2cd08377b587b430ef1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cee58299147c9f97ff61a3b8c460125349910637
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800517"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594461"
 ---
 # <a name="imapiformadvisesink--iunknown"></a>IMAPIFormAdviseSink : IUnknown
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォームの閲覧者から通知を受信するフォームのサーバーを使用できます。 
   

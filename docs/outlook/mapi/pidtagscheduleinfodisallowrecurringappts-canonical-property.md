@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 61e082dd-f5bc-479b-990a-c9c0360f883e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f5f3feb5b3186f8d0239558aa410c7f71bdf54f8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 19e2cc0b95aaefbca1ec618c55b8d397de4d340e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803461"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593691"
 ---
 # <a name="pidtagscheduleinfodisallowrecurringappts-canonical-property"></a>PidTagScheduleInfoDisallowRecurringAppts 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 定期的な予定への自動応答は、辞退すると、TRUE が格納されます。
   

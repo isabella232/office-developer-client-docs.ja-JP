@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a3dc2c0f-b1fd-d758-e847-a0f101efe7f1
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0c691c31b08d507b1ca32d38c37387325b6d5d8d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3dffb65ea4f2c19966962a7f58cfc33f767fca83
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801677"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594076"
 ---
 # <a name="olflagicon"></a>OlFlagIcon
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アイテムのフラグを設定したかどうか、およびかどうかは、フラグが設定されたアイテムに関連付けられている色を指定します。
   
@@ -38,7 +38,7 @@ enum OlFlagIcon {
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  _olNoFlagIcon_
   
@@ -72,5 +72,5 @@ enum OlFlagIcon {
 
 
 
-[PidTagFollowupIcon の標準的なプロパティ](pidtagfollowupicon-canonical-property.md)
+[PidTagFollowupIcon 標準プロパティ](pidtagfollowupicon-canonical-property.md)
 

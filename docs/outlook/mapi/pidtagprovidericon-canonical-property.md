@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 59c84b1f-13b5-484b-b703-2fb9fcc6c7eb
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 92407d56bd095135ac1c6c292aa4b1da4755e93c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 61dc61872e8d1ed525d5ac3c46c56ccc3e45ea5e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803215"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593698"
 ---
 # <a name="pidtagprovidericon-canonical-property"></a>PidTagProviderIcon 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 カスタム アイコンまたは MAPI プロバイダーのオンラインとオフラインの両方の状態で Microsoft Office Outlook のステータス バーに表示されるアイコンを指定する Unicode 文字列が含まれています。
   

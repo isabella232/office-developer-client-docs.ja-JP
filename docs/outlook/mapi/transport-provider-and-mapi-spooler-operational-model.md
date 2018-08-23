@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: b0f8d8f0-fed7-4a7c-bc40-e935f159591d
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0e6c38091e5b2e10e82012bc470ea41037f57c7d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 26d9982248fde015a584eb79cc248bafc5afc6bb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804138"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594034"
 ---
 # <a name="transport-provider-and-mapi-spooler-operational-model"></a>トランスポート プロバイダーと MAPI スプーラー運用モデル
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 トランスポート プロバイダーの初期化、起動、処理、シャット ダウン、二つの後処理は、一連の MAPI スプーラーからトランスポート プロバイダーへの呼び出しによって実行されます。 呼び出しは次のように順序付けられました。
   

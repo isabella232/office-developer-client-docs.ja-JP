@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 790180f9-8864-47d4-97fb-35fe16b957c0
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b912d81c1413fb40b6ddccc2f54bc393a6b67857
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a6018c05d1191211242066425e4ae546c1618094
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799642"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594559"
 ---
 # <a name="adding-rendering-information-to-formatted-text"></a>書式付きテキストへのレンダリング情報の追加
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 添付ファイルが表示される書式設定されたテキストの位置を指定するには、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) のプロパティをメッセージのプレース ホルダー文字のシーケンスを挿入する必要があります。 プレース ホルダーの順序は、次の文字で構成されて: `\objattph`。
   

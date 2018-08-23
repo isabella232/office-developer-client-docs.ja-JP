@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f26384f1-467e-4343-92b3-0425da9d2123
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a6659f64f6e8d2e3dc61819b2263efe672cdd15c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 179d76b56c1ba9b40768c691d0b1555377f7adb7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800865"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595049"
 ---
 # <a name="imapitablequeryrows"></a>IMAPITable::QueryRows
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 現在のカーソル位置から開始し、テーブルから 1 つまたは複数の行を返します。
   

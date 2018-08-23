@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 636c1e75-3024-43ca-a7dd-1bb480dfbb5b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ac4da2d4082cac632548594411528b7bf1d6dc64
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3f23a332ee6778f71ce0809dfae8c0b6a92246a8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803277"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595147"
 ---
 # <a name="pidtagrecipientnumberforadvice-canonical-property"></a>PidTagRecipientNumberForAdvice 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このプロパティには、メッセージの受信者の連絡先電話番号メッセージの物理的な配信を通知するにはが含まれています。
   

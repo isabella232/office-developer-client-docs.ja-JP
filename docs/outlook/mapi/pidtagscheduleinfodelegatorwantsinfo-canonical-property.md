@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9d88b5b0-cb61-4714-8cef-9916c6e85854
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: bc4a397bec14ed54ac5c310d90dbef6a5b79e131
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 92b0c4b287d01e53e82dcf0fb2c730a9042a2d57
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803449"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594398"
 ---
 # <a name="pidtagscheduleinfodelegatorwantsinfo-canonical-property"></a>PidTagScheduleInfoDelegatorWantsInfo 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 情報の更新を受信する必要のある代理人が含まれています。
   

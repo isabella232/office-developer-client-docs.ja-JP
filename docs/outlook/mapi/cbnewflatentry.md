@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 500437a4-e0bc-4368-b572-8aecded2621d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d5c91de3dff7e68994e8098d457f89da420228d0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cf4716bb92f9405986078282510d672e160c5921
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799762"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595427"
 ---
 # <a name="cbnewflatentry"></a>CbNewFLATENTRY
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 指定したバイトのサイズのエントリ識別子を含む新しい[FLATENTRY](flatentry.md)構造体に割り当てるバイト数を計算します。 
   

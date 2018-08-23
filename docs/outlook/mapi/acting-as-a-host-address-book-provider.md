@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: f06a1034-ee49-4a09-831e-9752713228a8
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: cf52062eacbd13b45087df9d8558bffd43ccd744
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: de0acb88eee6addc0347f5281e5fbe5070bad0a4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799634"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595410"
 ---
 # <a name="acting-as-a-host-address-book-provider"></a>ホスト アドレス帳プロバイダーとして機能
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ホスト プロバイダーとは、そのコンテナー内の他のプロバイダーからの受信者が含まれていて、受信者のメンテナンスを部分的に制御するその他のプロバイダーの実装に依存しているアドレス帳プロバイダーです。 ホスト プロバイダーでは、これらの受信者が外部のテンプレート識別子を使用して、外部プロバイダーのコードにこれらの受信者に対してデータをバインドします。 プロバイダーは、 **PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) のプロパティ、受信者を取得し、 [IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md)への呼び出しに渡されます場合は、バインディング プロセスが開始されます。 
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 7935ebed-f252-482c-ad8c-757aa2d8501d
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d683d5fc959b219569417c74494cb47d7c2c059e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9e95423a1aa9a04247a70592a797d2395cafecc4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804000"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595371"
 ---
 # <a name="starting-a-mapi-session"></a>MAPI セッションの開始
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 セッション開始時に実行される作業のかなりの量ですが、必要な作業は最小限にします。 この作業の大半は、MAPI で作業が[生じます](mapiinitialize.md)し、 [MAPILogonEx](mapilogonex.md)の呼び出しの処理です。 どちらの関数は、セッション通知の処理とユーザー インターフェイスなどの側面を制御するための入力パラメーターとしてフラグを受け入れます。 MAPI ライブラリを初期化するために**生じます**し、MAPI サブシステムにログオンする**MAPILogonEx**を呼び出すときに、これらのフラグを設定することの影響をよく理解するのには重要です。 
   

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 403324b8-c992-4823-aa0f-0414b283debc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7a9a5d090babce8105fab43bf8401448373777cd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b523277a3865e62e8ed95883213b28d2155ffb54
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802957"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594797"
 ---
 # <a name="pidtaglisthelp-canonical-property"></a>PidTagListHelp 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 多目的インターネット メール拡張 (MIME) メッセージの一覧ヘルプ ヘッダー フィールドの値が含まれています。
   

@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: 7f73b5cf-7093-42e9-8acc-63d73df77cf5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 983c22772acfea7837e85d409b7928a35aed91ce
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fdf75787153f9a85e6a7bcddff44cf2c468a7975
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800699"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595035"
 ---
 # <a name="imapisessionopenmsgstore"></a>IMAPISession::OpenMsgStore
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストアを開き、さらにアクセスするための[IMsgStore](imsgstoreimapiprop.md)ポインターを返します。 
   

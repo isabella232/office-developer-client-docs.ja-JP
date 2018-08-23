@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: be941efd-04b3-48d0-9b9c-8195ad2bb58d
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e778df216d0fe9b901cd9f7136c8014a6b8f0d0a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b0ec3ada71a3e604ea71c5d386f1ff0466132081
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804014"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594090"
 ---
 # <a name="strategies-for-error-handling"></a>エラー処理の戦略
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 インターフェイス メソッドは仮想であるため、1 つの呼び出しから返される値の完全なセットを呼び出し元として認識することはできません。 メソッドの実装の 1 つが 5 つの値を返す可能性があります。別、8 つを返すことがあります。 MAPI ドキュメント内の参照エントリは、各メソッドに返すことができるいくつかの値を一覧表示します。これらは、クライアントまたはサービス プロバイダーが確認し、特別な意味を持っているために処理される値です。 その他の値を返すことができますが、意味のあるできないため、それらを処理するために特別なコードが必要ではありません。 成功または失敗の簡単なチェックで十分です。
   

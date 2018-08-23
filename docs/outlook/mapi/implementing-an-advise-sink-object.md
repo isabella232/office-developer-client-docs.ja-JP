@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 7461c4f6-7030-4ba2-ada4-26ebfbbfa001
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a95222f8ec75c519558636cf54111f28cbe14066
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b457fce208923ce01686812f20031e365842ccd8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800928"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593677"
 ---
 # <a name="implementing-an-advise-sink-object"></a>アドバイス シンク オブジェクトの実装
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアント独自のアドバイズ シンク オブジェクトを実装するか、 [HrAllocAdviseSink](hrallocadvisesink.md)のユーティリティ関数を使用します。 **HrAllocAdviseSink**は、コールバック関数を呼び出す**OnNotify**の実装とアドバイズ シンク オブジェクトを作成します。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 481812d6-8e94-4510-b288-55501dd5757c
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: c2e6600af66f3dab8ff0fbb5442a1354687a3cbb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c5b2d7db745cc270c0be7ee2184e86c6a4f97aad
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801038"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594300"
 ---
 # <a name="imslogoncompareentryids"></a>IMSLogon::CompareEntryIDs
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 同じオブジェクトを参照しているかどうかを決定する 2 つのエントリ id を比較します。 MAPI は、両方のエントリの識別子を比較するには、一意の識別子 (Uid) がそのプロバイダーによって処理される場合にのみ、サービス ・ プロバイダーへの呼び出しを意味します。
   
