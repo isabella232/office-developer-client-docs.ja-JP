@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: e0f37485-55c9-40f0-bc8c-48f7297f9f50
 description: '�ŏI�X�V��: 2015�N12��7��'
-ms.openlocfilehash: b8032b22c78ae34bce7e9ccfb0f0a14cdde07290
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ea9656f9571777478d3db9a2613fbff5ddef0ee6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803739"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592291"
 ---
 # <a name="releasing-the-transport-provider"></a>トランスポート プロバイダーの解放
 
  
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI、または MAPI スプーラーが終了したときトランスポート ログオン オブジェクトを使用します。
   

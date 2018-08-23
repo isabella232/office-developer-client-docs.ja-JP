@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 4ad2f417-be8f-4fc8-9321-82097289074b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 37a318df01101487fe0e8970251201c2515d1e8a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3c90284671d6087c74d4541b1a4774cc13b3ada5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802722"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583191"
 ---
 # <a name="pidtagexchangeprofilesectionid-canonical-property"></a>PidTagExchangeProfileSectionId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 複数の Microsoft Exchange Server アカウントを使用している場合は、アカウントを決定するために動的に生成された GUID が含まれています。
   

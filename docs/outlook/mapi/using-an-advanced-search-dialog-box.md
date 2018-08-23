@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: c9a156e6-3472-4409-a4ba-3a1a65b7bdcd
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3c27b859f6d056d3b9a98bd4d71db8e500dff696
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 581607e184d67413e735c4cbfb874643b3222a80
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804201"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588770"
 ---
 # <a name="using-an-advanced-search-dialog-box"></a>[高度な検索] ダイアログ ボックスの使用
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 いくつかのアドレス帳コンテナーは、クライアントの**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) 以外のプロパティで検索できるようにする、高度な検索機能をサポートします。 高度な検索をサポートしているアドレス帳コンテナーには、 **PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md)) と呼ばれるコンテナー オブジェクト プロパティが設定されています。 このコンテナー オブジェクトは、[検索] ダイアログ ボックスを説明する表示のテーブルへのアクセスを提供: ダイアログ ボックスを入力し、高度な検索条件を編集するために使用します。
   

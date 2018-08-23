@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 9dec5ad6-af34-4c5e-848b-5c3909d0c0a1
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 334ecaacec88c3730f4cc2f4c80eb35d5a553c4e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a6636b6298fcf565a297ed5df8a885c43c279c2c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803778"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583849"
 ---
 # <a name="retrieving-form-properties"></a>フォーム プロパティの取得
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 カスタム メッセージの種類に意味のあるクエリを発行するには、アプリケーションはそのメッセージに対して予測されるプロパティを確認する必要があります。 カスタム メッセージ クラスを使用するプロパティの一覧を取得するには、クライアント アプリケーションでは、MAPI フォーム マネージャーを照会します。 フォーム マネージャーは、クライアント アプリケーションがこの情報は、フォーム サーバー自体をアクティブ化のオーバーヘッドを生じさせずに使用できるように、適切なフォーム構成ファイルからこの情報を取得します。 これを行うは、クライアント アプリケーションは、 [IMAPIFormMgr::ResolveMessageClass](imapiformmgr-resolvemessageclass.md)メソッドを次のように呼び出します。 
   

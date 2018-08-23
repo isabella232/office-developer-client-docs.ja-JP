@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: ecada707-2960-41ec-be7e-619cad257c57
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ee20e73e5bc7bb6854b956da541d3a318a267d0f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f0696ad4d15274e4af18d2246dd124c1bfee1a2c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799640"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589407"
 ---
 # <a name="accessing-objects-by-using-the-session"></a>セッションを使用したオブジェクトへのアクセス
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 さまざまなオブジェクトにアクセスするのには、 [MAPILogonEx](mapilogonex.md)呼び出しから受信したセッションのポインターを使用できます。 さまざまなオブジェクトへのアクセスに使用されるメソッドを次の表に一覧します。 
   

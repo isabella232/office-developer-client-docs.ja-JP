@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b2b368ce-4486-4f90-985f-59e50ca95229
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 195f2d718428eb8bb618fc982488c276d8a536da
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 761228a01e0dc778b962c62436e872ff20d72088
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801268"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586313"
 ---
 # <a name="ixplogontransportlogoff"></a>IXPLogon::TransportLogoff
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ログオフ処理を開始します。 
   

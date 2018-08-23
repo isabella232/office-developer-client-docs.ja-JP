@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 5905b9e9-c462-451d-a49f-1f3a8aa506a6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 21889bf626d7f9128d1e01b3e6a15b5fa0d2e696
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cf275c66a60ed977c442b468b7c9951325db5120
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801020"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593516"
 ---
 # <a name="imsgserviceadmin--iunknown"></a>IMsgServiceAdmin : IUnknown
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロファイル内のメッセージ サービスを変更します。
   

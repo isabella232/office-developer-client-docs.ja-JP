@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2f268b3b-2e4c-4aea-8879-bdd0ac1df35c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 222ca10e58b50fa06876718658d1a6f3843da2f2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a0f4ae75117dff3610175b785ab3f982cc7e7552
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803181"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590408"
 ---
 # <a name="pidtagprimarysendaccount-canonical-property"></a>PidTagPrimarySendAccount 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージを送信するために使用される最初のサーバーの名前を示す文字列が含まれています。
   

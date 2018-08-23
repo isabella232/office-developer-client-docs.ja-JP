@@ -1,5 +1,5 @@
 ---
-title: PidTagAdditionalRenEntryIdsEx の標準的なプロパティ
+title: PidTagAdditionalRenEntryIdsEx 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b5e896e7-c0c6-4ad1-bf91-9daba3a1e4d4
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: d3a8dc45bb131f5d2e7ff370617a10e3096a99f9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: fcea014ca4c1b1629505127484c44ae990eed855
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802431"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590807"
 ---
-# <a name="pidtagadditionalrenentryidsex-canonical-property"></a>PidTagAdditionalRenEntryIdsEx の標準的なプロパティ
+# <a name="pidtagadditionalrenentryidsex-canonical-property"></a>PidTagAdditionalRenEntryIdsEx 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ストア オブジェクトの特別なフォルダーのエントリ Id が含まれています。 この複数値プロパティ内の各エントリは、1 つまたは複数のエントリ Id にマップすることができます、つまり、エントリとその関連付けられたエントリ Id との間の一対多リレーションシップがあります。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ADDITIONAL_REN_ENTRYIDS_EX  <br/> |
+|関連するプロパティ:  <br/> |PR_ADDITIONAL_REN_ENTRYIDS_EX  <br/> |
 |識別子:  <br/> |0x36D9  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |Outlook アプリケーション  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティを使用する場合、フォルダーのエントリ Id を指定するブロックの配列が含まれています。 ブロックは、次の 4 つのテーブルで指定された形式に従います。
   
@@ -115,11 +115,11 @@ Mapidefs.h
 
 
 
-[MAPI Property Overview](mapi-property-overview.md)
+[MAPI のプロパティの概要](mapi-property-overview.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

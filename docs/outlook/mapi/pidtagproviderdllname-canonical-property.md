@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9ddb38eb-9a32-4dbe-b42c-6ea9db98acd2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d75f22af3f8c9184da55ec57e08cf4db832ed174
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3bf6347102fc0865b081847a0b66763ba2654665
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803211"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589484"
 ---
 # <a name="pidtagproviderdllname-canonical-property"></a>PidTagProviderDllName 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI サービス プロバイダーのダイナミック リンク ライブラリ (DLL) の基本ファイル名が含まれています。
   

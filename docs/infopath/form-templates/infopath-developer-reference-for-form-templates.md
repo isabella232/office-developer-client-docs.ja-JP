@@ -12,12 +12,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7610acc3-f705-4a38-968c-5b3a358efc90
 description: InfoPath 2013 フォーム テンプレートの開発者向けリファレンスへようこそ。このドキュメントには、Visual Basic または Visual C# で記述されたビジネス ロジックを含む InfoPath フォーム テンプレートの構築に役立つ、概要、プログラミング タスク、およびクラス ライブラリ リファレンス情報が記載されています。
-ms.openlocfilehash: 64c79657dcd348e162142193fac4e1040b0d6462
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e9e1d023cf7c910c070269a7e46b26c53948fd16
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799127"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588063"
 ---
 # <a name="infopath-developer-reference-for-form-templates"></a>InfoPath フォーム テンプレートの開発者向けリファレンス
 
@@ -34,7 +34,6 @@ InfoPath 2013 フォーム テンプレートの開発者向けリファレン�
 [Office 開発者向けドキュメントのドキュメントの表記規則](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
   
 [Microsoft アクセシビリティ](http://www.microsoft.com/ENABLE/)
-  
-[Microsoft プライバシーに関する声明](http://privacy.microsoft.com/en-us/default.mspx)
+
   
 

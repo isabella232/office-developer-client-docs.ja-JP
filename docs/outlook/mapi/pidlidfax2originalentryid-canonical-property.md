@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: da80d72f-9389-463f-8665-f26bb30c0ed2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d8a7082f76af761cd04a9c190324b7e6cf6e54fb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f6b8a00070cba755eb043e90586528674e461514
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801939"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592613"
 ---
 # <a name="pidlidfax2originalentryid-canonical-property"></a>PidLidFax2OriginalEntryId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 連絡先の自宅の fax アドレスの元のエントリ Id を指定します。
   

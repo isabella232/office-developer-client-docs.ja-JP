@@ -1,5 +1,5 @@
 ---
-title: PidNameContentBase の標準的なプロパティ
+title: PidNameContentBase 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: ab197ace-6e7d-4ec5-9f6d-4a63a1eda11c
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 21469b944bb2ce5db0576e40012335d89d48cb49
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 91eb93c9cf3afcecef698e27791c06831c13624d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802359"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589099"
 ---
-# <a name="pidnamecontentbase-canonical-property"></a>PidNameContentBase の標準的なプロパティ
+# <a name="pidnamecontentbase-canonical-property"></a>PidNameContentBase 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [RFC3282] 内容ベース ヘッダー フィールドの値が含まれています。
   
@@ -32,10 +32,10 @@ ms.locfileid: "19802359"
 |フレンドリ名:  <br/> |BodyContentBase  <br/> |
 |プロパティを設定します。  <br/> |PS_INTERNET_HEADERS  <br/> |
 |プロパティ名:  <br/> |コンテンツ ・ ベース  <br/> |
-|データを入力します。  <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |Email  <br/> |
+|データの種類 :   <br/> |PT_UNICODE  <br/> |
+|領域:  <br/> |メール  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティの値を設定するのには多目的インターネット メッセージの拡張機能 (MIME) クライアントに書き込まなければなりません目的の値内容ベース ヘッダー フィールドにメッセージの本文にマップされた MIME エンティティ。 MIME のリーダーは、このプロパティの値をこのような MIME エンティティのコンテンツ ベースのヘッダー フィールドの値をコピーする必要があります。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

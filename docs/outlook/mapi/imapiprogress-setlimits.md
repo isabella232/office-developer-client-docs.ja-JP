@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 63c9e316-ee53-4065-8154-449639643ff7
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 14abfaadcdb1710a7cb8275c8f82d502aea8300e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 010f69b70324d4280a34d2fe06d670e07d922d86
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800641"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586775"
 ---
 # <a name="imapiprogresssetlimits"></a>IMAPIProgress::SetLimits
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 操作、および操作の進行状況の情報を計算する方法を制御するフラグでは、アイテム数の上限と下限の制限を設定します。
   
@@ -35,7 +35,7 @@ HRESULT SetLimits(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpulMin_
   
@@ -87,12 +87,12 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [IMAPIProgress::Progress](imapiprogress-progress.md)
   
-[IMAPIProgress: IUnknown](imapiprogressiunknown.md)
+[IMAPIProgress : IUnknown](imapiprogressiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[進行状況インジケーターを表示します。](how-to-display-a-progress-indicator.md)
+[進行状況インジケーターを表示する](how-to-display-a-progress-indicator.md)
   
-[進行状況のインジケーターを実装します。](implementing-a-progress-indicator.md)
+[進行状況インジケーターの実装](implementing-a-progress-indicator.md)
 

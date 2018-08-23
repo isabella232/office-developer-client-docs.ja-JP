@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 69663470-45f3-86ed-e015-eba32b5a7233
 description: '�ŏI�X�V��: 2012�N6��25��'
-ms.openlocfilehash: a21383e0ea6920075a57d872e82851462bf0e8d3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bb83b57de3bb484e4fb5f94f76a7d9bfa0fce876
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800260"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589799"
 ---
 # <a name="verify-an-attachment-is-blocked"></a>添付ファイルがブロックされていることを確認します。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 C++ では、このコード サンプルを使用する方法を示しています、 [IAttachmentSecurity: IUnknown](iattachmentsecurityiunknown.md)インターフェイスを表示して、インデックス作成の Microsoft Outlook 2010 または Microsoft Outlook 2013 で添付ファイルがブロックされているかどうかを確認します。 
   

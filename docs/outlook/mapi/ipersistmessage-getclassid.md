@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 77eeb468-3432-4ccd-9c1e-1df9ce605193
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e0937eed2e8ca61bc18ee45ff20337267808ea70
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c9d769e6a32fad22750a965debbbdce83e4de539
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801109"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586459"
 ---
 # <a name="ipersistmessagegetclassid"></a>IPersistMessage::GetClassID
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォームを管理するフォームのサーバーを表す識別子を返します。 
   

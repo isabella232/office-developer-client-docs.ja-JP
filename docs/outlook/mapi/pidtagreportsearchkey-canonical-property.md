@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d4f4c40b-b6a8-45f3-b750-07b92c535322
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fa2770daf38fe93eb9fb69990eebc2a6fcfd6a27
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b82e27358c9f30a649dc10e1a53ee7c321cb3d82
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803356"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584962"
 ---
 # <a name="pidtagreportsearchkey-canonical-property"></a>PidTagReportSearchKey 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このメッセージのレポートを取得する必要があります受信者の検索キーが含まれています。
   

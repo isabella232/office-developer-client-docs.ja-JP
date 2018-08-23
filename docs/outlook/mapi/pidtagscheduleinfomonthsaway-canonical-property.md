@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 282a8ba1-b786-4d17-b6c5-17e935e59a6b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6301cd86a81dfbf38666b6fb3ea326bc1f801490
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b8caf16bad26eef10d7686d66c5a17320de5e3bb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803479"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588105"
 ---
 # <a name="pidtagscheduleinfomonthsaway-canonical-property"></a>PidTagScheduleInfoMonthsAway 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 不在時 (OOF) の種類のデータを空き/予約済みの空き時間情報メッセージ内に存在する月の一覧が含まれています。 
   

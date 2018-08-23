@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: f0d34dd6-7ddb-4843-b848-c89923ff80cc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b47d104ade6a7d23f5630d15697b330360d027b9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 43916f540ca324059d53f0413105146985835ffe
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802980"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588700"
 ---
 # <a name="pidtagmessagedownloadtime-canonical-property"></a>PidTagMessageDownloadTime 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 リモート サーバーからローカルのメッセージ ストアにメッセージをダウンロードする予定の時間が含まれています。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a10d86fc-3a73-49dc-b974-ed852ec715e9
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: df52f668e91b707c0436b394186b27fdbb3a5dbf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d04144a4f5ef714b59b608bfe19367bcb3c1ced8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803574"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588574"
 ---
 # <a name="pidtagspoolerstatus-canonical-property"></a>PidTagSpoolerStatus 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI スプーラーを無効に提供される情報に基づいて、メッセージのステータスが含まれています。
   

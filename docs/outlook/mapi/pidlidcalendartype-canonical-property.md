@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 06e066f1-2b7d-4a6b-b88c-85a9bfa83bd3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8e3017d18491fde6b66c3173c43b8b9d0ee37ea8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 815a0475c678f30c520d2d7847571f4ddb31cac4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801834"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591962"
 ---
 # <a name="pidlidcalendartype-canonical-property"></a>PidLidCalendarType 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **DispidApptRecur** ([PidLidAppointmentRecur](pidlidappointmentrecur-canonical-property.md)) のプロパティから [カレンダーの種類] フィールドの値を指定します。
   

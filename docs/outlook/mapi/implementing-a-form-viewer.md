@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: a567185c-bd72-4307-928c-08cac5494c1a
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 645f98342b4b3ec2bebf3f233f719bd5cae69da9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ad0da261b3059ca83f2d547c25a508ec9337aa72
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800905"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584745"
 ---
 # <a name="implementing-a-form-viewer"></a>フォーム ビューアーの実装
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォーム ビューアーには、3 つのオブジェクトが含まれています: メッセージのサイトでは、ビューのアドバイズ シンク、およびビューのコンテキスト。 これらの各オブジェクトにより、フォームのサーバーと、フォームと対話することができます。
   

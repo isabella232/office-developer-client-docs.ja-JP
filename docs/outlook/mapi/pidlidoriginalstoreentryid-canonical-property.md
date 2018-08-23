@@ -1,5 +1,5 @@
 ---
-title: PidLidOriginalStoreEntryId の標準的なプロパティ
+title: PidLidOriginalStoreEntryId 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1b1fc008-9cd5-49f6-9f91-b59e305a1e82
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: aaf442b941cfe14f695bf5e7f7ec246d06e5ae0b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: d7af1168bf5808523e1500ed2156779386f8d84a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802068"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591752"
 ---
-# <a name="pidlidoriginalstoreentryid-canonical-property"></a>PidLidOriginalStoreEntryId の標準的なプロパティ
+# <a name="pidlidoriginalstoreentryid-canonical-property"></a>PidLidOriginalStoreEntryId 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 代理人のストアのエントリ ID を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidOrigStoreEid  <br/> |
+|関連するプロパティ:  <br/> |dispidOrigStoreEid  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008237  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 作成または代理人によって更新された会議のオブジェクトに対してこのプロパティを設定する必要があります。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

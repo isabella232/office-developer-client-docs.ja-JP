@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4d385754-5132-4ae3-9e5d-686d58857b5b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b11c616e19573da41e1024472f437b2a04adf762
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cfd1dfa70352880b6bd62d936ba9ed27a558dc7b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802405"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586005"
 ---
 # <a name="pidnamexsharingprovidername-canonical-property"></a>PidNameXSharingProviderName 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **DispidSharingProviderGuid** ([PidLidSharingProviderGuid](pidlidsharingproviderguid-canonical-property.md)) のプロパティで指定された共有プロバイダーの表示名を表します。
   

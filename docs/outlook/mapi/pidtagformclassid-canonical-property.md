@@ -1,5 +1,5 @@
 ---
-title: PidTagFormClassId の標準的なプロパティ
+title: PidTagFormClassId 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: ca2bbfab-6f4f-4a9a-b3ef-61d7c41e4767
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: ca12d7384589549156d0b96248e321ca212f0faf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 9c3260e51d9a52de13a187110eb50334c601fc86
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802760"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593404"
 ---
-# <a name="pidtagformclassid-canonical-property"></a>PidTagFormClassId の標準的なプロパティ
+# <a name="pidtagformclassid-canonical-property"></a>PidTagFormClassId 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 128 ビット オブジェクトのリンクと埋め込み (OLE) グローバルに一意の識別子 (GUID) のフォームが含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_FORM_CLSID  <br/> |
+|関連するプロパティ:  <br/> |PR_FORM_CLSID  <br/> |
 |識別子:  <br/> |0x3302  <br/> |
-|データを入力します。  <br/> |PT_CLSID  <br/> |
+|データの種類 :   <br/> |PT_CLSID  <br/> |
 |領域:  <br/> |一般的な MAPI  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [MAPIUID](mapiuid.md)構造体には、一意の識別子の定義が含まれています。 
   
@@ -58,7 +58,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

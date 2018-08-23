@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0a5cb49f-c4f3-4893-8616-80d6332efcfc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 93f264cc91118e40f7a2869d29e7e53d404ae381
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: de5c98272c08c469acf23b0ecae7eac0a2d1bfe6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800897"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592515"
 ---
 # <a name="imessagedeleteattach"></a>IMessage::DeleteAttach
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 添付ファイルを削除します。
   

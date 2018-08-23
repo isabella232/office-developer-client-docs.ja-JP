@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 5680fed2-b2e7-4c4b-9ba8-2c497b9c433c
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 456ef036b26fd8b9840d33f0f699474c3a6ce127
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0ff8d9f1ae25c55d66847b8c0e5e66c406dfdfba
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799796"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586152"
 ---
 # <a name="choosing-a-forms-property-set"></a>フォームのプロパティ セットを選択します。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォーム サーバーを実装する場合は、個々 のメッセージ クラスに必要な情報のプロパティを持つ必要があります。 これらのプロパティは、MAPI のプロパティ、定義済みまたはカスタム プロパティを定義することができます。 プロパティの使用についての詳細については、 [MAPI プロパティの概要](mapi-property-overview.md)を参照してください。
   

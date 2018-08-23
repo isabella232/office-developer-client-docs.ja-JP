@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f176308d-efb9-460c-8379-8a12d4f8e017
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 81d154d3044ecb5fb2e920874058f1c5136bc7ec
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 879960a8f61973b160c86eb4a473bf05bcd918fa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803668"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586712"
 ---
 # <a name="pidtagycoordinate-canonical-property"></a>PidTagYCoordinate 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 開始位置 (左上隅)] ダイアログ ボックス コントロールでは、標準の Windows ダイアログ単位での y 座標が含まれています。
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 319f10e9-db8d-4d16-aa1f-6cf5fef493eb
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: df6347298aab5404ec69bd9ac876863e31b741d0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 745c1b10cbbb24389cace7911d7c5fd37fe09472
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800698"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586852"
 ---
 # <a name="imapisessioncompareentryids"></a>IMAPISession::CompareEntryIDs
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 同じオブジェクトを参照しているかどうかを決定する 2 つのエントリ id を比較します。 
   

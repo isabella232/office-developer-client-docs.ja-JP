@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e4db6cae-4730-45d0-8b8a-9bd484c8bd3f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 55922f49d33abfed67b11ceade6d2762e8edacde
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 31cabf50602f9e0f7a70118ddc794387990862ad
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801816"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591269"
 ---
 # <a name="pidlidautofilllocation-canonical-property"></a>PidLidAutoFillLocation 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 リソースを表す RecipientRow から**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) のプロパティを**dispidLocation** ([PidLidLocation](pidlidlocation-canonical-property.md)) プロパティの値が設定されていることを示します。
   

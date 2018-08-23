@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0d705667-19f4-4eda-a068-e65ea8f00d9b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 075c5e894d4b039ce06ca0508b838a7094af8768
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ffe4798c5e8ef200619b060a58e868cc4a1b2bc2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803583"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590072"
 ---
 # <a name="pidtagstoreentryid-canonical-property"></a>PidTagStoreEntryId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 オブジェクトが格納されているメッセージ ストアの一意のエントリ id が含まれています。
   

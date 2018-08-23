@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 449a94d3-6610-4434-a705-4a739339053d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ffb7ba800e4076d37f10ed8da059e3db9e7ffcb4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 57544507d47a846831293e80337f500efd9ed717
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799757"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586544"
 ---
 # <a name="cbmapiforminfoarray"></a>CbMAPIFormInfoArray
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 指定されたフォーム オブジェクトの情報が含まれている既存の[SMAPIFormInfoArray](smapiforminfoarray.md)構造体のバイト数を計算します。 
   

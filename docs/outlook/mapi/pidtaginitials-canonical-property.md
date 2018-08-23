@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: db9e0115-99fb-4fa7-8726-0be991505506
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a3bf9e01c16b810d8e48e15016416dd864420498
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a4827627fcc11f903fbabcc4d4c8dc202188d3ab
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802845"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586145"
 ---
 # <a name="pidtaginitials-canonical-property"></a>PidTagInitials 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 受信者の完全な名前の部分の頭文字が含まれています。 
   

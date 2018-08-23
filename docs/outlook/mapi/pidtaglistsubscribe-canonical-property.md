@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 97387a82-8e40-4c76-818c-2229fac12e01
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5030e48ac87408f983696a365d3234c3362346c0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4408bbc9461d11859292c1d4c356c2323598eb7b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802950"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584227"
 ---
 # <a name="pidtaglistsubscribe-canonical-property"></a>PidTagListSubscribe 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 多目的インターネット メール拡張 (MIME) メッセージのリストの購読のヘッダー フィールドの値が含まれています。
   

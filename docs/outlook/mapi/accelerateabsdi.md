@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.assetid: da67dcf4-1411-4fc9-992c-115485019bd3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b7d4d758f7031c55aa3a23b662ec8727ea1e0719
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 101e74f3e35e3664dd29e59f166b2f0af6e1dcba
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799624"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592039"
 ---
 # <a name="accelerateabsdi"></a>ACCELERATEABSDI
  
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 モードレスのアドレス帳のダイアログ ボックスのアクセラレータ キーを処理するコールバック関数を定義します。 
   

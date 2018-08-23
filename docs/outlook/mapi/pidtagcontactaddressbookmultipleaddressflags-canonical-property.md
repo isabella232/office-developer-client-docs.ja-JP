@@ -1,5 +1,5 @@
 ---
-title: PidTagContactAddressBookMultipleAddressFlags の標準的なプロパティ
+title: PidTagContactAddressBookMultipleAddressFlags 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: ed3bc585-13f6-46a5-9e71-9c8513ddfc0a
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: fbe955d3e7a509edf6ba10678e1e2538c9185193
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: b783a624ef5358a69d65dd52785b285db1a70df7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802562"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588672"
 ---
-# <a name="pidtagcontactaddressbookmultipleaddressflags-canonical-property"></a>PidTagContactAddressBookMultipleAddressFlags の標準的なプロパティ
+# <a name="pidtagcontactaddressbookmultipleaddressflags-canonical-property"></a>PidTagContactAddressBookMultipleAddressFlags 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 連絡先アイテムごとでは、プロバイダーが複数の電子メールをサポートするかどうかを示すフラグが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_CONTAB_MULTI_ADDR_FLAGS  <br/> |
+|関連するプロパティ:  <br/> |PR_CONTAB_MULTI_ADDR_FLAGS  <br/> |
 |識別子:  <br/> |0x6625  <br/> |
-|データを入力します。  <br/> |PT_MV_LONG  <br/> |
+|データの種類 :   <br/> |PT_MV_LONG  <br/> |
 |領域:  <br/> |連絡先のアドレス帳  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティのフラグが TRUE の場合は、プロバイダーでは、この電子メール アドレスがない連絡先は含まれません。 プライマリ電子メール アドレスのみが受け入れられます。 これは、アドレス帳の連絡先のプロファイル セクションのプロパティです。
   
@@ -58,7 +58,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

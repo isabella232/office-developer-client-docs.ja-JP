@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a00d71b1-d705-40d5-b667-f91b57db85da
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: cce98dc630dd9f7fa459ca31d94d012ba9a7fd85
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 251359a98f89c88e707e4f705bd94b1f30b32cbd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800675"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592053"
 ---
 # <a name="imapiprovidershutdownnotifyprocessshutdown"></a>IMAPIProviderShutdown::NotifyProcessShutdown
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI プロバイダーをプロバイダーは、データ損失を防ぐための処置を行うことができるように、高速シャット ダウンを行う MAPI クライアントを送信することを示します。
   
@@ -41,7 +41,7 @@ S_OK
 
 
 
-[IMAPIProviderShutdown: IUnknown](imapiprovidershutdowniunknown.md)
+[IMAPIProviderShutdown : IUnknown](imapiprovidershutdowniunknown.md)
 
 
 [Mapi クライアントのシャット ダウン](client-shutdown-in-mapi.md)

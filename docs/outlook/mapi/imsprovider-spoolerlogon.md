@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 79d5af23-efad-4013-a330-56babfb2bb0f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: eaf84e1b2a747b313f1534eb66b190d86cf89df9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 56c025713b0cc2b41a4bf4463f48f8d7c3d2124b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801066"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586418"
 ---
 # <a name="imsproviderspoolerlogon"></a>IMSProvider::SpoolerLogon
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストアに、MAPI スプーラーをログに記録します。
   
@@ -44,7 +44,7 @@ HRESULT SpoolerLogon(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _lpMAPISup_
   
@@ -124,7 +124,7 @@ MAPI_W_ERRORS_RETURNED
   
 > 呼び出しが成功したが、メッセージ ストア プロバイダーが使用可能なエラー情報を持ちます。 この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。 プロバイダーからエラー情報を取得するには、 [IMAPISession::GetLastError](imapisession-getlasterror.md)メソッドを呼び出します。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI スプーラーでは、メッセージ ストアにログオンするための**IMSProvider::SpoolerLogon**メソッドを呼び出します。 MAPI スプーラーは、中に、ログオンした後に、 _lppMDB_パラメーターでは、メッセージ ストア プロバイダーによって返されるメッセージのストア オブジェクトを使用してください。 
   
@@ -140,5 +140,5 @@ MAPI スプーラーでは、メッセージ ストアにログオンするた�
   
 [MAPIERROR](mapierror.md)
   
-[IMSProvider: IUnknown](imsprovideriunknown.md)
+[IMSProvider : IUnknown](imsprovideriunknown.md)
 

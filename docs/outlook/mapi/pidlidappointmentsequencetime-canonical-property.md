@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0170bb9b-f43b-4089-9144-b8652c38f43d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: dc4658d57a127cf2cf7cd8794cf7bc8c745c0e3f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a36728fc3db2506e7c8d929842de6916b55409c8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801815"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588259"
 ---
 # <a name="pidlidappointmentsequencetime-canonical-property"></a>PidLidAppointmentSequenceTime 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このプロパティが最後に修正された日時を指定します。
   

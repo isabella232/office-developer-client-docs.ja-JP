@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: e7e1f371-9e9a-4bec-a0b3-87753a16f5e0
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5fe1b064b48bc9112a872677fbf5042b7dfe5449
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6a06283e3eb072e1f502d0b1bd303ce9f0733578
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800097"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583975"
 ---
 # <a name="form-configuration-file-verbs-section"></a>フォーム構成ファイル [Verbs] セクション
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **[動詞]** セクションには、フォームでサポートされている動詞の完全なセットが一覧表示されます。 **[動詞]** セクションの形式は次のとおりです。 
   

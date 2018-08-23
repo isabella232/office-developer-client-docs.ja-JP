@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 588d002b-8412-4ab9-9757-04ad89e0a6f8
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: ae2a19d556fc9819312ce822f9347edcd6edc0d6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d978b7a6bd8af9a505fa025aef2e5da68308468f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800761"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588595"
 ---
 # <a name="imapisupportnewentry"></a>IMAPISupport::NewEntry
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アドレス帳コンテナーに直接、または送信メッセージの受信者の一覧には、新しい受信者を追加します。
   

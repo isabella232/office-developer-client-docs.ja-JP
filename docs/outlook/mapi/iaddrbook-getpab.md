@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9830e09c-700f-469b-a54d-4e4e0583aa84
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3d67d71effde87711e3be9aca1b979627acda37d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1f93ee653c9365488432c4e797b171a199c30107
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800389"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583716"
 ---
 # <a name="iaddrbookgetpab"></a>IAddrBook::GetPAB
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 個人用アドレス帳 (PAB) として指定されているコンテナーのエントリの識別子を返します。
   

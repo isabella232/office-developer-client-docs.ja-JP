@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 170afe1f-1223-4689-825c-d21ab14b213b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3f4859e4a354d83f62ca8fefa48f932425e2fc3d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 76ea38db86f678c250016c2f5e2feea3a173bb5c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802051"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589386"
 ---
 # <a name="pidlidnonsendablecc-canonical-property"></a>PidLidNonSendableCc 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 すべての連絡先である出席者も任意出席者の一覧が含まれています。
   

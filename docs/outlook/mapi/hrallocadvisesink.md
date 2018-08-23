@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 1dd460e6-ce95-4fef-bb5e-8d778c9716d5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5a5e736e8be1120f5fb90048f01fdc8a44479060
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d5cb43bfa3acd912e397644657223c177d6afb30
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800272"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589323"
 ---
 # <a name="hrallocadvisesink"></a>HrAllocAdviseSink
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 呼び出し元の実装とイベント通知が開始されるようにコールバック関数で指定されたコンテキストを指定、アドバイズ シンク オブジェクトを作成します。 
   

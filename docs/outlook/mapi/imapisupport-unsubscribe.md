@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 3f2870f7-1c08-4d0f-b9d8-7644f5e55b78
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 9ee071bb303c7518a23c5e57909f8618b7aebdde
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 01ea05eb864c78f3ded39ca3ebc62578076b9d37
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800810"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584661"
 ---
 # <a name="imapisupportunsubscribe"></a>IMAPISupport::Unsubscribe
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [IMAPISupport::Subscribe](imapisupport-subscribe.md)メソッドを呼び出して、以前に設定されている通知を送信するための責任をキャンセルします。 
   

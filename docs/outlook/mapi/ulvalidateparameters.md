@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: fb9050c9-5797-44f0-8bf5-6264f4e6d7c3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 42b2f8e9695b1dbdc5ea02db5a4e8a0eaba6099c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 297b5a516f8275b236092f9f385afcb673c95de0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804177"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585242"
 ---
 # <a name="ulvalidateparameters"></a>UlValidateParameters
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 パラメーターのクライアント アプリケーションが、サービス ・ プロバイダーおよび MAPI 経過をチェックする内部関数が呼び出されます。 
   

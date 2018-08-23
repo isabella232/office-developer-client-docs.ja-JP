@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: e119fa20-08b8-4c8d-93fc-56037220890d
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d7294527fcd557ae2d4824b9a3215ff464f62c2a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 003655354ecac8e2910b3e6851da32c28ce31cfc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799607"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586455"
 ---
 # <a name="about-restrictions"></a>制限について
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 制限は、特定の条件に一致する列の値を持つ行のみをビューでの行の数を制限する方法です。 テーブルでの制限を使用するための多くのさまざまなチャンスがあります。 クライアント アプリケーションの制限を使用、たとえば、特定の人物がプロパティをサポートしていないか、特定の値にプロパティを設定している行を検索するか、内で重複した受信者を検索するに送信されるメッセージの内容のテーブルにフィルターを適用するのには、メッセージ。 
   

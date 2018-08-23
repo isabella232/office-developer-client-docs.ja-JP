@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: b193e819-749e-4642-8afc-dbc47b17b617
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 11cd1040bb228d789248a89184572b87cd1688ef
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 244dae4d3413587b7a37e93328998b153fb8ece3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801482"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585333"
 ---
 # <a name="mapi-transport-provider-overview"></a>MAPI トランスポート プロバイダーの概要
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 トランスポート プロバイダーは、メッセージの送受信を処理し、必要な場合にセキュリティを実装します。 注意の必要な前処理および後処理のタスクです。 すべてのアクティブなメッセージング システムの通常の 1 つのトランスポート プロバイダーがあります。
   

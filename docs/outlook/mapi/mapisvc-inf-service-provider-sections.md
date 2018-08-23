@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: ab17dcf2-409b-4a57-9cc4-5794f995cd3e
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: ad6a4661025dfd8cbd39d8f58a36d94ab997ada2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 05666d8d6b7279588b4b442151640fa1696aedda
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801537"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586782"
 ---
 # <a name="mapisvcinf-service-provider-sections"></a>MapiSvc.inf サービス プロバイダーセクション
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 Mapisvc.inf には、メッセージ サービスの前のセクションで**プロバイダー**のエントリに記載されているエントリのそれぞれのサービス プロバイダーの 1 つのセクションが含まれています。 **サービス**プロバイダー セクションと似ていますがメッセージ サービスのセクションでセクションの両方の種類には、この形式のエントリが含まれています。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 500f60ed-fdec-4d70-8cf5-664c46643956
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a187245b2594282bc9908b3075852440f418af2b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 769ae984e4b6e8610ca7909ea2ac714d9d04d698
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800006"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589673"
 ---
 # <a name="dtpage"></a>DTPAGE
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [BuildDisplayTable](builddisplaytable.md)関数によって、表示された表から組み込まれているダイアログ ボックスについて説明します。 
   

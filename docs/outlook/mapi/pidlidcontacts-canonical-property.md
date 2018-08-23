@@ -1,5 +1,5 @@
 ---
-title: PidLidContacts の標準的なプロパティ
+title: PidLidContacts 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 709e701f-b24e-4cd5-8c55-3f9e67f67a4a
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 6182c9dfc0c4de24bd587e626fe74d02ed23968b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 2a097b8e8071c08b82a05f3c8e0b021db8ec5107
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801856"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585396"
 ---
-# <a name="pidlidcontacts-canonical-property"></a>PidLidContacts の標準的なプロパティ
+# <a name="pidlidcontacts-canonical-property"></a>PidLidContacts 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アイテムに関連付けられている連絡先の名前が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidContacts  <br/> |
+|関連するプロパティ:  <br/> |dispidContacts  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x0000853A  <br/> |
-|データを入力します。  <br/> |PT_MV_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_MV_UNICODE  <br/> |
 |領域:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティには、 **dispidContactLinkEntry** ([PidLidContactLinkEntry](pidlidcontactlinkentry-canonical-property.md)) のプロパティの値で参照されている各アドレス帳**エントリ Id**の**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) のプロパティが含まれています。 **DispidContactLinkEntry**で参照されていない名前の可能性があります。
   
@@ -73,7 +73,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

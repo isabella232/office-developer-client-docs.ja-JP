@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a99bc2f3-03ff-4997-9d00-28be0a75b7f6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e66c779c9210529f2cd9db73ac3988e89680806d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1907395882553050ac4e86416380e989b943b36e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802409"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584703"
 ---
 # <a name="pidnamexsharingremoteuid-canonical-property"></a>PidNameXSharingRemoteUid 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **DispidSharingRemoteUid** ([PidLidSharingRemoteUid](pidlidsharingremoteuid-canonical-property.md)) プロパティの値を表します。
   

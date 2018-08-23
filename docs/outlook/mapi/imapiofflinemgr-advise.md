@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 784b6218-548d-817a-caaa-cf9be6bc3d2f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 53fa6bd49190bb88daeb0438dc0112e34322383e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e0c8c4c6251581506c7bdd78c009bb12e8291c81
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800625"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586936"
 ---
 # <a name="imapiofflinemgradvise"></a>IMAPIOfflineMgr::Advise
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 オフライン オブジェクトに対してコールバックを受信するようにクライアントを登録します。
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: fbe63916-b3eb-4ea7-bc42-80a8b0281b03
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3f94823eb3f90ff9ac0f472a2de64e1904920d9c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5f7da3da8d23b28e13c39570b8f5971cb75a3310
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801337"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582533"
 ---
 # <a name="mapi-character-sets"></a>MAPI の文字セット
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI 準拠のクライアント アプリケーションとサービス ・ プロバイダーは、ANSI 文字 (1 バイト)、または Unicode 文字 (2 バイト) を使用できます。 OEM 文字セットはサポートされていません。 OEM 文字列は、MAPI メソッドに渡される、または関数と、そのメソッドまたは関数が失敗します。 OEM 文字セットでファイル名を使用するクライアント アプリケーションは、MAPI のメソッドまたは関数に渡す前に ANSI に変換するのには注意が必要である必要があります。
   

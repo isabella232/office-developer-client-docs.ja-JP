@@ -1,5 +1,5 @@
 ---
-title: PidTagDetailsTable の標準的なプロパティ
+title: PidTagDetailsTable 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 7a0ccad3-f497-4871-b733-771e6cb8ef6a
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: a267f9a9fb8d97256cf7a448b453d04db2118180
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 1602d1753d9f7f6e6f407a85dab0a33255db7aae
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802678"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585788"
 ---
-# <a name="pidtagdetailstable-canonical-property"></a>PidTagDetailsTable の標準的なプロパティ
+# <a name="pidtagdetailstable-canonical-property"></a>PidTagDetailsTable 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 埋め込み表示テーブル オブジェクトが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_DETAILS_TABLE  <br/> |
+|関連するプロパティ:  <br/> |PR_DETAILS_TABLE  <br/> |
 |識別子:  <br/> |0x3605  <br/> |
-|データを入力します。  <br/> |PT_OBJECT  <br/> |
+|データの種類 :   <br/> |PT_OBJECT  <br/> |
 |領域:  <br/> |MAPI のコンテナー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティをオブジェクトの[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドに渡すことは、表示された表の作成を可能にする[IMAPITable](imapitableiunknown.md)インターフェイスを返します。 MAPI では、このテーブルを使用して、 [IAddrBook::Details](iaddrbook-details.md)の呼び出しへの応答で、アドレス帳のオブジェクトのプロパティ シートを表示します。 
   
@@ -54,16 +54,16 @@ Mapitags.h
 
 
 
-[PidTagCreateTemplates の標準的なプロパティ](pidtagcreatetemplates-canonical-property.md)
+[PidTagCreateTemplates 標準プロパティ Property](pidtagcreatetemplates-canonical-property.md)
   
-[PidTagSearch の標準的なプロパティ](pidtagsearch-canonical-property.md)
+[PidTagSearch 標準プロパティ](pidtagsearch-canonical-property.md)
 
 
 [MAPI プロパティ](mapi-properties.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

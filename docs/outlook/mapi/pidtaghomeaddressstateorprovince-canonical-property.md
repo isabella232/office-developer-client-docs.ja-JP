@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: e92db38a-9ae9-4d75-b768-674453c19fe3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 19af62b0163468d1a3b6fdb64848b1bd5b2112bf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: db53a5e0565ba19475a4f07e655b909faa4561a9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802818"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586488"
 ---
 # <a name="pidtaghomeaddressstateorprovince-canonical-property"></a>PidTagHomeAddressStateOrProvince 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ユーザーの住所の都道府県部分が含まれています。
   

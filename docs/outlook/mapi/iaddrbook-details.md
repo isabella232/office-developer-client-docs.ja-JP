@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4eee4382-98c3-4714-8920-8d72edef00b8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fbe7f02555f76532896c951f50648c528c250a58
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e240ec4e7a61b9e7484f467926501f8c5f5a59f8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800390"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592347"
 ---
 # <a name="iaddrbookdetails"></a>IAddrBook::Details
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 特定のアドレス帳のエントリに関する詳細情報を表示するダイアログ ボックスが表示されます。
   

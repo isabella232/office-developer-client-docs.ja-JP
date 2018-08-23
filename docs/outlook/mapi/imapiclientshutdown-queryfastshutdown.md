@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b743b5b6-4a7c-46b8-99eb-afd13ee947db
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 059d0d4427a8f2d68795a671d77fb9e3d84294f4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 784a2f497811ba7c4ba0abf260ff32fde75de76a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800463"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584934"
 ---
 # <a name="imapiclientshutdownqueryfastshutdown"></a>IMAPIClientShutdown::QueryFastShutdown
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クエリ、MAPI サブシステムの高速シャット ダウンをサポートして読み込まれている MAPI プロバイダーによって提供されます。
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 1a2325ea-ddfa-480f-b65f-f5b20471fb40
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 68e877568565cfcc30b60e9b21f55b7dc1600b28
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f922ee95cda84311d840aa9de339883c57efba56
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799902"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590324"
 ---
 # <a name="defining-new-mapi-properties"></a>新しい MAPI プロパティを定義します。
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 にもかかわらず、クライアントとサービスのプロバイダーで使用するため、MAPI によって提供されるプロパティの豊富なは、MAPI は、必要な場合に作成する新しいプロパティを使用できます。 いくつかの新しいパブリック プロパティを定義するための有効なシナリオには、新しいメッセージ クラスと新しいプロパティを作成する独自のメッセージング システムの機能を公開するサービス プロバイダーをサポートするためにプロパティを作成するクライアントが含まれます。
   

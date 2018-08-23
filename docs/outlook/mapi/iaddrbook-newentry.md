@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 8d2d786b-e621-456d-b087-3373df6f8ac5
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e9b9ae316749659c6fc6a043bfb72c49010ccc9a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: eaf472a380acd62cddb2c20c35335ccb1e2ce07f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800397"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585858"
 ---
 # <a name="iaddrbooknewentry"></a>IAddrBook::NewEntry
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アドレス帳コンテナー、または送信メッセージの受信者の一覧には、新しい受信者を追加します。
   

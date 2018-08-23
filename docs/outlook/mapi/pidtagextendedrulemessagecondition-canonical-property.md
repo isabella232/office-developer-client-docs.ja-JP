@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 891851e1-e4a4-4c20-a26c-7223bcca35f7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 81ac1cb85e64b4ecdcf63997d4bdcd0f45b3364b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 92008a387bb0130207af012df209a3aa6881d40e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802739"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593173"
 ---
 # <a name="pidtagextendedrulemessagecondition-canonical-property"></a>PidTagExtendedRuleMessageCondition 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 拡張ルールの条件の内で含まれている任意の名前付きプロパティに関する情報が含まれています。
   

@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 3d3c309f-fe60-43a9-beda-16b09ec769db
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: eb64f2780530fd30784bf9a9b197bcde205b4a5a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1baa987961eecc6ee08b3ceb039062c8f1090ff7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800949"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589554"
 ---
 # <a name="implementing-service-provider-logon"></a>サービス プロバイダー ログオンの実装
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI は、エントリ ポイント関数から返すするポインターを使用してログオン プロセスを開始するのには、プロバイダーのオブジェクトでメソッドを呼び出します。 方法は異なります、サービス ・ プロバイダーの種類によって次のように。
   

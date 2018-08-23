@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 954048d6-e2eb-43e7-b52c-c2f047bb84a4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 73fa4311a61be9259d8c45aca79d719785c213a6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b0d5588218fd74f005de19daba002cd622c13a17
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802283"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587188"
 ---
 # <a name="pidlidusetnef-canonical-property"></a>PidLidUseTnef 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 トランスポート ニュートラル カプセル化形式 (TNEF) をそのメッセージは MAPI から多目的インターネット メール拡張 (MIME) または簡易メール転送プロトコル (SMTP) の形式に変換するとメッセージに含める必要があるかどうかを指定します。
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 751c36d3-c39e-4357-a60a-88685a378de0
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f2fedd98fe84d7359aebaca8d03a20f392dae2b0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a120fb1710bf2bd351d956e4d05eb0af346ef4c5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800357"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583387"
 ---
 # <a name="iablogonopentemplateid"></a>IABLogon::OpenTemplateID
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ホストのアドレス帳プロバイダーに存在するデータが含まれている受信者のエントリが表示されます。
   

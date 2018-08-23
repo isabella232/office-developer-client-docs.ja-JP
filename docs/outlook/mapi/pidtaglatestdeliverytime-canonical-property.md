@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 6c2e64bc-786e-4867-a504-46f4d1214337
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0cf25dc5a1182d019ea183f2c0714925f220aeb8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3640ec4471b72dea81d56cc2c462ef145095480f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802933"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590926"
 ---
 # <a name="pidtaglatestdeliverytime-canonical-property"></a>PidTagLatestDeliveryTime 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 最新の日付と時刻のメッセージ転送エージェント (MTA) がメッセージを配信する場合が含まれています。 
   

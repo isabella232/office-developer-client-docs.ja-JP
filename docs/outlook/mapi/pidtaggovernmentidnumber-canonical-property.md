@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: fa265d37-a1ea-4812-8fe9-21dac374cd7c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cdc96b076d63eae264eaba2672e7615bc85ed442
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ab2c4caf74da8bce143e6b1f4fa6fd2946e37de3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802811"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593208"
 ---
 # <a name="pidtaggovernmentidnumber-canonical-property"></a>PidTagGovernmentIdNumber 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 受信者の自治体 id が含まれています。 
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: f2b2aca7-757f-4260-96a5-d0af55189711
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: afbef333af46051284fa51d52c2e3f77607b0b13
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ee7d729000fbda895918458993437fd4fe72e370
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804016"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591612"
 ---
 # <a name="status-tables"></a>状態テーブル
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ステータス テーブルには、現在のセッションの状態に関連する情報が含まれています。 MAPI とサービス ・ プロバイダーによって提供される情報が含まれるすべての MAPI セッションの状態の 1 つのテーブルがあります。 MAPI では、3 つの行のデータが用意されています: MAPI のサブシステムに対応する行、行、MAPI スプーラーを無効、および統合アドレス帳の行です。 トランスポート プロバイダーは、状態テーブルに状態情報を提供する必要が、ため、すべてのアクティブなトランスポート プロバイダーの 1 つの行があります。 アドレス帳、メッセージ ストア プロバイダーは、状態テーブルをサポートするかどうかを選択できます。 
   

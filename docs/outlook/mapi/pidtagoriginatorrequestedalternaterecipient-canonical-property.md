@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c85b7862-18bc-4e17-94db-9097e0ac4a02
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c7abd0ae93c5b38c756ec0915dda6a4cdfcebaa5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 463f2eb6e730c9250861ce50515a7f662bb75d23
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803124"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588868"
 ---
 # <a name="pidtagoriginatorrequestedalternaterecipient-canonical-property"></a>PidTagOriginatorRequestedAlternateRecipient 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 送信者によって指定された代替受信者のエントリ id が含まれています。
   

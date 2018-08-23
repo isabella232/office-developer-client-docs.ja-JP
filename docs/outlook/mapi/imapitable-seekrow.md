@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 93ac63ae-f254-45e1-a9b1-347d69d2ed9f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 143ca03a5e98d638d29394f5c0803e349ab4de25
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: aead09eb10a3015a54867f14011c56b686bc8624
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800848"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586481"
 ---
 # <a name="imapitableseekrow"></a>IMAPITable::SeekRow
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 テーブル内の特定の位置にカーソルを移動します。
   

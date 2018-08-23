@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e29190c5-52c3-4ef7-98db-699487c54325
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: efd0dcc8fc01fa433cbbf30936244e4818f8b14a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a60bc55686e883cabd144af3a9badfb55f835472
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803584"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593124"
 ---
 # <a name="pidtagstatuscode-canonical-property"></a>PidTagStatusCode 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 セッション リソースの現在の状態を示すフラグのビットマスクを格納します。 すべてのサービス プロバイダーは、MAPI サブシステム、MAPI スプーラーを無効、および統合されたアドレス帳のステータスを報告するように、ステータス コードを設定します。
   

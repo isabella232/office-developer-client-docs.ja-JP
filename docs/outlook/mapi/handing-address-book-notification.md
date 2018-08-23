@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 0dc4bb48-c8a1-447f-9e38-1c234a358fca
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f198be78dd36a6d0c9439da68ab322cd8cfa4172
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b5428ccde0e16bd32408b2ea908f5c5522992fc9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800168"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582918"
 ---
 # <a name="handing-address-book-notification"></a>アドレス帳の通知の処理
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アドレス帳の通知は、任意のアドレス帳のエントリに、または特定のエントリに、発生するイベントを取得するためのクライアントを使用できます。 [IAddrBook::Advise](iaddrbook-advise.md)を呼び出すことによって、MAPI アドレス帳またはアドレス帳コンテナーの階層構造または内容のテーブルを介して、これらの通知を登録するには、 [IMAPITable::Advise](imapitable-advise.md)を呼び出すことです。 
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: c0e1cdba-ceb6-4a3f-8449-79d1a0ad1adf
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3abb4ba67ff5f0cf2284fa9286b6968698877b84
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3722893ae57a108b338725e46c975e92c0f8ff72
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803710"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587510"
 ---
 # <a name="providing-notifications-for-message-store-providers"></a>メッセージ ストア プロバイダー用の通知の提供
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 通知は省略可能ですが、適切なメッセージ ストア プロバイダーの非常に重要な含まにはれています。 クライアント アプリケーションと MAPI スプーラーは、メッセージ ストア プロバイダーからの通知メッセージを送信または受信側の受信メッセージを送信するときに、良好なパフォーマンスを取得するに依存します。 クライアントと、MAPI スプーラーは、メッセージ ストア プロバイダーから通知を受信する前に機能できますが、変更せずにメッセージ ・ ストア内のユーザーに通知することはできません。 通常、ユーザーが、クライアントは、メッセージ ストアを次に開くまで、新しいメッセージが到着したことを確認することことを意味では、フォルダーが表示されます。
   

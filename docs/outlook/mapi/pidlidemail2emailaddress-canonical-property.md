@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 89b33a24-395a-4a3f-bc05-a44529399d7c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0c1c463ee6a24f6ef0026264b6790ba50b146a09
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4bea9e8fbd07be607f57ea2a14ae14de733def44
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801887"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588042"
 ---
 # <a name="pidlidemail2emailaddress-canonical-property"></a>PidLidEmail2EmailAddress 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 連絡先の 2 番目の電子メール アドレスを指定します。
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: bb529cc7-ad09-4f86-89bc-0e8ad29a3f38
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 6ba2f9542fd021c544d73d8208ed356a7bf95309
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c7007c01803676412b3efca8b7825b2ed8d863e6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801635"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582484"
 ---
 # <a name="message-service-implementation"></a>メッセージ サービスの実装
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ サービスは、インストールと構成を簡素化する目的でグループ化された 1 つまたは複数の関連のサービス ・ プロバイダーです。 すべてのサービス プロバイダーは、メッセージ サービスに含まれます。
   

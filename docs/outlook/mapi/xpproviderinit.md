@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: df6eacf4-1cf9-4c25-806f-f87c38dad597
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0415e782a98102314ce732f744c0d29590f646c2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 38b60180ae7c417bf34998e72f96b353ace02859
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804245"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592536"
 ---
 # <a name="xpproviderinit"></a>XPProviderInit
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 操作のためのトランスポート プロバイダーを初期化します。
   

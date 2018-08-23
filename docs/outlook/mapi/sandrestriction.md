@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 1b7dfe87-f87f-43e3-8332-a0d9c3f70d16
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1437130caecd57344fc171d234c5391ea92e1d4b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9f8da0902ea4c4a862d279ee80ba566c0473c44e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803812"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592326"
 ---
 # <a name="sandrestriction"></a>SAndRestriction
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 論理**AND**演算を使用して制限のグループに参加するために使用、**および**制限について説明します。 
   

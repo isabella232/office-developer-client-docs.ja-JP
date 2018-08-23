@@ -1,5 +1,5 @@
 ---
-title: PidLidWorkAddressPostalCode の標準的なプロパティ
+title: PidLidWorkAddressPostalCode 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,29 +11,29 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7a03df7e-9ce9-4720-8e58-bc7fa61eb932
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 2b1398de87e7c08ddfbd6c30eb10ac71fcae3c8f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: c1dcbc18a624ec209d86ad46c8ac7a3f16754fa0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802281"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583639"
 ---
-# <a name="pidlidworkaddresspostalcode-canonical-property"></a>PidLidWorkAddressPostalCode の標準的なプロパティ
+# <a name="pidlidworkaddresspostalcode-canonical-property"></a>PidLidWorkAddressPostalCode 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 連絡先の勤務先住所の郵便番号コード (郵便番号) を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidWorkAddressPostalCode  <br/> |
+|関連するプロパティ:  <br/> |dispidWorkAddressPostalCode  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Address  <br/> |
 |長い ID (LID):  <br/> |0x00008048  <br/> |
-|データを入力します。  <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |連絡先  <br/> |
+|データの種類 :   <br/> |PT_UNICODE  <br/> |
+|領域:  <br/> |Contact  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
@@ -61,7 +61,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

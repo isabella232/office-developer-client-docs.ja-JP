@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 1524eb06-7492-42de-b455-e0982bda7ece
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 17470f9ff552eaa4908973c4f033db2b4e754d7c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3426854e727ebce7a2ac2243491994ce0e066ac6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801255"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591381"
 ---
 # <a name="ixplogonpoll"></a>IXPLogon::Poll
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 トランスポート プロバイダーが 1 つまたは複数の受信メッセージを受信したかどうかを示します。
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 480ec0dc-6c04-4284-99da-aa4b26f5d7d0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0e393170601c52f04c20fddd3362462bc2d14f9b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e65e6032eea158bf358fc91dcb0fdf3032d7b3c9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803148"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588546"
 ---
 # <a name="pidtagotheraddresscity-canonical-property"></a>PidTagOtherAddressCity 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ユーザーの他の地域、市区町村など、メールの名前が含まれています。
   

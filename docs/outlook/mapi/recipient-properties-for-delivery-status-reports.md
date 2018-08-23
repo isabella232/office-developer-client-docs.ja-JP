@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 9b2e287e-1cf8-4b8f-b92c-a065ed264d02
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a6ff82fa3cc4a7ad243285e9eb93b0ec880a3bd4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 58711a18fa6dc512cca10644437bee2ecd4d2143
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803712"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592998"
 ---
 # <a name="recipient-properties-for-delivery-status-reports"></a>配信状態レポートの受信者プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 受信者に対する配信状態レポートの次のプロパティが存在します。 **PR_DELIVER_TIME**([PidTagDeliverTime](pidtagdelivertime-canonical-property.md)) は、配信不能レポートでは使用されません。 **PR_NDR_DIAG_CODE**([PidTagNonDeliveryReportDiagCode](pidtagnondeliveryreportdiagcode-canonical-property.md)) **PR_NDR_REASON_CODE** ([PidTagNonDeliveryReportReasonCode](pidtagnondeliveryreportreasoncode-canonical-property.md)) は、配信不能レポートでのみ使用しています。
   

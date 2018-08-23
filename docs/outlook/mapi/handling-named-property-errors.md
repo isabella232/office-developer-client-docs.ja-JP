@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: f56c56d8-db46-4c69-876f-2bbb4a5c1185
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 9ea1c4063c08844052618c50fe53fdc0064787a9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f6c12973a3ee2f9842e74f6f01b94553659dc1ad
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800185"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583310"
 ---
 # <a name="handling-named-property-errors"></a>名前付きプロパティのエラーの処理
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)�܂���[IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)�傫�����鏈�����������悤�ɗv������ꍇ�A�G���[�l MAPI_E_TOO_BIG ���Ԃ���܂��B���M�҂ɉ�������K�v������܂��A�o�Ȉ˗��ɕ����A�������̈˗��A���[�v�œK�؂ȃ��\�b�h���܂��B 
   

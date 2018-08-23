@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 32089213-ef7b-4152-84ab-b44e9911332b
 description: '最終更新日: 2016 年 9 月 7 日'
-ms.openlocfilehash: 1720e9a2eeb54daed1e559f99b0c63ce09585419
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 697f7e8045ca198c2c10b9396f19cb2d7ce8346e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802496"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583653"
 ---
 # <a name="pidtagattachmethod-canonical-property"></a>PidTagAttachMethod 標準プロパティ
 
  
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 添付ファイルの内容にアクセスできる方法を示す MAPI 定義の定数が含まれています。 
   

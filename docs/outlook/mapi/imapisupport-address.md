@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 8c22547e-ddf5-47f7-aed3-76e3854688df
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: cb683178a8e258f571cbc3d05a3b030481905433
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 524bbfe5f40a66585fb4ed4463b057ca6a0c881a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800722"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586803"
 ---
 # <a name="imapisupportaddress"></a>IMAPISupport::Address
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 共通のアドレス] ダイアログ ボックスが表示されます。 
   

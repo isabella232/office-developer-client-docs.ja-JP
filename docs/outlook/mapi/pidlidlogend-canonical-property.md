@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 621459ea-adf5-4420-9f0f-6f31b9b95508
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ef1c9814aa6d1f81a44883d09ac635a5eed76517
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 739fe4077fa57f0f12dd38f05f90851c5291b45a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802035"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585935"
 ---
 # <a name="pidlidlogend-canonical-property"></a>PidLidLogEnd 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ジャーナル メッセージの終了日時を表します。
   

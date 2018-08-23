@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 18a10f14-0795-4d4d-b590-f4cef4f2902a
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5e2d757fe329f9a57447723d72a859c7d82fc2b3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7fec6b6236d26789a3ec9abee7d2ae1c620f89b4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800545"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593474"
 ---
 # <a name="imapiforminfosaveform"></a>IMAPIFormInfo::SaveForm
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 構成ファイル内の特定のフォームの説明を保存します。
   

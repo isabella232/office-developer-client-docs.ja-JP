@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: cf36c6cb-57b4-7b2b-e23d-e0bc8696de96
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9ea18f8e5c7eb758780727829fb1e18d2a19ec92
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 30dd43a3ac9a315cd41919872b918bee639ca259
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799611"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593054"
 ---
 # <a name="about-the-replication-state-machine"></a>レプリケーション ステート マシンについて
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このトピックには、Microsoft Outlook 2013 および Microsoft Outlook 2010 のデータ ・ レプリケーションのステート マシンの概要が含まれています。
   

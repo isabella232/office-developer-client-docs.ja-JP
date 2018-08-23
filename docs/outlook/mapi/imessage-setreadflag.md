@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: 2d02ebf6-bb8b-42bb-9bd0-870dbae9aeb4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0ae35166f01f597c2c3ab399a1b66e5760ab0dc8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 40815f1df597a8fb1fd8adef3dcc09323e946d30
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800896"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592963"
 ---
 # <a name="imessagesetreadflag"></a>IMessage::SetReadFlag
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 設定し、メッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) のプロパティに MSGFLAG_READ フラグをクリアまたはリードのレポートの送信を管理します。
   

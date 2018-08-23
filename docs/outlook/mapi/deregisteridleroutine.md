@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a8ada6fe-9963-4c25-b4b4-db77f9517368
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 85161fb87e798bbb03b267f9760870da1246e48d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 78d499dabe60a8051c6a2a77abad4b7d6f2ed159
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799909"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591955"
 ---
 # <a name="deregisteridleroutine"></a>DeregisterIdleRoutine
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI システムからのアイドル状態のルーチンを削除する[FNIDLE](fnidle.md)に基づいています。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 3174d931-e045-44db-a203-a27c9c00f4fc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7b2dd30511927f8df8a8bc587a6b1fedd5854810
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f85fdc701a29f5865700c6519d589212a06fd0af
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802031"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585781"
 ---
 # <a name="pidlidlogflags-canonical-property"></a>PidLidLogFlags 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 仕訳帳についてのメタデータが含まれています。
   

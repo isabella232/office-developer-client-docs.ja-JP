@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a36465e2-7be9-4bd6-8091-685f0a045aa9
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e441e84e0bddff2e5a989849dbcf593320340d2a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a20fdd45c39cc2147f8fdc7b1998ff6d1b0797bb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800350"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586208"
 ---
 # <a name="iablogonlogoff"></a>IABLogon::Logoff
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ログオフ処理を開始します。
   

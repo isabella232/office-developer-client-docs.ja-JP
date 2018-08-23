@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: f8ade454-2450-49e6-a76f-93801055a7e5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 505b27b469a4ab197b41058ea5b933608818f0d7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 85a67216822360bcaf9544389f79980891951757
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801444"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584857"
 ---
 # <a name="mapi-service-provider-objects"></a>MAPI サービス プロバイダー オブジェクト
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 サービス プロバイダーは、多くのオブジェクトを実装します。 MAPI によって主に使用される、いくつかと、クライアント アプリケーションによって使用されます。 サービス ・ プロバイダーのすべての種類によって、いくつかのオブジェクトの実装します。残りの部分は、1 つのプロバイダーの種類に固有です。 次の表では、すべてのサービス プロバイダー オブジェクトについて説明します。
   

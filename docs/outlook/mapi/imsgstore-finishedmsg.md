@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c32493fa-aa42-485b-9ea4-f93b835906df
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9da9a13f87eac097fba078da1f1d6c3f78f69c0e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8b15f12c9a7ac2041c895b935098f9681e4b3a3c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801014"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589953"
 ---
 # <a name="imsgstorefinishedmsg"></a>IMsgStore::FinishedMsg
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストア プロバイダーは、送信されたメッセージの処理を実行できるようにします。 このメソッドは、MAPI スプーラーによってのみ呼び出されます。
   

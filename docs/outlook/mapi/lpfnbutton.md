@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: cb91ae1d-1ea8-4f02-a1f1-f2a356a71477
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e1f15a5f031f5c5a9568b8a36722eaac011b814c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3b302de68f27e85c67430f82bd3e2c33009600e9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801279"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591353"
 ---
 # <a name="lpfnbutton"></a>LPFNBUTTON
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI が、アドレス帳] ダイアログ ボックスで、オプション ボタン コントロールをアクティブにするために呼び出すコールバック関数を定義します。 このボタンは、通常、**詳細**ボタンです。 
   

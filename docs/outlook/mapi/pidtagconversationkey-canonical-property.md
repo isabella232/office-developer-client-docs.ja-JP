@@ -1,5 +1,5 @@
 ---
-title: PidTagConversationKey の標準的なプロパティ
+title: PidTagConversationKey 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,30 +7,30 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 52c97d6c-7f4b-4522-aeac-0c1ed8475952
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 4aec52497e02e99423fa50f378cd35dbf366c37c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: b4c8c6cf3bee0575a42bc42a1ebf5e185ef78ab4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802633"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591633"
 ---
-# <a name="pidtagconversationkey-canonical-property"></a>PidTagConversationKey の標準的なプロパティ
+# <a name="pidtagconversationkey-canonical-property"></a>PidTagConversationKey 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **IPM を検索するときにのみ、Microsoft Outlook で使用される対話鍵が含まれています。MessageManager** Post Office プロトコル (POP3) アカウントのダウンロードの履歴を格納しているメッセージなどのメッセージです。 Microsoft Exchange Server で、このプロパティは廃止されました。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_CONVERSATION_KEY  <br/> |
+|関連するプロパティ:  <br/> |PR_CONVERSATION_KEY  <br/> |
 |識別子:  <br/> |0x000B  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 会話メッセージのプロパティを[トランスポート ニュートラル カプセル化形式 (TNEF)](transport-neutral-encapsulation-format-tnef.md)に変換すると電子メール メッセージにアクセスするときに、このプロパティを使用できません。代わりに、 [PidTagConversationIndex](pidtagconversationindex-canonical-property.md)および[PidTagConversationTopic](pidtagconversationtopic-canonical-property.md)の標準的なプロパティを使用します。 
   
@@ -66,13 +66,13 @@ Mapitags.h
 
 [IPM サブツリー](ipm-subtree.md)
   
-[MAPI の特別なフォルダーです。](mapi-special-folders.md)
+[MAPI ���ʂȃt�H���_�[](mapi-special-folders.md)
   
 [MAPI プロパティ](mapi-properties.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

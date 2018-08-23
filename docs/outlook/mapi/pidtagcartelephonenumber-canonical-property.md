@@ -1,5 +1,5 @@
 ---
-title: PidTagCarTelephoneNumber の標準的なプロパティ
+title: PidTagCarTelephoneNumber 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 2cf1f651-31dd-4f92-8c23-cc83e1989bc2
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 91f027176fc3dac35cb951e2ae7a109c5044cb08
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: e770939f00896d8ec12ce990811c444f2a25f244
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802553"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593488"
 ---
-# <a name="pidtagcartelephonenumber-canonical-property"></a>PidTagCarTelephoneNumber の標準的なプロパティ
+# <a name="pidtagcartelephonenumber-canonical-property"></a>PidTagCarTelephoneNumber 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 受信者の自動車電話の番号が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_CAR_TELEPHONE_NUMBER、PR_CAR_TELEPHONE_NUMBER_A、PR_CAR_TELEPHONE_NUMBER_W  <br/> |
+|関連するプロパティ:  <br/> |PR_CAR_TELEPHONE_NUMBER、PR_CAR_TELEPHONE_NUMBER_A、PR_CAR_TELEPHONE_NUMBER_W  <br/> |
 |識別子:  <br/> |0x3A1E  <br/> |
-|データを入力します。  <br/> |PT_UNICODE、PT_STRING8  <br/> |
-|領域:  <br/> |連絡先  <br/> |
+|データの種類 :   <br/> |PT_UNICODE、PT_STRING8  <br/> |
+|領域:  <br/> |Contact  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これらのプロパティでは、識別を提供し、受信者に関する情報にアクセスします。 受信者と受信者の組織によって定義されます。 
   
@@ -72,7 +72,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

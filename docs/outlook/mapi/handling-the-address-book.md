@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: b685244a-fe1b-4416-85d3-4bd86ccbc3aa
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 6ef441b4315ef21f8b16dc062596bc7f1e526e1d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7a72d0e90e6c28874f341fc9ba7af843a44c5da8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800197"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583324"
 ---
 # <a name="handling-the-address-book"></a>アドレス帳の処理
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI �A�h���X�����������ɂ́A�Z������Q�Ƃ��āA�ύX�����] �Ƀ��b�Z�[�W�̎�M�҂��M�҂̃v���p�e�B��ύX����ꎞ�A�h���X] ��쐬���āA1 �ȏ�̋��ʂ̃A�h���X] �_�C�A���O �{�b�N�X���\�����ꂽ���b�Z�[�W�̃��[�U�[�܂��͔z�z���X�g��ǉ�����Ƃ��Ďg�p����G���g���𒊏o����܂߂邱�Ƃ��ł��܂��B
 

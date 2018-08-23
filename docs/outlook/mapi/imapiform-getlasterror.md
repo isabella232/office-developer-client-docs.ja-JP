@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 81af8a0b-4ec2-459c-8ab2-29d28a8b680f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 8b29298ab97518c2e346c2cdc5dee6baec28f8e0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a83af0766c907f2868f7d5e116454e648d6f4463
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800503"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583772"
 ---
 # <a name="imapiformgetlasterror"></a>IMAPIForm::GetLastError
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 前のフォーム オブジェクトによって生成されたエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。 
   

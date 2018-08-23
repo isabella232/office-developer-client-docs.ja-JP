@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 98597495-7761-4eda-ae75-1ccefa6abb81
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5d0e95fafb8530f64280aff61dab27d24fba0ba1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a19c67d7b83c4890c998cd2e53a36bfc34d11386
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803153"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583891"
 ---
 # <a name="pidtagphysicaldeliverymode-canonical-property"></a>PidTagPhysicalDeliveryMode 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 特定の受信者用に指定されたメッセージの物理的な配信モード (たとえば、個別の配信) を定義するフラグのビットマスクを格納します。
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 153bf058-3812-4c81-8d07-549892593668
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7db198ef26f355ce154434e0efb2df374ae742dd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fc75160125e36fb89d7afe0cc84f3d60d4258d1d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802408"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589120"
 ---
 # <a name="pidnamexsharingproviderguid-canonical-property"></a>PidNameXSharingProviderGuid 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **DispidSharingProviderGuid** ([PidLidSharingProviderGuid](pidlidsharingproviderguid-canonical-property.md)) プロパティの値を表します。
   

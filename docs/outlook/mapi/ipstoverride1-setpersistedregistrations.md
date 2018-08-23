@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: 5f4b62db-a759-41a2-9bea-29fc04b2962b
 description: '最終更新日: 2011 年 11 月 8 日'
-ms.openlocfilehash: 9895c558af94eebebe2dacdb6f9bf674e3de6263
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3592584a08bf14725c0289831740e91fb8f1a5b2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801187"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587622"
 ---
 # <a name="ipstoverride1setpersistedregistrations"></a>IPSTOVERRIDE1::SetPersistedRegistrations
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 それ以降、HrTrustedPSTOverrideHandlerCallback の呼び出しを回避する自動ロック解除では、個人用フォルダー (.pst) ファイルを登録します。
   

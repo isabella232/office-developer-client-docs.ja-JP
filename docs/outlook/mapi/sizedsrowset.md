@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: 419e2c6d-ac3b-46c6-9a12-33f51f6d7f12
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8b7a93a9abb9a1c589ac7fdab3723c9c924eea0d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b8c70c8b13025f196fdebb2956939bec840a96f5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803929"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583940"
 ---
 # <a name="sizedsrowset"></a>SizedSRowSet
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 指定された行数を格納する名前付き[SRowSet](srowset.md)構造体を作成します。 
   

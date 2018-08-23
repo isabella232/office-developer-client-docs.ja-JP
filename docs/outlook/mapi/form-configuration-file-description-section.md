@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 4ce91a65-17db-4ee2-ad59-01fd5b1f1ea7
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d3673c3b10afb55121339e335163ce9b2e5937e3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8ad5fd9cf437afc3999697792850548e4e5a1435
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800086"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582897"
 ---
 # <a name="form-configuration-file-description-section"></a>フォーム構成ファイル [Description] セクション
  
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **[説明]** セクションには、フォームのコントロールでは、[フォームのユーザー インターフェイスでは、フォームの検索に使用される属性に関連付けられているすべてのプロパティが一覧表示されます。 **MessageClass**、 **Clsid**、および**表示名**のエントリは、フォームのメッセージ クラス、その GUID、およびメッセージ クラスの表示名の名前をそれぞれ識別するには、フォーム ライブラリ内でフォームを検索するため、必要なエントリをします。. 残りのエントリはオプションです。 **[説明]** セクションの形式は次のとおりです。 
   

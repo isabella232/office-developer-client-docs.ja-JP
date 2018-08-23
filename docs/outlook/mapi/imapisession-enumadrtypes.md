@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9a3702a4-8a6b-4c0c-a90f-02be3a2bfa05
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 6bd13eb7180302a5ab770586cf36856ca5a22676
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 050068b542616d1ad4d133b289aba46db2888519
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800679"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587818"
 ---
 # <a name="imapisessionenumadrtypes"></a>IMAPISession::EnumAdrTypes
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 現在は廃止されています。 セッション内のすべてのトランスポート プロバイダーによって処理可能なアドレスの種類を返します。 
   
@@ -59,7 +59,7 @@ S_OK
   
 > アドレスの種類が正常に取得されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPISession::EnumAdrTypes**メソッドは、セッション内のすべてのアクティブなトランスポート プロバイダーによって処理可能なアドレスの種類のリストを返します。 現在読み込まれていないトランスポート プロバイダーのアドレスの種類は、一覧には含まれません。 MAPI は、 [IXPLogon::AddressTypes](ixplogon-addresstypes.md)メソッドを呼び出すと、1 つまたは複数のアドレスの種類を処理するトランスポート プロバイダーを登録します。 
   

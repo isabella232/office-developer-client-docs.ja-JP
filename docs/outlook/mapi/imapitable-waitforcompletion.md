@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 7663c640-396e-4720-9345-370d0856bd49
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: c7859e033924786e415f9faa9f75021ea47968c6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a3343381709b7ce3370ba481ad8dbb935c7d4165
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800854"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586950"
 ---
 # <a name="imapitablewaitforcompletion"></a>IMAPITable::WaitForCompletion
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 1 つまたは複数の非同期操作の進行状況でテーブルに完了するまでの処理を中断します。
   

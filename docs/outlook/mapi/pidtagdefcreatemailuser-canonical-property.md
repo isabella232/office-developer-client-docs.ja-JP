@@ -1,5 +1,5 @@
 ---
-title: PidTagDefCreateMailuser の標準的なプロパティ
+title: PidTagDefCreateMailuser 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: e8293dc9-f2f1-4065-89f4-e734a8db63df
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 33c62b81982aaac3659ad4d41ea2cf5298b42287
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 21fdff2aa713905a27a3d0cc5545ceb59f030378
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802667"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586859"
 ---
-# <a name="pidtagdefcreatemailuser-canonical-property"></a>PidTagDefCreateMailuser の標準的なプロパティ
+# <a name="pidtagdefcreatemailuser-canonical-property"></a>PidTagDefCreateMailuser 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ユーザー オブジェクトのメッセージングの既定のテンプレートのエントリ id が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_DEF_CREATE_MAILUSER  <br/> |
+|関連するプロパティ:  <br/> |PR_DEF_CREATE_MAILUSER  <br/> |
 |識別子:  <br/> |0x3612  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |アドレス帳  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 クライアント アプリケーションでは、このプロパティを使用して、コンテナー内のメッセージングのユーザー オブジェクトを作成します。 エントリの作成のサポートはオプションのアドレス帳コンテナーです。サポートしていないものは、このプロパティを公開する必要はありません。 
   
@@ -60,7 +60,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c5dfb21f-b35e-4521-bf2b-e3d03d98d75d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8a44c88cbc971d9d5358fc6b24093e56e9565eb1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d2fb648de0c974c9b54ad925c271dd5eb7276b71
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803436"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585515"
 ---
 # <a name="pidtagruleuserflags-canonical-property"></a>PidTagRuleUserFlags 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このプロパティは、クライアントが排他的に使用のためにクライアントによって設定されます。 
   

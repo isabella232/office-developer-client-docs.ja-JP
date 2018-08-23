@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: b0a9fc55-f4ab-45d8-98cc-b040f9ef6aa4
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 38e9418d5d9559b67bd79536635359ffaa3f724d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5a9499e2a980cbc00eb11c5199bb7329b255c7b2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801345"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592662"
 ---
 # <a name="mapi-extended-errors"></a>MAPI �g���G���[
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 (S_OK) の成功と失敗 (MAPI_E_CALL_FAILED) を単に返すか、エラー条件、状況に適した、多くのエラー値を返すことの間で区別するためにインターフェイス メソッドの実装を選択できます。 ほとんどの場合に、MAPICODE では、MAPI によって定義されているエラー値のいずれかを使用できます。H ヘッダー ファイルです。 ただし、状況のことは説明しませんで定義済みの値、値の MAPI_E_EXTENDED_ERROR を使用することができます。 MAPI_E_EXTENDED_ERROR は、呼び出し元に、エラーに関する詳細情報があることを示します。 呼び出し元は、MAPI_E_EXTENDED_ERROR が返されますが同じオブジェクトを**返します**メソッドを呼び出して、追加情報を取得します。 
   

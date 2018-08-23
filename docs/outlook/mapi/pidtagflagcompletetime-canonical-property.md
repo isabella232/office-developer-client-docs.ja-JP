@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: effc738a-30f4-4a5e-b21d-04b50dad1f45
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: efaa8cf84204234697431a190a5cb6745b55ecae
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6e1c2783abd186146fe738a3396e098711893d3a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802737"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583983"
 ---
 # <a name="pidtagflagcompletetime-canonical-property"></a>PidTagFlagCompleteTime 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 世界協定世界時 (UTC) メッセージ オブジェクトが完了したものとしてフラグが設定では、日付と時刻を指定します。
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 4bcd19f6-c225-43ac-8c27-c46388e9097a
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 653a9df6ec414aa18c44d8035a59f021d7cc19b8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8cb34360f5a0a3e67aca1ac53fe639724135f594
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801654"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584542"
 ---
 # <a name="message-submission-model"></a>メッセージ送信モデル
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージの送信は、一連の MAPI スプーラーからトランスポート プロバイダーへの呼び出しによって実行されます。 呼び出しは次のように順序付けられました。
   

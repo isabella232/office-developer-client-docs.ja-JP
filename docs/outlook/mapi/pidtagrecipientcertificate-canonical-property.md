@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 7c5c749e-5463-4935-85b5-32219d06f782
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: bb51e9a602bd5c2e59bb56fdbf44fddc39651de6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 464db3d360f6e872ac28f8d7cbec842d8b521f7e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803286"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585116"
 ---
 # <a name="pidtagrecipientcertificate-canonical-property"></a>PidTagRecipientCertificate 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 レポートで使用するため、メッセージの受信者の ASN.1 の証明書が含まれています。
   

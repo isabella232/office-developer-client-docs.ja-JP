@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4af8e79a-697e-44a1-8576-fdc57726e9ef
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a5f950907e2b14cb4101a094715c24b25beb2016
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d58a216a41ff8fe93387ce6d9d1d6aa16f36f224
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800063"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583254"
 ---
 # <a name="filetime"></a>FILETIME
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 符号なし 64 ビットの日付と、ファイルの時刻の値を保持します。 この値は、1601 年 1 月 1 日の開始以降の 100 ナノ秒単位の数を表します。 
   

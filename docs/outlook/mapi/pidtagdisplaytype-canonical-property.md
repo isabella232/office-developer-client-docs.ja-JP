@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: ee2bc6ca-3769-4b56-a77d-81418d28f768
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3fd5a8d92621dcefce66fb42e843f78755fa84df
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5b067b3bc38df978cd0f4c52beb37579619edc24
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802707"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583513"
 ---
 # <a name="pidtagdisplaytype-canonical-property"></a>PidTagDisplayType 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 テーブルの特定の行にアイコンを関連付けるに使用する値が含まれています。 
   

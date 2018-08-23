@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: dd8e04b3-8959-4df4-ba2c-f6371180929b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e6e03d6461a9f12fb4f7bad2058cd3a8c0f57044
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f2c4efc8f8c04229901f03fd01381d13127575a3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803169"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589015"
 ---
 # <a name="pidtagpostalcode-canonical-property"></a>PidTagPostalCode 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 受信者の郵便番号と住所の郵便番号コードが含まれています。
   

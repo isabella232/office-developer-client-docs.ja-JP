@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 41d35370-495d-40fe-80bc-6c3bfc995b85
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e3f35126f3887bc1f2979721deb90891b97c9322
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b53cdb4fe379405018555f1cca9fa40ddc5d0fa8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801375"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592487"
 ---
 # <a name="mapi-forms"></a>MAPI フォーム
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI フォームのアーキテクチャの概要を読むと後は、MAPI フォームとは、MAPI サブシステムの他のコンポーネントとやり取りする方法を理解するがあります。 このセクションの目的では、独自の MAPI フォームのサーバーを実装する必要があります概念的な知識を提供します。
   

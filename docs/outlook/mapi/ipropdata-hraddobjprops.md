@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 683cf476-3c02-4b3b-939f-6fff6611f9aa
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 985b763ade9670c064c6c338953debf7beaa2783
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ae0d6d58f96738a9686dbdda86336c040c2e2f68
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801148"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591686"
 ---
 # <a name="ipropdatahraddobjprops"></a>IPropData::HrAddObjProps
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 PT_OBJECT の種類の 1 つまたは複数のプロパティをオブジェクトに追加します。
   

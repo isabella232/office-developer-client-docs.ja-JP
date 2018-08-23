@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 37075cfc-461d-4983-9045-d9f1da6739be
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a5d2244270463fcc2fe0a9786112590e741a8a66
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1c225712e354d72b79313ee4c3f36da55f11b0a3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804125"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587517"
 ---
 # <a name="transmitting-and-copying-named-properties"></a>名前付きプロパティの送信とコピー
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 名前付きプロパティが送信されるたびに移動すると、コピー、または、名前は変わりませんが目的のオブジェクトへのマッピングに準拠する識別子を変更する必要があります。 この規則の唯一の例外は、ソースとターゲットのシグネチャを持つ、同じマッピング、ときに再マッピングを不要にすることです。
   

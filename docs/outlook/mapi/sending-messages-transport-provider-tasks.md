@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: bd722f48-b166-4670-8dba-897ac50caf37
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 4625d9d09b067d064dac7ca67b7c79ebb818bcce
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2c1f73ab263e5851c78b33b6157d6d44c9e5e404
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803874"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586229"
 ---
 # <a name="sending-messages-transport-provider-tasks"></a>���b�Z�[�W�̑��M: �g�����X�|�[�g �v���o�C�_�[�̃^�X�N
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
  **�g�����X�|�[�g �v���o�C�_�[�A���b�Z�[�W�𑗐M����ɂ�**
   

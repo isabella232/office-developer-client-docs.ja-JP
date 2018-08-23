@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: adb4d589-7e03-4222-8717-898ef397c6b6
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 451bab57d4e2e8669a25d119f9ce28a8f78e628f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d9b4d6a469904058b0484428dbf20a90119e96bc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804099"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586138"
 ---
 # <a name="tips-for-working-with-tables"></a>テーブルの操作のヒント
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI を使用するテーブルは、リレーショナル データベースのテーブルに like 作業を少しです。 ユーザーは、ビューの行と列の数を制限し、それらの順序を指定できます。 行には、同時にまたはグループで、取得した 1 つをすることができます。 カーソルの現在位置を追跡するテーブル内の特定の場所に移動できます。 
   

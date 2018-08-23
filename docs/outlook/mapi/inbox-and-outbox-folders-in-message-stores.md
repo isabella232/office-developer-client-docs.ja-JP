@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 8e4ce129-137d-4618-80a6-88781a578d01
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2bd71ee4fca53fbf3d309cbaf9d33835b84c0c2d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6781209cd1bf87f4becf1893b7cba5618549fbce
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801061"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582890"
 ---
 # <a name="inbox-and-outbox-folders-in-message-stores"></a>��M�g���C ���b�Z�[�W �X�g�A��̃t�H���_�[�����M�g���C
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 既定のメッセージ ストアには、メッセージ ストア プロバイダーは受信トレイを実装し、フォルダーを [送信トレイ] する必要があります。 通常メッセージ ストアの IPM サブツリーに格納されます。 これらのフォルダーは、特別な特別な機能のこれらの必要はありませんがメッセージを配信してから送信されたフォルダーとして指定されます。 クライアント アプリケーションとの間、MAPI スプーラーでは、メッセージ ストア プロバイダーの定義済みの呼び出しシーケンスを使用してメッセージの送受信が行われます。 単なるものの中にメッセージを保持するために使用されているフォルダー、受信トレイ、送信トレイ フォルダーのシーケンスを呼び出します。 重要なポイントはフォルダーは、特別なまたは受信トレイと送信トレイはその名前が偶数ではありません。重要なポイントは、メッセージ ストア プロバイダーは、そのサポートの一環としてメッセージを送受信するためです。
   

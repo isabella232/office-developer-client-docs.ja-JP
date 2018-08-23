@@ -25,12 +25,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: a93d2153-5132-4289-af51-69350471e248
 description: Project Server 2013 の主なプログラミング機能について説明します。 この資料には、Project Server の以前のバージョンでビルドされたアプリケーションの移植に関する情報が含まれています。
-ms.openlocfilehash: c2c03da1e0b7c010d4cad8801f98c0c0cf0b1883
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f3901fe97f1c8291d0b35709f2350fc4358044b4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804687"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592984"
 ---
 # <a name="project-server-programmability"></a>Project Server プログラミング
 
@@ -235,7 +235,7 @@ Project Server 2013 には、2 つのスケジュール エンジンがありま
   
 - **タスクの現在のステータスを変更します。** Project Server の以前のスケジュール エンジンが一貫性のないスタートを表示または終了時刻は、タスクの現在のステータスを変更するのには、 [QueueUpdateProject](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueUpdateProject.aspx)メソッドを使用する場合、_の**ProjectDataSet**オブジェクトで複数の変更がある場合データセット_のパラメーターです。 **TASK_IS_ACTIVE**プロパティが**QueueUpdateProject**の_データセット_のパラメーターの変更のみの場合は、プロジェクトを更新することができます。
     
-    非アクティブなタスクと古いスケジュール エンジンの詳細については、ブログ記事の[Project 2010 で使用頻度の低いタスクの概要](http://blogs.msdn.com/b/project/archive/2010/06/10/introducing-inactive-tasks-in-project-2010.aspx)を参照してくださいと[Project Server 2010: PSI と Project Professional は、web 上でスケジュールを設定する](http://blogs.msdn.com/b/brismith/archive/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional.aspx?wa=wsignin1.0)です。 Project Professional 2010 と Project Server 2010 で、Project Web App でのスケジュール設定の比較とは、 [Web ベースのスケジュール管理の比較](http://www.microsoft.com/project/en/us/project-server-2010-editions.aspx)を参照してください。
+    非アクティブなタスクと古いスケジュール エンジンの詳細については、ブログ記事の[Project 2010 で使用頻度の低いタスクの概要](http://blogs.msdn.com/b/project/archive/2010/06/10/introducing-inactive-tasks-in-project-2010.aspx)を参照してくださいと[Project Server 2010: PSI と Project Professional は、web 上でスケジュールを設定する](http://blogs.msdn.com/b/brismith/archive/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional.aspx?wa=wsignin1.0)です。 Project Professional 2010 と Project Server 2010 で、Project Web App でのスケジュール設定の比較とは、 [Web ベースのスケジュール管理の比較](https://blogs.msdn.microsoft.com/brismith/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional/)を参照してください。
     
 - **達成値は計算されません。** 古いスケジュール エンジンでは、達成額フィールドは計算されません。 ACWP、BAC、BCWP、BCWS、CPI、CV、CV %、EAC、SPI、SV、SV %、TCPI、VAC、[期間差異]、開始日の差異、終了日の差異、コストの差異、および作業時間の差異。 プロジェクトにこれらのフィールドの値があり、ユーザーが**QueueUpdateProject**メソッドを使用してプロジェクトを更新は、フィールドの値は変更されません。 問題を避けるためには、 **QueueUpdateProject2**メソッドを使用します。 
     
@@ -289,7 +289,5 @@ Project Server データベースにアクセスするための Microsoft SQL Se
 - [プロジェクト PSI リファレンスの概要](project-psi-reference-overview.md)    
 - [SharePoint 用アプリを使用して配置するカスタム アクションを作成します。](http://msdn.microsoft.com/en-us/library/office/apps/jj163954%28v=office.15%29.aspx)    
 - [Project 2010 での非アクティブなタスクの概要](http://blogs.msdn.com/b/project/archive/2010/06/10/introducing-inactive-tasks-in-project-2010.aspx)    
-- [プロジェクトの Server 2010: Web PSI、Project Professional のスケジュール設定](http://blogs.msdn.com/b/brismith/archive/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional.aspx?wa=wsignin1.0)
-- [Web ベースのスケジュール管理の比較](http://www.microsoft.com/project/en/us/project-server-2010-editions.aspx)
-    
+- [プロジェクトの Server 2010: Web PSI、Project Professional のスケジュール設定](https://blogs.msdn.microsoft.com/brismith/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional/)
 

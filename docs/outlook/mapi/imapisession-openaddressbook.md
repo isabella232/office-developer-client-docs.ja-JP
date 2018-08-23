@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2b6a4c6a-bb71-4ea1-a3b6-90a2722880fb
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: dcde242f5f2e956d1926d6914431008383f5aa55
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0902aeb71ed66381772a808d21d77edb7e0e2da8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800686"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589876"
 ---
 # <a name="imapisessionopenaddressbook"></a>IMAPISession::OpenAddressBook
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 さらにアクセスするための[IAddrBook](iaddrbookimapiprop.md)ポインターを返す MAPI 統合アドレス帳を開きます。 
   

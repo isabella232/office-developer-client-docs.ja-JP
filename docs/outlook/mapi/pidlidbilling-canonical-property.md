@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 46c23a39-d607-404b-ac67-6d8b02ab6045
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 67e9aa6619405a79da6c874e23724947fb1d3287
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9295109f5e73cc3461580e67ef6ff67c512c6ec3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801825"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583947"
 ---
 # <a name="pidlidbilling-canonical-property"></a>PidLidBilling 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アイテムに関連付けられている請求先情報が含まれています。
   

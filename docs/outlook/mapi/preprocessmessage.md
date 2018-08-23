@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: dda50325-74b3-445e-986e-115f6536561f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 22562e1177c9a649bc66b25b5e8e9e6ecc8e397c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 878c3aaf22a6cf8a08c8234df41b671088c435c7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803687"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584990"
 ---
 # <a name="preprocessmessage"></a>PreprocessMessage
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージの内容またはメッセージの形式を指定する関数を定義します。
   

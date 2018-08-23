@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 9cb35f0a-267e-2d85-1701-02d52578a0b8
 description: '最終更新日: 2011 年 11 月 8 日'
-ms.openlocfilehash: 27ad80b9eca8332beeda147a8b2b4204f9f1cd38
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 57868996f95cfb135298378d2638bc57b2e69977
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799593"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583674"
 ---
 # <a name="about-mapi-urls-for-notification-based-indexing"></a>通知ベースのインデックス作成の MAPI URL について
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ストア プロバイダーには、オブジェクトのインデックス作成の準備が整っているインデクサーが通知された、MAPI プロトコル ハンドラー オブジェクトを一意に識別する MAPI URL が生成されます。 MAPI Url、Unicode でエンコードされた、次の形式。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 78edd549-d557-489a-85f5-adfb5c44a7d4
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2e41701d3a739864b1eafc8001833b7df5c8908b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 379fdc47f35fb183dd0bf551e421422abb106c0e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800745"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591011"
 ---
 # <a name="imapisupportexpandrecips"></a>IMAPISupport::ExpandRecips
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージの受信者リスト、特定の配布リストの展開を完了します。
   

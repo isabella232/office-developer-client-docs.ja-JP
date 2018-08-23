@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 752ff2d6-ca64-4507-adf1-4c054c321203
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f82c213b6e0737c27c4e979fc90109b38b0746f0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e0a66443194a3f89b47218ed9dc0ed9ad9c2df83
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803730"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584514"
 ---
 # <a name="read-only-message-stores"></a>�ǂݎ���p�̃��b�Z�[�W�̕ۑ�
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 読み取り専用のメッセージ ・ ストアはどちらも、MAPI クライアントも MAPI スプーラーを無効ことができますを作成、変更、またはメッセージ ・ ストア内のオブジェクトを削除します。 読み取り専用のメッセージ ストアを実装する理由の多くの理由があります。 などのクレジット レポートの事務所を参照してくださいですが、個々 のクレジット レポートを変更するのにには、顧客や従業員を許可するのに読み取り専用ストアを使用する可能性があります。 読み取り専用のメッセージ ストアを作成するを選択すると、ストア プロバイダーの構造と、ストア自体への影響があります。 などのため、読み取り専用のメッセージ ・ ストアは送信トレイ フォルダーを持つことはできませんし、MAPI クライアントがそのフォルダーで、新しい送信メッセージを作成することを要求するとします。 同様は、ストア プロバイダーの基になるストレージ ・ メカニズムの整合性を確保します。
   

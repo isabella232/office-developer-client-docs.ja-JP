@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 63eac3ee-e59b-4a06-8bb9-f72764d84bda
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 3675c6a8ee2ee208f175dd5f7d219447aa52e9ec
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: f7ec60768ab07c56969f538f196a1f9df5dbed17
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801540"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587167"
 ---
 # <a name="mapiuid"></a>MAPIUID
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 サービス プロバイダーを一意に識別するために使用する[GUID](guid.md)構造体のバイト順の独立したバージョンです。 
   
@@ -40,13 +40,13 @@ typedef struct _MAPIUID
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ab**
   
 > 16 バイトの識別子を格納する配列。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **MAPIUID**構造体は、Intel® プロセッサのバイト順に格納する**GUID**構造体です。 
   
@@ -66,9 +66,9 @@ MAPI では、同じ識別子を持つ 2 つの異なる項目の非常にまれ
   
 **MAPIUID**構造体を使用する方法の詳細については、次のトピックを参照してください。 
   
-[サービス プロバイダーの一意の識別子を登録します。](registering-service-provider-unique-identifiers.md)
+[サービス プロバイダー一意識別子の登録](registering-service-provider-unique-identifiers.md)
   
-[トランスポート オーダを設定](setting-transport-order.md)
+[転送順序の設定](setting-transport-order.md)
   
 ## <a name="see-also"></a>関連項目
 

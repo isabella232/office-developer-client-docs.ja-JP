@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 5b624954-d975-4d5e-84d7-74e096ac30af
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 592bd2c88c8eea17d80fe7cb725b075235c51763
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2ed71b5eef0c25a78d7c8ec695a756a02e796dbf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801505"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586033"
 ---
 # <a name="mapiopenformmgr"></a>MAPIOpenFormMgr
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 既存のセッションのコンテキストでは、フォーム ライブラリのプロバイダー オブジェクトの[IMAPIFormMgr](imapiformmgriunknown.md)インターフェイスを開きます。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 011d73d0-8b38-4a4e-a56f-92dec451946a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e2caccf3cf6ca7e6f15bed1c901d4dfbb198f19b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 91cad169157b2dd0ff279e88b69db149c4c7df89
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802103"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590751"
 ---
 # <a name="pidlidreminderdelta-canonical-property"></a>PidLidReminderDelta 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アラームが最初に期限切れの時刻と開始時刻、カレンダー オブジェクトの間隔を分単位で間隔を指定します。
   

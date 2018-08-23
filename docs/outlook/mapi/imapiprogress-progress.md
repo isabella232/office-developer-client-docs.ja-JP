@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: edbf7623-a64e-43b8-8379-e3cde2433d91
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 2a003be35fc9c3ef8efc7c66997ee99f6e578f09
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 3fc72f008d1c2610de3c74762aabc6231dabbfbd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800640"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589057"
 ---
 # <a name="imapiprogressprogress"></a>IMAPIProgress::Progress
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 加えられると、操作の完了までの進捗状況の表示と進行状況のインジケーターが更新されます。 
   
@@ -35,7 +35,7 @@ HRESULT Progress(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulValue_
   
@@ -85,12 +85,12 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [IMAPIProgress::SetLimits](imapiprogress-setlimits.md)
   
-[IMAPIProgress: IUnknown](imapiprogressiunknown.md)
+[IMAPIProgress : IUnknown](imapiprogressiunknown.md)
 
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[進行状況インジケーターを表示します。](how-to-display-a-progress-indicator.md)
+[進行状況インジケーターを表示する](how-to-display-a-progress-indicator.md)
   
-[進行状況のインジケーターを実装します。](implementing-a-progress-indicator.md)
+[進行状況インジケーターの実装](implementing-a-progress-indicator.md)
 

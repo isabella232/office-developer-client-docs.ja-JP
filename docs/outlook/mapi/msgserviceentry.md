@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 655774a6-588c-44c7-903b-4497b7eccbc2
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 9af170f3445757eb96b9fe78c7cbea2c29ef4612
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 954609cbc62039c0d60874bde83fde50d1d11c30
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801673"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591668"
 ---
 # <a name="msgserviceentry"></a>MSGSERVICEENTRY
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ サービスの構成をサポートするメッセージ サービスのエントリ ポイント関数のプロトタイプを定義します。 
   
@@ -48,7 +48,7 @@ HRESULT MSGSERVICEENTRY(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _hInstance_
   
@@ -160,7 +160,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > か、MAPI_UNICODE フラグが設定された実装は Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、実装には、Unicode のみサポートしています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **MSGSERVICEENTRY**関数のプロトタイプを使用して定義された関数は、それ自体を構成するのにはまたはその他のサービスに固有のアクションを実行するのには、メッセージ サービスを使用できます。 関数は、主にユーザーがメッセージ サービスに固有の設定を変更できるダイアログ ボックスを提供します。 _LpProps_パラメーターで渡されたプロパティ値の配列を使用して、プログラムによる構成もサポートできます。 プログラムによる構成は、サービスがサポートするプロファイル ウィザードでは、することが必要な場合を除き、省略可能です。 
   

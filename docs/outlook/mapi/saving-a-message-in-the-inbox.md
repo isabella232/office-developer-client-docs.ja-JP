@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 3df04d4e-7e80-4232-aadc-c05c99ab59cb
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3c48ded73d924a400632a94feab65f7afca6e526
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e79133ed4928495dcf75b59877a82d3228773883
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803791"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586285"
 ---
 # <a name="saving-a-message-in-the-inbox"></a>受信トレイへのメッセージの保存
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
  **いずれかの受信者に受信トレイにメッセージを格納するには**
   

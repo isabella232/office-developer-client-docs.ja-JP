@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: f31a08ce-3a56-4c90-9502-5bcb09d8d80f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f582322c8ba2ffa0369792e531adf1ec4ccb3e28
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f25d6b2db00f5629a9bf88499f9f4e080422ac29
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800115"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585648"
 ---
 # <a name="form-configuration-file-properties-section"></a>フォーム構成ファイル [Properties] セクション
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **[プロパティ]** セクションでフォームを使用し、公開のプロパティの完全なセットを一覧表示します。作成し、そのカスタム メッセージを MAPI クライアント アプリケーションのプロパティは、検索結果フォルダーの設定、内容のテーブルのフィルター処理、列を表示するときに使用し、ためにできます。 このプロパティ リスト内の各エントリを参照して、その後 **[プロパティ**。 _文字列_**]** のセクションに示すように次のようです。 
   

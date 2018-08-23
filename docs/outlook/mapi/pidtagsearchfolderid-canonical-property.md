@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2a587d8c-f28b-45a6-a3da-cc33052988dc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8cf221d83601f62de2dd5e2ad13a5764ff2adfce
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c822600bf9090151fe18d3bf7cab0515fc360a4e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803494"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583506"
 ---
 # <a name="pidtagsearchfolderid-canonical-property"></a>PidTagSearchFolderId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 検索フォルダーを識別するグローバル一意識別子 (GUID) が含まれています。
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4206b003-2304-4215-9844-8ff4305cc2f4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0c9b3419147fec76d065e187adf76a2481d614c4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e27ca666ca07675369eca310da8ad2acb6c37a4f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803154"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584255"
 ---
 # <a name="pidtagpagertelephonenumber-canonical-property"></a>PidTagPagerTelephoneNumber 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 受信者のポケットベルの電話番号が含まれています。
   

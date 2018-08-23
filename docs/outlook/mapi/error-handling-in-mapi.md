@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 99e2c485-af84-46f4-84b4-fca2117b5a21
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6f0ebd2112b65140a106a1376896f6de9c00da1c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d98b7cf1d6c5cdc8517ea2e653115d9a7c01e3c1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800013"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593299"
 ---
 # <a name="error-handling-in-mapi"></a>MAPI でのエラー処理
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ハンドル、または HRESULT を結果として呼ばれる 32 ビットの数値を使用して成功、警告、エラー値が返されます。 HRESULT は本当に何もへのハンドル値のエンコードされたいくつかのフィールドを持つ 32 ビット値だけですることをお勧めします。 ゼロという結果は成功を示し、0 以外の結果は失敗を示します。
   

@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 489e0d74-8ecd-23ba-c874-18fd8c50fd12
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: de4fa7cb24cd486e506f5d747319c44ce9c15a77
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 84065c1441008732380e68d9786d7844dbb64cb7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799654"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592102"
 ---
 # <a name="algorithm-to-calculate-the-store-hash-number"></a>ストア ハッシュ値を計算するアルゴリズム
  
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI 統一リソース ロケーター (URL) の中で、ストア プロバイダーはストアのハッシュ値をインデックス作成の準備ができているオブジェクトを識別する MAPI プロトコル ハンドラーに送信します。 MAPI プロトコル ハンドラーでは、このストアのハッシュ値を使用して、ストアを識別します。 一般的には、ストア プロバイダーでは、ハッシュ番号を保存するストアには、 **[PR_MAPPING_SIGNATURE](pidtagmappingsignature-canonical-property.md)** プロパティは、グローバル プロファイル セクションで定義されている場合、ストア マッピング署名に基づいて計算されます。 ストア プロバイダーが、ストア エントリ ID を使用する場合は、 番号を保存するハッシュを計算するアルゴリズムは、ストアを識別するあいまいさを最小限に抑える必要があります。 
   

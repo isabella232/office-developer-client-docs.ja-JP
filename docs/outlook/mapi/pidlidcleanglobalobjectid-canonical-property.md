@@ -1,5 +1,5 @@
 ---
-title: PidLidCleanGlobalObjectId の標準的なプロパティ
+title: PidLidCleanGlobalObjectId 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 59b85997-7972-492e-9786-3f0f367dc3e3
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: a784c91a04cce572c8e30085b1760c28296a1d53
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 38442b763ec97969f73b11b346d638d547302715
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "19801861"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589001"
 ---
-# <a name="pidlidcleanglobalobjectid-canonical-property"></a>PidLidCleanGlobalObjectId の標準的なプロパティ
+# <a name="pidlidcleanglobalobjectid-canonical-property"></a>PidLidCleanGlobalObjectId 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クリーンなグローバル**オブジェクト Id**を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidCleanGlobalObjId  <br/> |
+|関連するプロパティ:  <br/> |dispidCleanGlobalObjId  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Meeting  <br/> |
 |長い ID (LID):  <br/> |0x00000023  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティの形式は、 **LID_GLOBAL_OBJID** ([PidLidGlobalObjectId](pidlidglobalobjectid-canonical-property.md)) のものと同じです。 このプロパティの値は、 **LID_GLOBAL_OBJID**YH、YL、M 以外の値に等しいである必要があり、D のフィールドは 0 である必要があります。 自体には、定期的な系列だけでなく、(孤立したインスタンスを含む)、定期的な系列のインスタンスを参照するすべてのオブジェクトには、このプロパティに対して同じ値があります。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

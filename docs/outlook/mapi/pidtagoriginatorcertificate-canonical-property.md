@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 65f890d8-9d25-408e-ab29-89991278b92d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 871ce5f594a75b9441d0434c3be47b2718540576
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 966af9b3b3cbe52031402450be324ab6821d53ac
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803113"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586579"
 ---
 # <a name="pidtagoriginatorcertificate-canonical-property"></a>PidTagOriginatorCertificate 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージの発信者の ASN.1 の証明書が含まれています。
   

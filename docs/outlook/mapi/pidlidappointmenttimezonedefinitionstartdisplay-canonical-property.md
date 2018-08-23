@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 08239670-3211-420c-99d7-0056ed967cb8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f6d0c7c6f6f34330c143781fbac976392ee1c9a1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6ca53633f0c1e5b226f7e03c8ee702d4cda7d115
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801826"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586796"
 ---
 # <a name="pidlidappointmenttimezonedefinitionstartdisplay-canonical-property"></a>PidLidAppointmentTimeZoneDefinitionStartDisplay 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 単独の予定または会議出席依頼の開始時刻を選択するために使用されるタイム ゾーンの説明を格納する[TZDEFINITION](http://msdn.microsoft.com/library/0ae21571-2299-6407-807c-428668bb6798%28Office.15%29.aspx)構造体の保存形式に対応するストリームが含まれています。 
   

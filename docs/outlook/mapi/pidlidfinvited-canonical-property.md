@@ -1,5 +1,5 @@
 ---
-title: PidLidFInvited の標準的なプロパティ
+title: PidLidFInvited 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: ca1ea5ec-20d5-4b70-95de-c2246a10beae
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 409fc2e01b103378eb0df1bdd06ee8b5647148bb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: efedeb54decf1feae7b31f8af299a154606d7afc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801970"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582904"
 ---
-# <a name="pidlidfinvited-canonical-property"></a>PidLidFInvited の標準的なプロパティ
+# <a name="pidlidfinvited-canonical-property"></a>PidLidFInvited 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 この会議を表す、ミーティングの招待状が送信されたかどうかを示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidFInvited  <br/> |
+|関連するプロパティ:  <br/> |dispidFInvited  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008229  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 値 FALSE、または、このプロパティがない場合は、会議出席依頼が送信されたしないことを示します。 TRUE の値は、会議出席依頼が送信されたことを示します。 会議で TRUE に設定する値を設定すると、その必要がありますままになります。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

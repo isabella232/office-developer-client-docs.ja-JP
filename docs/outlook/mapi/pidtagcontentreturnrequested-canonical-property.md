@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: f86f7c59-42ab-4ac0-80fe-c985103e6bd6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b4aaf05cdd8c85736215bd0d0f3a8c5c9dafecf0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9db28f282baf18ec983f6f51c989bacea4cf76f2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802619"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586593"
 ---
 # <a name="pidtagcontentreturnrequested-canonical-property"></a>PidTagContentReturnRequested 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 TRUE が含まれる場合、メッセージは配信不能レポートに戻す必要があります。 
   

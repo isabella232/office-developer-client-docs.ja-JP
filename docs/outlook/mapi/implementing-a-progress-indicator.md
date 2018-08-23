@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 3a062a88-e87e-4c0c-944e-544a8f080930
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 767b8723d9a544a31ee5c4bbc1d6186a15387b44
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1a359ec413da91b3e2819978e80ea0a921f6b245
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800915"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587125"
 ---
 # <a name="implementing-a-progress-indicator"></a>進行状況インジケーターの実装
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 多くのクライアントによって開始された操作により、かなりの時間がかかります。 進行中のオブジェクトへのポインターは、これらの可能性のある時間のかかる操作への入力パラメーターの 1 つ-を実装するオブジェクトの[IMAPIProgress: IUnknown](imapiprogressiunknown.md)インタ フェースです。 進行状況オブジェクトでは、進行状況インジケーターの表示と外観を制御してと MAPI クライアントによって実装されます。 進行中のオブジェクトを実装するかどうかを選択することができます。 MAPI 実装は、実装を提供するように選択する場合に使用するサービス プロバイダーを使用できます。 
   

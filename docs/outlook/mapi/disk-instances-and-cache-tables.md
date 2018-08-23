@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: d556ff4d-e2f3-4c83-a93f-b1bfda5abc8c
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: c3b371a226c9eb6a3cf675ee316bf22a597fe806
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 27b21162c53a64675abbf31a8ab512719b413d5f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799926"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583163"
 ---
 # <a name="disk-instances-and-cache-tables"></a>ディスク インスタンスとキャッシュ テーブル
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォームをアクティブにするには、実行可能ファイルをユーザーのコンピューターで使用できるにする必要があります。 利用できない場合は、これらでローカル ディスクにフォーム ライブラリからにコピーする必要があります。 これを行うには、既定のフォーム マネージャーは、フォームの実行可能ファイルを格納するユーザーの Windows ディレクトリのサブディレクトリを作成 (。Exe、します。HLPs)。 このディレクトリは、"フォームのディスク インスタンス"と呼ばれます。
   

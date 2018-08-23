@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 6e2df265-b9dd-4e19-8ca5-3e31804e9120
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: fb26d854b47894d8f37763b17e5ba0b26fd25ff6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9de158e2f269c7b000734beb93b26df195255bcf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803883"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592284"
 ---
 # <a name="sending-messages-with-tnef"></a>TNEF によるメッセージの送信
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 トランスポート プロバイダーの多くは、すべての送信メッセージと、トランスポート ニュートラル カプセル化形式 (TNEF) を自動的に送信します。 TNEF を使用して、そのメッセージは、さまざまな種類、およびカスタム メッセージ クラス用のカスタム プロパティの添付ファイルで多くのクライアントとメッセージ ストア プロバイダーをサポートしている書式設定されたテキストを送信します。 ほとんどのトランスポート プロバイダーの既定のモードは、TNEF で送信するメッセージを送信するが、トランスポート プロバイダーによってサポートしません。 TNEF のサポートの欠如は、IPM メッセージを送受信するメッセージング クライアントが標準的な問題ではありません。 ただし、フォーム ベースのクライアントまたはユーザー設定のプロパティを必要とするクライアントでは、TNEF の使用が不可欠です。 フォームまたはユーザー設定のプロパティに依存するクライアントの設計者は、それらを使用するトランスポート プロバイダーの機能に注意してくださいする必要があります。
   

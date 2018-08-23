@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: c7f10b8a-6b20-44cf-bde6-8d2b711c1c14
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2082db4ccd107fcd02e37882707e4e3ee697695d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 53226daafd1c0a53f96db5af3432d6f34738fd93
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802612"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585810"
 ---
 # <a name="pidtagcontentintegritycheck-canonical-property"></a>PidTagContentIntegrityCheck 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 漏えいから不正な受信者にメッセージの内容を保護するためにメッセージの送信者を許可する ASN.1 のコンテンツの整合性チェック値が含まれています。
   

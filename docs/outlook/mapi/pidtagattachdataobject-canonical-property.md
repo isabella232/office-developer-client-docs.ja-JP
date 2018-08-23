@@ -1,5 +1,5 @@
 ---
-title: PidTagAttachDataObject の標準的なプロパティ
+title: PidTagAttachDataObject 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b76312c6-7682-4ded-be25-55e21b0b091b
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: b3fc7690a8c9eb2ada3a34bc44217ff463721e4d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: d2926b09dd3dfd89ab771206e0c8848415238eba
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802458"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585480"
 ---
-# <a name="pidtagattachdataobject-canonical-property"></a>PidTagAttachDataObject の標準的なプロパティ
+# <a name="pidtagattachdataobject-canonical-property"></a>PidTagAttachDataObject 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 通常、オブジェクトのリンクと埋め込み (OLE) **IStorage**インターフェイスを使用してアクセスの添付ファイル オブジェクトが含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ATTACH_DATA_OBJ  <br/> |
+|関連するプロパティ:  <br/> |PR_ATTACH_DATA_OBJ  <br/> |
 |識別子:  <br/> |0x3701  <br/> |
-|データを入力します。  <br/> |PT_OBJECT  <br/> |
+|データの種類 :   <br/> |PT_OBJECT  <br/> |
 |領域:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) プロパティの値が**ATTACH_EMBEDDED_MSG**または**ATTACH_OLE**である場合、このプロパティは、添付ファイルを保持します。 **PR_ATTACH_TAG** ([PidTagAttachTag](pidtagattachtag-canonical-property.md)) からは、OLE のエンコードの種類を決定できます。 
   
@@ -76,7 +76,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

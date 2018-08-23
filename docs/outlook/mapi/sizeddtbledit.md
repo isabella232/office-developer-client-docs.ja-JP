@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: a658d027-03a2-4cde-bf99-563e8521cb31
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4ea77023bdc9442325f4af46d23c107e7172ceaf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7e50589b52f3e99bf2569a55bb7d3ca4f8247fd6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803920"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591661"
 ---
 # <a name="sizeddtbledit"></a>SizedDtblEdit
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 エディット コントロールと、コントロールに入力できる文字の最大数を記述するための[DTBLEDIT](dtbledit.md)構造体を含む名前付き構造体を作成します。 
   

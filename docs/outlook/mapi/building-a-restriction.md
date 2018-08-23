@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 12abbd8c-f825-493e-af42-344371d9658e
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3b40c8433f93237db2ae4fd5449fe8a0da486539
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 46c77ce0f14e3b7719256d8b305cb3dad767b3f5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799745"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590100"
 ---
 # <a name="building-a-restriction"></a>制限を作成します。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 制限を作成するには、クライアント アプリケーションは、さまざまな種類の 1 つまたは複数の制限の構造の階層を作成して、 [IMAPITable::Restrict](imapitable-restrict.md)または[IMAPITable::FindRow](imapitable-findrow.md)メソッドを階層構造にポインターを渡します。 次の図および[制限のサンプル コード](sample-restriction-code.md)のサンプル コードは、さまざまな種類の構造体をリンクの制限を持つ標準的な制限を実装する方法をデモンストレーションします。 
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 1a62efa2-dd6b-4acb-a760-defa601c20c9
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 9923813d821e2b34497e3b498c19ce22ceda2eb0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3c1bfccf635b96dd0744d888e69b4af5b8df0fa2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800728"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587874"
 ---
 # <a name="imapisupportdetails"></a>IMAPISupport::Details
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 特定のアドレス帳のエントリに関する詳細情報を表示するダイアログ ボックスが表示されます。
   

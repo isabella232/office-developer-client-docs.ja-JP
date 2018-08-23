@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a304ca8f-e404-4535-be76-0b673f2061a0
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 24718c50d02da5d60a6594f56ea6100650fe9f1a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 06a5c9de5c0ce4c0f936791086a731a55510a124
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800748"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592144"
 ---
 # <a name="imapisupportmodifystatusrow"></a>IMAPISupport::ModifyStatusRow
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ステータス テーブルを変更するには、新しい行を追加したり、既存の行を変更します。
   

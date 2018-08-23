@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: e342c1bd-8bee-4b02-a93f-e3941f4716c1
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a355faf85a44f6257b77b7171aa965faabf57fe9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2b66b450318c802e773c2f2c47e4a39500c582d6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804210"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592773"
 ---
 # <a name="using-mapi-objects"></a>MAPI オブジェクトを使用します。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアントとサービス ・ プロバイダーは、そのインターフェイスの実装でのメソッドの呼び出しによって MAPI オブジェクトを使用します。 MAPI オブジェクトを使用することができることの唯一の方法は、このMAPI インターフェイスの外部オブジェクトによって実装されるメソッドは、パブリックにアクセス可能ではありません。 すべてのオブジェクトのインターフェイスは継承によって関連しているために、オブジェクトのユーザーは同じインターフェイスに属しているかのように基本インターフェイスまたは継承されたインターフェイスのいずれかのいずれかのメソッドを呼び出すことができます。 
   

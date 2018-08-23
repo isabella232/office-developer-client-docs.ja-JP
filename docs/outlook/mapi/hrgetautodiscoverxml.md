@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 03691187-7c65-620b-576f-6ebe62a80830
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: da466fc9add8cbc385014782f31749d3b6522da9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 490c834ee63c158b3f9c0e34f8de7f582c650bc4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800289"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584066"
 ---
 # <a name="hrgetautodiscoverxml"></a>HrGetAutoDiscoverXML
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 Microsoft Exchange 2007 サーバーの自動検出サービスから取得した情報を表す拡張マークアップ言語 (XML) のストリームを返します。
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 06d1f8a3-53e1-4c9a-9703-75de7a11a772
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b4bab1948bc563b92dafa16922da3b9760cf1a1a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f2cd536a2f287e880388457586f6bdfa9f67f2b4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802241"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590849"
 ---
 # <a name="pidlidtaskstate-canonical-property"></a>PidLidTaskState 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 タスクの現在の割り当ての状態を示します。
   

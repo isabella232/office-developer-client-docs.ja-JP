@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 80867adf-6786-47a9-9d3f-4aef4a7d7c66
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a9a2dd35e9fdce1adfa10d2cf6704b0a1124af94
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5c6a16b62987a5338e1f14d362ba9d0ba9836e8e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799873"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585158"
 ---
 # <a name="creating-a-profile"></a>プロファイルの作成
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアントは、プロファイル ウィザードを使用するか、カスタム コードを記述することによって、2 つの方法のいずれかでプロファイルを作成できます。
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 4a140ec3-9520-4119-a975-0fb6c1049967
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 71d7ebf2bc8c7bbf3b5ee6ce60959fdeee79abe3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6e4c318678fdce7976140ff8f480ae638fd3ca4c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803895"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593026"
 ---
 # <a name="setting-transport-order"></a>転送順序の設定
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI スプーラーに送信メッセージを処理できるトランスポート プロバイダーを宣言するための識別子とアドレスの種類に基づく責任が割り当てられます。 トランスポート プロバイダーがサポートされているアドレスの種類と識別子のリストを発行する- **MAPIUID**構造体に格納されている: MAPI がログオンの直後に、 [IXPLogon::AddressTypes](ixplogon-addresstypes.md)メソッドを呼び出すとします。 受信者のアドレスの種類は、 **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) プロパティに格納されます。
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d347c949-d0c3-4a36-8447-3fa01111cdc1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c728799832b10ad2d4533a9a040582b67054baad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cec34819cfa2c6e790f8808eb5bab70412f286b5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803642"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591430"
 ---
 # <a name="pidtagtextattachmentcharset-canonical-property"></a>PidTagTextAttachmentCharset 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージの添付ファイルの文字セットの値が含まれています。
   

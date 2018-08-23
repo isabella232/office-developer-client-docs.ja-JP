@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: aa8f18d9-691d-d0cc-a660-f15ea6cff6ce
 description: '最終更新日: 2012 年 7 月 3 日'
-ms.openlocfilehash: 1b725dc5151f1f088f2547a1ef82d322c8458b6e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 24cc4b00f02c61395565fb7ddeb6a5b5a62afdc5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801658"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591941"
 ---
 # <a name="meid"></a>MEID
 
  
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 Outlook アイテムの識別子です。 エントリ id とその他の関連する情報が含まれています。
   
@@ -36,7 +36,7 @@ struct MEID
 };
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  _abFlags_
   
@@ -64,11 +64,11 @@ struct MEID
 
 [レプリケーション API について](about-the-replication-api.md)
   
-[レプリケーション状態マシンについて](about-the-replication-state-machine.md)
+[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
 [LTID](ltid.md)
   
-[同期](sync.md)
+[SYNC](sync.md)
   
 [UPMSG](upmsg.md)
 

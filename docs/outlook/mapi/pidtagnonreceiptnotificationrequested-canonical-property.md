@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 747f7ba8-42d3-4be3-9908-269e9a347c7f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 80c76242df409dbea1b60e423629b5b219e1d57d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 896cfa2bf8a1b33fd6dee09649853b71618f31be
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803021"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582785"
 ---
 # <a name="pidtagnonreceiptnotificationrequested-canonical-property"></a>PidTagNonReceiptNotificationRequested 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージの送信者が指定した受信者の受信不能の通知を希望する場合は TRUE が含まれています。
   

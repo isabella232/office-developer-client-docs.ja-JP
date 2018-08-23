@@ -1,5 +1,5 @@
 ---
-title: PidTagDelegateFlags の標準的なプロパティ
+title: PidTagDelegateFlags 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 3a504594-204c-472c-8be7-dca154c94ea2
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 160ddc53edf3d9681adf6f9d536a488c0c345a07
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: d43ec0bd2978c64e3a5ceb635f0dcda57de01cfd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802665"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590737"
 ---
-# <a name="pidtagdelegateflags-canonical-property"></a>PidTagDelegateFlags の標準的なプロパティ
+# <a name="pidtagdelegateflags-canonical-property"></a>PidTagDelegateFlags 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 代理人が代理人の秘密のメッセージ オブジェクトを表示するかを指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_DELEGATE_FLAGS  <br/> |
+|関連するプロパティ:  <br/> |PR_DELEGATE_FLAGS  <br/> |
 |識別子:  <br/> |0x686B  <br/> |
-|データを入力します。  <br/> |PT_MV_LONG  <br/> |
+|データの種類 :   <br/> |PT_MV_LONG  <br/> |
 |領域:  <br/> |クラスによって定義されたメッセージ送信できます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティの各エントリを次の値のいずれかに設定する必要があります。
   
@@ -71,7 +71,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

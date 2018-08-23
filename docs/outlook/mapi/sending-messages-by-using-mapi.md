@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 3edfbfff-ea15-4926-bf0f-47137251d921
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 36de3b70b0ab7b16f8abed85bbd0983224e00568
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6a3172dcd962c04d72aacd14d2e42990fb0f78c7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803866"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593453"
 ---
 # <a name="sending-messages-by-using-mapi"></a>MAPI を使用したメッセージの送信
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアント アプリケーションは、メッセージを送信する[IMessage::SubmitMessage](imessage-submitmessage.md)メソッドを呼び出します。 **SubmitMessage**では、MAPI スプーラーを無効にするか、コントロールを転送する前に、またはトランスポート プロバイダーに直接メッセージを保存するのには[IMAPIProp::SaveChanges](imapiprop-savechanges.md)を呼び出します。 
   

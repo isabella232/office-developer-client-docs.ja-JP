@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: c1589d49-2ebe-48ce-85c7-b70fb7c1bb67
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b0e54f78257eb6890e8afbb7941dc625dc79be0c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c6cdb07e1cbe68d90c6dcd9d5418f700ea5abc3d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800195"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589652"
 ---
 # <a name="handling-mapi-forms"></a>MAPI フォームの処理
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI フォームは、特定のクラスのメッセージ用のビューアーです。 さまざまなメッセージ クラスに属しているメッセージを処理するユーザーを許可するクライアントは、MAPI フォームのさまざまなを処理するために書き込む必要があります。 複数のフォームを処理するには、クライアントは、次の 3 つのオブジェクトが含まれているフォーム ビューアーと呼ばれるコンポーネントを実装します。
   

@@ -1,5 +1,5 @@
 ---
-title: PidLidNoteY の標準的なプロパティ
+title: PidLidNoteY 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,28 +11,28 @@ api_name:
 api_type:
 - COM
 ms.assetid: ad6a7dc2-506e-4e22-b2a6-9dd6d0a5dd9f
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 31ae5959585742e206da7e1e0d9fb3b231a5be12
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: ecba56bc2cbc5c9f4eb31898f76c1d7ee1dfd275
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802060"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591374"
 ---
-# <a name="pidlidnotey-canonical-property"></a>PidLidNoteY の標準的なプロパティ
+# <a name="pidlidnotey-canonical-property"></a>PidLidNoteY 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ユーザー インターフェイスにメッセージが表示されます、画面の上端からのピクセル単位の距離を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidNoteY  <br/> |
+|関連するプロパティ:  <br/> |dispidNoteY  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Note  <br/> |
 |長い ID (LID):  <br/> |0x00008B05  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |付箋  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -61,7 +61,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

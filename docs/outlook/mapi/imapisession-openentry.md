@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a4df4860-cf4f-4e97-97c4-fcd89b7f1f91
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f23b4855b7e2faeb599868f8c2db52ae9cbfbfd8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6234fc737857a7e35f562703802f81ff154b3ee6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800687"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591017"
 ---
 # <a name="imapisessionopenentry"></a>IMAPISession::OpenEntry
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 オブジェクトを開き、追加のアクセスのインターフェイス ポインターを返します。
   

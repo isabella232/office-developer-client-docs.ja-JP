@@ -9,56 +9,39 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 807d1b76-ccc1-4cbe-bbe3-5d5cadffbef4
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 8e85db25df01deb295f88a9352451395ddf96cdd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: MAPI のプログラミング要素について説明します。
+ms.openlocfilehash: a3f489754eb06792c64cc271a5f1dc8e43c842a3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801450"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585914"
 ---
 # <a name="mapi-reference"></a>MAPI リファレンス
-
-  
-  
-**適用対象**: Outlook 
+ 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ここでは、MAPI のプログラミング要素を説明します。
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-[MAPI インターフェイス](mapi-interfaces.md)
-  
-> MAPI インターフェイス、およびインターフェイスのメソッドに関する情報が含まれています。
+- [MAPI インターフェイス](mapi-interfaces.md)
     
-[MAPI の関数、コールバック、およびマクロ](mapi-functions-callbacks-and-macros.md)
-  
-> 機能、コールバック、および MAPI で使用されているマクロに関する情報が含まれています。
+- [MAPI の関数、コールバック、およびマクロ](mapi-functions-callbacks-and-macros.md)
     
-[MAPI プロパティ](mapi-properties.md)
-  
-> MAPI のプロパティに関する情報が含まれています。
+- [MAPI プロパティ](mapi-properties.md)
     
-[MAPI の構造](mapi-structures.md)
-  
-> MAPI で使用されている構造体に関する情報が含まれています。
+- [MAPI の構造](mapi-structures.md)
     
-[構造体に関連するマクロ](macros-related-to-structures.md)
-  
-> MAPI で使用される構造体に関連するマクロについての情報が含まれています。
+- [構造体に関連するマクロ](macros-related-to-structures.md)
     
-[MAPI データ型](mapi-data-types.md)
-  
-> MAPI で使用されるデータ型に関する情報が含まれています。
+- [MAPI データ型](mapi-data-types.md)
     
 ## <a name="related-sections"></a>関連情報
 
-[Outlook MAPI リファレンス](outlook-mapi-reference.md)
-  
-[Outlook MAPI リファレンスの概要](getting-started-with-the-outlook-mapi-reference.md)
-  
-[MAPI Samples](mapi-samples.md)
-  
-[MAPI �̊T�O](mapi-concepts.md)
+- [Outlook MAPI リファレンス](outlook-mapi-reference.md) 
+- [Outlook MAPI リファレンスの概要](getting-started-with-the-outlook-mapi-reference.md)
+- [MAPI Samples](mapi-samples.md)
+- [MAPI �̊T�O](mapi-concepts.md)
   
 

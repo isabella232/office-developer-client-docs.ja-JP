@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 63444a65-d56a-4dbd-9aa6-e60f18ba8104
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: adbfbb73ac0f5f1e1cba547fa7a91393891fdb1c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d5b2aa2830e2721b9f895b22df12c9d712188625
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799628"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590135"
 ---
 # <a name="adding-address-book-entries"></a>アドレス帳エントリの追加
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 コンテナー、 [IAddrBook::NewEntry](iaddrbook-newentry.md)のクライアントの呼び出し、またはプロバイダーに、メッセージングのユーザーまたは配布リストを追加するのには、 _lpEIDContainer_パラメーター内の移行先コンテナーのエントリの識別子を使用して[IMAPISupport::NewEntry](imapisupport-newentry.md)を呼び出します。 MAPI は、次に、一時テーブルから 1 回限りのテンプレートを使用してエントリを作成するコンテナーの[IABContainer::CreateEntry](iabcontainer-createentry.md)のメソッドを呼び出します。 1 回限りのテンプレートは、特定の種類の新しい受信者を作成するクライアントを使用します。 ほとんどのフィールドは、編集できます。 _LpEntryID_パラメーターで指定されたテンプレートでは、いずれかのプロバイダーを提供する可能性がありますか、プロバイダーが外部のテンプレートをサポートしている場合、外部プロバイダーからのテンプレートがあります。 **CreateEntry**の外部のテンプレートからの受信者を作成できるプロバイダーの実装は、常にすることはできませんプロバイダーの実装よりも複雑です。 
   

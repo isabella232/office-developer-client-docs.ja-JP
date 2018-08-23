@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 58f36a6b-bcc5-4ebb-9761-6f420a718d97
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: fc444725aae20e7321fa287a90cf7d3e13b7ffb4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 56f124d7d42ac41e8b5cdb7cf61c9867bbf69837
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801387"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587531"
 ---
 # <a name="mapi-message-service-overview"></a>MAPI メッセージ サービスの概要
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ サービスでは、関連するサービス プロバイダーでは、通常同じメッセージング システムと連携するサービス プロバイダーのグループを定義します。 サービス ・ プロバイダーでは、メッセージング システムと、MAPI サブシステムの間で通信するための作業を行う、メッセージ サービスは、ユーザーと一般的なメッセージング システムを使用するサービス プロバイダーとの間のやり取りの作業を実行します。  
   

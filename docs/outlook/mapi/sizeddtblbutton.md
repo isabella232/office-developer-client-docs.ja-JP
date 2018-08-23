@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ee73ced9-14d8-4a30-9b9f-d54ed9c3a454
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3de56b12fa7d34004fddbfe3633b8b8307c0ffc1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: dc4d3a7a827e728dfd6725ac269350067d4530cb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803913"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590345"
 ---
 # <a name="sizeddtblbutton"></a>SizedDtblButton
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ボタンと指定された長さのラベルを記述するための[DTBLBUTTON](dtblbutton.md)構造体を含む名前付き構造体を作成します。 
   

@@ -1,5 +1,5 @@
 ---
-title: PidTagAttachContentBase の標準的なプロパティ
+title: PidTagAttachContentBase 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 35c10264-6998-4c46-8cef-82708c96d9c7
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: cff0e2a5ffdb3b85e73b24ec8a30b7d88637ce48
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 40e2efbf512265dffeee43d09e85879e8c3a0e56
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802459"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582421"
 ---
-# <a name="pidtagattachcontentbase-canonical-property"></a>PidTagAttachContentBase の標準的なプロパティ
+# <a name="pidtagattachcontentbase-canonical-property"></a>PidTagAttachContentBase 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 多目的インターネット メール拡張 (MIME) メッセージの添付ファイルのコンテンツの基本ヘッダーが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ATTACH_CONTENT_BASE、PR_ATTACH_CONTENT_BASE_A、PR_ATTACH_CONTENT_BASE_W  <br/> |
+|関連するプロパティ:  <br/> |PR_ATTACH_CONTENT_BASE、PR_ATTACH_CONTENT_BASE_A、PR_ATTACH_CONTENT_BASE_W  <br/> |
 |識別子:  <br/> |0x3711  <br/> |
-|データを入力します。  <br/> |PT_STRING8、PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |領域:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これらのプロパティの使用は、MHTML をサポートするためです。 適切な MIME ボディ部のコンテンツ ベースのヘッダーを表します。 
   
@@ -64,7 +64,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

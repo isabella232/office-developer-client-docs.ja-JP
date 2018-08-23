@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 183d3b86-4506-44da-bbfc-d6242ad89e57
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 26c329323eebff6cfdf4f4be4dffe9a62f8745e6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a2f9d1623c3733292ebf5c65452ac0d65f577c4d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800211"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592718"
 ---
 # <a name="add-a-definition-for-a-new-user-defined-field"></a>新しいユーザー定義フィールドの定義を追加します。
  
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 Microsoft Outlook アイテムにユーザー定義フィールドを追加するときは、 [PropertyDefinition](propertydefinition-stream-structure.md)ストリームの対応する構造体にフィールドの定義を追加します。 PropertyDefinition ストリームの構造体への新しいフィールド定義を追加するのにには、次の手順を使用します。 
   

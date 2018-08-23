@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 964fceb4-8a1c-46c1-98e1-a325c9259f8b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 80d2e4fd353f0746349563fd911e0af09a658b35
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bde7ff73f58c8809d2dd6467daea28461e7c6ef7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803737"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586271"
 ---
 # <a name="registering-service-provider-unique-identifiers"></a>サービス プロバイダー一意識別子の登録
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アドレス帳、メッセージ ・ ストア、およびトランスポート プロバイダーは、さまざまな種類のサービス オブジェクトを登録するのには、 [MAPIUID](mapiuid.md)と呼ばれる一意の識別子を使用します。 の**MAPIUID**は、GUID を格納する 16 バイトの識別子です。 次の手順を使用して、 **MAPIUID**を作成します。 
   

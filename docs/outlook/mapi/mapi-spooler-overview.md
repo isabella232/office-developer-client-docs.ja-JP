@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 5866b202-883e-454e-aeb1-61526c43dae9
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5e4bd4f6038db3dbb33ec3511d953448fea7a6c2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ec581e2170b92721410106eae00e2d36b3c775a0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801468"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591339"
 ---
 # <a name="mapi-spooler-overview"></a>MAPI スプーラーの概要
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI スプーラーは、Microsoft Office Outlook プロセスが担当するへのメッセージ送信と受信メッセージのメッセージング システムからの機能です。 MAPI スプーラーは、メッセージの受信と配信で重要な役割を果たします。 メッセージング システムが使用できない場合は、MAPI スプーラーはメッセージを格納し、後でそれらが自動的に転送します。 上に保持または、必要に応じてデータを送信するには、この機能は、保存し、転送、リモート接続は、共通であり、ネットワーク トラフィックが高い環境で重要な機能と呼ばれます。 MAPI スプーラーは、Outlook 内でバック グラウンド スレッドとして実行されます。
   

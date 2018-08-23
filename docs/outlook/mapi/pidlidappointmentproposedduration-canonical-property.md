@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 37806778-a19a-4905-a845-525d3912bf9e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 56891591871831ba9496f50b69bf4b94ef012c3c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e3983a110ee9a72f3c82eaf1bbebc810d07f3c4b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801729"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591304"
 ---
 # <a name="pidlidappointmentproposedduration-canonical-property"></a>PidLidAppointmentProposedDuration 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 提案された新しい日時の指定の**dispidApptDuration** ([PidLidAppointmentDuration](pidlidappointmentduration-canonical-property.md)) プロパティの値を示します。
   

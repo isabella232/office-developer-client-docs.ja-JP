@@ -1,5 +1,5 @@
 ---
-title: PidTagDefaultStore の標準的なプロパティ
+title: PidTagDefaultStore 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 6314d91c-4948-4fd1-bacc-932d4bb2c22f
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 573ac849bba026ec6a5988220a7e49688393440d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: d544c741685d401aaf36fe19be50ab402c9e5604
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802662"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592683"
 ---
-# <a name="pidtagdefaultstore-canonical-property"></a>PidTagDefaultStore の標準的なプロパティ
+# <a name="pidtagdefaultstore-canonical-property"></a>PidTagDefaultStore 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストアがメッセージ ストアのテーブルの既定のメッセージ ストアの場合、TRUE が格納されます。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_DEFAULT_STORE  <br/> |
+|関連するプロパティ:  <br/> |PR_DEFAULT_STORE  <br/> |
 |識別子:  <br/> |0x3400  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |MAPI メッセージ ストア  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、メッセージ ストアのテーブルの列として表示されます。 値は、 **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) に基づいています。 
   
@@ -64,7 +64,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

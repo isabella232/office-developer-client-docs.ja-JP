@@ -1,5 +1,5 @@
 ---
-title: PidTagContactAddressBookMultipleAddressFlag の標準的なプロパティ
+title: PidTagContactAddressBookMultipleAddressFlag 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: aefc34c5-1beb-44cf-a455-90f466e157ce
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 42f164f09dbffcc05986771aa05f7ce14eee789c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 34f61f3ef64e5751f9be3df534c4379583447799
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802573"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592697"
 ---
-# <a name="pidtagcontactaddressbookmultipleaddressflag-canonical-property"></a>PidTagContactAddressBookMultipleAddressFlag の標準的なプロパティ
+# <a name="pidtagcontactaddressbookmultipleaddressflag-canonical-property"></a>PidTagContactAddressBookMultipleAddressFlag 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 連絡先アイテムごとに複数の電子メール アドレスをプロバイダーがサポートする場合は TRUE にするフラグが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_CONTAB_MULTI_ADDR_FLAG  <br/> |
+|関連するプロパティ:  <br/> |PR_CONTAB_MULTI_ADDR_FLAG  <br/> |
 |識別子:  <br/> |0x6614  <br/> |
-|データを入力します。  <br/> |PT_BOOLEAN  <br/> |
+|データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |領域:  <br/> |連絡先のアドレス帳  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティが TRUE の場合、プロバイダーは電子メール アドレスがない連絡先を許可しません。 FALSE の場合、プロバイダーは、通常の電子メール アドレスがあるかどうかすべての連絡先を示します。 プライマリ電子メール アドレスのみが受け入れられます。 これは、連絡先のアドレス帳コンテナー、および連絡先のアドレス帳コンテナーのテーブル内の列のプロパティです。
   
@@ -58,7 +58,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

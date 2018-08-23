@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 452acccf-22fd-4450-b50f-eaa2b2c94515
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a191a8551d425d7e8b3b9a281936a4a0e2dfd587
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 11007fa18a57e296472c28f86480cb71b780e568
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804220"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593033"
 ---
 # <a name="working-with-large-columns"></a>大規模列の操作
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 文字列またはバイナリ プロパティ データを持つ列が大きくなる可能性のある膨大な数のバイト長です。 ビューで、数百バイトの 1 つまたは複数の列を含む多くの場合実用的ではありません、ために、MAPI には、テーブル実装側は、255 バイトには多くの場合、使用頻度は少ない 510 バイトに値を切り詰めますが有効にします。 可能な限り、テーブルの実装者は、テーブルの列にプロパティの完全な値を含める必要があります。 最初の 255 バイトを含めることをお勧めします。
   

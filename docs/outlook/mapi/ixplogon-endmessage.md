@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: bb29e6a0-7a92-46eb-bbeb-6f2df6ac6d21
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7f81a0c3c9a9ad0a9bcef5c5685aa5b343237f19
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f727d68e0e193e8f2e148d881968993f836f8ab0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801245"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582470"
 ---
 # <a name="ixplogonendmessage"></a>IXPLogon::EndMessage
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 トランスポート プロバイダーは、MAPI スプーラーに送信メッセージの処理が完了したことを通知します。
   

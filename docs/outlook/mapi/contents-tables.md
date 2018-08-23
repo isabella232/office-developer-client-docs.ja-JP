@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 7b8efb4e-b5be-41b8-81bb-9aa1da421433
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0dd79d9630837b5ec8a709d386ccc0db987dfb5b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 923fd527eb7d04b31f15e6d8673e2e964fa0d1ed
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799812"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585641"
 ---
 # <a name="contents-tables"></a>コンテンツ テーブル
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 コンテンツ テーブルには、MAPI のコンテナー内のオブジェクトに関する情報が含まれています。 アドレス帳プロバイダーは、そのコンテナーのそれぞれのテーブルの内容を実装し、メッセージ ・ ストアとリモート トランスポート プロバイダーは、そのフォルダーの内容のテーブルを実装します。 アドレス帳コンテナーのコンテンツ テーブルは、フォルダーの内容のテーブル内のメッセージに関する情報を一覧表示中に、メッセージング ユーザーと配布リスト オブジェクトに関する情報を一覧表示します。 テーブルの内容は、主にクライアント アプリケーションによって使用されます。 
   

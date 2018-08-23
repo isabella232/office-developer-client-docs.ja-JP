@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 568f2336-cb4d-3f2c-a304-d29cdb0bcbcc
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: fa3c0b90a64c90a7c854cb22ac75438fa5fca23f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 887c66277b54e2e14c7f67c76b8e9dd4fa8bc719
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804188"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589232"
 ---
 # <a name="upread"></a>UPREAD
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [アップロード ステータスの状態を読み取り](upload-read-status-state.md)中にはアイテムの読み取り状態をアップロードする方法の詳細については。
   

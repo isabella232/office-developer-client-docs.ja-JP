@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: a24cad75-1237-469f-b7f3-cbbb88f80d44
 description: '�ŏI�X�V��: 2015�N12��7��'
-ms.openlocfilehash: 4ffd92f44f1fe88b840e8f8119a92d2048f4f526
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7325c42fe7e9c1e043609d5503a3782522f76188
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804213"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590058"
 ---
 # <a name="whats-new-in-this-edition"></a>このエディションの新機能
 
  
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 さまざまな新機能のマニュアルを含めるため、Microsoft Outlook 2013 MAPI の参照が更新されました。 
   

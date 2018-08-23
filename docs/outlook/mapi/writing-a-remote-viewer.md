@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: f4d7d42f-688a-4199-b972-dd42528c0cdf
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 554f98f7bda8c6616ce06b86142213c18bff1f69
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0125bd57f0f2958c112fb03e7bf4166a7017cd03
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804242"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584766"
 ---
 # <a name="writing-a-remote-viewer"></a>リモート ビューアーを作成します。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 リモート ビューアーは、別のコンピューターに格納されているメッセージに対するアクセスの制御を提供するクライアント アプリケーションのウィンドウです。 この制御されたアクセスが低速の通信リンクを動作可能性があります。 ユーザーがフォルダーを開くたびに使用可能なメッセージの完全な選択範囲を取得するのではなくリモート ビューアーは最初のヘッダーだけを表示します。 ユーザーがヘッダーからを選択し、完全に表示するメッセージのうち。 ビューアーがリモート クライアントには、これまでダウンロードされる前にメッセージを削除するのには、ユーザーを許可できます。 
   

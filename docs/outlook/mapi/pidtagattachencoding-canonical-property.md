@@ -1,5 +1,5 @@
 ---
-title: PidTagAttachEncoding の標準的なプロパティ
+title: PidTagAttachEncoding 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 3b30cec6-da1e-4ef1-8c17-24b66f31cf0a
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: cdeb432e20f2779bbb625566108551748b48a01f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 7475eef15398081a30307e7b4a077a0700a6ba8c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802480"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584199"
 ---
-# <a name="pidtagattachencoding-canonical-property"></a>PidTagAttachEncoding の標準的なプロパティ
+# <a name="pidtagattachencoding-canonical-property"></a>PidTagAttachEncoding 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 添付ファイルのエンコーディングを指定する ASN.1 オブジェクト識別子が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ATTACH_ENCODING  <br/> |
+|関連するプロパティ:  <br/> |PR_ATTACH_ENCODING  <br/> |
 |識別子:  <br/> |0x3702  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、添付ファイル内のデータを変換するためのアルゴリズムを識別します。
   
@@ -70,7 +70,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 7db0645b-f3ab-4fc4-b865-68c952aeb359
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1d4d4404d175458d5b708948b11c93b734a8bd1f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c0263b905e01a8937e2472d6e8c165287e7ebc5d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803242"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588049"
 ---
 # <a name="pidtagreadreceiptrequested-canonical-property"></a>PidTagReadReceiptRequested 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージの送信者は受信者がメッセージを読んだときは、リードのレポートを生成するメッセージング システムを希望する場合は TRUE が含まれています。
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2c1c25c6-1aec-4d9e-a2a3-bf1b4a2908b8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5961e7a2118a46bdc9c0e66138363976ae2f7154
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 134a492dbc86dd0ce6b3795d5ae40b334c14d468
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800477"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585151"
 ---
 # <a name="imapifoldercopyfolder"></a>IMAPIFolder::CopyFolder
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 サブフォルダーを移動またはコピーします。
   

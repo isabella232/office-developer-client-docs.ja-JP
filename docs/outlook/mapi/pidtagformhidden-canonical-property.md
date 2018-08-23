@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 79cb1fa5-9a32-4872-9806-ecd664022234
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3ef877bca8f94844bb257387ff5cc272c10897b7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 89eb6f0b8248fb0113356e60e0b94e4762c2a11a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802790"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590646"
 ---
 # <a name="pidtagformhidden-canonical-property"></a>PidTagFormHidden 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォームを表示から非表示にする場合は TRUE が含まれています、メニューとダイアログ ボックスを作成します。 
   

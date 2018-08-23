@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 25368f6c-4fba-4381-840c-ca122bd31b5f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4dde93bbec2594804ab18a3ee4eb3e116a57e528
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 121bba82a9ccd40a435769b5eb2d966ed60575f2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802914"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586971"
 ---
 # <a name="pidtagjunkincludecontacts-canonical-property"></a>PidTagJunkIncludeContacts 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 連絡先フォルダー内の連絡先の電子メール アドレスが迷惑メール フィルターについては特別に扱うかどうかを示します。
   

@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: acbfd3ae-bfdc-4103-bed2-6bcf7b9c448c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8bfa5709dede4a9501d261e0f495acbc0894b470
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4af052cdbd354d321a1d9e1dd0feb004501c8eb0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803873"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587615"
 ---
 # <a name="sending-messages-message-store-provider-tasks"></a>メッセージの送信: メッセージ ストア プロバイダーのタスク
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストア プロバイダーは、クライアントがメッセージの[IMessage::SubmitMessage](imessage-submitmessage.md)メソッドを呼び出すと、プロセスを送信するメッセージに関連する取得します。 複数のメッセージを送信する場合は、メッセージ ・ ストアの**SubmitMessage**呼び出しのクライアントが使用されることと同じ順序でを送信する必要があります。 
   

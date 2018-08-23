@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 4d1837f1-494f-481b-9e09-ab8249f1488c
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 9dba148646678f0740c5b2c338ae345ecd76dfac
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2d74c9d5632e81e5b98cd1a4a02d5646cf3f6300
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801639"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592312"
 ---
 # <a name="message-text"></a>メッセージ テキスト
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MIME モードでの送信メッセージのコンテンツの種類によって異なるかどうかは添付ファイルとメッセージのテキストは次のようにあります。 添付ファイルがある場合は、コンテンツ タイプは、メッセージ テキスト_マルチパートと混合して_各添付ファイルがメッセージの内容、それぞれに独自のコンテンツの種類の別の部分になります。 添付ファイルがない場合、メッセージのコンテンツ タイプ_と_1 つだけの部分があります。 
   

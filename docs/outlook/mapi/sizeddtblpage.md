@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: 47b2a69d-e902-429f-8b31-166b51aeaf7f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a1530443600df7cb73ff27d5cfbeab46f81bc53c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ae3f84c6b219c7becb88737f0d6c9fcb9722ea34
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803923"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584969"
 ---
 # <a name="sizeddtblpage"></a>SizedDtblPage
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 タブ付きページのコントロール、指定した長さのラベル、ヘルプ ファイルのエントリを指定された長さの記述するため[DTBLPAGE](dtblpage.md)構造体を含む名前付き構造体を作成します。 
   

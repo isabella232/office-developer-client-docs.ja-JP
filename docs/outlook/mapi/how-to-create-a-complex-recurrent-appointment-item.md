@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: da9626da-5ba5-4f18-954c-4e23971d23e8
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 524fa44ddd1325b51a7389d712ac045afbefb8d9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ad81ac74f517b36029d29f8a6ed1e1dfcb28fade
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800216"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583667"
 ---
 # <a name="create-a-complex-recurrent-appointment-item"></a>複雑な定期的な予定アイテムを作成します。
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 定期的な予定アイテムを作成するのには、MAPI を使用できます。
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b483dd42-92c0-42c2-b6f9-621daeee1659
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2abf8085ae353ea2b50f647e5cf641708008c47d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d6025feb77f5e880dec98bc65f0b170c25a00b78
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803280"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591710"
 ---
 # <a name="pidtagrecipientstatus-canonical-property"></a>PidTagRecipientStatus 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 トランスポート プロバイダー間での配送の責任を割り当てることで、MAPI スプーラーが使用する値が含まれています。
   

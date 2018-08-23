@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 1dd14858-2ce6-4629-a2f1-82d23cd6576b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 03bc1a9f6f614d09cde0b4123176dd2a6d8dec1a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 273796430cb2ed1badd96ddb9c8fae8b251e5802
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803549"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586257"
 ---
 # <a name="pidtagserviceinstallid-canonical-property"></a>PidTagServiceInstallId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロバイダーのコンポーネントの ID です。
   

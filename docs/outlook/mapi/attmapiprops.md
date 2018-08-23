@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 806270c1-30e4-494e-9b03-7d1f2fc04099
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: eef480e8b024565ab282fb242a36336cd17384a1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 72f252791e374ed4b9b2a40c9b151ef2b91fefe6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799706"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588056"
 ---
 # <a name="attmapiprops"></a>attMAPIProps
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **AttMAPIProps**属性は、TNEF で定義されている既存の属性のセットでこれに相当するがない任意の MAPI プロパティをエンコードするために使用できるという点で特殊です。 属性データは、エンド ・ ツー ・ エンドの配置の MAPI プロパティの計算済のセットです。 任意の MAPI プロパティ セットのため、このエンコーディングの形式は次のとおりです。  
   

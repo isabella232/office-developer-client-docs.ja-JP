@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: c7cb8cf9-7abd-4ee3-b88c-d61695f4ed31
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c2e275e373677e50510a0aa87f5060070a870a0f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8d960207e05b33efe55886166ff1322f7f4eedce
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803937"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586201"
 ---
 # <a name="sizeddtbllabel"></a>SizedDtblLabel
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 Label コントロールと関連付けられている指定された長さのラベルを記述するための[DTBLLABEL](dtbllabel.md)構造体を含む名前付き構造体を作成します。 
   

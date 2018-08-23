@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: b20107e3-5e23-4cde-9cd6-670c914ea70a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: aff46cca7a7d530b2eede1790176058e3b91abc8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 45263396e69852a9ae17ff6fce284663bdf2fb07
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804229"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585137"
 ---
 # <a name="wrapstoreentryid"></a>WrapStoreEntryID
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージング システムがメッセージ ストアの内部のエントリの識別子をより使用可能なエントリ id に変換します。 
   

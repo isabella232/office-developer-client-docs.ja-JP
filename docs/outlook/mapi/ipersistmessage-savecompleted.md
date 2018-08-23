@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: 83161011-90b4-49cb-9bcd-153a21a10977
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7a82ce9a46017993adfc6c4c755b6c97b847e579
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7813636abc1c4d6ad756c7cf670e21d4acb7f540
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801125"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592746"
 ---
 # <a name="ipersistmessagesavecompleted"></a>IPersistMessage::SaveCompleted
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォームに通知する、保存操作が完了しました。 
   
@@ -83,19 +83,9 @@ E_UNEXPECTED
 |HandsOff 状態のいずれかでは、フォームと_pMessage_パラメーターは NULL に設定します。  <br/> |E_INVALIDARG を返します。  <br/> |
 |フォーム以外 HandsOff 状態のいずれかの状態または状態にある、NoScribble です。  <br/> |E_UNEXPECTED が返されます。  <br/> |
    
-ストレージ ・ オブジェクトを保存する方法の詳細については、 [IPersistStorage::SaveCompleted](http://msdn.microsoft.com/library/_com_ipersiststorage_savecompleted%28Office.15%29.aspx)または[IPersistFile::SaveCompleted](http://msdn.microsoft.com/library/_com_ipersistfile_savecompleted%28Office.15%29.aspx)のメソッドのドキュメントを参照してください。 
+ストレージ ・ オブジェクトを保存する方法の詳細については、 [IPersistStorage::SaveCompleted](https://docs.microsoft.com/en-us/windows/desktop/api/objidl/nf-objidl-ipersiststorage-savecompleted)または[IPersistFile::SaveCompleted](https://docs.microsoft.com/en-us/windows/desktop/api/objidl/nf-objidl-ipersistfile-savecompleted)のメソッドのドキュメントを参照してください。 
   
 ## <a name="see-also"></a>関連項目
 
-
-
-[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
-
-
-[フォームの状態](form-states.md)
-
-
-[IPersistStorage::SaveCompleted](http://msdn.microsoft.com/library/_com_ipersiststorage_savecompleted%28Office.15%29.aspx)
-  
-[IPersistFile::SaveCompleted](http://msdn.microsoft.com/library/_com_ipersistfile_savecompleted%28Office.15%29.aspx)
-
+- [IPersistMessage : IUnknown](ipersistmessageiunknown.md)
+- [フォームの状態](form-states.md)

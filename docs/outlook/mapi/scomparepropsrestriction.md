@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: 3231a91a-1ef2-4dd8-9f3e-79ca56d2eae9
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6ebc4e9cbc79a71a91f1f2f3eec0d40de979ab18
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7177b2f0f709939b7580fa7abb87490073bb00c4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803832"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588812"
 ---
 # <a name="scomparepropsrestriction"></a>SComparePropsRestriction
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 リレーショナル演算子を使用して 2 つのプロパティをテストする比較プロパティの制限について説明します。 
   

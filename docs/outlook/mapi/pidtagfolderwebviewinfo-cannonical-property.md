@@ -1,5 +1,5 @@
 ---
-title: PidTagFolderWebViewInfo Cannonical のプロパティ
+title: PidTagFolderWebViewInfo 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 96ea23df-aa4f-4b3e-9663-e7db39f668c1
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 62bc0e75d0a405ebe9f68ec9f4af1ca038bda219
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: eec8ea4b4ddee8b6c399bbb4871c286fea4fae3d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802777"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588406"
 ---
-# <a name="pidtagfolderwebviewinfo-cannonical-property"></a>PidTagFolderWebViewInfo Cannonical のプロパティ
+# <a name="pidtagfolderwebviewinfo-cannonical-property"></a>PidTagFolderWebViewInfo 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 Microsoft Outlook でフォルダーのホーム ページの URL が含まれています。 このプロパティには、 **WebViewPersistenceObject**と呼ばれるバイナリ ストリームが含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_FOLDER_WEBVIEWINFO  <br/> |
+|関連するプロパティ:  <br/> |PR_FOLDER_WEBVIEWINFO  <br/> |
 |識別子:  <br/> |0x36DF  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |MAPI フォルダー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 すべての Outlook フォルダーのホーム ページの URL を指定できます。 この情報は、Outlook のフォルダーの [プロパティ] ダイアログ ボックスの [**ホーム ページ**] タブからアクセスできます。 
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 821cc42d-eebb-4327-b2d4-594421a5c22c
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 03f53dbfbe57db76ee8ceefda3f6938301f70da8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 731ebf6f61db8e9f425d48ab63cb7b81035a41c1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799908"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584283"
 ---
 # <a name="developing-a-mapi-address-book-provider"></a>MAPI アドレス帳プロバイダーの開発
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アドレス帳プロバイダーは、メッセージ ストアと、トランスポート プロバイダーは、クライアント アプリケーションと MAPI 受信者の情報を提供します。 受信者の情報は、コンテナーと呼ばれるストレージ ・ コンパートメントに階層的に構成されます。 プロファイル内のすべてのアドレス帳は、1 つを提供またはより上位、またはセッション内の親コンテナーが MAPI アドレス帳にあるすべてのアドレスから宛先の情報を統合的に表示するブック プロバイダー。 クライアントおよびその他のサービス プロバイダーにアクセスするアドレス帳プロバイダーのデータは、MAPI アドレス帳から。
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: d4ece3af-cb54-4727-8072-0c055381ec11
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 8882457ff99f4150f2c9b086b92af32de29d60a7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4f69985f9cdaaba0681b823e6fe448d009ee9dfa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801395"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585711"
 ---
 # <a name="mapi-object-and-interface-overview"></a>MAPI オブジェクトとインターフェイスの概要
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI オブジェクトは、オブジェクト クラスの C++ または C のデータ構造体の 1 つまたは複数の MAPI インターフェイス、または関連する関数のコレクションから継承します。 関連する関数のこれらのコレクションは、C++ 開発者にとって、純粋仮想関数と呼ばれます。 純粋仮想関数では、MAPI には、のみ関数プロトタイプ実装ではなくが用意されています。 クライアント アプリケーション、サービス プロバイダー、または MAPI を提供するこの実装はメッセージング API の関数の説明に準拠しているインターフェイスを継承するオブジェクト クラスを作成して予定です。 MAPI インターフェイスは、継承クラスでのみインスタンス化できます。
   

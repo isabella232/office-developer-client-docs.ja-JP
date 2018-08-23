@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 53d94bdb-b95b-48de-bbad-1263ff53e379
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 28d82bf34b0eb8f3c3066f2b88c9ee1c7fb40102
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c90b0c665d83bf11f5133d4904a129e0f2f709f1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802524"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593061"
 ---
 # <a name="pidtagbusiness2telephonenumber-canonical-property"></a>PidTagBusiness2TelephoneNumber 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ビジネスの受信者の場所での二次的な電話番号が含まれています。 
   

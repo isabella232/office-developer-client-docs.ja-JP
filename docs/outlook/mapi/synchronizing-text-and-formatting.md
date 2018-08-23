@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: d7e166f0-1214-4571-b9a8-366960772a7a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 40d7a45ab97e0d2f8e9d3db1e1d38eb3bdb75158
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d797932a9fd22944f1cfd78e7fb67cd3ddbf8632
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804087"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588819"
 ---
 # <a name="synchronizing-text-and-formatting"></a>テキストと書式設定の同期
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 リッチ テキスト形式 (RTF) メッセージを送信する主な課題には、テキストの書式設定と同期し続けることです。 されることを確認メッセージが送信先に到着すると、発信者の意図とすると、テキストと書式設定の同期はを MAPI に[行う](rtfsync.md)機能が用意されています。 **** 通常と呼ばれる受信したメッセージを表示する前に、rtf 形式に対応していないクライアントと、MAPI スプーラーによってトランスポート プロバイダーにメッセージをダウンロードする際です。 呼び出しを**行う**1 つまたは 2 つのフラグを渡すことによって可能な不一致の領域を指定します。
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ca4eb6c2-98e9-4dbc-9f5a-f0f257456ead
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3515d0f751cb6d8d0d427079691456519bac97dc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d0d5ca3b40f6d46641b805593794827fa99b7fb7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801709"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593383"
 ---
 # <a name="pidlidaddressbookproviderarraytype-canonical-property"></a>PidLidAddressBookProviderArrayType 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 連絡先の電子メール アドレスの状態を指定して、ビット フラグのセットを表します。
   

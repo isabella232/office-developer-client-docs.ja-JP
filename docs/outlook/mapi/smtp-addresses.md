@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 42015740-a94f-4628-bf32-b7fc2fdb9ff6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9bc77e3226066dc88bbaf4f4efc324825add8919
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 655d48d1ea937659f85e0ef7379425759ea7e256
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803970"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591360"
 ---
 # <a name="smtp-addresses"></a>SMTP アドレス
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 SMTP 電子メール アドレスの形式は、RFC 822 で定義されます。 MAPI コンポーネントでは、その標準に準拠している任意のアドレスを処理する必要があります。 ただし、RFC 822 アドレス MAPI アドレスを記述する方式の特定のフォームがあります。
   

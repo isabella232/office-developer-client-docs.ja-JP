@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: c0bbbd06-d47d-45ad-8179-2372d1d023d0
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d12d879ea5a82c5e0e3978d90694b3851aaac5cc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f78c25285c7ac3f8736006e4a45079a7d9a6d867
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801360"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592298"
 ---
 # <a name="mapi-form-manager"></a>MAPI フォーム マネージャー
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォーム マネージャーは、 [IMAPIFormMgr](imapiformmgriunknown.md)インターフェイスを実装するオブジェクトです。 ほとんどの組織では、付属の既定のフォーム マネージャーと呼ばれる、MAPI フォーム マネージャーを使用します。 ただし、組織置き換えることが既定のフォーム マネージャーのユーザー設定フォーム マネージャーが必要な場合。 フォーム ライブラリ内でフォームを検索して、ユーザーの要求への応答としてフォームを読み込み、ユーザーのローカル フォーム ライブラリ、フォルダー フォーム ライブラリまたは個人用フォーム ライブラリにフォームをインストールするのフォーム マネージャーによって行われます。 
   

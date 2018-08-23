@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 3a51ee7e-d030-4f04-915b-ff8bd351207d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b637f4921165d70ddeda914b4299c35aabe8218f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 07c215511f010741e69c08c184df0ca3ce461e13
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800144"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583618"
 ---
 # <a name="gateway-mappable-properties"></a>ゲートウェイ マッピング可能なプロパティ
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ゲートウェイ マッピングが可能なプロパティはメッセージの 1 つのドメインから別に送信されるときに変換することがあります。 MAPI のゲートウェイにマッピング可能なプロパティは、正しくリンク先のメッセージング システムを使用していることを確認するのにはゲートウェイを必要とする情報が含まれるメッセージを有効にします。 ゲートウェイの開発者は、この変換機能を提供する必要はありませんがゲートウェイ マッピングが可能なプロパティはメッセージのコンテンツの処理を改善する機会として考慮しなければなりません。
   

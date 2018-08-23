@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 064b2fc1-e690-43e6-95d3-a61438115de5
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2f78428b8067b7937e9bd2ee36934cc29a16bfb7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 58b6771c6bdae91ad0e496189258e4745de5bc84
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804047"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584290"
 ---
 # <a name="structure-of-message-store-providers"></a>メッセージ ストア プロバイダーの構造
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メモリで実行されているとき、メッセージのストア プロバイダーは、 [IMSProvider: IUnknown](imsprovideriunknown.md)インタ フェースです。 **IMSProvider**インタ フェースにより、クライアント アプリケーションと MAPI スプーラーを無効にして、メッセージ ・ ストアからログオンします。 フォルダーとメッセージ ・ ストア内のメッセージにアクセスするクライアント アプリケーションと MAPI スプーラーを使用しているインタ フェースは、 [IMSLogon](imslogoniunknown.md)と[IMsgStore](imsgstoreimapiprop.md)のインターフェイスです。 これらのインタ フェースは通常、メッセージ ・ ストアが最初にログオンしているときに、作成、メッセージの[MSProviderInit](msproviderinit.md)エントリ ポイントの格納が DLL 可能性がありますも作成します。 
   

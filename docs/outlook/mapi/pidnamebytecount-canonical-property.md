@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a2d0c3e3-ba49-4e2c-bcfd-27cc5ff78c5b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b1e2a76198e0c11a826c1bfec6d5b8af1394899c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6032a1b6e54d9228e88482a1c2b0b194e591b697
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802321"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587755"
 ---
 # <a name="pidnamebytecount-canonical-property"></a>PidNameByteCount 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ドキュメントに関連付けられているファイルのバイト単位のサイズを指定します。
   

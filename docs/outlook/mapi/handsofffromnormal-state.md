@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 1afe6a2e-a5e6-4844-9f82-908894fc6759
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d0b7baf4ab17d12145170961a43ca4be252146a0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 92c604c621e2837b76e9e49fd182524ad17fbcac
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800208"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588343"
 ---
 # <a name="handsofffromnormal-state"></a>HandsOffFromNormal 状態
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 HandsOffFromNormal 状態では、 [HandsOffAfterSave](handsoffaftersave-state.md)の状態に非常に似ています。 恒久的ストレージにフォームの内容を保存するプロセスの一部です。 この状態のときにフォーム オブジェクト避ける必要がある、メモリ内のコピー、メッセージのプロパティの値を変更するため、別の機会をこれらの変更を保存することができません。 次の表では、HandsOffFromNormal の状態から有効な遷移について説明します。 
   

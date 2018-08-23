@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 7a872296-0378-456f-b4d6-cb4d96b09d6e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 975c01457515a400d1d442fedc432dc000f06665
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 42d09fd92edf4dc221b73dac4948e78a7c6898ac
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800651"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589330"
 ---
 # <a name="imapiprogress--iunknown"></a>IMAPIProgress : IUnknown
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 進行状況インジケーターが表示されて、クライアント アプリケーションを提供する進行中のオブジェクトを実装します。 進行状況のインジケーターは、メッセージ ストア間でフォルダーをコピーするなど、操作の完了の割合が表示されるユーザー インターフェイスの表示です。 MAPI およびクライアント アプリケーションが実行中オブジェクトを実装し、サービス ・ プロバイダーを使用しています。 
   

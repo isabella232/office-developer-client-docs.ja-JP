@@ -16,12 +16,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: f66adbf1-5cb5-4dd0-be08-45e1c88c010c
 description: ドキュメント、コード サンプル、how-to 記事、および Office ストアまたはプライベート アプリ カタログ用のアプリケーションの構築を支援し、カスタマイズして、Project Server とクライアント プロジェクトとその他のデスクトップおよびビジネスのさまざまな統合のプログラミング リファレンスを検索します。エンタープライズ プロジェクト管理用のアプリケーションです。
-ms.openlocfilehash: 490b5bd2fcbe2f92653b6ebc84d36e5c28cdc8c6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 23c1229769a08f78b9ad35eab7403876cbe294d4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804680"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590758"
 ---
 # <a name="project-2013-developer-documentation"></a>Project 2013 開発者向けドキュメント
 
@@ -30,7 +30,7 @@ ms.locfileid: "19804680"
 Microsoft Project 2013 ソフトウェア開発キット (SDK) を開始します。 ドキュメント、コード サンプル、how-to 記事、SDK が含まれていて、パブリック ストアまたはプライベート アプリ カタログ用のアプリケーションの構築を支援し、カスタマイズし、統合のプログラミング リファレンス サーバーおよびその他のデスクトップのさまざまなプロジェクト、クライアントのプロジェクトとエンタープライズ プロジェクト管理のビジネス ・ アプリケーションです。
   
 > [!NOTE]
-> Project Server 2013 は、プラットフォーム上に構築、SharePoint Server 2013、および Project 2013 には、他の Office 2013 アプリケーションとインフラストラクチャの大部分が含まれています。 モデルのドキュメントを SharePoint のアドイン、SharePoint ベースのワークフローでは、Web パーツ、その他の SharePoint の機能、および Office アドインのドキュメントを使用した開発では、 [Office および SharePoint 用のアプリケーション](http://msdn.microsoft.com/en-us/library/fp161507%28office.15%29.aspx)を参照してください。 
+> Project Server 2013 は、プラットフォーム上に構築、SharePoint Server 2013、および Project 2013 には、他の Office 2013 アプリケーションとインフラストラクチャの大部分が含まれています。 モデルのドキュメントを SharePoint のアドイン、SharePoint ベースのワークフローでは、Web パーツ、その他の SharePoint の機能、および Office アドインのドキュメントを使用して開発には、 [SharePoint アドイン](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-add-ins) [Office アドイン](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)が参照してください。 
   
 ## <a name="introduction-to-the-project-sdk"></a>Project SDK の概要
 <a name="pj15_Welcome_IntroToSDK"> </a>

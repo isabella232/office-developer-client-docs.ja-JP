@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f5c6ba8f-4ef5-4d60-b4e6-5b9160ec4e99
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 6e917991e109ac04a14ea7d93eebcf9cce835845
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d90f502e2cd7f97ac273ebecedbd0363097b1d60
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800794"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584955"
 ---
 # <a name="imapisupportspooleryield"></a>IMAPISupport::SpoolerYield
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 必要と見なされるすべてのタスクを実行できるように、MAPI スプーラーを CPU の制御を提供します。
   

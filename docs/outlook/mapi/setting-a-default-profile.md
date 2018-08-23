@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 1d1e862d-ba49-48a1-bb51-0af861323b7b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: ea21e735dba8690a392629b92b636b834d7d57d7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2044969cc79990c9f0325fc7934e3426015fdc72
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803880"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591773"
 ---
 # <a name="setting-a-default-profile"></a>既定のプロファイルの設定
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 既定のプロファイルは、明示的に指定しない[MAPILogonEx](mapilogonex.md)、MAPI_USE_DEFAULT フラグを設定する代わりに呼び出しのいずれかの場合に使用されるプロファイルです。
   

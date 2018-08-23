@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2a5fcf5c-8a5a-4774-b8c9-1ac1ff27947d
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 868f38eaf52d3d0a3787623983a4a587de8fdc3b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2ec8a28dc52e2aa1f1fa63410b6bd6c13fb5bd57
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800404"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583989"
 ---
 # <a name="icontabadminremovestore"></a>IContabAdmin::RemoveStore
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 連絡先アドレス帳 (CAB) のアドレス帳の階層から指定されたエントリ ID で指定されたを削除します。
   

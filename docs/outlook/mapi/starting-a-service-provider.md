@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: c4b61cc3-d9fe-4616-a05c-d1e4096b5abd
 description: '�ŏI�X�V��: 2015�N12��7��'
-ms.openlocfilehash: 99f47ee4fe990b0e77fcf868977b72d83bfdbac7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d14a9961002d63733423af474e147ec5001051fb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804005"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586334"
 ---
 # <a name="starting-a-service-provider"></a>サービス プロバイダーの開始
 
  
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ある時点で、クライアントで MAPI セッションを開始した後、サービス ・ プロバイダーが開始されます。 トランスポート プロバイダーは、クライアントがそのサービスの要求を行うときに開始されます。 アドレス帳、メッセージ ストア プロバイダーは、クライアントのログオン処理中に開始されます。
   

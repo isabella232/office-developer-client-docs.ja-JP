@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e52bb48c-7107-4ac4-b030-885409759ee7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b099bf5df657b5516fbf0948e742d1d1b36af2e9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 02ab7f88edda39fcb1c66eaf643a8263e9d509c8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803355"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591731"
 ---
 # <a name="pidtagresponserequested-canonical-property"></a>PidTagResponseRequested 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージの送信者は、会議出席依頼への応答を希望する場合は TRUE が含まれています。
   

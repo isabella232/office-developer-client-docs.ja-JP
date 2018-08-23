@@ -1,5 +1,5 @@
 ---
-title: PidTagAttachLongPathname の標準的なプロパティ
+title: PidTagAttachLongPathname 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 3262cf95-48b5-4764-a96e-d752ce35b2dc
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: a2230f2c2b1d4793c425694f76bb79fb7284c479
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: c0a3a96c3d8835550c4b0fda233183214cb4a786
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802465"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587426"
 ---
-# <a name="pidtagattachlongpathname-canonical-property"></a>PidTagAttachLongPathname の標準的なプロパティ
+# <a name="pidtagattachlongpathname-canonical-property"></a>PidTagAttachLongPathname 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 添付ファイルの長さの完全修飾パスとファイル名が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ATTACH_LONG_PATHNAME、PR_ATTACH_LONG_PATHNAME_A、PR_ATTACH_LONG_PATHNAME_W  <br/> |
+|関連するプロパティ:  <br/> |PR_ATTACH_LONG_PATHNAME、PR_ATTACH_LONG_PATHNAME_A、PR_ATTACH_LONG_PATHNAME_W  <br/> |
 |識別子:  <br/> |0x370D  <br/> |
-|データを入力します。  <br/> |PT_STRING8、PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |領域:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これらのプロパティは、参照、添付ファイルを指定する**PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) プロパティの値のいずれかを使用する場合に適用します**ATTACH_BY_REFERENCE**、 **ATTACH_BY_REF_RESOLVE**、または**ATTACH_BY。_REF_ONLY**。 長いファイル名をサポートするプラットフォームは、 **PR_ATTACH_LONG_PATHNAME**または関連付けられているプロパティと**PR_ATTACH_PATHNAME** ([PidTagAttachPathname](pidtagattachpathname-canonical-property.md)) プロパティの両方を送信すると、 **PR_ATTACH_LONG_PATHNAME をチェックする必要があります。 を設定する必要があります。** を受信する場合はプロパティを最初に関連付けられているか。 
   
@@ -76,7 +76,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

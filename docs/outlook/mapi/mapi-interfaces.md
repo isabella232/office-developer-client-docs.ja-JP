@@ -10,18 +10,18 @@ api_type:
 - COM
 ms.assetid: 34a66cf0-b4e0-4fd5-b937-cd157888961d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e485079de800c63b02d71b3c3ccb90d66101c64b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ca3752e8f7e910994811dec85cc2f1b00e184661
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801392"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584810"
 ---
 # <a name="mapi-interfaces"></a>MAPI インターフェイス
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 各インタ フェースのマニュアルは、次の情報を含むテーブルの後にインタ フェースの目的の簡単な説明を含む紹介の章で構成されます。
   

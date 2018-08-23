@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0a2fb371-90ea-41dc-b2ab-051cf790e85a
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: adf9b28e941e9ead9b83660f58701f13f35cabc7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bb373e4b666f44c432ac1b04c0449eb7f0408a19
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800874"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592935"
 ---
 # <a name="imapiviewadvisesinkonnewmessage"></a>IMAPIViewAdviseSink::OnNewMessage
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 新規または既存のメッセージがフォームで読み込まれているフォーム ビューアーを通知します。
   

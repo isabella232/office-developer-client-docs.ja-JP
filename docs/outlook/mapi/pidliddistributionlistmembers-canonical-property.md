@@ -1,5 +1,5 @@
 ---
-title: PidLidDistributionListMembers の標準的なプロパティ
+title: PidLidDistributionListMembers 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 029767ab-de72-4402-9cc3-31b006591042
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: c27513474048e9805bc29116aa094bc47f8f0cae
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 9bfb94b2929f780a428fb932efb3538f94f5aaea
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801871"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591465"
 ---
-# <a name="pidliddistributionlistmembers-canonical-property"></a>PidLidDistributionListMembers の標準的なプロパティ
+# <a name="pidliddistributionlistmembers-canonical-property"></a>PidLidDistributionListMembers 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 個人用配布リストのメンバーに対応するオブジェクトのエントリ Id の一覧を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidDLMembers  <br/> |
+|関連するプロパティ:  <br/> |dispidDLMembers  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Address  <br/> |
 |長い ID (LID):  <br/> |0x00008055  <br/> |
-|データを入力します。  <br/> |PT_MV_BINARY  <br/> |
-|領域:  <br/> |連絡先  <br/> |
+|データの種類 :   <br/> |PT_MV_BINARY  <br/> |
+|領域:  <br/> |Contact  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 個人用配布リストのメンバーには、他の個人用配布リスト、連絡先、グローバル アドレス一覧のユーザーまたは配布リスト、または 1 回限りの電子メール アドレスに含まれている電子メールのアドレスを指定できます。 各エントリ Id の形式は、 [MS-OXCDATA](http://msdn.microsoft.com/library/1afa0cd9-b1a0-4520-b623-bf15030af5d8%28Office.15%29.aspx)で指定されている、1 回限りのエントリ Id またはラップのエントリ Id のいずれかにする必要があります。 
   
@@ -71,7 +71,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

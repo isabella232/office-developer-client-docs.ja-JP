@@ -1,23 +1,23 @@
 ---
-title: PST ストア プロバイダーをラップして、サンプルをインストールします。
+title: ラップされた PST ストア プロバイダーのサンプルのインストール
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 90ce0ea3-ba73-cb57-0fa9-8898bc4ac9de
 description: '�ŏI�X�V��: 2012�N7��5��'
-ms.openlocfilehash: 29aabc7a2e8513bf24bd3b56ff3e4a126e3d7437
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5b16da68a5cc5ab9e005a262bf1518ea90aac570
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801073"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587538"
 ---
-# <a name="installing-the-sample-wrapped-pst-store-provider"></a>PST ストア プロバイダーをラップして、サンプルをインストールします。
+# <a name="installing-the-sample-wrapped-pst-store-provider"></a>ラップされた PST ストア プロバイダーのサンプルのインストール
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このトピックでは、ダウンロードしてサンプル ラップ PST ストア プロバイダーをインストールする手順について説明します。 サンプル ラップ PST ストア プロバイダー、WrapPST は、レプリケーション API と連携して使用するものでは、ラップされた PST ストア プロバイダーを実装します。 レプリケーション API の詳細については、 [「レプリケーション API 詳細](about-the-replication-api.md)を参照してください。
   
@@ -29,7 +29,7 @@ ms.locfileid: "19801073"
     
 3. [**参照**] をクリックして、サンプルを保存する場所を選択し、[ **OK**] をクリックします。
     
-4. [**抽出**] をクリックします。 選択したフォルダーが表示され、展開されたファイルが含まれています。
+4. [**展開**] をクリックします。 選択したフォルダーが表示され、展開されたファイルが含まれています。
     
 5. 管理者として Visual Studio 2005 を開きます。
     
@@ -52,13 +52,13 @@ ms.locfileid: "19801073"
 
 
 
-[サンプルの PST ストア プロバイダーをラップ](about-the-sample-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーのサンプルについて](about-the-sample-wrapped-pst-store-provider.md)
   
-[ラップされた PST ストア プロバイダーを初期化しています。](initializing-a-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)
   
 [ラップされた PST ストア プロバイダーへのログオン](logging-on-to-a-wrapped-pst-store-provider.md)
   
-[ラップされた PST ストア プロバイダーを使用します。](using-a-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーの使用](using-a-wrapped-pst-store-provider.md)
   
-[ラップされた PST ストア プロバイダーをシャット ダウン](shutting-down-a-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーのシャットダウン](shutting-down-a-wrapped-pst-store-provider.md)
 

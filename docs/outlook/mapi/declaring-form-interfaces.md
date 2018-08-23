@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 79283301-e544-4a4d-96c2-3f81dc5b3731
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 8f4d8842efbba2f1f2b7281e5d4741b89f975b3f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4687b07c89d866acbe3b6a8f4cde3262657a06b5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799880"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584248"
 ---
 # <a name="declaring-form-interfaces"></a>フォーム インターフェイスの宣言
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI フォームのインターフェイスの実装の宣言は、マクロを使用して、MAPI_ _interface__METHOD、Mapiform.h ヘッダー ファイルで定義されているフォームのインタ フェースの_インタ フェース_が簡略化できます。 これらのマクロを使用する必要はありませんが、宣言は、Mapiform.h ヘッダー ファイル内の宣言に準拠している特定の注意を行う必要がない場合は。 たとえば、次のように、フォームのサーバーのフォーム オブジェクトのクラスを宣言できます。 
   

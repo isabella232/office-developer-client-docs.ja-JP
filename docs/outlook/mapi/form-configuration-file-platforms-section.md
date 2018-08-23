@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 3b9b3dc0-4f82-468b-8e77-0374c5b196f4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ddc6db2303d9d5f114fdb27b6e15e699a04e73f4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d86edfb6fcc72c5968a8ff5d9cd739e20e5dec43
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800099"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589897"
 ---
 # <a name="form-configuration-file-platforms-section"></a>フォーム構成ファイル [Platforms] セクション
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **[プラットフォーム]** セクションには、このフォームでサポートされているプラットフォームの完全なセットが一覧表示されます。 プラットフォームの各エントリは、接頭辞**プラットフォームです**。 _文字列_、_文字列_は、プラットフォームには任意の文字列のコードをです。 各文字列は、個別の **[プラットフォーム]** セクションの**CPU**エントリに対応します。 **[プラットフォーム]** セクション内の各エントリは、それ以降を参照するための_プラットフォームの文字列_を定義 **[プラットフォームです**。 _プラットフォームの文字列_**]** のセクションで次のようにします。 
   

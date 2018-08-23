@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 9573f10c-66e1-4e87-93f0-89687e906b8b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 51241009262471bf30f7d71e3108b896bbce8df7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b4ccfb8cf8201a17993932acc4c0104ace80b94d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803683"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588721"
 ---
 # <a name="preparing-a-recipient"></a>受信者の準備
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアント アプリケーションでは、長期のエントリ id を短期的なエントリの識別子を変換して可能性のある追加、変更、またはプロパティの順序を変更して受信者を準備します。 メッセージの受信者のリストの一部である受信者またはメッセージに関連ではない受信者を準備できます。 通常、クライアントは、共通のアドレス] ダイアログ ボックスに含まれる受信者のエントリ id を長期的な短期的なエントリの識別子に変換するには、直接[IAddrBook::PrepareRecips](iaddrbook-preparerecips.md)を呼び出します。 送信メッセージに関連付けられている受信者、受信者の準備が名前解決処理によって処理されます。 
   

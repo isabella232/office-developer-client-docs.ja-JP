@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: b465d015-9b62-4986-b0df-118121f60602
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a8f17c3cf3d3d00930f87acd004b24f683a3fc8c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 371d0305f8f00e66704bae03f93857c7275b6a10
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800071"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589820"
 ---
 # <a name="flatentrylist"></a>FLATENTRYLIST
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [FLATENTRY](flatentry.md)構造体の配列が含まれています。 
   

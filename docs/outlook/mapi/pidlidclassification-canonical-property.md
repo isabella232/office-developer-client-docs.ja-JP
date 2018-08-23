@@ -1,5 +1,5 @@
 ---
-title: PidLidClassification の標準的なプロパティ
+title: PidLidClassification 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,28 +11,28 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4b0f1830-a7d3-430a-9a2c-dad3431af744
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 86d29c0d8630fe674a6ca6116a51ed1465a89e0f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 793034cfaa97d24eb293fe403ac002650d888956
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801854"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589995"
 ---
-# <a name="pidlidclassification-canonical-property"></a>PidLidClassification の標準的なプロパティ
+# <a name="pidlidclassification-canonical-property"></a>PidLidClassification 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ分類の名前を示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidClassification  <br/> |
+|関連するプロパティ:  <br/> |dispidClassification  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x000085B6  <br/> |
-|データを入力します。  <br/> |PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_UNICODE  <br/> |
 |領域:  <br/> |メッセージ全般  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -61,7 +61,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 325b6b47-b6a6-503e-e9bb-65ef7b73d659
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7595fac4346a537eed86550432f56a761c27c0ec
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 91a56acf4afc7453496fa89becd905184101c910
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800190"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591395"
 ---
 # <a name="getdefcachedmode"></a>GetDefCachedMode
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プライベートの Exchange ストアの Exchange キャッシュ モードが有効になっているかどうか、ポリシーによって適用されるには、これかどうかを示します。
   

@@ -1,5 +1,5 @@
 ---
-title: PidTagExtendedRuleMessageActions の標準的なプロパティ
+title: PidTagExtendedRuleMessageActions 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 1cf277d4-76ec-4902-9e54-f1780cee49bf
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 5425496a5b7845daabf736978e6ed24518451fe0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 9b6af0c7fae85a2ea6cbd53159674fdcd32c642c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802755"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592770"
 ---
-# <a name="pidtagextendedrulemessageactions-canonical-property"></a>PidTagExtendedRuleMessageActions の標準的なプロパティ
+# <a name="pidtagextendedrulemessageactions-canonical-property"></a>PidTagExtendedRuleMessageActions 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォルダー関連情報 (FAI) メッセージで使用される名前付きプロパティに関する追加情報が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_EXTENDED_RULE_MSG_ACTIONS  <br/> |
+|関連するプロパティ:  <br/> |PR_EXTENDED_RULE_MSG_ACTIONS  <br/> |
 |識別子:  <br/> |0x0E99  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |ルール  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
+|領域:  <br/> |Rules  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、FAI メッセージを設定する必要があります。 このプロパティは、 **PR_RULE_ACTIONS** ([PidTagRuleActions](pidtagruleactions-canonical-property.md)) と同じ役目を果たしますが、アクションについての情報と同様に、ルールとルールの処理に保存されている名前付きプロパティのバージョンに関する追加情報が含まれていますこのルールによって実行されます。 アクションを格納するために使用するアクション バッファーの一部に含まれるすべての文字列値は、Unicode 形式である必要があります。
   
@@ -70,7 +70,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

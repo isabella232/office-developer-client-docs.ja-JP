@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 133d47cf-3592-44f3-8cdd-be402d160ee4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 750d8b8d50acb9cf7340e6553062412667398665
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 635525a1c2c3234d724534d225eb07022afc9956
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803693"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592123"
 ---
 # <a name="propcopymore"></a>PropCopyMore
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 1 つのプロパティの値を元の場所から先の場所にコピーします。 
   

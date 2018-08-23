@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 5763fc78-5192-4162-be27-4aadc7ed65bc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9635c06ffa5638e370312e3b2b29e0c98161a766
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ade74b13811445c39c73f778b6de49b67b59093b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802897"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587559"
 ---
 # <a name="pidtagipmsubtreeentryid-canonical-property"></a>PidTagIpmSubtreeEntryId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストアのフォルダー ツリーで、個人間メッセージ (IPM) フォルダーのサブツリーのルートのエントリ id が含まれています。 
   

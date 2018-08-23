@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 2eb493d7-bbd1-45b2-bd82-2bc452b2deab
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 83ebb739302ca0e12604b9eaf854f273554826ad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4b8aa7f05c20eb3b100e9e04424dc752f064a61b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804101"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590296"
 ---
 # <a name="tightly-coupled-message-store-providers"></a>密結合メッセージ ストア プロバイダー
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストア プロバイダーは、トランスポート プロバイダーと密接に関連することができます。 ストア プロバイダーが、トランスポート プロバイダーは、プロセスをより効率的にメッセージを送受信するために通信できるように、2 つのプロバイダーを実装する MAPI サービス プロバイダーの手段が緊密に結び付けられます。 この方法の利点は、MAPI スプーラーを使用してではなく、相互に直接対話できる 2 つのサービス プロバイダーとパフォーマンスの向上が発生することです。 トランスポート プロバイダーにメッセージ ストア プロバイダーが密に結合するには、トランスポート プロバイダーでは、トランスポート プロバイダーの**PR_OWN_STORE_ENTRYID** ([PidTagOwnStoreEntryId](pidtagownstoreentryid-canonical-property.md)) のプロパティで、メッセージ ストア プロバイダーのエントリの識別子を置く必要があります。MAPI 状態テーブル内の行です。 これにより、MAPI スプーラーを無効にして、トランスポート プロバイダーは、ストア プロバイダーに接続できます。
   

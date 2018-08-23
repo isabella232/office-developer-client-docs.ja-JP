@@ -1,5 +1,5 @@
 ---
-title: PidTagFormDesignerName の標準的なプロパティ
+title: PidTagFormDesignerName 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: ec2b0c67-18ff-4c3a-ae33-ce5b643b615f
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: d106b16ac8a20d13a2360eae14272405e1aa717e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: d80687df06633b0fd88b0d2c97f06e77c4d5a245
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802782"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587727"
 ---
-# <a name="pidtagformdesignername-canonical-property"></a>PidTagFormDesignerName の標準的なプロパティ
+# <a name="pidtagformdesignername-canonical-property"></a>PidTagFormDesignerName 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォームをデザインするために使用されるオブジェクトの表示名が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_FORM_DESIGNER_NAME、PR_FORM_DESIGNER_NAME_A、PR_FORM_DESIGNER_NAME_W  <br/> |
+|関連するプロパティ:  <br/> |PR_FORM_DESIGNER_NAME、PR_FORM_DESIGNER_NAME_A、PR_FORM_DESIGNER_NAME_W  <br/> |
 |識別子:  <br/> |0x3308  <br/> |
-|データを入力します。  <br/> |PT_STRING8、PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |領域:  <br/> |一般的な MAPI  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 これらのプロパティには、フォーム デザイナーのオブジェクトの一意の識別子が含まれています。 
   
@@ -58,7 +58,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 853ddee5-24d6-423d-b483-6a07a12de51f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f00418efa068ea81fab94605cbdfd139e24bb4a0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 63ddf6fd8f61834c7a7faa910f70bfd98715a703
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801149"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591325"
 ---
 # <a name="iprovideradmingetlasterror"></a>IProviderAdmin::GetLastError
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロバイダーの管理オブジェクトに発生した前のエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。 
   

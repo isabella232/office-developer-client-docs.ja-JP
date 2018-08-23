@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 8b947660-eafe-47e1-9595-bd3ab7d455bf
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 01a65306e5e0d34ed6f1ce7231227224868ff5cb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: eb04983015e8557541e69981ec130ebf07598655
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803585"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588371"
 ---
 # <a name="pidtagstatus-canonical-property"></a>PidTagStatus 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォルダーの状態を定義するフラグのビットマスクで、32 ビットが含まれています。
   

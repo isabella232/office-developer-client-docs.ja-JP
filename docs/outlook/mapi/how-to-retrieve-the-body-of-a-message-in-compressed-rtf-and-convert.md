@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 9408da71-4abf-60cf-5412-58c5ceeb2205
 description: '�ŏI�X�V��: 2012�N6��25��'
-ms.openlocfilehash: c07eebf11b4e61d91f492206498558154e6ddef3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a21c8655b5d5d1b33b26228ed8cca8ef4f1f6f3a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800259"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583919"
 ---
 # <a name="retrieve-body-of-message-in-compressed-rtf-and-convert-to-its-native-format"></a>圧縮された rtf 形式でメッセージの本文を取得し、ネイティブ形式に変換
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 Microsoft C では、このコード例は、関数を使用して、エクスポートされた Microsoft Outlook 2010 または Microsoft Outlook 2013 [WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md)の本文を取得して、圧縮された rtf 形式でカプセル化されたメッセージの本文にアクセスする方法を示します、ネイティブ形式です。 
   

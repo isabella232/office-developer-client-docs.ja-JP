@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a2cdda90-5457-49a7-b98c-7273ffe5cbbc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c8f05707d63f922c9ce22e6e520c6c57e686f884
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6b64653aa87ff7ac983409978a69f59148251d7d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800705"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583415"
 ---
 # <a name="imapisessionqueryidentity"></a>IMAPISession::QueryIdentity
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 セッションのプライマリ id を提供するオブジェクトのエントリ id を返します。
   

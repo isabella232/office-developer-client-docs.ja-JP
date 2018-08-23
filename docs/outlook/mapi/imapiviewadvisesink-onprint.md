@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d16219a0-268c-428d-9f02-4f06eb5b6d7d
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: bf3eee43a70fbc4abf32b60379fc7b191bd9d513
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 202d461d4acefe18e69b47db9319cb328c61406e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800858"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592319"
 ---
 # <a name="imapiviewadvisesinkonprint"></a>IMAPIViewAdviseSink::OnPrint
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォーム ビューアーのフォームの印刷の状態を通知します。
   

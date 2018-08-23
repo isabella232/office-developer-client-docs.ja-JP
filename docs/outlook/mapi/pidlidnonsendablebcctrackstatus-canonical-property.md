@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: daad8735-a3da-4a0b-9329-6eb253c281fd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: da2bd4e87c7076872ccff708983cfbe631b27122
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: de3c56e3ed532d8f4c3cff272049384e9c6a3867
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802048"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586089"
 ---
 # <a name="pidlidnonsendablebcctrackstatus-canonical-property"></a>PidLidNonSendableBccTrackStatus 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **DispidNonSendableBCC** ([PidLidNonSendableBcc](pidlidnonsendablebcc-canonical-property.md)) のプロパティに記載されている各出席者の値が含まれています。
   

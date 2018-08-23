@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 12c07302-472f-4e4f-8087-1bdf0dc09a5a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 744d9a7588bff89e9d306e516a24da2db3038d4d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3df5e012867623d1c5e8fb5c3c93103548ab97be
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800344"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588385"
 ---
 # <a name="hrthisthreadadvisesink"></a>HrThisThreadAdviseSink
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 スレッドの安全のための既存のアドバイズ シンクをラップするアドバイズ シンクを作成します。 
   

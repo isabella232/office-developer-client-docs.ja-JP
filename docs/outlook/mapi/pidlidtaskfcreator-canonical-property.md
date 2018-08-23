@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: bb88750b-4773-4241-aa38-462a2634dbcb
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 458a20e238d6023520ede3416ece239f2d553891
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9cbd237e80f4862683c1fa914f8261f8351b148e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802211"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589022"
 ---
 # <a name="pidlidtaskfcreator-canonical-property"></a>PidLidTaskFCreator 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 仕事の依頼を処理することによって、現在のユーザーまたはユーザー ・ エージェントの代わりに、タスクの作成元を示します。
   

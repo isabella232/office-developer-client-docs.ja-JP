@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 1009f0ea-6f35-484d-b04d-5b6e844c14dd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1cfb8f7070a8001e94fa70e90c52635c9b8be122
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 07653bea747e6e697cb1edb5669ae106c9e213fe
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802122"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591479"
 ---
 # <a name="pidlidreminderfileparameter-canonical-property"></a>PidLidReminderFileParameter 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアントがそのオブジェクトのアラームが期限切れになったときに再生されるサウンドのファイル名を指定します。
   

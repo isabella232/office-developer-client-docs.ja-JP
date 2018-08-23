@@ -1,5 +1,5 @@
 ---
-title: PidLidOtherAddress の標準的なプロパティ
+title: PidLidOtherAddress 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2b8acb69-4c84-4075-8457-d7aadce26c73
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: b8b490242d6c0260fb4ba4335846da06a0e73d4c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: eaf6c8706b6f51a297fda3015b9ce9c5277760bc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802081"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585963"
 ---
-# <a name="pidlidotheraddress-canonical-property"></a>PidLidOtherAddress の標準的なプロパティ
+# <a name="pidlidotheraddress-canonical-property"></a>PidLidOtherAddress 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 連絡先の完全なアドレスの他のアドレスを指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidOtherAddress  <br/> |
+|関連するプロパティ:  <br/> |dispidOtherAddress  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Address  <br/> |
 |長い ID (LID):  <br/> |0x0000801C  <br/> |
-|データを入力します。  <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |連絡先  <br/> |
+|データの種類 :   <br/> |PT_UNICODE  <br/> |
+|領域:  <br/> |Contact  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、他の物理アドレスのプロパティの組み合わせをする必要があり、クライアントのロケールに基づきます。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

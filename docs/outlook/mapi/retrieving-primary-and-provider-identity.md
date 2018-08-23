@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: d81bb81d-1708-4a8d-a4d5-c3ba087db9b7
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2a87e32fe21aa6fb1d9296c568a74da994c146bb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: da11cf684c4bdcfb94d33791ed7c61d2e322e1a7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803766"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586586"
 ---
 # <a name="retrieving-primary-and-provider-identity"></a>プライマリとプロバイダー ID の取得
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 通常のアドレス帳プロバイダー、サービス ・ プロバイダーには、さまざまな状況でセッションを表すために使用できる id を指定するオプションがあります。 3 つのプロパティでは、プロバイダーの識別情報について説明します。
   

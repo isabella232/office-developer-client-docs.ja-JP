@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 270f86dd-2c1f-47eb-80f7-9d0d63936d61
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: fa23377a8b080ae9dac3e31dfa137ca03a242c74
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6de805da2aadd8ac40ca984c5f336d5ca7906248
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799878"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590128"
 ---
 # <a name="creating-a-recipient-list"></a>受信者リストの作成
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 受信者一覧は、各メッセージの受信者のプロパティの値の構造体の配列を含む[ADRLIST](adrlist.md)構造体など、メッセージの送信先。 受信者には、人間のユーザー、コンピューター、またはフォルダーを表すことができます。 すべてのメッセージを送信するには、名前解決プロセスを使用された 1 つ以上の受信者が必要とする、受信者のプロパティの値の配列で、 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) のプロパティが含まれていることを確認するプロセスです。 
   

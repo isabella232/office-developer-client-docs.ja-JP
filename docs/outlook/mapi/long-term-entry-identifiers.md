@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: a514275e-40c2-48db-8072-1dfc392a7ac6
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 589420db48edb348a22f34ce72b948f4d8207ae9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e624ab4f39ef5a5385119779b0780ee7173a3ee7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801289"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586922"
 ---
 # <a name="long-term-entry-identifiers"></a>長期エントリ ID
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 長期のエントリ id は、オブジェクトには、長寿命を持つ識別子が必要な場合、オブジェクトへのサービス プロバイダーによって割り当てられます。 長期のエントリ id は、常に有効期間は数週間または数か月と、プロバイダーによって、他のワークステーションで有効にすることができます。 カスタム受信者のアドレス帳のプロバイダーによって作成された長期的な識別子は、汎用的に有効です。 
   

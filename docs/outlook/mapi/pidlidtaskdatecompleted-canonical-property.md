@@ -1,5 +1,5 @@
 ---
-title: PidLidTaskDateCompleted の標準的なプロパティ
+title: PidLidTaskDateCompleted 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: ae384529-55e2-4da1-9a41-acc292591a7c
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 9737b5f940f95c88c2d3c5c6e98fc885daf64219
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 97d541279f052099498cdf7bfd374a95238a376d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802175"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584220"
 ---
-# <a name="pidlidtaskdatecompleted-canonical-property"></a>PidLidTaskDateCompleted の標準的なプロパティ
+# <a name="pidlidtaskdatecompleted-canonical-property"></a>PidLidTaskDateCompleted 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ユーザーがタスクを完了する日付を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidTaskDateCompleted  <br/> |
+|関連するプロパティ:  <br/> |dispidTaskDateCompleted  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Task  <br/> |
 |長い ID (LID):  <br/> |0x0000810F  <br/> |
-|データを入力します。  <br/> |PT_SYSTIME  <br/> |
+|データの種類 :   <br/> |PT_SYSTIME  <br/> |
 |領域:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 かどうかこのオプションを設定すると、このプロパティには午前 0 時という時刻成分、ローカル タイム ゾーンで、世界協定時刻 (UTC) への変換します。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

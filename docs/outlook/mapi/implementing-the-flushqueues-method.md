@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 8719f8aa-a537-4253-b67d-c4d38c40472b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: baafd8b6437f4febaee9420b274c20ba3242cae6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 01296995adbca2640c8da42b4d06c1c749be3266
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800963"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582414"
 ---
 # <a name="implementing-the-flushqueues-method"></a>FlushQueues メソッドの実装
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI スプーラーでは、 [IXPLogon::FlushQueues](ixplogon-flushqueues.md)メソッドを使用して、ダウンロードして、トランスポート プロバイダーとの間に、保留中のメッセージをアップロードします。 通常、MAPI スプーラーはすべてトランスポート プロバイダーは、セッションにログオンするユーザーのプロファイルのトランスポートの順序] セクションで設定されている最初のトランスポート プロバイダーを開始のキューをフラッシュします。 キューのフラッシュは、ほとんどの場合、ユーザーが直接要求の結果ですので送信側と受信メッセージ キューがフラッシュされるときに、MAPI スプーラーを同期。 これらの呼び出しは同期であるため、トランスポート プロバイダーは、処理して、できるだけ早くします。 
   

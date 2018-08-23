@@ -8,16 +8,16 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 59f43316-3ff6-4ed0-bc29-b31039192b08
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3a852ff8b4e3ff0df59c4c84f53802fa29d63a80
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 11999ef954ba3a35fa380f9ad2cf9f1fdffdea38
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803545"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587552"
 ---
 # <a name="pidtagspamtrustedrecipients-canonical-property"></a>PidTagSpamTrustedRecipients 標準プロパティ
  
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 電子メール アドレスとドメインが信頼されている受信者を表す、セミコロン区切りのリストが含まれています。
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 76e4cc52-e1a0-4e0b-a2a6-a17644f6b2e7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 97dad50fed4179526e46381c4d9ea9d12d568377
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ee004bdfb8d13537fd8823225f155223ebc76ca7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803846"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583352"
 ---
 # <a name="sccountprops"></a>ScCountProps
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロパティ値の配列のバイト単位のサイズを決定し、配列に関連付けられているメモリを確認します。 
   

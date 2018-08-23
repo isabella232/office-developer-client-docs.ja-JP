@@ -10,18 +10,18 @@ api_type:
 - COM
 ms.assetid: 429811c4-73fe-4a05-9c42-e5ac8e974f29
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c2763e49f530371101b59f4067ab6110503df2c6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1ad6d6047a021683d658a8ad9ab28ff2d1ec31f7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803349"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589155"
 ---
 # <a name="pidtagreportoriginalsender-canonical-property"></a>PidTagReportOriginalSender 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 領収書を要求するメッセージのメッセージの元の送信者を指定します。
   

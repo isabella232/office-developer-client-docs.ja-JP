@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e04c2228-aa0a-4958-b5b2-6467e93ab613
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d0ddff638e26940ea74932a8a491455f67cc8dd8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bbf8e2eb2961a3d149010b876d2b4cb3d0c8abc1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801489"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592529"
 ---
 # <a name="mapierror"></a>MAPIERROR
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 オペレーティング システム、MAPI、またはサービス プロバイダーによって生成される通常のエラーに関する詳細な情報を提供します。 
   

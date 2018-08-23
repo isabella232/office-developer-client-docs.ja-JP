@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 7ffec274-ee90-44c7-ab2e-7dfb502517a6
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7071c05f6f59740163f97f840c7fa48d83bea815
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4610d9e643541e39144f2af86a2d64928b8e9ca7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799952"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591290"
 ---
 # <a name="displaying-recipient-information"></a>受信者情報を表示します。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI には、受信者の詳細を表示するためのコモン ダイアログ ボックスが用意されています。 **IMAPIProp**実装とディスプレイ テーブルから、[詳細情報] ダイアログ ボックスが作成されます。 表示された表の詳細の表示の外観を記述して、 **IMAPIProp**の実装は、受信者のデータを制御します。 プロバイダーは、表示された表と各受信者の**IMAPIProp**の実装を提供する必要があります。 
   

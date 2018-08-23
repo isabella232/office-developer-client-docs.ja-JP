@@ -1,5 +1,5 @@
 ---
-title: PidLidCurrentVersionName の標準的なプロパティ
+title: PidLidCurrentVersionName 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,28 +11,28 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1904cc68-adf2-4543-8210-043a72b90887
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 60a9058b5e604c480597c4bb245353522e41d1e1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: ca8fd1dc8dde69cd9f2e8932cc0c50ea03c86a24
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801862"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587251"
 ---
-# <a name="pidlidcurrentversionname-canonical-property"></a>PidLidCurrentVersionName の標準的なプロパティ
+# <a name="pidlidcurrentversionname-canonical-property"></a>PidLidCurrentVersionName 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アイテムを Outlook アプリケーションのメジャー バージョンとマイナー バージョン番号を示す文字列が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidCurrentVersionName  <br/> |
+|関連するプロパティ:  <br/> |dispidCurrentVersionName  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x00008554  <br/> |
-|データを入力します。  <br/> |未定  <br/> |
+|データの種類 :   <br/> |未定  <br/> |
 |領域:  <br/> |メッセージ全般  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -69,7 +69,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

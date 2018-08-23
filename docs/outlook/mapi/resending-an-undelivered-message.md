@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 71768db3-a107-47c6-8e6b-775e8d40ac36
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 4fd0bf5a542e006ec743dbb7fe03d3331875c6d2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cdb1ef3cf6db2a1b63b68a105867aa6624b80c2c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803754"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588896"
 ---
 # <a name="resending-an-undelivered-message"></a>メッセージの配信を再送信
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 トランスポート プロバイダーは、送信したメッセージを正常に配信できない場合に、配信不能レポート (NDR) を送信します。 クライアントはユーザーがこれらの配信不能メッセージの再送を試みることができるかどうか。 サポートする場合、メッセージを再送信 MAPI によって提供されるフォームを使用してか、独自に実装します。 MAPI フォームが可能であれば、失敗した受信者と配信の失敗の理由の名前を表示し、ボタンが含まれていますが、選択すると、メッセージを再送信するユーザーに許可します。
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 8488f7ec-e44b-4d1a-ba42-baea8c71d350
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5ccb5a2881d3cef3ff21a106e7e9ea33e0aedd9e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6713055837e3b9b664d5fa1465c9a889919ee5ed
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801292"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590093"
 ---
 # <a name="maintaining-a-form-library"></a>フォーム ライブラリの管理
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォーム ライブラリを保持するすべてのフォームに関する重要な情報: プロパティ、動詞、およびそのサーバーの実行可能ファイルです。 何人かのように、管理、インストール、またはフォームのサーバーを削除します。 この機能をユーザーに提供する場合へのアクセスが必要です。
   

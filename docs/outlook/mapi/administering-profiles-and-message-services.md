@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 89a2ac43-9601-47fc-b736-db48585fe879
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 71e8cf50c1951abf1df6163cae4757ffebc979b2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 124f4875834e035e29d4c63e52789bf07f18258d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799647"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587545"
 ---
 # <a name="administering-profiles-and-message-services"></a>プロファイルとメッセージ サービスの管理
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロファイルとメッセージのサービスの管理は、新しいプロファイルを作成する、古いプロファイルを削除して、メッセージ サービス、およびそれらに含まれているサービス ・ プロバイダーを変更することで既存のプロファイルの内容を変更することを含めることができます。 すべてのクライアントは、標準的な機能としてのプロファイルとメッセージ サービスの管理をサポートします。 一部のクライアントがある以外のユーザーは、ログオン時にいずれかの選択を許可するよりも、プロファイルを使用して操作を行います。
   

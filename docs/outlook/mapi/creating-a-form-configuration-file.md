@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: aaf3b33d-ad2d-4ef8-847f-1ab1eaf08706
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 9ceb7ad347e73f69eca3463ed2edc4438a45a21f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d8159d93aef020d7c9c1b56be4cf6256f80b8aa3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799860"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584170"
 ---
 # <a name="creating-a-form-configuration-file"></a>フォーム構成ファイルの作成
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォーム構成ファイルは、フォーム マネージャーを使用しているとクライアント アプリケーションの両方のフォームに関する情報を提供します。 フォーム構成ファイルには、メッセージング クライアント、フォームによって実装された動詞およびフォームでサポートされているプラットフォームで使用するフォームによって公開されたプロパティを含むフォームの場合、広範な仕様が含まれています。
   

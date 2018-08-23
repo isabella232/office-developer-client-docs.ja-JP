@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 810f54bf-5b78-46b8-a617-4f61ff816400
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 4c5b6cbdda63dcb79b23253e0db695ae658c4fa4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0b4cc2fe82db60a2302f33a194314e0df1458a89
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800243"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586915"
 ---
 # <a name="install-the-samples-used-in-this-section"></a>このセクションで使用されるサンプルをインストールします。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MFCMAPI アプリケーションと CreateOutlookItemsAddin のプロジェクトを表示しを[MAPI を使用して Outlook アイテムを作成する](creating-outlook-items-by-using-mapi.md)セクションのトピックによって参照されているサンプル コードを実行するをインストールするには、以下の手順を実行します。 
 

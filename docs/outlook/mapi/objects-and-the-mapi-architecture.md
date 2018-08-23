@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: c3bcbda5-820d-4ef5-bffd-c254eea9dff6
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0e89c2ad37b700a977962e5e0ff0ca30b9d910e2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 29a61ff8f7894c5582d31895bacd74e1ebcaa49c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801688"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583877"
 ---
 # <a name="objects-and-the-mapi-architecture"></a>オブジェクト、および MAPI アーキテクチャ
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 すべての MAPI を定義するオブジェクトは、MAPI アーキテクチャでは、1 つまたは複数のレイヤーに分けられます。 クライアント ・ インタ フェース ・ レイヤーには、クライアント アプリケーション、フォームのビューアー、またはフォームのサーバーを実装するすべてのオブジェクトが含まれています。 サービス プロバイダー インターフェイス層には、任意の型のサービス ・ プロバイダーを実装するオブジェクトが含まれています。 このレイヤーには、アドレス帳、メッセージ ・ ストア、トランスポート プロバイダー、およびフォーム ライブラリで実装されているオブジェクトが含まれています。 MAPI のサブシステムを表すレイヤーは、クライアントとサービス プロバイダーのインターフェイス層の間に配置されます。 MAPI のレイヤーには、すべての MAPI を使用するには、クライアントまたはサービス プロバイダーの実装するオブジェクトが含まれています。 
   

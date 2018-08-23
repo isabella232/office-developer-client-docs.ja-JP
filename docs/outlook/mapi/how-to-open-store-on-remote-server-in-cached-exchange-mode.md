@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: cf01eab7-164d-c3b3-8bb0-9281e2119bc5
 description: '�ŏI�X�V��: 2012�N6��25��'
-ms.openlocfilehash: 25f896038e25823f1fe49d3cafbd5835a0a43f68
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7c1b3d3d5eed6bc991f8e4fd702fa197d610c104
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800255"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584801"
 ---
 # <a name="open-a-store-on-the-remote-server-when-outlook-is-in-cached-exchange-mode"></a>Outlook が Exchange キャッシュ モードではときに、リモート サーバー上のストアを開く
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このトピックには、 **MDB_ONLINE**フラグを使用して Exchange キャッシュ モードでは、Microsoft Outlook 2010 または Microsoft Outlook 2013 には、リモート サーバー上のメッセージ ストアを開く方法を示している C++ でのコード サンプルが含まれています。 
   

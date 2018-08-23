@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 29b7f5f1-afc1-45d9-8867-9312c072e74b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 150f2a55bff4188c1f692de8276ed869bcf66c3c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 88c3e0bdb3cc6660e35faf62c5bb63ec2f6352bc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800166"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590373"
 ---
 # <a name="getting-and-setting-multiple-properties"></a>取得および複数のプロパティを設定します。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 取得するを最小限にできる限り多くのプロパティを設定して、活動を削減したりし、各プロパティに含まれるオーバーヘッドを削減、リモート呼び出しの数です。 サービス ・ プロバイダーがプロパティを取得または変更のためのリモート プロシージャ コールを行う前に収集しようとすると、複数のプロパティを最初に要求することによってこの作業を最適化できます。
   

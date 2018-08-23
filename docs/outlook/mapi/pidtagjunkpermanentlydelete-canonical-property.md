@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 5f06ad00-7205-48d8-a9ff-f5c6b5e38c5e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7ca24cc0db307715f71be1c030d200c9ca973360
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9265aab47bdc78fb74fa2652ab4a7b60ea275d7a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802904"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587447"
 ---
 # <a name="pidtagjunkpermanentlydelete-canonical-property"></a>PidTagJunkPermanentlyDelete 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 スパムを完全に削除することがありますように、メッセージを 1 に設定が確認された場合は、意味します。
   

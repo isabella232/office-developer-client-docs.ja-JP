@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 5ca500c3-c737-45a5-b0fc-473b75c1d68d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1f3a876269868c30df48e0a0b62036cfdc199955
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3e758acfa1cf0c11be666dd730d9bf589d2e9d77
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800549"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586215"
 ---
 # <a name="imapiformmgrloadform"></a>IMAPIFormMgr::LoadForm
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォームを開くには既存のメッセージを開始します。
   

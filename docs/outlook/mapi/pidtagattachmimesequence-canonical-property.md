@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: d2a84f24-b4a5-4e16-9219-7a579a31a8f8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e46a6556b88452fb453b031fc1a90762fd748f7d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b8fe0dd61247d3473db4cc728ecfa2c83682b691
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802508"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587720"
 ---
 # <a name="pidtagattachmimesequence-canonical-property"></a>PidTagAttachMimeSequence 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MIME メッセージの添付ファイルの MIME のシーケンス番号が含まれています。
   

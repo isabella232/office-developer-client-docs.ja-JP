@@ -1,5 +1,5 @@
 ---
-title: PidTagEntryId の標準的なプロパティ
+title: PidTagEntryId 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: ca02e873-c2d2-4d58-8df8-c05fbcdc8fba
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 971462b9e85878677b57ec7b53fe46aa64db6dba
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: f3d49faba9d1e9cc8609ee55f7fb3c329e9ae947
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802744"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593040"
 ---
-# <a name="pidtagentryid-canonical-property"></a>PidTagEntryId の標準的なプロパティ
+# <a name="pidtagentryid-canonical-property"></a>PidTagEntryId 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 開き、特定の MAPI オブジェクトのプロパティを編集するに使用される MAPI エントリの識別子が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_ENTRYID  <br/> |
+|関連するプロパティ:  <br/> |PR_ENTRYID  <br/> |
 |識別子:  <br/> |0x0FFF  <br/> |
-|データを入力します。  <br/> |PT_BINARY  <br/> |
+|データの種類 :   <br/> |PT_BINARY  <br/> |
 |領域:  <br/> |ID プロパティ  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、 **OpenEntry**をインスタンス化するためにオブジェクトを識別し、すべての**IMAPIProp**の適切な派生インターフェイスからプロパティへのアクセスが用意されています。 
   
@@ -109,14 +109,14 @@ Mapitags.h
 
 
 
-[PidTagStoreEntryId の標準的なプロパティ](pidtagstoreentryid-canonical-property.md)
+[PidTagStoreEntryId 標準プロパティ](pidtagstoreentryid-canonical-property.md)
 
 
 [MAPI プロパティ](mapi-properties.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

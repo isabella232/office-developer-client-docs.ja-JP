@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 55e08ace-493c-4246-8ebf-c304f4abc56a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ba30514df028805135e9e31e7214ca336b1b3f85
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 48627c6d6eb2100e7dfcab832c86c1ec2e4ec8bf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803164"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582806"
 ---
 # <a name="pidtagparententryid-canonical-property"></a>PidTagParentEntryId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォルダーまたはメッセージを含むフォルダーのエントリ id が含まれています。
   

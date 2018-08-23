@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 70e18534-054f-49e7-9a5d-10db0db132d0
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 419c9776b380436b1a7163803a8677fb6a89be97
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cae255b90e8f2ccaaec4736c7ba1e9d6b7764f58
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799872"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593110"
 ---
 # <a name="creating-a-message-subject"></a>メッセージの件名の作成
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **あるの PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md))、メッセージの件名は、メッセージの目的を要約するために使用、省略可能なプロパティです。 設定する場合は、文字列を作成して文字 128 バイト以内です。 128 バイトの制限は、MAPI のによって課された制限ではありません。いくつかのメッセージ ストア プロバイダーによって課された制限することをお勧めします。 それを課すはプロバイダーとの相互運用性を確保するには、サブジェクトが 128 バイトに制限します。 
   

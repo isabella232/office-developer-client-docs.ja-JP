@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 4f28fab8-2ce1-4398-a941-6d718c9bbd6a
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2d7311857ff54ef253fd00634671f4a510443f19
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: de0334ee9a90da38e472571314136195c84a7866
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801476"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592704"
 ---
 # <a name="mapi-transport-provider-objects"></a>MAPI トランスポート プロバイダー オブジェクト
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 だけでなく、標準のプロバイダーとログオン オブジェクトがすべてのサービス プロバイダーによって実装される、トランスポート プロバイダーは、状態オブジェクトを実装する必要があります。 その他のサービス プロバイダーの種類、状態オブジェクトを実装することは、省略可能です。 ただし、MAPI は、トランスポート プロバイダーの。 リモート サーバーからのメッセージ ヘッダーのダウンロードをサポートするトランスポート プロバイダーは、フォルダーと、テーブルにも実装します。 
   

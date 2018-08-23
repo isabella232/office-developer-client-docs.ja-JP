@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e5a94968-7e84-4faf-8104-9ea36d35fa1a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 90f16f33e7e116e124384f9988c0c7dddaad2da5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: efbbffe184e965caae84db54383e1431dfb1a569
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802290"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585823"
 ---
 # <a name="pidlidvalidflagstringproof-canonical-property"></a>PidLidValidFlagStringProof 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **DispidRequest** ([PidLidFlagRequest](pidlidflagrequest-canonical-property.md)) プロパティの値は**PR_MESSAGE_DELIVERY_TIME** ([PidTagMessageDeliveryTime](pidtagmessagedeliverytime-canonical-property.md)) プロパティの値を知っているエージェントによって設定されたかどうかを検証します。
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 1e8ccef1-db0a-4230-9bd0-87540b53e890
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9dba26ab6948d7190521ff31a8732c4b058ab7c9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d2a1c49b29ba08775768fc74861ba36b3c6356fb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803362"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589379"
 ---
 # <a name="pidtagresponsibility-canonical-property"></a>PidTagResponsibility 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI スプーラーは、このトランスポート プロバイダーが責任を受け入れる必要がありますと見なされる場合は、この受信者、および FALSE にメッセージを配信する責任をいくつかのトランスポート プロバイダーが既に受け入れられて場合は、TRUE を格納します。
   

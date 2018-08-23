@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: bd8e1ddb-3027-428b-8964-81614f80282d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7fee3c84d6a4d4a94397f5197f45637b0c7dd2be
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d5b9fb9bf8c84433ee5000cc8832c2f09bfc5fe3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800433"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590625"
 ---
 # <a name="idistlist--imapicontainer"></a>IDistList : IMAPIContainer
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 本コンテナーの変更可能なアドレスでの配布リストへのアクセスを提供します。 **IDistList**は、作成、コピー、および名前解決を実行するだけでなく、配布リストを削除できます。 
   

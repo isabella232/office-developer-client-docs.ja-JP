@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 639a408c-aed1-456b-9f75-9d6fb8dcb33b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e26acb8415df007a7f3fb5901521da7222ae40ed
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 37dc92a40043657cb791359d543ef52c77dbd8ce
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800151"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589239"
 ---
 # <a name="ftnegft"></a>FtNegFt
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 64 ビットの符号なし整数の 2 の補数を計算します。 
   

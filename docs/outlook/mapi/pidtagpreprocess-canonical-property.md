@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c59a6ce9-6b1f-4395-961e-c3af2945f05e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 61cdb8f0e1bcdcab56bc85a288baff47c8fd1fcb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cfbeb6c60069d57d9a42082e80b2a45fd3410767
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803172"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587377"
 ---
 # <a name="pidtagpreprocess-canonical-property"></a>PidTagPreprocess 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージの前処理が必要な場合、TRUE が格納されます。
   
