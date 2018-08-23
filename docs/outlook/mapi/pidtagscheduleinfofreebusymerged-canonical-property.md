@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 3ebfccb6-967a-4f8e-9d94-94c50ba65438
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0e1fbab53589a4ebf8681d5fe738ad625d31c18f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5b83a4acf30f498a0d17cc2c3c76f40c2c3c4b96
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803468"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582015"
 ---
 # <a name="pidtagscheduleinfofreebusymerged-canonical-property"></a>PidTagScheduleInfoFreeBusyMerged 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 空き時間情報のステータスが設定されている時間が含まれていますをビジー状態または OOF。
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: f686a2bc-aba5-4ea3-9963-76d0e96eab50
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: ab892513348541ec9de3c071a12268afa9337465
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 8dbb871a234d94f8bb2e21b15ce5de6f0db0e4ee
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801547"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581833"
 ---
 # <a name="mapstoragescode"></a>MapStorageSCode
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 SCODE のマップでは、HRESULT の種類に OLE ストレージ オブジェクトから値を返します。 
   
@@ -39,7 +39,7 @@ SCODE MapStorageSCode(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _StgSCode_
   
@@ -55,7 +55,7 @@ MAPI_E_CALL_FAILED
   
 > 関数は、一致する値を見つけることができません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI は、DLL のメッセージで、メッセージの実装を基本の MAPI コンポーネントの内部使用のため、 **MapStorageSCode**関数を提供します。 これらのコンポーネント ファイルを開く OLE ストレージ自体、HRESULT 値を OLE ストレージの問題を返されるエラー値をマップできる必要があります。 
   

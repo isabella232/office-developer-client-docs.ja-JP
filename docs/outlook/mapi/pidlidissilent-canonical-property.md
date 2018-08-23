@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e00d8887-0db4-422d-96db-84cefe65dfc1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 316a8c9b943af7a3bd13a882b223f7fbcf4e6749
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 90c72abb0b1ae85593084e844b2965bd84fa346e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802019"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579033"
 ---
 # <a name="pidlidissilent-canonical-property"></a>PidLidIsSilent 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ユーザーは会議の返信の本文に文字列が含ましなかったことを示します。
   

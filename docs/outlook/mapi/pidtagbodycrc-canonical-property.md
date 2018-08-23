@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 6efe9dc3-e988-4042-ab02-2863b5e0f294
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 66a150cf3f83465840aa0e79a9ef921b1534f814
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 55da942e59c619dd384bef58349aa3a00d4a6d8c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802529"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571473"
 ---
 # <a name="pidtagbodycrc-canonical-property"></a>PidTagBodyCrc 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ テキストの巡回冗長検査 (CRC) の値が含まれています。
   

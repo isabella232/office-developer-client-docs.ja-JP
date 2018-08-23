@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5d41a536-81ff-733c-2fd7-460798e057c8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 571ac25d6bc738f8289e3019c342820682d08c28
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 79b6461ca4a796b292b86f0f3bdbd8a39ad65863
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803193"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575680"
 ---
 # <a name="pidtagprofileserverversion-canonical-property"></a>PidTagProfileServerVersion 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 Microsoft Outlook プロファイル内のアカウントが接続されている、Microsoft Exchange Server のバージョンに関する情報を指定します。
   

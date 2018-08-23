@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: bcacfbdf-edff-4810-a985-e6d2c9271901
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fefd81a7d6cdfda24df93ec928cd3305cb8ef8be
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ddb87af4b14be6d728bcceddb4d958ba49229ad4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800375"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579040"
 ---
 # <a name="iaddrbookcreateoneoff"></a>IAddrBook::CreateOneOff
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 一時アドレスのエントリ id を作成します。
   

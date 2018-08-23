@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 5f0e5c97-5089-47cb-b604-2292b2ff945c
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3f461d50e838aac0caee37d295ba8e86b9559bd1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4612b6f345d59d988013671758c6d0579aaa127d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804207"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569534"
 ---
 # <a name="using-the-mapi-utilities"></a>MAPI ユーティリティの使用
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI ユーティリティでは、その他の機能をサポートするためにテーブルのデータとデータ オブジェクトのプロパティ、およびさまざまな機能の構成します。 これらのユーティリティを必要していないサービス ・ プロバイダーとの接続を確立するために MAPI サブシステムにログオンするクライアントのことができます。 API 関数[ScInitMapiUtil](scinitmapiutil.md)を呼び出す場合は、クライアントは、このカテゴリに適合して、初期化時に[生じます](mapiinitialize.md)関数ではなく。 
   

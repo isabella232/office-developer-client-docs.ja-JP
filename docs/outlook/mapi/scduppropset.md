@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 165ffbd0-54aa-4692-8bd1-09e6ff3762df
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5b93f84026cacd8568dc5ceec5574d144f6d1633
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8bbe8aa00ce446d228c23e1d474fa5140ae7b40a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803836"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581980"
 ---
 # <a name="scduppropset"></a>ScDupPropset
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI のメモリ、 [ScCopyProps](sccopyprops.md)および[ScCountProps](sccountprops.md)関数の操作を組み合わせることの 1 つのブロックでは、プロパティ値の配列を複製します。 
   

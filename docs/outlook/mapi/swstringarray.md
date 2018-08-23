@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c1ae24ad-1bbb-4dee-b414-b5226593b6fa
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1578e26ec96f69975c2304cb185f352193a52c2d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e3f53a894b7f7cdaa68e66530c7bd99bf49b9ed0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804061"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581357"
 ---
 # <a name="swstringarray"></a>SWStringArray
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 PT_MV_UNICODE の種類のプロパティを説明するために使用する文字の文字列の配列が含まれています。 
   

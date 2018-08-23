@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: ead51434-ae19-4c34-aa7a-bdeeccca5bd9
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 4bd64aadd5fc18ba79a8717a5c58df72cd3695ff
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 855b145bcca8007601eb8e841665306d4c58982f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801307"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576562"
 ---
 # <a name="mapi-address-book-provider-overview"></a>MAPI アドレス帳プロバイダーの概要
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アドレスは、ディレクトリ情報へのハンドルをプロバイダーに予約します。 ディレクトリ情報は、メッセージの受信者の 2 種類のデータで構成されています: 個々 のユーザーおよび配布リストでまとめて解決よくメッセージングのユーザーのグループのメッセージです。 、受信者、アドレス帳プロバイダーの種類によっては、さまざまな情報を利用できます。 たとえば、すべてのアドレス帳プロバイダーは、受信者の名前、アドレス、およびアドレスの種類を格納します。
   

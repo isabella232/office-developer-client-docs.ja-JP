@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 5b062891-39ab-4334-9706-5b376719d5e4
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: ecc5439b4abbbfd920fba5456db7462f7967388f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7f43a50d08daedc623fa1e4570eafa5d58be71f6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804022"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577437"
 ---
 # <a name="support-object-overview"></a>サポート オブジェクトの概要
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI をサポート オブジェクトを実装するオブジェクトを提供する、 [IMAPISupport: IUnknown](imapisupportiunknown.md)インタ フェースは、ログオン時にすべてのサービス プロバイダーとすべてのメッセージ サービスの構成中にします。 
   

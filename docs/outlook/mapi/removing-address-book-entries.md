@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 107ebcd7-b612-4139-b676-c3851f15bc74
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 1fb7224e110bbee6844cf2820782aac8be213ba3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2c5d7a2114f4a85b9f63cd778e899a83d335ff45
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803733"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581280"
 ---
 # <a name="removing-address-book-entries"></a>アドレス帳のエントリを削除します。
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 1 つまたは複数の受信者を削除するのには、コンテナーの[IABContainer::DeleteEntries](iabcontainer-deleteentries.md)メソッドと呼びます。 **DeleteEntries**には 2 つのパラメーター: 削除する受信者を表すエントリ id と予約済みのフラグの値の配列。 コンテナーのコンテンツ テーブルに影響を受ける受信者を削除します。受信者を削除するには、ほかのコンテナーに受信者を表す内容のテーブルの行を削除しなければなりません。 行がテーブルから削除された、ときに、コンテナーは、各登録済みのクライアントにテーブルの通知を発行する必要があります。 
   

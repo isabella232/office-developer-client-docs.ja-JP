@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 16d4e92d-d48e-4e06-9886-2d21f3d10640
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3870ca7aaf8c1b178155d385f88e130a46d3b787
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4cd001e8d919765df9003e89c3eb3e00cde3bf55
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802928"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580349"
 ---
 # <a name="pidtaglanguages-canonical-property"></a>PidTagLanguages 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ASCII メッセージで採用されている言語の一覧が入ります。 
   

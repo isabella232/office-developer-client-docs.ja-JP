@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: ca06502c-884c-c1ad-d2c9-31f2b2b30ae5
 description: このリファレンスには、概念の概要、プログラミング タスク、サンプル、および Visio 2013 に基づくソリューションを開発するときに参照が含まれています。
-ms.openlocfilehash: 4c75623aa0f1fc248c3b1b2b8f1ba1a4d43acedd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7d379004aa420febeaea13925c03eaca90349fa7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806773"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579173"
 ---
 # <a name="visio-shapesheet-reference"></a>Visio ShapeSheet のリファレンス
 
@@ -34,14 +34,10 @@ ms.locfileid: "19806773"
     
 ## <a name="see-also"></a>関連項目
 
-- [Visio デベロッパー センター](http://msdn.microsoft.com/en-us/office/aa905478.aspx)
-    
-- [マイクロソフト製品のアクセシビリティ機能](http://www.microsoft.com/enable/products/default.aspx)
-    
-- [ドキュメントの表記規則](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
-    
+- [Visio デベロッパー センター](http://msdn.microsoft.com/en-us/office/aa905478.aspx)    
+- [マイクロソフト製品のアクセシビリティ機能](http://www.microsoft.com/enable/products/default.aspx)    
+- [ドキュメントの表記規則](http://msdn.microsoft.com/en-us/office/aa905365.aspx)   
 - [Visio SDK の著作権表示](visio-sdk-copyright-notice.md)
-    
-- [Microsoft プライバシーに関する声明](http://privacy.microsoft.com/en-us/default.mspx)
+
     
 

@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 4a4b1ad2-de46-421d-a698-53c20c90b93a
 description: この資料では、オンラインのプロジェクトと、利便性を強化するためにプロジェクトをオンラインでマイクロソフトのアドインを開発について説明します。 開発プロジェクトは、チュートリアルとして実装されます。 アドインをこの資料の使用しプロジェクト名とプロジェクトのオンライン アカウントから発行されたプロジェクトの Id が表示されますを読み込んで使用すると、個々 のプロジェクトに関連付けられている取得タスクへのドリル ダウンします。
-ms.openlocfilehash: 91d475afd5c4085b00ed06b66620f0d18174fd7f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ea5c7e3f3d20aa6bf5b6bb77a18eb87d06f549e1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804551"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572544"
 ---
 # <a name="developing-a-project-online-add-in-using-the-javascript-object-model-jsom"></a>プロジェクトのオンライン追加の JavaScript オブジェクト モデル (JSOM) を使用して開発
 
@@ -37,7 +37,9 @@ ms.locfileid: "19804551"
 オンライン プロジェクトのアドインの開発のセットアップでは、Visual Studio SharePoint アドイン プロジェクトの種類を使用します。 アドインが、JavaScript で記述され、プロジェクトの JavaScript オブジェクト モデル (JSOM) を使用して、プロジェクトのオンライン サービスと対話します。 JSOM では、SharePoint の JSOM からの機能の多くを継承します。
   
 > [!NOTE]
-> アドインの発行し Office ストアで販売または SharePoint 上のプライベート アプリケーション カタログに配置できます。 詳細についてを参照してください[の展開、Office アドインを発行し、](http://dev.office.com/docs/add-ins/publish/publish.aspx)。 > アドインをこの資料では、開発者のためのサンプル実稼働環境で使用するためのものではありません。 主な目的では、オンラインのプロジェクトのアプリケーション開発の例を示します。 
+> アドインの発行し Office ストアで販売または SharePoint 上のプライベート アプリケーション カタログに配置できます。 詳細についてを参照してください[の展開、Office アドインを発行し、](https://docs.microsoft.com/en-us/office/dev/add-ins/publish/publish)。
+> 
+> この資料で使用されているアドインの開発者用のサンプルは、します。実稼働環境で使用するためのものではありません。 主な目的では、オンラインのプロジェクトのアプリケーション開発の例を示します。 
   
 ## <a name="prerequisites"></a>前提条件
 
@@ -141,7 +143,7 @@ Sideloading を設定する方法の詳細については、[アプリケーシ�
     
 移動など試用版からサブスクリプションのサイトでは、サーバー間の接続およびサイトの URL を含む、プロジェクトのプロパティを更新することができます、プロジェクトのオンラインのテナントが変更された場合は、[プロパティ] ウィンドウ**のビュー**で利用可能なを使用して > **のプロパティウィンドウ**コマンドです。 
   
-プロジェクトにファイルを追加することもできます。 その場合は、(コンテンツ、イメージ、ページ、またはスクリプト) を新しいファイルを含めるには、同じグループ内にある、Elements.xml ファイルを更新する必要があります。 プロジェクト ファイルの詳細については、 [SharePoint アドインのパッケージとアプリケーション マニフェストの構造を表示する](https://msdn.microsoft.com/en-us/library/office/fp179918.aspx.aspx)を参照してください。
+プロジェクトにファイルを追加することもできます。 その場合は、(コンテンツ、イメージ、ページ、またはスクリプト) を新しいファイルを含めるには、同じグループ内にある、Elements.xml ファイルを更新する必要があります。 プロジェクト ファイルの詳細については、 [SharePoint アドインのパッケージとアプリケーション マニフェストの構造を表示する](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/explore-the-app-manifest-structure-and-the-package-of-a-sharepoint-add-in)を参照してください。
   
 ### <a name="set-application-scope"></a>アプリケーション スコープの設定
 
@@ -331,6 +333,7 @@ DisplayTasks 関数には、プロジェクト項目のすぐ下にある指定�
   
 ## <a name="see-also"></a>関連項目
 
-ドキュメントとオンライン プロジェクトと CSOM を使用したアプリケーション開発に関連するサンプルでは、[プロジェクト開発のポータル](http://dev.office.com/project.aspx)を参照してください。
+ドキュメントとオンライン プロジェクトと CSOM を使用したアプリケーション開発に関連するサンプルでは、[プロジェクト開発のポータル](https://developer.microsoft.com/en-us/project)を参照してください。
     
+
 

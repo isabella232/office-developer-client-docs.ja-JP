@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 99f8e623-3138-4def-9778-5580326111a5
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 19031f6c02f3e8e925adfc8d2affa43fb6532fee
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 520478061e192f9fec97c6b13edde7833a13a3d6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801531"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571396"
 ---
 # <a name="mapisvcinf-services-section"></a>MapiSvc.inf [Services] セクション
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **[サービス]** セクションには、コンピューターにインストールされているメッセージ サービスが一覧表示されます。 このセクションのエントリは、次の形式を使用します。 
   

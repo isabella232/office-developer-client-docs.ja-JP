@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: de942619-2507-8fe0-bc81-f9da9ef7266f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 27e3a9687d66bd1cd3586a25a3ca5792523096c2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0d31272e63df7f68a83b23ca7a3824c081de3c1d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802714"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569268"
 ---
 # <a name="pidtagemsabserver-canonical-property"></a>PidTagEmsAbServer 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 オフラインのシナリオ、またはオンラインのシナリオでは、アドレス帳コンテナーが存在するグローバル カタログ サーバーの完全修飾ドメイン名で、アドレス帳コンテナーのいずれかのパスを指定します。
   

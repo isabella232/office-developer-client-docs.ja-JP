@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: fd0ccb88-55ce-4d7c-9573-6e5d6239b6a8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c93d850551e766e97292d5417c3be5577f557af0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c88e6789b5b48e946d86a0458674a0fbe6b76356
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803382"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575449"
 ---
 # <a name="pidtagrtfcompressed-canonical-property"></a>PidTagRtfCompressed 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 リッチ テキスト形式 (RTF) バージョン圧縮形式では通常、メッセージのテキストにはが含まれています。 
   

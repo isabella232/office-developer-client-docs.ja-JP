@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 32627ebb-547f-4fac-a406-e7243ec5521b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 04aa4348560396c8237811252fd96a2b461cd791
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b572ebcec0a33d2134f4cf19b88e3132cbd47117
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799899"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582001"
 ---
 # <a name="designing-a-message-service"></a>メッセージ サービスの設計
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ サービスを利用するコードを記述する作業を開始する前にすることが重要な設計を作成します。 デザイン プロセスでは、次の問題を解決するには。
   

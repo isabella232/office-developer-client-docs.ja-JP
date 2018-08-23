@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 5ae3fdf0-6193-4c1f-bd2e-d69c56d69773
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7c8ccada96b3e34372d488e16c85627e8b6b0cd7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1f79265c4356747e64aa8102dd4486db229baf5a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800492"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579663"
 ---
 # <a name="imapifoldersavecontentssort"></a>IMAPIFolder::SaveContentsSort
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォルダーの内容のテーブルの既定の並べ替え順序を設定します。
   

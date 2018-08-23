@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a5bfc190-b58f-44c3-893c-8727df14ee58
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3ab069728f872d82246e8925c5ad35c07f41f02e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 924715f26e104739f2e60762511221da5facd5a5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800855"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578326"
 ---
 # <a name="imapitablerestrict"></a>IMAPITable::Restrict
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 指定した条件に一致する行のみに設定した行を減らすこと、テーブルにフィルターを適用します。
   

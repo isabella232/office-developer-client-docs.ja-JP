@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: c4a1fb5d-ae23-445b-a6f0-ef430b03fc9a
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 1ffde0814fe5024a3f89a93462c48136712f1013
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f26e7b7ec607c9714012870d5367a0e775c62f34
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800929"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572103"
 ---
 # <a name="implementing-address-book-provider-logon-and-logoff"></a>アドレス帳プロバイダーのログオンとログオフの実装
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アドレス帳プロバイダーのメソッドを実装することによってセッションのログオンとログオフをサポートする、 [IABProvider: IUnknown](iabprovideriunknown.md)インタ フェースです。 * * IABProvider * * インターフェイス**IUnknown**から直接継承し、他の 2 つの方法:**ログオン**と**シャット ダウン**します。 
   

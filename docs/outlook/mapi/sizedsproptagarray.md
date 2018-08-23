@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: 1d2dc6e9-735d-4b5b-af6f-adf6a32a666d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7505c5dbcfc98a8b868424ae51cbe9c47b1d4338
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 363a85e1c6f111936b16e471eda6b9f962f8b65d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803930"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573622"
 ---
 # <a name="sizedsproptagarray"></a>SizedSPropTagArray
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロパティ タグの指定された番号を格納する名前付きの[SPropTagArray](sproptagarray.md)構造を作成します。 
   

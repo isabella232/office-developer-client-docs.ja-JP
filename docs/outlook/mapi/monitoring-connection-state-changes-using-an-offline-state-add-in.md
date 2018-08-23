@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: c482ddce-f2b6-222b-aa30-824b1c6f3b14
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 9f7f3bc0e305fb5aa7d6ae1e1909b573b3376ef8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d8385b2379f2fde8689ae2c7fc5d177af696f22e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801643"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579880"
 ---
 # <a name="monitoring-connection-state-changes-using-an-offline-state-add-in"></a>オフライン状態のアドインを使用して、監視のための接続状態の変更
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 オフライン状態アドインを使用するには接続状態の変更を監視するのには、前に設定し、アドインを初期化する関数を実装する必要があります。 詳細については、[アドインの設定をオフラインの状態](setting-up-an-offline-state-add-in.md)を参照してください。
   

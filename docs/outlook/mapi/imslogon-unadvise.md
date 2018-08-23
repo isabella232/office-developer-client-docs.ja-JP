@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 440d61c4-b69a-4010-a22b-0c9c5c376fbc
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 34c15ca4f7d81eeeee71fb0cb7e31085c75e5492
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4ee17799fc42faf383461af7eed9d700d17b868e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801078"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582386"
 ---
 # <a name="imslogonunadvise"></a>IMSLogon::Unadvise
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [IMSLogon::Advise](imslogon-advise.md)メソッドへの呼び出しを使用して、以前に確立されたメッセージ ストアの変更を通知するためのオブジェクトの登録を削除します。 
   
@@ -33,7 +33,7 @@ HRESULT Unadvise(
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
  _ulConnection_
   
@@ -57,5 +57,5 @@ S_OK
   
 [IMSLogon::Advise](imslogon-advise.md)
   
-[IMSLogon: IUnknown](imslogoniunknown.md)
+[IMSLogon : IUnknown](imslogoniunknown.md)
 

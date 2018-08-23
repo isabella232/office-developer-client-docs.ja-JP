@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4cf1e08b-c869-4965-a1e4-512a0684700f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 53fe309fb15807ad698fef5a06781e5c3e0bae0c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b29fdbb82635ca7706be15ee9f674262d2204ad5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801984"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576184"
 ---
 # <a name="pidlidflagstring-canonical-property"></a>PidLidFlagString 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フラグに関連付けられている定義済みのテキスト文字列のセットのいずれかを識別するインデックスが含まれています。
   

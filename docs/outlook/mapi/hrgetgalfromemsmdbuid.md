@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9b824e70-ed9a-490c-b777-8902a793fece
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5db1b45f42365837d7b0e7af91f859f221ff687b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4b05baf1f819a821da3496cc63c2b2980894efd7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800296"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575715"
 ---
 # <a name="hrgetgalfromemsmdbuid"></a>HrGetGALFromEmsmdbUID
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 _PEmsmdbUID_によって識別される Exchange サービスのグローバル アドレス帳のエントリの識別子を返します。 返されるエントリの識別子は、 [MAPIFreeBuffer](mapifreebuffer.md)を使用して解放する必要があります。
   

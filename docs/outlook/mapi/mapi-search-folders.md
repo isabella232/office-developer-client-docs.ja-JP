@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 36c14d91-77f7-43a3-8d87-d50bcc21fad7
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e74767f4b3a19442beac5f9c9ac375286bb47c81
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b5a95ca77496c3c4c2d28641ab649c2b4328a27c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801443"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578557"
 ---
 # <a name="mapi-search-folders"></a>MAPI �����t�H���_�[
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 �������ʂ̃t�H���[�[�ł́A���ۂ̃��b�Z�[�W�ł͂Ȃ��A��ʓI�ȃt�H���](imapifolder-createfolder.md)�[��̃��b�Z�[�W�ւ̃����N��ێ����܂��B�N���C�A���g�ł́A  _ulFolderType_�p�����[�^�[�Ƃ��� FOLDER_SEARCH [IMAPIFolder::CreateFolder](imapifolder-createfolder.md)���\�b�h��g�p���Č������ʂ̃t�H���[�[��쐬���܂��B�N���C�A���g�̃Z�b�g�A�b�v�ƌ��������K�p���āA�������ʂ̃t�H���](imapicontainer-setsearchcriteria.md)�[����͂���: ���[�������̓���������郁�b�Z�[�W��t�B���^�[�������܂��B���������[IMAPIContainer::SetSearchCriteria](imapicontainer-setsearchcriteria.md)���\�b�h��g�p���ăZ�b�g�A�b�v���܂��B�N���C�A���g�ł́A���������K�p���āA [SetSearchCriteria](srestriction.md)�ɓn����\�� 1 �܂��͕�����**SRestriction**�\����쐬���܂��B **SetSearchCriteria**������h���C��������t�H���_�[�̈ꗗ����уZ�b�g��w�肷��t���O�̌�������s������@�𐧌䂵�܂��B 
   

@@ -1,5 +1,5 @@
 ---
-title: PidTagExplicitConversion の標準的なプロパティ
+title: PidTagExplicitConversion 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,27 +11,27 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8aabcec6-f735-41fe-a5f4-61d4635b2c58
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 430366614d0b4d6ca60b539264a185d1caf23420
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: cf4fe916d93d330b43c0acd76be2db44687a4da7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802752"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578613"
 ---
-# <a name="pidtagexplicitconversion-canonical-property"></a>PidTagExplicitConversion の標準的なプロパティ
+# <a name="pidtagexplicitconversion-canonical-property"></a>PidTagExplicitConversion 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージの送信者が特定の受信者のメッセージのコンテンツ変換を要求したことを示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_EXPLICIT_CONVERSION  <br/> |
+|関連するプロパティ:  <br/> |PR_EXPLICIT_CONVERSION  <br/> |
 |識別子:  <br/> |0x0C01  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |MAPI 受信者  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
@@ -54,7 +54,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

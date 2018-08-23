@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 43c7225b-8f9f-47a2-aadf-36a249b2d78e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6693326df818d2792d7448407148e57d53fff86f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f82d5a13066294e8c007f70cd7f54d286ab8b02d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801621"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579362"
 ---
 # <a name="mapping-canonical-property-names-to-mapi-names"></a>標準プロパティ名から MAPI 名へのマッピング
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このトピックは、MAPI プロパティまたはプロパティを表す各標準のプロパティ名をマップします。 トピックには、3 つのテーブルが含まれています: 数値識別子を持つ名前付きプロパティのテーブル、1 秒は文字列の識別子を持つ名前付きプロパティのテーブルし、タグ付きのプロパティの表の 3 分の 1 です。
   

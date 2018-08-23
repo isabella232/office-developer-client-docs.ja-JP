@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 6b86d9a9-6876-4885-ae1e-8571b25b85cc
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2cb5c9a971f95e309f0a91cf477eefe98fe3bd64
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5043c338f309b5da21ca828a47daf1d8b6abfd5d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800023"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577752"
 ---
 # <a name="encoding-a-message-with-tnef"></a>TNEF メッセージをエンコードします。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージが送信されると、トランスポート プロバイダーは、転送中にメッセージを格納するために使用されるファイルを作成できます。 次に、 [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx)インターフェイスは、ファイルを囲みます。 トランスポート プロバイダーは、ストリームに書き込むメッセージのプロパティ、受信側のトランスポート プロバイダーが簡単にデコードするのににはプロパティを有効にするタグ付きの形式で、 [ITnef](itnefiunknown.md)メソッドを使用します。 
   

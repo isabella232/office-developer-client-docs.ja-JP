@@ -8,16 +8,16 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 39d9ad3b-ff4b-8378-a3ac-d5621c7ef7f1
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 70d23bebfda10339ffb05f573c8c309a44f09d7f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bdfabdf02fc0fa6222418bd0fb87e9b6c17d936a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804214"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580440"
 ---
 # <a name="uptbl"></a>UPTBL
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [テーブルの状態をアップロード](upload-table-state.md)する時にフォルダーの内容をアップロードする方法の詳細については。
   

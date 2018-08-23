@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 18df25b7-16b7-44cd-a9a0-5276966c1fd4
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 332b78bcebbcd54de43376553ec4aea386c1c359
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a32c73f8a907b371c4d0f1c07050d44fd45801ec
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800059"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576289"
 ---
 # <a name="finding-a-profile-name"></a>プロファイル名の検索
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアントは、セッション、既定のプロファイルの名前、またはコンピューターにインストールされている別のプロファイルの名前を現在使用されているプロファイルの名前を検索する必要があります。
   

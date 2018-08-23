@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 6619fc41-5518-44ce-85c1-6b0077ed5cb9
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 954630b0b92772d961dc61084c28a9ab419e4c2f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ad561bd3be7fd0c9f25c11875f62667563dfcbe7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800146"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578263"
 ---
 # <a name="ftsubft"></a>FtSubFt
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 別の 1 つの符号なし 64 ビット整数を減算します。 
   

@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5ee7fb05-cfb3-6b68-5a9a-1d6375f2e879
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 277505beb11dbc2b32b7e970c2bcf2a34dbdf00b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5b3160bb81cee86aeab4e7eecb76fb409d8e7c4b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800217"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581609"
 ---
 # <a name="get-the-path-of-a-specific-version-of-mapi-for-the-default-mail-client"></a>既定のメール クライアントの MAPI の特定のバージョンのパスを取得します。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このトピックには、コンピューター上の既定のメール クライアントで使用されている MAPI の特定のバージョンのパスを取得する方法について説明する C++ のコード サンプルが含まれています。 MAPI メール クライアントには、レジストリに MAPI スタブ ライブラリが読み込まれ、MAPI をディスパッチするカスタム DLL の呼び出しで指定するオプションがあります。 既定のメール クライアントでこのカスタム DLL を設定するレジストリ キーでは、 **MSIComponentID**既定のメール クライアントの**HKLM\Software\Clients\Mail**キーの下。 MAPI スタブ ライブラリによってエクスポートされた[FGetComponentPath](fgetcomponentpath.md)関数は、mapistub.dll、 **MSIComponentID**レジストリ キーに指定されている MAPI のカスタム バージョンのパスを返すことができます。 
   

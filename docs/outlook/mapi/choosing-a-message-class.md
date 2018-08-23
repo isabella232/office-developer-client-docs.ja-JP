@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 5ca8edd2-41b7-40e2-b755-b28eecb49786
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f1e604120041e9d91d06276fabb2e9dd7505df51
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c3b486838c6ce2d7fc38d950a4de6f4589767073
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799816"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574238"
 ---
 # <a name="choosing-a-message-class"></a>メッセージ クラスの選択
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [MAPI メッセージ クラス](mapi-message-classes.md)で説明したとおり、メッセージ クラスは、カスタム メッセージのさらに、拡張して、フォーム サーバー自体の間での型の間の関係を確立するために重要です。 幸いなことに、メッセージ クラスの文字列を選択することは非常に簡単です。 メッセージ クラスのメッセージ クラスの文字列は、任意の文字列ですが、次の表記規則を使用する必要があります。
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 7b351eec-9624-4b38-9978-5d0b67b64687
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 00662d7a5bf1c2addc5c4e0b39d657abd7073753
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 753067c8c0af15a44e0f3b71f6122d8683db4a98
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801212"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572110"
 ---
 # <a name="itabledatahrdeleterows"></a>ITableData::HrDeleteRows
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 複数のテーブル行を削除します。
   

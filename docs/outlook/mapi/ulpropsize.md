@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 240f1144-0805-4cd1-9e7d-f2a550a2f160
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: bc00270b167c9f7317fa466d790d5020d961676f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2bfe2841592987c530f6323db94834c1dcb64b2a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804151"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576639"
 ---
 # <a name="ulpropsize"></a>UlPropSize
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 1 つのプロパティの値のサイズを返します。 
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 64ef2bbb-585c-4908-8ad4-a1c954057e9b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 27b81c0939aa3e880f3998d33f4717c51bdbe681
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: eecbbb3b806ecaee6c7ceba5c92bd4b713ad1075
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801401"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575141"
 ---
 # <a name="mapi-message-classes"></a>MAPI メッセージ クラス
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 すべてのメッセージには、 **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) の種類、目的、またはメッセージの内容を識別する、メッセージ クラス プロパティがあります。 **PR_MESSAGE_CLASS**は、すべての新規メッセージに必要なプロパティです。 メッセージのクラスでは、受信メッセージを配置するフォルダーをユーザーにメッセージを表示するために使用されるフォームを決定します。 
   

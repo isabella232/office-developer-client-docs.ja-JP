@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a6bdf408-114a-2203-189f-101251a65a8c
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 9a4dbe6757ae7ce5eccee3c3a366660db412cfe6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: dcb5d63e2f8b7b1371fbcf2d74f52c6bba84e6dc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799615"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569016"
 ---
 # <a name="about-the-sample-offline-state-add-in"></a>サンプルのオフライン状態アドインについて
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 オフライン状態の API には、Outlook のユーザーの接続の状態が変更されたことを示すコールバックがサポートされています-などのオフライン中に Outlook でオンラインにしているからです。 オフライン状態のサンプル アドインは、COM アドインの接続状態の変更の通知を受信する方法と、オフライン状態 API を使用して現在の状態を変更する方法を説明する C++ で書かれました。 オフライン状態 API の詳細については、[の「オフライン状態 API](about-the-offline-state-api.md)を参照してください。
   

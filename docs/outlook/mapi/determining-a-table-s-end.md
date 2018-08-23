@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: c879e972-05f4-4716-8fc2-db5b22f34ca8
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7cbf11f16948d582ba36a0b4d20411549b723b38
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f9979baf144b6106adcec416ee04439404e05d19
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799910"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576345"
 ---
 # <a name="determining-a-tables-end"></a>テーブルの末尾の判別
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
  一般的なエラーでは、こと、テーブルの末尾に達しました場合を想定しています。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 864dbc3e-2039-435a-a279-385d79d1d13f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0a60b813a52779b28124ab6d69b493def35b14aa
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c12750b7899403e62b9c1603615e9fd6caa95eca
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800671"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569527"
 ---
 # <a name="imapipropsavechanges"></a>IMAPIProp::SaveChanges
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 前回の保存操作以降は、オブジェクトに対して行われた変更を永続的になります。 
   
@@ -81,7 +81,7 @@ MAPI_E_OBJECT_DELETED
   
 > 開かれた後、オブジェクトが削除されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **IMAPIProp::SaveChanges**メソッドでは、プロパティの変更を永続的に処理する場合、メッセージ、添付ファイル、アドレス帳コンテナー、およびメッセージングのユーザー オブジェクトのトランザクション モデルをサポートするオブジェクトになります。 フォルダー、メッセージ ストア、およびプロファイルのセクションなどのトランザクションをサポートしないオブジェクト変更永続的なすぐにします。 **Savechanges メソッド**の呼び出しは必要ありません。 
   
@@ -130,9 +130,9 @@ FORCE_SAVE のフラグが削除されているオブジェクトを開くには
 
 [IMAPIProp::SetProps](imapiprop-setprops.md)
   
-[PidTagEntryId の標準的なプロパティ](pidtagentryid-canonical-property.md)
+[PidTagEntryId 標準プロパティ](pidtagentryid-canonical-property.md)
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
 [MAPI プロパティの保存](saving-mapi-properties.md)

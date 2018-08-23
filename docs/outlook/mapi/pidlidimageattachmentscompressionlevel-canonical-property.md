@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: cc169ba8-e9b7-42ad-8f0e-77b0843f95ea
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 13e2ac93e7e3ba46bf25b26e76bd44c15f2b89e2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 55b965374bb1d7e5859f0cac5cc2f61956ea5b55
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802001"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578921"
 ---
 # <a name="pidlidimageattachmentscompressionlevel-canonical-property"></a>PidLidImageAttachmentsCompressionLevel 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 画像添付ファイルに適用する圧縮のレベルを定義します。
   

@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 948e007a-ad68-4abd-9720-204c6584beb5
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f601971e61eb6430bef9d50b093642ee04b14044
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 03352b55589138d406ad3e4ee0756fc44bca8c78
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803911"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580615"
 ---
 # <a name="short-term-entry-identifiers"></a>短期的なエントリ id
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 短期的なエントリの識別子は、識別子が迅速に構築する必要があり、最後の時間または距離にする必要はありません、オブジェクトへのサービス プロバイダーによって割り当てられます。 のみ期間中の現在のセッションでは、現在のワークステーションでは、短期的なエントリ id の一意性が保証されます。 通常、短期的なエントリ id は、それが表すオブジェクトが解放されるまでにのみ有効です。 
   

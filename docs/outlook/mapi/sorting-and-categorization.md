@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 853c48e4-ef5b-49da-b281-f72784c598ce
 description: '最終更新日: 2011 年 11 月 8 日'
-ms.openlocfilehash: 5e63d276d25a26f937e9b4f44575fea1030f52d0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 12668cb87f21b56cd398a7b5375f6a4b40c65829
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803963"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581532"
 ---
 # <a name="sorting-and-categorization"></a>並べ替えと分類
 
  
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 テーブルを並べ替えると、そのビューアーに意味のある順序で行が配置されます。 たとえば、1 つのビューアー会話のすべてのスレッドはまとめて別のビューアーはメッセージの送信者の名前で並べ替える必要がありますように、メッセージの件名でソートするフォルダーの内容を表示する方がよい。 必ずしも、新しくインスタンス化されたテーブルは、特定の順序では並べ替えられません。 
   

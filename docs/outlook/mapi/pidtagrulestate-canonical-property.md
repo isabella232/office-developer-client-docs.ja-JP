@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f62f3055-b855-4203-aa5c-6ba28b58c6f7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 519ee2b91275e4253845afa35a9a80470071966d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9d1adb6dd1fc151c9a599ea44391c2ca5b2fe2aa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803428"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580566"
 ---
 # <a name="pidtagrulestate-canonical-property"></a>PidTagRuleState 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ルールの状態を指定するフラグのビットマスクの組み合わせとして解釈される値です。
   

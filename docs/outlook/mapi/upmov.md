@@ -8,16 +8,16 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 098743a5-f265-639a-8ba6-1412705bee0a
 description: '�ŏI�X�V��: 2012�N7��5��'
-ms.openlocfilehash: 43fd56932409861db86679eea6f1405dc4c37e62
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0a8e318f9bb5e538473e1b60c650e8730f692e50
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804187"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577990"
 ---
 # <a name="upmov"></a>UPMOV
  
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 移動されたアイテムをアップロードする方法の詳細については。 [アップロード ステータスの状態を削除](upload-delete-status-state.md)し、[テーブルの状態をアップロード](upload-table-state.md)中には、この情報が使用されます。
   

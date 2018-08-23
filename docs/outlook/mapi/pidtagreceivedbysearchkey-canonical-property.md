@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4b37555a-1d07-4f42-95e3-b8fa37ed0c3b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a139c39c5814b22d9b55bc937a7c300d89f1d5bc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 94d33910650de4f0d625d7a819c66ad8c599a47e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803279"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581455"
 ---
 # <a name="pidtagreceivedbysearchkey-canonical-property"></a>PidTagReceivedBySearchKey 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージを受信したメッセージのユーザーの検索キーが含まれています。
   

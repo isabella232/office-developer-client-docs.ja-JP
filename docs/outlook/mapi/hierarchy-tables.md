@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: b8aa6b36-d6e5-4e1f-8ac5-5d6a78a70bf8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 23314418836893b40cbddf3b90bd95ec061a00c4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d135e0c224866cd2a675df2ef9ec1b206f3169ab
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800221"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580755"
 ---
 # <a name="hierarchy-tables"></a>階層テーブル
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 階層テーブルには、メッセージ ・ ストア内のフォルダーまたはアドレス帳コンテナーにコンテナーに関する情報が含まれています。 階層テーブルの各行には、1 つのフォルダーまたはアドレス帳コンテナーに関する情報を持つ列のセットが含まれています。 階層テーブルは、主にクライアントによって使用されるフォルダーとサブフォルダーのツリーを表示するのには、メッセージ ストア プロバイダーによって実装され、アドレス帳コンテナーのツリーを表示するアドレス帳のプロバイダーによって実装されています。 コンテナーのサブコンテナーを保持することはできませんが、 **PR_CONTAINER_FLAGS** ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md)) のプロパティに AB_SUBCONTAINERS フラグがない場合で示されるように実装しない階層テーブルです。
   

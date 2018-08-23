@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 26628646-7948-4341-aaef-5c476a857a52
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 32198635ed95c5eb33a7171734778ac9a224059c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c5956974ab38e1d2e891945083d26f1dced23284
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799767"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578060"
 ---
 # <a name="cbnewflatmtsidlist"></a>CbNewFLATMTSIDLIST
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 指定したサイズのいくつかの[MTSID](mtsid.md)構造を含む新しい[FLATMTSIDLIST](flatmtsidlist.md)構造体に割り当てるバイト数を計算します。 
   

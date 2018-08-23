@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: df0db1e4-69c8-44ec-bb2a-d31fc8a564b9
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0f55d4cda013810884177a0f47e861e3693defd7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 60a102a68ee11cd6002be9edf47d0cee93ed2e15
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801650"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581434"
 ---
 # <a name="message-services-and-profiles"></a>メッセージ サービス、およびプロファイル
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 一部のユーザーは、それぞれ 1 つまたは複数のサービス プロバイダーが、いくつかのメッセージング システムのサービスを必要とします。 インストールし、これらのサービス プロバイダーのそれぞれを個別に構成するのには煩雑なため、メッセージング サーバーは通常、すべての機能を公開するのには関連するプロバイダーのグループを必要とするため、MAPI には、メッセージ サービスの概念が含まれています。 メッセージ サービスでは、ユーザーをインストールし、サービス プロバイダーの構成を支援します。
   

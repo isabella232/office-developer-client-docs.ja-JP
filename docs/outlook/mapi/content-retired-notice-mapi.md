@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 2dd5d24d-0fbb-43bd-bc41-93c29536e342
 description: '最終更新日: 2012 年 10 月 05 日'
-ms.openlocfilehash: 08a40a5fddadb732ef906af28d4e7bfaf1480678
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5f6e7dd5d04fbfe4bcec739f9e0e858695144b28
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799818"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577668"
 ---
 # <a name="content-retired-notice-mapi"></a>コンテンツの廃棄通知 (MAPI)
 
 
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 コンテンツを表示しようとしたが利用可能ではありません。 それが削除されたかより新しいバージョンに置き換えられます。 この一連の快適にするためのリンクを表示します。
   

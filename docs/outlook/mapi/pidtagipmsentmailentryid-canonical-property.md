@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: f6877435-6b26-4060-924f-a65591ad9538
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2bf7665d7867b9c7151f787bbc6b3cfd802bca35
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ee2e9e7f73e03e0a201a5ff41ea6e37a78c668a1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802899"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569576"
 ---
 # <a name="pidtagipmsentmailentryid-canonical-property"></a>PidTagIpmSentMailEntryId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 標準的な個人間メッセージ (IPM) の [送信済みアイテム フォルダーのエントリ id が含まれています。 
   

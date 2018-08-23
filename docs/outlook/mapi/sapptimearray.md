@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 5a1ff95a-9862-4165-8a70-bd2eeb7fe683
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 834a7141f0e7150140fa27c21d88db422d6f5561
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d277908d3ec96537f63511e4d50488a694696bd5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803794"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581224"
 ---
 # <a name="sapptimearray"></a>SAppTimeArray
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 時刻の値の配列が含まれています。
   

@@ -1,5 +1,5 @@
 ---
-title: PidLidClipStart の標準的なプロパティ
+title: PidLidClipStart 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,29 +11,29 @@ api_name:
 api_type:
 - COM
 ms.assetid: d348988d-a84e-4318-8d48-62e4982ebaf1
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 3db53389041448c18b19b8b67b6775b9bfe42f47
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 3a2bbaaee9325a7d2c110ff4082e14a249e4dc16
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801864"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577703"
 ---
-# <a name="pidlidclipstart-canonical-property"></a>PidLidClipStart の標準的なプロパティ
+# <a name="pidlidclipstart-canonical-property"></a>PidLidClipStart 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 カレンダー オブジェクトのインスタンスを 1 つの世界協定世界協定時刻 (UTC) でイベントの開始日時が指定し、定期的な一連の最初のインスタンスでは、UTC の日付の午前 0 時を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidClipStart  <br/> |
+|関連するプロパティ:  <br/> |dispidClipStart  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008235  <br/> |
-|データを入力します。  <br/> |PT_SYSTIME  <br/> |
-|領域:  <br/> |カレンダー  <br/> |
+|データの種類 :   <br/> |PT_SYSTIME  <br/> |
+|領域:  <br/> |予定表  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
@@ -61,7 +61,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: ad2e1f2d-57c3-4fb5-9e0f-db51640df84d
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: cf30d38efa7ab2d579746cca6add2aad8d4963f5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 12fb03ed5a165592113f49a202f777b0f301736d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801324"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568757"
 ---
 # <a name="mapi-client-application-overview"></a>MAPI クライアント アプリケーションの概要
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI クライアント アプリケーションは、MAPI プログラミング ・ インタ フェースを使用するアプリケーションです。 クライアント アプリケーションは、プライマリまたはセカンダリのフォーカスとしていずれかのメッセージのタスクを実装します。 電子メールを送受信するアプリケーションなどのメッセージング クライアント アプリケーションでは、その主な目的としてメッセージングを実装します。 非メッセージング クライアントなどのアプリケーション インベントリまたはアプリケーションの構成では、メッセージングは、セカンダリ機能です。
   

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 17d64211-6265-41f4-b016-3677d75af966
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8c38fef932388347725b829cd6443c009e384e3c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: be09b0f21017c81484fe538839e3bdd6137ff663
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802894"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582134"
 ---
 # <a name="pidtagipmdraftsentryid-canonical-property"></a>PidTagIpmDraftsEntryId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 Outlook の [下書き] フォルダーの**エントリ Id**が含まれています。 
   

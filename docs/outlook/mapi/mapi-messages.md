@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 417c113f-bd98-4515-85d1-09db7fc3a227
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1146fa0441d0b55a7610368324489bd3a6bb24e1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cf7876dacac40420fdedb8b6f55c99efcf56c4f7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801400"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579936"
 ---
 # <a name="mapi-messages"></a>MAPI メッセージ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージは、MAPI スプーラーとメッセージング システムを使用してサービス プロバイダーを介して別の 1 つのクライアント アプリケーションから送信される MAPI オブジェクトです。 MAPI でのほぼすべてのコンポーネントは、メッセージで動作します。 クライアントは、ユーザーを作成、保存、送信、およびさらにコピーし、別のフォルダーに移動するメッセージを削除を使用できます。 メッセージ ストア プロバイダーは、メッセージの管理とメッセージを MAPI スプーラーを無効またはトランスポート プロバイダーに提供するために必要があります。 MAPI スプーラーは、トランスポート プロバイダーは、メッセージング システムとの間のメッセージの受信と配信を処理し、受信者、メッセージのオプションのプロパティを設定し、適切なトランスポート プロバイダーでは、メッセージを移動します。 アドレス帳プロバイダーない直接のメッセージを処理、メッセージの受信者を記述するプロパティをサポートします。
   

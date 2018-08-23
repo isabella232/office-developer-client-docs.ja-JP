@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 57933d44-d47a-4e7f-ba95-b49b4934d0a5
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b72b8658270a8e007123df3ead01168208b8d1b1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b86ec02c0255d892c42a9be9610d31b76041822c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800938"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579110"
 ---
 # <a name="implementing-one-off-tables"></a>1 回限りのテーブルの実装
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロバイダーは、1 つまたは複数の一時テーブルを実装できます。 一時テーブルは、コンテナー内に直接、または送信メッセージの受信者リストに受信者を作成するために使用 1 回限りのテンプレートの概要の一覧です。 1 回限りのテンプレートは、アドレスの特定の種類に関連するデータを入力するフォームのユーザーの採用です。 ユーザーが完了すると、テンプレートを使用する、プロバイダーは新しい受信者を作成し、メッセージに追加します。 通常各テンプレートは、1 つのアドレスの種類を処理します。 ただし、複数の種類を処理するためのテンプレートまたは同じ型を処理するために複数のテンプレートの使用可能なです。 
   

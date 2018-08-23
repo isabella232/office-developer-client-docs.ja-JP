@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 2499587b-2a0e-4987-9bf7-591bef41b894
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d84704300602bada4cf93c9d3f6622feaf16f352
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b7be498473ef86b11006702f85089f0f95bb2e37
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803939"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580902"
 ---
 # <a name="skipblock-stream-structure"></a>SkipBlock ストリームの構造
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 SkipBlock ストリームの構造体は、ブロックの残りの部分の長さを指定する整数値で始まるデータのブロックです。 このストリームの構造体は、フィールド定義は、PropDefV2 形式の場合、 [FieldDefinition](fielddefinition-stream-structure.md)ストリームに存在します。 
   

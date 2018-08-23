@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 57435634-202d-4998-9931-4562f1a66f5f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c207b1db6a24cc60967735e2f4b1a4aa97007750
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a44974accea30b5d1406c9cc74570012f61639e5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803943"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580650"
 ---
 # <a name="slongarray"></a>SLongArray
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 PT_MV_LONG の種類のプロパティを説明するために使用する long 型の値型の配列が含まれています。 
   

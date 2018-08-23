@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 79727700-5ef1-4a29-9ed0-fd46c7de3202
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 863c95856f3198c74bb9d72881154676386f6a9f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d8fdd9ea4dfbc40d7e800be5e2df666738d2cd23
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "19804046"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577458"
 ---
 # <a name="supporting-formatted-text-in-incoming-messages-client-responsibilities"></a>受信メッセージでの書式付きテキストのサポート: クライアントの責任
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージング システム間でメッセージが転送されると、MAPI スプーラーはリッチ テキストの書式設定がメッセージのテキストとの同期であることを確認します。 MAPI スプーラーは、トランスポート プロバイダーに渡すメッセージの折り返しが設定されたバージョン内から[行う](rtfsync.md)関数を呼び出します。 トランスポート プロバイダーは、 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出すことによってメッセージに加えられた変更内容を保存し、新しい受信者にルーティングします。 
   

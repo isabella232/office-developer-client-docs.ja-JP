@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 62b7480e-b3eb-45fb-b74d-62f1dc918a53
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f5ce900fee3d40a46e66ac8f74f111db33d7522e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f95aa26d6104da657c6ae6ab0c449d45c073223a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800076"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580552"
 ---
 # <a name="folder-form-libraries"></a>フォルダー フォーム ライブラリ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 場合によっては、1 つまたは複数のフォームを特定のフォルダーに関連付ける可能性があります。 など、組織内の従業員すべてを与えられているの進行状況レポートのフォルダーを作成すると、進行状況レポートを保存するには、その個人メッセージ ストアです。 進行状況レポートは各ユーザーの進行状況レポートのフォルダーに固有であるため、システム全体のフォーム ライブラリの進行状況の報告書フォームを格納する適切なできない可能性があります。 ただし、各ユーザーの進行状況レポートのフォルダーの内容が関連付けられているテーブルの進行状況レポート フォームのコピーを保持することができます。 これは、進行状況レポートのフォームを使用して、指定したフォルダーの外部からユーザーを制限します。
   

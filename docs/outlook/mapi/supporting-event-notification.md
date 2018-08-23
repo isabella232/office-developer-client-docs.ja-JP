@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: a1e3e49c-8d1d-4f7e-ba5a-be441f0f10ae
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 45bfe9f9314a154bd5f096ac20f76f6bf4f259c3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1320528a2e123d36457bef929a8454155646f0da
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804020"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581000"
 ---
 # <a name="supporting-event-notification"></a>イベント通知のサポート
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 イベント通知をサポートできますが、複雑なために、MAPI には、プロセスの最も困難な部分を実装する 3 つのサポート オブジェクトのメソッドが用意されています。 これらのメソッドは、ユニットとして動作し、3 つのすべてまたはどれも、プロバイダーを使用する必要があります。
   

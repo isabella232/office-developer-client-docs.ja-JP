@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 8f8ee2cb-1c2a-4958-b01e-2f4aab689f89
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3b10ac5906be0f95930be3bef51fe2d78d583b03
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6e8ea7230ae86dee99cc4413715055fc53afa900
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800572"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579726"
 ---
 # <a name="imapiformmgrprepareform"></a>IMAPIFormMgr::PrepareForm
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 開始するためのフォームをダウンロードします。
   

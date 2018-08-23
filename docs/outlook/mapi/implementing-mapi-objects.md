@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: b1ee2533-8077-4976-846b-d42d148bf8c6
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d53304dd74a0e54974d479c66637079cd48b2fc8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d65ccec0ab270a59252c8a3ae94bdeca839fa807
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800931"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582365"
 ---
 # <a name="implementing-mapi-objects"></a>MAPI オブジェクトの実装
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI オブジェクトは、C++ のクラスや言語によっては、C のデータ構造を使用して実装できる API のクライアントの設定やサービス プロバイダーを使用します。 MAPI サービス プロバイダー インターフェイスと C または C++ でサービス プロバイダーを記述できます。クライアント アプリケーションは、C または C++ を使用することもできます。 可能であれば、クライアントとオブジェクト指向プログラミング ・ インタ フェースを使用するサービス プロバイダーは、C を使用する必要があります。 
   

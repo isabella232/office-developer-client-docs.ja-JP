@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 1087b8d6-0ac4-4290-86d2-b70d2619fd75
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 8bfb9237e150096044144ae7f2a95c3f489d2706
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: af470519c8b8a582ece6551eca9d927cee911e71
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800095"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568764"
 ---
 # <a name="form-server-interactions"></a>フォームのサーバー間のやり取り
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このセクションのトピックでは、クライアント アプリケーション、MAPI フォーム マネージャー、フォーム サーバー、およびさまざまなメッセージを開き、新しいメッセージを作成するなどの一般的な操作のためのフォーム オブジェクト間の相互作用について説明します。
   

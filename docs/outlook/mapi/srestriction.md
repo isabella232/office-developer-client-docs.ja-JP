@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c12b4409-da6f-480b-87af-1e5baea2e8bd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9748229799641d62b1649491c432f10164b49192
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5f8a76cb317ac9bf1b6a4dc4a92b6d6f0098e1d7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803998"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577402"
 ---
 # <a name="srestriction"></a>SRestriction
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 特定の行をテーブルの表示を制限するフィルターについて説明します。 
   

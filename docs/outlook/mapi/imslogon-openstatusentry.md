@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 850e256b-6b50-428c-aede-287edaf7b005
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 55cf41d251db4c84dad9f12d8f83d0b0dda63ff3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a48d8248878c64de827bb09030073e6becba3024
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801043"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571200"
 ---
 # <a name="imslogonopenstatusentry"></a>IMSLogon::OpenStatusEntry
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 状態オブジェクトを開きます。
   

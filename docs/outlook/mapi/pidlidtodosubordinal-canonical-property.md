@@ -1,5 +1,5 @@
 ---
-title: PidLidToDoSubOrdinal の標準的なプロパティ
+title: PidLidToDoSubOrdinal 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: e3bc15ef-155e-49fd-88e5-64713df9b939
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 9965ed059ba4596232111f5fbd86b9d177e3c3dc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 98dfdab24d2c4170609d9db1c3104a3f17436736
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802251"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578067"
 ---
-# <a name="pidlidtodosubordinal-canonical-property"></a>PidLidToDoSubOrdinal の標準的なプロパティ
+# <a name="pidlidtodosubordinal-canonical-property"></a>PidLidToDoSubOrdinal 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **DispidToDoOrdinalDate** ([PidLidToDoOrdinalDate](pidlidtodoordinaldate-canonical-property.md)) のプロパティがオブジェクトと同数の結果をソートするときは、リンク付けブレーカーとして機能します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidToDoSubOrdinal  <br/> |
+|関連するプロパティ:  <br/> |dispidToDoSubOrdinal  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x000085A1  <br/> |
-|データを入力します。  <br/> |PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_UNICODE  <br/> |
 |領域:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 使用する場合は、このプロパティを辞書順に並べ替える必要があります。 文字列のコンポーネントの文字は必要がありますのみの数字 0 から 9 までので構成されます。 「5555555」に、このプロパティ最初に設定する必要があります。 このプロパティの長さは、254 文字まで (終端の NULL 文字を除く) を超えない必要があります。
   
@@ -61,14 +61,14 @@ Mapidefs.h
 
 
 
-[PidLidToDoOrdinalDate の標準的なプロパティ](pidlidtodoordinaldate-canonical-property.md)
+[PidLidToDoOrdinalDate 標準プロパティ](pidlidtodoordinaldate-canonical-property.md)
 
 
 [MAPI プロパティ](mapi-properties.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

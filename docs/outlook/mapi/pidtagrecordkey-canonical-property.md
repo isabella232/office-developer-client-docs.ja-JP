@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a12fb9a2-799d-4112-b26c-4b2854c47cc2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: bd655c6245d25948d1dea1daace6a0644b47e378
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9add9246cdfb22f7c5ad579f425932f49d4a9ecd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803313"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581245"
 ---
 # <a name="pidtagrecordkey-canonical-property"></a>PidTagRecordKey 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 特定のオブジェクトのバイナリ比較が可能な一意の識別子が含まれています。
   

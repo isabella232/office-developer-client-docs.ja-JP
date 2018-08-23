@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 02e5b23f-1bdb-4fbf-a27d-e3301a359573
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: ed11677d09ae5acacced77373b2bca783d1ec0b7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 40a71592e658110dab81c9bcb4aec97f9930d014
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801432"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576478"
 ---
 # <a name="mapi-property-overview"></a>MAPI Property Overview
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロパティは、MAPI オブジェクトの属性です。 プロパティは、メッセージまたはメッセージのユーザーのアドレスの種類の [件名] 行などのオブジェクトについて何かを記述します。 MAPI では、多くのオブジェクトを記述するいくつかおよびいくつかに該当する特定の種類のオブジェクトに対してのみ、多くのプロパティを定義します。 クライアントとサービス ・ プロバイダーは、新しいカスタム プロパティを作成することで MAPI の一連の定義済みのプロパティを拡張できます。 クライアントは、新しいメッセージ クラスを記述するプロパティを定義でき、サービス プロバイダーは、ユーザーのメッセージング システムの独自の機能を公開するプロパティを定義できます。
   

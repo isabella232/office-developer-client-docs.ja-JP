@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 7659369a-0952-4f5a-a86b-91958c4c1a3f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7ea60b73fb1abe32b6db5e3c73d6ef3fac53d35d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 263370590a35f19482cc5ad7e56c65f6df0087fa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804131"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581301"
 ---
 # <a name="transport-provider-role-in-the-mapi-subsystem"></a>MAPI のサブシステムのトランスポート プロバイダーの役割
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 トランスポート プロバイダーのダイナミック リンク ライブラリ (Dll) では、MAPI スプーラーとメッセージの送信と受信を担当するメッセージング システムの部品間のインタ フェースを提供します。 MAPI スプーラーとトランスポート プロバイダーは、メッセージの送信や受信メッセージの責任を処理するために連携します。 MAPI スプーラーは、最初に使用されるし、不要になった時に解放する場合に、トランスポート プロバイダーの DLL を読み込みます。 同じシステムに複数のトランスポート プロバイダーをインストールすることができますが、MAPI が必要な 1 つのスプーラーを提供します。
   

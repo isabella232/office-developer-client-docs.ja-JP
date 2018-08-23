@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: cdb7d8c5-8e35-47ff-8be7-2cb17e341ad3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 84631ea6d332829430bf9d99488f8a1a5fdebac0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 735c778cd8e6ccb41de3d3d8cb0fdc163493f712
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801649"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572019"
 ---
 # <a name="message-store-tables"></a>メッセージ ストア テーブル
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストアのテーブルには、現在のプロファイルで、メッセージ ストア プロバイダーに関する情報が含まれています。 MAPI セッションごとに MAPI によって実装され、クライアントによって使用されるメッセージ ストアの 1 つのテーブルがあります。 クライアントは、特定のプロバイダーのすべてのインスタンスを検索する、または特定のメッセージ ストアを検索するのには次の表を使用できます。 
   

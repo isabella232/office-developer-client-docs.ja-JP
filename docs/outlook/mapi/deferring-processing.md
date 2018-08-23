@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: a791b95f-56ad-493a-9ba5-fb4c7dd80e89
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 8f26fc6a51c3abdb4d4d009183fa8263ce97b261
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2c4577a35315c9df0055e97de26dd0baf1a2b489
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799881"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580587"
 ---
 # <a name="deferring-processing"></a>処理の延期
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メソッドの呼び出しを可能な限りに MAPI_DEFERRED_ERRORS フラグを渡します。 MAPI メソッドの呼び出しの多くは、一度に複数のタスクを実行することができます設定したり、不要になった結果を得るまでか、要求されたタスクを延期するのにはプロバイダーの原因と、このフラグを受け入れるように最適化されています。
   

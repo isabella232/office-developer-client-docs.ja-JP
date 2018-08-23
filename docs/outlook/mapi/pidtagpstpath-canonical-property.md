@@ -10,18 +10,18 @@ api_type:
 - COM
 ms.assetid: a246d1aa-a08c-4687-a24e-168803cfdd6f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c119a47acce4f5a97892e7d0856540b73db1b390
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 02e8e7ce3984f0fb61e5721c6db0db54baac9667
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803226"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575043"
 ---
 # <a name="pidtagpstpath-canonical-property"></a>PidTagPstPath 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 構成を作成または個人用フォルダー ストア内のオブジェクトの場所が含まれています。
   

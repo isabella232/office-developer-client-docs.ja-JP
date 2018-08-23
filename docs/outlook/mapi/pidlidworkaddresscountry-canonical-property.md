@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 15b9db35-7038-40b0-9692-d93ed8ca76ba
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6360b43176afd1f33e65f42206dc7622697d481b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 36330524fb48707cc5355cb2cd213a1b0e54072c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802297"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579642"
 ---
 # <a name="pidlidworkaddresscountry-canonical-property"></a>PidLidWorkAddressCountry 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 連絡先の勤務先住所の国または地域を指定します。
   

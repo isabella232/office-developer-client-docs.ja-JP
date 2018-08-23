@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 66f1e246-a67a-4f8a-ae3a-6a8ec8c2b367
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e693e1c3d6cb975a3a329e15c0b1a6d08817461a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cb9a2ba72ee9fd9c45aefe9d0797930a4871404a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800347"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579285"
 ---
 # <a name="iablogonopenstatusentry"></a>IABLogon::OpenStatusEntry
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロバイダーの状態のオブジェクトを開きます。
   

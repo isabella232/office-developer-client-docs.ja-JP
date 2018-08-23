@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 263b9f24-eac8-4d34-8f66-dc87024b94b9
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 127c4a77b9184d8bb62925c5237c1aedec643992
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: dc8644a658b8aca97f80fcf0a942551509064bd6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801699"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581560"
 ---
 # <a name="openstreamonfilew"></a>OpenStreamOnFileW
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ファイルの内容にアクセスするのには OLE **IStream**オブジェクトを初期化します。 この関数は、UNICODE 文字列は、引数、 [OpenStreamOnFile](openstreamonfile.md)関数の ANSI バージョンとは異なり、できるので、パスとファイル拡張子を含むファイル名に任意の文字の。
   

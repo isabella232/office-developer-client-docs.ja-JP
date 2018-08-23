@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2dab5018-4214-4162-93bc-e5565f3ac24c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: bad754d21652d3f5278a6dad3ec06f4a0b533036
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c141ce5b4a8d44cc42a070d73e8e89f35e776fe9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803401"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576858"
 ---
 # <a name="pidtagrtfsyncbodytag-canonical-property"></a>PidTagRtfSyncBodyTag 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ テキストの先頭に表示される重要な文字が含まれています。
   

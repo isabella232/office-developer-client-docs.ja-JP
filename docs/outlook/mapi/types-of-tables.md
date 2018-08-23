@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: a1fc4f20-511f-4721-8f09-ec2a5fd0ccb0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 36456c6226b2eb74b8f15995ad0925381302523a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f55902190aa22694d89abd4d118a04d62a3c0d5b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804145"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581917"
 ---
 # <a name="types-of-tables"></a>テーブルの種類
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 別に、提示されている情報の種類ごとのテーブルの多くの種類があります。 テーブルは、クライアント アプリケーションと容易にアクセスし、重要な多くの種類のオブジェクトのプロパティを操作するサービス プロバイダーを有効にします。 
   

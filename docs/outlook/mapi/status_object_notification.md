@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2872130d-a36b-46ea-bfd1-4700fe3dd41b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 71e0a08436c925f0d68d63111722cc01bd73cc5f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ba93cd0343121751ab12514fe3f09e5a480d5b23
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804025"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582274"
 ---
 # <a name="statusobjectnotification"></a>STATUS_OBJECT_NOTIFICATION
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 変更によって影響のある状態のオブジェクトについて説明します。 
   

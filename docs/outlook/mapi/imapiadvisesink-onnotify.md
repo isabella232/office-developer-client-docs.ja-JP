@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9eec90d3-2369-4340-86ed-0efa58918ed5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 73eb92b0c1b88e114775231695b91157a3d26a2b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d052e7590ee502b55f2076d698587ab68820ca56
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800435"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576702"
 ---
 # <a name="imapiadvisesinkonnotify"></a>IMAPIAdviseSink::OnNotify
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 通知に応答するには、1 つまたは複数のタスクを実行します。 実行するタスクは、イベントおよび通知を生成するオブジェクトの種類によって異なります。 
   

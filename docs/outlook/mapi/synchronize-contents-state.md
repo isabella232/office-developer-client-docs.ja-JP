@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 52216bc3-8cbd-3856-ea46-78f7d0dd66ff
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 216691f2c1f94d658a5aa968d6a19148a9b3c06a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a2bdbeb39cce1e62569f364875c3828cdd530c63
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804065"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577248"
 ---
 # <a name="synchronize-contents-state"></a>コンテンツ同期状態
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
  このトピックでは、同期内容マシンの状態、レプリケーション状態中の動作について説明します。 
   

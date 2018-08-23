@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 80d31611-e508-4b17-b482-bedf76db26ff
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 104de38a41408091a6fbb69995de4f41f6fea6a2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8ffed8070c219e6611aebbcb1dd5cd181b662850
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803894"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579698"
 ---
 # <a name="setting-table-position-with-a-fractional-value"></a>小数値によるテーブルの位置設定
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 テーブルのユーザーは、合計を基準にして行のおおよその割合を表す位置に移動できます。 行を正確に移動するのではなく分割を配置するのには、このメソッドの部分にテーブルに基づく分数。 テーブルのユーザーは、テーブルの半分のポイントに、またはテーブルを使用する方法の 7/8 の行に移動できます。 
   

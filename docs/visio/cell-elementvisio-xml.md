@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3131bfbb-9bf6-d15d-c6ca-2f15bd038f39
 description: DocumentSheet、スタイル シート、PageSheet、または [シェイプ シート内に組み込むことができるセル要素を指定します。
-ms.openlocfilehash: fb983b31dc69741b12c27f47833213f7b5c3ba2b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 68ea20f3b2a9bebae3d8f6d12e0d818e30685710
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805041"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575631"
 ---
 # <a name="cell-element-visio-xml"></a>セル要素 ' Visio XML (')
 
@@ -149,7 +149,7 @@ DocumentSheet、スタイル シート、PageSheet、または [シェイプ シ
 |EndArrowSize  <br/> |線の終端にある矢印のサイズを指定します。  <br/> |[[EndArrowSize] セル ([Line Format] セクション)](endarrowsize-cell-line-format-section.md) <br/> |
 |EndTrigger  <br/> |アプリケーションによって生成されたトリガー数式が格納されています。このトリガー数式によって、1 次元図形の終点を移動するときに別の図形に対する接続を維持するかどうかを指定します。  <br/> |[[EndTrigger] セル ([Glue Info] セクション)](endtrigger-cell-glue-info-section.md) <br/> |
 |[Endx]  <br/> |親図形の原点を基準としたときの、1-D 図形の終点の x 座標を表します。  <br/> |[[EndX] セル ([1-D Endpoints] セクション)](endx-cell-1-d-endpoints-section.md) <br/> |
-|[Endy]  <br/> |親図形の原点を基準としたときの、1-D 図形の終点の y 座標を表します。  <br/> |[[EndY] セル ([1-D Endpoints] セクション)](http://msdn.microsoft.com/library/3fbfa4bc-7792-b6d9-d549-4602d252c293"%28Office.15%29.aspx) <br/> |
+|[Endy]  <br/> |親図形の原点を基準としたときの、1-D 図形の終点の y 座標を表します。  <br/> |[[EndY] セル ([1-D Endpoints] セクション)](endy-cell-1-d-endpoints-section.md) <br/> |
 |EventDblClick  <br/> |図形をダブルクリックしたときに評価されるイベント セルです。  <br/> |[[EventDblClick] セル ([Events] セクション)](eventdblclick-cell-events-section.md) <br/> |
 |[Eventdrop]  <br/> |図面ページに図形をインスタンスとしてドロップしたとき、または図形を複製したり貼り付けたときに評価されるイベント セルです。  <br/> |[[EventDrop] セル ([Events] セクション)](eventdrop-cell-events-section.md) <br/> |
 |EventMultiDrop  <br/> |インスタンスまたはシェイプを複製したり貼り付けたときに、図面ページに複数の図形をドロップしたときに評価されるイベント セルです。  <br/> |[[EventMultiDrop] セル ([イベント] セクション)](eventmultidrop-cell-events-section.md) <br/> |
@@ -168,7 +168,7 @@ DocumentSheet、スタイル シート、PageSheet、または [シェイプ シ
 |Gamma  <br/> |モニターやスキャナーなど、特定の出力装置に合わせてイメージの明暗度の強さを調整または補正します。既定値は 1 (補正なし) です。  <br/> |[[Gamma] セル ([Image Properties] セクション)](gamma-cell-image-properties-section.md) <br/> |
 |GlowColor  <br/> |図形に適用する外側のグローのストロークに使用する色を、RGB またはテーマの値で決定します。  <br/> |[[GlowColor] セル ([追加効果のプロパティ] セクション)](glowcolor-cell-additional-effect-properties-section.md) <br/> |
 |GlowColorTrans  <br/> |パーセントでの図形の光彩、線の色の透過性レベルを決定します。  <br/> |[[GlowColorTrans] セル ([追加効果のプロパティ] セクション)](glowcolortrans-cell-additional-effect-properties-section.md) <br/> |
-|GlowSize  <br/> |ポイントで図形の外部の光彩のサイズを決定します。  <br/> |[[GlowSize] セル ([追加効果のプロパティ] セクション)](http://msdn.microsoft.com/library/2ddc7a08-25b8-4903-b0dd-be72d1fa8075"%28Office.15%29.aspx) <br/> |
+|GlowSize  <br/> |ポイントで図形の外部の光彩のサイズを決定します。  <br/> |[[GlowSize] セル ([追加効果のプロパティ] セクション)](glowsize-cell-additional-effect-properties-section.md) <br/> |
 |[Gluetype]  <br/> |1-D 図形を別の図形に接着するときに静的接着 (点から点) と動的接着 (図形から図形) のどちらを使用するかを指定します。  <br/> |[[GlueType] セル ([Glue Info] セクション)](gluetype-cell-glue-info-section.md) <br/> |
 |Height  <br/> |図形の高さを図面単位で指定します。  <br/> |[[Height] セル ([Shape Transform] セクション)](height-cell-shape-transform-section.md) <br/> |
 |HelpTopic  <br/> |図形のヘルプ トピックの ID を指定します。  <br/> ||
@@ -222,7 +222,7 @@ DocumentSheet、スタイル シート、PageSheet、または [シェイプ シ
 |[Lockgroup]  <br/> |グループをロックして、グループを解除できないようにします。  <br/> |[[LockGroup] セル ([Protection] セクション)](lockgroup-cell-protection-section.md) <br/> |
 |LockHeight  <br/> |図形の高さをロックします。ロックすると、図形のサイズを変更しても高さは変更されません。  <br/> |[[LockHeight] セル ([Protection] セクション)](lockheight-cell-protection-section.md) <br/> |
 |[Lockmovex]  <br/> |図形の水平位置をロックします。ロックすると、図形は水平方向に移動できなくなります。  <br/> |[[LockMoveX] セル ([Protection] セクション)](lockmovex-cell-protection-section.md) <br/> |
-|[Lockmovey]  <br/> |図形の垂直位置をロックします。ロックすると、図形は垂直方向に移動できなくなります。  <br/> |[[LockMoveY] セル ([Protection] セクション)](http://msdn.microsoft.com/library/4ed8cab4-112a-e96a-f4e3-02490a6f87fa"%28Office.15%29.aspx) <br/> |
+|[Lockmovey]  <br/> |図形の垂直位置をロックします。ロックすると、図形は垂直方向に移動できなくなります。  <br/> |[[LockMoveY] セル ([Protection] セクション)](lockmovey-cell-protection-section.md) <br/> |
 |LockPreview  <br/> |図面を保存するたびにプレビューを保存するかどうかを指定します。  <br/> |[[LockPreview] セル ([Document Properties] セクション)](lockpreview-cell-document-properties-section.md) <br/> |
 |LockReplace  <br/> |図形を置換操作に使用できるかどうか (ターゲット図形または置換後の図形のいずれかとして) を示します。  <br/> |[[LockReplace] セル ([保護] セクション)](lockreplace-cell-protection-section.md) <br/> |
 |LockRotate  <br/> |2 次元図形をロックして、回転ハンドル、[左へ 90 度回転] コマンド、[右へ 90 度回転] コマンドによる回転操作ができないようにします。  <br/> |[[LockRotate] セル ([Protection] セクション)](lockrotate-cell-protection-section.md) <br/> |

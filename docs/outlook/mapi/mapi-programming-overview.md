@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 30ac637a-874f-4660-b5d0-d28d69486f64
 description: '�ŏI�X�V��: 2012�N6��25��'
-ms.openlocfilehash: 177bd84addb001970e52801fd2cddba3a8d81706
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bd9cdd9119f94e1f7684be34e1b4ef6fb40ab2bf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801414"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576506"
 ---
 # <a name="mapi-programming-overview"></a>MAPI �v���O���~���O�̊T�v
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 この Microsoft Outlook メッセージング API (MAPI) の参照は、C に書かれてと、C++ 開発者は、さまざまなニーズし、メッセージが発生します。 開発者にとって、メッセージング機能を持つアプリケーションを拡張するために MAPI を使用する、特定の前提となる知識は必要ありません。 メッセージの背景と、コンポーネント オブジェクト モデル (COM) 本格的なワークグループ アプリケーション、または特殊なメッセージング システムのサービス用のドライバーを作成するのには MAPI を使用する必要があります。
   

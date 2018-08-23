@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: eae44469-b217-4d05-b47f-5a0b1fab7056
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5cc8261dfee6803492ffcf62c182930e2ac6d425
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 614d9ab1037f0fc2735112801e30e530bfafe4db
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801406"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569072"
 ---
 # <a name="mapi-message-store-provider-overview"></a>MAPI メッセージ ストア プロバイダーの概要
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストア プロバイダーは、ストレージとのメッセージとその他の情報は、クライアント アプリケーションのユーザーの取得を処理します。 メッセージの情報は、メッセージ ・ ストアと呼ばれる階層的なシステムを使用して編成されます。 メッセージ ・ ストアは、さまざまな種類のメッセージを保持しているフォルダーと呼ばれるコンテナーに複数のレベルで実装されます。 メッセージ ・ ストア内のレベルの数に制限はありません。フォルダーには、多くのサブフォルダーを含めることができます。 
   

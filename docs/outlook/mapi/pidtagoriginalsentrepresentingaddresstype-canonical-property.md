@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 93f40161-d4e5-4ef9-a55f-cee62529fc04
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7fcd358b2ada5137ed28f4439dcc9d4ebdc50305
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ce3678c5137caec2e9f80c7fc15cde0ae99441ae
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803076"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572530"
 ---
 # <a name="pidtagoriginalsentrepresentingaddresstype-canonical-property"></a>PidTagOriginalSentRepresentingAddressType 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 元のメッセージが送信されたメッセージのユーザーのアドレスの種類が含まれています。
   

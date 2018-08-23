@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 7fdc1494-4f40-38bd-d363-144ca70e5906
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 752756cbcf6c1ce487188dd4b9ba55eee6506cd4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 430734fe98799c386e71612355b194a6b8edf00a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804181"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575414"
 ---
 # <a name="upload-message-state"></a>メッセージ アップロード状態
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
  このトピックでは、アップロード メッセージの状態、レプリケーションの状態マシンの中の動作について説明します。 
   

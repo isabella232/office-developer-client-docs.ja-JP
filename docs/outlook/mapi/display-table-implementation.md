@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: eb17675a-35e0-4545-b394-789d343510aa
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 07ad94c423c3be425dc905dc578f55ad2c467a95
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3e31dd7b25b3abf333505c8bde57f61be7a10901
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799921"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580608"
 ---
 # <a name="display-table-implementation"></a>表示テーブルの実装
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 表示テーブルを使用して、プロパティ シートでは、1 つまたは複数のタブ付きプロパティ ページを表示して、おそらく 1 つまたは複数のプロパティを編集するのには専用の特別なダイアログ ボックスで構成されるを表示します。 関連付けられているテーブルは、すべてのディスプレイで、 [IAttach: IMAPIProp](iattachimapiprop.md)インターフェイスの実装です。 [IMAPIProp](imapipropiunknown.md)の実装では、プロパティ シートに記載されているプロパティのデータを保持します。 
   

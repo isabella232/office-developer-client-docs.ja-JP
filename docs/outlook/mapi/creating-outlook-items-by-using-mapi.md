@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 92070b45-33cf-4b19-a899-7956bda79752
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 416ff5b823ad352a71e7591f2c969320806d25a1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 52adb2b4e09b520eda956891974e6d8e434422ff
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799868"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576555"
 ---
 # <a name="creating-outlook-items-by-using-mapi"></a>MAPI を使用した Outlook アイテムの作成
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このセクションのトピックでは、MAPI を使用して Outlook アイテムを作成する方法をデモンストレーションします。
   

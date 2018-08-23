@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: ca153737-75dc-426a-a410-7a7ab3264f23
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 844880e5a1e40b51ece30baafd969372e7d43121
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e8fa8df4e1439db3f1bc688d282e5ebdd3503024
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800005"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575505"
 ---
 # <a name="ending-a-mapi-session"></a>MAPI セッションの終了
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアントがセッションを終了、ユーザーの要求への応答としてか、すぐにしたり、すべての送信メッセージが処理されると、重大なエラーが発生したとき。 常にクライアントが必要であるは、保留中のメッセージを送信するトランスポート プロバイダーにアクセスできるようにし、送信先のメッセージング システムにログオンします。 場合は、このようなクライアントは、メッセージを送信し、すぐにログオフ、メッセージは、ユーザーが再びログオンし、ログオンしているメッセージを送信するのに十分な時間のままになるまで送信キューに残ることがあります。
   

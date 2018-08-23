@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 60ebbcd5-b758-4c96-b8ec-089e0aae1a5f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f346baf303db9da765eec183d168b370547ec2de
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2e1cff8148815c3e03b92e4d57d1c6a303943c9c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803342"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578165"
 ---
 # <a name="pidtagresourcemethods-canonical-property"></a>PidTagResourceMethods 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **IMAPIStatus**インタ フェース内の状態のオブジェクトでサポートされているメソッドを示すフラグのビットマスクを格納します。 
   

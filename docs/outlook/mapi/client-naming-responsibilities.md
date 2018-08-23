@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: dbb6ba5f-18c8-426f-9f50-ce6f2fd1dc5b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a97d108b2f36b40e5f8818ea81c138d7384ce9b0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f47193bf8866622fa2e6d1f849d0568471c5461c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799803"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580783"
 ---
 # <a name="client-naming-responsibilities"></a>クライアントの命名責任
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 クライアントは、ゲートウェイで変換する必要があるプロパティの名前付け規則に従う必要があります。 マッピング可能なプロパティを保持するために指定されている 5 つのプロパティ セットのいずれかの名前付きプロパティとしては、翻訳対象のすべてのプロパティを作成する必要があります。
   

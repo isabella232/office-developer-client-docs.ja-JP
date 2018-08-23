@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 84d9c5b5-e734-4c07-b4cc-1d7b13c1ed19
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e0c59b569f4f01584fd65a7c3e13d6daac69d8a4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1f068ce2e8d98caa7d8733a182c051a820848333
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803471"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579810"
 ---
 # <a name="pidtagscheduleinfofreebusybusy-canonical-property"></a>PidTagScheduleInfoFreeBusyBusy 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 状態がビジー状態である時間のブロックが含まれています。
   

@@ -1,5 +1,5 @@
 ---
-title: PidLidVerbResponse の標準的なプロパティ
+title: PidLidVerbResponse 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6f3db5ac-f1cb-4c55-ab88-c126dd5f48ee
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 267fcc2b6f8902b1f9abb7adcd4409875fc1a7b8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 2fa762a44a107f826923d71faa79fe865413c55c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802278"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581042"
 ---
-# <a name="pidlidverbresponse-canonical-property"></a>PidLidVerbResponse の標準的なプロパティ
+# <a name="pidlidverbresponse-canonical-property"></a>PidLidVerbResponse 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 回答者が選択した返信のオプションを指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidVerbResponse  <br/> |
+|関連するプロパティ:  <br/> |dispidVerbResponse  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x00008524  <br/> |
-|データを入力します。  <br/> |PT_UNICODE  <br/> |
+|データの種類 :   <br/> |PT_UNICODE  <br/> |
 |領域:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは通常、回答者が投票する**dispidVerbStream** ([PidLidVerbStream](pidlidverbstream-canonical-property.md)) のプロパティに含まれる区切られた値のいずれかに設定します。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

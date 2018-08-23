@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b4c0655c-1a3a-4f89-a977-0431db596512
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2cf5ff69e8453b2da26fd5044823ddf4f99a9f45
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f7a236c2a7e307d278cac5ef413cbd2f600bf09f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800074"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582099"
 ---
 # <a name="flaglist"></a>FLAGLIST
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 名前解決の処理中にアドレス エントリのステータスを示すために使用されるフラグの一覧が含まれています。
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e5ae37ea-81a5-49c7-9ad0-0bfac518426c
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 29fdbf060576ee9309473fddf8740b06229dae9c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9aa038958e26652ae7ead728ab15d068e080dc69
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801211"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579887"
 ---
 # <a name="itabledatahrinsertrow"></a>ITableData::HrInsertRow
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 テーブルの行を挿入します。 
   

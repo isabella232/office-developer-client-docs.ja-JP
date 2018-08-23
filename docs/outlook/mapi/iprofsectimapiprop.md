@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4e704044-5230-4521-a0d2-b7c2f981c954
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c0653caec5f3cac531206e1bb9c4330cac5f3133
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a8152a9cad7623a077cd9df3f678a9ada56e3960
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801158"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577962"
 ---
 # <a name="iprofsect--imapiprop"></a>IProfSect : IMAPIProp
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロファイル セクション オブジェクトのプロパティを使用します。 
   

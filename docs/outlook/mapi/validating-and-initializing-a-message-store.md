@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 74f0a1fe-2a79-4b32-ab88-85a8839a2639
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 48883ec33db9ffd6b3e7cc6e16ae9c2487a31607
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7a5a5045594e87953d967fddbdeefd5ac18c8a3d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804224"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581973"
 ---
 # <a name="validating-and-initializing-a-message-store"></a>メッセージ ストアの検証と初期化
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MDB_NO_MAIL フラグを設定せずには、 [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md)メソッドで、メッセージ ストアを開く、MAPI はいくつかのフォルダーを作成し、それらに既定の名前とロールを割り当てます。 MAPI は、クライアントまたはメッセージ ストア プロバイダーの作成を担当する場合としない発生する必然的に非互換性を避けるためにこれらのフォルダーを作成する必要があります。 
   

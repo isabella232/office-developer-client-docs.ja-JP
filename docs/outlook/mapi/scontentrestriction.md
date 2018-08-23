@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: 784c8a5a-493e-48e6-8784-ba8122c76e3d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 34177aee48adad7eecb40836a247705fc22d2a32
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 43703051193ffacec6a54355eeea74edf904f186
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803840"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580573"
 ---
 # <a name="scontentrestriction"></a>SContentRestriction
  
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 検索文字列に一致する内容を持つ列を含む行だけを表形式ビューを制限するために使用されるコンテンツの制限について説明します。 
   

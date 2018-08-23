@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 87186764-fb58-4cdf-804d-bb13c5a8cb65
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 01d25614780f10f30d9e1314ea7f60ad3fbb4af0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 336f2b4bd6a4251548284eae91a51ad7018949c9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802742"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582127"
 ---
 # <a name="pidtagextendedrulesizelimit-canonical-property"></a>PidTagExtendedRuleSizeLimit 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 最大のサイズ (バイト単位)、ユーザーは「拡張」ルールを 1 つに蓄積します。
   

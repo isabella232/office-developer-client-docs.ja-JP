@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f21fba96-c5ca-4d41-9b93-c7955ab7327f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 6624c4abf05dc7df9fc79df43f1d0fe76251d052
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b77a58b04e5cdeee7a9e84051a6ed287c1a20115
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800816"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578312"
 ---
 # <a name="imapisupportstorelogofftransports"></a>IMAPISupport::StoreLogoffTransports
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストアの正常型解放を要求します。
   

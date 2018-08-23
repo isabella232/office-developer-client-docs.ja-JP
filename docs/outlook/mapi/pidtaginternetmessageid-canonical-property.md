@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 5c93d00c-a199-4d45-9bf6-87bd2ffe4784
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7b0af907fd5346de5b818c9c75a3d115e598b5e7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3ce5de883d28d7575a8abb83ec48454752ea7ba6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802883"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580482"
 ---
 # <a name="pidtaginternetmessageid-canonical-property"></a>PidTagInternetMessageId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [RFC2822] で指定されているメッセージ ID] フィールドに対応します。
   

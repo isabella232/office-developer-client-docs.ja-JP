@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: e37fc9d8-433b-41b4-84f2-42a952063f35
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: ad3499cc1ff3bd8b633fa48173ab8455d5d8d124
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7a2dbe8d2143fd330ae1f5ca5804e30b79909576
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801689"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569412"
 ---
 # <a name="opening-message-text"></a>開始メッセージのテキスト
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージのテキストが格納されているいずれかでその**PR\_本文**プロパティまたは**PR\_RTF\_圧縮**プロパティ。 詳細についてを参照してください**PR\_本体**([PidTagBody](pidtagbody-canonical-property.md)) **PR\_HTML** ([PidTagHtml](pidtaghtml-canonical-property.md)) と**PR\_RTF\_圧縮**([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))。 
 

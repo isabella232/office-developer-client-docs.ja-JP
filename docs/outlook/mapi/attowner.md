@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 3c6a4050-fd97-42ce-abb1-118254b367bd
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0cb40c3c644618bdf65a2c90a91580a5be8fc88c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 865d929f3348710b7786f4182670f3304a3a9244
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799719"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578039"
 ---
 # <a name="attowner"></a>attOwner
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **AttOwner**属性は、文字列の配置のエンド ・ ツー ・ エンドのようにエンコードされます。 **AttOwner**の形式は次のとおりです。 
   

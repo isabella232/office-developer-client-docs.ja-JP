@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 993f5bca-58a6-455d-8a25-6e08b441ad31
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7a42a3b50cfa5630ac66cb03caac06dd7cb00e6f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cca22b466b1e0d2da9ca9cc009586df08316270c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803212"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581056"
 ---
 # <a name="pidtagprovideruid-canonical-property"></a>PidTagProviderUid 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージを処理するサービス プロバイダーの**MAPIUID**構造体が含まれています。 
   

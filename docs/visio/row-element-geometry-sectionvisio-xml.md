@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2b273958-1997-7c63-4a61-d231f023a81f
 description: 直線と図形を構成する円弧の頂点の座標を一覧表示する行が含まれています。
-ms.openlocfilehash: 7a829651c4cab62a5c583d068211b9ffa20e725e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1581c87ae34eff4f01054a2340c18f1e55456cfb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806283"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581693"
 ---
 # <a name="row-element-geometry-section-visio-xml"></a>行要素 ([Geometry] セクション) ('Visio XML')
 
@@ -87,7 +87,7 @@ ms.locfileid: "19806283"
 |ArcTo  <br/> |円弧の x 座標と y 座標、および弧を格納します。  <br/> |[[ArcTo] 行 ([Geometry] セクション)](arcto-row-geometry-section.md) <br/> |
 |楕円  <br/> |楕円の中心点および楕円上の 2 つの点に対する x 座標と y 座標を格納します。  <br/> |[[Ellipse] 行 ([Geometry] セクション)](ellipse-row-geometry-section.md) <br/> |
 |EllipticalArcTo  <br/> |楕円の弧の端点に対する x 座標と y 座標、円弧のコントロール ポイントに対する x 座標と y 座標、x 軸から楕円の長軸までの角度、および楕円の長軸と短軸との比率を格納します。  <br/> |[[EllipticalArcTo] 行 ([Geometry] セクション)](ellipticalarcto-row-geometry-section.md) <br/> |
-|InfiniteLine  <br/> |無限線上の 2 つの点に対する x 座標と y 座標を格納します。  <br/> |[[InfiniteLine] 行 ([Geometry] セクション)](http://msdn.microsoft.com/library/Contains the x- and y-coordinates of two points on an infinite line.%28Office.15%29.aspx) <br/> |
+|InfiniteLine  <br/> |無限線上の 2 つの点に対する x 座標と y 座標を格納します。  <br/> |[[InfiniteLine] 行 ([Geometry] セクション)](infiniteline-row-geometry-section.md) |
 |[Lineto]  <br/> |直線セグメントの最後の頂点に対する x 座標および y 座標を格納します。  <br/> |[[LineTo] 行 ([Geometry] セクション)](lineto-row-geometry-section.md) <br/> |
 |MoveTo  <br/> |図形の最初の頂点に対する x 座標および y 座標を格納します。または、パスを切断した後の最初の頂点に対する x および y 座標を表します。  <br/> |[[MoveTo] 行 ([Geometry] セクション)](moveto-row-geometry-section.md) <br/> |
 |[Nurbsto]  <br/> |x 座標と y 座標、最後から 2 番目のノットの位置、最後のウェイトの位置、最初のノットの位置、最初のウェイトの位置、および NURBS (nonuniform rational B-spline) の数式を格納します。  <br/> |[[NURBSTo] 行 ([Geometry] セクション)](nurbsto-row-geometry-section.md) <br/> |

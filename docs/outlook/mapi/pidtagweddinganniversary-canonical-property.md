@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 815dfc6e-dbc7-4981-9ad3-c1f127a3ee92
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d4c7f0964a822021f760f9fb5ebb56113221677f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f7daa7a99918be8657eade5e759494104123d559
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803660"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577444"
 ---
 # <a name="pidtagweddinganniversary-canonical-property"></a>PidTagWeddingAnniversary 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ユーザーの結婚記念日の日付が含まれています。
   

@@ -1,5 +1,5 @@
 ---
-title: PidTagControlType の標準的なプロパティ
+title: PidTagControlType 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 7728fa2f-4a59-4e86-90f1-4384824598aa
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: fba82fef7c5330f538521d8d5fbdbcecc061ee27
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 3c1d415cc9aa4e66b6c4b17262f9a491fc01f6bd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802640"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574126"
 ---
-# <a name="pidtagcontroltype-canonical-property"></a>PidTagControlType の標準的なプロパティ
+# <a name="pidtagcontroltype-canonical-property"></a>PidTagControlType 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ダイアログ ボックスで使用されているコントロールのコントロールの種類を示す値が含まれています。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_CONTROL_TYPE  <br/> |
+|関連するプロパティ:  <br/> |PR_CONTROL_TYPE  <br/> |
 |識別子:  <br/> |0x3F02  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
 |領域:  <br/> |MAPI 表示テーブル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティは、次の値の 1 つだけ持つことができます。
   
@@ -106,7 +106,7 @@ mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

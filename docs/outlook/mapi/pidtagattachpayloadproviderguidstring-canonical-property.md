@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: c9d4b561-53b3-492b-9324-9376dd7abddf
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9e581f040b3d7d9e204dd41431b1eba650b971a0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1313ac62bd2ee6c1db27bd1c583f56dadc1bff1e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802494"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574301"
 ---
 # <a name="pidtagattachpayloadproviderguidstring-canonical-property"></a>PidTagAttachPayloadProviderGuidString 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MIME X ・ ペイロード ・ プロバイダーの Guid のヘッダー フィールドの値が含まれています。
   

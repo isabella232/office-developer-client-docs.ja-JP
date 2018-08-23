@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: bce46687-17dc-4a3f-96be-303d8755158e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: aa149a81102a4981712ea3ca897d8b1ad448a1eb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 649490f18bb1a14a7056b49fd846e893fba304bd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803332"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575211"
 ---
 # <a name="pidtagrenderingposition-canonical-property"></a>PidTagRenderingPosition 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メインのメッセージのテキスト内の添付ファイルのレンダリングに使用する文字数で、オフセットが含まれています。
   

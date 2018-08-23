@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f7047e4e-0fb3-476b-9568-8f1135e6d970
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5b711b1e0db0fab93016d3f1c979d81a142c9946
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b4c497e77b9dfcea13742535148180275495717d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802195"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581868"
 ---
 # <a name="pidlidtaskassigner-canonical-property"></a>PidLidTaskAssigner 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
  名が前回したユーザーにタスクが割り当てられます。 
   

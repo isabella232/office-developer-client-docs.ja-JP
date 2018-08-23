@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1ed48838-7409-4329-a778-8cabae058200
 description: InfoPath 2013 外部自動化の開発者向けリファレンスへようこそ。このドキュメントには、外部アプリケーションまたはアドインから InfoPath を自動化するマネージ コード ソリューションの作成に役立つ、概要、プログラミング タスク、およびクラス ライブラリ リファレンス情報が記載されています。
-ms.openlocfilehash: ff9cd36032cdab432776bb4517bb2749037eae51
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bed2eafe532c50f33a1366a02e937bceee097601
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799019"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575260"
 ---
 # <a name="infopath-developer-reference-for-external-automation"></a>InfoPath 外部自動化の開発者向けリファレンス
 
@@ -29,6 +29,6 @@ InfoPath 2013 外部自動化の開発者向けリファレンスへようこそ
 - [Microsoft Office デベロッパー センター](http://msdn.microsoft.com/en-us/office/default.aspx)
 - [Office 開発者向けドキュメントのドキュメントの表記規則](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
 - [Microsoft アクセシビリティ](http://www.microsoft.com/ENABLE/)
-- [Microsoft プライバシーに関する声明](http://privacy.microsoft.com/en-us/default.mspx)
+
   
 

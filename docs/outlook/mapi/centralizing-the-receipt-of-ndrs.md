@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: fbe1f4f6-28f8-40b8-b551-192c0ba48c18
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0af587bd07de9445f143be316798059eaef402e0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 16a150105211231af54ccfdc5d1565aeecea729e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799782"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579439"
 ---
 # <a name="centralizing-the-receipt-of-ndrs"></a>Ndr を受信確認を一元化すること。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **配信不能レポート (Ndr) が到着したを中心に、クライアントの複数のインスタンスを同時に実行しているとき**
   

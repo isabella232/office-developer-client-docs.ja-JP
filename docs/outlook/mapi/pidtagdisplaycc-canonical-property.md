@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 00377e78-a208-4942-a7a6-893b2a71ab0b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6257557a8848c1abbaf8ceb15f719c50e4fec8c4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3d27ad5fbc02e3883d6f74129323165394c4cf2b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802701"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577731"
 ---
 # <a name="pidtagdisplaycc-canonical-property"></a>PidTagDisplayCc 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ASCII のリスト セミコロン (;)、カーボン コピー (CC) メッセージの受信者の表示名にはが含まれています。 
   

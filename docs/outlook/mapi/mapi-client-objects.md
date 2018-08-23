@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 11304a4c-d986-4ad9-a140-19a59825a8df
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fb37c15e6544798a956e865e6c8c6d62bee44d28
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4242e466b0e784bb260d0525db0e253f1c1f37f3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801342"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568771"
 ---
 # <a name="mapi-client-objects"></a>MAPI クライアント オブジェクト
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージング クライアント アプリケーションの標準的な実装の 1 つのオブジェクト、アドバイズ シンクします。 シンクの継承からのアドバイス、 [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md)インタ フェースおよび MAPI によってし、イベント通知のためのプロバイダーのサービスを提供します。 一部のクライアントでは、進行状況ダイアログ ボックスの表示をサポートするために進行中のオブジェクトも実装します。 
   

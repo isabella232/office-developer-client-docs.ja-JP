@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 62aee641-b73f-4f53-9e8d-adf010c9ea1a
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 776f797d0c96d9173e114fd499d6cca0494a0a43
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 91c69489e1a72c5cd702a3c4d0392220a89c38fd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801534"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580384"
 ---
 # <a name="mapisvcinf-help-file-mappings-section"></a>MapiSvc.inf [Help File Mappings] セクション
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **[ヘルプ ファイルのマッピング]** セクションには、サービスによって生成されるエラーのヘルプを提供するファイルを 1 つのメッセージ サービスをマップの各エントリが含まれています。 このセクションのエントリは、次の形式を使用します。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d840aac9-f572-958b-2e1c-aea5c01c42b2
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 1e33f1d2327c93decc1f0310129ff187fef97c6b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 120df88231c6eed9aa6c3fbef2ea367e94dbd504
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801200"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579705"
 ---
 # <a name="ipstx6disconnectstore"></a>IPSTX6::DisconnectStore
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ローカル ストアの接続を切断します。
   

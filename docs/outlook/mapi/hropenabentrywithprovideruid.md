@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 83821a86-abff-460c-bb8e-9fd9d232dc6b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e33e656e70802437ab8b8717c5e175e2a13e384e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ed68e1fdb7fb990a2c19aa0bd263439c0966231d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800303"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578207"
 ---
 # <a name="hropenabentrywithprovideruid"></a>HrOpenABEntryWithProviderUID
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 _PEmsabpUID_によって識別される、Exchange アドレス帳を使用して**エントリ Id**が表示されます。 この関数は、この関数を使用すると、予想される Exchange アドレス帳プロバイダーを使用して[アドレス帳コンテナー](iaddrbook-openentry.md)が開かれていることを除いてに、[アドレス帳コンテナー](iaddrbook-openentry.md)同様に動作します。 
   

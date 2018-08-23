@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 4e1804bf-4c50-4942-a7ab-9a8caf1be7e5
 description: '�ŏI�X�V��: 2012�N6��25��'
-ms.openlocfilehash: d5798f4836f6b5635c8e04bd380e53ade34384a2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3fa32b680f5016d4417efdcf62e9bb1f04a51845
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804204"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581385"
 ---
 # <a name="using-multiple-exchange-accounts"></a>������ Exchange �A�J�E���g��g�p���܂��B
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 Microsoft Outlook 2010 および Microsoft Outlook 2013 は、複数の exchange 電子メール アカウントとの統合をサポートします。 Outlook 2010 または Outlook 2013 では、ユーザーが同じプロファイルに 2 つの exchange アカウントを追加を活用し、ながら発行済みのグローバル アドレス一覧 (GAL)、Exchange の出力を Office の構成では、フォルダーの共有など、Exchange の豊富な機能です。
   

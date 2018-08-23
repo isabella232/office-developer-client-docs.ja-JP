@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: f6b31bb4-69dd-43de-b62b-abfa99557641
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: bf1a84a1f305580fc9d9085753ab7eb5c62b8aa9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cbad4b903592f83fc7d72fde21f149c9835f2e23
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800093"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575638"
 ---
 # <a name="fnidle"></a>FNIDLE
  
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI アイドル エンジンを呼び出すの優先順位に従って定期的にアイドル状態のルーチンを定義します。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 09e4b427-316b-4630-9f3d-81e74f040d7b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 480a50bd8c3738ad7d0c178cb4cabfdecd15412e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 81f9388b67d3194fe1442091b9f4f75a7671cb6d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801238"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579649"
 ---
 # <a name="itnefsetprops"></a>ITnef::SetProps
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 元のメッセージまたは添付ファイルを変更することがなくカプセル化されたメッセージまたは添付ファイルの 1 つまたは複数のプロパティの値を設定します。 
   

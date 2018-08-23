@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 6e1531ac-489b-4224-921a-8fd13ace9497
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b97446c946c31ca8b55ce6c412814b48f4ee363c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8efceed4910d057d6dcca742dfe9b8f0010c968e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803500"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578676"
 ---
 # <a name="pidtagsenderemailaddress-canonical-property"></a>PidTagSenderEmailAddress 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ送信者の電子メール アドレスが含まれています。
   

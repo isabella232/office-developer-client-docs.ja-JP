@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: f3475206-0237-4b5b-8efd-abd5d5e0b6c3
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 406451adac3cd73286feb787bd6b4d2f356aa283
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9a0fad8fa20b2d94077f9fbdf8a3c595c0ab219e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803702"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580867"
 ---
 # <a name="property-sheet-implementation"></a>プロパティ シートの実装
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロパティ シートは、オブジェクトのプロパティを表示するためのダイアログ ボックスです。 プロパティは、読み取り専用でのみ表示すること、ユーザーの有効化または変更するユーザーを有効にすると、読み取り/書き込み。 プロパティ シートには、ページと呼ばれる 1 つまたは複数の重複している子ウィンドウが含まれています。 各ページには、関連するプロパティのグループを設定するためのコントロールのウィンドウが含まれています。 ユーザーは、プロパティ シートの前景色に対応するページを表示するタブを選択してページを移動します。
   

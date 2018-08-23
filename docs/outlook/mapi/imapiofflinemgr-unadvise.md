@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 250b9137-facb-81a2-41b1-96a57366c04e
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b52dcd87c8714ad59db560a5ae4a8300f9cc83ae
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 35dfc7af9852609dcfcc3fcb9d65ec2e4afa9632
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800631"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579523"
 ---
 # <a name="imapiofflinemgrunadvise"></a>IMAPIOfflineMgr::Unadvise
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 オフライン オブジェクトのコールバックをキャンセルします。
   

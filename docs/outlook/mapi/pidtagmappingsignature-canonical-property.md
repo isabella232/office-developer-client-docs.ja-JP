@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: a5e9f807-12a9-4bc9-a6a5-17579e747ffa
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0a83e0aa8f7ab1eb1f30e3ba97d3ea36f16fd873
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6017871b9567406af0898eede0d5659b468b3343
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802958"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581035"
 ---
 # <a name="pidtagmappingsignature-canonical-property"></a>PidTagMappingSignature 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 特定の MAPI オブジェクトの名前付きプロパティのマッピングの署名が含まれています。 
   

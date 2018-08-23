@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: f2aa2376-b293-4d05-9104-218cc1fe1758
 description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 0195c68dae4a9d144da68a5e6d4ab84edca5c880
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 396a6c01d0b9cd867706a7dd4997bd6ddd7fd147
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801462"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578291"
 ---
 # <a name="mapi-special-folders"></a>MAPI ���ʂȃt�H���_�[
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI では、特定のメッセージの種類の既定のフォルダーとして定義済みのロールを提供するために特別ないくつかのフォルダーを定義します。 これらの特別なフォルダー通常は削除できませんし、特別なエントリの識別子のプロパティがあります。
   

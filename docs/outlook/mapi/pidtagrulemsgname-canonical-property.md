@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: eefbcdd4-9841-4742-b976-e85c8e686dda
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 962f77662452138d596b0a9364775f24118e66ec
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 83436f2183e05fe6c3b2672728b37d518d532bf9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803430"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582225"
 ---
 # <a name="pidtagrulemsgname-canonical-property"></a>PidTagRuleMsgName 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 拡張ルールの名前が含まれています。
   

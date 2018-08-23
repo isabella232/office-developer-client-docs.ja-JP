@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: bc979398-f1ad-4496-b982-428b95719369
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b15b87064cc30035004596e93c20ca7d5f653c9f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1717e30679fb3f6721690db75fb5dd402048eb09
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803055"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575050"
 ---
 # <a name="pidtagobsoletedmessageids-canonical-property"></a>PidTagObsoletedMessageIds 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 このメッセージの優先するメッセージの識別子が含まれます。
   

@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: cc3e1546-e58b-413f-82d7-4efeb86b0000
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 33bf6780979ee25739abf93d89744e1517363c63
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 61e1039a89f47fe29f9b5a1ba9203cfc88d9797e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803692"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577521"
 ---
 # <a name="posting-a-message"></a>メッセージを投稿
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージを投稿することは、メッセージを送信することに似ています。 主な違いは、リンク先です。 1 つまたは複数のメッセージング システム間で 1 つまたは複数の受信者に送信されるのではなく、現在のメッセージ ストア内のフォルダーに投稿されたメッセージのままです。
   

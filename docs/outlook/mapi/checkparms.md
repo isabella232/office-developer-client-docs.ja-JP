@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 328f12f0-e4e7-407f-8eb8-0d4bf543962d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e7a4fde57515f0b8a41b9acf4adb01dd177a7a19
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5732dd3c1587c127cf153ebcadd9b791e6abb9ea
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799791"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582036"
 ---
 # <a name="checkparms"></a>CheckParms
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPI によって呼び出されるサービス プロバイダーのメソッドのデバッグ パラメーターを検証するために内部の関数を呼び出します。 
   

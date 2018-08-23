@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b6de7c6a-f2e7-4248-adea-d354924a8bbf
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e4f4cdd1d0ed2e03d49f471e6e91464b7973c920
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fd9a91b089bb06e6dfe34a1a144245d404adb270
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801501"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569226"
 ---
 # <a name="mapiinitidle"></a>MAPIInitIdle
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 呼び出し元のアプリケーションの MAPI アイドル エンジンを初期化します。 
   

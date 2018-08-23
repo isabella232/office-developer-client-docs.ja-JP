@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 5ca86ee8-1bf6-4ec8-95b3-575c22fbb170
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d8f28a6b0a1633b0060f02af7e38ef058527eb24
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 329771bf79e30f07c9de0a311aa2a836ca507c38
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800550"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580034"
 ---
 # <a name="imapiformmgrisinconflict"></a>IMAPIFormMgr::IsInConflict
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォームに独自のメッセージの競合を処理できるかどうかを決定します。 メッセージとは競合している場合は複数のユーザーによって同時に編集されましたが。 パブリック フォルダー内のメッセージに可能性があります。
   

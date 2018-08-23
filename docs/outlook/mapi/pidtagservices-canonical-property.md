@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a067455f-c67e-4434-83bf-5acc320865d0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a89297e74851cca90463b65fe78e20c5885828f4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5d1ebd7752dec05db112c6a8805244579cc9848f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803538"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571710"
 ---
 # <a name="pidtagservices-canonical-property"></a>PidTagServices 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 現在のプロファイルでサービスをメッセージの識別子の一覧が含まれています。
   

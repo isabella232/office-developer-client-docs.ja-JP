@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 7e3761be-afd6-46cb-9a08-25e9016c1241
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5c634fe200dde4bfe6f190f8bfa9e5dfa0868db4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 82fa1b0af504cc4774b1dc077a6ef48378740d26
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804017"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580678"
 ---
 # <a name="srowset"></a>SRowSet
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 [SRow](srow.md)構造体の配列が含まれています。 各**SRow**構造体では、テーブルからの行について説明します。 
   

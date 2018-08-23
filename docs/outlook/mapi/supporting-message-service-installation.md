@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 822e07bc-0bca-4485-8938-2264315161e2
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: bf3e79ad32801a659df2c68016167d3b547ddc6f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1f82741e3c44c589a18a1428fd68cebe6a501d5c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804045"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581994"
 ---
 # <a name="supporting-message-service-installation"></a>メッセージ サービス インストールのサポート
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ サービスをインストールするためのセットアップ プログラムは、次の操作を行います。
   

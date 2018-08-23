@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 0846415b-6fe1-4504-8620-108af6719015
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b821394f32a938f4878ee93e685aafbeb0786597
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3b5268f0b033126083a463f72e47c64957df07eb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799763"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577689"
 ---
 # <a name="builddisplaytable"></a>BuildDisplayTable
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロパティ ページのデータが 1 つまたは複数の[DTPAGE](dtpage.md)構造体に含まれているから、表示された表を作成します。 
   

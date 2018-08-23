@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 06b7792c-1b43-4e20-9a3b-44f2664b2125
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fd40be7733934002b81482a8bf5cfe8c9ce12313
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c056b0e587de06f6c32ceb3cebbb96f2fb737208
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802135"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579082"
 ---
 # <a name="pidlidreminderset-canonical-property"></a>PidLidReminderSet 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 オブジェクトにアラームを設定するかどうかを指定します。
   

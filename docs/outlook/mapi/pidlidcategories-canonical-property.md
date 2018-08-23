@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 6ad2aedc-405b-475e-ac76-7ecbbef28f73
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 01d4391850067d00645b5c0248e1bf858c2a9049
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6893afa11cc08b335b0ffb39b725e26478dae22f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801840"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574840"
 ---
 # <a name="pidlidcategories-canonical-property"></a>PidLidCategories 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アイテムのカテゴリの一覧を指定します。
   

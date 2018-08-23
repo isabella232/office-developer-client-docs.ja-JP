@@ -10,18 +10,18 @@ api_type:
 - COM
 ms.assetid: 8636774b-1fff-4b29-bc12-4d0bd63fcba2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0176485ca9b84260176e3be8ec9c8f42cf755cba
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1e758380a22531962d0d583935afa996d3c28404
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803291"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582351"
 ---
 # <a name="pidtagrecipientreassignmentprohibited-canonical-property"></a>PidTagRecipientReassignmentProhibited 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 電子メール メッセージのメッセージを転送するときに追加の受信者を追加することが禁止されているかどうかを指定します。
   

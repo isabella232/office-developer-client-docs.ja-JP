@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 48e48e3a-1186-46c4-8ff9-34e03905fb93
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5910fd60b7837c2f170358dd5cd4e3306e4c1770
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c37f5a3e2f1a5ec4411f2570d8a3fcdce52dfe57
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803483"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578648"
 ---
 # <a name="pidtagscheduleinfodelegatorwantscopy-canonical-property"></a>PidTagScheduleInfoDelegatorWantsCopy 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 代理人が代理人に送信される会議に関連するオブジェクトのコピーを受信する必要がある場合、TRUE が格納されます。
   

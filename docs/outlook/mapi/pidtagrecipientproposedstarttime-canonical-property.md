@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 6687ff62-7ac6-409c-8c87-4e09d38e45f1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 65d5c2f94da219fc1cb87384ebdd3c1cf34bd9a0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7500918daed361eac1c20e46e4046f47b6339c89
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803287"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580860"
 ---
 # <a name="pidtagrecipientproposedstarttime-canonical-property"></a>PidTagRecipientProposedStartTime 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 提案された会議の開始時刻を示します。
   

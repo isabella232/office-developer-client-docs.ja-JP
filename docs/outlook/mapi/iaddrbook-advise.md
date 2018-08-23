@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2def89ed-e4ce-446a-8b80-132d11ae8f8b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8214390af883432d72f608452b8b944417884fd2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 43569b22cace7b2700d37ace49fd734b45fec73c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800374"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580881"
 ---
 # <a name="iaddrbookadvise"></a>IAddrBook::Advise
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 アドレス帳の 1 つまたは複数のエントリへの変更に関する通知を受信するクライアントまたはサービス プロバイダーを登録します。
   

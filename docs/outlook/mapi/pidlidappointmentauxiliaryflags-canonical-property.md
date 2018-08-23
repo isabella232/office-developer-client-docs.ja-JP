@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 56c64e23-4a99-4f80-ba06-dfae2a5fe961
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cac9c735403e6cb65dfe3111a2246a8387339339
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5e05144beeac8318b8c28153461742a491698996
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801715"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576630"
 ---
 # <a name="pidlidappointmentauxiliaryflags-canonical-property"></a>PidLidAppointmentAuxiliaryFlags 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 補助オブジェクトの状態を示すビット フィールドを指定します。
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0f17aa44-abcb-4732-b013-d91652847cf6
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 9444806347c97077b03922b116e2ed7f61665cc1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 1c00e54d02ba494c94c9826eabe142e1bd3b9a80
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801054"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579628"
 ---
-# <a name="imsprovider--iunknown"></a>IMSProvider: IUnknown
+# <a name="imsprovider--iunknown"></a>IMSProvider : IUnknown
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ストア プロバイダー オブジェクトを使用して、メッセージ ストア プロバイダーへのアクセスを提供します。 このメッセージ ストア プロバイダー オブジェクトは、メッセージ ストア プロバイダーの[MSProviderInit](msproviderinit.md)のエントリ ポイント関数がプロバイダーへのログオンに返されます。 メッセージ ストア プロバイダー オブジェクトは、メッセージ ストアを開くクライアント アプリケーションと MAPI スプーラーによって主に使用します。 
   
@@ -40,12 +40,12 @@ ms.locfileid: "19801054"
 
 |||
 |:-----|:-----|
-|[シャット ダウン](imsprovider-shutdown.md) <br/> |適切な順序で、メッセージ ストア プロバイダーを閉じます。  <br/> |
+|[シャットダウン](imsprovider-shutdown.md) <br/> |適切な順序で、メッセージ ストア プロバイダーを閉じます。  <br/> |
 |[Logon](imsprovider-logon.md) <br/> |MAPI メッセージ ストア プロバイダーのインスタンスを 1 つにログに記録します。  <br/> |
 |[SpoolerLogon](imsprovider-spoolerlogon.md) <br/> |メッセージ ストアに、MAPI スプーラーをログに記録します。  <br/> |
 |[CompareStoreIDs](imsprovider-comparestoreids.md) <br/> |比較 2 つのメッセージが同じストア オブジェクトを参照しているかどうかを判断するのには、ストア エントリ id です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MAPI セッションごとに 1 つのメッセージ ストア プロバイダー オブジェクトを使用して、メッセージの数に関係なく、ストアがストア プロバイダーによって開かれています。 2 つ目 MAPI セッションが開いているすべての店舗に場合、MAPI 呼び出し**MSProviderInit** 2 回目を使用するには、そのセッション用の新しいメッセージ ストア プロバイダー オブジェクトを作成します。 
   

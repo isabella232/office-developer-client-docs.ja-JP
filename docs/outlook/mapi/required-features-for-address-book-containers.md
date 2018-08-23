@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 3e221944-5dc9-4cce-8b47-73af84427aea
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5eeaa9a8c1965954ad2eb0a6bfd2a174a355f10d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 050a26f4b4e6c353881189f8c7b71c2e4c378d03
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803767"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577213"
 ---
 # <a name="required-features-for-address-book-containers"></a>アドレス帳コンテナーの必須機能
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ほとんどのアドレス帳プロバイダーが少なくとも 1 つのコンテナーがあり、それらの変更の一部をサポートします。 内容と階層構造のテーブル、検索機能、および名前解決、アドレス帳コンテナーを指定できます。 変更可能なコンテナーは、ユーザー、配布リスト、またはその他のコンテナーおよび 1 回限りのテンプレートからその他のコンテナー内のエントリからエントリの追加のメッセージングなどのエントリの削除を使用します。
   

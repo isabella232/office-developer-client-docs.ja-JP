@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f374d8d9-be8e-2489-d5fe-8a92e0ecfc6f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7419a0df7a2f3b76caeeb1ca564624d437eddd52
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9c9252e83ce212bacf185d0eedb75d30617f9807
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801112"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581749"
 ---
 # <a name="iostx--iunknown"></a>IOSTX : IUnknown
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 同期メソッドを提供します。 このインターフェイスは、サーバーとローカル ストアに変更をサーバーにローカルでの変更をレプリケートするために必要な情報を取得します。
   

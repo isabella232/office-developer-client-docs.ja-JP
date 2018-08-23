@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: bb6ab537-2876-474b-be7a-84734ace2bae
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e1782f3c20c1741e0e4b1859f1b29d835444009c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6f9ac5d9cef09ce6d4f3006ecc804db6291cae77
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804030"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579341"
 ---
 # <a name="supporting-message-service-configuration"></a>メッセージ サービスの構成をサポートしています。
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ サービスの構成をサポートするには、次の手順を使用します。
   

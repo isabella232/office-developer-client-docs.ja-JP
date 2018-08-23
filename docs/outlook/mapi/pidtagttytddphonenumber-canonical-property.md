@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0471b331-7c8e-4b48-996c-276bdd61f522
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 39f9fddddc77578d08eefb23dc35b78add434f6a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3c5d2c7a58db4f3c6d505a35867ebab6a5b6bf43
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803639"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575743"
 ---
 # <a name="pidtagttytddphonenumber-canonical-property"></a>PidTagTtyTddPhoneNumber 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 連絡先のテキスト電話 (TTY) の電話番号または、聴覚が不自由 (TDD) の電気通信デバイスが含まれています。
   

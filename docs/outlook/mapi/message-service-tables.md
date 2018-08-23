@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: b93ab837-3918-4427-b013-bedc6f5276e4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 81772115fcd4f081718dd560759f6ab93dc7c11c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 569c1bd7ee2f4ac6c321f234be2954a57715549b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801652"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576671"
 ---
 # <a name="message-service-tables"></a>メッセージ サービス テーブル
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ サービス テーブルには、現在のプロファイル内のメッセージ サービスに関する情報が含まれています。 MAPI セッションごとに MAPI によって実装され、構成のサポートを提供する特別な目的のクライアント アプリケーションによって使用されるメッセージ サービスの 1 つのテーブルがあります。 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 5e3b7764-b122-4405-be4f-7fec571c7dfc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ae0ae8536f4f088bae4561e123afce716b623414
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 11f8df87dd9248a9d6061892bb0500274478646d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803083"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579166"
 ---
 # <a name="pidtagoriginalsendername-canonical-property"></a>PidTagOriginalSenderName 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 転送または返信する前にメッセージは、メッセージの最初のバージョンの送信者の表示名が含まれています。
   

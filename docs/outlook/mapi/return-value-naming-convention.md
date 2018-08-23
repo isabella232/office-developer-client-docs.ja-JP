@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 2c1cdd7b-82f1-46f2-a7ce-e0efe857b7cd
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 990a48c661621a3a704236a850f5d09239a12fca
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4d7a95e4681370e1aaf4f8b4c4b7ca0814b3aae7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803783"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581847"
 ---
 # <a name="return-value-naming-convention"></a>戻り値の名前付け規則
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 MAPICODE。H ヘッダー ファイルには、多くのクライアントまたはサービス プロバイダーはインターフェイス メソッドの実装から返すことがありますか、呼び出しから返される可能性があります参照してください値が含まれています。
   

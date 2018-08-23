@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 593f57d7-2891-40d1-a661-478a62d490ff
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: ec1d826ee2b3b46685a2c03dfaf45d2843869cc5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8192646007e8935a750a70e46b8210eebbc353f1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804113"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578536"
 ---
 # <a name="tnef-correlation-in-smtp-gateways-and-transports"></a>SMTP ゲートウェイおよびトランスポートでの TNEF 関連付け
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ゲートウェイとインターネットに接続するためのトランスポートは、システムでは、SMTP を使用して、TNEF の相関関係を実装するために SMTP のメッセージ Id ヘッダーと、 **PR_TNEF_CORRELATION_KEY**プロパティの値を使用しているものに基づいています。 
   

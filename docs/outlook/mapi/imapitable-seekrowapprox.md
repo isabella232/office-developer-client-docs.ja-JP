@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ce5e8c43-06af-4afc-9138-5cc51d8fc401
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 12b0c9b40c7ff06e9a3cf8e7929489f30434fa12
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e6803c54ddd60c1bcebbe7a139c2edf2e7f4449d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800863"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572092"
 ---
 # <a name="imapitableseekrowapprox"></a>IMAPITable::SeekRowApprox
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 テーブルのおおよその小数部から成る位置にカーソルを移動します。 
   

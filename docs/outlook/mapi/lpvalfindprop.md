@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 67461a38-bb60-467b-901b-39c645e764f7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d7601eb50818fa6f39384a6b024215fc4917e83a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c4a201411e2232a3e5fdcd97dcbc9460f657b12a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801281"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578095"
 ---
 # <a name="lpvalfindprop"></a>LpValFindProp
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 プロパティで指定したプロパティの検索を設定します。
   

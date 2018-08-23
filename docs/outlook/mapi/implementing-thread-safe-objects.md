@@ -1,5 +1,5 @@
 ---
-title: スレッド セーフなオブジェクトを実装します。
+title: スレッド セーフ オブジェクトの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 3c911694-b953-4d35-9a3a-22c17cfd79bc
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 8c8c89f3626d54f04896ad54de5d7e480dd9b568
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2f8235caceec8b27b2b14fac26d51e9e31ce1024
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800968"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579775"
 ---
-# <a name="implementing-thread-safe-objects"></a>スレッド セーフなオブジェクトを実装します。
+# <a name="implementing-thread-safe-objects"></a>スレッド セーフ オブジェクトの実装
 
   
   
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 直接インターフェイス メソッドの呼び出しから返されるオブジェクトの場合は、スレッド セーフのプロバイダーの責任は。 コールバック オブジェクトとは、クライアント アプリケーションの責任です。
   

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 929330c8-e6f2-4adf-a36e-fba18fa055d4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 39e10e9139036cc86ec93ea24a89b98125ea6e83
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2fbff399e088edaf3ad864f0ec7fecda3af6bc8e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800027"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578851"
 ---
 # <a name="fbadprop"></a>FBadProp
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 指定されたプロパティを検証します。 
   

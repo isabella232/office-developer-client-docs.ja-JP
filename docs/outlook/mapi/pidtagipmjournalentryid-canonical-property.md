@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: a3765b9d-a108-46d7-a97c-a825ae3980be
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e48b3af79656279e3c554cd5093385d894525e43
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b1fc2beaa85f8bbc82debe6b39ea02429aeeea16
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802901"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578690"
 ---
 # <a name="pidtagipmjournalentryid-canonical-property"></a>PidTagIpmJournalEntryId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 Outlook の履歴フォルダーの**エントリ Id**が含まれています。 
   

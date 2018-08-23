@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 09bd3bdf-28d6-432c-9213-562a9a271adc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ccd00b368471448e81e32edf99e645024119be00
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8ef6117557b504678012b79e2b89c13bdaf6b787
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803343"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571487"
 ---
 # <a name="pidtagreporttext-canonical-property"></a>PidTagReportText 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージング システムによって生成されたレポートのオプションの文字列が含まれています。
   

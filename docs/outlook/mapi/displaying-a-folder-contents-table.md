@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 14a4c123-776d-4a32-9688-8a4402dd1f53
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 30099e9fe645f810e08ba331717cff975f69b313
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 51c88e8c062a409db305e893b82f43d8c8ac7094
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799944"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580797"
 ---
 # <a name="displaying-a-folder-contents-table"></a>フォルダーの内容のテーブルを表示します。
 
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 フォルダーの内容のテーブルには、そのメッセージのすべてについての概要情報が含まれています。 メッセージ クラスに対応する受信フォルダーの内容のテーブルで、新しい着信メッセージについての概要情報が表示されます。 この情報をユーザーが利用できるように、テーブルを取得し、適切な列と行を表示します。
   

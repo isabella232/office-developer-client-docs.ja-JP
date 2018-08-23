@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: c314ff6d-3e60-4b81-87ac-6ca6753ff633
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 556d7551f64e075d1f15a945ddb1409c3b5a775f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 738957d7fc9567a2e8202802edebd16cf57fbffd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799966"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581644"
 ---
 # <a name="display-tables"></a>表示テーブル
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 表示テーブルが特定の種類のダイアログ ボックスを表示する方法について説明などを表示して、おそらく 1 つまたは複数のプロパティを編集するのには専用の 1 つまたは複数のタブ付きプロパティ ページを持つ 1 つ。 関連付けられているテーブルは、すべてのディスプレイで、 [IMAPIProp: IUnknown](imapipropiunknown.md)インターフェイスの実装です。 **IMAPIProp**の実装では、ダイアログ ボックスに表示されるプロパティ データを保持します。 
   

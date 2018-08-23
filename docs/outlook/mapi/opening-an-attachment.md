@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: c0350698-5304-40cd-903d-279471f3c226
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3875e51868e882ca454c06949347327a21a93eb9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 768528c59d7aa5888c0d0427f86b8be8e1d33669
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801678"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579978"
 ---
 # <a name="opening-an-attachment"></a>添付ファイルを開く
 
-**適用されます**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 添付ファイルを開くには、そのデータを表示する必要があります。 たとえば、添付ファイルを開くと、ファイルの内容が表示されます。 その添付ファイルの番号を使用して添付ファイルを開くが、メッセージとフォルダーを開くと、エントリの識別子を使用して、- **PR_ATTACH_NUM**のプロパティです。 詳細については、 **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) を参照してください。 添付ファイル番号は、メッセージの添付ファイル テーブルを使用できます。
   

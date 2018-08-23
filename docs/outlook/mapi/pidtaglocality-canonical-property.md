@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: a918b596-a335-47a0-9d1c-109a0b0812a2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c3e4643e99236dbd9e5f277b18db6c774c20f913
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 27c9ab646d6a03d63aa2b5a6820f9c3023186d8e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802944"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574602"
 ---
 # <a name="pidtaglocality-canonical-property"></a>PidTagLocality 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 市区町村など、受信者の局所性の名前が含まれています。 
   

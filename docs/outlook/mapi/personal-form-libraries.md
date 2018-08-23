@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 6ffcd93c-3737-4342-9cd0-2ca7c0fba52c
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0793fefd744eecc95899c4166cb8a1a6a2e6cd2f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 546b45deaa856bbfa002797e491d9b47be0dd34a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801720"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581588"
 ---
 # <a name="personal-form-libraries"></a>個人用フォーム ライブラリ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 その名前が示すように、個人用フォーム ライブラリは、特定のユーザーを対象のフォームを含みます。 ユーザーの個人用フォーム ライブラリは、ユーザーのプロファイルで指定された既定のメッセージ ストアに関連付けられているフォーム ライブラリです。ワークステーションにインストールされている各プロファイルには、別の既定のストアでは、およびそのため、別の個人用フォーム ライブラリを使用できます。 個人用フォーム ライブラリには、他のフォームの他には、他のフォーム ライブラリにも含まれているフォームのコピーを含めることができます。
   

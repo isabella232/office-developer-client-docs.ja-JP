@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b9ae6679-99b7-6509-74d4-12aa13d54928
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 710ba5173dcce6e948e1f49c7d82e46bc83b8200
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4d3ca89ea7d3d72f625d38e37494e253b05b1569
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799677"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577920"
 ---
 # <a name="algorithm-to-encode-entry-ids-and-attachment-ids"></a>エントリ ID と添付 ID をエンコードするためのアルゴリズム
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ストア プロバイダーに送信できます MAPI 統一リソース ロケーター (URL) の一部として、エントリ ID と、添付ファイル ID MAPI プロトコル ハンドラーでインデックス作成の準備が整っているオブジェクトを識別します。 ストア プロバイダーは、ID と ID の添付ファイルのエントリを Unicode 文字列としてエンコードします。 このトピックは、エントリ ID または添付ファイル ID のコンパクトな表現を生成するアルゴリズムを示しています。
   

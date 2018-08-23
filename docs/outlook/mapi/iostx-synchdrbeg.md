@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 7f8ca7cf-ac0b-9b77-c1dd-9f1d0871d603
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a5c754a209a3e1bce8888851b88e116f92920eb4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2d05592d1fdcdcd53c8b7879f9cdcd432df1a3f7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801088"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579467"
 ---
 # <a name="iostxsynchdrbeg"></a>IOSTX::SyncHdrBeg
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 メッセージ ヘッダーの同期を開始します。
   

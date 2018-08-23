@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: a64e5300-6865-4588-8e1b-158cfd9c60c2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: bf58e0598af6eb833b003b824be95f8fb82bd8bf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 653bdf26988c46be5f866cfbda331510c5a54afd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "19802939"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575708"
 ---
 # <a name="pidtaglastmodificationtime-canonical-property"></a>PidTagLastModificationTime 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 日付と時刻のオブジェクトまたはサブオブジェクトの最終変更日時が含まれています。 
   

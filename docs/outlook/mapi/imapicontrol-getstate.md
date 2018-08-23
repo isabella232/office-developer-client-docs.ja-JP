@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: fb321b48-3e5f-4b99-9af0-a57b66f26a2e
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a6ae89bf9b2b16439cc06f0e106859dda10ea22c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3d45c4722b6a0200ea3937ba606da0af5c793df2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19800451"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581854"
 ---
 # <a name="imapicontrolgetstate"></a>IMAPIControl::GetState
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 ボタン コントロールを有効または無効にするかどうかを示す値を取得します。
   

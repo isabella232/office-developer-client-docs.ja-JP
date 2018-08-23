@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 197e72ab-f9d6-4889-a677-0ce4c27b1aad
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b2e79e5568de38bee9a97c9df2598b30f1ba1bdf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7ac8026489b06031e07ab4b2978c9ece04063bb1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799940"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579145"
 ---
 # <a name="displaying-form-icons"></a>フォーム アイコンの表示
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 、フォルダー内のメッセージの一覧を表示するとき、ユーザーに役に立つ場合は標準の IPM とカスタム メッセージ クラスを持つメッセージを区別します。メッセージに注意してください。 カスタム メッセージ クラスは、フォームのサーバーに対応し、フォーム サーバーが自身を表すアイコンを提供します。 ユーザーがメッセージを開く前に、各メッセージのメッセージ クラスにユーザーに警告するメッセージの一覧にこれらのアイコンを表示できます。 通常、フォームの**PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)) のプロパティのアイコンは、メッセージの一覧に表示する必要があります。 フォームには、プロパティ シートでフォームが最小化したときに表示できる**PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) プロパティが設定されています。
   

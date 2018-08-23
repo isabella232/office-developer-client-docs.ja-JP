@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 9c7d6605-73ee-468c-981b-e0853106c9ba
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 40fc763071f7113e222c6987dfd70fb7d89bab4b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5affce8ab7a8b08019816ad9485641c401dd80c9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800091"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578774"
 ---
 # <a name="forcing-a-notification"></a>通知の強制
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 サービス プロバイダーの使用の場合、 [IMAPISupport: IUnknown](imapisupportiunknown.md)通知は、MAPI の方法が非表示のウィンドウとその対応するウィンドウ プロシージャを使用して通知を提供します。 各プロセスが通知を受信するには、MAPI は、非表示のウィンドウに特別なメッセージを投稿します。 このメッセージは、MAPIDEFS で定義されている定数**szMAPINotificationMsg**と呼ばれます。H. 
   

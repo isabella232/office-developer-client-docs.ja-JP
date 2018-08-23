@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 303c9dcb-f9b5-4cea-b5f2-3eba01aa3b09
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 54b2dece31937b1ff233d4d1e7d8bbc198bfe118
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d3b20c9fb4b4f1a26eb4ed1a9a498bd56a915a70
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801082"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579782"
 ---
 # <a name="installing-a-form-into-a-library"></a>ライブラリへのフォームのインストール
 
   
   
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 Windows SDK に付属している既定の MAPI フォーム マネージャーでは、各種のフォーム ライブラリにフォームをインストールするためのユーザー インターフェイスを行いません。 このため、小規模なアプリケーションを作成する必要がある、または一連の命令の詳細: ユーザーがフォームをインストールするのには使用できます。
   

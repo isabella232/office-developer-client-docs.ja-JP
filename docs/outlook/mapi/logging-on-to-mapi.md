@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 05bafe43-a78a-4659-92f0-0b4fe444c64f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 1ae3c47964ff238f57e98e0005a966008192f7c7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 63f71066b1afc90c3e495ed4f9ba654bcbdfe558
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801296"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579929"
 ---
 # <a name="logging-on-to-mapi"></a>MAPI へのログオン
  
-**適用対象**: Outlook 
+**適用されます**: Outlook 2013 |Outlook 2016 
   
 **MAPILogonEx**関数を呼び出すことによって、MAPI サブシステムには、クライアント アプリケーションがログオンするとします。 詳細については、 [MAPILogonEx](mapilogonex.md)を参照してください。 **MAPILogonEx**では、プロファイルの選択と、プロファイル内の各サービス プロバイダーの構成を検証します。 構成にすると、MAPI は、メッセージ ストア プロバイダーを開始する前に、アドレス帳プロバイダーを起動します。 トランスポート プロバイダーは、そのサービスは、まず、必要なときに開始されます。 
   
