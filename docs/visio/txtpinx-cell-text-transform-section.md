@@ -16,26 +16,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806701"
 ---
-# <a name="txtpinx-cell-text-transform-section"></a><span data-ttu-id="20aec-104">[TxtPinX] セル ([Text Transform] セクション)</span><span class="sxs-lookup"><span data-stu-id="20aec-104">TxtPinX Cell (Text Transform Section)</span></span>
+# <a name="txtpinx-cell-text-transform-section"></a><span data-ttu-id="932ba-104">[TxtPinX] セル ([テキスト変換] セクション)</span><span class="sxs-lookup"><span data-stu-id="932ba-104">TxtPinX Cell (Text Transform Section)</span></span>
 
-<span data-ttu-id="20aec-105">*X*の決定に、テキスト ブロックの図形の原点を基準として回転の中心の座標。</span><span class="sxs-lookup"><span data-stu-id="20aec-105">Determines the  *x*  -coordinate of the text block's center of rotation in relation to the origin of the shape.</span></span> <span data-ttu-id="20aec-106">既定の数式は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="20aec-106">The default formula is:</span></span> 
+<span data-ttu-id="932ba-105">*X*の決定に、テキスト ブロックの図形の原点を基準として回転の中心の座標。</span><span class="sxs-lookup"><span data-stu-id="932ba-105">Determines the  *x*  -coordinate of the text block's center of rotation in relation to the origin of the shape.</span></span> <span data-ttu-id="932ba-106">既定の数式は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="932ba-106">The default formula is:</span></span> 
   
-<span data-ttu-id="20aec-107">= 幅\*0.5</span><span class="sxs-lookup"><span data-stu-id="20aec-107">= Width \* 0.5</span></span>
+<span data-ttu-id="932ba-107">= 幅\*0.5</span><span class="sxs-lookup"><span data-stu-id="932ba-107">= Width \* 0.5</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="20aec-108">備考</span><span class="sxs-lookup"><span data-stu-id="20aec-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="932ba-108">注釈</span><span class="sxs-lookup"><span data-stu-id="932ba-108">Remarks</span></span>
 
-<span data-ttu-id="20aec-109">別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [txtpinx] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="20aec-109">To get a reference to the TxtPinX cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="932ba-109">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [TxtPinX] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="932ba-109">To get a reference to the TxtPinX cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="20aec-110">セル名 :</span><span class="sxs-lookup"><span data-stu-id="20aec-110">Cell name:</span></span>  <br/> | <span data-ttu-id="20aec-111">[Txtpinx]</span><span class="sxs-lookup"><span data-stu-id="20aec-111">TxtPinX</span></span>  <br/> |
+| <span data-ttu-id="932ba-110">セル名 :</span><span class="sxs-lookup"><span data-stu-id="932ba-110">Cell name:</span></span>  <br/> | <span data-ttu-id="932ba-111">[Txtpinx]</span><span class="sxs-lookup"><span data-stu-id="932ba-111">TxtPinX</span></span>  <br/> |
    
-<span data-ttu-id="20aec-112">プログラムから、インデックスによって [txtpinx] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="20aec-112">To get a reference to the TxtPinX cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="932ba-112">プログラムから、インデックスによって [TxtPinX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="932ba-112">To get a reference to the TxtPinX cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="20aec-113">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="20aec-113">Section index:</span></span>  <br/> |<span data-ttu-id="20aec-114">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="20aec-114">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="20aec-115">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="20aec-115">Row index:</span></span>  <br/> |<span data-ttu-id="20aec-116">**visRowTextXForm**</span><span class="sxs-lookup"><span data-stu-id="20aec-116">**visRowTextXForm**</span></span> <br/> |
-| <span data-ttu-id="20aec-117">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="20aec-117">Cell index:</span></span>  <br/> |<span data-ttu-id="20aec-118">**visXFormPinX**</span><span class="sxs-lookup"><span data-stu-id="20aec-118">**visXFormPinX**</span></span> <br/> |
+| <span data-ttu-id="932ba-113">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="932ba-113">Section index:</span></span>  <br/> |<span data-ttu-id="932ba-114">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="932ba-114">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="932ba-115">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="932ba-115">Row index:</span></span>  <br/> |<span data-ttu-id="932ba-116">**visRowTextXForm**</span><span class="sxs-lookup"><span data-stu-id="932ba-116">**visRowTextXForm**</span></span> <br/> |
+| <span data-ttu-id="932ba-117">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="932ba-117">Cell index:</span></span>  <br/> |<span data-ttu-id="932ba-118">**visXFormPinX**</span><span class="sxs-lookup"><span data-stu-id="932ba-118">**visXFormPinX**</span></span> <br/> |
    
 

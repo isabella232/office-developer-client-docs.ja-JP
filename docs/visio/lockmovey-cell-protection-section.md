@@ -16,29 +16,29 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805759"
 ---
-# <a name="lockmovey-cell-protection-section"></a><span data-ttu-id="3e607-103">[LockMoveY] セル ([Protection] セクション)</span><span class="sxs-lookup"><span data-stu-id="3e607-103">LockMoveY Cell (Protection Section)</span></span>
+# <a name="lockmovey-cell-protection-section"></a><span data-ttu-id="da712-103">[LockMoveY] セル ([保護] セクション)</span><span class="sxs-lookup"><span data-stu-id="da712-103">LockMoveY Cell (Protection Section)</span></span>
 
-<span data-ttu-id="3e607-104">図形の垂直位置をロックします。ロックすると、図形は垂直方向に移動できなくなります。</span><span class="sxs-lookup"><span data-stu-id="3e607-104">Locks the vertical position of the shape so it cannot be moved vertically.</span></span>
+<span data-ttu-id="da712-104">図形の垂直位置をロックします。ロックすると、図形は垂直方向に移動できなくなります。</span><span class="sxs-lookup"><span data-stu-id="da712-104">Locks the vertical position of the shape so it cannot be moved vertically.</span></span>
   
-|<span data-ttu-id="3e607-105">**値**</span><span class="sxs-lookup"><span data-stu-id="3e607-105">**Value**</span></span>|<span data-ttu-id="3e607-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="3e607-106">**Description**</span></span>|
+|<span data-ttu-id="da712-105">**値**</span><span class="sxs-lookup"><span data-stu-id="da712-105">**Value**</span></span>|<span data-ttu-id="da712-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="da712-106">**Description**</span></span>|
 |:-----|:-----|
-| <span data-ttu-id="3e607-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="3e607-107">TRUE</span></span>  <br/> | <span data-ttu-id="3e607-108">垂直位置をロックします。</span><span class="sxs-lookup"><span data-stu-id="3e607-108">Vertical position is locked.</span></span>  <br/> |
-| <span data-ttu-id="3e607-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="3e607-109">FALSE</span></span>  <br/> | <span data-ttu-id="3e607-110">垂直位置をロックしません。</span><span class="sxs-lookup"><span data-stu-id="3e607-110">Vertical position is not locked.</span></span>  <br/> |
+| <span data-ttu-id="da712-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="da712-107">TRUE</span></span>  <br/> | <span data-ttu-id="da712-108">垂直位置をロックします。</span><span class="sxs-lookup"><span data-stu-id="da712-108">Vertical position is locked.</span></span>  <br/> |
+| <span data-ttu-id="da712-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="da712-109">FALSE</span></span>  <br/> | <span data-ttu-id="da712-110">垂直位置をロックしません。</span><span class="sxs-lookup"><span data-stu-id="da712-110">Vertical position is not locked.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="3e607-111">備考</span><span class="sxs-lookup"><span data-stu-id="3e607-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="da712-111">備考</span><span class="sxs-lookup"><span data-stu-id="da712-111">Remarks</span></span>
 
-<span data-ttu-id="3e607-112">別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [lockmovey] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="3e607-112">To get a reference to the LockMoveY cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="da712-112">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LockMoveY] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="da712-112">To get a reference to the LockMoveY cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="3e607-113">セル名:</span><span class="sxs-lookup"><span data-stu-id="3e607-113">Cell name:</span></span>  <br/> | <span data-ttu-id="3e607-114">[Lockmovey]</span><span class="sxs-lookup"><span data-stu-id="3e607-114">LockMoveY</span></span>  <br/> |
+| <span data-ttu-id="da712-113">セル名:</span><span class="sxs-lookup"><span data-stu-id="da712-113">Cell name:</span></span>  <br/> | <span data-ttu-id="da712-114">[Lockmovey]</span><span class="sxs-lookup"><span data-stu-id="da712-114">LockMoveY</span></span>  <br/> |
    
-<span data-ttu-id="3e607-115">プログラムから、インデックスによって [lockmovey] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="3e607-115">To get a reference to the LockMoveY cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="da712-115">プログラムから、インデックスによって [LockMoveY] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="da712-115">To get a reference to the LockMoveY cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="3e607-116">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="3e607-116">Section index:</span></span>  <br/> |<span data-ttu-id="3e607-117">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="3e607-117">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="3e607-118">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="3e607-118">Row index:</span></span>  <br/> |<span data-ttu-id="3e607-119">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="3e607-119">**visRowLock**</span></span> <br/> |
-| <span data-ttu-id="3e607-120">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="3e607-120">Cell index:</span></span>  <br/> |<span data-ttu-id="3e607-121">**visLockMoveY**</span><span class="sxs-lookup"><span data-stu-id="3e607-121">**visLockMoveY**</span></span> <br/> |
+| <span data-ttu-id="da712-116">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="da712-116">Section index:</span></span>  <br/> |<span data-ttu-id="da712-117">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="da712-117">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="da712-118">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="da712-118">Row index:</span></span>  <br/> |<span data-ttu-id="da712-119">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="da712-119">**visRowLock**</span></span> <br/> |
+| <span data-ttu-id="da712-120">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="da712-120">Cell index:</span></span>  <br/> |<span data-ttu-id="da712-121">**visLockMoveY**</span><span class="sxs-lookup"><span data-stu-id="da712-121">**visLockMoveY**</span></span> <br/> |
    
 

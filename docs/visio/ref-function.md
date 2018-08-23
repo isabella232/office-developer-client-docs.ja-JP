@@ -16,22 +16,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806147"
 ---
-# <a name="ref-function"></a><span data-ttu-id="8986c-103">REF 関数</span><span class="sxs-lookup"><span data-stu-id="8986c-103">REF Function</span></span>
+# <a name="ref-function"></a><span data-ttu-id="f791a-103">REF 関数</span><span class="sxs-lookup"><span data-stu-id="f791a-103">REF Function</span></span>
 
-<span data-ttu-id="8986c-104">REF 関数は、エラー値 #ref! を返します。</span><span class="sxs-lookup"><span data-stu-id="8986c-104">The REF function returns the error value #REF!.</span></span>
+<span data-ttu-id="f791a-104">REF 関数は、エラー値 #ref! を返します。</span><span class="sxs-lookup"><span data-stu-id="f791a-104">The REF function returns the error value #REF!.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="8986c-105">構文</span><span class="sxs-lookup"><span data-stu-id="8986c-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f791a-105">構文</span><span class="sxs-lookup"><span data-stu-id="f791a-105">Syntax</span></span>
 
-<span data-ttu-id="8986c-106">REF( )</span><span class="sxs-lookup"><span data-stu-id="8986c-106">REF( )</span></span>
+<span data-ttu-id="f791a-106">REF( )</span><span class="sxs-lookup"><span data-stu-id="f791a-106">REF( )</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="8986c-107">�߂�l</span><span class="sxs-lookup"><span data-stu-id="8986c-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="f791a-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="f791a-107">Return value</span></span>
 
-<span data-ttu-id="8986c-108">String</span><span class="sxs-lookup"><span data-stu-id="8986c-108">String</span></span>
+<span data-ttu-id="f791a-108">String</span><span class="sxs-lookup"><span data-stu-id="f791a-108">String</span></span>
   
-## <a name="example"></a><span data-ttu-id="8986c-109">例</span><span class="sxs-lookup"><span data-stu-id="8986c-109">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f791a-109">例</span><span class="sxs-lookup"><span data-stu-id="f791a-109">Example</span></span>
 
-<span data-ttu-id="8986c-110">REF( )</span><span class="sxs-lookup"><span data-stu-id="8986c-110">REF( )</span></span> 
+<span data-ttu-id="f791a-110">REF( )</span><span class="sxs-lookup"><span data-stu-id="f791a-110">REF( )</span></span> 
   
-<span data-ttu-id="8986c-111">#REF! を返します。</span><span class="sxs-lookup"><span data-stu-id="8986c-111">Returns #REF!.</span></span> 
+<span data-ttu-id="f791a-111">#REF! を返します。</span><span class="sxs-lookup"><span data-stu-id="f791a-111">Returns #REF!.</span></span> 
   
 

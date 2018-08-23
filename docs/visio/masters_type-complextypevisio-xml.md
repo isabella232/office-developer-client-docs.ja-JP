@@ -13,17 +13,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805827"
 ---
-# <a name="masterstype-complextype-visio-xml"></a><span data-ttu-id="63e79-102">Masters_Type complexType'Visio XML (')</span><span class="sxs-lookup"><span data-stu-id="63e79-102">Masters_Type complexType ('Visio XML')</span></span>
+# <a name="masterstype-complextype-visio-xml"></a><span data-ttu-id="a25cc-102">Masters_Type complexType'Visio XML (')</span><span class="sxs-lookup"><span data-stu-id="a25cc-102">Masters_Type complexType ('Visio XML')</span></span>
 
-## <a name="type-information"></a><span data-ttu-id="63e79-103">型情報</span><span class="sxs-lookup"><span data-stu-id="63e79-103">Type information</span></span>
+## <a name="type-information"></a><span data-ttu-id="a25cc-103">型情報</span><span class="sxs-lookup"><span data-stu-id="a25cc-103">Type information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="63e79-104">**名前空間**</span><span class="sxs-lookup"><span data-stu-id="63e79-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|<span data-ttu-id="63e79-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="63e79-105">**Schema file**</span></span> <br/> |<span data-ttu-id="63e79-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="63e79-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
-|<span data-ttu-id="63e79-107">**拡張機能の基本**</span><span class="sxs-lookup"><span data-stu-id="63e79-107">**Extension base**</span></span> <br/> |<span data-ttu-id="63e79-108">なし</span><span class="sxs-lookup"><span data-stu-id="63e79-108">None</span></span>  <br/> |
+|<span data-ttu-id="a25cc-104">**名前空間**</span><span class="sxs-lookup"><span data-stu-id="a25cc-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|<span data-ttu-id="a25cc-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="a25cc-105">**Schema file**</span></span> <br/> |<span data-ttu-id="a25cc-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="a25cc-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
+|<span data-ttu-id="a25cc-107">**拡張ベース**</span><span class="sxs-lookup"><span data-stu-id="a25cc-107">**Extension base**</span></span> <br/> |<span data-ttu-id="a25cc-108">なし</span><span class="sxs-lookup"><span data-stu-id="a25cc-108">None</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="63e79-109">定義</span><span class="sxs-lookup"><span data-stu-id="63e79-109">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="a25cc-109">定義</span><span class="sxs-lookup"><span data-stu-id="a25cc-109">Definition</span></span>
 
 ```XML
           <xs:complexType name="Masters_Type">
@@ -46,19 +46,19 @@ ms.locfileid: "19805827"
       
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="63e79-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="63e79-110">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="a25cc-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="a25cc-110">Elements and attributes</span></span>
 
-<span data-ttu-id="63e79-111">スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="63e79-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="a25cc-111">スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="a25cc-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="child-elements"></a><span data-ttu-id="63e79-112">子要素</span><span class="sxs-lookup"><span data-stu-id="63e79-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="a25cc-112">子要素</span><span class="sxs-lookup"><span data-stu-id="a25cc-112">Child elements</span></span>
 
-|<span data-ttu-id="63e79-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="63e79-113">**Element**</span></span>|<span data-ttu-id="63e79-114">**型**</span><span class="sxs-lookup"><span data-stu-id="63e79-114">**Type**</span></span>|<span data-ttu-id="63e79-115">**説明**</span><span class="sxs-lookup"><span data-stu-id="63e79-115">**Description**</span></span>|
+|<span data-ttu-id="a25cc-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="a25cc-113">**Element**</span></span>|<span data-ttu-id="a25cc-114">**型**</span><span class="sxs-lookup"><span data-stu-id="a25cc-114">**Type**</span></span>|<span data-ttu-id="a25cc-115">**説明**</span><span class="sxs-lookup"><span data-stu-id="a25cc-115">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="63e79-116">Master</span><span class="sxs-lookup"><span data-stu-id="63e79-116">Master</span></span>](master-element-masters_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="63e79-117">Master_Type</span><span class="sxs-lookup"><span data-stu-id="63e79-117">Master_Type</span></span>](master_type-complextypevisio-xml.md) <br/> ||
-|[<span data-ttu-id="63e79-118">MasterShortcut</span><span class="sxs-lookup"><span data-stu-id="63e79-118">MasterShortcut</span></span>](mastershortcut-element-masters_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="63e79-119">MasterShortcut_Type</span><span class="sxs-lookup"><span data-stu-id="63e79-119">MasterShortcut_Type</span></span>](mastershortcut_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="a25cc-116">Master</span><span class="sxs-lookup"><span data-stu-id="a25cc-116">Master</span></span>](master-element-masters_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="a25cc-117">Master_Type</span><span class="sxs-lookup"><span data-stu-id="a25cc-117">Master_Type</span></span>](master_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="a25cc-118">MasterShortcut</span><span class="sxs-lookup"><span data-stu-id="a25cc-118">MasterShortcut</span></span>](mastershortcut-element-masters_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="a25cc-119">MasterShortcut_Type</span><span class="sxs-lookup"><span data-stu-id="a25cc-119">MasterShortcut_Type</span></span>](mastershortcut_type-complextypevisio-xml.md) <br/> ||
    
-### <a name="attributes"></a><span data-ttu-id="63e79-120">属性</span><span class="sxs-lookup"><span data-stu-id="63e79-120">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="a25cc-120">属性</span><span class="sxs-lookup"><span data-stu-id="a25cc-120">Attributes</span></span>
 
-<span data-ttu-id="63e79-121">なし。</span><span class="sxs-lookup"><span data-stu-id="63e79-121">None.</span></span>
+<span data-ttu-id="a25cc-121">なし。</span><span class="sxs-lookup"><span data-stu-id="a25cc-121">None.</span></span>
   
 

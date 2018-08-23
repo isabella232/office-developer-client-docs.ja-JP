@@ -16,28 +16,28 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805689"
 ---
-# <a name="len-function-visioshapesheet"></a><span data-ttu-id="981fb-103">LEN 関数 (VisioShapeSheet)</span><span class="sxs-lookup"><span data-stu-id="981fb-103">LEN Function (VisioShapeSheet)</span></span>
+# <a name="len-function-visioshapesheet"></a><span data-ttu-id="c6476-103">LEN 関数 (VisioShapeSheet)</span><span class="sxs-lookup"><span data-stu-id="c6476-103">LEN Function (VisioShapeSheet)</span></span>
 
-<span data-ttu-id="981fb-104">文字列の文字数を返します。</span><span class="sxs-lookup"><span data-stu-id="981fb-104">Returns the number of characters in a text string.</span></span>
+<span data-ttu-id="c6476-104">文字列の文字数を返します。</span><span class="sxs-lookup"><span data-stu-id="c6476-104">Returns the number of characters in a text string.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="981fb-105">構文</span><span class="sxs-lookup"><span data-stu-id="981fb-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c6476-105">構文</span><span class="sxs-lookup"><span data-stu-id="c6476-105">Syntax</span></span>
 
-<span data-ttu-id="981fb-106">LEN (* **テキスト** *)</span><span class="sxs-lookup"><span data-stu-id="981fb-106">LEN (** *text* ** )</span></span> 
+<span data-ttu-id="c6476-106">LEN (* **テキスト** *)</span><span class="sxs-lookup"><span data-stu-id="c6476-106">LEN (** *text* ** )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="981fb-107">Parameters</span><span class="sxs-lookup"><span data-stu-id="981fb-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="c6476-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="c6476-107">Parameters</span></span>
 
-|<span data-ttu-id="981fb-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="981fb-108">**Name**</span></span>|<span data-ttu-id="981fb-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="981fb-109">**Required/Optional**</span></span>|<span data-ttu-id="981fb-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="981fb-110">**Data Type**</span></span>|<span data-ttu-id="981fb-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="981fb-111">**Description**</span></span>|
+|<span data-ttu-id="c6476-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="c6476-108">**Name**</span></span>|<span data-ttu-id="c6476-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="c6476-109">**Required/Optional**</span></span>|<span data-ttu-id="c6476-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="c6476-110">**Data Type**</span></span>|<span data-ttu-id="c6476-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="c6476-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="981fb-112">_text_</span><span class="sxs-lookup"><span data-stu-id="981fb-112">_text_</span></span> <br/> |<span data-ttu-id="981fb-113">必須</span><span class="sxs-lookup"><span data-stu-id="981fb-113">Required</span></span>  <br/> |<span data-ttu-id="981fb-114">**文字列型 (String)**</span><span class="sxs-lookup"><span data-stu-id="981fb-114">**String**</span></span> <br/> |<span data-ttu-id="981fb-115">長さを計測する文字列を指定します。</span><span class="sxs-lookup"><span data-stu-id="981fb-115">The character string whose length you want to find.</span></span>  <br/> |
+| <span data-ttu-id="c6476-112">_text_</span><span class="sxs-lookup"><span data-stu-id="c6476-112">_text_</span></span> <br/> |<span data-ttu-id="c6476-113">必須</span><span class="sxs-lookup"><span data-stu-id="c6476-113">Required</span></span>  <br/> |<span data-ttu-id="c6476-114">**文字列型 (String)**</span><span class="sxs-lookup"><span data-stu-id="c6476-114">**String**</span></span> <br/> |<span data-ttu-id="c6476-115">長さを計測する文字列を指定します。</span><span class="sxs-lookup"><span data-stu-id="c6476-115">The character string whose length you want to find.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="981fb-116">�߂�l</span><span class="sxs-lookup"><span data-stu-id="981fb-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="c6476-116">戻り値</span><span class="sxs-lookup"><span data-stu-id="c6476-116">Return value</span></span>
 
-<span data-ttu-id="981fb-117">数値型 (Numeric)</span><span class="sxs-lookup"><span data-stu-id="981fb-117">Numeric</span></span>
+<span data-ttu-id="c6476-117">数値型 (Numeric)</span><span class="sxs-lookup"><span data-stu-id="c6476-117">Numeric</span></span>
   
-## <a name="example"></a><span data-ttu-id="981fb-118">例</span><span class="sxs-lookup"><span data-stu-id="981fb-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c6476-118">例</span><span class="sxs-lookup"><span data-stu-id="c6476-118">Example</span></span>
 
-<span data-ttu-id="981fb-119">LEN ("Seattle, WA")</span><span class="sxs-lookup"><span data-stu-id="981fb-119">LEN ("Seattle, WA")</span></span> 
+<span data-ttu-id="c6476-119">LEN ("Seattle, WA")</span><span class="sxs-lookup"><span data-stu-id="c6476-119">LEN ("Seattle, WA")</span></span> 
   
-<span data-ttu-id="981fb-120">11 を返します。</span><span class="sxs-lookup"><span data-stu-id="981fb-120">Returns 11.</span></span> 
+<span data-ttu-id="c6476-120">11 を返します。</span><span class="sxs-lookup"><span data-stu-id="c6476-120">Returns 11.</span></span> 
   
 

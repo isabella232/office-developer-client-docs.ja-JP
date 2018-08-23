@@ -16,12 +16,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805679"
 ---
-# <a name="layers-section"></a><span data-ttu-id="5eaef-103">[Layers] セクション</span><span class="sxs-lookup"><span data-stu-id="5eaef-103">Layers Section</span></span>
+# <a name="layers-section"></a><span data-ttu-id="9076b-103">[レイヤー] セクション</span><span class="sxs-lookup"><span data-stu-id="9076b-103">Layers Section</span></span>
 
-<span data-ttu-id="5eaef-104">ページに定義されたすべてのレイヤー、および各レイヤーに設定されたプロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="5eaef-104">Shows all layers defined for the page and the properties set for each layer.</span></span> 
+<span data-ttu-id="9076b-104">ページに定義されたすべてのレイヤー、および各レイヤーに設定されたプロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="9076b-104">Shows all layers defined for the page and the properties set for each layer.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="5eaef-105">注釈</span><span class="sxs-lookup"><span data-stu-id="5eaef-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9076b-105">注釈</span><span class="sxs-lookup"><span data-stu-id="9076b-105">Remarks</span></span>
 
-<span data-ttu-id="5eaef-106">このセクションでは、ページのシェイプ シート ウィンドウにのみ表示できるページ プロパティです。</span><span class="sxs-lookup"><span data-stu-id="5eaef-106">This section is a page property that can be viewed only in the ShapeSheet window for a page.</span></span> <span data-ttu-id="5eaef-107">そのセルが **[レイヤー プロパティ**] ダイアログ ボックスのオプションに対応している ([**ホーム**] タブの [**編集**]、[**レイヤー**] をクリックし、[**レイヤー プロパティ**] をクリック) します。</span><span class="sxs-lookup"><span data-stu-id="5eaef-107">Its cells correspond to the options in the **Layer Properties** dialog box (on the **Home** tab, in the **Editing** group, click **Layers**, and then click **Layer Properties**).</span></span>
+<span data-ttu-id="9076b-p101">このセクションは、ページの [シェイプシート] ウィンドウでのみ表示できるページ プロパティです。このセクションのセルは、[**レイヤー プロパティ**] ダイアログ ボックスのオプションに対応しています (このダイアログ ボックスを開くには、[**ホーム**] タブの [**編集**] グループで、[**レイヤー**] をクリックして、[**レイヤー プロパティ**] をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="9076b-p101">This section is a page property that can be viewed only in the ShapeSheet window for a page. Its cells correspond to the options in the **Layer Properties** dialog box (on the **Home** tab, in the **Editing** group, click **Layers**, and then click **Layer Properties**).</span></span>
   
 

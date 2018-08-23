@@ -14,12 +14,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805489"
 ---
-# <a name="gradient-properties-section"></a><span data-ttu-id="d0922-104">[グラデーションのプロパティ] セクション</span><span class="sxs-lookup"><span data-stu-id="d0922-104">Gradient Properties Section</span></span>
+# <a name="gradient-properties-section"></a><span data-ttu-id="f646f-104">[グラデーションのプロパティ] セクション</span><span class="sxs-lookup"><span data-stu-id="f646f-104">Gradient Properties Section</span></span>
 
-<span data-ttu-id="d0922-105">グラデーション塗りつぶしまたは線の色効果図形のプロパティを示しています。</span><span class="sxs-lookup"><span data-stu-id="d0922-105">Shows the properties for any gradient fill or line color effects applied to the shape.</span></span> <span data-ttu-id="d0922-106">このセクションには、図形のグラデーションを図形を回転するかどうか、または図形が他の図形をグループ化すると、適用したグラデーションを前提として かどうかを制御するセルも含まれています。</span><span class="sxs-lookup"><span data-stu-id="d0922-106">This section also includes cells that control whether a shape's gradient rotates with the shape or whether the shape assumes an applied gradient when grouped with other shapes.</span></span> 
+<span data-ttu-id="f646f-105">グラデーション塗りつぶしまたは線の色効果図形のプロパティを示しています。</span><span class="sxs-lookup"><span data-stu-id="f646f-105">Shows the properties for any gradient fill or line color effects applied to the shape.</span></span> <span data-ttu-id="f646f-106">このセクションには、図形のグラデーションを図形を回転するかどうか、または図形が他の図形をグループ化すると、適用したグラデーションを前提として かどうかを制御するセルも含まれています。</span><span class="sxs-lookup"><span data-stu-id="f646f-106">This section also includes cells that control whether a shape's gradient rotates with the shape or whether the shape assumes an applied gradient when grouped with other shapes.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="d0922-107">備考</span><span class="sxs-lookup"><span data-stu-id="d0922-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f646f-107">注釈</span><span class="sxs-lookup"><span data-stu-id="f646f-107">Remarks</span></span>
 
-<span data-ttu-id="d0922-108">グラデーションの設定を設定するには、[**図形の書式設定**] ダイアログ ボックスで (**ホーム** > **図形のスタイル** > **塗りつぶし** > **オプション** > **塗りつぶし** > **のグラデーションの塗りつぶし**)。</span><span class="sxs-lookup"><span data-stu-id="d0922-108">You can set gradient settings in the **Format Shape** dialog box (**Home** > **Shape Styles** > **Fill** > **Fill Options** > **Fill** > **Gradient fill**).</span></span> 
+<span data-ttu-id="f646f-108">グラデーションの設定を設定するには、[**図形の書式設定**] ダイアログ ボックスで (**ホーム** > **図形のスタイル** > **塗りつぶし** > **オプション** > **塗りつぶし** > **のグラデーションの塗りつぶし**)。</span><span class="sxs-lookup"><span data-stu-id="f646f-108">You can set gradient settings in the **Format Shape** dialog box (**Home** > **Shape Styles** > **Fill** > **Fill Options** > **Fill** > **Gradient fill**).</span></span> 
   
 

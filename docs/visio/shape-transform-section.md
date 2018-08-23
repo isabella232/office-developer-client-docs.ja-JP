@@ -16,8 +16,8 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806383"
 ---
-# <a name="shape-transform-section"></a><span data-ttu-id="ae97c-103">[Shape Transform] セクション</span><span class="sxs-lookup"><span data-stu-id="ae97c-103">Shape Transform Section</span></span>
+# <a name="shape-transform-section"></a><span data-ttu-id="d2c96-103">[図形変換] セクション</span><span class="sxs-lookup"><span data-stu-id="d2c96-103">Shape Transform Section</span></span>
 
-<span data-ttu-id="ae97c-104">図形に関する全般的な配置情報を格納します。たとえば、図形の幅、高さ、角度、回転の中心 (Pin)、図形が反転しているかどうか、グループ内で図形のサイズ変更が行われた場合の動作などの情報を含んでいます。</span><span class="sxs-lookup"><span data-stu-id="ae97c-104">Contains general positioning information about a shape: for example, its width, height, angle, and center of rotation (pin); whether the shape has been flipped; and how the shape should behave when resized within a group.</span></span>
+<span data-ttu-id="d2c96-104">図形に関する全般的な配置情報を格納します。たとえば、図形の幅、高さ、角度、回転の中心 (Pin)、図形が反転しているかどうか、グループ内で図形のサイズ変更が行われた場合の動作などの情報を含んでいます。</span><span class="sxs-lookup"><span data-stu-id="d2c96-104">Contains general positioning information about a shape: for example, its width, height, angle, and center of rotation (pin); whether the shape has been flipped; and how the shape should behave when resized within a group.</span></span>
   
 

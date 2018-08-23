@@ -16,20 +16,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805723"
 ---
-# <a name="listsep-function"></a><span data-ttu-id="33d14-103">LISTSEP 関数</span><span class="sxs-lookup"><span data-stu-id="33d14-103">LISTSEP Function</span></span>
+# <a name="listsep-function"></a><span data-ttu-id="9dfaf-103">LISTSEP 関数</span><span class="sxs-lookup"><span data-stu-id="9dfaf-103">LISTSEP Function</span></span>
 
-<span data-ttu-id="33d14-104">現在のユーザー ロケールの一覧の区切り文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="33d14-104">Returns the list-separator string for the current user locale.</span></span>
+<span data-ttu-id="9dfaf-104">現在のユーザー ロケールの一覧の区切り文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="9dfaf-104">Returns the list-separator string for the current user locale.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="33d14-105">構文</span><span class="sxs-lookup"><span data-stu-id="33d14-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="9dfaf-105">構文</span><span class="sxs-lookup"><span data-stu-id="9dfaf-105">Syntax</span></span>
 
-<span data-ttu-id="33d14-106">LISTSEP ()</span><span class="sxs-lookup"><span data-stu-id="33d14-106">LISTSEP ()</span></span>
+<span data-ttu-id="9dfaf-106">LISTSEP ()</span><span class="sxs-lookup"><span data-stu-id="9dfaf-106">LISTSEP ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="33d14-107">�߂�l</span><span class="sxs-lookup"><span data-stu-id="33d14-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="9dfaf-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="9dfaf-107">Return value</span></span>
 
-<span data-ttu-id="33d14-108">String</span><span class="sxs-lookup"><span data-stu-id="33d14-108">String</span></span>
+<span data-ttu-id="9dfaf-108">String</span><span class="sxs-lookup"><span data-stu-id="9dfaf-108">String</span></span>
   
-## <a name="example"></a><span data-ttu-id="33d14-109">例</span><span class="sxs-lookup"><span data-stu-id="33d14-109">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9dfaf-109">例</span><span class="sxs-lookup"><span data-stu-id="9dfaf-109">Example</span></span>
 
-<span data-ttu-id="33d14-110">SETF(GETREF(user.extent) を表します (幅&amp;ListSep() &amp; 「の高さ)」)</span><span class="sxs-lookup"><span data-stu-id="33d14-110">SETF(GETREF(user.extent), "MAX(Width" &amp; ListSep() &amp; "Height)")</span></span> 
+<span data-ttu-id="9dfaf-110">SETF(GETREF(user.extent) を表します (幅&amp;ListSep() &amp; 「の高さ)」)</span><span class="sxs-lookup"><span data-stu-id="9dfaf-110">SETF(GETREF(user.extent), "MAX(Width" &amp; ListSep() &amp; "Height)")</span></span> 
   
 

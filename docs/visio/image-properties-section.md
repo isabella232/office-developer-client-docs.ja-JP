@@ -16,8 +16,8 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805562"
 ---
-# <a name="image-properties-section"></a><span data-ttu-id="46d1e-103">[Image Properties] セクション</span><span class="sxs-lookup"><span data-stu-id="46d1e-103">Image Properties Section</span></span>
+# <a name="image-properties-section"></a><span data-ttu-id="1376c-103">[画像のプロパティ] セクション</span><span class="sxs-lookup"><span data-stu-id="1376c-103">Image Properties Section</span></span>
 
-<span data-ttu-id="46d1e-104">ビットマップ (ピクセルで構成されたイメージ) のガンマ、明るさ、コントラスト、ぼかし、鮮明さ、およびノイズ除去の値が含まれます。ビットマップのオブジェクトの [シェイプシート] ウィンドウにのみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="46d1e-104">Contains the gamma, brightness, contrast, blur, sharpen, and denoise values for bitmaps (an image that consists of pixels) and appears in the ShapeSheet window only for such objects.</span></span>
+<span data-ttu-id="1376c-104">ビットマップ (ピクセルで構成されたイメージ) のガンマ、明るさ、コントラスト、ぼかし、鮮明さ、およびノイズ除去の値が含まれます。ビットマップのオブジェクトの [シェイプシート] ウィンドウにのみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="1376c-104">Contains the gamma, brightness, contrast, blur, sharpen, and denoise values for bitmaps (an image that consists of pixels) and appears in the ShapeSheet window only for such objects.</span></span>
   
 

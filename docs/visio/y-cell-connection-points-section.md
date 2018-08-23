@@ -16,24 +16,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806819"
 ---
-# <a name="y-cell-connection-points-section"></a><span data-ttu-id="70cdd-103">[Y] セル ([Connection Points] セクション)</span><span class="sxs-lookup"><span data-stu-id="70cdd-103">Y Cell (Connection Points Section)</span></span>
+# <a name="y-cell-connection-points-section"></a><span data-ttu-id="b26f0-103">[Y] セル ([接続ポイント] セクション)</span><span class="sxs-lookup"><span data-stu-id="b26f0-103">Y Cell (Connection Points Section)</span></span>
 
-<span data-ttu-id="70cdd-104">*Y*を表す-ローカル座標での接続ポイントの座標です。</span><span class="sxs-lookup"><span data-stu-id="70cdd-104">Represents the  *y*  -coordinate for a connection point in local coordinates.</span></span> 
+<span data-ttu-id="b26f0-104">*Y*を表す-ローカル座標での接続ポイントの座標です。</span><span class="sxs-lookup"><span data-stu-id="b26f0-104">Represents the  *y*  -coordinate for a connection point in local coordinates.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="70cdd-105">備考</span><span class="sxs-lookup"><span data-stu-id="70cdd-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b26f0-105">注釈</span><span class="sxs-lookup"><span data-stu-id="b26f0-105">Remarks</span></span>
 
-<span data-ttu-id="70cdd-106">別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [Y] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="70cdd-106">To get a reference to the Y cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="b26f0-106">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Y] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="b26f0-106">To get a reference to the Y cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="70cdd-107">セル名:</span><span class="sxs-lookup"><span data-stu-id="70cdd-107">Cell name:</span></span>  <br/> | <span data-ttu-id="70cdd-108">Connections.Y *i* 、 *i* = < 1 > では、2、3.</span><span class="sxs-lookup"><span data-stu-id="70cdd-108">Connections.Y  *i*            where  *i*  = <1>, 2, 3...</span></span>  <br/> |
+| <span data-ttu-id="b26f0-107">セル名:</span><span class="sxs-lookup"><span data-stu-id="b26f0-107">Cell name:</span></span>  <br/> | <span data-ttu-id="b26f0-108">Connections.Y *i* 、 *i* = < 1 > では、2、3.</span><span class="sxs-lookup"><span data-stu-id="b26f0-108">Connections.Y  *i*            where  *i*  = <1>, 2, 3...</span></span>  <br/> |
    
-<span data-ttu-id="70cdd-109">プログラムから、インデックスによって [Y] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="70cdd-109">To get a reference to the Y cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="b26f0-109">プログラムから、インデックスによって [Y] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="b26f0-109">To get a reference to the Y cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="70cdd-110">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="70cdd-110">Section index:</span></span>  <br/> |<span data-ttu-id="70cdd-111">**visSectionConnectionPts**</span><span class="sxs-lookup"><span data-stu-id="70cdd-111">**visSectionConnectionPts**</span></span> <br/> |
-| <span data-ttu-id="70cdd-112">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="70cdd-112">Row index:</span></span>  <br/> |<span data-ttu-id="70cdd-113">**visRowConnectionPts** +  *i* 、 *i* = 0, 1, 2.</span><span class="sxs-lookup"><span data-stu-id="70cdd-113">**visRowConnectionPts** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
-| <span data-ttu-id="70cdd-114">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="70cdd-114">Cell index:</span></span>  <br/> |<span data-ttu-id="70cdd-115">**visY**</span><span class="sxs-lookup"><span data-stu-id="70cdd-115">**visY**</span></span> <br/> |
+| <span data-ttu-id="b26f0-110">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="b26f0-110">Section index:</span></span>  <br/> |<span data-ttu-id="b26f0-111">**visSectionConnectionPts**</span><span class="sxs-lookup"><span data-stu-id="b26f0-111">**visSectionConnectionPts**</span></span> <br/> |
+| <span data-ttu-id="b26f0-112">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="b26f0-112">Row index:</span></span>  <br/> |<span data-ttu-id="b26f0-113">**visRowConnectionPts** +  *i* 、 *i* = 0, 1, 2.</span><span class="sxs-lookup"><span data-stu-id="b26f0-113">**visRowConnectionPts** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
+| <span data-ttu-id="b26f0-114">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="b26f0-114">Cell index:</span></span>  <br/> |<span data-ttu-id="b26f0-115">**visY**</span><span class="sxs-lookup"><span data-stu-id="b26f0-115">**visY**</span></span> <br/> |
    
 

@@ -16,16 +16,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805537"
 ---
-# <a name="hyperlinkbase-function"></a><span data-ttu-id="78064-103">HYPERLINKBASE 関数</span><span class="sxs-lookup"><span data-stu-id="78064-103">HYPERLINKBASE Function</span></span>
+# <a name="hyperlinkbase-function"></a><span data-ttu-id="cb2fb-103">HYPERLINKBASE 関数</span><span class="sxs-lookup"><span data-stu-id="cb2fb-103">HYPERLINKBASE Function</span></span>
 
-<span data-ttu-id="78064-104">ドキュメントのプロパティの [**ハイパーリンクの基点**] フィールドからテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="78064-104">Returns the text from the **Hyperlink base** field of a document's properties.</span></span> 
+<span data-ttu-id="cb2fb-104">ドキュメントのプロパティの [**ハイパーリンクの基点**] フィールドからテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="cb2fb-104">Returns the text from the **Hyperlink base** field of a document's properties.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="78064-105">構文</span><span class="sxs-lookup"><span data-stu-id="78064-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="cb2fb-105">構文</span><span class="sxs-lookup"><span data-stu-id="cb2fb-105">Syntax</span></span>
 
-<span data-ttu-id="78064-106">HYPERLINKBASE ()</span><span class="sxs-lookup"><span data-stu-id="78064-106">HYPERLINKBASE ()</span></span>
+<span data-ttu-id="cb2fb-106">HYPERLINKBASE ()</span><span class="sxs-lookup"><span data-stu-id="cb2fb-106">HYPERLINKBASE ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="78064-107">�߂�l</span><span class="sxs-lookup"><span data-stu-id="78064-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="cb2fb-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="cb2fb-107">Return value</span></span>
 
-<span data-ttu-id="78064-108">String</span><span class="sxs-lookup"><span data-stu-id="78064-108">String</span></span>
+<span data-ttu-id="cb2fb-108">String</span><span class="sxs-lookup"><span data-stu-id="cb2fb-108">String</span></span>
   
 

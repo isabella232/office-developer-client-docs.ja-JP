@@ -16,20 +16,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806720"
 ---
-# <a name="typedesc-function"></a><span data-ttu-id="465a3-103">TYPEDESC 関数</span><span class="sxs-lookup"><span data-stu-id="465a3-103">TYPEDESC Function</span></span>
+# <a name="typedesc-function"></a><span data-ttu-id="d2735-103">TYPEDESC 関数</span><span class="sxs-lookup"><span data-stu-id="d2735-103">TYPEDESC Function</span></span>
 
-<span data-ttu-id="465a3-104">オブジェクトの内部的な型を記述する文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="465a3-104">Returns a string that describes an object's internal type.</span></span> 
+<span data-ttu-id="d2735-104">オブジェクトの内部的な型を記述する文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="d2735-104">Returns a string that describes an object's internal type.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="465a3-105">構文</span><span class="sxs-lookup"><span data-stu-id="465a3-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d2735-105">構文</span><span class="sxs-lookup"><span data-stu-id="d2735-105">Syntax</span></span>
 
-<span data-ttu-id="465a3-106">TYPEDESC ()</span><span class="sxs-lookup"><span data-stu-id="465a3-106">TYPEDESC ()</span></span>
+<span data-ttu-id="d2735-106">TYPEDESC ()</span><span class="sxs-lookup"><span data-stu-id="d2735-106">TYPEDESC ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="465a3-107">�߂�l</span><span class="sxs-lookup"><span data-stu-id="465a3-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="d2735-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="d2735-107">Return value</span></span>
 
-<span data-ttu-id="465a3-108">String</span><span class="sxs-lookup"><span data-stu-id="465a3-108">String</span></span>
+<span data-ttu-id="d2735-108">String</span><span class="sxs-lookup"><span data-stu-id="d2735-108">String</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="465a3-109">注釈</span><span class="sxs-lookup"><span data-stu-id="465a3-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d2735-109">注釈</span><span class="sxs-lookup"><span data-stu-id="d2735-109">Remarks</span></span>
 
-<span data-ttu-id="465a3-110">次の表は、オブジェクトの内部的な種類を説明する文字列の一覧です。</span><span class="sxs-lookup"><span data-stu-id="465a3-110">The following table lists descriptive strings for internal objects.</span></span>
+<span data-ttu-id="d2735-110">次の表は、オブジェクトの内部的な種類を説明する文字列の一覧です。</span><span class="sxs-lookup"><span data-stu-id="d2735-110">The following table lists descriptive strings for internal objects.</span></span>
   
 

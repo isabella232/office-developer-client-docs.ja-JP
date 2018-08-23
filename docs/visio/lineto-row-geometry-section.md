@@ -16,15 +16,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805700"
 ---
-# <a name="lineto-row-geometry-section"></a><span data-ttu-id="3e6aa-103">[LineTo] 行 ([Geometry] セクション)</span><span class="sxs-lookup"><span data-stu-id="3e6aa-103">LineTo Row (Geometry Section)</span></span>
+# <a name="lineto-row-geometry-section"></a><span data-ttu-id="703b5-103">[LineTo] 行 ([図形座標] セクション)</span><span class="sxs-lookup"><span data-stu-id="703b5-103">LineTo Row (Geometry Section)</span></span>
 
-<span data-ttu-id="3e6aa-104">*X*が含まれています- と*y*が直線の線分の終点の座標です。</span><span class="sxs-lookup"><span data-stu-id="3e6aa-104">Contains  *x*  -and  *y*  -coordinates of the ending vertex of a straight line segment.</span></span> 
+<span data-ttu-id="703b5-104">*X*が含まれています- と*y*が直線の線分の終点の座標です。</span><span class="sxs-lookup"><span data-stu-id="703b5-104">Contains  *x*  -and  *y*  -coordinates of the ending vertex of a straight line segment.</span></span> 
   
-<span data-ttu-id="3e6aa-105">[LineTo] 行には次のセルが含まれます。</span><span class="sxs-lookup"><span data-stu-id="3e6aa-105">A LineTo row contains the following cells.</span></span>
+<span data-ttu-id="703b5-105">[LineTo] 行には次のセルが含まれます。</span><span class="sxs-lookup"><span data-stu-id="703b5-105">A LineTo row contains the following cells.</span></span>
   
-|<span data-ttu-id="3e6aa-106">**Cell**</span><span class="sxs-lookup"><span data-stu-id="3e6aa-106">**Cell**</span></span>|<span data-ttu-id="3e6aa-107">**説明**</span><span class="sxs-lookup"><span data-stu-id="3e6aa-107">**Description**</span></span>|
+|<span data-ttu-id="703b5-106">**Cell**</span><span class="sxs-lookup"><span data-stu-id="703b5-106">**Cell**</span></span>|<span data-ttu-id="703b5-107">**説明**</span><span class="sxs-lookup"><span data-stu-id="703b5-107">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="3e6aa-108">X</span><span class="sxs-lookup"><span data-stu-id="3e6aa-108">X</span></span>](x-cell-geometry-section.md) <br/> |<span data-ttu-id="3e6aa-109">*X*の直線の線分の終点の座標です。</span><span class="sxs-lookup"><span data-stu-id="3e6aa-109">The  *x*  -coordinate of the ending vertex of a straight line segment.</span></span>  <br/> |
-|[<span data-ttu-id="3e6aa-110">Y</span><span class="sxs-lookup"><span data-stu-id="3e6aa-110">Y</span></span>](y-cell-geometry-section.md) <br/> |<span data-ttu-id="3e6aa-111">*Y*が直線の線分の終点の座標です。</span><span class="sxs-lookup"><span data-stu-id="3e6aa-111">The  *y*  -coordinate of the ending vertex of a straight line segment.</span></span>  <br/> |
+|[<span data-ttu-id="703b5-108">X</span><span class="sxs-lookup"><span data-stu-id="703b5-108">X</span></span>](x-cell-geometry-section.md) <br/> |<span data-ttu-id="703b5-109">*X*の直線の線分の終点の座標です。</span><span class="sxs-lookup"><span data-stu-id="703b5-109">The  *x*  -coordinate of the ending vertex of a straight line segment.</span></span>  <br/> |
+|[<span data-ttu-id="703b5-110">Y</span><span class="sxs-lookup"><span data-stu-id="703b5-110">Y</span></span>](y-cell-geometry-section.md) <br/> |<span data-ttu-id="703b5-111">*Y*が直線の線分の終点の座標です。</span><span class="sxs-lookup"><span data-stu-id="703b5-111">The  *y*  -coordinate of the ending vertex of a straight line segment.</span></span>  <br/> |
    
 

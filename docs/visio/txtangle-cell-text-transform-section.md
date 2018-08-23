@@ -16,24 +16,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806695"
 ---
-# <a name="txtangle-cell-text-transform-section"></a><span data-ttu-id="4fef1-104">[TxtAngle] セル ([Text Transform] セクション)</span><span class="sxs-lookup"><span data-stu-id="4fef1-104">TxtAngle Cell (Text Transform Section)</span></span>
+# <a name="txtangle-cell-text-transform-section"></a><span data-ttu-id="9cbdf-104">[TxtAngle] セル ([テキスト変換] セクション)</span><span class="sxs-lookup"><span data-stu-id="9cbdf-104">TxtAngle Cell (Text Transform Section)</span></span>
 
-<span data-ttu-id="4fef1-105">テキスト ブロックの現在の*x*を基準にして回転角度を指定の形状の軸です。</span><span class="sxs-lookup"><span data-stu-id="4fef1-105">Determines the text block's current angle of rotation in relation to the  *x*  -axis of the shape.</span></span> <span data-ttu-id="4fef1-106">既定値は、0 度です。</span><span class="sxs-lookup"><span data-stu-id="4fef1-106">The default is 0 degrees.</span></span> 
+<span data-ttu-id="9cbdf-105">テキスト ブロックの現在の*x*を基準にして回転角度を指定の形状の軸です。</span><span class="sxs-lookup"><span data-stu-id="9cbdf-105">Determines the text block's current angle of rotation in relation to the  *x*  -axis of the shape.</span></span> <span data-ttu-id="9cbdf-106">既定値は、0 度です。</span><span class="sxs-lookup"><span data-stu-id="9cbdf-106">The default is 0 degrees.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="4fef1-107">備考</span><span class="sxs-lookup"><span data-stu-id="4fef1-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9cbdf-107">注釈</span><span class="sxs-lookup"><span data-stu-id="9cbdf-107">Remarks</span></span>
 
-<span data-ttu-id="4fef1-108">別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [txtangle] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="4fef1-108">To get a reference to the TxtAngle cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="9cbdf-108">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [TxtAngle] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="9cbdf-108">To get a reference to the TxtAngle cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="4fef1-109">セル名 :</span><span class="sxs-lookup"><span data-stu-id="4fef1-109">Cell name:</span></span>  <br/> | <span data-ttu-id="4fef1-110">[Txtangle]</span><span class="sxs-lookup"><span data-stu-id="4fef1-110">TxtAngle</span></span>  <br/> |
+| <span data-ttu-id="9cbdf-109">セル名 :</span><span class="sxs-lookup"><span data-stu-id="9cbdf-109">Cell name:</span></span>  <br/> | <span data-ttu-id="9cbdf-110">[Txtangle]</span><span class="sxs-lookup"><span data-stu-id="9cbdf-110">TxtAngle</span></span>  <br/> |
    
-<span data-ttu-id="4fef1-111">プログラムから、インデックスによって [txtangle] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="4fef1-111">To get a reference to the TxtAngle cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="9cbdf-111">プログラムから、インデックスによって [TxtAngle] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="9cbdf-111">To get a reference to the TxtAngle cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="4fef1-112">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="4fef1-112">Section index:</span></span>  <br/> |<span data-ttu-id="4fef1-113">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="4fef1-113">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="4fef1-114">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="4fef1-114">Row index:</span></span>  <br/> |<span data-ttu-id="4fef1-115">**visRowTextXForm**</span><span class="sxs-lookup"><span data-stu-id="4fef1-115">**visRowTextXForm**</span></span> <br/> |
-| <span data-ttu-id="4fef1-116">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="4fef1-116">Cell index:</span></span>  <br/> |<span data-ttu-id="4fef1-117">**visXFormAngle**</span><span class="sxs-lookup"><span data-stu-id="4fef1-117">**visXFormAngle**</span></span> <br/> |
+| <span data-ttu-id="9cbdf-112">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="9cbdf-112">Section index:</span></span>  <br/> |<span data-ttu-id="9cbdf-113">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="9cbdf-113">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="9cbdf-114">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="9cbdf-114">Row index:</span></span>  <br/> |<span data-ttu-id="9cbdf-115">**visRowTextXForm**</span><span class="sxs-lookup"><span data-stu-id="9cbdf-115">**visRowTextXForm**</span></span> <br/> |
+| <span data-ttu-id="9cbdf-116">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="9cbdf-116">Cell index:</span></span>  <br/> |<span data-ttu-id="9cbdf-117">**visXFormAngle**</span><span class="sxs-lookup"><span data-stu-id="9cbdf-117">**visXFormAngle**</span></span> <br/> |
    
 

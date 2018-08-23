@@ -16,16 +16,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805561"
 ---
-# <a name="id-function"></a><span data-ttu-id="55f3f-103">ID 関数</span><span class="sxs-lookup"><span data-stu-id="55f3f-103">ID Function</span></span>
+# <a name="id-function"></a><span data-ttu-id="54959-103">ID 関数</span><span class="sxs-lookup"><span data-stu-id="54959-103">ID Function</span></span>
 
-<span data-ttu-id="55f3f-104">図形の内部 ID を数値として返します。</span><span class="sxs-lookup"><span data-stu-id="55f3f-104">Returns a shape's internal ID as a number.</span></span>
+<span data-ttu-id="54959-104">図形の内部 ID を数値として返します。</span><span class="sxs-lookup"><span data-stu-id="54959-104">Returns a shape's internal ID as a number.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="55f3f-105">構文</span><span class="sxs-lookup"><span data-stu-id="55f3f-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="54959-105">構文</span><span class="sxs-lookup"><span data-stu-id="54959-105">Syntax</span></span>
 
-<span data-ttu-id="55f3f-106">ID ()</span><span class="sxs-lookup"><span data-stu-id="55f3f-106">ID ()</span></span>
+<span data-ttu-id="54959-106">ID ()</span><span class="sxs-lookup"><span data-stu-id="54959-106">ID ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="55f3f-107">�߂�l</span><span class="sxs-lookup"><span data-stu-id="55f3f-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="54959-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="54959-107">Return value</span></span>
 
-<span data-ttu-id="55f3f-108">数値</span><span class="sxs-lookup"><span data-stu-id="55f3f-108">Number</span></span>
+<span data-ttu-id="54959-108">数値</span><span class="sxs-lookup"><span data-stu-id="54959-108">Number</span></span>
   
 

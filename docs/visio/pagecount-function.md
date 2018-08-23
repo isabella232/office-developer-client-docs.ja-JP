@@ -16,16 +16,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805960"
 ---
-# <a name="pagecount-function"></a><span data-ttu-id="17980-103">PAGECOUNT 関数</span><span class="sxs-lookup"><span data-stu-id="17980-103">PAGECOUNT Function</span></span>
+# <a name="pagecount-function"></a><span data-ttu-id="37081-103">PAGECOUNT 関数</span><span class="sxs-lookup"><span data-stu-id="37081-103">PAGECOUNT Function</span></span>
 
-<span data-ttu-id="17980-104">ドキュメントの前景ページの数を返します。</span><span class="sxs-lookup"><span data-stu-id="17980-104">Returns the number of foreground pages in a document.</span></span> 
+<span data-ttu-id="37081-104">ドキュメントの前景ページの数を返します。</span><span class="sxs-lookup"><span data-stu-id="37081-104">Returns the number of foreground pages in a document.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="17980-105">構文</span><span class="sxs-lookup"><span data-stu-id="17980-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="37081-105">構文</span><span class="sxs-lookup"><span data-stu-id="37081-105">Syntax</span></span>
 
-<span data-ttu-id="17980-106">PAGECOUNT ()</span><span class="sxs-lookup"><span data-stu-id="17980-106">PAGECOUNT ()</span></span>
+<span data-ttu-id="37081-106">PAGECOUNT ()</span><span class="sxs-lookup"><span data-stu-id="37081-106">PAGECOUNT ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="17980-107">�߂�l</span><span class="sxs-lookup"><span data-stu-id="17980-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="37081-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="37081-107">Return value</span></span>
 
-<span data-ttu-id="17980-108">数値</span><span class="sxs-lookup"><span data-stu-id="17980-108">Number</span></span>
+<span data-ttu-id="37081-108">数値</span><span class="sxs-lookup"><span data-stu-id="37081-108">Number</span></span>
   
 

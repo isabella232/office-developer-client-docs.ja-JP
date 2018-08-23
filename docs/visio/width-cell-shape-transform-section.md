@@ -16,26 +16,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806786"
 ---
-# <a name="width-cell-shape-transform-section"></a><span data-ttu-id="76391-104">[Width] セル ([Shape Transform] セクション)</span><span class="sxs-lookup"><span data-stu-id="76391-104">Width Cell (Shape Transform Section)</span></span>
+# <a name="width-cell-shape-transform-section"></a><span data-ttu-id="dd9f6-104">[Width] セル ([図形変換] セクション)</span><span class="sxs-lookup"><span data-stu-id="dd9f6-104">Width Cell (Shape Transform Section)</span></span>
 
-<span data-ttu-id="76391-p102">選択した図形の幅を図面の単位で表した値が表示されます。1-D 図形の幅を決定する既定の数式は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="76391-p102">Contains the width of the selected shape in drawing units. The default formula for determining the width of a 1-D shape is:</span></span>
+<span data-ttu-id="dd9f6-p102">選択した図形の幅を図面の単位で表した値が表示されます。1-D 図形の幅を決定する既定の数式は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="dd9f6-p102">Contains the width of the selected shape in drawing units. The default formula for determining the width of a 1-D shape is:</span></span>
   
-<span data-ttu-id="76391-107">= SQRT((EndX - BeginX) ^ 2 + (EndY - BeginY) ^ 2)</span><span class="sxs-lookup"><span data-stu-id="76391-107">= SQRT((EndX - BeginX) ^ 2 + (EndY - BeginY) ^ 2)</span></span>
+<span data-ttu-id="dd9f6-107">= SQRT((EndX - BeginX) ^ 2 + (EndY - BeginY) ^ 2)</span><span class="sxs-lookup"><span data-stu-id="dd9f6-107">= SQRT((EndX - BeginX) ^ 2 + (EndY - BeginY) ^ 2)</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="76391-108">備考</span><span class="sxs-lookup"><span data-stu-id="76391-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="dd9f6-108">備考</span><span class="sxs-lookup"><span data-stu-id="dd9f6-108">Remarks</span></span>
 
-<span data-ttu-id="76391-109">別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[Width] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="76391-109">To get a reference to the Width cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="dd9f6-109">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Width] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="dd9f6-109">To get a reference to the Width cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="76391-110">セル名 :</span><span class="sxs-lookup"><span data-stu-id="76391-110">Cell name:</span></span>  <br/> | <span data-ttu-id="76391-111">Width</span><span class="sxs-lookup"><span data-stu-id="76391-111">Width</span></span>  <br/> |
+| <span data-ttu-id="dd9f6-110">セル名 :</span><span class="sxs-lookup"><span data-stu-id="dd9f6-110">Cell name:</span></span>  <br/> | <span data-ttu-id="dd9f6-111">Width</span><span class="sxs-lookup"><span data-stu-id="dd9f6-111">Width</span></span>  <br/> |
    
-<span data-ttu-id="76391-112">プログラムから、インデックスによって [Width] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="76391-112">To get a reference to the Width cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="dd9f6-112">プログラムから、インデックスによって [Width] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="dd9f6-112">To get a reference to the Width cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="76391-113">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="76391-113">Section index:</span></span>  <br/> |<span data-ttu-id="76391-114">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="76391-114">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="76391-115">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="76391-115">Row index:</span></span>  <br/> |<span data-ttu-id="76391-116">**visRowXFormOut**</span><span class="sxs-lookup"><span data-stu-id="76391-116">**visRowXFormOut**</span></span> <br/> |
-| <span data-ttu-id="76391-117">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="76391-117">Cell index:</span></span>  <br/> |<span data-ttu-id="76391-118">**visXFormWidth**</span><span class="sxs-lookup"><span data-stu-id="76391-118">**visXFormWidth**</span></span> <br/> |
+| <span data-ttu-id="dd9f6-113">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="dd9f6-113">Section index:</span></span>  <br/> |<span data-ttu-id="dd9f6-114">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="dd9f6-114">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="dd9f6-115">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="dd9f6-115">Row index:</span></span>  <br/> |<span data-ttu-id="dd9f6-116">**visRowXFormOut**</span><span class="sxs-lookup"><span data-stu-id="dd9f6-116">**visRowXFormOut**</span></span> <br/> |
+| <span data-ttu-id="dd9f6-117">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="dd9f6-117">Cell index:</span></span>  <br/> |<span data-ttu-id="dd9f6-118">**visXFormWidth**</span><span class="sxs-lookup"><span data-stu-id="dd9f6-118">**visXFormWidth**</span></span> <br/> |
    
 

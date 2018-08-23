@@ -16,28 +16,28 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806018"
 ---
-# <a name="pnty-function"></a><span data-ttu-id="4ccb0-103">PNTY 関数</span><span class="sxs-lookup"><span data-stu-id="4ccb0-103">PNTY Function</span></span>
+# <a name="pnty-function"></a><span data-ttu-id="049fa-103">PNTY 関数</span><span class="sxs-lookup"><span data-stu-id="049fa-103">PNTY Function</span></span>
 
-<span data-ttu-id="4ccb0-104">_Y_を返します-点の座標です。</span><span class="sxs-lookup"><span data-stu-id="4ccb0-104">Returns the  _y_-coordinate of a point.</span></span>
+<span data-ttu-id="049fa-104">_Y_を返します-点の座標です。</span><span class="sxs-lookup"><span data-stu-id="049fa-104">Returns the  _y_-coordinate of a point.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="4ccb0-105">構文</span><span class="sxs-lookup"><span data-stu-id="4ccb0-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="049fa-105">構文</span><span class="sxs-lookup"><span data-stu-id="049fa-105">Syntax</span></span>
 
-<span data-ttu-id="4ccb0-106">PNTX (* **ポイント** *)</span><span class="sxs-lookup"><span data-stu-id="4ccb0-106">PNTX(** *point* ** )</span></span> 
+<span data-ttu-id="049fa-106">PNTX (* **ポイント** *)</span><span class="sxs-lookup"><span data-stu-id="049fa-106">PNTX(** *point* ** )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="4ccb0-107">Parameters</span><span class="sxs-lookup"><span data-stu-id="4ccb0-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="049fa-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="049fa-107">Parameters</span></span>
 
-|<span data-ttu-id="4ccb0-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="4ccb0-108">**Name**</span></span>|<span data-ttu-id="4ccb0-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="4ccb0-109">**Required/Optional**</span></span>|<span data-ttu-id="4ccb0-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="4ccb0-110">**Data Type**</span></span>|<span data-ttu-id="4ccb0-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="4ccb0-111">**Description**</span></span>|
+|<span data-ttu-id="049fa-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="049fa-108">**Name**</span></span>|<span data-ttu-id="049fa-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="049fa-109">**Required/Optional**</span></span>|<span data-ttu-id="049fa-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="049fa-110">**Data Type**</span></span>|<span data-ttu-id="049fa-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="049fa-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="4ccb0-112">_ポイント_</span><span class="sxs-lookup"><span data-stu-id="4ccb0-112">_point_</span></span> <br/> |<span data-ttu-id="4ccb0-113">必須</span><span class="sxs-lookup"><span data-stu-id="4ccb0-113">Required</span></span>  <br/> |<span data-ttu-id="4ccb0-114">**番号**</span><span class="sxs-lookup"><span data-stu-id="4ccb0-114">**Number**</span></span> <br/> |<span data-ttu-id="4ccb0-115">_Y_-点の座標です。</span><span class="sxs-lookup"><span data-stu-id="4ccb0-115">The  _y_-coordinate of the point.</span></span>  <br/> |
+| <span data-ttu-id="049fa-112">_ポイント_</span><span class="sxs-lookup"><span data-stu-id="049fa-112">_point_</span></span> <br/> |<span data-ttu-id="049fa-113">必須</span><span class="sxs-lookup"><span data-stu-id="049fa-113">Required</span></span>  <br/> |<span data-ttu-id="049fa-114">**番号**</span><span class="sxs-lookup"><span data-stu-id="049fa-114">**Number**</span></span> <br/> |<span data-ttu-id="049fa-115">_Y_-点の座標です。</span><span class="sxs-lookup"><span data-stu-id="049fa-115">The  _y_-coordinate of the point.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="4ccb0-116">�߂�l</span><span class="sxs-lookup"><span data-stu-id="4ccb0-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="049fa-116">戻り値</span><span class="sxs-lookup"><span data-stu-id="049fa-116">Return value</span></span>
 
-<span data-ttu-id="4ccb0-117">数値</span><span class="sxs-lookup"><span data-stu-id="4ccb0-117">Number</span></span>
+<span data-ttu-id="049fa-117">数値</span><span class="sxs-lookup"><span data-stu-id="049fa-117">Number</span></span>
   
-## <a name="example"></a><span data-ttu-id="4ccb0-118">例</span><span class="sxs-lookup"><span data-stu-id="4ccb0-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="049fa-118">例</span><span class="sxs-lookup"><span data-stu-id="049fa-118">Example</span></span>
 
-<span data-ttu-id="4ccb0-119">PNTY(PNT(7,12))</span><span class="sxs-lookup"><span data-stu-id="4ccb0-119">PNTY(PNT(7,12))</span></span> 
+<span data-ttu-id="049fa-119">PNTY(PNT(7,12))</span><span class="sxs-lookup"><span data-stu-id="049fa-119">PNTY(PNT(7,12))</span></span> 
   
-<span data-ttu-id="4ccb0-120">12 を返します。</span><span class="sxs-lookup"><span data-stu-id="4ccb0-120">Returns 12.</span></span> 
+<span data-ttu-id="049fa-120">12 を返します。</span><span class="sxs-lookup"><span data-stu-id="049fa-120">Returns 12.</span></span> 
   
 

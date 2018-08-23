@@ -14,24 +14,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806162"
 ---
-# <a name="reflectiontrans-cell-additional-effect-properties-section"></a><span data-ttu-id="a08dc-103">[ReflectionTrans] セル ([追加効果のプロパティ] セクション)</span><span class="sxs-lookup"><span data-stu-id="a08dc-103">ReflectionTrans Cell (Additional Effect Properties Section)</span></span>
+# <a name="reflectiontrans-cell-additional-effect-properties-section"></a><span data-ttu-id="30fbb-103">[ReflectionTrans] セル ([追加効果のプロパティ] セクション)</span><span class="sxs-lookup"><span data-stu-id="30fbb-103">ReflectionTrans Cell (Additional Effect Properties Section)</span></span>
 
-<span data-ttu-id="a08dc-104">0 から 100% の割合として、反射の透明度を決定します。</span><span class="sxs-lookup"><span data-stu-id="a08dc-104">Determines the transparency of the reflection, as a percentage from 0 to 100%.</span></span> 
+<span data-ttu-id="30fbb-104">0 から 100% の割合として、反射の透明度を決定します。</span><span class="sxs-lookup"><span data-stu-id="30fbb-104">Determines the transparency of the reflection, as a percentage from 0 to 100%.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="a08dc-105">備考</span><span class="sxs-lookup"><span data-stu-id="a08dc-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="30fbb-105">注釈</span><span class="sxs-lookup"><span data-stu-id="30fbb-105">Remarks</span></span>
 
-<span data-ttu-id="a08dc-106">**セル**要素の**N**属性の値によって、別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ **ReflectionTrans** ] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="a08dc-106">To get a reference to the **ReflectionTrans** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="30fbb-106">**セル**要素の**N**属性の値によって、別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ **ReflectionTrans** ] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="30fbb-106">To get a reference to the **ReflectionTrans** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="a08dc-107">セル名:</span><span class="sxs-lookup"><span data-stu-id="a08dc-107">Cell name:</span></span>  <br/> | <span data-ttu-id="a08dc-108">ReflectionTrans</span><span class="sxs-lookup"><span data-stu-id="a08dc-108">ReflectionTrans</span></span>  <br/> |
+| <span data-ttu-id="30fbb-107">セル名:</span><span class="sxs-lookup"><span data-stu-id="30fbb-107">Cell name:</span></span>  <br/> | <span data-ttu-id="30fbb-108">ReflectionTrans</span><span class="sxs-lookup"><span data-stu-id="30fbb-108">ReflectionTrans</span></span>  <br/> |
    
-<span data-ttu-id="a08dc-109">プログラムから、インデックスによって [ **ReflectionTrans** ] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="a08dc-109">To get a reference to the **ReflectionTrans** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="30fbb-109">プログラムから、インデックスによって [ **ReflectionTrans** ] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="30fbb-109">To get a reference to the **ReflectionTrans** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="a08dc-110">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="a08dc-110">Section index:</span></span>  <br/> |<span data-ttu-id="a08dc-111">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="a08dc-111">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="a08dc-112">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="a08dc-112">Row index:</span></span>  <br/> |<span data-ttu-id="a08dc-113">**visRowOtherEffectProperties**</span><span class="sxs-lookup"><span data-stu-id="a08dc-113">**visRowOtherEffectProperties**</span></span> <br/> |
-| <span data-ttu-id="a08dc-114">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="a08dc-114">Cell index:</span></span>  <br/> |<span data-ttu-id="a08dc-115">**visReflectionTrans**</span><span class="sxs-lookup"><span data-stu-id="a08dc-115">**visReflectionTrans**</span></span> <br/> |
+| <span data-ttu-id="30fbb-110">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="30fbb-110">Section index:</span></span>  <br/> |<span data-ttu-id="30fbb-111">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="30fbb-111">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="30fbb-112">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="30fbb-112">Row index:</span></span>  <br/> |<span data-ttu-id="30fbb-113">**visRowOtherEffectProperties**</span><span class="sxs-lookup"><span data-stu-id="30fbb-113">**visRowOtherEffectProperties**</span></span> <br/> |
+| <span data-ttu-id="30fbb-114">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="30fbb-114">Cell index:</span></span>  <br/> |<span data-ttu-id="30fbb-115">**visReflectionTrans**</span><span class="sxs-lookup"><span data-stu-id="30fbb-115">**visReflectionTrans**</span></span> <br/> |
    
 

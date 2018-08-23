@@ -14,29 +14,29 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805795"
 ---
-# <a name="lockvariation-cell-protection-section"></a><span data-ttu-id="054e1-103">[LockVariation] セル ([保護] セクション)</span><span class="sxs-lookup"><span data-stu-id="054e1-103">LockVariation Cell (Protection Section)</span></span>
+# <a name="lockvariation-cell-protection-section"></a><span data-ttu-id="a19bf-103">[LockVariation] セル ([保護] セクション)</span><span class="sxs-lookup"><span data-stu-id="a19bf-103">LockVariation Cell (Protection Section)</span></span>
 
-<span data-ttu-id="054e1-104">ページまたは図形に適用するテーマのバリエーションを変更できるかどうかを、ブール演算型で決定します。</span><span class="sxs-lookup"><span data-stu-id="054e1-104">Determines whether the theme variation applied to the page or shape can be changed, as a Boolean.</span></span>
+<span data-ttu-id="a19bf-104">ページまたは図形に適用するテーマのバリエーションを変更できるかどうかを、ブール演算型で決定します。</span><span class="sxs-lookup"><span data-stu-id="a19bf-104">Determines whether the theme variation applied to the page or shape can be changed, as a Boolean.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="054e1-105">TRUE</span><span class="sxs-lookup"><span data-stu-id="054e1-105">TRUE</span></span>  <br/> |<span data-ttu-id="054e1-106">ページまたは図形に適用された現在のバリエーションは変更できません。</span><span class="sxs-lookup"><span data-stu-id="054e1-106">The current variation applied to the page or shape cannot be changed.</span></span>  <br/> |
-|<span data-ttu-id="054e1-107">FALSE</span><span class="sxs-lookup"><span data-stu-id="054e1-107">FALSE</span></span>  <br/> |<span data-ttu-id="054e1-108">ページまたは図形のバリエーションは変更できます。</span><span class="sxs-lookup"><span data-stu-id="054e1-108">The variation of the page or shape can be changed.</span></span>  <br/> |
+|<span data-ttu-id="a19bf-105">TRUE</span><span class="sxs-lookup"><span data-stu-id="a19bf-105">TRUE</span></span>  <br/> |<span data-ttu-id="a19bf-106">ページまたは図形に適用された現在のバリエーションは変更できません。</span><span class="sxs-lookup"><span data-stu-id="a19bf-106">The current variation applied to the page or shape cannot be changed.</span></span>  <br/> |
+|<span data-ttu-id="a19bf-107">FALSE</span><span class="sxs-lookup"><span data-stu-id="a19bf-107">FALSE</span></span>  <br/> |<span data-ttu-id="a19bf-108">ページまたは図形のバリエーションは変更できます。</span><span class="sxs-lookup"><span data-stu-id="a19bf-108">The variation of the page or shape can be changed.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="054e1-109">Remarks</span><span class="sxs-lookup"><span data-stu-id="054e1-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a19bf-109">Remarks</span><span class="sxs-lookup"><span data-stu-id="a19bf-109">Remarks</span></span>
 
-<span data-ttu-id="054e1-110">**セル**要素の**N**属性の値によって、別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ **LockVariation** ] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="054e1-110">To get a reference to the **LockVariation** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="a19bf-110">別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**LockVariation**] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="a19bf-110">To get a reference to the **LockVariation** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="054e1-111">セル名:</span><span class="sxs-lookup"><span data-stu-id="054e1-111">Cell name:</span></span>  <br/> | <span data-ttu-id="054e1-112">LockVariation</span><span class="sxs-lookup"><span data-stu-id="054e1-112">LockVariation</span></span>  <br/> |
+| <span data-ttu-id="a19bf-111">セル名:</span><span class="sxs-lookup"><span data-stu-id="a19bf-111">Cell name:</span></span>  <br/> | <span data-ttu-id="a19bf-112">LockVariation</span><span class="sxs-lookup"><span data-stu-id="a19bf-112">LockVariation</span></span>  <br/> |
    
-<span data-ttu-id="054e1-113">プログラムから、インデックスによって [ **LockVariation** ] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="054e1-113">To get a reference to the **LockVariation** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="a19bf-113">プログラムから、インデックスによって [**LockVariation**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="a19bf-113">To get a reference to the **LockVariation** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="054e1-114">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="054e1-114">Section index:</span></span>  <br/> |<span data-ttu-id="054e1-115">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="054e1-115">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="054e1-116">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="054e1-116">Row index:</span></span>  <br/> |<span data-ttu-id="054e1-117">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="054e1-117">**visRowLock**</span></span> <br/> |
-| <span data-ttu-id="054e1-118">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="054e1-118">Cell index:</span></span>  <br/> |<span data-ttu-id="054e1-119">**visLockVariation**</span><span class="sxs-lookup"><span data-stu-id="054e1-119">**visLockVariation**</span></span> <br/> |
+| <span data-ttu-id="a19bf-114">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="a19bf-114">Section index:</span></span>  <br/> |<span data-ttu-id="a19bf-115">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="a19bf-115">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="a19bf-116">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="a19bf-116">Row index:</span></span>  <br/> |<span data-ttu-id="a19bf-117">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="a19bf-117">**visRowLock**</span></span> <br/> |
+| <span data-ttu-id="a19bf-118">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="a19bf-118">Cell index:</span></span>  <br/> |<span data-ttu-id="a19bf-119">**visLockVariation**</span><span class="sxs-lookup"><span data-stu-id="a19bf-119">**visLockVariation**</span></span> <br/> |
    
 

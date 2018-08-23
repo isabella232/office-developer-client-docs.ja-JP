@@ -16,16 +16,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806587"
 ---
-# <a name="subject-function"></a><span data-ttu-id="d6b2f-103">SUBJECT 関数</span><span class="sxs-lookup"><span data-stu-id="d6b2f-103">SUBJECT Function</span></span>
+# <a name="subject-function"></a><span data-ttu-id="d9a00-103">SUBJECT 関数</span><span class="sxs-lookup"><span data-stu-id="d9a00-103">SUBJECT Function</span></span>
 
-<span data-ttu-id="d6b2f-104">ドキュメントのプロパティの [**件名**] フィールドからテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="d6b2f-104">Returns the text from the **Subject** field of a document's properties.</span></span> 
+<span data-ttu-id="d9a00-104">ドキュメントのプロパティの [**件名**] フィールドからテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="d9a00-104">Returns the text from the **Subject** field of a document's properties.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="d6b2f-105">構文</span><span class="sxs-lookup"><span data-stu-id="d6b2f-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d9a00-105">構文</span><span class="sxs-lookup"><span data-stu-id="d9a00-105">Syntax</span></span>
 
-<span data-ttu-id="d6b2f-106">件名)</span><span class="sxs-lookup"><span data-stu-id="d6b2f-106">SUBJECT ()</span></span>
+<span data-ttu-id="d9a00-106">件名)</span><span class="sxs-lookup"><span data-stu-id="d9a00-106">SUBJECT ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="d6b2f-107">�߂�l</span><span class="sxs-lookup"><span data-stu-id="d6b2f-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="d9a00-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="d9a00-107">Return value</span></span>
 
-<span data-ttu-id="d6b2f-108">String</span><span class="sxs-lookup"><span data-stu-id="d6b2f-108">String</span></span>
+<span data-ttu-id="d9a00-108">String</span><span class="sxs-lookup"><span data-stu-id="d9a00-108">String</span></span>
   
 

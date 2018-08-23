@@ -16,16 +16,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805941"
 ---
-# <a name="opensheetwin-function"></a><span data-ttu-id="82151-103">OPENSHEETWIN 関数</span><span class="sxs-lookup"><span data-stu-id="82151-103">OPENSHEETWIN Function</span></span>
+# <a name="opensheetwin-function"></a><span data-ttu-id="ba63c-103">OPENSHEETWIN 関数</span><span class="sxs-lookup"><span data-stu-id="ba63c-103">OPENSHEETWIN Function</span></span>
 
-<span data-ttu-id="82151-104">新しいウィンドウで、[シェイプ シート] ウィンドウが開きます。</span><span class="sxs-lookup"><span data-stu-id="82151-104">Opens the ShapeSheet window in a new window.</span></span>
+<span data-ttu-id="ba63c-104">新しいウィンドウで、[シェイプ シート] ウィンドウが開きます。</span><span class="sxs-lookup"><span data-stu-id="ba63c-104">Opens the ShapeSheet window in a new window.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="82151-105">構文</span><span class="sxs-lookup"><span data-stu-id="82151-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ba63c-105">構文</span><span class="sxs-lookup"><span data-stu-id="ba63c-105">Syntax</span></span>
 
-<span data-ttu-id="82151-106">OPENSHEETWIN( )</span><span class="sxs-lookup"><span data-stu-id="82151-106">OPENSHEETWIN( )</span></span>
+<span data-ttu-id="ba63c-106">OPENSHEETWIN( )</span><span class="sxs-lookup"><span data-stu-id="ba63c-106">OPENSHEETWIN( )</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="82151-107">注釈</span><span class="sxs-lookup"><span data-stu-id="82151-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ba63c-107">注釈</span><span class="sxs-lookup"><span data-stu-id="ba63c-107">Remarks</span></span>
 
-<span data-ttu-id="82151-p101">以前のバージョンの Visio では、この関数は _OPENSHEETWIN に相当します。Visio 4.0 以降のバージョンでは、どちらのスタイルも使用できます。</span><span class="sxs-lookup"><span data-stu-id="82151-p101">In earlier versions of Visio, this function appears as _OPENSHEETWIN. Visio versions 4.0 and later accept either style.</span></span> 
+<span data-ttu-id="ba63c-p101">以前のバージョンの Visio では、この関数は _OPENSHEETWIN に相当します。Visio 4.0 以降のバージョンでは、どちらのスタイルも使用できます。</span><span class="sxs-lookup"><span data-stu-id="ba63c-p101">In earlier versions of Visio, this function appears as _OPENSHEETWIN. Visio versions 4.0 and later accept either style.</span></span> 
   
 

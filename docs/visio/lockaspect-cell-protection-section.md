@@ -16,29 +16,29 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805747"
 ---
-# <a name="lockaspect-cell-protection-section"></a><span data-ttu-id="37693-103">[LockAspect] セル ([Protection] セクション)</span><span class="sxs-lookup"><span data-stu-id="37693-103">LockAspect Cell (Protection Section)</span></span>
+# <a name="lockaspect-cell-protection-section"></a><span data-ttu-id="fa911-103">[LockAspect ] セル ([保護] セクション)</span><span class="sxs-lookup"><span data-stu-id="fa911-103">LockAspect Cell (Protection Section)</span></span>
 
-<span data-ttu-id="37693-104">図形の縦横比をロックします。ロックすると、図形のサイズを変更するときに縦横比が維持されます。上下、左右のいずれか一方向だけサイズを変更することができなくなります。</span><span class="sxs-lookup"><span data-stu-id="37693-104">Locks the aspect ratio of the shape so that the shape can only be sized proportionally; it cannot be sized in a single dimension.</span></span>
+<span data-ttu-id="fa911-104">図形の縦横比をロックします。ロックすると、図形のサイズを変更するときに縦横比が維持されます。上下、左右のいずれか一方向だけサイズを変更することができなくなります。</span><span class="sxs-lookup"><span data-stu-id="fa911-104">Locks the aspect ratio of the shape so that the shape can only be sized proportionally; it cannot be sized in a single dimension.</span></span>
   
-|<span data-ttu-id="37693-105">**値**</span><span class="sxs-lookup"><span data-stu-id="37693-105">**Value**</span></span>|<span data-ttu-id="37693-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="37693-106">**Description**</span></span>|
+|<span data-ttu-id="fa911-105">**値**</span><span class="sxs-lookup"><span data-stu-id="fa911-105">**Value**</span></span>|<span data-ttu-id="fa911-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="fa911-106">**Description**</span></span>|
 |:-----|:-----|
-| <span data-ttu-id="37693-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="37693-107">TRUE</span></span>  <br/> | <span data-ttu-id="37693-108">縦横比をロックします。</span><span class="sxs-lookup"><span data-stu-id="37693-108">Aspect ratio is locked.</span></span>  <br/> |
-| <span data-ttu-id="37693-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="37693-109">FALSE</span></span>  <br/> | <span data-ttu-id="37693-110">縦横比をロックしません。</span><span class="sxs-lookup"><span data-stu-id="37693-110">Aspect ratio is not locked.</span></span>  <br/> |
+| <span data-ttu-id="fa911-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="fa911-107">TRUE</span></span>  <br/> | <span data-ttu-id="fa911-108">縦横比をロックします。</span><span class="sxs-lookup"><span data-stu-id="fa911-108">Aspect ratio is locked.</span></span>  <br/> |
+| <span data-ttu-id="fa911-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="fa911-109">FALSE</span></span>  <br/> | <span data-ttu-id="fa911-110">縦横比をロックしません。</span><span class="sxs-lookup"><span data-stu-id="fa911-110">Aspect ratio is not locked.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="37693-111">備考</span><span class="sxs-lookup"><span data-stu-id="37693-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="fa911-111">備考</span><span class="sxs-lookup"><span data-stu-id="fa911-111">Remarks</span></span>
 
-<span data-ttu-id="37693-112">別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[LockAspect] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="37693-112">To get a reference to the LockAspect cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="fa911-112">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LockAspect] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="fa911-112">To get a reference to the LockAspect cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="37693-113">セル名:</span><span class="sxs-lookup"><span data-stu-id="37693-113">Cell name:</span></span>  <br/> | <span data-ttu-id="37693-114">LockAspect</span><span class="sxs-lookup"><span data-stu-id="37693-114">LockAspect</span></span>  <br/> |
+| <span data-ttu-id="fa911-113">セル名:</span><span class="sxs-lookup"><span data-stu-id="fa911-113">Cell name:</span></span>  <br/> | <span data-ttu-id="fa911-114">LockAspect</span><span class="sxs-lookup"><span data-stu-id="fa911-114">LockAspect</span></span>  <br/> |
    
-<span data-ttu-id="37693-115">プログラムから、インデックスによって [LockAspect] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="37693-115">To get a reference to the LockAspect cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="fa911-115">プログラムから、インデックスによって [LockAspect] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="fa911-115">To get a reference to the LockAspect cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="37693-116">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="37693-116">Section index:</span></span>  <br/> |<span data-ttu-id="37693-117">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="37693-117">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="37693-118">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="37693-118">Row index:</span></span>  <br/> |<span data-ttu-id="37693-119">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="37693-119">**visRowLock**</span></span> <br/> |
-| <span data-ttu-id="37693-120">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="37693-120">Cell index:</span></span>  <br/> |<span data-ttu-id="37693-121">**visLockAspect**</span><span class="sxs-lookup"><span data-stu-id="37693-121">**visLockAspect**</span></span> <br/> |
+| <span data-ttu-id="fa911-116">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="fa911-116">Section index:</span></span>  <br/> |<span data-ttu-id="fa911-117">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="fa911-117">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="fa911-118">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="fa911-118">Row index:</span></span>  <br/> |<span data-ttu-id="fa911-119">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="fa911-119">**visRowLock**</span></span> <br/> |
+| <span data-ttu-id="fa911-120">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="fa911-120">Cell index:</span></span>  <br/> |<span data-ttu-id="fa911-121">**visLockAspect**</span><span class="sxs-lookup"><span data-stu-id="fa911-121">**visLockAspect**</span></span> <br/> |
    
 

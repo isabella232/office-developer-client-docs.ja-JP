@@ -16,33 +16,33 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806251"
 ---
-# <a name="rept-function"></a><span data-ttu-id="5e1a7-103">REPT 関数</span><span class="sxs-lookup"><span data-stu-id="5e1a7-103">REPT Function</span></span>
+# <a name="rept-function"></a><span data-ttu-id="4fb49-103">REPT 関数</span><span class="sxs-lookup"><span data-stu-id="4fb49-103">REPT Function</span></span>
 
-<span data-ttu-id="5e1a7-104">テキストを指定した回数だけ繰り返されます。</span><span class="sxs-lookup"><span data-stu-id="5e1a7-104">Repeats text a given number of times.</span></span> 
+<span data-ttu-id="4fb49-104">テキストを指定した回数だけ繰り返されます。</span><span class="sxs-lookup"><span data-stu-id="4fb49-104">Repeats text a given number of times.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="5e1a7-105">構文</span><span class="sxs-lookup"><span data-stu-id="5e1a7-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="4fb49-105">構文</span><span class="sxs-lookup"><span data-stu-id="4fb49-105">Syntax</span></span>
 
-<span data-ttu-id="5e1a7-106">REPT (* **テキスト** *、* **繰り返し** *)</span><span class="sxs-lookup"><span data-stu-id="5e1a7-106">REPT (** *text* **, ** *number_times* ** )</span></span> 
+<span data-ttu-id="4fb49-106">REPT (* **テキスト** *、* **繰り返し** *)</span><span class="sxs-lookup"><span data-stu-id="4fb49-106">REPT (** *text* **, ** *number_times* ** )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="5e1a7-107">Parameters</span><span class="sxs-lookup"><span data-stu-id="5e1a7-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="4fb49-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4fb49-107">Parameters</span></span>
 
-|<span data-ttu-id="5e1a7-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="5e1a7-108">**Name**</span></span>|<span data-ttu-id="5e1a7-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="5e1a7-109">**Required/Optional**</span></span>|<span data-ttu-id="5e1a7-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="5e1a7-110">**Data Type**</span></span>|<span data-ttu-id="5e1a7-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="5e1a7-111">**Description**</span></span>|
+|<span data-ttu-id="4fb49-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="4fb49-108">**Name**</span></span>|<span data-ttu-id="4fb49-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="4fb49-109">**Required/Optional**</span></span>|<span data-ttu-id="4fb49-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="4fb49-110">**Data Type**</span></span>|<span data-ttu-id="4fb49-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="4fb49-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="5e1a7-112">_text_</span><span class="sxs-lookup"><span data-stu-id="5e1a7-112">_text_</span></span> <br/> |<span data-ttu-id="5e1a7-113">必須</span><span class="sxs-lookup"><span data-stu-id="5e1a7-113">Required</span></span>  <br/> |<span data-ttu-id="5e1a7-114">**文字列型 (String)**</span><span class="sxs-lookup"><span data-stu-id="5e1a7-114">**String**</span></span> <br/> | <span data-ttu-id="5e1a7-115">繰り返す文字列を指定します。</span><span class="sxs-lookup"><span data-stu-id="5e1a7-115">The text you want to repeat.</span></span>  <br/> |
-| <span data-ttu-id="5e1a7-116">_繰り返し回数_</span><span class="sxs-lookup"><span data-stu-id="5e1a7-116">_number_times_</span></span> <br/> |<span data-ttu-id="5e1a7-117">必須</span><span class="sxs-lookup"><span data-stu-id="5e1a7-117">Required</span></span>  <br/> |<span data-ttu-id="5e1a7-118">**番号**</span><span class="sxs-lookup"><span data-stu-id="5e1a7-118">**Number**</span></span> <br/> |<span data-ttu-id="5e1a7-119">文字列の繰り返す回数を、正の数値で指定します。</span><span class="sxs-lookup"><span data-stu-id="5e1a7-119">A positive number specifying the number of times to repeat text.</span></span>  <br/> |
+| <span data-ttu-id="4fb49-112">_text_</span><span class="sxs-lookup"><span data-stu-id="4fb49-112">_text_</span></span> <br/> |<span data-ttu-id="4fb49-113">必須</span><span class="sxs-lookup"><span data-stu-id="4fb49-113">Required</span></span>  <br/> |<span data-ttu-id="4fb49-114">**文字列型 (String)**</span><span class="sxs-lookup"><span data-stu-id="4fb49-114">**String**</span></span> <br/> | <span data-ttu-id="4fb49-115">繰り返す文字列を指定します。</span><span class="sxs-lookup"><span data-stu-id="4fb49-115">The text you want to repeat.</span></span>  <br/> |
+| <span data-ttu-id="4fb49-116">_繰り返し回数_</span><span class="sxs-lookup"><span data-stu-id="4fb49-116">_number_times_</span></span> <br/> |<span data-ttu-id="4fb49-117">必須</span><span class="sxs-lookup"><span data-stu-id="4fb49-117">Required</span></span>  <br/> |<span data-ttu-id="4fb49-118">**番号**</span><span class="sxs-lookup"><span data-stu-id="4fb49-118">**Number**</span></span> <br/> |<span data-ttu-id="4fb49-119">文字列の繰り返す回数を、正の数値で指定します。</span><span class="sxs-lookup"><span data-stu-id="4fb49-119">A positive number specifying the number of times to repeat text.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="5e1a7-120">注釈</span><span class="sxs-lookup"><span data-stu-id="5e1a7-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="4fb49-120">注釈</span><span class="sxs-lookup"><span data-stu-id="4fb49-120">Remarks</span></span>
 
-<span data-ttu-id="5e1a7-121">場合は、*繰り返し回数*は、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="5e1a7-121">If  *number_times*  is:</span></span> 
+<span data-ttu-id="4fb49-121">場合は、*繰り返し回数*は、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="4fb49-121">If  *number_times*  is:</span></span> 
   
-- <span data-ttu-id="5e1a7-122">number_times がゼロ (0) の場合、"" (空文字列) を返します。</span><span class="sxs-lookup"><span data-stu-id="5e1a7-122">Zero (0), REPT returns "" (empty text).</span></span>
+- <span data-ttu-id="4fb49-122">number_times がゼロ (0) の場合、"" (空文字列) を返します。</span><span class="sxs-lookup"><span data-stu-id="4fb49-122">Zero (0), REPT returns "" (empty text).</span></span>
     
-- <span data-ttu-id="5e1a7-123">number_times が整数でない場合、小数点以下は切り捨てられます。</span><span class="sxs-lookup"><span data-stu-id="5e1a7-123">Not an interger, it is truncated.</span></span>
+- <span data-ttu-id="4fb49-123">number_times が整数でない場合、小数点以下は切り捨てられます。</span><span class="sxs-lookup"><span data-stu-id="4fb49-123">Not an interger, it is truncated.</span></span>
     
-## <a name="example"></a><span data-ttu-id="5e1a7-124">例</span><span class="sxs-lookup"><span data-stu-id="5e1a7-124">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4fb49-124">例</span><span class="sxs-lookup"><span data-stu-id="4fb49-124">Example</span></span>
 
-<span data-ttu-id="5e1a7-125">REPT ("\*", 5)</span><span class="sxs-lookup"><span data-stu-id="5e1a7-125">REPT ("\*", 5)</span></span> 
+<span data-ttu-id="4fb49-125">REPT ("\*", 5)</span><span class="sxs-lookup"><span data-stu-id="4fb49-125">REPT ("\*", 5)</span></span> 
   
-<span data-ttu-id="5e1a7-126">返します。 \* \* \* \* \*。</span><span class="sxs-lookup"><span data-stu-id="5e1a7-126">Returns \*\*\*\*\*.</span></span> 
+<span data-ttu-id="4fb49-126">返します。 \* \* \* \* \*。</span><span class="sxs-lookup"><span data-stu-id="4fb49-126">Returns \*\*\*\*\*.</span></span> 
   
 

@@ -16,24 +16,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805470"
 ---
-# <a name="getref-function"></a><span data-ttu-id="20864-103">GETREF 関数</span><span class="sxs-lookup"><span data-stu-id="20864-103">GETREF Function</span></span>
+# <a name="getref-function"></a><span data-ttu-id="98613-103">GETREF 関数</span><span class="sxs-lookup"><span data-stu-id="98613-103">GETREF Function</span></span>
 
-<span data-ttu-id="20864-104">セルを参照し、参照先のセルが変更されたとき、数式を再計算しません。</span><span class="sxs-lookup"><span data-stu-id="20864-104">References a cell and doesn't recalculate the formula when the referenced cell changes.</span></span>
+<span data-ttu-id="98613-104">セルを参照し、参照先のセルが変更されたとき、数式を再計算しません。</span><span class="sxs-lookup"><span data-stu-id="98613-104">References a cell and doesn't recalculate the formula when the referenced cell changes.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="20864-105">構文</span><span class="sxs-lookup"><span data-stu-id="20864-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="98613-105">構文</span><span class="sxs-lookup"><span data-stu-id="98613-105">Syntax</span></span>
 
-<span data-ttu-id="20864-106">GETREF (* * *cellname* * *)</span><span class="sxs-lookup"><span data-stu-id="20864-106">GETREF(** *cellname* ** )</span></span> 
+<span data-ttu-id="98613-106">GETREF (* * *cellname* * *)</span><span class="sxs-lookup"><span data-stu-id="98613-106">GETREF(** *cellname* ** )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="20864-107">Parameters</span><span class="sxs-lookup"><span data-stu-id="20864-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="98613-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="98613-107">Parameters</span></span>
 
-|<span data-ttu-id="20864-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="20864-108">**Name**</span></span>|<span data-ttu-id="20864-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="20864-109">**Required/Optional**</span></span>|<span data-ttu-id="20864-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="20864-110">**Data Type**</span></span>|<span data-ttu-id="20864-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="20864-111">**Description**</span></span>|
+|<span data-ttu-id="98613-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="98613-108">**Name**</span></span>|<span data-ttu-id="98613-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="98613-109">**Required/Optional**</span></span>|<span data-ttu-id="98613-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="98613-110">**Data Type**</span></span>|<span data-ttu-id="98613-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="98613-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="20864-112">_cellname_</span><span class="sxs-lookup"><span data-stu-id="20864-112">_cellname_</span></span> <br/> |<span data-ttu-id="20864-113">必須</span><span class="sxs-lookup"><span data-stu-id="20864-113">Required</span></span>  <br/> |<span data-ttu-id="20864-114">**文字列型 (String)**</span><span class="sxs-lookup"><span data-stu-id="20864-114">**String**</span></span> <br/> |<span data-ttu-id="20864-115">参照を取得するセルの名前です。</span><span class="sxs-lookup"><span data-stu-id="20864-115">The name of the cell to get a reference to.</span></span>  <br/> |
+| <span data-ttu-id="98613-112">_cellname_</span><span class="sxs-lookup"><span data-stu-id="98613-112">_cellname_</span></span> <br/> |<span data-ttu-id="98613-113">必須</span><span class="sxs-lookup"><span data-stu-id="98613-113">Required</span></span>  <br/> |<span data-ttu-id="98613-114">**文字列型 (String)**</span><span class="sxs-lookup"><span data-stu-id="98613-114">**String**</span></span> <br/> |<span data-ttu-id="98613-115">参照を取得するセルの名前です。</span><span class="sxs-lookup"><span data-stu-id="98613-115">The name of the cell to get a reference to.</span></span>  <br/> |
    
-## <a name="example"></a><span data-ttu-id="20864-116">例</span><span class="sxs-lookup"><span data-stu-id="20864-116">Example</span></span>
+## <a name="example"></a><span data-ttu-id="98613-116">例</span><span class="sxs-lookup"><span data-stu-id="98613-116">Example</span></span>
 
-<span data-ttu-id="20864-117">SETF(GETREF(PinX),5.1)</span><span class="sxs-lookup"><span data-stu-id="20864-117">SETF(GETREF(PinX),5.1)</span></span> 
+<span data-ttu-id="98613-117">SETF(GETREF(PinX),5.1)</span><span class="sxs-lookup"><span data-stu-id="98613-117">SETF(GETREF(PinX),5.1)</span></span> 
   
-<span data-ttu-id="20864-118">[PinX] セルの数式を 5.1 に設定します。</span><span class="sxs-lookup"><span data-stu-id="20864-118">Sets the formula of the PinX cell to 5.1.</span></span> 
+<span data-ttu-id="98613-118">[PinX] セルの数式を 5.1 に設定します。</span><span class="sxs-lookup"><span data-stu-id="98613-118">Sets the formula of the PinX cell to 5.1.</span></span> 
   
 

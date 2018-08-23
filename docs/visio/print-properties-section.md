@@ -16,14 +16,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806120"
 ---
-# <a name="print-properties-section"></a><span data-ttu-id="6ee68-103">[Print Properties] セクション</span><span class="sxs-lookup"><span data-stu-id="6ee68-103">Print Properties Section</span></span>
+# <a name="print-properties-section"></a><span data-ttu-id="ad9ca-103">[印刷のプロパティ] セクション</span><span class="sxs-lookup"><span data-stu-id="ad9ca-103">Print Properties Section</span></span>
 
-<span data-ttu-id="6ee68-104">図面ページをプリンター ページ上で書式設定 (表示) する方法を制御するセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="6ee68-104">Contains the cells that control how the drawing page is formatted (appears) on the printer page.</span></span> 
+<span data-ttu-id="ad9ca-104">図面ページをプリンター ページ上で書式設定 (表示) する方法を制御するセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="ad9ca-104">Contains the cells that control how the drawing page is formatted (appears) on the printer page.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="6ee68-105">注釈</span><span class="sxs-lookup"><span data-stu-id="6ee68-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ad9ca-105">注釈</span><span class="sxs-lookup"><span data-stu-id="ad9ca-105">Remarks</span></span>
 
-<span data-ttu-id="6ee68-106">**Print Properties** ] セクションを使用すると、ページ レベルでの印刷を制御できます。</span><span class="sxs-lookup"><span data-stu-id="6ee68-106">Use the **Print Properties** section to control printing at the page level.</span></span> <span data-ttu-id="6ee68-107">これらの設定は 1 ページあたり、図面ページの設定、縦向きの用紙を使用して横方向の使用方法を印刷することができますたとえば、図面ページとは無関係です。</span><span class="sxs-lookup"><span data-stu-id="6ee68-107">These settings are per page and are independent of the drawing page settings, for example, a drawing page that uses landscape orientation can be printed using portrait orientation.</span></span> <span data-ttu-id="6ee68-108">また、文書の向きの組み合わせを使用して印刷できます。</span><span class="sxs-lookup"><span data-stu-id="6ee68-108">Also, documents can be printed using a combination of orientations.</span></span> 
+<span data-ttu-id="ad9ca-p101">[**印刷のプロパティ**] セクションを使用して、ページ レベルで印刷を制御します。これらの設定はページごとに行われ、図面ページ設定による影響は受けません。たとえば、横長方向を使用する図面ページを縦長方向を使用して印刷できます。また、図面は方向を組み合わせて印刷できます。</span><span class="sxs-lookup"><span data-stu-id="ad9ca-p101">Use the **Print Properties** section to control printing at the page level. These settings are per page and are independent of the drawing page settings, for example, a drawing page that uses landscape orientation can be printed using portrait orientation. Also, documents can be printed using a combination of orientations.</span></span> 
   
-<span data-ttu-id="6ee68-109">[ **Print Properties** ] セクションの設定は、 **[ページ設定**] ダイアログ ボックスの [**印刷設定**] タブで設定される値に対応して ([**デザイン**] タブをクリックして [**ページ設定**] ダイアログ ボックス起動ツール)。</span><span class="sxs-lookup"><span data-stu-id="6ee68-109">The settings in the **Print Properties** section correspond to the values set on the **Print Setup** tab in the **Page Setup** dialog box (on the **Design** tab, click the dialog box launcher in the **Page Setup** group).</span></span> <span data-ttu-id="6ee68-110">図面ページに適用される設定の**ページのプロパティ**を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6ee68-110">See the **Page Properties** section for settings that apply to the drawing page.</span></span> 
+<span data-ttu-id="ad9ca-p102">[**印刷のプロパティ**] セクションの設定は、[**ページ設定**] ダイアログ ボックスの [**プリンターの設定**] タブで設定される値と一致します (このダイアログ ボックスを開くには、[**デザイン**] タブの [**ページ設定**] グループでダイアログ ボックスのランチャーをクリックします)。図面ページに適用される設定については、[**ページのプロパティ**] セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="ad9ca-p102">The settings in the **Print Properties** section correspond to the values set on the **Print Setup** tab in the **Page Setup** dialog box (on the **Design** tab, click the dialog box launcher in the **Page Setup** group). See the **Page Properties** section for settings that apply to the drawing page.</span></span> 
   
 

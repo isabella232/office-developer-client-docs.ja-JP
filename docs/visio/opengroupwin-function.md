@@ -16,16 +16,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805937"
 ---
-# <a name="opengroupwin-function"></a><span data-ttu-id="381a7-104">OPENGROUPWIN 関数</span><span class="sxs-lookup"><span data-stu-id="381a7-104">OPENGROUPWIN Function</span></span>
+# <a name="opengroupwin-function"></a><span data-ttu-id="9ab2b-104">OPENGROUPWIN 関数</span><span class="sxs-lookup"><span data-stu-id="9ab2b-104">OPENGROUPWIN Function</span></span>
 
-<span data-ttu-id="381a7-105">グループ ウィンドウでグループを開きます。</span><span class="sxs-lookup"><span data-stu-id="381a7-105">Opens the group in the group window.</span></span> <span data-ttu-id="381a7-106">オブジェクトがグループでない場合は、この関数は何も実行しません。</span><span class="sxs-lookup"><span data-stu-id="381a7-106">If the object is not a group, this function does nothing.</span></span>
+<span data-ttu-id="9ab2b-105">グループ ウィンドウでグループを開きます。</span><span class="sxs-lookup"><span data-stu-id="9ab2b-105">Opens the group in the group window.</span></span> <span data-ttu-id="9ab2b-106">オブジェクトがグループでない場合は、この関数は何も実行しません。</span><span class="sxs-lookup"><span data-stu-id="9ab2b-106">If the object is not a group, this function does nothing.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="381a7-107">構文</span><span class="sxs-lookup"><span data-stu-id="381a7-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="9ab2b-107">構文</span><span class="sxs-lookup"><span data-stu-id="9ab2b-107">Syntax</span></span>
 
-<span data-ttu-id="381a7-108">OPENGROUPWIN( )</span><span class="sxs-lookup"><span data-stu-id="381a7-108">OPENGROUPWIN( )</span></span>
+<span data-ttu-id="9ab2b-108">OPENGROUPWIN( )</span><span class="sxs-lookup"><span data-stu-id="9ab2b-108">OPENGROUPWIN( )</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="381a7-109">注釈</span><span class="sxs-lookup"><span data-stu-id="381a7-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9ab2b-109">注釈</span><span class="sxs-lookup"><span data-stu-id="9ab2b-109">Remarks</span></span>
 
-<span data-ttu-id="381a7-p103">以前のバージョンの Visio では、この関数は _OPENGROUPWIN に相当します。Visio 4.0 以降のバージョンでは、どちらのスタイルも使用できます。</span><span class="sxs-lookup"><span data-stu-id="381a7-p103">In earlier versions of Visio, this function appears as _OPENGROUPWIN. Visio versions 4.0 and later accept either style.</span></span> 
+<span data-ttu-id="9ab2b-p103">以前のバージョンの Visio では、この関数は _OPENGROUPWIN に相当します。Visio 4.0 以降のバージョンでは、どちらのスタイルも使用できます。</span><span class="sxs-lookup"><span data-stu-id="9ab2b-p103">In earlier versions of Visio, this function appears as _OPENGROUPWIN. Visio versions 4.0 and later accept either style.</span></span> 
   
 

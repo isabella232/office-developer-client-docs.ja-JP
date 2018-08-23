@@ -16,28 +16,28 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805572"
 ---
-# <a name="imgwidth-cell-foreign-image-info-section"></a><span data-ttu-id="77465-104">[ImgWidth] セル ([Foreign Image Info] セクション)</span><span class="sxs-lookup"><span data-stu-id="77465-104">ImgWidth Cell (Foreign Image Info Section)</span></span>
+# <a name="imgwidth-cell-foreign-image-info-section"></a><span data-ttu-id="62c76-104">[ImgWidth] セル ([外部画像情報] セクション)</span><span class="sxs-lookup"><span data-stu-id="62c76-104">ImgWidth Cell (Foreign Image Info Section)</span></span>
 
-<span data-ttu-id="77465-p102">枠内におけるオブジェクトのイメージの幅を指定します。既定の数式は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="77465-p102">Determines the width of the object's image within its border. The default formula is:</span></span>
+<span data-ttu-id="62c76-p102">枠内におけるオブジェクトのイメージの幅を指定します。既定の数式は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="62c76-p102">Determines the width of the object's image within its border. The default formula is:</span></span>
   
-<span data-ttu-id="77465-107">= 幅\*1</span><span class="sxs-lookup"><span data-stu-id="77465-107">= Width \* 1</span></span>
+<span data-ttu-id="62c76-107">= 幅\*1</span><span class="sxs-lookup"><span data-stu-id="62c76-107">= Width \* 1</span></span>
   
-<span data-ttu-id="77465-108">オブジェクトをトリミングすると、Width に掛ける係数が変化します。</span><span class="sxs-lookup"><span data-stu-id="77465-108">Cropping the object changes the factor by which Width is multiplied.</span></span>
+<span data-ttu-id="62c76-108">オブジェクトをトリミングすると、Width に掛ける係数が変化します。</span><span class="sxs-lookup"><span data-stu-id="62c76-108">Cropping the object changes the factor by which Width is multiplied.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="77465-109">備考</span><span class="sxs-lookup"><span data-stu-id="77465-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="62c76-109">備考</span><span class="sxs-lookup"><span data-stu-id="62c76-109">Remarks</span></span>
 
-<span data-ttu-id="77465-110">別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [imgwidth] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="77465-110">To get a reference to the ImgWidth cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="62c76-110">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ImgWidth] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="62c76-110">To get a reference to the ImgWidth cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="77465-111">セル名:</span><span class="sxs-lookup"><span data-stu-id="77465-111">Cell name:</span></span>  <br/> | <span data-ttu-id="77465-112">[Imgwidth]</span><span class="sxs-lookup"><span data-stu-id="77465-112">ImgWidth</span></span>  <br/> |
+| <span data-ttu-id="62c76-111">セル名:</span><span class="sxs-lookup"><span data-stu-id="62c76-111">Cell name:</span></span>  <br/> | <span data-ttu-id="62c76-112">[Imgwidth]</span><span class="sxs-lookup"><span data-stu-id="62c76-112">ImgWidth</span></span>  <br/> |
    
-<span data-ttu-id="77465-113">プログラムから、インデックスによって [imgwidth] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="77465-113">To get a reference to the ImgWidth cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="62c76-113">プログラムから、インデックスによって [ImgWidth] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="62c76-113">To get a reference to the ImgWidth cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="77465-114">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="77465-114">Section index:</span></span>  <br/> |<span data-ttu-id="77465-115">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="77465-115">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="77465-116">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="77465-116">Row index:</span></span>  <br/> |<span data-ttu-id="77465-117">**visRowForeign**</span><span class="sxs-lookup"><span data-stu-id="77465-117">**visRowForeign**</span></span> <br/> |
-| <span data-ttu-id="77465-118">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="77465-118">Cell index:</span></span>  <br/> |<span data-ttu-id="77465-119">**visFrgnImgWidth**</span><span class="sxs-lookup"><span data-stu-id="77465-119">**visFrgnImgWidth**</span></span> <br/> |
+| <span data-ttu-id="62c76-114">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="62c76-114">Section index:</span></span>  <br/> |<span data-ttu-id="62c76-115">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="62c76-115">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="62c76-116">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="62c76-116">Row index:</span></span>  <br/> |<span data-ttu-id="62c76-117">**visRowForeign**</span><span class="sxs-lookup"><span data-stu-id="62c76-117">**visRowForeign**</span></span> <br/> |
+| <span data-ttu-id="62c76-118">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="62c76-118">Cell index:</span></span>  <br/> |<span data-ttu-id="62c76-119">**visFrgnImgWidth**</span><span class="sxs-lookup"><span data-stu-id="62c76-119">**visFrgnImgWidth**</span></span> <br/> |
    
 

@@ -16,32 +16,32 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806696"
 ---
-# <a name="trim-function"></a><span data-ttu-id="41ebb-103">TRIM 関数</span><span class="sxs-lookup"><span data-stu-id="41ebb-103">TRIM Function</span></span>
+# <a name="trim-function"></a><span data-ttu-id="9bb8f-103">TRIM 関数</span><span class="sxs-lookup"><span data-stu-id="9bb8f-103">TRIM Function</span></span>
 
-<span data-ttu-id="41ebb-104">単語間のスペースを 1 つ残して、テキストからすべての空白を削除します。</span><span class="sxs-lookup"><span data-stu-id="41ebb-104">Removes all space from text, except for single spaces between words.</span></span> 
+<span data-ttu-id="9bb8f-104">単語間のスペースを 1 つ残して、テキストからすべての空白を削除します。</span><span class="sxs-lookup"><span data-stu-id="9bb8f-104">Removes all space from text, except for single spaces between words.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="41ebb-105">構文</span><span class="sxs-lookup"><span data-stu-id="41ebb-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="9bb8f-105">構文</span><span class="sxs-lookup"><span data-stu-id="9bb8f-105">Syntax</span></span>
 
-<span data-ttu-id="41ebb-106">トリミング (* **テキスト** *)</span><span class="sxs-lookup"><span data-stu-id="41ebb-106">TRIM (** *text* ** )</span></span> 
+<span data-ttu-id="9bb8f-106">トリミング (* **テキスト** *)</span><span class="sxs-lookup"><span data-stu-id="9bb8f-106">TRIM (** *text* ** )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="41ebb-107">Parameters</span><span class="sxs-lookup"><span data-stu-id="41ebb-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="9bb8f-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="9bb8f-107">Parameters</span></span>
 
-|<span data-ttu-id="41ebb-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="41ebb-108">**Name**</span></span>|<span data-ttu-id="41ebb-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="41ebb-109">**Required/Optional**</span></span>|<span data-ttu-id="41ebb-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="41ebb-110">**Data Type**</span></span>|<span data-ttu-id="41ebb-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="41ebb-111">**Description**</span></span>|
+|<span data-ttu-id="9bb8f-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="9bb8f-108">**Name**</span></span>|<span data-ttu-id="9bb8f-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="9bb8f-109">**Required/Optional**</span></span>|<span data-ttu-id="9bb8f-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="9bb8f-110">**Data Type**</span></span>|<span data-ttu-id="9bb8f-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="9bb8f-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="41ebb-112">_text_</span><span class="sxs-lookup"><span data-stu-id="41ebb-112">_text_</span></span> <br/> |<span data-ttu-id="41ebb-113">必須</span><span class="sxs-lookup"><span data-stu-id="41ebb-113">Required</span></span>  <br/> |<span data-ttu-id="41ebb-114">**文字列型 (String)**</span><span class="sxs-lookup"><span data-stu-id="41ebb-114">**String**</span></span> <br/> |<span data-ttu-id="41ebb-115">空白を削除する文字列を指定します。</span><span class="sxs-lookup"><span data-stu-id="41ebb-115">The text from which you want to remove spaces.</span></span>  <br/> |
+| <span data-ttu-id="9bb8f-112">_text_</span><span class="sxs-lookup"><span data-stu-id="9bb8f-112">_text_</span></span> <br/> |<span data-ttu-id="9bb8f-113">必須</span><span class="sxs-lookup"><span data-stu-id="9bb8f-113">Required</span></span>  <br/> |<span data-ttu-id="9bb8f-114">**文字列型 (String)**</span><span class="sxs-lookup"><span data-stu-id="9bb8f-114">**String**</span></span> <br/> |<span data-ttu-id="9bb8f-115">空白を削除する文字列を指定します。</span><span class="sxs-lookup"><span data-stu-id="9bb8f-115">The text from which you want to remove spaces.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="41ebb-116">�߂�l</span><span class="sxs-lookup"><span data-stu-id="41ebb-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="9bb8f-116">戻り値</span><span class="sxs-lookup"><span data-stu-id="9bb8f-116">Return value</span></span>
 
-<span data-ttu-id="41ebb-117">文字列</span><span class="sxs-lookup"><span data-stu-id="41ebb-117">String</span></span>
+<span data-ttu-id="9bb8f-117">String</span><span class="sxs-lookup"><span data-stu-id="9bb8f-117">String</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="41ebb-118">注釈</span><span class="sxs-lookup"><span data-stu-id="41ebb-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9bb8f-118">注釈</span><span class="sxs-lookup"><span data-stu-id="9bb8f-118">Remarks</span></span>
 
-<span data-ttu-id="41ebb-119">他のアプリケーションから渡された文字列に無駄な空白が含まれているような場合に、TRIM 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="41ebb-119">You can use the TRIM function on text that you have received from another application that may have irregular spacing.</span></span>
+<span data-ttu-id="9bb8f-119">他のアプリケーションから渡された文字列に無駄な空白が含まれているような場合に、TRIM 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="9bb8f-119">You can use the TRIM function on text that you have received from another application that may have irregular spacing.</span></span>
   
-## <a name="example"></a><span data-ttu-id="41ebb-120">例</span><span class="sxs-lookup"><span data-stu-id="41ebb-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9bb8f-120">例</span><span class="sxs-lookup"><span data-stu-id="9bb8f-120">Example</span></span>
 
-<span data-ttu-id="41ebb-121">トリム (「2003 年 1 月 1日」)</span><span class="sxs-lookup"><span data-stu-id="41ebb-121">TRIM ("January 1, 2003 ")</span></span> 
+<span data-ttu-id="9bb8f-121">トリム (「2003 年 1 月 1日」)</span><span class="sxs-lookup"><span data-stu-id="9bb8f-121">TRIM ("January 1, 2003 ")</span></span> 
   
-<span data-ttu-id="41ebb-122">"January 1, 2003" を返します。</span><span class="sxs-lookup"><span data-stu-id="41ebb-122">Returns "January 1, 2003".</span></span> 
+<span data-ttu-id="9bb8f-122">"January 1, 2003" を返します。</span><span class="sxs-lookup"><span data-stu-id="9bb8f-122">Returns "January 1, 2003".</span></span> 
   
 

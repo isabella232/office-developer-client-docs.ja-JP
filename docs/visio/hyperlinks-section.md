@@ -16,14 +16,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805577"
 ---
-# <a name="hyperlinks-section"></a><span data-ttu-id="4613f-103">[Hyperlinks] セクション</span><span class="sxs-lookup"><span data-stu-id="4613f-103">Hyperlinks Section</span></span>
+# <a name="hyperlinks-section"></a><span data-ttu-id="f87c0-103">[ハイパーリンク] セクション</span><span class="sxs-lookup"><span data-stu-id="f87c0-103">Hyperlinks Section</span></span>
 
-<span data-ttu-id="4613f-104">図形や図面ページと、別の図面ページ、別のファイル、Web サイトとの間の複数の移動 (リンク) を作成するセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="4613f-104">Contains cells for creating multiple jumps between a shape or drawing page and another drawing page, another file, or a Web site.</span></span>
+<span data-ttu-id="f87c0-104">図形や図面ページと、別の図面ページ、別のファイル、Web サイトとの間の複数の移動 (リンク) を作成するセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="f87c0-104">Contains cells for creating multiple jumps between a shape or drawing page and another drawing page, another file, or a Web site.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="4613f-105">注釈</span><span class="sxs-lookup"><span data-stu-id="4613f-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f87c0-105">注釈</span><span class="sxs-lookup"><span data-stu-id="f87c0-105">Remarks</span></span>
 
-<span data-ttu-id="4613f-106">ハイパーリンクを定義するには、このセクションのセルに値を入力または、[**ハイパーリンク**] ダイアログ ボックスを使用して (**ハイパーリンク****の挿入**] タブをクリック) します。</span><span class="sxs-lookup"><span data-stu-id="4613f-106">To define a hyperlink, enter values in the cells of this section, or use the **Hyperlinks** dialog box (click **Hyperlink** on the **Insert** tab).</span></span> 
+<span data-ttu-id="f87c0-106">ハイパーリンクを定義するには、このセクションのセルに値を入力するか、[**ハイパーリンク**] ダイアログ ボックスを使用します (このダイアログ ボックスを開くには、[**挿入**] タブで [**ハイパーリンク**] をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="f87c0-106">To define a hyperlink, enter values in the cells of this section, or use the **Hyperlinks** dialog box (click **Hyperlink** on the **Insert** tab).</span></span> 
   
-<span data-ttu-id="4613f-107">[Hyperlinks] セクションは、[シェイプシート] ウィンドウで図形、グループ、ページ、または外部オブジェクトに追加できます。</span><span class="sxs-lookup"><span data-stu-id="4613f-107">You can add the Hyperlinks section to a shape, group, page, or foreign object in a ShapeSheet window.</span></span>
+<span data-ttu-id="f87c0-107">[Hyperlinks] セクションは、[シェイプシート] ウィンドウで図形、グループ、ページ、または外部オブジェクトに追加できます。</span><span class="sxs-lookup"><span data-stu-id="f87c0-107">You can add the Hyperlinks section to a shape, group, page, or foreign object in a ShapeSheet window.</span></span>
   
 

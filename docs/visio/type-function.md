@@ -16,30 +16,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806719"
 ---
-# <a name="type-function"></a><span data-ttu-id="e841e-103">TYPE 関数</span><span class="sxs-lookup"><span data-stu-id="e841e-103">TYPE Function</span></span>
+# <a name="type-function"></a><span data-ttu-id="82a53-103">TYPE 関数</span><span class="sxs-lookup"><span data-stu-id="82a53-103">TYPE Function</span></span>
 
-<span data-ttu-id="e841e-104">オブジェクトの内部的な型を数値として返します。</span><span class="sxs-lookup"><span data-stu-id="e841e-104">Returns an object's internal type as a number.</span></span> 
+<span data-ttu-id="82a53-104">オブジェクトの内部的な型を数値として返します。</span><span class="sxs-lookup"><span data-stu-id="82a53-104">Returns an object's internal type as a number.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="e841e-105">構文</span><span class="sxs-lookup"><span data-stu-id="e841e-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="82a53-105">構文</span><span class="sxs-lookup"><span data-stu-id="82a53-105">Syntax</span></span>
 
-<span data-ttu-id="e841e-106">TYPE ()</span><span class="sxs-lookup"><span data-stu-id="e841e-106">TYPE ()</span></span>
+<span data-ttu-id="82a53-106">TYPE ()</span><span class="sxs-lookup"><span data-stu-id="82a53-106">TYPE ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="e841e-107">�߂�l</span><span class="sxs-lookup"><span data-stu-id="e841e-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="82a53-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="82a53-107">Return value</span></span>
 
-<span data-ttu-id="e841e-108">数値</span><span class="sxs-lookup"><span data-stu-id="e841e-108">Number</span></span>
+<span data-ttu-id="82a53-108">数値</span><span class="sxs-lookup"><span data-stu-id="82a53-108">Number</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="e841e-109">注釈</span><span class="sxs-lookup"><span data-stu-id="e841e-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="82a53-109">注釈</span><span class="sxs-lookup"><span data-stu-id="82a53-109">Remarks</span></span>
 
-<span data-ttu-id="e841e-110">次の表は、オブジェクトの内部的な種類を数値で表した一覧です。</span><span class="sxs-lookup"><span data-stu-id="e841e-110">The following table lists internal object types as numbers.</span></span>
+<span data-ttu-id="82a53-110">次の表は、オブジェクトの内部的な種類を数値で表した一覧です。</span><span class="sxs-lookup"><span data-stu-id="82a53-110">The following table lists internal object types as numbers.</span></span>
   
-|<span data-ttu-id="e841e-111">**オブジェクト**</span><span class="sxs-lookup"><span data-stu-id="e841e-111">**Object**</span></span>|<span data-ttu-id="e841e-112">**番号**</span><span class="sxs-lookup"><span data-stu-id="e841e-112">**Number**</span></span>|
+|<span data-ttu-id="82a53-111">**オブジェクト**</span><span class="sxs-lookup"><span data-stu-id="82a53-111">**Object**</span></span>|<span data-ttu-id="82a53-112">**番号**</span><span class="sxs-lookup"><span data-stu-id="82a53-112">**Number**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="e841e-113">ページ</span><span class="sxs-lookup"><span data-stu-id="e841e-113">Page</span></span>  <br/> |<span data-ttu-id="e841e-114">70</span><span class="sxs-lookup"><span data-stu-id="e841e-114">70</span></span>  <br/> |
-|<span data-ttu-id="e841e-115">グループ</span><span class="sxs-lookup"><span data-stu-id="e841e-115">Group</span></span>  <br/> |<span data-ttu-id="e841e-116">71</span><span class="sxs-lookup"><span data-stu-id="e841e-116">71</span></span>  <br/> |
-|<span data-ttu-id="e841e-117">図形</span><span class="sxs-lookup"><span data-stu-id="e841e-117">Shape</span></span>  <br/> |<span data-ttu-id="e841e-118">72</span><span class="sxs-lookup"><span data-stu-id="e841e-118">72</span></span>  <br/> |
-|<span data-ttu-id="e841e-119">スタイル</span><span class="sxs-lookup"><span data-stu-id="e841e-119">Style</span></span>  <br/> |<span data-ttu-id="e841e-120">74</span><span class="sxs-lookup"><span data-stu-id="e841e-120">74</span></span>  <br/> |
-|<span data-ttu-id="e841e-121">ガイド</span><span class="sxs-lookup"><span data-stu-id="e841e-121">Guide</span></span>  <br/> |<span data-ttu-id="e841e-122">77</span><span class="sxs-lookup"><span data-stu-id="e841e-122">77</span></span>  <br/> |
-|<span data-ttu-id="e841e-123">外部</span><span class="sxs-lookup"><span data-stu-id="e841e-123">Foreign</span></span>  <br/> |<span data-ttu-id="e841e-124">78</span><span class="sxs-lookup"><span data-stu-id="e841e-124">78</span></span>  <br/> |
-|<span data-ttu-id="e841e-125">図面</span><span class="sxs-lookup"><span data-stu-id="e841e-125">Document</span></span>  <br/> |<span data-ttu-id="e841e-126">79</span><span class="sxs-lookup"><span data-stu-id="e841e-126">79</span></span>  <br/> |
+|<span data-ttu-id="82a53-113">ページ</span><span class="sxs-lookup"><span data-stu-id="82a53-113">Page</span></span>  <br/> |<span data-ttu-id="82a53-114">70</span><span class="sxs-lookup"><span data-stu-id="82a53-114">70</span></span>  <br/> |
+|<span data-ttu-id="82a53-115">グループ</span><span class="sxs-lookup"><span data-stu-id="82a53-115">Group</span></span>  <br/> |<span data-ttu-id="82a53-116">71</span><span class="sxs-lookup"><span data-stu-id="82a53-116">71</span></span>  <br/> |
+|<span data-ttu-id="82a53-117">図形</span><span class="sxs-lookup"><span data-stu-id="82a53-117">Shape</span></span>  <br/> |<span data-ttu-id="82a53-118">72</span><span class="sxs-lookup"><span data-stu-id="82a53-118">72</span></span>  <br/> |
+|<span data-ttu-id="82a53-119">スタイル</span><span class="sxs-lookup"><span data-stu-id="82a53-119">Style</span></span>  <br/> |<span data-ttu-id="82a53-120">74</span><span class="sxs-lookup"><span data-stu-id="82a53-120">74</span></span>  <br/> |
+|<span data-ttu-id="82a53-121">ガイド</span><span class="sxs-lookup"><span data-stu-id="82a53-121">Guide</span></span>  <br/> |<span data-ttu-id="82a53-122">77</span><span class="sxs-lookup"><span data-stu-id="82a53-122">77</span></span>  <br/> |
+|<span data-ttu-id="82a53-123">外部</span><span class="sxs-lookup"><span data-stu-id="82a53-123">Foreign</span></span>  <br/> |<span data-ttu-id="82a53-124">78</span><span class="sxs-lookup"><span data-stu-id="82a53-124">78</span></span>  <br/> |
+|<span data-ttu-id="82a53-125">図面</span><span class="sxs-lookup"><span data-stu-id="82a53-125">Document</span></span>  <br/> |<span data-ttu-id="82a53-126">79</span><span class="sxs-lookup"><span data-stu-id="82a53-126">79</span></span>  <br/> |
    
 

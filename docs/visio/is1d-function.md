@@ -14,24 +14,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805612"
 ---
-# <a name="is1d-function"></a><span data-ttu-id="a5ab2-103">IS1D 関数</span><span class="sxs-lookup"><span data-stu-id="a5ab2-103">IS1D Function</span></span>
+# <a name="is1d-function"></a><span data-ttu-id="63881-103">IS1D 関数</span><span class="sxs-lookup"><span data-stu-id="63881-103">IS1D Function</span></span>
 
-<span data-ttu-id="a5ab2-104">図形が 1-D (1 次元) の場合、TRUE を返します。図形が 2-D (2 次元) の場合、FALSE を返します。</span><span class="sxs-lookup"><span data-stu-id="a5ab2-104">Returns TRUE if the shape is 1-D (one-dimensional); returns FALSE if the shape is 2-D (two-dimensional).</span></span>
+<span data-ttu-id="63881-104">図形が 1-D (1 次元) の場合、TRUE を返します。図形が 2-D (2 次元) の場合、FALSE を返します。</span><span class="sxs-lookup"><span data-stu-id="63881-104">Returns TRUE if the shape is 1-D (one-dimensional); returns FALSE if the shape is 2-D (two-dimensional).</span></span>
   
-## <a name="version-information"></a><span data-ttu-id="a5ab2-105">バージョン情報</span><span class="sxs-lookup"><span data-stu-id="a5ab2-105">Version Information</span></span>
+## <a name="version-information"></a><span data-ttu-id="63881-105">バージョン情報</span><span class="sxs-lookup"><span data-stu-id="63881-105">Version Information</span></span>
 
-<span data-ttu-id="a5ab2-106">Visio 2010 のバージョンが追加されます。</span><span class="sxs-lookup"><span data-stu-id="a5ab2-106">Version Added: Visio 2010</span></span> 
+<span data-ttu-id="63881-106">追加バージョン: Visio 2010
+</span><span class="sxs-lookup"><span data-stu-id="63881-106">Version Added: Visio 2010</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="a5ab2-107">構文</span><span class="sxs-lookup"><span data-stu-id="a5ab2-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="63881-107">構文</span><span class="sxs-lookup"><span data-stu-id="63881-107">Syntax</span></span>
 
-<span data-ttu-id="a5ab2-108">IS1D()</span><span class="sxs-lookup"><span data-stu-id="a5ab2-108">IS1D()</span></span>
+<span data-ttu-id="63881-108">IS1D()</span><span class="sxs-lookup"><span data-stu-id="63881-108">IS1D()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="a5ab2-109">�߂�l</span><span class="sxs-lookup"><span data-stu-id="a5ab2-109">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="63881-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="63881-109">Return value</span></span>
 
- <span data-ttu-id="a5ab2-110">**ブール型 (Boolean)**</span><span class="sxs-lookup"><span data-stu-id="a5ab2-110">**Boolean**</span></span>
+ <span data-ttu-id="63881-110">**ブール型 (Boolean)**</span><span class="sxs-lookup"><span data-stu-id="63881-110">**Boolean**</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="a5ab2-111">Remarks</span><span class="sxs-lookup"><span data-stu-id="a5ab2-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="63881-111">注釈</span><span class="sxs-lookup"><span data-stu-id="63881-111">Remarks</span></span>
 
-<span data-ttu-id="a5ab2-112">シート (図形) がページまたは図面の場合、IS1D 関数は #REF! を返します。</span><span class="sxs-lookup"><span data-stu-id="a5ab2-112">If the sheet (shape) is a page or a document, the IS1D function returns #REF!.</span></span>
+<span data-ttu-id="63881-112">シート (図形) がページまたは図面の場合、IS1D 関数は #REF! を返します。</span><span class="sxs-lookup"><span data-stu-id="63881-112">If the sheet (shape) is a page or a document, the IS1D function returns #REF!.</span></span>
   
 

@@ -16,29 +16,29 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805760"
 ---
-# <a name="lockheight-cell-protection-section"></a><span data-ttu-id="4f552-103">[LockHeight] セル ([Protection] セクション)</span><span class="sxs-lookup"><span data-stu-id="4f552-103">LockHeight Cell (Protection Section)</span></span>
+# <a name="lockheight-cell-protection-section"></a><span data-ttu-id="23fda-103">[LockHeight] セル ([保護] セクション)</span><span class="sxs-lookup"><span data-stu-id="23fda-103">LockHeight Cell (Protection Section)</span></span>
 
-<span data-ttu-id="4f552-104">図形の高さをロックします。ロックすると、図形のサイズを変更しても高さは変更されません。</span><span class="sxs-lookup"><span data-stu-id="4f552-104">Locks the height of the shape so that its height remains unchanged when the shape is resized.</span></span>
+<span data-ttu-id="23fda-104">図形の高さをロックします。ロックすると、図形のサイズを変更しても高さは変更されません。</span><span class="sxs-lookup"><span data-stu-id="23fda-104">Locks the height of the shape so that its height remains unchanged when the shape is resized.</span></span>
   
-|<span data-ttu-id="4f552-105">**値**</span><span class="sxs-lookup"><span data-stu-id="4f552-105">**Value**</span></span>|<span data-ttu-id="4f552-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="4f552-106">**Description**</span></span>|
+|<span data-ttu-id="23fda-105">**値**</span><span class="sxs-lookup"><span data-stu-id="23fda-105">**Value**</span></span>|<span data-ttu-id="23fda-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="23fda-106">**Description**</span></span>|
 |:-----|:-----|
-| <span data-ttu-id="4f552-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="4f552-107">TRUE</span></span>  <br/> | <span data-ttu-id="4f552-108">高さをロックします。</span><span class="sxs-lookup"><span data-stu-id="4f552-108">Height is locked.</span></span>  <br/> |
-| <span data-ttu-id="4f552-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="4f552-109">FALSE</span></span>  <br/> | <span data-ttu-id="4f552-110">高さをロックしません。</span><span class="sxs-lookup"><span data-stu-id="4f552-110">Height is not locked.</span></span>  <br/> |
+| <span data-ttu-id="23fda-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="23fda-107">TRUE</span></span>  <br/> | <span data-ttu-id="23fda-108">高さをロックします。</span><span class="sxs-lookup"><span data-stu-id="23fda-108">Height is locked.</span></span>  <br/> |
+| <span data-ttu-id="23fda-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="23fda-109">FALSE</span></span>  <br/> | <span data-ttu-id="23fda-110">高さをロックしません。</span><span class="sxs-lookup"><span data-stu-id="23fda-110">Height is not locked.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="4f552-111">備考</span><span class="sxs-lookup"><span data-stu-id="4f552-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="23fda-111">備考</span><span class="sxs-lookup"><span data-stu-id="23fda-111">Remarks</span></span>
 
-<span data-ttu-id="4f552-112">別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[LockHeight] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="4f552-112">To get a reference to the LockHeight cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="23fda-112">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LockHeight] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="23fda-112">To get a reference to the LockHeight cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="4f552-113">セル名:</span><span class="sxs-lookup"><span data-stu-id="4f552-113">Cell name:</span></span>  <br/> | <span data-ttu-id="4f552-114">LockHeight</span><span class="sxs-lookup"><span data-stu-id="4f552-114">LockHeight</span></span>  <br/> |
+| <span data-ttu-id="23fda-113">セル名:</span><span class="sxs-lookup"><span data-stu-id="23fda-113">Cell name:</span></span>  <br/> | <span data-ttu-id="23fda-114">LockHeight</span><span class="sxs-lookup"><span data-stu-id="23fda-114">LockHeight</span></span>  <br/> |
    
-<span data-ttu-id="4f552-115">プログラムから、インデックスによって [LockHeight] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="4f552-115">To get a reference to the LockHeight cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="23fda-115">プログラムから、インデックスによって [LockHeight] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="23fda-115">To get a reference to the LockHeight cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="4f552-116">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="4f552-116">Section index:</span></span>  <br/> |<span data-ttu-id="4f552-117">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="4f552-117">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="4f552-118">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="4f552-118">Row index:</span></span>  <br/> |<span data-ttu-id="4f552-119">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="4f552-119">**visRowLock**</span></span> <br/> |
-| <span data-ttu-id="4f552-120">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="4f552-120">Cell index:</span></span>  <br/> |<span data-ttu-id="4f552-121">**visLockHeight**</span><span class="sxs-lookup"><span data-stu-id="4f552-121">**visLockHeight**</span></span> <br/> |
+| <span data-ttu-id="23fda-116">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="23fda-116">Section index:</span></span>  <br/> |<span data-ttu-id="23fda-117">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="23fda-117">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="23fda-118">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="23fda-118">Row index:</span></span>  <br/> |<span data-ttu-id="23fda-119">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="23fda-119">**visRowLock**</span></span> <br/> |
+| <span data-ttu-id="23fda-120">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="23fda-120">Cell index:</span></span>  <br/> |<span data-ttu-id="23fda-121">**visLockHeight**</span><span class="sxs-lookup"><span data-stu-id="23fda-121">**visLockHeight**</span></span> <br/> |
    
 

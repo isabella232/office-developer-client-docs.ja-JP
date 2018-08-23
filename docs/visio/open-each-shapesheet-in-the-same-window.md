@@ -16,12 +16,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805935"
 ---
-# <a name="open-each-shapesheet-in-the-same-window"></a><span data-ttu-id="7c2e9-102">各シェイプシートを同じウィンドウ内で開く</span><span class="sxs-lookup"><span data-stu-id="7c2e9-102">Open Each ShapeSheet in the Same Window</span></span>
+# <a name="open-each-shapesheet-in-the-same-window"></a><span data-ttu-id="f0cbe-102">各シェイプシートを同じウィンドウで開く</span><span class="sxs-lookup"><span data-stu-id="f0cbe-102">Open Each ShapeSheet in the Same Window</span></span>
 
-1. <span data-ttu-id="7c2e9-103">[**ファイル**] タブをクリックして、**オプション**] をクリックし、[**詳細設定**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7c2e9-103">Click the **File** tab, click **Options**, and then click **Advanced**.</span></span>
+1. <span data-ttu-id="f0cbe-103">[**ファイル**] タブをクリックして、**オプション**] をクリックし、[**詳細設定**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0cbe-103">Click the **File** tab, click **Options**, and then click **Advanced**.</span></span>
     
-2. <span data-ttu-id="7c2e9-104">**全般**には、**同じウィンドウ内の各シェイプ シートを開く**を選択します。</span><span class="sxs-lookup"><span data-stu-id="7c2e9-104">Under **General**, select **Open each ShapeSheet in the same window**.</span></span>
+2. <span data-ttu-id="f0cbe-104">[**全般**] の [**各シェイプシートを同じウィンドウ内で開く**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="f0cbe-104">Under **General**, select **Open each ShapeSheet in the same window**.</span></span>
     
-3. <span data-ttu-id="7c2e9-105">[ **OK**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7c2e9-105">Click **OK**.</span></span> 
+3. <span data-ttu-id="f0cbe-105">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f0cbe-105">Click **OK**.</span></span> 
     
 

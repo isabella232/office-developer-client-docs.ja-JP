@@ -14,63 +14,65 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806521"
 ---
-# <a name="snapextensions-element-windowtype-complextype-visio-xml"></a><span data-ttu-id="236c6-104">SnapExtensions 要素 (Window_Type complexType)'Visio XML (')</span><span class="sxs-lookup"><span data-stu-id="236c6-104">SnapExtensions element (Window_Type complexType) ('Visio XML')</span></span>
+# <a name="snapextensions-element-windowtype-complextype-visio-xml"></a><span data-ttu-id="5de5b-104">SnapExtensions 要素 (Window_Type complexType)'Visio XML (')</span><span class="sxs-lookup"><span data-stu-id="5de5b-104">SnapExtensions element (Window_Type complexType) ('Visio XML')</span></span>
 
-<span data-ttu-id="236c6-105">特定のスナップインの拡張機能の設定が有効か、作業中のウィンドウを無効になっているかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="236c6-105">Specifies whether a specific snap extension setting is enabled or disabled for the active window.</span></span> <span data-ttu-id="236c6-106">値は、次の表の値の合計を指定できます。</span><span class="sxs-lookup"><span data-stu-id="236c6-106">The value can be a sum of the values in the following table.</span></span>
+<span data-ttu-id="5de5b-105">特定のスナップインの拡張機能の設定が有効か、作業中のウィンドウを無効になっているかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="5de5b-105">Specifies whether a specific snap extension setting is enabled or disabled for the active window.</span></span> <span data-ttu-id="5de5b-106">値は、次の表の値の合計を指定できます。</span><span class="sxs-lookup"><span data-stu-id="5de5b-106">The value can be a sum of the values in the following table.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="236c6-107">要素情報</span><span class="sxs-lookup"><span data-stu-id="236c6-107">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="5de5b-107">要素情報</span><span class="sxs-lookup"><span data-stu-id="5de5b-107">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="236c6-108">**要素の型**</span><span class="sxs-lookup"><span data-stu-id="236c6-108">**Element type**</span></span> <br/> |[<span data-ttu-id="236c6-109">SnapExtensions_Type</span><span class="sxs-lookup"><span data-stu-id="236c6-109">SnapExtensions_Type</span></span>](snapextensions_type-complextypevisio-xml.md) <br/> |
-|<span data-ttu-id="236c6-110">**名前空間**</span><span class="sxs-lookup"><span data-stu-id="236c6-110">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|<span data-ttu-id="236c6-111">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="236c6-111">**Schema file**</span></span> <br/> |<span data-ttu-id="236c6-112">VisioSchema15.xsd</span><span class="sxs-lookup"><span data-stu-id="236c6-112">VisioSchema15.xsd</span></span>  <br/> |
-|<span data-ttu-id="236c6-113">**文書パーツ**</span><span class="sxs-lookup"><span data-stu-id="236c6-113">**Document parts**</span></span> <br/> |<span data-ttu-id="236c6-114">windows.xml</span><span class="sxs-lookup"><span data-stu-id="236c6-114">windows.xml</span></span>  <br/> |
+|<span data-ttu-id="5de5b-108">**要素の種類**</span><span class="sxs-lookup"><span data-stu-id="5de5b-108">**Element type**</span></span> <br/> |[<span data-ttu-id="5de5b-109">SnapExtensions_Type</span><span class="sxs-lookup"><span data-stu-id="5de5b-109">SnapExtensions_Type</span></span>](snapextensions_type-complextypevisio-xml.md) <br/> |
+|<span data-ttu-id="5de5b-110">**名前空間**</span><span class="sxs-lookup"><span data-stu-id="5de5b-110">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|<span data-ttu-id="5de5b-111">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="5de5b-111">**Schema file**</span></span> <br/> |<span data-ttu-id="5de5b-112">VisioSchema15.xsd</span><span class="sxs-lookup"><span data-stu-id="5de5b-112">VisioSchema15.xsd</span></span>  <br/> |
+|<span data-ttu-id="5de5b-113">**文書パーツ**</span><span class="sxs-lookup"><span data-stu-id="5de5b-113">**Document parts**</span></span> <br/> |<span data-ttu-id="5de5b-114">windows.xml</span><span class="sxs-lookup"><span data-stu-id="5de5b-114">windows.xml</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="236c6-115">定義</span><span class="sxs-lookup"><span data-stu-id="236c6-115">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="5de5b-115">定義</span><span class="sxs-lookup"><span data-stu-id="5de5b-115">Definition</span></span>
 
 ```XML
 < xs:element name="SnapExtensions" type="SnapExtensions_Type" minOccurs="0" maxOccurs="1" >
 </xs:element >
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="236c6-116">要素と属性</span><span class="sxs-lookup"><span data-stu-id="236c6-116">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="5de5b-116">要素と属性</span><span class="sxs-lookup"><span data-stu-id="5de5b-116">Elements and attributes</span></span>
 
-<span data-ttu-id="236c6-117">スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="236c6-117">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="5de5b-117">スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="5de5b-117">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="parent-elements"></a><span data-ttu-id="236c6-118">親要素</span><span class="sxs-lookup"><span data-stu-id="236c6-118">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="5de5b-118">親要素</span><span class="sxs-lookup"><span data-stu-id="5de5b-118">Parent elements</span></span>
 
-|<span data-ttu-id="236c6-119">**要素**</span><span class="sxs-lookup"><span data-stu-id="236c6-119">**Element**</span></span>|<span data-ttu-id="236c6-120">**型**</span><span class="sxs-lookup"><span data-stu-id="236c6-120">**Type**</span></span>|<span data-ttu-id="236c6-121">**説明**</span><span class="sxs-lookup"><span data-stu-id="236c6-121">**Description**</span></span>|
+|<span data-ttu-id="5de5b-119">**要素**</span><span class="sxs-lookup"><span data-stu-id="5de5b-119">**Element**</span></span>|<span data-ttu-id="5de5b-120">**型**</span><span class="sxs-lookup"><span data-stu-id="5de5b-120">**Type**</span></span>|<span data-ttu-id="5de5b-121">**説明**</span><span class="sxs-lookup"><span data-stu-id="5de5b-121">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="236c6-122">Window</span><span class="sxs-lookup"><span data-stu-id="236c6-122">Window</span></span>](window-element-windows_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="236c6-123">Window_Type</span><span class="sxs-lookup"><span data-stu-id="236c6-123">Window_Type</span></span>](window_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="5de5b-122">Window</span><span class="sxs-lookup"><span data-stu-id="5de5b-122">Window</span></span>](window-element-windows_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="5de5b-123">Window_Type</span><span class="sxs-lookup"><span data-stu-id="5de5b-123">Window_Type</span></span>](window_type-complextypevisio-xml.md) <br/> ||
    
-### <a name="child-elements"></a><span data-ttu-id="236c6-124">子要素</span><span class="sxs-lookup"><span data-stu-id="236c6-124">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="5de5b-124">子要素</span><span class="sxs-lookup"><span data-stu-id="5de5b-124">Child elements</span></span>
 
-<span data-ttu-id="236c6-125">なし。</span><span class="sxs-lookup"><span data-stu-id="236c6-125">None.</span></span>
+<span data-ttu-id="5de5b-125">なし。</span><span class="sxs-lookup"><span data-stu-id="5de5b-125">None.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="236c6-126">属性</span><span class="sxs-lookup"><span data-stu-id="236c6-126">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="5de5b-126">属性</span><span class="sxs-lookup"><span data-stu-id="5de5b-126">Attributes</span></span>
 
-<span data-ttu-id="236c6-127">なし。</span><span class="sxs-lookup"><span data-stu-id="236c6-127">None.</span></span>
+<span data-ttu-id="5de5b-127">なし。</span><span class="sxs-lookup"><span data-stu-id="5de5b-127">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="236c6-128">備考</span><span class="sxs-lookup"><span data-stu-id="236c6-128">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5de5b-128">注釈</span><span class="sxs-lookup"><span data-stu-id="5de5b-128">Remarks</span></span>
 
-<span data-ttu-id="236c6-129">**SnapExtensions**要素の値は、次の表の値の合計にできます。</span><span class="sxs-lookup"><span data-stu-id="236c6-129">The value of the **SnapExtensions** element can be a sum of the values in the following table.</span></span> 
+<span data-ttu-id="5de5b-129">**SnapExtensions**要素の値は、次の表の値の合計にできます。</span><span class="sxs-lookup"><span data-stu-id="5de5b-129">The value of the **SnapExtensions** element can be a sum of the values in the following table.</span></span> 
   
-|<span data-ttu-id="236c6-130">**値**</span><span class="sxs-lookup"><span data-stu-id="236c6-130">**Value**</span></span>|<span data-ttu-id="236c6-131">**説明**</span><span class="sxs-lookup"><span data-stu-id="236c6-131">**Description**</span></span>|
+|<span data-ttu-id="5de5b-130">**値**</span><span class="sxs-lookup"><span data-stu-id="5de5b-130">**Value**</span></span>|<span data-ttu-id="5de5b-131">**説明**</span><span class="sxs-lookup"><span data-stu-id="5de5b-131">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="236c6-132">0</span><span class="sxs-lookup"><span data-stu-id="236c6-132">0</span></span>  <br/> |<span data-ttu-id="236c6-133">何もスナップしません。</span><span class="sxs-lookup"><span data-stu-id="236c6-133">Snap to nothing.</span></span>  <br/> |
-|<span data-ttu-id="236c6-134">1</span><span class="sxs-lookup"><span data-stu-id="236c6-134">1</span></span>  <br/> |<span data-ttu-id="236c6-135">配置ボックスの拡張機能にスナップします。</span><span class="sxs-lookup"><span data-stu-id="236c6-135">Snap to alignment box extension.</span></span>  <br/> |
-|<span data-ttu-id="236c6-136">2</span><span class="sxs-lookup"><span data-stu-id="236c6-136">2</span></span>  <br/> |<span data-ttu-id="236c6-137">軸の拡張機能を中心にスナップします。</span><span class="sxs-lookup"><span data-stu-id="236c6-137">Snap to center axis extension.</span></span>  <br/> |
-|<span data-ttu-id="236c6-138">4</span><span class="sxs-lookup"><span data-stu-id="236c6-138">4</span></span>  <br/> |<span data-ttu-id="236c6-139">カーブ正接の拡張機能にスナップします。</span><span class="sxs-lookup"><span data-stu-id="236c6-139">Snap to curve tangent extension.</span></span>  <br/> |
-|<span data-ttu-id="236c6-140">8</span><span class="sxs-lookup"><span data-stu-id="236c6-140">8</span></span>  <br/> |<span data-ttu-id="236c6-141">拡張子の端点にスナップします。</span><span class="sxs-lookup"><span data-stu-id="236c6-141">Snap to endpoint extension.</span></span>  <br/> |
-|<span data-ttu-id="236c6-142">16</span><span class="sxs-lookup"><span data-stu-id="236c6-142">16</span></span>  <br/> |<span data-ttu-id="236c6-143">拡張子の中間点にスナップします。</span><span class="sxs-lookup"><span data-stu-id="236c6-143">Snap to midpoint extension.</span></span>  <br/> |
-|<span data-ttu-id="236c6-144">32</span><span class="sxs-lookup"><span data-stu-id="236c6-144">32</span></span>  <br/> |<span data-ttu-id="236c6-145">線形拡張子にスナップします。</span><span class="sxs-lookup"><span data-stu-id="236c6-145">Snap to linear extension.</span></span>  <br/> |
-|<span data-ttu-id="236c6-146">64</span><span class="sxs-lookup"><span data-stu-id="236c6-146">64</span></span>  <br/> |<span data-ttu-id="236c6-147">拡張子のカーブにスナップします。</span><span class="sxs-lookup"><span data-stu-id="236c6-147">Snap to curve extension.</span></span>  <br/> |
-|<span data-ttu-id="236c6-148">128</span><span class="sxs-lookup"><span data-stu-id="236c6-148">128</span></span>  <br/> |<span data-ttu-id="236c6-149">端点の垂直な拡張子にスナップします。</span><span class="sxs-lookup"><span data-stu-id="236c6-149">Snap to endpoint perpendicular extension.</span></span>  <br/> |
-|<span data-ttu-id="236c6-150">256</span><span class="sxs-lookup"><span data-stu-id="236c6-150">256</span></span>  <br/> |<span data-ttu-id="236c6-151">垂直な拡張機能の中間点にスナップします。</span><span class="sxs-lookup"><span data-stu-id="236c6-151">Snap to midpoint perpendicular extension.</span></span>  <br/> |
-|<span data-ttu-id="236c6-152">512</span><span class="sxs-lookup"><span data-stu-id="236c6-152">512</span></span>  <br/> |<span data-ttu-id="236c6-153">水平引き出し線の端点にスナップします。</span><span class="sxs-lookup"><span data-stu-id="236c6-153">Snap to endpoint horizontal extension.</span></span>  <br/> |
-|<span data-ttu-id="236c6-154">1024</span><span class="sxs-lookup"><span data-stu-id="236c6-154">1024</span></span>  <br/> |<span data-ttu-id="236c6-155">垂直引き出し線の端点にスナップします。</span><span class="sxs-lookup"><span data-stu-id="236c6-155">Snap to endpoint vertical extension.</span></span>  <br/> |
-|<span data-ttu-id="236c6-156">2048</span><span class="sxs-lookup"><span data-stu-id="236c6-156">2048</span></span>  <br/> |<span data-ttu-id="236c6-157">楕円の中心の拡張機能にスナップします。</span><span class="sxs-lookup"><span data-stu-id="236c6-157">Snap to ellipse center extension.</span></span>  <br/> |
-|<span data-ttu-id="236c6-158">4096</span><span class="sxs-lookup"><span data-stu-id="236c6-158">4096</span></span>  <br/> |<span data-ttu-id="236c6-159">等角図の角度の拡張機能にスナップします。</span><span class="sxs-lookup"><span data-stu-id="236c6-159">Snap to isometric angles extension.</span></span>  <br/> |
+|<span data-ttu-id="5de5b-132">0</span><span class="sxs-lookup"><span data-stu-id="5de5b-132">0</span></span>  <br/> |<span data-ttu-id="5de5b-133">何もスナップしません。</span><span class="sxs-lookup"><span data-stu-id="5de5b-133">Snap to nothing.</span></span>  <br/> |
+|<span data-ttu-id="5de5b-134">1</span><span class="sxs-lookup"><span data-stu-id="5de5b-134">1</span></span>  <br/> |<span data-ttu-id="5de5b-135">配置ボックスの拡張機能にスナップします。</span><span class="sxs-lookup"><span data-stu-id="5de5b-135">Snap to alignment box extension.</span></span>  <br/> |
+|<span data-ttu-id="5de5b-136">2</span><span class="sxs-lookup"><span data-stu-id="5de5b-136">2</span></span>  <br/> |<span data-ttu-id="5de5b-137">軸の拡張機能を中心にスナップします。</span><span class="sxs-lookup"><span data-stu-id="5de5b-137">Snap to center axis extension.</span></span>  <br/> |
+|<span data-ttu-id="5de5b-138">4</span><span class="sxs-lookup"><span data-stu-id="5de5b-138">4</span></span>  <br/> |<span data-ttu-id="5de5b-139">カーブ正接の拡張機能にスナップします。</span><span class="sxs-lookup"><span data-stu-id="5de5b-139">Snap to curve tangent extension.</span></span>  <br/> |
+|<span data-ttu-id="5de5b-140">8</span><span class="sxs-lookup"><span data-stu-id="5de5b-140">8</span></span>  <br/> |<span data-ttu-id="5de5b-141">拡張子の端点にスナップします。</span><span class="sxs-lookup"><span data-stu-id="5de5b-141">Snap to endpoint extension.</span></span>  <br/> |
+|<span data-ttu-id="5de5b-142">16</span><span class="sxs-lookup"><span data-stu-id="5de5b-142">16</span></span>  <br/> |<span data-ttu-id="5de5b-143">拡張子の中間点にスナップします。</span><span class="sxs-lookup"><span data-stu-id="5de5b-143">Snap to midpoint extension.</span></span>  <br/> |
+|<span data-ttu-id="5de5b-144">32</span><span class="sxs-lookup"><span data-stu-id="5de5b-144">32</span></span>  <br/> |<span data-ttu-id="5de5b-145">線形拡張子にスナップします。</span><span class="sxs-lookup"><span data-stu-id="5de5b-145">Snap to linear extension.</span></span>  <br/> |
+|<span data-ttu-id="5de5b-146">64</span><span class="sxs-lookup"><span data-stu-id="5de5b-146">64</span></span>  <br/> |<span data-ttu-id="5de5b-147">拡張子のカーブにスナップします。</span><span class="sxs-lookup"><span data-stu-id="5de5b-147">Snap to curve extension.</span></span>  <br/> |
+|<span data-ttu-id="5de5b-148"> 
+128 
+</span><span class="sxs-lookup"><span data-stu-id="5de5b-148">128</span></span>  <br/> |<span data-ttu-id="5de5b-149">端点の垂直な拡張子にスナップします。</span><span class="sxs-lookup"><span data-stu-id="5de5b-149">Snap to endpoint perpendicular extension.</span></span>  <br/> |
+|<span data-ttu-id="5de5b-150">256</span><span class="sxs-lookup"><span data-stu-id="5de5b-150">256</span></span>  <br/> |<span data-ttu-id="5de5b-151">垂直な拡張機能の中間点にスナップします。</span><span class="sxs-lookup"><span data-stu-id="5de5b-151">Snap to midpoint perpendicular extension.</span></span>  <br/> |
+|<span data-ttu-id="5de5b-152">512</span><span class="sxs-lookup"><span data-stu-id="5de5b-152">512</span></span>  <br/> |<span data-ttu-id="5de5b-153">水平引き出し線の端点にスナップします。</span><span class="sxs-lookup"><span data-stu-id="5de5b-153">Snap to endpoint horizontal extension.</span></span>  <br/> |
+|<span data-ttu-id="5de5b-154">1024</span><span class="sxs-lookup"><span data-stu-id="5de5b-154">1024</span></span>  <br/> |<span data-ttu-id="5de5b-155">垂直引き出し線の端点にスナップします。</span><span class="sxs-lookup"><span data-stu-id="5de5b-155">Snap to endpoint vertical extension.</span></span>  <br/> |
+|<span data-ttu-id="5de5b-156">2048</span><span class="sxs-lookup"><span data-stu-id="5de5b-156">2048</span></span>  <br/> |<span data-ttu-id="5de5b-157">楕円の中心の拡張機能にスナップします。</span><span class="sxs-lookup"><span data-stu-id="5de5b-157">Snap to ellipse center extension.</span></span>  <br/> |
+|<span data-ttu-id="5de5b-158">4096</span><span class="sxs-lookup"><span data-stu-id="5de5b-158">4096</span></span>  <br/> |<span data-ttu-id="5de5b-159">等角図の角度の拡張機能にスナップします。</span><span class="sxs-lookup"><span data-stu-id="5de5b-159">Snap to isometric angles extension.</span></span>  <br/> |
    
 

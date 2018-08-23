@@ -16,12 +16,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806618"
 ---
-# <a name="text-block-format-section"></a><span data-ttu-id="93195-103">[Text Block Format] セクション</span><span class="sxs-lookup"><span data-stu-id="93195-103">Text Block Format Section</span></span>
+# <a name="text-block-format-section"></a><span data-ttu-id="d6cef-103">[テキスト ブロックの書式設定] セクション</span><span class="sxs-lookup"><span data-stu-id="d6cef-103">Text Block Format Section</span></span>
 
-<span data-ttu-id="93195-104">図形のテキスト ブロックでのテキストの配置、余白、およびタブ位置を制御するセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="93195-104">Contains cells that control the alignment, margins, and default tab stop position of text in a shape's text block.</span></span>
+<span data-ttu-id="d6cef-104">図形のテキスト ブロックでのテキストの配置、余白、およびタブ位置を制御するセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="d6cef-104">Contains cells that control the alignment, margins, and default tab stop position of text in a shape's text block.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="93195-105">注釈</span><span class="sxs-lookup"><span data-stu-id="93195-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d6cef-105">注釈</span><span class="sxs-lookup"><span data-stu-id="d6cef-105">Remarks</span></span>
 
-<span data-ttu-id="93195-106">**テキスト**] ダイアログ ボックスを使用して、これらのテキスト属性を設定することもできます ([**ホーム**] タブの [**フォント**] ダイアログ ボックス起動ツール] をクリック) します。</span><span class="sxs-lookup"><span data-stu-id="93195-106">You can also set these text attributes by using the **Text** dialog box (on the **Home** tab, click the dialog box launcher in the **Font** group).</span></span> 
+<span data-ttu-id="d6cef-106">**テキスト**] ダイアログ ボックスを使用して、これらのテキスト属性を設定することもできます ([**ホーム**] タブの [**フォント**] ダイアログ ボックス起動ツール] をクリック) します。</span><span class="sxs-lookup"><span data-stu-id="d6cef-106">You can also set these text attributes by using the **Text** dialog box (on the **Home** tab, click the dialog box launcher in the **Font** group).</span></span> 
   
 

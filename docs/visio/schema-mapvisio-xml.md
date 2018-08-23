@@ -14,9 +14,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806367"
 ---
-# <a name="schema-map-visio-xml"></a><span data-ttu-id="66a21-103">スキーマ マップ ' Visio XML (')</span><span class="sxs-lookup"><span data-stu-id="66a21-103">Schema map ('Visio XML')</span></span>
+# <a name="schema-map-visio-xml"></a><span data-ttu-id="e37a3-103">スキーマ マップ ' Visio XML (')</span><span class="sxs-lookup"><span data-stu-id="e37a3-103">Schema map ('Visio XML')</span></span>
 
-<span data-ttu-id="66a21-104">このトピックでは、Visio 2013 のファイル形式の XML スキーマ定義を示します。</span><span class="sxs-lookup"><span data-stu-id="66a21-104">This topic shows the XML schema definition for the Visio 2013 file format.</span></span>
+<span data-ttu-id="e37a3-104">このトピックでは、Visio 2013 のファイル形式の XML スキーマ定義を示します。</span><span class="sxs-lookup"><span data-stu-id="e37a3-104">This topic shows the XML schema definition for the Visio 2013 file format.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

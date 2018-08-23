@@ -16,8 +16,8 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806581"
 ---
-# <a name="style-properties-section"></a><span data-ttu-id="346e9-103">[Style Properties] セクション</span><span class="sxs-lookup"><span data-stu-id="346e9-103">Style Properties Section</span></span>
+# <a name="style-properties-section"></a><span data-ttu-id="3abc7-103">[スタイルのプロパティ] セクション</span><span class="sxs-lookup"><span data-stu-id="3abc7-103">Style Properties Section</span></span>
 
-<span data-ttu-id="346e9-104">スタイルがテキスト、線、塗りつぶしの属性を含むかどうかなどの、スタイルの動作を制御するセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="346e9-104">Includes cells that control style behavior, such as whether a style includes text, line, and fill attributes.</span></span>
+<span data-ttu-id="3abc7-104">スタイルがテキスト、線、塗りつぶしの属性を含むかどうかなどの、スタイルの動作を制御するセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="3abc7-104">Includes cells that control style behavior, such as whether a style includes text, line, and fill attributes.</span></span>
   
 

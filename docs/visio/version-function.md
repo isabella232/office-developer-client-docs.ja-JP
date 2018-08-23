@@ -14,24 +14,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806772"
 ---
-# <a name="version-function"></a><span data-ttu-id="c8a64-103">VERSION 関数</span><span class="sxs-lookup"><span data-stu-id="c8a64-103">VERSION Function</span></span>
+# <a name="version-function"></a><span data-ttu-id="35868-103">VERSION 関数</span><span class="sxs-lookup"><span data-stu-id="35868-103">VERSION Function</span></span>
 
-<span data-ttu-id="c8a64-104">現在アクティブな Microsoft Visio アプリケーションのメジャー バージョンに一致する整数を返します。</span><span class="sxs-lookup"><span data-stu-id="c8a64-104">Returns an integer that matches the major version of the currently active Microsoft Visio application.</span></span>
+<span data-ttu-id="35868-104">現在アクティブな Microsoft Visio アプリケーションのメジャー バージョンに一致する整数を返します。</span><span class="sxs-lookup"><span data-stu-id="35868-104">Returns an integer that matches the major version of the currently active Microsoft Visio application.</span></span>
   
-## <a name="version-information"></a><span data-ttu-id="c8a64-105">バージョン情報</span><span class="sxs-lookup"><span data-stu-id="c8a64-105">Version Information</span></span>
+## <a name="version-information"></a><span data-ttu-id="35868-105">バージョン情報</span><span class="sxs-lookup"><span data-stu-id="35868-105">Version Information</span></span>
 
-<span data-ttu-id="c8a64-106">Visio 2010 のバージョンが追加されます。</span><span class="sxs-lookup"><span data-stu-id="c8a64-106">Version Added: Visio 2010</span></span> 
+<span data-ttu-id="35868-106">追加バージョン: Visio 2010
+</span><span class="sxs-lookup"><span data-stu-id="35868-106">Version Added: Visio 2010</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="c8a64-107">構文</span><span class="sxs-lookup"><span data-stu-id="c8a64-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="35868-107">構文</span><span class="sxs-lookup"><span data-stu-id="35868-107">Syntax</span></span>
 
-<span data-ttu-id="c8a64-108">VERSION()</span><span class="sxs-lookup"><span data-stu-id="c8a64-108">VERSION()</span></span>
+<span data-ttu-id="35868-108">VERSION()</span><span class="sxs-lookup"><span data-stu-id="35868-108">VERSION()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="c8a64-109">�߂�l</span><span class="sxs-lookup"><span data-stu-id="c8a64-109">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="35868-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="35868-109">Return value</span></span>
 
-<span data-ttu-id="c8a64-110">整数型 (Integer)</span><span class="sxs-lookup"><span data-stu-id="c8a64-110">Integer</span></span>
+<span data-ttu-id="35868-110">整数</span><span class="sxs-lookup"><span data-stu-id="35868-110">Integer</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="c8a64-111">注釈</span><span class="sxs-lookup"><span data-stu-id="c8a64-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="35868-111">注釈</span><span class="sxs-lookup"><span data-stu-id="35868-111">Remarks</span></span>
 
-<span data-ttu-id="c8a64-112">VERSION 関数を使用すると、評価される Visio のバージョンによって評価方法が異なるシェイプシート数式を作成できます。</span><span class="sxs-lookup"><span data-stu-id="c8a64-112">You can use the VERSION function to write ShapeSheet formulas that are evaluated differently depending on the version of Visio in which they are evaluated.</span></span>
+<span data-ttu-id="35868-112">VERSION 関数を使用すると、評価される Visio のバージョンによって評価方法が異なるシェイプシート数式を作成できます。</span><span class="sxs-lookup"><span data-stu-id="35868-112">You can use the VERSION function to write ShapeSheet formulas that are evaluated differently depending on the version of Visio in which they are evaluated.</span></span>
   
 

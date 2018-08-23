@@ -16,16 +16,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19805938"
 ---
-# <a name="opentextwin-function"></a><span data-ttu-id="377be-103">OPENTEXTWIN 関数</span><span class="sxs-lookup"><span data-stu-id="377be-103">OPENTEXTWIN Function</span></span>
+# <a name="opentextwin-function"></a><span data-ttu-id="b34bf-103">OPENTEXTWIN 関数</span><span class="sxs-lookup"><span data-stu-id="b34bf-103">OPENTEXTWIN Function</span></span>
 
-<span data-ttu-id="377be-104">図形のテキスト ブロックを開き、テキストを編集することができます。</span><span class="sxs-lookup"><span data-stu-id="377be-104">Opens the shape's text block so that the text can be edited.</span></span>
+<span data-ttu-id="b34bf-104">図形のテキスト ブロックを開き、テキストを編集することができます。</span><span class="sxs-lookup"><span data-stu-id="b34bf-104">Opens the shape's text block so that the text can be edited.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="377be-105">構文</span><span class="sxs-lookup"><span data-stu-id="377be-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b34bf-105">構文</span><span class="sxs-lookup"><span data-stu-id="b34bf-105">Syntax</span></span>
 
-<span data-ttu-id="377be-106">OPENTEXTWIN( )</span><span class="sxs-lookup"><span data-stu-id="377be-106">OPENTEXTWIN( )</span></span>
+<span data-ttu-id="b34bf-106">OPENTEXTWIN( )</span><span class="sxs-lookup"><span data-stu-id="b34bf-106">OPENTEXTWIN( )</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="377be-107">注釈</span><span class="sxs-lookup"><span data-stu-id="377be-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b34bf-107">注釈</span><span class="sxs-lookup"><span data-stu-id="b34bf-107">Remarks</span></span>
 
-<span data-ttu-id="377be-p101">以前のバージョンの Visio では、この関数は _OPENTEXTWIN に相当します。Visio 4.0 以降のバージョンでは、どちらのスタイルも使用できます。</span><span class="sxs-lookup"><span data-stu-id="377be-p101">In earlier versions of Visio, this function appears as _OPENTEXTWIN. Visio versions 4.0 and later accept either style.</span></span> 
+<span data-ttu-id="b34bf-p101">以前のバージョンの Visio では、この関数は _OPENTEXTWIN に相当します。Visio 4.0 以降のバージョンでは、どちらのスタイルも使用できます。</span><span class="sxs-lookup"><span data-stu-id="b34bf-p101">In earlier versions of Visio, this function appears as _OPENTEXTWIN. Visio versions 4.0 and later accept either style.</span></span> 
   
 

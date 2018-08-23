@@ -13,17 +13,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19806302"
 ---
-# <a name="rowkeyvaluetype-complextype-visio-xml"></a><span data-ttu-id="6ce64-102">RowKeyValue_Type complexType'Visio XML (')</span><span class="sxs-lookup"><span data-stu-id="6ce64-102">RowKeyValue_Type complexType ('Visio XML')</span></span>
+# <a name="rowkeyvaluetype-complextype-visio-xml"></a><span data-ttu-id="63439-102">RowKeyValue_Type complexType'Visio XML (')</span><span class="sxs-lookup"><span data-stu-id="63439-102">RowKeyValue_Type complexType ('Visio XML')</span></span>
 
-## <a name="type-information"></a><span data-ttu-id="6ce64-103">型情報</span><span class="sxs-lookup"><span data-stu-id="6ce64-103">Type information</span></span>
+## <a name="type-information"></a><span data-ttu-id="63439-103">型情報</span><span class="sxs-lookup"><span data-stu-id="63439-103">Type information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="6ce64-104">**名前空間**</span><span class="sxs-lookup"><span data-stu-id="6ce64-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|<span data-ttu-id="6ce64-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="6ce64-105">**Schema file**</span></span> <br/> |<span data-ttu-id="6ce64-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="6ce64-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
-|<span data-ttu-id="6ce64-107">**拡張機能の基本**</span><span class="sxs-lookup"><span data-stu-id="6ce64-107">**Extension base**</span></span> <br/> |<span data-ttu-id="6ce64-108">なし</span><span class="sxs-lookup"><span data-stu-id="6ce64-108">None</span></span>  <br/> |
+|<span data-ttu-id="63439-104">**名前空間**</span><span class="sxs-lookup"><span data-stu-id="63439-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|<span data-ttu-id="63439-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="63439-105">**Schema file**</span></span> <br/> |<span data-ttu-id="63439-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="63439-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
+|<span data-ttu-id="63439-107">**拡張ベース**</span><span class="sxs-lookup"><span data-stu-id="63439-107">**Extension base**</span></span> <br/> |<span data-ttu-id="63439-108">なし</span><span class="sxs-lookup"><span data-stu-id="63439-108">None</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="6ce64-109">定義</span><span class="sxs-lookup"><span data-stu-id="6ce64-109">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="63439-109">定義</span><span class="sxs-lookup"><span data-stu-id="63439-109">Definition</span></span>
 
 ```XML
       <xs:complexType name="RowKeyValue_Type">
@@ -39,19 +39,19 @@ ms.locfileid: "19806302"
       
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="6ce64-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="6ce64-110">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="63439-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="63439-110">Elements and attributes</span></span>
 
-<span data-ttu-id="6ce64-111">スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="6ce64-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="63439-111">スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="63439-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="child-elements"></a><span data-ttu-id="6ce64-112">子要素</span><span class="sxs-lookup"><span data-stu-id="6ce64-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="63439-112">子要素</span><span class="sxs-lookup"><span data-stu-id="63439-112">Child elements</span></span>
 
-<span data-ttu-id="6ce64-113">なし。</span><span class="sxs-lookup"><span data-stu-id="6ce64-113">None.</span></span>
+<span data-ttu-id="63439-113">なし。</span><span class="sxs-lookup"><span data-stu-id="63439-113">None.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="6ce64-114">属性</span><span class="sxs-lookup"><span data-stu-id="6ce64-114">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="63439-114">属性</span><span class="sxs-lookup"><span data-stu-id="63439-114">Attributes</span></span>
 
-|<span data-ttu-id="6ce64-115">**属性**</span><span class="sxs-lookup"><span data-stu-id="6ce64-115">**Attribute**</span></span>|<span data-ttu-id="6ce64-116">**型**</span><span class="sxs-lookup"><span data-stu-id="6ce64-116">**Type**</span></span>|<span data-ttu-id="6ce64-117">**必須**</span><span class="sxs-lookup"><span data-stu-id="6ce64-117">**Required**</span></span>|<span data-ttu-id="6ce64-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="6ce64-118">**Description**</span></span>|<span data-ttu-id="6ce64-119">**使用可能な値**</span><span class="sxs-lookup"><span data-stu-id="6ce64-119">**Possible values**</span></span>|
+|<span data-ttu-id="63439-115">**属性**</span><span class="sxs-lookup"><span data-stu-id="63439-115">**Attribute**</span></span>|<span data-ttu-id="63439-116">**型**</span><span class="sxs-lookup"><span data-stu-id="63439-116">**Type**</span></span>|<span data-ttu-id="63439-117">**必須**</span><span class="sxs-lookup"><span data-stu-id="63439-117">**Required**</span></span>|<span data-ttu-id="63439-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="63439-118">**Description**</span></span>|<span data-ttu-id="63439-119">**使用可能な値**</span><span class="sxs-lookup"><span data-stu-id="63439-119">**Possible values**</span></span>|
 |:-----|:-----|:-----|:-----|:-----|
-|<span data-ttu-id="6ce64-120">RowID</span><span class="sxs-lookup"><span data-stu-id="6ce64-120">RowID</span></span>  <br/> |<span data-ttu-id="6ce64-121">xsd:unsignedInt</span><span class="sxs-lookup"><span data-stu-id="6ce64-121">xsd:unsignedInt</span></span>  <br/> |<span data-ttu-id="6ce64-122">必須</span><span class="sxs-lookup"><span data-stu-id="6ce64-122">required</span></span>  <br/> ||<span data-ttu-id="6ce64-123">Xsd:unsignedInt の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="6ce64-123">Values of the xsd:unsignedInt type.</span></span>  <br/> |
-|<span data-ttu-id="6ce64-124">値</span><span class="sxs-lookup"><span data-stu-id="6ce64-124">Value</span></span>  <br/> |<span data-ttu-id="6ce64-125">xsd:string</span><span class="sxs-lookup"><span data-stu-id="6ce64-125">xsd:string</span></span>  <br/> |<span data-ttu-id="6ce64-126">必須</span><span class="sxs-lookup"><span data-stu-id="6ce64-126">required</span></span>  <br/> ||<span data-ttu-id="6ce64-127">Xsd:string の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="6ce64-127">Values of the xsd:string type.</span></span>  <br/> |
+|<span data-ttu-id="63439-120">RowID</span><span class="sxs-lookup"><span data-stu-id="63439-120">RowID</span></span>  <br/> |<span data-ttu-id="63439-121">xsd:unsignedInt</span><span class="sxs-lookup"><span data-stu-id="63439-121">xsd:unsignedInt</span></span>  <br/> |<span data-ttu-id="63439-122">必須</span><span class="sxs-lookup"><span data-stu-id="63439-122">required</span></span>  <br/> ||<span data-ttu-id="63439-123">Xsd:unsignedInt の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="63439-123">Values of the xsd:unsignedInt type.</span></span>  <br/> |
+|<span data-ttu-id="63439-124">値</span><span class="sxs-lookup"><span data-stu-id="63439-124">Value</span></span>  <br/> |<span data-ttu-id="63439-125">xsd:string</span><span class="sxs-lookup"><span data-stu-id="63439-125">xsd:string</span></span>  <br/> |<span data-ttu-id="63439-126">必須</span><span class="sxs-lookup"><span data-stu-id="63439-126">required</span></span>  <br/> ||<span data-ttu-id="63439-127">Xsd:string の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="63439-127">Values of the xsd:string type.</span></span>  <br/> |
    
 
