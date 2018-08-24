@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 60b11733-20c2-4fe9-8406-c3103b2852ba
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c3af4e5afa272233cb435b2f856c0aadb42ed16f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d9c3fc0eb5b14df27885ec835058f29f9693fb1b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803144"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584774"
 ---
 # <a name="pidtagothertelephonenumber-canonical-property"></a>PidTagOtherTelephoneNumber 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 受信者の別の電話番号が含まれています。
   
@@ -32,7 +32,7 @@ ms.locfileid: "19803144"
 |関連するプロパティ:  <br/> |PR_OTHER_TELEPHONE_NUMBER、PR_OTHER_TELEPHONE_NUMBER_A、PR_OTHER_TELEPHONE_NUMBER_W  <br/> |
 |識別子:  <br/> |0x3A1F  <br/> |
 |データの種類 :   <br/> |PT_UNICODE、PT_STRING8  <br/> |
-|領域:  <br/> |Address  <br/> |
+|エリア:  <br/> |Address  <br/> |
    
 ## <a name="remarks"></a>注釈
 

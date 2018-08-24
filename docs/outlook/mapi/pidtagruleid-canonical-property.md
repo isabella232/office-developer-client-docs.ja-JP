@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 341e8db0-52b7-4ba7-aaa6-eedf2783b4e8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 52a6132dcd6aa2c3a2951f3d1a6458808364dccb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2831e31e8139dd2348c2deffa6da41793d0a3f4b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803403"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576247"
 ---
 # <a name="pidtagruleid-canonical-property"></a>PidTagRuleId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ルールが最初に作成したとき、各ルールのメッセージング サーバーが生成されます一意の識別子を指定します。 
   
@@ -32,7 +32,7 @@ ms.locfileid: "19803403"
 |関連するプロパティ:  <br/> |PR_RULE_ID  <br/> |
 |識別子:  <br/> |0x6674  <br/> |
 |データの種類 :   <br/> |PT_I8  <br/> |
-|領域:  <br/> |サーバー側のルール  <br/> |
+|エリア:  <br/> |サーバー側のルール  <br/> |
    
 ## <a name="remarks"></a>注釈
 

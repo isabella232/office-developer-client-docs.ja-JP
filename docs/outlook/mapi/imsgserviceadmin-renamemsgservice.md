@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: eba0e7f2-03c1-4713-aa36-3d0b398cd197
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: ff748827950c79c3c94e9f70ce8b0bb335884290
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a6eba20fb346f53052808abf8fcae8993d423d34
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800982"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589561"
 ---
 # <a name="imsgserviceadminrenamemsgservice"></a>IMsgServiceAdmin::RenameMsgService
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 現在は廃止されています。 メッセージ サービスに新しい名前が割り当てられます。 
   

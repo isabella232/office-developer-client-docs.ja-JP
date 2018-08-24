@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: e375367b-d107-4768-95de-00b8b9dc3511
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 808d5f4bfca15cae4ca7aab6758d3b5361813bd4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e5c46aed7a15ae4f48c8e4f1fe308fcb20ab3fe7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799797"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575358"
 ---
 # <a name="comparing-address-book-entries"></a>アドレス帳エントリの比較
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 [IABLogon::CompareEntryIDs](iablogon-compareentryids.md)プロバイダーは、プロバイダーのオブジェクトの 2 つのエントリ id を比較します。 MAPI は、 [MAPIUID](mapiuid.md)を登録して、プロバイダーを 2 つのエントリの識別子が含まれていることを確認した後に、このメソッドを呼び出します。 したがって、 **CompareEntryIDs**メソッドでは、 _lpEntryID1_および_lpEntryID2_パラメーターに渡されたエントリ id をプロバイダーに属している必要があります調べません。 
   

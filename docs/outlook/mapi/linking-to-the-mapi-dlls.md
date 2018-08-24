@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 19fd4678-21d3-47a6-a439-1d4959cac407
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0bce1d682057b81135d1684c40bc79e6710d4e2a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 428e92dd783368374fa07c8df9629d60e83dd217
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801265"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582029"
 ---
 # <a name="linking-to-the-mapi-dlls"></a>MAPI DLL へのリンク
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 MAPI クライアントにリンクできます MAPI Dll、暗黙的にまたは明示的に Windows 関数**LoadLibrary**と**GetProcAddress**を使用しています。 MAPI Dll を明示的にリンクする方法の詳細については、 [MAPI の関数へのリンク](how-to-link-to-mapi-functions.md)を参照してください。
   

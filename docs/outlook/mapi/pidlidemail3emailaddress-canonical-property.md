@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 3a468bb6-c4c2-42ee-8283-492196872ca0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a4015937dd2f3dc77cb3f549a0a70027b4fcea55
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 82328e285d0bf77ced074ba19aed306a27cea574
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801894"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594776"
 ---
 # <a name="pidlidemail3emailaddress-canonical-property"></a>PidLidEmail3EmailAddress 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 連絡先の 3 番目の電子メール アドレスを指定します。
   
@@ -33,7 +33,7 @@ ms.locfileid: "19801894"
 |プロパティを設定します。  <br/> |PSETID_Address  <br/> |
 |長い ID (LID):  <br/> |0x000080A3  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |Contact  <br/> |
+|エリア:  <br/> |Contact  <br/> |
    
 ## <a name="remarks"></a>注釈
 

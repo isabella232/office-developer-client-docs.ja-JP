@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: c6ba2fe9-c183-4d26-854c-f3ac893e75cc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f169a167342ea36eece313c68c2fe32199bb930a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8d35a16432e1a7f7e78cce600d4a1bfa3133458b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802986"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594825"
 ---
 # <a name="pidtagmessagehandlingsystemcommonname-canonical-property"></a>PidTagMessageHandlingSystemCommonName 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージ処理システムの共通名が含まれています。
   
@@ -32,7 +32,7 @@ ms.locfileid: "19802986"
 |関連するプロパティ:  <br/> |PR_MHS_COMMON_NAME、PR_MHS_COMMON_NAME_A、PR_MHS_COMMON_NAME_W  <br/> |
 |識別子:  <br/> |0x3A0F  <br/> |
 |データの種類 :   <br/> |PT_UNICODE、PT_STRING8  <br/> |
-|領域:  <br/> |Address  <br/> |
+|エリア:  <br/> |Address  <br/> |
    
 ## <a name="remarks"></a>注釈
 

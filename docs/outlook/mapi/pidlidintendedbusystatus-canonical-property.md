@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 84221dd3-de71-4c10-abd7-9f15aefd02ed
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 30f1e2389698f5ec96874f46a685a7e087dbb773
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 58642cd84c9f9b784a8a9d7246bfed0dab58e119
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802010"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577052"
 ---
 # <a name="pidlidintendedbusystatus-canonical-property"></a>PidLidIntendedBusyStatus 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 会議出席依頼または会議の更新が送信された場合は、開催者の予定表で会議の**dispidBusyStatus** ([PidLidBusyStatus](pidlidbusystatus-canonical-property.md)) プロパティの値を指定します。
   
@@ -33,7 +33,7 @@ ms.locfileid: "19802010"
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008224  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |会議  <br/> |
+|エリア:  <br/> |会議  <br/> |
    
 ## <a name="remarks"></a>注釈
 

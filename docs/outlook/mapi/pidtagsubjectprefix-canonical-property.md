@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 07fcb881-d873-45bf-b048-30f41d0d8d85
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: be2d30f511540b2eb7aa6e55531753811aaa580d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ffc47eca3457eef876d88a4be43888f24c403b10
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803616"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575344"
 ---
 # <a name="pidtagsubjectprefix-canonical-property"></a>PidTagSubjectPrefix 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 通常次のように、メッセージのいくつかのアクションを示す件名のプレフィックスが含まれています"FW:"転送します。 
   
@@ -32,7 +32,7 @@ ms.locfileid: "19803616"
 |関連するプロパティ:  <br/> |されて、PR_SUBJECT_PREFIX_A、PR_SUBJECT_PREFIX_W  <br/> |
 |識別子:  <br/> |0x003D  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |メッセージ全般  <br/> |
    
 ## <a name="remarks"></a>注釈
 

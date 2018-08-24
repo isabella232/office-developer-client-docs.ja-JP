@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 23b6ad1a-0b50-429f-8819-ab72c56581c2
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 85de8dd7211fa19b7cdbda9f5ced1f00a736ca9e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7d2f5fc2f26019902b27750613f7c360a751cd51
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800913"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582932"
 ---
 # <a name="implementing-a-sample-object"></a>サンプル オブジェクトを実装します。
 
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 通知シンク オブジェクト-オブジェクトをサポートする、 [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md)インターフェイス-は、MAPI オブジェクトの通知を処理するためのクライアント アプリケーションを実装することです。 **IMAPIAdviseSink**では、 [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx)から直接継承し、 **OnNotify**1 つのメソッドが含まれています。 したがって、アドバイズ シンク オブジェクトを実装するには、クライアントは**IUnknown**の 3 つの方法と[OnNotify](imapiadvisesink-onnotify.md)コードを作成します。
   

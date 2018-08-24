@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 2a326e93-fe8c-e3a5-1e92-30b75b6cb1d2
 description: '�ŏI�X�V��: 2012�N7��5��'
-ms.openlocfilehash: 7b3d0eed6039552813798d4ceb30158444902b36
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c94e625fc97207e1bc1a2e0797a1ba82ee41fca3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803899"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576254"
 ---
 # <a name="setting-up-an-offline-state-add-in"></a>オフライン状態のアドインを設定します。
 
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 オフライン状態のアドインを実装するには、接続、初期化、およびその他のセットアップ機能を実装しなければなりません。 このトピック、これらの接続、初期化、およびセットアップの機能は、オフライン状態のサンプル アドイン内のコード例を使用して説明します。 オフライン状態のサンプル アドインは、COM アドインを Outlook に、**オフライン状態**のメニューを追加し、オフライン状態 API を使用してします。 **オフライン状態**] メニューの [使用を有効にするまたは状態の監視を無効にする、現在の状態を確認して現在の状態を変更できます。 ダウンロードしてオフライン状態のサンプル アドインをインストールする方法の詳細については[、オフライン状態のサンプル アドインをインストールする](installing-the-sample-offline-state-add-in.md)」を参照してください。 オフライン状態 API の詳細については、[の「オフライン状態 API](about-the-offline-state-api.md)を参照してください。
   

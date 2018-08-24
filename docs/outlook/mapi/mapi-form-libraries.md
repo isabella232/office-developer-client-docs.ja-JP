@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 120749ca-a740-4a57-bc70-529e238f4415
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 382dd9ba422f2d8a07f4656fba87cdc0b65512f9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2411b105f685b31d8158dfc20f368ba1bdbb5792
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801361"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584647"
 ---
 # <a name="mapi-form-libraries"></a>MAPI フォーム ライブラリ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 フォームのサーバーを整理しをクライアント アプリケーションに簡単に使用できるようにするために、MAPI フォームのアーキテクチャには、フォーム ライブラリには、インストール、管理、レプリケーション、およびフォームのサーバーの使用をサポートが含まれています。
   

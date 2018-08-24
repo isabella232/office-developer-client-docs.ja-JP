@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 92742747-cce0-4c54-9ece-1fcf652ac498
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9e0316ead2adf00619bd87c57946ba72ed01f4b0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8c024f71279fac5dbb3d771442d9fbfb8a50e0f5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802793"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578872"
 ---
 # <a name="pidtagformhostmap-canonical-property"></a>PidTagFormHostMap 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 使用可能なフォームのホストのマップが含まれています。 
   
@@ -32,7 +32,7 @@ ms.locfileid: "19802793"
 |関連するプロパティ:  <br/> |PR_FORM_HOST_MAP  <br/> |
 |識別子:  <br/> |0x3306  <br/> |
 |データの種類 :   <br/> |PT_MV_LONG  <br/> |
-|領域:  <br/> |一般的な MAPI  <br/> |
+|エリア:  <br/> |一般的な MAPI  <br/> |
    
 ## <a name="remarks"></a>注釈
 

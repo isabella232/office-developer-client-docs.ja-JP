@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 9ed166b4-6b7b-478f-bbe5-4115bb818ac0
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: c8d46ac6f47eb4dc68aebfa4562403ef1b738213
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ad891a9884e72aa352dc114232cd5951c590272f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799895"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585102"
 ---
 # <a name="deleting-a-message"></a>メッセージの削除
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 クライアントが閉じていると、ユーザーがコンテンツのテーブルを表示するときに開いているし、ユーザーが読み取りまたはメッセージを削除できます。 メッセージを誤って削除してからユーザーを保護するためには、MAPI は、2 段階の処理としてメッセージの削除を定義します。
   

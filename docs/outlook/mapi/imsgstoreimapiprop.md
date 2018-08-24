@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 20090114-b183-4767-8971-a304a9aa47e6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 426333e6e2624adcd7cb6bc6dc4982b3d1ef1999
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4ed17fd7f826432da9460fe01e5aa76802726bad
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801028"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584633"
 ---
 # <a name="imsgstore--imapiprop"></a>IMsgStore : IMAPIProp
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージ情報を格納して、メッセージおよびフォルダーへのアクセスを提供します。
   

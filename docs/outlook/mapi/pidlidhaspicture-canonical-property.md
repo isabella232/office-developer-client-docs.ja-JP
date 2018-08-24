@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c3bea11c-3197-4060-8672-f1b4bf352112
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 74a54db3ebb55c178fd5f8b7317bb27c83a47311
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 30046bd7982d08d99c5581c27d1616162d904dee
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802004"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577108"
 ---
 # <a name="pidlidhaspicture-canonical-property"></a>PidLidHasPicture 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 連絡先の写真の添付ファイルが存在するかどうかを指定します。
   
@@ -33,7 +33,7 @@ ms.locfileid: "19802004"
 |プロパティを設定します。  <br/> |PSETID_Address  <br/> |
 |長い ID (LID):  <br/> |0x00008015  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |Contact  <br/> |
+|エリア:  <br/> |Contact  <br/> |
    
 ## <a name="remarks"></a>注釈
 

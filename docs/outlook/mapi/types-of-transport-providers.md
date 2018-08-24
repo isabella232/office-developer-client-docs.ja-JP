@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 772ecab1-7e91-415b-bae8-af8ffb7b7ed9
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4a0ab660b8df2fb32f21f9bc93932a9187c37b7b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a9bba55b585b09d6a5779ba41a283b20c645656f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804144"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576233"
 ---
 # <a name="types-of-transport-providers"></a>トランスポート プロバイダーの種類
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 すべてのトランスポート プロバイダーは、次のように、標準的な機能の範囲をサポートします。
   

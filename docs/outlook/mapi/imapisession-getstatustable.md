@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 53428f8d-4838-46d1-a0ab-cafb194f4cc3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7de404f421a405d80dd7f98beba5168969222fc9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 48a69fa49735014dcbfffad0673f1d4da62452e7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800691"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594832"
 ---
 # <a name="imapisessiongetstatustable"></a>IMAPISession::GetStatusTable
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ステータス テーブル、セッション内のすべての MAPI リソースに関する情報が含まれているテーブルへのアクセスを提供します。
   

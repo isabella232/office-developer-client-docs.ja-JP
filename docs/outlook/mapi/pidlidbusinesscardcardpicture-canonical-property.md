@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2c7af147-f7eb-41ef-8403-93584a2041ba
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8e241022504291ad70f45a3318a7901bbbba213f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1b83316b599ea9ee62bde78cbd734dfb6b2d8b80
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801835"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588497"
 ---
 # <a name="pidlidbusinesscardcardpicture-canonical-property"></a>PidLidBusinessCardCardPicture 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 名刺に使用するイメージが含まれています。
   
@@ -33,7 +33,7 @@ ms.locfileid: "19801835"
 |プロパティを設定します。  <br/> |PSETID_Address  <br/> |
 |長い ID (LID):  <br/> |0x00008041  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |Contact  <br/> |
+|エリア:  <br/> |Contact  <br/> |
    
 ## <a name="remarks"></a>注釈
 

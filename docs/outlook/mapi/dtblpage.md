@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f899f434-a5d7-4b4f-98f9-c14c9f21b24b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 86cd30b15402f35e8396dedf6b685050ee4fb45e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bd0caff8a6c7834bdd01ef4be64805bde66dd6d9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800002"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578823"
 ---
 # <a name="dtblpage"></a>DTBLPAGE
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ディスプレイ テーブルから組み込まれているダイアログ ボックスで使用するタブ付きのページを説明します。 
   

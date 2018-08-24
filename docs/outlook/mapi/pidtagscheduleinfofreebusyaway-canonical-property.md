@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 7b5d013a-15ac-469a-98c8-3ed1e80f6faf
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3535e8969ceff975077285aed89f979c24821bdf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 717f934c0dadc46935b72c409469633e0779fb3d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803466"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576338"
 ---
 # <a name="pidtagscheduleinfofreebusyaway-canonical-property"></a>PidTagScheduleInfoFreeBusyAway 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 空き/予約済みの状態が [不在時に設定されている時間が含まれています。
   
@@ -32,7 +32,7 @@ ms.locfileid: "19803466"
 |関連するプロパティ:  <br/> |PR_SCHDINFO_FREEBUSY_OOF  <br/> |
 |識別子:  <br/> |0x6856  <br/> |
 |データの種類 :   <br/> |PT_MV_BINARY  <br/> |
-|領域:  <br/> |空き/予約済み  <br/> |
+|エリア:  <br/> |空き/予約済み  <br/> |
    
 ## <a name="remarks"></a>注釈
 

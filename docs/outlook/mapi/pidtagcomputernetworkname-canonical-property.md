@@ -1,5 +1,5 @@
 ---
-title: PidTagComputerNetworkName の標準的なプロパティ
+title: PidTagComputerNetworkName 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,28 +11,28 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 69467594-0d88-43e5-a6ab-9987a24cc846
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: ef2563cb3939b935b7e52ab84c1a1ac7b7b5bbb2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 3c786c19db1f195a089f751bcb162448b44f98f4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802547"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595210"
 ---
-# <a name="pidtagcomputernetworkname-canonical-property"></a>PidTagComputerNetworkName の標準的なプロパティ
+# <a name="pidtagcomputernetworkname-canonical-property"></a>PidTagComputerNetworkName 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージを送信するためのネットワークの名前が含まれています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |PR_COMPUTER_NETWORK_NAME、PR_COMPUTER_NETWORK_NAME_A、PR_COMPUTER_NETWORK_NAME_W  <br/> |
+|関連するプロパティ:  <br/> |PR_COMPUTER_NETWORK_NAME、PR_COMPUTER_NETWORK_NAME_A、PR_COMPUTER_NETWORK_NAME_W  <br/> |
 |識別子:  <br/> |0x3A49  <br/> |
-|データを入力します。  <br/> |PT_UNICODE、PT_STRING8  <br/> |
-|領域:  <br/> |連絡先  <br/> |
+|データの種類 :   <br/> |PT_UNICODE、PT_STRING8  <br/> |
+|エリア:  <br/> |Contact  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
@@ -68,7 +68,7 @@ Mapitags.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

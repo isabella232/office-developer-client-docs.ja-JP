@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 6981a3b0-96eb-44a2-b051-1c5efc70e9e3
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 9ee999841b53f358dcee85d4d92c5056f665dbf1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b4b0292ab16eabe30755fe84885a29fb8e3ce295
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804106"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595196"
 ---
 # <a name="timing-a-notification"></a>通知のタイミング
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 イベント通知は非同期処理であるため、通知が可能、いつでも必ずしもイベントが発生した後にすぐにします。
   

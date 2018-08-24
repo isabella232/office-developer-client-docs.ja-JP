@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 92bfe604-18dd-46a1-9ae8-0b04167606bd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7daa8ec536a81abc196bbb23a0e1a48e826579e2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4843a52d7441de1e1ab545e80346db8dd308c4bf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800814"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590205"
 ---
 # <a name="imapisupport--iunknown"></a>IMAPISupport : IUnknown
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 サービス プロバイダーおよびメッセージ サービスのエントリ ポイント関数では、通常実行するタスクの実装を提供します。 MAPI プロバイダー オブジェクトのログオン メソッドを呼び出すと、サービス プロバイダーからのサポートのオブジェクトへのポインターが表示されます。 メッセージ サービスでは、そのエントリ ポイント関数の呼び出しでのサポートのオブジェクト ポインターが表示されます。
   

@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: db3a6947-f640-43e8-a2df-71e96560fd81
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5abfd9c98c5a83ca45792f094d0c9573b8affb85
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a584c6beec0f06ab4cc6bd95f4611d1f30189a8e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803653"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595154"
 ---
 # <a name="pidtaguserfields-canonical-property"></a>PidTagUserFields 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 名前、データ型、およびその他のユーザー定義のフィールド情報が含まれています。
   
@@ -28,7 +28,7 @@ ms.locfileid: "19803653"
 |関連するプロパティ:  <br/> |PR_USERFIELDS  <br/> |
 |識別子:  <br/> |0x36E3  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |MAPI フォルダー  <br/> |
+|エリア:  <br/> |MAPI フォルダー  <br/> |
    
 ## <a name="remarks"></a>注釈
 

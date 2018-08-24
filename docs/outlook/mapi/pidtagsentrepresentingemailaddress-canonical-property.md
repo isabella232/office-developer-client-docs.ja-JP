@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 5fa4edde-475c-4568-946b-73eb08f97a61
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1ed8797a9f9de223d8ec15bc0eae963ff1e93be4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 689bdeb463d0e54d02be88463dabb75ef756bee9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803524"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573923"
 ---
 # <a name="pidtagsentrepresentingemailaddress-canonical-property"></a>PidTagSentRepresentingEmailAddress 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 送信者はメッセージのユーザーの電子メール アドレスが含まれています。
   
@@ -32,7 +32,7 @@ ms.locfileid: "19803524"
 |関連するプロパティ:  <br/> |PR_SENT_REPRESENTING_EMAIL_ADDRESS、PR_SENT_REPRESENTING_EMAIL_ADDRESS_A、PR_SENT_REPRESENTING_EMAIL_ADDRESS_W  <br/> |
 |識別子:  <br/> |0x0065  <br/> |
 |データの種類 :   <br/> |PT_UNICODE、PT_STRING8  <br/> |
-|領域:  <br/> |Address  <br/> |
+|エリア:  <br/> |Address  <br/> |
    
 ## <a name="remarks"></a>注釈
 

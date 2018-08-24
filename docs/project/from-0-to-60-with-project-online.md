@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5b48958e-6dab-4121-871f-fb15f58f1b24
 description: アプリケーション開発者は、スタンドアロン アプリケーションやプロジェクトのアドインを使用する (SharePoint がホストされている) プロジェクトのオンライン サイトをカスタマイズできます。アプリケーションの豊富なは、範囲の PMO サポート関数では、次のいずれかのようにプロジェクトの関係者のニーズに対応可能です。
-ms.openlocfilehash: c50ed12e9f1127f6313a02db4d84a151778e17b2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 25a38a7c7359020058983e271067a87da29f1b3d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804548"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594532"
 ---
 # <a name="from-0-to-60-with-project-online"></a>Project Online の基本
 
@@ -83,7 +83,7 @@ ms.locfileid: "19804548"
     
    プロジェクトのオンラインでは、アドインとホストでプロジェクトのオンライン情報へのアクセスを管理するユーザーのアクセス許可の両方のアプリケーションのスコープについて説明します。 設定のいずれかまたは両方のアクセスを明示的に拒否すると、オンライン プロジェクトを拒否、情報へのアクセスします。 それ以外の場合、アクセスが与えられます。
     
-3. サイト上の sideloading を有効にします。 [アプリケーション開発のプロジェクトのオンラインを構成する](http://nearbaseline.com/2013/12/configuring-project-online-for-app-development/.aspx)詳細についてを参照してください。 
+3. サイトで[sideloading](https://docs.microsoft.com/en-us/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)を有効にします。  
     
 4. プロジェクトをビルドします。
     
@@ -101,7 +101,7 @@ ms.locfileid: "19804548"
     
 - 4.0 またはそれ以降の.NET Framework
     
-- [SharePointOnline CSOM パッケージ](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM/.aspx)(CSOM 呼び出し) の 
+- [SharePointOnline CSOM パッケージ](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM)(CSOM 呼び出し) の 
     
 - C# などのプログラミング言語 
     
@@ -115,7 +115,7 @@ ms.locfileid: "19804548"
     
    プロジェクトのオンラインでは、アドインとホストでプロジェクトのオンライン情報へのアクセスを管理するユーザーのアクセス許可の両方のアプリケーションのスコープについて説明します。 設定のいずれかまたは両方のアクセスを明示的に拒否すると、オンライン プロジェクトを拒否、情報へのアクセスします。 それ以外の場合、アクセスが与えられます。
     
-3. サイト上の sideloading を有効にします。 [アプリケーション開発のプロジェクトのオンラインを構成する](http://nearbaseline.com/2013/12/configuring-project-online-for-app-development/.aspx)詳細についてを参照してください。 
+3. サイトで[sideloading](https://docs.microsoft.com/en-us/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)を有効にします。 
     
 4. プロジェクトをビルドします。
     
@@ -133,7 +133,7 @@ ms.locfileid: "19804548"
     
 - 4.0 またはそれ以降の.NET Framework
     
-- [SharePointOnline CSOM パッケージ](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM/.aspx)(CSOM 呼び出し) の 
+- [SharePointOnline CSOM パッケージ](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM)(CSOM 呼び出し) の 
     
 - C# などのプログラミング言語 
     
@@ -167,6 +167,6 @@ ms.locfileid: "19804548"
     
 ## <a name="see-also"></a>関連項目
 
-ドキュメントとオンライン プロジェクトと CSOM を使用したアプリケーション開発に関連するサンプルでは、[プロジェクト開発のポータル](http://dev.office.com/project.aspx)を参照してください。
+ドキュメントとオンライン プロジェクトと CSOM を使用したアプリケーション開発に関連するサンプルでは、[プロジェクト開発のポータル](https://developer.microsoft.com/en-us/project)を参照してください。
     
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 991c2969-0180-4c7d-95ee-e62fd24d67ef
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7d09830f471fbaa0e8ed6ae70420dfea6428b9df
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a29cfca2112bf7ae75844a2e87f4e134a7016aba
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801890"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582309"
 ---
 # <a name="pidlidemail1originaldisplayname-canonical-property"></a>PidLidEmail1OriginalDisplayName 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 連絡先に対して指定されている電子メール アドレスに対応する最初の表示名を指定します。
   
@@ -33,7 +33,7 @@ ms.locfileid: "19801890"
 |プロパティを設定します。  <br/> |PSETID_Address  <br/> |
 |長い ID (LID):  <br/> |0x00008084  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |Contact  <br/> |
+|エリア:  <br/> |Contact  <br/> |
    
 ## <a name="remarks"></a>注釈
 

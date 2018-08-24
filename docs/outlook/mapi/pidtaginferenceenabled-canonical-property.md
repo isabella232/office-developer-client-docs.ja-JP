@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e9356257-4581-44fe-8efa-172964e4c8d4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 482a5306d2d06db9ecc01c88affbf9492469ec3d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 375a98477fe45d60a7aa39ef0bfb8fad8fe0e8d7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802839"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575421"
 ---
 # <a name="pidtaginferenceenabled-canonical-property"></a>PidTagInferenceEnabled 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 推論のログ出力を制御するプロパティを格納します。
   
@@ -28,7 +28,7 @@ ms.locfileid: "19802839"
 |関連するプロパティ:  <br/> |PR_INFERENCES_ENABLED  <br/> |
 |識別子:  <br/> |0x3439000  <br/> |
 |データの種類 :   <br/> |ブール型  <br/> |
-|領域:  <br/> |メッセージ ・ ストア  <br/> |
+|エリア:  <br/> |メッセージ ・ ストア  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 

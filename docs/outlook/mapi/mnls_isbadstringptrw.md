@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 293a0700-b950-4fc2-a2e5-148d6c846384
 description: '最終更新日: 2012 年 2 月 20 日'
-ms.openlocfilehash: dd7d310c8e801ba1246a0ce948aced9fa6a1a8af
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0052d0bd6b485340a92cca9f22ca65c9e2442df6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801651"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589568"
 ---
 # <a name="mnlsisbadstringptrw"></a>MNLS_IsBadStringPtrW
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ワイド文字列へのポインターが有効であることを確認します。
   

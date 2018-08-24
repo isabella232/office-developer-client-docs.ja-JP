@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0e56b21d-0a2e-4fe6-83f4-c9daab2f3055
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: fd7e3b1d1284cdf4451330aabcce8fd0279ad5ba
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2cd4c86dc45bca85632a3fadc9023c9ad25cfa37
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801108"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583030"
 ---
 # <a name="ipersistmessagehandsoffmessage"></a>IPersistMessage::HandsOffMessage
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 フォームの現在のメッセージを解放するが発生します。
   

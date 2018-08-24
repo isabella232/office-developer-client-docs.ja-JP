@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c18de08b-8c28-4cdf-bd2e-b9c650cd6da6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0c2cf784ff9a86c9e2a2ce1a25b3c4b8ff7d8b75
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 60704464beb162a614d6619b5e74d362b4af4488
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803040"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585109"
 ---
 # <a name="pidtagordinalmost-canonical-property"></a>PidTagOrdinalMost 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 負の値は、フォルダー内のすべてのタスクの**dispidTaskOrdinal** ([PidLidTaskOrdinal](pidlidtaskordinal-canonical-property.md)) プロパティの値以下の正の整数が含まれています。
   
@@ -32,7 +32,7 @@ ms.locfileid: "19803040"
 |関連するプロパティ:  <br/> |PR_ORDINAL_MOST  <br/> |
 |識別子:  <br/> |0x36E2  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |タスク  <br/> |
+|エリア:  <br/> |タスク  <br/> |
    
 ## <a name="remarks"></a>注釈
 

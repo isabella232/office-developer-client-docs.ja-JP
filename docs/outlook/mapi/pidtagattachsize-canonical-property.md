@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 768b3215-dd9f-4aa0-b52c-178ca81a7b07
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2d6b585c00ffb3d9dd5fb0864d98b0a221c7d8c2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fd98044868bbec36ed14fcf90deb2990039244b8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802499"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573741"
 ---
 # <a name="pidtagattachsize-canonical-property"></a>PidTagAttachSize 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 添付ファイルのすべてのプロパティのサイズの合計 (バイト単位) にはが含まれています。 
   
@@ -32,7 +32,7 @@ ms.locfileid: "19802499"
 |関連するプロパティ:  <br/> |PR_ATTACH_SIZE  <br/> |
 |識別子:  <br/> |0x0e20 が使えるはず  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |メッセージの添付ファイル  <br/> |
+|エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
 ## <a name="remarks"></a>注釈
 

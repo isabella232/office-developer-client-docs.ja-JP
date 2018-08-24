@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b5eea554-6bca-42d1-b943-1327f0d70584
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a6fc194a3ef7d82be656a8d6c3f5fb9ad8326ceb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 954e6fdf2f306f5a49e2d32e191c41f146ef5997
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803137"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573020"
 ---
 # <a name="pidtagownerappointmentid-canonical-property"></a>PidTagOwnerAppointmentId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 所有者のスケジュールで予定の識別子が含まれています。
   
@@ -32,7 +32,7 @@ ms.locfileid: "19803137"
 |関連するプロパティ:  <br/> |PR_OWNER_APPT_ID  <br/> |
 |識別子:  <br/> |0x0062  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |Appointment  <br/> |
+|エリア:  <br/> |Appointment  <br/> |
    
 ## <a name="remarks"></a>注釈
 

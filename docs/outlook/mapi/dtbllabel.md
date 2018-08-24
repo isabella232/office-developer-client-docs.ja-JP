@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 5837facf-acd3-48fe-9610-f88085d99aef
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 28f6471f74fb0fcc4f7e2f4114f0790e1564e17e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 09f0d7988f85a6d6018c45cb64245ab331cda052
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799987"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582813"
 ---
 # <a name="dtbllabel"></a>DTBLLABEL
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ディスプレイ テーブルから組み込まれているダイアログ ボックスで使用するラベルについて説明します。
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 30672a2d-2d39-4292-b21a-97a38485d1de
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 83d652f313e139b1c6bb628d1119edda03a70e23
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d55134cf5181ebbba0108c228d9afc3a494e75ce
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799920"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576240"
 ---
 # <a name="developing-mapi-form-servers"></a>MAPI フォーム サーバーの開発
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 このセクションでは、フォーム サーバーの実行可能ファイルとカスタム MAPI フォームを作成するためのフォーム構成ファイルを作成するプロセスについて説明します。 このセクションを読む前にする必要があります理解する[MAPI フォーム](mapi-forms.md)内の情報です。
   

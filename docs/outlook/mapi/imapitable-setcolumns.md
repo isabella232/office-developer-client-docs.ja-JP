@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9a39cf8d-df0f-493c-b272-f15c65b3f15e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9eeab1e1186aeb5a9b458facd59bd4cc155e8014
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b6a27231c8dd2c0796b2dcba268de54fcd93e38d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800847"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587909"
 ---
 # <a name="imapitablesetcolumns"></a>IMAPITable::SetColumns
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 特定のプロパティと、テーブル内の列として表示するプロパティの順序を定義します。
   

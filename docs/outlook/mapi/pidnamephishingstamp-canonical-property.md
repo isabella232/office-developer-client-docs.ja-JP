@@ -1,5 +1,5 @@
 ---
-title: PidNamePhishingStamp の標準的なプロパティ
+title: PidNamePhishingStamp 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6cc0357e-f1d5-4387-b30f-432ba7ee42b4
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: ca92237d9d5b612fd4964831628a75dfe37aaf4a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: 1eac8831b144053ff364208404dbac3925b51c4a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802352"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572936"
 ---
-# <a name="pidnamephishingstamp-canonical-property"></a>PidNamePhishingStamp の標準的なプロパティ
+# <a name="pidnamephishingstamp-canonical-property"></a>PidNamePhishingStamp 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 フィッシング詐欺である可能性があるマークのメッセージには識別するメッセージの値が含まれます。
   
@@ -32,8 +32,8 @@ ms.locfileid: "19802352"
 |フレンドリ名:  <br/> |なし  <br/> |
 |プロパティを設定します。  <br/> |PS_PUBLIC_STRINGS  <br/> |
 |プロパティ名:  <br/> |http://schemas.microsoft.com/outlook/phishingstamp  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
-|領域:  <br/> |メッセージのセキュリティ保護します。  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
+|エリア:  <br/> |メッセージのセキュリティ保護します。  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
@@ -61,7 +61,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

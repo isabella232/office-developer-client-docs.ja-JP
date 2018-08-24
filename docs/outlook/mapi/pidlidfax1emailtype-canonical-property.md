@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 54436af4-b851-49ab-875a-c52f5da6b776
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1c82ef5d6a4d50e643a6b0a156622e9429290618
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 286f86bddc7f938f9401de1041d1574113670f52
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801908"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576828"
 ---
 # <a name="pidlidfax1emailtype-canonical-property"></a>PidLidFax1EmailType 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ビジネス、連絡先の fax アドレスの電子メールの種類を指定します。
   
@@ -33,7 +33,7 @@ ms.locfileid: "19801908"
 |プロパティを設定します。  <br/> |PSETID_Address  <br/> |
 |長い ID (LID):  <br/> |0x000080B7  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |Contact  <br/> |
+|エリア:  <br/> |Contact  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 

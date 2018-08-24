@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: ed0c14f9-3dcf-49ad-928e-ba872d4d6b5a
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 6135dfae915a1e70743f9224352390c4b56ea02e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5125fc8f3e36087a05802c38127a8402ae67d468
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803795"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576303"
 ---
 # <a name="saving-mapi-properties"></a>MAPI プロパティの保存
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 多くのオブジェクトは、トランザクション モデルのため、プロパティを変更できない永続的なものは後でコミットされるまでの処理をサポートします。 プロパティへの変更は、 [IMAPIProp::SetProps](imapiprop-setprops.md)および[IMAPIProp::DeleteProps](imapiprop-deleteprops.md)メソッドは、一方、commit の手順は、 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)によって処理されます。 **失敗 savechanges メソッド**の呼び出し、最新のオブジェクトのプロパティにアクセスできることが終了するまでではありません。 
   

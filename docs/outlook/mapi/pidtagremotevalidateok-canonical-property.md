@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e336d2ec-57cb-4d08-bd6e-330ef7d9939e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d8d986554352e05398a843723ee802bb4969e5ca
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9b06ebbe8cb162d77d60cfffa866438567c84c27
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803327"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576835"
 ---
 # <a name="pidtagremotevalidateok-canonical-property"></a>PidTagRemoteValidateOk 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 このプロパティには、 [IMAPIStatus::ValidateState](imapistatus-validatestate.md)メソッドを呼び出してリモート ビューアーが許可されている場合 TRUE が含まれています。 
   
@@ -32,7 +32,7 @@ ms.locfileid: "19803327"
 |関連するプロパティ:  <br/> |PR_REMOTE_VALIDATE_OK  <br/> |
 |識別子:  <br/> |0x3E0D  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |MAPI のステータス  <br/> |
+|エリア:  <br/> |MAPI のステータス  <br/> |
    
 ## <a name="remarks"></a>注釈
 

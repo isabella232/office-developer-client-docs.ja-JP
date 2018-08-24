@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e2d6b6bf-f96d-460c-859a-21961ac9237c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d5ba7e7bc52ba041e9fe6c9a01b35dc91d3b947b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e6de4be29811dafaf5288b2ccb39c0342a314bad
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804163"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584626"
 ---
 # <a name="ulfromszhex"></a>UlFromSzHex
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 16 進数の null で終わる文字列を符号なし長整数に変換します。 
   

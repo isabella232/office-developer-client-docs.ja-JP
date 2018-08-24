@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: c78d4d00-bc31-4d0b-8af0-dd0b8f3febfe
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 9baf3397255d6138caaad84de5ff5621bd6c9555
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d34168743926681ee7169a593e302755b193aae7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804246"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577045"
 ---
 # <a name="writing-uncompressed-formatted-text"></a>非圧縮書式付きテキストの作成
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 書式設定されたテキストを含むメッセージを送信する準備ができたら、いずれかの**PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) のプロパティをメッセージの圧縮または非圧縮のテキストに設定します。 **PR_RTF_COMPRESSED**プロパティに圧縮されたテキストを書き込む、非常に CPU 負荷の高い操作は、パフォーマンスに大きく影響します。 
   

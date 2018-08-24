@@ -8,16 +8,16 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e03c5a87-4513-2133-ae0a-11d242f80e4b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 9d8eb3f2c52f20ffe57d84823a0ed736337b4d9b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b18a4ae4ee25898d1100d9763714e5be21c69fd8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801516"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580727"
 ---
 # <a name="mapiofflinenotify"></a>MAPIOFFLINE_NOTIFY
 
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 これは、接続状態の変更を通知します。 接続状態が変更されたこと、以前の接続状態、および新しい接続の状態の一部を示します。
   

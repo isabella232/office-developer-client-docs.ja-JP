@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2dcd9ff3-f380-48c7-ae9e-d4c717a9e41f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 48b79765f64f8c75ee0e0c95302c98641b919c6d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 35d67721537a241426afc17ec162b58edc638051
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803276"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588434"
 ---
 # <a name="pidtagread-canonical-property"></a>PidTagRead 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 テーブルの行が読み取られたかどうかを示します。
   
@@ -32,7 +32,7 @@ ms.locfileid: "19803276"
 |関連するプロパティ:  <br/> |PR_READ  <br/> |
 |識別子:  <br/> |0x0E69  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |MAPI 以外から送信できます。  <br/> |
+|エリア:  <br/> |MAPI 以外から送信できます。  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 

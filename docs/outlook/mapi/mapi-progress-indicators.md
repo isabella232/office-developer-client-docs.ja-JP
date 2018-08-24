@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 73a99e52-97fe-40f5-af90-52cfd858ab22
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d8af2ba3067dabe759056313eb278b9901510980
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8fc39c6d7da0970ee15cdd9dd67bfeef0997d7d1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801420"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582869"
 ---
 # <a name="mapi-progress-indicators"></a>MAPI の進捗状況
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 完了するのには時間がかかる多くのクライアントに対して実行する操作のことができます。 時間のかかる操作の進行状況をクライアントに通知をするには、任意の時点で、操作の開始からその終了時に視覚的に操作の完了部分を表示するインジケーターを表示できます。 進行状況のインジケーターは、合計の操作を完了するの割合を示しています。
   

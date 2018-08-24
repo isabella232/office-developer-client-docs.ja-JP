@@ -10,18 +10,18 @@ api_type:
 - COM
 ms.assetid: e4c5ca77-328c-4f5a-bf94-b9e90e837557
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 79ac68e7e24524c7667b0a37622956fd041eb9d4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cbaaed9069c9f8e9a26d739e614038033d136669
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803227"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576219"
 ---
 # <a name="pidtagpstpasswordsznew-canonical-property"></a>PidTagPstPasswordSzNew 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 将来的にアクセスするため、個人用フォルダー ストアを使用する新しいパスワードが含まれています。
   
@@ -30,7 +30,7 @@ ms.locfileid: "19803227"
 |関連するプロパティ:  <br/> |PR_PST_PW_SZ_NEW、PR_PST_PW_SZ_NEW_A、PR_PST_PW_SZ_NEW_W  <br/> |
 |識別子:  <br/> |0x6704  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |パーソナル ストレージ表 (.pst) 内部  <br/> |
+|エリア:  <br/> |パーソナル ストレージ表 (.pst) 内部  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 

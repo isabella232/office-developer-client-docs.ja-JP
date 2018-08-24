@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: e38219db-f867-4c1d-9973-0e025779e8b6
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b5c9874ca465bb0ebed62f218d1512feb1a2f9ea
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1c7ae4ab6de20d69581a98323c14a2c15f436cad
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803917"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572824"
 ---
 # <a name="shutting-down-a-message-store-provider"></a>メッセージ ストア プロバイダーのシャットダウン
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 プロバイダーがメッセージ ストア プロバイダーの場合は、それをシャット ダウンできる次の方法のいずれかで。
   

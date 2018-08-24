@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 88a4360d-6ab8-466e-8ebd-af80227ee00a
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f83f3f51c8b11aececa31fa277fb799ce1ada512
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6af54b773b875531437a275f14c961a06ef799ff
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801442"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569520"
 ---
 # <a name="mapi-recipients"></a>MAPI ��M��
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ���ׂẴ��b�Z�[�W�𑗐M����̂ɂ́A1 �܂��͕����̈���A�܂��͈�A�̃��b�Z�[�W�̔z�M���\���v���p�e�B�����܂��B��M�҂����b�Z�[�W�̃R���e�L�X�g�ł̂ݎg�p���邽�� MAPI �̌ʂ̃I�u�W�F�N�g�̑���Ƀ��b�Z�[�W�̃I�u�W�F�N�g�ƌ��Ȃ���܂��B�N���C�A���g�ƃv���o�C�_�[ **IMessage** �C���^�[�t�F�C�X��g�p���Ď�M�҂�g�p���܂��B�ڍׂɂ��ẮA [IMessage: IMAPIProp](imessageimapiprop.md)��Q�Ƃ��Ă��������B
   

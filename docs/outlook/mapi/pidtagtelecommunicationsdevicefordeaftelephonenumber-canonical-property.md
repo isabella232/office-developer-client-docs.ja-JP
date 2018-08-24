@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9b1bea60-1946-48ea-8312-c85fcbe944a8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: aa6510e74030407015330ed6f0259d50559c09d1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 81e3fca956fcfb8aa5285a30aa2254b721847850
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803629"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584759"
 ---
 # <a name="pidtagtelecommunicationsdevicefordeaftelephonenumber-canonical-property"></a>PidTagTelecommunicationsDeviceForDeafTelephoneNumber 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 聴覚が不自由 (TTYTDD) の電話番号のメッセージング ユーザーの通信デバイスが含まれています。
   
@@ -32,7 +32,7 @@ ms.locfileid: "19803629"
 |関連するプロパティ:  <br/> |PR_TTYTDD_PHONE_NUMBER、PR_TTYTDD_PHONE_NUMBER_A、PR_TTYTDD_PHONE_NUMBER_W  <br/> |
 |識別子:  <br/> |0x3A4B  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |MAPI メール ユーザー  <br/> |
+|エリア:  <br/> |MAPI メール ユーザー  <br/> |
    
 ## <a name="remarks"></a>注釈
 

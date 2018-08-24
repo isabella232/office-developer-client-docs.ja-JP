@@ -10,18 +10,18 @@ api_type:
 - COM
 ms.assetid: fcab369a-a1f4-4425-a272-e35046914a4d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 169afc3b8cf982c4767802542b900ae80822cd01
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: da7d19407856570a628529877252360d1537bae7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803501"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595392"
 ---
 # <a name="pidtagsearchkey-canonical-property"></a>PidTagSearchKey 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 検索の相関関係を持つオブジェクトを識別するバイナリの比較可能なキーが含まれています。
   
@@ -30,7 +30,7 @@ ms.locfileid: "19803501"
 |関連するプロパティ:  <br/> |PR_SEARCH_KEY  <br/> |
 |識別子:  <br/> |0x300B  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |ID プロパティ  <br/> |
+|エリア:  <br/> |ID プロパティ  <br/> |
    
 ## <a name="remarks"></a>注釈
 

@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f06bf063-fc95-46f9-b5fa-3f127a59ebda
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 97650550704ba844f10131f1a3045ebbfaaaefff
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 717c456024dd98495550f1377edc6a53f82ee042
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803374"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572411"
 ---
 # <a name="pidtagroamingbinary-canonical-property"></a>PidTagRoamingBinary 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 **IPM のサブクラスに関連付けられているメッセージ ストリームが含まれています。構成**クラス。 
   
@@ -28,7 +28,7 @@ ms.locfileid: "19803374"
 |関連するプロパティ:  <br/> |PR_ROAMING_BINARYSTREAM  <br/> |
 |識別子:  <br/> |0x7C09  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |Configuration  <br/> |
+|エリア:  <br/> |Configuration  <br/> |
    
 ## <a name="remarks"></a>注釈
 

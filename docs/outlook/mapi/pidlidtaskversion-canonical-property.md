@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 3ab77f25-ad11-4501-8d35-ef560c07e2f2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a31e2862aa3a6265f1dd9f8036abe329cf556276
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 38bcf40f24cc7901ebcbb60a099dc0e797d8e4b8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802245"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588035"
 ---
 # <a name="pidlidtaskversion-canonical-property"></a>PidLidTaskVersion 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 どのコピーが、タスクの最新の更新プログラムであることを示します。
   
@@ -33,7 +33,7 @@ ms.locfileid: "19802245"
 |プロパティを設定します。  <br/> |PSETID_Task  <br/> |
 |長い ID (LID):  <br/> |0x00008112  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |タスク  <br/> |
+|エリア:  <br/> |タスク  <br/> |
    
 ## <a name="remarks"></a>注釈
 

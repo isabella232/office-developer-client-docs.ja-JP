@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e932966e-cb7a-4d8b-8f06-6406fce1b3e6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6bcda9c6281e25f3bae2f9c1dda2f8defb024b57
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a88f05bab3f3effc60c0bcca24910106e6849903
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803470"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576809"
 ---
 # <a name="pidtagscheduleinfodontmaildelegates-canonical-property"></a>PidTagScheduleInfoDontMailDelegates 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 代理人が更新を受信しない場合、TRUE が格納されます。
   
@@ -32,7 +32,7 @@ ms.locfileid: "19803470"
 |関連するプロパティ:  <br/> |PR_SCHDINFO_DONT_MAIL_DELEGATES  <br/> |
 |識別子:  <br/> |0x6843  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |空き/予約済み  <br/> |
+|エリア:  <br/> |空き/予約済み  <br/> |
    
 ## <a name="remarks"></a>注釈
 

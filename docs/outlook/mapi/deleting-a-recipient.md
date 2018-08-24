@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: f7495030-e3b8-4c7c-9e19-284ba820e846
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 9a3006b43eb9f210603ff3a3d890118e7fd61d7a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 03917ad52f1dc1ce4d0b59cd54fe33f58f352061
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799891"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582946"
 ---
 # <a name="deleting-a-recipient"></a>受信者の削除
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
  **変更可能なコンテナーから 1 つまたは複数のアドレス帳のエントリを削除するのには**
   

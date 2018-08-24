@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: dfe66d5d-7b82-46c6-871b-2ce809bbca7e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cc467336b240ce4ee3fa2407f8e72e9c921bb9fc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: beff2f67426707051e62e11776fead9abc0e1534
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802238"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595252"
 ---
 # <a name="pidlidtaskstatusoncomplete-canonical-property"></a>PidLidTaskStatusOnComplete 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 タスク実施者が割り当てられたタスクを完了すると、電子メール メッセージの更新プログラムを送信する要求されたかどうかを示します。
   
@@ -33,7 +33,7 @@ ms.locfileid: "19802238"
 |プロパティを設定します。  <br/> |PSETID_Task  <br/> |
 |長い ID (LID):  <br/> |0x00008119  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |タスク  <br/> |
+|エリア:  <br/> |タスク  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 

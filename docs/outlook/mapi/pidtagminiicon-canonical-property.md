@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: a436b590-63f3-413c-a9c2-7664567e0ff0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 04d78bddc7bae27ba23cccf676eb6e7412ffc0db
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5514e0553f719e2e875aad7001bb38a6a52e8e08
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803006"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589778"
 ---
 # <a name="pidtagminiicon-canonical-property"></a>PidTagMiniIcon 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 フォームの半分のサイズのアイコンのビットマップが含まれています。
   
@@ -32,7 +32,7 @@ ms.locfileid: "19803006"
 |関連するプロパティ:  <br/> |PR_MINI_ICON  <br/> |
 |識別子:  <br/> |0x0FFC  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |メッセージ全般  <br/> |
    
 ## <a name="remarks"></a>注釈
 

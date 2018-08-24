@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 5cc1d0a8-ad23-4173-b220-b7c0169073fa
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: faf3d48b63d1858a2b91f66c83d9ce08e9daa02b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c8032172ef19fbb01af68058b2e0255e269183a8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801069"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587895"
 ---
 # <a name="interacting-with-the-mapi-spooler"></a>MAPI スプーラーとの対話
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 内のメソッド、 [IXPLogon: IUnknown](ixplogoniunknown.md)トランスポート プロバイダーを呼び出すときに、MAPI スプーラーによってインターフェイスを使用します。 すばやく戻ることができるように、これらのメソッドのほとんどを実装するトランスポート プロバイダーのほとんどの種類の可能性がある場合があります。 メソッドで取得するのには時間がかかる場合、分解 MAPI スプーラーに呼び出しを他のタスクの CPU を解放するにこれは望ましいことです。 
   

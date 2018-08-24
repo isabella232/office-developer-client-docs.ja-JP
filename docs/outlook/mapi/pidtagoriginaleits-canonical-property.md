@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9908039e-6b88-428f-b241-b04144cbcf5c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3bb3226868f88baf12e8778f0122f975c1cadd84
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ed0f4f624314b2531f77751ae60def8982757ce2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803074"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594790"
 ---
 # <a name="pidtagoriginaleits-canonical-property"></a>PidTagOriginalEits 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージのテキストの元のエンコードされた情報タイプ (含む) のコピーが含まれています。
   
@@ -32,7 +32,7 @@ ms.locfileid: "19803074"
 |関連するプロパティ:  <br/> |PR_ORIGINAL_EITS  <br/> |
 |識別子:  <br/> |0x0021  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |Server  <br/> |
+|エリア:  <br/> |Server  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 

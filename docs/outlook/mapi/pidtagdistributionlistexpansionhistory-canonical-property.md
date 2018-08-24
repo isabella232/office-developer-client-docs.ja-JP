@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: fc1e0162-d655-4761-92e7-b469579c270b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3989532388d9c88c293427a4ce7109579a832ad1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0ba27e1eefa85e1651dbd24fa0540f8b1108588a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802712"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588469"
 ---
 # <a name="pidtagdistributionlistexpansionhistory-canonical-property"></a>PidTagDistributionListExpansionHistory 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージの転送中に配布リストが展開されたかを示す履歴が含まれています。 
   
@@ -32,7 +32,7 @@ ms.locfileid: "19802712"
 |関連するプロパティ:  <br/> |PR_DL_EXPANSION_HISTORY  <br/> |
 |識別子:  <br/> |0x0013  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |MAPI の封筒  <br/> |
+|エリア:  <br/> |MAPI の封筒  <br/> |
    
 ## <a name="remarks"></a>注釈
 

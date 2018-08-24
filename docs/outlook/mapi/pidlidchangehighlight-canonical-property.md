@@ -1,5 +1,5 @@
 ---
-title: PidLidChangeHighlight の標準的なプロパティ
+title: PidLidChangeHighlight 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: cd57a5be-5550-4492-acb9-52255fac9014
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: b5f806f838d617a6265279ee7e58dc2e28a662b2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: c38d1de1f2631277645ed10eb960ffc1956dfb6f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801853"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594713"
 ---
-# <a name="pidlidchangehighlight-canonical-property"></a>PidLidChangeHighlight の標準的なプロパティ
+# <a name="pidlidchangehighlight-canonical-property"></a>PidLidChangeHighlight 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 会議オブジェクトがどのように変更されたかを示すビット フィールドを指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidChangeHighlight  <br/> |
+|関連するプロパティ:  <br/> |dispidChangeHighlight  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008204  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
-|領域:  <br/> |会議  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
+|エリア:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティが必要ではありません。 各フラグを設定する詳細については、 [[MS OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)。
   
@@ -65,7 +65,7 @@ Mapidefs.h
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 

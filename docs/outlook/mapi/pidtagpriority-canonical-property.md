@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0f3a628f-5f8e-4716-98cc-868bd3400ba9
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 67f482e347db1b69a248c542f2cb172c41d6f9f1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1e69211c15a3a05b3396dc1510483fddafe3faeb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803182"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588609"
 ---
 # <a name="pidtagpriority-canonical-property"></a>PidTagPriority 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージの相対的な優先順位が含まれています。
   
@@ -32,7 +32,7 @@ ms.locfileid: "19803182"
 |関連するプロパティ:  <br/> |PR_PRIORITY  <br/> |
 |識別子:  <br/> |0x0026  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |メール  <br/> |
+|エリア:  <br/> |メール  <br/> |
    
 ## <a name="remarks"></a>注釈
 

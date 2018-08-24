@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 6703ba3f-54a5-4059-b10a-1d42a9e81be1
 description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: b328a65f400e424fb2cd177e710fb8bcffa392c2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: de63e728fbabf9c153f7a4faa68cad1d7a9331ec
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19801305"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587923"
 ---
 # <a name="mapi-address-book"></a>MAPI �A�h���X��
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 統合アドレス帳は、すべてのプロファイルで、アドレス帳プロバイダーからのアドレス指定情報の統合のコレクションにアクセスできるようにするのには MAPI を実装するオブジェクトです。 アドレス帳では、クライアント アプリケーションとサービス ・ プロバイダーはありませんメッセージング システムの一意のアドレス体系を区別します。 代わりに、それらを調べることのすべての受信者のアドレスですべてのメッセージング システムでは、メッセージング システムのアドレス帳プロバイダーがインストールされていれば。
   

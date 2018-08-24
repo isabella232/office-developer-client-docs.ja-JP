@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: bed36900-e44d-434b-a4f2-d10f2d6f70da
 description: '最終更新日: 2013 年 3 月 12 日'
-ms.openlocfilehash: 2fd3e66e3171c677465a533ede3001cd0b28c8aa
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 14b93a952e4776716c333dc730144b55bcc61259
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799698"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582715"
 ---
 # <a name="attconversationid-and-attparentid"></a>attConversationID and attParentID
 
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ワークグループ 3.1 メールの会話のキーのウィンドウは、テキスト文字列です。 MAPI 対応は、バイナリ値です。 下位互換性を提供するには、TNEF の実装はバイナリ データをテキストに変換し、終端の null 文字を追加します。
   

@@ -13,12 +13,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 0ad49ff6-8dff-4379-a52c-d292c53c2bc0
 description: Project 2013 のデスクトップ クライアント アプリケーション-標準 2013 のプロジェクトとプロジェクトの評価のため、カスタマイズし、マクロを作成するのには VBA を使用して拡張できます。 Visual Studio 2012 を使用するにはリボンのユーザー インターフェイスをカスタマイズし、新しい機能拡張モデルの一般的な Office 2013 のプラットフォームに組み込まれているプロジェクトでの作業ウィンドウに Office アドインを有効に複雑なアドインを作成します。 プロジェクト標準 2013 および評価のためのプロジェクトは一般的な Office のアドインを実行し、アドインを使用して作業ウィンドウの SharePoint、他の web サイトや web アプリケーション、および外部のデータと統合するプロジェクト専用に開発されました。
-ms.openlocfilehash: e8604b4d479d0c64f8d45ad2363d7391d57408ed
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9e89c5a1f6486ce49ad8b95bcd7a92497b7a2436
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804679"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594741"
 ---
 # <a name="project-client-programming"></a>Project クライアントのプログラミング
 
@@ -43,15 +43,9 @@ Project 2013 のデスクトップ クライアント アプリケーション-�
   
 ## <a name="see-also"></a>関連項目
 
-
-
-[開発者のためのプロジェクト](http://msdn.microsoft.com/en-us/office/aa905469)
-  
-[Office デベロッパー センター](https://dev.office.com)
-  
-[Visual Studio のデベロッパー センター](http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx)
-  
-[ClickOnce のセキュリティと展開](http://msdn.microsoft.com/en-us/library/t71a733d.aspx)
-  
-[利用可能なフィールドの参照](http://office.microsoft.com/en-us/project-help/available-fields-reference-HA102749299.aspx?CTT=1)
+- [開発者のためのプロジェクト](http://msdn.microsoft.com/en-us/office/aa905469)
+- [Office デベロッパー センター](https://dev.office.com)
+- [Visual Studio のデベロッパー センター](http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx)
+- [ClickOnce のセキュリティと展開](http://msdn.microsoft.com/en-us/library/t71a733d.aspx)
+- [利用可能なフィールドの参照](https://support.office.com/en-us/article/available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
 

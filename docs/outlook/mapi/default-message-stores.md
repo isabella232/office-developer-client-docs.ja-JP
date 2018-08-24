@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: efa178eb-feb2-443f-8f6b-2ea53a456bf2
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: cece19329460b382be724faa9f0f522831cc197c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3f7bf720f9105f6a81b832233cc648bc1d9ac91d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799871"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576912"
 ---
 # <a name="default-message-stores"></a>����̃��[���̕ۑ��ꏊ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 既定のメッセージ ストアは、いずれかの一般的な目的のタスクをメッセージングのクライアント アプリケーションを使用できます。 いくつかのメッセージ ストア プロバイダーは、既定のメッセージ ストアとして使用する場合に必要になるメッセージ ストア プロバイダーの省略可能な機能があります。 これは、とおりです。
   

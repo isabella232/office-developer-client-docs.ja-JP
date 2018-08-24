@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 38cbf1bf-ac7c-4459-af3e-919b77818b25
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d32933ea5ed68c172ce07c0f7609eb76d27f1715
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8f6e6023da7d44ed8650dc85985efe17de31d8f2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19803022"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578683"
 ---
 # <a name="pidtagnondeliveryreportfromentryid-canonical-property"></a>PidTagNonDeliveryReportFromEntryId 標準プロパティ
 
   
   
-**適用対象**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 場合は、配信不能レポートの設定、失敗した送信のエントリ ID を示します-ユーザーとしてします。
   
@@ -32,7 +32,7 @@ ms.locfileid: "19803022"
 |関連するプロパティ:  <br/> |PR_NDR_FROM_ENTRYID  <br/> |
 |識別子:  <br/> |0x6904  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |メッセージ全般  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 

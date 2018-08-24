@@ -1,5 +1,5 @@
 ---
-title: PidLidTaskStatus の標準的なプロパティ
+title: PidLidTaskStatus 標準プロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 809776b7-ff00-4a52-84b9-8b5fb5f5c3e3
-description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: e8ca8d7a82360c1f96448b08c9eda18be502b9f7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '最終更新日時: 2015 年 3 月 9 日'
+ms.openlocfilehash: a89cf096e3775b57035be60cab01e3d687770cf8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19802258"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582575"
 ---
-# <a name="pidlidtaskstatus-canonical-property"></a>PidLidTaskStatus の標準的なプロパティ
+# <a name="pidlidtaskstatus-canonical-property"></a>PidLidTaskStatus 標準プロパティ
 
   
   
-**適用されます**: Outlook 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 タスクのユーザーの進行状況のステータスを指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ。  <br/> |dispidTaskStatus  <br/> |
+|関連するプロパティ:  <br/> |dispidTaskStatus  <br/> |
 |プロパティを設定します。  <br/> |PSETID_Task  <br/> |
 |長い ID (LID):  <br/> |0x00008101  <br/> |
-|データを入力します。  <br/> |PT_LONG  <br/> |
-|領域:  <br/> |タスク  <br/> |
+|データの種類 :   <br/> |PT_LONG  <br/> |
+|エリア:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 このプロパティの値を次のいずれかに設定する必要があります。
   
@@ -89,18 +89,18 @@ Mapidefs.h
 
 
 
-[PidLidPercentComplete の標準的なプロパティ](pidlidpercentcomplete-canonical-property.md)
+[PidLidPercentComplete 標準プロパティ](pidlidpercentcomplete-canonical-property.md)
   
-[PidLidTaskDateCompleted の標準的なプロパティ](pidlidtaskdatecompleted-canonical-property.md)
+[PidLidTaskDateCompleted 標準プロパティ](pidlidtaskdatecompleted-canonical-property.md)
   
-[PidLidTaskComplete の標準的なプロパティ](pidlidtaskcomplete-canonical-property.md)
+[PidLidTaskComplete 標準プロパティ](pidlidtaskcomplete-canonical-property.md)
 
 
 [MAPI プロパティ](mapi-properties.md)
   
 [標準の MAPI プロパティ](mapi-canonical-properties.md)
   
-[MAPI 名への標準的なプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名前を標準のプロパティ名にマップします。](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
 
