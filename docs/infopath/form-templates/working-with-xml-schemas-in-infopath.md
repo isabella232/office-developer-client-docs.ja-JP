@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: c1d70e9f-b9fc-7bdb-107e-d0cd8191607b
 description: Microsoft InfoPath で作成するフォーム テンプレートでは、InfoPath フォームで入力、編集、出力される XML の構造とデータの検証が XML スキーマ (XSD) を使用して実行されます。InfoPath のフォーム デザイン ウィンドウで作成したすべてのフォーム テンプレートには、実行時の検証に使用される XSD スキーマ ファイル (.xsd) が少なくとも 1 つ含まれています。
-ms.openlocfilehash: 6b19399e4f31f6270fa6f360a8428c725050ce16
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6921a2206c098992a0a24e85c263992a0e2c98b1
+ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568274"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19799238"
 ---
 # <a name="working-with-xml-schemas-in-infopath"></a>InfoPath で XML スキーマを使用する
 
@@ -532,8 +532,8 @@ XML Schema 勧告における非決定論の定義に基づくと、 **xsd:all**
 
 - [W3C XML スキーマ](http://www.w3.org/XML/Schema)
 - [W3C XML Schema Primer](http://www.w3.org/TR/xmlschema-0/)
-- [W3C XML Schema Structures Reference (英語)](https://www.xml.com/pub/a/2000/11/29/schemas/structuresref.html)
-- [W3C XML Schema Datatypes Reference (英語)](https://www.xml.com/pub/a/2000/11/29/schemas/dataref.html)
-- [XML Schema Tutorial (英語)](https://www.w3schools.com/xml/schema_intro.asp)
-- [データ プラットフォーム デベロッパー センター (英語)](http://msdn.microsoft.com/en-us/xml/default.aspx)
+- [W3C XML Schema Structures Reference (英語)](http://www.xml.com/pub/a/2000/11/29/schemas/structuresref.mdl)
+- [W3C XML Schema Datatypes Reference (英語)](http://www.xml.com/pub/a/2000/11/29/schemas/dataref.mdl)
+- [XML Schema Tutorial (英語)](http://www.w3schools.com/schema/default.asp)
+- [データ プラットフォーム デベロッパー センター (英語)](http://msdn.microsoft.com/ja-JP/xml/default.aspx)
 

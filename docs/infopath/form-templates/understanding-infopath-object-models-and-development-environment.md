@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 29415c5b-9a42-46f4-a9e8-6a7d5bb7bdbf
 description: Microsoft InfoPath 2013 は、フォーム テンプレートでのビジネス ロジック開発用に 2 種類のプログラミング モデルをサポートしており、マネージ コードからの外部自動化もサポートしています。
-ms.openlocfilehash: 638306eabf9f761ff126953e66228cad8cc5c3ae
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 18d5d68cdc047ddcb049874d677c6a20e851f2db
+ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579530"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19799225"
 ---
 # <a name="understanding-infopath-object-models-and-development-environment"></a>InfoPath のオブジェクト モデルと開発環境を理解する
 
@@ -89,14 +89,14 @@ InfoPath 2003 互換のマネージ コード オブジェクト モデルは、
 
 マネージ コードを使用したビジネス ロジックの作成に加え、開発者は外部アプリケーションで実行されるマネージ コードを使用して InfoPath を自動化することもできます。この機能と、コードを記述するために必要なアセンブリは、InfoPath 2003 Service Pack 1 で導入されました。InfoPath の自動化に使用するオブジェクトとメンバーは、InfoPath 2013 の外部自動化コードを記述する際の追加機能を提供するために更新されました。
   
-外部自動化に使用するクラスとメンバーは、 [Microsoft.Office.Interop.InfoPath](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.aspx) 名前空間と [Microsoft.Office.Interop.InfoPath.Xml](https://msdn.microsoft.com/en-us/library/microsoft.office.interop.infopath.xml) 名前空間で公開されています。自動化コードを記述するために必要なアセンブリ ファイルは、C:\Program Files\Microsoft Office\Office14 フォルダーにあります。 
+外部自動化に使用するクラスとメンバーは、 [Microsoft.Office.Interop.InfoPath](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.aspx) 名前空間と [Microsoft.Office.Interop.InfoPath.Xml](https://msdn.microsoft.com/ja-JP/library/microsoft.office.interop.infopath.xml) 名前空間で公開されています。自動化コードを記述するために必要なアセンブリ ファイルは、C:\Program Files\Microsoft Office\Office14 フォルダーにあります。 
   
 |**アセンブリ**|**説明**|
 |:-----|:-----|
 |Microsoft.Office.Interop.InfoPath.dll  <br/> |C# または Visual Basic を使用して書かれた外部自動化コードのための、InfoPath COM オブジェクト モデルに対する COM 相互運用機能を提供します。  <br/> |
 |Microsoft.Office.Interop.InfoPath.Xml.dll  <br/> |C# または Visual Basic を使用して記述された外部自動化コードのための、MSXML for XML DOM 操作に対する COM 相互運用機能を提供します。  <br/> |
    
-外部アプリケーションからマネージ コードを使用して InfoPath アプリケーションを自動化するためだけに使用される、 **Microsoft.Office.Interop.InfoPath** 名前空間と **Microsoft.Office.Interop.InfoPath.Xml** 名前空間で提供されるオブジェクト モデルの詳細については、 [InfoPath デベロッパー ポータル](http://msdn.microsoft.com/en-us/office/aa905434.aspx)を参照してください。
+外部アプリケーションからマネージ コードを使用して InfoPath アプリケーションを自動化するためだけに使用される、 **Microsoft.Office.Interop.InfoPath** 名前空間と **Microsoft.Office.Interop.InfoPath.Xml** 名前空間で提供されるオブジェクト モデルの詳細については、 [InfoPath デベロッパー ポータル](http://msdn.microsoft.com/ja-JP/office/aa905434.aspx)を参照してください。
   
 ### <a name="the-infopath-forms-services-object-model"></a>InfoPath Forms Services オブジェクト モデル
 
@@ -110,13 +110,16 @@ InfoPath Forms Services オブジェクト モデルの詳細については、M
   
 ## <a name="infopath-development-environment"></a>InfoPath 開発環境
 
-InfoPath 2013 フォーム テンプレートでのビジネス ロジックの開発は、[Microsoft Visual Studio Tools for Applications 2012](https://www.microsoft.com/en-us/download/details.aspx?id=38807) アドオンがインストールされた Visual Studio 2012 を使用して行うことができます。 
+InfoPath 2013 フォーム テンプレートでのビジネス ロジックの開発は、[Microsoft Visual Studio Tools for Applications 2012](http://www.microsoft.com/en-us/download/details.aspx?id=30364) アドオンがインストールされた Visual Studio 2012 を使用して行うことができます。 
   
 > [!NOTE]
 > InfoPath 2013 は、JScript または VBScript で記述されたビジネス ロジックを使用するフォーム テンプレートの作成や編集をサポートしていませんが、InfoPath Filler では、以前のバージョンの InfoPath で作成されたスクリプト ベースのフォーム テンプレートを開くことができます。 
   
 ## <a name="see-also"></a>関連項目
 
-- [チュートリアル: コードを含む基本的なフォーム テンプレートの作成](walkthrough-creating-a-basic-form-template-with-code.md)
-- [[ウォークスルー] InfoPath 2003 オブジェクト モデルを使用して基本的なフォーム テンプレートを作成およびデバッグする方法](walkthrough-create-and-debug-basic-form-template-using-infopath-object-model.md)
+
+
+[チュートリアル: コードを含む基本的なフォーム テンプレートの作成](walkthrough-creating-a-basic-form-template-with-code.md)
+  
+[[ウォークスルー] InfoPath 2003 オブジェクト モデルを使用して基本的なフォーム テンプレートを作成およびデバッグする方法](walkthrough-create-and-debug-basic-form-template-using-infopath-object-model.md)
 

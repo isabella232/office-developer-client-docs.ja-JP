@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 108f9bd0-c80f-4790-a572-da2f571a7d85
 description: InfoPath オブジェクト モデルに用意されている Application クラスの MachineOnlineState プロパティを使用すると、ユーザーのコンピューターがネットワークに接続されているかどうかをフォーム コードで確認できます。MachineOnlineState プロパティの値を確認することにより、接続の状態に応じてフォーム コードで異なる処理を実行できます。
-ms.openlocfilehash: ab149b488d2b2df1e91ba2cb435960c6749ecefb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fcdaae31dd6a0c76cf1c453f267be430a2b34bba
+ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574560"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19799124"
 ---
 # <a name="work-with-offline-solutions"></a>オフライン ソリューションを操作する
 
@@ -154,11 +154,11 @@ InfoPath オブジェクト モデルに用意されている [Application](http
     
 4. Internet Explorer で、[ **ファイル**] メニューの [ **オフライン作業**] をクリックします。 
     
-5. InfoPath で **[送信]** をクリックします。 フォームが電子メール メッセージとして送信されることを示すメッセージが表示されます。
+5. InfoPath で、**[送信]** をクリックします。 フォームが電子メール メッセージとして送信されることを示すメッセージが表示されます。
     
 6. [ **送信**] をクリックします。フォームがオフラインで送信されたこと、およびネットワーク接続時に送信されることを示すメッセージが表示されます。
     
 ## <a name="see-also"></a>関連項目
 
-- [オフラインで使用するフォーム テンプレートをデザインする](https://support.office.com/en-us/article/design-a-form-template-for-offline-use-3ab8de84-babc-4bd7-9215-66d308546be4)
+- [オフラインで使用するフォーム テンプレートをデザインする](http://office.microsoft.com/en-us/infopath/HA102117391033.aspx?pid=CH100341121033)
 
