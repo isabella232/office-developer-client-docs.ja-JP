@@ -14,7 +14,7 @@ ms.assetid: caceddf1-0f7c-47b5-97bf-17ffe3440a6c
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: cff866ce73eb6ada45a2b629a6c95c69ad189045
 ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/23/2018
 ms.locfileid: "22587825"
@@ -23,9 +23,9 @@ ms.locfileid: "22587825"
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-進捗状況の情報が表示されます、 [IMAPIProgress::SetLimits](imapiprogress-setlimits.md)メソッドでは、最小値を返します。 
+進行状況の情報が表示される [IMAPIProgress::SetLimits](imapiprogress-setlimits.md) メソッドの最小値を返します。 
   
 ```cpp
 HRESULT GetMin(
@@ -37,33 +37,33 @@ HRESULT GetMin(
 
  _lpulMin_
   
-> [out]操作内のアイテムの最小数へのポインター。
+> [out] 操作中のアイテムの最小数へのポインターです。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 操作内のアイテムの最小数を取得するとします。
+> 操作中のアイテムの最小数が取得されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
-最小値は、数値形式での操作の開始を表します。 値は、全体の進行状況表示の範囲を表すために使用、グローバルな最大値またはローカル値になっているため、画面の一部のみを表すために使用できます。 
+最小値は、操作の開始を数値形式で表します。 値は、進行状況の表示全体の範囲を示すために使用されるグローバルな最大値、あるいは表示の一部のみを示すのに使用されるローカル値になります。 
   
-フラグの設定の値は、実行中のオブジェクトは、ローカルまたはグローバルに最小値を理解しているかどうかに影響します。 MAPI_TOP_LEVEL フラグを設定すると、最小値はグローバルと見なされ、処理全体の進行状況を計算するために使用します。 MAPI_TOP_LEVEL が設定されていないと最小値は、ローカルと見なされるプロバイダーを使用して、内部的に低レベルのサブオブジェクトの進行状況を表示します。 進行中のオブジェクトは、 **GetMin**の呼び出しを使用して、プロバイダーに戻す場合にのみローカルの最小値を保存します。 
+フラグ設定の値は、進行状況オブジェクトが最小値をローカルまたはグローバルと識別するかに影響します。 MAPI_TOP_LEVEL フラグが設定されている場合、最小値はグルーバルと見なされ、操作全体の進行状況の計算に使用されます。 MAPI_TOP_LEVEL が設定されている場合は、最小値はローカルと見なされます。プロバイダーは、この値を内部で使用して下位レベルのサブオブジェクトの進行状況を表示します。 ローカルの最小値は進行状況オブジェクトによって保存されますが、この最小値は **GetMin** 呼び出しを介してのみプロバイダーに返されます。 
   
 ## <a name="notes-to-implementers"></a>実装者へのメモ
 
-1 に最小値を初期化します。 サービス プロバイダーは、 **IMAPIProgress::SetLimits**メソッドを呼び出すことによって、この値をリセットできます。 **GetMin**およびその他の[IMAPIProgress](imapiprogressiunknown.md)メソッドを実装する方法の詳細については、[進行状況のインジケーターを実装する](implementing-a-progress-indicator.md)を参照してください。
+最小値を 1 に初期化します。 サービス プロバイダーは、**IMAPIProgress::SetLimits** メソッドを呼び出してこの値をリセットできます。 **GetMin** および [IMAPIProgress](imapiprogressiunknown.md) メソッドの実装方法の詳細については、「[進行状況インジケーターの実装](implementing-a-progress-indicator.md)」を参照してください。
   
-方法の詳細については、実行中のオブジェクトへの呼び出しを行う場合は、[進行状況のインジケーターの表示](how-to-display-a-progress-indicator.md)を参照してください。
+進行状況オブジェクトを呼び出す方法とタイミングの詳細については、「[進行状況インジケーターを表示する](how-to-display-a-progress-indicator.md)」を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIProgress.cpp  <br/> |CMAPIProgress::GetMin  <br/> |MFCMAPI では、 **IMAPIProgress::GetMin**メソッドを使用して、進行状況インジケーターの最小値を取得します。 制限は、 **IMAPIProgress::SetLimits**メソッドを呼び出すことですでに設定されている場合を除き、1 を返します。  <br/> |
+|MAPIProgress.cpp  <br/> |CMAPIProgress::GetMin  <br/> |MFCMAPI は、**IMAPIProgress::GetMin** メソッドを使用して進行状況インジケーターの最小値を取得します。 制限が設定済みである場合を除き、**IMAPIProgress::SetLimits** メソッドを呼び出して 1 を返します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -78,7 +78,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 [IMAPIProgress : IUnknown](imapiprogressiunknown.md)
 
 
-[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
+[コード サンプルとしての MFCMAPI](mfcmapi-as-a-code-sample.md)
   
 [進行状況インジケーターを表示する](how-to-display-a-progress-indicator.md)
   
