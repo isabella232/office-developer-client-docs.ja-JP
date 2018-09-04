@@ -1,7 +1,7 @@
 ---
 title: Excel の再計算
 manager: kelbow
-ms.date: 03/09/2018
+ms.date: 08/22/2018
 ms.audience: Developer
 ms.topic: overview
 keywords:
@@ -9,16 +9,16 @@ keywords:
 localization_priority: Normal
 ms.assetid: b4c38442-42e6-4fd2-a1b0-97cfa3300379
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 9964f2c4282158e83891d82ba43fa19f23ab1eb6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 70ca322173fb76eb1871d841b6246b62b3a5000a
+ms.sourcegitcommit: 539bc9a767ede52cb17c1b11ef7fac2fecd96fef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798844"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "22554170"
 ---
 # <a name="excel-recalculation"></a>Excel の再計算
 
- **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
 Microsoft Excel の再計算は、複数の方法でトリガーできます。次に、その例を挙げます。
   
@@ -131,6 +131,8 @@ Excel には 3 つの計算モードがあります。
 - 再計算は、通常のブックの再計算とは非同期に処理されます。これは、巨大なテーブルの再計算には、ブックの残りの部分よりも時間がかかることがあるためです。
     
 - 循環参照が許容されています。結果を得るために使用される計算がデータ テーブルの 1 つまたは 2 つの値に依存する場合、Excel は循環依存の関係に関するエラーを返しません。 
+
+- データ テーブルでは、マルチスレッド計算を使用しません。
     
 Excel がデータ テーブルの再計算を別の方法で処理することと、複雑な計算または非常に長い計算に依存する巨大なテーブルの計算には時間がかかるという事実から、Excel ではデータ テーブルの自動計算を無効化できるようになっています。これを行うには、計算モードを [データ テーブル以外自動] に設定します。計算がこのモードのときには、ユーザーが F9 を押すか、それと同等のプログラムによる操作を実行することで、データ テーブルが再計算されます。
   

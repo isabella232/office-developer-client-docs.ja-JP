@@ -5,17 +5,17 @@ ms.date: 10/21/2016
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 01a46083-03d0-4333-920c-01a9f17f68cb
-description: この記事では Outlook 2013 を拡張するために使用できる API とテクノロジについて説明しており、各自のシナリオに適した API またはテクノロジを判断する際に役立てることができます。
-ms.openlocfilehash: 267ddcd69354664254755dc45ef0b0ca90f7da32
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: この記事では Outlook 2013 および Outlook 2016 を拡張するために使用できる API とテクノロジについて説明しており、各自のシナリオに適した API またはテクノロジを判断する際に役立てることができます。
+ms.openlocfilehash: e78e96f776b8f7c584dbd82163f41d0f5d8c80f6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804351"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593425"
 ---
 # <a name="selecting-an-api-or-technology-for-developing-solutions-for-outlook"></a>Outlook 用のソリューションを開発するための API またはテクノロジの選択
 
-この記事では Outlook 2013 を拡張するために使用できる API とテクノロジについて説明しており、各自のシナリオに適した API またはテクノロジを判断する際に役立てることができます。
+この記事では Outlook 2013 および Outlook 2016 を拡張するために使用できる API とテクノロジについて説明しており、各自のシナリオに適した API またはテクノロジを判断する際に役立てることができます。
   
 Microsoft は、Outlook を拡張するさまざまな API とテクノロジをサポートしています。 
   
@@ -65,7 +65,7 @@ Microsoft は、Outlook を拡張するさまざまな API とテクノロジを
 
 Office 2013 以降、開発者は Office アドイン プラットフォームを使用して Web サービスとコンテンツを Office のリッチ クライアントと Web クライアントのコンテキストに拡張することができます。Office アドイン は、一般的な Web テクノロジを使用して開発され、(Outlook などの) Office クライアント アプリケーション内部でホストされる Web ページで、 社内またはクラウドで実行できます。Office アドイン の中でも、Outlook がサポートするタイプはメール アプリといいます。Outlook をアプリケーション レベルで自動化するためにオブジェクト モデル、PIA、MAPI をよく使用しますが、JavaScript API for Office を使用してアイテム レベルで電子メール メッセージ、会議出席依頼、予定の内容やプロパティを連動させることもできます。メール アプリは Office ストア や社内の Exchange カタログに公開できます。 
   
-エンド ユーザーや管理者はメール アプリを Exchange メールボックスにインストールすれば、Outlook リッチ クライアントや Outlook Web App でもメール アプリを使用できます。 開発者であれば、自分のメール アプリをデスクトックでのみ利用可能にしたり、タブレットやスマートフォンでも利用可能にしたりすることもできます。図 1 に、[方法: YouTube ビデオを表示するための Outlook 2013 プレビュー用メール アプリを構築する方法](http://msdn.microsoft.com/library/bfde1d24-2c13-4798-9b13-5f307d49370f%28Office.15%29.aspx)で詳しく説明されている YouTube メール アプリの例を示します。YouTube メール アプリにより、エンド ユーザーは YouTube の URL を選択して、デスクトップやタブレットの Outlook または Outlook Web App 内でビデオを見ることができます。
+エンド ユーザーや管理者はメール アプリを Exchange メールボックスにインストールすれば、Outlook リッチ クライアントや Outlook Web App でもメール アプリを使用できます。 開発者であれば、自分のメール アプリをデスクトックでのみ利用可能にしたり、タブレットやスマートフォンでも利用可能にしたりすることもできます。図 1 に、[方法: YouTube ビデオを表示するための Outlook 2013 プレビュー用メール アプリを構築する方法](https://code.msdn.microsoft.com/office/Mail-apps-for-Outlook-01c9248f)で詳しく説明されている YouTube メール アプリの例を示します。YouTube メール アプリにより、エンド ユーザーは YouTube の URL を選択して、デスクトップやタブレットの Outlook または Outlook Web App 内でビデオを見ることができます。
   
 **図 1. 選択したメッセージには YouTube.com のビデオの URL が含まれていて、このメッセージに対して YouTube メール アプリがアクティブになっている**
 
@@ -95,7 +95,7 @@ Office 2013 以降、開発者は Office アドイン プラットフォーム�
 |言語とツール  <br/> |HTML5、JavaScript、CSS3、XML、REST API といった一般的な Web テクノロジを使用するメール アプリを実装できます。自分で選択した Web 開発ツールを使用できます。しかし、Napa、Visual Studio 2012、またはこれらのツールの新しいバージョンを使用すれば、開発に要する時間を節約できます。  <br/> |
 |マネージ実装  <br/> |シナリオに適している場合は、メール アプリのサーバー側コードをマネージ .aspx ページを使用して実装できます。  <br/> |
 |スクリプトで使用可能  <br/> |JavaScript API for Office はスクリプト内で直接使用されます。  <br/> |
-|テストおよびデバッグ ツール  <br/> |お好みのどの Web 開発ツールでも使用できます。Napa と Visual Studio は、アプリのテストとデバッグを行うのに便利な統合開発環境を提供します。「[Outlook アドインのアクティブ化のトラブルシューティング](http://msdn.microsoft.com/library/da5b56c9-7fd1-4556-8c0e-f489c4c9e9b6%28Office.15%29.aspx)」と「[サンプル: Outlook アイテムのプロパティのデバッグ](http://msdn.microsoft.com/library/e3f14f07-cf35-4896-aab0-cb7625ca09b5%28Office.15%29.aspx)」に、メール アプリのトラブルシューティングとデバッグに関するさらに役立つ情報があります。  <br/> |
+|テストおよびデバッグ ツール  <br/> |お好みのどの Web 開発ツールでも使用できます。Napa と Visual Studio は、アプリのテストとデバッグを行うのに便利な統合開発環境を提供します。「[Outlook アドインのアクティブ化のトラブルシューティング](http://msdn.microsoft.com/library/da5b56c9-7fd1-4556-8c0e-f489c4c9e9b6%28Office.15%29.aspx)」と「[サンプル: Outlook アイテムのプロパティのデバッグ](https://code.msdn.microsoft.com/office/Mail-apps-for-Outlook-faca78cd)」に、メール アプリのトラブルシューティングとデバッグに関するさらに役立つ情報があります。  <br/> |
 |エキスパートの調達のしやすさ  <br/> |要求されている Office アドイン の Web 開発の専門スキルを備えたプログラマは比較的容易に見つかります。このプラットフォームは、専門的開発者および非専門的開発者の両方を対象としています。  <br/> |
 |入手できる情報  <br/> |Office アドイン の開発と公開に関する情報は、「[Office および SharePoint 用アプリのビルド](http://msdn.microsoft.com/ja-JP/office/apps/fp160950.aspx)」にあります。メール アプリに関する特定の資料は、「[Outlook 2013 プレビュー用のメール アプリ](http://msdn.microsoft.com/library/71e64bc9-e347-4f5d-8948-0a47b5dd93e6%28Office.15%29.aspx)」にあります。  <br/> |
 |開発者および展開ライセンス  <br/> |Office アドイン アプリのライセンス フレームワークに関する情報については、「[Office アドインおよび SharePoint アドインのライセンス](http://msdn.microsoft.com/library/3e0e8ff6-66d6-44ff-b0c2-59108ebd9181%28Office.15%29.aspx)」を参照してください。  <br/> |
@@ -263,7 +263,7 @@ Office アドイン には Web テクノロジが使用されているので、�
     
 - アイテムの送信やアイテムのプロパティの変更などのイベントを検出できます。
     
-- 以前のバージョンの Outlook や Exchange だけでなく、Outlook 2013 と Exchange Server 2013 でのアドインを使用できます。他方、メール アプリは Outlook 2013 と Exchange Server 2013 以降の Outlook と Exchange で動作し、以前のバージョンでは動作しません。
+- 以前のバージョンの Outlook や Exchange だけでなく、Outlook 2013 と Exchange Server 2013 でのアドインを使用できます。一方、メール アプリは Outlook 2013 と Exchange Server 2013 以降の Outlook と Exchange で動作しますが、以前のバージョンでは動作しません。
     
 オブジェクト モデルと PIA がサポートするシナリオの詳細については、次のセクション「[オブジェクト モデルまたは PIA の決定要因](#OLSelectAPI_FactorsOM)」を参照してください。Office アドイン プラットフォームと他の Office 用の拡張機能テクノロジとの比較については、「[Office および SharePoint 用アプリの背景](http://blogs.msdn.com/b/officeapps/archive/2012/07/23/introducing-apps-for-the-new-office-and-sharepoint.aspx)」を参照してください。
   
@@ -883,40 +883,25 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
   
 ### <a name="major-references-and-resources"></a>主な参照資料とリソース
 
-- [Office 用アプリの作成](http://msdn.microsoft.com/library/1e123201-6e70-45c1-a48c-d5b955896ddb%28Office.15%29.aspx)
-    
-- [Outlook 2013 開発者用リファレンス](http://msdn.microsoft.com/library/75e4ad96-62a2-49d2-bc51-48ceab50634c%28Office.15%29.aspx)
-    
-- [Outlook 2010 プライマリ相互運用機能アセンブリ リファレンス](http://msdn.microsoft.com/library/54bdde85-8dc9-4498-a1ac-f72eaf8f0cd3%28Office.15%29.aspx)
-    
-- [Outlook MAPI リファレンス](http://msdn.microsoft.com/library/3d980b86-7001-4869-9780-121c6bfc7275%28Office.15%29.aspx)
-    
-- [Outlook 2013 補助リファレンス](auxiliary/welcome-to-the-outlook-auxiliary-reference.md)
-    
-- [Outlook Social Connector のプロバイダーの参照](social-connector/outlook-social-connector-provider-reference.md)
-    
-- [Outlook の天気予報バーの拡張](weather/extending-the-weather-bar-in-outlook.md)
-    
-- [Outlook Weather Information XML Schema](weather/outlook-weather-information-xml-schema.md)
-    
-- [Outlook Weather Location XML Schema](weather/outlook-weather-location-xml-schema.md)
-    
-- [Outlook 2010 向け XML スキーマの新機能](http://msdn.microsoft.com/library/52f91e6f-a774-488c-8e55-111ae8f68f8a%28Office.15%29.aspx)
-    
-- [Outlook 2010: XML スキーマ リファレンス](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=10ca414a-6cff-46a1-a521-e42c25f079d3&amp;displaylang=en)
-    
+- [Office 用アプリの作成](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)   
+- [Outlook 2013 開発者用リファレンス](http://msdn.microsoft.com/library/75e4ad96-62a2-49d2-bc51-48ceab50634c%28Office.15%29.aspx)   
+- [Outlook 2010 プライマリ相互運用機能アセンブリ リファレンス](http://msdn.microsoft.com/library/54bdde85-8dc9-4498-a1ac-f72eaf8f0cd3%28Office.15%29.aspx)   
+- [Outlook MAPI リファレンス](http://msdn.microsoft.com/library/3d980b86-7001-4869-9780-121c6bfc7275%28Office.15%29.aspx)   
+- [Outlook 2013 補助リファレンス](auxiliary/welcome-to-the-outlook-auxiliary-reference.md)   
+- [Outlook Social Connector のプロバイダーの参照](social-connector/outlook-social-connector-provider-reference.md)   
+- [Outlook の天気予報バーの拡張](weather/extending-the-weather-bar-in-outlook.md)   
+- [Outlook Weather Information XML Schema](weather/outlook-weather-information-xml-schema.md)   
+- [Outlook Weather Location XML Schema](weather/outlook-weather-location-xml-schema.md)   
+- [Outlook 2010 向け XML スキーマの新機能](http://msdn.microsoft.com/library/52f91e6f-a774-488c-8e55-111ae8f68f8a%28Office.15%29.aspx)   
+- [Outlook 2010: XML スキーマ リファレンス](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=10ca414a-6cff-46a1-a521-e42c25f079d3&amp;displaylang=en)   
 - [32 ビットおよび 64 ビット システム用 Outlook 2010 ソリューションの開発](http://msdn.microsoft.com/library/076753e1-6252-4189-843c-7b1be1967176%28Office.15%29.aspx)
     
 ### <a name="code-samples"></a>コード サンプル
 
-- [メール アプリのサンプル](http://code.msdn.microsoft.com/officeapps/site/search?f%5B0%5D.Type=Technology&amp;f%5B0%5D.Value=Outlook%202013)
-    
-- オブジェクト モデルのコード サンプル: [操作方法.(Outlook 2013 開発者用リファレンス)](http://msdn.microsoft.com/library/3c33646d-e5c2-3103-b219-487ffe23357f%28Office.15%29.aspx)
-    
-- PIA のコード サンプル: [操作方法 (Outlook リファレンス)](http://msdn.microsoft.com/library/ff647d52-bd32-4945-afa4-5b97d9a0d7dd%28Office.15%29.aspx)
-    
+- [メール アプリのサンプル](http://code.msdn.microsoft.com/officeapps/site/search?f%5B0%5D.Type=Technology&amp;f%5B0%5D.Value=Outlook%202013)   
+- オブジェクト モデルのコード サンプル: [操作方法.(Outlook 2013 開発者用リファレンス)](http://msdn.microsoft.com/library/3c33646d-e5c2-3103-b219-487ffe23357f%28Office.15%29.aspx)  
+- PIA のコード サンプル: [操作方法 (Outlook リファレンス)](http://msdn.microsoft.com/library/ff647d52-bd32-4945-afa4-5b97d9a0d7dd%28Office.15%29.aspx)  
 - [MAPI Samples](http://msdn.microsoft.com/library/641659f2-3c0a-43af-96f1-2521b4b06680%28Office.15%29.aspx)
-    
 - 補助 API のコード サンプル: [サンプル タスク (英語)](auxiliary/sample-tasks.md)
     
 
