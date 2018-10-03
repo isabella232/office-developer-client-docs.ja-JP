@@ -8,16 +8,16 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8fa5ac8d-3f63-499c-bb4e-439984773e4a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e35760ddb20f40a176d789be2db6c282fac05af8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4f84ed318fa53877acd9d4759b81c140d2b32e6b
+ms.sourcegitcommit: 6a8c758e690c4b7f3ab6d40635606efd31a3cc07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586306"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25361486"
 ---
 # <a name="mapi-constants"></a>MAPI の定数
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 このトピックには、定数の定義、MAPI インターフェイスの宣言、および MAPI Api で使用されるクラスとインタ フェースの識別子が含まれています。
   
@@ -67,6 +67,7 @@ DECLARE_MAPI_INTERFACE_(IAttachmentSecurity, IUnknown)
 |CCSF_USE_RTF  <br/> |0x0080  <br/> |
 |CCSF_PLAIN_TEXT_ONLY  <br/> |0x1000  <br/> |
 |CCSF_NO_MSGID  <br/> |0x4000  <br/> |
+|CCSF_GLOBAL_MESSAGE  <br/> |0x00200000  <br/> |
 |E_INVALIDARG  <br/> | *Microsoft Windows ソフトウェア開発キット (SDK) のヘッダー ファイル winerror.h で定義されています。*  <br/> |
    
 ### <a name="class-identifiers"></a>クラス識別子
