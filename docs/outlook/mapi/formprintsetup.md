@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 6e82fe94-47bd-4a25-b25b-0ab6fe2db274
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 83194b47faf7892d5da568a354921511eb097210
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c2b9176e21341ef28e6f0bc007757b097a05daee
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582953"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386573"
 ---
-# <a name="formprintsetup"></a><span data-ttu-id="14011-103">FORMPRINTSETUP</span><span class="sxs-lookup"><span data-stu-id="14011-103">FORMPRINTSETUP</span></span>
+# <a name="formprintsetup"></a><span data-ttu-id="8f523-103">FORMPRINTSETUP</span><span class="sxs-lookup"><span data-stu-id="8f523-103">FORMPRINTSETUP</span></span>
 
   
   
-<span data-ttu-id="14011-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="14011-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="8f523-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="8f523-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="14011-105">フォーム オブジェクトの印刷のセットアップ情報をについて説明します。</span><span class="sxs-lookup"><span data-stu-id="14011-105">Describes the print setup information for the form object.</span></span> 
+<span data-ttu-id="8f523-105">フォーム オブジェクトの印刷のセットアップ情報をについて説明します。</span><span class="sxs-lookup"><span data-stu-id="8f523-105">Describes the print setup information for the form object.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="14011-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="14011-106">Header file:</span></span>  <br/> |<span data-ttu-id="14011-107">Mapiform.h</span><span class="sxs-lookup"><span data-stu-id="14011-107">Mapiform.h</span></span>  <br/> |
+|<span data-ttu-id="8f523-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="8f523-106">Header file:</span></span>  <br/> |<span data-ttu-id="8f523-107">Mapiform.h</span><span class="sxs-lookup"><span data-stu-id="8f523-107">Mapiform.h</span></span>  <br/> |
    
 ```cpp
 typedef struct
@@ -43,50 +43,50 @@ typedef struct
 
 ```
 
-## <a name="members"></a><span data-ttu-id="14011-108">Members</span><span class="sxs-lookup"><span data-stu-id="14011-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="8f523-108">Members</span><span class="sxs-lookup"><span data-stu-id="8f523-108">Members</span></span>
 
- <span data-ttu-id="14011-109">**ulFlags**</span><span class="sxs-lookup"><span data-stu-id="14011-109">**ulFlags**</span></span>
+ <span data-ttu-id="8f523-109">**ulFlags**</span><span class="sxs-lookup"><span data-stu-id="8f523-109">**ulFlags**</span></span>
   
-> <span data-ttu-id="14011-110">文字列の種類を制御するフラグのビットマスクです。</span><span class="sxs-lookup"><span data-stu-id="14011-110">Bitmask of flags that controls the type of the strings.</span></span> <span data-ttu-id="14011-111">次のフラグを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="14011-111">The following flag can be used:</span></span>
+> <span data-ttu-id="8f523-110">文字列の種類を制御するフラグのビットマスクです。</span><span class="sxs-lookup"><span data-stu-id="8f523-110">Bitmask of flags that controls the type of the strings.</span></span> <span data-ttu-id="8f523-111">次のフラグを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="8f523-111">The following flag can be used:</span></span>
     
-<span data-ttu-id="14011-112">MAPI_UNICODE</span><span class="sxs-lookup"><span data-stu-id="14011-112">MAPI_UNICODE</span></span> 
+<span data-ttu-id="8f523-112">MAPI_UNICODE</span><span class="sxs-lookup"><span data-stu-id="8f523-112">MAPI_UNICODE</span></span> 
   
-> <span data-ttu-id="14011-113">文字列は、Unicode 形式では。</span><span class="sxs-lookup"><span data-stu-id="14011-113">The strings are in Unicode format.</span></span> <span data-ttu-id="14011-114">MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。</span><span class="sxs-lookup"><span data-stu-id="14011-114">If the MAPI_UNICODE flag is not set, the strings are in ANSI format.</span></span>
+> <span data-ttu-id="8f523-113">文字列は、Unicode 形式では。</span><span class="sxs-lookup"><span data-stu-id="8f523-113">The strings are in Unicode format.</span></span> <span data-ttu-id="8f523-114">MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。</span><span class="sxs-lookup"><span data-stu-id="8f523-114">If the MAPI_UNICODE flag is not set, the strings are in ANSI format.</span></span>
     
- <span data-ttu-id="14011-115">**hDevmode**</span><span class="sxs-lookup"><span data-stu-id="14011-115">**hDevmode**</span></span>
+ <span data-ttu-id="8f523-115">**hDevmode**</span><span class="sxs-lookup"><span data-stu-id="8f523-115">**hDevmode**</span></span>
   
-> <span data-ttu-id="14011-116">プリンターのモードを処理します。</span><span class="sxs-lookup"><span data-stu-id="14011-116">Handle to the mode of the printer.</span></span>
+> <span data-ttu-id="8f523-116">プリンターのモードを処理します。</span><span class="sxs-lookup"><span data-stu-id="8f523-116">Handle to the mode of the printer.</span></span>
     
- <span data-ttu-id="14011-117">**と**</span><span class="sxs-lookup"><span data-stu-id="14011-117">**hDevnames**</span></span>
+ <span data-ttu-id="8f523-117">**と**</span><span class="sxs-lookup"><span data-stu-id="8f523-117">**hDevnames**</span></span>
   
-> <span data-ttu-id="14011-118">プリンターのパスを処理します。</span><span class="sxs-lookup"><span data-stu-id="14011-118">Handle to the path of the printer.</span></span>
+> <span data-ttu-id="8f523-118">プリンターのパスを処理します。</span><span class="sxs-lookup"><span data-stu-id="8f523-118">Handle to the path of the printer.</span></span>
     
- <span data-ttu-id="14011-119">**ulFirstPageNumber**</span><span class="sxs-lookup"><span data-stu-id="14011-119">**ulFirstPageNumber**</span></span>
+ <span data-ttu-id="8f523-119">**ulFirstPageNumber**</span><span class="sxs-lookup"><span data-stu-id="8f523-119">**ulFirstPageNumber**</span></span>
   
-> <span data-ttu-id="14011-120">印刷する最初のページのページ数です。</span><span class="sxs-lookup"><span data-stu-id="14011-120">Page number of the first page to be printed.</span></span>
+> <span data-ttu-id="8f523-120">印刷する最初のページのページ数です。</span><span class="sxs-lookup"><span data-stu-id="8f523-120">Page number of the first page to be printed.</span></span>
     
- <span data-ttu-id="14011-121">**ulFPrintAttachments**</span><span class="sxs-lookup"><span data-stu-id="14011-121">**ulFPrintAttachments**</span></span>
+ <span data-ttu-id="8f523-121">**ulFPrintAttachments**</span><span class="sxs-lookup"><span data-stu-id="8f523-121">**ulFPrintAttachments**</span></span>
   
-> <span data-ttu-id="14011-122">印刷する添付ファイルがあるかどうかを示すフラグです。</span><span class="sxs-lookup"><span data-stu-id="14011-122">Flag that indicates whether there are attachments to be printed.</span></span> <span data-ttu-id="14011-123">添付ファイルを印刷する場合は、 **ulFPrintAttachments**メンバーが 1 に設定されています。</span><span class="sxs-lookup"><span data-stu-id="14011-123">If there are attachments to print, the **ulFPrintAttachments** member is set to 1.</span></span> <span data-ttu-id="14011-124">印刷するのには添付ファイルがない場合は、0 に設定されています。</span><span class="sxs-lookup"><span data-stu-id="14011-124">If there are no attachments to print, it is set to 0.</span></span> 
+> <span data-ttu-id="8f523-122">印刷する添付ファイルがあるかどうかを示すフラグです。</span><span class="sxs-lookup"><span data-stu-id="8f523-122">Flag that indicates whether there are attachments to be printed.</span></span> <span data-ttu-id="8f523-123">添付ファイルを印刷する場合は、 **ulFPrintAttachments**メンバーが 1 に設定されています。</span><span class="sxs-lookup"><span data-stu-id="8f523-123">If there are attachments to print, the **ulFPrintAttachments** member is set to 1.</span></span> <span data-ttu-id="8f523-124">印刷するのには添付ファイルがない場合は、0 に設定されています。</span><span class="sxs-lookup"><span data-stu-id="8f523-124">If there are no attachments to print, it is set to 0.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="14011-125">注釈</span><span class="sxs-lookup"><span data-stu-id="14011-125">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8f523-125">備考</span><span class="sxs-lookup"><span data-stu-id="8f523-125">Remarks</span></span>
 
-<span data-ttu-id="14011-126">**FORMPRINTSETUP**構造体を使用して、フォーム オブジェクトの印刷のセットアップ情報について説明します。</span><span class="sxs-lookup"><span data-stu-id="14011-126">The **FORMPRINTSETUP** structure is used to describe the print setup information for a form object.</span></span> <span data-ttu-id="14011-127">[IMAPIViewContext::GetPrintSetup](imapiviewcontext-getprintsetup.md)の実装は、 **FORMPRINTSETUP**構造体を入力し、 **GetPrintSetup**の_lppFormPrintSetup_の出力パラメーターの内容に返します。</span><span class="sxs-lookup"><span data-stu-id="14011-127">Implementations of [IMAPIViewContext::GetPrintSetup](imapiviewcontext-getprintsetup.md) fill in the **FORMPRINTSETUP** structure and return it in the contents of the  _lppFormPrintSetup_ output parameter of **GetPrintSetup**.</span></span>
+<span data-ttu-id="8f523-126">**FORMPRINTSETUP**構造体を使用して、フォーム オブジェクトの印刷のセットアップ情報について説明します。</span><span class="sxs-lookup"><span data-stu-id="8f523-126">The **FORMPRINTSETUP** structure is used to describe the print setup information for a form object.</span></span> <span data-ttu-id="8f523-127">[IMAPIViewContext::GetPrintSetup](imapiviewcontext-getprintsetup.md)の実装は、 **FORMPRINTSETUP**構造体を入力し、 **GetPrintSetup**の_lppFormPrintSetup_の出力パラメーターの内容に返します。</span><span class="sxs-lookup"><span data-stu-id="8f523-127">Implementations of [IMAPIViewContext::GetPrintSetup](imapiviewcontext-getprintsetup.md) fill in the **FORMPRINTSETUP** structure and return it in the contents of the  _lppFormPrintSetup_ output parameter of **GetPrintSetup**.</span></span>
   
-<span data-ttu-id="14011-128">MAPI_UNICODE フラグが**GetPrintSetup**の_ulFlags_パラメーターで渡された場合は、 **hDevmode**および**と**のメンバーによって参照される文字列は Unicode 形式のはずです。</span><span class="sxs-lookup"><span data-stu-id="14011-128">If the MAPI_UNICODE flag is passed in the  _ulFlags_ parameter of **GetPrintSetup**, the strings referenced by the **hDevmode** and **hDevnames** members should be in Unicode format.</span></span> <span data-ttu-id="14011-129">それ以外の場合、文字列は、ANSI 形式でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="14011-129">Otherwise, the strings should be in ANSI format.</span></span> 
+<span data-ttu-id="8f523-128">MAPI_UNICODE フラグが**GetPrintSetup**の_ulFlags_パラメーターで渡された場合は、 **hDevmode**および**と**のメンバーによって参照される文字列は Unicode 形式のはずです。</span><span class="sxs-lookup"><span data-stu-id="8f523-128">If the MAPI_UNICODE flag is passed in the  _ulFlags_ parameter of **GetPrintSetup**, the strings referenced by the **hDevmode** and **hDevnames** members should be in Unicode format.</span></span> <span data-ttu-id="8f523-129">それ以外の場合、文字列は、ANSI 形式でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="8f523-129">Otherwise, the strings should be in ANSI format.</span></span> 
   
-<span data-ttu-id="14011-130">**IMAPIViewContext**を実装するフォームの閲覧者は[MAPIAllocateBuffer](mapiallocatebuffer.md)、MAPI アロケーター関数を使用する**FORMPRINTSETUP**構造体を割り当てる必要がありますが、 **hDevMode**および**と**、個々 のメンバーを割り当てるWindows 関数[調べます](http://go.microsoft.com/fwlink/?LinkId=132110)。</span><span class="sxs-lookup"><span data-stu-id="14011-130">Form viewers implementing **IMAPIViewContext** must allocate the **FORMPRINTSETUP** structure using the MAPI allocator function [MAPIAllocateBuffer](mapiallocatebuffer.md), but allocate the individual members, **hDevMode** and **hDevNames**, with the Windows function [GlobalAlloc](http://go.microsoft.com/fwlink/?LinkId=132110).</span></span> <span data-ttu-id="14011-131">メモリのリリースは、同様に処理されます。</span><span class="sxs-lookup"><span data-stu-id="14011-131">The release of memory is handled similarly.</span></span> <span data-ttu-id="14011-132">[GlobalFree](http://go.microsoft.com/fwlink/?LinkId=132108) Windows 関数を使用して[MAPIFreeBuffer](mapifreebuffer.md)関数を使用して**FORMPRINTSETUP**構造体を解放する必要がありますが、 **hDevMode**および**と**のメンバーを解放する必要があります。</span><span class="sxs-lookup"><span data-stu-id="14011-132">The **hDevMode** and **hDevNames** members must be freed using the Windows function [GlobalFree](http://go.microsoft.com/fwlink/?LinkId=132108) whereas the **FORMPRINTSETUP** structure must be freed with the [MAPIFreeBuffer](mapifreebuffer.md) function.</span></span> 
+<span data-ttu-id="8f523-130">**IMAPIViewContext**を実装するフォームの閲覧者は[MAPIAllocateBuffer](mapiallocatebuffer.md)、MAPI アロケーター関数を使用する**FORMPRINTSETUP**構造体を割り当てる必要がありますが、 **hDevMode**および**と**、個々 のメンバーを割り当てるWindows 関数[調べます](https://go.microsoft.com/fwlink/?LinkId=132110)。</span><span class="sxs-lookup"><span data-stu-id="8f523-130">Form viewers implementing **IMAPIViewContext** must allocate the **FORMPRINTSETUP** structure using the MAPI allocator function [MAPIAllocateBuffer](mapiallocatebuffer.md), but allocate the individual members, **hDevMode** and **hDevNames**, with the Windows function [GlobalAlloc](https://go.microsoft.com/fwlink/?LinkId=132110).</span></span> <span data-ttu-id="8f523-131">メモリのリリースは、同様に処理されます。</span><span class="sxs-lookup"><span data-stu-id="8f523-131">The release of memory is handled similarly.</span></span> <span data-ttu-id="8f523-132">[GlobalFree](https://go.microsoft.com/fwlink/?LinkId=132108) Windows 関数を使用して[MAPIFreeBuffer](mapifreebuffer.md)関数を使用して**FORMPRINTSETUP**構造体を解放する必要がありますが、 **hDevMode**および**と**のメンバーを解放する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8f523-132">The **hDevMode** and **hDevNames** members must be freed using the Windows function [GlobalFree](https://go.microsoft.com/fwlink/?LinkId=132108) whereas the **FORMPRINTSETUP** structure must be freed with the [MAPIFreeBuffer](mapifreebuffer.md) function.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="14011-133">関連項目</span><span class="sxs-lookup"><span data-stu-id="14011-133">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8f523-133">関連項目</span><span class="sxs-lookup"><span data-stu-id="8f523-133">See also</span></span>
 
 
 
-[<span data-ttu-id="14011-134">IMAPIViewContext::GetPrintSetup</span><span class="sxs-lookup"><span data-stu-id="14011-134">IMAPIViewContext::GetPrintSetup</span></span>](imapiviewcontext-getprintsetup.md)
+[<span data-ttu-id="8f523-134">IMAPIViewContext::GetPrintSetup</span><span class="sxs-lookup"><span data-stu-id="8f523-134">IMAPIViewContext::GetPrintSetup</span></span>](imapiviewcontext-getprintsetup.md)
   
-[<span data-ttu-id="14011-135">MAPIFreeBuffer</span><span class="sxs-lookup"><span data-stu-id="14011-135">MAPIFreeBuffer</span></span>](mapifreebuffer.md)
+[<span data-ttu-id="8f523-135">MAPIFreeBuffer</span><span class="sxs-lookup"><span data-stu-id="8f523-135">MAPIFreeBuffer</span></span>](mapifreebuffer.md)
   
-[<span data-ttu-id="14011-136">MAPIAllocateBuffer</span><span class="sxs-lookup"><span data-stu-id="14011-136">MAPIAllocateBuffer</span></span>](mapiallocatebuffer.md)
+[<span data-ttu-id="8f523-136">MAPIAllocateBuffer</span><span class="sxs-lookup"><span data-stu-id="8f523-136">MAPIAllocateBuffer</span></span>](mapiallocatebuffer.md)
 
 
-[<span data-ttu-id="14011-137">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="14011-137">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="8f523-137">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="8f523-137">MAPI Structures</span></span>](mapi-structures.md)
 

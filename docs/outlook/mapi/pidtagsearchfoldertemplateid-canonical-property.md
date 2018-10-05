@@ -12,65 +12,65 @@ api_type:
 - COM
 ms.assetid: 56288f55-b3ba-42df-9c90-f9b5857f19a1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7077210504614d7d95a7f545ea6f37ce02c92fdf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bee22a7a435b99f4b94473a3f6eb4b7f32517128
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563248"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387203"
 ---
-# <a name="pidtagsearchfoldertemplateid-canonical-property"></a><span data-ttu-id="ea1a2-103">PidTagSearchFolderTemplateId 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="ea1a2-103">PidTagSearchFolderTemplateId Canonical Property</span></span>
+# <a name="pidtagsearchfoldertemplateid-canonical-property"></a><span data-ttu-id="3aa75-103">PidTagSearchFolderTemplateId 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="3aa75-103">PidTagSearchFolderTemplateId Canonical Property</span></span>
 
   
   
-<span data-ttu-id="ea1a2-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ea1a2-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="3aa75-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="3aa75-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="ea1a2-105">検索に使用されているテンプレートの ID が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ea1a2-105">Contains the ID of the template that is being used for the search.</span></span>
+<span data-ttu-id="3aa75-105">検索に使用されているテンプレートの ID が含まれています。</span><span class="sxs-lookup"><span data-stu-id="3aa75-105">Contains the ID of the template that is being used for the search.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="ea1a2-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="ea1a2-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="ea1a2-107">PR_WB_SF_TEMPLATE_ID</span><span class="sxs-lookup"><span data-stu-id="ea1a2-107">PR_WB_SF_TEMPLATE_ID</span></span>  <br/> |
-|<span data-ttu-id="ea1a2-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="ea1a2-108">Identifier:</span></span>  <br/> |<span data-ttu-id="ea1a2-109">0x6841</span><span class="sxs-lookup"><span data-stu-id="ea1a2-109">0x6841</span></span>  <br/> |
-|<span data-ttu-id="ea1a2-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="ea1a2-110">Data type:</span></span>  <br/> |<span data-ttu-id="ea1a2-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="ea1a2-111">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="ea1a2-112">領域:</span><span class="sxs-lookup"><span data-stu-id="ea1a2-112">Area:</span></span>  <br/> |<span data-ttu-id="ea1a2-113">検索</span><span class="sxs-lookup"><span data-stu-id="ea1a2-113">Search</span></span>  <br/> |
+|<span data-ttu-id="3aa75-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="3aa75-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="3aa75-107">PR_WB_SF_TEMPLATE_ID</span><span class="sxs-lookup"><span data-stu-id="3aa75-107">PR_WB_SF_TEMPLATE_ID</span></span>  <br/> |
+|<span data-ttu-id="3aa75-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="3aa75-108">Identifier:</span></span>  <br/> |<span data-ttu-id="3aa75-109">0x6841</span><span class="sxs-lookup"><span data-stu-id="3aa75-109">0x6841</span></span>  <br/> |
+|<span data-ttu-id="3aa75-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="3aa75-110">Data type:</span></span>  <br/> |<span data-ttu-id="3aa75-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="3aa75-111">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="3aa75-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="3aa75-112">Area:</span></span>  <br/> |<span data-ttu-id="3aa75-113">検索</span><span class="sxs-lookup"><span data-stu-id="3aa75-113">Search</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="ea1a2-114">注釈</span><span class="sxs-lookup"><span data-stu-id="ea1a2-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3aa75-114">備考</span><span class="sxs-lookup"><span data-stu-id="3aa75-114">Remarks</span></span>
 
-<span data-ttu-id="ea1a2-115">検索フォルダーの条件は、テンプレートによって指定されます。</span><span class="sxs-lookup"><span data-stu-id="ea1a2-115">Search folder criteria is specified by a template.</span></span> <span data-ttu-id="ea1a2-116">検索フォルダーを定義するメッセージには、このプロパティは、対応するテンプレートを識別します。</span><span class="sxs-lookup"><span data-stu-id="ea1a2-116">This property on the message that defines the search folder identifies its corresponding template.</span></span> <span data-ttu-id="ea1a2-117">検索条件を定義するには、テンプレートも検索から除外するフォルダーを定義、検索から除外する項目を定義および**PR_WB_SF_STORAGE_TYPE** ([PidTagSearchFolderStorageType](pidtagsearchfolderstoragetype-canonical-property.md)) の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="ea1a2-117">In addition to defining search criteria, a template also defines folders to exclude from the search, defines items to exclude from the search, and specifies the value of **PR_WB_SF_STORAGE_TYPE** ([PidTagSearchFolderStorageType](pidtagsearchfolderstoragetype-canonical-property.md)).</span></span>
+<span data-ttu-id="3aa75-115">検索フォルダーの条件は、テンプレートによって指定されます。</span><span class="sxs-lookup"><span data-stu-id="3aa75-115">Search folder criteria is specified by a template.</span></span> <span data-ttu-id="3aa75-116">検索フォルダーを定義するメッセージには、このプロパティは、対応するテンプレートを識別します。</span><span class="sxs-lookup"><span data-stu-id="3aa75-116">This property on the message that defines the search folder identifies its corresponding template.</span></span> <span data-ttu-id="3aa75-117">検索条件を定義するには、テンプレートも検索から除外するフォルダーを定義、検索から除外する項目を定義および**PR_WB_SF_STORAGE_TYPE** ([PidTagSearchFolderStorageType](pidtagsearchfolderstoragetype-canonical-property.md)) の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="3aa75-117">In addition to defining search criteria, a template also defines folders to exclude from the search, defines items to exclude from the search, and specifies the value of **PR_WB_SF_STORAGE_TYPE** ([PidTagSearchFolderStorageType](pidtagsearchfolderstoragetype-canonical-property.md)).</span></span>
   
-<span data-ttu-id="ea1a2-118">検索フォルダーのテンプレートの詳細については、 [[MS OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ea1a2-118">For more information about Search Folder Templates see [[MS-OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx) .</span></span> 
+<span data-ttu-id="3aa75-118">検索フォルダーのテンプレートの詳細については、 [[MS OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3aa75-118">For more information about Search Folder Templates see [[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx) .</span></span> 
   
-## <a name="related-resources"></a><span data-ttu-id="ea1a2-119">関連リソース</span><span class="sxs-lookup"><span data-stu-id="ea1a2-119">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="3aa75-119">関連リソース</span><span class="sxs-lookup"><span data-stu-id="3aa75-119">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="ea1a2-120">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="ea1a2-120">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="3aa75-120">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="3aa75-120">Protocol specifications</span></span>
 
-<span data-ttu-id="ea1a2-121">[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="ea1a2-121">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="3aa75-121">[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="3aa75-121">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="ea1a2-122">関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="ea1a2-122">Provides references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="3aa75-122">関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="3aa75-122">Provides references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="ea1a2-123">[[MS OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="ea1a2-123">[[MS-OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="3aa75-123">[[MS OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="3aa75-123">[[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="ea1a2-124">プロパティや検索フォルダーの一覧の構成を操作するための動作を指定します。</span><span class="sxs-lookup"><span data-stu-id="ea1a2-124">Specifies the properties and operations for manipulating a search folder list configuration.</span></span>
+> <span data-ttu-id="3aa75-124">プロパティや検索フォルダーの一覧の構成を操作するための動作を指定します。</span><span class="sxs-lookup"><span data-stu-id="3aa75-124">Specifies the properties and operations for manipulating a search folder list configuration.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="ea1a2-125">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="ea1a2-125">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="3aa75-125">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="3aa75-125">Header files</span></span>
 
-<span data-ttu-id="ea1a2-126">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="ea1a2-126">Mapidefs.h</span></span>
+<span data-ttu-id="3aa75-126">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="3aa75-126">Mapidefs.h</span></span>
   
-> <span data-ttu-id="ea1a2-127">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="ea1a2-127">Provides data type definitions.</span></span>
+> <span data-ttu-id="3aa75-127">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="3aa75-127">Provides data type definitions.</span></span>
     
-<span data-ttu-id="ea1a2-128">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="ea1a2-128">Mapitags.h</span></span>
+<span data-ttu-id="3aa75-128">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="3aa75-128">Mapitags.h</span></span>
   
-> <span data-ttu-id="ea1a2-129">代替名として記載されているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ea1a2-129">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="3aa75-129">代替名として記載されているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="3aa75-129">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="ea1a2-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="ea1a2-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3aa75-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="3aa75-130">See also</span></span>
 
 
 
-[<span data-ttu-id="ea1a2-131">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="ea1a2-131">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="3aa75-131">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="3aa75-131">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="ea1a2-132">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="ea1a2-132">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="3aa75-132">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="3aa75-132">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="ea1a2-133">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="ea1a2-133">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="3aa75-133">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="3aa75-133">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="ea1a2-134">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="ea1a2-134">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="3aa75-134">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="3aa75-134">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

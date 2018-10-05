@@ -7,16 +7,16 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 9e36e0d9-a28b-5978-0e23-f76e1bf506b5
 description: このトピックでは、PidLidTimeZoneStruct のバイナリのプロパティに格納されている永続化された形式からの TZREG 構造体を読み取る方法を示します。
-ms.openlocfilehash: 4dd63e7f1539ab7496c45a80b5ec6a17683ffcb2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f59251ebc980ca10f4ddce76b34e700bc430540a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799320"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387399"
 ---
-# <a name="parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure"></a><span data-ttu-id="aa772-103">バイナリ プロパティからのストリームを解析し、TZREG 構造体を読み取る</span><span class="sxs-lookup"><span data-stu-id="aa772-103">Parse a stream from a binary property to read the TZREG structure</span></span>
+# <a name="parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure"></a><span data-ttu-id="6edc9-103">バイナリ プロパティからのストリームを解析し、TZREG 構造体を読み取る</span><span class="sxs-lookup"><span data-stu-id="6edc9-103">Parse a stream from a binary property to read the TZREG structure</span></span>
 
-<span data-ttu-id="aa772-104">このトピックでは、 [PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)のバイナリのプロパティに格納されている永続化された形式からの[TZREG](tzreg.md)構造体を読み取る方法を示します。</span><span class="sxs-lookup"><span data-stu-id="aa772-104">This topic shows how to read the [TZREG](tzreg.md) structure from the persisted format stored in the binary property [PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx).</span></span>
+<span data-ttu-id="6edc9-104">このトピックでは、 [PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)のバイナリのプロパティに格納されている永続化された形式からの[TZREG](tzreg.md)構造体を読み取る方法を示します。</span><span class="sxs-lookup"><span data-stu-id="6edc9-104">This topic shows how to read the [TZREG](tzreg.md) structure from the persisted format stored in the binary property [PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx).</span></span>
   
 ```cpp
 TZREG* BinToTZREG(ULONG cbReg, LPBYTE lpbReg)  
@@ -55,7 +55,7 @@ TZREG* BinToTZREG(ULONG cbReg, LPBYTE lpbReg)
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="aa772-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="aa772-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6edc9-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="6edc9-105">See also</span></span>
 
-- [<span data-ttu-id="aa772-106">予定からタイム ゾーンのプロパティを読み取る</span><span class="sxs-lookup"><span data-stu-id="aa772-106">Read time zone properties from an appointment</span></span>](how-to-read-time-zone-properties-from-an-appointment.md)
+- [<span data-ttu-id="6edc9-106">予定からタイム ゾーンのプロパティを読み取る</span><span class="sxs-lookup"><span data-stu-id="6edc9-106">Read time zone properties from an appointment</span></span>](how-to-read-time-zone-properties-from-an-appointment.md)
 

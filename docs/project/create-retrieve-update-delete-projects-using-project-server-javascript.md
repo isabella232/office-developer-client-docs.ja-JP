@@ -6,64 +6,64 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 6b690938-05bc-46a3-a40e-30f081403767
 description: 現在の ProjectContext のインスタンスを取得します。取得し、サーバー上の発行済みプロジェクトのコレクションを反復処理します。作成、取得、チェック アウト、および、プロジェクトのサーバーの JavaScript オブジェクト モデルを使用してプロジェクトを削除します。プロジェクトのプロパティを変更してください。
-ms.openlocfilehash: 966c1298d210cb608001e4ce2b390611a75bdb24
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 10dac7edfa3e84cebfd0585bc8c4bff1ea22ea44
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804545"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382912"
 ---
-# <a name="create-retrieve-update-and-delete-projects-using-project-server-javascript"></a><span data-ttu-id="91989-103">作成、取得、更新、およびプロジェクトのサーバーの JavaScript を使用してプロジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="91989-103">Create, retrieve, update, and delete projects using Project Server JavaScript</span></span>
+# <a name="create-retrieve-update-and-delete-projects-using-project-server-javascript"></a><span data-ttu-id="70c4c-103">作成、取得、更新、およびプロジェクトのサーバーの JavaScript を使用してプロジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-103">Create, retrieve, update, and delete projects using Project Server JavaScript</span></span>
 
-<span data-ttu-id="91989-104">この資料のシナリオは、現在の**ProjectContext**のインスタンスを取得する方法を表示します。取得し、サーバー上の発行済みプロジェクトのコレクションを反復処理します。作成、取得、チェック アウト、および、プロジェクトのサーバーの JavaScript オブジェクト モデルを使用してプロジェクトを削除します。プロジェクトのプロパティを変更してください。</span><span class="sxs-lookup"><span data-stu-id="91989-104">The scenarios in this article show how to get the current **ProjectContext** instance; retrieve and iterate through the collection of published projects on the server; create, retrieve, check out, and delete a project by using the Project Server JavaScript object model; and change a project's properties.</span></span> 
+<span data-ttu-id="70c4c-104">この資料のシナリオは、現在の**ProjectContext**のインスタンスを取得する方法を表示します。取得し、サーバー上の発行済みプロジェクトのコレクションを反復処理します。作成、取得、チェック アウト、および、プロジェクトのサーバーの JavaScript オブジェクト モデルを使用してプロジェクトを削除します。プロジェクトのプロパティを変更してください。</span><span class="sxs-lookup"><span data-stu-id="70c4c-104">The scenarios in this article show how to get the current **ProjectContext** instance; retrieve and iterate through the collection of published projects on the server; create, retrieve, check out, and delete a project by using the Project Server JavaScript object model; and change a project's properties.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="91989-105">これらのシナリオは SharePoint アプリケーション ページのマークアップでカスタム コードを定義しますが、ページの Visual Studio 2012 を作成する分離コード ファイルを使用しません。</span><span class="sxs-lookup"><span data-stu-id="91989-105">These scenarios define custom code in the markup of a SharePoint application page but do not use the code-behind file that Visual Studio 2012 creates for the page.</span></span> 
+> <span data-ttu-id="70c4c-105">これらのシナリオは SharePoint アプリケーション ページのマークアップでカスタム コードを定義しますが、ページの Visual Studio 2012 を作成する分離コード ファイルを使用しません。</span><span class="sxs-lookup"><span data-stu-id="70c4c-105">These scenarios define custom code in the markup of a SharePoint application page but do not use the code-behind file that Visual Studio 2012 creates for the page.</span></span> 
   
-## <a name="prerequisites-for-working-with-project-server-2013-projects-in-the-javascript-object-model"></a><span data-ttu-id="91989-106">JavaScript オブジェクト モデルでは、プロジェクトを Project Server 2013 を使用するための前提条件</span><span class="sxs-lookup"><span data-stu-id="91989-106">Prerequisites for working with Project Server 2013 projects in the JavaScript object model</span></span>
+## <a name="prerequisites-for-working-with-project-server-2013-projects-in-the-javascript-object-model"></a><span data-ttu-id="70c4c-106">JavaScript オブジェクト モデルでは、プロジェクトを Project Server 2013 を使用するための前提条件</span><span class="sxs-lookup"><span data-stu-id="70c4c-106">Prerequisites for working with Project Server 2013 projects in the JavaScript object model</span></span>
 
-<span data-ttu-id="91989-107">この記事で説明するシナリオを実行するには、次の製品をインストールおよび構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="91989-107">To perform the scenarios that are described in this article, you must install and configure the following products:</span></span>
+<span data-ttu-id="70c4c-107">この記事で説明するシナリオを実行するには、次の製品をインストールおよび構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="70c4c-107">To perform the scenarios that are described in this article, you must install and configure the following products:</span></span>
   
-- <span data-ttu-id="91989-108">SharePoint Server 2013</span><span class="sxs-lookup"><span data-stu-id="91989-108">SharePoint Server 2013</span></span>
-- <span data-ttu-id="91989-109">Project Server 2013</span><span class="sxs-lookup"><span data-stu-id="91989-109">Project Server 2013</span></span>
-- <span data-ttu-id="91989-110">Visual Studio 2012</span><span class="sxs-lookup"><span data-stu-id="91989-110">Visual Studio 2012</span></span>
-- <span data-ttu-id="91989-111">Office Developer Tools for Visual Studio 2012</span><span class="sxs-lookup"><span data-stu-id="91989-111">Office Developer Tools for Visual Studio 2012</span></span>
+- <span data-ttu-id="70c4c-108">SharePoint Server 2013</span><span class="sxs-lookup"><span data-stu-id="70c4c-108">SharePoint Server 2013</span></span>
+- <span data-ttu-id="70c4c-109">Project Server 2013</span><span class="sxs-lookup"><span data-stu-id="70c4c-109">Project Server 2013</span></span>
+- <span data-ttu-id="70c4c-110">Visual Studio 2012</span><span class="sxs-lookup"><span data-stu-id="70c4c-110">Visual Studio 2012</span></span>
+- <span data-ttu-id="70c4c-111">Office Developer Tools for Visual Studio 2012</span><span class="sxs-lookup"><span data-stu-id="70c4c-111">Office Developer Tools for Visual Studio 2012</span></span>
     
-<span data-ttu-id="91989-112">SharePoint Server 2013 に拡張機能を配置し、プロジェクトへの投稿のアクセス許可も必要です。</span><span class="sxs-lookup"><span data-stu-id="91989-112">You must also have permissions to deploy the extension to SharePoint Server 2013 and to contribute to projects.</span></span>
+<span data-ttu-id="70c4c-112">SharePoint Server 2013 に拡張機能を配置し、プロジェクトへの投稿のアクセス許可も必要です。</span><span class="sxs-lookup"><span data-stu-id="70c4c-112">You must also have permissions to deploy the extension to SharePoint Server 2013 and to contribute to projects.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="91989-113">次の手順では、Project Server 2013 を実行しているコンピューター上で開発することを前提としています。</span><span class="sxs-lookup"><span data-stu-id="91989-113">These instructions assume that you are developing on the computer that is running Project Server 2013.</span></span> 
+> <span data-ttu-id="70c4c-113">次の手順では、Project Server 2013 を実行しているコンピューター上で開発することを前提としています。</span><span class="sxs-lookup"><span data-stu-id="70c4c-113">These instructions assume that you are developing on the computer that is running Project Server 2013.</span></span> 
   
-## <a name="create-the-visual-studio-solution"></a><span data-ttu-id="91989-114">Visual Studio ソリューションを作成する</span><span class="sxs-lookup"><span data-stu-id="91989-114">Create the Visual Studio solution</span></span>
-<span data-ttu-id="91989-115"><a name="pj15_CRUDProjectsJSOM_Setup"> </a></span><span class="sxs-lookup"><span data-stu-id="91989-115"></span></span>
+## <a name="create-the-visual-studio-solution"></a><span data-ttu-id="70c4c-114">Visual Studio ソリューションを作成する</span><span class="sxs-lookup"><span data-stu-id="70c4c-114">Create the Visual Studio solution</span></span>
+<span data-ttu-id="70c4c-115"><a name="pj15_CRUDProjectsJSOM_Setup"> </a></span><span class="sxs-lookup"><span data-stu-id="70c4c-115"></span></span>
 
-<span data-ttu-id="91989-116">次の手順では、SharePoint のプロジェクトとアプリケーション ページに含まれている Visual Studio 2012 のソリューションを作成します。</span><span class="sxs-lookup"><span data-stu-id="91989-116">The following steps create a Visual Studio 2012 solution that contains a SharePoint project and an application page.</span></span> <span data-ttu-id="91989-117">ページには、プロジェクトを操作するためのロジックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="91989-117">The page contains the logic for working with projects.</span></span>
+<span data-ttu-id="70c4c-116">次の手順では、SharePoint のプロジェクトとアプリケーション ページに含まれている Visual Studio 2012 のソリューションを作成します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-116">The following steps create a Visual Studio 2012 solution that contains a SharePoint project and an application page.</span></span> <span data-ttu-id="70c4c-117">ページには、プロジェクトを操作するためのロジックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="70c4c-117">The page contains the logic for working with projects.</span></span>
   
-### <a name="to-create-the-sharepoint-project-in-visual-studio"></a><span data-ttu-id="91989-118">Visual Studio で SharePoint を作成するには</span><span class="sxs-lookup"><span data-stu-id="91989-118">To create the SharePoint project in Visual Studio</span></span>
+### <a name="to-create-the-sharepoint-project-in-visual-studio"></a><span data-ttu-id="70c4c-118">Visual Studio で SharePoint を作成するには</span><span class="sxs-lookup"><span data-stu-id="70c4c-118">To create the SharePoint project in Visual Studio</span></span>
 
-1. <span data-ttu-id="91989-119">Project Server 2013 を実行しているコンピューターに管理者として Visual Studio 2012 を実行します。</span><span class="sxs-lookup"><span data-stu-id="91989-119">On the computer that is running Project Server 2013, run Visual Studio 2012 as an administrator.</span></span>
+1. <span data-ttu-id="70c4c-119">Project Server 2013 を実行しているコンピューターに管理者として Visual Studio 2012 を実行します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-119">On the computer that is running Project Server 2013, run Visual Studio 2012 as an administrator.</span></span>
     
-2. <span data-ttu-id="91989-120">メニュー バーで、[ **ファイル**]、[ **新規作成**]、[ **プロジェクト**] の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="91989-120">On the menu bar, choose **File**, **New**, **Project**.</span></span>
+2. <span data-ttu-id="70c4c-120">メニュー バーで、[ **ファイル**]、[ **新規作成**]、[ **プロジェクト**] の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-120">On the menu bar, choose **File**, **New**, **Project**.</span></span>
     
-3. <span data-ttu-id="91989-121">[ **新しいプロジェクト**] ダイアログ ボックスで、上部のドロップダウン リストから [ **.NET Framework 4.5**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="91989-121">In the **New Project** dialog box, choose **.NET Framework 4.5** from the drop-down list at the top of the dialog box.</span></span> 
+3. <span data-ttu-id="70c4c-121">[ **新しいプロジェクト**] ダイアログ ボックスで、上部のドロップダウン リストから [ **.NET Framework 4.5**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-121">In the **New Project** dialog box, choose **.NET Framework 4.5** from the drop-down list at the top of the dialog box.</span></span> 
     
-4. <span data-ttu-id="91989-122">[**Office/SharePoint**] テンプレート カテゴリで、[**SharePoint ソリューション**] を選択してから、[**SharePoint 2013 プロジェクト**] テンプレートを選択します。</span><span class="sxs-lookup"><span data-stu-id="91989-122">In the **Office/SharePoint** template category, choose **SharePoint Solutions**, and then choose the **SharePoint 2013 Project** template.</span></span> 
+4. <span data-ttu-id="70c4c-122">[**Office/SharePoint**] テンプレート カテゴリで、[**SharePoint ソリューション**] を選択してから、[**SharePoint 2013 プロジェクト**] テンプレートを選択します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-122">In the **Office/SharePoint** template category, choose **SharePoint Solutions**, and then choose the **SharePoint 2013 Project** template.</span></span> 
     
-5. <span data-ttu-id="91989-123">ProjectsJSOM、プロジェクトの名前し、 **[OK** ] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="91989-123">Name the project ProjectsJSOM, and then choose the **OK** button.</span></span> 
+5. <span data-ttu-id="70c4c-123">ProjectsJSOM、プロジェクトの名前し、 **[OK** ] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="70c4c-123">Name the project ProjectsJSOM, and then choose the **OK** button.</span></span> 
     
-6. <span data-ttu-id="91989-124">[ **SharePoint カスタマイズ ウィザード**] ダイアログ ボックスで、[ **ファーム ソリューションとして配置する**] を選択して、[ **完了**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="91989-124">In the **SharePoint Customization Wizard** dialog box, choose **Deploy as a farm solution**, and then choose the **Finish** button.</span></span> 
+6. <span data-ttu-id="70c4c-124">[ **SharePoint カスタマイズ ウィザード**] ダイアログ ボックスで、[ **ファーム ソリューションとして配置する**] を選択して、[ **完了**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="70c4c-124">In the **SharePoint Customization Wizard** dialog box, choose **Deploy as a farm solution**, and then choose the **Finish** button.</span></span> 
     
-7. <span data-ttu-id="91989-125">Project Web App インスタンスの URL と一致する**ProjectsJSOM**プロジェクトの**サイトの URL**プロパティの値を編集する (たとえば、 `http://ServerName/PWA`)。</span><span class="sxs-lookup"><span data-stu-id="91989-125">Edit the value of the **Site URL** property for the **ProjectsJSOM** project to match the URL of the Project Web App instance (for example,  `http://ServerName/PWA`).</span></span>
+7. <span data-ttu-id="70c4c-125">Project Web App インスタンスの URL と一致する**ProjectsJSOM**プロジェクトの**サイトの URL**プロパティの値を編集する (たとえば、 `https://ServerName/PWA`)。</span><span class="sxs-lookup"><span data-stu-id="70c4c-125">Edit the value of the **Site URL** property for the **ProjectsJSOM** project to match the URL of the Project Web App instance (for example,  `https://ServerName/PWA`).</span></span>
     
-### <a name="to-create-the-application-page-in-visual-studio"></a><span data-ttu-id="91989-126">Visual Studio でアプリケーション ページを作成するには</span><span class="sxs-lookup"><span data-stu-id="91989-126">To create the application page in Visual Studio</span></span>
+### <a name="to-create-the-application-page-in-visual-studio"></a><span data-ttu-id="70c4c-126">Visual Studio でアプリケーション ページを作成するには</span><span class="sxs-lookup"><span data-stu-id="70c4c-126">To create the application page in Visual Studio</span></span>
 
-1. <span data-ttu-id="91989-127">**ソリューション エクスプローラー**で、**ProjectsJSOM** プロジェクトのショートカット メニューを開き、SharePoint のマップされた "Layouts" フォルダーを追加します。</span><span class="sxs-lookup"><span data-stu-id="91989-127">In **Solution Explorer**, open the shortcut menu for the **ProjectsJSOM** project, and then add a SharePoint "Layouts" mapped folder.</span></span> 
+1. <span data-ttu-id="70c4c-127">**ソリューション エクスプローラー**で、**ProjectsJSOM** プロジェクトのショートカット メニューを開き、SharePoint のマップされた "Layouts" フォルダーを追加します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-127">In **Solution Explorer**, open the shortcut menu for the **ProjectsJSOM** project, and then add a SharePoint "Layouts" mapped folder.</span></span> 
     
-2. <span data-ttu-id="91989-128">**レイアウト**フォルダーに**ProjectsJSOM**フォルダーのショートカット メニューを開くし、ProjectsList.aspx をという名前の新しい SharePoint アプリケーション ページを追加します。</span><span class="sxs-lookup"><span data-stu-id="91989-128">In the **Layouts** folder, open the shortcut menu for the **ProjectsJSOM** folder, and then add a new SharePoint application page named ProjectsList.aspx.</span></span>
+2. <span data-ttu-id="70c4c-128">**レイアウト**フォルダーに**ProjectsJSOM**フォルダーのショートカット メニューを開くし、ProjectsList.aspx をという名前の新しい SharePoint アプリケーション ページを追加します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-128">In the **Layouts** folder, open the shortcut menu for the **ProjectsJSOM** folder, and then add a new SharePoint application page named ProjectsList.aspx.</span></span>
     
-3. <span data-ttu-id="91989-129">**ProjectsList.aspx** ページのショートカット メニューを開き、[**スタートアップ アイテムとして設定**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="91989-129">Open the shortcut menu for the **ProjectsList.aspx** page and choose **Set as Startup Item**.</span></span>
+3. <span data-ttu-id="70c4c-129">**ProjectsList.aspx** ページのショートカット メニューを開き、[**スタートアップ アイテムとして設定**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-129">Open the shortcut menu for the **ProjectsList.aspx** page and choose **Set as Startup Item**.</span></span>
     
-4. <span data-ttu-id="91989-130">**ProjectsList.aspx** ページのマークアップで、"Main" **asp:Content** タグ内のユーザー インターフェイス コントロールを次のように定義します。</span><span class="sxs-lookup"><span data-stu-id="91989-130">In the markup for the **ProjectsList.aspx** page, define user interface controls inside the "Main" **asp:Content** tags, as follows.</span></span> 
+4. <span data-ttu-id="70c4c-130">**ProjectsList.aspx** ページのマークアップで、"Main" **asp:Content** タグ内のユーザー インターフェイス コントロールを次のように定義します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-130">In the markup for the **ProjectsList.aspx** page, define user interface controls inside the "Main" **asp:Content** tags, as follows.</span></span> 
     
    ```HTML
     <table width="100%" id="tblProjects">
@@ -80,9 +80,9 @@ ms.locfileid: "19804545"
    ```
 
    > [!NOTE]
-   > <span data-ttu-id="91989-p102">これらのコントロールは、すべてのシナリオで使用されるとは限りません。たとえば、"プロジェクトの作成" シナリオでは **textarea** および **button**コントロールを使用しません。</span><span class="sxs-lookup"><span data-stu-id="91989-p102">These controls may not be used in every scenario. For example, the "Create projects" scenario does not use the **textarea** and **button** controls.</span></span> 
+   > <span data-ttu-id="70c4c-p102">これらのコントロールは、すべてのシナリオで使用されるとは限りません。たとえば、"プロジェクトの作成" シナリオでは **textarea** および **button**コントロールを使用しません。</span><span class="sxs-lookup"><span data-stu-id="70c4c-p102">These controls may not be used in every scenario. For example, the "Create projects" scenario does not use the **textarea** and **button** controls.</span></span> 
   
-5. <span data-ttu-id="91989-133">**span** タグを閉じた後で、**SharePoint:ScriptLink** タグ、**SharePoint:FormDigest** タグ、および **script** タグを次のように追加します。</span><span class="sxs-lookup"><span data-stu-id="91989-133">After the closing **span** tag, add a **SharePoint:ScriptLink** tag, a **SharePoint:FormDigest** tag, and **script** tags, as follows.</span></span> 
+5. <span data-ttu-id="70c4c-133">**span** タグを閉じた後で、**SharePoint:ScriptLink** タグ、**SharePoint:FormDigest** タグ、および **script** タグを次のように追加します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-133">After the closing **span** tag, add a **SharePoint:ScriptLink** tag, a **SharePoint:FormDigest** tag, and **script** tags, as follows.</span></span> 
     
    ```HTML
     <SharePoint:ScriptLink id="ScriptLink" name="PS.js" runat="server" ondemand="false" localizable="false" loadafterui="true" />
@@ -92,34 +92,34 @@ ms.locfileid: "19804545"
     </script>
    ```
 
-   <span data-ttu-id="91989-134">**SharePoint:ScriptLink**タグは、Project Server 2013 の JavaScript オブジェクト モデルを定義する PS.js ファイルを参照します。</span><span class="sxs-lookup"><span data-stu-id="91989-134">The **SharePoint:ScriptLink** tag references the PS.js file, which defines the JavaScript object model for Project Server 2013.</span></span> <span data-ttu-id="91989-135">**SharePoint:FormDigest**タグは、サーバーのコンテンツを更新する操作が必要なときに、セキュリティ検証のメッセージ ダイジェストを生成します。</span><span class="sxs-lookup"><span data-stu-id="91989-135">The **SharePoint:FormDigest** tag generates a message digest for security validation when required by operations that update server content.</span></span> 
+   <span data-ttu-id="70c4c-134">**SharePoint:ScriptLink**タグは、Project Server 2013 の JavaScript オブジェクト モデルを定義する PS.js ファイルを参照します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-134">The **SharePoint:ScriptLink** tag references the PS.js file, which defines the JavaScript object model for Project Server 2013.</span></span> <span data-ttu-id="70c4c-135">**SharePoint:FormDigest**タグは、サーバーのコンテンツを更新する操作が必要なときに、セキュリティ検証のメッセージ ダイジェストを生成します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-135">The **SharePoint:FormDigest** tag generates a message digest for security validation when required by operations that update server content.</span></span> 
     
-6. <span data-ttu-id="91989-136">プレースホルダー コメントを、次のいずれかの手順のコードで置換します。</span><span class="sxs-lookup"><span data-stu-id="91989-136">Replace the placeholder comment with the code from one of the following procedures:</span></span>
+6. <span data-ttu-id="70c4c-136">プレースホルダー コメントを、次のいずれかの手順のコードで置換します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-136">Replace the placeholder comment with the code from one of the following procedures:</span></span>
     
-   - [<span data-ttu-id="91989-137">JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="91989-137">Create Project Server 2013 projects by using the JavaScript object model</span></span>](#pj15_CRUDProjectsJSOM_CreateProjects)
+   - [<span data-ttu-id="70c4c-137">JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-137">Create Project Server 2013 projects by using the JavaScript object model</span></span>](#pj15_CRUDProjectsJSOM_CreateProjects)
     
-   - [<span data-ttu-id="91989-138">JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="91989-138">Update Project Server 2013 projects by using the JavaScript object model</span></span>](#pj15_CRUDProjectsJSOM_UpdateProjects)
+   - [<span data-ttu-id="70c4c-138">JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-138">Update Project Server 2013 projects by using the JavaScript object model</span></span>](#pj15_CRUDProjectsJSOM_UpdateProjects)
     
-   - [<span data-ttu-id="91989-139">JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="91989-139">Delete Project Server 2013 projects by using the JavaScript object model</span></span>](#pj15_CRUDProjectsJSOM_DeleteProjects)
+   - [<span data-ttu-id="70c4c-139">JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-139">Delete Project Server 2013 projects by using the JavaScript object model</span></span>](#pj15_CRUDProjectsJSOM_DeleteProjects)
     
-7. <span data-ttu-id="91989-p104">アプリケーション ページをテストするには、メニュー バーで、[**デバッグ**]、[**デバッグ開始**] の順に選択します。web.config ファイルの変更を確認するプロンプトが表示されたら、[**OK**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="91989-p104">To test the application page, on the menu bar, choose **Debug**, **Start Debugging**. If you are prompted to modify the web.config file, choose **OK**.</span></span>
+7. <span data-ttu-id="70c4c-p104">アプリケーション ページをテストするには、メニュー バーで、[**デバッグ**]、[**デバッグ開始**] の順に選択します。web.config ファイルの変更を確認するプロンプトが表示されたら、[**OK**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="70c4c-p104">To test the application page, on the menu bar, choose **Debug**, **Start Debugging**. If you are prompted to modify the web.config file, choose **OK**.</span></span>
     
-## <a name="create-project-server-2013-projects-by-using-the-javascript-object-model"></a><span data-ttu-id="91989-142">JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="91989-142">Create Project Server 2013 projects by using the JavaScript object model</span></span>
-<span data-ttu-id="91989-143"><a name="pj15_CRUDProjectsJSOM_CreateProjects"> </a></span><span class="sxs-lookup"><span data-stu-id="91989-143"></span></span>
+## <a name="create-project-server-2013-projects-by-using-the-javascript-object-model"></a><span data-ttu-id="70c4c-142">JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-142">Create Project Server 2013 projects by using the JavaScript object model</span></span>
+<span data-ttu-id="70c4c-143"><a name="pj15_CRUDProjectsJSOM_CreateProjects"> </a></span><span class="sxs-lookup"><span data-stu-id="70c4c-143"></span></span>
 
-<span data-ttu-id="91989-144">このセクションの手順では、JavaScript オブジェクト モデルを使用してプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="91989-144">The procedure in this section creates projects by using the JavaScript object model.</span></span> <span data-ttu-id="91989-145">プロシージャには、次の大まかな手順が含まれています。</span><span class="sxs-lookup"><span data-stu-id="91989-145">The procedure includes the following high-level steps:</span></span>
+<span data-ttu-id="70c4c-144">このセクションの手順では、JavaScript オブジェクト モデルを使用してプロジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-144">The procedure in this section creates projects by using the JavaScript object model.</span></span> <span data-ttu-id="70c4c-145">プロシージャには、次の大まかな手順が含まれています。</span><span class="sxs-lookup"><span data-stu-id="70c4c-145">The procedure includes the following high-level steps:</span></span>
   
-1. <span data-ttu-id="91989-146">現在の **ProjectContext** インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="91989-146">Get the current **ProjectContext** instance.</span></span> 
+1. <span data-ttu-id="70c4c-146">現在の **ProjectContext** インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-146">Get the current **ProjectContext** instance.</span></span> 
     
-2. <span data-ttu-id="91989-p106">**ProjectCreationInformation** オブジェクトを作成して、プロジェクトの初期プロパティを指定します。**ProjectCreationInformation.set_name** 関数を使用して、必要な **name** プロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="91989-p106">Create a **ProjectCreationInformation** object to specify initial properties for your project. Specify the required **name** property by using the **ProjectCreationInformation.set_name** function.</span></span> 
+2. <span data-ttu-id="70c4c-p106">**ProjectCreationInformation** オブジェクトを作成して、プロジェクトの初期プロパティを指定します。**ProjectCreationInformation.set_name** 関数を使用して、必要な **name** プロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-p106">Create a **ProjectCreationInformation** object to specify initial properties for your project. Specify the required **name** property by using the **ProjectCreationInformation.set_name** function.</span></span> 
     
-3. <span data-ttu-id="91989-p107">**ProjectContext.get_projects** 関数を使用して、発行済みのプロジェクトをサーバーから取得します。**get_projects** 関数は **ProjectCollection** オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="91989-p107">Retrieve the published projects from the server by using the **ProjectContext.get_projects** function. The **get_projects** function returns a **ProjectCollection** object.</span></span> 
+3. <span data-ttu-id="70c4c-p107">**ProjectContext.get_projects** 関数を使用して、発行済みのプロジェクトをサーバーから取得します。**get_projects** 関数は **ProjectCollection** オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-p107">Retrieve the published projects from the server by using the **ProjectContext.get_projects** function. The **get_projects** function returns a **ProjectCollection** object.</span></span> 
     
-4. <span data-ttu-id="91989-151">**ProjectCollection.add** 関数を使用し、**ProjectCreationInformation** オブジェクトを渡して、コレクションに新しいプロジェクトを追加します。</span><span class="sxs-lookup"><span data-stu-id="91989-151">Add the new project to the collection by using the **ProjectCollection.add** function and passing in the **ProjectCreationInformation** object.</span></span> 
+4. <span data-ttu-id="70c4c-151">**ProjectCollection.add** 関数を使用し、**ProjectCreationInformation** オブジェクトを渡して、コレクションに新しいプロジェクトを追加します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-151">Add the new project to the collection by using the **ProjectCollection.add** function and passing in the **ProjectCreationInformation** object.</span></span> 
     
-5. <span data-ttu-id="91989-p108">**ProjectCollection.update** 関数および **ProjectContext.waitForQueueAsync** 関数を使用してコレクションを更新します。**update** 関数は、**waitForQueueAsync** に渡す **QueueJob** オブジェクトを返します。この呼び出しは、プロジェクトも発行します。</span><span class="sxs-lookup"><span data-stu-id="91989-p108">Update the collection by using the **ProjectCollection.update** function and the **ProjectContext.waitForQueueAsync** function. The **update** function returns a **QueueJob** object that you pass to **waitForQueueAsync**. This call also publishes the project.</span></span>
+5. <span data-ttu-id="70c4c-p108">**ProjectCollection.update** 関数および **ProjectContext.waitForQueueAsync** 関数を使用してコレクションを更新します。**update** 関数は、**waitForQueueAsync** に渡す **QueueJob** オブジェクトを返します。この呼び出しは、プロジェクトも発行します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-p108">Update the collection by using the **ProjectCollection.update** function and the **ProjectContext.waitForQueueAsync** function. The **update** function returns a **QueueJob** object that you pass to **waitForQueueAsync**. This call also publishes the project.</span></span>
     
-<span data-ttu-id="91989-155">「**Visual Studio でアプリケーション ページを作成するには**」の手順で追加した **script** タグの間に、次に示すコードを貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="91989-155">Paste the following code between the **script** tags that you added in the **To create the application page in Visual Studio** procedure.</span></span> 
+<span data-ttu-id="70c4c-155">「**Visual Studio でアプリケーション ページを作成するには**」の手順で追加した **script** タグの間に、次に示すコードを貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="70c4c-155">Paste the following code between the **script** tags that you added in the **To create the application page in Visual Studio** procedure.</span></span> 
   
 ```js
     // Declare a global variable to store the project collection.
@@ -187,26 +187,26 @@ ms.locfileid: "19804545"
     }
 ```
 
-## <a name="update-project-server-2013-projects-by-using-the-javascript-object-model"></a><span data-ttu-id="91989-156">JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="91989-156">Update Project Server 2013 projects by using the JavaScript object model</span></span>
-<span data-ttu-id="91989-157"><a name="pj15_CRUDProjectsJSOM_UpdateProjects"> </a></span><span class="sxs-lookup"><span data-stu-id="91989-157"></span></span>
+## <a name="update-project-server-2013-projects-by-using-the-javascript-object-model"></a><span data-ttu-id="70c4c-156">JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-156">Update Project Server 2013 projects by using the JavaScript object model</span></span>
+<span data-ttu-id="70c4c-157"><a name="pj15_CRUDProjectsJSOM_UpdateProjects"> </a></span><span class="sxs-lookup"><span data-stu-id="70c4c-157"></span></span>
 
-<span data-ttu-id="91989-158">このセクションの手順では、JavaScript オブジェクト モデルを使用して、プロジェクトの**開始日**のプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="91989-158">The procedure in this section updates the **startDate** property of a project by using the JavaScript object model.</span></span> <span data-ttu-id="91989-159">プロシージャには、次の大まかな手順が含まれています。</span><span class="sxs-lookup"><span data-stu-id="91989-159">The procedure includes the following high-level steps:</span></span> 
+<span data-ttu-id="70c4c-158">このセクションの手順では、JavaScript オブジェクト モデルを使用して、プロジェクトの**開始日**のプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-158">The procedure in this section updates the **startDate** property of a project by using the JavaScript object model.</span></span> <span data-ttu-id="70c4c-159">プロシージャには、次の大まかな手順が含まれています。</span><span class="sxs-lookup"><span data-stu-id="70c4c-159">The procedure includes the following high-level steps:</span></span> 
   
-1. <span data-ttu-id="91989-160">現在の **ProjectContext** インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="91989-160">Get the current **ProjectContext** instance.</span></span> 
+1. <span data-ttu-id="70c4c-160">現在の **ProjectContext** インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-160">Get the current **ProjectContext** instance.</span></span> 
     
-2. <span data-ttu-id="91989-p110">**ProjectContext.get_projects** 関数を使用して、発行済みのプロジェクトをサーバーから取得します。**get_projects** 関数は **ProjectCollection** オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="91989-p110">Retrieve the published projects from the server by using the **ProjectContext.get_projects** function. The **get_projects** function returns a **ProjectCollection** object.</span></span> 
+2. <span data-ttu-id="70c4c-p110">**ProjectContext.get_projects** 関数を使用して、発行済みのプロジェクトをサーバーから取得します。**get_projects** 関数は **ProjectCollection** オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-p110">Retrieve the published projects from the server by using the **ProjectContext.get_projects** function. The **get_projects** function returns a **ProjectCollection** object.</span></span> 
     
-3. <span data-ttu-id="91989-163">**ProjectContext.load** 関数と **ProjectContext.executeQueryAsync** 関数を使用して、サーバーで要求を実行します。</span><span class="sxs-lookup"><span data-stu-id="91989-163">Run the request on the server by using the **ProjectContext.load** function and the **ProjectContext.executeQueryAsync** function.</span></span> 
+3. <span data-ttu-id="70c4c-163">**ProjectContext.load** 関数と **ProjectContext.executeQueryAsync** 関数を使用して、サーバーで要求を実行します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-163">Run the request on the server by using the **ProjectContext.load** function and the **ProjectContext.executeQueryAsync** function.</span></span> 
     
-4. <span data-ttu-id="91989-164">**ProjectContext.getById** 関数を使用して、**PublishedProject** オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="91989-164">Retrieve a **PublishedProject** object by using the **ProjectContext.getById** function.</span></span> 
+4. <span data-ttu-id="70c4c-164">**ProjectContext.getById** 関数を使用して、**PublishedProject** オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-164">Retrieve a **PublishedProject** object by using the **ProjectContext.getById** function.</span></span> 
     
-5. <span data-ttu-id="91989-p111">**Project.checkOut** 関数を使用してターゲット プロジェクトをチェックアウトします。**checkOut** 関数は、発行されたプロジェクトのドラフト バージョンを返します。</span><span class="sxs-lookup"><span data-stu-id="91989-p111">Check out the target project by using the **Project.checkOut** function. The **checkOut** function returns the draft version of the published project.</span></span> 
+5. <span data-ttu-id="70c4c-p111">**Project.checkOut** 関数を使用してターゲット プロジェクトをチェックアウトします。**checkOut** 関数は、発行されたプロジェクトのドラフト バージョンを返します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-p111">Check out the target project by using the **Project.checkOut** function. The **checkOut** function returns the draft version of the published project.</span></span> 
     
-6. <span data-ttu-id="91989-167">**DraftProject.set_startDate** 関数を使用して、プロジェクトの開始日を変更します。</span><span class="sxs-lookup"><span data-stu-id="91989-167">Change the project's start date by using the **DraftProject.set_startDate** function.</span></span> 
+6. <span data-ttu-id="70c4c-167">**DraftProject.set_startDate** 関数を使用して、プロジェクトの開始日を変更します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-167">Change the project's start date by using the **DraftProject.set_startDate** function.</span></span> 
     
-7. <span data-ttu-id="91989-p112">**DraftProject.publish** 関数と **ProjectContext.waitForQueueAsync** 関数を使用してプロジェクトを発行します。**publish** 関数は、**waitForQueueAsync** に渡す **QueueJob** オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="91989-p112">Publish the project by using the **DraftProject.publish** function and the **ProjectContext.waitForQueueAsync** function. The **publish** function returns a **QueueJob** object that you pass to **waitForQueueAsync**.</span></span>
+7. <span data-ttu-id="70c4c-p112">**DraftProject.publish** 関数と **ProjectContext.waitForQueueAsync** 関数を使用してプロジェクトを発行します。**publish** 関数は、**waitForQueueAsync** に渡す **QueueJob** オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-p112">Publish the project by using the **DraftProject.publish** function and the **ProjectContext.waitForQueueAsync** function. The **publish** function returns a **QueueJob** object that you pass to **waitForQueueAsync**.</span></span>
     
-<span data-ttu-id="91989-170">「**Visual Studio でアプリケーション ページを作成するには**」の手順で追加した **script** タグの間に、次に示すコードを貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="91989-170">Paste the following code between the **script** tags that you added in the **To create the application page in Visual Studio** procedure.</span></span> 
+<span data-ttu-id="70c4c-170">「**Visual Studio でアプリケーション ページを作成するには**」の手順で追加した **script** タグの間に、次に示すコードを貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="70c4c-170">Paste the following code between the **script** tags that you added in the **To create the application page in Visual Studio** procedure.</span></span> 
   
 ```js
     // Declare global variables.
@@ -270,24 +270,24 @@ ms.locfileid: "19804545"
     }
 ```
 
-## <a name="delete-project-server-2013-projects-by-using-the-javascript-object-model"></a><span data-ttu-id="91989-171">JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="91989-171">Delete Project Server 2013 projects by using the JavaScript object model</span></span>
-<span data-ttu-id="91989-172"><a name="pj15_CRUDProjectsJSOM_DeleteProjects"> </a></span><span class="sxs-lookup"><span data-stu-id="91989-172"></span></span>
+## <a name="delete-project-server-2013-projects-by-using-the-javascript-object-model"></a><span data-ttu-id="70c4c-171">JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-171">Delete Project Server 2013 projects by using the JavaScript object model</span></span>
+<span data-ttu-id="70c4c-172"><a name="pj15_CRUDProjectsJSOM_DeleteProjects"> </a></span><span class="sxs-lookup"><span data-stu-id="70c4c-172"></span></span>
 
-<span data-ttu-id="91989-173">このセクションの手順では、JavaScript オブジェクト モデルを使用してプロジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="91989-173">The procedure in this section deletes a project by using the JavaScript object model.</span></span> <span data-ttu-id="91989-174">プロシージャには、次の大まかな手順が含まれています。</span><span class="sxs-lookup"><span data-stu-id="91989-174">The procedure includes the following high-level steps:</span></span>
+<span data-ttu-id="70c4c-173">このセクションの手順では、JavaScript オブジェクト モデルを使用してプロジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-173">The procedure in this section deletes a project by using the JavaScript object model.</span></span> <span data-ttu-id="70c4c-174">プロシージャには、次の大まかな手順が含まれています。</span><span class="sxs-lookup"><span data-stu-id="70c4c-174">The procedure includes the following high-level steps:</span></span>
   
-1. <span data-ttu-id="91989-175">現在の **ProjectContext** インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="91989-175">Get the current **ProjectContext** instance.</span></span> 
+1. <span data-ttu-id="70c4c-175">現在の **ProjectContext** インスタンスを取得します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-175">Get the current **ProjectContext** instance.</span></span> 
     
-2. <span data-ttu-id="91989-p114">**ProjectContext.get_projects** 関数を使用して、発行済みのプロジェクトをサーバーから取得します。**get_projects** 関数は **ProjectCollection** オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="91989-p114">Retrieve the published projects from the server by using the **ProjectContext.get_projects** function. The **get_projects** function returns a **ProjectCollection** object.</span></span> 
+2. <span data-ttu-id="70c4c-p114">**ProjectContext.get_projects** 関数を使用して、発行済みのプロジェクトをサーバーから取得します。**get_projects** 関数は **ProjectCollection** オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-p114">Retrieve the published projects from the server by using the **ProjectContext.get_projects** function. The **get_projects** function returns a **ProjectCollection** object.</span></span> 
     
-3. <span data-ttu-id="91989-178">**ProjectContext.load** 関数と **ProjectContext.executeQueryAsync** 関数を使用して、サーバーで要求を実行します。</span><span class="sxs-lookup"><span data-stu-id="91989-178">Run the request on the server by using the **ProjectContext.load** function and the **ProjectContext.executeQueryAsync** function.</span></span> 
+3. <span data-ttu-id="70c4c-178">**ProjectContext.load** 関数と **ProjectContext.executeQueryAsync** 関数を使用して、サーバーで要求を実行します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-178">Run the request on the server by using the **ProjectContext.load** function and the **ProjectContext.executeQueryAsync** function.</span></span> 
     
-4. <span data-ttu-id="91989-179">**ProjectCollection.getById** 関数を使用して、**PublishedProject** オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="91989-179">Retrieve a **PublishedProject** object by using the **ProjectCollection.getById** function.</span></span> 
+4. <span data-ttu-id="70c4c-179">**ProjectCollection.getById** 関数を使用して、**PublishedProject** オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-179">Retrieve a **PublishedProject** object by using the **ProjectCollection.getById** function.</span></span> 
     
-5. <span data-ttu-id="91989-180">**ProjectCollection.remove** 関数に渡すことでプロジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="91989-180">Delete the project by passing it to the **ProjectCollection.remove** function.</span></span> 
+5. <span data-ttu-id="70c4c-180">**ProjectCollection.remove** 関数に渡すことでプロジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-180">Delete the project by passing it to the **ProjectCollection.remove** function.</span></span> 
     
-6. <span data-ttu-id="91989-p115">**ProjectCollection.update** 関数と **ProjectContext.waitForQueueAsync** 関数を使用してコレクションを更新します。**update** 関数は、**waitForQueueAsync** に渡す **QueueJob** オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="91989-p115">Update the collection by using the **ProjectCollection.update** function and the **ProjectContext.waitForQueueAsync** function. The **update** function returns a **QueueJob** object that you pass to **waitForQueueAsync**.</span></span>
+6. <span data-ttu-id="70c4c-p115">**ProjectCollection.update** 関数と **ProjectContext.waitForQueueAsync** 関数を使用してコレクションを更新します。**update** 関数は、**waitForQueueAsync** に渡す **QueueJob** オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="70c4c-p115">Update the collection by using the **ProjectCollection.update** function and the **ProjectContext.waitForQueueAsync** function. The **update** function returns a **QueueJob** object that you pass to **waitForQueueAsync**.</span></span>
     
-<span data-ttu-id="91989-183">「**Visual Studio でアプリケーション ページを作成するには**」の手順で追加した **script** タグの間に、次に示すコードを貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="91989-183">Paste the following code between the **script** tags that you added in the **To create the application page in Visual Studio** procedure.</span></span> 
+<span data-ttu-id="70c4c-183">「**Visual Studio でアプリケーション ページを作成するには**」の手順で追加した **script** タグの間に、次に示すコードを貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="70c4c-183">Paste the following code between the **script** tags that you added in the **To create the application page in Visual Studio** procedure.</span></span> 
   
 ```js
     // Declare global variables.
@@ -347,11 +347,11 @@ ms.locfileid: "19804545"
     }
 ```
 
-<span data-ttu-id="91989-184"><a name="pj15_CRUDProjectsJSOM_AR"> </a></span><span class="sxs-lookup"><span data-stu-id="91989-184"></span></span>
+<span data-ttu-id="70c4c-184"><a name="pj15_CRUDProjectsJSOM_AR"> </a></span><span class="sxs-lookup"><span data-stu-id="70c4c-184"></span></span>
 
-## <a name="see-also"></a><span data-ttu-id="91989-185">関連項目</span><span class="sxs-lookup"><span data-stu-id="91989-185">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="70c4c-185">関連項目</span><span class="sxs-lookup"><span data-stu-id="70c4c-185">See also</span></span>
 
-- [<span data-ttu-id="91989-186">Project のプログラミング タスク</span><span class="sxs-lookup"><span data-stu-id="91989-186">Project programming tasks</span></span>](project-programming-tasks.md)
-- [<span data-ttu-id="91989-187">Project 2013 のクライアント側オブジェクト モデル (CSOM)</span><span class="sxs-lookup"><span data-stu-id="91989-187">Client-side object model (CSOM) for Project 2013</span></span>](client-side-object-model-csom-for-project-2013.md)
+- [<span data-ttu-id="70c4c-186">Project のプログラミング タスク</span><span class="sxs-lookup"><span data-stu-id="70c4c-186">Project programming tasks</span></span>](project-programming-tasks.md)
+- [<span data-ttu-id="70c4c-187">Project 2013 のクライアント側オブジェクト モデル (CSOM)</span><span class="sxs-lookup"><span data-stu-id="70c4c-187">Client-side object model (CSOM) for Project 2013</span></span>](client-side-object-model-csom-for-project-2013.md)
     
 

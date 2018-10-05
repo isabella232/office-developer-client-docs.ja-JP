@@ -12,63 +12,63 @@ api_type:
 - COM
 ms.assetid: ce55b50e-3dbf-4690-9102-c08f35ada82e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e1d9a8bce2207529d1062f50a86547379c6255e4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3e7ce1f810a1dd37cd4370ceb423b664d75878a2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569411"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387014"
 ---
-# <a name="pidtagroamingxmlstream-canonical-property"></a><span data-ttu-id="12576-103">PidTagRoamingXmlStream 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="12576-103">PidTagRoamingXmlStream Canonical Property</span></span>
+# <a name="pidtagroamingxmlstream-canonical-property"></a><span data-ttu-id="1f7a7-103">PidTagRoamingXmlStream 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="1f7a7-103">PidTagRoamingXmlStream Canonical Property</span></span>
 
   
   
-<span data-ttu-id="12576-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="12576-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="1f7a7-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="1f7a7-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="12576-105">任意の XML ストリームが含まれています。</span><span class="sxs-lookup"><span data-stu-id="12576-105">Contains an arbitrary XML stream.</span></span>
+<span data-ttu-id="1f7a7-105">任意の XML ストリームが含まれています。</span><span class="sxs-lookup"><span data-stu-id="1f7a7-105">Contains an arbitrary XML stream.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="12576-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="12576-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="12576-107">PR_ROAMING_XMLSTREAM</span><span class="sxs-lookup"><span data-stu-id="12576-107">PR_ROAMING_XMLSTREAM</span></span>  <br/> |
-|<span data-ttu-id="12576-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="12576-108">Identifier:</span></span>  <br/> |<span data-ttu-id="12576-109">0x7C08</span><span class="sxs-lookup"><span data-stu-id="12576-109">0x7C08</span></span>  <br/> |
-|<span data-ttu-id="12576-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="12576-110">Data type:</span></span>  <br/> |<span data-ttu-id="12576-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="12576-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="12576-112">領域:</span><span class="sxs-lookup"><span data-stu-id="12576-112">Area:</span></span>  <br/> |<span data-ttu-id="12576-113">Configuration</span><span class="sxs-lookup"><span data-stu-id="12576-113">Configuration</span></span>  <br/> |
+|<span data-ttu-id="1f7a7-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="1f7a7-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="1f7a7-107">PR_ROAMING_XMLSTREAM</span><span class="sxs-lookup"><span data-stu-id="1f7a7-107">PR_ROAMING_XMLSTREAM</span></span>  <br/> |
+|<span data-ttu-id="1f7a7-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="1f7a7-108">Identifier:</span></span>  <br/> |<span data-ttu-id="1f7a7-109">0x7C08</span><span class="sxs-lookup"><span data-stu-id="1f7a7-109">0x7C08</span></span>  <br/> |
+|<span data-ttu-id="1f7a7-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="1f7a7-110">Data type:</span></span>  <br/> |<span data-ttu-id="1f7a7-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="1f7a7-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="1f7a7-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="1f7a7-112">Area:</span></span>  <br/> |<span data-ttu-id="1f7a7-113">Configuration</span><span class="sxs-lookup"><span data-stu-id="1f7a7-113">Configuration</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="12576-114">注釈</span><span class="sxs-lookup"><span data-stu-id="12576-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1f7a7-114">備考</span><span class="sxs-lookup"><span data-stu-id="1f7a7-114">Remarks</span></span>
 
-<span data-ttu-id="12576-115">このプロパティには、XML データの任意のストリームが含まれています。</span><span class="sxs-lookup"><span data-stu-id="12576-115">This property contains an arbitrary stream of XML data.</span></span> <span data-ttu-id="12576-116">メッセージ内の他のプロパティでこのプロパティを使用する特定のスキーマを意味可能性があります。</span><span class="sxs-lookup"><span data-stu-id="12576-116">Other properties in the message may imply specific schemas to use in this property.</span></span>
+<span data-ttu-id="1f7a7-115">このプロパティには、XML データの任意のストリームが含まれています。</span><span class="sxs-lookup"><span data-stu-id="1f7a7-115">This property contains an arbitrary stream of XML data.</span></span> <span data-ttu-id="1f7a7-116">メッセージ内の他のプロパティでこのプロパティを使用する特定のスキーマを意味可能性があります。</span><span class="sxs-lookup"><span data-stu-id="1f7a7-116">Other properties in the message may imply specific schemas to use in this property.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="12576-117">関連リソース</span><span class="sxs-lookup"><span data-stu-id="12576-117">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="1f7a7-117">関連リソース</span><span class="sxs-lookup"><span data-stu-id="1f7a7-117">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="12576-118">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="12576-118">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="1f7a7-118">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="1f7a7-118">Protocol specifications</span></span>
 
-<span data-ttu-id="12576-119">[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="12576-119">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="1f7a7-119">[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="1f7a7-119">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="12576-120">関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="12576-120">Provides references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="1f7a7-120">関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="1f7a7-120">Provides references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="12576-121">[[MS OXOCFG]](http://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="12576-121">[[MS-OXOCFG]](http://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="1f7a7-121">[[MS OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="1f7a7-121">[[MS-OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="12576-122">場所と共有カテゴリのリストおよび作業時間など、クライアントとサーバーの構成データのプロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="12576-122">Specifies the location and properties of client and server configuration data, such as shared category lists and working hours.</span></span>
+> <span data-ttu-id="1f7a7-122">場所と共有カテゴリのリストおよび作業時間など、クライアントとサーバーの構成データのプロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="1f7a7-122">Specifies the location and properties of client and server configuration data, such as shared category lists and working hours.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="12576-123">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="12576-123">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="1f7a7-123">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="1f7a7-123">Header files</span></span>
 
-<span data-ttu-id="12576-124">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="12576-124">Mapidefs.h</span></span>
+<span data-ttu-id="1f7a7-124">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="1f7a7-124">Mapidefs.h</span></span>
   
-> <span data-ttu-id="12576-125">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="12576-125">Provides data type definitions.</span></span>
+> <span data-ttu-id="1f7a7-125">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="1f7a7-125">Provides data type definitions.</span></span>
     
-<span data-ttu-id="12576-126">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="12576-126">Mapitags.h</span></span>
+<span data-ttu-id="1f7a7-126">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="1f7a7-126">Mapitags.h</span></span>
   
-> <span data-ttu-id="12576-127">関連付けられているプロパティとして記載されているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="12576-127">Contains definitions of properties listed as associated properties.</span></span>
+> <span data-ttu-id="1f7a7-127">関連付けられているプロパティとして記載されているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="1f7a7-127">Contains definitions of properties listed as associated properties.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="12576-128">関連項目</span><span class="sxs-lookup"><span data-stu-id="12576-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1f7a7-128">関連項目</span><span class="sxs-lookup"><span data-stu-id="1f7a7-128">See also</span></span>
 
 
 
-[<span data-ttu-id="12576-129">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="12576-129">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="1f7a7-129">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="1f7a7-129">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="12576-130">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="12576-130">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="1f7a7-130">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="1f7a7-130">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="12576-131">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="12576-131">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="1f7a7-131">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="1f7a7-131">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="12576-132">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="12576-132">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="1f7a7-132">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="1f7a7-132">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

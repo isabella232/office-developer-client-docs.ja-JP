@@ -8,26 +8,26 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 14e0c469-31dc-fbe2-0d45-da602df04f13
 description: 気象要素を定義します。
-ms.openlocfilehash: 5a3d0ed0fbf8d06472a6d9af727a41d97c0231cb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ade57264fab592d3314aa9a3376e129a5f3719c0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804575"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391312"
 ---
-# <a name="weatherdata-element-outlook-weather-location-schema"></a><span data-ttu-id="71b36-103">weatherdata 要素 (Outlook の天気予報の場所のスキーマ)</span><span class="sxs-lookup"><span data-stu-id="71b36-103">weatherdata element (Outlook Weather Location Schema)</span></span>
+# <a name="weatherdata-element-outlook-weather-location-schema"></a><span data-ttu-id="f4d61-103">weatherdata 要素 (Outlook の天気予報の場所のスキーマ)</span><span class="sxs-lookup"><span data-stu-id="f4d61-103">weatherdata element (Outlook Weather Location Schema)</span></span>
 
-<span data-ttu-id="71b36-104">気象要素を定義します。</span><span class="sxs-lookup"><span data-stu-id="71b36-104">Defines the weather element.</span></span>
+<span data-ttu-id="f4d61-104">気象要素を定義します。</span><span class="sxs-lookup"><span data-stu-id="f4d61-104">Defines the weather element.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="71b36-105">要素情報</span><span class="sxs-lookup"><span data-stu-id="71b36-105">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="f4d61-105">要素情報</span><span class="sxs-lookup"><span data-stu-id="f4d61-105">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="71b36-106">**要素の種類**</span><span class="sxs-lookup"><span data-stu-id="71b36-106">**Element type**</span></span> <br/> ||
-|<span data-ttu-id="71b36-107">**名前空間**</span><span class="sxs-lookup"><span data-stu-id="71b36-107">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherlocation.xsd  <br/> |
-|<span data-ttu-id="71b36-108">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="71b36-108">**Schema file**</span></span> <br/> |<span data-ttu-id="71b36-109">getweatherlocation.xsd</span><span class="sxs-lookup"><span data-stu-id="71b36-109">getweatherlocation.xsd</span></span>  <br/> |
+|<span data-ttu-id="f4d61-106">**要素の種類**</span><span class="sxs-lookup"><span data-stu-id="f4d61-106">**Element type**</span></span> <br/> ||
+|<span data-ttu-id="f4d61-107">**名前空間**</span><span class="sxs-lookup"><span data-stu-id="f4d61-107">**Namespace**</span></span> <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherlocation.xsd  <br/> |
+|<span data-ttu-id="f4d61-108">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="f4d61-108">**Schema file**</span></span> <br/> |<span data-ttu-id="f4d61-109">getweatherlocation.xsd</span><span class="sxs-lookup"><span data-stu-id="f4d61-109">getweatherlocation.xsd</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="71b36-110">定義</span><span class="sxs-lookup"><span data-stu-id="71b36-110">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="f4d61-110">定義</span><span class="sxs-lookup"><span data-stu-id="f4d61-110">Definition</span></span>
 
 ```XML
     <xs:element name="weatherdata"
@@ -45,22 +45,22 @@ ms.locfileid: "19804575"
     
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="71b36-111">要素と属性</span><span class="sxs-lookup"><span data-stu-id="71b36-111">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="f4d61-111">要素と属性</span><span class="sxs-lookup"><span data-stu-id="f4d61-111">Elements and attributes</span></span>
 
-<span data-ttu-id="71b36-112">スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="71b36-112">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="f4d61-112">スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="f4d61-112">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="parent-elements"></a><span data-ttu-id="71b36-113">親要素</span><span class="sxs-lookup"><span data-stu-id="71b36-113">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="f4d61-113">親要素</span><span class="sxs-lookup"><span data-stu-id="f4d61-113">Parent elements</span></span>
 
-<span data-ttu-id="71b36-114">なし。</span><span class="sxs-lookup"><span data-stu-id="71b36-114">None.</span></span>
+<span data-ttu-id="f4d61-114">なし。</span><span class="sxs-lookup"><span data-stu-id="f4d61-114">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="71b36-115">子要素</span><span class="sxs-lookup"><span data-stu-id="71b36-115">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="f4d61-115">子要素</span><span class="sxs-lookup"><span data-stu-id="f4d61-115">Child elements</span></span>
 
-|<span data-ttu-id="71b36-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="71b36-116">**Element**</span></span>|<span data-ttu-id="71b36-117">**型**</span><span class="sxs-lookup"><span data-stu-id="71b36-117">**Type**</span></span>|<span data-ttu-id="71b36-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="71b36-118">**Description**</span></span>|
+|<span data-ttu-id="f4d61-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="f4d61-116">**Element**</span></span>|<span data-ttu-id="f4d61-117">**型**</span><span class="sxs-lookup"><span data-stu-id="f4d61-117">**Type**</span></span>|<span data-ttu-id="f4d61-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="f4d61-118">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="71b36-119">天気</span><span class="sxs-lookup"><span data-stu-id="71b36-119">weather</span></span>](weather-element-weatherdata-elementoutlook-weather-location-schema.md) <br/> |[<span data-ttu-id="71b36-120">weatherType</span><span class="sxs-lookup"><span data-stu-id="71b36-120">weatherType</span></span>](weathertype-complextype-outlook-weather-location-schema.md) <br/> |<span data-ttu-id="71b36-121">天気をレポートする場所を指定します。</span><span class="sxs-lookup"><span data-stu-id="71b36-121">Specifies the location to report weather on.</span></span>  <br/> |
+|[<span data-ttu-id="f4d61-119">天気</span><span class="sxs-lookup"><span data-stu-id="f4d61-119">weather</span></span>](weather-element-weatherdata-elementoutlook-weather-location-schema.md) <br/> |[<span data-ttu-id="f4d61-120">weatherType</span><span class="sxs-lookup"><span data-stu-id="f4d61-120">weatherType</span></span>](weathertype-complextype-outlook-weather-location-schema.md) <br/> |<span data-ttu-id="f4d61-121">天気をレポートする場所を指定します。</span><span class="sxs-lookup"><span data-stu-id="f4d61-121">Specifies the location to report weather on.</span></span>  <br/> |
    
-### <a name="attributes"></a><span data-ttu-id="71b36-122">属性</span><span class="sxs-lookup"><span data-stu-id="71b36-122">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="f4d61-122">属性</span><span class="sxs-lookup"><span data-stu-id="f4d61-122">Attributes</span></span>
 
-<span data-ttu-id="71b36-123">なし。</span><span class="sxs-lookup"><span data-stu-id="71b36-123">None.</span></span>
+<span data-ttu-id="f4d61-123">なし。</span><span class="sxs-lookup"><span data-stu-id="f4d61-123">None.</span></span>
   
 

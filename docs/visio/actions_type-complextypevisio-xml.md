@@ -6,24 +6,24 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 31070969-2091-d00e-5dd1-b9c6034f76d9
-ms.openlocfilehash: e28b80e64865196fd6ba13035385b9523f6b1bc5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 158a0dfa31c2da3ac9e530c07edd075b4fabbd75
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804759"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389562"
 ---
-# <a name="actionstype-complextype-visio-xml"></a><span data-ttu-id="b2b6a-102">Actions_Type complexType'Visio XML (')</span><span class="sxs-lookup"><span data-stu-id="b2b6a-102">Actions_Type complexType ('Visio XML')</span></span>
+# <a name="actionstype-complextype-visio-xml"></a><span data-ttu-id="54631-102">Actions_Type complexType'Visio XML (')</span><span class="sxs-lookup"><span data-stu-id="54631-102">Actions_Type complexType ('Visio XML')</span></span>
 
-## <a name="type-information"></a><span data-ttu-id="b2b6a-103">型情報</span><span class="sxs-lookup"><span data-stu-id="b2b6a-103">Type information</span></span>
+## <a name="type-information"></a><span data-ttu-id="54631-103">型情報</span><span class="sxs-lookup"><span data-stu-id="54631-103">Type information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="b2b6a-104">**名前空間**</span><span class="sxs-lookup"><span data-stu-id="b2b6a-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|<span data-ttu-id="b2b6a-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="b2b6a-105">**Schema file**</span></span> <br/> |<span data-ttu-id="b2b6a-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="b2b6a-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
-|<span data-ttu-id="b2b6a-107">**拡張ベース**</span><span class="sxs-lookup"><span data-stu-id="b2b6a-107">**Extension base**</span></span> <br/> |<span data-ttu-id="b2b6a-108">Section_Type</span><span class="sxs-lookup"><span data-stu-id="b2b6a-108">Section_Type</span></span>  <br/> |
+|<span data-ttu-id="54631-104">**名前空間**</span><span class="sxs-lookup"><span data-stu-id="54631-104">**Namespace**</span></span> <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|<span data-ttu-id="54631-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="54631-105">**Schema file**</span></span> <br/> |<span data-ttu-id="54631-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="54631-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
+|<span data-ttu-id="54631-107">**拡張ベース**</span><span class="sxs-lookup"><span data-stu-id="54631-107">**Extension base**</span></span> <br/> |<span data-ttu-id="54631-108">Section_Type</span><span class="sxs-lookup"><span data-stu-id="54631-108">Section_Type</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="b2b6a-109">定義</span><span class="sxs-lookup"><span data-stu-id="b2b6a-109">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="54631-109">定義</span><span class="sxs-lookup"><span data-stu-id="54631-109">Definition</span></span>
 
 ```XML
           <xs:complexType name="Actions_Type">
@@ -42,18 +42,18 @@ ms.locfileid: "19804759"
       
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="b2b6a-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="b2b6a-110">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="54631-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="54631-110">Elements and attributes</span></span>
 
-<span data-ttu-id="b2b6a-111">スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="b2b6a-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="54631-111">スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="54631-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="child-elements"></a><span data-ttu-id="b2b6a-112">子要素</span><span class="sxs-lookup"><span data-stu-id="b2b6a-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="54631-112">子要素</span><span class="sxs-lookup"><span data-stu-id="54631-112">Child elements</span></span>
 
-|<span data-ttu-id="b2b6a-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="b2b6a-113">**Element**</span></span>|<span data-ttu-id="b2b6a-114">**型**</span><span class="sxs-lookup"><span data-stu-id="b2b6a-114">**Type**</span></span>|<span data-ttu-id="b2b6a-115">**説明**</span><span class="sxs-lookup"><span data-stu-id="b2b6a-115">**Description**</span></span>|
+|<span data-ttu-id="54631-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="54631-113">**Element**</span></span>|<span data-ttu-id="54631-114">**型**</span><span class="sxs-lookup"><span data-stu-id="54631-114">**Type**</span></span>|<span data-ttu-id="54631-115">**説明**</span><span class="sxs-lookup"><span data-stu-id="54631-115">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="b2b6a-116">Row</span><span class="sxs-lookup"><span data-stu-id="b2b6a-116">Row</span></span>](row-element-actions-sectionvisio-xml.md) <br/> |[<span data-ttu-id="b2b6a-117">ActionsRow_Type</span><span class="sxs-lookup"><span data-stu-id="b2b6a-117">ActionsRow_Type</span></span>](actionsrow_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="54631-116">Row</span><span class="sxs-lookup"><span data-stu-id="54631-116">Row</span></span>](row-element-actions-sectionvisio-xml.md) <br/> |[<span data-ttu-id="54631-117">ActionsRow_Type</span><span class="sxs-lookup"><span data-stu-id="54631-117">ActionsRow_Type</span></span>](actionsrow_type-complextypevisio-xml.md) <br/> ||
    
-### <a name="attributes"></a><span data-ttu-id="b2b6a-118">属性</span><span class="sxs-lookup"><span data-stu-id="b2b6a-118">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="54631-118">属性</span><span class="sxs-lookup"><span data-stu-id="54631-118">Attributes</span></span>
 
-<span data-ttu-id="b2b6a-119">なし。</span><span class="sxs-lookup"><span data-stu-id="b2b6a-119">None.</span></span>
+<span data-ttu-id="54631-119">なし。</span><span class="sxs-lookup"><span data-stu-id="54631-119">None.</span></span>
   
 

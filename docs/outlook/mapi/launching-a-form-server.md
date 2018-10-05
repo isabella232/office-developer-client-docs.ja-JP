@@ -8,48 +8,48 @@ api_type:
 - COM
 ms.assetid: a439e75a-92b3-4830-9dfc-e723d046be7b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 87299ce4335492a744dd4ee965b4f8b85bcedc84
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dec8706ba00356660ec82c25e0213ef3e638691d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564893"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387728"
 ---
-# <a name="launching-a-form-server"></a><span data-ttu-id="427d3-103">フォーム サーバーの起動</span><span class="sxs-lookup"><span data-stu-id="427d3-103">Launching a Form Server</span></span>
+# <a name="launching-a-form-server"></a><span data-ttu-id="ac350-103">フォーム サーバーの起動</span><span class="sxs-lookup"><span data-stu-id="ac350-103">Launching a Form Server</span></span>
 
   
   
-<span data-ttu-id="427d3-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="427d3-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="ac350-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ac350-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="427d3-105">永続ストレージから、フォームを読み込むときに発生する一連の相互作用の (つまり、フォーム ライブラリから) メッセージを表示するのには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="427d3-105">The series of interactions that occurs when a form is loaded from persistent storage (that is, from a form library) to display a message is as follows:</span></span>
+<span data-ttu-id="ac350-105">永続ストレージから、フォームを読み込むときに発生する一連の相互作用の (つまり、フォーム ライブラリから) メッセージを表示するのには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="ac350-105">The series of interactions that occurs when a form is loaded from persistent storage (that is, from a form library) to display a message is as follows:</span></span>
   
-1. <span data-ttu-id="427d3-106">メッセージング クライアントは、メッセージのメッセージ クラス、メッセージ フラグ、およびメッセージの状態を取得します。</span><span class="sxs-lookup"><span data-stu-id="427d3-106">The messaging client gets the message's message class, message flags, and message status.</span></span> <span data-ttu-id="427d3-107">この手順は省略可能です。これらのデータの一部が手順 2 で指定されていない場合に、フォーム マネージャーを取得します。</span><span class="sxs-lookup"><span data-stu-id="427d3-107">This step is optional; if these pieces of data are not provided in step 2, the form manager will retrieve them.</span></span>
+1. <span data-ttu-id="ac350-106">メッセージング クライアントは、メッセージのメッセージ クラス、メッセージ フラグ、およびメッセージの状態を取得します。</span><span class="sxs-lookup"><span data-stu-id="ac350-106">The messaging client gets the message's message class, message flags, and message status.</span></span> <span data-ttu-id="ac350-107">この手順は省略可能です。これらのデータの一部が手順 2 で指定されていない場合に、フォーム マネージャーを取得します。</span><span class="sxs-lookup"><span data-stu-id="ac350-107">This step is optional; if these pieces of data are not provided in step 2, the form manager will retrieve them.</span></span>
     
-2. <span data-ttu-id="427d3-108">メッセージング クライアントは、移行先のメッセージで、 [IMAPIFormMgr::LoadForm](imapiformmgr-loadform.md)を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="427d3-108">The messaging client calls [IMAPIFormMgr::LoadForm](imapiformmgr-loadform.md) with the target message.</span></span> 
+2. <span data-ttu-id="ac350-108">メッセージング クライアントは、移行先のメッセージで、 [IMAPIFormMgr::LoadForm](imapiformmgr-loadform.md)を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="ac350-108">The messaging client calls [IMAPIFormMgr::LoadForm](imapiformmgr-loadform.md) with the target message.</span></span> 
     
-3. <span data-ttu-id="427d3-109">フォーム マネージャーは、適切なフォーム ライブラリからフォームのサーバーをロードします。</span><span class="sxs-lookup"><span data-stu-id="427d3-109">The form manager loads the form server from the appropriate form library.</span></span> <span data-ttu-id="427d3-110">移行先のメッセージのフォームのサーバーがインストールされていない場合、フォーム マネージャーは、フォームの実行可能ファイルにもをインストールします。</span><span class="sxs-lookup"><span data-stu-id="427d3-110">If the form server for the target message is not installed, the form manager installs the form's executable files, as well.</span></span>
+3. <span data-ttu-id="ac350-109">フォーム マネージャーは、適切なフォーム ライブラリからフォームのサーバーをロードします。</span><span class="sxs-lookup"><span data-stu-id="ac350-109">The form manager loads the form server from the appropriate form library.</span></span> <span data-ttu-id="ac350-110">移行先のメッセージのフォームのサーバーがインストールされていない場合、フォーム マネージャーは、フォームの実行可能ファイルにもをインストールします。</span><span class="sxs-lookup"><span data-stu-id="ac350-110">If the form server for the target message is not installed, the form manager installs the form's executable files, as well.</span></span>
     
-4. <span data-ttu-id="427d3-111">フォーム マネージャーは、フォームのオブジェクトを取得するフォーム オブジェクトの[IUnknown::QueryInterface](http://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx)を呼び出す[IMAPIForm: IUnknown](imapiformiunknown.md)と[IPersistMessage: IUnknown](ipersistmessageiunknown.md)インタ フェースです。</span><span class="sxs-lookup"><span data-stu-id="427d3-111">The form manager calls [IUnknown::QueryInterface](http://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) on the form object to obtain the form object's [IMAPIForm : IUnknown](imapiformiunknown.md) and [IPersistMessage : IUnknown](ipersistmessageiunknown.md) interfaces.</span></span> 
+4. <span data-ttu-id="ac350-111">フォーム マネージャーは、フォームのオブジェクトを取得するフォーム オブジェクトの[IUnknown::QueryInterface](https://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx)を呼び出す[IMAPIForm: IUnknown](imapiformiunknown.md)と[IPersistMessage: IUnknown](ipersistmessageiunknown.md)インタ フェースです。</span><span class="sxs-lookup"><span data-stu-id="ac350-111">The form manager calls [IUnknown::QueryInterface](https://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) on the form object to obtain the form object's [IMAPIForm : IUnknown](imapiformiunknown.md) and [IPersistMessage : IUnknown](ipersistmessageiunknown.md) interfaces.</span></span> 
     
-5. <span data-ttu-id="427d3-112">フォーム マネージャー インターフェイスを呼び出す[IPersistMessage::Load](ipersistmessage-load.md)メッセージがサイトとメッセージ ビューアー オブジェクトからです。</span><span class="sxs-lookup"><span data-stu-id="427d3-112">The form manager calls [IPersistMessage::Load](ipersistmessage-load.md) with the message site and message interfaces from the viewer object.</span></span> 
+5. <span data-ttu-id="ac350-112">フォーム マネージャー インターフェイスを呼び出す[IPersistMessage::Load](ipersistmessage-load.md)メッセージがサイトとメッセージ ビューアー オブジェクトからです。</span><span class="sxs-lookup"><span data-stu-id="ac350-112">The form manager calls [IPersistMessage::Load](ipersistmessage-load.md) with the message site and message interfaces from the viewer object.</span></span> 
     
-6. <span data-ttu-id="427d3-113">フォーム オブジェクトは、メッセージング クライアントの[IMAPIMessageSite::GetSiteStatus](imapimessagesite-getsitestatus.md)メソッドをコールバックします。</span><span class="sxs-lookup"><span data-stu-id="427d3-113">The form object calls back to the messaging client's [IMAPIMessageSite::GetSiteStatus](imapimessagesite-getsitestatus.md) method.</span></span> 
+6. <span data-ttu-id="ac350-113">フォーム オブジェクトは、メッセージング クライアントの[IMAPIMessageSite::GetSiteStatus](imapimessagesite-getsitestatus.md)メソッドをコールバックします。</span><span class="sxs-lookup"><span data-stu-id="ac350-113">The form object calls back to the messaging client's [IMAPIMessageSite::GetSiteStatus](imapimessagesite-getsitestatus.md) method.</span></span> 
     
-7. <span data-ttu-id="427d3-114">フォーム マネージャーは、メッセージング クライアントからのビューのコンテキストのインターフェイスを使用して、form オブジェクトの[IMAPIForm::SetViewContext](imapiform-setviewcontext.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="427d3-114">The form manager calls the form object's [IMAPIForm::SetViewContext](imapiform-setviewcontext.md) method with the view context interface from the messaging client.</span></span> 
+7. <span data-ttu-id="ac350-114">フォーム マネージャーは、メッセージング クライアントからのビューのコンテキストのインターフェイスを使用して、form オブジェクトの[IMAPIForm::SetViewContext](imapiform-setviewcontext.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="ac350-114">The form manager calls the form object's [IMAPIForm::SetViewContext](imapiform-setviewcontext.md) method with the view context interface from the messaging client.</span></span> 
     
-8. <span data-ttu-id="427d3-115">フォーム オブジェクトは、メッセージング クライアントの[IMAPIViewContext::SetAdviseSink](imapiviewcontext-setadvisesink.md)メソッドをコールバックします。</span><span class="sxs-lookup"><span data-stu-id="427d3-115">The form object calls back to the messaging client's [IMAPIViewContext::SetAdviseSink](imapiviewcontext-setadvisesink.md) method.</span></span> 
+8. <span data-ttu-id="ac350-115">フォーム オブジェクトは、メッセージング クライアントの[IMAPIViewContext::SetAdviseSink](imapiviewcontext-setadvisesink.md)メソッドをコールバックします。</span><span class="sxs-lookup"><span data-stu-id="ac350-115">The form object calls back to the messaging client's [IMAPIViewContext::SetAdviseSink](imapiviewcontext-setadvisesink.md) method.</span></span> 
     
-9. <span data-ttu-id="427d3-116">フォーム オブジェクトは、メッセージング クライアントの[IMAPIViewContext::GetViewStatus](imapiviewcontext-getviewstatus.md)メソッドをコールバックします。</span><span class="sxs-lookup"><span data-stu-id="427d3-116">The form object calls back to the messaging client's [IMAPIViewContext::GetViewStatus](imapiviewcontext-getviewstatus.md) method.</span></span> 
+9. <span data-ttu-id="ac350-116">フォーム オブジェクトは、メッセージング クライアントの[IMAPIViewContext::GetViewStatus](imapiviewcontext-getviewstatus.md)メソッドをコールバックします。</span><span class="sxs-lookup"><span data-stu-id="ac350-116">The form object calls back to the messaging client's [IMAPIViewContext::GetViewStatus](imapiviewcontext-getviewstatus.md) method.</span></span> 
     
-10. <span data-ttu-id="427d3-117">メッセージング クライアントは、ビューアー オブジェクトとメッセージのサイト オブジェクトからのコンテキストのインタ フェースをビューでのフォーム オブジェクトの[IMAPIForm::Advise](imapiform-advise.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="427d3-117">The messaging client calls the form object's [IMAPIForm::Advise](imapiform-advise.md) method with the view context interfaces from the viewer object and the message site object.</span></span> 
+10. <span data-ttu-id="ac350-117">メッセージング クライアントは、ビューアー オブジェクトとメッセージのサイト オブジェクトからのコンテキストのインタ フェースをビューでのフォーム オブジェクトの[IMAPIForm::Advise](imapiform-advise.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="ac350-117">The messaging client calls the form object's [IMAPIForm::Advise](imapiform-advise.md) method with the view context interfaces from the viewer object and the message site object.</span></span> 
     
-11. <span data-ttu-id="427d3-118">メッセージング クライアントでは、form オブジェクトの[IMAPIForm::DoVerb](imapiform-doverb.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="427d3-118">The messaging client calls the form object's [IMAPIForm::DoVerb](imapiform-doverb.md) method.</span></span> 
+11. <span data-ttu-id="ac350-118">メッセージング クライアントでは、form オブジェクトの[IMAPIForm::DoVerb](imapiform-doverb.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="ac350-118">The messaging client calls the form object's [IMAPIForm::DoVerb](imapiform-doverb.md) method.</span></span> 
     
-12. <span data-ttu-id="427d3-119">フォーム オブジェクトは、必要に応じて、ユーザー インターフェイスを作成し、ユーザーと対話します。</span><span class="sxs-lookup"><span data-stu-id="427d3-119">The form object creates its user interface, if necessary, and interacts with the user.</span></span>
+12. <span data-ttu-id="ac350-119">フォーム オブジェクトは、必要に応じて、ユーザー インターフェイスを作成し、ユーザーと対話します。</span><span class="sxs-lookup"><span data-stu-id="ac350-119">The form object creates its user interface, if necessary, and interacts with the user.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="427d3-120">関連項目</span><span class="sxs-lookup"><span data-stu-id="427d3-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ac350-120">関連項目</span><span class="sxs-lookup"><span data-stu-id="ac350-120">See also</span></span>
 
 
 
-[<span data-ttu-id="427d3-121">フォーム サーバーの相互作用</span><span class="sxs-lookup"><span data-stu-id="427d3-121">Form Server Interactions</span></span>](form-server-interactions.md)
+[<span data-ttu-id="ac350-121">フォーム サーバーの相互作用</span><span class="sxs-lookup"><span data-stu-id="ac350-121">Form Server Interactions</span></span>](form-server-interactions.md)
 

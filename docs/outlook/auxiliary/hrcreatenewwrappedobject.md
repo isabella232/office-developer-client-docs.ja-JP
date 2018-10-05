@@ -7,24 +7,24 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 780ade1c-88d0-04d2-ba7e-251c19c43438
 description: 優先される文字の形式では、クライアントがアクセスできるオブジェクトを作成します。
-ms.openlocfilehash: 187bcbce8fd1170e05f57c5c9147a8962669fea4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3f68e0f275bcc5df065b3113d3322d6957f76df0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799319"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384193"
 ---
-# <a name="hrcreatenewwrappedobject"></a><span data-ttu-id="dbbb8-103">HrCreateNewWrappedObject</span><span class="sxs-lookup"><span data-stu-id="dbbb8-103">HrCreateNewWrappedObject</span></span>
+# <a name="hrcreatenewwrappedobject"></a><span data-ttu-id="6a835-103">HrCreateNewWrappedObject</span><span class="sxs-lookup"><span data-stu-id="6a835-103">HrCreateNewWrappedObject</span></span>
 
-<span data-ttu-id="dbbb8-104">優先される文字の形式では、クライアントがアクセスできるオブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-104">Creates an object that a client can access in a preferred character format.</span></span>
+<span data-ttu-id="6a835-104">優先される文字の形式では、クライアントがアクセスできるオブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="6a835-104">Creates an object that a client can access in a preferred character format.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="dbbb8-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="dbbb8-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="6a835-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="6a835-105">Quick info</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="dbbb8-106">によってエクスポートされます。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-106">Exported by:</span></span>  <br/> |<span data-ttu-id="dbbb8-107">msmapi32.dll</span><span class="sxs-lookup"><span data-stu-id="dbbb8-107">msmapi32.dll</span></span>  <br/> |
-|<span data-ttu-id="dbbb8-108">によって呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-108">Called by:</span></span>  <br/> |<span data-ttu-id="dbbb8-109">クライアント</span><span class="sxs-lookup"><span data-stu-id="dbbb8-109">Client</span></span>  <br/> |
-|<span data-ttu-id="dbbb8-110">によって実装されます。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-110">Implemented by:</span></span>  <br/> |<span data-ttu-id="dbbb8-111">Outlook</span><span class="sxs-lookup"><span data-stu-id="dbbb8-111">Outlook</span></span>  <br/> |
+|<span data-ttu-id="6a835-106">によってエクスポートされます。</span><span class="sxs-lookup"><span data-stu-id="6a835-106">Exported by:</span></span>  <br/> |<span data-ttu-id="6a835-107">msmapi32.dll</span><span class="sxs-lookup"><span data-stu-id="6a835-107">msmapi32.dll</span></span>  <br/> |
+|<span data-ttu-id="6a835-108">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="6a835-108">Called by:</span></span>  <br/> |<span data-ttu-id="6a835-109">クライアント</span><span class="sxs-lookup"><span data-stu-id="6a835-109">Client</span></span>  <br/> |
+|<span data-ttu-id="6a835-110">実装元:</span><span class="sxs-lookup"><span data-stu-id="6a835-110">Implemented by:</span></span>  <br/> |<span data-ttu-id="6a835-111">Outlook</span><span class="sxs-lookup"><span data-stu-id="6a835-111">Outlook</span></span>  <br/> |
    
 ```cpp
 HRESULT HrCreateNewWrappedObject( 
@@ -39,58 +39,58 @@ HRESULT HrCreateNewWrappedObject(
 
 ```
 
-## <a name="parameters"></a><span data-ttu-id="dbbb8-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="dbbb8-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="6a835-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="6a835-112">Parameters</span></span>
 
-<span data-ttu-id="dbbb8-113">_pvUnwrapped_</span><span class="sxs-lookup"><span data-stu-id="dbbb8-113">_pvUnwrapped_</span></span>
+<span data-ttu-id="6a835-113">_pvUnwrapped_</span><span class="sxs-lookup"><span data-stu-id="6a835-113">_pvUnwrapped_</span></span>
   
-> <span data-ttu-id="dbbb8-114">[in]最初のラップが解除された Outlook オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-114">[in] The initial unwrapped Outlook object.</span></span> <span data-ttu-id="dbbb8-115">次のインタ フェースのいずれかを実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-115">Must implement one of the following interfaces:</span></span>
+> <span data-ttu-id="6a835-114">[in]最初のラップが解除された Outlook オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="6a835-114">[in] The initial unwrapped Outlook object.</span></span> <span data-ttu-id="6a835-115">次のインタ フェースのいずれかを実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6a835-115">Must implement one of the following interfaces:</span></span>
     
-   - <span data-ttu-id="dbbb8-116">[IMailUser: IMAPIProp](http://msdn.microsoft.com/library/74c25870-62d9-484a-9a99-4dc35c52479e%28Office.15%29.aspx)、 [IMAPIFolder: IMAPIContainer](http://msdn.microsoft.com/library/bc2e8d17-7687-43c2-8f01-b677703f7288%28Office.15%29.aspx)、 [IMessage: IMAPIProp](http://msdn.microsoft.com/library/7e244d40-595e-432c-aa8c-f9f62ca3c138%28Office.15%29.aspx)、 [IMsgStore: IMAPIProp](http://msdn.microsoft.com/library/20090114-b183-4767-8971-a304a9aa47e6%28Office.15%29.aspx)、 [IMSLogon: IUnknown](http://msdn.microsoft.com/library/d87093dc-f705-465f-ab3c-944ca0cd3e54%28Office.15%29.aspx)、または[IOSTX](http://msdn.microsoft.com/library/f374d8d9-be8e-2489-d5fe-8a92e0ecfc6f%28Office.15%29.aspx)。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-116">[IMailUser : IMAPIProp](http://msdn.microsoft.com/library/74c25870-62d9-484a-9a99-4dc35c52479e%28Office.15%29.aspx), [IMAPIFolder : IMAPIContainer](http://msdn.microsoft.com/library/bc2e8d17-7687-43c2-8f01-b677703f7288%28Office.15%29.aspx), [IMessage : IMAPIProp](http://msdn.microsoft.com/library/7e244d40-595e-432c-aa8c-f9f62ca3c138%28Office.15%29.aspx), [IMsgStore : IMAPIProp](http://msdn.microsoft.com/library/20090114-b183-4767-8971-a304a9aa47e6%28Office.15%29.aspx), [IMSLogon : IUnknown](http://msdn.microsoft.com/library/d87093dc-f705-465f-ab3c-944ca0cd3e54%28Office.15%29.aspx), or [IOSTX](http://msdn.microsoft.com/library/f374d8d9-be8e-2489-d5fe-8a92e0ecfc6f%28Office.15%29.aspx).</span></span>
+   - <span data-ttu-id="6a835-116">[IMailUser: IMAPIProp](https://msdn.microsoft.com/library/74c25870-62d9-484a-9a99-4dc35c52479e%28Office.15%29.aspx)、 [IMAPIFolder: IMAPIContainer](https://msdn.microsoft.com/library/bc2e8d17-7687-43c2-8f01-b677703f7288%28Office.15%29.aspx)、 [IMessage: IMAPIProp](https://msdn.microsoft.com/library/7e244d40-595e-432c-aa8c-f9f62ca3c138%28Office.15%29.aspx)、 [IMsgStore: IMAPIProp](https://msdn.microsoft.com/library/20090114-b183-4767-8971-a304a9aa47e6%28Office.15%29.aspx)、 [IMSLogon: IUnknown](https://msdn.microsoft.com/library/d87093dc-f705-465f-ab3c-944ca0cd3e54%28Office.15%29.aspx)、または[IOSTX](https://msdn.microsoft.com/library/f374d8d9-be8e-2489-d5fe-8a92e0ecfc6f%28Office.15%29.aspx)。</span><span class="sxs-lookup"><span data-stu-id="6a835-116">[IMailUser : IMAPIProp](https://msdn.microsoft.com/library/74c25870-62d9-484a-9a99-4dc35c52479e%28Office.15%29.aspx), [IMAPIFolder : IMAPIContainer](https://msdn.microsoft.com/library/bc2e8d17-7687-43c2-8f01-b677703f7288%28Office.15%29.aspx), [IMessage : IMAPIProp](https://msdn.microsoft.com/library/7e244d40-595e-432c-aa8c-f9f62ca3c138%28Office.15%29.aspx), [IMsgStore : IMAPIProp](https://msdn.microsoft.com/library/20090114-b183-4767-8971-a304a9aa47e6%28Office.15%29.aspx), [IMSLogon : IUnknown](https://msdn.microsoft.com/library/d87093dc-f705-465f-ab3c-944ca0cd3e54%28Office.15%29.aspx), or [IOSTX](https://msdn.microsoft.com/library/f374d8d9-be8e-2489-d5fe-8a92e0ecfc6f%28Office.15%29.aspx).</span></span>
     
-<span data-ttu-id="dbbb8-117">_ulUnwrappedFlags_</span><span class="sxs-lookup"><span data-stu-id="dbbb8-117">_ulUnwrappedFlags_</span></span>
+<span data-ttu-id="6a835-117">_ulUnwrappedFlags_</span><span class="sxs-lookup"><span data-stu-id="6a835-117">_ulUnwrappedFlags_</span></span>
   
-> <span data-ttu-id="dbbb8-118">[in]ラップの最初のオブジェクトの特性を示すフラグです。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-118">[in] Flags that characterize the unwrapped initial object.</span></span> <span data-ttu-id="dbbb8-119">次の値の 1 つ以上にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-119">Must be one or more of the following values:</span></span>
+> <span data-ttu-id="6a835-118">[in]ラップの最初のオブジェクトの特性を示すフラグです。</span><span class="sxs-lookup"><span data-stu-id="6a835-118">[in] Flags that characterize the unwrapped initial object.</span></span> <span data-ttu-id="6a835-119">次の値の 1 つ以上にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="6a835-119">Must be one or more of the following values:</span></span>
     
-   - <span data-ttu-id="dbbb8-120">DDLWRAP_FLAG_ANSI-Unwrapped オブジェクトは、ANSI です。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-120">DDLWRAP_FLAG_ANSI—Unwrapped object is ANSI.</span></span>
+   - <span data-ttu-id="6a835-120">DDLWRAP_FLAG_ANSI-Unwrapped オブジェクトは、ANSI です。</span><span class="sxs-lookup"><span data-stu-id="6a835-120">DDLWRAP_FLAG_ANSI—Unwrapped object is ANSI.</span></span>
     
-   - <span data-ttu-id="dbbb8-121">DDLWRAP_FLAG_UNICODE-Unwrapped オブジェクトには、UNICODE です。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-121">DDLWRAP_FLAG_UNICODE—Unwrapped object is UNICODE.</span></span>
+   - <span data-ttu-id="6a835-121">DDLWRAP_FLAG_UNICODE-Unwrapped オブジェクトには、UNICODE です。</span><span class="sxs-lookup"><span data-stu-id="6a835-121">DDLWRAP_FLAG_UNICODE—Unwrapped object is UNICODE.</span></span>
     
-<span data-ttu-id="dbbb8-122">_ulWrappedFlags_</span><span class="sxs-lookup"><span data-stu-id="dbbb8-122">_ulWrappedFlags_</span></span>
+<span data-ttu-id="6a835-122">_ulWrappedFlags_</span><span class="sxs-lookup"><span data-stu-id="6a835-122">_ulWrappedFlags_</span></span>
   
->  <span data-ttu-id="dbbb8-123">[in]優先文字形式のフラグ。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-123">[in] Flags for the preferred character format.</span></span> <span data-ttu-id="dbbb8-124">次の値の 1 つ以上にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-124">Must be one or more of the following values:</span></span> 
+>  <span data-ttu-id="6a835-123">[in]優先文字形式のフラグ。</span><span class="sxs-lookup"><span data-stu-id="6a835-123">[in] Flags for the preferred character format.</span></span> <span data-ttu-id="6a835-124">次の値の 1 つ以上にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="6a835-124">Must be one or more of the following values:</span></span> 
     
-   - <span data-ttu-id="dbbb8-125">DDLWRAP_FLAG_ANSI-Wrapped オブジェクトは、ANSI として公開されます。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-125">DDLWRAP_FLAG_ANSI—Wrapped object will be exposed as ANSI.</span></span>
+   - <span data-ttu-id="6a835-125">DDLWRAP_FLAG_ANSI-Wrapped オブジェクトは、ANSI として公開されます。</span><span class="sxs-lookup"><span data-stu-id="6a835-125">DDLWRAP_FLAG_ANSI—Wrapped object will be exposed as ANSI.</span></span>
     
-   - <span data-ttu-id="dbbb8-126">DDLWRAP_FLAG_UNICODE-Wrapped オブジェクトを UNICODE として公開されます。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-126">DDLWRAP_FLAG_UNICODE—Wrapped object will be exposed as UNICODE.</span></span>
+   - <span data-ttu-id="6a835-126">DDLWRAP_FLAG_UNICODE-Wrapped オブジェクトを UNICODE として公開されます。</span><span class="sxs-lookup"><span data-stu-id="6a835-126">DDLWRAP_FLAG_UNICODE—Wrapped object will be exposed as UNICODE.</span></span>
     
-<span data-ttu-id="dbbb8-127">_pIID_</span><span class="sxs-lookup"><span data-stu-id="dbbb8-127">_pIID_</span></span>
+<span data-ttu-id="6a835-127">_pIID_</span><span class="sxs-lookup"><span data-stu-id="6a835-127">_pIID_</span></span>
   
->  <span data-ttu-id="dbbb8-128">[in]ラップが解除されたオブジェクトでサポートされているインターフェイスの識別子これが不明な場合は、NULL に設定します。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-128">[in] The identifier of the interface supported by the unwrapped object; set it to NULL if this is unknown.</span></span> 
+>  <span data-ttu-id="6a835-128">[in]ラップが解除されたオブジェクトでサポートされているインターフェイスの識別子これが不明な場合は、NULL に設定します。</span><span class="sxs-lookup"><span data-stu-id="6a835-128">[in] The identifier of the interface supported by the unwrapped object; set it to NULL if this is unknown.</span></span> 
     
-<span data-ttu-id="dbbb8-129">_pulReserved_</span><span class="sxs-lookup"><span data-stu-id="dbbb8-129">_pulReserved_</span></span>
+<span data-ttu-id="6a835-129">_pulReserved_</span><span class="sxs-lookup"><span data-stu-id="6a835-129">_pulReserved_</span></span>
   
->  <span data-ttu-id="dbbb8-130">[in]このパラメーターは使用されません。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-130">[in] This parameter is not used.</span></span> <span data-ttu-id="dbbb8-131">NULL にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-131">It must be NULL.</span></span> 
+>  <span data-ttu-id="6a835-130">[in]このパラメーターは使用されません。</span><span class="sxs-lookup"><span data-stu-id="6a835-130">[in] This parameter is not used.</span></span> <span data-ttu-id="6a835-131">NULL にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="6a835-131">It must be NULL.</span></span> 
     
-<span data-ttu-id="dbbb8-132">_fCheckWrap_</span><span class="sxs-lookup"><span data-stu-id="dbbb8-132">_fCheckWrap_</span></span>
+<span data-ttu-id="6a835-132">_fCheckWrap_</span><span class="sxs-lookup"><span data-stu-id="6a835-132">_fCheckWrap_</span></span>
   
->  <span data-ttu-id="dbbb8-133">[in]テキストを折り返すには、その形式の_pvUnwrapped_をチェックする必要がある場合、このパラメーターを**true**に設定します。オブジェクトをチェックすることがなく折り返す必要がある場合は、 **false**に設定します。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-133">[in] Set this parameter to **true** if  _pvUnwrapped_ should be checked for its format before wrapping; set it to **false** if the object should be wrapped without checking.</span></span> 
+>  <span data-ttu-id="6a835-133">[in]テキストを折り返すには、その形式の_pvUnwrapped_をチェックする必要がある場合、このパラメーターを**true**に設定します。オブジェクトをチェックすることがなく折り返す必要がある場合は、 **false**に設定します。</span><span class="sxs-lookup"><span data-stu-id="6a835-133">[in] Set this parameter to **true** if  _pvUnwrapped_ should be checked for its format before wrapping; set it to **false** if the object should be wrapped without checking.</span></span> 
     
-<span data-ttu-id="dbbb8-134">_ppvWrapped_</span><span class="sxs-lookup"><span data-stu-id="dbbb8-134">_ppvWrapped_</span></span>
+<span data-ttu-id="6a835-134">_ppvWrapped_</span><span class="sxs-lookup"><span data-stu-id="6a835-134">_ppvWrapped_</span></span>
   
->  <span data-ttu-id="dbbb8-135">[out]要求された文字の形式で、要求されたオブジェクトへのポインター。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-135">[out] A pointer to the requested object, wrapped in the requested character format.</span></span> 
+>  <span data-ttu-id="6a835-135">[out]要求された文字の形式で、要求されたオブジェクトへのポインター。</span><span class="sxs-lookup"><span data-stu-id="6a835-135">[out] A pointer to the requested object, wrapped in the requested character format.</span></span> 
     
-## <a name="return-values"></a><span data-ttu-id="dbbb8-136">戻り値</span><span class="sxs-lookup"><span data-stu-id="dbbb8-136">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="6a835-136">戻り値</span><span class="sxs-lookup"><span data-stu-id="6a835-136">Return values</span></span>
 
-<span data-ttu-id="dbbb8-137">呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-137">S_OK if the call succeeded; otherwise, an error code.</span></span>
+<span data-ttu-id="6a835-137">呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="6a835-137">S_OK if the call succeeded; otherwise, an error code.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="dbbb8-138">解釈</span><span class="sxs-lookup"><span data-stu-id="dbbb8-138">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6a835-138">解釈</span><span class="sxs-lookup"><span data-stu-id="6a835-138">Remarks</span></span>
 
-<span data-ttu-id="dbbb8-139">_FCheckWrap_を**true**に設定すると、ラップされたオブジェクトを渡すことは、ラップが解除されたオブジェクトになります。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-139">Passing in a wrapped object with  _fCheckWrap_ set to **true** will result in an unwrapped object.</span></span> <span data-ttu-id="dbbb8-140">、返されたオブジェクトをラップするかどうかに関係なくクライアントでは、返されるオブジェクトの参照を解放する必要が。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-140">Regardless of whether or not the returned object is wrapped, the client is responsible for releasing the reference on the returned object.</span></span> 
+<span data-ttu-id="6a835-139">_FCheckWrap_を**true**に設定すると、ラップされたオブジェクトを渡すことは、ラップが解除されたオブジェクトになります。</span><span class="sxs-lookup"><span data-stu-id="6a835-139">Passing in a wrapped object with  _fCheckWrap_ set to **true** will result in an unwrapped object.</span></span> <span data-ttu-id="6a835-140">、返されたオブジェクトをラップするかどうかに関係なくクライアントでは、返されるオブジェクトの参照を解放する必要が。</span><span class="sxs-lookup"><span data-stu-id="6a835-140">Regardless of whether or not the returned object is wrapped, the client is responsible for releasing the reference on the returned object.</span></span> 
   
-<span data-ttu-id="dbbb8-141">Msmapi32.dll のこの関数のアドレスを検索するには、 **GetProcAddress**を使用して、プロシージャ名として**HrCreateNewWrappedObject@28**を指定します。</span><span class="sxs-lookup"><span data-stu-id="dbbb8-141">When using **GetProcAddress** to look for the address of this function in msmapi32.dll, specify **HrCreateNewWrappedObject@28** as the procedure name.</span></span> 
+<span data-ttu-id="6a835-141">Msmapi32.dll のこの関数のアドレスを検索するには、 **GetProcAddress**を使用して、プロシージャ名として**HrCreateNewWrappedObject@28**を指定します。</span><span class="sxs-lookup"><span data-stu-id="6a835-141">When using **GetProcAddress** to look for the address of this function in msmapi32.dll, specify **HrCreateNewWrappedObject@28** as the procedure name.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="dbbb8-142">関連項目</span><span class="sxs-lookup"><span data-stu-id="dbbb8-142">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6a835-142">関連項目</span><span class="sxs-lookup"><span data-stu-id="6a835-142">See also</span></span>
 
-- [<span data-ttu-id="dbbb8-143">データの劣化層 API について</span><span class="sxs-lookup"><span data-stu-id="dbbb8-143">About the Data Degradation Layer API</span></span>](about-the-data-degradation-layer-api.md)
-- [<span data-ttu-id="dbbb8-144">定数 (データの劣化層 API)</span><span class="sxs-lookup"><span data-stu-id="dbbb8-144">Constants (Data degradation layer API)</span></span>](constants-data-degradation-layer-api.md)
+- [<span data-ttu-id="6a835-143">データの劣化層 API について</span><span class="sxs-lookup"><span data-stu-id="6a835-143">About the Data Degradation Layer API</span></span>](about-the-data-degradation-layer-api.md)
+- [<span data-ttu-id="6a835-144">定数 (データの劣化層 API)</span><span class="sxs-lookup"><span data-stu-id="6a835-144">Constants (Data degradation layer API)</span></span>](constants-data-degradation-layer-api.md)
 
