@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 8b2acad7-5ef8-44db-911f-3bd2a7ca2778
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d5c92c243069e5b8b500df086169c8e5b961976d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d7b50a92c58dd7ab1f03cb4cf84acc2d4a2b404b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570717"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395792"
 ---
 # <a name="normal-state"></a>Normal 状態
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 通常の状態では、form オブジェクトが変更を保存するか、フォームを閉じるなどの操作を開始するクライアント アプリケーションを待機して、その時間のほとんどを費やしています。 次の表では、通常の状態から有効な遷移について説明します。
   
@@ -27,7 +27,7 @@ ms.locfileid: "22570717"
 |:-----|:-----|:-----|
 |[IPersistMessage::Save](ipersistmessage-save.md)(_pMessage = =_ NULL _fSameAsLoad = =_ TRUE)  <br/> または  <br/> **IPersistMessage::Save**(_pMessage! =_ NULL _fSameAsLoad = =_ は FALSE)  <br/> |保存に変更されたすべての埋め込み OLE オブジェクトを再帰的にします。 メッセージ オブジェクトには、メッセージ データを保存します。 [NoScribble](noscribble-state.md)状態で後で使用できる_fSameAsLoad_フラグを格納します。  <br/> |NoScribble  <br/> |
 |**IPersistMessage::Save**(_pMessage! =_ NULL _fSameAsLoad = =_ TRUE)  <br/> |これは、この**保存**の呼び出しはメモリ不足の状況で使用され、メモリ不足によって失敗する必要がありますが、前の例と同じです。  <br/> |NoScribble  <br/> |
-|[IPersistMessage::HandsOffMessage](ipersistmessage-handsoffmessage.md) <br/> |再帰的には、埋め込みメッセージでは、 **HandsOffMessage**メソッドまたは埋め込まれた OLE オブジェクトの OLE の[IPersistStorage::HandsOffStorage](http://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d%28Office.15%29.aspx)メソッドを呼び出します。 メッセージ オブジェクトを解放し、埋め込みオブジェクトまたはメッセージ。  <br/> |[HandsOffFromNormal](handsofffromnormal-state.md) <br/> |
+|[IPersistMessage::HandsOffMessage](ipersistmessage-handsoffmessage.md) <br/> |再帰的には、埋め込みメッセージでは、 **HandsOffMessage**メソッドまたは埋め込まれた OLE オブジェクトの OLE の[IPersistStorage::HandsOffStorage](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d%28Office.15%29.aspx)メソッドを呼び出します。 メッセージ オブジェクトを解放し、埋め込みオブジェクトまたはメッセージ。  <br/> |[HandsOffFromNormal](handsofffromnormal-state.md) <br/> |
 |[IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md)、 [IPersistMessage::InitNew](ipersistmessage-initnew.md)または[IPersistMessage::Load](ipersistmessage-load.md) <br/> |最後のエラーを設定、E_UNEXPECTED を返します。  <br/> |Normal  <br/> |
 |[IPersistMessage::GetLastError](ipersistmessage-getlasterror.md) <br/> |最後のエラーを返します。  <br/> |Normal  <br/> |
 |他の[IPersistMessage: IUnknown](ipersistmessageiunknown.md)メソッドまたはその他のインターフェイスのメソッド  <br/> |マニュアルで説明するように実装、 [IPersistMessage: IUnknown](ipersistmessageiunknown.md)インタ フェースです。  <br/> |Normal  <br/> |

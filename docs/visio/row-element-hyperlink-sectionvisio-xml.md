@@ -6,24 +6,24 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: f87cd7a4-b9de-5fb1-20ec-90759c966bd9
-description: 図形間の複数のジャンプを作成するか、図面のページと別の図面ページ、別のファイル、または Web サイトの要素が含まれています。
-ms.openlocfilehash: ea2428ffbefa9ac2bf592e37d10c0089e72f6ef1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 図形間の複数のジャンプを作成するか、図面のページと別の図面ページ、別のファイル、または web サイトの要素が含まれています。
+ms.openlocfilehash: 16935e463e76e0f0ee72b3fa40964551cf125cdd
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806312"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400034"
 ---
 # <a name="row-element-hyperlink-section-visio-xml"></a>行要素 (ハイパーリンクを参照) ('Visio XML')
 
-図形間の複数のジャンプを作成するか、図面のページと別の図面ページ、別のファイル、または Web サイトの要素が含まれています。
+図形間の複数のジャンプを作成するか、図面のページと別の図面ページ、別のファイル、または web サイトの要素が含まれています。
   
 ## <a name="element-information"></a>要素情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[HyperlinkRow_Type](hyperlinkrow_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml をマスター、# .xml のページ  <br/> |
    
@@ -42,7 +42,7 @@ ms.locfileid: "19806312"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[セクション](section-element-sheet_type-complextypevisio-xml.md) <br/> |[Section_Type](section_type-complextypevisio-xml.md) <br/> |図形間の複数のジャンプを作成するか、図面のページと別の図面ページ、別のファイル、または Web サイトの要素が含まれています。  <br/> |
+|[セクション](section-element-sheet_type-complextypevisio-xml.md) <br/> |[Section_Type](section_type-complextypevisio-xml.md) <br/> |図形間の複数のジャンプを作成するか、図面のページと別の図面ページ、別のファイル、または web サイトの要素が含まれています。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 

@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: e9ee8865-0983-439e-8405-7946c5ec8762
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 68d7472f993bcc35abbd4b733bae9f137b948608
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: be765915b729824b8c8b4209f125f354b02bad2b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576842"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394343"
 ---
 # <a name="create-a-simple-recurrent-task-item"></a>単純な繰り返しのタスク アイテムを作成します。
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 タスク アイテムを作成する作成するのには、MAPI を使用できます。 このトピックでは、単純な繰り返しのタスク項目を作成する方法について説明します。
   
@@ -42,7 +42,7 @@ ms.locfileid: "22576842"
   
 `AddTask`関数は、下に表示されます。 _LpFolder_パラメーターが渡されることに注意、`AddTask`関数は、新しいタスクが作成されるフォルダーを表す[IMAPIFolder](imapifolderimapicontainer.md)インターフェイスへのポインター。 コードは、 **IMAPIFolder**インターフェイスを表す_lpFolder_を指定するには、 [IMAPIFolder::CreateMessage](imapifolder-createmessage.md)メソッドを呼び出します。 **メイル**メソッドは、 **IMessage**インターフェイスへのポインターへの成功コードとポインターを返します。 ほとんどの`AddTask`関数のコードは、プロパティを指定する[IMAPIProp::SetProps](imapiprop-setprops.md)メソッドを呼び出すための準備としての作業を行っています。 **SetProps**メソッドの呼び出しが成功した場合、ストアに変更をコミットし、新しい作業項目を作成する[IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドが呼び出されます。 
   
-`AddTask`関数は、いくつかの名前付きプロパティを設定します。 名前付きプロパティと作成方法については、 [Outlook 2007 のアイテムの作成に MAPI を使用する](http://msdn.microsoft.com/en-us/library/cc678348%28office.12%29.aspx)を参照してください。 作業項目に使用する名前付きプロパティが複数のプロパティ セットを占有するため注意する必要があるパラメーターを作成するとき[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)メソッドに渡されます。 
+`AddTask`関数は、いくつかの名前付きプロパティを設定します。 名前付きプロパティと作成方法については、 [Outlook 2007 のアイテムの作成に MAPI を使用する](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)を参照してください。 作業項目に使用する名前付きプロパティが複数のプロパティ セットを占有するため注意する必要があるパラメーターを作成するとき[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)メソッドに渡されます。 
   
 `AddTask`機能は、 `BuildWeeklyTaskRecurrencePattern` 、 **dispidTaskRecur**プロパティを設定するために定期的な仕事を表す構造を構築するヘルパー関数です。 タスクの繰り返し構造については、`BuildWeeklyTaskRecurrencePattern`ビルドの機能、[標準的なプロパティの PidLidTaskRecurrence](pidlidtaskrecurrence-canonical-property.md)と[PidLidRecurrencePattern の標準的なプロパティ](pidlidrecurrencepattern-canonical-property.md)を参照してください。 
 
@@ -178,5 +178,5 @@ HRESULT AddTask(LPMAPIFOLDER lpFolder,
 
 ## <a name="see-also"></a>関連項目
 
-- [MAPI を使用して Outlook 2007 のアイテムを作成するには](http://msdn.microsoft.com/en-us/library/cc678348%28office.12%29.aspx)
+- [MAPI を使用して Outlook 2007 のアイテムを作成するには](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)
 

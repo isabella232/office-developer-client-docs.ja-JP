@@ -6,12 +6,12 @@ ms.audience: ITPro
 localization_priority: Normal
 ms.assetid: c0fa8fed-1585-4566-a9be-ef6d6d1b4ce8
 description: ソフトウェア管理ソリューションと Office 365 クイック実行インストーラーを統合する方法について説明します。
-ms.openlocfilehash: abe941e3e3818eed1f18108f1678e46e8156b08c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0e9e82fbf86b81ad35928277ff11fe9b86d91964
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804697"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401749"
 ---
 # <a name="integrating-manageability-applications-with-office-365-click-to-run-installer"></a>実行をクリックしてインストーラーを Office 365 管理アプリケーションと統合します。
 
@@ -351,7 +351,7 @@ HRESULT status([out] _UPDATE_STATUS_REPORT& pUpdateStatusReport) // Get status o
 > [!NOTE]
 > [!メモ] この概要は、「[管理容易性アプリケーションと Office 365 クイック実行インストーラーの統合](https://msdn.microsoft.com/EN-US/library/office/mt608768.aspx)」の補完情報として提供します。パブリック ドキュメントの更新後は、このドキュメントは廃止と見なされます。 
   
-C2RTenant [16.0.8208.6352](http://oloop/BuildGroup/Details/tenantc2rclient#3519/1255278) (最初の一般公開ビルドは 6 月のフォーク ビルド 8326.* になります) 以降に、新しい **IUpdateNotify2** インターフェイスが追加されています。次に、このインターフェイスに関する基本情報の一部を示します。 
+C2RTenant [16.0.8208.6352](https://oloop/BuildGroup/Details/tenantc2rclient#3519/1255278) (最初の一般公開ビルドは 6 月のフォーク ビルド 8326.* になります) 以降に、新しい **IUpdateNotify2** インターフェイスが追加されています。次に、このインターフェイスに関する基本情報の一部を示します。 
   
 - CLSID_UpdateNotifyObject2, {52C2F9C2-F1AC-4021-BF50-756A5FA8DDFE}
     
@@ -373,7 +373,7 @@ C2RTenant [16.0.8208.6352](http://oloop/BuildGroup/Details/tenantc2rclient#3519/
   
 ## <a name="implementing-the-bits-interface"></a>BITS インターフェイスの実装
 
-[Background Intelligent Transfer Service](https://msdn.microsoft.com/en-us/library/bb968799(v=vs.85).aspx) (BITS) は、クライアントとサーバーの間でファイルを転送するための Microsoft が提供するサービスです。BITS は、Office クイック実行インストーラーがコンテンツのダウンロードに使用できるチャネルの 1 つです。既定では、Office クイック実行インストーラーは、Windows に組み込まれている BITS の実装を使用して、CDN からコンテンツをダウンロードします。 
+[Background Intelligent Transfer Service](https://msdn.microsoft.com/library/bb968799(v=vs.85).aspx) (BITS) は、クライアントとサーバーの間でファイルを転送するための Microsoft が提供するサービスです。BITS は、Office クイック実行インストーラーがコンテンツのダウンロードに使用できるチャネルの 1 つです。既定では、Office クイック実行インストーラーは、Windows に組み込まれている BITS の実装を使用して、CDN からコンテンツをダウンロードします。 
   
 カスタマイズされた BITS の実装を **IUpdateNotify** インターフェイスの **download()** メソッドに提供すると、管理ソフトウェアはクライアントがコンテンツをダウンロードする場所と方法を制御できます。カスタマイズされた BITS インターフェイスは、Office CDN、IIS サーバー、ファイル共有など、クイック実行組み込みチャネル以外のカスタム コンテンツ配布チャネルを提供する場合に便利です。 
   
@@ -474,7 +474,7 @@ If the update is applicable, the manageability software can use the CDN content 
   
 ### Format of the XML file list
 
-There are two file lists available in a cab file on the CDN. One lists the files for the 32-bit version of Office and one for the 64-bit version of Office. The URL of the location of the Office File List (OFL.CAB) file is [http://officecdn.microsoft.com/pr/wsus/ofl.cab](http://officecdn.microsoft.com/pr/wsus/ofl.cab). The two file lists are called:
+There are two file lists available in a cab file on the CDN. One lists the files for the 32-bit version of Office and one for the 64-bit version of Office. The URL of the location of the Office File List (OFL.CAB) file is [https://officecdn.microsoft.com/pr/wsus/ofl.cab](https://officecdn.microsoft.com/pr/wsus/ofl.cab). The two file lists are called:
   
 - O365Client_32bit.xml
     
@@ -512,18 +512,18 @@ The steps for creating an image are:
 The following examples use the Monthly channel (as defined by the  `baseURL` node) and build version 16.0.4229.1004 from releasehistory.xml. 
   
 ```cpp
-baseURL branch="Monthly" URL="http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60" /
+baseURL branch="Monthly" URL="https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60" /
 ```
 
-- The following is a language neutral file needed for all languages. The name of the file is v64_16.0.4229.1004.cab and it should be copied from http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/v64_16.0.4229.1004.cab and renamed to …/office/data/v64.cab.
+- The following is a language neutral file needed for all languages. The name of the file is v64_16.0.4229.1004.cab and it should be copied from https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/v64_16.0.4229.1004.cab and renamed to …/office/data/v64.cab.
     
   ```cpp
-  baseURL branch="Business" URL="http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114" /
+  baseURL branch="Business" URL="https://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114" /
   File name="v64_%version%.cab" rename="v64.cab" relativePath="/office/data/" language="0"/
   
   ```
 
-- The following is a file to be included in the en-US image as designated by the language LCID=1033. The name of the file is s641033.cab and it should be copied from http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/16.0.4229.1004/s641033.cab and not renamed.
+- The following is a file to be included in the en-US image as designated by the language LCID=1033. The name of the file is s641033.cab and it should be copied from https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/16.0.4229.1004/s641033.cab and not renamed.
     
   ```cpp
   File name="s641033.cab" relativePath="/office/data/%version%/" language="1033" /
@@ -537,7 +537,7 @@ Image creation tools may verify the integrity of the downloaded .dat files by co
 File name="stream.x64.bg-bg.dat" hashLocation="s641026.cab/stream.x64.bg-bg.hash" hashAlgo="Sha256" relativePath="/office/data/%version%/" language="1026"
 ```
 
-- The  _hashLocation_ attribute specifies the relative path location of the stream.x64.bg-bg.hash for the stream.x64.bg-bg.dat file. Construct the hash file location by concatenating URL + relativePath + hashLocation. In this example the stream.x64.bg-bg.hash location would be http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/16.0.4229.1004/s641026.cab/stream.x64.bg-bg.hash 
+- The  _hashLocation_ attribute specifies the relative path location of the stream.x64.bg-bg.hash for the stream.x64.bg-bg.dat file. Construct the hash file location by concatenating URL + relativePath + hashLocation. In this example the stream.x64.bg-bg.hash location would be https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/16.0.4229.1004/s641026.cab/stream.x64.bg-bg.hash 
     
 - The  _hashAlgo_ attribute specifies what hashing algorithm was used. In this case the Sha256 algorithm was used. 
     
@@ -574,8 +574,8 @@ Each Office 365 Client Update that is published includes metadata about the upda
 The following is an example of the  _MoreInfoURL_ parameter which refers to the Office 365 Client Update for the 32-bit version of Office with build version of 16.0.2342.2343 on the Current channel. 
   
 ```http
-http://officecdn.microsoft.com/pr/wsus/ofl.cab is the location of the XML file lists for this update, specifically the O365Client_32bit.xml from within the OFL.CAB.
-http://go.microsoft.com/fwlink/?LinkId=626090&Ver=16.0.8326.2096&Branch=Current&Arch=64&XMLVer=1.4&xmlPath=http://officecdn.microsoft.com/pr/wsus/ofl.cab&xmlFile=O365Client_64bit.xml 
+https://officecdn.microsoft.com/pr/wsus/ofl.cab is the location of the XML file lists for this update, specifically the O365Client_32bit.xml from within the OFL.CAB.
+https://go.microsoft.com/fwlink/?LinkId=626090&Ver=16.0.8326.2096&Branch=Current&Arch=64&XMLVer=1.4&xmlPath=https://officecdn.microsoft.com/pr/wsus/ofl.cab&xmlFile=O365Client_64bit.xml 
 
 ```
 THE ABOVE SECTION APPEARS TO BE A DUPLICATE OF THE FOLLOWING SECTION; TEMPORARILY COMMENTING IT OUT.-->
@@ -600,7 +600,7 @@ IT 管理者は、更新プログラムが利用できるようになったと�
   
 ### <a name="format-of-the-xml-file-list"></a>XML ファイル一覧の形式
 
-CDN の cab ファイルには、2 つの利用可能なファイル リストが含まれています。その一方には Office の 32 ビット バージョン用のファイルがリストされています。もう一方は Office の 64 ビット バージョン用です。Office ファイル リスト (OFL.CAB) ファイルの場所の URL は、[http://officecdn.microsoft.com/pr/wsus/ofl.cab](http://officecdn.microsoft.com/pr/wsus/ofl.cab) です。この 2 つのファイルの名前は次のとおりです。
+CDN の cab ファイルには、2 つの利用可能なファイル リストが含まれています。その一方には Office の 32 ビット バージョン用のファイルがリストされています。もう一方は Office の 64 ビット バージョン用です。Office ファイル リスト (OFL.CAB) ファイルの場所の URL は、[https://officecdn.microsoft.com/pr/wsus/ofl.cab](https://officecdn.microsoft.com/pr/wsus/ofl.cab) です。この 2 つのファイルの名前は次のとおりです。
   
 - O365Client_32bit.xml
     
@@ -636,17 +636,17 @@ CDN の cab ファイルには、2 つの利用可能なファイル リスト�
 次の例では、Monthly チャネル ( `<baseURL>` ノードで定義) と、releasehistory.xml からのビルド バージョン 16.0.4229.1004 を使用します。 
   
 ```xml
-<baseURL branch="Monthly" URL="http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60" />
+<baseURL branch="Monthly" URL="https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60" />
 ```
 
-- 次の例は、すべての言語に必要な言語非依存のファイルです。 ファイルの名前は、v64_16.0.4229.1004.cab とそのコピーから`http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/v64_16.0.4229.1004.cab`に名前を変更したと`…/office/data/v64.cab`。 
+- 次の例は、すべての言語に必要な言語非依存のファイルです。 ファイルの名前は、v64_16.0.4229.1004.cab とそのコピーから`https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/v64_16.0.4229.1004.cab`に名前を変更したと`…/office/data/v64.cab`。 
     
   ```xml
   <File name="v64_%version%.cab" rename="v64.cab" relativePath="/office/data/" language="0"/>
   
   ```
 
-- 次の例は、言語 LCID=1033 で指定されている en-US イメージに組み込まれるファイルです。ファイルの名前は s641033.cab で、`http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/16.0.4229.1004/s641033.cab` からコピーし、名前は変更しません。
+- 次の例は、言語 LCID=1033 で指定されている en-US イメージに組み込まれるファイルです。ファイルの名前は s641033.cab で、`https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/16.0.4229.1004/s641033.cab` からコピーし、名前は変更しません。
     
   ```xml
   <File name="s641033.cab" relativePath="/office/data/%version%/" language="1033" />
@@ -663,7 +663,7 @@ CDN の cab ファイルには、2 つの利用可能なファイル リスト�
 - **hashLocation** 属性は、stream.x64.bg-bg.dat ファイルに対する stream.x64.bg-bg.hash の相対パスの場所を指定します。URL + relativePath + hashLocation を連結して、ハッシュ ファイルの場所を構成します。 この例では、stream.x64.bg-bg.hash の場所は次のようになります。 
     
   ```http
-  http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/16.0.4229.1004/s641026.cab/stream.x64.bg-bg.hash 
+  https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/16.0.4229.1004/s641026.cab/stream.x64.bg-bg.hash 
   ```
 
 - **hashAlgo** 属性は、使用されたハッシュ アルゴリズムを指定します。この例では、Sha256 が使用されています。 
@@ -679,7 +679,7 @@ CDN の cab ファイルには、2 つの利用可能なファイル リスト�
 
 ### <a name="office-365-client-updates"></a>Office 365 クライアント更新プログラム
 
-すべての Office 365 クライアント更新プログラムは、[Microsoft Update カタログ](http://www.catalog.update.microsoft.com/Search.aspx?q=office+365+client)に公開されます。
+すべての Office 365 クライアント更新プログラムは、[Microsoft Update カタログ](https://www.catalog.update.microsoft.com/Search.aspx?q=office+365+client)に公開されます。
   
 Office 365 クライアント更新プログラムにより、管理ソフトウェアは、その他の WU 更新プログラムとほとんど同じ方法で Office 365 クライアントの更新を処理できるようになります。ただし、クライアント更新プログラムには実際のペイロードが含まれていないという 1 つの例外があります。Office 365 クライアント更新プログラムは、クライアントにインストールするのではなく、管理ソフトウェアでワークフローをトリガーするために使用します。このワークフローでは、インストール コマンドを前述した COM ベースのインストール メカニズムに置き換えます。 
   
@@ -703,9 +703,9 @@ Office 365 クライアント更新プログラムにより、管理ソフトウ
     
 次の  *MoreInfoURL*  パラメーターの例は、Current チャネルの Office 32 ビット バージョン用の Office 365 クライアント更新プログラム リリース (ビルド バージョン 16.0.2342.2343) を参照します。 
   
-http://officecdn.microsoft.com/pr/wsus/ofl.cab は、この更新プログラムの XML ファイル リスト (具体的には、OFL.CAB 内の O365Client_32bit.xml) の場所です。
+https://officecdn.microsoft.com/pr/wsus/ofl.cab は、この更新プログラムの XML ファイル リスト (具体的には、OFL.CAB 内の O365Client_32bit.xml) の場所です。
   
-[Office 365 クライアント更新プログラムのチャネルのリリース](http://go.microsoft.com/fwlink/?LinkId=626090&Ver=16.0.8326.2096&Branch=Current&Arch=64&XMLVer=1.4&xmlPath=http://officecdn.microsoft.com/pr/wsus/ofl.cab&xmlFile=O365Client_64bit.xml)
+[Office 365 クライアント更新プログラムのチャネルのリリース](https://go.microsoft.com/fwlink/?LinkId=626090&Ver=16.0.8326.2096&Branch=Current&Arch=64&XMLVer=1.4&xmlPath=https://officecdn.microsoft.com/pr/wsus/ofl.cab&xmlFile=O365Client_64bit.xml)
   
 ### <a name="additional-metadata-for-automating-content-staging"></a>コンテンツのステージングを自動化するための追加のメタデータ
 
@@ -713,7 +713,7 @@ http://officecdn.microsoft.com/pr/wsus/ofl.cab は、この更新プログラム
   
 **SKU です。XML**
   
-この XML ファイルは、署名された CAB に含まれていて、次の URL で Office CDN に公開されています: [http://officecdn.microsoft.com/pr/wsus/skus.cab](http://officecdn.microsoft.com/pr/wsus/skus.cab)。
+この XML ファイルは、署名された CAB に含まれていて、次の URL で Office CDN に公開されています: [https://officecdn.microsoft.com/pr/wsus/skus.cab](https://officecdn.microsoft.com/pr/wsus/skus.cab)。
   
 この XML ファイルで公開されるメタデータは、展開できる製品を判断して、それらに対応する各種オプションとともに Office CDN からのサービスを利用する際に役立ちます。 
   
@@ -760,7 +760,7 @@ http://officecdn.microsoft.com/pr/wsus/ofl.cab は、この更新プログラム
     
 **RELEASEHISTORY。XML**
   
-この XML ファイルは、署名された CAB に含まれていて、次の場所で Office CDN に公開されています: [http://officecdn.microsoft.com/pr/wsus/releasehistory.cab](http://officecdn.microsoft.com/pr/wsus/releasehistory.cab)。 
+この XML ファイルは、署名された CAB に含まれていて、次の場所で Office CDN に公開されています: [https://officecdn.microsoft.com/pr/wsus/releasehistory.cab](https://officecdn.microsoft.com/pr/wsus/releasehistory.cab)。 
   
 この XML ファイルで公開されるメタデータは、サポートされている各チャネルのビルド履歴に関する情報とともに、Office CDN からサービスされる更新プログラムでサポートされるチャネルを判断する際に役立ちます。
   

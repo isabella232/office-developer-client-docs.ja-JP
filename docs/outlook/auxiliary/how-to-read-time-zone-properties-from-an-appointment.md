@@ -7,16 +7,16 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: ba1b9425-6c16-cab2-da0a-a21734118098
 description: このトピックでは、ReadTimeZones、BinToTZDEFINITION と BinToTZREG、予定表で、PidLidAppointmentTimeZoneDefinitionStartDisplay と PidLidTimeZoneStruct、タイム ゾーンのプロパティを読み取ることの 2 つの関数を呼び出す関数を示します。
-ms.openlocfilehash: a344f44a1f195ec6dc5f80677f08f52be490e6b1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 67755ba49c5572005c6138e34329491148a199a1
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799317"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396037"
 ---
 # <a name="read-time-zone-properties-from-an-appointment"></a>予定からタイム ゾーンのプロパティを読み取る
 
-このトピックで説明する関数では、 `ReadTimeZones`、2 つの関数を呼び出す`BinToTZDEFINITION`と`BinToTZREG`、予定表で、 [PidLidAppointmentTimeZoneDefinitionStartDisplay](http://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx)と[PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)、タイム ゾーンのプロパティを読み取ることです。
+このトピックで説明する関数では、 `ReadTimeZones`、2 つの関数を呼び出す`BinToTZDEFINITION`と`BinToTZREG`、予定表で、 [PidLidAppointmentTimeZoneDefinitionStartDisplay](https://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx)と[PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)、タイム ゾーンのプロパティを読み取ることです。
   
 **PidLidAppointmentTimeZoneDefinitionStartDisplay**には、 [TZDEFINITION](tzdefinition.md)構造体の保存形式に対応するストリームが含まれていて、 **PidLidTimeZoneStruct**にはの[TZREG](tzreg.md)の保存形式に対応するストリームが含まれています。構造体です。 正確な**TZDEFINITION**と**TZREG**の構造を取得するのには`BinToTZDEFINITION`と`BinToTZREG`これらのプロパティのストリームの値を適切に解析するために使用します。 これら 2 つの関数は、それぞれの[TZDEFINITION 構造体を読み取るためのバイナリのプロパティからのストリームを解析](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md)し、 [TZREG 構造体を読み取るためのバイナリのプロパティからのストリームの解析](how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md)をで定義されます。 
   

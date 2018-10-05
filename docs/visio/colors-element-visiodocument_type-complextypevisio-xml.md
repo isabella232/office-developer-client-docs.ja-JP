@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3f439c2d-78be-5f2e-fa5a-f3feb83a0234
 description: 図面のカラー テーブルが含まれています。
-ms.openlocfilehash: d13690ce6e1772ab1a43e697e8b99c0776a204b0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bd46f58dfbb8a596717662b9a0524d59bb508270
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805029"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400531"
 ---
 # <a name="colors-element-visiodocumenttype-complextype-visio-xml"></a>色要素 (VisioDocument_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805029"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Colors_Type](colors_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
    

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 93e38f6c-4b67-4f2d-bc94-631efec86852
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9dfc3b3381139b6b7fe47fb369d1cd69ee5e9677
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 317c3702415ddf30038ccd0d40cdf0f19abc61f8
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587839"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399649"
 ---
 # <a name="imapisessionlogoff"></a>IMAPISession::Logoff
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 MAPI セッションを終了します。
   
@@ -57,15 +57,15 @@ MAPI_LOGOFF_UI
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > ログオフ操作が正常に完了しました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
-**IMAPISession::Logoff**メソッドでは、MAPI セッションを終了します。 **ログオフ**が返されるときは[リ ス](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx)を除くメソッド呼び出すことができます。 
+**IMAPISession::Logoff**メソッドでは、MAPI セッションを終了します。 **ログオフ**が返されるときは[リ ス](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)を除くメソッド呼び出すことができます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
@@ -73,11 +73,11 @@ S_OK
   
 セッションの終了についての詳細については、 [MAPI セッションを終了](ending-a-mapi-session.md)を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
 |MAPIObjects.cpp  <br/> |CMapiObjects::Logoff  <br/> |MFCMAPI では、 **IMAPISession::Logoff**メソッドを使用して、それを解放する前にセッションからログオフします。  <br/> |
    
@@ -91,7 +91,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 [IMAPISession: IUnknown](imapisessioniunknown.md)
 
 
-[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
+[コード サンプルとしての MFCMAPI](mfcmapi-as-a-code-sample.md)
   
 [MAPI セッションの終了](ending-a-mapi-session.md)
 

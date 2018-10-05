@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: f18d797e-9885-f2fb-a521-5172aac7894c
 description: ドキュメントの動的なグリッド機能が有効になっているかどうかを指定します。
-ms.openlocfilehash: aa463f55dd3733e4a424146bcdc0e8557cfacde8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d92f717ee07118abab8b2acf81b54197afb22b45
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805282"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396170"
 ---
 # <a name="dynamicgridenabled-element-documentsettingstype-complextype-visio-xml"></a>DynamicGridEnabled 要素 (DocumentSettings_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805282"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[DynamicGridEnabled_Type](dynamicgridenabled_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |windows.xml、document.xml  <br/> |
    

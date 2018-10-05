@@ -13,12 +13,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 0ad49ff6-8dff-4379-a52c-d292c53c2bc0
 description: Project 2013 のデスクトップ クライアント アプリケーション-標準 2013 のプロジェクトとプロジェクトの評価のため、カスタマイズし、マクロを作成するのには VBA を使用して拡張できます。 Visual Studio 2012 を使用するにはリボンのユーザー インターフェイスをカスタマイズし、新しい機能拡張モデルの一般的な Office 2013 のプラットフォームに組み込まれているプロジェクトでの作業ウィンドウに Office アドインを有効に複雑なアドインを作成します。 プロジェクト標準 2013 および評価のためのプロジェクトは一般的な Office のアドインを実行し、アドインを使用して作業ウィンドウの SharePoint、他の web サイトや web アプリケーション、および外部のデータと統合するプロジェクト専用に開発されました。
-ms.openlocfilehash: 9e89c5a1f6486ce49ad8b95bcd7a92497b7a2436
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: cc345f0ff91dfb573dd86c256e89df478edd4924
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594741"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394826"
 ---
 # <a name="project-client-programming"></a>Project クライアントのプログラミング
 
@@ -31,11 +31,11 @@ Project 2013 のデスクトップ クライアント アプリケーション-�
   
 **MSProject** Project 2013 での VBA オブジェクト モデルは、基本的に 2013 (VSTO とも呼ばれます) を Visual Studio の Office 開発ツールにマネージ コード ソリューションの**Microsoft.Office.Interop.MSProject**オブジェクト モデルと同じです。 Visual Studio 2012 には、アプリケーション レベルのアドイン プロジェクト 2010年と Project 2013 (標準的なプロジェクトまたはプロジェクトのプロフェッショナル ・ バージョン) を開発するためのテンプレートが含まれています。 VSTO と Visual Studio 2012 ののための Office 開発ツールが簡単に開発、テスト、および Project デスクトップ クライアントおよびその他の Office 2013 アプリケーションを使用でき、SharePoint サイト、リスト、統合の高度な統合ソリューションを展開してワークフローです。 
   
-作業ウィンドウ - アドインおよびその他のアドインを Office および SharePoint は、Office ストアで販売できます (を参照してください[http://office.microsoft.com/store/](http://office.microsoft.com/en-us/store/)) プロジェクトのオンラインと設置型の両方のインストールで使用するためです。 Office ストアには、マクロを VBA と VSTO アドインを配布することはできません。標準的なプロジェクトと Project Professional をローカルで使用するためのものです。 プロジェクト内の VBA マクロを配布することができます。MPP ファイルは、Global.MPT ファイル、お使いのコンピューター上でインストールまたは Project Server 2013 のエンタープライズ グローバル テンプレートの配布。 VSTO アドインは、 [ClickOnce](http://msdn.microsoft.com/en-us/library/t71a733d.aspx)配置では、簡単に更新プログラムを有効より安全に配布できます。 
+作業ウィンドウ - アドインおよびその他のアドインを Office および SharePoint は、Office ストアで販売できます (を参照してください[https://office.microsoft.com/store/](https://office.microsoft.com/en-us/store/)) プロジェクトのオンラインと設置型の両方のインストールで使用するためです。 Office ストアには、マクロを VBA と VSTO アドインを配布することはできません。標準的なプロジェクトと Project Professional をローカルで使用するためのものです。 プロジェクト内の VBA マクロを配布することができます。MPP ファイルは、Global.MPT ファイル、お使いのコンピューター上でインストールまたは Project Server 2013 のエンタープライズ グローバル テンプレートの配布。 VSTO アドインは、 [ClickOnce](https://msdn.microsoft.com/library/t71a733d.aspx)配置では、簡単に更新プログラムを有効より安全に配布できます。 
   
 ## <a name="reference"></a>リファレンス
 
-[プロジェクトの VBA の開発者用リファレンス](http://msdn.microsoft.com/en-us/library/ee861523%28office.15%29.aspx)入門が含まれていて、VBA ヘルプの記事です。 
+[プロジェクトの VBA の開発者用リファレンス](https://msdn.microsoft.com/library/ee861523%28office.15%29.aspx)入門が含まれていて、VBA ヘルプの記事です。 
   
 ## <a name="related-sections"></a>関連情報
 
@@ -43,9 +43,9 @@ Project 2013 のデスクトップ クライアント アプリケーション-�
   
 ## <a name="see-also"></a>関連項目
 
-- [開発者のためのプロジェクト](http://msdn.microsoft.com/en-us/office/aa905469)
+- [開発者のためのプロジェクト](https://msdn.microsoft.com/office/aa905469)
 - [Office デベロッパー センター](https://dev.office.com)
-- [Visual Studio のデベロッパー センター](http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx)
-- [ClickOnce のセキュリティと展開](http://msdn.microsoft.com/en-us/library/t71a733d.aspx)
+- [Visual Studio のデベロッパー センター](https://msdn.microsoft.com/vstudio/aa718325.aspx)
+- [ClickOnce のセキュリティと展開](https://msdn.microsoft.com/library/t71a733d.aspx)
 - [利用可能なフィールドの参照](https://support.office.com/en-us/article/available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
 

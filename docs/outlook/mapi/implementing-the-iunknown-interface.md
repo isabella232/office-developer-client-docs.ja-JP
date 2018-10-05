@@ -8,22 +8,22 @@ api_type:
 - COM
 ms.assetid: 01bba63b-a2a1-490e-8b78-5c9ba8d9547b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f9ab3b75743d882aca0145b73b8ef707204cc8de
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5165476ea131e40153191e8625af5ea3c49f47b1
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571900"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397416"
 ---
 # <a name="implementing-the-iunknown-interface"></a>IUnknown インターフェイスの実装
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-すべての MAPI オブジェクトに実装されている、 [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx)インターフェイスのメソッドをサポートして通信とオブジェクト管理を決める基準について説明します。 
+すべての MAPI オブジェクトに実装されている、 [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)インターフェイスのメソッドをサポートして通信とオブジェクト管理を決める基準について説明します。 
   
- **IUnknown**には 3 つの方法: [IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx)、 [IUnknown::QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx)、および[リ ス](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx)。 **QueryInterface**には、別のオブジェクトが特定のインターフェイスをサポートしているかどうかを決定する 1 つのオブジェクトが有効にします。 **QueryInterface**を持つ他の機能の予備知識がない 2 つのオブジェクトを操作できます。 **QueryInterface**を実装するオブジェクトには、対象のインターフェイスをサポートして場合、は、インターフェイスの実装にポインターを返します。 オブジェクトが要求されたインターフェイスをサポートしていない場合は、MAPI_E_INTERFACE_NOT_SUPPORTED 値を返します。 
+ **IUnknown**には 3 つの方法: [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)、 [IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)、および[リ ス](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)。 **QueryInterface**には、別のオブジェクトが特定のインターフェイスをサポートしているかどうかを決定する 1 つのオブジェクトが有効にします。 **QueryInterface**を持つ他の機能の予備知識がない 2 つのオブジェクトを操作できます。 **QueryInterface**を実装するオブジェクトには、対象のインターフェイスをサポートして場合、は、インターフェイスの実装にポインターを返します。 オブジェクトが要求されたインターフェイスをサポートしていない場合は、MAPI_E_INTERFACE_NOT_SUPPORTED 値を返します。 
   
 **QueryInterface**に要求されたインターフェイス ポインターが返されるとき、新しいオブジェクトの参照カウントも増加する必要です。 オブジェクトの参照カウントは、オブジェクトの有効期間を管理するために使用する数値値です。 参照カウントが 1 より大きい場合は、積極的に使用されているため、オブジェクトのメモリを解放できません。 だけすると、リファレンス カウントが 0 にオブジェクトを安全に解放できることをお勧めします。 
   

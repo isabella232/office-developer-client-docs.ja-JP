@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 041c1b07-7ad4-f786-c6dc-32a41d4d5e04
 description: かどうかユーザーできません作成または編集するスタイルを指定します。
-ms.openlocfilehash: d4cc5bd06742fc29db7b740e9b470f7dc6a5e17a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e3d74a5b3af964caad62a79b4c4958661ea101b0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806122"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400244"
 ---
 # <a name="protectstyles-element-documentsettingstype-complextype-visio-xml"></a>ProtectStyles 要素 (DocumentSettings_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806122"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[ProtectStyles_Type](protectstyles_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
    

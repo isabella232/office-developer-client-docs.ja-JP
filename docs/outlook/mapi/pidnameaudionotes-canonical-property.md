@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: aec4d328-c192-4672-a478-b08442352794
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 97986215a2280d64a7affa817e81d66e4fb82817
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 188ddf13e623292e95a1af4af54cf4254d7b0345
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577766"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396282"
 ---
 # <a name="pidnameaudionotes-canonical-property"></a>PidNameAudioNotes 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ボイス メッセージに関連付けられている注釈テキストを指定します。
   
@@ -33,9 +33,9 @@ ms.locfileid: "22577766"
 |プロパティを設定します。  <br/> |PSETID_UnifiedMessaging  <br/> |
 |プロパティ名:  <br/> |UMAudioNotes  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |ユニファイド メッセージング  <br/> |
+|エリア:  <br/> |ユニファイド メッセージング  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 閲覧、ボイス メッセージに直接オーディオ ノートを編集して、エンド ・ ユーザーを有効にするには、クライアントには、音声メッセージのオブジェクトのこのプロパティに追加されるメモのセットをユーザーが入力できる編集ボックスが用意されています。
   
@@ -43,11 +43,11 @@ ms.locfileid: "22577766"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOUM]](http://msdn.microsoft.com/library/2a0696c5-2caf-4f20-87fb-085db430afec%28Office.15%29.aspx)
+[[MS OXOUM]](https://msdn.microsoft.com/library/2a0696c5-2caf-4f20-87fb-085db430afec%28Office.15%29.aspx)
   
 > プロパティとは、ボイス メールと fax メッセージを表示するための許可の操作を指定します。
     

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 1e689ee4-9e89-4328-beb9-05c80a6544a0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 55d838661dcbe0efb604e6a623a434f9ae87512e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ab906d83ae4ad46747fd9037728620db1d656d25
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567784"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394770"
 ---
 # <a name="pidtagviewdescriptorname-canonical-property"></a>PidTagViewDescriptorName 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ビュー記述子の名前が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22567784"
 |関連するプロパティ:  <br/> |PR_VD_NAME、PR_VD_NAME_A、PR_VD_NAME_W  <br/> |
 |識別子:  <br/> |0x7006  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |クラスによって定義されたメッセージ送信できます。  <br/> |
+|エリア:  <br/> |クラスによって定義されたメッセージ送信できます。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 これらのプロパティは、ビューの定義を含むフォルダーに関連付ける情報 (FAI) メッセージの空でない文字列に設定する必要があります。
   
@@ -42,7 +42,7 @@ ms.locfileid: "22567784"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXOCFG]](http://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
+[[MS OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
   
 > 場所と共有カテゴリのリストおよび作業時間など、クライアントとサーバーの構成データのプロパティを指定します。
     

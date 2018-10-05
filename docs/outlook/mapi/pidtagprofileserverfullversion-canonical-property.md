@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8c88a625-da57-3b1d-9887-0a898b722766
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a10209bd965591e9049027e46d84d904bba14065
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9456178e9426d7a5fe17382d876f507daa0251f4
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580230"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396177"
 ---
 # <a name="pidtagprofileserverfullversion-canonical-property"></a>PidTagProfileServerFullVersion 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 プロファイル内のアカウントが接続されている Microsoft Exchange Server の完全なバージョンとビルドの情報を指定します。
   
@@ -30,9 +30,9 @@ ms.locfileid: "22580230"
 |関連するプロパティ:  <br/> |PR_PROFILE_SERVER_FULL_VERSION  <br/> |
 |識別子:  <br/> |0x663B  <br/> |
 |プロパティの種類:  <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |MAPI プロファイルの構成  <br/> |
+|エリア:  <br/> |MAPI プロファイルの構成  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 プロファイルが Exchange Server に接続する 1 つまたは複数のアカウントを指定できますが、同一の Exchange Server に接続する必要があります。
   
@@ -48,7 +48,7 @@ Outlook オブジェクト モデルでは、アクティブなメールボッ�
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義を提供します。
     

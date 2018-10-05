@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 38aedff8-e7b5-0758-c573-0ffa6a244c9c
 description: このリファレンスには、概念の概要のトピックおよび Visio ファイル形式を使用してソリューションを開発するときに、例を含む、参照トピックが含まれています。
-ms.openlocfilehash: 0f5147e70febc0883f0de0dbd23eb5a7f6f1660d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 28e7541515720c5516ce45cd48274becedd63cf3
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593432"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396786"
 ---
 # <a name="visio-file-format-reference"></a>Visio ファイル形式のリファレンス
 
@@ -36,9 +36,9 @@ ms.locfileid: "22593432"
     
 ## <a name="see-also"></a>関連項目
 
-- [開発者は、Visio](http://msdn.microsoft.com/en-us/office/aa905478.aspx) 
-- [マイクロソフト製品のアクセシビリティ機能](http://www.microsoft.com/enable/products/default.aspx)
-- [ドキュメントの表記規則](http://msdn.microsoft.com/en-us/office/aa905365.aspx) 
+- [開発者は、Visio](https://msdn.microsoft.com/office/aa905478.aspx) 
+- [マイクロソフト製品のアクセシビリティ機能](https://www.microsoft.com/enable/products/default.aspx)
+- [ドキュメントの表記規則](https://msdn.microsoft.com/office/aa905365.aspx) 
 - [Visio SDK の著作権表示](visio-sdk-copyright-notice.md)
 
     

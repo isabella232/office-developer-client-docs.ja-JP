@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: be72a893-a3bc-4dea-8234-47f3e1db4515
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5cb791d0d350a04864191a0a9d35a2f1c8b165d7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 71108da8bb9914bb7ed0ad0b3adacc24e1d69e63
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577717"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400146"
 ---
 # <a name="link-to-mapi-functions"></a>MAPI の関数へのリンクします。
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 リンクの 3 つの方法があります: 暗黙的なリンク、明示的なリンク、および MAPI スタブ ライブラリを使用して新しいハイブリッド モデルです。
   
@@ -121,7 +121,7 @@ Mapi32.lib では使用できませんが、このライブラリにリンクし
     
 MAPI スタブ ライブラリを組み込むことの別の方法は、プロジェクトに直接、MapiStubLibrary.cpp、StubUtils.cpp、ソース ファイルをコピーし、Mapi32.lib へのリンケージ、および MAPI に明示的にリンクする任意のコードを削除することです。
   
-MAPI スタブ ライブラリのファイルにアクセスし、ビルドし、統合のプロジェクトと同様にこのライブラリについての質問に次のようにタイミングと理由についての情報を使用してを参照してください[MAPI スタブ ライブラリ](http://mapistublibrary.codeplex.com/documentation)CodePlex サイトです。 
+MAPI スタブ ライブラリのファイルにアクセスし、ビルドし、統合のプロジェクトと同様にこのライブラリについての質問に次のようにタイミングと理由についての情報を使用してを参照してください[MAPI スタブ ライブラリ](https://mapistublibrary.codeplex.com/documentation)CodePlex サイトです。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -129,7 +129,7 @@ MAPI スタブ ライブラリのファイルにアクセスし、ビルドし�
 - [MAPI サブシステムのインストール](installing-the-mapi-subsystem.md)
 - [MAPI ヘッダー ファイルをインストールする](how-to-install-mapi-header-files.md)
 - [読み込む MAPI の特定のバージョンを選択する](how-to-choose-a-specific-version-of-mapi-to-load.md)
-- [使用するリンク方式の使い分け](http://msdn.microsoft.com/en-us/library/253b8k2c.aspx)
-- [実行可能ファイルを DLL にリンクします。](http://msdn.microsoft.com/en-us/library/9yd93633.aspx)
-- [MAPI DLL の MSI のキーの設定](http://msdn.microsoft.com/en-us/library/ee909494%28v=VS.85%29.aspx)
+- [使用するリンク方式の使い分け](https://msdn.microsoft.com/library/253b8k2c.aspx)
+- [実行可能ファイルを DLL にリンクします。](https://msdn.microsoft.com/library/9yd93633.aspx)
+- [MAPI DLL の MSI のキーの設定](https://msdn.microsoft.com/library/ee909494%28v=VS.85%29.aspx)
 

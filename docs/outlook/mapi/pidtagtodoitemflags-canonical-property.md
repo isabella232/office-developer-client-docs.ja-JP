@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: bb7ccb45-ce08-4d22-9259-db15cd267e34
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 79f6c90d1ebd2257cc428e88dfce3d9ee9dfeccf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6ddc7231afef0a224b92be7fe86216e56200ab70
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573468"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400286"
 ---
 # <a name="pidtagtodoitemflags-canonical-property"></a>PidTagToDoItemFlags 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 To do アイテムのフラグが設定された状態を表します。
   
@@ -32,16 +32,16 @@ To do アイテムのフラグが設定された状態を表します。
 |関連するプロパティ:  <br/> |PR_TODO_ITEM_FLAGS  <br/> |
 |識別子:  <br/> |0x0E2B  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |MAPI 以外から送信できます。  <br/> |
+|エリア:  <br/> |MAPI 以外から送信できます。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、ビット フィールドの各ビットが 1 に設定する次の表に関連付けられている条件を適用する場合は 0 です。
   
 ||||
 |:-----|:-----|:-----|
 |数値  <br/> |名前  <br/> |説明  <br/> |
-|存在しません。  <br/> |該当なし  <br/> |フラグなし  <br/> |
+|存在しません。  <br/> |N/A  <br/> |フラグなし  <br/> |
 |1  <br/> |todoTimeFlagged  <br/> |オブジェクトは、フラグが設定された時間です。  <br/> |
 |8  <br/> |todoRecipientFlagged  <br/> |下書きメッセージ オブジェクトにのみ設定する必要があり、受信者のオブジェクトのフラグが設定されていることを意味します。  <br/> |
    
@@ -51,11 +51,11 @@ To do アイテムのフラグが設定された状態を表します。
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOFLAG]](http://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
+[[MS OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
   
 > プロパティ フラグに関連する操作を指定します。
     

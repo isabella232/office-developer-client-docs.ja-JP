@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: a5e9f807-12a9-4bc9-a6a5-17579e747ffa
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6017871b9567406af0898eede0d5659b468b3343
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d12e8510686f51698981c47327f79ef40d3ec342
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581035"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396226"
 ---
 # <a name="pidtagmappingsignature-canonical-property"></a>PidTagMappingSignature 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 特定の MAPI オブジェクトの名前付きプロパティのマッピングの署名が含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22581035"
 |関連するプロパティ:  <br/> |PR_MAPPING_SIGNATURE  <br/> |
 |識別子:  <br/> |0x0FF8  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |その他  <br/> |
+|エリア:  <br/> |その他  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 名前付きプロパティを持つオブジェクトがこのプロパティを公開することをお勧めします。 という名前の別の 1 つのオブジェクトからプロパティをコピーするとき、クライアント アプリケーションは両方のオブジェクトの**PR_MAPPING_SIGNATURE**プロパティを確認する必要があります。 このプロパティの使用方法は、コピーされたプロパティの名前と id の間の変換を最小限にできます。 
   
@@ -48,11 +48,11 @@ ms.locfileid: "22581035"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
 > プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
     

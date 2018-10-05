@@ -8,24 +8,24 @@ api_type:
 - COM
 ms.assetid: ee3a65ec-c776-4aa1-a772-de56fc33a8d1
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7fb1e20d35e756dc0681f4927d9f542628482cb6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6b41d9cbd6ec74167dce74e97bb0923817dc6f84
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583261"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395967"
 ---
 # <a name="downloading-the-outlook-mapi-samples"></a>Outlook MAPI のサンプルのダウンロード
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 Microsoft Outlook MAPI サンプルには、アドレス帳プロバイダー、メッセージ ストア プロバイダー、およびトランスポート プロバイダーが含まれます。
   
  **サンプルのアドレス帳プロバイダーをダウンロードするには**
   
-1. Outlook MAPI のサンプルをダウンロードするには、 [Outlook メッセージ API (MAPI) のコード サンプル](http://ol2010mapisamples.codeplex.com/)ページの [**ホーム**] タブをクリックします。 
+1. Outlook MAPI のサンプルをダウンロードするには、 [Outlook メッセージ API (MAPI) のコード サンプル](https://ol2010mapisamples.codeplex.com/)ページの [**ホーム**] タブをクリックします。 
     
 2. [**ホーム**] タブで、**ここをクリックすると、Outlook 2010 の MAPI サンプルのソースをダウンロードする**] をクリックします。
     

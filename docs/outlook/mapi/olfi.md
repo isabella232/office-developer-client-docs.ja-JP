@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 44bfaadf-36f9-bd8e-6158-646533f6849e
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7d01f07b5eb5ca34b4bd825b62b7d1520b853d6b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 027905721b5730b4c3d78f496022b88a8e6b84d6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564263"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397024"
 ---
 # <a name="olfi"></a>OLFI
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 新しいメッセージまたはオフライン モードでのフォルダーのエントリ ID を割り当てるには、個人用フォルダー ファイル (PST) のストア プロバイダーによって使用される ID 構造体は、常に長期的なキューです。
   
@@ -67,9 +67,9 @@ typedef struct {
   
 - 長期的な ID の構造が次の使用可能なエントリを識別します。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
-エントリ ID は、フォルダーまたはメッセージの 4 バイト MAPI エントリ識別子です。 詳細については、[エントリ ID](http://msdn.microsoft.com/en-us/library/ms836424)を参照してください。
+エントリ ID は、フォルダーまたはメッセージの 4 バイト MAPI エントリ識別子です。 詳細については、[エントリ ID](https://msdn.microsoft.com/library/ms836424)を参照してください。
   
 PST ストア プロバイダーは、新しいオブジェクトのエントリ ID を割り当てます、ときに、サーバーを識別する GUID とストア内のオブジェクトを識別するインデックスが最初に必要です。 GUID は、すべてのエントリ Id の間では一意ではありません、でも GUID と組み合わせてインデックスは、一意のエントリを提供します。 この GUID とインデックスの組み合わせは、 **OLFI**構造体の一部である構造体で長期的な ID、 **LTID**、追跡されます。 
   

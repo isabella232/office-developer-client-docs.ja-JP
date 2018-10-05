@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 810f54bf-5b78-46b8-a617-4f61ff816400
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0b4cc2fe82db60a2302f33a194314e0df1458a89
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 288ece7a26fb89fa240339da681f163909124823
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586915"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397059"
 ---
 # <a name="install-the-samples-used-in-this-section"></a>このセクションで使用されるサンプルをインストールします。
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 MFCMAPI アプリケーションと CreateOutlookItemsAddin のプロジェクトを表示しを[MAPI を使用して Outlook アイテムを作成する](creating-outlook-items-by-using-mapi.md)セクションのトピックによって参照されているサンプル コードを実行するをインストールするには、以下の手順を実行します。 
 
@@ -25,11 +25,11 @@ MFCMAPI アプリケーションと CreateOutlookItemsAddin のプロジェク�
 
 ### <a name="to-download-and-install-the-mfcmapi-application-and-open-createoutlookitemsaddin-project"></a>ダウンロードと MFCMAPI アプリケーションをインストールし、CreateOutlookItemsAddin プロジェクトを開く
 
-1. [MFCMAPI](http://go.microsoft.com/fwlink/?LinkID=124154)実行可能ファイルの現在のバージョンをシステム上のフォルダーにダウンロードします。 
+1. [MFCMAPI](https://go.microsoft.com/fwlink/?LinkID=124154)実行可能ファイルの現在のバージョンをシステム上のフォルダーにダウンロードします。 
     
 2. MFCMapi.exe で MFCMapi.exe ファイルを抽出します。 ハード ドライブに空のフォルダーに .zip を_バージョン_です。
     
-3. [CreateOutlookItemsAddin](http://go.microsoft.com/fwlink/?LinkID=127828)プロジェクトの現在のバージョンをダウンロードします。 
+3. [CreateOutlookItemsAddin](https://go.microsoft.com/fwlink/?LinkID=127828)プロジェクトの現在のバージョンをダウンロードします。 
     
 4. MFCMapi.exe ファイルを手順 2 で展開したフォルダーに CreateOutlookItemsAddin.zip ファイル内のすべてのファイルを抽出します。
     
@@ -70,7 +70,7 @@ MFCMAPI アプリケーションと CreateOutlookItemsAddin のプロジェク�
 
 ### <a name="to-download-and-view-the-mfcmapi-application-source-code"></a>MFCMAPI アプリケーションのソース コードをダウンロードして
 
-1. [MFCMAPI](http://go.microsoft.com/fwlink/?LinkID=124154)アプリケーション、システム上のフォルダーの現在のバージョンのソース コードをダウンロードします。 
+1. [MFCMAPI](https://go.microsoft.com/fwlink/?LinkID=124154)アプリケーション、システム上のフォルダーの現在のバージョンのソース コードをダウンロードします。 
     
 2. MFCMAPI の_変更セット_.zip を空のフォルダーのハード ドライブのファイルを抽出します。
     

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 815dabf3-3cac-40e1-b6ff-51db2ff5096a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7c84e4ad44fbbaad1a49d5866b8b505ca005ddfd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ad8d6934b5e57429de5039e9420742caa9dd4294
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583856"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397696"
 ---
 # <a name="pidtagicon-canonical-property"></a>PidTagIcon 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 フォームのフル サイズのアイコンのビットマップが含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22583856"
 |関連するプロパティ:  <br/> |PR_ICON  <br/> |
 |識別子:  <br/> |0x0FFD  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |MAPI 以外から送信できます。  <br/> |
+|エリア:  <br/> |MAPI 以外から送信できます。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティには、内容と同じアイコンの 32 × 32 ピクセルのイメージが含まれているのです。ICO ファイルです。 このプロパティは通常からコピーします。ICO ファイルがフォーム構成ファイルの該当する [説明] セクションの LargeIcon 行で指定します。 
   
@@ -42,7 +42,7 @@ ms.locfileid: "22583856"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     

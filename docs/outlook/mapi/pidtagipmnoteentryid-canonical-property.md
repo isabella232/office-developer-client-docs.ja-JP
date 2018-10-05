@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: c003f7b9-b0cd-4656-98fa-3466fda6832c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3fdaa7edef50224ff2687201c5b19f61d31f49e4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3d465bfeb30d4f2964254b1d1f524f964fde7239
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580951"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394892"
 ---
 # <a name="pidtagipmnoteentryid-canonical-property"></a>PidTagIpmNoteEntryId 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 Outlook のメモ フォルダーの**エントリ Id**が含まれています。 
   
@@ -32,9 +32,9 @@ Outlook のメモ フォルダーの**エントリ Id**が含まれています�
 |関連するプロパティ:  <br/> |PR_IPM_NOTE_ENTRYID  <br/> |
 |識別子:  <br/> |0x36D3  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |Folder  <br/> |
+|エリア:  <br/> |Folder  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、メッセージ ・ ストアのルート フォルダーと同様に、[受信トレイ] フォルダーに格納されます。 特定のメッセージ ストアのプロパティにアクセスするには、次の操作を行います。 
   
@@ -52,15 +52,15 @@ Outlook のメモ フォルダーの**エントリ Id**が含まれています�
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOSFLD]](http://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
+[[MS OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
   
 > プロパティを作成すると、メールボックス内の特別なフォルダーを検索する操作を指定します。
     
-[[MS OXODLGT]](http://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)
+[[MS OXODLGT]](https://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)
   
 > 接続し、別のユーザーに代わって動作する場合は、デリゲート、およびメッセージと予定表のオブジェクトとの対話としてメールボックスを構成するためのメソッドを指定します。
     

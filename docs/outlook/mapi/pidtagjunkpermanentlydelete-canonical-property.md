@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 5f06ad00-7205-48d8-a9ff-f5c6b5e38c5e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9265aab47bdc78fb74fa2652ab4a7b60ea275d7a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c3e766dc494234ed500892cfa2fc8590c347f8e6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587447"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393811"
 ---
 # <a name="pidtagjunkpermanentlydelete-canonical-property"></a>PidTagJunkPermanentlyDelete 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 スパムを完全に削除することがありますように、メッセージを 1 に設定が確認された場合は、意味します。
   
@@ -32,17 +32,17 @@ ms.locfileid: "22587447"
 |関連するプロパティ:  <br/> |PR_JUNK_PERMANENTLY_DELETE  <br/> |
 |識別子:  <br/> |0x6102  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |スパム  <br/> |
+|エリア:  <br/> |スパム  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCSPAM]](http://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
+[[MS OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
   
 > 許可/禁止リストの処理、迷惑メール メッセージの決定を可能にします。
     

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 0500dee8-a39d-45ce-87b1-c515e92e083d
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: ae8b5a474675c0afd771f4e8dfd060d0b379c8f4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7f1dd7a23bbd643b496b7634b6ad0230c806585f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572222"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398606"
 ---
 # <a name="tracking-conversations"></a>��b��Ǘ����܂��B
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ��b����́A���b�Z�[�W�ɑ΂���ԐM����W���Ă��܂��B�N���C�A���g�́A��b�̊Ǘ��ɖ𗧂� 2 �̃v���p�e�B��ݒ肷��K�v������܂��B
   
@@ -47,7 +47,7 @@ ms.locfileid: "22572222"
     
 - 30 �̂����ꂩ�̃r�b�g�� **FILETIME**�P�ʂŃw�b�_�[�̃u���b�N�̌��݂̎����Ǝ��Ԃ̈Ⴂ���܂܂�Ă��܂��B�ŏ��̃r�b�g�̒l�ɉ����āA2 �̕��@�̂����ꂩ��g�p���Ďq�u���b�N�̂��̕�������������܂��B���̃r�b�g�� 0 �̏ꍇ�́A��� 15 �r�b�g�Ɖ��� 18 �r�b�g **ScCreateConversationIndex**��j�����܂��B���̃r�b�g�� 1 �̏ꍇ�́A���̊֐��́A��� 10 �r�b�g�Ɖ��� 23 �r�b�g��j�����܂��B 
     
-- 4 �r�b�g��[GetTickCount](http://msdn.microsoft.com/en-us/library/ms724408%28VS.85%29.aspx)Win32 �֐���Ăяo���ɂ���Đ��������A�����_���Ȕԍ����܂܂�Ă��܂��B
+- 4 �r�b�g��[GetTickCount](https://msdn.microsoft.com/library/ms724408%28VS.85%29.aspx)Win32 �֐���Ăяo���ɂ���Đ��������A�����_���Ȕԍ����܂܂�Ă��܂��B
     
 - �V�[�P���X��܂� 4 �r�b�g�̐��̓����_���Ȕԍ��̕�������擾�������܂��B
     

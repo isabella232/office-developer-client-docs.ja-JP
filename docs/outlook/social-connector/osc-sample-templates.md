@@ -8,16 +8,16 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 896932d7-bd71-4a55-aa58-394a9ccf0d5e
 description: 'C++、C# および Visual Basic でいくつかのプロバイダー テンプレートには、Outlook ソーシャル コネクタ 2013 プロバイダーの参照に付属しています。 Outlook ソーシャル コネクタ 2013 でテンプレートをダウンロードすることができます: プロバイダー テンプレートです。'
-ms.openlocfilehash: a15cc6a7530adc38b89660c489d0c27904b86211
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e99808247fdf9bb2f06018e5ef54e6b9dc23ff3b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804453"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395925"
 ---
 # <a name="osc-sample-templates"></a>OSC サンプル テンプレート
 
-C++、C# および Visual Basic でいくつかのプロバイダー テンプレートには、Outlook ソーシャル コネクタ 2013 プロバイダーの参照に付属しています。 テンプレートをダウンロードすることができます[Outlook ソーシャル コネクタ 2013: プロバイダー テンプレート](http://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c)。
+C++、C# および Visual Basic でいくつかのプロバイダー テンプレートには、Outlook ソーシャル コネクタ 2013 プロバイダーの参照に付属しています。 テンプレートをダウンロードすることができます[Outlook ソーシャル コネクタ 2013: プロバイダー テンプレート](https://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c)。
   
 プロバイダー テンプレートは、任意の言語でプロバイダーを作成するときに使用可能な。 プロバイダーのダウンロード サイズを最小限に抑えると、プロバイダーの読み込み時間を最小限に抑えるためには、C++ を使用して製造プロバイダーを構築する必要があります。 .NET Framework 3.5 SP1 または自分のコンピューターにインストールされている.NET Framework のそれ以降のバージョンを持つユーザーのプロバイダーを開発する場合 C# または Visual Basic を使用してマネージ プロバイダーを作成することも検討することができます。
   

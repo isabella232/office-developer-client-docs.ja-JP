@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 716325eb-b092-4934-921f-84129d0a1f5f
 description: Project Server 2013 のクライアント側オブジェクト モデル (CSOM) は、一般的なサーバーの機能を実装します。 プロジェクトのサーバー CSOM には、Microsoft .NET CSOM、Microsoft Silverlight の CSOM、Windows Phone 8 CSOM では、JavaScript オブジェクト モデル (JSOM) が含まれています。 さらに、CSOM には、REST インターフェイスを有効にする OData サービスが含まれています。 REST インターフェイスは、iOS および Android などの Windows 以外のプラットフォームでアプリケーションの開発を主に対象としています。
-ms.openlocfilehash: a17dc816cd2033ff0057821ef029f0163881f9ac
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8be603fbee35f228dea0fa6b6be087b8e09c30e5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804541"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394448"
 ---
 # <a name="client-side-object-model-csom-for-project-2013"></a>Project 2013 のクライアント側オブジェクト モデル (CSOM)
 
@@ -27,9 +27,9 @@ CSOM の拡張機能では、 **ProjectContext**オブジェクトは、サー�
  **クエリの残りの部分**メタデータを消費することがなく、CSOM の OData サービスの残りのクエリを作成できます。 いくつかのサード ・ パーティ製ツールは、他のデバイス用のアプリケーションを開発するのには、CSOM の .NET アセンブリを使用して有効にします。 たとえば、プラットフォーム間で .NET 開発ツールの iOS や Android」をインターネットで検索します。 
   
 > [!NOTE]
-> ですが、 `$metadata` **ProjectData**サービスが有効なレポート作成ののためのオプション ( `http://ServerName/pwaName/_api/ProjectData/$metadata`)、`$metadata`オプションを使用しない、CSOM の**ProjectServer**サービスは、Project Server 2013 のリリース バージョンで削除されています。 CSOM オブジェクトと他のエンドポイントとして使用可能なメンバーを参照してください[JavaScript ライブラリおよび Project Server 2013 の残りの部分参照](javascript-library-and-rest-reference-for-project-server-2013.md)。 
+> ですが、 `$metadata` **ProjectData**サービスが有効なレポート作成ののためのオプション ( `https://ServerName/pwaName/_api/ProjectData/$metadata`)、`$metadata`オプションを使用しない、CSOM の**ProjectServer**サービスは、Project Server 2013 のリリース バージョンで削除されています。 CSOM オブジェクトと他のエンドポイントとして使用可能なメンバーを参照してください[JavaScript ライブラリおよび Project Server 2013 の残りの部分参照](javascript-library-and-rest-reference-for-project-server-2013.md)。 
   
-REST インターフェイスで CSOM で使用可能なエンティティを表示するには、使用することができます、`http://ServerName/pwaName/_api/ProjectServer`クエリします。 クエリの残りの部分、 **ProjectServer**エンティティより忠実に再現、 [ProjectContext](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.aspx)でオブジェクトのプロパティ Microsoft.ProjectServer.Client.dll はマネージ アセンブリと[PS.ProjectContext](http://msdn.microsoft.com/library/a490b675-a845-ee94-3877-b99ada9bf2b0%28Office.15%29.aspx) 、JSOM 内のオブジェクト。 次のクエリを使用してプロジェクトを Project Web App を指定したプロジェクトと、指定したリソースに指定した割り当てのタスク名の割り当てでは、CSOM から情報を取得するのにはお使いのブラウザーを使用するたとえば、(各クエリを使用して、同じ`http://ServerName/pwaName/_api`の URL 接頭辞)。 Guid は、 **Project.Id**、 **EnterpriseResource.Id**、および**Assignment.Id**のサンプル値です。
+REST インターフェイスで CSOM で使用可能なエンティティを表示するには、使用することができます、`https://ServerName/pwaName/_api/ProjectServer`クエリします。 クエリの残りの部分、 **ProjectServer**エンティティより忠実に再現、 [ProjectContext](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.aspx)でオブジェクトのプロパティ Microsoft.ProjectServer.Client.dll はマネージ アセンブリと[PS.ProjectContext](https://msdn.microsoft.com/library/a490b675-a845-ee94-3877-b99ada9bf2b0%28Office.15%29.aspx) 、JSOM 内のオブジェクト。 次のクエリを使用してプロジェクトを Project Web App を指定したプロジェクトと、指定したリソースに指定した割り当てのタスク名の割り当てでは、CSOM から情報を取得するのにはお使いのブラウザーを使用するたとえば、(各クエリを使用して、同じ`https://ServerName/pwaName/_api`の URL 接頭辞)。 Guid は、 **Project.Id**、 **EnterpriseResource.Id**、および**Assignment.Id**のサンプル値です。
   
 ```HTML
 /ProjectServer/Projects
@@ -37,7 +37,7 @@ REST インターフェイスで CSOM で使用可能なエンティティを表
 /ProjectServer/EnterpriseResources('28eeb2b5-fe74-4efc-aa35-6a64514d1526')/Assignments('a2eafeb5-437c-e111-92fc-00155d3ba208')/Task?$select=Name
 ```
 
-**ProjectData**サービスには、読み取り専用のレポートでは、OData インターフェイスとは異なり、 **ProjectServer**サービスと他のクエリを使用して CRUD 操作を行うことができます。 プロジェクトのサーバー CSOM の残りのクエリは、Windows RT、iOS、Android など、Windows のデスクトップ以外のプラットフォーム用では主に設計されています。 Windows デスクトップおよびサーバー プラットフォーム、Windows 7、Windows 8 では、Windows Server 2008 R2 などの CSOM のマネージ アセンブリを使用できます。 Web アプリケーションでは、JavaScript の PS.js を使用できます。 残りのクエリを使用して CRUD 操作を行う方法の詳細については、SharePoint 2013 SDK に[SharePoint の他の要求のクエリ操作を使用して OData](http://msdn.microsoft.com/library/d4b5c277-ed50-420c-8a9b-860342284b72%28Office.15%29.aspx)を参照してください。 **ProjectData**サービスを使用する方法の詳細については、[プロジェクトのレポート データのフィードの OData をクエリを実行する](https://msdn.microsoft.com/en-us/library/office/jj163048.aspx)を参照してください。
+**ProjectData**サービスには、読み取り専用のレポートでは、OData インターフェイスとは異なり、 **ProjectServer**サービスと他のクエリを使用して CRUD 操作を行うことができます。 プロジェクトのサーバー CSOM の残りのクエリは、Windows RT、iOS、Android など、Windows のデスクトップ以外のプラットフォーム用では主に設計されています。 Windows デスクトップおよびサーバー プラットフォーム、Windows 7、Windows 8 では、Windows Server 2008 R2 などの CSOM のマネージ アセンブリを使用できます。 Web アプリケーションでは、JavaScript の PS.js を使用できます。 残りのクエリを使用して CRUD 操作を行う方法の詳細については、SharePoint 2013 SDK に[SharePoint の他の要求のクエリ操作を使用して OData](https://msdn.microsoft.com/library/d4b5c277-ed50-420c-8a9b-860342284b72%28Office.15%29.aspx)を参照してください。 **ProjectData**サービスを使用する方法の詳細については、[プロジェクトのレポート データのフィードの OData をクエリを実行する](https://msdn.microsoft.com/library/office/jj163048.aspx)を参照してください。
   
 表 1 は、Project Server のオブジェクトを表す**ProjectContext**のプロパティを一覧表示します。 割り当てやタスクなど、他の Project Server 2013 のエンティティを取得するためにこれらのオブジェクトを使用できます。 
   
@@ -84,5 +84,5 @@ CSOM の使用方法を示す次の記事も確認してください。
 [Project Server 2013 のアーキテクチャ](project-server-2013-architecture.md)
 
 
-[SharePoint 2013 での適切な API セットの選択](http://msdn.microsoft.com/library/f36645da-77c5-47f1-a2ca-13d4b62b320d%28Office.15%29.aspx)
+[SharePoint 2013 での適切な API セットの選択](https://msdn.microsoft.com/library/f36645da-77c5-47f1-a2ca-13d4b62b320d%28Office.15%29.aspx)
 

@@ -5,12 +5,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 85581bc7-2d81-46af-8836-adef39c933fc
 description: MFCMAPI では、Exchange と Outlook の問題の調査を容易にして、MAPI の開発のためのサポートを開発者に提供するのには、MAPI ストアへのアクセスを提供します。
-ms.openlocfilehash: 8df9a4c2783829b7f3540046daecb12ce0b6b86a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8a300ad53918b22cc3de5554a1e3c29289cd9365
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800225"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397878"
 ---
 # <a name="create-an-outlook-profile-using-mfcmapi"></a>MFCMAPI を使用して Outlook プロファイルを作成する
 
@@ -103,7 +103,7 @@ MFCMAPI では、Exchange と Outlook の問題の調査を容易にして、MAP
   
 ## <a name="see-also"></a>関連項目
 
-- [Outlook MAPI リファレンス](https://msdn.microsoft.com/en-us/library/office/cc765775.aspx)  
-- [Outlook でプログラムによりプロファイルを作成する](https://msdn.microsoft.com/en-us/library/office/mt707568.aspx)
+- [Outlook MAPI リファレンス](https://msdn.microsoft.com/library/office/cc765775.aspx)  
+- [Outlook でプログラムによりプロファイルを作成する](https://msdn.microsoft.com/library/office/mt707568.aspx)
     
 

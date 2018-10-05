@@ -6,24 +6,24 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 90ce0ea3-ba73-cb57-0fa9-8898bc4ac9de
 description: '�ŏI�X�V��: 2012�N7��5��'
-ms.openlocfilehash: 5b16da68a5cc5ab9e005a262bf1518ea90aac570
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a1574de555eb74d06c4dbe721e7e013ac59d3071
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587538"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397766"
 ---
 # <a name="installing-the-sample-wrapped-pst-store-provider"></a>ラップされた PST ストア プロバイダーのサンプルのインストール
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 このトピックでは、ダウンロードしてサンプル ラップ PST ストア プロバイダーをインストールする手順について説明します。 サンプル ラップ PST ストア プロバイダー、WrapPST は、レプリケーション API と連携して使用するものでは、ラップされた PST ストア プロバイダーを実装します。 レプリケーション API の詳細については、 [「レプリケーション API 詳細](about-the-replication-api.md)を参照してください。
   
 ## <a name="install-the-sample-wrapped-pst-store-provider"></a>サンプルのラップされた PST ストア プロバイダーをインストールします。
 
-1. サンプル ラップ PST ストア プロバイダーをダウンロードするには、 [Outlook 2007 の補助リファレンス コード サンプルおよび再頒布可能なインストーラー](http://www.microsoft.com/en-us/download/details.aspx?id=24102)を参照してください。
+1. サンプル ラップ PST ストア プロバイダーをダウンロードするには、 [Outlook 2007 の補助リファレンス コード サンプルおよび再頒布可能なインストーラー](https://www.microsoft.com/en-us/download/details.aspx?id=24102)を参照してください。
     
 2. **SampleWrappedPSTStoreProvider**フォルダーを開き、[**すべてのファイルの抽出**] をクリックします。
     

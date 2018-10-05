@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 09955996-b904-4c0d-8ba5-954a8875c055
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6ed73cd683f1668900a76f7b8c48494952e9fc14
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7b2761e20444c51d08380aee01c41eee797733eb
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573349"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396492"
 ---
 # <a name="imapimessagesitedeletemessage"></a>IMAPIMessageSite::DeleteMessage
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 現在のメッセージを削除します。
   
@@ -42,9 +42,9 @@ HRESULT DeleteMessage(
     
  _prcPosRect_
   
-> [in]現在のフォームのウィンドウのサイズと位置を含む[RECT](http://msdn.microsoft.com/en-us/library/dd162897%28VS.85%29.aspx)構造体へのポインター。 次に表示されるフォームは、このウィンドウの四角形にも使用します。 
+> [in]現在のフォームのウィンドウのサイズと位置を含む[RECT](https://msdn.microsoft.com/library/dd162897%28VS.85%29.aspx)構造体へのポインター。 次に表示されるフォームは、このウィンドウの四角形にも使用します。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -54,7 +54,7 @@ MAPI_E_NO_SUPPORT
   
 > このメッセージのサイトでは、操作はサポートされていません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 フォーム オブジェクトは、フォームが現在表示されているメッセージを削除するのには**IMAPIMessageSite::DeleteMessage**メソッドを呼び出します。 
   
@@ -76,15 +76,15 @@ MAPI_E_NO_SUPPORT
     
 4. 削除または、メッセージを移動します。
     
-フォームのウィンドウで使用されている**RECT**構造体を取得するには、Windows[ハンドル](http://msdn.microsoft.com/en-us/library/ms633519)関数を呼び出します。 
+フォームのウィンドウで使用されている**RECT**構造体を取得するには、Windows[ハンドル](https://msdn.microsoft.com/library/ms633519)関数を呼び出します。 
   
 フォームのサーバーに関連するインターフェイスの一覧は、 [MAPI フォームのインタ フェース](mapi-form-interfaces.md)を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
 |MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::DeleteMessage  <br/> |実装されていません。  <br/> |
    
@@ -103,7 +103,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 [IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
-[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
+[コード サンプルとしての MFCMAPI](mfcmapi-as-a-code-sample.md)
   
 [MAPI フォーム インターフェイス](mapi-form-interfaces.md)
 

@@ -7,16 +7,16 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 0dec535d-d48f-39a5-97d5-0bd109134b3b
 description: タイム ゾーンのプロパティ、PidLidAppointmentTimeZoneDefinitionEndDisplay、PidLidAppointmentTimeZoneDefinitionRecur、および PidLidAppointmentTimeZoneDefinitionStartDisplay はバイナリに対応するストリームを含む、プロパティの名前、TZDEFINITION 構造体の永続化された形式です。
-ms.openlocfilehash: 8e00c7203e2a0adfdf9ff3e6dadff6485c8b5111
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f94b751a55aa852c962eebe5d46968e9e622e315
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799294"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398620"
 ---
 # <a name="about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property"></a>バイナリ プロパティにコミットするためにストリームに TZDEFINITION を保持することについて
 
-タイム ゾーンのプロパティ、 [PidLidAppointmentTimeZoneDefinitionEndDisplay](http://msdn.microsoft.com/library/7b6193cb-612b-408e-b9bc-285df313e2cc%28Office.15%29.aspx)、 [PidLidAppointmentTimeZoneDefinitionRecur](http://msdn.microsoft.com/library/52fd57a0-9e34-4452-9ecd-2acb454446c9%28Office.15%29.aspx)、および[PidLidAppointmentTimeZoneDefinitionStartDisplay](http://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx)はバイナリのプロパティを名前付きの[TZDEFINITION](tzdefinition.md)構造体の保存形式に対応するストリームが含まれています。 
+タイム ゾーンのプロパティ、 [PidLidAppointmentTimeZoneDefinitionEndDisplay](https://msdn.microsoft.com/library/7b6193cb-612b-408e-b9bc-285df313e2cc%28Office.15%29.aspx)、 [PidLidAppointmentTimeZoneDefinitionRecur](https://msdn.microsoft.com/library/52fd57a0-9e34-4452-9ecd-2acb454446c9%28Office.15%29.aspx)、および[PidLidAppointmentTimeZoneDefinitionStartDisplay](https://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx)はバイナリのプロパティを名前付きの[TZDEFINITION](tzdefinition.md)構造体の保存形式に対応するストリームが含まれています。 
   
 このトピックでは、次の 3 つのバイナリ プロパティのいずれかにコミットする**TZDEFINITION**をストリームに保存する場合に使用できる、リトル エンディアン形式について説明します。 これらのプロパティのいずれかから取得したストリームの値を解釈するためにパーサーで同じのエンディアンの形式を使用します。 
   

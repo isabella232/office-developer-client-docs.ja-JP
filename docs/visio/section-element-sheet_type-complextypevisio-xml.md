@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2e7e5dcc-f667-a08c-caa0-4b81e3126ef9
 description: 関連するプロパティのコレクションを指定します。
-ms.openlocfilehash: c729ddd18da7b19499be72a71a9d0666791da207
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e20d076d4e1958cce29554d728b64385c2f8adef
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593523"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394337"
 ---
 # <a name="section-element-sheettype-complextype-visio-xml"></a>セクションの要素 (Sheet_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "22593523"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Section_Type](section_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml、masters.xml、マスターの # .xml、pages.xml ページ # .xml  <br/> |
    
@@ -54,7 +54,7 @@ ms.locfileid: "22593523"
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
 |[Cell](cell-elementvisio-xml.md) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |1 つのプロパティを指定します。  <br/> |
-|[Row](http://msdn.microsoft.com/library/c978e3eb-b895-8fb7-e2ba-88c50e57b3db%28Office.15%29.aspx) <br/> |[Row_Type](row_type-complextypevisio-xml.md) <br/> |**Cell_Type**要素のコレクションを指定します。  <br/> |
+|[Row](https://msdn.microsoft.com/library/c978e3eb-b895-8fb7-e2ba-88c50e57b3db%28Office.15%29.aspx) <br/> |[Row_Type](row_type-complextypevisio-xml.md) <br/> |**Cell_Type**要素のコレクションを指定します。  <br/> |
    
 ### <a name="attributes"></a>属性
 
@@ -64,7 +64,7 @@ ms.locfileid: "22593523"
 |IX  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |要素の 0 から始まるインデックスを指定します。 **Section_Type**属性を持つ要素の同じ**N**を含む**Sheet_Type**の間で一意でなければなりません。 含まれている**Sheet_Type**の同じ**N**属性を使用して、上記の**Section_Type**要素の**IX**属性よりも大きい場合があります。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
 |N  <br/> |xsd:string  <br/> |必須  <br/> |プロパティのコレクションの言語に依存しない名前を指定します。 「ジオメトリ」と同じでない限り**Sheet_Type**はコンテナー要素の**Section_Type**要素の間一意でなければなりません。 **セクション**で、小見出しに等しい場合があります。  <br/> |Xsd:string の値を入力します。  <br/> |
    
-### <a name="remarks"></a>注釈
+### <a name="remarks"></a>備考
 
 この**セクション**の要素の**N**属性は、限られた一連の**シェイプ シート**のセルに対応する値のいずれかである必要があります。 この**セクション**の要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   
@@ -91,7 +91,7 @@ ms.locfileid: "22593523"
 |Layers  <br/> |図面ページで定義されているすべてのレイヤーを表示するプロパティのコレクションです。 **PageSheet_Type**要素の子である必要があります。  <br/> |[[Layers] セクション](layers-section.md) <br/> |
 |線のグラデーション  <br/> |図形の線の色のグラデーションを指定する関連するプロパティのコレクションです。 **ShapeSheet_Type**または**StyleSheet_Type**の親要素が必要です。  <br/> |[[線のグラデーション] セクション](line-gradient-section.md) <br/> |
 |段落  <br/> |図形のテキストの段落のプロパティを指定する関連するプロパティのコレクションです。 **ShapeSheet_Type**の親要素または**StyleSheet_Type**の親要素が必要です。  <br/> |[[Paragraph] セクション](paragraph-section.md) <br/> |
-|Reviewer  <br/> |式の評価に使用されるプロパティのコレクションです。 **DocumentSheet_Type**の親要素が必要です。  <br/> |[[Reviewer] セクション](reviewer-section.md) <br/> |
+|Reviewer (校閲者)  <br/> |式の評価に使用されるプロパティのコレクションです。 **DocumentSheet_Type**の親要素が必要です。  <br/> |[[Reviewer] セクション](reviewer-section.md) <br/> |
 |スクラッチ  <br/> |式の評価に使用されるプロパティのコレクションです。 **DocumentSheet_Type**、 **PageSheet_Type**、または**ShapeSheet_Type**の親要素が必要です。  <br/> |[[Scratch] セクション](scratch-section.md) <br/> |
 |タブ  <br/> |図形のテキストのタブのプロパティを指定する関連するプロパティのコレクションです。 **ShapeSheet_Type**の親要素または**StyleSheet_Type**の親要素が必要です。  <br/> |[[Tabs] セクション](tabs-section.md) <br/> |
    

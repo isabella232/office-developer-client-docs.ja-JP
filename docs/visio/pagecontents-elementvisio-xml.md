@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 818793d6-608e-5f23-eca2-55ce6667050b
 description: 図面のマスター シェイプまたは図面ページの図形に関する情報を指定します。
-ms.openlocfilehash: 0ca705081ad42d799a0155b26eb42ff0b64cd7d7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: aec860f4135e15f18436dba50986b0ad0e6ee9e2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805951"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396569"
 ---
 # <a name="pagecontents-element-visio-xml"></a>PageContents 要素 ('Visio XML')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805951"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[PageContents_Type](pagecontents_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |ページ # .xml  <br/> |
    

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 632d3ef9-43c5-429a-84d7-2dce543d49fb
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 47b209b9a8818cf235b7c28593da5778dd944989
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fe3a76fa246cba9447db2f99562670973af183ab
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568701"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398396"
 ---
 # <a name="loading-message-store-providers"></a>メッセージ ストア プロバイダーの読み込み
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 クライアント アプリケーションは、メッセージ ストアを開いたら、MAPI は、メッセージ ストア プロバイダーの DLL をメモリに読み込みます。 MAPI には、DLL が読み込まれたら、メッセージ ストア プロバイダーが、MAPI の間で非常に特定、一連のメソッド呼び出しが発生します。 このメソッドの呼び出し順序が最上位レベルを取得するための MAPI を有効に[IMSProvider: IUnknown](imsprovideriunknown.md)、 [IMSLogon: IUnknown](imslogoniunknown.md)、および[IMsgStore: IMAPIProp](imsgstoreimapiprop.md)インターフェイス、およびメッセージ ストア プロバイダーは、MAPI のサポート オブジェクトを取得することができます。 呼び出しシーケンスの後メッセージ ストア プロバイダーがクライアントからのログオンを使用する準備があります。 
   
@@ -33,7 +33,7 @@ ms.locfileid: "22568701"
     
 4. MAPI では、 [IMSProvider::Logon](imsprovider-logon.md)、クライアント アプリケーションのメッセージ ストアのエントリの識別子を渡すことを呼び出します。
     
-5. **IMSProvider::Logon**を作成して返します、 [IMSLogon: IUnknown](imslogoniunknown.md)インタ フェースと[IMsgStore: IMAPIProp](imsgstoreimapiprop.md)インターフェイスとに[IUnknown::AddRef](http://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx)メソッドを呼び出して、 [IMAPISupport: IUnknown](imapisupportiunknown.md)インタ フェースです。 クライアントのメッセージを格納する場合は、エントリの識別子は既に開かれているメッセージ ・ ストアを参照、メッセージ ストア プロバイダーは既存の**IMSLogon**と**IMsgStore**のインターフェイスを返すことができ、そのサポート オブジェクトの**AddRef**を呼び出す必要はありません。 
+5. **IMSProvider::Logon**を作成して返します、 [IMSLogon: IUnknown](imslogoniunknown.md)インタ フェースと[IMsgStore: IMAPIProp](imsgstoreimapiprop.md)インターフェイスとに[IUnknown::AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx)メソッドを呼び出して、 [IMAPISupport: IUnknown](imapisupportiunknown.md)インタ フェースです。 クライアントのメッセージを格納する場合は、エントリの識別子は既に開かれているメッセージ ・ ストアを参照、メッセージ ストア プロバイダーは既存の**IMSLogon**と**IMsgStore**のインターフェイスを返すことができ、そのサポート オブジェクトの**AddRef**を呼び出す必要はありません。 
     
 6. クライアントでは、MAPI_NO_MAIL フラグを設定していない場合とログオンしている、手順 1 では、MAPI、MDB_NO_MAIL を設定していないことにより、メッセージ ストアのエントリの識別子 MAPI スプーラーを MAPI スプーラーは、メッセージ ・ ストアにログオンできるようにします。
     

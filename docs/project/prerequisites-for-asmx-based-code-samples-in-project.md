@@ -14,18 +14,18 @@ keywords:
 localization_priority: Normal
 ms.assetid: df584b25-4460-46c8-89a8-3b2c94d20bba
 description: プロジェクト Server インターフェイス (PSI) のリファレンス トピックに含まれている ASMX ベースのコード サンプルを使用して Visual Studio でプロジェクトを作成するための情報について説明します。
-ms.openlocfilehash: 73d097211dc3c68e1066c2ea1ad8d51a616184d9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 26ad2e388b7e7f6f19e028b47c7f6d1a3fbd020c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804689"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399327"
 ---
 # <a name="prerequisites-for-asmx-based-code-samples-in-project"></a>プロジェクト内の ASMX ベースのコード サンプルの前提条件
 
 プロジェクト Server インターフェイス (PSI) のリファレンス トピックに含まれている ASMX ベースのコード サンプルを使用して Visual Studio でプロジェクトを作成するための情報について説明します。
   
-[Project Server 2013 のクラス ライブラリと web サービスを参照](http://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)するに含まれているコード サンプルの多くは、Office プロジェクト 2007 SDK で作成され、ASMX web サービスの標準的な形式を使用します。 まだサンプルは、Project Server 2013 での作業し、コンソール アプリケーションにコピーし、完全な単位として実行するように設計されています。 サンプルで例外が記載されています。 
+[Project Server 2013 のクラス ライブラリと web サービスを参照](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)するに含まれているコード サンプルの多くは、Office プロジェクト 2007 SDK で作成され、ASMX web サービスの標準的な形式を使用します。 まだサンプルは、Project Server 2013 での作業し、コンソール アプリケーションにコピーし、完全な単位として実行するように設計されています。 サンプルで例外が記載されています。 
   
 Project 2013 SDK の新しい PSI のサンプルは、Windows Communication Foundation (WCF) サービスを使用する形式に準拠しています。 ASMX ベースのサンプルは、WCF サービスの使用に適合させることができます。 この資料では、ASMX web サービスのサンプルを使用する方法を示します。 サンプルの WCF サービスの使用方法の詳細については、[プロジェクト内の WCF ベースのコード サンプルの前提条件](prerequisites-for-wcf-based-code-samples-in-project.md)を参照してください。
   
@@ -120,7 +120,7 @@ Project 2013 SDK の新しい PSI のサンプルは、Windows Communication Fou
 @ECHO ---------------------------------------------------
 REM Replace ServerName with the name of the server and 
 REM the instance name of Project Web App. Do not use localhost.
-(set VDIR=http://ServerName/pwa/_vti_bin/psi)
+(set VDIR=https://ServerName/pwa/_vti_bin/psi)
 (set OUTDIR=.\Source)
 REM ** Wsdl.exe is the same version in the v6.0A and v7.0A subdirectories. 
 (set WSDL="C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bin\x64\wsdl.exe")
@@ -184,7 +184,7 @@ ASMX ベースのプロキシ アセンブリを使用する利点は、すべ�
 Project 2013 SDK ダウンロードには、プロキシ アセンブリに対して Wsdl.exe コマンドによって生成されるソース ファイルが含まれています。 Source.zip 内では、ソース ファイル、`Documentation\IntelliSense\ASMX`のサブディレクトリです。 プロキシ アセンブリへの参照を設定する代わりに、Visual Studio のソリューションに 1 つまたは複数のソース ファイルを追加できます。 たとえば、GenASMXProxyAssembly.cmd スクリプトを実行すると、wsdl を追加します。ソリューションのファイルを Project.cs。 スクリプトを実行するには、代わりに、たとえば、単一のソース ファイルを生成する次のコマンドを実行できます。 
   
 ```MS-DOS
-set VDIR=http://ServerName/ProjectServerName/_vti_bin/psi
+set VDIR=https://ServerName/ProjectServerName/_vti_bin/psi
 set WSDL="C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bin\x64\wsdl.exe"
 %WSDL% /nologo /l:cs /namespace:SvcProject /out:wsdl.Project.cs %VDIR%/Project.asmx?wsdl
 ```
@@ -199,7 +199,7 @@ private static SvcLoginForms.LoginForms loginForms =
 public void AddContextInfo()
 {
     // Add the Url property.
-    project.Url = "http://ServerName /ProjectServerName /_vti_bin/psi/project.asmx";
+    project.Url = "https://ServerName /ProjectServerName /_vti_bin/psi/project.asmx";
     // Add Windows credentials.
     project.Credentials = CredentialCache.DefaultCredentials;
     // If Forms authentication is used, add the Project Server cookie.
@@ -221,11 +221,11 @@ ASMX ベースのプロキシ アセンブリを使用したり、WSDL 出力フ
     
 3. [**サービス参照の設定**] ダイアログ ボックスで、[**Web 参照の追加**] を選択します。
     
-4. [ **URL** ] テキスト ボックスに入力`http:// _ServerName_/ _ProjectServerName_/_vti_bin/psi/ _ServiceName_.asmx?wsdl`、および**Enter**キーを押してまたは、[**移動**] アイコンを選択します。 Secure Sockets Layer (SSL) がインストールされている場合は、HTTP プロトコルではなく HTTPS プロトコルを使用する必要があります。 
+4. [ **URL** ] テキスト ボックスに入力`https:// _ServerName_/ _ProjectServerName_/_vti_bin/psi/ _ServiceName_.asmx?wsdl`、および**Enter**キーを押してまたは、[**移動**] アイコンを選択します。 Secure Sockets Layer (SSL) がインストールされている場合は、HTTP プロトコルではなく HTTPS プロトコルを使用する必要があります。 
 
-   たとえば、プロジェクト サービスの次の URL を使用して、上の`http://MyServer/pwa`の Project Web App サイト。`http://MyServer/pwa/_vti_bin/psi/project.asmx?wsdl`
+   たとえば、プロジェクト サービスの次の URL を使用して、上の`https://MyServer/pwa`の Project Web App サイト。`https://MyServer/pwa/_vti_bin/psi/project.asmx?wsdl`
     
-   Web ブラウザーを開き、またはに移動`http://ServerName/ProjectServerName/_vti_bin/psi/ServiceName.asmx?wsdl`。 ファイルをローカル ディレクトリでは、次のように`C:\Project\WebServices\ServiceName.wsdl`。 **Web 参照の追加**] ダイアログ ボックスで、 **URL**のファイルのプロトコルとファイルへのパスを入力します。 たとえば、 `file://C:\Project\WebServices\Project.wsdl`。 
+   Web ブラウザーを開き、またはに移動`https://ServerName/ProjectServerName/_vti_bin/psi/ServiceName.asmx?wsdl`。 ファイルをローカル ディレクトリでは、次のように`C:\Project\WebServices\ServiceName.wsdl`。 **Web 参照の追加**] ダイアログ ボックスで、 **URL**のファイルのプロトコルとファイルへのパスを入力します。 たとえば、 `file://C:\Project\WebServices\Project.wsdl`。 
     
 5. 参照が解決した後は、 **Web 参照名**] テキスト ボックスに参照名を入力します。 Project 2013 開発者向けドキュメントのコード例では、 **Svc _ServiceName_** の任意の標準的な参照名を使用します。 **SvcProject**の名前は、プロジェクトの web サービス (図 3 を参照してください)。 
     
@@ -272,7 +272,7 @@ namespace ASMXLogon_MultiAuth
     class Program
     {
         private const string PROJECT_SERVER_URL = 
-            "http://ServerName/ProjectServerName/_vti_bin/psi/";
+            "https://ServerName/ProjectServerName/_vti_bin/psi/";
         static void Main(string[] args)
         {
             bool isWindowsUser = true;
@@ -371,7 +371,7 @@ WCF ベースのアプリケーション用の修正プログラムは、異な�
 ほとんどのサンプルでは、更新する必要が、サンプルを動作させるため正しく、環境内の 1 つまたは複数の変数があります。 次の例では、SSL がインストールされている場合は HTTP プロトコルではなく HTTPS プロトコルを使用します。 _サーバー名_を使用しているサーバーの名前に置き換えます。 _ProjectServerName_を PWA など、Project Server サイトの仮想ディレクトリ名に置き換えます。 
   
 ```cs
-const string PROJECT_SERVER_URI = "http://ServerName/ProjectServerName/";
+const string PROJECT_SERVER_URI = "https://ServerName/ProjectServerName/";
 ```
 
 変更する必要があるその他の変数または必要条件は、コード サンプルの上部に記載されています。
@@ -385,11 +385,11 @@ const string PROJECT_SERVER_URI = "http://ServerName/ProjectServerName/";
   
 - プロジェクト評価のためのクライアントを使用して、Project Server コンピューターからプロジェクトを開くし、目的のアイテムを表示します。
     
-- Project Web App の [プロジェクト センター] ページで発行されたプロジェクトを表示する ( `http://ServerName/ProjectServerName/projects.aspx`)。
+- Project Web App の [プロジェクト センター] ページで発行されたプロジェクトを表示する ( `https://ServerName/ProjectServerName/projects.aspx`)。
     
-- Project Web App では、キューのログを表示します。 サーバー設定] ページを開く (右上隅で、[**設定**] アイコンを選択します)、**個人用の設定**] セクションで [**自分のキュー ジョブ**を選択し、( `http://ServerName/ProjectServerName/MyJobs.aspx`)。 **ビュー** 」ドロップ ダウン リストで、ジョブの状態で並べ替えることができます。 既定の状態が**進行中で過去 1 週間のジョブの失敗です**。 
+- Project Web App では、キューのログを表示します。 サーバー設定] ページを開く (右上隅で、[**設定**] アイコンを選択します)、**個人用の設定**] セクションで [**自分のキュー ジョブ**を選択し、( `https://ServerName/ProjectServerName/MyJobs.aspx`)。 **ビュー** 」ドロップ ダウン リストで、ジョブの状態で並べ替えることができます。 既定の状態が**進行中で過去 1 週間のジョブの失敗です**。 
     
-- Project Web App の [サーバー設定] ページを使用して ( `http://ServerName/ProjectServerName/_layouts/15/pwa/admin/admin.aspx`) とすべてのキュー ジョブの管理、削除、またはチェックインのエンタープライズ オブジェクトを強制的にします。 [サーバーの設定] ページで、これらのリンクにアクセスする管理者の権限がある必要があります。
+- Project Web App の [サーバー設定] ページを使用して ( `https://ServerName/ProjectServerName/_layouts/15/pwa/admin/admin.aspx`) とすべてのキュー ジョブの管理、削除、またはチェックインのエンタープライズ オブジェクトを強制的にします。 [サーバーの設定] ページで、これらのリンクにアクセスする管理者の権限がある必要があります。
     
 - **Microsoft SQL Server Management Studio** を使用して Project データベース内のテーブルに対するクエリを実行します。たとえば、次のクエリを使用して、pub.MSP_WORKFLOW_STAGE_PDPS テーブルの先頭から 200 行を選択し、ワークフロー ステージにプロジェクト詳細ページ (PDP) についての情報を表示します。 
     
@@ -407,7 +407,7 @@ const string PROJECT_SERVER_URI = "http://ServerName/ProjectServerName/";
 ## <a name="cleaning-up"></a>クリーンアップする
 <a name="pj15_PrerequisitesASMX_Cleanup"> </a>
 
-一部のコード サンプルをテストした後、エンタープライズ オブジェクトと設定を削除またはリセットする必要があります。 Project Web App の [サーバー設定] ページを使用するにはエンタープライズ ・ データを管理する ( `http://ServerName/ProjectServerName/_layouts/15/pwa/admin/admin.aspx`)。 [サーバー設定] ページのリンクを使用すると、古いアイテムを削除する、強制的にチェックインのプロジェクト、すべてのユーザーのジョブ キューの管理、その他の管理タスクを実行できます。
+一部のコード サンプルをテストした後、エンタープライズ オブジェクトと設定を削除またはリセットする必要があります。 Project Web App の [サーバー設定] ページを使用するにはエンタープライズ ・ データを管理する ( `https://ServerName/ProjectServerName/_layouts/15/pwa/admin/admin.aspx`)。 [サーバー設定] ページのリンクを使用すると、古いアイテムを削除する、強制的にチェックインのプロジェクト、すべてのユーザーのジョブ キューの管理、その他の管理タスクを実行できます。
   
 [サーバー設定] ページに表示されるリンクの一部を以下に示します。これらは、コード サンプルを実行した後に一般的なクリーンアップの操作を行うために使用できます。
   
@@ -439,8 +439,8 @@ const string PROJECT_SERVER_URI = "http://ServerName/ProjectServerName/";
 <a name="pj15_PrerequisitesASMX_AR"> </a>
 
 - [プロジェクト内の WCF ベースのコード サンプルの前提条件](prerequisites-for-wcf-based-code-samples-in-project.md)
-- [WCF で偽装を使用します。](http://msdn.microsoft.com/library/e3597901-2f02-44a2-8076-d32aae540b38%28Office.15%29.aspx)
+- [WCF で偽装を使用します。](https://msdn.microsoft.com/library/e3597901-2f02-44a2-8076-d32aae540b38%28Office.15%29.aspx)
 - [プロジェクト PSI リファレンスの概要](project-psi-reference-overview.md)
-- [SharePoint デベロッパー センター](http://msdn.microsoft.com/en-us/sharepoint/default.aspx)
+- [SharePoint デベロッパー センター](https://msdn.microsoft.com/sharepoint/default.aspx)
     
 

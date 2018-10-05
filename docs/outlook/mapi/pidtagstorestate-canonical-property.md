@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 36e49cf5-1411-42c5-9112-09958243996d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7348d0395952036ee6b356b013072324b64e4b98
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8f00addf7abdd765d97c54350e46979f788f06ba
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570822"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399012"
 ---
 # <a name="pidtagstorestate-canonical-property"></a>PidTagStoreState 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージ ・ ストアの状態を記述するフラグが含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22570822"
 |関連するプロパティ:  <br/> |PR_STORE_STATE  <br/> |
 |識別子:  <br/> |0x340E  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |MAPI メッセージ ストア  <br/> |
+|エリア:  <br/> |MAPI メッセージ ストア  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは動的であり、 **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) のプロパティとは異なり、ユーザーの操作に基づいて変更できます。 
   
@@ -48,11 +48,11 @@ STORE_HAS_SEARCHES
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCSTOR]](http://msdn.microsoft.com/library/d42ed1e0-3e77-4264-bd59-7afc583510e2%28Office.15%29.aspx)
+[[MS OXCSTOR]](https://msdn.microsoft.com/library/d42ed1e0-3e77-4264-bd59-7afc583510e2%28Office.15%29.aspx)
   
 > コア メッセージのストア オブジェクトの許可された操作を指定します。
     

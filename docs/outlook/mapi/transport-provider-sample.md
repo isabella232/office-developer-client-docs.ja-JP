@@ -8,22 +8,22 @@ api_type:
 - COM
 ms.assetid: ec6eb6c0-bfe3-4989-9071-89a14c0e7bdd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3b3ae4170cab109ae96a51eae6e70c674895eeae
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: def51a752abcb79a35980ed12eb73011c26d2597
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575785"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401406"
 ---
 # <a name="transport-provider-sample"></a>トランスポート プロバイダー サンプル
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 このサンプルでは、メッセージを送受信するためのファイルとディレクトリを使用します。 実装し、各送信メッセージにテキストの行を追加する非常に単純なプリプロセッサを登録します。 サンプルでは、トランスポート ニュートラル カプセル化形式 (TNEF) とテキストの間でメッセージの内容を分割する方法を示します。 すべての (プロパティ シート、ウィザード、およびプログラムの構成) の構成オプションとメッセージ オプションもサポートしています。 リモート トランスポート インターフェイスにサポートしていません。 
   
-[Outlook メッセージング API (MAPI) のサンプル コード](http://go.microsoft.com/fwlink/?LinkId=129740)からは、このサンプルをダウンロードできます。
+[Outlook メッセージング API (MAPI) のサンプル コード](https://go.microsoft.com/fwlink/?LinkId=129740)からは、このサンプルをダウンロードできます。
   
 |||
 |:-----|:-----|

@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 46bf34be-761e-9d44-ab06-83d4c8932cab
 description: XML は、図面に格納されているソリューションの 1 つのインスタンスを指定します。
-ms.openlocfilehash: 06cefcbf9b0191a9dded5548a457c4a0e50a33ca
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bb3cd512ff6109467c9d6465ba72c764d83abf96
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806540"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397199"
 ---
 # <a name="solution-element-solutionstype-complextype-visio-xml"></a>ソリューションの要素 (Solutions_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ XML は、図面に格納されているソリューションの 1 つのイン�
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Solution_Type](solution_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |solutions.xml  <br/> |
    

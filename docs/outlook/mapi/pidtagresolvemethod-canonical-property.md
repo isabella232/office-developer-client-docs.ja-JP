@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 30d23c19-e0da-4511-9361-761153259216
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e67cbb113899487f489ef7235d92d1adfcb76163
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 14bb31ae9aebbb6441948b5756b426508107c9f0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563640"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394903"
 ---
 # <a name="pidtagresolvemethod-canonical-property"></a>PidTagResolveMethod 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 フォルダーの競合の解像度の値が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22563640"
 |関連するプロパティ:  <br/> |PR_RESOLVE_METHOD  <br/> |
 |識別子:  <br/> |0x3FE7  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |MAPI のステータス  <br/> |
+|エリア:  <br/> |MAPI のステータス  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 競合解決メッセージを含むフォルダーでこのプロパティは、競合を解決する方法を示します。 このプロパティが必要ではありません。 ただし、設定されている場合以外の次のフラグする必要がありますは使用されません。
   
@@ -50,11 +50,11 @@ ms.locfileid: "22563640"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCSYNC]](http://msdn.microsoft.com/library/fd3e23ef-341a-4a8c-a0e9-6afecbb11c40%28Office.15%29.aspx)
+[[MS OXCSYNC]](https://msdn.microsoft.com/library/fd3e23ef-341a-4a8c-a0e9-6afecbb11c40%28Office.15%29.aspx)
   
 > サーバーとクライアントの間のメッセージングのオブジェクト データの同期を処理します。
     
-[[MS OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[MS OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
 > リモート操作で使用される基本的なデータ構造を定義します。
     

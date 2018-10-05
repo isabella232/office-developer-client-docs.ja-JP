@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 3d980b86-7001-4869-9780-121c6bfc7275
 description: MAPI は、Microsoft Outlook 2013 および Outlook 2016 のメッセージング アーキテクチャを提供します。
-ms.openlocfilehash: efb2f87c00c8621e4180aef605021da592969441
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: cb3f02d872609189eaeff6b5b8fe865851ec89a6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576793"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399977"
 ---
 # <a name="outlook-mapi-reference"></a>Outlook MAPI リファレンス
   
@@ -36,8 +36,8 @@ Microsoft Outlook Messaging API (MAPI) リファレンスへようこそ。MAPI 
 
 - [Outlook MAPI リファレンス概要](outlook-mapi-reference-overview.md)  
 - [Outlook Messaging API (MAPI) リファレンスの著作権情報](outlook-messaging-api-mapi-reference-copyright-notice.md)
-- [Outlook 2010: MAPI リファレンス (Microsoft ダウンロード センター)](http://www.microsoft.com/downloads/details.aspx?FamilyID=5f61a276-9c09-4c82-9b80-20dccad17a2a)
-- [ドキュメントの表記規則](http://msdn.microsoft.com/ja-JP/office/aa905365.aspx)
-- [Microsoft Office 2010 のアクセシビリティ機能](http://www.microsoft.com/enable/products/office2010/default.aspx)
-- [Microsoft プライバシーに関する声明](https://privacy.microsoft.com/ja-JP/privacystatement)
+- [Outlook 2010: MAPI リファレンス (Microsoft ダウンロード センター)](https://www.microsoft.com/downloads/details.aspx?FamilyID=5f61a276-9c09-4c82-9b80-20dccad17a2a)
+- [ドキュメントの表記規則](https://msdn.microsoft.com/office/aa905365.aspx)
+- [Microsoft Office 2010 のアクセシビリティ機能](https://www.microsoft.com/enable/products/office2010/default.aspx)
+- [Microsoft プライバシーに関する声明](https://privacy.microsoft.com/en-us/privacystatement)
 

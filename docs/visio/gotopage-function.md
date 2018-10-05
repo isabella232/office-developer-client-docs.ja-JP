@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: b131badf-1656-132e-0aae-eeedb917ba7a
 description: 現在作業中のウィンドウで名前の指定した pagename を持つページが表示されます。
-ms.openlocfilehash: 67f8a79b854fd6f2ae47e39877ffcdbe4a1be5cd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c96585406b6104aeedbe46c35024a4f13bb0953e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805494"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397150"
 ---
 # <a name="gotopage-function"></a>GOTOPAGE 関数
 
@@ -32,7 +32,7 @@ GOTOPAGE ("* **指定した pagename* * *")
    
 ## <a name="remarks"></a>注釈
 
-ウィンドウには、既にページが表示されて、そのウィンドウがアクティブになります。 アプリケーションが http://*指定した pagename*に移動しようとした*pagename*が存在しない場合とします。 Visio が埋め込み先サーバーとして動作している場合は、GOTOPAGE 関数に影響はありません。 
+ウィンドウには、既にページが表示されて、そのウィンドウがアクティブになります。 アプリケーションが https://*指定した pagename*に移動しようとした*pagename*が存在しない場合とします。 Visio が埋め込み先サーバーとして動作している場合は、GOTOPAGE 関数に影響はありません。 
   
 DOS、UNC、または URL のパスに従って移動するには、HYPERLINK 関数を使用します。 
   

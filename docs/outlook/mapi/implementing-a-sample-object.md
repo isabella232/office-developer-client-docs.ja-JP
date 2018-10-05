@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 23b6ad1a-0b50-429f-8819-ab72c56581c2
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7d2f5fc2f26019902b27750613f7c360a751cd51
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a681e68c0718e49da331946d75ecb7b4fab7afe2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582932"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396793"
 ---
 # <a name="implementing-a-sample-object"></a>サンプル オブジェクトを実装します。
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-通知シンク オブジェクト-オブジェクトをサポートする、 [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md)インターフェイス-は、MAPI オブジェクトの通知を処理するためのクライアント アプリケーションを実装することです。 **IMAPIAdviseSink**では、 [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx)から直接継承し、 **OnNotify**1 つのメソッドが含まれています。 したがって、アドバイズ シンク オブジェクトを実装するには、クライアントは**IUnknown**の 3 つの方法と[OnNotify](imapiadvisesink-onnotify.md)コードを作成します。
+通知シンク オブジェクト-オブジェクトをサポートする、 [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md)インターフェイス-は、MAPI オブジェクトの通知を処理するためのクライアント アプリケーションを実装することです。 **IMAPIAdviseSink**では、 [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)から直接継承し、 **OnNotify**1 つのメソッドが含まれています。 したがって、アドバイズ シンク オブジェクトを実装するには、クライアントは**IUnknown**の 3 つの方法と[OnNotify](imapiadvisesink-onnotify.md)コードを作成します。
   
 Mapidefs.h ヘッダー ファイルでは、次のように**DECLARE_MAPI_INTERFACE**を使用して、 **IMAPIAdviseSink**インターフェイスの実装を定義します。
   
@@ -36,7 +36,7 @@ DECLARE_MAPI_INTERFACE_(IMAPIAdviseSink, IUnknown)
 
 実装するクライアントは、シンク オブジェクトは、手動でまたは**MAPI_IUNKNOWN_METHODS**と**MAPI_IMAPIADVISESINK_METHODS**のマクロを使用に、そのオブジェクトのインタ フェースを定義できますを案内します。 オブジェクトの実装は、オブジェクト間での整合性を確保し、時間と労力を節約するのには可能な限りインターフェイスのマクロを使用してください。 
   
-通常はわずか数行のコードが必要なために、 [IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx)と[リ ス](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx)のメソッドの実装は比較的簡単です。 したがって、クライアントとオブジェクトを実装するサービス プロバイダーは、 **AddRef**および**Release**の実装のインラインを作成できます。 次のコードは、C++ を定義する方法を示します**AddRef**および**Release**のインライン実装のシンク オブジェクトに通知します。
+通常はわずか数行のコードが必要なために、 [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)と[リ ス](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)のメソッドの実装は比較的簡単です。 したがって、クライアントとオブジェクトを実装するサービス プロバイダーは、 **AddRef**および**Release**の実装のインラインを作成できます。 次のコードは、C++ を定義する方法を示します**AddRef**および**Release**のインライン実装のシンク オブジェクトに通知します。
   
 ```cpp
 class  CMAPIAdviseSink : public IMAPIAdviseSink

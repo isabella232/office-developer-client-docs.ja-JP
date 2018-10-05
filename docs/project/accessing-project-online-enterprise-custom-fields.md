@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 25509631-fa14-49d8-b594-cfacf5355c38
 description: オンラインのプロジェクトは、企業はビジネス ニーズに合わせて拡張可能な Office 365 サービスです。 1 つの拡張領域は、エンタープライズ ユーザー設定フィールド (ECFs) です。 ECFs は、プロジェクト、リソース、およびタスクに追加できる型指定された値フィールドです。 次の表では、プロジェクト、リソース、およびタスクに関連する ECFs を一覧表示し、その ECF のインスタンスの値の例が用意されています。
-ms.openlocfilehash: d560b258f2c9873844009cb6bc6e698abec029a6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 978fdfbf4ba75382ad85b9f92f8ac4df5c7f97c8
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584605"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401154"
 ---
 # <a name="accessing-project-online-enterprise-custom-fields"></a>Project Online エンタープライズ ユーザー設定フィールドへのアクセス
 
@@ -207,7 +207,7 @@ ListPWACustomFields メソッドは、取得し、プロジェクトに関連付
 
 - [プロジェクト開発のポータル](https://developer.microsoft.com/en-us/project)
 - [概要: エンタープライズ ユーザー設定フィールドと参照テーブル](https://support.office.com/en-us/article/overview-enterprise-custom-fields-and-lookup-tables-f99db553-0b33-4648-93c0-f6a74637d790?ui=en-us&rs=en-us&ad=us)
-- [ローカル ユーザー設定フィールドとエンタープライズ ユーザー設定フィールド](https://msdn.microsoft.com/en-us/library/office/ms447495(v=office.14).aspx)
-- [Project Server 2013 でのエンタープライズ ユーザー設定フィールドを追加または更新](https://docs.microsoft.com/en-us/project/add-or-edit-enterprise-custom-fields-in-project-server)
+- [ローカル ユーザー設定フィールドとエンタープライズ ユーザー設定フィールド](https://msdn.microsoft.com/library/office/ms447495(v=office.14).aspx)
+- [Project Server 2013 でのエンタープライズ ユーザー設定フィールドを追加または更新](https://docs.microsoft.com/project/add-or-edit-enterprise-custom-fields-in-project-server)
     
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f65da1c8-d49b-44e8-8c66-9c53d088d334
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ee6fcaf2fa168f6be91b798efa249799f738bfa0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7319f1abb4a74ee17b0a4a1220215c29434d256b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571081"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398403"
 ---
 # <a name="imapipropcopyprops"></a>IMAPIProp::CopyProps
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 選択したプロパティのコピーまたは移動します。 
   
@@ -85,7 +85,7 @@ MAPI_NOREPLACE
   
 > [で [チェック アウト][SPropProblemArray](spropproblemarray.md)構造体へのポインターへのポインターの入力でそれ以外の場合、 **null**、エラー情報の必要性がないことを示します。 _LppProblems_が入力時に有効なポインターである場合は、 **CopyProps**は、1 つまたは複数のプロパティのコピーでエラーに関する詳細な情報を返します。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -129,7 +129,7 @@ MAPI_E_UNEXPECTED_TYPE
   
 > プロパティの型は、呼び出し元の型ではありません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **IMAPIProp::CopyProps**メソッドは、コピーまたは、選択したプロパティを現在のオブジェクトからコピー先のオブジェクトに移動します。 **CopyProps**は、返信または転送するメッセージ、返信を移動またはコピーを転送元のメッセージからのプロパティの一部のみ、主に使用されます。 
   
@@ -157,7 +157,7 @@ MAPI_DIALOG フラグを設定しない、進行状況インジケーターの�
   
 ソース オブジェクトの種類に固有のプロパティをコピーする場合は、目的のオブジェクトが同じ型のあることを確認の操作を行う必要があります。 **CopyProps**ができないから、通常、1 種類のオブジェクトの別の種類のオブジェクトに属するプロパティを関連付けることです。 変換先オブジェクトのプロパティをコピーすることの責任です。 などのアドレス帳コンテナーにメッセージのプロパティをコピーする必要がありますされません。 
   
-同じ種類のオブジェクト間でコピーしていることを確認するには、元とコピー先のオブジェクトが同じ型、オブジェクトのポインターを比較するか、 [IUnknown::QueryInterface](http://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx)メソッドを呼び出すことを確認してください。 ソース オブジェクトの標準的なインタ フェースを_lpInterface_が指すインターフェイスの識別子を設定します。 オブジェクト タイプまたは**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md)) のプロパティは、2 つのオブジェクトに対して同じであることを確認してください。 たとえば、メッセージからコピーする場合は、IID_IMessage と MAPI_MESSAGE を両方のオブジェクトの**PR_OBJECT_TYPE**に_lpInterface_を設定します。 
+同じ種類のオブジェクト間でコピーしていることを確認するには、元とコピー先のオブジェクトが同じ型、オブジェクトのポインターを比較するか、 [IUnknown::QueryInterface](https://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx)メソッドを呼び出すことを確認してください。 ソース オブジェクトの標準的なインタ フェースを_lpInterface_が指すインターフェイスの識別子を設定します。 オブジェクト タイプまたは**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md)) のプロパティは、2 つのオブジェクトに対して同じであることを確認してください。 たとえば、メッセージからコピーする場合は、IID_IMessage と MAPI_MESSAGE を両方のオブジェクトの**PR_OBJECT_TYPE**に_lpInterface_を設定します。 
   
 場合は、 _lpDestObj_パラメーターに無効なポインターが渡されると、結果は予測できません。 
   
@@ -165,11 +165,11 @@ MAPI_DIALOG フラグを設定しない、進行状況インジケーターの�
   
 フォルダーまたはアドレス帳コンテナーの階層構造または内容のテーブルをコピーするには、 **PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) または**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) のプロパティで、プロパティ タグの配列です。 フォルダーの内容を関連するテーブルを含めるには、 **PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md)) のプロパティを配列に指定します。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
 |MAPIFunctions.cpp  <br/> |CopyNamedProps  <br/> |MFCMAPI では、1 つのメッセージから名前付きプロパティをコピーするのにには、 **IMAPIProp::CopyProps**メソッドを使用します。  <br/> |
 |SingleMAPIPropListCtrl.cpp  <br/> |CSingleMAPIPropListCtrl::OnPasteProperty  <br/> |MFCMAPI では、 **IMAPIProp::CopyProps**メソッドを使用して、別のオブジェクトからコピーされたプロパティを貼り付けます。  <br/> |

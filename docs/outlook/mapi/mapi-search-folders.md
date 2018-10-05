@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 36c14d91-77f7-43a3-8d87-d50bcc21fad7
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b5a95ca77496c3c4c2d28641ab649c2b4328a27c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c1d7f67458852319587d98831d031b2c3a131871
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578557"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400902"
 ---
 # <a name="mapi-search-folders"></a>MAPI �����t�H���_�[
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 �������ʂ̃t�H���[�[�ł́A���ۂ̃��b�Z�[�W�ł͂Ȃ��A��ʓI�ȃt�H���](imapifolder-createfolder.md)�[��̃��b�Z�[�W�ւ̃����N��ێ����܂��B�N���C�A���g�ł́A  _ulFolderType_�p�����[�^�[�Ƃ��� FOLDER_SEARCH [IMAPIFolder::CreateFolder](imapifolder-createfolder.md)���\�b�h��g�p���Č������ʂ̃t�H���[�[��쐬���܂��B�N���C�A���g�̃Z�b�g�A�b�v�ƌ��������K�p���āA�������ʂ̃t�H���](imapicontainer-setsearchcriteria.md)�[����͂���: ���[�������̓���������郁�b�Z�[�W��t�B���^�[�������܂��B���������[IMAPIContainer::SetSearchCriteria](imapicontainer-setsearchcriteria.md)���\�b�h��g�p���ăZ�b�g�A�b�v���܂��B�N���C�A���g�ł́A���������K�p���āA [SetSearchCriteria](srestriction.md)�ɓn����\�� 1 �܂��͕�����**SRestriction**�\����쐬���܂��B **SetSearchCriteria**������h���C��������t�H���_�[�̈ꗗ����уZ�b�g��w�肷��t���O�̌�������s������@�𐧌䂵�܂��B 
   
@@ -27,7 +27,7 @@ ms.locfileid: "22578557"
   
 �t�H���_�[�̌������ʂł́A���̐�������������܂��B
   
-- **SetSearchCriteria**を呼び出すことによっては、検索結果フォルダーの内容を変更できることを唯一の方法です。 **SetSearchCriteria**の実装の詳細については、サポート技術情報 279095 を参照してください[260322: どのようにする検索フォルダーの SetSearchCriteria メソッドを使用して](http://go.microsoft.com/fwlink/?LinkId=123603)。
+- **SetSearchCriteria**を呼び出すことによっては、検索結果フォルダーの内容を変更できることを唯一の方法です。 **SetSearchCriteria**の実装の詳細については、サポート技術情報 279095 を参照してください[260322: どのようにする検索フォルダーの SetSearchCriteria メソッドを使用して](https://go.microsoft.com/fwlink/?LinkId=123603)。
     
 - ���b�Z�[�W��ړ��܂��͌������ʂ̃t�H���_�[�ɃR�s�[���邱�Ƃ͂ł��܂���B
     

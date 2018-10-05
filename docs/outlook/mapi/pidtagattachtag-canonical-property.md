@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 3d223809-b697-47c6-bc3c-2206aff7ad33
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: af5d05ee6d3592694952002c16e16188c3e458a4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5a908b3543dff5cf011c9bd4d5d05b3a07004ead
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565621"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400454"
 ---
 # <a name="pidtagattachtag-canonical-property"></a>PidTagAttachTag 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 添付ファイルを提供するアプリケーションを指定する ASN.1 オブジェクト識別子が含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22565621"
 |関連するプロパティ:  <br/> |PR_ATTACH_TAG  <br/> |
 |識別子:  <br/> |0x370A  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |メッセージの添付ファイル  <br/> |
+|エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、最初の添付ファイルを生成したアプリケーションを識別します。
   
@@ -48,7 +48,7 @@ ms.locfileid: "22565621"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > メッセージと添付ファイルのオブジェクトを処理します。
     

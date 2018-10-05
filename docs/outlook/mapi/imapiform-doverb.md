@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 8b582571-b448-4476-91d9-4cc94dbec710
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fe6270d82d227f52dfd5dfa5454c73e815ad9f42
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 60a8c89afe0d70a1737c6ce694c66359fd6aae4f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573818"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398095"
 ---
 # <a name="imapiformdoverb"></a>IMAPIForm::DoVerb
 
@@ -52,9 +52,9 @@ HRESULT DoVerb(
     
  _lprcPosRect_
   
-> [in]Win32 へのポインターのサイズと、フォームのウィンドウの位置を含む[RECT](http://msdn.microsoft.com/en-us/library/dd162897%28VS.85%29.aspx)構造体。 
+> [in]Win32 へのポインターのサイズと、フォームのウィンドウの位置を含む[RECT](https://msdn.microsoft.com/library/dd162897%28VS.85%29.aspx)構造体。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -64,7 +64,7 @@ OLEOBJ_S_CANNOT_DOVERB_NOW
   
 > _IVerb_パラメーターによって表される動詞が有効ですが、フォームがそれに関連付けられている操作を実行できません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 フォームの閲覧者は、フォームがフォームをサポートしている各動詞に関連付けることのタスクを実行することを要求する**IMAPIForm::DoVerb**メソッドを呼び出します。 
   
@@ -86,7 +86,7 @@ _IVerb_パラメーターで**DoVerb**に渡される数値はそれぞれ、サ
     
 印刷などのいくつかの動詞は、**これら**に対してはモーダルである必要があります-つまり、 **DoVerb**呼び出しから戻る前にした操作を完了する必要があります。 
   
-フォームのウィンドウで使用されている**RECT**構造体を取得するには、[受け取り](http://msdn.microsoft.com/en-us/library/ms633519)関数を呼び出します。 
+フォームのウィンドウで使用されている**RECT**構造体を取得するには、[受け取り](https://msdn.microsoft.com/library/ms633519)関数を呼び出します。 
   
 通常は、 **DoVerb**が完了するまで、そのことができますすぐに破棄する呼び出しの戻り値にするため、 _hwndParent_パラメーターのハンドルを保存しません。
   
@@ -94,13 +94,13 @@ _IVerb_パラメーターで**DoVerb**に渡される数値はそれぞれ、サ
 
 _LpViewContext_ ] をポイントして、 [IMAPIViewContext::GetViewStatus](imapiviewcontext-getviewstatus.md)メソッドから、VCSTATUS_MODAL フラグを返すビュー コンテキストの実装のモーダル動詞として機能する非モーダル動詞を行うことができます。 
   
-MAPI での動詞の詳細については、[動詞のフォーム](form-verbs.md)を参照してください。 OLE 動詞を処理する方法の詳細については、 [OLE アプリケーションとデータの転送](http://msdn.microsoft.com/en-us/library/ms693425%28VS.85%29.aspx)を参照してください。
+MAPI での動詞の詳細については、[動詞のフォーム](form-verbs.md)を参照してください。 OLE 動詞を処理する方法の詳細については、 [OLE アプリケーションとデータの転送](https://msdn.microsoft.com/library/ms693425%28VS.85%29.aspx)を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
 |MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::CallDoVerb  <br/> |MFCMAPI では、 **IMAPIForm::DoVerb**メソッドを使用して、フォーム上の動詞を呼び出します。  <br/> |
    
@@ -115,7 +115,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 [IMAPIForm : IUnknown](imapiformiunknown.md)
 
 
-[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
+[コード サンプルとしての MFCMAPI](mfcmapi-as-a-code-sample.md)
   
 [フォームの動詞](form-verbs.md)
 

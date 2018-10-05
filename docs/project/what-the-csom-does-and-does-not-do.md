@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 6828485c-040b-4278-923f-4cc7c8fe0fb1
 description: クライアント側オブジェクト モデル (CSOM) は、オンラインの両方に設計された Project Server 2013 の Api のセットと設置は Pc、モバイル デバイス、およびタブレットを開発できるアプリケーションで使用します。 この記事は、CSOM を使用するためのいくつかの一般的なシナリオが含まれていて、CSOM の制限事項の一覧も。
-ms.openlocfilehash: 232152d3d2ee902b438bc1fe3ece06acca713175
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ad9f9e0404cb0063a1c58c8e66a022372881a24f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804693"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399292"
 ---
 # <a name="what-the-csom-does-and-does-not-do"></a>CSOM のすること、しないこと
 
@@ -65,11 +65,11 @@ PSI も、CSOM を処理するアクションのリストで[どのような PSI
 
 CSOM には、次の PSI サービスの機能は含まれません。
   
-- **管理サービス**管理用設定および Project Server で、会計年度期間を作成してをタイムシートの設定を行うなど、関連するプロジェクトのサイトの操作を管理するには、 [WebSvcAdmin.Admin](https://msdn.microsoft.com/library/WebSvcAdmin.Admin.aspx)クラスの PSI メソッドを使用します。 自体を Project Web App サーバー設定] ページにリンクされているページの多くの**管理**方法を使用する (*サーバー名*を http://  /  *ProjectServerName* /_layouts/15/pwa/Admin/Admin.aspx)。 
+- **管理サービス**管理用設定および Project Server で、会計年度期間を作成してをタイムシートの設定を行うなど、関連するプロジェクトのサイトの操作を管理するには、 [WebSvcAdmin.Admin](https://msdn.microsoft.com/library/WebSvcAdmin.Admin.aspx)クラスの PSI メソッドを使用します。 自体を Project Web App サーバー設定] ページにリンクされているページの多くの**管理**方法を使用する (*サーバー名*を https://  /  *ProjectServerName* /_layouts/15/pwa/Admin/Admin.aspx)。 
     
 - **アーカイブ ・ サービス**保存し、プロジェクト、リソース、およびアーカイブ テーブルのユーザー設定フィールドなどのエンティティを管理、[アーカイブ](https://msdn.microsoft.com/library/WebSvcArchive.Archive.aspx)クラスの PSI メソッドを使用します。 
     
-- **CubeAdmin サービス**作成し、設置の OLAP キューブの管理、PSI メソッドを使用して、クラスでは、 [WebSvcCubeAdmin.CubeAdmin](https://msdn.microsoft.com/library/WebSvcCubeAdmin.CubeAdmin.aspx) 、または、OLAP データベースの管理ページを使用して (*サーバー名*を http://  /  ** ProjectServerName/_layouts/15/pwa/CubeAdmin/CubeAnalysisAdmin.aspx) Project Web App で。 
+- **CubeAdmin サービス**作成し、設置の OLAP キューブの管理、PSI メソッドを使用して、クラスでは、 [WebSvcCubeAdmin.CubeAdmin](https://msdn.microsoft.com/library/WebSvcCubeAdmin.CubeAdmin.aspx) 、または、OLAP データベースの管理ページを使用して (*サーバー名*を https://  /  *ProjectServerName* /_layouts/15/pwa/CubeAdmin/CubeAnalysisAdmin.aspx) では、Project Web App です。 
     
     > [!NOTE]
     > プロジェクトのオンラインでは、OLAP キューブはサポートされていません。 
@@ -110,7 +110,7 @@ Project Server 2013 で CSOM は、CSOM 実装では、SharePoint Server 2013 �
   
 たとえば、CSOM を使用してプロジェクトを作成してから、短い名前、タスク GUID、有効期間 1d などの最小限の情報で 252 個のタスクを追加した場合、**DraftProject.Update** 要求の合計のデータ量は 2 MB 未満になります。しかし、このようなタスクを空のプロジェクトに 253 個追加しようとすると、2 MB の制限を超過し、[**Microsoft.SharePoint.Client.ServerException: 要求で使用されているリソースが多すぎます**] という例外が発生します。
   
-HTTP または HTTPS では、CSOM 要求内のデータをキャプチャするには、 [Fiddler](http://www.fiddler2.com)などのツールをデバッグする web を使用することができます (http://www.fiddler2.com)。 コード例を要求のサイズのテストを実装しを小さなグループに大きな要求を分割するためのソリューションが含まれています、 [DraftProject.Update](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.DraftProject.Update.aspx)を参照してください。 
+HTTP または HTTPS では、CSOM 要求内のデータをキャプチャするには、 [Fiddler](https://www.fiddler2.com)などのツールをデバッグする web を使用することができます (https://www.fiddler2.com)。 コード例を要求のサイズのテストを実装しを小さなグループに大きな要求を分割するためのソリューションが含まれています、 [DraftProject.Update](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.DraftProject.Update.aspx)を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 <a name="pj15_WhatTheCSOM_AR"> </a>

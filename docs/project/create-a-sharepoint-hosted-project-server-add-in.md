@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: bb9c3c00-7121-41e1-9db3-75550d040ba8
 description: 3 種類のアプリケーションのオンライン プロジェクト (autohosted、プロバイダーによってホストされ、SharePoint でホストされている) を作成することができる SharePoint によってホストされるアプリケーションの作成および展開する最も簡単です。
-ms.openlocfilehash: 135a6cd330224041db213e0408735209056d34af
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7a74f5b3b848f3fa238051f5b9f9f563c38417b2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804579"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399586"
 ---
 # <a name="create-a-sharepoint-hosted-project-server-add-in"></a>SharePoint をホストとする Project Server アドインを作成する
 
@@ -21,7 +21,7 @@ ms.locfileid: "19804579"
   
 **QuickStatus**アプリケーションは、開発者のためのサンプル実稼働環境で使用するためのものではありません。 主な目的では、プロジェクト オンライン、完全に機能の状態を管理アプリケーションを作成しないようにアプリケーション開発の例を示します。 状態管理により、[次のステップ](#pj15_StatusingApp_NextSteps)の推奨事項を参照してください。
   
-状態管理に関する一般的な情報は、[タスクの進捗状況](https://support.office.com/article/Find-information-about-Project-Server-2013-8b08a414-15a7-4076-b2db-c90d0214ea7f?ui=en-US&rs=en-US&ad=US#BKMK_TaskProgress)を参照してください。 Project Server の SharePoint 用のアドインを開発する方法の詳細については、 [SharePoint のアドイン](http://msdn.microsoft.com/en-us/library/jj163230.aspx)を参照してください。
+状態管理に関する一般的な情報は、[タスクの進捗状況](https://support.office.com/article/Find-information-about-Project-Server-2013-8b08a414-15a7-4076-b2db-c90d0214ea7f?ui=en-US&rs=en-US&ad=US#BKMK_TaskProgress)を参照してください。 Project Server の SharePoint 用のアドインを開発する方法の詳細については、 [SharePoint のアドイン](https://msdn.microsoft.com/library/jj163230.aspx)を参照してください。
 
 <a name="pj15_StatusingApp_Prerequisites"> </a>
 
@@ -33,16 +33,16 @@ Visual Studio でプロジェクトのサーバー アプリケーションの�
   
 - 使用するローカルの開発用コンピューターに最新のサービス パックと Windows 更新プログラムをインストールしてあることを確認します。オペレーティング システムは、Windows 7、Windows 8、Windows Server 2008、Windows Server 2012 のいずれでもかまいません。
     
-- SharePoint Server 2013 と Project Server 2013 をインストールすると、アプリケーションの分離とアプリケーションの sideloading のコンピューターに構成されているコンピューターが必要です。 Sideloading は、一時的にデバッグするようにアプリケーションをインストールするのには Visual Studio を使用できます。 Project Server の SharePoint の設置型インストールを使用することができます。 詳細については、 [SharePoint のアプリケーションの設置型開発環境のセットアップ](http://msdn.microsoft.com/en-us/library/fp179923%28Office.15%29.aspx)を参照してください。
+- SharePoint Server 2013 と Project Server 2013 をインストールすると、アプリケーションの分離とアプリケーションの sideloading のコンピューターに構成されているコンピューターが必要です。 Sideloading は、一時的にデバッグするようにアプリケーションをインストールするのには Visual Studio を使用できます。 Project Server の SharePoint の設置型インストールを使用することができます。 詳細については、 [SharePoint のアプリケーションの設置型開発環境のセットアップ](https://msdn.microsoft.com/library/fp179923%28Office.15%29.aspx)を参照してください。
     
    > [!NOTE]
    > 設置型インストールを分離されたアプリケーション ドメイン*の前に*企業アプリケーションのカタログを作成するを構成します。 
   
-- 開発用コンピューターにインストールされている Visual Studio 2012 の Office 開発ツールにはリモート コンピューターができます。 最新のバージョンがインストールされていることを確認します。[Office および SharePoint 用アプリをダウンロード](http://msdn.microsoft.com/en-us/office/apps/fp123627.aspx)するは、"*ツール*"を参照してください。
+- 開発用コンピューターにインストールされている Visual Studio 2012 の Office 開発ツールにはリモート コンピューターができます。 最新のバージョンがインストールされていることを確認します。[Office および SharePoint 用アプリをダウンロード](https://msdn.microsoft.com/office/apps/fp123627.aspx)するは、"*ツール*"を参照してください。
     
 - Project Web App インスタンスを使用する開発用のテストは、ブラウザーでアクセスできることを確認します。
     
-オンライン ツールを使用する方法の詳細については、 [Office 365 で SharePoint 用アプリの開発環境の設定](http://msdn.microsoft.com/en-us/library/fp161179.aspx)を参照してください。 オンライン ツールを使用する Project Server の単純なアプリケーションの構築のチュートリアルは、EPMSource のブログ シリーズは、[最初、プロジェクトのサーバー アプリケーションを構築する](http://epmsource.com/2012/11/20/building-your-first-project-server-app-part-zerothe-introduction/)を参照してください。
+オンライン ツールを使用する方法の詳細については、 [Office 365 で SharePoint 用アプリの開発環境の設定](https://msdn.microsoft.com/library/fp161179.aspx)を参照してください。 オンライン ツールを使用する Project Server の単純なアプリケーションの構築のチュートリアルは、EPMSource のブログ シリーズは、[最初、プロジェクトのサーバー アプリケーションを構築する](https://epmsource.com/2012/11/20/building-your-first-project-server-app-part-zerothe-introduction/)を参照してください。
 
 <a name="pj15_StatusingApp_UsingVisualStudio"> </a>
 
@@ -115,14 +115,14 @@ Project Web App のリボンを変更するには、リボンのカスタム ア
     
 - **ワークフロー**: ワークフローのアクセス許可を引き上げてアプリケーションが実行されますユーザーが Project Server のワークフローを実行する権限を持っている場合。
     
-Project Server 2013 のためのアクセス許可要求のスコープの詳細については、 [Project 2013 の開発者用の更新プログラム](updates-for-developers-in-project-2013.md)と[SharePoint 2013 でのアプリケーションのアクセス許可](http://msdn.microsoft.com/library/fp142383.aspx)で*アプリケーションのプロジェクト*を参照してください。
+Project Server 2013 のためのアクセス許可要求のスコープの詳細については、 [Project 2013 の開発者用の更新プログラム](updates-for-developers-in-project-2013.md)と[SharePoint 2013 でのアプリケーションのアクセス許可](https://msdn.microsoft.com/library/fp142383.aspx)で*アプリケーションのプロジェクト*を参照してください。
 
 
 <a name="pj15_StatusingApp_HTML"> </a>
 
 ### <a name="creating-the-html-content-for-the-quickstatus-app"></a>QuickStatus アプリケーションのコンテンツの HTML を作成します。
 
-HTML コンテンツのコーディングを開始する前に、ユーザー インターフェイスと (図 3 では、完成したページの例を示しています)、QuickStatus アプリケーションのユーザー エクスペリエンスをデザインします。 設計では、HTML コードと対話する JavaScript 関数の概要を含めることも。 全般については、 [SharePoint 2013 でのアプリケーションのユーザー エクスペリエンスのデザイン](http://msdn.microsoft.com/library/fp179934.aspx)を参照してください。
+HTML コンテンツのコーディングを開始する前に、ユーザー インターフェイスと (図 3 では、完成したページの例を示しています)、QuickStatus アプリケーションのユーザー エクスペリエンスをデザインします。 設計では、HTML コードと対話する JavaScript 関数の概要を含めることも。 全般については、 [SharePoint 2013 でのアプリケーションのユーザー エクスペリエンスのデザイン](https://msdn.microsoft.com/library/fp179934.aspx)を参照してください。
   
 **図 3 です。QuickStatus アプリケーション ページのデザイン**
 
@@ -314,7 +314,7 @@ SharePoint アプリケーションの Visual Studio のテンプレートには
 5. 割り当てごとに行をテーブルに追加する、 **onGetAssignmentsSuccess**関数を追加します。 **PrevProjName**変数を使用すると、別のプロジェクトの行は、かどうかを決定します。 プロジェクト名が太字のフォントで表示されている場合は、ない場合は、プロジェクト名が空の文字列に設定します。 
     
    > [!NOTE]
-   > JSOM では、 **ActualWorkTimeSpan**など、CSOM に含まれている**TimeSpan**プロパティは含まれません。 JSOM が[PS. など、時間をミリ秒単位のプロパティを使用する代わりに、StatusAssignment.actualWorkMilliseconds](http://msdn.microsoft.com/library/736bce1e-f734-0efe-6c5f-e0e891ab00ef%28Office.15%29.aspx)プロパティ。 そのプロパティを取得するメソッドは、**を取得\_actualWorkMilliseconds**、整数値が返されます。 > **Get_actualWork**メソッドでは、"3 h"などの文字列を返します。 **QuickStatus**アプリケーションでは、いずれかの値を使用していますが、表示を変える可能性があります。 割り当てクエリには、デバッグ時に値をテストすることができますので、両方のプロパティが含まれます。 **ActualWork**変数を削除する場合は、割り当てクエリで**ActualWork**プロパティを削除することもできます。 
+   > JSOM では、 **ActualWorkTimeSpan**など、CSOM に含まれている**TimeSpan**プロパティは含まれません。 JSOM が[PS. など、時間をミリ秒単位のプロパティを使用する代わりに、StatusAssignment.actualWorkMilliseconds](https://msdn.microsoft.com/library/736bce1e-f734-0efe-6c5f-e0e891ab00ef%28Office.15%29.aspx)プロパティ。 そのプロパティを取得するメソッドは、**を取得\_actualWorkMilliseconds**、整数値が返されます。 > **Get_actualWork**メソッドでは、"3 h"などの文字列を返します。 **QuickStatus**アプリケーションでは、いずれかの値を使用していますが、表示を変える可能性があります。 割り当てクエリには、デバッグ時に値をテストすることができますので、両方のプロパティが含まれます。 **ActualWork**変数を削除する場合は、割り当てクエリで**ActualWork**プロパティを削除することもできます。 
   
    最後に、 **onGetAssignmentsSuccess**関数は、 **[更新**] ボタンを初期化し、 **[更新**] ボタンのクリックしてイベント ハンドラーです。 **[更新**] ボタンのテキスト値は、HTML コードの設定もできました。 
     
@@ -513,7 +513,7 @@ Project Web App のタスク] ページの [Project Web App インスタンス�
 グループとそれぞれの領域内のコントロールのようながリンク付けされているモードの場合、コントロールの単独モードでは、同じコントロールの別の関数を呼び出すことができます。 手順 4 は、1 つのエントリのモードがオフの場合は、 **QuickStatus**アプリケーションのボタン コントロールを追加する方法を示しています (**単一入力モード**] チェック ボックスがオフ) します。 
   
 > [!NOTE]
-> リボンまたは SharePoint アプリケーションのメニューにカスタム アクションを追加することに関する一般的な情報は、 [SharePoint のアプリケーションと共に配置するカスタム アクションの作成](http://msdn.microsoft.com/en-us/library/jj163954.aspx)を参照してください。 
+> リボンまたは SharePoint アプリケーションのメニューにカスタム アクションを追加することに関する一般的な情報は、 [SharePoint のアプリケーションと共に配置するカスタム アクションの作成](https://msdn.microsoft.com/library/jj163954.aspx)を参照してください。 
   
 ### <a name="procedure-4-to-add-a-ribbon-custom-action-to-the-tasks-page"></a>手順 4 します。 リボンのカスタム アクションを [タスク] ページに追加するのには
 
@@ -541,7 +541,7 @@ Project Web App のタスク] ページの [Project Web App インスタンス�
     
    ```XML
     <?xml version="1.0" encoding="utf-8"?>
-    <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Elements xmlns="https://schemas.microsoft.com/sharepoint/">
         <CustomAction Id="21ea3aaf-79e5-4aac-9479-8eef14b4d9df.RibbonQuickStatusAction"
                     Location="CommandUI.Ribbon"
                     Sequence="10001"
@@ -637,7 +637,7 @@ Project Web App のタスク] ページの [Project Web App インスタンス�
 
 ## <a name="deploying-the-quickstatus-app"></a>QuickStatus アプリケーションを展開します。
 
-Project Web App などの SharePoint web アプリケーションにアプリケーションを配置するのにはいくつかの方法があります。 SharePoint がインストールされているかどうか、オンプレミスまたはオンラインのテナント機能は、および配置を使用するがプライベートの SharePoint カタログまたは Office のパブリック ストア、アプリケーションを発行するかどうかによって異なります。 手順 5 では、プライベートなアプリ カタログで設置型インストールに**QuickStatus**アプリケーションを配置する方法を示します。 詳細についてを参照してください[をインストールおよび SharePoint 2013 のアプリケーションを管理する](http://technet.microsoft.com/library/fp161232.aspx)と[SharePoint の発行アプリケーション](http://msdn.microsoft.com/library/jj164070.aspx)
+Project Web App などの SharePoint web アプリケーションにアプリケーションを配置するのにはいくつかの方法があります。 SharePoint がインストールされているかどうか、オンプレミスまたはオンラインのテナント機能は、および配置を使用するがプライベートの SharePoint カタログまたは Office のパブリック ストア、アプリケーションを発行するかどうかによって異なります。 手順 5 では、プライベートなアプリ カタログで設置型インストールに**QuickStatus**アプリケーションを配置する方法を示します。 詳細についてを参照してください[をインストールおよび SharePoint 2013 のアプリケーションを管理する](https://technet.microsoft.com/library/fp161232.aspx)と[SharePoint の発行アプリケーション](https://msdn.microsoft.com/library/jj164070.aspx)
   
 > [!NOTE]
 > SharePoint カタログにアプリケーションを追加するには、SharePoint 管理者のアクセス許可が必要です。 
@@ -656,9 +656,9 @@ Project Web App などの SharePoint web アプリケーションにアプリケ
     
 4. SharePoint サーバーの全体管理で、サイド リンク バーで、**アプリケーション**を選択し、**アプリケーション カタログの管理**します。
     
-5. アプリケーションのカタログが存在しない場合は、 [SharePoint 2013 のアプリケーション カタログを管理](http://technet.microsoft.com/library/fp161234.aspx)する*web アプリケーションのアプリケーションのカタログ サイトを構成する*」に従ってアプリケーション カタログのサイト コレクションを作成します。
+5. アプリケーションのカタログが存在しない場合は、 [SharePoint 2013 のアプリケーション カタログを管理](https://technet.microsoft.com/library/fp161234.aspx)する*web アプリケーションのアプリケーションのカタログ サイトを構成する*」に従ってアプリケーション カタログのサイト コレクションを作成します。
     
-   アプリケーションのカタログが存在する場合は、[アプリケーション カタログの管理] ページで、サイトの URL に移動します。 次の手順でアプリケーションのカタログ サイトは`http://ServerName/sites/TestApps`です。
+   アプリケーションのカタログが存在する場合は、[アプリケーション カタログの管理] ページで、サイトの URL に移動します。 次の手順でアプリケーションのカタログ サイトは`https://ServerName/sites/TestApps`です。
     
 6. アプリケーション カタログ ページで、サイド リンク バーで **、SharePoint のアプリケーション**を選択します。 リボンの [**ファイル**] タブで、SharePoint ページのアプリでは、**ドキュメントのアップロード**を選択します。
     
@@ -670,7 +670,7 @@ Project Web App などの SharePoint web アプリケーションにアプリケ
     
    2. **[説明**] フィールド: 複数のプロジェクトでタスクの達成率を更新するアプリケーションを Test と入力します。
     
-   3. **アイコンの URL**フィールド: アプリ カタログのサイトのアセットをアプリケーション アイコンに 96 x 96 ピクセルのイメージを追加します。 移動して、 `http://ServerName/sites/TestApps`、**サイトの内容**を選択して、[**設定**] ドロップ ダウン メニューで、**サイトのアセット**を選択、quickStatusApp.png 画像を追加します。 **QuickStatusApp**の項目を右クリックし、**プロパティ**を選択し、**プロパティ**] ダイアログ ボックスの**アドレス (URL)** の値をコピーします。 たとえば、 `http://ServerName/sites/TestApps/SiteAssets/QuickStatusApp.png`、**アイコンの URL**の web アドレス] フィールドに値を貼り付けるとします。 タイプの例 (図 9) と、アイコンの説明は、QuickStatus アプリケーションのアイコンを入力します。 URL が有効であるかをテストします。
+   3. **アイコンの URL**フィールド: アプリ カタログのサイトのアセットをアプリケーション アイコンに 96 x 96 ピクセルのイメージを追加します。 移動して、 `https://ServerName/sites/TestApps`、**サイトの内容**を選択して、[**設定**] ドロップ ダウン メニューで、**サイトのアセット**を選択、quickStatusApp.png 画像を追加します。 **QuickStatusApp**の項目を右クリックし、**プロパティ**を選択し、**プロパティ**] ダイアログ ボックスの**アドレス (URL)** の値をコピーします。 たとえば、 `https://ServerName/sites/TestApps/SiteAssets/QuickStatusApp.png`、**アイコンの URL**の web アドレス] フィールドに値を貼り付けるとします。 タイプの例 (図 9) と、アイコンの説明は、QuickStatus アプリケーションのアイコンを入力します。 URL が有効であるかをテストします。
     
       **図 9 です。QuickStatus アプリケーションのアイコンの URL を追加します。**
 
@@ -1141,7 +1141,7 @@ Project Web App などの SharePoint web アプリケーションにアプリケ
   
 ```XML
     <?xml version="1.0" encoding="utf-8"?>
-    <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Elements xmlns="https://schemas.microsoft.com/sharepoint/">
     <CustomAction Id="21ea3aaf-79e5-4aac-9479-8eef14b4d9df.RibbonQuickStatusAction"
                     Location="CommandUI.Ribbon">
         <CommandUIExtension>
@@ -1185,7 +1185,7 @@ Project Web App などの SharePoint web アプリケーションにアプリケ
 ```XML
     <?xml version="1.0" encoding="utf-8" ?>
     <!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
-    <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+    <App xmlns="https://schemas.microsoft.com/sharepoint/2012/app/manifest"
         Name="QuickStatus"
         ProductID="{bbc497e7-1221-4d7b-a0ae-141a99546008}"
         Version="1.0.0.0"
@@ -1199,8 +1199,8 @@ Project Web App などの SharePoint web アプリケーションにアプリケ
         <Internal />
     </AppPrincipal>
     <AppPermissionRequests>
-        <AppPermissionRequest Scope="http://sharepoint/projectserver/statusing" Right="SubmitStatus" />
-        <AppPermissionRequest Scope="http://sharepoint/projectserver/projects" Right="Read" />
+        <AppPermissionRequest Scope="https://sharepoint/projectserver/statusing" Right="SubmitStatus" />
+        <AppPermissionRequest Scope="https://sharepoint/projectserver/projects" Right="Read" />
     </AppPermissionRequests>
     </App>
 ```
@@ -1215,15 +1215,15 @@ Project Web App などの SharePoint web アプリケーションにアプリケ
 
 ## <a name="next-steps"></a>次の手順
 
-**QuickStatus**アプリケーションは、Project Server 2013 とプロジェクトをオンラインでインストールできるアプリケーションを記述する方法の比較的単純な例です。 [QuickStatus アプリケーションをテストする](#pj15_StatusingApp_Testing)セクションには、可能な使いやすさのいくつかの機能強化が一覧表示されます。 **QuickStatus**アプリケーションは、Project Web App の割り当ての状態を更新するのに JavaScript 関数を使用します。 割り当ての達成率を変更することは推奨されるプロジェクト管理手法ではありません。 実績開始日と割り当てられているタスクの残存期間を更新する別の方法があります。 問題についてを参照してください[更新プログラムより優れた](http://www.mpug.com/articles/update-better)MPUG ニュースレターです。 
+**QuickStatus**アプリケーションは、Project Server 2013 とプロジェクトをオンラインでインストールできるアプリケーションを記述する方法の比較的単純な例です。 [QuickStatus アプリケーションをテストする](#pj15_StatusingApp_Testing)セクションには、可能な使いやすさのいくつかの機能強化が一覧表示されます。 **QuickStatus**アプリケーションは、Project Web App の割り当ての状態を更新するのに JavaScript 関数を使用します。 割り当ての達成率を変更することは推奨されるプロジェクト管理手法ではありません。 実績開始日と割り当てられているタスクの残存期間を更新する別の方法があります。 問題についてを参照してください[更新プログラムより優れた](https://www.mpug.com/articles/update-better)MPUG ニュースレターです。 
 
 <a name="pj15_StatusingApp_AdditionalResources"> </a>
 
 ## <a name="see-also"></a>関連項目
 
 - [Project Server のプログラミング タスク](project-programming-tasks.md)
-- [SharePoint アドイン](http://msdn.microsoft.com/library/jj163230.aspx)
+- [SharePoint アドイン](https://msdn.microsoft.com/library/jj163230.aspx)
 - [Project Web App の [タスクの更新を管理します。](https://technet.microsoft.com/en-us/library/hh767481%28v=office.14%29.aspx)
-- [カスタム アクションを作成して SharePoint アドインで展開する](http://msdn.microsoft.com/library/jj163954.aspx)
+- [カスタム アクションを作成して SharePoint アドインで展開する](https://msdn.microsoft.com/library/jj163954.aspx)
     
 

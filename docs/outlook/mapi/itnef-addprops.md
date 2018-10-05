@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e85641fb-6d3c-494a-981c-01781c7bf5bb
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e9d6b2b738ec16000612f41023f0fd46ceabf56f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6a7bb7265d29d2acfce17a1a09c95f7f7b539064
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589519"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396317"
 ---
 # <a name="itnefaddprops"></a>ITnef::AddProps
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージまたは添付ファイルをカプセル化するプロパティを追加するのには、呼び出し元のサービス プロバイダーまたはゲートウェイを有効にします。 
   
@@ -52,7 +52,7 @@ TNEF_PROP_CONTAINED
     
 TNEF_PROP_CONTAINED_TNEF 
   
-> メッセージまたは添付ファイルの_ulElemID_パラメーターで指定されたプロパティのみをエンコードします。 このフラグが設定されている場合、 _lpvData_の値は、 [IStream](https://docs.microsoft.com/en-us/windows/desktop/api/objidl/nn-objidl-istream)ポインターをする必要があります。 
+> メッセージまたは添付ファイルの_ulElemID_パラメーターで指定されたプロパティのみをエンコードします。 このフラグが設定されている場合、 _lpvData_の値は、 [IStream](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-istream)ポインターをする必要があります。 
     
 TNEF_PROP_EXCLUDE 
   
@@ -78,7 +78,7 @@ TNEF_PROP_MESSAGE_ONLY
   
 > [in]含めるか、カプセル化から除外するプロパティの一覧へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -92,11 +92,11 @@ S_OK
   
 実際の TNEF エンコードが行われない**AddProps**の[ITnef::Finish](itnef-finish.md)メソッドが呼び出されるまでに注意してください。 この機能は、 **AddProps**に渡されたポインターに保つように有効期限**を終了**する呼び出しが行われた後を意味します。 その時点で、すべてのオブジェクトと**AddProps**の呼び出しで渡されるデータは、リリースまたは解放されます。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
 |File.cpp  <br/> |SaveToTNEF  <br/> |MFCMAPI では、 **ITnef::AddProps**メソッドを使用して、TNEF ストリームにメッセージからプロパティをコピーします。  <br/> |
    

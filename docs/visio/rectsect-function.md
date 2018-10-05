@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: e83343c5-df5f-bf74-f854-6380176693a2
 description: X に関連付けられている四角形のセクターを計算し、y、セクターを示す 0 ~ 4 の整数を返します。
-ms.openlocfilehash: 1f35704cdb827c9c751f11593436c110755d7777
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fb7ed37ac498765e21c62d7180413cdbcb932502
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806149"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395085"
 ---
 # <a name="rectsect-function"></a>RECTSECT 関数
 
@@ -38,7 +38,7 @@ RECTSECT (* **幅** *、* **高さ** *、* * *x* * *、* * *y* * *、* **オプ�
 
 四角形の*幅*と*高さ*、および四角形の中心点から点 (*x, y*) を持つことを検討してください。 中心点とその 4 つのセクターに分割するのには四角形の角を結ぶ対角線を描画します。 セクター 0 から 4 までは、中心点、右、上、左を表現し、それぞれの下します。 
   
-![](media/ShpSheetRef_CA_03_ZA07645862.gif)
+![セクター 0 から 4 までは、中心点、右、上、左を表現し、それぞれ下](media/ShpSheetRef_CA_03_ZA07645862.gif)
   
 ## <a name="example"></a>例
 

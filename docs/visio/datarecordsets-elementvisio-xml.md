@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: c75b3233-9ac5-d29c-a658-d554e86e6be4
 description: ドキュメント内にあるデータ レコード セットのすべての要素が含まれています。
-ms.openlocfilehash: 205c4d963f111490698627040c190f322f2f36a1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7730e55f0025181db193a1e64226e879f9072e90
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805169"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401490"
 ---
 # <a name="datarecordsets-element-visio-xml"></a>DataRecordSets 要素 ' Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805169"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[DataRecordSets_Type](datarecordsets_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |recordsets.xml  <br/> |
    

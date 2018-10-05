@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 4d324fb3-d917-4502-b3a4-179c479deb79
 description: '�ŏI�X�V��: 2012�N7��5��'
-ms.openlocfilehash: e6b3ef7c7eb469a5de909d440e22e522218a41f8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 066ad3dfb64161e326b92fef7774d5b3b9461d8a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569492"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399571"
 ---
 # <a name="tnef-processing"></a>TNEF 処理
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 次の一連のアクションでは、送信および受信メッセージを処理するトランスポートが TNEF のメソッドを使用する方法について説明します。
   
@@ -35,7 +35,7 @@ ms.locfileid: "22569492"
     
 5. 使用[ITnef: IUnknown](itnefiunknown.md)インターフェイスのメソッドはメッセージのテキストでのメッセージの添付ファイルの位置を記述するタグを挿入します。 
     
-6. [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx)の方法でタグ付けされたメッセージのテキストにアクセスし、メッセージング システムに送信します。 
+6. [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)の方法でタグ付けされたメッセージのテキストにアクセスし、メッセージング システムに送信します。 
     
  **カプセル化されたプロパティを取得するには**
   

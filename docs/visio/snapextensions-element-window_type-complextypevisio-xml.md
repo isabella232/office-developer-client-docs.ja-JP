@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7a12ae10-6aa4-c845-5ede-1c14c6dac80f
 description: 特定のスナップインの拡張機能の設定が有効か、作業中のウィンドウを無効になっているかどうかを指定します。 値は、次の表の値の合計を指定できます。
-ms.openlocfilehash: 0fe9ce4060fbd6366a188e17ed716cb74034f375
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 57fde520d3dc8e0582c0062a599d5f38a73169b4
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806521"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394406"
 ---
 # <a name="snapextensions-element-windowtype-complextype-visio-xml"></a>SnapExtensions 要素 (Window_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806521"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[SnapExtensions_Type](snapextensions_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |windows.xml  <br/> |
    
@@ -52,7 +52,7 @@ ms.locfileid: "19806521"
 
 なし。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **SnapExtensions**要素の値は、次の表の値の合計にできます。 
   

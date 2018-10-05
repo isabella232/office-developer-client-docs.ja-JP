@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 32089213-ef7b-4152-84ab-b44e9911332b
 description: '最終更新日: 2016 年 9 月 7 日'
-ms.openlocfilehash: 697f7e8045ca198c2c10b9396f19cb2d7ce8346e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b84549ab31c939b4e6115795916ebd3520a96dbd
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583653"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400727"
 ---
 # <a name="pidtagattachmethod-canonical-property"></a>PidTagAttachMethod 標準プロパティ
 
  
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 添付ファイルの内容にアクセスできる方法を示す MAPI 定義の定数が含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22583653"
 |関連するプロパティ:  <br/> |PR_ATTACH_METHOD  <br/> |
 |識別子:  <br/> |0x3705  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |メッセージの添付ファイル  <br/> |
+|エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、次の値の 1 つだけ持つことができます。
   
@@ -86,7 +86,7 @@ OLE 2.0 **IStorage**の形式で OLE オブジェクトがある場合、デー�
   
 OLE インターフェイスとフォーマットの詳細については、 *OLE プログラマ リファレンス*を参照してください。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **ATTACH_BY_WEBREFERENCE**を**PR_ATTACH_METHOD**には、添付ファイルのコンテンツは、メッセージには。 代わりに、 **PR_ATTACH_LONG_FILENAME**プロパティには、オンラインで保存された添付ファイルのコンテンツに絶対 URL が含まれています。 
   
@@ -94,7 +94,7 @@ OLE インターフェイスとフォーマットの詳細については、 *OL
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > メッセージと添付ファイルのオブジェクトを処理します。
     

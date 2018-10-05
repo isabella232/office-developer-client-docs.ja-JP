@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 394b8e6f-9132-4c98-8fd6-46ad3c871440
 description: Office ドキュメント キャッシュ (ODC) を制御するための CSISyncClient の使用法について取り上げます。
-ms.openlocfilehash: 908442bdc4e02f8268b9af877921da45a64ab197
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ce33063f88492bcd6f9682a4a6431fb36f138d55
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565285"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399453"
 ---
 # <a name="using-csisyncclient-to-control-the-office-document-cache-odc"></a>Office ドキュメント キャッシュ (ODC) を制御するための CSISyncClient の使用
 
@@ -202,7 +202,7 @@ CsiSyncClient COM オブジェクトによってサポートされているフ�
   
  _bstrProgID_
   
-双方向通信のためのコンシューマーの COM オブジェクトを示します。空にすることはできません。最大長は 39 文字です。ProgID の詳細については、「[\<ProgID\> Key](https://docs.microsoft.com/ja-JP/windows/desktop/com/-progid--key)」をご覧ください。 
+双方向通信のためのコンシューマーの COM オブジェクトを示します。空にすることはできません。最大長は 39 文字です。ProgID の詳細については、「[\<ProgID\> Key](https://docs.microsoft.com/windows/desktop/com/-progid--key)」をご覧ください。 
   
  _bstrFileSystemDirectoryHint_
   
@@ -248,7 +248,7 @@ LocalFileChange は、指定のファイルのアップロードを試みるよ�
   
  _bstrWebPath_
   
-サーバー上のファイルを示す文字列。この値は空ではない有効な URL にしなければなりません。ただし、http://support.microsoft.com/kb/208427 で定義されている INTERNET_MAX_URL_LENGTH を超えないようにしてください。 
+サーバー上のファイルを示す文字列。この値は空ではない有効な URL にしなければなりません。ただし、https://support.microsoft.com/kb/208427 で定義されている INTERNET_MAX_URL_LENGTH を超えないようにしてください。 
   
 ##### <a name="return-values"></a>戻り値
 
@@ -287,7 +287,7 @@ RenameFile は、指定の ResourceID に関して新しい URL とローカル 
   
  _bstrNewWebPath_
   
-ファイルの新しい URL を指定する文字列。この値は空ではない有効な URL にする必要があります。ただし、http://support.microsoft.com/kb/208427 で定義されている INTERNET_MAX_URL_LENGTH を超えないようにしてください。 
+ファイルの新しい URL を指定する文字列。この値は空ではない有効な URL にする必要があります。ただし、https://support.microsoft.com/kb/208427 で定義されている INTERNET_MAX_URL_LENGTH を超えないようにしてください。 
   
  _fBlockUploads_
   
@@ -340,7 +340,7 @@ ServerFileChange は、CsiSyncClient COM オブジェクトに対して、指定
 |:-----|:-----|
 |bstrFileSystemPath  <br/> |クライアント上のファイルを示す文字列。この値は空ではないローカル パスにする必要があります。最大長は 256 文字です。このパスは、Initialize の呼び出し時に FileSystemDirectoryHint で指定されたディレクトリ ツリーになければなりません。  <br/> |
 |bstrResourceID  <br/> |ファイルの ResourceID を示す文字列。この値を空にすることはできません。最大長は 128 文字です。  <br/> |
-|bstrWebPath  <br/> |サーバー上のファイルを示す文字列。この値は空ではない有効な URL にする必要があります。ただし、http://support.microsoft.com/kb/208427 で定義されているように INTERNET_MAX_URL_LENGTH を超えないようにしてください。  <br/> |
+|bstrWebPath  <br/> |サーバー上のファイルを示す文字列。この値は空ではない有効な URL にする必要があります。ただし、https://support.microsoft.com/kb/208427 で定義されているように INTERNET_MAX_URL_LENGTH を超えないようにしてください。  <br/> |
    
 ##### <a name="return-values"></a>戻り値
 

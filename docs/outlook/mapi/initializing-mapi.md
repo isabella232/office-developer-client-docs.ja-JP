@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 22ee8157-d74e-4a94-9c76-b9ac736d5211
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d896d66db13b2114c1c333084d5f3b1d3a341796
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5fde3e7eda8d98eb5080fff360616649b1eb96a5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574791"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399040"
 ---
 # <a name="initializing-mapi"></a>MAPI の初期化
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 MAPI ライブラリを使用するすべてのクライアント アプリケーションは**生じます**関数を呼び出す必要があります。 詳細については、[生じます](mapiinitialize.md)を参照してください。 **生じます**では、セッションのグローバル データを初期化し、呼び出しを受け入れるため、MAPI ライブラリを準備します。 いくつかの状況で設定するのには重要ないくつかのフラグがあります。 
   
@@ -33,7 +33,7 @@ MAPI ライブラリを使用するすべてのクライアント アプリケ�
     
 - MAPI_NO_COINIT
     
-    [CoInitialize](http://msdn.microsoft.com/en-us/library/ms886303.aspx)の呼び出しで COM を初期化するために**生じます**が試みないように、MAPI_NO_COINT フラグを設定します。 **MAPIINIT_0**構造体が渡された場合に**生じます** _ulFlags_ MAPI_NO_COINIT に設定すると、MAPI は、COM が既に初期化されてし、 **CoInitialize**の呼び出しを使用しないと見なされます。
+    [CoInitialize](https://msdn.microsoft.com/library/ms886303.aspx)の呼び出しで COM を初期化するために**生じます**が試みないように、MAPI_NO_COINT フラグを設定します。 **MAPIINIT_0**構造体が渡された場合に**生じます** _ulFlags_ MAPI_NO_COINIT に設定すると、MAPI は、COM が既に初期化されてし、 **CoInitialize**の呼び出しを使用しないと見なされます。
     
 MAPI が使用されていたスレッドに通知ウィンドウを作成する MAPI_MULTITHREAD_NOTIFICATIONS のフラグが渡されない場合に**生じます**の最初の呼び出しをします。 MAPI_MULTITHREAD_NOTIFICATIONS が渡された場合、MAPI が別のスレッドに通知ウィンドウを作成、通知の処理に専用のスレッドです。 MAPI では、通知を非表示のウィンドウを作成するために使用されるスレッドを受け取ります。 
   

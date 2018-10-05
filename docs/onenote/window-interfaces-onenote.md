@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: e6900ad7-c147-4816-93a9-5773170b115a
 description: WindowとWindowsのインターフェイスは、 OneNote 2013 API は OneNote ウィンドウを操作するユーザーを有効にするオブジェクトです。これらのオブジェクトでは、OneNote ウィンドウの集合を列挙し、特定のウィンドウのプロパティを変更することができます。
-ms.openlocfilehash: 83a3742419a4c8faf11c22c4766744d675151c1c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: efc34312def588ecff54c63b3db84f8bf909352b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799302"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399950"
 ---
 # <a name="window-interfaces-onenote"></a>ウィンドウ インターフェイス (OneNote 2013)
 
@@ -87,7 +87,7 @@ OneNote ウィンドウ用に使用できる 4 つの表示モードを次に示
 
 |||
 |:-----|:-----|
-|**説明** <br/> |OneNote のリンクを渡された場合 (onenote://)、OneNote 内の対応する場所には、OneNote ウィンドウが開きます。ただし、リンクは、外部リンク、file://、http://などの場合は、[セキュリティ] ダイアログ ボックスが表示されます。棄却に関する、OneNote でリンクを開くしようし、HResult.hrObjectDoesNotExist エラーが返されます。  <br/> |
+|**説明** <br/> |OneNote のリンクを渡された場合 (onenote://)、OneNote 内の対応する場所には、OneNote ウィンドウが開きます。 ただし、リンクが外部リンク、https://、file://などの場合、[セキュリティ] ダイアログ ボックスが表示されます。 棄却に関する、OneNote でリンクを開くしようし、HResult.hrObjectDoesNotExist エラーが返されます。  <br/> |
 |**構文** <br/> | `HRESULT NavigateToUrl (`           ` [in]BSTR bstrUrl); ` <br/> |
 |**パラメーター** <br/> | _bstrUrl_-URL に移動します。  <br/> |
    

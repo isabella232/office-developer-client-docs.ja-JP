@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 40ec6dd4-2206-4e59-aafe-53aaf693f973
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 346a2bce6d5709490ad11da842ed4f3e794b1996
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7eb65bbae2fca6648c3a701dfa5c83c5bf297ec5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569191"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396184"
 ---
 # <a name="ipersistmessage--iunknown"></a>IPersistMessage : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 フォームのさまざまな状態間の遷移にストレージを処理するためにフォームのビューアーを使用できます。
   
@@ -31,8 +31,8 @@ ms.locfileid: "22569191"
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
 |によって公開されます。  <br/> |メッセージ オブジェクトを永続化します。  <br/> |
-|によって実装されます。  <br/> |フォーム オブジェクト  <br/> |
-|によって呼び出されます。  <br/> |フォームの閲覧者  <br/> |
+|実装元:  <br/> |フォーム オブジェクト  <br/> |
+|呼び出し元:  <br/> |フォームの閲覧者  <br/> |
 |インターフェイスの識別子。  <br/> |IID_IPersistMessage  <br/> |
 |ポインターの型。  <br/> |LPPERSISTMESSAGE  <br/> |
    
@@ -49,11 +49,11 @@ ms.locfileid: "22569191"
 |[SaveCompleted](ipersistmessage-savecompleted.md) <br/> |フォームに通知する、保存操作が完了しました。  <br/> |
 |[HandsOffMessage](ipersistmessage-handsoffmessage.md) <br/> |フォームの現在のメッセージを解放するが発生します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 すべてのフォームは、 **IPersistMessage**インターフェイスを実装する必要があります。 
   
- **IPersistMessage**は、[すること](http://msdn.microsoft.com/library/1c1a20fc-c101-4cbc-a7a6-30613aa387d7%28Office.15%29.aspx)の OLE インターフェイスと同様に動作します。 詳細については、**すること**の方法を参照してください。 
+ **IPersistMessage**は、[すること](https://msdn.microsoft.com/library/1c1a20fc-c101-4cbc-a7a6-30613aa387d7%28Office.15%29.aspx)の OLE インターフェイスと同様に動作します。 詳細については、**すること**の方法を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

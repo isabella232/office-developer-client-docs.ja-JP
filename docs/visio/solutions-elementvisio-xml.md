@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 75e53ad0-3ca3-11a1-9107-63ec15601c13
 description: ドキュメントに格納されているソリューションのプロパティを指定します。
-ms.openlocfilehash: 522aa3b1229d14f0639d10bb6082da40767c5ecd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 65f6d3a34a62cd5e7b63ca0f6518a6e839b48360
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806548"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400222"
 ---
 # <a name="solutions-element-visio-xml"></a>ソリューションの要素 ('Visio XML')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806548"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Solutions_Type](solutions_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |solutions.xml  <br/> |
    

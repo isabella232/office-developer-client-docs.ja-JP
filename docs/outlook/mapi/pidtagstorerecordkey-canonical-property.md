@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 27347302-bd52-4f62-98f1-6c37f9a66463
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 08527f3325742eb7c48f11c2ed7d08f71fa3e972
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d6f858a9f1d3d4620a86621e3f5ecb4ad4609691
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592711"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401084"
 ---
 # <a name="pidtagstorerecordkey-canonical-property"></a>PidTagStoreRecordKey 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 バイナリ比較の一意の識別子 (キーのレコード) オブジェクトが格納されているメッセージ ストアが含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22592711"
 |関連するプロパティ:  <br/> |PR_STORE_RECORD_KEY  <br/> |
 |識別子:  <br/> |0x0FFA  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |ID プロパティ  <br/> |
+|エリア:  <br/> |ID プロパティ  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 メッセージ ・ ストアのこのプロパティは、ストアの**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) のプロパティと同じです。
   
@@ -44,11 +44,11 @@ ms.locfileid: "22592711"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > メッセージと添付ファイルのオブジェクトを処理します。
     
-[[MS OXCICAL]](http://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
+[[MS OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
 > IETF RFC2445、RFC2446、RFC2447、および予定と会議のオブジェクトに変換します。
     

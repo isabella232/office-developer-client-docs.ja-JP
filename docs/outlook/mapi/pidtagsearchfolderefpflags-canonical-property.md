@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: ef82a75f-a09f-4880-ba6a-e739b16422a3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1bdd8a283fead891261bbb05c38d398132870a50
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d670aa91cc60c051f8464f9d83536b888b44ca9e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582260"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400664"
 ---
 # <a name="pidtagsearchfolderefpflags-canonical-property"></a>PidTagSearchFolderEfpFlags 標準プロパティ
 
@@ -34,23 +34,23 @@ ms.locfileid: "22582260"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |検索  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
-このプロパティは、 **PR_EXTENDED_FOLDER_FLAGS** ([PidTagExtendedFolderFlags](pidtagextendedfolderflags-canonical-property.md)) のプロパティ、および、 **ExtendedFlags**サブ b のプロパティ、フィールド、フォルダーの内のフラグを含める必要があります具体的には。 フォルダーのフラグに関する情報は、 [[MS OXOCFG]](http://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)を参照してください。
+このプロパティは、 **PR_EXTENDED_FOLDER_FLAGS** ([PidTagExtendedFolderFlags](pidtagextendedfolderflags-canonical-property.md)) のプロパティ、および、 **ExtendedFlags**サブ b のプロパティ、フィールド、フォルダーの内のフラグを含める必要があります具体的には。 フォルダーのフラグに関する情報は、 [[MS OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)を参照してください。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
+[[MS OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
   
 > プロパティや検索フォルダーの一覧の構成を操作するための動作を指定します。
     
-[[MS OXOCFG]](http://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
+[[MS OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
   
 > 場所と共有カテゴリのリストおよび作業時間など、クライアントとサーバーの構成データのプロパティを指定します。
     

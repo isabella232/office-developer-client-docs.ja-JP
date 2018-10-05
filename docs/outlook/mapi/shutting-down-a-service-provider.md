@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: e518830b-0aaa-4ce4-a85a-07e4f00750a9
 description: '�ŏI�X�V��: 2015�N12��7��'
-ms.openlocfilehash: 70db0b0a62568cc499cf915634756bb422ae82ca
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4e25dad1e04927e10af38cdfbf8f30c9bd04234b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567196"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395176"
 ---
 # <a name="shutting-down-a-service-provider"></a>サービス プロバイダーのシャットダウン
 
  
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 クライアントがセッションを終了し、すべてのアクティブなサービス プロバイダーをシャット ダウンするには、 [IMAPISession::Logoff](imapisession-logoff.md)メソッドを呼び出すと、MAPI は順に次メソッドを呼び出します。 
   
@@ -33,7 +33,7 @@ ms.locfileid: "22567196"
   
 - すべてのサブオブジェクトを含め、開いているオブジェクトと状態オブジェクトを解放します。
     
-- メソッド サポート オブジェクトの[リ ス](http://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx)の参照カウントをデクリメントします。 
+- メソッド サポート オブジェクトの[リ ス](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx)の参照カウントをデクリメントします。 
     
 - プロバイダーの登録済みの[MAPIUID](mapiuid.md)構造体のすべてを削除しています。 
     

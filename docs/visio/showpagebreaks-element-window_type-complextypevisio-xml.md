@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1a8c29d9-31d9-dd77-09c5-6e9eaf870552
 description: ウィンドウに改ページを表示するかどうかを指定します。
-ms.openlocfilehash: 03573dde3c01e2f245f4f02e5daee22965de45b5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 323fa123db83e93c9d1ef89ba7578296d8c9697d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806482"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396674"
 ---
 # <a name="showpagebreaks-element-windowtype-complextype-visio-xml"></a>ShowPageBreaks 要素 (Window_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806482"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[ShowPageBreaks_Type](showpagebreaks_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |windows.xml  <br/> |
    

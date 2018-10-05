@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f8d0b7b9-2798-4d29-99e4-17da99039361
 description: '最終更新日: 2012 年 2 月 20 日'
-ms.openlocfilehash: 3e23fa9fcb074fabacf1a2dd9ac3f632cdce5b5c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dbb18ce712d7900106f2c8dd18404e47d8bdbdb7
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576177"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396212"
 ---
 # <a name="mnlscomparestringw"></a>MNLS_CompareStringW
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 2 つの Unicode 文字列を比較します。
   
@@ -37,11 +37,11 @@ int MNLS_CompareStringW (
 
  _lcid_
   
-> [in]ロケール識別子です。 詳細な定義は、[通常](http://msdn.microsoft.com/en-us/library/dd317759%28VS.85%29.aspx)の_ロケール_パラメーターを参照してください。
+> [in]ロケール識別子です。 詳細な定義は、[通常](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx)の_ロケール_パラメーターを参照してください。
     
  _dwFlags_
   
-> [in]大文字と小文字およびアクセント記号を無視するようにフラグを設定します。 詳細な定義は、 [CompareStringEx](http://msdn.microsoft.com/en-us/library/dd317761%28VS.85%29.aspx)の_dwCmpFlags_パラメーターを参照してください。
+> [in]大文字と小文字およびアクセント記号を無視するようにフラグを設定します。 詳細な定義は、 [CompareStringEx](https://msdn.microsoft.com/library/dd317761%28VS.85%29.aspx)の_dwCmpFlags_パラメーターを参照してください。
     
  _pstr1_
   
@@ -61,17 +61,17 @@ int MNLS_CompareStringW (
     
 ## <a name="return-value"></a>戻り値
 
-[CompareStringEx](http://msdn.microsoft.com/en-us/library/dd317761%28VS.85%29.aspx)に記載されている値を返します。
+[CompareStringEx](https://msdn.microsoft.com/library/dd317761%28VS.85%29.aspx)に記載されている値を返します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
-この関数は、 [CompareStringW](http://msdn.microsoft.com/en-us/library/dd317759%28VS.85%29.aspx)をラップします。 **MNLS_CompareStringW**では、同じパラメーターを取得し、 [CompareStringW](http://msdn.microsoft.com/en-us/library/dd317759%28VS.85%29.aspx)と同じ動作をしました。
+この関数は、 [CompareStringW](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx)をラップします。 **MNLS_CompareStringW**では、同じパラメーターを取得し、 [CompareStringW](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx)と同じ動作をしました。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[CompareStringW](http://msdn.microsoft.com/en-us/library/dd317759%28VS.85%29.aspx)
+[CompareStringW](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx)
   
-[CompareStringEx](http://msdn.microsoft.com/en-us/library/dd317761%28VS.85%29.aspx)
+[CompareStringEx](https://msdn.microsoft.com/library/dd317761%28VS.85%29.aspx)
 

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 0a799fe5-04e2-4e1d-b0cd-9bdd2577d299
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3a26a8483e584ccc5cf9f33e0dbd75f379c01633
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 723affa054cb35a9cc7a2ee28e051e3b9a6d04e0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569667"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401665"
 ---
 # <a name="pidtagmessagesubmissionid-canonical-property"></a>PidTagMessageSubmissionId 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージ転送エージェント (MTA) のメッセージ転送システム (MTS) 識別子が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22569667"
 |関連するプロパティ:  <br/> |PR_MESSAGE_SUBMISSION_ID  <br/> |
 |識別子:  <br/> |0x0047  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |メール  <br/> |
+|エリア:  <br/> |メール  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 メッセージの送信が正常に完了すると、MTA では、このプロパティが返されます。 要求の取り消しなど、このメッセージに関する MTA と今後の接続では、このプロパティで MTS 識別子を使用します。
   
@@ -42,11 +42,11 @@ ms.locfileid: "22569667"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXTNEF]](http://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
+[[MS OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
   
 > エンコードし、メッセージと添付ファイルのオブジェクトを効率的なストリーム形式をデコードします。
     

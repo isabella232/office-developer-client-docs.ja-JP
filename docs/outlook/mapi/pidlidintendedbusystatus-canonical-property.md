@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 84221dd3-de71-4c10-abd7-9f15aefd02ed
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 58642cd84c9f9b784a8a9d7246bfed0dab58e119
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f64ff019212065efd651fd2562c48519b0c7c2d0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577052"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393570"
 ---
 # <a name="pidlidintendedbusystatus-canonical-property"></a>PidLidIntendedBusyStatus 標準プロパティ
 
@@ -35,7 +35,7 @@ ms.locfileid: "22577052"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティで使用できる値は、プロパティ**dispidBusyStatus**の場合と同じです。
   
@@ -43,11 +43,11 @@ ms.locfileid: "22577052"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
     

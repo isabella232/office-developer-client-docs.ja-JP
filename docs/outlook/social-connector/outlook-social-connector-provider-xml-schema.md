@@ -8,16 +8,16 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5a88adf0-9265-4d49-976d-de0d93269aa9
 description: OSC プロバイダーの拡張メソッドの OSC プロバイダーによって返されるすべての XML は、OSC プロバイダーの次の XML スキーマに準拠する必要があります。 OSC スキーマが完全にここで再現します。
-ms.openlocfilehash: 0cf46d2a995fe9362777e853b0f13a9aceacfb99
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b1ec7888f5b6d9a7264f597e0c1ef3855d27b011
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804463"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394105"
 ---
 # <a name="outlook-social-connector-provider-xml-schema"></a>Outlook ソーシャル コネクタ プロバイダーの XML スキーマ
 
-OSC プロバイダーの拡張メソッドの OSC プロバイダーによって返されるすべての XML は、OSC プロバイダーの次の XML スキーマに準拠する必要があります。 OSC スキーマが完全にここで再現します。 現在のスキーマ定義ファイル、OutlookSocialProvider1_1.xsd は、この記事に付属するプロバイダー テンプレートのダウンロードにも提供されます。 詳細についてを参照してください[Outlook ソーシャル コネクタ 2013: プロバイダー テンプレート](http://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c)。 
+OSC プロバイダーの拡張メソッドの OSC プロバイダーによって返されるすべての XML は、OSC プロバイダーの次の XML スキーマに準拠する必要があります。 OSC スキーマが完全にここで再現します。 現在のスキーマ定義ファイル、OutlookSocialProvider1_1.xsd は、この記事に付属するプロバイダー テンプレートのダウンロードにも提供されます。 詳細についてを参照してください[Outlook ソーシャル コネクタ 2013: プロバイダー テンプレート](https://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c)。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -27,9 +27,9 @@ OSC プロバイダーの拡張メソッドの OSC プロバイダーによっ�
     All Rights Reserved
 -->
 <xs:schema
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    targetNamespace="http://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd"
-    xmlns="http://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd"
+    xmlns:xs="https://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd"
+    xmlns="https://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd"
     elementFormDefault="qualified">
   <!-- Root element for the activity feed -->
   <xs:element name="activityFeed" type="activityFeedType" />

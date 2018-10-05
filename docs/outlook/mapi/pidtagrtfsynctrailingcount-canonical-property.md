@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 3f0e5b24-767e-46f5-bb3d-e9cb82cb935b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7efa8dccf4c2c6da0ad60688d06d241d336e3943
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 67093cf456db9df5f9e939bdda9d2e44f248dadc
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581007"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397920"
 ---
 # <a name="pidtagrtfsynctrailingcount-canonical-property"></a>PidTagRtfSyncTrailingCount 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージの重要な文字の後に表示される、無視できる文字の数が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22581007"
 |関連するプロパティ:  <br/> |PR_RTF_SYNC_TRAILING_COUNT  <br/> |
 |識別子:  <br/> |0x1011  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |MAPI メッセージ  <br/> |
+|エリア:  <br/> |MAPI メッセージ  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、リッチ テキスト形式 (RFT) 補助プロパティです。 これらのプロパティ[へ](rtfsync.md)の関数で使用され、クライアント アプリケーションで直接使用するものではありません。 
   
@@ -42,11 +42,11 @@ ms.locfileid: "22581007"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXTNEF]](http://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
+[[MS OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
   
 > エンコードし、メッセージと添付ファイルのオブジェクトを効率的なストリーム形式をデコードします。
     

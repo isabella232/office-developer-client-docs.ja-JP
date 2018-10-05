@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 0e2a47be-497b-4031-87ce-60b2635e25f7
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0eb0374788da629c4c28eff2fce93536cf65a4ce
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 375a0f1d39b09b7ad453120f20752e00ffda0e15
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582988"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398711"
 ---
 # <a name="itabledatahrgetview"></a>ITableData::HrGetView
 
@@ -54,17 +54,17 @@ HRESULT HrGetView(
   
 > [out]新しく作成されたビューへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > ビューは正しく作成されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **ITableData::HrGetView**メソッドは、 _lpSSortOrderSet_パラメーターで指定された順序で並べ替え、テーブルのデータの読み取り専用ビューを作成します。 カーソルは、ビューの最初の行の先頭に配置されます。 ビューにアクセスするため**IMAPITable**インターフェイスの実装が返されます。 
   
-サービス プロバイダーは、テーブルにクライアントのアクセスを提供する必要があるときに**HrGetView**を呼び出します。 **HrGetView**では、ビューを作成し、 **IMAPITable**ポインターを返します。 サービス プロバイダーは、クライアントへのポインターを渡します。 クライアントでは、テーブルを使用した後し、その[リ ス](http://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx)のメソッドを呼び出して、 **HrGetView**は、 _lpfCallerRelease_パラメーターで指定されたコールバック関数を呼び出します。 
+サービス プロバイダーは、テーブルにクライアントのアクセスを提供する必要があるときに**HrGetView**を呼び出します。 **HrGetView**では、ビューを作成し、 **IMAPITable**ポインターを返します。 サービス プロバイダーは、クライアントへのポインターを渡します。 クライアントでは、テーブルを使用した後し、その[リ ス](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx)のメソッドを呼び出して、 **HrGetView**は、 _lpfCallerRelease_パラメーターで指定されたコールバック関数を呼び出します。 
   
 サービス プロバイダーは、設定、カスタマイズされた列を持つビューをクライアントに返す必要があるか、制限、プロバイダー メソッドを呼び出して、ビューの[IMAPITable::SetColumns](imapitable-setcolumns.md)と[IMAPITable::Restrict](imapitable-restrict.md)のクライアント アクセスを許可する前にします。 
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: b1ee2533-8077-4976-846b-d42d148bf8c6
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d65ccec0ab270a59252c8a3ae94bdeca839fa807
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c0d67d10d54591de926724cbf594a44f17e9ea14
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582365"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397101"
 ---
 # <a name="implementing-mapi-objects"></a>MAPI オブジェクトの実装
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 MAPI オブジェクトは、C++ のクラスや言語によっては、C のデータ構造を使用して実装できる API のクライアントの設定やサービス プロバイダーを使用します。 MAPI サービス プロバイダー インターフェイスと C または C++ でサービス プロバイダーを記述できます。クライアント アプリケーションは、C または C++ を使用することもできます。 可能であれば、クライアントとオブジェクト指向プログラミング ・ インタ フェースを使用するサービス プロバイダーは、C を使用する必要があります。 
   
@@ -29,7 +29,7 @@ C++ は、MAPI は、オブジェクト指向のテクノロジでは、およ�
   
 MAPI オブジェクトが実装されている場合、クライアントまたはサービス プロバイダーはインターフェイスのメソッド、プライベート メソッドの実装に固有のコードと状態情報を維持するためのプライベート データ メンバーをサポートするためのコードのすべてのコードを作成します。 インターフェイス メソッドのコードは、正常な動作を文書化する MAPI によって公開された仕様に従う必要があります。 
   
-Mapidefs.h ヘッダー ファイルとクライアントとのいずれかの言語サービス プロバイダーを使用して MAPI オブジェクトの定義に役立つ OLE ヘッダー ファイル内の多くのマクロがあります。 などの MAPI インターフェイスの各メソッドを定義するマクロがあります。 [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx)インターフェイスのメソッドを定義するマクロは、Mapidefs.h に次のように表示されます。 
+Mapidefs.h ヘッダー ファイルとクライアントとのいずれかの言語サービス プロバイダーを使用して MAPI オブジェクトの定義に役立つ OLE ヘッダー ファイル内の多くのマクロがあります。 などの MAPI インターフェイスの各メソッドを定義するマクロがあります。 [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)インターフェイスのメソッドを定義するマクロは、Mapidefs.h に次のように表示されます。 
   
 ```cpp
 #define MAPI_IUNKNOWN_METHODS(IPURE)          \

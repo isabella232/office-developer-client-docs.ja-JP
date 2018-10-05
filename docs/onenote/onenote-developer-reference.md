@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 4c4ef9e8-6b30-481b-8023-2e1280bcbcc9
 description: このリファレンスには、概念の概要および OneNote 2013 デスクトップ クライアント アプリケーションのためのソリューションを開発するときにプログラムの参照が含まれています。
-ms.openlocfilehash: 6a3dde524dfa5357c4523db3b545ac583eaa3274
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b19e9957d1faed1bda150df34f61209d9f40fc5d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566580"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395709"
 ---
 # <a name="onenote-developer-reference"></a>OneNote 開発者用リファレンス
 
@@ -30,15 +30,15 @@ ms.locfileid: "22566580"
 - [エラー コード](error-codes-onenote.md): OneNote 2013 オブジェクト モデル内のエラー コードを一覧表示します。
     
 > [!NOTE]
-> このドキュメントに記載する API は、未接続のシナリオにおける OneNote Win32 デスクトップ クライアント ソリューションのみを対象としています。接続のシナリオの場合は、推奨する OneNote サービス API を使用してください。詳細については、[dev.onenote.com](http://go.microsoft.com/fwlink/?LinkID=390615) にアクセスしてください。 
+> このドキュメントに記載する API は、未接続のシナリオにおける OneNote Win32 デスクトップ クライアント ソリューションのみを対象としています。接続のシナリオの場合は、推奨する OneNote サービス API を使用してください。詳細については、[dev.onenote.com](https://go.microsoft.com/fwlink/?LinkID=390615) にアクセスしてください。 
   
 ## <a name="see-also"></a>関連項目
 
-- [OneNote の開発者](http://go.microsoft.com/fwlink/?LinkID=390615)   
+- [OneNote の開発者](https://go.microsoft.com/fwlink/?LinkID=390615)   
 - [GitHub のサンプル](https://github.com/OneNoteDev/)(OneNote サービス Api)     
-- [マイクロソフト製品のアクセシビリティ機能](http://www.microsoft.com/enable/products/default.aspx)    
-- [ドキュメントの表記規則](http://msdn.microsoft.com/en-us/office/aa905365.aspx)    
-- [OneNote の開発者リファレンスの著作権情報](https://msdn.microsoft.com/en-us/library/office/jj680116.aspx)
+- [マイクロソフト製品のアクセシビリティ機能](https://www.microsoft.com/enable/products/default.aspx)    
+- [ドキュメントの表記規則](https://msdn.microsoft.com/office/aa905365.aspx)    
+- [OneNote の開発者リファレンスの著作権情報](https://msdn.microsoft.com/library/office/jj680116.aspx)
     
     
 

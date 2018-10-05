@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: af0b0bc9-20ef-4503-8b3b-8f2a97b671a2
 description: Microsoft InfoPath には、ユーザー エクスペリエンスの編集フォームを拡張するための COM アドインがサポートされています。 COM アドインが最初に追加した InfoPath では、他の Office アプリケーションなど、Microsoft Office Word と Microsoft Office Excel サポートされている COM アドインが Office 2000 以降をサポートします。
-ms.openlocfilehash: 4c70dfb71cf7b15a0978b4567ffac02a8ba524c3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f8dd16b161c4ea862cf3b15e56e26a2547c1fc4c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799013"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395484"
 ---
 # <a name="create-a-com-add-in-to-add-custom-features-to-infopath"></a>COM アドインを作成し、InfoPath にカスタム機能を追加する
 
@@ -129,11 +129,11 @@ COM アドインのインストール時に作成されるレジストリ設定�
     
 共有アドイン プロジェクトが開発されたコンピューター以外のコンピューターで使用するマネージ COM アドインをコンパイルするには、次の追加手順に従ってコードをセキュリティで保護してください。他のコンピューターで使用する共有アドイン プロジェクトをセキュリティで保護する方法については、次の 3 つの資料を参照してください。
   
-- [マネージ COM アドインが Office XP での展開](http://go.microsoft.com/fwlink/?LinkID=73473)
+- [マネージ COM アドインが Office XP での展開](https://go.microsoft.com/fwlink/?LinkID=73473)
   
-- [COM アドイン Shim ソリューションを使用してマネージ COM アドインで Office XP を展開するには](http://go.microsoft.com/fwlink/?LinkID=73474)
+- [COM アドイン Shim ソリューションを使用してマネージ COM アドインで Office XP を展開するには](https://go.microsoft.com/fwlink/?LinkID=73474)
   
-- [COM シム ウィザードを使用して Office 拡張機能を分離します。](http://go.microsoft.com/fwlink/?LinkID=73475)
+- [COM シム ウィザードを使用して Office 拡張機能を分離します。](https://go.microsoft.com/fwlink/?LinkID=73475)
   
 > [!IMPORTANT]
 > COM アドインを分離していない場合、メモリ リークが発生し、アプリケーションが不安定になる可能性があります。 
@@ -200,10 +200,10 @@ private void InfoPathApplicationEvents_XDocumentBeforeSave(
   
 ## <a name="see-also"></a>関連項目
 
-- [Microsoft Office 2000 COM アドインを作成します。](http://go.microsoft.com/fwlink/?LinkID=73468) 
-- [マネージ COM アドインが Visual Studio .NET での Office を作成します。](http://go.microsoft.com/fwlink/?LinkID=73470)
-- [IDTExtensibility2 のイベント プロシージャの使用](http://go.microsoft.com/fwlink/?LinkID=73471)
-- [Office COM アドインを Visual Basic .NET でビルドします。](http://go.microsoft.com/fwlink/?LinkID=73469)
-- [Office COM アドインを Visual C# .NET を使用してビルドします。](http://go.microsoft.com/fwlink/?LinkID=73472)
-- [Office システム SE の Visual Studio 2005年のツールを使用して、InfoPath 2007 のアドインを作成します。](http://msdn.microsoft.com/en-us/library/bb968857%28office.12%29.aspx)
+- [Microsoft Office 2000 COM アドインを作成します。](https://go.microsoft.com/fwlink/?LinkID=73468) 
+- [マネージ COM アドインが Visual Studio .NET での Office を作成します。](https://go.microsoft.com/fwlink/?LinkID=73470)
+- [IDTExtensibility2 のイベント プロシージャの使用](https://go.microsoft.com/fwlink/?LinkID=73471)
+- [Office COM アドインを Visual Basic .NET でビルドします。](https://go.microsoft.com/fwlink/?LinkID=73469)
+- [Visual C# .NET を使用して Office COM アドインを作成します。](https://support.microsoft.com/en-us/help/302901/how-to-build-an-office-com-add-in-by-using-visual-c-net)
+- [Office システム SE の Visual Studio 2005年のツールを使用して、InfoPath 2007 のアドインを作成します。](https://msdn.microsoft.com/library/bb968857%28office.12%29.aspx)
 

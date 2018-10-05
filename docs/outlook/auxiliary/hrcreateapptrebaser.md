@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 265028b7-a583-f6ba-0214-5a4322f98f35
 description: Outlook 予定表で予定を再配置で使用する IOlkApptRebaser オブジェクトを初期化します。
-ms.openlocfilehash: fec0407c3f129290d03f9b26b0b3f072a229b003
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 33ad47d59ee2ca1b2461f730494f3466b9f8b54a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799330"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397542"
 ---
 # <a name="hrcreateapptrebaser"></a>HrCreateApptRebaser
 
@@ -23,8 +23,8 @@ Outlook 予定表で予定を再配置で使用する[IOlkApptRebaser](iolkapptr
 |||
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> |tzmovelib.h  <br/> |
-|によって実装されます。  <br/> |tzmovelib.dll  <br/> |
-|によって呼び出されます。  <br/> |MAPI クライアント アプリケーション  <br/> |
+|実装元:  <br/> |tzmovelib.dll  <br/> |
+|呼び出し元:  <br/> |MAPI クライアント アプリケーション  <br/> |
 |ポインターの型。  <br/> |**LPHRCREATEAPPTREBASER** <br/> |
 |DLL エントリ ポイント:  <br/> |**HrCreateApptRebaser@44** <br/> |
    
@@ -106,7 +106,7 @@ pTZMissing
     
 _ppError_
   
-> [out]エラーのバージョン、コンポーネント、およびコンテキストの情報を保持する**MAPIERROR**構造体へのポインターへのポインター。 拡張エラー情報が必要ない場合、NULL にすることができます。 [MAPIFreeBuffer](http://msdn.microsoft.com/library/9412594f-8acc-4c7e-a668-4ec1da0ad9cf%28Office.15%29.aspx)を解放します。 
+> [out]エラーのバージョン、コンポーネント、およびコンテキストの情報を保持する**MAPIERROR**構造体へのポインターへのポインター。 拡張エラー情報が必要ない場合、NULL にすることができます。 [MAPIFreeBuffer](https://msdn.microsoft.com/library/9412594f-8acc-4c7e-a668-4ec1da0ad9cf%28Office.15%29.aspx)を解放します。 
     
 _ppApptRebase_
   
@@ -118,9 +118,9 @@ _ppApptRebase_
   
 ## <a name="remarks"></a>解釈
 
-[GetProcAddress](http://msdn.microsoft.com/library/a0d7fc09-f888-4f46-a571-d3719a627597%28Office.15%29.aspx)を使用して、tzmovelib.dll では、この関数のアドレスを検索するのには、プロシージャ名として**HrCreateApptRebaser@44**を指定します。 すべてのフラグは、相互の組み合わせで有効です。 
+[GetProcAddress](https://msdn.microsoft.com/library/a0d7fc09-f888-4f46-a571-d3719a627597%28Office.15%29.aspx)を使用して、tzmovelib.dll では、この関数のアドレスを検索するのには、プロシージャ名として**HrCreateApptRebaser@44**を指定します。 すべてのフラグは、相互の組み合わせで有効です。 
   
-さまざまなオプションの詳細についてを参照してください「Outlook タイム ゾーン データ更新ツールのコマンド ライン オプションの用語集」で[KB 931667: Microsoft Office Outlook 用タイム ゾーン データ更新ツールを使用してアドレスのタイム ゾーンの変更方法](http://support.microsoft.com/kb/931667/en-us)。
+さまざまなオプションの詳細についてを参照してください「Outlook タイム ゾーン データ更新ツールのコマンド ライン オプションの用語集」で[KB 931667: Microsoft Office Outlook 用タイム ゾーン データ更新ツールを使用してアドレスのタイム ゾーンの変更方法](https://support.microsoft.com/kb/931667/en-us)。
   
 ## <a name="see-also"></a>関連項目
 

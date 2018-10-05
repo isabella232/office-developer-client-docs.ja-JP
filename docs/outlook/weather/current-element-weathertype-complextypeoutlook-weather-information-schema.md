@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d592a396-f935-c44c-409f-b849c327cfbd
 description: 現在の気象条件を指定します。
-ms.openlocfilehash: 12265c463f0f1bba15c9bf1723cbbea6c505dba9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ce92bdd49ee37f939748586c2d63d8a664f664d2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804467"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401091"
 ---
 # <a name="current-element-weathertype-complextype-outlook-weather-information-schema"></a>現在の要素 (weatherType の複合型) (Outlook の気象情報のスキーマ)
 
@@ -24,7 +24,7 @@ ms.locfileid: "19804467"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[currentType](currenttype-complextype-outlook-weather-information-schema.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
 |**スキーマ ファイル** <br/> |getweatherinfo.xsd  <br/> |
    
 ## <a name="definition"></a>定義

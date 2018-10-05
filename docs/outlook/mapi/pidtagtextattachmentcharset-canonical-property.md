@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d347c949-d0c3-4a36-8447-3fa01111cdc1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cec34819cfa2c6e790f8808eb5bab70412f286b5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1db41bc5c7ea71d65d892da520d4258354eb53cf
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591430"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401539"
 ---
 # <a name="pidtagtextattachmentcharset-canonical-property"></a>PidTagTextAttachmentCharset 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージの添付ファイルの文字セットの値が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22591430"
 |関連するプロパティ:  <br/> |なし  <br/> |
 |識別子:  <br/> |0x371B  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |メッセージの添付ファイル  <br/> |
+|エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 開始されるコンテンツ タイプの MIME ヘッダー フィールドのこのプロパティのデータには"テキストと""charset"パラメーターが存在する場合、します。
   
@@ -42,7 +42,7 @@ ms.locfileid: "22591430"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMAIL]](http://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
 > メッセージ オブジェクト インターネット標準の電子メールの表記規則からに変換します。
     

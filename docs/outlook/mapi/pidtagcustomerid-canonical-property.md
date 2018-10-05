@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 85d1c44d-caab-48dc-a6a0-ad201cc365f7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1abbcabcc360eee5eb3f3db3a37bdf9aa3339080
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e03f6f9ed4155743d9ca89e0b90243f3ea40c907
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568477"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396968"
 ---
 # <a name="pidtagcustomerid-canonical-property"></a>PidTagCustomerId 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 連絡先の顧客 ID 番号が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22568477"
 |関連するプロパティ:  <br/> |PR_CUSTOMER_ID、PR_CUSTOMER_ID_A、PR_CUSTOMER_ID_W  <br/> |
 |識別子:  <br/> |0x3A4A  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |Contact  <br/> |
+|エリア:  <br/> |Contact  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 これらのプロパティの内容は、ユーザーまたはユーザーの組織によって定義されます。
   
@@ -42,15 +42,15 @@ ms.locfileid: "22568477"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > プロパティは、連絡先と個人用配布リスト オブジェクトの許可の操作を指定します。
     
-[[MS OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
 > プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
     

@@ -6,22 +6,22 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 4e1804bf-4c50-4942-a7ab-9a8caf1be7e5
 description: '�ŏI�X�V��: 2012�N6��25��'
-ms.openlocfilehash: 3fa32b680f5016d4417efdcf62e9bb1f04a51845
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3c0392cd6a885900c1a305cd1cd816a5925745a7
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581385"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398592"
 ---
 # <a name="using-multiple-exchange-accounts"></a>������ Exchange �A�J�E���g��g�p���܂��B
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 Microsoft Outlook 2010 および Microsoft Outlook 2013 は、複数の exchange 電子メール アカウントとの統合をサポートします。 Outlook 2010 または Outlook 2013 では、ユーザーが同じプロファイルに 2 つの exchange アカウントを追加を活用し、ながら発行済みのグローバル アドレス一覧 (GAL)、Exchange の出力を Office の構成では、フォルダーの共有など、Exchange の豊富な機能です。
   
-Microsoft Office Outlook 2007 用の MAPI プロファイル セクションを理解およびそれ以前は、固定の Exchange のグローバル プロファイル セクションの**pbGlobalProfileSectionGuid**で、電子メール ユーザー名とサーバー名など、Exchange の設定が格納されていることを知る。 Exchange のグローバル プロファイルの詳細については、[グローバル プロファイル セクションを開く方法](http://support.microsoft.com/kb/188482)を参照してください。 Outlook 2010、Outlook 2013 では、各 Exchange アカウントには、 **pbGlobalProfileSectionGuid**を廃止する設定を格納する独自のプロファイル セクションが必要があります。 
+Microsoft Office Outlook 2007 用の MAPI プロファイル セクションを理解およびそれ以前は、固定の Exchange のグローバル プロファイル セクションの**pbGlobalProfileSectionGuid**で、電子メール ユーザー名とサーバー名など、Exchange の設定が格納されていることを知る。 Exchange のグローバル プロファイルの詳細については、[グローバル プロファイル セクションを開く方法](https://support.microsoft.com/kb/188482)を参照してください。 Outlook 2010、Outlook 2013 では、各 Exchange アカウントには、 **pbGlobalProfileSectionGuid**を廃止する設定を格納する独自のプロファイル セクションが必要があります。 
   
 �v���t�@�C��] �ŁA Outlook 2010��Outlook 2013 Exchange �̐ݒ肪�܂��ۑ�����Ă��邪�A�v���t�@�C�����Ƃ̐ݒ��܂ރZ�N�V�����̃v���t�@�C���̈�ӂ̎��ʎq�����蓖�Ă��Ă��铮�I�ɕύX���܂��B�v���t�@�C���� Exchange �̐ݒ�̏ꏊ�́A[ [PidTagExchangeProfileSectionId ���K���̃v���p�e�B](pidtagexchangeprofilesectionid-canonical-property.md)] �́AExchange �A�J�E���g�̃��b�Z�[�W �T�[�r�X �v���t�@�C��] �Z�N�V�����ɋL�ڂ���Ă���ɕۑ�����܂��B���̃v���p�e�B�́A������Ƃ̏ꍇ�́A���̃��b�Z�[�W �T�[�r�X�̃v���o�C�_�[���Ƃ� [�v���t�@�C��] �Z�N�V�����ɂ�L�ڂ���Ă��܂��B��ӂ̎��ʎq�́A�T�[�o�[�ɕۑ�����Ă��Ȃ��ƁA�v���t�@�C���ňقȂ邪���܂��B
   
@@ -111,5 +111,5 @@ Api ���ꂽ�@�\������S�ɕ����� Exchange �ł
 [PidTagExchangeProfileSectionId ���K���̃v���p�e�B](pidtagexchangeprofilesectionid-canonical-property.md)
 
 
-[[�O���[�o�� �v���t�@�C��] �Z�N�V������J�����@](http://support.microsoft.com/kb/188482)
+[[�O���[�o�� �v���t�@�C��] �Z�N�V������J�����@](https://support.microsoft.com/kb/188482)
 

@@ -8,24 +8,24 @@ api_type:
 - COM
 ms.assetid: 29151beb-7436-401a-8072-58d4facd8458
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 82c44f2292400c449ee0f82600c5b596728af7c0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4b017089a675727703de9e2ed4d584e7f77a778a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590436"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401567"
 ---
 # <a name="mapi-canonical-properties"></a>標準の MAPI プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 標準的なプロパティは、MAPI プロパティ、または同じプロパティの識別子を使用して定義されている複数の MAPI プロパティを表す仮想プロパティです。 標準的なプロパティのみ、ディスカッションやコードの外部でのマニュアルで MAPI プロパティの一貫した識別を容易にするためです。 MAPI 定義のタグ付きのプロパティの名前とは異なり、標準のプロパティ名は MAPI ヘッダー ファイルでグローバル定数として定義されていません。
   
 ## <a name="naming-conventions"></a>名前付け規則
 
-標準のプロパティ名が"Pid"、「プロパティの識別子」を表す接頭辞で始まる かどうかに応じて、プロパティ タグのプロパティや、数値識別子を持つ名前付きプロパティの文字列名を持つ名前付きプロパティ、プレフィックスは、さらに修飾された"PidTag、"として"PidLid、"と"PidName"それぞれ。 たとえば、 [PidTagAccount](pidtagaccount-canonical-property.md)が**PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md))、 **PR_ACCOUNT_A** ([PidTagAccount](pidtagaccount-canonical-property.md)) と**PR_ACCOUNT_W** ([PidTagAccount](pidtagaccount-canonical-property.md)) の受信者を指定するタグ付きのプロパティを表しますアカウント名です。[PidLidContacts](pidlidcontacts-canonical-property.md)は、 **dispidContacts**プロパティを数値の識別子を持つし、メッセージに関連付けられている連絡先の名前を指定する名前付きプロパティを表します[PidNamePhishingStamp](pidnamephishingstamp-canonical-property.md)を表す"http://schemas.microsoft.com/outlook/phishingstamp、"名前付きプロパティの文字列の名前を持つし、フィッシング詐欺である可能性があるメッセージにマークを付ける文字列を指定します。 
+標準のプロパティ名が"Pid"、「プロパティの識別子」を表す接頭辞で始まる かどうかに応じて、プロパティ タグのプロパティや、数値識別子を持つ名前付きプロパティの文字列名を持つ名前付きプロパティ、プレフィックスは、さらに修飾された"PidTag、"として"PidLid、"と"PidName"それぞれ。 たとえば、 [PidTagAccount](pidtagaccount-canonical-property.md)が**PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md))、 **PR_ACCOUNT_A** ([PidTagAccount](pidtagaccount-canonical-property.md)) と**PR_ACCOUNT_W** ([PidTagAccount](pidtagaccount-canonical-property.md)) の受信者を指定するタグ付きのプロパティを表しますアカウント名です。[PidLidContacts](pidlidcontacts-canonical-property.md)は、 **dispidContacts**プロパティを数値の識別子を持つし、メッセージに関連付けられている連絡先の名前を指定する名前付きプロパティを表します[PidNamePhishingStamp](pidnamephishingstamp-canonical-property.md)を表す"https://schemas.microsoft.com/outlook/phishingstamp、"名前付きプロパティの文字列の名前を持つし、フィッシング詐欺である可能性があるメッセージにマークを付ける文字列を指定します。 
   
 ## <a name="representing-similar-properties-using-one-canonical-property"></a>1 つの標準的なプロパティを使用して同様のプロパティを表す
 
@@ -71,7 +71,7 @@ PT_STRING8、として"_A"サフィックスを使用してプロパティを入
   
 ## <a name="canonical-property-names-and-exchange-protocol-specifications"></a>標準のプロパティ名、および Exchange プロトコルの仕様
 
-正規名は、Exchange Server で他のマイクロソフト製品との通信に使用される Microsoft Exchange Server プロトコルの仕様で参照されます。 メッセージ交換プロトコルの仕様によって参照されるオブジェクトのプロパティの詳細については、 [[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)を参照してください。
+正規名は、Exchange Server で他のマイクロソフト製品との通信に使用される Microsoft Exchange Server プロトコルの仕様で参照されます。 メッセージ交換プロトコルの仕様によって参照されるオブジェクトのプロパティの詳細については、 [[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

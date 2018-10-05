@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e39d633d-d8fb-4e2f-a396-6cb50beb8c3e
 description: Visual Studio 2012 で開発したマネージ コードを使用して InfoPath フォームを拡張することによって、フォームの機能を大幅に強化できます。フォームを拡張したら、コードを含むフォームを SharePoint Server 2013 のフォーム ライブラリに発行できます。
-ms.openlocfilehash: d6a2cfa1847b4b59b6978b8f4a0775aedf07a72d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1c67b85823fe567b494366a505be5dad51d20b32
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799133"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401098"
 ---
 # <a name="develop-with-visual-studio"></a>Visual Studio で開発する
 
@@ -19,7 +19,7 @@ Visual Studio 2012 で開発したマネージ コードを使用して InfoPath
   
 マネージ コードを含む InfoPath フォームのプログラミングと展開は、次の 3 つの大まかな手順で始めることができます。
   
-1. Visual Studio 2012 を [Microsoft Visual Studio Tools for Applications 2012](http://www.microsoft.com/en-us/download/details.aspx?id=38807) アドオンと共にインストールします。 
+1. Visual Studio 2012 を [Microsoft Visual Studio Tools for Applications 2012](https://www.microsoft.com/en-us/download/details.aspx?id=38807) アドオンと共にインストールします。 
     
 2. プログラミング言語を設定し、Visual Studio 2012 コード エディターでコードを記述してデバッグします。
     

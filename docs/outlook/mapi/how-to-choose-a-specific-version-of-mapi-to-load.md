@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 85539a7f-74b6-4267-86ea-00da2c900c34
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c5a7ba301d61468c0ff43a7e99d05976d55d239d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d353eba55e33b8ab48b3c47d2f31f1b5e0973b58
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576672"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399733"
 ---
 # <a name="choose-a-specific-version-of-mapi-to-load"></a>ロードするのには MAPI の特定のバージョンを選択します。
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 MAPI の実装を明示的にリンクする場合、ロードする実装を慎重に選択する必要があります。 
   
@@ -27,7 +27,7 @@ MAPI の実装を明示的にリンクする 2 つの方法もあります。
     
 2. 既定のメール クライアントで使用されている MAPI のバージョンを検索するのには、MAPI クライアントの検索アルゴリズムを実装し、それをロードできます。
     
-MAPI の実装を使用するようにアプリケーションに指示する[Mapi32.dll スタブのレジストリ設定](http://msdn.microsoft.com/en-us/library/ms531218%28EXCHG.10%29.aspx)を変更することができます、ため、アプリケーションをテストしている MAPI の実装を使用するを指示することをお勧めします。 明示的なリンクの両方の方法を次に示します。 
+MAPI の実装を使用するようにアプリケーションに指示する[Mapi32.dll スタブのレジストリ設定](https://msdn.microsoft.com/library/ms531218%28EXCHG.10%29.aspx)を変更することができます、ため、アプリケーションをテストしている MAPI の実装を使用するを指示することをお勧めします。 明示的なリンクの両方の方法を次に示します。 
   
 ## <a name="reading-from-the-registry"></a>レジストリからの読み取り
 
@@ -99,16 +99,16 @@ MFCMAPI では、MAPI の別の実装を使用する場合、既定では、MAPI
 10.  `GetMAPIPath`呼び出し元、MAPI をロードし、明示的にリンクしている[MAPI の関数へのリンク](how-to-link-to-mapi-functions.md)で説明したようにこのパスを返します。
     
 > [!NOTE] 
-> - 英語と英語以外のロケールのローカライズされたコピー MAPI をサポートするために`GetMAPIPath` **MSIApplicationLCID**と**MSIOfficeLCID**のサブキーの値を読み取ります。  `GetMAPIPath`**FGetComponentPath**を最初として、 **szQualifier**、 **MSIApplicationLCID**を指定して、再び**szQualifier**として**MSIOfficeLCID**を指定するを呼び出します。 英語以外の言語をサポートするメール クライアントのレジストリ キーの詳細については、[設定の [MSI のキーの MAPI DLL](http://msdn.microsoft.com/en-us/library/ee909494%28VS.85%29.aspx)を参照してください。   
+> - 英語と英語以外のロケールのローカライズされたコピー MAPI をサポートするために`GetMAPIPath` **MSIApplicationLCID**と**MSIOfficeLCID**のサブキーの値を読み取ります。  `GetMAPIPath`**FGetComponentPath**を最初として、 **szQualifier**、 **MSIApplicationLCID**を指定して、再び**szQualifier**として**MSIOfficeLCID**を指定するを呼び出します。 英語以外の言語をサポートするメール クライアントのレジストリ キーの詳細については、[設定の [MSI のキーの MAPI DLL](https://msdn.microsoft.com/library/ee909494%28VS.85%29.aspx)を参照してください。   
 > - MFCMAPI が MAPI を使用するためのパスを受信していないかどうか`GetMAPIPath`、システム ディレクトリから MAPI スタブ ライブラリが読み込まれます。
-> - [MAPI 呼び出しを明示的に MAPI Dll へのマッピング](http://msdn.microsoft.com/en-us/library/ee909490%28VS.85%29.aspx)で説明されている**MSMapiApps**レジストリ値は、MAPI スタブ ライブラリを使用する場合にのみ適用されます。 MAPI の特定の実装をロードまたは既定の実装をロードするアプリケーションは、 **MSMapiApps**レジストリ キーを設定する必要はありません。 
+> - [MAPI 呼び出しを明示的に MAPI Dll へのマッピング](https://msdn.microsoft.com/library/ee909490%28VS.85%29.aspx)で説明されている**MSMapiApps**レジストリ値は、MAPI スタブ ライブラリを使用する場合にのみ適用されます。 MAPI の特定の実装をロードまたは既定の実装をロードするアプリケーションは、 **MSMapiApps**レジストリ キーを設定する必要はありません。 
     
 ## <a name="see-also"></a>関連項目
 
 - [FGetComponentPath](fgetcomponentpath.md)
 - [MAPI �v���O���~���O�̊T�v](mapi-programming-overview.md)
 - [MAPI 機能へのリンク](how-to-link-to-mapi-functions.md)
-- [Mapi32.dll スタブのレジストリ設定](http://msdn.microsoft.com/en-us/library/ms531218%28EXCHG.10%29.aspx)
-- [MAPI DLL の MSI のキーの設定](http://msdn.microsoft.com/en-us/library/ee909494%28VS.85%29.aspx)
-- [MAPI MAPI Dll への呼び出しを明示的にマッピング](http://msdn.microsoft.com/en-us/library/ee909490%28VS.85%29.aspx)
+- [Mapi32.dll スタブのレジストリ設定](https://msdn.microsoft.com/library/ms531218%28EXCHG.10%29.aspx)
+- [MAPI DLL の MSI のキーの設定](https://msdn.microsoft.com/library/ee909494%28VS.85%29.aspx)
+- [MAPI MAPI Dll への呼び出しを明示的にマッピング](https://msdn.microsoft.com/library/ee909490%28VS.85%29.aspx)
 

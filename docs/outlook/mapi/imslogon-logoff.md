@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 1b0d1b52-6651-4de3-9381-86772d9d52a1
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e72c947a6e0d4052d3335c3e3cfaf5ffb94da669
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 66ba27d1d333be3217f2a22ca5d53449372c1f31
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593005"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399236"
 ---
 # <a name="imslogonlogoff"></a>IMSLogon::Logoff
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージをログでは、プロバイダーを格納します。 
   
@@ -39,7 +39,7 @@ HRESULT Logoff(
   
 > [in]予約されています。0 へのポインターである必要があります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -51,7 +51,7 @@ S_OK
   
 - MAPI は、クライアント、 [IMAPISession::Logoff](imapisession-logoff.md)メソッドを呼び出した後ログオフ中にします。 
     
-- MAPI メッセージ ストア プロバイダーは、ログ中にします。 MAPI のサポート オブジェクト、 [IMsgStore::StoreLogoff](imsgstore-storelogoff.md)または**IUnknown を処理している間、メッセージ ストア プロバイダーを作成するの[](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx)メソッドの処理の一部として**IMSLogon::Logoff**がここと呼ばれます。リリース**メッセージ ストアのオブジェクトに対するメソッド呼び出しです。 
+- MAPI メッセージ ストア プロバイダーは、ログ中にします。 MAPI のサポート オブジェクト、 [IMsgStore::StoreLogoff](imsgstore-storelogoff.md)または**IUnknown を処理している間、メッセージ ストア プロバイダーを作成するの[](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドの処理の一部として**IMSLogon::Logoff**がここと呼ばれます。リリース**メッセージ ストアのオブジェクトに対するメソッド呼び出しです。 
     
 ## <a name="see-also"></a>関連項目
 

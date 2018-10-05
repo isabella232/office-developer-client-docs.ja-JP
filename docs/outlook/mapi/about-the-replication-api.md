@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5133045a-b1e2-7728-5cd5-6d85eb940cf9
 description: '�ŏI�X�V��: 2012�N6��25��'
-ms.openlocfilehash: 272d4147d60df53ef30a668faa8abe89f96cd654
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 532c01d6885e72753067b2d30bf2bd5f88207176
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582323"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396058"
 ---
 # <a name="about-the-replication-api"></a>レプリケーション API について
 
@@ -30,7 +30,7 @@ ms.locfileid: "22582323"
 
 **IOSTX**インターフェイスは、レプリケーション API で同期を実行するプライマリ インターフェイスです。 **IOSTX**は、変更をサーバー上のローカル ストアに通知するとともに各状態で、ローカル ストア内の変更に関する情報を取得する一連の状態のローカル ストアを移動します。 レプリケーション API では、同期をサポートする多くのデータ構造体も指定します。 
   
-ストア プロバイダーでは、この API では、クライアントとして API を使用して、レプリケーション、ローカル ストアをラップし、サーバーに (フォルダー階層、または新しい項目の追加に変更) などのローカル ストアに変更をプッシュし、取得するもこれらの状態間を移動します。**IOSTX**インターフェイスには、その情報を提供するサーバー上の変更に関する情報です。 **IOSTX**インターフェイスでは、増分変更の同期 (ICS) の Microsoft Exchange Server によって提供されるを適用します。 ICS の詳細については、 [ICS の評価基準](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx)を参照してください。 **IOSTX**クライアントを使用して ICS を監視し、階層、またはローカル ストア上のコンテンツへの増分変更を同期します。 
+ストア プロバイダーでは、この API では、クライアントとして API を使用して、レプリケーション、ローカル ストアをラップし、サーバーに (フォルダー階層、または新しい項目の追加に変更) などのローカル ストアに変更をプッシュし、取得するもこれらの状態間を移動します。**IOSTX**インターフェイスには、その情報を提供するサーバー上の変更に関する情報です。 **IOSTX**インターフェイスでは、増分変更の同期 (ICS) の Microsoft Exchange Server によって提供されるを適用します。 ICS の詳細については、 [ICS の評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。 **IOSTX**クライアントを使用して ICS を監視し、階層、またはローカル ストア上のコンテンツへの増分変更を同期します。 
   
 ## <a name="the-ipstx-interface"></a>IPSTX インタ フェース
 
@@ -74,7 +74,7 @@ ms.locfileid: "22582323"
     
 - **[SYNCCONT](synccont.md)**
     
-- **[同期状態](syncstate.md)**
+- **[SYNCSTATE](syncstate.md)**
     
 - **[UPDEL](updel.md)**
     

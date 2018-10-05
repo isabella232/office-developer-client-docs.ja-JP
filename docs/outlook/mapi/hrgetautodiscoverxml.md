@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 03691187-7c65-620b-576f-6ebe62a80830
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 490c834ee63c158b3f9c0e34f8de7f582c650bc4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 77f28654ffe0f6f459fde229bb7428f2c39e96c0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584066"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400720"
 ---
 # <a name="hrgetautodiscoverxml"></a>HrGetAutoDiscoverXML
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 Microsoft Exchange 2007 サーバーの自動検出サービスから取得した情報を表す拡張マークアップ言語 (XML) のストリームを返します。
   
@@ -32,8 +32,8 @@ Microsoft Exchange 2007 サーバーの自動検出サービスから取得し�
 |||
 |:-----|:-----|
 |によってエクスポートされます。  <br/> |olmapi32.dll  <br/> |
-|によって呼び出されます。  <br/> |クライアント  <br/> |
-|によって実装されます。  <br/> |Outlook  <br/> |
+|呼び出し元:  <br/> |クライアント  <br/> |
+|実装元:  <br/> |Outlook  <br/> |
    
 ```cpp
 HRESULT HrGetAutoDiscoverXML( 
@@ -65,7 +65,7 @@ HRESULT HrGetAutoDiscoverXML(
     
  _ppXmlStream_
   
-> [out]自動検出の XML を含む[IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx)オブジェクトへのポインター。 自動検出が失敗した場合は**null**を返します。 操作を終了したら、 [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx)オブジェクトを解放する必要があります。 
+> [out]自動検出の XML を含む[IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)オブジェクトへのポインター。 自動検出が失敗した場合は**null**を返します。 操作を終了したら、 [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)オブジェクトを解放する必要があります。 
     
 ## <a name="return-values"></a>戻り値
 
@@ -75,7 +75,7 @@ S_OK
     
 E_INVALIDARG 
   
--  _pwzAddress_が**null**か、有効な SMTP アドレスではありませんか_ppXmlStream_ [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx)オブジェクトへの**null**ポインター。 
+-  _pwzAddress_が**null**か、有効な SMTP アドレスではありませんか_ppXmlStream_ [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)オブジェクトへの**null**ポインター。 
     
 MAPI_E_NOT_FOUND 
   

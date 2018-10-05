@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 91147e85-f440-4463-850b-efc9bdbd36d1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f7dcfe32a5edc6587dfbd1351b61e2b1901e1d28
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1ea0830a06f303da8243f927e4a07cc744951ca9
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579054"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399873"
 ---
 # <a name="pidlidappointmentcolor-canonical-property"></a>PidLidAppointmentColor 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 予定表を表示するときに使用する色を指定します。
   
@@ -33,11 +33,11 @@ ms.locfileid: "22579054"
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008214  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |予定表  <br/> |
+|エリア:  <br/> |予定表  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
-このプロパティは、予定表を表示するときに使用する色を指定します。 クライアントまたはサーバーは、古いクライアントとの下位互換性のためには、この値を設定する必要があります。 カレンダーで指定した[[MS OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)として**のキーワード**([PidNameKeywords](pidnamekeywords-canonical-property.md)) プロパティの値に基づくことが代わりに表示されます。 設定すると、値があります、次のいずれかです。
+このプロパティは、予定表を表示するときに使用する色を指定します。 クライアントまたはサーバーは、古いクライアントとの下位互換性のためには、この値を設定する必要があります。 カレンダーで指定した[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)として**のキーワード**([PidNameKeywords](pidnamekeywords-canonical-property.md)) プロパティの値に基づくことが代わりに表示されます。 設定すると、値があります、次のいずれかです。
   
 |**値**|**色**|
 |:-----|:-----|
@@ -57,11 +57,11 @@ ms.locfileid: "22579054"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
     

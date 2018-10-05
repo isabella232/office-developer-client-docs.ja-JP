@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 99e2c485-af84-46f4-84b4-fca2117b5a21
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d98b7cf1d6c5cdc8517ea2e653115d9a7c01e3c1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 98ee0856411cce3a3e9012185be6c30503de7779
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593299"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401693"
 ---
 # <a name="error-handling-in-mapi"></a>MAPI でのエラー処理
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ハンドル、または HRESULT を結果として呼ばれる 32 ビットの数値を使用して成功、警告、エラー値が返されます。 HRESULT は本当に何もへのハンドル値のエンコードされたいくつかのフィールドを持つ 32 ビット値だけですることをお勧めします。 ゼロという結果は成功を示し、0 以外の結果は失敗を示します。
   
@@ -39,9 +39,9 @@ HRESULT には、R、C、N、r ビットが予約されています。
 |:-----|:-----|
 |FACILITY_NULL  <br/> |広範に適用される一般的なステータス コード S_OK、または E_OUTOF_MEMORY です。値は 0 です。  <br/> |
 |FACILITY_ITF  <br/> |インターフェイス メソッドから返されたステータス コードのほとんどの値は、インターフェイスによって定義されます。 正確に 32 ビット値が同じ 2 つの異なるインターフェイスから返される 2 つの HRESULT 値は、異なる意味を持つ可能性があります。  <br/> |
-|FACILITY_DISPATCH  <br/> |[IDispatch](http://msdn.microsoft.com/en-us/library/ms221608.aspx)を遅延バインディングのインターフェイスのエラーを実行します。  <br/> |
+|FACILITY_DISPATCH  <br/> |[IDispatch](https://msdn.microsoft.com/library/ms221608.aspx)を遅延バインディングのインターフェイスのエラーを実行します。  <br/> |
 |FACILITY_RPC  <br/> |リモート ・ プロシージャ ・ コールから返されるステータス ・ コードです。  <br/> |
-|FACILITY_STORAGE  <br/> |構造化ストレージに関連する[IStorage](http://msdn.microsoft.com/en-us/library/aa380015%28VS.85%29.aspx)または[IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx)のメソッド呼び出しから返されるステータス ・ コードです。 コード (下位 16 ビット) 値が範囲の Windows のエラー コードでステータス コード (つまり、256 文字未満) 対応する Windows のエラーと同じ意味を持ちます。  <br/> |
+|FACILITY_STORAGE  <br/> |構造化ストレージに関連する[IStorage](https://msdn.microsoft.com/library/aa380015%28VS.85%29.aspx)または[IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)のメソッド呼び出しから返されるステータス ・ コードです。 コード (下位 16 ビット) 値が範囲の Windows のエラー コードでステータス コード (つまり、256 文字未満) 対応する Windows のエラーと同じ意味を持ちます。  <br/> |
    
 [コード] フィールドは、エラーまたは警告を表すために割り当てられている一意の番号です。
   

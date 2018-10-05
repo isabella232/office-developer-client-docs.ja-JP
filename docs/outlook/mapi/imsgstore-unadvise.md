@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 1394039b-d509-49a5-8421-b7362d906879
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 72a26875802b2b7f94261f11e78fe560e9cc49d3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f85b662b7fe710c66a2e69dd3cd3db22e3283ddb
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583429"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398018"
 ---
 # <a name="imsgstoreunadvise"></a>IMsgStore::Unadvise
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 [IMsgStore::Advise](imsgstore-advise.md)メソッドへの呼び出しは、設定済みの通知の送信をキャンセルします。 
   
@@ -39,17 +39,17 @@ HRESULT Unadvise(
   
 > [in]作業中の通知の登録に関連付けられている接続の数です。 _UlConnection_の値は、 **IMsgStore::Advise**メソッドへの前回の呼び出しで返されている必要があります。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > 登録は取り消されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **IMsgStore::Unadvise**メソッドは、通知の登録をキャンセルします。 **Unadvise**リリースがそのポインターを呼び出し元のシンクの登録に使用される**アドバイス**の呼び出しで、受け取ったに案内します。 
   
-一般に、 **Unadvise**は**Unadvise**の呼び出し時にアドバイズ シンクの[リ ス](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx)のメソッドを呼び出します。 ただし、別のスレッドがアドバイズ シンクの[IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出すことであるにある場合は、**リリース**の呼び出しが遅延**OnNotify**メソッドが戻るまで。 
+一般に、 **Unadvise**は**Unadvise**の呼び出し時にアドバイズ シンクの[リ ス](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)のメソッドを呼び出します。 ただし、別のスレッドがアドバイズ シンクの[IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出すことであるにある場合は、**リリース**の呼び出しが遅延**OnNotify**メソッドが戻るまで。 
   
 ## <a name="see-also"></a>関連項目
 

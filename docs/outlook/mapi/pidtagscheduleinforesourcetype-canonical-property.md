@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9f253378-0a2d-47e3-82d3-8055b5f776dd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9cb149f2ba8c6cd328fcffb00172a1f3f904a24e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fbcc149d6c5b5806a6514da4a3fb8e5615c9bc98
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572334"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399397"
 ---
 # <a name="pidtagscheduleinforesourcetype-canonical-property"></a>PidTagScheduleInfoResourceType 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 値ゼロ (0) に設定する必要がありますが含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22572334"
 |関連するプロパティ:  <br/> |PR_SCHDINFO_RESOURCE_TYPE  <br/> |
 |識別子:  <br/> |0x6841  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |空き/予約済み  <br/> |
+|エリア:  <br/> |空き/予約済み  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 ゼロ (0) に送信され、受信時に無視されると、このプロパティを設定する必要があります。
   
@@ -42,11 +42,11 @@ ms.locfileid: "22572334"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOPFFB]](http://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
+[[MS OXOPFFB]](https://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
   
 > ユーザーまたはリソースの可用性を発行します。
     

@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 99a6549b-099b-1546-cc30-db0010fe3ce1
 description: 図面ページに関連付けられている図面ページのプロパティを指定します。
-ms.openlocfilehash: ef926af0238b1a44bbaa5c2eae9c0f7c90dc0c08
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8b60795c02717e4b752c09af19fa932f87924d1f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805968"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395134"
 ---
 # <a name="pagesheet-element-pagetype-complextype-visio-xml"></a>PageSheet 要素 (Page_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805968"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[PageSheet_Type](pagesheet_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |pages.xml  <br/> |
    

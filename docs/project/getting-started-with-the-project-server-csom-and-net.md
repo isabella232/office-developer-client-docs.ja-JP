@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5ce73baa-dfb6-41d0-918d-b0c3a498815f
 description: Project Server 2013 のクライアント側オブジェクト モデル (CSOM) を使用して、.NET Framework 4 でオンライン プロジェクトとオンプレミスのソリューションを開発することができます。 この資料は、CSOM を使用して作成し、プロジェクトを発行するコンソール アプリケーションを作成する方法について説明します。 プロジェクトを発行した後は、アプリケーションは、発行操作を完了するには、プロジェクト サーバー キュー サービスの待機し、発行済みのプロジェクトが一覧表示されています。
-ms.openlocfilehash: 1815122ce824fcd2f9b8c9119346ca02c720ae89
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f4e40cb3165bb2b3caf05b01736d90c21b6ac881
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804573"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401743"
 ---
 # <a name="getting-started-with-the-project-server-csom-and-net"></a>Project Server CSOM および .NET の概要
 
@@ -137,7 +137,7 @@ CSOM の開発には、Project Web App の URL を使用して初期化する**P
 1. クラスの定数を**プログラム**し、 **QueueCreateProject**アプリケーションを使用する変数を追加します。 Project Web App の URL だけでなくアプリケーションを使用して既定のエンタープライズ プロジェクトの種類 (EPT) の名前、名前のプロジェクトを作成して、キューの最大タイムアウト (秒単位)。 この例では、 **timeoutSeconds**変数を使用すると、タイムアウトの値をさまざまな方法に影響を与えるアプリケーションをテストできます。 **ProjectContext**オブジェクトは、プライマリ オブジェクト、CSOM にアクセスするためです。 
     
    ```cs
-    private const string pwaPath = "http://ServerName /pwa/"; // Change the path to your Project Web App instance.
+    private const string pwaPath = "https://ServerName /pwa/"; // Change the path to your Project Web App instance.
     private static string basicEpt = "Enterprise Project";   // Basic enterprise project type.
     private static string projName = string.Empty;
     private static int timeoutSeconds = 10;  // The maximum wait time for a queue job, in seconds.
@@ -386,7 +386,7 @@ eptUid = eptList.First(ept => ept.Name == eptName).Id;
     Press any key to exit...
    ```
 
-Project Web App の [プロジェクト センター] ページを更新 (`http://ServerName/ProjectServerName/Projects.aspx`)、発行済みのプロジェクトを表示します。 次の図は、テスト プロジェクトが発行されたことを示します。
+Project Web App の [プロジェクト センター] ページを更新 (`https://ServerName/ProjectServerName/Projects.aspx`)、発行済みのプロジェクトを表示します。 次の図は、テスト プロジェクトが発行されたことを示します。
 
 **Project Web App で発行済みプロジェクトを確認する**
 
@@ -409,7 +409,7 @@ namespace QueueCreateProject
 {
     class Program
     {
-        private const string pwaPath = "http://ServerName /pwa/"; // Change the path to your Project Web App instance.
+        private const string pwaPath = "https://ServerName /pwa/"; // Change the path to your Project Web App instance.
         private static string basicEpt = "Enterprise Project";   // Basic enterprise project type.
         private static string projName = string.Empty;
         private static int timeoutSeconds = 10;  // The maximum wait time for a queue job, in seconds.

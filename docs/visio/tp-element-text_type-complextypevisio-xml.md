@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: b13b9328-c6a0-e282-257c-2de55901df6a
 description: 実行タブのプロパティの先頭を指定します。 実行は、次のタグまで、テキストの末尾に定義されています。
-ms.openlocfilehash: 9b98374af4ffbf2eaeaea61dcb1dbb49214f01b4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3f27ea0babefa0ea69cbbc361031c57602649107
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806673"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397549"
 ---
 # <a name="tp-element-texttype-complextype-visio-xml"></a>tp 要素 (Text_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806673"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[tp_Type](tp_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml のページで、マスターの # .xml  <br/> |
    

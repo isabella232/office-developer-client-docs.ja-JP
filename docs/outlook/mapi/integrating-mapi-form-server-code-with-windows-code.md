@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 47ec3e97-ad2b-43ea-842a-b2a0675eef48
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b37ae47e40906342aeecf179848311556a7d4ba4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 33b205c0ac5caf5fc049a0732cd219aa2c321326
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573993"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397864"
 ---
 # <a name="integrating-mapi-form-server-code-with-windows-code"></a>MAPI フォーム サーバー コードと Windows コードの統合
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 フォーム サーバーが Win32 アプリケーションであることに注意します。 などは、フォームのサーバーをメモリに読み込むと、正常に終了に関連するいくつかのタスクがあります。 すべての Windows アプリケーションと同様に、フォームのサーバーのエントリ ポイントが**WinMain**関数です。 この関数は、次のタスクを実行する適切な場所です。 
   
@@ -31,7 +31,7 @@ ms.locfileid: "22573993"
     
 - フォーム サーバーのクラス識別子 (CLSID) の文字列表現でグローバル アトムを登録しています。 フォーム サーバーの有効期間のこのアトムが存在します。
     
-- フォーム サーバーのクラス ファクトリを OLE に登録して[います](http://msdn.microsoft.com/en-us/library/ms693407.aspx)OLE 関数を呼び出します。 
+- フォーム サーバーのクラス ファクトリを OLE に登録して[います](https://msdn.microsoft.com/library/ms693407.aspx)OLE 関数を呼び出します。 
     
 - メッセージを受信するのにはメイン ウィンドウを作成しています。 このウィンドウはおそらく、ユーザーが個々 のフォーム オブジェクトに関連付けられている特定の windows と対話するために、表示する必要はありません。 ただし、開発時にメイン ・ ウィンドウは、出力またはフォーム サーバーのコントロールをデバッグするための便利な場所。
     
@@ -39,7 +39,7 @@ ms.locfileid: "22573993"
     
 フォーム サーバーが終了するは、次のタスクを実行する必要があります。
   
-- OLE 関数、メッセージ クラスの OLE の登録を取り消すには[CoRevokeClassObject](http://msdn.microsoft.com/en-us/library/ms688650%28VS.85%29.aspx)を呼び出します。 
+- OLE 関数、メッセージ クラスの OLE の登録を取り消すには[CoRevokeClassObject](https://msdn.microsoft.com/library/ms688650%28VS.85%29.aspx)を呼び出します。 
     
 - Mapi フォーム サーバーの接続を正しく閉じるには、 **MAPIUninitialize**を呼び出します。 
     

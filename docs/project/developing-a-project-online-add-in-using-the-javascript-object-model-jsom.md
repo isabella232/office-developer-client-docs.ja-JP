@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 4a4b1ad2-de46-421d-a698-53c20c90b93a
 description: この資料では、オンラインのプロジェクトと、利便性を強化するためにプロジェクトをオンラインでマイクロソフトのアドインを開発について説明します。 開発プロジェクトは、チュートリアルとして実装されます。 アドインをこの資料の使用しプロジェクト名とプロジェクトのオンライン アカウントから発行されたプロジェクトの Id が表示されますを読み込んで使用すると、個々 のプロジェクトに関連付けられている取得タスクへのドリル ダウンします。
-ms.openlocfilehash: ea5c7e3f3d20aa6bf5b6bb77a18eb87d06f549e1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0a472a6300f18aaa65649f44d944445642a59e1a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572544"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399306"
 ---
 # <a name="developing-a-project-online-add-in-using-the-javascript-object-model-jsom"></a>プロジェクトのオンライン追加の JavaScript オブジェクト モデル (JSOM) を使用して開発
 
@@ -37,7 +37,7 @@ ms.locfileid: "22572544"
 オンライン プロジェクトのアドインの開発のセットアップでは、Visual Studio SharePoint アドイン プロジェクトの種類を使用します。 アドインが、JavaScript で記述され、プロジェクトの JavaScript オブジェクト モデル (JSOM) を使用して、プロジェクトのオンライン サービスと対話します。 JSOM では、SharePoint の JSOM からの機能の多くを継承します。
   
 > [!NOTE]
-> アドインの発行し Office ストアで販売または SharePoint 上のプライベート アプリケーション カタログに配置できます。 詳細についてを参照してください[の展開、Office アドインを発行し、](https://docs.microsoft.com/en-us/office/dev/add-ins/publish/publish)。
+> アドインの発行し Office ストアで販売または SharePoint 上のプライベート アプリケーション カタログに配置できます。 詳細についてを参照してください[の展開、Office アドインを発行し、](https://docs.microsoft.com/office/dev/add-ins/publish/publish)。
 > 
 > この資料で使用されているアドインの開発者用のサンプルは、します。実稼働環境で使用するためのものではありません。 主な目的では、オンラインのプロジェクトのアプリケーション開発の例を示します。 
   
@@ -45,7 +45,7 @@ ms.locfileid: "22572544"
 
 サポートされている Windows 環境には、次の項目を追加します。
   
-- **4.0 またはそれ以降の.NET Framework**: バージョン 4.0 フレームワークの完全なバージョンに互換性がします。 ダウンロード サイトは、 https://msdn.microsoft.com/en-us/vstudio/aa496123.aspx。
+- **4.0 またはそれ以降の.NET Framework**: バージョン 4.0 フレームワークの完全なバージョンに互換性がします。 ダウンロード サイトは、 https://msdn.microsoft.com/vstudio/aa496123.aspx。
     
 - **2013 またはそれ以降の Visual Studio の**。  
     
@@ -92,7 +92,7 @@ Visual Studio のウィザードは、以下のダイアログのいくつかの
     
 2. SharePoint で、アドインをホストする方法を指定しますか。 [X] を選択して**SharePoint でホストされています**。
     
-   SharePoint アドインに関する詳細については、ホスティングなどのオプションでは、 [SharePoint のアドイン](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-add-ins)を参照してください。
+   SharePoint アドインに関する詳細については、ホスティングなどのオプションでは、 [SharePoint のアドイン](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins)を参照してください。
     
 3. [ **次へ**] をクリックします。 
     
@@ -143,7 +143,7 @@ Sideloading を設定する方法の詳細については、[アプリケーシ�
     
 移動など試用版からサブスクリプションのサイトでは、サーバー間の接続およびサイトの URL を含む、プロジェクトのプロパティを更新することができます、プロジェクトのオンラインのテナントが変更された場合は、[プロパティ] ウィンドウ**のビュー**で利用可能なを使用して > **のプロパティウィンドウ**コマンドです。 
   
-プロジェクトにファイルを追加することもできます。 その場合は、(コンテンツ、イメージ、ページ、またはスクリプト) を新しいファイルを含めるには、同じグループ内にある、Elements.xml ファイルを更新する必要があります。 プロジェクト ファイルの詳細については、 [SharePoint アドインのパッケージとアプリケーション マニフェストの構造を表示する](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/explore-the-app-manifest-structure-and-the-package-of-a-sharepoint-add-in)を参照してください。
+プロジェクトにファイルを追加することもできます。 その場合は、(コンテンツ、イメージ、ページ、またはスクリプト) を新しいファイルを含めるには、同じグループ内にある、Elements.xml ファイルを更新する必要があります。 プロジェクト ファイルの詳細については、 [SharePoint アドインのパッケージとアプリケーション マニフェストの構造を表示する](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/explore-the-app-manifest-structure-and-the-package-of-a-sharepoint-add-in)を参照してください。
   
 ### <a name="set-application-scope"></a>アプリケーション スコープの設定
 

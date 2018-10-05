@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6e91b765-a207-4d8c-8763-5d643ca4d0c0
 description: Outlook ソーシャル コネクタ (OSC) は、連絡先カードで、または Outlook 人物情報ウィンドウに、ソーシャル ネットワークから、ある人物に関する情報の表示をサポートしています。 SharePoint Server、SharePoint ワークスペース、Lync クライアント、およびプレゼンス情報をサポートするすべての Office クライアント アプリケーションは、連絡先カードをサポートします。
-ms.openlocfilehash: 9e843d8013b329a88de88232f16740edae77c1d1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0d6881c5d596519422d01ca61a00b1a68e610f2c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804465"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399159"
 ---
 # <a name="synchronizing-friends-and-activities"></a>友だちとアクティビティの同期
 
@@ -25,7 +25,7 @@ Outlook 人物情報ウィンドウには、送信者または受信者が Outlo
   
 連絡先カード、人物情報ウィンドウを選択したユーザーの現在の情報を表示するには、OSC は、OSC プロバイダーとキャッシュの一部のフォームを使用してこのような情報を同期します。 この同期は、クライアント コンピューターにインストールされている OSC プロバイダーによって異なります、ソーシャル ネットワークが、OSC プロバイダーおよび同期モードをサポートしている各 OSC プロバイダーのこれらのソーシャル ネットワークことにログオンしています。
   
-OSC をサポートしている同期の友人、友人以外の場合、その活動以外の友人や友人たちはさまざまな方法で: 同期、オンデマンド同期、およびハイブリッド同期をキャッシュします。 これらのモードの同期の間での主な違いでは、OSC がデータを格納する、既定の Outlook のユーザーのストアまたはユーザーのコンピューター上のメモリ内のフォルダーにあるかどうか。 どちらの場合も、このトピックで説明したようには既定の最小時間のデータが更新される前にフォルダーまたはメモリ内のデータが残っています。 場合によっては、グループ ポリシーによって最小限の時間をカスタマイズできます。 OSC の動作を制御するグループ ポリシーの詳細については、[グループ ポリシーを使用して Outlook の社会的コネクタを管理する方法](http://support.microsoft.com/default.aspx?scid=kb%3Ben-US%3B2020103)を参照してください。
+OSC をサポートしている同期の友人、友人以外の場合、その活動以外の友人や友人たちはさまざまな方法で: 同期、オンデマンド同期、およびハイブリッド同期をキャッシュします。 これらのモードの同期の間での主な違いでは、OSC がデータを格納する、既定の Outlook のユーザーのストアまたはユーザーのコンピューター上のメモリ内のフォルダーにあるかどうか。 どちらの場合も、このトピックで説明したようには既定の最小時間のデータが更新される前にフォルダーまたはメモリ内のデータが残っています。 場合によっては、グループ ポリシーによって最小限の時間をカスタマイズできます。 OSC の動作を制御するグループ ポリシーの詳細については、[グループ ポリシーを使用して Outlook の社会的コネクタを管理する方法](https://support.microsoft.com/default.aspx?scid=kb%3Ben-US%3B2020103)を参照してください。
   
 選択したユーザーがソーシャル ネットワークのメンバーでない場合は、OSC 表示されないこと、人や活動についてはその人の連絡先カードまたは人物情報ウィンドウに注意してください。
   
@@ -140,5 +140,5 @@ OSC プロバイダーは、OSC を通知し、XML の**機能**に次の要素�
 - [機能の XML の例](capabilities-xml-example.md)  
 - [機能のための XML](xml-for-capabilities.md)
 - [OSC の XML スキーマを使用してプロバイダーの開発](developing-a-provider-with-the-osc-xml-schema.md)  
-- [グループ ポリシーを使用して Outlook の社会的コネクタを管理する方法](http://support.microsoft.com/default.aspx?scid=kb%3Ben-US%3B2020103)
+- [グループ ポリシーを使用して Outlook の社会的コネクタを管理する方法](https://support.microsoft.com/default.aspx?scid=kb%3Ben-US%3B2020103)
 

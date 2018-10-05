@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 8074bd07-430a-779e-ad1f-e7e3a1c748b1
 description: マスター シェイプ、ページ、またはグループの図形要素の図形を定義する要素が含まれています。
-ms.openlocfilehash: 8c0a288858e2aaccbd3afadcdc1b057565dd30ab
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6308b8dd21c92f6ced9ea7f03ec8aa85773fa2bb
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806399"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399683"
 ---
 # <a name="shape-element-shapestype-complextype-visio-xml"></a>図形要素 (Shapes_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806399"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[ShapeSheet_Type](shapesheet_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml のページで、マスターの # .xml  <br/> |
    
@@ -73,7 +73,7 @@ ms.locfileid: "19806399"
 |名前  <br/> |xsd:string  <br/> |省略可能  <br/> |要素の名前です。  <br/> |Xsd:string の値を入力します。  <br/> |
 |NameU  <br/> |xsd:string  <br/> |省略可能  <br/> |要素の汎用名です。  <br/> |Xsd:string の値を入力します。  <br/> |
 |TextStyle  <br/> |xsd:unsignedInt  <br/> ||この図形の継承元のテキストの書式設定スタイル シートの ID です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|型  <br/> |xsd:token  <br/> |省略可能  <br/> |図形の種類。 次の値の 1 つがあります: グループ、図形、ガイド、または外部。  <br/> |Xsd:token の値を入力します。  <br/> |
+|種類  <br/> |xsd:token  <br/> |省略可能  <br/> |図形の種類。 次の値の 1 つがあります: グループ、図形、ガイド、または外部。  <br/> |Xsd:token の値を入力します。  <br/> |
 |UniqueID  <br/> |xsd:string  <br/> |省略可能  <br/> |図形に割り当てられた GUID (グローバル一意識別子) です。  <br/> |Xsd:string の値を入力します。  <br/> |
    
 

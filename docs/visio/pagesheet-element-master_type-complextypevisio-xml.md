@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 824fbeb0-1a2f-35a0-50e3-c57143dc21ab
 description: マスターに関連付けられている図面ページのプロパティを指定します。
-ms.openlocfilehash: ab20cfe4561cd5fd0eeb6edad0b3a608428b0e8e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 579b2b4f02c79a38842a150b8757329e19e7bb3a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806008"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399138"
 ---
 # <a name="pagesheet-element-mastertype-complextype-visio-xml"></a>PageSheet 要素 (Master_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806008"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[PageSheet_Type](pagesheet_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |masters.xml  <br/> |
    

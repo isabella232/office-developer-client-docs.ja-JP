@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: b05497e6-722f-9203-e03c-0f14a712cddb
 description: 対象オブジェクトに規則を適用するかどうかを決定する論理式を指定します。
-ms.openlocfilehash: f2862fe4f4b6a644d80ca0393270594766d940be
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8d4167fbb8dde54c55e49debb77fe307ecab6771
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806306"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396730"
 ---
 # <a name="rulefilter-element-ruletype-complextype-visio-xml"></a>RuleFilter 要素 (Rule_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806306"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[RuleFilter_Type](rulefilter_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |validation.xml  <br/> |
    

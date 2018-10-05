@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 4bf37c35-4f72-438a-912c-402f3711a5ea
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: efeac5a54c576d8b76d94ea7af8949e64dbccab6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9f70b178e7c30e1cdf94b485c77f80374113211c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588511"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394882"
 ---
 # <a name="ipersistmessageinitnew"></a>IPersistMessage::InitNew
 
@@ -44,13 +44,13 @@ HRESULT InitNew(
   
 > [in]新しいメッセージへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > 新しいメッセージが正常に初期化しました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 フォーム ビューアーは、ユーザーがフォームを処理するメッセージ クラスが所属する新しいメッセージを書き込むときに、 **IPersistMessage::InitNew**メソッドを呼び出します。 フォーム オブジェクトに有効なユーザー インターフェイスのポインターがある場合は、メッセージ オブジェクトのユーザー インターフェイスが表示されます。 
   
@@ -62,7 +62,7 @@ S_OK
   
 ただし、新たに初期化されたメッセージの処理は、いずれかを設定またはプロパティでは、以上の計算、それらのプロパティを保存する必要をオフにメッセージを変更されたとします。 プロパティがユーザーに表示する必要がありますが計算するためダイアログ ボックスが表示されません。
   
-**InitNew**に渡される 1 つは別の作業中のメッセージ、サイトへの参照は、フォームに場合、は、使用できなくするために元のサイトをリリースします。 _PMessageSite_と_pMessage_パラメーターからは、サイトのメッセージとメッセージへのポインターを格納し、その参照カウントをインクリメントするのには、両方のオブジェクトの[IUnknown::AddRef](http://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx)メソッドを呼び出します。 
+**InitNew**に渡される 1 つは別の作業中のメッセージ、サイトへの参照は、フォームに場合、は、使用できなくするために元のサイトをリリースします。 _PMessageSite_と_pMessage_パラメーターからは、サイトのメッセージとメッセージへのポインターを格納し、その参照カウントをインクリメントするのには、両方のオブジェクトの[IUnknown::AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx)メソッドを呼び出します。 
   
 メッセージ クラスの適切な**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) と**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md))、新しいメッセージのプロパティを設定します。 多くのメッセージ クラスは、新しいメッセージの**PR_MESSAGE_FLAGS**を MSGFLAG_UNSENT などの設定します。 
   
@@ -86,7 +86,7 @@ S_OK
   
  **PR_SENTMAIL_ENTRYID**([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md))
   
-フォームの状態の詳細については、[フォームの状態](form-states.md)を参照してください。 ストレージ ・ オブジェクトを初期化する方法の詳細については、 [IPersistStorage::InitNew](http://msdn.microsoft.com/library/79caf1f6-d974-4aee-8563-eda4876a0a90%28Office.15%29.aspx)メソッドを参照してください。 
+フォームの状態の詳細については、[フォームの状態](form-states.md)を参照してください。 ストレージ ・ オブジェクトを初期化する方法の詳細については、 [IPersistStorage::InitNew](https://msdn.microsoft.com/library/79caf1f6-d974-4aee-8563-eda4876a0a90%28Office.15%29.aspx)メソッドを参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

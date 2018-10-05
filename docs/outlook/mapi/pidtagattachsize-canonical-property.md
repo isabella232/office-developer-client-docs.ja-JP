@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.assetid: 768b3215-dd9f-4aa0-b52c-178ca81a7b07
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fd98044868bbec36ed14fcf90deb2990039244b8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f3e4f19ab43a3da7c4840d762d5131813c83d996
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573741"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399747"
 ---
 # <a name="pidtagattachsize-canonical-property"></a>PidTagAttachSize 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "22573741"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 サブオブジェクトの添付ファイルが、 **PR_ATTACH_SIZE**プロパティを公開することをお勧めします。 **PR_ATTACH_SIZE**に含まれている合計には、 **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) または**PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) のプロパティのサイズが含まれています。 したがって、 **PR_ATTACH_SIZE**は、通常、単独での添付ファイルの内容より大きくです。 
   
@@ -44,7 +44,7 @@ ms.locfileid: "22573741"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > メッセージと添付ファイルのオブジェクトを処理します。
     

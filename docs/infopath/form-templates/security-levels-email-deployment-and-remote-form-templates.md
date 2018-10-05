@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 7fc438ad-ae26-3632-3444-371537eaecb3
 description: Microsoft InfoPath には、電子メール メッセージの添付ファイルとして送信することと、デジタル署名またはインストールされているは、完全信頼のフォーム テンプレートを作成する 1 つの場所から別のフォーム テンプレートの移動がサポートされています。
-ms.openlocfilehash: ea0145eb45f6a03dc8637ba5ec1dc1c80d240006
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 799f2b19bfc4daa4a177d789a811d20ca09e7153
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799215"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396877"
 ---
 # <a name="security-levels-email-deployment-and-remote-form-templates"></a>セキュリティ レベル、展開、およびリモート フォーム テンプレートを電子メールで送信します。
 
@@ -186,7 +186,7 @@ InfoPath デザイン モードで作成されたすべてのフォームは、�
     
 ### <a name="example-deploying-restricted-form-templates-on-an-extranet"></a>例: 制限されたフォーム テンプレートを展開するエクストラネット上
   
-1. ドメイン レベルのフォーム テンプレートを Microsoft SharePoint Foundation 2010 を実行している Web サイトに保存します。
+1. ドメイン フォーム テンプレートは、Microsoft SharePoint Foundation 2010 を実行している web サイトに保存します。
     
 2. フォーム テンプレートのセキュリティ レベルを [制限あり] に変更します。
     
@@ -200,7 +200,7 @@ InfoPath デザイン モードで作成されたすべてのフォームは、�
     
 7. ユーザーに記入済みのフォームを返信するように指示します。
     
-8. フォームを SharePoint Foundation 2010 を実行する Web サイトに保存し直し、[ **フォーム ライブラリの設定**] ページの [ **このライブラリへのドキュメントの再リンク**] オプションを使用して、フォームのリンクを再設定します。 
+8. フォームを SharePoint Foundation 2010 を実行している web サイトに保存し、**フォーム ライブラリの設定**] ページで、**このライブラリにドキュメントを再リンク**] オプションを使用してフォームを再リンクします。 
     
 ## <a name="signature-verification-failure"></a>署名検証エラー
 

@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 44995137-d241-937a-c097-0f9d79203cdf
 description: ハイパーリンクを新しいウィンドウで開くかどうかを指定します。
-ms.openlocfilehash: b4d927e1970e994047df3cb89afa7799a825511d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0f9d1e4b1294dea3f211c8d0d69ffc49b6180066
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805919"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396338"
 ---
 # <a name="newwindow-cell-hyperlinks-section"></a>[NewWindow] セル ([ハイパーリンク] セクション)
 
@@ -22,7 +22,7 @@ ms.locfileid: "19805919"
   
 |**値**|**説明**|
 |:-----|:-----|
-| TRUE  <br/> | リンクされたページ、図面、または Web サイトを新しいウィンドウで開きます。  <br/> |
+| TRUE  <br/> | 新しいウィンドウでリンク先のページ、ドキュメント、または web サイトを開きます。  <br/> |
 | FALSE  <br/> | 既定値です。ハイパーリンク用に新しいウィンドウを開きません。  <br/> |
    
 ## <a name="remarks"></a>備考

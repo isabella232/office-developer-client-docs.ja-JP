@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6e4ac41f-3855-05d8-e659-02c265b8750c
 description: ドキュメント内のページを定義する要素が含まれています。
-ms.openlocfilehash: 368c50a25a09d5f4fd808f3f019b074b7f6d246d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 800e4ab2c6446ab298747f0492800000bb44cca3
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805945"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398011"
 ---
 # <a name="page-element-pagestype-complextype-visio-xml"></a>ページ要素 (Pages_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805945"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Page_Type](page_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |pages.xml  <br/> |
    

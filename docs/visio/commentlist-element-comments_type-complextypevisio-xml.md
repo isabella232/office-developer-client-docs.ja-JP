@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 49fee70d-6556-887b-003f-4f56916d541d
 description: 図面内のコメントを指定します。
-ms.openlocfilehash: 5773b4553185fbc99718be495c48a478ae72000c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 424eb10ab356fc2b7f07a1fae27a8e2715e3f2fd
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805048"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395169"
 ---
 # <a name="commentlist-element-commentstype-complextype-visio-xml"></a>CommentList 要素 (Comments_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805048"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[CommentList_Type](commentlist_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |comments.xml  <br/> |
    

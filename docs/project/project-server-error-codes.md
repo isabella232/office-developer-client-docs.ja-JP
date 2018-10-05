@@ -14,28 +14,28 @@ keywords:
 localization_priority: Normal
 ms.assetid: db78a09c-ebef-47cc-8623-40abe117aa08
 description: このトピックには、Project Server 2013 のプロジェクト Server インターフェイス (PSI) のエラー コードのテーブルが含まれています。 機能領域とエラー ・ コードの範囲によっては、テーブルが配置されます。
-ms.openlocfilehash: 4d4960c0452c90e267c48ee06de014b9e04b038f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7fdfafa562492fe4d5671f1335ca58cf50c91e88
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564144"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401784"
 ---
 # <a name="project-server-error-codes"></a>Project Server のエラー コード
 
 このトピックには、Project Server 2013 のプロジェクト Server インターフェイス (PSI) のエラー コードのテーブルが含まれています。 機能領域とエラー ・ コードの範囲によっては、テーブルが配置されます。
    
-Project Server 2013 のプロセスと、アドインの機能領域で一般に配置されたエラー コード番号があります。 [Microsoft.Office.Project.Server.Library.PSErrorID](https://msdn.microsoft.com/en-us/library/microsoft.office.project.server.library.pserrorid_di_pj14mref(v=office.14).aspx)列挙型と重複して[WebSvcProject.PSErrorID](https://msdn.microsoft.com/en-us/library/office/websvcproject.pserrorid_di_pj14mref.aspx)。名でアルファベット順のエラー コードをリスト表示します。 このトピックでは、PSI クラスまたは機能領域、およびエラーの識別子 (ID) 番号に配置されたテーブルのエラー コードを示します。 
+Project Server 2013 のプロセスと、アドインの機能領域で一般に配置されたエラー コード番号があります。 [Microsoft.Office.Project.Server.Library.PSErrorID](https://msdn.microsoft.com/library/microsoft.office.project.server.library.pserrorid_di_pj14mref(v=office.14).aspx)列挙型と重複して[WebSvcProject.PSErrorID](https://msdn.microsoft.com/library/office/websvcproject.pserrorid_di_pj14mref.aspx)。名でアルファベット順のエラー コードをリスト表示します。 このトピックでは、PSI クラスまたは機能領域、およびエラーの識別子 (ID) 番号に配置されたテーブルのエラー コードを示します。 
   
 > [!NOTE]
 >  エラー コードの多くは汎用的なもので、複数の原因が考えられることもあります。エラーの詳細を調べるには、次の方法があります。 
 > - ASMX ベースのアプリケーションの場合は、**System.Web.Services.Protocols.SoapException** を **PSClientError** オブジェクトと共に使用して、PSI メソッド呼び出しでのエラーの一覧または階層を表示する。「[ASMX のエラー コード例](#pj15_ErrorCodes_ASMXExample)」を参照してください。 
 > - WCF ベースのアプリケーションの場合は、**System.ServiceModel.FaultException** を使用して **PSClientError** オブジェクトを取得すると共に、追加エラー情報を取得する。「[WCF のエラー コード例](#pj15_ErrorCodes_WCFExample)」を参照してください。 
 > - Project Server コンピューター上のアプリケーション イベント ログを使用する。
-> - ユニファイド ログ サービス (ULS) のトレース ログを使用します。 詳細については、 [Project 2010 の開発を開始する](http://msdn.microsoft.com/en-us/library/gg607685.aspx)*エラーをチェック*する」を参照してください。 
-> - 詳細については、ULS ログを使用して、プロジェクトのサポートのブログの記事を参照してください[Project Server 2010: 予期、予期しないを取得する場合にどのような](http://blogs.msdn.com/b/brismith/archive/2010/03/24/project-server-2010-what-to-expect-when-you-get-the-unexpected.aspx)のブログを検索して「ログ ULS を読む」 
-> - 検索または ULS データ内の特定の問題を監視するために、するには、 [ULS ビューアー](http://www.codeproject.com/Articles/458052/ULS-Log-Viewer)を使用します。 
-> - Microsoft SQL Server Profiler は、データベース エラーの検出と監視に役立ちます。詳細については、「[SQL Server Profiler](http://msdn.microsoft.com/library/3ad5f33d-559e-41a4-bde6-bb98792f7f1a.aspx)」を参照してください。 
+> - ユニファイド ログ サービス (ULS) のトレース ログを使用します。 詳細については、 [Project 2010 の開発を開始する](https://msdn.microsoft.com/library/gg607685.aspx)*エラーをチェック*する」を参照してください。 
+> - 詳細については、ULS ログを使用して、プロジェクトのサポートのブログの記事を参照してください[Project Server 2010: 予期、予期しないを取得する場合にどのような](https://blogs.msdn.com/b/brismith/archive/2010/03/24/project-server-2010-what-to-expect-when-you-get-the-unexpected.aspx)のブログを検索して「ログ ULS を読む」 
+> - 検索または ULS データ内の特定の問題を監視するために、するには、 [ULS ビューアー](https://www.codeproject.com/Articles/458052/ULS-Log-Viewer)を使用します。 
+> - Microsoft SQL Server Profiler は、データベース エラーの検出と監視に役立ちます。詳細については、「[SQL Server Profiler](https://msdn.microsoft.com/library/3ad5f33d-559e-41a4-bde6-bb98792f7f1a.aspx)」を参照してください。 
 > - エラー コードの多くは内部でのみ使用されます。たとえば、**ExchangeSync** と **PWA** の Web サービスはサードパーティの開発に対応していないので、これらの領域のメソッド (**Rules** メソッドや **StatusReports** メソッドなど) のエラー コードを目にする可能性はほとんどありません。ただし、この記事の表では完全を期すために Project Server のすべてのエラー コードを紹介します。 
   
 ## <a name="table-1-error-code-functional-areas-and-related-number-ranges"></a>表 1. エラー コードの機能領域と関連する数値の範囲
@@ -1050,7 +1050,7 @@ Project Server 2013 のプロセスと、アドインの機能領域で一般に
 
 <a name="pj15_ErrorCodes_Rules"></a>
 
-## <a name="table-22-rules"></a>表 22。 Rules
+## <a name="table-22-rules"></a>表 22。 ルール
 
 |規則のエラー コード|説明|
 |:-----|:-----|
@@ -1610,8 +1610,8 @@ CustomFieldRequiredValueNotProvided
 ## <a name="see-also"></a>関連項目
 
 - [プロジェクトの概念と操作方法に関する記事](project-conceptual-and-how-to-articles.md)
-- [SQL Server プロファイラー](http://msdn.microsoft.com/library/3ad5f33d-559e-41a4-bde6-bb98792f7f1a.aspx)
-- [プロジェクトの Server 2010: どのような予期しないを取得する場合に期待する](http://blogs.msdn.com/b/brismith/archive/2010/03/24/project-server-2010-what-to-expect-when-you-get-the-unexpected.aspx)
-- [ULS ビューアー](http://www.codeproject.com/Articles/458052/ULS-Log-Viewer)
+- [SQL Server プロファイラー](https://msdn.microsoft.com/library/3ad5f33d-559e-41a4-bde6-bb98792f7f1a.aspx)
+- [プロジェクトの Server 2010: どのような予期しないを取得する場合に期待する](https://blogs.msdn.com/b/brismith/archive/2010/03/24/project-server-2010-what-to-expect-when-you-get-the-unexpected.aspx)
+- [ULS ビューアー](https://www.codeproject.com/Articles/458052/ULS-Log-Viewer)
     
 

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 263ac923-692f-40d4-bdd5-116dc5c49766
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b33d3d26c9369bd0a0e18cdf9e4b8ca850666657
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7197159fd55016454de3fa806fc30d0700ef5f3d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584871"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401756"
 ---
 # <a name="pidtagdeferreddeliverytime-canonical-property"></a>PidTagDeferredDeliveryTime 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 日付と時刻のメッセージの送信者がメッセージの配信を希望する場合が含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22584871"
 |関連するプロパティ:  <br/> |PR_DEFERRED_DELIVERY_TIME  <br/> |
 |識別子:  <br/> |0x000F  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
-|領域:  <br/> |MAPI の封筒  <br/> |
+|エリア:  <br/> |MAPI の封筒  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 MAPI は、遅延配信を行いません。遅延配信を処理するには、基になるメッセージング システムのオプションです。
   
@@ -42,11 +42,11 @@ MAPI は、遅延配信を行いません。遅延配信を処理するには、
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > プロパティは、電子メール メッセージの許可の操作を指定します。
     

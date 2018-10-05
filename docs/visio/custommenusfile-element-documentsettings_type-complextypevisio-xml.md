@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4c88bde5-45e1-8030-e72c-a735c374a5c4
 description: カスタム メニューおよびアクセラレータのドキュメントを定義する Microsoft Visio ユーザー インターフェイス (.vsu) ファイルの名前が含まれています。
-ms.openlocfilehash: 2044c7e300dc51df8b8cd03ef861391d04494e0a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 347660abab266493254b4dc2b47150f3b80fd371
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805133"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394386"
 ---
 # <a name="custommenusfile-element-documentsettingstype-complextype-visio-xml"></a>CustomMenusFile 要素 (DocumentSettings_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805133"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[CustomMenusFile_Type](custommenusfile_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
    

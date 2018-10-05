@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 9077ad4b-c539-c0c8-d268-9a009990abdd
 description: レコード セットの個別の行の主キーの値を指定します。
-ms.openlocfilehash: 3b91997b5fe8184eb89f8c53197a512d809171b9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 12d60bb0ccccdcd8c1790678cae4ad1e887e73b6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806317"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396724"
 ---
 # <a name="rowkeyvalue-element-primarykeytype-complextype-visio-xml"></a>RowKeyValue 要素 (PrimaryKey_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806317"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[RowKeyValue_Type](rowkeyvalue_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |recordsets.xml  <br/> |
    

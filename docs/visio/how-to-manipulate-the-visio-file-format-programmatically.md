@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 5f5e2288-7539-41b8-916d-410be028ed9b
 description: ''
-ms.openlocfilehash: ba3c03069235b1054dabd122471be996ec515772
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3da5d0c0c63ba58649435d2e2289b58ab30de2ef
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567847"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395820"
 ---
 # <a name="manipulate-the-visio-file-format-programmatically"></a>プログラムを使用して Visio ファイル形式を操作する
 
@@ -32,15 +32,15 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
 この記事で考察プログラムで、Visio 2013 のファイル形式を使用する方法、Microsoft.NET Framework 4.5、C# または Visual Basic、および Visual Studio 2012 を使用します。 Visio 2013 ファイルを開く、ファイル内の文書パーツを選択して、パーツのデータを変更および新しい文書パーツを作成する方法を表示できます。
   
 > [!NOTE]
-> この資料のコード サンプルでは、 [System.Xml.Linq](https://msdn.microsoft.com/library/System.Xml.Linq.aspx) 、 [System.IO.Packaging](https://msdn.microsoft.com/library/System.IO.Packaging.aspx)名前空間のクラスの基本的な知識があることを前提としています。 > この資料では、概念とオープンのパッケージ化規則の用語を理解することも想定しています。 パッケージ、文書パーツまたはパッケージのパーツおよびリレーションシップの概念をいくつかの知識が必要です。 詳細についてを参照してください[OPC: A 新しい標準的なパッケージのデータを](http://msdn.microsoft.com/en-us/magazine/cc163372.aspx)。 > のコードでは、XML を選択するクエリを LINQ (統合言語クエリ) を作成する方法を示します。 多くのコード サンプルは、LINQ クエリの作成のクエリの構文を使用します。 必要な場合は、LINQ のメソッドの構文を使用して、コードで提供される LINQ クエリのいずれかを書き直すことができます。 LINQ クエリ構文とメソッド構文の詳細については、 [LINQ のクエリ構文](http://msdn.microsoft.com/en-us/library/bb397947.aspx)を参照してください > 表 1 は、この資料を使用する前にに精通している必要があります重要なトピックを示します。 
+> この資料のコード サンプルでは、 [System.Xml.Linq](https://msdn.microsoft.com/library/System.Xml.Linq.aspx) 、 [System.IO.Packaging](https://msdn.microsoft.com/library/System.IO.Packaging.aspx)名前空間のクラスの基本的な知識があることを前提としています。 > この資料では、概念とオープンのパッケージ化規則の用語を理解することも想定しています。 パッケージ、文書パーツまたはパッケージのパーツおよびリレーションシップの概念をいくつかの知識が必要です。 詳細についてを参照してください[OPC: A 新しい標準的なパッケージのデータを](https://msdn.microsoft.com/magazine/cc163372.aspx)。 > のコードでは、XML を選択するクエリを LINQ (統合言語クエリ) を作成する方法を示します。 多くのコード サンプルは、LINQ クエリの作成のクエリの構文を使用します。 必要な場合は、LINQ のメソッドの構文を使用して、コードで提供される LINQ クエリのいずれかを書き直すことができます。 LINQ クエリ構文とメソッド構文の詳細については、 [LINQ のクエリ構文](https://msdn.microsoft.com/library/bb397947.aspx)を参照してください > 表 1 は、この資料を使用する前にに精通している必要があります重要なトピックを示します。 
   
 **表 1. Visio 2013 ファイル形式の操作に関する中心概念**
 
 |**記事のタイトル**|**説明**|
 |:-----|:-----|
 |[Visio ファイル形式 (.vsdx) の概要](introduction-to-the-visio-file-formatvsdx.md) <br/> |この概要では、Visio 2013 のファイル形式の主な機能のいくつかについて説明します。 Visio 2013 のファイル形式に適用されていると、開いているパッケージ化の規則 (OPC) を説明します。 また、いくつかの違いは、Visio 2013 のファイル形式と以前の Visio XML 図面ファイル形式 (.vdx) を一覧表示します。  <br/> |
-|[OPC: データをパッケージ化するための新しい標準](http://msdn.microsoft.com/en-us/magazine/cc163372.aspx) <br/> |この MSDN マガジンの記事は、Open Packaging Conventions の概念について説明します。  <br/> |
-|[オープンなパッケージング規則の基礎](http://msdn.microsoft.com/en-us/library/ee361919.aspx) <br/> [Office (2007) オープン XML ファイル形式の概要](http://msdn.microsoft.com/en-us/library/aa338205.aspx) <br/> |これら 2 つの資料では、Microsoft Office ファイルを開くのパッケージ化の規則を適用されている方法について説明します。 関係のパッケージでの作業し、いくつかのコード サンプルも含まれての説明が含まれます。  <br/> |
+|[OPC: データをパッケージ化するための新しい標準](https://msdn.microsoft.com/magazine/cc163372.aspx) <br/> |この MSDN マガジンの記事は、Open Packaging Conventions の概念について説明します。  <br/> |
+|[オープンなパッケージング規則の基礎](https://msdn.microsoft.com/library/ee361919.aspx) <br/> [Office (2007) オープン XML ファイル形式の概要](https://msdn.microsoft.com/library/aa338205.aspx) <br/> |これら 2 つの資料では、Microsoft Office ファイルを開くのパッケージ化の規則を適用されている方法について説明します。 関係のパッケージでの作業し、いくつかのコード サンプルも含まれての説明が含まれます。  <br/> |
    
 ## <a name="create-a-vsdx-file-and-a-new-visual-studio-solution"></a>.vsdx ファイルと新しい Visual Studio ソリューションを作成する
 <a name="vis15_ManipulateFF_CreateFile"> </a>
@@ -220,7 +220,7 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
 ## <a name="select-and-read-package-parts-from-a-package"></a>パッケージからパッケージ パーツを選択して読み取る
 <a name="vis15_ManipulateFF_SelectPart"> </a>
 
-パッケージを開き、Visio 2013 ファイルを作成したら、 **System.IO.Packaging**名前空間に含まれている[PackagePart](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePart.aspx)クラスを使用してその中の文書パーツにアクセスできます。 **PackagePart**オブジェクトは、個別にまたはコレクションとしてインスタンス化することができます。 **パッケージ**のクラスでは、 [GetParts()](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetParts.aspx)メソッドと**パッケージ**からの**PackagePart**オブジェクトを取得するための[GetPart(Uri)](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetPart.aspx)メソッドを公開します。 **Package.GetParts**メソッドを実装するその他のコレクションと同様に操作できますし、 [PackagePartCollection](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePartCollection.aspx)クラスのインスタンスを取得する、 [IEnumerator\<T\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerator-1?redirectedfrom=MSDN&view=netframework-4.7.2)インタ フェースです。 
+パッケージを開き、Visio 2013 ファイルを作成したら、 **System.IO.Packaging**名前空間に含まれている[PackagePart](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePart.aspx)クラスを使用してその中の文書パーツにアクセスできます。 **PackagePart**オブジェクトは、個別にまたはコレクションとしてインスタンス化することができます。 **パッケージ**のクラスでは、 [GetParts()](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetParts.aspx)メソッドと**パッケージ**からの**PackagePart**オブジェクトを取得するための[GetPart(Uri)](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetPart.aspx)メソッドを公開します。 **Package.GetParts**メソッドを実装するその他のコレクションと同様に操作できますし、 [PackagePartCollection](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePartCollection.aspx)クラスのインスタンスを取得する、 [IEnumerator\<T\>](https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1?redirectedfrom=MSDN&view=netframework-4.7.2)インタ フェースです。 
   
 **PackagePartCollection** オブジェクトを **Package** からコレクションとして取得し、コレクション内で **PackagePart** オブジェクトを反復処理し、各 **PackagePart** の URI とコンテンツ タイプをコンソールに書き込むには、次の手順のコードを使用してください。 
   
@@ -307,7 +307,7 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
   
 ほとんどの場合、それらのすべてを反復処理することがなく 1 つの**PackagePart**を選択する必要があります。 **パッケージ**からの**PackagePart**オブジェクトを取得するには、**パッケージ**または別の**PackagePart**の関係を使用します。 Visio 2013 がファイル形式は、ドキュメント パーツの関係について説明する別個のエンティティのリレーションシップ ファイル パッケージまたは 2 つの文書パーツは、相互に関連します。 などの Visio 2013 ファイル パッケージ自体と、Visio 図面の一部に関係があるし、Visio 図面の一部が Windows の一部に関係を持っています。 [PackageRelationship](https://msdn.microsoft.com/library/System.IO.Packaging.PackageRelationship.aspx)または[PackageRelationshipCollection](https://msdn.microsoft.com/library/System.IO.Packaging.PackageRelationshipCollection.aspx)のクラスのインスタンスとしては、これらの関係が表されます。 
   
-**パッケージ**のクラスは、 **PackageRelationship**または**PackageRelationshipCollection**オブジェクトとして含まれている関係を取得するためのいくつかのメソッドを公開します。 [GetRelationshipsByType(String)](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetRelationshipsByType.aspx)メソッドを使用するには 1 つの特定の種類の**PackageRelationship**オブジェクトを格納する**PackageRelationshipCollection**オブジェクトをインスタンス化します。 もちろん、 **Package.GetRelationshipsByType**メソッドを使用する場合は、必要なリレーションシップの種類が既にわかっている必要があります。 関係タイプは、XML 名前空間の形式の文字列です。 Visio 文書パーツの関連付けの種類は、たとえば、 http://schemas.microsoft.com/visio/2010/relationships/document。 
+**パッケージ**のクラスは、 **PackageRelationship**または**PackageRelationshipCollection**オブジェクトとして含まれている関係を取得するためのいくつかのメソッドを公開します。 [GetRelationshipsByType(String)](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetRelationshipsByType.aspx)メソッドを使用するには 1 つの特定の種類の**PackageRelationship**オブジェクトを格納する**PackageRelationshipCollection**オブジェクトをインスタンス化します。 もちろん、 **Package.GetRelationshipsByType**メソッドを使用する場合は、必要なリレーションシップの種類が既にわかっている必要があります。 関係タイプは、XML 名前空間の形式の文字列です。 Visio 文書パーツの関連付けの種類は、たとえば、 https://schemas.microsoft.com/visio/2010/relationships/document。 
   
 **PackagePart** と **Package** または別の **PackagePart** とのリレーションシップが分かったら (つまり、目的の **PackagePart** を参照する **PackageRelationship** オブジェクトがある場合)、このリレーションシップを使用して、その **PackagePart** の URI を取得できます。それから、この URI を **Package.GetPart** メソッドに渡して、**PackagePart** を返します。
   
@@ -370,14 +370,14 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
   ```cs
   // Get a reference to the Visio Document part contained in the file package.
   PackagePart documentPart = GetPackagePart(visioPackage, 
-      "http://schemas.microsoft.com/visio/2010/relationships/document");
+      "https://schemas.microsoft.com/visio/2010/relationships/document");
   
   ```
 
   ```vb
   ' Get a reference to the Visio Document part contained in the file package.
   Dim documentPart As PackagePart = GetPackagePart(visioPackage, _
-      "http://schemas.microsoft.com/visio/2010/relationships/document")
+      "https://schemas.microsoft.com/visio/2010/relationships/document")
   
   ```
 
@@ -442,9 +442,9 @@ Package から PackagePart を取得するには、次のコードを使用し�
   // Get a reference to the collection of pages in the document, 
   // and then to the first page in the document.
   PackagePart pagesPart = GetPackagePart(visioPackage, documentPart, 
-      "http://schemas.microsoft.com/visio/2010/relationships/pages");
+      "https://schemas.microsoft.com/visio/2010/relationships/pages");
   PackagePart pagePart = GetPackagePart(visioPackage, pagesPart, 
-      "http://schemas.microsoft.com/visio/2010/relationships/page");
+      "https://schemas.microsoft.com/visio/2010/relationships/page");
   
   ```
 
@@ -452,9 +452,9 @@ Package から PackagePart を取得するには、次のコードを使用し�
   ' Get a reference to the collection of pages in the document,
   ' and then to the first page in the document.
   Dim pagesPart As PackagePart = GetPackagePart(visioPackage, documentPart, _
-      "http://schemas.microsoft.com/visio/2010/relationships/pages") 
+      "https://schemas.microsoft.com/visio/2010/relationships/pages") 
   Dim pagePart As PackagePart = GetPackagePart(visioPackage, pagesPart, _
-      "http://schemas.microsoft.com/visio/2010/relationships/page") 
+      "https://schemas.microsoft.com/visio/2010/relationships/page") 
   ```
 
 ドキュメントの一部に含まれている XML に変更を行うことができます、前に、まず[XDocument](https://msdn.microsoft.com/library/System.Xml.Linq.XDocument.aspx)クラスまたは[XmlDocument](https://msdn.microsoft.com/library/System.Xml.XmlDocument.aspx)クラスを使用して、XML を読み取ることができるオブジェクトを XML ドキュメントをロードする必要があります。 両方のクラスは、XML ドキュメント内に含まれる XML 要素を選択するなどのタスクのメソッドを公開します。属性を書き込み、作成、読み取り、新しい XML 要素を文書に挿入します。 
@@ -775,7 +775,7 @@ Visio 2013 のファイル形式には、ファイル内のデータを再計算
       // Get the Custom File Properties part from the package and
       // and then extract the XML from it.
       PackagePart customPart = GetPackagePart(filePackage, 
-          "http://schemas.openxmlformats.org/officeDocument/2006/relationships/" + 
+          "https://schemas.openxmlformats.org/officeDocument/2006/relationships/" + 
           "custom-properties");
       XDocument customPartXML = GetXMLFromPart(customPart);
       // Check to see whether document recalculation has already been 
@@ -814,7 +814,7 @@ Visio 2013 のファイル形式には、ファイル内のデータを再計算
           ' Get the Custom File Properties part from the package and
           ' then extract the XML from it.
           Dim customPart As PackagePart = GetPackagePart(filePackage, _
-              "http://schemas.openxmlformats.org/officeDocument/2006/" + _
+              "https://schemas.openxmlformats.org/officeDocument/2006/" + _
               "relationships/custom-properties")
           Dim customPartXML As XDocument = GetXMLFromPart(customPart)
           ' Check to see whether document recalculation has already been
@@ -1010,7 +1010,7 @@ Visio ファイルに新しいリボン機能拡張パーツを作成するの�
       // This code adds a new CUSTOM tab to the ribbon for this
       // document. The tab has one group that contains one button.
       XNamespace customUINS = 
-          "http://schemas.microsoft.com/office/2006/01/customui";
+          "https://schemas.microsoft.com/office/2006/01/customui";
       XDocument customUIXDoc = new XDocument(
           new XDeclaration("1.0", "utf-8", "true"),
           new XElement(customUINS + "customUI",
@@ -1044,7 +1044,7 @@ Visio ファイルに新しいリボン機能拡張パーツを作成するの�
       ' This code adds a new CUSTOM tab to the ribbon for this
       ' document. The tab has one group that contains one button.
       Dim customUINS As XNamespace = _
-          "http://schemas.microsoft.com/office/2006/01/customui"
+          "https://schemas.microsoft.com/office/2006/01/customui"
       Dim customUIXML = New XDocument( _
           New XDeclaration("1.0", "utf-8", "true"), _
           New XElement(customUINS + "customUI", _
@@ -1136,7 +1136,7 @@ Visio ファイルに新しいリボン機能拡張パーツを作成するの�
   CreateNewPackagePart(visioPackage, customUIXML, 
       new Uri("/customUI/customUI1.xml", UriKind.Relative),
       "application/xml",
-      "http://schemas.microsoft.com/office/2006/relationships/ui/extensibility");
+      "https://schemas.microsoft.com/office/2006/relationships/ui/extensibility");
   ```
 
   ```vb
@@ -1145,7 +1145,7 @@ Visio ファイルに新しいリボン機能拡張パーツを作成するの�
   CreateNewPackagePart(visioPackage, customUIXML, _
       New Uri("/customUI/customUI1.xml", UriKind.Relative), _
       "application/xml", _
-      "http://schemas.microsoft.com/office/2006/relationships/ui/extensibility")
+      "https://schemas.microsoft.com/office/2006/relationships/ui/extensibility")
   ```
 
 4. F5 キーを選択してソリューションをデバッグします。プログラムの実行が完了したら、任意のキーを選択して終了します。
@@ -1162,7 +1162,7 @@ Visio ファイルに新しいリボン機能拡張パーツを作成するの�
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+<customUI xmlns="https://schemas.microsoft.com/office/2006/01/customui">
   <ribbon>
     <tabs>
       <tab id="customTab" label="CUSTOM">
@@ -1188,18 +1188,18 @@ Visio ファイル形式での作業の詳細については、以下につい�
 
 - Al Edlund 提供:
     
-  - CodePlex で[pkgVisio の Visio 2013 の XML の操作](http://pkgvisio.codeplex.com/documentation)のプロジェクトです。 
+  - CodePlex で[pkgVisio の Visio 2013 の XML の操作](https://pkgvisio.codeplex.com/documentation)のプロジェクトです。 
     
-  - [pkgVisio_pt1](http://www.youtube.com/watch?v=7LvDKJuP9oQ&amp;feature=youtu.be) YouTube のビデオです。 
+  - [pkgVisio_pt1](https://www.youtube.com/watch?v=7LvDKJuP9oQ&amp;feature=youtu.be) YouTube のビデオです。 
     
-  - [pkgVisio_pt2](http://www.youtube.com/watch?v=ZIWSXhNSkG8&amp;feature=youtu.be) YouTube のビデオです。 
+  - [pkgVisio_pt2](https://www.youtube.com/watch?v=ZIWSXhNSkG8&amp;feature=youtu.be) YouTube のビデオです。 
     
-- [Visio デベロッパー センター](http://msdn.microsoft.com/en-us/office/aa905478.aspx)
+- [Visio デベロッパー センター](https://msdn.microsoft.com/office/aa905478.aspx)
     
-- [Office オープン XML 形式のドキュメントを操作します。](http://msdn.microsoft.com/en-us/library/aa982683%28v=office.12%29.aspx)
+- [Office オープン XML 形式のドキュメントを操作します。](https://msdn.microsoft.com/library/aa982683%28v=office.12%29.aspx)
     
-- [名前空間 (C#) (LINQ to XML) ドキュメントを作成します。](http://msdn.microsoft.com/en-us/library/bb387075.aspx)
+- [名前空間 (C#) (LINQ to XML) ドキュメントを作成します。](https://msdn.microsoft.com/library/bb387075.aspx)
     
-- [Microsoft Office を起動することがなく、ドキュメントにカスタム XML 部分を追加します。](http://msdn.microsoft.com/en-us/library/bb608597%28VS.90%29.aspx)
+- [Microsoft Office を起動することがなく、ドキュメントにカスタム XML 部分を追加します。](https://msdn.microsoft.com/library/bb608597%28VS.90%29.aspx)
     
 

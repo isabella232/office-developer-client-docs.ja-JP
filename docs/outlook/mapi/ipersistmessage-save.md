@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 17875c13-f55b-4538-ac6f-c020281c3175
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 1a95989cea7ad5529eb73276b4c771e4900804b4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fa3f1d6339000fcc53e0ee22dafec4362e65ca7f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579901"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397157"
 ---
 # <a name="ipersistmessagesave"></a>IPersistMessage::Save
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 変更後のフォームを元に読み込みまたは作成したメッセージに保存します。
   
@@ -44,13 +44,13 @@ HRESULT Save(
   
 > [in]メッセージに示されることを指定する場合は TRUE _pMessage_では、メッセージ フォームが読み込まれるか作成。それ以外の場合、FALSE です。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > フォームが正常に保存されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 フォームの閲覧者は、変更後のフォームを元に読み込みまたは作成したメッセージに保存するのには**IPersistMessage::Save**メソッドを呼び出します。 
   
@@ -66,7 +66,7 @@ _FSameAsLoad_が TRUE に設定されている場合は、フォームの既存�
   
 フォームは、標準以外の任意の状態にすると、 **Save**が呼び出される、E_UNEXPECTED を返します。 
   
-ストレージ ・ オブジェクトを保存する方法の詳細については、[すること](http://msdn.microsoft.com/library/1c1a20fc-c101-4cbc-a7a6-30613aa387d7%28Office.15%29.aspx)の方法のマニュアルを参照してください。 
+ストレージ ・ オブジェクトを保存する方法の詳細については、[すること](https://msdn.microsoft.com/library/1c1a20fc-c101-4cbc-a7a6-30613aa387d7%28Office.15%29.aspx)の方法のマニュアルを参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

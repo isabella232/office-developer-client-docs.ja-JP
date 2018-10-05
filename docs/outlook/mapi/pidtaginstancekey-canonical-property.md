@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 14fc5571-acc0-4d75-8598-964aee5ba01c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 53772fca5e8137dfd602d4c7d6f5e6ad40f9c50f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c237149c305a80012d1f06ea4373b892d25daec1
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573433"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396990"
 ---
 # <a name="pidtaginstancekey-canonical-property"></a>PidTagInstanceKey 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 テーブル内の行を一意に識別する値が含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22573433"
 |関連するプロパティ:  <br/> |PR_INSTANCE_KEY  <br/> |
 |識別子:  <br/> |0x0FF6  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |テーブル  <br/> |
+|エリア:  <br/> |テーブル  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、表形式ビュー内の行を一意に識別するバイナリ値です。 ほとんどのテーブルの必要な列があります。 行が 2 つのビューに含まれている場合は、2 つの別のインスタンスのキーがあります。 行のインスタンスのキーは、テーブルを開くたびに異なる場合がありますが、テーブルの中に一定に開いています。 テーブルの使用中に追加された行は、使用していたインスタンスのキーを再利用しません。 
   
@@ -54,11 +54,11 @@ ms.locfileid: "22573433"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
 > プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
     

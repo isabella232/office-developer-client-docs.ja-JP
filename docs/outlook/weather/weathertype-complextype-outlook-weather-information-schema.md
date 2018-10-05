@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: b94d848e-868a-5d5e-ad82-39ed9bd5b357
 description: 場所の気象条件を指定します。
-ms.openlocfilehash: b333bb6ce60dd1613bceda0a57e7e34c9819bd84
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ffa91c4982b5703041c79b47eb15a3a2b845b429
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804544"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398767"
 ---
 # <a name="weathertype-complextype-outlook-weather-information-schema"></a>weatherType complexType (Outlook の気象情報のスキーマ)
 
@@ -23,7 +23,7 @@ ms.locfileid: "19804544"
 
 |||
 |:-----|:-----|
-|**名前空間** <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
 |**スキーマ ファイル** <br/> |getweatherinfo.xsd  <br/> |
 |**拡張ベース** <br/> |なし  <br/> |
    

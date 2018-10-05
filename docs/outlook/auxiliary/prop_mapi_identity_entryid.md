@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: c64db8ea-d6ad-4fb9-97aa-958e5a0daf8f
 description: 取得または、アカウントのアドレス帳のエントリ ID を設定します。
-ms.openlocfilehash: d85a779da36c2780fe058f906086f61cfc47d5d1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2352f64b46e9884e95b7bf1f3693321f7cd224ca
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799568"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400349"
 ---
 # <a name="propmapiidentityentryid"></a>PROP_MAPI_IDENTITY_ENTRYID
 
@@ -29,9 +29,9 @@ ms.locfileid: "19799568"
 |プロパティ タグ。  <br/> |0x20020102  <br/> |
 |アクセス:  <br/> |値の取得および設定が可能です。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
- **プロペラ\_MAPI\_の ID\_エントリ ID**のすべてのアカウントの存在ではありません。 たとえば、Exchange アカウントがある**プロペラ\_MAPI\_の ID\_ENTRYID**設定ではなく[プロペラ\_ACCT_USER_EMAIL_ADDR](prop_acct_user_email_addr.md)、SMTP と POP3 アカウントの場合は、逆です。 **プロペラ\_MAPI_IDENTITY_ENTRYID** [IMAPISession::QueryIdentity](http://msdn.microsoft.com/library/a2cdda90-5457-49a7-b98c-7273ffe5cbbc%28Office.15%29.aspx)の_lppEntryID_によって返される値を次のようなエントリ ID を返します。 
+ **プロペラ\_MAPI\_の ID\_エントリ ID**のすべてのアカウントの存在ではありません。 たとえば、Exchange アカウントがある**プロペラ\_MAPI\_の ID\_ENTRYID**設定ではなく[プロペラ\_ACCT_USER_EMAIL_ADDR](prop_acct_user_email_addr.md)、SMTP と POP3 アカウントの場合は、逆です。 **プロペラ\_MAPI_IDENTITY_ENTRYID** [IMAPISession::QueryIdentity](https://msdn.microsoft.com/library/a2cdda90-5457-49a7-b98c-7273ffe5cbbc%28Office.15%29.aspx)の_lppEntryID_によって返される値を次のようなエントリ ID を返します。 
   
 ## <a name="see-also"></a>関連項目
 

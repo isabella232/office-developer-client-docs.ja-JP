@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4a73c77c-7e32-4302-bffe-a1ea13574731
 description: '最終更新日: 2013 年 2 月 24 日'
-ms.openlocfilehash: 62269b823810964fc0e5749aa6a57d39c503e2b4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: acc0986dd80b549b0cb2b941a6937d47a4a959fe
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573580"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393874"
 ---
 # <a name="ipstoverridereqregistertrustedpstoverridehandler"></a>IPSTOVERRIDEREQ::RegisterTrustedPSTOverrideHandler
 
  
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 個人用フォルダー (.pst) ファイルのロックを解除する手順を開始します。
   
@@ -45,13 +45,13 @@ HRESULT RegisterTrustedPSTOverrideHandler (
   
 > [in]PST プロバイダーが DLL の HrTrustedPSTOverrideHandlerCallback 関数への後続の呼び出しに渡されます、クライアントのデータへのポインター。 DLL によっては、このクライアント データを pst ファイルのロックが解除する必要があるかどうかを確認するために使用できます。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK
   
 > 関数の呼び出しに成功しました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 WzDllPath パラメーターで指定された DLL は、デジタル証明書を使用して署名する必要があります。 DLL では、次のシグネチャを持つ関数をエクスポートする必要がありますもします。
   
@@ -61,7 +61,7 @@ extern "C" HRESULT __cdecl HrTrustedPSTOverrideHandlerCallback(IMsgStore *pmstor
 
 Pst ファイルの IMsgStore オブジェクトへのポインター、IPSTOVERRIDE1 インターフェイスを実装する IUnknown オブジェクトへのポインター、および pvClientData を最初に入力したデータへのポインターでは、この関数が呼び出されます。
   
-詳細については、 [Outlook 2007 で PSTDisableGrow ポリシーをバイパスするのには、PST オーバーライドするハンドラーを実装する方法](http://support.microsoft.com/kb/956070)を参照してください。
+詳細については、 [Outlook 2007 で PSTDisableGrow ポリシーをバイパスするのには、PST オーバーライドするハンドラーを実装する方法](https://support.microsoft.com/kb/956070)を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

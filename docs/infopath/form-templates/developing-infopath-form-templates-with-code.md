@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: b43ada73-349d-498f-a8bb-e8fd5020d207
 description: このセクションのトピックでは、マネージ コード (Visual Basic または C#) で Microsoft.Office.InfoPath 名前空間のメンバーに対して書かれたビジネス ロジックを含むフォーム テンプレートの作成について説明します。
-ms.openlocfilehash: 4b113e1c189fe8ebdb5781e969e7f67961d4ea18
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 386542b5c5f4e502f48d97c2a18194638e8e1536
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799090"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399390"
 ---
 # <a name="developing-infopath-form-templates-with-code"></a>コードを含む InfoPath フォーム テンプレートを開発する
 
@@ -43,11 +43,11 @@ ms.locfileid: "19799090"
     
 ## <a name="related-sections"></a>関連情報
 
-[InfoPath デベロッパー ポータル](http://go.microsoft.com/fwlink?LinkID=11689)
+[InfoPath デベロッパー ポータル](https://go.microsoft.com/fwlink?LinkID=11689)
   
 > カスタム InfoPath ソリューションの構築に関する技術的な記事、コード サンプル、ダウンロード、サポート、およびその他の MSDN ドキュメントが含まれています。
     
-[Microsoft Office デベロッパー センター](http://go.microsoft.com/fwlink?LinkID=27128)
+[Microsoft Office デベロッパー センター](https://go.microsoft.com/fwlink?LinkID=27128)
   
 > カスタム Office ソリューションの構築に関する技術的な記事、コード サンプル、ダウンロード、サポート、およびその他の MSDN ドキュメントへのリンクが含まれています。
     

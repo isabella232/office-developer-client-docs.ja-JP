@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 293a0700-b950-4fc2-a2e5-148d6c846384
 description: '最終更新日: 2012 年 2 月 20 日'
-ms.openlocfilehash: 0052d0bd6b485340a92cca9f22ca65c9e2442df6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0e64df38afdb8ecce35eb0151d36dde3da35f0a4
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589568"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398739"
 ---
 # <a name="mnlsisbadstringptrw"></a>MNLS_IsBadStringPtrW
 
@@ -43,8 +43,8 @@ BOOL MNLS_IsBadStringPtrW(
 
 ブール値、文字列が無効な場合は true を返します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
-この関数は、 [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx)をラップします。 詳細については、 [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx)を参照してください。
+この関数は、 [IsBadStringPtr](https://msdn.microsoft.com/library/aa366714%28VS.85%29.aspx)をラップします。 詳細については、 [IsBadStringPtr](https://msdn.microsoft.com/library/aa366714%28VS.85%29.aspx)を参照してください。
   
 

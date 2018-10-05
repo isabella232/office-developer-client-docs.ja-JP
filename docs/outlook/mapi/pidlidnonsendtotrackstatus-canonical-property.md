@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 50fec332-e7df-4bc6-8c50-59b9ca545f89
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cf9d11b7a53ee0b9911e32cb3c3e2a0a490e4729
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bdfbd553e130a4e463017168a76dc94fc0df827b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592788"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396996"
 ---
 # <a name="pidlidnonsendtotrackstatus-canonical-property"></a>PidLidNonSendToTrackStatus 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 **DispidNonSendableTo** ([PidLidNonSendableTo](pidlidnonsendableto-canonical-property.md)) のプロパティに記載されている各出席者の値が含まれています。
   
@@ -33,9 +33,9 @@ ms.locfileid: "22592788"
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x00008543  <br/> |
 |データの種類 :   <br/> |PT_MV_LONG  <br/> |
-|領域:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **DispidNonSendableTo**プロパティが設定されている場合にのみ、このプロパティが必要です。 このプロパティの値の数は、 **dispidNonSendableTo**内の値の数に等しくなければなりません。 このプロパティでは、各 PT_LONG 値は、同じインデックス位置にある**dispidNonSendableTo**プロパティに出席者に対応します。 
   
@@ -43,11 +43,11 @@ ms.locfileid: "22592788"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
     

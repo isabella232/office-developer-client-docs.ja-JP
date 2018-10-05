@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: c1d70e9f-b9fc-7bdb-107e-d0cd8191607b
 description: Microsoft InfoPath で作成するフォーム テンプレートでは、InfoPath フォームで入力、編集、出力される XML の構造とデータの検証が XML スキーマ (XSD) を使用して実行されます。InfoPath のフォーム デザイン ウィンドウで作成したすべてのフォーム テンプレートには、実行時の検証に使用される XSD スキーマ ファイル (.xsd) が少なくとも 1 つ含まれています。
-ms.openlocfilehash: 6921a2206c098992a0a24e85c263992a0e2c98b1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 25828c3ec21d22a9952452d5a82fe1a3b4bab54c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799238"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395505"
 ---
 # <a name="working-with-xml-schemas-in-infopath"></a>InfoPath で XML スキーマを使用する
 
@@ -151,13 +151,13 @@ InfoPath のデザイン モードでは、このような XSD コンストラ�
 
 ## <a name="storing-xml-signatures-in-the-data-source"></a>データ ソースに XML 署名を格納する
 
-実行時にユーザーのデジタル署名をフォームに入力できるようにするには、ユーザーがフォームに署名したときに作成される XML 署名 (デジタル署名) 情報の格納用として、signature という名前の要素をデータ ソースのスキーマで宣言する必要があります。この宣言は、 **xsd:any** 要素を使用して行い、その namespace 属性にはワイルドカード文字を使用して XML 署名の名前空間を指定します (例: "http://www.w3c.org/2000/09/xmldsig#")。 
+実行時にユーザーのデジタル署名をフォームに入力できるようにするには、ユーザーがフォームに署名したときに作成される XML 署名 (デジタル署名) 情報の格納用として、signature という名前の要素をデータ ソースのスキーマで宣言する必要があります。この宣言は、 **xsd:any** 要素を使用して行い、その namespace 属性にはワイルドカード文字を使用して XML 署名の名前空間を指定します (例: "https://www.w3c.org/2000/09/xmldsig#")。 
   
 ```XML
 <xsd:element name="signature"> 
     <xsd:complexType> 
         <xsd:sequence> 
-            <xsd:any namespace="http://www.w3c.org/2000/09/xmldsig#"  
+            <xsd:any namespace="https://www.w3c.org/2000/09/xmldsig#"  
              processContents="lax" minOccurs="0" maxOccurs="unbounded"/> 
         <xsd:sequence> 
     </xsd:complexType> 
@@ -173,7 +173,7 @@ InfoPath のデザイン モードでは、このような XSD コンストラ�
 <xsd:element name="xhtml"> 
     <xsd:complexType mixed="true"> 
         <xsd:sequence> 
-            <xsd:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/1999/xhtml" processContents="lax"/> 
+            <xsd:any minOccurs="0" maxOccurs="unbounded" namespace="https://www.w3.org/1999/xhtml" processContents="lax"/> 
         </xsd:sequence> 
     </xsd:complexType> 
 </xsd:element> 
@@ -194,7 +194,7 @@ InfoPath のデザイン モードでは、このような XSD コンストラ�
 XSD ファイルが XSD 勧告を確実にサポートするようにするには、次の XML 名前空間宣言を \<schema\> タグに含めます。
   
 ```XML
-xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:xsd="https://www.w3.org/2001/XMLSchema"
 ```
 
 すべての XML 名前空間宣言と同様、XML プレフィックス (この場合は 'xsd') には、有効なプレフィックス文字列を任意に指定できます。実際に使用される一般的なプレフィックスとしては、'xsd'、'xs'、'' (プレフィックスなし) などが挙げられます。MSXML では、通常、この名前空間宣言がない場合、ルートが正しく定義されていないという内容のエラーが報告されます。
@@ -377,14 +377,14 @@ MSXML では、次の例に示すような、空の **xsd:choice** 要素また�
   
 ## <a name="regular-expressions"></a>正規表現
 
-MSXML 5.0 では、読み込み時に正規表現パターンの検証で問題が生じる場合があります。正規表現は複雑になる場合があるため、慎重に使用する必要があります。XSD パーサーはどれも皆、柔軟な正規表現言語を採用しているように見えますが、それは、公式の XSD 正規表現言語に加えて、他の正規表現言語の要素も実装しているからです。InfoPath のフォーム デザイン ウィンドウで正規表現の解析に問題が生じる場合は、InfoPath で生成されるサンプル データが無効であるか、まったく生成されていないことが考えられます。これはデザイン時には、サンプル データが書式設定にしか使用されないため問題にはなりません。ただし、MSXML がサポートしていない正規表現を使用する場合は、ユーザーがフォームに記入する際に、InfoPath でその正規表現に照らして値を検証できません。「[XML Schema Part 0: Primer Second Edition](http://www.w3.org/TR/xmlschema-0/)」では、XSD 正規表現のサポート内容について説明しています。XSD 正規表現と Unicode レベル 1 の正規表現の詳細については、「[Unicode Regular Expressions (英語)](http://www.unicode.org/reports/tr18/)」を参照してください。 
+MSXML 5.0 では、読み込み時に正規表現パターンの検証で問題が生じる場合があります。正規表現は複雑になる場合があるため、慎重に使用する必要があります。XSD パーサーはどれも皆、柔軟な正規表現言語を採用しているように見えますが、それは、公式の XSD 正規表現言語に加えて、他の正規表現言語の要素も実装しているからです。InfoPath のフォーム デザイン ウィンドウで正規表現の解析に問題が生じる場合は、InfoPath で生成されるサンプル データが無効であるか、まったく生成されていないことが考えられます。これはデザイン時には、サンプル データが書式設定にしか使用されないため問題にはなりません。ただし、MSXML がサポートしていない正規表現を使用する場合は、ユーザーがフォームに記入する際に、InfoPath でその正規表現に照らして値を検証できません。「[XML Schema Part 0: Primer Second Edition](https://www.w3.org/TR/xmlschema-0/)」では、XSD 正規表現のサポート内容について説明しています。XSD 正規表現と Unicode レベル 1 の正規表現の詳細については、「[Unicode Regular Expressions (英語)](https://www.unicode.org/reports/tr18/)」を参照してください。 
   
 ## <a name="targetnamespace-attribute-issues"></a>targetNamespace 属性に関する問題
 
 XSD の興味深い点として、 **targetNamespace** 属性では既定で最上位の宣言のみ参照されるが、  `attributeFormDefault=qualified` および  `elementFormDefault=qualified` を設定すると既定の動作を上書き変更できることが挙げられます。例として、次の XSD を想定します。 
   
 ```XML
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ns" > 
+<xsd:schema xmlns:xsd="https://www.w3.org/2001/XMLSchema" targetNamespace="https://ns" > 
     <xsd:element name="root"> 
         <xsd:complexType> 
             <xsd:sequence> 
@@ -399,7 +399,7 @@ XSD の興味深い点として、 **targetNamespace** 属性では既定で最�
 また、XML インスタンス ドキュメントは次の例のようになります。
   
 ```XML
-<ns:root xmlns:ns="http://ns"> 
+<ns:root xmlns:ns="https://ns"> 
     <local/> 
 </ns:root> 
 
@@ -408,7 +408,7 @@ XSD の興味深い点として、 **targetNamespace** 属性では既定で最�
 ローカル定義では、名前空間による修飾は既定で無効なため、ターゲットの名前空間の指定は不要です。ただし、ローカル定義をグローバルに変更する場合は、参照先 (ref) を名前空間プレフィックスで修飾する必要があります。たとえば、次のスキーマは正しくありません。
   
 ```XML
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ns" > 
+<xsd:schema xmlns:xsd="https://www.w3.org/2001/XMLSchema" targetNamespace="https://ns" > 
     <xsd:element name="root"> 
         <xsd:complexType> 
             <xsd:sequence> 
@@ -422,11 +422,11 @@ XSD の興味深い点として、 **targetNamespace** 属性では既定で最�
 
 ```
 
-"global" は名前空間 "http://ns" 内にあるため、このスキーマは正しくありません。既定の名前空間は "http://ns" ではないため、単純に ref="global" と指定しただけでは正しく認識されません。この問題を解決するには、ターゲットの名前空間のプレフィックスを追加し、すべてのグローバル参照と型の使用時にこのプレフィックスを使用する必要があります。修正後のスキーマは次のようになります。
+"global" は名前空間 "https://ns" 内にあるため、このスキーマは正しくありません。既定の名前空間は "https://ns" ではないため、単純に ref="global" と指定しただけでは正しく認識されません。この問題を解決するには、ターゲットの名前空間のプレフィックスを追加し、すべてのグローバル参照と型の使用時にこのプレフィックスを使用する必要があります。修正後のスキーマは次のようになります。
   
 ```XML
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"  
-    xmlns:ns="http://ns" targetNamespace="http://ns" > 
+<xsd:schema xmlns:xsd="https://www.w3.org/2001/XMLSchema"  
+    xmlns:ns="https://ns" targetNamespace="https://ns" > 
     <xsd:element name="root"> 
         <xsd:complexType> 
             <xsd:sequence> 
@@ -510,13 +510,13 @@ XML Schema 勧告における非決定論の定義に基づくと、 **xsd:all**
   
 ## <a name="allowing-rich-text-elements-to-be-bound-in-infopath-design-and-edit-modes"></a>InfoPath のデザイン モードと編集モードでリッチ テキスト要素をバインドできるようにする
 
-**Rich Text Box** コントロールにバインドできるように要素を宣言する場合は、次の例に示すように、namespace 属性を "****" に設定した http://www.w3.org/1999/xhtml 要素を含める必要があります。 
+**Rich Text Box** コントロールにバインドできるように要素を宣言する場合は、次の例に示すように、namespace 属性を "****" に設定した https://www.w3.org/1999/xhtml 要素を含める必要があります。 
   
 ```XML
 <xsd:element name="your_node_name"> 
     <xsd:complexType mixed="true"> 
         <xsd:sequence> 
-            <xsd:any namespace="http://www.w3.org/1999/xhtml"  
+            <xsd:any namespace="https://www.w3.org/1999/xhtml"  
                 minOccurs="0" maxOccurs="unbounded"/> 
         </xsd:sequence> 
     </xsd:complexType> 
@@ -530,10 +530,10 @@ XML Schema 勧告における非決定論の定義に基づくと、 **xsd:all**
   
 ## <a name="see-also"></a>関連項目
 
-- [W3C XML スキーマ](http://www.w3.org/XML/Schema)
-- [W3C XML Schema Primer](http://www.w3.org/TR/xmlschema-0/)
-- [W3C XML Schema Structures Reference (英語)](http://www.xml.com/pub/a/2000/11/29/schemas/structuresref.mdl)
-- [W3C XML Schema Datatypes Reference (英語)](http://www.xml.com/pub/a/2000/11/29/schemas/dataref.mdl)
-- [XML Schema Tutorial (英語)](http://www.w3schools.com/schema/default.asp)
-- [データ プラットフォーム デベロッパー センター (英語)](http://msdn.microsoft.com/ja-JP/xml/default.aspx)
+- [W3C XML スキーマ](https://www.w3.org/XML/Schema)
+- [W3C XML Schema Primer](https://www.w3.org/TR/xmlschema-0/)
+- [W3C XML Schema Structures Reference (英語)](https://www.xml.com/pub/a/2000/11/29/schemas/structuresref.html)
+- [W3C XML Schema Datatypes Reference (英語)](https://www.xml.com/pub/a/2000/11/29/schemas/dataref.html)
+- [XML Schema Tutorial (英語)](https://www.w3schools.com/xml/schema_intro.asp)
+- [データ プラットフォーム デベロッパー センター (英語)](https://msdn.microsoft.com/xml/default.aspx)
 

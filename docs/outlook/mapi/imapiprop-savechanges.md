@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 864dbc3e-2039-435a-a279-385d79d1d13f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: c12750b7899403e62b9c1603615e9fd6caa95eca
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2c8244180a5cafedc887fa72f36f233fb5084f79
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569527"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398844"
 ---
 # <a name="imapipropsavechanges"></a>IMAPIProp::SaveChanges
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 前回の保存操作以降は、オブジェクトに対して行われた変更を永続的になります。 
   
@@ -63,7 +63,7 @@ SPAMFILTER_ONSAVE
   
 > フィルターが保存されているメッセージに迷惑メールを有効に スパムのフィルタ リングのサポートは、送信者の電子メール アドレスの種類は、簡易メール転送プロトコル (SMTP)、メッセージは個人用フォルダー ファイル (PST) のストアに保存されている場合にのみ使用できます。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -81,13 +81,13 @@ MAPI_E_OBJECT_DELETED
   
 > 開かれた後、オブジェクトが削除されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **IMAPIProp::SaveChanges**メソッドでは、プロパティの変更を永続的に処理する場合、メッセージ、添付ファイル、アドレス帳コンテナー、およびメッセージングのユーザー オブジェクトのトランザクション モデルをサポートするオブジェクトになります。 フォルダー、メッセージ ストア、およびプロファイルのセクションなどのトランザクションをサポートしないオブジェクト変更永続的なすぐにします。 **Savechanges メソッド**の呼び出しは必要ありません。 
   
 サービス プロバイダーは、すべてのプロパティが保存されるまで、そのオブジェクトのエントリ id を生成する必要はありません、ためオブジェクトの**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) できない可能性がありますまで、 **SaveChanges**メソッドの後呼び出されました。 プロバイダーによって、KEEP_OPEN_READONLY フラグが設定されるまでの待機、 **SaveChanges**の呼び出しです。 KEEP_OPEN_READONLY は、現在の呼び出しで保存する変更がオブジェクトに対して実行される最後の変更になることを示します。 
   
-メッセージ ストアの実装によって操作を行いますフォルダー内のメッセージは新しく作成された表示しないクライアントまで保存して、メッセージ**SaveChanges**を使用して変更[が](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx)メソッドを使用して、メッセージ オブジェクトを解放します。 さらに、いくつかのオブジェクトの実装を生成できません**PR_ENTRYID**プロパティまでの新しく作成されたオブジェクトの後、 **SaveChanges**が呼び出されると、およびいくつかは、KEEP_OPEN_READONLY を使用して、 **SaveChanges**が呼び出された後にのみ_ulFlags_で設定します。
+メッセージ ストアの実装によって操作を行いますフォルダー内のメッセージは新しく作成された表示しないクライアントまで保存して、メッセージ**SaveChanges**を使用して変更[が](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドを使用して、メッセージ オブジェクトを解放します。 さらに、いくつかのオブジェクトの実装を生成できません**PR_ENTRYID**プロパティまでの新しく作成されたオブジェクトの後、 **SaveChanges**が呼び出されると、およびいくつかは、KEEP_OPEN_READONLY を使用して、 **SaveChanges**が呼び出された後にのみ_ulFlags_で設定します。
   
 ## <a name="notes-to-implementers"></a>実装者へのメモ
 

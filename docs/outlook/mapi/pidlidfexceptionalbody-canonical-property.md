@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 327516e8-ed3f-40fc-9604-03a70aecef5a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7653d7a56302deaad75443746ff7e83834af260f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 93eb98aee19ea3f46a4e01e2c80150c3efe893a5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571361"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393902"
 ---
 # <a name="pidlidfexceptionalbody-canonical-property"></a>PidLidFExceptionalBody 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 例外オブジェクトには、定期的な予定表オブジェクトとは異なるボディ メッセージが埋め込まれていることを示します。
   
@@ -33,9 +33,9 @@ ms.locfileid: "22571361"
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008206  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |会議  <br/> |
+|エリア:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティの値が TRUE の場合は、例外によってオブジェクトには、本体が必要です。 メッセージが埋め込まれています。 このプロパティの値が FALSE の場合、またはプロパティが存在しない場合は、クライアントまたはサーバーする必要があります本体から取得、定期的な予定表オブジェクト。
   
@@ -43,11 +43,11 @@ ms.locfileid: "22571361"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
     

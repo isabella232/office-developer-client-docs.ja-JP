@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 398c141c-8a40-7605-254a-2ee7cc0a7af5
 description: 図面内の 2 つの図形間の各接続の接続の要素が含まれています。
-ms.openlocfilehash: 93930a8f21f9d250bf24d821b0eeb4036f6fe187
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 00bba6be8b32fc2a8e1d996e89c6983e1e61e3a8
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805099"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399957"
 ---
 # <a name="connects-element-pagecontentstype-complextype-visio-xml"></a>要素 (PageContents_Type の複合型) を接続する ('Visio XML')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805099"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml のページで、マスターの # .xml  <br/> |
    

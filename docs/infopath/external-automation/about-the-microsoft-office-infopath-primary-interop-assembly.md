@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 1b3ae03c-6951-49e4-a489-4712d3f7ba72
 description: Visual C# や Visual Basic などのマネージ コード言語を使用して InfoPath ソリューションの作成をサポートするには、InfoPath セットアップ プログラムで [.NET プログラミング サポート] オプションは、次の 3 つの相互運用機能アセンブリをインストールします。
-ms.openlocfilehash: 95c42e4b4fce9d51a0cc97d456c7700a8022013a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 51773ad46b1371c410c4249e13a489f0c5550cd1
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564130"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393356"
 ---
 # <a name="about-the-microsoft-office-infopath-primary-interop-assembly"></a>Microsoft Office InfoPath プライマリ相互運用機能アセンブリについて
 
@@ -27,7 +27,7 @@ InfoPath によってインストールされる 3 つの相互運用アセン�
     
 - Microsoft.Office.Interop.InfoPath.Xml.dll
     
-このトピックでは、Microsoft.Office.Interop.InfoPath の相互運用機能アセンブリによって公開されるオブジェクト モデルについて説明します。これは、外部オートメーション コードでのみ使用されます。InfoPath フォーム テンプレート (.xsn) 内から実行するマネージ コードの作成と実行のためにのみ使用される Microsoft.Office.Interop.InfoPath.SemiTrust アセンブリの詳細については、「[InfoPath 2003 の互換性のあるオブジェクト モデル](http://msdn.microsoft.com/library/e4511af6-d7e7-44ad-a50d-1b7ee04f8215%28Office.15%29.aspx)」を参照してください。
+このトピックでは、Microsoft.Office.Interop.InfoPath の相互運用機能アセンブリによって公開されるオブジェクト モデルについて説明します。これは、外部オートメーション コードでのみ使用されます。InfoPath フォーム テンプレート (.xsn) 内から実行するマネージ コードの作成と実行のためにのみ使用される Microsoft.Office.Interop.InfoPath.SemiTrust アセンブリの詳細については、「[InfoPath 2003 の互換性のあるオブジェクト モデル](https://msdn.microsoft.com/library/e4511af6-d7e7-44ad-a50d-1b7ee04f8215%28Office.15%29.aspx)」を参照してください。
   
 ## <a name="important-installation-information"></a>インストールに関する重要な情報
 

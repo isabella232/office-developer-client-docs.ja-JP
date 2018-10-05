@@ -7,16 +7,16 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 084928ca-efc0-36da-fe4f-5cc45f226178
 description: 会議出席依頼は、メッセージ クラスとして IPM.Schedule.Meeting.Request が設定された電子メールです。 既定では、会議出席依頼を受信した参加者は、その依頼に直接応答します。
-ms.openlocfilehash: 3565b2af03ef79d70fc9f2817c64a788f031c416
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8e7ab7a85d3f9f7c0a67245b8d8ad27442f5c5e4
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799299"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400132"
 ---
 # <a name="about-meeting-requests-as-informational-updates-and-full-updates"></a>情報更新または完全更新としての会議出席依頼について
 
-会議出席依頼は、メッセージ クラスとして **IPM.Schedule.Meeting.Request** が設定された電子メールです。 既定では、会議出席依頼を受信した参加者は、その依頼に直接応答します。 Outlook では、プリンシパル受信者の代わりに会議出席依頼に応答できる代理人を設定できます。 Outlook は、現在の更新状態を識別するために、会議出席依頼の名前付きプロパティ [PidLidMeetingType](http://msdn.microsoft.com/library/290b290c-7836-4a7e-bf1a-8d0225a07e56%28Office.15%29.aspx) をプログラムによって設定します。 
+会議出席依頼は、メッセージ クラスとして **IPM.Schedule.Meeting.Request** が設定された電子メールです。 既定では、会議出席依頼を受信した参加者は、その依頼に直接応答します。 Outlook では、プリンシパル受信者の代わりに会議出席依頼に応答できる代理人を設定できます。 Outlook は、現在の更新状態を識別するために、会議出席依頼の名前付きプロパティ [PidLidMeetingType](https://msdn.microsoft.com/library/290b290c-7836-4a7e-bf1a-8d0225a07e56%28Office.15%29.aspx) をプログラムによって設定します。 
   
 ## <a name="recipients-without-delegates"></a>代理人のいない受信者
 

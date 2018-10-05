@@ -8,20 +8,20 @@ api_type:
 - COM
 ms.assetid: 8aaabe65-b0bc-4481-b00b-16dbe74bd8ae
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 809dbf8cfba447277c28dc72a5370f4bf1071649
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ed8e0b1c7a489411ed3ff0b455a91da6aec697c8
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574905"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399719"
 ---
 # <a name="install-mapi-header-files"></a>MAPI ヘッダー ファイルをインストールします。
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 このトピックでは、入手して、MAPI ヘッダー ファイルとライブラリ ファイルをインストールする方法について説明します。
 
-MAPI ヘッダー ファイルはダウンロードとして利用可能な[Outlook 2010: MAPI ヘッダー ファイル](http://www.microsoft.com/downloads/details.aspx?FamilyID=f8d01fc8-f7b5-4228-baa3-817488a66db1)です。 次のフォルダーに既定では、MAPI のヘッダー ファイルがインストールされている: C:\Program を SDKs\Office\14.0\Include。
+MAPI ヘッダー ファイルはダウンロードとして利用可能な[Outlook 2010: MAPI ヘッダー ファイル](https://www.microsoft.com/downloads/details.aspx?FamilyID=f8d01fc8-f7b5-4228-baa3-817488a66db1)です。 次のフォルダーに既定では、MAPI のヘッダー ファイルがインストールされている: C:\Program を SDKs\Office\14.0\Include。
   
 MAPI ヘッダー ファイルの一覧は、[一般的に使用したヘッダー ファイル](commonly-used-header-files.md)を参照してください。
   
