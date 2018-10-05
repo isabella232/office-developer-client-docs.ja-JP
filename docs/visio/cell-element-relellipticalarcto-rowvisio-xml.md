@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: beaa8860-807e-c8dd-8a59-29cd0f91ba45
 description: X 座標または y 座標、図形の幅と高さを基準にして楕円の円弧の端点の基準にして図形の幅と高さ、角度、楕円の長軸、または間の比率を x 軸から円弧上の x 座標または y 座標のコントロール ポイントを含む、楕円の長軸と短軸の軸です。
-ms.openlocfilehash: 661f6971ca4c03c68950ead45065bd12160918d2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 55e7f664aaab34aa079bafe8f11c57e99fd8a935
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804985"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383157"
 ---
 # <a name="cell-element-relellipticalarcto-row-visio-xml"></a>セル要素 (RelEllipticalArcTo 行) ('Visio XML')
 
@@ -23,7 +23,7 @@ X 座標または y 座標、図形の幅と高さを基準にして楕円の円
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml をマスター、# .xml のページ  <br/> |
    
@@ -60,7 +60,7 @@ X 座標または y 座標、図形の幅と高さを基準にして楕円の円
 |U  <br/> |xsd:string  <br/> |省略可能  <br/> |既定の測定単位を表しますが、DL です。  <br/> |セルの単位です。  <br/> |
 |V  <br/> |xsd:string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプ シート セルの値です。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 この**セル**要素の**N**属性は、限られた一連のシェイプ シートのセルに対応する値のいずれかである必要があります。 この**セル**要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   

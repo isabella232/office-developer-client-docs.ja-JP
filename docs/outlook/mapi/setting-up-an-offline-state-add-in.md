@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 2a326e93-fe8c-e3a5-1e92-30b75b6cb1d2
 description: '�ŏI�X�V��: 2012�N7��5��'
-ms.openlocfilehash: c94e625fc97207e1bc1a2e0797a1ba82ee41fca3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fa3cee9e6b25a9bcb951fbcbfa4435890341a872
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576254"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390962"
 ---
 # <a name="setting-up-an-offline-state-add-in"></a>オフライン状態のアドインを設定します。
 
@@ -23,7 +23,7 @@ ms.locfileid: "22576254"
   
 ## <a name="on-connection-routine"></a>接続ルーチン
 
-**[IDTExtensibility2.OnConnection メソッド](http://msdn.microsoft.com/en-us/library/extensibility.idtextensibility2.onconnection%28v=VS.80%29.aspx)** は、アドインが読み込まれるたびに呼び出されます。 コードを配置するため、アドインのエントリ ポイントは、`OnConnection`関数は、アドインを起動したときに呼び出されます。 次の例で、`OnConnection`関数呼び出し、`HrInitAddin`関数です。 
+**[IDTExtensibility2.OnConnection メソッド](https://msdn.microsoft.com/library/extensibility.idtextensibility2.onconnection%28v=VS.80%29.aspx)** は、アドインが読み込まれるたびに呼び出されます。 コードを配置するため、アドインのエントリ ポイントは、`OnConnection`関数は、アドインを起動したときに呼び出されます。 次の例で、`OnConnection`関数呼び出し、`HrInitAddin`関数です。 
   
 ### <a name="cmyaddinonconnection-example"></a>CMyAddin::OnConnection() の使用例
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: bfb7fd1e-774f-9a2f-fbbe-ba7f68ed8663
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cba4989ec3b1afcadb0caddd4af444cc9c96ebda
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9a131c633b8dcf9b0e5070f01de8fcab90a18ade
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565957"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384200"
 ---
 # <a name="pidlidcustomflag-canonical-property"></a>PidLidCustomFlag 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 指定するビットマスク メッセージは、カスタマイズ方法、たとえば、カスタム プロパティを保存します。
   
@@ -35,7 +35,7 @@ ms.locfileid: "22565957"
 |長い ID (LID):  <br/> |0x00008251  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティの値を取得するには、まず**[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)** を使用して、プロパティ タグを取得して値を取得する**[IMAPIProp::GetProps](imapiprop-getprops.md)** でこのプロパティのタグを指定します。 
   
@@ -62,7 +62,7 @@ ms.locfileid: "22565957"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義を提供します。
     

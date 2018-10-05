@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: cc86505c-e264-435f-ae21-4a10f0bbf082
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 927710f3530fd95cc1c1ba548870c1058ad7a819
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ed3d84667d7be9c06d0ddf4d896b8888694edc12
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567434"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384993"
 ---
 # <a name="pidtagoriginalsenderemailaddress-canonical-property"></a>PidTagOriginalSenderEmailAddress 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 転送または返信する前にメッセージは、メッセージの最初のバージョンの送信者の電子メール アドレスが含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22567434"
 |関連するプロパティ:  <br/> |PR_ORIGINAL_SENDER_EMAIL_ADDRESS、PR_ORIGINAL_SENDER_EMAIL_ADDRESS_A、PR_ORIGINAL_SENDER_EMAIL_ADDRESS_W  <br/> |
 |識別子:  <br/> |0x0067  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 これらのプロパティでは、メッセージの元の送信者のアドレスのプロパティの例を示します。 メッセージの最初の提出書類は、クライアント アプリケーションは、 **PR_SENDER_EMAIL_ADDRESS** ([PidTagSenderEmailAddress](pidtagsenderemailaddress-canonical-property.md)) の値にこのプロパティを設定する必要があります。 メッセージを転送または返信するときは変更されません。
   
@@ -42,11 +42,11 @@ ms.locfileid: "22567434"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
     

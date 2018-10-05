@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d2dfaeed-7635-4c6b-9c35-b955ca1a85e9
 description: Outlook ソーシャル コネクタ (OSC) プロバイダーをデバッグするいくつかの方法があります。
-ms.openlocfilehash: ada439ca3b038ca9a0e849b47ff6a5f54e5016f2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 39deb7b6c0b11460826bdbf1957ffd8404d926e5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804337"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386853"
 ---
 # <a name="debugging-a-provider"></a>プロバイダーのデバッグ
 
@@ -39,7 +39,7 @@ Outlook 2010 と Office 2013 以降のクライアント アプリケーショ�
   
 次の表では、デバッグ ボタンについて説明します。
   
-|**デバッグ ボタン**|**�֐�**|
+|**デバッグ ボタン**|**関数**|
 |:-----|:-----|
 |連絡先を同期します。  <br/> |キャッシュされた取引先担当者の OSC プロバイダーに確認するのには OSC が発生します。  <br/> |
 |グローバル アドレス一覧の同期  <br/> |Exchange のグローバル アドレス一覧から Outlook の連絡先にデータを設定するのには OSC が発生します。  <br/> |
@@ -47,7 +47,7 @@ Outlook 2010 と Office 2013 以降のクライアント アプリケーショ�
    
 ## <a name="fiddler"></a>Fiddler
 
-Fiddler は、API の呼び出しは、プロバイダーから、ソーシャル ネットワークに送信されると、プロバイダー、ソーシャル ネットワークから送信された XML を確認するのには、ワイヤ上のデバッグ ツールです。 Fiddler では、 [Fiddler Web デバッグ プロキシ](http://www.fiddler2.com/fiddler2/version.asp)からダウンロードできます。
+Fiddler は、API の呼び出しは、プロバイダーから、ソーシャル ネットワークに送信されると、プロバイダー、ソーシャル ネットワークから送信された XML を確認するのには、ワイヤ上のデバッグ ツールです。 Fiddler では、 [Fiddler Web デバッグ プロキシ](https://www.fiddler2.com/fiddler2/version.asp)からダウンロードできます。
   
 ## <a name="see-also"></a>関連項目
 

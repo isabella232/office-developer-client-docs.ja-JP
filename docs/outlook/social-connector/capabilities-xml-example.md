@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ae1abafe-160c-47c0-b4d5-4a689c8c4cb1
 description: ここでの XML の例は、ソーシャル ネットワークの ISocialProvider::GetCapabilities メソッドが呼び出された後に、Outlook ソーシャル コネクタ (OSC) が返される XML 文字列です。 XML は、その機能や、OSC の要件に、OSC プロバイダーを指定する方法を示しています。
-ms.openlocfilehash: 5cafd6d29de8b4357e9e0ce6dab30b125f53b8ca
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 53bd250432e7b27d984a846d206adc812c47898f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804335"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389548"
 ---
 # <a name="capabilities-xml-example"></a>機能 XML の例
 
@@ -65,7 +65,7 @@ OSC プロバイダーの XML**機能**の例を次に示します。
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
-<capabilities xmlns="http://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd">
+<capabilities xmlns="https://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd">
   <getFriends>true</getFriends>
   <cacheFriends>true</cacheFriends>
   <followPerson>true</followPerson>
@@ -81,8 +81,8 @@ OSC プロバイダーの XML**機能**の例を次に示します。
   <dynamicContactsLookup>false</dynamicContactsLookup>
   <useLogonCached>false</useLogonCached>
   <hideRememberMyPassword>false</hideRememberMyPassword>
-  <createAccountUrl>http://contoso.com/createAccount</createAccountUrl>
-  <forgotPasswordUrl>http://contoso.com/forgotPassword</forgotPasswordUrl>
+  <createAccountUrl>https://contoso.com/createAccount</createAccountUrl>
+  <forgotPasswordUrl>https://contoso.com/forgotPassword</forgotPasswordUrl>
 </capabilities>
 
 ```

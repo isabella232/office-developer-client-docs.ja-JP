@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 4fe207e9-a77f-46b9-b51d-d989847a9d02
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b15dd467b7418ea10d384183dc32284924a90212
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9572a053182aaa59020a6816736b8a4b92e778b7
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581077"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383836"
 ---
 # <a name="pidtagcontentunreadcount-canonical-property"></a>PidTagContentUnreadCount 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージ ・ ストアによって計算される、フォルダー内の未読メ ッ セージの数が含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22581077"
 |関連するプロパティ:  <br/> |PR_CONTENT_UNREAD  <br/> |
 |識別子:  <br/> |0x3603  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |Folder  <br/> |
+|エリア:  <br/> |Folder  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 関連は、目的が異なる、2 つのメッセージ ・ ストアによって計算されるこのプロパティが使用されます。 MAPI フォルダーのオブジェクトでは、フォルダー内のメッセージの数が含まれます。 カテゴリ別の MAPI テーブル内の見出し行には見出し行に対応するカテゴリ内の関連付けられていない未読メ ッ セージの数が含まれています。
   
@@ -46,15 +46,15 @@ ms.locfileid: "22581077"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Microsoft Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCFOLD]](http://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
+[[MS OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
   
 > フォルダーの操作を処理します。
     
-[[MS OXCTABL]](http://msdn.microsoft.com/library/d33612dc-36a8-4623-8a26-c156cf8aae4b%28Office.15%29.aspx)
+[[MS OXCTABL]](https://msdn.microsoft.com/library/d33612dc-36a8-4623-8a26-c156cf8aae4b%28Office.15%29.aspx)
   
 > テーブルのコア オブジェクトに許容される操作が含まれます。
     

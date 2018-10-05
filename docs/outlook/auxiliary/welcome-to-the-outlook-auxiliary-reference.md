@@ -7,22 +7,22 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 2e48a625-b3f7-9fd0-253e-fe12a1aca446
 description: Outlook の補助リファレンスには、概念的なコンテンツ、Api、コード サンプル、および開発者を拡張し、Outlook との統合に使用できる再配布可能インストーラーの 4 つのセットのリファレンス ドキュメントが含まれています。 このリファレンスの Api は、機能拡張には、Outlook オブジェクト モデルの外部では、Outlook によって公開されます。
-ms.openlocfilehash: 5f289a1be8fe5d10ddac37394c940f2627415136
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 445d35c12e4c8984d47adcef3ecf50ebd881875b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799591"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384557"
 ---
 # <a name="welcome-to-the-outlook-auxiliary-reference"></a>Outlook の補助リファレンスへようこそ
 
 Outlook の補助リファレンスには、概念的なコンテンツ、Api、コード サンプル、および開発者を拡張し、Outlook との統合に使用できる再配布可能インストーラーの 4 つのセットのリファレンス ドキュメントが含まれています。 このリファレンスの Api は、機能拡張には、Outlook オブジェクト モデルの外部では、Outlook によって公開されます。 
   
-Outlook ソリューションの開発に慣れていない場合は、Api とお客様のニーズに最も適したテクノロジを識別する[、API または Outlook のソリューションを開発するためのテクノロジを選択する](../selecting-an-api-or-technology-for-developing-solutions-for-outlook.md)を参照してください。 
+Outlook のソリューションを開発するのが初めての場合は、「[Outlook 用のソリューションを開発するための API またはテクノロジの選択](../selecting-an-api-or-technology-for-developing-solutions-for-outlook.md)」を参照し、必要に応じて適切な API とテクノロジを特定します。 
 
-Outlook オブジェクト モデルの詳細については、 [Outlook の VBA リファレンス](http://msdn.microsoft.com/library/75e4ad96-62a2-49d2-bc51-48ceab50634c%28Office.15%29.aspx)を参照してください。 
+Outlook オブジェクト モデルの詳細については、 [Outlook の VBA リファレンス](https://msdn.microsoft.com/library/75e4ad96-62a2-49d2-bc51-48ceab50634c%28Office.15%29.aspx)を参照してください。 
 
-固有の情報について Messaging API (MAPI) Outlook でサポートされている[Outlook MAPI のリファレンス](http://msdn.microsoft.com/library/3d980b86-7001-4869-9780-121c6bfc7275%28Office.15%29.aspx)を参照してください。
+固有の情報について Messaging API (MAPI) Outlook でサポートされている[Outlook MAPI のリファレンス](https://msdn.microsoft.com/library/3d980b86-7001-4869-9780-121c6bfc7275%28Office.15%29.aspx)を参照してください。
 
 ## <a name="conceptual"></a>概念 
 
@@ -44,7 +44,7 @@ Outlook オブジェクト モデルの詳細については、 [Outlook の VBA
     
 - [情報更新および完全な更新としての会議出席依頼について](about-meeting-requests-as-informational-updates-and-full-updates.md)
     
-- [夏時間のプログラムを使用して予定表を再配置について](about-rebasing-calendars-programmatically-for-daylight-saving-time.md)(インストーラーが用意されても、再配布可能なサード ・ パーティの予定表の再配置ツールの以前のバージョンの Outlook にも、Outlook 2010 以降です。 インストーラーをダウンロードするを参照してください[Outlook 2010: 補助型の参照の再頒布可能なインストーラーと再配置の予定表のヘッダー ファイル](http://www.microsoft.com/downloads/details.aspx?FamilyID=77748863-4352-4b99-ae57-1d4ae803983b)。)。
+- [夏時間のプログラムを使用して予定表を再配置について](about-rebasing-calendars-programmatically-for-daylight-saving-time.md)(インストーラーが用意されても、再配布可能なサード ・ パーティの予定表の再配置ツールの以前のバージョンの Outlook にも、Outlook 2010 以降です。 インストーラーをダウンロードするを参照してください[Outlook 2010: 補助型の参照の再頒布可能なインストーラーと再配置の予定表のヘッダー ファイル](https://www.microsoft.com/downloads/details.aspx?FamilyID=77748863-4352-4b99-ae57-1d4ae803983b)。)。
     
 - [バイナリ プロパティにコミットするためにストリームに TZDEFINITION を保持することについて](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
 
@@ -72,7 +72,7 @@ Outlook 補助リファレンスに関する「方法」タスクの例を以下
     
 - [予定からタイム ゾーンのプロパティを読み取る](how-to-read-time-zone-properties-from-an-appointment.md)
     
-- [Outlook (Outlook の補助リファレンス) で、連絡先の画像を表示するかどうかを指定](https://msdn.microsoft.com/en-us/library/office/gg262879.aspx)
+- [Outlook (Outlook の補助リファレンス) で、連絡先の画像を表示するかどうかを指定](https://msdn.microsoft.com/library/office/gg262879.aspx)
     
 - [空き時間情報データにアクセスするのに相対時間を使用する](how-to-use-relative-time-to-access-free-busy-data.md)
     

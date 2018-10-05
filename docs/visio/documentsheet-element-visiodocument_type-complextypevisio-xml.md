@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 9b8673e1-b913-52db-2d1d-b3e8f4b8f952
 description: DocumentSheet 構造体を指定します。
-ms.openlocfilehash: 50332759ff3bbe94887371d48c4a2e729243fb32
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a2594e0325cc2743036a03998eb7ac71ed2183c8
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805275"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383465"
 ---
 # <a name="documentsheet-element-visiodocumenttype-complextype-visio-xml"></a>DocumentSheet 要素 (VisioDocument_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ DocumentSheet 構造体を指定します。
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[DocumentSheet_Type](documentsheet_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
    

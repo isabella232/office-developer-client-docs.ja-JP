@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 440d61c4-b69a-4010-a22b-0c9c5c376fbc
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 4ee17799fc42faf383461af7eed9d700d17b868e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9172d4956e78ac31cd15d69e70d05c127a474ca5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582386"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387635"
 ---
 # <a name="imslogonunadvise"></a>IMSLogon::Unadvise
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 [IMSLogon::Advise](imslogon-advise.md)メソッドへの呼び出しを使用して、以前に確立されたメッセージ ストアの変更を通知するためのオブジェクトの登録を削除します。 
   
@@ -39,7 +39,7 @@ HRESULT Unadvise(
   
 > [in]**IMSLogon::Advise**への呼び出しによって返された登録接続の数です。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -47,7 +47,7 @@ S_OK
     
 ## <a name="remarks"></a>����
 
-メッセージ ストア プロバイダーの実装**IMSLogon::Advise**、それによって通知をキャンセルするのには、以前の呼び出しで_lpAdviseSink_パラメーターで渡されたアドバイズ シンク オブジェクトへのポインターを解放する**IMSLogon::Unadvise**メソッド登録します。 アドバイズ シンク オブジェクトへのポインターを破棄することの一環として、オブジェクト[が](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx)呼び出されます。 一般に、**リリース**と呼ばれる**Unadvise**の呼び出し中にします。 ただし、別のスレッドがアドバイズ シンク オブジェクトの[IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出すことであるにある場合は、**リリース**の呼び出しが遅延**OnNotify**メソッドが戻るまで。 
+メッセージ ストア プロバイダーの実装**IMSLogon::Advise**、それによって通知をキャンセルするのには、以前の呼び出しで_lpAdviseSink_パラメーターで渡されたアドバイズ シンク オブジェクトへのポインターを解放する**IMSLogon::Unadvise**メソッド登録します。 アドバイズ シンク オブジェクトへのポインターを破棄することの一環として、オブジェクト[が](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)呼び出されます。 一般に、**リリース**と呼ばれる**Unadvise**の呼び出し中にします。 ただし、別のスレッドがアドバイズ シンク オブジェクトの[IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出すことであるにある場合は、**リリース**の呼び出しが遅延**OnNotify**メソッドが戻るまで。 
   
 ## <a name="see-also"></a>関連項目
 

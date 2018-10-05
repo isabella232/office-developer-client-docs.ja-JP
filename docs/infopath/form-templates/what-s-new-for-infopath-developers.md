@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: d0ad3111-bd41-4f35-8a34-62c17f20fc19
 description: InfoPath を使用すると、Microsoft SharePoint Server プラットフォームで充実したフォーム ベースのアプリケーションを簡単に構築できます。Microsoft SharePoint Server 2013 および InfoPath Forms Services と連携する Microsoft InfoPath 2013 には、開発者向けのさまざまな機能が用意されています。SharePoint Server 2013 で利用できる InfoPath Forms Services により、InfoPath フォーム テンプレートを SharePoint Server に展開できるため、InfoPath リッチ クライアントをインストールしていないユーザーは Web ブラウザーで InfoPath フォームを開いて入力できます。
-ms.openlocfilehash: a11c6b4018e60a470197ecd7ffdf3b79a13658b9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5d469dfb99290054008271867f24d947a42efeee
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799223"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385152"
 ---
 # <a name="whats-new-for-infopath-developers"></a>InfoPath 開発者向けの新機能
 
@@ -45,7 +45,7 @@ InfoPath 2013 を使用して作成されたフォーム テンプレートで�
     
 ## <a name="new-way-to-write-and-edit-code"></a>コードを作成および編集する新しい方法
 
-InfoPath 2013 では、InfoPath 2010 と統合されていた Microsoft Visual Studio Tools for Applications IDE が削除されました。InfoPath 2013 でフォーム コードを作成または編集するには、[Microsoft Visual Studio Tools for Applications 2012](http://www.microsoft.com/en-us/download/details.aspx?id=38807) アドオンがインストールされた Visual Studio 2012 が必要となります。プログラミング作業自体は基本的に変わっていませんが、InfoPath フォームのマネージ コードを作成する際に Visual Studio での開発経験を最大限に活用できるようになりました。 
+InfoPath 2013 では、InfoPath 2010 と統合されていた Microsoft Visual Studio Tools for Applications IDE が削除されました。InfoPath 2013 でフォーム コードを作成または編集するには、[Microsoft Visual Studio Tools for Applications 2012](https://www.microsoft.com/en-us/download/details.aspx?id=38807) アドオンがインストールされた Visual Studio 2012 が必要となります。プログラミング作業自体は基本的に変わっていませんが、InfoPath フォームのマネージ コードを作成する際に Visual Studio での開発経験を最大限に活用できるようになりました。 
   
 以下のセクションでは、InfoPath 2010 と SharePoint Server 2010 で初めて追加され、InfoPath 2013 と SharePoint Server 2013 を使用する開発者にとって付加価値となる機能について説明します。
   
@@ -63,7 +63,7 @@ InfoPath を使用して、SharePoint リスト内のアイテムの作成、編
   
 ## <a name="host-forms-on-portal-pages-using-the-infopath-form-web-part"></a>InfoPath フォーム Web パーツを使用したポータル ページ上でのフォームのホスト
 
-SharePoint Server 2013 では、新しい **InfoPath フォーム Web パーツ**を使用して、これまでよりも簡単に Web ページ上でフォームをホストできます。 Microsoft Office SharePoint Server 2007 では、ユーザーが Visual Studio でコードを記述しなければ、InfoPath フォームを Web ページでホストすることはできません。 現在、コードを 1 行も作成せずに、**InfoPath フォーム Web パーツ**を使用して SharePoint リストやフォーム ライブラリに発行する任意の InfoPath ブラウザー フォームをホストできるようになっています。それには、**InfoPath フォーム Web パーツ**を Web パーツのページに追加して、そのパーツで発行済みフォームを指せばよいだけです。 また、InfoPath フォーム Web パーツをページ上の他の Web パーツに接続して、データを送受信することもできます。 **InfoPath フォーム Web パーツ**の使用方法の詳細については、SharePoint 2010 SDK の「[InfoPath フォーム Web パーツの使用](http://msdn.microsoft.com/library/bb87e126-1a07-45aa-af36-b294df3a2576%28Office.15%29.aspx)」を参照してください。 
+SharePoint Server 2013 では、新しい **InfoPath フォーム Web パーツ**を使用して、これまでよりも簡単に Web ページ上でフォームをホストできます。 Microsoft Office SharePoint Server 2007 では、ユーザーが Visual Studio でコードを記述しなければ、InfoPath フォームを Web ページでホストすることはできません。 現在、コードを 1 行も作成せずに、**InfoPath フォーム Web パーツ**を使用して SharePoint リストやフォーム ライブラリに発行する任意の InfoPath ブラウザー フォームをホストできるようになっています。それには、**InfoPath フォーム Web パーツ**を Web パーツのページに追加して、そのパーツで発行済みフォームを指せばよいだけです。 また、InfoPath フォーム Web パーツをページ上の他の Web パーツに接続して、データを送受信することもできます。 **InfoPath フォーム Web パーツ**の使用方法の詳細については、SharePoint 2010 SDK の「[InfoPath フォーム Web パーツの使用](https://msdn.microsoft.com/library/bb87e126-1a07-45aa-af36-b294df3a2576%28Office.15%29.aspx)」を参照してください。 
   
 ## <a name="richer-web-forms"></a>さらに豊富になった Web フォーム
 

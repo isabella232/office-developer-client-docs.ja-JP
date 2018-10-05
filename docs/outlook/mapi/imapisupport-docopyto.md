@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 84019475-5176-4fc5-a3ee-871095077498
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5ce5aa8c43e284b493a0709808a196c6c6889f88
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6f6c802f1d5ead1750c05fafc54533487fe3732a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592109"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390633"
 ---
 # <a name="imapisupportdocopyto"></a>IMAPISupport::DoCopyTo
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 明確に除外されたプロパティを 1 つのオブジェクトのすべてのプロパティを別のオブジェクトを移動またはコピーします。
   
@@ -101,7 +101,7 @@ MAPI_NOREPLACE
   
 > [out][SPropProblemArray](spropproblemarray.md)構造体へのポインターへのポインターの入力でそれ以外の場合、NULL、エラー情報の必要性を示すしません。 _LppProblems_が入力時に有効なポインターである場合は、 **DoCopyTo**は、1 つまたは複数のプロパティのコピーでエラーに関する詳細な情報を返します。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -145,7 +145,7 @@ MAPI_E_UNEXPECTED_TYPE
   
 > プロパティの型は、呼び出し元の型ではありません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 メッセージ ストア プロバイダーのサポート オブジェクトの**IMAPISupport::DoCopyTo**メソッドを実装します。 メッセージ ストア プロバイダーは、そのフォルダーとメッセージの[IMAPIProp::CopyTo](imapiprop-copyto.md)メソッドを実装するために**DoCopyTo**を呼び出すことができます。 
   
@@ -171,7 +171,7 @@ _LpDestInterface_で受け入れ可能なインタ フェース識別子が_lpDe
   
 逆に、コピーまたは移動する必要がありますはない補足的な情報に注意してください場合は、 _rgiidExclude_パラメーターに渡される配列に除外するインターフェイスのインターフェイス識別子を追加します。 たとえば、コピーする場合は、メッセージが、メッセージの添付ファイルのいずれかのない、 _rgiidExclude_配列の IID_IMessage を渡します。 **DoCopyTo**では、認識されない_rgiidExclude_に記載されているすべてのインタ フェースを無視します。 
   
-インタ フェースを除外するのには、 _rgiidExclude_パラメーターを使用する場合も、そのインターフェイスから派生するすべてのインタ フェースを除外します。 などの[IMAPIContainer](imapicontainerimapiprop.md)インタ フェースを除外すると、フォルダーまたはプロバイダーの種類によって、除外するアドレス帳のコンテナー。 非常に多くのインターフェイスは、それらから派生するために[IMAPIProp](imapipropiunknown.md)または[IUnknown](http://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx)を除外しません。 
+インタ フェースを除外するのには、 _rgiidExclude_パラメーターを使用する場合も、そのインターフェイスから派生するすべてのインタ フェースを除外します。 などの[IMAPIContainer](imapicontainerimapiprop.md)インタ フェースを除外すると、フォルダーまたはプロバイダーの種類によって、除外するアドレス帳のコンテナー。 非常に多くのインターフェイスは、それらから派生するために[IMAPIProp](imapipropiunknown.md)または[IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx)を除外しません。 
   
  **DoCopyTo**では、全体として操作に適用されるグローバル エラーと個々 のプロパティに適用される個々 のエラーを報告します。 これらの個々 のエラーは、 **SPropProblemArray**構造体に配置されます。 プロパティ問題配列構造体パラメーターに有効なポインターではなく NULL を渡すことにより、プロパティ レベルでレポートのエラーを抑制できます。 
   

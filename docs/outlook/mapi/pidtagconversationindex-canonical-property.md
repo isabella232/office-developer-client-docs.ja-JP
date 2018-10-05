@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: c65cdda7-9515-4da9-be75-43ebf45a02df
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 77fee834108a603c1cd10e8e47776cc34fd75a2b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c6fa0d8f1323e8562a78080f50dbf448b8019ec2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584169"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383626"
 ---
 # <a name="pidtagconversationindex-canonical-property"></a>PidTagConversationIndex 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 会話スレッド内でこのメッセージの相対的な位置を示すバイナリ値が含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22584169"
 |関連するプロパティ:  <br/> |PR_CONVERSATION_INDEX  <br/> |
 |識別子:  <br/> |0x0071  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 会話スレッドは、メッセージと返信の系列を表します。 通常連結されたタイムスタンプ値を使用してこのプロパティが実装されます。 **PR_CONVERSATION_TOPIC** ([PidTagConversationTopic](pidtagconversationtopic-canonical-property.md)) が設定されている場合でもの使用はオプションですが。 
   
@@ -48,11 +48,11 @@ MAPI には、作成または会話のインデックスを更新する[ScCreate
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
     

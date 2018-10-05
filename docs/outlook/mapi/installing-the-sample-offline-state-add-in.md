@@ -6,24 +6,24 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e1b6ae6c-dcf2-a07f-c417-3a1049b758ad
 description: '最終更新日: 2012 年 7 月 6 日'
-ms.openlocfilehash: 7616c3a6077b9354cda7046c0949e7c5553f6551
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b7b9ce539537e0759020ef7e3b4f6541a940d6fd
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586838"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389198"
 ---
 # <a name="installing-the-sample-offline-state-add-in"></a>サンプルのオフライン状態アドインのインストール
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 このトピックでは、ダウンロードしてオフライン状態のサンプル アドインをインストールする手順について説明します。 オフライン状態のサンプル アドインは、COM アドインを Outlook に、**オフライン状態**のメニューを追加し、オフライン状態 API を利用してします。 [オフラインの状態] メニューを有効にするまたは状態の監視を無効にする現在の状態を確認して現在の状態を変更します。 オフライン状態のアドインを実装する方法の詳細については、[アドインの設定をオフラインの状態](setting-up-an-offline-state-add-in.md)を参照してください。
   
 ## <a name="install-the-sample-offline-state-add-in"></a>サンプル オフライン状態アドインのインストールします。
 
-1. オフライン状態のサンプル アドインは、ここをダウンロード: [Outlook 2007 補助リファレンス コード サンプルおよび再頒布可能なインストーラー](http://www.microsoft.com/en-us/download/details.aspx?id=24102)です。
+1. オフライン状態のサンプル アドインは、ここをダウンロード: [Outlook 2007 補助リファレンス コード サンプルおよび再頒布可能なインストーラー](https://www.microsoft.com/en-us/download/details.aspx?id=24102)です。
     
 2. 管理者として Visual Studio 2005 を実行します。
     

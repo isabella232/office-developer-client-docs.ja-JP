@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3131bfbb-9bf6-d15d-c6ca-2f15bd038f39
 description: DocumentSheet、スタイル シート、PageSheet、または [シェイプ シート内に組み込むことができるセル要素を指定します。
-ms.openlocfilehash: 68ea20f3b2a9bebae3d8f6d12e0d818e30685710
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a48e440e40659209fe3a9fd30587204e3ad724ff
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575631"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391473"
 ---
 # <a name="cell-element-visio-xml"></a>セル要素 ' Visio XML (')
 
@@ -23,7 +23,7 @@ DocumentSheet、スタイル シート、PageSheet、または [シェイプ シ
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml、pages.xml、masters.xml、マスターの # .xml、ページ番号の .xml  <br/> |
    
@@ -62,7 +62,7 @@ DocumentSheet、スタイル シート、PageSheet、または [シェイプ シ
 |U  <br/> |xsd:string  <br/> |省略可能  <br/> |既定の測定単位を表しますが、DL です。  <br/> |セルの単位です。  <br/> |
 |V  <br/> |xsd:string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |**シェイプ シート**セルの値です。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 この**セル**要素の**N**属性は、限られた一連のシェイプ シートのセルに対応する値のいずれかである必要があります。 この**セル**要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   

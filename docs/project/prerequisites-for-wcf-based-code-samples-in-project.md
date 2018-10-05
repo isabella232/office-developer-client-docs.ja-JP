@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 60d2afc8-10b6-465d-8ce8-c073da6e5054
 description: プロジェクト Server インターフェイス (PSI) のリファレンス トピックに含まれている WCF ベースのコード サンプルを使用して Visual Studio でプロジェクトを作成するための情報について説明します。
-ms.openlocfilehash: 43700a9db4445dacf366c7ca2efe1bfb10914372
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2222e1b3651044c41f45e57481f80093aac67bdb
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804686"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383381"
 ---
 # <a name="prerequisites-for-wcf-based-code-samples-in-project"></a>プロジェクト内の WCF ベースのコード サンプルの前提条件
 
 プロジェクト Server インターフェイス (PSI) のリファレンス トピックに含まれている WCF ベースのコード サンプルを使用して Visual Studio でプロジェクトを作成するための情報について説明します。
    
-の[Project Server 2013 のクラス ライブラリと web サービスの参照](http://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)に含まれている WCF ベースのコード サンプルの多くは、Project 2010 の開発者向けのドキュメント用に作成され、WCF web サービスの標準的な形式を使用します。 まだサンプルは、Project Server 2013 での作業し、コンソール アプリケーションにコピーし、完全な単位として実行するように設計されています。 サンプルで例外が記載されています。 
+の[Project Server 2013 のクラス ライブラリと web サービスの参照](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)に含まれている WCF ベースのコード サンプルの多くは、Project 2010 の開発者向けのドキュメント用に作成され、WCF web サービスの標準的な形式を使用します。 まだサンプルは、Project Server 2013 での作業し、コンソール アプリケーションにコピーし、完全な単位として実行するように設計されています。 サンプルで例外が記載されています。 
   
 Office Project Server 2007 用に開発されたサンプルから変更されていない、Project 2013 開発者向けのドキュメントでのコード サンプルでは、ASMX Web サービスを使用します。 ASMX ベースのサンプルは、WCF サービスの使用に適合させることができます。 この資料では、WCF サービスを使用してサンプルを使用する方法を示します。 ASMX web サービスのサンプルを使用する方法の詳細については、[プロジェクト内の ASMX ベースのコード サンプルの前提条件](prerequisites-for-asmx-based-code-samples-in-project.md)を参照してください。
   
@@ -168,11 +168,11 @@ PSI サービスのプロキシ ファイルを追加または WCF ベースの�
     
 2. **ソリューション エクスプローラー**で、[**参照設定**] フォルダーを右クリックし、[**サービス参照の追加**] をクリックします。 
     
-3. [**サービス参照の追加**] ダイアログ ボックスの [**アドレス**] テキスト ボックスに、入力http://localhost:32843//psi/ _ServiceName_.svc の_GUID_、し、 **Enter**キーを押します。 _GUID_を 534c37eb00d74ccfadcecf9827e95239 など、Project Server サービス アプリケーションの仮想ディレクトリ名に置き換えます。 リソースなど、サービスの名前と_アドレス_を交換して (図 3 を参照してください)。 
+3. [**サービス参照の追加**] ダイアログ ボックスの [**アドレス**] テキスト ボックスに、入力https://localhost:32843//psi/ _ServiceName_.svc の_GUID_、し、 **Enter**キーを押します。 _GUID_を 534c37eb00d74ccfadcecf9827e95239 など、Project Server サービス アプリケーションの仮想ディレクトリ名に置き換えます。 リソースなど、サービスの名前と_アドレス_を交換して (図 3 を参照してください)。 
     
    Project Server Service 仮想ディレクトリの名前は、以下のどちらかの方法で取得できます。
     
-   - お使いのブラウザーでは、SharePoint 2013 のサーバーの管理アプリケーションを開きます。 **サービス アプリケーションの管理**を選択し、使用する Project Server の PSI サービス アプリケーションを選択します。 たとえば、 **ProjectServerService**を選択します。 Project Web App サイトの管理] ページの URL には、仮想ディレクトリ名が含まれています。 たとえば、 `http://ServerName:8080/_admin/pwa/managepwa.aspx?appid=534c37eb-00d7-4ccf-adce-cf9827e95239`、仮想ディレクトリ名は、 `534c37eb00d74ccfadcecf9827e95239` (ディレクトリ名にハイフンが含まれていません)。 
+   - お使いのブラウザーでは、SharePoint 2013 のサーバーの管理アプリケーションを開きます。 **サービス アプリケーションの管理**を選択し、使用する Project Server の PSI サービス アプリケーションを選択します。 たとえば、 **ProjectServerService**を選択します。 Project Web App サイトの管理] ページの URL には、仮想ディレクトリ名が含まれています。 たとえば、 `https://ServerName:8080/_admin/pwa/managepwa.aspx?appid=534c37eb-00d7-4ccf-adce-cf9827e95239`、仮想ディレクトリ名は、 `534c37eb00d74ccfadcecf9827e95239` (ディレクトリ名にハイフンが含まれていません)。 
     
    - Project Server コンピューターで [**インターネット インフォメーション サービス (IIS) マネージャー**] ダイアログ ボックスを開きます。[**接続**] ウィンドウの [**SharePoint Web サービス**] ノードを展開し、PSI フォルダーを含むディレクトリが見つかるまで、その下位にあるサービス仮想ディレクトリを展開していきます。見つかったディレクトリを選択し、[**操作**] ウィンドウの [**詳細設定**] をクリックして、そのディレクトリ名を [**仮想パス**] フィールドにコピーします。 
     
@@ -205,7 +205,7 @@ PSI サービスのプロキシ ファイルを追加または WCF ベースの�
       > [!NOTE]
       > GUID からダッシュを削除すると仮想ディレクトリ名になります。 
   
-   Url など、`http://localhost:32843/534c37eb00d74ccfadcecf9827e95239/PSI/Resource.svc`は、Project Server サービスの標準的な。 
+   Url など、`https://localhost:32843/534c37eb00d74ccfadcecf9827e95239/PSI/Resource.svc`は、Project Server サービスの標準的な。 
     
 4. サービス参照が解決した後は、 **Namespace** ] テキスト ボックスに参照名を入力します。 Project 2013 開発者向けドキュメントのコード例では、任意の名前空間の名前**サービスの_アドレス_** を使用します。 たとえば、リソース サービスのコード例では**SvcResource**という名前します。
     
@@ -232,16 +232,16 @@ PSI サービスのプロキシ ファイルを追加または WCF ベースの�
 ## <a name="adding-a-service-configuration-file"></a>サービス構成ファイルを追加する
 <a name="pj15_PrerequisitesWCF_AddConfig"> </a>
 
-アプリケーションがプログラムによって WCF サービスを構成する場合、サービス構成ファイルは使用されません。それ以外の場合、Windows アプリケーションまたはコンソール アプリケーションでは app.config ファイルの **system.serviceModel** 要素を使用し、Web アプリケーションでは web.config ファイルの **system.serviceModel** をインクルードします。app.config ファイルの使用方法や、WCF サービスをプログラムで構成する方法については、「[[ウォークスルー] WCF を使用して PSI アプリケーションを開発する](http://msdn.microsoft.com/library/65707234-c3da-44e4-8364-32a6be28f645%28Office.15%29.aspx)」を参照してください。
+アプリケーションがプログラムによって WCF サービスを構成する場合、サービス構成ファイルは使用されません。それ以外の場合、Windows アプリケーションまたはコンソール アプリケーションでは app.config ファイルの **system.serviceModel** 要素を使用し、Web アプリケーションでは web.config ファイルの **system.serviceModel** をインクルードします。app.config ファイルの使用方法や、WCF サービスをプログラムで構成する方法については、「[[ウォークスルー] WCF を使用して PSI アプリケーションを開発する](https://msdn.microsoft.com/library/65707234-c3da-44e4-8364-32a6be28f645%28Office.15%29.aspx)」を参照してください。
   
 サービス プロキシのソース ファイルが生成されると、SvcUtil.exe コマンドは、output.config ファイルに app.config ファイルで既定の**system.serviceModel**要素の基になるか、web.config ファイルにも作成されます。 Project 2013 SDK ダウンロードには、サンプルの output.config ファイルが含まれています`Documentation\IntelliSense\WCF\Source.zip`。 などの output.config の既定のファイル SvcUtil.exe を作成するリソースのサービスには、 **BasicHttpBinding_Resource**および**BasicHttpBinding_Resource1**という名前の 2 つのバインディングが含まれています。 **クライアント**要素には、2 つの既定のエンドポイントが含まれています。 1 つのエンドポイントは、セキュリティで保護されたアドレスへのアクセス、HTTP ポート 32843 では次のようにポート 32843、通常のアクセスは、他の. 
   
 ```XML
 <client>
-    <endpoint address="http://ServerName.domain:32843/GUID/PSI/Resource.svc/secure"
+    <endpoint address="https://ServerName.domain:32843/GUID/PSI/Resource.svc/secure"
         binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_Resource"
         contract="SvcResource.Resource" name="BasicHttpBinding_Resource" />
-address="http://ServerName.domain:32843/GUID/PSI/Resource.svc"
+address="https://ServerName.domain:32843/GUID/PSI/Resource.svc"
         binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_Resource1"
         contract="SvcResource.Resource" name="BasicHttpBinding_Resource1" />
 </client>
@@ -274,13 +274,13 @@ PSI サービス構成では、既定のバインドやエンドポイントを�
                                 maxArrayLength="16384" maxBytesPerRead="4096" 
                                 maxNameTableCharCount="500000000" />
                             <security mode="TransportCredentialOnly">
-                                <transport clientCredentialType="Ntlm" realm="http://SecurityDomain" />
+                                <transport clientCredentialType="Ntlm" realm="https://SecurityDomain" />
                             </security>
                         </binding>
                     </basicHttpBinding>
                 </bindings>
                 <client>
-                    <endpoint address="http://ServerName/ProjectServerName/_vti_bin/PSI/ProjectServer.svc"
+                    <endpoint address="https://ServerName/ProjectServerName/_vti_bin/PSI/ProjectServer.svc"
                         behaviorConfiguration="basicHttpBehavior" binding="basicHttpBinding"
                         bindingConfiguration="basicHttpConf" 
                         contract="SvcServiceName.ServiceName"
@@ -295,7 +295,7 @@ PSI サービス構成では、既定のバインドやエンドポイントを�
 4. 交換`ServiceName`リソースなど、PSI サービスの名前です。 たとえば、サービス名のすべての 3 つを交換することを確認します。
     
     ```XML
-        <endpoint address="http://myserver/pwa/_vti_bin/PSI/ProjectServer.svc"
+        <endpoint address="https://myserver/pwa/_vti_bin/PSI/ProjectServer.svc"
             behaviorConfiguration="basicHttpBehavior" binding="basicHttpBinding"
             bindingConfiguration="basicHttpConf" 
             contract="SvcResource.Resource"
@@ -309,12 +309,12 @@ PSI サービス構成では、既定のバインドやエンドポイントを�
   
     ```XML
         <client>
-        <endpoint address="http://ServerName/pwa/_vti_bin/PSI/ProjectServer.svc"
+        <endpoint address="https://ServerName/pwa/_vti_bin/PSI/ProjectServer.svc"
             behaviorConfiguration="basicHttpBehavior" binding="basicHttpBinding"
             bindingConfiguration="basicHttpConf" 
             contract="SvcProject.Project"
             name="basicHttp_Project" />
-        <endpoint address="http://ServerName/pwa/_vti_bin/PSI/ProjectServer.svc"
+        <endpoint address="https://ServerName/pwa/_vti_bin/PSI/ProjectServer.svc"
             behaviorConfiguration="basicHttpBehavior" binding="basicHttpBinding"
             bindingConfiguration="basicHttpConf" 
             contract="SvcQueueSystem.QueueSystem"
@@ -328,7 +328,7 @@ App.config ファイルを編集するには、Visual Studio で**WCF サービ�
 
 ![WCF サービス構成エディターを使用してください。](media/pj15_PrerequisitesWCF_ServiceConfigurationEditor.gif "WCF サービス構成エディターを使用してください。")
   
-ソリューションは、wcfResource.cs など、サービスのプロキシ ファイルを使用している場合アプリケーションをコンパイルし、実行可能ファイルを開き、`bin\debug`ディレクトリです。 App.config ファイルを編集の詳細についてを参照してください[チュートリアル: PSI の開発アプリケーションが WCF を使用して](http://msdn.microsoft.com/library/65707234-c3da-44e4-8364-32a6be28f645%28Office.15%29.aspx)。
+ソリューションは、wcfResource.cs など、サービスのプロキシ ファイルを使用している場合アプリケーションをコンパイルし、実行可能ファイルを開き、`bin\debug`ディレクトリです。 App.config ファイルを編集の詳細についてを参照してください[チュートリアル: PSI の開発アプリケーションが WCF を使用して](https://msdn.microsoft.com/library/65707234-c3da-44e4-8364-32a6be28f645%28Office.15%29.aspx)。
   
 **図 5. WCF サービス構成エディターでのコントラクト型ブラウザーの使用**
 
@@ -386,7 +386,7 @@ private void WcfSample()
 ほとんどのサンプルでは、更新する必要が、サンプルを動作させるため正しく、環境内の 1 つまたは複数の変数があります。 次の例では、SSL がインストールされている場合は HTTP プロトコルではなく HTTPS プロトコルを使用します。 _サーバー名_を使用しているサーバーの名前に置き換えます。 _ProjectServerName_を PWA など、プロジェクトのサーバー サイトの仮想ディレクトリ名に置き換えます。 
   
 ```cs
-const string PROJECT_SERVER_URI = "http://ServerName/ProjectServerName/";
+const string PROJECT_SERVER_URI = "https://ServerName/ProjectServerName/";
 ```
 
 ほかに変更が必要な変数があれば、コード サンプルの上部に記載されています。
@@ -400,11 +400,11 @@ const string PROJECT_SERVER_URI = "http://ServerName/ProjectServerName/";
   
 - プロジェクト評価のためのクライアントを使用して、Project Server コンピューターからプロジェクトを開くし、目的のアイテムを表示します。
     
-- Project Web App の [プロジェクト センター] ページで発行されたプロジェクトを表示する ( `http://ServerName/ProjectServerName/projects.aspx`)。
+- Project Web App の [プロジェクト センター] ページで発行されたプロジェクトを表示する ( `https://ServerName/ProjectServerName/projects.aspx`)。
     
-- Project Web App では、キューのログを表示します。 サーバー設定] ページを開く (右上隅で、[**設定**] アイコンを選択します)、**個人用の設定**] セクションで [**自分のキュー ジョブ**を選択し、( `http://ServerName/ProjectServerName/MyJobs.aspx`)。 **ビュー** 」ドロップ ダウン リストで、ジョブの状態で並べ替えることができます。 既定の状態が**進行中で過去 1 週間のジョブの失敗です**。 
+- Project Web App では、キューのログを表示します。 サーバー設定] ページを開く (右上隅で、[**設定**] アイコンを選択します)、**個人用の設定**] セクションで [**自分のキュー ジョブ**を選択し、( `https://ServerName/ProjectServerName/MyJobs.aspx`)。 **ビュー** 」ドロップ ダウン リストで、ジョブの状態で並べ替えることができます。 既定の状態が**進行中で過去 1 週間のジョブの失敗です**。 
     
-- Project Web App の [サーバー設定] ページを使用して ( `http://ServerName/ProjectServerName/_layouts/15/pwa/admin/admin.aspx`) とすべてのキュー ジョブの管理、削除、またはチェックインのエンタープライズ オブジェクトを強制的にします。 [サーバーの設定] ページで、これらのリンクにアクセスする管理者の権限がある必要があります。
+- Project Web App の [サーバー設定] ページを使用して ( `https://ServerName/ProjectServerName/_layouts/15/pwa/admin/admin.aspx`) とすべてのキュー ジョブの管理、削除、またはチェックインのエンタープライズ オブジェクトを強制的にします。 [サーバーの設定] ページで、これらのリンクにアクセスする管理者の権限がある必要があります。
     
 - **Microsoft SQL Server Management Studio** を使用して、Project Server データベースのテーブルにクエリを実行します。たとえば、以下のクエリを使用して、MSP_WORKFLOW_STAGE_PDPS テーブルの先頭 200 行を選択し、ワークフロー ステージのプロジェクト詳細ページ (PDP) に関する情報を表示します。 
     
@@ -422,7 +422,7 @@ const string PROJECT_SERVER_URI = "http://ServerName/ProjectServerName/";
 ## <a name="cleaning-up"></a>クリーンアップする
 <a name="pj15_PrerequisitesWCF_Cleanup"> </a>
 
-一部のコード サンプルをテストした後、エンタープライズ オブジェクトと設定を削除またはリセットする必要があります。 Project Web App の [サーバー設定] ページを使用するにはエンタープライズ ・ データを管理する ( `http://ServerName/ProjectServerName/_layouts/15/pwa/admin/admin.aspx`)。 [サーバー設定] ページのリンクを使用すると、古いアイテムを削除する、強制的にチェックインのプロジェクト、すべてのユーザーのジョブ キューの管理、その他の管理タスクを実行できます。
+一部のコード サンプルをテストした後、エンタープライズ オブジェクトと設定を削除またはリセットする必要があります。 Project Web App の [サーバー設定] ページを使用するにはエンタープライズ ・ データを管理する ( `https://ServerName/ProjectServerName/_layouts/15/pwa/admin/admin.aspx`)。 [サーバー設定] ページのリンクを使用すると、古いアイテムを削除する、強制的にチェックインのプロジェクト、すべてのユーザーのジョブ キューの管理、その他の管理タスクを実行できます。
   
 以下に、コード サンプル実行後の一般的なクリーンアップ作業で使用する、[サーバー設定] ページ上のリンクの一部を示します。
   
@@ -453,9 +453,9 @@ const string PROJECT_SERVER_URI = "http://ServerName/ProjectServerName/";
 ## <a name="see-also"></a>関連項目
 
 - [プロジェクト内の ASMX ベースのコード サンプルの前提条件](prerequisites-for-asmx-based-code-samples-in-project.md)   
-- [チュートリアル: WCF を使用して PSI アプリケーションを開発します。](http://msdn.microsoft.com/library/65707234-c3da-44e4-8364-32a6be28f645%28Office.15%29.aspx)   
-- [WCF で偽装を使用します。](http://msdn.microsoft.com/library/e3597901-2f02-44a2-8076-d32aae540b38%28Office.15%29.aspx)  
+- [チュートリアル: WCF を使用して PSI アプリケーションを開発します。](https://msdn.microsoft.com/library/65707234-c3da-44e4-8364-32a6be28f645%28Office.15%29.aspx)   
+- [WCF で偽装を使用します。](https://msdn.microsoft.com/library/e3597901-2f02-44a2-8076-d32aae540b38%28Office.15%29.aspx)  
 - [プロジェクト PSI リファレンスの概要](project-psi-reference-overview.md) 
-- [SharePoint デベロッパー センター](http://msdn.microsoft.com/en-us/sharepoint/default.aspx)
+- [SharePoint デベロッパー センター](https://msdn.microsoft.com/sharepoint/default.aspx)
     
 

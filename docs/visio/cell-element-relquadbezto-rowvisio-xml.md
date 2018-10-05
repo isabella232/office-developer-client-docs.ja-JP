@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 8b3aea70-a69f-a85e-83d8-c0fa2ee68836
 description: 図形の幅と高さを基準にして二次ベジェ曲線の端点または曲線の相対的な図形の幅と高さの制御点の x 座標または y 座標の x 座標または y 座標が含まれています。
-ms.openlocfilehash: 5f823e5930d3dad8bf6e20727e4b527493f89892
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 986ed0a5f6e79f13b92f2ede54361916d9681e17
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804983"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388673"
 ---
 # <a name="cell-element-relquadbezto-row-visio-xml"></a>セル要素 (RelQuadBezTo 行) ('Visio XML')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19804983"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml をマスター、# .xml のページ  <br/> |
    
@@ -58,7 +58,7 @@ ms.locfileid: "19804983"
 |U  <br/> |xsd:string  <br/> |省略可能  <br/> |既定の測定単位を表しますが、DL です。  <br/> |セルの単位です。  <br/> |
 |V  <br/> |xsd:string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプ シート セルの値です。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 この**セル**要素の**N**属性は、限られた一連のシェイプ シートのセルに対応する値のいずれかである必要があります。 この**セル**要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   

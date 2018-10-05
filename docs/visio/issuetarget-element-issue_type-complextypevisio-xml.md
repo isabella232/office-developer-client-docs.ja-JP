@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: bd9a5d5f-16fe-29b4-5af0-913b14d2be16
 description: 親のターゲットによっては、検証の問題は、ページ、またはページと両方親の検証の問題に関連付けられている図形を指定します。 場合は親の検証の問題の対象は、ドキュメント、ページと図形のどちらも、IssueTarget を指定します。
-ms.openlocfilehash: 72789782a37b29daa48cd01adb0b8eda4ebf73ac
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 74005bfb6035e32b7b34fdd5a8a5737813a562a0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805650"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385362"
 ---
 # <a name="issuetarget-element-issuetype-complextype-visio-xml"></a>IssueTarget 要素 (Issue_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805650"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[IssueTarget_Type](issuetarget_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |validation.xml  <br/> |
    

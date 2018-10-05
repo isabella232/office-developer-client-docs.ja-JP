@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 93acdbc8-381f-45d5-be6c-0cad066269fe
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a43d4f12aa28de29116d7d074b743d6c0d61d964
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 98584e450bb820dbce05b0f8d2c6d15551586130
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594510"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383276"
 ---
 # <a name="fielddefinition-stream-structure"></a>FieldDefinition ストリームの構造
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 FieldDefinition ストリームの構造体には、ユーザー定義のフィールドのフィールドの定義または組み込みのフィールドのデータ バインディングの設定のセットのいずれかが含まれています。
   
@@ -40,7 +40,7 @@ FieldDefinition ストリームの構造体には、ユーザー定義のフィ�
     |PDO_FT_SWITCH  <br/> |0x00000020  <br/> |このフィールドは、型**の組み合わせ**のと**組み合わせ数式フィールド**] ダイアログ ボックスで**最初の空ではないフィールドだけ、うちの表示**オプションを選択します。  <br/> |
     |PDO_PRINT_SAVEAS_DEF  <br/> |0x00000040  <br/> |Outlook でこのフラグが設定されていないが、すべてのユーザー定義フィールドの定義に含まれます。  <br/> |
    
-- VT: ワード (2 バイト)、 [VARENUM](http://msdn.microsoft.com/en-us/library/system.runtime.interopservices.varenum.aspx)の列挙体の定数は、フィールドのデータ型です。 
+- VT: ワード (2 バイト)、 [VARENUM](https://msdn.microsoft.com/library/system.runtime.interopservices.varenum.aspx)の列挙体の定数は、フィールドのデータ型です。 
     
 - DispId: DWORD (4 バイト) で、フィールドのディスパッチ識別子。 ユーザー定義フィールドの値が 0 を使用します。
     

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f14dfe47-a9f8-4475-bb26-7da3411d8c6f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8b7263fc408bd2c3f6838e571407ed8984c61427
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2dec706252eb6aa1b28f68f6f46473df04f3fbe7
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582764"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382793"
 ---
 # <a name="pidtagrecipienttrackstatustime-canonical-property"></a>PidTagRecipientTrackStatusTime 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 出席者が反応したときの日時が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22582764"
 |関連するプロパティ:  <br/> |PR_RECIPIENT_TRACKSTATUS_TIME  <br/> |
 |識別子:  <br/> |0x5FFB  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
-|領域:  <br/> |トランスポートにおける受取人  <br/> |
+|エリア:  <br/> |トランスポートにおける受取人  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 値は、世界協定時刻 (UTC) で指定する必要があります。
   
@@ -42,11 +42,11 @@ ms.locfileid: "22582764"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
     

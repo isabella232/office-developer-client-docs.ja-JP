@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: f8d7b944-a8fd-9c5f-8f66-0f1b628b7c6e
 description: Web サービスは、WSDL (Web サービス記述言語) コントラクトの指定で、Web メソッドへのバインドのために 2 つのスタイル (Document または RPC) のどちらかを公開できます。
-ms.openlocfilehash: 01b75df42bce97d62ebb5e273588cb522e5e2a09
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0eacf013c9cdf74f18f3de1d4412ca4ca165a960
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799137"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387679"
 ---
 # <a name="infopath-rpc-encoding-and-web-services"></a>InfoPath、RPC エンコード、および Web サービス
 
@@ -62,7 +62,7 @@ Web サービスは、WSDL (Web サービス記述言語) コントラクトの�
     
    ```
 
-詳細については、Microsoft サポート技術情報 (http://support.microsoft.com/ で、現在の資格情報を ASP .NET Web サービスに渡す方法に関する記事 (HOW TO: Pass Current Credentials to an ASP.NET Web Service) を参照してください。
+詳細については、Microsoft サポート技術情報 (https://support.microsoft.com/ で、現在の資格情報を ASP .NET Web サービスに渡す方法に関する記事 (HOW TO: Pass Current Credentials to an ASP.NET Web Service) を参照してください。
     
 ## <a name="creating-a-proxy-web-service-without-visual-studio-net"></a>Visual Studio .NET を使用せずにプロキシ Web サービスを作成する
 

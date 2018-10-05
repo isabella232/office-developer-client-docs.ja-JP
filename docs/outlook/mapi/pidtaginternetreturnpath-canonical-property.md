@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 4530dbcf-9436-4f29-b79e-1bb0f791f60b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b3f108ff1053c0aa1046597cd2f11b74bc2dab0c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c2d8eaf627f789c3e862a83d71e4ca2e3e55e1e0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574175"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388204"
 ---
 # <a name="pidtaginternetreturnpath-canonical-property"></a>PidTagInternetReturnPath 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 多目的インターネット メール拡張 (MIME) メッセージのリターン ・ パスのヘッダー フィールドの値が含まれています。 メッセージの送信者の電子メール アドレスです。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22574175"
 |関連するプロパティ:  <br/> |PR_INTERNET_RETURN_PATH、PR_INTERNET_RETURN_PATH_A、PR_INTERNET_RETURN_PATH_W  <br/> |
 |識別子:  <br/> |0x1046  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |MIME  <br/> |
+|エリア:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティの値を取得するには、まず[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)を使用して、プロパティ タグを取得して値を取得する[IMAPIProp::GetProps](imapiprop-getprops.md)でこのプロパティのタグを指定します。 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)を呼び出すときは、 _lppPropNames_の入力パラメーターで示される[MAPINAMEID](mapinameid.md)構造体の次の値を指定します。
   
@@ -48,11 +48,11 @@ ms.locfileid: "22574175"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCICAL]](http://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
+[[MS OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
 > IETF RFC2445、RFC2446、RFC2447、および予定と会議のオブジェクトに変換します。
     

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 6917510d-ca1e-4049-9eab-09313753ecf0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2c9598b583ba62adc42d6fb2b904dfe4981286ff
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f009d7ce5cd1856ccff1e00953188c8edde7a6bc
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578109"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385334"
 ---
 # <a name="pidtagcontainerhierarchy-canonical-property"></a>PidTagContainerHierarchy 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 埋め込まれた階層テーブル オブジェクトに関する情報を提供、子コンテナーが含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22578109"
 |関連するプロパティ:  <br/> |PR_CONTAINER_HIERARCHY  <br/> |
 |識別子:  <br/> |0x360E  <br/> |
 |データの種類 :   <br/> |PT_OBJECT  <br/> |
-|領域:  <br/> |Container  <br/> |
+|エリア:  <br/> |Container  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、 [IMAPIProp::CopyTo](imapiprop-copyto.md)操作で除外または[IMAPIProp::CopyProps](imapiprop-copyprops.md)操作に含まれることができます。 **PT_OBJECT**の型のプロパティとして、正常に取得できません、 [IMAPIProp::GetProps](imapiprop-getprops.md)メソッドで方式では[IMAPIProp::OpenProperty](imapiprop-openproperty.md) IID_IMAPITable のインタ フェース識別子を要求するその内容にアクセスする必要があります。 サービス プロバイダーする必要がありますに報告して、 [IMAPIProp::GetPropList](imapiprop-getproplist.md)メソッドが設定されているが報告したことができます (オプション)、または設定されていない場合はありません。 
   
@@ -54,15 +54,15 @@ ms.locfileid: "22578109"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[MS OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
 > 順序と、クライアントとサーバー間のデータ転送のフローを処理します。
     
-[[MS OXCICAL]](http://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
+[[MS OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
 > IETF RFC2445、RFC2446、RFC2447、および予定と会議のオブジェクトに変換します。
     

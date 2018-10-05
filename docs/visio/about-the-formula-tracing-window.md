@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 0cdacd4e-74dc-32c3-2eb2-219bf7fcb532
 description: '[数式トレース] ウィンドウは、参照元セル (特定のセルに依存するセル) および参照先セル (特定のセルが依存するセル) の両方の相互依存に関する情報を図形作成者が表示できるように設計されています。'
-ms.openlocfilehash: 316ac219f548b2459ea2d0ad8cece0f693957fcf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f5f9d6a7ba3ab7049715d31342cfe7aa68ea053f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804738"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385327"
 ---
 # <a name="about-the-formula-tracing-window"></a>数式トレース ウィンドウについて
 
@@ -32,24 +32,24 @@ Microsoft Visio シェイプ シートのセルには、値と数式が含まれ
 
 特定のセルに依存するセルの一覧を表示するには、[シェイプシート] ウィンドウでそのセルを選択します。この例では、[Width] セルを選択しています。 
   
-![](media/ShapeSheetDependents_UI_01_ZA01039814.gif)
+![[Width] セルが選択されています。](media/ShapeSheetDependents_UI_01_ZA01039814.gif)
   
 [**数式トレース**] で、参照先のセルを表示するには、**参照先のトレース**をクリックします。
   
 [**数式トレース**] ウィンドウに、[Width] セルに依存するセルの一覧が表示されます。[**数式トレース**] ウィンドウで、一覧の中の任意のセルに移動するには、目的のセルのエントリをダブルクリックしてください。 
   
-![](media/ShapeSheetDependents_UI_02_ZA01039815.gif)
+![数式トレース] ウィンドウで、[Width] セルへの依存関係を持つすべてのセルが表示されます。](media/ShapeSheetDependents_UI_02_ZA01039815.gif)
   
 ## <a name="tracing-precendent-cells"></a>Precendent セルのトレース
 
 特定のセルが依存しているセルの一覧を表示するには、[シェイプシート] ウィンドウで該当のセルを選択します。この例では、[Geometry1.X2] セルを選択しています。 
   
-![](media/ShapeSheetPrecedents_UI_01_ZA01039817.gif)
+![[Geometry1.x2] セルが選択されています。](media/ShapeSheetPrecedents_UI_01_ZA01039817.gif)
   
 [**数式トレース**] で、その参照先のセルを表示するには、**参照元のトレース**をクリックします。
   
 **数式トレース**] ウィンドウで、[geometry1.x2] セルが依存しているすべてのセルの一覧が表示されます。 **数式トレース**] ウィンドウ内のエントリをダブルクリックすると、リスト内の任意のセルに移動できます。 
   
-![](media/ShapeSheetPrecedents_UI_02_ZA01039818.gif)
+![[Geometry1.x2] セルが依存するすべてのセルは、[数式トレース] ウィンドウで表示されます。](media/ShapeSheetPrecedents_UI_02_ZA01039818.gif)
   
 

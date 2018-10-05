@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: d4f380fa-2ed9-4c7c-9ef3-b32f8409f657
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: caa93fcc1675531f2d128170c81904e0e286e0f9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8b5c5fee71db0fc7bdd6e01c58e9c9a9c3d9fa22
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591080"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384648"
 ---
 # <a name="autocomplete-stream"></a>オートコンプリート ストリーム
 
@@ -71,7 +71,7 @@ Microsoft Outlook とオートコンプリート ストリームの相互作用�
   
 メタデータ (8 バイト)
   
-バイナリ構造の例に関しては、「[Outlook 2003/2007 NK2 のファイル形式と開発者向けガイドライン](http://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)」にあるバイナリの例を参照してください。
+バイナリ構造の例に関しては、「[Outlook 2003/2007 NK2 のファイル形式と開発者向けガイドライン](https://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)」にあるバイナリの例を参照してください。
   
 ## <a name="high-level-layout"></a>レイアウトの概要
 
@@ -198,7 +198,7 @@ PT_MV_UNICODE (Outlook 2007、Outlook 2010、Outlook 2013)
    
 ## <a name="significant-properties"></a>重要なプロパティ
 
-このトピックで前述したように、プロパティを表すバイナリのブロックには、アドレス帳の受信者のプロパティに対応するプロパティ タグがあります。 ここに記載されていないプロパティについては、http://msdn.microsoft.com/en-us/library/cc433490(EXCHG.80).aspx の説明を参照してください。
+このトピックで前述したように、プロパティを表すバイナリのブロックには、アドレス帳の受信者のプロパティに対応するプロパティ タグがあります。 ここに記載されていないプロパティについては、https://msdn.microsoft.com/library/cc433490(EXCHG.80).aspx の説明を参照してください。
   
 |**プロパティ名**|**プロパティのタグ**|**説明 (詳細については、MSDN を参照してください)**|
 |:-----|:-----|:-----|

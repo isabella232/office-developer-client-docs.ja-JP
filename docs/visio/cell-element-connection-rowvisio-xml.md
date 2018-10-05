@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7cafaa31-c56b-ebb0-3bfb-c339cc93038e
 description: X 座標または y 座標、水平方向または垂直方向、または図形の 1 つの接続ポイントの型が含まれています。
-ms.openlocfilehash: 52328e50b185a96ebb06634248b93a4332ac35c2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 367d7e462c1eb5b8fa6ee0572346f45ad621fa15
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804951"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388960"
 ---
 # <a name="cell-element-connection-row-visio-xml"></a>セル要素 (接続行) ('Visio XML')
 
@@ -23,7 +23,7 @@ X 座標または y 座標、水平方向または垂直方向、または図形
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml をマスター、# .xml のページ  <br/> |
    
@@ -60,7 +60,7 @@ X 座標または y 座標、水平方向または垂直方向、または図形
 |U  <br/> |xsd:string  <br/> |省略可能  <br/> |既定の測定単位を表しますが、DL です。  <br/> |セルの単位です。  <br/> |
 |V  <br/> |xsd:string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプ シート セルの値です。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 この**セル**要素の**N**属性は、限られた一連のシェイプ シートのセルに対応する値のいずれかである必要があります。 この**セル**要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   
@@ -70,7 +70,7 @@ X 座標または y 座標、水平方向または垂直方向、または図形
 |DirX  <br/> |対応する接続ポイントの必要な整列ベクトルの x コンポーネントを決定します。  <br/> |[[DirX / A] セル ([Connection Points] セクション)](dirxa-cell-connection-points-section.md) <br/> |
 |DirY  <br/> |対応する接続ポイントの必要な整列ベクトルの y コンポーネントを決定します。  <br/> |[[DirY / B] セル ([Connection Points] セクション)](diryb-cell-connection-points-section.md) <br/> |
 |プロンプト  <br/> |この属性は、将来使用するために予約されています。  <br/> |なし。  <br/> |
-|型  <br/> |接続ポイントの種類を指定します。  <br/> |[[Type / C] セル ([Connection Points] セクション)](typec-cell-connection-points-section.md) <br/> |
+|種類  <br/> |接続ポイントの種類を指定します。  <br/> |[[Type / C] セル ([Connection Points] セクション)](typec-cell-connection-points-section.md) <br/> |
 |X  <br/> |接続ポイントの x 座標をローカル座標で表します。  <br/> |[[X] セル ([Connection Points] セクション)](x-cell-connection-points-section.md) <br/> |
 |Y  <br/> |ローカル座標での接続ポイントの y 座標を指定します。  <br/> |[[Y] セル ([Connection Points] セクション)](y-cell-connection-points-section.md) <br/> |
    

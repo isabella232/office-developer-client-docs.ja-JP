@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 07fcb881-d873-45bf-b048-30f41d0d8d85
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ffc47eca3457eef876d88a4be43888f24c403b10
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8257c3c3583072d16e96e6ea9bba4632fc78f9ef
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575344"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385649"
 ---
 # <a name="pidtagsubjectprefix-canonical-property"></a>PidTagSubjectPrefix 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "22575344"
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 これらのプロパティは、すべてのメッセージ オブジェクトに対して推奨されています。 
   
@@ -50,15 +50,15 @@ ms.locfileid: "22575344"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > メッセージと添付ファイルのオブジェクトを処理します。
     
-[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
     

@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8b585200-33e7-4607-a603-0c7e52a6b09d
 description: このトピックをインストールして、Outlook ソーシャル コネクタ (OSC) プロバイダーをアンインストールに関するテストをするいくつかのシナリオについて説明します。
-ms.openlocfilehash: 0494d2ecab446b7da091f80df02267e281987d8d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9c811683097a08b9f6e575d4ea2fee29cdd545d6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804476"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383935"
 ---
 # <a name="testing-deployment"></a>展開のテスト
 
@@ -27,7 +27,7 @@ ms.locfileid: "19804476"
   
 32 ビットまたは 64 ビットのいずれかのバージョンの OSC、OSC プロバイダーを記述できます。 Outlook 2010、Outlook 2013 では、32 ビットと 64 ビットの両方のバージョンで利用できると、Office Outlook 2003 および Office Outlook 2007 では、唯一の 32 ビット バージョンで利用できます。 64 ビット Windows オペレーティング ・ システムでは、32 ビットまたは 64 ビットのいずれかの Outlook をインストールできます。 32 ビット ・ オペレーティング ・ システムをインストールできますのみの 32 ビットが 64 ビットの Outlook です。 によってインストールされているバージョンの Outlook と OSC プロバイダー自体のビット数、ユーザーは、適切なビットの OSC プロバイダーをインストールするのには適切なインストーラーを使用する必要があります。 などの 64 ビットの Outlook がインストールされている場合は、OSC プロバイダーは、ネイティブ COM コンポーネントを 32 ビットの OSC プロバイダーは動作せず、ユーザーは、64 ビットの OSC プロバイダーをインストールするのには適切なインストーラーを使用する必要があります。
   
-OSC プロバイダーの展開コードは、ユーザーがコンピューター上の Outlook のサポートされているバージョンを持っていると想定できます。 ただし、OSC の現在のバージョンがクライアント コンピューター上にない場合は、配置コードことができますをダウンロードしてインストール、OSC の適切なバージョンで特別に構築した g ・ リンクの Url を使用して、 http://g.live.com。 これらの g ・ リンクは、バージョンと Outlook のビット数とクライアント コンピューターのロケールによって異なります。 G リンクを使用して、インストールしたり、OSC を更新する方法の詳細については、[インストールのチェックリスト](installation-checklist.md)を参照してください。
+OSC プロバイダーの展開コードは、ユーザーがコンピューター上の Outlook のサポートされているバージョンを持っていると想定できます。 ただし、OSC の現在のバージョンがクライアント コンピューター上にない場合は、配置コードことができますをダウンロードしてインストール、OSC の適切なバージョンで特別に構築した g ・ リンクの Url を使用して、 https://g.live.com。 これらの g ・ リンクは、バージョンと Outlook のビット数とクライアント コンピューターのロケールによって異なります。 G リンクを使用して、インストールしたり、OSC を更新する方法の詳細については、[インストールのチェックリスト](installation-checklist.md)を参照してください。
   
 Outlook ユーザーは、OSC プロバイダーをインストールする前に、Outlook の OSC アドインを有効にするようにしてください。
   

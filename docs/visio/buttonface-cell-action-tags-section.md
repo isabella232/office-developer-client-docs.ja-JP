@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 26f370e1-5193-f47d-7b60-3597975be650
 description: アクション タグ ボタンに表示されるボタン イメージの ID を示します。
-ms.openlocfilehash: ca6be0a95b33e173219f4bdc1ba042c7162941b3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e74b3281d894cebd8491112181198d427f0d337f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804938"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385481"
 ---
 # <a name="buttonface-cell-action-tags-section"></a>[ButtonFace] セル ([操作タグ] セクション)
 
@@ -23,9 +23,9 @@ ms.locfileid: "19804938"
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-ButtonFace] セルに含まれる文字列は、Microsoft Office のボタン イメージの ID を表します。 値が 0 (ゼロ) の標準のアクション タグの"i"情報ボタンの既定値を空白または![](media/InfoPS_ZA10180114.gif)。
+[ButtonFace] セル内の文字列は Microsoft Office のボタン イメージの ID を示します。値 0 (ゼロ) または空白の場合、標準アクション タグの "i" 情報ボタン ( ![標準アクション タグの"i"情報ボタン](media/InfoPS_ZA10180114.gif).
   
 ButtonFace] セルに使用できる Id は、 **CommandBarButton**オブジェクトの**FaceID**プロパティで使用される Id と同じです。 これらの Id の詳細については、MSDN の「コマンド バー ボタンのイメージを使用する」を検索してください。 
   

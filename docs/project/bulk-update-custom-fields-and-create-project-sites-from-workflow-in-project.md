@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 815131c6-190c-4f29-83bf-c853eee72821
 description: お客様のオンライン プロジェクトを最大限に活用し、当社のサービスの拡張性と柔軟性を向上させるために、2 つの方法オンライン プロジェクトのアプリケーションとワークフローで使用できるクライアント側オブジェクト モデルに追加しました。
-ms.openlocfilehash: 4f8fee5de5efb69f410b78e9ce93b9dc9bb133f3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4de42471cd8c2f12a982447ccffc27ec8104fa31
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804565"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386160"
 ---
 # <a name="bulk-update-custom-fields-and-create-project-sites-from-a-workflow-in-project-online"></a>Project Online でユーザー設定フィールドを一括更新し、ワークフローからプロジェクト サイトを作成する
 
@@ -25,7 +25,7 @@ ms.locfileid: "19804565"
 高い柔軟性を提供し、これらのメソッドは、保存とワークフロー内でプロジェクトを発行するときに、大幅なパフォーマンス向上も提供します。 ここでは、REST API のメソッドを使用する方法について説明し、その一括更新のユーザー設定フィールドおよびプロジェクトのサイトを作成するワークフローは、ワークフローを作成する方法について説明します。
   
 > [!NOTE]
-> SharePoint 2013 ワークフローから REST Api を呼び出す方法の詳細については、 [POST メソッドを使用してワークフローからを使用して SharePoint の他のサービス](http://mysharepointinsight.blogspot.com/2013/05/using-sharepoint-rest-services-from.mdl)と[SharePoint ワークフロー デザイナーから SharePoint 2013 の Rest API の呼び出し](https://sergeluca.wordpress.com/2013/04/09/calling-the-sharepoint-2013-rest-api-from-a-sharepoint-designer-workflow/)を参照してください。 
+> SharePoint 2013 ワークフローから REST Api を呼び出す方法の詳細については、 [POST メソッドを使用してワークフローからを使用して SharePoint の他のサービス](https://mysharepointinsight.blogspot.com/2013/05/using-sharepoint-rest-services-from.mdl)と[SharePoint ワークフロー デザイナーから SharePoint 2013 の Rest API の呼び出し](https://sergeluca.wordpress.com/2013/04/09/calling-the-sharepoint-2013-rest-api-from-a-sharepoint-designer-workflow/)を参照してください。 
   
 ## <a name="bulk-update-project-custom-fields-from-a-workflow"></a>ワークフローの一括更新プロジェクトのユーザー設定フィールド
 <a name="BulkUpdateCustomFields"> </a>
@@ -75,7 +75,7 @@ ms.locfileid: "19804565"
   
 4. 辞書には、次の 2 つの項目を追加します。
     
-    |名前|型|値|
+    |名前|種類|値|
     |:-----|:-----|:-----|
     |Accept  <br/> |String  <br/> |アプリケーションまたは json です。odata = 詳細  <br/> |
     |Content-Type  <br/> |String  <br/> |アプリケーションまたは json です。odata = 詳細  <br/> |
@@ -121,7 +121,7 @@ ms.locfileid: "19804565"
        > [!NOTE]
        > これらの値は、例示目的でのみです。 使用するキーと値のペアは、PWA のデータによって異なります。 
   
-       |名前|型|値|
+       |名前|種類|値|
        |:-----|:-----|:-----|
        |customFieldDictionary (0)/__metadata/タイプ  <br/> |String  <br/> |SP へKeyValue  <br/> |
        |customFieldDictionary (0)/キー  <br/> |String  <br/> |カスタム\_ce23fbf43fa0e411941000155d3c8201  <br/> |
@@ -196,7 +196,7 @@ ms.locfileid: "19804565"
   
 3. 辞書には、次の 2 つの項目を追加します。
     
-    |名前|型|値|
+    |名前|種類|値|
     |:-----|:-----|:-----|
     |Accept  <br/> |String  <br/> |アプリケーションまたは json です。odata = 詳細  <br/> |
     |Content-Type  <br/> |String  <br/> |アプリケーションまたは json です。odata = 詳細  <br/> |
@@ -219,6 +219,6 @@ ms.locfileid: "19804565"
 
 - [Project のプログラミング タスク](project-programming-tasks.md)
 - [Project 2013 のクライアント側オブジェクト モデル (CSOM)](client-side-object-model-csom-for-project-2013.md)
-- [Microsoft SharePoint 2010 SDK へようこそ](http://msdn.microsoft.com/library/e0602371-ae22-44be-8a7e-9e47e9f046d6%28Office.15%29.aspx)
+- [Microsoft SharePoint 2010 SDK へようこそ](https://msdn.microsoft.com/library/e0602371-ae22-44be-8a7e-9e47e9f046d6%28Office.15%29.aspx)
     
 

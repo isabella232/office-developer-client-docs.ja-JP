@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: a51a60c9-479b-7d7b-860f-bb46fc8b4d63
 description: ドキュメントの検証に関連するプロパティをカプセル化します。
-ms.openlocfilehash: 4f91160969cfb162f18440019ced23ea62061879
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9eccb85bd7463411d81c867eda3216d6c9a207f2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806747"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385222"
 ---
 # <a name="validationproperties-element-validationtype-complextype-visio-xml"></a>ValidationProperties 要素 (Validation_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806747"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[ValidationProperties_Type](validationproperties_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |validation.xml  <br/> |
    

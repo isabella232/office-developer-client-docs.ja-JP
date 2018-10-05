@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 6ad2aedc-405b-475e-ac76-7ecbbef28f73
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6893afa11cc08b335b0ffb39b725e26478dae22f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b2047f04f3f4a8d2b3e58e07a71e7e2463eff9cf
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574840"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386244"
 ---
 # <a name="pidlidcategories-canonical-property"></a>PidLidCategories 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 アイテムのカテゴリの一覧を指定します。
   
@@ -33,9 +33,9 @@ ms.locfileid: "22574840"
 |プロパティを設定します。  <br/> |PS_PUBLIC_STRINGS  <br/> |
 |長い ID (LID):  <br/> |0x00002328  <br/> |
 |データの種類 :   <br/> |PT_MV_UNICODE  <br/> |
-|領域:  <br/> |Common  <br/> |
+|エリア:  <br/> |Common  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 キーワード ヘッダー フィールドを生成するには、クライアントは、目的の値にこのプロパティの値を設定する必要があります。 このプロパティは、複数の文字列です。各カテゴリは、1 つのキーワードにマップする必要があります。
   
@@ -45,11 +45,11 @@ ms.locfileid: "22574840"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCMAIL]](http://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
 > メッセージ オブジェクト インターネット標準の電子メールの表記規則からに変換します。
     

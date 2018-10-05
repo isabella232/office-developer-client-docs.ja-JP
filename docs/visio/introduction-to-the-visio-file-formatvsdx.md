@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 69736f40-8f67-46c2-abf6-82dffecb2274
 description: プログラムで、Visio 2013 のファイル形式を操作するためのいくつかの大まかな概念を表示する Visio 2013 では、新しいファイル形式について説明して、Visio 2013 ファイルをチェックする簡単なコンソール アプリケーションを作成します。
-ms.openlocfilehash: aa3497af7c467c8f51ab80ab82071776568b4978
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4efa90ee513def005653f4f8717b0149de1cdc3d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805594"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389366"
 ---
 # <a name="introduction-to-the-visio-file-format-vsdx"></a>Visio ファイル形式 (.vsdx) の概要
 
@@ -50,7 +50,7 @@ Visio 2013 では、Visio で、Visio ファイルをバイナリ形式 (.vsd) �
 Visio 2013 のファイル形式では、開いているパッキング規則 (OPC)、いくつか sort─for 例では、ZIP ファイルのコンテナーを使用して、関連するリソースとアプリケーション データを格納する構造化された手段を定義するを使用します。 基本的なレベルでは、Visio 2013 が本当にその他の種類のファイルを含む ZIP コンテナーです。 .Vsdx ファイルとして Visio 2013 で図面を保存する、ファイルの拡張子を変更する実際には、"\*.zip"ファイルがフォルダー内のコンテンツを表示するように Windows エクスプ ローラーで開くとします。
   
 > [!NOTE]
->  この資料には、開いているパッケージ化規則の概要のみが含まれています。 他の記事での表記規則のコード カバレッジの詳細についてを見つけることができます: > 自体開くパッケージ化規則の詳細についてを参照してください[OPC: A 新しい標準的なパッケージのデータを](http://msdn.microsoft.com/en-us/magazine/cc163372.aspx)。 > のパッケージ化規則を開くと Microsoft Office ファイルでの使用の詳細については、[オープンのパッケージ化規則の基礎](http://msdn.microsoft.com/en-us/library/ee361919.aspx)と[、(2007) の Office オープン XML ファイル形式の概要](http://msdn.microsoft.com/en-us/library/aa338205.aspx)を参照してください。 
+>  この資料には、開いているパッケージ化規則の概要のみが含まれています。 他の記事での表記規則のコード カバレッジの詳細についてを見つけることができます: > 自体開くパッケージ化規則の詳細についてを参照してください[OPC: A 新しい標準的なパッケージのデータを](https://msdn.microsoft.com/magazine/cc163372.aspx)。 > のパッケージ化規則を開くと Microsoft Office ファイルでの使用の詳細については、[オープンのパッケージ化規則の基礎](https://msdn.microsoft.com/library/ee361919.aspx)と[、(2007) の Office オープン XML ファイル形式の概要](https://msdn.microsoft.com/library/aa338205.aspx)を参照してください。 
   
 ### <a name="packages-and-package-parts"></a>パッケージとパッケージ パーツ
 
@@ -134,7 +134,7 @@ Visio 2013 ファイル形式で、ShapeSheet─ **[pinx]**、 **LinePattern**et
 ## <a name="developer-scenarios-for-working-with-the-visio-2013-file-format"></a>Visio 2013 ファイル形式で作業するための開発者向けシナリオ
 <a name="vis15_IntroVSDX_Scenarios"> </a>
 
-前述したように、Visio 2013 のファイル形式は、ZIP ファイルやデータを格納する XML のようないくつかの汎用的なテクノロジを活用します。 Visio 2013 がファイル レベルでの図面を操作するには、ソリューションは、.NET Framework 名前空間と ZIP ファイルまたは XML、 [System.IO.Packaging](http://msdn.microsoft.com/en-us/library/system.io.packaging%28v=vs.110%29.aspx)や[System.Xml](http://msdn.microsoft.com/en-us/library/system.xml%28v=vs.110%29.aspx)などの操作に関連付けられたクラスを使用する場合のみ必要があります。
+前述したように、Visio 2013 のファイル形式は、ZIP ファイルやデータを格納する XML のようないくつかの汎用的なテクノロジを活用します。 Visio 2013 がファイル レベルでの図面を操作するには、ソリューションは、.NET Framework 名前空間と ZIP ファイルまたは XML、 [System.IO.Packaging](https://msdn.microsoft.com/library/system.io.packaging%28v=vs.110%29.aspx)や[System.Xml](https://msdn.microsoft.com/library/system.xml%28v=vs.110%29.aspx)などの操作に関連付けられたクラスを使用する場合のみ必要があります。
   
 Visio 2013 のファイル形式の開発者の主なメリットは、読み取りし、Visio クライアント アプリケーションを自動化することがなく、Visio 2013 のファイルに書き込むことができます。 Visio 2013 のファイル形式を操作するための開発者を検討するいくつかのシナリオは次のとおりです。
   
@@ -284,12 +284,12 @@ Visio 2013 のファイル形式を使用するあらゆる開発者のための
 
 Visio 2013 のファイル形式、開いているパッケージ化規則、または Office OpenXML ファイルの 2013or をプログラムから操作する方法の詳細については、次のリソースを参照してください。
   
-- [開発者は、Visio](http://msdn.microsoft.com/en-us/office/aa905478.aspx)
+- [開発者は、Visio](https://msdn.microsoft.com/office/aa905478.aspx)
     
-- [OPC: データをパッケージ化するための新しい標準](http://msdn.microsoft.com/en-us/magazine/cc163372.aspx)。
+- [OPC: データをパッケージ化するための新しい標準](https://msdn.microsoft.com/magazine/cc163372.aspx)。
     
-- [オープンなパッケージング規則の基礎](http://msdn.microsoft.com/en-us/library/ee361919.aspx)
+- [オープンなパッケージング規則の基礎](https://msdn.microsoft.com/library/ee361919.aspx)
     
-- [Office (2007) オープン XML ファイル形式の概要](http://msdn.microsoft.com/en-us/library/aa338205.aspx)
+- [Office (2007) オープン XML ファイル形式の概要](https://msdn.microsoft.com/library/aa338205.aspx)
     
 

@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 3ab77f25-ad11-4501-8d35-ef560c07e2f2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 38bcf40f24cc7901ebcbb60a099dc0e797d8e4b8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3daf8a04afc9cf47d808b46f2cee010e15a33cf9
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588035"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386041"
 ---
 # <a name="pidlidtaskversion-canonical-property"></a>PidLidTaskVersion 標準プロパティ
 
@@ -35,7 +35,7 @@ ms.locfileid: "22588035"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 タスクよりも低いバージョンでの更新は無視されます。 
   
@@ -45,11 +45,11 @@ ms.locfileid: "22588035"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[MS OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
 > タスク、タスクの割り当て、およびタスクの更新に相当する電子をモデル化したいくつかのオブジェクトを定義します。
     

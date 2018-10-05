@@ -8,26 +8,26 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 888c60e3-7376-4d66-8ee2-ce81abafb185
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 39b4474bcc6bd71993fb5dc42bb2bfc1bf9f5f48
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9d5ebb0e16138c3cc65ff6fd7c635e5498c9c1ba
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573405"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388904"
 ---
 # <a name="isbadboundedstringptr"></a>IsBadBoundedStringPtr
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 呼び出し元のプロセスがメモリの指定された範囲に読み取りアクセス権を持っていることを確認します。
   
 |||
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> |mapiwin.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダーです。  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス ・ プロバイダーです。  <br/> |
    
 ```cpp
 BOOL IsBadBoundedStringPtr(
@@ -52,7 +52,7 @@ BOOL IsBadBoundedStringPtr(
   
 呼び出し元のプロセスが、文字列の終端の null 文字までのすべての文字への読み取りアクセスまたは_cchMax_で指定された文字数までの読み取りアクセス権があるないときは、0 以外を返します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **IsBadBoundedStringPtr**関数は、 **IsBadStringPtr**を使用すると同じです。
   
@@ -60,5 +60,5 @@ BOOL IsBadBoundedStringPtr(
 
 
 
-[IsBadStringPtr](http://msdn.microsoft.com/en-us/library/windows/desktop/aa366714%28v=vs.85%29.aspx)
+[IsBadStringPtr](https://msdn.microsoft.com/library/windows/desktop/aa366714%28v=vs.85%29.aspx)
 

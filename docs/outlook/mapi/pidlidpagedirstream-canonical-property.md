@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e94f0daf-fccb-41b6-b38b-5ef4167a6e9d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cc2bacb85da810333fb9c1741fd1a414396f2f74
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 831c7a200eb1f9bf7db647eeb9b6b778269baea6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578998"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383038"
 ---
 # <a name="pidlidpagedirstream-canonical-property"></a>PidLidPageDirStream 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージに関連付けられているユーザー設定フォームのページに関する情報を表します。
   
@@ -33,13 +33,13 @@ ms.locfileid: "22578998"
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x00008513  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |実行時の構成  <br/> |
+|エリア:  <br/> |実行時の構成  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     

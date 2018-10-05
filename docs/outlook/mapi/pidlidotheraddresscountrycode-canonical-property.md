@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c5358432-dbd3-4216-af0f-4fd01eacec69
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 710d8554c8d1f4e00fd0d8e2cb8410fca583c2a5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3ad89bb7022a04df59f5851406d0702ccf81b4fc
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590674"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384711"
 ---
 # <a name="pidlidotheraddresscountrycode-canonical-property"></a>PidLidOtherAddressCountryCode 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 連絡先の国コードの部分はの他のアドレスを指定します。
   
@@ -33,17 +33,17 @@ ms.locfileid: "22590674"
 |プロパティを設定します。  <br/> |PSETID_Address  <br/> |
 |長い ID (LID):  <br/> |0x000080DC  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |Contact  <br/> |
+|エリア:  <br/> |Contact  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > プロパティは、連絡先、個人用配布リストの許可の操作を指定します。
     

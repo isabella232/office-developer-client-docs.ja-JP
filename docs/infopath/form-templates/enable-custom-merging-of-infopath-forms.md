@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: f08f9212-af10-1287-477d-adde7674f523
 description: Microsoft InfoPath エディターのフォームの結合機能を使用すると、複数のフォームのデータを 1 つのフォームに結合することができます。
-ms.openlocfilehash: e0e6bfc074829f262d7eef3cf7bf6a86c3b2253b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 598c44bfe63a31237bf82ceb2212b001fbe7cc1f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799105"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386916"
 ---
 # <a name="enable-custom-merging-of-infopath-forms"></a>InfoPath フォームのカスタム結合を有効にする
 
@@ -25,7 +25,7 @@ Microsoft InfoPath エディターの**フォームの結合**機能を使用す
     
 ## <a name="creating-a-custom-transform"></a>カスタム変換の作成
 
-結合対象のフォームが同じ XML スキーマに基づいている場合は、既定の動作で問題なく結合できます。しかし、スキーマが異なるフォームどうしを結合したり、スキーマが同じ場合の既定の動作を上書きするときもあります。このような場合には、結合の集計指示を記載した XSL 変換 (XSLT) を作成します。XSL 変換は、結合時に適用されます。その結果、インポート対象の情報が記載された DOM ドキュメントと、この情報をターゲット ドキュメントにどのように組み込むかを指定した注釈が作成されます。この注釈は、 `http://schemas.microsoft.com/office/InfoPath/2003/aggregation` 名前空間の XML 属性です。
+結合対象のフォームが同じ XML スキーマに基づいている場合は、既定の動作で問題なく結合できます。しかし、スキーマが異なるフォームどうしを結合したり、スキーマが同じ場合の既定の動作を上書きするときもあります。このような場合には、結合の集計指示を記載した XSL 変換 (XSLT) を作成します。XSL 変換は、結合時に適用されます。その結果、インポート対象の情報が記載された DOM ドキュメントと、この情報をターゲット ドキュメントにどのように組み込むかを指定した注釈が作成されます。この注釈は、 `https://schemas.microsoft.com/office/InfoPath/2003/aggregation` 名前空間の XML 属性です。
   
 XML 属性とそれぞれの値は、各ノードをターゲットの XML ドキュメントにどのように結合するかを明記した集計指示として機能します。次の節では、各属性について説明します。
   
@@ -70,7 +70,7 @@ XML 属性とそれぞれの値は、各ノードをターゲットの XML ド�
  agg:action="delete"/>
 ```
 
-`http://schemas.microsoft.com/office/InfoPath/2003/aggregation` インターフェイスを実装する XSL オブジェクトを表すには、  `http://schemas.microsoft.com/office/infopath/2003/aggregation-target` 名前空間に指定されている属性のほか、  **** 名前空間も使用します。このインターフェイスのメンバーの中で特に有益なのが、 **get-documentElement** です。
+`https://schemas.microsoft.com/office/InfoPath/2003/aggregation` インターフェイスを実装する XSL オブジェクトを表すには、  `https://schemas.microsoft.com/office/infopath/2003/aggregation-target` 名前空間に指定されている属性のほか、  **** 名前空間も使用します。このインターフェイスのメンバーの中で特に有益なのが、 **get-documentElement** です。
   
 ### <a name="get-documentelement"></a>get-documentElement
 
@@ -102,10 +102,10 @@ XML 属性とそれぞれの値は、各ノードをターゲットの XML ド�
     
     ```XML
         <?xml version="1.0"?> 
-        <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-        xmlns:agg="http://schemas.microsoft.com/office/infopath/2003/aggregation" 
-        xmlns:target="http://schemas.microsoft.com/office/infopath/2003/aggregation-target" 
-        xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2003-05-29T20:30:47"> 
+        <xsl:stylesheet version="1.0" xmlns:xsl="https://www.w3.org/1999/XSL/Transform" 
+        xmlns:agg="https://schemas.microsoft.com/office/infopath/2003/aggregation" 
+        xmlns:target="https://schemas.microsoft.com/office/infopath/2003/aggregation-target" 
+        xmlns:my="https://schemas.microsoft.com/office/infopath/2003/myXSD/2003-05-29T20:30:47"> 
             <xsl:template match="/"> 
                 <xsl:copy> 
                 <xsl:apply-templates select="@* | node()" /> 

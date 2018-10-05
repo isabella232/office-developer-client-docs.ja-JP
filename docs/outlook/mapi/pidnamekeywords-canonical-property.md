@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: bcc0cda0-02bc-49a5-9fb9-850b4c2867c1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: caa337541b45c2cb602f0848769b3b07028ea0fd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 90e5b370dace12dbe529465259b8551516fda491
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590541"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386370"
 ---
 # <a name="pidnamekeywords-canonical-property"></a>PidNameKeywords 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 キーワードやメッセージのオブジェクトのカテゴリが含まれています。
   
@@ -33,9 +33,9 @@ ms.locfileid: "22590541"
 |プロパティを設定します。  <br/> |PS_PUBLIC_STRINGS  <br/> |
 |プロパティ名:  <br/> |Keywords  <br/> |
 |データの種類 :   <br/> |PT_MV_UNICODE  <br/> |
-|領域:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 メッセージのオブジェクトでは、このプロパティの複数値文字列内の各文字列の長さのカテゴリを指定する複数行文字列値は 256 未満である必要があります。
   
@@ -43,15 +43,15 @@ ms.locfileid: "22590541"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > メッセージと添付ファイルのオブジェクトを処理します。
     
-[[MS OXODOC]](http://msdn.microsoft.com/library/103007c8-5066-4bed-84e3-4465907af098%28Office.15%29.aspx)
+[[MS OXODOC]](https://msdn.microsoft.com/library/103007c8-5066-4bed-84e3-4465907af098%28Office.15%29.aspx)
   
 > プロパティは、ドキュメントに対する許可の操作を指定します。
     

@@ -8,20 +8,20 @@ api_type:
 - COM
 ms.assetid: 83ff54c4-86ce-4529-ae45-260dfb763b30
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 40bbe110c7453cf2360fc103710fbc3bcb7f1c67
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 14dd11f873493e32b83dbd1960cac8ff8ef8e436
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572054"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387049"
 ---
 # <a name="implementing-a-service-provider-entry-point-function"></a>サービス プロバイダー エントリ ポイント関数の実装
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-すべてのサービス プロバイダーの DLL には、それをロードするのには MAPI を呼び出す関数をポイントするエントリがあります。 このエントリ ポイント関数は[DllMain](http://msdn.microsoft.com/en-us/library/ms682583.aspx)、Win32 DLL エントリ ポイント関数の場合と同様に注意します。
+すべてのサービス プロバイダーの DLL には、それをロードするのには MAPI を呼び出す関数をポイントするエントリがあります。 このエントリ ポイント関数は[DllMain](https://msdn.microsoft.com/library/ms682583.aspx)、Win32 DLL エントリ ポイント関数の場合と同様に注意します。
   
 、プロバイダーの種類によって、プロバイダーのエントリ ポイント関数は、別のプロトタイプに準拠しています。 MAPI では、サービス プロバイダーの別のエントリ ポイント関数のプロトタイプを定義します。
   

@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: bd026cb1-6d35-f9dc-e9dc-f95c0a6f2ff0
 description: 図面のヘッダーの中央の部分に表示されるテキスト文字列が含まれています。
-ms.openlocfilehash: a0da30ba9aeb55efce85746bb749d1cea7be1c7a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ff9a35d3377ad0392580df0e397ac48ff1395950
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805495"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385432"
 ---
 # <a name="headercenter-element-headerfootertype-complextype-visio-xml"></a>HeaderCenter 要素 (HeaderFooter_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805495"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[HeaderCenter_Type](headercenter_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
    

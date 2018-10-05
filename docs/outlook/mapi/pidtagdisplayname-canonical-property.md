@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: bd094e00-5c60-4bb3-9a45-b943fab52876
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 70b0508d9a19df42e4ab164aba58aaef44b0c01a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 834141fe3e57fde5e6404776e0ad5ce3b438450e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565488"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386419"
 ---
 # <a name="pidtagdisplayname-canonical-property"></a>PidTagDisplayName 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 特定の MAPI オブジェクトの表示名が含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22565488"
 |関連するプロパティ:  <br/> |PR_DISPLAY_NAME、PR_DISPLAY_NAME_A、PR_DISPLAY_NAME_W  <br/> |
 |識別子:  <br/> |0x3001  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |一般的な MAPI  <br/> |
+|エリア:  <br/> |一般的な MAPI  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 フォルダーには、一意の表示名を持つ兄弟のサブフォルダーが必要です。 などのフォルダーに 2 つのサブフォルダーが含まれている場合 2 つのサブフォルダーが同じ値をこのプロパティに使用することはできません。 この制限は、アドレス帳および配布リストなど、他のコンテナーには適用されません。 
   
@@ -55,31 +55,31 @@ ms.locfileid: "22565488"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > メッセージと添付ファイルのオブジェクトを処理します。
     
-[[MS OXCFOLD]](http://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
+[[MS OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
   
 > フォルダーの操作を処理します。
     
-[[MS OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > プロパティは、連絡先、個人用配布リストの許可の操作を指定します。
     
-[[MS OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
 > プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
     
-[[MS OXCMAIL]](http://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
 > メッセージ オブジェクト インターネット標準の電子メールの表記規則からに変換します。
     
-[[MS XWDVSEC]](http://msdn.microsoft.com/library/dc043d09-6b76-4392-aea3-68f8e81c64d8%28Office.15%29.aspx)
+[[MS XWDVSEC]](https://msdn.microsoft.com/library/dc043d09-6b76-4392-aea3-68f8e81c64d8%28Office.15%29.aspx)
   
 > 要求し、WebDAV メソッドを使用して Exchange のセキュリティ記述子を設定する方法を指定する WebDAV プロトコルを拡張します。
     

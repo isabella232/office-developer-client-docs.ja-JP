@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f6fd33d6-04fb-4801-a004-fb80a14ca79d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 21d1ee071aa5df24d0ddf641ff6f458a7de1cb3d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: eaff90de919c1bdc04983bce32a2aa808ae56013
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594279"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389611"
 ---
 # <a name="pidlidappointmentendwhole-canonical-property"></a>PidLidAppointmentEndWhole 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 予定の終了日時を表します。
   
@@ -33,9 +33,9 @@ ms.locfileid: "22594279"
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x0000820E  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
-|領域:  <br/> |予定表  <br/> |
+|エリア:  <br/> |予定表  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、Microsoft Office Outlook オブジェクト モデルでは、予定の**dispidApptEndWhole**プロパティに対応します。 
   
@@ -45,11 +45,11 @@ ms.locfileid: "22594279"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
     

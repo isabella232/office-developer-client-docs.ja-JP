@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4e775228-5ceb-4002-9b68-999fb5889b86
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 36e0db77097178d2db7a11b1339d19ebb8c91f2c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ddb730ed92db4c8d281e7c8d5d9b18bc44505598
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565327"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382947"
 ---
 # <a name="iabcontainercopyentries"></a>IABContainer::CopyEntries
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 1 つまたは複数のエントリ、メッセージを通常のユーザーまたは配布リストにコピーします。
   
@@ -70,7 +70,7 @@ CREATE_REPLACE
   
 > 2 つ重複していることが判明した場合に新しいエントリが既存のものを置換する必要があることを示します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -80,7 +80,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > コピー操作は完了しましたが、1 つまたは複数のエントリをコピーできませんでした。 この値が返されると、呼び出しを成功として処理する必要があります。 この値をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **IABContainer::CopyEntries**メソッドは、同じコンテナーまたは別のコンテナーからエントリをコピーします。 **CopyEntries**への呼び出しは、コピーするには、各エントリの次の呼び出しと同等の機能です。 
   
@@ -92,7 +92,7 @@ MAPI_W_PARTIAL_COMPLETION
     
 4. [IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを新しいエントリの保存を実行します。 
     
-5. コンテナーの参照を解放するのには、新しいエントリの[リ ス](http://msdn.microsoft.com/en-us/library/ms682317%28VS.85%29.aspx)のメソッドです。 
+5. コンテナーの参照を解放するのには、新しいエントリの[リ ス](https://msdn.microsoft.com/library/ms682317%28VS.85%29.aspx)のメソッドです。 
     
 ## <a name="notes-to-implementers"></a>実装者へのメモ
 

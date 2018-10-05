@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7ed604ef-e001-f379-92c3-391a18f22bb3
 description: 図形と、図形に関連付けられているイメージ データを含むドキュメント パーツ間のリレーションシップを指定します。
-ms.openlocfilehash: f54cd76788d6f5d916b9ed181f309687109dd589
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2667d5b0b940384f10df62dfc0fbf6acfa7d4ba6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806182"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383444"
 ---
 # <a name="rel-element-foreigndatatype-complextype-visio-xml"></a>Rel の要素 (ForeignData_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806182"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Rel_Type](rel_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |pages.xml、masters.xml、recordsets.xml、ページ番号の .xml、マスター # .xml  <br/> |
    
@@ -54,10 +54,10 @@ ms.locfileid: "19806182"
 |:-----|:-----|:-----|:-----|:-----|
 |r: id  <br/> |xsd:string  <br/> 注釈を参照してください。  <br/> |必須  <br/> |パーツへのリレーションシップを指定します。  <br/> |「# を削除する」  <br/> 注釈を参照してください。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **R: id**属性の値は、 **ST_RelationshipID**型である必要があります。 **ST_RelationshipID**型は、文字列形式にする必要がある 'rId #'、最後の文字がいくつかをする必要があります。 数は、 **Rel**の要素のすべての兄弟要素間で一意である必要があります。 
   
-ST_RelationshipID 型の詳細については、 [ISO/IEC 29500 の第 1 部の仕様](http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.md?csnumber=61750)を参照してください。
+ST_RelationshipID 型の詳細については、 [ISO/IEC 29500 の第 1 部の仕様](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.md?csnumber=61750)を参照してください。
   
 

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: e83c05c6-a7c0-486c-a112-58a39255767a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 33bf77029207e2d8d734d5c49735262135896660
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fc2774efed1a15fe79e167149f2cb162bae7642c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593726"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384438"
 ---
 # <a name="pidtaginconflict-canonical-property"></a>PidTagInConflict 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 添付ファイルが別のレプリカを表す場合、TRUE が格納されます。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22593726"
 |関連するプロパティ:  <br/> |PR_IN_CONFLICT  <br/> |
 |識別子:  <br/> |0x666C  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |競合メモ  <br/> |
+|エリア:  <br/> |競合メモ  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 電子メール クライアントとサーバーは、レプリカの同期中にメッセージの現在のバージョンとの競合を検出すると、競合解決メッセージを生成する必要があります。 ローカルのレプリカに、メッセージの現在のバージョンが現在の同期操作中に転送されることができることを理解する重要です。 競合既にが存在する場合、サーバー上でローカルのレプリカに矛盾したメッセージのいずれかにダウンロードされた前にこの行われます。 競合を解決すると、メッセージが競合する Pcl を持つ独立したレプリカと同期する必要があります。 メッセージ自体は、クライアントとサーバー間で同期されませんする必要があります、競合の解決します。独立したレプリカのみを交換する必要があります。 同期パートナーは、競合のメッセージの構造に一致する新しいメッセージを生成する必要があります。 したがって、クライアントとサーバーのどちらが「勝者」の項目を検出するために同じアルゴリズムを使用することがあります。 「勝者」を検出するためには、次の規則を適用する必要があります。
   
@@ -46,11 +46,11 @@ ms.locfileid: "22593726"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[MS OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
 > サーバーとクライアントの間のメッセージングのオブジェクト データの同期を処理します。
     

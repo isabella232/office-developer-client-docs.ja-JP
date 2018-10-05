@@ -7,13 +7,13 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a9c2f3d9-cea2-49a3-b709-40dc614b9f86
-description: このドキュメントは現状のまま提供されます。このドキュメントで説明されている情報およびビューは、URL および他のインターネット Web サイトの参照を含めて、予告なく変更されることがあります。このドキュメントの使用に伴うリスクはお客様が負うものとします。
-ms.openlocfilehash: 4a686a9d3e95ed143db69962ab45337cdb4d373d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このドキュメントは現状のまま提供されます。 情報および見解は、URL やその他のインターネット web サイトを含み、このドキュメントには、予告なしに変更可能性があります。 このドキュメントの使用に伴うリスクはお客様が負うものとします。
+ms.openlocfilehash: 108b34a05c4b1508ff79885ce4e0af55bbcf078b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "19804533"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389870"
 ---
 # <a name="office-2013-documentation-copyright-notice"></a>Office 2013 ドキュメントの著作権情報
 

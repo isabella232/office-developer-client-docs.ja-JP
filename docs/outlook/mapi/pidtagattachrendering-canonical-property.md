@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 1f31f7f4-fbda-4337-95e5-5474dd1bf84a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 45d4b0bfe7f902ee2cfe1d735c990d80f8fbb60d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 22d3e649641dbe688912ecece7fde73a555f4a88
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588945"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383192"
 ---
 # <a name="pidtagattachrendering-canonical-property"></a>PidTagAttachRendering 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 添付ファイルの表示情報を使用して Microsoft Windows メタファイルが含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22588945"
 |関連するプロパティ:  <br/> |PR_ATTACH_RENDERING  <br/> |
 |識別子:  <br/> |0x3709  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |メッセージの添付ファイル  <br/> |
+|エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティの目的は、アイコン、またはその他の添付ファイルの時点で親のメッセージ内で表示可能な図で表現を提供することにします。 通常、このような表現には、存在する場合、添付ファイルの名前や、Microsoft Office Word 文書の添付ファイルの内容が含まれます。 クライアント アプリケーションは、メッセージの表示で、この表現を使用できます。 
   
@@ -52,7 +52,7 @@ ms.locfileid: "22588945"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > メッセージと添付ファイルのオブジェクトを処理します。
     

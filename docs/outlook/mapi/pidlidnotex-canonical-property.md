@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b8a4f87c-1d7c-46be-88e6-f09aa1525423
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1c8e98883e58070cdee233387dc5b7161a9ecb1d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e4cf317cadcb1ef6fa6cf42fe1cf88735b01cf66
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589932"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383997"
 ---
 # <a name="pidlidnotex-canonical-property"></a>PidLidNoteX 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ユーザー インターフェイスにメッセージが表示されます、画面の左端からのピクセル単位の距離を指定します。
   
@@ -33,17 +33,17 @@ ms.locfileid: "22589932"
 |プロパティを設定します。  <br/> |PSETID_Note  <br/> |
 |長い ID (LID):  <br/> |0x00008B04  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |付箋  <br/> |
+|エリア:  <br/> |付箋  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXONOTE]](http://msdn.microsoft.com/library/6bf4ed7e-316c-4a3c-be27-5ec93e7ab39f%28Office.15%29.aspx)
+[[MS OXONOTE]](https://msdn.microsoft.com/library/6bf4ed7e-316c-4a3c-be27-5ec93e7ab39f%28Office.15%29.aspx)
   
 > プロパティとは、ノートの許可の操作を指定します。
     

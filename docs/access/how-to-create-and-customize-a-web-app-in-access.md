@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 628745f4-82e9-4838-9726-6f3e506a654f
-ms.openlocfilehash: 7a41bc4c9509f1d9cec49003fb775a3be2768703
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d837a83ea8773018033a27ec894375a22c15c8a3
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798606"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391123"
 ---
 # <a name="create-and-customize-a-web-app-in-access"></a>Access で Web アプリを作成してカスタマイズする
 
 > [!IMPORTANT]
-> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> 現在 Microsoft では、SharePoint での Access Web アプリの作成や使用は推奨していません。代替策として、[Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) を使用して、Web およびモバイル デバイス用の、コーディングが不要なビジネス ソリューションを構築することを検討してください。 
   
 Access 2013を特徴付けるものとして、新しいアプリケーション モデルがあります。これにより、領域の専門家は Web ベース アプリケーションをすばやく作成できます。Access に含まれる一連のテンプレートを使用してアプリケーションの作成にすぐに着手できます。
 
@@ -30,9 +30,9 @@ Access 2013を特徴付けるものとして、新しいアプリケーション
     
 - SharePoint 開発環境
     
-SharePoint 開発環境の設定に関する詳細については、 [SharePoint の全般的な開発環境のセットアップ](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)を参照してください。 
+SharePoint 開発環境の設定に関する詳細については、 [SharePoint の全般的な開発環境のセットアップ](https://docs.microsoft.com/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)を参照してください。 
   
-Access と SharePoint の入手方法の詳細については、「[ダウンロード](http://msdn.microsoft.com/en-US/office/apps/fp123627)」を参照してください。
+Access と SharePoint の入手方法の詳細については、「[ダウンロード](https://msdn.microsoft.com/office/apps/fp123627)」を参照してください。
 
 <a name="ac15_CreateAndCustomizeWebApp_CreateTheApp"> </a>
 
@@ -241,7 +241,7 @@ Access Web アプリの作成にすぐに着手するには、 に含まれる�
   
 ## <a name="see-also"></a>関連項目
 
-- [開発者へのアクセスの新機能](http://msdn.microsoft.com/library/df778f51-d65e-4c30-b618-65003ceb39b3%28Office.15%29.aspx) 
+- [開発者へのアクセスの新機能](https://msdn.microsoft.com/library/df778f51-d65e-4c30-b618-65003ceb39b3%28Office.15%29.aspx) 
 - [Access カスタム Web アプリ リファレンス](access-custom-web-app-reference.md)
   
 

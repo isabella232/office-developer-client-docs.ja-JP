@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 8c57e743-a798-4e39-a61a-46dff8b1ac7c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ddd9d3c0a61a3a2a585edd6c370285b2f6d424e3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3b4abef731541e308b2c2ebc6f4aaddf4458e257
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593719"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388246"
 ---
 # <a name="imsgstoreadvise"></a>IMsgStore::Advise
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージ ・ ストアに影響を与える特定のイベントの通知を受け取ることを登録します。
   
@@ -103,7 +103,7 @@ HRESULT Advise(
   
 > [out]呼び出し元の間の接続を表す、0 以外の接続番号へのポインターでは、シンク オブジェクトとメッセージ ストアを案内します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -113,7 +113,7 @@ MAPI_E_NO_SUPPORT
   
 > メッセージ ストア プロバイダーは、メッセージ ・ ストアを使用して通知の登録をサポートしていません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **IMsgStore::Advise**メソッドでは、シンク オブジェクトと、メッセージ ストアまたはメッセージ ・ ストア内のオブジェクトにアドバイスの呼び出し元の間の接続を確立します。 この接続を使用していずれかのアドバイズ シンクに通知を送信するか、アドバイズ ソース オブジェクトに、 _ulEventMask_パラメーターで指定されているより多くのイベントが発生します。 _LpEntryID_パラメーターが有効なエントリの識別子にポイントして、アドバイズ ソースは、このエントリの識別子によって識別されるオブジェクト。 _LpEntryID_が NULL の場合は、アドバイスのソースは、メッセージ ストアです。 
   
@@ -123,7 +123,7 @@ MAPI_E_NO_SUPPORT
 
 MAPI の支援の有無にかかわらず、通知をサポートすることができます。 MAPI サービス プロバイダーの通知を実装するために役立つ 3 つのサポート オブジェクトのメソッドを持つ: [IMAPISupport::Subscribe](imapisupport-subscribe.md)、 [IMAPISupport::Unsubscribe](imapisupport-unsubscribe.md)、および[IMAPISupport::Notify](imapisupport-notify.md)。 MAPI サポートされている方法を使用する場合、 **Subscribe**を呼び出して **、メソッド**が呼び出されたときと、 _lpAdviseSink_ポインターを解放します。 
   
-自分で通知をサポートするように選択する場合は、このポインターのコピーを保持するのには、 _lpAdviseSink_パラメーターで表されるアドバイズ シンクの[IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出します。 登録をキャンセルするのには、 [IMsgStore::Unadvise](imsgstore-unadvise.md)メソッドが呼び出されるまでは、このコピーを維持します。 
+自分で通知をサポートするように選択する場合は、このポインターのコピーを保持するのには、 _lpAdviseSink_パラメーターで表されるアドバイズ シンクの[IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出します。 登録をキャンセルするのには、 [IMsgStore::Unadvise](imsgstore-unadvise.md)メソッドが呼び出されるまでは、このコピーを維持します。 
   
 通知をサポートする方法に関係なく、通知の登録には 0 以外の接続番号を割り当てるし、 _lpulConnection_パラメーターに返すことです。 **Unadvise**が呼び出され、完了するまでは、この接続の数を解放しません。 
   
@@ -137,11 +137,11 @@ MAPI の支援の有無にかかわらず、通知をサポートすることが
   
 通知の処理の詳細については、[通知の処理](handling-notifications.md)を参照してください。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
 |BaseDialog.cpp  <br/> |CBaseDialog::OnNotificationsOn  <br/> |MFCMAPI では、 **IMsgStore::Advise**メソッドを使用して、全体のメッセージ ・ ストアに通知を登録します。  <br/> |
    

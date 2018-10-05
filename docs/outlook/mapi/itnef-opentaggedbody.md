@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 70d5b34c-85b3-4d1f-860e-2838947ba428
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 14964f367e3dbca484c4e1612b374a6a72ddf17b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 154d6e4a4e333f3a6165c3875bdcd57957ebf70c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593782"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383743"
 ---
 # <a name="itnefopentaggedbody"></a>ITnef::OpenTaggedBody
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 カプセル化されたメッセージのテキストのストリームのインタ フェースを開きます。
   
@@ -55,15 +55,15 @@ MAPI_MODIFY
     
  _lppStream_
   
-> [out]([PidTagBody](pidtagbody-canonical-property.md)) である**PR_BODY**プロパティを渡すには、からのテキストを含んでいるストリーム オブジェクトへのポインターへのポインターがメッセージをカプセル化し、 [IStream](https://docs.microsoft.com/en-us/windows/desktop/api/objidl/nn-objidl-istream)インターフェイスをサポートします。 
+> [out]([PidTagBody](pidtagbody-canonical-property.md)) である**PR_BODY**プロパティを渡すには、からのテキストを含んでいるストリーム オブジェクトへのポインターへのポインターがメッセージをカプセル化し、 [IStream](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-istream)インターフェイスをサポートします。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > 呼び出しが成功し、予期される値または値が返されます。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 トランスポート プロバイダー、メッセージ ストア プロバイダー、およびゲートウェイがカプセル化されたメッセージのテキストのストリーム インターフェイスを開くに**ITnef::OpenTaggedBody**メソッドを呼び出します (つまり、TNEF のオブジェクト)。 
   

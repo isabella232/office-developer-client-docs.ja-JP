@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b0e4a3b3-d1df-454d-b74c-b980b0b456f6
 description: この資料では、SharePoint Designer 2013 を使用して単純なワークフローを作成する方法について説明します。
-ms.openlocfilehash: d548cbc47585add2648396f4736e6ad36a00bcb5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bbefc5d30ccb508a24c32fe41e733e6e8187ecd9
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804570"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388302"
 ---
 # <a name="create-a-project-server-workflow-for-demand-management"></a>需要管理のために Project Server ワークフローを作成します。
 
-この資料では、SharePoint Designer 2013 を使用して単純なワークフローを作成する方法について説明します。 Visio 2013 にビジュアル化し、編集のワークフローをエクスポートまたは Visio 2013 を使用して、ワークフローを Project Server 2013 を設計し、SharePoint Designer 2013 Project Web App にパブリケーションの設計にインポートできます。 SharePoint ワークフローのプラットフォームと Visio 2013 および SharePoint Designer 2013 でワークフローを作成する方法の詳細については、SharePoint 2013 の開発者向けドキュメントでの[SharePoint 2013 のワークフロー](http://msdn.microsoft.com/en-us/library/jj163986%28office.15%29.aspx)の記事を参照してください。 
+この資料では、SharePoint Designer 2013 を使用して単純なワークフローを作成する方法について説明します。 Visio 2013 にビジュアル化し、編集のワークフローをエクスポートまたは Visio 2013 を使用して、ワークフローを Project Server 2013 を設計し、SharePoint Designer 2013 Project Web App にパブリケーションの設計にインポートできます。 SharePoint ワークフローのプラットフォームと Visio 2013 および SharePoint Designer 2013 でワークフローを作成する方法の詳細については、SharePoint 2013 の開発者向けドキュメントでの[SharePoint 2013 のワークフロー](https://msdn.microsoft.com/library/jj163986%28office.15%29.aspx)の記事を参照してください。 
   
-ワークフローのプロジェクトのサーバーを準備する方法の詳細についてを参照してください[を開始: 設定セットアップおよび SharePoint 2013 ワークフロー マネージャーを構成する](http://msdn.microsoft.com/en-us/library/jj163276%28office.15%29.aspx)です。
+ワークフローのプロジェクトのサーバーを準備する方法の詳細についてを参照してください[を開始: 設定セットアップおよび SharePoint 2013 ワークフロー マネージャーを構成する](https://msdn.microsoft.com/library/jj163276%28office.15%29.aspx)です。
 
 <a name="pj15_CreateWorkflowSPD_General"> </a>
 
@@ -67,7 +67,7 @@ SharePoint Designer 2013 を使用して Project Server 2013 のワークフロ�
 
 ## <a name="creating-a-branching-workflow"></a>分岐ワークフローを作成する
 
-SharePoint Designer 2013 を使用するには Project Server ワークフローを作成するのには、前に、Project Server 2013 のワークフロー アクティビティを使用するワークフロー マネージャーのクライアント 1.0 サービスを構成しなければなりません。 ワークフロー マネージャーのクライアント 1.0 を構成する方法の詳細については、SharePoint Server 2013 の開発者向けドキュメントでの[SharePoint 2013 のワークフロー](http://msdn.microsoft.com/en-us/library/jj163986%28office.15%29.aspx)の記事を参照してください。 
+SharePoint Designer 2013 を使用するには Project Server ワークフローを作成するのには、前に、Project Server 2013 のワークフロー アクティビティを使用するワークフロー マネージャーのクライアント 1.0 サービスを構成しなければなりません。 ワークフロー マネージャーのクライアント 1.0 を構成する方法の詳細については、SharePoint Server 2013 の開発者向けドキュメントでの[SharePoint 2013 のワークフロー](https://msdn.microsoft.com/library/jj163986%28office.15%29.aspx)の記事を参照してください。 
   
 次の詳細な手順には、[一般的なワークフローを作成する](#pj15_CreateWorkflowSPD_General)セクションと同じ手順が含まれています。 
   
@@ -77,7 +77,7 @@ SharePoint Designer 2013 を使用するには Project Server ワークフロー
 
 複数の Project Server ワークフローを統合できるステージし、需要管理プロセスの段階です。 ワークフローは複雑になるためは、ビジネス要件を理解してワークフローを慎重に計画する必要があります。 単純な例については、提案が受け入れられるかどうかを決定するプロジェクトの提案の見積原価を使用する分岐ワークフローを設計します。 推定コストが大きい場合よりも $25,000 米ドル、拒絶します。それ以外の場合、提案を承諾し、プロジェクトを作成します。
     
-Visio 2013 と SharePoint Designer 2013 を使用するには、設計を支援し、Project Server 2013 のワークフローを作成、ためするより簡単に試してみることがワークフローに Project Server 2010 では不可能な。 この資料のサンプル ワークフローの設計は、プロジェクト 2010 SDK 内の[分岐ワークフローを作成する](http://msdn.microsoft.com/library/a02cafdc-d881-4271-b446-d8b2cd456a52%28Office.15%29.aspx)資料と同じです。 設計および Project Web App のテスト インスタンスを使用してリモート コンピューター上のテストのワークフローを作成することができます: Project Server 2013 のコンピューター上で直接ワークフローを作成する必要はありません。 
+Visio 2013 と SharePoint Designer 2013 を使用するには、設計を支援し、Project Server 2013 のワークフローを作成、ためするより簡単に試してみることがワークフローに Project Server 2010 では不可能な。 この資料のサンプル ワークフローの設計は、プロジェクト 2010 SDK 内の[分岐ワークフローを作成する](https://msdn.microsoft.com/library/a02cafdc-d881-4271-b446-d8b2cd456a52%28Office.15%29.aspx)資料と同じです。 設計および Project Web App のテスト インスタンスを使用してリモート コンピューター上のテストのワークフローを作成することができます: Project Server 2013 のコンピューター上で直接ワークフローを作成する必要はありません。 
     
 #### <a name="2-create-the-entities-that-your-workflow-requires"></a>2. ワークフローを必要とするエンティティを作成します。
 
@@ -138,7 +138,7 @@ Project Web App では、使用可能なワークフローのフェーズとス�
 
 SharePoint Designer 2013 では、テキスト ベースのデザイナーの宣言ステートメントを使用してワークフローを構築します。 ワークフロー ロジックとこれまでの手順を実行すると、状況依存の自動補完のステートメントを取得するのにはオレンジ色の挿入行で入力を開始することができます。 またはリボンの [**ワークフロー** ] タブで [**挿入**] でコントロールを使用して、ロジックと手順を挿入することができます。 
     
-1. SharePoint Designer 2013 の Backstage ビューでは、**サイトを開く**を選択します。 たとえば、 `http://ServerName/pwa`。 **ナビゲーション**・ ペインでは、**ワークフロー**を選択します。 次に、リボンの [**新規**] グループの [**ワークフロー** ] タブでは、**サイトのワークフロー**を選択します。 この例では、分岐ワークフローのワークフローの名前です。 **プラットフォームの種類**」ドロップ ダウン リストで**SharePoint 2013 ワークフロー ・ プロジェクトのサーバー**が選択されていることを確認 (図 5 を参照してください)。 
+1. SharePoint Designer 2013 の Backstage ビューでは、**サイトを開く**を選択します。 たとえば、 `https://ServerName/pwa`。 **ナビゲーション**・ ペインでは、**ワークフロー**を選択します。 次に、リボンの [**新規**] グループの [**ワークフロー** ] タブでは、**サイトのワークフロー**を選択します。 この例では、分岐ワークフローのワークフローの名前です。 **プラットフォームの種類**」ドロップ ダウン リストで**SharePoint 2013 ワークフロー ・ プロジェクトのサーバー**が選択されていることを確認 (図 5 を参照してください)。 
     
     **図 5. Project Server サイト ワークフローの作成**
 
@@ -275,7 +275,7 @@ Project Web App では、ワークフローの EPT を作成し、プロジェ�
 
 ワークフローを変更するにするを作成またはワークフロー制御のユーザー設定フィールドを変更および作成したりワークフロー フェーズとステージを変更できます。 条件、アクション、ループ、およびステージを追加し、保存して、ワークフローを再発行する SharePoint Designer 2013 を使用することができます。 再利用したり、ワークフローのバックアップを保管、Visio 2013 ファイルにエクスポートできます。 
   
-作成または Visio 2013 でワークフローを編集して SharePoint Designer 2013 Project Web App で使用するファイルをインポートします。 Project Web App インスタンスは、変更されていないワークフローを使用するには、Project Web App インスタンスを元のものと同じワークフロー ステージのプロパティを含める必要があります。 Visio を使用してワークフローを作成するための詳細については、 [SharePoint Designer 2013 と Visio 2013 でワークフローの開発](http://msdn.microsoft.com/en-us/library/jj163272%28office.15%29.aspx)を参照してください。
+作成または Visio 2013 でワークフローを編集して SharePoint Designer 2013 Project Web App で使用するファイルをインポートします。 Project Web App インスタンスは、変更されていないワークフローを使用するには、Project Web App インスタンスを元のものと同じワークフロー ステージのプロパティを含める必要があります。 Visio を使用してワークフローを作成するための詳細については、 [SharePoint Designer 2013 と Visio 2013 でワークフローの開発](https://msdn.microsoft.com/library/jj163272%28office.15%29.aspx)を参照してください。
   
 > [!NOTE]
 > Visio 2013 ファイルを Project Web App の別のインスタンスにインポートする場合は、ステージの名前が同じ場合でも異なるステージ Guid があるステージ。 ワークフローをインポートした後は、Project Web App インスタンスに固有の値を使用するステージとアクション プロパティを構成する必要があります。 
@@ -318,7 +318,7 @@ Project Web App では、ワークフローの EPT を作成し、プロジェ�
   
    8. [**プロセス**] タブの [**ダイアグラムの検証**] で、リボンの **[図のチェック**を選択します。 エラーを修正し、図面を保存します。 たとえば、Visio.vsdx からファイルのテストのワークフローの名前を付けます。
     
-      ワークフローのエラーを修正する方法の詳細については、 [Visio 2013 でワークフローの検証エラーを SharePoint Server 2013 のトラブルシューティング](http://msdn.microsoft.com/en-us/library/jj163971%28v=office.15%29.aspx)を参照してください。
+      ワークフローのエラーを修正する方法の詳細については、 [Visio 2013 でワークフローの検証エラーを SharePoint Server 2013 のトラブルシューティング](https://msdn.microsoft.com/library/jj163971%28v=office.15%29.aspx)を参照してください。
     
 2. SharePoint Designer 2013 を開き、Project Web App サイトと同じ**ワークフローの分岐**の例を使用して、開きます。 
     
@@ -359,10 +359,10 @@ Visio 2013」および「SharePoint デザイナー共同設計者、プロジ�
 ## <a name="see-also"></a>関連項目
 
 - [Project Server 2013 のアーキテクチャ](project-server-2013-architecture.md)
-- [[開始] SharePoint 2013 ワークフロー マネージャーをセットアップおよび構成する](http://msdn.microsoft.com/en-us/library/jj163276%28office.15%29.aspx)
-- [SharePoint 2013 でワークフローをパッケージ化して展開する方法の概要](http://msdn.microsoft.com/en-us/library/jj819316%28office.15%29.aspx)
-- [Microsoft SharePoint 2010 SDK へようこそ](http://msdn.microsoft.com/en-us/library/jj163986%28office.15%29.aspx)
-- [Workflow development in SharePoint Designer 2013 and Visio 2013](http://msdn.microsoft.com/en-us/library/jj163272%28office.15%29.aspx)
-- [Visio 2013 での SharePoint Server 2013 ワークフロー検証エラーのトラブルシューティング](http://msdn.microsoft.com/en-us/library/jj163971%28v=office.15%29.aspx)
-- [ワークフローおよび需要管理](http://msdn.microsoft.com/library/cf7433a3-a531-4467-ac0c-df0c5d6881ae%28Office.15%29.aspx)
+- [[開始] SharePoint 2013 ワークフロー マネージャーをセットアップおよび構成する](https://msdn.microsoft.com/library/jj163276%28office.15%29.aspx)
+- [SharePoint 2013 でワークフローをパッケージ化して展開する方法の概要](https://msdn.microsoft.com/library/jj819316%28office.15%29.aspx)
+- [Microsoft SharePoint 2010 SDK へようこそ](https://msdn.microsoft.com/library/jj163986%28office.15%29.aspx)
+- [Workflow development in SharePoint Designer 2013 and Visio 2013](https://msdn.microsoft.com/library/jj163272%28office.15%29.aspx)
+- [Visio 2013 での SharePoint Server 2013 ワークフロー検証エラーのトラブルシューティング](https://msdn.microsoft.com/library/jj163971%28v=office.15%29.aspx)
+- [ワークフローおよび需要管理](https://msdn.microsoft.com/library/cf7433a3-a531-4467-ac0c-df0c5d6881ae%28Office.15%29.aspx)
 

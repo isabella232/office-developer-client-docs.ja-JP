@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 7561112b-ca72-4c49-a8a0-cc1879a4e151
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8082b0b6d47a16a79f5e426375e20b17d22298d4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5b660b592e77279a4d60f3a036724341352c9b6a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586621"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390920"
 ---
 # <a name="pidtagmessageflags-canonical-property"></a>PidTagMessageFlags 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 原点とメッセージの現在の状態を示すフラグのビットマスクを格納します。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22586621"
 |関連するプロパティ:  <br/> |PR_MESSAGE_FLAGS  <br/> |
 |識別子:  <br/> |0x0E07  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、送信側と関連するクライアント アプリケーションまたはストア プロバイダーによって値が異なると、転送の終了を受信の両方で公開されている nontransmittable メッセージ プロパティです。 このプロパティは、状態メッセージが作成され、最初に保存しし、定期的に更新されるメッセージ ストア プロバイダー、トランスポート プロバイダーでは、MAPI スプーラーによってメッセージが処理されるときにクライアントまたはメッセージのストア プロバイダーを初期化します。変更します。 
   
@@ -114,11 +114,11 @@ MSGFLAG_UNSENT
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > メッセージと添付ファイルのオブジェクトを処理します。
     

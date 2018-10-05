@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 6e82fe94-47bd-4a25-b25b-0ab6fe2db274
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 83194b47faf7892d5da568a354921511eb097210
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c2b9176e21341ef28e6f0bc007757b097a05daee
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582953"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386573"
 ---
 # <a name="formprintsetup"></a>FORMPRINTSETUP
 
@@ -69,13 +69,13 @@ MAPI_UNICODE
   
 > 印刷する添付ファイルがあるかどうかを示すフラグです。 添付ファイルを印刷する場合は、 **ulFPrintAttachments**メンバーが 1 に設定されています。 印刷するのには添付ファイルがない場合は、0 に設定されています。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **FORMPRINTSETUP**構造体を使用して、フォーム オブジェクトの印刷のセットアップ情報について説明します。 [IMAPIViewContext::GetPrintSetup](imapiviewcontext-getprintsetup.md)の実装は、 **FORMPRINTSETUP**構造体を入力し、 **GetPrintSetup**の_lppFormPrintSetup_の出力パラメーターの内容に返します。
   
 MAPI_UNICODE フラグが**GetPrintSetup**の_ulFlags_パラメーターで渡された場合は、 **hDevmode**および**と**のメンバーによって参照される文字列は Unicode 形式のはずです。 それ以外の場合、文字列は、ANSI 形式でなければなりません。 
   
-**IMAPIViewContext**を実装するフォームの閲覧者は[MAPIAllocateBuffer](mapiallocatebuffer.md)、MAPI アロケーター関数を使用する**FORMPRINTSETUP**構造体を割り当てる必要がありますが、 **hDevMode**および**と**、個々 のメンバーを割り当てるWindows 関数[調べます](http://go.microsoft.com/fwlink/?LinkId=132110)。 メモリのリリースは、同様に処理されます。 [GlobalFree](http://go.microsoft.com/fwlink/?LinkId=132108) Windows 関数を使用して[MAPIFreeBuffer](mapifreebuffer.md)関数を使用して**FORMPRINTSETUP**構造体を解放する必要がありますが、 **hDevMode**および**と**のメンバーを解放する必要があります。 
+**IMAPIViewContext**を実装するフォームの閲覧者は[MAPIAllocateBuffer](mapiallocatebuffer.md)、MAPI アロケーター関数を使用する**FORMPRINTSETUP**構造体を割り当てる必要がありますが、 **hDevMode**および**と**、個々 のメンバーを割り当てるWindows 関数[調べます](https://go.microsoft.com/fwlink/?LinkId=132110)。 メモリのリリースは、同様に処理されます。 [GlobalFree](https://go.microsoft.com/fwlink/?LinkId=132108) Windows 関数を使用して[MAPIFreeBuffer](mapifreebuffer.md)関数を使用して**FORMPRINTSETUP**構造体を解放する必要がありますが、 **hDevMode**および**と**のメンバーを解放する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

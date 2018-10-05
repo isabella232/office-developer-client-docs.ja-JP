@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 7310a0f2-a109-40a4-99bf-e963d754a067
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 82d043adfe6e480b4d490f44ad89d73535c80c9c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7605739dd6d0f0205a1a4f09eb8c45d235c0c179
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569779"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389772"
 ---
 # <a name="pidtagmessageccme-canonical-property"></a>PidTagMessageCcMe 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 このメッセージングのユーザーを選択し、具体的にはこのメッセージのカーボン コピー (CC) 受信者という配布リストの一部ではない場合、TRUE が格納されます。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22569779"
 |関連するプロパティ:  <br/> |PR_MESSAGE_CC_ME  <br/> |
 |識別子:  <br/> |0x0058  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティを確認するかどうかユーザー名に明示的にカーボン コピー受信者一覧で、リスト内のすべてのエントリを検査せずに便利な方法を提供します。 
   
@@ -48,11 +48,11 @@ ms.locfileid: "22569779"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
     

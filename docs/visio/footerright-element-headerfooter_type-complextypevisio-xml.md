@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: ad752f2d-25c9-8890-885b-87266a8052b8
 description: 図面のフッターの右側に表示されるテキスト文字列が含まれています。
-ms.openlocfilehash: aebf2eae2a91d6392a97abc38405ffebf1a3d640
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9977f0e86527b9e66784b2cd8ad0f2554030f7db
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805439"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387861"
 ---
 # <a name="footerright-element-headerfootertype-complextype-visio-xml"></a>フッター要素 (HeaderFooter_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805439"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[FooterRight_Type](footerright_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
    

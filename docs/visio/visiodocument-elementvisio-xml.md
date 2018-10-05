@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: f5954685-3a2d-7848-388f-5dd7e536551c
 description: Microsoft Visio ドキュメントのルート要素です。
-ms.openlocfilehash: 5a325b78ec64708246f0c8a6f5396c2ce1569121
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9829fa8960d78777e0fff4306b96978da90a647d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806787"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391305"
 ---
 # <a name="visiodocument-element-visio-xml"></a>VisioDocument 要素 ('Visio XML')
 
@@ -23,7 +23,7 @@ Microsoft Visio ドキュメントのルート要素です。
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[VisioDocument_Type](visiodocument_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
    

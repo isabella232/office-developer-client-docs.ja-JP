@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 25af3683-3a65-2d39-6f6e-76c8d36f866d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 69023d2c13037fb52a4d1dc4f7376efbd839aebc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 14b2904e57852c564395f4b27c9d5270afd1454a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581700"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385726"
 ---
 # <a name="iconvertersessionsetcharset"></a>IConverterSession::SetCharSet
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 オプションの文字セットを MAPI MIME コンバーターの使用する MAPI メッセージを MIME ストリームに変換するときを指定します。
   
@@ -42,23 +42,23 @@ HRESULT SetCharset(
     
  _hcharset_
   
-> [in]Windows メールの mimeole.h で定義されているように設定する文字へのハンドル。 指定**null**を任意の特定の文字セットを適用しないことを指定します。 非**null**値は、文字セットへのハンドルを取得するのには[MimeOleGetCodePageCharset](http://msdn.microsoft.com/en-us/library/ms714746%28VS.85%29.aspx)のような関数を使用します。 
+> [in]Windows メールの mimeole.h で定義されているように設定する文字へのハンドル。 指定**null**を任意の特定の文字セットを適用しないことを指定します。 非**null**値は、文字セットへのハンドルを取得するのには[MimeOleGetCodePageCharset](https://msdn.microsoft.com/library/ms714746%28VS.85%29.aspx)のような関数を使用します。 
     
  _csetapplytype_
   
 > [in]Windows メールの mimeole.h で定義されている、メッセージの変換を設定する文字を適用する方法を示します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK
   
 > 関数の呼び出しが成功します。
     
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
 |MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI では、MimeToMAPI を使用して、MAPI メッセージを EML ファイルに変換します。  <br/> |
 |MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI では、MAPIToMIMEStm を使用して、MAPI メッセージを EML ファイルに変換します。  <br/> |

@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5ee7fb05-cfb3-6b68-5a9a-1d6375f2e879
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5b3160bb81cee86aeab4e7eecb76fb409d8e7c4b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1992e34a684a6b5894963eae0c299b21c064578c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581609"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390276"
 ---
 # <a name="get-the-path-of-a-specific-version-of-mapi-for-the-default-mail-client"></a>既定のメール クライアントの MAPI の特定のバージョンのパスを取得します。
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 このトピックには、コンピューター上の既定のメール クライアントで使用されている MAPI の特定のバージョンのパスを取得する方法について説明する C++ のコード サンプルが含まれています。 MAPI メール クライアントには、レジストリに MAPI スタブ ライブラリが読み込まれ、MAPI をディスパッチするカスタム DLL の呼び出しで指定するオプションがあります。 既定のメール クライアントでこのカスタム DLL を設定するレジストリ キーでは、 **MSIComponentID**既定のメール クライアントの**HKLM\Software\Clients\Mail**キーの下。 MAPI スタブ ライブラリによってエクスポートされた[FGetComponentPath](fgetcomponentpath.md)関数は、mapistub.dll、 **MSIComponentID**レジストリ キーに指定されている MAPI のカスタム バージョンのパスを返すことができます。 
   
@@ -36,7 +36,7 @@ ms.locfileid: "22581609"
     
 5. **FGetComponentPath**の値を指定するには`{FF1D0740-D227-11D1-A4B0-006008AF820E}`、Outlook 2007 を使用する MAPI のバージョンへのパスを取得します。
     
-英語と英語以外のロケールのローカライズされたコピー MAPI をサポートするためにサンプル コード**MSIApplicationLCID**と**MSIOfficeLCID**のサブキーの値を読み取り、 **FGetComponentPath**、最初に指定する**を呼び出して注意してください。MSIApplicationLCID** *szQualifier* 、 *szQualifier*と**MSIOfficeLCID**もう一度指定するとします。 英語以外の言語をサポートするメール クライアントのレジストリ キーの詳細については、[設定の [MSI のキーの MAPI DLL](http://msdn.microsoft.com/en-us/library/ee909494%28VS.85%29.aspx)を参照してください。
+英語と英語以外のロケールのローカライズされたコピー MAPI をサポートするためにサンプル コード**MSIApplicationLCID**と**MSIOfficeLCID**のサブキーの値を読み取り、 **FGetComponentPath**、最初に指定する**を呼び出して注意してください。MSIApplicationLCID** *szQualifier* 、 *szQualifier*と**MSIOfficeLCID**もう一度指定するとします。 英語以外の言語をサポートするメール クライアントのレジストリ キーの詳細については、[設定の [MSI のキーの MAPI DLL](https://msdn.microsoft.com/library/ee909494%28VS.85%29.aspx)を参照してください。
   
 ```cpp
 // HrGetRegMultiSZValueA 

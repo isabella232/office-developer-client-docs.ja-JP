@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 2813c102-6778-4443-ab4b-b573f3568705
 description: '最終更新日: 2013 年 1 月 30 日'
-ms.openlocfilehash: 547733f815c7d8c8762e79febce40ee9fec07d3a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 841b01ae8dfcf841b0a1d64113ce7258c4c61583
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574532"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389261"
 ---
 # <a name="nickname-cache"></a>ニックネーム キャッシュ
 
  
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 Microsoft Office Outlook 2007、Microsoft Outlook 2010 では、および Microsoft Outlook 2013 の対話、ニックネームのキャッシュとも呼ばれる「オートコンプリートのストリーム。」 オートコンプリートのストリームでは、Outlook には、オートコンプリートの一覧**に** **[cc]**、[表示名のリストが引き続き発生して、ユーザーが電子メールを作成するときに、 **[Bcc** ] ボックス。 このトピックでは、Outlook 2007 と Outlook 2010、Outlook 2013 がオートコンプリートのストリームとどのようにやり取りする方法について説明し、オートコンプリートのストリームと対話するための推奨される方法と、ファイルのバイナリ形式についても説明します。 
   
@@ -37,7 +37,7 @@ Outlook 2007 オブジェクト モデルまたは MAPI Api への依存関係�
   
  **Outlook 2007**
   
-Outlook 2007 では、オートコンプリートのストリームは、同じ名前のプロファイルと .nk2 という拡張子を持つファイルに格納されます。 たとえば、"outlook"の既定のプロファイルを使用する場合、"outlook.nk2"にファイルが呼び出されます。 .Nk2 ファイルは、%appdata%\microsoft\outlook に格納されます。 ニックネーム キャッシュのバイナリ ファイル形式の詳細については、 [Outlook 2003/2007 NK2 ファイル形式と開発者のガイドライン](http://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)を参照してください。
+Outlook 2007 では、オートコンプリートのストリームは、同じ名前のプロファイルと .nk2 という拡張子を持つファイルに格納されます。 たとえば、"outlook"の既定のプロファイルを使用する場合、"outlook.nk2"にファイルが呼び出されます。 .Nk2 ファイルは、%appdata%\microsoft\outlook に格納されます。 ニックネーム キャッシュのバイナリ ファイル形式の詳細については、 [Outlook 2003/2007 NK2 ファイル形式と開発者のガイドライン](https://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)を参照してください。
   
  **Outlook 2010、Outlook 2013**
   
@@ -84,5 +84,5 @@ Outlook は、アドレス指定機能を持つ項目が初期化されるたび
 [MAPI プロファイル](mapi-profiles.md)
 
 
-[Outlook 2003/2007 の NK2 ファイル形式と開発者のガイドライン](http://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)
+[Outlook 2003/2007 の NK2 ファイル形式と開発者のガイドライン](https://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)
 

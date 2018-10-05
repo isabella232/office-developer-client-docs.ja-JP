@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: f5310aa0-75f5-4c33-897e-8cae5de2100a
 description: ソリューションの開発と Visio のカスタマイズを行う方法を記載したコンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、技術記事をご覧ください。
-ms.openlocfilehash: e55c5ab195cf8f17eae98dbe61154b6a8fa7651e
-ms.sourcegitcommit: 539bc9a767ede52cb17c1b11ef7fac2fecd96fef
+ms.openlocfilehash: 7dbb12b76835641f9bf45bf78876fd667bacb19a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "22554163"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391193"
 ---
 # <a name="visio"></a>Visio
 
@@ -37,9 +37,9 @@ ms.locfileid: "22554163"
   
 ### <a name="downloads"></a>ダウンロード
   
-- [Visio 2013 SDK のダウンロード](http://www.microsoft.com/download/details.aspx?id=36825)
+- [Visio 2013 SDK のダウンロード](https://www.microsoft.com/download/details.aspx?id=36825)
 
-- [Visio 2016 SDK のダウンロード](http://www.microsoft.com/download/details.aspx?id=51221)  
+- [Visio 2016 SDK のダウンロード](https://www.microsoft.com/download/details.aspx?id=51221)  
 
 ### <a name="other-resources"></a>その他のリソース
   

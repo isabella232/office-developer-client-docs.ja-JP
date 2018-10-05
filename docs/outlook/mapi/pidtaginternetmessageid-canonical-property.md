@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 5c93d00c-a199-4d45-9bf6-87bd2ffe4784
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3ce5de883d28d7575a8abb83ec48454752ea7ba6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c2cc0eabd9c329953d9b0d252418549ea1c588a1
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580482"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391928"
 ---
 # <a name="pidtaginternetmessageid-canonical-property"></a>PidTagInternetMessageId 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 [RFC2822] で指定されているメッセージ ID] フィールドに対応します。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22580482"
 |関連するプロパティ:  <br/> |PR_INTERNET_MESSAGE_ID、PR_INTERNET_MESSAGE_ID_A、PR_INTERNET_MESSAGE_ID_W  <br/> |
 |識別子:  <br/> |0x1035  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |MIME  <br/> |
+|エリア:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 これらのプロパティは、すべての電子メール メッセージに含める必要があります。
   
@@ -42,11 +42,11 @@ ms.locfileid: "22580482"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
     

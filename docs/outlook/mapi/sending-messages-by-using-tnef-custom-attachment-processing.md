@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: da318b6f-128a-44b5-8357-a130022030a1
 description: '�ŏI�X�V��: 2015�N12��7��'
-ms.openlocfilehash: 0c7cdf754b2a4b38516b1ac06074fdba9d2227f2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f9d154b26319f5ed72b1abd6aeef307d07a63bda
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577745"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388568"
 ---
 # <a name="sending-messages-by-using-tnef-custom-attachment-processing"></a>TNEF ユーザー設定添付ファイル処理を使用したメッセージの送信
 
  
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージを送信するときは、添付ファイルの処理をカスタマイズします。
   
@@ -41,7 +41,7 @@ ms.locfileid: "22577745"
     
 9. [ITnef::OpenTaggedBody](itnef-opentaggedbody.md)メソッドを呼び出すことによって、タグ付けされたメッセージのテキストを取得します。 このタグ付きテキストは、メッセージング システムの添付ファイルのモデルを使用してエンコードして、メッセージング システムに書き込まれます、 **IStream**インターフェイスからメソッドを使用して読み取られます。 
     
-10. [ITnef](itnefiunknown.md)オブジェクトを解放する[が](http://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx)メソッドを呼び出します。 
+10. [ITnef](itnefiunknown.md)オブジェクトを解放する[が](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx)メソッドを呼び出します。 
     
 11. メッセージング システムの添付ファイルのモデルを使用してメッセージング システムに残りの添付ファイルを作成します。
     

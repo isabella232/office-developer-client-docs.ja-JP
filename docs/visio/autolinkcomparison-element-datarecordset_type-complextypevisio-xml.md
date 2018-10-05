@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: af5eb7fd-89c6-49bf-4e45-431b63d6cd6a
 description: 前回成功した自動リンクで実行されたアクション ユーザー インターフェイスからの図形データ項目の親データ レコード セットの要素内の列を比較するルールを定義します。
-ms.openlocfilehash: 38970a84676f769c36c9bdc3f8334652f7d9ec21
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 474acc4c1d259621881ea498decfeaf18b69809e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804800"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385719"
 ---
 # <a name="autolinkcomparison-element-datarecordsettype-complextype-visio-xml"></a>AutoLinkComparison 要素 (DataRecordSet_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19804800"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[AutoLinkComparison_Type](autolinkcomparison_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |recordsets.xml  <br/> |
    

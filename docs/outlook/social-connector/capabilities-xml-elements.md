@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1951643d-e3ca-4d04-bc0c-10d9d0b35dad
 description: このトピックの表は、機能の XML 子要素を説明しをサポートしている領域ごとにグループ化します。
-ms.openlocfilehash: 53bce69bbe22f6e950302a92b0ada21ed0f5a1f4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6816bbdcd24eceffc47d6b9d0835a90c7089c039
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804328"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387252"
 ---
 # <a name="capabilities-xml-elements"></a>機能 XML の要素
 
@@ -71,7 +71,7 @@ OSC プロバイダーでサポートされているアクティビティの同�
 
 |**要素**|**説明**|
 |:-----|:-----|
-|**実装しています。** <br/> | OSC プロバイダーをサポートするハッシュ関数を指定します。 OSC プロバイダーのソーシャル ネットワークや基幹業務アプリケーションに登録されていないユーザーの個人情報保護のため、 **ISocialSession2::GetPeopleDetails**と**ISocialSession2 にハッシュ化された e メール アドレスを渡されます。GetActivitiesEx**。  <br/>  プロバイダーが使用可能な値のいずれかに**実装しています。** を設定する必要があります**dynamicContactsLookup**が**true**に設定、または**dynamicActivitiesLookupEx**が**true**に設定されて、: **SHA1**、 **MD5**、または**CRC32MD5**。 **実装しています。** が存在しないか不適切な値を指定する場合、OSC はエラーを返します。  <br/> **SHA1**は、インターネット技術標準化委員会 (IETF) 米国のセキュリティで保護されたハッシュ アルゴリズム[[RFC3174]](http://www.rfc-editor.org/rfc/rfc3174.txt)で定義されている 1 です。 電子メール アドレス melissa@contoso.com の**SHA1**ハッシュ値は、たとえば、 `bb81577b567262a21a4df5f6e335c1250acd7b50`。  <br/> **MD5**は、 [[RFC1321]](http://www.rfc-editor.org/rfc/rfc1321.txt)で定義されている、インターネット技術標準化委員会 (IETF) MD5 メッセージ ダイジェスト アルゴリズムです。 電子メール アドレス melissa@contoso.com の**MD5**ハッシュ値は、たとえば、 `c8c39e61ca1662477b39b83d7b0a0615`。  <br/> **CRC32MD5**は**CRC32**の組み合わせであり、 **MD5**は次のように定義されています。  <br/>  先頭および末尾の空白文字とすべての文字を小文字に変換を削除することによって電子メール アドレスを正規化します。  <br/>  正規化された電子メール アドレスの**CRC32**の値を計算し、この値の 10 進の整数表現を使用します。 実装では、符号付き整数が返された場合は、符号なし整数の符号付き整数を変換する必要があります。  <br/>  正規化された電子メール アドレスの**MD5**値を計算し、この値を使用して小文字の A F から) の 16 進表現を使用します。  <br/>  アンダー スコアでこれら 2 つの値を結合します。  <br/>  電子メール アドレス melissa@contoso.com の**CRC32MD5**のハッシュ値は、たとえば、 `2149665315_c8c39e61ca1662477b39b83d7b0a0615`。  <br/> |
+|**実装しています。** <br/> | OSC プロバイダーをサポートするハッシュ関数を指定します。 OSC プロバイダーのソーシャル ネットワークや基幹業務アプリケーションに登録されていないユーザーの個人情報保護のため、 **ISocialSession2::GetPeopleDetails**と**ISocialSession2 にハッシュ化された e メール アドレスを渡されます。GetActivitiesEx**。  <br/>  プロバイダーが使用可能な値のいずれかに**実装しています。** を設定する必要があります**dynamicContactsLookup**が**true**に設定、または**dynamicActivitiesLookupEx**が**true**に設定されて、: **SHA1**、 **MD5**、または**CRC32MD5**。 **実装しています。** が存在しないか不適切な値を指定する場合、OSC はエラーを返します。  <br/> **SHA1**は、インターネット技術標準化委員会 (IETF) 米国のセキュリティで保護されたハッシュ アルゴリズム[[RFC3174]](https://www.rfc-editor.org/rfc/rfc3174.txt)で定義されている 1 です。 電子メール アドレス melissa@contoso.com の**SHA1**ハッシュ値は、たとえば、 `bb81577b567262a21a4df5f6e335c1250acd7b50`。  <br/> **MD5**は、 [[RFC1321]](https://www.rfc-editor.org/rfc/rfc1321.txt)で定義されている、インターネット技術標準化委員会 (IETF) MD5 メッセージ ダイジェスト アルゴリズムです。 電子メール アドレス melissa@contoso.com の**MD5**ハッシュ値は、たとえば、 `c8c39e61ca1662477b39b83d7b0a0615`。  <br/> **CRC32MD5**は**CRC32**の組み合わせであり、 **MD5**は次のように定義されています。  <br/>  先頭および末尾の空白文字とすべての文字を小文字に変換を削除することによって電子メール アドレスを正規化します。  <br/>  正規化された電子メール アドレスの**CRC32**の値を計算し、この値の 10 進の整数表現を使用します。 実装では、符号付き整数が返された場合は、符号なし整数の符号付き整数を変換する必要があります。  <br/>  正規化された電子メール アドレスの**MD5**値を計算し、この値を使用して小文字の A F から) の 16 進表現を使用します。  <br/>  アンダー スコアでこれら 2 つの値を結合します。  <br/>  電子メール アドレス melissa@contoso.com の**CRC32MD5**のハッシュ値は、たとえば、 `2149665315_c8c39e61ca1662477b39b83d7b0a0615`。  <br/> |
    
 ## <a name="capabilities-for-supporting-authentication-and-account-configuration"></a>認証およびアカウントの構成をサポートするための機能
 

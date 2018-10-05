@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5997f374-303a-92b6-6dd3-87ef81104af4
 description: SnapAngle 要素のコレクションが含まれています。
-ms.openlocfilehash: 6ef0339a979999e0fcaaa66406c9ef076849ba24
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 09a975b280a99fdc2535503b587efdd2143cf18b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806512"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383101"
 ---
 # <a name="snapangles-element-windowtype-complextype-visio-xml"></a>SnapAngles 要素 (Window_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806512"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[SnapAngles_Type](snapangles_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |windows.xml  <br/> |
    

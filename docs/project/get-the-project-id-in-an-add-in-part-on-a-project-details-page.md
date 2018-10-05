@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 009cd997-c7e5-4078-b495-c40caa29a5fb
 description: パーツの追加では、ホスト ページから完全に隔離されている iframe 要素内でホストされています。 プロジェクト詳細ページ (PDP) に追加のパーツから現在のプロジェクトに関する情報を取得するには、window.postMessage メソッド、イベント ・ リスナー、およびメッセージからのプロジェクト ID を解析するイベント ハンドラーを使用できます。
-ms.openlocfilehash: d9f6d02f328860f46784f86c049581fa28bb4749
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ffaf9cb7dac783a754b2d56b5ece4d5a7a0319be
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594426"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389884"
 ---
 # <a name="get-the-project-id-in-an-add-in-part-on-a-project-details-page"></a>プロジェクト詳細ページのアドインの部分でプロジェクト ID を取得する
 
@@ -38,7 +38,7 @@ ms.locfileid: "22594426"
             
         - システム アカウント以外のユーザーとしてログオンする必要があります。 システム アカウントには、アドインをインストールする権限がありません。
     
-詳細については、アドイン プロジェクトを[Project Server 2013 のアドインを作成するための前提条件](create-a-sharepoint-hosted-project-server-add-in.md#pj15_StatusingApp_Prerequisites)を参照してください。 設置型のセットアップ (必要な場合は、ループバック チェックを無効にする方法を含む) に関するガイダンスについては[、設置型の開発環境の SharePoint のアドインの設定](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/set-up-an-on-premises-development-environment-for-sharepoint-add-ins)を参照してください。 リモートで、開発する場合は、[リモート システム上の SharePoint の開発のアプリケーション](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/develop-sharepoint-add-ins)を参照してください。
+詳細については、アドイン プロジェクトを[Project Server 2013 のアドインを作成するための前提条件](create-a-sharepoint-hosted-project-server-add-in.md#pj15_StatusingApp_Prerequisites)を参照してください。 設置型のセットアップ (必要な場合は、ループバック チェックを無効にする方法を含む) に関するガイダンスについては[、設置型の開発環境の SharePoint のアドインの設定](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/set-up-an-on-premises-development-environment-for-sharepoint-add-ins)を参照してください。 リモートで、開発する場合は、[リモート システム上の SharePoint の開発のアプリケーション](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/develop-sharepoint-add-ins)を参照してください。
   
 ## <a name="create-the-sharepoint-hosted-add-in-and-client-web-part"></a>SharePoint でホストされているアドインの追加とクライアントの web パーツを作成します。
 <a name="CreateApp"> </a>
@@ -157,7 +157,7 @@ GetProjectId アドインの一部では、クライアントの web パーツ�
   
 AppManifest.xml ファイルで、アドインを Project Server のデータ、または SharePoint データにアクセスする必要があるアクセス許可を指定します。 
   
-追加のパーツのカスタム プロパティを設定する方法については[、SharePoint アドインを使用してインストールするのには追加でパーツを作成](http://msdn.microsoft.com/library/a2664289-6c56-4cb1-987a-22367fad55eb%28Office.15%29.aspx)を参照してください。 
+追加のパーツのカスタム プロパティを設定する方法については[、SharePoint アドインを使用してインストールするのには追加でパーツを作成](https://msdn.microsoft.com/library/a2664289-6c56-4cb1-987a-22367fad55eb%28Office.15%29.aspx)を参照してください。 
   
 ## <a name="example-getting-the-project-id-in-an-add-in-part-on-a-pdp-page"></a>例: [PDP] ページで、アドインの一部で、プロジェクト ID を取得します。
 <a name="CodeExample"> </a>
@@ -252,6 +252,6 @@ AppManifest.xml ファイルで、アドインを Project Server のデータ、
 
 - [Project のプログラミング タスク](project-programming-tasks.md)
 - [SharePoint をホストとする Project Server アドインを作成する](create-a-sharepoint-hosted-project-server-add-in.md)
-- [アドイン パーツを作成して SharePoint アドインと共にインストールする](http://msdn.microsoft.com/library/a2664289-6c56-4cb1-987a-22367fad55eb%28Office.15%29.aspx)
+- [アドイン パーツを作成して SharePoint アドインと共にインストールする](https://msdn.microsoft.com/library/a2664289-6c56-4cb1-987a-22367fad55eb%28Office.15%29.aspx)
     
 

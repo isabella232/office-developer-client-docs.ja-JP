@@ -9,12 +9,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: ac200824-0620-4f03-8bd2-59226c1e79d7
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 095961fa909a67b354ed43a7e093b79a9ebb4f18
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3e1368ef55b96be947527456e0f01918afec6663
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798771"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387973"
 ---
 # <a name="backward-compatibility"></a>下位互換機能
 
@@ -63,7 +63,7 @@ C API のバージョンを検出するために **XLCallVer** を呼び出す�
   
 Excel 2007 以降では別の関数を登録することが望ましいもう 1 つの理由は、XLL 関数が最大 255 個の引数を受け入れる (以前のバージョンでは 30 個に制限されていました)。
   
-好都合なことに、プロジェクトから両方のバージョンをエクスポートすると、両方のメリットが得られます。その後、実行中の Excel バージョンを検出して、最適な関数を条件によって登録します。詳細と実装例については、「[Excel 2007 のアドイン (XLL) の開発](http://msdn.microsoft.com/ja-JP/library/aa730920.aspx)」を参照してください。
+好都合なことに、プロジェクトから両方のバージョンをエクスポートすると、両方のメリットが得られます。その後、実行中の Excel バージョンを検出して、最適な関数を条件によって登録します。詳細と実装例については、「[Excel 2007 のアドイン (XLL) の開発](https://msdn.microsoft.com/library/aa730920.aspx)」を参照してください。
   
 このアプローチでは、同じワークシートを Excel 2003 で実行した場合と、Excel 2007 以降で実行した場合では、異なる結果が表示される可能性があります。たとえば、Excel 2003 では Excel 2003 ワークシート セル内の Unicode 文字列を ASCII バイト文字列にマッピングし、その文字列を切り詰めてから XLL 関数に渡します。Excel 2007 以降の Excel では、適切な方法で登録された XLL 関数に、変換されていない Unicode 文字列を渡します。これが、異なる結果の原因になります。このような可能性とユーザーへの影響に対する注意は、アップグレード時以外にも必要になります。たとえば、いくつかの組み込みの数値関数は、Excel 2000 と Excel 2003 との間で改善されています。
   

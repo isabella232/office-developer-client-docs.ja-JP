@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: eeecd957-dd50-4849-9698-8bc7106301e9
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d376a5219125866f467be01709a6a611ed8d47f7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 17343a721cbcc642c8cffe95112f25710c0c130c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576422"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383458"
 ---
 # <a name="pidtagselectable-canonical-property"></a>PidTagSelectable 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 一時テーブル内のエントリを選択できる場合、TRUE が格納されます。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22576422"
 |関連するプロパティ:  <br/> |PR_SELECTABLE  <br/> |
 |識別子:  <br/> |0x3609  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |アドレス帳コンテナー  <br/> |
+|エリア:  <br/> |アドレス帳コンテナー  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 一時テーブルの見た目を整えるためには、主にこのプロパティを使用します。 グループの見出しを示すエントリを作成するテンプレートをグループ化することができます。 見出しの場合は FALSE にこのプロパティの設定により、ユーザーがグループに、この見出しエントリではないので実際のテンプレートのみを選択できます。 
   
@@ -52,11 +52,11 @@ FAX テンプレート (深さ 0、選択不可)
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOABKT]](http://msdn.microsoft.com/library/cd5a3e78-1eeb-4a75-88eb-e82c8c96ff31%28Office.15%29.aspx)
+[[MS OXOABKT]](https://msdn.microsoft.com/library/cd5a3e78-1eeb-4a75-88eb-e82c8c96ff31%28Office.15%29.aspx)
   
 > プロパティは、アドレス帳のテンプレートの許可の操作を指定します。
     

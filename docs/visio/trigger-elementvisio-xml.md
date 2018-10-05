@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: d897d2d1-25ba-48d7-b87e-d3c533d88c15
 description: Visio ファイル内のドキュメント パーツ間の関係を再計算するための Microsoft Visio に指示を提供します。
-ms.openlocfilehash: 909fff3ccec176cd3ce327fc208c176a68764fe3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a590ec1f9c19270f75d4d9e77804c0a7b45157b6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806698"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385439"
 ---
 # <a name="trigger-element-visio-xml"></a>トリガー要素 ' Visio XML (')
 
@@ -23,7 +23,7 @@ Visio ファイル内のドキュメント パーツ間の関係を再計算す�
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Trigger_Type](trigger_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml をマスター、# .xml のページ  <br/> |
    
@@ -60,7 +60,7 @@ Visio ファイル内のドキュメント パーツ間の関係を再計算す�
 |:-----|:-----|:-----|:-----|:-----|
 |N  <br/> |xsd:string  <br/> |必須  <br/> |トリガーがアクティブになったときに呼び出される数式の名前です。  <br/> 「解説」を参照してください。  <br/> |Xsd:string の値を入力します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 この**トリガー**の要素の**N**属性は、限られたトリガーの命令に対応する値のいずれかである必要があります。 この**トリガー**の要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   

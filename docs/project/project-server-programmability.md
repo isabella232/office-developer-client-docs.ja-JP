@@ -25,12 +25,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: a93d2153-5132-4289-af51-69350471e248
 description: Project Server 2013 の主なプログラミング機能について説明します。 この資料には、Project Server の以前のバージョンでビルドされたアプリケーションの移植に関する情報が含まれています。
-ms.openlocfilehash: f3901fe97f1c8291d0b35709f2350fc4358044b4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 57802cf8ce1597b759201ef1e2a0ea9bd1e394b1
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592984"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386734"
 ---
 # <a name="project-server-programmability"></a>Project Server プログラミング
 
@@ -58,7 +58,7 @@ Project Server 2013 をインストールするときに、SharePoint Web サー
 
 ![Project Web Access のホーム ページの編集](media/pj15_Programmability_PWAHome.gif "Project Web Access のホーム ページの編集")
   
-Project Web App で [サイト設定] ページにアクセスするには、ページの右上隅で**設定**アイコンを選択します。 [サイト設定] ページ ( `http://ServerName/ProjectServerName/_layouts/15/settings.aspx`) の外観と印象およびサイトのテーマを変更することにより、カスタムの Web パーツを追加し、変更または作成マスター プロジェクト サイトのページです。
+Project Web App で [サイト設定] ページにアクセスするには、ページの右上隅で**設定**アイコンを選択します。 [サイト設定] ページ ( `https://ServerName/ProjectServerName/_layouts/15/settings.aspx`) の外観と印象およびサイトのテーマを変更することにより、カスタムの Web パーツを追加し、変更または作成マスター プロジェクト サイトのページです。
   
 ASPX ページのコードをカスタマイズまたは SharePoint Designer 2013 では、Project Web App のマスター ページのカスタマイズはサポートされていません。 Project Web App ページ内のコードのカスタマイズには、Project Server の更新プログラムおよび service pack で問題が発生します。 
   
@@ -67,7 +67,7 @@ ASPX ページのコードをカスタマイズまたは SharePoint Designer 201
 
 Project Web App では、SharePoint アプリケーションの場合は、プロジェクトのサイトは、SharePoint サイト、SharePoint パッケージ (.wsp ファイル) または SharePoint アプリケーション (.spapp ファイル) を使用して、カスタム アプリケーション、Web パーツ、イベント ハンドラー、カスタム フィールド、およびその他の機能を追加できます。 SharePoint パッケージまたは、アプリケーション パッケージには、elements.xml ファイル パッケージ内のエンティティの定義が指定されている、Project Server の複数のエンティティを含めることができます。
   
-オンラインのプロジェクトの Project Web App のリボンにボタンを追加することができますが、削除または、既存の製品のボタンの名前を変更することはできず、新しいリボン タブを作成することはできません。 詳細については、 [SharePoint のアプリケーションと共に配置するカスタム アクションの作成](http://msdn.microsoft.com/en-us/library/office/apps/jj163954%28v=office.15%29.aspx)を参照してください。
+オンラインのプロジェクトの Project Web App のリボンにボタンを追加することができますが、削除または、既存の製品のボタンの名前を変更することはできず、新しいリボン タブを作成することはできません。 詳細については、 [SharePoint のアプリケーションと共に配置するカスタム アクションの作成](https://msdn.microsoft.com/library/office/apps/jj163954%28v=office.15%29.aspx)を参照してください。
   
 > [!CAUTION]
 > SharePoint パッケージまたはアプリ パッケージのインストール時には、Project Server エンティティの種類が PSEntityProvision.xsd スキーマに指定された順序で出現する必要があります。そうでない場合、パッケージのスキーマ検証が失敗し、インストールは完了しません。 
@@ -104,7 +104,7 @@ Project Server エンティティを含む SharePoint パッケージを作成�
 > [!NOTE]
 > CSOM には、必要な機能が含まれている場合は、CSOM を使用するアプリケーションをアップグレードすることをお勧めします。 CSOM は、オンプレミスと Project Server 2013 のオンライン インストールの両方に使用するアプリケーションを有効にします。 
   
-主に、アプリケーションは、Project Server からデータを読み取り場合、は、社内設置型のシナリオでは、Project Server データベースにレポートのテーブルとビューを使用できます。 プロジェクトをオンラインでアプリケーションを使用する場合は、OData プロトコルを使用して、 **ProjectData**サービスは、設置型とレポートのデータをオンライン ・ アクセスの両方を提供することができます。 詳細については、 [ProjectData - プロジェクトの OData サービスの参照](https://msdn.microsoft.com/en-us/library/office/jj163015.aspx)を参照してください。
+主に、アプリケーションは、Project Server からデータを読み取り場合、は、社内設置型のシナリオでは、Project Server データベースにレポートのテーブルとビューを使用できます。 プロジェクトをオンラインでアプリケーションを使用する場合は、OData プロトコルを使用して、 **ProjectData**サービスは、設置型とレポートのデータをオンライン ・ アクセスの両方を提供することができます。 詳細については、 [ProjectData - プロジェクトの OData サービスの参照](https://msdn.microsoft.com/library/office/jj163015.aspx)を参照してください。
   
 ### <a name="using-the-psi"></a>PSI の使用
 <a name="pj15_Programmability_PSI"> </a>
@@ -153,7 +153,7 @@ PDS 用に開発されたアプリケーションは、それ以降のバージ�
 > [!NOTE]
 > PDS アプリケーションは、Project Server 2013 を一新する必要があります、ため、CSOM を使用することをお勧めします。 
   
-PDS の互換性の詳細と PDS 拡張機能を PSI に移植するときのガイドラインについては、「[PDS Parity in PSI Web Services](http://msdn.microsoft.com/library/61a0b0c7-9b74-46d1-87ed-66ffdd8017f8%28Office.15%29.aspx)」を参照してください。
+PDS の互換性の詳細と PDS 拡張機能を PSI に移植するときのガイドラインについては、「[PDS Parity in PSI Web Services](https://msdn.microsoft.com/library/61a0b0c7-9b74-46d1-87ed-66ffdd8017f8%28Office.15%29.aspx)」を参照してください。
   
 ### <a name="porting-applications-built-for-project-server-2007-and-project-server-2010"></a>Project Server 2007 および Project Server 2010 用に構築されたアプリケーションの移植
 <a name="pj15_Programmability_Porting2007"> </a>
@@ -168,12 +168,12 @@ Project Server 2013 の PSI は、Office Project Server 2007 と Project Server 
     
 - アプリケーション プロジェクトのスケジュールを変更する場合は、CSOM を使用して、または[QueueUpdateProject2](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueUpdateProject2.aspx)の PSI メソッドを使用してアプリケーションを変更します。 
     
-- ローカル ユーザーが Project Web App の別のインスタンスにログオンする web アプリケーションは、CSOM または PSI の WCF エンドポイントのプログラムの設定を使用する必要がありますか。 メソッドは推奨されていません。 アプリケーションは、プロジェクトをオンラインでフォーム認証の代わりに、使用するために、OAuth 認証を使用する必要があります。 詳細については、 [SharePoint 2013 でのアプリケーションの認証および承認](http://msdn.microsoft.com/en-us/library/fp142384%28office.15%29.aspx#FileName_uniquekeyword1)を参照してください。
+- ローカル ユーザーが Project Web App の別のインスタンスにログオンする web アプリケーションは、CSOM または PSI の WCF エンドポイントのプログラムの設定を使用する必要がありますか。 メソッドは推奨されていません。 アプリケーションは、プロジェクトをオンラインでフォーム認証の代わりに、使用するために、OAuth 認証を使用する必要があります。 詳細については、 [SharePoint 2013 でのアプリケーションの認証および承認](https://msdn.microsoft.com/library/fp142384%28office.15%29.aspx#FileName_uniquekeyword1)を参照してください。
     
 - 特定の Project Server セキュリティ設定に依存するか、それを変更するアプリケーション。
     
   > [!NOTE]
-  > Project Server 2013 の既定の設置型インストールでは、Project Server のセキュリティ設定は、PSI を使用してアクセスできない SharePoint アクセス許可モードを使用します。 プロジェクトのアクセス権モードに変更するには、 [Project Server 2013 の IT プロフェッショナル向けの新規](http://technet.microsoft.com/en-us/library/ff631142%28office.15%29.aspx#section13)の*SharePoint アクセス許可モード*を参照してください。 
+  > Project Server 2013 の既定の設置型インストールでは、Project Server のセキュリティ設定は、PSI を使用してアクセスできない SharePoint アクセス許可モードを使用します。 プロジェクトのアクセス権モードに変更するには、 [Project Server 2013 の IT プロフェッショナル向けの新規](https://technet.microsoft.com/en-us/library/ff631142%28office.15%29.aspx#section13)の*SharePoint アクセス許可モード*を参照してください。 
   
 - 多くのカスタム Project Server ワークフローの宣言型ワークフローを作成するのに SharePoint Designer 2013 を使用できます。 追加のプログラミングを必要とするカスタム ワークフローにする必要があります*いない*直接のクラスまたはメンバー **Microsoft.Office.Project.Server.Workflow**名前空間を使用します。 代わりに、CSOM で[Microsoft.ProjectServer.Client.WorkflowActivities](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.WorkflowActivities.aspx)クラスを使用します。 
     
@@ -235,7 +235,7 @@ Project Server 2013 には、2 つのスケジュール エンジンがありま
   
 - **タスクの現在のステータスを変更します。** Project Server の以前のスケジュール エンジンが一貫性のないスタートを表示または終了時刻は、タスクの現在のステータスを変更するのには、 [QueueUpdateProject](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueUpdateProject.aspx)メソッドを使用する場合、_の**ProjectDataSet**オブジェクトで複数の変更がある場合データセット_のパラメーターです。 **TASK_IS_ACTIVE**プロパティが**QueueUpdateProject**の_データセット_のパラメーターの変更のみの場合は、プロジェクトを更新することができます。
     
-    非アクティブなタスクと古いスケジュール エンジンの詳細については、ブログ記事の[Project 2010 で使用頻度の低いタスクの概要](http://blogs.msdn.com/b/project/archive/2010/06/10/introducing-inactive-tasks-in-project-2010.aspx)を参照してくださいと[Project Server 2010: PSI と Project Professional は、web 上でスケジュールを設定する](http://blogs.msdn.com/b/brismith/archive/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional.aspx?wa=wsignin1.0)です。 Project Professional 2010 と Project Server 2010 で、Project Web App でのスケジュール設定の比較とは、 [Web ベースのスケジュール管理の比較](https://blogs.msdn.microsoft.com/brismith/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional/)を参照してください。
+    非アクティブなタスクと古いスケジュール エンジンの詳細については、ブログ記事の[Project 2010 で使用頻度の低いタスクの概要](https://blogs.msdn.com/b/project/archive/2010/06/10/introducing-inactive-tasks-in-project-2010.aspx)を参照してくださいと[Project Server 2010: PSI と Project Professional は、web 上でスケジュールを設定する](https://blogs.msdn.com/b/brismith/archive/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional.aspx?wa=wsignin1.0)です。 Project Professional 2010 と Project Server 2010 で、Project Web App でのスケジュール設定の比較とは、 [Web ベースのスケジュール管理の比較](https://blogs.msdn.microsoft.com/brismith/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional/)を参照してください。
     
 - **達成値は計算されません。** 古いスケジュール エンジンでは、達成額フィールドは計算されません。 ACWP、BAC、BCWP、BCWS、CPI、CV、CV %、EAC、SPI、SV、SV %、TCPI、VAC、[期間差異]、開始日の差異、終了日の差異、コストの差異、および作業時間の差異。 プロジェクトにこれらのフィールドの値があり、ユーザーが**QueueUpdateProject**メソッドを使用してプロジェクトを更新は、フィールドの値は変更されません。 問題を避けるためには、 **QueueUpdateProject2**メソッドを使用します。 
     
@@ -275,7 +275,7 @@ Project Server データベースにアクセスするための Microsoft SQL Se
   
 すべてのこれらの理由から、Project Professional および Project Web App の操作を行いますしない、公開、下書きへの直接呼び出しを行うまたはアーカイブ テーブルです。Project Server との統合により、他のアプリケーションをもする必要があります。
   
-ドラフトでは、発行されると、スキーマ アーカイブ テーブルに記載されていないとします。 レポート テーブルを使用するには、レポートの作成を支援して、レポート テーブルおよびビューのスキーマが記載されている Project 2013 SDK ダウンロードにします。 レポート データの OData スキーマ、 [ProjectData - プロジェクトの OData サービスの参照](https://msdn.microsoft.com/en-us/library/office/jj163015.aspx)を参照してください。
+ドラフトでは、発行されると、スキーマ アーカイブ テーブルに記載されていないとします。 レポート テーブルを使用するには、レポートの作成を支援して、レポート テーブルおよびビューのスキーマが記載されている Project 2013 SDK ダウンロードにします。 レポート データの OData スキーマ、 [ProjectData - プロジェクトの OData サービスの参照](https://msdn.microsoft.com/library/office/jj163015.aspx)を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
@@ -287,7 +287,7 @@ Project Server データベースにアクセスするための Microsoft SQL Se
 - [Project Server ワークフロー開発の作業開始](getting-started-developing-project-server-workflows.md)    
 - [Project 2013 プログラミング リファレンス](project-2013-programming-references.md)    
 - [プロジェクト PSI リファレンスの概要](project-psi-reference-overview.md)    
-- [SharePoint 用アプリを使用して配置するカスタム アクションを作成します。](http://msdn.microsoft.com/en-us/library/office/apps/jj163954%28v=office.15%29.aspx)    
-- [Project 2010 での非アクティブなタスクの概要](http://blogs.msdn.com/b/project/archive/2010/06/10/introducing-inactive-tasks-in-project-2010.aspx)    
+- [SharePoint 用アプリを使用して配置するカスタム アクションを作成します。](https://msdn.microsoft.com/library/office/apps/jj163954%28v=office.15%29.aspx)    
+- [Project 2010 での非アクティブなタスクの概要](https://blogs.msdn.com/b/project/archive/2010/06/10/introducing-inactive-tasks-in-project-2010.aspx)    
 - [プロジェクトの Server 2010: Web PSI、Project Professional のスケジュール設定](https://blogs.msdn.microsoft.com/brismith/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional/)
 

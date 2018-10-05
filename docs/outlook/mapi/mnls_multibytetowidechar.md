@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 065d78bf-4c9c-48dd-b1f1-b4e59f3f1243
 description: '最終更新日: 2012 年 2 月 21 日'
-ms.openlocfilehash: 66e8c3b61caac6fb8d8b57d74ade6fa8aac3a9dd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1f137aba40703fe84e5753ee6e370262f780f0a3
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571707"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389555"
 ---
 # <a name="mnlsmultibytetowidechar"></a>MNLS_MultiByteToWideChar
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 **MultiByteToWideChar**文字の文字列を utf-16 (ワイド文字) の文字列にマップするに似ています。 文字の文字列とは限りませんマルチバイトの文字からは設定されません。
   
@@ -63,8 +63,8 @@ int MNLS_MultiByteToWideChar(
 
 正常終了した場合は、 _lpWideCharStr_で示されるバッファーに書き込まれた文字数を返します。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
-この関数は、 **MultiByteToWideChar**の関数をラップします。 詳細については、 [MultiByteToWideChar](http://msdn.microsoft.com/en-us/library/dd319072%28VS.85%29.aspx)を参照してください。
+この関数は、 **MultiByteToWideChar**の関数をラップします。 詳細については、 [MultiByteToWideChar](https://msdn.microsoft.com/library/dd319072%28VS.85%29.aspx)を参照してください。
   
 

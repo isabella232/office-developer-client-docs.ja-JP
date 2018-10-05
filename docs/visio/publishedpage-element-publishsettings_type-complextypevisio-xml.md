@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: c1eca66b-5840-790a-459f-e06680d11c05
 description: 図面ページは、Microsoft SharePoint Server 2013 で Visio Services を使用してブラウザーで表示できるかどうかを指定します。
-ms.openlocfilehash: 5cdbb03aaac3393c16c6ed0169842153374f668e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 313cabbdd59930df67c807ee3c89df1a6e8c17a2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806128"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390983"
 ---
 # <a name="publishedpage-element-publishsettingstype-complextype-visio-xml"></a>PublishedPage 要素 (PublishSettings_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806128"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[PublishedPage_Type](publishedpage_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
    

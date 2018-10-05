@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 7590a30e-3fd8-7ae3-f077-c80f6cc21d7b
 description: このトピックには、Outlook にエクスポートする Api の定数の定義が含まれています。
-ms.openlocfilehash: 8b7a9d70b2fc5d26c52a8729797221a44526360c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 65181932b858da1b32c3fbe5fd0bd7e92ca8dc9f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564466"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386076"
 ---
 # <a name="constants-outlook-exported-apis"></a>(Outlook エクスポート Api) 定数
 
@@ -37,7 +37,7 @@ const WORD  TZDEFINITION_FLAG_VALID_KEYNAME = 0x0002;
    
 ## <a name="miscellaneous-dispatch-identifiers"></a>その他のディスパッチ識別子
 
-開発者は、対応するプロパティまたはメソッドにアクセスしたり、対応するイベントを待機する[:invoke](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke)を使用できるように、outlook は次のディスパッチ識別子 (dispid) を公開します。 
+開発者は、対応するプロパティまたはメソッドにアクセスしたり、対応するイベントを待機する[:invoke](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke)を使用できるように、outlook は次のディスパッチ識別子 (dispid) を公開します。 
   
 |**関連付けられた定数**|**Dispid 値**|**説明**|**適用可能なインタ フェース**|
 |:-----|:-----|:-----|:-----|
@@ -51,6 +51,6 @@ const WORD  TZDEFINITION_FLAG_VALID_KEYNAME = 0x0002;
 - [Outlook でエクスポートされている API](outlook-exported-apis.md)
 - [Outlook によりエクスポートされる API について](about-apis-exported-by-outlook.md)
 - [Outlook アイテムが変更されたが保存されていないかどうかを確認する (Outlook の補助リファレンス)](how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
-- [Outlook (Outlook の補助リファレンス) で、連絡先の画像を表示するかどうかを指定](https://msdn.microsoft.com/en-us/library/office/gg262879.aspx)
+- [Outlook (Outlook の補助リファレンス) で、連絡先の画像を表示するかどうかを指定](https://msdn.microsoft.com/library/office/gg262879.aspx)
 - [使用可能なイベントの dispid (Outlook エクスポート Api)](available-events-and-their-dispids-outlook-exported-apis.md)
 

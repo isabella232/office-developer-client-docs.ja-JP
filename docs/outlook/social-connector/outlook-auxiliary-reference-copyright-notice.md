@@ -7,13 +7,13 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 94e13811-04ec-e381-99ff-cb8f42d4bf1e
-description: このドキュメントは現状のまま提供されます。このドキュメントで説明されている情報およびビューは、URL および他のインターネット Web サイトの参照を含めて、予告なく変更されることがあります。このドキュメントの使用に伴うリスクはお客様が負うものとします。
-ms.openlocfilehash: f64209cc75f59dbd40948508e2667633775ea9a2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このドキュメントは現状のまま提供されます。 情報および見解は、URL やその他のインターネット web サイトを含み、このドキュメントには、予告なしに変更可能性があります。 このドキュメントの使用に伴うリスクはお客様が負うものとします。
+ms.openlocfilehash: dddf23e19f4f53e21de33210f26cf254cb83a750
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804459"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384942"
 ---
 # <a name="outlook-auxiliary-reference-copyright-notice"></a>補助リファレンスの著作権情報を outlook に注意してください。
 

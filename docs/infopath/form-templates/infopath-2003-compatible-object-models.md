@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: e4511af6-d7e7-44ad-a50d-1b7ee04f8215
 description: Microsoft InfoPath は COM (コンポーネント オブジェクト モデル) アプリケーションとして作成されており、外部オートメーションとフォーム テンプレート スクリプトの両方のプログラミング インターフェイスを COM インターフェイスとして公開します。
-ms.openlocfilehash: 09ba36b39e520629764bd57a623e8fb490a63a89
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f3351a0fee6e23de0785aa28b0970c6a90361f16
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799159"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389030"
 ---
 # <a name="infopath-2003-compatible-object-models"></a>InfoPath 2003 互換オブジェクト モデル
 
@@ -29,7 +29,7 @@ InfoPath によってインストールされる 3 つの相互運用アセン�
     
 ここでは、Microsoft.Office.Interop.InfoPath.SemiTrust 相互運用アセンブリによって公開されるオブジェクト モデルについて説明します。このアセンブリは、InfoPath フォーム テンプレート (.xsn) 内からマネージ コード ビジネス ロジックを書いたり実行したりするためだけに使用されます。 
   
-Microsoft.Office.Interop.InfoPath アセンブリおよび Microsoft.Office.Interop.InfoPath.Xml アセンブリの詳細については、[Microsoft.Office.Interop.InfoPath](https://msdn.microsoft.com/ja-JP/library/microsoft.office.interop.infopath.aspx) 名前空間および [Microsoft.Office.Interop.InfoPath.Xml](https://msdn.microsoft.com/ja-JP/library/microsoft.office.interop.infopath.xml) 名前空間のドキュメントを参照してください。 
+Microsoft.Office.Interop.InfoPath アセンブリおよび Microsoft.Office.Interop.InfoPath.Xml アセンブリの詳細については、[Microsoft.Office.Interop.InfoPath](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.aspx) 名前空間および [Microsoft.Office.Interop.InfoPath.Xml](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.xml) 名前空間のドキュメントを参照してください。 
   
 ## <a name="important-installation-information"></a>インストールに関する重要な情報
 
@@ -37,7 +37,7 @@ Microsoft.Office.Interop.InfoPath アセンブリおよび Microsoft.Office.Inte
   
 これらのアセンブリがインストールされていない場合は、Microsoft InfoPath が正しくインストールされていることを確認する必要があります。セットアップを実行する前に .NET Framwork 2.0 以降がインストールされていれば、[ **標準**] を選択して InfoPath をインストールすると、InfoPath セットアップ プログラムの [ **.NET プログラミング サポート**] オプションが [ **マイ コンピューターから実行**] に設定されます。コンピューターでこれらの相互運用アセンブリを使用できない場合は, .NET Framework 2.0 以降がインストールされていることを確認する必要があります。その後、[ **コントロール パネル**] の [ **プログラムの追加と削除**] を実行して、[ **.NET プログラミング サポート**] オプションを [ **マイ コンピューターから実行**] に設定します。
   
-.NET Framework 2.0 再配布可能バージョンのダウンロードの詳細については、「[.NET Framework 2.0 再配布可能バージョン](http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=0856eacb-4362-4b0d-8edd-aab15c5e04f5)」を参照してください。
+.NET Framework 2.0 再配布可能バージョンのダウンロードの詳細については、「[.NET Framework 2.0 再配布可能バージョン](https://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=0856eacb-4362-4b0d-8edd-aab15c5e04f5)」を参照してください。
   
 ## <a name="the-microsoftofficeinteropinfopathsemitrust-namespace"></a>Microsoft.Office.Interop.InfoPath.SemiTrust 名前空間
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e56042e9-5bb7-4a99-b6de-1546d4ca07f0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: bbc9dcf2218907b5d31ce1fc9f904e6ae1da47d9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f76b0a5482647fe3e181a36d7dcd8cb60ffc8985
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594013"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388582"
 ---
 # <a name="imapipropcopyto"></a>IMAPIProp::CopyTo
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 明確に除外されたプロパティ以外のすべてのプロパティを移動またはコピーします。
   
@@ -95,7 +95,7 @@ MAPI_NOREPLACE
   
 > [で [チェック アウト]**SPropProblemArray**構造体へのポインターへのポインターの入力でそれ以外の場合、 **null**、エラー情報の必要性がないことを示します。 _LppProblems_が入力時に有効なポインターである場合は、 **CopyTo**は、1 つまたは複数のプロパティのコピーでエラーに関する詳細な情報を返します。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -139,7 +139,7 @@ MAPI_E_UNEXPECTED_TYPE
   
 > プロパティの型は、呼び出し元の型ではありません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 既定では、 **IMAPIProp::CopyTo**メソッドは、コピーまたは、すべての現在のオブジェクトのプロパティをコピー先のオブジェクトに移動します。 **CopyTo**は、オブジェクトをコピーまたはすべてまたはほとんどのプロパティをそのままの状態を正確に移動する必要があるときに使用されます。 
   
@@ -173,7 +173,7 @@ MAPI_DIALOG フラグを設定しない、進行状況インジケーターの�
   
 ソース オブジェクトの種類に固有のプロパティをコピーする場合、同じ種類の対象になるオブジェクトであるようにしてください。 **CopyTo**ができないから、通常、1 種類のオブジェクトの別の種類のオブジェクトに属するプロパティを関連付けることです。 変換先オブジェクトのプロパティをコピーすることの責任です。 などのアドレス帳コンテナーにメッセージのプロパティをコピーする必要がありますされません。 
   
-同じ種類のオブジェクト間でコピーすることを確認するには、元とコピー先のオブジェクトが同じ型、オブジェクトのポインターを比較するか、 [IUnknown::QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx)を呼び出すことを確認してください。 ソース オブジェクトの標準的なインタ フェースを_lpInterface_が指すインターフェイスの識別子を設定します。 また、オブジェクト タイプまたは**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md)) のプロパティは、2 つのオブジェクトに対して同じであることを確認してください。 たとえば、メッセージからコピーする場合は、IID_IMessage と MAPI_MESSAGE を両方のオブジェクトの**PR_OBJECT_TYPE**に_lpInterface_を設定します。 
+同じ種類のオブジェクト間でコピーすることを確認するには、元とコピー先のオブジェクトが同じ型、オブジェクトのポインターを比較するか、 [IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)を呼び出すことを確認してください。 ソース オブジェクトの標準的なインタ フェースを_lpInterface_が指すインターフェイスの識別子を設定します。 また、オブジェクト タイプまたは**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md)) のプロパティは、2 つのオブジェクトに対して同じであることを確認してください。 たとえば、メッセージからコピーする場合は、IID_IMessage と MAPI_MESSAGE を両方のオブジェクトの**PR_OBJECT_TYPE**に_lpInterface_を設定します。 
   
 場合は、 _lpDestObj_パラメーターに無効なポインターが渡されると、結果は予測できません。 
   
@@ -189,15 +189,15 @@ _LpExcludeProps_アレイでは、 **PR_NULL** ([PidTagNull](pidtagnull-canonica
   
 インタ フェースを除外するための**CopyTo**機能の有用性はおそらくプロパティを除外することの有用性としては明らかにします。 プロパティのグループの知識を持たないオブジェクトにコピーするときは、インタ フェースを除外できます。 などのプロパティをフォルダーから添付ファイルをコピーする場合、添付ファイルが使用できる唯一のプロパティ、 [IMAPIProp](imapipropiunknown.md)実装で利用可能な汎用的なプロパティです。 コピー操作から[IMAPIFolder](imapifolderimapicontainer.md)を除外することで添付ファイルを受信しません、特定のフォルダーのプロパティのいずれか。 
   
-インタ フェースを除外するのには、 _rgiidExclude_パラメーターを使用する場合も、そのインターフェイスから派生するすべてのインタ フェースを除外します。 たとえば、 [IMAPIContainer](imapicontainerimapiprop.md)を除外すると、フォルダーまたはプロバイダーの種類によって、除外するアドレス帳のコンテナー。 非常に多くのインターフェイスは、それらから派生するために**IMAPIProp**または[IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx)を除外しません。 
+インタ フェースを除外するのには、 _rgiidExclude_パラメーターを使用する場合も、そのインターフェイスから派生するすべてのインタ フェースを除外します。 たとえば、 [IMAPIContainer](imapicontainerimapiprop.md)を除外すると、フォルダーまたはプロバイダーの種類によって、除外するアドレス帳のコンテナー。 非常に多くのインターフェイスは、それらから派生するために**IMAPIProp**または[IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)を除外しません。 
   
 MAPI_E_COMPUTED を無視して、 **SPropProblemArray**パラメーターに構造体の_lppProblems_でエラーが返されます。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
 |File.cpp  <br/> |LoadFromMSG  <br/> |MFCMAPI では、 [IMAPIMessageSite](imapimessagesiteiunknown.md)オブジェクトに .msg ファイルからプロパティをコピーするのには、 **IMAPIProp::CopyTo**メソッドを使用します。  <br/> |
 |FolderDlg.cpp  <br/> |CFolderDlg::HandlePaste  <br/> |MFCMAPI では、 **IMAPIProp::CopyTo**メソッドを使用して、貼り付けの操作中に、対象のメッセージを送信元のメッセージからプロパティをコピーします。  <br/> |

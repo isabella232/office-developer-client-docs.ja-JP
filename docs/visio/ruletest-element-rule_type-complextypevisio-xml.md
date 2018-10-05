@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0cb95b34-3ce0-07a5-5d57-8ac9b0570b9a
 description: 対象のオブジェクトが、検証規則を満たすかどうかを決定する論理式を指定します。
-ms.openlocfilehash: 25569530af5bc6f4b00e8600d1e25d968a01f246
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8fd37040bec383ab61edfa62a09bb766ed8cd3c5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806334"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384851"
 ---
 # <a name="ruletest-element-ruletype-complextype-visio-xml"></a>RuleTest 要素 (Rule_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806334"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[RuleTest_Type](ruletest_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |validation.xml  <br/> |
    

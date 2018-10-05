@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 534c3881-e12f-f228-7760-788fe2b72ae8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 80d1fc3f711369471eb2c1473700f13a6b995594
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 95729474db29fe21f808ec5c8f571bec4600db70
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578508"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382835"
 ---
 # <a name="pidtagsearchattachments-canonical-property"></a>PidTagSearchAttachments 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ストア内の添付ファイルの内容の照会中に Unicode 文字列が含まれています。
   
@@ -30,7 +30,7 @@ ms.locfileid: "22578508"
 |関連するプロパティ:  <br/> |PR_SEARCH_ATTACHMENTS_W  <br/> |
 |識別子:  <br/> |0x0EA5  <br/> |
 |プロパティの種類:  <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |検索  <br/> |
+|エリア:  <br/> |検索  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
@@ -39,11 +39,11 @@ ms.locfileid: "22578508"
   
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Microsoft Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
+[[MS OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
   
 > プロパティや検索フォルダーの一覧の構成を操作するための動作を指定します。
     

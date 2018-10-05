@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 87926f7d-e1dc-41d5-8805-6ba91fc7b154
 description: アプリケーションのインターフェイスには、メソッドのヘルプの取得が含まれています、操作、および OneNote の情報とコンテンツを更新します。 メソッドは、次の 4 つの一般的なカテゴリには。
-ms.openlocfilehash: 25bb1aa570f6c36aa04140d9256d277bee65152b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b34cb5e4812842cc3660e24ad2a94268563a4964
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799278"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391480"
 ---
 # <a name="application-interface-onenote"></a>アプリケーション ・ インタ フェース (OneNote の場合)
 
@@ -98,7 +98,7 @@ static void UpdateExistingHierarchy()
   
 ```XML
 <?xml version="1.0" ?> 
-    <one:Notebooks xmlns:one="http://schemas.microsoft.com/office/onenote/12/2004/onenote"> 
+    <one:Notebooks xmlns:one="https://schemas.microsoft.com/office/onenote/12/2004/onenote"> 
         <one:Notebook name="My Notebook" nickname="My Notebook" ID="{0B8E7305-AC2C-4BCB-8651-1CDA55AAE14C}{1}{B0}"> 
             <one:Section name="My Renamed Section" ID="{5F4E2908-44BA-4C02-91FE-49FC665E9A33}{1}{B0}" path="C:\My Section.one" /> 
         </one:Notebook> 
@@ -127,7 +127,7 @@ static void GetAllSections()
     {
         
         // OneNote 2013 Schema namespace.
-        string strNamespace = "http://schemas.microsoft.com/office/onenote/2013/onenote";
+        string strNamespace = "https://schemas.microsoft.com/office/onenote/2013/onenote";
         string outputXML;
         Application onApplication = new Application();
         onApplication.GetHierarchy(null, HierarchyScope.hsSections, out outputXML);
@@ -263,7 +263,7 @@ static void UpdatePageContent()
         OneNote.Application onApplication = new OneNote.Application();
         String strImportXML;
         strImportXML = "<?xml version=\"1.0\"?>" +
-            "<one:Page xmlns:one=\"http://schemas.microsoft.com/office/onenote/12/2004/onenote\" 
+            "<one:Page xmlns:one=\"https://schemas.microsoft.com/office/onenote/12/2004/onenote\" 
             ID=\"{3428B7BB-EF39-4B9C-A167-3FAE20630C37}{1}{B0}\">" +
             "    <one:PageSettings RTL=\"false\" color=\"automatic\">" +
             "        <one:PageSize>" +
@@ -319,7 +319,7 @@ static void UpdatePageContent()
 |:-----|:-----|
 |**説明** <br/> |OneNote をサポートする任意の形式でファイルに指定したページをエクスポートします。  <br/> |
 |**構文** <br/> | `HRESULT Publish(`<br/>`[in]BSTR bstrHierarchyID,`<br/>`[in]BSTR bstrTargetFilePath,`<br/>`[in,defaultvalue(pfOneNote)]PublishFormat pfPublishFormat,`<br/>`[in,defaultvalue(0)]BSTR bstrCLSIDofExporter);` <br/> |
-|**パラメーター** <br/> | _bstrHierarchyID_&ndash;エクスポートする階層の [OneNote の ID です。  <br/><br/>_bstrTargetFilePath_&ndash;結果の出力ファイルを保存する場所への絶対パス。 指定したファイルは、その場所にまだ存在していない 1 つである必要があります。  <br/><br/>_pfPublishFormat_&ndash;公開されているページ (例、MTHML、PDF などの) を形式を指定する[PublishFormat](enumerations-onenote-developer-reference.md#odc_PublishFormat)列挙値のいずれかです。  <br/><br/>_bstrCLSIDofExporter_&ndash;拡張メタファイル (.emf) を Microsoft Windows をエクスポートすることができます登録済みの COM アプリケーションのクラス ID (CLSID)。 COM アプリケーションには、 **IMsoDocExporter**インターフェイスを実装する必要があります。 このパラメーターは、カスタム書式指定の OneNote のコンテンツを発行する独自のコードを記述するサード パーティの開発者を許可するように含まれています。 **IMsoDocExporter**インターフェイスの詳細については、 [Office 2007 の固定形式エクスポート機能を拡張する](http://msdn.microsoft.com/en-us/library/office/aa338206%28v=office.12%29.aspx)を参照してください。  <br/> |
+|**パラメーター** <br/> | _bstrHierarchyID_&ndash;エクスポートする階層の [OneNote の ID です。  <br/><br/>_bstrTargetFilePath_&ndash;結果の出力ファイルを保存する場所への絶対パス。 指定したファイルは、その場所にまだ存在していない 1 つである必要があります。  <br/><br/>_pfPublishFormat_&ndash;公開されているページ (例、MTHML、PDF などの) を形式を指定する[PublishFormat](enumerations-onenote-developer-reference.md#odc_PublishFormat)列挙値のいずれかです。  <br/><br/>_bstrCLSIDofExporter_&ndash;拡張メタファイル (.emf) を Microsoft Windows をエクスポートすることができます登録済みの COM アプリケーションのクラス ID (CLSID)。 COM アプリケーションには、 **IMsoDocExporter**インターフェイスを実装する必要があります。 このパラメーターは、カスタム書式指定の OneNote のコンテンツを発行する独自のコードを記述するサード パーティの開発者を許可するように含まれています。 **IMsoDocExporter**インターフェイスの詳細については、 [Office 2007 の固定形式エクスポート機能を拡張する](https://msdn.microsoft.com/library/office/aa338206%28v=office.12%29.aspx)を参照してください。  <br/> |
    
 現時点では、OneNote には、次のファイル形式がサポートされています。
   
@@ -351,7 +351,7 @@ static void UpdatePageContent()
 
 |||
 |:-----|:-----|
-|**説明** <br/> |OneNote のリンクを渡された場合 (onenote://)、OneNote 内の対応する場所には、OneNote ウィンドウが開きます。 OneNote (http:// または file://) などの外部のリンクが表示された場合、[セキュリティ] ダイアログ ボックスが表示されます。 解雇、OneNote がリンクを開こうとするとされ、 **HResult.hrObjectDoesNotExist**エラーが返されます。  <br/> |
+|**説明** <br/> |OneNote のリンクを渡された場合 (onenote://)、OneNote 内の対応する場所には、OneNote ウィンドウが開きます。 OneNote (https:// または file://) などの外部のリンクが表示された場合、[セキュリティ] ダイアログ ボックスが表示されます。 解雇、OneNote がリンクを開こうとするとされ、 **HResult.hrObjectDoesNotExist**エラーが返されます。  <br/> |
 |**構文** <br/> | `HRESULT NavigateTo(`<br/>`[in]BSTR bstrUrl,`<br/>`[in,defaultvalue(0)]VARIANT_BOOL fNewWindow);` <br/> |
 |**パラメーター** <br/> | _bstrUrl_&ndash;に移動する場所を示す文字列。 OneNote のリンク、または他の URL、web リンク、またはネットワーク上の場所などが考えられます。  <br/><br/>_fNewWindow_&ndash; (オプション)**場合は true**を新しい OneNote ウィンドウで指定された URL を開きます。 **false**は開くことができません OneNote の新しいウィンドウが開いている場合。  <br/> |
    
@@ -381,7 +381,7 @@ static void UpdatePageContent()
 |**構文**| `HRESULT FindPages(`<br/>`[in]BSTR bstrStartNodeID,`<br/>`[in]BSTR bstrSearchBSTR,`<br/>`[out]BSTR * pbstrHierarchyXmlOut,`<br/>`[in,defaultvalue(#)]VARIANT_BOOL fIncludeUnindexedPages,`<br/>`[in,defaultvalue(0)]VARIANT_BOOL fDisplay,`<br/>`[in,defaultvalue(#)]XMLSchema xsSchema);`|
 |**パラメーター**| _bstrStartNodeID_&ndash;のコンテンツを検索する次のノード (ルート、ノートブック、セクション グループ、またはセクション)。 このパラメーターは、検索のスコープを設定します。<br/><br/>_bstrSearchString_&ndash;検索文字列。 まったく同じ文字列は、OneNote のユーザー インターフェイスで [検索] ボックスに入力を渡します。 すべて大文字でなければならない**** など、**または**、ビットごとの演算子を使用できます。<br/><br/>_pbstrHierarchyXmlOut_&ndash; (出力パラメーター) A のポインターを出力する XML 文字列を作成するのには OneNote を挿入する文字列。 結果の XML 文字列には、ルートから下に向かって、して、検索文字列に一致するすべてのページを含むノートブックの階層が含まれています。 たとえば、 **FindPages**メソッドがないページと一致する、階層内のセクションが表示されません。 のみ 1 つのセクションで、1 ページには、文字列が一致すると、返された階層にはノートブックの階層の他のパーツはないですが、そのセクションとページで、パスが含まれます。<br/><br/>_fIncludeUnindexedPages_&ndash; (オプション)**場合は true** Windows 検索でインデックス付けされていないページを検索するには。それ以外の場合、 **false を指定**します。<br/><br/>_fDisplay_&ndash; (オプション)**場合は true**の場合と同様、ユーザー入力自体も、ユーザーの UI で検索を実行します。 **false** (既定値) の UI の変更は行われていないクエリを実行します。<br/><br/>_xsSchema_&ndash;文字列_pbstrHierarchyXmlOut_の [OneNote の (オプション) スキーマのバージョン。 このオプションの値を使用して、 _pbstrHierarchyXmlOut_の文字列が含まれている OneNote の XML スキーマのバージョンを指定します。 この値を指定しない場合は、OneNote が XML スキーマのバージョン_xsCurrent_であると仮定します。 <br/><br/>**注**: お勧め ( **xs2013**) などには、OneNote のバージョンを指定する**xsCurrent**を使用するか、オフのままにするのではなく、アドインを将来のバージョンの OneNote を使用することができます。           |
    
- **FindPages**は、Microsoft 検索 3.0 または 4.0 がコンピューターにインストールされている場合にのみ動作します。 Windows Vista と Windows 7 には、このコンポーネントが含まれます。 ただし、Windows の以前のバージョンを実行している場合は、 [Windows の検索](http://www.microsoft.com/windows/products/winfamily/desktopsearch/getitnow.mspx)機能に**FindPages**をインストールしてください。 
+ **FindPages**は、Microsoft 検索 3.0 または 4.0 がコンピューターにインストールされている場合にのみ動作します。 Windows Vista と Windows 7 には、このコンポーネントが含まれます。 ただし、Windows の以前のバージョンを実行している場合は、 [Windows の検索](https://www.microsoft.com/windows/products/winfamily/desktopsearch/getitnow.mspx)機能に**FindPages**をインストールしてください。 
   
 ### <a name="findmeta-method"></a>FindMeta メソッド
 
@@ -391,7 +391,7 @@ static void UpdatePageContent()
 |**構文**| `HRESULT FindMeta (`<br/>`[in]BSTR bstrStartNodeID,`<br/>`[in]BSTR bstrSearchBSTRName,`<br/>`[out]BSTR * pbstrHierarchyXmlOut,`<br/>`[in,defaultvalue(#)]VARIANT_BOOL fIncludeUnindexedPages,`<br/>`[in,defaultvalue(#)]XMLSchema xsSchema);`|
 |**パラメーター**| _bstrStartNodeID_&ndash;のコンテンツを検索する次のノード (ルート、ノートブック、セクション グループ、またはセクション)。 このパラメーターは、検索のスコープを設定します。<br/><br/>_bstrSearchStringName_&ndash;検索文字列。 メタデータ名の一部を渡します。 場合は空文字列または null 値を渡すと、メタデータを持つすべてのオブジェクトがクエリに一致します。<br/><br/>_pbstrHierarchyXmlOut_&ndash; (出力パラメーター) A のポインターを出力する XML 文字列を作成するのには OneNote を挿入する文字列。 結果の XML 文字列には、ルートから下に向かって、して、検索文字列に一致するすべてのページを含むノートブックの階層が含まれています。 たとえば、 **FindPages**メソッドがないページと一致する、階層内のセクションが表示されません。 のみ 1 つのセクションで、1 ページには、文字列が一致すると、返された階層にはノートブックの階層の他のパーツはないですが、そのセクションとページで、パスが含まれます。  <br/><br/>_fIncludeUnindexedPages_&ndash; (オプション)**場合は true** Windows 検索でインデックス付けされていないページを検索するには。それ以外の場合、 **false を指定**します。<br/><br/>_xsSchema_&ndash;文字列_pbstrHierarchyXmlOut_の [OneNote の (オプション) スキーマのバージョン。 このオプションの値を使用して、 _pbstrHierarchyXmlOut_の文字列が含まれている OneNote の XML スキーマのバージョンを指定します。 この値を指定しない場合は、OneNote が XML スキーマのバージョン_xsCurrent_であると仮定します。 <br/><br/>**注**: お勧め ( **xs2013**) などには、OneNote のバージョンを指定する**xsCurrent**を使用するか、オフのままにするのではなく、アドインを将来のバージョンの OneNote を使用することができます。           |
    
-**FindMeta**は、Microsoft Windows 検索 3.0 または 4.0 がコンピューターにインストールされている場合にのみ動作します。 Windows Vista と Windows 7 には、このコンポーネントが含まれます。 ただし、Windows の以前のバージョンを実行している場合は、 [Windows の検索](http://www.microsoft.com/windows/products/winfamily/desktopsearch/getitnow.mspx)機能に**FindMeta**をインストールしてください。 
+**FindMeta**は、Microsoft Windows 検索 3.0 または 4.0 がコンピューターにインストールされている場合にのみ動作します。 Windows Vista と Windows 7 には、このコンポーネントが含まれます。 ただし、Windows の以前のバージョンを実行している場合は、 [Windows の検索](https://www.microsoft.com/windows/products/winfamily/desktopsearch/getitnow.mspx)機能に**FindMeta**をインストールしてください。 
   
 ## <a name="functional-methods"></a>機能のメソッド
 <a name="ON14DevRef_Application_Functional"> </a>
@@ -451,7 +451,7 @@ static void UpdatePageContent()
 |**プロパティ**|**説明**|
 |:-----|:-----|
 |**Windows** <br/> |開いている OneNote ウィンドウにユーザー アクセスを示します。 このプロパティでは、OneNote ウィンドウの集合を列挙し、特定のウィンドウのプロパティを変更することができます。 詳細については、 [Windows のインターフェイス](window-interfaces-onenote.md)を参照してください。  <br/> |
-|**COMAddIns** <br/> |OneNote の**COMAddIns**コレクションを取得します。 このコレクションには、OneNote で使用可能な COM アドインのすべてが含まれます。 **COMAddins**コレクションの**Count**プロパティは、使用可能な COM アドインの数を返します。詳細については、 [COMAddIns](http://msdn.microsoft.com/en-us/library/office/ff865489.aspx)オブジェクトを参照してください。  <br/> |
+|**COMAddIns** <br/> |OneNote の**COMAddIns**コレクションを取得します。 このコレクションには、OneNote で使用可能な COM アドインのすべてが含まれます。 **COMAddins**コレクションの**Count**プロパティは、使用可能な COM アドインの数を返します。詳細については、 [COMAddIns](https://msdn.microsoft.com/library/office/ff865489.aspx)オブジェクトを参照してください。  <br/> |
 |**LanguageSettings** <br/> |OneNote の一般的な言語の設定を変更するのにはいくつかの Api にアクセスできます。  <br/> |
    
 ## <a name="events"></a>イベント

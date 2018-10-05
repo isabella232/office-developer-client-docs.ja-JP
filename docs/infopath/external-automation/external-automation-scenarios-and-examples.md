@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: dfa880e6-de23-41c4-b80b-6935e0c8563d
 description: Microsoft Office InfoPath プライマリ相互運用機能アセンブリ (Microsoft.Office.Interop.InfoPath.dll) と InfoPath XML 相互運用機能アセンブリ (Microsoft.Office.Interop.InfoPath.Xml.dll) が提供するメンバーは、InfoPath を自動化するためのマネージ コードの記述をサポートします。
-ms.openlocfilehash: 1c76e5cb659c9d3f39eec4a7e517ab57c98c858a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: af8bfbb0322b9d70fb85ba21a757a581ba423a44
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799007"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383164"
 ---
 # <a name="external-automation-scenarios-and-examples"></a>外部オートメーションのシナリオと例
 
@@ -21,7 +21,7 @@ Microsoft Office InfoPath プライマリ相互運用機能アセンブリ (Micr
   
 ## <a name="establishing-references-to-the-microsoft-office-infopath-primary-interop-and-infopath-xml-interop-assemblies"></a>Microsoft Office InfoPath プライマリ相互運用機能と InfoPath XML 相互運用機能アセンブリへの参照を確立します。
 
-InfoPath を自動化するためのマネージ コードを記述するには、Microsoft InfoPath のプライマリ相互運用機能と、InfoPath XML 相互運用機能アセンブリへの参照を確立する必要があります。 Microsoft InfoPath のプライマリ相互運用機能アセンブリは、IPEDITOR によって公開される COM オブジェクト モデルとの相互運用性のサポートを提供します。[Microsoft.Office.Interop.InfoPath](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.aspx)名前空間のメンバーを使用して DLL があります。 InfoPath XML 相互運用機能アセンブリは、 [Microsoft.Office.Interop.InfoPath.Xml](https://msdn.microsoft.com/en-us/library/microsoft.office.interop.infopath.xml)名前空間のメンバーを使用して、「Microsoft XML Core Services (MSXML) で公開されている COM オブジェクト モデルとの相互運用性のサポートを提供します。 
+InfoPath を自動化するためのマネージ コードを記述するには、Microsoft InfoPath のプライマリ相互運用機能と、InfoPath XML 相互運用機能アセンブリへの参照を確立する必要があります。 Microsoft InfoPath のプライマリ相互運用機能アセンブリは、IPEDITOR によって公開される COM オブジェクト モデルとの相互運用性のサポートを提供します。[Microsoft.Office.Interop.InfoPath](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.aspx)名前空間のメンバーを使用して DLL があります。 InfoPath XML 相互運用機能アセンブリは、 [Microsoft.Office.Interop.InfoPath.Xml](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.xml)名前空間のメンバーを使用して、「Microsoft XML Core Services (MSXML) で公開されている COM オブジェクト モデルとの相互運用性のサポートを提供します。 
   
 > [!IMPORTANT]
 > InfoPath を自動化するマネージ コード アプリケーションのユーザーは、InfoPath、Microsoft Office InfoPath のプライマリ相互運用機能アセンブリ、および自分のコンピューターにインストールされている InfoPath XML 相互運用機能アセンブリが必要です。 InfoPath セットアップ プログラムで [ **.NET プログラミング サポート**] オプションは、InfoPath の標準的なインストールのため、**マイ コンピューターから実行**に設定されます。
@@ -109,7 +109,7 @@ InfoPath の売上報告書フォーム テンプレートのユーザーの顧�
             // namespace of the form. IMPORTANT:Replace the namespace 
             // value below with that of your sample form.
             myXMLDoc.setProperty("SelectionNamespaces",
-    "xmlns:my='http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'");
+    "xmlns:my='https://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'");
             // Select all instances of customerName that contain 
             //'Company A'.
             IXMLDOMNodeList myNames = 
@@ -161,7 +161,7 @@ InfoPath の売上報告書フォーム テンプレートのユーザーの顧�
           ' namespace of the form. IMPORTANT:Replace the namespace 
           ' value below with that of your sample form.
           myXMLDoc.setProperty("SelectionNamespaces", _
-    "xmlns:my='http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'")
+    "xmlns:my='https://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'")
           ' Select all instances of customerName that contain 
           ''Company A'.
           Dim myNames As IXMLDOMNodeList = _
@@ -247,7 +247,7 @@ InfoPath の売上報告書フォーム テンプレートのユーザーの顧�
             // Set the MSXML SelectionNamespaces property to the my
             // namespace of the form. IMPORTANT:Replace the namespace
             // value below with that of your sample form.
-            doc.setProperty("SelectionNamespaces","xmlns:my='http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'");
+            doc.setProperty("SelectionNamespaces","xmlns:my='https://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'");
             // Pre-populate the fields with specified values.
             doc.selectSingleNode("//my:FirstName").text="My Name";
             doc.selectSingleNode("//my:LastName").text="My LastName";
@@ -280,7 +280,7 @@ InfoPath の売上報告書フォーム テンプレートのユーザーの顧�
           ' Set the MSXML SelectionNamespaces property to the my
           ' namespace of the form. IMPORTANT:Replace the namespace
           ' value below with that of your sample form.
-          doc.setProperty("SelectionNamespaces", "xmlns:my='http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'")
+          doc.setProperty("SelectionNamespaces", "xmlns:my='https://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'")
           ' Pre-populate the fields with specified values.
           doc.selectSingleNode("//my:FirstName").text = "My Name"
           doc.selectSingleNode("//my:LastName").text = "My LastName"

@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 30dc3194-7480-4e7c-b731-4a171d652ee0
 description: Project Server 2013 では、JavaScript オブジェクト モデルは、プロジェクト オンライン、モバイル、および設置型の開発で使用できます。 このトピックでは、JavaScript オブジェクト モデルの概要について説明し、し、取得し、JavaScript オブジェクト モデルを使用して、プロジェクトを反復処理するアプリケーション ページを作成する方法について説明します。
-ms.openlocfilehash: 94c882249474e22328031d55233cfba654dcff83
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ec8a10e987276807dc4648bd8948b2285f76fd37
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804554"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388211"
 ---
 # <a name="getting-started-with-the-project-server-2013-javascript-object-model"></a>Project Server 2013 JavaScript オブジェクト モデルの概要
 
@@ -20,16 +20,16 @@ Project Server 2013 では、JavaScript オブジェクト モデルは、プロ
 ## <a name="using-the-project-server-javascript-object-model"></a>Project Server JavaScript オブジェクト モデルの使用
 <a name="pj15_GetStartedJSOM_UseJSOM"> </a>
 
-JavaScript オブジェクト モデルを使用して、クライアント側ではなく、リモートで実行する必要のあるマネージ クライアント コード) を実行するアプリケーションを作成する優れた方法です。 アプリケーションでは、取得するか、サーバーへの非同期の呼び出しを送信することによってオブジェクトを変更する JavaScript オブジェクト モデルを使用できます。 JavaScript オブジェクト モデルを使用するアプリケーションは、通常、カスタムの SharePoint アドインの場合、アプリケーション ページ、および Web パーツとして配置されます。 詳細については、[ホストの web、web では、追加、](http://msdn.microsoft.com/library/b791cdf5-8aa2-47fa-bc4c-aee437354759%28Office.15%29.aspx)および SharePoint 2013 での SharePoint コンポーネントの種類の SharePoint アプリケーションでは、SharePoint コンポーネント」を参照してください。
+JavaScript オブジェクト モデルを使用して、クライアント側ではなく、リモートで実行する必要のあるマネージ クライアント コード) を実行するアプリケーションを作成する優れた方法です。 アプリケーションでは、取得するか、サーバーへの非同期の呼び出しを送信することによってオブジェクトを変更する JavaScript オブジェクト モデルを使用できます。 JavaScript オブジェクト モデルを使用するアプリケーションは、通常、カスタムの SharePoint アドインの場合、アプリケーション ページ、および Web パーツとして配置されます。 詳細については、[ホストの web、web では、追加、](https://msdn.microsoft.com/library/b791cdf5-8aa2-47fa-bc4c-aee437354759%28Office.15%29.aspx)および SharePoint 2013 での SharePoint コンポーネントの種類の SharePoint アプリケーションでは、SharePoint コンポーネント」を参照してください。
   
 JavaScript オブジェクト モデルは、Project Server 2013 では、主要な機能を実装しますが、JavaScript オブジェクト モデル、サーバー オブジェクト モデルでは、一対一のパリティを必要はありません。 JavaScript オブジェクト モデルへのエントリ ポイントは、Project Server 2013 のクライアント コンテキストを表し、サーバーのコンテンツおよび機能へのアクセスを提供する、 **ProjectContext**オブジェクトです。 Project Server 2013 の JavaScript オブジェクト モデルが既定のパスにある PS.js ファイルで定義されている`%ProgramFiles%\Common Files\Microsoft Shared\Web Server Extensions\15\TEMPLATE\LAYOUTS`のアプリケーション サーバーにします。 また、Project Server 2013 にインストールして、PS同じ場所に Debug.js ファイルです。 PS.Debug.js は、IntelliSense の情報を提供する PS.js の unminified バージョンです。 
   
-JavaScript オブジェクト モデルにより、フォーム認証、およびすべての要求は、現在のユーザーとして認証されます。 セキュリティおよびカスタム アプリケーションの設計とソリューションの他の考慮事項については、[認証、承認、および SharePoint 2013 のセキュリティ](http://msdn.microsoft.com/library/8734790c-eb75-4d78-9604-7cc23b33b693%28Office.15%29.aspx)、SharePoint アドインのアーキテクチャと開発の重要な側面を[を参照してください。横](http://msdn.microsoft.com/library/ae96572b-8f06-4fd3-854f-fc312f7f2d88%28Office.15%29.aspx)、 [SharePoint のアドインは、SharePoint ソリューションと比較](http://msdn.microsoft.com/library/0e9efadb-aaf2-4c0d-afd5-d6cf25c4e7a8%28Office.15%29.aspx)するとします。
+JavaScript オブジェクト モデルにより、フォーム認証、およびすべての要求は、現在のユーザーとして認証されます。 セキュリティおよびカスタム アプリケーションの設計とソリューションの他の考慮事項については、[認証、承認、および SharePoint 2013 のセキュリティ](https://msdn.microsoft.com/library/8734790c-eb75-4d78-9604-7cc23b33b693%28Office.15%29.aspx)、SharePoint アドインのアーキテクチャと開発の重要な側面を[を参照してください。横](https://msdn.microsoft.com/library/ae96572b-8f06-4fd3-854f-fc312f7f2d88%28Office.15%29.aspx)、 [SharePoint のアドインは、SharePoint ソリューションと比較](https://msdn.microsoft.com/library/0e9efadb-aaf2-4c0d-afd5-d6cf25c4e7a8%28Office.15%29.aspx)するとします。
   
 > [!NOTE]
-> SharePoint サイトからリモートでデータにアクセスするには、SharePoint 2013 は、クロス ドメイン ライブラリをクライアント側のドメイン間呼び出しを行うことができますを提供します。 詳細については、[クロス ドメイン ライブラリを使用してアドインからのデータを SharePoint 2013 のアクセス](http://msdn.microsoft.com/library/bc37ff5c-1285-40af-98ae-01286696242d%28Office.15%29.aspx)を参照してください。 
+> SharePoint サイトからリモートでデータにアクセスするには、SharePoint 2013 は、クロス ドメイン ライブラリをクライアント側のドメイン間呼び出しを行うことができますを提供します。 詳細については、[クロス ドメイン ライブラリを使用してアドインからのデータを SharePoint 2013 のアクセス](https://msdn.microsoft.com/library/bc37ff5c-1285-40af-98ae-01286696242d%28Office.15%29.aspx)を参照してください。 
   
-多くの概念とプロセスを Project Server 2013 の JavaScript オブジェクト モデルを使用するため、関連するクライアント オブジェクト モデルのようになります。 Project Server 2013 のマネージ クライアント オブジェクト モデルの詳細については、 **Microsoft.ProjectServer.Client**を参照してください。 SharePoint 2013JavaScript オブジェクト モデルとマネージ クライアント オブジェクト モデルに関する詳細については、 [SharePoint 2013 での JavaScript ライブラリのコードを使用して基本的な操作を完了](http://msdn.microsoft.com/library/29089af8-dbc0-49b7-a1a0-9e311f49c826%28Office.15%29.aspx)し、[基本的な操作を完了 SharePoint 2013 クライアントを使用するを参照してください。ライブラリ コード](http://msdn.microsoft.com/library/5a69c9e3-73bf-4ed5-bc19-182056bdb394%28Office.15%29.aspx)。
+多くの概念とプロセスを Project Server 2013 の JavaScript オブジェクト モデルを使用するため、関連するクライアント オブジェクト モデルのようになります。 Project Server 2013 のマネージ クライアント オブジェクト モデルの詳細については、 **Microsoft.ProjectServer.Client**を参照してください。 SharePoint 2013JavaScript オブジェクト モデルとマネージ クライアント オブジェクト モデルに関する詳細については、 [SharePoint 2013 での JavaScript ライブラリのコードを使用して基本的な操作を完了](https://msdn.microsoft.com/library/29089af8-dbc0-49b7-a1a0-9e311f49c826%28Office.15%29.aspx)し、[基本的な操作を完了 SharePoint 2013 クライアントを使用するを参照してください。ライブラリ コード](https://msdn.microsoft.com/library/5a69c9e3-73bf-4ed5-bc19-182056bdb394%28Office.15%29.aspx)。
   
 ## <a name="walkthrough-creating-an-application-page-that-retrieves-and-iterates-through-projects"></a>チュートリアル: プロジェクトを取得および反復処理するアプリケーション ページの作成
 <a name="pj15_GetStartedJSOM_UseJSOM"> </a>
@@ -68,7 +68,7 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトを取得
         
     4. [**SharePoint カスタマイズ ウィザード**] ダイアログ ボックスで、[**ファーム ソリューションとして配置する**] を選択し、[**OK**] ボタンを選択します。 
     
-3. ソリューション エクスプ ローラーで、Project Web App インスタンスの URL と一致する**ProjectsJSOM**プロジェクトの**サイトの URL**プロパティの値を編集します (たとえば、 `http://ServerName/PWA`)。
+3. ソリューション エクスプ ローラーで、Project Web App インスタンスの URL と一致する**ProjectsJSOM**プロジェクトの**サイトの URL**プロパティの値を編集します (たとえば、 `https://ServerName/PWA`)。
     
 4. [**GetProjectsJSOM**] プロジェクトのショートカット メニューを開き、SharePoint "レイアウト" のマップされたフォルダーを追加します。 
     

@@ -6,12 +6,12 @@ ms.audience: ITPro
 localization_priority: Normal
 ms.assetid: 3e0ca274-e9cd-48a1-8cfc-9d5053738972
 description: カスタム関数を呼び出すには、Office オンライン サーバーのプレビューで Excel のオンラインでユーザー定義関数 (Udf) を使用します。
-ms.openlocfilehash: 12f452241754be1b4b1e545c69225aed055f4965
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2b76b7351a0882762165e37b55c8fbe78f657c34
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590184"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384823"
 ---
 # <a name="configure-udfs-in-excel-online-in-office-online-server-preview"></a>Office Online Server プレビューの Excel Online での UDF の構成
 
@@ -82,12 +82,12 @@ Udf を使用するには、次の Windows PowerShell コマンドレットを�
 
 次のファイルは、UDF と UDF バイナリを使用するサンプルのブックを提供します。
   
-- [BooleanDataType.xlsx](http://download.microsoft.com/download/6/7/F/67F724FD-1186-4209-BFF1-FBFD99E959D9/User%20Defined%20Function%20Assemblies/BooleanDataType.xlsx) - UDF を使用するサンプル ブック  
+- [BooleanDataType.xlsx](https://download.microsoft.com/download/6/7/F/67F724FD-1186-4209-BFF1-FBFD99E959D9/User%20Defined%20Function%20Assemblies/BooleanDataType.xlsx) - UDF を使用するサンプル ブック  
 - [EcsUdfsCommonSet.dll](https://www.microsoft.com/en-us/search/result.aspx?q=EcsUdfsCommonSet.dll) - UDF バイナリ 
     
 ## <a name="see-also"></a>関連項目
 
-- [Excel のオンライン管理の設定を構成します。](https://docs.microsoft.com/en-us/officeonlineserver/configure-excel-online-administrative-settings)  
-- [Office Online Server](https://docs.microsoft.com/en-us/officeonlineserver/office-online-server)
+- [Excel のオンライン管理の設定を構成します。](https://docs.microsoft.com/officeonlineserver/configure-excel-online-administrative-settings)  
+- [Office Online Server](https://docs.microsoft.com/officeonlineserver/office-online-server)
     
 

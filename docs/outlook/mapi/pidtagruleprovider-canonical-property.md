@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 64f80a03-9ba4-495a-9666-b3a909335cb6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3a80669f3d8f3d262cc8787f60efb3bc4b24d4b6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 19889a1f48a6088f0d5ad224f7e9189b112622fa
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589442"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385978"
 ---
 # <a name="pidtagruleprovider-canonical-property"></a>PidTagRuleProvider 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ルールを設定するアプリケーションの名前が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22589442"
 |関連するプロパティ:  <br/> |PR_RULE_PROVIDER、PR_RULE_PROVIDER_A、PR_RULE_PROVIDER_W  <br/> |
 |識別子:  <br/> |0x6681  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |サーバー側のルール  <br/> |
+|エリア:  <br/> |サーバー側のルール  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 これらのコードを識別するプロパティを解釈し、規則の操作を実行する必要がありますアクションの必要性を延期します。
   
@@ -44,11 +44,11 @@ ms.locfileid: "22589442"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXORULE]](http://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)
+[[MS OXORULE]](https://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)
   
 > サーバー上の受信電子メール メッセージを操作します。
     

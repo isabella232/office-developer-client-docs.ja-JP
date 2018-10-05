@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 32676003-ba32-886f-1185-4760cb0e30e3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 863e401f66a8012b3bd9954ed56c02382f1bd4e2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2aeca1a65a859ac9502995a463bc4869609bcd15
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565936"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383815"
 ---
 # <a name="fixmapi"></a>FixMAPI
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 によってバックアップ コピーが mapi32.dll のコピーの現在のクライアント コンピューター、および MAPI スタブ ライブラリのリストア mapi32.dll mapistub.dll。
   
@@ -28,8 +28,8 @@ ms.locfileid: "22565936"
 |||
 |:-----|:-----|
 |によってエクスポートされます。  <br/> |mapistub.dll  <br/> |
-|によって呼び出されます。  <br/> |クライアント  <br/> |
-|によって実装されます。  <br/> |Windows  <br/> |
+|呼び出し元:  <br/> |クライアント  <br/> |
+|実装元:  <br/> |Windows  <br/> |
    
 ```cpp
 DWORD STDAPICALLTYPE FixMAPI(void); 
@@ -39,9 +39,9 @@ DWORD STDAPICALLTYPE FixMAPI(void);
 
 関数が成功した場合は、0 以外の値を返します。
   
-関数が失敗した場合は 0 を返します。 拡張エラー情報を取得するには、Microsoft Windows ソフトウェア開発キット (SDK) 関数、 **[GetLastError](http://msdn.microsoft.com/en-us/library/ms679360.aspx)** を呼び出します。 
+関数が失敗した場合は 0 を返します。 拡張エラー情報を取得するには、Microsoft Windows ソフトウェア開発キット (SDK) 関数、 **[GetLastError](https://msdn.microsoft.com/library/ms679360.aspx)** を呼び出します。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
  **FixMAPI**では、ファイルが読み取り専用としてマークされている場合、現在の mapi32.dll ファイルは置換されません。 
   
@@ -53,7 +53,7 @@ DWORD STDAPICALLTYPE FixMAPI(void);
 
 
 
-[KB 256946: Outlook 2000 を起動したときにプログラムの競合のエラー メッセージが表示されます。](http://support.microsoft.com/kb/256946)
+[KB 256946: Outlook 2000 を起動したときにプログラムの競合のエラー メッセージが表示されます。](https://support.microsoft.com/kb/256946)
   
-[KB 228457: Fixmapi.exe ツールの説明は、Internet Explorer 5 に含まれる](http://support.microsoft.com/kb/228457)
+[KB 228457: Fixmapi.exe ツールの説明は、Internet Explorer 5 に含まれる](https://support.microsoft.com/kb/228457)
 

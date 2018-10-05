@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0fdcb55a-2971-4c7d-b61e-7ada2d19d0e6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: efa778f51ac047c911deb6a3c4d5d9e718dc33fb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8d58342e0460352bd9d260cb6e73de358cb2fc23
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565040"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387721"
 ---
 # <a name="pidtagrowid-canonical-property"></a>PidTagRowid 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 受信者テーブルまたはステータス テーブル内で受信者の一意の識別子が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22565040"
 |関連するプロパティ:  <br/> |PR_ROWID  <br/> |
 |識別子:  <br/> |0x3000  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |一般的な MAPI  <br/> |
+|エリア:  <br/> |一般的な MAPI  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、テーブルを所有するオブジェクトの有効期間にのみ有効な一時的な値です。 テーブルの列として表示されますが、保存されていません。
   
@@ -42,11 +42,11 @@ ms.locfileid: "22565040"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[MS OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
 > 順序と、クライアントとサーバー間のデータ転送のフローを処理します。
     

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f9468715-1674-4d14-81c8-2f24dbaa0453
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 8cb7934919722139622b6caf3aac741c9b2e54c5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 59c6d4a05c91511ad8c481fd4ddbe42396442190
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582463"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384109"
 ---
 # <a name="iabproviderlogon"></a>IABProvider::Logon
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 アクティブなセッションへの接続を確立します。
   
@@ -86,7 +86,7 @@ MAPI_UNICODE
   
 > [out]プロバイダーのログオン オブジェクトへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -112,7 +112,7 @@ MAPI_E_USER_CANCEL
   
 > ユーザー操作がキャンセルされました、通常、[ログオン] ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 各アドレス帳プロバイダーには、クライアントが、 [IMAPISession::OpenAddressBook](imapisession-openaddressbook.md)メソッドを呼び出すと、セッション ・ プロファイルで接続を確立します。 **OpenAddressBook**は、各プロバイダーの**ログオン**メソッドを呼び出します。 
   
@@ -126,7 +126,7 @@ _UlFlags_パラメーターの MAPI_UNICODE フラグの有無によって示さ
   
 MAPI が_lpMAPISup_パラメーターで、**ログオン**のメソッドに渡されるサポート オブジェクトに含まれているメソッドの多くへのアクセスを提供する、 [IMAPISupport: IUnknown](imapisupportiunknown.md)インタ フェースです。 MAPI では、プロバイダーの種類に合わせてカスタマイズされたサポート オブジェクトを作成します。 などの接続を確立すると、基になるメッセージング システムやディレクトリ サービスへのログオンが必要な場合は、この特定のログオン セッションのセキュリティ資格情報を取得するために[IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md)メソッドを呼び出すことができます。 
   
-**ログオン**が成功した場合、参照カウントをインクリメントするサポート オブジェクトの[IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28VS.85%29.aspx)メソッドを呼び出すことを確認します。 これは、セッションの残りの部分のサポート オブジェクトへのポインターを保持するのには、プロバイダーを使用できます。 この**AddRef**メソッドを呼び出していないと、MAPI は、プロバイダーをアンロードします。 
+**ログオン**が成功した場合、参照カウントをインクリメントするサポート オブジェクトの[IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx)メソッドを呼び出すことを確認します。 これは、セッションの残りの部分のサポート オブジェクトへのポインターを保持するのには、プロバイダーを使用できます。 この**AddRef**メソッドを呼び出していないと、MAPI は、プロバイダーをアンロードします。 
   
 エラー] ダイアログ ボックス、ログオン画面、または他のユーザー インターフェイス内の_lpszProfileName_パラメーターで渡されたプロファイルの名前を含めることができます。 プロファイル名を使用するに割り当てた記憶域にコピーします。 
   

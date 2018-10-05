@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: cd57a5be-5550-4492-acb9-52255fac9014
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c38d1de1f2631277645ed10eb960ffc1956dfb6f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bbac700c2bf5a0e17967cbf94b68b03627a47256
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594713"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383831"
 ---
 # <a name="pidlidchangehighlight-canonical-property"></a>PidLidChangeHighlight 標準プロパティ
 
@@ -35,19 +35,19 @@ ms.locfileid: "22594713"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
-このプロパティが必要ではありません。 各フラグを設定する詳細については、 [[MS OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)。
+このプロパティが必要ではありません。 各フラグを設定する詳細については、 [[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
     

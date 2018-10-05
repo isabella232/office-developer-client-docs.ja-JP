@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 394e1430-04d6-4d61-be13-eb695309fa73
 description: このトピックでは、ダウンロードまたはそのアカウントの削除されたメッセージを特定するのには、POP3 アカウントのメッセージのダウンロードの履歴を表す POP3 の BLOB の構造について説明します。
-ms.openlocfilehash: ffed3178e4e8b45f17fc335575a7febd77d40902
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 44a799f6b6fbe2a2841522c18405149a470b0236
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799549"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389009"
 ---
 # <a name="parsing-the-message-download-history-for-a-pop3-account"></a>POP3 アカウントのメッセージ ダウンロード履歴の解析
 
@@ -26,7 +26,7 @@ Outlook の Post Office プロトコル (POP) プロバイダーを取得し、�
   
 受信トレイのメッセージ ダウンロードの履歴を取得します。
   
-- POP3 アカウントのメッセージの履歴を表すバイナリ ラージ オブジェクト (BLOB) が含まれています、 [PidTagAttachDataBinary](http://msdn.microsoft.com/library/3b0a8b28-863e-4b96-a4c0-fdb8f40555b9%28Office.15%29.aspx)プロパティを検索するのには[、POP3 アカウントの履歴をダウンロードするメッセージを検索する](locating-the-message-download-history-for-a-pop3-account.md)に手順を実行します。 
+- POP3 アカウントのメッセージの履歴を表すバイナリ ラージ オブジェクト (BLOB) が含まれています、 [PidTagAttachDataBinary](https://msdn.microsoft.com/library/3b0a8b28-863e-4b96-a4c0-fdb8f40555b9%28Office.15%29.aspx)プロパティを検索するのには[、POP3 アカウントの履歴をダウンロードするメッセージを検索する](locating-the-message-download-history-for-a-pop3-account.md)に手順を実行します。 
     
 - 、BLOB の構造を説明し、BLOB をダウンロードまたは POP3 アカウントの受信トレイで削除されたメッセージを識別する例を示していますが、このトピックを参照してください。
 
@@ -40,9 +40,9 @@ POP BLOB 構造では、表 1 で説明したようは、**バージョン**お�
 
 |**BLOB のフィールド**|**Size**|**説明**|
 |:-----|:-----|:-----|
-|**バージョン** <br/> |2 バイト  <br/> |3 (**PBLOB_VERSION_NUM**) をする必要があります。  <br/> |
+|**Version** <br/> |2 バイト  <br/> |3 (**PBLOB_VERSION_NUM**) をする必要があります。  <br/> |
 |**Count** <br/> |2 バイト  <br/> |リソースの数は、この BLOB にタグ付けします。  <br/> |
-|リソース タグ  <br/> |可変  <br/> |リソース タグのエンコードが UTF-8 文字列を 0 または null で終わる。 Null で終わる文字列の数は、**カウント**をと一致する必要があります。  <br/> |
+|リソース タグ  <br/> |変数  <br/> |リソース タグのエンコードが UTF-8 文字列を 0 または null で終わる。 Null で終わる文字列の数は、**カウント**をと一致する必要があります。  <br/> |
    
 各リソースのタグは、メッセージ、操作に関するいくつかの日付と時刻のメタデータに適用され、メッセージの UID をエンコードする操作を指定します。 リソース タグ文字列の形式は次のように分割して表 2 の詳細については。 
   
@@ -91,6 +91,6 @@ POP BLOB 構造では、表 1 で説明したようは、**バージョン**お�
 
 - [POP3 アカウントのメッセージ ダウンロードの管理](managing-message-downloads-for-pop3-accounts.md)    
 - [POP3 アカウントのメッセージのダウンロードの履歴を検索します。](locating-the-message-download-history-for-a-pop3-account.md)    
-- [POP3 UIDL 履歴の解析](http://blogs.msdn.com/b/stephen_griffin/archive/2012/12/04/parsing-the-pop3-uidl-history.aspx)
+- [POP3 UIDL 履歴の解析](https://blogs.msdn.com/b/stephen_griffin/archive/2012/12/04/parsing-the-pop3-uidl-history.aspx)
     
 

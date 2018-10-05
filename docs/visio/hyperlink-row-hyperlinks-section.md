@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: e3c7ae27-2e54-a174-4fb3-d16093faf759
 description: 図形に関連付けられた、単一のハイパーリンクの情報を格納します。図形には、各ハイパーリンクに対して 1 つの [Hyperlink] 行があります。
-ms.openlocfilehash: 99295838f5d1860e3c34cf4e37866eb477fe81ad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 36b9b62f248e4f5b9407156a79fa674dc2e8f14d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805550"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390255"
 ---
 # <a name="hyperlink-row-hyperlinks-section"></a>[Hyperlink] 行 ([ハイパーリンク] セクション)
 
@@ -30,7 +30,7 @@ ms.locfileid: "19805550"
 |[ExtraInfo](extrainfo-cell-hyperlinks-section.md) <br/> |URL の解決に使用される情報を渡す文字列です。  <br/> |
 |[フレーム](frame-cell-hyperlinks-section.md) <br/> |ActiveX コンテナーで、ActiveX の図面として Microsoft Office Visio の図面を開く場合に、ターゲットとするフレームの名前です。既定では、空の文字列です。  <br/> |
 |[[Sortkey]](sortkey-cell-hyperlinks-section.md) <br/> |ハイパーリンクがショートカット メニューに表示されるときの順序を判別します。  <br/> |
-|[NewWindow](newwindow-cell-hyperlinks-section.md) <br/> |ハイパーリンクを新しいウィンドウで開くかどうかを指定します。"TRUE" の場合、リンクされたページ、図面、または Web サイトが新しいウィンドウで開きます。既定値は "FALSE" です。  <br/> |
+|[NewWindow](newwindow-cell-hyperlinks-section.md) <br/> |ハイパーリンクを新しいウィンドウで開くかどうかを指定します。 TRUE の場合、リンク先のページ、ドキュメント、または web サイトを新しいウィンドウで開きます。 既定値は、FALSE です。  <br/> |
 |[Default](default-cell-hyperlinks-section.md) <br/> |図形またはページに対する既定のハイパーリンクです。  <br/> |
 |[非表示](invisible-cell-hyperlinks-section.md) <br/> |ハイパーリンクがショートカット メニューに表示されるかどうかを示します。  <br/> |
    

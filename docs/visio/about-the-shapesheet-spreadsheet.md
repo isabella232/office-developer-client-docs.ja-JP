@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: f403890d-4a3a-bacc-53d7-1b9920b23639
 description: Microsoft Visio のすべての要素 (図面、ページ、スタイル、図形、グループ、グループ内の図形やオブジェクト、マスター シェイプ、別のプログラムのオブジェクト、ガイド、ガイド点) には、それぞれのシェイプシートというスプレッドシートがあり、各オブジェクトについての情報が格納されています。このスプレッドシートには、高さ、幅、角度、色など、図形の外観や動作を決定する属性が含まれています。
-ms.openlocfilehash: f443a596174ac4a555d53a271372e73367197da0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 37b2ae10b1f511197af5ccf739de91edb74e7819
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804736"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389352"
 ---
 # <a name="about-the-shapesheet-spreadsheet"></a>シェイプシート スプレッドシートについて
 
@@ -36,13 +36,13 @@ Visio の図面ウィンドウと [シェイプシート] ウィンドウには�
 
 シェイプ シートは、座標や書式設定などの図形の動作や外観を特定の側面を制御する*セクション*に分割されます。 各セクションには、*セル*を含む 1 つまたは複数の*行*が含まれています。 各セルは、数式、その結果の (セルの値とよく呼ばれます) およびオプションのエラー情報を含めることができます。 必須またはオプションによっては、特定のセル、数式があります。 (たとえば、その数式または値) のセルのデータ、ローカルで定義されているかより多くの場合は、図形のマスター シェイプまたはスタイルに対応するセルから継承されています。 
   
-次の例は、[シェイプシート] ウィンドウでの数式バー ![数値 1](media/callout1_ZA01036259.gif)、セクション ![数値 2](media/callout2_ZA01036260.gif)、セル ![数値 3](media/callout3_ZA01036261.gif)、および行 ![数値 4](media/callout4_ZA01036262.gif) を示しています。 
+次の例は、[シェイプシート] ウィンドウでの数式バー ![数式バー](media/callout1_ZA01036259.gif)、セクション ![section](media/callout2_ZA01036260.gif)、セル ![セル](media/callout3_ZA01036261.gif)、および行 ![row](media/callout4_ZA01036262.gif) を示しています。 
   
-![](media/ShpSheetRef_CA_02a_ZA07645861.gif)
+![シェイプ シート ウィンドウ](media/ShpSheetRef_CA_02a_ZA07645861.gif)
   
 図形を描画するときに、Visio は、直線セグメントに接続されている水平および垂直方向の位置のコレクションとして図形を記録します。 (頂点と呼ばれます)、これらの場所は、図形の [ **Geometry** ] セクションの X と Y のセルに記録されます。 図形のシェイプ シート ウィンドウの [ **Geometry** ] セクションで、X と Y のセルをクリックしたときに、次の例では、ように、黒い枠線のボックスでの図面ウィンドウ内の図形の頂点を強調表示が表示されます。 
   
-![](media/ShpSheetRef_CA_01_ZA07645860.gif)
+![黒い枠線] ボックス、[図面] ウィンドウ内の図形の頂点を強調表示](media/ShpSheetRef_CA_01_ZA07645860.gif)
   
 ## <a name="editing-an-object-in-the-shapesheet-window"></a>[シェイプシート] ウィンドウでオブジェクトを編集する
 

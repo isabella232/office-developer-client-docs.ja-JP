@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: fd7374d3-a268-4e30-9872-7579cd681bd0
 description: InfoPath フォームの機能を拡張しようと思うと、多くの場合、フォームの基になる XML ドキュメントに関する情報へのアクセス、XML ドキュメントに記述されているデータへのアクセス、XML ドキュメントに対する何らかの操作の実行などの処理をプログラムで行う必要が出てきます。InfoPath オブジェクト モデルでは、XmlForm クラスと XmlFormCollection クラスを関連させて使用することにより、フォームの基になる XML ドキュメントにアクセスしたり、その XML ドキュメントを操作したりすることができます。
-ms.openlocfilehash: c39862fd404575fe95bc1986ce7ab7d9689acfb1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c8251afcd75391f102215811694515c06b9f3e7e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799149"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386832"
 ---
 # <a name="access-form-data"></a>フォーム データにアクセスする
 
@@ -63,7 +63,7 @@ InfoPath フォームの機能を拡張しようと思うと、多くの場合�
 |[Dirty](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.Dirty.aspx) プロパティ  <br/> |フォームのデータが最後に保存されてから変更されたかどうかを示す値を取得します。  <br/> |
 |[Errors](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.Errors.aspx) プロパティ  <br/> |フォームに関連付けられた [FormErrorCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.aspx) への参照を取得します。  <br/> |
 |[Extension](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.Extension.aspx) プロパティ  <br/> |
-  [System.Reflection](https://msdn.microsoft.com/library/system.object%28v=vs.110%29.aspx) を使用して、フォームのプライマリ フォーム コード ファイルに含まれる関数とグローバル変数にアクセスするための [System.Object](https://msdn.microsoft.com/en-us/library/system.reflection(v=vs.110).aspx) を取得します。  <br/> |
+  [System.Reflection](https://msdn.microsoft.com/library/system.object%28v=vs.110%29.aspx) を使用して、フォームのプライマリ フォーム コード ファイルに含まれる関数とグローバル変数にアクセスするための [System.Object](https://msdn.microsoft.com/library/system.reflection(v=vs.110).aspx) を取得します。  <br/> |
 |[FormState](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.FormState.aspx) プロパティ  <br/> |サーバー上の複数のセッションにわたって状態情報を維持するためにブラウザー対応のフォームで使用できる、[System.Collections.IDictionary](https://msdn.microsoft.com/library/system.collections.idictionary%28v=vs.110%29.aspx) 型のプロパティ バッグへの参照を取得します。  <br/> |
 |[Host](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.Host.aspx) プロパティ  <br/> |ホストされた InfoPath のインスタンスで実行しているコードでホスト アプリケーションのオブジェクト モデルにアクセスするために使用できる、[System.Object](https://msdn.microsoft.com/library/system.object%28v=vs.110%29.aspx) を取得します。  <br/> |
 |[Hosted](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.Hosted.aspx) プロパティ  <br/> |InfoPath が別のアプリケーションでコントロールとしてホストされているかどうかを取得します。  <br/> |

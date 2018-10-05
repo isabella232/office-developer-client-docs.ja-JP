@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: f4d7d42f-688a-4199-b972-dd42528c0cdf
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0125bd57f0f2958c112fb03e7bf4166a7017cd03
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1d7fea7f92a315b9671d17c82a82d5d7d180f4bb
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584766"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391606"
 ---
 # <a name="writing-a-remote-viewer"></a>リモート ビューアーを作成します。
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 リモート ビューアーは、別のコンピューターに格納されているメッセージに対するアクセスの制御を提供するクライアント アプリケーションのウィンドウです。 この制御されたアクセスが低速の通信リンクを動作可能性があります。 ユーザーがフォルダーを開くたびに使用可能なメッセージの完全な選択範囲を取得するのではなくリモート ビューアーは最初のヘッダーだけを表示します。 ユーザーがヘッダーからを選択し、完全に表示するメッセージのうち。 ビューアーがリモート クライアントには、これまでダウンロードされる前にメッセージを削除するのには、ユーザーを許可できます。 
   
@@ -37,7 +37,7 @@ ms.locfileid: "22584766"
     
 5. [IMAPISession::OpenEntry](imapisession-openentry.md)への呼び出しで、表の行ごとにエントリの識別子を渡します。 このインターフェイスが MAPI スプーラーでのプロセスのコンテキストからクライアントのプロセスのコンテキストにマーシャ リングするため、インタ フェースのアドレス帳またはメッセージから取得した通常とは異なり、プロバイダーを格納、マルチ スレッドは、多くの重要性についての問題します。 
     
-6. リモート フォルダーを取得するのには、インターフェイス識別子として IID_IMAPIFolder を渡すことの状態のオブジェクトの[IUnknown::QueryInterface](http://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d.aspx)メソッドを呼び出します。 リモート フォルダーは、フォルダーの完全な実装ではありません。フォルダーのメソッドおよびプロパティのサブセットのみがサポートされています。 必須のメソッドでは、 [IMAPIProp::GetProps](imapiprop-getprops.md)のいずれかには、次のプロパティの取得がサポートされています。
+6. リモート フォルダーを取得するのには、インターフェイス識別子として IID_IMAPIFolder を渡すことの状態のオブジェクトの[IUnknown::QueryInterface](https://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d.aspx)メソッドを呼び出します。 リモート フォルダーは、フォルダーの完全な実装ではありません。フォルダーのメソッドおよびプロパティのサブセットのみがサポートされています。 必須のメソッドでは、 [IMAPIProp::GetProps](imapiprop-getprops.md)のいずれかには、次のプロパティの取得がサポートされています。
     
     |||
     |:-----|:-----|

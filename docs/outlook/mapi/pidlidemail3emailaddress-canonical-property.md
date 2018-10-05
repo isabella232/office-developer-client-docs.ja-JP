@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 3a468bb6-c4c2-42ee-8283-492196872ca0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 82328e285d0bf77ced074ba19aed306a27cea574
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4e7e80582bcc951539dbf6b4ca856a56e63d9abc
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594776"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383227"
 ---
 # <a name="pidlidemail3emailaddress-canonical-property"></a>PidLidEmail3EmailAddress 標準プロパティ
 
@@ -35,7 +35,7 @@ ms.locfileid: "22594776"
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
 |エリア:  <br/> |Contact  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティの値は、この電子メール アドレスに指定されたアドレスの種類に適したである必要があります。
   
@@ -43,11 +43,11 @@ ms.locfileid: "22594776"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > プロパティは、連絡先、個人用配布リストの許可の操作を指定します。
     

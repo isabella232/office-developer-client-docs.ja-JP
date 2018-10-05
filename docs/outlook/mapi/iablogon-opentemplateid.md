@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 751c36d3-c39e-4357-a60a-88685a378de0
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a120fb1710bf2bd351d956e4d05eb0af346ef4c5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bc68878a25873533162df7e1671e483c3bb77865
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583387"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384634"
 ---
 # <a name="iablogonopentemplateid"></a>IABLogon::OpenTemplateID
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ホストのアドレス帳プロバイダーに存在するデータが含まれている受信者のエントリが表示されます。
   
@@ -73,7 +73,7 @@ FILL_ENTRY
   
 > [out]予約されています。**null**にする必要があります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -87,7 +87,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > アドレス帳プロバイダーでは、 _lpTemplateID_パラメーターに渡されるテンプレート識別子は認識されません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **IABLogon::OpenTemplateID**メソッドは、ホスト プロバイダーのコンテナー内にあるそれぞれのエントリのコピーの制御を維持する必要のあるアドレス帳プロバイダーによってのみ実装されます。 **OpenTemplateID**を実装するプロバイダーは、外部のアドレス帳プロバイダーと呼ばれます。 ホスト プロバイダーがコピーしたエントリを作成またはコピーした項目を開くには、 [IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md)を呼び出すし、MAPI は、 **IABLogon::OpenTemplateID**の呼び出しに渡されます。 **IABLogon::OpenTemplateID**は、エントリを表示し、ホスト プロバイダー内のデータにそれを制御するコードをバインドします。 
   
@@ -117,7 +117,7 @@ MAPI_E_UNKNOWN_ENTRYID
     
 一般に、ホスト プロバイダーに渡されたエントリの実装を行うすべての関連するプロパティのコンテキストに固有の操作を実行するメソッドをインターセプトします。 FILL_ENTRY フラグが_ulTemplateFlags_パラメーターで渡された場合は、エントリのすべてのプロパティを設定します。 
   
-_LppMAPIPropNew_パラメーターで新しい property オブジェクトを取得する場合は、参照を維持するために、ホスト プロバイダーのプロパティのオブジェクトの[IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28VS.85%29.aspx)メソッドを呼び出します。 **IMAPIProp**実装は、 _lppMAPIPropNew_で返されるバインドされたオブジェクトをすべての呼び出しをルーティングするプロパティのホスト オブジェクトのそれぞれの対応するメソッドにバインドされたオブジェクトによって処理される、後。 
+_LppMAPIPropNew_パラメーターで新しい property オブジェクトを取得する場合は、参照を維持するために、ホスト プロバイダーのプロパティのオブジェクトの[IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx)メソッドを呼び出します。 **IMAPIProp**実装は、 _lppMAPIPropNew_で返されるバインドされたオブジェクトをすべての呼び出しをルーティングするプロパティのホスト オブジェクトのそれぞれの対応するメソッドにバインドされたオブジェクトによって処理される、後。 
   
 バインドされたプロパティ オブジェクトを通じて渡される任意の名前付きプロパティのプロパティ id は、プロバイダーの識別子の名前空間には。 [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)メソッドの実装は、任意のテンプレートに固有のタスクを実行できるようにするプロパティの名前を判断します。 同様に、ホスト プロバイダーに渡す、プロバイダーのプロパティは、名前空間である必要があります。 などの**OpenTemplateID**では、名前付きプロパティを設定する場合必要がありますを使用する、識別子の 1 つの名前- [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)メソッドを呼び出すことによって、必要に応じて、作成します。 
   

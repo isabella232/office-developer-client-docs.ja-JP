@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: fad9c0fd-b523-db98-ee0d-78aad5914ff2
-ms.openlocfilehash: 536c19aa314db9fca39298536c12464e71a71407
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2b37aa2000218acc0663ee8e2db12f01b93c0663
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799347"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388190"
 ---
 # <a name="ienumfbblock"></a>IEnumFBBlock
 
@@ -21,7 +21,7 @@ ms.locfileid: "19799347"
 
 |||
 |:-----|:-----|
-|継承します。  <br/> |[IUnknown](http://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) <br/> |
+|継承します。  <br/> |[IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) <br/> |
 |提供元:  <br/> |プロバイダーの空き/予約済み  <br/> |
 |インターフェイスの識別子。  <br/> |**IEnumFBBlock** <br/> |
    
@@ -35,7 +35,7 @@ ms.locfileid: "19799347"
 |[Clone](ienumfbblock-clone.md) <br/> |同じ時間制限を使用していますが、列挙子の先頭にカーソルを設定する、列挙子のコピーを作成します。  <br/> |
 |[制限します。](ienumfbblock-restrict.md) <br/> |指定した期間内に列挙型を制限します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 列挙体には、時間が重複しないデータのブロック空き時間情報にはが含まれています。 これらの項目の優先順位に基づいて列挙体の空き/予約済みブロックの重複を形成する結合 Outlook の予定表に重複する項目がある場合は、: 不在時の予定あり、仮の予定です。
   

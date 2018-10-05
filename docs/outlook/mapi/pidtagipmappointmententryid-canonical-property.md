@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: a6e8c8fb-b76a-4a73-b112-6399e4d94233
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 64945d678051d2e3ae486395fb8ec6630de6a59e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d27506edf6eb40f6b244733336b8b381ea941442
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571158"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384760"
 ---
 # <a name="pidtagipmappointmententryid-canonical-property"></a>PidTagIpmAppointmentEntryId 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 Outlook の予定表フォルダーの**エントリ Id**が含まれています。 
   
@@ -32,9 +32,9 @@ Outlook の予定表フォルダーの**エントリ Id**が含まれていま�
 |関連するプロパティ:  <br/> |PR_IPM_APPOINTMENT_ENTRYID  <br/> |
 |識別子:  <br/> |0x36D0  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |Folder  <br/> |
+|エリア:  <br/> |Folder  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、[受信トレイ] フォルダーで、メッセージ ・ ストアのルート フォルダーに格納されます。 特定のメッセージ ストアのプロパティにアクセスするには、次の。 
   
@@ -52,11 +52,11 @@ Outlook の予定表フォルダーの**エントリ Id**が含まれていま�
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOSFLD]](http://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
+[[MS OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
   
 > プロパティを作成すると、メールボックス内の特別なフォルダーを検索する操作を指定します。
     

@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 7b3b625b-6dea-4b12-99a9-152935bdfe39
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 18ce10ad73ba769f0ecc0bd9e4f12096f4227e42
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 30d4ad5e0fc1ecdc4c8eb06f75d39e38dd481269
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594545"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389975"
 ---
 # <a name="event-notification-in-mapi"></a>MAPI でのイベントの通知
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 イベント通知は、2 つの MAPI オブジェクト間で情報の通信です。 を通じて、オブジェクトのいずれか、クライアントまたはサービス プロバイダーを変更または他のオブジェクトで発生する可能性があります、イベントと呼ばれる、エラーの通知を登録します。 イベントが発生すると、最初のオブジェクトが変更またはエラーの通知されます。 アドバイズ シンクに通知を受信するオブジェクトと呼びます通知用に使用するオブジェクトは、アドバイズ ソースと呼ばれます。
   
@@ -59,6 +59,6 @@ ms.locfileid: "22594545"
   
 ![イベント通知の呼び出し](media/amapi_51.gif "イベント通知の呼び出し")
   
-(AdviseSink.h および AdviseSink.cpp ファイルを使用して) MFCMAPI **CAdviseSink**クラスでは、**アドバイズ**するすべての呼び出しに対してアドバイズ シンク オブジェクトを実装します。 MFCMAPI の詳細については、[コード サンプルとして MFCMAPI](mfcmapi-as-a-code-sample.md)と[MFCMAPI](http://go.microsoft.com/fwlink/?LinkId=124154)を参照してください。
+(AdviseSink.h および AdviseSink.cpp ファイルを使用して) MFCMAPI **CAdviseSink**クラスでは、**アドバイズ**するすべての呼び出しに対してアドバイズ シンク オブジェクトを実装します。 MFCMAPI の詳細については、[コード サンプルとして MFCMAPI](mfcmapi-as-a-code-sample.md)と[MFCMAPI](https://go.microsoft.com/fwlink/?LinkId=124154)を参照してください。
   
 

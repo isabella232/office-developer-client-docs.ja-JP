@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e85fc766-197a-484f-b600-68cd28a052a2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a1db4ba7a70695b17631ca13f1728043be8164bd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a7ad27d757d4ed6df58c597bf17d9e5412f83457
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575967"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386440"
 ---
 # <a name="pidtagsendrichinfo-canonical-property"></a>PidTagSendRichInfo 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 受信者がリッチ テキスト形式 (RTF) およびオブジェクトのリンクと埋め込み (OLE) オブジェクトを含む、すべてのメッセージの内容を受信できる場合は TRUE を格納します。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22575967"
 |関連するプロパティ:  <br/> |PR_SEND_RICH_INFO  <br/> |
 |識別子:  <br/> |0x3A40  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |Address  <br/> |
+|エリア:  <br/> |Address  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 配布リストとメッセージのユーザー オブジェクトがこのプロパティを公開することをお勧めします。 
   
@@ -59,19 +59,19 @@ ms.locfileid: "22575967"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
 > プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
     
-[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
     
-[[MS OXCMAIL]](http://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
 > メッセージ オブジェクトをインターネット メールの標準的な規則。
     

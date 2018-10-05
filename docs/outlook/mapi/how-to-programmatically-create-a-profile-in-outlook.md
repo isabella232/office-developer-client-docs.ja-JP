@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 2a8561a9-df09-453a-b415-c45910625870
 description: "���̃g�s�b�N�ł́A�v���O������g�p���āA�v���t�@�C�� �I�u�W�F�N�g��emsuid ] �Z�N�V������ MAPI �v���p�e�B��ǉ����� Outlook 2016 �Ńv���t�@�C����X�V������@�ɂ\x82��Đ�����܂��B"
-ms.openlocfilehash: fbd2dffc637cad022f78c9986eccd91a2c1fe4bf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 85d084705c1e36f5fe3b0ed268094f86b38d6383
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19800249"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391053"
 ---
 # <a name="programmatically-create-a-profile-in-outlook"></a>プログラムで Outlook のプロファイルを作成します。
 
@@ -25,7 +25,7 @@ MAPI�A�ȉ��̎菇�Ɏ�����Ă��� **PR_PROFILE_USER_SMTP_E
 
 1. Outlook 2016 �ł́A�v���p�e�B���\������Ă��邱�Ƃ�m�F���܂��B
     
-2. [IMAPIProp](https://msdn.microsoft.com/en-us/library/cc815525.aspx)�C���^�[�t�F�C�X��g�p����ƁAOutlook �v���t�@�C�� �Z�N�V�����Ɉړ����܂��B 
+2. [IMAPIProp](https://msdn.microsoft.com/library/cc815525.aspx)�C���^�[�t�F�C�X��g�p����ƁAOutlook �v���t�@�C�� �Z�N�V�����Ɉړ����܂��B 
     
    ����́AOutlook �ō���� MAPI �O���[�o�� �v���t�@�C��] �Z�N�V�������s�v�ɂȂ��� 2010�N�ł́A��ɂ��邽�߂ł��B[�v���t�@�C��] �Z�N�V�������������ɂ́A�v���p�e�B������� PR_EMSMDB_SECTION_UID (0x3D150102)�B�l�́A[�v���t�@�C��] �Z�N�V������ GUID ���A����ȍ~�̎菇�Ŏg�p����o�C�i���`���ŕۑ�����܂��B���̒l��o���Ă����K�v������܂��B 
     
@@ -316,10 +316,10 @@ Cleanup:
 
 ## <a name="use-mfcmapi-to-configure-outlook-profiles"></a>MFCMAPI ��g�p���āAOutlook �v���t�@�C����\������ɂ�
 
-[MFCMAPI](http://mfcmapi.codeplex.com) MAPI �X�g�A Exchange �� Outlook �̖��̒�����e�Ղɂ��āA�J���҂� MAPI �J���̃T�|�[�g��񋟂���ւ̃A�N�Z�X��񋟂��܂��B 
+[MFCMAPI](https://mfcmapi.codeplex.com) MAPI �X�g�A Exchange �� Outlook �̖��̒�����e�Ղɂ��āA�J���҂� MAPI �J���̃T�|�[�g��񋟂���ւ̃A�N�Z�X��񋟂��܂��B 
   
 ## <a name="see-also"></a>�֘A����
 
-- [MFCMAPI を使用して Outlook プロファイルを作成する](https://msdn.microsoft.com/en-us/library/office/mt723322.aspx)
+- [MFCMAPI を使用して Outlook プロファイルを作成する](https://msdn.microsoft.com/library/office/mt723322.aspx)
   
 

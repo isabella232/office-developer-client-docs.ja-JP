@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3b355b98-dd7d-4f16-8257-367e5dd61b34
 description: Outlook 2013 で天気予報バー用サードパーティの天気予報 Web サービスをプラグインとして指定して、ユーザーの選択する場所の天気予報データを提供する方法について説明します。
-ms.openlocfilehash: 6b2462615813b056ec09168ab512d456e1a7bdd6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0423e149306bf7562dd525f1b7460a63cbace372
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804477"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386580"
 ---
 # <a name="extending-the-weather-bar-in-outlook"></a>Outlook の天気予報バーの拡張
 
@@ -37,7 +37,7 @@ Outlook の天気予報バーには、地理上の場所における気象情報
 
 ユーザーは、天気予報バーのために別の天気予報データ サービスを指定することができます。ただし、その天気予報データ サービスでは、Outlook と通信するための以下のプロトコルをサポートする Web サービスが実装されていなければなりません。
   
-1. 気象データ サービスでは、Web サービスのベース URL がサポートされます。たとえば、Contoso Weather Web サービスのベース URL は http://service.contoso.com/data.aspx という具合です。
+1. 気象データ サービスでは、Web サービスのベース URL がサポートされます。たとえば、Contoso Weather Web サービスのベース URL は https://service.contoso.com/data.aspx という具合です。
     
 2. この Web サービスにより、Outlook が場所コードを要求するために次のパラメーターをベース URL に追加できるようになります。 
     
@@ -45,7 +45,7 @@ Outlook の天気予報バーには、地理上の場所における気象情報
     
    - weasearchstr= _city_: このパラメーターは、ユーザーが天気予報を調べる対象となる場所 _city_ です (London など)。
     
-   - culture= _LCID_: このパラメーターは、コンピューター上でそのユーザー用にインストールされている Office のバージョンのカルチャを示します。 LCID 値は「[[RFC4646] 言語を識別するタグ](http://www.ietf.org/rfc/rfc4646.txt)」で定義されています。
+   - culture= _LCID_: このパラメーターは、コンピューター上でそのユーザー用にインストールされている Office のバージョンのカルチャを示します。 LCID 値は「[[RFC4646] 言語を識別するタグ](https://www.ietf.org/rfc/rfc4646.txt)」で定義されています。
     
    - src=outlook: このパラメーターは、Outlook がサービス要求元クライアント アプリケーションであることを示します。
     
@@ -61,7 +61,7 @@ Outlook の天気予報バーには、地理上の場所における気象情報
     
    - weadegreetype= _degreetype_: このパラメーターは、気温の測定単位として摂氏を使うか華氏を使うかを指定します。 _degreetype_ には、摂氏の場合は c を、華氏の場合は f を指定します。 このパラメーターは省略可能であり、Web サービス要求に常に指定されているわけではありません。
     
-   - culture= _LCID_: このパラメーターは、コンピューター上でそのユーザー用にインストールされている Office のバージョンのカルチャを示します。 LCID 値は「[[RFC4646] 言語を識別するタグ](http://www.ietf.org/rfc/rfc4646.txt)」で定義されています。
+   - culture= _LCID_: このパラメーターは、コンピューター上でそのユーザー用にインストールされている Office のバージョンのカルチャを示します。 LCID 値は「[[RFC4646] 言語を識別するタグ](https://www.ietf.org/rfc/rfc4646.txt)」で定義されています。
     
    - src=outlook: このパラメーターは、Outlook がサービス要求元クライアント アプリケーションであることを示します。
     
@@ -74,7 +74,7 @@ Outlook の天気予報バーには、地理上の場所における気象情報
 ## <a name="setting-the-weather-bar-to-use-a-weather-service"></a>天気予報サービスを使用するための天気予報バーの設定
 <a name="ol15_weatherbar_setting"> </a>
 
-管理者やパワー ユーザーは、 **WeatherServiceUrl** レジストリ キーを使用することにより、特定の天気予報サービスを使用するように天気予報バーをカスタマイズすることができます。たとえば、Contoso 天気予報サービスのベース URL が http://service.contoso.com/data.aspx だとすると、 **WeatherServiceUrl** キーをその URL に設定することができます。 
+管理者やパワー ユーザーは、 **WeatherServiceUrl** レジストリ キーを使用することにより、特定の天気予報サービスを使用するように天気予報バーをカスタマイズすることができます。たとえば、Contoso 天気予報サービスのベース URL が https://service.contoso.com/data.aspx だとすると、 **WeatherServiceUrl** キーをその URL に設定することができます。 
   
 以下の表で、 **WeatherServiceUrl** キーについて説明します。 
   
@@ -134,17 +134,17 @@ Office がインターネットに接続可能であることを確認してく�
 
 Contoso Weather は、天気予報データ サービスのために以下のベース URL を提供しています。
   
-http://service.contoso.com/data.aspx
+https://service.contoso.com/data.aspx
   
 ### <a name="getting-a-location-code"></a>場所コードの取得
 
 Outlook により、ベース URL に、上記のステップ 2 で説明されているパラメーターが付加され、それにより地理上の場所  _city_ の場所コードが取得されます。
   
-http://service.contoso.com/data.aspx?outputview=search&amp;weasearchstr= _city_
+https://service.contoso.com/data.aspx?outputview=search&amp;weasearchstr= _city_
   
 例として、ユーザーが天気予報バーで [東京] を選択したとします。Outlook は、以下の URL を使用することにより、Contoso Weather から東京の場所コードを取得します。 
   
-http://weather.service.contoso.com/data.aspx?outputview=search&amp;weasearchstr=tokyo
+https://weather.service.contoso.com/data.aspx?outputview=search&amp;weasearchstr=tokyo
   
 Contoso Weather は、以下の XML を応答として返し、東京の場所コードを提供します。この XML は、Outlook Weather Location XML Schema に準拠するものです。天気予報サービスから、複数の場所のデータが返されることも少なくありません (選択された場所が大都市の場合など)。この例の場合、東京に対する応答には 2 つの場所が含まれており、それぞれが [weather](weather-element-weatherdata-elementoutlook-weather-location-schema.md) 要素で囲まれています。対応する場所コードは、以下のとおりです。 
   
@@ -169,11 +169,11 @@ Contoso Weather は、以下の XML を応答として返し、東京の場所�
 
 場所の場所コードを取得したあと、Outlook は、ベース URL に、ステップ 3 で説明されているパラメーターを付加することによって、その場所コードの天気予報情報を取得します。
   
-http://service.contoso.com/data.aspx?wealocations= _code_
+https://service.contoso.com/data.aspx?wealocations= _code_
   
 例として、Contoso Weather から [東京] の場所コードとして Outlook が wc:JAXX0085 を得たとすると、Outlook は、以下の URL の中でその場所コードを使用することによって天気予報情報を取得します。
   
-http://service.contoso.com/data.aspx?wealocations=wc:JAXX0085
+https://service.contoso.com/data.aspx?wealocations=wc:JAXX0085
   
 Contoso Weather は、以下の XML を応答として返すことにより、東京の場所コードに対応する天気予報情報を提供します。この XML は、Outlook Weather Information XML Schema に準拠したものです。
   
@@ -181,8 +181,8 @@ Contoso Weather は、以下の XML を応答として返すことにより、�
 <?xml version="1.0"?>
 <weatherdata>
   <weather timezone="9" attribution="Data provided by Trey Research" 
-    degreetype="F" imagerelativeurl="http://contoso.com/images/en-us/" 
-    url="http://contoso.com/weather.aspx?eid=33568&amp;q=Tokyo-JPN" 
+    degreetype="F" imagerelativeurl="https://contoso.com/images/en-us/" 
+    url="https://contoso.com/weather.aspx?eid=33568&amp;q=Tokyo-JPN" 
     weatherlocationname="Tokyo, JPN" 
     weatherlocationcode="wc:JAXX0085">
       <current winddisplay="9 mph NNW" windspeed="9" humidity="90" feelslike="44" 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 3179442c-6499-464a-93af-eb0a7a5b0d30
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 78bb5114b78142ce18d3f83c34795b72910c87a2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6fa0579dcd98a0d819e58e62d8a42cb2972a9d1e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573713"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391557"
 ---
 # <a name="pidtagscheduleinfomonthstentative-canonical-property"></a>PidTagScheduleInfoMonthsTentative 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 仮の予定の空き時間情報メッセージにマークされている月が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22573713"
 |関連するプロパティ:  <br/> |PR_SCHDINFO_MONTHS_TENTATIVE  <br/> |
 |識別子:  <br/> |0x6851  <br/> |
 |データの種類 :   <br/> |PT_MV_LONG  <br/> |
-|領域:  <br/> |空き/予約済み  <br/> |
+|エリア:  <br/> |空き/予約済み  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティの値の数が 0 と**PR_FREEBUSY_PUBLISH_START** ([PidTagFreeBusyPublishStart](pidtagfreebusypublishstart-canonical-property.md)) と**PR_FREEBUSY_PUBLISH_END の間の期間は、公開の範囲は、対象とする月の数との間にする必要があります。**([PidTagFreeBusyPublishEnd](pidtagfreebusypublishend-canonical-property.md)) のプロパティです。
   
@@ -44,11 +44,11 @@ ms.locfileid: "22573713"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOPFFB]](http://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
+[[MS OXOPFFB]](https://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
   
 > ユーザーまたはリソースの可用性を発行します。
     

@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 61e30f57-abd6-9378-45ed-51236ab3d3ee
 description: フォント名の要素のコレクションが含まれています。
-ms.openlocfilehash: 1c031d589883f34bbf9d69a3d537b82e1ecf3129
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5d6f2ffbf54dd04e744e85909fbc8a6bd4a387a3
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805361"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386818"
 ---
 # <a name="facenames-element-visiodocumenttype-complextype-visio-xml"></a>FaceNames 要素 (VisioDocument_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805361"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[FaceNames_Type](facenames_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
    

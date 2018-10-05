@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: de942619-2507-8fe0-bc81-f9da9ef7266f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0d31272e63df7f68a83b23ca7a3824c081de3c1d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fba49b052a51bd498f61fc115f630d08fc6c8926
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569268"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384979"
 ---
 # <a name="pidtagemsabserver-canonical-property"></a>PidTagEmsAbServer 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 オフラインのシナリオ、またはオンラインのシナリオでは、アドレス帳コンテナーが存在するグローバル カタログ サーバーの完全修飾ドメイン名で、アドレス帳コンテナーのいずれかのパスを指定します。
   
@@ -34,9 +34,9 @@ ms.locfileid: "22569268"
 |関連するプロパティ:  <br/> |PR_EMS_AB_SERVER、PR_EMS_AB_SERVER_A、PR_EMS_AB_SERVER_W  <br/> |
 |識別子:  <br/> |0 xfffe  <br/> |
 |データの種類 :   <br/> |PT_TSTRING  <br/> |
-|領域:  <br/> |アドレス帳  <br/> |
+|エリア:  <br/> |アドレス帳  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、プロパティの型がコンパイル時に**PT_UNICODE**にリセット、`UNICODE`プラットフォームでは、Unicode、および**PT_STRING8**がコンパイルできないときに、シンボル、`UNICODE`の記号です。 
   
@@ -44,7 +44,7 @@ ms.locfileid: "22569268"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義を提供します。
     

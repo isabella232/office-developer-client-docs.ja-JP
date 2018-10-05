@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 9fc27888-2809-aa29-4dbb-7e4f8a0c4758
 description: ユーザーが指定した 1 つの情報を他のセルやアドオン ツールによって参照できます。
-ms.openlocfilehash: 10a0e0e5f7255274de528a34d5faa2de6137446e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8852c1db31e9a9b8f0860c111da32de6d44dc7f5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806299"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388015"
 ---
 # <a name="row-element-user-defined-cells-section-visio-xml"></a>行要素 (ユーザー定義セル-部分) ('Visio XML')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806299"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[UserRow_Type](userrow_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml、masters.xml、マスターの # .xml、pages.xml ページ # .xml  <br/> |
    

@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c8b30768-cf83-450d-9fe2-567a5e0c2f57
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b36f71958528b25829b1ff85b29572b3590f9d4f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: cf1f3b4d72426fb5f80decdc074a622b140657c8
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594818"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388267"
 ---
 # <a name="pidtagrpcoverhttpflags-canonical-property"></a>PidTagRpcOverHttpFlags 標準プロパティ
 
@@ -30,7 +30,7 @@ ms.locfileid: "22594818"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |その他  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **PR_ROH_FLAGS**プロパティは、メッセージング アプリケーション プログラミング インターフェイス (MAPI) プロファイルのグローバル プロファイル セクションに格納されます。 **PR_ROH_FLAGS**の値は、次のフラグの 1 つ以上で構成されるビットマスクです。 
   
@@ -48,15 +48,15 @@ ms.locfileid: "22594818"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[MS OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
 > リモート操作で使用される基本的なデータ構造を定義します。
     
-[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
     

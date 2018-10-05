@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4b202bc1-f718-446a-950f-634ffee47baf
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f66a570273d78f63ced110a4bdc8a12a49c531b6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 855610c43cfaa64fa69e6987743b137b188d84a4
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595245"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387245"
 ---
 # <a name="pidnameacceptlanguage-canonical-property"></a>PidNameAcceptLanguage 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 [RFC3282] Accept-language ヘッダー フィールドの値が含まれています。
   
@@ -33,9 +33,9 @@ ms.locfileid: "22595245"
 |プロパティを設定します。  <br/> |PS_INTERNET_HEADERS  <br/> |
 |プロパティ名:  <br/> |Accept-Language  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |メール  <br/> |
+|エリア:  <br/> |メール  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティの値を設定するには、多目的のインターネット メッセージの拡張機能 (MIME) クライアントが目的の値を持つ、Accept-language ヘッダー フィールドを記述しておきます。 MIME クライアントでは、X-ブラウザーの言語のヘッダー フィールドを代わりに書き込むことがあります。 MIME のリーダーは、このプロパティの値をいずれかのヘッダー フィールドの値をコピーする必要があります。 両方のヘッダー フィールドが存在する場合は、MIME のリーダーは、Accept-language ヘッダー フィールドを使用してください。
   
@@ -43,11 +43,11 @@ ms.locfileid: "22595245"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCMAIL]](http://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
 > メッセージ オブジェクト インターネット標準の電子メールの表記規則からに変換します。
     

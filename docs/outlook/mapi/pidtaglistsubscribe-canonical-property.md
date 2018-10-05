@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 97387a82-8e40-4c76-818c-2229fac12e01
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4408bbc9461d11859292c1d4c356c2323598eb7b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bee11c495d7f1ef21f9af70e6aa89f8c0d0f78b4
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584227"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389604"
 ---
 # <a name="pidtaglistsubscribe-canonical-property"></a>PidTagListSubscribe 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 多目的インターネット メール拡張 (MIME) メッセージのリストの購読のヘッダー フィールドの値が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22584227"
 |関連するプロパティ:  <br/> |PR_LIST_SUBSCRIBE、PR_LIST_SUBSCRIBE_A、PR_LIST_SUBSCRIBE_W  <br/> |
 |識別子:  <br/> |0x1044  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |その他  <br/> |
+|エリア:  <br/> |その他  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 リスト購読ヘッダー フィールドを生成するには、クライアントは、目的の値にこれらのプロパティの値を設定する必要があります。 MIME ライターは、購読リストのヘッダー フィールドにこれらのプロパティの値をコピーする必要があります。
   
@@ -48,11 +48,11 @@ ms.locfileid: "22584227"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCMAIL]](http://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
 > メッセージ オブジェクト インターネット標準の電子メールの表記規則からに変換します。
     

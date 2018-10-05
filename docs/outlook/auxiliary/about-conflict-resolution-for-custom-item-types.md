@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 3f0853fc-f9f2-4314-ac55-47fe1e52d019
 description: このトピックでは、Outlook で作成したカスタム アイテムの種類の競合を解決する方法について説明します。
-ms.openlocfilehash: d85c2022d909901c71c20214f91b316cce81c596
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 357dd9182f26c4e9e1e264afdee296859e7b3483
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799288"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382989"
 ---
 # <a name="about-conflict-resolution-for-custom-item-types"></a>ユーザー設定アイテム タイプの競合解決について
 
@@ -33,7 +33,7 @@ Outlook が、標準の Outlook アイテムの種類に属する項目を同期
 
 ### <a name="item-types-and-message-classes"></a>アイテム タイプとメッセージ クラス
   
-Outlook のすべてのアイテムは、メッセージ クラスに関連付けられます。 たとえば、既定では、メール アイテムが**IPM メッセージ クラスに関連付けられています。注**。 メッセージ クラスは、Outlook のアイテムの表示に使用するフォームを識別する主に使用します。 Outlook は、Outlook に組み込まれている項目の種類に割り当てられているメッセージ クラスの一覧をサポートしています。 メッセージ クラスの詳細については、「[アイテムの種類とメッセージ クラス](http://msdn.microsoft.com/library/15b709cc-7486-b6c7-88a3-4a4d8e0ab292%28Office.15%29.aspx)」をご覧ください。 
+Outlook のすべてのアイテムは、メッセージ クラスに関連付けられます。 たとえば、既定では、メール アイテムが**IPM メッセージ クラスに関連付けられています。注**。 メッセージ クラスは、Outlook のアイテムの表示に使用するフォームを識別する主に使用します。 Outlook は、Outlook に組み込まれている項目の種類に割り当てられているメッセージ クラスの一覧をサポートしています。 メッセージ クラスの詳細については、「[アイテムの種類とメッセージ クラス](https://msdn.microsoft.com/library/15b709cc-7486-b6c7-88a3-4a4d8e0ab292%28Office.15%29.aspx)」をご覧ください。 
   
 ユーザーはカスタムの項目の種類を作成、カスタム アイテムの種類にカスタム メッセージ クラスを割り当てるし、カスタムの項目の種類を表示するカスタム フォームを使用して outlook。 たとえば、カスタムのビジネス、ビジネス用連絡先の連絡先フォームを表示することができます。 カスタム メッセージ クラスは IPM の**を作成できます。Contact.Business**、このメッセージ クラス用のカスタム フォームを作成し、このメッセージ クラスをビジネス用連絡先を割り当てます。 
   
@@ -72,5 +72,5 @@ Outlook のすべてのアイテムは、メッセージ クラスに関連付�
   
 ## <a name="see-also"></a>関連項目
 
-- [Outlook アイテム オブジェクト(機械翻訳)](http://msdn.microsoft.com/library/6ea4babf-facf-4018-ef5a-4a484e55153a%28Office.15%29.aspx)
+- [Outlook アイテム オブジェクト(機械翻訳)](https://msdn.microsoft.com/library/6ea4babf-facf-4018-ef5a-4a484e55153a%28Office.15%29.aspx)
 

@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 54c3315f-770f-6995-d0d8-ab66e4fe10d9
 description: 図形またはページ上には、アクション タグを定義します。
-ms.openlocfilehash: 1e5e432b05b1dfcd02dded41253a79802c9caf81
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1ecdb256fbde4a667ade747c2c7216cd0d248fc2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806268"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387322"
 ---
 # <a name="row-element-action-tag-section-visio-xml"></a>行要素 (アクション タグ セクション)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806268"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[ActionTagRow_Type](actiontagrow_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |ページ # .xml、masters.xml、マスターの # .xml、pages.xml  <br/> |
    

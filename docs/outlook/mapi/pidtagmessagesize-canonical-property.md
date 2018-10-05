@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: c67fb54b-8cc7-4fbc-8204-36fcddfa6192
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c52fd6d6caaec6f215856daead809ceb0bd76729
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3a49c6d70cc47ff726a7a99860b5e81a400be0bf
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574994"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387308"
 ---
 # <a name="pidtagmessagesize-canonical-property"></a>PidTagMessageSize 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージ オブジェクトのすべてのプロパティのサイズの合計 (バイト単位) にはが含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22574994"
 |関連するプロパティ:  <br/> |PR_MESSAGE_SIZE  <br/> |
 |識別子:  <br/> |0x0E08  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 メッセージ オブジェクトがこのプロパティを公開することをお勧めします。 メッセージのサイズは、メッセージが別の 1 つのメッセージ ・ ストアに移動した場合に転送されるバイトのおおよその数を示します。 メッセージ オブジェクトのすべてのプロパティのサイズの合計である、多くのメッセージのテキストだけよりもかなり大きいです。 
   
@@ -44,19 +44,19 @@ ms.locfileid: "22574994"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > メッセージと添付ファイルのオブジェクトを処理します。
     
-[[MS OXCFOLD]](http://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
+[[MS OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
   
 > フォルダーの操作を処理します。
     
-[[MS OXCSTOR]](http://msdn.microsoft.com/library/d42ed1e0-3e77-4264-bd59-7afc583510e2%28Office.15%29.aspx)
+[[MS OXCSTOR]](https://msdn.microsoft.com/library/d42ed1e0-3e77-4264-bd59-7afc583510e2%28Office.15%29.aspx)
   
 > コア メッセージのストア オブジェクトの許可された操作を指定します。
     

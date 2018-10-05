@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7b87a244-b331-7e93-d304-239f8ca77061
 description: 図形のスナップとスナップがアクティブなウィンドウ内でオブジェクトを指定します。
-ms.openlocfilehash: 55558301b1f85f70f723d4282b438e4883d90c25
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b4793c6d9c13a922db4d3ed9504a3a08e933230a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806526"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385208"
 ---
 # <a name="snapsettings-element-windowtype-complextype-visio-xml"></a>SnapSettings 要素 (Window_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806526"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[SnapSettings_Type](snapsettings_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |windows.xml  <br/> |
    
@@ -53,7 +53,7 @@ ms.locfileid: "19806526"
 
 なし。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 次の表の値の合計値があります。
   

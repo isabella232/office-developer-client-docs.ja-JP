@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 96ea23df-aa4f-4b3e-9663-e7db39f668c1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: eec8ea4b4ddee8b6c399bbb4871c286fea4fae3d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 70932e703511235e9f5e32efd95b18d1b66494e2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588406"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389961"
 ---
 # <a name="pidtagfolderwebviewinfo-cannonical-property"></a>PidTagFolderWebViewInfo 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 Microsoft Outlook でフォルダーのホーム ページの URL が含まれています。 このプロパティには、 **WebViewPersistenceObject**と呼ばれるバイナリ ストリームが含まれています。
   
@@ -32,9 +32,9 @@ Microsoft Outlook でフォルダーのホーム ページの URL が含まれ�
 |関連するプロパティ:  <br/> |PR_FOLDER_WEBVIEWINFO  <br/> |
 |識別子:  <br/> |0x36DF  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |MAPI フォルダー  <br/> |
+|エリア:  <br/> |MAPI フォルダー  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 すべての Outlook フォルダーのホーム ページの URL を指定できます。 この情報は、Outlook のフォルダーの [プロパティ] ダイアログ ボックスの [**ホーム ページ**] タブからアクセスできます。 
   
@@ -91,7 +91,7 @@ cbData
     
 ### <a name="webviewpersistenceobject-stream-sample"></a>WebViewPersistenceObject ストリームのサンプル
 
-このセクションでは、 **WebViewPersistenceObject**ストリームの例について説明します。 ストリーム ホーム ページの URL を指定する"http://www.microsoft.com"です。 
+このセクションでは、 **WebViewPersistenceObject**ストリームの例について説明します。 ストリーム ホーム ページの URL を指定する"https://www.microsoft.com"です。 
   
  **データのダンプ**
   
@@ -130,6 +130,6 @@ cbData
     
  _wzURL_
   
-> オフセット 0x2C、0x32 バイト: 25 WCHARs の配列です。 Unicode 0 で終わる文字列の値:"http://www.microsoft.com"です。
+> オフセット 0x2C、0x32 バイト: 25 WCHARs の配列です。 Unicode 0 で終わる文字列の値:"https://www.microsoft.com"です。
     
 

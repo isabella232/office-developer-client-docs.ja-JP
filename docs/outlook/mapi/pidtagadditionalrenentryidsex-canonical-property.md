@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: b5e896e7-c0c6-4ad1-bf91-9daba3a1e4d4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fcea014ca4c1b1629505127484c44ae990eed855
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 57ab68d4c53693c769a4aadf8737f57ef5e73fcd
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590807"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390416"
 ---
 # <a name="pidtagadditionalrenentryidsex-canonical-property"></a>PidTagAdditionalRenEntryIdsEx 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ストア オブジェクトの特別なフォルダーのエントリ Id が含まれています。 この複数値プロパティ内の各エントリは、1 つまたは複数のエントリ Id にマップすることができます、つまり、エントリとその関連付けられたエントリ Id との間の一対多リレーションシップがあります。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22590807"
 |関連するプロパティ:  <br/> |PR_ADDITIONAL_REN_ENTRYIDS_EX  <br/> |
 |識別子:  <br/> |0x36D9  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |Outlook アプリケーション  <br/> |
+|エリア:  <br/> |Outlook アプリケーション  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティを使用する場合、フォルダーのエントリ Id を指定するブロックの配列が含まれています。 ブロックは、次の 4 つのテーブルで指定された形式に従います。
   
@@ -75,7 +75,7 @@ ms.locfileid: "22590807"
 
 |**名前**|**値**|**ElementDataSize の値**|**説明**|
 |:-----|:-----|:-----|:-----|
-|RSF_ELID_HEADER  <br/> |0x0002  <br/> |0x0004  <br/> |**ElementData**フィールドこのブロックのにはヘッダーの DWORD 値が含まれていることを示します。 この値を解釈する方法は、ブロックの**PersistID**の種類によって異なります。  <br/> [[MS OXOSFLD]](http://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb.aspx)で指定されたすべての**PersistID**の種類、この値は 0 です。  <br/> |
+|RSF_ELID_HEADER  <br/> |0x0002  <br/> |0x0004  <br/> |**ElementData**フィールドこのブロックのにはヘッダーの DWORD 値が含まれていることを示します。 この値を解釈する方法は、ブロックの**PersistID**の種類によって異なります。  <br/> [[MS OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb.aspx)で指定されたすべての**PersistID**の種類、この値は 0 です。  <br/> |
 |RSF_ELID_ENTRYID  <br/> |0x0001  <br/> |変数  <br/> |このブロックに**PersistID**によって指定されたフォルダーの**エントリ Id**が含まれていることを示します。  <br/> |
 |ELEMENT_SENTINEL  <br/> |0x0000  <br/> |0x0000  <br/> |**PersistElement**ブロックを処理することを示します。  <br/> |
    
@@ -85,19 +85,19 @@ ms.locfileid: "22590807"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCSPAM]](http://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
+[[MS OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
   
 > 許可/禁止リストの処理、迷惑メール メッセージの決定を可能にします。
     
-[[MS OXOSFLD]](http://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
+[[MS OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
   
 > プロパティを作成すると、メールボックス内の特別なフォルダーを検索する操作を指定します。
     
-[[MS OXPHISH]](http://msdn.microsoft.com/library/ed49ab26-ba13-4d4c-8a94-98d4ceecd4b7%28Office.15%29.aspx)
+[[MS OXPHISH]](https://msdn.microsoft.com/library/ed49ab26-ba13-4d4c-8a94-98d4ceecd4b7%28Office.15%29.aspx)
   
 > 識別し、だまして受信者 (パスワードやその他の個人情報) などの機密情報を盗み、以外の信頼できる発行元に設計された電子メール メッセージをマークします。
     

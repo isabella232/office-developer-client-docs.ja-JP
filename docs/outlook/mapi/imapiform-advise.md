@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 961318d6-bebe-4f4b-98ff-921cafc68d24
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f0717dad6c32906995938c2b00d59f9ee96ff6e6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2ed8bace97dee3842243ed835769e80e8aaf6b03
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591073"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387532"
 ---
 # <a name="imapiformadvise"></a>IMAPIForm::Advise
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 フォーム ビューアーの形式に影響するイベント通知を登録します。
   
@@ -44,7 +44,7 @@ HRESULT Advise(
   
 > [out]成功した通知の登録を表す、0 以外の値へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -54,13 +54,13 @@ E_OUTOFMEMORY
   
 > 登録にメモリ不足のため失敗しました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 フォーム ビューアーでは、フォームに変更が発生したときに通知を登録するのには、フォームの**IMAPIForm::Advise**メソッドを呼び出します。 
   
 ## <a name="notes-to-implementers"></a>実装者へのメモ
 
-ビューのコピーを保存では、適切な[IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md)メソッドを呼び出すイベントが発生したときにそれを使用できるように、 _pAdvise_パラメーターで渡されたシンク ポインターを案内します。 呼び出しビューは、通知の登録をキャンセルするまで、ポインターを保持するシンクの[IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28VS.85%29.aspx)の方法を案内します。 _PulConnection_パラメーターの内容を 0 以外の値に設定します。 
+ビューのコピーを保存では、適切な[IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md)メソッドを呼び出すイベントが発生したときにそれを使用できるように、 _pAdvise_パラメーターで渡されたシンク ポインターを案内します。 呼び出しビューは、通知の登録をキャンセルするまで、ポインターを保持するシンクの[IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx)の方法を案内します。 _PulConnection_パラメーターの内容を 0 以外の値に設定します。 
   
 多くのフォームは、登録とイベントの後続の通知を処理するヘルパー オブジェクトを実装します。 
   

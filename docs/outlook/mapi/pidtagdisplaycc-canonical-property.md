@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 00377e78-a208-4942-a7a6-893b2a71ab0b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3d27ad5fbc02e3883d6f74129323165394c4cf2b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2bf862317ca1d2f2a09a71e1af62b82661b33326
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577731"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383850"
 ---
 # <a name="pidtagdisplaycc-canonical-property"></a>PidTagDisplayCc 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ASCII のリスト セミコロン (;)、カーボン コピー (CC) メッセージの受信者の表示名にはが含まれています。 
   
@@ -32,9 +32,9 @@ ASCII のリスト セミコロン (;)、カーボン コピー (CC) メッセ�
 |関連するプロパティ:  <br/> |PR_DISPLAY_CC、PR_DISPLAY_CC_A、PR_DISPLAY_CC_W  <br/> |
 |識別子:  <br/> |0x0E03  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |Message  <br/> |
+|エリア:  <br/> |Message  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 メッセージ ・ ストアは、 [IMessage::ModifyRecipients](imessage-modifyrecipients.md)メソッドを使用して、メッセージ オブジェクトに対してこれらのプロパティを計算します。 メッセージ ・ ストアは、常に最後に保存されているメッセージの状態を反映するようにもこれらのプロパティを管理します。 値は、 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)へのすべての呼び出しの時点で同期されます。 
   
@@ -54,7 +54,7 @@ ASCII のリスト セミコロン (;)、カーボン コピー (CC) メッセ�
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
     

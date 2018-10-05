@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: bb61870d-3f93-59e3-6671-e545c3a85718
 description: 特定のコントロール ハンドルの図形に対して定義されているセルが含まれています。
-ms.openlocfilehash: cf8015b82f759ba2c166ff5179b2c4324c168e44
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: aa690bf70078a711dffca3f01b6e7acc05507bdd
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806271"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386769"
 ---
 # <a name="row-element-controls-section-visio-xml"></a>行要素 (コントロール セクション)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806271"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[ControlRow_Type](controlrow_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml をマスター、# .xml のページ  <br/> |
    

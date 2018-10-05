@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 8bc40ebf-76f2-49dd-af4b-4095bc07c639
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 603adf8df0c00efc592572fd9a46434f42845011
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 57b65f8423cbbc48e3eac066c45cab0fcc90fe18
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564739"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389016"
 ---
 # <a name="pidtagfreebusyentryids-canonical-property"></a>PidTagFreeBusyEntryIds 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 代理人の情報メッセージ、ログイン中のユーザーとの**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) は、「空き時間情報データ」と同じフォルダーの空き時間メッセージの**エントリ Id**が含まれています
   
@@ -32,25 +32,25 @@ ms.locfileid: "22564739"
 |関連するプロパティ:  <br/> |PR_FREEBUSY_ENTRYIDS  <br/> |
 |識別子:  <br/> |0x36E4  <br/> |
 |データの種類 :   <br/> |PT_MV_BINARY  <br/> |
-|領域:  <br/> |MAPI のコンテナー  <br/> |
+|エリア:  <br/> |MAPI のコンテナー  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOPFFB]](http://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
+[[MS OXOPFFB]](https://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
   
 > ユーザーまたはリソースの可用性を発行します。
     
-[[MS OXODLGT]](http://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)
+[[MS OXODLGT]](https://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)
   
 > 接続し、別のユーザーに代わって動作する場合は、デリゲート、およびメッセージと予定表のアイテムとの対話としてメールボックスを構成するためのメソッドを指定します。
     
-[[MS OXOSFLD]](http://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
+[[MS OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
   
 > プロパティを作成すると、メールボックス内の特別なフォルダーを検索する操作を指定します。
     

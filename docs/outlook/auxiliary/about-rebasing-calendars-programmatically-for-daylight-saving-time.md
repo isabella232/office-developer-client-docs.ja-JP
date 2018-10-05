@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 38b342d9-ab10-04b6-5490-9a45f847a60f
 description: このトピックでは、春と秋の間には、この期間を DST の期間と呼びます。
-ms.openlocfilehash: 4787b2143b3f5d1f0400524f0da82e19e2cbed8a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8d9a0ffda89ee9d8847cde59181747588a50e947
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799295"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389023"
 ---
 # <a name="about-rebasing-calendars-programmatically-for-daylight-saving-time"></a>夏時間に合わせてプログラムにより予定表を調整することについて
 
@@ -38,13 +38,13 @@ Api を再配置する予定表を次に示します。
     
 - [IOlkApptRebaser::EndRebaseAppointments](iolkapptrebaser-endrebaseappointments.md)
     
-- [PidLidAppointmentTimeZoneDefinitionEndDisplay](http://msdn.microsoft.com/library/7b6193cb-612b-408e-b9bc-285df313e2cc%28Office.15%29.aspx)
+- [PidLidAppointmentTimeZoneDefinitionEndDisplay](https://msdn.microsoft.com/library/7b6193cb-612b-408e-b9bc-285df313e2cc%28Office.15%29.aspx)
     
-- [PidLidAppointmentTimeZoneDefinitionRecur](http://msdn.microsoft.com/library/52fd57a0-9e34-4452-9ecd-2acb454446c9%28Office.15%29.aspx)
+- [PidLidAppointmentTimeZoneDefinitionRecur](https://msdn.microsoft.com/library/52fd57a0-9e34-4452-9ecd-2acb454446c9%28Office.15%29.aspx)
     
-- [PidLidAppointmentTimeZoneDefinitionStartDisplay](http://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx)
+- [PidLidAppointmentTimeZoneDefinitionStartDisplay](https://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx)
     
-- [PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)
+- [PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)
     
 - [RebaseTaskComplete](rebasetaskcomplete.md)
     
@@ -62,7 +62,7 @@ Api を再配置する予定表を使用して予定の再配置ツールを作�
     
 2. 予定を再配置するのにには、 **HrCreateApptRebaser**、 **IOlkApptRebaser::BeginRebaseAppointments**、および**IOlkApptRebaser::EndRebaseAppointments**を使用します。 
     
-Tzmovelib.dll アセンブリを取得するには、「OutlookTimeZoneMoveLibRedist.exe の再頒布可能なインストーラーと、Tzmovelib.h ヘッダー ファイルでの使用」をダウンロードしていますください。 [Outlook 2010: 補助型の参照の再頒布可能なインストーラーと再配置の予定表のヘッダー ファイル](http://www.microsoft.com/downloads/details.aspx?FamilyID=77748863-4352-4b99-ae57-1d4ae803983b). このダウンロードは、Outlook 2010 およびそれ以降のバージョンの Outlook の動作します。 OutlookTimeZoneMoveLibRedist.exe は、C:\Program Files\MsExTmz で Tzmovelib.dll のアセンブリ ファイルをインストールします。 そのサードパーティ製のカレンダー アプリケーションを再配置は、OutlookTimeZoneMoveLibRedist.exe、インストーラーのみを再配布でき、アセンブリ、Tzmovelib.dll、またはインストーラーから個別に抽出されたその他のコンポーネントを再配布する必要があります注意してください。
+Tzmovelib.dll アセンブリを取得するには、「OutlookTimeZoneMoveLibRedist.exe の再頒布可能なインストーラーと、Tzmovelib.h ヘッダー ファイルでの使用」をダウンロードしていますください。 [Outlook 2010: 補助型の参照の再頒布可能なインストーラーと再配置の予定表のヘッダー ファイル](https://www.microsoft.com/downloads/details.aspx?FamilyID=77748863-4352-4b99-ae57-1d4ae803983b). このダウンロードは、Outlook 2010 およびそれ以降のバージョンの Outlook の動作します。 OutlookTimeZoneMoveLibRedist.exe は、C:\Program Files\MsExTmz で Tzmovelib.dll のアセンブリ ファイルをインストールします。 そのサードパーティ製のカレンダー アプリケーションを再配置は、OutlookTimeZoneMoveLibRedist.exe、インストーラーのみを再配布でき、アセンブリ、Tzmovelib.dll、またはインストーラーから個別に抽出されたその他のコンポーネントを再配布する必要があります注意してください。
   
 ## <a name="see-also"></a>関連項目
 
@@ -70,7 +70,7 @@ Tzmovelib.dll アセンブリを取得するには、「OutlookTimeZoneMoveLibRe
 - [バイナリ プロパティからのストリームを解析し、TZDEFINITION 構造体を読み取る](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md)
 - [バイナリ プロパティからのストリームを解析し、TZREG 構造体を読み取る](how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md)
 - [予定からタイム ゾーンのプロパティを読み取る](how-to-read-time-zone-properties-from-an-appointment.md)
-- [夏時間のヘルプとサポート センター](http://support.microsoft.com/gp/cp_dst)
-- [Exchange 予定表更新ツールを使用して夏時間に対応する方法](http://support.microsoft.com/kb/941018)
-- [Microsoft Office Outlook 用タイム ゾーン データ更新ツールを使用してタイム ゾーンの変更に対処する方法](http://support.microsoft.com/kb/931667)
+- [夏時間のヘルプとサポート センター](https://support.microsoft.com/gp/cp_dst)
+- [Exchange 予定表更新ツールを使用して夏時間に対応する方法](https://support.microsoft.com/kb/941018)
+- [Microsoft Office Outlook 用タイム ゾーン データ更新ツールを使用してタイム ゾーンの変更に対処する方法](https://support.microsoft.com/kb/931667)
 

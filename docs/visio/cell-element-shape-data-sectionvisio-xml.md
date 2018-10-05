@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 98643832-7861-385d-3a52-0060ea413e2e
 description: 図形データの 1 つのプロパティを指定します。
-ms.openlocfilehash: 899b518f86979c831c0c05913420c7a62f0ea717
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5e0c79d9439fb3800a277e039143060eec708b11
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805004"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390646"
 ---
 # <a name="cell-element-shape-data-section-visio-xml"></a>セル要素 (図形データ セクション)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805004"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml をマスター、# .xml のページ  <br/> |
    
@@ -60,7 +60,7 @@ ms.locfileid: "19805004"
 |U  <br/> |xsd:string  <br/> |省略可能  <br/> |既定の測定単位を表しますが、DL です。  <br/> |セルの単位です。  <br/> |
 |V  <br/> |xsd:string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプ シート セルの値です。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 この**セル**要素の**N**属性は、限られた一連のシェイプ シートのセルに対応する値のいずれかである必要があります。 この**セル**要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   
@@ -74,7 +74,7 @@ ms.locfileid: "19805004"
 |LangID  <br/> |図形データ値の記入に使用した言語を示します。  <br/> |[[LangID] セル ([Shape Data] セクション)](langid-cell-shape-data-section.md) <br/> |
 |プロンプト  <br/> |[図形データ] ウィンドウで値の上にマウスを置いたときにヒントとして表示される説明または手順を示すテキストを指定します。  <br/> |[[Prompt] セル ([Shape Data] セクション)](prompt-cell-shape-data-section.md) <br/> |
 |[Sortkey]  <br/> |このセルの値は文字列として扱われ、評価されます。この値に基づいて、[図形データ] ウィンドウ内にある項目を一覧表示するための順序が決まります。  <br/> |[[SortKey] セル ([Shape Data] セクション)](sortkey-cell-shape-data-section.md) <br/> |
-|型  <br/> |図形データ値のデータの種類を指定します。  <br/> |[[Type] セル ([Shape Data] セクション)](type-cell-shape-data-section.md) <br/> |
+|種類  <br/> |図形データ値のデータの種類を指定します。  <br/> |[[Type] セル ([Shape Data] セクション)](type-cell-shape-data-section.md) <br/> |
 |値  <br/> |[図形データの定義] ダイアログ ボックスに入力した図形データ項目の値が格納されています。  <br/> |[[Value] セル ([Shape Data] セクション)](value-cell-shape-data-section.md) <br/> |
 |確認  <br/> |インスタンスが作成されるか、図形を複製またはコピーしたときに図形のカスタム プロパティ情報を入力するユーザーを照会するかどうかを指定します。  <br/> |なし。  <br/> |
    

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: fdda45e2-631d-404c-8af4-bce68df0968b
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 33287d8ac6b1faeba8b8746a95850f6fd1c37462
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 770ceb7af98f5271baad65043e013feb353d231a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579488"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390472"
 ---
 # <a name="imapiformunadvise"></a>IMAPIForm::Unadvise
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 [IMAPIForm::Advise](imapiform-advise.md)を呼び出すことによって確立されていたフォーム ビューアーを使用して通知の登録をキャンセルします。
   
@@ -39,7 +39,7 @@ HRESULT Unadvise(
   
 > [in]キャンセルする通知の登録を識別する接続の数です。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -49,13 +49,13 @@ E_INVALIDARG
   
 > _UlConnection_パラメーターに渡される接続数は、有効な登録を表していません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 フォームの閲覧者は、 **IMAPIForm::Advise**メソッドを呼び出すことによって最初に確立したことを示す通知の登録をキャンセルする**IMAPIForm::Unadvise**メソッドを呼び出します。 
   
 ## <a name="notes-to-implementers"></a>実装者へのメモ
 
-破棄するがフォーム ビューアーのビューを保持しているポインターは、その[が](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx)メソッドを呼び出して、シンクを案内します。 一般に、**リリース**と呼ばれる**Unadvise**の呼び出し中にします。 ただし、 [IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md)メソッドのいずれかのプロセスでは、別のスレッド ビューのシンクをアドバイス、 **IMAPIViewAdviseSink**メソッドが戻るまでに**リリース**の呼び出しを遅延します。 
+破棄するがフォーム ビューアーのビューを保持しているポインターは、その[が](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドを呼び出して、シンクを案内します。 一般に、**リリース**と呼ばれる**Unadvise**の呼び出し中にします。 ただし、 [IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md)メソッドのいずれかのプロセスでは、別のスレッド ビューのシンクをアドバイス、 **IMAPIViewAdviseSink**メソッドが戻るまでに**リリース**の呼び出しを遅延します。 
   
 ## <a name="see-also"></a>関連項目
 

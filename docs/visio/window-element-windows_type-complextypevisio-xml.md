@@ -9,12 +9,12 @@ ms.assetid: da776276-e8c2-085b-9b23-e5b1f5ba64cd
 description: >-
   Microsoft Visio インスタンスで開いているウィンドウを表します。
    この要素には、正確に、ファイルは Visio で最初に開いたときにアプリケーション ワークスペース内のユーザー インターフェイスのウィンドウを再作成に必要な情報が含まれています。
-ms.openlocfilehash: 762b689d625c7865696a0bf8bb8c4acc25e3d8eb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 676818ddea7747a17b0fe296da515e80c4ffd98f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806795"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385348"
 ---
 # <a name="window-element-windowstype-complextype-visio-xml"></a>ウィンドウの要素 (Windows_Type complexType)'Visio XML (')
 
@@ -26,7 +26,7 @@ Microsoft Visio インスタンスで開いているウィンドウを表しま�
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Window_Type](window_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |windows.xml  <br/> |
    

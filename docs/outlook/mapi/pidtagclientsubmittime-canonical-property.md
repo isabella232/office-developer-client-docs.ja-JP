@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: d46e1063-6421-410d-a445-7477fea42089
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8c7ca5b2b6f5f3131c2fcb70ff0043825a68a91f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 851441e419c17d8f5fef27c785ea4b829a4ae443
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580125"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385838"
 ---
 # <a name="pidtagclientsubmittime-canonical-property"></a>PidTagClientSubmitTime 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージの送信者にメッセージが送信されたときの日時が含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22580125"
 |関連するプロパティ:  <br/> |PR_CLIENT_SUBMIT_TIME  <br/> |
 |識別子:  <br/> |0x0039  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
-|領域:  <br/> |メッセージの時刻  <br/> |
+|エリア:  <br/> |メッセージの時刻  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 ストア プロバイダーは、クライアント アプリケーションが[IMessage::SubmitMessage](imessage-submitmessage.md)を呼び出したときに**PR_CLIENT_SUBMIT_TIME**を設定します。 
   
@@ -42,7 +42,7 @@ ms.locfileid: "22580125"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > メッセージと添付ファイルのオブジェクトを処理します。
     

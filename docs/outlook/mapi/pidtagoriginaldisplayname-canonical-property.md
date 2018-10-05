@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 176245d9-724d-44f1-b7a3-eddf652533b2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4d168082a16ad5e8df205d976349fd6406d9d18a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2b7aef416beb9eee70aeff8cf20cb38ae8e7993f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570773"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387385"
 ---
 # <a name="pidtagoriginaldisplayname-canonical-property"></a>PidTagOriginalDisplayName 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 個人用アドレス帳またはその他の書き込み可能なアドレス帳をアドレス帳からコピーされるエントリの元の表示名が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22570773"
 |関連するプロパティ:  <br/> |PR_ORIGINAL_DISPLAY_NAME、PR_ORIGINAL_DISPLAY_NAME_A、PR_ORIGINAL_DISPLAY_NAME_W  <br/> |
 |識別子:  <br/> |0x3A13  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 これらのプロパティには、コピーしたエントリの元のソースに関する情報が含まれています。
   
@@ -46,11 +46,11 @@ Nonread レポートでは、これらのプロパティには、レポートを
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
 > プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
     

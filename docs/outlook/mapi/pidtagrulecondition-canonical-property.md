@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 8a11e846-c62f-4c06-876f-94623d50cc3b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 81dbd097523f4cb5016a3e846f63cfbe1c643de2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5b513bc5ff6b95b26a96e36a4d04a49737cf6216
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575862"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389597"
 ---
 # <a name="pidtagrulecondition-canonical-property"></a>PidTagRuleCondition 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ルールを評価するときに使用する条件。
   
@@ -32,17 +32,17 @@ ms.locfileid: "22575862"
 |関連するプロパティ:  <br/> |PR_RULE_CONDITION  <br/> |
 |識別子:  <br/> |0x6679  <br/> |
 |データの種類 :   <br/> |PT_SRESTRICTION  <br/> |
-|領域:  <br/> |サーバー側のルール  <br/> |
+|エリア:  <br/> |サーバー側のルール  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
-条件が**制限**として表され、**プロパティ値**のバッファーには、 [[MS OXCDATA]](http://msdn.microsoft.com/library/1afa0cd9-b1a0-4520-b623-bf15030af5d8%28Office.15%29.aspx)で指定されているパッケージ**の制限**の構造体が含まれています。
+条件が**制限**として表され、**プロパティ値**のバッファーには、 [[MS OXCDATA]](https://msdn.microsoft.com/library/1afa0cd9-b1a0-4520-b623-bf15030af5d8%28Office.15%29.aspx)で指定されているパッケージ**の制限**の構造体が含まれています。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
 |ImportProcs.cpp  <br/> |PropCopyMore、HrCopyRestriction  <br/> |これらの関数は、別のプロパティにコピーするために**PT_SRESTRICTION**プロパティを解析する方法をデモンストレーションします。  <br/> |
    
@@ -50,15 +50,15 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXORULE]](http://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)
+[[MS OXORULE]](https://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)
   
 > サーバー上の受信電子メール メッセージを操作します。
     
-[[MS OXCDATA]](http://msdn.microsoft.com/library/1afa0cd9-b1a0-4520-b623-bf15030af5d8%28Office.15%29.aspx)
+[[MS OXCDATA]](https://msdn.microsoft.com/library/1afa0cd9-b1a0-4520-b623-bf15030af5d8%28Office.15%29.aspx)
   
 > リモート操作で使用される基本的なデータ構造を定義します。
     

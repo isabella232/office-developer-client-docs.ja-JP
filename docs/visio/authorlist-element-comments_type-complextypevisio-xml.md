@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4b6950c4-7c03-6462-eeab-3176db9a8f7e
 description: 図面内のコメントの作成者を指定します。
-ms.openlocfilehash: 0f31e11e52809df60b41cb67b868b15435e0eb47
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: af1b1889fa3736931c9abde35191cf5cb3e1bbd5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804815"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387742"
 ---
 # <a name="authorlist-element-commentstype-complextype-visio-xml"></a>AuthorList 要素 (Comments_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19804815"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[AuthorList_Type](authorlist_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |comments.xml  <br/> |
    

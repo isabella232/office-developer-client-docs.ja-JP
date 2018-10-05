@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: edbc9e6c-008c-4c13-9a0c-cb47ac0f3686
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1ba4be04e7241a9c58138ec6b4ef72f7e0f14105
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 96051bd2b62fd7c0e908a1018aac0225e44986be
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567161"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385089"
 ---
 # <a name="folder-fields-stream-structures"></a>フォルダー フィールド ストリームの構造
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージの[PidTagUserFields](pidtaguserfields-canonical-property.md)プロパティには、バイナリ ストリーム、フォルダーのユーザー定義フィールドの定義が含まれている、FolderUserFields が含まれています。 このトピックでは、フォルダーのユーザー定義フィールドの定義についてはストリームの構造体について説明します。 
 
@@ -66,7 +66,7 @@ FolderFieldDefinitionA ストリームの構造体には、ansi 形式で格納�
     
 - **FieldNameLength**: ワード (2 バイト) で、**フィールド名**の配列内の要素の数。
     
-- **フィールド名**: char 型の配列。 つまり、CP_ACP の ANSI コード ページ形式のフィールド名です。 この配列の数は**FieldNameLength**になります。 フィールド名は、 [UserProperties.Add](http://msdn.microsoft.com/en-us/library/microsoft.office.interop.outlook.userproperties.add.aspx)メソッドで指定された Name パラメーターの制限を満たす必要があります。 
+- **フィールド名**: char 型の配列。 つまり、CP_ACP の ANSI コード ページ形式のフィールド名です。 この配列の数は**FieldNameLength**になります。 フィールド名は、 [UserProperties.Add](https://msdn.microsoft.com/library/microsoft.office.interop.outlook.userproperties.add.aspx)メソッドで指定された Name パラメーターの制限を満たす必要があります。 
     
    > [!NOTE]
    > レガシー互換性の理由から、Outlook は**フィールド名**の値がないこれらの制限を満たすいくつか、しかしこのような場合が対応していないこのトピックを処理することにあります。 
@@ -83,7 +83,7 @@ FolderFieldDefinitionW ストリームの構造体には、Unicode で格納さ�
     
 - **FieldNameLength**: ワード (2 バイト) で、**フィールド名**の配列内の要素の数。
     
-- **フィールド名**: wchar 型の配列。 これは、Unicode (utf-16) の形式のフィールド名です。 この配列の数は**FieldNameLength**になります。 フィールド名は、 [UserProperties.Add](http://msdn.microsoft.com/en-us/library/microsoft.office.interop.outlook.userproperties.add.aspx)メソッドで指定された Name パラメーターの制限を満たす必要があります。 
+- **フィールド名**: wchar 型の配列。 これは、Unicode (utf-16) の形式のフィールド名です。 この配列の数は**FieldNameLength**になります。 フィールド名は、 [UserProperties.Add](https://msdn.microsoft.com/library/microsoft.office.interop.outlook.userproperties.add.aspx)メソッドで指定された Name パラメーターの制限を満たす必要があります。 
     
    > [!NOTE]
    > レガシー互換性の理由から、Outlook はしないこれらの制限を満たすいくつかの**フィールド**値を処理できる場合がありますが、このような場合は、このトピックでは説明しません。 

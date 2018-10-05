@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 1470248e-be1c-fcb0-1d6b-0a5f60365924
 description: 追加できますが、表示、非表示、およびシェイプ シートのセクションを削除します。
-ms.openlocfilehash: 37bd28083a38fa2c38630994ee42d3f001cf6893
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1f1aa5cc20418fa3fc588c50d5e7a94bd9763774
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804766"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389191"
 ---
 # <a name="add-show-hide-or-delete-a-section"></a>セクションの追加、表示、非表示、削除を行う
 
@@ -53,9 +53,9 @@ ms.locfileid: "19804766"
     
 2. セクションのタイトルをポイントします。
     
-    ポインターがマイナス記号を変更する場合![](media/IC_SSMinus_ZA07645855.gif)、セクションを折りたたむことができます。
+    マイナス記号にマウス ポインターが変更された場合 ![マイナス記号にマウス ポインターが変更された場合は、セクションを折りたたむ](media/IC_SSMinus_ZA07645855.gif)、セクションを折りたたむことができます。
     
-    ポインターがプラス記号に変わる場合は、 ![](media/IC_SSPlus_ZA07645856.gif)、セクションを展開することができます。
+    ポインターがプラス記号に変わる場合 ![ポインターがプラス記号に変更された場合は、セクションを展開します。](media/IC_SSPlus_ZA07645856.gif)) に変わったら、そのセクションを展開できます。
     
 3. セクションのタイトルをクリックします。
     

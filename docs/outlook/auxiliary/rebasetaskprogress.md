@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 8b8368d2-b04b-42a5-fdc3-955fc873c2f5
 description: 列挙体は、単独の予定の再配置の進行状況を報告します。
-ms.openlocfilehash: 4219ab1d59b596bebbe3ced03651716b04b51f81
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e5df0cd6df10ab86b1a125b9807637438976726f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799585"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384354"
 ---
 # <a name="rebasetaskprogress"></a>RebaseTaskProgress
 
@@ -23,8 +23,8 @@ ms.locfileid: "19799585"
 |||
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> |tzmovelib.h  <br/> |
-|によって実装されます。  <br/> |MAPI クライアント アプリケーション  <br/> |
-|によって呼び出されます。  <br/> |Outlook の再配置オブジェクト  <br/> |
+|実装元:  <br/> |MAPI クライアント アプリケーション  <br/> |
+|呼び出し元:  <br/> |Outlook の再配置オブジェクト  <br/> |
 |ポインターの型。  <br/> |**PFNREBASETASKPROGRESS** tzmovelib.h で定義されています。  <br/> |
    
 ```cpp
@@ -69,7 +69,7 @@ _State_
     
 _pRowCur_
   
-> [in]スキャンまたは固定されている項目を説明する**[SRow](http://msdn.microsoft.com/library/369c2d5c-8c2b-4314-9cb2-aaa89580aa2b%28Office.15%29.aspx)** 構造体へのポインター。 
+> [in]スキャンまたは固定されている項目を説明する**[SRow](https://msdn.microsoft.com/library/369c2d5c-8c2b-4314-9cb2-aaa89580aa2b%28Office.15%29.aspx)** 構造体へのポインター。 
     
 ## <a name="return-values"></a>戻り値
 

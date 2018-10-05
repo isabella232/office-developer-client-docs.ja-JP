@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: cbf34dd6-7733-47f6-9c41-9d82656ca9dc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c5354618383a97b362348b14aea174d6f2266d6c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f5dcf90e8224f1bf2e96042a7344109293cc2c3f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583282"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385712"
 ---
 # <a name="pidtagattachfilename-canonical-property"></a>PidTagAttachFilename 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 添付ファイルのベース ファイル名とパスを除外する拡張子が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22583282"
 |関連するプロパティ:  <br/> |PR_ATTACH_FILENAME、PR_ATTACH_FILENAME_A、PR_ATTACH_FILENAME_W  <br/> |
 |識別子:  <br/> |0x3704  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |メッセージの添付ファイル  <br/> |
+|エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 オブジェクトの添付ファイルが**PR_ATTACH_METHOD**の**ATTACH_BY_VALUE**、 **ATTACH_BY_REFERENCE**、 **ATTACH_BY_REF_RESOLVE**、および**ATTACH_BY_REF_ONLY**の値に関係するこれらのプロパティを公開することをお勧めします。([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) のプロパティです。 **PR_ATTACH_FILENAME**と関連付けられているプロパティは、必要な場合これらの値のいずれかを使用します。 
   
@@ -48,23 +48,23 @@ MAPI の機能をファイル名に、および米国規格協会 (ANSI) 文字�
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > メッセージと添付ファイルのオブジェクトを処理します。
     
-[[MS OXCMAIL]](http://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
 > メッセージ オブジェクト インターネット標準の電子メールの表記規則からに変換します。
     
-[[MS OXORMMS]](http://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
+[[MS OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
   
 > 権限管理でエンコードされたメッセージのプロパティを指定します。
     
-[[MS OXOSMIME]](http://msdn.microsoft.com/library/bb17d126-d211-462c-8cd3-454ed33c8746%28Office.15%29.aspx)
+[[MS OXOSMIME]](https://msdn.microsoft.com/library/bb17d126-d211-462c-8cd3-454ed33c8746%28Office.15%29.aspx)
   
 > S/MIME 署名され、暗号化メッセージのプロパティを指定します。
     
-[[MS OXTNEF]](http://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
+[[MS OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
   
 > エンコードし、メッセージと添付ファイルのオブジェクトを効率的なストリーム形式をデコードします。
     

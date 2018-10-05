@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ce55b50e-3dbf-4690-9102-c08f35ada82e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e1d9a8bce2207529d1062f50a86547379c6255e4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3e7ce1f810a1dd37cd4370ceb423b664d75878a2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569411"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387014"
 ---
 # <a name="pidtagroamingxmlstream-canonical-property"></a>PidTagRoamingXmlStream 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 任意の XML ストリームが含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22569411"
 |関連するプロパティ:  <br/> |PR_ROAMING_XMLSTREAM  <br/> |
 |識別子:  <br/> |0x7C08  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |Configuration  <br/> |
+|エリア:  <br/> |Configuration  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティには、XML データの任意のストリームが含まれています。 メッセージ内の他のプロパティでこのプロパティを使用する特定のスキーマを意味可能性があります。
   
@@ -42,11 +42,11 @@ ms.locfileid: "22569411"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCFG]](http://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
+[[MS OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
   
 > 場所と共有カテゴリのリストおよび作業時間など、クライアントとサーバーの構成データのプロパティを指定します。
     

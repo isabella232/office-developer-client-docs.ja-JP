@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: b1783f05-ced1-917f-8298-eca4ecfa3912
 description: フォントに関する情報が含まれています。
-ms.openlocfilehash: 8a66d5294e239e4540939cc7053e1f67a777144d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4c8f047d655be167dc058b3e29ac62161887ce99
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805332"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389779"
 ---
 # <a name="facename-element-facenamestype-complextype-visio-xml"></a>フォント名の要素 (FaceNames_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805332"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[FaceName_Type](facename_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
    

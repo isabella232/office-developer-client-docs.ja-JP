@@ -6,20 +6,20 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 672fc380-a29b-4e99-9211-949fd5065723
 description: '�ŏI�X�V��: 2015�N12��7��'
-ms.openlocfilehash: 6369ea8948ae1996b6f88bcacd218b8dcf397306
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0a24ae43c84a0631f355a4d7d8dc98a76519563b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574693"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388218"
 ---
 # <a name="check-the-version-of-outlook"></a>Outlook のバージョンを確認します。
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 �����ł́A�C���X�g�[������Ă���o�[�W������Microsoft Outlook 2013�A Microsoft Outlook 2010�A Microsoft Office Outlook 2007�A�܂���Microsoft Outlook 2003�ꍇ�́A Microsoft Outlook�̃o�[�W�����̃o�[�W��������m�F������Љ�܂��BOutlook�̃o�[�W������m�F����� MAPI �A�v���P�[�V�����Ăяo�� API �v�fOutlook�̎��s���̃o�[�W�����ŃT�|�[�g����Ă��邱�Ƃ�m�F����K�v���ł�B
 
-���̃R�[�h �T���v���A  `PrintOutlookVersionString`�֐���g�p���āA **MsiProvideQualifiedComponent**�� **MsiGetFileVersion** �AMsi.h �t�@�C���ŁAMicrosoft Windows �\�t�g�E�F�A�J���L�b�g (SDK) �Ő錾����Ă��鐻�i�ł̕������擾���܂��B  `PrintOutlookVersionString`��Outlook�� 64 �r�b�g�ł��C���X�g�[������Ă��邩�ǂ���������u�[���^�ϐ��Ƀ|�C���^�[��Ԃ��܂��B�ꕔ�̃����[�X�ł� Outlook �̃o�[�W�����̕�����̕ʂ̕����̗\���l�ɂ��ẮA [Outlook �̃o�[�W��������m�F������@](http://support.microsoft.com/kb/870929)��Q�Ƃ��Ă��������B
+���̃R�[�h �T���v���A  `PrintOutlookVersionString`�֐���g�p���āA **MsiProvideQualifiedComponent**�� **MsiGetFileVersion** �AMsi.h �t�@�C���ŁAMicrosoft Windows �\�t�g�E�F�A�J���L�b�g (SDK) �Ő錾����Ă��鐻�i�ł̕������擾���܂��B  `PrintOutlookVersionString`��Outlook�� 64 �r�b�g�ł��C���X�g�[������Ă��邩�ǂ���������u�[���^�ϐ��Ƀ|�C���^�[��Ԃ��܂��B�ꕔ�̃����[�X�ł� Outlook �̃o�[�W�����̕�����̕ʂ̕����̗\���l�ɂ��ẮA [Outlook �̃o�[�W��������m�F������@](https://support.microsoft.com/kb/870929)��Q�Ƃ��Ă��������B
   
 ```cpp
 void PrintOutlookVersionString()

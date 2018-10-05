@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 28453d29-30c5-405b-84d2-5bb5f281756c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b943f9a3b6f63f185a1b44cfa811d010a287a3d9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 18bc41d9038113b5b813f1cfd02d90b8e982703c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565817"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385117"
 ---
 # <a name="pidtagscheduleinfofreebusytentative-canonical-property"></a>PidTagScheduleInfoFreeBusyTentative 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 空き/予約済み状態の仮の予定の時間のブロックが含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22565817"
 |関連するプロパティ:  <br/> |PR_SCHDINFO_FREEBUSY_TENTATIVE  <br/> |
 |識別子:  <br/> |0x6852  <br/> |
 |データの種類 :   <br/> |PT_MV_BINARY  <br/> |
-|領域:  <br/> |空き/予約済み  <br/> |
+|エリア:  <br/> |空き/予約済み  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、 **PR_SCHDINFO_MONTHS_TENTATIVE** ([PidTagScheduleInfoMonthsTentative](pidtagscheduleinfomonthstentative-canonical-property.md)) の値の数だけの値を持ちます。 各バイナリ値は、1 か月を表し、 **PR_SCHDINFO_MONTHS_TENTATIVE**で同じインデックス位置の値に対応します。 バイナリ値は、 **PR_SCHDINFO_MONTHS_TENTATIVE**の値と同じ順序に並べ替えられます。
   
@@ -46,11 +46,11 @@ ms.locfileid: "22565817"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOPFFB]](http://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
+[[MS OXOPFFB]](https://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
   
 > ユーザーまたはリソースの可用性を発行します。
     

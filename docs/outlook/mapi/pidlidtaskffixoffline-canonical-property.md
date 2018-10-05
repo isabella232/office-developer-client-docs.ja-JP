@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: bbaf7df4-2de0-4da3-9125-eb24dfa94cd8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 716d8b5b09ee0e29d1946042cae2631561d74df5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 226e59ef6aa88bc290cf5aeb4d620979f926e1eb
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584654"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386265"
 ---
 # <a name="pidlidtaskffixoffline-canonical-property"></a>PidLidTaskFFixOffline 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 **DispidTaskOwner** ([PidLidTaskOwner](pidlidtaskowner-canonical-property.md)) のプロパティの正確性を示します。
   
@@ -33,9 +33,9 @@ ms.locfileid: "22584654"
 |プロパティを設定します。  <br/> |PSETID_Task  <br/> |
 |長い ID (LID):  <br/> |0x0000812C  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |タスク  <br/> |
+|エリア:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **DispidTaskFFixOffline**プロパティが FALSE に設定が設定されていない場合、 **dispidTaskOwner**プロパティの値が正しい。 **DispidTaskFFixOffline**が TRUE に設定されている場合、クライアントは、 **dispidTaskOwner**の正確な値を特定できません。 その場合は、クライアントでは、「不明」などの汎用の所有者の名前に**dispidTaskOwner**を設定できます。 ただし、クライアントが真の**dispidTaskFFixOffline**の値を検出すると、正確な所有者名を決定することができます、クライアントは**dispidTaskOwner**を更新する必要があり、 **dispidTaskFFixOffline**が FALSE に設定。 
   
@@ -43,11 +43,11 @@ ms.locfileid: "22584654"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[MS OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
 > タスク、タスクの割り当て、およびタスクの更新に相当する電子をモデル化したいくつかのオブジェクトを定義します。 
     

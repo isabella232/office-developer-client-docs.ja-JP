@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 62319e45-b627-4e5a-b76d-2517bf515956
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4ad2e825f6d703147a4d043b2a09496dea9ffb7f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3977dc5b05275ee2029158fca8a2c272ee6a1ebd
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573706"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390290"
 ---
 # <a name="pidnamexsharingcapabilities-canonical-property"></a>PidNameXSharingCapabilities 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 項目の共有の機能を示す値が含まれています。
   
@@ -33,9 +33,9 @@ ms.locfileid: "22573706"
 |プロパティを設定します。  <br/> |PS_INTERNET_HEADERS  <br/> |
 |プロパティ名:  <br/> |X の共有機能  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |共有  <br/> |
+|エリア:  <br/> |共有  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティには、メッセージ オブジェクトの共有の機能を示す値が含まれています。
   
@@ -43,11 +43,11 @@ ms.locfileid: "22573706"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXSHARE]](http://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)
+[[MS OXSHARE]](https://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)
   
 > クライアント間でのメールボックスのフォルダーを共有します。
     

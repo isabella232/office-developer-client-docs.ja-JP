@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 667da30b-e11c-4040-aecf-bb35eed23722
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 71ad53880c400d924d73c903bd77f7b447a69d8b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 26efa868de29bc8a6a180b717230951b76da26a3
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577724"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388431"
 ---
 # <a name="pidtagattachextension-canonical-property"></a>PidTagAttachExtension 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 添付ファイルのドキュメントの種類を示すファイル名の拡張子が含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22577724"
 |関連するプロパティ:  <br/> |PR_ATTACH_EXTENSION、PR_ATTACH_EXTENSION_A、PR_ATTACH_EXTENSION_W  <br/> |
 |識別子:  <br/> |0x3703  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |メッセージの添付ファイル  <br/> |
+|エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 これらのプロパティは、送信時にクライアント アプリケーションによって設定されます。 
   
@@ -44,7 +44,7 @@ ms.locfileid: "22577724"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > メッセージと添付ファイルのオブジェクトを処理します。
     

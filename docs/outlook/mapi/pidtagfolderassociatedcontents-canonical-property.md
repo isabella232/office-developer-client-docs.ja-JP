@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: d1f3f589-dc2d-4538-a13f-278dad29bcc7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ae09488b99cd55e5cfca23f504d81ac5919633d3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c85c5d7c3e80508c4d328f69ac4ad15f0f2c355a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574154"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391063"
 ---
 # <a name="pidtagfolderassociatedcontents-canonical-property"></a>PidTagFolderAssociatedContents 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 コンテンツが関連付けられているテーブルに関する情報を提供する埋め込まれたコンテンツ テーブル オブジェクトが含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22574154"
 |関連するプロパティ:  <br/> |PR_FOLDER_ASSOCIATED_CONTENTS  <br/> |
 |識別子:  <br/> |0x3610  <br/> |
 |データの種類 :   <br/> |PT_OBJECT  <br/> |
-|領域:  <br/> |MAPI のコンテナー  <br/> |
+|エリア:  <br/> |MAPI のコンテナー  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 コンテンツが関連付けられているテーブルでは、標準的な内容の表に表示されていないサブフォルダーを表します。 フォルダーの関連する、または非表示、メッセージが含まれています。 
   
@@ -56,15 +56,15 @@ ms.locfileid: "22574154"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[MS OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
 > 順序と、クライアントとサーバー間のデータ転送のフローを処理します。
     
-[[MS OXCICAL]](http://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
+[[MS OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
 > IETF RFC2445、RFC2446、RFC2447、および予定と会議アイテムに変換します。
     

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2f268b3b-2e4c-4aea-8879-bdd0ac1df35c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a0f4ae75117dff3610175b785ab3f982cc7e7552
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2c32cc61fea63cd38215c30e04e8a467d4901cc9
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590408"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387315"
 ---
 # <a name="pidtagprimarysendaccount-canonical-property"></a>PidTagPrimarySendAccount 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージを送信するために使用される最初のサーバーの名前を示す文字列が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22590408"
 |関連するプロパティ:  <br/> |PR_PRIMARY_SEND_ACCOUNT  <br/> |
 |識別子:  <br/> |0x0E28  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |Account  <br/> |
+|エリア:  <br/> |Account  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 メールを送信するクライアントを使用する必要があります最初のサーバーを指定します。 これらのプロパティの形式は、実装に依存します。 これらのプロパティを通じて、メールを送信するサーバーを決定するのには、クライアントで使用できますが、オプションと値は、サーバーに意味を持ちません。
   
@@ -42,11 +42,11 @@ ms.locfileid: "22590408"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
     

@@ -8,20 +8,20 @@ api_type:
 - COM
 ms.assetid: c3bcbda5-820d-4ef5-bffd-c254eea9dff6
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 29a61ff8f7894c5582d31895bacd74e1ebcaa49c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4f8bc2a5268d220c17a59148f8b8ba1d320d225b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583877"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391043"
 ---
 # <a name="objects-and-the-mapi-architecture"></a>オブジェクト、および MAPI アーキテクチャ
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 すべての MAPI を定義するオブジェクトは、MAPI アーキテクチャでは、1 つまたは複数のレイヤーに分けられます。 クライアント ・ インタ フェース ・ レイヤーには、クライアント アプリケーション、フォームのビューアー、またはフォームのサーバーを実装するすべてのオブジェクトが含まれています。 サービス プロバイダー インターフェイス層には、任意の型のサービス ・ プロバイダーを実装するオブジェクトが含まれています。 このレイヤーには、アドレス帳、メッセージ ・ ストア、トランスポート プロバイダー、およびフォーム ライブラリで実装されているオブジェクトが含まれています。 MAPI のサブシステムを表すレイヤーは、クライアントとサービス プロバイダーのインターフェイス層の間に配置されます。 MAPI のレイヤーには、すべての MAPI を使用するには、クライアントまたはサービス プロバイダーの実装するオブジェクトが含まれています。 
   
-MAPI オブジェクトの組み込まれているか、MAPI アーキテクチャを次の図に示します。 オブジェクトは、派生インターフェイスの名前で表されます。 アドバイズ シンク オブジェクトを表示するたとえば、 [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md)、 [IUnknown](http://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx)から派生して、すべてのアドバイズ シンク オブジェクトを実装するインターフェイスです。 レイヤーを埋めるためのインタ フェースは、使用か、または複数のコンポーネントによって実装されています。 すべての通信が、MAPI を介してフローする必要があることを暗に示して、クライアントとプロバイダー層を分離するのには MAPI のレイヤーが表示されますが、そうではないです。 クライアントことができ、サービス ・ プロバイダーのオブジェクトと直接通信を行います。 
+MAPI オブジェクトの組み込まれているか、MAPI アーキテクチャを次の図に示します。 オブジェクトは、派生インターフェイスの名前で表されます。 アドバイズ シンク オブジェクトを表示するたとえば、 [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md)、 [IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx)から派生して、すべてのアドバイズ シンク オブジェクトを実装するインターフェイスです。 レイヤーを埋めるためのインタ フェースは、使用か、または複数のコンポーネントによって実装されています。 すべての通信が、MAPI を介してフローする必要があることを暗に示して、クライアントとプロバイダー層を分離するのには MAPI のレイヤーが表示されますが、そうではないです。 クライアントことができ、サービス ・ プロバイダーのオブジェクトと直接通信を行います。 
   
 **MAPI のオブジェクト レイヤー**
   

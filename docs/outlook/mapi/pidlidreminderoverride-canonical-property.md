@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ad7e37e1-bd12-409f-87e5-ebc0c298a072
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 55aa8e47dda82995ca1d246f36c271ef06e66954
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4956ce33d00135c34193dec3df832c6878b2c6db
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580181"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385964"
 ---
 # <a name="pidlidreminderoverride-canonical-property"></a>PidLidReminderOverride 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 クライアントが**dispidReminderPlaySound** ([PidLidReminderPlaySound](pidlidreminderplaysound-canonical-property.md)) と**dispidReminderFileParam** ( [PidLidReminderFileParameter ](pidlidreminderfileparameter-canonical-property.md)) のプロパティの値を遵守する必要があるかどうかを指定します。
   
@@ -33,9 +33,9 @@ ms.locfileid: "22580181"
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x0000851C  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |Reminder  <br/> |
+|エリア:  <br/> |Reminder  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 クライアントは、 **dispidReminderPlaySound**および**dispidReminderFileParam**プロパティの値の代わりに既定値を使用可能性があります。 
   
@@ -43,11 +43,11 @@ ms.locfileid: "22580181"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXORMDR]](http://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)
+[[MS OXORMDR]](https://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)
   
 > 電子メールおよびその他のオブジェクトのアラームの操作モデルのプロパティを指定します。
     

@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 07d8ba86-8e35-d151-e6c1-150c37cc2acd
 description: MasterShortcut 要素のドキュメントの MIME (多目的インターネット メール拡張機能) にエンコードされたバイナリ] アイコン (.ico 形式) を指定します。
-ms.openlocfilehash: 46ca7c3f6ba733d31823f6b47f083c46dd941c14
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b2c9a662266620a10ed6d07592388f83bf2aedf6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805557"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389653"
 ---
 # <a name="icon-element-mastershortcuttype-complextype-visio-xml"></a>アイコン要素 (MasterShortcut_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ MasterShortcut 要素のドキュメントの MIME (多目的インターネッ�
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Icon_Type](icon_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |masters.xml  <br/> |
    

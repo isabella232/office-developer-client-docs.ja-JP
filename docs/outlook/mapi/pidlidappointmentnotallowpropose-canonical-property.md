@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 8be9e2aa-2dc1-406d-8864-7f556de22809
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: db88926cf86db2a628886dba4246107e0d3d571b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: aa9aacd8a1d75ed4c14a980e162a68c47995a55c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581378"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385418"
 ---
 # <a name="pidlidappointmentnotallowpropose-canonical-property"></a>PidLidAppointmentNotAllowPropose 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 出席者が会議の新しい日時を提案するために使用できないかどうかを示します。
   
@@ -33,9 +33,9 @@ ms.locfileid: "22581378"
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x0000825A  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |会議  <br/> |
+|エリア:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 値 FALSE、またはこのプロパティがない場合は、出席者が新しい日時を提案するために許可されてことを示します。
   
@@ -43,11 +43,11 @@ ms.locfileid: "22581378"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
     

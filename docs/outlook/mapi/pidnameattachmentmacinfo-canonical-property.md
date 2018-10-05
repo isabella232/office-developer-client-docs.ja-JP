@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c46656d5-2cb1-45eb-9f66-9c2b6e3315cf
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 633a7e0ea7cc2b6ffdbc555e2e470ec66ef77f8a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d2a7fcf06c4e09f46c0d50f9e5f8897874c5f9a2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565607"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387434"
 ---
 # <a name="pidnameattachmentmacinfo-canonical-property"></a>PidNameAttachmentMacInfo 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 Macintosh ベースの電子メール クライアントによって使用される適切なのヘッダーとリソース フォーク データで構成されている [RFC3282] 添付ファイルの値が含まれています。
   
@@ -33,9 +33,9 @@ Macintosh ベースの電子メール クライアントによって使用され
 |プロパティを設定します。  <br/> |PSETID_Attachment  <br/> |
 |プロパティ名:  <br/> |AttachmentMacInfo  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |メッセージの添付ファイル  <br/> |
+|エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 詳細については、MS OXCMAIL セクション 2.2.4.2 アップル ・ ファイル ・ フォーマットを参照してください。
   
@@ -43,11 +43,11 @@ Macintosh ベースの電子メール クライアントによって使用され
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCMAIL]](http://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
 > メッセージ オブジェクト インターネット標準の電子メールの表記規則からに変換します。
     

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: ca153737-75dc-426a-a410-7a7ab3264f23
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e8fa8df4e1439db3f1bc688d282e5ebdd3503024
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 74c2a7247df02570761247a9e4a6fae378f37312
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575505"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385201"
 ---
 # <a name="ending-a-mapi-session"></a>MAPI セッションの終了
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 クライアントがセッションを終了、ユーザーの要求への応答としてか、すぐにしたり、すべての送信メッセージが処理されると、重大なエラーが発生したとき。 常にクライアントが必要であるは、保留中のメッセージを送信するトランスポート プロバイダーにアクセスできるようにし、送信先のメッセージング システムにログオンします。 場合は、このようなクライアントは、メッセージを送信し、すぐにログオフ、メッセージは、ユーザーが再びログオンし、ログオンしているメッセージを送信するのに十分な時間のままになるまで送信キューに残ることがあります。
   
@@ -27,7 +27,7 @@ ms.locfileid: "22575505"
   
 1. 登録済みのすべてのオブジェクトの**Unadvise**メソッドを呼び出して、すべての通知の登録をキャンセルします。 
     
-2. [](http://msdn.microsoft.com/en-us/library/ms682317%28VS.85%29.aspx)メソッドを呼び出すことによって開かれているすべてのオブジェクトを解放します。 開くオブジェクトの種類を含めることができますシンク、状態テーブル、[送信トレイ] フォルダー、1 つまたは複数のメッセージ ・ ストア、およびアドレス帳に案内します。 
+2. [](https://msdn.microsoft.com/library/ms682317%28VS.85%29.aspx)メソッドを呼び出すことによって開かれているすべてのオブジェクトを解放します。 開くオブジェクトの種類を含めることができますシンク、状態テーブル、[送信トレイ] フォルダー、1 つまたは複数のメッセージ ・ ストア、およびアドレス帳に案内します。 
     
 3. **PR_IPM_SUBTREE_ENTRYID** ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md)) などのすべてのキャッシュされたエントリ識別子にメモリを解放する[MAPIFreeBuffer](mapifreebuffer.md)を呼び出します。
     
@@ -35,7 +35,7 @@ ms.locfileid: "22575505"
     
 5. セッションの**リ ス**のメソッドを呼び出すことによってセッションのポインターを解放します。 
     
-6. [OleInitialize](http://msdn.microsoft.com/en-us/library/ms690134%28v=VS.85%29.aspx)を呼び出すと、OLE ライブラリを初期化するためにセッションの起動中に、初期化前の状態に今すぐ[OleUninitialize](http://msdn.microsoft.com/en-us/library/ms691326%28VS.85%29.aspx)を呼び出すことによって。 **OleInitialize**を呼び出したクライアントだけでは、 **OleUninitialize**を呼び出す必要があります。 
+6. [OleInitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx)を呼び出すと、OLE ライブラリを初期化するためにセッションの起動中に、初期化前の状態に今すぐ[OleUninitialize](https://msdn.microsoft.com/library/ms691326%28VS.85%29.aspx)を呼び出すことによって。 **OleInitialize**を呼び出したクライアントだけでは、 **OleUninitialize**を呼び出す必要があります。 
     
 7. [MAPIUninitialize](mapiuninitialize.md)を呼び出すことによって、MAPI ライブラリの初期化を解除します。 **OleInitialize**を呼び出すと、いくつかの時点で、 **MAPIUninitialize**をこの呼び出しの前に**OleUninitialize**への呼び出しが発生することを確認します。 タイミングが重要です。 **OleUninitialize**への呼び出しに**MAPIUninitialize**への呼び出しが発生する場合、クライアント可能性があります突然終了します。 
     

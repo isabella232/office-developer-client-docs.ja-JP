@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 4c126d0c-d7c0-45c0-801c-c9f1e44c9db6
 description: '�ŏI�X�V��: 2013�N2��1��'
-ms.openlocfilehash: bb7831ab79512eb8ca0018905e359654d7177cac
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a5c1daf44f89d1ef8aa7472d69dfd7e86bbb92f6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564781"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388001"
 ---
 # <a name="outlook-mapi-reference-overview"></a>Outlook MAPI リファレンス概要
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 このトピックでは、Outlook 2013 MAPI のリファレンス ドキュメントの概要情報を提供します。
   
@@ -32,7 +32,7 @@ Microsoft Office Outlook 2007 では、以前は、MAPI のプログラマーズ
   
 MAPI の Outlook の実装は、Microsoft Exchange の実装によって異なります。 Outlook の実装では、クライアント コンピューターで実行するために最適化し、低レイテンシを強調しています。 Exchange の実装は、サーバが高可用性と優れたマルチ スレッドが重要です。
   
-エンド ・ ユーザーのシステムで実行するアプリケーションにこのドキュメントを使用します。 サーバー アプリケーションでは、MAPI が該当する場合の Exchange の実装を使用して、または Exchange Web サービスなど、Exchange の現在の Api を使用します。 Exchange Web サービスの詳細については、 [Exchange Web サービスの参照](http://msdn.microsoft.com/en-us/library/bb204119.aspx)を参照してください。
+エンド ・ ユーザーのシステムで実行するアプリケーションにこのドキュメントを使用します。 サーバー アプリケーションでは、MAPI が該当する場合の Exchange の実装を使用して、または Exchange Web サービスなど、Exchange の現在の Api を使用します。 Exchange Web サービスの詳細については、 [Exchange Web サービスの参照](https://msdn.microsoft.com/library/bb204119.aspx)を参照してください。
   
 MAPI、Outlook または Exchange の実装で動作するアプリケーションを作成することができます。 など MFCMAPI は、両方のプラットフォームでうまく動作します。 実装は、多くの一般的な機能が明らかと微妙な違いがあります。 アプリケーションのすべての環境で動作する場合は、両方のプラットフォームで慎重にテストする必要があります。 このテストにより、どちらの実装を実行して、同じオペレーティング システムのインストールではサポートされていないために、2 つのシステムが必要です。
   
@@ -46,7 +46,7 @@ MAPI は MAPI ストア内のデータへの低レベルのアクセスや、ト
     
 Outlook の MAPI アプリケーションの開発に慣れていない場合は、次のトピックを参照してください。
   
-- [Outlook 2013 用のソリューションを開発するための API またはテクノロジの選択](http://msdn.microsoft.com/en-us/library/jj900714.aspx)
+- [Outlook 2013 用のソリューションを開発するための API またはテクノロジの選択](https://msdn.microsoft.com/library/jj900714.aspx)
     
 - [�悭�g����w�b�_�[ �t�@�C��](commonly-used-header-files.md)
     

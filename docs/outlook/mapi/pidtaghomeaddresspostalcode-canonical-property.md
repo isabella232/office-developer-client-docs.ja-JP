@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: f89fd4ab-61b1-4405-89de-dfe599117a24
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 50acbe91854264869e72a5438e5d7df16f2c83bf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3504011b99333d4b632c7edbf22136c5b5f0a511
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593509"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391676"
 ---
 # <a name="pidtaghomeaddresspostalcode-canonical-property"></a>PidTagHomeAddressPostalCode 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ユーザーの自宅の住所の郵便番号コードが含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22593509"
 |関連するプロパティ:  <br/> |PR_HOME_ADDRESS_POSTAL_CODE、PR_HOME_ADDRESS_POSTAL_CODE_A、PR_HOME_ADDRESS_POSTAL_CODE_W  <br/> |
 |識別子:  <br/> |0x3A5B  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |MAPI メール ユーザー  <br/> |
+|エリア:  <br/> |MAPI メール ユーザー  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 これらのプロパティは、ユーザーまたはユーザーの組織によって定義されます。
   
@@ -42,11 +42,11 @@ ms.locfileid: "22593509"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > プロパティは、連絡先、個人用配布リストの許可の操作を指定します。
     

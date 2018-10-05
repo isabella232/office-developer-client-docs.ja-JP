@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9ea1c029-d53c-4c28-b413-560083b6215a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fb048d622aaf3cfa97f380e21324749d7421603e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ca31aece48236227a03d8e2114f8af4b127b8f90
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563689"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384144"
 ---
 # <a name="pidtagsubmitflags-canonical-property"></a>PidTagSubmitFlags 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージの送信に関する詳細情報を示すフラグのビットマスクを格納します。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22563689"
 |関連するプロパティ:  <br/> |PR_SUBMIT_FLAGS  <br/> |
 |識別子:  <br/> |0x0E14  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |MAPI 以外から送信できます。  <br/> |
+|エリア:  <br/> |MAPI 以外から送信できます。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **PR_SUBMIT_FLAGS**ビットマスクについては、次のフラグの 1 つ以上を設定できます。 
   
@@ -50,11 +50,11 @@ SUBMITFLAG_PREPROCESS
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCICAL]](http://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
+[[MS OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
 > IETF RFC2445、RFC2446、RFC2447、および予定と会議のオブジェクトに変換します。
     

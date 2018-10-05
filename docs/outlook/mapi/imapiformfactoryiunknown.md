@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 637be364-c393-430a-84b3-2c96aa553c22
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b2aa08ea14df87f24cda3da0137ae4bfa2c50b40
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c60b542852653bd617b5b9f604bbc44d575e5cb3
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576016"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384767"
 ---
 # <a name="imapiformfactory--iunknown"></a>IMAPIFormFactory : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 分散コンピューティング環境では、構成可能な実行時のフォームの使用をサポートしています。 
   
@@ -31,8 +31,8 @@ ms.locfileid: "22576016"
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
 |によって公開されます。  <br/> |ファクトリ オブジェクトのフォーム  <br/> |
-|によって実装されます。  <br/> |フォーム サーバー  <br/> |
-|によって呼び出されます。  <br/> |フォームの閲覧者  <br/> |
+|実装元:  <br/> |フォーム サーバー  <br/> |
+|呼び出し元:  <br/> |フォームの閲覧者  <br/> |
 |インターフェイスの識別子。  <br/> |IID_IMAPIFormFactory  <br/> |
 |ポインターの型。  <br/> |LPMAPIFORMFACTORY  <br/> |
    
@@ -44,9 +44,9 @@ ms.locfileid: "22576016"
 |[発生しました](imapiformfactory-getlasterror.md) <br/> |前の工場出荷時のフォーム オブジェクトに発生したエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
 |[LockServer](imapiformfactory-lockserver.md) <br/> |開いているフォームのサーバーは、メモリ内に保持します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
-[IClassFactory](http://msdn.microsoft.com/en-us/library/ms694364%28VS.85%29.aspx)インターフェイスは、 **IMAPIFormFactory**インターフェイスがベースし、 **IMAPIFormFactory**を実装するオブジェクトは、 **IClassFactory**からも継承する必要があります。
+[IClassFactory](https://msdn.microsoft.com/library/ms694364%28VS.85%29.aspx)インターフェイスは、 **IMAPIFormFactory**インターフェイスがベースし、 **IMAPIFormFactory**を実装するオブジェクトは、 **IClassFactory**からも継承する必要があります。
   
  **IMAPIFormFactory**は、フォーム サーバーが 1 つ以上のメッセージ クラスをサポートしている場合、新しいフォーム オブジェクトを作成するフォームの閲覧者が使用するインターフェイス (つまり、1 つ以上の入力フォームのオブジェクトの)。 
   

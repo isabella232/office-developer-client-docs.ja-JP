@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: e0f37485-55c9-40f0-bc8c-48f7297f9f50
 description: '�ŏI�X�V��: 2015�N12��7��'
-ms.openlocfilehash: ea9656f9571777478d3db9a2613fbff5ddef0ee6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 41d953db8e00ff52cd09a27e2f7550f9f1879321
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592291"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386223"
 ---
 # <a name="releasing-the-transport-provider"></a>トランスポート プロバイダーの解放
 
  
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 MAPI、または MAPI スプーラーが終了したときトランスポート ログオン オブジェクトを使用します。
   
@@ -27,7 +27,7 @@ MAPI、または MAPI スプーラーが終了したときトランスポート 
     
 2. トランスポート プロバイダーは、 [IMAPISupport::MakeInvalid](imapisupport-makeinvalid.md)メソッドを呼び出して、状態オブジェクトを無効にします。 トランスポート プロバイダーは、メッセージ オブジェクトを無効にするかどうか送信または**TransportLogoff**の呼び出し時に受信されるが**TransportLogoff**に渡されたフラグに依存します。
     
-3. トランスポート プロバイダーは、状態テーブルから、トランスポート プロバイダーの行を削除して、一意の識別子 (Uid) [IMAPISupport で設定された内部テーブルからを削除するサポート オブジェクトの[リ ス](http://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx)のメソッドを呼び出して、:。SetProviderUID](imapisupport-setprovideruid.md)メソッドです。 それをデクリメントこのプロバイダー オブジェクトのアクティブなログオンが正常のオブジェクトの数です。 カウントが 0 になった場合、MAPI はプロバイダー オブジェクトの**リリース**、 [IXPProvider::Shutdown](ixpprovider-shutdown.md)メソッドを呼び出します。 最後の既知のプロバイダー オブジェクトがこのプロセスでこの DLL を使用する場合、MAPI は、後で、DLL の**終わった**関数を呼び出します。 MAPI サポート オブジェクトのメモリは解放され、 **Release**メソッドのサポート オブジェクトを返します。 
+3. トランスポート プロバイダーは、状態テーブルから、トランスポート プロバイダーの行を削除して、一意の識別子 (Uid) [IMAPISupport で設定された内部テーブルからを削除するサポート オブジェクトの[リ ス](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx)のメソッドを呼び出して、:。SetProviderUID](imapisupport-setprovideruid.md)メソッドです。 それをデクリメントこのプロバイダー オブジェクトのアクティブなログオンが正常のオブジェクトの数です。 カウントが 0 になった場合、MAPI はプロバイダー オブジェクトの**リリース**、 [IXPProvider::Shutdown](ixpprovider-shutdown.md)メソッドを呼び出します。 最後の既知のプロバイダー オブジェクトがこのプロセスでこの DLL を使用する場合、MAPI は、後で、DLL の**終わった**関数を呼び出します。 MAPI サポート オブジェクトのメモリは解放され、 **Release**メソッドのサポート オブジェクトを返します。 
     
 4. **TransportLogoff**メソッドは S_OK を返します。 
     

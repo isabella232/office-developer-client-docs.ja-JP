@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2a303458-3283-409a-bc3b-b891f3fcfc22
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: fa39128ffaaaa3530b74a660c14971834a99561b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3456d81935a0a94bc2158eefd321da968dda9983
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566349"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384501"
 ---
 # <a name="fgetcomponentpath"></a>FGetComponentPath
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 プライベート Mapi32.dll へのパスを返します。
   
@@ -41,7 +41,7 @@ BOOL FGetComponentPath(
 
  _szComponent_
   
-> [in][Mapi32.dll スタブのレジストリ設定](http://msdn.microsoft.com/en-us/library/dd162409.aspx)」で説明する MSIComponentID レジストリ キーです。
+> [in][Mapi32.dll スタブのレジストリ設定](https://msdn.microsoft.com/library/dd162409.aspx)」で説明する MSIComponentID レジストリ キーです。
     
  _szQualifier_
   
@@ -69,7 +69,7 @@ BOOL FGetComponentPath(
   
 > パスが見つかりませんでした。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 プライベート Mapi32.dll へのパスを取得したい場合に、 **FGetComponentPath**関数を使用します。 
   
@@ -80,5 +80,5 @@ BOOL FGetComponentPath(
 [読み込む MAPI の特定のバージョンを選択する](how-to-choose-a-specific-version-of-mapi-to-load.md)
 
 
-[Mapi32.dll スタブのレジストリ設定](http://msdn.microsoft.com/en-us/library/dd162409.aspx)
+[Mapi32.dll スタブのレジストリ設定](https://msdn.microsoft.com/library/dd162409.aspx)
 

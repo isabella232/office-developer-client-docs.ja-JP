@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 6314d91c-4948-4fd1-bacc-932d4bb2c22f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d544c741685d401aaf36fe19be50ab402c9e5604
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0cbcc8185f6f46a1bfceb2dd6d0aaf9c5d7cab2e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592683"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385166"
 ---
 # <a name="pidtagdefaultstore-canonical-property"></a>PidTagDefaultStore 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージ ストアがメッセージ ストアのテーブルの既定のメッセージ ストアの場合、TRUE が格納されます。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22592683"
 |関連するプロパティ:  <br/> |PR_DEFAULT_STORE  <br/> |
 |識別子:  <br/> |0x3400  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |MAPI メッセージ ストア  <br/> |
+|エリア:  <br/> |MAPI メッセージ ストア  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、メッセージ ストアのテーブルの列として表示されます。 値は、 **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) に基づいています。 
   
@@ -42,7 +42,7 @@ ms.locfileid: "22592683"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     

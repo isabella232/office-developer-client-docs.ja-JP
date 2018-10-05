@@ -8,19 +8,19 @@ f1_keywords:
 - Vis_DSS.chm82251381
 localization_priority: Normal
 ms.assetid: fdf442ea-2c86-8bd5-b95d-59ad0e4da719
-description: 図形や図面ページと、別の図面ページ、別のファイル、Web サイトとの間の複数の移動 (リンク) を作成するセルを格納します。
-ms.openlocfilehash: e24a718edfca25ec36020101a4fe214533ebec3c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 図形間の複数のジャンプを作成するか、ページと別の図面ページ、別のファイル、または web サイトの図面のセルが含まれています。
+ms.openlocfilehash: 42979a6b0f1b3dff6e950959d33a803263d9b046
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805577"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388407"
 ---
 # <a name="hyperlinks-section"></a>[ハイパーリンク] セクション
 
-図形や図面ページと、別の図面ページ、別のファイル、Web サイトとの間の複数の移動 (リンク) を作成するセルを格納します。
+図形間の複数のジャンプを作成するか、ページと別の図面ページ、別のファイル、または web サイトの図面のセルが含まれています。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 ハイパーリンクを定義するには、このセクションのセルに値を入力するか、[**ハイパーリンク**] ダイアログ ボックスを使用します (このダイアログ ボックスを開くには、[**挿入**] タブで [**ハイパーリンク**] をクリックします)。 
   

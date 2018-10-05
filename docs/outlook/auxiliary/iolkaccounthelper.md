@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: fc2972da-80e9-50e2-10b3-585eb63e9103
-ms.openlocfilehash: 3c28b1e8ab7e2d72d27cc6545b6ef57834ef5b6f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 241babe45b543fb00c0d2756a2e846303a1717b2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799457"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386412"
 ---
 # <a name="iolkaccounthelper"></a>IOlkAccountHelper
 
@@ -21,7 +21,7 @@ ms.locfileid: "19799457"
 
 |||
 |:-----|:-----|
-|継承します。  <br/> |[IUnknown](http://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) <br/> |
+|継承します。  <br/> |[IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) <br/> |
 |提供元:  <br/> |クライアント  <br/> |
 |インターフェイスの識別子。  <br/> |IID_IOlkAccountHelper  <br/> |
    
@@ -34,7 +34,7 @@ ms.locfileid: "19799457"
 |[GetMapiSession](iolkaccounthelper-getmapisession.md) <br/> |MAPI セッションを開くし、アカウント マネージャーのセッションへの参照を保持します。  <br/> |
 |[HandsOffSession](iolkaccounthelper-handsoffsession.md) <br/> |[IOlkAccountHelper::GetMapiSession](iolkaccounthelper-getmapisession.md)によって返された MAPI セッション オブジェクトを解放します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このインターフェイスは、アカウント マネージャーを初期化するときに、 [IOlkAccountManager::Init](iolkaccountmanager-init.md)に渡されます。 
   

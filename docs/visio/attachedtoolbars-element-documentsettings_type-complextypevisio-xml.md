@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: cd7d8a06-5661-d515-f106-ff8275a04f40
 description: MIME (多目的インターネット メール拡張機能) では、Microsoft Visio ユーザー インターフェイス (VSU) ファイルをユーザー設定のツールバーを表すエンコードされています。
-ms.openlocfilehash: c62cc334d8a0c4142c8a47d5dc8aab16a755ceb1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a769204c7e13bacc147689803b31bf898e6de71a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804817"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388463"
 ---
 # <a name="attachedtoolbars-element-documentsettingstype-complextype-visio-xml"></a>AttachedToolbars 要素 (DocumentSettings_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ MIME (多目的インターネット メール拡張機能) では、Microsoft V
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[AttachedToolbars_Type](attachedtoolbars_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
    

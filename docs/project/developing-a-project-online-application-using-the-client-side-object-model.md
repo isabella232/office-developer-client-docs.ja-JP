@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5740d0b2-5d36-40e4-9e83-577cb186359f
 description: この資料では、デスクトップ アプリケーションを.NET Framework 4.0 を使用してプロジェクトをオンラインでマイクロソフトのアプリケーション開発について説明します。 この資料に記載されているアプリケーションは、ホストしているサーバーから情報を取得します。
-ms.openlocfilehash: a65dbbdedb371fae9b8f0b99ea113ae38cbaffb5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b6e7260fd2337d2b156f97605fdd201f5e0d4edc
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572880"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385264"
 ---
 # <a name="developing-a-project-online-application-using-the-client-side-object-model"></a>クライアント側オブジェクト モデルを使用してプロジェクトのオンライン アプリケーションを開発
 
@@ -43,7 +43,7 @@ Microsoft Project では、1990 年代初頭にデスクトップ アプリケ�
 
 10 を Windows を実行しているベースのシステムで起動し、次の項目を追加します。
   
-- .Net framework 4.0 以降--は、完全なフレームワークを使用します。 ダウンロード サイトは、 https://msdn.microsoft.com/en-us/vstudio/aa496123.aspx。
+- .Net framework 4.0 以降--は、完全なフレームワークを使用します。 ダウンロード サイトは、 https://msdn.microsoft.com/vstudio/aa496123.aspx。
     
 - 2013 以降--Visual Studio の任意のエディションは、許容されます。 Visual Studio 2015 の community edition は、サンプル アプリケーションを開発する使用されました。 Community edition は、 https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx。
     

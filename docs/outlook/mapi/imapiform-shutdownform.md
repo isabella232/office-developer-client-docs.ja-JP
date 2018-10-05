@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f1e2a526-40ad-4a93-908f-8ab9a65928a8
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 49ed8669a5496524917c15ac86e4a13060931057
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 073a76766a296d86e7a23809921b832d494a8f1b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578571"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384837"
 ---
 # <a name="imapiformshutdownform"></a>IMAPIForm::ShutdownForm
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 フォームを閉じます。
   
@@ -51,7 +51,7 @@ SAVEOPTS_SAVEIFDIRTY
   
 > 最後の保存以降変更されている場合、フォーム データを保存する必要があります。 ユーザー インターフェイスが表示されていない場合は、フォームを SAVEOPTS_NOSAVE オプションの機能を使用して切り替えることができますオプションで。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -61,7 +61,7 @@ E_UNEXPECTED
   
 > **ShutdownForm**の前回の呼び出しで、フォームが既に閉じました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 フォームの閲覧者は、フォームを終了するのには**IMAPIForm::ShutdownForm**メソッドを呼び出します。 
   
@@ -71,13 +71,13 @@ E_UNEXPECTED
   
 1. 確認しているビューアーが既に呼び出されません**ShutdownForm**とがある場合は E_UNEXPECTED を返します。 ではありませんが、チェックする必要があります。
     
-2. 処理が完了するまで、フォームと内部データ構造体のストレージが利用可能なままにするために、フォームの[IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28VS.85%29.aspx)メソッドを呼び出します。 
+2. 処理が完了するまで、フォームと内部データ構造体のストレージが利用可能なままにするために、フォームの[IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx)メソッドを呼び出します。 
     
 3. フォームのデータに未保存の変更があるかどうかを決定します。 ビューアーの[IMAPIMessageSite::SaveMessage](imapimessagesite-savemessage.md)メソッドを呼び出すことによって、 _ulSaveOptions_パラメーターを設定する方法に応じて、保存されていないデータを保存します。 
     
 4. フォームのユーザー インターフェイスのウィンドウを破棄します。
     
-5. [](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx)メソッドを呼び出すことによって、フォームのメッセージとメッセージのサイト オブジェクトを解放します。 
+5. [](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドを呼び出すことによって、フォームのメッセージとメッセージのサイト オブジェクトを解放します。 
     
 6. [IMAPIViewAdviseSink::OnShutdown](imapiviewadvisesink-onshutdown.md)メソッドを呼び出すことによって登録されているすべての視聴者の保留中のシャット ダウンを通知します。 
     
@@ -90,7 +90,7 @@ E_UNEXPECTED
 10. S_OK ��Ԃ��܂��B
     
 > [!NOTE]
-> これらの操作を完了すると、呼び出される form オブジェクトにのみ有効なメソッドは、 [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx)インターフェイスから。 
+> これらの操作を完了すると、呼び出される form オブジェクトにのみ有効なメソッドは、 [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)インターフェイスから。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 

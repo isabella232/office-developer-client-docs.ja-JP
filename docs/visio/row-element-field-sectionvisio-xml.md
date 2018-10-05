@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7883cb55-a7db-10c0-be20-5d3c561e490f
 description: '[フィールド] ダイアログ ボックスを使用して図形のテキストに挿入した関数および数式を表示します。'
-ms.openlocfilehash: ec01ae3743eaf5345685c7273404bfdb826579ba
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 578269b9bcb2a85db2145f1bccafd3c3cff91936
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806295"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389639"
 ---
 # <a name="row-element-field-section-visio-xml"></a>行要素 ([フィールド]) ('Visio XML')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806295"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[FieldRow_Type](fieldrow_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml をマスター、# .xml のページ  <br/> |
    

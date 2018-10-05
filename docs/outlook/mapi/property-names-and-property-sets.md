@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: cb216f5c-c965-4372-a15b-82090a410266
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0272464d9a397f169b27aa15c80a17b49a3e9977
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fa9d6afcaf1b360f37e8c8873c9d1a823fcd4888
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571830"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391656"
 ---
 # <a name="property-names-and-property-sets"></a>プロパティ名とプロパティ セット
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 すべての名前付きプロパティの名前には、2 つの部分があります。
   
@@ -27,7 +27,7 @@ ms.locfileid: "22571830"
     
 - Unicode 文字の文字列、または 32 ビットの数値です。 
     
-[MAPINAMEID](mapinameid.md)構造体を使用して、名前付きプロパティの名前を説明します。 この構造体には、プロパティ セットのメンバー、メンバーの名前を指定する数値または文字列のいずれかの形式でどちらの形式が使用される特定のメンバーが含まれています。 プロパティ セット、プロパティ名の一部であるために、省略可能なことはできません。 MAPI には、クライアントとサービス ・ プロバイダーで使用するためのいくつかのプロパティ セットが定義されているが、既存のプロパティ セットが適切でない場合は、新しいプロパティ セットを定義できます。 クライアントとサービス ・ プロバイダーは、 [CoCreateGUID](http://msdn.microsoft.com/en-us/library/ms688568.aspx)関数を呼び出すことによって、独自のプロパティ セットを定義できます。 通常これらのプロパティ セットは、カスタム クライアント アプリケーションの作成されます。 
+[MAPINAMEID](mapinameid.md)構造体を使用して、名前付きプロパティの名前を説明します。 この構造体には、プロパティ セットのメンバー、メンバーの名前を指定する数値または文字列のいずれかの形式でどちらの形式が使用される特定のメンバーが含まれています。 プロパティ セット、プロパティ名の一部であるために、省略可能なことはできません。 MAPI には、クライアントとサービス ・ プロバイダーで使用するためのいくつかのプロパティ セットが定義されているが、既存のプロパティ セットが適切でない場合は、新しいプロパティ セットを定義できます。 クライアントとサービス ・ プロバイダーは、 [CoCreateGUID](https://msdn.microsoft.com/library/ms688568.aspx)関数を呼び出すことによって、独自のプロパティ セットを定義できます。 通常これらのプロパティ セットは、カスタム クライアント アプリケーションの作成されます。 
   
 MAPI のプロパティ セットは、次の定数によって表されます。
   

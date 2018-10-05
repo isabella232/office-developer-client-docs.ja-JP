@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 84d63bb7-e688-47e4-935f-1c851708eea1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fb1116d54893c102b34b4375bada39381d25eb14
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 256f114c1ced1511d1a698ba3e6e38265ec5af5f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569877"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389576"
 ---
 # <a name="pidnamewordcount-canonical-property"></a>PidNameWordCount 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ドキュメントに関連付けられているファイルの文字数をカウントを指定します。
   
@@ -33,17 +33,17 @@ ms.locfileid: "22569877"
 |プロパティを設定します。  <br/> |PS_PUBLIC_STRINGS  <br/> |
 |プロパティ名:  <br/> |WordCount  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |Common  <br/> |
+|エリア:  <br/> |Common  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXODOC]](http://msdn.microsoft.com/library/103007c8-5066-4bed-84e3-4465907af098%28Office.15%29.aspx)
+[[MS OXODOC]](https://msdn.microsoft.com/library/103007c8-5066-4bed-84e3-4465907af098%28Office.15%29.aspx)
   
 > プロパティは、ドキュメントに対する許可の操作を指定します。
     

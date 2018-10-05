@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 46211968-9ad8-07da-f725-3ad136b7a8a1
 description: 図形のテキストが含まれています。
-ms.openlocfilehash: 636f349b0a93719cd157db563b238147af5584cf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f2c809d7db895a3635a5898d83d4583cd38f1249
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806613"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385915"
 ---
 # <a name="text-element-shapesheettype-complextype-visio-xml"></a>テキスト要素 (ShapeSheet_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806613"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Text_Type](text_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml のページで、マスターの # .xml  <br/> |
    

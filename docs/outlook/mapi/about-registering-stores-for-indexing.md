@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: dd2aa06a-96e8-1291-18b5-fc3c40b74e4d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 195812f53c4c0aaf20e4ed6e215d15b0295c9a07
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 96322d12b3b7b334b5f78f81910dcf34c3fc78e1
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584185"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386531"
 ---
 # <a name="about-registering-stores-for-indexing"></a>インデックス作成のためのストア登録について
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 このトピックは、Microsoft Office Outlook 2007 でクイック検索を特定します。
   
@@ -38,7 +38,7 @@ MAPI プロトコル ハンドラーでは、検索用のストアにインデ�
  インデックスを作成するサード ・ パーティ製のストア プロバイダーは、Windows レジストリに自身を登録する必要があります。 
   
 > [!NOTE]
-> 管理者およびユーザーは、Windows デスクトップ サーチが Outlook アイテムのインデックスを作成することを防ぐため、グループ ポリシーの設定を使用できます。 詳細については、 [Windows デスクトップ サーチの拡張](http://msdn.microsoft.com/library/2eab146a-8516-4b95-b73c-ca7f980ba233%28Office.15%29.aspx)を参照してください。 
+> 管理者およびユーザーは、Windows デスクトップ サーチが Outlook アイテムのインデックスを作成することを防ぐため、グループ ポリシーの設定を使用できます。 詳細については、 [Windows デスクトップ サーチの拡張](https://msdn.microsoft.com/library/2eab146a-8516-4b95-b73c-ca7f980ba233%28Office.15%29.aspx)を参照してください。 
   
 ## <a name="registry-keys"></a>レジストリ キー
 

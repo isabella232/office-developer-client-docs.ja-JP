@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 8e0400ba-8530-e6ac-5de8-a62aeec5e10a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f9c334bc86bdff4abb2762642a37e3f0933a0b29
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 45535eef75c6fc091c02ec35b669675a51e4cf48
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589029"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384858"
 ---
 # <a name="download-hierarchy-state"></a>階層ダウンロード状態
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
  ダウンロード階層マシンの状態、レプリケーション状態中の動作について説明します。 
   
@@ -37,7 +37,7 @@ ms.locfileid: "22589029"
 
 この状態は、ローカル ストアにフォルダーのツリー階層をサーバーからダウンロードを開始します。 
   
-Outlook では、階層構造へのポインターに関連付けられている**DNHIER**データ構造体を初期化します。 クライアントは、階層をダウンロードし、新しいフォルダーまたはフォルダーへの変更をローカル ストアに挿入します。。 ダウンロード処理では、Microsoft Exchange 増分変更の同期 (ICS) を適用します。 ICS の詳細については、 [ICS の評価基準](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
+Outlook では、階層構造へのポインターに関連付けられている**DNHIER**データ構造体を初期化します。 クライアントは、階層をダウンロードし、新しいフォルダーまたはフォルダーへの変更をローカル ストアに挿入します。。 ダウンロード処理では、Microsoft Exchange 増分変更の同期 (ICS) を適用します。 ICS の詳細については、 [ICS の評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
   
 この状態が終了するとローカル ストアを同期の状態を返します。
   
@@ -49,5 +49,5 @@ Outlook では、階層構造へのポインターに関連付けられている
   
 [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
   
-[同期状態](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

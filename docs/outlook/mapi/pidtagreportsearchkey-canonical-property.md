@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d4f4c40b-b6a8-45f3-b750-07b92c535322
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b82e27358c9f30a649dc10e1a53ee7c321cb3d82
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 889b43bb606cbe9c96d52c8a21ffda5dfcebb1da
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584962"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383507"
 ---
 # <a name="pidtagreportsearchkey-canonical-property"></a>PidTagReportSearchKey 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 このメッセージのレポートを取得する必要があります受信者の検索キーが含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22584962"
 |関連するプロパティ:  <br/> |PR_REPORT_SEARCH_KEY  <br/> |
 |識別子:  <br/> |0x0054  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |MAPI の封筒  <br/> |
+|エリア:  <br/> |MAPI の封筒  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、このメッセージに対して生成されたすべてのレポートを受信する送信者を委任した受信者のアドレスのプロパティのいずれかです。
   
@@ -44,11 +44,11 @@ ms.locfileid: "22584962"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > プロパティは、電子メール メッセージの許可の操作を指定します。
     

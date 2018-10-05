@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: ea2a63d3-d319-4420-1929-013dc832b308
 description: 図面のページへの参照を指定します。
-ms.openlocfilehash: 4d3f131ba5fc106c886d30d8561e095972b05a21
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1731bd20a5ba4358c72370dfcdc6d8a6fc791e2f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806154"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385859"
 ---
 # <a name="refby-element-celltype-complextype-visio-xml"></a>RefBy 要素 (Cell_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806154"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[RefBy_Type](refby_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml、masters.xml、マスターの # .xml、pages.xml ページ # .xml  <br/> |
    

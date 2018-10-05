@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 2de5c77c-3fac-cfb6-3719-68df4013cf11
 description: 予定の再配置の完了を報告します。
-ms.openlocfilehash: 735d875b4151c86103a1ac0378bd33b84de64997
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9fab0d06bf0b9856b9a968f5c0db1bb15b0fe0bd
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799589"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388918"
 ---
 # <a name="rebasetaskcomplete"></a>RebaseTaskComplete
 
@@ -23,8 +23,8 @@ ms.locfileid: "19799589"
 |||
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> |tzmovelib.h  <br/> |
-|によって実装されます。  <br/> |MAPI クライアント アプリケーション  <br/> |
-|によって呼び出されます。  <br/> |Outlook の再配置オブジェクト  <br/> |
+|実装元:  <br/> |MAPI クライアント アプリケーション  <br/> |
+|呼び出し元:  <br/> |Outlook の再配置オブジェクト  <br/> |
 |ポインターの型。  <br/> |**PFNREBASETASKCOMPLETE** tzmovelib.h で定義されています。  <br/> |
    
 ```cpp
@@ -42,11 +42,11 @@ void STDAPICALLTYPE RebaseTaskComplete(
 
 _ulRowIndex_
   
-> [in]処理された行です。 このインデックスは、 [IOlkApptRebaser::BeginRebaseAppointments](iolkapptrebaser-beginrebaseappointments.md)に渡される**[SRowSet](http://msdn.microsoft.com/library/7e3761be-afd6-46cb-9a08-25e9016c1241%28Office.15%29.aspx)** 構造体を指します。
+> [in]処理された行です。 このインデックスは、 [IOlkApptRebaser::BeginRebaseAppointments](iolkapptrebaser-beginrebaseappointments.md)に渡される**[SRowSet](https://msdn.microsoft.com/library/7e3761be-afd6-46cb-9a08-25e9016c1241%28Office.15%29.aspx)** 構造体を指します。
     
 _pRowCur_
   
-> in] 項目が処理されたことを説明する**[SRow](http://msdn.microsoft.com/library/369c2d5c-8c2b-4314-9cb2-aaa89580aa2b%28Office.15%29.aspx)** 構造体へのポインター。 
+> in] 項目が処理されたことを説明する**[SRow](https://msdn.microsoft.com/library/369c2d5c-8c2b-4314-9cb2-aaa89580aa2b%28Office.15%29.aspx)** 構造体へのポインター。 
     
 _hrResult_
   

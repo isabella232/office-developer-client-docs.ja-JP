@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 32777219-850b-9526-425f-bcb017c45093
-ms.openlocfilehash: f8590201e4b7a3c547e267586d3ccdccf727a0aa
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d62513877dc2c441d521b20505f5849ea31a1a4a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804749"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383941"
 ---
 # <a name="actionsrowtype-complextype-visio-xml"></a>ActionsRow_Type complexType'Visio XML (')
 
@@ -19,7 +19,7 @@ ms.locfileid: "19804749"
 
 |||
 |:-----|:-----|
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
 |**拡張ベース** <br/> |NamedIndexedRow_Type  <br/> |
    

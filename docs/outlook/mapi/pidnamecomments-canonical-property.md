@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: bc9b00b6-6337-411b-9219-067dd6c1add3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 677457e3e774cfca09fd65ec44ef599e58ea81d4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0cf253846959afafe634f2846c1a21bddbff35d6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568379"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384830"
 ---
 # <a name="pidnamecomments-canonical-property"></a>PidNameComments 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ドキュメントに関連付けられているファイルのコメントを指定します。
   
@@ -33,17 +33,17 @@ ms.locfileid: "22568379"
 |プロパティを設定します。  <br/> |PS_PUBLIC_STRINGS  <br/> |
 |プロパティ名:  <br/> |コメント  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |Common  <br/> |
+|エリア:  <br/> |Common  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXODOC]](http://msdn.microsoft.com/library/103007c8-5066-4bed-84e3-4465907af098%28Office.15%29.aspx)
+[[MS OXODOC]](https://msdn.microsoft.com/library/103007c8-5066-4bed-84e3-4465907af098%28Office.15%29.aspx)
   
 > プロパティは、ドキュメントに対する許可の操作を指定します。
     

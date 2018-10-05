@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 9eee6925-ab91-413e-8907-c747ab4a4bb5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c30aa631e70f8f4be52c2fd42dd6bfad900f379e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 66489c09be641d8fe9ae5f3ffff46a6d5004f473
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566160"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388071"
 ---
 # <a name="managing-memory-in-mapi"></a>MAPI でのメモリを管理します。
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 方法とタイミングを割り当てるし、メモリを解放するのには、MAPI を使用するプログラミングの重要な部分です。 MAPI には、関数とマクロの両方を一貫した方法でメモリを管理するために、クライアントまたはサービス プロバイダーを使用できますが用意されています。 3 つの関数は次のとおりです。
   
@@ -43,6 +43,6 @@ ms.locfileid: "22566160"
 |[SizedDtblGroupBox](sizeddtblgroupbox.md) <br/> |[SizedSSortOrderSet](sizedssortorderset.md) <br/> |
 |[SizedDtblLabel](sizeddtbllabel.md) <br/> | <br/> |
    
-MAPI には、メモリ管理に[IMalloc](http://msdn.microsoft.com/en-us/library/ms678425%28VS.85%29.aspx)の COM インターフェイスの使用もサポートしています。 サービス プロバイダーは、 **IMalloc**インターフェイス ポインター式によって与えられます MAPI の初期化時と、 [MAPIGetDefaultMalloc](mapigetdefaultmalloc.md)関数を 1 つを取得することもできます。 **IMalloc**メソッドを使用して MAPI の関数でメモリを管理するために主な利点は COM メソッドを使用して既存のバッファーを再割り当てすることです。 MAPI メモリ関数は、再割り当てをサポートしていません。 
+MAPI には、メモリ管理に[IMalloc](https://msdn.microsoft.com/library/ms678425%28VS.85%29.aspx)の COM インターフェイスの使用もサポートしています。 サービス プロバイダーは、 **IMalloc**インターフェイス ポインター式によって与えられます MAPI の初期化時と、 [MAPIGetDefaultMalloc](mapigetdefaultmalloc.md)関数を 1 つを取得することもできます。 **IMalloc**メソッドを使用して MAPI の関数でメモリを管理するために主な利点は COM メソッドを使用して既存のバッファーを再割り当てすることです。 MAPI メモリ関数は、再割り当てをサポートしていません。 
   
 

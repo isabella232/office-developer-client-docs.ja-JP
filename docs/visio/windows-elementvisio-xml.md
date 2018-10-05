@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1880734a-f086-ce6c-5a93-47851bcdd99d
 description: ドキュメントのウィンドウの要素が含まれています。
-ms.openlocfilehash: 70746ccfa2d99a9fdd5b3a91320c9372aa233c7a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: df4d4bc48db157bd05fd39177975c9dbeaa5de52
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806788"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386804"
 ---
 # <a name="windows-element-visio-xml"></a>Windows 要素 ' Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806788"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Windows_Type](windows_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |windows.xml  <br/> |
    

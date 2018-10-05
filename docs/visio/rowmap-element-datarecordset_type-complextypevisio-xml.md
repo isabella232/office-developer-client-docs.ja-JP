@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: f90dc76b-7f0b-dead-38c0-97062a7b76a6
 description: レコード セットのデータ行を図形にマップします。
-ms.openlocfilehash: aefae8c625f35feacd6d0fdf04f128c423db299b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2dffa49d66e8e447b4e31d771179c74eecad21da
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806321"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385313"
 ---
 # <a name="rowmap-element-datarecordsettype-complextype-visio-xml"></a>RowMap 要素 (DataRecordSet_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806321"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[RowMap_Type](rowmap_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |recordsets.xml  <br/> |
    

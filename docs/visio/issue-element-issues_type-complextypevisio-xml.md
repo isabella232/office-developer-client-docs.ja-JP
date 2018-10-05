@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5c4d07bf-4edc-e241-7827-017f96c11957
 description: 文書の 1 つの検証の問題を表します。
-ms.openlocfilehash: 904b42c969bdf97fcfa1e34bad97f73242b17cc2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4ebe7d2d8b2b4627fb9c9e12113ef23ce19db52e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805633"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389842"
 ---
 # <a name="issue-element-issuestype-complextype-visio-xml"></a>問題の要素 (Issues_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805633"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Issue_Type](issue_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |validation.xml  <br/> |
    

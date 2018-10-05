@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 4e6bfbc7-7586-43cc-9380-daa0fe3d85a5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1a4011a22f1029cc4002d4506eb4d335bd280bec
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e057ab2ca0c75d5c0d749ebde8f1bdfb4f1ae66a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593439"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390599"
 ---
 # <a name="pidtaglistunsubscribe-canonical-property"></a>PidTagListUnsubscribe 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 多目的インターネット メール拡張 (MIME) メッセージのリストの購読中止のヘッダー フィールドの値が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22593439"
 |関連するプロパティ:  <br/> |PR_LIST_UNSUBSCRIBE、PR_LIST_UNSUBSCRIBE_A、PR_LIST_UNSUBSCRIBE_W  <br/> |
 |識別子:  <br/> |0x1045  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |その他  <br/> |
+|エリア:  <br/> |その他  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 リストの購読中止のヘッダー フィールドを生成するためにクライアントは、目的の値にこれらのプロパティを設定する必要があります。 MIME ライターは、リストの購読中止のヘッダー フィールドにこれらのプロパティの値をコピーする必要があります。
   
@@ -48,11 +48,11 @@ ms.locfileid: "22593439"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCMAIL]](http://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
 > メッセージ オブジェクト インターネット標準の電子メールの表記規則からに変換します。
     

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: a64e5300-6865-4588-8e1b-158cfd9c60c2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 653bdf26988c46be5f866cfbda331510c5a54afd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dea709b457e28efef62718fc388621e01c4eb5bf
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575708"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387329"
 ---
 # <a name="pidtaglastmodificationtime-canonical-property"></a>PidTagLastModificationTime 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 日付と時刻のオブジェクトまたはサブオブジェクトの最終変更日時が含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22575708"
 |関連するプロパティ:  <br/> |PR_LAST_MODIFICATION_TIME  <br/> |
 |識別子:  <br/> |0x3008  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
-|領域:  <br/> |メッセージの時刻  <br/> |
+|エリア:  <br/> |メッセージの時刻  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **PR_CREATION_TIME** ([PidTagCreationTime](pidtagcreationtime-canonical-property.md)) のプロパティと同じ値には、このプロパティは設定が最初にします。 添付ファイルの下位オブジェクトを更新できます、必要に応じて、ネイティブ ファイル システムによって保持される最後の変更時刻をコピーすることによって。 クライアント アプリケーションは、 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドの最初の呼び出しまで、このプロパティを設定できます。 プロバイダーは、すべての**IMAPIProp::SaveChanges**の呼び出し中に**PR_LAST_MODIFICATION_TIME**を更新する必要があります。 
   
@@ -42,15 +42,15 @@ ms.locfileid: "22575708"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > メッセージと添付ファイルのオブジェクトを処理します。
     
-[[MS OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[MS OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
 > サーバーとクライアントの間のメッセージングのオブジェクト データの同期を処理します。
     
-[[MS OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
 > プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
     

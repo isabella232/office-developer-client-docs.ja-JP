@@ -42,22 +42,22 @@ keywords:
 localization_priority: Normal
 ms.assetid: d3c33089-0cbe-48c3-bfc0-0be819ca4d73
 description: プロジェクト Server インターフェイス (PSI) は、Project Server 2013 の設置と統合するアプリケーションを開発するために使用する API です。
-ms.openlocfilehash: 14ab540fd8a66cf18c576572fc0eff4df7c7d61c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 58235e16afd208d0d4415e28ad200cc7ff62ac8b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804688"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390122"
 ---
 # <a name="project-psi-reference-overview"></a>プロジェクト PSI リファレンスの概要
 
 プロジェクト Server インターフェイス (PSI) は、Project Server 2013 の設置と統合するアプリケーションを開発するために使用する API です。
   
-この資料は、文書化されているアセンブリ、名前空間、および PSI のサービスの概要です。 [Project Server 2013 のクラス ライブラリと web サービスの参照](http://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)で、SDK には、PSI と Project Server 2013 で[Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx)名前空間のマネージ コードのドキュメントをすべて含まれています。 オンライン プロジェクト用のアプリケーションを開発するには、PSI ではなく**Microsoft.ProjectServer.Client**名前空間を使用してください。 
+この資料は、文書化されているアセンブリ、名前空間、および PSI のサービスの概要です。 [Project Server 2013 のクラス ライブラリと web サービスの参照](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)で、SDK には、PSI と Project Server 2013 で[Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx)名前空間のマネージ コードのドキュメントをすべて含まれています。 オンライン プロジェクト用のアプリケーションを開発するには、PSI ではなく**Microsoft.ProjectServer.Client**名前空間を使用してください。 
 
-Project Server 2013 の PSI には、デュアル インターフェイスがあります。 検出 web サービスの ASMX インターフェイスが定義されているし、ファイルを Web サービス記述言語 (disco と WSDL)、 `http://ServerName/ProjectServerName/_vti_bin/psi/` (Projectdisco.aspx や Projectwsdl.aspx など) の仮想ディレクトリです。 ASMX インターフェイスは、Project Web App の設置型インストールの URL を通じてのみアクセスできます (たとえば、 `http://ServerName/ProjectServerName/_vti_bin/psi/project.asmx?wsdl)`。 ブラウザーで web サービスを表示する必要があります、 `?wsdl` [URL] です。 ASMX インターフェイスが構築されるため Windows Communication Foundation (WCF) インフラストラクチャを使用して、Project Server の web サービスの .asmx ファイルは実際にありません PSI の仮想ディレクトリ。 
+Project Server 2013 の PSI には、デュアル インターフェイスがあります。 検出 web サービスの ASMX インターフェイスが定義されているし、ファイルを Web サービス記述言語 (disco と WSDL)、 `https://ServerName/ProjectServerName/_vti_bin/psi/` (Projectdisco.aspx や Projectwsdl.aspx など) の仮想ディレクトリです。 ASMX インターフェイスは、Project Web App の設置型インストールの URL を通じてのみアクセスできます (たとえば、 `https://ServerName/ProjectServerName/_vti_bin/psi/project.asmx?wsdl)`。 ブラウザーで web サービスを表示する必要があります、 `?wsdl` [URL] です。 ASMX インターフェイスが構築されるため Windows Communication Foundation (WCF) インフラストラクチャを使用して、Project Server の web サービスの .asmx ファイルは実際にありません PSI の仮想ディレクトリ。 
   
-WCF サービスのインタ フェースがバックエンド内の .svc ファイルで定義されている`http://ServerName:32843/GUID/PSI/`、SharePoint Web サービス アプリケーションの仮想ディレクトリです。 プロジェクト サービス アプリケーションの仮想ディレクトリの URL の PSI サービス (たとえば、 `http://ServerName:32843/GUID/PSI/project.svc`)、.svc ファイルが含まれています。 ただし、WCF サービス参照を設定するのには、バックエンドの URL を直接使用できません。 アプリケーションや PSI の WCF サービスを使用するコンポーネントを開発するには、プロキシ アセンブリまたはプロキシ ファイルを使用できます。 Project 2013 SDK ダウンロードには、Project Server 2013 では、[WCF サービスのプロキシ ファイルが含まれていて、WCF プロキシの更新されたファイルを取得して、ファイルがプロジェクトのより新しいサーバーのプロキシ アセンブリにコンパイルするのにはスクリプトを作成します。
+WCF サービスのインタ フェースがバックエンド内の .svc ファイルで定義されている`https://ServerName:32843/GUID/PSI/`、SharePoint Web サービス アプリケーションの仮想ディレクトリです。 プロジェクト サービス アプリケーションの仮想ディレクトリの URL の PSI サービス (たとえば、 `https://ServerName:32843/GUID/PSI/project.svc`)、.svc ファイルが含まれています。 ただし、WCF サービス参照を設定するのには、バックエンドの URL を直接使用できません。 アプリケーションや PSI の WCF サービスを使用するコンポーネントを開発するには、プロキシ アセンブリまたはプロキシ ファイルを使用できます。 Project 2013 SDK ダウンロードには、Project Server 2013 では、[WCF サービスのプロキシ ファイルが含まれていて、WCF プロキシの更新されたファイルを取得して、ファイルがプロジェクトのより新しいサーバーのプロキシ アセンブリにコンパイルするのにはスクリプトを作成します。
   
 プロジェクト サービス アプリケーションのディレクトリ名は、オンプレミスの Project Web App インスタンスの GUID と同じでは、GUID の値です。 **インターネット インフォメーション サービス (IIS) マネージャー** ] ウィンドウで、 **SharePoint Web サービス**] ノードを展開し、GUID のディレクトリ名を選択し、**仮想パス**の値をコピーするのには **[詳細設定**します。 
   
@@ -73,13 +73,13 @@ WCF インターフェイスを使用するアプリケーションを開発す�
 ### <a name="using-the-psi-reference"></a>PSI リファレンスの使用
 <a name="pj15_PSIRefOverview_Using"> </a>
 
-PSI オブジェクト モデルは、大規模なと多くのクラスおよびメンバーは内部使用のみ。 その結果、 [Project Server 2013 のクラス ライブラリと web サービスの参照](http://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)するトピックを検索するのには混乱を招く場合ができます。 開発のために使用するリファレンス トピックのほとんどは、次のグループには。
+PSI オブジェクト モデルは、大規模なと多くのクラスおよびメンバーは内部使用のみ。 その結果、 [Project Server 2013 のクラス ライブラリと web サービスの参照](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)するトピックを検索するのには混乱を招く場合ができます。 開発のために使用するリファレンス トピックのほとんどは、次のグループには。
   
 - **プライマリ クラスのメソッド:** PSI の各サービスには、サービスの名前の名前は主クラスが含まれています。 たとえば、**リソース**サービスには、[リソース](https://msdn.microsoft.com/library/WebSvcResource.Resource.aspx)クラスには、 [WebSvcResource](https://msdn.microsoft.com/library/WebSvcResource.aspx)名前空間にが含まれています。 **リソース**クラスで使用可能なメソッドの一覧を表示するには、コンテンツ ペインで [クラス] ノードを展開して**リソース メソッド**のトピックを選択します。 
     
 - **DataRow プロパティ:** プライマリ クラスのメソッドの多くを使用して、または、**データセット**を返します。 **データセット**内のそれぞれの**DataTable**オブジェクトには、1 つまたは複数の**DataRow**オブジェクト内のデータが含まれています。 ほとんどの場合は、 **DataSet**や**DataTable**、 **DataRow**クラスの他のメンバーのすべての行プロパティのみを参照してくださいする必要があります。 たとえば、 **ResourceAssignmentDataSet**クラスには、 **ResourceAssignmentDataTable**と[ResourceAssignmentDataSet.ResourceAssignmentRow](https://msdn.microsoft.com/library/WebSvcResource.ResourceAssignmentDataSet.ResourceAssignmentRow.aspx)クラスのサブクラスが含まれています。 **ResourceAssignmentRow**クラスに含まれるプロパティの一覧を表示するには、コンテンツ ペインで [クラス] ノードを展開し、 **ResourceAssignmentDataSet.ResourceAssignmentRow プロパティ**のトピックを選択し、します。 
     
-サービスの名前空間だけでなく、 [Project Server 2013 のクラス ライブラリと web サービスの参照](http://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)トピックへのリンクのサード ・ パーティ製ソリューションの開発で使用されている 3 つの Project Server アセンブリ設置型インストールします。 これらのアセンブリに、最小限のドキュメントのみを提供しています。 PSI リファレンスでは、主要なクラスおよび 23 の公開サービスのメンバーを説明します。 6 つの PSI サービスは、内部使用のみと、文書化されていません。 
+サービスの名前空間だけでなく、 [Project Server 2013 のクラス ライブラリと web サービスの参照](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)トピックへのリンクのサード ・ パーティ製ソリューションの開発で使用されている 3 つの Project Server アセンブリ設置型インストールします。 これらのアセンブリに、最小限のドキュメントのみを提供しています。 PSI リファレンスでは、主要なクラスおよび 23 の公開サービスのメンバーを説明します。 6 つの PSI サービスは、内部使用のみと、文書化されていません。 
   
 > [!NOTE]
 > クライアント側オブジェクト モデル (CSOM) 内のクラスは、他の Project Server アセンブリおよびサービスから独立して使用できます。 **Microsoft.ProjectServer.Client**名前空間を Project Server コンピューターからリモートの開発環境で使用し、プロジェクトをオンラインで、または Project Server のオンプレミスのインストールと統合するアプリケーションを開発できます。 ですが、完全な PSI の機能のサブセットが、CSOM に含まれています。 CSOM は、Project Server の統合のための最も一般的なシナリオの開発を有効にします。 詳細については、[どのような CSOM は行われない](what-the-csom-does-and-does-not-do.md)し、 [Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx)を参照してください。 
@@ -90,7 +90,7 @@ PSI を使用するほとんどのアプリケーションの開発は、Project
 - Microsoft.Office.Project.Server.Library.dll
 - Microsoft.Office.Project.Server.Workflow.dll
     
-PSI サービスの名前空間には、マニュアルの目的で生成される、ProjectServerServices.dll、PSI プロキシ アセンブリ用に作成された任意の名前があります。 PSI リファレンスでは、各サービスの名前空間があり、プレース ホルダー名 ( _[プロジェクトの web サービス]_) などの web 参照 (次のように`http://ServerName/ProjectServerName/_vti_bin/psi/Project.asmx?wsdl`)。 
+PSI サービスの名前空間には、マニュアルの目的で生成される、ProjectServerServices.dll、PSI プロキシ アセンブリ用に作成された任意の名前があります。 PSI リファレンスでは、各サービスの名前空間があり、プレース ホルダー名 ( _[プロジェクトの web サービス]_) などの web 参照 (次のように`https://ServerName/ProjectServerName/_vti_bin/psi/Project.asmx?wsdl`)。 
   
 ## <a name="project-server-assemblies-and-namespaces"></a>Project Server のアセンブリと名前空間
 <a name="pj15_PSIRefOverview_Assemblies"> </a>
@@ -102,7 +102,7 @@ PSI サービスの名前空間には、マニュアルの目的で生成され�
   
 オンライン プロジェクトを開発する場合は、Project Server の機能にアクセスするのには CSOM のみを使用できます。 PSI サービスまたはその他の Project Server アセンブリへのアクセス権がありません。
   
-[Project Server 2013 のクラス ライブラリと web サービス参照](http://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)の PSI には、次のアセンブリから名前空間が含まれます。 
+[Project Server 2013 のクラス ライブラリと web サービス参照](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)の PSI には、次のアセンブリから名前空間が含まれます。 
   
 - **Microsoft.Office.Project.Server.Library.dll**このアセンブリに含まれる 1 つの文書化された名前空間と 3 つの文書化されていない名前空間は、次のようになります。 
     
@@ -249,7 +249,7 @@ PSI サービスの Web メソッドを含むすべてのクラスは次のと�
   
 15. **OData**レポート テーブルおよびビューの内部の**OData**インターフェイスを提供します。 **OData**サービスへのアクセスは、バックエンド**ProjectServiceApplication** URL を通じてのみ使用できます。 PSI でプライベートの**OData**サービスは、 **ODataClient.ProcessOdataMessage**、レポートのデータに対する要求を処理するのには Project Server を内部的に使用する 1 つのメソッドを提供します。 **ProjectData**サービスをフロント エンド サーバーにより HTTP 要求を行います。 
     
-    **ProjectData**サービスおよびレポートのデータを読み取るための OData プロトコルについては、 [ProjectData - プロジェクトの OData サービスの参照](https://msdn.microsoft.com/en-us/library/office/jj163015.aspx)を参照してください。
+    **ProjectData**サービスおよびレポートのデータを読み取るための OData プロトコルについては、 [ProjectData - プロジェクトの OData サービスの参照](https://msdn.microsoft.com/library/office/jj163015.aspx)を参照してください。
     
 16. **P12Upgrade**Office Project Server 2007 インストールをアップグレードするのには Project Server 2013 のインストーラーの内部メソッドを提供します。 **P12Upgrade**サービスへのアクセスは、 **ProjectServiceApplication**の URL からのみ使用できます。 **P12Upgrade**メソッドは、サードパーティの開発はサポートされていません。 
     
@@ -308,6 +308,6 @@ PSI リファレンスの名前空間とクラスをナビゲートするとき�
 - [PSI のすること、しないこと](what-the-psi-does-and-does-not-do.md)   
 - [プロジェクト内の ASMX ベースのコード サンプルの前提条件](prerequisites-for-asmx-based-code-samples-in-project.md)   
 - [プロジェクト内の WCF ベースのコード サンプルの前提条件](prerequisites-for-wcf-based-code-samples-in-project.md)   
-- [.NET Framework デベロッパー センター](http://msdn.microsoft.com/en-us/netframework/aa496123.aspx)
+- [.NET Framework デベロッパー センター](https://msdn.microsoft.com/netframework/aa496123.aspx)
     
 

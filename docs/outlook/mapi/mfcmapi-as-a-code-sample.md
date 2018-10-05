@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: f98eb842-fe76-4f60-b5e2-d2217d1a66ad
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b4d46dc8a84b52605d09a694e6873cb3813ae5b4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d72c224db8b3ae4bb6fee3d34f73d9949cda6b8d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578116"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391662"
 ---
 # <a name="mfcmapi-as-a-code-sample"></a>MFCMAPI をコード サンプルとして
  
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 MFCMAPI サンプルでは、メッセージング API を使用して、グラフィカル ユーザー インターフェイスによって、MAPI ストアへのアクセスを提供します。 このサンプルをダウンロードした後は、MAPI インターフェイス、および参照の多くの例の使用状況を確認するのにはソース ファイルを使用できます。 詳細については、 [MAPI インターフェイス](mapi-interfaces.md)を参照してください。
   
@@ -27,7 +27,7 @@ MFCMAPI サンプルでは、メッセージング API を使用して、グラ�
    
 ### <a name="to-download-mfcmapi"></a>MFCMAPI をダウンロードするには
   
-1. [MFCMAPI](http://codeplex.com/MFCMAPI) ] ページで、[**ソース コード**] タブをクリックします。 
+1. [MFCMAPI](https://codeplex.com/MFCMAPI) ] ページで、[**ソース コード**] タブをクリックします。 
     
 2. [**最近のチェックイン**では、最新のビルドでは、[**ダウンロード**] をクリックします。 
     

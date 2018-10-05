@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3f44fc18-4757-7aba-8778-a474ab93a78d
 description: X 座標または y 座標、水平方向と垂直方向、および図形上の 1 つの接続ポイントの型が含まれています。
-ms.openlocfilehash: d06a51e52f2b5273171d068f6fc2a6bf5227eed5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9f8f5f0735f7eeff2f1b2ec4562b79e6550d1716
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806274"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389919"
 ---
 # <a name="row-element-connection-section-visio-xml"></a>行要素 (接続部分) ('Visio XML')
 
@@ -23,7 +23,7 @@ X 座標または y 座標、水平方向と垂直方向、および図形上の
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[ConnectionRow_Type](connectionrow_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml をマスター、# .xml のページ  <br/> |
    

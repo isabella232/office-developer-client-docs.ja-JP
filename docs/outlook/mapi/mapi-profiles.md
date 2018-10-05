@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 493c87a4-317d-47ec-850b-342cac59594b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3c6701f5b7f63fdc7d21b219a5588feb0580db48
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9db1f8e163e44a44df1e798cebccb3639325275e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579859"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391431"
 ---
 # <a name="mapi-profiles"></a>MAPI プロファイル
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 プロファイルは、サービス ・ プロバイダーおよびコンピューターにインストールされているメッセージのサービスに関する情報を格納します。 すべてのセッションは、ログオン時にクライアントは、使用するプロバイダーとのサービスを説明する 1 つのプロファイルを選択します。 できるプロファイルのコレクションから選択して、クライアントが必要な場合は、既定値として 1 つを確立します。 既定のプロファイルは、クライアントがセッションを開始して、プロファイルを明示的に指定することがないときに自動的に選択されているプロファイルです。
   
@@ -29,7 +29,7 @@ ms.locfileid: "22579859"
     
 - [オートコンプリート ストリーム](autocomplete-stream.md)
     
-- [バイナリ ファイルの解析](http://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)
+- [バイナリ ファイルの解析](https://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)
     
 ## <a name="profile-sections"></a>プロファイル セクション
 

@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: d218ba2d-7a2e-4c33-a09b-a8c7e27f9726
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e4e5986de3cdc4da3ac1e4fa2ec6da95da6e8e44
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bc98b201b31048e22e093d92c9cf2d5ff1fb0257
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563577"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383150"
 ---
 # <a name="building-mapi-applications-on-32-bit-and-64-bit-platforms"></a>32 ビットと 64 ビット プラットフォーム上の MAPI アプリケーションの構築
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 このトピックでは、MAPI 開発者が変更し、64 ビット プラットフォーム上で実行するのには MAPI アプリケーションを 32 ビットと 32 ビット プラットフォーム上で実行する 64 ビット アプリケーションを再ビルドする実行する操作について説明します。 このトピックでは、64 ビット プラットフォームとは、64 ビットの Microsoft Outlook と 64 ビットの Windows がインストールされているコンピューターで 32 ビット プラットフォームとは、Outlook の 32 ビットと 32 ビットまたは 64 ビットの Windows がインストールされているコンピューター。 
   
@@ -53,7 +53,7 @@ Outlook の 32 ビットと 32 ビットまたは 64 ビットの Windows がイ
   
 ### <a name="32-bit-mapi-application-and-64-bit-outlook"></a>MAPI アプリケーションを 32 ビットと 64 ビットの Outlook
 
-Outlook の 64 ビットと 64 ビットの Windows がインストールされているコンピューター上で実行するのには、32 ビットの MAPI アプリケーションはサポートされていません。 アプリケーション開発者は、更新し、64 ビット プラットフォームで 64 ビット アプリケーションとしてアプリケーションを再構築する必要があります。 これは、32 ビット アプリケーションは 64 ビットの Msmapi32.dll ファイルを読み込むことができませんので。 少数のアプリケーション開発者は、64 ビット環境で正常にそのコードをビルドに組み込む必要があります、API の変更点があります。 64 ビット プラットフォームをサポートするためにこれらの変更により、MAPI ヘッダー ファイルが更新されました。 これらのヘッダー ファイルをダウンロードすることができます[Outlook 2010: MAPI ヘッダー ファイル](http://www.microsoft.com/downloads/details.aspx?FamilyID=f8d01fc8-f7b5-4228-baa3-817488a66db1)です。 開発者は、32 ビットと 64 ビットの両方の MAPI アプリケーションを構築するのにこの同じ MAPI ヘッダー ファイルのセットを使用できます。
+Outlook の 64 ビットと 64 ビットの Windows がインストールされているコンピューター上で実行するのには、32 ビットの MAPI アプリケーションはサポートされていません。 アプリケーション開発者は、更新し、64 ビット プラットフォームで 64 ビット アプリケーションとしてアプリケーションを再構築する必要があります。 これは、32 ビット アプリケーションは 64 ビットの Msmapi32.dll ファイルを読み込むことができませんので。 少数のアプリケーション開発者は、64 ビット環境で正常にそのコードをビルドに組み込む必要があります、API の変更点があります。 64 ビット プラットフォームをサポートするためにこれらの変更により、MAPI ヘッダー ファイルが更新されました。 これらのヘッダー ファイルをダウンロードすることができます[Outlook 2010: MAPI ヘッダー ファイル](https://www.microsoft.com/downloads/details.aspx?FamilyID=f8d01fc8-f7b5-4228-baa3-817488a66db1)です。 開発者は、32 ビットと 64 ビットの両方の MAPI アプリケーションを構築するのにこの同じ MAPI ヘッダー ファイルのセットを使用できます。
   
 ### <a name="64-bit-mapi-application-and-64-bit-outlook"></a>MAPI アプリケーションを 64 ビットと 64 ビットの Outlook
 
@@ -61,7 +61,7 @@ Outlook の 64 ビットと 64 ビットの Windows がインストールされ�
   
 ### <a name="64-bit-mapi-application-and-32-bit-outlook"></a>MAPI アプリケーションを 64 ビットと 32 ビットの Outlook
 
-Outlook の 32 ビットと 32 ビットまたは 64 ビットの Windows がインストールされているコンピューター上で実行するのには、64 ビットの MAPI アプリケーションはサポートされていません。 アプリケーション開発者は、更新し、32 ビットの Outlook で動作する 32 ビット アプリケーションとしてアプリケーションを再構築する必要があります。 ダウンロードできる更新された MAPI ヘッダー ファイルを使用して[Outlook 2010: MAPI ヘッダー ファイル](http://www.microsoft.com/downloads/details.aspx?FamilyID=f8d01fc8-f7b5-4228-baa3-817488a66db1)です。 開発者は、32 ビットと 64 ビットの両方の MAPI アプリケーションを構築するのにこの同じ MAPI ヘッダー ファイルのセットを使用できます。
+Outlook の 32 ビットと 32 ビットまたは 64 ビットの Windows がインストールされているコンピューター上で実行するのには、64 ビットの MAPI アプリケーションはサポートされていません。 アプリケーション開発者は、更新し、32 ビットの Outlook で動作する 32 ビット アプリケーションとしてアプリケーションを再構築する必要があります。 ダウンロードできる更新された MAPI ヘッダー ファイルを使用して[Outlook 2010: MAPI ヘッダー ファイル](https://www.microsoft.com/downloads/details.aspx?FamilyID=f8d01fc8-f7b5-4228-baa3-817488a66db1)です。 開発者は、32 ビットと 64 ビットの両方の MAPI アプリケーションを構築するのにこの同じ MAPI ヘッダー ファイルのセットを使用できます。
   
 ### <a name="exception-mapisendmail"></a>例外: MAPISendMail
 

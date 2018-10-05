@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 70739711-ff43-407d-bc8b-6baf7a476fef
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1eb4d7ac8d0287388a1bb76185f23636eddcf809
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: de31fe7d472b143ed8f3c108dca84a019b5ce103
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591675"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391151"
 ---
 # <a name="mapiinit0"></a>MAPIINIT_0
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 [生じます](mapiinitialize.md)にオプションを伝達します。 
   
@@ -60,9 +60,9 @@ MAPI_NT_SERVICE
     
 MAPI_NO_COINIT
   
-> [CoInitialize](http://msdn.microsoft.com/library/0f171cf4-87b9-43a6-97f2-80ed344fe376%28Office.15%29.aspx)の呼び出しで COM を初期化するために**生じます**が試みないように、MAPI_NO_COINT フラグを設定します。 **MAPIINIT_0**構造体が渡された場合に**生じます** _ulFlags_ MAPI_NO_COINIT に設定すると、MAPI は、COM が既に初期化されているし、 **CoInitialize**の呼び出しが省略されますと見なされます。
+> [CoInitialize](https://msdn.microsoft.com/library/0f171cf4-87b9-43a6-97f2-80ed344fe376%28Office.15%29.aspx)の呼び出しで COM を初期化するために**生じます**が試みないように、MAPI_NO_COINT フラグを設定します。 **MAPIINIT_0**構造体が渡された場合に**生じます** _ulFlags_ MAPI_NO_COINIT に設定すると、MAPI は、COM が既に初期化されているし、 **CoInitialize**の呼び出しが省略されますと見なされます。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 マルチ スレッド クライアントでは、MAPI_MULTITHREAD_NOTIFICATIONS フラグを設定する必要があります。 フラグが設定されていない場合**生じます**への最初の呼び出しを行うために使用するスレッドに通知を生成します。 
   

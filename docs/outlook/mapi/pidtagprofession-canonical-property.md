@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 3ee0070b-11ac-4add-9c19-4558a1f88577
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5cedd3e2078602d96f346ee4ad75d4232b23ad06
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8b261a934d3af7fb80ca77ad2e176638b683effa
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572768"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383395"
 ---
 # <a name="pidtagprofession-canonical-property"></a>PidTagProfession 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ユーザーの職業が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22572768"
 |関連するプロパティ:  <br/> |PR_PROFESSION、PR_PROFESSION_A、PR_PROFESSION_W  <br/> |
 |識別子:  <br/> |0x3A46  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |MAPI メール ユーザー  <br/> |
+|エリア:  <br/> |MAPI メール ユーザー  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 これらのプロパティは、ユーザーまたはユーザーの組織によって定義されます。
   
@@ -42,15 +42,15 @@ ms.locfileid: "22572768"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > プロパティは、連絡先、個人用配布リストの許可の操作を指定します。
     
-[[MS OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
 > プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
     

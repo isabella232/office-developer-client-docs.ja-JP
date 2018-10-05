@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: e19c7cd1-7c56-4f63-8736-d6971c7c5f4d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: add85bbf9c7608434be045bc30a11b8a28ccaa1e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 05df7fe04f511de9310edc7a8ef09130e6354ad2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578410"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389170"
 ---
 # <a name="pidtagattachpathname-canonical-property"></a>PidTagAttachPathname 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 添付ファイルの完全修飾パスとファイル名が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22578410"
 |関連するプロパティ:  <br/> |PR_ATTACH_PATHNAME、PR_ATTACH_PATHNAME_A、PR_ATTACH_PATHNAME_W  <br/> |
 |識別子:  <br/> |0x3708  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |メッセージの添付ファイル  <br/> |
+|エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 添付ファイルの下位オブジェクトがこれらのプロパティを公開することをお勧めします。 それらの設定は、添付ファイルのデータがメッセージに含まれていないが、共通のファイル ・ サーバで使用可能なことを示します。 これらのプロパティが参照渡しで添付ファイルを示す**PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) のフラグのいずれかと共に必要な: **ATTACH_BY_REFERENCE**、 **ATTACH_BY_REF_RESOLVE**、または**ATTACH_BY_REF_だけ**。 
   
@@ -48,11 +48,11 @@ MAPI はパスとファイル名に ANSI 文字セットです。 OEM 文字セ�
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > メッセージと添付ファイルのオブジェクトを処理します。
     
-[[MS OXORMMS]](http://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
+[[MS OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
   
 > 権限管理でエンコードされたメッセージのプロパティを指定します。
     

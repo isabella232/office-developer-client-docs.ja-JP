@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 86b3eab2-2594-4204-aedf-8ce2ee3b81ce
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b6bf95a68c868bfca247ea21d56dd872092c3e02
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d44851e1c863cb117eed3462eb98de87f8d1f0be
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578368"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388323"
 ---
 # <a name="pidlidsharingcapabilities-canonical-property"></a>PidLidSharingCapabilities 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 共有メッセージのプロパティとして指定します。
   
@@ -33,9 +33,9 @@ ms.locfileid: "22578368"
 |プロパティを設定します。  <br/> |PSETID_Sharing  <br/> |
 |長い ID (LID):  <br/> |0x00008A17  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |共有  <br/> |
+|エリア:  <br/> |共有  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、次の値のいずれかに設定する必要があります。
   
@@ -48,11 +48,11 @@ ms.locfileid: "22578368"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXSHARE]](http://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)
+[[MS OXSHARE]](https://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)
   
 > クライアント間でのメールボックスのフォルダーを共有します。
     

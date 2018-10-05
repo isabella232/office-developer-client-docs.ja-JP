@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: bdbaf263-ae57-2807-f100-8d590ab92927
 description: 他のセルが参照する数式の入力およびテストを実行するための作業領域です。
-ms.openlocfilehash: 078205b08ab40c2b88320779b1fbabc31c781eb4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: eac975fa1233e74b7bb5f2efc90b6b6edad8215c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806292"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388008"
 ---
 # <a name="row-element-scratch-section-visio-xml"></a>行要素 (スクラッチ セクション)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806292"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[ScratchRow_Type](scratchrow_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml、masters.xml、マスターの # .xml、pages.xml ページ # .xml  <br/> |
    

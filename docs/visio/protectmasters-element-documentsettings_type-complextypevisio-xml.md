@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: edc46630-c320-6b4e-4747-961075dd5fd7
 description: 作成、編集、またはマスター シェイプを削除してからユーザーを防止するかどうかを指定します。 ユーザーこの設定に関係なく、マスター シェイプから新しい図形を作成できます。
-ms.openlocfilehash: cb576f267e076b06f2088ce53a18e9af36a46b0c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2730fa3aa3f9f4f7529d6b939e48d3533e31e1f3
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806111"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386447"
 ---
 # <a name="protectmasters-element-documentsettingstype-complextype-visio-xml"></a>ProtectMasters 要素 (DocumentSettings_Type complexType)'Visio XML (')
 
@@ -25,7 +25,7 @@ ms.locfileid: "19806111"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[ProtectMasters_Type](protectmasters_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
    
