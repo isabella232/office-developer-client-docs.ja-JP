@@ -6,24 +6,24 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 134cf228-e441-b807-15f1-2b0071597e2a
-ms.openlocfilehash: 25f0a96cd4efd18d257a0dcd1ca118f02b4ec59f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 67631f2f082052c2fe6a3132fa494d8aa586af65
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806325"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392606"
 ---
-# <a name="rulefiltertype-complextype-visio-xml"></a><span data-ttu-id="40bdb-102">RuleFilter_Type complexType'Visio XML (')</span><span class="sxs-lookup"><span data-stu-id="40bdb-102">RuleFilter_Type complexType ('Visio XML')</span></span>
+# <a name="rulefiltertype-complextype-visio-xml"></a><span data-ttu-id="c6ca0-102">RuleFilter_Type complexType'Visio XML (')</span><span class="sxs-lookup"><span data-stu-id="c6ca0-102">RuleFilter_Type complexType ('Visio XML')</span></span>
 
-## <a name="type-information"></a><span data-ttu-id="40bdb-103">型情報</span><span class="sxs-lookup"><span data-stu-id="40bdb-103">Type information</span></span>
+## <a name="type-information"></a><span data-ttu-id="c6ca0-103">型情報</span><span class="sxs-lookup"><span data-stu-id="c6ca0-103">Type information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="40bdb-104">**名前空間**</span><span class="sxs-lookup"><span data-stu-id="40bdb-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|<span data-ttu-id="40bdb-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="40bdb-105">**Schema file**</span></span> <br/> |<span data-ttu-id="40bdb-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="40bdb-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
-|<span data-ttu-id="40bdb-107">**拡張ベース**</span><span class="sxs-lookup"><span data-stu-id="40bdb-107">**Extension base**</span></span> <br/> |<span data-ttu-id="40bdb-108">xsd:string</span><span class="sxs-lookup"><span data-stu-id="40bdb-108">xsd:string</span></span>  <br/> |
+|<span data-ttu-id="c6ca0-104">**名前空間**</span><span class="sxs-lookup"><span data-stu-id="c6ca0-104">**Namespace**</span></span> <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|<span data-ttu-id="c6ca0-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="c6ca0-105">**Schema file**</span></span> <br/> |<span data-ttu-id="c6ca0-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="c6ca0-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
+|<span data-ttu-id="c6ca0-107">**拡張ベース**</span><span class="sxs-lookup"><span data-stu-id="c6ca0-107">**Extension base**</span></span> <br/> |<span data-ttu-id="c6ca0-108">xsd:string</span><span class="sxs-lookup"><span data-stu-id="c6ca0-108">xsd:string</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="40bdb-109">定義</span><span class="sxs-lookup"><span data-stu-id="40bdb-109">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="c6ca0-109">定義</span><span class="sxs-lookup"><span data-stu-id="c6ca0-109">Definition</span></span>
 
 ```XML
       <xs:complexType name="RuleFilter_Type">
@@ -31,16 +31,16 @@ ms.locfileid: "19806325"
       
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="40bdb-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="40bdb-110">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="c6ca0-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="c6ca0-110">Elements and attributes</span></span>
 
-<span data-ttu-id="40bdb-111">スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="40bdb-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="c6ca0-111">スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6ca0-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="child-elements"></a><span data-ttu-id="40bdb-112">子要素</span><span class="sxs-lookup"><span data-stu-id="40bdb-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="c6ca0-112">子要素</span><span class="sxs-lookup"><span data-stu-id="c6ca0-112">Child elements</span></span>
 
-<span data-ttu-id="40bdb-113">なし。</span><span class="sxs-lookup"><span data-stu-id="40bdb-113">None.</span></span>
+<span data-ttu-id="c6ca0-113">なし。</span><span class="sxs-lookup"><span data-stu-id="c6ca0-113">None.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="40bdb-114">属性</span><span class="sxs-lookup"><span data-stu-id="40bdb-114">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="c6ca0-114">属性</span><span class="sxs-lookup"><span data-stu-id="c6ca0-114">Attributes</span></span>
 
-<span data-ttu-id="40bdb-115">なし。</span><span class="sxs-lookup"><span data-stu-id="40bdb-115">None.</span></span>
+<span data-ttu-id="c6ca0-115">なし。</span><span class="sxs-lookup"><span data-stu-id="c6ca0-115">None.</span></span>
   
 

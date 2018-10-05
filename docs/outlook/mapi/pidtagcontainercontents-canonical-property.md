@@ -12,75 +12,75 @@ api_type:
 - HeaderDef
 ms.assetid: 66dbe65a-b9fd-41d5-946f-ec8888363043
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0d6a2f7b8b4f5345faa54e24c359f15ee181a7f3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5f0717c2a6def6f99f1e53217764e8820125b79d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575484"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392733"
 ---
-# <a name="pidtagcontainercontents-canonical-property"></a><span data-ttu-id="eed2a-103">PidTagContainerContents 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="eed2a-103">PidTagContainerContents Canonical Property</span></span>
+# <a name="pidtagcontainercontents-canonical-property"></a><span data-ttu-id="6978a-103">PidTagContainerContents 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="6978a-103">PidTagContainerContents Canonical Property</span></span>
 
   
   
-<span data-ttu-id="eed2a-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="eed2a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="6978a-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="6978a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="eed2a-105">コンテナーに関する情報を提供する埋め込まれたコンテンツ テーブル オブジェクトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="eed2a-105">Contains an embedded contents table object that provides information about a container.</span></span>
+<span data-ttu-id="6978a-105">コンテナーに関する情報を提供する埋め込まれたコンテンツ テーブル オブジェクトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="6978a-105">Contains an embedded contents table object that provides information about a container.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="eed2a-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="eed2a-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="eed2a-107">PR_CONTAINER_CONTENTS</span><span class="sxs-lookup"><span data-stu-id="eed2a-107">PR_CONTAINER_CONTENTS</span></span>  <br/> |
-|<span data-ttu-id="eed2a-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="eed2a-108">Identifier:</span></span>  <br/> |<span data-ttu-id="eed2a-109">0x360F</span><span class="sxs-lookup"><span data-stu-id="eed2a-109">0x360F</span></span>  <br/> |
-|<span data-ttu-id="eed2a-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="eed2a-110">Data type:</span></span>  <br/> |<span data-ttu-id="eed2a-111">PT_OBJECT</span><span class="sxs-lookup"><span data-stu-id="eed2a-111">PT_OBJECT</span></span>  <br/> |
-|<span data-ttu-id="eed2a-112">領域:</span><span class="sxs-lookup"><span data-stu-id="eed2a-112">Area:</span></span>  <br/> |<span data-ttu-id="eed2a-113">Container</span><span class="sxs-lookup"><span data-stu-id="eed2a-113">Container</span></span>  <br/> |
+|<span data-ttu-id="6978a-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="6978a-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="6978a-107">PR_CONTAINER_CONTENTS</span><span class="sxs-lookup"><span data-stu-id="6978a-107">PR_CONTAINER_CONTENTS</span></span>  <br/> |
+|<span data-ttu-id="6978a-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="6978a-108">Identifier:</span></span>  <br/> |<span data-ttu-id="6978a-109">0x360F</span><span class="sxs-lookup"><span data-stu-id="6978a-109">0x360F</span></span>  <br/> |
+|<span data-ttu-id="6978a-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="6978a-110">Data type:</span></span>  <br/> |<span data-ttu-id="6978a-111">PT_OBJECT</span><span class="sxs-lookup"><span data-stu-id="6978a-111">PT_OBJECT</span></span>  <br/> |
+|<span data-ttu-id="6978a-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="6978a-112">Area:</span></span>  <br/> |<span data-ttu-id="6978a-113">Container</span><span class="sxs-lookup"><span data-stu-id="6978a-113">Container</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="eed2a-114">注釈</span><span class="sxs-lookup"><span data-stu-id="eed2a-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6978a-114">備考</span><span class="sxs-lookup"><span data-stu-id="6978a-114">Remarks</span></span>
 
-<span data-ttu-id="eed2a-115">このプロパティは、 [IMAPIProp::CopyTo](imapiprop-copyto.md)操作で除外または[IMAPIProp::CopyProps](imapiprop-copyprops.md)操作に含まれることができます。</span><span class="sxs-lookup"><span data-stu-id="eed2a-115">This property can be excluded in [IMAPIProp::CopyTo](imapiprop-copyto.md) operations or included in [IMAPIProp::CopyProps](imapiprop-copyprops.md) operations.</span></span> <span data-ttu-id="eed2a-116">PT_OBJECT の型のプロパティとして、正常に取得できません、 [IMAPIProp::GetProps](imapiprop-getprops.md)メソッドで方式では[IMAPIProp::OpenProperty](imapiprop-openproperty.md) IID_IMAPITable のインタ フェース識別子を要求するその内容にアクセスする必要があります。</span><span class="sxs-lookup"><span data-stu-id="eed2a-116">As a property of type PT_OBJECT, it cannot be successfully retrieved by the [IMAPIProp::GetProps](imapiprop-getprops.md) method; its contents should be accessed by the [IMAPIProp::OpenProperty](imapiprop-openproperty.md) method, requesting the IID_IMAPITable interface identifier.</span></span> <span data-ttu-id="eed2a-117">サービス プロバイダーする必要がありますに報告して、 [IMAPIProp::GetPropList](imapiprop-getproplist.md)メソッドが設定されているが報告したことができます (オプション)、または設定されていない場合はありません。</span><span class="sxs-lookup"><span data-stu-id="eed2a-117">Service providers must report it to the [IMAPIProp::GetPropList](imapiprop-getproplist.md) method if it is set, but can optionally report it or not if it is not set.</span></span> 
+<span data-ttu-id="6978a-115">このプロパティは、 [IMAPIProp::CopyTo](imapiprop-copyto.md)操作で除外または[IMAPIProp::CopyProps](imapiprop-copyprops.md)操作に含まれることができます。</span><span class="sxs-lookup"><span data-stu-id="6978a-115">This property can be excluded in [IMAPIProp::CopyTo](imapiprop-copyto.md) operations or included in [IMAPIProp::CopyProps](imapiprop-copyprops.md) operations.</span></span> <span data-ttu-id="6978a-116">PT_OBJECT の型のプロパティとして、正常に取得できません、 [IMAPIProp::GetProps](imapiprop-getprops.md)メソッドで方式では[IMAPIProp::OpenProperty](imapiprop-openproperty.md) IID_IMAPITable のインタ フェース識別子を要求するその内容にアクセスする必要があります。</span><span class="sxs-lookup"><span data-stu-id="6978a-116">As a property of type PT_OBJECT, it cannot be successfully retrieved by the [IMAPIProp::GetProps](imapiprop-getprops.md) method; its contents should be accessed by the [IMAPIProp::OpenProperty](imapiprop-openproperty.md) method, requesting the IID_IMAPITable interface identifier.</span></span> <span data-ttu-id="6978a-117">サービス プロバイダーする必要がありますに報告して、 [IMAPIProp::GetPropList](imapiprop-getproplist.md)メソッドが設定されているが報告したことができます (オプション)、または設定されていない場合はありません。</span><span class="sxs-lookup"><span data-stu-id="6978a-117">Service providers must report it to the [IMAPIProp::GetPropList](imapiprop-getproplist.md) method if it is set, but can optionally report it or not if it is not set.</span></span> 
   
-<span data-ttu-id="eed2a-118">テーブルの内容を取得するには、クライアント アプリケーションは、 [IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md)メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="eed2a-118">To retrieve table contents, a client application should call the [IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md) method.</span></span> <span data-ttu-id="eed2a-119">詳細については、[内容のテーブル](contents-tables.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eed2a-119">For more information, see [Contents Tables](contents-tables.md).</span></span> 
+<span data-ttu-id="6978a-118">テーブルの内容を取得するには、クライアント アプリケーションは、 [IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md)メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="6978a-118">To retrieve table contents, a client application should call the [IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md) method.</span></span> <span data-ttu-id="6978a-119">詳細については、[内容のテーブル](contents-tables.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6978a-119">For more information, see [Contents Tables](contents-tables.md).</span></span> 
   
-<span data-ttu-id="eed2a-120">**PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) と**PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md)) は、このプロパティは、使用状況に似ています。</span><span class="sxs-lookup"><span data-stu-id="eed2a-120">This property, **PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) , and **PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md)) are similar in usage.</span></span> <span data-ttu-id="eed2a-121">いくつかの MAPI プロパティは、テーブルへのアクセスを提供します。</span><span class="sxs-lookup"><span data-stu-id="eed2a-121">Several MAPI properties provide access to tables:</span></span> 
+<span data-ttu-id="6978a-120">**PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) と**PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md)) は、このプロパティは、使用状況に似ています。</span><span class="sxs-lookup"><span data-stu-id="6978a-120">This property, **PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) , and **PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md)) are similar in usage.</span></span> <span data-ttu-id="6978a-121">いくつかの MAPI プロパティは、テーブルへのアクセスを提供します。</span><span class="sxs-lookup"><span data-stu-id="6978a-121">Several MAPI properties provide access to tables:</span></span> 
   
-|<span data-ttu-id="eed2a-122">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="eed2a-122">**Property**</span></span>|<span data-ttu-id="eed2a-123">**Table**</span><span class="sxs-lookup"><span data-stu-id="eed2a-123">**Table**</span></span>|
+|<span data-ttu-id="6978a-122">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="6978a-122">**Property**</span></span>|<span data-ttu-id="6978a-123">**Table**</span><span class="sxs-lookup"><span data-stu-id="6978a-123">**Table**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="eed2a-124">PidTagContainerContents</span><span class="sxs-lookup"><span data-stu-id="eed2a-124">PidTagContainerContents</span></span>  <br/> |<span data-ttu-id="eed2a-125">コンテンツ テーブル</span><span class="sxs-lookup"><span data-stu-id="eed2a-125">Contents table</span></span>  <br/> |
-|<span data-ttu-id="eed2a-126">**PR_CONTAINER_HIERARCHY**([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="eed2a-126">**PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md))</span></span>  <br/> |<span data-ttu-id="eed2a-127">階層テーブル</span><span class="sxs-lookup"><span data-stu-id="eed2a-127">Hierarchy table</span></span>  <br/> |
-|<span data-ttu-id="eed2a-128">**PR_FOLDER_ASSOCIATED_CONTENTS**([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="eed2a-128">**PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md))</span></span>  <br/> |<span data-ttu-id="eed2a-129">関連付けられているコンテンツ」テーブル</span><span class="sxs-lookup"><span data-stu-id="eed2a-129">Associated contents table</span></span>  <br/> |
-|<span data-ttu-id="eed2a-130">**PR_MESSAGE_ATTACHMENTS**([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="eed2a-130">**PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md))</span></span>  <br/> |<span data-ttu-id="eed2a-131">添付ファイル テーブル</span><span class="sxs-lookup"><span data-stu-id="eed2a-131">Attachment table</span></span>  <br/> |
-|<span data-ttu-id="eed2a-132">**PR_MESSAGE_RECIPIENTS**([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="eed2a-132">**PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md))</span></span>  <br/> |<span data-ttu-id="eed2a-133">受信者テーブル</span><span class="sxs-lookup"><span data-stu-id="eed2a-133">Recipient table</span></span>  <br/> |
+|<span data-ttu-id="6978a-124">PidTagContainerContents</span><span class="sxs-lookup"><span data-stu-id="6978a-124">PidTagContainerContents</span></span>  <br/> |<span data-ttu-id="6978a-125">コンテンツ テーブル</span><span class="sxs-lookup"><span data-stu-id="6978a-125">Contents table</span></span>  <br/> |
+|<span data-ttu-id="6978a-126">**PR_CONTAINER_HIERARCHY**([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="6978a-126">**PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md))</span></span>  <br/> |<span data-ttu-id="6978a-127">階層テーブル</span><span class="sxs-lookup"><span data-stu-id="6978a-127">Hierarchy table</span></span>  <br/> |
+|<span data-ttu-id="6978a-128">**PR_FOLDER_ASSOCIATED_CONTENTS**([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="6978a-128">**PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md))</span></span>  <br/> |<span data-ttu-id="6978a-129">関連付けられているコンテンツ」テーブル</span><span class="sxs-lookup"><span data-stu-id="6978a-129">Associated contents table</span></span>  <br/> |
+|<span data-ttu-id="6978a-130">**PR_MESSAGE_ATTACHMENTS**([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="6978a-130">**PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md))</span></span>  <br/> |<span data-ttu-id="6978a-131">添付ファイル テーブル</span><span class="sxs-lookup"><span data-stu-id="6978a-131">Attachment table</span></span>  <br/> |
+|<span data-ttu-id="6978a-132">**PR_MESSAGE_RECIPIENTS**([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="6978a-132">**PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md))</span></span>  <br/> |<span data-ttu-id="6978a-133">受信者テーブル</span><span class="sxs-lookup"><span data-stu-id="6978a-133">Recipient table</span></span>  <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="eed2a-134">関連リソース</span><span class="sxs-lookup"><span data-stu-id="eed2a-134">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="6978a-134">関連リソース</span><span class="sxs-lookup"><span data-stu-id="6978a-134">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="eed2a-135">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="eed2a-135">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="6978a-135">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="6978a-135">Protocol specifications</span></span>
 
-<span data-ttu-id="eed2a-136">[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="eed2a-136">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="6978a-136">[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="6978a-136">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="eed2a-137">関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="eed2a-137">Provides references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="6978a-137">関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="6978a-137">Provides references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="eed2a-138">[[MS OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="eed2a-138">[[MS-OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="6978a-138">[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="6978a-138">[[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="eed2a-139">プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="eed2a-139">Specifies the properties and operations for lists of users, contacts, groups, and resources.</span></span>
+> <span data-ttu-id="6978a-139">プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="6978a-139">Specifies the properties and operations for lists of users, contacts, groups, and resources.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="eed2a-140">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="eed2a-140">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="6978a-140">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="6978a-140">Header files</span></span>
 
-<span data-ttu-id="eed2a-141">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="eed2a-141">Mapidefs.h</span></span>
+<span data-ttu-id="6978a-141">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="6978a-141">Mapidefs.h</span></span>
   
-> <span data-ttu-id="eed2a-142">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="eed2a-142">Provides data type definitions.</span></span>
+> <span data-ttu-id="6978a-142">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="6978a-142">Provides data type definitions.</span></span>
     
-<span data-ttu-id="eed2a-143">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="eed2a-143">Mapitags.h</span></span>
+<span data-ttu-id="6978a-143">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="6978a-143">Mapitags.h</span></span>
   
-> <span data-ttu-id="eed2a-144">代替名として記載されているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="eed2a-144">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="6978a-144">代替名として記載されているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="6978a-144">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="eed2a-145">関連項目</span><span class="sxs-lookup"><span data-stu-id="eed2a-145">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6978a-145">関連項目</span><span class="sxs-lookup"><span data-stu-id="6978a-145">See also</span></span>
 
 
 
-[<span data-ttu-id="eed2a-146">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="eed2a-146">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="6978a-146">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="6978a-146">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="eed2a-147">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="eed2a-147">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="6978a-147">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="6978a-147">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="eed2a-148">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="eed2a-148">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="6978a-148">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="6978a-148">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="eed2a-149">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="eed2a-149">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="6978a-149">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="6978a-149">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 
