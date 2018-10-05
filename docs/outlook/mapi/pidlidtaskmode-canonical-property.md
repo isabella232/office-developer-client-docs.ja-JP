@@ -12,69 +12,69 @@ api_type:
 - COM
 ms.assetid: 185db683-301a-4d91-a583-6959853fa1ad
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: bc8e4dfe934d516c07d5532ba6a95e51a3cbf962
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d0ae319a6b5fa4c901ec7d318c7ebdd216a2adeb
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578081"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398970"
 ---
-# <a name="pidlidtaskmode-canonical-property"></a><span data-ttu-id="0b1ac-103">PidLidTaskMode 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="0b1ac-103">PidLidTaskMode Canonical Property</span></span>
+# <a name="pidlidtaskmode-canonical-property"></a><span data-ttu-id="1d652-103">PidLidTaskMode 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="1d652-103">PidLidTaskMode Canonical Property</span></span>
 
   
   
-<span data-ttu-id="0b1ac-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="0b1ac-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="1d652-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="1d652-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="0b1ac-105">タスクの割り当ての状態を指定します。</span><span class="sxs-lookup"><span data-stu-id="0b1ac-105">Specifies the assignment status of the task.</span></span>
+<span data-ttu-id="1d652-105">タスクの割り当ての状態を指定します。</span><span class="sxs-lookup"><span data-stu-id="1d652-105">Specifies the assignment status of the task.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="0b1ac-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="0b1ac-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="0b1ac-107">dispidTaskMode</span><span class="sxs-lookup"><span data-stu-id="0b1ac-107">dispidTaskMode</span></span>  <br/> |
-|<span data-ttu-id="0b1ac-108">プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="0b1ac-108">Property set:</span></span>  <br/> |<span data-ttu-id="0b1ac-109">PSETID_Common</span><span class="sxs-lookup"><span data-stu-id="0b1ac-109">PSETID_Common</span></span>  <br/> |
-|<span data-ttu-id="0b1ac-110">長い ID (LID):</span><span class="sxs-lookup"><span data-stu-id="0b1ac-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="0b1ac-111">0x00008518</span><span class="sxs-lookup"><span data-stu-id="0b1ac-111">0x00008518</span></span>  <br/> |
-|<span data-ttu-id="0b1ac-112">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="0b1ac-112">Data type:</span></span>  <br/> |<span data-ttu-id="0b1ac-113">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="0b1ac-113">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="0b1ac-114">領域:</span><span class="sxs-lookup"><span data-stu-id="0b1ac-114">Area:</span></span>  <br/> |<span data-ttu-id="0b1ac-115">タスク</span><span class="sxs-lookup"><span data-stu-id="0b1ac-115">Task</span></span>  <br/> |
+|<span data-ttu-id="1d652-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="1d652-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="1d652-107">dispidTaskMode</span><span class="sxs-lookup"><span data-stu-id="1d652-107">dispidTaskMode</span></span>  <br/> |
+|<span data-ttu-id="1d652-108">プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="1d652-108">Property set:</span></span>  <br/> |<span data-ttu-id="1d652-109">PSETID_Common</span><span class="sxs-lookup"><span data-stu-id="1d652-109">PSETID_Common</span></span>  <br/> |
+|<span data-ttu-id="1d652-110">長い ID (LID):</span><span class="sxs-lookup"><span data-stu-id="1d652-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="1d652-111">0x00008518</span><span class="sxs-lookup"><span data-stu-id="1d652-111">0x00008518</span></span>  <br/> |
+|<span data-ttu-id="1d652-112">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="1d652-112">Data type:</span></span>  <br/> |<span data-ttu-id="1d652-113">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="1d652-113">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="1d652-114">エリア:</span><span class="sxs-lookup"><span data-stu-id="1d652-114">Area:</span></span>  <br/> |<span data-ttu-id="1d652-115">タスク</span><span class="sxs-lookup"><span data-stu-id="1d652-115">Task</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="0b1ac-116">注釈</span><span class="sxs-lookup"><span data-stu-id="0b1ac-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1d652-116">備考</span><span class="sxs-lookup"><span data-stu-id="1d652-116">Remarks</span></span>
 
-<span data-ttu-id="0b1ac-117">値は、次のいずれかである必要があります。</span><span class="sxs-lookup"><span data-stu-id="0b1ac-117">The value must be one of the following.</span></span>
+<span data-ttu-id="1d652-117">値は、次のいずれかである必要があります。</span><span class="sxs-lookup"><span data-stu-id="1d652-117">The value must be one of the following.</span></span>
   
-|<span data-ttu-id="0b1ac-118">**値**</span><span class="sxs-lookup"><span data-stu-id="0b1ac-118">**Value**</span></span>|<span data-ttu-id="0b1ac-119">**説明**</span><span class="sxs-lookup"><span data-stu-id="0b1ac-119">**Description**</span></span>|
+|<span data-ttu-id="1d652-118">**値**</span><span class="sxs-lookup"><span data-stu-id="1d652-118">**Value**</span></span>|<span data-ttu-id="1d652-119">**説明**</span><span class="sxs-lookup"><span data-stu-id="1d652-119">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="0b1ac-120">0x00000000</span><span class="sxs-lookup"><span data-stu-id="0b1ac-120">0x00000000</span></span>  <br/> |<span data-ttu-id="0b1ac-121">タスクが割り当てられていません。</span><span class="sxs-lookup"><span data-stu-id="0b1ac-121">The task is not assigned.</span></span>  <br/> |
-|<span data-ttu-id="0b1ac-122">0x00000001</span><span class="sxs-lookup"><span data-stu-id="0b1ac-122">0x00000001</span></span>  <br/> |<span data-ttu-id="0b1ac-123">タスクは、タスクの要求に埋め込まれます。</span><span class="sxs-lookup"><span data-stu-id="0b1ac-123">The task is embedded in a task request.</span></span>  <br/> |
-|<span data-ttu-id="0b1ac-124">0x00000002</span><span class="sxs-lookup"><span data-stu-id="0b1ac-124">0x00000002</span></span>  <br/> |<span data-ttu-id="0b1ac-125">タスクは、タスク実施者によって承認されました。</span><span class="sxs-lookup"><span data-stu-id="0b1ac-125">The task was accepted by the task assignee.</span></span>  <br/> |
-|<span data-ttu-id="0b1ac-126">0x00000003</span><span class="sxs-lookup"><span data-stu-id="0b1ac-126">0x00000003</span></span>  <br/> |<span data-ttu-id="0b1ac-127">タスクは、タスク実施者によって拒否されました。</span><span class="sxs-lookup"><span data-stu-id="0b1ac-127">The task was rejected by the task assignee.</span></span>  <br/> |
-|<span data-ttu-id="0b1ac-128">0x00000004</span><span class="sxs-lookup"><span data-stu-id="0b1ac-128">0x00000004</span></span>  <br/> |<span data-ttu-id="0b1ac-129">タスクは、タスクの更新に埋め込まれます。</span><span class="sxs-lookup"><span data-stu-id="0b1ac-129">The task is embedded in a task update.</span></span>  <br/> |
-|<span data-ttu-id="0b1ac-130">0x00000005</span><span class="sxs-lookup"><span data-stu-id="0b1ac-130">0x00000005</span></span>  <br/> |<span data-ttu-id="0b1ac-131">作業仕事を割り当てた人にタスクが割り当てられました。</span><span class="sxs-lookup"><span data-stu-id="0b1ac-131">The task was assigned to the task assigner.</span></span>  <br/> |
+|<span data-ttu-id="1d652-120">0x00000000</span><span class="sxs-lookup"><span data-stu-id="1d652-120">0x00000000</span></span>  <br/> |<span data-ttu-id="1d652-121">タスクが割り当てられていません。</span><span class="sxs-lookup"><span data-stu-id="1d652-121">The task is not assigned.</span></span>  <br/> |
+|<span data-ttu-id="1d652-122">0x00000001</span><span class="sxs-lookup"><span data-stu-id="1d652-122">0x00000001</span></span>  <br/> |<span data-ttu-id="1d652-123">タスクは、タスクの要求に埋め込まれます。</span><span class="sxs-lookup"><span data-stu-id="1d652-123">The task is embedded in a task request.</span></span>  <br/> |
+|<span data-ttu-id="1d652-124">0x00000002</span><span class="sxs-lookup"><span data-stu-id="1d652-124">0x00000002</span></span>  <br/> |<span data-ttu-id="1d652-125">タスクは、タスク実施者によって承認されました。</span><span class="sxs-lookup"><span data-stu-id="1d652-125">The task was accepted by the task assignee.</span></span>  <br/> |
+|<span data-ttu-id="1d652-126">0x00000003</span><span class="sxs-lookup"><span data-stu-id="1d652-126">0x00000003</span></span>  <br/> |<span data-ttu-id="1d652-127">タスクは、タスク実施者によって拒否されました。</span><span class="sxs-lookup"><span data-stu-id="1d652-127">The task was rejected by the task assignee.</span></span>  <br/> |
+|<span data-ttu-id="1d652-128">0x00000004</span><span class="sxs-lookup"><span data-stu-id="1d652-128">0x00000004</span></span>  <br/> |<span data-ttu-id="1d652-129">タスクは、タスクの更新に埋め込まれます。</span><span class="sxs-lookup"><span data-stu-id="1d652-129">The task is embedded in a task update.</span></span>  <br/> |
+|<span data-ttu-id="1d652-130">0x00000005</span><span class="sxs-lookup"><span data-stu-id="1d652-130">0x00000005</span></span>  <br/> |<span data-ttu-id="1d652-131">作業仕事を割り当てた人にタスクが割り当てられました。</span><span class="sxs-lookup"><span data-stu-id="1d652-131">The task was assigned to the task assigner.</span></span>  <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="0b1ac-132">関連リソース</span><span class="sxs-lookup"><span data-stu-id="0b1ac-132">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="1d652-132">関連リソース</span><span class="sxs-lookup"><span data-stu-id="1d652-132">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="0b1ac-133">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="0b1ac-133">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="1d652-133">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="1d652-133">Protocol specifications</span></span>
 
-<span data-ttu-id="0b1ac-134">[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="0b1ac-134">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="1d652-134">[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="1d652-134">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="0b1ac-135">プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="0b1ac-135">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="1d652-135">プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="1d652-135">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="0b1ac-136">[[MS OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="0b1ac-136">[[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="1d652-136">[[MS OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="1d652-136">[[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="0b1ac-137">タスク、タスクの割り当て、およびタスクの更新に相当する電子をモデル化したいくつかのオブジェクトを定義します。</span><span class="sxs-lookup"><span data-stu-id="0b1ac-137">Defines several objects that model the electronic equivalent of tasks, task assignments, and task updates.</span></span>
+> <span data-ttu-id="1d652-137">タスク、タスクの割り当て、およびタスクの更新に相当する電子をモデル化したいくつかのオブジェクトを定義します。</span><span class="sxs-lookup"><span data-stu-id="1d652-137">Defines several objects that model the electronic equivalent of tasks, task assignments, and task updates.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="0b1ac-138">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="0b1ac-138">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="1d652-138">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="1d652-138">Header files</span></span>
 
-<span data-ttu-id="0b1ac-139">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="0b1ac-139">Mapidefs.h</span></span>
+<span data-ttu-id="1d652-139">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="1d652-139">Mapidefs.h</span></span>
   
-> <span data-ttu-id="0b1ac-140">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="0b1ac-140">Provides data type definitions.</span></span>
+> <span data-ttu-id="1d652-140">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="1d652-140">Provides data type definitions.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="0b1ac-141">関連項目</span><span class="sxs-lookup"><span data-stu-id="0b1ac-141">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1d652-141">関連項目</span><span class="sxs-lookup"><span data-stu-id="1d652-141">See also</span></span>
 
 
 
-[<span data-ttu-id="0b1ac-142">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="0b1ac-142">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="1d652-142">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="1d652-142">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="0b1ac-143">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="0b1ac-143">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="1d652-143">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="1d652-143">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="0b1ac-144">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="0b1ac-144">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="1d652-144">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="1d652-144">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="0b1ac-145">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="0b1ac-145">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="1d652-145">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="1d652-145">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

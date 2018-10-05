@@ -12,56 +12,56 @@ api_type:
 - COM
 ms.assetid: 2f5b6961-69c0-4103-bac7-cc0b22ab2c4f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c9d45d5ab12f1efa6dba97f31c43d525dc28b460
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4710064417b6133dc2b36af5d5ed56074339a3d5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563584"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397703"
 ---
-# <a name="pidnamepagecount-canonical-property"></a><span data-ttu-id="b7aca-103">PidNamePageCount 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="b7aca-103">PidNamePageCount Canonical Property</span></span>
+# <a name="pidnamepagecount-canonical-property"></a><span data-ttu-id="5d777-103">PidNamePageCount 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="5d777-103">PidNamePageCount Canonical Property</span></span>
 
   
   
-<span data-ttu-id="b7aca-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b7aca-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="5d777-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="5d777-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="b7aca-105">ドキュメントに添付ファイルのページ数を指定します。</span><span class="sxs-lookup"><span data-stu-id="b7aca-105">Specifies the page count of the file attached to the document.</span></span>
+<span data-ttu-id="5d777-105">ドキュメントに添付ファイルのページ数を指定します。</span><span class="sxs-lookup"><span data-stu-id="5d777-105">Specifies the page count of the file attached to the document.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="b7aca-106">フレンドリ名:</span><span class="sxs-lookup"><span data-stu-id="b7aca-106">Friendly names:</span></span>  <br/> |<span data-ttu-id="b7aca-107">なし</span><span class="sxs-lookup"><span data-stu-id="b7aca-107">None</span></span>  <br/> |
-|<span data-ttu-id="b7aca-108">プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="b7aca-108">Property set:</span></span>  <br/> |<span data-ttu-id="b7aca-109">PS_PUBLIC_STRINGS</span><span class="sxs-lookup"><span data-stu-id="b7aca-109">PS_PUBLIC_STRINGS</span></span>  <br/> |
-|<span data-ttu-id="b7aca-110">プロパティ名:</span><span class="sxs-lookup"><span data-stu-id="b7aca-110">Property name:</span></span>  <br/> |<span data-ttu-id="b7aca-111">PageCount</span><span class="sxs-lookup"><span data-stu-id="b7aca-111">PageCount</span></span>  <br/> |
-|<span data-ttu-id="b7aca-112">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="b7aca-112">Data type:</span></span>  <br/> |<span data-ttu-id="b7aca-113">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="b7aca-113">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="b7aca-114">領域:</span><span class="sxs-lookup"><span data-stu-id="b7aca-114">Area:</span></span>  <br/> |<span data-ttu-id="b7aca-115">Common</span><span class="sxs-lookup"><span data-stu-id="b7aca-115">Common</span></span>  <br/> |
+|<span data-ttu-id="5d777-106">フレンドリ名:</span><span class="sxs-lookup"><span data-stu-id="5d777-106">Friendly names:</span></span>  <br/> |<span data-ttu-id="5d777-107">なし</span><span class="sxs-lookup"><span data-stu-id="5d777-107">None</span></span>  <br/> |
+|<span data-ttu-id="5d777-108">プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="5d777-108">Property set:</span></span>  <br/> |<span data-ttu-id="5d777-109">PS_PUBLIC_STRINGS</span><span class="sxs-lookup"><span data-stu-id="5d777-109">PS_PUBLIC_STRINGS</span></span>  <br/> |
+|<span data-ttu-id="5d777-110">プロパティ名:</span><span class="sxs-lookup"><span data-stu-id="5d777-110">Property name:</span></span>  <br/> |<span data-ttu-id="5d777-111">PageCount</span><span class="sxs-lookup"><span data-stu-id="5d777-111">PageCount</span></span>  <br/> |
+|<span data-ttu-id="5d777-112">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="5d777-112">Data type:</span></span>  <br/> |<span data-ttu-id="5d777-113">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="5d777-113">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="5d777-114">エリア:</span><span class="sxs-lookup"><span data-stu-id="5d777-114">Area:</span></span>  <br/> |<span data-ttu-id="5d777-115">Common</span><span class="sxs-lookup"><span data-stu-id="5d777-115">Common</span></span>  <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="b7aca-116">関連リソース</span><span class="sxs-lookup"><span data-stu-id="b7aca-116">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="5d777-116">関連リソース</span><span class="sxs-lookup"><span data-stu-id="5d777-116">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="b7aca-117">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="b7aca-117">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="5d777-117">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="5d777-117">Protocol specifications</span></span>
 
-<span data-ttu-id="b7aca-118">[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="b7aca-118">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="5d777-118">[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="5d777-118">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="b7aca-119">プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="b7aca-119">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="5d777-119">プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="5d777-119">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="b7aca-120">[[MS OXODOC]](http://msdn.microsoft.com/library/103007c8-5066-4bed-84e3-4465907af098%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="b7aca-120">[[MS-OXODOC]](http://msdn.microsoft.com/library/103007c8-5066-4bed-84e3-4465907af098%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="5d777-120">[[MS OXODOC]](https://msdn.microsoft.com/library/103007c8-5066-4bed-84e3-4465907af098%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="5d777-120">[[MS-OXODOC]](https://msdn.microsoft.com/library/103007c8-5066-4bed-84e3-4465907af098%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="b7aca-121">プロパティは、ドキュメントに対する許可の操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="b7aca-121">Specifies the properties and operations that are permissible on documents.</span></span>
+> <span data-ttu-id="5d777-121">プロパティは、ドキュメントに対する許可の操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="5d777-121">Specifies the properties and operations that are permissible on documents.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="b7aca-122">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="b7aca-122">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="5d777-122">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="5d777-122">Header files</span></span>
 
-<span data-ttu-id="b7aca-123">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="b7aca-123">Mapidefs.h</span></span>
+<span data-ttu-id="5d777-123">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="5d777-123">Mapidefs.h</span></span>
   
-> <span data-ttu-id="b7aca-124">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="b7aca-124">Provides data type definitions.</span></span>
+> <span data-ttu-id="5d777-124">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="5d777-124">Provides data type definitions.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="b7aca-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="b7aca-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5d777-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="5d777-125">See also</span></span>
 
 
 
-[<span data-ttu-id="b7aca-126">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="b7aca-126">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="5d777-126">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="5d777-126">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="b7aca-127">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="b7aca-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="5d777-127">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="5d777-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="b7aca-128">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="b7aca-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="5d777-128">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="5d777-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="b7aca-129">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="b7aca-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="5d777-129">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="5d777-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -12,130 +12,130 @@ api_type:
 - HeaderDef
 ms.assetid: 3e526b93-1f64-41ea-b43c-5b03fe1c56ed
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a120c44a83ad5e5a822e3959417b162e8ccbdd8c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dcbf8a323f5178a5a2e39d0963dd19415ab835bd
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566916"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397339"
 ---
-# <a name="pidtagmemberrights-canonical-property"></a><span data-ttu-id="0f464-103">PidTagMemberRights 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="0f464-103">PidTagMemberRights Canonical Property</span></span>
+# <a name="pidtagmemberrights-canonical-property"></a><span data-ttu-id="7b6bb-103">PidTagMemberRights 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="7b6bb-103">PidTagMemberRights Canonical Property</span></span>
 
   
   
-<span data-ttu-id="0f464-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="0f464-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="7b6bb-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7b6bb-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="0f464-105">フォルダーまたはメールボックスには、このメンバーの権限を指定するビットのセットが含まれています。</span><span class="sxs-lookup"><span data-stu-id="0f464-105">Contains a set of bits that indicated the rights of this member on a folder or mailbox.</span></span>
+<span data-ttu-id="7b6bb-105">フォルダーまたはメールボックスには、このメンバーの権限を指定するビットのセットが含まれています。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-105">Contains a set of bits that indicated the rights of this member on a folder or mailbox.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="0f464-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="0f464-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="0f464-107">PR_MEMBER_RIGHTS</span><span class="sxs-lookup"><span data-stu-id="0f464-107">PR_MEMBER_RIGHTS</span></span>  <br/> |
-|<span data-ttu-id="0f464-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="0f464-108">Identifier:</span></span>  <br/> |<span data-ttu-id="0f464-109">0x6673</span><span class="sxs-lookup"><span data-stu-id="0f464-109">0x6673</span></span>  <br/> |
-|<span data-ttu-id="0f464-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="0f464-110">Data type:</span></span>  <br/> |<span data-ttu-id="0f464-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="0f464-111">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="0f464-112">領域:</span><span class="sxs-lookup"><span data-stu-id="0f464-112">Area:</span></span>  <br/> |<span data-ttu-id="0f464-113">アクセス制御</span><span class="sxs-lookup"><span data-stu-id="0f464-113">Access Control</span></span>  <br/> |
+|<span data-ttu-id="7b6bb-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="7b6bb-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="7b6bb-107">PR_MEMBER_RIGHTS</span><span class="sxs-lookup"><span data-stu-id="7b6bb-107">PR_MEMBER_RIGHTS</span></span>  <br/> |
+|<span data-ttu-id="7b6bb-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="7b6bb-108">Identifier:</span></span>  <br/> |<span data-ttu-id="7b6bb-109">0x6673</span><span class="sxs-lookup"><span data-stu-id="7b6bb-109">0x6673</span></span>  <br/> |
+|<span data-ttu-id="7b6bb-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="7b6bb-110">Data type:</span></span>  <br/> |<span data-ttu-id="7b6bb-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="7b6bb-111">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="7b6bb-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="7b6bb-112">Area:</span></span>  <br/> |<span data-ttu-id="7b6bb-113">アクセス制御</span><span class="sxs-lookup"><span data-stu-id="7b6bb-113">Access Control</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="0f464-114">注釈</span><span class="sxs-lookup"><span data-stu-id="0f464-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7b6bb-114">備考</span><span class="sxs-lookup"><span data-stu-id="7b6bb-114">Remarks</span></span>
 
-<span data-ttu-id="0f464-115">このプロパティは、フォルダーのメンバーの権限を定義するのには、 [IExchangeModifyTable](iexchangemodifytableiunknown.md)インターフェイスが使用します。</span><span class="sxs-lookup"><span data-stu-id="0f464-115">This property is used by the [IExchangeModifyTable](iexchangemodifytableiunknown.md) interface to define rights of a member on a folder.</span></span> <span data-ttu-id="0f464-116">これらの権限を表示および変更できます。</span><span class="sxs-lookup"><span data-stu-id="0f464-116">These rights can be displayed and modified.</span></span> <span data-ttu-id="0f464-117">次の値は、このプロパティに対して定義される権限です。</span><span class="sxs-lookup"><span data-stu-id="0f464-117">The following values are rights defined for this property.</span></span> 
+<span data-ttu-id="7b6bb-115">このプロパティは、フォルダーのメンバーの権限を定義するのには、 [IExchangeModifyTable](iexchangemodifytableiunknown.md)インターフェイスが使用します。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-115">This property is used by the [IExchangeModifyTable](iexchangemodifytableiunknown.md) interface to define rights of a member on a folder.</span></span> <span data-ttu-id="7b6bb-116">これらの権限を表示および変更できます。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-116">These rights can be displayed and modified.</span></span> <span data-ttu-id="7b6bb-117">次の値は、このプロパティに対して定義される権限です。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-117">The following values are rights defined for this property.</span></span> 
   
-<span data-ttu-id="0f464-118">frightsReadAny</span><span class="sxs-lookup"><span data-stu-id="0f464-118">frightsReadAny</span></span>
+<span data-ttu-id="7b6bb-118">frightsReadAny</span><span class="sxs-lookup"><span data-stu-id="7b6bb-118">frightsReadAny</span></span>
   
-> <span data-ttu-id="0f464-119">メンバーは、すべてのメッセージを読み取ることができます。</span><span class="sxs-lookup"><span data-stu-id="0f464-119">Member can read any messages.</span></span>
+> <span data-ttu-id="7b6bb-119">メンバーは、すべてのメッセージを読み取ることができます。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-119">Member can read any messages.</span></span>
     
-<span data-ttu-id="0f464-120">frightsCreate</span><span class="sxs-lookup"><span data-stu-id="0f464-120">frightsCreate</span></span>
+<span data-ttu-id="7b6bb-120">frightsCreate</span><span class="sxs-lookup"><span data-stu-id="7b6bb-120">frightsCreate</span></span>
   
-> <span data-ttu-id="0f464-121">メンバーは、メッセージを作成できます。</span><span class="sxs-lookup"><span data-stu-id="0f464-121">Member can create messages.</span></span>
+> <span data-ttu-id="7b6bb-121">メンバーは、メッセージを作成できます。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-121">Member can create messages.</span></span>
     
-<span data-ttu-id="0f464-122">frightsEditOwned</span><span class="sxs-lookup"><span data-stu-id="0f464-122">frightsEditOwned</span></span>
+<span data-ttu-id="7b6bb-122">frightsEditOwned</span><span class="sxs-lookup"><span data-stu-id="7b6bb-122">frightsEditOwned</span></span>
   
-> <span data-ttu-id="0f464-123">メンバーは、ユーザーが所有するすべてのメッセージを編集できます。</span><span class="sxs-lookup"><span data-stu-id="0f464-123">Member can edit any messages owned by the user.</span></span>
+> <span data-ttu-id="7b6bb-123">メンバーは、ユーザーが所有するすべてのメッセージを編集できます。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-123">Member can edit any messages owned by the user.</span></span>
     
-<span data-ttu-id="0f464-124">frightsDeleteOwned</span><span class="sxs-lookup"><span data-stu-id="0f464-124">frightsDeleteOwned</span></span>
+<span data-ttu-id="7b6bb-124">frightsDeleteOwned</span><span class="sxs-lookup"><span data-stu-id="7b6bb-124">frightsDeleteOwned</span></span>
   
-> <span data-ttu-id="0f464-125">メンバーは、ユーザーが所有するすべてのメッセージを削除できます。</span><span class="sxs-lookup"><span data-stu-id="0f464-125">Member can delete any messages owned by the user.</span></span>
+> <span data-ttu-id="7b6bb-125">メンバーは、ユーザーが所有するすべてのメッセージを削除できます。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-125">Member can delete any messages owned by the user.</span></span>
     
-<span data-ttu-id="0f464-126">frightsEditAny</span><span class="sxs-lookup"><span data-stu-id="0f464-126">frightsEditAny</span></span>
+<span data-ttu-id="7b6bb-126">frightsEditAny</span><span class="sxs-lookup"><span data-stu-id="7b6bb-126">frightsEditAny</span></span>
   
-> <span data-ttu-id="0f464-127">メンバーは、任意のメッセージを編集できます。</span><span class="sxs-lookup"><span data-stu-id="0f464-127">Member can edit any message.</span></span>
+> <span data-ttu-id="7b6bb-127">メンバーは、任意のメッセージを編集できます。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-127">Member can edit any message.</span></span>
     
-<span data-ttu-id="0f464-128">frightsDeleteAny</span><span class="sxs-lookup"><span data-stu-id="0f464-128">frightsDeleteAny</span></span>
+<span data-ttu-id="7b6bb-128">frightsDeleteAny</span><span class="sxs-lookup"><span data-stu-id="7b6bb-128">frightsDeleteAny</span></span>
   
-> <span data-ttu-id="0f464-129">メンバーは、任意のメッセージを削除できます。</span><span class="sxs-lookup"><span data-stu-id="0f464-129">Member can delete any message.</span></span>
+> <span data-ttu-id="7b6bb-129">メンバーは、任意のメッセージを削除できます。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-129">Member can delete any message.</span></span>
     
-<span data-ttu-id="0f464-130">frightsCreateSubfolder</span><span class="sxs-lookup"><span data-stu-id="0f464-130">frightsCreateSubfolder</span></span>
+<span data-ttu-id="7b6bb-130">frightsCreateSubfolder</span><span class="sxs-lookup"><span data-stu-id="7b6bb-130">frightsCreateSubfolder</span></span>
   
-> <span data-ttu-id="0f464-131">メンバーは、フォルダーのサブフォルダーを作成できます。</span><span class="sxs-lookup"><span data-stu-id="0f464-131">Member can create subfolders for the folder.</span></span>
+> <span data-ttu-id="7b6bb-131">メンバーは、フォルダーのサブフォルダーを作成できます。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-131">Member can create subfolders for the folder.</span></span>
     
-<span data-ttu-id="0f464-132">frightsOwner</span><span class="sxs-lookup"><span data-stu-id="0f464-132">frightsOwner</span></span>
+<span data-ttu-id="7b6bb-132">frightsOwner</span><span class="sxs-lookup"><span data-stu-id="7b6bb-132">frightsOwner</span></span>
   
-> <span data-ttu-id="0f464-133">メンバーは、フォルダーの以前のすべての権限を持ちます。</span><span class="sxs-lookup"><span data-stu-id="0f464-133">Member has all the previous rights on the folder.</span></span>
+> <span data-ttu-id="7b6bb-133">メンバーは、フォルダーの以前のすべての権限を持ちます。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-133">Member has all the previous rights on the folder.</span></span>
     
-<span data-ttu-id="0f464-134">frightsContact</span><span class="sxs-lookup"><span data-stu-id="0f464-134">frightsContact</span></span>
+<span data-ttu-id="7b6bb-134">frightsContact</span><span class="sxs-lookup"><span data-stu-id="7b6bb-134">frightsContact</span></span>
   
-> <span data-ttu-id="0f464-135">メンバーは、フォルダーの連絡先として表示される自分の名前を持つことができます。</span><span class="sxs-lookup"><span data-stu-id="0f464-135">Member can have your name appear as the contact on the folder.</span></span>
+> <span data-ttu-id="7b6bb-135">メンバーは、フォルダーの連絡先として表示される自分の名前を持つことができます。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-135">Member can have your name appear as the contact on the folder.</span></span>
     
-<span data-ttu-id="0f464-136">frightsVisible</span><span class="sxs-lookup"><span data-stu-id="0f464-136">frightsVisible</span></span>
+<span data-ttu-id="7b6bb-136">frightsVisible</span><span class="sxs-lookup"><span data-stu-id="7b6bb-136">frightsVisible</span></span>
   
-> <span data-ttu-id="0f464-137">メンバーは、フォルダーが存在することを確認できます。</span><span class="sxs-lookup"><span data-stu-id="0f464-137">Member can see that the folder exists.</span></span>
+> <span data-ttu-id="7b6bb-137">メンバーは、フォルダーが存在することを確認できます。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-137">Member can see that the folder exists.</span></span>
     
-<span data-ttu-id="0f464-138">rightsNone</span><span class="sxs-lookup"><span data-stu-id="0f464-138">rightsNone</span></span>
+<span data-ttu-id="7b6bb-138">rightsNone</span><span class="sxs-lookup"><span data-stu-id="7b6bb-138">rightsNone</span></span>
   
-> <span data-ttu-id="0f464-139">メンバーには、フォルダーの権限がありません。</span><span class="sxs-lookup"><span data-stu-id="0f464-139">Member does not have rights on the folder.</span></span>
+> <span data-ttu-id="7b6bb-139">メンバーには、フォルダーの権限がありません。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-139">Member does not have rights on the folder.</span></span>
     
-<span data-ttu-id="0f464-140">rightsReadOnly</span><span class="sxs-lookup"><span data-stu-id="0f464-140">rightsReadOnly</span></span>
+<span data-ttu-id="7b6bb-140">rightsReadOnly</span><span class="sxs-lookup"><span data-stu-id="7b6bb-140">rightsReadOnly</span></span>
   
-> <span data-ttu-id="0f464-141">メンバーは、フォルダー内のメッセージを読み取ることができます。</span><span class="sxs-lookup"><span data-stu-id="0f464-141">Member can read any message in the folder.</span></span>
+> <span data-ttu-id="7b6bb-141">メンバーは、フォルダー内のメッセージを読み取ることができます。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-141">Member can read any message in the folder.</span></span>
     
-<span data-ttu-id="0f464-142">rightsReadWrite</span><span class="sxs-lookup"><span data-stu-id="0f464-142">rightsReadWrite</span></span>
+<span data-ttu-id="7b6bb-142">rightsReadWrite</span><span class="sxs-lookup"><span data-stu-id="7b6bb-142">rightsReadWrite</span></span>
   
-> <span data-ttu-id="0f464-143">メンバーから読み書きできるフォルダー内のメッセージにします。</span><span class="sxs-lookup"><span data-stu-id="0f464-143">Member can read from and write to any message in the folder.</span></span>
+> <span data-ttu-id="7b6bb-143">メンバーから読み書きできるフォルダー内のメッセージにします。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-143">Member can read from and write to any message in the folder.</span></span>
     
-<span data-ttu-id="0f464-144">rightsAll</span><span class="sxs-lookup"><span data-stu-id="0f464-144">rightsAll</span></span>
+<span data-ttu-id="7b6bb-144">rightsAll</span><span class="sxs-lookup"><span data-stu-id="7b6bb-144">rightsAll</span></span>
   
-> <span data-ttu-id="0f464-145">メンバーは、フォルダーの以前のすべての権限を持ちます。</span><span class="sxs-lookup"><span data-stu-id="0f464-145">Member has all the previous rights on the folder.</span></span>
+> <span data-ttu-id="7b6bb-145">メンバーは、フォルダーの以前のすべての権限を持ちます。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-145">Member has all the previous rights on the folder.</span></span>
     
-## <a name="related-resources"></a><span data-ttu-id="0f464-146">関連リソース</span><span class="sxs-lookup"><span data-stu-id="0f464-146">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="7b6bb-146">関連リソース</span><span class="sxs-lookup"><span data-stu-id="7b6bb-146">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="0f464-147">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="0f464-147">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="7b6bb-147">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="7b6bb-147">Protocol specifications</span></span>
 
-<span data-ttu-id="0f464-148">[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="0f464-148">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="7b6bb-148">[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="7b6bb-148">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="0f464-149">関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="0f464-149">Provides references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="7b6bb-149">関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-149">Provides references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="0f464-150">[[MS OXCFOLD]](http://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="0f464-150">[[MS-OXCFOLD]](http://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="7b6bb-150">[[MS OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="7b6bb-150">[[MS-OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="0f464-151">フォルダーの操作を処理します。</span><span class="sxs-lookup"><span data-stu-id="0f464-151">Handles folder operations.</span></span>
+> <span data-ttu-id="7b6bb-151">フォルダーの操作を処理します。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-151">Handles folder operations.</span></span>
     
-<span data-ttu-id="0f464-152">[[MS OXCPERM]](http://msdn.microsoft.com/library/944ddb65-6249-4c34-a46e-363fcd37195e%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="0f464-152">[[MS-OXCPERM]](http://msdn.microsoft.com/library/944ddb65-6249-4c34-a46e-363fcd37195e%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="7b6bb-152">[[MS OXCPERM]](https://msdn.microsoft.com/library/944ddb65-6249-4c34-a46e-363fcd37195e%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="7b6bb-152">[[MS-OXCPERM]](https://msdn.microsoft.com/library/944ddb65-6249-4c34-a46e-363fcd37195e%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="0f464-153">サーバーに格納されているフォルダーのアクセス許可の一覧の取得を処理します。</span><span class="sxs-lookup"><span data-stu-id="0f464-153">Handles the retrieval of folder permission lists that are stored on the server.</span></span>
+> <span data-ttu-id="7b6bb-153">サーバーに格納されているフォルダーのアクセス許可の一覧の取得を処理します。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-153">Handles the retrieval of folder permission lists that are stored on the server.</span></span>
     
-<span data-ttu-id="0f464-154">[[MS OXODLGT]](http://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="0f464-154">[[MS-OXODLGT]](http://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="7b6bb-154">[[MS OXODLGT]](https://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="7b6bb-154">[[MS-OXODLGT]](https://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="0f464-155">接続し、別のユーザーに代わって動作する場合は、デリゲート、およびメッセージと予定表のアイテムとの対話としてメールボックスを構成するためのメソッドを指定します。</span><span class="sxs-lookup"><span data-stu-id="0f464-155">Specifies methods for connecting to and configuring mailboxes as delegates, and interactions with message and calendar items when they act on behalf of another user.</span></span>
+> <span data-ttu-id="7b6bb-155">接続し、別のユーザーに代わって動作する場合は、デリゲート、およびメッセージと予定表のアイテムとの対話としてメールボックスを構成するためのメソッドを指定します。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-155">Specifies methods for connecting to and configuring mailboxes as delegates, and interactions with message and calendar items when they act on behalf of another user.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="0f464-156">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="0f464-156">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="7b6bb-156">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="7b6bb-156">Header files</span></span>
 
-<span data-ttu-id="0f464-157">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="0f464-157">Mapidefs.h</span></span>
+<span data-ttu-id="7b6bb-157">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="7b6bb-157">Mapidefs.h</span></span>
   
-> <span data-ttu-id="0f464-158">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="0f464-158">Provides data type definitions.</span></span>
+> <span data-ttu-id="7b6bb-158">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-158">Provides data type definitions.</span></span>
     
-<span data-ttu-id="0f464-159">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="0f464-159">Mapitags.h</span></span>
+<span data-ttu-id="7b6bb-159">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="7b6bb-159">Mapitags.h</span></span>
   
-> <span data-ttu-id="0f464-160">関連付けられているプロパティとして記載されているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="0f464-160">Contains definitions of properties listed as associated properties.</span></span>
+> <span data-ttu-id="7b6bb-160">関連付けられているプロパティとして記載されているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="7b6bb-160">Contains definitions of properties listed as associated properties.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="0f464-161">関連項目</span><span class="sxs-lookup"><span data-stu-id="0f464-161">See also</span></span>
-
-
-
-[<span data-ttu-id="0f464-162">IExchangeModifyTable : IUnknown</span><span class="sxs-lookup"><span data-stu-id="0f464-162">IExchangeModifyTable : IUnknown</span></span>](iexchangemodifytableiunknown.md)
+## <a name="see-also"></a><span data-ttu-id="7b6bb-161">関連項目</span><span class="sxs-lookup"><span data-stu-id="7b6bb-161">See also</span></span>
 
 
-[<span data-ttu-id="0f464-163">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="0f464-163">MAPI Properties</span></span>](mapi-properties.md)
+
+[<span data-ttu-id="7b6bb-162">IExchangeModifyTable : IUnknown</span><span class="sxs-lookup"><span data-stu-id="7b6bb-162">IExchangeModifyTable : IUnknown</span></span>](iexchangemodifytableiunknown.md)
+
+
+[<span data-ttu-id="7b6bb-163">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="7b6bb-163">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="0f464-164">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="0f464-164">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="7b6bb-164">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="7b6bb-164">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="0f464-165">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="0f464-165">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="7b6bb-165">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="7b6bb-165">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="0f464-166">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="0f464-166">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="7b6bb-166">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="7b6bb-166">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

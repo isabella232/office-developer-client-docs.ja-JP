@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: bd4646d2-8229-499d-91aa-3cbec72b9445
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 6c7942d16cabc61eab55ab145b9c26a1799bbcc4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5024c2f8b88b54051e4b8400f4b3f14374b10c23
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565173"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395939"
 ---
-# <a name="ipersistmessageload"></a><span data-ttu-id="4e55c-103">IPersistMessage::Load</span><span class="sxs-lookup"><span data-stu-id="4e55c-103">IPersistMessage::Load</span></span>
+# <a name="ipersistmessageload"></a><span data-ttu-id="d702e-103">IPersistMessage::Load</span><span class="sxs-lookup"><span data-stu-id="d702e-103">IPersistMessage::Load</span></span>
 
   
   
-<span data-ttu-id="4e55c-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4e55c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="d702e-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d702e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="4e55c-105">指定されたメッセージのフォームが読み込まれます。</span><span class="sxs-lookup"><span data-stu-id="4e55c-105">Loads the form for a specified message.</span></span>
+<span data-ttu-id="d702e-105">指定されたメッセージのフォームが読み込まれます。</span><span class="sxs-lookup"><span data-stu-id="d702e-105">Loads the form for a specified message.</span></span>
   
 ```cpp
 HRESULT Load(
@@ -36,75 +36,75 @@ HRESULT Load(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="4e55c-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e55c-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="d702e-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d702e-106">Parameters</span></span>
 
- <span data-ttu-id="4e55c-107">_pMessageSite_</span><span class="sxs-lookup"><span data-stu-id="4e55c-107">_pMessageSite_</span></span>
+ <span data-ttu-id="d702e-107">_pMessageSite_</span><span class="sxs-lookup"><span data-stu-id="d702e-107">_pMessageSite_</span></span>
   
-> <span data-ttu-id="4e55c-108">[in]読み込まれるフォームのメッセージのサイトへのポインター。</span><span class="sxs-lookup"><span data-stu-id="4e55c-108">[in] A pointer to the message site for the form to be loaded.</span></span>
+> <span data-ttu-id="d702e-108">[in]読み込まれるフォームのメッセージのサイトへのポインター。</span><span class="sxs-lookup"><span data-stu-id="d702e-108">[in] A pointer to the message site for the form to be loaded.</span></span>
     
- <span data-ttu-id="4e55c-109">_pMessage_</span><span class="sxs-lookup"><span data-stu-id="4e55c-109">_pMessage_</span></span>
+ <span data-ttu-id="d702e-109">_pMessage_</span><span class="sxs-lookup"><span data-stu-id="d702e-109">_pMessage_</span></span>
   
-> <span data-ttu-id="4e55c-110">[in]フォームを読み込む必要があるメッセージへのポインター。</span><span class="sxs-lookup"><span data-stu-id="4e55c-110">[in] A pointer to the message for which the form should be loaded.</span></span>
+> <span data-ttu-id="d702e-110">[in]フォームを読み込む必要があるメッセージへのポインター。</span><span class="sxs-lookup"><span data-stu-id="d702e-110">[in] A pointer to the message for which the form should be loaded.</span></span>
     
- <span data-ttu-id="4e55c-111">_ulMessageStatus_</span><span class="sxs-lookup"><span data-stu-id="4e55c-111">_ulMessageStatus_</span></span>
+ <span data-ttu-id="d702e-111">_ulMessageStatus_</span><span class="sxs-lookup"><span data-stu-id="d702e-111">_ulMessageStatus_</span></span>
   
-> <span data-ttu-id="4e55c-112">[in]メッセージの状態に関する情報を提供するメッセージの**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) のプロパティからコピーしたクライアント定義またはプロバイダー定義のフラグのビットマスクです。</span><span class="sxs-lookup"><span data-stu-id="4e55c-112">[in] A bitmask of client-defined or provider-defined flags, copied from the message's **PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) property, that provide information about the state of the message.</span></span>
+> <span data-ttu-id="d702e-112">[in]メッセージの状態に関する情報を提供するメッセージの**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) のプロパティからコピーしたクライアント定義またはプロバイダー定義のフラグのビットマスクです。</span><span class="sxs-lookup"><span data-stu-id="d702e-112">[in] A bitmask of client-defined or provider-defined flags, copied from the message's **PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) property, that provide information about the state of the message.</span></span>
     
- <span data-ttu-id="4e55c-113">_ulMessageFlags_</span><span class="sxs-lookup"><span data-stu-id="4e55c-113">_ulMessageFlags_</span></span>
+ <span data-ttu-id="d702e-113">_ulMessageFlags_</span><span class="sxs-lookup"><span data-stu-id="d702e-113">_ulMessageFlags_</span></span>
   
-> <span data-ttu-id="4e55c-114">[in]メッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) のプロパティからコピーして、フラグのビットマスクを提供するさらに、メッセージの状態に関する情報です。</span><span class="sxs-lookup"><span data-stu-id="4e55c-114">[in] A bitmask of flags, copied from the message's **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) property, that provide further information about the state of the message.</span></span>
+> <span data-ttu-id="d702e-114">[in]メッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) のプロパティからコピーして、フラグのビットマスクを提供するさらに、メッセージの状態に関する情報です。</span><span class="sxs-lookup"><span data-stu-id="d702e-114">[in] A bitmask of flags, copied from the message's **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) property, that provide further information about the state of the message.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="4e55c-115">�߂�l</span><span class="sxs-lookup"><span data-stu-id="4e55c-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d702e-115">戻り値</span><span class="sxs-lookup"><span data-stu-id="d702e-115">Return value</span></span>
 
-<span data-ttu-id="4e55c-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="4e55c-116">S_OK</span></span> 
+<span data-ttu-id="d702e-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="d702e-116">S_OK</span></span> 
   
-> <span data-ttu-id="4e55c-117">フォームが正常に読み込まれました。</span><span class="sxs-lookup"><span data-stu-id="4e55c-117">The form was successfully loaded.</span></span>
+> <span data-ttu-id="d702e-117">フォームが正常に読み込まれました。</span><span class="sxs-lookup"><span data-stu-id="d702e-117">The form was successfully loaded.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="4e55c-118">注釈</span><span class="sxs-lookup"><span data-stu-id="4e55c-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d702e-118">備考</span><span class="sxs-lookup"><span data-stu-id="d702e-118">Remarks</span></span>
 
-<span data-ttu-id="4e55c-119">フォームの閲覧者は、既存のメッセージのフォームをロードする**IPersistMessage::Load**メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="4e55c-119">Form viewers call the **IPersistMessage::Load** method to load a form for an existing message.</span></span> 
+<span data-ttu-id="d702e-119">フォームの閲覧者は、既存のメッセージのフォームをロードする**IPersistMessage::Load**メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="d702e-119">Form viewers call the **IPersistMessage::Load** method to load a form for an existing message.</span></span> 
   
-## <a name="notes-to-implementers"></a><span data-ttu-id="4e55c-120">実装者へのメモ</span><span class="sxs-lookup"><span data-stu-id="4e55c-120">Notes to implementers</span></span>
+## <a name="notes-to-implementers"></a><span data-ttu-id="d702e-120">実装者へのメモ</span><span class="sxs-lookup"><span data-stu-id="d702e-120">Notes to implementers</span></span>
 
- <span data-ttu-id="4e55c-121">フォームが状態は、次のいずれかである場合にのみ、**ロード**が呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="4e55c-121">**Load** is called only when a form is in one of the following states:</span></span> 
+ <span data-ttu-id="d702e-121">フォームが状態は、次のいずれかである場合にのみ、**ロード**が呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="d702e-121">**Load** is called only when a form is in one of the following states:</span></span> 
   
-- [<span data-ttu-id="4e55c-122">初期化されていません</span><span class="sxs-lookup"><span data-stu-id="4e55c-122">Uninitialized</span></span>](uninitialized-state.md)
+- [<span data-ttu-id="d702e-122">初期化されていません</span><span class="sxs-lookup"><span data-stu-id="d702e-122">Uninitialized</span></span>](uninitialized-state.md)
     
-- [<span data-ttu-id="4e55c-123">HandsOffAfterSave</span><span class="sxs-lookup"><span data-stu-id="4e55c-123">HandsOffAfterSave</span></span>](handsoffaftersave-state.md)
+- [<span data-ttu-id="d702e-123">HandsOffAfterSave</span><span class="sxs-lookup"><span data-stu-id="d702e-123">HandsOffAfterSave</span></span>](handsoffaftersave-state.md)
     
-- [<span data-ttu-id="4e55c-124">HandsOffFromNormal</span><span class="sxs-lookup"><span data-stu-id="4e55c-124">HandsOffFromNormal</span></span>](handsofffromnormal-state.md)
+- [<span data-ttu-id="d702e-124">HandsOffFromNormal</span><span class="sxs-lookup"><span data-stu-id="d702e-124">HandsOffFromNormal</span></span>](handsofffromnormal-state.md)
     
-<span data-ttu-id="4e55c-125">フォーム ビューアーは、フォームが他の状態では、**ロード**を呼び出し、メソッドは E_UNEXPECTED を返します。</span><span class="sxs-lookup"><span data-stu-id="4e55c-125">If a form viewer calls **Load** while the form is in any other state, the method returns E_UNEXPECTED.</span></span> 
+<span data-ttu-id="d702e-125">フォーム ビューアーは、フォームが他の状態では、**ロード**を呼び出し、メソッドは E_UNEXPECTED を返します。</span><span class="sxs-lookup"><span data-stu-id="d702e-125">If a form viewer calls **Load** while the form is in any other state, the method returns E_UNEXPECTED.</span></span> 
   
-<span data-ttu-id="4e55c-126">**負荷**に渡される 1 つは別の作業中のメッセージ、サイトへの参照は、フォームに場合、は、使用できなくするために元のサイトをリリースします。</span><span class="sxs-lookup"><span data-stu-id="4e55c-126">If your form has a reference to an active message site other than the one that is passed into **Load**, release the original site because it will no longer be used.</span></span> <span data-ttu-id="4e55c-127">_PMessageSite_と_pMessage_パラメーターからは、サイトのメッセージとメッセージへのポインターを格納し、その参照カウントをインクリメントするのには、両方のオブジェクトの[IUnknown::AddRef](http://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="4e55c-127">Store the pointers to the message site and message from the  _pMessageSite_ and  _pMessage_ parameters and call both objects' [IUnknown::AddRef](http://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx) methods to increment their reference counts.</span></span> 
+<span data-ttu-id="d702e-126">**負荷**に渡される 1 つは別の作業中のメッセージ、サイトへの参照は、フォームに場合、は、使用できなくするために元のサイトをリリースします。</span><span class="sxs-lookup"><span data-stu-id="d702e-126">If your form has a reference to an active message site other than the one that is passed into **Load**, release the original site because it will no longer be used.</span></span> <span data-ttu-id="d702e-127">_PMessageSite_と_pMessage_パラメーターからは、サイトのメッセージとメッセージへのポインターを格納し、その参照カウントをインクリメントするのには、両方のオブジェクトの[IUnknown::AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="d702e-127">Store the pointers to the message site and message from the  _pMessageSite_ and  _pMessage_ parameters and call both objects' [IUnknown::AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx) methods to increment their reference counts.</span></span> 
   
-<span data-ttu-id="4e55c-128">**AddRef**が完了したら、フォームに、 _ulMessageStatus_と_ulMessageFlags_のパラメーターのプロパティを格納します。</span><span class="sxs-lookup"><span data-stu-id="4e55c-128">After **AddRef** has completed, store the properties from the  _ulMessageStatus_ and  _ulMessageFlags_ parameters into the form.</span></span> <span data-ttu-id="4e55c-129">フォームを[通常](normal-state.md)の状態を表示するには、前に移行し、 [IMAPIViewAdviseSink::OnNewMessage](imapiviewadvisesink-onnewmessage.md)メソッドを呼び出すことによって登録されている視聴者に通知します。</span><span class="sxs-lookup"><span data-stu-id="4e55c-129">Transition the form to its [Normal](normal-state.md) state before displaying it, and notify registered viewers by calling their [IMAPIViewAdviseSink::OnNewMessage](imapiviewadvisesink-onnewmessage.md) methods.</span></span> 
+<span data-ttu-id="d702e-128">**AddRef**が完了したら、フォームに、 _ulMessageStatus_と_ulMessageFlags_のパラメーターのプロパティを格納します。</span><span class="sxs-lookup"><span data-stu-id="d702e-128">After **AddRef** has completed, store the properties from the  _ulMessageStatus_ and  _ulMessageFlags_ parameters into the form.</span></span> <span data-ttu-id="d702e-129">フォームを[通常](normal-state.md)の状態を表示するには、前に移行し、 [IMAPIViewAdviseSink::OnNewMessage](imapiviewadvisesink-onnewmessage.md)メソッドを呼び出すことによって登録されている視聴者に通知します。</span><span class="sxs-lookup"><span data-stu-id="d702e-129">Transition the form to its [Normal](normal-state.md) state before displaying it, and notify registered viewers by calling their [IMAPIViewAdviseSink::OnNewMessage](imapiviewadvisesink-onnewmessage.md) methods.</span></span> 
   
-<span data-ttu-id="4e55c-130">エラーが発生しない場合は、S_OK を返します。</span><span class="sxs-lookup"><span data-stu-id="4e55c-130">If no errors occur, return S_OK.</span></span> 
+<span data-ttu-id="d702e-130">エラーが発生しない場合は、S_OK を返します。</span><span class="sxs-lookup"><span data-stu-id="d702e-130">If no errors occur, return S_OK.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="4e55c-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="4e55c-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d702e-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="d702e-131">See also</span></span>
 
 
 
-[<span data-ttu-id="4e55c-132">PidTagMessageFlags 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="4e55c-132">PidTagMessageFlags Canonical Property</span></span>](pidtagmessageflags-canonical-property.md)
+[<span data-ttu-id="d702e-132">PidTagMessageFlags 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="d702e-132">PidTagMessageFlags Canonical Property</span></span>](pidtagmessageflags-canonical-property.md)
   
-[<span data-ttu-id="4e55c-133">PidTagMessageStatus 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="4e55c-133">PidTagMessageStatus Canonical Property</span></span>](pidtagmessagestatus-canonical-property.md)
+[<span data-ttu-id="d702e-133">PidTagMessageStatus 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="d702e-133">PidTagMessageStatus Canonical Property</span></span>](pidtagmessagestatus-canonical-property.md)
   
-[<span data-ttu-id="4e55c-134">IPersistMessage : IUnknown</span><span class="sxs-lookup"><span data-stu-id="4e55c-134">IPersistMessage : IUnknown</span></span>](ipersistmessageiunknown.md)
+[<span data-ttu-id="d702e-134">IPersistMessage : IUnknown</span><span class="sxs-lookup"><span data-stu-id="d702e-134">IPersistMessage : IUnknown</span></span>](ipersistmessageiunknown.md)
 
 
-[<span data-ttu-id="4e55c-135">Uninitialized 状態</span><span class="sxs-lookup"><span data-stu-id="4e55c-135">Uninitialized State</span></span>](uninitialized-state.md)
+[<span data-ttu-id="d702e-135">Uninitialized 状態</span><span class="sxs-lookup"><span data-stu-id="d702e-135">Uninitialized State</span></span>](uninitialized-state.md)
   
-[<span data-ttu-id="4e55c-136">HandsOffAfterSave 状態</span><span class="sxs-lookup"><span data-stu-id="4e55c-136">HandsOffAfterSave State</span></span>](handsoffaftersave-state.md)
+[<span data-ttu-id="d702e-136">HandsOffAfterSave 状態</span><span class="sxs-lookup"><span data-stu-id="d702e-136">HandsOffAfterSave State</span></span>](handsoffaftersave-state.md)
   
-[<span data-ttu-id="4e55c-137">HandsOffFromNormal 状態</span><span class="sxs-lookup"><span data-stu-id="4e55c-137">HandsOffFromNormal State</span></span>](handsofffromnormal-state.md)
+[<span data-ttu-id="d702e-137">HandsOffFromNormal 状態</span><span class="sxs-lookup"><span data-stu-id="d702e-137">HandsOffFromNormal State</span></span>](handsofffromnormal-state.md)
   
-[<span data-ttu-id="4e55c-138">フォームの状態</span><span class="sxs-lookup"><span data-stu-id="4e55c-138">Form States</span></span>](form-states.md)
+[<span data-ttu-id="d702e-138">フォームの状態</span><span class="sxs-lookup"><span data-stu-id="d702e-138">Form States</span></span>](form-states.md)
 
 
-[<span data-ttu-id="4e55c-139">機能として</span><span class="sxs-lookup"><span data-stu-id="4e55c-139">IPersistStorage::Load</span></span>](http://msdn.microsoft.com/library/34379b8d-4e00-49cd-9fd1-65f88746c61a.aspx)
+[<span data-ttu-id="d702e-139">機能として</span><span class="sxs-lookup"><span data-stu-id="d702e-139">IPersistStorage::Load</span></span>](https://msdn.microsoft.com/library/34379b8d-4e00-49cd-9fd1-65f88746c61a.aspx)
   
-[<span data-ttu-id="4e55c-140">IPersistStream::Load</span><span class="sxs-lookup"><span data-stu-id="4e55c-140">IPersistStream::Load</span></span>](http://msdn.microsoft.com/library/351e1187-9959-4542-8778-925457c3b8e3.aspx)
+[<span data-ttu-id="d702e-140">IPersistStream::Load</span><span class="sxs-lookup"><span data-stu-id="d702e-140">IPersistStream::Load</span></span>](https://msdn.microsoft.com/library/351e1187-9959-4542-8778-925457c3b8e3.aspx)
   
-[<span data-ttu-id="4e55c-141">IPersistFile::Load</span><span class="sxs-lookup"><span data-stu-id="4e55c-141">IPersistFile::Load</span></span>](http://msdn.microsoft.com/library/8391aa5c-fe6e-4b03-9eef-7958f75910a5.aspx)
+[<span data-ttu-id="d702e-141">IPersistFile::Load</span><span class="sxs-lookup"><span data-stu-id="d702e-141">IPersistFile::Load</span></span>](https://msdn.microsoft.com/library/8391aa5c-fe6e-4b03-9eef-7958f75910a5.aspx)
 
