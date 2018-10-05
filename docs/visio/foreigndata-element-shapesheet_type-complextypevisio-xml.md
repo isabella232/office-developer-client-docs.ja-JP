@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 59db25bc-0283-6f56-0aa9-9be98a3e9041
 description: Windows メタファイル、ビットマップ、または OLE データなどの画像データの MIME (多目的インターネット メール拡張機能) のエンコードされた BLOB が含まれています。
-ms.openlocfilehash: d548ce8a6b05f8a9a104aee96c0982c6dbccc417
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cce7665230fb9e68bf37002e1953944a5b8f8082
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805445"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382682"
 ---
 # <a name="foreigndata-element-shapesheettype-complextype-visio-xml"></a>ForeignData 要素 (ShapeSheet_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ Windows メタファイル、ビットマップ、または OLE データなど�
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[ForeignData_Type](foreigndata_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml のページで、マスターの # .xml  <br/> |
    

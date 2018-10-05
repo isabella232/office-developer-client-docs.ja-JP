@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.assetid: e0c04f98-3d66-4ab5-ba05-69f9df539fcf
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 23c43586157806c603ad7fd8c146270a9d71170a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fe14f6ca101e6a546f99989ecc87b0c516ee5df4
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563787"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382660"
 ---
 # <a name="pidtagextendedfolderflags-canonical-property"></a>PidTagExtendedFolderFlags 標準プロパティ
  
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 フォルダーの拡張のフラグが含まれています。
   
@@ -30,9 +30,9 @@ ms.locfileid: "22563787"
 |関連するプロパティ:  <br/> |PR_EXTENDED_FOLDER_FLAGS  <br/> |
 |識別子:  <br/> |0x36DA  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |MAPI のコンテナー  <br/> |
+|エリア:  <br/> |MAPI のコンテナー  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、エンコードされたサブ フォルダーのプロパティを含むバイナリ ストリームです。 それは一連の可変長サブ項目として書式設定されます。 サブ項目の最初の 8 ビットでは、[ID] フィールドは、サブ項目を表すフラグの種類を示します。 2 つ目の 8 ビットは、次のデータのバイト数です。
   
@@ -68,15 +68,15 @@ ms.locfileid: "22563787"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCFG]](http://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
+[[MS OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
   
 > 場所と共有カテゴリのリストおよび作業時間など、クライアントとサーバーの構成データのプロパティを指定します。
     
-[[MS OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
+[[MS OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
   
 > プロパティや検索フォルダーの一覧の構成を操作するための動作を指定します。
     

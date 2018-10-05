@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d16e1adf-c911-427e-9c98-678a303e6791
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5daf8c1ee249cfc7fb1bc1ffb6dfc68b400fe953
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8f8706ec3db36cddbe7be7420ba27683c190cd43
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571130"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382499"
 ---
 # <a name="pidnamecrossreference-canonical-property"></a>PidNameCrossReference 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 [RFC3282] Xref ヘッダー フィールドの値が含まれています。
   
@@ -33,9 +33,9 @@ ms.locfileid: "22571130"
 |プロパティを設定します。  <br/> |PS_INTERNET_HEADERS  <br/> |
 |プロパティ名:  <br/> |相互参照  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |メール  <br/> |
+|エリア:  <br/> |メール  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティの値を設定するには、多目的インターネット メッセージの拡張機能 (MIME) クライアントは、相互参照のヘッダー フィールドに目的の値を記述する必要があります。 MIME のリーダーは、このプロパティの値を相互参照のヘッダー フィールドの値をコピーする必要があります。
   
@@ -43,11 +43,11 @@ ms.locfileid: "22571130"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCMAIL]](http://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
 > メッセージ オブジェクト インターネット標準の電子メールの表記規則からに変換します。
     

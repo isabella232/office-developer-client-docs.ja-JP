@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 788227e9-9bcf-465c-886c-746dbc665230
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f1b98b12ac573165495de6938dd4bcd7e22a084b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a00517dfa87d739f19c19d0b02ab8437cae698d5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588462"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382555"
 ---
 # <a name="pidlidoldwhenendwhole-canonical-property"></a>PidLidOldWhenEndWhole 標準プロパティ
 
@@ -35,7 +35,7 @@ ms.locfileid: "22588462"
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
 |エリア:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティが必要ではありません。
   
@@ -43,11 +43,11 @@ ms.locfileid: "22588462"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
     

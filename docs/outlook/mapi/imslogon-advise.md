@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a3c5d937-642b-463b-b5a0-5d099e651895
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9cd0442a715fb5441ab8efefb9574f09f2e2c1ff
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: abe4867b965f05e781f931d2e72920474d007d78
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587860"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382758"
 ---
 # <a name="imslogonadvise"></a>IMSLogon::Advise
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージ ・ ストア内の変更についての通知のメッセージ ストア プロバイダー オブジェクトに登録します。 メッセージ ・ ストアに登録済みのオブジェクトの変更に関する通知が送付されます。
   
@@ -71,7 +71,7 @@ HRESULT Advise(
   
 > [out]成功時に、通知の登録のための接続数を格納する変数へのポインター。 接続数は、0 以外の値である必要があります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -81,13 +81,13 @@ MAPI_E_NO_SUPPORT
   
 > MAPI または 1 つまたは複数のサービス プロバイダーによっては、操作はサポートされていません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 メッセージ ストア プロバイダーは、通知のコールバック オブジェクトを登録するのには**IMSLogon::Advise**メソッドを実装します。 指定したオブジェクトに変更が発生するたびに、プロバイダーはどのようなイベント マスク ビットが設定されて、 _ulEventMask_パラメーターであり、したがってどのような種類の変更が発生したを確認します。 ビットが設定されている場合、プロバイダーはイベントを通知する_lpAdviseSink_パラメーターで指定されたアドバイズ シンク オブジェクトの[IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出します。 **OnNotify**ルーチンに渡された通知の構造体のデータでは、イベントについて説明します。 
   
 **OnNotify**への呼び出しは、オブジェクトを変更するための呼び出し時に、後でいつでもでも発生します。 複数の実行スレッドをサポートしているシステムでは、任意のスレッドで**OnNotify**への呼び出しが発生します。 **OnNotify**使用時に発生する可能性があります呼び出しを安全に処理するには、クライアント アプリケーションは、 [HrThisThreadAdviseSink](hrthisthreadadvisesink.md)関数を使用してください。 
   
-_LpAdviseSink_へのポインターのコピーを保持する**アドバイス**のニーズを実装しているメッセージ ストア プロバイダーのシンク オブジェクトの案内通知を行うには、これを行うには、プロバイダーは、 [IMSLogon::Unadvise](imslogon-unadvise.md)メソッドを呼び出して、通知の登録をキャンセルするまで、オブジェクトを指すポインターを維持するためにアドバイズ シンクの[IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出します。 **アドバイズ**実装する必要があります通知の登録に接続番号を割り当てるし、 _lpulConnection_パラメーターに返す前に、この接続の数で**AddRef**を呼び出します。 **Unadvise**が呼び出されるまでに接続の数を解放する必要があります、登録がキャンセルされると、前に、サービス プロバイダーは、アドバイズ シンク オブジェクトをリリースできます。 
+_LpAdviseSink_へのポインターのコピーを保持する**アドバイス**のニーズを実装しているメッセージ ストア プロバイダーのシンク オブジェクトの案内通知を行うには、これを行うには、プロバイダーは、 [IMSLogon::Unadvise](imslogon-unadvise.md)メソッドを呼び出して、通知の登録をキャンセルするまで、オブジェクトを指すポインターを維持するためにアドバイズ シンクの[IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出します。 **アドバイズ**実装する必要があります通知の登録に接続番号を割り当てるし、 _lpulConnection_パラメーターに返す前に、この接続の数で**AddRef**を呼び出します。 **Unadvise**が呼び出されるまでに接続の数を解放する必要があります、登録がキャンセルされると、前に、サービス プロバイダーは、アドバイズ シンク オブジェクトをリリースできます。 
   
 **Advise**への呼び出しが成功した後、 **Unadvise**と呼ばれる前に、アドバイズ シンク オブジェクトを解放するためプロバイダーを準備する必要があります。 そのため、プロバイダーする必要がありますリリースのアドバイズ シンク オブジェクト**アドバイズ**が返されると、それの特定の長期的な使用がある場合を除き、します。 
   

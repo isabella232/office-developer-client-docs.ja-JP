@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: db6292c7-9f4c-c287-803b-64fa41c0a269
 description: 図面に対する図の検証に関する情報を格納します。
-ms.openlocfilehash: f4a7c0893baebb09dccd743c3006a5512dec533d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7e40cd3a79922b56800cbb566a0d88de23829cc0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806744"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382359"
 ---
 # <a name="validation-element-visio-xml"></a>検証要素 ' Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19806744"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Validation_Type](validation_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |validation.xml  <br/> |
    

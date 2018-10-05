@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: d7ec5c79-1287-4364-b5e5-5d1d6f0ea0f1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: deb215e6c54a08a46f071158d2bf2422561d7c80
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2688e1764b6e4e31a47aeee306987caa66c709a6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580216"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382716"
 ---
 # <a name="pidtagenddate-canonical-property"></a>PidTagEndDate 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 終了日と終了スケジュールのアプリケーションによって管理されるように予定の時間が含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22580216"
 |関連するプロパティ:  <br/> |PR_END_DATE  <br/> |
 |識別子:  <br/> |0x0061  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
-|領域:  <br/> |MAPI の封筒  <br/> |
+|エリア:  <br/> |MAPI の封筒  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 アプリケーションをスケジュール設定必要があります ([PidTagStartDate](pidtagstartdate-canonical-property.md))、**単に PR_START_DATE**およびこのプロパティの両方の会議出席依頼を送信するときです。 
   
@@ -42,11 +42,11 @@ ms.locfileid: "22580216"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
     

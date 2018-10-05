@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: c611640b-1a70-4a76-b7ff-c8ad8d320892
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7019ef5e23d0325d43b17009137dd29a2ec95c0e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 22a1a62f4ee6ff492f36eb18e2d92c8d70febd72
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593537"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382611"
 ---
 # <a name="pidtagaddressbookhierarchicalrootdepartment"></a>PidTagAddressBookHierarchicalRootDepartment
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
  (HAB) の階層構造のアドレスのルートの識別名 (DN) が含まれています。 
   
@@ -33,9 +33,9 @@ ms.locfileid: "22593537"
 |プロパティを設定します。  <br/> |アドレス帳  <br/> |
 |長い ID (LID):  <br/> |0x8C98  <br/> |
 |データの種類 :   <br/> |PT_STRING8  <br/> |
-|領域:  <br/> |Exchange アドレス帳  <br/> |
+|エリア:  <br/> |Exchange アドレス帳  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 これは、グローバル アドレス一覧 (GAL) コンテナーのプロパティであり、階層的なアドレスのルートの識別名を表します。 このプロパティは、Active Directory ドメイン サービス (AD DS) しないとオフライン アドレス帳に存在だけです。 呼び出し元は、リモート プロシージャ呼び出しを避けるために GetProps 呼び出しに MAPI_CACHE_ONLY を渡す必要があります。 これが存在しない場合、呼び出し元は、ルート部署が見つかりません PT_OBJECT の種類は、PR_EMS_AB_HAB_ROOT_DEPARTMENT を使用する必要があります。 
   
@@ -55,7 +55,7 @@ ms.locfileid: "22593537"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Microsoft Exchange Server プロトコルの仕様への参照を提供します。
     

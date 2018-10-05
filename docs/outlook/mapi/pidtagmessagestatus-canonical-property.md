@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: e479e863-a8de-4f7e-9eae-3f721cd16e9a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 626bd945851155c20850ee7f367ec6073ad57bc1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dacd759d978394a5f4ed028915ed1c717bf6efe5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570388"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382807"
 ---
 # <a name="pidtagmessagestatus-canonical-property"></a>PidTagMessageStatus 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 コンテンツ テーブル内のメッセージの状態を定義するフラグの 32 ビットのビットマップが含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22570388"
 |関連するプロパティ:  <br/> |PR_MSG_STATUS  <br/> |
 |識別子:  <br/> |0x0E17  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |メッセージ全般  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 コンテンツ テーブルと 1 つまたは複数の検索結果のテーブルにメッセージが存在し、メッセージの各インスタンスが別の状態を持つことができます。 このプロパティと見なすことが、メッセージ、内容のテーブル内の列のプロパティです。 
   
@@ -84,11 +84,11 @@ MSGSTATUS_TAGGED
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[MS OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
 > サーバーとクライアントの間のメッセージングのオブジェクト データの同期を処理します。
     

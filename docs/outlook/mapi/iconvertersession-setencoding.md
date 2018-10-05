@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: a9624d3f-a636-0267-5cbd-de0db42f9c22
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3edcb422eb0e3dd415d49c5e014c8b69095e7ec1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5a81e04d112e0adf201dcacf03673daac77a04ab
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577206"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382422"
 ---
 # <a name="iconvertersessionsetencoding"></a>IConverterSession::SetEncoding
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 変換時に使用するエンコーディングを初期化します。
   
@@ -35,7 +35,7 @@ HRESULT IConverterSession:: SetEncoding (
 
 _et_
   
-> ( [ENCODINGTYPE](http://msdn.microsoft.com/en-us/library/aa374936%28VS.85%29.aspx) ) の値です。 次の値のみがサポートされています。 
+> ( [ENCODINGTYPE](https://msdn.microsoft.com/library/aa374936%28VS.85%29.aspx) ) の値です。 次の値のみがサポートされています。 
     
    - IET_BASE64
    - IET_UUENCODE
@@ -49,17 +49,17 @@ E_INVALIDARG
   
 > 渡されるエンコードの種類が無効でした。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)を使用して変換を実行する前に、 **SetEncoding**を呼び出します。 
   
 メール アイテムの最も外側のメッセージの本文のみのエンコーディングを設定するのにには、 **SetEncoding**を使用します。 Microsoft Outlook 2010 と Microsoft Outlook 2013 は、個々 の添付ファイルのエンコーディングを選択します。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
 |MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI では、MimeToMAPI を使用して、MAPI メッセージを EML ファイルに変換します。  <br/> |
 |MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI では、MAPIToMIMEStm を使用して、MAPI メッセージを EML ファイルに変換します。  <br/> |

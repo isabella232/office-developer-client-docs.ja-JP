@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 75113097-b3ae-4d20-9796-85c62a592ef0
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5127f5aef50b1040b3e6f4bc644395f2af7555cb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c226fe79fd002cda3c557fc8416c25f98ad33626
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563542"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382877"
 ---
 # <a name="read-and-parse-a-recurrence-pattern"></a>読み取り、定期的なパターンの解析
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 読み取り、予定の定期的なパターンを解析するのには、MAPI を使用できます。
   
@@ -29,7 +29,7 @@ ms.locfileid: "22563542"
     
 2. 名前付きプロパティの**dispidApptRecur** ([PidLidAppointmentRecur の標準的なプロパティ](pidlidappointmentrecur-canonical-property.md)) を取得します。 名前付きプロパティを取得する方法の詳細については、 [MAPI 名前付きプロパティ](mapi-named-properties.md)を参照してください。
     
-3. 予定の定期的なパターンの構造を読み取るには、 [[MS OXOCAL]](http://msdn.microsoft.com/en-us/library/cc425490%28EXCHG.80%29.aspx)の指示に従います。 
+3. 予定の定期的なパターンの構造を読み取るには、 [[MS OXOCAL]](https://msdn.microsoft.com/library/cc425490%28EXCHG.80%29.aspx)の指示に従います。 
     
 MFCMAPI 参照アプリケーションの最後の手順を説明する、 `BinToAppointmentRecurrencePatternStruct` MFCMapi プロジェクトの InterpretProp2.cpp のソース ファイル内の関数です。 `BinToAppointmentRecurrencePatternStruct`関数のパラメーターとしてのメモリ内のバッファーにポインターを取得します。 MFCMAPI アプリケーションは、最初に名前付きプロパティ、プロパティ タグに、 [IMAPIProp::GetProps](imapiprop-getprops.md)メソッドを使用してプロパティの値を要求することによって**dispidApptRecur**をマップすることによって、このバッファーを取得します。 プロパティが**GetProps**メソッドを使用して取得するのには大きすぎる場合は、MFCMAPI は[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを使用してプロパティを取得するためにストリームのインタ フェースを開きます。 MFCMAPI アプリケーションは、バッファーを構築するのには、ストリームからデータを読み取ります。 
   
@@ -212,5 +212,5 @@ AppointmentRecurrencePatternStruct* BinToAppointmentRecurrencePatternStruct(ULON
 
 ## <a name="see-also"></a>関連項目
 
-- [MAPI を使用して Outlook 2007 のアイテムを作成するには](http://msdn.microsoft.com/en-us/library/cc678348%28office.12%29.aspx)
+- [MAPI を使用して Outlook 2007 のアイテムを作成するには](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)
 
