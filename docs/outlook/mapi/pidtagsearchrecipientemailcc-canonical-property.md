@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 38fe217d-cf2e-51de-c97a-acb015129fd3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6ac54e5a17c17ea36ededd311d55c52ece0c184e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 03501e14740d7b27bd54d761ae701e8863ad79dd
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572607"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392838"
 ---
 # <a name="pidtagsearchrecipientemailcc-canonical-property"></a>PidTagSearchRecipientEmailCc 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 照会中の電子メール アドレスまたはストア内のメッセージの [ **CC** ] 行でアドレス指定された受信者の表示名の一覧で、Unicode 文字列が含まれています。 
   
@@ -30,7 +30,7 @@ ms.locfileid: "22572607"
 |関連するプロパティ:  <br/> |PR_SEARCH_RECIP_EMAIL_CC_W  <br/> |
 |識別子:  <br/> |0x0EA7  <br/> |
 |プロパティの種類:  <br/> |PT_UNICODE  <br/> |
-|領域:  <br/> |検索  <br/> |
+|エリア:  <br/> |検索  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
@@ -39,11 +39,11 @@ ms.locfileid: "22572607"
   
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Microsoft Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
+[[MS OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
   
 > プロパティや検索フォルダーの一覧の構成を操作するための動作を指定します。
     

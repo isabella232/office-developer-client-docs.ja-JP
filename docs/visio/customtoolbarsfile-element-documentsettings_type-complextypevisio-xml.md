@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: c9789239-a919-97f6-8109-126bb1038be6
 description: ユーザー設定ツールバーおよびドキュメントのステータス バーを定義する Microsoft Visio ユーザー インターフェイス (.vsu) ファイルの名前が含まれています。
-ms.openlocfilehash: 46abc567d2135815a82b4efec47a7bd77d0763cf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3744caeb09e1fe865c9e669b9cacfada4cbef1c7
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805155"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392908"
 ---
 # <a name="customtoolbarsfile-element-documentsettingstype-complextype-visio-xml"></a>CustomToolbarsFile 要素 (DocumentSettings_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805155"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[CustomToolbarsFile_Type](customtoolbarsfile_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |document.xml  <br/> |
    

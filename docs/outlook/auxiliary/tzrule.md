@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 75ed353c-7d3e-e148-4057-715e82a0f32c
 description: 夏時間の開始時とでそのタイム ゾーン規則最初が発効した年のタイム ゾーン規則の情報を指定します。
-ms.openlocfilehash: 77d56d238d959992bfadd2d8c143391ca6fa4d5b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 71ede7c0061a058c2dd85c7b9b36c42583a6bb84
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799592"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392698"
 ---
 # <a name="tzrule"></a>TZRULE
 
@@ -36,7 +36,7 @@ _wFlags_
     
    - **TZRULE_FLAG_EFFECTIVE_TZREG** -現在使用すると、ルールを識別します。 1 つのルールは、有効なルールとしてマークできます。 他のすべての規則は、比較目的でのみです。 
     
-   - **TZRULE_FLAG_RECUR_CURRENT_TZREG**などの定期的な会議は、 [PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)のルールに一致するルールを識別します。 これになる場合は、新しいより包括的なプロパティに注意してください、古いバージョンのクライアントで**PidLidTimeZoneStruct**が大幅に変更されているかどうかを検出するために使用できます。 
+   - **TZRULE_FLAG_RECUR_CURRENT_TZREG**などの定期的な会議は、 [PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)のルールに一致するルールを識別します。 これになる場合は、新しいより包括的なプロパティに注意してください、古いバージョンのクライアントで**PidLidTimeZoneStruct**が大幅に変更されているかどうかを検出するために使用できます。 
     
 _stStart_
   
@@ -46,7 +46,7 @@ _TZReg_
   
 > タイム ゾーン規則のタイム ゾーン情報。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 この構造体は、タイム ゾーン規則が有効になるときを示す追加情報を提供することによって[TZREG](tzreg.md)を補強します。 
   

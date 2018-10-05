@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 021536b9-6724-4b8a-35c2-966e456e5232
 description: X 座標または y 座標、スプラインの 2 番目の制御点、2 番目のノット、最初のノット、最後のノット、またはスプラインの角度が含まれています。
-ms.openlocfilehash: ed9c13d3ff376f1a13f17165c737a0a9f186d572
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d2e12eba831dafb9a79b9f76638a0bdb23671ce9
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804967"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392026"
 ---
 # <a name="cell-element-splinestart-row-visio-xml"></a>セル要素 ([a 行) ('Visio XML')
 
@@ -23,7 +23,7 @@ X 座標または y 座標、スプラインの 2 番目の制御点、2 番目�
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml をマスター、# .xml のページ  <br/> |
    
@@ -60,7 +60,7 @@ X 座標または y 座標、スプラインの 2 番目の制御点、2 番目�
 |U  <br/> |xsd:string  <br/> |省略可能  <br/> |既定の測定単位を表しますが、DL です。  <br/> |セルの単位です。  <br/> |
 |V  <br/> |xsd:string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプ シート セルの値です。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 この**セル**要素の**N**属性は、限られた一連のシェイプ シートのセルに対応する値のいずれかである必要があります。 この**セル**要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   

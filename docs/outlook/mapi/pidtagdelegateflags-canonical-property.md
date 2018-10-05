@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 3a504594-204c-472c-8be7-dca154c94ea2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d43ec0bd2978c64e3a5ceb635f0dcda57de01cfd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 20ffc6f7f4d21f980e5f0f387464430ba187192a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590737"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392278"
 ---
 # <a name="pidtagdelegateflags-canonical-property"></a>PidTagDelegateFlags 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 代理人が代理人の秘密のメッセージ オブジェクトを表示するかを指定します。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22590737"
 |関連するプロパティ:  <br/> |PR_DELEGATE_FLAGS  <br/> |
 |識別子:  <br/> |0x686B  <br/> |
 |データの種類 :   <br/> |PT_MV_LONG  <br/> |
-|領域:  <br/> |クラスによって定義されたメッセージ送信できます。  <br/> |
+|エリア:  <br/> |クラスによって定義されたメッセージ送信できます。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティの各エントリを次の値のいずれかに設定する必要があります。
   
@@ -49,7 +49,7 @@ ms.locfileid: "22590737"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXODLGT]](http://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)
+[[MS OXODLGT]](https://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)
   
 > 接続し、別のユーザーに代わって動作する場合は、デリゲート、およびメッセージと予定表のオブジェクトとの対話としてメールボックスを構成するためのメソッドを指定します。
     

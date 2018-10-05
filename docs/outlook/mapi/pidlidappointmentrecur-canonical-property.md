@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 56d6240f-d07b-48d1-aef0-bf57078ea6c3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: da38c8f04c0ffe6b4b26551cb23e84275900fcb4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: de50616664048af6b931a09df7c65461e9ee3399
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563059"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393370"
 ---
 # <a name="pidlidappointmentrecur-canonical-property"></a>PidLidAppointmentRecur 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[[MS OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)で指定されている範囲、定期的なパターンのいずれかを使用して定期的な系列が発生したときの日付と時刻を指定します。
+[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)で指定されている範囲、定期的なパターンのいずれかを使用して定期的な系列が発生したときの日付と時刻を指定します。
   
 |||
 |:-----|:-----|
@@ -33,11 +33,11 @@ ms.locfileid: "22563059"
 |プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
 |長い ID (LID):  <br/> |0x00008216  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |予定表  <br/> |
+|エリア:  <br/> |予定表  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
-このプロパティは、一連の定期的な定期的なパターンのいずれかで発生して範囲の詳細な[[MS OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)日付と時刻を指定します。 このプロパティの値は、変更と削除の両方の例外に関する情報も含まれています。日付、件名、場所、およびその他のいくつかの例外のプロパティなどの情報。 定期的な予定表アイテムのこのプロパティのバイナリ データは、 **AppointmentRecurrencePattern**構造体として格納されます。 このプロパティは、単一インスタンスの予定表アイテムに存在する必要があります。 
+このプロパティは、一連の定期的な定期的なパターンのいずれかで発生して範囲の詳細な[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)日付と時刻を指定します。 このプロパティの値は、変更と削除の両方の例外に関する情報も含まれています。日付、件名、場所、およびその他のいくつかの例外のプロパティなどの情報。 定期的な予定表アイテムのこのプロパティのバイナリ データは、 **AppointmentRecurrencePattern**構造体として格納されます。 このプロパティは、単一インスタンスの予定表アイテムに存在する必要があります。 
   
 定期的なアイテムをいくつかの制限があります。
   
@@ -51,15 +51,15 @@ ms.locfileid: "22563059"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
     
-[[MS OXORMDR]](http://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)
+[[MS OXORMDR]](https://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)
   
 > 電子メールおよびその他のオブジェクトのアラームの操作モデルのプロパティを指定します。
     

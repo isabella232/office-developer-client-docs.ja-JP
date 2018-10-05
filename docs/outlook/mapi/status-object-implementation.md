@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 48fd3e28-c2d2-474d-9487-5e2f08ca7319
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e019ad8d0063514cd41017b459cc701c45c22a2e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e97efb70716ffbd7fa98f980ce8520cfcb988532
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569597"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392404"
 ---
 # <a name="status-object-implementation"></a>ステータス オブジェクトの実装
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 すべてのサービス プロバイダーは、状態オブジェクトを実装し、セッション ・ ステータス ・ テーブルからのプロパティを提供する必要があります。 制御するリソースの数によっては、状態テーブルでは、1 つまたは複数の行を含めることができます。 たとえば、トランスポート プロバイダーは、状態テーブルには、各メッセージ キューの管理行を作成する必要があります。 を変更した場合は、適切な状態のテーブルの行を更新しなければなりません。 状態オブジェクトを実装すると、状態テーブルに含まれている情報およびテーブルに含まれていないその他の情報へのアクセスを提供できます。
   
@@ -31,7 +31,7 @@ ms.locfileid: "22569597"
           
       2. 新しい状態オブジェクトを作成します。
           
-      3. プロファイル セクションへの参照をプロバイダーの状態のオブジェクトに格納し、メソッドを呼び出してプロファイル セクションの[IUnknown::AddRef](http://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx)を参照カウントをインクリメントします。 
+      3. プロファイル セクションへの参照をプロバイダーの状態のオブジェクトに格納し、メソッドを呼び出してプロファイル セクションの[IUnknown::AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx)を参照カウントをインクリメントします。 
           
       4. ログオン オブジェクトへの参照をプロバイダーの状態のオブジェクトに格納し、参照カウントをインクリメントするのには、ログオン オブジェクトの**IUnknown::AddRef**メソッドを呼び出します。 
           

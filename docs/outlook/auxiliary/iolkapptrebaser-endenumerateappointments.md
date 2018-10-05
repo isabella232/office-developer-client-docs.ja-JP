@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: bc4506c7-7a4f-940d-d0a6-e0fab4561a88
 description: 予定の列挙を完了するには、予定表フォルダーでの待機し、その必要性を再配置する予定のリストを返します。
-ms.openlocfilehash: d7d29a88114d7b3973b8f04e924dc1dd8489a097
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5be6fd9ce33374725b36429cd0fbc717776c9ab9
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799502"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392019"
 ---
 # <a name="iolkapptrebaserendenumerateappointments"></a>IOlkApptRebaser::EndEnumerateAppointments
 
@@ -46,7 +46,7 @@ _ppError_
     
 _ppRows_
   
-> [out]必要があります。再配置する必要がある予定を記述する[SRowSet](http://msdn.microsoft.com/library/7e3761be-afd6-46cb-9a08-25e9016c1241%28Office.15%29.aspx)構造体へのポインターへのポインター。通常、この構造体は[IOlkApptRebaser::BeginRebaseAppointments](iolkapptrebaser-beginrebaseappointments.md)に渡されます。
+> [out]必要があります。再配置する必要がある予定を記述する[SRowSet](https://msdn.microsoft.com/library/7e3761be-afd6-46cb-9a08-25e9016c1241%28Office.15%29.aspx)構造体へのポインターへのポインター。通常、この構造体は[IOlkApptRebaser::BeginRebaseAppointments](iolkapptrebaser-beginrebaseappointments.md)に渡されます。
     
 ## <a name="return-values"></a>戻り値
 

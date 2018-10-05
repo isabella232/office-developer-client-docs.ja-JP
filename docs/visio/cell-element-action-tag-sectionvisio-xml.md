@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6210ff71-fbcd-2c97-6dde-1e334891e08d
 description: 図形またはページのアクション タグの 1 つのプロパティを定義します。
-ms.openlocfilehash: 0945235c49e77210564e50e5c111579ab37f3e31
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 61fad8575532adde0106ef6db2888fe38f3ae4b7
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804936"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392502"
 ---
 # <a name="cell-element-action-tag-section-visio-xml"></a>セル要素 (アクション タグ セクション)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19804936"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |ページ # .xml、masters.xml、マスターの # .xml、pages.xml  <br/> |
    
@@ -60,7 +60,7 @@ ms.locfileid: "19804936"
 |U  <br/> |xsd:string  <br/> |省略可能  <br/> |既定の測定単位を表しますが、DL です。  <br/> |セルの単位です。  <br/> |
 |V  <br/> |xsd:string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプ シート セルの値です。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 この**セル**要素の**N**属性は、限られた一連のシェイプ シートのセルに対応する値のいずれかである必要があります。 この**セル**要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   

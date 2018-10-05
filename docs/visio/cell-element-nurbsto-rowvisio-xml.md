@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: e76bae8f-b9de-39ef-1f56-b00a6cd2ba6c
 description: 2 番目の最後のノット、最初のウェイトまたは不均一な合理性のある B-スプライン (NURBS) の数式の位置、最初のノットの位置、最後のウェイトの位置の x 座標または y 座標、位置が含まれています。
-ms.openlocfilehash: acdc61235fde88a0f5b03eb6e83f54092b4f1fd3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f23f73d67d72f9536dc7ffe9e083058ea9306217
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804976"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392803"
 ---
 # <a name="cell-element-nurbsto-row-visio-xml"></a>セル要素 ([nurbsto] 行) ('Visio XML')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19804976"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |# .xml をマスター、# .xml のページ  <br/> |
    
@@ -60,7 +60,7 @@ ms.locfileid: "19804976"
 |U  <br/> |xsd:string  <br/> |省略可能  <br/> |既定の測定単位を表しますが、DL です。  <br/> |セルの単位です。  <br/> |
 |V  <br/> |xsd:string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプ シート セルの値です。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 この**セル**要素の**N**属性は、限られた一連のシェイプ シートのセルに対応する値のいずれかである必要があります。 この**セル**要素に対して許可されている**N**属性の値を決定するのには次の表を参照してください。 
   

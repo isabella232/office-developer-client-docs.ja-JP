@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 180022af-4c1c-408c-a3fe-ed075cef79ab
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cee58299147c9f97ff61a3b8c460125349910637
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 68c2af0cd8d7ccddf6aa6017cfb830b196ac0771
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594461"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392061"
 ---
 # <a name="imapiformadvisesink--iunknown"></a>IMAPIFormAdviseSink : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 フォームの閲覧者から通知を受信するフォームのサーバーを使用できます。 
   
@@ -31,8 +31,8 @@ ms.locfileid: "22594461"
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
 |によって公開されます。  <br/> |シンク オブジェクトをフォームに伝えます。  <br/> |
-|によって実装されます。  <br/> |フォーム サーバー  <br/> |
-|によって呼び出されます。  <br/> |フォームの閲覧者  <br/> |
+|実装元:  <br/> |フォーム サーバー  <br/> |
+|呼び出し元:  <br/> |フォームの閲覧者  <br/> |
 |インターフェイスの識別子。  <br/> |IID_IMAPIFormAdviseSink  <br/> |
 |ポインターの型。  <br/> |LPMAPIFORMADVISESINK  <br/> |
    
@@ -43,9 +43,9 @@ ms.locfileid: "22594461"
 |[OnChange](imapiformadvisesink-onchange.md) <br/> |フォーム ビューアーのステータスに変更が発生したことを示します。  <br/> |
 |[OnActivateNext](imapiformadvisesink-onactivatenext.md) <br/> |フォームを表示するのには、次のメッセージのメッセージ クラスを処理できるかどうかを示します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
-フォーム、フォームのサーバーの使用は、そのフォーム オブジェクトに含めての代わりに**IMAPIFormAdviseSink**を実装するシンク オブジェクトを案内します。 したがって、フォームの閲覧者はこのインターフェイスへのポインターを取得するフォームの[IUnknown::QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx)メソッドに失敗した呼び出しを想定します。 
+フォーム、フォームのサーバーの使用は、そのフォーム オブジェクトに含めての代わりに**IMAPIFormAdviseSink**を実装するシンク オブジェクトを案内します。 したがって、フォームの閲覧者はこのインターフェイスへのポインターを取得するフォームの[IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)メソッドに失敗した呼び出しを想定します。 
   
 フォーム サーバーでは、通知を登録するのには、ビューアーの[IMAPIViewContext::SetAdviseSink](imapiviewcontext-setadvisesink.md)メソッドを呼び出します。 **IMAPIFormAdviseSink**実装へのポインターでは、パラメーターとして含まれています。 
   

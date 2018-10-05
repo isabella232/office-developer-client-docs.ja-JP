@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 98c0eab1-fd7e-46c3-8619-ccd6dc7cf8f7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d4b62c4131ecc58db6957144321146625b43f7bc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3d8b1901123743b25b5bb9df174b297398c953b8
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591024"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393237"
 ---
 # <a name="imapisessionprepareform"></a>IMAPISession::PrepareForm
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージにアクセスする[IMAPISession::ShowForm](imapisession-showform.md)メソッドを使用する数値のトークンを作成します。 
   
@@ -49,25 +49,25 @@ HRESULT PrepareForm(
   
 > [out]_LpMessage_が指すメッセージにアクセスするのには、 **IMAPISession::ShowForm**メソッドで使用されるメッセージのトークンへのポインターです。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > フォームの準備が正常に完了しました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
-**IMAPISession::PrepareForm**メソッドでは、 _lpMessage_パラメーターで指定されたメッセージのメッセージのトークンを作成し、メッセージの[IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出します。 このトークンは、 **IMAPISession::ShowForm**に、 _ulMessageToken_パラメーターに渡されます。 
+**IMAPISession::PrepareForm**メソッドでは、 _lpMessage_パラメーターで指定されたメッセージのメッセージのトークンを作成し、メッセージの[IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出します。 このトークンは、 **IMAPISession::ShowForm**に、 _ulMessageToken_パラメーターに渡されます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**PrepareForm**への呼び出しが成功した場合が指す_lpMessage_ **ShowForm**を呼び出す前に、[リ ス](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx)のメソッドを呼び出すことによってメッセージを離します。 **ShowForm**を呼び出す前に、メッセージを解放に失敗には、メモリ リークが発生します。 
+**PrepareForm**への呼び出しが成功した場合が指す_lpMessage_ **ShowForm**を呼び出す前に、[リ ス](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)のメソッドを呼び出すことによってメッセージを離します。 **ShowForm**を呼び出す前に、メッセージを解放に失敗には、メモリ リークが発生します。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
 |MAPIFormFunctions.cpp  <br/> |OpenMessageModal  <br/> |MFCMAPI では、モーダル形式でメッセージを表示するのには、 **IMAPISession::ShowForm**、 **IMAPISession::PrepareForm**メソッドを使用します。  <br/> |
    

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d5d60150-15e4-41ff-bfb0-0c67e2abcacc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 68cca0b483aca91001f8ee71289f4b1673fb2888
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3ab01f189734ac30b4c027f4e5596c88031b5f99
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564655"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392712"
 ---
 # <a name="iaddrbooksetdefaultdir"></a>IAddrBook::SetDefaultDir
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 アドレス帳の既定のコンテナーとして、指定されたコンテナーを確立します。
   
@@ -44,24 +44,24 @@ HRESULT SetDefaultDir(
   
 > [in]既定のアドレス帳コンテナーのエントリの識別子へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > 既定のアドレス帳コンテナーは正常に設定されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 クライアントとサービス ・ プロバイダーは、新しい既定のアドレス帳コンテナーを確立するために**SetDefaultDir**メソッドを呼び出します。 既定のコンテナーは、ユーザーに表示されるアドレス帳を最初に開いたときに、アドレス帳に表示されるコンテナーです。 **SetDefaultDir**は、プロファイル内のエントリとして、既定のコンテナーを保存します。 コンテナーは、同じセッションで、または別のセッションでは、 **SetDefaultDir**を別の呼び出しが行われるか、コンテナーが削除されるまで、既定値として残ります。 
   
 > [!NOTE]
-> [PR_AB_CHOOSE_DIRECTORY_AUTOMATICALLY](pidtagaddressbookchoosedirectoryautomatically-canonical-property.md)プロパティは、アドレス帳のオプション] ダイアログ ボックスで**自動的に選択**の設定に対応しています。 このプロパティは、 [IID_CAPONE_PROF](http://msdn.microsoft.com/library/281aabc3-9656-299c-4c78-7733dc71050a%28Office.15%29.aspx)プロファイル セクション内に存在するし、 **true**に設定されて、アドレス帳ダイアログで不要になった**SetDefaultDir**で指定されたコンテナーのデフォルトですが、Microsoft Outlook を考慮したアドレス帳を選択ダイアログ ボックスが表示されていたコンテキストに適しています。 ありますが低い経験ではサード パーティのアドレス帳プロバイダーに注意してください。 
+> [PR_AB_CHOOSE_DIRECTORY_AUTOMATICALLY](pidtagaddressbookchoosedirectoryautomatically-canonical-property.md)プロパティは、アドレス帳のオプション] ダイアログ ボックスで**自動的に選択**の設定に対応しています。 このプロパティは、 [IID_CAPONE_PROF](https://msdn.microsoft.com/library/281aabc3-9656-299c-4c78-7733dc71050a%28Office.15%29.aspx)プロファイル セクション内に存在するし、 **true**に設定されて、アドレス帳ダイアログで不要になった**SetDefaultDir**で指定されたコンテナーのデフォルトですが、Microsoft Outlook を考慮したアドレス帳を選択ダイアログ ボックスが表示されていたコンテキストに適しています。 ありますが低い経験ではサード パーティのアドレス帳プロバイダーに注意してください。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
 |Abcontdlg.cpp  <br/> |CAbContDlg::OnSetDefaultDir  <br/> |MFCMAPI では、 **SetDefaultDir**メソッドを使用して、既定のいずれかの指定したアドレス帳コンテナーを作成します。  <br/> |
    

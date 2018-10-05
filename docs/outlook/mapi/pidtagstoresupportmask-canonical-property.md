@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ada5694a-b5b1-471f-be33-906fc052681a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1936cb8e95e3faef8c92d6bf28f5b63b3ff72df5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 143e7f0d2cd89cd4e7956cdda05d1bd512db4027
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572705"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392334"
 ---
 # <a name="pidtagstoresupportmask-canonical-property"></a>PidTagStoreSupportMask 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 フラグのビットマスクにはメッセージ ・ ストアの特性を判断するのにはそのクライアント アプリケーションのクエリが含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22572705"
 |関連するプロパティ:  <br/> |PR_STORE_SUPPORT_MASK  <br/> |
 |識別子:  <br/> |0x340D  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |その他  <br/> |
+|エリア:  <br/> |その他  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、メッセージを送信する計画は、クライアント アプリケーションにメッセージ ・ ストアの機能を公開します。 フラグは、クライアントまたは別のストア ([PidTagBody](pidtagbody-canonical-property.md)) である**PR_BODY** **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) をのみを送信するかどうかなど、意思決定をサポートできます。 クライアントは**PR_STORE_SUPPORT_MASK**; を設定しない必要があります。このフラグを設定するには、MAPI_E_COMPUTED が返されます。 
   
@@ -138,11 +138,11 @@ STORE_UNICODE_OK
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXMSG]](http://msdn.microsoft.com/library/b046868c-9fbf-41ae-9ffb-8de2bd4eec82%28Office.15%29.aspx)
+[[MS OXMSG]](https://msdn.microsoft.com/library/b046868c-9fbf-41ae-9ffb-8de2bd4eec82%28Office.15%29.aspx)
   
 > クライアント上のフォルダーを共有に関連する情報の送信に使用されるメッセージの形式について説明します。
     

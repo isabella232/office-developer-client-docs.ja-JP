@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 66dbe65a-b9fd-41d5-946f-ec8888363043
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0d6a2f7b8b4f5345faa54e24c359f15ee181a7f3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5f0717c2a6def6f99f1e53217764e8820125b79d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575484"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392733"
 ---
 # <a name="pidtagcontainercontents-canonical-property"></a>PidTagContainerContents 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 コンテナーに関する情報を提供する埋め込まれたコンテンツ テーブル オブジェクトが含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22575484"
 |関連するプロパティ:  <br/> |PR_CONTAINER_CONTENTS  <br/> |
 |識別子:  <br/> |0x360F  <br/> |
 |データの種類 :   <br/> |PT_OBJECT  <br/> |
-|領域:  <br/> |Container  <br/> |
+|エリア:  <br/> |Container  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、 [IMAPIProp::CopyTo](imapiprop-copyto.md)操作で除外または[IMAPIProp::CopyProps](imapiprop-copyprops.md)操作に含まれることができます。 PT_OBJECT の型のプロパティとして、正常に取得できません、 [IMAPIProp::GetProps](imapiprop-getprops.md)メソッドで方式では[IMAPIProp::OpenProperty](imapiprop-openproperty.md) IID_IMAPITable のインタ フェース識別子を要求するその内容にアクセスする必要があります。 サービス プロバイダーする必要がありますに報告して、 [IMAPIProp::GetPropList](imapiprop-getproplist.md)メソッドが設定されているが報告したことができます (オプション)、または設定されていない場合はありません。 
   
@@ -54,11 +54,11 @@ ms.locfileid: "22575484"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
 > プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
     

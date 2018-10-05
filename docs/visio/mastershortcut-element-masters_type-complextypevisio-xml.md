@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 62f0e093-5385-e552-f91a-02a65eb0e6e1
 description: ドキュメントで定義されているマスター シェイプのショートカットを指定します。
-ms.openlocfilehash: be3e7d207e58d8c249598a7e156356d4f9e61849
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 03196c6fc1f3424c61bcce406dc050f2d5a73365
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805835"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392957"
 ---
 # <a name="mastershortcut-element-masterstype-complextype-visio-xml"></a>MasterShortcut 要素 (Masters_Type complexType)'Visio XML (')
 
@@ -23,7 +23,7 @@ ms.locfileid: "19805835"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[MasterShortcut_Type](mastershortcut_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**文書パーツ** <br/> |マスター # .xml  <br/> |
    

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 06b7792c-1b43-4e20-9a3b-44f2664b2125
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c056b0e587de06f6c32ceb3cebbb96f2fb737208
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 59379b0b1345684a491f2f7f896f2b8fc8fd54c2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579082"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392390"
 ---
 # <a name="pidlidreminderset-canonical-property"></a>PidLidReminderSet 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 オブジェクトにアラームを設定するかどうかを指定します。
   
@@ -33,23 +33,23 @@ ms.locfileid: "22579082"
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x00008503  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |Reminder  <br/> |
+|エリア:  <br/> |Reminder  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 定期的な予定表オブジェクトにこのプロパティを TRUE に設定がある場合、クライアントは例外の値をオーバーライドできます。
   
-このプロパティが FALSE の場合の例外を含め、シリーズ全体での定期的な予定表オブジェクトでアラームが無効になります。 定期的なタスクは、オブジェクトの例外が (詳細については、 [[MS OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)と[[MS OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)を参照) でこのプロパティをオーバーライドできません。 
+このプロパティが FALSE の場合の例外を含め、シリーズ全体での定期的な予定表オブジェクトでアラームが無効になります。 定期的なタスクは、オブジェクトの例外が (詳細については、 [[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)と[[MS OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)を参照) でこのプロパティをオーバーライドできません。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXORMDR]](http://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)
+[[MS OXORMDR]](https://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)
   
 > 電子メールおよびその他のオブジェクトのアラームの操作モデルのプロパティを指定します。
     

@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5b48958e-6dab-4121-871f-fb15f58f1b24
 description: アプリケーション開発者は、スタンドアロン アプリケーションやプロジェクトのアドインを使用する (SharePoint がホストされている) プロジェクトのオンライン サイトをカスタマイズできます。アプリケーションの豊富なは、範囲の PMO サポート関数では、次のいずれかのようにプロジェクトの関係者のニーズに対応可能です。
-ms.openlocfilehash: 25a38a7c7359020058983e271067a87da29f1b3d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 00f79b05b886bfd2c54c118245e22f10bb5451bf
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594532"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392586"
 ---
 # <a name="from-0-to-60-with-project-online"></a>Project Online の基本
 
@@ -83,7 +83,7 @@ ms.locfileid: "22594532"
     
    プロジェクトのオンラインでは、アドインとホストでプロジェクトのオンライン情報へのアクセスを管理するユーザーのアクセス許可の両方のアプリケーションのスコープについて説明します。 設定のいずれかまたは両方のアクセスを明示的に拒否すると、オンライン プロジェクトを拒否、情報へのアクセスします。 それ以外の場合、アクセスが与えられます。
     
-3. サイトで[sideloading](https://docs.microsoft.com/en-us/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)を有効にします。  
+3. サイトで[sideloading](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)を有効にします。  
     
 4. プロジェクトをビルドします。
     
@@ -115,7 +115,7 @@ ms.locfileid: "22594532"
     
    プロジェクトのオンラインでは、アドインとホストでプロジェクトのオンライン情報へのアクセスを管理するユーザーのアクセス許可の両方のアプリケーションのスコープについて説明します。 設定のいずれかまたは両方のアクセスを明示的に拒否すると、オンライン プロジェクトを拒否、情報へのアクセスします。 それ以外の場合、アクセスが与えられます。
     
-3. サイトで[sideloading](https://docs.microsoft.com/en-us/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)を有効にします。 
+3. サイトで[sideloading](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)を有効にします。 
     
 4. プロジェクトをビルドします。
     

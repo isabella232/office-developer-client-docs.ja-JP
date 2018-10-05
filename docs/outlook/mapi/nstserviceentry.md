@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5ada6363-2406-4c0a-8326-a299a8bbefe1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 85cfd219eb83592a4e01263caf5d6923db39e0cc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 96c04a242c477204ea1447fb78c31d189eeac59a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583786"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392418"
 ---
 # <a name="nstserviceentry"></a>NSTServiceEntry
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 MAPI のメッセージ サービスのエントリ ポイントの関数では、NST ストアとして PST ベースのローカル ストアをラップするプロバイダーを格納します。 
   
@@ -27,8 +27,8 @@ MAPI のメッセージ サービスのエントリ ポイントの関数では�
 
 |||
 |:-----|:-----|
-|によって実装されます。  <br/> |MAPI プロバイダー  <br/> |
-|によって呼び出されます。  <br/> |MAPI  <br/> |
+|実装元:  <br/> |MAPI プロバイダー  <br/> |
+|呼び出し元:  <br/> |MAPI  <br/> |
    
 ```cpp
 HRESULT NSTServiceEntry( 
@@ -53,9 +53,9 @@ HRESULT NSTServiceEntry(
 
 戻り値については、 **[MSGSERVICEENTRY](msgserviceentry.md)** を参照してください。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
-Msmapi32.dll のこの関数のアドレスを検索するには、 **[GetProcAddress](http://msdn.microsoft.com/en-us/library/ms683212.aspx)** を使用して、プロシージャ名として"NSTServiceEntry"を指定します。 
+Msmapi32.dll のこの関数のアドレスを検索するには、 **[GetProcAddress](https://msdn.microsoft.com/library/ms683212.aspx)** を使用して、プロシージャ名として"NSTServiceEntry"を指定します。 
   
 レプリケーション API を使用するには、MAPI ストア プロバイダーする必要があります最初を開き**[NSTServiceEntry](nstserviceentry.md)** を呼び出すことによって PST ベースのローカル ストアをラップします。 プロバイダーは、レプリケーションを実行するための API、 **[IOSTX](iostxiunknown.md)** **[IPSTX](ipstxiunknown.md)**、主要なインタ フェースを使用できます。 
   

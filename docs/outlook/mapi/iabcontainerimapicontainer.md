@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: 1f5ce6e0-b79a-4da2-b014-8c00cd72912e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 519093b3c538037b5a42bc19cc65ed31ae19f07b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0905fbe2ba584aef49c50152aaf448267d477c10
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580706"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392187"
 ---
 # <a name="iabcontainer--imapicontainer"></a>IABContainer : IMAPIContainer
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 アドレス帳コンテナーへのアクセスを提供します。 MAPI およびクライアント アプリケーションの名前解決を実行しを作成するのには次のようにコピーして、**これにより**メソッドを呼び出すし、受信者を削除します。 
   
@@ -29,8 +29,8 @@ ms.locfileid: "22580706"
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |によって公開されます。  <br/> |アドレス帳コンテナー オブジェクト  <br/> |
-|によって実装されます。  <br/> |アドレス帳プロバイダー  <br/> |
-|によって呼び出されます。  <br/> |MAPI クライアント アプリケーション  <br/> |
+|実装元:  <br/> |アドレス帳プロバイダー  <br/> |
+|呼び出し元:  <br/> |MAPI クライアント アプリケーション  <br/> |
 |インターフェイスの識別子。  <br/> |IID_IABContainer  <br/> |
 |ポインターの型。  <br/> |LPABCONT  <br/> |
 |トランザクション モデル:  <br/> |トランザクション処理  <br/> |
@@ -60,9 +60,9 @@ ms.locfileid: "22580706"
 |**PR_DEF_CREATE_MAILUSER**([PidTagDefCreateMailuser](pidtagdefcreatemailuser-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
-**これにより**インターフェイス継承しない直接[IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28VS.85%29.aspx)インターフェイスを通じて、 [IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)と[IMAPIProp: IUnknown](imapipropiunknown.md)インタ フェースです。 アドレス帳プロバイダーは、**これにより**インターフェイスを実装します。 
+**これにより**インターフェイス継承しない直接[IUnknown](https://msdn.microsoft.com/library/ms680509%28VS.85%29.aspx)インターフェイスを通じて、 [IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)と[IMAPIProp: IUnknown](imapipropiunknown.md)インタ フェースです。 アドレス帳プロバイダーは、**これにより**インターフェイスを実装します。 
   
 メッセージングのユーザー オブジェクト、配布リスト、およびその他のアドレス帳コンテナーの任意の数は、アドレス帳コンテナー内に存在できます。 同様に任意のコンテナーでは、クライアントまたはサービス プロバイダーを使用できます、アドレス帳コンテナーを開くには、エントリのいずれか、または階層のテーブルまたはテーブルの内容を取得します。 アドレス帳コンテナーも名前解決を提供し、削除、またはエントリを変更する機能を追加するには、プロバイダーによって異なります。
   

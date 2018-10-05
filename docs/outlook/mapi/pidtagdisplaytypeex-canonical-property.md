@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 23074402-6ac1-47f1-8a49-b8909f98a26e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 30482f7d6acef7377a1b63bc3de4e43be48d8608
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6eea30188543cb06545a9efad705f5593d4227a7
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583359"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393244"
 ---
 # <a name="pidtagdisplaytypeex-canonical-property"></a>PidTagDisplayTypeEx 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 グローバル アドレス一覧のエントリをテーブル内の行に表示する方法について、エントリの種類が含まれています。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22583359"
 |関連するプロパティ:  <br/> |PR_DISPLAY_TYPE_EX  <br/> |
 |識別子:  <br/> |0x3905  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |MAPI アドレス帳  <br/> |
+|エリア:  <br/> |MAPI アドレス帳  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、グローバル アドレス一覧での表示の方法について、エントリの種類を指定します。 **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) で表すことができないその他の情報を提供します。
   
@@ -90,11 +90,11 @@ ms.locfileid: "22583359"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
 > プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
     

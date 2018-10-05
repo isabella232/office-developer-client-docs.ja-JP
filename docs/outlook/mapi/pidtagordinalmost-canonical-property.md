@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: c18de08b-8c28-4cdf-bd2e-b9c650cd6da6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 60704464beb162a614d6619b5e74d362b4af4488
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 31f39cfbd0e993bfc28003fd64e8af97e7e76818
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585109"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392425"
 ---
 # <a name="pidtagordinalmost-canonical-property"></a>PidTagOrdinalMost 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "22585109"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 条件に違反する方法で、フォルダー内の任意のタスク オブジェクトの**dispidTaskOrdinal**プロパティが変更されるたびに、この状態を維持するためにこのプロパティを更新する必要があります。 
   
@@ -42,11 +42,11 @@ ms.locfileid: "22585109"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[MS OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
 > プロパティは、連絡先、個人用配布リストの許可の操作を指定します。
   

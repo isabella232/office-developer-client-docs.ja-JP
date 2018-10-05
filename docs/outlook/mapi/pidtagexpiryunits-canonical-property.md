@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: f6a1ca22-cf4c-4e59-8846-6bd937fa8f6e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c6aab4228af0f584d96a2a8cc02c5f36e05a01e8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8e8deb67990ce25b10a3b0fc1d373f635f958013
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569604"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392299"
 ---
 # <a name="pidtagexpiryunits-canonical-property"></a>PidTagExpiryUnits 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 **PR_EXPIRY_NUMBER** ([PidTagExpiryNumber](pidtagexpirynumber-canonical-property.md)) のプロパティを乗算すると時間の単位について説明します。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22569604"
 |関連するプロパティ:  <br/> |PR_EXPIRY_UNITS  <br/> |
 |識別子:  <br/> |0x3FEE  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |MAPI のステータス  <br/> |
+|エリア:  <br/> |MAPI のステータス  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティでは場合は、次の値のいずれかである必要があります。
   
@@ -50,7 +50,7 @@ ms.locfileid: "22569604"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
     

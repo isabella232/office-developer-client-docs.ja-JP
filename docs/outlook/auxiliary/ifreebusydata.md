@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c9a80ad3-6311-fe07-b6f7-9fd63424753b
-ms.openlocfilehash: aa42561277d5fc4de93eeedec8ceb6f36530fb80
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cd9d4dffd83e1995319b0f0d661435fedb78f28c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799343"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393209"
 ---
 # <a name="ifreebusydata"></a>IFreeBusyData
 
@@ -21,7 +21,7 @@ ms.locfileid: "19799343"
 
 |||
 |:-----|:-----|
-|継承します。  <br/> |[IUnknown](http://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) <br/> |
+|継承します。  <br/> |[IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) <br/> |
 |提供元:  <br/> |プロバイダーの空き/予約済み  <br/> |
 |インターフェイスの識別子。  <br/> |IID_IFreeBusyData  <br/> |
    
@@ -39,7 +39,7 @@ ms.locfileid: "19799343"
 |[Placeholder6](ifreebusydata-placeholder6.md) <br/> | *このメンバーは、プレース ホルダーではサポートされていません。*  <br/> |
 |[GetFBPublishRange](ifreebusydata-getfbpublishrange.md) <br/> |ユーザーのデータのブロックの空き時間情報の列挙型の事前に設定された時間の範囲を取得します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このインターフェイスのメンバーのほとんどは、Outlook の内部使用に予約されているプレース ホルダーであるし、変更されることが。 空き/予約済みプロバイダーする必要があります実装のみとして指定した場合は、のみ、指定した戻り値を返します。
   

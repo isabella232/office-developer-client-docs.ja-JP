@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ead35049-e60e-4b46-bf12-f73d77cd36b2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 23850e7da71125642abd8484fb45b8ec23264748
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b5ddb87111cfb0039cb1150338945615bbd5afc5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587650"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393272"
 ---
 # <a name="pidlidpropertydefinitionstream-canonical-property"></a>PidLidPropertyDefinitionStream 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ユーザー定義のフィールドの定義と、メッセージの組み込みのフィールドのデータ バインディングの設定を表します。
   
@@ -33,9 +33,9 @@ ms.locfileid: "22587650"
 |プロパティを設定します。  <br/> |PSETID_Common  <br/> |
 |長い ID (LID):  <br/> |0x00008540  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |実行時の構成  <br/> |
+|エリア:  <br/> |実行時の構成  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 **PidLidPropertyDefinitionStream**プロパティの値は、メッセージのユーザー設定フォームの定義の一部として保存されます。 
   
@@ -45,7 +45,7 @@ ms.locfileid: "22587650"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     

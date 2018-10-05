@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: ef88e30e-7537-488e-bc72-8da29810f7aa
 description: Office 2013 テレメトリ ログ を使用して、Office 2013 と以前のバージョンの Office 用に構築されたソリューションの互換性に関する問題を特定します。
-ms.openlocfilehash: 95b23bfbb45a492147ec4d56849a08e0ec14e4a9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ebcf7908fb9f7e1558b0f0576fbbf9a6f0b07568
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804731"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393279"
 ---
 # <a name="troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log"></a>テレメトリ ログを使用した Office ファイルおよびカスタム ソリューションのトラブルシューティング
 
@@ -25,7 +25,7 @@ Office 2013 テレメトリ ログ を使用して、Office 2013 と以前のバ
   
 Office 2013 テレメトリ ログ は Excel 2013 を基盤として構築されたツールです。開発者や経験豊富なユーザーは、これを使用して、指定の Office 2013 アプリケーションに発生するイベントを確認し、互換性の問題を診断できます。これによりユーザーは、自身の作業環境で使用するアドインに内在する問題を特定し、Office 2013 にアップグレードするかどうかを判断するのに必要な情報を企業の意志決定者に提供できます。また、テレメトリ ログ では Office 2013 アプリケーションのオブジェクト モデルの具体的な変更点や廃止事項に関する詳細なフィードバックが得られます。これにより開発者は、問題のあるコードやコントロールをすばやく特定して切り分けることができます。IT 担当者は、テレメトリ ログ の付属ツールである Office 2013 テレメトリ ダッシュボード を使用して、複数クライアントにわたってソリューションの正常性の傾向を確認できます。
   
-詳細については、「[Office テレメトリ ダッシュボードを展開する](http://technet.microsoft.com/library/f69cde72-689d-421f-99b8-c51676c77717)」を参照してください。
+詳細については、「[Office テレメトリ ダッシュボードを展開する](https://technet.microsoft.com/library/f69cde72-689d-421f-99b8-c51676c77717)」を参照してください。
   
 ## <a name="how-the-telemetry-log-works"></a>テレメトリ ログで監視する問題
 <a name="OEV_Types"> </a>
@@ -126,11 +126,11 @@ Office 2013 をインストールすると、テレメトリ ログ がインス
 |**イベント ID**|**タイトル**|**重大度**|**説明**|
 |:-----|:-----|:-----|:-----|
 |1  <br/> |ドキュメントは正常に読み込まれました  <br/> ||[ **ファイル**] 列に列挙されているファイルが Office アプリケーションで問題なく開かれました。  <br/> |
-|2  <br/> |ドキュメントを読み込めませんでした  <br/> |警告  <br/> | アプリケーションがファイルを読み込めませんでした。互換性の問題が存在する可能性があります。  <br/><br/>破損したブックを Excel 2013 で修復する方法の詳細については、「[破損したブックを修復する](http://office.microsoft.com/ja-JP/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx)」を参照してください。<br/><br/>破損した文書を Word 2013 で修復する方法の詳細については、「[文書のバックアップ ファイルを保存および復元する](http://office.microsoft.com/ja-JP/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx)」を参照してください。 <br/> |
+|2  <br/> |ドキュメントを読み込めませんでした  <br/> |警告  <br/> | アプリケーションがファイルを読み込めませんでした。互換性の問題が存在する可能性があります。  <br/><br/>破損したブックを Excel 2013 で修復する方法の詳細については、「[破損したブックを修復する](https://office.microsoft.com/en-us/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx)」を参照してください。<br/><br/>破損した文書を Word 2013 で修復する方法の詳細については、「[文書のバックアップ ファイルを保存および復元する](https://office.microsoft.com/en-us/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx)」を参照してください。 <br/> |
 |3  <br/> |テンプレートは正常に読み込まれました  <br/> ||[ **ファイル**] 列に列挙されているテンプレート ファイルが Office アプリケーションで問題なく開かれました。  <br/> |
-|4  <br/> |テンプレートを読み込めませんでした  <br/> |警告  <br/> | アプリケーションがテンプレート ファイルを読み込めませんでした。互換性の問題が存在するか、テンプレートの利用状況が変更されている可能性があります。  <br/><br/>破損したブックを Excel 2013 で修復する方法の詳細については、「[破損したブックを修復する](http://office.microsoft.com/ja-JP/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx)」を参照してください。<br/><br/>破損した文書を Word 2013 で修復する方法の詳細については、「[文書のバックアップ ファイルを保存および復元する](http://office.microsoft.com/ja-JP/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx)」を参照してください。 <br/> |
+|4  <br/> |テンプレートを読み込めませんでした  <br/> |警告  <br/> | アプリケーションがテンプレート ファイルを読み込めませんでした。互換性の問題が存在するか、テンプレートの利用状況が変更されている可能性があります。  <br/><br/>破損したブックを Excel 2013 で修復する方法の詳細については、「[破損したブックを修復する](https://office.microsoft.com/en-us/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx)」を参照してください。<br/><br/>破損した文書を Word 2013 で修復する方法の詳細については、「[文書のバックアップ ファイルを保存および復元する](https://office.microsoft.com/en-us/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx)」を参照してください。 <br/> |
 |5  <br/> |アドインは正常に読み込まれました  <br/> ||[ **ファイル**] 列に列挙されているアドインが Office アプリケーションで正常に読み込まれました。互換性の問題は検出されませんでした。  <br/> |
-|6  <br/> |アドインを読み込めませんでした  <br/> |重大  <br/> | アプリケーションが [ **ファイル**] 列に列挙されているアドインを読み込めませんでした。  <br/><br/>破損したブックを Excel 2013 で修復する方法の詳細については、「[破損したブックを修復する](http://office.microsoft.com/ja-JP/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx)」を参照してください。 <br/><br/>  破損した文書を Word 2013 で修復する方法の詳細については、「[文書のバックアップ ファイルを保存および復元する](http://office.microsoft.com/ja-JP/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx)」を参照してください。 <br/> |
+|6  <br/> |アドインを読み込めませんでした  <br/> |重大  <br/> | アプリケーションが [ **ファイル**] 列に列挙されているアドインを読み込めませんでした。  <br/><br/>破損したブックを Excel 2013 で修復する方法の詳細については、「[破損したブックを修復する](https://office.microsoft.com/en-us/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx)」を参照してください。 <br/><br/>  破損した文書を Word 2013 で修復する方法の詳細については、「[文書のバックアップ ファイルを保存および復元する](https://office.microsoft.com/en-us/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx)」を参照してください。 <br/> |
 |7  <br/> |アドインのマニフェストが正常にダウンロードされました  <br/> ||ホスト アプリケーションは Office アドイン 用のマニフェストを正常に読み込みました。  <br/> |
 |8  <br/> |アドインのマニフェストがダウンロードされませんでした  <br/> |重大  <br/> |ホスト アプリケーションは Office アドインのマニフェスト ファイルを、SharePoint カタログ、コーポレート カタログ、Office ストアのいずれからも読み込めませんでした。  <br/> |
 |9  <br/> |アドイン マニフェストを解析できませんでした。  <br/> |重大  <br/> |ホスト アプリケーションは Office アドイン のマニフェストを読み込みましたが、XML を読み取れませんでした。  <br/> |
@@ -158,9 +158,9 @@ Office 2013 をインストールすると、テレメトリ ログ がインス
 ## <a name="see-also"></a>関連項目
 <a name="OEV_Additional"> </a>
 
-- [Office デベロッパー センター](http://msdn.microsoft.com/ja-JP/office/aa905340.aspx)
+- [Office デベロッパー センター](https://msdn.microsoft.com/office/aa905340.aspx)
 - [Office の互換性に関する問題](compatibility-issues-in-office.md)
-- [Office テレメトリ ダッシュボードを展開する](http://technet.microsoft.com/library/f69cde72-689d-421f-99b8-c51676c77717)
-- [Office デベロッパー センター](http://msdn.microsoft.com/ja-JP/office/aa905340)
+- [Office テレメトリ ダッシュボードを展開する](https://technet.microsoft.com/library/f69cde72-689d-421f-99b8-c51676c77717)
+- [Office デベロッパー センター](https://msdn.microsoft.com/office/aa905340)
     
 

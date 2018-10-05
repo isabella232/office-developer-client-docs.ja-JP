@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ae408b4f-dee3-484b-a19c-f472cfa95996
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 33b9931a269eb4b5ee0429287d60fa1962b0e4f2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e157fa640026d13362084b30ad73cdb66a0b35b5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584234"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392570"
 ---
 # <a name="pidtagsendinternetencoding-canonical-property"></a>PidTagSendInternetEncoding 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 環境設定のエンコーディングのビットマスクを格納します。 
   
@@ -32,9 +32,9 @@ ms.locfileid: "22584234"
 |関連するプロパティ:  <br/> |PR_SEND_INTERNET_ENCODING  <br/> |
 |識別子:  <br/> |0x3A71  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |Address  <br/> |
+|エリア:  <br/> |Address  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 使用するエンコード オプションを指定するには、このプロパティを設定します。 
   
@@ -72,23 +72,23 @@ MAC_ATTACH_ENCODING_UUENCODE
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
 > プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
     
-[[MS OXCMAIL]](http://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
 > メッセージ オブジェクト インターネット標準の電子メールの表記規則からに変換します。
     
-[[MS OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > メッセージと添付ファイルのオブジェクトを処理します。
     
-[[MS OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
     

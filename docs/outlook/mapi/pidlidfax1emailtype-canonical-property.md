@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 54436af4-b851-49ab-875a-c52f5da6b776
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 286f86bddc7f938f9401de1041d1574113670f52
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 89afe48bc023aa15aa4cac133a5022408c42e359
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576828"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392964"
 ---
 # <a name="pidlidfax1emailtype-canonical-property"></a>PidLidFax1EmailType 標準プロパティ
 
@@ -39,11 +39,11 @@ ms.locfileid: "22576828"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > プロパティは、連絡先、個人用配布リストの許可の操作を指定します。
     

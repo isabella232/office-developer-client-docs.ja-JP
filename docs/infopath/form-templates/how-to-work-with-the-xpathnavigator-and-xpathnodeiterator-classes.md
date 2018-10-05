@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 72fb3ee5-f18e-4f9c-adc6-698ac037b79d
 description: フォーム テンプレートのデータ ソースの XML データにアクセスして操作するには、Microsoft.Office.InfoPath 名前空間によって提供されるマネージ コード オブジェクト モデルの多くのメンバーは、System.Xml.XPath 名前空間の XPathNavigator クラスのインスタンスを作成するか、そのインスタンスが渡されます。InfoPath オブジェクト モデルのメンバーから返される XPathNavigator オブジェクトにアクセスした後、XPathNavigator クラスのプロパティとメソッドを使用してデータを操作できます。
-ms.openlocfilehash: a672ea2733d971c829b77e0c18a74f26c7050b34
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f34f2e1a1cbdb8d9e389c864a9b979be20726e6b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799156"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393041"
 ---
 # <a name="work-with-the-xpathnavigator-and-xpathnodeiterator-classes"></a>XPathNavigator クラスおよび XPathNodeIterator クラスを操作する
 
@@ -73,11 +73,11 @@ Dim emailAlias As XPathNavigator = _
 emailAlias.SetValue(Me.Application.User.UserName.ToString())
 ```
 
-XPath 式の作成方法については、MSDN の「XPath リファレンス」と、「[XML Path Language (XPath) Version 1.0 W3C Recommendation](http://www.w3.org/TR/xpath)」を参照してください。
+XPath 式の作成方法については、MSDN の「XPath リファレンス」と、「[XML Path Language (XPath) Version 1.0 W3C Recommendation](https://www.w3.org/TR/xpath)」を参照してください。
   
 ### <a name="setting-the-value-of-a-node-that-has-the-xsinil-attribute"></a>xsi:nil 属性を持つノードの値を設定する
 
-ある特定のデータ型では、空白フィールドの値をプログラムで設定しようとすると、"スキーマの検証でデータ型以外のエラーが見つかりました。" というエラーが発生します。通常、このエラーの原因は、要素の [xsi:nil](http://www.w3.org/TR/2001/REC-xmlschema-1-20010502/#xsi_nil) 属性が **true** に設定されていることにあります。フォーム内の空白フィールドを表す基本 XML 要素を調べると、そのように設定されていることが見つかります。たとえば、次の空白の Date フィールドを表す XML フラグメントの **xsi:nil** 属性は **true** に設定されています。
+ある特定のデータ型では、空白フィールドの値をプログラムで設定しようとすると、"スキーマの検証でデータ型以外のエラーが見つかりました。" というエラーが発生します。通常、このエラーの原因は、要素の [xsi:nil](https://www.w3.org/TR/2001/REC-xmlschema-1-20010502/#xsi_nil) 属性が **true** に設定されていることにあります。フォーム内の空白フィールドを表す基本 XML 要素を調べると、そのように設定されていることが見つかります。たとえば、次の空白の Date フィールドを表す XML フラグメントの **xsi:nil** 属性は **true** に設定されています。
   
 ```XML
 <my:myDate xsi:nil="true"></my:myDate>
@@ -101,7 +101,7 @@ XPath 式の作成方法については、MSDN の「XPath リファレンス」
 public void DeleteNil(XPathNavigator node)
 {
    if (node.MoveToAttribute(
-      "nil", "http://www.w3.org/2001/XMLSchema-instance"))
+      "nil", "https://www.w3.org/2001/XMLSchema-instance"))
       node.DeleteSelf();
 }
 ```
@@ -109,7 +109,7 @@ public void DeleteNil(XPathNavigator node)
 ```vb
 Public Sub DeleteNil(ByVal node As XPathNavigator)
    If (node.MoveToAttribute( _
-      "nil", "http://www.w3.org/2001/XMLSchema-instance")) Then
+      "nil", "https://www.w3.org/2001/XMLSchema-instance")) Then
       node.DeleteSelf()
    End If
 End Sub
@@ -151,9 +151,9 @@ myDate.SetValue(strCurDate)
   
 ### <a name="selecting-and-setting-a-set-of-repeating-nodes"></a>繰り返しノードを選択および設定する
 
-繰り返される回数が不確かなフィールドまたはグループの一式を指定するには、**XPathNavigator** クラスの **Select** メソッドを使用します。 このメソッドから返される XPathNodeIterator オブジェクトを使用して、指定したノードのコレクションを反復処理できます。 
+個数が不定の繰り返しフィールドまたはグループのセットを指定するには、 **XPathNavigator** クラスの **Select** メソッドを使用します。このメソッドは、 XPathNodeIterator オブジェクトを返します。このオブジェクトを使用して、指定されたノードのコレクションに対して反復処理を実行できます。 
   
-次の例では、フォーム テンプレートに含まれる**箇条書き**または同様の反復コントロールが、`field1` という名前の繰り返し要素にバインドされていることを前提とします。 フィールドの XPath を **Select** メソッドに渡し、このメソッドから返された **XPathNodeIterator** を `nodes` 変数に割り当てます。 MoveNext メソッドを使用してノードのコレクションを反復処理し、Current プロパティを使用して、現在のノードに位置する **XPathNavigator** オブジェクトを返します。 最後に、**Value** プロパティを使用して、繰り返される各フィールドの値を取得し、表示します。 
+次の例では、フォーム テンプレートに、 **** という繰り返し要素に連結される `field1`または同様の繰り返しコントロールが含まれていることを想定しています。フィールドの XPath は **Select** メソッドに渡され、返される **XPathNodeIterator** は  `nodes` 変数に割り当てられます。 MoveNext メソッドを使用して、ノードのコレクションに対して反復処理を行います。また、 Current プロパティを使用して、現在のノードに置かれる **XPathNavigator** オブジェクトを返します。最後に、 **Value** プロパティを使用して、各繰り返しフィールドの値を取得して表示します。 
   
 ```cs
 string message = String.Empty;

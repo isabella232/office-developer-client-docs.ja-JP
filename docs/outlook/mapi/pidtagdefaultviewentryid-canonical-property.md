@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 1b4e82ed-c207-4828-8a5b-0ef312962355
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2c941ea43a19b51e46c00b37aa89f504c55f180a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6d284782de86b603e6bbe190931a85cd9196c88b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587209"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393517"
 ---
 # <a name="pidtagdefaultviewentryid-canonical-property"></a>PidTagDefaultViewEntryId 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 フォルダーの既定のビューのエントリの識別子が含まれています。
   
@@ -32,9 +32,9 @@ ms.locfileid: "22587209"
 |関連するプロパティ:  <br/> |PR_DEFAULT_VIEW_ENTRYID  <br/> |
 |識別子:  <br/> |0x3616  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |MAPI のコンテナー  <br/> |
+|エリア:  <br/> |MAPI のコンテナー  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 このプロパティは、最初のビューとして設定するフォルダー ビューのエントリの識別子です。 「標準」ビューの最初のビューとして使用する場合、プロパティを設定する必要はありません。
   
@@ -46,7 +46,7 @@ ms.locfileid: "22587209"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCFOLD]](http://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
+[[MS OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
   
 > フォルダーの操作を処理します。
     

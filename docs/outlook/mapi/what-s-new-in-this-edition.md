@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: a24cad75-1237-469f-b7f3-cbbb88f80d44
 description: '�ŏI�X�V��: 2015�N12��7��'
-ms.openlocfilehash: 7325c42fe7e9c1e043609d5503a3782522f76188
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 23a8b84af50cc8a046206ab37144d84c4c9b6d56
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590058"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392887"
 ---
 # <a name="whats-new-in-this-edition"></a>このエディションの新機能
 
  
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 さまざまな新機能のマニュアルを含めるため、Microsoft Outlook 2013 MAPI の参照が更新されました。 
   
@@ -59,9 +59,9 @@ ms.locfileid: "22590058"
 
 コンテンツは、Outlook MAPI の参照の次の機能の以前のリリースで追加されました。
   
-- Microsoft Outlook 2013 は、サイド バイ サイドやクイック実行などの従来の展開シナリオになります。 これらのシナリオには、適切な MAPI ライブラリをロードするためのロジックが複雑になることができます。 MAPI 開発者は、MAPI の関数を明示的にリンクすることが今すぐと MAPI ライブラリと Windows の MAPI スタブを経由せずに既定の MAPI クライアント (たとえば、Msmapi32.dll の Outlook の MAPI スタブを明示的にリンクを選択できます。 暗黙的なリンクと明示的なリンクの詳細については、 [MAPI の関数へのリンク](how-to-link-to-mapi-functions.md)を参照してください。 **MAPI スタブ ライブラリ**、 [CodePlex](http://mapistublibrary.codeplex.com/)の web サイトに掲載は、32 ビットと 64 ビットの両方の MAPI アプリケーションの構築をサポートする Mapi32.lib のドロップイン交換を提供します。 
+- Microsoft Outlook 2013 は、サイド バイ サイドやクイック実行などの従来の展開シナリオになります。 これらのシナリオには、適切な MAPI ライブラリをロードするためのロジックが複雑になることができます。 MAPI 開発者は、MAPI の関数を明示的にリンクすることが今すぐと MAPI ライブラリと Windows の MAPI スタブを経由せずに既定の MAPI クライアント (たとえば、Msmapi32.dll の Outlook の MAPI スタブを明示的にリンクを選択できます。 暗黙的なリンクと明示的なリンクの詳細については、 [MAPI の関数へのリンク](how-to-link-to-mapi-functions.md)を参照してください。 **MAPI スタブ ライブラリ**、 [CodePlex](https://mapistublibrary.codeplex.com/)の web サイトに掲載は、32 ビットと 64 ビットの両方の MAPI アプリケーションの構築をサポートする Mapi32.lib のドロップイン交換を提供します。 
     
-- **64 ビットの Microsoft Outlook のサポート**64 ビットの Outlook をサポートする新しいヘッダー ファイルに対応するように該当する API 要素のリファレンス トピックが更新されました。 これらのヘッダー ファイルはダウンロードとして利用可能な[Outlook 2010: MAPI ヘッダー ファイル](http://www.microsoft.com/downloads/details.aspx?FamilyID=f8d01fc8-f7b5-4228-baa3-817488a66db1)です。 インストールされているバージョンの Outlook が Microsoft Outlook 2010 の 64 ビットであり、Outlook 2013 が改訂されたかどうかを確認する方法を表示する[Outlook のバージョンを確認](how-to-check-the-version-of-outlook.md)ので、新しいコード サンプルが提供されました。 既存の 32 ビットの MAPI アプリケーションがインストールされている 64 ビットの Outlook を 64 ビット オペレーティング システムで実行されている場合は、64 ビット アプリケーションと 32 ビット アプリケーションを再構築する必要があります。 64 ビットの Outlook の MAPI サポートの詳細については、 [32 ビットと 64 ビット プラットフォーム上の MAPI アプリケーションの構築](building-mapi-applications-on-32-bit-and-64-bit-platforms.md)を参照してください。
+- **64 ビットの Microsoft Outlook のサポート**64 ビットの Outlook をサポートする新しいヘッダー ファイルに対応するように該当する API 要素のリファレンス トピックが更新されました。 これらのヘッダー ファイルはダウンロードとして利用可能な[Outlook 2010: MAPI ヘッダー ファイル](https://www.microsoft.com/downloads/details.aspx?FamilyID=f8d01fc8-f7b5-4228-baa3-817488a66db1)です。 インストールされているバージョンの Outlook が Microsoft Outlook 2010 の 64 ビットであり、Outlook 2013 が改訂されたかどうかを確認する方法を表示する[Outlook のバージョンを確認](how-to-check-the-version-of-outlook.md)ので、新しいコード サンプルが提供されました。 既存の 32 ビットの MAPI アプリケーションがインストールされている 64 ビットの Outlook を 64 ビット オペレーティング システムで実行されている場合は、64 ビット アプリケーションと 32 ビット アプリケーションを再構築する必要があります。 64 ビットの Outlook の MAPI サポートの詳細については、 [32 ビットと 64 ビット プラットフォーム上の MAPI アプリケーションの構築](building-mapi-applications-on-32-bit-and-64-bit-platforms.md)を参照してください。
     
 - **メッセージ ストア プロバイダーの例**: 64 ビット アーキテクチャをサポートするために以前更新された[サンプル PST ストア プロバイダーをラップ](message-store-provider-sample.md)します。 例の[ラップの PST ストア プロバイダーの初期化中](initializing-a-wrapped-pst-store-provider.md)のトピックは、「Wrapped PST と Unicode パス」情報を提供するよう拡張されて 
     
@@ -113,5 +113,5 @@ ms.locfileid: "22590058"
 
 [Outlook MAPI リファレンスの概要](getting-started-with-the-outlook-mapi-reference.md)
   
-[CodePlex](http://mapistublibrary.codeplex.com/)
+[CodePlex](https://mapistublibrary.codeplex.com/)
 

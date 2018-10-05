@@ -6,20 +6,20 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: f9559afb-8db1-ce72-3e11-9b3d47bb80b6
 description: '最終更新日: 2012 年 7 月 6 日'
-ms.openlocfilehash: aa1981c365e2a8e81dcd688a32fca25178c7fe52
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4ca3e9d11a3133236d38ef31b01ecded932e8013
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577325"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392920"
 ---
 # <a name="programmatically-set-the-resolution-order-for-address-lists"></a>アドレス一覧の解決の順序をプログラムで設定します。
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 このトピックには、c++ プログラムを使用してアドレス一覧の受信者に電子メールでメッセージおよび会議出席依頼に出席者は、解決の順序を設定するコード サンプルが含まれています。
   
-MAPI の各プロファイルは、複数のアドレス一覧をサポートできるし、自身のコンテナーで、それぞれのアドレス一覧が存在します。 MAPI には、名前解決に使用されるプロファイルに新しい検索パスを設定できるようにするインターフェイスで、 **[SetSearchPath](http://support.microsoft.com/kb/292590)** メソッドがサポートされています。 **IAddrBook::SetSearchPath**メソッドを使用するには、目的の順序に関連するアドレス帳のコンテナーを保持している**[SRowSet](srowset.md)** 配列で、目的の解像度の順序を定義する必要は、 *lpSearchPath*として、配列を指定 パラメーターです。 **SRowSet**配列の各エントリの最初のプロパティは、対応するアドレス帳の**[PR_ENTRYID](pidtagentryid-canonical-property.md)** プロパティである必要があります。 
+MAPI の各プロファイルは、複数のアドレス一覧をサポートできるし、自身のコンテナーで、それぞれのアドレス一覧が存在します。 MAPI には、名前解決に使用されるプロファイルに新しい検索パスを設定できるようにするインターフェイスで、 **[SetSearchPath](https://support.microsoft.com/kb/292590)** メソッドがサポートされています。 **IAddrBook::SetSearchPath**メソッドを使用するには、目的の順序に関連するアドレス帳のコンテナーを保持している**[SRowSet](srowset.md)** 配列で、目的の解像度の順序を定義する必要は、 *lpSearchPath*として、配列を指定 パラメーターです。 **SRowSet**配列の各エントリの最初のプロパティは、対応するアドレス帳の**[PR_ENTRYID](pidtagentryid-canonical-property.md)** プロパティである必要があります。 
   
 コード サンプルは、次の手順で、解決の順序を設定します。
   

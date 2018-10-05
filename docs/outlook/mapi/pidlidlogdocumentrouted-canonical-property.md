@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 604f8859-469f-4745-b4b5-8f69737867a3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 076ad08cb1ea743a796ce77f401089444de5c824
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4c2a17e243807fb7517ce08040c6fc65b5f0df83
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590380"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392355"
 ---
 # <a name="pidlidlogdocumentrouted-canonical-property"></a>PidLidLogDocumentRouted 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ルーティング受信者にジャーナル処理中にドキュメントが送信されたかどうかを示します。
   
@@ -33,17 +33,17 @@ ms.locfileid: "22590380"
 |プロパティを設定します。  <br/> |PSETID_Log  <br/> |
 |長い ID (LID):  <br/> |0x00008710  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |ジャーナル  <br/> |
+|エリア:  <br/> |ジャーナル  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOJRNL]](http://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)
+[[MS OXOJRNL]](https://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)
   
 > プロパティとは、仕訳帳の許可の操作を指定します。
     

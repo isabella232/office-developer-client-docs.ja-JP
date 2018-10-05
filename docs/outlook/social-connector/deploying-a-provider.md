@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c5e816b5-2ff2-4f59-ba54-c3ed291f8bba
 description: Outlook ソーシャル コネクタ (OSC) プロバイダーを展開する推奨される方法は、Windows インストーラー (.msi) パッケージを使用します。
-ms.openlocfilehash: 6641b63ce96abb1b9db0571c92180f873c73da78
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f606d39bd368609464cdd0ea5b9a56243ec4e27d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804363"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392495"
 ---
 # <a name="deploying-a-provider"></a>プロバイダーの展開
 
@@ -45,5 +45,5 @@ Outlook ソーシャル コネクタ (OSC) プロバイダーを展開する推�
   
 ## <a name="see-also"></a>関連項目
 
-- [グループ ポリシーを使用して Outlook の社会的コネクタを管理する方法](http://support.microsoft.com/default.aspx?scid=kb%3Ben-US%3B2020103)
+- [グループ ポリシーを使用して Outlook の社会的コネクタを管理する方法](https://support.microsoft.com/default.aspx?scid=kb%3Ben-US%3B2020103)
 

@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 7b5d013a-15ac-469a-98c8-3ed1e80f6faf
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 717f934c0dadc46935b72c409469633e0779fb3d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7520c473ee9373f8c23c4f5b4bb020291e2be007
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576338"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392397"
 ---
 # <a name="pidtagscheduleinfofreebusyaway-canonical-property"></a>PidTagScheduleInfoFreeBusyAway 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "22576338"
 |データの種類 :   <br/> |PT_MV_BINARY  <br/> |
 |エリア:  <br/> |空き/予約済み  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 形式、計算し、このプロパティの制約は、 **PR_SCHDINFO_FREEBUSY_TENTATIVE** ([PidTagScheduleInfoFreeBusyTentative](pidtagscheduleinfofreebusytentative-canonical-property.md)) のものと同じですが、関連付けられているカレンダーの不在時に設定されている予定を参照してください。
   
@@ -42,11 +42,11 @@ ms.locfileid: "22576338"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOPFFB]](http://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
+[[MS OXOPFFB]](https://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
   
 > ユーザーまたはリソースの可用性を発行します。
     
