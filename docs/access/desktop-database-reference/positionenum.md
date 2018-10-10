@@ -1,0 +1,81 @@
+---
+title: PositionEnum (デスクトップ データベース参照のアクセス)
+TOCTitle: PositionEnum
+ms:assetid: 2a6f294b-74f2-b951-e32a-79ff5e782204
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249054(v=office.15)
+ms:contentKeyID: 48543907
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 2c2ef44c804a413b85bcf393e1487ff4423c40f0
+ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25476716"
+---
+# <a name="positionenum"></a>PositionEnum
+
+
+**適用されます**Access 2013 |。Office 2013
+
+[Recordset](recordset-object-ado.md) 内のレコード ポインターの現在の位置を表します。
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>定数</p></th>
+<th><p>値</p></th>
+<th><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>adPosBOF</strong></p></td>
+<td><p>-2</p></td>
+<td><p>現在のレコード ポインターが BOF にあることを示します (<a href="bof-eof-properties-ado.md">BOF</a> プロパティが <strong>True</strong> です)。</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>adPosEOF</strong></p></td>
+<td><p>-3</p></td>
+<td><p>現在のレコード ポインターが EOF にあることを示します (<a href="bof-eof-properties-ado.md">EOF</a> プロパティが <strong>True</strong> です)。</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>adPosUnknown</strong></p></td>
+<td><p>-1</p></td>
+<td><p><strong>Recordset</strong> が空であるか、現在の位置が不明か、またはプロバイダーが <a href="absolutepage-property-ado.md">AbsolutePage</a> プロパティまたは <a href="absoluteposition-property-ado.md">AbsolutePosition</a> プロパティをサポートしていないことを示します。</p></td>
+</tr>
+</tbody>
+</table>
+
+
+**ADO/WFC 等価**
+
+パッケージ: **com.ms.wfc.data**
+
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>定数</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>AdoEnums.Position.BOF</p></td>
+</tr>
+<tr class="even">
+<td><p>AdoEnums.Position.EOF</p></td>
+</tr>
+<tr class="odd">
+<td><p>AdoEnums.Position.UNKNOWN</p></td>
+</tr>
+</tbody>
+</table>
+
