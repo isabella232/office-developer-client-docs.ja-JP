@@ -1,0 +1,69 @@
+---
+title: Connections メンバー (DAO)
+TOCTitle: Connections Members
+ms:assetid: e57a9548-455b-b6e8-6e9c-8bbf9613003a
+ms:mtpsurl: https://msdn.microsoft.com/library/Ff835954(v=office.15)
+ms:contentKeyID: 48548361
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 6701171a418b229a5d1a5844809689388837f87b
+ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25479129"
+---
+# <a name="connections-members-dao"></a>Connections メンバー (DAO)
+
+
+**適用されます**Access 2013 |。Office 2013
+
+
+> [!NOTE]
+> <P>[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。 Connections コレクションには、 Workspace オブジェクトの現在の Connection オブジェクトが含まれます (ODBCDirect ワークスペースのみ)。</P>
+
+
+
+## <a name="methods"></a>メソッド
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>名前</p></th>
+<th><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong><a href="connections-refresh-method-dao.md">Refresh</a></strong></p></td>
+<td><p><strong><a href="connections-collection-dao.md">Connections</a></strong> コレクションではサポートされていません。</p></td>
+</tr>
+</tbody>
+</table>
+
+
+## <a name="properties"></a>プロパティ
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>名前</p></th>
+<th><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong><a href="connections-count-property-dao.md">カウント</a></strong></p></td>
+<td><p><strong><a href="connection-object-dao.md">Connections</a></strong> コレクション内の <strong><a href="connections-collection-dao.md">Connection</a></strong> オブジェクトの数を返します。</p></td>
+</tr>
+</tbody>
+</table>
+
