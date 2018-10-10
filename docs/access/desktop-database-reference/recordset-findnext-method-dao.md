@@ -1,0 +1,167 @@
+---
+title: Recordset.FindNext メソッド (DAO)
+TOCTitle: FindNext Method
+ms:assetid: 5457dfc8-e561-5624-74d0-34278ba2e7cb
+ms:mtpsurl: https://msdn.microsoft.com/library/Ff194099(v=office.15)
+ms:contentKeyID: 48544893
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 10e97e145a84a1224ac2837e807b90d412248f9d
+ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25477353"
+---
+# <a name="recordsetfindnext-method-dao"></a>Recordset.FindNext メソッド (DAO)
+
+**適用されます**Access 2013 |。Office 2013
+
+ダイナセット タイプまたはスナップショット タイプの **[Recordset](recordset-object-dao.md)** オブジェクトで、指定された条件を満たす次のレコードを検索し、そのレコードをカレント レコードにします (Microsoft Access ワークスペースのみ)。
+
+## <a name="syntax"></a>構文
+
+*式*です。FindNext (***条件***)
+
+*式***レコード セット**オブジェクトを表す変数です。
+
+### <a name="parameters"></a>パラメーター
+
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>名前</p></th>
+<th><p>必須/オプション</p></th>
+<th><p>データ型</p></th>
+<th><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>基準</p></td>
+<td><p>必須</p></td>
+<td><p><strong>文字列型 (String)</strong></p></td>
+<td><p>レコードの検索に使用する文字列です。SQL ステートメントの WHERE 句に似ていますが、WHERE という語は付けません。</p></td>
+</tr>
+</tbody>
+</table>
+
+
+## <a name="remarks"></a>注釈
+
+特定の条件を満たすレコードだけでなく、すべてのレコードを検索対象とする場合は、 **Move** メソッドを使用してレコード間を移動します。テーブル タイプの **Recordset** でレコードを検索するには、 **Seek** メソッドを使用します。
+
+条件を満たすレコードが検出されない場合、カレント レコードを参照するポインターは不明となり、 **NoMatch** プロパティが **True** に設定されます。recordset に条件を満たすレコードが複数含まれている場合の検出対象は、 **FindFirst** では最初に出現したもの、 **FindNext** では次に出現したもの、などとなります。
+
+次の表に、各 **Find** メソッドの検索開始位置と検索方向を示します。
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>Find メソッド</p></th>
+<th><p>検索開始位置</p></th>
+<th><p>検索方向</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>FindFirst</strong></p></td>
+<td><p>レコードセットの先頭</p></td>
+<td><p>レコードセットの末尾</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>FindLast</strong></p></td>
+<td><p>レコードセットの末尾</p></td>
+<td><p>レコードセットの先頭</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>FindNext</strong></p></td>
+<td><p>カレント レコード</p></td>
+<td><p>レコードセットの末尾</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>FindPrevious</strong></p></td>
+<td><p>カレント レコード</p></td>
+<td><p>レコードセットの先頭</p></td>
+</tr>
+</tbody>
+</table>
+
+
+ただし、いずれかの **Find** メソッドを使用した場合と、 **Move** メソッドを使用した場合の結果は同じではなく、後者は、条件を指定せずに、最初のレコード、最後のレコード、次のレコード、または前のレコードをカレント レコードにするだけです。Find 操作の後に Move 操作を使用する場合もあります。
+
+**NoMatch** プロパティの値を必ず確認して、Find 操作が成功したかどうか調べてください。検索が成功した場合、 **NoMatch** は **False** です。失敗した場合、 **NoMatch** は **True** で、カレント レコードは未定義となります。この場合は、カレント レコードを参照するポインターを有効なレコードに戻す必要があります。
+
+**Find** メソッドを Microsoft Access データベース エンジンに接続された ODBC アクセスのレコードセットで使用すると、効率が悪い場合があります。特に大きなレコードセットを操作するときは、criteria の表現を変更すると、より迅速に特定のレコードを検出できる場合があります。
+
+ODBCDirect ワークスペースでは、 **Recordset** オブジェクトの種類により、 **Find** メソッドおよび **Seek** メソッドを使用できない場合があります。これは、ネットワーク上で ODBC 接続を経由して **Find** や **Seek** を実行しても、あまり効率的ではないからです。代わりに、 **Find** メソッドまたは **Seek** メソッドで使用するはずの条件を満たすレコードだけを返すよう指定する適切な WHERE 句を使用して、クエリを作成します (つまり **OpenRecordset** メソッドで引数 source を使用します)。
+
+Microsoft Access データベース エンジンに接続している ODBC データベースでダイナセット タイプの大きな v オブジェクトを操作している場合、 **Find** メソッド、 **Sort** プロパティ、または **Filter** プロパティを使用すると、処理速度が遅いことがあります。パフォーマンスを向上するには、カスタマイズした ORDER BY 句または WHERE 句のある SQL クエリ、パラメーター クエリ、またはインデックスが作成されている特定のレコードを取得する **QueryDef** オブジェクトを使用します。
+
+日本語版の Microsoft Access データベース エンジンを使用する場合であっても、日付が格納されたフィールドを検索するときは米国の日付形式 (month-day-year) を使用することが推奨され、使用しないとデータが検出されないことがあります。Visual Basic の **Format** 関数を使用して、日付を変換してください。次に例を示します。
+
+```vb
+    rstEmployees.FindFirst "HireDate > #" _ 
+        & Format(mydate, 'm-d-yy' ) & "#" 
+```
+
+基準は、整数以外の値に連結された文字列の作成し、システムのパラメーターは、米国以外の小数点の記号、カンマなどを指定する場合 (たとえば、strSQL ="価格\>"& lngPrice でと lngPrice = 125,50) をしようとするときにエラーが発生しました。メソッドを呼び出します。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、SQL で小数点の記号として使用できるのはピリオドのみであるためです。
+
+> [!NOTE]
+> - 最高のパフォーマンスを*基準*する必要がありますいずれかの方法でフォーム"*フィールド* = *値*"*フィールド*が、インデックス付きのフィールド内にある基になるベース テーブル、または「*フィールド**のプレフィックス*と同じように」*フィールド*がある、*プレフィックス*と基になるベース テーブルでインデックス付きのフィールドは、プレフィックス検索文字列 (たとえば、「アート *」) です。
+> 
+> - 一般に、同じような検索を行う場合は、 **Find** メソッドよりも **Seek** メソッドを使用する方がパフォーマンスが優れています。ただし、これを使用できるのは、テーブル タイプの **Recordset** オブジェクトだけを検索対象とする場合です。
+
+
+## <a name="example"></a>例
+
+次の例は、 FindFirst および FindNext メソッドを使用して、 Recordset 内のレコードを見つける方法を示します。
+
+**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+
+
+```vb
+    Sub FindOrgName()
+    
+        Dim dbs As DAO.Database
+        Dim rst As DAO.Recordset
+        
+        'Get the database and Recordset
+        Set dbs = CurrentDb
+        Set rst = dbs.OpenRecordset("tblCustomers")
+    
+        'Search for the first matching record   
+        rst.FindFirst "[OrgName] LIKE '*parts*'"
+        
+        'Check the result
+        If rst.NoMatch Then
+            MsgBox "Record not found."
+            GotTo Cleanup
+        Else
+            Do While Not rst.NoMatch
+                MsgBox "Customer name: " & rst!CustName
+                rst.FindNext "[OrgName] LIKE '*parts*'"
+            Loop
+    
+            'Search for the next matching record
+            rst.FindNext "[OrgName] LIKE '*parts*'"
+        End If
+       
+        Cleanup:
+            rst.Close
+            Set rst = Nothing
+            Set dbs = Nothing
+    
+    End Sub
+```
