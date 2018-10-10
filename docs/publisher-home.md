@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b0f11822-d45e-48e6-bf59-990164e3d6d9
 description: ソリューションの開発と Publisher のカスタマイズを行う方法を記載したコンテンツ、技術記事、リファレンスをご覧ください。
-ms.openlocfilehash: 0beb7085648a81cf835d1aed6c7f33c011532f14
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.openlocfilehash: 16e250b1b04a2c5c63e19aa3a6b7e0ad0cd1caef
+ms.sourcegitcommit: 6a314fdfde4349591ed899019695c36537f45924
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397241"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454545"
 ---
 # <a name="publisher"></a>Publisher
 
@@ -22,10 +22,10 @@ ms.locfileid: "25397241"
 
 ### <a name="viewed-most"></a>よく参照される資料
 
-- [Publisher VBA リファレンス](https://msdn.microsoft.com/VBA/VBA-Publisher)
+- [Publisher VBA リファレンス](https://docs.microsoft.com/office/vba/api/overview/publisher)
 
 - 
-  [Publisher 2010](https://msdn.microsoft.com/library/office/ff604963(v=office.14).aspx)
+  [Publisher 2010](https://docs.microsoft.com/previous-versions/office/developer/office-2010/ff604963(v=office.14))
 
 
 ### <a name="office-add-ins"></a>Office アドイン 
@@ -37,10 +37,10 @@ ms.locfileid: "25397241"
 
 ### <a name="other-resources"></a>その他のリソース
 
-- [Office VBA オブジェクト ライブラリ リファレンス](https://msdn.microsoft.com/VBA/Office-Shared-VBA/articles/office-vba-object-library-reference)
+- [Office VBA オブジェクト ライブラリ リファレンス](https://docs.microsoft.com/office/vba/api/overview/library-reference)
 
-- [Office VBA 言語リファレンス](https://msdn.microsoft.com/VBA/VBA-Language-Reference) 
+- [Office VBA 言語リファレンス](https://docs.microsoft.com/office/vba/api/overview/language-reference) 
 
-- [Open XML SDK](https://msdn.microsoft.com/library/bb448854.aspx)
+- [Open XML SDK](https://docs.microsoft.com/office/open-xml/open-xml-sdk)
 
-- [Office 用 VSTO アドイン](https://msdn.microsoft.com/library/jj620922.aspx)
+- [Office 用 VSTO アドイン](https://docs.microsoft.com/visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio?view=vs-2017)
