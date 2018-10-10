@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8fa5ac8d-3f63-499c-bb4e-439984773e4a
 description: MAPI API で使用する定数の定義、MAPI インターフェイス宣言、クラスとインターフェイス識別子。
-ms.openlocfilehash: dfc7d16cdb2f57d3f095ceea5fa1ba2eba2e3afe
-ms.sourcegitcommit: b91294da1627f6580f52fd3867e2fec8073c6531
+ms.openlocfilehash: 343b777550d88276a1f5cad19f12ae7fc09c6244
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "25362044"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393734"
 ---
 # <a name="mapi-constants"></a>MAPI 定数
 
@@ -575,7 +575,7 @@ Outlook の MAPI では、特別な再構成を行わずに GC サーバーに�
 |MAPI_E_RECONNECTED  <br/> |0x80040125  <br/> |リモート プロシージャ コール (RPC) 接続トークンが古くなっている場合に返されます。 現在のトランザクションのトークンが、再接続を示す接続のトークンと異なる場合は、**MAPI_E_RECONNECTED** が返され、**MAPI_E_END_OF_SESSION** と同じように扱うことができます。 呼び出しは再試行する必要があります。  <br/> |
 |MAPI_E_OFFLINE  <br/> |0x80040126  <br/> |接続がオフラインのときに返されます。 通常、サーバーの障害やネットワーク接続の切断など、環境内に何かが発生したことを意味します。 このエラーは、キャッシュ モードのプロファイルを使用して、サーバーと通信するためにキャッシュをバイパスしようとしたときに最も発生しやすくなります。 キャッシュによって最初にサーバーとの接続を確立できなかった場合は、オフライン状態になっている可能性があります。その場合、**MAPI_E_OFFLINE** が現れます。  <br/> |
    
-上記に該当する可能性のあるすべてのシナリオの場合、上記 2 つのエラーはいずれも返されません。 ほとんどの場合、**MAPI\_E_NETWORK_ERROR** または **MAPI_E_CALL_FAILED** が返されます。 [Microsoft Exchange Server MAPI クライアントと Collaboration Data Objects 1.2.1](http://support.microsoft.com/kb/171440) のダウンロードを使用すれば、いずれも表示されなくなります。 
+上記に該当する可能性のあるすべてのシナリオの場合、上記 2 つのエラーはいずれも返されません。 ほとんどの場合、**MAPI\_E_NETWORK_ERROR** または **MAPI_E_CALL_FAILED** が返されます。 [Microsoft Exchange Server MAPI クライアントと Collaboration Data Objects 1.2.1](https://support.microsoft.com/kb/171440) のダウンロードを使用すれば、いずれも表示されなくなります。 
   
 ### <a name="definitions-for-exchange-server-mailbox-cached-mode-quotas"></a>Exchange Server メールボックスのキャッシュ モードのクォータに関する定義
 
