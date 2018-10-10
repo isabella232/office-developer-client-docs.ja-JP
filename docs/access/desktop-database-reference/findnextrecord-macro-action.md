@@ -1,0 +1,56 @@
+---
+title: "'FindNextRecord/次のレコードを検索' マクロ アクション"
+TOCTitle: FindNextRecord Macro Action
+ms:assetid: 57fb6457-9098-4e81-c693-78ccd262ce0b
+ms:mtpsurl: https://msdn.microsoft.com/library/Ff194307(v=office.15)
+ms:contentKeyID: 48544985
+ms.date: 09/18/2015
+mtps_version: v=office.15
+f1_keywords:
+- vbaac10.chm89832
+f1_categories:
+- Office.Version=v15
+ms.openlocfilehash: b58478a67468fa7d00c348066459672bc31c52a7
+ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25478795"
+---
+# <a name="findnextrecord-macro-action"></a>"FindNextRecord/次のレコードを検索" マクロ アクション
+
+
+**適用されます**Access 2013 |。Office 2013
+
+前の操作を**行って**または、[**検索し、置換**] ダイアログ ボックスの値で指定された条件を満たす次のレコードを検索する**FindNextRecord**アクションを使用することができます ([**ホーム**] タブの [**検索**] をクリック) します。 **FindNextRecord**アクションを使用するにはレコードを繰り返し検索します。 たとえば、すべてのレコードの中から特定の得意先のレコードを連続して検索できます。
+
+## <a name="setting"></a>設定値
+
+**FindNextRecord**アクション引数はありません。 **FindNextRecord**アクションは、次の操作を**行って**または、[**検索し、置換**] ダイアログ ボックスで設定した基準を満たすレコードを検索します。 **FindRecord**アクションの引数は、 **[検索し、置換**] ダイアログ ボックスでオプションを使用して共有されます。
+
+検索条件を設定するには、操作を**行って**を使用します。 通常、マクロで操作を**行って**を入力し、 **FindNextRecord**アクションを使用して同じ条件を満たすレコードを検索します。 場合のみ、特定の条件のレコードを検索するのには満たされている、 **FindNextRecord**アクションのアクション行の [**条件**] 列に条件式を入力できます。
+
+## <a name="remarks"></a>解説
+
+このアクションの動作は、[ **検索と置換**] ダイアログ ボックスの [ **次を検索**] をクリックした場合と同じです。
+
+
+> [!NOTE]
+> <P>操作を<STRONG>行って</STRONG>は、テーブル、クエリ、およびフォームの [<STRONG>ホーム</STRONG>] タブの [<STRONG>検索</STRONG>] コマンドに対応しています、[コード] ウィンドウで [<STRONG>編集</STRONG>] メニューの [<STRONG>検索</STRONG>] コマンドに対応していません。 モジュール内のテキストを検索する操作を<STRONG>行って</STRONG>、 <STRONG>FindNextRecord</STRONG>アクションを使うことはできません。</P>
+
+
+
+
+> [!TIP]
+> <P>操作を<STRONG>行って</STRONG>の<STRONG>現在のフィールド</STRONG>の引数を<STRONG>[はい]</STRONG>に設定するとは、検索対象となる、<STRONG>を使用する前にデータを格納しているコントロールにフォーカスを移動するのには<STRONG>フォーカスを移動</STRONG>を使用する必要があります。FindNextRecord</STRONG>アクション。</P>
+
+
+
+現在選択されているテキストがある場合、検索する文字列と同じ**FindNextRecord**のマクロ アクション実行時に、選択範囲、選択範囲は、同じフィールドで、同じレコードの直後、検索が開始されます。 選択されているテキストと検索テキストが異なる場合は、カレント レコードの先頭から検索が開始されます。 このため、1 つのレコードに同じ検索条件を満たすテキストが複数存在する場合の検索が可能です。
+
+ただし、 **FindNextRecord**アクションを含むマクロを実行するコマンド ボタンを使用する場合、検索条件の最初のインスタンスが見つからないを繰り返しします。 この現象は、一致する値を含むフィールドからフォーカスを削除するコマンド ボタンをクリックするとされるために発生します。 **FindNextRecord**アクションは、レコードの先頭から検索し、開始されます。 この問題を避けるためには、カスタム ツールバーのボタンや AutoKeys マクロで定義されているキーの組み合わせなど、フォーカスを変更しない方法を使用してマクロを実行します。 代わりに、マクロの**FindNextRecord**アクションを実行する前に、検索条件を含むフィールドにフォーカスを設定します。
+
+**No**に設定する**最初の検索**引数を指定して操作を**行って**を含むマクロを実行するコマンド ボタンを使用する場合も同じ現象が発生します。
+
+モジュールの Visual Basic for Applications の**FindNextRecord**アクションを実行するには、 **DoCmd**オブジェクトの**FindNext**メソッドを使用します。
+

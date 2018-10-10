@@ -1,0 +1,30 @@
+---
+title: Workspaces オブジェクト参照 (DAO)
+TOCTitle: Workspaces Object
+ms:assetid: eb32673a-ffbd-4f6a-9a11-60c93f632be3
+ms:mtpsurl: https://msdn.microsoft.com/library/Dn126013(v=office.15)
+ms:contentKeyID: 52074882
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 06127fbaf278dd4057cfe086c9411172cf8780ac
+ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25478952"
+---
+# <a name="workspaces-object-reference-dao"></a>Workspaces オブジェクト参照 (DAO)
+
+
+**適用されます**Access 2013 |。Office 2013
+
+
+
+  - [Workspaces コレクション (DAO)](workspaces-collection-dao.md)
+
+  - [Workspaces メンバー (DAO)](workspaces-members-dao.md)
+
+  - [Workspaces プロパティ (DAO)](workspaces-properties-dao.md)
+
+  - [Workspaces メソッド (DAO)](workspaces-methods-dao.md)
+
