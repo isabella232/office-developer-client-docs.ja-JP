@@ -20,7 +20,7 @@ items:
   - name: Office Online Server
     href: excel/configure-udfs-in-excel-online-in-office-online-server-preview.md
   - name: Office for Mac
-    href: https://msdn.microsoft.com/en-us/library/office/mt654019.aspx
+    href: https://docs.microsoft.com/office/vba/api/overview/office-mac
   - name: Office 共有
     href: shared/office-shared.md
     items:
@@ -38,20 +38,20 @@ items:
       - name: Office の互換性に関する問題
         href: shared/compatibility-issues-in-office.md
     - name: Office VBA オブジェクト ライブラリ リファレンス
-      href: https://msdn.microsoft.com/en-us/VBA/Office-Shared-VBA/articles/office-vba-object-library-reference
+      href: https://docs.microsoft.com/office/vba/Library-Reference/Concepts/office-vba-object-library-reference
     - name: Office VBA 言語リファレンス
-      href: https://msdn.microsoft.com/en-us/VBA/VBA-Language-Reference
+      href: https://docs.microsoft.com/office/vba/api/overview/language-reference
     - name: Office プライマリ相互運用機能アセンブリのリファレンス
-      href: https://msdn.microsoft.com/en-us/library/office/ff597925.aspx
+      href: https://docs.microsoft.com/visualstudio/vsto/office-primary-interop-assemblies?view=vs-2017
     - name: Open XML SDK 2.5
-      href: https://msdn.microsoft.com/en-us/library/office/bb448854.aspx
+      href: https://docs.microsoft.com/office/open-xml/open-xml-sdk
     - name: CSISyncClient を使用した ODC の制御
       href: shared/using-csisyncclient-to-control-the-office-document-cache-odc.md
   - name: Access
     href: access/access-home.md
     items:
     - name: Access VBA リファレンス
-      href: https://msdn.microsoft.com/en-us/library/mt346046.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/access
     - name: Access カスタム Web アプリ リファレンス
       href: access/access-custom-web-app-reference.md
       items:
@@ -253,7 +253,7 @@ items:
           - name: 文字列演算子
             href: access/string-operators-access-custom-web-app.md
             items:
-            - name: 文字列連結演算子
+            - name: 文字列の結合
               href: access/plusstring-concatenation-operatoraccess-custom-web-app.md
       - name: マクロ関数リファレンス
         href: access/macro-function-reference-access-custom-web-app.md
@@ -276,7 +276,7 @@ items:
             href: access/stopmacro-macro-action-access-custom-web-app.md
           - name: CancelRecordChange
             href: access/cancelrecordchange-macro-action-access-custom-web-app.md
-          - name: DeleteRecord Data
+          - name: DeleteRecord データ
             href: access/deleterecord-data-macro-action-access-custom-web-app.md
           - name: RaiseError
             href: access/raiseerror-macro-action-access-custom-web-app.md
@@ -345,14 +345,14 @@ items:
           - name: OpenPopup
             href: access/openpopup-macro-action-access-custom-web-app.md
     - name: Access デスクトップ データベース リファレンス
-      href: https://msdn.microsoft.com/en-us/library/dn142571.aspx
+      href: https://msdn.microsoft.com/library/dn142571.aspx
   - name: Excel
     href: excel/excel-home.md
     items:
     - name: Excel VBA リファレンス
-      href: https://msdn.microsoft.com/en-us/library/office/ee861528.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/excel
     - name: Excel プライマリ相互運用機能アセンブリ リファレンス
-      href: https://msdn.microsoft.com/en-us/library/office/ff597926.aspx
+      href: https://docs.microsoft.com/visualstudio/vsto/office-primary-interop-assemblies?view=vs-2017
     - name: Excel XLL SDK
       href: excel/welcome-to-the-excel-software-development-kit.md
       items:
@@ -398,7 +398,7 @@ items:
           href: excel/calling-into-excel-from-the-dll-or-xll.md
         - name: XLL を作成する
           href: excel/creating-xlls.md
-        - name: イベントの処理
+        - name: イベントを処理する
           href: excel/handling-events.md
         - name: 名前と他のワークシートの数式を評価する
           href: excel/evaluating-names-and-other-worksheet-formula-expressions.md
@@ -413,15 +413,15 @@ items:
             href: excel/multithreaded-recalculation-in-excel.md
         - name: 非同期のユーザー定義関数
           href: excel/asynchronous-user-defined-functions.md
-        - name: クラスター セーフ関数
+        - name: クラスター セーフな関数
           href: excel/cluster-safe-functions.md
         - name: 時間のかかる操作でユーザーによる中断を許可する
           href: excel/permitting-user-breaks-in-lengthy-operations.md
-        - name: DLL または XLL ファイルの中からダイアログ ボックスを表示する
+        - name: DLL または XLL の中からダイアログ ボックスを表示する
           href: excel/displaying-dialog-boxes-from-within-a-dll-or-xll.md
         - name: Excel インスタンスとメイン ウィンドウ ハンドルへのアクセス
           href: excel/how-to-access-excel-instance-and-main-window-handles.md
-        - name: 下位互換性
+        - name: 下位互換機能
           href: excel/backward-compatibility.md
       - name: Excel クラスター コネクタの開発
         href: excel/developing-excel-cluster-connectors.md
@@ -600,7 +600,7 @@ items:
           - name: ShowOptions
             href: excel/showoptions.md
     - name: パフォーマンスの問題を最適化するヒント
-      href: https://msdn.microsoft.com/en-us/library/office/mt709003.aspx
+      href: https://docs.microsoft.com/office/vba/excel/concepts/excel-performance/excel-tips-for-optimizing-performance-obstructions
   - name: Infopath
     href: infopath/infopath-home.md
     items:
@@ -625,11 +625,11 @@ items:
             href: infopath/form-templates/how-to-add-an-event-handler.md
           - name: コードを含む InfoPath フォーム テンプレートをプレビューおよびデバッグする
             href: infopath/form-templates/how-to-preview-and-debug-infopath-form-templates-with-code.md
-          - name: 完全な信頼が必要なフォーム テンプレートをプレビューおよびデバッグする
+          - name: 完全信頼が必要なフォーム テンプレートをプレビューおよびデバッグする
             href: infopath/form-templates/how-to-preview-and-debug-form-templates-that-require-full-trust.md
           - name: 'チュートリアル: コードを含む基本的なフォーム テンプレートの作成'
             href: infopath/form-templates/walkthrough-creating-a-basic-form-template-with-code.md
-          - name: デバッグのためにフィールドの値を記録する
+          - name: デバッグのために値のログをフィールドに記録する
             href: infopath/form-templates/how-to-log-values-to-a-field-for-debugging.md
           - name: InfoPath Toolkit で作成したフォーム テンプレートを開くか変換する
             href: infopath/form-templates/how-to-open-or-convert-a-form-template-created-with-the-infopath-toolkit.md
@@ -641,7 +641,7 @@ items:
             href: infopath/form-templates/how-to-work-with-the-xpathnavigator-and-xpathnodeiterator-classes.md
           - name: SharePoint オブジェクト モデルのメンバーを使用する
             href: infopath/form-templates/how-to-use-sharepoint-object-model-members.md
-          - name: コードを含むフォームの公開
+          - name: コードを含むフォームを発行する
             href: infopath/form-templates/publishing-forms-with-code.md
           - name: サンドボックス ソリューションのサンプル
             href: infopath/form-templates/sample-sandboxed-solutions.md
@@ -685,7 +685,7 @@ items:
             href: infopath/form-templates/security-guidelines-for-developing-infopath-forms.md
           - name: コードを含むフォーム テンプレートのセキュリティ設定を構成する
             href: infopath/form-templates/how-to-configure-security-settings-for-form-templates-with-code.md
-          - name: セキュリティ レベル、電子メール展開、およびリモート フォーム テンプレート
+          - name: セキュリティ レベル、メール展開、リモート フォーム テンプレート
             href: infopath/form-templates/security-levels-email-deployment-and-remote-form-templates.md
           - name: 完全に信頼できるフォームについて
             href: infopath/form-templates/understanding-fully-trusted-forms.md
@@ -717,7 +717,7 @@ items:
             href: infopath/form-templates/hosting-infopath-as-an-xml-editor-in-another-application.md
           - name: リッチ テキストと Web サービス
             href: infopath/form-templates/rich-text-and-web-services.md
-          - name: InfoPath、RPC エンコード、および Web サービス
+          - name: InfoPath、RPC エンコード、Web サービス
             href: infopath/form-templates/infopath-rpc-encoding-and-web-services.md
           - name: InfoPath フォームと Microsoft Access データベースの統合
             href: infopath/form-templates/integrate-an-infopath-form-with-a-microsoft-access-database.md
@@ -731,61 +731,61 @@ items:
         - name: InfoPath 2003 オブジェクト モデルを使用してフォーム テンプレートの開発作業を開始する
           href: infopath/form-templates/get-started-developing-form-templates-using-infopath-object-model.md
           items:
-          - name: InfoPath 2003 オブジェクト モデルを使用してフォーム テンプレートを作成する
+          - name: フォーム テンプレートを作成する
             href: infopath/form-templates/how-to-create-a-form-template-using-the-infopath-2003-object-model.md
-          - name: 'チュートリアル: InfoPath 2003 オブジェクト モデルを使用して基本的なフォーム テンプレートを作成およびデバッグする'
+          - name: 基本的なフォーム テンプレートを作成およびデバッグする
             href: infopath/form-templates/walkthrough-create-and-debug-basic-form-template-using-infopath-object-model.md
-          - name: InfoPath 2003 オブジェクト モデルを使用したフォーム テンプレート開発のための一般的な作業
+          - name: フォーム テンプレートを開発するための一般的なタスク
             href: infopath/form-templates/common-tasks-for-developing-form-templates-using-infopath-object-model.md
           - name: InfoPath 2003 と互換性のない Microsoft.Office.Interop.InfoPath.SemiTrust のメンバーを使用する
             href: infopath/form-templates/how-to-use-microsoft-office-interop-infopath-semitrust-members.md
-        - name: InfoPath 2003 オブジェクト モデルを使用したフォーム テンプレートの作成
+        - name: InfoPath 2003 オブジェクト モデルを使用してフォーム テンプレートを作成する
           href: infopath/form-templates/creating-form-templates-using-the-infopath-2003-object-model.md
           items:
-          - name: InfoPath 2003 オブジェクト モデルを使用したコードの初期化とクリーンアップ
+          - name: 初期化と後処理コード
             href: infopath/form-templates/initialization-and-clean-up-code-using-infopath-2003-object-model.md
-          - name: InfoPath 2003 オブジェクト モデルを使用して InfoPath プロジェクトをデバッグする
+          - name: InfoPath プロジェクトをデバッグする
             href: infopath/form-templates/how-to-debug-infopath-projects-using-the-infopath-2003-object-model.md
-          - name: InfoPath 2003 オブジェクト モデルを使用してイベント ハンドラーを追加する
+          - name: イベント ハンドラーを追加する
             href: infopath/form-templates/how-to-add-an-event-handler-using-the-infopath-2003-object-model.md
-          - name: InfoPath 2003 オブジェクト モデルを使用した InfoPath プロジェクトでのスレッド サポート
+          - name: InfoPath プロジェクトでのスレッドのサポート
             href: infopath/form-templates/threading-support-in-infopath-projects-using-the-infopath-2003-object-model.md
-          - name: InfoPath 2003 オブジェクト モデルを使用した MSXML および System.Xml の操作
+          - name: MSXML と System.Xml を操作する
             href: infopath/form-templates/working-with-msxml-and-system-xml-using-the-infopath-2003-object-model.md
         - name: InfoPath 2003 オブジェクト モデルについて
           href: infopath/form-templates/understanding-the-infopath-2003-object-model.md
           items:
           - name: InfoPath 2003 互換オブジェクト モデル
             href: infopath/form-templates/infopath-2003-compatible-object-models.md
-          - name: InfoPath 2003 オブジェクト モデルを使用してアプリケーション データにアクセスする
+          - name: アプリケーション データにアクセスする
             href: infopath/form-templates/how-to-access-application-data-using-the-infopath-2003-object-model.md
-          - name: InfoPath 2003 オブジェクト モデルを使用して外部データ ソースにアクセスする
+          - name: 外部データ ソースにアクセスする
             href: infopath/form-templates/how-to-access-external-data-sources-using-the-infopath-2003-object-model.md
-          - name: InfoPath 2003 オブジェクト モデルを使用してフォーム データにアクセスする
+          - name: フォーム データにアクセスする
             href: infopath/form-templates/how-to-access-form-data-using-the-infopath-2003-object-model.md
-          - name: InfoPath 2003 オブジェクト モデルを使用して警告とダイアログ ボックスを表示する
+          - name: 警告とダイアログ ボックスを表示する
             href: infopath/form-templates/how-to-display-alerts-and-dialog-boxes-using-the-infopath-2003-object-model.md
-          - name: InfoPath 2003 オブジェクト モデルを使用してエラーを処理する
+          - name: エラーを処理する
             href: infopath/form-templates/how-to-handle-errors-using-the-infopath-2003-object-model.md
-          - name: InfoPath 2003 オブジェクト モデルを使用してフォーム イベントに応答する
+          - name: フォーム イベントに応答する
             href: infopath/form-templates/how-to-respond-to-form-events-using-the-infopath-2003-object-model.md
-          - name: InfoPath 2003 オブジェクト モデルを使用してフォーム ウィンドウを操作する
+          - name: フォーム ウィンドウを操作する
             href: infopath/form-templates/how-to-work-with-form-windows-using-the-infopath-2003-object-model.md
-          - name: InfoPath 2003 オブジェクト モデルを使用してビューを操作する
+          - name: ビューを操作する
             href: infopath/form-templates/how-to-work-with-views-using-the-infopath-2003-object-model.md
-          - name: InfoPath 2003 オブジェクト モデルを使用してデジタル署名を操作する
+          - name: デジタル署名を操作する
             href: infopath/form-templates/how-to-work-with-digital-signatures-using-the-infopath-2003-object-model.md
-          - name: InfoPath 2003 オブジェクト モデルを使用してオフライン ソリューションを操作する
+          - name: オフライン ソリューションを操作する
             href: infopath/form-templates/how-to-work-with-offline-solutions-using-the-infopath-2003-object-model.md
         - name: InfoPath 2003 オブジェクト モデルを使用したフォーム テンプレートのトラブルシューティング
           href: infopath/form-templates/troubleshoot-form-templates-that-use-infopath-object-model.md
           items:
-          - name: InfoPath 2003 オブジェクト モデルを使用したフォーム テンプレートの実行時トラブルシューティング
+          - name: フォーム テンプレートの実行時トラブルシューティング
             href: infopath/form-templates/troubleshoot-form-templates-that-use-infopath-object-model-at-runtime.md
-          - name: InfoPath 2003 オブジェクト モデルを使用したフォーム テンプレートの設計時トラブルシューティング
+          - name: フォーム テンプレートの設計時トラブルシューティング
             href: infopath/form-templates/troubleshoot-form-templates-that-use-infopath-object-model-at-design-time.md
       - name: InfoPath フォーム テンプレートのクラス ライブラリ リファレンス
-        href: https://msdn.microsoft.com/en-us/library/office/ee526341.aspx
+        href: https://msdn.microsoft.com/library/office/ee526341.aspx
     - name: InfoPath 外部自動化の開発者向けリファレンス
       href: infopath/external-automation/infopath-developer-reference-for-external-automation.md
       items:
@@ -801,12 +801,12 @@ items:
           href: infopath/external-automation/about-the-microsoft-office-infopath-primary-interop-assembly.md
         - name: InfoPath XML 相互運用機能アセンブリについて
           href: infopath/external-automation/about-the-infopath-xml-interop-assembly.md
-        - name: 外部オートメーションのシナリオと例
+        - name: 外部自動化のシナリオと例
           href: infopath/external-automation/external-automation-scenarios-and-examples.md
         - name: 外部アプリケーションからの InfoPath の自動化
           href: infopath/external-automation/automating-infopath-from-an-external-application.md
       - name: InfoPath 外部自動化のクラス ライブラリ リファレンス
-        href: https://msdn.microsoft.com/en-us/library/office/ff663147.aspx
+        href: https://msdn.microsoft.com/library/office/ff663147.aspx
   - name: OneNote
     href: onenote/onenote-home.md
     items:
@@ -829,9 +829,336 @@ items:
     - name: Outlook 用のソリューションを開発するための API またはテクノロジの選択
       href: outlook/selecting-an-api-or-technology-for-developing-solutions-for-outlook.md
     - name: Outlook VBA リファレンス
-      href: https://msdn.microsoft.com/EN-US/library/office/ee861520.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/outlook
     - name: Outlook プライマリ相互運用機能アセンブリ リファレンス
-      href: https://msdn.microsoft.com/EN-US/library/office/bb652780.aspx
+      href: outlook/pia/welcome-to-the-outlook-primary-interop-assembly-reference.md
+      items:
+      - name: Outlook PIA リファレンスの新機能
+        href: outlook/pia/what-s-new-in-the-outlook-pia-reference.md
+      - name: Outlook PIA を使用するためのセットアップ
+        href: outlook/pia/setting-up-to-use-the-outlook-pia.md
+        items:
+        - name: COM と .NET の相互運用性の概要
+          href: outlook/pia/introduction-to-interoperability-between-com-and-net.md
+        - name: Outlook PIA を使用する理由
+          href: outlook/pia/why-use-the-outlook-pia.md
+        - name: Outlook PIA のインストールと参照
+          href: outlook/pia/installing-and-referencing-the-outlook-pia.md
+      - name: Outlook PIA のアーキテクチャ
+        href: outlook/pia/architecture-of-the-outlook-pia.md
+        items:
+        - name: Outlook PIA とオブジェクト モデルの関係
+          href: outlook/pia/relating-the-outlook-pia-with-the-object-model.md
+        - name: Outlook PIA でのオブジェクト
+          href: outlook/pia/objects-in-the-outlook-pia.md
+        - name: Outlook PIA でのメソッドとプロパティ
+          href: outlook/pia/methods-and-properties-in-the-outlook-pia.md
+        - name: Outlook PIA でのイベント
+          href: outlook/pia/events-in-the-outlook-pia.md
+      - name: Outlook PIA を使用してマネージ Outlook アドインを開発する
+        href: outlook/pia/developing-managed-outlook-add-ins-using-the-outlook-pia.md
+        items:
+        - name: カスタム イベント ハンドラーに接続する
+          href: outlook/pia/connecting-to-custom-event-handlers.md
+        - name: マネージ Outlook アドインの開発でのベスト プラクティス
+          href: outlook/pia/best-practices-in-developing-managed-outlook-add-ins.md
+          items:
+          - name: オブジェクトを系統的に解放する
+            href: outlook/pia/systematically-releasing-objects.md
+          - name: 異なるアプリケーション ドメインを使用してクラッシュを回避する
+            href: outlook/pia/using-a-separate-application-domain-to-avoid-crashing.md
+          - name: Office Developer Tools for Visual Studio で提供される信頼できるアプリケーション オブジェクトを使用する
+            href: outlook/pia/using-a-trusted-application-object-provided-by-office-developer-tools-for-visual-studio.md
+          - name: イベント ハンドラーで変数の範囲を適切に設定する
+            href: outlook/pia/scoping-variables-appropriately-in-event-handlers.md
+          - name: マネージ Outlook アドインでサポートされないテクノロジを回避する
+            href: outlook/pia/avoiding-unsupported-technologies-in-managed-outlook-add-ins.md
+          - name: 複数のバージョンの Outlook を使用する場合の遅延バインディングの使用
+            href: outlook/pia/using-late-binding-if-depending-on-multiple-versions-of-outlook.md
+      - name: 方法
+        href: outlook/pia/how-do-i-outlook-2013-pia-reference.md
+        items:
+        - name: アカウント
+          href: outlook/pia/accounts.md
+          items:
+          - name: アカウント情報を取得する
+            href: outlook/pia/how-to-get-account-information.md
+          - name: 現在のフォルダーに基づいて特定のアカウントの送信可能なアイテムを作成する
+            href: outlook/pia/how-to-create-a-sendable-item-for-a-specific-account-based-on-the-current-folder.md
+          - name: フォルダーのアカウントを取得する
+            href: outlook/pia/how-to-get-the-account-for-a-folder.md
+          - name: 複数のアカウントの情報を取得する
+            href: outlook/pia/how-to-get-information-about-multiple-accounts.md
+          - name: Hotmail アカウントを使用してメール アイテムを送信する
+            href: outlook/pia/how-to-send-a-mail-item-by-using-a-hotmail-account.md
+        - name: アドイン管理
+          href: outlook/pia/add-in-administration.md
+          items:
+          - name: コンピューター上で Outlook がクイック実行アプリケーションかどうかを確認する
+            href: outlook/pia/how-to-determine-whether-outlook-is-a-click-to-run-application-on-a-computer.md
+        - name: アドレス帳
+          href: outlook/pia/address-book.md
+          items:
+          - name: 連絡先フォルダーに対応するアドレス帳を [名前の選択] ダイアログ ボックスに表示する
+            href: outlook/pia/how-to-display-in-the-select-names-dialog-box-the-address-book-corresponding-to-a-contacts-folder.md
+          - name: ストアのグローバル アドレス一覧またはアドレス一覧のセットを取得する
+            href: outlook/pia/how-to-get-the-global-address-list-or-a-set-of-address-lists-for-a-store.md
+          - name: グローバル アドレス一覧のエントリを列挙する
+            href: outlook/pia/how-to-enumerate-the-entries-in-the-global-address-list.md
+          - name: プロファイルのアドレス一覧を表示する
+            href: outlook/pia/how-to-display-the-address-lists-for-a-profile.md
+        - name: 予定
+          href: outlook/pia/appointments.md
+          items:
+          - name: 終日イベントの予定を作成する
+            href: outlook/pia/how-to-create-an-appointment-that-is-an-all-day-event.md
+          - name: 太平洋タイム ゾーンで開始して東部タイム ゾーンで終了する予定を作成する
+            href: outlook/pia/how-to-create-an-appointment-that-starts-in-the-pacific-time-zone-and-ends-in-the-eastern-time-zone.md
+          - name: 予定アイテムに異なる受信者の種類を指定する
+            href: outlook/pia/how-to-specify-different-recipient-types-for-an-appointment-item.md
+          - name: 既定の定期的なパターンを使用して、定期的な予定を作成する
+            href: outlook/pia/how-to-create-a-recurring-appointment-by-using-the-default-recurrence-pattern.md
+          - name: 週単位パターンの定期的な予定を作成する
+            href: outlook/pia/how-to-create-a-recurring-appointment-that-has-a-weekly-pattern.md
+          - name: YearNth パターンの年単位の定期的な予定を作成する
+            href: outlook/pia/how-to-create-an-annual-recurring-appointment-that-uses-a-yearnth-pattern.md
+          - name: 定期的な一連の予定から特定の予定を検索する
+            href: outlook/pia/how-to-find-a-specific-appointment-in-a-recurring-appointment-series.md
+          - name: 定期的な一連の予定に例外的な予定を作成する
+            href: outlook/pia/how-to-create-an-exception-appointment-in-a-recurring-appointment-series.md
+          - name: 予定アイテムの事前通知を作成する
+            href: outlook/pia/how-to-create-a-reminder-for-an-appointment-item.md
+          - name: 予定の XML データを Outlook の予定オブジェクトにインポートする
+            href: outlook/pia/how-to-import-appointment-xml-data-into-outlook-appointment-objects.md
+        - name: 添付ファイル
+          href: outlook/pia/attachments.md
+          items:
+          - name: プログラムでメッセージからセキュリティ レベル 2 の添付ファイルを削除してディスクに保存する
+            href: outlook/pia/how-to-programmatically-remove-security-level-2-attachments-from-messages-and-save-them-to-disk.md
+        - name: 予定表
+          href: outlook/pia/calendar.md
+          items:
+          - name: 予定表で指定した期間内の空き時間スケジュールを共有する
+            href: outlook/pia/how-to-share-free-busy-schedule-within-a-specified-period-in-a-calendar.md
+          - name: 電子メールで予定表情報を共有する
+            href: outlook/pia/how-to-share-calendar-information-through-e-mail.md
+          - name: 受信者の共有の予定表を表示する
+            href: outlook/pia/how-to-display-a-shared-calendar-of-a-recipient.md
+          - name: 予定表をディスクに保存する
+            href: outlook/pia/how-to-save-a-calendar-to-disk.md
+          - name: iCalendar ファイルを開いて内容を表示する
+            href: outlook/pia/how-to-open-and-display-the-contents-of-an-icalendar-file.md
+        - name: 色の分類項目
+          href: outlook/pia/color-categories.md
+          items:
+          - name: 分類項目を列挙および追加する
+            href: outlook/pia/how-to-enumerate-and-add-categories.md
+          - name: 分類項目をアイテムに割り当てる
+            href: outlook/pia/how-to-assign-categories-to-an-item.md
+        - name: 連絡先
+          href: outlook/pia/contacts.md
+          items:
+          - name: 連絡先アイテムを作成する
+            href: outlook/pia/how-to-create-a-contact-item.md
+          - name: カスタムの連絡先アイテムを作成する
+            href: outlook/pia/how-to-create-a-custom-contact-item.md
+          - name: vCard ファイルから連絡先アイテムを作成し、フォルダーにアイテムを保存する
+            href: outlook/pia/how-to-create-a-contact-item-from-a-vcard-file-and-save-the-item-in-a-folder.md
+        - name: 会話
+          href: outlook/pia/conversations.md
+          items:
+          - name: スレッド内のアイテムを取得して表示する
+            href: outlook/pia/how-to-get-and-display-items-in-a-conversation.md
+          - name: 選択されたスレッドを取得して列挙する
+            href: outlook/pia/how-to-get-and-enumerate-selected-conversations.md
+        - name: 電子名刺
+          href: outlook/pia/electronic-business-cards.md
+          items:
+          - name: 電子名刺のレイアウトを変更する
+            href: outlook/pia/how-to-modify-the-layout-of-an-electronic-business-card.md
+          - name: 電子名刺付きのメール アイテムを送信する
+            href: outlook/pia/how-to-send-a-mail-item-with-an-electronic-business-card.md
+        - name: Exchange ユーザー
+          href: outlook/pia/exchange-users.md
+          items:
+          - name: 現在のユーザーの情報を取得する
+            href: outlook/pia/how-to-get-information-about-the-current-user.md
+          - name: 現在のユーザーがメンバーになっているすべての配布リストについての情報を取得する
+            href: outlook/pia/how-to-get-information-about-all-distribution-lists-of-which-the-current-user-is-a-member.md
+          - name: 配布リストを作成する
+            href: outlook/pia/how-to-create-a-distribution-list.md
+          - name: Exchange 配布リストのメンバーを取得する
+            href: outlook/pia/how-to-get-members-of-an-exchange-distribution-list.md
+          - name: 現在のユーザーの上司の情報を取得する
+            href: outlook/pia/how-to-get-information-about-the-current-user-s-manager.md
+          - name: Exchange ユーザーの上司の空き時間情報を取得する
+            href: outlook/pia/how-to-get-availability-information-for-an-exchange-user-s-manager.md
+          - name: 会議出席依頼に対する上司からの返信を確認する
+            href: outlook/pia/how-to-check-a-manager-s-response-to-a-meeting-request.md
+          - name: 現在のユーザーの上司の直属部下についての情報を取得する
+            href: outlook/pia/how-to-get-information-about-direct-reports-of-the-current-user-s-manager.md
+        - name: フォルダー
+          href: outlook/pia/folders.md
+          items:
+          - name: フォルダー一覧にフォルダーを追加する
+            href: outlook/pia/how-to-add-a-folder-to-the-folder-list.md
+          - name: フォルダーを列挙する
+            href: outlook/pia/how-to-enumerate-folders.md
+          - name: 既定のフォルダーを取得して、そのサブフォルダーを列挙する
+            href: outlook/pia/how-to-get-a-default-folder-and-enumerate-its-subfolders.md
+          - name: フォルダーのパスに基づいてフォルダーを取得する
+            href: outlook/pia/how-to-get-a-folder-based-on-its-folder-path.md
+          - name: フォルダーを選択してフォルダーの情報を表示する
+            href: outlook/pia/how-to-select-a-folder-and-display-folder-information.md
+          - name: フォルダーの既定のメッセージ クラスを取得する
+            href: outlook/pia/how-to-get-the-default-message-class-of-a-folder.md
+          - name: 非表示メッセージとしてフォルダーに格納されているソリューション固有のデータにアクセスする
+            href: outlook/pia/how-to-access-solution-specific-data-stored-as-a-hidden-message-in-a-folder.md
+          - name: フォルダー レベルのクエリでカスタム アイテム プロパティが確実にサポートされるようにする
+            href: outlook/pia/how-to-ensure-that-custom-item-properties-are-supported-in-folder-level-queries.md
+        - name: Outlook アイテム全般
+          href: outlook/pia/general-outlook-items.md
+          items:
+          - name: ヘルパー クラスを作成し、Outlook アイテムの共通メンバーにアクセスする
+            href: outlook/pia/how-to-create-a-helper-class-to-access-common-outlook-item-members.md
+          - name: アクティブ エクスプローラーで選択した項目を表示する
+            href: outlook/pia/how-to-display-selected-items-in-the-active-explorer.md
+        - name: グループ共有
+          href: outlook/pia/group-sharing.md
+          items:
+          - name: RSS フィードを購読する
+            href: outlook/pia/how-to-subscribe-to-an-rss-feed.md
+          - name: Outlook と SharePoint のフォルダーを同期させる
+            href: outlook/pia/how-to-synchronize-outlook-with-a-sharepoint-folder.md
+        - name: メール
+          href: outlook/pia/mail.md
+          items:
+          - name: メッセージ テンプレートを使用してメール アイテムを作成する
+            href: outlook/pia/how-to-create-a-mail-item-by-using-a-message-template.md
+          - name: メール アイテムを作成し、レポートを添付して、ユーザーの上司にメール アイテムを送信する
+            href: outlook/pia/how-to-create-a-mail-item-attach-a-report-and-send-the-mail-item-to-the-user-s-manager.md
+          - name: アカウントの SMTP アドレスを指定して電子メールを送信する
+            href: outlook/pia/how-to-send-an-e-mail-given-the-smtp-address-of-an-account.md
+          - name: メール アイテムに投票オプションを追加する
+            href: outlook/pia/how-to-add-voting-options-to-a-mail-item.md
+          - name: メール アイテムへの返信として行うカスタム アクションを追加する
+            href: outlook/pia/how-to-add-a-custom-action-as-a-response-to-a-mail-item.md
+          - name: メール アイテムの差出人の SMTP アドレスを取得する
+            href: outlook/pia/how-to-get-the-smtp-address-of-the-sender-of-a-mail-item.md
+          - name: メール アイテムのさまざまな受信者の種類を指定する
+            href: outlook/pia/how-to-specify-different-recipient-types-for-a-mail-item.md
+        - name: 会議出席依頼
+          href: outlook/pia/meeting-requests.md
+          items:
+          - name: 会議出席依頼を作成し、受信者を追加して、場所を指定する
+            href: outlook/pia/how-to-create-a-meeting-request-add-recipients-and-specify-a-location.md
+          - name: 会議の開催者を取得する
+            href: outlook/pia/how-to-get-the-organizer-of-a-meeting.md
+          - name: 会議出席依頼へのすべての返信を調べる
+            href: outlook/pia/how-to-check-all-responses-to-a-meeting-request.md
+          - name: 会議出席依頼に関連付けられている予定アイテムを検索する
+            href: outlook/pia/how-to-find-the-appointment-item-associated-with-a-meeting-request.md
+          - name: 会議出席依頼を自動的に承諾する
+            href: outlook/pia/how-to-automatically-accept-a-meeting-request.md
+          - name: 会議出席依頼への返信をユーザーに求める
+            href: outlook/pia/how-to-prompt-a-user-to-respond-to-a-meeting-request.md
+        - name: 受信者
+          href: outlook/pia/recipients.md
+          items:
+          - name: '[名前の選択] ダイアログ ボックスを表示して受信者を解決する'
+            href: outlook/pia/how-to-display-the-select-names-dialog-box-to-resolve-recipients.md
+          - name: '[名前の選択] ダイアログ ボックスを使用して、受信者を取得し、予定に割り当てる'
+            href: outlook/pia/how-to-use-the-select-names-dialog-box-to-obtain-and-assign-recipients-to-an-appointment.md
+          - name: 受信者のメール アドレスを取得する
+            href: outlook/pia/how-to-get-the-e-mail-address-of-a-recipient.md
+        - name: ルール
+          href: outlook/pia/rules.md
+          items:
+          - name: 上司からのメール アイテムを分類して確認のフラグを設定する
+            href: outlook/pia/how-to-create-a-rule-to-file-mail-items-from-a-manager-and-flag-them-for-follow-up.md
+          - name: ルールを直ちに実行する
+            href: outlook/pia/how-to-execute-a-rule-instantly.md
+          - name: ローカル コンピューターでルールを実行する
+            href: outlook/pia/how-to-execute-a-rule-on-a-local-computer.md
+          - name: 件名内の複数の単語に基づいてメール アイテムに分類項目を割り当てるルールを作成する
+            href: outlook/pia/how-to-create-a-rule-to-assign-categories-to-mail-items-based-on-multiple-words-in-the-subject.md
+        - name: Outlook のイベントを使用するサンプル タスク
+          href: outlook/pia/sample-tasks-using-outlook-events.md
+          items:
+          - name: インスペクターのラッパーを実装し、インスペクターごとにアイテム レベルのイベントを追跡する
+            href: outlook/pia/how-to-implement-a-wrapper-for-inspectors-and-track-item-level-events-in-each-inspector.md
+        - name: 検索とフィルター
+          href: outlook/pia/search-and-filter.md
+          items:
+          - name: フォルダーのアイテムをフィルター処理して効率よく列挙する
+            href: outlook/pia/how-to-filter-and-efficiently-enumerate-items-in-a-folder.md
+          - name: SetColumns を使用してフォルダーのアイテムを効率よく列挙する
+            href: outlook/pia/how-to-use-setcolumns-to-efficiently-enumerate-items-in-a-folder.md
+          - name: 配列を使用してフォルダーのアイテムを効率よく列挙する
+            href: outlook/pia/how-to-use-arrays-to-efficiently-enumerate-items-in-a-folder.md
+          - name: 最終変更時刻に基づいて受信トレイ内のアイテムを列挙する
+            href: outlook/pia/how-to-enumerate-items-in-the-inbox-based-on-the-last-modification-time.md
+          - name: 先月に変更された受信トレイ アイテムをフィルター処理して表示する
+            href: outlook/pia/how-to-filter-and-display-inbox-items-modified-in-the-last-month.md
+          - name: フォルダー内のアイテムの列挙時に複数値プロパティをフィルター処理して表示する
+            href: outlook/pia/how-to-filter-and-display-multivalued-properties-when-enumerating-items-in-a-folder.md
+          - name: フォルダー内のアイテムの列挙時に、計算済みのプロパティをフィルター処理して表示する
+            href: outlook/pia/how-to-filter-and-display-computed-properties-when-enumerating-items-in-a-folder.md
+          - name: フォルダー内の非表示のアイテムを列挙する
+            href: outlook/pia/how-to-enumerate-hidden-items-in-a-folder.md
+          - name: クイック検索を使用して、すべてのフォルダーとすべてのストアから件名の特定の語句を検索する
+            href: outlook/pia/how-to-use-instant-search-to-search-all-folders-and-all-stores-for-a-phrase-in-the-subject.md
+          - name: フォルダー内のアイテムの本文で語句を検索する
+            href: outlook/pia/how-to-search-for-a-phrase-in-the-body-of-items-in-a-folder.md
+          - name: フォルダー内のアイテムの添付ファイルで完全に一致する語句を検索する
+            href: outlook/pia/how-to-search-attachments-of-items-in-a-folder-for-an-exact-phrase.md
+          - name: 時間範囲内の予定を検索、取得する
+            href: outlook/pia/how-to-search-and-obtain-appointments-in-a-time-range.md
+          - name: 定期的な予定でフィルター処理した後、件名の文字列を検索する
+            href: outlook/pia/how-to-filter-recurring-appointments-and-search-for-a-string-in-the-subject.md
+          - name: 集計ビュー内のアイテムを検索して取得する
+            href: outlook/pia/how-to-search-and-obtain-items-in-an-aggregated-view.md
+        - name: セッション
+          href: outlook/pia/sessions.md
+          items:
+          - name: Outlook のインスタンスを取得し、サインインする
+            href: outlook/pia/how-to-get-and-log-on-to-an-instance-of-outlook.md
+        - name: ストア
+          href: outlook/pia/stores.md
+          items:
+          - name: プロファイルのストアに関する情報を取得する
+            href: outlook/pia/how-to-get-information-about-stores-in-a-profile.md
+          - name: ストアを追加または削除する
+            href: outlook/pia/how-to-add-or-remove-a-store.md
+        - name: タスク
+          href: outlook/pia/tasks.md
+          items:
+          - name: 作業アイテムを作成する
+            href: outlook/pia/how-to-create-a-task-item.md
+          - name: 受信者にタスクを割り当てる
+            href: outlook/pia/how-to-assign-a-task-to-a-recipient.md
+          - name: 受信者に送信されたタスク依頼アイテムを表示する
+            href: outlook/pia/how-to-display-the-task-request-items-sent-to-a-recipient.md
+          - name: タスク依頼アイテムに返信する
+            href: outlook/pia/how-to-respond-to-a-task-request-item.md
+          - name: 定期タスクを作成する
+            href: outlook/pia/how-to-create-a-recurring-task.md
+          - name: 上司からのメール アイテムにフラグを設定する
+            href: outlook/pia/how-to-flag-mail-items-from-a-manager-for-follow-up.md
+        - name: ビュー
+          href: outlook/pia/views.md
+          items:
+          - name: ビューを作成する
+            href: outlook/pia/how-to-create-a-view.md
+          - name: ビューにフィールドを追加する
+            href: outlook/pia/how-to-add-fields-to-a-view.md
+          - name: 表ビューのアイテムを列挙する
+            href: outlook/pia/how-to-enumerate-items-in-a-table-view.md
+      - name: クラス ライブラリ
+        href: outlook/pia/outlook-2013-interop-assembly-class-library.md
+        items:
+        - name: Microsoft.Office.Interop.Outlook 名前空間
+          href: https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia
     - name: Outlook Social Connector プロバイダーのリファレンス
       href: outlook/social-connector/outlook-social-connector-provider-reference.md
       items:
@@ -894,9 +1221,9 @@ items:
           items:
           - name: アクティビティ フィード アイテムのための XML の概要
             href: outlook/social-connector/overview-of-xml-for-an-activity-feed-item.md
-          - name: activityDetails 要素
+          - name: ActivityDetails 要素
             href: outlook/social-connector/activitydetails-element.md
-          - name: activityTemplateContainer 要素
+          - name: ActivityTemplateContainer 要素
             href: outlook/social-connector/activitytemplatecontainer-element.md
           - name: テンプレート変数
             href: outlook/social-connector/template-variables.md
@@ -1024,7 +1351,7 @@ items:
     - name: Outlook での天気予報バーの拡張
       href: outlook/weather/extending-the-weather-bar-in-outlook.md
       items:
-      - name: Outlook 天気予報の情報 XML スキーマ
+      - name: Outlook 気象情報 XML スキーマ
         href: outlook/weather/outlook-weather-information-xml-schema.md
         items:
         - name: スキーマ マップ
@@ -1049,7 +1376,7 @@ items:
             href: outlook/weather/forecasttype-complextype-outlook-weather-information-schema.md
           - name: weatherType complexType
             href: outlook/weather/weathertype-complextype-outlook-weather-information-schema.md
-      - name: Outlook 天気予報の場所 XML スキーマ
+      - name: Outlook 気象情報の場所 XML スキーマ
         href: outlook/weather/outlook-weather-location-xml-schema.md
         items:
         - name: スキーマ マップ
@@ -1287,7 +1614,7 @@ items:
               href: outlook/auxiliary/prop_smtp_use_spa.md
             - name: PROP_SMTP_USER
               href: outlook/auxiliary/prop_smtp_user.md
-        - name: データ変換レイヤー API リファレンス
+        - name: データの劣化のレイヤー API リファレンス
           href: outlook/auxiliary/data-degradation-layer-api-reference.md
           items:
           - name: 定数
@@ -1446,7 +1773,7 @@ items:
       - name: はじめに
         href: outlook/mapi/getting-started-with-the-outlook-mapi-reference.md
         items:
-        - name: Outlook MAPI リファレンス概要
+        - name: Outlook MAPI リファレンスの概要
           href: outlook/mapi/outlook-mapi-reference-overview.md
         - name: このエディションの新機能
           href: outlook/mapi/what-s-new-in-this-edition.md
@@ -1492,11 +1819,11 @@ items:
             href: outlook/mapi/how-to-install-the-samples-used-in-this-section.md
           - name: 単純なメール アイテムを作成する
             href: outlook/mapi/how-to-create-a-simple-mail-item.md
-          - name: 単純な定期実行タスク アイテムを作成する
+          - name: 単純な定期的作業アイテムを作成する
             href: outlook/mapi/how-to-create-a-simple-recurrent-task-item.md
           - name: 複雑な定期実行予定アイテムを作成する
             href: outlook/mapi/how-to-create-a-complex-recurrent-appointment-item.md
-          - name: 定期実行パターンを読んで解析する
+          - name: 定期的なアイテムのパターンを読み取って解析する
             href: outlook/mapi/how-to-read-and-parse-a-recurrence-pattern.md
       - name: 概念
         href: outlook/mapi/mapi-concepts.md
@@ -1533,22 +1860,22 @@ items:
               href: outlook/mapi/about-the-sample-offline-state-add-in.md
             - name: サンプルのオフライン状態アドインのインストール
               href: outlook/mapi/installing-the-sample-offline-state-add-in.md
-            - name: オフライン状態アドインの設定
+            - name: オフライン状態アドインのセットアップ
               href: outlook/mapi/setting-up-an-offline-state-add-in.md
-            - name: オフライン状態アドインを使用した接続状態変更のモニター
+            - name: オフライン状態アドインを使用した接続状態変更の監視
               href: outlook/mapi/monitoring-connection-state-changes-using-an-offline-state-add-in.md
             - name: オフライン状態アドインの切断
               href: outlook/mapi/disconnecting-an-offline-state-add-in.md
           - name: MAPI クラッシュ回復 API について
             href: outlook/mapi/about-the-mapi-crash-recovery-api.md
-          - name: Outlook でのアドレス一覧の解決順序の設定について
+          - name: Outlook での追加リストの解決順序の設定について
             href: outlook/mapi/about-setting-the-resolution-order-for-address-lists-in-outlook.md
           - name: レプリケーション API について
             href: outlook/mapi/about-the-replication-api.md
             items:
             - name: ラップされた PST ストア プロバイダーのサンプルについて
               href: outlook/mapi/about-the-sample-wrapped-pst-store-provider.md
-          - name: レプリケーション ステート マシンについて
+          - name: レプリケーション状態のマシンについて
             href: outlook/mapi/about-the-replication-state-machine.md
             items:
             - name: 階層ダウンロード状態
@@ -1602,7 +1929,7 @@ items:
           - name: プログラミングの概要
             href: outlook/mapi/mapi-programming-overview.md
             items:
-            - name: MAPI サブシステムのインストール
+            - name: MAPI サブシステムをインストールする
               href: outlook/mapi/installing-the-mapi-subsystem.md
             - name: MAPI ヘッダー ファイルをインストールする
               href: outlook/mapi/how-to-install-mapi-header-files.md
@@ -1651,11 +1978,11 @@ items:
               href: outlook/mapi/how-to-programmatically-create-a-profile-in-outlook.md
             - name: メッセージと共に保存されているユーザー設定フォーム定義を削除する
               href: outlook/mapi/how-to-remove-custom-form-definition-saved-with-a-message.md
-            - name: 圧縮 RTF 内のメッセージ本体を取り出し、ネイティブ形式に変換する
+            - name: 圧縮 RTF 内のメッセージの本文を取得し、ネイティブ形式に変換する
               href: outlook/mapi/how-to-retrieve-the-body-of-a-message-in-compressed-rtf-and-convert.md
             - name: MAPI クラッシュ回復 API を使用する
               href: outlook/mapi/how-to-use-the-mapi-crash-recovery-api.md
-            - name: 添付がプロセスされていることを確認する
+            - name: 添付がブロックされていることを確認する
               href: outlook/mapi/how-to-verify-an-attachment-is-blocked.md
           - name: テーブル
             href: outlook/mapi/mapi-tables.md
@@ -1691,7 +2018,7 @@ items:
             - name: テーブルの操作のヒント
               href: outlook/mapi/tips-for-working-with-tables.md
               items:
-              - name: テーブルの行からデータを所得する
+              - name: テーブルの行からのデータの取得
                 href: outlook/mapi/retrieving-data-from-table-rows.md
               - name: テーブルの位置指定
                 href: outlook/mapi/table-positioning.md
@@ -1710,7 +2037,7 @@ items:
                 href: outlook/mapi/working-with-multivalued-columns.md
               - name: Unicode 列の操作
                 href: outlook/mapi/working-with-unicode-columns.md
-              - name: テーブルの末尾の判別
+              - name: テーブルの終了の判別
                 href: outlook/mapi/determining-a-table-s-end.md
               - name: 並べ替えと分類
                 href: outlook/mapi/sorting-and-categorization.md
@@ -1826,7 +2153,7 @@ items:
               items:
               - name: メッセージ テキストを開く
                 href: outlook/mapi/opening-message-text.md
-              - name: テキスト形式での添付ファイルの表示
+              - name: プレーン テキスト形式での添付ファイルの表示
                 href: outlook/mapi/rendering-an-attachment-in-plain-text.md
               - name: RTF テキスト形式での添付ファイルの表示
                 href: outlook/mapi/rendering-an-attachment-in-rtf-text.md
@@ -1847,7 +2174,7 @@ items:
                 href: outlook/mapi/selecting-a-receive-folder.md
               - name: メッセージ ストア フォルダーを開く
                 href: outlook/mapi/opening-a-message-store-folder.md
-              - name: フォルダー目次の表示
+              - name: フォルダー コンテンツ テーブルの表示
                 href: outlook/mapi/displaying-a-folder-contents-table.md
               - name: 受信トレイ フォルダーのスキャン
                 href: outlook/mapi/traversing-the-inbox-folder.md
@@ -1935,7 +2262,7 @@ items:
               items:
               - name: フォーム ビューアーの実装
                 href: outlook/mapi/implementing-a-form-viewer.md
-              - name: 標準のフォーム動詞の実装
+              - name: 標準のフォームの動詞の実装
                 href: outlook/mapi/implementing-standard-form-verbs.md
               - name: フォーム通知の送受信
                 href: outlook/mapi/sending-and-receiving-form-notifications.md
@@ -2053,7 +2380,7 @@ items:
               items:
               - name: フォーム プロパティの取得
                 href: outlook/mapi/retrieving-form-properties.md
-              - name: メッセージを読むためのフォームの起動
+              - name: メッセージを読み取るためのフォームの起動
                 href: outlook/mapi/launching-a-form-to-read-a-message.md
               - name: 新しい作成フォームの起動
                 href: outlook/mapi/launching-a-new-compose-form.md
@@ -2077,7 +2404,7 @@ items:
             items:
             - name: IPM サブツリー
               href: outlook/mapi/ipm-subtree.md
-            - name: 特殊フォルダー
+            - name: 特殊なフォルダー
               href: outlook/mapi/mapi-special-folders.md
             - name: 受信フォルダー
               href: outlook/mapi/mapi-receive-folders.md
@@ -2099,7 +2426,7 @@ items:
               items:
               - name: すべてのメッセージの必須プロパティ
                 href: outlook/mapi/required-properties-for-all-messages.md
-              - name: 必須レポート メッセージ プロパティ
+              - name: 必須のレポート メッセージ プロパティ
                 href: outlook/mapi/required-report-message-properties.md
               - name: オプションのレポート メッセージ プロパティ
                 href: outlook/mapi/optional-report-message-properties.md
@@ -2175,11 +2502,11 @@ items:
               href: outlook/mapi/return-value-naming-convention.md
             - name: エラー処理のためのマクロの使用
               href: outlook/mapi/using-macros-for-error-handling.md
-            - name: 戻り値のドキュメンテーション
+            - name: 戻り値のドキュメント
               href: outlook/mapi/mapi-return-value-documentation.md
             - name: エラー処理の戦略
               href: outlook/mapi/strategies-for-error-handling.md
-            - name: 拡張されたエラー
+            - name: エラーの拡張
               href: outlook/mapi/mapi-extended-errors.md
             - name: エラーの延期
               href: outlook/mapi/deferring-mapi-errors.md
@@ -2196,12 +2523,12 @@ items:
               href: outlook/mapi/sending-messages-message-store-provider-tasks.md
             - name: 'メッセージの送信: トランスポート プロバイダーのタスク'
               href: outlook/mapi/sending-messages-transport-provider-tasks.md
-          - name: メッセージング ドメインを越える送信
+          - name: メッセージング ドメイン間の送信
             href: outlook/mapi/sending-across-messaging-domains.md
             items:
             - name: ゲートウェイ マッピング可能プロパティ
               href: outlook/mapi/gateway-mappable-properties.md
-            - name: クライアントの命名責任
+            - name: クライアントの名前付け責任
               href: outlook/mapi/client-naming-responsibilities.md
             - name: ゲートウェイのマッピング責任
               href: outlook/mapi/gateway-mapping-responsibilities.md
@@ -2356,7 +2683,7 @@ items:
                 href: outlook/mapi/mapi-message-store-provider-objects.md
               - name: トランスポート プロバイダーのオブジェクト
                 href: outlook/mapi/mapi-transport-provider-objects.md
-            - name: ユーザー設定フォームのオブジェクト
+            - name: ユーザー設定のフォーム オブジェクト
               href: outlook/mapi/mapi-custom-form-objects.md
             - name: MAPI オブジェクトの使用
               href: outlook/mapi/using-mapi-objects.md
@@ -2383,7 +2710,7 @@ items:
               href: outlook/mapi/mapi-property-tags.md
             - name: プロパティ識別子の概要
               href: outlook/mapi/mapi-property-identifier-overview.md
-            - name: プロパティ型の概要
+            - name: プロパティの種類の概要
               href: outlook/mapi/mapi-property-type-overview.md
             - name: 文字列プロパティ
               href: outlook/mapi/mapi-string-properties.md
@@ -2424,12 +2751,12 @@ items:
                 href: outlook/mapi/transmitting-and-copying-named-properties.md
               - name: よく使用されるプロパティ セット
                 href: outlook/mapi/commonly-used-property-sets.md
-            - name: プロパティの識別子と型
+            - name: プロパティの識別子と種類
               href: outlook/mapi/property-identifiers-and-types.md
               items:
               - name: プロパティ識別子の範囲
                 href: outlook/mapi/property-identifier-ranges.md
-              - name: プロパティの型
+              - name: プロパティの種類
                 href: outlook/mapi/property-types.md
             - name: インターネット メールの属性から MAPI のプロパティへのマッピング
               href: outlook/mapi/mapping-of-internet-mail-attributes-to-mapi-properties.md
@@ -2448,7 +2775,7 @@ items:
         - name: サービス プロバイダー
           href: outlook/mapi/mapi-service-providers.md
           items:
-          - name: サービス プロバイダー開発の基本
+          - name: サービス プロバイダー開発の基本事項
             href: outlook/mapi/service-provider-development-basics.md
             items:
             - name: サポート オブジェクトの概要
@@ -2492,7 +2819,7 @@ items:
             - name: 表示テーブルの実装
               href: outlook/mapi/display-table-implementation.md
               items:
-              - name: 表示テーブルと関連する構造の作成
+              - name: 表示テーブルと関連する構造体の作成
                 href: outlook/mapi/creating-display-tables-and-related-structures.md
               - name: テーブル コントロールの表示
                 href: outlook/mapi/displaying-table-controls.md
@@ -4817,7 +5144,7 @@ items:
             href: outlook/mapi/pidtagcorrelatemtsid-canonical-property.md
           - name: PidTagCountry 標準プロパティ
             href: outlook/mapi/pidtagcountry-canonical-property.md
-          - name: PidTagCreateTemplates 標準プロパティ Property
+          - name: PidTagCreateTemplates 標準プロパティ
             href: outlook/mapi/pidtagcreatetemplates-canonical-property.md
           - name: PidTagCreationTime 標準プロパティ
             href: outlook/mapi/pidtagcreationtime-canonical-property.md
@@ -6204,12 +6531,12 @@ items:
     href: powerpoint-home.md
     items:
     - name: PowerPoint VBA リファレンス
-      href: https://msdn.microsoft.com/en-us/library/office/ee861525.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/powerpoint
   - name: Project
     href: project/project-home.md
     items:
     - name: Project VBA リファレンス
-      href: https://msdn.microsoft.com/en-us/library/office/ee861523.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/project
     - name: 開発者ドキュメント
       href: project/project-2013-developer-documentation.md
       items:
@@ -6274,25 +6601,25 @@ items:
           - name: Project Server のエラー コード
             href: project/project-server-error-codes.md
           - name: ProjectData - OData サービス リファレンス
-            href: https://msdn.microsoft.com/en-us/library/office/jj163015.aspx
+            href: https://docs.microsoft.com/previous-versions/office/project-odata/jj163015(v=office.15)
       - name: クラス ライブラリと Web サービス リファレンス
-        href: https://docs.microsoft.com/en-us/dotnet/api/index?view=office-project-server
+        href: https://docs.microsoft.com/dotnet/api/index?view=office-project-server
       - name: JavaScript API リファレンス
-        href: https://msdn.microsoft.com/en-us/library/office/jj712612.aspx
+        href: https://msdn.microsoft.com/library/office/jj712612.aspx
   - name: Publisher
     href: publisher-home.md
     items:
     - name: Publisher VBA リファレンス
-      href: https://msdn.microsoft.com/en-us/library/office/ee861522.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/publisher
   - name: Visio
     href: visio/visio-home.md
     items:
     - name: Visio VBA リファレンス
-      href: https://msdn.microsoft.com/EN-US/library/office/ee861526.aspx
-    - name: Visio の Web として保存のリファレンス
-      href: https://msdn.microsoft.com/EN-US/library/office/ff767184.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/visio
+    - name: Visio の Web として保存リファレンス
+      href: https://docs.microsoft.com/office/vba/api/overview/Visio/visio-save-as-web-reference
     - name: Visio Viewer のリファレンス
-      href: https://msdn.microsoft.com/EN-US/library/office/ff766866.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/Visio/visio-viewer-reference
     - name: Visio ShapeSheet のリファレンス
       href: visio/visio-shapesheet-reference.md
       items:
@@ -6323,7 +6650,7 @@ items:
           href: visio/about-strings.md
         - name: 数式トレース ウィンドウについて
           href: visio/about-the-formula-tracing-window.md
-        - name: シェイプシート スプレッドシートについて
+        - name: ShapeSheet スプレッドシートについて
           href: visio/about-the-shapesheet-spreadsheet.md
         - name: スタイル エクスプローラー ウィンドウについて
           href: visio/about-the-style-explorer-window.md
@@ -6332,7 +6659,7 @@ items:
       - name: 一般的なタスク
         href: visio/common-tasks-visio-shapesheet.md
         items:
-        - name: シェイプシートの行の追加、変更、削除を行う
+        - name: ShapeSheet の行の追加、変更、削除を行う
           href: visio/add-change-or-delete-rows-in-the-shapesheet.md
         - name: セクションの追加、表示、非表示、削除を行う
           href: visio/add-show-hide-or-delete-a-section.md
@@ -6346,17 +6673,17 @@ items:
           href: visio/edit-a-part-of-a-formula.md
         - name: 空の数式を入力する
           href: visio/enter-an-empty-formula.md
-        - name: シェイプシート ウィンドウでの移動する
+        - name: ShapeSheet ウィンドウ上で移動する
           href: visio/move-around-a-shapesheet-window.md
-        - name: 各シェイプシートを同じウィンドウで開く
+        - name: 各 ShapeSheet を同じウィンドウで開く
           href: visio/open-each-shapesheet-in-the-same-window.md
-        - name: 図形、ページ、ドキュメントのためのシェイプシートを開く
+        - name: 図形、ページ、ドキュメントのための ShapeSheet を開く
           href: visio/open-the-shapesheet-for-a-shape-page-or-document.md
         - name: 数式内でセルを参照する
           href: visio/reference-a-cell-in-a-formula.md
         - name: 開発者モードで実行する (開発者タブを表示する)
           href: visio/run-in-developer-mode-display-the-developer-tab.md
-        - name: シェイプシート ウィンドウにオブジェクトを表示する
+        - name: ShapeSheet ウィンドウにオブジェクトを表示する
           href: visio/show-an-object-in-the-shapesheet-window.md
         - name: セルの新しい数式を入力する
           href: visio/type-a-new-formula-for-a-cell.md
@@ -8015,7 +8342,7 @@ items:
           href: visio/row-element-connection-sectionvisio-xml.md
         - name: Row 要素 ([コントロール] セクション)
           href: visio/row-element-controls-sectionvisio-xml.md
-        - name: Rowl 要素 ([フィールド] セクション)
+        - name: Row 要素 ([フィールド] セクション)
           href: visio/row-element-field-sectionvisio-xml.md
         - name: Row 要素 ([塗りつぶしグラデーション] セクション)
           href: visio/row-element-fill-gradient-sectionvisio-xml.md
@@ -8434,16 +8761,16 @@ items:
     - name: Word におけるコンテンツ コントロール
       href: word/content-controls-in-word.md
     - name: Word VBA リファレンス
-      href: https://msdn.microsoft.com/en-us/library/ee861527.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/word
     - name: Word プライマリ相互運用機能アセンブリのリファレンス
-      href: https://msdn.microsoft.com/en-us/library/ff597928.aspx
+      href: https://docs.microsoft.com/visualstudio/vsto/office-primary-interop-assemblies?view=vs-2017
   - name: Sway URI スキーム
     href: swayuri.md
   - name: Office URI スキーム
     href: office-uri-schemes.md
-ms.openlocfilehash: 2f3460ac612fea7fb558ed841fa9e21a0e97a4ac
-ms.sourcegitcommit: c55eec212ae794592c83bbf06b01eab5ca6bff6d
+ms.openlocfilehash: 7033a4730c3cc661ff44f20f44bdaaba629a7aaa
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2018
-ms.locfileid: "20389582"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389373"
