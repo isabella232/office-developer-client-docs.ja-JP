@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1c4937c4-0998-4f81-a994-50d3dd54727c
 description: ソリューションの開発と Office のカスタマイズに関する HowTo コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および技術記事を検索できます。
-ms.openlocfilehash: c47ad46dc1a8c7c49c9ec43b4106838adab4592f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.openlocfilehash: c0c08c980e0f42128b0fe8b2ad6c9225e38c9afe
+ms.sourcegitcommit: 6a314fdfde4349591ed899019695c36537f45924
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389569"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454559"
 ---
 # <a name="office-shared"></a>Office 共有
 
@@ -22,35 +22,33 @@ ms.locfileid: "25389569"
   
 ### <a name="viewed-most"></a>よく参照される資料
   
-- [Office VBA オブジェクト ライブラリ リファレンス](https://msdn.microsoft.com/EN-US/library/office/ff862474.aspx)
+- [Office VBA オブジェクト ライブラリ リファレンス](https://docs.microsoft.com/office/vba/api/overview/library-reference)
   
-- [Office VBA 言語リファレンス](https://msdn.microsoft.com/EN-US/library/office/gg264383.aspx)
+- [Office VBA 言語リファレンス](https://docs.microsoft.com/office/vba/api/overview/language-reference)
   
-- [Office 365 API リファレンス](https://msdn.microsoft.com/office/office365/api/api-catalog)
+- [Office 365 API リファレンス](https://docs.microsoft.com/previous-versions/office/office-365-api/)
   
-- [Office 2010](https://msdn.microsoft.com/library/office/cc313152%28v=office.12%29.aspx)
+- [Office 2010](https://docs.microsoft.com/previous-versions/office/developer/office-2010/cc313152(v=office.12))
   
 ### <a name="office-365-apis"></a>Office 365 API
   
-- [作業の開始](https://dev.office.com/getting-started)
+- [作業の開始](https://developer.microsoft.com/ja-JP/office/docs)
   
-- [プラットフォームの概要](https://msdn.microsoft.com/office/office365/howto/platform-development-overview)
+- [プラットフォームの概要](https://docs.microsoft.com/previous-versions/office/office-365-api/)
   
 ### <a name="office-add-ins"></a>Office アドイン
   
-- [作業の開始](https://dev.office.com/getting-started)
-  
-- [プラットフォームの概要](https://msdn.microsoft.com/EN-US/library/office/jj220082.aspx)
+- [作業の開始](https://docs.microsoft.com/office/dev/add-ins/)
+
+- [プラットフォームの概要](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)
   
 ### <a name="sharepoint-add-ins"></a>SharePoint アドイン
   
-- [作業の開始](https://dev.office.com/getting-started)
-  
-- [プラットフォームの概要](https://msdn.microsoft.com/library/office/fp179930.aspx)
+- [概要](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins)
   
 ### <a name="code-samples"></a>コード サンプル
   
-- [dev.office.com のコード サンプル](https://dev.office.com/codesamples)
+- [コード サンプル](https://developer.microsoft.com/office/gallery/?filterBy=Samples)
   
 - [GitHub の OfficeDev](https://github.com/OfficeDev)
   
@@ -58,7 +56,7 @@ ms.locfileid: "25389569"
   
 - [Office サポート](https://support.office.com/)
   
-- [MSDN の Office 開発者フォーラム](https://social.msdn.microsoft.com/Forums/office/en-US/home?category=officedev)
+- [Office デベロッパー フォーラム](https://social.msdn.microsoft.com/Forums/office/home?category=officedev)
   
 - [スタック オーバーフローの Office フォーラム ](https://stackoverflow.com/questions/tagged/ms-office)
   

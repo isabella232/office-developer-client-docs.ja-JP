@@ -1,16 +1,16 @@
 ---
 title: Office クライアントの開発
-ms.date: 04/20/2016
+ms.date: 10/09/2018
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 74a80e0a-fe60-4356-b238-13de4c2822d9
 description: ソリューションの開発と Office のカスタマイズに関する 方法 コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および記事を検索できます。
-ms.openlocfilehash: db2df53f2d150e83c20438aa00d52cfcbe8223fa
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.openlocfilehash: 92e4da3d6e04082ea3bceb901989ddf134b54c07
+ms.sourcegitcommit: 6a314fdfde4349591ed899019695c36537f45924
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25401266"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454489"
 ---
 # <a name="office-client-development"></a>Office クライアントの開発
 
@@ -18,67 +18,58 @@ ms.locfileid: "25401266"
   
 > [!NOTE]
 > [複数のプラットフォーム](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-in-availability)間で Office エクスペリエンスを拡張するソリューションを開発することに関心がありますか? 新しい [Office アドイン モデル](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)をご覧ください。 
-  
-### <a name="viewed-most"></a>よく参照される資料
-  
-- [Office VBA オブジェクト ライブラリ リファレンス](https://msdn.microsoft.com/EN-US/library/office/ff862474.aspx)
-  
-- [Office VBA 言語リファレンス](https://msdn.microsoft.com/EN-US/library/office/gg264383.aspx)
-  
-- [Office 2010](https://msdn.microsoft.com/library/office/cc313152%28v=office.12%29.aspx)
+
   
 ### <a name="office-add-ins"></a>Office アドイン
   
-- [作業の開始](https://dev.office.com/getting-started/addins)
+- [作業の開始](https://docs.microsoft.com/office/dev/add-ins/)
   
-- [プラットフォームの概要](https://msdn.microsoft.com/EN-US/library/office/jj220082.aspx)
+- [プラットフォームの概要](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)
   
 ### <a name="sharepoint-add-ins"></a>SharePoint アドイン
   
-- [作業の開始](https://dev.office.com/getting-started)
-  
-- [プラットフォームの概要](https://msdn.microsoft.com/library/office/fp179930.aspx)
+- [作業の開始](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins)
   
 ### <a name="visual-studio-tools-for-office"></a>Visual Studio Tools for Office
   
-- [Office の VSTO アドイン](https://msdn.microsoft.com/library/jj620922.aspx)
+- [Office の VSTO アドイン](https://docs.microsoft.com/visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio?view=vs-2017)
   
 ### <a name="office-client-vba-references"></a>Office クライアントの VBA 参照
   
-- [Access](https://msdn.microsoft.com/library/fp179695.aspx)
+- [Access](access/access-home.md)
   
-- [Excel](https://msdn.microsoft.com/library/fp179694.aspx)
+- [Excel](excel/excel-home.md)
   
-- [InfoPath](https://msdn.microsoft.com/library/fp179694.aspx)
+- [InfoPath](infopath/infopath-home.md)
   
-- [Office VBA オブジェクト ライブラリ リファレンス](https://msdn.microsoft.com/EN-US/library/office/ff862474.aspx)
+- [Office VBA オブジェクト ライブラリ リファレンス](https://docs.microsoft.com/office/vba/api/overview/library-reference)
   
-- [Office VBA 言語リファレンス](https://msdn.microsoft.com/EN-US/library/office/gg264383.aspx)
+- [Office VBA 言語リファレンス](https://docs.microsoft.com/office/vba/api/overview/language-reference)
   
-- [Office Shared](https://msdn.microsoft.com/library/hh872753.aspx)
+- [Office Shared](shared/office-shared.md)
   
-- [OneNote](https://msdn.microsoft.com/library/jj680121.aspx) (未接続のシナリオでの OneNote Win32 デスクトップ クライアント ソリューション専用の API) 
+- [OneNote](onenote/onenote-home.md) (未接続のシナリオでの OneNote Win32 デスクトップ クライアント ソリューション専用の API) 
   
-- [Outlook](https://msdn.microsoft.com/library/fp161224.aspx)
+- [Outlook](outlook/outlook-home.md)
   
-- [PowerPoint](https://msdn.microsoft.com/library/fp161225.aspx)
+- [PowerPoint](powerpoint-home.md)
   
-- [Project](https://msdn.microsoft.com/library/fp161358.aspx)
+- [Project](project/project-home.md)
   
-- [Publisher](https://msdn.microsoft.com/library/jj684499.aspx)
+- [Publisher](publisher-home.md)
   
-- [Visio](https://msdn.microsoft.com/library/fp161226.aspx)
+- [Visio](visio/visio-home.md)
   
-- [Word](https://msdn.microsoft.com/library/fp179696.aspx)
+- [Word](word/word-home.md)
   
 ### <a name="code-samples"></a>コード サンプル
   
-- [dev.office.com の Office クライアント コード サンプル](https://dev.office.com/code-samples)
+- [Office クライアントのコード サンプル](https://developer.microsoft.com/office/gallery/?filterBy=Samples)
   
-- [MSDN の VBA コード サンプル](https://code.msdn.microsoft.com/office/site/search?query=VBA&amp;f%5B0%5D.Value=VBA&amp;f%5B0%5D.Type=SearchText&amp;ac=4)
+- [VBA のコード サンプル](https://code.msdn.microsoft.com/office/site/search?query=VBA&f%5B0%5D.Value=VBA&f%5B0%5D.Type=SearchText&ac=4)
   
 ### <a name="other-resources"></a>その他のリソース
   
-- [Open XML SDK](https://msdn.microsoft.com/library/f6a9ae68-7989-4208-97f5-3c945137a0ab%28Office.15%29.aspx)
+- [Open XML SDK](https://docs.microsoft.com/office/open-xml/open-xml-sdk)
   
 
