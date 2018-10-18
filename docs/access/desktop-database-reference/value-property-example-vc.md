@@ -1,24 +1,18 @@
 ---
-title: Value プロパティの使用例 (VC++)
-TOCTitle: Value Property Example (VC++)
-ms:assetid: d8a496f9-5864-ffd8-ca99-5a2f10dcdcb4
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250092(v=office.15)
-ms:contentKeyID: 48548040
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 91be0b756d8eb91deacb3971ecf0448dcf068308
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477138"
+<span data-ttu-id="8a4ab-101"><<<<<<< ヘッド タイトル: 値のプロパティの使用例 (vc++) TOCTitle: 値のプロパティの使用例 (vc++) === タイトル: 値プロパティの使用例 (vc++) TOCTitle: 値プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="8a4ab-101"><<<<<<< HEAD title: Value Property Example (VC++) TOCTitle: Value Property Example (VC++) ======= title: Value property example (VC++) TOCTitle: Value property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="8a4ab-102">マスターの ms:assetid: d8a496f9-5864-ffd8-ca99-5a2f10dcdcb4 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250092(v=office.15) ms:contentKeyID: 48548040 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="8a4ab-102">master ms:assetid: d8a496f9-5864-ffd8-ca99-5a2f10dcdcb4 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250092(v=office.15) ms:contentKeyID: 48548040 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="value-property-example-vc"></a><span data-ttu-id="5f30d-102">Value プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="5f30d-102">Value Property Example (VC++)</span></span>
+
+<span data-ttu-id="8a4ab-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="8a4ab-103"><<<<<<< HEAD</span></span>
+# <a name="value-property-example-vc"></a><span data-ttu-id="8a4ab-104">Value プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="8a4ab-104">Value Property Example (VC++)</span></span>
+=======
+# <a name="value-property-example-vc"></a><span data-ttu-id="8a4ab-105">値プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="8a4ab-105">Value property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="8a4ab-106">master</span><span class="sxs-lookup"><span data-stu-id="8a4ab-106">master</span></span>
 
 
-<span data-ttu-id="5f30d-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="5f30d-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="8a4ab-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="8a4ab-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="5f30d-104">この例では、[Field](field-object-ado.md) オブジェクトや [Property](property-object-ado.md) オブジェクトで [Value](value-property-ado.md) プロパティを使用して、***Employees*** テーブルのフィールドとプロパティの値を表示します。</span><span class="sxs-lookup"><span data-stu-id="5f30d-104">This example demonstrates the [Value](value-property-ado.md) property with [Field](field-object-ado.md) and [Property](property-object-ado.md) objects by displaying field and property values for the ***Employees*** table.</span></span>
+<span data-ttu-id="8a4ab-108">この例では、[Field](field-object-ado.md) オブジェクトや [Property](property-object-ado.md) オブジェクトで [Value](value-property-ado.md) プロパティを使用して、***Employees*** テーブルのフィールドとプロパティの値を表示します。</span><span class="sxs-lookup"><span data-stu-id="8a4ab-108">This example demonstrates the [Value](value-property-ado.md) property with [Field](field-object-ado.md) and [Property](property-object-ado.md) objects by displaying field and property values for the ***Employees*** table.</span></span>
 
 ```cpp 
  

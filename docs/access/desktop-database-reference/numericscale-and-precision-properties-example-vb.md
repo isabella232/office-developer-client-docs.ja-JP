@@ -1,24 +1,18 @@
 ---
-title: NumericScale プロパティと Precision プロパティの使用例 (VB)
-TOCTitle: NumericScale and Precision Properties Example (VB)
-ms:assetid: 728a76a3-1f80-935b-b6c7-94255ffe0160
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249462(v=office.15)
-ms:contentKeyID: 48545610
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 5c1787ba817f04fa7f2f90a25be37cb3d89dbca3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477175"
+<span data-ttu-id="db11d-101"><<<<<<< ヘッド タイトル: NumericScale と Precision プロパティの使用例 (VB) TOCTitle: NumericScale と Precision プロパティの使用例 (VB) === タイトル: NumericScale と Precision プロパティの使用例 (VB) TOCTitle: NumericScale と精度プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="db11d-101"><<<<<<< HEAD title: NumericScale and Precision Properties Example (VB) TOCTitle: NumericScale and Precision Properties Example (VB) ======= title: NumericScale and Precision properties example (VB) TOCTitle: NumericScale and Precision properties example (VB)</span></span>
+>>>>>>> <span data-ttu-id="db11d-102">マスターの ms:assetid: 728a76a3-1f80-935b-b6c7-94255ffe0160 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249462(v=office.15) ms:contentKeyID: 48545610 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="db11d-102">master ms:assetid: 728a76a3-1f80-935b-b6c7-94255ffe0160 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249462(v=office.15) ms:contentKeyID: 48545610 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="numericscale-and-precision-properties-example-vb"></a><span data-ttu-id="da689-102">NumericScale プロパティと Precision プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="da689-102">NumericScale and Precision Properties Example (VB)</span></span>
+
+<span data-ttu-id="db11d-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="db11d-103"><<<<<<< HEAD</span></span>
+# <a name="numericscale-and-precision-properties-example-vb"></a><span data-ttu-id="db11d-104">NumericScale プロパティと Precision プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="db11d-104">NumericScale and Precision Properties Example (VB)</span></span>
+=======
+# <a name="numericscale-and-precision-properties-example-vb"></a><span data-ttu-id="db11d-105">NumericScale と Precision プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="db11d-105">NumericScale and Precision properties example (VB)</span></span>
+>>>>>>> <span data-ttu-id="db11d-106">master</span><span class="sxs-lookup"><span data-stu-id="db11d-106">master</span></span>
 
 
-<span data-ttu-id="da689-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="da689-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="db11d-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="db11d-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="da689-104">ここでは、[Column](numericscale-property-adox.md) オブジェクトの [NumericScale](precision-property-adox.md) プロパティおよび [Precision](column-object-adox.md) プロパティの使用例を示します。</span><span class="sxs-lookup"><span data-stu-id="da689-104">This example demonstrates the [NumericScale](numericscale-property-adox.md) and [Precision](precision-property-adox.md) properties of the [Column](column-object-adox.md) object.</span></span> <span data-ttu-id="da689-105">このコードでは、*ノースウィンド*データベースの [**受注明細**] テーブルの値を表示します。</span><span class="sxs-lookup"><span data-stu-id="da689-105">This code displays their value for the **Order Details** table of the *Northwind* database.</span></span>
+<span data-ttu-id="db11d-108">ここでは、[Column](numericscale-property-adox.md) オブジェクトの [NumericScale](precision-property-adox.md) プロパティおよび [Precision](column-object-adox.md) プロパティの使用例を示します。</span><span class="sxs-lookup"><span data-stu-id="db11d-108">This example demonstrates the [NumericScale](numericscale-property-adox.md) and [Precision](precision-property-adox.md) properties of the [Column](column-object-adox.md) object.</span></span> <span data-ttu-id="db11d-109">このコードでは、*ノースウィンド*データベースの [**受注明細**] テーブルの値を表示します。</span><span class="sxs-lookup"><span data-stu-id="db11d-109">This code displays their value for the **Order Details** table of the *Northwind* database.</span></span>
 
 ```vb 
  

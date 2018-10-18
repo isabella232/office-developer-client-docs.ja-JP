@@ -1,24 +1,18 @@
 ---
-title: CacheSize プロパティの使用例 (VC++)
-TOCTitle: CacheSize Property Example (VC++)
-ms:assetid: bd5bc7ae-c1fa-361b-9b26-a216655e3cbd
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249914(v=office.15)
-ms:contentKeyID: 48547435
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: e8bf74622c3d16454e070f214a1c32bece327d0d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479412"
+<span data-ttu-id="52d43-101"><<<<<<< ヘッド タイトル: CacheSize プロパティの使用例 (vc++) TOCTitle: CacheSize プロパティの使用例 (vc++) === タイトル: CacheSize プロパティの使用例 (vc++) TOCTitle: CacheSize プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="52d43-101"><<<<<<< HEAD title: CacheSize Property Example (VC++) TOCTitle: CacheSize Property Example (VC++) ======= title: CacheSize property example (VC++) TOCTitle: CacheSize property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="52d43-102">マスターの ms:assetid: bd5bc7ae-c1fa-361b-9b26-a216655e3cbd ms:mtpsurl: https://msdn.microsoft.com/library/JJ249914(v=office.15) ms:contentKeyID: 48547435 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="52d43-102">master ms:assetid: bd5bc7ae-c1fa-361b-9b26-a216655e3cbd ms:mtpsurl: https://msdn.microsoft.com/library/JJ249914(v=office.15) ms:contentKeyID: 48547435 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="cachesize-property-example-vc"></a><span data-ttu-id="f7f32-102">CacheSize プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="f7f32-102">CacheSize Property Example (VC++)</span></span>
+
+<span data-ttu-id="52d43-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="52d43-103"><<<<<<< HEAD</span></span>
+# <a name="cachesize-property-example-vc"></a><span data-ttu-id="52d43-104">CacheSize プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="52d43-104">CacheSize Property Example (VC++)</span></span>
+=======
+# <a name="cachesize-property-example-vc"></a><span data-ttu-id="52d43-105">CacheSize プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="52d43-105">CacheSize property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="52d43-106">master</span><span class="sxs-lookup"><span data-stu-id="52d43-106">master</span></span>
 
 
-<span data-ttu-id="f7f32-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="f7f32-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="52d43-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="52d43-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="f7f32-104">次の例では、[CacheSize](cachesize-property-ado.md) プロパティを使用して、30 レコードのキャッシュを使用して実行した操作と、使用せずに実行した操作のパフォーマンスの違いを示します。</span><span class="sxs-lookup"><span data-stu-id="f7f32-104">This example uses the [CacheSize](cachesize-property-ado.md) property to show the difference in performance for an operation performed with and without a 30-record cache.</span></span>
+<span data-ttu-id="52d43-108">次の例では、[CacheSize](cachesize-property-ado.md) プロパティを使用して、30 レコードのキャッシュを使用して実行した操作と、使用せずに実行した操作のパフォーマンスの違いを示します。</span><span class="sxs-lookup"><span data-stu-id="52d43-108">This example uses the [CacheSize](cachesize-property-ado.md) property to show the difference in performance for an operation performed with and without a 30-record cache.</span></span>
 
 ```cpp 
  

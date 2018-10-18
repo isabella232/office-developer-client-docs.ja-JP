@@ -1,23 +1,17 @@
 ---
-title: Connection の Close メソッドおよび Table の Type プロパティの使用例 (VB)
-TOCTitle: Connection Close Method, Table Type Property Example (VB)
-ms:assetid: cd0bb6ad-af7b-fb9c-d45c-5d4b62459c03
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250019(v=office.15)
-ms:contentKeyID: 48547754
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: b0a7cb6f2f2e78727c8e4a383a901d4712916fee
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476713"
+<span data-ttu-id="ef7f1-101"><<<<<<< ヘッド タイトル: 接続の終了方法、テーブルの種類プロパティの使用例 (VB) TOCTitle: 接続の終了メソッドは、テーブルの種類プロパティの使用例 (VB) === タイトル: 接続の Close メソッドをテーブル型のプロパティの使用例 (VB) TOCTitle:接続の Close メソッドをテーブル型のプロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="ef7f1-101"><<<<<<< HEAD title: Connection Close Method, Table Type Property Example (VB) TOCTitle: Connection Close Method, Table Type Property Example (VB) ======= title: Connection Close Method, Table Type property example (VB) TOCTitle: Connection Close Method, Table Type property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="ef7f1-102">マスターの ms:assetid: cd0bb6ad-af7b-fb9c-d45c-5d4b62459c03 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250019(v=office.15) ms:contentKeyID: 48547754 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="ef7f1-102">master ms:assetid: cd0bb6ad-af7b-fb9c-d45c-5d4b62459c03 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250019(v=office.15) ms:contentKeyID: 48547754 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="connection-close-method-table-type-property-example-vb"></a><span data-ttu-id="b0048-102">Connection の Close メソッドおよび Table の Type プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="b0048-102">Connection Close Method, Table Type Property Example (VB)</span></span>
 
-<span data-ttu-id="b0048-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="b0048-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="ef7f1-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="ef7f1-103"><<<<<<< HEAD</span></span>
+# <a name="connection-close-method-table-type-property-example-vb"></a><span data-ttu-id="ef7f1-104">Connection の Close メソッドおよび Table の Type プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="ef7f1-104">Connection Close Method, Table Type Property Example (VB)</span></span>
+=======
+# <a name="connection-close-method-table-type-property-example-vb"></a><span data-ttu-id="ef7f1-105">接続の Close メソッドをテーブル型のプロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="ef7f1-105">Connection Close Method, Table Type property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="ef7f1-106">master</span><span class="sxs-lookup"><span data-stu-id="ef7f1-106">master</span></span>
 
-<span data-ttu-id="b0048-p101">[ActiveConnection](activeconnection-property-adox.md) プロパティを **Nothing** に設定すると、カタログが閉じます。関連付けられたコレクションは、空になります。カタログのスキーマ オブジェクトから作成されたオブジェクトは、すべて孤立化します。キャッシュされたオブジェクトのプロパティはいずれも使用できますが、プロバイダーの呼び出しが必要なプロパティを取得しようとすると失敗します。</span><span class="sxs-lookup"><span data-stu-id="b0048-p101">Setting the [ActiveConnection](activeconnection-property-adox.md) property to **Nothing** should "close" the catalog. Associated collections will be empty. Any objects that were created from schema objects in the catalog will be orphaned. Any properties on those objects that have been cached will still be available, but attempting to read properties that require a call to the provider will fail.</span></span>
+<span data-ttu-id="ef7f1-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="ef7f1-107">**Applies to**: Access 2013 | Office 2013</span></span>
+
+<span data-ttu-id="ef7f1-p101">[ActiveConnection](activeconnection-property-adox.md) プロパティを **Nothing** に設定すると、カタログが閉じます。関連付けられたコレクションは、空になります。カタログのスキーマ オブジェクトから作成されたオブジェクトは、すべて孤立化します。キャッシュされたオブジェクトのプロパティはいずれも使用できますが、プロバイダーの呼び出しが必要なプロパティを取得しようとすると失敗します。</span><span class="sxs-lookup"><span data-stu-id="ef7f1-p101">Setting the [ActiveConnection](activeconnection-property-adox.md) property to **Nothing** should "close" the catalog. Associated collections will be empty. Any objects that were created from schema objects in the catalog will be orphaned. Any properties on those objects that have been cached will still be available, but attempting to read properties that require a call to the provider will fail.</span></span>
 
 ```vb 
  
@@ -64,7 +58,7 @@ ms.locfileid: "25476713"
 
 <br/>
 
-<span data-ttu-id="b0048-108">カタログを開くために使用した [Connection](connection-object-ado.md) オブジェクトを閉じると、 **ActiveConnection** プロパティを **Nothing** に設定した場合と同じように、カタログが閉じます。</span><span class="sxs-lookup"><span data-stu-id="b0048-108">Closing a [Connection](connection-object-ado.md) object that was used to "open" the catalog should have the same effect as setting the **ActiveConnection** property to **Nothing**.</span></span>
+<span data-ttu-id="ef7f1-112">カタログを開くために使用した [Connection](connection-object-ado.md) オブジェクトを閉じると、 **ActiveConnection** プロパティを **Nothing** に設定した場合と同じように、カタログが閉じます。</span><span class="sxs-lookup"><span data-stu-id="ef7f1-112">Closing a [Connection](connection-object-ado.md) object that was used to "open" the catalog should have the same effect as setting the **ActiveConnection** property to **Nothing**.</span></span>
 
 ```vb
     Sub CloseConnection() 

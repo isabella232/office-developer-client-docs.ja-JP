@@ -1,26 +1,20 @@
 ---
-title: Item プロパティの使用例 (VC++)
-TOCTitle: Item Property Example (VC++)
-ms:assetid: 17bfcb84-e0f7-7a24-6fc4-ab1dacd2766a
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248928(v=office.15)
-ms:contentKeyID: 48543452
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: a32f81dc29441cb413c07c3a9e1cdde710d2a959
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477372"
+<span data-ttu-id="2ecd5-101"><<<<<<< ヘッド タイトル: アイテムのプロパティの使用例 (vc++) TOCTitle: アイテムのプロパティの使用例 (vc++) === タイトル: アイテムのプロパティの使用例 (vc++) TOCTitle: アイテムのプロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="2ecd5-101"><<<<<<< HEAD title: Item Property Example (VC++) TOCTitle: Item Property Example (VC++) ======= title: Item property example (VC++) TOCTitle: Item property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="2ecd5-102">マスターの ms:assetid: 17bfcb84-e0f7-7a24-6fc4-ab1dacd2766a ms:mtpsurl: https://msdn.microsoft.com/library/JJ248928(v=office.15) ms:contentKeyID: 48543452 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="2ecd5-102">master ms:assetid: 17bfcb84-e0f7-7a24-6fc4-ab1dacd2766a ms:mtpsurl: https://msdn.microsoft.com/library/JJ248928(v=office.15) ms:contentKeyID: 48543452 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="item-property-example-vc"></a><span data-ttu-id="fb977-102">Item プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="fb977-102">Item Property Example (VC++)</span></span>
+
+<span data-ttu-id="2ecd5-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="2ecd5-103"><<<<<<< HEAD</span></span>
+# <a name="item-property-example-vc"></a><span data-ttu-id="2ecd5-104">Item プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="2ecd5-104">Item Property Example (VC++)</span></span>
+=======
+# <a name="item-property-example-vc"></a><span data-ttu-id="2ecd5-105">アイテムのプロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="2ecd5-105">Item property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="2ecd5-106">master</span><span class="sxs-lookup"><span data-stu-id="2ecd5-106">master</span></span>
 
 
-<span data-ttu-id="fb977-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="fb977-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="2ecd5-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="2ecd5-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="fb977-p101">この例では、[Item](item-property-ado.md) プロパティを使用してコレクションのメンバーにアクセスする方法を示します。この例では、パラメーター化されたコマンドを使用して、***Pubs*** データベースの ***Authors*** テーブルを開いています。</span><span class="sxs-lookup"><span data-stu-id="fb977-p101">This example demonstrates how the [Item](item-property-ado.md) property accesses members of a collection. The example opens the ***Authors*** table of the ***Pubs*** database with a parameterized command.</span></span>
+<span data-ttu-id="2ecd5-p101">この例では、[Item](item-property-ado.md) プロパティを使用してコレクションのメンバーにアクセスする方法を示します。この例では、パラメーター化されたコマンドを使用して、***Pubs*** データベースの ***Authors*** テーブルを開いています。</span><span class="sxs-lookup"><span data-stu-id="2ecd5-p101">This example demonstrates how the [Item](item-property-ado.md) property accesses members of a collection. The example opens the ***Authors*** table of the ***Pubs*** database with a parameterized command.</span></span>
 
-<span data-ttu-id="fb977-p102">データベースに対して発行されるコマンドのパラメーターには、[Command](command-object-ado.md) オブジェクトの [Parameters](parameters-collection-ado.md) コレクションから、インデックスと名前でアクセスします。また、返される [Recordset](recordset-object-ado.md) のフィールドには、そのオブジェクトの [Fields](fields-collection-ado.md) コレクションから、インデックスと名前でアクセスします。</span><span class="sxs-lookup"><span data-stu-id="fb977-p102">The parameter in the command issued against the database is accessed from the [Command](command-object-ado.md) object's [Parameters](parameters-collection-ado.md) collection by index and name. Then the fields of the returned [Recordset](recordset-object-ado.md) are accessed from that object's [Fields](fields-collection-ado.md) collection by index and name.</span></span>
+<span data-ttu-id="2ecd5-p102">データベースに対して発行されるコマンドのパラメーターには、[Command](command-object-ado.md) オブジェクトの [Parameters](parameters-collection-ado.md) コレクションから、インデックスと名前でアクセスします。また、返される [Recordset](recordset-object-ado.md) のフィールドには、そのオブジェクトの [Fields](fields-collection-ado.md) コレクションから、インデックスと名前でアクセスします。</span><span class="sxs-lookup"><span data-stu-id="2ecd5-p102">The parameter in the command issued against the database is accessed from the [Command](command-object-ado.md) object's [Parameters](parameters-collection-ado.md) collection by index and name. Then the fields of the returned [Recordset](recordset-object-ado.md) are accessed from that object's [Fields](fields-collection-ado.md) collection by index and name.</span></span>
 
 ```cpp 
  

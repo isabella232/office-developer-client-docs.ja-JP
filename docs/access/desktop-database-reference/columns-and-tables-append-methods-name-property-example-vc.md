@@ -1,24 +1,18 @@
 ---
-title: 列とテーブルの Append メソッドと Name プロパティの使用例 (VC++)
-TOCTitle: Columns and Tables Append Methods, Name Property Example (VC++)
-ms:assetid: 6586aaed-2556-1d33-c1ab-135a598f7d13
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249392(v=office.15)
-ms:contentKeyID: 48545322
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 2cfe3c66775228f73d21be3305ebac6b0972514b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477405"
+<span data-ttu-id="d12c4-101"><<<<<<< ヘッド タイトル: 列とテーブルの追加方法、名前プロパティの使用例 (vc++) TOCTitle: 列とテーブルの追加方法、名前プロパティの使用例 (vc++) === タイトル: 列とテーブルの追加方法、名前プロパティの使用例 (vc++)TOCTitle: 列とテーブルの追加方法、名前プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="d12c4-101"><<<<<<< HEAD title: Columns and Tables Append Methods, Name Property Example (VC++) TOCTitle: Columns and Tables Append Methods, Name Property Example (VC++) ======= title: Columns and Tables Append Methods, Name property example (VC++) TOCTitle: Columns and Tables Append Methods, Name property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="d12c4-102">マスターの ms:assetid: 6586aaed-2556-1d33-c1ab-135a598f7d13 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249392(v=office.15) ms:contentKeyID: 48545322 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="d12c4-102">master ms:assetid: 6586aaed-2556-1d33-c1ab-135a598f7d13 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249392(v=office.15) ms:contentKeyID: 48545322 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="columns-and-tables-append-methods-name-property-example-vc"></a><span data-ttu-id="5cdb0-102">列とテーブルの Append メソッドと Name プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="5cdb0-102">Columns and Tables Append Methods, Name Property Example (VC++)</span></span>
+
+<span data-ttu-id="d12c4-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="d12c4-103"><<<<<<< HEAD</span></span>
+# <a name="columns-and-tables-append-methods-name-property-example-vc"></a><span data-ttu-id="d12c4-104">列とテーブルの Append メソッドと Name プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="d12c4-104">Columns and Tables Append Methods, Name Property Example (VC++)</span></span>
+=======
+# <a name="columns-and-tables-append-methods-name-property-example-vc"></a><span data-ttu-id="d12c4-105">列とテーブルの追加方法、名前プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="d12c4-105">Columns and Tables Append Methods, Name property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="d12c4-106">master</span><span class="sxs-lookup"><span data-stu-id="d12c4-106">master</span></span>
 
 
-<span data-ttu-id="5cdb0-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="5cdb0-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="d12c4-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="d12c4-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="5cdb0-104">次のコードでは、新しいテーブルの作成方法を示します。</span><span class="sxs-lookup"><span data-stu-id="5cdb0-104">The following code demonstrates how to create a new table.</span></span>
+<span data-ttu-id="d12c4-108">次のコードでは、新しいテーブルの作成方法を示します。</span><span class="sxs-lookup"><span data-stu-id="d12c4-108">The following code demonstrates how to create a new table.</span></span>
 
 ```cpp 
  

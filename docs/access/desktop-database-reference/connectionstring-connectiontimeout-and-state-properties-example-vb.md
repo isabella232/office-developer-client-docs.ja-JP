@@ -1,24 +1,18 @@
 ---
-title: ConnectionString プロパティ、ConnectionTimeout プロパティおよび State プロパティの使用例 (VB)
-TOCTitle: ConnectionString, ConnectionTimeout, and State Properties Example (VB)
-ms:assetid: abdd0262-8647-d545-60e0-13f99337df06
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249796(v=office.15)
-ms:contentKeyID: 48546984
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 79825670b05279071182f41a6523ac552c4ea1ea
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477941"
+<span data-ttu-id="9ddce-101"><<<<<<< ヘッド タイトル: 接続文字列、タイムアウト、および状態のプロパティの使用例 (VB) TOCTitle: 接続文字列、タイムアウト、および状態のプロパティの使用例 (VB) === タイトル: 接続文字列、タイムアウト、状態のプロパティの使用例 (VB) TOCTitle: 接続文字列、タイムアウト、および状態のプロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="9ddce-101"><<<<<<< HEAD title: ConnectionString, ConnectionTimeout, and State Properties Example (VB) TOCTitle: ConnectionString, ConnectionTimeout, and State Properties Example (VB) ======= title: ConnectionString, ConnectionTimeout, and State properties example (VB) TOCTitle: ConnectionString, ConnectionTimeout, and State properties example (VB)</span></span>
+>>>>>>> <span data-ttu-id="9ddce-102">マスターの ms:assetid: abdd0262-8647-d545-60e0-13f99337df06 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249796(v=office.15) ms:contentKeyID: 48546984 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="9ddce-102">master ms:assetid: abdd0262-8647-d545-60e0-13f99337df06 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249796(v=office.15) ms:contentKeyID: 48546984 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="connectionstring-connectiontimeout-and-state-properties-example-vb"></a><span data-ttu-id="d2eff-102">ConnectionString プロパティ、ConnectionTimeout プロパティおよび State プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d2eff-102">ConnectionString, ConnectionTimeout, and State Properties Example (VB)</span></span>
+
+<span data-ttu-id="9ddce-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="9ddce-103"><<<<<<< HEAD</span></span>
+# <a name="connectionstring-connectiontimeout-and-state-properties-example-vb"></a><span data-ttu-id="9ddce-104">ConnectionString プロパティ、ConnectionTimeout プロパティおよび State プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="9ddce-104">ConnectionString, ConnectionTimeout, and State Properties Example (VB)</span></span>
+=======
+# <a name="connectionstring-connectiontimeout-and-state-properties-example-vb"></a><span data-ttu-id="9ddce-105">ConnectionString、タイムアウト、および状態のプロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="9ddce-105">ConnectionString, ConnectionTimeout, and State properties example (VB)</span></span>
+>>>>>>> <span data-ttu-id="9ddce-106">master</span><span class="sxs-lookup"><span data-stu-id="9ddce-106">master</span></span>
 
 
-<span data-ttu-id="d2eff-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="d2eff-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="9ddce-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="9ddce-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="d2eff-p101">この例では、[Connection](connectionstring-property-ado.md) オブジェクトを開くための、 [ConnectionString](connection-object-ado.md) プロパティのさまざまな使い方を示します。また、 [ConnectionTimeout](connectiontimeout-property-ado.md) プロパティを使って接続のタイムアウト時間を設定し、 [State](state-property-ado.md) プロパティを使って接続の状態を確認します。このプロシージャを実行するには、GetState 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="d2eff-p101">This example demonstrates different ways of using the [ConnectionString](connectionstring-property-ado.md) property to open a [Connection](connection-object-ado.md) object. It also uses the [ConnectionTimeout](connectiontimeout-property-ado.md) property to set a connection timeout period, and the [State](state-property-ado.md) property to check the state of the connections. The GetState function is required for this procedure to run.</span></span>
+<span data-ttu-id="9ddce-p101">この例では、[Connection](connectionstring-property-ado.md) オブジェクトを開くための、 [ConnectionString](connection-object-ado.md) プロパティのさまざまな使い方を示します。また、 [ConnectionTimeout](connectiontimeout-property-ado.md) プロパティを使って接続のタイムアウト時間を設定し、 [State](state-property-ado.md) プロパティを使って接続の状態を確認します。このプロシージャを実行するには、GetState 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="9ddce-p101">This example demonstrates different ways of using the [ConnectionString](connectionstring-property-ado.md) property to open a [Connection](connection-object-ado.md) object. It also uses the [ConnectionTimeout](connectiontimeout-property-ado.md) property to set a connection timeout period, and the [State](state-property-ado.md) property to check the state of the connections. The GetState function is required for this procedure to run.</span></span>
 
 ```vb 
  

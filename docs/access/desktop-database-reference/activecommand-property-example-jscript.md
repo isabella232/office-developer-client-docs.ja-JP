@@ -1,24 +1,18 @@
 ---
-title: ActiveCommand プロパティの使用例 (JScript)
-TOCTitle: ActiveCommand Property Example (JScript)
-ms:assetid: ae67b69c-23d9-8c88-763a-a9a63499be32
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249824(v=office.15)
-ms:contentKeyID: 48547070
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 9d89547e56ddf6aa499a096b5991fc22cbf282e4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476604"
+<span data-ttu-id="bf58d-101"><<<<<<< ヘッド タイトル: ActiveCommand プロパティの使用例 (JScript) TOCTitle: ActiveCommand プロパティの使用例 (JScript) ms:assetid: ae67b69c-23d9-8c88-763a-a9a63499be32 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249824(v=office.15) ms:contentKeyID: 48547070 ms.date: 09/18/2015 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="bf58d-101"><<<<<<< HEAD title: ActiveCommand Property Example (JScript) TOCTitle: ActiveCommand Property Example (JScript) ms:assetid: ae67b69c-23d9-8c88-763a-a9a63499be32 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249824(v=office.15) ms:contentKeyID: 48547070 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="activecommand-property-example-jscript"></a><span data-ttu-id="e4b25-102">ActiveCommand プロパティの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="e4b25-102">ActiveCommand Property Example (JScript)</span></span>
 
+# <a name="activecommand-property-example-jscript"></a><span data-ttu-id="bf58d-102">ActiveCommand プロパティの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="bf58d-102">ActiveCommand Property Example (JScript)</span></span>
 
-<span data-ttu-id="e4b25-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="e4b25-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="bf58d-103">=== タイトル: ActiveCommand プロパティの使用例 (JScript) TOCTitle: ActiveCommand プロパティの使用例 (JScript) ms:assetid: ae67b69c-23d9-8c88-763a-a9a63499be32 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249824(v=office.15) ms:contentKeyID: 48547070 ms.date: 2018/10/17 mtps_version: v =office.15</span><span class="sxs-lookup"><span data-stu-id="bf58d-103">======= title: ActiveCommand property example (JScript) TOCTitle: ActiveCommand property example (JScript) ms:assetid: ae67b69c-23d9-8c88-763a-a9a63499be32 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249824(v=office.15) ms:contentKeyID: 48547070 ms.date: 10/17/2018 mtps_version: v=office.15</span></span>
+---
 
-<span data-ttu-id="e4b25-104">次の例では、[ActiveCommand](activecommand-property-ado.md) プロパティの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="e4b25-104">This example demonstrates the [ActiveCommand](activecommand-property-ado.md) property.</span></span> <span data-ttu-id="e4b25-105">切り取りメモ帳または別のテキスト エディターに次のコードを貼り付けして**ActiveCommandJS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="e4b25-105">Cut and paste the following code to Notepad or another text editor, and save it as **ActiveCommandJS.asp**.</span></span>
+# <a name="activecommand-property-example-jscript"></a><span data-ttu-id="bf58d-104">ActiveCommand プロパティの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="bf58d-104">ActiveCommand property example (JScript)</span></span>
+>>>>>>> <span data-ttu-id="bf58d-105">master</span><span class="sxs-lookup"><span data-stu-id="bf58d-105">master</span></span>
+
+<span data-ttu-id="bf58d-106">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="bf58d-106">**Applies to**: Access 2013 | Office 2013</span></span>
+
+<span data-ttu-id="bf58d-107">次の例では、[ActiveCommand](activecommand-property-ado.md) プロパティの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="bf58d-107">This example demonstrates the [ActiveCommand](activecommand-property-ado.md) property.</span></span> <span data-ttu-id="bf58d-108">切り取りメモ帳または別のテキスト エディターに次のコードを貼り付けして**ActiveCommandJS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="bf58d-108">Cut and paste the following code to Notepad or another text editor, and save it as **ActiveCommandJS.asp**.</span></span>
 
 ```javascript
 <!-- BeginActiveCommandJS --> 
@@ -34,7 +28,11 @@ ms.locfileid: "25476604"
 <html> 
  
 <head> 
+<<<<<<< HEAD
 <title>ActiveCommand Property Example (JScript)</title> 
+=======
+<title>ActiveCommand property example (JScript)</title> 
+>>>>>>> master
 <style> 
 <!-- 
 BODY { 
@@ -48,7 +46,11 @@ BODY {
  
 <body bgcolor="White"> 
  
+<<<<<<< HEAD
 <h1>ActiveCommand Property Example (JScript)</h1> 
+=======
+<h1>ActiveCommand property example (JScript)</h1> 
+>>>>>>> master
  
 <% 
 if (strName.length > 0) 

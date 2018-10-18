@@ -1,24 +1,18 @@
 ---
-title: ActualSize プロパティと DefinedSize プロパティの使用例 (VC++)
-TOCTitle: ActualSize and DefinedSize Properties Example (VC++)
-ms:assetid: 90b7a53f-c9b1-f3c1-f769-e6a340c90eba
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249638(v=office.15)
-ms:contentKeyID: 48546328
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 7470f734bc5ae18089ccb58e386a6879bc90fe75
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476894"
+<span data-ttu-id="40c13-101"><<<<<<< ヘッド タイトル: ActualSize、DefinedSize プロパティの使用例 (vc++) TOCTitle: ActualSize、DefinedSize プロパティの使用例 (vc++) ms:assetid: 90b7a53f-c9b1-f3c1-f769-e6a340c90eba ms:mtpsurl: https://msdn.microsoft.com/library/JJ249638(v=office.15) ms:contentKeyID。48546328 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="40c13-101"><<<<<<< HEAD title: ActualSize and DefinedSize Properties Example (VC++) TOCTitle: ActualSize and DefinedSize Properties Example (VC++) ms:assetid: 90b7a53f-c9b1-f3c1-f769-e6a340c90eba ms:mtpsurl: https://msdn.microsoft.com/library/JJ249638(v=office.15) ms:contentKeyID: 48546328 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="actualsize-and-definedsize-properties-example-vc"></a><span data-ttu-id="54686-102">ActualSize プロパティと DefinedSize プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="54686-102">ActualSize and DefinedSize Properties Example (VC++)</span></span>
+
+# <a name="actualsize-and-definedsize-properties-example-vc"></a><span data-ttu-id="40c13-102">ActualSize プロパティと DefinedSize プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="40c13-102">ActualSize and DefinedSize Properties Example (VC++)</span></span>
+<span data-ttu-id="40c13-103">=== タイトル: ActualSize、DefinedSize プロパティの使用例 (vc++) TOCTitle: ActualSize、DefinedSize プロパティの使用例 (vc++) ms:assetid: 90b7a53f-c9b1-f3c1-f769-e6a340c90eba ms:mtpsurl: https://msdn.microsoft.com/library/JJ249638(v=office.15) ms:contentKeyID: 48546328 ms.date: 2018/10/16mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="40c13-103">======= title: ActualSize and DefinedSize properties example (VC++) TOCTitle: ActualSize and DefinedSize properties example (VC++) ms:assetid: 90b7a53f-c9b1-f3c1-f769-e6a340c90eba ms:mtpsurl: https://msdn.microsoft.com/library/JJ249638(v=office.15) ms:contentKeyID: 48546328 ms.date: 10/16/2018 mtps_version: v=office.15</span></span>
+---
+
+# <a name="actualsize-and-definedsize-properties-example-vc"></a><span data-ttu-id="40c13-104">ActualSize、DefinedSize プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="40c13-104">ActualSize and DefinedSize properties example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="40c13-105">master</span><span class="sxs-lookup"><span data-stu-id="40c13-105">master</span></span>
 
 
-<span data-ttu-id="54686-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="54686-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="40c13-106">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="40c13-106">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="54686-104">次の例では、[ActualSize](actualsize-property-ado.md) プロパティと [DefinedSize](definedsize-property-ado.md) プロパティを使用して、フィールドの定義されたサイズと実際のサイズを表示します。</span><span class="sxs-lookup"><span data-stu-id="54686-104">This example uses the [ActualSize](actualsize-property-ado.md) and [DefinedSize](definedsize-property-ado.md) properties to display the defined size and actual size of a field.</span></span>
+<span data-ttu-id="40c13-107">次の例では、[ActualSize](actualsize-property-ado.md) プロパティと [DefinedSize](definedsize-property-ado.md) プロパティを使用して、フィールドの定義されたサイズと実際のサイズを表示します。</span><span class="sxs-lookup"><span data-stu-id="40c13-107">This example uses the [ActualSize](actualsize-property-ado.md) and [DefinedSize](definedsize-property-ado.md) properties to display the defined size and actual size of a field.</span></span>
 
 ```cpp 
  

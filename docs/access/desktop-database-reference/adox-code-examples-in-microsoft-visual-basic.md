@@ -6,97 +6,151 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249407(v=office.15)
 ms:contentKeyID: 48545383
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 83a83eadc9d6489b202682807e3e9e864ecb4f1e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f8d115e606a9208686443d3485b189af9aa5bdff
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476274"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25606914"
 ---
-# <a name="adox-code-examples-in-microsoft-visual-basic"></a><span data-ttu-id="d527e-102">Microsoft Visual Basic での ADOX コードの例</span><span class="sxs-lookup"><span data-stu-id="d527e-102">ADOX Code Examples in Microsoft Visual Basic</span></span>
+# <a name="adox-code-examples-in-microsoft-visual-basic"></a><span data-ttu-id="aad16-102">Microsoft Visual Basic での ADOX コードの例</span><span class="sxs-lookup"><span data-stu-id="aad16-102">ADOX Code Examples in Microsoft Visual Basic</span></span>
 
 
-<span data-ttu-id="d527e-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="d527e-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="aad16-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="aad16-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="d527e-p101">これらのトピックでは、ADOX の使用方法を理解するのに役立つサンプル コードを提供しています。すべてのコード例は、Microsoft Visual Basic で記述されています。</span><span class="sxs-lookup"><span data-stu-id="d527e-p101">These topics provide sample code to help you understand how to use ADOX. All code examples are written using Microsoft Visual Basic.</span></span>
+<span data-ttu-id="aad16-p101">これらのトピックでは、ADOX の使用方法を理解するのに役立つサンプル コードを提供しています。すべてのコード例は、Microsoft Visual Basic で記述されています。</span><span class="sxs-lookup"><span data-stu-id="aad16-p101">These topics provide sample code to help you understand how to use ADOX. All code examples are written using Microsoft Visual Basic.</span></span>
 
 
 > [!NOTE]
-> <span data-ttu-id="d527e-p102">[!メモ] Sub から End Sub までのコード例全体をコピーして、コード エディターに貼り付けてください。この例は、一部分だけ使用したり、段落書式が失われると、正常に動作しない場合があります。</span><span class="sxs-lookup"><span data-stu-id="d527e-p102">Paste the entire code example, from Sub to End Sub, into your code editor. The example may not run correctly if you use partial examples or if paragraph formatting is lost.</span></span>
+> <span data-ttu-id="aad16-p102">[!メモ] Sub から End Sub までのコード例全体をコピーして、コード エディターに貼り付けてください。この例は、一部分だけ使用したり、段落書式が失われると、正常に動作しない場合があります。</span><span class="sxs-lookup"><span data-stu-id="aad16-p102">Paste the entire code example, from Sub to End Sub, into your code editor. The example may not run correctly if you use partial examples or if paragraph formatting is lost.</span></span>
 
 
 
-<span data-ttu-id="d527e-108">**メソッド**</span><span class="sxs-lookup"><span data-stu-id="d527e-108">**Methods**</span></span>
+<span data-ttu-id="aad16-108">**メソッド**</span><span class="sxs-lookup"><span data-stu-id="aad16-108">**Methods**</span></span>
 
-  - [<span data-ttu-id="d527e-109">列とテーブルの Append メソッドと Name プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-109">Columns and Tables Append Methods, Name Property Example (VB)</span></span>](columns-and-tables-append-methods-name-property-example-vb.md)
+<span data-ttu-id="aad16-109"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="aad16-109"><<<<<<< HEAD</span></span>
+  - [<span data-ttu-id="aad16-110">列とテーブルの Append メソッドと Name プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-110">Columns and Tables Append Methods, Name Property Example (VB)</span></span>](columns-and-tables-append-methods-name-property-example-vb.md)
 
-  - [<span data-ttu-id="d527e-110">Connection の Close メソッドおよび Table の Type プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-110">Connection Close Method, Table Type Property Example (VB)</span></span>](connection-close-method-table-type-property-example-vb.md)
+  - <span data-ttu-id="aad16-111">[Close メソッドの接続、テーブルの種類プロパティの使用例 (VB)](connection-close-method-table-type-property-example-vb.md)
+=======</span><span class="sxs-lookup"><span data-stu-id="aad16-111">[Connection Close Method, Table Type Property Example (VB)](connection-close-method-table-type-property-example-vb.md)
+=======</span></span>
+  - [<span data-ttu-id="aad16-112">列とテーブルの追加方法、名前プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-112">Columns and Tables Append Methods, Name property example (VB)</span></span>](columns-and-tables-append-methods-name-property-example-vb.md)
 
-  - [<span data-ttu-id="d527e-111">Create メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-111">Create Method Example (VB)</span></span>](create-method-example-vb.md)
+  - [<span data-ttu-id="aad16-113">接続の Close メソッドをテーブル型のプロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-113">Connection Close Method, Table Type property example (VB)</span></span>](connection-close-method-table-type-property-example-vb.md)
+>>>>>>> <span data-ttu-id="aad16-114">master</span><span class="sxs-lookup"><span data-stu-id="aad16-114">master</span></span>
 
-  - [<span data-ttu-id="d527e-112">GetObjectOwner メソッドと SetObjectOwner メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-112">GetObjectOwner and SetObjectOwner Methods Example (VB)</span></span>](getobjectowner-and-setobjectowner-methods-example-vb.md)
+  - [<span data-ttu-id="aad16-115">Create メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-115">Create Method Example (VB)</span></span>](create-method-example-vb.md)
 
-  - [<span data-ttu-id="d527e-113">GetPermissions メソッドと SetPermissions メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-113">GetPermissions and SetPermissions Methods Example (VB)</span></span>](getpermissions-and-setpermissions-methods-example-vb.md)
+  - [<span data-ttu-id="aad16-116">GetObjectOwner メソッドと SetObjectOwner メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-116">GetObjectOwner and SetObjectOwner Methods Example (VB)</span></span>](getobjectowner-and-setobjectowner-methods-example-vb.md)
 
-  - [<span data-ttu-id="d527e-114">Groups と Users の Append メソッドおよび ChangePassword メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-114">Groups and Users Append, ChangePassword Methods Example (VB)</span></span>](groups-and-users-append-changepassword-methods-example-vb.md)
+  - [<span data-ttu-id="aad16-117">GetPermissions メソッドと SetPermissions メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-117">GetPermissions and SetPermissions Methods Example (VB)</span></span>](getpermissions-and-setpermissions-methods-example-vb.md)
 
-  - [<span data-ttu-id="d527e-115">Indexes の Append メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-115">Indexes Append Method Example (VB)</span></span>](indexes-append-method-example-vb.md)
+  - [<span data-ttu-id="aad16-118">Groups と Users の Append メソッドおよび ChangePassword メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-118">Groups and Users Append, ChangePassword Methods Example (VB)</span></span>](groups-and-users-append-changepassword-methods-example-vb.md)
 
-  - [<span data-ttu-id="d527e-116">Keys の Append メソッド、および Key の Type、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-116">Keys Append Method, Key Type, RelatedColumn, RelatedTable, and UpdateRule Properties Example (VB)</span></span>](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb.md)
+  - [<span data-ttu-id="aad16-119">Indexes の Append メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-119">Indexes Append Method Example (VB)</span></span>](indexes-append-method-example-vb.md)
 
-  - [<span data-ttu-id="d527e-117">Procedures の Append メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-117">Procedures Append Method Example (VB)</span></span>](procedures-append-method-example-vb.md)
+<span data-ttu-id="aad16-120"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="aad16-120"><<<<<<< HEAD</span></span>
+  - <span data-ttu-id="aad16-121">[キーが追加され、メソッド、キーの種類、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VB)](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb.md)
+=======</span><span class="sxs-lookup"><span data-stu-id="aad16-121">[Keys Append Method, Key Type, RelatedColumn, RelatedTable, and UpdateRule Properties Example (VB)](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb.md)
+=======</span></span>
+  - [<span data-ttu-id="aad16-122">キーの追加方法、キーの種類、RelatedColumn、RelatedTable、および UpdateRule プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-122">Keys Append Method, Key Type, RelatedColumn, RelatedTable, and UpdateRule properties example (VB)</span></span>](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb.md)
+>>>>>>> <span data-ttu-id="aad16-123">master</span><span class="sxs-lookup"><span data-stu-id="aad16-123">master</span></span>
 
-  - [<span data-ttu-id="d527e-118">Procedures の Delete メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-118">Procedures Delete Method Example (VB)</span></span>](procedures-delete-method-example-vb.md)
+  - [<span data-ttu-id="aad16-124">Procedures の Append メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-124">Procedures Append Method Example (VB)</span></span>](procedures-append-method-example-vb.md)
 
-  - [<span data-ttu-id="d527e-119">Procedures の Refresh メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-119">Procedures Refresh Method Example (VB)</span></span>](procedures-refresh-method-example-vb.md)
+  - [<span data-ttu-id="aad16-125">Procedures の Delete メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-125">Procedures Delete Method Example (VB)</span></span>](procedures-delete-method-example-vb.md)
 
-  - [<span data-ttu-id="d527e-120">Views の Append メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-120">Views Append Method Example (VB)</span></span>](views-append-method-example-vb.md)
+  - [<span data-ttu-id="aad16-126">Procedures の Refresh メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-126">Procedures Refresh Method Example (VB)</span></span>](procedures-refresh-method-example-vb.md)
 
-  - [<span data-ttu-id="d527e-121">Views の Delete メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-121">Views Delete Method Example (VB)</span></span>](views-delete-method-example-vb.md)
+  - [<span data-ttu-id="aad16-127">Views の Append メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-127">Views Append Method Example (VB)</span></span>](views-append-method-example-vb.md)
 
-  - [<span data-ttu-id="d527e-122">Views の Refresh メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-122">Views Refresh Method Example (VB)</span></span>](views-refresh-method-example-vb.md)
+  - [<span data-ttu-id="aad16-128">Views の Delete メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-128">Views Delete Method Example (VB)</span></span>](views-delete-method-example-vb.md)
 
-<span data-ttu-id="d527e-123">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="d527e-123">**Properties**</span></span>
+  - [<span data-ttu-id="aad16-129">Views の Refresh メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-129">Views Refresh Method Example (VB)</span></span>](views-refresh-method-example-vb.md)
 
-  - [<span data-ttu-id="d527e-124">Attributes プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-124">Attributes Property Example (VB)</span></span>](attributes-property-example-vb.md)
+<span data-ttu-id="aad16-130">**プロパティ**</span><span class="sxs-lookup"><span data-stu-id="aad16-130">**Properties**</span></span>
 
-  - [<span data-ttu-id="d527e-125">Catalog の ActiveConnection プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-125">Catalog ActiveConnection Property Example (VB)</span></span>](catalog-activeconnection-property-example-vb.md)
+<span data-ttu-id="aad16-131"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="aad16-131"><<<<<<< HEAD</span></span>
+  - [<span data-ttu-id="aad16-132">Attributes プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-132">Attributes Property Example (VB)</span></span>](attributes-property-example-vb.md)
 
-  - [<span data-ttu-id="d527e-126">Clustered プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-126">Clustered Property Example (VB)</span></span>](clustered-property-example-vb.md)
+  - [<span data-ttu-id="aad16-133">Catalog の ActiveConnection プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-133">Catalog ActiveConnection Property Example (VB)</span></span>](catalog-activeconnection-property-example-vb.md)
 
-  - [<span data-ttu-id="d527e-127">Command プロパティと CommandText プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-127">Command and CommandText Properties Example (VB)</span></span>](command-and-commandtext-properties-example-vb.md)
+  - [<span data-ttu-id="aad16-134">Clustered プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-134">Clustered Property Example (VB)</span></span>](clustered-property-example-vb.md)
 
-  - [<span data-ttu-id="d527e-128">Parameters コレクションの Command プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-128">Command Property, Parameters Collection Example (VB)</span></span>](parameters-collection-command-property-example-vb.md)
+  - <span data-ttu-id="aad16-135">[コマンドと CommandText プロパティの使用例 (VB)](command-and-commandtext-properties-example-vb.md)
+=======</span><span class="sxs-lookup"><span data-stu-id="aad16-135">[Command and CommandText Properties Example (VB)](command-and-commandtext-properties-example-vb.md)
+=======</span></span>
+  - [<span data-ttu-id="aad16-136">属性プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-136">Attributes property example (VB)</span></span>](attributes-property-example-vb.md)
 
-  - [<span data-ttu-id="d527e-129">Views コレクションと CommandText プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-129">CommandText Property, Views Collection Example (VB)</span></span>](views-collection-commandtext-property-example-vb.md)
+  - [<span data-ttu-id="aad16-137">カタログの ActiveConnection プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-137">Catalog ActiveConnection property example (VB)</span></span>](catalog-activeconnection-property-example-vb.md)
 
-  - [<span data-ttu-id="d527e-130">DateCreated プロパティと DateModified プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-130">DateCreated and DateModified Properties Example (VB)</span></span>](datecreated-and-datemodified-properties-example-vb.md)
+  - [<span data-ttu-id="aad16-138">クラスター化プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-138">Clustered property example (VB)</span></span>](clustered-property-example-vb.md)
 
-  - [<span data-ttu-id="d527e-131">DefinedSize プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-131">DefinedSize Property Example (VB)</span></span>](definedsize-property-example-vb.md)
+  - [<span data-ttu-id="aad16-139">コマンドと CommandText プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-139">Command and CommandText properties example (VB)</span></span>](command-and-commandtext-properties-example-vb.md)
+>>>>>>> <span data-ttu-id="aad16-140">master</span><span class="sxs-lookup"><span data-stu-id="aad16-140">master</span></span>
 
-  - [<span data-ttu-id="d527e-132">DeleteRule プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-132">DeleteRule Property Example (VB)</span></span>](deleterule-property-example-vb.md)
+  - [<span data-ttu-id="aad16-141">Parameters コレクションの Command プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-141">Command Property, Parameters Collection Example (VB)</span></span>](parameters-collection-command-property-example-vb.md)
 
-  - [<span data-ttu-id="d527e-133">IndexNulls プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-133">IndexNulls Property Example (VB)</span></span>](indexnulls-property-example-vb.md)
+  - [<span data-ttu-id="aad16-142">Views コレクションと CommandText プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-142">CommandText Property, Views Collection Example (VB)</span></span>](views-collection-commandtext-property-example-vb.md)
 
-  - [<span data-ttu-id="d527e-134">Keys の Append メソッド、および Key の Type、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-134">Key Type, RelatedColumn, RelatedTable, and UpdateRule Properties, Keys Append Method Example (VB)</span></span>](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb.md)
+<span data-ttu-id="aad16-143"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="aad16-143"><<<<<<< HEAD</span></span>
+  - [<span data-ttu-id="aad16-144">DateCreated プロパティと DateModified プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-144">DateCreated and DateModified Properties Example (VB)</span></span>](datecreated-and-datemodified-properties-example-vb.md)
 
-  - [<span data-ttu-id="d527e-135">列とテーブルの Append メソッドと Name プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-135">Name Property, Columns and Tables Append Methods Example (VB)</span></span>](columns-and-tables-append-methods-name-property-example-vb.md)
+  - [<span data-ttu-id="aad16-145">DefinedSize プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-145">DefinedSize Property Example (VB)</span></span>](definedsize-property-example-vb.md)
 
-  - [<span data-ttu-id="d527e-136">NumericScale プロパティと Precision プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-136">NumericScale and Precision Properties Example (VB)</span></span>](numericscale-and-precision-properties-example-vb.md)
+  - [<span data-ttu-id="aad16-146">DeleteRule プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-146">DeleteRule Property Example (VB)</span></span>](deleterule-property-example-vb.md)
 
-  - [<span data-ttu-id="d527e-137">ParentCatalog プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-137">ParentCatalog Property Example (VB)</span></span>](parentcatalog-property-example-vb.md)
+  - <span data-ttu-id="aad16-147">[IndexNulls プロパティの使用例 (VB)](indexnulls-property-example-vb.md)
+=======</span><span class="sxs-lookup"><span data-stu-id="aad16-147">[IndexNulls Property Example (VB)](indexnulls-property-example-vb.md)
+=======</span></span>
+  - [<span data-ttu-id="aad16-148">作成日時と最終更新日時プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-148">DateCreated and DateModified properties example (VB)</span></span>](datecreated-and-datemodified-properties-example-vb.md)
 
-  - [<span data-ttu-id="d527e-138">PrimaryKey プロパティと Unique プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-138">PrimaryKey and Unique Properties Example (VB)</span></span>](primarykey-and-unique-properties-example-vb.md)
+  - [<span data-ttu-id="aad16-149">DefinedSize プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-149">DefinedSize property example (VB)</span></span>](definedsize-property-example-vb.md)
 
-  - [<span data-ttu-id="d527e-139">SortOrder プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-139">SortOrder Property Example (VB)</span></span>](sortorder-property-example-vb.md)
+  - [<span data-ttu-id="aad16-150">DeleteRule プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-150">DeleteRule property example (VB)</span></span>](deleterule-property-example-vb.md)
 
-  - [<span data-ttu-id="d527e-140">Connection の Close メソッドおよび Table の Type プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-140">Table Type Property, Connection Close Method, Example (VB)</span></span>](connection-close-method-table-type-property-example-vb.md)
+  - [<span data-ttu-id="aad16-151">IndexNulls プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-151">IndexNulls property example (VB)</span></span>](indexnulls-property-example-vb.md)
+>>>>>>> <span data-ttu-id="aad16-152">master</span><span class="sxs-lookup"><span data-stu-id="aad16-152">master</span></span>
 
-<span data-ttu-id="d527e-141">**コレクション**</span><span class="sxs-lookup"><span data-stu-id="d527e-141">**Collections**</span></span>
+  - [<span data-ttu-id="aad16-153">Keys の Append メソッド、および Key の Type、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-153">Key Type, RelatedColumn, RelatedTable, and UpdateRule Properties, Keys Append Method Example (VB)</span></span>](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb.md)
 
-  - [<span data-ttu-id="d527e-142">Parameters コレクションの Command プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-142">Parameters Collection, Command Property Example (VB)</span></span>](parameters-collection-command-property-example-vb.md)
+  - [<span data-ttu-id="aad16-154">列とテーブルの Append メソッドと Name プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-154">Name Property, Columns and Tables Append Methods Example (VB)</span></span>](columns-and-tables-append-methods-name-property-example-vb.md)
 
-  - [<span data-ttu-id="d527e-143">Views コレクションと Fields コレクションの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-143">Views and Fields Collections Example (VB)</span></span>](views-and-fields-collections-example-vb.md)
+<span data-ttu-id="aad16-155"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="aad16-155"><<<<<<< HEAD</span></span>
+  - [<span data-ttu-id="aad16-156">NumericScale プロパティと Precision プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-156">NumericScale and Precision Properties Example (VB)</span></span>](numericscale-and-precision-properties-example-vb.md)
 
-  - [<span data-ttu-id="d527e-144">Views コレクションと CommandText プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d527e-144">Views Collection, CommandText Property Example (VB)</span></span>](views-collection-commandtext-property-example-vb.md)
+  - [<span data-ttu-id="aad16-157">ParentCatalog プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-157">ParentCatalog Property Example (VB)</span></span>](parentcatalog-property-example-vb.md)
+
+  - [<span data-ttu-id="aad16-158">PrimaryKey プロパティと Unique プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-158">PrimaryKey and Unique Properties Example (VB)</span></span>](primarykey-and-unique-properties-example-vb.md)
+
+  - <span data-ttu-id="aad16-159">[SortOrder プロパティの使用例 (VB)](sortorder-property-example-vb.md)
+=======</span><span class="sxs-lookup"><span data-stu-id="aad16-159">[SortOrder Property Example (VB)](sortorder-property-example-vb.md)
+=======</span></span>
+  - [<span data-ttu-id="aad16-160">NumericScale と Precision プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-160">NumericScale and Precision properties example (VB)</span></span>](numericscale-and-precision-properties-example-vb.md)
+
+  - [<span data-ttu-id="aad16-161">ParentCatalog プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-161">ParentCatalog property example (VB)</span></span>](parentcatalog-property-example-vb.md)
+
+  - [<span data-ttu-id="aad16-162">主キーや Unique プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-162">PrimaryKey and Unique properties example (VB)</span></span>](primarykey-and-unique-properties-example-vb.md)
+
+  - [<span data-ttu-id="aad16-163">SortOrder プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-163">SortOrder property example (VB)</span></span>](sortorder-property-example-vb.md)
+>>>>>>> <span data-ttu-id="aad16-164">master</span><span class="sxs-lookup"><span data-stu-id="aad16-164">master</span></span>
+
+  - [<span data-ttu-id="aad16-165">Connection の Close メソッドおよび Table の Type プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-165">Table Type Property, Connection Close Method, Example (VB)</span></span>](connection-close-method-table-type-property-example-vb.md)
+
+<span data-ttu-id="aad16-166">**コレクション**</span><span class="sxs-lookup"><span data-stu-id="aad16-166">**Collections**</span></span>
+
+<span data-ttu-id="aad16-167"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="aad16-167"><<<<<<< HEAD</span></span>
+  - [<span data-ttu-id="aad16-168">Parameters コレクションの Command プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-168">Parameters Collection, Command Property Example (VB)</span></span>](parameters-collection-command-property-example-vb.md)
+
+  - [<span data-ttu-id="aad16-169">Views コレクションと Fields コレクションの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-169">Views and Fields Collections Example (VB)</span></span>](views-and-fields-collections-example-vb.md)
+
+  - <span data-ttu-id="aad16-170">[Views コレクションでは、CommandText プロパティの使用例 (VB)](views-collection-commandtext-property-example-vb.md)
+=======</span><span class="sxs-lookup"><span data-stu-id="aad16-170">[Views Collection, CommandText Property Example (VB)](views-collection-commandtext-property-example-vb.md)
+=======</span></span>
+  - [<span data-ttu-id="aad16-171">Parameters コレクションのコマンド プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-171">Parameters Collection, Command property example (VB)</span></span>](parameters-collection-command-property-example-vb.md)
+
+  - [<span data-ttu-id="aad16-172">Views コレクションと Fields コレクションの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-172">Views and Fields Collections Example (VB)</span></span>](views-and-fields-collections-example-vb.md)
+
+  - [<span data-ttu-id="aad16-173">Views コレクションでは、CommandText プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad16-173">Views Collection, CommandText property example (VB)</span></span>](views-collection-commandtext-property-example-vb.md)
+>>>>>>> <span data-ttu-id="aad16-174">master</span><span class="sxs-lookup"><span data-stu-id="aad16-174">master</span></span>
 

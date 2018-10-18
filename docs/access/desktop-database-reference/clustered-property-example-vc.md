@@ -1,24 +1,18 @@
 ---
-title: Clustered プロパティの使用例 (VC++)
-TOCTitle: Clustered Property Example (VC++)
-ms:assetid: a262e38e-ce44-66cb-1adf-fad8e6b840d1
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249748(v=office.15)
-ms:contentKeyID: 48546761
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 5be7f193c339c2c002e5b1806103fbcca5306666
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479415"
+<span data-ttu-id="0989b-101"><<<<<<< ヘッド タイトル: クラスター化されたプロパティの使用例 (vc++) TOCTitle: クラスター化されたプロパティの使用例 (vc++) === タイトル: クラスター化されたプロパティの使用例 (vc++) TOCTitle: クラスター化されたプロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="0989b-101"><<<<<<< HEAD title: Clustered Property Example (VC++) TOCTitle: Clustered Property Example (VC++) ======= title: Clustered property example (VC++) TOCTitle: Clustered property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="0989b-102">マスターの ms:assetid: a262e38e-ce44-66cb-1adf-fad8e6b840d1 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249748(v=office.15) ms:contentKeyID: 48546761 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="0989b-102">master ms:assetid: a262e38e-ce44-66cb-1adf-fad8e6b840d1 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249748(v=office.15) ms:contentKeyID: 48546761 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="clustered-property-example-vc"></a><span data-ttu-id="95c4c-102">Clustered プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="95c4c-102">Clustered Property Example (VC++)</span></span>
+
+<span data-ttu-id="0989b-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="0989b-103"><<<<<<< HEAD</span></span>
+# <a name="clustered-property-example-vc"></a><span data-ttu-id="0989b-104">Clustered プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="0989b-104">Clustered Property Example (VC++)</span></span>
+=======
+# <a name="clustered-property-example-vc"></a><span data-ttu-id="0989b-105">クラスター化プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="0989b-105">Clustered property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="0989b-106">master</span><span class="sxs-lookup"><span data-stu-id="0989b-106">master</span></span>
 
 
-<span data-ttu-id="95c4c-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="95c4c-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="0989b-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="0989b-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="95c4c-104">ここでは、[Index](clustered-property-adox.md) の [Clustered](index-object-adox.md) プロパティの使用例を示します。</span><span class="sxs-lookup"><span data-stu-id="95c4c-104">This example demonstrates the [Clustered](clustered-property-adox.md) property of an [Index](index-object-adox.md).</span></span> <span data-ttu-id="95c4c-105">Microsoft Jet データベースはサポートできないというクラスター化インデックスは、次の使用例は、 *Northwind*データベース内のすべてのインデックスの**Clustered**プロパティを**False**が戻りますので注意してください。</span><span class="sxs-lookup"><span data-stu-id="95c4c-105">Note that Microsoft Jet databases do not support clustered indexes, so this example will return **False** for the **Clustered** property of all indexes in the *Northwind* database.</span></span>
+<span data-ttu-id="0989b-108">ここでは、[Index](clustered-property-adox.md) の [Clustered](index-object-adox.md) プロパティの使用例を示します。</span><span class="sxs-lookup"><span data-stu-id="0989b-108">This example demonstrates the [Clustered](clustered-property-adox.md) property of an [Index](index-object-adox.md).</span></span> <span data-ttu-id="0989b-109">Microsoft Jet データベースはサポートできないというクラスター化インデックスは、次の使用例は、 *Northwind*データベース内のすべてのインデックスの**Clustered**プロパティを**False**が戻りますので注意してください。</span><span class="sxs-lookup"><span data-stu-id="0989b-109">Note that Microsoft Jet databases do not support clustered indexes, so this example will return **False** for the **Clustered** property of all indexes in the *Northwind* database.</span></span>
 
 ```cpp 
  

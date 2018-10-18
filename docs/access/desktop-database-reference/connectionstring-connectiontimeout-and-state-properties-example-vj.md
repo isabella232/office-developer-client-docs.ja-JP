@@ -1,24 +1,18 @@
 ---
-title: ConnectionString プロパティ、ConnectionTimeout プロパティおよび State プロパティの使用例 (VJ++)
-TOCTitle: ConnectionString, ConnectionTimeout, and State Properties Example (VJ++)
-ms:assetid: 88b3f95e-0e46-7cbb-8086-d583319a6628
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249599(v=office.15)
-ms:contentKeyID: 48546141
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 7de2b464889a51229f308f8cdf9a8b3b9ec8e0c0
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479099"
+<span data-ttu-id="bd593-101"><<<<<<< ヘッド タイトル: 接続文字列、タイムアウト、および状態のプロパティの使用例 (vj++) TOCTitle: 接続文字列、タイムアウト、および状態のプロパティの使用例 (vj++) === タイトル: 接続文字列は、タイムアウト、および状態のプロパティの使用例 (vj++) TOCTitle: 接続文字列、タイムアウト、および状態のプロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="bd593-101"><<<<<<< HEAD title: ConnectionString, ConnectionTimeout, and State Properties Example (VJ++) TOCTitle: ConnectionString, ConnectionTimeout, and State Properties Example (VJ++) ======= title: ConnectionString, ConnectionTimeout, and State properties example (VJ++) TOCTitle: ConnectionString, ConnectionTimeout, and State properties example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="bd593-102">マスターの ms:assetid: 88b3f95e-0e46-7cbb-8086-d583319a6628 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249599(v=office.15) ms:contentKeyID: 48546141 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="bd593-102">master ms:assetid: 88b3f95e-0e46-7cbb-8086-d583319a6628 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249599(v=office.15) ms:contentKeyID: 48546141 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="connectionstring-connectiontimeout-and-state-properties-example-vj"></a><span data-ttu-id="c7ef9-102">ConnectionString プロパティ、ConnectionTimeout プロパティおよび State プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="c7ef9-102">ConnectionString, ConnectionTimeout, and State Properties Example (VJ++)</span></span>
+
+<span data-ttu-id="bd593-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="bd593-103"><<<<<<< HEAD</span></span>
+# <a name="connectionstring-connectiontimeout-and-state-properties-example-vj"></a><span data-ttu-id="bd593-104">ConnectionString プロパティ、ConnectionTimeout プロパティおよび State プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="bd593-104">ConnectionString, ConnectionTimeout, and State Properties Example (VJ++)</span></span>
+=======
+# <a name="connectionstring-connectiontimeout-and-state-properties-example-vj"></a><span data-ttu-id="bd593-105">ConnectionString、タイムアウト、および状態のプロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="bd593-105">ConnectionString, ConnectionTimeout, and State properties example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="bd593-106">master</span><span class="sxs-lookup"><span data-stu-id="bd593-106">master</span></span>
 
 
-<span data-ttu-id="c7ef9-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="c7ef9-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="bd593-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="bd593-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="c7ef9-p101">この例では、[Connection](connectionstring-property-ado.md) オブジェクトを開くための、 [ConnectionString](connection-object-ado.md) プロパティのさまざまな使い方を示します。また、 [ConnectionTimeout](connectiontimeout-property-ado.md) プロパティを使って接続のタイムアウト時間を設定し、 [State](state-property-ado.md) プロパティを使って接続の状態を確認します。このプロシージャを実行するには、GetState 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="c7ef9-p101">This example demonstrates different ways of using the [ConnectionString](connectionstring-property-ado.md) property to open a [Connection](connection-object-ado.md) object. It also uses the [ConnectionTimeout](connectiontimeout-property-ado.md) property to set a connection timeout period, and the [State](state-property-ado.md) property to check the state of the connections. The GetState function is required for this procedure to run.</span></span>
+<span data-ttu-id="bd593-p101">この例では、[Connection](connectionstring-property-ado.md) オブジェクトを開くための、 [ConnectionString](connection-object-ado.md) プロパティのさまざまな使い方を示します。また、 [ConnectionTimeout](connectiontimeout-property-ado.md) プロパティを使って接続のタイムアウト時間を設定し、 [State](state-property-ado.md) プロパティを使って接続の状態を確認します。このプロシージャを実行するには、GetState 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="bd593-p101">This example demonstrates different ways of using the [ConnectionString](connectionstring-property-ado.md) property to open a [Connection](connection-object-ado.md) object. It also uses the [ConnectionTimeout](connectiontimeout-property-ado.md) property to set a connection timeout period, and the [State](state-property-ado.md) property to check the state of the connections. The GetState function is required for this procedure to run.</span></span>
 
 ```java 
  

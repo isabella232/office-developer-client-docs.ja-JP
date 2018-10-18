@@ -1,23 +1,22 @@
 ---
-title: AbsolutePage プロパティ、PageCount プロパティ、および PageSize プロパティの使用例 (JScript)
-TOCTitle: AbsolutePage, PageCount, and PageSize Properties Example (JScript)
-ms:assetid: 6df29022-16f2-c7d8-d45b-b9998e929030
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249434(v=office.15)
-ms:contentKeyID: 48545506
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 60e302cc61b9bbf61a7183d5e74ea6a9dac4a135
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476420"
+<span data-ttu-id="e07a8-101"><<<<<<< ヘッド タイトル: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (JScript) TOCTitle: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (JScript) ms:assetid: 6df29022-16f2-c7d8-d45b-b9998e929030 ms:mtpsurl:https://msdn.microsoft.com/library/JJ249434(v=office.15) ms:contentKeyID: 48545506 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="e07a8-101"><<<<<<< HEAD title: AbsolutePage, PageCount, and PageSize Properties Example (JScript) TOCTitle: AbsolutePage, PageCount, and PageSize Properties Example (JScript) ms:assetid: 6df29022-16f2-c7d8-d45b-b9998e929030 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249434(v=office.15) ms:contentKeyID: 48545506 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="absolutepage-pagecount-and-pagesize-properties-example-jscript"></a><span data-ttu-id="3c2e7-102">AbsolutePage プロパティ、PageCount プロパティ、および PageSize プロパティの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="3c2e7-102">AbsolutePage, PageCount, and PageSize Properties Example (JScript)</span></span>
 
-<span data-ttu-id="3c2e7-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="3c2e7-103">**Applies to**: Access 2013 | Office 2013</span></span>
+# <a name="absolutepage-pagecount-and-pagesize-properties-example-jscript"></a><span data-ttu-id="e07a8-102">AbsolutePage プロパティ、PageCount プロパティ、および PageSize プロパティの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="e07a8-102">AbsolutePage, PageCount, and PageSize Properties Example (JScript)</span></span>
 
-<span data-ttu-id="3c2e7-104">この例と、AbsolutePage、PageCount、PageSize プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="3c2e7-104">This example demonstrates the AbsolutePage, PageCount, and PageSize properties.</span></span> <span data-ttu-id="3c2e7-105">切り取りメモ帳または別のテキスト エディターに次のコードを貼り付けして**AbsolutePageJS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="3c2e7-105">Cut and paste the following code to Notepad or another text editor, and save it as **AbsolutePageJS.asp**.</span></span>
+<span data-ttu-id="e07a8-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="e07a8-103">**Applies to**: Access 2013 | Office 2013</span></span>
+
+<a name="this-example-demonstrates-the-absolutepage-pagecount-and-pagesize-properties-cut-and-paste-the-following-code-to-notepad-or-another-text-editor-and-save-it-as-absolutepagejsasp"></a><span data-ttu-id="e07a8-104">この例と、AbsolutePage、PageCount、PageSize プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="e07a8-104">This example demonstrates the AbsolutePage, PageCount, and PageSize properties.</span></span> <span data-ttu-id="e07a8-105">切り取りメモ帳または別のテキスト エディターに次のコードを貼り付けして**AbsolutePageJS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="e07a8-105">Cut and paste the following code to Notepad or another text editor, and save it as **AbsolutePageJS.asp**.</span></span>
+=======
+<span data-ttu-id="e07a8-106">タイトル: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (JScript) TOCTitle: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (JScript) ms:assetid: 6df29022-16f2-c7d8-d45b-b9998e929030 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249434(v=office.15) ms:contentKeyID。48545506 ms.date: 2018/10/17 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="e07a8-106">title: AbsolutePage, PageCount, and PageSize properties example (JScript) TOCTitle: AbsolutePage, PageCount, and PageSize properties example (JScript) ms:assetid: 6df29022-16f2-c7d8-d45b-b9998e929030 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249434(v=office.15) ms:contentKeyID: 48545506 ms.date: 10/17/2018 mtps_version: v=office.15</span></span>
+---
+
+# <a name="absolutepage-pagecount-and-pagesize-properties-example-jscript"></a><span data-ttu-id="e07a8-107">AbsolutePage、PageCount、および PageSize プロパティの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="e07a8-107">AbsolutePage, PageCount, and PageSize properties example (JScript)</span></span>
+
+<span data-ttu-id="e07a8-108">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="e07a8-108">**Applies to**: Access 2013 | Office 2013</span></span>
+
+<span data-ttu-id="e07a8-109">次の例では、[AbsolutePage](absolutepage-property-ado.md) プロパティ、[PageCount](pagecount-property-ado.md) プロパティ、および [PageSize](pagesize-property-ado.md) プロパティを使用して、***Employee*** テーブルから取得した名前と雇用年月日を一度に 5 レコードずつ表示します。</span><span class="sxs-lookup"><span data-stu-id="e07a8-109">This example uses the [AbsolutePage](absolutepage-property-ado.md), [PageCount](pagecount-property-ado.md), and [PageSize](pagesize-property-ado.md) properties to display names and hire dates from the ***Employees*** table, five records at a time.</span></span> <span data-ttu-id="e07a8-110">切り取りメモ帳または別のテキスト エディターに次のコードを貼り付けして**AbsolutePageJS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="e07a8-110">Cut and paste the following code to Notepad or another text editor, and save it as **AbsolutePageJS.asp**.</span></span>
+>>>>>>> <span data-ttu-id="e07a8-111">master</span><span class="sxs-lookup"><span data-stu-id="e07a8-111">master</span></span>
 
 ```javascript
 <!-- BeginAbsolutePageJS --> 

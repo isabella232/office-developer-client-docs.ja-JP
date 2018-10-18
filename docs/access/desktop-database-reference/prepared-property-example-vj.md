@@ -1,24 +1,18 @@
 ---
-title: Prepared プロパティの使用例 (VJ++)
-TOCTitle: Prepared Property Example (VJ++)
-ms:assetid: 4b8402c2-9604-aaba-ba75-43161a8df9c8
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249237(v=office.15)
-ms:contentKeyID: 48544693
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: acad8c3f345c303dd212be019ff89b062e3d2f74
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477559"
+<span data-ttu-id="fd393-101"><<<<<<< ヘッド タイトル: 準備されたプロパティの使用例 (vj++) TOCTitle: 準備されたプロパティの使用例 (vj++) === タイトル: Prepared プロパティの使用例 (vj++) TOCTitle: Prepared プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="fd393-101"><<<<<<< HEAD title: Prepared Property Example (VJ++) TOCTitle: Prepared Property Example (VJ++) ======= title: Prepared property example (VJ++) TOCTitle: Prepared property example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="fd393-102">マスターの ms:assetid: 4b8402c2-9604-aaba-ba75-43161a8df9c8 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249237(v=office.15) ms:contentKeyID: 48544693 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="fd393-102">master ms:assetid: 4b8402c2-9604-aaba-ba75-43161a8df9c8 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249237(v=office.15) ms:contentKeyID: 48544693 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="prepared-property-example-vj"></a><span data-ttu-id="f451e-102">Prepared プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="f451e-102">Prepared Property Example (VJ++)</span></span>
+
+<span data-ttu-id="fd393-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="fd393-103"><<<<<<< HEAD</span></span>
+# <a name="prepared-property-example-vj"></a><span data-ttu-id="fd393-104">Prepared プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="fd393-104">Prepared Property Example (VJ++)</span></span>
+=======
+# <a name="prepared-property-example-vj"></a><span data-ttu-id="fd393-105">Prepared プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="fd393-105">Prepared property example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="fd393-106">master</span><span class="sxs-lookup"><span data-stu-id="fd393-106">master</span></span>
 
 
-<span data-ttu-id="f451e-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="f451e-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="fd393-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="fd393-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="f451e-104">この例では、準備済みのバージョンと準備されていないバージョンの 2 つの [Command](prepared-property-ado.md) オブジェクトを開くことによって、 [Prepared](command-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="f451e-104">This example demonstrates the [Prepared](prepared-property-ado.md) property by opening two [Command](command-object-ado.md) objects — one prepared and one not prepared.</span></span>
+<span data-ttu-id="fd393-108">この例では、準備済みのバージョンと準備されていないバージョンの 2 つの [Command](prepared-property-ado.md) オブジェクトを開くことによって、 [Prepared](command-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="fd393-108">This example demonstrates the [Prepared](prepared-property-ado.md) property by opening two [Command](command-object-ado.md) objects — one prepared and one not prepared.</span></span>
 
 ```java 
  

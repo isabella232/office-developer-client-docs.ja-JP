@@ -1,24 +1,18 @@
 ---
-title: OriginalValue プロパティと UnderlyingValue プロパティの使用例 (VJ++)
-TOCTitle: OriginalValue and UnderlyingValue Properties Example (VJ++)
-ms:assetid: 622d0356-e33d-4378-df5e-8f15fa91d260
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249368(v=office.15)
-ms:contentKeyID: 48545233
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 6aaaa219fad82290a9e135edbf56998201d908d3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477507"
+<span data-ttu-id="3aa76-101"><<<<<<< ヘッド タイトル: OriginalValue と UnderlyingValue プロパティの使用例 (vj++) TOCTitle: OriginalValue と UnderlyingValue プロパティの使用例 (vj++) === タイトル: OriginalValue と UnderlyingValue プロパティの使用例 (vj++)TOCTitle: OriginalValue と UnderlyingValue プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="3aa76-101"><<<<<<< HEAD title: OriginalValue and UnderlyingValue Properties Example (VJ++) TOCTitle: OriginalValue and UnderlyingValue Properties Example (VJ++) ======= title: OriginalValue and UnderlyingValue properties example (VJ++) TOCTitle: OriginalValue and UnderlyingValue properties example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="3aa76-102">マスターの ms:assetid: 622d0356-e33d-4378-df5e-8f15fa91d260 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249368(v=office.15) ms:contentKeyID: 48545233 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="3aa76-102">master ms:assetid: 622d0356-e33d-4378-df5e-8f15fa91d260 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249368(v=office.15) ms:contentKeyID: 48545233 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="originalvalue-and-underlyingvalue-properties-example-vj"></a><span data-ttu-id="b8b6b-102">OriginalValue プロパティと UnderlyingValue プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="b8b6b-102">OriginalValue and UnderlyingValue Properties Example (VJ++)</span></span>
+
+<span data-ttu-id="3aa76-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="3aa76-103"><<<<<<< HEAD</span></span>
+# <a name="originalvalue-and-underlyingvalue-properties-example-vj"></a><span data-ttu-id="3aa76-104">OriginalValue プロパティと UnderlyingValue プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="3aa76-104">OriginalValue and UnderlyingValue Properties Example (VJ++)</span></span>
+=======
+# <a name="originalvalue-and-underlyingvalue-properties-example-vj"></a><span data-ttu-id="3aa76-105">OriginalValue と UnderlyingValue プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="3aa76-105">OriginalValue and UnderlyingValue properties example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="3aa76-106">master</span><span class="sxs-lookup"><span data-stu-id="3aa76-106">master</span></span>
 
 
-<span data-ttu-id="b8b6b-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="b8b6b-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="3aa76-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="3aa76-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="b8b6b-104">この例では、[OriginalValue](originalvalue-property-ado.md) プロパティと [UnderlyingValue](underlyingvalue-property-ado.md) プロパティを使用して、 [Recordset](recordset-object-ado.md) の一括更新中にレコードの基になるデータが変更された場合にメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="b8b6b-104">This example demonstrates the [OriginalValue](originalvalue-property-ado.md) and [UnderlyingValue](underlyingvalue-property-ado.md) properties by displaying a message if a record's underlying data has changed during a [Recordset](recordset-object-ado.md) batch update.</span></span>
+<span data-ttu-id="3aa76-108">この例では、[OriginalValue](originalvalue-property-ado.md) プロパティと [UnderlyingValue](underlyingvalue-property-ado.md) プロパティを使用して、 [Recordset](recordset-object-ado.md) の一括更新中にレコードの基になるデータが変更された場合にメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="3aa76-108">This example demonstrates the [OriginalValue](originalvalue-property-ado.md) and [UnderlyingValue](underlyingvalue-property-ado.md) properties by displaying a message if a record's underlying data has changed during a [Recordset](recordset-object-ado.md) batch update.</span></span>
 
 ```java 
  

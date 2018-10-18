@@ -1,24 +1,18 @@
 ---
-title: Command プロパティと CommandText プロパティの使用例 (VC++)
-TOCTitle: Command and CommandText Properties Example (VC++)
-ms:assetid: 99eac61e-22fe-0e2c-542a-7f6ad14f3d60
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249692(v=office.15)
-ms:contentKeyID: 48546525
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 19e2cc962f92812b250ac48b8ee7fec6221b72c1
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479525"
+<span data-ttu-id="11e9e-101"><<<<<<< ヘッド タイトル: コマンドと CommandText プロパティの使用例 (vc++) TOCTitle: コマンドと CommandText プロパティの使用例 (vc++) === タイトル: コマンドと CommandText プロパティの使用例 (vc++) TOCTitle: コマンドと CommandTextプロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="11e9e-101"><<<<<<< HEAD title: Command and CommandText Properties Example (VC++) TOCTitle: Command and CommandText Properties Example (VC++) ======= title: Command and CommandText properties example (VC++) TOCTitle: Command and CommandText properties example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="11e9e-102">マスターの ms:assetid: 99eac61e-22fe-0e2c-542a-7f6ad14f3d60 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249692(v=office.15) ms:contentKeyID: 48546525 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="11e9e-102">master ms:assetid: 99eac61e-22fe-0e2c-542a-7f6ad14f3d60 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249692(v=office.15) ms:contentKeyID: 48546525 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="command-and-commandtext-properties-example-vc"></a><span data-ttu-id="d69e3-102">Command プロパティと CommandText プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="d69e3-102">Command and CommandText Properties Example (VC++)</span></span>
+
+<span data-ttu-id="11e9e-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="11e9e-103"><<<<<<< HEAD</span></span>
+# <a name="command-and-commandtext-properties-example-vc"></a><span data-ttu-id="11e9e-104">Command プロパティと CommandText プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="11e9e-104">Command and CommandText Properties Example (VC++)</span></span>
+=======
+# <a name="command-and-commandtext-properties-example-vc"></a><span data-ttu-id="11e9e-105">コマンドと CommandText プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="11e9e-105">Command and CommandText properties example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="11e9e-106">master</span><span class="sxs-lookup"><span data-stu-id="11e9e-106">master</span></span>
 
 
-<span data-ttu-id="d69e3-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="d69e3-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="11e9e-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="11e9e-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="d69e3-104">次のコードは、プロシージャのテキストを更新するための [Command](command-property-adox.md) プロパティの使用例を示しています。</span><span class="sxs-lookup"><span data-stu-id="d69e3-104">The following code demonstrates how to use the [Command](command-property-adox.md) property to update the text of a procedure.</span></span>
+<span data-ttu-id="11e9e-108">次のコードは、プロシージャのテキストを更新するための [Command](command-property-adox.md) プロパティの使用例を示しています。</span><span class="sxs-lookup"><span data-stu-id="11e9e-108">The following code demonstrates how to use the [Command](command-property-adox.md) property to update the text of a procedure.</span></span>
 
 ```cpp 
  

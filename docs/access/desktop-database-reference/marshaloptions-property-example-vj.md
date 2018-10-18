@@ -1,24 +1,18 @@
 ---
-title: MarshalOptions プロパティの使用例 (VJ++)
-TOCTitle: MarshalOptions Property Example (VJ++)
-ms:assetid: 3c565ed1-1a60-77f5-7c69-ceb28027cb40
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249158(v=office.15)
-ms:contentKeyID: 48544313
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: ea6d3f2a8b4481a15050f0429fef5bb558ffba79
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478118"
+<span data-ttu-id="82923-101"><<<<<<< ヘッド タイトル: MarshalOptions プロパティの使用例 (vj++) TOCTitle: MarshalOptions プロパティの使用例 (vj++) === タイトル: MarshalOptions プロパティの使用例 (vj++) TOCTitle: MarshalOptions プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="82923-101"><<<<<<< HEAD title: MarshalOptions Property Example (VJ++) TOCTitle: MarshalOptions Property Example (VJ++) ======= title: MarshalOptions property example (VJ++) TOCTitle: MarshalOptions property example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="82923-102">マスターの ms:assetid: 3c565ed1-1a60-77f5-7c69-ceb28027cb40 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249158(v=office.15) ms:contentKeyID: 48544313 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="82923-102">master ms:assetid: 3c565ed1-1a60-77f5-7c69-ceb28027cb40 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249158(v=office.15) ms:contentKeyID: 48544313 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="marshaloptions-property-example-vj"></a><span data-ttu-id="acc3a-102">MarshalOptions プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="acc3a-102">MarshalOptions Property Example (VJ++)</span></span>
+
+<span data-ttu-id="82923-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="82923-103"><<<<<<< HEAD</span></span>
+# <a name="marshaloptions-property-example-vj"></a><span data-ttu-id="82923-104">MarshalOptions プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="82923-104">MarshalOptions Property Example (VJ++)</span></span>
+=======
+# <a name="marshaloptions-property-example-vj"></a><span data-ttu-id="82923-105">MarshalOptions プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="82923-105">MarshalOptions property example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="82923-106">master</span><span class="sxs-lookup"><span data-stu-id="82923-106">master</span></span>
 
 
-<span data-ttu-id="acc3a-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="acc3a-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="82923-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="82923-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="acc3a-104">この例では、[MarshalOptions](marshaloptions-property-ado.md) プロパティを使って、サーバーに送り返される行 (すべての行または修正された行のみ) を指定します。</span><span class="sxs-lookup"><span data-stu-id="acc3a-104">This example uses the [MarshalOptions](marshaloptions-property-ado.md) property to specify what rows are sent back to the server — All Rows or only Modified Rows.</span></span>
+<span data-ttu-id="82923-108">この例では、[MarshalOptions](marshaloptions-property-ado.md) プロパティを使って、サーバーに送り返される行 (すべての行または修正された行のみ) を指定します。</span><span class="sxs-lookup"><span data-stu-id="82923-108">This example uses the [MarshalOptions](marshaloptions-property-ado.md) property to specify what rows are sent back to the server — All Rows or only Modified Rows.</span></span>
 
 ```java 
  

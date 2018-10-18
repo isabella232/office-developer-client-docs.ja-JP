@@ -1,24 +1,18 @@
 ---
-title: DeleteRule プロパティの使用例 (VC++)
-TOCTitle: DeleteRule Property Example (VC++)
-ms:assetid: 364efee7-d579-57df-aeb0-fa352a72d704
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249122(v=office.15)
-ms:contentKeyID: 48544164
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 80f23f9ea8e9c40b691936f5bad6bb0049bcc3b7
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477672"
+<span data-ttu-id="f876a-101"><<<<<<< ヘッド タイトル: DeleteRule プロパティの使用例 (vc++) TOCTitle: DeleteRule プロパティの使用例 (vc++) === タイトル: DeleteRule プロパティの使用例 (vc++) TOCTitle: DeleteRule プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="f876a-101"><<<<<<< HEAD title: DeleteRule Property Example (VC++) TOCTitle: DeleteRule Property Example (VC++) ======= title: DeleteRule property example (VC++) TOCTitle: DeleteRule property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="f876a-102">マスターの ms:assetid: 364efee7-d579-57df-aeb0-fa352a72d704 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249122(v=office.15) ms:contentKeyID: 48544164 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="f876a-102">master ms:assetid: 364efee7-d579-57df-aeb0-fa352a72d704 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249122(v=office.15) ms:contentKeyID: 48544164 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="deleterule-property-example-vc"></a><span data-ttu-id="36873-102">DeleteRule プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="36873-102">DeleteRule Property Example (VC++)</span></span>
+
+<span data-ttu-id="f876a-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="f876a-103"><<<<<<< HEAD</span></span>
+# <a name="deleterule-property-example-vc"></a><span data-ttu-id="f876a-104">DeleteRule プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="f876a-104">DeleteRule Property Example (VC++)</span></span>
+=======
+# <a name="deleterule-property-example-vc"></a><span data-ttu-id="f876a-105">DeleteRule プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="f876a-105">DeleteRule property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="f876a-106">master</span><span class="sxs-lookup"><span data-stu-id="f876a-106">master</span></span>
 
 
-<span data-ttu-id="36873-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="36873-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="f876a-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="f876a-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="36873-p101">ここでは、[Key](deleterule-property-adox.md) オブジェクトの [DeleteRule](key-object-adox.md) プロパティの使用例を示します。このコードでは、新しい [Table オブジェクト](table-object-adox.md) を追加して新しい主キーを定義し、 **DeleteRule** を **adRICascade** に設定します。</span><span class="sxs-lookup"><span data-stu-id="36873-p101">This example demonstrates the [DeleteRule](deleterule-property-adox.md) property of a [Key](key-object-adox.md) object. The code appends a new [Table](table-object-adox.md) and then defines a new primary key, setting **DeleteRule** to **adRICascade**.</span></span>
+<span data-ttu-id="f876a-p101">ここでは、[Key](deleterule-property-adox.md) オブジェクトの [DeleteRule](key-object-adox.md) プロパティの使用例を示します。このコードでは、新しい [Table オブジェクト](table-object-adox.md) を追加して新しい主キーを定義し、 **DeleteRule** を **adRICascade** に設定します。</span><span class="sxs-lookup"><span data-stu-id="f876a-p101">This example demonstrates the [DeleteRule](deleterule-property-adox.md) property of a [Key](key-object-adox.md) object. The code appends a new [Table](table-object-adox.md) and then defines a new primary key, setting **DeleteRule** to **adRICascade**.</span></span>
 
 ```cpp 
  

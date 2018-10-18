@@ -1,24 +1,18 @@
 ---
-title: Attributes プロパティと Name プロパティの使用例 (VB)
-TOCTitle: Attributes and Name Properties Example (VB)
-ms:assetid: b049c03c-9add-48b7-6a0a-51d2507c8e33
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249840(v=office.15)
-ms:contentKeyID: 48547120
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 95e0aaafdce4d7647666b66787a90ae24db53533
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476259"
+<span data-ttu-id="06c50-101"><<<<<<< ヘッド タイトル: 属性および名前のプロパティの使用例 (VB) TOCTitle: 属性および名前のプロパティの使用例 (VB) === タイトル: 属性と名前のプロパティの使用例 (VB) TOCTitle: 属性と名前のプロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="06c50-101"><<<<<<< HEAD title: Attributes and Name Properties Example (VB) TOCTitle: Attributes and Name Properties Example (VB) ======= title: Attributes and Name properties example (VB) TOCTitle: Attributes and Name properties example (VB)</span></span>
+>>>>>>> <span data-ttu-id="06c50-102">マスターの ms:assetid: b049c03c-9add-48b7-6a0a-51d2507c8e33 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249840(v=office.15) ms:contentKeyID: 48547120 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="06c50-102">master ms:assetid: b049c03c-9add-48b7-6a0a-51d2507c8e33 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249840(v=office.15) ms:contentKeyID: 48547120 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="attributes-and-name-properties-example-vb"></a><span data-ttu-id="7c37b-102">Attributes プロパティと Name プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="7c37b-102">Attributes and Name Properties Example (VB)</span></span>
+
+<span data-ttu-id="06c50-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="06c50-103"><<<<<<< HEAD</span></span>
+# <a name="attributes-and-name-properties-example-vb"></a><span data-ttu-id="06c50-104">Attributes プロパティと Name プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="06c50-104">Attributes and Name Properties Example (VB)</span></span>
+=======
+# <a name="attributes-and-name-properties-example-vb"></a><span data-ttu-id="06c50-105">属性および名前のプロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="06c50-105">Attributes and Name properties example (VB)</span></span>
+>>>>>>> <span data-ttu-id="06c50-106">master</span><span class="sxs-lookup"><span data-stu-id="06c50-106">master</span></span>
 
 
-<span data-ttu-id="7c37b-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="7c37b-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="06c50-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="06c50-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="7c37b-p101">次の例では、[Connection](attributes-property-ado.md)、[Field](connection-object-ado.md)、[Property](field-object-ado.md) の各オブジェクトの [Attributes](property-object-ado.md) プロパティの値を表示します。 [Name](name-property-ado.md) プロパティを使用して、 **Field** および **Property** の各オブジェクトの名前を表示しています。</span><span class="sxs-lookup"><span data-stu-id="7c37b-p101">This example displays the value of the [Attributes](attributes-property-ado.md) property for [Connection](connection-object-ado.md), [Field](field-object-ado.md), and [Property](property-object-ado.md) objects. It uses the [Name](name-property-ado.md) property to display the name of each **Field** and **Property** object.</span></span>
+<span data-ttu-id="06c50-p101">次の例では、[Connection](attributes-property-ado.md)、[Field](connection-object-ado.md)、[Property](field-object-ado.md) の各オブジェクトの [Attributes](property-object-ado.md) プロパティの値を表示します。 [Name](name-property-ado.md) プロパティを使用して、 **Field** および **Property** の各オブジェクトの名前を表示しています。</span><span class="sxs-lookup"><span data-stu-id="06c50-p101">This example displays the value of the [Attributes](attributes-property-ado.md) property for [Connection](connection-object-ado.md), [Field](field-object-ado.md), and [Property](property-object-ado.md) objects. It uses the [Name](name-property-ado.md) property to display the name of each **Field** and **Property** object.</span></span>
 
 ```vb 
  

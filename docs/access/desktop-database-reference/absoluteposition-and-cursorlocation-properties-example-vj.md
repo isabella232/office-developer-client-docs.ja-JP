@@ -1,24 +1,18 @@
 ---
-title: AbsolutePosition プロパティと CursorLocation プロパティの使用例 (VJ++)
-TOCTitle: AbsolutePosition and CursorLocation Properties Example (VJ++)
-ms:assetid: 38872022-8a65-680f-20af-086e4d9d7b6a
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249137(v=office.15)
-ms:contentKeyID: 48544223
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: e864745821dd8d251740bfa816112a0a701c4784
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479496"
+<span data-ttu-id="21375-101"><<<<<<< ヘッド タイトル: AbsolutePosition と CursorLocation プロパティの使用例 (vj++) TOCTitle: AbsolutePosition と CursorLocation プロパティの使用例 (vj++) ms:assetid: 38872022-8a65-680f-20af-086e4d9d7b6a ms:mtpsurl: https://msdn.microsoft.com/library/JJ249137(v=office.15)ms:contentKeyID: 48544223 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="21375-101"><<<<<<< HEAD title: AbsolutePosition and CursorLocation Properties Example (VJ++) TOCTitle: AbsolutePosition and CursorLocation Properties Example (VJ++) ms:assetid: 38872022-8a65-680f-20af-086e4d9d7b6a ms:mtpsurl: https://msdn.microsoft.com/library/JJ249137(v=office.15) ms:contentKeyID: 48544223 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="absoluteposition-and-cursorlocation-properties-example-vj"></a><span data-ttu-id="cbe26-102">AbsolutePosition プロパティと CursorLocation プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="cbe26-102">AbsolutePosition and CursorLocation Properties Example (VJ++)</span></span>
 
+# <a name="absoluteposition-and-cursorlocation-properties-example-vj"></a><span data-ttu-id="21375-102">AbsolutePosition プロパティと CursorLocation プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="21375-102">AbsolutePosition and CursorLocation Properties Example (VJ++)</span></span>
 
-<span data-ttu-id="cbe26-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="cbe26-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="21375-103">=== タイトル: AbsolutePosition と CursorLocation プロパティの使用例 (vj++) TOCTitle: AbsolutePosition と CursorLocation プロパティの使用例 (vj++) ms:assetid: 38872022-8a65-680f-20af-086e4d9d7b6a ms:mtpsurl: https://msdn.microsoft.com/library/JJ249137(v=office.15) ms:contentKeyID: 48544223ms.date: 2018/10/17 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="21375-103">======= title: AbsolutePosition and CursorLocation properties example (VJ++) TOCTitle: AbsolutePosition and CursorLocation properties example (VJ++) ms:assetid: 38872022-8a65-680f-20af-086e4d9d7b6a ms:mtpsurl: https://msdn.microsoft.com/library/JJ249137(v=office.15) ms:contentKeyID: 48544223 ms.date: 10/17/2018 mtps_version: v=office.15</span></span>
+---
 
-<span data-ttu-id="cbe26-p101">次の例では、[AbsolutePosition](absoluteposition-property-ado.md) プロパティを使用して [Recordset](recordset-object-ado.md) の全レコードを列挙するループの進捗を追跡する方法を示します。この例では、 [CursorLocation](cursorlocation-property-ado.md) プロパティを使用して、カーソルをクライアント カーソルに設定することにより、 **AbsolutePosition** プロパティを有効にしています。</span><span class="sxs-lookup"><span data-stu-id="cbe26-p101">This example demonstrates how the [AbsolutePosition](absoluteposition-property-ado.md) property can track the progress of a loop that enumerates all the records of a [Recordset](recordset-object-ado.md). It uses the [CursorLocation](cursorlocation-property-ado.md) property to enable the **AbsolutePosition** property by setting the cursor to a client cursor.</span></span>
+# <a name="absoluteposition-and-cursorlocation-properties-example-vj"></a><span data-ttu-id="21375-104">AbsolutePosition と CursorLocation プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="21375-104">AbsolutePosition and CursorLocation properties example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="21375-105">master</span><span class="sxs-lookup"><span data-stu-id="21375-105">master</span></span>
+
+<span data-ttu-id="21375-106">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="21375-106">**Applies to**: Access 2013 | Office 2013</span></span>
+
+<span data-ttu-id="21375-p101">次の例では、[AbsolutePosition](absoluteposition-property-ado.md) プロパティを使用して [Recordset](recordset-object-ado.md) の全レコードを列挙するループの進捗を追跡する方法を示します。この例では、 [CursorLocation](cursorlocation-property-ado.md) プロパティを使用して、カーソルをクライアント カーソルに設定することにより、 **AbsolutePosition** プロパティを有効にしています。</span><span class="sxs-lookup"><span data-stu-id="21375-p101">This example demonstrates how the [AbsolutePosition](absoluteposition-property-ado.md) property can track the progress of a loop that enumerates all the records of a [Recordset](recordset-object-ado.md). It uses the [CursorLocation](cursorlocation-property-ado.md) property to enable the **AbsolutePosition** property by setting the cursor to a client cursor.</span></span>
 
 ```java 
  

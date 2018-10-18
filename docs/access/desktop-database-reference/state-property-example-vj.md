@@ -1,24 +1,18 @@
 ---
-title: State プロパティの使用例 (VJ++)
-TOCTitle: State Property Example (VJ++)
-ms:assetid: 7de6b4c1-b761-4060-7d97-6207542c202d
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249529(v=office.15)
-ms:contentKeyID: 48545869
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 125a8caa3afc210c08d8ea1a4a8cea27e22a67a8
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476598"
+<span data-ttu-id="e6bb3-101"><<<<<<< ヘッド タイトル: 状態プロパティの使用例 (vj++) TOCTitle: 状態プロパティの使用例 (vj++) === タイトル: 状態プロパティの使用例 (vj++) TOCTitle: 状態プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="e6bb3-101"><<<<<<< HEAD title: State Property Example (VJ++) TOCTitle: State Property Example (VJ++) ======= title: State property example (VJ++) TOCTitle: State property example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="e6bb3-102">マスターの ms:assetid: 7de6b4c1-b761-4060-7d97-6207542c202d ms:mtpsurl: https://msdn.microsoft.com/library/JJ249529(v=office.15) ms:contentKeyID: 48545869 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="e6bb3-102">master ms:assetid: 7de6b4c1-b761-4060-7d97-6207542c202d ms:mtpsurl: https://msdn.microsoft.com/library/JJ249529(v=office.15) ms:contentKeyID: 48545869 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="state-property-example-vj"></a><span data-ttu-id="fc47a-102">State プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="fc47a-102">State Property Example (VJ++)</span></span>
+
+<span data-ttu-id="e6bb3-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="e6bb3-103"><<<<<<< HEAD</span></span>
+# <a name="state-property-example-vj"></a><span data-ttu-id="e6bb3-104">State プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="e6bb3-104">State Property Example (VJ++)</span></span>
+=======
+# <a name="state-property-example-vj"></a><span data-ttu-id="e6bb3-105">状態プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="e6bb3-105">State property example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="e6bb3-106">master</span><span class="sxs-lookup"><span data-stu-id="e6bb3-106">master</span></span>
 
 
-<span data-ttu-id="fc47a-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="fc47a-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="e6bb3-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="e6bb3-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="fc47a-104">この例では、非同期接続を開き、非同期コマンドを実行している間、[State](state-property-ado.md) プロパティを使用してメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="fc47a-104">This example uses the [State](state-property-ado.md) property to display a message while asynchronous connections are opening and asynchronous commands are executing.</span></span>
+<span data-ttu-id="e6bb3-108">この例では、非同期接続を開き、非同期コマンドを実行している間、[State](state-property-ado.md) プロパティを使用してメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="e6bb3-108">This example uses the [State](state-property-ado.md) property to display a message while asynchronous connections are opening and asynchronous commands are executing.</span></span>
 
 ```java 
  

@@ -1,24 +1,18 @@
 ---
-title: Count プロパティの使用例 (VB)
-TOCTitle: Count Property Example (VB)
-ms:assetid: 9fea66f7-a4ed-fe2e-c199-672b910fef47
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249734(v=office.15)
-ms:contentKeyID: 48546695
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: c8d74444a5d25e20fdfe1d6f3c938788b7025199
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477301"
+<span data-ttu-id="6bd17-101"><<<<<<< ヘッド タイトル: Count プロパティの使用例 (VB) TOCTitle: Count プロパティの使用例 (VB) === タイトル: Count プロパティの使用例 (VB) TOCTitle: Count プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="6bd17-101"><<<<<<< HEAD title: Count Property Example (VB) TOCTitle: Count Property Example (VB) ======= title: Count property example (VB) TOCTitle: Count property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="6bd17-102">マスターの ms:assetid: 9fea66f7-a4ed-fe2e-c199-672b910fef47 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249734(v=office.15) ms:contentKeyID: 48546695 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="6bd17-102">master ms:assetid: 9fea66f7-a4ed-fe2e-c199-672b910fef47 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249734(v=office.15) ms:contentKeyID: 48546695 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="count-property-example-vb"></a><span data-ttu-id="e74cc-102">Count プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="e74cc-102">Count Property Example (VB)</span></span>
+
+<span data-ttu-id="6bd17-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="6bd17-103"><<<<<<< HEAD</span></span>
+# <a name="count-property-example-vb"></a><span data-ttu-id="6bd17-104">Count プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="6bd17-104">Count Property Example (VB)</span></span>
+=======
+# <a name="count-property-example-vb"></a><span data-ttu-id="6bd17-105">Count プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="6bd17-105">Count property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="6bd17-106">master</span><span class="sxs-lookup"><span data-stu-id="6bd17-106">master</span></span>
 
 
-<span data-ttu-id="e74cc-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="e74cc-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="6bd17-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="6bd17-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="e74cc-104">この例では、***従業員***データベース内の 2 つのコレクションの[Count](count-property-ado.md)プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="e74cc-104">This example demonstrates the [Count](count-property-ado.md) property with two collections in the ***Employee*** database.</span></span> <span data-ttu-id="e74cc-105">このプロパティで、各コレクション内のオブジェクト数を取得し、これらのコレクションを列挙するループに上限を設定します。</span><span class="sxs-lookup"><span data-stu-id="e74cc-105">The property obtains the number of objects in each collection, and sets the upper limit for loops that enumerate these collections.</span></span> <span data-ttu-id="e74cc-106">**Count**プロパティを使用せずにこれらのコレクションを列挙するために別の方法は、ステートメントを使用することです。</span><span class="sxs-lookup"><span data-stu-id="e74cc-106">Another way to enumerate these collections without using the **Count** property would be to use statements.</span></span>
+<span data-ttu-id="6bd17-108">この例では、***従業員***データベース内の 2 つのコレクションの[Count](count-property-ado.md)プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="6bd17-108">This example demonstrates the [Count](count-property-ado.md) property with two collections in the ***Employee*** database.</span></span> <span data-ttu-id="6bd17-109">このプロパティで、各コレクション内のオブジェクト数を取得し、これらのコレクションを列挙するループに上限を設定します。</span><span class="sxs-lookup"><span data-stu-id="6bd17-109">The property obtains the number of objects in each collection, and sets the upper limit for loops that enumerate these collections.</span></span> <span data-ttu-id="6bd17-110">**Count**プロパティを使用せずにこれらのコレクションを列挙するために別の方法は、ステートメントを使用することです。</span><span class="sxs-lookup"><span data-stu-id="6bd17-110">Another way to enumerate these collections without using the **Count** property would be to use statements.</span></span>
 
 ```vb 
  

@@ -1,24 +1,18 @@
 ---
-title: State プロパティの使用例 (VB)
-TOCTitle: State Property Example (VB)
-ms:assetid: e5a9abc6-9be7-5b70-a2da-9b678b3a8421
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250166(v=office.15)
-ms:contentKeyID: 48548366
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 09f80226664c06fcc6c78a8d17c59aa2bc22c7c7
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477568"
+<span data-ttu-id="bc95e-101"><<<<<<< ヘッド タイトル: 状態プロパティの使用例 (VB) TOCTitle: 状態プロパティの使用例 (VB) === タイトル: 状態プロパティの使用例 (VB) TOCTitle: 状態プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="bc95e-101"><<<<<<< HEAD title: State Property Example (VB) TOCTitle: State Property Example (VB) ======= title: State property example (VB) TOCTitle: State property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="bc95e-102">マスターの ms:assetid: e5a9abc6-9be7-5b70-a2da-9b678b3a8421 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250166(v=office.15) ms:contentKeyID: 48548366 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="bc95e-102">master ms:assetid: e5a9abc6-9be7-5b70-a2da-9b678b3a8421 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250166(v=office.15) ms:contentKeyID: 48548366 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="state-property-example-vb"></a><span data-ttu-id="ef4e7-102">State プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="ef4e7-102">State Property Example (VB)</span></span>
+
+<span data-ttu-id="bc95e-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="bc95e-103"><<<<<<< HEAD</span></span>
+# <a name="state-property-example-vb"></a><span data-ttu-id="bc95e-104">State プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="bc95e-104">State Property Example (VB)</span></span>
+=======
+# <a name="state-property-example-vb"></a><span data-ttu-id="bc95e-105">状態プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="bc95e-105">State property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="bc95e-106">master</span><span class="sxs-lookup"><span data-stu-id="bc95e-106">master</span></span>
 
 
-<span data-ttu-id="ef4e7-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="ef4e7-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="bc95e-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="bc95e-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="ef4e7-104">この例では、非同期接続を開き、非同期コマンドを実行している間、[State](state-property-ado.md) プロパティを使用してメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="ef4e7-104">This example uses the [State](state-property-ado.md) property to display a message while asynchronous connections are opening and asynchronous commands are executing.</span></span>
+<span data-ttu-id="bc95e-108">この例では、非同期接続を開き、非同期コマンドを実行している間、[State](state-property-ado.md) プロパティを使用してメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="bc95e-108">This example uses the [State](state-property-ado.md) property to display a message while asynchronous connections are opening and asynchronous commands are executing.</span></span>
 
 ```vb 
  

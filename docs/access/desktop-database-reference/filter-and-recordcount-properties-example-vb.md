@@ -1,24 +1,18 @@
 ---
-title: Filter プロパティと RecordCount プロパティの使用例 (VB)
-TOCTitle: Filter and RecordCount Properties Example (VB)
-ms:assetid: 3da4623e-03e7-27ac-7351-3b22415be0b9
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249167(v=office.15)
-ms:contentKeyID: 48544354
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 7900a7c6c49aac179ee331042b11c725cfcb90ad
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479612"
+<span data-ttu-id="2a858-101"><<<<<<< ヘッド タイトル: フィルターと RecordCount プロパティの使用例 (VB) TOCTitle: フィルターと RecordCount プロパティの使用例 (VB) === タイトル: フィルターと RecordCount プロパティの使用例 (VB) TOCTitle: フィルター プロパティと RecordCount プロパティ例 (VB)</span><span class="sxs-lookup"><span data-stu-id="2a858-101"><<<<<<< HEAD title: Filter and RecordCount Properties Example (VB) TOCTitle: Filter and RecordCount Properties Example (VB) ======= title: Filter and RecordCount properties example (VB) TOCTitle: Filter and RecordCount properties example (VB)</span></span>
+>>>>>>> <span data-ttu-id="2a858-102">マスターの ms:assetid: 3da4623e-03e7-27ac-7351-3b22415be0b9 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249167(v=office.15) ms:contentKeyID: 48544354 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="2a858-102">master ms:assetid: 3da4623e-03e7-27ac-7351-3b22415be0b9 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249167(v=office.15) ms:contentKeyID: 48544354 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="filter-and-recordcount-properties-example-vb"></a><span data-ttu-id="5f47d-102">Filter プロパティと RecordCount プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="5f47d-102">Filter and RecordCount Properties Example (VB)</span></span>
+
+<span data-ttu-id="2a858-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="2a858-103"><<<<<<< HEAD</span></span>
+# <a name="filter-and-recordcount-properties-example-vb"></a><span data-ttu-id="2a858-104">Filter プロパティと RecordCount プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="2a858-104">Filter and RecordCount Properties Example (VB)</span></span>
+=======
+# <a name="filter-and-recordcount-properties-example-vb"></a><span data-ttu-id="2a858-105">フィルターと RecordCount プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="2a858-105">Filter and RecordCount properties example (VB)</span></span>
+>>>>>>> <span data-ttu-id="2a858-106">master</span><span class="sxs-lookup"><span data-stu-id="2a858-106">master</span></span>
 
 
-<span data-ttu-id="5f47d-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="5f47d-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="2a858-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="2a858-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="5f47d-104">次の使用例は、 ***Pubs***データベースの Publishers テーブルの**レコード セット**を開きます。</span><span class="sxs-lookup"><span data-stu-id="5f47d-104">This example open a **Recordset** on the Publishers table in the ***Pubs*** database.</span></span> <span data-ttu-id="5f47d-105">次に、 [Filter](filter-property-ado.md) プロパティを使って、特定の国/領域のパブリッシャーに対して表示されるレコードの数を制限します。</span><span class="sxs-lookup"><span data-stu-id="5f47d-105">It then uses the [Filter](filter-property-ado.md) property to limit the number of visible records to those publishers in a particular country/region.</span></span> <span data-ttu-id="5f47d-106">**RecordCount** プロパティは、フィルターが適用されているレコードセットとフィルターが適用されていないレコードセットとの相違を示すために使います。</span><span class="sxs-lookup"><span data-stu-id="5f47d-106">The **RecordCount** property is used to show the difference between the filtered and unfiltered recordsets.</span></span>
+<span data-ttu-id="2a858-108">次の使用例は、 ***Pubs***データベースの Publishers テーブルの**レコード セット**を開きます。</span><span class="sxs-lookup"><span data-stu-id="2a858-108">This example open a **Recordset** on the Publishers table in the ***Pubs*** database.</span></span> <span data-ttu-id="2a858-109">次に、 [Filter](filter-property-ado.md) プロパティを使って、特定の国/領域のパブリッシャーに対して表示されるレコードの数を制限します。</span><span class="sxs-lookup"><span data-stu-id="2a858-109">It then uses the [Filter](filter-property-ado.md) property to limit the number of visible records to those publishers in a particular country/region.</span></span> <span data-ttu-id="2a858-110">**RecordCount** プロパティは、フィルターが適用されているレコードセットとフィルターが適用されていないレコードセットとの相違を示すために使います。</span><span class="sxs-lookup"><span data-stu-id="2a858-110">The **RecordCount** property is used to show the difference between the filtered and unfiltered recordsets.</span></span>
 
 ```vb 
  
@@ -105,7 +99,7 @@ End Sub
 
 
 > [!NOTE]
-> <P><span data-ttu-id="5f47d-p102">[!メモ] 選択するデータがわかっている場合は、SQL ステートメントを使用して <STRONG>Recordset</STRONG> を開く方が一般に効率的です。この例は、単一の <STRONG>Recordset</STRONG> を作成し、特定の国/地域からレコードを取得する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="5f47d-p102">When you know the data you want to select, it's usually more efficient to open a <STRONG>Recordset</STRONG> with an SQL statement. This example shows how you can create just one <STRONG>Recordset</STRONG> and obtain records from a particular country/region.</span></span></P>
+> <P><span data-ttu-id="2a858-p102">[!メモ] 選択するデータがわかっている場合は、SQL ステートメントを使用して <STRONG>Recordset</STRONG> を開く方が一般に効率的です。この例は、単一の <STRONG>Recordset</STRONG> を作成し、特定の国/地域からレコードを取得する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="2a858-p102">When you know the data you want to select, it's usually more efficient to open a <STRONG>Recordset</STRONG> with an SQL statement. This example shows how you can create just one <STRONG>Recordset</STRONG> and obtain records from a particular country/region.</span></span></P>
 
 
 

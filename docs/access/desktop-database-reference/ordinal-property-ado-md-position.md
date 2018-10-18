@@ -6,27 +6,31 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250284(v=office.15)
 ms:contentKeyID: 48548861
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e953c038947073d3cdeb971e705c80f63d12a15b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d3d629002fb11547ffbb9f3823b161e189ee4d45
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476859"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25603253"
 ---
-# <a name="ordinal-property-ado-md-position"></a><span data-ttu-id="dbbca-102">Ordinal プロパティ (ADO MD Position)</span><span class="sxs-lookup"><span data-stu-id="dbbca-102">Ordinal Property (ADO MD Position)</span></span>
+# <a name="ordinal-property-ado-md-position"></a><span data-ttu-id="1f0c1-102">Ordinal プロパティ (ADO MD Position)</span><span class="sxs-lookup"><span data-stu-id="1f0c1-102">Ordinal Property (ADO MD Position)</span></span>
 
 
-<span data-ttu-id="dbbca-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="dbbca-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="1f0c1-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="1f0c1-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="dbbca-104">軸に沿った位置を一意に識別します。</span><span class="sxs-lookup"><span data-stu-id="dbbca-104">Uniquely identifies a position along an axis.</span></span>
+<span data-ttu-id="1f0c1-104">軸に沿った位置を一意に識別します。</span><span class="sxs-lookup"><span data-stu-id="1f0c1-104">Uniquely identifies a position along an axis.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="dbbca-105">戻り値</span><span class="sxs-lookup"><span data-stu-id="dbbca-105">Return Values</span></span>
+<span data-ttu-id="1f0c1-105"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="1f0c1-105"><<<<<<< HEAD</span></span>
+## <a name="return-values"></a><span data-ttu-id="1f0c1-106">戻り値</span><span class="sxs-lookup"><span data-stu-id="1f0c1-106">Return Values</span></span>
+=======
+## <a name="return-values"></a><span data-ttu-id="1f0c1-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="1f0c1-107">Return values</span></span>
+>>>>>>> <span data-ttu-id="1f0c1-108">master</span><span class="sxs-lookup"><span data-stu-id="1f0c1-108">master</span></span>
 
-<span data-ttu-id="dbbca-106">長整数型 ( **Long** ) の値を取得します。値の取得のみが可能です。</span><span class="sxs-lookup"><span data-stu-id="dbbca-106">Returns a **Long** integer and is read-only.</span></span>
+<span data-ttu-id="1f0c1-109">長整数型 ( **Long** ) の値を取得します。値の取得のみが可能です。</span><span class="sxs-lookup"><span data-stu-id="1f0c1-109">Returns a **Long** integer and is read-only.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="dbbca-107">解説</span><span class="sxs-lookup"><span data-stu-id="dbbca-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1f0c1-110">解説</span><span class="sxs-lookup"><span data-stu-id="1f0c1-110">Remarks</span></span>
 
-<span data-ttu-id="dbbca-108">**Position** オブジェクトの [Ordinal](position-object-ado-md.md) プロパティは、 **Positions** コレクション内の [Position](positions-collection-ado-md.md) のインデックスに対応します。</span><span class="sxs-lookup"><span data-stu-id="dbbca-108">The **Ordinal** of a [Position](position-object-ado-md.md) object corresponds to the index of the **Position** within the [Positions](positions-collection-ado-md.md) collection.</span></span>
+<span data-ttu-id="1f0c1-111">**Position** オブジェクトの [Ordinal](position-object-ado-md.md) プロパティは、 **Positions** コレクション内の [Position](positions-collection-ado-md.md) のインデックスに対応します。</span><span class="sxs-lookup"><span data-stu-id="1f0c1-111">The **Ordinal** of a [Position](position-object-ado-md.md) object corresponds to the index of the **Position** within the [Positions](positions-collection-ado-md.md) collection.</span></span>
 
-<span data-ttu-id="dbbca-109">**Cellset** オブジェクトの **Item** プロパティでそれぞれの軸に沿って [Position](item-property-ado-md-cellset.md) オブジェクトの [Ordinal](cellset-object-ado-md.md) プロパティを使用することで、セルをすばやく取得できます。</span><span class="sxs-lookup"><span data-stu-id="dbbca-109">A cell can quickly be retrieved using the **Ordinal** of the **Position** along each axis with the [Item](item-property-ado-md-cellset.md) property of the [Cellset](cellset-object-ado-md.md) object.</span></span>
+<span data-ttu-id="1f0c1-112">**Cellset** オブジェクトの **Item** プロパティでそれぞれの軸に沿って [Position](item-property-ado-md-cellset.md) オブジェクトの [Ordinal](cellset-object-ado-md.md) プロパティを使用することで、セルをすばやく取得できます。</span><span class="sxs-lookup"><span data-stu-id="1f0c1-112">A cell can quickly be retrieved using the **Ordinal** of the **Position** along each axis with the [Item](item-property-ado-md-cellset.md) property of the [Cellset](cellset-object-ado-md.md) object.</span></span>
 

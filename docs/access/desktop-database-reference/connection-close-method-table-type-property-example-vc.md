@@ -1,24 +1,18 @@
 ---
-title: Connection の Close メソッドおよび Table の Type プロパティの使用例 (VC++)
-TOCTitle: Connection Close Method, Table Type Property Example (VC++)
-ms:assetid: d75fac58-4b25-c446-8c8e-4afcf1efecc5
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250082(v=office.15)
-ms:contentKeyID: 48548006
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: cbe17bfd18f601d9fb84be81a4962dc702a40db0
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477731"
+<span data-ttu-id="e07f4-101"><<<<<<< ヘッド タイトル: 接続の終了メソッドは、テーブルの種類プロパティの使用例 (vc++) TOCTitle: 接続の Close メソッドをテーブルの種類プロパティの使用例 (vc++) === タイトル: 接続の Close メソッドをテーブル型のプロパティの使用例 (vc++) TOCTitle:接続の Close メソッドをテーブル型のプロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="e07f4-101"><<<<<<< HEAD title: Connection Close Method, Table Type Property Example (VC++) TOCTitle: Connection Close Method, Table Type Property Example (VC++) ======= title: Connection Close Method, Table Type property example (VC++) TOCTitle: Connection Close Method, Table Type property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="e07f4-102">マスターの ms:assetid: d75fac58-4b25-c446-8c8e-4afcf1efecc5 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250082(v=office.15) ms:contentKeyID: 48548006 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="e07f4-102">master ms:assetid: d75fac58-4b25-c446-8c8e-4afcf1efecc5 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250082(v=office.15) ms:contentKeyID: 48548006 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="connection-close-method-table-type-property-example-vc"></a><span data-ttu-id="439f4-102">Connection の Close メソッドおよび Table の Type プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="439f4-102">Connection Close Method, Table Type Property Example (VC++)</span></span>
+
+<span data-ttu-id="e07f4-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="e07f4-103"><<<<<<< HEAD</span></span>
+# <a name="connection-close-method-table-type-property-example-vc"></a><span data-ttu-id="e07f4-104">Connection の Close メソッドおよび Table の Type プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="e07f4-104">Connection Close Method, Table Type Property Example (VC++)</span></span>
+=======
+# <a name="connection-close-method-table-type-property-example-vc"></a><span data-ttu-id="e07f4-105">接続の Close メソッドをテーブル型のプロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="e07f4-105">Connection Close Method, Table Type property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="e07f4-106">master</span><span class="sxs-lookup"><span data-stu-id="e07f4-106">master</span></span>
 
 
-<span data-ttu-id="439f4-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="439f4-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="e07f4-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="e07f4-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="439f4-p101">[ActiveConnection](activeconnection-property-adox.md) プロパティを **Nothing** に設定すると、カタログが閉じます。関連付けられたコレクションは、空になります。カタログのスキーマ オブジェクトから作成されたオブジェクトは、すべて孤立化します。キャッシュされたオブジェクトのプロパティはいずれも使用できますが、プロバイダーの呼び出しが必要なプロパティを取得しようとすると失敗します。</span><span class="sxs-lookup"><span data-stu-id="439f4-p101">Setting the [ActiveConnection](activeconnection-property-adox.md) property to **Nothing** should "close" the catalog. Associated collections will be empty. Any objects that were created from schema objects in the catalog will be orphaned. Any properties on those objects that have been cached will still be available, but attempting to read properties that require a call to the provider will fail.</span></span>
+<span data-ttu-id="e07f4-p101">[ActiveConnection](activeconnection-property-adox.md) プロパティを **Nothing** に設定すると、カタログが閉じます。関連付けられたコレクションは、空になります。カタログのスキーマ オブジェクトから作成されたオブジェクトは、すべて孤立化します。キャッシュされたオブジェクトのプロパティはいずれも使用できますが、プロバイダーの呼び出しが必要なプロパティを取得しようとすると失敗します。</span><span class="sxs-lookup"><span data-stu-id="e07f4-p101">Setting the [ActiveConnection](activeconnection-property-adox.md) property to **Nothing** should "close" the catalog. Associated collections will be empty. Any objects that were created from schema objects in the catalog will be orphaned. Any properties on those objects that have been cached will still be available, but attempting to read properties that require a call to the provider will fail.</span></span>
 
 ```cpp 
  

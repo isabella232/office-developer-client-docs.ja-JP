@@ -1,24 +1,18 @@
 ---
-title: Sort プロパティの使用例 (VC++)
-TOCTitle: Sort Property Example (VC++)
-ms:assetid: 0f32b7ac-1902-1753-0c03-b38ba8c10c9c
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248862(v=office.15)
-ms:contentKeyID: 48543259
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 33f8134320192ad22b0ddc743c1e445cfad46d58
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479031"
+<span data-ttu-id="34075-101"><<<<<<< ヘッド タイトル: 並べ替えのプロパティの使用例 (vc++) TOCTitle: 並べ替えのプロパティの使用例 (vc++) === タイトル: 並べ替えプロパティの使用例 (vc++) TOCTitle: 並べ替えのプロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="34075-101"><<<<<<< HEAD title: Sort Property Example (VC++) TOCTitle: Sort Property Example (VC++) ======= title: Sort property example (VC++) TOCTitle: Sort property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="34075-102">マスターの ms:assetid: 0f32b7ac-1902-1753-0c03-b38ba8c10c9c ms:mtpsurl: https://msdn.microsoft.com/library/JJ248862(v=office.15) ms:contentKeyID: 48543259 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="34075-102">master ms:assetid: 0f32b7ac-1902-1753-0c03-b38ba8c10c9c ms:mtpsurl: https://msdn.microsoft.com/library/JJ248862(v=office.15) ms:contentKeyID: 48543259 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="sort-property-example-vc"></a><span data-ttu-id="54bce-102">Sort プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="54bce-102">Sort Property Example (VC++)</span></span>
+
+<span data-ttu-id="34075-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="34075-103"><<<<<<< HEAD</span></span>
+# <a name="sort-property-example-vc"></a><span data-ttu-id="34075-104">Sort プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="34075-104">Sort Property Example (VC++)</span></span>
+=======
+# <a name="sort-property-example-vc"></a><span data-ttu-id="34075-105">並べ替えプロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="34075-105">Sort property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="34075-106">master</span><span class="sxs-lookup"><span data-stu-id="34075-106">master</span></span>
 
 
-<span data-ttu-id="54bce-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="54bce-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="34075-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="34075-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="54bce-104">この例では、[レコード セット](recordset-object-ado.md)オブジェクトの[Sort](sort-property-ado.md)プロパティを使用して、 **Pubs**データベースの***Authors***テーブルから派生した**レコード セット**の行の順序を変更します。</span><span class="sxs-lookup"><span data-stu-id="54bce-104">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the **Pubs** database.</span></span> <span data-ttu-id="54bce-105">2 次ユーティリティ ルーチンで各行を出力します。</span><span class="sxs-lookup"><span data-stu-id="54bce-105">A secondary utility routine prints each row.</span></span>
+<span data-ttu-id="34075-108">この例では、[レコード セット](recordset-object-ado.md)オブジェクトの[Sort](sort-property-ado.md)プロパティを使用して、 **Pubs**データベースの***Authors***テーブルから派生した**レコード セット**の行の順序を変更します。</span><span class="sxs-lookup"><span data-stu-id="34075-108">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the **Pubs** database.</span></span> <span data-ttu-id="34075-109">2 次ユーティリティ ルーチンで各行を出力します。</span><span class="sxs-lookup"><span data-stu-id="34075-109">A secondary utility routine prints each row.</span></span>
 
 ```cpp 
  

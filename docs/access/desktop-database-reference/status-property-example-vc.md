@@ -1,24 +1,18 @@
 ---
-title: Status プロパティの使用例 (VC++)
-TOCTitle: Status Property Example (VC++)
-ms:assetid: 72cb738d-8404-f9f3-3d79-9eb2541a608b
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249464(v=office.15)
-ms:contentKeyID: 48545618
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 1f2dfa41e11f448f9f302bbc25d9e12a582324f5
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476731"
+<span data-ttu-id="8b505-101"><<<<<<< ヘッド タイトル: 状態プロパティの使用例 (vc++) TOCTitle: 状態プロパティの使用例 (vc++) === タイトル: 状態プロパティの使用例 (vc++) TOCTitle: 状態プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="8b505-101"><<<<<<< HEAD title: Status Property Example (VC++) TOCTitle: Status Property Example (VC++) ======= title: Status property example (VC++) TOCTitle: Status property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="8b505-102">マスターの ms:assetid: 72cb738d-8404-f9f3-3d79-9eb2541a608b ms:mtpsurl: https://msdn.microsoft.com/library/JJ249464(v=office.15) ms:contentKeyID: 48545618 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="8b505-102">master ms:assetid: 72cb738d-8404-f9f3-3d79-9eb2541a608b ms:mtpsurl: https://msdn.microsoft.com/library/JJ249464(v=office.15) ms:contentKeyID: 48545618 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="status-property-example-vc"></a><span data-ttu-id="38ee7-102">Status プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="38ee7-102">Status Property Example (VC++)</span></span>
+
+<span data-ttu-id="8b505-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="8b505-103"><<<<<<< HEAD</span></span>
+# <a name="status-property-example-vc"></a><span data-ttu-id="8b505-104">Status プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="8b505-104">Status Property Example (VC++)</span></span>
+=======
+# <a name="status-property-example-vc"></a><span data-ttu-id="8b505-105">状態プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="8b505-105">Status property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="8b505-106">master</span><span class="sxs-lookup"><span data-stu-id="8b505-106">master</span></span>
 
 
-<span data-ttu-id="38ee7-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="38ee7-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="8b505-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="8b505-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="38ee7-104">この例では、[Status](status-property-ado-recordset.md) プロパティを使用して、一括更新の前にバッチ処理で変更されたレコードを表示します。</span><span class="sxs-lookup"><span data-stu-id="38ee7-104">This example uses the [Status](status-property-ado-recordset.md) property to display which records have been modified in a batch operation before a batch update has occurred.</span></span>
+<span data-ttu-id="8b505-108">この例では、[Status](status-property-ado-recordset.md) プロパティを使用して、一括更新の前にバッチ処理で変更されたレコードを表示します。</span><span class="sxs-lookup"><span data-stu-id="8b505-108">This example uses the [Status](status-property-ado-recordset.md) property to display which records have been modified in a batch operation before a batch update has occurred.</span></span>
 
 ```cpp 
  
@@ -209,7 +203,7 @@ void PrintComError(_com_error &e)
 // EndStatusCpp 
 ```
 
-<span data-ttu-id="38ee7-105">**StatusX.h**</span><span class="sxs-lookup"><span data-stu-id="38ee7-105">**StatusX.h**</span></span>
+<span data-ttu-id="8b505-109">**StatusX.h**</span><span class="sxs-lookup"><span data-stu-id="8b505-109">**StatusX.h**</span></span>
 
 ```cpp 
  

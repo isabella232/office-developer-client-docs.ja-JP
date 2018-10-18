@@ -1,26 +1,20 @@
 ---
-title: Type プロパティの使用例 (Property) (VC++)
-TOCTitle: Type Property Example (Property) (VC++)
-ms:assetid: ddf0233f-585e-6659-7fd6-f924f3a31f21
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250122(v=office.15)
-ms:contentKeyID: 48548168
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 31708d28134b42915b6c8e0ccef1b65b7f06fabb
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478462"
+<span data-ttu-id="42695-101"><<<<<<< ヘッド タイトル: タイプ プロパティの使用例 (vc++) の (プロパティ) TOCTitle: タイプ プロパティの使用例 (vc++) の (プロパティ) === タイトル: タイプ プロパティの使用例 (vc++) の (プロパティ) TOCTitle: タイプ プロパティの使用例 (vc++) の (プロパティ)</span><span class="sxs-lookup"><span data-stu-id="42695-101"><<<<<<< HEAD title: Type Property Example (Property) (VC++) TOCTitle: Type Property Example (Property) (VC++) ======= title: Type property example (Property) (VC++) TOCTitle: Type property example (Property) (VC++)</span></span>
+>>>>>>> <span data-ttu-id="42695-102">マスターの ms:assetid: ddf0233f-585e-6659-7fd6-f924f3a31f21 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250122(v=office.15) ms:contentKeyID: 48548168 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="42695-102">master ms:assetid: ddf0233f-585e-6659-7fd6-f924f3a31f21 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250122(v=office.15) ms:contentKeyID: 48548168 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="type-property-example-property-vc"></a><span data-ttu-id="e44d4-102">Type プロパティの使用例 (Property) (VC++)</span><span class="sxs-lookup"><span data-stu-id="e44d4-102">Type Property Example (Property) (VC++)</span></span>
+
+<span data-ttu-id="42695-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="42695-103"><<<<<<< HEAD</span></span>
+# <a name="type-property-example-property-vc"></a><span data-ttu-id="42695-104">Type プロパティの使用例 (Property) (VC++)</span><span class="sxs-lookup"><span data-stu-id="42695-104">Type Property Example (Property) (VC++)</span></span>
+=======
+# <a name="type-property-example-property-vc"></a><span data-ttu-id="42695-105">プロパティの使用例 (vc++) の (プロパティ) を入力します。</span><span class="sxs-lookup"><span data-stu-id="42695-105">Type property example (Property) (VC++)</span></span>
+>>>>>>> <span data-ttu-id="42695-106">master</span><span class="sxs-lookup"><span data-stu-id="42695-106">master</span></span>
 
 
-<span data-ttu-id="e44d4-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="e44d4-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="42695-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="42695-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="e44d4-p101">この例では、[Type](type-property-ado.md) プロパティの機能を示します。この例は、 [Properties](properties-collection-ado.md) や [Fields](fields-collection-ado.md) などのコレクションの名前やデータ型の一覧を示すユーティリティのモデルです。</span><span class="sxs-lookup"><span data-stu-id="e44d4-p101">This example demonstrates the [Type](type-property-ado.md) property. It is a model of a utility for listing the names and types of a collection, like [Properties](properties-collection-ado.md), [Fields](fields-collection-ado.md), etc.</span></span>
+<span data-ttu-id="42695-p101">この例では、[Type](type-property-ado.md) プロパティの機能を示します。この例は、 [Properties](properties-collection-ado.md) や [Fields](fields-collection-ado.md) などのコレクションの名前やデータ型の一覧を示すユーティリティのモデルです。</span><span class="sxs-lookup"><span data-stu-id="42695-p101">This example demonstrates the [Type](type-property-ado.md) property. It is a model of a utility for listing the names and types of a collection, like [Properties](properties-collection-ado.md), [Fields](fields-collection-ado.md), etc.</span></span>
 
-<span data-ttu-id="e44d4-p102">[Recordset](recordset-object-ado.md) を開いて **Properties** コレクションにアクセスする必要はなく、 **Recordset** オブジェクトのインスタンスを作成すると、このコレクションが生成されます。ただし、 [CursorLocation](cursorlocation-property-ado.md) プロパティを **adUseClient** に設定すると、動的プロパティが **Recordset** オブジェクトの **Properties** コレクションに追加され、さらに高度な例を作成できます。わかりやすくするために、ここでは明示的に [Item](item-property-ado.md) プロパティを使用して、各 [Property](property-object-ado.md) オブジェクトにアクセスしています。</span><span class="sxs-lookup"><span data-stu-id="e44d4-p102">We do not need to open the [Recordset](recordset-object-ado.md) to access its **Properties** collection; they come into existence when the **Recordset** object is instantiated. However, setting the [CursorLocation](cursorlocation-property-ado.md) property to **adUseClient** adds several dynamic properties to the **Recordset** object's **Properties** collection, making the example a little more interesting. For sake of illustration, we explicitly use the [Item](item-property-ado.md) property to access each [Property](property-object-ado.md) object.</span></span>
+<span data-ttu-id="42695-p102">[Recordset](recordset-object-ado.md) を開いて **Properties** コレクションにアクセスする必要はなく、 **Recordset** オブジェクトのインスタンスを作成すると、このコレクションが生成されます。ただし、 [CursorLocation](cursorlocation-property-ado.md) プロパティを **adUseClient** に設定すると、動的プロパティが **Recordset** オブジェクトの **Properties** コレクションに追加され、さらに高度な例を作成できます。わかりやすくするために、ここでは明示的に [Item](item-property-ado.md) プロパティを使用して、各 [Property](property-object-ado.md) オブジェクトにアクセスしています。</span><span class="sxs-lookup"><span data-stu-id="42695-p102">We do not need to open the [Recordset](recordset-object-ado.md) to access its **Properties** collection; they come into existence when the **Recordset** object is instantiated. However, setting the [CursorLocation](cursorlocation-property-ado.md) property to **adUseClient** adds several dynamic properties to the **Recordset** object's **Properties** collection, making the example a little more interesting. For sake of illustration, we explicitly use the [Item](item-property-ado.md) property to access each [Property](property-object-ado.md) object.</span></span>
 
 ```cpp 
  

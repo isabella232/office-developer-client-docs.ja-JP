@@ -1,26 +1,20 @@
 ---
-title: StayInSync プロパティの使用例 (VB)
-TOCTitle: StayInSync Property Example (VB)
-ms:assetid: 1b35f19a-0104-efd5-5222-55f92e08473b
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248952(v=office.15)
-ms:contentKeyID: 48543535
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 0c12ca42ec30ef40c6ef1f7c943079b4db58307a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479173"
+<span data-ttu-id="d27fa-101"><<<<<<< ヘッド タイトル: StayInSync プロパティの使用例 (VB) TOCTitle: StayInSync プロパティの使用例 (VB) === タイトル: StayInSync プロパティの使用例 (VB) TOCTitle: StayInSync プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d27fa-101"><<<<<<< HEAD title: StayInSync Property Example (VB) TOCTitle: StayInSync Property Example (VB) ======= title: StayInSync property example (VB) TOCTitle: StayInSync property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="d27fa-102">マスターの ms:assetid: 1b35f19a-0104-efd5-5222-55f92e08473b ms:mtpsurl: https://msdn.microsoft.com/library/JJ248952(v=office.15) ms:contentKeyID: 48543535 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="d27fa-102">master ms:assetid: 1b35f19a-0104-efd5-5222-55f92e08473b ms:mtpsurl: https://msdn.microsoft.com/library/JJ248952(v=office.15) ms:contentKeyID: 48543535 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="stayinsync-property-example-vb"></a><span data-ttu-id="f33f9-102">StayInSync プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="f33f9-102">StayInSync Property Example (VB)</span></span>
+
+<span data-ttu-id="d27fa-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="d27fa-103"><<<<<<< HEAD</span></span>
+# <a name="stayinsync-property-example-vb"></a><span data-ttu-id="d27fa-104">StayInSync プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d27fa-104">StayInSync Property Example (VB)</span></span>
+=======
+# <a name="stayinsync-property-example-vb"></a><span data-ttu-id="d27fa-105">StayInSync プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d27fa-105">StayInSync property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="d27fa-106">master</span><span class="sxs-lookup"><span data-stu-id="d27fa-106">master</span></span>
 
 
-<span data-ttu-id="f33f9-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="f33f9-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="d27fa-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="d27fa-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="f33f9-104">この例では、階層 [Recordset](stayinsync-property-ado.md) 内の行へのアクセスを容易にする [StayInSync](recordset-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="f33f9-104">This example demonstrates how the [StayInSync](stayinsync-property-ado.md) property facilitates accessing rows in a hierarchical [Recordset](recordset-object-ado.md).</span></span>
+<span data-ttu-id="d27fa-108">この例では、階層 [Recordset](stayinsync-property-ado.md) 内の行へのアクセスを容易にする [StayInSync](recordset-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="d27fa-108">This example demonstrates how the [StayInSync](stayinsync-property-ado.md) property facilitates accessing rows in a hierarchical [Recordset](recordset-object-ado.md).</span></span>
 
-<span data-ttu-id="f33f9-p101">外側のループで、各作成者の姓名、州、および ID を表示します。各行に追加された **Recordset** が [Fields](fields-collection-ado.md) コレクションから取得され、親の **Recordset** が新しい行に移動するたびに **StayInSync** プロパティによって自動的に **rstTitleAuthor** に割り当てられます。内側のループでは、追加されたレコードセットの各行から 4 つのフィールドを表示します。</span><span class="sxs-lookup"><span data-stu-id="f33f9-p101">The outer loop displays each author's first and last name, state, and identification. The appended **Recordset** for each row is retrieved from the [Fields](fields-collection-ado.md) collection and automatically assigned to **rstTitleAuthor** by the **StayInSync** property whenever the parent **Recordset** moves to a new row. The inner loop displays four fields from each row in the appended recordset.</span></span>
+<span data-ttu-id="d27fa-p101">外側のループで、各作成者の姓名、州、および ID を表示します。各行に追加された **Recordset** が [Fields](fields-collection-ado.md) コレクションから取得され、親の **Recordset** が新しい行に移動するたびに **StayInSync** プロパティによって自動的に **rstTitleAuthor** に割り当てられます。内側のループでは、追加されたレコードセットの各行から 4 つのフィールドを表示します。</span><span class="sxs-lookup"><span data-stu-id="d27fa-p101">The outer loop displays each author's first and last name, state, and identification. The appended **Recordset** for each row is retrieved from the [Fields](fields-collection-ado.md) collection and automatically assigned to **rstTitleAuthor** by the **StayInSync** property whenever the parent **Recordset** moves to a new row. The inner loop displays four fields from each row in the appended recordset.</span></span>
 
 ```vb 
  

@@ -1,24 +1,18 @@
 ---
-title: MaxRecords プロパティの使用例 (VJ++)
-TOCTitle: MaxRecords Property Example (VJ++)
-ms:assetid: db8c1187-5e15-2c8a-6308-3468c113d962
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250107(v=office.15)
-ms:contentKeyID: 48548106
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 7571950094da5c09df360e0cb80a4c056b252960
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477413"
+<span data-ttu-id="45b6d-101"><<<<<<< ヘッド タイトル: MaxRecords プロパティの使用例 (vj++) TOCTitle: MaxRecords プロパティの使用例 (vj++) === タイトル: MaxRecords プロパティの使用例 (vj++) TOCTitle: MaxRecords プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="45b6d-101"><<<<<<< HEAD title: MaxRecords Property Example (VJ++) TOCTitle: MaxRecords Property Example (VJ++) ======= title: MaxRecords property example (VJ++) TOCTitle: MaxRecords property example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="45b6d-102">マスターの ms:assetid: db8c1187-5e15-2c8a-6308-3468c113d962 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250107(v=office.15) ms:contentKeyID: 48548106 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="45b6d-102">master ms:assetid: db8c1187-5e15-2c8a-6308-3468c113d962 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250107(v=office.15) ms:contentKeyID: 48548106 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="maxrecords-property-example-vj"></a><span data-ttu-id="f21f8-102">MaxRecords プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="f21f8-102">MaxRecords Property Example (VJ++)</span></span>
+
+<span data-ttu-id="45b6d-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="45b6d-103"><<<<<<< HEAD</span></span>
+# <a name="maxrecords-property-example-vj"></a><span data-ttu-id="45b6d-104">MaxRecords プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="45b6d-104">MaxRecords Property Example (VJ++)</span></span>
+=======
+# <a name="maxrecords-property-example-vj"></a><span data-ttu-id="45b6d-105">MaxRecords プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="45b6d-105">MaxRecords property example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="45b6d-106">master</span><span class="sxs-lookup"><span data-stu-id="45b6d-106">master</span></span>
 
 
-<span data-ttu-id="f21f8-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="f21f8-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="45b6d-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="45b6d-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="f21f8-104">次の例では、[MaxRecords](maxrecords-property-ado.md) プロパティを使って、***Titles*** テーブル中の最も価格の高い 10 タイトルを含む [Recordset](recordset-object-ado.md) を開きます。</span><span class="sxs-lookup"><span data-stu-id="f21f8-104">This example uses the [MaxRecords](maxrecords-property-ado.md) property to open a [Recordset](recordset-object-ado.md) containing the 10 most expensive titles in the ***Titles*** table.</span></span>
+<span data-ttu-id="45b6d-108">次の例では、[MaxRecords](maxrecords-property-ado.md) プロパティを使って、***Titles*** テーブル中の最も価格の高い 10 タイトルを含む [Recordset](recordset-object-ado.md) を開きます。</span><span class="sxs-lookup"><span data-stu-id="45b6d-108">This example uses the [MaxRecords](maxrecords-property-ado.md) property to open a [Recordset](recordset-object-ado.md) containing the 10 most expensive titles in the ***Titles*** table.</span></span>
 
 ```java 
  

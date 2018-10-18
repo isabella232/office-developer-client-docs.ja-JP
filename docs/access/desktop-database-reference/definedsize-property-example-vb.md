@@ -1,24 +1,18 @@
 ---
-title: DefinedSize プロパティの使用例 (VB)
-TOCTitle: DefinedSize Property Example (VB)
-ms:assetid: 1bad5efa-dd23-b70d-c078-85a3be0729f1
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248957(v=office.15)
-ms:contentKeyID: 48543551
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 97676573e430c390344492480e84c6690f45ac95
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476615"
+<span data-ttu-id="d46b2-101"><<<<<<< ヘッド タイトル: DefinedSize プロパティの使用例 (VB) TOCTitle: DefinedSize プロパティの使用例 (VB) === タイトル: DefinedSize プロパティの使用例 (VB) TOCTitle: DefinedSize プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d46b2-101"><<<<<<< HEAD title: DefinedSize Property Example (VB) TOCTitle: DefinedSize Property Example (VB) ======= title: DefinedSize property example (VB) TOCTitle: DefinedSize property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="d46b2-102">マスターの ms:assetid: 1bad5efa-dd23-b70d-c078-85a3be0729f1 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248957(v=office.15) ms:contentKeyID: 48543551 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="d46b2-102">master ms:assetid: 1bad5efa-dd23-b70d-c078-85a3be0729f1 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248957(v=office.15) ms:contentKeyID: 48543551 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="definedsize-property-example-vb"></a><span data-ttu-id="59f49-102">DefinedSize プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="59f49-102">DefinedSize Property Example (VB)</span></span>
+
+<span data-ttu-id="d46b2-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="d46b2-103"><<<<<<< HEAD</span></span>
+# <a name="definedsize-property-example-vb"></a><span data-ttu-id="d46b2-104">DefinedSize プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d46b2-104">DefinedSize Property Example (VB)</span></span>
+=======
+# <a name="definedsize-property-example-vb"></a><span data-ttu-id="d46b2-105">DefinedSize プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d46b2-105">DefinedSize property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="d46b2-106">master</span><span class="sxs-lookup"><span data-stu-id="d46b2-106">master</span></span>
 
 
-<span data-ttu-id="59f49-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="59f49-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="d46b2-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="d46b2-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="59f49-104">ここでは、[Column](definedsize-property-adox.md) の [DefinedSize](column-object-adox.md) プロパティの使用例を示します。</span><span class="sxs-lookup"><span data-stu-id="59f49-104">This example demonstrates the [DefinedSize](definedsize-property-adox.md) property of a [Column](column-object-adox.md).</span></span> <span data-ttu-id="59f49-105">コードは、 *Northwind*データベースの [**社員**] テーブルの [フリガナ] 列のサイズを再定義します。</span><span class="sxs-lookup"><span data-stu-id="59f49-105">The code will redefine the size of the FirstName column of the **Employees** table of the *Northwind* database.</span></span> <span data-ttu-id="59f49-106">次に、 [Employees](field-object-ado.md) テーブルに基づいた [レコードセット](recordset-object-ado.md)の FirstName **フィールド**の値の変更が表示されます。</span><span class="sxs-lookup"><span data-stu-id="59f49-106">Then, the change in the values of the FirstName [Field](field-object-ado.md) of a [Recordset](recordset-object-ado.md) based on the **Employees** table is displayed.</span></span> <span data-ttu-id="59f49-107">既定では、 **DefinedSize** プロパティを再定義すると、FirstName フィールドがスペースで埋められます。</span><span class="sxs-lookup"><span data-stu-id="59f49-107">Note that by default, the FirstName field becomes padded with spaces after you redefine the **DefinedSize** property.</span></span>
+<span data-ttu-id="d46b2-108">ここでは、[Column](definedsize-property-adox.md) の [DefinedSize](column-object-adox.md) プロパティの使用例を示します。</span><span class="sxs-lookup"><span data-stu-id="d46b2-108">This example demonstrates the [DefinedSize](definedsize-property-adox.md) property of a [Column](column-object-adox.md).</span></span> <span data-ttu-id="d46b2-109">コードは、 *Northwind*データベースの [**社員**] テーブルの [フリガナ] 列のサイズを再定義します。</span><span class="sxs-lookup"><span data-stu-id="d46b2-109">The code will redefine the size of the FirstName column of the **Employees** table of the *Northwind* database.</span></span> <span data-ttu-id="d46b2-110">次に、 [Employees](field-object-ado.md) テーブルに基づいた [レコードセット](recordset-object-ado.md)の FirstName **フィールド**の値の変更が表示されます。</span><span class="sxs-lookup"><span data-stu-id="d46b2-110">Then, the change in the values of the FirstName [Field](field-object-ado.md) of a [Recordset](recordset-object-ado.md) based on the **Employees** table is displayed.</span></span> <span data-ttu-id="d46b2-111">既定では、 **DefinedSize** プロパティを再定義すると、FirstName フィールドがスペースで埋められます。</span><span class="sxs-lookup"><span data-stu-id="d46b2-111">Note that by default, the FirstName field becomes padded with spaces after you redefine the **DefinedSize** property.</span></span>
 
 ```vb 
  

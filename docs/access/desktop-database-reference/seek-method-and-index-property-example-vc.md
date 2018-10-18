@@ -1,24 +1,18 @@
 ---
-title: Seek メソッドおよび Index プロパティの使用例 (VC++)
-TOCTitle: Seek Method and Index Property Example (VC++)
-ms:assetid: f99fb4e5-2ddb-ae0c-6d10-c095b3de1909
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250270(v=office.15)
-ms:contentKeyID: 48548820
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 1abd8ece2e9e8057a9f886f892bc6b5fdf2a828f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478544"
+<span data-ttu-id="14b4a-101"><<<<<<< ヘッド タイトル: シーク メソッドは、インデックス プロパティの使用例 (vc++) TOCTitle: Seek メソッド、インデックス プロパティの使用例 (vc++) === タイトル: Seek メソッドとインデックス プロパティの使用例 (vc++) TOCTitle: Seek メソッドとインデックス プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="14b4a-101"><<<<<<< HEAD title: Seek Method and Index Property Example (VC++) TOCTitle: Seek Method and Index Property Example (VC++) ======= title: Seek Method and Index property example (VC++) TOCTitle: Seek Method and Index property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="14b4a-102">マスターの ms:assetid: f99fb4e5-2ddb-ae0c-6d10-c095b3de1909 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250270(v=office.15) ms:contentKeyID: 48548820 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="14b4a-102">master ms:assetid: f99fb4e5-2ddb-ae0c-6d10-c095b3de1909 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250270(v=office.15) ms:contentKeyID: 48548820 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="seek-method-and-index-property-example-vc"></a><span data-ttu-id="3c828-102">Seek メソッドおよび Index プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="3c828-102">Seek Method and Index Property Example (VC++)</span></span>
+
+<span data-ttu-id="14b4a-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="14b4a-103"><<<<<<< HEAD</span></span>
+# <a name="seek-method-and-index-property-example-vc"></a><span data-ttu-id="14b4a-104">Seek メソッドおよび Index プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="14b4a-104">Seek Method and Index Property Example (VC++)</span></span>
+=======
+# <a name="seek-method-and-index-property-example-vc"></a><span data-ttu-id="14b4a-105">メソッド、インデックスのシーク プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="14b4a-105">Seek Method and Index property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="14b4a-106">master</span><span class="sxs-lookup"><span data-stu-id="14b4a-106">master</span></span>
 
 
-<span data-ttu-id="3c828-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="3c828-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="14b4a-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="14b4a-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="3c828-104">この例では、[Recordset](recordset-object-ado.md) オブジェクトの [Seek](seek-method-ado.md) メソッドと [Index](index-property-ado.md) プロパティを、指定された ***Employee ID*** と組み合わせて使用し、Nwind.mdb データベースの ***Employees*** テーブルで社員の名前を検索します。</span><span class="sxs-lookup"><span data-stu-id="3c828-104">This example uses the [Recordset](recordset-object-ado.md) object's [Seek](seek-method-ado.md) method and [Index](index-property-ado.md) property in conjunction with a given ***Employee ID***, to locate the employee's name in the ***Employees*** table of the Nwind.mdb database.</span></span>
+<span data-ttu-id="14b4a-108">この例では、[Recordset](recordset-object-ado.md) オブジェクトの [Seek](seek-method-ado.md) メソッドと [Index](index-property-ado.md) プロパティを、指定された ***Employee ID*** と組み合わせて使用し、Nwind.mdb データベースの ***Employees*** テーブルで社員の名前を検索します。</span><span class="sxs-lookup"><span data-stu-id="14b4a-108">This example uses the [Recordset](recordset-object-ado.md) object's [Seek](seek-method-ado.md) method and [Index](index-property-ado.md) property in conjunction with a given ***Employee ID***, to locate the employee's name in the ***Employees*** table of the Nwind.mdb database.</span></span>
 
 ```cpp 
  
@@ -242,7 +236,7 @@ void PrintComError(_com_error &e)
 // EndSeekCpp 
 ```
 
-<span data-ttu-id="3c828-105">**SeekX.h**</span><span class="sxs-lookup"><span data-stu-id="3c828-105">**SeekX.h**</span></span>
+<span data-ttu-id="14b4a-109">**SeekX.h**</span><span class="sxs-lookup"><span data-stu-id="14b4a-109">**SeekX.h**</span></span>
 
 ```cpp 
  

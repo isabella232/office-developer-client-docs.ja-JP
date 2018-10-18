@@ -1,24 +1,18 @@
 ---
-title: キーの追加方法、キーの種類、RelatedColumn プロパティの使用例 (VB)
-TOCTitle: Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule Properties Example (VB)
-ms:assetid: d1b0508d-ab2c-eece-061c-09c67ea9ecae
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250047(v=office.15)
-ms:contentKeyID: 48547871
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 4a81c457187d53abac6aedbf382605a349c3c812
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478055"
+<span data-ttu-id="9c652-101"><<<<<<< ヘッド タイトル: キーの追加方法、キーの種類、RelatedColumn プロパティの使用例 (VB) TOCTitle: キーの追加方法、キーの種類、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VB) === タイトル: キーの追加のメソッドは、キー型、RelatedColumn プロパティの使用例 (VB) TOCTitle: キーの追加方法、キーの種類、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="9c652-101"><<<<<<< HEAD title: Keys Append Method, Key Type, RelatedColumn Properties Example (VB) TOCTitle: Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule Properties Example (VB) ======= title: Keys Append Method, Key Type, RelatedColumn properties example (VB) TOCTitle: Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule properties example (VB)</span></span>
+>>>>>>> <span data-ttu-id="9c652-102">マスターの ms:assetid: d1b0508d-ab2c-eece-061c-09c67ea9ecae ms:mtpsurl: https://msdn.microsoft.com/library/JJ250047(v=office.15) ms:contentKeyID: 48547871 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="9c652-102">master ms:assetid: d1b0508d-ab2c-eece-061c-09c67ea9ecae ms:mtpsurl: https://msdn.microsoft.com/library/JJ250047(v=office.15) ms:contentKeyID: 48547871 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb"></a><span data-ttu-id="938b6-102">Keys の Append メソッド、および Key の Type、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="938b6-102">Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule Properties Example (VB)</span></span>
+
+<span data-ttu-id="9c652-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="9c652-103"><<<<<<< HEAD</span></span>
+# <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb"></a><span data-ttu-id="9c652-104">Keys の Append メソッド、および Key の Type、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="9c652-104">Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule Properties Example (VB)</span></span>
+=======
+# <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb"></a><span data-ttu-id="9c652-105">キーの追加方法、キーの種類、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="9c652-105">Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule properties example (VB)</span></span>
+>>>>>>> <span data-ttu-id="9c652-106">master</span><span class="sxs-lookup"><span data-stu-id="9c652-106">master</span></span>
 
 
-<span data-ttu-id="938b6-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="938b6-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="9c652-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="9c652-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="938b6-104">次のコードでは、新しい外部キーの作成方法を示します。</span><span class="sxs-lookup"><span data-stu-id="938b6-104">The following code demonstrates how to create a new foreign key.</span></span> <span data-ttu-id="938b6-105">2 つのテーブル (**Customers**と**Orders**) が存在すると仮定します。</span><span class="sxs-lookup"><span data-stu-id="938b6-105">It assumes two tables (**Customers** and **Orders**) exist.</span></span>
+<span data-ttu-id="9c652-108">次のコードでは、新しい外部キーの作成方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9c652-108">The following code demonstrates how to create a new foreign key.</span></span> <span data-ttu-id="9c652-109">2 つのテーブル (**Customers**と**Orders**) が存在すると仮定します。</span><span class="sxs-lookup"><span data-stu-id="9c652-109">It assumes two tables (**Customers** and **Orders**) exist.</span></span>
 
 ```vb 
  

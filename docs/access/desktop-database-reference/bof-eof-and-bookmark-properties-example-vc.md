@@ -1,26 +1,20 @@
 ---
-title: BOF プロパティ、EOF プロパティ、および Bookmark プロパティの使用例 (VC++)
-TOCTitle: BOF, EOF, and Bookmark Properties Example (VC++)
-ms:assetid: d3cf9ace-07d7-6f92-983c-49c8d4216e20
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250055(v=office.15)
-ms:contentKeyID: 48547914
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 9decac7ec04c3b4dd456b3a406c54418aa955646
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478577"
+<span data-ttu-id="f5efa-101"><<<<<<< ヘッド タイトル: BOF、EOF、およびブックマークのプロパティの使用例 (vc++) TOCTitle: BOF、EOF、およびブックマークのプロパティの使用例 (vc++) === タイトル: BOF、EOF、およびブックマークのプロパティの使用例 (vc++) TOCTitle: BOF、EOF、およびブックマークのプロパティ使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="f5efa-101"><<<<<<< HEAD title: BOF, EOF, and Bookmark Properties Example (VC++) TOCTitle: BOF, EOF, and Bookmark Properties Example (VC++) ======= title: BOF, EOF, and Bookmark properties example (VC++) TOCTitle: BOF, EOF, and Bookmark properties example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="f5efa-102">マスターの ms:assetid: d3cf9ace-07d7-6f92-983c-49c8d4216e20 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250055(v=office.15) ms:contentKeyID: 48547914 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="f5efa-102">master ms:assetid: d3cf9ace-07d7-6f92-983c-49c8d4216e20 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250055(v=office.15) ms:contentKeyID: 48547914 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="bof-eof-and-bookmark-properties-example-vc"></a><span data-ttu-id="d1fd4-102">BOF プロパティ、EOF プロパティ、および Bookmark プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="d1fd4-102">BOF, EOF, and Bookmark Properties Example (VC++)</span></span>
+
+<span data-ttu-id="f5efa-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="f5efa-103"><<<<<<< HEAD</span></span>
+# <a name="bof-eof-and-bookmark-properties-example-vc"></a><span data-ttu-id="f5efa-104">BOF プロパティ、EOF プロパティ、および Bookmark プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="f5efa-104">BOF, EOF, and Bookmark Properties Example (VC++)</span></span>
+=======
+# <a name="bof-eof-and-bookmark-properties-example-vc"></a><span data-ttu-id="f5efa-105">Bof プロパティ、EOF、およびブックマークのプロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="f5efa-105">BOF, EOF, and Bookmark properties example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="f5efa-106">master</span><span class="sxs-lookup"><span data-stu-id="f5efa-106">master</span></span>
 
 
-<span data-ttu-id="d1fd4-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="d1fd4-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="f5efa-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="f5efa-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="d1fd4-p101">次の例の最初の関数は、[BOF](bof-eof-properties-ado.md) プロパティと [EOF](bof-eof-properties-ado.md) プロパティを使用して、ユーザーが [Recordset](recordset-object-ado.md) の先頭または最後のレコードを越えて移動しようとした場合にメッセージを表示します。また、 [Bookmark](bookmark-property-ado.md) プロパティを使用して、後からそのレコードに戻れるように、ユーザーが **Recordset** のレコードにフラグを立てることができるようにしています。</span><span class="sxs-lookup"><span data-stu-id="d1fd4-p101">The first function in this example uses the [BOF](bof-eof-properties-ado.md) and [EOF](bof-eof-properties-ado.md) properties to display a message if a user tries to move past the first or last record of a [Recordset](recordset-object-ado.md). It uses the [Bookmark](bookmark-property-ado.md) property to let the user flag a record in a **Recordset** and return to it later.</span></span>
+<span data-ttu-id="f5efa-p101">次の例の最初の関数は、[BOF](bof-eof-properties-ado.md) プロパティと [EOF](bof-eof-properties-ado.md) プロパティを使用して、ユーザーが [Recordset](recordset-object-ado.md) の先頭または最後のレコードを越えて移動しようとした場合にメッセージを表示します。また、 [Bookmark](bookmark-property-ado.md) プロパティを使用して、後からそのレコードに戻れるように、ユーザーが **Recordset** のレコードにフラグを立てることができるようにしています。</span><span class="sxs-lookup"><span data-stu-id="f5efa-p101">The first function in this example uses the [BOF](bof-eof-properties-ado.md) and [EOF](bof-eof-properties-ado.md) properties to display a message if a user tries to move past the first or last record of a [Recordset](recordset-object-ado.md). It uses the [Bookmark](bookmark-property-ado.md) property to let the user flag a record in a **Recordset** and return to it later.</span></span>
 
-<span data-ttu-id="d1fd4-106">2 つ目の関数は、Bookmark プロパティを使用して **Recordset** の 1 つおきのレコードの **Bookmark** を配列に格納してから、その配列を使用して Recordset にフィルターをかけます。</span><span class="sxs-lookup"><span data-stu-id="d1fd4-106">The second function uses the Bookmark property to place the **Bookmark** of every other record from a **Recordset** into an array, and then filters the Recordset using the array.</span></span>
+<span data-ttu-id="f5efa-110">2 つ目の関数は、Bookmark プロパティを使用して **Recordset** の 1 つおきのレコードの **Bookmark** を配列に格納してから、その配列を使用して Recordset にフィルターをかけます。</span><span class="sxs-lookup"><span data-stu-id="f5efa-110">The second function uses the Bookmark property to place the **Bookmark** of every other record from a **Recordset** into an array, and then filters the Recordset using the array.</span></span>
 
 ```cpp 
  
@@ -355,7 +349,7 @@ void PrintProviderError(_ConnectionPtr pConnection)
 // EndBOFCpp 
 ```
 
-<span data-ttu-id="d1fd4-107">**BofEofBookmark.h**</span><span class="sxs-lookup"><span data-stu-id="d1fd4-107">**BofEofBookmark.h**</span></span>
+<span data-ttu-id="f5efa-111">**BofEofBookmark.h**</span><span class="sxs-lookup"><span data-stu-id="f5efa-111">**BofEofBookmark.h**</span></span>
 
 ```cpp 
  

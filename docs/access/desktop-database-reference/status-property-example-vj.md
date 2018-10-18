@@ -1,24 +1,18 @@
 ---
-title: Status プロパティの使用例 (VJ++)
-TOCTitle: Status Property Example (VJ++)
-ms:assetid: bdfc1b26-b384-e7e5-ff4b-d63ed62f70ca
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249922(v=office.15)
-ms:contentKeyID: 48547452
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 7e596c350165159c4cc813e3b958598534d07a53
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477939"
+<span data-ttu-id="18e32-101"><<<<<<< ヘッド タイトル: 状態プロパティの使用例 (vj++) TOCTitle: 状態プロパティの使用例 (vj++) === タイトル: 状態プロパティの使用例 (vj++) TOCTitle: 状態プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="18e32-101"><<<<<<< HEAD title: Status Property Example (VJ++) TOCTitle: Status Property Example (VJ++) ======= title: Status property example (VJ++) TOCTitle: Status property example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="18e32-102">マスターの ms:assetid: bdfc1b26-b384-e7e5-ff4b-d63ed62f70ca ms:mtpsurl: https://msdn.microsoft.com/library/JJ249922(v=office.15) ms:contentKeyID: 48547452 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="18e32-102">master ms:assetid: bdfc1b26-b384-e7e5-ff4b-d63ed62f70ca ms:mtpsurl: https://msdn.microsoft.com/library/JJ249922(v=office.15) ms:contentKeyID: 48547452 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="status-property-example-vj"></a><span data-ttu-id="de510-102">Status プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="de510-102">Status Property Example (VJ++)</span></span>
+
+<span data-ttu-id="18e32-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="18e32-103"><<<<<<< HEAD</span></span>
+# <a name="status-property-example-vj"></a><span data-ttu-id="18e32-104">Status プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="18e32-104">Status Property Example (VJ++)</span></span>
+=======
+# <a name="status-property-example-vj"></a><span data-ttu-id="18e32-105">状態プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="18e32-105">Status property example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="18e32-106">master</span><span class="sxs-lookup"><span data-stu-id="18e32-106">master</span></span>
 
 
-<span data-ttu-id="de510-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="de510-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="18e32-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="18e32-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="de510-104">この例では、[Status](status-property-ado-recordset.md) プロパティを使用して、一括更新の前にバッチ処理で変更されたレコードを表示します。</span><span class="sxs-lookup"><span data-stu-id="de510-104">This example uses the [Status](status-property-ado-recordset.md) property to display which records have been modified in a batch operation before a batch update has occurred.</span></span>
+<span data-ttu-id="18e32-108">この例では、[Status](status-property-ado-recordset.md) プロパティを使用して、一括更新の前にバッチ処理で変更されたレコードを表示します。</span><span class="sxs-lookup"><span data-stu-id="18e32-108">This example uses the [Status](status-property-ado-recordset.md) property to display which records have been modified in a batch operation before a batch update has occurred.</span></span>
 
 ```java 
  

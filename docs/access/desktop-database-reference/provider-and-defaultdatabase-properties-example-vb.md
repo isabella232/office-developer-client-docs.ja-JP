@@ -1,24 +1,18 @@
 ---
-title: Provider プロパティと DefaultDatabase プロパティの使用例 (VB)
-TOCTitle: Provider and DefaultDatabase Properties Example (VB)
-ms:assetid: 337b90e6-851d-2101-0671-50c4173aec13
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249104(v=office.15)
-ms:contentKeyID: 48544107
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 445315a3d5271d5566667916180a05de74d44980
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476870"
+<span data-ttu-id="d970e-101"><<<<<<< ヘッド タイトル: プロバイダーと DefaultDatabase プロパティの使用例 (VB) TOCTitle: プロバイダーと DefaultDatabase プロパティの使用例 (VB) === タイトル: プロバイダーと DefaultDatabase プロパティの使用例 (VB) TOCTitle: プロバイダーとDefaultDatabase プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d970e-101"><<<<<<< HEAD title: Provider and DefaultDatabase Properties Example (VB) TOCTitle: Provider and DefaultDatabase Properties Example (VB) ======= title: Provider and DefaultDatabase properties example (VB) TOCTitle: Provider and DefaultDatabase properties example (VB)</span></span>
+>>>>>>> <span data-ttu-id="d970e-102">マスターの ms:assetid: 337b90e6-851d-2101-0671-50c4173aec13 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249104(v=office.15) ms:contentKeyID: 48544107 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="d970e-102">master ms:assetid: 337b90e6-851d-2101-0671-50c4173aec13 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249104(v=office.15) ms:contentKeyID: 48544107 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="provider-and-defaultdatabase-properties-example-vb"></a><span data-ttu-id="bfbfd-102">Provider プロパティと DefaultDatabase プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="bfbfd-102">Provider and DefaultDatabase Properties Example (VB)</span></span>
+
+<span data-ttu-id="d970e-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="d970e-103"><<<<<<< HEAD</span></span>
+# <a name="provider-and-defaultdatabase-properties-example-vb"></a><span data-ttu-id="d970e-104">Provider プロパティと DefaultDatabase プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d970e-104">Provider and DefaultDatabase Properties Example (VB)</span></span>
+=======
+# <a name="provider-and-defaultdatabase-properties-example-vb"></a><span data-ttu-id="d970e-105">プロバイダーと DefaultDatabase プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d970e-105">Provider and DefaultDatabase properties example (VB)</span></span>
+>>>>>>> <span data-ttu-id="d970e-106">master</span><span class="sxs-lookup"><span data-stu-id="d970e-106">master</span></span>
 
 
-<span data-ttu-id="bfbfd-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="bfbfd-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="d970e-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="d970e-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="bfbfd-p101">この例では、異なるプロバイダーを使用する 3 つの [Connection](provider-property-ado.md) オブジェクトを開くことによって、 [Provider](connection-object-ado.md) プロパティの機能を示します。また、 [DefaultDatabase](defaultdatabase-property-ado.md) プロパティを使用して、Microsoft ODBC Provider の既定のデータベースを設定します。</span><span class="sxs-lookup"><span data-stu-id="bfbfd-p101">This example demonstrates the [Provider](provider-property-ado.md) property by opening three [Connection](connection-object-ado.md) objects using different providers. It also uses the [DefaultDatabase](defaultdatabase-property-ado.md) property to set the default database for the Microsoft ODBC Provider.</span></span>
+<span data-ttu-id="d970e-p101">この例では、異なるプロバイダーを使用する 3 つの [Connection](provider-property-ado.md) オブジェクトを開くことによって、 [Provider](connection-object-ado.md) プロパティの機能を示します。また、 [DefaultDatabase](defaultdatabase-property-ado.md) プロパティを使用して、Microsoft ODBC Provider の既定のデータベースを設定します。</span><span class="sxs-lookup"><span data-stu-id="d970e-p101">This example demonstrates the [Provider](provider-property-ado.md) property by opening three [Connection](connection-object-ado.md) objects using different providers. It also uses the [DefaultDatabase](defaultdatabase-property-ado.md) property to set the default database for the Microsoft ODBC Provider.</span></span>
 
 ```vb 
  

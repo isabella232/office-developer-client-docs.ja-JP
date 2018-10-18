@@ -1,24 +1,18 @@
 ---
-title: MarshalOptions プロパティの使用例 (VB)
-TOCTitle: MarshalOptions Property Example (VB)
-ms:assetid: f48ad901-7ce8-af6c-e312-51777466cd35
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250241(v=office.15)
-ms:contentKeyID: 48548691
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 6da1e748f9cbf350b880f77ec18f1368a99eaa63
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476997"
+<span data-ttu-id="62080-101"><<<<<<< ヘッド タイトル: MarshalOptions プロパティの使用例 (VB) TOCTitle: MarshalOptions プロパティの使用例 (VB) === タイトル: MarshalOptions プロパティの使用例 (VB) TOCTitle: MarshalOptions プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="62080-101"><<<<<<< HEAD title: MarshalOptions Property Example (VB) TOCTitle: MarshalOptions Property Example (VB) ======= title: MarshalOptions property example (VB) TOCTitle: MarshalOptions property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="62080-102">マスターの ms:assetid: f48ad901-7ce8-af6c-e312-51777466cd35 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250241(v=office.15) ms:contentKeyID: 48548691 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="62080-102">master ms:assetid: f48ad901-7ce8-af6c-e312-51777466cd35 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250241(v=office.15) ms:contentKeyID: 48548691 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="marshaloptions-property-example-vb"></a><span data-ttu-id="2f9ad-102">MarshalOptions プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="2f9ad-102">MarshalOptions Property Example (VB)</span></span>
+
+<span data-ttu-id="62080-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="62080-103"><<<<<<< HEAD</span></span>
+# <a name="marshaloptions-property-example-vb"></a><span data-ttu-id="62080-104">MarshalOptions プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="62080-104">MarshalOptions Property Example (VB)</span></span>
+=======
+# <a name="marshaloptions-property-example-vb"></a><span data-ttu-id="62080-105">MarshalOptions プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="62080-105">MarshalOptions property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="62080-106">master</span><span class="sxs-lookup"><span data-stu-id="62080-106">master</span></span>
 
 
-<span data-ttu-id="2f9ad-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="2f9ad-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="62080-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="62080-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="2f9ad-104">この例では、[MarshalOptions](marshaloptions-property-ado.md) プロパティを使って、サーバーに送り返される行 (すべての行または修正された行のみ) を指定します。</span><span class="sxs-lookup"><span data-stu-id="2f9ad-104">This example uses the [MarshalOptions](marshaloptions-property-ado.md) property to specify what rows are sent back to the server — All Rows or only Modified Rows.</span></span>
+<span data-ttu-id="62080-108">この例では、[MarshalOptions](marshaloptions-property-ado.md) プロパティを使って、サーバーに送り返される行 (すべての行または修正された行のみ) を指定します。</span><span class="sxs-lookup"><span data-stu-id="62080-108">This example uses the [MarshalOptions](marshaloptions-property-ado.md) property to specify what rows are sent back to the server — All Rows or only Modified Rows.</span></span>
 
 ```vb 
  

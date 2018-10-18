@@ -1,24 +1,18 @@
 ---
-title: ParentCatalog プロパティの使用例 (VB)
-TOCTitle: ParentCatalog Property Example (VB)
-ms:assetid: 3bd01153-40b5-1a45-67e2-eb8154c3fe33
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249152(v=office.15)
-ms:contentKeyID: 48544295
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: d8ea3b28b6b6d6dff7de630beeb8929b050a7609
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478211"
+<span data-ttu-id="ed3cd-101"><<<<<<< ヘッド タイトル: ParentCatalog プロパティの使用例 (VB) TOCTitle: ParentCatalog プロパティの使用例 (VB) === タイトル: ParentCatalog プロパティの使用例 (VB) TOCTitle: ParentCatalog プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="ed3cd-101"><<<<<<< HEAD title: ParentCatalog Property Example (VB) TOCTitle: ParentCatalog Property Example (VB) ======= title: ParentCatalog property example (VB) TOCTitle: ParentCatalog property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="ed3cd-102">マスターの ms:assetid: 3bd01153-40b5-1a45-67e2-eb8154c3fe33 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249152(v=office.15) ms:contentKeyID: 48544295 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="ed3cd-102">master ms:assetid: 3bd01153-40b5-1a45-67e2-eb8154c3fe33 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249152(v=office.15) ms:contentKeyID: 48544295 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="parentcatalog-property-example-vb"></a><span data-ttu-id="4fe51-102">ParentCatalog プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="4fe51-102">ParentCatalog Property Example (VB)</span></span>
+
+<span data-ttu-id="ed3cd-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="ed3cd-103"><<<<<<< HEAD</span></span>
+# <a name="parentcatalog-property-example-vb"></a><span data-ttu-id="ed3cd-104">ParentCatalog プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="ed3cd-104">ParentCatalog Property Example (VB)</span></span>
+=======
+# <a name="parentcatalog-property-example-vb"></a><span data-ttu-id="ed3cd-105">ParentCatalog プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="ed3cd-105">ParentCatalog property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="ed3cd-106">master</span><span class="sxs-lookup"><span data-stu-id="ed3cd-106">master</span></span>
 
 
-<span data-ttu-id="4fe51-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="4fe51-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="ed3cd-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="ed3cd-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="4fe51-p101">次のコードでは、テーブルをカタログに追加する前に プロバイダー に固有のプロパティにアクセスするための、[ParentCatalog](parentcatalog-property-adox.md) プロパティの使用方法を示します。このプロパティは、Microsoft Jet データベース内に AutoIncrement フィールドを作成する AutoIncrement です。</span><span class="sxs-lookup"><span data-stu-id="4fe51-p101">The following code demonstrates how to use the [ParentCatalog](parentcatalog-property-adox.md) property to access a provider-specific property prior to appending a table to a catalog. The property is AutoIncrement, which creates an AutoIncrement field in a Microsoft Jet database.</span></span>
+<span data-ttu-id="ed3cd-p101">次のコードでは、テーブルをカタログに追加する前に プロバイダー に固有のプロパティにアクセスするための、[ParentCatalog](parentcatalog-property-adox.md) プロパティの使用方法を示します。このプロパティは、Microsoft Jet データベース内に AutoIncrement フィールドを作成する AutoIncrement です。</span><span class="sxs-lookup"><span data-stu-id="ed3cd-p101">The following code demonstrates how to use the [ParentCatalog](parentcatalog-property-adox.md) property to access a provider-specific property prior to appending a table to a catalog. The property is AutoIncrement, which creates an AutoIncrement field in a Microsoft Jet database.</span></span>
 
 ```vb 
  

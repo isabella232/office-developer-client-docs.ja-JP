@@ -1,23 +1,17 @@
 ---
-title: SortOrder プロパティの使用例 (VB)
-TOCTitle: SortOrder Property Example (VB)
-ms:assetid: 97937644-e3ef-06dc-d8ba-55ecaf7ac1ad
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249675(v=office.15)
-ms:contentKeyID: 48546472
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: ef0aa4beace636bef859f35c5d2cc354a271e9a1
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476929"
+<span data-ttu-id="9ffd0-101"><<<<<<< ヘッド タイトル: SortOrder プロパティの使用例 (VB) TOCTitle: SortOrder プロパティの使用例 (VB) === タイトル: SortOrder プロパティの使用例 (VB) TOCTitle: SortOrder プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="9ffd0-101"><<<<<<< HEAD title: SortOrder Property Example (VB) TOCTitle: SortOrder Property Example (VB) ======= title: SortOrder property example (VB) TOCTitle: SortOrder property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="9ffd0-102">マスターの ms:assetid: 97937644-e3ef-06dc-d8ba-55ecaf7ac1ad ms:mtpsurl: https://msdn.microsoft.com/library/JJ249675(v=office.15) ms:contentKeyID: 48546472 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="9ffd0-102">master ms:assetid: 97937644-e3ef-06dc-d8ba-55ecaf7ac1ad ms:mtpsurl: https://msdn.microsoft.com/library/JJ249675(v=office.15) ms:contentKeyID: 48546472 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="sortorder-property-example-vb"></a><span data-ttu-id="58e23-102">SortOrder プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="58e23-102">SortOrder Property Example (VB)</span></span>
 
-<span data-ttu-id="58e23-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="58e23-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="9ffd0-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="9ffd0-103"><<<<<<< HEAD</span></span>
+# <a name="sortorder-property-example-vb"></a><span data-ttu-id="9ffd0-104">SortOrder プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="9ffd0-104">SortOrder Property Example (VB)</span></span>
+=======
+# <a name="sortorder-property-example-vb"></a><span data-ttu-id="9ffd0-105">SortOrder プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="9ffd0-105">SortOrder property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="9ffd0-106">master</span><span class="sxs-lookup"><span data-stu-id="9ffd0-106">master</span></span>
 
-<span data-ttu-id="58e23-p101">この例では、[Index](sortorder-property-adox.md) の [Columns](column-object-adox.md) コレクションに追加された [Column](columns-collection-adox.md) の [SortOrder](index-object-adox.md) プロパティの機能を示します。このコードは、 **Employees** テーブルの Country 列に昇順のインデックスを追加してレコードを表示します。次に、 **Employees** テーブルの Country 列に降順のインデックスを追加して、レコードを再表示します。これにより、昇順と降順のインデックスの違いを示します。</span><span class="sxs-lookup"><span data-stu-id="58e23-p101">This example demonstrates the [SortOrder](sortorder-property-adox.md) property of a [Column](column-object-adox.md) that has been appended to the [Columns](columns-collection-adox.md) collection of an [Index](index-object-adox.md). The code appends an ascending index to the Country column in the **Employees** table, then displays the records. Then the code appends a descending index to the Country column in the **Employees** table and displays the records again. The difference between ascending and descending indexes is shown.</span></span>
+<span data-ttu-id="9ffd0-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="9ffd0-107">**Applies to**: Access 2013 | Office 2013</span></span>
+
+<span data-ttu-id="9ffd0-p101">この例では、[Index](sortorder-property-adox.md) の [Columns](column-object-adox.md) コレクションに追加された [Column](columns-collection-adox.md) の [SortOrder](index-object-adox.md) プロパティの機能を示します。このコードは、 **Employees** テーブルの Country 列に昇順のインデックスを追加してレコードを表示します。次に、 **Employees** テーブルの Country 列に降順のインデックスを追加して、レコードを再表示します。これにより、昇順と降順のインデックスの違いを示します。</span><span class="sxs-lookup"><span data-stu-id="9ffd0-p101">This example demonstrates the [SortOrder](sortorder-property-adox.md) property of a [Column](column-object-adox.md) that has been appended to the [Columns](columns-collection-adox.md) collection of an [Index](index-object-adox.md). The code appends an ascending index to the Country column in the **Employees** table, then displays the records. Then the code appends a descending index to the Country column in the **Employees** table and displays the records again. The difference between ascending and descending indexes is shown.</span></span>
 
 
 ```vb 

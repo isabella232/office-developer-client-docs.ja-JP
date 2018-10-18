@@ -1,24 +1,18 @@
 ---
-title: Filter プロパティと RecordCount プロパティの使用例 (VJ++)
-TOCTitle: Filter and RecordCount Properties Example (VJ++)
-ms:assetid: cf062f99-f935-6bf3-a245-fa345ead78db
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250025(v=office.15)
-ms:contentKeyID: 48547798
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 34b80e88d933f4c2d2461ebb0b707ff1caf5ed5e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478451"
+<span data-ttu-id="171fd-101"><<<<<<< ヘッド タイトル: フィルターと RecordCount プロパティの使用例 (vj++) TOCTitle: フィルターと RecordCount プロパティの使用例 (vj++) === タイトル: フィルターと RecordCount プロパティの使用例 (vj++) TOCTitle: フィルターと RecordCountプロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="171fd-101"><<<<<<< HEAD title: Filter and RecordCount Properties Example (VJ++) TOCTitle: Filter and RecordCount Properties Example (VJ++) ======= title: Filter and RecordCount properties example (VJ++) TOCTitle: Filter and RecordCount properties example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="171fd-102">マスターの ms:assetid: cf062f99-f935-6bf3-a245-fa345ead78db ms:mtpsurl: https://msdn.microsoft.com/library/JJ250025(v=office.15) ms:contentKeyID: 48547798 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="171fd-102">master ms:assetid: cf062f99-f935-6bf3-a245-fa345ead78db ms:mtpsurl: https://msdn.microsoft.com/library/JJ250025(v=office.15) ms:contentKeyID: 48547798 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="filter-and-recordcount-properties-example-vj"></a><span data-ttu-id="6960b-102">Filter プロパティと RecordCount プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="6960b-102">Filter and RecordCount Properties Example (VJ++)</span></span>
+
+<span data-ttu-id="171fd-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="171fd-103"><<<<<<< HEAD</span></span>
+# <a name="filter-and-recordcount-properties-example-vj"></a><span data-ttu-id="171fd-104">Filter プロパティと RecordCount プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="171fd-104">Filter and RecordCount Properties Example (VJ++)</span></span>
+=======
+# <a name="filter-and-recordcount-properties-example-vj"></a><span data-ttu-id="171fd-105">フィルターと RecordCount プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="171fd-105">Filter and RecordCount properties example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="171fd-106">master</span><span class="sxs-lookup"><span data-stu-id="171fd-106">master</span></span>
 
 
-<span data-ttu-id="6960b-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="6960b-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="171fd-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="171fd-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="6960b-p101">この例では、[Filter](filter-property-ado.md) プロパティを使って、既存の [Recordset](recordset-object-ado.md) に適用されている特定の条件に基づいて新規 **Recordset** を開きます。この例では、 [RecordCount](recordcount-property-ado.md) プロパティを使って、2 つの **Recordset** 内のレコードの数を示します。このプロシージャを実行するには、FilterField 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="6960b-p101">This example uses the [Filter](filter-property-ado.md) property to open a new [Recordset](recordset-object-ado.md) based on a specified condition applied to an existing **Recordset**. It uses the [RecordCount](recordcount-property-ado.md) property to show the number of records in the two **Recordsets**. The FilterField function is required for this procedure to run.</span></span>
+<span data-ttu-id="171fd-p101">この例では、[Filter](filter-property-ado.md) プロパティを使って、既存の [Recordset](recordset-object-ado.md) に適用されている特定の条件に基づいて新規 **Recordset** を開きます。この例では、 [RecordCount](recordcount-property-ado.md) プロパティを使って、2 つの **Recordset** 内のレコードの数を示します。このプロシージャを実行するには、FilterField 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="171fd-p101">This example uses the [Filter](filter-property-ado.md) property to open a new [Recordset](recordset-object-ado.md) based on a specified condition applied to an existing **Recordset**. It uses the [RecordCount](recordcount-property-ado.md) property to show the number of records in the two **Recordsets**. The FilterField function is required for this procedure to run.</span></span>
 
 ```java 
  

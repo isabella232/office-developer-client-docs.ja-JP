@@ -1,24 +1,18 @@
 ---
-title: IsolationLevel プロパティと Mode プロパティの使用例 (VJ++)
-TOCTitle: IsolationLevel and Mode Properties Example (VJ++)
-ms:assetid: cb2e177c-c60c-b3ca-7de2-cbe2519d1e63
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249989(v=office.15)
-ms:contentKeyID: 48547711
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 6b8ff091d17a8e46ad6439ef7964ab4a8ff87e00
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476401"
+<span data-ttu-id="0bf78-101"><<<<<<< ヘッド タイトル: IsolationLevel とモードのプロパティの使用例 (vj++) TOCTitle: IsolationLevel とモードのプロパティの使用例 (vj++) === タイトル: IsolationLevel とモードのプロパティの使用例 (vj++) TOCTitle: IsolationLevel とモードプロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="0bf78-101"><<<<<<< HEAD title: IsolationLevel and Mode Properties Example (VJ++) TOCTitle: IsolationLevel and Mode Properties Example (VJ++) ======= title: IsolationLevel and Mode properties example (VJ++) TOCTitle: IsolationLevel and Mode properties example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="0bf78-102">マスターの ms:assetid: cb2e177c-c60c-b3ca-7de2-cbe2519d1e63 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249989(v=office.15) ms:contentKeyID: 48547711 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="0bf78-102">master ms:assetid: cb2e177c-c60c-b3ca-7de2-cbe2519d1e63 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249989(v=office.15) ms:contentKeyID: 48547711 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="isolationlevel-and-mode-properties-example-vj"></a><span data-ttu-id="e95db-102">IsolationLevel プロパティと Mode プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="e95db-102">IsolationLevel and Mode Properties Example (VJ++)</span></span>
+
+<span data-ttu-id="0bf78-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="0bf78-103"><<<<<<< HEAD</span></span>
+# <a name="isolationlevel-and-mode-properties-example-vj"></a><span data-ttu-id="0bf78-104">IsolationLevel プロパティと Mode プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="0bf78-104">IsolationLevel and Mode Properties Example (VJ++)</span></span>
+=======
+# <a name="isolationlevel-and-mode-properties-example-vj"></a><span data-ttu-id="0bf78-105">IsolationLevel とモードのプロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="0bf78-105">IsolationLevel and Mode properties example (VJ++)</span></span>
+>>>>>>> <span data-ttu-id="0bf78-106">master</span><span class="sxs-lookup"><span data-stu-id="0bf78-106">master</span></span>
 
 
-<span data-ttu-id="e95db-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="e95db-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="0bf78-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="0bf78-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="e95db-104">この例では、[Mode](mode-property-ado.md) プロパティを使って排他的接続を開き、 [IsolationLevel](isolationlevel-property-ado.md) プロパティを使って他のトランザクションから独立したトランザクションを開きます。</span><span class="sxs-lookup"><span data-stu-id="e95db-104">This example uses the [Mode](mode-property-ado.md) property to open an exclusive connection, and the [IsolationLevel](isolationlevel-property-ado.md) property to open a transaction that is conducted in isolation of other transactions.</span></span>
+<span data-ttu-id="0bf78-108">この例では、[Mode](mode-property-ado.md) プロパティを使って排他的接続を開き、 [IsolationLevel](isolationlevel-property-ado.md) プロパティを使って他のトランザクションから独立したトランザクションを開きます。</span><span class="sxs-lookup"><span data-stu-id="0bf78-108">This example uses the [Mode](mode-property-ado.md) property to open an exclusive connection, and the [IsolationLevel](isolationlevel-property-ado.md) property to open a transaction that is conducted in isolation of other transactions.</span></span>
 
 ```java 
  

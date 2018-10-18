@@ -1,24 +1,18 @@
 ---
-title: Value プロパティの使用例 (VB)
-TOCTitle: Value Property Example (VB)
-ms:assetid: c2319a14-e86f-6dc1-b203-fd5f35ffa04f
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249947(v=office.15)
-ms:contentKeyID: 48547547
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 1f46122495af58c15788d58e9c3f83eaee9c9a09
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479237"
+<span data-ttu-id="8e175-101"><<<<<<< ヘッド タイトル: 値のプロパティの使用例 (VB) TOCTitle: 値のプロパティの使用例 (VB) === タイトル: 値プロパティの使用例 (VB) TOCTitle: 値プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="8e175-101"><<<<<<< HEAD title: Value Property Example (VB) TOCTitle: Value Property Example (VB) ======= title: Value property example (VB) TOCTitle: Value property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="8e175-102">マスターの ms:assetid: c2319a14-e86f-6dc1-b203-fd5f35ffa04f ms:mtpsurl: https://msdn.microsoft.com/library/JJ249947(v=office.15) ms:contentKeyID: 48547547 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="8e175-102">master ms:assetid: c2319a14-e86f-6dc1-b203-fd5f35ffa04f ms:mtpsurl: https://msdn.microsoft.com/library/JJ249947(v=office.15) ms:contentKeyID: 48547547 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="value-property-example-vb"></a><span data-ttu-id="8398d-102">Value プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="8398d-102">Value Property Example (VB)</span></span>
+
+<span data-ttu-id="8e175-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="8e175-103"><<<<<<< HEAD</span></span>
+# <a name="value-property-example-vb"></a><span data-ttu-id="8e175-104">Value プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="8e175-104">Value Property Example (VB)</span></span>
+=======
+# <a name="value-property-example-vb"></a><span data-ttu-id="8e175-105">値プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="8e175-105">Value property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="8e175-106">master</span><span class="sxs-lookup"><span data-stu-id="8e175-106">master</span></span>
 
 
-<span data-ttu-id="8398d-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="8398d-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="8e175-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="8e175-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="8398d-104">この例では、[Field](field-object-ado.md) オブジェクトや [Property](property-object-ado.md) オブジェクトで [Value](value-property-ado.md) プロパティを使用して、***Employees*** テーブルのフィールドとプロパティの値を表示します。</span><span class="sxs-lookup"><span data-stu-id="8398d-104">This example demonstrates the [Value](value-property-ado.md) property with [Field](field-object-ado.md) and [Property](property-object-ado.md) objects by displaying field and property values for the ***Employees*** table.</span></span>
+<span data-ttu-id="8e175-108">この例では、[Field](field-object-ado.md) オブジェクトや [Property](property-object-ado.md) オブジェクトで [Value](value-property-ado.md) プロパティを使用して、***Employees*** テーブルのフィールドとプロパティの値を表示します。</span><span class="sxs-lookup"><span data-stu-id="8e175-108">This example demonstrates the [Value](value-property-ado.md) property with [Field](field-object-ado.md) and [Property](property-object-ado.md) objects by displaying field and property values for the ***Employees*** table.</span></span>
 
 ```vb 
  
