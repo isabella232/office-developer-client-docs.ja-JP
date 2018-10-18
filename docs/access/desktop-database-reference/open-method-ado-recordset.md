@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249591(v=office.15)
 ms:contentKeyID: 48546119
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c6887770c8e0c3b98b6ff990c884c5325d6ce6d3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: dd5a956d5a978a374e10c85e7803715f81d48f2a
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479074"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25603078"
 ---
 # <a name="open-method-ado-recordset"></a>Open メソッド (ADO Recordset)
 
@@ -63,7 +63,9 @@ ADO の **Recordset** の既定のカーソルは、サーバー側にある読�
 
 オプションの*Source*引数を使用して、次のいずれかを使用してデータ ソースを指定する:**コマンド**オブジェクト変数、SQL ステートメント、ストアド プロシージャ、テーブル名、URL やファイルの完全なパス名です。 *ソース*がファイルのパス名の場合は、ことができます、完全なパス ("c:\\dir\\file.rst")、相対パス ("..\\file.rst")、または URL ("https://files/file.rst")。
 
-ありません、呼び出しが成功したかどうかを判断する簡単な方法がないため、レコードを返さないアクション クエリを実行するのには**Open**メソッドの*Source*引数を使用することをお勧めします。 このようなクエリによって返される**レコード セット**は閉じられます。 SQL INSERT ステートメントなど、レコードを返さないクエリを実行するのには、 **Command**オブジェクトの[Execute](https://msdn.microsoft.com/library/jj248785\(v=office.15\))メソッドまたは**Connection**オブジェクトの[Execute](https://msdn.microsoft.com/library/jj249832\(v=office.15\))メソッドを代わりに呼び出します。
+<<<<<<< ヘッドは、呼び出しが成功したかどうかを判断する簡単な方法がないため、レコードを返さないアクション クエリを実行するのには**Open**メソッドの*Source*引数を使用することをお勧めします。 このようなクエリによって返される**レコード セット**は閉じられます。 SQL INSERT ステートメントなど、レコードを返さないクエリを実行するのには、 **Command**オブジェクトの[Execute](https://msdn.microsoft.com/library/jj248785\(v=office.15\))メソッドまたは**Connection**オブジェクトの[Execute](https://msdn.microsoft.com/library/jj249832\(v=office.15\))メソッドを代わりに呼び出します。
+=== には、呼び出しが成功したかどうかを判断する簡単な方法がないため、レコードを返さないアクション クエリを実行するのには**Open**メソッドの*Source*引数を使用することをお勧めします。 このようなクエリによって返される**レコード セット**は閉じられます。 SQL INSERT ステートメントなど、レコードを返さないクエリを実行するのには、 **Command**オブジェクトの[Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command)メソッドまたは**Connection**オブジェクトの[Execute](https://msdn.microsoft.com/library/jj249832\(v=office.15\))メソッドを代わりに呼び出します。
+>>>>>>> master
 
 *暗黙的*では、 [ActiveConnection](activeconnection-property-ado.md)プロパティに対応し、接続を開くには、**レコード セット**オブジェクトを指定します。 この引数に接続の定義を指定すると、ADO により、指定されたパラメーターを使用して新しい接続が開かれます。 クライアント側カーソルで**レコード セット**を開いた後 (**CursorLocation** = **adUseClient**)、別のプロバイダーに更新を送信するには、このプロパティの値を変更することができます。 また、このプロパティを **Nothing** (Microsoft Visual Basic の場合) または NULL に設定すると、その **Recordset** を任意のプロバイダーから切断することができます。 ただし、サーバー側カーソルの **ActiveConnection** を変更すると、エラーが発生します。
 
@@ -102,9 +104,14 @@ ADO の **Recordset** の既定のカーソルは、サーバー側にある読�
 > <P>MS Remote プロバイダーでバック グラウンドのフェッチは、 <STRONG>Open</STRONG>メソッドの<EM>Options</EM>パラメーターでのみサポートされます。</P>
 
 
+<<<<<<< ヘッド
 
 
 > [!NOTE]
 > <P>[!メモ] http 体系を使用している URL は、<A href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</A> を自動的に呼び出します。詳細については、「 <A href="absolute-and-relative-urls.md">絶対 URL と相対 URL</A>」を参照してください。</P>
+=======
+> [!NOTE]
+> [!メモ] http 体系を使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、[絶対と相対 Url](absolute-and-relative-urls.md)を参照してください。
+>>>>>>> master
 
 

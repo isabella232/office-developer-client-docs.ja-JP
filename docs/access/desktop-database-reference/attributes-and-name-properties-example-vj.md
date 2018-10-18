@@ -1,19 +1,13 @@
 ---
-title: Attributes プロパティと Name プロパティの使用例 (VJ++)
-TOCTitle: Attributes and Name Properties Example (VJ++)
-ms:assetid: ad3fe113-ad14-2df3-ec41-c24e6d2b1b21
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249812(v=office.15)
-ms:contentKeyID: 48547035
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 9671fa58cb9d4c6c56361e143ed81877154e1290
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476412"
+<<<<<<< ヘッド タイトル: 属性および名前のプロパティの使用例 (vj++) TOCTitle: 属性および名前のプロパティの使用例 (vj++) === タイトル: 属性と名前のプロパティの使用例 (vj++) TOCTitle: 属性および名前のプロパティの使用例 (VJ++)
+>>>>>>> マスターの ms:assetid: ad3fe113-ad14-2df3-ec41-c24e6d2b1b21 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249812(v=office.15) ms:contentKeyID: 48547035 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="attributes-and-name-properties-example-vj"></a>Attributes プロパティと Name プロパティの使用例 (VJ++)
+=======
+# <a name="attributes-and-name-properties-example-vj"></a>属性および名前のプロパティの使用例 (vj++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

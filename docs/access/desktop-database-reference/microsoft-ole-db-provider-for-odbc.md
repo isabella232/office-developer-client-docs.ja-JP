@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249964(v=office.15)
 ms:contentKeyID: 48547602
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 168799b517598211ca9de680730490a0a41d1dde
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0098e646ea48656f44bd3ccd380ae41efc94ffba
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479582"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25606941"
 ---
 # <a name="microsoft-ole-db-provider-for-odbc"></a>Microsoft OLE DB Provider for ODBC
 
@@ -79,7 +79,11 @@ MSDASQL
 </tr>
 <tr class="odd">
 <td><p><strong>URL</strong></p></td>
+<<<<<<< ヘッド
 <td><p>Web フォルダーに公開されているファイルまたはディレクトリの URL を指定します。</p></td>
+=======
+<td><p>ファイルまたは web フォルダーで公開されているディレクトリの URL を指定します。</p></td>
+>>>>>>>マスター
 </tr>
 </tbody>
 </table>

@@ -1,19 +1,13 @@
 ---
-title: Optimize プロパティの使用例 (VJ++)
-TOCTitle: Optimize Property Example (VJ++)
-ms:assetid: d4ac9ae3-3304-addf-0292-7af4ed4fdbc2
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250067(v=office.15)
-ms:contentKeyID: 48547949
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 67b587fb7a0e4a87bafab83ba21cebc6c33a16ec
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477577"
+<<<<<<< ヘッド タイトル: 最適化プロパティの使用例 (vj++) TOCTitle: 最適化プロパティの使用例 (vj++) === タイトル: プロパティの使用例 (vj++) を最適化する TOCTitle: プロパティの使用例 (vj++) を最適化します。
+>>>>>>> マスターの ms:assetid: d4ac9ae3-3304-addf-0292-7af4ed4fdbc2 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250067(v=office.15) ms:contentKeyID: 48547949 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="optimize-property-example-vj"></a>Optimize プロパティの使用例 (VJ++)
+=======
+# <a name="optimize-property-example-vj"></a>プロパティの使用例 (vj++) を最適化します。
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

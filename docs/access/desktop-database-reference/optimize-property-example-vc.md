@@ -1,19 +1,13 @@
 ---
-title: Optimize プロパティの使用例 (VC++)
-TOCTitle: Optimize Property Example (VC++)
-ms:assetid: f9e83365-93b2-3eb6-0347-8f8aec703d6f
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250273(v=office.15)
-ms:contentKeyID: 48548825
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 3daa5f17f274546f3d18ebd118f8c6754da98c1a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476910"
+<<<<<<< ヘッド タイトル: 最適化プロパティの使用例 (vc++) TOCTitle: 最適化プロパティの使用例 (vc++) === タイトル: プロパティの使用例 (vc++) を最適化する TOCTitle: プロパティの使用例 (vc++) を最適化します。
+>>>>>>> マスターの ms:assetid: f9e83365-93b2-3eb6-0347-8f8aec703d6f ms:mtpsurl: https://msdn.microsoft.com/library/JJ250273(v=office.15) ms:contentKeyID: 48548825 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="optimize-property-example-vc"></a>Optimize プロパティの使用例 (VC++)
+=======
+# <a name="optimize-property-example-vc"></a>プロパティの使用例 (vc++) を最適化します。
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

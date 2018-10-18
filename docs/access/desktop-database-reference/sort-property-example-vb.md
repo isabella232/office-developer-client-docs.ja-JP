@@ -1,19 +1,13 @@
 ---
-title: Sort プロパティの使用例 (VB)
-TOCTitle: Sort Property Example (VB)
-ms:assetid: 6f981e5e-7ee8-e1e7-bea9-7c2081400391
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249440(v=office.15)
-ms:contentKeyID: 48545539
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: c537595c20253aba92224bceb6f46ae538f02f08
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477257"
+<<<<<<< ヘッド タイトル: 並べ替えのプロパティの使用例 (VB) TOCTitle: 並べ替えのプロパティの使用例 (VB) === タイトル: 並べ替えのプロパティの使用例 (VB) TOCTitle: 並べ替えプロパティの使用例 (VB)
+>>>>>>> マスターの ms:assetid: 6f981e5e-7ee8-e1e7-bea9-7c2081400391 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249440(v=office.15) ms:contentKeyID: 48545539 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="sort-property-example-vb"></a>Sort プロパティの使用例 (VB)
+=======
+# <a name="sort-property-example-vb"></a>並べ替えプロパティの使用例 (VB)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

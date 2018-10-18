@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249294(v=office.15)
 ms:contentKeyID: 48544970
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ba0cdb22ee9234e935635038b86ac792dd5753cc
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ddd823baf153ebc78fc34ca838184f415edd29ef
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479468"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25605920"
 ---
 # <a name="openschema-method-ado"></a>OpenSchema メソッド (ADO)
 
@@ -25,7 +25,11 @@ ms.locfileid: "25479468"
 
 **設定。 レコード セット* = *接続*します。OpenSchema (* QueryType *、*条件*、 *SchemaID*)
 
+<<<<<<< ヘッド
 ## <a name="return-values"></a>戻り値
+=======
+## <a name="return-values"></a>戻り値
+>>>>>>> master
 
 スキーマ情報を含む [Recordset](recordset-object-ado.md) オブジェクトを返します。 **Recordset** は読み取り専用の静的カーソルとして開かれます。 *QueryType*は、**レコード セット**に表示する列を決定します。
 

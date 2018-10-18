@@ -1,19 +1,13 @@
 ---
-title: Filter プロパティと RecordCount プロパティの使用例 (VJ++)
-TOCTitle: Filter and RecordCount Properties Example (VJ++)
-ms:assetid: cf062f99-f935-6bf3-a245-fa345ead78db
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250025(v=office.15)
-ms:contentKeyID: 48547798
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 34b80e88d933f4c2d2461ebb0b707ff1caf5ed5e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478451"
+<<<<<<< ヘッド タイトル: フィルターと RecordCount プロパティの使用例 (vj++) TOCTitle: フィルターと RecordCount プロパティの使用例 (vj++) === タイトル: フィルターと RecordCount プロパティの使用例 (vj++) TOCTitle: フィルターと RecordCountプロパティの使用例 (vj++)
+>>>>>>> マスターの ms:assetid: cf062f99-f935-6bf3-a245-fa345ead78db ms:mtpsurl: https://msdn.microsoft.com/library/JJ250025(v=office.15) ms:contentKeyID: 48547798 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="filter-and-recordcount-properties-example-vj"></a>Filter プロパティと RecordCount プロパティの使用例 (VJ++)
+=======
+# <a name="filter-and-recordcount-properties-example-vj"></a>フィルターと RecordCount プロパティの使用例 (vj++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

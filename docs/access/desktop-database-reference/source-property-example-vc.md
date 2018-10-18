@@ -1,19 +1,13 @@
 ---
-title: Source プロパティの使用例 (VC++)
-TOCTitle: Source Property Example (VC++)
-ms:assetid: 2c539e8b-04a8-2fc3-052e-a0776682e16c
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249067(v=office.15)
-ms:contentKeyID: 48543949
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 7c0e4a5be5f6ec5e54bc598aeb183ff51109da56
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476799"
+<<<<<<< ヘッド タイトル: ソースのプロパティの使用例 (vc++) TOCTitle: ソースのプロパティの使用例 (vc++) === タイトル: ソースのプロパティの使用例 (vc++) TOCTitle: ソースのプロパティの使用例 (vc++)
+>>>>>>> マスターの ms:assetid: 2c539e8b-04a8-2fc3-052e-a0776682e16c ms:mtpsurl: https://msdn.microsoft.com/library/JJ249067(v=office.15) ms:contentKeyID: 48543949 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="source-property-example-vc"></a>Source プロパティの使用例 (VC++)
+=======
+# <a name="source-property-example-vc"></a>ソース プロパティの使用例 (vc++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

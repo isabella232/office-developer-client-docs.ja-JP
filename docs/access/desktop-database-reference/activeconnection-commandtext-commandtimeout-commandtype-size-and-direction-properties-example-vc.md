@@ -1,20 +1,14 @@
 ---
-title: ActiveConnection、CommandText、CommandTimeout プロパティの使用例 (vc++)
-TOCTitle: ActiveConnection, CommandText, CommandTimeout, CommandType, Size, and Direction Properties Example (VC++)
-ms:assetid: 254e6d48-fc07-1df0-215c-a91141238985
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249021(v=office.15)
-ms:contentKeyID: 48543780
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 3a1017428f473ee48882ba808c0905c6874d2d4d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476979"
+<<<<<<< ヘッド タイトル: ActiveConnection、CommandText、CommandTimeout プロパティの使用例 (vc++) TOCTitle: ActiveConnection、CommandText、CommandTimeout、CommandType、サイズ、方向プロパティの使用例 (vc++) ms:assetid。254e6d48-fc07-1df0-215c-a91141238985 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249021(v=office.15) ms:contentKeyID: 48543780 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
 # <a name="activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vc"></a>ActiveConnection、CommandText、CommandTimeout、CommandType、Size、および Direction プロパティの使用例 (VC++)
 
+=== タイトル: ActiveConnection、CommandText、CommandTimeout プロパティの使用例 (vc++) TOCTitle: ActiveConnection、CommandText、CommandTimeout、CommandType、サイズ、および方向のプロパティの使用例 (vc++) ms:assetid。254e6d48-fc07-1df0-215c-a91141238985 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249021(v=office.15) ms:contentKeyID: 48543780 ms.date: 2018/10/17 mtps_version: v=office.15
+---
+
+# <a name="activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vc"></a>ActiveConnection、CommandText、CommandTimeout、CommandType、サイズ、方向プロパティの使用例 (vc++)
+>>>>>>> master
 
 **適用されます**Access 2013 |。Office 2013
 

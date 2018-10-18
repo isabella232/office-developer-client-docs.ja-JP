@@ -1,19 +1,13 @@
 ---
-title: Attributes プロパティと Name プロパティの使用例 (VB)
-TOCTitle: Attributes and Name Properties Example (VB)
-ms:assetid: b049c03c-9add-48b7-6a0a-51d2507c8e33
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249840(v=office.15)
-ms:contentKeyID: 48547120
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 95e0aaafdce4d7647666b66787a90ae24db53533
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476259"
+<<<<<<< ヘッド タイトル: 属性および名前のプロパティの使用例 (VB) TOCTitle: 属性および名前のプロパティの使用例 (VB) === タイトル: 属性と名前のプロパティの使用例 (VB) TOCTitle: 属性と名前のプロパティの使用例 (VB)
+>>>>>>> マスターの ms:assetid: b049c03c-9add-48b7-6a0a-51d2507c8e33 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249840(v=office.15) ms:contentKeyID: 48547120 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="attributes-and-name-properties-example-vb"></a>Attributes プロパティと Name プロパティの使用例 (VB)
+=======
+# <a name="attributes-and-name-properties-example-vb"></a>属性および名前のプロパティの使用例 (VB)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

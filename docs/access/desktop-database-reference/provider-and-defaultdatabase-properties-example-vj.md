@@ -1,19 +1,13 @@
 ---
-title: Provider プロパティと DefaultDatabase プロパティの使用例 (VJ++)
-TOCTitle: Provider and DefaultDatabase Properties Example (VJ++)
-ms:assetid: babd3c3c-bb6e-46ce-88f2-ef2810d798fd
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249898(v=office.15)
-ms:contentKeyID: 48547380
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 7d870c13824e7c14ad216bd614106d47f00b595a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478168"
+<<<<<<< ヘッド タイトル: プロバイダーと DefaultDatabase プロパティの使用例 (vj++) TOCTitle: プロバイダーと DefaultDatabase プロパティの使用例 (vj++) === タイトル: プロバイダーと DefaultDatabase プロパティの使用例 (vj++) TOCTitle: プロバイダーDefaultDatabase プロパティの使用例 (vj++)
+>>>>>>> マスターの ms:assetid: babd3c3c-bb6e-46ce-88f2-ef2810d798fd ms:mtpsurl: https://msdn.microsoft.com/library/JJ249898(v=office.15) ms:contentKeyID: 48547380 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="provider-and-defaultdatabase-properties-example-vj"></a>Provider プロパティと DefaultDatabase プロパティの使用例 (VJ++)
+=======
+# <a name="provider-and-defaultdatabase-properties-example-vj"></a>プロバイダーと DefaultDatabase プロパティの使用例 (vj++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

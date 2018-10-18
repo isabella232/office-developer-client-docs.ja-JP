@@ -1,30 +1,26 @@
 ---
-title: CommandType プロパティ (ADO)
-TOCTitle: CommandType Property (ADO)
-ms:assetid: c8d4fc1c-502b-11f3-af9d-605a03b6f056
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249976(v=office.15)
-ms:contentKeyID: 48547663
-ms.date: 09/18/2015
-mtps_version: v=office.15
-f1_keywords:
-- ado210.chm1231125
-f1_categories:
+<<<<<<< ヘッド タイトル: CommandType プロパティ (ADO) TOCTitle: CommandType プロパティ (ADO) === タイトル: CommandType プロパティ (ADO) TOCTitle: CommandType プロパティ (ADO)
+>>>>>>> マスターの ms:assetid: c8d4fc1c-502b-11f3-af9d-605a03b6f056 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249976(v=office.15) ms:contentKeyID: 48547663 ms.date: 2015/09/18 mtps_version: v=office.15 f1_keywords:
+- ado210.chm1231125 f1_categories。
 - Office.Version=v15
-ms.openlocfilehash: 3cff3c3540208b142fc13cd79eb83bd218814873
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479676"
 ---
+
+<<<<<<< ヘッド
 # <a name="commandtype-property-ado"></a>CommandType プロパティ (ADO)
+=======
+# <a name="commandtype-property-ado"></a>CommandType プロパティ (ADO)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013
 
 [Command](command-object-ado.md) オブジェクトの型を示します。
 
+<<<<<<< ヘッド
 ## <a name="settings-and-return-values"></a>設定値と戻り値
+=======
+## <a name="settings-and-return-values"></a>設定値および戻り値
+>>>>>>> master
 
 1 つまたは複数の [CommandTypeEnum](commandtypeenum.md) 値を設定または取得します。
 
@@ -38,5 +34,7 @@ ms.locfileid: "25479676"
 
 **CommandType** プロパティは、 [CommandText](commandtext-property-ado.md) プロパティの評価を最適化するために使用します。
 
-**CommandType** プロパティの値が **adCmdUnknown** (既定値) と等しい場合、パフォーマンスが低下することがあります。これは、 **CommandText** プロパティの型が SQL ステートメント、ストアド プロシージャ、またはテーブル名であるかを調べるためにプロバイダーを呼び出す必要があるためです。使っているコマンドの種類がわかっている場合は、 **CommandType** プロパティを設定することにより、該当するコードに直接移動できます。 **CommandType** プロパティが **CommandText** プロパティのコマンドの種類と一致しない場合に [Execute](https://msdn.microsoft.com/library/jj248785\(v=office.15\)) メソッドを呼び出すと、エラーが発生します。
+<<<<<<< ヘッド場合は、 **CommandType**プロパティの値が**adCmdUnknown** (既定値) に等しい、ADO は、プロバイダーにするかどうかの呼び出しを行う必要があるためパフォーマンスが低下が発生する可能性があります**CommandText**プロパティでは、SQL ステートメント、ストアド プロシージャ、またはテーブル名です。 **CommandType**プロパティを設定を使用するコマンドの種類がわかっている場合は、関連するコードに直接移動するのには ADO に指示します。 **CommandType**プロパティが**CommandText**プロパティのコマンドの種類に一致しない場合は、 [Execute](https://msdn.microsoft.com/library/jj248785\(v=office.15\))メソッドを呼び出すときにエラーが発生しました。
+=== ADO は、 **CommandText**プロパティが SQL ステートメントでは、かどうかを判断するのには、プロバイダーへの呼び出しを行う必要があるためパフォーマンスが低下が発生する可能性があります場合は、 **CommandType**プロパティの値が**adCmdUnknown** (既定値) をストアド プロシージャ、またはテーブル名です。 **CommandType**プロパティを設定を使用するコマンドの種類がわかっている場合は、関連するコードに直接移動するのには ADO に指示します。 **CommandType**プロパティが**CommandText**プロパティのコマンドの種類に一致しない場合は、 [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command)メソッドを呼び出すときにエラーが発生しました。
+>>>>>>> master
 

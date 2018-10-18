@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250193(v=office.15)
 ms:contentKeyID: 48548482
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c1f3227e7ae60d1b656b1a7e82b4a2d41bc36844
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0aed6889f16d55ee3ba7778bf9acc6134b744c5d
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478521"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25602574"
 ---
 # <a name="configuring-rds-on-windows-2000"></a>Windows 2000 に RDS を構成する
 
@@ -34,7 +34,11 @@ Windows 2000 へのアップグレード後に RDS が正しく機能しない�
 
 4.  レジストリ内を移動する、レジストリ エディター ユーティリティを使用して"HKEY\_ローカル\_マシン\\システム\\CurrentControlSet\\サービス\\W3SVC\\パラメーター\\ADCLaunch] キーと呼ばれる**があることを確認し、RDSServer.Datafactory**。 ない場合は、これを作成します。
 
-5.  インターネット サービス マネージャーを使用して既定の Web サイトに移動し、MSADC 仮想ルートのプロパティを表示します。[ディレクトリ セキュリティ] タブの [IP アドレスとドメイン名の制限] を調べます。アクセスを [拒否する] が選択されている場合は、[許可する] をクリックします。
+<<<<<<< ヘッド
+5.  インターネット サービス マネージャーを使用して既定の Web サイトに移動し、MSADC 仮想ルートのプロパティを表示します。 [ディレクトリ セキュリティ] タブの [IP アドレスとドメイン名の制限] を調べます。 アクセスを [拒否する] が選択されている場合は、[許可する] をクリックします。
+=======
+5.  インターネット サービス マネージャーを使用すると、既定の web サイトに移動し、MSADC 仮想ルートのプロパティを表示します。 [ディレクトリ セキュリティ] タブの [IP アドレスとドメイン名の制限] を調べます。 アクセスを [拒否する] が選択されている場合は、[許可する] をクリックします。
+>>>>>>> master
 
 変更しても問題が解決されない場合は、サーバーを再起動してください。
 

@@ -1,19 +1,13 @@
 ---
-title: Attributes プロパティと Name プロパティの使用例 (VC++)
-TOCTitle: Attributes and Name Properties Example (VC++)
-ms:assetid: 612b7d4a-b92d-5afd-eeaa-28d7ad1a880a
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249356(v=office.15)
-ms:contentKeyID: 48545203
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 56346ce15c2598686ab3684a1a972e276d94e939
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479528"
+<<<<<<< ヘッド タイトル: 属性および名前のプロパティの使用例 (vc++) TOCTitle: 属性および名前のプロパティの使用例 (vc++) === タイトル: 属性と名前のプロパティの使用例 (vc++) TOCTitle: 属性および名前のプロパティの使用例 (VC++)
+>>>>>>> マスターの ms:assetid: 612b7d4a-b92d-5afd-eeaa-28d7ad1a880a ms:mtpsurl: https://msdn.microsoft.com/library/JJ249356(v=office.15) ms:contentKeyID: 48545203 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="attributes-and-name-properties-example-vc"></a>Attributes プロパティと Name プロパティの使用例 (VC++)
+=======
+# <a name="attributes-and-name-properties-example-vc"></a>属性および名前のプロパティの使用例 (vc++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

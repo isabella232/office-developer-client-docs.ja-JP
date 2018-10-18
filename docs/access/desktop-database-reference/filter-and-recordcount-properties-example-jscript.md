@@ -1,19 +1,13 @@
 ---
-title: Filter プロパティと RecordCount プロパティの使用例 (JScript)
-TOCTitle: Filter and RecordCount Properties Example (JScript)
-ms:assetid: a33e3d13-4184-69f9-4ff2-111106e653cf
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249755(v=office.15)
-ms:contentKeyID: 48546780
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 0f6b33ce6824144626a9219fa2d218d90b38ed89
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478286"
+<<<<<<< ヘッド タイトル: フィルターと RecordCount プロパティの使用例 (JScript) TOCTitle: フィルターと RecordCount プロパティの使用例 (JScript) === タイトル: フィルターと RecordCount プロパティの使用例 (JScript) TOCTitle: フィルターとRecordCount プロパティの使用例 (JScript)
+>>>>>>> マスターの ms:assetid: a33e3d13-4184-69f9-4ff2-111106e653cf ms:mtpsurl: https://msdn.microsoft.com/library/JJ249755(v=office.15) ms:contentKeyID: 48546780 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="filter-and-recordcount-properties-example-jscript"></a>Filter プロパティと RecordCount プロパティの使用例 (JScript)
+=======
+# <a name="filter-and-recordcount-properties-example-jscript"></a>フィルターと RecordCount プロパティの使用例 (JScript)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

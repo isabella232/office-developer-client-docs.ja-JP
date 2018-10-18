@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249407(v=office.15)
 ms:contentKeyID: 48545383
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 83a83eadc9d6489b202682807e3e9e864ecb4f1e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f8d115e606a9208686443d3485b189af9aa5bdff
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476274"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25606914"
 ---
 # <a name="adox-code-examples-in-microsoft-visual-basic"></a>Microsoft Visual Basic での ADOX コードの例
 
@@ -28,9 +28,15 @@ ms.locfileid: "25476274"
 
 **メソッド**
 
+<<<<<<< ヘッド
   - [列とテーブルの Append メソッドと Name プロパティの使用例 (VB)](columns-and-tables-append-methods-name-property-example-vb.md)
 
-  - [Connection の Close メソッドおよび Table の Type プロパティの使用例 (VB)](connection-close-method-table-type-property-example-vb.md)
+  - [Close メソッドの接続、テーブルの種類プロパティの使用例 (VB)](connection-close-method-table-type-property-example-vb.md)
+=======
+  - [列とテーブルの追加方法、名前プロパティの使用例 (VB)](columns-and-tables-append-methods-name-property-example-vb.md)
+
+  - [接続の Close メソッドをテーブル型のプロパティの使用例 (VB)](connection-close-method-table-type-property-example-vb.md)
+>>>>>>> master
 
   - [Create メソッドの使用例 (VB)](create-method-example-vb.md)
 
@@ -42,7 +48,11 @@ ms.locfileid: "25476274"
 
   - [Indexes の Append メソッドの使用例 (VB)](indexes-append-method-example-vb.md)
 
-  - [Keys の Append メソッド、および Key の Type、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VB)](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb.md)
+<<<<<<< ヘッド
+  - [キーが追加され、メソッド、キーの種類、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VB)](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb.md)
+=======
+  - [キーの追加方法、キーの種類、RelatedColumn、RelatedTable、および UpdateRule プロパティの使用例 (VB)](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb.md)
+>>>>>>> master
 
   - [Procedures の Append メソッドの使用例 (VB)](procedures-append-method-example-vb.md)
 
@@ -58,18 +68,29 @@ ms.locfileid: "25476274"
 
 **プロパティ**
 
+<<<<<<< ヘッド
   - [Attributes プロパティの使用例 (VB)](attributes-property-example-vb.md)
 
   - [Catalog の ActiveConnection プロパティの使用例 (VB)](catalog-activeconnection-property-example-vb.md)
 
   - [Clustered プロパティの使用例 (VB)](clustered-property-example-vb.md)
 
-  - [Command プロパティと CommandText プロパティの使用例 (VB)](command-and-commandtext-properties-example-vb.md)
+  - [コマンドと CommandText プロパティの使用例 (VB)](command-and-commandtext-properties-example-vb.md)
+=======
+  - [属性プロパティの使用例 (VB)](attributes-property-example-vb.md)
+
+  - [カタログの ActiveConnection プロパティの使用例 (VB)](catalog-activeconnection-property-example-vb.md)
+
+  - [クラスター化プロパティの使用例 (VB)](clustered-property-example-vb.md)
+
+  - [コマンドと CommandText プロパティの使用例 (VB)](command-and-commandtext-properties-example-vb.md)
+>>>>>>> master
 
   - [Parameters コレクションの Command プロパティの使用例 (VB)](parameters-collection-command-property-example-vb.md)
 
   - [Views コレクションと CommandText プロパティの使用例 (VB)](views-collection-commandtext-property-example-vb.md)
 
+<<<<<<< ヘッド
   - [DateCreated プロパティと DateModified プロパティの使用例 (VB)](datecreated-and-datemodified-properties-example-vb.md)
 
   - [DefinedSize プロパティの使用例 (VB)](definedsize-property-example-vb.md)
@@ -77,11 +98,21 @@ ms.locfileid: "25476274"
   - [DeleteRule プロパティの使用例 (VB)](deleterule-property-example-vb.md)
 
   - [IndexNulls プロパティの使用例 (VB)](indexnulls-property-example-vb.md)
+=======
+  - [作成日時と最終更新日時プロパティの使用例 (VB)](datecreated-and-datemodified-properties-example-vb.md)
+
+  - [DefinedSize プロパティの使用例 (VB)](definedsize-property-example-vb.md)
+
+  - [DeleteRule プロパティの使用例 (VB)](deleterule-property-example-vb.md)
+
+  - [IndexNulls プロパティの使用例 (VB)](indexnulls-property-example-vb.md)
+>>>>>>> master
 
   - [Keys の Append メソッド、および Key の Type、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VB)](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb.md)
 
   - [列とテーブルの Append メソッドと Name プロパティの使用例 (VB)](columns-and-tables-append-methods-name-property-example-vb.md)
 
+<<<<<<< ヘッド
   - [NumericScale プロパティと Precision プロパティの使用例 (VB)](numericscale-and-precision-properties-example-vb.md)
 
   - [ParentCatalog プロパティの使用例 (VB)](parentcatalog-property-example-vb.md)
@@ -89,14 +120,31 @@ ms.locfileid: "25476274"
   - [PrimaryKey プロパティと Unique プロパティの使用例 (VB)](primarykey-and-unique-properties-example-vb.md)
 
   - [SortOrder プロパティの使用例 (VB)](sortorder-property-example-vb.md)
+=======
+  - [NumericScale と Precision プロパティの使用例 (VB)](numericscale-and-precision-properties-example-vb.md)
+
+  - [ParentCatalog プロパティの使用例 (VB)](parentcatalog-property-example-vb.md)
+
+  - [主キーや Unique プロパティの使用例 (VB)](primarykey-and-unique-properties-example-vb.md)
+
+  - [SortOrder プロパティの使用例 (VB)](sortorder-property-example-vb.md)
+>>>>>>> master
 
   - [Connection の Close メソッドおよび Table の Type プロパティの使用例 (VB)](connection-close-method-table-type-property-example-vb.md)
 
 **コレクション**
 
+<<<<<<< ヘッド
   - [Parameters コレクションの Command プロパティの使用例 (VB)](parameters-collection-command-property-example-vb.md)
 
   - [Views コレクションと Fields コレクションの使用例 (VB)](views-and-fields-collections-example-vb.md)
 
-  - [Views コレクションと CommandText プロパティの使用例 (VB)](views-collection-commandtext-property-example-vb.md)
+  - [Views コレクションでは、CommandText プロパティの使用例 (VB)](views-collection-commandtext-property-example-vb.md)
+=======
+  - [Parameters コレクションのコマンド プロパティの使用例 (VB)](parameters-collection-command-property-example-vb.md)
+
+  - [Views コレクションと Fields コレクションの使用例 (VB)](views-and-fields-collections-example-vb.md)
+
+  - [Views コレクションでは、CommandText プロパティの使用例 (VB)](views-collection-commandtext-property-example-vb.md)
+>>>>>>> master
 

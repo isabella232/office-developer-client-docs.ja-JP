@@ -1,19 +1,13 @@
 ---
-title: Version プロパティの使用例 (VJ++)
-TOCTitle: Version Property Example (VJ++)
-ms:assetid: c4f007b8-177d-967e-7f3b-a8945264099b
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249963(v=office.15)
-ms:contentKeyID: 48547600
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: d0f96081b484094837ee9cc2e472db55fb5d9144
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478494"
+<<<<<<< ヘッド タイトル: バージョン プロパティの使用例 (vj++) TOCTitle: バージョン プロパティの使用例 (vj++) === タイトル: バージョン プロパティの使用例 (vj++) TOCTitle: バージョン プロパティの使用例 (vj++)
+>>>>>>> マスターの ms:assetid: c4f007b8-177d-967e-7f3b-a8945264099b ms:mtpsurl: https://msdn.microsoft.com/library/JJ249963(v=office.15) ms:contentKeyID: 48547600 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="version-property-example-vj"></a>Version プロパティの使用例 (VJ++)
+=======
+# <a name="version-property-example-vj"></a>バージョン プロパティの使用例 (vj++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

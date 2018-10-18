@@ -1,19 +1,13 @@
 ---
-title: Type プロパティの使用例 (Property) (VB)
-TOCTitle: Type Property Example (Property) (VB)
-ms:assetid: b3fecd24-e15a-3216-e2c8-0f4ce5655b9c
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249858(v=office.15)
-ms:contentKeyID: 48547209
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 2b99729b4826f25aa8b5f32475ad4b3f0921e849
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477319"
+<<<<<<< ヘッド タイトル: タイプ プロパティの使用例 (VB) の (プロパティ) TOCTitle: タイプ プロパティの使用例 (VB) の (プロパティ) === タイトル: タイプ プロパティの使用例 (VB) の (プロパティ) TOCTitle: タイプ プロパティの使用例 (VB) の (プロパティ)
+>>>>>>> マスターの ms:assetid: b3fecd24-e15a-3216-e2c8-0f4ce5655b9c ms:mtpsurl: https://msdn.microsoft.com/library/JJ249858(v=office.15) ms:contentKeyID: 48547209 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="type-property-example-property-vb"></a>Type プロパティの使用例 (Property) (VB)
+=======
+# <a name="type-property-example-property-vb"></a>プロパティの使用例 (VB) の (プロパティ) を入力します。
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

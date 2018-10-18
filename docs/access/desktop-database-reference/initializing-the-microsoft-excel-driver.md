@@ -10,21 +10,25 @@ f1_keywords:
 - acmain11.chm1032159
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c79d859b122eb3595c31b2ffcec192e2d69ed7b4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 7c9a3282f3bb508a4c68ecbd3f2c0465cfee9bac
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479280"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25603099"
 ---
 # <a name="initializing-the-microsoft-excel-driver"></a>Microsoft Office Excel ドライバーを初期化する
 
 
 **適用されます**Access 2013 |。Office 2013
 
-Microsoft® Office Excel ドライバーをインストールすると、セットアップ プログラムは Microsoft Windows® レジストリの Engines サブキーと ISAM Formats サブキーに一連の既定値を書き込みます。これらの設定は直接変更しないでください。これらの設定に対して追加、削除、または変更を行う場合は、アプリケーションのセットアップ プログラムを使用します。Microsoft Office Excel データベース ドライバーの初期設定と ISAM 形式の設定に関する説明を、次に示します。
+<<<<<<< ヘッドと、Microsoft® Excel ドライバーをインストールすると、セットアップ プログラムは、エンジンと ISAM 形式のサブキーで、Microsoft Windows® レジストリに一連の既定値を書き込みます。 これらの設定を直接変更しないでください。追加、削除、またはこれらの設定を変更するには、アプリケーションのセットアップ プログラムを使用します。 次のセクションでは、初期化し、Microsoft Excel のデータベース ドライバーの ISAM 形式の設定について説明します。
 
 ## <a name="microsoft-excel-initialization-settings"></a>Excel の初期設定
+=== と、Excel ドライバーをインストールすると、セットアップ プログラムは、エンジンと ISAM 形式のサブキーで、Windows レジストリに一連の既定値を書き込みます。 これらの設定を直接変更しないでください。追加、削除、またはこれらの設定を変更するには、アプリケーションのセットアップ プログラムを使用します。 次のセクションでは、初期化し、Microsoft Excel のデータベース ドライバーの ISAM 形式の設定について説明します。
+
+## <a name="excel-initialization-settings"></a>Excel の初期設定
+>>>>>>> master
 
 **アクセス接続エンジン\\エンジン\\Excel**フォルダーには、Microsoft Excel ワークシートへの外部アクセスの使用、Aceexcl.dll のドライバーの初期設定が含まれています。 通常、このキーのエントリの設定は次のようになっています。
 
@@ -147,4 +151,10 @@ Microsoft Access データベース エンジンで使用される、Excel キ�
 > [!NOTE]
 > [!メモ] Windows レジストリの設定を変更した場合は、新しい設定内容を有効にするために、データベース エンジンをいったん終了してから再起動する必要があります。
 
+<<<<<<< ヘッド
 
+=======
+## <a name="see-also"></a>関連項目
+
+[Excel ドライバーで TypeGuessRows 設定を使用します。](https://support.office.com/en-us/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b?ui=en-US&rs=en-US&ad=US)
+>>>>>>> master

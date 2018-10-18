@@ -1,19 +1,13 @@
 ---
-title: Item プロパティの使用例 (VC++)
-TOCTitle: Item Property Example (VC++)
-ms:assetid: 17bfcb84-e0f7-7a24-6fc4-ab1dacd2766a
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248928(v=office.15)
-ms:contentKeyID: 48543452
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: a32f81dc29441cb413c07c3a9e1cdde710d2a959
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477372"
+<<<<<<< ヘッド タイトル: アイテムのプロパティの使用例 (vc++) TOCTitle: アイテムのプロパティの使用例 (vc++) === タイトル: アイテムのプロパティの使用例 (vc++) TOCTitle: アイテムのプロパティの使用例 (vc++)
+>>>>>>> マスターの ms:assetid: 17bfcb84-e0f7-7a24-6fc4-ab1dacd2766a ms:mtpsurl: https://msdn.microsoft.com/library/JJ248928(v=office.15) ms:contentKeyID: 48543452 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="item-property-example-vc"></a>Item プロパティの使用例 (VC++)
+=======
+# <a name="item-property-example-vc"></a>アイテムのプロパティの使用例 (vc++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

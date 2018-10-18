@@ -1,19 +1,13 @@
 ---
-title: Item プロパティ (ADO)
-TOCTitle: Item Property (ADO)
-ms:assetid: 793c305f-0e5b-a529-e21f-b7ab0843ed49
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249499(v=office.15)
-ms:contentKeyID: 48545767
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 29453ac2801f606640fd6d9506a8ee1ee8625396
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476483"
+<<<<<<< ヘッド タイトル: アイテムのプロパティ (ADO) TOCTitle: アイテムのプロパティ (ADO) === タイトル: Item プロパティ (ADO) TOCTitle: Item プロパティ (ADO)
+>>>>>>> マスターの ms:assetid: 793c305f-0e5b-a529-e21f-b7ab0843ed49 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249499(v=office.15) ms:contentKeyID: 48545767 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="item-property-ado"></a>Item プロパティ (ADO)
+=======
+# <a name="item-property-ado"></a>Item プロパティ (ADO)
+>>>>>>> master
 
 **適用されます**Access 2013 |。Office 2013
 
@@ -23,7 +17,11 @@ ms.locfileid: "25476483"
 
 *オブジェクト*を設定する = *コレクション*です。項目 (インデックス)
 
+<<<<<<< ヘッド
 ## <a name="return-value"></a>戻り値
+=======
+## <a name="return-value"></a>戻り値
+>>>>>>> master
 
 オブジェクトへの参照を返します。
 

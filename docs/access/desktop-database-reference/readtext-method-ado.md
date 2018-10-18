@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248826(v=office.15)
 ms:contentKeyID: 48543108
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3a44a3a002d390879e5d56d9c6931a91cba40271
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 5083dccd2c1d328e825a198008fd773bc3a592f6
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476230"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25605213"
 ---
 # <a name="readtext-method-ado"></a>ReadText メソッド (ADO)
 
@@ -30,7 +30,11 @@ ms.locfileid: "25476230"
 
   - 省略可能です。ファイルから読み取る文字の数を指定する長整数型 ( **Long** ) の値、または [StreamReadEnum](streamreadenum.md) 値を指定します。既定値は **adReadAll** です。
 
+<<<<<<< ヘッド
 ## <a name="return-value"></a>戻り値
+=======
+## <a name="return-value"></a>戻り値
+>>>>>>> master
 
 **ReadText** メソッドは、指定した文字数、行全体、またはストリーム全体を **Stream** オブジェクトから読み取り、結果の文字列を返します。
 

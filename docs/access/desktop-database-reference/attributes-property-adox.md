@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250072(v=office.15)
 ms:contentKeyID: 48547959
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f7eefb2a3582f177e2a5de5597d2150b0030a882
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0b1d54b474683806349b849d8c80b0d371db8b8b
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476252"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25604282"
 ---
 # <a name="attributes-property-adox"></a>Attributes プロパティ (ADOX)
 
@@ -20,7 +20,11 @@ ms.locfileid: "25476252"
 
 列の属性を示します。
 
+<<<<<<< ヘッド
 ## <a name="settings-and-return-values"></a>設定値と戻り値
+=======
+## <a name="settings-and-return-values"></a>設定値および戻り値
+>>>>>>> master
 
 長整数型 ( **Long** ) の値を設定または返します。この値は [Column](column-object-adox.md) オブジェクトによって表されるテーブルの属性を指定し、 [ColumnAttributesEnum](columnattributesenum.md) 定数を組み合わせることができます。既定値は 0 (ゼロ) です。 **adColFixed** でも **adColNullable** でもありません。
 

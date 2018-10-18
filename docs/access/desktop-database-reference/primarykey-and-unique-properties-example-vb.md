@@ -1,19 +1,13 @@
 ---
-title: PrimaryKey プロパティと Unique プロパティの使用例 (VB)
-TOCTitle: PrimaryKey and Unique Properties Example (VB)
-ms:assetid: 888f1a35-b883-2449-3b70-103e5116b29f
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249597(v=office.15)
-ms:contentKeyID: 48546137
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 22653f1b8ad7806d3125f86acadf590e321eb073
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478504"
+<<<<<<< ヘッド タイトル: 主キーおよび一意のプロパティの使用例 (VB) TOCTitle: 主キーおよび一意のプロパティの使用例 (VB) === タイトル: 主キーや Unique プロパティの使用例 (VB) TOCTitle: 主キーや Unique プロパティの使用例(VB)
+>>>>>>> マスターの ms:assetid: 888f1a35-b883-2449-3b70-103e5116b29f ms:mtpsurl: https://msdn.microsoft.com/library/JJ249597(v=office.15) ms:contentKeyID: 48546137 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="primarykey-and-unique-properties-example-vb"></a>PrimaryKey プロパティと Unique プロパティの使用例 (VB)
+=======
+# <a name="primarykey-and-unique-properties-example-vb"></a>主キーや Unique プロパティの使用例 (VB)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

@@ -1,19 +1,13 @@
 ---
-title: Parameters コレクションの Command プロパティの使用例 (VC++)
-TOCTitle: Parameters Collection, Command Property Example (VC++)
-ms:assetid: 625a83d5-5b73-f945-7e01-bf412fed0827
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249369(v=office.15)
-ms:contentKeyID: 48545237
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: b6fd25d09338e15086fc520c1d4b3a83b859d9a7
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476545"
+<<<<<<< ヘッド タイトル: パラメーターのコレクション、TOCTitle のコマンド プロパティの使用例 (vc++): Parameters コレクションのコマンド プロパティの使用例 (vc++) === タイトル: Parameters コレクションのコマンド プロパティの使用例 (vc++) TOCTitle。Parameters コレクションのコマンド プロパティの使用例 (vc++)
+>>>>>>> マスターの ms:assetid: 625a83d5-5b73-f945-7e01-bf412fed0827 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249369(v=office.15) ms:contentKeyID: 48545237 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="parameters-collection-command-property-example-vc"></a>Parameters コレクションの Command プロパティの使用例 (VC++)
+=======
+# <a name="parameters-collection-command-property-example-vc"></a>Parameters コレクションのコマンド プロパティの使用例 (vc++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

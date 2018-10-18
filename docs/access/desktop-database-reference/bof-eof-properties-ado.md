@@ -1,19 +1,13 @@
 ---
-title: BOF プロパティおよび EOF プロパティ (ADO)
-TOCTitle: BOF, EOF Properties (ADO)
-ms:assetid: f797e140-5572-1a4d-9afc-285f6a3868a8
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250260(v=office.15)
-ms:contentKeyID: 48548768
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 14cd61f6bd2985d71321d848a6426c06c4c7a94d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476922"
+<<<<<<< ヘッド タイトル: bof プロパティ、EOF プロパティ (ADO) TOCTitle: bof プロパティ、EOF プロパティ (ADO) === タイトル: bof プロパティ、EOF プロパティ (ADO) TOCTitle: bof プロパティ、EOF プロパティ (ADO)
+>>>>>>> マスターの ms:assetid: f797e140-5572-1a4d-9afc-285f6a3868a8 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250260(v=office.15) ms:contentKeyID: 48548768 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="bof-eof-properties-ado"></a>BOF プロパティおよび EOF プロパティ (ADO)
+=======
+# <a name="bof-eof-properties-ado"></a>Bof プロパティ、EOF プロパティ (ADO)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013
@@ -22,7 +16,11 @@ ms.locfileid: "25476922"
 
   - **EOF** カレント レコードの位置が **Recordset** オブジェクトの最後のレコードより後にあることを示します。
 
+<<<<<<< ヘッド
 ## <a name="return-value"></a>戻り値
+=======
+## <a name="return-value"></a>戻り値
+>>>>>>> master
 
 **BOF** プロパティと **EOF** プロパティは、ブール型 ( **Boolean** ) の値を返します。
 

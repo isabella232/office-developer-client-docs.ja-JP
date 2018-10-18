@@ -1,20 +1,14 @@
 ---
-title: AbsolutePage プロパティ、PageCount プロパティ、および PageSize プロパティの使用例 (VJ++)
-TOCTitle: AbsolutePage, PageCount, and PageSize Properties Example (VJ++)
-ms:assetid: 6cdf3880-1d77-5826-1d7b-7bf61a886d1b
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249431(v=office.15)
-ms:contentKeyID: 48545480
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 776129bcd3adfedbe25aa6df6a30a5c0d8339263
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478575"
+<<<<<<< ヘッド タイトル: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (vj++) TOCTitle: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (vj++) ms:assetid: 6cdf3880-1d77-5826-1d7b-7bf61a886d1b ms:mtpsurl: https://msdn.microsoft.com/library/JJ249431(v=office.15)ms:contentKeyID: 48545480 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
 # <a name="absolutepage-pagecount-and-pagesize-properties-example-vj"></a>AbsolutePage プロパティ、PageCount プロパティ、および PageSize プロパティの使用例 (VJ++)
 
+=== タイトル: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (vj++) TOCTitle: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (vj++) ms:assetid: 6cdf3880-1d77-5826-1d7b-7bf61a886d1b ms:mtpsurl: https://msdn.microsoft.com/library/JJ249431(v=office.15) ms:contentKeyID。48545480 ms.date: 2018/10/17 mtps_version: v=office.15
+---
+
+# <a name="absolutepage-pagecount-and-pagesize-properties-example-vj"></a>AbsolutePage、PageCount、および PageSize プロパティの使用例 (vj++)
+>>>>>>> master
 
 **適用されます**Access 2013 |。Office 2013
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249437(v=office.15)
 ms:contentKeyID: 48545513
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7baaf81d7a5d6a91416ea5baf8ba57745612740e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ee66e68cb8eeaaca57c007dc64a9e2b3a8476ec7
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476558"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25606018"
 ---
 # <a name="using-rds-with-odbc-connection-pooling"></a>RDS を ODBC 接続プールと共に使用する
 
@@ -22,7 +22,9 @@ ODBC データ ソースを使用している場合は、インターネット �
 
 接続プールを有効にする方法については、インターネット インフォメーション サービスのドキュメントを参照してください。
 
-Microsoft インターネット インフォメーション サービスのドキュメントに記載されているように、接続プールを有効にすると、Web サーバーに他の制約が適用される場合があります。
+<<<<<<<、接続プーリングを有効にすることがあります件名の Web サーバーに他の制約では、Microsoft インターネット インフォメーション サービスのドキュメントで説明したように注意してください。 ヘッドです。
+=== 接続プールを有効にすることがあります件名の web サーバーに他の制約では、Microsoft インターネット インフォメーション サービスのドキュメントで説明したように注意してくださいしてください。
+>>>>>>> master
 
 接続プールの安定性とパフォーマンスの向上を確保するには、TCP/IP ソケット ネットワーク ライブラリを使用するように Microsoft SQL Server を構成する必要があります。
 
@@ -30,7 +32,11 @@ Microsoft インターネット インフォメーション サービスのド�
 
   - TCP/IP ソケットを使用するように SQL Server コンピューターを構成する。
 
+<<<<<<< ヘッド
   - TCP/IP ソケットを使用するように Web サーバーを構成する。
+=======
+  - TCP/IP ソケットを使用する web サーバーを構成します。
+>>>>>>> master
 
 ## <a name="configuring-the-sql-server-computer-to-use-tcpip-sockets"></a>TCP/IP ソケットを使用するように SQL Server コンピューターを構成する
 
@@ -62,13 +68,23 @@ SQL Server コンピューター上で SQL Server セットアップ プログ�
 
 5.  終了するには **[ok]** をクリックし、セットアップを終了します。
 
+<<<<<<< ヘッド
 ## <a name="configuring-the-web-server-to-use-tcpip-sockets"></a>TCP/IP ソケットを使用するように Web サーバーを構成する
 
 TCP/IP ソケットを使用するように Web サーバーを構成するには、2 つの方法があります。どちらの方法を使用するかは、Web サーバーからすべての SQL Server にアクセスできるようにするか、または Web サーバーから特定の SQL Server だけにアクセスできるようにするかによって決まります。
 
 Web サーバーからすべての SQL Server にアクセスできるようにする場合は、Web サーバー コンピューターで SQL Server クライアント設定ユーティリティを実行する必要があります。次の手順で、この IIS Web サーバーから行われるすべての SQL Server 接続の既定のネットワーク ライブラリを変更し、TCP/IP ソケット ネットワーク ライブラリを使用するように構成します。
 
-**Web サーバーを構成するには (すべての SQL Server)**
+<a name="to-configure-the-web-server-all-sql-servers"></a>**Web サーバーを構成するには (すべての SQL Server)**
+=======
+## <a name="configuring-the-web-server-to-use-tcpip-sockets"></a>Web サーバーが TCP/IP ソケットを使用するを構成します。
+
+TCP/IP ソケットを使用する web サーバーを構成する 2 つのオプションがあります。 Web サーバーからすべての SQL サーバーをアクセスするかどうかに依存するは、または web サーバーから特定の SQL Server だけにアクセスします。
+
+すべての SQL サーバーには web サーバーからアクセスした場合は、web サーバー コンピューターで SQL Server クライアント設定ユーティリティを実行する必要があります。 次の手順では、TCP/IP ソケット ネットワーク ライブラリを使用するのには、この IIS web サーバーから作成されたすべての SQL Server 接続の既定のネットワーク ライブラリを変更します。
+
+**Web サーバー (すべての SQL サーバー) を構成するには**
+>>>>>>> master
 
 **Microsoft SQL Server 6.5 の場合**
 
@@ -90,9 +106,14 @@ Web サーバーからすべての SQL Server にアクセスできるように�
 
 4.  変更を保存し、ユーティリティを終了して **[ok]** をクリックします。
 
-Web サーバーから特定の SQL Server だけにアクセスできるようにする場合は、Web サーバー コンピューターで SQL Server クライアント設定ユーティリティを実行する必要があります。特定の SQL Server 接続のネットワーク ライブラリを変更するには、Web サーバー コンピューターで SQL Server クライアント設定ユーティリティを次のように構成します。
+<<<<<<< ヘッド、特定の SQL Server にアクセスすると Web サーバーから、Web サーバー コンピューターで SQL Server クライアント設定ユーティリティを実行する必要があります。 特定の SQL Server 接続のネットワーク ライブラリを変更するには、Web サーバー コンピューターで SQL Server クライアント設定ユーティリティを次のように構成します。
 
-**Web サーバーを構成するには (特定の SQL Server)**
+<a name="to-configure-the-web-server-a-specific-sql-server"></a>**Web サーバーを構成するには (特定の SQL Server)**
+=======
+Web サーバーから特定の SQL Server にアクセスした場合は、web サーバー コンピューターで SQL Server クライアント設定ユーティリティを実行する必要があります。 特定の SQL Server 接続のネットワーク ライブラリを変更するには、次のように web サーバー コンピューターで SQL Server クライアント ソフトウェアを構成します。
+
+**(特定の SQL Server) の web サーバーを構成するのには**
+>>>>>>> master
 
 **Microsoft SQL Server 6.5 の場合**
 

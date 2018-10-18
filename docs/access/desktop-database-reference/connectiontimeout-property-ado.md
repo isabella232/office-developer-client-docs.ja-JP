@@ -1,26 +1,24 @@
 ---
-title: ConnectionTimeout プロパティ (ADO)
-TOCTitle: ConnectionTimeout Property (ADO)
-ms:assetid: efc39fd8-afce-5ac0-2fff-cbb55c1a444d
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250218(v=office.15)
-ms:contentKeyID: 48548589
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 375af7f4dc84d1a630c290df1c38e77ee6580b5d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477468"
+<<<<<<< ヘッド タイトル: タイムアウト プロパティ (ADO) TOCTitle: タイムアウト プロパティ (ADO) === タイトル: タイムアウト プロパティ (ADO) TOCTitle: タイムアウト プロパティ (ADO)
+>>>>>>> マスターの ms:assetid: efc39fd8-afce-5ac0-2fff-cbb55c1a444d ms:mtpsurl: https://msdn.microsoft.com/library/JJ250218(v=office.15) ms:contentKeyID: 48548589 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="connectiontimeout-property-ado"></a>ConnectionTimeout プロパティ (ADO)
+=======
+# <a name="connectiontimeout-property-ado"></a>タイムアウト プロパティ (ADO)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013
 
 接続操作を中止して、エラーを生成するまでの待機時間を示します。
 
+<<<<<<< ヘッド
 ## <a name="settings-and-return-values"></a>設定値と戻り値
+=======
+## <a name="settings-and-return-values"></a>設定値および戻り値
+>>>>>>> master
 
 接続が開くまでの待機時間を秒単位で示す長整数型 ( **Long** ) の値を設定または取得します。既定値は 15 です。
 

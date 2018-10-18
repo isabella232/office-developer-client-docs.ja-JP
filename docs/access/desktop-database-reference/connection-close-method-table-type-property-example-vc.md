@@ -1,19 +1,13 @@
 ---
-title: Connection の Close メソッドおよび Table の Type プロパティの使用例 (VC++)
-TOCTitle: Connection Close Method, Table Type Property Example (VC++)
-ms:assetid: d75fac58-4b25-c446-8c8e-4afcf1efecc5
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250082(v=office.15)
-ms:contentKeyID: 48548006
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: cbe17bfd18f601d9fb84be81a4962dc702a40db0
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477731"
+<<<<<<< ヘッド タイトル: 接続の終了メソッドは、テーブルの種類プロパティの使用例 (vc++) TOCTitle: 接続の Close メソッドをテーブルの種類プロパティの使用例 (vc++) === タイトル: 接続の Close メソッドをテーブル型のプロパティの使用例 (vc++) TOCTitle:接続の Close メソッドをテーブル型のプロパティの使用例 (vc++)
+>>>>>>> マスターの ms:assetid: d75fac58-4b25-c446-8c8e-4afcf1efecc5 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250082(v=office.15) ms:contentKeyID: 48548006 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="connection-close-method-table-type-property-example-vc"></a>Connection の Close メソッドおよび Table の Type プロパティの使用例 (VC++)
+=======
+# <a name="connection-close-method-table-type-property-example-vc"></a>接続の Close メソッドをテーブル型のプロパティの使用例 (vc++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

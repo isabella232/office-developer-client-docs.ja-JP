@@ -1,19 +1,13 @@
 ---
-title: NumericScale プロパティと Precision プロパティの使用例 (VJ++)
-TOCTitle: NumericScale and Precision Properties Example (VJ++)
-ms:assetid: 9b6fc40c-b740-ede0-d69d-546eb5d40c95
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249707(v=office.15)
-ms:contentKeyID: 48546574
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 73ab7707506828bdfd74b967646c55c9b37eae53
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477074"
+<<<<<<< ヘッド タイトル: NumericScale と Precision プロパティの使用例 (vj++) TOCTitle: NumericScale と Precision プロパティの使用例 (vj++) === タイトル: NumericScale と Precision プロパティの使用例 (vj++) TOCTitle: NumericScale と精度プロパティの使用例 (vj++)
+>>>>>>> マスターの ms:assetid: 9b6fc40c-b740-ede0-d69d-546eb5d40c95 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249707(v=office.15) ms:contentKeyID: 48546574 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="numericscale-and-precision-properties-example-vj"></a>NumericScale プロパティと Precision プロパティの使用例 (VJ++)
+=======
+# <a name="numericscale-and-precision-properties-example-vj"></a>NumericScale と Precision プロパティの使用例 (vj++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

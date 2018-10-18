@@ -1,19 +1,13 @@
 ---
-title: Value プロパティの使用例 (VC++)
-TOCTitle: Value Property Example (VC++)
-ms:assetid: d8a496f9-5864-ffd8-ca99-5a2f10dcdcb4
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250092(v=office.15)
-ms:contentKeyID: 48548040
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 91be0b756d8eb91deacb3971ecf0448dcf068308
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477138"
+<<<<<<< ヘッド タイトル: 値のプロパティの使用例 (vc++) TOCTitle: 値のプロパティの使用例 (vc++) === タイトル: 値プロパティの使用例 (vc++) TOCTitle: 値プロパティの使用例 (vc++)
+>>>>>>> マスターの ms:assetid: d8a496f9-5864-ffd8-ca99-5a2f10dcdcb4 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250092(v=office.15) ms:contentKeyID: 48548040 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="value-property-example-vc"></a>Value プロパティの使用例 (VC++)
+=======
+# <a name="value-property-example-vc"></a>値プロパティの使用例 (vc++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

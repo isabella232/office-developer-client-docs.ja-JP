@@ -1,23 +1,15 @@
 ---
-title: DAO コードを ADO に変換する
-TOCTitle: Converting DAO Code to ADO
-ms:assetid: 4720906b-d6b1-aa6d-3b18-ff828d16acae
-ms:mtpsurl: https://msdn.microsoft.com/library/Ff193201(v=office.15)
-ms:contentKeyID: 48544585
-ms.date: 09/18/2015
-mtps_version: v=office.15
-f1_keywords:
-- vbaac10.chm5267115
-f1_categories:
+<<<<<<< ヘッド タイトル: DAO コードを ADO の TOCTitle に変換する: DAO コードを ADO の ms:assetid に変換する: 4720906b-d6b1-aa6d-3b18-ff828d16acae ms:mtpsurl: https://msdn.microsoft.com/library/Ff193201(v=office.15) ms:contentKeyID: 48544585 ms.date: 2015/09/18 === タイトル: DAO の変換ADO TOCTitle コード: ms:assetid を ADO に DAO の変換コード: 4720906b-d6b1-aa6d-3b18-ff828d16acae ms:mtpsurl: https://msdn.microsoft.com/library/Ff193201(v=office.15) ms:contentKeyID: 48544585 ms.date: 2018/10/16
+>>>>>>> マスター mtps_version: v=office.15 f1_keywords:
+- vbaac10.chm5267115 f1_categories。
 - Office.Version=v15
-ms.openlocfilehash: 7039d9322956e4fcbca4081eff75868ccf306e25
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476219"
 ---
+
+<<<<<<< ヘッド
 # <a name="converting-dao-code-to-ado"></a>DAO コードを ADO に変換する
+=======
+# <a name="convert-dao-code-to-ado"></a>DAO コードを ADO に変換します。
+>>>>>>> master
 
 **適用されます**Access 2013 |。Office 2013
 
@@ -35,7 +27,11 @@ ms.locfileid: "25476219"
 <thead>
 <tr class="header">
 <th><p><strong>DAO</strong></p></th>
+<<<<<<< ヘッド
 <th><p><strong>ADO(ADODB)</strong></p></th>
+=======
+<th><p><strong>ADO (ADODB)</strong></p></th>
+>>>>>>>マスター
 <th><p><strong>注</strong></p></th>
 </tr>
 </thead>
@@ -63,22 +59,38 @@ ms.locfileid: "25476219"
 <tr class="odd">
 <td><p>Dynaset-Type</p></td>
 <td><p>Keyset</p></td>
+<<<<<<< ヘッド
 <td><p>レコードセットのレコードへのポインターを取得します。</p></td>
+=======
+<td><p>レコード セット内のレコードへのポインターのセットを取得します。</p></td>
+>>>>>>>マスター
 </tr>
 <tr class="even">
 <td><p>Snapshot-Type</p></td>
 <td><p>Static</p></td>
+<<<<<<< ヘッド
 <td><p>共にフル レコードを取得しますが、Static レコードセットは更新可能です。</p></td>
 </tr>
 <tr class="odd">
 <td><p>Table-Type</p></td>
 <td><p>adCmdTableDirect オプションを持つ Keyset。</p></td>
+=======
+<td><p>全レコードを取得しますが、静的レコード セットを更新することができます。</p></td>
+</tr>
+<tr class="odd">
+<td><p>Table-Type</p></td>
+<td><p>AdCmdTableDirect オプションを使用してキーセットです。</p></td>
+>>>>>>>マスター
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>Field</p></td>
-<td><p>Field</p></td>
+<td><p>フィールド</p></td>
+<td><p>フィールド</p></td>
+<<<<<<< ヘッド
 <td><p>レコードセットを参照するとき。</p></td>
+=======
+<td><p>参照されたとき、レコード セットにします。</p></td>
+>>>>>>>マスター
 </tr>
 </tbody>
 </table>
@@ -124,7 +136,9 @@ ms.locfileid: "25476219"
 
 
 > [!NOTE]
-> [!メモ] 最初に **CancelUpdate** メソッドを使用せずに、 **MoveNext、MoveLast、MoveFirst、MovePrevious** メソッドを使ってカレント レコードからフォーカスを移動すると、暗黙的に **Update** メソッドが実行されます。
+<<<<<<< **Update**メソッドを暗黙的に実行が最初に**CancelUpdate**メソッドを使用せず、 **MoveLast、MoveFirst、MovePrevious、MoveNext**を使用して現在のレコードから集中ヘッドを移動します。
+> === フォーカスの移動現在のレコードから**MovePrevious、MoveNext、MoveLast、MoveFirst**を使用して最初に**CancelUpdate**メソッドを暗黙的に使用せず、 **Update**メソッドを実行します。
+>>>>>>> master
 
 ### <a name="about-the-contributors"></a>投稿者について
 
@@ -132,5 +146,9 @@ ms.locfileid: "25476219"
 
 - [DAO と ADO の間で選択する](https://www.utteraccess.com/wiki/index.php/choosing_between_dao_and_ado)
 
+<<<<<<< ヘッド
 
+=======
+<br/>
+>>>>>>> master
 

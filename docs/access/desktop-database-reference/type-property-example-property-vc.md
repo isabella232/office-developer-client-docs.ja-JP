@@ -1,19 +1,13 @@
 ---
-title: Type プロパティの使用例 (Property) (VC++)
-TOCTitle: Type Property Example (Property) (VC++)
-ms:assetid: ddf0233f-585e-6659-7fd6-f924f3a31f21
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250122(v=office.15)
-ms:contentKeyID: 48548168
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 31708d28134b42915b6c8e0ccef1b65b7f06fabb
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478462"
+<<<<<<< ヘッド タイトル: タイプ プロパティの使用例 (vc++) の (プロパティ) TOCTitle: タイプ プロパティの使用例 (vc++) の (プロパティ) === タイトル: タイプ プロパティの使用例 (vc++) の (プロパティ) TOCTitle: タイプ プロパティの使用例 (vc++) の (プロパティ)
+>>>>>>> マスターの ms:assetid: ddf0233f-585e-6659-7fd6-f924f3a31f21 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250122(v=office.15) ms:contentKeyID: 48548168 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="type-property-example-property-vc"></a>Type プロパティの使用例 (Property) (VC++)
+=======
+# <a name="type-property-example-property-vc"></a>プロパティの使用例 (vc++) の (プロパティ) を入力します。
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248905(v=office.15)
 ms:contentKeyID: 48543360
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a2d1e3cc0128f4490105b24d7181119f6fece9b4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d2ff2381626e8cf81aa95ee9d49f9396bd4b0316
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477126"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25602721"
 ---
 # <a name="createobject-method-rds"></a>CreateObject メソッド (RDS)
 
@@ -73,9 +73,17 @@ RDS は、HTTP、HTTPS (HTTP over Secure Socket Layer)、DCOM、およびイン�
 
   - *awebsrvr*または*コンピューター名*
 
+<<<<<<< ヘッド
   - サーバー ビジネス オブジェクトのインスタンスが作成される、インターネット インフォメーション サービス (IIS) Web サーバーを識別する URL を表す文字列型 ( **String** ) の値を指定します。
 
 ## <a name="remarks"></a>解説
 
-*HTTP プロトコル*は、標準の Web プロトコルです。*HTTPS*は、セキュリティで保護された Web プロトコルです。 HTTP なしのローカル ・ エリア ・ ネットワークを実行している場合は、 *DCOM プロトコル*を使用します。 *プロセス内*のプロトコルは、ローカルのダイナミック リンク ライブラリ (DLL) です。ネットワークを使用しません。
+<a name="the-http-protocol-is-the-standard-web-protocol-https-is-a-secure-web-protocol-use-the-dcom-protocol-when-running-a-local-area-network-without-http-the-in-process-protocol-is-a-local-dynamic-link-library-dll-it-does-not-use-a-network"></a>*HTTP プロトコル*は、標準の Web プロトコルです。*HTTPS*は、セキュリティで保護された Web プロトコルです。 HTTP なしのローカル ・ エリア ・ ネットワークを実行している場合は、 *DCOM プロトコル*を使用します。 *プロセス内*のプロトコルは、ローカルのダイナミック リンク ライブラリ (DLL) です。ネットワークを使用しません。
+=======
+  - サーバー ビジネス オブジェクトのインスタンスを作成する、インターネット インフォメーション サービス (IIS) web サーバーを識別する URL を表す**文字列**値。
+
+## <a name="remarks"></a>備考
+
+*HTTP プロトコル*は、標準の web プロトコルです。*HTTPS*は、セキュリティで保護された web プロトコルです。 HTTP なしのローカル ・ エリア ・ ネットワークを実行している場合は、 *DCOM プロトコル*を使用します。 *プロセス内*のプロトコルは、ローカルのダイナミック リンク ライブラリ (DLL) です。ネットワークを使用しません。
+>>>>>>> master
 

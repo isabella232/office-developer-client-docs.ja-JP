@@ -1,23 +1,22 @@
 ---
-title: AbsolutePage プロパティ、PageCount プロパティ、および PageSize プロパティの使用例 (JScript)
-TOCTitle: AbsolutePage, PageCount, and PageSize Properties Example (JScript)
-ms:assetid: 6df29022-16f2-c7d8-d45b-b9998e929030
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249434(v=office.15)
-ms:contentKeyID: 48545506
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 60e302cc61b9bbf61a7183d5e74ea6a9dac4a135
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476420"
+<<<<<<< ヘッド タイトル: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (JScript) TOCTitle: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (JScript) ms:assetid: 6df29022-16f2-c7d8-d45b-b9998e929030 ms:mtpsurl:https://msdn.microsoft.com/library/JJ249434(v=office.15) ms:contentKeyID: 48545506 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
 # <a name="absolutepage-pagecount-and-pagesize-properties-example-jscript"></a>AbsolutePage プロパティ、PageCount プロパティ、および PageSize プロパティの使用例 (JScript)
 
 **適用されます**Access 2013 |。Office 2013
 
-この例と、AbsolutePage、PageCount、PageSize プロパティを使用します。 切り取りメモ帳または別のテキスト エディターに次のコードを貼り付けして**AbsolutePageJS.asp**として保存します。
+<a name="this-example-demonstrates-the-absolutepage-pagecount-and-pagesize-properties-cut-and-paste-the-following-code-to-notepad-or-another-text-editor-and-save-it-as-absolutepagejsasp"></a>この例と、AbsolutePage、PageCount、PageSize プロパティを使用します。 切り取りメモ帳または別のテキスト エディターに次のコードを貼り付けして**AbsolutePageJS.asp**として保存します。
+=======
+タイトル: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (JScript) TOCTitle: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (JScript) ms:assetid: 6df29022-16f2-c7d8-d45b-b9998e929030 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249434(v=office.15) ms:contentKeyID。48545506 ms.date: 2018/10/17 mtps_version: v=office.15
+---
+
+# <a name="absolutepage-pagecount-and-pagesize-properties-example-jscript"></a>AbsolutePage、PageCount、および PageSize プロパティの使用例 (JScript)
+
+**適用されます**Access 2013 |。Office 2013
+
+次の例では、[AbsolutePage](absolutepage-property-ado.md) プロパティ、[PageCount](pagecount-property-ado.md) プロパティ、および [PageSize](pagesize-property-ado.md) プロパティを使用して、***Employee*** テーブルから取得した名前と雇用年月日を一度に 5 レコードずつ表示します。 切り取りメモ帳または別のテキスト エディターに次のコードを貼り付けして**AbsolutePageJS.asp**として保存します。
+>>>>>>> master
 
 ```javascript
 <!-- BeginAbsolutePageJS --> 

@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052969
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c7b3c69090a9879f622153f67e2aa264d18a8497
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e1e3919cbb47ca00d6fe9f399cba0c77e91417e7
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479440"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25606816"
 ---
 # <a name="databasecreaterelation-method-dao"></a>Database.CreateRelation メソッド (DAO)
 
@@ -75,7 +75,11 @@ ms.locfileid: "25479440"
 </table>
 
 
+<<<<<<< ヘッド
 ### <a name="return-value"></a>戻り値
+=======
+### <a name="return-value"></a>戻り値
+>>>>>>> master
 
 Relation
 

@@ -1,19 +1,13 @@
 ---
-title: Source プロパティの使用例 (VJ++)
-TOCTitle: Source Property Example (VJ++)
-ms:assetid: cfe6293f-19b7-cc57-c53a-611f841273a5
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250036(v=office.15)
-ms:contentKeyID: 48547821
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: aef4ad0bf1146236ba2df7ab51dd28005656c012
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477774"
+<<<<<<< ヘッド タイトル: ソースのプロパティの使用例 (vj++) TOCTitle: ソースのプロパティの使用例 (vj++) === タイトル: ソースのプロパティの使用例 (vj++) TOCTitle: ソースのプロパティの使用例 (vj++)
+>>>>>>> マスターの ms:assetid: cfe6293f-19b7-cc57-c53a-611f841273a5 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250036(v=office.15) ms:contentKeyID: 48547821 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="source-property-example-vj"></a>Source プロパティの使用例 (VJ++)
+=======
+# <a name="source-property-example-vj"></a>ソース プロパティの使用例 (vj++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

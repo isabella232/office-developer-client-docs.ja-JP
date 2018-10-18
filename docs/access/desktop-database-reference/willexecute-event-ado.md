@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249732(v=office.15)
 ms:contentKeyID: 48546686
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8a5c739ffd408a1f53539c88a3bdc4169eb4cebe
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f3cdf4764cca2b40cee62f9d66ea748a4e627a5f
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476542"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25606844"
 ---
 # <a name="willexecute-event-ado"></a>WillExecute イベント (ADO)
 
@@ -63,7 +63,9 @@ ms.locfileid: "25476542"
 
 ## <a name="remarks"></a>解説
 
-**アクティビ ティー**イベント発生の理由のため、**接続します**。[実行](https://msdn.microsoft.com/library/jj249832\(v=office.15\))するには、**コマンドです**。[実行](https://msdn.microsoft.com/library/jj248785\(v=office.15\))、または**レコード セット**。[Open](open-method-ado-recordset.md)メソッド*pConnection*パラメーターは、有効なオブジェクトへの参照、**接続**を常に含む必要があります。 **Connection.Execute**のためのイベントの場合、 *pRecordset*と*pCommand*パラメーターが**Nothing**に設定します。 **Recordset.Open**のためのイベントの場合は、 *pRecordset*パラメーターが**レコード セット**オブジェクトを参照し、 *pCommand*パラメーターは**Nothing**に設定します。 **Command.Execute**のためのイベントの場合は、 *pCommand*パラメーターは、**コマンド**オブジェクトを参照し、 *pRecordset*パラメーターは**Nothing**に設定します。
+<<<<<<< ヘッドの**アクティビ ティー**のイベント発生の理由のため、**接続します**。[実行](https://msdn.microsoft.com/library/jj249832\(v=office.15\))するには、**コマンドです**。[実行](https://msdn.microsoft.com/library/jj248785\(v=office.15\))、または**レコード セット**。[Open](open-method-ado-recordset.md)メソッド*pConnection*パラメーターは、有効なオブジェクトへの参照、**接続**を常に含む必要があります。 **Connection.Execute**のためのイベントの場合、 *pRecordset*と*pCommand*パラメーターが**Nothing**に設定します。 **Recordset.Open**のためのイベントの場合は、 *pRecordset*パラメーターが**レコード セット**オブジェクトを参照し、 *pCommand*パラメーターは**Nothing**に設定します。 **Command.Execute**のためのイベントの場合は、 *pCommand*パラメーターは、**コマンド**オブジェクトを参照し、 *pRecordset*パラメーターは**Nothing**に設定します。
+===、**アクティビ ティー**のイベント発生の理由のため、**接続します**。[実行](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection)するには、**コマンドです**。[実行](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command)、または**レコード セット**。[Open](open-method-ado-recordset.md)メソッド*pConnection*パラメーターは、有効なオブジェクトへの参照、**接続**を常に含む必要があります。 **Connection.Execute**のためのイベントの場合、 *pRecordset*と*pCommand*パラメーターが**Nothing**に設定します。 **Recordset.Open**のためのイベントの場合は、 *pRecordset*パラメーターが**レコード セット**オブジェクトを参照し、 *pCommand*パラメーターは**Nothing**に設定します。 **Command.Execute**のためのイベントの場合は、 *pCommand*パラメーターは、**コマンド**オブジェクトを参照し、 *pRecordset*パラメーターは**Nothing**に設定します。
+>>>>>>> master
 
 **WillExecute** では、保留中の実行パラメーターを調べたり、編集したりできます。このイベントは、保留中のコマンドを取り消す要求を返すこともあります。
 

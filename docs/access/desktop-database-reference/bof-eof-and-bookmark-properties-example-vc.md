@@ -1,19 +1,13 @@
 ---
-title: BOF プロパティ、EOF プロパティ、および Bookmark プロパティの使用例 (VC++)
-TOCTitle: BOF, EOF, and Bookmark Properties Example (VC++)
-ms:assetid: d3cf9ace-07d7-6f92-983c-49c8d4216e20
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250055(v=office.15)
-ms:contentKeyID: 48547914
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 9decac7ec04c3b4dd456b3a406c54418aa955646
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478577"
+<<<<<<< ヘッド タイトル: BOF、EOF、およびブックマークのプロパティの使用例 (vc++) TOCTitle: BOF、EOF、およびブックマークのプロパティの使用例 (vc++) === タイトル: BOF、EOF、およびブックマークのプロパティの使用例 (vc++) TOCTitle: BOF、EOF、およびブックマークのプロパティ使用例 (vc++)
+>>>>>>> マスターの ms:assetid: d3cf9ace-07d7-6f92-983c-49c8d4216e20 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250055(v=office.15) ms:contentKeyID: 48547914 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="bof-eof-and-bookmark-properties-example-vc"></a>BOF プロパティ、EOF プロパティ、および Bookmark プロパティの使用例 (VC++)
+=======
+# <a name="bof-eof-and-bookmark-properties-example-vc"></a>Bof プロパティ、EOF、およびブックマークのプロパティの使用例 (vc++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

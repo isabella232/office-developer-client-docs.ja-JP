@@ -1,19 +1,13 @@
 ---
-title: Parameters コレクションの Command プロパティの使用例 (VB)
-TOCTitle: Parameters Collection, Command Property Example (VB)
-ms:assetid: 3bb3e6e1-0ee5-70bb-7f2c-beb461d3914a
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249151(v=office.15)
-ms:contentKeyID: 48544290
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: b4a1f1074a81ef5d5aa14192e784b91d0c9fcddb
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478341"
+<<<<<<< ヘッド タイトル: パラメーターのコレクション、コマンド プロパティの使用例 (VB) TOCTitle: パラメーターのコレクション、コマンド プロパティの使用例 (VB) === タイトル: Parameters コレクションのコマンド プロパティの使用例 (VB) TOCTitle: パラメーターコレクション、コマンド プロパティの使用例 (VB)
+>>>>>>> マスターの ms:assetid: 3bb3e6e1-0ee5-70bb-7f2c-beb461d3914a ms:mtpsurl: https://msdn.microsoft.com/library/JJ249151(v=office.15) ms:contentKeyID: 48544290 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="parameters-collection-command-property-example-vb"></a>Parameters コレクションの Command プロパティの使用例 (VB)
+=======
+# <a name="parameters-collection-command-property-example-vb"></a>Parameters コレクションのコマンド プロパティの使用例 (VB)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

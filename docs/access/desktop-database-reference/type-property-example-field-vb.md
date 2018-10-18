@@ -1,19 +1,13 @@
 ---
-title: Type プロパティの使用例 (Field) (VB)
-TOCTitle: Type Property Example (Field) (VB)
-ms:assetid: ff9e26a8-898d-ec89-5093-69c66dbb05ba
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250314(v=office.15)
-ms:contentKeyID: 48548966
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 0206bf366cfa5ef21e1816a2dba2eaad8dbe67ab
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478685"
+<<<<<<< ヘッド タイトル: タイプ プロパティの使用例 (VB) の (フィールド) TOCTitle: タイプ プロパティの使用例 (VB) の (フィールド) === タイトル: タイプ プロパティの使用例 (VB) の (フィールド) TOCTitle: タイプ プロパティの使用例 (VB) の (フィールド)
+>>>>>>> マスターの ms:assetid: ff9e26a8-898d-ec89-5093-69c66dbb05ba ms:mtpsurl: https://msdn.microsoft.com/library/JJ250314(v=office.15) ms:contentKeyID: 48548966 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="type-property-example-field-vb"></a>Type プロパティの使用例 (Field) (VB)
+=======
+# <a name="type-property-example-field-vb"></a>プロパティの使用例 (VB) の (フィールド) を入力します。
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

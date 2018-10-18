@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250105(v=office.15)
 ms:contentKeyID: 48548103
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6de174362e014af3e90686e53a563a10e04ec665
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c25197f0a8a45487f93f56543f73a2beeea062ff
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477628"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25603156"
 ---
 # <a name="hellodata-details"></a>HelloData の詳細
 
@@ -28,7 +28,9 @@ Visual Basic の**OnError**ステートメントを使用してエラー ハン�
 
 接続後、SQL 文字列を変数 (sSQL) に割り当てます。 新規の**Recordset**オブジェクトのインスタンスを作成し、m\_oRecordset1。 コードの次の行では、既存の**接続**に渡すことで**レコード セット**を開きます。 コードの次の行には、既存の**接続**、**レコード セット**のソースとして sSQL に渡すことで**レコード セット**を開きます。 ADO は**レコード セット**のソースとして渡された SQL 文字列では、コマンドのテキストの定義を**レコード セット**を**開く**方法を最後の引数で**adCmdText**を渡すことによって決定を行うために役立ちます。 この行は、 **LockType**も設定し、 **CursorType**は、**レコード セット**に関連付けられています。
 
-次の行のコードでは、 **MarshalOptions** プロパティを **adMarshalModifiedOnly** に設定します。 **MarshalOptions** は、中間層 (または Web サーバー) にマーシャリングされるレコードを示します。 マーシャリングの詳細については、COM のマニュアルを参照してください。 **AdMarshalModifiedOnly**を使用してクライアント側カーソルがある場合 ([CursorLocation](cursorlocation-property-ado.md) = **adUseClient**)、クライアント上で変更されたレコードのみを中間層に書き戻す。 **MarshalOptions** を **adMarshalModifiedOnly** に設定すると、マーシャリングされる行が少なくなり、パフォーマンスが向上する場合があります。
+<<<<<<< コードの次の行の先頭が**adMarshalModifiedOnly**に等しい**スレッド**プロパティを設定します。 **MarshalOptions** は、中間層 (または Web サーバー) にマーシャリングされるレコードを示します。 マーシャリングの詳細については、COM のマニュアルを参照してください。 **AdMarshalModifiedOnly**を使用してクライアント側カーソルがある場合 ([CursorLocation](cursorlocation-property-ado.md) = **adUseClient**)、クライアント上で変更されたレコードのみを中間層に書き戻す。 **MarshalOptions** を **adMarshalModifiedOnly** に設定すると、マーシャリングされる行が少なくなり、パフォーマンスが向上する場合があります。
+=== **AdMarshalModifiedOnly**と同じ**スレッド**を、次のコード行に設定します。 **スレッド**は、どのレコードを中間層 (web サーバー) にマーシャ リングすることを示します。 マーシャリングの詳細については、COM のマニュアルを参照してください。 **AdMarshalModifiedOnly**を使用してクライアント側カーソルがある場合 ([CursorLocation](cursorlocation-property-ado.md) = **adUseClient**)、クライアント上で変更されたレコードのみを中間層に書き戻す。 **MarshalOptions** を **adMarshalModifiedOnly** に設定すると、マーシャリングされる行が少なくなり、パフォーマンスが向上する場合があります。
+>>>>>>> master
 
 次に、 **ActiveConnection** プロパティを **Nothing** に設定して **Recordset** を切断します。詳細については、「5 章: データを更新し、保存する」の「 [レコードセットを切断し、再接続する](disconnecting-and-reconnecting-the-recordset.md)」を参照してください。
 

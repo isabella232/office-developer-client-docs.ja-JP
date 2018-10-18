@@ -1,19 +1,13 @@
 ---
-title: Chapter プロパティ (ADO)
-TOCTitle: Chapter Property (ADO)
-ms:assetid: d7c9478e-487f-7023-1dd8-5313433dbc5e
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250085(v=office.15)
-ms:contentKeyID: 48548014
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: f02b20aef2b76ff00ce23b8597132dc22b414993
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478782"
+<<<<<<< ヘッド タイトル: 章プロパティ (ADO) TOCTitle: 章プロパティ (ADO) === タイトル: チャプター プロパティ (ADO) TOCTitle: チャプター プロパティ (ADO)
+>>>>>>> マスターの ms:assetid: d7c9478e-487f-7023-1dd8-5313433dbc5e ms:mtpsurl: https://msdn.microsoft.com/library/JJ250085(v=office.15) ms:contentKeyID: 48548014 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="chapter-property-ado"></a>Chapter プロパティ (ADO)
+=======
+# <a name="chapter-property-ado"></a>チャプター プロパティ (ADO)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013
@@ -37,7 +31,11 @@ HRESULT に\_の章 (\[に\]長 lChapter)。
 
   - チャプターのハンドルです。
 
+<<<<<<< ヘッド
 ## <a name="return-values"></a>戻り値
+=======
+## <a name="return-values"></a>戻り値
+>>>>>>> master
 
 このプロパティのメソッドなどの標準の HRESULT 値を返します。\_[ok] および E\_は失敗します。
 

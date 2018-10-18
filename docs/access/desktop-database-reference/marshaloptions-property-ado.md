@@ -1,19 +1,13 @@
 ---
-title: MarshalOptions プロパティ (ADO)
-TOCTitle: MarshalOptions Property (ADO)
-ms:assetid: dc9c4e94-0725-210d-8251-079054541142
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250118(v=office.15)
-ms:contentKeyID: 48548143
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: f290f2f4fb4820fb01d3a63aef7bcfbfa7c1f035
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478758"
+<<<<<<< ヘッド タイトル: MarshalOptions プロパティ (ADO) TOCTitle: MarshalOptions プロパティ (ADO) === タイトル: MarshalOptions プロパティ (ADO) TOCTitle: MarshalOptions プロパティ (ADO)
+>>>>>>> マスターの ms:assetid: dc9c4e94-0725-210d-8251-079054541142 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250118(v=office.15) ms:contentKeyID: 48548143 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="marshaloptions-property-ado"></a>MarshalOptions プロパティ (ADO)
+=======
+# <a name="marshaloptions-property-ado"></a>MarshalOptions プロパティ (ADO)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013
@@ -26,7 +20,9 @@ ms.locfileid: "25478758"
 
 ## <a name="remarks"></a>解説
 
-クライアント側の [Recordset](recordset-object-ado.md) を使用する場合、クライアントで修正されたレコードは、マーシャリングという技術により、中間層または Web サーバーに書き戻されます。マーシャリングとは、スレッドまたはプロセスの境界を越えてインターフェイス メソッドのパラメーターをパッケージ化して送信するプロセスです。 **MarshalOptions** プロパティを設定すると、修正されたリモート データをマーシャリングして中間層や Web サーバーを更新するときのパフォーマンスが向上します。
+<<<<<<< ヘッド、クライアント側の[Recordset](recordset-object-ado.md)を使用する場合、クライアント上で変更されたレコードに書き戻す、中間層またはマーシャ リングをパッケージ化し、インターフェイスを送信するという手法を使用して Web サーバースレッドまたはプロセスの境界を越えてメソッドのパラメーターです。 **スレッド**を設定すると、リモート データが変更されたが、中間層または Web サーバーに更新するためにマーシャ リングするときにパフォーマンスが向上することができます。
+=== クライアント側の[Recordset](recordset-object-ado.md)を使用すると、クライアント上で変更されたレコードに書き込まれます戻る、中間層またはマーシャ リングをパッケージ化し、全体のインターフェイス メソッドのパラメーターを送信するという手法を使用して web サーバースレッドまたはプロセスの境界。 **スレッド**を設定すると、リモート データが変更されたが、中間層または web サーバーに更新するためにマーシャ リングするときにパフォーマンスが向上することができます。
+>>>>>>> master
 
 **リモート データ サービスの使用法**このプロパティはクライアント側の**Recordset**でのみ使用します。
 

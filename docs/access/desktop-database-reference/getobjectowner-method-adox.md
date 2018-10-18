@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249451(v=office.15)
 ms:contentKeyID: 48545585
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e20141e379cb207819744fd65b78abf7d2d15712
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 6e6c2432370f2480484cf1165249bc8573b27372
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479258"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25603113"
 ---
 # <a name="getobjectowner-method-adox"></a>GetObjectOwner メソッド (ADOX)
 
@@ -25,7 +25,11 @@ ms.locfileid: "25479258"
 
 *所有者* = *カタログ*です。GetObjectOwner (*オブジェクト名*、*オブジェクト タイプ* \[、*ObjectTypeId*\])
 
+<<<<<<< ヘッド
 ## <a name="return-value"></a>戻り値
+=======
+## <a name="return-value"></a>戻り値
+>>>>>>> master
 
 オブジェクトを所有する **User** または [Group](name-property-adox.md) の [Name プロパティ (ADOX)](user-object-adox.md) を指定する文字列型 ( [String](group-object-adox.md) ) の値を取得します。
 

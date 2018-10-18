@@ -1,19 +1,13 @@
 ---
-title: Rowset プロパティ (ADO)
-TOCTitle: Rowset Property (ADO)
-ms:assetid: 1a1cb3ef-8f3c-30c1-3eb0-8618fdcacd53
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248946(v=office.15)
-ms:contentKeyID: 48543515
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 95a33fb3d24e5cdbf608d268781be0dd536fa315
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477920"
+<<<<<<< ヘッド タイトル: 行セット プロパティ (ADO) TOCTitle: 行セット プロパティ (ADO) === タイトル: 行セットのプロパティ (ADO) TOCTitle: 行セットのプロパティ (ADO)
+>>>>>>> マスターの ms:assetid: 1a1cb3ef-8f3c-30c1-3eb0-8618fdcacd53 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248946(v=office.15) ms:contentKeyID: 48543515 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="rowset-property-ado"></a>Rowset プロパティ (ADO)
+=======
+# <a name="rowset-property-ado"></a>行セット プロパティ (ADO)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013
@@ -40,7 +34,11 @@ HRESULT に\_の行セット (\[の\]IUnknown\*ため)。
 
   - OLE DB **Rowset** オブジェクト。
 
+<<<<<<< ヘッド
 ## <a name="return-values"></a>戻り値
+=======
+## <a name="return-values"></a>戻り値
+>>>>>>> master
 
 このプロパティのメソッドなどの標準の HRESULT 値を返します。\_[ok] および E\_は失敗します。
 

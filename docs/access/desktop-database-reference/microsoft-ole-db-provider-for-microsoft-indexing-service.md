@@ -6,19 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248786(v=office.15)
 ms:contentKeyID: 48542942
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 10af40231fc10e222f818896b3d65f44ac3d6d71
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e41633ddb2730af66ddeee400ad035d5a17ed90d
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477462"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25607054"
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-indexing-service"></a>Microsoft OLE DB Provider for Microsoft Indexing Service
 
 
 **適用されます**Access 2013 |。Office 2013
 
-Microsoft OLE DB Provider for Microsoft Indexing Service を使用すると、Microsoft インデックス サービスでインデックスを作成したファイル システムや Web データに対して、プログラムによる読み取り専用アクセスが可能になります。ADO アプリケーションでは、SQL クエリを使用してコンテンツおよびファイルのプロパティ情報を取得できます。
+<<<<<<< ヘッド、Microsoft OLE DB プロバイダー用 Microsoft インデックス サービスには、ファイル ・ システムと Web のデータを Microsoft インデックス サービスでインデックスを作成するプログラムの読み取り専用アクセスが用意されています。 ADO アプリケーションでは、SQL クエリを使用してコンテンツおよびファイルのプロパティ情報を取得できます。
+===、Microsoft OLE DB プロバイダー用 Microsoft インデックス サービスでは、ファイル システムおよび web データを Microsoft インデックス サービスでインデックスを作成するプログラムの読み取り専用アクセスを提供します。 ADO アプリケーションでは、SQL クエリを使用してコンテンツおよびファイルのプロパティ情報を取得できます。
+>>>>>>> master
 
 このプロバイダーはフリースレッドであり、Unicode に対応しています。
 

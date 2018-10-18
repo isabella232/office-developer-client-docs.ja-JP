@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249327(v=office.15)
 ms:contentKeyID: 48545100
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d5bbc0ab2727a05cb5c140e3aff82778119ad791
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 7221c6bd0a6e8576237fdf4cbfcabe70620f6af8
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478965"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25603995"
 ---
 # <a name="microsoft-ole-db-provider-for-internet-publishing"></a>Microsoft OLE DB Provider for Internet Publishing
 
@@ -66,7 +66,11 @@ MSDAIPP.DSO
 </tr>
 <tr class="even">
 <td><p><strong>Data Source</strong> または <strong>URL</strong></p></td>
+<<<<<<< ヘッド
 <td><p>Web フォルダーに公開されているファイルまたはディレクトリの URL を指定します。</p></td>
+=======
+<td><p>ファイルまたは web フォルダーで公開されているディレクトリの URL を指定します。</p></td>
+>>>>>>>マスター
 </tr>
 <tr class="odd">
 <td><p><strong>User ID</strong></p></td>

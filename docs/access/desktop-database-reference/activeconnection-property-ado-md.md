@@ -1,26 +1,24 @@
 ---
-title: ActiveConnection プロパティ (ADO MD)
-TOCTitle: ActiveConnection Property (ADO MD)
-ms:assetid: d09f0f91-5e1d-01ed-4d83-eaf58ff718a2
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250043(v=office.15)
-ms:contentKeyID: 48547845
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 0743771ee9cee096f8de3d91d793ea8cf81af2ea
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478786"
+<<<<<<< ヘッド タイトル: ActiveConnection プロパティ (ADO MD) TOCTitle: ms:assetid の ActiveConnection プロパティ (ADO MD): d09f0f91-5e1d-01ed-4d83-eaf58ff718a2 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250043(v=office.15) ms:contentKeyID: 48547845 ms.date: 2015/09/18 mtps_バージョン: v=office.15
 ---
+
 # <a name="activeconnection-property-ado-md"></a>ActiveConnection プロパティ (ADO MD)
 
+=== タイトル: ActiveConnection プロパティ (ADO MD) TOCTitle: ActiveConnection プロパティ (ADO MD) ms:assetid: d09f0f91-5e1d-01ed-4d83-eaf58ff718a2 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250043(v=office.15) ms:contentKeyID: 48547845 ms.date: 2018/10/17 mtps_version: v=office.15
+---
+
+# <a name="activeconnection-property-ado-md"></a>ActiveConnection プロパティ (ADO MD)
+>>>>>>> master
 
 **適用されます**Access 2013 |。Office 2013
 
 現在のセルセットまたはカタログが、現在どの ADO [Connection](connection-object-ado.md) オブジェクトに属しているのかを示します。
 
+<<<<<<< ヘッド
 ## <a name="settings-and-return-values"></a>設定値と戻り値
+=======
+## <a name="settings-and-return-values"></a>設定値および戻り値
+>>>>>>> master
 
 接続を定義する文字列、または **Connection** オブジェクトを含むバリアント型 ( **Variant** ) を設定または取得します。既定値は Empty 値です。
 
@@ -36,11 +34,16 @@ ms.locfileid: "25478786"
 
 開いている **Cellset** オブジェクトの **ActiveConnection** プロパティを変更しようとすると、エラーが発生します。
 
+<<<<<<< ヘッド
 
 > [!NOTE]
 > <P>[!メモ] Visual Basic では、 <STRONG>ActiveConnection</STRONG> プロパティを <STRONG>Connection</STRONG> オブジェクトに設定する場合、必ず <STRONG>Set</STRONG> キーワードを使用してください。 <STRONG>Set</STRONG> キーワードを省略すると、 <STRONG>ActiveConnection</STRONG> プロパティに、実際には、 <STRONG>Connection</STRONG> オブジェクトの既定のプロパティである <STRONG>ConnectionString</STRONG> と同じものを設定していることになります。このコードは動作しますが、データ ソースへの追加の接続が作成されるため、パフォーマンスに悪い影響を与えることがあります。</P>
 
 
+=======
+> [!NOTE]
+> [!メモ] Visual Basic では、 **ActiveConnection** プロパティを **Connection** オブジェクトに設定する場合、必ず **Set** キーワードを使用してください。 **Set** キーワードを省略すると、 **ActiveConnection** プロパティに、実際には、 **Connection** オブジェクトの既定のプロパティである **ConnectionString** と同じものを設定していることになります。このコードは動作しますが、データ ソースへの追加の接続が作成されるため、パフォーマンスに悪い影響を与えることがあります。
+>>>>>>> master
 
 MSOLAP データ プロバイダーを使用する場合、接続文字列内でデータ ソースをサーバー名に設定し、初期カタログにデータ ソースのカタログの名前を設定します。サーバーに接続されていないキューブ ファイルに接続するには、その .CUB ファイルのある場所へのフル パスを設定します。どちらの場合でも、プロバイダーにはプロバイダー名を設定します。たとえば、次の文字列を設定すると、MSOLAP プロバイダーを使用して Servername という名前のサーバーにある Bobs Video Store という名前のカタログに接続されます。
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250197(v=office.15)
 ms:contentKeyID: 48548501
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4229a318c4eb855b86164f02f1075d29a915d718
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c8cc48c2f5b2b7cc58d21890435f0d959ad1e414
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478453"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25605871"
 ---
 # <a name="numericscale-property-adox"></a>NumericScale プロパティ (ADOX)
 
@@ -20,7 +20,11 @@ ms.locfileid: "25478453"
 
 列中の数値の小数点以下の桁数を示します。
 
+<<<<<<< ヘッド
 ## <a name="settings-and-return-values"></a>設定値と戻り値
+=======
+## <a name="settings-and-return-values"></a>設定値および戻り値
+>>>>>>> master
 
 **Type** プロパティが [adNumeric](https://msdn.microsoft.com/library/jj249169\(v=office.15\)) または **adDecimal** の場合、列にあるデータ値の小数点以下の桁数をバイト型 ( **Byte** ) の値で設定および取得します。その他のすべてのデータ型では、 **NumericScale** は無視されます。
 

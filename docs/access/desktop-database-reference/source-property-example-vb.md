@@ -1,19 +1,13 @@
 ---
-title: Source プロパティの使用例 (VB)
-TOCTitle: Source Property Example (VB)
-ms:assetid: 7ebc5028-8a2c-51ab-a397-8a50642fabd5
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249532(v=office.15)
-ms:contentKeyID: 48545885
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 6e430f7148df45e22a09c60332dde5d8b45713c1
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478527"
+<<<<<<< ヘッド タイトル: ソースのプロパティの使用例 (VB) TOCTitle: ソースのプロパティの使用例 (VB) === タイトル: ソースのプロパティの使用例 (VB) TOCTitle: ソースのプロパティの使用例 (VB)
+>>>>>>> マスターの ms:assetid: 7ebc5028-8a2c-51ab-a397-8a50642fabd5 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249532(v=office.15) ms:contentKeyID: 48545885 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="source-property-example-vb"></a>Source プロパティの使用例 (VB)
+=======
+# <a name="source-property-example-vb"></a>ソース プロパティの使用例 (VB)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

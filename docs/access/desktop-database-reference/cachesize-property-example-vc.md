@@ -1,19 +1,13 @@
 ---
-title: CacheSize プロパティの使用例 (VC++)
-TOCTitle: CacheSize Property Example (VC++)
-ms:assetid: bd5bc7ae-c1fa-361b-9b26-a216655e3cbd
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249914(v=office.15)
-ms:contentKeyID: 48547435
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: e8bf74622c3d16454e070f214a1c32bece327d0d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479412"
+<<<<<<< ヘッド タイトル: CacheSize プロパティの使用例 (vc++) TOCTitle: CacheSize プロパティの使用例 (vc++) === タイトル: CacheSize プロパティの使用例 (vc++) TOCTitle: CacheSize プロパティの使用例 (vc++)
+>>>>>>> マスターの ms:assetid: bd5bc7ae-c1fa-361b-9b26-a216655e3cbd ms:mtpsurl: https://msdn.microsoft.com/library/JJ249914(v=office.15) ms:contentKeyID: 48547435 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="cachesize-property-example-vc"></a>CacheSize プロパティの使用例 (VC++)
+=======
+# <a name="cachesize-property-example-vc"></a>CacheSize プロパティの使用例 (vc++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

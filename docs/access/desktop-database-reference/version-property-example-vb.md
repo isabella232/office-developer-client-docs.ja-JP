@@ -1,19 +1,13 @@
 ---
-title: Version プロパティの使用例 (VB)
-TOCTitle: Version Property Example (VB)
-ms:assetid: ffb7b04a-55b9-fa2f-41ec-44af225bd15f
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250315(v=office.15)
-ms:contentKeyID: 48548968
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 159a8c29db34c432ecd332c489ad3917eab00416
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477775"
+<<<<<<< ヘッド タイトル: バージョン プロパティの使用例 (VB) TOCTitle: バージョン プロパティの使用例 (VB) === タイトル: バージョン プロパティの使用例 (VB) TOCTitle: バージョン プロパティの使用例 (VB)
+>>>>>>> マスターの ms:assetid: ffb7b04a-55b9-fa2f-41ec-44af225bd15f ms:mtpsurl: https://msdn.microsoft.com/library/JJ250315(v=office.15) ms:contentKeyID: 48548968 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="version-property-example-vb"></a>Version プロパティの使用例 (VB)
+=======
+# <a name="version-property-example-vb"></a>バージョン プロパティの使用例 (VB)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

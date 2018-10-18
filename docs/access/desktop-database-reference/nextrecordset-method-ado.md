@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250051(v=office.15)
 ms:contentKeyID: 48547887
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b824dc1b00f913e097432aae65ecac425ef19031
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e412fbcb083e4cf5acae363ef05ce11ad9754215
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479495"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25603400"
 ---
 # <a name="nextrecordset-method-ado"></a>NextRecordset メソッド (ADO)
 
@@ -25,7 +25,11 @@ ms.locfileid: "25479495"
 
 *Recordset2*の設定 = *recordset1*。NextRecordset (*RecordsAffected* )
 
+<<<<<<< ヘッド
 ## <a name="return-value"></a>戻り値
+=======
+## <a name="return-value"></a>戻り値
+>>>>>>> master
 
 **Recordset** オブジェクトを返します。構文モデルの *recordset1* と *recordset2* には、同じ **Recordset** オブジェクト、または別のオブジェクトを指定できます。別の **Recordset** オブジェクトを使用する場合、**NextRecordset** の呼び出しの後に元の **Recordset** (*recordset1*) の **ActiveConnection** プロパティを再設定すると、エラーが発生します。
 
@@ -43,7 +47,9 @@ ms.locfileid: "25479495"
 
 ## <a name="remarks"></a>解説
 
-**NextRecordset** メソッドでは、複合コマンド ステートメントの次のコマンドの結果、または複数の結果を返すストアド プロシージャの結果を返します。 複合コマンド ステートメントに基づく**レコード セット**オブジェクトを開くかどうか (たとえば、"を選択して\*table1; から\* Table2 から」) [Execute](https://msdn.microsoft.com/library/jj248785\(v=office.15\))メソッドを使用して、[コマンド](command-object-ado.md)または**レコード セット**で[Open](open-method-ado-recordset.md)メソッドで、ADO は最初のコマンドのみを実行し、*レコード セット*に結果を返します。 ステートメントの次のコマンドの結果にアクセスするには、 **NextRecordset** メソッドを呼び出します。
+<<<<<<< ヘッドでは、 **NextRecordset**メソッドを使用して、複合コマンド ステートメントの次のコマンドまたは複数の結果を返すストアド プロシージャの結果を返します。 複合コマンド ステートメントに基づく**レコード セット**オブジェクトを開くかどうか (たとえば、"を選択して\*table1; から\* Table2 から」) [Execute](https://msdn.microsoft.com/library/jj248785\(v=office.15\))メソッドを使用して、[コマンド](command-object-ado.md)または**レコード セット**で[Open](open-method-ado-recordset.md)メソッドで、ADO は最初のコマンドのみを実行し、*レコード セット*に結果を返します。 ステートメントの次のコマンドの結果にアクセスするには、 **NextRecordset** メソッドを呼び出します。
+=== 複合コマンド ステートメントの次のコマンドまたは複数の結果を返すストアド プロシージャの結果を返すため、 **NextRecordset**メソッドを使用します。 複合コマンド ステートメントに基づく**レコード セット**オブジェクトを開くかどうか (たとえば、"を選択して\*table1; から\* Table2 から」) [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command)メソッドを使用して、[コマンド](command-object-ado.md)または**レコード セット**で[Open](open-method-ado-recordset.md)メソッドで、ADO は最初のコマンドのみを実行し、*レコード セット*に結果を返します。 ステートメントの次のコマンドの結果にアクセスするには、 **NextRecordset** メソッドを呼び出します。
+>>>>>>> master
 
 追加の結果は、複合ステートメントを含む**レコード セット**が切断またはプロセスの境界を越えてマーシャ リングされない限り、 **NextRecordset**メソッドは引き続き**レコード セット**オブジェクトを返します。 行を返すコマンドが正常に実行されるレコードが返されない場合は、返された**Recordset**オブジェクトが開いている空れます。 このケースをテストするには、 [bof プロパティ](bof-eof-properties-ado.md)と[EOF](bof-eof-properties-ado.md)プロパティが両方の**場合は True**であることの確認します。 行を返さないコマンドが正常に実行された場合、返される**レコード セット**オブジェクトは閉じて**レコード セット**で、 [State](state-property-ado.md)プロパティをテストすることによって確認することができます。 以上結果が存在する場合、*レコード セット*を*Nothing*に設定されます。
 

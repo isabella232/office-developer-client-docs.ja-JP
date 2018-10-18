@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm35083
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 09e2b8238555a0d1b718f04c69f733039c1d8477
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 15009ca039d5df06bc732f4b58c066ad8f8d67c9
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479619"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25603764"
 ---
 # <a name="browseto-macro-action"></a>"BrowseTo/参照先" マクロ アクション
 
@@ -57,7 +57,11 @@ ms.locfileid: "25479619"
 </tr>
 <tr class="odd">
 <td><p>Page オブジェクト</p></td>
+<<<<<<< ヘッド
 <td><p>指定した場合は、現在のページになる帳票フォームのページを設定します。この引数は Web のみです。</p></td>
+=======
+<td><p>指定した場合は、現在のページになる帳票フォームのページを設定します。 この引数は、web のみです。</p></td>
+>>>>>>>マスター
 </tr>
 <tr class="even">
 <td><p>Data Mode/データ モード</p></td>

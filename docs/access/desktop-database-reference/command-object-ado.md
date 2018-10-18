@@ -10,12 +10,12 @@ f1_keywords:
 - ado210.chm1231106
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 48f30471dd5df224e8fe01538dc02d85ded54d6a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 5199037f44e75bddf697197bca992a95b8432420
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477210"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25605745"
 ---
 # <a name="command-object-ado"></a>Command オブジェクト (ADO)
 
@@ -34,7 +34,11 @@ ms.locfileid: "25477210"
 
   - [Parameter](parameter-object-ado.md) オブジェクトと [Parameters](parameters-collection-ado.md) コレクションを使用して、パラメーター化されたクエリまたはストアド プロシージャの引数を定義できます。
 
+<<<<<<< ヘッド
   - **Execute** メソッドを使用して、コマンドを実行し、必要に応じて [Recordset](https://msdn.microsoft.com/library/jj248785\(v=office.15\)) オブジェクトを取得できます。
+=======
+  - **Execute** メソッドを使用して、コマンドを実行し、必要に応じて [Recordset](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) オブジェクトを取得できます。
+>>>>>>> master
 
   - [CommandType](commandtype-property-ado.md) プロパティを使用して、コマンドを実行する前にそのコマンドの種類を指定し、パフォーマンスを向上できます。
 

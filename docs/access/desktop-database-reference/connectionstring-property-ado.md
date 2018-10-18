@@ -1,26 +1,24 @@
 ---
-title: ConnectionString プロパティ (ADO)
-TOCTitle: ConnectionString Property (ADO)
-ms:assetid: c67a7daf-258f-d99d-6475-a4aa98d1e99d
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249968(v=office.15)
-ms:contentKeyID: 48547627
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 90e884f821c3ca7667020ffe041b4e064555c02b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478800"
+<<<<<<< ヘッド タイトル: ConnectionString プロパティ (ADO) TOCTitle: ConnectionString プロパティ (ADO) === タイトル: ConnectionString プロパティ (ADO) TOCTitle: ConnectionString プロパティ (ADO)
+>>>>>>> マスターの ms:assetid: c67a7daf-258f-d99d-6475-a4aa98d1e99d ms:mtpsurl: https://msdn.microsoft.com/library/JJ249968(v=office.15) ms:contentKeyID: 48547627 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="connectionstring-property-ado"></a>ConnectionString プロパティ (ADO)
+=======
+# <a name="connectionstring-property-ado"></a>ConnectionString プロパティ (ADO)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013
 
 データ ソースとの接続を確立するために使用される情報を示します。
 
+<<<<<<< ヘッド
 ## <a name="settings-and-return-values"></a>設定値と戻り値
+=======
+## <a name="settings-and-return-values"></a>設定値および戻り値
+>>>>>>> master
 
 文字列型 ( **String** ) の値を設定または取得します。
 

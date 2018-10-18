@@ -1,20 +1,14 @@
 ---
-title: ActiveConnection、CommandText、CommandTimeout プロパティの使用例 (VB)
-TOCTitle: ActiveConnection, CommandText, CommandTimeout, CommandType, Size, and Direction Properties Example (VB)
-ms:assetid: dc869f6b-3c48-9fc8-ae3a-5850ed5d3274
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250116(v=office.15)
-ms:contentKeyID: 48548140
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: c07f7f7cb1522f95a7ce64d0bc8e6b976ed8065f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477924"
+<<<<<<< ヘッド タイトル: ActiveConnection、CommandText、CommandTimeout プロパティの使用例 (VB) TOCTitle: ms:assetid の ActiveConnection、CommandText、CommandTimeout、CommandType、サイズ、方向プロパティの使用例 (VB)。dc869f6b-3c48-9fc8-ae3a-5850ed5d3274 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250116(v=office.15) ms:contentKeyID: 48548140 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
 # <a name="activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vb"></a>ActiveConnection、CommandText、CommandTimeout、CommandType、Size、および Direction プロパティの使用例 (VB)
 
+=== タイトル: ActiveConnection、CommandText、CommandTimeout プロパティの使用例 (VB) TOCTitle: ActiveConnection、CommandText、CommandTimeout、CommandType、サイズ、方向プロパティの使用例 (VB) の ms:assetid。dc869f6b-3c48-9fc8-ae3a-5850ed5d3274 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250116(v=office.15) ms:contentKeyID: 48548140 ms.date: 2018/10/17 mtps_version: v=office.15
+---
+
+# <a name="activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vb"></a>ActiveConnection、CommandText、CommandTimeout、CommandType、サイズ、方向プロパティの使用例 (VB)
+>>>>>>> master
 
 **適用されます**Access 2013 |。Office 2013
 

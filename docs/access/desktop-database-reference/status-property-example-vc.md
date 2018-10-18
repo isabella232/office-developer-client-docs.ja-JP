@@ -1,19 +1,13 @@
 ---
-title: Status プロパティの使用例 (VC++)
-TOCTitle: Status Property Example (VC++)
-ms:assetid: 72cb738d-8404-f9f3-3d79-9eb2541a608b
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249464(v=office.15)
-ms:contentKeyID: 48545618
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 1f2dfa41e11f448f9f302bbc25d9e12a582324f5
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476731"
+<<<<<<< ヘッド タイトル: 状態プロパティの使用例 (vc++) TOCTitle: 状態プロパティの使用例 (vc++) === タイトル: 状態プロパティの使用例 (vc++) TOCTitle: 状態プロパティの使用例 (vc++)
+>>>>>>> マスターの ms:assetid: 72cb738d-8404-f9f3-3d79-9eb2541a608b ms:mtpsurl: https://msdn.microsoft.com/library/JJ249464(v=office.15) ms:contentKeyID: 48545618 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="status-property-example-vc"></a>Status プロパティの使用例 (VC++)
+=======
+# <a name="status-property-example-vc"></a>状態プロパティの使用例 (vc++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

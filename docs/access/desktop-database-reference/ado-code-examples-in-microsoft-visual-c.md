@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249212(v=office.15)
 ms:contentKeyID: 48544550
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 714a8a13ab621a8cc4dee3ba3fb52995e1edd7c1
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1d56ba87c9b510bb0d2e81463453e72e4dd44639
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479570"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25604856"
 ---
 # <a name="ado-code-examples-in-microsoft-visual-c"></a>Microsoft Visual C++ での ADO コードの例
 
@@ -64,11 +64,15 @@ Microsoft Visual C++ で記述するときの ADO のメソッド、プロパテ
 
   - [Resync メソッドの使用例 (VJ++)](resync-method-example-vc.md)
 
-  - [Save メソッドおよび Open メソッドの使用例 (VC++)](save-and-open-methods-example-vc.md)
+  - [Save メソッドおよび Open メソッドの使用例 (VJ++)](save-and-open-methods-example-vc.md)
 
-  - [Seek メソッドおよび Index プロパティの使用例 (VC++)](seek-method-and-index-property-example-vc.md)
+<<<<<<< ヘッド
+  - [メソッドとプロパティの使用例のインデックスをシークします。](seek-method-and-index-property-example-vc.md)
+=======
+  - [メソッド、インデックスのシーク プロパティの使用例](seek-method-and-index-property-example-vc.md)
+>>>>>>> master
 
-  - [Supports メソッドの使用例 (VC++)](supports-method-example-vc.md)
+  - [Supports メソッドの使用例 (VJ++)](supports-method-example-vc.md)
 
   - [Update メソッドと CancelUpdate メソッドの使用例 (VJ++)](update-and-cancelupdate-methods-example-vc.md)
 
@@ -76,6 +80,7 @@ Microsoft Visual C++ で記述するときの ADO のメソッド、プロパテ
 
 **プロパティ**
 
+<<<<<<< ヘッド
   - [AbsolutePage プロパティ、PageCount プロパティ、および PageSize プロパティの使用例 (VJ++)](absolutepage-pagecount-and-pagesize-properties-example-vc.md)
 
   - [AbsolutePosition プロパティと CursorLocation プロパティの使用例 (VJ++)](absoluteposition-and-cursorlocation-properties-example-vc.md)
@@ -138,7 +143,72 @@ Microsoft Visual C++ で記述するときの ADO のメソッド、プロパテ
 
   - [Value プロパティの使用例 (VJ++)](value-property-example-vc.md)
 
-  - [Version プロパティの使用例 (VC++)](version-property-example-vc.md)
+  - [バージョン プロパティの使用例](version-property-example-vc.md)
+=======
+  - [AbsolutePage、PageCount、および PageSize プロパティの使用例](absolutepage-pagecount-and-pagesize-properties-example-vc.md)
+
+  - [AbsolutePosition と CursorLocation プロパティの使用例](absoluteposition-and-cursorlocation-properties-example-vc.md)
+
+  - [ActiveCommand プロパティの使用例](activecommand-property-example-vc.md)
+
+  - [ActiveConnection、CommandText、CommandTimeout、CommandType、サイズ、および方向のプロパティの例](activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vc.md)
+
+  - [ActualSize、DefinedSize プロパティの使用例](actualsize-and-definedsize-properties-example-vc.md)
+
+  - [属性および名前のプロパティの使用例](attributes-and-name-properties-example-vc.md)
+
+  - [Bof プロパティ、EOF、およびブックマークのプロパティの例](bof-eof-and-bookmark-properties-example-vc.md)
+
+  - [CacheSize プロパティの使用例](cachesize-property-example-vc.md)
+
+  - [ConnectionString、タイムアウト、および状態のプロパティの例](connectionstring-connectiontimeout-and-state-properties-example-vc.md)
+
+  - [Count プロパティの使用例](count-property-example-vc.md)
+
+  - [CursorType、LockType、および EditMode プロパティの使用例](cursortype-locktype-and-editmode-properties-example-vc.md)
+
+  - [説明、HelpContext、HelpFile、以下、番号、ソース、および SQLState プロパティの使用例](description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vc.md)
+
+  - [フィルターと RecordCount プロパティの使用例](filter-and-recordcount-properties-example-vc.md)
+
+  - [Seek メソッドおよび Index プロパティの使用例 (VC++)](seek-method-and-index-property-example-vc.md)
+
+  - [IsolationLevel とモードのプロパティの例](isolationlevel-and-mode-properties-example-vc.md)
+
+  - [アイテムのプロパティの使用例](item-property-example-vc.md)
+
+  - [MarshalOptions プロパティの使用例](marshaloptions-property-example-vc.md)
+
+  - [MaxRecords プロパティの使用例](maxrecords-property-example-vc.md)
+
+  - [NumericScale と Precision プロパティの使用例](ado-numericscale-and-precision-properties-example-vc.md)
+
+  - [プロパティの使用例を最適化します。](optimize-property-example-vc.md)
+
+  - [OriginalValue と UnderlyingValue プロパティの使用例](originalvalue-and-underlyingvalue-properties-example-vc.md)
+
+  - [Prepared プロパティの使用例](prepared-property-example-vc.md)
+
+  - [プロバイダーと DefaultDatabase プロパティの使用例](provider-and-defaultdatabase-properties-example-vc.md)
+
+  - [並べ替えプロパティの使用例](sort-property-example-vc.md)
+
+  - [ソース プロパティの使用例](source-property-example-vc.md)
+
+  - [状態プロパティの使用例](state-property-example-vc.md)
+
+  - [状態プロパティの使用例](status-property-example-vc.md)
+
+  - [StayInSync プロパティの使用例](stayinsync-property-example-vc.md)
+
+  - [プロパティの使用例 (フィールド) を入力します。](type-property-example-field-vc.md)
+
+  - [プロパティの使用例 (プロパティ) を入力します。](type-property-example-property-vc.md)
+
+  - [値プロパティの使用例](value-property-example-vc.md)
+
+  - [バージョン プロパティの使用例](version-property-example-vc.md)
+>>>>>>> master
 
 **その他**
 

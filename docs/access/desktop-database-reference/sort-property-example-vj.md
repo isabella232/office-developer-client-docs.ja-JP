@@ -1,19 +1,13 @@
 ---
-title: Sort プロパティの使用例 (VJ++)
-TOCTitle: Sort Property Example (VJ++)
-ms:assetid: 29f34b9d-a75a-baa3-2505-ebd70e71950f
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249051(v=office.15)
-ms:contentKeyID: 48543896
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: a36b70b0f57eb9f6380660e0f0d9f86184de7d73
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478661"
+<<<<<<< ヘッド タイトル: 並べ替えのプロパティの使用例 (vj++) TOCTitle: 並べ替えプロパティの使用例 (vj++) === タイトル: 並べ替えのプロパティの使用例 (vj++) TOCTitle: 並べ替えのプロパティの使用例 (vj++)
+>>>>>>> マスターの ms:assetid: 29f34b9d-a75a-baa3-2505-ebd70e71950f ms:mtpsurl: https://msdn.microsoft.com/library/JJ249051(v=office.15) ms:contentKeyID: 48543896 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="sort-property-example-vj"></a>Sort プロパティの使用例 (VJ++)
+=======
+# <a name="sort-property-example-vj"></a>並べ替えプロパティの使用例 (vj++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

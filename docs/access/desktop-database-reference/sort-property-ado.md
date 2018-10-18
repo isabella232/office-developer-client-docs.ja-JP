@@ -1,26 +1,24 @@
 ---
-title: Sort プロパティ (ADO)
-TOCTitle: Sort Property (ADO)
-ms:assetid: f2a39b7f-8b96-cd1a-8248-71f8b867454a
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250230(v=office.15)
-ms:contentKeyID: 48548652
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: f7e78357e2b662f5b94c2bbcbbe563e4001bcc56
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476884"
+<<<<<<< ヘッド タイトル: 並べ替えプロパティ (ADO) TOCTitle: 並べ替えプロパティ (ADO) === タイトル: 並べ替えのプロパティ (ADO) TOCTitle: プロパティ (ADO) を並べ替える
+>>>>>>> マスターの ms:assetid: f2a39b7f-8b96-cd1a-8248-71f8b867454a ms:mtpsurl: https://msdn.microsoft.com/library/JJ250230(v=office.15) ms:contentKeyID: 48548652 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="sort-property-ado"></a>Sort プロパティ (ADO)
+=======
+# <a name="sort-property-ado"></a>Sort プロパティ (ADO)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013
 
 [Recordset](recordset-object-ado.md) の並べ替えに使用するフィールド名、および各フィールドの並べ替え順序が昇順か降順かを示します。
 
+<<<<<<< ヘッド
 ## <a name="settings-and-return-values"></a>設定値と戻り値
+=======
+## <a name="settings-and-return-values"></a>設定値および戻り値
+>>>>>>> master
 
 **Recordset** の並べ替えに使用するフィールド名を示す文字列型 ( **String** ) の値を設定または取得します。各フィールド名はコンマで区切って指定し、フィールド名に続けて空白およびキーワードとして、フィールドを昇順で並べ替えることを示す **ASC** または降順で並べ替えることを示す **DESC** を指定できます。既定では、キーワードを指定しなかった場合、フィールドは昇順に並べ替えられます。
 

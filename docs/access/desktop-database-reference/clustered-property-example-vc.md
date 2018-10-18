@@ -1,19 +1,13 @@
 ---
-title: Clustered プロパティの使用例 (VC++)
-TOCTitle: Clustered Property Example (VC++)
-ms:assetid: a262e38e-ce44-66cb-1adf-fad8e6b840d1
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249748(v=office.15)
-ms:contentKeyID: 48546761
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 5be7f193c339c2c002e5b1806103fbcca5306666
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479415"
+<<<<<<< ヘッド タイトル: クラスター化されたプロパティの使用例 (vc++) TOCTitle: クラスター化されたプロパティの使用例 (vc++) === タイトル: クラスター化されたプロパティの使用例 (vc++) TOCTitle: クラスター化されたプロパティの使用例 (vc++)
+>>>>>>> マスターの ms:assetid: a262e38e-ce44-66cb-1adf-fad8e6b840d1 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249748(v=office.15) ms:contentKeyID: 48546761 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="clustered-property-example-vc"></a>Clustered プロパティの使用例 (VC++)
+=======
+# <a name="clustered-property-example-vc"></a>クラスター化プロパティの使用例 (vc++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

@@ -1,20 +1,14 @@
 ---
-title: ActiveConnection、CommandText、CommandTimeout プロパティの使用例 (JScript)
-TOCTitle: ActiveConnection, CommandText, CommandTimeout, CommandType, Size, and Direction Properties Example (JScript)
-ms:assetid: 2a79222c-4dba-9c5a-fff7-c8dd2711801f
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249056(v=office.15)
-ms:contentKeyID: 48543909
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 6057ddbe15e6ca24ec898aa2bd15799a22fa768d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478995"
+<<<<<<< ヘッド タイトル: ActiveConnection、CommandText、CommandTimeout プロパティの使用例 (JScript) TOCTitle: ActiveConnection、CommandText、CommandTimeout、CommandType、サイズ、方向プロパティの使用例 (JScript) ms:assetid: 2a79222c-4dba-9c5a-fff7-c8dd2711801f ms:mtpsurl: https://msdn.microsoft.com/library/JJ249056(v=office.15) ms:contentKeyID: 48543909 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
 # <a name="activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-jscript"></a>ActiveConnection、CommandText、CommandTimeout、CommandType、Size、および Direction プロパティの使用例 (JScript)
 
+=== タイトル: ActiveConnection、CommandText、CommandTimeout プロパティの使用例 (JScript) TOCTitle: ActiveConnection、CommandText、CommandTimeout、CommandType、サイズ、および方向のプロパティ ・ example(JScript) ・ ms:assetid。2a79222c-4dba-9c5a-fff7-c8dd2711801f ms:mtpsurl: https://msdn.microsoft.com/library/JJ249056(v=office.15) ms:contentKeyID: 48543909 ms.date: 2018/10/17 mtps_version: v=office.15
+---
+
+# <a name="activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-jscript"></a>ActiveConnection、CommandText、CommandTimeout、CommandType、サイズ、方向プロパティの使用例 (JScript)
+>>>>>>> master
 
 **適用されます**Access 2013 |。Office 2013
 

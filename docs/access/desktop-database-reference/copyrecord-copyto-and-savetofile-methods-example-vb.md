@@ -6,19 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249679(v=office.15)
 ms:contentKeyID: 48546479
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 314f79b77f71b93ff4ce7d25223a426e9237e5f3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 9c9476a2cae5a3df131ec8cc465866ae44189c1a
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478775"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25606277"
 ---
 # <a name="copyrecord-copyto-and-savetofile-methods-example-vb"></a>CopyRecord メソッド、CopyTo メソッド、および SaveToFile メソッドの使用例 (VB)
 
 
 **適用されます**Access 2013 |。Office 2013
 
-この例では、[Stream](stream-object-ado.md) オブジェクトまたは [Record](record-object-ado.md) オブジェクトを使用してファイルのコピーを作成する方法を示します。1 個のコピーが、インターネット発行用の Web フォルダーに作成されます。この例では、 [Stream Type](type-property-ado-stream.md)、 **Open** 、 [LoadFromFile](loadfromfile-method-ado.md)、[Record Open](open-method-ado-record.md) などのプロパティやメソッドも使用されています。
+<<<<<<< ヘッドの次の使用例は、[ストリーム](stream-object-ado.md)または[レコード](record-object-ado.md)のオブジェクトを使用してファイルのコピーを作成する方法を示します。 1 個のコピーが、インターネット発行用の Web フォルダーに作成されます。 この例では、 [Stream Type](type-property-ado-stream.md)、 **Open** 、 [LoadFromFile](loadfromfile-method-ado.md)、[Record Open](open-method-ado-record.md) などのプロパティやメソッドも使用されています。
+=== この例では、[ストリーム](stream-object-ado.md)または[レコード](record-object-ado.md)のオブジェクトを使用してファイルのコピーを作成する方法を示します。 インターネット パブリッシング用の web フォルダーに 1 つのコピーを作成するとします。 この例では、 [Stream Type](type-property-ado-stream.md)、 **Open** 、 [LoadFromFile](loadfromfile-method-ado.md)、[Record Open](open-method-ado-record.md) などのプロパティやメソッドも使用されています。
+>>>>>>> master
 
 ```vb 
  
@@ -69,7 +71,11 @@ Private Sub Form_Load()
  ' Save the second stream to a different path 
  objStream2.SaveToFile strStream2Path, adSaveCreateOverWrite 
  
+<<<<<<< HEAD
  ' Because strStreamPath is a Web Folder, open a Record on the URL 
+=======
+ ' Because strStreamPath is a web folder, open a Record on the URL 
+>>>>>>> master
  objRecord.Open "", strStreamURL 
  
  ' Display the Fields of the record 

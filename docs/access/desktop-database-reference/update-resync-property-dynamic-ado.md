@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248842(v=office.15)
 ms:contentKeyID: 48543166
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 16600f22084718a6b32656ebfc56d6a9be06c676
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f4eea391e99202eeb075d73daa1034dff2042e49
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477771"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25604422"
 ---
 # <a name="update-resync-property--dynamic-ado"></a>Update Resync プロパティ -- 動的 (ADO)
 
@@ -20,7 +20,11 @@ ms.locfileid: "25477771"
 
 [UpdateBatch](updatebatch-method-ado.md) メソッドの後に暗黙の [Resync](resync-method-ado.md) メソッド操作を実行するかどうかを指定し、実行する場合は、その作用範囲を指定します。
 
+<<<<<<< ヘッド
 ## <a name="settings-and-return-values"></a>設定値と戻り値
+=======
+## <a name="settings-and-return-values"></a>設定値および戻り値
+>>>>>>> master
 
 いずれかを取得または設定します[ADCPROP\_UPDATERESYNC\_列挙型](adcprop-updateresync-enum.md)の値です。
 

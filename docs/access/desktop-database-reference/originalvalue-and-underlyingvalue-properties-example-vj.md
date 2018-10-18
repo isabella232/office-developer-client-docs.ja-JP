@@ -1,19 +1,13 @@
 ---
-title: OriginalValue プロパティと UnderlyingValue プロパティの使用例 (VJ++)
-TOCTitle: OriginalValue and UnderlyingValue Properties Example (VJ++)
-ms:assetid: 622d0356-e33d-4378-df5e-8f15fa91d260
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249368(v=office.15)
-ms:contentKeyID: 48545233
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 6aaaa219fad82290a9e135edbf56998201d908d3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477507"
+<<<<<<< ヘッド タイトル: OriginalValue と UnderlyingValue プロパティの使用例 (vj++) TOCTitle: OriginalValue と UnderlyingValue プロパティの使用例 (vj++) === タイトル: OriginalValue と UnderlyingValue プロパティの使用例 (vj++)TOCTitle: OriginalValue と UnderlyingValue プロパティの使用例 (vj++)
+>>>>>>> マスターの ms:assetid: 622d0356-e33d-4378-df5e-8f15fa91d260 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249368(v=office.15) ms:contentKeyID: 48545233 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="originalvalue-and-underlyingvalue-properties-example-vj"></a>OriginalValue プロパティと UnderlyingValue プロパティの使用例 (VJ++)
+=======
+# <a name="originalvalue-and-underlyingvalue-properties-example-vj"></a>OriginalValue と UnderlyingValue プロパティの使用例 (vj++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

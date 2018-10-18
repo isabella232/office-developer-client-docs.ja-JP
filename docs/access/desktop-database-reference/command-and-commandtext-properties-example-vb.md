@@ -1,19 +1,13 @@
 ---
-title: Command プロパティと CommandText プロパティの使用例 (VB)
-TOCTitle: Command and CommandText Properties Example (VB)
-ms:assetid: 6bf35604-401b-0727-85e8-ac2ecda368df
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249425(v=office.15)
-ms:contentKeyID: 48545462
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 0614e0bdd539abf237b78cae42386a3cb070ca41
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478746"
+<<<<<<< ヘッド タイトル: コマンドと CommandText プロパティの使用例 (VB) TOCTitle: コマンドと CommandText プロパティの使用例 (VB) === タイトル: コマンドと CommandText プロパティの使用例 (VB) TOCTitle: コマンドと CommandTextプロパティの使用例 (VB)
+>>>>>>> マスターの ms:assetid: 6bf35604-401b-0727-85e8-ac2ecda368df ms:mtpsurl: https://msdn.microsoft.com/library/JJ249425(v=office.15) ms:contentKeyID: 48545462 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="command-and-commandtext-properties-example-vb"></a>Command プロパティと CommandText プロパティの使用例 (VB)
+=======
+# <a name="command-and-commandtext-properties-example-vb"></a>コマンドと CommandText プロパティの使用例 (VB)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

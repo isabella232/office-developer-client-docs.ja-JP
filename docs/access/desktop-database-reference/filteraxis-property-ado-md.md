@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249124(v=office.15)
 ms:contentKeyID: 48544172
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 912dfec595f718c2144e69b4fbd3af592f8b6d5b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 32ddf737ae0d6aa9a7b2daf8adc2a07707c91c0c
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477424"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25603057"
 ---
 # <a name="filteraxis-property-ado-md"></a>FilterAxis プロパティ (ADO MD)
 
@@ -20,7 +20,11 @@ ms.locfileid: "25477424"
 
 現在のセルセットのフィルター情報を示します。
 
+<<<<<<< ヘッド
 ## <a name="return-values"></a>戻り値
+=======
+## <a name="return-values"></a>戻り値
+>>>>>>> master
 
 [Axis](axis-object-ado-md.md) オブジェクトを取得します。値の取得のみが可能です。
 

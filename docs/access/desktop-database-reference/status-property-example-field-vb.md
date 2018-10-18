@@ -1,19 +1,13 @@
 ---
-title: Status プロパティの使用例 (Field) (VB)
-TOCTitle: Status Property Example (Field) (VB)
-ms:assetid: 1dc2807f-f469-de97-1280-4b1984b271b4
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248969(v=office.15)
-ms:contentKeyID: 48543601
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: ed9f0c90e994b221762588ab941174dbb9c4c764
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479642"
+<<<<<<< ヘッド タイトル: 状態プロパティの使用例 (VB) の (フィールド) TOCTitle: 状態プロパティの使用例 (VB) の (フィールド) === タイトル: 状態プロパティの使用例 (VB) の (フィールド) TOCTitle: 状態プロパティの使用例 (VB) の (フィールド)
+>>>>>>> マスターの ms:assetid: 1dc2807f-f469-de97-1280-4b1984b271b4 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248969(v=office.15) ms:contentKeyID: 48543601 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="status-property-example-field-vb"></a>Status プロパティの使用例 (Field) (VB)
+=======
+# <a name="status-property-example-field-vb"></a>状態プロパティの使用例 (VB) の (フィールド)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

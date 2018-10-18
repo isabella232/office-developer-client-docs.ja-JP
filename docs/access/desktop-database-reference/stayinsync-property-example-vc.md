@@ -1,19 +1,13 @@
 ---
-title: StayInSync プロパティの使用例 (VC++)
-TOCTitle: StayInSync Property Example (VC++)
-ms:assetid: 42c389a8-e6d5-45f4-0442-1b2a2422dcbe
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249197(v=office.15)
-ms:contentKeyID: 48544485
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 42203001135e65056ff5370637d4b5bea3f7a515
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477316"
+<<<<<<< ヘッド タイトル: StayInSync プロパティの使用例 (vc++) TOCTitle: StayInSync プロパティの使用例 (vc++) === タイトル: StayInSync プロパティの使用例 (vc++) TOCTitle: StayInSync プロパティの使用例 (vc++)
+>>>>>>> マスターの ms:assetid: 42c389a8-e6d5-45f4-0442-1b2a2422dcbe ms:mtpsurl: https://msdn.microsoft.com/library/JJ249197(v=office.15) ms:contentKeyID: 48544485 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="stayinsync-property-example-vc"></a>StayInSync プロパティの使用例 (VC++)
+=======
+# <a name="stayinsync-property-example-vc"></a>StayInSync プロパティの使用例 (vc++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

@@ -1,19 +1,13 @@
 ---
-title: IndexNulls プロパティの使用例 (VC++)
-TOCTitle: IndexNulls Property Example (VC++)
-ms:assetid: 05d1f8b3-ae70-cca5-d60d-af55f5f7c13a
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248813(v=office.15)
-ms:contentKeyID: 48543039
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 28e0c1e1f7fb92f5e6752f732c275fff609252d3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478509"
+<<<<<<< ヘッド タイトル: IndexNulls プロパティの使用例 (vc++) TOCTitle: IndexNulls プロパティの使用例 (vc++) === タイトル: IndexNulls プロパティの使用例 (vc++) TOCTitle: IndexNulls プロパティの使用例 (vc++)
+>>>>>>> マスターの ms:assetid: 05d1f8b3-ae70-cca5-d60d-af55f5f7c13a ms:mtpsurl: https://msdn.microsoft.com/library/JJ248813(v=office.15) ms:contentKeyID: 48543039 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="indexnulls-property-example-vc"></a>IndexNulls プロパティの使用例 (VC++)
+=======
+# <a name="indexnulls-property-example-vc"></a>IndexNulls プロパティの使用例 (vc++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

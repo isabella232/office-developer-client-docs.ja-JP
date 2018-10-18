@@ -1,19 +1,13 @@
 ---
-title: Item プロパティの使用例 (VB)
-TOCTitle: Item Property Example (VB)
-ms:assetid: e8d17560-8a0d-7045-d8dc-728a85037c0d
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250179(v=office.15)
-ms:contentKeyID: 48548430
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 93c0780ba601516f975d51aca89265c4d2a648e9
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478470"
+<<<<<<< ヘッド タイトル: アイテムのプロパティの使用例 (VB) TOCTitle: アイテムのプロパティの使用例 (VB) === タイトル: アイテムのプロパティの使用例 (VB) TOCTitle: アイテムのプロパティの使用例 (VB)
+>>>>>>> マスターの ms:assetid: e8d17560-8a0d-7045-d8dc-728a85037c0d ms:mtpsurl: https://msdn.microsoft.com/library/JJ250179(v=office.15) ms:contentKeyID: 48548430 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="item-property-example-vb"></a>Item プロパティの使用例 (VB)
+=======
+# <a name="item-property-example-vb"></a>アイテム プロパティの使用例 (VB)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

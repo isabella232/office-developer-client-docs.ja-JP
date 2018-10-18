@@ -1,19 +1,13 @@
 ---
-title: DeleteRule プロパティの使用例 (VB)
-TOCTitle: DeleteRule Property Example (VB)
-ms:assetid: 354e00b6-cecb-1132-6923-fc9e8853fa0e
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249114(v=office.15)
-ms:contentKeyID: 48544142
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: bdfcbd581c39faf4344701d322e47999c77b7bca
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478656"
+<<<<<<< ヘッド タイトル: DeleteRule プロパティの使用例 (VB) TOCTitle: DeleteRule プロパティの使用例 (VB) === タイトル: DeleteRule プロパティの使用例 (VB) TOCTitle: DeleteRule プロパティの使用例 (VB)
+>>>>>>> マスターの ms:assetid: 354e00b6-cecb-1132-6923-fc9e8853fa0e ms:mtpsurl: https://msdn.microsoft.com/library/JJ249114(v=office.15) ms:contentKeyID: 48544142 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="deleterule-property-example-vb"></a>DeleteRule プロパティの使用例 (VB)
+=======
+# <a name="deleterule-property-example-vb"></a>DeleteRule プロパティの使用例 (VB)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

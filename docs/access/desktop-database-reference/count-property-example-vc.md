@@ -1,19 +1,13 @@
 ---
-title: Count プロパティの使用例 (VC++)
-TOCTitle: Count Property Example (VC++)
-ms:assetid: 5e3d817b-05bf-c96e-67ba-c41f06c367af
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249340(v=office.15)
-ms:contentKeyID: 48545134
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 9e2326e9773ee8ecb6959bfbc0c99ef2f0780391
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476474"
+<<<<<<< ヘッド タイトル: Count プロパティの使用例 (vc++) TOCTitle: Count プロパティの使用例 (vc++) === タイトル: Count プロパティの使用例 (vc++) TOCTitle: Count プロパティの使用例 (vc++)
+>>>>>>> マスターの ms:assetid: 5e3d817b-05bf-c96e-67ba-c41f06c367af ms:mtpsurl: https://msdn.microsoft.com/library/JJ249340(v=office.15) ms:contentKeyID: 48545134 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="count-property-example-vc"></a>Count プロパティの使用例 (VC++)
+=======
+# <a name="count-property-example-vc"></a>Count プロパティの使用例 (vc++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

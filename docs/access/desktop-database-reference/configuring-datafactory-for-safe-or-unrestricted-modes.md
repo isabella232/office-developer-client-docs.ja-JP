@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248915(v=office.15)
 ms:contentKeyID: 48543400
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: abb461473d15f163fac6ea00f2af5d39f7b40d0a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a3f551e4c377a0c24a0b733ff094e19d1b75d725
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479273"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25606403"
 ---
 # <a name="configuring-datafactory-for-safe-or-unrestricted-modes"></a>DataFactory をセーフ モードまたはアクセス制限なしモードで構成する
 
@@ -30,7 +30,9 @@ ms.locfileid: "25479273"
 
 安全に構成を行うために、レジストリ ファイル handsafe.reg がハンドラー レジストリ エントリのセットアップ用に用意されています。セーフ モードで実行するには、handsafe.reg を実行します。アクセス制限なしの構成を行うためには、レジストリ ファイル handunsf.reg がハンドラー レジストリ エントリのセットアップ用に用意されています。アクセス制限なしモードで実行するには、handunsf.reg を実行します。
 
-handsafe.reg または handunsf.reg のいずれかを実行した場合は、コマンド ウィンドウに「NET STOP W3SVC」コマンドおよび「NET START W3SVC」コマンドを入力して、Web サーバーの World Wide Web Publishing Service を停止および再起動する必要があります。
+<<<<<<< ヘッド handsafe.reg または handunsf.reg というのいずれかを実行した後、停止して Web サーバー上の World Wide Web 発行サービスを再起動するには、コマンド ウィンドウで次のコマンドを入力:「NET W3SVC を停止」と「ネット スタート W3SVC」です。
+=== Handsafe.reg または handunsf.reg というのいずれかを実行して後に、する必要がありますを停止して web サーバー上の World Wide Web 発行サービスを再起動するには、コマンド ウィンドウで次のコマンドを入力:「NET W3SVC を停止」と「ネット スタート W3SVC」です。
+>>>>>>> master
 
 RDS のカスタム ハンドラー機能の使用方法の詳細については、技術記事「Using the Customization Handler Feature in RDS 2.1」 (英語) を参照してください。
 

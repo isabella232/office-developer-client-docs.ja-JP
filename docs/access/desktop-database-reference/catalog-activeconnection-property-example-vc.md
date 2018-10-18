@@ -1,19 +1,13 @@
 ---
-title: Catalog の ActiveConnection プロパティの使用例 (VC++)
-TOCTitle: Catalog ActiveConnection Property Example (VC++)
-ms:assetid: 0e72ff1c-b894-a440-67cf-bba091e7cb8b
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248861(v=office.15)
-ms:contentKeyID: 48543246
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 30eea3d77121712b33881cad13d3445de1467c81
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476936"
+<<<<<<< ヘッド タイトル: カタログ ActiveConnection プロパティの使用例 (vc++) TOCTitle: カタログ ActiveConnection プロパティの使用例 (vc++) === タイトル: カタログの ActiveConnection プロパティの使用例 (vc++) TOCTitle: カタログの ActiveConnectionプロパティの使用例 (vc++)
+>>>>>>> マスターの ms:assetid: 0e72ff1c-b894-a440-67cf-bba091e7cb8b ms:mtpsurl: https://msdn.microsoft.com/library/JJ248861(v=office.15) ms:contentKeyID: 48543246 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="catalog-activeconnection-property-example-vc"></a>Catalog の ActiveConnection プロパティの使用例 (VC++)
+=======
+# <a name="catalog-activeconnection-property-example-vc"></a>カタログの ActiveConnection プロパティの使用例 (vc++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

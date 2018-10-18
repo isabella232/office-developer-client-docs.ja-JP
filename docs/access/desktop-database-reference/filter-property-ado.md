@@ -1,26 +1,24 @@
 ---
-title: Filter プロパティ (ADO)
-TOCTitle: Filter Property (ADO)
-ms:assetid: 5abc528a-a6ee-34de-5d44-a3249194b0a0
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249314(v=office.15)
-ms:contentKeyID: 48545053
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 16c42ab071faea84db114a184ecd0db34bfd6074
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479305"
+<<<<<<< ヘッド タイトル: フィルター プロパティ (ADO) TOCTitle: フィルター プロパティ (ADO) === タイトル: Filter プロパティ (ADO) TOCTitle: Filter プロパティ (ADO)
+>>>>>>> マスターの ms:assetid: 5abc528a-a6ee-34de-5d44-a3249194b0a0 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249314(v=office.15) ms:contentKeyID: 48545053 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="filter-property-ado"></a>Filter プロパティ (ADO)
+=======
+# <a name="filter-property-ado"></a>Filter プロパティ (ADO)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013
 
 [Recordset](recordset-object-ado.md) のデータに対するフィルターを示します。
 
+<<<<<<< ヘッド
 ## <a name="settings-and-return-values"></a>設定値と戻り値
+=======
+## <a name="settings-and-return-values"></a>設定値および戻り値
+>>>>>>> master
 
 次の中の 1 つを含む、バリアント型 ( **Variant** ) の値を設定または取得します。
 

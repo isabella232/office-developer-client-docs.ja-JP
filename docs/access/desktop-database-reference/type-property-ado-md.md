@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249230(v=office.15)
 ms:contentKeyID: 48544671
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f3ea67b96e24f01e167ca693dff356c595005904
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: bf8efb435fb11a909b5deea7b1ed6891811a670e
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476222"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25603484"
 ---
 # <a name="type-property-ado-md"></a>Type プロパティ (ADO MD)
 
@@ -20,7 +20,11 @@ ms.locfileid: "25476222"
 
 現在のメンバーの種類を示します。
 
+<<<<<<< ヘッド
 ## <a name="return-values"></a>戻り値
+=======
+## <a name="return-values"></a>戻り値
+>>>>>>> master
 
 [MemberTypeEnum](membertypeenum.md) の値を取得します。値の取得のみが可能です。
 

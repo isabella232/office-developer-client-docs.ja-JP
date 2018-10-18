@@ -1,26 +1,24 @@
 ---
-title: Bookmark プロパティ (ADO)
-TOCTitle: Bookmark Property (ADO)
-ms:assetid: 101b2ce1-21d8-aa79-e530-20f9d1c73fc8
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248870(v=office.15)
-ms:contentKeyID: 48543287
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: a89be0ad75ea84faa9fe17834260832070dd7578
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477880"
+<<<<<<< ヘッド タイトル: ブックマーク プロパティ (ADO) TOCTitle: ブックマーク プロパティ (ADO) === タイトル: Bookmark プロパティ (ADO) TOCTitle: Bookmark プロパティ (ADO)
+>>>>>>> マスターの ms:assetid: 101b2ce1-21d8-aa79-e530-20f9d1c73fc8 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248870(v=office.15) ms:contentKeyID: 48543287 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="bookmark-property-ado"></a>Bookmark プロパティ (ADO)
+=======
+# <a name="bookmark-property-ado"></a>Bookmark プロパティ (ADO)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013
 
 [Recordset](recordset-object-ado.md) オブジェクトでカレント レコードを一意に識別するブックマークを示します。または、 **Recordset** オブジェクトのカレント レコードを、有効なブックマークで識別されるレコードに設定します。
 
+<<<<<<< ヘッド
 ## <a name="settings-and-return-values"></a>設定値と戻り値
+=======
+## <a name="settings-and-return-values"></a>設定値および戻り値
+>>>>>>> master
 
 有効なブックマークとして評価されるバリアント型 ( **Variant** ) の式を設定または取得します。
 

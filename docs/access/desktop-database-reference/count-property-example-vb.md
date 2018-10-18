@@ -1,19 +1,13 @@
 ---
-title: Count プロパティの使用例 (VB)
-TOCTitle: Count Property Example (VB)
-ms:assetid: 9fea66f7-a4ed-fe2e-c199-672b910fef47
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249734(v=office.15)
-ms:contentKeyID: 48546695
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: c8d74444a5d25e20fdfe1d6f3c938788b7025199
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477301"
+<<<<<<< ヘッド タイトル: Count プロパティの使用例 (VB) TOCTitle: Count プロパティの使用例 (VB) === タイトル: Count プロパティの使用例 (VB) TOCTitle: Count プロパティの使用例 (VB)
+>>>>>>> マスターの ms:assetid: 9fea66f7-a4ed-fe2e-c199-672b910fef47 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249734(v=office.15) ms:contentKeyID: 48546695 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="count-property-example-vb"></a>Count プロパティの使用例 (VB)
+=======
+# <a name="count-property-example-vb"></a>Count プロパティの使用例 (VB)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

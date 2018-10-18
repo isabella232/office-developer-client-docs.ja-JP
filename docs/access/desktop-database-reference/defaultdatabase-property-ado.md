@@ -1,26 +1,24 @@
 ---
-title: DefaultDatabase プロパティ (ADO)
-TOCTitle: DefaultDatabase Property (ADO)
-ms:assetid: a35c5631-f9d9-e51f-950b-e52169830d94
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249757(v=office.15)
-ms:contentKeyID: 48546784
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 136e6bc0d68aac987a331ce20b8fca36a72afa73
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478215"
+<<<<<<< ヘッド タイトル: DefaultDatabase プロパティ (ADO) TOCTitle: DefaultDatabase プロパティ (ADO) === タイトル: DefaultDatabase プロパティ (ADO) TOCTitle: DefaultDatabase プロパティ (ADO)
+>>>>>>> マスターの ms:assetid: a35c5631-f9d9-e51f-950b-e52169830d94 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249757(v=office.15) ms:contentKeyID: 48546784 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="defaultdatabase-property-ado"></a>DefaultDatabase プロパティ (ADO)
+=======
+# <a name="defaultdatabase-property-ado"></a>DefaultDatabase プロパティ (ADO)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013
 
 [Connection](connection-object-ado.md) オブジェクトの既定のデータベースを示します。
 
+<<<<<<< ヘッド
 ## <a name="settings-and-return-values"></a>設定値と戻り値
+=======
+## <a name="settings-and-return-values"></a>設定値および戻り値
+>>>>>>> master
 
 プロバイダーで使用可能なデータベースの名前に評価される文字列型 ( **String** ) の値を設定または取得します。
 

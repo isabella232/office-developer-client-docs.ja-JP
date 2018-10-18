@@ -1,19 +1,13 @@
 ---
-title: DateCreated プロパティと DateModified プロパティの使用例 (VB)
-TOCTitle: DateCreated and DateModified Properties Example (VB)
-ms:assetid: 5afdb5a9-394f-c38f-83a4-ae7017673c5e
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249316(v=office.15)
-ms:contentKeyID: 48545063
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 31054def63b15e3beb5e6a3013596d192db6932f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476594"
+<<<<<<< ヘッド タイトル: 作成日時と最終更新日時プロパティの使用例 (VB) TOCTitle: 作成日時と最終更新日時プロパティの使用例 (VB) === タイトル: 作成日時と最終更新日時プロパティの使用例 (VB) TOCTitle: 作成日時と最終更新日時プロパティの使用例 (VB)
+>>>>>>> マスターの ms:assetid: 5afdb5a9-394f-c38f-83a4-ae7017673c5e ms:mtpsurl: https://msdn.microsoft.com/library/JJ249316(v=office.15) ms:contentKeyID: 48545063 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="datecreated-and-datemodified-properties-example-vb"></a>DateCreated プロパティと DateModified プロパティの使用例 (VB)
+=======
+# <a name="datecreated-and-datemodified-properties-example-vb"></a>作成日時と最終更新日時プロパティの使用例 (VB)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

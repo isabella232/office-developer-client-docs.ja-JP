@@ -1,19 +1,13 @@
 ---
-title: MaxRecords プロパティの使用例 (VC++)
-TOCTitle: MaxRecords Property Example (VC++)
-ms:assetid: 007936cf-a91c-c447-69f2-8286f3f868e6
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248778(v=office.15)
-ms:contentKeyID: 48542910
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 09419dab570e05427ac5f30c002c596d5dc862c0
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476197"
+<<<<<<< ヘッド タイトル: MaxRecords プロパティの使用例 (vc++) TOCTitle: MaxRecords プロパティの使用例 (vc++) === タイトル: MaxRecords プロパティの使用例 (vc++) TOCTitle: MaxRecords プロパティの使用例 (vc++)
+>>>>>>> マスターの ms:assetid: 007936cf-a91c-c447-69f2-8286f3f868e6 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248778(v=office.15) ms:contentKeyID: 48542910 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="maxrecords-property-example-vc"></a>MaxRecords プロパティの使用例 (VC++)
+=======
+# <a name="maxrecords-property-example-vc"></a>MaxRecords プロパティの使用例 (vc++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

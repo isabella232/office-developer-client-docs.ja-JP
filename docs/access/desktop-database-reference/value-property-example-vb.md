@@ -1,19 +1,13 @@
 ---
-title: Value プロパティの使用例 (VB)
-TOCTitle: Value Property Example (VB)
-ms:assetid: c2319a14-e86f-6dc1-b203-fd5f35ffa04f
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249947(v=office.15)
-ms:contentKeyID: 48547547
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 1f46122495af58c15788d58e9c3f83eaee9c9a09
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479237"
+<<<<<<< ヘッド タイトル: 値のプロパティの使用例 (VB) TOCTitle: 値のプロパティの使用例 (VB) === タイトル: 値プロパティの使用例 (VB) TOCTitle: 値プロパティの使用例 (VB)
+>>>>>>> マスターの ms:assetid: c2319a14-e86f-6dc1-b203-fd5f35ffa04f ms:mtpsurl: https://msdn.microsoft.com/library/JJ249947(v=office.15) ms:contentKeyID: 48547547 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="value-property-example-vb"></a>Value プロパティの使用例 (VB)
+=======
+# <a name="value-property-example-vb"></a>値プロパティの使用例 (VB)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

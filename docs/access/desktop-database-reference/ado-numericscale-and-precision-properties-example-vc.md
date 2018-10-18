@@ -1,19 +1,13 @@
 ---
-title: ADO NumericScale プロパティと Precision プロパティの使用例 (VC++)
-TOCTitle: NumericScale and Precision Properties Example (VC++)
-ms:assetid: f0bc84c6-5563-509c-9b4e-3fb45c70a04e
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250225(v=office.15)
-ms:contentKeyID: 48548611
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 79621765e310ba88e7923902c027c147c92eb9e9
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479147"
+<<<<<<< ヘッド タイトル: ADO NumericScale と Precision プロパティの使用例 (vc++) TOCTitle: NumericScale と Precision プロパティの使用例 (vc++) === タイトル: ADO NumericScale と Precision プロパティの使用例 (vc++) TOCTitle。NumericScale と Precision プロパティの使用例 (vc++)
+>>>>>>> マスターの ms:assetid: f0bc84c6-5563-509c-9b4e-3fb45c70a04e ms:mtpsurl: https://msdn.microsoft.com/library/JJ250225(v=office.15) ms:contentKeyID: 48548611 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="ado-numericscale-and-precision-properties-example-vc"></a>ADO NumericScale プロパティと Precision プロパティの使用例 (VC++)
+=======
+# <a name="ado-numericscale-and-precision-properties-example-vc"></a>ADO NumericScale と Precision プロパティの使用例 (vc++)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

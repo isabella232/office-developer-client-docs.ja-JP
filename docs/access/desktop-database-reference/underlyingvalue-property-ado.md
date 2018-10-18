@@ -1,19 +1,13 @@
 ---
-title: UnderlyingValue プロパティ (ADO)
-TOCTitle: UnderlyingValue Property (ADO)
-ms:assetid: f84f4c1c-2bd4-a725-3575-ed063ead13c8
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250262(v=office.15)
-ms:contentKeyID: 48548782
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 10140d0cc4105ed46ddaaf48e4c827f364adc90c
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478355"
+<<<<<<< ヘッド タイトル: UnderlyingValue プロパティ (ADO) TOCTitle: UnderlyingValue プロパティ (ADO) === タイトル: UnderlyingValue プロパティ (ADO) TOCTitle: UnderlyingValue プロパティ (ADO)
+>>>>>>> マスターの ms:assetid: f84f4c1c-2bd4-a725-3575-ed063ead13c8 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250262(v=office.15) ms:contentKeyID: 48548782 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="underlyingvalue-property-ado"></a>UnderlyingValue プロパティ (ADO)
+=======
+# <a name="underlyingvalue-property-ado"></a>UnderlyingValue プロパティ (ADO)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013
@@ -22,7 +16,11 @@ ms.locfileid: "25478355"
 
 データベース内の [Field](field-object-ado.md) オブジェクトの現在の値を示します。
 
+<<<<<<< ヘッド
 ## <a name="return-value"></a>戻り値
+=======
+## <a name="return-value"></a>戻り値
+>>>>>>> master
 
 **Field** の値を示すバリアント型 ( **Variant** ) の値を返します。
 

@@ -1,25 +1,23 @@
 ---
-title: OriginalValue プロパティ (ADO)
-TOCTitle: OriginalValue Property (ADO)
-ms:assetid: 02ffc728-4692-d439-e2a6-2f02cca53a71
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248798(v=office.15)
-ms:contentKeyID: 48542974
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 40c93066de525eaafa9c1c40a7d7c5d543d42f2d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478756"
+<<<<<<< ヘッド タイトル: OriginalValue プロパティ (ADO) TOCTitle: OriginalValue プロパティ (ADO) === タイトル: OriginalValue プロパティ (ADO) TOCTitle: OriginalValue プロパティ (ADO)
+>>>>>>> マスターの ms:assetid: 02ffc728-4692-d439-e2a6-2f02cca53a71 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248798(v=office.15) ms:contentKeyID: 48542974 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="originalvalue-property-ado"></a>OriginalValue プロパティ (ADO)
+=======
+# <a name="originalvalue-property-ado"></a>OriginalValue プロパティ (ADO)
+>>>>>>> master
 
 **適用されます**Access 2013 |。Office 2013
 
 変更が行われる前のレコードに存在していた [Field](field-object-ado.md) の値を示します。
 
+<<<<<<< ヘッド
 ## <a name="return-value"></a>戻り値
+=======
+## <a name="return-value"></a>戻り値
+>>>>>>> master
 
 変更前のフィールドの値を表すバリアント型 ( **Variant** ) の値を返します。
 

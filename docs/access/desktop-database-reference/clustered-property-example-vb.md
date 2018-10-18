@@ -1,19 +1,13 @@
 ---
-title: Clustered プロパティの使用例 (VB)
-TOCTitle: Clustered Property Example (VB)
-ms:assetid: 1065622d-9473-209a-95be-c4b0ab5b687a
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248872(v=office.15)
-ms:contentKeyID: 48543293
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: f4cf09b0e8393eca74b1ed8fbaca8591a99103b2
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478557"
+<<<<<<< ヘッド タイトル: クラスター化されたプロパティの使用例 (VB) TOCTitle: クラスター化されたプロパティの使用例 (VB) === タイトル: クラスター化されたプロパティの使用例 (VB) TOCTitle: クラスター化されたプロパティの使用例 (VB)
+>>>>>>> マスターの ms:assetid: 1065622d-9473-209a-95be-c4b0ab5b687a ms:mtpsurl: https://msdn.microsoft.com/library/JJ248872(v=office.15) ms:contentKeyID: 48543293 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="clustered-property-example-vb"></a>Clustered プロパティの使用例 (VB)
+=======
+# <a name="clustered-property-example-vb"></a>クラスター化プロパティの使用例 (VB)
+>>>>>>> master
 
 
 **適用されます**Access 2013 |。Office 2013

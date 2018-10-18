@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249251(v=office.15)
 ms:contentKeyID: 48544757
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8890e9dba072e2c35d9773ea389701bb7d631ee7
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e1536b1a03ed0e7c873b2db06e76ee9b505ee00c
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479174"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25604429"
 ---
 # <a name="system-requirements-for-the-address-book-application"></a>Address Book アプリケーションの必要システム
 
@@ -22,13 +22,15 @@ Address Book サンプル アプリケーションをセットアップするた
 
 **ソフトウェアの要件**
 
-この Web アプリケーションを実行するには、サーバー コンピューターに次のソフトウェアが必要です。
+<<<<<<< ヘッドがこの Web アプリケーションを実行するサーバー コンピューターのソフトウェア要件が含まれます: === この web アプリケーションを実行するサーバー コンピューターのソフトウェア要件が含まれます。
+>>>>>>> master
 
   - Microsoft Windows NT® Server 4.0 Service Pack 3 以降または Microsoft Windows® 2000 Server
 
   - Active Server Pages を含む Microsoft Internet Information Services (IIS) 3.0 以降
 
-この Web アプリケーションを実行するには、クライアント コンピューターに次のソフトウェアが必要です。
+<<<<<<< ヘッドは、この Web アプリケーションを実行するため、クライアント コンピューターのソフトウェア要件が含まれます: === この web アプリケーションを実行するため、クライアント コンピューターのソフトウェア要件が含まれます。
+>>>>>>> master
 
   - Microsoft Internet Explorer 4.0 以降
 

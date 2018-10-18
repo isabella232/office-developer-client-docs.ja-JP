@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm122943
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: fad18c6e7a9ca185e15598b532bbc6de4e5b4f9a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 4fe2bceb53b835d4c8adab1a1550185c3a7a122a
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479009"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25606396"
 ---
 # <a name="setfilter-macro-action"></a>"SetFilter/フィルターの実行" マクロ アクション
 
@@ -40,12 +40,20 @@ ms.locfileid: "25479009"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Filter Name</p></td>
+<td><p>Filter Name/フィルター名</p></td>
+<<<<<<< ヘッド
 <td><p>指定した場合は、クエリの名前、またはクエリとして保存されているフィルターの名前です。 クライアント データベースでこの引数または WhereCondition 引数が必要です。 Web データベースでは、この引数は使用できません。</p></td>
 </tr>
 <tr class="even">
 <td><p>Where Condition</p></td>
 <td><p>指定した場合は、データシート、フォーム、レポート、またはテーブルでレコードを制限する SQL WHERE 句を示します。Web データベースの場合、この引数は必須です。</p></td>
+=======
+<td><p>指定した場合は、クエリの名前、またはクエリとして保存されているフィルターの名前です。 クライアント データベースでこの引数または WhereCondition 引数が必要です。 Web データベースでこの引数は使用できません。</p></td>
+</tr>
+<tr class="even">
+<td><p>Where Condition</p></td>
+<td><p>指定した場合は、データシート、フォーム、レポート、またはテーブルでレコードを制限する SQL WHERE 句を示します。 Web データベースでは、この引数が必要です。</p></td>
+>>>>>>>マスター
 </tr>
 <tr class="odd">
 <td><p>コントロール名</p></td>

@@ -1,25 +1,23 @@
 ---
-title: ParentURL プロパティ (ADO)
-TOCTitle: ParentURL Property (ADO)
-ms:assetid: ec7ec476-6f9e-8486-fe02-74995975df5c
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250200(v=office.15)
-ms:contentKeyID: 48548517
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 0fb5e8683bcf7ebe0905b21f169f71834ed424e4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479599"
+<<<<<<< ヘッド タイトル: ParentURL プロパティ (ADO) TOCTitle: ParentURL プロパティ (ADO) === タイトル: ParentURL プロパティ (ADO) TOCTitle: ParentURL プロパティ (ADO)
+>>>>>>> マスターの ms:assetid: ec7ec476-6f9e-8486-fe02-74995975df5c ms:mtpsurl: https://msdn.microsoft.com/library/JJ250200(v=office.15) ms:contentKeyID: 48548517 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
+
+<<<<<<< ヘッド
 # <a name="parenturl-property-ado"></a>ParentURL プロパティ (ADO)
+=======
+# <a name="parenturl-property-ado"></a>ParentURL プロパティ (ADO)
+>>>>>>> master
 
 **適用されます**Access 2013 |。Office 2013
 
 現在の [Record](record-object-ado.md) オブジェクトの親 **Record** を示す絶対 URL 文字列を示します。
 
+<<<<<<< ヘッド
 ## <a name="return-value"></a>戻り値
+=======
+## <a name="return-value"></a>戻り値
+>>>>>>> master
 
 親 **Record** の URL を示す文字列型 ( **String** ) の値を返します。
 
