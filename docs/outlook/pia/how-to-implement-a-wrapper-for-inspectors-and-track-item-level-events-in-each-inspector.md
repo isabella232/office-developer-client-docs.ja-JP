@@ -30,7 +30,7 @@ Visual Studio を使用してこのコード例をテストする場合、**Micr
 using Outlook = Microsoft.Office.Interop.Outlook;
 ```
 
-次のコード例では、 [NewInspector(Inspector)](https://msdn.microsoft.com/library/bb610594\(v=office.15\)) イベントは、新しいインスペクター ウィンドウの作成後、それが表示される前に発生しています。 新しいインスペクター ウィンドウは、ユーザーの操作でも作成できます。 **Connect** クラスで insepctors という名前のクラス レベルのインスタンス変数が 宣言され、**NewInspector** イベントが接続されます。 
+次のコード例では、 [NewInspector(Inspector)](https://msdn.microsoft.com/library/bb610594\(v=office.15\)) イベントは、新しいインスペクター ウィンドウの作成後、それが表示される前に発生しています。 新しいインスペクター ウィンドウは、ユーザーの操作でも作成できます。 **Connect** クラスで insepctors という名前のクラス レベルのインスタンス変数が宣言され、**NewInspector** イベントが接続されます。 
 
 inspectors\_NewInspector メソッドでは、新しいインスペクター ウィンドウが inspectorWindows リストが既にあるかどうかを **FindOutlookInspector** メソッドがチェックします。 FindOutlookInspector により inspectorWindows 内で **Inspector** オブジェクトが検出されない場合、**AddInspector** メソッドは **OutlookInspector** クラスのインスタンスを inspectorWindows に追加します。 **OutlookInspector** クラスを使用して、このインスペクター ウィンドウでイベントを発生させることができます。 2 番目のコード例に **OutlookInspector** クラスの実装を示します。
 
@@ -86,7 +86,7 @@ class Connect
 }
 ```
 
-次のコード例では、**OutlookInspector** クラスの実装が行われます。 このクラスを使用して、上記のコード例で示したインスペクター ウィンドウでイベントを発生させます。 複数のインスペクター ウィンドウを同時に開いておくことができます。 [Open](https://msdn.microsoft.com/library/bb644296\(v=office.15\))、[PropertyChange](https://msdn.microsoft.com/library/bb647794\(v=office.15\))、[CustomPropertyChange](https://msdn.microsoft.com/library/bb645015\(v=office.15\)) などのアイテム レベルのイベントは、このクラス コンストラクターで接続することにより追跡されます。 [ContactItem](https://msdn.microsoft.com/library/bb644956\(v=office.15\)) オブジェクト用の [Close](https://msdn.microsoft.com/library/bb645009\(v=office.15\)) イベントもこのクラス コンストラクターで接続されます。 必要に応じて、他のクラス レベル アイテムの インスタンス変数を定義することができます。 OutlookInspector コンストラクターで接続されたすべてのイベントは、OutlookInspectorWindow\_Close event ハンドラーで接続解除されます。
+次のコード例では、**OutlookInspector** クラスの実装が行われます。 このクラスを使用して、上記のコード例で示したインスペクター ウィンドウでイベントを発生させます。 複数のインスペクター ウィンドウを同時に開いておくことができます。 [Open](https://msdn.microsoft.com/library/bb644296\(v=office.15\))、[PropertyChange](https://msdn.microsoft.com/library/bb647794\(v=office.15\))、[CustomPropertyChange](https://msdn.microsoft.com/library/bb645015\(v=office.15\)) などのアイテム レベルのイベントは、このクラス コンストラクターで接続すると追跡されます。 [ContactItem](https://msdn.microsoft.com/library/bb644956\(v=office.15\)) オブジェクト用の [Close](https://msdn.microsoft.com/library/bb645009\(v=office.15\)) イベントもこのクラス コンストラクターで接続されます。 必要に応じて、他のクラス レベル アイテムのインスタンス変数を定義することができます。 OutlookInspector コンストラクターで接続されたすべてのイベントは、OutlookInspectorWindow\_Close event ハンドラーで接続解除されます。
 
 なお、オブジェクト モデルのレベルでは、**Outlook のインスペクター** オブジェクトはどの Outlook アイテムの種類にも固有ではありません。 このコード サンプルでは、アイテムを連絡先アイテムとみなす前に、OutlookItem.Class プロパティを素早く呼び出してインスペクターの現在のアイテムのメッセージ クラスを確認するために、「[ヘルパー クラスを作成し、Outlook アイテムの共通メンバーにアクセスする](how-to-create-a-helper-class-to-access-common-outlook-item-members.md)」で定義されている OutlookItem ヘルパー クラスを使用します。
 

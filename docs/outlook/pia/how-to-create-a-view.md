@@ -15,7 +15,7 @@ ms.locfileid: "25406030"
 ---
 # <a name="create-a-view"></a>ビューを作成する
 
-この例では、[Views](https://msdn.microsoft.com/library/bb644226\(v=office.15\)) コレクションの [Add(String, OlViewType, OlViewSaveOption)](https://msdn.microsoft.com/library/bb643986\(v=office.15\)) メソッッドを使用して [Folder](https://msdn.microsoft.com/library/bb645774\(v=office.15\)) オブジェクトのビューを作成します。
+この例では、[Views](https://msdn.microsoft.com/library/bb644226\(v=office.15\)) コレクションの [Add(String, OlViewType, OlViewSaveOption)](https://msdn.microsoft.com/library/bb643986\(v=office.15\)) メソッドを使用して [Folder](https://msdn.microsoft.com/library/bb645774\(v=office.15\)) オブジェクトのビューを作成します。
 
 ## <a name="example"></a>例
 
@@ -65,13 +65,13 @@ Outlook エクスプローラー ウィンドウのビュー ウィンドウ内�
 </table>
 
 
-[View](https://msdn.microsoft.com/library/bb647396\(v=office.15\)) オブジェクトを使用してすべてのビューに共通するプロパティとメソッドにアクセスすることができます。 ただし、すべてのビューに共通ではない一部のプロパティにアクセスするにするには、**View** オブジェクトを、アクセスするプロパティが属する派生 **View** オブジェクトにキャストする必要があります。 たとえば、**Cardview** オブジェクトの [HeadingsFont](https://msdn.microsoft.com/library/bb612522\(v=office.15\)) プロパティにアクセスするには、**View** オブジェクトを **Cardview** オブジェクトにキャストします。 特定の **View** オブジェクトでどの種類のビューが表示されるかを確認するには [ViewType](https://msdn.microsoft.com/library/bb623693\(v=office.15\)) プロパティを使用します。
+[View](https://msdn.microsoft.com/library/bb647396\(v=office.15\)) オブジェクトを使用すると、すべてのビューに共通するプロパティとメソッドにアクセスすることができます。 ただし、すべてのビューに共通ではない一部のプロパティにアクセスするにするには、**View** オブジェクトを、アクセスするプロパティが属する派生 **View** オブジェクトにキャストする必要があります。 たとえば、**Cardview** オブジェクトの [HeadingsFont](https://msdn.microsoft.com/library/bb612522\(v=office.15\)) プロパティにアクセスするには、**View** オブジェクトを **Cardview** オブジェクトにキャストします。 特定の **View** オブジェクトでどの種類のビューが表示されるかを確認するには [ViewType](https://msdn.microsoft.com/library/bb623693\(v=office.15\)) プロパティを使用します。
 
-新しいビューを作成するには、 **Folder** オブジェクトに対する **Views** コレクションの **Add** メソッドを使用します。 次に、作成時またはビューの作成後任意の時にビューの可視性を設定します。 ビューの可視性を作成時に設定するには、**Add** メソッドで *SaveOption* パラメーターの [OlViewSaveOption](https://msdn.microsoft.com/library/bb647502\(v=office.15\)) 定数を指定します。 ビューの可視性をビューの作成後の任意の時点で設定するには、 **View** オブジェクトの [SaveOption](https://msdn.microsoft.com/library/bb646426\(v=office.15\)) プロパティに対して **OlViewSaveOption** 定数を指定します。 
+新しいビューを作成するには、 **Folder** オブジェクトに対する **Views** コレクションの **Add** メソッドを使用します。 次に、ビューの作成時または作成後のいずれかでビューの可視性を設定します。 ビューの可視性を作成時に設定するには、**Add** メソッドで *SaveOption* パラメーターの [OlViewSaveOption](https://msdn.microsoft.com/library/bb647502\(v=office.15\)) 定数を指定します。 ビューの可視性をビューの作成後の任意の時点で設定するには、 **View** オブジェクトの [SaveOption](https://msdn.microsoft.com/library/bb646426\(v=office.15\)) プロパティに対して **OlViewSaveOption** 定数を指定します。 
 
 新しいビューを追加すると、 [Views](https://msdn.microsoft.com/library/bb647550\(v=office.15\)) コレクションの **ViewAdd** イベントが発生します。 ビューが作成されたら、 **View** オブジェクトを派生オブジェクトの 1 つにキャストしてから必要な変更を行うことにより、そのビューをプログラムでカスタマイズします。 派生 **View** オブジェクトまたは **View** オブジェクトの **Save** メソッドを使用してビューへの変更を保存します。 最後に、派生 **View** オブジェクトまたは **View** オブジェクトの **Apply** メソッドを使用してビューを現在の [Explorer](https://msdn.microsoft.com/library/bb623678\(v=office.15\)) オブジェクトに適用します。 これにより、**Explorer** オブジェクトの [ViewSwitch](https://msdn.microsoft.com/library/bb644066\(v=office.15\)) イベントが発生します。
 
-次のコード例では、**View** オブジェクトを **TableView** オブジェクトにキャストすることにより、CreateMeetingRequestsView が “Meeting Requests” という名前の新しいビューをユーザーの受信トレイに追加します。 次に、CreateMeetingRequestsView は、 *Name* パラメーターは “Meeting Requests”、また *ViewType* パラメーターは **olTableView** という設定で **View** オブジェクトの **Add** メソッドを呼び出します。 **TableView** オブジェクトの [Filter](https://msdn.microsoft.com/library/bb610296\(v=office.15\)) プロパティは、アイテムのメッセージ クラスに “IPM.Schedule” が含まれているアイテムが存在する場合に限りビューを表示させる DAV Searching and Locating (DASL) 文字列に設定されます。 新しいビューが保存され、適用されます。
+次のコード例では、**View** オブジェクトを **TableView** オブジェクトにキャストすると、CreateMeetingRequestsView が “Meeting Requests” という名前の新しいビューをユーザーの受信トレイに追加します。 次に、CreateMeetingRequestsView は、 *Name* パラメーターは “Meeting Requests”、また *ViewType* パラメーターは **olTableView** という設定で **View** オブジェクトの **Add** メソッドを呼び出します。 **TableView** オブジェクトの [Filter](https://msdn.microsoft.com/library/bb610296\(v=office.15\)) プロパティは、アイテムのメッセージ クラスに “IPM.Schedule” が含まれているアイテムが存在する場合に限りビューを表示させる DAV Searching and Locating (DASL) 文字列に設定されます。 新しいビューが保存され、適用されます。
 
 Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 

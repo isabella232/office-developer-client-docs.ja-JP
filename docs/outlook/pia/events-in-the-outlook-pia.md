@@ -17,7 +17,7 @@ ms.locfileid: "25407542"
 
 Outlook プライマリ相互運用機能アセンブリ (PIA) をブラウズすると、Outlook オブジェクト モデルで見慣れたオブジェクト名やイベント名に基づく名前のインターフェイスおよびイベント デリゲートが多数あることがわかります。COM タイプ ライブラリのイベントとは異なり、Outlook PIA のイベントは同じオブジェクトのメソッドやプロパティと同じインターフェイスでは定義されません。Outlook PIA のイベントをサポートするには、イベント関連のインターフェイス、デリゲート、およびシンク ヘルパー クラスをインポートするか作成します。このトピックでは、これらのイベント関連のインターフェイス、デリゲート、およびシンク ヘルパー クラスについて説明します。
 
-## <a name="where-do-the-event-interfaces-delegates-and-sink-helper-classes-come-from"></a>イベントのインターフェイス、デリゲート、およびシンク ヘルパー クラスの取得
+## <a name="where-do-the-event-interfaces-delegates-and-sink-helper-classes-come-from"></a>イベントのインターフェイス、デリゲート、シンク ヘルパー クラスの取得
 
 Outlook は、Outlook PIA を作成するために .NET Framework のタイプ ライブラリ インポーター (TLBIMP) を使用して COM タイプ ライブラリのタイプの定義を共通言語ランタイム (CLR) アセンブリの同等の定義に変換します。TLBIMP は、オブジェクトごとに次の 2 種類のインターフェイスをインポートします。
 
@@ -45,7 +45,7 @@ Outlook の複数のバージョンにわたって存在してきたオブジェ
     
       - Outlook 2003 以降のリリース用のバージョン: [ApplicationEvents\_11](https://msdn.microsoft.com/library/bb609229\(v=office.15\)) インターフェイス
 
-  - **Application** オブジェクトで TLBIMP が作成する .NET イベント インターフェイス
+  - **Application** オブジェクトで TLBIMP によって作成される .NET イベント インターフェイスに含まれるもの:
     
       - Outlook 98 および Outlook 2000 用の最初のバージョン: [ApplicationEvents\_Event](https://msdn.microsoft.com/library/bb609380\(v=office.15\)) インターフェイス
     
@@ -69,7 +69,7 @@ Outlook の複数のバージョンにわたって存在してきたオブジェ
 
 その一方、このイベントは最新の .NET イベント インターフェイスである ExplorerEvents\_10\_Event にあり、また、それに対応する Outlook 2010 用のデリゲートは [ExplorerEvents\_10\_AttachmentSelectionChangeEventHandler](https://msdn.microsoft.com/library/ff185177\(v=office.15\)) にあります。
 
-## <a name="what-the-event-interfaces-delegates-and-sink-helper-classes-are-for"></a>イベント インターフェイス、デリゲート、およびシンク ヘルパー クラスの目的
+## <a name="what-the-event-interfaces-delegates-and-sink-helper-classes-are-for"></a>イベント インターフェイス、デリゲート、シンク ヘルパー クラスの目的
 
 このセクションでは、**Application** オブジェクトを例として使用し、上記の各インターフェイスおよびクラスの内容を説明します。
 
