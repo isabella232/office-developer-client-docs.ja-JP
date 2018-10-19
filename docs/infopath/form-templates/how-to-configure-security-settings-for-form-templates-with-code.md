@@ -8,18 +8,18 @@ keywords:
 localization_priority: Normal
 ms.assetid: 24d1a322-581f-497e-b97b-bd02c4516551
 description: .NET 構成スナップインを使用して、InfoPath マネージ コード フォーム テンプレートに適用されるアクセス許可セットをカスタマイズできます。
-ms.openlocfilehash: f04ce71875eac7695d2900131ca7c9cd333fa90f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 77f3546d976bb5ea353aa3fbe58ba7af6cd92a6d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799128"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391417"
 ---
 # <a name="configure-security-settings-for-form-templates-with-code"></a>コードを含むフォーム テンプレートのセキュリティ設定を構成する
 
 .NET 構成スナップインを使用して、InfoPath マネージ コード フォーム テンプレートに適用されるアクセス許可セットをカスタマイズできます。
   
-InfoPath でホストされている共通言語ランタイム (CLR) は、All_Code グループ内の *InfoPath フォーム テンプレート*という名前の事前定義コード グループを検索します。 CLR は、そのグループで定義されているアクセス許可セットを、フォーム コードが実行されるアプリケーション ドメイン (AppDomain) に適用します。 これにより、InfoPath マネージ コード フォーム テンプレートに付与されるアクセス許可セットをカスタマイズできます。 たとえば、http://MySite からダウンロードしたフォーム テンプレートに、Active Directory へのアクセス許可を付与できます。 
+InfoPath でホストされている共通言語ランタイム (CLR) は、All_Code グループ内の *InfoPath フォーム テンプレート*という名前の事前定義コード グループを検索します。 CLR は、そのグループで定義されているアクセス許可セットを、フォーム コードが実行されるアプリケーション ドメイン (AppDomain) に適用します。 これにより、InfoPath マネージ コード フォーム テンプレートに付与されるアクセス許可セットをカスタマイズできます。 たとえば、https://MySite からダウンロードしたフォーム テンプレートに、Active Directory へのアクセス許可を付与できます。 
   
 .NET 構成スナップインで定義したカスタム セキュリティ ポリシーを適用するには、フォーム テンプレートが実行されるすべてのクライアント コンピューター上にポリシーを配置する必要があります。
   
@@ -75,13 +75,13 @@ InfoPath マネージ コード フォーム テンプレートのセキュリ�
     
      `\\MyServer\MyShare\MyFormTemplate.xsn`
     
-     `http://MySite/MySubsite/MyFormTempate.xsn`
+     `https://MySite/MySubsite/MyFormTempate.xsn`
     
     単一の URL または UNC を使用してすべてのフォーム テンプレートにアクセス許可セットを付与するには、テンプレート名を省略し、URL または UNC の末尾にアスタリスク (*) を追加します。たとえば、次のように入力します。
     
      `\\MyServer\MyShare\*`
     
-     `http://MySite/MySubsite/*`
+     `https://MySite/MySubsite/*`
     
 5. [ **次へ**] をクリックします。次に、[ **既存のアクセス許可セットを使用**] をクリックし、コード グループに [ **FullTrust**] アクセス許可セットを割り当てます。 
     
