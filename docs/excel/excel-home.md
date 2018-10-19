@@ -6,12 +6,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 597f7b81-3baf-4bf2-9ef0-f7fedad8c36e
 description: ソリューションの開発と Excel のカスタマイズに関する HowTo コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および技術記事を検索できます。
-ms.openlocfilehash: cf486b3bab5133de75cf59f8999ade1b8cca8aad
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.openlocfilehash: b12ee0ca7fa97e008767f3c207ea7fd54e914e6d
+ms.sourcegitcommit: 6a314fdfde4349591ed899019695c36537f45924
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25394707"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454524"
 ---
 # <a name="excel"></a>Excel
 
@@ -34,8 +34,7 @@ ms.locfileid: "25394707"
   
 ### <a name="code-samples"></a>コード サンプル
   
-- 
-  [Office デベロッパー センターの Excel コード サンプル](https://developer.microsoft.com/en-us/excel/gallery/?filterBy=Samples)
+- [Office デベロッパー センターの Excel コード サンプル](https://developer.microsoft.com/excel/gallery/?filterBy=Samples)
   
 ### <a name="other-resources"></a>その他のリソース
   
@@ -47,10 +46,10 @@ ms.locfileid: "25394707"
   
 - [Open XML SDK](https://docs.microsoft.com/office/open-xml/open-xml-sdk)
   
-- [Office 用 VSTO アドイン](https://docs.microsoft.com/visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio?view=vs-2017)
+- [Office の VSTO アドイン](https://docs.microsoft.com/visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio?view=vs-2017)
   
 ### <a name="support"></a>サポート
   
-- [Office デベロッパー センター](https://developer.microsoft.com/ja-JP/office)
+- [Office デベロッパー センター](https://developer.microsoft.com/office)
   
 - [Office サポート](https://support.office.com/)
