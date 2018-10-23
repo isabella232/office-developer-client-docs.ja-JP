@@ -5,25 +5,25 @@ ms.date: 12/07/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 6922cb38-a9e3-e4a9-d4a3-e11b81fc77e2
-description: '�ŏI�X�V��: 2015�N12��7��'
+description: '最終更新日: 2015 年 12 月 7 日'
 ms.openlocfilehash: ce25c6777c8a71da0fe11e0bbf34eefafe2ca50d
 ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/23/2018
 ms.locfileid: "22564137"
 ---
 # <a name="disconnecting-an-offline-state-add-in"></a>オフライン状態アドインの切断
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-オフライン状態のアドインが切断されたとき、正常に終了し、アドインをクリーンアップする機能を実装しなければなりません。 設定し、オフライン使用の詳細については、アドインの接続状態の変更を監視するには、[アドインの設定をオフライン状態](setting-up-an-offline-state-add-in.md)および[監視接続状態の変更を使用してオフライン状態アドインを](monitoring-connection-state-changes-using-an-offline-state-add-in.md)参照してください状態です。
+オフライン状態アドインが切断された場合は、アドインを適切に終了してクリーンアップするための関数を実装する必要があります。 接続状態変更の監視を行うためのオフライン状態アドインのセットアップとその使用の詳細については、[オフライン状態アドインのセットアップ](setting-up-an-offline-state-add-in.md)、[オフライン状態アドインを使用した接続状態変更の監視](monitoring-connection-state-changes-using-an-offline-state-add-in.md)を参照してください。
   
-このトピックでは、これらの切断を終了して、オフライン状態のサンプル アドイン内のコード例を使用してクリーンアップ関数の例を示します。 オフライン状態のサンプル アドインは、COM アドインを Outlook に、**オフライン状態**のメニューを追加し、オフライン状態 API を使用してします。 オフライン状態] メニューの [使用を有効にするまたは状態の監視を無効にする、現在の状態を確認して現在の状態を変更できます。 ダウンロードしてオフライン状態のサンプル アドインをインストールする方法の詳細については[、オフライン状態のサンプル アドインをインストールする](installing-the-sample-offline-state-add-in.md)」を参照してください。 オフライン状態 API の詳細については、[の「オフライン状態 API](about-the-offline-state-api.md)を参照してください。
+このトピックでは、サンプルのオフライン状態アドインのコード例を使って、これらの切断、終了、クリーンアップ関数を説明します。 サンプルのオフライン状態アドインは、オフライン状態 API を使用して Outlook に**オフライン状態**メニューを追加する COM アドインです。 オフライン状態メニューを使うと、状態の監視を有効または無効にしたり、現在の状態の確認、変更を行うことができます。 サンプルのオフライン状態アドインのダウンロードやインストールの詳細については、[サンプルのオフライン状態アドインのインストール](installing-the-sample-offline-state-add-in.md)を参照してください。 オフライン状態 API の詳細については、[オフライン状態 API について](about-the-offline-state-api.md)を参照してください。
   
-## <a name="on-disconnection-routine"></a>切断ルーチン
+## <a name="on-disconnection-routine"></a>切断ルーチンについて
 
-**IDTExtensibility2.OnDisconnection**メソッドは、オフライン状態のアドインがアンロードされるときに呼び出されます。 クリーン アップ コードをこの関数を実装する必要があります。 **IDTExtensibility2.OnDisconnection**関数を呼び出す例を次に、`HrTermAddin`関数です。 
+オフライン状態アドインがアンロードされると、**IDTExtensibility2.OnDisconnection**メソッドが呼び出されます。 この関数にはクリーンアップ コードを実装する必要があります。 次の例では、**IDTExtensibility2.OnDisconnection**関数が`HrTermAddin`関数を呼び出します。 
   
 ### <a name="cmyaddinondisconnection-example"></a>CMyAddin::OnDisconnection() の使用例
 
@@ -37,9 +37,9 @@ STDMETHODIMP CMyAddin::OnDisconnection(ext_DisconnectMode /*RemoveMode*/, SAFEAR
 }
 ```
 
-## <a name="terminate-add-in-function"></a>アドインの関数を終了します。
+## <a name="terminate-add-in-function"></a>アドイン関数の終了
 
-`HrTermAddin`関数呼び出し、 `inDeInitMonitor`、`HrRemoveMenuItems`と`UnloadLibraries`でオフライン状態の追加のクリーンアップを終了する関数です。 
+`HrTermAddin`関数が`inDeInitMonitor`、`HrRemoveMenuItems`および`UnloadLibraries`関数を呼び出して、オフライン状態アドインのクリーンアップを完了します。 
   
 ### <a name="cmyaddinhrtermaddin-example"></a>CMyAddin::HrTermAddin() の使用例
 
@@ -54,9 +54,9 @@ HRESULT CMyAddin::HrTermAddin()
 }
 ```
 
-## <a name="deinitialize-monitor-routine"></a>監視ルーチンを deinitialize します。
+## <a name="deinitialize-monitor-routine"></a>監視ルーチンの非初期化
 
-`inDeInitMonitor` 、オフラインのオブジェクトのコールバックをキャンセルする、 [IMAPIOfflineMgr::Unadvise](imapiofflinemgr-unadvise.md)関数を呼び出します。 
+`inDeInitMonitor`関数が、[IMAPIOfflineMgr::Unadvise](imapiofflinemgr-unadvise.md)関数を呼び出して、オフライン オブジェクトのコールバックをキャンセルします。 
   
 ### <a name="deinitmonitor-example"></a>DeInitMonitor() の使用例
 
@@ -75,9 +75,9 @@ g_ulAdviseToken = NULL;
 }
 ```
 
-## <a name="remove-menu-items-routine"></a>メニュー項目のルーチンを削除します。
+## <a name="remove-menu-items-routine"></a>メニュー アイテム ルーチンの削除
 
-`HrRemoveMenuItems`関数呼び出しの`DispEventUnadvise`[**オフライン状態**] メニューのメニュー項目ごとにし、**オフライン状態**のメニューを削除します。 
+`HrRemoveMenuItems`関数が**オフライン状態**メニューにある各メニュー アイテムの`DispEventUnadvise`を呼び出した後、**オフライン状態**メニューを削除します。 
   
 ### <a name="cmyaddinhrremovemenuitems-example"></a>CMyAddin::HrRemoveMenuItems() の使用例
 
@@ -122,9 +122,9 @@ HRESULT CMyAddin::HrRemoveMenuItems()
 }
 ```
 
-## <a name="unload-libraries-routine"></a>ライブラリ ルーチンをアンロードします。
+## <a name="unload-libraries-routine"></a>ライブラリ ルーチンのアンロード
 
-アドインがアンロードされるとき、Outlook から、`UnloadLibraries`関数は、アドインを必要とするダイナミック リンク ライブラリ (Dll) をアンロードします。 
+Outlook からアドインがアンロードされると、`UnloadLibraries`関数がそのアドインが必要とするダイナミック リンク ライブラリ (DLL) をアンロードします。 
   
 ### <a name="unloadlibraries-example"></a>UnloadLibraries() の使用例
 
@@ -148,6 +148,6 @@ void UnloadLibraries()
 - [オフライン状態 API について](about-the-offline-state-api.md)
 - [サンプルのオフライン状態アドインのインストール](installing-the-sample-offline-state-add-in.md)
 - [サンプルのオフライン状態アドインについて](about-the-sample-offline-state-add-in.md)
-- [オフライン状態アドインの設定](setting-up-an-offline-state-add-in.md)
-- [オフライン状態アドインを使用した接続状態変更のモニター](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
+- [オフライン状態アドインのセットアップ](setting-up-an-offline-state-add-in.md)
+- [オフライン状態アドインを使用した接続状態変更の監視](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
 

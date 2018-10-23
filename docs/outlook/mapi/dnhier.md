@@ -7,10 +7,10 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3953dc9d-0146-3689-63f0-c6ba78566b8b
-description: '�ŏI�X�V��: 2012�N7��5��'
+description: '最終更新日: 2012 年 7 月 5 日'
 ms.openlocfilehash: 06f30b4856fc10127aec99975652e28a5e8dda30
 ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/04/2018
 ms.locfileid: "25389086"
@@ -19,7 +19,7 @@ ms.locfileid: "25389086"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-階層サーバーからのダウンロード、[階層の状態をダウンロード](download-hierarchy-state.md)する時に完全な階層の同期の一部の情報です。 このダウンロードのプロセスでは、Microsoft Exchange 増分変更の同期 (ICS) を使用します。 ICS の詳細については、 [ICS の評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
+階層の完全同期の一部である[階層状態のダウンロード](download-hierarchy-state.md)中に、サーバーから階層をダウンロードするための情報です。 このダウンロード手順では、 Microsoft Exchange の増分変更の同期 (ICS) を使用します。 ICSの詳細については、[ICSの評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -35,38 +35,38 @@ struct DNHIER
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 _ulFlags_
   
->  [in]ダウンロード中に適切な動作を決定するフラグを設定します。 
+>  [in]ダウンロード中の適切な動作を決定するフラグです。 
     
    - DNH_OK
     
-   - [in]ダウンロードが正常に完了しました。 クライアントは、サーバーから情報をダウンロードした後、これを設定します。
+   - [in]ダウンロードに成功しました。 クライアントは、サーバーから情報をダウンロードした後、これを設定します。
     
 _pstmReserved_
   
-> [out]このメンバーは、Outlook の内部使用に予約されている、サポートされていません。 
+> [out]このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
     
 _pxihc_
   
->  [out]**IExchangeImportHierarchyChanges**階層のインターフェイスへのポインターをサポートする階層の増分変更をダウンロードします。 **IExchangeImportHierarchyChanges**の詳細については、 [ICS の評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
+>  [out]階層の増分変更のダウンロードをサポートする、**IExchangeImportHierarchyChanges**の階層インターフェイスのポインターです。 **IExchangeImportHierarchyChanges**の詳細については、[ICSの評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
     
 _cEntNew_
   
-> [out]ローカル ストアに追加するフォルダーの数です。 Outlook では、ICS を使用する場合は、ダウンロード中にこの値を設定します。
+> [out]ローカル ストアに追加されたフォルダーの数です。 ICS を使用してダウンロードしている間に Outlook がこの値を設定します。
     
 _cEntMod_
   
-> [out]ローカル ストアを変更するフォルダーの数です。 Outlook では、ICS を使用する場合は、ダウンロード中にこの値を設定します。
+> [out]ローカル ストアで変更されるフォルダーの数です。 ICS を使用してダウンロードしている間に Outlook がこの値を設定します。
     
 _cEntDel_
   
-> [out]ローカル ストアから削除するフォルダーの数です。 Outlook では、ICS を使用する場合は、ダウンロード中にこの値を設定します。
+> [out]ローカル ストアで削除されるフォルダーの数です。 ICS を使用してダウンロードしている間に Outlook がこの値を設定します。
     
 ## <a name="see-also"></a>関連項目
 
-- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md) 
-- [MAPI �萔](mapi-constants.md)
+- [レプリケーション状態のマシンについて](about-the-replication-state-machine.md) 
+- [MAPI 定数](mapi-constants.md)
 

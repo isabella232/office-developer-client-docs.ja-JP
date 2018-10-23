@@ -7,10 +7,10 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 7bb86fc8-d1ae-4937-9919-86c3a0f5651d
-description: '�ŏI�X�V��: 2015�N12��7��'
+description: '最終更新日: 2015 年 12 月 7 日'
 ms.openlocfilehash: 5d26583ad7ad3b4a200daf321a8994e302b75a79
 ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/23/2018
 ms.locfileid: "22580636"
@@ -21,7 +21,7 @@ ms.locfileid: "22580636"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-起動時にパフォーマンスを向上させるには、次の呼び出しを回避します。
+起動時のパフォーマンスを向上させるには、次の呼び出しを避けてください。
   
 - [IMAPISession::EnumAdrTypes](imapisession-enumadrtypes.md)
     
@@ -33,8 +33,8 @@ ms.locfileid: "22580636"
     
 - [IMAPIStatus::ValidateState](imapistatus-validatestate.md)
     
-**IMAPIStatus::ValidateState**への呼び出しでは、MAPI スプーラーを無効または MAPI のサブシステムのいずれかで行われるときにのみ、パフォーマンスに影響します。 これらのメソッドが起動処理を遅く理由は、MAPI スプーラーが、起動時のタスクを完了するまでに完了することはできませんのでです。 
+**IMAPIStatus::ValidateState**の呼び出しは、 MAPI スプーラーまたは MAPI サブシステムのいずれかで行われた場合のみ、パフォーマンスに影響します。 これらのメソッドが起動処理を遅らせるのは、MAPI スプーラーが起動タスクを完了するまでこれらのメソッドが完了できないためです。 
   
-起動時にメッセージ ・ ストアを検索しないようにします。 起動処理が終了したときに、 [IMAPIContainer::SetSearchCriteria](imapicontainer-setsearchcriteria.md)の呼び出しを確認します。 
+また、起動時のメッセージ ストアの検索も避ける必要があります。 起動処理が終わってから、 [IMAPIContainer::SetSearchCriteria](imapicontainer-setsearchcriteria.md)の呼び出しを行ってください。 
   
 

@@ -1,189 +1,189 @@
 ---
-title: "Outlook �Ŏg�p���閼�O�t���̃v���p�e�B�ɂ\x82���"
+title: Outlook で使用される名前付きプロパティについて
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 8c245ec2-bb18-ecf0-b4ad-8c164c5924cf
-description: '�ŏI�X�V��: 2012�N6��25��'
+description: '最終更新日: 2012 年 6 月 25 日'
 ms.openlocfilehash: aa4d52d25f120e8b3e2a4c0dcaa4845ad576127a
 ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/23/2018
 ms.locfileid: "22566230"
 ---
-# <a name="about-named-properties-used-by-outlook"></a>Outlook �Ŏg�p���閼�O�t���̃v���p�e�B�ɂ���
+# <a name="about-named-properties-used-by-outlook"></a>Outlook で使用される名前付きプロパティについて
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI �ł́A����̃v���p�e�B�ɖ��O����蓖�Ă�A�ŗL�̎��ʎq����̖��O��}�b�s���O���邽�߁A�Z�b�V�����̊Ԃŉi���I�Ȃ��̖��O�̎��ʎq�̃}�b�s���O��쐬���邽�߂̋@�\��񋟂��܂��B���O�t���v���p�e�B�́A���O�ƃv���p�e�B�̐ݒ�̃O���[�o���Ɉ�ӂ̎��ʎq (GUID) �ɂ���Ď��ʂ��܂��B���O�ɂ́A���l�܂��͕����񂪂ł��܂��BMicrosoft Outlook 2013�܂���Microsoft Outlook 2010�v���p�e�B�̐ݒ��Outlook 2013�܂���Outlook 2010�A **PSETID_Appointment** �Ȃǂɂ���Ē�`���ꂽ���O��Ԃł͑����̏ꍇ�B 
+MAPI は、特定のプロパティに名前を割り当て、これらの名前を一意識別子にマッピングし、この名前から識別子へのマッピングをセッション間で永続化するための機能を提供します。名前付きプロパティは、プロパティ セットの名前とグローバル一意識別子 (GUID) によって識別されます。名前には、数値または文字列を使用することができます。Microsoft Outlook 2013 または Microsoft Outlook 2010 のプロパティ セットの多くは、**PSETID_Appointment**といった、Outlook 2013 または Outlook 2010 で定義された名前空間です。 
   
-���O�t���̃v���p�e�B�𑀍삷��ɂ́A [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)�֐���[IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)�֐���g�p���܂��B���O�� GUID �v���p�e�B�̐ݒ�́A���݂� MAPI �Z�b�V�����͗L���ȃv���p�e�B���ʎq��擾����[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)�֐��ɓn����܂��B���̃v���p�e�B�̎��ʎq���R���s���[�^�[����ʂ̃R���s���[�^�[�ɈقȂ邱�Ƃ��ł��܂��݈̂�ѐ��̂��閼�O�t���̃v���p�e�B�ɃA�N�Z�X������@�ł́A���̖��O�� GUID �v���p�e�B���킩���Ă��܂��B ���ʎq�͈̔͂́A��� 0x8000 �� 0 xfffe �͈́B 
+名前付きプロパティは、[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)関数や [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)関数を使って操作されます。名前とプロパティ セット GUID は[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)関数に回されて、現在の MAPI セッションに有効なプロパティ識別子を取得します。プロパティ識別子はコンピューター端末によって異なることがあるため、名前付きのプロパティに一貫してアクセスする唯一の方法は、そのプロパティの名前とプロパティ セット GUID を知ることです。識別子の範囲は常に 0x8000 から 0xFFFE の間です。 
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)�C���^�[�t�F�C�X���������C�ӂ̃I�u�W�F�N�g�́A���O�t���̃v���p�e�B��T�|�[�g�ł��܂��B��̓I�ɂ́AMAPI �T�[�r�X �v���o�C�[�[�܂��� mapi �́A���O�t���̃v���p�e�B�̒l��擾����[IMAPIProp::GetProps](imapiprop-getprops.md)���������K�v������܂��B���� MAPI �v���o�C�](imapiprop-getprops.md)�[��ڋq�Ƌ��L����Ă���f�[�^��j���̃��X�N�̗��R�ɂ��A���O�t��Outlook 2013�܂���Outlook 2010�ɂ���Ďg�p�����v���p�e�B�̐ݒ�̓T�|�[�g����Ă��܂���B 
+[IMAPIProp : IUnknown](imapipropiunknown.md)インターフェイスを実装するオブジェクトはすべて、名前付きプロパティをサポートすることができます。具体的には、MAPI サービス プロバイダーまたは MAPI クライアントは[IMAPIProp::GetProps](imapiprop-getprops.md)を実装して、名前付きプロパティの値を取得する必要があります。Outlook 2013 または Outlook 2010 で使用される名前付きプロパティの設定はサポートされていません。これは、他の MAPI プロバイダーまたはクライアントと共有されるデータが破損する危険があるためです。 
   
-Outlook 2013 および Outlook 2010 は、MAPI 名前付きプロパティなど、その機能の多くを実装するために、添付ファイルのセキュリティおよび会議の代替日時を使用します。 この基になるデータでは、上記 2013 の Outlook と Outlook 2010 これらのプロパティの一部として公開、Outlook 2013 と Outlook 2010 のオブジェクト モデル内のアイテムのプロパティです。 たとえば、オブジェクト モデルでは、 **ContactItem**オブジェクトの**Email1Address**プロパティは、 **PSETID_Address**名前空間の名前付きの[PidLidEmail1EmailAddress の標準的なプロパティ](pidlidemail1emailaddress-canonical-property.md)に対応します。 ですが、一般的に、互換性とデータの整合性の問題が発生したため Outlook 2013 および Outlook 2010 で使用される MAPI プロパティの多くに公開されていないオブジェクト モデルです。 
+Outlook 2013 と Outlook 2010 では、 MAPI の名前付きプロパティを使用して、添付ファイルのセキュリティや会議の代替日時の提案などのさまざまな機能を実装しています。 Outlook 2013 と Outlook 2010 は、この基盤となるデータ上で、Outlook 2013 と Outlook 2010 のオブジェクト モデルのアイテム プロパティとして、これらのプロパティの一部を公開しています。 たとえば、オブジェクト モデル内の**ContactItem**オブジェクトである**Email1Address**プロパティは、**PSETID_Address**名前空間にある名前付きの[PidLidEmail1EmailAddress 標準プロパティ](pidlidemail1emailaddress-canonical-property.md)に対応します。 しかし、一般に、互換性とデータの整合性に対する懸念から、Outlook 2013 と Outlook 2010 で使用される MAPI プロパティの多くはオブジェクト モデルに公開されていません。 
   
-���̃Z���Q�Ƃł́A�����̉��ɋL�ڂ���Ă��閼�O�t���̃v���p�e�B�ɂ��Đ�����܂��B
+このリファレンスでは、以下に列挙する多数の名前付きプロパティについて説明します。
   
-**PSETID_Address** ���O��Ԃ̃v���p�e�B�A���̂Ƃ���ł��B 
+**PSETID_Address**名前空間の名前付きプロパティは、次のとおりです。 
   
-- [PidLidEmail1AddressType ���K���̃v���p�e�B](pidlidemail1addresstype-canonical-property.md)
+- [PidLidEmail1AddressType 標準プロパティ](pidlidemail1addresstype-canonical-property.md)
     
-- [PidLidEmail1EmailAddress ���K���̃v���p�e�B](pidlidemail1emailaddress-canonical-property.md)
+- [PidLidEmail1EmailAddress 標準プロパティ](pidlidemail1emailaddress-canonical-property.md)
     
-- [PidLidEmail1OriginalEntryId ���K���̃v���p�e�B](pidlidemail1originalentryid-canonical-property.md)
+- [PidLidEmail1OriginalEntryId 標準プロパティ](pidlidemail1originalentryid-canonical-property.md)
     
-- [PidLidEmail2AddressType ���K���̃v���p�e�B](pidlidemail2addresstype-canonical-property.md)
+- [PidLidEmail2AddressType 標準プロパティ](pidlidemail2addresstype-canonical-property.md)
     
-- [PidLidEmail2DisplayName ���K���̃v���p�e�B](pidlidemail2displayname-canonical-property.md)
+- [PidLidEmail2DisplayName 標準プロパティ](pidlidemail2displayname-canonical-property.md)
     
-- [PidLidEmail2EmailAddress ���K���̃v���p�e�B](pidlidemail2emailaddress-canonical-property.md)
+- [PidLidEmail2EmailAddress 標準プロパティ](pidlidemail2emailaddress-canonical-property.md)
     
-- [PidLidEmail2OriginalDisplayName ���K���̃v���p�e�B](pidlidemail2originaldisplayname-canonical-property.md)
+- [PidLidEmail2OriginalDisplayName 標準プロパティ](pidlidemail2originaldisplayname-canonical-property.md)
     
-- [PidLidEmail2OriginalEntryId ���K���̃v���p�e�B](pidlidemail2originalentryid-canonical-property.md)
+- [PidLidEmail2OriginalEntryId 標準プロパティ](pidlidemail2originalentryid-canonical-property.md)
     
-- [PidLidEmail3AddressType ���K���̃v���p�e�B](pidlidemail3addresstype-canonical-property.md)
+- [PidLidEmail3AddressType 標準プロパティ](pidlidemail3addresstype-canonical-property.md)
     
-- [PidLidEmail3DisplayName ���K���̃v���p�e�B](pidlidemail3displayname-canonical-property.md)
+- [PidLidEmail3DisplayName 標準プロパティ](pidlidemail3displayname-canonical-property.md)
     
-- [PidLidEmail3EmailAddress ���K���̃v���p�e�B](pidlidemail3emailaddress-canonical-property.md)
+- [PidLidEmail3EmailAddress 標準プロパティ](pidlidemail3emailaddress-canonical-property.md)
     
-- [PidLidEmail3OriginalDisplayName ���K���̃v���p�e�B](pidlidemail3originaldisplayname-canonical-property.md)
+- [PidLidEmail3OriginalDisplayName 標準プロパティ](pidlidemail3originaldisplayname-canonical-property.md)
     
-- [PidLidEmail3OriginalEntryId ���K���̃v���p�e�B](pidlidemail3originalentryid-canonical-property.md)
+- [PidLidEmail3OriginalEntryId 標準プロパティ](pidlidemail3originalentryid-canonical-property.md)
     
-- [PidLidEmail1DisplayName ���K���̃v���p�e�B](pidlidemail1displayname-canonical-property.md)
+- [PidLidEmail1DisplayName 標準プロパティ](pidlidemail1displayname-canonical-property.md)
     
-- [PidLidEmail1OriginalDisplayName ���K���̃v���p�e�B](pidlidemail1originaldisplayname-canonical-property.md)
+- [PidLidEmail1OriginalDisplayName 標準プロパティ](pidlidemail1originaldisplayname-canonical-property.md)
     
-- [PidLidFileUnder ���K���̃v���p�e�B](pidlidfileunder-canonical-property.md)
+- [PidLidFileUnder 標準プロパティ](pidlidfileunder-canonical-property.md)
     
-- [PidLidInstantMessagingAddress ���K���̃v���p�e�B](pidlidinstantmessagingaddress-canonical-property.md)
+- [PidLidInstantMessagingAddress 標準プロパティ](pidlidinstantmessagingaddress-canonical-property.md)
     
-- [PidLidWorkAddressCity ���K���̃v���p�e�B](pidlidworkaddresscity-canonical-property.md)
+- [PidLidWorkAddressCity 標準プロパティ](pidlidworkaddresscity-canonical-property.md)
     
-- [PidLidWorkAddressCountry ���K���̃v���p�e�B](pidlidworkaddresscountry-canonical-property.md)
+- [PidLidWorkAddressCountry 標準プロパティ](pidlidworkaddresscountry-canonical-property.md)
     
-- [PidLidWorkAddressPostalCode ���K���̃v���p�e�B](pidlidworkaddresspostalcode-canonical-property.md)
+- [PidLidWorkAddressPostalCode 標準プロパティ](pidlidworkaddresspostalcode-canonical-property.md)
     
-- [PidLidWorkAddressPostOfficeBox ���K���̃v���p�e�B](pidlidworkaddresspostofficebox-canonical-property.md)
+- [PidLidWorkAddressPostOfficeBox 標準プロパティ](pidlidworkaddresspostofficebox-canonical-property.md)
     
-- [PidLidWorkAddressState ���K���̃v���p�e�B](pidlidworkaddressstate-canonical-property.md)
+- [PidLidWorkAddressState 標準プロパティ](pidlidworkaddressstate-canonical-property.md)
     
-- [PidLidWorkAddressStreet ���K���̃v���p�e�B](pidlidworkaddressstreet-canonical-property.md)
+- [PidLidWorkAddressStreet 標準プロパティ](pidlidworkaddressstreet-canonical-property.md)
     
-- [PidLidYomiCompanyName ���K���̃v���p�e�B](pidlidyomicompanyname-canonical-property.md)
+- [PidLidYomiCompanyName 標準プロパティ](pidlidyomicompanyname-canonical-property.md)
     
-- [PidLidYomiFirstName ���K���̃v���p�e�B](pidlidyomifirstname-canonical-property.md)
+- [PidLidYomiFirstName 標準プロパティ](pidlidyomifirstname-canonical-property.md)
     
-- [PidLidYomiLastName ���K���̃v���p�e�B](pidlidyomilastname-canonical-property.md)
+- [PidLidYomiLastName 標準プロパティ](pidlidyomilastname-canonical-property.md)
     
-**PSETID_Appointment** ���O��Ԃ̃v���p�e�B�A���̂Ƃ���ł��B 
+**PSETID_Appointment**名前空間の名前付きプロパティは、次のとおりです。 
   
-- [PidLidAllAttendeesString ���K���̃v���p�e�B](pidlidallattendeesstring-canonical-property.md)
+- [PidLidAllAttendeesString 標準プロパティ](pidlidallattendeesstring-canonical-property.md)
     
-- [PidLidAppointmentCounterProposal ���K���̃v���p�e�B](pidlidappointmentcounterproposal-canonical-property.md)
+- [PidLidAppointmentCounterProposal 標準プロパティ](pidlidappointmentcounterproposal-canonical-property.md)
     
-- [PidLidAppointmentDuration ���K���̃v���p�e�B](pidlidappointmentduration-canonical-property.md)
+- [PidLidAppointmentDuration 標準プロパティ](pidlidappointmentduration-canonical-property.md)
     
-- [PidLidAppointmentEndWhole ���K���̃v���p�e�B](pidlidappointmentendwhole-canonical-property.md)
+- [PidLidAppointmentEndWhole 標準プロパティ](pidlidappointmentendwhole-canonical-property.md)
     
-- [PidLidAppointmentStartWhole ���K���̃v���p�e�B](pidlidappointmentstartwhole-canonical-property.md)
+- [PidLidAppointmentStartWhole 標準プロパティ](pidlidappointmentstartwhole-canonical-property.md)
     
-- [PidLidBusyStatus ���K���̃v���p�e�B](pidlidbusystatus-canonical-property.md)
+- [PidLidBusyStatus 標準プロパティ](pidlidbusystatus-canonical-property.md)
     
-- [PidLidCcAttendeesString ���K���̃v���p�e�B](pidlidccattendeesstring-canonical-property.md)
+- [PidLidCcAttendeesString 標準プロパティ](pidlidccattendeesstring-canonical-property.md)
     
-- [PidLidLocation ���K���̃v���p�e�B](pidlidlocation-canonical-property.md)
+- [PidLidLocation 標準プロパティ](pidlidlocation-canonical-property.md)
     
-- [PidLidRecurring ���K���̃v���p�e�B](pidlidrecurring-canonical-property.md)
+- [PidLidRecurring 標準プロパティ](pidlidrecurring-canonical-property.md)
     
-- [PidLidToAttendeesString ���K���̃v���p�e�B](pidlidtoattendeesstring-canonical-property.md)
+- [PidLidToAttendeesString 標準プロパティ](pidlidtoattendeesstring-canonical-property.md)
     
-**PSETID_Common** ���O��Ԃ̃v���p�e�B�A���̂Ƃ���ł��B 
+**PSETID_Common**名前空間の名前付きプロパティは、次のとおりです。 
   
-- [PidLidCommonEnd ���K���̃v���p�e�B](pidlidcommonend-canonical-property.md)
+- [PidLidCommonEnd 標準プロパティ](pidlidcommonend-canonical-property.md)
     
-- [PidLidCommonStart ���K���̃v���p�e�B](pidlidcommonstart-canonical-property.md)
+- [PidLidCommonStart 標準プロパティ](pidlidcommonstart-canonical-property.md)
     
-- [PidLidCompanies ���K���̃v���p�e�B](pidlidcompanies-canonical-property.md)
+- [PidLidCompanies 標準プロパティ](pidlidcompanies-canonical-property.md)
     
-- [PidLidContacts ���K���̃v���p�e�B](pidlidcontacts-canonical-property.md)
+- [PidLidContacts 標準プロパティ](pidlidcontacts-canonical-property.md)
     
-- [PidLidCustomFlag ���K���̃v���p�e�B](pidlidcustomflag-canonical-property.md)
+- [PidLidCustomFlag 標準プロパティ](pidlidcustomflag-canonical-property.md)
     
-- [PidLidFormPropStream ���K���̃v���p�e�B](pidlidformpropstream-canonical-property.md)
+- [PidLidFormPropStream 標準プロパティ](pidlidformpropstream-canonical-property.md)
     
-- [PidLidFormStorage ���K���̃v���p�e�B](pidlidformstorage-canonical-property.md)
+- [PidLidFormStorage 標準プロパティ](pidlidformstorage-canonical-property.md)
     
-- [PidLidHeaderItem ���K���̃v���p�e�B](pidlidheaderitem-canonical-property.md)
+- [PidLidHeaderItem 標準プロパティ](pidlidheaderitem-canonical-property.md)
     
-- [PidLidPageDirStream ���K���̃v���p�e�B](pidlidpagedirstream-canonical-property.md)
+- [PidLidPageDirStream 標準プロパティ](pidlidpagedirstream-canonical-property.md)
     
-- [PidLidPropertyDefinitionStream ���K���̃v���p�e�B](pidlidpropertydefinitionstream-canonical-property.md)
+- [PidLidPropertyDefinitionStream 標準プロパティ](pidlidpropertydefinitionstream-canonical-property.md)
     
-- [PidLidReminderSet ���K���̃v���p�e�B](pidlidreminderset-canonical-property.md)
+- [PidLidReminderSet 標準プロパティ](pidlidreminderset-canonical-property.md)
     
-- [PidLidReminderTime ���K���̃v���p�e�B](pidlidremindertime-canonical-property.md)
+- [PidLidReminderTime 標準プロパティ](pidlidremindertime-canonical-property.md)
     
-- [PidLidFlagRequest ���K���̃v���p�e�B](pidlidflagrequest-canonical-property.md)
+- [PidLidFlagRequest 標準プロパティ](pidlidflagrequest-canonical-property.md)
     
-- [PidLidScriptStream ���K���̃v���p�e�B](pidlidscriptstream-canonical-property.md)
+- [PidLidScriptStream 標準プロパティ](pidlidscriptstream-canonical-property.md)
     
-- [PidLidSmartNoAttach ���K���̃v���p�e�B](pidlidsmartnoattach-canonical-property.md)
+- [PidLidSmartNoAttach 標準プロパティ](pidlidsmartnoattach-canonical-property.md)
     
-- [PidLidToDoTitle ���K���̃v���p�e�B](pidlidtodotitle-canonical-property.md)
+- [PidLidToDoTitle 標準プロパティ](pidlidtodotitle-canonical-property.md)
     
-- [PidLidUseTnef ���K���̃v���p�e�B](pidlidusetnef-canonical-property.md)
+- [PidLidUseTnef 標準プロパティ](pidlidusetnef-canonical-property.md)
     
-**PSETID_Meeting** ���O��Ԃ̃v���p�e�B�A���̂Ƃ���ł��B 
+**PSETID_Meeting**名前空間の名前付きプロパティは、次のとおりです。 
   
-- [PidLidMeetingType ���K���̃v���p�e�B](pidlidmeetingtype-canonical-property.md)
+- [PidLidMeetingType 標準プロパティ](pidlidmeetingtype-canonical-property.md)
     
-**PSETID_Task** ���O��Ԃ̃v���p�e�B�A���̂Ƃ���ł��B 
+**PSETID_Task**名前空間の名前付きプロパティは、次のとおりです。 
   
-- [PidLidTaskActualEffort ���K���̃v���p�e�B](pidlidtaskactualeffort-canonical-property.md)
+- [PidLidTaskActualEffort 標準プロパティ](pidlidtaskactualeffort-canonical-property.md)
     
-- [PidLidTaskDueDate ���K���̃v���p�e�B](pidlidtaskduedate-canonical-property.md)
+- [PidLidTaskDueDate 標準プロパティ](pidlidtaskduedate-canonical-property.md)
     
-- [PidLidTaskEstimatedEffort ���K���̃v���p�e�B](pidlidtaskestimatedeffort-canonical-property.md)
+- [PidLidTaskEstimatedEffort 標準プロパティ](pidlidtaskestimatedeffort-canonical-property.md)
     
-- [PidLidTaskFRecurring ���K���̃v���p�e�B](pidlidtaskfrecurring-canonical-property.md)
+- [PidLidTaskFRecurring 標準プロパティ](pidlidtaskfrecurring-canonical-property.md)
     
-- [PidLidTaskStartDate ���K���̃v���p�e�B](pidlidtaskstartdate-canonical-property.md)
+- [PidLidTaskStartDate 標準プロパティ](pidlidtaskstartdate-canonical-property.md)
     
-- [PidLidTaskStatus ���K���̃v���p�e�B](pidlidtaskstatus-canonical-property.md)
+- [PidLidTaskStatus 標準プロパティ](pidlidtaskstatus-canonical-property.md)
     
-**PS_INTERNET_HEADERS** ���O��Ԃ̃v���p�e�B�A���̂Ƃ���ł��B 
+**PS_INTERNET_HEADERS**名前空間の名前付きプロパティは、次のとおりです。 
   
-- [PidTagInternetReturnPath ���K���̃v���p�e�B](pidtaginternetreturnpath-canonical-property.md)
+- [PidTagInternetReturnPath 標準プロパティ](pidtaginternetreturnpath-canonical-property.md)
     
-**PSETID_Log** ���O��Ԃ̃v���p�e�B�A���̂Ƃ���ł��B 
+**PSETID_Log**名前空間の名前付きプロパティは、次のとおりです。 
   
-- [PidLidLogDuration ���K���̃v���p�e�B](pidlidlogduration-canonical-property.md)
+- [PidLidLogDuration 標準プロパティ](pidlidlogduration-canonical-property.md)
     
-- [PidLidLogEnd ���K���̃v���p�e�B](pidlidlogend-canonical-property.md)
+- [PidLidLogEnd 標準プロパティ](pidlidlogend-canonical-property.md)
     
-- [PidLidLogStart ���K���̃v���p�e�B](pidlidlogstart-canonical-property.md)
+- [PidLidLogStart 標準プロパティ](pidlidlogstart-canonical-property.md)
     
-- [PidLidLogType ���K���̃v���p�e�B](pidlidlogtype-canonical-property.md)
+- [PidLidLogType 標準プロパティ](pidlidlogtype-canonical-property.md)
     
-**PS_PUBLIC_STRINGS** ���O��Ԃ̃v���p�e�B�A���̂Ƃ���ł��B 
+**PS_PUBLIC_STRINGS**名前空間の名前付きプロパティは、次のとおりです。 
   
-- [PidNameKeywords ���K���̃v���p�e�B](pidnamekeywords-canonical-property.md)
+- [PidNameKeywords 標準プロパティ](pidnamekeywords-canonical-property.md)
     
-- [PidNameExchangeJunkEmailMoveStamp ���K���̃v���p�e�B](pidnameexchangejunkemailmovestamp-canonical-property.md)
+- [PidNameExchangeJunkEmailMoveStamp 標準プロパティ](pidnameexchangejunkemailmovestamp-canonical-property.md)
     
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
   
 [Outlook がメッセージのヘッダーのみをダウンロードしたかどうかを判別する](how-to-determine-if-outlook-downloaded-only-the-header-of-a-message.md)
   

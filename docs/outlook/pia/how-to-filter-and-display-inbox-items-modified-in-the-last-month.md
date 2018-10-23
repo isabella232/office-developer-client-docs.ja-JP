@@ -66,12 +66,12 @@ DateTime modified = nextRow.LocalTimeUTC(“LastModificationTime”);
 <tr class="even">
 <td><p>next7days</p></td>
 <td><p>%next7days(“SchemaName”)%</p></td>
-<td><p>抽出対象をSchemaName プロパティの値の範囲が次の 7 日間と等しいアイテムに制限します。</p></td>
+<td><p>抽出対象を SchemaName プロパティの値の範囲が次の 7 日間と等しいアイテムに制限します。</p></td>
 </tr>
 <tr class="odd">
 <td><p>last7days</p></td>
 <td><p>%last7days(“SchemaName”)%</p></td>
-<td><p>抽出対象をSchemaName プロパティの値の範囲が今日までの7 日間と等しいアイテムに制限します。</p></td>
+<td><p>抽出対象を SchemaName プロパティの値の範囲が今日までの 7 日間と等しいアイテムに制限します。</p></td>
 </tr>
 <tr class="even">
 <td><p>nextweek</p></td>

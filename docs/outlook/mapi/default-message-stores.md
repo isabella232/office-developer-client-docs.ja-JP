@@ -1,5 +1,5 @@
 ---
-title: ����̃��[���̕ۑ��ꏊ
+title: 既定のメッセージ ストア
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,41 +7,41 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: efa178eb-feb2-443f-8f6b-2ea53a456bf2
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 3f7bf720f9105f6a81b832233cc648bc1d9ac91d
 ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/23/2018
 ms.locfileid: "22576912"
 ---
-# <a name="default-message-stores"></a>����̃��[���̕ۑ��ꏊ
+# <a name="default-message-stores"></a>既定のメッセージ ストア
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-既定のメッセージ ストアは、いずれかの一般的な目的のタスクをメッセージングのクライアント アプリケーションを使用できます。 いくつかのメッセージ ストア プロバイダーは、既定のメッセージ ストアとして使用する場合に必要になるメッセージ ストア プロバイダーの省略可能な機能があります。 これは、とおりです。
+既定のメッセージ ストアは、クライアント アプリケーションが汎用メッセージング タスクに使用できるものです。 既定のメッセージ ストアとしてメッセージ ストア プロバイダーを使用する場合に、メッセージ ストア プロバイダーにとって必要となるいくつかのオプション機能があります。 それらは次のとおりです。
   
-- 実装の特別なフォルダー: 受信トレイ、送信トレイ、および検索結果のフォルダーです。
+- 受信トレイ、送信トレイ、および検索結果フォルダーといった特別なフォルダーを実装します。
     
-- �J���� nonread �̃��|�[�g��񋟂��܂��B
+- 開封済みレポートと未読レポートを提供します。
     
-- ���M����є��M�������b�Z�[�W�̑��M������܂��B
+- 受信メッセージと送信メッセージの送信を許可します。
     
-- �N���X�̔C�ӂ̃��b�Z�[�W����b�Z�[�W�̍쐬������܂��B
+- 任意のメッセージ クラスのメッセージの作成を許可します。
     
-- ���O�t���ƕ����l�̃v���p�e�B��T�|�[�g���܂��B
+- 名前付きプロパティと複数値プロパティをサポートします。
     
-- メッセージ ストア プロバイダーは、トランスポート プロバイダーと密接に関連があって、 [IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md)メソッドをサポートします。 
+- メッセージ ストア プロバイダーがトランスポート プロバイダーと密接に結合している場合でも、[IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md)メソッドをサポートします。 
     
-- �֘A����R���e���c�̃e�[�u����T�|�[�g���܂��B�ڍׂɂ��ẮA [�e�[�u���ȓ�e](contents-tables.md)��Q�Ƃ��Ă��������B
+- 関連するコンテンツ テーブルをサポートします。詳細については、[コンテンツ テーブル](contents-tables.md)を参照してください。
     
-- ���M���b�Z�[�W�Ƀ��b�Z�[�W������ꍇ�ɁAMAPI �X�v�[���[�̒ʒm��T�|�[�g���܂��B
+- 送信メッセージ キューにメッセージがある場合に、 MAPI スプーラーの通知をサポートします。
     
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[MAPI ���b�Z�[�W �X�g�A �v���o�C�_�[�̊J��](developing-a-mapi-message-store-provider.md)
+[MAPI メッセージ ストア プロバイダーの開発](developing-a-mapi-message-store-provider.md)
 
