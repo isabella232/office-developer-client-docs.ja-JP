@@ -33,8 +33,8 @@ ms.locfileid: "22580636"
     
 - [IMAPIStatus::ValidateState](imapistatus-validatestate.md)
     
-**IMAPIStatus::ValidateState**の呼び出しは、 MAPI スプーラーまたは MAPI サブシステムのいずれかで行われた場合のみ、パフォーマンスに影響します。 これらのメソッドが起動処理を遅らせるのは、MAPI スプーラーが起動タスクを完了するまでこれらのメソッドが完了できないためです。 
+**IMAPIStatus::ValidateState** の呼び出しは、MAPI スプーラーまたは MAPI サブシステムのいずれかで行われた場合のみ、パフォーマンスに影響します。 これらのメソッドが起動処理を遅らせるのは、MAPI スプーラーが起動タスクを完了するまでそのメソッドが完了できないためです。 
   
-また、起動時のメッセージ ストアの検索も避ける必要があります。 起動処理が終わってから、 [IMAPIContainer::SetSearchCriteria](imapicontainer-setsearchcriteria.md)の呼び出しを行ってください。 
+また、起動時のメッセージ ストアの検索も避ける必要があります。 起動処理が終わってから、[IMAPIContainer::SetSearchCriteria](imapicontainer-setsearchcriteria.md) の呼び出しを行ってください。 
   
 

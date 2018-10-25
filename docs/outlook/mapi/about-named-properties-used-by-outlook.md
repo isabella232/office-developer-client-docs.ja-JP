@@ -19,17 +19,17 @@ ms.locfileid: "22566230"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI は、特定のプロパティに名前を割り当て、これらの名前を一意識別子にマッピングし、この名前から識別子へのマッピングをセッション間で永続化するための機能を提供します。名前付きプロパティは、プロパティ セットの名前とグローバル一意識別子 (GUID) によって識別されます。名前には、数値または文字列を使用することができます。Microsoft Outlook 2013 または Microsoft Outlook 2010 のプロパティ セットの多くは、**PSETID_Appointment**といった、Outlook 2013 または Outlook 2010 で定義された名前空間です。 
+MAPI は、特定のプロパティに名前を割り当て、これらの名前を一意識別子にマッピングし、この名前から識別子へのマッピングをセッション間で永続化するための機能を提供します。名前付きプロパティは、プロパティ セットの名前とグローバル一意識別子 (GUID) によって識別されます。名前には、数値または文字列を使用することができます。Microsoft Outlook 2013 または Microsoft Outlook 2010 のプロパティ セットの多くは、**PSETID_Appointment** などの、Outlook 2013 または Outlook 2010 で定義された名前空間です。 
   
-名前付きプロパティは、[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)関数や [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)関数を使って操作されます。名前とプロパティ セット GUID は[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)関数に回されて、現在の MAPI セッションに有効なプロパティ識別子を取得します。プロパティ識別子はコンピューター端末によって異なることがあるため、名前付きのプロパティに一貫してアクセスする唯一の方法は、そのプロパティの名前とプロパティ セット GUID を知ることです。識別子の範囲は常に 0x8000 から 0xFFFE の間です。 
+名前付きプロパティは、[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) 関数や [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) 関数を使って操作されます。名前とプロパティ セット GUID は [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) 関数に回されて、現在の MAPI セッションに有効なプロパティ識別子を取得します。プロパティ識別子はコンピューター端末によって異なることがあるため、名前付きのプロパティに一貫してアクセスする唯一の方法は、そのプロパティの名前とプロパティ セット GUID を知ることです。識別子の範囲は常に 0x8000 から 0xFFFE の間です。 
   
-[IMAPIProp : IUnknown](imapipropiunknown.md)インターフェイスを実装するオブジェクトはすべて、名前付きプロパティをサポートすることができます。具体的には、MAPI サービス プロバイダーまたは MAPI クライアントは[IMAPIProp::GetProps](imapiprop-getprops.md)を実装して、名前付きプロパティの値を取得する必要があります。Outlook 2013 または Outlook 2010 で使用される名前付きプロパティの設定はサポートされていません。これは、他の MAPI プロバイダーまたはクライアントと共有されるデータが破損する危険があるためです。 
+[IMAPIProp : IUnknown](imapipropiunknown.md) インターフェイスを実装するオブジェクトはすべて、名前付きプロパティをサポートすることができます。具体的には、MAPI サービス プロバイダーまたは MAPI クライアントは [IMAPIProp::GetProps](imapiprop-getprops.md) を実装して、名前付きプロパティの値を取得する必要があります。Outlook 2013 または Outlook 2010 で使用される名前付きプロパティの設定はサポートされていません。これは、他の MAPI プロバイダーまたはクライアントと共有されるデータが破損する危険があるためです。 
   
-Outlook 2013 と Outlook 2010 では、 MAPI の名前付きプロパティを使用して、添付ファイルのセキュリティや会議の代替日時の提案などのさまざまな機能を実装しています。 Outlook 2013 と Outlook 2010 は、この基盤となるデータ上で、Outlook 2013 と Outlook 2010 のオブジェクト モデルのアイテム プロパティとして、これらのプロパティの一部を公開しています。 たとえば、オブジェクト モデル内の**ContactItem**オブジェクトである**Email1Address**プロパティは、**PSETID_Address**名前空間にある名前付きの[PidLidEmail1EmailAddress 標準プロパティ](pidlidemail1emailaddress-canonical-property.md)に対応します。 しかし、一般に、互換性とデータの整合性に対する懸念から、Outlook 2013 と Outlook 2010 で使用される MAPI プロパティの多くはオブジェクト モデルに公開されていません。 
+Outlook 2013 と Outlook 2010 では、MAPI の名前付きプロパティを使用して、添付ファイルのセキュリティや会議の代替日時の提案などのさまざまな機能を実装しています。 Outlook 2013 と Outlook 2010 は、この基盤となるデータ上で、Outlook 2013 と Outlook 2010 のオブジェクト モデルのアイテム プロパティとして、これらのプロパティの一部を公開しています。 たとえば、オブジェクト モデル内の **ContactItem** オブジェクトである **Email1Address** プロパティは、**PSETID_Address** 名前空間にある名前付きの [PidLidEmail1EmailAddress 標準プロパティ](pidlidemail1emailaddress-canonical-property.md)に対応します。 しかし、一般に、互換性とデータの整合性に対する懸念から、Outlook 2013 と Outlook 2010 で使用される MAPI プロパティの多くはオブジェクト モデルに公開されていません。 
   
 このリファレンスでは、以下に列挙する多数の名前付きプロパティについて説明します。
   
-**PSETID_Address**名前空間の名前付きプロパティは、次のとおりです。 
+**PSETID_Address** 名前空間の名前付きプロパティは、次のとおりです。 
   
 - [PidLidEmail1AddressType 標準プロパティ](pidlidemail1addresstype-canonical-property.md)
     
@@ -83,7 +83,7 @@ Outlook 2013 と Outlook 2010 では、 MAPI の名前付きプロパティを�
     
 - [PidLidYomiLastName 標準プロパティ](pidlidyomilastname-canonical-property.md)
     
-**PSETID_Appointment**名前空間の名前付きプロパティは、次のとおりです。 
+**PSETID_Appointment** 名前空間の名前付きプロパティは、次のとおりです。 
   
 - [PidLidAllAttendeesString 標準プロパティ](pidlidallattendeesstring-canonical-property.md)
     
@@ -105,7 +105,7 @@ Outlook 2013 と Outlook 2010 では、 MAPI の名前付きプロパティを�
     
 - [PidLidToAttendeesString 標準プロパティ](pidlidtoattendeesstring-canonical-property.md)
     
-**PSETID_Common**名前空間の名前付きプロパティは、次のとおりです。 
+**PSETID_Common** 名前空間の名前付きプロパティは、次のとおりです。 
   
 - [PidLidCommonEnd 標準プロパティ](pidlidcommonend-canonical-property.md)
     
@@ -141,11 +141,11 @@ Outlook 2013 と Outlook 2010 では、 MAPI の名前付きプロパティを�
     
 - [PidLidUseTnef 標準プロパティ](pidlidusetnef-canonical-property.md)
     
-**PSETID_Meeting**名前空間の名前付きプロパティは、次のとおりです。 
+**PSETID_Meeting** 名前空間の名前付きプロパティは、次のとおりです。 
   
 - [PidLidMeetingType 標準プロパティ](pidlidmeetingtype-canonical-property.md)
     
-**PSETID_Task**名前空間の名前付きプロパティは、次のとおりです。 
+**PSETID_Task** 名前空間の名前付きプロパティは、次のとおりです。 
   
 - [PidLidTaskActualEffort 標準プロパティ](pidlidtaskactualeffort-canonical-property.md)
     
@@ -159,11 +159,11 @@ Outlook 2013 と Outlook 2010 では、 MAPI の名前付きプロパティを�
     
 - [PidLidTaskStatus 標準プロパティ](pidlidtaskstatus-canonical-property.md)
     
-**PS_INTERNET_HEADERS**名前空間の名前付きプロパティは、次のとおりです。 
+**PS_INTERNET_HEADERS** 名前空間の名前付きプロパティは、次のとおりです。 
   
 - [PidTagInternetReturnPath 標準プロパティ](pidtaginternetreturnpath-canonical-property.md)
     
-**PSETID_Log**名前空間の名前付きプロパティは、次のとおりです。 
+**PSETID_Log** 名前空間の名前付きプロパティは、次のとおりです。 
   
 - [PidLidLogDuration 標準プロパティ](pidlidlogduration-canonical-property.md)
     
@@ -173,7 +173,7 @@ Outlook 2013 と Outlook 2010 では、 MAPI の名前付きプロパティを�
     
 - [PidLidLogType 標準プロパティ](pidlidlogtype-canonical-property.md)
     
-**PS_PUBLIC_STRINGS**名前空間の名前付きプロパティは、次のとおりです。 
+**PS_PUBLIC_STRINGS** 名前空間の名前付きプロパティは、次のとおりです。 
   
 - [PidNameKeywords 標準プロパティ](pidnamekeywords-canonical-property.md)
     

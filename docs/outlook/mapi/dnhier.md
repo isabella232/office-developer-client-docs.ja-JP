@@ -19,7 +19,7 @@ ms.locfileid: "25389086"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-階層の完全同期の一部である[階層状態のダウンロード](download-hierarchy-state.md)中に、サーバーから階層をダウンロードするための情報です。 このダウンロード手順では、 Microsoft Exchange の増分変更の同期 (ICS) を使用します。 ICSの詳細については、[ICSの評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
+階層の完全同期の一部である[階層状態のダウンロード](download-hierarchy-state.md)中に、サーバーから階層をダウンロードするための情報です。 このダウンロード手順では、Microsoft Exchange の増分変更の同期 (ICS) を使用します。 ICS の詳細については、[ICS の評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -39,31 +39,31 @@ struct DNHIER
 
 _ulFlags_
   
->  [in]ダウンロード中の適切な動作を決定するフラグです。 
+>  [in] ダウンロード中の適切な動作を決定するフラグです。 
     
    - DNH_OK
     
-   - [in]ダウンロードに成功しました。 クライアントは、サーバーから情報をダウンロードした後、これを設定します。
+   - [in] ダウンロードに成功しました。 クライアントは、サーバーから情報をダウンロードした後、これを設定します。
     
 _pstmReserved_
   
-> [out]このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
+> [out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
     
 _pxihc_
   
->  [out]階層の増分変更のダウンロードをサポートする、**IExchangeImportHierarchyChanges**の階層インターフェイスのポインターです。 **IExchangeImportHierarchyChanges**の詳細については、[ICSの評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
+>  [out] 階層の増分変更のダウンロードをサポートする、**IExchangeImportHierarchyChanges** の階層インターフェイスのポインターです。 **IExchangeImportHierarchyChanges** の詳細については、[ICS の評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
     
 _cEntNew_
   
-> [out]ローカル ストアに追加されたフォルダーの数です。 ICS を使用してダウンロードしている間に Outlook がこの値を設定します。
+> [out] ローカル ストアに追加されたフォルダーの数です。 ICS を使用してダウンロードしている間に Outlook がこの値を設定します。
     
 _cEntMod_
   
-> [out]ローカル ストアで変更されるフォルダーの数です。 ICS を使用してダウンロードしている間に Outlook がこの値を設定します。
+> [out] ローカル ストアで変更されるフォルダーの数です。 ICS を使用してダウンロードしている間に Outlook がこの値を設定します。
     
 _cEntDel_
   
-> [out]ローカル ストアで削除されるフォルダーの数です。 ICS を使用してダウンロードしている間に Outlook がこの値を設定します。
+> [out] ローカル ストアで削除されるフォルダーの数です。 ICS を使用してダウンロードしている間に Outlook がこの値を設定します。
     
 ## <a name="see-also"></a>関連項目
 

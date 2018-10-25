@@ -21,7 +21,7 @@ ms.locfileid: "25391949"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[テーブルの状態をダウンロード](download-table-state.md)中に、サーバーからフォルダーの内容をダウンロードするための情報です。 このダウンロード手順では、 Microsoft Exchange の増分変更の同期 (ICS) を使用します。 ICSの詳細については、[ICSの評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
+[テーブルの状態をダウンロード](download-table-state.md)中に、サーバーからフォルダーの内容をダウンロードするための情報です。 このダウンロード手順では、Microsoft Exchange の増分変更の同期 (ICS) を使用します。 ICS の詳細については、[ICS の評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -39,19 +39,19 @@ struct DNTBLE
 
  _cEntNew_
   
-> [out]ローカル ストアに追加されたアイテムの数です。 ICS を使用してダウンロードしている間に Outlook がこの値を設定します。
+> [out] ローカル ストアに追加されたアイテムの数です。 ICS を使用してダウンロードしている間に Outlook がこの値を設定します。
     
  _cEntMod_
   
-> [out]ローカル ストアで変更されるアイテムの数です。 ICS を使用してダウンロードしている間に Outlook がこの値を設定します。
+> [out] ローカル ストアで変更されるアイテムの数です。 ICS を使用してダウンロードしている間に Outlook がこの値を設定します。
     
  _cEntRead_
   
-> [出力]ローカル ストアで開封済みまたは未読にされているアイテムの数です。 ICS を使用してダウンロードしている間に Outlook がこの値を設定します。
+> [out] ローカル ストアで開封済みまたは未読にされているアイテムの数です。 ICS を使用してダウンロードしている間に Outlook がこの値を設定します。
     
  _cEntDel_
   
-> [out]ローカル ストアで削除されるアイテムの数です。 ICS を使用してダウンロードしている間に Outlook がこの値を設定します。
+> [out] ローカル ストアで削除されるアイテムの数です。 ICS を使用してダウンロードしている間に Outlook がこの値を設定します。
     
 ## <a name="see-also"></a>関連項目
 

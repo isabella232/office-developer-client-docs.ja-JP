@@ -51,75 +51,75 @@ struct DNTBL
 
 _ulFlags_
   
-> [in]動作を変更するフラグです。 
+> [in] 動作を変更するフラグです 
     
   - DNT_OK
     
-    - [in]ダウンロードに成功しました。 クライアントは、サーバーから情報をダウンロードした後、これを設定します。
+    - [in] ダウンロードに成功しました。 クライアントは、サーバーから情報をダウンロードした後、これを設定します。
     
 _pstmReserved1_
   
-> [out]このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
+> [out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
     
 _pstmReserved2_
   
-> [out]このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
+> [out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
     
 _pstmReserved3_
   
-> [out]このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
+> [out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
     
 _pstmReserved4_
   
-> [out]このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
+> [out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
     
 _pxicc_
   
->  [out] 内容変更のダウンロードをサポートする、**IExchangeImportContentsChanges**の内容インターフェイスのポインターです。 **IExchangeImportContentsChanges**の詳細については、[ICSの評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
+>  [out] 内容変更のダウンロードをサポートする、**IExchangeImportContentsChanges** の内容インターフェイスのポインターです。 **IExchangeImportContentsChanges** の詳細については、[ICS の評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
     
 _pxihc_
   
->  [out]階層の増分変更のダウンロードをサポートする、**IExchangeImportHierarchyChanges**の階層インターフェイスのポインターです。 **IExchangeImportHierarchyChanges**の詳細については、[ICSの評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
+>  [out] 階層の増分変更のダウンロードをサポートする、**IExchangeImportHierarchyChanges** の階層インターフェイスのポインターです。 **IExchangeImportHierarchyChanges** の詳細については、[ICS の評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
     
 _pszName_
   
->  [out]フォルダーの名前です。 
+>  [out] フォルダーの名前です。 
     
 _ftLastMod_
   
->  [out]フォルダーの最終変更時刻。 
+>  [out] フォルダーの最終変更時刻です。 
     
 _ulRights_
   
->  [out]フォルダーの**[PR_RIGHTS](https://msdn.microsoft.com/library/ee238052%28v=EXCHG.80%29.aspx)** プロパティの値です。 
+>  [out] フォルダーの **[PR_RIGHTS](https://msdn.microsoft.com/library/ee238052%28v=EXCHG.80%29.aspx)** プロパティの値です。 
     
 _feid_
   
->  [out]フォルダーのエントリ ID です。 
+>  [out] フォルダーのエントリ ID です。 
     
 _uintReserved_
   
->  [out]このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
+>  [out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
     
 _rgte_
   
-> [out]通常 (または表示) アイテムと関連する (または非表示) アイテムの変更。  *rgte [0]* は通常アイテム、*rgte [1]* は関連するアイテムに使います。 増分変更の同期 (ICS) を使用してダウンロードしている間に Outlook がこのメンバーを設定します。 ICSの詳細については、[ICSの評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
+> [out] 通常 (または表示) アイテムと関連する (または非表示) アイテムの変更です。  *rgte [0]* は通常アイテム、*rgte [1]* は関連するアイテムに使います。 増分変更の同期 (ICS) を使用してダウンロードしている間に Outlook がこのメンバーを設定します。 ICS の詳細については、[ICS の評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)を参照してください。
     
 _lpsrReserved_
   
->  [in]/[out]このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
+>  [in]/[out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
     
 _boReserved_
   
->  [in]このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
+>  [in] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
     
 _pReserved1_
   
->  [out]このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
+>  [out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
     
 _pReserved2_
   
->  [in]このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
+>  [in] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
     
 ## <a name="see-also"></a>関連項目
 
