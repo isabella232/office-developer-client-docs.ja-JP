@@ -1,24 +1,24 @@
 ---
-title: Views コレクションと Fields コレクションの使用例 (VB)
-TOCTitle: Views and Fields Collections Example (VB)
+title: ビューとフィールドのコレクションの使用例 (VB)
+TOCTitle: Views and Fields Collections example (VB)
 ms:assetid: 7c166bea-d6a3-0a9d-5220-af72996a76fd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249518(v=office.15)
 ms:contentKeyID: 48545828
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b2b84fa0cef3897777140d25b56e4e1d3191a0e7
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d62adad4a62ed02967c6a279501ede5bc750eaea
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476407"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863845"
 ---
-# <a name="views-and-fields-collections-example-vb"></a><span data-ttu-id="9fab4-102">Views コレクションと Fields コレクションの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="9fab4-102">Views and Fields Collections Example (VB)</span></span>
+# <a name="views-and-fields-collections-example-vb"></a><span data-ttu-id="06560-102">ビューとフィールドのコレクションの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="06560-102">Views and Fields Collections example (VB)</span></span>
 
 
-<span data-ttu-id="9fab4-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="9fab4-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="06560-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="06560-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="9fab4-104">次のコードでは、ビューのフィールド情報を取得するための、[Command](command-property-adox.md) プロパティおよび [Recordset](recordset-object-ado.md) オブジェクトの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9fab4-104">The following code demonstrates how to use the [Command](command-property-adox.md) property and the [Recordset](recordset-object-ado.md) object to retrieve field information for the view.</span></span>
+<span data-ttu-id="06560-104">次のコードでは、ビューのフィールド情報を取得するための、[Command](command-property-adox.md) プロパティおよび [Recordset](recordset-object-ado.md) オブジェクトの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="06560-104">The following code demonstrates how to use the [Command](command-property-adox.md) property and the [Recordset](recordset-object-ado.md) object to retrieve field information for the view.</span></span>
 
 ```vb 
  

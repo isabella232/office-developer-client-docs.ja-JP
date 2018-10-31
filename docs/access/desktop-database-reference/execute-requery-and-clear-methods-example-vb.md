@@ -1,24 +1,24 @@
 ---
-title: Execute メソッド、Requery メソッド、および Clear メソッドの使用例 (VB)
-TOCTitle: Execute, Requery, and Clear Methods Example (VB)
+title: Execute メソッド、Requery メソッド、Clear メソッドの使用例 (VB)
+TOCTitle: Execute, Requery, and Clear methods example (VB)
 ms:assetid: 6d700971-6b77-bd41-dd22-df53f902c0f2
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249432(v=office.15)
 ms:contentKeyID: 48545491
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6d32d4e0c56ea4b6a03474562410255bbc5952f4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c8d6c1a24bd20835ed96842d995a3c1568ae7139
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478578"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863025"
 ---
-# <a name="execute-requery-and-clear-methods-example-vb"></a><span data-ttu-id="aafa1-102">Execute メソッド、Requery メソッド、および Clear メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aafa1-102">Execute, Requery, and Clear Methods Example (VB)</span></span>
+# <a name="execute-requery-and-clear-methods-example-vb"></a><span data-ttu-id="32494-102">Execute メソッド、Requery メソッド、Clear メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="32494-102">Execute, Requery, and Clear methods example (VB)</span></span>
 
 
-<span data-ttu-id="aafa1-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="aafa1-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="32494-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="32494-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="aafa1-p101">この例では、Command オブジェクトの Execute メソッドを実行する場合と Connection オブジェクトの Execute メソッドを実行する場合を示します。また、Requery メソッドを使用して Recordset 内の最新のデータを取得し、Clear メソッドを使用して Errors コレクションの内容をクリアします (Errors コレクションには、Recordset の ActiveConnection プロパティの Connection オブジェクトからアクセスします)。このプロシージャを実行するには ExecuteCommand プロシージャおよび PrintOutput プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="aafa1-p101">This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object. It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a [Recordset](recordset-object-ado.md), and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection. (The **Errors** collection is accessed via the **Connection** object of the [ActiveConnection](activeconnection-property-ado.md) property of the [Recordset](recordset-object-ado.md).) The ExecuteCommand and PrintOutput procedures are required for this procedure to run.</span></span>
+<span data-ttu-id="32494-p101">この例では、Command オブジェクトの Execute メソッドを実行する場合と Connection オブジェクトの Execute メソッドを実行する場合を示します。また、Requery メソッドを使用して Recordset 内の最新のデータを取得し、Clear メソッドを使用して Errors コレクションの内容をクリアします (Errors コレクションには、Recordset の ActiveConnection プロパティの Connection オブジェクトからアクセスします)。このプロシージャを実行するには ExecuteCommand プロシージャおよび PrintOutput プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="32494-p101">This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object. It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a [Recordset](recordset-object-ado.md), and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection. (The **Errors** collection is accessed via the **Connection** object of the [ActiveConnection](activeconnection-property-ado.md) property of the [Recordset](recordset-object-ado.md).) The ExecuteCommand and PrintOutput procedures are required for this procedure to run.</span></span>
 
 ```vb 
  

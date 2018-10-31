@@ -1,24 +1,24 @@
 ---
 title: Create メソッドの使用例 (VB)
-TOCTitle: Create Method Example (VB)
+TOCTitle: Create method example (VB)
 ms:assetid: 3e6a4f3d-3b25-2dfb-5ef3-6a4c5326b78f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249171(v=office.15)
 ms:contentKeyID: 48544372
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: df55297ecc4ebd6875b4b28cc7bc45038789d83c
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 3eea826ae452576e02ab6f98bd75369ff079f7de
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478751"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860064"
 ---
-# <a name="create-method-example-vb"></a><span data-ttu-id="39e0d-102">Create メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="39e0d-102">Create Method Example (VB)</span></span>
+# <a name="create-method-example-vb"></a><span data-ttu-id="3a146-102">Create メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="3a146-102">Create method example (VB)</span></span>
 
 
-<span data-ttu-id="39e0d-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="39e0d-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="3a146-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="3a146-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="39e0d-104">次のコードでは、[Create](create-method-adox.md) メソッドを使用して新しい Microsoft Jet データベースを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="39e0d-104">The following code shows how to create a new Microsoft Jet database with the [Create](create-method-adox.md) method.</span></span>
+<span data-ttu-id="3a146-104">次のコードでは、[Create](create-method-adox.md) メソッドを使用して新しい Microsoft Jet データベースを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="3a146-104">The following code shows how to create a new Microsoft Jet database with the [Create](create-method-adox.md) method.</span></span>
 
 ```vb 
  

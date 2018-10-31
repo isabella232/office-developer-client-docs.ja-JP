@@ -1,24 +1,24 @@
 ---
-title: UpdateBatch メソッドおよび CancelBatch メソッドの使用例 (VC++)
-TOCTitle: UpdateBatch and CancelBatch Methods Example (VC++)
+title: UpdateBatch メソッドと CancelBatch メソッドの使用例 (VC++)
+TOCTitle: UpdateBatch and CancelBatch methods example (VC++)
 ms:assetid: 49eb3cc7-16af-6e2b-911f-ddcf643cf699
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249227(v=office.15)
 ms:contentKeyID: 48544651
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e17f2e8b8aae50b49b884a0db52bf8531d5faa21
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 4ea8a1cee322798545e9727f61dc4426186e0e3c
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478121"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861926"
 ---
-# <a name="updatebatch-and-cancelbatch-methods-example-vc"></a><span data-ttu-id="fa8ba-102">UpdateBatch メソッドおよび CancelBatch メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="fa8ba-102">UpdateBatch and CancelBatch Methods Example (VC++)</span></span>
+# <a name="updatebatch-and-cancelbatch-methods-example-vc"></a><span data-ttu-id="d0234-102">UpdateBatch メソッドと CancelBatch メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="d0234-102">UpdateBatch and CancelBatch methods example (VC++)</span></span>
 
 
-<span data-ttu-id="fa8ba-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="fa8ba-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="d0234-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="d0234-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="fa8ba-104">次の例では、[UpdateBatch](updatebatch-method-ado.md) メソッドと [CancelBatch](cancelbatch-method-ado.md) メソッドを組み合わせて使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="fa8ba-104">This example demonstrates the [UpdateBatch](updatebatch-method-ado.md) method in conjunction with the [CancelBatch](cancelbatch-method-ado.md) method.</span></span>
+<span data-ttu-id="d0234-104">次の例では、[UpdateBatch](updatebatch-method-ado.md) メソッドと [CancelBatch](cancelbatch-method-ado.md) メソッドを組み合わせて使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="d0234-104">This example demonstrates the [UpdateBatch](updatebatch-method-ado.md) method in conjunction with the [CancelBatch](cancelbatch-method-ado.md) method.</span></span>
 
 ```cpp 
  
@@ -243,7 +243,7 @@ void PrintComError(_com_error &e)
 // EndUpdateBatchCpp 
 ```
 
-<span data-ttu-id="fa8ba-105">**UpdateBatchX.h**</span><span class="sxs-lookup"><span data-stu-id="fa8ba-105">**UpdateBatchX.h**</span></span>
+<span data-ttu-id="d0234-105">**UpdateBatchX.h**</span><span class="sxs-lookup"><span data-stu-id="d0234-105">**UpdateBatchX.h**</span></span>
 
 ```cpp 
  

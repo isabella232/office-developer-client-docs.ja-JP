@@ -1,24 +1,24 @@
 ---
 title: Indexes の Append メソッドの使用例 (VC++)
-TOCTitle: Indexes Append Method Example (VC++)
+TOCTitle: Indexes Append method example (VC++)
 ms:assetid: fd7a020e-19bd-db14-bcdf-d34b23002e44
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250302(v=office.15)
 ms:contentKeyID: 48548918
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 40c397b69c8a8288ef35d0d5e188512cdf315adc
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: aba5cd48caa791817c6d8c4083d8a340aba55283
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479065"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863361"
 ---
-# <a name="indexes-append-method-example-vc"></a><span data-ttu-id="3e86e-102">Indexes の Append メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="3e86e-102">Indexes Append Method Example (VC++)</span></span>
+# <a name="indexes-append-method-example-vc"></a><span data-ttu-id="5da0c-102">Indexes の Append メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="5da0c-102">Indexes Append method example (VC++)</span></span>
 
 
-<span data-ttu-id="3e86e-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="3e86e-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="5da0c-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="5da0c-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="3e86e-p101">次のコードでは、新しいインデックスの作成方法を示します。インデックスは、テーブル内の 2 つの列に追加されます。</span><span class="sxs-lookup"><span data-stu-id="3e86e-p101">The following code demonstrates how to create a new index. The index is on two columns in the table.</span></span>
+<span data-ttu-id="5da0c-p101">次のコードでは、新しいインデックスの作成方法を示します。インデックスは、テーブル内の 2 つの列に追加されます。</span><span class="sxs-lookup"><span data-stu-id="5da0c-p101">The following code demonstrates how to create a new index. The index is on two columns in the table.</span></span>
 
 ```cpp 
  

@@ -1,24 +1,24 @@
 ---
 title: BeginTrans、CommitTrans、RollbackTrans メソッドの使用例 (VB)
-TOCTitle: BeginTrans, CommitTrans, and RollbackTrans Methods Example (VB)
+TOCTitle: BeginTrans, CommitTrans, and RollbackTrans methods example (VB)
 ms:assetid: 12fce322-dba7-9159-8a09-7f6daf1a80ed
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248904(v=office.15)
 ms:contentKeyID: 48543357
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b7a667130cbd3b756bfda9e73e54d83217600fcc
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a97d461cfe42fc1824d9f04c4dcb6b9a91169566
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478523"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860099"
 ---
-# <a name="begintrans-committrans-and-rollbacktrans-methods-example-vb"></a><span data-ttu-id="6ca19-102">BeginTrans メソッド、CommitTrans メソッド、および RollbackTrans メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="6ca19-102">BeginTrans, CommitTrans, and RollbackTrans Methods Example (VB)</span></span>
+# <a name="begintrans-committrans-and-rollbacktrans-methods-example-vb"></a><span data-ttu-id="00441-102">BeginTrans メソッド、CommitTrans メソッド、RollbackTrans メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="00441-102">BeginTrans, CommitTrans, and RollbackTrans methods example (VB)</span></span>
 
 
-<span data-ttu-id="6ca19-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="6ca19-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="00441-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="00441-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="6ca19-p101">この例では、データベースの ***Titles*** テーブル内のすべての心理学書の書籍種別を変更します。[BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドで、***Titles*** テーブルに対するすべての変更を分離するトランザクションを開始した後、[CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドで変更を保存します。[RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドを使用すると、[Update](update-method-ado.md) メソッドで保存した変更を変更前の状態に戻すことができます。</span><span class="sxs-lookup"><span data-stu-id="6ca19-p101">This example changes the book type of all psychology books in the ***Titles*** table of the database. After the [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) method starts a transaction that isolates all the changes made to the ***Titles*** table, the [CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) method saves the changes. You can use the [RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) method to undo changes that you saved using the [Update](update-method-ado.md) method.</span></span>
+<span data-ttu-id="00441-p101">この例では、データベースの ***Titles*** テーブル内のすべての心理学書の書籍種別を変更します。[BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドで、***Titles*** テーブルに対するすべての変更を分離するトランザクションを開始した後、[CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドで変更を保存します。[RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドを使用すると、[Update](update-method-ado.md) メソッドで保存した変更を変更前の状態に戻すことができます。</span><span class="sxs-lookup"><span data-stu-id="00441-p101">This example changes the book type of all psychology books in the ***Titles*** table of the database. After the [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) method starts a transaction that isolates all the changes made to the ***Titles*** table, the [CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) method saves the changes. You can use the [RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) method to undo changes that you saved using the [Update](update-method-ado.md) method.</span></span>
 
 ```vb 
  

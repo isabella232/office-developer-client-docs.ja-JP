@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250021(v=office.15)
 ms:contentKeyID: 48547773
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f7e46792f674a795a4851cc3e4332440c681c760
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 9e8e6203e4a897107af6cce495c5bd459932281a
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477068"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862248"
 ---
-# <a name="parameterattributesenum"></a><span data-ttu-id="e28b9-102">ParameterAttributesEnum</span><span class="sxs-lookup"><span data-stu-id="e28b9-102">ParameterAttributesEnum</span></span>
+# <a name="parameterattributesenum"></a><span data-ttu-id="b57d4-102">ParameterAttributesEnum</span><span class="sxs-lookup"><span data-stu-id="b57d4-102">ParameterAttributesEnum</span></span>
 
 
-<span data-ttu-id="e28b9-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="e28b9-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="b57d4-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="b57d4-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="e28b9-104">[Parameter](parameter-object-ado.md) オブジェクトの属性を表します。</span><span class="sxs-lookup"><span data-stu-id="e28b9-104">Specifies the attributes of a [Parameter](parameter-object-ado.md) object.</span></span>
+<span data-ttu-id="b57d4-104">[Parameter](parameter-object-ado.md) オブジェクトの属性を表します。</span><span class="sxs-lookup"><span data-stu-id="b57d4-104">Specifies the attributes of a [Parameter](parameter-object-ado.md) object.</span></span>
 
 <table>
 <colgroup>
@@ -28,36 +28,36 @@ ms.locfileid: "25477068"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="e28b9-105">定数</span><span class="sxs-lookup"><span data-stu-id="e28b9-105">Constant</span></span></p></th>
-<th><p><span data-ttu-id="e28b9-106">値</span><span class="sxs-lookup"><span data-stu-id="e28b9-106">Value</span></span></p></th>
-<th><p><span data-ttu-id="e28b9-107">説明</span><span class="sxs-lookup"><span data-stu-id="e28b9-107">Description</span></span></p></th>
+<th><p><span data-ttu-id="b57d4-105">定数</span><span class="sxs-lookup"><span data-stu-id="b57d4-105">Constant</span></span></p></th>
+<th><p><span data-ttu-id="b57d4-106">値</span><span class="sxs-lookup"><span data-stu-id="b57d4-106">Value</span></span></p></th>
+<th><p><span data-ttu-id="b57d4-107">説明</span><span class="sxs-lookup"><span data-stu-id="b57d4-107">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="e28b9-108"><strong>adParamSigned</strong></span><span class="sxs-lookup"><span data-stu-id="e28b9-108"><strong>adParamSigned</strong></span></span></p></td>
-<td><p><span data-ttu-id="e28b9-109">16</span><span class="sxs-lookup"><span data-stu-id="e28b9-109">16</span></span></p></td>
-<td><p><span data-ttu-id="e28b9-110">パラメーターに符号付きの値を指定できることを示します。</span><span class="sxs-lookup"><span data-stu-id="e28b9-110">Indicates that the parameter accepts signed values.</span></span></p></td>
+<td><p><span data-ttu-id="b57d4-108"><strong>adParamSigned</strong></span><span class="sxs-lookup"><span data-stu-id="b57d4-108"><strong>adParamSigned</strong></span></span></p></td>
+<td><p><span data-ttu-id="b57d4-109">16</span><span class="sxs-lookup"><span data-stu-id="b57d4-109">16</span></span></p></td>
+<td><p><span data-ttu-id="b57d4-110">パラメーターに符号付きの値を指定できることを示します。</span><span class="sxs-lookup"><span data-stu-id="b57d4-110">Indicates that the parameter accepts signed values.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="e28b9-111"><strong>adParamNullable</strong></span><span class="sxs-lookup"><span data-stu-id="e28b9-111"><strong>adParamNullable</strong></span></span></p></td>
-<td><p><span data-ttu-id="e28b9-112">64</span><span class="sxs-lookup"><span data-stu-id="e28b9-112">64</span></span></p></td>
-<td><p><span data-ttu-id="e28b9-113">パラメーターに null 値を指定できることを示します。</span><span class="sxs-lookup"><span data-stu-id="e28b9-113">Indicates that the parameter accepts null values.</span></span></p></td>
+<td><p><span data-ttu-id="b57d4-111"><strong>adParamNullable</strong></span><span class="sxs-lookup"><span data-stu-id="b57d4-111"><strong>adParamNullable</strong></span></span></p></td>
+<td><p><span data-ttu-id="b57d4-112">64</span><span class="sxs-lookup"><span data-stu-id="b57d4-112">64</span></span></p></td>
+<td><p><span data-ttu-id="b57d4-113">パラメーターに null 値を指定できることを示します。</span><span class="sxs-lookup"><span data-stu-id="b57d4-113">Indicates that the parameter accepts null values.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="e28b9-114"><strong>adParamLong</strong></span><span class="sxs-lookup"><span data-stu-id="e28b9-114"><strong>adParamLong</strong></span></span></p></td>
-<td><p><span data-ttu-id="e28b9-115"> 
+<td><p><span data-ttu-id="b57d4-114"><strong>adParamLong</strong></span><span class="sxs-lookup"><span data-stu-id="b57d4-114"><strong>adParamLong</strong></span></span></p></td>
+<td><p><span data-ttu-id="b57d4-115"> 
 128 
-</span><span class="sxs-lookup"><span data-stu-id="e28b9-115">128</span></span></p></td>
-<td><p><span data-ttu-id="e28b9-116">パラメーターにロング バイナリ型のデータを指定できることを示します。</span><span class="sxs-lookup"><span data-stu-id="e28b9-116">Indicates that the parameter accepts long binary data.</span></span></p></td>
+</span><span class="sxs-lookup"><span data-stu-id="b57d4-115">128</span></span></p></td>
+<td><p><span data-ttu-id="b57d4-116">パラメーターにロング バイナリ型のデータを指定できることを示します。</span><span class="sxs-lookup"><span data-stu-id="b57d4-116">Indicates that the parameter accepts long binary data.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="e28b9-117">**ADO/WFC 等価**</span><span class="sxs-lookup"><span data-stu-id="e28b9-117">**ADO/WFC Equivalent**</span></span>
+### <a name="adowfc-equivalent"></a><span data-ttu-id="b57d4-117">ADO/WFC に相当</span><span class="sxs-lookup"><span data-stu-id="b57d4-117">ADO/WFC equivalent</span></span>
 
-<span data-ttu-id="e28b9-118">パッケージ: **com.ms.wfc.data**</span><span class="sxs-lookup"><span data-stu-id="e28b9-118">Package: **com.ms.wfc.data**</span></span>
+<span data-ttu-id="b57d4-118">パッケージ: **com.ms.wfc.data**</span><span class="sxs-lookup"><span data-stu-id="b57d4-118">Package: **com.ms.wfc.data**</span></span>
 
 <table>
 <colgroup>
@@ -65,18 +65,18 @@ ms.locfileid: "25477068"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="e28b9-119">定数</span><span class="sxs-lookup"><span data-stu-id="e28b9-119">Constant</span></span></p></th>
+<th><p><span data-ttu-id="b57d4-119">定数</span><span class="sxs-lookup"><span data-stu-id="b57d4-119">Constant</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="e28b9-120">AdoEnums.ParameterAttributes.SIGNED</span><span class="sxs-lookup"><span data-stu-id="e28b9-120">AdoEnums.ParameterAttributes.SIGNED</span></span></p></td>
+<td><p><span data-ttu-id="b57d4-120">AdoEnums.ParameterAttributes.SIGNED</span><span class="sxs-lookup"><span data-stu-id="b57d4-120">AdoEnums.ParameterAttributes.SIGNED</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="e28b9-121">AdoEnums.ParameterAttributes.NULLABLE</span><span class="sxs-lookup"><span data-stu-id="e28b9-121">AdoEnums.ParameterAttributes.NULLABLE</span></span></p></td>
+<td><p><span data-ttu-id="b57d4-121">AdoEnums.ParameterAttributes.NULLABLE</span><span class="sxs-lookup"><span data-stu-id="b57d4-121">AdoEnums.ParameterAttributes.NULLABLE</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="e28b9-122">AdoEnums.ParameterAttributes.LONG</span><span class="sxs-lookup"><span data-stu-id="e28b9-122">AdoEnums.ParameterAttributes.LONG</span></span></p></td>
+<td><p><span data-ttu-id="b57d4-122">AdoEnums.ParameterAttributes.LONG</span><span class="sxs-lookup"><span data-stu-id="b57d4-122">AdoEnums.ParameterAttributes.LONG</span></span></p></td>
 </tr>
 </tbody>
 </table>

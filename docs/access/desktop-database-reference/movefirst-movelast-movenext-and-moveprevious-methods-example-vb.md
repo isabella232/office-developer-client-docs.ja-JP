@@ -1,24 +1,24 @@
 ---
-title: MoveFirst、MoveLast、MoveNext、および MovePrevious メソッドの使用例 (VB)
-TOCTitle: MoveFirst, MoveLast, MoveNext, and MovePrevious Methods Example (VB)
+title: MoveFirst メソッド、MoveLast メソッド、MoveNext メソッド、MovePrevious メソッドの使用例 (VB)
+TOCTitle: MoveFirst, MoveLast, MoveNext, and MovePrevious methods example (VB)
 ms:assetid: 61f82932-2ce9-341f-b120-168f786a9040
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249364(v=office.15)
 ms:contentKeyID: 48545226
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: be045c10fff0a6229b492017486f514f13b60592
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 78525612215c4959cf77cc5e986c5724f7e26310
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477433"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862688"
 ---
-# <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vb"></a><span data-ttu-id="534d8-102">MoveFirst、MoveLast、MoveNext、および MovePrevious メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="534d8-102">MoveFirst, MoveLast, MoveNext, and MovePrevious Methods Example (VB)</span></span>
+# <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vb"></a><span data-ttu-id="1335a-102">MoveFirst メソッド、MoveLast メソッド、MoveNext メソッド、MovePrevious メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="1335a-102">MoveFirst, MoveLast, MoveNext, and MovePrevious methods example (VB)</span></span>
 
 
-<span data-ttu-id="534d8-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="534d8-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="1335a-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="1335a-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="534d8-p101">この例では、与えられたコマンドに基づいて [Recordset](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) のレコード ポインターを移動するために、 [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、[MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、[MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、および [MovePrevious](recordset-object-ado.md) メソッドを使用します。このプロシージャを実行するには、MoveAny プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="534d8-p101">This example uses the [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), and [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) methods to move the record pointer of a [Recordset](recordset-object-ado.md) based on the supplied command. The MoveAny procedure is required for this procedure to run.</span></span>
+<span data-ttu-id="1335a-p101">この例では、与えられたコマンドに基づいて [Recordset](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) のレコード ポインターを移動するために、 [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、[MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、[MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、および [MovePrevious](recordset-object-ado.md) メソッドを使用します。このプロシージャを実行するには、MoveAny プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="1335a-p101">This example uses the [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), and [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) methods to move the record pointer of a [Recordset](recordset-object-ado.md) based on the supplied command. The MoveAny procedure is required for this procedure to run.</span></span>
 
 ```vb 
  

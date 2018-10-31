@@ -1,24 +1,24 @@
 ---
 title: Resync メソッドの使用例 (VB)
-TOCTitle: Resync Method Example (VB)
+TOCTitle: Resync method example (VB)
 ms:assetid: 831341e9-1aef-cd51-bc49-d3d70fd61471
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249571(v=office.15)
 ms:contentKeyID: 48546001
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 038e95ab2211aee98cc0edde6dcd680a18e87b40
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 49c41a2d6f7e90f4e40da5ba932f66fc9976eba8
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477281"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863410"
 ---
-# <a name="resync-method-example-vb"></a><span data-ttu-id="21de9-102">Resync メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="21de9-102">Resync Method Example (VB)</span></span>
+# <a name="resync-method-example-vb"></a><span data-ttu-id="f1e82-102">Resync メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="f1e82-102">Resync method example (VB)</span></span>
 
 
-<span data-ttu-id="21de9-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="21de9-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="f1e82-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="f1e82-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="21de9-104">この例では、[Resync](resync-method-ado.md) メソッドを使用して、静的レコードセット内のデータを更新する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="21de9-104">This example demonstrates using the [Resync](resync-method-ado.md) method to refresh data in a static recordset.</span></span>
+<span data-ttu-id="f1e82-104">この例では、[Resync](resync-method-ado.md) メソッドを使用して、静的レコードセット内のデータを更新する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f1e82-104">This example demonstrates using the [Resync](resync-method-ado.md) method to refresh data in a static recordset.</span></span>
 
 ```vb 
  

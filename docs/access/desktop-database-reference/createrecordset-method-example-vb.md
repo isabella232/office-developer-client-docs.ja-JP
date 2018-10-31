@@ -1,26 +1,26 @@
 ---
 title: CreateRecordset メソッドの使用例 (VB)
-TOCTitle: CreateRecordset Method Example (VB)
+TOCTitle: CreateRecordset method example (VB)
 ms:assetid: c1c05c91-0c74-1f30-7ead-6b52f0b4906c
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249943(v=office.15)
 ms:contentKeyID: 48547536
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c99db7e319d6678b6db60cc1877a43a1728a00c2
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 626b6d4aadc4326c370da3b9137f8990d5f818d7
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477624"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861478"
 ---
-# <a name="createrecordset-method-example-vb"></a><span data-ttu-id="f5c84-102">CreateRecordset メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="f5c84-102">CreateRecordset Method Example (VB)</span></span>
+# <a name="createrecordset-method-example-vb"></a><span data-ttu-id="ff225-102">CreateRecordset メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="ff225-102">CreateRecordset method example (VB)</span></span>
 
 
-<span data-ttu-id="f5c84-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="f5c84-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="ff225-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="ff225-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="f5c84-p101">CreateRecordset メソッドを使用すると、[Recordset](recordset-object-ado.md) オブジェクトを作成し、列情報を指定できます。 **Recordset** オブジェクトにデータを挿入すると、挿入された情報は基になる行セットにバッファーされます。</span><span class="sxs-lookup"><span data-stu-id="f5c84-p101">You can create a [Recordset](recordset-object-ado.md) object and specify the column information. You can then insert data into the **Recordset** object; the underlying rowset buffers the inserts.</span></span>
+<span data-ttu-id="ff225-p101">CreateRecordset メソッドを使用すると、[Recordset](recordset-object-ado.md) オブジェクトを作成し、列情報を指定できます。 **Recordset** オブジェクトにデータを挿入すると、挿入された情報は基になる行セットにバッファーされます。</span><span class="sxs-lookup"><span data-stu-id="ff225-p101">You can create a [Recordset](recordset-object-ado.md) object and specify the column information. You can then insert data into the **Recordset** object; the underlying rowset buffers the inserts.</span></span>
 
-<span data-ttu-id="f5c84-p102">次のコード例では、**RDSServer.DataFactory** オブジェクトを使用した [Recordset](datafactory-object-rdsserver.md) の定義方法を示します。 [RDS.DataControl](datacontrol-object-rds.md) オブジェクトでも、同じように使用できます。</span><span class="sxs-lookup"><span data-stu-id="f5c84-p102">The following code example shows how to define a **Recordset** by using the [RDSServer.DataFactory](datafactory-object-rdsserver.md) object. You can also do this with the [RDS.DataControl](datacontrol-object-rds.md) object.</span></span>
+<span data-ttu-id="ff225-p102">次のコード例では、**RDSServer.DataFactory** オブジェクトを使用した [Recordset](datafactory-object-rdsserver.md) の定義方法を示します。 [RDS.DataControl](datacontrol-object-rds.md) オブジェクトでも、同じように使用できます。</span><span class="sxs-lookup"><span data-stu-id="ff225-p102">The following code example shows how to define a **Recordset** by using the [RDSServer.DataFactory](datafactory-object-rdsserver.md) object. You can also do this with the [RDS.DataControl](datacontrol-object-rds.md) object.</span></span>
 
 ```vb 
  

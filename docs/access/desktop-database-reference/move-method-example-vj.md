@@ -1,24 +1,24 @@
 ---
 title: Move メソッドの使用例 (VJ++)
-TOCTitle: Move Method Example (VJ++)
+TOCTitle: Move method example (VJ++)
 ms:assetid: 819c02ff-a574-ca91-3ef1-ac90ed4f402f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249558(v=office.15)
 ms:contentKeyID: 48545956
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c70de290460afa19c7e83de7f4d676e4eafe0232
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 246f346ffedfed6213d6df0fa7829447d2dbb631
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479162"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861505"
 ---
-# <a name="move-method-example-vj"></a><span data-ttu-id="7a396-102">Move メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="7a396-102">Move Method Example (VJ++)</span></span>
+# <a name="move-method-example-vj"></a><span data-ttu-id="09dd5-102">Move メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="09dd5-102">Move method example (VJ++)</span></span>
 
 
-<span data-ttu-id="7a396-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="7a396-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="09dd5-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="09dd5-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="7a396-104">この例では、 [Move](move-method-ado.md) メソッドを使用して、ユーザーの入力に基づいてレコード ポインターを配置します。</span><span class="sxs-lookup"><span data-stu-id="7a396-104">This example uses the [Move](move-method-ado.md) method to position the record pointer based on user input.</span></span>
+<span data-ttu-id="09dd5-104">この例では、 [Move](move-method-ado.md) メソッドを使用して、ユーザーの入力に基づいてレコード ポインターを配置します。</span><span class="sxs-lookup"><span data-stu-id="09dd5-104">This example uses the [Move](move-method-ado.md) method to position the record pointer based on user input.</span></span>
 
 ```java 
  

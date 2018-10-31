@@ -1,32 +1,50 @@
 ---
-title: '13 章: RDS の使用とセキュリティ'
+title: '第 13 章: RDS の使用とセキュリティ'
 TOCTitle: 'Chapter 13: RDS Usage and Security'
 ms:assetid: 78add8bb-f01a-2efb-33f0-430deebefe8f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249495(v=office.15)
 ms:contentKeyID: 48545756
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 82eb5120c842f5fc587b9737fb34e1962a7120b1
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 439225d1307e37ea367f0ac5121fdd138f54e2ec
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479144"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860317"
 ---
-# <a name="chapter-13-rds-usage-and-security"></a><span data-ttu-id="c1d3e-102">13 章: RDS の使用とセキュリティ</span><span class="sxs-lookup"><span data-stu-id="c1d3e-102">Chapter 13: RDS Usage and Security</span></span>
+# <a name="chapter-13-rds-usage-and-security"></a><span data-ttu-id="b2b17-102">第 13 章: RDS の使用とセキュリティ</span><span class="sxs-lookup"><span data-stu-id="b2b17-102">Chapter 13: RDS Usage and Security</span></span>
 
 
-<span data-ttu-id="c1d3e-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="c1d3e-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="b2b17-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="b2b17-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="c1d3e-p101">ここでは、サーバーをセットアップしてすばやく RDS を使う方法について説明します。RDS の実装時に必要になることがある固有の構成手順や、RDS と他の技術との主要な関係について説明し、RDS ソリューションのセットアップ時に発生する問題の解決法を見いだすのに役立つ情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="c1d3e-p101">Use the information in this chapter to set up your server and use RDS quickly. This chapter includes specific configuration steps that you might need to take when implementing RDS, describes some of the key relationships between RDS and other technologies, and helps identify solutions to problems that you might encounter when setting up an RDS solution.</span></span>
+<span data-ttu-id="b2b17-p101">ここでは、サーバーをセットアップしてすばやく RDS を使う方法について説明します。RDS の実装時に必要になることがある固有の構成手順や、RDS と他の技術との主要な関係について説明し、RDS ソリューションのセットアップ時に発生する問題の解決法を見いだすのに役立つ情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="b2b17-p101">Use the information in this chapter to set up your server and use RDS quickly. This chapter includes specific configuration steps that you might need to take when implementing RDS, describes some of the key relationships between RDS and other technologies, and helps identify solutions to problems that you might encounter when setting up an RDS solution.</span></span>
 
-<span data-ttu-id="c1d3e-106">ここで説明する項目は、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="c1d3e-106">This section contains information about:</span></span>
+<span data-ttu-id="b2b17-106">ここで説明する項目は、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="b2b17-106">This section contains information about:</span></span>
 
-  - [<span data-ttu-id="c1d3e-107">RDS を構成する</span><span class="sxs-lookup"><span data-stu-id="c1d3e-107">Configuring RDS</span></span>](configuring-rds.md)
+- [<span data-ttu-id="b2b17-107">RDS を構成する</span><span class="sxs-lookup"><span data-stu-id="b2b17-107">Configuring RDS</span></span>](configuring-rds.md)
 
-  - [<span data-ttu-id="c1d3e-108">RDS 関連のテクノロジを使用する</span><span class="sxs-lookup"><span data-stu-id="c1d3e-108">Using Related Technologies with RDS</span></span>](using-related-technologies-with-rds.md)
+- <span data-ttu-id="b2b17-108">[Web サーバー コンピューターにゲストの特権を付与します。RDS ゲストの特権\[ADO\]](granting-guest-privileges-to-a-web-server-computer;-rds-guest-privileges.md)</span><span class="sxs-lookup"><span data-stu-id="b2b17-108">[Granting Guest Privileges to a Web Server Computer; RDS guest privileges \[ADO\]](granting-guest-privileges-to-a-web-server-computer;-rds-guest-privileges.md)</span></span>
 
-  - [<span data-ttu-id="c1d3e-109">DataFactory のカスタマイズ</span><span class="sxs-lookup"><span data-stu-id="c1d3e-109">DataFactory Customization</span></span>](datafactory-customization.md)
+- [<span data-ttu-id="b2b17-109">ビジネス オブジェクトに対してスクリプト作成の安全性を明示する</span><span class="sxs-lookup"><span data-stu-id="b2b17-109">Marking Business Objects as Safe for Scripting</span></span>](marking-business-objects-as-safe-for-scripting.md)
 
-  - [<span data-ttu-id="c1d3e-110">RDS のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="c1d3e-110">Troubleshooting RDS</span></span>](troubleshooting-rds.md)
+- [<span data-ttu-id="b2b17-110">DCOM を使用してビジネス オブジェクトをクライアントに登録する</span><span class="sxs-lookup"><span data-stu-id="b2b17-110">Registering Business Objects on the Client for Use with DCOM</span></span>](registering-business-objects-on-the-client-for-use-with-dcom.md)
+
+- [<span data-ttu-id="b2b17-111">DCOM ストリーム マーシャリング形式を設定する</span><span class="sxs-lookup"><span data-stu-id="b2b17-111">Setting DCOM Stream Marshaling Format</span></span>](setting-dcom-stream-marshaling-format.md)
+
+- [<span data-ttu-id="b2b17-112">DCOM で DLL を実行できるようにする</span><span class="sxs-lookup"><span data-stu-id="b2b17-112">Enabling a DLL to Run on DCOM</span></span>](enabling-a-dll-to-run-on-dcom.md)
+
+- [<span data-ttu-id="b2b17-113">IIS で仮想サーバーを構成する</span><span class="sxs-lookup"><span data-stu-id="b2b17-113">Configuring Virtual Servers on IIS</span></span>](configuring-virtual-servers-on-iis.md)
+
+- [<span data-ttu-id="b2b17-114">IIS でプロセッサごとにスレッドを指定する</span><span class="sxs-lookup"><span data-stu-id="b2b17-114">Specifying Threads Per Processor on IIS</span></span>](specifying-threads-per-processor-on-iis.md)
+
+- [<span data-ttu-id="b2b17-115">RDS アプリケーションをセキュリティ保護する</span><span class="sxs-lookup"><span data-stu-id="b2b17-115">Securing RDS Applications</span></span>](securing-rds-applications.md)
+
+- [<span data-ttu-id="b2b17-116">DataFactory をセーフ モードまたはアクセス制限なしモードで構成する</span><span class="sxs-lookup"><span data-stu-id="b2b17-116">Configuring DataFactory for Safe or Unrestricted Modes</span></span>](configuring-datafactory-for-safe-or-unrestricted-modes.md)
+
+- [<span data-ttu-id="b2b17-117">RDS 関連のテクノロジを使用する (ADO)</span><span class="sxs-lookup"><span data-stu-id="b2b17-117">Using Related Technologies with RDS (ADO)</span></span>](using-related-technologies-with-rds.md)
+
+- [<span data-ttu-id="b2b17-118">DataFactory のカスタマイズ (ADO)</span><span class="sxs-lookup"><span data-stu-id="b2b17-118">DataFactory Customization (ADO)</span></span>](datafactory-customization.md)
+
+- [<span data-ttu-id="b2b17-119">RDS のトラブルシューティング (ADO)</span><span class="sxs-lookup"><span data-stu-id="b2b17-119">Troubleshooting RDS (ADO)</span></span>](troubleshooting-rds.md)
 

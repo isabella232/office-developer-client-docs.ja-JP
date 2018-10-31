@@ -4,21 +4,22 @@ TOCTitle: XactAttributeEnum
 ms:assetid: 9206698b-7cfa-1229-2701-f2b6949e54fc
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249643(v=office.15)
 ms:contentKeyID: 48546366
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 8a44546a63583a03bd40b9e86405c3d560b3a94e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 2d39cc24feb377cf61e7c2d0a39e11513f4c0616
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478898"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25864061"
 ---
-# <a name="xactattributeenum"></a><span data-ttu-id="750d5-102">XactAttributeEnum</span><span class="sxs-lookup"><span data-stu-id="750d5-102">XactAttributeEnum</span></span>
+# <a name="xactattributeenum"></a><span data-ttu-id="fa4be-102">XactAttributeEnum</span><span class="sxs-lookup"><span data-stu-id="fa4be-102">XactAttributeEnum</span></span>
 
+<span data-ttu-id="fa4be-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="fa4be-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="750d5-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="750d5-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="fa4be-104">[Connection](connection-object-ado.md) オブジェクトのトランザクション属性を表します。</span><span class="sxs-lookup"><span data-stu-id="fa4be-104">Specifies the transaction attributes of a [Connection](connection-object-ado.md) object.</span></span>
 
-<span data-ttu-id="750d5-104">[Connection](connection-object-ado.md) オブジェクトのトランザクション属性を表します。</span><span class="sxs-lookup"><span data-stu-id="750d5-104">Specifies the transaction attributes of a [Connection](connection-object-ado.md) object.</span></span>
+<br/>
 
 <table>
 <colgroup>
@@ -28,29 +29,29 @@ ms.locfileid: "25478898"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="750d5-105">定数</span><span class="sxs-lookup"><span data-stu-id="750d5-105">Constant</span></span></p></th>
-<th><p><span data-ttu-id="750d5-106">値</span><span class="sxs-lookup"><span data-stu-id="750d5-106">Value</span></span></p></th>
-<th><p><span data-ttu-id="750d5-107">説明</span><span class="sxs-lookup"><span data-stu-id="750d5-107">Description</span></span></p></th>
+<th><p><span data-ttu-id="fa4be-105">定数</span><span class="sxs-lookup"><span data-stu-id="fa4be-105">Constant</span></span></p></th>
+<th><p><span data-ttu-id="fa4be-106">値</span><span class="sxs-lookup"><span data-stu-id="fa4be-106">Value</span></span></p></th>
+<th><p><span data-ttu-id="fa4be-107">説明</span><span class="sxs-lookup"><span data-stu-id="fa4be-107">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="750d5-108"><strong>adXactAbortRetaining</strong></span><span class="sxs-lookup"><span data-stu-id="750d5-108"><strong>adXactAbortRetaining</strong></span></span></p></td>
-<td><p><span data-ttu-id="750d5-109">262144</span><span class="sxs-lookup"><span data-stu-id="750d5-109">262144</span></span></p></td>
-<td><p><span data-ttu-id="750d5-p101">保持中止を実行します (つまり、<a href="begintrans-committrans-and-rollbacktrans-methods-ado.md">RollbackTrans</a> を呼び出すと、自動的に新規トランザクションが開始されます)。この設定をサポートしていないプロバイダーもあります。</span><span class="sxs-lookup"><span data-stu-id="750d5-p101">Performs retaining aborts — that is, calling <a href="begintrans-committrans-and-rollbacktrans-methods-ado.md">RollbackTrans</a> automatically starts a new transaction. Not all providers support this.</span></span></p></td>
+<td><p><span data-ttu-id="fa4be-108"><strong>adXactAbortRetaining</strong></span><span class="sxs-lookup"><span data-stu-id="fa4be-108"><strong>adXactAbortRetaining</strong></span></span></p></td>
+<td><p><span data-ttu-id="fa4be-109">262144</span><span class="sxs-lookup"><span data-stu-id="fa4be-109">262144</span></span></p></td>
+<td><p><span data-ttu-id="fa4be-110">保持中止は; を実行します。つまり、 <a href="begintrans-committrans-and-rollbacktrans-methods-ado.md">RollbackTrans</a>を自動的に呼び出すことは、新しいトランザクションを開始します。</span><span class="sxs-lookup"><span data-stu-id="fa4be-110">Performs retaining aborts; that is, calling <a href="begintrans-committrans-and-rollbacktrans-methods-ado.md">RollbackTrans</a> automatically starts a new transaction.</span></span> <span data-ttu-id="fa4be-111">すべてのプロバイダーは、これをサポートします。</span><span class="sxs-lookup"><span data-stu-id="fa4be-111">Not all providers support this.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="750d5-112"><strong>adXactCommitRetaining</strong></span><span class="sxs-lookup"><span data-stu-id="750d5-112"><strong>adXactCommitRetaining</strong></span></span></p></td>
-<td><p><span data-ttu-id="750d5-113">131072</span><span class="sxs-lookup"><span data-stu-id="750d5-113">131072</span></span></p></td>
-<td><p><span data-ttu-id="750d5-p102">保持コミットを実行します (つまり、<a href="begintrans-committrans-and-rollbacktrans-methods-ado.md">CommitTrans</a> を呼び出すと、自動的に新規トランザクションが開始されます)。この設定をサポートしていないプロバイダーもあります。</span><span class="sxs-lookup"><span data-stu-id="750d5-p102">Performs retaining commits — that is, calling <a href="begintrans-committrans-and-rollbacktrans-methods-ado.md">CommitTrans</a> automatically starts a new transaction. Not all providers support this.</span></span></p></td>
+<td><p><span data-ttu-id="fa4be-112"><strong>adXactCommitRetaining</strong></span><span class="sxs-lookup"><span data-stu-id="fa4be-112"><strong>adXactCommitRetaining</strong></span></span></p></td>
+<td><p><span data-ttu-id="fa4be-113">131072</span><span class="sxs-lookup"><span data-stu-id="fa4be-113">131072</span></span></p></td>
+<td><p><span data-ttu-id="fa4be-114">保持コミット; を実行します。つまり、 <a href="begintrans-committrans-and-rollbacktrans-methods-ado.md">CommitTrans</a>を自動的に呼び出すことは、新しいトランザクションを開始します。</span><span class="sxs-lookup"><span data-stu-id="fa4be-114">Performs retaining commits; that is, calling <a href="begintrans-committrans-and-rollbacktrans-methods-ado.md">CommitTrans</a> automatically starts a new transaction.</span></span> <span data-ttu-id="fa4be-115">すべてのプロバイダーは、これをサポートします。</span><span class="sxs-lookup"><span data-stu-id="fa4be-115">Not all providers support this.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="750d5-116">**ADO/WFC 等価**</span><span class="sxs-lookup"><span data-stu-id="750d5-116">**ADO/WFC Equivalent**</span></span>
+### <a name="adowfc-equivalent"></a><span data-ttu-id="fa4be-116">ADO/WFC に相当</span><span class="sxs-lookup"><span data-stu-id="fa4be-116">ADO/WFC equivalent</span></span>
 
-<span data-ttu-id="750d5-117">パッケージ: **com.ms.wfc.data**</span><span class="sxs-lookup"><span data-stu-id="750d5-117">Package: **com.ms.wfc.data**</span></span>
+<span data-ttu-id="fa4be-117">パッケージ: **com.ms.wfc.data**</span><span class="sxs-lookup"><span data-stu-id="fa4be-117">Package: **com.ms.wfc.data**</span></span>
 
 <table>
 <colgroup>
@@ -58,15 +59,15 @@ ms.locfileid: "25478898"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="750d5-118">定数</span><span class="sxs-lookup"><span data-stu-id="750d5-118">Constant</span></span></p></th>
+<th><p><span data-ttu-id="fa4be-118">定数</span><span class="sxs-lookup"><span data-stu-id="fa4be-118">Constant</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="750d5-119">AdoEnums.XactAttribute.ABORTRETAINING</span><span class="sxs-lookup"><span data-stu-id="750d5-119">AdoEnums.XactAttribute.ABORTRETAINING</span></span></p></td>
+<td><p><span data-ttu-id="fa4be-119">AdoEnums.XactAttribute.ABORTRETAINING</span><span class="sxs-lookup"><span data-stu-id="fa4be-119">AdoEnums.XactAttribute.ABORTRETAINING</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="750d5-120">AdoEnums.XactAttribute.COMMITRETAINING</span><span class="sxs-lookup"><span data-stu-id="750d5-120">AdoEnums.XactAttribute.COMMITRETAINING</span></span></p></td>
+<td><p><span data-ttu-id="fa4be-120">AdoEnums.XactAttribute.COMMITRETAINING</span><span class="sxs-lookup"><span data-stu-id="fa4be-120">AdoEnums.XactAttribute.COMMITRETAINING</span></span></p></td>
 </tr>
 </tbody>
 </table>

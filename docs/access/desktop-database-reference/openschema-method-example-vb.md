@@ -1,24 +1,24 @@
 ---
 title: OpenSchema メソッドの使用例 (VB)
-TOCTitle: OpenSchema Method Example (VB)
+TOCTitle: OpenSchema method example (VB)
 ms:assetid: 02fe101a-c2df-6454-2cca-f5833e60fc03
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248797(v=office.15)
 ms:contentKeyID: 48542973
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 88711f64be99900369f79cc0787d3db973e32104
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d9aeb21136a704bc327c9f82dd07fc310b8705e1
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478846"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862703"
 ---
-# <a name="openschema-method-example-vb"></a><span data-ttu-id="13388-102">OpenSchema メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="13388-102">OpenSchema Method Example (VB)</span></span>
+# <a name="openschema-method-example-vb"></a><span data-ttu-id="c56a5-102">OpenSchema メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="c56a5-102">OpenSchema method example (VB)</span></span>
 
 
-<span data-ttu-id="13388-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="13388-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="c56a5-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="c56a5-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="13388-104">この例では、[OpenSchema](openschema-method-ado.md) メソッドを使用して、***Pubs*** データベース内の各テーブルの名前と型を表示します。</span><span class="sxs-lookup"><span data-stu-id="13388-104">This example uses the [OpenSchema](openschema-method-ado.md) method to display the name and type of each table in the ***Pubs*** database.</span></span>
+<span data-ttu-id="c56a5-104">この例では、[OpenSchema](openschema-method-ado.md) メソッドを使用して、***Pubs*** データベース内の各テーブルの名前と型を表示します。</span><span class="sxs-lookup"><span data-stu-id="c56a5-104">This example uses the [OpenSchema](openschema-method-ado.md) method to display the name and type of each table in the ***Pubs*** database.</span></span>
 
 ```vb 
  
@@ -75,7 +75,7 @@ End Sub
 'EndOpenSchemaVB 
 ```
 
-<span data-ttu-id="13388-105">テーブルを指定する次の使用例\_ **OpenSchema**メソッド***に引数***の型クエリの制約です。</span><span class="sxs-lookup"><span data-stu-id="13388-105">This example specifies a TABLE\_TYPE query constraint in the **OpenSchema** method ***Criteria*** argument.</span></span> <span data-ttu-id="13388-106">その結果、 ***Pubs***データベースで指定されたビューのスキーマ情報のみが返されます。</span><span class="sxs-lookup"><span data-stu-id="13388-106">As a result, only schema information for the Views specified in the ***Pubs*** database are returned.</span></span> <span data-ttu-id="13388-107">その後、この例では各テーブルの名前と型を表示します。</span><span class="sxs-lookup"><span data-stu-id="13388-107">The example then displays the name(s) and type(s) of each table(s).</span></span>
+<span data-ttu-id="c56a5-105">テーブルを指定する次の使用例\_ **OpenSchema**メソッド***に引数***の型クエリの制約です。</span><span class="sxs-lookup"><span data-stu-id="c56a5-105">This example specifies a TABLE\_TYPE query constraint in the **OpenSchema** method ***Criteria*** argument.</span></span> <span data-ttu-id="c56a5-106">その結果、 ***Pubs***データベースで指定されたビューのスキーマ情報のみが返されます。</span><span class="sxs-lookup"><span data-stu-id="c56a5-106">As a result, only schema information for the Views specified in the ***Pubs*** database are returned.</span></span> <span data-ttu-id="c56a5-107">その後、この例では各テーブルの名前と型を表示します。</span><span class="sxs-lookup"><span data-stu-id="c56a5-107">The example then displays the name(s) and type(s) of each table(s).</span></span>
 
 ```vb 
  

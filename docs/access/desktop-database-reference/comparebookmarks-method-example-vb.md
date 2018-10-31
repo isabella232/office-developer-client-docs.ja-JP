@@ -1,26 +1,26 @@
 ---
 title: CompareBookmarks メソッドの使用例 (VB)
-TOCTitle: CompareBookmarks Method Example (VB)
+TOCTitle: CompareBookmarks method example (VB)
 ms:assetid: 048c91a1-d1dd-6b8a-b602-09cdb0f8a6f7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248807(v=office.15)
 ms:contentKeyID: 48543012
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ac654ebb995f3b4ab9331a647b8c4da1ccc4a266
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 6a01cfd682de37d8b1c14d3af6e5c7b15e0cc22b
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478648"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25864131"
 ---
-# <a name="comparebookmarks-method-example-vb"></a><span data-ttu-id="335ac-102">CompareBookmarks メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="335ac-102">CompareBookmarks Method Example (VB)</span></span>
+# <a name="comparebookmarks-method-example-vb"></a><span data-ttu-id="3fbca-102">CompareBookmarks メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="3fbca-102">CompareBookmarks method example (VB)</span></span>
 
 
-<span data-ttu-id="335ac-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="335ac-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="3fbca-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="3fbca-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="335ac-p101">この例では、[CompareBookmarks](comparebookmarks-method-ado.md) メソッドの使い方を示します。通常、ブックマークの相対的な値は、特別なブックマークでない限り必要ありません。</span><span class="sxs-lookup"><span data-stu-id="335ac-p101">This example demonstrates the [CompareBookmarks](comparebookmarks-method-ado.md) method. The relative value of bookmarks is seldom needed unless a particular bookmark is somehow special.</span></span>
+<span data-ttu-id="3fbca-p101">この例では、[CompareBookmarks](comparebookmarks-method-ado.md) メソッドの使い方を示します。通常、ブックマークの相対的な値は、特別なブックマークでない限り必要ありません。</span><span class="sxs-lookup"><span data-stu-id="3fbca-p101">This example demonstrates the [CompareBookmarks](comparebookmarks-method-ado.md) method. The relative value of bookmarks is seldom needed unless a particular bookmark is somehow special.</span></span>
 
-<span data-ttu-id="335ac-p102">***Authors*** テーブルから取得した [Recordset](recordset-object-ado.md) のランダムな行を、検索の対象として指定します。次に、その検索対象に対する各行の相対的な位置を表示します。</span><span class="sxs-lookup"><span data-stu-id="335ac-p102">Designate a random row of a [Recordset](recordset-object-ado.md) derived from the ***Authors*** table as the target of a search. Then display the position of each row relative to that target.</span></span>
+<span data-ttu-id="3fbca-p102">***Authors*** テーブルから取得した [Recordset](recordset-object-ado.md) のランダムな行を、検索の対象として指定します。次に、その検索対象に対する各行の相対的な位置を表示します。</span><span class="sxs-lookup"><span data-stu-id="3fbca-p102">Designate a random row of a [Recordset](recordset-object-ado.md) derived from the ***Authors*** table as the target of a search. Then display the position of each row relative to that target.</span></span>
 
 ```vb 
  

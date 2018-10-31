@@ -1,26 +1,26 @@
 ---
-title: Open メソッドおよび Close メソッドの使用例 (VBScript)
-TOCTitle: Open and Close Methods Example (VBScript)
+title: Open メソッドと Close メソッドの使用例 (VBScript)
+TOCTitle: Open and Close methods example (VBScript)
 ms:assetid: 7b9d9443-9693-8738-7c93-52f9efc895ff
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249513(v=office.15)
 ms:contentKeyID: 48545816
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7525996a0768310b34edc8df12dbb4dc2cd51815
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ffcf71925b98fc1c78ea56fd0d342a650ccbfb01
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477533"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863032"
 ---
-# <a name="open-and-close-methods-example-vbscript"></a><span data-ttu-id="9ca18-102">Open メソッドおよび Close メソッドの使用例 (VBScript)</span><span class="sxs-lookup"><span data-stu-id="9ca18-102">Open and Close Methods Example (VBScript)</span></span>
+# <a name="open-and-close-methods-example-vbscript"></a><span data-ttu-id="4b42a-102">Open メソッドと Close メソッドの使用例 (VBScript)</span><span class="sxs-lookup"><span data-stu-id="4b42a-102">Open and Close methods example (VBScript)</span></span>
 
 
-<span data-ttu-id="9ca18-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="9ca18-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="4b42a-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="4b42a-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="9ca18-104">この例では、既に開かれている [Recordset](open-method-ado-recordset.md) オブジェクトと [Connection](close-method-ado.md) オブジェクトの両方に対し、 [Open](recordset-object-ado.md) メソッドと [Close](connection-object-ado.md) メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="9ca18-104">This example uses the [Open](open-method-ado-recordset.md) and [Close](close-method-ado.md) methods on both [Recordset](recordset-object-ado.md) and [Connection](connection-object-ado.md) objects that have been opened.</span></span>
+<span data-ttu-id="4b42a-104">この例では、既に開かれている [Recordset](open-method-ado-recordset.md) オブジェクトと [Connection](close-method-ado.md) オブジェクトの両方に対し、 [Open](recordset-object-ado.md) メソッドと [Close](connection-object-ado.md) メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="4b42a-104">This example uses the [Open](open-method-ado-recordset.md) and [Close](close-method-ado.md) methods on both [Recordset](recordset-object-ado.md) and [Connection](connection-object-ado.md) objects that have been opened.</span></span>
 
-<span data-ttu-id="9ca18-105">次の例は、Active Server Pages (ASP) で使用してください。</span><span class="sxs-lookup"><span data-stu-id="9ca18-105">Use the following example in an Active Server Page (ASP).</span></span> <span data-ttu-id="9ca18-106">**Find** を使用してファイル Adovbs.inc を検索し、使用するディレクトリに置きます。</span><span class="sxs-lookup"><span data-stu-id="9ca18-106">Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use.</span></span> <span data-ttu-id="9ca18-107">次のコードをメモ帳または別のテキスト エディターに貼り付けますを切り取って**OpenVBS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="9ca18-107">Cut and paste the following code into Notepad or another text editor, and save it as **OpenVBS.asp**.</span></span> <span data-ttu-id="9ca18-108">結果は任意のブラウザーで表示できます。</span><span class="sxs-lookup"><span data-stu-id="9ca18-108">You can view the result in any browser.</span></span>
+<span data-ttu-id="4b42a-105">次の例は、Active Server Pages (ASP) で使用してください。</span><span class="sxs-lookup"><span data-stu-id="4b42a-105">Use the following example in an Active Server Page (ASP).</span></span> <span data-ttu-id="4b42a-106">**Find** を使用してファイル Adovbs.inc を検索し、使用するディレクトリに置きます。</span><span class="sxs-lookup"><span data-stu-id="4b42a-106">Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use.</span></span> <span data-ttu-id="4b42a-107">次のコードをメモ帳または別のテキスト エディターに貼り付けますを切り取って**OpenVBS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="4b42a-107">Cut and paste the following code into Notepad or another text editor, and save it as **OpenVBS.asp**.</span></span> <span data-ttu-id="4b42a-108">結果は任意のブラウザーで表示できます。</span><span class="sxs-lookup"><span data-stu-id="4b42a-108">You can view the result in any browser.</span></span>
 
 ```vb 
  

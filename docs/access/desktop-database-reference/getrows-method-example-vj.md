@@ -1,24 +1,24 @@
 ---
 title: GetRows メソッドの使用例 (VJ++)
-TOCTitle: GetRows Method Example (VJ++)
+TOCTitle: GetRows method example (VJ++)
 ms:assetid: 60f7d621-3a9d-167e-8798-aeb2a881d975
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249355(v=office.15)
 ms:contentKeyID: 48545194
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c431f4fb3fcb3830a44368df160d94502f555ee3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 312c56aee8f0901c3817a5f81e22e436a841dca5
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479536"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862899"
 ---
-# <a name="getrows-method-example-vj"></a><span data-ttu-id="05a17-102">GetRows メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="05a17-102">GetRows Method Example (VJ++)</span></span>
+# <a name="getrows-method-example-vj"></a><span data-ttu-id="9acc8-102">GetRows メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="9acc8-102">GetRows method example (VJ++)</span></span>
 
 
-<span data-ttu-id="05a17-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="05a17-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="9acc8-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="9acc8-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="05a17-p101">この例では、[GetRows](getrows-method-ado.md) メソッドを使用して [Recordset](recordset-object-ado.md) から指定した数の行を取得し、結果データを配列に格納します。 **EOF** に達した場合、および他のユーザーに削除されたレコードを [GetRows](bof-eof-properties-ado.md) が取得しようとした場合、 **GetRows** メソッドが返す行数は指定より少なくなります。2 番目の場合のみ、 **False** が返されます。このプロシージャを実行するには、GetRowsOK 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="05a17-p101">This example uses the [GetRows](getrows-method-ado.md) method to retrieve a specified number of rows from a [Recordset](recordset-object-ado.md) and to fill an array with the resulting data. The **GetRows** method will return less than the desired number of rows in two cases: either if [EOF](bof-eof-properties-ado.md) has been reached, or if **GetRows** tried to retrieve a record that was deleted by another user. The function returns **False** only if the second case occurs. The GetRowsOK function is required for this procedure to run.</span></span>
+<span data-ttu-id="9acc8-p101">この例では、[GetRows](getrows-method-ado.md) メソッドを使用して [Recordset](recordset-object-ado.md) から指定した数の行を取得し、結果データを配列に格納します。 **EOF** に達した場合、および他のユーザーに削除されたレコードを [GetRows](bof-eof-properties-ado.md) が取得しようとした場合、 **GetRows** メソッドが返す行数は指定より少なくなります。2 番目の場合のみ、 **False** が返されます。このプロシージャを実行するには、GetRowsOK 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="9acc8-p101">This example uses the [GetRows](getrows-method-ado.md) method to retrieve a specified number of rows from a [Recordset](recordset-object-ado.md) and to fill an array with the resulting data. The **GetRows** method will return less than the desired number of rows in two cases: either if [EOF](bof-eof-properties-ado.md) has been reached, or if **GetRows** tried to retrieve a record that was deleted by another user. The function returns **False** only if the second case occurs. The GetRowsOK function is required for this procedure to run.</span></span>
 
 ```java 
  

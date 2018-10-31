@@ -1,24 +1,24 @@
 ---
 title: Procedures の Delete メソッドの使用例 (VB)
-TOCTitle: Procedures Delete Method Example (VB)
+TOCTitle: Procedures Delete method example (VB)
 ms:assetid: 1cbae0a2-0035-d03f-b9c6-5453ddd51ec4
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248964(v=office.15)
 ms:contentKeyID: 48543576
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d1933efe1beafff3211632a11348af6779715372
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 3a309f8013d8766a107f2d326b8c4f36645b7b25
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476729"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863704"
 ---
-# <a name="procedures-delete-method-example-vb"></a><span data-ttu-id="2648c-102">Procedures の Delete メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="2648c-102">Procedures Delete Method Example (VB)</span></span>
+# <a name="procedures-delete-method-example-vb"></a><span data-ttu-id="e016d-102">Procedures の Delete メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="e016d-102">Procedures Delete method example (VB)</span></span>
 
 
-<span data-ttu-id="2648c-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="2648c-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="e016d-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="e016d-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="2648c-104">次のコードでは、[Procedures](procedures-collection-adox.md) コレクションの [Delete](delete-method-adox-collections.md) メソッドを使用してプロシージャを削除する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="2648c-104">The following code demonstrates how to delete a procedure using the [Procedures](procedures-collection-adox.md) collection [Delete](delete-method-adox-collections.md) method.</span></span>
+<span data-ttu-id="e016d-104">次のコードでは、[Procedures](procedures-collection-adox.md) コレクションの [Delete](delete-method-adox-collections.md) メソッドを使用してプロシージャを削除する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="e016d-104">The following code demonstrates how to delete a procedure using the [Procedures](procedures-collection-adox.md) collection [Delete](delete-method-adox-collections.md) method.</span></span>
 
 ```vb 
  

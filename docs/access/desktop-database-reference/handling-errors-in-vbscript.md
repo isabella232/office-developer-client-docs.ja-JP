@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250135(v=office.15)
 ms:contentKeyID: 48548222
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b361291914b952b458fc4fc587b5b0461464c1fb
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 85af8f8840cdc74494f29d169cbccb3ce38cc6b4
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477528"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862216"
 ---
-# <a name="handling-errors-in-vbscript"></a><span data-ttu-id="120ed-102">VBScript でエラーを処理する</span><span class="sxs-lookup"><span data-stu-id="120ed-102">Handling Errors in VBScript</span></span>
+# <a name="handling-errors-in-vbscript"></a><span data-ttu-id="44d93-102">VBScript でエラーを処理する</span><span class="sxs-lookup"><span data-stu-id="44d93-102">Handling Errors in VBScript</span></span>
 
 
-<span data-ttu-id="120ed-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="120ed-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="44d93-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="44d93-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="120ed-104">Visual Basic で使用する方法と VBScript で使用する方法には、若干の違いがあります。</span><span class="sxs-lookup"><span data-stu-id="120ed-104">There is little difference between the methods used in Visual Basic and those used with VBScript.</span></span> <span data-ttu-id="120ed-105">主な違いは、VBScript では、ラベルで実行を継続することによるエラー処理の概念がサポートされていないことです。</span><span class="sxs-lookup"><span data-stu-id="120ed-105">The primary difference is that VBScript does not support the concept of error handling by continuing execution at a label.</span></span> <span data-ttu-id="120ed-106">つまり、VBScript では On Error GoTo を使用できません。</span><span class="sxs-lookup"><span data-stu-id="120ed-106">In other words, you cannot use On Error GoTo in VBScript.</span></span> <span data-ttu-id="120ed-107">代わりに、VBScript で使用します。</span><span class="sxs-lookup"><span data-stu-id="120ed-107">Instead, use in VBScript.</span></span> <span data-ttu-id="120ed-108">代わりに、On Error Resume Next を使用して、 **Err.Number**と、 **Errors**コレクションの**Count**プロパティの両方を次の例のように、確認します。</span><span class="sxs-lookup"><span data-stu-id="120ed-108">Instead, use On Error Resume Next and then check both **Err.Number** and the **Count** property of the **Errors** collection, as shown in the following example:</span></span>
+<span data-ttu-id="44d93-104">Visual Basic で使用する方法と VBScript で使用する方法には、若干の違いがあります。</span><span class="sxs-lookup"><span data-stu-id="44d93-104">There is little difference between the methods used in Visual Basic and those used with VBScript.</span></span> <span data-ttu-id="44d93-105">主な違いは、VBScript では、ラベルで実行を継続することによるエラー処理の概念がサポートされていないことです。</span><span class="sxs-lookup"><span data-stu-id="44d93-105">The primary difference is that VBScript does not support the concept of error handling by continuing execution at a label.</span></span> <span data-ttu-id="44d93-106">つまり、VBScript では On Error GoTo を使用できません。</span><span class="sxs-lookup"><span data-stu-id="44d93-106">In other words, you cannot use On Error GoTo in VBScript.</span></span> <span data-ttu-id="44d93-107">代わりに、VBScript で使用します。</span><span class="sxs-lookup"><span data-stu-id="44d93-107">Instead, use in VBScript.</span></span> <span data-ttu-id="44d93-108">代わりに、On Error Resume Next を使用して、 **Err.Number**と、 **Errors**コレクションの**Count**プロパティの両方を次の例のように、確認します。</span><span class="sxs-lookup"><span data-stu-id="44d93-108">Instead, use On Error Resume Next and then check both **Err.Number** and the **Count** property of the **Errors** collection, as shown in the following example:</span></span>
 
 ```vb 
  
@@ -26,11 +26,11 @@ ms.locfileid: "25477528"
 <HTML> 
 <HEAD> 
 <META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0"> 
-<TITLE>Error Handling Example (VBScript)</TITLE> 
+<TITLE>Error Handling example (VBScript)</TITLE> 
 </HEAD> 
 <BODY> 
  
-<h1>Error Handling Example (VBScript)</h1> 
+<h1>Error Handling example (VBScript)</h1> 
  
 <% 
  Dim errLoop 

@@ -1,24 +1,24 @@
 ---
 title: Resync メソッドの使用例 (VC++)
-TOCTitle: Resync Method Example (VC++)
+TOCTitle: Resync method example (VC++)
 ms:assetid: 4a3af21e-b605-bdad-dfeb-fe89c44c6e45
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249229(v=office.15)
 ms:contentKeyID: 48544665
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 34ee8aae0578aa6ad4ad801b620d6ee2d6ddd47a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 021b7d92c97a343e74068c41cae29acbb059855b
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476425"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862508"
 ---
-# <a name="resync-method-example-vc"></a><span data-ttu-id="a7423-102">Resync メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="a7423-102">Resync Method Example (VC++)</span></span>
+# <a name="resync-method-example-vc"></a><span data-ttu-id="87545-102">Resync メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="87545-102">Resync method example (VC++)</span></span>
 
 
-<span data-ttu-id="a7423-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="a7423-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="87545-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="87545-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="a7423-104">この例では、[Resync](resync-method-ado.md) メソッドを使用して、静的レコードセット内のデータを更新する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="a7423-104">This example demonstrates using the [Resync](resync-method-ado.md) method to refresh data in a static recordset.</span></span>
+<span data-ttu-id="87545-104">この例では、[Resync](resync-method-ado.md) メソッドを使用して、静的レコードセット内のデータを更新する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="87545-104">This example demonstrates using the [Resync](resync-method-ado.md) method to refresh data in a static recordset.</span></span>
 
 ```cpp 
  

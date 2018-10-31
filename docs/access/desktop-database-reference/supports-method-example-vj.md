@@ -1,24 +1,24 @@
 ---
 title: Supports メソッドの使用例 (VJ++)
-TOCTitle: Supports Method Example (VJ++)
+TOCTitle: Supports method example (VJ++)
 ms:assetid: a46aa1b3-9b2b-b7ce-6a03-b1cf1a74294a
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249764(v=office.15)
 ms:contentKeyID: 48546811
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 61241be876337035ca630ed89f82a531083a9645
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 05d931f0254ef897e16b2a5c5bcafe00d9edf4cb
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479669"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860960"
 ---
-# <a name="supports-method-example-vj"></a><span data-ttu-id="92231-102">Supports メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="92231-102">Supports Method Example (VJ++)</span></span>
+# <a name="supports-method-example-vj"></a><span data-ttu-id="f5621-102">Supports メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="f5621-102">Supports method example (VJ++)</span></span>
 
 
-<span data-ttu-id="92231-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="92231-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="f5621-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="f5621-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="92231-p101">この例は、[Supports](supports-method-ado.md) メソッドを使用して、各種カーソルで開かれたレコードセットによりサポートされるオプションを表示します。この例を実行するには、DisplaySupport 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="92231-p101">This example uses the [Supports](supports-method-ado.md) method to display the options supported by a recordset opened with different cursor types. The DisplaySupport function is required for this example to run.</span></span>
+<span data-ttu-id="f5621-p101">この例は、[Supports](supports-method-ado.md) メソッドを使用して、各種カーソルで開かれたレコードセットによりサポートされるオプションを表示します。この例を実行するには、DisplaySupport 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="f5621-p101">This example uses the [Supports](supports-method-ado.md) method to display the options supported by a recordset opened with different cursor types. The DisplaySupport function is required for this example to run.</span></span>
 
 ```java 
  

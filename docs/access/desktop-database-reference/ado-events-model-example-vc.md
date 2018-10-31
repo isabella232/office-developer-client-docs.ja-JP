@@ -1,48 +1,48 @@
 ---
-title: ADO イベント モデルの使用例 (VC++)
-TOCTitle: ADO Events Model Example (VC++)
+title: ADO イベント モデルの使用例 (vc++)
+TOCTitle: ADO Events Model example (VC++)
 ms:assetid: 3785406b-844c-419f-e6ac-78aa8c4e78b2
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249132(v=office.15)
 ms:contentKeyID: 48544197
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 395fa07c75b61214cf01950262fc85f191e8dc2c
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1794e3e13bc2c8fe7c3acc9bbd1413daf4938d2c
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478473"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25859994"
 ---
-# <a name="ado-events-model-example-vc"></a><span data-ttu-id="22889-102">ADO イベント モデルの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="22889-102">ADO Events Model Example (VC++)</span></span>
+# <a name="ado-events-model-example-vc"></a><span data-ttu-id="96a14-102">ADO イベント モデルの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="96a14-102">ADO Events Model example (VC++)</span></span>
 
 
-<span data-ttu-id="22889-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="22889-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="96a14-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="96a14-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="22889-104">「[ADO イベントのインスタンス化 (言語別)](https://msdn.microsoft.com/library/jj250244\(v=office.15\))」の Visual C++ のセクションには、ADO イベント モデルのインスタンスを作成する方法についての一般的な説明があります。</span><span class="sxs-lookup"><span data-stu-id="22889-104">The Visual C++ section of [ADO Event Instantiation by Language](https://msdn.microsoft.com/library/jj250244\(v=office.15\)) gives a general description of how to instantiate the ADO event model.</span></span> <span data-ttu-id="22889-105">次の具体的な例によって作成される環境内でイベント モデルのインスタンスを作成するのでは、**\#インポート**ディレクティブです。</span><span class="sxs-lookup"><span data-stu-id="22889-105">The following is a specific example of instantiating the event model within the environment created by the **\#import** directive.</span></span>
+<span data-ttu-id="96a14-104">「[ADO イベントのインスタンス化 (言語別)](https://msdn.microsoft.com/library/jj250244\(v=office.15\))」の Visual C++ のセクションには、ADO イベント モデルのインスタンスを作成する方法についての一般的な説明があります。</span><span class="sxs-lookup"><span data-stu-id="96a14-104">The Visual C++ section of [ADO Event Instantiation by Language](https://msdn.microsoft.com/library/jj250244\(v=office.15\)) gives a general description of how to instantiate the ADO event model.</span></span> <span data-ttu-id="96a14-105">次の具体的な例によって作成される環境内でイベント モデルのインスタンスを作成するのでは、**\#インポート**ディレクティブです。</span><span class="sxs-lookup"><span data-stu-id="96a14-105">The following is a specific example of instantiating the event model within the environment created by the **\#import** directive.</span></span>
 
-<span data-ttu-id="22889-106">一般的な説明では、メソッド シグネチャの参照として **adoint.h** を使います。</span><span class="sxs-lookup"><span data-stu-id="22889-106">The general description uses **adoint.h** as a reference for method signatures.</span></span> <span data-ttu-id="22889-107">ただし、全般的な説明で、いくつかの詳細を若干変更を使用した結果、**\#インポート**ディレクティブ。</span><span class="sxs-lookup"><span data-stu-id="22889-107">However, a few details in the general description change slightly as a result of using the **\#import** directive:</span></span>
+<span data-ttu-id="96a14-106">一般的な説明では、メソッド シグネチャの参照として **adoint.h** を使います。</span><span class="sxs-lookup"><span data-stu-id="96a14-106">The general description uses **adoint.h** as a reference for method signatures.</span></span> <span data-ttu-id="96a14-107">ただし、全般的な説明で、いくつかの詳細を若干変更を使用した結果、**\#インポート**ディレクティブ。</span><span class="sxs-lookup"><span data-stu-id="96a14-107">However, a few details in the general description change slightly as a result of using the **\#import** directive:</span></span>
 
-  - <span data-ttu-id="22889-108">**\#インポート**ディレクティブの基本的なフォームに**typedef**のおよびメソッド シグネチャのデータ型および修飾子を解決します。</span><span class="sxs-lookup"><span data-stu-id="22889-108">The **\#import** directive resolves **typedef**'s, and method signature data types and modifiers to their fundamental forms.</span></span>
+  - <span data-ttu-id="96a14-108">**\#インポート**ディレクティブの基本的なフォームに**typedef**のおよびメソッド シグネチャのデータ型および修飾子を解決します。</span><span class="sxs-lookup"><span data-stu-id="96a14-108">The **\#import** directive resolves **typedef**'s, and method signature data types and modifiers to their fundamental forms.</span></span>
 
-  - <span data-ttu-id="22889-109">純粋仮想メソッドを上書きする必要がありますが、すべて先頭に"**生\_**」です。</span><span class="sxs-lookup"><span data-stu-id="22889-109">The pure virtual methods that must be overwritten are all prefixed by "**raw\_**".</span></span>
+  - <span data-ttu-id="96a14-109">純粋仮想メソッドを上書きする必要がありますが、すべて先頭に"**生\_**」です。</span><span class="sxs-lookup"><span data-stu-id="96a14-109">The pure virtual methods that must be overwritten are all prefixed by "**raw\_**".</span></span>
 
-<span data-ttu-id="22889-110">コードの一部は、単にコーディングのスタイルを示します。</span><span class="sxs-lookup"><span data-stu-id="22889-110">Some of the code simply reflects coding style.</span></span>
+<span data-ttu-id="96a14-110">コードの一部は、単にコーディングのスタイルを示します。</span><span class="sxs-lookup"><span data-stu-id="96a14-110">Some of the code simply reflects coding style.</span></span>
 
-  - <span data-ttu-id="22889-111">**Advise** メソッドが使う **IUnknown** のポインターは、 **QueryInterface** の呼び出しを使って明示的に取得されます。</span><span class="sxs-lookup"><span data-stu-id="22889-111">The pointer to **IUnknown** used by the **Advise** method is obtained explicitly with a call to **QueryInterface**.</span></span>
+  - <span data-ttu-id="96a14-111">**Advise** メソッドが使う **IUnknown** のポインターは、 **QueryInterface** の呼び出しを使って明示的に取得されます。</span><span class="sxs-lookup"><span data-stu-id="96a14-111">The pointer to **IUnknown** used by the **Advise** method is obtained explicitly with a call to **QueryInterface**.</span></span>
 
-  - <span data-ttu-id="22889-112">クラス定義にデストラクターを明示的にコーディングする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="22889-112">You don't need to explicitly code a destructor in the class definitions.</span></span>
+  - <span data-ttu-id="96a14-112">クラス定義にデストラクターを明示的にコーディングする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="96a14-112">You don't need to explicitly code a destructor in the class definitions.</span></span>
 
-  - <span data-ttu-id="22889-113">QueryInterface、AddRef、および Release に関して、より強固な実装をコーディングすることもできます。</span><span class="sxs-lookup"><span data-stu-id="22889-113">You may want to code more robust implementations of QueryInterface, AddRef, and Release.</span></span>
+  - <span data-ttu-id="96a14-113">QueryInterface、AddRef、および Release に関して、より強固な実装をコーディングすることもできます。</span><span class="sxs-lookup"><span data-stu-id="96a14-113">You may want to code more robust implementations of QueryInterface, AddRef, and Release.</span></span>
 
-  - <span data-ttu-id="22889-114">\*\* \_ \_Uuidof()\*\* ディレクティブは、インターフェイス Id を取得するのには広範囲に使用します。</span><span class="sxs-lookup"><span data-stu-id="22889-114">The **\_\_uuidof()** directive is used extensively to obtain interface IDs.</span></span>
+  - <span data-ttu-id="96a14-114">\*\* \_ \_Uuidof()\*\* ディレクティブは、インターフェイス Id を取得するのには広範囲に使用します。</span><span class="sxs-lookup"><span data-stu-id="96a14-114">The **\_\_uuidof()** directive is used extensively to obtain interface IDs.</span></span>
 
-<span data-ttu-id="22889-115">最後に、例には動作可能なコードが含まれています。</span><span class="sxs-lookup"><span data-stu-id="22889-115">Finally, the example contains some working code.</span></span>
+<span data-ttu-id="96a14-115">最後に、例には動作可能なコードが含まれています。</span><span class="sxs-lookup"><span data-stu-id="96a14-115">Finally, the example contains some working code.</span></span>
 
-  - <span data-ttu-id="22889-116">例は、コンソール アプリケーションとして記述されています。</span><span class="sxs-lookup"><span data-stu-id="22889-116">The example is written as a console application.</span></span>
+  - <span data-ttu-id="96a14-116">例は、コンソール アプリケーションとして記述されています。</span><span class="sxs-lookup"><span data-stu-id="96a14-116">The example is written as a console application.</span></span>
 
-  - <span data-ttu-id="22889-117">コメントの下で、独自のコードを挿入する必要があります」といくつかの作業を行うと"です。</span><span class="sxs-lookup"><span data-stu-id="22889-117">You should insert your own code under the comment, "// Do some work ".</span></span>
+  - <span data-ttu-id="96a14-117">コメントの下で、独自のコードを挿入する必要があります」といくつかの作業を行うと"です。</span><span class="sxs-lookup"><span data-stu-id="96a14-117">You should insert your own code under the comment, "// Do some work ".</span></span>
 
-  - <span data-ttu-id="22889-p103">既定では、すべてのイベント ハンドラーは、何も実行しないで後続の通知を取り消します。ユーザーは、アプリケーションに適したコードを挿入し、必要に応じて通知を利用してください。</span><span class="sxs-lookup"><span data-stu-id="22889-p103">All the event handlers default to doing nothing, and canceling further notifications. You should insert the appropriate code for your application, and allow notifications if required.</span></span>
+  - <span data-ttu-id="96a14-p103">既定では、すべてのイベント ハンドラーは、何も実行しないで後続の通知を取り消します。ユーザーは、アプリケーションに適したコードを挿入し、必要に応じて通知を利用してください。</span><span class="sxs-lookup"><span data-stu-id="96a14-p103">All the event handlers default to doing nothing, and canceling further notifications. You should insert the appropriate code for your application, and allow notifications if required.</span></span>
 
 <!-- end list -->
 

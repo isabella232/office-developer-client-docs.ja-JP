@@ -1,24 +1,24 @@
 ---
-title: Execute メソッド、Requery メソッド、および Clear メソッドの使用例 (VC++)
-TOCTitle: Execute, Requery, and Clear Methods Example (VC++)
+title: Execute メソッド、Requery メソッド、Clear メソッドの使用例 (VC++)
+TOCTitle: Execute, Requery, and Clear methods example (VC++)
 ms:assetid: ac65f1d8-e185-c00a-9ad6-8b6a22529238
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249803(v=office.15)
 ms:contentKeyID: 48547008
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9d2a973ac975b1835273ac098959097175d50a1c
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 037e6f8754d9ff133f55361273089f09c971b4b2
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477440"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860190"
 ---
-# <a name="execute-requery-and-clear-methods-example-vc"></a><span data-ttu-id="0da91-102">Execute メソッド、Requery メソッド、および Clear メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="0da91-102">Execute, Requery, and Clear Methods Example (VC++)</span></span>
+# <a name="execute-requery-and-clear-methods-example-vc"></a><span data-ttu-id="e6de2-102">Execute メソッド、Requery メソッド、Clear メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="e6de2-102">Execute, Requery, and Clear methods example (VC++)</span></span>
 
 
-<span data-ttu-id="0da91-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="0da91-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="e6de2-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="e6de2-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="0da91-p101">この例では、Command オブジェクトの Execute メソッドを実行する場合と Connection オブジェクトの Execute メソッドを実行する場合を示します。また、Requery メソッドを使用して Recordset 内の最新のデータを取得し、Clear メソッドを使用して Errors コレクションの内容をクリアします。このプロシージャを実行するには ExecuteCommand 関数および PrintOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="0da91-p101">This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object. It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a [recordset](recordset-object-ado.md), and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection. The ExecuteCommand and PrintOutput functions are required for this example to run.</span></span>
+<span data-ttu-id="e6de2-p101">この例では、Command オブジェクトの Execute メソッドを実行する場合と Connection オブジェクトの Execute メソッドを実行する場合を示します。また、Requery メソッドを使用して Recordset 内の最新のデータを取得し、Clear メソッドを使用して Errors コレクションの内容をクリアします。このプロシージャを実行するには ExecuteCommand 関数および PrintOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="e6de2-p101">This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object. It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a [recordset](recordset-object-ado.md), and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection. The ExecuteCommand and PrintOutput functions are required for this example to run.</span></span>
 
 ```cpp 
  

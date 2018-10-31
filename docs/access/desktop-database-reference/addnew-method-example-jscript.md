@@ -1,23 +1,23 @@
 ---
 title: AddNew メソッドの使用例 (JScript)
-TOCTitle: AddNew Method Example (JScript)
+TOCTitle: AddNew method example (JScript)
 ms:assetid: b6f7e98d-d34d-dc2a-bdcb-65452f3fe5e9
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249882(v=office.15)
 ms:contentKeyID: 48547290
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 203930b24f49af82771206024369c79cfa24f8b6
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 73706fc5e3e95b83e9e2c8e485364afdc4f141cd
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478548"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25859917"
 ---
-# <a name="addnew-method-example-jscript"></a><span data-ttu-id="94934-102">AddNew メソッドの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="94934-102">AddNew Method Example (JScript)</span></span>
+# <a name="addnew-method-example-jscript"></a><span data-ttu-id="cb144-102">AddNew メソッドの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="cb144-102">AddNew method example (JScript)</span></span>
 
-<span data-ttu-id="94934-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="94934-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="cb144-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="cb144-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="94934-p101">この例では、[AddNew](addnew-method-ado.md) メソッドを使用して、指定された名前で新しいレコードを作成します。以下のコードをコピーしてメモ帳などのテキスト エディターに貼り付け、 **AddNewJS.asp** という名前で保存してください。</span><span class="sxs-lookup"><span data-stu-id="94934-p101">This example uses the [AddNew](addnew-method-ado.md) method to create a new record with the specified name. Cut and paste the following code to Notepad or another text editor, and save it as **AddNewJS.asp**.</span></span>
+<span data-ttu-id="cb144-p101">この例では、[AddNew](addnew-method-ado.md) メソッドを使用して、指定された名前で新しいレコードを作成します。以下のコードをコピーしてメモ帳などのテキスト エディターに貼り付け、 **AddNewJS.asp** という名前で保存してください。</span><span class="sxs-lookup"><span data-stu-id="cb144-p101">This example uses the [AddNew](addnew-method-ado.md) method to create a new record with the specified name. Cut and paste the following code to Notepad or another text editor, and save it as **AddNewJS.asp**.</span></span>
 
 ```javascript
 <!-- BeginAddNewJS --> 
@@ -29,7 +29,7 @@ ms.locfileid: "25478548"
 <html> 
  
 <head> 
- <title>Add New Method Example (JScript)</title> 
+ <title>Add New method example (JScript)</title> 
 <style> 
 <!-- 
 body { 
@@ -42,7 +42,7 @@ body {
 </head> 
  
 <body> 
-<h1>AddNew Method Example (JScript)</h1> 
+<h1>AddNew method example (JScript)</h1> 
  
 <% 
  if (Request.Form("Addit") == "AddNew") 

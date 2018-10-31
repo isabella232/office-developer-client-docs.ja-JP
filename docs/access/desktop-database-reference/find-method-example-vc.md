@@ -1,24 +1,24 @@
 ---
 title: Find メソッドの使用例 (VC++)
-TOCTitle: Find Method Example (VC++)
+TOCTitle: Find method example (VC++)
 ms:assetid: dc6adb54-48ef-475e-7b52-435ac0fc63ff
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250114(v=office.15)
 ms:contentKeyID: 48548137
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6c832e86c4031fd069cfca18f9135a1f766a36d2
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 09c7ad1a5fc78f1e41767a6bded2d05de94319a0
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477380"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861849"
 ---
-# <a name="find-method-example-vc"></a><span data-ttu-id="0880f-102">Find メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="0880f-102">Find Method Example (VC++)</span></span>
+# <a name="find-method-example-vc"></a><span data-ttu-id="e393d-102">Find メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="e393d-102">Find method example (VC++)</span></span>
 
 
-<span data-ttu-id="0880f-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="0880f-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="e393d-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="e393d-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="0880f-104">この例では、[レコード セット](recordset-object-ado.md)オブジェクトの[Find](find-method-ado.md)メソッドを使用して、検索して、 ***Pubs***データベース内のビジネス書籍の数をカウントします。</span><span class="sxs-lookup"><span data-stu-id="0880f-104">This example uses the [Recordset](recordset-object-ado.md) object's [Find](find-method-ado.md) method to locate and count the number of business titles in the ***Pubs*** database.</span></span> <span data-ttu-id="0880f-105">基になるプロバイダーは同様の機能をサポートしていないものと仮定します。</span><span class="sxs-lookup"><span data-stu-id="0880f-105">The example assumes the underlying provider does not support similar functionality.</span></span>
+<span data-ttu-id="e393d-104">この例では、[レコード セット](recordset-object-ado.md)オブジェクトの[Find](find-method-ado.md)メソッドを使用して、検索して、 ***Pubs***データベース内のビジネス書籍の数をカウントします。</span><span class="sxs-lookup"><span data-stu-id="e393d-104">This example uses the [Recordset](recordset-object-ado.md) object's [Find](find-method-ado.md) method to locate and count the number of business titles in the ***Pubs*** database.</span></span> <span data-ttu-id="e393d-105">基になるプロバイダーは同様の機能をサポートしていないものと仮定します。</span><span class="sxs-lookup"><span data-stu-id="e393d-105">The example assumes the underlying provider does not support similar functionality.</span></span>
 
 ```cpp 
  
@@ -187,7 +187,7 @@ void PrintComError(_com_error &e)
 // EndFindCpp 
 ```
 
-<span data-ttu-id="0880f-106">**FindX.h**</span><span class="sxs-lookup"><span data-stu-id="0880f-106">**FindX.h**</span></span>
+<span data-ttu-id="e393d-106">**FindX.h**</span><span class="sxs-lookup"><span data-stu-id="e393d-106">**FindX.h**</span></span>
 
 ```cpp 
  
