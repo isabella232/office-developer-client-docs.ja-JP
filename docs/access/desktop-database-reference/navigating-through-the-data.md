@@ -6,27 +6,29 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249394(v=office.15)
 ms:contentKeyID: 48545332
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 490cec7ee5e75b9f5a61a130481308f8fa341912
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c0bf72cd44d6fa6bb5ec74e339e161ba77eea766
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477657"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860484"
 ---
-# <a name="navigating-through-the-data"></a>データ間を移動する
+# <a name="navigating-through-the-data"></a>データ内の移動
 
 
 **適用されます**Access 2013 |。Office 2013
 
-データ ソースに対するコマンドの実行が終了し、結果セットにデータが含まれていることがわかりました。次は、 **Recordset** オブジェクトに用意されている移動メソッドとプロパティを使用して、結果間を移動します。以降のトピックでは、これらのメソッドおよびプロパティを、サンプルの **Recordset** に対して使用する方法を説明します。
+これで、データ ソースに対してコマンドを実行し、結果セットにデータが含まれていることを確認したら、ナビゲーション メソッドと**レコード セット**オブジェクトによって提供されるプロパティを使用して結果を移動できます。 
 
-  - [任意のレコードにジャンプする](jumping-to-a-record.md)
+次のトピックでは、 **recordset**オブジェクトにこれらのメソッドとプロパティを使用する方法について説明します。
 
-  - [レコードセット内を移動する他の方法](more-ways-to-move-in-a-recordset.md)
+- [任意のレコードにジャンプする](jumping-to-a-record.md)
 
-  - [ブックマークを使用する](using-bookmarks.md)
+- [レコードセット内を移動する他の方法](more-ways-to-move-in-a-recordset.md)
 
-  - [ページを使用する](using-pages.md)
+- [ブックマークを使用する](using-bookmarks.md)
 
-  - [レコードセットを配置する](recordset-positioning.md)
+- [ページを使用する](using-pages.md)
+
+- [レコードセットを配置する](recordset-positioning.md)
 

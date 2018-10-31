@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249459(v=office.15)
 ms:contentKeyID: 48545605
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 73940108f96cf46cb15d646936039c0329373899
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: f01141e0dc2445a91267cf7744214b906a1af3fd
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25606907"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860344"
 ---
 # <a name="copyrecord-method-ado"></a>CopyRecord メソッド (ADO)
 
@@ -50,7 +50,7 @@ ms.locfileid: "25606907"
 
   - 省略可能です。ブール型 ( **Boolean** ) の値を指定します。値が **True** の場合、この動作は非同期で実行されます。
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
 ## <a name="return-value"></a>戻り値
 =======
 ## <a name="return-value"></a>戻り値
@@ -68,13 +68,13 @@ ms.locfileid: "25606907"
 
 
 > [!IMPORTANT]
-> <P><STRONG>AdCopyOverWrite</STRONG>オプションを慎重に使用します。 などのディレクトリにファイルをコピーするときにこのオプションを指定するディレクトリは<EM>削除</EM>し、ファイルで置き換えます。</P>
+> **AdCopyOverWrite**オプションを慎重に使用します。 などのディレクトリにファイルをコピーするときにこのオプションを指定するディレクトリは*削除*し、ファイルで置き換えます。
 
 
 
 
 > [!NOTE]
-<<<<<<< ヘッド
+<<<<<<< 見出し
 > <P>[!メモ] http 体系を使用している URL は、<A href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</A> を自動的に呼び出します。詳細については、「 <A href="absolute-and-relative-urls.md">絶対 URL と相対 URL</A>」を参照してください。</P>
 =======
 > [!メモ] http 体系を使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、[絶対と相対 Url](absolute-and-relative-urls.md)を参照してください。

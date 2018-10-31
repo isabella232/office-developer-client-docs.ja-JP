@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197092(v=office.15)
 ms:contentKeyID: 48546185
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5b5e479739177fa869bb2e96329c47c5f5889b64
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d23e088ca93474ac928875730580a693abe9648c
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476380"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862227"
 ---
 # <a name="fielddefaultvalue-property-dao"></a>Field.DefaultValue プロパティ (DAO)
 
@@ -33,8 +33,7 @@ ms.locfileid: "25476380"
 
 
 > [!NOTE]
-> <P>[!メモ] <STRONG><STRONG>TableDef</STRONG></STRONG> オブジェクトで <A href="tabledef-object-dao.md">Field</A> オブジェクトの <STRONG>DefaultValue</STRONG> プロパティを "GenUniqueID( )" と呼ばれる特殊な値に設定することもできます。これにより、新規レコードを追加または作成すると、このフィールドに乱数が割り当てられ、各レコードに一意の識別子が設定されます。フィールドの <STRONG><A href="field-type-property-dao.md">Type</A></STRONG> プロパティは長整数型 ( <STRONG>Long</STRONG>) である必要があります。</P>
-
+> [!メモ] ****TableDef**** オブジェクトで [Field](tabledef-object-dao.md) オブジェクトの DefaultValue プロパティを "GenUniqueID( )" と呼ばれる特殊な値に設定することもできます。これにより、新規レコードを追加または作成すると、このフィールドに乱数が割り当てられ、各レコードに一意の識別子が設定されます。フィールドの [Type](field-type-property-dao.md) プロパティは長整数型 ( **Long**) である必要があります。
 
 
 **DefaultValue** プロパティを使用できるかどうかは、次の表に示すように、 **Fields** コレクションを含むオブジェクトによって決まります。

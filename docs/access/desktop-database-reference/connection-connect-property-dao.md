@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194335(v=office.15)
 ms:contentKeyID: 48545001
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b1b4baff3bd1ca7d39fbf86f2002b73bda996f1a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a362f2d480a27341620695038e6507083ae5ed81
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478722"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861842"
 ---
 # <a name="connectionconnect-property-dao"></a>Connection.Connect プロパティ (DAO)
 
@@ -165,10 +165,7 @@ Microsoft Access ワークスペースの **QueryDef** オブジェクトでは�
 
 
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>先に <STRONG>Connect</STRONG> プロパティを設定してから、 <STRONG>ReturnsRecords</STRONG> プロパティを設定する必要があります。</P>
-> <LI>
-> <P>アクセスするデータベース サーバーがインストールされているコンピューターに対するアクセス権限を持っている必要があります。</P></LI></UL>
+> - 先に **Connect** プロパティを設定してから、 **ReturnsRecords** プロパティを設定する必要があります。
+> - アクセスするデータベース サーバーがインストールされているコンピューターに対するアクセス権限を持っている必要があります。
 
 

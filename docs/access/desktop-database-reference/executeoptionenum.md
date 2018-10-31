@@ -4,21 +4,22 @@ TOCTitle: ExecuteOptionEnum
 ms:assetid: bd6d44a3-e471-7aa0-3e65-6775334de2ff
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249915(v=office.15)
 ms:contentKeyID: 48547438
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: aeb1083c693e0848e30a0b9217ae709994daddb5
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 51c5ab78c4ea49ade7fd2b6972aa3753b0c6df09
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477747"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862311"
 ---
 # <a name="executeoptionenum"></a>ExecuteOptionEnum
-
 
 **適用されます**Access 2013 |。Office 2013
 
 プロバイダーによるコマンドの実行方法を表します。
+
+<br/>
 
 <table>
 <colgroup>
@@ -48,7 +49,8 @@ ms.locfileid: "25477747"
 <tr class="odd">
 <td><p><strong>adAsyncFetchNonBlocking</strong></p></td>
 <td><p>0x40</p></td>
-<td><p>取得中にメイン スレッドがブロックされないことを示します。 要求された行が取得されていない場合、現在の行は、ファイルの末尾に自動的に移動します。 永続的に保存された <strong>Recordset</strong> を持つ <a href="stream-object-ado.md">Stream</a> から <a href="recordset-object-ado.md">Recordset</a> を開いた場合、<strong>adAsyncFetchNonBlocking</strong> は無効になり、操作は同期で実行され、ブロッキングが発生します。 <a href="commandtypeenum.md">adCmdTableDirect</a> オプションを使用して <strong>Recordset</strong> を開いた場合、<strong>adAsynchFetchNonBlocking</strong> は無効になります。</p></td>
+<td><p>取得中にメイン スレッドがブロックしないことを示します。要求された行がまだ取得されていない場合、現在の行が自動的にファイルの最後に移動します。
+</p><p>永続的に保存された <strong>Recordset</strong> を持つ <a href="stream-object-ado.md">Stream</a> から <a href="recordset-object-ado.md">Recordset</a> を開いた場合、<strong>adAsyncFetchNonBlocking</strong> は無効になり、操作は同期で実行され、ブロッキングが発生します。 <a href="commandtypeenum.md">adCmdTableDirect</a> オプションを使用して <strong>Recordset</strong> を開いた場合、<strong>adAsynchFetchNonBlocking</strong> は無効になります。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adExecuteNoRecords</strong></p></td>
@@ -76,7 +78,7 @@ ms.locfileid: "25477747"
 </table>
 
 
-**ADO/WFC 等価**
+### <a name="adowfc-equivalent"></a>ADO/WFC に相当
 
 パッケージ: **com.ms.wfc.data**
 

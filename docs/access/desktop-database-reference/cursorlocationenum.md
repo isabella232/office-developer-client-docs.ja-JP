@@ -4,21 +4,22 @@ TOCTitle: CursorLocationEnum
 ms:assetid: 520cc738-998b-ce80-6362-0df310c40c39
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249268(v=office.15)
 ms:contentKeyID: 48544836
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 90226413579a8fac7586cbd5ef08510a36a42959
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 7f8eedd1245be16d87a2d3b2cd2b9121853529c5
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477573"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863633"
 ---
 # <a name="cursorlocationenum"></a>CursorLocationEnum
-
 
 **適用されます**Access 2013 |。Office 2013
 
 カーソル サービスの場所を表します。
+
+<br/>
 
 <table>
 <colgroup>
@@ -47,13 +48,13 @@ ms.locfileid: "25477573"
 <tr class="odd">
 <td><p><strong>adUseServer</strong></p></td>
 <td><p>2</p></td>
-<td><p>既定値。データ プロバイダー カーソルまたはドライバーによって提供されるカーソルを使用します。これらのカーソルは、多くの場合柔軟性が高く、他のユーザーが行うデータ ソースへの変更を検出できます。ただし、<a href="microsoft-cursor-service-for-ole-db-ado-service-component.md">Microsoft Cursor Service for OLE DB</a> にはサーバー側カーソルではシミュレートできない機能 (独立した <a href="recordset-object-ado.md">Recordset</a> オブジェクトなど) があり、そのような機能はこの設定では利用できません。</p></td>
+<td><p>既定値です。 データ プロバイダーまたはドライバーによって提供されるカーソルを使用します。 これらのカーソルは、非常に柔軟性のある場合があり、データ ソースに加える他のユーザーの変更を検出できるようにします。 ただし、サーバー側カーソル (<a href="recordset-object-ado.md">レコード セット</a>オブジェクトを作り出す) などの<a href="microsoft-cursor-service-for-ole-db-ado-service-component.md">OLE DB のカーソル サービスをマイクロソフト</a>の一部の機能をシミュレートすることはできませんし、これらの機能はこの設定では利用できません。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-**ADO/WFC 等価**
+### <a name="adowfc-equivalent"></a>ADO/WFC に相当
 
 パッケージ: **com.ms.wfc.data**
 

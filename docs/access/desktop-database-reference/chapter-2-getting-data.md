@@ -1,19 +1,19 @@
 ---
-title: '2 章: データを取得する'
+title: '第 2 章: データの取得'
 TOCTitle: 'Chapter 2: Getting Data'
 ms:assetid: 72d097e1-9284-cc27-fd48-e6bbb6a2a543
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249465(v=office.15)
 ms:contentKeyID: 48545619
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4d3df907e1dbe220caab58541b7c3eba605ef2f3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 601d18373f5bcd0a9ed6777fa50c2a3ed631594a
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478185"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860890"
 ---
-# <a name="chapter-2-getting-data"></a>2 章: データを取得する
+# <a name="chapter-2-getting-data"></a>第 2 章: データの取得
 
 
 **適用されます**Access 2013 |。Office 2013
@@ -34,3 +34,12 @@ ADO のオブジェクト モデルでは、接続の概念を **Connection** �
 
   - 基になるデータ ソースのデザインに関する情報をスキーマ行セットの形で提供します。スキーマ行セットの詳細については、「[OpenSchema メソッド (ADO)](openschema-method-ado.md)」を参照してください。
 
+この章では、次のトピックについて説明します。
+
+  - [接続を作成する](making-a-connection.md)
+
+  - [Connection オブジェクトの使用のリファレンス (ADO)](using-the-connection-object-access.md)
+
+  - [Command オブジェクトの使用のリファレンス (ADO)](using-the-command-object-access.md)
+
+  - [レコードセットにデータを追加する (ADO)](adding-data-to-a-recordset.md)

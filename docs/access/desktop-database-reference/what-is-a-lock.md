@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249721(v=office.15)
 ms:contentKeyID: 48546636
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f852901be41060568bdbad539906e9166d080fad
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 52d37d5b618db5e2de698fc4250afde7c4ca5fb5
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478060"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862185"
 ---
 # <a name="what-is-a-lock"></a>ロックとは
 
@@ -31,4 +31,8 @@ ms.locfileid: "25478060"
 **CursorLocation** プロパティが [adUseClient](cursorlocation-property-ado.md) に設定されている場合、 **adLockPessimistic** 設定はサポートされません。サポートされていない値を設定しても、エラーは発生せず、サポートされる最も近い種類の **LockType** が代わりに使用されます。
 
 **LockType** プロパティは、 **Recordset** が閉じている場合は読み取り/書き込み可能になっていますが、開いている場合は読み取り専用になります。
+
+このセクションには、次のトピックが含まれています。
+
+- [ロックの種類](types-of-locks.md)
 

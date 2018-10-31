@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250152(v=office.15)
 ms:contentKeyID: 48548285
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1f64f3b04df989348173ad2fc975dcefbd1114b2
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 727634356a08646b1e2757996cc6bf071de07353
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476675"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861576"
 ---
 # <a name="append-method-adox-columns"></a>Append メソッド (ADOX Columns)
 
@@ -40,6 +40,6 @@ ms.locfileid: "25476675"
 
 
 > [!NOTE]
-> <P>[!メモ] <STRONG>Column</STRONG> を <STRONG>Index</STRONG> の <A href="index-object-adox.md">Columns</A> コレクションに追加するときに、 <STRONG>Tables</STRONG> コレクションに既に追加されている <A href="table-object-adox.md">Table</A> にまだ <A href="tables-collection-adox.md">Column</A> が存在していない場合は、エラーが発生します。</P>
+> [!メモ] **Column** を **Index** の [Columns](index-object-adox.md) コレクションに追加するときに、 **Tables** コレクションに既に追加されている [Table](table-object-adox.md) にまだ [Column](tables-collection-adox.md) が存在していない場合は、エラーが発生します。
 
 

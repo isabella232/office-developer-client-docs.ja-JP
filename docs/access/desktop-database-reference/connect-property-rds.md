@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248890(v=office.15)
 ms:contentKeyID: 48543324
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: eb628356e4d93201c38cf84a9c3245b13e044ee3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 191ef13d4d3c73bfbee50d72720d7e450376dd23
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478950"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862920"
 ---
 # <a name="connect-property-rds"></a>Connect プロパティ (RDS)
 
@@ -30,17 +30,14 @@ ms.locfileid: "25478950"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *ConnectionString*
+- *ConnectionString*
 
   - 有効な接続文字列を指定します。接続文字列全般の説明については、[ConnectionString](connectionstring-property-ado.md) プロパティかプロバイダーのマニュアルを参照してください。
     
-
     > [!NOTE]
-    > <P>[!メモ] <STRONG>RDS.DataControl</STRONG> のプロバイダーとして MS Remote を指定すると、4 層のシナリオが作成されます。3 層を超えるシナリオについては未確認なので避けてください。</P>
+    > [!メモ] **RDS.DataControl** のプロバイダーとして MS Remote を指定すると、4 層のシナリオが作成されます。3 層を超えるシナリオについては未確認なので避けてください。
 
-
-
-  - *DataControl*
+- *DataControl*
 
   - **RDS.DataControl** オブジェクトを表すオブジェクト変数を指定します。
 

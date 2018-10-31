@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248893(v=office.15)
 ms:contentKeyID: 48543328
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 41424fd62e915ecb2d54fdb49c939b788f458804
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0eb70a615f49ff351ec31a826abc9775558218dd
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477418"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862556"
 ---
 # <a name="running-business-objects-in-component-services"></a>コンポーネント サービスでビジネス オブジェクトを実行する
 
@@ -26,6 +26,11 @@ ms.locfileid: "25477418"
 
 
 > [!NOTE]
-> <P>中間層のビジネス オブジェクトは、コンポーネント サービスのコンポーネント ( <STRONG>GetObjectContext</STRONG>、 <STRONG>SetComplete</STRONG>、および<STRONG>SetAbort</STRONG>を使用) として実装されているを使って、コンポーネント サービス (または Windows NT を使用している場合は MTS) コンテキスト オブジェクトを複数のクライアント呼び出し間で状態を維持します。 このシナリオは、通常は信頼関係のあるクライアントとサーバー (イントラネット) 間で実装される DCOM でも可能です。 その場合、クライアント側の <A href="dataspace-object-rds.md">RDS.DataSpace</A> オブジェクトと <A href="createobject-method-rds.md">CreateObject</A> メソッドはトランザクション コンテキスト オブジェクトと <STRONG>CreateInstance</STRONG> メソッド ( <STRONG>ITransactionContext</STRONG> インターフェイスによって提供) に置き換えられ、コンポーネント サービスによって実装されます。</P>
+> 中間層のビジネス オブジェクトは、コンポーネント サービスのコンポーネント ( **GetObjectContext**、 **SetComplete**、および**SetAbort**を使用) として実装されているを使って、コンポーネント サービス (または Windows NT を使用している場合は MTS) コンテキスト オブジェクトを複数のクライアント呼び出し間で状態を維持します。 このシナリオは、通常は信頼関係のあるクライアントとサーバー (イントラネット) 間で実装される DCOM でも可能です。 
+>
+> その場合、クライアント側の [RDS.DataSpace](dataspace-object-rds.md) オブジェクトと [CreateObject](createobject-method-rds.md) メソッドはトランザクション コンテキスト オブジェクトと **CreateInstance** メソッド ( **ITransactionContext** インターフェイスによって提供) に置き換えられ、コンポーネント サービスによって実装されます。
 
 
+## <a name="see-also"></a>関連項目
+
+- [コンポーネント サービス (SQL Server) のビジネス オブジェクトを実行しています。](https://docs.microsoft.com/sql/ado/guide/remote-data-service/running-business-objects-in-component-services?view=sql-server-2017)

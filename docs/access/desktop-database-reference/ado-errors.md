@@ -6,14 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248796(v=office.15)
 ms:contentKeyID: 48542972
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ee87da91086a010066ba94b294955eebdff7b636
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a8b6b794daf7c03df26c186ac58b9a02ed4a7419
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476627"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861233"
 ---
-# <a name="ado-errors"></a>ADO エラー一覧
+# <a name="ado-errors"></a>ADO エラー
 
 
 **適用されます**Access 2013 |。Office 2013
@@ -89,9 +89,7 @@ Help File: E:\WINNT\HELP\ADO260.CHM Topic ID: 1003705
 
 
 > [!NOTE]
-> <P>[!メモ] Visual Basic の <STRONG>Err</STRONG> オブジェクトには、最新のエラーに関する情報のみが格納されます。 <STRONG>Connection</STRONG> オブジェクトの ADO の <STRONG>Errors</STRONG> コレクションには、直近の ADO 操作によって発生したエラー 1 つにつき 1 つの <STRONG>Error</STRONG> オブジェクトが含まれています。複数のエラーを処理するときは、 <STRONG>Err</STRONG> オブジェクトの代わりに <STRONG>Errors</STRONG> コレクションを使用します。 <STRONG>Errors</STRONG> コレクションの詳細については、「 <A href="provider-errors.md">プロバイダー エラー</A>」を参照してください。ただし、有効な <STRONG>Connection</STRONG> オブジェクトがない場合は、 <STRONG>Err</STRONG> オブジェクトが ADO エラーに関する唯一の情報源です。</P>
-
-
+> [!メモ] Visual Basic の **Err** オブジェクトには、最新のエラーに関する情報のみが格納されます。 **Connection** オブジェクトの ADO の **Errors** コレクションには、直近の ADO 操作によって発生したエラー 1 つにつき 1 つの **Error** オブジェクトが含まれています。複数のエラーを処理するときは、 **Err** オブジェクトの代わりに **Errors** コレクションを使用します。 **Errors** コレクションの詳細については、「 <A href="provider-errors.md">プロバイダー エラー</A>」を参照してください。ただし、有効な **Connection** オブジェクトがない場合は、 **Err** オブジェクトが ADO エラーに関する唯一の情報源です。
 
 ADO エラーを発生させる可能性が高い操作とはどのようなものでしょうか。よくある ADO エラーは、 **Connection** や **Recordset** などのオブジェクトを開いたときや、データを更新しようとしたとき、プロバイダーがサポートしていないメソッドまたはプロパティを呼び出したときに発生するものです。
 

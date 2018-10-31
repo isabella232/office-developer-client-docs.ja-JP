@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm152112
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 85e9fc888e06a69be6f458ed03ad92b8253b30a2
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f9ac791ffd0f11c11358298570db833f8d561d11
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477709"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860939"
 ---
 # <a name="deleteobject-macro-action"></a>DeleteObject マクロ アクション
 
@@ -26,9 +26,7 @@ ms.locfileid: "25477709"
 
 
 > [!NOTE]
-> <P>[!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。</P>
-
-
+> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。
 
 ## <a name="setting"></a>設定
 
@@ -60,7 +58,7 @@ ms.locfileid: "25477709"
 
 
 > [!WARNING]
-> <P>[!注意] [ <STRONG>オブジェクトの種類</STRONG> ] ボックスと [ <STRONG>オブジェクト名</STRONG> ] ボックスに値を指定しない場合、 <STRONG>DeleteObject</STRONG> アクションでは、ナビゲーション ウィンドウで選択したオブジェクトが削除されますが、削除を確認するメッセージは表示されません。</P>
+> [!注意] [ **オブジェクトの種類** ] ボックスと [ **オブジェクト名** ] ボックスに値を指定しない場合、 **DeleteObject** アクションでは、ナビゲーション ウィンドウで選択したオブジェクトが削除されますが、削除を確認するメッセージは表示されません。
 
 
 

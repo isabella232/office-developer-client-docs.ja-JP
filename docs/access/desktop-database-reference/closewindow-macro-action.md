@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm64319
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1d80ac5b545f07d3bd39f69f16c4578e49439cdf
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d5ddd1a4b99ec301772690b2815d961676c5a058
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476262"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861856"
 ---
 # <a name="closewindow-macro-action"></a>"CloseWindow/ウィンドウを閉じる" マクロ アクション
 
@@ -45,7 +45,7 @@ ms.locfileid: "25476262"
 <td><p>ドキュメント タブを閉じるオブジェクトの種類を指定します。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>オブジェクトの種類</strong>] ボックスの一覧で [ <strong>テーブル</strong>]、[ <strong>クエリ</strong>]、[ <strong>フォーム</strong>]、[ <strong>レポート</strong>]、[ <strong>マクロ</strong>]、[ <strong>モジュール</strong>]、[ <strong>データ アクセス ページ</strong>]、[ <strong>サーバー ビュー</strong>]、[ <strong>ダイアグラム</strong>]、[ <strong>ストアド プロシージャ</strong>]、[ <strong>関数</strong>] のいずれかをクリックします。アクティブなドキュメント タブを選択する場合は、この引数を指定しません。  </p>
 
 > [!NOTE]
-> <P>モジュールでは、Visual Basic エディターを終了する場合、<STRONG>オブジェクトの型</STRONG>引数に<STRONG>モジュール</STRONG>を使用する必要があります。</P>
+> モジュールでは、Visual Basic エディターを終了する場合、**オブジェクトの型**引数に**モジュール**を使用する必要があります。
 
 
 <p></p></td>

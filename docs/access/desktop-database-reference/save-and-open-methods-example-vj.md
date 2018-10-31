@@ -1,19 +1,19 @@
 ---
-title: Save メソッドおよび Open メソッドの使用例 (VJ++)
-TOCTitle: Save and Open Methods Example (VJ++)
+title: Save メソッドと Open メソッドの使用例 (VJ++)
+TOCTitle: Save and Open methods example (VJ++)
 ms:assetid: 15ad340a-2d32-3656-25d1-5c3927b9fed2
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248920(v=office.15)
 ms:contentKeyID: 48543414
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 69d2ea8f40946ea3edcacf52c97a7464d47cd653
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c671946dbd8a7be83c9d2a3c651e614b1fa90bfc
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476242"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25864006"
 ---
-# <a name="save-and-open-methods-example-vj"></a>Save メソッドおよび Open メソッドの使用例 (VJ++)
+# <a name="save-and-open-methods-example-vj"></a>Save メソッドと Open メソッドの使用例 (VJ++)
 
 
 **適用されます**Access 2013 |。Office 2013

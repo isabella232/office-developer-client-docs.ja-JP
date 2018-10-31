@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845002(v=office.15)
 ms:contentKeyID: 48543088
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7151ed1a03c0ce0cf0204716d19bb7cfd2b4f607
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1218dd1cc6b1b309c5513a9b0f67a66d06d9c499
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476455"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863639"
 ---
 # <a name="fieldordinalposition-property-dao"></a>Field.OrdinalPosition プロパティ (DAO)
 
@@ -80,11 +80,8 @@ ms.locfileid: "25476455"
 
 フィールド数から 1 を引いた数値より大きい数値を指定できます。フィールドは、最も大きい数値に対する相対的な順序で返されます。たとえば、フィールドの **OrdinalPosition** プロパティを 20 に設定し (フィールドは 5 つのみ)、他の 2 つのフィールドの **OrdinalPosition** プロパティをそれぞれ 10 と 30 に設定した場合、20 に設定されたフィールドは、10 に設定されたフィールドと 30 に設定されたフィールドの間に返されます。
 
-
 > [!NOTE]
-> <P>[!メモ] <A href="tabledef-object-dao.md"><STRONG>TableDef</STRONG></A> の <STRONG>Fields</STRONG> コレクションが更新されていない場合でも、 <A href="recordset-object-dao.md">TableDef</A> から開いた <STRONG><STRONG>Recordset</STRONG></STRONG> は、 <STRONG>TableDef</STRONG> オブジェクトの <STRONG>OrdinalPosition</STRONG> データを反映します。テーブル タイプの <STRONG>Recordset</STRONG> には、基になるテーブルと同じ <STRONG>OrdinalPosition</STRONG> データが使用されますが、その他のタイプの <STRONG>Recordset</STRONG> には、 <STRONG>TableDef</STRONG> オブジェクトの <STRONG>OrdinalPosition</STRONG> データによって指定される順序に従った、0 から始まる新しい <STRONG>OrdinalPosition</STRONG> データが使用されます。</P>
-
-
+> の[テーブル定義](tabledef-object-dao.md)の**Fields**コレクションが更新されていない場合でも、 **TableDef**オブジェクトの**OrdinalPosition**データが**テーブル定義**から開かれた[レコード セット](recordset-object-dao.md)のフィールドの順序に反映されます。 テーブル タイプの **Recordset** には、基になるテーブルと同じ **OrdinalPosition** データが使用されますが、その他のタイプの **Recordset** には、 **TableDef** オブジェクトの **OrdinalPosition** データによって指定される順序に従った、0 から始まる新しい **OrdinalPosition** データが使用されます。
 
 ## <a name="example"></a>例
 

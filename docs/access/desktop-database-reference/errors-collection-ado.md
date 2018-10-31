@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249486(v=office.15)
 ms:contentKeyID: 48545706
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b177df4fabd378b19866a15fa57312b87c39b524
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 568524bf2be93720ec319b48a784dfc62bd03f65
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476739"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863305"
 ---
 # <a name="errors-collection-ado"></a>Errors コレクション (ADO)
 
@@ -34,6 +34,6 @@ ADO オブジェクトに関係するすべての操作では、1 つ以上の�
 
 
 > [!NOTE]
-> <P>[!メモ] 1 つの ADO 操作で複数のエラーが発生する場合の詳細については、 <STRONG>Error</STRONG> オブジェクトのトピックを参照してください。</P>
+> [!メモ] 1 つの ADO 操作で複数のエラーが発生する場合の詳細については、 **Error** オブジェクトのトピックを参照してください。
 
 

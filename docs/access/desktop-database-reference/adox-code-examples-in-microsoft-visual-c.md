@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250033(v=office.15)
 ms:contentKeyID: 48547814
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: dd2ebb1a6baa30912594db8e2e9ff9ebc9e374c5
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 0ce8df8d98804e683d2bc196d503cb87b9d18a3b
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25606011"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861919"
 ---
 # <a name="adox-code-examples-in-microsoft-visual-c"></a>Microsoft Visual C++ での ADOX コードの例
 
@@ -28,7 +28,7 @@ ms.locfileid: "25606011"
 
 **メソッド**
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
   - [列とテーブルの Append メソッドと Name プロパティの使用例 (VC++)](columns-and-tables-append-methods-name-property-example-vc.md)
 
   - [Close メソッドの接続、テーブルの種類プロパティの使用例 (vc++)](connection-close-method-table-type-property-example-vc.md)
@@ -48,7 +48,7 @@ ms.locfileid: "25606011"
 
   - [Indexes の Append メソッドの使用例 (VC++)](indexes-append-method-example-vc.md)
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
   - [Keys の Append メソッド、および Key の Type、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VC++)](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vc.md)
 
 **プロパティ**
@@ -77,46 +77,46 @@ ms.locfileid: "25606011"
 
   - [属性プロパティの使用例 (vc++)](attributes-property-example-vc.md)
 
-  - [カタログの ActiveConnection プロパティの使用例 (vc++)](catalog-activeconnection-property-example-vc.md)
+  - [Catalog の ActiveConnection プロパティの使用例 (VC++)](catalog-activeconnection-property-example-vc.md)
 
-  - [クラスター化プロパティの使用例 (vc++)](clustered-property-example-vc.md)
+  - [Clustered プロパティの使用例 (VC++)](clustered-property-example-vc.md)
 
-  - [コマンドと CommandText プロパティの使用例 (vc++)](command-and-commandtext-properties-example-vc.md)
+  - [Command プロパティと CommandText プロパティの使用例 (VC++)](command-and-commandtext-properties-example-vc.md)
 
-  - [Parameters コレクションの Command プロパティの使用例 (VC++)](parameters-collection-command-property-example-vc.md)
+  - [コマンドのプロパティ、パラメーター コレクションの使用例 (vc++)](parameters-collection-command-property-example-vc.md)
 
-  - [作成日時と最終更新日時プロパティの使用例 (vc++)](datecreated-and-datemodified-properties-example-vc.md)
+  - [DateCreated プロパティと DateModified プロパティの使用例 (VC++)](datecreated-and-datemodified-properties-example-vc.md)
 
-  - [DefinedSize プロパティの使用例 (vc++)](definedsize-property-example-vc.md)
+  - [DefinedSize プロパティの使用例 (VC++)](definedsize-property-example-vc.md)
 
-  - [DeleteRule プロパティの使用例 (vc++)](deleterule-property-example-vc.md)
+  - [DeleteRule プロパティの使用例 (VC++)](deleterule-property-example-vc.md)
 
-  - [IndexNulls プロパティの使用例 (vc++)](indexnulls-property-example-vc.md)
+  - [IndexNulls プロパティの使用例 (VC++)](indexnulls-property-example-vc.md)
 >>>>>>> master
 
-  - [Keys の Append メソッド、および Key の Type、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VC++)](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vc.md)
+  - [キーの種類、RelatedColumn、RelatedTable、UpdateRule プロパティのキーの追加メソッドの使用例 (vc++)](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vc.md)
 
-  - [列とテーブルの Append メソッドと Name プロパティの使用例 (VC++)](columns-and-tables-append-methods-name-property-example-vc.md)
+  - [プロパティの名前、列、およびテーブルの追加のメソッドの使用例 (vc++)](columns-and-tables-append-methods-name-property-example-vc.md)
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
   - [NumericScale プロパティと Precision プロパティの使用例 (VC++)](numericscale-and-precision-properties-example-vc.md)
 
   - [ParentCatalog プロパティの使用例 (VC++)](parentcatalog-property-example-vc.md)
 
   - [主キーおよび一意なプロパティの使用例 (vc++)](primarykey-and-unique-properties-example-vc.md)
 =======
-  - [NumericScale と Precision プロパティの使用例 (vc++)](numericscale-and-precision-properties-example-vc.md)
+  - [NumericScale プロパティと Precision プロパティの使用例 (VC++)](numericscale-and-precision-properties-example-vc.md)
 
-  - [ParentCatalog プロパティの使用例 (vc++)](parentcatalog-property-example-vc.md)
+  - [ParentCatalog プロパティの使用例 (VC++)](parentcatalog-property-example-vc.md)
 
-  - [主キーや Unique プロパティの使用例 (vc++)](primarykey-and-unique-properties-example-vc.md)
+  - [PrimaryKey プロパティと Unique プロパティの使用例 (VC++)](primarykey-and-unique-properties-example-vc.md)
 >>>>>>> master
 
-  - [Connection の Close メソッドおよび Table の Type プロパティの使用例 (VC++)](connection-close-method-table-type-property-example-vc.md)
+  - [テーブル型のプロパティ、接続を閉じるメソッドの使用例 (vc++)](connection-close-method-table-type-property-example-vc.md)
 
 **コレクション**
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
   - [Parameters コレクションのコマンド プロパティの使用例 (vc++)](parameters-collection-command-property-example-vc.md)
 =======
   - [Parameters コレクションのコマンド プロパティの使用例 (vc++)](parameters-collection-command-property-example-vc.md)

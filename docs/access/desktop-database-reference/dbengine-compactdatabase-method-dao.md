@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052936
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1be6f910c8ab4aefed483c147ef88e8cecfa3a84
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 9452a76f9e5d467279ee427c6c07016107833acf
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477457"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861434"
 ---
 # <a name="dbenginecompactdatabase-method-dao"></a>DBEngine.CompactDatabase メソッド (DAO)
 
@@ -86,7 +86,7 @@ ms.locfileid: "25477457"
 <td><p>データベースが暗号化されている場合に、暗号化キーを含む文字列式です。 文字列&quot;; pwd =&quot;実際のパスワードを付ける必要があります。 パスワード設定を DstLocale に含めると、この設定は無視されます。</p>
 
 > [!NOTE]
-> <P>これは非推奨のパラメーターでありでサポートされていません。ACCDB 形式です。 暗号化します。ACCDB ファイルを使用して、"pwd ="オプション文字列。 [!メモ] パスワードには、大文字、小文字、数字、記号を組み合わせた複雑なものを使用してください。 これらの文字を混在させたものになっていないパスワードは強固とはいえません。 たとえば、Y6dh!et5 は安全性の高いパスワードです。 House27 は推測されやすいパスワードです。 また、高い安全性を保ちながらも、書き留めておかなくても覚えておくことができるパスワードを使用してください。</P>
+> これは非推奨のパラメーターでありでサポートされていません。ACCDB 形式です。 暗号化します。ACCDB ファイルを使用して、"pwd ="オプション文字列。 [!メモ] パスワードには、大文字、小文字、数字、記号を組み合わせた複雑なものを使用してください。 これらの文字を混在させたものになっていないパスワードは強固とはいえません。 たとえば、Y6dh!et5 は安全性の高いパスワードです。 House27 は推測されやすいパスワードです。 また、高い安全性を保ちながらも、書き留めておかなくても覚えておくことができるパスワードを使用してください。
 
 
 </td>

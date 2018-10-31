@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm117200
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 003fb36fc876aa573419b963a9eca6f54332190a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 725bb4530bffe9aeead327caa74cdba0798c181d
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477888"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862660"
 ---
 # <a name="displayhourglasspointer-macro-action"></a>"DisplayHourglassPointer/砂時計ポインターの表示" マクロ アクション
 
@@ -54,15 +54,9 @@ ms.locfileid: "25477888"
 
 自動的にリセット、**砂時計型インデント マーカーの**引数に [ **No**マクロの実行が完了するとします。
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Microsoft Windows では、Windows コントロール パネルの [<STRONG>マウスのプロパティ</STRONG>] ダイアログ ボックスで [<STRONG>待ち状態</STRONG>] に設定されたアイコンが使用されます。すべての Windows オペレーティング システムで、既定の設定は砂時計アイコンです。</P>
-> <LI>
-> <P>別のアイコンを選択することもできます。</P></LI></UL>
-
-
+> - Microsoft Windows では、Windows コントロール パネルの [**マウスのプロパティ**] ダイアログ ボックスで [**待ち状態**] に設定されたアイコンが使用されます。すべての Windows オペレーティング システムで、既定の設定は砂時計アイコンです。
+> - 別のアイコンを選択することもできます。
 
 Visual Basic for Applications (VBA) モジュールに**DisplayHourglassPointer**アクションを実行するには、 **DoCmd**オブジェクトの**Hourglass**メソッドを使用します。
 

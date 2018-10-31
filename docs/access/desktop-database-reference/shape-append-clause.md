@@ -6,14 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249633(v=office.15)
 ms:contentKeyID: 48546301
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6460572f44e79fe4bdb30d1ca33810d610da9721
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: cb8e60c52ded359350adff737807c3e0f92cb7c4
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476718"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862126"
 ---
-# <a name="shape-append-clause"></a>Shape Append 句
+# <a name="shape-append-clause"></a>Shape APPEND 句
 
 
 **適用されます**Access 2013 |。Office 2013
@@ -122,3 +122,12 @@ SHAPE {select * from t1; drop table t1} APPEND ({select * from t2} RELATE k1 TO 
 
 図形を選択を実行する\*から t1 です。テーブル t1 をドロップと (選択\*t2 関連の k1 に k2 から)、ドロップ テーブルは、t1 に個別に気づかずと、このケースで、危険な場合は、プロバイダー コマンドで。 アプリケーションでは、常にユーザー入力を検証して、このようなハッカーによる攻撃を防ぐ必要があります。
 
+このセクションには、次のトピックが含まれています。
+
+- [非パラメーター化コマンドの操作](operation-of-non-parameterized-commands.md)
+
+- [パラメーター化コマンドの操作](operation-of-parameterized-commands.md)
+
+- [ハイブリッド コマンド](hybrid-commands.md)
+
+- [COMPUTE 句を使って Shape を仲介する](intervening-shape-compute-clauses.md)

@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249091(v=office.15)
 ms:contentKeyID: 48544062
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1a12304cc30e9e653f1cb10343cac390395961fa
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 3e6f0e020373db9bf0fe7acc1b1c7bfeab210329
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477129"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861422"
 ---
 # <a name="visual-c"></a>Visual C++
 
 
 **適用されます**Access 2013 |。Office 2013
 
-ここでは、Microsoft Visual C++ で ADO イベントをインスタンス化する方法の概略を示します。詳細については、「[ADO イベント モデルの使用例 (VC++)](ado-events-model-example-vc.md)」を参照してください。
+ここでは、Microsoft Visual C++ で ADO イベントをインスタンス化する方法の概略を示します。 詳細については、 [ADO イベント モデルの使用例 (vc++)](ado-events-model-example-vc.md)を参照してください。
 
 ファイル adoint.h で定義されている **ConnectionEventsVt** インターフェイスおよび **RecordsetEventsVt** インターフェイスから派生するクラスを作成します。
 

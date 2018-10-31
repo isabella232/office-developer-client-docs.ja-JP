@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1053360
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b9aafe1b16b3d989a81ff21f97bd4b6d10f79de3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 51acfc5f349d6096028ef86aac480ce81c9b26bf
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478475"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860498"
 ---
 # <a name="errorsource-property-dao"></a>Error.Source プロパティ (DAO)
 
@@ -41,9 +41,7 @@ ms.locfileid: "25478475"
 
 
 > [!NOTE]
-> <P>他のオブジェクトへのアクセス時に発生したエラーを処理する場合、<STRONG>On Error GoTo</STRONG> より <STRONG>On Error Resume Next</STRONG> ステートメントの使用をお勧めします。オブジェクトとの各相互作用の後に <STRONG>Error</STRONG> オブジェクトのプロパティを確認すると、エラーの発生時にコードがアクセスしていたオブジェクトを明確にすることができます。このため、<STRONG>Error.Number</STRONG> にエラー コードを配置したオブジェクトや、エラーの発生源となったオブジェクト (<STRONG>Error.Source</STRONG>) を確認できます。</P>
-
-
+> 他のオブジェクトへのアクセス時に発生したエラーを処理する場合、**On Error GoTo** より **On Error Resume Next** ステートメントの使用をお勧めします。オブジェクトとの各相互作用の後に **Error** オブジェクトのプロパティを確認すると、エラーの発生時にコードがアクセスしていたオブジェクトを明確にすることができます。このため、**Error.Number** にエラー コードを配置したオブジェクトや、エラーの発生源となったオブジェクト (**Error.Source**) を確認できます。
 
 ## <a name="example"></a>例
 

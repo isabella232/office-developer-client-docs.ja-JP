@@ -1,19 +1,19 @@
 ---
-title: '5 章: データを更新し、保存する'
+title: '第 5 章: データの更新および永続化'
 TOCTitle: 'Chapter 5: Updating and Persisting Data'
 ms:assetid: 77acb763-1c60-1945-791d-3e83d684fb0d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249493(v=office.15)
 ms:contentKeyID: 48545732
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 91c747c970988a9ca853f0be66f5c0b485f5c3f6
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 487fd11112375fb0f5788505d049a4fc71e245ba
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476502"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861975"
 ---
-# <a name="chapter-5-updating-and-persisting-data"></a>5 章: データを更新し、保存する
+# <a name="chapter-5-updating-and-persisting-data"></a>第 5 章: データの更新および永続化
 
 
 **適用されます**Access 2013 |。Office 2013
@@ -28,3 +28,8 @@ ms.locfileid: "25476502"
 
 即時モードでは、 **Update** メソッドを呼び出すたびに、変更がデータ ソースに反映されます。バッチ モードでは、 **Update** を呼び出すか、現在の行の位置が移動されるたびに、変更内容がコピー バッファーに保存されますが、データ ソースに変更を反映するのは **UpdateBatch** メソッドのみです。
 
+この章では、次のトピックについて説明します。
+
+- [データを更新する (ADO)](updating-data.md)
+
+- [データを保存する (ADO)](persisting-data.md)

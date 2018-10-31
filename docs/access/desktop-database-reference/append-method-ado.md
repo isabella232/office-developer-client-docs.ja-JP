@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250014(v=office.15)
 ms:contentKeyID: 48547742
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b47b7b0514b78a89425e47962c36b092e35677ea
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 03d3b7ac215c8b5328148b33e2e966c4e574c98e
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478413"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25864008"
 ---
 # <a name="append-method-ado"></a>Append メソッド (ADO)
 
@@ -78,8 +78,7 @@ ms.locfileid: "25478413"
 
 
 > [!NOTE]
-> <P><STRONG>Record</STRONG> オブジェクトの <STRONG>Fields</STRONG> コレクションに新しい <STRONG>Field</STRONG> オブジェクトを追加した場合は、 <A href="value-property-ado.md">Value</A> プロパティを最初に設定してから、他の <STRONG>Field</STRONG> プロパティを指定する必要があります。まず、 <STRONG>Value</STRONG> プロパティに特定の値を割り当て、 <A href="update-method-ado.md">Fields</A> コレクションで <STRONG>Update</STRONG> を呼び出します。その後は、 <A href="type-property-ado.md">Type</A> や <A href="attributes-property-ado.md">Attributes</A> などの他のプロパティにアクセスできます。</P>
-
+> **Record** オブジェクトの **Fields** コレクションに新しい **Field** オブジェクトを追加した場合は、 [Value](value-property-ado.md) プロパティを最初に設定してから、他の **Field** プロパティを指定する必要があります。まず、 **Value** プロパティに特定の値を割り当て、 [Fields](update-method-ado.md) コレクションで **Update** を呼び出します。その後は、 [Type](type-property-ado.md) や [Attributes](attributes-property-ado.md) などの他のプロパティにアクセスできます。
 
 
 データ型 (**DataTypeEnum**) が **adArray**、**adChapter**、**adEmpty**、**adPropVariant**、および **adUserDefined** である **Field** オブジェクトは、**Fields** コレクションに追加できません。追加しようとするとエラーが発生します。また、データ型 **adIDispatch**、**adIUnknown**、および **adIVariant** は、ADO ではサポートされていません。これらのデータ型の場合、追加時にエラーは発生しませんが、使用すると、メモリ リークなどの予期しない結果になる可能性があります。

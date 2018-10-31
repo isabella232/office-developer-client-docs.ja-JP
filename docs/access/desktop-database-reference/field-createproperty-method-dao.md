@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822050(v=office.15)
 ms:contentKeyID: 48547202
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a5b911e9e02380e9ea6aa85100e2a60b3b086a49
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: fa8868d457100ea74eeb76b67fcfc535c2e859b3
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603001"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861913"
 ---
 # <a name="fieldcreateproperty-method-dao"></a>Field.CreateProperty メソッド (DAO)
 
@@ -51,7 +51,7 @@ ms.locfileid: "25603001"
 <td><p>新しい <strong>Property</strong> オブジェクトの一意の名前を表す文字列型 ( <strong>String</strong> ) の値。有効な <strong>Property</strong> 名の詳細については、 <strong>Name</strong> プロパティを参照してください。  </p></td>
 </tr>
 <tr class="even">
-<td><p>種類</p></td>
+<td><p>型</p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>新しい <strong>Property</strong> オブジェクトのデータ型を定義する定数。有効なデータ型については、 <strong><a href="field-type-property-dao.md">Type</a></strong> プロパティを参照してください。  </p></td>
@@ -72,7 +72,7 @@ ms.locfileid: "25603001"
 </table>
 
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
 ### <a name="return-value"></a>戻り値
 =======
 ### <a name="return-value"></a>戻り値
@@ -92,6 +92,6 @@ ms.locfileid: "25603001"
 
 
 > [!NOTE]
-> <P>DDL 引数を省略した場合のデフォルト値は False (DDL 以外)。 対応する DDL プロパティは公開されていないので、DDL から DDL 以外に変更する <STRONG>Property</STRONG> オブジェクトを削除し、再作成する必要があります。</P>
+> DDL 引数を省略した場合のデフォルト値は False (DDL 以外)。 対応する DDL プロパティは公開されていないので、DDL から DDL 以外に変更する **Property** オブジェクトを削除し、再作成する必要があります。
 
 

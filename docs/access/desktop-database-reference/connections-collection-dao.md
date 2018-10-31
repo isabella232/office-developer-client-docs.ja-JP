@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195178(v=office.15)
 ms:contentKeyID: 48545330
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cb8c41917ab6834cda15a706ae550751698543eb
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1106d477f0c9e055e01db34cafa959b3fcddec37
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478247"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861519"
 ---
 # <a name="connections-collection-dao"></a>Connections コレクション (DAO)
 
@@ -42,7 +42,7 @@ ms.locfileid: "25478247"
 
 
 > [!NOTE]
-> <P>[!メモ] <STRONG>Connections</STRONG> コレクションに重複する名前を作成して同じデータ ソースを複数回開くことができます。 <STRONG>Connection</STRONG> オブジェクトをオブジェクト変数に割り当てて変数名で参照する必要があります。</P>
+> [!メモ] **Connections** コレクションに重複する名前を作成して同じデータ ソースを複数回開くことができます。 **Connection** オブジェクトをオブジェクト変数に割り当てて変数名で参照する必要があります。
 
 
 

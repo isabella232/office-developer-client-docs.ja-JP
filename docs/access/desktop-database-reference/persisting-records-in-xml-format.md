@@ -6,24 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249545(v=office.15)
 ms:contentKeyID: 48545924
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4b1e22c3f85c4289520326c34c6d0c218a442a3f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f06954b25c798dab7fe80ba5ba7cf91bb0efc292
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478062"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860995"
 ---
-# <a name="persisting-records-in-xml-format"></a>レコードを XML 形式で保存する
+# <a name="persisting-records-in-xml-format"></a>XML 形式でのレコードの永続化
 
 
 **適用されます**Access 2013 |。Office 2013
 
 ADTG 形式と同様に、XML 形式での **Recordset** の保存は、Microsoft OLE DB Persistence Provider で実装されます。このプロバイダーは、保存された XML ファイル、または ADO により生成されたスキーマ情報を含むストリームから前方スクロール型の読み取り専用行セットを生成します。同様に、プロバイダーは、ADO **Recordset** を取得し、XML を生成し、ファイルまたは COM **IStream** インターフェイスを実装する任意のオブジェクトに保存できます (実際には、ファイルも **IStream** をサポートするオブジェクトの一例です)。バージョン 2.5 以降の場合、ADO は Microsoft XML Parser (MSXML) に依存して XML を **Recordset** に読み込むため、msxml.dll が必要になります。バージョン 2.5 の場合、MSXML は Internet Explorer 5 に組み込まれて提供されています。バージョン 2.6 の場合、MSXML は SQL Server 2000 に組み込まれて提供されています。
 
-
 > [!NOTE]
-> <P>[!メモ] 階層 <STRONG>Recordset</STRONG> (データ シェイプ) を XML 形式で保存する場合、いくつかの制限が適用されます。階層 <STRONG>Recordset</STRONG> に保留中の更新が含まれている場合、XML では保存できず、パラメーター化された階層 <STRONG>Recordset</STRONG> も保存することはできません。詳細については、「 <A href="hierarchical-recordsets-in-xml.md">XML の階層 Recordsets</A>」を参照してください。</P>
-
+> [!メモ] 階層 **Recordset** (データ シェイプ) を XML 形式で保存する場合、いくつかの制限が適用されます。階層 **Recordset** に保留中の更新が含まれている場合、XML では保存できず、パラメーター化された階層 **Recordset** も保存することはできません。詳細については、「 [XML の階層 Recordsets](hierarchical-recordsets-in-xml.md)」を参照してください。
 
 
 データを ADO を介して XML で保存し、再び読み込む最も簡単な方法は、それぞれに **Save** メソッドと **Open** メソッドを使用することです。次の ADO コードの例では、Titles テーブルのデータを titles.sav というファイルに保存します。
@@ -67,3 +65,24 @@ rs.Save "btitles.sav", adPersistXML
 
 ADO では、常に Client Cursor Engine 行セットを使用して、Persistence Provider によって生成された前方スクロール型のデータに基づき、スクロール可能でブックマークを指定できる **Recordset** オブジェクトを作成します。
 
+このセクションには、次のトピックが含まれています。
+
+- [XML の保存形式](xml-persistence-format.md)
+
+- [名前空間](namespaces.md)
+
+- [Schema セクション](schema-section.md)
+
+- [データ セクション](data-section.md)
+
+- [XML の階層 Recordset](hierarchical-recordsets-in-xml.md)
+
+- [XML のレコードセットの動的プロパティ](recordset-dynamic-properties-in-xml.md)
+
+- [XSLT 変換](xslt-transformations.md)
+
+- [XML DOM オブジェクトに保存する](saving-to-the-xml-dom-object.md)
+
+- [XML のセキュリティに関する考慮事項](xml-security-considerations.md)
+
+- [XML Recordset を保存するシナリオのトピック](xml-recordset-persistence-scenario.md)

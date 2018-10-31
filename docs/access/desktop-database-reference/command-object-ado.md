@@ -10,12 +10,12 @@ f1_keywords:
 - ado210.chm1231106
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 5199037f44e75bddf697197bca992a95b8432420
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 153f59ebbcfae89f6358fe0d707791aab8a8cdd7
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25605745"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25864075"
 ---
 # <a name="command-object-ado"></a>Command オブジェクト (ADO)
 
@@ -34,7 +34,7 @@ ms.locfileid: "25605745"
 
   - [Parameter](parameter-object-ado.md) オブジェクトと [Parameters](parameters-collection-ado.md) コレクションを使用して、パラメーター化されたクエリまたはストアド プロシージャの引数を定義できます。
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
   - **Execute** メソッドを使用して、コマンドを実行し、必要に応じて [Recordset](https://msdn.microsoft.com/library/jj248785\(v=office.15\)) オブジェクトを取得できます。
 =======
   - **Execute** メソッドを使用して、コマンドを実行し、必要に応じて [Recordset](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) オブジェクトを取得できます。
@@ -54,11 +54,8 @@ ms.locfileid: "25605745"
 
   - [Properties](properties-collection-ado.md) コレクションを使用して、プロバイダー固有の属性にアクセスできます。
 
-
 > [!NOTE]
-> <P>[!メモ] <STRONG>Command</STRONG> オブジェクトを使用せずにクエリを実行するには、クエリ文字列を <A href="https://msdn.microsoft.com/library/jj249832(v=office.15)">Connection</A> オブジェクトの <STRONG>Execute</STRONG> メソッド、または <A href="open-method-ado-recordset.md">Recordset</A> オブジェクトの <STRONG>Open</STRONG> メソッドに渡します。ただし、コマンド テキストを永続化して再実行するか、クエリ パラメーターを使用する場合は、 <STRONG>Command</STRONG> オブジェクトが必要となります。</P>
-
-
+> [!メモ] **Command** オブジェクトを使用せずにクエリを実行するには、クエリ文字列を [Connection](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection) オブジェクトの **Execute** メソッド、または [Recordset](open-method-ado-recordset.md) オブジェクトの **Open** メソッドに渡します。ただし、コマンド テキストを永続化して再実行するか、クエリ パラメーターを使用する場合は、 **Command** オブジェクトが必要となります。
 
 前に定義した **Connection** オブジェクトと無関係に **Command** オブジェクトを作成するには、その **ActiveConnection** プロパティを有効な接続文字列に設定します。その場合でも **Connection** オブジェクトは ADO によって作成されますが、オブジェクト変数に割り当てられることはありません。ただし、複数の **Command** オブジェクトを同一の接続に関連付ける場合は、明示的に **Connection** オブジェクトを作成して開く必要があります。こうすることで、 **Connection** オブジェクトがオブジェクト変数に割り当てられます。 **Command** オブジェクトの **ActiveConnection** プロパティをこのオブジェクト変数に設定しなかった場合、同じ接続文字列を使用しても、ADO によって各 **Command** オブジェクトに新しい **Connection** オブジェクトが作成されます。
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248958(v=office.15)
 ms:contentKeyID: 48543558
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6bd949b92068619b76ac78d5e62cde0e247ed7b6
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 178254006216a71ae34c437da86cb8381d82125e
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477626"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861583"
 ---
 # <a name="copyto-method-ado"></a>CopyTo メソッド (ADO)
 
@@ -31,13 +31,10 @@ ms.locfileid: "25477626"
 
   - 開いている **Stream** オブジェクトへの参照を含むオブジェクト変数の値を指定します。*DestStream* で指定した **Stream** に現在の **Stream** がコピーされます。コピー先の **Stream** は既に開かれている必要があります。開かれていない場合は、実行時エラーが発生します。
 
-
-    
+   
 
     > [!NOTE]
-    > <P><EM>DestStream</EM>パラメーターはありません<STRONG>ストリーム</STRONG>オブジェクトのプロキシ クライアントをリモート化不可能な<STRONG>ストリーム</STRONG>オブジェクトのプライベート インターフェイスへのアクセスが必要です。</P>
-
-
+    > *DestStream*パラメーターはありません、 **Stream**オブジェクトのプロキシ クライアントをリモート化不可能な**ストリーム**オブジェクトのプライベート インターフェイスへのアクセスが必要です。
 
   - *NumChars*
 

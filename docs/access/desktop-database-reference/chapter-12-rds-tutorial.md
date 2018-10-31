@@ -1,19 +1,19 @@
 ---
-title: '12 章: RDS チュートリアル'
+title: '第 12 章: RDS チュートリアル'
 TOCTitle: 'Chapter 12: RDS Tutorial'
 ms:assetid: fa44a5e8-e4df-dfdd-d7a1-a870ec3cabdd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250277(v=office.15)
 ms:contentKeyID: 48548837
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a482da49bb78a74cc68f589c928ffe13dd4a54ad
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: aec7c9a89ea078bfad9b05d664d373831491edc4
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479076"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860225"
 ---
-# <a name="chapter-12-rds-tutorial"></a>12 章: RDS チュートリアル
+# <a name="chapter-12-rds-tutorial"></a>第 12 章: RDS チュートリアル
 
 
 **適用されます**Access 2013 |。Office 2013
@@ -48,3 +48,20 @@ RDS プログラミング モデルについて、次に説明します。チュ
 
   - **Recordset** オブジェクトに加えられた変更がサーバーに送り返され、その変更がデータ ソースに反映されます。
 
+このチュートリアルの手順は、以下です。
+
+- [手順 1: サーバー プログラムを指定する (RDS チュートリアル)](step-1-specify-a-server-program-rds-tutorial.md)
+
+- [手順 2: サーバー プログラムを呼び出す (RDS チュートリアル)](step-2-invoke-the-server-program-rds-tutorial.md)
+
+- [手順 3: サーバーからレコードセットを取得する (RDS チュートリアル)](step-3-server-obtains-a-recordset-rds-tutorial.md)
+
+- [手順 4: サーバーからレコードセットを返す (RDS チュートリアル)](step-4-server-returns-the-recordset-rds-tutorial.md)
+
+- [手順 5: DataControl を利用可能にする (RDS チュートリアル)](step-5-datacontrol-is-made-usable-rds-tutorial.md)
+
+- [手順 6: サーバーに変更を送信する (RDS チュートリアル)](step-6-changes-are-sent-to-the-server-rds-tutorial.md)
+
+- [RDS チュートリアル (VBScript)](rds-tutorial-vbscript.md)
+
+- [RDS チュートリアル (Visual J++)](rds-tutorial-visual-j.md)

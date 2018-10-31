@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194420(v=office.15)
 ms:contentKeyID: 48545028
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9606f3a1f76da677d3a17e91da943d12bbe5ffe1
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 36af1f7716573c85c87e796dd7dc7deed705afe1
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476429"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860431"
 ---
 # <a name="datatypeenum-enumeration-dao"></a>DataTypeEnum 列挙 (DAO)
 
@@ -120,7 +120,7 @@ ms.locfileid: "25476429"
 <td><p>10 進型データ (ODBCDirect のみ)</p>
 
 > [!NOTE]
-> <P>[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</P>
+> [!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。
 
 
 </td>
@@ -135,8 +135,7 @@ ms.locfileid: "25476429"
 <td><p>21</p></td>
 <td><p>浮動小数点型データ (ODBCDirect のみ)</p>
 
-> [!NOTE]
-> <P>[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</P>
+<br/>
 
 
 </td>
@@ -171,8 +170,7 @@ ms.locfileid: "25476429"
 <td><p>19</p></td>
 <td><p>数値型データ (ODBCDirect のみ)</p>
 
-> [!NOTE]
-> <P>[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</P>
+<br/>
 
 
 </td>
@@ -192,8 +190,7 @@ ms.locfileid: "25476429"
 <td><p>22</p></td>
 <td><p>時刻形式のデータ (ODBCDirect のみ)</p>
 
-> [!NOTE]
-> <P>[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</P>
+<br/>
 
 
 </td>
@@ -203,8 +200,7 @@ ms.locfileid: "25476429"
 <td><p>23</p></td>
 <td><p>時刻および日付の形式のデータ (ODBCDirect のみ)</p>
 
-> [!NOTE]
-> <P>[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</P>
+<br/>
 
 
 </td>
@@ -214,8 +210,7 @@ ms.locfileid: "25476429"
 <td><p>17</p></td>
 <td><p>可変長バイナリ型データ (ODBCDirect のみ)</p>
 
-> [!NOTE]
-> <P>[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</P>
+<br/>
 
 
 </td>

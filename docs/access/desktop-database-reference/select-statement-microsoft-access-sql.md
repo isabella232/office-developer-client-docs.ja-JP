@@ -1,19 +1,19 @@
 ---
 title: SELECT ステートメント (Microsoft Access SQL)
-TOCTitle: SELECT Statement (Microsoft Access SQL)
+TOCTitle: SELECT statement (Microsoft Access SQL)
 ms:assetid: a5c9da94-5f9e-0fc0-767a-4117f38a5ef3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821148(v=office.15)
 ms:contentKeyID: 48546837
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
 dev_langs:
 - sql
-ms.openlocfilehash: ae7a63a3fe7647dde117db80a52e2322b9af75b9
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 2b03834914c352a0e9c462c50bee48ac992276e3
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476913"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860583"
 ---
 # <a name="select-statement-microsoft-access-sql"></a>SELECT ステートメント (Microsoft Access SQL)
 
@@ -41,7 +41,7 @@ SELECT 句には、次の指定項目があります。
 <tbody>
 <tr class="odd">
 <td><p><em>predicate</em></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff195711(v=office.15)">ALL、DISTINCT、DISTINCTROW、TOP</a> のいずれかの述語。これらの述語は、返されるレコードの数を制限するために使用します。指定がない場合は、ALL になります。  </p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/all-distinct-distinctrow-top-predicates-microsoft-access-sql">ALL、DISTINCT、DISTINCTROW、TOP</a> のいずれかの述語。これらの述語は、返されるレコードの数を制限するために使用します。指定がない場合は、ALL になります。  </p></td>
 </tr>
 <tr class="even">
 <td><p><em>*</em></p></td>
@@ -71,9 +71,9 @@ SELECT 句には、次の指定項目があります。
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>備考
 
-Microsoft® Jet データベース エンジンは、SELECT ステートメントで指定したテーブルの検索、選択された列の抽出、抽出条件を満たす行の選択、および選択された行の指定の順序による並べ替え、またはグループ化を行います。
+この操作を実行するには、Microsoft Jet データベース エンジン、指定したテーブルの検索、選択された列を抽出し、基準、および並べ替え、または結果の行のグループを指定された順序に一致する行を選択します。
 
 SELECT ステートメントは、データベース内のデータの内容を変更しません。
 
@@ -151,6 +151,8 @@ SELECT ステートメントでは、これ以外にもさまざまな句を使�
     End Sub
 ```
 
+<br/>
+
 次の使用例では、PostalCode フィールドにエントリがあるレコードの数を調べ、その値が返されるフィールドとして Tally フィールドを指定します。
 
 ```sql
@@ -178,6 +180,8 @@ SELECT ステートメントでは、これ以外にもさまざまな句を使�
      
     End Sub 
 ```
+
+<br/>
 
 次の使用例では、社員数と平均給与額および最高給与額を表示します。
 
@@ -209,6 +213,8 @@ SELECT ステートメントでは、これ以外にもさまざまな句を使�
      
     End Sub 
 ```
+
+<br/>
 
 **Sub** プロシージャである EnumFields には、呼び出し元のプロシージャから **Recordset** オブジェクトが渡されます。次に **Recordset** のフィールドがフォーマットされ、 **Debug** ウィンドウに出力されます。変数は、必要な出力フィールド幅を示します。一部のフィールドが表示されない場合もあります。
 

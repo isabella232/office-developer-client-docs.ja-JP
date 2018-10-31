@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249146(v=office.15)
 ms:contentKeyID: 48544268
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 62e57c91acd83291ee7390d305303521510acbd2
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 79ab3111d7ca390101a3742ba2b1120e924b946f
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478628"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25864138"
 ---
 # <a name="ado-technology-table"></a>ADO テクノロジの一覧
 
@@ -86,7 +86,7 @@ ms.locfileid: "25478628"
 </tr>
 <tr class="even">
 <td><p>VBScript</p></td>
-<td><p><a href="handling-errors-in-other-languages.md">他の言語でのエラー処理</a><a href="visual-basic-for-applications-functions.md">Visual Basic for Applications の関数</a><a href="solutions-for-remote-data-access.md">リモート データ アクセスのためのソリューション</a><a href="rds-tutorial-vbscript.md">RDS チュートリアル (VBScript)</a><a href="vbscript-ado-programming.md">VBScript は ADO のプログラミング</a><a href="ado-code-examples-in-microsoft-visual-basic-scripting-edition.md">ADO コードの例では、Microsoft Visual Basic スクリプトのエディション</a></p></td>
+<td><p><a href="handling-errors-in-other-languages.md">他の言語でのエラー処理</a><a href="visual-basic-for-applications-functions.md">Visual Basic for Applications の関数</a><a href="solutions-for-remote-data-access.md">リモート データ アクセスのためのソリューション</a><a href="rds-tutorial-vbscript.md">RDS チュートリアル (VBScript)</a><a href="vbscript-ado-programming.md">VBScript は ADO のプログラミング</a><a href="ado-code-examples-in-microsoft-visual-basic-scripting-edition.md">Microsoft Visual Basic Scripting Edition での ADO コードの例</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Visual Basic</p></td>
@@ -98,7 +98,7 @@ ms.locfileid: "25478628"
 </tr>
 <tr class="odd">
 <td><p>Visual J++</p></td>
-<td><p><a href="handling-errors-in-other-languages.md">他の言語でのエラー処理</a><a href="https://msdn.microsoft.com/library/jj250244(v=office.15)">言語によって、ADO イベントのインスタンス化</a><a href="rds-tutorial-visual-j.md">RDS チュートリアル (Visual j)</a><a href="using-ado-with-microsoft-visual-j.md">Microsoft Visual j で ADO を使用します。</a><a href="ado-code-examples-in-microsoft-visual-j.md">Microsoft Visual j での ADO コードの例</a></p></td>
+<td><p><a href="handling-errors-in-other-languages.md">他の言語でのエラー処理</a><a href="https://msdn.microsoft.com/library/jj250244(v=office.15)">言語によって、ADO イベントのインスタンス化</a><a href="rds-tutorial-visual-j.md">RDS チュートリアル (Visual j)</a><a href="using-ado-with-microsoft-visual-j.md">Microsoft Visual j で ADO を使用します。</a><a href="ado-code-examples-in-microsoft-visual-j.md">Microsoft Visual j で ADO コードの例</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Visual Studio</p></td>

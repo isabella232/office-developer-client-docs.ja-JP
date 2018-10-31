@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052943
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 727b6df3907354d681312637b3a02d242db69528
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 892dc16d0422572e83f92316ce2c1c67f9ce5cc0
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478466"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860645"
 ---
 # <a name="databasenewpassword-method-dao"></a>Database.NewPassword メソッド (DAO)
 
@@ -61,7 +61,7 @@ ms.locfileid: "25478466"
 <td><p><strong>Database</strong>オブジェクトの<strong>Password</strong>プロパティの新しい設定します。</p>
 
 > [!NOTE]
-> <P>大文字、小文字、数字、記号を組み合わせた強力なパスワードを使用してください。これらの文字を混在させていないパスワードは脆弱なパスワードです。Y6dh!et5 は強力なパスワードです。House27 は脆弱なパスワードです。強力なパスワードでありながら、書き留めておかなくても覚えておくことができるパスワードを使用してください。</P>
+> 大文字、小文字、数字、記号を組み合わせた強力なパスワードを使用してください。これらの文字を混在させていないパスワードは脆弱なパスワードです。Y6dh!et5 は強力なパスワードです。House27 は脆弱なパスワードです。強力なパスワードでありながら、書き留めておかなくても覚えておくことができるパスワードを使用してください。
 
 
 </td>
@@ -80,6 +80,6 @@ BstrOld および bstrNew の文字列は、長さは最大 20 文字し、ASCII
 
 
 > [!IMPORTANT]
-> <P>[!重要] パスワードを紛失した場合、そのデータベースを二度と開けなくなります。</P>
+> [!重要] パスワードを紛失した場合、そのデータベースを二度と開けなくなります。
 
 

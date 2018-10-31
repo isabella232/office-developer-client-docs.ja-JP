@@ -1,24 +1,23 @@
 ---
-title: TRANSACTION ステートメント (Microsoft Access SQL)
-TOCTitle: TRANSACTION Statement (Microsoft Access SQL)
+title: トランザクション ステートメント (Microsoft Access SQL)
+TOCTitle: TRANSACTION statement (Microsoft Access SQL)
 ms:assetid: 481e807d-94e4-f201-adac-d25ee89d9220
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193241(v=office.15)
 ms:contentKeyID: 48544614
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
 f1_keywords:
 - jetsql40.chm5277472
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 13628ee6d384430691475eb06dbbbdce4e980103
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 6d93fc90beded30d96b4db54c35ab3046da06899
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478000"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862666"
 ---
-# <a name="transaction-statement-microsoft-access-sql"></a>TRANSACTION ステートメント (Microsoft Access SQL)
-
+# <a name="transaction-statement-microsoft-access-sql"></a>トランザクション ステートメント (Microsoft Access SQL)
 
 **適用されます**Access 2013 |。Office 2013
 
@@ -26,15 +25,15 @@ ms.locfileid: "25478000"
 
 ## <a name="syntax"></a>構文
 
-新しいトランザクションを開始します。
+**新しいトランザクションを開始**します。
 
 BEGIN TRANSACTION
 
-トランザクションの処理中に行われたすべての仕事をコミットすることで、トランザクションを終了します。
+**Conclude は、トランザクションをコミットすることによってすべての作業は、トランザクション中に実行**します。
 
 コミット\[トランザクション。作業\]
 
-トランザクションの処理中に行われたすべての仕事をロールバックすることで、トランザクションを終了します。
+**Conclude トランザクションをロールバックしてトランザクション中にすべての作業を実行**します。
 
 ロールバック\[トランザクション。作業\]
 

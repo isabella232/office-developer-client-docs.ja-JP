@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835711(v=office.15)
 ms:contentKeyID: 48548289
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 62b195907d5acc05832c1feac45165aadd9e14d1
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 526498ee22bc82735eb3b98e633aa3d1b4cfb610
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477521"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25864103"
 ---
 # <a name="error-object-dao"></a>Error オブジェクト (DAO)
 
@@ -40,7 +40,7 @@ DAO を扱うすべての操作では、1 つまたは複数のエラーが生�
     
 
     > [!NOTE]
-    > <P>[!メモ] Microsoft Visual Basic for Applications (VBA) でプログラミングするときに、 <STRONG>New</STRONG> キーワードを使用して、オブジェクトがコレクションに追加される前にエラーが発生するオブジェクトを作成すると、新しいオブジェクトは <STRONG>DBEngine</STRONG> オブジェクトに関連付けられていないため、 <STRONG>DBEngine</STRONG> オブジェクトの <STRONG>Errors</STRONG> コレクションに、そのオブジェクト エラーのエントリが追加されません。 ただし、VBA の <STRONG>Err</STRONG> オブジェクトでエラー情報を使用できます。 データ アクセス エラーが発生する可能性がある場合、VBA エラー処理コードで <STRONG>Errors</STRONG> コレクションを確認する必要があります。 集中化したエラー ハンドラーを記述している場合は、VBA の <STRONG>Err</STRONG> オブジェクトをテストして、 <STRONG>Errors</STRONG> コレクションのエラー情報が該当するかどうかを調べます。 場合の<STRONG>Number</STRONG>プロパティ (DBEngine.Errors.Count - 1)<STRONG>エラー</STRONG>のコレクションの最後の要素の<STRONG>Err</STRONG>オブジェクトに一致する値をすることができますをクリックして一連の<STRONG>Select Case</STRONG>ステートメント特定の DAO エラーを識別するか、エラーが発生しました。 これらの値が一致しない場合は、 <A href="errors-refresh-method-dao.md">Errors</A> コレクションに対して <STRONG><STRONG>Refresh</STRONG></STRONG> メソッドを使用します。</P>
+    > [!メモ] Microsoft Visual Basic for Applications (VBA) でプログラミングするときに、 **New** キーワードを使用して、オブジェクトがコレクションに追加される前にエラーが発生するオブジェクトを作成すると、新しいオブジェクトは **DBEngine** オブジェクトに関連付けられていないため、 **DBEngine** オブジェクトの **Errors** コレクションに、そのオブジェクト エラーのエントリが追加されません。 ただし、VBA の **Err** オブジェクトでエラー情報を使用できます。 データ アクセス エラーが発生する可能性がある場合、VBA エラー処理コードで **Errors** コレクションを確認する必要があります。 集中化したエラー ハンドラーを記述している場合は、VBA の **Err** オブジェクトをテストして、 **Errors** コレクションのエラー情報が該当するかどうかを調べます。 場合の**Number**プロパティ (DBEngine.Errors.Count - 1)**エラー**のコレクションの最後の要素の**Err**オブジェクトに一致する値をすることができますをクリックして一連の**Select Case**ステートメント特定の DAO エラーを識別するか、エラーが発生しました。 これらの値が一致しない場合は、 [Errors](errors-refresh-method-dao.md) コレクションに対して **Refresh** メソッドを使用します。
 
 
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249678(v=office.15)
 ms:contentKeyID: 48546477
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e5fbefa5d857e7c239cbbcfc4502d60aabce347e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 38fa73120ed868c7b7a0e086cdcbe822e4c16730
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478770"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860988"
 ---
 # <a name="error-object-ado"></a>Error オブジェクト (ADO)
 
@@ -24,21 +24,18 @@ ms.locfileid: "25478770"
 
 ADO オブジェクトに関係するすべての操作では、1 つ以上のプロバイダー エラーが発生する場合があります。エラーが発生するたびに、1 つ以上の **Error** オブジェクトが [Connection](errors-collection-ado.md) オブジェクトの [Errors](connection-object-ado.md) コレクションに追加されます。別の ADO 操作でエラーが発生すると、 **Errors** コレクションがクリアされ、 **Error** オブジェクトの新しいセットが **Errors** コレクションに配置されます。
 
-
 > [!NOTE]
-> <P>[!メモ] 各 <STRONG>Error</STRONG> オブジェクトは、ADO エラーではなく特定のプロバイダー エラーを表します。ADO エラーは、実行時の例外処理メカニズムに公開されます。たとえば、Microsoft Visual Basic の場合、ADO 固有のエラーが発生すると、 <STRONG>On Error</STRONG> イベントが実行され、そのエラーが <STRONG>Error</STRONG> オブジェクトに追加されます。ADO エラーをすべて記載した一覧については、 <A href="errorvalueenum.md">ErrorValueEnum</A> のトピックを参照してください。</P>
-
-
+> [!メモ] 各 **Error** オブジェクトは、ADO エラーではなく特定のプロバイダー エラーを表します。ADO エラーは、実行時の例外処理メカニズムに公開されます。たとえば、Microsoft Visual Basic の場合、ADO 固有のエラーが発生すると、 **On Error** イベントが実行され、そのエラーが **Error** オブジェクトに追加されます。ADO エラーをすべて記載した一覧については、 [ErrorValueEnum](errorvalueenum.md) のトピックを参照してください。
 
 各エラーの詳細については、次のプロパティを含む **Error** オブジェクトのプロパティを参照してください。
 
-  - エラーのテキストを格納する、[Description](description-property-ado.md) プロパティ。これは既定のプロパティです。
+- エラーのテキストを格納する、[Description](description-property-ado.md) プロパティ。これは既定のプロパティです。
 
-  - エラー定数の長整数型 ( [Long](number-property-ado.md) ) の値を格納する、 **Number** プロパティ。
+- エラー定数の長整数型 ( [Long](number-property-ado.md) ) の値を格納する、 **Number** プロパティ。
 
-  - エラーの発生源となったオブジェクトを特定する、[Source](source-property-ado-error.md) プロパティ。特にデータ ソースに対する要求に続いて、 **Errors** コレクションに複数の **Error** オブジェクトが追加された場合に便利です。
+- エラーの発生源となったオブジェクトを特定する、[Source](source-property-ado-error.md) プロパティ。特にデータ ソースに対する要求に続いて、 **Errors** コレクションに複数の **Error** オブジェクトが追加された場合に便利です。
 
-  - SQL データ ソースの情報を提供する、[SQLState](sqlstate-property-ado.md) プロパティと [NativeError](nativeerror-property-ado.md) プロパティ。
+- SQL データ ソースの情報を提供する、[SQLState](sqlstate-property-ado.md) プロパティと [NativeError](nativeerror-property-ado.md) プロパティ。
 
 プロバイダー エラーは発生すると、 **Connection** オブジェクトの **Errors** コレクションに追加されます。ADO では 1 回の ADO 操作で複数のエラーを取得できるため、プロバイダー固有のエラー情報を見込んでおくことができます。エラー ハンドラーにあるこうした豊富なエラー情報を取得するには、使用している言語や環境の適切なエラー トラッピング機能を使用し、ネストされたループで **Errors** コレクションの各 **Error** オブジェクトのプロパティを列挙します。
 

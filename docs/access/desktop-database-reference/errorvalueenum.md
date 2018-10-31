@@ -4,17 +4,16 @@ TOCTitle: ErrorValueEnum
 ms:assetid: 2af99f32-6004-1225-367c-45d693f447b8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249058(v=office.15)
 ms:contentKeyID: 48543921
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: de7f19c119c3161ece57344b911fcca36a1a8a3d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 5e9da9b9c197bb9917d2184e07a76bdfb25bd031
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478120"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860863"
 ---
 # <a name="errorvalueenum"></a>ErrorValueEnum
-
 
 **適用されます**Access 2013 |。Office 2013
 
@@ -22,17 +21,16 @@ ADO 実行時エラーの種類を表します。
 
 エラー番号には次の 3 種類の形式があります。
 
-  - 正の 10 進値: 10 進数で表された完全エラー番号の下位 2 バイト。この数値は、Visual Basic の既定のエラー メッセージ ダイアログ ボックスに表示されます。たとえば、実行時エラー '3707' がその例です。
+- 正の 10 進値: 10 進数で表された完全エラー番号の下位 2 バイト。この数値は、Visual Basic の既定のエラー メッセージ ダイアログ ボックスに表示されます。たとえば、実行時エラー '3707' がその例です。
 
-  - 負の 10 進値: 完全エラー番号を 10 進数に変換したもの。
+- 負の 10 進値: 完全エラー番号を 10 進数に変換したもの。
 
-  - 16 進値: 完全エラー番号の 16 進数表記。Windows 機能コードは 4 桁目です。ADO エラー番号の機能コードは、*A* です。たとえば、0x800***A***0E7B がその例です。
-
+- 16 進値: 完全エラー番号の 16 進数表記。Windows 機能コードは 4 桁目です。ADO エラー番号の機能コードは、*A* です。たとえば、0x800***A***0E7B がその例です。
 
 > [!NOTE]
-> <P>OLE DB エラーは、ADO アプリケーションに渡すことができます。 通常、これらは<EM>4</EM>の Windows 機能コードで識別できます。 たとえば、0x800<STRONG><EM>4</EM></STRONG>.これらの数値の詳細については、の第 16 章を参照してください、 <EM>OLE DB プログラマ リファレンスです</EM>。</P>
+> OLE DB エラーは、ADO アプリケーションに渡すことができます。 通常、これらは*4*の Windows 機能コードで識別できます。 たとえば、0x800_**4**_.これらの数値の詳細については、の第 16 章を参照してください、 *OLE DB プログラマ リファレンスです*。
 
-
+<br/>
 
 <table>
 <colgroup>
@@ -430,7 +428,7 @@ ADO 実行時エラーの種類を表します。
 </table>
 
 
-**ADO/WFC 等価**
+### <a name="adowfc-equivalent"></a>ADO/WFC に相当
 
 パッケージ: **com.ms.wfc.data**
 

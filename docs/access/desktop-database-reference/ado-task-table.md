@@ -6,14 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249141(v=office.15)
 ms:contentKeyID: 48544245
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 422d33e65f2ca3148276759a8c973295db8bc447
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 787375117566673b745cf819694a8d2d77e13779
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478702"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861569"
 ---
-# <a name="ado-task-table"></a>ADO タスクの一覧
+# <a name="ado-task-table"></a>ADO のタスク表
 
 
 **適用されます**Access 2013 |。Office 2013
@@ -38,7 +38,7 @@ ms.locfileid: "25478702"
 </tr>
 <tr class="even">
 <td><p>コマンドの実行またはストアド プロシージャの呼び出し</p></td>
-<td><p><a href="using-the-command-object-access.md">Command オブジェクトを使用する</a></p></td>
+<td><p><a href="using-the-command-object-access.md">コマンド オブジェクトの使用</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong> を開く</p></td>
@@ -86,7 +86,7 @@ ms.locfileid: "25478702"
 </tr>
 <tr class="even">
 <td><p>エラーの処理</p></td>
-<td><p><a href="ado-errors.md">ADO エラー一覧</a></p></td>
+<td><p><a href="ado-errors.md">ADO エラー</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>イベントの処理、非同期プログラミング</p></td>
@@ -102,7 +102,7 @@ ms.locfileid: "25478702"
 </tr>
 <tr class="even">
 <td><p><strong>Recordset</strong> 内の関連するレコードを返す</p></td>
-<td><p><a href="data-shaping-summary.md">データ シェイプの概要</a></p></td>
+<td><p><a href="data-shaping.md">データ シェイプ</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>半構造化データへのアクセス</p></td>

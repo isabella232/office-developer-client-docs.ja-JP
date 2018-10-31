@@ -1,21 +1,21 @@
 ---
 title: INSERT INTO ステートメント (Microsoft Access SQL)
-TOCTitle: INSERT INTO Statement (Microsoft Access SQL)
+TOCTitle: INSERT INTO statement (Microsoft Access SQL)
 ms:assetid: d3e44258-79f2-caba-8629-bde03f898f2d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834799(v=office.15)
 ms:contentKeyID: 48547918
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
 f1_keywords:
 - jetsql40.chm5277575
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 751d2e2747a2d3b9aac4a0d36b8fac11a60c418f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ae2aaffc7361588a55cc17cc33169a9b8b840e1f
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478225"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860463"
 ---
 # <a name="insert-into-statement-microsoft-access-sql"></a>INSERT INTO ステートメント (Microsoft Access SQL)
 
@@ -25,11 +25,11 @@ ms.locfileid: "25478225"
 
 ## <a name="syntax"></a>構文
 
-複数レコード追加クエリ:
+**複数レコード追加クエリ**:
 
 INSERT INTO*ターゲット* \[(*フィールド 1*\[、*フィールド 2*\[、.\] \])\] \[ *Externaldatabase*で\]を選択して\[*ソース*です。\]*フィールド 1*\[、*フィールド 2*\[をしています.\] *Tableexpression*から
 
-単一レコード追加クエリ:
+**単一レコード追加クエリ**:
 
 INSERT INTO*ターゲット* \[(*フィールド 1*\[、*フィールド 2*\[、.\] \])\]の値 (*値 1*\[、*値 2*\[、.\])
 
@@ -57,7 +57,7 @@ INSERT INTO ステートメントには、次の指定項目があります。
 </tr>
 <tr class="odd">
 <td><p><em>externaldatabase</em></p></td>
-<td><p>外部データベースのパス。パスの記述方法については、「<a href="https://msdn.microsoft.com/library/ff194542(v=office.15)">IN 句</a>」を参照してください。  </p></td>
+<td><p>外部データベースのパス。パスの記述方法については、「<a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/in-clause-microsoft-access-sql">IN 句</a>」を参照してください。  </p></td>
 </tr>
 <tr class="even">
 <td><p><em>source</em></p></td>
@@ -101,9 +101,9 @@ INSERT INTO ステートメントは省略可能ですが、使用する場合 [
 
 **でリンクが用意されている** [UtterAccess](https://www.utteraccess.com)のコミュニティです。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
 
-  - [INSERT/UPDATE ステートメントのための連続番号を生成](https://www.utteraccess.com/forum/generating-sequential-num-t446039.html)
+- [INSERT/UPDATE ステートメントのための連続番号を生成](https://www.utteraccess.com/forum/generating-sequential-num-t446039.html)
 
-  - [SQL から VBA のフォーマッタ](https://www.utteraccess.com/forum/sql-vba-formatter-t1165308.html)
+- [SQL から VBA のフォーマッタ](https://www.utteraccess.com/forum/sql-vba-formatter-t1165308.html)
 
 ## <a name="example"></a>使用例
 
@@ -128,6 +128,8 @@ INSERT INTO ステートメントは省略可能ですが、使用する場合 [
      
     End Sub
 ```
+
+<br/>
 
 次の使用例では、Employees テーブルに新しいレコードを作成します。
 

@@ -5,7 +5,7 @@
 - Office.Version=v15
 ---
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
 # <a name="commandtype-property-ado"></a>CommandType プロパティ (ADO)
 =======
 # <a name="commandtype-property-ado"></a>CommandType プロパティ (ADO)
@@ -16,7 +16,7 @@
 
 [Command](command-object-ado.md) オブジェクトの型を示します。
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
 ## <a name="settings-and-return-values"></a>設定値と戻り値
 =======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
@@ -24,10 +24,8 @@
 
 1 つまたは複数の [CommandTypeEnum](commandtypeenum.md) 値を設定または取得します。
 
-
 > [!NOTE]
-> <P>[!メモ] <STRONG>CommandType</STRONG> では、 <STRONG>adCmdFile</STRONG> または <STRONG>adCmdTableDirect</STRONG> の <STRONG>CommandTypeEnum</STRONG> 値を使用しないでください。これらの値は、 <A href="open-method-ado-recordset.md">Recordset</A> の <A href="requery-method-ado.md">Open</A> メソッドと <A href="recordset-object-ado.md">Requery</A> メソッドのオプションとしてのみ使用することができます。</P>
-
+> [!メモ] **CommandType** では、 **adCmdFile** または **adCmdTableDirect** の **CommandTypeEnum** 値を使用しないでください。これらの値は、 [Recordset](open-method-ado-recordset.md) の [Open](requery-method-ado.md) メソッドと [Requery](recordset-object-ado.md) メソッドのオプションとしてのみ使用することができます。
 
 
 ## <a name="remarks"></a>解説

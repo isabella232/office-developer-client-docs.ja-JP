@@ -1,23 +1,23 @@
 ---
-title: TRANSFORM ステートメント (Microsoft Access SQL)
-TOCTitle: TRANSFORM Statement (Microsoft Access SQL)
+title: ステートメント (Microsoft Access SQL) を変換します。
+TOCTitle: TRANSFORM statement (Microsoft Access SQL)
 ms:assetid: 419770b1-c833-959d-a84d-56c68764799f
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192901(v=office.15)
 ms:contentKeyID: 48544455
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
 f1_keywords:
 - jetsql40.chm5277581
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 6d05f278e38cc8cf132cf06605703dfa99eb8728
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 16b88f2cf441802c6246425d5bb7bb2efb71a679
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478638"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861219"
 ---
-# <a name="transform-statement-microsoft-access-sql"></a>TRANSFORM ステートメント (Microsoft Access SQL)
+# <a name="transform-statement-microsoft-access-sql"></a>ステートメント (Microsoft Access SQL) を変換します。
 
 **適用されます**Access 2013 |。Office 2013
 
@@ -64,7 +64,7 @@ TRANSFORM ステートメントには、次の指定項目があります。
 
 クロス集計クエリを使用してデータをまとめる場合は、指定したフィールドや式の値を列見出しとして使用できます。このため、選択クエリよりも簡潔な書式でデータを表示できます。
 
-TRANSFORM ステートメントは省略可能ですが、指定する場合は SQL 文字列の先頭に記述します。行見出しとして使用するフィールドを指定する SELECT ステートメントや、行のグループ化を指定する [GROUP BY](https://msdn.microsoft.com/library/ff837271\(v=office.15\)) 句よりも前に記述します。抽出条件や並べ替えを指定する [WHERE](https://msdn.microsoft.com/library/ff195245\(v=office.15\)) 句などの句を併用することもできます。さらに、クロス集計クエリの中でサブクエリを述語 (特に WHERE 句の中の述語) として使用することもできます。
+TRANSFORM ステートメントは省略可能ですが、指定する場合は SQL 文字列の先頭に記述します。行見出しとして使用するフィールドを指定する SELECT ステートメントや、行のグループ化を指定する [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) 句よりも前に記述します。抽出条件や並べ替えを指定する [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql) 句などの句を併用することもできます。さらに、クロス集計クエリの中でサブクエリを述語 (特に WHERE 句の中の述語) として使用することもできます。
 
 引数 *pivotfield* に返された値は、クエリ結果の列見出しに使用されます。たとえば、クロス集計クエリで月間の売上総額を列に指定する場合は、12 個の列を作成します。また、IN 句 (省略可能) に固定値 (引数 *value1*、*value2*) を指定して、列見出しとなる引数 *pivotfield* の値を制限することもできます。さらに、対応するデータのない固定値を指定して、列を追加することもできます。
 

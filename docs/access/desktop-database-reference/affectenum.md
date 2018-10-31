@@ -4,21 +4,22 @@ TOCTitle: AffectEnum
 ms:assetid: 15393398-d7eb-a685-1bfa-d6712d8e5015
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248916(v=office.15)
 ms:contentKeyID: 48543404
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 3ffb2ab2abbd24a19ddc433b5fd315dd535fd2a0
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 9e1bd4d86e6e269c9363daca0ffa7b8df6303326
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477441"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863669"
 ---
 # <a name="affectenum"></a>AffectEnum
-
 
 **適用されます**Access 2013 |。Office 2013
 
 操作の対象となるレコードを表します。
+
+<br/>
 
 <table>
 <colgroup>
@@ -38,12 +39,8 @@ ms.locfileid: "25477441"
 <td><p><strong>adAffectAll</strong></p></td>
 <td><p>3</p></td>
 <td><p><strong>Recordset</strong> に適用されている <a href="filter-property-ado.md">Filter</a> がない場合、すべてのレコードが対象です。
- 文字列抽出条件を<strong>Filter</strong>プロパティを設定するかどうか (次のように&quot;作成者 = 'Smith'&quot;)、操作が現在のチャプター内の可視レコードに影響し、します。 <strong>Filter</strong> プロパティが <a href="filtergroupenum.md">FilterGroupEnum</a> のメンバーまたは Bookmark の配列に設定されている場合、操作は <strong>Recordset</strong> のすべての行に反映されます。</p>
-
-> [!NOTE]
-> <P>adAffectAll は、Visual Basic オブジェクト ブラウザーでは非表示です。</P>
-
-
+ 文字列抽出条件を<strong>Filter</strong>プロパティを設定するかどうか (次のように&quot;作成者 = 'Smith'&quot;)、操作の現在のチャプター内の可視レコードに影響を与えます。 <strong>Filter</strong>プロパティは、ブックマークの配列または<a href="filtergroupenum.md">FilterGroupEnum</a>のメンバーに設定されて、する場合、操作、<strong>レコード セット</strong>のすべての行に影響します。</p>
+<p><strong>注</strong>: adAffectAll は、Visual Basic のオブジェクト ブラウザーで非表示にします。</p>
 </td>
 </tr>
 <tr class="even">
@@ -65,7 +62,7 @@ ms.locfileid: "25477441"
 </table>
 
 
-**ADO/WFC 等価**
+### <a name="adowfc-equivalent"></a>ADO/WFC に相当
 
 パッケージ: **com.ms.wfc.data**
 

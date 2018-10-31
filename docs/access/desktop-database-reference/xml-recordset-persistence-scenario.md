@@ -6,27 +6,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248825(v=office.15)
 ms:contentKeyID: 48543107
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2bbb8a3aa50027be7ce025a04d5987a45fee888f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 378d3b1fc559cc07c1eb3a58621a8a4bd09a06ab
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479064"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861827"
 ---
-# <a name="xml-recordset-persistence-scenario"></a>XML レコードセットを保存するシナリオ
-
+# <a name="xml-recordset-persistence-scenario"></a>XML レコードセットの永続化シナリオ
 
 **適用されます**Access 2013 |。Office 2013
 
-## <a name="xml-recordset-persistence-scenario"></a>XML レコードセットを保存するシナリオ
+## <a name="xml-recordset-persistence-scenario"></a>XML レコードセットの永続化シナリオ
 
 このシナリオでは、 **Response** オブジェクトの内容を Active Server Pages (ASP) の **Response** オブジェクトに直接保存する ASP アプリケーションを作成します。
 
-
 > [!NOTE]
-> <P>[!メモ] このシナリオを作成するには、サーバーに Internet Information Server 5.0 (IIS) 以降がインストールされている必要があります。</P>
-
-
+> [!メモ] このシナリオを作成するには、サーバーに Internet Information Server 5.0 (IIS) 以降がインストールされている必要があります。
 
 返される **Recordset** は、 [RDS.DataControl](datacontrol-object-rds.md) を使用して Internet Explorer に表示されます。
 
@@ -40,5 +36,7 @@ ms.locfileid: "25479064"
 
 4.  データを受信し、表示します。
 
-**次**[手順 1: アプリケーションを設定する](step-1-set-up-the-application.md)
+### <a name="next-step"></a>次のステップ
+
+[手順 1: アプリケーションを設定する](step-1-set-up-the-application.md)
 

@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm51789
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d61d298da0e3b44895c8fce3ee1adc3b55d9a491
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c03811716e776663601fb9c2f9590e644417e3c1
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479227"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860852"
 ---
 # <a name="importexportdata-macro-action"></a>"ImportExportData/データのインポート/エクスポート" マクロ アクション
 
@@ -66,7 +66,7 @@ ms.locfileid: "25479227"
 <li><p>[ <strong>テーブルのリンク</strong>] ダイアログ ボックスでテーブルを選択し、[ <strong>OK</strong>] をクリックします。</p></li>
 </ol>
 <p>新しくリンクしたテーブルをデザイン ビューで開きし、[<strong>デザイン</strong>] タブの [<strong>ツール</strong> <strong>] プロパティ ・ シート</strong>をクリックしてテーブルのプロパティを表示します。 <strong>説明</strong>プロパティの設定値のテキストは、このテーブルの接続文字列です。</p>
-<p>ODBC 接続文字列の詳細については、ODBC データベース用 ODBC ドライバーのヘルプ ファイルまたはその他のドキュメントを参照してください。</p></td>
+<p>ODBC 接続文字列の詳細については、ヘルプ ファイルまたは ODBC ドライバーの ODBC データベースには、この種類の他の資料を参照してください。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Object Type/オブジェクトの種類</strong></p></td>

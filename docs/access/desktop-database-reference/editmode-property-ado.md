@@ -3,7 +3,7 @@
 >>>>>>> マスターの ms:assetid: 28ca8f14-abee-ad20-9c16-11bb36b487e4 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249045(v=office.15) ms:contentKeyID: 48543867 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
 # <a name="editmode-property-ado"></a>EditMode プロパティ (ADO)
 =======
 # <a name="editmode-property-ado"></a>EditMode プロパティ (ADO)
@@ -14,7 +14,7 @@
 
 現在のレコードの編集ステータスを示します。
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
 ## <a name="return-value"></a>戻り値
 =======
 ## <a name="return-value"></a>戻り値
@@ -32,6 +32,6 @@ ADO は、現在のレコードに関連付けられた編集バッファーを�
 
 
 > [!NOTE]
-> <P>[!メモ] <STRONG>EditMode</STRONG> では現在のレコードがないと有効な値は返されません。 <STRONG>EditMode</STRONG> では、 <A href="bof-eof-properties-ado.md">BOF または EOF</A> が TRUE の場合、または現在のレコードが削除されている場合にエラーが返されます。</P>
+> [!メモ] **EditMode** では現在のレコードがないと有効な値は返されません。 **EditMode** では、 [BOF または EOF](bof-eof-properties-ado.md) が TRUE の場合、または現在のレコードが削除されている場合にエラーが返されます。
 
 

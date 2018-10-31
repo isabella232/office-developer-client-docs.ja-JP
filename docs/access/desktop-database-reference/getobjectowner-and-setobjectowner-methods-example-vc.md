@@ -1,24 +1,24 @@
 ---
 title: GetObjectOwner メソッドと SetObjectOwner メソッドの使用例 (VC++)
-TOCTitle: GetObjectOwner and SetObjectOwner Methods Example (VC++)
+TOCTitle: GetObjectOwner and SetObjectOwner methods example (VC++)
 ms:assetid: af38cc5c-4475-20fa-edcd-a439e1ffbf99
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249835(v=office.15)
 ms:contentKeyID: 48547096
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f1efe20d78c6be737ee32b5b8156a9d311ad654e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 488e4f966bb37dd151eca8ab7231769373cc06e8
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478471"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25864194"
 ---
 # <a name="getobjectowner-and-setobjectowner-methods-example-vc"></a>GetObjectOwner メソッドと SetObjectOwner メソッドの使用例 (VC++)
 
 
 **適用されます**Access 2013 |。Office 2013
 
-この例では、[GetObjectOwner](getobjectowner-method-adox.md) メソッドと [SetObjectOwner](https://msdn.microsoft.com/library/jj249006\(v=office.15\)) メソッドの機能を示します。このコードは、Accounting グループが存在することを前提としています (このグループをシステムに追加する方法については、「 [Groups と Users の Append メソッドおよび ChangePassword メソッドの使用例 (VC++)](groups-and-users-append-changepassword-methods-example-vc.md)」を参照してください)。Categories テーブルの所有者は Accounting に設定されます。
+この例では、[GetObjectOwner](getobjectowner-method-adox.md) メソッドと [SetObjectOwner](https://msdn.microsoft.com/library/jj249006\(v=office.15\)) メソッドの機能を示します。 このコード グループの存在を前提としています (の[グループおよびユーザーの追加、パスワードの変更方法の例 (vc++)](groups-and-users-append-changepassword-methods-example-vc.md)このグループをシステムに追加する方法についてを参照してください) の会計です。 Categories テーブルの所有者は Accounting に設定されます。
 
 ```cpp 
  

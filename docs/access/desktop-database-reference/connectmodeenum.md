@@ -4,21 +4,22 @@ TOCTitle: ConnectModeEnum
 ms:assetid: a15aa733-f899-5fe9-e705-67a4301706d1
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249743(v=office.15)
 ms:contentKeyID: 48546728
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 5b39fc42259a1906891b82bf9b9ef252997e6240
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 91d1ad892557ad944dca175a3589a74e7205ad01
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479106"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862577"
 ---
 # <a name="connectmodeenum"></a>ConnectModeEnum
-
 
 **適用されます**Access 2013 |。Office 2013
 
 [Connection](connection-object-ado.md) 内のデータの編集、 [Record](record-object-ado.md) のオープン、または [Record](mode-property-ado.md) および **Stream** オブジェクトの [Mode](stream-object-ado.md) プロパティの値の指定に対する権限を表します。
+
+<br/>
 
 <table>
 <colgroup>
@@ -47,7 +48,7 @@ ms.locfileid: "25479106"
 <tr class="odd">
 <td><p><strong>adModeRecursive</strong></p></td>
 <td><p>0x400000</p></td>
-<td><p>(<strong>AdModeShareDenyNone</strong>、 <strong>adModeShareDenyWrite</strong>、または<strong>adModeShareDenyRead</strong>) サブのすべてのレコードをカレント<strong>レコード</strong>の共有の制限を適用するその他の<em>*ShareDeny*</em>値と組み合わせて使用します。 <strong>レコード</strong>に子がない場合は影響ありません。 <strong>AdModeShareDenyNone</strong>のみで使用されている場合は、実行時エラーが生成されます。 ただし、 <strong>adModeShareDenyNone</strong>その他の値と組み合わせることで使用できます。 たとえば、使用することができます&quot; <strong>adModeRead</strong>または<strong>adModeShareDenyNone</strong>または<strong>adModeRecursive</strong>&quot;。</p></td>
+<td><p>(<strong>AdModeShareDenyNone</strong>、 <strong>adModeShareDenyWrite</strong>、または<strong>adModeShareDenyRead</strong>) サブのすべてのレコードをカレント<strong>レコード</strong>の共有の制限を適用するその他の<em>*ShareDeny*</em>値と組み合わせて使用します。 <strong>レコード</strong>に子がない場合は影響ありません。</p><p><strong>AdModeShareDenyNone</strong>のみで使用されている場合は、実行時エラーが生成されます。 ただし、 <strong>adModeShareDenyNone</strong>その他の値と組み合わせることで使用できます。 たとえば、使用することができます&quot; <strong>adModeRead</strong>または<strong>adModeShareDenyNone</strong>または<strong>adModeRecursive</strong>&quot;。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adModeShareDenyNone</strong></p></td>
@@ -83,7 +84,7 @@ ms.locfileid: "25479106"
 </table>
 
 
-**ADO/WFC 等価**
+### <a name="adowfc-equivalent"></a>ADO/WFC に相当
 
 パッケージ: **com.ms.wfc.data**
 

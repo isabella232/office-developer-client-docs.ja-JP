@@ -10,25 +10,20 @@ f1_keywords:
 - acmain11.chm1032159
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7c9a3282f3bb508a4c68ecbd3f2c0465cfee9bac
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 85961b761255583738026113a025d6ca84b61f83
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603099"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861989"
 ---
 # <a name="initializing-the-microsoft-excel-driver"></a>Microsoft Office Excel ドライバーを初期化する
 
-
 **適用されます**Access 2013 |。Office 2013
 
-<<<<<<< ヘッドと、Microsoft® Excel ドライバーをインストールすると、セットアップ プログラムは、エンジンと ISAM 形式のサブキーで、Microsoft Windows® レジストリに一連の既定値を書き込みます。 これらの設定を直接変更しないでください。追加、削除、またはこれらの設定を変更するには、アプリケーションのセットアップ プログラムを使用します。 次のセクションでは、初期化し、Microsoft Excel のデータベース ドライバーの ISAM 形式の設定について説明します。
-
-## <a name="microsoft-excel-initialization-settings"></a>Excel の初期設定
-=== と、Excel ドライバーをインストールすると、セットアップ プログラムは、エンジンと ISAM 形式のサブキーで、Windows レジストリに一連の既定値を書き込みます。 これらの設定を直接変更しないでください。追加、削除、またはこれらの設定を変更するには、アプリケーションのセットアップ プログラムを使用します。 次のセクションでは、初期化し、Microsoft Excel のデータベース ドライバーの ISAM 形式の設定について説明します。
+Excel ドライバーをインストールすると、セットアップ プログラムは、一連の既定値をエンジンと ISAM 形式のサブキーで、Windows レジストリに書き込みます。 これらの設定を直接変更しないでください。追加、削除、またはこれらの設定を変更するには、アプリケーションのセットアップ プログラムを使用します。 次のセクションでは、初期化し、Microsoft Excel のデータベース ドライバーの ISAM 形式の設定について説明します。
 
 ## <a name="excel-initialization-settings"></a>Excel の初期設定
->>>>>>> master
 
 **アクセス接続エンジン\\エンジン\\Excel**フォルダーには、Microsoft Excel ワークシートへの外部アクセスの使用、Aceexcl.dll のドライバーの初期設定が含まれています。 通常、このキーのエントリの設定は次のようになっています。
 
@@ -93,7 +88,7 @@ Microsoft Access データベース エンジンで使用される、Excel キ�
 <thead>
 <tr class="header">
 <th><p>エントリ名</p></th>
-<th><p>種類</p></th>
+<th><p>型</p></th>
 <th><p>値</p></th>
 </tr>
 </thead>
@@ -147,14 +142,9 @@ Microsoft Access データベース エンジンで使用される、Excel キ�
 </table>
 
 
-
 > [!NOTE]
 > [!メモ] Windows レジストリの設定を変更した場合は、新しい設定内容を有効にするために、データベース エンジンをいったん終了してから再起動する必要があります。
 
-<<<<<<< ヘッド
-
-=======
 ## <a name="see-also"></a>関連項目
 
-[Excel ドライバーで TypeGuessRows 設定を使用します。](https://support.office.com/en-us/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b?ui=en-US&rs=en-US&ad=US)
->>>>>>> master
+[Excel ドライバーで TypeGuessRows 設定を使用します。](https://support.office.com/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b)

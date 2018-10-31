@@ -6,14 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248975(v=office.15)
 ms:contentKeyID: 48543622
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1e2d939f8583fdfd98ed1ae8e51a5bbfe792e486
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 8f8266d2b632b27ee4fafbb4ed0634def544c17a
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479185"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860260"
 ---
-# <a name="using-ado-for-internet-publishing"></a>インターネット発行に ADO を使用する
+# <a name="using-ado-for-internet-publishing"></a>Internet Publishing 用の ADO の使用
 
 
 **適用されます**Access 2013 |。Office 2013
@@ -42,3 +42,6 @@ URL の使用の詳細については、「[絶対 URL と相対 URL](absolute-a
 
   - **Append** メソッドに対するショートカットおよび代替手段として、未定義のフィールドまたは以前に削除されたフィールドに値を代入するだけで、フィールドを作成することができます。
 
+## <a name="see-also"></a>関連項目
+
+- [インターネット公開の例のトピック](internet-publishing-scenario.md)

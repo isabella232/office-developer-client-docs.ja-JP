@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249783(v=office.15)
 ms:contentKeyID: 48546919
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5c1afc7aeea90fc152df7d8f7b1601bf3753b3a3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 195cb08fb0b195b63cdddaa848554f24d028b498
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476563"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861877"
 ---
 # <a name="append-method-adox-procedures"></a>Append メソッド (ADOX Procedures)
 
@@ -43,6 +43,6 @@ ms.locfileid: "25476563"
 
 
 > [!NOTE]
-> <P>Microsoft Jet 用 OLE DB プロバイダーを使用して、<STRONG>プロシージャ</STRONG>コレクションの<STRONG>Append</STRONG>メソッドができます<EM>コマンド</EM>パラメーターの<STRONG>プロシージャ</STRONG>ではなく<STRONG>ビュー</STRONG>を指定します。 <STRONG>View</STRONG> がデータ ソースに追加され、 <STRONG>Procedures</STRONG> コレクションに追加されます。 <STRONG>Append</STRONG> の後、 <STRONG>Procedures</STRONG> コレクションと <STRONG>Views</STRONG> コレクションが更新された場合、 <STRONG>View</STRONG> は <STRONG>Procedures</STRONG> コレクション内に存在しなくなり、 <STRONG>Views</STRONG> コレクションに表示されます。</P>
+> Microsoft Jet 用 OLE DB プロバイダーを使用して、**プロシージャ**コレクションの**Append**メソッドができます*コマンド*パラメーターの**プロシージャ**ではなく**ビュー**を指定します。 **View** がデータ ソースに追加され、 **Procedures** コレクションに追加されます。 **Append** の後、 **Procedures** コレクションと **Views** コレクションが更新された場合、 **View** は **Procedures** コレクション内に存在しなくなり、 **Views** コレクションに表示されます。
 
 

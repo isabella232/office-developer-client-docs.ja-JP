@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052871
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d896036bfcf1fcf8c9f152924dfeb0c61621daa9
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 691b4d0b18b31c4c4a40f73e232a1829101913f1
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603074"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863277"
 ---
 # <a name="fieldgetchunk-method-dao"></a>Field.GetChunk メソッド (DAO)
 
@@ -64,7 +64,7 @@ ms.locfileid: "25603074"
 </table>
 
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
 ### <a name="return-value"></a>戻り値
 =======
 ### <a name="return-value"></a>戻り値
@@ -82,7 +82,7 @@ Numbytes がフィールド内のバイト数より大きい場合、 **GetChunk
 
 
 > [!NOTE]
-> <P>[!メモ] 文字列の場合はメモ型 ( <STRONG>Memo</STRONG>) のフィールドを使用し、ロング バイナリ型 ( <STRONG>Long Binary</STRONG>) のフィールドにはバイナリ データのみ格納してください。この逆を行うと、予期しない結果を招きます。</P>
+> [!メモ] 文字列の場合はメモ型 ( **Memo**) のフィールドを使用し、ロング バイナリ型 ( **Long Binary**) のフィールドにはバイナリ データのみ格納してください。この逆を行うと、予期しない結果を招きます。
 
 
 

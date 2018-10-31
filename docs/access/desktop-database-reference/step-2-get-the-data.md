@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250171(v=office.15)
 ms:contentKeyID: 48548387
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5e4b93eb3e3679fdbc235f4406b0480ad2597d25
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 80dae05dc691343b3c89ce8fd3ccfe72b776984c
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476469"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860330"
 ---
 # <a name="step-2-get-the-data"></a>手順 2: データを取得する
 
 
 **適用されます**Access 2013 |。Office 2013
 
-## <a name="step-2-get-the-data"></a>手順 2: データを取得する
+## <a name="step-2-get-the-data"></a>手順 2: データの取得
 
 この手順では、ADO の **Recordset** を開いてクライアントに送信する準備を行うコードを記述します。Windows のメモ帳などのテキスト エディターで XMLResponse.asp ファイルを開き、次のコードを挿入します。
 
@@ -49,5 +49,7 @@ StrCon のパラメーターのデータ ソースのパラメーターの値を
 
 ファイルを開いたままで、次の手順に進みます。
 
-**次へ**[手順 3: データを送信する](step-3-send-the-data.md)
+### <a name="next-step"></a>次のステップ
+
+[手順 3: データを送信する](step-3-send-the-data.md)
 

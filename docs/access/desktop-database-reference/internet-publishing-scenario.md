@@ -6,14 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249024(v=office.15)
 ms:contentKeyID: 48543790
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7220505f5d2fe4354ad904df3c5b1d79e9e6768d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ea03ee787c344865154ab04a82d3702e121dbc2c
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478528"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862663"
 ---
-# <a name="internet-publishing-scenario"></a>インターネットに発行するためのシナリオ
+# <a name="internet-publishing-scenario"></a>Internet Publishing シナリオ
 
 
 **適用されます**Access 2013 |。Office 2013
@@ -22,11 +22,11 @@ ms.locfileid: "25478528"
 
 このシナリオを作成するには、次の手順が必要です。
 
-  - [手順 1: Visual Basic プロジェクトを設定する](step-1-set-up-the-visual-basic-project.md)
+- [手順 1: Visual Basic プロジェクトを設定する](step-1-set-up-the-visual-basic-project.md)
 
-  - [手順 2: メイン リスト ボックスを初期化する](step-2-initialize-the-main-list-box.md)
+- [手順 2: メイン リスト ボックスを初期化する](step-2-initialize-the-main-list-box.md)
 
-  - [手順 3: フィールド リスト ボックスに値を設定する](step-3-populate-the-fields-list-box.md)
+- [手順 3: フィールド リスト ボックスに値を設定する](step-3-populate-the-fields-list-box.md)
 
-  - [手順 4: Details テキスト ボックスの値を設定する](step-4-populate-the-details-text-box.md)
+- [手順 4: Details テキスト ボックスの値を設定する](step-4-populate-the-details-text-box.md)
 

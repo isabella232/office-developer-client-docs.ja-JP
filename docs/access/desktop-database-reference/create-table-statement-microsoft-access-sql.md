@@ -1,21 +1,21 @@
 ---
 title: CREATE TABLE ステートメント (Microsoft Access SQL)
-TOCTitle: CREATE TABLE Statement (Microsoft Access SQL)
+TOCTitle: CREATE TABLE statement (Microsoft Access SQL)
 ms:assetid: fc45d36e-6e43-c030-5016-cca8bb1379fe
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837200(v=office.15)
 ms:contentKeyID: 48548888
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
 f1_keywords:
 - jetsql40.chm5277563
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 749d593a0c9ed32290ee91aec20c79a141a83f56
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ccf9a88b427925528ce4e6a293d0b1351cef9883
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477855"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863949"
 ---
 # <a name="create-table-statement-microsoft-access-sql"></a>CREATE TABLE ステートメント (Microsoft Access SQL)
 
@@ -24,7 +24,7 @@ ms.locfileid: "25477855"
 新しいテーブルを作成します。
 
 > [!NOTE]
-> [!メモ] Microsoft Access データベース エンジンは、Microsoft Access データベース エンジン以外のデータベースでは CREATE TABLE 句や DDL (データ定義言語) ステートメントを使用できません。Microsoft Access データベース エンジン以外のデータベースでは代わりに DAO の Create 系メソッドを使用してください。
+> [!メモ] Microsoft Access データベース エンジンは、Microsoft Access データベース エンジン以外のデータベースでは CREATE TABLE 句や DDL (データ定義言語) ステートメントを使用できません。 **DAO を作成**メソッドを使用してください。
 
 ## <a name="syntax"></a>構文
 
@@ -62,11 +62,11 @@ CREATE TABLE ステートメントには、次の指定項目があります。
 </tr>
 <tr class="odd">
 <td><p><em>index1</em>, <em>index2</em></p></td>
-<td><p>単一フィールドを定義する CONSTRAINT 句。このインデックスの作成方法については、「<a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT 句</a>」を参照してください。  </p></td>
+<td><p>単一フィールドを定義する CONSTRAINT 句。 このインデックスを作成する方法の詳細については、<a href="constraint-clause-microsoft-access-sql.md">制約句</a>を参照してください。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>multifieldindex</em></p></td>
-<td><p>複数フィールドを定義する CONSTRAINT 句。このインデックスの作成方法については、「<a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT 句</a>」を参照してください。  </p></td>
+<td><p>複数フィールドを定義する CONSTRAINT 句。 このインデックスを作成する方法の詳細については、<a href="constraint-clause-microsoft-access-sql.md">制約句</a>を参照してください。</p></td>
 </tr>
 </tbody>
 </table>
@@ -74,17 +74,17 @@ CREATE TABLE ステートメントには、次の指定項目があります。
 
 ## <a name="remarks"></a>解説
 
-CREATE TABLE ステートメントを使用すると、新しいテーブルとそのフィールド、およびフィールドの制約を定義できます。フィールドに対して NOT NULL を指定した場合、フィールドには新しいレコードが有効なデータとして必要になります。
+CREATE TABLE ステートメントを使用すると、新しいテーブルとそのフィールド、およびフィールドの制約を定義できます。 しない場合は、フィールドに NULL が指定されて、新しいレコードがそのフィールドに有効なデータが存在する必要です。
 
 CONSTRAINT 句はフィールドに対してさまざまな制約を設定するもので、これを使用して主キーを設定することができます。また、[CREATE INDEX](create-index-statement-microsoft-access-sql.md) ステートメントを使用して、既存のテーブルに主キーまたは追加のインデックスを作成することもできます。
 
 NOT NULL は、単一フィールド、または名前付き CONSTRAINT 句の内部で使用できます。名前付き CONSTRAINT 句は、単一フィールドまたは複数フィールドのどちらかの名前付き CONSTRAINT 句に適用されます。ただし、NOT NULL の制約を適用できるのはフィールドに対して一度のみです。再度適用しようとした場合は実行時エラーになります。
 
-一時テーブルが作成される場合、作成されたセッションの中でのみ見ることができます。セッションが終了すると、自動的に削除されます。一時テーブルは、複数のユーザーからアクセスすることができます。
+一時テーブルを作成するときは表示が作成されたセッション内でのみです。 セッションが終了すると、自動的に削除されます。 一時テーブルは、複数のユーザーからアクセスすることができます。
 
 WITH COMPRESSION 属性には、テキスト型 (Text) であるメモ型 (Memo) や文字型 (Character) および類似のデータ型のみ使用できます。
 
-Unicode 文字の表示形式に変更するために、WITH COMPRESSION 属性が CHARACTER 列に追加されました。Unicode 文字には、各文字一律に 2 バイトを必要とします。これは、主に文字データを含む既存の Microsoft® Jet データベースを Microsoft Access データベース エンジンの形式に変換すると、ファイル サイズが約 2 倍になることを意味します。しかし、Unicode 表示形式の文字セットの多くは、以前 1 バイトの文字セット (SBCS) であり、簡単に 1 バイトに圧縮することが可能です。CHARACTER 列をこの属性で定義すると、データが格納時には自動的に圧縮され、取得時には圧縮解除されるようになります。
+Unicode 文字の表示形式に変更するために、WITH COMPRESSION 属性が CHARACTER 列に追加されました。 Unicode 文字には、各文字一律に 2 バイトを必要とします。 主文字データを含む既存の Microsoft Jet データベースを Microsoft Access データベース エンジンの形式に変換するときのサイズで、データベース ・ ファイルがほぼ 2 倍はこの可能性があります。 ただし、sbcs 以前 1 バイト文字を設定 ()、多くの文字セットの Unicode 表現は簡単に 1 バイトに圧縮できます。 CHARACTER 列をこの属性で定義すると、データが格納時には自動的に圧縮され、取得時には圧縮解除されるようになります。
 
 MEMO 列もデータの格納を圧縮形式で定義することができます。ただし、これには制限があります。圧縮時 4096 バイト以下になる MEMO 列のインスタンスのみ圧縮されます。それ以外の MEMO 列のインスタンスは圧縮されずに残ります。これは、所定のテーブルの所定の MEMO 列で、圧縮されたデータと圧縮されていないデータが混在している可能性があることを意味します。
 

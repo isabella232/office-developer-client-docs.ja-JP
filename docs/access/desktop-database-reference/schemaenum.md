@@ -4,23 +4,22 @@ TOCTitle: SchemaEnum
 ms:assetid: 6147b682-3c4f-ea91-fff6-ac73107d206d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249359(v=office.15)
 ms:contentKeyID: 48545208
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: e928271d61cf38232014db1c67482ca6d47fd863
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a6f1e174253904adf7392aa7ae19786103e55843
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479252"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863354"
 ---
 # <a name="schemaenum"></a>SchemaEnum
-
 
 **適用されます**Access 2013 |。Office 2013
 
 **OpenSchema** メソッドが取得するスキーマ [Recordset](openschema-method-ado.md) の種類を表します。
 
-**解説**
+## <a name="remarks"></a>備考
 
 機能と各 ADO 定数に返される列の詳細については、 *OLE DB プログラマ リファレンス*の「付録 B トピックを参照して。 各トピックの名前は、次の表の [説明] セクションでは、かっこ内に表示されます。
 
@@ -28,7 +27,9 @@ ms.locfileid: "25479252"
 
 OLE DB ドキュメントの中の列のデータ型は、ADO の「[DataTypeEnum](datatypeenum.md)」の説明を参考に、ADO データ型に読み換えてください。 など、OLE DB データ型の**DBTYPE\_WSTR**は、ADO データ型**adWChar**に相当します。
 
-ADO では、定数**adSchemaDBInfoKeywords**と**adSchemaDBInfoLiterals**のスキーマのような結果が生成されます。 ADO は**レコード セット**を作成し、それぞれ**IDBInfo::GetKeywords**と**IDBInfo::GetLiteralInfo**メソッドの戻り値を使用して各行を入力します。 IDBInfo セクションでこれらのメソッドに関する追加情報を参照して、 *OLE DB プログラマ リファレンスです*。
+ADO では、定数**adSchemaDBInfoKeywords**と**adSchemaDBInfoLiterals**のスキーマのような結果が生成されます。 ADO では、**レコード セット**を作成し、それぞれ**IDBInfo::GetKeywords**と**IDBInfo::GetLiteralInfo**メソッドの戻り値を使用して各行を入力します。 これらのメソッドに関する追加情報については、 *OLE DB プログラマ リファレンス*」の IDBInfo セクションを参照しています。
+
+<br/>
 
 <table>
 <colgroup>
@@ -458,7 +459,7 @@ VIEW_NAME</p></td>
 </table>
 
 
-**ADO/WFC 等価**
+### <a name="adowfc-equivalent"></a>ADO/WFC に相当
 
 パッケージ: **com.ms.wfc.data**
 

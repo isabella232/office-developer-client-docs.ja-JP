@@ -4,21 +4,22 @@ TOCTitle: DataTypeEnum
 ms:assetid: a8ab7616-552f-ed5f-ed55-95254cfb374a
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249780(v=office.15)
 ms:contentKeyID: 48546904
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: e8b70ad0067083373679286bdb452cb667d3de0e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f5c192589f2c90b2ce7b6c7b376b80c92b341e2d
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478892"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860659"
 ---
-# <a name="datatypeenum"></a>格納
-
+# <a name="datatypeenum"></a>DataTypeEnum
 
 **適用されます**Access 2013 |。Office 2013
 
 [Field](field-object-ado.md)、[Parameter](parameter-object-ado.md)、または [Property](property-object-ado.md) のデータ型を指定します。 次の表の [説明] 列では、かっこでは、対応する OLE DB 型のインジケーターが表示されます。 OLE DB データ型の詳細については、第 13 章と付録 A の*OLE DB プログラマ リファレンス*を参照してください。
+
+<br/>
 
 <table>
 <colgroup>
@@ -137,13 +138,8 @@ ms.locfileid: "25478892"
 <td><p><strong>追加</strong></p></td>
 <td><p>9</p></td>
 <td><p>COM オブジェクトの <strong>IDispatch</strong> インターフェイスへのポインターを示します (DBTYPE_IDISPATCH)。
-</p>
-
-> [!NOTE]
-> <P>このデータ型は、現在は ADO ではサポートされていません。使用すると予期しない結果になることがあります。</P>
-
-
-<p></p></td>
+</p><p><strong>注</strong>: ADO で現在はこのデータ型はできません。 使用率は、予期しない結果にあります。</p>
+</td>
 </tr>
 <tr class="even">
 <td><p><strong>adInteger</strong></p></td>
@@ -154,13 +150,8 @@ ms.locfileid: "25478892"
 <td><p><strong>追加しようとします。</strong></p></td>
 <td><p>13</p></td>
 <td><p>COM オブジェクトの <strong>IUnknown</strong> インターフェイスへのポインターを示します (DBTYPE_IUNKNOWN)。
-</p>
-
-> [!NOTE]
-> <P>このデータ型は、現在は ADO ではサポートされていません。使用すると予期しない結果になることがあります。</P>
-
-
-<p></p></td>
+</p><p><strong>注</strong>: ADO で現在はこのデータ型はできません。 使用率は、予期しない結果にあります。
+</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adLongVarBinary</strong></p></td>
@@ -245,13 +236,7 @@ ms.locfileid: "25478892"
 <td><p><strong>adVariant</strong></p></td>
 <td><p>12</p></td>
 <td><p>オートメーション バリアント型 (<strong>Variant</strong>) を示します (DBTYPE_VARIANT)。
-</p>
-
-> [!NOTE]
-> <P>このデータ型は、現在は ADO ではサポートされていません。使用すると予期しない結果になることがあります。</P>
-
-
-<p></p></td>
+</p><p><strong>注</strong>: ADO で現在はこのデータ型はできません。 使用率は、予期しない結果にあります。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adVarNumeric</strong></p></td>
@@ -274,7 +259,7 @@ ms.locfileid: "25478892"
 </table>
 
 
-**ADO/WFC 等価**
+### <a name="adowfc-equivalent"></a>ADO/WFC に相当
 
 パッケージ: **com.ms.wfc.data**
 

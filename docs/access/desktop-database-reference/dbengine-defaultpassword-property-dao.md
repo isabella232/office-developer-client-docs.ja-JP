@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845616(v=office.15)
 ms:contentKeyID: 48543478
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b5b1195b4217ca72374402b361b09d540583bf06
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a418d10773326e36f5c7111cce5941fb7255cb89
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479535"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861200"
 ---
 # <a name="dbenginedefaultpassword-property-dao"></a>DBEngine.DefaultPassword プロパティ (DAO)
 
@@ -32,9 +32,7 @@ ms.locfileid: "25479535"
 
 
 > [!NOTE]
-> <P>[!メモ] パスワードには、大文字、小文字、数字、記号を組み合わせた複雑なものを使用してください。これらの文字を混在させたものになっていないパスワードは強固とはいえません。たとえば、Y6dh!et5 は安全性の高いパスワードです。House27 は推測されやすいパスワードです。また、高い安全性を保ちながらも、書き留めておかなくても覚えておくことができるパスワードを使用してください。</P>
-
-
+> [!メモ] パスワードには、大文字、小文字、数字、記号を組み合わせた複雑なものを使用してください。これらの文字を混在させたものになっていないパスワードは強固とはいえません。たとえば、Y6dh!et5 は安全性の高いパスワードです。House27 は推測されやすいパスワードです。また、高い安全性を保ちながらも、書き留めておかなくても覚えておくことができるパスワードを使用してください。
 
 既定では、 **DefaultUser** プロパティは "admin" に設定され、 **DefaultPassword** プロパティは長さが 0 の文字列 ("") に設定されます。
 

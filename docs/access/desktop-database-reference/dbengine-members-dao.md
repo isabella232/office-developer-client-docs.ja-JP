@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195868(v=office.15)
 ms:contentKeyID: 48545652
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4d01ba185112bc396181dfe7f5e45df2f082d191
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 7b534d4595bd003c76e756c44d6e88f53a725cc8
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478416"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861786"
 ---
 # <a name="dbengine-members-dao"></a>DBEngine メンバー (DAO)
 
@@ -63,7 +63,7 @@ DBEngine オブジェクトは、DAO オブジェクト モデル内のトップ
 <td><p></p>
 
 > [!NOTE]
-> <P>[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</P>
+> [!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。
 
 
 <p>ODBC データ ソースの <strong><a href="connection-object-dao.md">Connection</a></strong> オブジェクトを開きます (ODBCDirect ワークスペースのみ)。</p></td>
@@ -115,7 +115,7 @@ DBEngine オブジェクトは、DAO オブジェクト モデル内のトップ
 <td><p>既定の <strong>Workspace</strong> オブジェクトを作成するために初期化時に使用されるユーザー名を設定します。値の取得および設定が可能です。文字列型 ( <strong>String</strong>) の値を使用します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="dbengine-errors-property-dao.md">Errors</a></strong></p></td>
+<td><p><strong><a href="dbengine-errors-property-dao.md">エラー</a></strong></p></td>
 <td><p>指定したオブジェクトの、すべての保存された <strong>Error</strong> オブジェクトを含む <strong>Errors</strong> コレクションを返します。値の取得のみ可能です。</p></td>
 </tr>
 <tr class="odd">
@@ -131,7 +131,7 @@ DBEngine オブジェクトは、DAO オブジェクト モデル内のトップ
 <td><p>指定したオブジェクトの <strong><a href="properties-collection-dao.md">Properties</a></strong> コレクションを取得します。値の取得のみ可能です。  </p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="dbengine-version-property-dao.md">Version</a></strong></p></td>
+<td><p><strong><a href="dbengine-version-property-dao.md">バージョン</a></strong></p></td>
 <td><p>現在使用中の DAO のバージョンを返します。値の取得のみ可能です。文字列型 ( <strong>String</strong>) の値を使用します。</p></td>
 </tr>
 <tr class="odd">

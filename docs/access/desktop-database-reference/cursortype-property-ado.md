@@ -3,7 +3,7 @@
 >>>>>>> マスターの ms:assetid: f42ded8f-9f92-ef03-a198-ffb892324611 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250239(v=office.15) ms:contentKeyID: 48548682 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
 # <a name="cursortype-property-ado"></a>CursorType プロパティ (ADO)
 =======
 # <a name="cursortype-property-ado"></a>CursorType プロパティ (ADO)
@@ -14,7 +14,7 @@
 
 [Recordset](recordset-object-ado.md) オブジェクトで使用されているカーソルの種類を示します。
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
 ## <a name="settings-and-return-values"></a>設定値と戻り値
 =======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
@@ -64,11 +64,8 @@
 </table>
 
 
-
 > [!NOTE]
-> <P>動的カーソルまたは前方のみカーソルで <STRONG>Supports</STRONG>(<STRONG>adUpdateBatch</STRONG>) が True を返すことがありますが、一括更新ではキーセット カーソルまたは静的カーソルを使用する必要があります。一括更新に必要な Cursor Service for OLE DB を有効にするには、<A href="locktype-property-ado.md">LockType</A> プロパティを <STRONG>adLockBatchOptimistic</STRONG> に設定し、<STRONG>CursorLocation</STRONG> プロパティを <STRONG>adUseClient</STRONG> に設定します。</P>
-
-
+> 動的カーソルまたは前方のみカーソルで **Supports**(**adUpdateBatch**) が True を返すことがありますが、一括更新ではキーセット カーソルまたは静的カーソルを使用する必要があります。一括更新に必要な Cursor Service for OLE DB を有効にするには、[LockType](locktype-property-ado.md) プロパティを **adLockBatchOptimistic** に設定し、**CursorLocation** プロパティを **adUseClient** に設定します。
 
 **CursorType** プロパティは、 **Recordset** が閉じているときは読み取り/書き込み可能で、開いているときは読み取り専用になります。
 

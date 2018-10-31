@@ -6,14 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249338(v=office.15)
 ms:contentKeyID: 48545130
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: aa1f9a3c7601601a1ce48ea3912a4f759d436e4f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 6e209c00742772d8d3294be4a74772526c3c29c2
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479562"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861023"
 ---
-# <a name="using-ado-with-microsoft-visual-basic"></a>Microsoft Visual Basic で ADO を使用する
+# <a name="using-ado-with-microsoft-visual-basic"></a>Microsoft Visual Basic での ADO の使用
 
 
 **適用されます**Access 2013 |。Office 2013
@@ -115,5 +115,5 @@ Microsoft Visual Basic で ADO イベントを処理するには、 **WithEvents
 
 ## <a name="visual-basic-examples"></a>Visual Basic の例
 
-ADO のマニュアルには、Visual Basic での例が数多く含まれています。詳細については、「[Microsoft Visual Basic での ADO コードの例](ado-code-examples-in-microsoft-visual-basic.md)」を参照してください。
+ADO のマニュアルには、Visual Basic での例が数多く含まれています。 詳細については、 [Microsoft Visual Basic で ADO コードの例](ado-code-examples-in-microsoft-visual-basic.md)を参照してください。
 

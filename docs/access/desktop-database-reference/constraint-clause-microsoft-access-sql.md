@@ -1,10 +1,10 @@
 ---
-title: CONSTRAINT 句 (Microsoft Access SQL)
-TOCTitle: CONSTRAINT Clause (Microsoft Access SQL)
+title: 制約句 (Microsoft Access SQL)
+TOCTitle: CONSTRAINT clause (Microsoft Access SQL)
 ms:assetid: f8e89a91-a69e-1811-42a7-921692110bcb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836971(v=office.15)
 ms:contentKeyID: 48548797
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
 f1_keywords:
 - jetsql40.chm5277561
@@ -12,14 +12,14 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7b26033c8026591c87e4d0f9e077380862e39f16
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 87870d824f9e26f601529bc60b737f1e46b12960
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476447"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863004"
 ---
-# <a name="constraint-clause-microsoft-access-sql"></a>CONSTRAINT 句 (Microsoft Access SQL)
+# <a name="constraint-clause-microsoft-access-sql"></a>制約句 (Microsoft Access SQL)
 
 **適用されます**Access 2013 |。Office 2013
 
@@ -27,17 +27,16 @@ CONSTRAINT (制約) はインデックスに似ています。インデックス
 
 CONSTRAINT 句は、[ALTER TABLE](alter-table-statement-microsoft-access-sql.md) ステートメントおよび [CREATE TABLE](create-table-statement-microsoft-access-sql.md) ステートメントの中で制約を作成または削除する場合に使用します。CONSTRAINT 句には、単一フィールドの制約を作成するものと、複数フィールドの制約を作成するものの 2 種類があります。
 
-
 > [!NOTE]
-> [!メモ] Microsoft Access データベース エンジンは、Microsoft Access データベース エンジン以外のデータベースでは CONSTRAINT 句や DDL (データ定義言語) ステートメントを使用できません。Microsoft Access データベース以外のデータベースでは代わりに DAO の Create 系メソッドを使用してください。
+> [!メモ] Microsoft Access データベース エンジンは、Microsoft Access データベース エンジン以外のデータベースでは CONSTRAINT 句や DDL (データ定義言語) ステートメントを使用できません。 代わりに DAO の**Create**メソッドを使用します。
 
 ## <a name="syntax"></a>構文
 
-単一フィールド制約の場合:
+**単一フィールド制約**の場合:
 
 制約*名*{主キー。固有 |NOT NULL。参照*外部テーブル* \[(*foreignfield1、foreignfield2*)\] \[ON UPDATE CASCADE |設定 NULL\] \[ON DELETE CASCADE |NULL 設定\]}
 
-複数フィールド制約の場合:
+**複数フィールド制約**の場合:
 
 制約*名*{0} プライマリ ・ キー (*primary1*\[、 *primary2* \[、.\]\]) |一意 (*unique 1*\[、 *unique2* \[、.\]\]) |NOT NULL (*notnull1*\[、 *notnull2* \[、.\]\]) |外部キー\[インデックスのない\](*範囲 1*\[、 *ref2* \[、.\] \]) の参照*外部テーブル* \[(*foreignfield1* \[、 *foreignfield2* \[、.\] \])\] \[ON UPDATE CASCADE |設定 NULL\] \[ON DELETE CASCADE |NULL 設定\]}
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249857(v=office.15)
 ms:contentKeyID: 48547207
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: dbd9536edd15f923af85f2fadad8b696077af4a4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f18af92724ff87263808cba2e8799bca2a558541
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478733"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861444"
 ---
 # <a name="appendix-a-providers"></a>付録 A: プロバイダー
 
@@ -61,7 +61,7 @@ Microsoft から現在入手可能な各データ プロバイダーの詳細に
 </tr>
 <tr class="even">
 <td><p>Microsoft Jet データベース</p></td>
-<td><p><a href="microsoft-ole-db-provider-for-microsoft-jet.md">Microsoft Jet の OLE DB プロバイダー</a></p></td>
+<td><p><a href="microsoft-ole-db-provider-for-microsoft-jet.md">Microsoft OLE DB Provider for Microsoft Jet</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft SQL Server</p></td>

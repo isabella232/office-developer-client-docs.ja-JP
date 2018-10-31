@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195257(v=office.15)
 ms:contentKeyID: 48545392
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 15f868867466bdbce6f15b326a88b7a9f0842015
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 58e36426360abf36d7fdf0cb026f6d8ff14b29b5
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476431"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25864024"
 ---
 # <a name="database-members-dao"></a>Database メンバー (DAO)
 
@@ -109,7 +109,7 @@ Database オブジェクトは、開いているデータベースを表しま�
 <td><p></p>
 
 > [!NOTE]
-> <P>[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</P>
+> [!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。
 
 
 <p>データベースに対応する <strong><a href="connection-object-dao.md">Connection</a></strong> オブジェクトを返します (ODBCDirect ワークスペースのみ)。</p></td>
@@ -167,7 +167,7 @@ Database オブジェクトは、開いているデータベースを表しま�
 <td><p>DAO オブジェクトを変更できるかどうかを示す値を取得します。値の取得のみ可能です。ブール型 ( <strong>Boolean</strong> ) の値を使用します。  </p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="database-version-property-dao.md">Version</a></strong></p></td>
+<td><p><strong><a href="database-version-property-dao.md">バージョン</a></strong></p></td>
 <td><p>Microsoft Access ワークスペースで、データベースを作成した Microsoft Jet または Microsoft Office Access のデータベース エンジンのバージョンを取得します。値の取得のみ可能です。文字列型 ( <strong>String</strong>) の値を使用します。</p></td>
 </tr>
 </tbody>

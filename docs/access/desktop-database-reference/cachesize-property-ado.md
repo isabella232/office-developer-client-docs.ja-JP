@@ -3,7 +3,7 @@
 >>>>>>> マスターの ms:assetid: 42f86cc0-30dc-669b-9e65-5e7ecd52c4d7 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249200(v=office.15) ms:contentKeyID: 48544491 ms.date: 2015/09/18 mtps_version: v=office.15
 ---
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
 # <a name="cachesize-property-ado"></a>CacheSize プロパティ (ADO)
 =======
 # <a name="cachesize-property-ado"></a>CacheSize プロパティ (ADO)
@@ -14,7 +14,7 @@
 
 ローカル メモリにキャッシュされる [Recordset](recordset-object-ado.md) オブジェクトのレコード数を示します。
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
 ## <a name="settings-and-return-values"></a>設定値と戻り値
 =======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
@@ -26,11 +26,8 @@
 
 **CacheSize** プロパティを使用すると、プロバイダーからローカル メモリに一度に取り込むレコード数を制御できます。たとえば、 **CacheSize** が 10 の場合、 **Recordset** オブジェクトが初めて開かれた後に、最初の 10 のレコードがプロバイダーによってローカル メモリに取り込まれます。 **Recordset** オブジェクト内を移動すると、プロバイダーはローカル メモリのバッファーからデータを返します。キャッシュ内の最後のレコードより後ろのレコードに移動すると、プロバイダーはすぐに次の 10 のレコードをデータ ソースからキャッシュに取り込みます。
 
-
 > [!NOTE]
-> <P>[!メモ] <STRONG>CacheSize</STRONG> は、プロバイダー固有のプロパティ <STRONG>Maximum Open Rows</STRONG> ( <STRONG>Recordset</STRONG> オブジェクトの <STRONG>Properties</STRONG> コレクション内) に基づいています。 <STRONG>CacheSize</STRONG> を <STRONG>Maximum Open Rows</STRONG> より大きい値に設定することはできません。プロバイダーが開くことのできる行の数を変更するには、 <STRONG>Maximum Open Rows</STRONG> を設定します。</P>
-
-
+> [!メモ] **CacheSize** は、プロバイダー固有のプロパティ **Maximum Open Rows** ( **Recordset** オブジェクトの **Properties** コレクション内) に基づいています。 **CacheSize** を **Maximum Open Rows** より大きい値に設定することはできません。プロバイダーが開くことのできる行の数を変更するには、 **Maximum Open Rows** を設定します。
 
 **CacheSize** の値は、 **Recordset** オブジェクトの存続期間中に調整できますが、この値を変更しても、それ以降にデータ ソースから取得されてキャッシュに格納されるレコードの数にしか反映されません。このプロパティの値を変更しただけでは、現在のキャッシュ内の内容は変わりません。
 

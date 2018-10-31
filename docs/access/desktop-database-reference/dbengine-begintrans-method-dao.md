@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff837255(v=office.15)
 ms:contentKeyID: 48548925
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 114f5c1cfd08098b8dc0a2731709965e2c3f2ea4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 281b319de123049cfe96d9dc8cf35d6bca9bf37a
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477625"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860603"
 ---
 # <a name="dbenginebegintrans-method-dao"></a>DBEngine.BeginTrans メソッド (DAO)
 
@@ -34,7 +34,7 @@ ms.locfileid: "25477625"
 
 
 > [!NOTE]
-> <P>[!メモ] 1 つの <STRONG>Workspace</STRONG> オブジェクト内では、トランザクションは <STRONG>Workspace</STRONG> に対して常にグローバルに適用され、1 つの <STRONG>Connection</STRONG> オブジェクトや <STRONG>Database</STRONG> オブジェクトに制限されることはありません。 <STRONG>Workspace</STRONG> の 1 つのトランザクション内の複数の接続またはデータベースに対して操作を実行する場合は、そのトランザクションを解決 (つまり、 <STRONG>CommitTrans</STRONG> メソッドまたは <STRONG>Rollback</STRONG> メソッドを使用) することにより、そのワークスペース内のすべての接続およびデータベースに対するすべての操作が影響を受けます。</P>
+> [!メモ] 1 つの **Workspace** オブジェクト内では、トランザクションは **Workspace** に対して常にグローバルに適用され、1 つの **Connection** オブジェクトや **Database** オブジェクトに制限されることはありません。 **Workspace** の 1 つのトランザクション内の複数の接続またはデータベースに対して操作を実行する場合は、そのトランザクションを解決 (つまり、 **CommitTrans** メソッドまたは **Rollback** メソッドを使用) することにより、そのワークスペース内のすべての接続およびデータベースに対するすべての操作が影響を受けます。
 
 
 
@@ -54,12 +54,8 @@ ODBC ワークスペースでは、 **CommitTrans** を使用すると、カー�
 
 
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>多くの場合、ディスクへのアクセスを必要とする操作をトランザクション ブロックに分割することにより、アプリケーションのパフォーマンスを向上できます。この場合、操作がバッファーされるので、ディスクへのアクセス回数が大幅に減ります。</P>
-> <LI>
-> <P>Microsoft Access ワークスペースでは、ワークステーション上の TEMP 環境変数で指定されたディレクトリ内にあるファイルに、トランザクション ログが記録されます。TEMP ドライブ上の使用可能な記憶域がトランザクション ログ ファイルによって使い尽くされた場合、実行時エラーが発生します。この時点で <STRONG>CommitTrans</STRONG> を使用すると、一部の操作はコミットされますが、残りの未完了の操作は失われるため、操作をやり直す必要があります。 <STRONG>Rollback</STRONG> メソッドを使用すると、トランザクション ログが解放され、そのトランザクション内のすべての操作がロールバックされます。</P>
-> <LI>
-> <P>確定していないトランザクション内で複製の <STRONG>Recordset</STRONG> を閉じると、暗黙の <STRONG>Rollback</STRONG> 操作が発生します。</P></LI></UL>
+> - 多くの場合、ディスクへのアクセスを必要とする操作をトランザクション ブロックに分割することにより、アプリケーションのパフォーマンスを向上できます。この場合、操作がバッファーされるので、ディスクへのアクセス回数が大幅に減ります。
+> - Microsoft Access ワークスペースでは、ワークステーション上の TEMP 環境変数で指定されたディレクトリ内にあるファイルに、トランザクション ログが記録されます。TEMP ドライブ上の使用可能な記憶域がトランザクション ログ ファイルによって使い尽くされた場合、実行時エラーが発生します。この時点で **CommitTrans** を使用すると、一部の操作はコミットされますが、残りの未完了の操作は失われるため、操作をやり直す必要があります。 **Rollback** メソッドを使用すると、トランザクション ログが解放され、そのトランザクション内のすべての操作がロールバックされます。
+> - 確定していないトランザクション内で複製の **Recordset** を閉じると、暗黙の **Rollback** 操作が発生します。
 
 

@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1101186
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 11c999fcac3b77ddc4eeb9ef8f4414a5f8aa1559
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: fa52050e91c1a291dd59f9cde1ea36c320406dd6
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477136"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860267"
 ---
 # <a name="databasepopulatepartial-method-dao"></a>Database.PopulatePartial メソッド (DAO)
 
@@ -79,7 +79,7 @@ ms.locfileid: "25477136"
 
 
 > [!NOTE]
-> <P>[!メモ] <STRONG>PopulatePartial</STRONG> は部分レプリカを消去して再設定する前に単方向の同期を行いますが、 <STRONG>PopulatePartial</STRONG> を呼び出す前に <STRONG>Synchronize</STRONG> を呼び出すことをお勧めします。 <STRONG>Synchronize</STRONG> の呼び出しが失敗した場合は、トラップ可能なエラーが発生するためです。このエラーを使用して、(部分レプリカのすべてのレコードを削除する) <STRONG>PopulatePartial</STRONG> メソッドを実行するかどうかを判断できます。 <STRONG>PopulatePartial</STRONG> が単独で呼び出された場合、レコードの同期中にエラーが発生したとしても、部分レプリカ内のレコードが削除されますが、これは目的の結果ではないことがあります。</P>
+> [!メモ] **PopulatePartial** は部分レプリカを消去して再設定する前に単方向の同期を行いますが、 **PopulatePartial** を呼び出す前に **Synchronize** を呼び出すことをお勧めします。 **Synchronize** の呼び出しが失敗した場合は、トラップ可能なエラーが発生するためです。このエラーを使用して、(部分レプリカのすべてのレコードを削除する) **PopulatePartial** メソッドを実行するかどうかを判断できます。 **PopulatePartial** が単独で呼び出された場合、レコードの同期中にエラーが発生したとしても、部分レプリカ内のレコードが削除されますが、これは目的の結果ではないことがあります。
 
 
 

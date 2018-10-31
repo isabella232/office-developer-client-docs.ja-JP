@@ -6,21 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835954(v=office.15)
 ms:contentKeyID: 48548361
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6701171a418b229a5d1a5844809689388837f87b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: b8766c7291c04344a13267e81617750c3cb95add
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479129"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860526"
 ---
 # <a name="connections-members-dao"></a>Connections メンバー (DAO)
 
 
 **適用されます**Access 2013 |。Office 2013
 
-
 > [!NOTE]
-> <P>[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。 Connections コレクションには、 Workspace オブジェクトの現在の Connection オブジェクトが含まれます (ODBCDirect ワークスペースのみ)。</P>
+> [!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。 接続のコレクションには、ワークスペース オブジェクトを (取得します ODBCDirect ワークスペースのみ) の現在の接続オブジェクトが含まれています。
 
 
 

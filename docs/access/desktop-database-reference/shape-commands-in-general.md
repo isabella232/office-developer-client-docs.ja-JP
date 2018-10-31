@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249814(v=office.15)
 ms:contentKeyID: 48547039
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 34e691edd429b5d7f00da0c8eb994ffd999c6305
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 5cf2dc58ee3fa9205b9657366d8706b64b0aa58a
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603953"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861030"
 ---
 # <a name="shape-commands-in-general"></a>一般的な Shape コマンド
 
@@ -73,4 +73,8 @@ shape プロバイダーは、ユーザーが **adUseServer** のカーソル位
 階層 **Recordset** の移動については、「 [階層 Recordset 内の行にアクセスする](accessing-rows-in-a-hierarchical-recordset.md)」を参照してください。
 
 shape コマンドの厳密な構文については、「[正式な Shape 文法](formal-shape-grammar.md)」を参照してください。
+
+## <a name="see-also"></a>関連項目
+
+- [基になるデータ プロバイダーにコマンドを発行する](issuing-commands-to-the-underlying-data-provider.md)
 

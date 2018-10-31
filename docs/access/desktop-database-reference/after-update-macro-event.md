@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm85126
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 2927a3ede26487cabf9986b301cfc0617ba155c6
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 6c4e854e13527f0c20551950aa49dde30cdae9ab
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479552"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862262"
 ---
 # <a name="after-update-macro-event"></a>After Update マクロ イベント
 
@@ -26,7 +26,7 @@ ms.locfileid: "25479552"
 
 
 > [!NOTE]
-> <P><STRONG>更新後処理</STRONG>イベントは、データ マクロでのみ使用します。</P>
+> **更新後処理**イベントは、データ マクロでのみ使用します。
 
 
 

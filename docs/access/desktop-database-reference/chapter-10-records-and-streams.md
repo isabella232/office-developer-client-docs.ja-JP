@@ -1,19 +1,19 @@
 ---
-title: '10 章: レコードとストリーム'
+title: '第 10 章: レコードとストリーム'
 TOCTitle: 'Chapter 10: Records and Streams'
 ms:assetid: 74862096-2273-3b61-f89c-06554ccf42cd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249477(v=office.15)
 ms:contentKeyID: 48545663
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4cdc7bbbaad7242ddbe2c4992395e6c4e0477504
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 92d0eafcb1930e7aa7014e3b120b34e2a8d64231
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477829"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25864088"
 ---
-# <a name="chapter-10-records-and-streams"></a>10 章: レコードとストリーム
+# <a name="chapter-10-records-and-streams"></a>第 10 章: レコードとストリーム
 
 
 **適用されます**Access 2013 |。Office 2013
@@ -52,3 +52,12 @@ ADO には現在、リレーショナル データベースなどのデータ �
 
   - **Recordset** 内の BLOB フィールド。
 
+この章では、次のトピックについて説明します。
+
+- [ストリームと永続性](streams-and-persistence.md)
+
+- [レコードおよびプロバイダー提供のフィールド](records-and-provider-supplied-fields.md)
+
+- [絶対 URL と相対 URL](absolute-and-relative-urls.md)
+
+- [インターネット発行に ADO を使用する (ADO)](using-ado-for-internet-publishing.md)

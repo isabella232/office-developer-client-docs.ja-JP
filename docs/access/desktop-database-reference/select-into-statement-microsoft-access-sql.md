@@ -1,20 +1,19 @@
 ---
-title: SELECT.INTO ステートメント (Microsoft Access SQL)
-TOCTitle: SELECT.INTO Statement (Microsoft Access SQL)
+title: 選択します。INTO ステートメント (Microsoft Access SQL)
+TOCTitle: SELECT.INTO statement (Microsoft Access SQL)
 ms:assetid: 29f3bd55-52f5-a36e-4e33-4b3499c6ce8d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192059(v=office.15)
 ms:contentKeyID: 48543897
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 4122421642b9746b5832984bf784faf65c603fda
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1c05679994cfd98fdc5d6ffb389df00c2f5c9b94
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476777"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861996"
 ---
-# <a name="selectinto-statement-microsoft-access-sql"></a>SELECT.INTO ステートメント (Microsoft Access SQL)
-
+# <a name="selectinto-statement-microsoft-access-sql"></a>選択します。INTO ステートメント (Microsoft Access SQL)
 
 **適用されます**Access 2013 |。Office 2013
 
@@ -48,7 +47,7 @@ SELECT...INTO ステートメントには、次の指定項目があります。
 </tr>
 <tr class="odd">
 <td><p><em>externaldatabase</em></p></td>
-<td><p>外部データベースのパス。パスの記述方法については、「<a href="https://msdn.microsoft.com/library/ff194542(v=office.15)">IN 句</a>」を参照してください。  </p></td>
+<td><p>外部データベースのパス。パスの記述方法については、「<a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/in-clause-microsoft-access-sql">IN 句</a>」を参照してください。  </p></td>
 </tr>
 <tr class="even">
 <td><p><em>source</em></p></td>
@@ -62,15 +61,10 @@ SELECT...INTO ステートメントには、次の指定項目があります。
 
 テーブル作成クエリは、レコードのアーカイブやテーブルのバックアップ コピーの作成に使用できます。また、別のデータベースへエクスポートするコピーを作成する場合や、一定期間のデータを表示するレポートを作成する場合などにも使用できます。たとえば、地域別月間売上レポートを作成する場合は、毎月同じテーブル作成クエリを実行します。
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>新規テーブルに主キーを設定する場合があります。テーブル作成クエリで作成したテーブルのフィールドは、クエリの元になるテーブルのフィールドのデータ型とフィールド サイズを継承しますが、それ以外のフィールド プロパティやテーブル プロパティは継承しません。</P>
-> <LI>
-> <P>既存のテーブルにデータを追加するには、SELECT...INTO ステートメントではなく <A href="insert-into-statement-microsoft-access-sql.md">INSERT INTO</A> ステートメントを使用して追加クエリを作成してください。</P>
-> <LI>
-> <P>どのレコードが選択されるかをあらかじめ確認する場合は、テーブル作成クエリを実行する前に、同じ選択条件を使用する <A href="select-statement-microsoft-access-sql.md">SELECT</A> ステートメントを実行してその結果を調べてください。</P></LI></UL>
+> - 新規テーブルに主キーを設定する場合があります。テーブル作成クエリで作成したテーブルのフィールドは、クエリの元になるテーブルのフィールドのデータ型とフィールド サイズを継承しますが、それ以外のフィールド プロパティやテーブル プロパティは継承しません。
+> - 既存のテーブルにデータを追加するには、SELECT...INTO ステートメントではなく [INSERT INTO](insert-into-statement-microsoft-access-sql.md) ステートメントを使用して追加クエリを作成してください。
+> - どのレコードが選択されるかをあらかじめ確認する場合は、テーブル作成クエリを実行する前に、同じ選択条件を使用する [SELECT](select-statement-microsoft-access-sql.md) ステートメントを実行してその結果を調べてください。
 
 
 

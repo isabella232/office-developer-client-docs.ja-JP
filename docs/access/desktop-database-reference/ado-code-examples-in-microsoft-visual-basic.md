@@ -1,17 +1,17 @@
 ---
 title: Microsoft Visual Basic での ADO コードの例
-TOCTitle: ADO Code Examples in Microsoft Visual Basic
+TOCTitle: ADO code examples in Microsoft Visual Basic
 ms:assetid: 5eb855d4-e5e1-2626-3a21-891d195fb193
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249342(v=office.15)
 ms:contentKeyID: 48545145
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 17414560b3aafb51285de0fa6f2beb6d2f0b7b85
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: a1ceec153a1717485bac87cbf5fdb764f546cab7
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25604611"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862115"
 ---
 # <a name="ado-code-examples-in-microsoft-visual-basic"></a>Microsoft Visual Basic での ADO コードの例
 
@@ -20,9 +20,8 @@ ms.locfileid: "25604611"
 
 Visual Basic で記述するときの ADO のメソッド、プロパティ、およびイベントの使用方法については、次のコード例を参照してください。
 
-
 > [!NOTE]
-> <P>[!メモ] Sub から End Sub までのコード例全体をコピーして、コード エディターに貼り付けてください。このコード例は、一部分だけを使用したり、段落の書式設定情報が失われると、正常に動作しない場合があります。</P>
+> [!メモ] コード例全体を最初から最後までコピーして、コード エディターに貼り付けてください。このコード例は、一部分だけを使用したり、段落の書式設定情報が失われると、正常に動作しない場合があります。
 
 
 
@@ -60,7 +59,7 @@ Visual Basic で記述するときの ADO のメソッド、プロパティ、�
 
   - [GetString メソッドの使用例 (VJ++)](getstring-method-example-vb.md)
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
   - [SkipLine メソッド、EOS、および LineSeparator プロパティの使用例](eos-and-lineseparator-properties-and-skipline-method-example-vb.md)
 =======
   - [SkipLine メソッド、EOS、および LineSeparator プロパティの使用例](eos-and-lineseparator-properties-and-skipline-method-example-vb.md)
@@ -84,7 +83,7 @@ Visual Basic で記述するときの ADO のメソッド、プロパティ、�
 
   - [Save メソッドおよび Open メソッドの使用例 (VJ++)](save-and-open-methods-example-vb.md)
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
   - [メソッドとプロパティの使用例のインデックスをシークします。](seek-method-and-index-property-example-vb.md)
 =======
   - [メソッド、インデックスのシーク プロパティの使用例](seek-method-and-index-property-example-vb.md)
@@ -98,7 +97,7 @@ Visual Basic で記述するときの ADO のメソッド、プロパティ、�
 
 **プロパティ**
 
-<<<<<<< ヘッド
+<<<<<<< 見出し
   - [AbsolutePage プロパティ、PageCount プロパティ、および PageSize プロパティの使用例 (VJ++)](absolutepage-pagecount-and-pagesize-properties-example-vb.md)
 
   - [AbsolutePosition プロパティと CursorLocation プロパティの使用例 (VJ++)](absoluteposition-and-cursorlocation-properties-example-vb.md)

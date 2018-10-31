@@ -1,19 +1,19 @@
 ---
-title: '付録 C: ADO を使ったプログラミング'
+title: '付録 C: ADO を使用したプログラミング'
 TOCTitle: 'Appendix C: Programming with ADO'
 ms:assetid: ace228ce-a372-5f22-c854-03ba7330ba7a
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249808(v=office.15)
 ms:contentKeyID: 48547024
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6d8adb2bc9d1be561bb94b7bcce23d7ccf515d8b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0932ca9d05ab8adac59efb2bb4bfec65796e7340
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476917"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862542"
 ---
-# <a name="appendix-c-programming-with-ado"></a>付録 C: ADO を使ったプログラミング
+# <a name="appendix-c-programming-with-ado"></a>付録 C: ADO を使用したプログラミング
 
 
 **適用されます**Access 2013 |。Office 2013
@@ -24,11 +24,14 @@ ADO のライブラリのファイル名は msado15.dll で、プログラム ID
 
 各種開発環境における ADO によるプログラミングの詳細については、次のトピックを参照してください。
 
-  - [Microsoft Visual Basic で ADO を使用する](using-ado-with-microsoft-visual-basic.md)
+- [Microsoft Visual Basic で ADO を使用する](using-ado-with-microsoft-visual-basic.md)
 
-  - [スクリプト言語で ADO を使用する](using-ado-with-scripting-languages.md)
+- [スクリプト言語で ADO を使用する](using-ado-with-scripting-languages.md)
 
-  - [Microsoft Visual C++ で ADO を使用する](using-ado-with-microsoft-visual-c.md)
+- [Microsoft Visual C++ で ADO を使用する](using-ado-with-microsoft-visual-c.md)
 
-  - [Microsoft Visual J++ で ADO を使用する](using-ado-with-microsoft-visual-j.md)
+- [Microsoft Visual J++ で ADO を使用する](using-ado-with-microsoft-visual-j.md)
+
+
+
 

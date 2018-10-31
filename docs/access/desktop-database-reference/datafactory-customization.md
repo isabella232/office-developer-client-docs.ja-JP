@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249205(v=office.15)
 ms:contentKeyID: 48544511
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b805f9d6ff7a1f3b27bb5600d42cabf8fce651cd
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 3f058dd76d9ae4f95b6a3d051e741039eb7609f5
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478893"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860869"
 ---
 # <a name="datafactory-customization"></a>DataFactory のカスタマイズ
 
@@ -40,7 +40,6 @@ ADO では、 **DataFactory**の作業別の種類のサーバー プログラ�
 
   - [カスタマイズ ファイルの Logs セクション](customization-file-logs-section.md)
 
-  - [クライアントで必要な設定](https://msdn.microsoft.com/library/ff836356\(v=office.15\))
+  - [クライアントで必要な設定](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/required-client-settings)
 
-  - [カスタマイズした独自のハンドラーを記述する](https://msdn.microsoft.com/library/jj249402\(v=office.15\))
-
+  - [カスタマイズした独自のハンドラーを記述する](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/writing-your-own-customized-handler)

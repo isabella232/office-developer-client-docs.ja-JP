@@ -1,19 +1,19 @@
 ---
-title: '15 章:  ADOX に関する基本事項'
+title: '第 15 章: ADOX の基本事項'
 TOCTitle: 'Chapter 15: ADOX Fundamentals'
 ms:assetid: 973d7579-4f34-3b31-a761-a951ab29e850
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249673(v=office.15)
 ms:contentKeyID: 48546464
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3869f23b93df78fd207812a85f91dd3272bd255f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 362fd0784ee596852af7b16fae5636330a52ed59
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479267"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863746"
 ---
-# <a name="chapter-15-adox-fundamentals"></a>15 章: ADOX に関する基本事項
+# <a name="chapter-15-adox-fundamentals"></a>第 15 章: ADOX の基本事項
 
 
 **適用されます**Access 2013 |。Office 2013
@@ -26,15 +26,21 @@ ADOX は、コア ADO オブジェクトに付随するライブラリです。�
 
 Microsoft OLE DB Provider for the Microsoft Jet Database Engine は、ADOX を完全にサポートしています。データ プロバイダーによっては、ADOX の特定の機能がサポートされていない場合があります。Microsoft OLE DB Provider for ODBC、Microsoft OLE DB Provider for Oracle、または Microsoft SQL Server OLE DB Provider でサポートされている機能に関する詳細については、MDAC の Readme ファイルを参照してください。
 
-このドキュメントは、Microsoft® Visual Basic® のプログラミング言語を使用できる知識および ADO に関する一般的な知識を持っていることを前提としています。ADO の詳細については、「[ADO プログラマ ガイド](ado-programmer-s-guide.md)」を参照してください。ADOX に関する概要については、次のトピックを参照してください。
+このドキュメントは、Microsoft® Visual Basic® のプログラミング言語を使用できる知識および ADO に関する一般的な知識を持っていることを前提としています。 ADO の詳細については、「[ADO プログラマ ガイド](ado-programmer-s-guide.md)」を参照してください。
 
-  - [ADOX オブジェクト](adox-objects.md)
+この章では、次のトピックについて説明します。
 
-  - [ADOX コレクション](adox-collections.md)
+- [ADOX のプロバイダー サポート](provider-support-for-adox.md)
 
-  - [ADOX のプロパティ](adox-properties.md)
+ADOX に関する概要については、次のトピックを参照してください。
 
-  - [ADOX メソッド](adox-methods.md)
+- [ADOX オブジェクト](adox-objects.md)
 
-  - [ADOX コードの例](adox-code-examples.md)
+- [ADOX コレクション](adox-collections.md)
+
+- [ADOX のプロパティ](adox-properties.md)
+
+- [ADOX メソッド](adox-methods.md)
+
+- [ADOX コードの例](adox-code-examples.md)
 

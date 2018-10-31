@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm12836
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d48869d42d44a6440a1cc971ec9497320758ef16
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 60c0204bd374feaa950d3158873f68127debaf0f
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477886"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862549"
 ---
 # <a name="copyobject-macro-action"></a>CopyObject マクロ アクション
 
@@ -26,7 +26,7 @@ ms.locfileid: "25477886"
 
 
 > [!NOTE]
-> <P>[!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。</P>
+> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。
 
 
 
@@ -51,7 +51,7 @@ ms.locfileid: "25477886"
 <td><p>コピー先データベースのパスとファイル名を指定します。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>コピー先データベース</strong>] ボックスに、パスとファイル名を入力します。この引数を指定しない場合は、カレント データベースにコピーされます。  </p>
 
 > [!NOTE]
-> <P>この引数は、Access データベース環境でのみ使用できます。Access プロジェクト (.adp) 環境でこのアクションを使用する場合は、"Destination Database/コピー先データベース" 引数を指定しないでください。</P>
+> この引数は、Access データベース環境でのみ使用できます。Access プロジェクト (.adp) 環境でこのアクションを使用する場合は、"Destination Database/コピー先データベース" 引数を指定しないでください。
 
 
 <p>
@@ -92,7 +92,7 @@ ms.locfileid: "25477886"
 
 
 > [!NOTE]
-> <P>[!メモ] <STRONG>CopyObject</STRONG> アクションでデータ アクセス ページをコピーすると、関連付けられた .htm ファイルへのリンクのみがコピーされ、ファイル自体はコピーされません。</P>
+> [!メモ] **CopyObject** アクションでデータ アクセス ページをコピーすると、関連付けられた .htm ファイルへのリンクのみがコピーされ、ファイル自体はコピーされません。
 
 
 

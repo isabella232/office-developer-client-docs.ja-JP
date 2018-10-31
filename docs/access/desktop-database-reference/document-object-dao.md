@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822082(v=office.15)
 ms:contentKeyID: 48547247
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 60fe0519bc722e688630f13acdd6701b96beff05
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 35d9d80ba9299049eb55ee4ae83ac00d57c22293
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477339"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861958"
 ---
 # <a name="document-object-dao"></a>Document オブジェクト (DAO)
 
@@ -56,10 +56,8 @@ ms.locfileid: "25477339"
 </tbody>
 </table>
 
-
-
 > [!NOTE]
-> <P>[!メモ] 上記の表の <STRONG>Container</STRONG> オブジェクトと、同じ名前のコレクションを混同しないでください。Databases の <STRONG>Container</STRONG> オブジェクトは、保存されたすべてのデータベース オブジェクトを参照しますが、 <STRONG>Databases</STRONG> コレクションは、特定のワークスペースで開いているデータベース オブジェクトのみを参照します。</P>
+> [!メモ] 上記の表の **Container** オブジェクトと、同じ名前のコレクションを混同しないでください。Databases の **Container** オブジェクトは、保存されたすべてのデータベース オブジェクトを参照しますが、 **Databases** コレクションは、特定のワークスペースで開いているデータベース オブジェクトのみを参照します。
 
 
 

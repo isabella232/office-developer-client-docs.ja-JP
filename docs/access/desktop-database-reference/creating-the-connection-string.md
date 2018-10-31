@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248853(v=office.15)
 ms:contentKeyID: 48543214
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8420beb2c6136123c334a55b68bd6601f214faa5
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 6d4c869d6021c807e27fb7970ef6ea91f91bd4de
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479453"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860456"
 ---
 # <a name="creating-the-connection-string"></a>接続文字列を作成する
 
@@ -58,9 +58,7 @@ ADO では、接続文字列内の 5 つの引数が直接サポートされて�
 
 
 > [!NOTE]
-> <P>次の例、および「ADO プログラマ ガイド」全体をとおして、サーバーに対する認証には "MyId" というユーザー ID (パスワードは "123aBc") を使用します。これらの値を、使用するサーバーの有効なログイン時の資格情報に置き換える必要があります。また、"MySqlServer" は、使用するサーバーの名前に置き換えます。</P>
-
-
+> 次の例、および「ADO プログラマ ガイド」全体をとおして、サーバーに対する認証には "MyId" というユーザー ID (パスワードは "123aBc") を使用します。これらの値を、使用するサーバーの有効なログイン時の資格情報に置き換える必要があります。また、"MySqlServer" は、使用するサーバーの名前に置き換えます。
 
 1 章の HelloData アプリケーションでは、次の接続文字列が使用されていました。
 
