@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248846(v=office.15)
 ms:contentKeyID: 48543177
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7aa5a47d04f0e20a21e42b8ac9b1a75dda996be5
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 97ddfc1561eaf3e131aa6b12d04fd37c96b54e3d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862684"
+ms.locfileid: "25879453"
 ---
-# <a name="append-and-createparameter-methods-example-vb"></a><span data-ttu-id="2347b-102">Append メソッドと CreateParameter メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="2347b-102">Append and CreateParameter methods example (VB)</span></span>
+# <a name="append-and-createparameter-methods-example-vb"></a><span data-ttu-id="8984b-102">Append メソッドと CreateParameter メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="8984b-102">Append and CreateParameter methods example (VB)</span></span>
 
 
-<span data-ttu-id="2347b-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="2347b-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="8984b-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="8984b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="2347b-104">この例では、[Append](append-method-ado.md) メソッドと [CreateParameter](createparameter-method-ado.md) メソッドを使用して、入力パラメーターのあるストアド プロシージャを実行します。</span><span class="sxs-lookup"><span data-stu-id="2347b-104">This example uses the [Append](append-method-ado.md) and [CreateParameter](createparameter-method-ado.md) methods to execute a stored procedure with an input parameter.</span></span>
+<span data-ttu-id="8984b-104">この例では、[Append](append-method-ado.md) メソッドと [CreateParameter](createparameter-method-ado.md) メソッドを使用して、入力パラメーターのあるストアド プロシージャを実行します。</span><span class="sxs-lookup"><span data-stu-id="8984b-104">This example uses the [Append](append-method-ado.md) and [CreateParameter](createparameter-method-ado.md) methods to execute a stored procedure with an input parameter.</span></span>
 
 ```vb 
  

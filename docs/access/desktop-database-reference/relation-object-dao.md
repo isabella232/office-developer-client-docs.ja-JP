@@ -6,57 +6,57 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193195(v=office.15)
 ms:contentKeyID: 48544578
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: aa5c29785d38367761dd7c564a7ea0c32dbcc312
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: b254d3d08e6ba8997474535dd90de44aaf6101e5
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476687"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869275"
 ---
-# <a name="relation-object-dao"></a><span data-ttu-id="988b0-102">Relation オブジェクト (DAO)</span><span class="sxs-lookup"><span data-stu-id="988b0-102">Relation Object (DAO)</span></span>
+# <a name="relation-object-dao"></a><span data-ttu-id="7a0d7-102">Relation オブジェクト (DAO)</span><span class="sxs-lookup"><span data-stu-id="7a0d7-102">Relation Object (DAO)</span></span>
 
 
-<span data-ttu-id="988b0-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="988b0-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="7a0d7-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="7a0d7-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="988b0-104">**Relation** オブジェクトは、テーブルまたはクエリのフィールド間のリレーションシップを表します (Microsoft Access データベース エンジン データベースのみ)。</span><span class="sxs-lookup"><span data-stu-id="988b0-104">A **Relation** object represents a relationship between fields in tables or queries (Microsoft Access database engine databases only).</span></span>
+<span data-ttu-id="7a0d7-104">**Relation** オブジェクトは、テーブルまたはクエリのフィールド間のリレーションシップを表します (Microsoft Access データベース エンジン データベースのみ)。</span><span class="sxs-lookup"><span data-stu-id="7a0d7-104">A **Relation** object represents a relationship between fields in tables or queries (Microsoft Access database engine databases only).</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="988b0-105">注釈</span><span class="sxs-lookup"><span data-stu-id="988b0-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7a0d7-105">注釈</span><span class="sxs-lookup"><span data-stu-id="7a0d7-105">Remarks</span></span>
 
-<span data-ttu-id="988b0-106">**Relation** オブジェクトを使用して、新しいリレーションシップを作成し、データベースの既存のリレーションシップを調べることができます。</span><span class="sxs-lookup"><span data-stu-id="988b0-106">You can use the **Relation** object to create new relationships and examine existing relationships in your database.</span></span>
+<span data-ttu-id="7a0d7-106">**Relation** オブジェクトを使用して、新しいリレーションシップを作成し、データベースの既存のリレーションシップを調べることができます。</span><span class="sxs-lookup"><span data-stu-id="7a0d7-106">You can use the **Relation** object to create new relationships and examine existing relationships in your database.</span></span>
 
-<span data-ttu-id="988b0-107">**Relation** オブジェクトとそのプロパティを使用して、以下の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="988b0-107">Using a **Relation** object and its properties, you can:</span></span>
+<span data-ttu-id="7a0d7-107">**Relation** オブジェクトとそのプロパティを使用して、以下の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="7a0d7-107">Using a **Relation** object and its properties, you can:</span></span>
 
-  - <span data-ttu-id="988b0-108">ベース テーブルのフィールド間に、参照性合成が適用されたリレーションシップを指定します (クエリまたはリンク テーブル関連のリレーションシップは除く)。</span><span class="sxs-lookup"><span data-stu-id="988b0-108">Specify an enforced relationship between fields in base tables (but not a relationship that involves a query or a linked table).</span></span>
+  - <span data-ttu-id="7a0d7-108">ベース テーブルのフィールド間に、参照性合成が適用されたリレーションシップを指定します (クエリまたはリンク テーブル関連のリレーションシップは除く)。</span><span class="sxs-lookup"><span data-stu-id="7a0d7-108">Specify an enforced relationship between fields in base tables (but not a relationship that involves a query or a linked table).</span></span>
 
-  - <span data-ttu-id="988b0-109">あらゆる種類のテーブルまたはクエリ (ネイティブまたはリンク) 間に参照整合性が適用されていないリレーションシップを設定します。</span><span class="sxs-lookup"><span data-stu-id="988b0-109">Establish unenforced relationships between any type of table or query— native or linked.</span></span>
+  - <span data-ttu-id="7a0d7-109">あらゆる種類のテーブルまたはクエリ (ネイティブまたはリンク) 間に参照整合性が適用されていないリレーションシップを設定します。</span><span class="sxs-lookup"><span data-stu-id="7a0d7-109">Establish unenforced relationships between any type of table or query— native or linked.</span></span>
 
-  - <span data-ttu-id="988b0-110">**Name** プロパティを使用して、参照先の主テーブルと参照元の外部キー側のテーブルのフィールド間のリレーションシップを参照します。</span><span class="sxs-lookup"><span data-stu-id="988b0-110">Use the **Name** property to refer to the relationship between the fields in the referenced primary table and the referencing foreign table.</span></span>
+  - <span data-ttu-id="7a0d7-110">**Name** プロパティを使用して、参照先の主テーブルと参照元の外部キー側のテーブルのフィールド間のリレーションシップを参照します。</span><span class="sxs-lookup"><span data-stu-id="7a0d7-110">Use the **Name** property to refer to the relationship between the fields in the referenced primary table and the referencing foreign table.</span></span>
 
-  - <span data-ttu-id="988b0-111">**Attributes** プロパティを使用して、テーブルのフィールド間のリレーションシップが一対一か一対多のいずれかを指定し、参照整合性を適用する方法を指定します。</span><span class="sxs-lookup"><span data-stu-id="988b0-111">Use the **Attributes** property to determine whether the relationship between fields in the table is one-to-one or one-to-many and how to enforce referential integrity.</span></span>
+  - <span data-ttu-id="7a0d7-111">**Attributes** プロパティを使用して、テーブルのフィールド間のリレーションシップが一対一か一対多のいずれかを指定し、参照整合性を適用する方法を指定します。</span><span class="sxs-lookup"><span data-stu-id="7a0d7-111">Use the **Attributes** property to determine whether the relationship between fields in the table is one-to-one or one-to-many and how to enforce referential integrity.</span></span>
 
-  - <span data-ttu-id="988b0-112">**Attributes** プロパティを使用して、Microsoft Access データベース エンジンが主テーブルと外部キー側のテーブルで連鎖更新操作および連鎖削除操作を実行できるかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="988b0-112">Use the **Attributes** property to determine whether the Microsoft Access database engine can perform cascading update and cascading delete operations on primary and foreign tables.</span></span>
+  - <span data-ttu-id="7a0d7-112">**Attributes** プロパティを使用して、Microsoft Access データベース エンジンが主テーブルと外部キー側のテーブルで連鎖更新操作および連鎖削除操作を実行できるかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="7a0d7-112">Use the **Attributes** property to determine whether the Microsoft Access database engine can perform cascading update and cascading delete operations on primary and foreign tables.</span></span>
 
-  - <span data-ttu-id="988b0-113">**Attributes** プロパティを使用して、テーブルのフィールド間のリレーションシップが左外部結合か、右外部結合かを指定します。</span><span class="sxs-lookup"><span data-stu-id="988b0-113">Use the **Attributes** property to determine whether the relationship between fields in the table is left join or right join.</span></span>
+  - <span data-ttu-id="7a0d7-113">**Attributes** プロパティを使用して、テーブルのフィールド間のリレーションシップが左外部結合か、右外部結合かを指定します。</span><span class="sxs-lookup"><span data-stu-id="7a0d7-113">Use the **Attributes** property to determine whether the relationship between fields in the table is left join or right join.</span></span>
 
-  - <span data-ttu-id="988b0-114">**Relation** オブジェクトの **Fields** コレクションにあるすべての **Field** オブジェクトの **Name** プロパティを使用して、参照先テーブルの主キーのフィールド名を設定または取得するか、 **Field** オブジェクトの **ForeignName** プロパティの設定値を使用して、参照元テーブルの外部キーのフィールド名を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="988b0-114">Use the **Name** property of all **Field** objects in the **Fields** collection of a **Relation** object to set or return the names of the fields in the primary key of the referenced table, or the **ForeignName** property settings of the **Field** objects to set or return the names of the fields in the foreign key of the referencing table.</span></span>
+  - <span data-ttu-id="7a0d7-114">**Relation** オブジェクトの **Fields** コレクションにあるすべての **Field** オブジェクトの **Name** プロパティを使用して、参照先テーブルの主キーのフィールド名を設定または取得するか、 **Field** オブジェクトの **ForeignName** プロパティの設定値を使用して、参照元テーブルの外部キーのフィールド名を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="7a0d7-114">Use the **Name** property of all **Field** objects in the **Fields** collection of a **Relation** object to set or return the names of the fields in the primary key of the referenced table, or the **ForeignName** property settings of the **Field** objects to set or return the names of the fields in the foreign key of the referencing table.</span></span>
 
-<span data-ttu-id="988b0-p101">データベースに設定されたリレーションシップに違反する変更を行うと、トラップ可能なエラーが発生します。連鎖更新または連鎖削除操作を要求すると、Microsoft Access データベース エンジンでは、設定したリレーションシップを適用するために、主キー テーブルまたは外部キー テーブルも変更されます。</span><span class="sxs-lookup"><span data-stu-id="988b0-p101">If you make changes that violate the relationships established for the database, a trappable error occurs. If you request cascading update or cascading delete operations, the Microsoft Access database engine also modifies the primary key or foreign key tables to enforce the relationships you establish.</span></span>
+<span data-ttu-id="7a0d7-p101">データベースに設定されたリレーションシップに違反する変更を行うと、トラップ可能なエラーが発生します。連鎖更新または連鎖削除操作を要求すると、Microsoft Access データベース エンジンでは、設定したリレーションシップを適用するために、主キー テーブルまたは外部キー テーブルも変更されます。</span><span class="sxs-lookup"><span data-stu-id="7a0d7-p101">If you make changes that violate the relationships established for the database, a trappable error occurs. If you request cascading update or cascading delete operations, the Microsoft Access database engine also modifies the primary key or foreign key tables to enforce the relationships you establish.</span></span>
 
-<span data-ttu-id="988b0-p102">たとえば、Northwind データベースに、[受注] テーブルと [顧客] テーブルの間のリレーションシップがあるとします。[顧客] テーブルの CustomerID フィールドが主キーで、[受注] テーブルの CustomerID フィールドが外部キーです。Microsoft Access データベース エンジンが [受注] テーブルの新しいレコードを受け取るには、[顧客] テーブルに [受注] テーブルの CustomerID フィールドと一致するフィールドがあるかどうかを検索します。一致するフィールドが見つからなかった場合、Microsoft Access データベース エンジンは新しいレコードを受け取らず、トラップ可能なエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="988b0-p102">For example, the Northwind database contains a relationship between an Orders table and a Customers table. The CustomerID field of the Customers table is the primary key, and the CustomerID field of the Orders table is the foreign key. For the Microsoft Access database engine to accept a new record in the Orders table, it searches the Customers table for a match on the CustomerID field of the Orders table. If the Microsoft Access database engine doesn't find a match, it doesn't accept the new record, and a trappable error occurs.</span></span>
+<span data-ttu-id="7a0d7-p102">たとえば、Northwind データベースに、[受注] テーブルと [顧客] テーブルの間のリレーションシップがあるとします。[顧客] テーブルの CustomerID フィールドが主キーで、[受注] テーブルの CustomerID フィールドが外部キーです。Microsoft Access データベース エンジンが [受注] テーブルの新しいレコードを受け取るには、[顧客] テーブルに [受注] テーブルの CustomerID フィールドと一致するフィールドがあるかどうかを検索します。一致するフィールドが見つからなかった場合、Microsoft Access データベース エンジンは新しいレコードを受け取らず、トラップ可能なエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="7a0d7-p102">For example, the Northwind database contains a relationship between an Orders table and a Customers table. The CustomerID field of the Customers table is the primary key, and the CustomerID field of the Orders table is the foreign key. For the Microsoft Access database engine to accept a new record in the Orders table, it searches the Customers table for a match on the CustomerID field of the Orders table. If the Microsoft Access database engine doesn't find a match, it doesn't accept the new record, and a trappable error occurs.</span></span>
 
-<span data-ttu-id="988b0-p103">参照整合性を適用する場合、参照先テーブルのキー フィールドに一意のインデックスが既に存在している必要があります。Microsoft Access データベース エンジンでは、 **Foreign** プロパティが参照元テーブルの外部キーとして機能するように設定されたインデックスが自動的に作成されます。</span><span class="sxs-lookup"><span data-stu-id="988b0-p103">When you enforce referential integrity, a unique index must already exist for the key field of the referenced table. The Microsoft Access database engine automatically creates an index with the **Foreign** property set to act as the foreign key in the referencing table.</span></span>
+<span data-ttu-id="7a0d7-p103">参照整合性を適用する場合、参照先テーブルのキー フィールドに一意のインデックスが既に存在している必要があります。Microsoft Access データベース エンジンでは、 **Foreign** プロパティが参照元テーブルの外部キーとして機能するように設定されたインデックスが自動的に作成されます。</span><span class="sxs-lookup"><span data-stu-id="7a0d7-p103">When you enforce referential integrity, a unique index must already exist for the key field of the referenced table. The Microsoft Access database engine automatically creates an index with the **Foreign** property set to act as the foreign key in the referencing table.</span></span>
 
-<span data-ttu-id="988b0-p104">新しい **Relation** オブジェクトを作成するには、 **CreateRelation** メソッドを使用します。コレクション内の **Relation** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="988b0-p104">To create a new **Relation** object, use the **CreateRelation** method. To refer to a **Relation** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
+<span data-ttu-id="7a0d7-p104">新しい **Relation** オブジェクトを作成するには、 **CreateRelation** メソッドを使用します。コレクション内の **Relation** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="7a0d7-p104">To create a new **Relation** object, use the **CreateRelation** method. To refer to a **Relation** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
 
-<span data-ttu-id="988b0-125">**Relations**(0)</span><span class="sxs-lookup"><span data-stu-id="988b0-125">**Relations**(0)</span></span>
+<span data-ttu-id="7a0d7-125">**Relations**(0)</span><span class="sxs-lookup"><span data-stu-id="7a0d7-125">**Relations**(0)</span></span>
 
-<span data-ttu-id="988b0-126">**関係**("name")</span><span class="sxs-lookup"><span data-stu-id="988b0-126">**Relations**("name")</span></span>
+<span data-ttu-id="7a0d7-126">**関係**("name")</span><span class="sxs-lookup"><span data-stu-id="7a0d7-126">**Relations**("name")</span></span>
 
-<span data-ttu-id="988b0-127">**関係**\!\[名\]</span><span class="sxs-lookup"><span data-stu-id="988b0-127">**Relations**\!\[name\]</span></span>
+<span data-ttu-id="7a0d7-127">**関係**\!\[名\]</span><span class="sxs-lookup"><span data-stu-id="7a0d7-127">**Relations**\!\[name\]</span></span>
 
-## <a name="example"></a><span data-ttu-id="988b0-128">例</span><span class="sxs-lookup"><span data-stu-id="988b0-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7a0d7-128">例</span><span class="sxs-lookup"><span data-stu-id="7a0d7-128">Example</span></span>
 
-<span data-ttu-id="988b0-p105">この例では、既存の **Relation** オブジェクトがデータ入力を制御する方法を示します。このプロシージャは、故意に正しくない CategoryID を使用してレコードを追加します。これによって、エラー処理ルーチンが起動します。</span><span class="sxs-lookup"><span data-stu-id="988b0-p105">This example shows how an existing **Relation** object can control data entry. The procedure attempts to add a record with a deliberately incorrect CategoryID; this triggers the error-handling routine.</span></span>
+<span data-ttu-id="7a0d7-p105">この例では、既存の **Relation** オブジェクトがデータ入力を制御する方法を示します。このプロシージャは、故意に正しくない CategoryID を使用してレコードを追加します。これによって、エラー処理ルーチンが起動します。</span><span class="sxs-lookup"><span data-stu-id="7a0d7-p105">This example shows how an existing **Relation** object can control data entry. The procedure attempts to add a record with a deliberately incorrect CategoryID; this triggers the error-handling routine.</span></span>
 
 ```vb 
     Sub RelationX() 
@@ -117,7 +117,7 @@ ms.locfileid: "25476687"
 
 <br/>
 
-<span data-ttu-id="988b0-p106">この例では、 **CreateRelation** メソッドを使用して、Employees **TableDef** と新規作成された Departments という **TableDef** の間に **Relation** を作成します。この例では、 **Relation** を新規作成することによって、外部テーブルに必要な **Indexes** が作成されることも示します (Employees テーブルの DepartmentsEmployees Index)。</span><span class="sxs-lookup"><span data-stu-id="988b0-p106">This example uses the **CreateRelation** method to create a **Relation** between the Employees **TableDef** and a new **TableDef** called Departments. This example also demonstrates how creating a new **Relation** will also create any necessary **Indexes** in the foreign table (the DepartmentsEmployees Index in the Employees table).</span></span>
+<span data-ttu-id="7a0d7-p106">この例では、 **CreateRelation** メソッドを使用して、Employees **TableDef** と新規作成された Departments という **TableDef** の間に **Relation** を作成します。この例では、 **Relation** を新規作成することによって、外部テーブルに必要な **Indexes** が作成されることも示します (Employees テーブルの DepartmentsEmployees Index)。</span><span class="sxs-lookup"><span data-stu-id="7a0d7-p106">This example uses the **CreateRelation** method to create a **Relation** between the Employees **TableDef** and a new **TableDef** called Departments. This example also demonstrates how creating a new **Relation** will also create any necessary **Indexes** in the foreign table (the DepartmentsEmployees Index in the Employees table).</span></span>
 
 ```vb
     Sub CreateRelationX() 

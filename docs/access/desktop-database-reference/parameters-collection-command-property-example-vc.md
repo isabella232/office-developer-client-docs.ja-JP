@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="63d2d-101"><<<<<<< ヘッド タイトル: パラメーターのコレクション、TOCTitle のコマンド プロパティの使用例 (vc++): Parameters コレクションのコマンド プロパティの使用例 (vc++) === タイトル: Parameters コレクションのコマンド プロパティの使用例 (vc++) TOCTitle。Parameters コレクションのコマンド プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="63d2d-101"><<<<<<< HEAD title: Parameters Collection, Command Property Example (VC++) TOCTitle: Parameters Collection, Command Property Example (VC++) ======= title: Parameters Collection, Command property example (VC++) TOCTitle: Parameters Collection, Command property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="63d2d-102">マスターの ms:assetid: 625a83d5-5b73-f945-7e01-bf412fed0827 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249369(v=office.15) ms:contentKeyID: 48545237 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="63d2d-102">master ms:assetid: 625a83d5-5b73-f945-7e01-bf412fed0827 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249369(v=office.15) ms:contentKeyID: 48545237 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Parameters コレクションのコマンド プロパティの使用例 (vc++)
+TOCTitle: Parameters Collection, Command property example (VC++)
+ms:assetid: 625a83d5-5b73-f945-7e01-bf412fed0827
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249369(v=office.15)
+ms:contentKeyID: 48545237
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 302f329e09123a92fa008f031fde713393ad7a77
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25888301"
 ---
-
-<span data-ttu-id="63d2d-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="63d2d-103"><<<<<<< HEAD</span></span>
-# <a name="parameters-collection-command-property-example-vc"></a><span data-ttu-id="63d2d-104">Parameters コレクションの Command プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="63d2d-104">Parameters Collection, Command Property Example (VC++)</span></span>
-=======
-# <a name="parameters-collection-command-property-example-vc"></a><span data-ttu-id="63d2d-105">Parameters コレクションのコマンド プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="63d2d-105">Parameters Collection, Command property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="63d2d-106">master</span><span class="sxs-lookup"><span data-stu-id="63d2d-106">master</span></span>
+# <a name="parameters-collection-command-property-example-vc"></a><span data-ttu-id="f87cd-102">Parameters コレクションのコマンド プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="f87cd-102">Parameters Collection, Command property example (VC++)</span></span>
 
 
-<span data-ttu-id="63d2d-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="63d2d-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="f87cd-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f87cd-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="63d2d-108">次のコードでは、プロシージャのパラメーター情報を取得するために [Command](command-property-adox.md) オブジェクトの [Command](command-object-ado.md) プロパティを使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="63d2d-108">The following code demonstrates how to use the [Command](command-property-adox.md) property with the [Command](command-object-ado.md) object to retrieve parameter information for the procedure.</span></span>
+<span data-ttu-id="f87cd-104">次のコードでは、プロシージャのパラメーター情報を取得するために [Command](command-property-adox.md) オブジェクトの [Command](command-object-ado.md) プロパティを使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f87cd-104">The following code demonstrates how to use the [Command](command-property-adox.md) property with the [Command](command-object-ado.md) object to retrieve parameter information for the procedure.</span></span>
 
 ```cpp 
  

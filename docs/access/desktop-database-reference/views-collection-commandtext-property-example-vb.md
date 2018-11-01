@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="36b0d-101"><<<<<<< ヘッド タイトル: ビューのコレクション、CommandText プロパティの使用例 (VB) TOCTitle: ビューのコレクション、CommandText プロパティの使用例 (VB) === タイトル: Views コレクションでは、CommandText プロパティの使用例 (VB) TOCTitle: ビューのコレクションCommandText プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="36b0d-101"><<<<<<< HEAD title: Views Collection, CommandText Property Example (VB) TOCTitle: Views Collection, CommandText Property Example (VB) ======= title: Views Collection, CommandText property example (VB) TOCTitle: Views Collection, CommandText property example (VB)</span></span>
->>>>>>> <span data-ttu-id="36b0d-102">マスターの ms:assetid: 5dacd3c2-a1b2-57a7-1bac-ce0caa7c1a09 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249331(v=office.15) ms:contentKeyID: 48545120 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="36b0d-102">master ms:assetid: 5dacd3c2-a1b2-57a7-1bac-ce0caa7c1a09 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249331(v=office.15) ms:contentKeyID: 48545120 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Views コレクションでは、CommandText プロパティの使用例 (VB)
+TOCTitle: Views Collection, CommandText property example (VB)
+ms:assetid: 5dacd3c2-a1b2-57a7-1bac-ce0caa7c1a09
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249331(v=office.15)
+ms:contentKeyID: 48545120
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: ab1d5013e0371273fdcec3b2ba75a30a8dc18393
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870542"
 ---
-
-<span data-ttu-id="36b0d-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="36b0d-103"><<<<<<< HEAD</span></span>
-# <a name="views-collection-commandtext-property-example-vb"></a><span data-ttu-id="36b0d-104">Views コレクションと CommandText プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="36b0d-104">Views Collection, CommandText Property Example (VB)</span></span>
-=======
-# <a name="views-collection-commandtext-property-example-vb"></a><span data-ttu-id="36b0d-105">Views コレクションでは、CommandText プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="36b0d-105">Views Collection, CommandText property example (VB)</span></span>
->>>>>>> <span data-ttu-id="36b0d-106">master</span><span class="sxs-lookup"><span data-stu-id="36b0d-106">master</span></span>
+# <a name="views-collection-commandtext-property-example-vb"></a><span data-ttu-id="cb1a5-102">Views コレクションでは、CommandText プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="cb1a5-102">Views Collection, CommandText property example (VB)</span></span>
 
 
-<span data-ttu-id="36b0d-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="36b0d-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="cb1a5-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="cb1a5-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="36b0d-108">次のコードでは、ビューのテキストを更新するための、[Command](command-property-adox.md) プロパティの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="36b0d-108">The following code demonstrates how to use the [Command](command-property-adox.md) property to update the text of a view.</span></span>
+<span data-ttu-id="cb1a5-104">次のコードでは、ビューのテキストを更新するための、[Command](command-property-adox.md) プロパティの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="cb1a5-104">The following code demonstrates how to use the [Command](command-property-adox.md) property to update the text of a view.</span></span>
 
 ```vb 
  

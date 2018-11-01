@@ -1,28 +1,34 @@
 ---
-<span data-ttu-id="3c1dc-101"><<<<<<< ヘッド タイトル: バージョン プロパティの使用例 (VB) TOCTitle: バージョン プロパティの使用例 (VB) === タイトル: バージョン プロパティの使用例 (VB) TOCTitle: バージョン プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="3c1dc-101"><<<<<<< HEAD title: Version Property Example (VB) TOCTitle: Version Property Example (VB) ======= title: Version property example (VB) TOCTitle: Version property example (VB)</span></span>
->>>>>>> <span data-ttu-id="3c1dc-102">マスターの ms:assetid: ffb7b04a-55b9-fa2f-41ec-44af225bd15f ms:mtpsurl: https://msdn.microsoft.com/library/JJ250315(v=office.15) ms:contentKeyID: 48548968 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="3c1dc-102">master ms:assetid: ffb7b04a-55b9-fa2f-41ec-44af225bd15f ms:mtpsurl: https://msdn.microsoft.com/library/JJ250315(v=office.15) ms:contentKeyID: 48548968 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Version プロパティの使用例 (VB)
+TOCTitle: Version property example (VB)
+ms:assetid: ffb7b04a-55b9-fa2f-41ec-44af225bd15f
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250315(v=office.15)
+ms:contentKeyID: 48548968
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 67d7dcbf7a4663a1898fa516b359cf6aed6d128d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868680"
 ---
-
-<span data-ttu-id="3c1dc-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="3c1dc-103"><<<<<<< HEAD</span></span>
-# <a name="version-property-example-vb"></a><span data-ttu-id="3c1dc-104">Version プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="3c1dc-104">Version Property Example (VB)</span></span>
-=======
-# <a name="version-property-example-vb"></a><span data-ttu-id="3c1dc-105">バージョン プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="3c1dc-105">Version property example (VB)</span></span>
->>>>>>> <span data-ttu-id="3c1dc-106">master</span><span class="sxs-lookup"><span data-stu-id="3c1dc-106">master</span></span>
+# <a name="version-property-example-vb"></a><span data-ttu-id="d1741-102">Version プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d1741-102">Version property example (VB)</span></span>
 
 
-<span data-ttu-id="3c1dc-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="3c1dc-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="d1741-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="d1741-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="3c1dc-p101">この例では、[Connection](version-property-ado.md) オブジェクトの [Version](connection-object-ado.md) プロパティを使用して、現在の ADO のバージョンを表示します。また、動的プロパティを使用して、次の項目を表示します。</span><span class="sxs-lookup"><span data-stu-id="3c1dc-p101">This example uses the [Version](version-property-ado.md) property of a [Connection](connection-object-ado.md) object to display the current ADO version. It also uses several dynamic properties to show:</span></span>
+<span data-ttu-id="d1741-p101">この例では、[Connection](version-property-ado.md) オブジェクトの [Version](connection-object-ado.md) プロパティを使用して、現在の ADO のバージョンを表示します。また、動的プロパティを使用して、次の項目を表示します。</span><span class="sxs-lookup"><span data-stu-id="d1741-p101">This example uses the [Version](version-property-ado.md) property of a [Connection](connection-object-ado.md) object to display the current ADO version. It also uses several dynamic properties to show:</span></span>
 
-  - <span data-ttu-id="3c1dc-110">現在の DBMS の名前およびバージョン</span><span class="sxs-lookup"><span data-stu-id="3c1dc-110">the current DBMS name and version.</span></span>
+  - <span data-ttu-id="d1741-106">現在の DBMS の名前およびバージョン</span><span class="sxs-lookup"><span data-stu-id="d1741-106">the current DBMS name and version.</span></span>
 
-  - <span data-ttu-id="3c1dc-111">OLE DB のバージョン</span><span class="sxs-lookup"><span data-stu-id="3c1dc-111">OLE DB version.</span></span>
+  - <span data-ttu-id="d1741-107">OLE DB のバージョン</span><span class="sxs-lookup"><span data-stu-id="d1741-107">OLE DB version.</span></span>
 
-  - <span data-ttu-id="3c1dc-112">プロバイダーの名前およびバージョン</span><span class="sxs-lookup"><span data-stu-id="3c1dc-112">provider name and version.</span></span>
+  - <span data-ttu-id="d1741-108">プロバイダーの名前およびバージョン</span><span class="sxs-lookup"><span data-stu-id="d1741-108">provider name and version.</span></span>
 
-  - <span data-ttu-id="3c1dc-113">ODBC のバージョン</span><span class="sxs-lookup"><span data-stu-id="3c1dc-113">ODBC version.</span></span>
+  - <span data-ttu-id="d1741-109">ODBC のバージョン</span><span class="sxs-lookup"><span data-stu-id="d1741-109">ODBC version.</span></span>
 
-  - <span data-ttu-id="3c1dc-114">ODBC ドライバーの名前およびバージョン</span><span class="sxs-lookup"><span data-stu-id="3c1dc-114">ODBC driver name and version.</span></span>
+  - <span data-ttu-id="d1741-110">ODBC ドライバーの名前およびバージョン</span><span class="sxs-lookup"><span data-stu-id="d1741-110">ODBC driver name and version.</span></span>
 
 <!-- end list -->
 

@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="708f5-101"><<<<<<< ヘッド タイトル: ソースのプロパティの使用例 (vc++) TOCTitle: ソースのプロパティの使用例 (vc++) === タイトル: ソースのプロパティの使用例 (vc++) TOCTitle: ソースのプロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="708f5-101"><<<<<<< HEAD title: Source Property Example (VC++) TOCTitle: Source Property Example (VC++) ======= title: Source property example (VC++) TOCTitle: Source property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="708f5-102">マスターの ms:assetid: 2c539e8b-04a8-2fc3-052e-a0776682e16c ms:mtpsurl: https://msdn.microsoft.com/library/JJ249067(v=office.15) ms:contentKeyID: 48543949 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="708f5-102">master ms:assetid: 2c539e8b-04a8-2fc3-052e-a0776682e16c ms:mtpsurl: https://msdn.microsoft.com/library/JJ249067(v=office.15) ms:contentKeyID: 48543949 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Source プロパティの使用例 (VC++)
+TOCTitle: Source property example (VC++)
+ms:assetid: 2c539e8b-04a8-2fc3-052e-a0776682e16c
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249067(v=office.15)
+ms:contentKeyID: 48543949
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: d977f962e08ba8497392582fb26cfbf1d8691a28
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881203"
 ---
-
-<span data-ttu-id="708f5-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="708f5-103"><<<<<<< HEAD</span></span>
-# <a name="source-property-example-vc"></a><span data-ttu-id="708f5-104">Source プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="708f5-104">Source Property Example (VC++)</span></span>
-=======
-# <a name="source-property-example-vc"></a><span data-ttu-id="708f5-105">ソース プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="708f5-105">Source property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="708f5-106">master</span><span class="sxs-lookup"><span data-stu-id="708f5-106">master</span></span>
+# <a name="source-property-example-vc"></a><span data-ttu-id="58b01-102">Source プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="58b01-102">Source property example (VC++)</span></span>
 
 
-<span data-ttu-id="708f5-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="708f5-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="58b01-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="58b01-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="708f5-108">この例では、異なるデータ ソースに基づく 3 つの [Recordset](source-property-ado-recordset.md) オブジェクトを開くことによって、 [Source](recordset-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="708f5-108">This example demonstrates the [Source](source-property-ado-recordset.md) property by opening three [Recordset](recordset-object-ado.md) objects based on different data sources.</span></span>
+<span data-ttu-id="58b01-104">この例では、異なるデータ ソースに基づく 3 つの [Recordset](source-property-ado-recordset.md) オブジェクトを開くことによって、 [Source](recordset-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="58b01-104">This example demonstrates the [Source](source-property-ado-recordset.md) property by opening three [Recordset](recordset-object-ado.md) objects based on different data sources.</span></span>
 
 ```cpp 
  

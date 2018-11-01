@@ -6,33 +6,29 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248842(v=office.15)
 ms:contentKeyID: 48543166
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f4eea391e99202eeb075d73daa1034dff2042e49
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 57b7fd5dadf6b4da3239cc208744691ce22e62f1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25604422"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880475"
 ---
-# <a name="update-resync-property--dynamic-ado"></a><span data-ttu-id="e4bd3-102">Update Resync プロパティ -- 動的 (ADO)</span><span class="sxs-lookup"><span data-stu-id="e4bd3-102">Update Resync Property--Dynamic (ADO)</span></span>
+# <a name="update-resync-property--dynamic-ado"></a><span data-ttu-id="e8e3d-102">Update Resync プロパティ -- 動的 (ADO)</span><span class="sxs-lookup"><span data-stu-id="e8e3d-102">Update Resync Property--Dynamic (ADO)</span></span>
 
 
-<span data-ttu-id="e4bd3-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="e4bd3-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="e8e3d-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="e8e3d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="e4bd3-104">[UpdateBatch](updatebatch-method-ado.md) メソッドの後に暗黙の [Resync](resync-method-ado.md) メソッド操作を実行するかどうかを指定し、実行する場合は、その作用範囲を指定します。</span><span class="sxs-lookup"><span data-stu-id="e4bd3-104">Specifies whether the [UpdateBatch](updatebatch-method-ado.md) method is followed by an implicit [Resync](resync-method-ado.md) method operation, and if so, the scope of that operation.</span></span>
+<span data-ttu-id="e8e3d-104">[UpdateBatch](updatebatch-method-ado.md) メソッドの後に暗黙の [Resync](resync-method-ado.md) メソッド操作を実行するかどうかを指定し、実行する場合は、その作用範囲を指定します。</span><span class="sxs-lookup"><span data-stu-id="e8e3d-104">Specifies whether the [UpdateBatch](updatebatch-method-ado.md) method is followed by an implicit [Resync](resync-method-ado.md) method operation, and if so, the scope of that operation.</span></span>
 
-<span data-ttu-id="e4bd3-105"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="e4bd3-105"><<<<<<< HEAD</span></span>
-## <a name="settings-and-return-values"></a><span data-ttu-id="e4bd3-106">設定値と戻り値</span><span class="sxs-lookup"><span data-stu-id="e4bd3-106">Settings and Return Values</span></span>
-=======
-## <a name="settings-and-return-values"></a><span data-ttu-id="e4bd3-107">設定値および戻り値</span><span class="sxs-lookup"><span data-stu-id="e4bd3-107">Settings and return values</span></span>
->>>>>>> <span data-ttu-id="e4bd3-108">master</span><span class="sxs-lookup"><span data-stu-id="e4bd3-108">master</span></span>
+## <a name="settings-and-return-values"></a><span data-ttu-id="e8e3d-105">設定値および戻り値</span><span class="sxs-lookup"><span data-stu-id="e8e3d-105">Settings and return values</span></span>
 
-<span data-ttu-id="e4bd3-109">いずれかを取得または設定します[ADCPROP\_UPDATERESYNC\_列挙型](adcprop-updateresync-enum.md)の値です。</span><span class="sxs-lookup"><span data-stu-id="e4bd3-109">Sets or returns one or more of the [ADCPROP\_UPDATERESYNC\_ENUM](adcprop-updateresync-enum.md) values.</span></span>
+<span data-ttu-id="e8e3d-106">いずれかを取得または設定します[ADCPROP\_UPDATERESYNC\_列挙型](adcprop-updateresync-enum.md)の値です。</span><span class="sxs-lookup"><span data-stu-id="e8e3d-106">Sets or returns one or more of the [ADCPROP\_UPDATERESYNC\_ENUM](adcprop-updateresync-enum.md) values.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="e4bd3-110">備考</span><span class="sxs-lookup"><span data-stu-id="e4bd3-110">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e8e3d-107">備考</span><span class="sxs-lookup"><span data-stu-id="e8e3d-107">Remarks</span></span>
 
-<span data-ttu-id="e4bd3-111">ADCPROP の値\_UPDATERESYNC\_既に残りの値の組み合わせを表す adResyncAll を除いて、列挙型を組み合わせることができます。</span><span class="sxs-lookup"><span data-stu-id="e4bd3-111">The values of ADCPROP\_UPDATERESYNC\_ENUM may be combined, except for adResyncAll which already represents the combination of the rest of the values.</span></span>
+<span data-ttu-id="e8e3d-108">ADCPROP の値\_UPDATERESYNC\_既に残りの値の組み合わせを表す adResyncAll を除いて、列挙型を組み合わせることができます。</span><span class="sxs-lookup"><span data-stu-id="e8e3d-108">The values of ADCPROP\_UPDATERESYNC\_ENUM may be combined, except for adResyncAll which already represents the combination of the rest of the values.</span></span>
 
-<span data-ttu-id="e4bd3-112">定数 **adResyncConflicts** は、再同期値を基になる値として保存しますが、保留中の変更は上書きしません。</span><span class="sxs-lookup"><span data-stu-id="e4bd3-112">The constant **adResyncConflicts** stores the resync values as underlying values, but does not override pending changes.</span></span>
+<span data-ttu-id="e8e3d-109">定数 **adResyncConflicts** は、再同期値を基になる値として保存しますが、保留中の変更は上書きしません。</span><span class="sxs-lookup"><span data-stu-id="e8e3d-109">The constant **adResyncConflicts** stores the resync values as underlying values, but does not override pending changes.</span></span>
 
-<span data-ttu-id="e4bd3-113">**Update Resync** は、 [CursorLocation](recordset-object-ado.md) プロパティを [adUseClient](properties-collection-ado.md) に設定するときに、 [Recordset](cursorlocation-property-ado.md) オブジェクトの **Properties** コレクションに追加される動的プロパティです。</span><span class="sxs-lookup"><span data-stu-id="e4bd3-113">**Update Resync** is a dynamic property appended to the [Recordset](recordset-object-ado.md) object [Properties](properties-collection-ado.md) collection when the [CursorLocation](cursorlocation-property-ado.md) property is set to **adUseClient**.</span></span>
+<span data-ttu-id="e8e3d-110">**Update Resync** は、 [CursorLocation](recordset-object-ado.md) プロパティを [adUseClient](properties-collection-ado.md) に設定するときに、 [Recordset](cursorlocation-property-ado.md) オブジェクトの **Properties** コレクションに追加される動的プロパティです。</span><span class="sxs-lookup"><span data-stu-id="e8e3d-110">**Update Resync** is a dynamic property appended to the [Recordset](recordset-object-ado.md) object [Properties](properties-collection-ado.md) collection when the [CursorLocation](cursorlocation-property-ado.md) property is set to **adUseClient**.</span></span>
 

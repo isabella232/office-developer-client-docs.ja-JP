@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="a23be-101"><<<<<<< ヘッド タイトル: 最適化プロパティの使用例 (vc++) TOCTitle: 最適化プロパティの使用例 (vc++) === タイトル: プロパティの使用例 (vc++) を最適化する TOCTitle: プロパティの使用例 (vc++) を最適化します。</span><span class="sxs-lookup"><span data-stu-id="a23be-101"><<<<<<< HEAD title: Optimize Property Example (VC++) TOCTitle: Optimize Property Example (VC++) ======= title: Optimize property example (VC++) TOCTitle: Optimize property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="a23be-102">マスターの ms:assetid: f9e83365-93b2-3eb6-0347-8f8aec703d6f ms:mtpsurl: https://msdn.microsoft.com/library/JJ250273(v=office.15) ms:contentKeyID: 48548825 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="a23be-102">master ms:assetid: f9e83365-93b2-3eb6-0347-8f8aec703d6f ms:mtpsurl: https://msdn.microsoft.com/library/JJ250273(v=office.15) ms:contentKeyID: 48548825 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Optimize プロパティの使用例 (VC++)
+TOCTitle: Optimize property example (VC++)
+ms:assetid: f9e83365-93b2-3eb6-0347-8f8aec703d6f
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250273(v=office.15)
+ms:contentKeyID: 48548825
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 7e4e595aea68b35ec6fec1515c5d80e5b721b891
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885067"
 ---
-
-<span data-ttu-id="a23be-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="a23be-103"><<<<<<< HEAD</span></span>
-# <a name="optimize-property-example-vc"></a><span data-ttu-id="a23be-104">Optimize プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="a23be-104">Optimize Property Example (VC++)</span></span>
-=======
-# <a name="optimize-property-example-vc"></a><span data-ttu-id="a23be-105">プロパティの使用例 (vc++) を最適化します。</span><span class="sxs-lookup"><span data-stu-id="a23be-105">Optimize property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="a23be-106">master</span><span class="sxs-lookup"><span data-stu-id="a23be-106">master</span></span>
+# <a name="optimize-property-example-vc"></a><span data-ttu-id="60306-102">Optimize プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="60306-102">Optimize property example (VC++)</span></span>
 
 
-<span data-ttu-id="a23be-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="a23be-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="60306-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="60306-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="a23be-108">この例では、[Field](field-object-ado.md) オブジェクトの動的 Optimize プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="a23be-108">This example demonstrates the [Field](field-object-ado.md) object dynamic Optimize property.</span></span> <span data-ttu-id="a23be-109">***Pubs***データベースの***Authors***テーブルの***zip***フィールドのインデックスはありません。</span><span class="sxs-lookup"><span data-stu-id="a23be-109">The ***zip*** field of the ***Authors*** table in the ***Pubs*** database is not indexed.</span></span> <span data-ttu-id="a23be-110">[Optimize](optimize-property-dynamic-ado.md)プロパティを [ ***zip*** ] フィールドを**True**に設定は、ADO [Find](find-method-ado.md)メソッドのパフォーマンスが向上するインデックスを作成するを許可します。</span><span class="sxs-lookup"><span data-stu-id="a23be-110">Setting the [Optimize](optimize-property-dynamic-ado.md) property to **True** on the ***zip*** field authorizes ADO to build an index that improves the performance of the [Find](find-method-ado.md) method.</span></span>
+<span data-ttu-id="60306-104">この例では、[Field](field-object-ado.md) オブジェクトの動的 Optimize プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="60306-104">This example demonstrates the [Field](field-object-ado.md) object dynamic Optimize property.</span></span> <span data-ttu-id="60306-105">***Pubs***データベースの***Authors***テーブルの***zip***フィールドのインデックスはありません。</span><span class="sxs-lookup"><span data-stu-id="60306-105">The ***zip*** field of the ***Authors*** table in the ***Pubs*** database is not indexed.</span></span> <span data-ttu-id="60306-106">[Optimize](optimize-property-dynamic-ado.md)プロパティを [ ***zip*** ] フィールドを**True**に設定は、ADO [Find](find-method-ado.md)メソッドのパフォーマンスが向上するインデックスを作成するを許可します。</span><span class="sxs-lookup"><span data-stu-id="60306-106">Setting the [Optimize](optimize-property-dynamic-ado.md) property to **True** on the ***zip*** field authorizes ADO to build an index that improves the performance of the [Find](find-method-ado.md) method.</span></span>
 
 ```cpp 
  

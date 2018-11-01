@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250049(v=office.15)
 ms:contentKeyID: 48547878
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 692bf7e1adf561c99ec1e3060578de93fbd1a064
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 5af9b24ac7edb77ceb6dea9ceb5ae8e628fa5e3b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861884"
+ms.locfileid: "25889708"
 ---
-# <a name="step-3-send-the-data"></a><span data-ttu-id="62827-102">手順 3: データを送信する</span><span class="sxs-lookup"><span data-stu-id="62827-102">Step 3: Send the Data</span></span>
+# <a name="step-3-send-the-data"></a><span data-ttu-id="742e1-102">手順 3: データを送信する</span><span class="sxs-lookup"><span data-stu-id="742e1-102">Step 3: Send the Data</span></span>
 
 
-<span data-ttu-id="62827-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="62827-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="742e1-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="742e1-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="step-3-send-the-data"></a><span data-ttu-id="62827-104">手順 3: データの送信</span><span class="sxs-lookup"><span data-stu-id="62827-104">Step 3: Send the Data</span></span>
+## <a name="step-3-send-the-data"></a><span data-ttu-id="742e1-104">手順 3: データの送信</span><span class="sxs-lookup"><span data-stu-id="742e1-104">Step 3: Send the Data</span></span>
 
-<span data-ttu-id="62827-p101">**Recordset** の準備が完了したので、これを XML として ASP **Response** オブジェクトに保存して、クライアントに送信する必要があります。XMLResponse.asp の最後に次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="62827-p101">Now that you have a **Recordset**, you need to send it to the client by saving it as XML to the ASP **Response** object. Add the following code to the bottom of XMLResponse.asp:</span></span>
+<span data-ttu-id="742e1-p101">**Recordset** の準備が完了したので、これを XML として ASP **Response** オブジェクトに保存して、クライアントに送信する必要があります。XMLResponse.asp の最後に次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="742e1-p101">Now that you have a **Recordset**, you need to send it to the client by saving it as XML to the ASP **Response** object. Add the following code to the bottom of XMLResponse.asp:</span></span>
 
 ```vb 
  
@@ -36,11 +36,11 @@ ms.locfileid: "25861884"
 %> 
 ```
 
-<span data-ttu-id="62827-107">ASP**応答**オブジェクトが**レコード セット**の[保存](save-method-ado.md)メソッドの保存先として指定されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="62827-107">Notice that the ASP **Response** object is specified as the destination for the **Recordset** [Save](save-method-ado.md) method.</span></span> <span data-ttu-id="62827-108">**Save** メソッドの保存先には、 **IStream** インターフェイスをサポートする任意のオブジェクト (ADO の [Stream](stream-object-ado.md) オブジェクトなど)、または、 **Recordset** の保存先の完全なパスを含むファイル名を指定できます。</span><span class="sxs-lookup"><span data-stu-id="62827-108">The destination of the **Save** method can be any object that supports the **IStream** interface, such as an ADO [Stream](stream-object-ado.md) object, or a file name that includes the complete path to which the **Recordset** is to be saved.</span></span>
+<span data-ttu-id="742e1-107">ASP**応答**オブジェクトが**レコード セット**の[保存](save-method-ado.md)メソッドの保存先として指定されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="742e1-107">Notice that the ASP **Response** object is specified as the destination for the **Recordset** [Save](save-method-ado.md) method.</span></span> <span data-ttu-id="742e1-108">**Save** メソッドの保存先には、 **IStream** インターフェイスをサポートする任意のオブジェクト (ADO の [Stream](stream-object-ado.md) オブジェクトなど)、または、 **Recordset** の保存先の完全なパスを含むファイル名を指定できます。</span><span class="sxs-lookup"><span data-stu-id="742e1-108">The destination of the **Save** method can be any object that supports the **IStream** interface, such as an ADO [Stream](stream-object-ado.md) object, or a file name that includes the complete path to which the **Recordset** is to be saved.</span></span>
 
-<span data-ttu-id="62827-109">XMLResponse.asp を保存して閉じ、次の手順に進みます。</span><span class="sxs-lookup"><span data-stu-id="62827-109">Save and close XMLResponse.asp before going to the next step.</span></span> <span data-ttu-id="62827-110">Adovbs.inc ファイルを c: からコピーも\\Program Files\\ファイルの一般的な\\システム\\XMLResponse.asp ファイルがあるフォルダーにフォルダーを Ado。</span><span class="sxs-lookup"><span data-stu-id="62827-110">Also copy the adovbs.inc file from C:\\Program Files\\Common Files\\System\\Ado folder to the same folder where you have the XMLResponse.asp file.</span></span>
+<span data-ttu-id="742e1-109">XMLResponse.asp を保存して閉じ、次の手順に進みます。</span><span class="sxs-lookup"><span data-stu-id="742e1-109">Save and close XMLResponse.asp before going to the next step.</span></span> <span data-ttu-id="742e1-110">Adovbs.inc ファイルを c: からコピーも\\Program Files\\ファイルの一般的な\\システム\\XMLResponse.asp ファイルがあるフォルダーにフォルダーを Ado。</span><span class="sxs-lookup"><span data-stu-id="742e1-110">Also copy the adovbs.inc file from C:\\Program Files\\Common Files\\System\\Ado folder to the same folder where you have the XMLResponse.asp file.</span></span>
 
-### <a name="next-step"></a><span data-ttu-id="62827-111">次のステップ</span><span class="sxs-lookup"><span data-stu-id="62827-111">Next step</span></span>
+### <a name="next-step"></a><span data-ttu-id="742e1-111">次のステップ</span><span class="sxs-lookup"><span data-stu-id="742e1-111">Next step</span></span>
 
-[<span data-ttu-id="62827-112">手順 4: データを受信します。</span><span class="sxs-lookup"><span data-stu-id="62827-112">Step 4: Receive the Data</span></span>](step-4-receive-and-display-the-data.md)
+[<span data-ttu-id="742e1-112">手順 4: データを受信します。</span><span class="sxs-lookup"><span data-stu-id="742e1-112">Step 4: Receive the Data</span></span>](step-4-receive-and-display-the-data.md)
 

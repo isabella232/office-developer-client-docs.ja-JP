@@ -10,33 +10,33 @@ f1_keywords:
 - dao360.chm1053082
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 9377f61ec334f41b7f8ccba61b87a9d5953b4429
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 63762814d0eb90cccb86402dbd6284fd873aef73
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478519"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887804"
 ---
-# <a name="querydefrecordsaffected-property-dao"></a><span data-ttu-id="c1c1e-102">QueryDef.RecordsAffected プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="c1c1e-102">QueryDef.RecordsAffected Property (DAO)</span></span>
+# <a name="querydefrecordsaffected-property-dao"></a><span data-ttu-id="7617e-102">QueryDef.RecordsAffected プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="7617e-102">QueryDef.RecordsAffected Property (DAO)</span></span>
 
 
-<span data-ttu-id="c1c1e-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="c1c1e-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="7617e-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="7617e-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c1c1e-104">直前に呼び出された **[Execute](querydef-execute-method-dao.md)** メソッドの影響を受けるレコード数を返します。</span><span class="sxs-lookup"><span data-stu-id="c1c1e-104">Returns the number of records affected by the most recently invoked **[Execute](querydef-execute-method-dao.md)** method.</span></span>
+<span data-ttu-id="7617e-104">直前に呼び出された **[Execute](querydef-execute-method-dao.md)** メソッドの影響を受けるレコード数を返します。</span><span class="sxs-lookup"><span data-stu-id="7617e-104">Returns the number of records affected by the most recently invoked **[Execute](querydef-execute-method-dao.md)** method.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="c1c1e-105">構文</span><span class="sxs-lookup"><span data-stu-id="c1c1e-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7617e-105">構文</span><span class="sxs-lookup"><span data-stu-id="7617e-105">Syntax</span></span>
 
-<span data-ttu-id="c1c1e-106">*式*です。RecordsAffected</span><span class="sxs-lookup"><span data-stu-id="c1c1e-106">*expression* .RecordsAffected</span></span>
+<span data-ttu-id="7617e-106">*式*です。RecordsAffected</span><span class="sxs-lookup"><span data-stu-id="7617e-106">*expression* .RecordsAffected</span></span>
 
-<span data-ttu-id="c1c1e-107">\*式\***クエリ定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="c1c1e-107">*expression* A variable that represents a **QueryDef** object.</span></span>
+<span data-ttu-id="7617e-107">\*式\***クエリ定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="7617e-107">*expression* A variable that represents a **QueryDef** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="c1c1e-108">注釈</span><span class="sxs-lookup"><span data-stu-id="c1c1e-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7617e-108">注釈</span><span class="sxs-lookup"><span data-stu-id="7617e-108">Remarks</span></span>
 
-<span data-ttu-id="c1c1e-109">**Execute** メソッドを使用して **QueryDef** オブジェクトからアクション クエリを実行すると、削除、更新、または挿入されたレコードの数が **RecordsAffected** プロパティに格納されます。</span><span class="sxs-lookup"><span data-stu-id="c1c1e-109">When you use the **Execute** method to run an action query from a **QueryDef** object, the **RecordsAffected** property will contain the number of records deleted, updated, or inserted.</span></span>
+<span data-ttu-id="7617e-109">**Execute** メソッドを使用して **QueryDef** オブジェクトからアクション クエリを実行すると、削除、更新、または挿入されたレコードの数が **RecordsAffected** プロパティに格納されます。</span><span class="sxs-lookup"><span data-stu-id="7617e-109">When you use the **Execute** method to run an action query from a **QueryDef** object, the **RecordsAffected** property will contain the number of records deleted, updated, or inserted.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c1c1e-110">例</span><span class="sxs-lookup"><span data-stu-id="c1c1e-110">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7617e-110">例</span><span class="sxs-lookup"><span data-stu-id="7617e-110">Example</span></span>
 
-<span data-ttu-id="c1c1e-p101">この例では、 [**Database**](database-object-dao.md) オブジェクトおよび **QueryDef** オブジェクトから実行するアクション クエリで **RecordsAffected** プロパティを使用します。このプロシージャを実行するには、RecordsAffectedOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="c1c1e-p101">This example uses the **RecordsAffected** property with action queries executed from a **[Database](database-object-dao.md)** object and from a **QueryDef** object. The RecordsAffectedOutput function is required for this procedure to run.</span></span>
+<span data-ttu-id="7617e-p101">この例では、 [**Database**](database-object-dao.md) オブジェクトおよび **QueryDef** オブジェクトから実行するアクション クエリで **RecordsAffected** プロパティを使用します。このプロシージャを実行するには、RecordsAffectedOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="7617e-p101">This example uses the **RecordsAffected** property with action queries executed from a **[Database](database-object-dao.md)** object and from a **QueryDef** object. The RecordsAffectedOutput function is required for this procedure to run.</span></span>
 
 ```vb
     Sub RecordsAffectedX() 

@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250236(v=office.15)
 ms:contentKeyID: 48548671
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e7bc0bd2462fbfd5e5f4305a126e979f73c8c973
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: f8e1236e1092b6b6c1d5e6afc0c64917d66ce813
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860589"
+ms.locfileid: "25880125"
 ---
-# <a name="comparebookmarks-method-example-vj"></a><span data-ttu-id="394ea-102">CompareBookmarks メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="394ea-102">CompareBookmarks method example (VJ++)</span></span>
+# <a name="comparebookmarks-method-example-vj"></a><span data-ttu-id="3945a-102">CompareBookmarks メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="3945a-102">CompareBookmarks method example (VJ++)</span></span>
 
 
-<span data-ttu-id="394ea-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="394ea-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="3945a-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="3945a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="394ea-p101">この例では、[CompareBookmarks](comparebookmarks-method-ado.md) メソッドの使い方を示します。通常、ブックマークの相対的な値は、特別なブックマークでない限り必要ありません。</span><span class="sxs-lookup"><span data-stu-id="394ea-p101">This example demonstrates the [CompareBookmarks](comparebookmarks-method-ado.md) method. The relative value of bookmarks is seldom needed unless a particular bookmark is somehow special.</span></span>
+<span data-ttu-id="3945a-p101">この例では、[CompareBookmarks](comparebookmarks-method-ado.md) メソッドの使い方を示します。通常、ブックマークの相対的な値は、特別なブックマークでない限り必要ありません。</span><span class="sxs-lookup"><span data-stu-id="3945a-p101">This example demonstrates the [CompareBookmarks](comparebookmarks-method-ado.md) method. The relative value of bookmarks is seldom needed unless a particular bookmark is somehow special.</span></span>
 
-<span data-ttu-id="394ea-p102">***Authors*** テーブルから取得した [Recordset](recordset-object-ado.md) のランダムな行を、検索の対象として指定します。次に、その検索対象に対する各行の相対的な位置を表示します。</span><span class="sxs-lookup"><span data-stu-id="394ea-p102">Designate a random row of a [Recordset](recordset-object-ado.md) derived from the ***Authors*** table as the target of a search. Then display the position of each row relative to that target.</span></span>
+<span data-ttu-id="3945a-p102">***Authors*** テーブルから取得した [Recordset](recordset-object-ado.md) のランダムな行を、検索の対象として指定します。次に、その検索対象に対する各行の相対的な位置を表示します。</span><span class="sxs-lookup"><span data-stu-id="3945a-p102">Designate a random row of a [Recordset](recordset-object-ado.md) derived from the ***Authors*** table as the target of a search. Then display the position of each row relative to that target.</span></span>
 
 ```java 
  

@@ -1,30 +1,32 @@
 ---
-<span data-ttu-id="2c624-101"><<<<<<< ヘッド タイトル: 説明プロパティ (ADO) TOCTitle: 説明プロパティ (ADO) === タイトル: Description プロパティ (ADO) TOCTitle: Description プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="2c624-101"><<<<<<< HEAD title: Description Property (ADO) TOCTitle: Description Property (ADO) ======= title: Description property (ADO) TOCTitle: Description property (ADO)</span></span>
->>>>>>> <span data-ttu-id="2c624-102">マスターの ms:assetid: 31df5e36-641c-d213-31fc-6244e2983327 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249092(v=office.15) ms:contentKeyID: 48544064 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="2c624-102">master ms:assetid: 31df5e36-641c-d213-31fc-6244e2983327 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249092(v=office.15) ms:contentKeyID: 48544064 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Description プロパティ (ADO)
+TOCTitle: Description property (ADO)
+ms:assetid: 31df5e36-641c-d213-31fc-6244e2983327
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249092(v=office.15)
+ms:contentKeyID: 48544064
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: fc2a7706afbf69d9949e8b04122b144c6826ec40
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882939"
 ---
-
-<span data-ttu-id="2c624-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="2c624-103"><<<<<<< HEAD</span></span>
-# <a name="description-property-ado"></a><span data-ttu-id="2c624-104">Description プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="2c624-104">Description Property (ADO)</span></span>
-=======
-# <a name="description-property-ado"></a><span data-ttu-id="2c624-105">Description プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="2c624-105">Description property (ADO)</span></span>
->>>>>>> <span data-ttu-id="2c624-106">master</span><span class="sxs-lookup"><span data-stu-id="2c624-106">master</span></span>
+# <a name="description-property-ado"></a><span data-ttu-id="45222-102">Description プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="45222-102">Description property (ADO)</span></span>
 
 
-<span data-ttu-id="2c624-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="2c624-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="45222-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="45222-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="2c624-108">[Error](error-object-ado.md) オブジェクトを記述します。</span><span class="sxs-lookup"><span data-stu-id="2c624-108">Describes an [Error](error-object-ado.md) object.</span></span>
+<span data-ttu-id="45222-104">[Error](error-object-ado.md) オブジェクトを記述します。</span><span class="sxs-lookup"><span data-stu-id="45222-104">Describes an [Error](error-object-ado.md) object.</span></span>
 
-<span data-ttu-id="2c624-109"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="2c624-109"><<<<<<< HEAD</span></span>
-## <a name="return-value"></a><span data-ttu-id="2c624-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="2c624-110">Return Value</span></span>
-=======
-## <a name="return-value"></a><span data-ttu-id="2c624-111">戻り値</span><span class="sxs-lookup"><span data-stu-id="2c624-111">Return value</span></span>
->>>>>>> <span data-ttu-id="2c624-112">master</span><span class="sxs-lookup"><span data-stu-id="2c624-112">master</span></span>
+## <a name="return-value"></a><span data-ttu-id="45222-105">戻り値</span><span class="sxs-lookup"><span data-stu-id="45222-105">Return value</span></span>
 
-<span data-ttu-id="2c624-113">エラーの内容を表す文字列型 ( **String** ) の値を返します。</span><span class="sxs-lookup"><span data-stu-id="2c624-113">Returns a **String** value that contains a description of the error.</span></span>
+<span data-ttu-id="45222-106">エラーの内容を表す文字列型 ( **String** ) の値を返します。</span><span class="sxs-lookup"><span data-stu-id="45222-106">Returns a **String** value that contains a description of the error.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="2c624-114">解説</span><span class="sxs-lookup"><span data-stu-id="2c624-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="45222-107">解説</span><span class="sxs-lookup"><span data-stu-id="45222-107">Remarks</span></span>
 
-<span data-ttu-id="2c624-p101">**Description** プロパティは、エラーの簡単な説明を取得するために使います。プログラムで対処できないエラー、または処理することが望ましくないエラーは、このプロパティの内容を表示してユーザーに警告します。文字列は、ADO またはプロバイダーから渡されます。</span><span class="sxs-lookup"><span data-stu-id="2c624-p101">Use the **Description** property to obtain a short description of the error. Display this property to alert the user to an error that you cannot or do not want to handle. The string will come from either ADO or a provider.</span></span>
+<span data-ttu-id="45222-p101">**Description** プロパティは、エラーの簡単な説明を取得するために使います。プログラムで対処できないエラー、または処理することが望ましくないエラーは、このプロパティの内容を表示してユーザーに警告します。文字列は、ADO またはプロバイダーから渡されます。</span><span class="sxs-lookup"><span data-stu-id="45222-p101">Use the **Description** property to obtain a short description of the error. Display this property to alert the user to an error that you cannot or do not want to handle. The string will come from either ADO or a provider.</span></span>
 
-<span data-ttu-id="2c624-p102">プロバイダーは、特定のエラー テキストを ADO に渡します。ADO は、受け取ったプロバイダー エラーまたは警告ごとに [Error](error-object-ado.md) オブジェクトを **Errors** コレクションに追加します。プロバイダーが渡すエラーをトレースするには、 **Errors** コレクションを列挙します。</span><span class="sxs-lookup"><span data-stu-id="2c624-p102">Providers are responsible for passing specific error text to ADO. ADO adds an [Error](error-object-ado.md) object to the **Errors** collection for each provider error or warning it receives. Enumerate the **Errors** collection to trace the errors that the provider passes.</span></span>
+<span data-ttu-id="45222-p102">プロバイダーは、特定のエラー テキストを ADO に渡します。ADO は、受け取ったプロバイダー エラーまたは警告ごとに [Error](error-object-ado.md) オブジェクトを **Errors** コレクションに追加します。プロバイダーが渡すエラーをトレースするには、 **Errors** コレクションを列挙します。</span><span class="sxs-lookup"><span data-stu-id="45222-p102">Providers are responsible for passing specific error text to ADO. ADO adds an [Error](error-object-ado.md) object to the **Errors** collection for each provider error or warning it receives. Enumerate the **Errors** collection to trace the errors that the provider passes.</span></span>
 

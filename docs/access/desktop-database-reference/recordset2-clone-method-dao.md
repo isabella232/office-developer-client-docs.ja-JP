@@ -6,55 +6,51 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff836567(v=office.15)
 ms:contentKeyID: 48548614
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 47aa31bf6b32b674d7701b6572cc411eb88cc301
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 95d02f56a7c1e916bd0b6181a7a22b3cebb9d9b1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603288"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875029"
 ---
-# <a name="recordset2clone-method-dao"></a><span data-ttu-id="2e911-102">Recordset2.Clone メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="2e911-102">Recordset2.Clone Method (DAO)</span></span>
+# <a name="recordset2clone-method-dao"></a><span data-ttu-id="54d5a-102">Recordset2.Clone メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="54d5a-102">Recordset2.Clone Method (DAO)</span></span>
 
 
-<span data-ttu-id="2e911-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="2e911-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="54d5a-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="54d5a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="2e911-104">元の [Recordset2](recordset-object-dao.md) オブジェクトを参照する複製の \*\*\*\*Recordset\*\*\*\* オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="2e911-104">Creates a duplicate **[Recordset](recordset-object-dao.md)** object that refers to the original **Recordset2** object.</span></span>
+<span data-ttu-id="54d5a-104">元の [Recordset2](recordset-object-dao.md) オブジェクトを参照する複製の \*\*\*\*Recordset\*\*\*\* オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="54d5a-104">Creates a duplicate **[Recordset](recordset-object-dao.md)** object that refers to the original **Recordset2** object.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="2e911-105">構文</span><span class="sxs-lookup"><span data-stu-id="2e911-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="54d5a-105">構文</span><span class="sxs-lookup"><span data-stu-id="54d5a-105">Syntax</span></span>
 
-<span data-ttu-id="2e911-106">*式*です。クローン</span><span class="sxs-lookup"><span data-stu-id="2e911-106">*expression* .Clone</span></span>
+<span data-ttu-id="54d5a-106">*式*です。クローン</span><span class="sxs-lookup"><span data-stu-id="54d5a-106">*expression* .Clone</span></span>
 
-<span data-ttu-id="2e911-107">\*式\***Recordset2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="2e911-107">*expression* A variable that represents a **Recordset2** object.</span></span>
+<span data-ttu-id="54d5a-107">\*式\***Recordset2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="54d5a-107">*expression* A variable that represents a **Recordset2** object.</span></span>
 
-<span data-ttu-id="2e911-108"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="2e911-108"><<<<<<< HEAD</span></span>
-### <a name="return-value"></a><span data-ttu-id="2e911-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="2e911-109">Return Value</span></span>
-=======
-### <a name="return-value"></a><span data-ttu-id="2e911-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="2e911-110">Return value</span></span>
->>>>>>> <span data-ttu-id="2e911-111">master</span><span class="sxs-lookup"><span data-stu-id="2e911-111">master</span></span>
+### <a name="return-value"></a><span data-ttu-id="54d5a-108">戻り値</span><span class="sxs-lookup"><span data-stu-id="54d5a-108">Return value</span></span>
 
-<span data-ttu-id="2e911-112">Recordset</span><span class="sxs-lookup"><span data-stu-id="2e911-112">Recordset</span></span>
+<span data-ttu-id="54d5a-109">Recordset</span><span class="sxs-lookup"><span data-stu-id="54d5a-109">Recordset</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="2e911-113">注釈</span><span class="sxs-lookup"><span data-stu-id="2e911-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="54d5a-110">注釈</span><span class="sxs-lookup"><span data-stu-id="54d5a-110">Remarks</span></span>
 
-<span data-ttu-id="2e911-p101">**Clone** メソッドは、複数の複製 **Recordset** オブジェクトを作成するために使用します。各レコードセットには、カレント レコードを個別に設定できます。 **Clone** を使用するだけならば、オブジェクトや基になる構造に含まれるデータは変更されません。 **Clone** メソッドを使用すると、複数の **Recordset2** オブジェクト間で各自のブックマークを交換できるため、ブックマークを共有できます。</span><span class="sxs-lookup"><span data-stu-id="2e911-p101">Use the **Clone** method to create multiple, duplicate **Recordset** objects. Each recordset can have its own current record. Using **Clone** by itself doesn't change the data in the objects or in their underlying structures. When you use the **Clone** method, you can share bookmarks between two or more **Recordset2** objects because their bookmarks are interchangeable.</span></span>
+<span data-ttu-id="54d5a-p101">**Clone** メソッドは、複数の複製 **Recordset** オブジェクトを作成するために使用します。各レコードセットには、カレント レコードを個別に設定できます。 **Clone** を使用するだけならば、オブジェクトや基になる構造に含まれるデータは変更されません。 **Clone** メソッドを使用すると、複数の **Recordset2** オブジェクト間で各自のブックマークを交換できるため、ブックマークを共有できます。</span><span class="sxs-lookup"><span data-stu-id="54d5a-p101">Use the **Clone** method to create multiple, duplicate **Recordset** objects. Each recordset can have its own current record. Using **Clone** by itself doesn't change the data in the objects or in their underlying structures. When you use the **Clone** method, you can share bookmarks between two or more **Recordset2** objects because their bookmarks are interchangeable.</span></span>
 
-<span data-ttu-id="2e911-p102">**Clone** メソッドは、レコードセットでカレント レコードが複数必要となる操作を行う場合に使用できます。この方法は、2 つ目のレコードセットを開くよりも迅速で効率的です。 **Clone** メソッドを使用してレコードセットを作成すると、初期状態ではカレント レコードが設定されていません。レコードセットの複製を使用する前に、特定のレコードをカレント レコードに設定するには、 **[Bookmark](recordset2-bookmark-property-dao.md)** プロパティを設定するか、 **[Move](recordset-movefirst-method-dao.md)** メソッドのうちのいずれか、 **[Find](recordset2-findfirst-method-dao.md)** メソッドのうちのいずれか、または **[Seek](recordset2-seek-method-dao.md)** メソッドを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2e911-p102">You can use the **Clone** method when you want to perform an operation on a recordset that requires multiple current records. This is faster and more efficient than opening a second recordset. When you create a recordset with the **Clone** method, it initially lacks a current record. To make a record current before you use the recordset clone, you must set the **[Bookmark](recordset2-bookmark-property-dao.md)** property or use one of the **[Move](recordset-movefirst-method-dao.md)** methods, one of the **[Find](recordset2-findfirst-method-dao.md)** methods, or the **[Seek](recordset2-seek-method-dao.md)** method.</span></span>
+<span data-ttu-id="54d5a-p102">**Clone** メソッドは、レコードセットでカレント レコードが複数必要となる操作を行う場合に使用できます。この方法は、2 つ目のレコードセットを開くよりも迅速で効率的です。 **Clone** メソッドを使用してレコードセットを作成すると、初期状態ではカレント レコードが設定されていません。レコードセットの複製を使用する前に、特定のレコードをカレント レコードに設定するには、 **[Bookmark](recordset2-bookmark-property-dao.md)** プロパティを設定するか、 **[Move](recordset-movefirst-method-dao.md)** メソッドのうちのいずれか、 **[Find](recordset2-findfirst-method-dao.md)** メソッドのうちのいずれか、または **[Seek](recordset2-seek-method-dao.md)** メソッドを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="54d5a-p102">You can use the **Clone** method when you want to perform an operation on a recordset that requires multiple current records. This is faster and more efficient than opening a second recordset. When you create a recordset with the **Clone** method, it initially lacks a current record. To make a record current before you use the recordset clone, you must set the **[Bookmark](recordset2-bookmark-property-dao.md)** property or use one of the **[Move](recordset-movefirst-method-dao.md)** methods, one of the **[Find](recordset2-findfirst-method-dao.md)** methods, or the **[Seek](recordset2-seek-method-dao.md)** method.</span></span>
 
-<span data-ttu-id="2e911-p103">元のオブジェクトまたは複製オブジェクトのどちらかで **[Close](connection-close-method-dao.md)** メソッドを使用しても、もう一方のオブジェクトに影響が及ぶことはありません。たとえば、元のレコードセットで **Close** を使用しても、複製が閉じられることはありません。</span><span class="sxs-lookup"><span data-stu-id="2e911-p103">Using the **[Close](connection-close-method-dao.md)** method on either the original or duplicate object doesn't affect the other object. For example, using **Close** on the original recordset doesn't close the clone.</span></span>
+<span data-ttu-id="54d5a-p103">元のオブジェクトまたは複製オブジェクトのどちらかで **[Close](connection-close-method-dao.md)** メソッドを使用しても、もう一方のオブジェクトに影響が及ぶことはありません。たとえば、元のレコードセットで **Close** を使用しても、複製が閉じられることはありません。</span><span class="sxs-lookup"><span data-stu-id="54d5a-p103">Using the **[Close](connection-close-method-dao.md)** method on either the original or duplicate object doesn't affect the other object. For example, using **Close** on the original recordset doesn't close the clone.</span></span>
 
 
 > [!NOTE]
 > <UL>
 > <LI>
-> <P><span data-ttu-id="2e911-124">保留中のトランザクションで複製レコードセットを閉じると、 <STRONG>Rollback</STRONG> 操作が暗黙的に実行されます。</span><span class="sxs-lookup"><span data-stu-id="2e911-124">Closing a clone recordset within a pending transaction will cause an implicit <STRONG>Rollback</STRONG> operation.</span></span></P>
+> <P><span data-ttu-id="54d5a-121">保留中のトランザクションで複製レコードセットを閉じると、 <STRONG>Rollback</STRONG> 操作が暗黙的に実行されます。</span><span class="sxs-lookup"><span data-stu-id="54d5a-121">Closing a clone recordset within a pending transaction will cause an implicit <STRONG>Rollback</STRONG> operation.</span></span></P>
 > <LI>
-> <P><span data-ttu-id="2e911-p104">Microsoft Access ワークスペースでテーブル タイプの <STRONG>Recordset</STRONG> オブジェクトを複製した場合、 <STRONG><A href="recordset2-index-property-dao.md">Index</A></STRONG> プロパティの設定はレコードセットの新しいコピーに反映されません。このため、 <STRONG>Index</STRONG> プロパティの設定を手動でコピーする必要があります。</span><span class="sxs-lookup"><span data-stu-id="2e911-p104">When you clone a table-type <STRONG>Recordset</STRONG> object in a Microsoft Access workspace, the <STRONG><A href="recordset2-index-property-dao.md">Index</A></STRONG> property setting is not cloned on the new copy of the recordset. You must copy the <STRONG>Index</STRONG> property setting manually.</span></span></P></LI></UL>
+> <P><span data-ttu-id="54d5a-p104">Microsoft Access ワークスペースでテーブル タイプの <STRONG>Recordset</STRONG> オブジェクトを複製した場合、 <STRONG><A href="recordset2-index-property-dao.md">Index</A></STRONG> プロパティの設定はレコードセットの新しいコピーに反映されません。このため、 <STRONG>Index</STRONG> プロパティの設定を手動でコピーする必要があります。</span><span class="sxs-lookup"><span data-stu-id="54d5a-p104">When you clone a table-type <STRONG>Recordset</STRONG> object in a Microsoft Access workspace, the <STRONG><A href="recordset2-index-property-dao.md">Index</A></STRONG> property setting is not cloned on the new copy of the recordset. You must copy the <STRONG>Index</STRONG> property setting manually.</span></span></P></LI></UL>
 
 
 
-## <a name="example"></a><span data-ttu-id="2e911-127">例</span><span class="sxs-lookup"><span data-stu-id="2e911-127">Example</span></span>
+## <a name="example"></a><span data-ttu-id="54d5a-124">例</span><span class="sxs-lookup"><span data-stu-id="54d5a-124">Example</span></span>
 
-<span data-ttu-id="2e911-128">次の例では、 **Clone** メソッドを使用してレコードセットのコピーを作成し、ユーザーが各コピーのレコード ポインターの位置を個別に設定できるようにします。</span><span class="sxs-lookup"><span data-stu-id="2e911-128">This example uses the **Clone** method to create copies of a recordset and then lets the user position the record pointer of each copy independently.</span></span>
+<span data-ttu-id="54d5a-125">次の例では、 **Clone** メソッドを使用してレコードセットのコピーを作成し、ユーザーが各コピーのレコード ポインターの位置を個別に設定できるようにします。</span><span class="sxs-lookup"><span data-stu-id="54d5a-125">This example uses the **Clone** method to create copies of a recordset and then lets the user position the record pointer of each copy independently.</span></span>
 
 ```vb
     Sub CloneX() 

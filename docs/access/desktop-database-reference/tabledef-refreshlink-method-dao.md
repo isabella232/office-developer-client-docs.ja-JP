@@ -10,34 +10,34 @@ f1_keywords:
 - dao360.chm1052980
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 5c9d3e5f48cdd85163eec291a13583c0d4b96204
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 88cd8083f8dc1b71c574be1e31a8b7b735595090
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477448"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876877"
 ---
-# <a name="tabledefrefreshlink-method-dao"></a><span data-ttu-id="daf3a-102">TableDef.RefreshLink メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="daf3a-102">TableDef.RefreshLink Method (DAO)</span></span>
+# <a name="tabledefrefreshlink-method-dao"></a><span data-ttu-id="ffbbc-102">TableDef.RefreshLink メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="ffbbc-102">TableDef.RefreshLink Method (DAO)</span></span>
 
-<span data-ttu-id="daf3a-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="daf3a-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="ffbbc-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="ffbbc-103">**Applies to**: Access 2013, Office 2013</span></span>
  
-<span data-ttu-id="daf3a-104">リンク テーブルの接続情報を更新します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="daf3a-104">Updates the connection information for a linked table (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="ffbbc-104">リンク テーブルの接続情報を更新します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="ffbbc-104">Updates the connection information for a linked table (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="daf3a-105">構文</span><span class="sxs-lookup"><span data-stu-id="daf3a-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ffbbc-105">構文</span><span class="sxs-lookup"><span data-stu-id="ffbbc-105">Syntax</span></span>
 
-<span data-ttu-id="daf3a-106">*式*です。RefreshLink</span><span class="sxs-lookup"><span data-stu-id="daf3a-106">*expression* .RefreshLink</span></span>
+<span data-ttu-id="ffbbc-106">*式*です。RefreshLink</span><span class="sxs-lookup"><span data-stu-id="ffbbc-106">*expression* .RefreshLink</span></span>
 
-<span data-ttu-id="daf3a-107">\*式\***テーブル定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="daf3a-107">*expression* A variable that represents a **TableDef** object.</span></span>
+<span data-ttu-id="ffbbc-107">\*式\***テーブル定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="ffbbc-107">*expression* A variable that represents a **TableDef** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="daf3a-108">解説</span><span class="sxs-lookup"><span data-stu-id="daf3a-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ffbbc-108">解説</span><span class="sxs-lookup"><span data-stu-id="ffbbc-108">Remarks</span></span>
 
-<span data-ttu-id="daf3a-p101">リンク テーブルの接続情報を変更するには、対応する [TableDef](connection-connect-property-dao.md) オブジェクトの \*\*\*\*Connect\*\*\*\* プロパティをリセットした上で、 **RefreshLink** メソッドを使用して情報を更新します。 **RefreshLink** メソッドを使用しても、リンク テーブルのプロパティ、および **[Relation](relation-object-dao.md)** オブジェクトは変更されません。</span><span class="sxs-lookup"><span data-stu-id="daf3a-p101">To change the connection information for a linked table, reset the **[Connect](connection-connect-property-dao.md)** property of the corresponding **TableDef** object and then use the **RefreshLink** method to update the information. Using **RefreshLink** method doesn't change the linked table's properties and **[Relation](relation-object-dao.md)** objects.</span></span>
+<span data-ttu-id="ffbbc-p101">リンク テーブルの接続情報を変更するには、対応する [TableDef](connection-connect-property-dao.md) オブジェクトの \*\*\*\*Connect\*\*\*\* プロパティをリセットした上で、 **RefreshLink** メソッドを使用して情報を更新します。 **RefreshLink** メソッドを使用しても、リンク テーブルのプロパティ、および **[Relation](relation-object-dao.md)** オブジェクトは変更されません。</span><span class="sxs-lookup"><span data-stu-id="ffbbc-p101">To change the connection information for a linked table, reset the **[Connect](connection-connect-property-dao.md)** property of the corresponding **TableDef** object and then use the **RefreshLink** method to update the information. Using **RefreshLink** method doesn't change the linked table's properties and **[Relation](relation-object-dao.md)** objects.</span></span>
 
-<span data-ttu-id="daf3a-111">リンク テーブルを表す **TableDef** オブジェクトに関連付けられたすべてのコレクションにこの接続情報を反映するには、各コレクションで **[Refresh](tabledefs-refresh-method-dao.md)** メソッドを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="daf3a-111">For this connection information to exist in all collections associated with the **TableDef** object that represents the linked table, you must use the **[Refresh](tabledefs-refresh-method-dao.md)** method on each collection.</span></span>
+<span data-ttu-id="ffbbc-111">リンク テーブルを表す **TableDef** オブジェクトに関連付けられたすべてのコレクションにこの接続情報を反映するには、各コレクションで **[Refresh](tabledefs-refresh-method-dao.md)** メソッドを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ffbbc-111">For this connection information to exist in all collections associated with the **TableDef** object that represents the linked table, you must use the **[Refresh](tabledefs-refresh-method-dao.md)** method on each collection.</span></span>
 
-## <a name="example"></a><span data-ttu-id="daf3a-112">例</span><span class="sxs-lookup"><span data-stu-id="daf3a-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ffbbc-112">例</span><span class="sxs-lookup"><span data-stu-id="ffbbc-112">Example</span></span>
 
-<span data-ttu-id="daf3a-p102">この例では、 **RefreshLink** メソッドを使用して、リンク テーブルの接続が、あるデータ ソースから別のデータ ソースに変更された後に、リンク テーブルのデータを更新します。このプロシージャを実行するには、RefreshLinkOutput プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="daf3a-p102">This example uses the **RefreshLink** method to refresh the data in a linked table after its connection has been changed from one data source to another. The RefreshLinkOutput procedure is required for this procedure to run.</span></span>
+<span data-ttu-id="ffbbc-p102">この例では、 **RefreshLink** メソッドを使用して、リンク テーブルの接続が、あるデータ ソースから別のデータ ソースに変更された後に、リンク テーブルのデータを更新します。このプロシージャを実行するには、RefreshLinkOutput プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="ffbbc-p102">This example uses the **RefreshLink** method to refresh the data in a linked table after its connection has been changed from one data source to another. The RefreshLinkOutput procedure is required for this procedure to run.</span></span>
 
 ```vb 
 Sub RefreshLinkX() 

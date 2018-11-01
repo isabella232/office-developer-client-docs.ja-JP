@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249621(v=office.15)
 ms:contentKeyID: 48546259
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b2a5f277f7d2ecb30652fb57427893a1cd8fd34c
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 2db13f2361bd899b47979562099ab85d701f2327
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861548"
+ms.locfileid: "25879544"
 ---
-# <a name="clone-method-example-vj"></a><span data-ttu-id="96e29-102">Clone メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="96e29-102">Clone method example (VJ++)</span></span>
+# <a name="clone-method-example-vj"></a><span data-ttu-id="af538-102">Clone メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="af538-102">Clone method example (VJ++)</span></span>
 
 
-<span data-ttu-id="96e29-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="96e29-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="af538-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="af538-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="96e29-104">この例では、 [Clone](clone-method-ado.md) メソッドを使用して [Recordset](recordset-object-ado.md) のコピーを作成し、ユーザーが各コピーのレコード ポインターを個別に配置できるようにします。</span><span class="sxs-lookup"><span data-stu-id="96e29-104">This example uses the [Clone](clone-method-ado.md) method to create copies of a [Recordset](recordset-object-ado.md) and then lets the user position the record pointer of each copy independently.</span></span>
+<span data-ttu-id="af538-104">この例では、 [Clone](clone-method-ado.md) メソッドを使用して [Recordset](recordset-object-ado.md) のコピーを作成し、ユーザーが各コピーのレコード ポインターを個別に配置できるようにします。</span><span class="sxs-lookup"><span data-stu-id="af538-104">This example uses the [Clone](clone-method-ado.md) method to create copies of a [Recordset](recordset-object-ado.md) and then lets the user position the record pointer of each copy independently.</span></span>
 
 ```java 
  
