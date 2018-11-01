@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250073(v=office.15)
 ms:contentKeyID: 48547960
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d2ac2bee2bf3f1036583bd195edc0c3da9e052f3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 119e4bc607296d1a68aef6f85d44f15718940b42
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479529"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25866986"
 ---
 # <a name="minimizing-log-file-space-usage"></a>ログファイルの使用領域を最小化する
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ログ ファイルがすぐにいっぱいことがあります (したがって、サーバーを停止する) 大量の SQL Server データベース上のアクティビティがある場合。 ログ ファイルを設定するには **[チェックポイント時の切り捨て**はデータベースのログ ファイルのライフ サイクルを大幅に拡張します。
 

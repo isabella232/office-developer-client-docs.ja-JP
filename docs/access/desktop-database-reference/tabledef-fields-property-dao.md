@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1052902
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: feb2bffa7dc29dac35aef92aef5b32c289024e06
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c3abf15e4e89e4f9493cdd4183797223f37df3b6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477764"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886033"
 ---
 # <a name="tabledeffields-property-dao"></a>TableDef.Fields プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 指定されたオブジェクト用に保存されているすべての **Field** オブジェクトを表す **Fields** コレクションを取得します。値の取得のみ可能です。
 

@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1052966
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f76cb57345b7ec653092517d72fa3355a29de6cd
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: c7813b73b5e003a32e05592d35ad2a75a8fd7a45
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862563"
+ms.locfileid: "25869702"
 ---
 # <a name="dbenginecreateworkspace-method-dao"></a>DBEngine.CreateWorkspace メソッド (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 新しい **[Workspace](workspace-object-dao.md)** オブジェクトを作成します。
@@ -89,11 +89,7 @@ ms.locfileid: "25862563"
 </table>
 
 
-<<<<<<< 見出し
 ### <a name="return-value"></a>戻り値
-=======
-### <a name="return-value"></a>戻り値
->>>>>>> master
 
 Workspace
 

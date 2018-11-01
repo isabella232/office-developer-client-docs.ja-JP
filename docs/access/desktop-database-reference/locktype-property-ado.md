@@ -1,24 +1,26 @@
 ---
-<<<<<<< ヘッド タイトル: LockType プロパティ (ADO) TOCTitle: LockType プロパティ (ADO) === タイトル: LockType プロパティ (ADO) TOCTitle: LockType プロパティ (ADO)
->>>>>>> マスターの ms:assetid: 1d2622dc-6cab-1b7f-98a8-97a41d5c047f ms:mtpsurl: https://msdn.microsoft.com/library/JJ248965(v=office.15) ms:contentKeyID: 48543589 ms.date: 2015/09/18 mtps_version: v=office.15
+title: LockType プロパティ (ADO)
+TOCTitle: LockType property (ADO)
+ms:assetid: 1d2622dc-6cab-1b7f-98a8-97a41d5c047f
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248965(v=office.15)
+ms:contentKeyID: 48543589
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 88657361d6ce5ac168f21f5709bdaf68eeb23b6d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879060"
 ---
-
-<<<<<<< ヘッド
 # <a name="locktype-property-ado"></a>LockType プロパティ (ADO)
-=======
-# <a name="locktype-property-ado"></a>LockType プロパティ (ADO)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 編集時にレコードに適用されるロックの種類を示します。
 
-<<<<<<< ヘッド
-## <a name="settings-and-return-values"></a>設定値と戻り値
-=======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
->>>>>>> master
 
 [LockTypeEnum](locktypeenum.md) の値を設定または取得します。既定値は **adLockReadOnly** です。
 

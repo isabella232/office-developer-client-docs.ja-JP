@@ -1,24 +1,26 @@
 ---
-<<<<<<< ヘッド タイトル: 名前プロパティ (ADO) TOCTitle: 名前プロパティ (ADO) === タイトル: Name プロパティ (ADO) TOCTitle: Name プロパティ (ADO)
->>>>>>> マスターの ms:assetid: 4b19bd08-ac3c-86f0-471d-06a37a0d4f89 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249234(v=office.15) ms:contentKeyID: 48544683 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Name プロパティ (ADO)
+TOCTitle: Name property (ADO)
+ms:assetid: 4b19bd08-ac3c-86f0-471d-06a37a0d4f89
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249234(v=office.15)
+ms:contentKeyID: 48544683
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 8be8e1dcb2defacffda92e4a6f60e0c7f7a8f52d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882554"
 ---
-
-<<<<<<< ヘッド
 # <a name="name-property-ado"></a>Name プロパティ (ADO)
-=======
-# <a name="name-property-ado"></a>Name プロパティ (ADO)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 オブジェクトの名前を示します。
 
-<<<<<<< ヘッド
-## <a name="settings-and-return-values"></a>設定値と戻り値
-=======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
->>>>>>> master
 
 オブジェクトの名前を示す文字列型 ( **String** ) の値を設定または取得します。
 

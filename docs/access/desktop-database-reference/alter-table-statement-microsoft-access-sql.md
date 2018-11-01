@@ -12,16 +12,16 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 83ba764fa23c972c93156d418bffcde6f3239145
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: f7dfaa7a8c3d6b3e41b2443bcca621d083c3a167
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863697"
+ms.locfileid: "25889631"
 ---
 # <a name="alter-table-statement-microsoft-access-sql"></a>ALTER TABLE ステートメント (Microsoft Access SQL)
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [CREATE TABLE](create-table-statement-microsoft-access-sql.md) ステートメントで作成されたテーブルのデザインを変更します。
 
@@ -97,12 +97,13 @@ ALTER TABLE ステートメントを使用すると、いくつかの方法で�
   ```sql
     ALTER TABLE Employees ALTER COLUMN ZipCode TEXT(10)
   ```
-  
+
 - 複数フィールド インデックスを追加するには、ADD CONSTRAINT 句を使用します。 複数フィールド インデックスの詳細については、[制約句](constraint-clause-microsoft-access-sql.md)を参照してください。
 
 - フィールドを削除するには、DROP COLUMN 句を使用します。フィールド名のみを指定します。
 
 - 複数フィールド インデックスを削除するには、DROP CONSTRAINT 句を使用します。予約語 CONSTRAINT の後にインデックス名のみを指定します。
+
 
 > [!NOTE] 
 > - 一度に複数のフィールドおよびインデックスを追加または削除することはできません。

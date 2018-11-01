@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248796(v=office.15)
 ms:contentKeyID: 48542972
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a8b6b794daf7c03df26c186ac58b9a02ed4a7419
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 66b0d7ca54723755bcdb6e24726f75836cd9716f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861233"
+ms.locfileid: "25885641"
 ---
 # <a name="ado-errors"></a>ADO エラー
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ADO エラーは、実行時エラーとしてプログラムに報告されます。 使用しているプログラミング言語のエラー トラッピング機構を使用すると、これらのエラーをトラッピングして処理できます。 たとえば、Visual Basic では、 **On Error** ステートメントを使用します。 Visual J++ では、 **try-catch** ブロックを使用します。 Visual C++ では、ADO ライブラリへのアクセス方法によって操作が異なります。 \#のインポートは、 **try-catch**ブロックを使用します。 それ以外の場合は、 **GetErrorInfo** を呼び出すことによって、明示的にエラー オブジェクトを取得する必要があります。 次の Visual Basic の sub プロシージャでは、ADO エラーをトラッピングする方法を示します。
 

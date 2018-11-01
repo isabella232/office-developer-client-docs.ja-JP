@@ -6,25 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249827(v=office.15)
 ms:contentKeyID: 48547078
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ceafd13b33536a77a1d793e7167fe8042609be5e
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 7698534d0c77952cd116ea2e9b5726c3df758413
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603330"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889694"
 ---
 # <a name="datemodified-property-adox"></a>DateModified プロパティ (ADOX)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 オブジェクトが最後に変更された日付を示します。
 
-<<<<<<< ヘッド
 ## <a name="return-values"></a>戻り値
-=======
-## <a name="return-values"></a>戻り値
->>>>>>> master
 
 変更された日付を示すバリアント型 ( **Variant** ) の値を返します。プロバイダーが **DateModified** をサポートしていない場合、値は Null 値になります。
 

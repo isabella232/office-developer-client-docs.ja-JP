@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm111536
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 8066c7e8ae827d7ae5a521682f2100bc11c9a6f8
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: fff0c9ac46e4a616fb5ea134e3dabc6b4e90576f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862892"
+ms.locfileid: "25873104"
 ---
 # <a name="transfersqldatabase-macro-action"></a>"TransferSQLDatabase/SQLデータベースの転送" マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 Access プロジェクトで、Microsoft SQL Server 7.0 以降のデータベースを別の SQL Server 7.0、またはそれ以降のデータベースを転送するのに**TransferSQLDatabase**アクションを使用できます。 データベースを転送することに関する詳細については、SQL Server のマニュアルを参照してください。
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249394(v=office.15)
 ms:contentKeyID: 48545332
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c0bf72cd44d6fa6bb5ec74e339e161ba77eea766
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: b4635e200443044f6fcd7b6ad93770df8a92590a
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860484"
+ms.locfileid: "25872040"
 ---
 # <a name="navigating-through-the-data"></a>データ内の移動
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 これで、データ ソースに対してコマンドを実行し、結果セットにデータが含まれていることを確認したら、ナビゲーション メソッドと**レコード セット**オブジェクトによって提供されるプロパティを使用して結果を移動できます。 
 

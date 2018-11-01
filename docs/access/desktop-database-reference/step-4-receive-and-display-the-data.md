@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249749(v=office.15)
 ms:contentKeyID: 48546764
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d2a447b68b8c0eeb18d18050ba8dbbb6f09786ab
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 03a089e600799e1ac5fa85886ee6a16e1dd86026
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478905"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869079"
 ---
 # <a name="step-4-receive-and-display-the-data"></a>手順 4: データを受信し、表示する
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
-## <a name="step-4-receive-and-display-the-data"></a>手順 4: データを受信し、表示する
+## <a name="step-4-receive-and-display-the-data"></a>手順 4: データの受信および表示
 
 この手順では、 [Recordset](datacontrol-object-rds.md) を取得するための XMLResponse.asp ファイルを示す **RDS.DataControl** オブジェクトが埋め込まれた HTML ファイルを作成します。Windows のメモ帳などのテキスト エディターで default.htm を開き、次のコードを追加します。URL の "sqlserver" は、実際に使用するサーバー コンピューターの名前に置き換えてください。
 

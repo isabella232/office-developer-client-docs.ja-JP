@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff823095(v=office.15)
 ms:contentKeyID: 48547604
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ba0314fff63014b36565b178f97950660ffec14f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 140ac927089a89fa5c77034c9e33d4cd1519e41c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479228"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870262"
 ---
 # <a name="openform-macro-action"></a>OpenForm マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 " **OpenForm/フォームを開く** " アクションを使用すると、フォーム ビュー、フォーム デザイン ビュー、印刷プレビュー、またはデータシート ビューのいずれかで、フォームを開くことができます。フォームを開くときのデータ入力モードやウィンドウ モードの設定を行ったり、フォームで表示するレコードを制限したりできます。
@@ -128,7 +128,7 @@ ms.locfileid: "25479228"
 <tr class="header">
 <th><p>アクション</p></th>
 <th><p>引数: 設定値</p></th>
-<th><p>コンポーネント</p></th>
+<th><p>コメント</p></th>
 </tr>
 </thead>
 <tbody>
@@ -177,7 +177,7 @@ ms.locfileid: "25479228"
 <th><p>条件</p></th>
 <th><p>アクション</p></th>
 <th><p>引数: 設定値</p></th>
-<th><p>コンポーネント</p></th>
+<th><p>コメント</p></th>
 </tr>
 </thead>
 <tbody>
