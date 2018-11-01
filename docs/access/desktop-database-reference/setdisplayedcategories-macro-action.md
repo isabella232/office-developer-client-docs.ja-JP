@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm20026
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: af4b491ff76a28c998e1ec195a861dbf065d36c8
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 53c59c17f7f5c1486c00cd849f5c35197bde3e14
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478946"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889750"
 ---
 # <a name="setdisplayedcategories-macro-action"></a>"SetDisplayedCategories/表示されるカテゴリの設定" マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **SetDisplayedCategories**アクションを使用すると、カテゴリ**のカテゴリに移動**] の下のナビゲーション ウィンドウのタイトル バーに表示を指定します。 などのオブジェクトは**作成日**順が表示されるように、ナビゲーション ウィンドウを切り替えられないようにする場合は、タイトル バーのドロップダウン リスト内のオプションを非表示にする、このアクションを使用できます。
 

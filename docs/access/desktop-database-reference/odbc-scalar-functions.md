@@ -10,17 +10,17 @@ f1_keywords:
 - jetsql40.chm5277473
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d01c5f02cc784518d58365480b30178d4d24a332
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 21e6000e8620011f5f6f0c2481bb9c03fd71bab5
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477254"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887958"
 ---
 # <a name="odbc-scalar-functions"></a>ODBC スカラー関数
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 Microsoft® Access SQL では、スカラー関数で ODBC 定義構文を使用できます。
 

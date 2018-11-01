@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197086(v=office.15)
 ms:contentKeyID: 48546177
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d062adbde4e9d7053e61342b7433939d4fbffcb8
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 3293c145ae615e7373a7061e79fc7ff531c24cf8
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476861"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881805"
 ---
 # <a name="workspacetype-property-dao"></a>Workspace.Type プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 オブジェクトの操作の種類またはデータ型を示す値を設定または取得します。値の取得のみ可能です。整数型 ( **Integer** ) の値を使用します。
 

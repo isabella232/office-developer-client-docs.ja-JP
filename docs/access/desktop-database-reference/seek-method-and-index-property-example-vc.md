@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: シーク メソッドは、インデックス プロパティの使用例 (vc++) TOCTitle: Seek メソッド、インデックス プロパティの使用例 (vc++) === タイトル: Seek メソッドとインデックス プロパティの使用例 (vc++) TOCTitle: Seek メソッドとインデックス プロパティの使用例 (vc++)
->>>>>>> マスターの ms:assetid: f99fb4e5-2ddb-ae0c-6d10-c095b3de1909 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250270(v=office.15) ms:contentKeyID: 48548820 ms.date: 2015/09/18 mtps_version: v=office.15
+title: メソッド、インデックスのシーク プロパティの使用例 (vc++)
+TOCTitle: Seek Method and Index property example (VC++)
+ms:assetid: f99fb4e5-2ddb-ae0c-6d10-c095b3de1909
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250270(v=office.15)
+ms:contentKeyID: 48548820
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 721f3fdbd69265cf5786aec43059d86f8a86bfa8
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889610"
 ---
-
-<<<<<<< ヘッド
-# <a name="seek-method-and-index-property-example-vc"></a>Seek メソッドおよび Index プロパティの使用例 (VC++)
-=======
 # <a name="seek-method-and-index-property-example-vc"></a>メソッド、インデックスのシーク プロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Recordset](recordset-object-ado.md) オブジェクトの [Seek](seek-method-ado.md) メソッドと [Index](index-property-ado.md) プロパティを、指定された ***Employee ID*** と組み合わせて使用し、Nwind.mdb データベースの ***Employees*** テーブルで社員の名前を検索します。
 

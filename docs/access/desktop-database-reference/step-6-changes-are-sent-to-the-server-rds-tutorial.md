@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249965(v=office.15)
 ms:contentKeyID: 48547611
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d26ca621ba7102dc0f9c6219ba3a16b28138770f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e125837b8f3d16e012d89374650182653f98a728
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477685"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870416"
 ---
-# <a name="step-6-changes-are-sent-to-the-server-rds-tutorial"></a>手順 6: サーバーに変更を送信する (RDS チュートリアル)
+# <a name="step-6-changes-are-sent-to-the-server-rds-tutorial"></a>手順 6: サーバーへの変更の送信 (RDS チュートリアル)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **Recordset** オブジェクトが編集された場合、あらゆる変更内容 (つまり、追加、変更、または削除された行) をサーバーに返送できます。
 

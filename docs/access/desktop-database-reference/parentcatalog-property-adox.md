@@ -6,25 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249535(v=office.15)
 ms:contentKeyID: 48545891
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d9fdd4b41578b4f185d199a47204faabd0af3ff8
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: e316beebd45b39d7cbbb0714499ec7156a4bb270
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603414"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883723"
 ---
 # <a name="parentcatalog-property-adox"></a>ParentCatalog プロパティ (ADOX)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 プロバイダー固有のプロパティへのアクセスを提供する、テーブルまたは列の親カタログを指定します。
 
-<<<<<<< ヘッド
-## <a name="settings-and-return-values"></a>設定値と戻り値
-=======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
->>>>>>> master
 
 [Catalog](catalog-object-adox.md) オブジェクトを設定および取得します。 **ParentCatalog** を開かれた **Catalog** に設定すると、テーブルまたは列を **Catalog** コレクションに追加する前に、プロバイダー固有のプロパティにアクセスできます。
 

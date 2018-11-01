@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1053035
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 334577bcd9e90a059c3722088fe21e8210e1d8db
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 93288a7b3ab204023d252bed82461d11bab25d5c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477661"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867541"
 ---
 # <a name="dbengineworkspaces-property-dao"></a>DBEngine.Workspaces プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 アクティブな、隠されていない **Workspace** オブジェクトをすべて含む **Workspaces** コレクションを返します。値の取得のみ可能です。
 

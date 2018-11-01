@@ -6,20 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249801(v=office.15)
 ms:contentKeyID: 48547001
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3382b86ad14b484cb0fb9a8f6ecbd95018c25835
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 1735de700fe1b0e786f55f0539495656dd9db2d7
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25607012"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883002"
 ---
 # <a name="datacontrol-object-rds"></a>DataControl オブジェクト (RDS)
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
-<<<<<<< に 1 つまたは複数のコントロール (たとえば、テキスト ボックス、グリッド コントロール、またはコンボ ボックス) Web ページ上の**レコード セット**データを表示する[レコード セット](recordset-object-ado.md)をクエリするヘッドがデータにバインドします。
-=== 1 つまたは複数のコントロール (たとえば、テキスト ボックス、グリッド コントロール、またはコンボ ボックス) web ページの**レコード セット**データを表示するデータのクエリ[のレコード セット](recordset-object-ado.md)にバインドします。
->>>>>>> master
+1 つまたは複数のコントロール (たとえば、テキスト ボックス、グリッド コントロール、またはコンボ ボックス) web ページの**レコード セット**データを表示するには、データ クエリ[のレコード セット](recordset-object-ado.md)をバインドします。
 
 ## <a name="syntax"></a>構文
 
@@ -82,24 +80,15 @@ ms.locfileid: "25607012"
 
 複数のクエリの結果を異なるビジュアル コントロールにリンクするには、異なる **RDS.DataControl** オブジェクトを使用します。たとえば、1 つ目のクエリを使用して得意先に関する情報を取得し、2 つ目のクエリを使用して得意先が購入した商品に関する情報を取得するとします。最初のクエリの結果を 3 つのテキスト ボックスと 1 つのチェック ボックスに、2 つ目のクエリの結果をグリッド コントロールに表示します。既定のビジネス オブジェクト (**RDSServer.DataFactory**) を使用する場合、次のような操作を実行する必要があります。
 
-<<<<<<< ヘッド
-  - 2 つの **RDS.DataControl** オブジェクトを Web ページに追加します。
-=======
   - 2 つの追加**rds.DataControl**オブジェクトを web ページにします。
->>>>>>> master
 
   - 2 つの **RDS.DataControl** オブジェクトの各 **SQL** プロパティに 1 つずつ、合計 2 つのクエリを記述します。1 つ目の **RDS.DataControl** オブジェクトには、顧客の情報を要求する SQL クエリを、2 つ目のオブジェクトには、顧客が購入した商品の一覧を要求するクエリを格納します。
 
   - 連結コントロールの各 OBJECT タグで、DATAFLD 値を指定して、各ビジュアル コントロールに表示するデータの値を設定します。
 
-<<<<<<< ヘッドは rds. の**の数の数の制限DataControl**オブジェクトを単一の Web ページ上のオブジェクト タグを使用して埋め込むことができます。
-
-<a name="when-you-define-the-rdsdatacontrol-object-on-a-web-page-use-nonzero-height-and-width-values-such-as-1-to-avoid-the-inclusion-of-extra-space"></a>Web ページ上の **RDS.DataControl** オブジェクトを定義する場合、 **Height** と **Width** の値として、1 などの 0 以外の値を指定します (余分な空白を含めないため)。
-=======
 **Rds. 数のカウントの制限はありません。DataControl**オブジェクトを 1 つの web ページ上のオブジェクト タグを使用して埋め込むことができます。
 
 Rds. の**を定義する場合DataControl** web ページ上のオブジェクト、1、0 以外の**幅**と**高さ**の値を使用して、避けるために余分なスペースを含めること)。
->>>>>>> master
 
 リモート データ サービスのクライアント コンポーネントは、Internet Explorer 4.0 の一部として既に組み込まれています。このため、 **RDS.DataControl** オブジェクトのタグに、CODEBASE パラメーターを含める必要はありません。
 

@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1053557
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4b1768b61dcb6b14bc5d67e945379c5ebb5c399a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 52ad71b0b9410a20fe848fb1428f3cdc83a966a8
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478721"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870822"
 ---
 # <a name="relationpartialreplica-property-dao"></a>Relation.PartialReplica プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 フル レプリカから部分レプリカに値を設定するときに、 **Relation** オブジェクトのリレーションシップを考慮する必要があるかどうかを示す値を設定または取得します (Microsoft Access データベース エンジンのデータベースのみ)。値の取得および設定が可能です。ブール型 ( **Boolean**) の値を使用します。
 

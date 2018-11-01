@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249132(v=office.15)
 ms:contentKeyID: 48544197
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1794e3e13bc2c8fe7c3acc9bbd1413daf4938d2c
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 972a367d18613fd8c8935ded60223e78ee0dc4d7
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25859994"
+ms.locfileid: "25887433"
 ---
 # <a name="ado-events-model-example-vc"></a>ADO イベント モデルの使用例 (vc++)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 「[ADO イベントのインスタンス化 (言語別)](https://msdn.microsoft.com/library/jj250244\(v=office.15\))」の Visual C++ のセクションには、ADO イベント モデルのインスタンスを作成する方法についての一般的な説明があります。 次の具体的な例によって作成される環境内でイベント モデルのインスタンスを作成するのでは、**\#インポート**ディレクティブです。
 

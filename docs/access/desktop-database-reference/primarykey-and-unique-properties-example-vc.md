@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 主キーおよび一意のプロパティの使用例 (vc++) TOCTitle: 主キーおよび一意のプロパティの使用例 (vc++) === タイトル: 主キーや Unique プロパティの使用例 (vc++) TOCTitle: 主キーと一意のプロパティ使用例 (vc++)
->>>>>>> マスターの ms:assetid: 0aa3faf6-5165-911a-8167-4a7bdd1c7ceb ms:mtpsurl: https://msdn.microsoft.com/library/JJ248838(v=office.15) ms:contentKeyID: 48543158 ms.date: 2015/09/18 mtps_version: v=office.15
+title: PrimaryKey プロパティと Unique プロパティの使用例 (VC++)
+TOCTitle: PrimaryKey and Unique properties example (VC++)
+ms:assetid: 0aa3faf6-5165-911a-8167-4a7bdd1c7ceb
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248838(v=office.15)
+ms:contentKeyID: 48543158
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: ec71b8aec6990fbd0f05312fecf751c568773a3d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883408"
 ---
-
-<<<<<<< ヘッド
 # <a name="primarykey-and-unique-properties-example-vc"></a>PrimaryKey プロパティと Unique プロパティの使用例 (VC++)
-=======
-# <a name="primarykey-and-unique-properties-example-vc"></a>主キーや Unique プロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ここでは、[Index](primarykey-property-adox.md) の [PrimaryKey](unique-property-adox.md) プロパティおよび [Unique](index-object-adox.md) プロパティのコード例を示します。このコードでは 2 つの列を持つ新しいテーブルを作成します。 **PrimaryKey** プロパティおよび **Unique** プロパティを使用して列の 1 つに主キーを設定すると、重複した値の入力ができなくなります。
 

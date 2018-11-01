@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249506(v=office.15)
 ms:contentKeyID: 48545792
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d87dc84217b716505302464825a1857fecf67669
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 449a752d4ab9e1680a3cf318e73802d39d7033fb
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25606823"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25884202"
 ---
 # <a name="rds-tutorial-vbscript"></a>RDS チュートリアル (VBScript)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 これは、Microsoft Visual Basic Scripting Edition でコーディングされた RDS チュートリアルです。このチュートリアルの目的については、「[12 章: RDS チュートリアル](chapter-12-rds-tutorial.md)」を参照してください。
 
@@ -43,8 +43,7 @@ ms.locfileid: "25606823"
 
 **手順 1: サーバー プログラムを指定する**
 
-<<<<<<< ヘッドの VBScript を検出中に Active Server Pages で利用できる VBScript の**Request.ServerVariables**メソッドにアクセスする IIS Web サーバーの名前: === VBScript は、IIS web の名前を検出できます中 Active Server Pages で利用できる VBScript の**Request.ServerVariables**メソッドにアクセスするサーバー:
->>>>>>> master
+VBScript では、中に Active Server Pages で利用できる VBScript の**Request.ServerVariables**メソッドにアクセスする IIS web サーバーの名前を検出できます。
 
 ```vb 
  

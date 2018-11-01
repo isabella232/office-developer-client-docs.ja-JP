@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: MarshalOptions プロパティの使用例 (vj++) TOCTitle: MarshalOptions プロパティの使用例 (vj++) === タイトル: MarshalOptions プロパティの使用例 (vj++) TOCTitle: MarshalOptions プロパティの使用例 (vj++)
->>>>>>> マスターの ms:assetid: 3c565ed1-1a60-77f5-7c69-ceb28027cb40 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249158(v=office.15) ms:contentKeyID: 48544313 ms.date: 2015/09/18 mtps_version: v=office.15
+title: MarshalOptions プロパティの使用例 (VJ++)
+TOCTitle: MarshalOptions property example (VJ++)
+ms:assetid: 3c565ed1-1a60-77f5-7c69-ceb28027cb40
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249158(v=office.15)
+ms:contentKeyID: 48544313
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: dfb62f996bc09446445d8ef2cc49644fa99c1a2c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883191"
 ---
-
-<<<<<<< ヘッド
 # <a name="marshaloptions-property-example-vj"></a>MarshalOptions プロパティの使用例 (VJ++)
-=======
-# <a name="marshaloptions-property-example-vj"></a>MarshalOptions プロパティの使用例 (vj++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[MarshalOptions](marshaloptions-property-ado.md) プロパティを使って、サーバーに送り返される行 (すべての行または修正された行のみ) を指定します。
 

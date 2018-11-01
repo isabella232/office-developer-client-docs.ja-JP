@@ -6,24 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249322(v=office.15)
 ms:contentKeyID: 48545081
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6d9133f37b236cfa876a5d6ae8642f25f919f2cb
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 30707140284c4c4fda157e276e62666f0344ad14
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25602805"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872005"
 ---
 # <a name="resync-command-property--dynamic-ado"></a>Resync Command プロパティ -- 動的 (ADO)
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [Unique Table](resync-method-ado.md) 動的プロパティに指定されているテーブルのデータを更新するために [Resync](unique-table-unique-schema-unique-catalog-properties-dynamic-ado.md) メソッドが発行する、ユーザー指定のコマンド文字列を指定します。
 
-<<<<<<< ヘッド
-## <a name="settings-and-return-values"></a>設定値と戻り値
-=======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
->>>>>>> master
 
 コマンド文字列である文字列型 ( **String** ) の値を設定または取得します。
 

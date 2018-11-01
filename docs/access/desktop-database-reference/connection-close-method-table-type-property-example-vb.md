@@ -1,15 +1,21 @@
 ---
-<<<<<<< ヘッド タイトル: 接続の終了方法、テーブルの種類プロパティの使用例 (VB) TOCTitle: 接続の終了メソッドは、テーブルの種類プロパティの使用例 (VB) === タイトル: 接続の Close メソッドをテーブル型のプロパティの使用例 (VB) TOCTitle:接続の Close メソッドをテーブル型のプロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: cd0bb6ad-af7b-fb9c-d45c-5d4b62459c03 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250019(v=office.15) ms:contentKeyID: 48547754 ms.date: 2015/09/18 mtps_version: v=office.15
+title: 接続の Close メソッドをテーブル型のプロパティの使用例 (VB)
+TOCTitle: Connection Close Method, Table Type property example (VB)
+ms:assetid: cd0bb6ad-af7b-fb9c-d45c-5d4b62459c03
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250019(v=office.15)
+ms:contentKeyID: 48547754
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 388e601d7267eabd01843640ab795fd0ea914a05
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868316"
 ---
-
-<<<<<<< ヘッド
-# <a name="connection-close-method-table-type-property-example-vb"></a>Connection の Close メソッドおよび Table の Type プロパティの使用例 (VB)
-=======
 # <a name="connection-close-method-table-type-property-example-vb"></a>接続の Close メソッドをテーブル型のプロパティの使用例 (VB)
->>>>>>> master
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [ActiveConnection](activeconnection-property-adox.md) プロパティを **Nothing** に設定すると、カタログが閉じます。関連付けられたコレクションは、空になります。カタログのスキーマ オブジェクトから作成されたオブジェクトは、すべて孤立化します。キャッシュされたオブジェクトのプロパティはいずれも使用できますが、プロバイダーの呼び出しが必要なプロパティを取得しようとすると失敗します。
 

@@ -12,17 +12,17 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b47b9fcc5b3c4422ec60bbdaf06193533c20b6e9
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0ef07e29258035486a89e1b2cc19519d3f2f7c9f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479083"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889967"
 ---
 # <a name="with-owneraccess-option-declaration-microsoft-access-sql"></a>WITH OWNERACCESS OPTION 宣言 (Microsoft Access SQL)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 セキュリティで保護されたワークグループを使用したマルチユーザー環境で、クエリを使用するユーザーにクエリの所有者と同等の権限を与える場合に使用します。
 

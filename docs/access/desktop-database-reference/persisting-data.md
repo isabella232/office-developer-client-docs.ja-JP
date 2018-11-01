@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250010(v=office.15)
 ms:contentKeyID: 48547715
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1fdac02c2293088c60c3346b333b6619777b9a18
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: f4db6e157ff5999dbf8892029840529c2306ef4e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862913"
+ms.locfileid: "25869933"
 ---
 # <a name="persisting-data"></a>データの永続化
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ポータブル コンピューター (ラップトップなど) の場合、接続状態と切断状態の両方で実行できるアプリケーションが必要です。ADO では、クライアント カーソル **Recordset** をディスクに保存し、後で再読み込みできる機能を開発者に提供することで、このような状況をサポートしています。
 

@@ -1,24 +1,26 @@
 ---
-<<<<<<< ヘッド タイトル: 説明プロパティ (ADO) TOCTitle: 説明プロパティ (ADO) === タイトル: Description プロパティ (ADO) TOCTitle: Description プロパティ (ADO)
->>>>>>> マスターの ms:assetid: 31df5e36-641c-d213-31fc-6244e2983327 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249092(v=office.15) ms:contentKeyID: 48544064 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Description プロパティ (ADO)
+TOCTitle: Description property (ADO)
+ms:assetid: 31df5e36-641c-d213-31fc-6244e2983327
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249092(v=office.15)
+ms:contentKeyID: 48544064
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: fc2a7706afbf69d9949e8b04122b144c6826ec40
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882939"
 ---
-
-<<<<<<< ヘッド
 # <a name="description-property-ado"></a>Description プロパティ (ADO)
-=======
-# <a name="description-property-ado"></a>Description プロパティ (ADO)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [Error](error-object-ado.md) オブジェクトを記述します。
 
-<<<<<<< ヘッド
 ## <a name="return-value"></a>戻り値
-=======
-## <a name="return-value"></a>戻り値
->>>>>>> master
 
 エラーの内容を表す文字列型 ( **String** ) の値を返します。
 

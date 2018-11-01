@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249808(v=office.15)
 ms:contentKeyID: 48547024
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0932ca9d05ab8adac59efb2bb4bfec65796e7340
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: a807abde57212d894cd8bc96b51d28ddb8ac7095
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862542"
+ms.locfileid: "25886957"
 ---
 # <a name="appendix-c-programming-with-ado"></a>付録 C: ADO を使用したプログラミング
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ADO は、Microsoft Visual Basic、VBScript、JScript、Visual C++、Visual J++ などのさまざまなプログラミング言語に利用できる COM オートメーション インターフェイス コンポーネントです。これらのツールおよび Microsoft Office や Microsoft SQL Server などのアプリケーションと共に、ADO のいずれかのバージョンもインストールされます。詳細については、「[データ プラットフォーム デベロッパー センター](https://msdn.microsoft.com/data/default.aspx)」を参照してください。
 

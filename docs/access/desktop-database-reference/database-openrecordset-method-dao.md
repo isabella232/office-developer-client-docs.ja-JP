@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052939
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 0dd33e24914d7e45d8678379df5825a42ef0b6fd
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 0bc6cc78d932b6735b231d86347512d1c0a4b25d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25605836"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868288"
 ---
 # <a name="databaseopenrecordset-method-dao"></a>Database.OpenRecordset メソッド (DAO)
 
@@ -54,7 +54,7 @@ ms.locfileid: "25605836"
 <td><p>新しい <strong>Recordset</strong> のレコードの取得元です。テーブル名、クエリ名、またはレコードを返す SQL ステートメントを指定できます。Microsoft Access データベース エンジンのデータベースに含まれるテーブル タイプの <strong>Recordset</strong> オブジェクトの場合は、テーブル名でのみ指定できます。  </p></td>
 </tr>
 <tr class="even">
-<td><p>種類</p></td>
+<td><p>型</p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>開く <a href="recordsettypeenum-enumeration-dao.md">Recordset</a> の型を示す <strong><strong>RecordsetTypeEnum</strong></strong> 定数。</p>
@@ -93,11 +93,7 @@ ms.locfileid: "25605836"
 </table>
 
 
-<<<<<<< ヘッド
 ### <a name="return-value"></a>戻り値
-=======
-### <a name="return-value"></a>戻り値
->>>>>>> master
 
 Recordset
 

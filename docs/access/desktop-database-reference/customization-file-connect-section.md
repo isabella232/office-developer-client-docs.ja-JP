@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248802(v=office.15)
 ms:contentKeyID: 48542985
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: dd4b7eed3cb5d8192866127322c00e7ecd5a15b5
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f160fe06167cde6527b08c23ab3de69731f56dde
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478063"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867523"
 ---
 # <a name="customization-file-connect-section"></a>カスタマイズ ファイルの Connect セクション
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ハンドラーの既定の動作では、すべての接続が拒否されます。 **connect** セクションで、この動作の例外を指定します。たとえば、 **connect** セクションが 1 つもないか、あっても空の場合、既定では接続は行われません。
 

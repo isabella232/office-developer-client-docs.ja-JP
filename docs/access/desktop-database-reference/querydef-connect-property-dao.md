@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845479(v=office.15)
 ms:contentKeyID: 48543398
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 42a1b799c0164aae160fdbc1412b150fb1b70810
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1aef24850a2dfa9eeb801708ea773087b9d1ff40
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478187"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871445"
 ---
 # <a name="querydefconnect-property-dao"></a>QueryDef.Connect プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 パススルー クエリで使用するデータベース ソースに関する情報を提供する値を設定します。値の取得のみ可能です。文字列型 ( **String**) の値を使用します。
 

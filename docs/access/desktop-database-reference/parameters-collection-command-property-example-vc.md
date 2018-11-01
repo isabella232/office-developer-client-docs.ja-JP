@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: パラメーターのコレクション、TOCTitle のコマンド プロパティの使用例 (vc++): Parameters コレクションのコマンド プロパティの使用例 (vc++) === タイトル: Parameters コレクションのコマンド プロパティの使用例 (vc++) TOCTitle。Parameters コレクションのコマンド プロパティの使用例 (vc++)
->>>>>>> マスターの ms:assetid: 625a83d5-5b73-f945-7e01-bf412fed0827 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249369(v=office.15) ms:contentKeyID: 48545237 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Parameters コレクションのコマンド プロパティの使用例 (vc++)
+TOCTitle: Parameters Collection, Command property example (VC++)
+ms:assetid: 625a83d5-5b73-f945-7e01-bf412fed0827
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249369(v=office.15)
+ms:contentKeyID: 48545237
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 302f329e09123a92fa008f031fde713393ad7a77
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25888301"
 ---
-
-<<<<<<< ヘッド
-# <a name="parameters-collection-command-property-example-vc"></a>Parameters コレクションの Command プロパティの使用例 (VC++)
-=======
 # <a name="parameters-collection-command-property-example-vc"></a>Parameters コレクションのコマンド プロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次のコードでは、プロシージャのパラメーター情報を取得するために [Command](command-property-adox.md) オブジェクトの [Command](command-object-ado.md) プロパティを使用する方法を示します。
 

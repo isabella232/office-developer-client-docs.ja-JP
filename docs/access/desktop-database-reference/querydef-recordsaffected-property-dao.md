@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1053082
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 9377f61ec334f41b7f8ccba61b87a9d5953b4429
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 63762814d0eb90cccb86402dbd6284fd873aef73
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478519"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887804"
 ---
 # <a name="querydefrecordsaffected-property-dao"></a>QueryDef.RecordsAffected プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 直前に呼び出された **[Execute](querydef-execute-method-dao.md)** メソッドの影響を受けるレコード数を返します。
 

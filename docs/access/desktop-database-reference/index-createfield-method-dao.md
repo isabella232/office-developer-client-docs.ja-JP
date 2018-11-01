@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff837208(v=office.15)
 ms:contentKeyID: 48548892
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c4c8c4d897e58655aa986ba2a0c28b7eece235a7
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: d73fbdaa119238ad1a9b70b7f2446be21e525452
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25605899"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871858"
 ---
 # <a name="indexcreatefield-method-dao"></a>Index.CreateField メソッド (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 新しい **[Field](field-object-dao.md)** オブジェクトを作成します (Microsoft Access ワークスペースのみ)。
 
@@ -51,7 +51,7 @@ ms.locfileid: "25605899"
 <td><p>新しい <strong>Field</strong> オブジェクトの一意の名前を表す文字列型 (String) の値。有効な <strong>Field</strong> 名の詳細については、<strong><a href="connection-name-property-dao.md">Name</a></strong> プロパティを参照してください。</p></td>
 </tr>
 <tr class="even">
-<td><p>種類</p></td>
+<td><p>型</p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>このオブジェクトではサポートされていません。</p></td>
@@ -66,11 +66,7 @@ ms.locfileid: "25605899"
 </table>
 
 
-<<<<<<< ヘッド
 ### <a name="return-value"></a>戻り値
-=======
-### <a name="return-value"></a>戻り値
->>>>>>> master
 
 Field
 

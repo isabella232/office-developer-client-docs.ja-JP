@@ -10,16 +10,16 @@ f1_keywords:
 - vbaac10.chm139044
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 6d7aa1deb4bea90e8319cccc763a4e087dd53ef0
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ac0cb0fe608ad5f3e15ae72346eac30628ba3dfa
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479015"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887384"
 ---
 # <a name="setproperty-macro-action"></a>"SetProperty/プロパティの設定" マクロ アクション
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **SetProperty**アクションを使用すると、フォームまたはレポート上のコントロールのプロパティを設定します。
 

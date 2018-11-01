@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249838(v=office.15)
 ms:contentKeyID: 48547106
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 554cb3eee0eb7019cef13758e4d9382bcdb5a5f3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f1afd4c3f627b6860fa2954496f5818a6b458ab4
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479013"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25888798"
 ---
-# <a name="configuring-rds"></a>RDS を構成する
+# <a name="configuring-rds"></a>RDS の構成
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 RDS を効率的に実装するには、利用できるさまざまな構成に通じている必要があります。ここでは、RDS の実装において重要なセキュリティとスケーラビリティに関する情報について説明します。コンピューターで RDS を使うための構成については、次のトピックを参照してください。
 

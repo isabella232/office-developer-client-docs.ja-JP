@@ -10,16 +10,16 @@ f1_keywords:
 - vbaac10.chm51789
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c03811716e776663601fb9c2f9590e644417e3c1
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 62a496867852afb89d5b556f6be793f3f8c3739e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860852"
+ms.locfileid: "25887783"
 ---
 # <a name="importexportdata-macro-action"></a>"ImportExportData/データのインポート/エクスポート" マクロ アクション
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 インポートまたは現在の Access データベース (.mdb または .accdb) または Access プロジェクト (.adp) と他のデータベース間でデータをエクスポートするのには、 **ImportExportData**アクションを使用できます。 Microsoft Access データベースでは、他のデータベースからカレント データベースにテーブルをリンクすることもできます。 テーブルをリンクすると、テーブル自体は他のデータベース内にあっても、そのテーブルのデータにアクセスできます。
 

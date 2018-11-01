@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249483(v=office.15)
 ms:contentKeyID: 48545684
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f8feeb97e049d245da91371fdb5225a644d0e415
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 937454a9277ec219f25a79074833138f6dd7f535
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477118"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887572"
 ---
 # <a name="handling-errors-in-visual-c"></a>Visual C++ でエラーを処理する
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 COM では、ほとんどの操作は、関数が正常に完了したかどうかを示す HRESULT リターン コードを返します。 \#のインポート ディレクティブは、各「生」のメソッドまたはプロパティをラッパー コードを生成し、返された HRESULT を確認します。 ラッパー コードが呼び出すことによって COM エラーをスローする HRESULT は、エラーを示している場合\_com\_問題\_の errorex() には、引数としてコードが返されます。 COM エラー オブジェクトは、 **try-catch**ブロックでキャッチできます。 (効率のためへの参照をキャッチ、 \_com\_エラー オブジェクトです)。
 

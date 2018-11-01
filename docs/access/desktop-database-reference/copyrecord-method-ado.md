@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249459(v=office.15)
 ms:contentKeyID: 48545605
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f01141e0dc2445a91267cf7744214b906a1af3fd
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: d9daa27f5a5e31aac295babf6f40b32f89a9df5c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860344"
+ms.locfileid: "25874966"
 ---
 # <a name="copyrecord-method-ado"></a>CopyRecord メソッド (ADO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **Record** で表されるエンティティを別の場所にコピーします。
 
@@ -50,11 +50,7 @@ ms.locfileid: "25860344"
 
   - 省略可能です。ブール型 ( **Boolean** ) の値を指定します。値が **True** の場合、この動作は非同期で実行されます。
 
-<<<<<<< 見出し
 ## <a name="return-value"></a>戻り値
-=======
-## <a name="return-value"></a>戻り値
->>>>>>> master
 
 文字列型 (**String**) の値を返します。通常は、*Destination* の値が返されます。ただし、実際に返される値はプロバイダーによって異なります。
 
@@ -74,10 +70,6 @@ ms.locfileid: "25860344"
 
 
 > [!NOTE]
-<<<<<<< 見出し
-> <P>[!メモ] http 体系を使用している URL は、<A href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</A> を自動的に呼び出します。詳細については、「 <A href="absolute-and-relative-urls.md">絶対 URL と相対 URL</A>」を参照してください。</P>
-=======
 > [!メモ] http 体系を使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、[絶対と相対 Url](absolute-and-relative-urls.md)を参照してください。
->>>>>>> master
 
 

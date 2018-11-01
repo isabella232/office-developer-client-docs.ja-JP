@@ -1,24 +1,26 @@
 ---
-<<<<<<< ヘッド タイトル: 数値プロパティ (ADO) TOCTitle: 数値プロパティ (ADO) === タイトル: 番号のプロパティ (ADO) TOCTitle: プロパティ (ADO) の番号
->>>>>>> マスターの ms:assetid: b5103af5-356b-ec74-cd62-86e59467d491 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249868(v=office.15) ms:contentKeyID: 48547243 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Number プロパティ (ADO)
+TOCTitle: Number property (ADO)
+ms:assetid: b5103af5-356b-ec74-cd62-86e59467d491
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249868(v=office.15)
+ms:contentKeyID: 48547243
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 72afba54062a3f103fe75939502c9f52eef4c44d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887199"
 ---
-
-<<<<<<< ヘッド
 # <a name="number-property-ado"></a>Number プロパティ (ADO)
-=======
-# <a name="number-property-ado"></a>Number プロパティ (ADO)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [Error](error-object-ado.md) オブジェクトを一意に識別する数値を示します。
 
-<<<<<<< ヘッド
 ## <a name="return-value"></a>戻り値
-=======
-## <a name="return-value"></a>戻り値
->>>>>>> master
 
 **ErrorValueEnum** 定数のいずれかに対応する長整数型 ( [Long](errorvalueenum.md) ) の値を返します。
 

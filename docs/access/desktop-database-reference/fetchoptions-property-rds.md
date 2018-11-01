@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248856(v=office.15)
 ms:contentKeyID: 48543221
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b3e7251ba50b003b37cdeb0dd70fe4a98821d4c9
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: b018fda52ba7dd311cda9b7b23ce10d5e47c4828
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861933"
+ms.locfileid: "25868931"
 ---
 # <a name="fetchoptions-property-rds"></a>FetchOptions プロパティ (RDS)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 非同期フェッチの種類を示します。
 
@@ -60,7 +60,5 @@ ms.locfileid: "25861933"
 
 ## <a name="remarks"></a>解説
 
-<<<<<<< ヘッド Web アプリケーションは通常使用する**adcFetchAsync** (既定値) の場合より優れたパフォーマンスを提供するためです。 コンパイルされたクライアント アプリケーションでは、一般に **adcFetchBackground** を使います。
-=== Web アプリケーションでは通常使用する**adcFetchAsync** (既定値) の場合より優れたパフォーマンスを提供するためです。 コンパイルされたクライアント アプリケーションでは、一般に **adcFetchBackground** を使います。
->>>>>>> master
+Web アプリケーションでは通常使用する**adcFetchAsync** (既定値) の場合より優れたパフォーマンスを提供するためです。 コンパイルされたクライアント アプリケーションでは、一般に **adcFetchBackground** を使います。
 

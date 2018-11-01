@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249687(v=office.15)
 ms:contentKeyID: 48546515
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 06474b6c4ecb29388367f8ceac7c7676002e1384
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 3fc0eba7e05259048f7e5261277f48c7d714ccb7
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25602659"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879761"
 ---
 # <a name="getchildren-method-ado"></a>GetChildren メソッド (ADO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 各行がコレクション [Record](recordset-object-ado.md) の子を表す [Recordset](record-object-ado.md) を返します。
@@ -25,11 +25,7 @@ ms.locfileid: "25602659"
 
 **設定***レコード セット* = *レコード*。GetChildren
 
-<<<<<<< ヘッド
 ## <a name="return-value"></a>戻り値
-=======
-## <a name="return-value"></a>戻り値
->>>>>>> master
 
 各行が現在の **Record** オブジェクトの子を表す **Recordset** オブジェクトを返します。たとえば、ディレクトリを表す **Record** の子は、親ディレクトリに含まれるファイルとサブディレクトリです。
 

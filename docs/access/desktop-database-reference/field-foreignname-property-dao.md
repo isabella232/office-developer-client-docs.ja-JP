@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194762(v=office.15)
 ms:contentKeyID: 48545157
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9366124a6d78358a184f25a0881e84ee27d6f86d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 542e4f3f2b0f2b3a88c5f4d358e36a4faa196a7b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476279"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869723"
 ---
 # <a name="fieldforeignname-property-dao"></a>Field.ForeignName プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 リレーションシップの主テーブルのフィールドに対応する、外部キー側のテーブルの **[Field](field-object-dao.md)** オブジェクトの名前を指定する値を設定または取得します (Microsoft Access ワークスペースのみ)。
 

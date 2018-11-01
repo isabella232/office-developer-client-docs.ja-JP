@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249327(v=office.15)
 ms:contentKeyID: 48545100
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7221c6bd0a6e8576237fdf4cbfcabe70620f6af8
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: bb0bb40d0f12bd9d5a6c8b29af1d4e27d806db87
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603995"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882085"
 ---
 # <a name="microsoft-ole-db-provider-for-internet-publishing"></a>Microsoft OLE DB Provider for Internet Publishing
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 Microsoft OLE DB Provider for Internet Publishing を使用すると、ADO から、Microsoft FrontPage や Microsoft Internet Information Server が提供するリソースにアクセスできます。このリソースには、HTML ファイルなどの Web ソース ファイルや Windows 2000 の Web フォルダーも含まれます。
 
@@ -66,11 +66,7 @@ MSDAIPP.DSO
 </tr>
 <tr class="even">
 <td><p><strong>Data Source</strong> または <strong>URL</strong></p></td>
-<<<<<<< ヘッド
-<td><p>Web フォルダーに公開されているファイルまたはディレクトリの URL を指定します。</p></td>
-=======
 <td><p>ファイルまたは web フォルダーで公開されているディレクトリの URL を指定します。</p></td>
->>>>>>>マスター
 </tr>
 <tr class="odd">
 <td><p><strong>User ID</strong></p></td>

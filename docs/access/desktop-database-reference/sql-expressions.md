@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197629(v=office.15)
 ms:contentKeyID: 48546349
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 328804dc8186c082cf22d409b4071368af8873e2
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c42bd49e25ad15a46955e46d60684836e52a9f32
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476226"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25873265"
 ---
 # <a name="sql-expressions"></a>SQL 式
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 SQL 式は、SQL ステートメントの一部または全体を構成する文字列です。たとえば、**Recordset** オブジェクトの **FindFirst** メソッドで使用される SQL 式は、[WHERE](https://msdn.microsoft.com/library/ff195245\(v=office.15\)) 句の抽出条件で構成されています。
 

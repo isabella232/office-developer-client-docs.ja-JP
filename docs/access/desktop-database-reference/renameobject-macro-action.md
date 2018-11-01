@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm165893
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 6522e85aa0407800ea0aade039a65c79a25c1419
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0590b586e2640df629cfeacbb28caca6f87ccb34
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477264"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878914"
 ---
 # <a name="renameobject-macro-action"></a>"RenameObject/オブジェクト名の変更" マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **RenameObject**アクションを使用するには、指定されたデータベース オブジェクトの名前を変更します。
 

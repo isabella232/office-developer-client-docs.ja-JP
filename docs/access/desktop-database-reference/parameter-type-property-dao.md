@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195248(v=office.15)
 ms:contentKeyID: 48545377
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a1efe394193b9f8e74c02ecb71758d94fac9259a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: fe05170927fc8e32038678c9128a73ebbb75b7bf
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476802"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889540"
 ---
 # <a name="parametertype-property-dao"></a>Parameter.Type プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 オブジェクトの操作の種類またはデータ型を示す値を設定または取得します。値の取得および設定が可能です。整数型 ( **Integer** ) の値を使用します。
 

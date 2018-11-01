@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: フィルターと RecordCount プロパティの使用例 (vc++) TOCTitle: フィルターと RecordCount プロパティの使用例 (vc++) === タイトル: フィルターと RecordCount プロパティの使用例 (vc++) TOCTitle: フィルターと RecordCountプロパティの使用例 (vc++)
->>>>>>> マスターの ms:assetid: 361499c3-cfb4-a26b-5ed7-5c880ae7d631 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249119(v=office.15) ms:contentKeyID: 48544161 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Filter プロパティと RecordCount プロパティの使用例 (VC++)
+TOCTitle: Filter and RecordCount properties example (VC++)
+ms:assetid: 361499c3-cfb4-a26b-5ed7-5c880ae7d631
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249119(v=office.15)
+ms:contentKeyID: 48544161
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 4ca6e56110110086f9b608eb87228ebf17462bce
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889820"
 ---
-
-<<<<<<< ヘッド
 # <a name="filter-and-recordcount-properties-example-vc"></a>Filter プロパティと RecordCount プロパティの使用例 (VC++)
-=======
-# <a name="filter-and-recordcount-properties-example-vc"></a>フィルターと RecordCount プロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Filter](filter-property-ado.md) プロパティを使って、既存の [Recordset](recordset-object-ado.md) に適用されている特定の条件に基づいて新規 **Recordset** を開きます。この例では、 [RecordCount](recordcount-property-ado.md) プロパティを使って、2 つの **Recordset** 内のレコードの数を示します。このプロシージャを実行するには、FilterField 関数が必要です。
 

@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm195788
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4371ce5482b775ad9c022eeda8202c4b2e0f800d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 431baa0e98d0ae3a636cb93fd799c3bdf4450816
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478129"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882610"
 ---
 # <a name="repaintobject-macro-action"></a>"RepaintObject/オブジェクトの再描画" マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 指定されていない場合は、保留中の指定されたデータベース オブジェクトまたはアクティブなデータベース オブジェクトでは、画面の更新を完了する**RepaintObject**アクションを使用できます。 このような更新には、オブジェクトのコントロールの再計算が含まれます。
 

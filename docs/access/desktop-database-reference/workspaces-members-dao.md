@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194667(v=office.15)
 ms:contentKeyID: 48545141
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cb288b7aafd1661bdc64825e3360d20f9896b55f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 89fef6b29293dd40133a9db7852b47edadba420d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477987"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883611"
 ---
 # <a name="workspaces-members-dao"></a>Workspaces メンバー (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 Workspaces コレクションには、DBEngine オブジェクトの、表示されているアクティブなすべての Workspace オブジェクトが含まれます。非表示の Workspace オブジェクトはコレクションに追加されず、割り当てられている変数によって参照されます。
 

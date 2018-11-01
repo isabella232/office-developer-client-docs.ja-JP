@@ -10,14 +10,15 @@ f1_keywords:
 - acmain11.chm1032159
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 85961b761255583738026113a025d6ca84b61f83
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: f039378c619cb5c9ebe6a70ccae718f5abfdd306
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861989"
+ms.locfileid: "25873902"
 ---
 # <a name="initializing-the-microsoft-excel-driver"></a>Microsoft Office Excel ドライバーを初期化する
+
 
 **適用されます**Access 2013 |。Office 2013
 
@@ -142,9 +143,10 @@ Microsoft Access データベース エンジンで使用される、Excel キ�
 </table>
 
 
+
 > [!NOTE]
 > [!メモ] Windows レジストリの設定を変更した場合は、新しい設定内容を有効にするために、データベース エンジンをいったん終了してから再起動する必要があります。
 
 ## <a name="see-also"></a>関連項目
 
-[Excel ドライバーで TypeGuessRows 設定を使用します。](https://support.office.com/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b)
+[Excel ドライバーで TypeGuessRows 設定を使用します。](https://support.office.com/en-us/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b?ui=en-US&rs=en-US&ad=US)

@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248865(v=office.15)
 ms:contentKeyID: 48543267
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 400373a773342ea03c08be5d587a3da1fcdac750
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 26172a73f0967ef299b79e0bae30088eec0f77c9
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479020"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872586"
 ---
 # <a name="recordset-object-ado"></a>Recordset オブジェクト (ADO)
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 基になるテーブルのレコードセット全体、またはコマンドの実行によって返された結果を表します。 **Recordset** オブジェクトでは、常にレコードセット内の 1 つのレコードのみをカレント レコードとして参照します。
 

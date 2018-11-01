@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250245(v=office.15)
 ms:contentKeyID: 48548699
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 634a0ea648646d95995054ce7458cea492c40e47
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 8e35cfc7bc5df144fa1938f794cb705bf2f1448c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479381"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889932"
 ---
 # <a name="shape-compute-clause"></a>Shape Compute 句
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 shape の COMPUTE 句は、親 **Recordset** を生成します。その列は、子 **Recordset** に対する参照、省略可能な列 (その内容はチャプター列、新規列、演算列、および子 **Recordset** や既にシェイプされている **Recordset** に対して集計関数を実行した結果など)、および省略可能な BY 句で指定される一連の子 **Recordset** の任意の列で構成されます。
 

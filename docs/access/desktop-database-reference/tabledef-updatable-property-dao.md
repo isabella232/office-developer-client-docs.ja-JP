@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845128(v=office.15)
 ms:contentKeyID: 48543168
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 44f24e68b60f69304a167d2b9b5ce0b4b0e69b11
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e4908699aaea69a001a1abd3761b78607ae2640a
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479544"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869821"
 ---
 # <a name="tabledefupdatable-property-dao"></a>TableDef.Updatable プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 DAO オブジェクトを変更できるかどうかを示す値を取得します。値の取得のみ可能です。ブール型 ( **Boolean**) の値を使用します。
 

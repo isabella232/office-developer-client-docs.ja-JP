@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249686(v=office.15)
 ms:contentKeyID: 48546507
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5bd19a1cec1e9618586b25b0b5cdf654cd1a5fdf
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 5c764c543c3d8734a47927d702daca1552e497b6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477191"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879474"
 ---
 # <a name="understanding-the-customization-file"></a>カスタマイズ ファイルの概要
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 カスタマイズ ファイルの各セクション ヘッダーは、角かっこで構成されています (**\[**) の種類とパラメーターが含まれています。 4 つのセクションの種類は、リテラル文字列は、**接続**を、 **sql**、 **userlist**、または**ログ**が表示されます。 パラメーターは、リテラル文字列、既定値、ユーザー指定の識別子、または何もです。
 

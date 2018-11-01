@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: ADO NumericScale と Precision プロパティの使用例 (VB) TOCTitle: NumericScale と Precision プロパティの使用例 (VB) === タイトル: ADO NumericScale と Precision プロパティの使用例 (VB) TOCTitle: NumericScale と精度プロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: 060394b1-0c2c-3726-92a0-0f350bbaa3d5 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248814(v=office.15) ms:contentKeyID: 48543044 ms.date: 2015/09/18 mtps_version: v=office.15
+title: ADO NumericScale と Precision プロパティの使用例 (VB)
+TOCTitle: NumericScale and Precision properties example (VB)
+ms:assetid: 060394b1-0c2c-3726-92a0-0f350bbaa3d5
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248814(v=office.15)
+ms:contentKeyID: 48543044
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 7ed77da6c537407d347ff6d4ebf9d254986c8618
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869695"
 ---
-
-<<<<<<< ヘッド
-# <a name="ado-numericscale-and-precision-properties-example-vb"></a>ADO NumericScale プロパティと Precision プロパティの使用例 (VB)
-=======
 # <a name="ado-numericscale-and-precision-properties-example-vb"></a>ADO NumericScale と Precision プロパティの使用例 (VB)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[NumericScale](numericscale-property-ado.md) プロパティと [Precision](precision-property-ado.md) プロパティを使って、***Pubs*** データベースの ***Discounts*** テーブル内にあるフィールドの小数点以下の桁数と精度を表示します。
 
