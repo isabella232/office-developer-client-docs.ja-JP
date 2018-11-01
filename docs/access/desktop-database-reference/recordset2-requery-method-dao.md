@@ -10,27 +10,27 @@ f1_keywords:
 - dao360.chm1052940
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7019b0e4d3ffa916aea8436db14f3a8476f2e36f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 4646003bb7911fc18840d75addf459935ebb1fbd
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476272"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878634"
 ---
-# <a name="recordset2requery-method-dao"></a><span data-ttu-id="f0b83-102">Recordset2.Requery メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="f0b83-102">Recordset2.Requery Method (DAO)</span></span>
+# <a name="recordset2requery-method-dao"></a><span data-ttu-id="0eb3b-102">Recordset2.Requery メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="0eb3b-102">Recordset2.Requery Method (DAO)</span></span>
 
 
-<span data-ttu-id="f0b83-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="f0b83-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="0eb3b-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f0b83-104">**[Recordset](recordset-object-dao.md)** オブジェクトの基になるクエリを再実行することにより、オブジェクト内のデータを更新します。</span><span class="sxs-lookup"><span data-stu-id="f0b83-104">Updates the data in a **[Recordset](recordset-object-dao.md)** object by re-executing the query on which the object is based.</span></span>
+<span data-ttu-id="0eb3b-104">**[Recordset](recordset-object-dao.md)** オブジェクトの基になるクエリを再実行することにより、オブジェクト内のデータを更新します。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-104">Updates the data in a **[Recordset](recordset-object-dao.md)** object by re-executing the query on which the object is based.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f0b83-105">構文</span><span class="sxs-lookup"><span data-stu-id="f0b83-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="0eb3b-105">構文</span><span class="sxs-lookup"><span data-stu-id="0eb3b-105">Syntax</span></span>
 
-<span data-ttu-id="f0b83-106">*式*です。(***NewQueryDef***) のクエリを再実行します。</span><span class="sxs-lookup"><span data-stu-id="f0b83-106">*expression* .Requery(***NewQueryDef***)</span></span>
+<span data-ttu-id="0eb3b-106">*式*です。(***NewQueryDef***) のクエリを再実行します。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-106">*expression* .Requery(***NewQueryDef***)</span></span>
 
-<span data-ttu-id="f0b83-107">\*式\***Recordset2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="f0b83-107">*expression* A variable that represents a **Recordset2** object.</span></span>
+<span data-ttu-id="0eb3b-107">\*式\***Recordset2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-107">*expression* A variable that represents a **Recordset2** object.</span></span>
 
-### <a name="parameters"></a><span data-ttu-id="f0b83-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f0b83-108">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="0eb3b-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0eb3b-108">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -41,42 +41,42 @@ ms.locfileid: "25476272"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="f0b83-109">名前</span><span class="sxs-lookup"><span data-stu-id="f0b83-109">Name</span></span></p></th>
-<th><p><span data-ttu-id="f0b83-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="f0b83-110">Required/Optional</span></span></p></th>
-<th><p><span data-ttu-id="f0b83-111">データ型</span><span class="sxs-lookup"><span data-stu-id="f0b83-111">Data Type</span></span></p></th>
-<th><p><span data-ttu-id="f0b83-112">説明</span><span class="sxs-lookup"><span data-stu-id="f0b83-112">Description</span></span></p></th>
+<th><p><span data-ttu-id="0eb3b-109">名前</span><span class="sxs-lookup"><span data-stu-id="0eb3b-109">Name</span></span></p></th>
+<th><p><span data-ttu-id="0eb3b-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="0eb3b-110">Required/Optional</span></span></p></th>
+<th><p><span data-ttu-id="0eb3b-111">データ型</span><span class="sxs-lookup"><span data-stu-id="0eb3b-111">Data Type</span></span></p></th>
+<th><p><span data-ttu-id="0eb3b-112">説明</span><span class="sxs-lookup"><span data-stu-id="0eb3b-112">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="f0b83-113">NewQueryDef</span><span class="sxs-lookup"><span data-stu-id="f0b83-113">NewQueryDef</span></span></p></td>
-<td><p><span data-ttu-id="f0b83-114">省略可能</span><span class="sxs-lookup"><span data-stu-id="f0b83-114">Optional</span></span></p></td>
-<td><p><span data-ttu-id="f0b83-115"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="f0b83-115"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="f0b83-116"><a href="querydef-object-dao.md"><strong>QueryDef</strong></a> オブジェクトの <strong>Name</strong> プロパティの値を表します。</span><span class="sxs-lookup"><span data-stu-id="f0b83-116">Represents the <strong>Name</strong> property value of a <strong><a href="querydef-object-dao.md">QueryDef</a></strong> object</span></span></p></td>
+<td><p><span data-ttu-id="0eb3b-113">NewQueryDef</span><span class="sxs-lookup"><span data-stu-id="0eb3b-113">NewQueryDef</span></span></p></td>
+<td><p><span data-ttu-id="0eb3b-114">省略可能</span><span class="sxs-lookup"><span data-stu-id="0eb3b-114">Optional</span></span></p></td>
+<td><p><span data-ttu-id="0eb3b-115"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="0eb3b-115"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="0eb3b-116"><a href="querydef-object-dao.md"><strong>QueryDef</strong></a> オブジェクトの <strong>Name</strong> プロパティの値を表します。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-116">Represents the <strong>Name</strong> property value of a <strong><a href="querydef-object-dao.md">QueryDef</a></strong> object</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="f0b83-117">注釈</span><span class="sxs-lookup"><span data-stu-id="f0b83-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0eb3b-117">注釈</span><span class="sxs-lookup"><span data-stu-id="0eb3b-117">Remarks</span></span>
 
-<span data-ttu-id="f0b83-118">このメソッドは、 **Recordset** に確実に最新のデータが含まれるようにするために使用します。</span><span class="sxs-lookup"><span data-stu-id="f0b83-118">Use this method to make sure that a **Recordset** contains the most recent data.</span></span> <span data-ttu-id="f0b83-119">このメソッドが現在のクエリ パラメーターを使用して、現在の**レコード セット**を再設定または引数 newquerydef で (Microsoft Access ワークスペース) で新しいファイルが提供されます。</span><span class="sxs-lookup"><span data-stu-id="f0b83-119">This method re-populates the current **Recordset** by using either the current query parameters or (in a Microsoft Access workspace) the new ones supplied by the newquerydef argument.</span></span>
+<span data-ttu-id="0eb3b-118">このメソッドは、 **Recordset** に確実に最新のデータが含まれるようにするために使用します。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-118">Use this method to make sure that a **Recordset** contains the most recent data.</span></span> <span data-ttu-id="0eb3b-119">このメソッドが現在のクエリ パラメーターを使用して、現在の**レコード セット**を再設定または引数 newquerydef で (Microsoft Access ワークスペース) で新しいファイルが提供されます。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-119">This method re-populates the current **Recordset** by using either the current query parameters or (in a Microsoft Access workspace) the new ones supplied by the newquerydef argument.</span></span>
 
-<span data-ttu-id="f0b83-120">Newquerydef 引数を省略する場合、最初の**レコード セット**を作成するために使用するパラメーターと同じクエリ定義に基づく**レコード セット**が再設定されます。</span><span class="sxs-lookup"><span data-stu-id="f0b83-120">If you don't specify a newquerydef argument, the **Recordset** is re-populated based on the same query definition and parameters used to originally populate the **Recordset**.</span></span> <span data-ttu-id="f0b83-121">基になるデータに変更があった場合は、この再読み込み時に反映されます。</span><span class="sxs-lookup"><span data-stu-id="f0b83-121">Any changes to the underlying data will be reflected during this re-population.</span></span> <span data-ttu-id="f0b83-122">**QueryDef** を使用して **Recordset** を作成していない場合は、 **Recordset** が最初から再作成されます。</span><span class="sxs-lookup"><span data-stu-id="f0b83-122">If you didn't use a **QueryDef** to create the **Recordset**, the **Recordset** is re-created from scratch.</span></span>
+<span data-ttu-id="0eb3b-120">Newquerydef 引数を省略する場合、最初の**レコード セット**を作成するために使用するパラメーターと同じクエリ定義に基づく**レコード セット**が再設定されます。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-120">If you don't specify a newquerydef argument, the **Recordset** is re-populated based on the same query definition and parameters used to originally populate the **Recordset**.</span></span> <span data-ttu-id="0eb3b-121">基になるデータに変更があった場合は、この再読み込み時に反映されます。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-121">Any changes to the underlying data will be reflected during this re-population.</span></span> <span data-ttu-id="0eb3b-122">**QueryDef** を使用して **Recordset** を作成していない場合は、 **Recordset** が最初から再作成されます。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-122">If you didn't use a **QueryDef** to create the **Recordset**, the **Recordset** is re-created from scratch.</span></span>
 
-<span data-ttu-id="f0b83-123">Newquerydef 引数に元の**クエリ定義**を指定する場合、**レコード セット**に対してクエリが実行**クエリ定義**で指定されたパラメーターを使用します。</span><span class="sxs-lookup"><span data-stu-id="f0b83-123">If you specify the original **QueryDef** in the newquerydef argument, then the **Recordset** is requeried using the parameters specified by the **QueryDef**.</span></span> <span data-ttu-id="f0b83-124">基になるデータに変更があった場合は、この再読み込み時に反映されます。</span><span class="sxs-lookup"><span data-stu-id="f0b83-124">Any changes to the underlying data will be reflected during this re-population.</span></span> <span data-ttu-id="f0b83-125">**レコード セット**内のクエリ パラメーター値への変更を反映するためには、引数 newquerydef を指定してください。</span><span class="sxs-lookup"><span data-stu-id="f0b83-125">To reflect any changes to the query parameter values in the **Recordset**, you must supply the newquerydef argument.</span></span>
+<span data-ttu-id="0eb3b-123">Newquerydef 引数に元の**クエリ定義**を指定する場合、**レコード セット**に対してクエリが実行**クエリ定義**で指定されたパラメーターを使用します。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-123">If you specify the original **QueryDef** in the newquerydef argument, then the **Recordset** is requeried using the parameters specified by the **QueryDef**.</span></span> <span data-ttu-id="0eb3b-124">基になるデータに変更があった場合は、この再読み込み時に反映されます。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-124">Any changes to the underlying data will be reflected during this re-population.</span></span> <span data-ttu-id="0eb3b-125">**レコード セット**内のクエリ パラメーター値への変更を反映するためには、引数 newquerydef を指定してください。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-125">To reflect any changes to the query parameter values in the **Recordset**, you must supply the newquerydef argument.</span></span>
 
-<span data-ttu-id="f0b83-126">最初に **Recordset** を作成したときとは異なる **QueryDef** を指定した場合、 **Recordset** は最初から再作成されます。</span><span class="sxs-lookup"><span data-stu-id="f0b83-126">If you specify a different **QueryDef** than what was originally used to create the **Recordset**, the **Recordset** is re-created from scratch.</span></span>
+<span data-ttu-id="0eb3b-126">最初に **Recordset** を作成したときとは異なる **QueryDef** を指定した場合、 **Recordset** は最初から再作成されます。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-126">If you specify a different **QueryDef** than what was originally used to create the **Recordset**, the **Recordset** is re-created from scratch.</span></span>
 
-<span data-ttu-id="f0b83-127">**Requery** を使用すると、 **Recordset** 内の最初のレコードがカレント レコードとなります。</span><span class="sxs-lookup"><span data-stu-id="f0b83-127">When you use **Requery**, the first record in the **Recordset** becomes the current record.</span></span>
+<span data-ttu-id="0eb3b-127">**Requery** を使用すると、 **Recordset** 内の最初のレコードがカレント レコードとなります。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-127">When you use **Requery**, the first record in the **Recordset** becomes the current record.</span></span>
 
-<span data-ttu-id="f0b83-128">**Requery** メソッドは、 [**Restartable**](recordset2-restartable-property-dao.md) プロパティが **False** に設定されているダイナセット タイプまたはスナップショット タイプの **Recordset** オブジェクトでは使用できません。</span><span class="sxs-lookup"><span data-stu-id="f0b83-128">You can't use the **Requery** method on dynaset- or snapshot-type **Recordset** objects whose **[Restartable](recordset2-restartable-property-dao.md)** property is set to **False**.</span></span> <span data-ttu-id="f0b83-129">Newquerydef の省略可能な引数を指定する場合は、 **Restartable**プロパティは無視されます。</span><span class="sxs-lookup"><span data-stu-id="f0b83-129">However, if you supply the optional newquerydef argument, the **Restartable** property is ignored.</span></span>
+<span data-ttu-id="0eb3b-128">**Requery** メソッドは、 [**Restartable**](recordset2-restartable-property-dao.md) プロパティが **False** に設定されているダイナセット タイプまたはスナップショット タイプの **Recordset** オブジェクトでは使用できません。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-128">You can't use the **Requery** method on dynaset- or snapshot-type **Recordset** objects whose **[Restartable](recordset2-restartable-property-dao.md)** property is set to **False**.</span></span> <span data-ttu-id="0eb3b-129">Newquerydef の省略可能な引数を指定する場合は、 **Restartable**プロパティは無視されます。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-129">However, if you supply the optional newquerydef argument, the **Restartable** property is ignored.</span></span>
 
-<span data-ttu-id="f0b83-130">[Requery](recordset2-bof-property-dao.md) を使用した後に、 **Recordset** オブジェクトの **[BOF](recordset2-eof-property-dao.md)** プロパティと \*\*\*\*EOF\*\*\*\* プロパティの両方の設定が **True** になった場合、クエリによってレコードは返されておらず、 **Recordset** にはデータが含まれていません。</span><span class="sxs-lookup"><span data-stu-id="f0b83-130">If both the **[BOF](recordset2-bof-property-dao.md)** and **[EOF](recordset2-eof-property-dao.md)** property settings of the **Recordset** object are **True** after you use the **Requery** method, the query didn't return any records and the **Recordset** contains no data.</span></span>
+<span data-ttu-id="0eb3b-130">[Requery](recordset2-bof-property-dao.md) を使用した後に、 **Recordset** オブジェクトの **[BOF](recordset2-eof-property-dao.md)** プロパティと \*\*\*\*EOF\*\*\*\* プロパティの両方の設定が **True** になった場合、クエリによってレコードは返されておらず、 **Recordset** にはデータが含まれていません。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-130">If both the **[BOF](recordset2-bof-property-dao.md)** and **[EOF](recordset2-eof-property-dao.md)** property settings of the **Recordset** object are **True** after you use the **Requery** method, the query didn't return any records and the **Recordset** contains no data.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f0b83-131">例</span><span class="sxs-lookup"><span data-stu-id="f0b83-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0eb3b-131">例</span><span class="sxs-lookup"><span data-stu-id="0eb3b-131">Example</span></span>
 
-<span data-ttu-id="f0b83-132">この例では、 **Requery** メソッドを使用して、基になるデータが変更された後にクエリを更新する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f0b83-132">This example shows how the **Requery** method can be used to refresh a query after underlying data has been changed.</span></span>
+<span data-ttu-id="0eb3b-132">この例では、 **Requery** メソッドを使用して、基になるデータが変更された後にクエリを更新する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-132">This example shows how the **Requery** method can be used to refresh a query after underlying data has been changed.</span></span>
 
 ```vb
     Sub RequeryX() 
@@ -134,7 +134,7 @@ ms.locfileid: "25476272"
 
 <br/>
 
-<span data-ttu-id="f0b83-133">この例では、 **Requery** メソッドを使用して、クエリ パラメーターが変更された後にクエリを更新する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f0b83-133">This example shows how the **Requery** method can be used to refresh a query after the query parameters have been changed.</span></span>
+<span data-ttu-id="0eb3b-133">この例では、 **Requery** メソッドを使用して、クエリ パラメーターが変更された後にクエリを更新する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="0eb3b-133">This example shows how the **Requery** method can be used to refresh a query after the query parameters have been changed.</span></span>
 
 ```vb
 Sub RequeryX2() 

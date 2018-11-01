@@ -10,24 +10,24 @@ f1_keywords:
 - jetsql40.chm5277471
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b5350d411fa5f8f689ae3051a8531f2cb298af56
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: a0fa90ac252e877c583982f4e9f900196a4674b3
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860288"
+ms.locfileid: "25879747"
 ---
-# <a name="execute-statement-microsoft-access-sql"></a><span data-ttu-id="8109b-102">EXECUTE ステートメント (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="8109b-102">EXECUTE statement (Microsoft Access SQL)</span></span>
+# <a name="execute-statement-microsoft-access-sql"></a><span data-ttu-id="30a75-102">EXECUTE ステートメント (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="30a75-102">EXECUTE statement (Microsoft Access SQL)</span></span>
 
-<span data-ttu-id="8109b-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="8109b-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="30a75-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="30a75-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="8109b-104">プロシージャを実行します。</span><span class="sxs-lookup"><span data-stu-id="8109b-104">Used to invoke the execution of a procedure.</span></span>
+<span data-ttu-id="30a75-104">プロシージャを実行します。</span><span class="sxs-lookup"><span data-stu-id="30a75-104">Used to invoke the execution of a procedure.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8109b-105">構文</span><span class="sxs-lookup"><span data-stu-id="8109b-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="30a75-105">構文</span><span class="sxs-lookup"><span data-stu-id="30a75-105">Syntax</span></span>
 
-<span data-ttu-id="8109b-106">*プロシージャ*の実行\[ *param1*\[、*パラメーター 2*\[をしています.\]\]</span><span class="sxs-lookup"><span data-stu-id="8109b-106">EXECUTE *procedure* \[*param1*\[, *param2*\[, …\]\]</span></span>
+<span data-ttu-id="30a75-106">*プロシージャ*の実行\[ *param1*\[、*パラメーター 2*\[をしています.\]\]</span><span class="sxs-lookup"><span data-stu-id="30a75-106">EXECUTE *procedure* \[*param1*\[, *param2*\[, …\]\]</span></span>
 
-<span data-ttu-id="8109b-107">EXECUTE ステートメントには、次の指定項目があります。</span><span class="sxs-lookup"><span data-stu-id="8109b-107">The EXECUTE statement has these parts:</span></span>
+<span data-ttu-id="30a75-107">EXECUTE ステートメントには、次の指定項目があります。</span><span class="sxs-lookup"><span data-stu-id="30a75-107">The EXECUTE statement has these parts:</span></span>
 
 <table>
 <colgroup>
@@ -36,26 +36,26 @@ ms.locfileid: "25860288"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="8109b-108">指定項目</span><span class="sxs-lookup"><span data-stu-id="8109b-108">Part</span></span></p></th>
-<th><p><span data-ttu-id="8109b-109">説明</span><span class="sxs-lookup"><span data-stu-id="8109b-109">Description</span></span></p></th>
+<th><p><span data-ttu-id="30a75-108">指定項目</span><span class="sxs-lookup"><span data-stu-id="30a75-108">Part</span></span></p></th>
+<th><p><span data-ttu-id="30a75-109">説明</span><span class="sxs-lookup"><span data-stu-id="30a75-109">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="8109b-110"><em>procedure</em></span><span class="sxs-lookup"><span data-stu-id="8109b-110"><em>procedure</em></span></span></p></td>
-<td><p><span data-ttu-id="8109b-111">実行するプロシージャの名前。</span><span class="sxs-lookup"><span data-stu-id="8109b-111">The name of the procedure that is to be executed.</span></span></p></td>
+<td><p><span data-ttu-id="30a75-110"><em>procedure</em></span><span class="sxs-lookup"><span data-stu-id="30a75-110"><em>procedure</em></span></span></p></td>
+<td><p><span data-ttu-id="30a75-111">実行するプロシージャの名前。</span><span class="sxs-lookup"><span data-stu-id="30a75-111">The name of the procedure that is to be executed.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8109b-112"><em>param1, param2, ...</em></span><span class="sxs-lookup"><span data-stu-id="8109b-112"><em>param1, param2, …</em></span></span></p></td>
-<td><p><span data-ttu-id="8109b-113">パラメーターの値はプロシージャで定義されます。</span><span class="sxs-lookup"><span data-stu-id="8109b-113">Values for the parameters defined by the procedure.</span></span></p></td>
+<td><p><span data-ttu-id="30a75-112"><em>param1, param2, ...</em></span><span class="sxs-lookup"><span data-stu-id="30a75-112"><em>param1, param2, …</em></span></span></p></td>
+<td><p><span data-ttu-id="30a75-113">パラメーターの値はプロシージャで定義されます。</span><span class="sxs-lookup"><span data-stu-id="30a75-113">Values for the parameters defined by the procedure.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="example"></a><span data-ttu-id="8109b-114">例</span><span class="sxs-lookup"><span data-stu-id="8109b-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="30a75-114">例</span><span class="sxs-lookup"><span data-stu-id="30a75-114">Example</span></span>
 
-<span data-ttu-id="8109b-115">この例では、クエリ CategoryList、名前を指定し、SELECT ステートメントの例である EnumFields プロシージャを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="8109b-115">This example names the query CategoryList, and calls the EnumFields procedure, which you can find in the SELECT statement example.</span></span>
+<span data-ttu-id="30a75-115">この例では、クエリ CategoryList、名前を指定し、SELECT ステートメントの例である EnumFields プロシージャを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="30a75-115">This example names the query CategoryList, and calls the EnumFields procedure, which you can find in the SELECT statement example.</span></span>
 
 ```vb
     Sub ProcedureX() 
