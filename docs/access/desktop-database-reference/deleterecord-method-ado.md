@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249895(v=office.15)
 ms:contentKeyID: 48547370
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4a91da1304d399a34f247eb251c2dadf0f1fa94d
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 9dd9c5b6681732ec50442f7a4bcd9874ecf4e493
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603008"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878997"
 ---
 # <a name="deleterecord-method-ado"></a>DeleteRecord メソッド (ADO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 
@@ -44,10 +44,6 @@ ms.locfileid: "25603008"
 
 
 > [!NOTE]
-<<<<<<< ヘッド
-> <P>[!メモ] http 体系を使用している URL は、<A href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</A> を自動的に呼び出します。詳細については、「 <A href="absolute-and-relative-urls.md">絶対 URL と相対 URL</A>」を参照してください。</P>
-=======
 > [!メモ] http 体系を使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、[絶対と相対 Url](absolute-and-relative-urls.md)を参照してください。
->>>>>>> master
 
 

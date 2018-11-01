@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249761(v=office.15)
 ms:contentKeyID: 48546797
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 42cdf33d7b34dc4a48392d21dcdb2d9de26b4bbc
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: b013ab0b05242b4928f7a9b9d974ef98ca6103d0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477707"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885025"
 ---
-# <a name="adding-data-to-a-recordset"></a>レコードセットにデータを追加する
+# <a name="adding-data-to-a-recordset"></a>レコードセットへのデータの追加
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **Recordset** は、最も頻繁に使用される ADO オブジェクトであると言えます。ADO における **Recordset** は、データ ソースから取得した結果セットと、それに関連付けられたカーソルの動作の組み合わせであると考えてください。このため、データを **Recordset** に追加した後、 **Recordset** のメソッドとプロパティを使用して、データ行の移動、行に含まれる値の表示、および結果セットに対するその他の操作を実行できます。
 

@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn142571(v=office.15)
 ms:contentKeyID: 52073808
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e7f9c98e2661c7d8d0de2c8d203ea1f5ed89c540
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 8c4121079c7adacebf0f4737c827fa872e9559e4
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476220"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870346"
 ---
 # <a name="access-desktop-database-reference"></a>Access デスクトップ データベース リファレンス
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 - [概念 (Access 2013 Developer リファレンス)](concepts.md)
 - [Microsoft データ アクセス オブジェクト リファレンス](microsoft-data-access-objects-reference.md)

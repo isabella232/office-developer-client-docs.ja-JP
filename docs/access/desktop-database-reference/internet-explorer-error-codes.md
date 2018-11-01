@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249489(v=office.15)
 ms:contentKeyID: 48545726
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d5f4dca3854712b16faa4cd11305cd55497fc03f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 2818fb05d5842c7f465bd47d1ce7eaa28ea00365
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477182"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882015"
 ---
 # <a name="internet-explorer-error-codes"></a>Internet Explorer エラー コード
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の表は、リモート データ サービスの使用に関連する Microsoft Internet Explorer のエラー コードの一覧です。下位 2 バイトを正の 10 進数に変換した値、エラー コード全体を負の 10 進数に変換した値、および 16 進数値を示します。
 

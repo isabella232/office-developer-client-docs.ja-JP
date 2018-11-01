@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: BOF、EOF、およびブックマークのプロパティの使用例 (VB) TOCTitle: BOF と EOF の場合、ブックマークのプロパティの使用例 (VB) === タイトル: BOF、EOF、およびブックマークのプロパティの使用例 (VB) TOCTitle: BOF、EOF、およびブックマークのプロパティの例(VB)
->>>>>>> マスターの ms:assetid: 30d4b424-b3d8-292f-7553-bb15b094eef8 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249085(v=office.15) ms:contentKeyID: 48544037 ms.date: 2015/09/18 mtps_version: v=office.15
+title: BOF プロパティ、EOF プロパティ、Bookmark プロパティの使用例 (VB)
+TOCTitle: BOF, EOF, and Bookmark properties example (VB)
+ms:assetid: 30d4b424-b3d8-292f-7553-bb15b094eef8
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249085(v=office.15)
+ms:contentKeyID: 48544037
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 5a2841a8f13d053e41c7a15a37b40dd3513238fc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25888504"
 ---
-
-<<<<<<< ヘッド
-# <a name="bof-eof-and-bookmark-properties-example-vb"></a>BOF プロパティ、EOF プロパティ、および Bookmark プロパティの使用例 (VB)
-=======
-# <a name="bof-eof-and-bookmark-properties-example-vb"></a>Bof プロパティ、EOF、およびブックマークのプロパティの使用例 (VB)
->>>>>>> master
+# <a name="bof-eof-and-bookmark-properties-example-vb"></a>BOF プロパティ、EOF プロパティ、Bookmark プロパティの使用例 (VB)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の例では、[BOF](bof-eof-properties-ado.md) プロパティと [EOF](bof-eof-properties-ado.md) プロパティを使用して、ユーザーが [Recordset](recordset-object-ado.md) の先頭または最後のレコードを越えて移動しようとした場合にメッセージを表示します。また、 [Bookmark](bookmark-property-ado.md) プロパティを使用して、後からそのレコードに戻れるように、ユーザーが **Recordset** のレコードにフラグを立てることができるようにしています。
 

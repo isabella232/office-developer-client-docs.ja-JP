@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: OriginalValue と UnderlyingValue プロパティの使用例 (vj++) TOCTitle: OriginalValue と UnderlyingValue プロパティの使用例 (vj++) === タイトル: OriginalValue と UnderlyingValue プロパティの使用例 (vj++)TOCTitle: OriginalValue と UnderlyingValue プロパティの使用例 (vj++)
->>>>>>> マスターの ms:assetid: 622d0356-e33d-4378-df5e-8f15fa91d260 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249368(v=office.15) ms:contentKeyID: 48545233 ms.date: 2015/09/18 mtps_version: v=office.15
+title: OriginalValue プロパティと UnderlyingValue プロパティの使用例 (VJ++)
+TOCTitle: OriginalValue and UnderlyingValue properties example (VJ++)
+ms:assetid: 622d0356-e33d-4378-df5e-8f15fa91d260
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249368(v=office.15)
+ms:contentKeyID: 48545233
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: b6af489106c582afc862ff93d8d1263accdbff47
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880279"
 ---
-
-<<<<<<< ヘッド
 # <a name="originalvalue-and-underlyingvalue-properties-example-vj"></a>OriginalValue プロパティと UnderlyingValue プロパティの使用例 (VJ++)
-=======
-# <a name="originalvalue-and-underlyingvalue-properties-example-vj"></a>OriginalValue と UnderlyingValue プロパティの使用例 (vj++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[OriginalValue](originalvalue-property-ado.md) プロパティと [UnderlyingValue](underlyingvalue-property-ado.md) プロパティを使用して、 [Recordset](recordset-object-ado.md) の一括更新中にレコードの基になるデータが変更された場合にメッセージを表示します。
 

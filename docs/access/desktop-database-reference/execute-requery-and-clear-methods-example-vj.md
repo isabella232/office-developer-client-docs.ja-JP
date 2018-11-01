@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248774(v=office.15)
 ms:contentKeyID: 48542897
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4701e390a26fa8a29bf7e7fa490f188f80820876
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 01e2f0ab0ad4a623a7f8cab44877d27e18f45c54
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862527"
+ms.locfileid: "25867266"
 ---
 # <a name="execute-requery-and-clear-methods-example-vj"></a>Execute メソッド、Requery メソッド、Clear メソッドの使用例 (VJ++)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[コマンド](command-object-ado.md)オブジェクトと[接続](connection-object-ado.md)オブジェクトの両方から実行した場合は、 **Execute**メソッドを使用します。 また、 [Requery](requery-method-ado.md)メソッド、レコード セット内の現在のデータを取得して、 [Errors](errors-collection-ado.md)コレクションの内容を消去するのには、 [Clear](clear-method-ado.md)メソッドを使用します。 ExecuteCommand プロシージャおよび PrintOutput プロシージャは、この手順を実行する必要があります。
 

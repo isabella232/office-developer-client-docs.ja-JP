@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249614(v=office.15)
 ms:contentKeyID: 48546223
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f9f2fe9ca40fb9f9a290b48289646f15d9fef30d
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 436bdfd955494accfc02d4460a6080531f76452d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861058"
+ms.locfileid: "25888196"
 ---
 # <a name="update-and-cancelupdate-methods-example-vb"></a>Update メソッドと CancelUpdate メソッドの使用例 (VB)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の例では、[Update](update-method-ado.md) メソッドと [CancelUpdate](cancelupdate-method-ado.md) メソッドを組み合わせて使用する方法を示します。
 

@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: アイテムのプロパティの使用例 (vj++) TOCTitle: アイテムのプロパティの使用例 (vj++) === タイトル: アイテムのプロパティの使用例 (vj++) TOCTitle: アイテムのプロパティの使用例 (vj++)
->>>>>>> マスターの ms:assetid: be6f14f1-5d3e-6b13-00fc-cfea12e89dcf ms:mtpsurl: https://msdn.microsoft.com/library/JJ249923(v=office.15) ms:contentKeyID: 48547461 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Item プロパティの使用例 (VJ++)
+TOCTitle: Item property example (VJ++)
+ms:assetid: be6f14f1-5d3e-6b13-00fc-cfea12e89dcf
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249923(v=office.15)
+ms:contentKeyID: 48547461
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 672eb8582f5e412a026be68cd9c56ddd603d2ac0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889659"
 ---
-
-<<<<<<< ヘッド
 # <a name="item-property-example-vj"></a>Item プロパティの使用例 (VJ++)
-=======
-# <a name="item-property-example-vj"></a>アイテムのプロパティの使用例 (vj++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Item](item-property-ado.md) プロパティを使用してコレクションのメンバーにアクセスする方法を示します。この例では、パラメーター化されたコマンドを使用して、***Pubs*** データベースの ***Authors*** テーブルを開いています。
 

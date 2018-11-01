@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195846(v=office.15)
 ms:contentKeyID: 48545626
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ddf6a6eb71d60fb98d92a9ce18bfd871f298f702
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: b1e0cf06436293cbd0c0326a91bd38dcdce5f16a
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25864208"
+ms.locfileid: "25869100"
 ---
 # <a name="cancelrecordchange-macro-action"></a>"CancelRecordChange/レコードの変更の取り消し" マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 " **CancelRecordChange/レコードの変更の取り消し** " アクションを使用して、変更を確定する前に **[CreateRecord](createrecord-data-block.md)** または **[EditRecord](editrecord-data-block.md)** データ ブロック内でレコードに適用した変更を取り消すことができます。
 

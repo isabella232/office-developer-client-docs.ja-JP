@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 接続文字列、タイムアウト、および状態のプロパティの使用例 (VB) TOCTitle: 接続文字列、タイムアウト、および状態のプロパティの使用例 (VB) === タイトル: 接続文字列、タイムアウト、状態のプロパティの使用例 (VB) TOCTitle: 接続文字列、タイムアウト、および状態のプロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: abdd0262-8647-d545-60e0-13f99337df06 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249796(v=office.15) ms:contentKeyID: 48546984 ms.date: 2015/09/18 mtps_version: v=office.15
+title: ConnectionString プロパティ、ConnectionTimeout プロパティ、State プロパティの使用例 (VB)
+TOCTitle: ConnectionString, ConnectionTimeout, and State properties example (VB)
+ms:assetid: abdd0262-8647-d545-60e0-13f99337df06
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249796(v=office.15)
+ms:contentKeyID: 48546984
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: bf919661410ae207295c6b400938a5a534e39978
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25888532"
 ---
-
-<<<<<<< ヘッド
-# <a name="connectionstring-connectiontimeout-and-state-properties-example-vb"></a>ConnectionString プロパティ、ConnectionTimeout プロパティおよび State プロパティの使用例 (VB)
-=======
-# <a name="connectionstring-connectiontimeout-and-state-properties-example-vb"></a>ConnectionString、タイムアウト、および状態のプロパティの使用例 (VB)
->>>>>>> master
+# <a name="connectionstring-connectiontimeout-and-state-properties-example-vb"></a>ConnectionString プロパティ、ConnectionTimeout プロパティ、State プロパティの使用例 (VB)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Connection](connectionstring-property-ado.md) オブジェクトを開くための、 [ConnectionString](connection-object-ado.md) プロパティのさまざまな使い方を示します。また、 [ConnectionTimeout](connectiontimeout-property-ado.md) プロパティを使って接続のタイムアウト時間を設定し、 [State](state-property-ado.md) プロパティを使って接続の状態を確認します。このプロシージャを実行するには、GetState 関数が必要です。
 

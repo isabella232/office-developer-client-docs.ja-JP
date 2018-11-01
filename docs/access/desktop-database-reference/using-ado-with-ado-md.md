@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249655(v=office.15)
 ms:contentKeyID: 48546405
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 492efdcef5f71daf50ac84eec5e61ef4ed07fd5a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 469480b0735c6cfbc6bf43e54c529f3e40f6818d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478064"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880545"
 ---
 # <a name="using-ado-with-ado-md"></a>ADO と ADO MD を共に使用する
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ADO と ADO MD は関連はしていますが、別々のオブジェクト モデルです。ADO には、データ ソースへの接続、コマンドの実行、表形式のデータと表形式のスキーマ メタデータの取得、およびプロバイダーのエラー情報を表示するためのオブジェクトが用意されています。ADO MD には、多次元データの取得、および多次元スキーマ メタデータの表示のためのオブジェクトが用意されています。
 

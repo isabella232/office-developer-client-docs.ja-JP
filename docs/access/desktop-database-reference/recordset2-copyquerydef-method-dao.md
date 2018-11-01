@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1053073
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e70093a6678a61874462ec3517f6424e5da79f71
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: d65f46433aa3071ce9709f1c3841dda45e02a5b6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25605584"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870388"
 ---
 # <a name="recordset2copyquerydef-method-dao"></a>Recordset2.CopyQueryDef メソッド (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013 
+**適用されます**Access 2013、Office 2013。 
 
 レコード セットのプレース ホルダー (Microsoft Access ワークスペースのみ) で表される**[Recordset](recordset-object-dao.md)** オブジェクトを作成するのには**クエリ定義**のコピーである**[QueryDef](querydef-object-dao.md)** オブジェクトの使用を返します。 .
 
@@ -30,11 +30,7 @@ ms.locfileid: "25605584"
 
 *式***Recordset2**オブジェクトを表す変数です。
 
-<<<<<<< ヘッド
 ### <a name="return-value"></a>戻り値
-=======
-### <a name="return-value"></a>戻り値
->>>>>>> master
 
 QueryDef
 

@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: CacheSize プロパティの使用例 (JScript) TOCTitle: CacheSize プロパティの使用例 (JScript) === タイトル: CacheSize プロパティの使用例 (JScript) TOCTitle: CacheSize プロパティの使用例 (JScript)
->>>>>>> マスターの ms:assetid: bee835cb-8d26-b8b7-4958-39261809b86c ms:mtpsurl: https://msdn.microsoft.com/library/JJ249928(v=office.15) ms:contentKeyID: 48547473 ms.date: 2015/09/18 mtps_version: v=office.15
+title: CacheSize プロパティの使用例 (JScript)
+TOCTitle: CacheSize property example (JScript)
+ms:assetid: bee835cb-8d26-b8b7-4958-39261809b86c
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249928(v=office.15)
+ms:contentKeyID: 48547473
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: ab8a8f3aa1bb968ebed86c5718c4f236a9d4fc3b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887797"
 ---
-
-<<<<<<< ヘッド
 # <a name="cachesize-property-example-jscript"></a>CacheSize プロパティの使用例 (JScript)
-=======
-# <a name="cachesize-property-example-jscript"></a>CacheSize プロパティの使用例 (JScript)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の例では、[CacheSize](cachesize-property-ado.md) プロパティを使用して、30 レコードのキャッシュを使用して実行した操作と、使用せずに実行した操作のパフォーマンスの違いを示します。 切り取りメモ帳または別のテキスト エディターに次のコードを貼り付けして**CacheSizeJS.asp**として保存します。
 
@@ -23,11 +29,7 @@
  
 <HTML> 
 <HEAD> 
-<<<<<<< HEAD
-<title>CacheSize Property Example (JScript)</title> 
-=======
 <title>CacheSize property example (JScript)</title> 
->>>>>>> master
 <style> 
 <!-- 
 body { 
@@ -51,11 +53,7 @@ body {
 </style> 
 </HEAD> 
 <BODY> 
-<<<<<<< HEAD
-<h1>CacheSize Property Example (JScript)</h1> 
-=======
 <h1>CacheSize property example (JScript)</h1> 
->>>>>>> master
 <% 
  // connection and recordset variables 
  var Cnxn = Server.CreateObject("ADODB.Connection") 

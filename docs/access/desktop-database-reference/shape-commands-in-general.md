@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249814(v=office.15)
 ms:contentKeyID: 48547039
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5cf2dc58ee3fa9205b9657366d8706b64b0aa58a
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 340cdd4f9901b3b58b702284cf50b7485e99f769
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861030"
+ms.locfileid: "25887895"
 ---
 # <a name="shape-commands-in-general"></a>一般的な Shape コマンド
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 データ シェイプでは、シェイプされる **Recordset** の列、列で表されるエンティティ間の関係、および **Recordset** にデータを設定する方法を定義することができます。
 
@@ -62,9 +62,7 @@ shape コマンドには、 **Recordset** オブジェクトを返す基のデ�
 
 SQL の JOIN 句を使用して 2 つのテーブルを関連付けることはできますが、階層 **Recordset** を使用すると、さらに効率的に情報を表すことができます。JOIN で作成された **Recordset** の各行には、1 つのテーブルからの情報が冗長的に繰り返し格納されます。階層 **Recordset** では、複数の子 **Recordset** オブジェクトのそれぞれに対して、ただ 1 つの親 **Recordset** が存在します。
 
-<<<<<<<**レコード セット**オブジェクトまたは[コマンド](command-object-ado.md)オブジェクトの[CommandText](commandtext-property-ado.md)プロパティを設定し、 [Execute](https://msdn.microsoft.com/library/jj248785\(v=office.15\))メソッドを呼び出すことによって、ヘッドの図形コマンドを発行できます。
-===**レコード セット**オブジェクトまたは[コマンド](command-object-ado.md)オブジェクトの[CommandText](commandtext-property-ado.md)プロパティを設定し、 [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command)メソッドを呼び出すことによって、は、図形のコマンドを発行できます。
->>>>>>> master
+shape コマンドは、 **Recordset** オブジェクトによって、または [Command](commandtext-property-ado.md) オブジェクトの [CommandText](command-object-ado.md) プロパティを設定して [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) メソッドを呼び出すことによって、発行することができます。
 
 shape コマンドはネストできます。 つまり、*親コマンド*または*子コマンド*自体があります別の shape コマンドです。
 

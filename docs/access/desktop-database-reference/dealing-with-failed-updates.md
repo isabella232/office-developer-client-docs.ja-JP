@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250258(v=office.15)
 ms:contentKeyID: 48548752
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6d3af3026052954ec74b10026e0cf288a6aa5249
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ca4d8d2fd8797ffb5ae0861e86dfa02faf7bb62c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476593"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875778"
 ---
 # <a name="dealing-with-failed-updates"></a>失敗した更新操作に対処する
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
-## <a name="dealing-with-failed-updates"></a>失敗した更新操作に対処する
+## <a name="dealing-with-failed-updates"></a>失敗した更新の処理
 
 更新プログラムで、エラーで終了するときは、エラーを解決する方法の種類と、エラーの重大度レベル、およびアプリケーションのロジックによって異なります。 ただし、データベースの他のユーザーと共有されている場合、一般的なエラーは操作を行う前に、フィールドを変更他のユーザー。 この種のエラーと呼ばれる、*の競合します*。 ADO はこの状況を検出し、エラーを報告します。
 

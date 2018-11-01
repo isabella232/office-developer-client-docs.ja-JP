@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1052929
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e4b1297fe7c41efd49a457f3382f72c480f85363
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 9a7f89277b51ef0edb5603c4482d4547201673fb
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478465"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25884775"
 ---
 # <a name="fieldvalidateonset-property-dao"></a>Field.ValidateOnSet プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 オブジェクトの **[Value](field-object-dao.md)** プロパティの設定時に、 **[Field](field-value-property-dao.md)** オブジェクトの値を直ちに検証するかどうかを指定する値を設定または取得します (Microsoft Access ワークスペースのみ)。
 

@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: IsolationLevel とモードのプロパティの使用例 (VB) TOCTitle: IsolationLevel とモードのプロパティの使用例 (VB) === タイトル: IsolationLevel とモードのプロパティの使用例 (VB) TOCTitle: IsolationLevel とモードプロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: ac3ec2e7-199c-723c-ff3e-2aaf3e10aa94 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249800(v=office.15) ms:contentKeyID: 48546999 ms.date: 2015/09/18 mtps_version: v=office.15
+title: IsolationLevel プロパティと Mode プロパティの使用例 (VB)
+TOCTitle: IsolationLevel and Mode properties example (VB)
+ms:assetid: ac3ec2e7-199c-723c-ff3e-2aaf3e10aa94
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249800(v=office.15)
+ms:contentKeyID: 48546999
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: bda6536d76e488c4ede8aff20610bf3eca84210a
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25877717"
 ---
-
-<<<<<<< ヘッド
 # <a name="isolationlevel-and-mode-properties-example-vb"></a>IsolationLevel プロパティと Mode プロパティの使用例 (VB)
-=======
-# <a name="isolationlevel-and-mode-properties-example-vb"></a>IsolationLevel とモードのプロパティの使用例 (VB)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Mode](mode-property-ado.md) プロパティを使って排他的接続を開き、 [IsolationLevel](isolationlevel-property-ado.md) プロパティを使って他のトランザクションから独立したトランザクションを開きます。
 

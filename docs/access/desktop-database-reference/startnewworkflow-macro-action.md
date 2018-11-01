@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm198223
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c4c6d237ef24bea0c8509ac4ae0df00c4f30cec2
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 6ba9d38caaa85ab9dd582abdbeb37aff5c7b340e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477180"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886495"
 ---
 # <a name="startnewworkflow-macro-action"></a>"StartNewWorkflow/新しいワークフローの開始" マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **StartNewWorkflow**アクションを使用すると、リンクされた Microsoft SharePoint Foundation リストに項目の新しいワークフローを開始します。
 

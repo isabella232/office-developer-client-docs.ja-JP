@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249651(v=office.15)
 ms:contentKeyID: 48546395
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6f45bb8e148fe2ba252b2620d41685006302cfdb
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a3e1799e5e40ffa3ffcd6698900b8678b309696e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477019"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885158"
 ---
 # <a name="operation-of-non-parameterized-commands"></a>非パラメーター化コマンドの操作
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 非パラメーター化コマンドの場合、すべてのプロバイダー コマンドが実行され、コマンドの実行中に **Recordset** が作成されます。コマンドが同期的に実行される場合、すべての **Recordset** が完全に作成されます。非同期作成モードが選択された場合、 **Recordset** の作成状態は、作成モードと **Recordset** のサイズによって異なります。
 

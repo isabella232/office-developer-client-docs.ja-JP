@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249212(v=office.15)
 ms:contentKeyID: 48544550
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 241a70b73f87dcb2b67d0a6d0d364dc8507892cc
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 99396a6b712c248fd0d22893d9bd10ee5e4e93c4
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861562"
+ms.locfileid: "25887685"
 ---
 # <a name="ado-code-examples-in-microsoft-visual-c"></a>Microsoft Visual C++ での ADO コードの例
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 Microsoft Visual C++ で記述するときの ADO のメソッド、プロパティ、およびイベントの使用方法については、次のコード例を参照してください。
 
@@ -66,11 +66,7 @@ Microsoft Visual C++ で記述するときの ADO のメソッド、プロパテ
 
   - [Save メソッドおよび Open メソッドの使用例 (VJ++)](save-and-open-methods-example-vc.md)
 
-<<<<<<< 見出し
-  - [メソッドとプロパティの使用例のインデックスをシークします。](seek-method-and-index-property-example-vc.md)
-=======
   - [メソッド、インデックスのシーク プロパティの使用例](seek-method-and-index-property-example-vc.md)
->>>>>>> master
 
   - [Supports メソッドの使用例 (VJ++)](supports-method-example-vc.md)
 
@@ -80,71 +76,6 @@ Microsoft Visual C++ で記述するときの ADO のメソッド、プロパテ
 
 **プロパティ**
 
-<<<<<<< 見出し
-  - [AbsolutePage プロパティ、PageCount プロパティ、および PageSize プロパティの使用例 (VJ++)](absolutepage-pagecount-and-pagesize-properties-example-vc.md)
-
-  - [AbsolutePosition プロパティと CursorLocation プロパティの使用例 (VJ++)](absoluteposition-and-cursorlocation-properties-example-vc.md)
-
-  - [ActiveCommand プロパティの使用例 (VJ++)](activecommand-property-example-vc.md)
-
-  - [ActiveConnection、CommandText、CommandTimeout、CommandType、Size、および Direction プロパティの使用例 (VJ++)](activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vc.md)
-
-  - [ActualSize プロパティと DefinedSize プロパティの使用例 (VJ++)](actualsize-and-definedsize-properties-example-vc.md)
-
-  - [Attributes プロパティと Name プロパティの使用例 (VJ++)](attributes-and-name-properties-example-vc.md)
-
-  - [BOF プロパティ、EOF プロパティ、および Bookmark プロパティの使用例 (VJ++)](bof-eof-and-bookmark-properties-example-vc.md)
-
-  - [CacheSize プロパティの使用例 (VJ++)](cachesize-property-example-vc.md)
-
-  - [ConnectionString プロパティ、ConnectionTimeout プロパティおよび State プロパティの使用例 (VJ++)](connectionstring-connectiontimeout-and-state-properties-example-vc.md)
-
-  - [Count プロパティの使用例 (VJ++)](count-property-example-vc.md)
-
-  - [CursorType プロパティ、LockType プロパティ、および EditMode プロパティの使用例 (VJ++)](cursortype-locktype-and-editmode-properties-example-vc.md)
-
-  - [Description、HelpContext、HelpFile、NativeError、Number、Source、および SQLState プロパティの使用例 (VJ++)](description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vc.md)
-
-  - [Filter プロパティと RecordCount プロパティの使用例 (VC++)](filter-and-recordcount-properties-example-vc.md)
-
-  - [Seek メソッドおよび Index プロパティの使用例 (VC++)](seek-method-and-index-property-example-vc.md)
-
-  - [IsolationLevel プロパティと Mode プロパティの使用例 (VC++)](isolationlevel-and-mode-properties-example-vc.md)
-
-  - [Item プロパティの使用例 (VJ++)](item-property-example-vc.md)
-
-  - [MarshalOptions プロパティの使用例 (VJ++)](marshaloptions-property-example-vc.md)
-
-  - [MaxRecords プロパティの使用例 (VJ++)](maxrecords-property-example-vc.md)
-
-  - [NumericScale プロパティと Precision プロパティの使用例 (VJ++)](ado-numericscale-and-precision-properties-example-vc.md)
-
-  - [Optimize プロパティの使用例 (VJ++)](optimize-property-example-vc.md)
-
-  - [OriginalValue プロパティと UnderlyingValue プロパティの使用例 (VJ++)](originalvalue-and-underlyingvalue-properties-example-vc.md)
-
-  - [Prepared プロパティの使用例 (VJ++)](prepared-property-example-vc.md)
-
-  - [Provider プロパティと DefaultDatabase プロパティの使用例 (VJ++)](provider-and-defaultdatabase-properties-example-vc.md)
-
-  - [Sort プロパティの使用例 (VJ++)](sort-property-example-vc.md)
-
-  - [Source プロパティの使用例 (VJ++)](source-property-example-vc.md)
-
-  - [State プロパティの使用例 (VJ++)](state-property-example-vc.md)
-
-  - [Status プロパティの使用例 (VJ++)](status-property-example-vc.md)
-
-  - [StayInSync プロパティの使用例 (VJ++)](stayinsync-property-example-vc.md)
-
-  - [Type プロパティの使用例 (Fields) (VJ++)](type-property-example-field-vc.md)
-
-  - [Type プロパティの使用例 (Property) (VJ++)](type-property-example-property-vc.md)
-
-  - [Value プロパティの使用例 (VJ++)](value-property-example-vc.md)
-
-  - [バージョン プロパティの使用例](version-property-example-vc.md)
-=======
   - [AbsolutePage、PageCount、および PageSize プロパティの使用例](absolutepage-pagecount-and-pagesize-properties-example-vc.md)
 
   - [AbsolutePosition と CursorLocation プロパティの使用例](absoluteposition-and-cursorlocation-properties-example-vc.md)
@@ -208,7 +139,6 @@ Microsoft Visual C++ で記述するときの ADO のメソッド、プロパテ
   - [値プロパティの使用例](value-property-example-vc.md)
 
   - [バージョン プロパティの使用例](version-property-example-vc.md)
->>>>>>> master
 
 **その他**
 

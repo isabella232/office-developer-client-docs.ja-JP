@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249773(v=office.15)
 ms:contentKeyID: 48546877
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a426a7aa0a485817dbab5d865a22a9920b21f0ab
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: b82c01ef5084bf9d40b03279640693490f4eb652
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861940"
+ms.locfileid: "25887412"
 ---
 # <a name="openschema-method-example-vj"></a>OpenSchema メソッドの使用例 (VJ++)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[OpenSchema](openschema-method-ado.md) メソッドを使用して、***Pubs*** データベース内の各テーブルの名前と型を表示します。
 

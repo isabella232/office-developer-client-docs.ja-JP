@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: StayInSync プロパティの使用例 (vc++) TOCTitle: StayInSync プロパティの使用例 (vc++) === タイトル: StayInSync プロパティの使用例 (vc++) TOCTitle: StayInSync プロパティの使用例 (vc++)
->>>>>>> マスターの ms:assetid: 42c389a8-e6d5-45f4-0442-1b2a2422dcbe ms:mtpsurl: https://msdn.microsoft.com/library/JJ249197(v=office.15) ms:contentKeyID: 48544485 ms.date: 2015/09/18 mtps_version: v=office.15
+title: StayInSync プロパティの使用例 (VC++)
+TOCTitle: StayInSync property example (VC++)
+ms:assetid: 42c389a8-e6d5-45f4-0442-1b2a2422dcbe
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249197(v=office.15)
+ms:contentKeyID: 48544485
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 1c8816e7883cbccb23425ddb057e0c811338b2bc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867420"
 ---
-
-<<<<<<< ヘッド
 # <a name="stayinsync-property-example-vc"></a>StayInSync プロパティの使用例 (VC++)
-=======
-# <a name="stayinsync-property-example-vc"></a>StayInSync プロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、階層 [Recordset](stayinsync-property-ado.md) 内の行へのアクセスを容易にする [StayInSync](recordset-object-ado.md) プロパティの機能を示します。
 

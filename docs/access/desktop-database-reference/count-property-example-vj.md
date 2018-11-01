@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: Count プロパティの使用例 (vj++) TOCTitle: Count プロパティの使用例 (vj++) === タイトル: Count プロパティの使用例 (vj++) TOCTitle: Count プロパティの使用例 (vj++)
->>>>>>> マスターの ms:assetid: 749de00a-7530-ea04-558c-34277c4d2f61 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249478(v=office.15) ms:contentKeyID: 48545666 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Count プロパティの使用例 (VJ++)
+TOCTitle: Count property example (VJ++)
+ms:assetid: 749de00a-7530-ea04-558c-34277c4d2f61
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249478(v=office.15)
+ms:contentKeyID: 48545666
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 6ec8469015f0ba53d277dcdd592d3befdc4e0d0b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870248"
 ---
-
-<<<<<<< ヘッド
 # <a name="count-property-example-vj"></a>Count プロパティの使用例 (VJ++)
-=======
-# <a name="count-property-example-vj"></a>Count プロパティの使用例 (vj++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、***従業員***データベース内の 2 つのコレクションの[Count](count-property-ado.md)プロパティを使用します。 このプロパティで、各コレクション内のオブジェクト数を取得し、これらのコレクションを列挙するループに上限を設定します。 **Count**プロパティを使用せずにこれらのコレクションを列挙するために別の方法は、ステートメントを使用することです。
 

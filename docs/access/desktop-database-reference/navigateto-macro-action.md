@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm119055
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 9a6a59b6c84e9814aeb9b4709d27955f29fd9e1e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 6cb9505eaf4a2002b0a4ae73ce4917ac250cda12
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477874"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876058"
 ---
 # <a name="navigateto-macro-action"></a>"NavigateTo/移動先" マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **移動**操作を使用するには、ナビゲーション ウィンドウでデータベース オブジェクトの表示を制御します。 たとえば、データベース オブジェクトの分類方法を変更したり、フィルターを適用して特定のデータベース オブジェクトだけを表示したりできます。
 

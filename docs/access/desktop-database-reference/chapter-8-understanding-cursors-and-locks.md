@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249598(v=office.15)
 ms:contentKeyID: 48546139
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6ff5f62bfaeb182e3399eaa82865fb492853ef30
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 4b98952e64eac3c35ed67f50e50776c08e594474
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861100"
+ms.locfileid: "25869086"
 ---
 # <a name="chapter-8-understanding-cursors-and-locks"></a>第 8 章: カーソルとロックについて
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 アプリケーションのデータ アクセス要件に最も適した、最も効率的な種類のカーソルを選択するには、カーソルの動作を理解することが大切です。カーソルの構成が最適でない場合、データ アクセス操作の速度が極端に低下することがあります。
 

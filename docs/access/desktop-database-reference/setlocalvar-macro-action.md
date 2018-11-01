@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm176660
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: fb2b3aabb4736c0deee57dafb36e32730fb95f4f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 299227553481c4f149827c31078111db7b427f7f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479705"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886642"
 ---
 # <a name="setlocalvar-macro-action"></a>"SetLocalVar/ローカル変数の設定" マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 " **SetLocalVar/ローカル変数の設定** " アクションは、一時変数を作成し、それを特定の値に設定します。
 

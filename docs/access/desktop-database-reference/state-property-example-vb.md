@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 状態プロパティの使用例 (VB) TOCTitle: 状態プロパティの使用例 (VB) === タイトル: 状態プロパティの使用例 (VB) TOCTitle: 状態プロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: e5a9abc6-9be7-5b70-a2da-9b678b3a8421 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250166(v=office.15) ms:contentKeyID: 48548366 ms.date: 2015/09/18 mtps_version: v=office.15
+title: State プロパティの使用例 (VB)
+TOCTitle: State property example (VB)
+ms:assetid: e5a9abc6-9be7-5b70-a2da-9b678b3a8421
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250166(v=office.15)
+ms:contentKeyID: 48548366
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 6d4aed1d2cbefaa8a43017b7a8ae216ddc0610d9
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871270"
 ---
-
-<<<<<<< ヘッド
 # <a name="state-property-example-vb"></a>State プロパティの使用例 (VB)
-=======
-# <a name="state-property-example-vb"></a>状態プロパティの使用例 (VB)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、非同期接続を開き、非同期コマンドを実行している間、[State](state-property-ado.md) プロパティを使用してメッセージを表示します。
 

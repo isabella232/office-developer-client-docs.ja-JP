@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249513(v=office.15)
 ms:contentKeyID: 48545816
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ffcf71925b98fc1c78ea56fd0d342a650ccbfb01
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: ca3bb9d5cf5286abdabe6448b1f839b8c391564d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863032"
+ms.locfileid: "25876226"
 ---
 # <a name="open-and-close-methods-example-vbscript"></a>Open メソッドと Close メソッドの使用例 (VBScript)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、既に開かれている [Recordset](open-method-ado-recordset.md) オブジェクトと [Connection](close-method-ado.md) オブジェクトの両方に対し、 [Open](recordset-object-ado.md) メソッドと [Close](connection-object-ado.md) メソッドを使用します。
 

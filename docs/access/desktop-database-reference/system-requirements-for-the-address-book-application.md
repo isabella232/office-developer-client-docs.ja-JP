@@ -6,31 +6,29 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249251(v=office.15)
 ms:contentKeyID: 48544757
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e1536b1a03ed0e7c873b2db06e76ee9b505ee00c
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: edfdd66ea1651f71e74e5f98c6f2a3ac2bf36207
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25604429"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885963"
 ---
 # <a name="system-requirements-for-the-address-book-application"></a>Address Book アプリケーションの必要システム
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 Address Book サンプル アプリケーションをセットアップするためには、次のソフトウェアおよびデータベースの要件を満たしている必要があります。
 
 **ソフトウェアの要件**
 
-<<<<<<< ヘッドがこの Web アプリケーションを実行するサーバー コンピューターのソフトウェア要件が含まれます: === この web アプリケーションを実行するサーバー コンピューターのソフトウェア要件が含まれます。
->>>>>>> master
+この web アプリケーションを実行するサーバー コンピューターのソフトウェア要件は次のとおりです。
 
   - Microsoft Windows NT® Server 4.0 Service Pack 3 以降または Microsoft Windows® 2000 Server
 
   - Active Server Pages を含む Microsoft Internet Information Services (IIS) 3.0 以降
 
-<<<<<<< ヘッドは、この Web アプリケーションを実行するため、クライアント コンピューターのソフトウェア要件が含まれます: === この web アプリケーションを実行するため、クライアント コンピューターのソフトウェア要件が含まれます。
->>>>>>> master
+この web アプリケーションを実行するため、クライアント コンピューターのソフトウェア要件は次のとおりです。
 
   - Microsoft Internet Explorer 4.0 以降
 

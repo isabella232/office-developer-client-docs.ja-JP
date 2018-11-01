@@ -1,24 +1,26 @@
 ---
-<<<<<<< ヘッド タイトル: TOCTitle のサイズ プロパティ (ADO): サイズ プロパティ (ADO) === タイトル: Size プロパティ (ADO) TOCTitle: Size プロパティ (ADO)
->>>>>>> マスターの ms:assetid: 24596b5c-b1cc-e97e-68b6-8ff53baf150b ms:mtpsurl: https://msdn.microsoft.com/library/JJ249017(v=office.15) ms:contentKeyID: 48543753 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Size プロパティ (ADO)
+TOCTitle: Size property (ADO)
+ms:assetid: 24596b5c-b1cc-e97e-68b6-8ff53baf150b
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249017(v=office.15)
+ms:contentKeyID: 48543753
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 03434b0227c5110ac3a1f36512aaaebd5c23c97a
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876408"
 ---
-
-<<<<<<< ヘッド
 # <a name="size-property-ado"></a>Size プロパティ (ADO)
-=======
-# <a name="size-property-ado"></a>Size プロパティ (ADO)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [Parameter](parameter-object-ado.md) オブジェクトの最大サイズをバイト数または文字数で示します。
 
-<<<<<<< ヘッド
-## <a name="settings-and-return-values"></a>設定値と戻り値
-=======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
->>>>>>> master
 
 **Parameter** オブジェクトの最大サイズをバイト数または文字数で示す長整数型 ( **Long** ) の値を設定または取得します。
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249943(v=office.15)
 ms:contentKeyID: 48547536
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 626b6d4aadc4326c370da3b9137f8990d5f818d7
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 427159a5f9bf73081e459dfe11cdb13dc3969cf0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861478"
+ms.locfileid: "25877332"
 ---
 # <a name="createrecordset-method-example-vb"></a>CreateRecordset メソッドの使用例 (VB)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 CreateRecordset メソッドを使用すると、[Recordset](recordset-object-ado.md) オブジェクトを作成し、列情報を指定できます。 **Recordset** オブジェクトにデータを挿入すると、挿入された情報は基になる行セットにバッファーされます。
 

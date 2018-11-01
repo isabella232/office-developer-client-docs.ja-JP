@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm150219
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 32bf1ff8f660bbc9f38c9764f560c0897041ab45
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 103be9b9587c2171d3414665a67ec36629df8ce2
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478737"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874623"
 ---
 # <a name="settempvar-macro-action"></a>SetTempVar マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 

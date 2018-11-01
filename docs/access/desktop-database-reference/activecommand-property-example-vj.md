@@ -1,16 +1,21 @@
 ---
-<<<<<<< ヘッド タイトル: ActiveCommand プロパティの使用例 (vj++) TOCTitle: ActiveCommand プロパティの使用例 (vj++) ms:assetid: e7ec73de-1097-ea57-9bdd-27c56263c943 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250176(v=office.15) ms:contentKeyID: 48548415 ms.date: 2015/09/18mtps_version: v=office.15
+title: ActiveCommand プロパティの使用例 (VJ++)
+TOCTitle: ActiveCommand property example (VJ++)
+ms:assetid: e7ec73de-1097-ea57-9bdd-27c56263c943
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250176(v=office.15)
+ms:contentKeyID: 48548415
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: d7ef113a3d167d94d1b3e262b84d68197a08cd9f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878613"
 ---
-
 # <a name="activecommand-property-example-vj"></a>ActiveCommand プロパティの使用例 (VJ++)
 
-=== タイトル: ActiveCommand プロパティの使用例 (vj++) TOCTitle: ActiveCommand プロパティの使用例 (vj++) ms:assetid: e7ec73de-1097-ea57-9bdd-27c56263c943 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250176(v=office.15) ms:contentKeyID: 48548415 ms.date: 2018/10/17 mtps_version: v=office.15
----
-
-# <a name="activecommand-property-example-vj"></a>ActiveCommand プロパティの使用例 (vj++)
->>>>>>> master
-
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の例では、[ActiveCommand](activecommand-property-ado.md) プロパティの使用方法を示します。
 

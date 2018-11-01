@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834751(v=office.15)
 ms:contentKeyID: 48547861
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8fb7a662a061a7e98d3782d0c42badeda77ab3a8
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c217fd1cf63477fd8758dfe3d34592fce34cdbca
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478221"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885214"
 ---
 # <a name="recordsetfillcache-method-dao"></a>Recordset.FillCache メソッド (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 Microsoft Access データベース エンジンに接続している ODBC データ ソースのデータを格納している **Recordset** オブジェクトについて、ローカル キャッシュの全部または一部にデータを格納します (Microsoft Access データベース エンジンに接続している ODBC データベースのみ)。
 

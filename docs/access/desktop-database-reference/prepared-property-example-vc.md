@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 準備されたプロパティの使用例 (vc++) TOCTitle: 準備されたプロパティの使用例 (vc++) === タイトル: Prepared プロパティの使用例 (vc++) TOCTitle: Prepared プロパティの使用例 (vc++)
->>>>>>> マスターの ms:assetid: 9b2d8037-e74d-5fbd-c56c-18187236b1b2 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249704(v=office.15) ms:contentKeyID: 48546562 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Prepared プロパティの使用例 (VC++)
+TOCTitle: Prepared property example (VC++)
+ms:assetid: 9b2d8037-e74d-5fbd-c56c-18187236b1b2
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249704(v=office.15)
+ms:contentKeyID: 48546562
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: f0c3f6f48418b6b8df95b423b9baba3a9c84c21b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885816"
 ---
-
-<<<<<<< ヘッド
 # <a name="prepared-property-example-vc"></a>Prepared プロパティの使用例 (VC++)
-=======
-# <a name="prepared-property-example-vc"></a>Prepared プロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、準備済みのバージョンと準備されていないバージョンの 2 つの [Command](prepared-property-ado.md) オブジェクトを開くことによって、 [Prepared](command-object-ado.md) プロパティの機能を示します。
 

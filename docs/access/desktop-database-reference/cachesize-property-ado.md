@@ -1,24 +1,26 @@
 ---
-<<<<<<< ヘッド タイトル: CacheSize プロパティ (ADO) TOCTitle: CacheSize プロパティ (ADO) === タイトル: CacheSize プロパティ (ADO) TOCTitle: CacheSize プロパティ (ADO)
->>>>>>> マスターの ms:assetid: 42f86cc0-30dc-669b-9e65-5e7ecd52c4d7 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249200(v=office.15) ms:contentKeyID: 48544491 ms.date: 2015/09/18 mtps_version: v=office.15
+title: CacheSize プロパティ (ADO)
+TOCTitle: CacheSize property (ADO)
+ms:assetid: 42f86cc0-30dc-669b-9e65-5e7ecd52c4d7
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249200(v=office.15)
+ms:contentKeyID: 48544491
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 17c24cca00f88be4d867a3cb53a9566a326c2548
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887699"
 ---
-
-<<<<<<< 見出し
 # <a name="cachesize-property-ado"></a>CacheSize プロパティ (ADO)
-=======
-# <a name="cachesize-property-ado"></a>CacheSize プロパティ (ADO)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ローカル メモリにキャッシュされる [Recordset](recordset-object-ado.md) オブジェクトのレコード数を示します。
 
-<<<<<<< 見出し
-## <a name="settings-and-return-values"></a>設定値と戻り値
-=======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
->>>>>>> master
 
 0 より大きい長整数型 ( **Long** ) の値を設定または取得します。既定値は 1 です。
 

@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: DeleteRule プロパティの使用例 (vc++) TOCTitle: DeleteRule プロパティの使用例 (vc++) === タイトル: DeleteRule プロパティの使用例 (vc++) TOCTitle: DeleteRule プロパティの使用例 (vc++)
->>>>>>> マスターの ms:assetid: 364efee7-d579-57df-aeb0-fa352a72d704 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249122(v=office.15) ms:contentKeyID: 48544164 ms.date: 2015/09/18 mtps_version: v=office.15
+title: DeleteRule プロパティの使用例 (VC++)
+TOCTitle: DeleteRule property example (VC++)
+ms:assetid: 364efee7-d579-57df-aeb0-fa352a72d704
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249122(v=office.15)
+ms:contentKeyID: 48544164
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 97e2e1d9a9c801fc7982ec9bdd84e060a03ceccf
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875484"
 ---
-
-<<<<<<< ヘッド
 # <a name="deleterule-property-example-vc"></a>DeleteRule プロパティの使用例 (VC++)
-=======
-# <a name="deleterule-property-example-vc"></a>DeleteRule プロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ここでは、[Key](deleterule-property-adox.md) オブジェクトの [DeleteRule](key-object-adox.md) プロパティの使用例を示します。このコードでは、新しい [Table オブジェクト](table-object-adox.md) を追加して新しい主キーを定義し、 **DeleteRule** を **adRICascade** に設定します。
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249007(v=office.15)
 ms:contentKeyID: 48543719
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ee7f29fa12b7158f2886f908666fa485ddf291cd
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 35cab114da6536ea1a0123e0da2541dd69125824
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477645"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25877885"
 ---
 # <a name="microsoft-ole-db-persistence-provider-ado-service-provider"></a>Microsoft OLE DB Persistence Provider (ADO サービス プロバイダー)
 
 
-**適用されます**Access 2013 |。Office 2013 
+**適用されます**Access 2013、Office 2013。 
 
 Microsoft OLE DB Persistence Provider を使用すると、[Recordset](recordset-object-ado.md) オブジェクトをファイルに保存し、後でその **Recordset** オブジェクトをファイルから復元できます。スキーマ情報、データ、および保留中の変更が保持されます。
 

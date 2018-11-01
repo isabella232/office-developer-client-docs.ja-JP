@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1052879
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: dc2e7cb2c6144fc3423440927c99baf2843b8941
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0f05e4b9fe7dfeff687e7709462efbe37f10be42
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478405"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889876"
 ---
 # <a name="databasetransactions-property-dao"></a>Database.Transactions プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 オブジェクトがトランザクションをサポートしているかどうかを示す値を取得します。値の取得のみ可能です。ブール型 ( **Boolean**) の値を使用します。
 

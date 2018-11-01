@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249647(v=office.15)
 ms:contentKeyID: 48546385
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5ad3b3163a2169d90072335d5bc827700b99c73f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c1555883ef8305225d6ddd1969d98de082288a6b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477099"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887538"
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-active-directory-service"></a>Microsoft OLE DB Provider for Microsoft Active Directory Service
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 Microsoft Active Directory Service Interfaces (ADSI) プロバイダーを使用すると、ADO から ADSI をとおして異種ディレクトリ サービスに接続できます。これによって、ADO アプリケーションでは、Microsoft Windows NT 4.0 および Microsoft Windows 2000 のディレクトリ サービス、LDAP 準拠のディレクトリ サービス、および Novell Directory Services に対する読み取り専用アクセスが可能になります。ADSI 自体がプロバイダー モデルに基づいているので、新しいプロバイダーで別のディレクトリへのアクセスを提供する場合でも、ADO アプリケーションはシームレスにアクセスできます。ADSI プロバイダーはフリースレッドであり、Unicode に対応しています。
 

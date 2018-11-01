@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 属性のプロパティの使用例 (VB) TOCTitle: 属性のプロパティの使用例 (VB) === タイトル: 属性のプロパティの使用例 (VB) TOCTitle: 属性のプロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: bda5e445-6425-5daf-b182-b6f5ea044b04 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249918(v=office.15) ms:contentKeyID: 48547442 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Attributes プロパティの使用例 (VB)
+TOCTitle: Attributes property example (VB)
+ms:assetid: bda5e445-6425-5daf-b182-b6f5ea044b04
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249918(v=office.15)
+ms:contentKeyID: 48547442
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 1abdb333551e80a8c2b0e8a440aee9c35ca69120
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879257"
 ---
-
-<<<<<<< ヘッド
 # <a name="attributes-property-example-vb"></a>Attributes プロパティの使用例 (VB)
-=======
-# <a name="attributes-property-example-vb"></a>属性プロパティの使用例 (VB)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ここでは、[Column](attributes-property-adox.md) の [Attributes](column-object-adox.md) プロパティの使用例を示します。このプロパティを **adColNullable** に設定すると、 [Recordset](recordset-object-ado.md)[Field](field-object-ado.md) の値に空の文字列を設定できるようになります。この状態で、ユーザーはデータが認識されていないレコードとデータが適用されていないレコードを区別できます。
 

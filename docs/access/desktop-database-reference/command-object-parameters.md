@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249862(v=office.15)
 ms:contentKeyID: 48547218
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 16e292c5700c653300e5493cbd613326621266c1
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: b3ce61f514e174595a458f66ea0a6c671ce5a9dc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476674"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880174"
 ---
 # <a name="command-object-parameters"></a>Command オブジェクトのパラメーター
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の例では、より注意の必要な **Command** オブジェクトの使用方法を示します。ここでは、SQL コマンドのテキストが変更され、パラメーター付きコマンドになっています。これにより、パラメーターとして渡す値をそのつど変えて、コマンドを繰り返し利用できるようになります。 **Command** オブジェクトの **Prepared** プロパティが **True** に設定されているため、プロバイダーは、 **CommandText** で指定されたコマンドを初めて実行する前に、それをコンパイルするよう要求されます。またプロバイダーは、コンパイル済みのコマンドをメモリに保存します。これにより、準備にかかるオーバーヘッドが原因で、コマンドが最初に実行されるときの時間が若干長くなりますが、それ以降にコマンドが呼び出されたときには、毎回短い時間で実行できるようになります。したがって、コマンドの準備は、コマンドが複数回使用される場合のみ実行することをお勧めします。
 

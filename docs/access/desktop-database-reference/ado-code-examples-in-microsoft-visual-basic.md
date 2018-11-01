@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249342(v=office.15)
 ms:contentKeyID: 48545145
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a1ceec153a1717485bac87cbf5fdb764f546cab7
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 405e866d87d296869536ca952f45782080809853
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862115"
+ms.locfileid: "25873895"
 ---
 # <a name="ado-code-examples-in-microsoft-visual-basic"></a>Microsoft Visual Basic での ADO コードの例
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 Visual Basic で記述するときの ADO のメソッド、プロパティ、およびイベントの使用方法については、次のコード例を参照してください。
 
@@ -59,11 +59,7 @@ Visual Basic で記述するときの ADO のメソッド、プロパティ、�
 
   - [GetString メソッドの使用例 (VJ++)](getstring-method-example-vb.md)
 
-<<<<<<< 見出し
   - [SkipLine メソッド、EOS、および LineSeparator プロパティの使用例](eos-and-lineseparator-properties-and-skipline-method-example-vb.md)
-=======
-  - [SkipLine メソッド、EOS、および LineSeparator プロパティの使用例](eos-and-lineseparator-properties-and-skipline-method-example-vb.md)
->>>>>>> master
 
   - [Move メソッドの使用例 (VB)](move-method-example-vb.md)
 
@@ -83,11 +79,7 @@ Visual Basic で記述するときの ADO のメソッド、プロパティ、�
 
   - [Save メソッドおよび Open メソッドの使用例 (VJ++)](save-and-open-methods-example-vb.md)
 
-<<<<<<< 見出し
-  - [メソッドとプロパティの使用例のインデックスをシークします。](seek-method-and-index-property-example-vb.md)
-=======
   - [メソッド、インデックスのシーク プロパティの使用例](seek-method-and-index-property-example-vb.md)
->>>>>>> master
 
   - [Supports メソッドの使用例 (VJ++)](supports-method-example-vb.md)
 
@@ -97,71 +89,6 @@ Visual Basic で記述するときの ADO のメソッド、プロパティ、�
 
 **プロパティ**
 
-<<<<<<< 見出し
-  - [AbsolutePage プロパティ、PageCount プロパティ、および PageSize プロパティの使用例 (VJ++)](absolutepage-pagecount-and-pagesize-properties-example-vb.md)
-
-  - [AbsolutePosition プロパティと CursorLocation プロパティの使用例 (VJ++)](absoluteposition-and-cursorlocation-properties-example-vb.md)
-
-  - [ActiveCommand プロパティの使用例 (VJ++)](activecommand-property-example-vb.md)
-
-  - [ActiveConnection、CommandText、CommandTimeout、CommandType、Size、および Direction プロパティの使用例 (VJ++)](activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vb.md)
-
-  - [ActualSize プロパティと DefinedSize プロパティの使用例 (VJ++)](actualsize-and-definedsize-properties-example-vb.md)
-
-  - [Attributes プロパティと Name プロパティの使用例 (VJ++)](attributes-and-name-properties-example-vb.md)
-
-  - [BOF プロパティ、EOF プロパティ、および Bookmark プロパティの使用例 (VJ++)](bof-eof-and-bookmark-properties-example-vb.md)
-
-  - [CacheSize プロパティの使用例 (VJ++)](cachesize-property-example-vb.md)
-
-  - [ConnectionString プロパティ、ConnectionTimeout プロパティおよび State プロパティの使用例 (VJ++)](connectionstring-connectiontimeout-and-state-properties-example-vb.md)
-
-  - [Count プロパティの使用例 (VJ++)](count-property-example-vb.md)
-
-  - [CursorType プロパティ、LockType プロパティ、および EditMode プロパティの使用例 (VJ++)](cursortype-locktype-and-editmode-properties-example-vb.md)
-
-  - [Description、HelpContext、HelpFile、NativeError、Number、Source、および SQLState プロパティの使用例 (VB)](description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vb.md)
-
-  - [EOS プロパティと LineSeparator プロパティ、および SkipLine メソッドの使用例 (VB)](eos-and-lineseparator-properties-and-skipline-method-example-vb.md)
-
-  - [Filter プロパティと RecordCount プロパティの使用例 (VB)](filter-and-recordcount-properties-example-vb.md)
-
-  - [IsolationLevel プロパティと Mode プロパティの使用例 (VJ++)](isolationlevel-and-mode-properties-example-vb.md)
-
-  - [Item プロパティの使用例 (VJ++)](item-property-example-vb.md)
-
-  - [MarshalOptions プロパティの使用例 (VJ++)](marshaloptions-property-example-vb.md)
-
-  - [MaxRecords プロパティの使用例 (VJ++)](maxrecords-property-example-vb.md)
-
-  - [NumericScale プロパティと Precision プロパティの使用例 (VJ++)](ado-numericscale-and-precision-properties-example-vb.md)
-
-  - [Optimize プロパティの使用例 (VJ++)](optimize-property-example-vb.md)
-
-  - [OriginalValue プロパティと UnderlyingValue プロパティの使用例 (VJ++)](originalvalue-and-underlyingvalue-properties-example-vb.md)
-
-  - [Prepared プロパティの使用例 (VJ++)](prepared-property-example-vb.md)
-
-  - [Provider プロパティと DefaultDatabase プロパティの使用例 (VJ++)](provider-and-defaultdatabase-properties-example-vb.md)
-
-  - [Sort プロパティの使用例 (VJ++)](sort-property-example-vb.md)
-
-  - [Source プロパティの使用例 (VJ++)](source-property-example-vb.md)
-
-  - [State プロパティの使用例 (VJ++)](state-property-example-vb.md)
-
-  - [Status プロパティの使用例 (VJ++)](status-property-example-recordset-vb.md)
-
-  - [StayInSync プロパティの使用例 (VB)](stayinsync-property-example-vb.md)
-
-  - [Type プロパティの使用例 (Field) (VB)](type-property-example-field-vb.md)
-
-  - [Type プロパティの使用例 (Property) (VB)](type-property-example-property-vb.md)
-
-  - [Value プロパティの使用例 (VJ++)](value-property-example-vb.md)
-
-  - [バージョン プロパティの使用例](version-property-example-vb.md)
-=======
   - [AbsolutePage、PageCount、および PageSize プロパティの使用例](absolutepage-pagecount-and-pagesize-properties-example-vb.md)
 
   - [AbsolutePosition と CursorLocation プロパティの使用例](absoluteposition-and-cursorlocation-properties-example-vb.md)
@@ -225,5 +152,4 @@ Visual Basic で記述するときの ADO のメソッド、プロパティ、�
   - [値プロパティの使用例](value-property-example-vb.md)
 
   - [バージョン プロパティの使用例](version-property-example-vb.md)
->>>>>>> master
 

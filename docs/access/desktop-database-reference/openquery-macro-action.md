@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm89069
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 30d4f245618e305be0e46b75cc0ea5c224444fa8
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 3a718355f8305c7182ba2bc1196e0099205f6da1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478308"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880272"
 ---
 # <a name="openquery-macro-action"></a>OpenQuery マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **OpenQuery** アクションを使用すると、選択クエリまたはクロス集計クエリをデータシート ビュー、デザイン ビュー、印刷プレビューのいずれかで開くことができます。このアクションでは、アクション クエリが実行されます。クエリを開くときのデータ入力モードを選択することもできます。
 

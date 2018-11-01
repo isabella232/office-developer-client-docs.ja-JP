@@ -1,16 +1,21 @@
 ---
-<<<<<<< ヘッド タイトル: ActualSize、DefinedSize プロパティの使用例 (vj++) TOCTitle: ActualSize、DefinedSize プロパティの使用例 (vj++) ms:assetid: 3a25d3b7-df53-66c1-6141-d51cd57aca96 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249145(v=office.15) ms:contentKeyID。48544261 ms.date: 2015/09/18 mtps_version: v=office.15
+title: ActualSize プロパティと DefinedSize プロパティの使用例 (VJ++)
+TOCTitle: ActualSize and DefinedSize properties example (VJ++)
+ms:assetid: 3a25d3b7-df53-66c1-6141-d51cd57aca96
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249145(v=office.15)
+ms:contentKeyID: 48544261
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: 7a7742f3afe544e775de294e3e955142e646b213
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885039"
 ---
-
 # <a name="actualsize-and-definedsize-properties-example-vj"></a>ActualSize プロパティと DefinedSize プロパティの使用例 (VJ++)
 
-=== タイトル: ActualSize、DefinedSize プロパティの使用例 (vj++) TOCTitle: ActualSize、DefinedSize プロパティの使用例 (vj++) ms:assetid: 3a25d3b7-df53-66c1-6141-d51cd57aca96 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249145(v=office.15) ms:contentKeyID: 48544261 ms.date: 2018/10/17mtps_version: v=office.15
----
-
-# <a name="actualsize-and-definedsize-properties-example-vj"></a>ActualSize、DefinedSize プロパティの使用例 (vj++)
->>>>>>> master
-
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の例では、[ActualSize](actualsize-property-ado.md) プロパティと [DefinedSize](definedsize-property-ado.md) プロパティを使用して、フィールドの定義されたサイズと実際のサイズを表示します。
 

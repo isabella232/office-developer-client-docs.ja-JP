@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249605(v=office.15)
 ms:contentKeyID: 48546174
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: be9e0f8e017e91152ed876b933e0c0c01a7f355e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a051c62d73a36fed0832f17b1cb53b1641d4a152
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479698"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889281"
 ---
 # <a name="reshaping"></a>リシェイプ
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 Shape コマンド句によって作成された**レコード セット**には、(通常は AS キーワードを使って*エイリアス*名を割り当てることができます。 シェイプされた**Recordset**の別名は、まったく異なるコマンドで参照できます。 次のように再び使うことが、または*形状を変更*、新しい shape コマンドの前に立てられていた**レコード セット**です。 この機能をサポートするためには、ADO は、[形状の名前](reshape-name-property-dynamic-ado.md)プロパティを提供します。
 

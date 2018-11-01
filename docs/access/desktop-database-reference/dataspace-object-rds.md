@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249527(v=office.15)
 ms:contentKeyID: 48545862
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2466727f52a37d396e7478fa54d27a68158855a4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1715a1d1207955d47897fee8ba191117bcfaa244
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476614"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882918"
 ---
 # <a name="dataspace-object-rds"></a>DataSpace オブジェクト (RDS)
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 中間層にあるカスタム ビジネス オブジェクトにクライアント側プロキシを作成します。
 

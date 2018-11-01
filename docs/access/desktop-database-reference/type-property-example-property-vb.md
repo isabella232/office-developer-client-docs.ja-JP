@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: タイプ プロパティの使用例 (VB) の (プロパティ) TOCTitle: タイプ プロパティの使用例 (VB) の (プロパティ) === タイトル: タイプ プロパティの使用例 (VB) の (プロパティ) TOCTitle: タイプ プロパティの使用例 (VB) の (プロパティ)
->>>>>>> マスターの ms:assetid: b3fecd24-e15a-3216-e2c8-0f4ce5655b9c ms:mtpsurl: https://msdn.microsoft.com/library/JJ249858(v=office.15) ms:contentKeyID: 48547209 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Type プロパティの使用例 (Property) (VB)
+TOCTitle: Type property example (Property) (VB)
+ms:assetid: b3fecd24-e15a-3216-e2c8-0f4ce5655b9c
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249858(v=office.15)
+ms:contentKeyID: 48547209
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 870b68bd43ed12e4d74a9d9f1c1c0887fdb22f85
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885697"
 ---
-
-<<<<<<< ヘッド
 # <a name="type-property-example-property-vb"></a>Type プロパティの使用例 (Property) (VB)
-=======
-# <a name="type-property-example-property-vb"></a>プロパティの使用例 (VB) の (プロパティ) を入力します。
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Type](type-property-ado.md) プロパティの機能を示します。この例は、 [Properties](properties-collection-ado.md) や [Fields](fields-collection-ado.md) などのコレクションの名前やデータ型の一覧を示すユーティリティのモデルです。
 

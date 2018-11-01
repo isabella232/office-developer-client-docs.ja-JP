@@ -1,24 +1,26 @@
 ---
-<<<<<<< ヘッド タイトル: EditMode プロパティ (ADO) TOCTitle: EditMode プロパティ (ADO) === タイトル: EditMode プロパティ (ADO) TOCTitle: EditMode プロパティ (ADO)
->>>>>>> マスターの ms:assetid: 28ca8f14-abee-ad20-9c16-11bb36b487e4 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249045(v=office.15) ms:contentKeyID: 48543867 ms.date: 2015/09/18 mtps_version: v=office.15
+title: EditMode プロパティ (ADO)
+TOCTitle: EditMode property (ADO)
+ms:assetid: 28ca8f14-abee-ad20-9c16-11bb36b487e4
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249045(v=office.15)
+ms:contentKeyID: 48543867
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 4c859d85dc62e09a1fd21af11deaca5d0f2e8b85
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867350"
 ---
-
-<<<<<<< 見出し
 # <a name="editmode-property-ado"></a>EditMode プロパティ (ADO)
-=======
-# <a name="editmode-property-ado"></a>EditMode プロパティ (ADO)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 現在のレコードの編集ステータスを示します。
 
-<<<<<<< 見出し
 ## <a name="return-value"></a>戻り値
-=======
-## <a name="return-value"></a>戻り値
->>>>>>> master
 
 [EditModeEnum](editmodeenum.md) 値を返します。
 

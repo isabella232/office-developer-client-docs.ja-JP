@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249545(v=office.15)
 ms:contentKeyID: 48545924
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f06954b25c798dab7fe80ba5ba7cf91bb0efc292
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 77a8f14cf76e87060d73d0b3a6a6939c292c422e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860995"
+ms.locfileid: "25868057"
 ---
 # <a name="persisting-records-in-xml-format"></a>XML 形式でのレコードの永続化
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ADTG 形式と同様に、XML 形式での **Recordset** の保存は、Microsoft OLE DB Persistence Provider で実装されます。このプロバイダーは、保存された XML ファイル、または ADO により生成されたスキーマ情報を含むストリームから前方スクロール型の読み取り専用行セットを生成します。同様に、プロバイダーは、ADO **Recordset** を取得し、XML を生成し、ファイルまたは COM **IStream** インターフェイスを実装する任意のオブジェクトに保存できます (実際には、ファイルも **IStream** をサポートするオブジェクトの一例です)。バージョン 2.5 以降の場合、ADO は Microsoft XML Parser (MSXML) に依存して XML を **Recordset** に読み込むため、msxml.dll が必要になります。バージョン 2.5 の場合、MSXML は Internet Explorer 5 に組み込まれて提供されています。バージョン 2.6 の場合、MSXML は SQL Server 2000 に組み込まれて提供されています。
 

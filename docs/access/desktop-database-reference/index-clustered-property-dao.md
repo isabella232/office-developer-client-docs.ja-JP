@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1052930
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4cb0c51f454e4792a64fc55416464373ac667dcf
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 2748be69677cacee246864303d2ff57dad9235b7
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476494"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875589"
 ---
 # <a name="indexclustered-property-dao"></a>Index.Clustered プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **Index** オブジェクトがテーブルのクラスター化インデックスを表すかどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。値の取得および設定が可能です。ブール型 ( **Boolean**) の値を使用します。
 

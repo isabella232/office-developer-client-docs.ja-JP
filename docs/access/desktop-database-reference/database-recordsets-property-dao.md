@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835730(v=office.15)
 ms:contentKeyID: 48548302
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 67ce617a77ddcf0b12dd0d0c98b290e0713d18fc
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ffc04e7fec7d373c101359d102f7059413105c55
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478235"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881308"
 ---
 # <a name="databaserecordsets-property-dao"></a>Database.Recordsets プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 指定したデータベースの開いているレコードセットをすべて含む **Recordsets** コレクションを返します。値の取得のみ可能です。
 

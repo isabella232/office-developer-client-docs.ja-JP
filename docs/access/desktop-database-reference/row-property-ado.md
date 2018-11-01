@@ -1,16 +1,22 @@
 ---
-タイトル: 行のプロパティを ActiveX データ オブジェクト (ADO) <<<<<<< ヘッド TOCTitle: 行プロパティ (ADO) === TOCTitle: 行のプロパティ (ADO)
->>>>>>> マスターの ms:assetid: 1c2b0e27-7232-4b1c-826c-9dc15d758851 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248959(v=office.15) ms:contentKeyID: 48543562 ms.date: 2015/09/18 mtps_version: v=office.15
+title: 行のプロパティを ActiveX データ オブジェクト (ADO)
+TOCTitle: Row property (ADO)
+ms:assetid: 1c2b0e27-7232-4b1c-826c-9dc15d758851
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248959(v=office.15)
+ms:contentKeyID: 48543562
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 7578a00719946450e840080c21284784a27be170
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870948"
 ---
-
-<<<<<<< ヘッド
 # <a name="row-property-ado"></a>Row プロパティ (ADO)
-=======
-# <a name="row-property-ado"></a>行プロパティ (ADO)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 
@@ -32,11 +38,7 @@ HRESULT に\_の行 (\[の\]IUnknown\* pRow)。
 
   - OLE DB **Row** オブジェクト。
 
-<<<<<<< ヘッド
 ## <a name="return-values"></a>戻り値
-=======
-## <a name="return-values"></a>戻り値
->>>>>>> master
 
 このプロパティのメソッドなどの標準の HRESULT 値を返します。\_[ok] および E\_は失敗します。
 

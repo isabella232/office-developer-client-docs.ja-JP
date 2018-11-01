@@ -10,17 +10,17 @@ f1_keywords:
 - ado210.chm1231106
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 153f59ebbcfae89f6358fe0d707791aab8a8cdd7
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 557eafe6e8c8ea2265fdaf8a5c4bae8856bb4476
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25864075"
+ms.locfileid: "25867532"
 ---
 # <a name="command-object-ado"></a>Command オブジェクト (ADO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 データ ソースに対して実行する特定のコマンドを定義します。
 
@@ -34,11 +34,7 @@ ms.locfileid: "25864075"
 
   - [Parameter](parameter-object-ado.md) オブジェクトと [Parameters](parameters-collection-ado.md) コレクションを使用して、パラメーター化されたクエリまたはストアド プロシージャの引数を定義できます。
 
-<<<<<<< 見出し
-  - **Execute** メソッドを使用して、コマンドを実行し、必要に応じて [Recordset](https://msdn.microsoft.com/library/jj248785\(v=office.15\)) オブジェクトを取得できます。
-=======
   - **Execute** メソッドを使用して、コマンドを実行し、必要に応じて [Recordset](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) オブジェクトを取得できます。
->>>>>>> master
 
   - [CommandType](commandtype-property-ado.md) プロパティを使用して、コマンドを実行する前にそのコマンドの種類を指定し、パフォーマンスを向上できます。
 

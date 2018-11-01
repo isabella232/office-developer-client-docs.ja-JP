@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 最適化プロパティの使用例 (vj++) TOCTitle: 最適化プロパティの使用例 (vj++) === タイトル: プロパティの使用例 (vj++) を最適化する TOCTitle: プロパティの使用例 (vj++) を最適化します。
->>>>>>> マスターの ms:assetid: d4ac9ae3-3304-addf-0292-7af4ed4fdbc2 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250067(v=office.15) ms:contentKeyID: 48547949 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Optimize プロパティの使用例 (VJ++)
+TOCTitle: Optimize property example (VJ++)
+ms:assetid: d4ac9ae3-3304-addf-0292-7af4ed4fdbc2
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250067(v=office.15)
+ms:contentKeyID: 48547949
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 4ecbd621ddb1be36af50920cdbf77becb7d068d9
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883301"
 ---
-
-<<<<<<< ヘッド
 # <a name="optimize-property-example-vj"></a>Optimize プロパティの使用例 (VJ++)
-=======
-# <a name="optimize-property-example-vj"></a>プロパティの使用例 (vj++) を最適化します。
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Field](field-object-ado.md) オブジェクトの動的 Optimize プロパティの機能を示します。 ***Pubs***データベースの***Authors***テーブルの***zip***フィールドのインデックスはありません。 [Optimize](optimize-property-dynamic-ado.md)プロパティを [ ***zip*** ] フィールドを**True**に設定は、ADO [Find](find-method-ado.md)メソッドのパフォーマンスが向上するインデックスを作成するを許可します。
 

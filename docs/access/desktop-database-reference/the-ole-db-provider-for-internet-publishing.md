@@ -6,21 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249583(v=office.15)
 ms:contentKeyID: 48546082
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bf41e23b56a05c8c119713b7fb459a34ca526169
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 3025637cf972f720db0a91b598d5903f13b8c9c4
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25602518"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886964"
 ---
 # <a name="the-ole-db-provider-for-internet-publishing"></a>OLE DB Provider for Internet Publishing
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
-<<<<<<< ヘッド、ADO[レコード](record-object-ado.md)および[ストリーム](stream-object-ado.md)オブジェクトで使用できます Microsoft OLE DB プロバイダーのインターネット公開インターネット発行プロバイダー () にアクセスして、リソースを操作するなど、Web フォルダーまたはファイルの処理Microsoft frontpage します。 ADO を使用して、 **Record** 、 **Stream** 、または [Recordset](recordset-object-ado.md) のソースを URL に指定することができます。 その後、リソースをアップロード、ダウンロード、移動、コピー、および削除したり、リソースのプロパティを直接操作することができるようになります。
-=== ADO[レコード](record-object-ado.md)および[ストリーム](stream-object-ado.md)オブジェクトは、そのインターネット公開インターネット発行プロバイダー () にアクセスし、web フォルダーまたは FrontPage によって処理されるファイルなどのリソースを操作する Microsoft OLE DB プロバイダーを使用できます。 ADO を使用して、 **Record** 、 **Stream** 、または [Recordset](recordset-object-ado.md) のソースを URL に指定することができます。 その後、リソースをアップロード、ダウンロード、移動、コピー、および削除したり、リソースのプロパティを直接操作することができるようになります。
->>>>>>> master
+ADO[レコード](record-object-ado.md)および[ストリーム](stream-object-ado.md)オブジェクトは、そのインターネット公開インターネット発行プロバイダー () にアクセスし、web フォルダーまたは FrontPage によって処理されるファイルなどのリソースを操作する Microsoft OLE DB プロバイダーを使用できます。 ADO を使用して、 **Record** 、 **Stream** 、または [Recordset](recordset-object-ado.md) のソースを URL に指定することができます。 その後、リソースをアップロード、ダウンロード、移動、コピー、および削除したり、リソースのプロパティを直接操作することができるようになります。
 
 Internet Publishing Provider で **Records** と **Streams** を使用するコード例については、「 [インターネットに発行するためのシナリオ](internet-publishing-scenario.md)」を参照してください。
 

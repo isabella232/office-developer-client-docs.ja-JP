@@ -1,15 +1,21 @@
 ---
-<<<<<<< ヘッド タイトル: カタログの ActiveConnection プロパティの使用例 (VB) TOCTitle: カタログの ActiveConnection プロパティの使用例 (VB) === タイトル: カタログの ActiveConnection プロパティの使用例 (VB) TOCTitle: カタログの ActiveConnectionプロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: 12a34091-e451-dbd1-e7f3-f794b84ee5b0 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248901(v=office.15) ms:contentKeyID: 48543348 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Catalog の ActiveConnection プロパティの使用例 (VB)
+TOCTitle: Catalog ActiveConnection property example (VB)
+ms:assetid: 12a34091-e451-dbd1-e7f3-f794b84ee5b0
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248901(v=office.15)
+ms:contentKeyID: 48543348
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 36dc7ce169bcfbfc341968db9f571532dae24970
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25884647"
 ---
-
-<<<<<<< ヘッド
 # <a name="catalog-activeconnection-property-example-vb"></a>Catalog の ActiveConnection プロパティの使用例 (VB)
-=======
-# <a name="catalog-activeconnection-property-example-vb"></a>カタログの ActiveConnection プロパティの使用例 (VB)
->>>>>>> master
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [ActiveConnection](activeconnection-property-adox.md) プロパティを有効に設定すると、開いている接続によってカタログが開かれます。開いたカタログから、そのカタログに含まれるスキーマ オブジェクトにアクセスできます。
 

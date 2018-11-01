@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250089(v=office.15)
 ms:contentKeyID: 48548027
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ef139e545fafedd67ca788ebfdc8a8ae86c659e2
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 38e9f726b596e9e523b759b639cd6b96055fd1d8
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477105"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876352"
 ---
 # <a name="datacontrol-error-codes"></a>DataControl エラー コード
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の表は、[RDS.DataControl](datacontrol-object-rds.md) オブジェクトのエラー コードの一覧です。下位 2 バイトを正の 10 進数に変換した値、エラー コード全体を負の 10 進数に変換した値、および 16 進数値を示します。
 

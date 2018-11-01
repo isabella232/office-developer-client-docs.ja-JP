@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: NumericScale と Precision プロパティの使用例 (VB) TOCTitle: NumericScale と Precision プロパティの使用例 (VB) === タイトル: NumericScale と Precision プロパティの使用例 (VB) TOCTitle: NumericScale と精度プロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: 728a76a3-1f80-935b-b6c7-94255ffe0160 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249462(v=office.15) ms:contentKeyID: 48545610 ms.date: 2015/09/18 mtps_version: v=office.15
+title: NumericScale プロパティと Precision プロパティの使用例 (VB)
+TOCTitle: NumericScale and Precision properties example (VB)
+ms:assetid: 728a76a3-1f80-935b-b6c7-94255ffe0160
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249462(v=office.15)
+ms:contentKeyID: 48545610
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: fc1dd570a1b2fbb3b178216e6b1742aaeb682947
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882078"
 ---
-
-<<<<<<< ヘッド
 # <a name="numericscale-and-precision-properties-example-vb"></a>NumericScale プロパティと Precision プロパティの使用例 (VB)
-=======
-# <a name="numericscale-and-precision-properties-example-vb"></a>NumericScale と Precision プロパティの使用例 (VB)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ここでは、[Column](numericscale-property-adox.md) オブジェクトの [NumericScale](precision-property-adox.md) プロパティおよび [Precision](column-object-adox.md) プロパティの使用例を示します。 このコードでは、*ノースウィンド*データベースの [**受注明細**] テーブルの値を表示します。
 

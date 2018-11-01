@@ -1,15 +1,21 @@
 ---
-<<<<<<< ヘッド タイトル: SortOrder プロパティの使用例 (VB) TOCTitle: SortOrder プロパティの使用例 (VB) === タイトル: SortOrder プロパティの使用例 (VB) TOCTitle: SortOrder プロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: 97937644-e3ef-06dc-d8ba-55ecaf7ac1ad ms:mtpsurl: https://msdn.microsoft.com/library/JJ249675(v=office.15) ms:contentKeyID: 48546472 ms.date: 2015/09/18 mtps_version: v=office.15
+title: SortOrder プロパティの使用例 (VB)
+TOCTitle: SortOrder property example (VB)
+ms:assetid: 97937644-e3ef-06dc-d8ba-55ecaf7ac1ad
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249675(v=office.15)
+ms:contentKeyID: 48546472
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 051f0ce18cf12ef2d3450dbf9ecc27ebb36134a0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874238"
 ---
-
-<<<<<<< ヘッド
 # <a name="sortorder-property-example-vb"></a>SortOrder プロパティの使用例 (VB)
-=======
-# <a name="sortorder-property-example-vb"></a>SortOrder プロパティの使用例 (VB)
->>>>>>> master
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Index](sortorder-property-adox.md) の [Columns](column-object-adox.md) コレクションに追加された [Column](columns-collection-adox.md) の [SortOrder](index-object-adox.md) プロパティの機能を示します。このコードは、 **Employees** テーブルの Country 列に昇順のインデックスを追加してレコードを表示します。次に、 **Employees** テーブルの Country 列に降順のインデックスを追加して、レコードを再表示します。これにより、昇順と降順のインデックスの違いを示します。
 

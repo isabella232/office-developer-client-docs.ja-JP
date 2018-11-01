@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm62122
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 91c49ca4d453418a02d55163a023e853fadd5773
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 65f972f2ec50212685897d496fd072c7d3f57968
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477686"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876023"
 ---
 # <a name="refreshrecord-macro-action"></a>"RefreshRecord/レコードの更新" マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **RefreshRecord**アクションを使用すると、アクティブ フォームまたはアクティブ データシートの現在のセット内のレコードに加えられた変更を反映するために基になるレコード ソースを更新します。
 

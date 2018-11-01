@@ -1,16 +1,21 @@
 ---
-<<<<<<< ヘッド タイトル: AbsolutePosition と CursorLocation プロパティの使用例 (JScript) TOCTitle: AbsolutePosition と CursorLocation プロパティの使用例 (JScript) ms:assetid: dc98dbcc-ad00-91cb-1cf0-ee6c9150a391 ms:mtpsurl:https://msdn.microsoft.com/library/JJ250117(v=office.15) ms:contentKeyID: 48548142 ms.date: 2015/09/18 mtps_version: v=office.15
+title: AbsolutePosition プロパティと CursorLocation プロパティの使用例 (JScript)
+TOCTitle: AbsolutePosition and CursorLocation properties example (JScript)
+ms:assetid: dc98dbcc-ad00-91cb-1cf0-ee6c9150a391
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250117(v=office.15)
+ms:contentKeyID: 48548142
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: 85dbd90fcf70b9c98414e1e2d496a51c356d096d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885606"
 ---
-
 # <a name="absoluteposition-and-cursorlocation-properties-example-jscript"></a>AbsolutePosition プロパティと CursorLocation プロパティの使用例 (JScript)
 
-=== タイトル: AbsolutePosition と CursorLocation プロパティの使用例 (JScript) TOCTitle: AbsolutePosition と CursorLocation プロパティの使用例 (JScript) ms:assetid: dc98dbcc-ad00-91cb-1cf0-ee6c9150a391 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250117(v=office.15) ms:contentKeyID。48548142 ms.date: 2018/10/17 mtps_version: v=office.15
----
-
-# <a name="absoluteposition-and-cursorlocation-properties-example-jscript"></a>AbsolutePosition と CursorLocation プロパティの使用例 (JScript)
->>>>>>> master
-
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の例では、[AbsolutePosition](absoluteposition-property-ado.md) プロパティを使用して [Recordset](recordset-object-ado.md) の全レコードを列挙するループの進捗を追跡する方法を示します。この例では、 [CursorLocation](cursorlocation-property-ado.md) プロパティを使用して、カーソルをクライアント カーソルに設定することにより、 **AbsolutePosition** プロパティを有効にしています。以下のコードをコピーして、メモ帳などのテキスト エディターに貼り付け、" **AbsolutePositionJS.asp** " という名前で保存してください。
 
@@ -23,11 +28,7 @@
 <html> 
  
 <head> 
-<<<<<<< HEAD
-<title>AbsolutePosition and CursorLocation Properties Example (JScript)</title> 
-=======
 <title>AbsolutePosition and CursorLocation properties example (JScript)</title> 
->>>>>>> master
 <style> 
 <!-- 
 BODY { 
@@ -52,11 +53,7 @@ BODY {
 </head> 
  
 <body> 
-<<<<<<< HEAD
-<h1>AbsolutePosition and CursorLocation Properties Example (JScript)</h1> 
-=======
 <h1>AbsolutePosition and CursorLocation properties example (JScript)</h1> 
->>>>>>> master
 <% 
  // connection and recordset variables 
  var strCnxn = "Provider='sqloledb';Data Source=" + Request.ServerVariables("SERVER_NAME") + ";" + 

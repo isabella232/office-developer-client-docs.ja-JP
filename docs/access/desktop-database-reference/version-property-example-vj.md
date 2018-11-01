@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: バージョン プロパティの使用例 (vj++) TOCTitle: バージョン プロパティの使用例 (vj++) === タイトル: バージョン プロパティの使用例 (vj++) TOCTitle: バージョン プロパティの使用例 (vj++)
->>>>>>> マスターの ms:assetid: c4f007b8-177d-967e-7f3b-a8945264099b ms:mtpsurl: https://msdn.microsoft.com/library/JJ249963(v=office.15) ms:contentKeyID: 48547600 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Version プロパティの使用例 (VJ++)
+TOCTitle: Version property example (VJ++)
+ms:assetid: c4f007b8-177d-967e-7f3b-a8945264099b
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249963(v=office.15)
+ms:contentKeyID: 48547600
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 185321327ed1718784fe6227f259347c0f8bb17d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889778"
 ---
-
-<<<<<<< ヘッド
 # <a name="version-property-example-vj"></a>Version プロパティの使用例 (VJ++)
-=======
-# <a name="version-property-example-vj"></a>バージョン プロパティの使用例 (vj++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Connection](version-property-ado.md) オブジェクトの [Version](connection-object-ado.md) プロパティを使用して、現在の ADO のバージョンを表示します。また、動的プロパティを使用して、次の項目を表示します。
 

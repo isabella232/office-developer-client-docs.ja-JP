@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff196402(v=office.15)
 ms:contentKeyID: 48545853
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 223612be0b2fca457c9aa78af0394c19574096f0
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: c6eebd129a5f721a69e140133bf08cb7bee4f4fd
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25606522"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868918"
 ---
 # <a name="recordsetopenrecordset-method-dao"></a>Recordset.OpenRecordset メソッド (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 新しい **[Recordset](recordset-object-dao.md)** オブジェクトを作成して **Recordsets** コレクションに追加します。
 
@@ -51,7 +51,7 @@ ms.locfileid: "25606522"
 <td><p>新しい <strong>Recordset</strong> のレコードの取得元です。テーブル名、クエリ名、またはレコードを返す SQL ステートメントを指定できます。Microsoft Access データベース エンジンのデータベースに含まれるテーブル タイプの <strong>Recordset</strong> オブジェクトの場合は、テーブル名でのみ指定できます。  </p></td>
 </tr>
 <tr class="even">
-<td><p>種類</p></td>
+<td><p>型</p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>開く <a href="recordsettypeenum-enumeration-dao.md">Recordset</a> の型を示す <strong><strong>RecordsetTypeEnum</strong></strong> 定数。</p>
@@ -90,11 +90,7 @@ ms.locfileid: "25606522"
 </table>
 
 
-<<<<<<< ヘッド
 ### <a name="return-value"></a>戻り値
-=======
-### <a name="return-value"></a>戻り値
->>>>>>> master
 
 Recordset
 

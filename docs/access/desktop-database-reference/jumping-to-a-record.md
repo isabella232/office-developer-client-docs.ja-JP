@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249033(v=office.15)
 ms:contentKeyID: 48543829
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d12ab7bedd58743eb7545ed8b0b8b585ab2ea217
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c88c7c5643559dabf3304863417c526a9fd15354
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478006"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25873272"
 ---
 # <a name="jumping-to-a-record"></a>任意のレコードにジャンプする
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の構文で [Move](move-method-ado.md) メソッドを使用すると、 **Recordset** 内を指定した数の分だけ前後に移動できます。
 

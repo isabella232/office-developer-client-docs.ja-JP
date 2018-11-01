@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249561(v=office.15)
 ms:contentKeyID: 48545965
 ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: f10fd9fada954bb5e3a356961636b2022c73bae3
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 387e9a853a306b2375034359ce26db50685afcc4
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862171"
+ms.locfileid: "25887909"
 ---
 # <a name="connectpromptenum"></a>ConnectPromptEnum
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 データ ソースとの接続を開くときに、不足しているパラメーターを要求するダイアログ ボックスを表示するかどうかを表します。
 

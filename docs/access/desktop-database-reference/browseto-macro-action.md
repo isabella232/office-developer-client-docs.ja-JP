@@ -10,16 +10,16 @@ f1_keywords:
 - vbaac10.chm35083
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 15009ca039d5df06bc732f4b58c066ad8f8d67c9
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 242041627a909b1c16d956dbbb94a3bf173d544a
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603764"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878935"
 ---
 # <a name="browseto-macro-action"></a>"BrowseTo/参照先" マクロ アクション
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **参照**アクションを使用するには保存されているオブジェクト間を移動します。 サブフォーム コントロールの引数へのパスを指定することで、サブフォーム コントロールのソース オブジェクトを変更することもできます。 **参照**を使用して、新しいウィンドウを開かずに、form2 を form1 から移動します。
 
@@ -57,11 +57,7 @@ ms.locfileid: "25603764"
 </tr>
 <tr class="odd">
 <td><p>Page オブジェクト</p></td>
-<<<<<<< ヘッド
-<td><p>指定した場合は、現在のページになる帳票フォームのページを設定します。この引数は Web のみです。</p></td>
-=======
 <td><p>指定した場合は、現在のページになる帳票フォームのページを設定します。 この引数は、web のみです。</p></td>
->>>>>>>マスター
 </tr>
 <tr class="even">
 <td><p>Data Mode/データ モード</p></td>

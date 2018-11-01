@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 状態プロパティの使用例 (vc++) TOCTitle: 状態プロパティの使用例 (vc++) === タイトル: 状態プロパティの使用例 (vc++) TOCTitle: 状態プロパティの使用例 (vc++)
->>>>>>> マスターの ms:assetid: 72cb738d-8404-f9f3-3d79-9eb2541a608b ms:mtpsurl: https://msdn.microsoft.com/library/JJ249464(v=office.15) ms:contentKeyID: 48545618 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Status プロパティの使用例 (VC++)
+TOCTitle: Status property example (VC++)
+ms:assetid: 72cb738d-8404-f9f3-3d79-9eb2541a608b
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249464(v=office.15)
+ms:contentKeyID: 48545618
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 06758dd435389ba0abfbd1a1c8dda8c5a492ab8f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886859"
 ---
-
-<<<<<<< ヘッド
 # <a name="status-property-example-vc"></a>Status プロパティの使用例 (VC++)
-=======
-# <a name="status-property-example-vc"></a>状態プロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Status](status-property-ado-recordset.md) プロパティを使用して、一括更新の前にバッチ処理で変更されたレコードを表示します。
 

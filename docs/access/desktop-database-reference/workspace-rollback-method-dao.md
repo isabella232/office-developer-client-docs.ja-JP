@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845335(v=office.15)
 ms:contentKeyID: 48543294
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5ef95f7c891c59239df82913e3235eef2d5f9545
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 04ff03ea173c7b319c9c61902d3700739dd1c7ff
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478994"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868071"
 ---
 # <a name="workspacerollback-method-dao"></a>Workspace.Rollback メソッド (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 現在のトランザクションを終了し、 **Workspace** オブジェクト内のすべてのデータベースを、現在のトランザクションが開始される前の状態に戻します。
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821397(v=office.15)
 ms:contentKeyID: 48546899
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1ecddf9a9972c6ded5e28748822169c2c60edc44
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 827e0c751101ca68246278c04a408731b77c36a7
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476381"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885123"
 ---
 # <a name="querydefcachesize-property-dao"></a>QueryDef.CacheSize プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ローカル メモリにキャッシュされた ODBC データ ソースから取得したレコード数を設定または取得します。値の取得および設定が可能です。長整数型 ( **Long**) の値を使用します。
 

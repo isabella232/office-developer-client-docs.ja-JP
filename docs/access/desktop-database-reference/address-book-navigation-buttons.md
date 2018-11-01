@@ -6,21 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249253(v=office.15)
 ms:contentKeyID: 48544765
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9f37a188fd3ddb3608eda414fbdcea6402cd9d41
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: d0a6409bcdeca211c3badb1ca7918d3d34bc3f1f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603946"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869023"
 ---
 # <a name="address-book-navigation-buttons"></a>Address Book のナビゲーション ボタン
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
-<<<<<<< ヘッド アドレス帳アプリケーションでは、Web ページの下部にあるナビゲーション ボタンが表示されます。 ナビゲーション ボタンを使ってデータの最初または最後の行、あるいは現在の行の前後にある行を選択することにより、HTML のグリッド表示内でデータ間を移動できます。
-=== アドレス帳アプリケーションでは、web ページの下部にあるナビゲーション ボタンが表示されます。 ナビゲーション ボタンを使ってデータの最初または最後の行、あるいは現在の行の前後にある行を選択することにより、HTML のグリッド表示内でデータ間を移動できます。
->>>>>>> master
+アドレス帳アプリケーションでは、web ページの下部にあるナビゲーション ボタンが表示されます。 ナビゲーション ボタンを使ってデータの最初または最後の行、あるいは現在の行の前後にある行を選択することにより、HTML のグリッド表示内でデータ間を移動できます。
 
 ## <a name="navigation-sub-procedures"></a>ナビゲーションのサブ プロシージャ
 

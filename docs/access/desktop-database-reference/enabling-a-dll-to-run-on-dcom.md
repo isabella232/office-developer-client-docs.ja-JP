@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249859(v=office.15)
 ms:contentKeyID: 48547211
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 26c83c9770ce7372338a054090025c67c32a9c36
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 750848ce0e787506085899f4717730e1ca0a8f13
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476776"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868694"
 ---
 # <a name="enabling-a-dll-to-run-on-dcom"></a>DCOM で DLL を実行できるようにする
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の手順では、ビジネス オブジェクトのダイナミック リンク ライブラリが、コンポーネント サービスを介して DCOM と Microsoft® インターネット インフォメーション サービス (HTTP) の両方を使用できるようにする方法の概要を示します。
 

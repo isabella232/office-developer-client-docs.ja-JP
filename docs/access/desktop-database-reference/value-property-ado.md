@@ -1,24 +1,26 @@
 ---
-<<<<<<< ヘッド タイトル: 値のプロパティ (ADO) TOCTitle: 値のプロパティ (ADO) === タイトル: Value プロパティ (ADO) TOCTitle: Value プロパティ (ADO)
->>>>>>> マスターの ms:assetid: ff21d122-98e3-2b48-d92f-e696b8079fc5 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250310(v=office.15) ms:contentKeyID: 48548958 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Value プロパティ (ADO)
+TOCTitle: Value property (ADO)
+ms:assetid: ff21d122-98e3-2b48-d92f-e696b8079fc5
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250310(v=office.15)
+ms:contentKeyID: 48548958
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 856f145c195c189775355fef662ea082ec629fd0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883940"
 ---
-
-<<<<<<< ヘッド
 # <a name="value-property-ado"></a>Value プロパティ (ADO)
-=======
-# <a name="value-property-ado"></a>Value プロパティ (ADO)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [Field](field-object-ado.md) オブジェクト、 [Parameter](parameter-object-ado.md) オブジェクト、または [Property](property-object-ado.md) オブジェクトに割り当てられた値を示します。
 
-<<<<<<< ヘッド
-## <a name="settings-and-return-values"></a>設定値と戻り値
-=======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
->>>>>>> master
 
 オブジェクトの値を示すバリアント型 ( **Variant** ) の値を設定または取得します。既定値は [Type](type-property-ado.md) プロパティによって異なります。
 

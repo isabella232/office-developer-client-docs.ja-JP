@@ -1,10 +1,20 @@
 ---
-タイトル: アクセスは、TOCTitle を起動したときにリボンを非表示: Access の起動時にリボンを非表示にする <<<<<<< ヘッド ms:assetid: f98bab58-8094-1c56-f70b-ced2e7849574 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837012(v=office.15) ms:contentKeyID: 48548817 ms.date: 2015/09/18 ===説明: すべての Access 2013 の組み込みタブを非表示にするカスタマイズされたリボンを読み込む方法です。
-ms:assetid: f98bab58-8094-1c56-f70b-ced2e7849574 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837012(v=office.15) ms:contentKeyID: 48548817 ms.date: 2018/10/16
->>>>>>> マスター mtps_version: v=office.15
+title: Access の起動時にリボンを非表示にする
+TOCTitle: Hide the ribbon when Access starts
+description: すべての Access 2013 の組み込みタブを非表示にするカスタマイズされたリボンを読み込む方法です。
+ms:assetid: f98bab58-8094-1c56-f70b-ced2e7849574
+ms:mtpsurl: https://msdn.microsoft.com/library/Ff837012(v=office.15)
+ms:contentKeyID: 48548817
+ms.date: 10/16/2018
+mtps_version: v=office.15
+ms.openlocfilehash: 21c8a171a3b84e53f5a12042a09b134602a6af6f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875316"
 ---
-
-# <a name="hide-the-ribbon-when-access-starts"></a>Access の起動時にリボンを非表示にします。
+# <a name="hide-the-ribbon-when-access-starts"></a>Access の起動時にリボンを非表示にする
 
 **に適用されます:** Access 2013 |Office 2013
 
@@ -12,11 +22,9 @@ ms:assetid: f98bab58-8094-1c56-f70b-ced2e7849574 ms:mtpsurl: https://msdn.micros
 
 Access の起動時にカスタマイズされたリボンを読み込むには、その設定を **USysRibbons** という名前のテーブルに保存する必要があります。
 
-<<<<<<< ヘッドを実装するのには、リボンをカスタマイズするために特定の列名を使用して**USysRibbons**テーブルを作成する必要があります。 次の表に、 **USysRibbons** テーブルを作成するときに使用する設定を示します。
-=== リボンのカスタマイズの特定の列名を使用して実装することを、 **USysRibbons**テーブルを作成しなければなりません。 
+実装するリボンのカスタマイズの特定の列名を使用して**USysRibbons**テーブルを作成する必要があります。 
 
 次の表に、 **USysRibbons** テーブルを作成するときに使用する設定を示します。
->>>>>>> master
 
 <table>
 <colgroup>
@@ -26,13 +34,8 @@ Access の起動時にカスタマイズされたリボンを読み込むには�
 </colgroup>
 <thead>
 <tr class="header">
-<<<<<<< ヘッド
 <th><p>列名</p></th>
 <th><p>データ型</p></th>
-=======
-<th><p>列名</p></th>
-<th><p>データ型</p></th>
->>>>>>>マスター
 <th><p>説明</p></th>
 </tr>
 </thead>
@@ -45,45 +48,11 @@ Access の起動時にカスタマイズされたリボンを読み込むには�
 <tr class="even">
 <td><p><strong>RibbonXML</strong></p></td>
 <td><p>メモ型 (Memo)</p></td>
-<<<<<<< ヘッド
-<td><p>リボンのカスタマイズを定義するリボン拡張 XML (RibbonX) が含まれます。</p></td>
-=======
 <td><p>リボン機能拡張 (RibbonX)、リボンのカスタマイズを定義する XML が含まれています。</p></td>
->>>>>>>マスター
 </tr>
 </tbody>
 </table>
 
-<<<<<<< ヘッド
-
-次の表に、 **USysRibbons** テーブルに保存するリボンのカスタマイズ設定を示します。
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>列名</p></th>
-<th><p>値</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>RibbonName</strong></p></td>
-<td><p>して HideTheRibbon</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>RibbonXML</strong></p></td>
-<td><p>&lt;CustomUI xmlns =&quot;https://schemas.microsoft.com/office/2006/01/CustomUI&quot。&gt; &lt;リボンの startFromScratch =&quot;真&quot;/&gt;&lt;/CustomUI&gt;</p></td>
-</tr>
-</tbody>
-</table>
-
-
-## <a name="applying-a-custom-ribbon-when-access-starts"></a>Access の起動時にカスタム リボンを適用する
-=======
 <br/>
 
 次の表に、 **USysRibbons** テーブルに保存するリボンのカスタマイズ設定を示します。
@@ -95,7 +64,6 @@ Access の起動時にカスタマイズされたリボンを読み込むには�
 
 
 ## <a name="apply-a-custom-ribbon-when-access-starts"></a>Access の起動時にカスタム リボンを適用します。
->>>>>>> master
 
 アプリケーションの起動時にカスタム リボン UI を使用できるように適用するには、次の手順を実行します。
 
@@ -103,15 +71,9 @@ Access の起動時にカスタマイズされたリボンを読み込むには�
 
 2.  アプリケーションを閉じて、再起動します。
 
-<<<<<<< ヘッド
-3.  **Microsoft Office ボタン**をクリックして![O12FileMenuButton\_ZA10077102](media/access-file-menu-button.gif "O12FileMenuButton_ZA10077102") [ **Access のオプション**] をクリックします。
-
-4.  [ **カレント データベース**] オプションをクリックし、[ **リボンとツール バーのオプション**] セクションで [ **リボン名**] ボックスの一覧をクリックして [ **HideTheRibbon** ] を選択します。
-=======
 3.  **Microsoft Office ボタン**をクリックして![O12FileMenuButton\_ZA10077102](media/access-file-menu-button.gif "O12FileMenuButton_ZA10077102")、し、 **[Access のオプション**を選択します。
 
 4.  **カレント データベース**] オプションを選択し、**リボンとツールバーのオプション**] セクションで、[**リボン名**] ボックスの一覧を選択**して HideTheRibbon**を選択します。
->>>>>>> master
 
 5.  アプリケーションを閉じて、再起動します。
 

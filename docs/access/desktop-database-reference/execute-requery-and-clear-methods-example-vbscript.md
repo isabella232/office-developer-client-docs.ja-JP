@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249142(v=office.15)
 ms:contentKeyID: 48544252
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 340be13a5b6acb830ec38108d4a279814d1c459a
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 594c969aafb071888383a717efb2b5db20039b1c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863046"
+ms.locfileid: "25886474"
 ---
 # <a name="execute-requery-and-clear-methods-example-vbscript"></a>Execute メソッド、Requery メソッド、Clear メソッドの使用例 (VBScript)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、Command オブジェクトの Execute メソッドを実行する場合と Connection オブジェクトの Execute メソッドを実行する場合を示します。また、Requery メソッドを使用して Recordset 内の最新のデータを取得し、Clear メソッドを使用して Errors コレクションの内容をクリアします。このプロシージャを実行するには ExecuteCommand プロシージャおよび PrintOutput プロシージャが必要です。
 

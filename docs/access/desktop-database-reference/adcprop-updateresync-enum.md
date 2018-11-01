@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249600(v=office.15)
 ms:contentKeyID: 48546145
 ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 056e68456b3f5bcf30768b0a5a616467c8271a5a
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 2407e412fe63b2cd8dc73927e2adfcd958a67a98
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861408"
+ms.locfileid: "25869401"
 ---
 # <a name="adcpropupdateresyncenum"></a>ADCPROP\_UPDATERESYNC\_列挙型
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [UpdateBatch](updatebatch-method-ado.md) メソッドに暗黙の [Resync](resync-method-ado.md) メソッド操作が続くかどうかを示し、続く場合はその操作の適用範囲を指定します。
 

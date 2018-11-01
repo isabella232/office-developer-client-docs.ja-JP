@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: MarshalOptions プロパティの使用例 (VB) TOCTitle: MarshalOptions プロパティの使用例 (VB) === タイトル: MarshalOptions プロパティの使用例 (VB) TOCTitle: MarshalOptions プロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: f48ad901-7ce8-af6c-e312-51777466cd35 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250241(v=office.15) ms:contentKeyID: 48548691 ms.date: 2015/09/18 mtps_version: v=office.15
+title: MarshalOptions プロパティの使用例 (VB)
+TOCTitle: MarshalOptions property example (VB)
+ms:assetid: f48ad901-7ce8-af6c-e312-51777466cd35
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250241(v=office.15)
+ms:contentKeyID: 48548691
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: efb33fbcccaac26f6a169761235a88a49ec0cfa8
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869870"
 ---
-
-<<<<<<< ヘッド
 # <a name="marshaloptions-property-example-vb"></a>MarshalOptions プロパティの使用例 (VB)
-=======
-# <a name="marshaloptions-property-example-vb"></a>MarshalOptions プロパティの使用例 (VB)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[MarshalOptions](marshaloptions-property-ado.md) プロパティを使って、サーバーに送り返される行 (すべての行または修正された行のみ) を指定します。
 

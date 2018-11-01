@@ -10,17 +10,17 @@ f1_keywords:
 - acmain11.chm1032168
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4a90981c936c933d2eadb191bbf0d2639cd8e641
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a44226e8ea90a8be96de35cdc923349eded17cb4
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478809"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886999"
 ---
 # <a name="customizing-windows-registry-settings-for-the-microsoft-access-database-engine"></a>Microsoft Access データベース エンジン用の Windows レジストリ設定をカスタマイズする
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 アプリケーションで Microsoft Access データベース エンジンの既定の機能が正常に動作しない場合は、必要に応じて Microsoft® Windows® レジストリの設定を変更しなければなりません。また、Windows レジストリを使用して、組み込み可能な ISAM ドライバーと ODBC ドライバーの動作を調整することもできます。
 

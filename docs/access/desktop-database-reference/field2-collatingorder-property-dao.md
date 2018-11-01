@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834380(v=office.15)
 ms:contentKeyID: 48547709
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1749b6f5b4c96c55f0256971d619bec17430f410
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 508f7f758d682dec0f1557f8a3f4dc2845e20a39
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476779"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870768"
 ---
 # <a name="field2collatingorder-property-dao"></a>Field2.CollatingOrder プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 文字列の比較または並べ替えのために、文字列の並べ替え順序を指定する値を返します (Microsoft Access ワークスペースのみ)。値の取得のみ可能です。長整数型 ( **Long**) の値を使用します。
 

@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff823192(v=office.15)
 ms:contentKeyID: 48547661
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 134222e825826615feb495adaae6296229edb868
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e7cddb3ace4027c2dba45fd685fbf16bd57b783e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476715"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887342"
 ---
 # <a name="raiseerror-macro-action"></a>"RaiseError/エラーの生成" マクロ アクション
 
-**適用されます**Access 2013 |。Office 2013 
+**適用されます**Access 2013、Office 2013。 
 
 **RaiseError**アクションは、**[エラー時](onerror-macro-action.md)** のマクロ アクションで処理できる例外をスローします。
 

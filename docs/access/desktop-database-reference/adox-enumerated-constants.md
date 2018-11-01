@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248840(v=office.15)
 ms:contentKeyID: 48543163
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6849961c0428079227348e1bb68c6ceb8dfd73a1
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0f8be72ea28d9814890bcaf193c1175725fcfe1d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479611"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869500"
 ---
 # <a name="adox-enumerated-constants"></a>ADOX の列挙定数
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ここでは、デバッグ用に各定数の値の一覧を示します。ただし、この値は参考用のものであり、ADOX のリリースごとに変更されることがあります。コードを記述するときは、列挙定数の実際の値ではなく、名前のみを使って記述するようにしてください。
 
@@ -47,7 +47,7 @@ ms.locfileid: "25479611"
 <td><p><strong>Column</strong> の属性を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="datatypeenum.md">格納</a></p></td>
+<td><p><a href="datatypeenum.md">DataTypeEnum</a></p></td>
 <td><p><strong>Field</strong>、<strong>Parameter</strong>、または <strong>Property</strong> のデータ型を指定します。</p></td>
 </tr>
 <tr class="odd">

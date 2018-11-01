@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm196948
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b612d050d6c523ae836b21aa27826ff180e8f977
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 110262c9aee48fc24858150714194953136fa835
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477688"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867273"
 ---
 # <a name="maximizewindow-macro-action"></a>"MaximizeWindow/ウィンドウの最大化" マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 タブ付きドキュメントではなく重ねて表示されるウィンドウを使用するアクセスを構成する場合は、Access ウィンドウ全体に表示されるので、作業中のウィンドウを拡大する**MaximizeWindow**アクションを使用できます。 このアクションを使用すると、アクティブ ウィンドウ内でのオブジェクトの表示範囲を拡大できます。
 

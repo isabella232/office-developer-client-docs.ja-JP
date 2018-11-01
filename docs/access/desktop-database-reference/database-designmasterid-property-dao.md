@@ -10,16 +10,16 @@ f1_keywords:
 - dao360.chm1053417
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 0bb2e369f886ba60fb425b9f1f2d10fdea0c1463
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: da9619102a955c9a7945d05e89a1e132371d2461
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477940"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868407"
 ---
 # <a name="databasedesignmasterid-property-dao"></a>Database.DesignMasterID プロパティ (DAO)
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 レプリカ セットでデザイン マスターを一意に識別する 16 バイトの値を設定または取得します (Microsoft Access ワークスペースのみ)。
 

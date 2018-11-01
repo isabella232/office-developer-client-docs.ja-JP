@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: フィルターと RecordCount プロパティの使用例 (VB) TOCTitle: フィルターと RecordCount プロパティの使用例 (VB) === タイトル: フィルターと RecordCount プロパティの使用例 (VB) TOCTitle: フィルター プロパティと RecordCount プロパティ例 (VB)
->>>>>>> マスターの ms:assetid: 3da4623e-03e7-27ac-7351-3b22415be0b9 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249167(v=office.15) ms:contentKeyID: 48544354 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Filter プロパティと RecordCount プロパティの使用例 (VB)
+TOCTitle: Filter and RecordCount properties example (VB)
+ms:assetid: 3da4623e-03e7-27ac-7351-3b22415be0b9
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249167(v=office.15)
+ms:contentKeyID: 48544354
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 3fe5065c75408e7093fbd2b39e7a84400d648e99
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25873167"
 ---
-
-<<<<<<< ヘッド
 # <a name="filter-and-recordcount-properties-example-vb"></a>Filter プロパティと RecordCount プロパティの使用例 (VB)
-=======
-# <a name="filter-and-recordcount-properties-example-vb"></a>フィルターと RecordCount プロパティの使用例 (VB)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の使用例は、 ***Pubs***データベースの Publishers テーブルの**レコード セット**を開きます。 次に、 [Filter](filter-property-ado.md) プロパティを使って、特定の国/領域のパブリッシャーに対して表示されるレコードの数を制限します。 **RecordCount** プロパティは、フィルターが適用されているレコードセットとフィルターが適用されていないレコードセットとの相違を示すために使います。
 

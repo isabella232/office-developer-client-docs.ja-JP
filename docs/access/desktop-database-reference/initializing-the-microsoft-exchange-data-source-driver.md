@@ -10,16 +10,16 @@ f1_keywords:
 - acmain11.chm1032667
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f711e9814e32742c89c37ae3357111143ca18b6e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c1ba74f754ef0c998a14f7421914bd4bcd7c9cf9
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476300"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870199"
 ---
 # <a name="initializing-the-microsoft-exchange-data-source-driver"></a>Microsoft Exchange データ ソース ドライバーを初期化する
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 Microsoft® Exchange データ ソース ドライバーをインストールすると、セットアップ プログラムは Microsoft Windows® レジストリの Engines サブキーと ISAM Formats サブキーに一連の既定値を書き込みます。これらの設定は直接変更しないでください。これらの設定に対して追加、削除、変更を行う場合は、アプリケーションのセットアップ プログラムを使用します。Microsoft Exchange データ ソース ドライバーの初期設定と ISAM 形式の設定に関する説明を、次に示します。
 
@@ -46,7 +46,7 @@ Microsoft Outlook の ISAM 形式の使用結果と Microsoft Exchange クライ
 <thead>
 <tr class="header">
 <th><p>エントリ名</p></th>
-<th><p>種類</p></th>
+<th><p>型</p></th>
 <th><p>値</p></th>
 </tr>
 </thead>
@@ -114,7 +114,7 @@ Microsoft Outlook の ISAM 形式の使用結果と Microsoft Exchange クライ
 <thead>
 <tr class="header">
 <th><p>エントリ名</p></th>
-<th><p>種類</p></th>
+<th><p>型</p></th>
 <th><p>値</p></th>
 </tr>
 </thead>

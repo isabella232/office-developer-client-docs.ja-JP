@@ -10,16 +10,16 @@ f1_keywords:
 - dao360.chm1052889
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 003cb9927b46843a3618e66943b230460677d7e5
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ebb1178525d1efb663ce49f4e5493e828afbfc2e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479003"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874133"
 ---
 # <a name="recordsetnomatch-property-dao"></a>Recordset.NoMatch プロパティ (DAO)
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **[Seek](recordset-seek-method-dao.md)** メソッドを使用するかまたは **[Find](recordset-findfirst-method-dao.md)** メソッドの 1 つを使用して、特定のレコードが見つかったかどうかを示します (Microsoft Access ワークスペースのみ)。
 

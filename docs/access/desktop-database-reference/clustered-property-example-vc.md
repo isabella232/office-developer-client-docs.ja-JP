@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: クラスター化されたプロパティの使用例 (vc++) TOCTitle: クラスター化されたプロパティの使用例 (vc++) === タイトル: クラスター化されたプロパティの使用例 (vc++) TOCTitle: クラスター化されたプロパティの使用例 (vc++)
->>>>>>> マスターの ms:assetid: a262e38e-ce44-66cb-1adf-fad8e6b840d1 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249748(v=office.15) ms:contentKeyID: 48546761 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Clustered プロパティの使用例 (VC++)
+TOCTitle: Clustered property example (VC++)
+ms:assetid: a262e38e-ce44-66cb-1adf-fad8e6b840d1
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249748(v=office.15)
+ms:contentKeyID: 48546761
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 8f7a57ee235f2bcf91c75abb99fa044d7e21a6c4
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874483"
 ---
-
-<<<<<<< ヘッド
 # <a name="clustered-property-example-vc"></a>Clustered プロパティの使用例 (VC++)
-=======
-# <a name="clustered-property-example-vc"></a>クラスター化プロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ここでは、[Index](clustered-property-adox.md) の [Clustered](index-object-adox.md) プロパティの使用例を示します。 Microsoft Jet データベースはサポートできないというクラスター化インデックスは、次の使用例は、 *Northwind*データベース内のすべてのインデックスの**Clustered**プロパティを**False**が戻りますので注意してください。
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250013(v=office.15)
 ms:contentKeyID: 48547738
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cb9321434dc039527daa99f2b24abf83a4c3383e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 6dc2e38c7459fea46c33373447276d8643b4b0de
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477317"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887377"
 ---
 # <a name="what-is-a-cursor"></a>カーソルとは
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 リレーショナル データベースの操作は、完全な行セットに対して行われます。SELECT ステートメントが返す行セットには、ステートメントの WHERE 句の条件を満たす行がすべて含まれます。ステートメントから返されるこの完全な行セットは、結果セットと呼ばれます。アプリケーション、特に対話型アプリケーションおよびオンライン アプリケーションでは、結果セット全体を 1 つの単位として効率的に処理できるとは限りません。このようなアプリケーションには、一時点で 1 行または小さい行ブロックを処理する機構が必要です。カーソルは、このような機構を提供する、結果セットの拡張機能です。
 

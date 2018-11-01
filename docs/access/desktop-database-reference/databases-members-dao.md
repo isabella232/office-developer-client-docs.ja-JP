@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff191890(v=office.15)
 ms:contentKeyID: 48543805
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f4887a9f847081e0327890361c5e319818990200
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ae9def4b04e02c13164c9fcd1ac870a1043cf2ad
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479172"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889687"
 ---
 # <a name="databases-members-dao"></a>Databases メンバー (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 Databases コレクションには、Workspace オブジェクトで開かれた、または作成されたすべての開いている Database オブジェクトが含まれます。
 

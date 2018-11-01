@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250217(v=office.15)
 ms:contentKeyID: 48548588
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d6955bca1bf693386d1f5edb4bac04cee311d78e
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 56c5b77d09ce568175b992391c8f3e7dcf3e9e15
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25606963"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872054"
 ---
 # <a name="moverecord-method-ado"></a>MoveRecord メソッド (ADO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
  
 
 [Record](record-object-ado.md) で表されるエンティティを別の場所に移動します。
@@ -51,11 +51,7 @@ ms.locfileid: "25606963"
 
   - 省略可能です。ブール型 ( **Boolean** ) の値を指定します。値が **True** の場合、この動作は非同期で実行されます。
 
-<<<<<<< ヘッド
 ## <a name="return-value"></a>戻り値
-=======
-## <a name="return-value"></a>戻り値
->>>>>>> master
 
 文字列型 ( **String** ) の値を返します。 通常、*送信先*の値が返されます。 ただし、実際に返される値はプロバイダーによって異なります。
 
@@ -77,10 +73,6 @@ Internet Publishing Provider を使用して移動されるファイルでは、
 
 
 > [!NOTE]
-<<<<<<< ヘッド
-> <P>[!メモ] http 体系を使用している URL は、<A href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</A> を自動的に呼び出します。詳細については、「 <A href="absolute-and-relative-urls.md">絶対 URL と相対 URL</A>」を参照してください。</P>
-=======
 > [!メモ] http 体系を使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、[絶対と相対 Url](absolute-and-relative-urls.md)を参照してください。
->>>>>>> master
 
 

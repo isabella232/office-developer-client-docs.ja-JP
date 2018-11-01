@@ -1,24 +1,26 @@
 ---
-<<<<<<< ヘッド タイトル: NumericScale プロパティ (ADO) TOCTitle: NumericScale プロパティ (ADO) === タイトル: NumericScale プロパティ (ADO) TOCTitle: NumericScale プロパティ (ADO)
->>>>>>> マスターの ms:assetid: 51b232d2-5bfd-521c-f4e9-65655ecc7c70 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249263(v=office.15) ms:contentKeyID: 48544824 ms.date: 2015/09/18 mtps_version: v=office.15
+title: NumericScale プロパティ (ADO)
+TOCTitle: NumericScale property (ADO)
+ms:assetid: 51b232d2-5bfd-521c-f4e9-65655ecc7c70
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249263(v=office.15)
+ms:contentKeyID: 48544824
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: eb2c799fd7c9d1cc74c6081c10f7a8d356e79faf
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876016"
 ---
-
-<<<<<<< ヘッド
 # <a name="numericscale-property-ado"></a>NumericScale プロパティ (ADO)
-=======
-# <a name="numericscale-property-ado"></a>NumericScale プロパティ (ADO)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [Parameter](parameter-object-ado.md) オブジェクトまたは [Field](field-object-ado.md) オブジェクトの数値の桁数を示します。
 
-<<<<<<< ヘッド
-## <a name="settings-and-return-values"></a>設定値と戻り値
-=======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
->>>>>>> master
 
 数値の小数点以下の桁数を示すバイト型 ( **Byte** ) の値を設定または取得します。
 

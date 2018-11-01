@@ -1,15 +1,21 @@
 ---
-<<<<<<< ヘッド タイトル: OriginalValue と UnderlyingValue プロパティの使用例 (VB) TOCTitle: OriginalValue と UnderlyingValue プロパティの使用例 (VB) === タイトル: OriginalValue と UnderlyingValue プロパティの使用例 (VB) TOCTitle。OriginalValue と UnderlyingValue プロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: de88d99d-7f2e-8418-b40f-0375b1d90a8e ms:mtpsurl: https://msdn.microsoft.com/library/JJ250127(v=office.15) ms:contentKeyID: 48548189 ms.date: 2015/09/18 mtps_version: v=office.15
+title: OriginalValue プロパティと UnderlyingValue プロパティの使用例 (VB)
+TOCTitle: OriginalValue and UnderlyingValue properties example (VB)
+ms:assetid: de88d99d-7f2e-8418-b40f-0375b1d90a8e
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250127(v=office.15)
+ms:contentKeyID: 48548189
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: ffe9672be5dd970e77368d7298283462fe74f25c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879051"
 ---
-
-<<<<<<< ヘッド
 # <a name="originalvalue-and-underlyingvalue-properties-example-vb"></a>OriginalValue プロパティと UnderlyingValue プロパティの使用例 (VB)
-=======
-# <a name="originalvalue-and-underlyingvalue-properties-example-vb"></a>OriginalValue と UnderlyingValue プロパティの使用例 (VB)
->>>>>>> master
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[OriginalValue](originalvalue-property-ado.md) プロパティと [UnderlyingValue](underlyingvalue-property-ado.md) プロパティを使用して、 [Recordset](recordset-object-ado.md) の一括更新中にレコードの基になるデータが変更された場合にメッセージを表示します。
 

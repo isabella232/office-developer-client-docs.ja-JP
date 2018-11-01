@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249219(v=office.15)
 ms:contentKeyID: 48544589
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 231cfcf42cead3074996870971488dadb60583ae
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: e29db2848d7ec7b229831156ee64815a152a4bfc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25605423"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887902"
 ---
 # <a name="executecomplete-event-ado"></a>ExecuteComplete イベント (ADO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 
@@ -56,7 +56,5 @@ ExecuteComplete*RecordsAffected*、 *pError*、 *adStatus*、 *pCommand*、 *pRe
 
 ## <a name="remarks"></a>解説
 
-<<<<<<< ヘッドのために**ExecuteComplete**イベントが発生する可能性があります、**接続します**。[実行](https://msdn.microsoft.com/library/jj249832\(v=office.15\))するには、**コマンドです**。[実行](https://msdn.microsoft.com/library/jj248785\(v=office.15\))するには、**レコード セット**。[開く](open-method-ado-recordset.md)、**レコード セット**。[クエリを再実行](requery-method-ado.md)、または**レコード セット**。[NextRecordset](nextrecordset-method-ado.md)メソッドです。
-=== 理由のため、 **ExecuteComplete**イベントが発生する可能性があります、**接続します**。[実行](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection)するには、**コマンドです**。[実行](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command)するには、**レコード セット**。[開く](open-method-ado-recordset.md)、**レコード セット**。[クエリを再実行](requery-method-ado.md)、または**レコード セット**。[NextRecordset](nextrecordset-method-ado.md)メソッドです。
->>>>>>> master
+**ExecuteComplete** イベントは、 **Connection.**[Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection)、 **Command.**[Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command)、 **Recordset.**[Open](open-method-ado-recordset.md)、 **Recordset.**[Requery](requery-method-ado.md)、または **Recordset.**[NextRecordset](nextrecordset-method-ado.md) の各メソッドにより発生します。
 

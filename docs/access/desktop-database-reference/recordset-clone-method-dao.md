@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1052909
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 5a899f72c6603d81244c31775c1109f66520910e
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 1c0b1ea2f0103d444a1429748b16c6a4314eb92c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25602980"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876429"
 ---
 # <a name="recordsetclone-method-dao"></a>Recordset.Clone メソッド (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 元の [Recordset](recordset-object-dao.md) オブジェクトを参照する、複数の ****Recordset**** オブジェクトを作成します。
 
@@ -30,11 +30,7 @@ ms.locfileid: "25602980"
 
 *式***レコード セット**オブジェクトを表す変数です。
 
-<<<<<<< ヘッド
 ### <a name="return-value"></a>戻り値
-=======
-### <a name="return-value"></a>戻り値
->>>>>>> master
 
 Recordset
 

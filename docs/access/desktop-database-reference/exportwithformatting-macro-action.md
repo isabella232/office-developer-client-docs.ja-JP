@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm159503
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 89c29d18e21a28448e03fee763b4087bf623d5a3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 8a0ca9d2dde2ae5d39fb9159655f37b5140eee3e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476288"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868021"
 ---
 # <a name="exportwithformatting-macro-action"></a>ExportWithFormatting マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **ExportWithFormatting** アクションを使用すると、指定した Microsoft Access データベース オブジェクト (データシート、フォーム、レポート、モジュール、またはデータ アクセス ページ) のデータを複数の出力形式で出力できます。
 

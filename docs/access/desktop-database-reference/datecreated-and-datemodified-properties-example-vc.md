@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 作成日時と最終更新日時プロパティの使用例 (vc++) TOCTitle: 作成日時と最終更新日時プロパティの使用例 (vc++) === タイトル: 作成日時と最終更新日時プロパティの使用例 (vc++) TOCTitle。作成日時と最終更新日時プロパティの使用例 (vc++)
->>>>>>> マスターの ms:assetid: 1c92e8f5-2fed-55dc-2cdd-51dfa16ecd84 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248962(v=office.15) ms:contentKeyID: 48543573 ms.date: 2015/09/18 mtps_version: v=office.15
+title: DateCreated プロパティと DateModified プロパティの使用例 (VC++)
+TOCTitle: DateCreated and DateModified properties example (VC++)
+ms:assetid: 1c92e8f5-2fed-55dc-2cdd-51dfa16ecd84
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248962(v=office.15)
+ms:contentKeyID: 48543573
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 100062ceb7aab0b3d5b74ee3ac1b13cf725c09bc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870178"
 ---
-
-<<<<<<< ヘッド
 # <a name="datecreated-and-datemodified-properties-example-vc"></a>DateCreated プロパティと DateModified プロパティの使用例 (VC++)
-=======
-# <a name="datecreated-and-datemodified-properties-example-vc"></a>作成日時と最終更新日時プロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ここでは、新しい [Column](datecreated-property-adox.md) を既存の [Table](datemodified-property-adox.md) に追加したり、新しい [Table](column-object-adox.md) を作成したりすることで、 [DateCreated](table-object-adox.md) プロパティおよび **DateModified** プロパティの使用例を示します。この例を実行するには DateOutput プロシージャが必要です。
 

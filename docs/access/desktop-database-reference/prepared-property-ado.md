@@ -1,26 +1,30 @@
 ---
-<<<<<<< ヘッド タイトル: 準備されたプロパティ (ADO) TOCTitle: 準備されたプロパティ (ADO) === タイトル: Prepared プロパティ (ADO) TOCTitle: Prepared プロパティ (ADO)
->>>>>>> マスターの ms:assetid: 33becda2-faab-5000-8904-6ffd8c5805f2 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249105(v=office.15) ms:contentKeyID: 48544116 ms.date: 2015/09/18 mtps_version: v=office.15 f1_keywords:
-- ado210.chm1231161 f1_categories。
+title: Prepared プロパティ (ADO)
+TOCTitle: Prepared property (ADO)
+ms:assetid: 33becda2-faab-5000-8904-6ffd8c5805f2
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249105(v=office.15)
+ms:contentKeyID: 48544116
+ms.date: 09/18/2015
+mtps_version: v=office.15
+f1_keywords:
+- ado210.chm1231161
+f1_categories:
 - Office.Version=v15
+ms.openlocfilehash: a9c275cfe16ac2f1b1f9d2a8c0ac857010ed4572
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878752"
 ---
-
-<<<<<<< ヘッド
 # <a name="prepared-property-ado"></a>Prepared プロパティ (ADO)
-=======
-# <a name="prepared-property-ado"></a>Prepared プロパティ (ADO)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 コンパイルされたバージョンのコマンドを実行前に保存するかどうかを示します。
 
-<<<<<<< ヘッド
-## <a name="settings-and-return-values"></a>設定値と戻り値
-=======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
->>>>>>> master
 
 ブール型 ( **Boolean** ) の値を設定または取得します。 **True** に設定されている場合は、コマンドの準備が必要であることを示します。
 

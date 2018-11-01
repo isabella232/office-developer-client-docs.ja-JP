@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249284(v=office.15)
 ms:contentKeyID: 48544926
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 760e4cd3ebc3192ee63a790009398f2bc1e6d1c7
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0b01232e7afd4f32411a53dec6ae233c786c1c08
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476895"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25873405"
 ---
 # <a name="field-object"></a>Field オブジェクト
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 各 **Field** オブジェクトは、通常、データベース テーブル内の列に対応しています。ただし、 **Field** では、チャプターと呼ばれる他の **Recordset** へのポインターを表すこともできます。チャプター列などの例外については、このガイドの後半で説明します。
 

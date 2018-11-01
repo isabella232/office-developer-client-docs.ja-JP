@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249896(v=office.15)
 ms:contentKeyID: 48547371
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f29f707f02ed8adbf2b1881b0721ce912b278353
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 5965cc557c3533475fc97051b163462d994e0430
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25605829"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886810"
 ---
 # <a name="open-method-ado-record"></a>Open メソッド (ADO Record)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 既存の [Record](record-object-ado.md) オブジェクトを開くか、または **Record** で表される新しいアイテム (ファイル、ディレクトリなど) を作成します。
@@ -73,10 +73,6 @@ ms.locfileid: "25605829"
 
 
 > [!NOTE]
-<<<<<<< ヘッド
-> <P>[!メモ] http 体系を使用している URL は、<A href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</A> を自動的に呼び出します。詳細については、「 <A href="absolute-and-relative-urls.md">絶対 URL と相対 URL</A>」を参照してください。</P>
-=======
 > [!メモ] http 体系を使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、[絶対と相対 Url](absolute-and-relative-urls.md)を参照してください。
->>>>>>> master
 
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197380(v=office.15)
 ms:contentKeyID: 48546287
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 428efdf7d245eff1c8c242cfcde951e37b23360d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: df396935f88301a9fee9df580a5cee01705f68aa
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479287"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885781"
 ---
 # <a name="fieldattributes-property-dao"></a>Field.Attributes プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 **[Field](field-object-dao.md)** オブジェクトの 1 つまたは複数の特性を示す値を設定または取得します。値の取得および設定が可能です。長整数型 ( **Long** ) の値を使用します。

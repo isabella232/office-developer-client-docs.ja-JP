@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249299(v=office.15)
 ms:contentKeyID: 48544996
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 559d2ea0ccf1cb34e801d75657695f191ef7076b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 95b16ba79a90765be9c6850c6aea6a000993f695
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477003"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880426"
 ---
 # <a name="types-of-cursors"></a>カーソルの種類
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 アプリケーションでは、通常、必要なデータ アクセス機能を提供する最も単純なカーソルを使用することをお勧めします。基本機能 (前方移動のみ、読み取り専用、静的、スクロール型、バッファーなし) よりも優れた追加的特性には、クライアントのメモリ、ネットワークの負荷、パフォーマンスなどの面で、それぞれ代償があります。多くの場合、既定のカーソル オプションを選択すると、アプリケーションで実際に必要なものよりも複雑なカーソルが生成されます。
 

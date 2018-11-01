@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249088(v=office.15)
 ms:contentKeyID: 48544057
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5b84899cc4dd8a85cc48ab26057935c9ab150361
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 9db5617eecff862ad941a4160c4b92bfa09d4c2d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478901"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885921"
 ---
 # <a name="the-microsoft-cursor-service-for-ole-db"></a>OLE DB 用 Microsoft Cursor Service
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 クライアント側カーソルを選択、つまり **CursorLocation** プロパティを **adUseClient** に設定すると、Microsoft Cursor Service for OLE DB が呼び出されます。"Client Cursor Engine" と呼ばれることもありますが、ADO のコンテキストでは本質的に同じ機能を表します。このサービスは、データ プロバイダーのカーソル サポート機能を補完するものです。その結果、すべてのデータ プロバイダーで、比較的一定した機能を得ることができます。
 

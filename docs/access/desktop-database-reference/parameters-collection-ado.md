@@ -10,17 +10,17 @@ f1_keywords:
 - ado210.chm1231103
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 96d2f4094c6b0df43e1579d7d35cbb78c12cc39c
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 7a1da73679bd63de0c35362b87b2db8259698614
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477438"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867791"
 ---
 # <a name="parameters-collection-ado"></a>Parameters コレクション (ADO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [Command](parameter-object-ado.md) オブジェクトのすべての [Parameter](command-object-ado.md) オブジェクトを格納します。
 

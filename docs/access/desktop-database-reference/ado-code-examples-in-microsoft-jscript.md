@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249099(v=office.15)
 ms:contentKeyID: 48544090
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 930516aa9ffc3c12c6df96dda2cb8cf4a47b5f99
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 166cdc22c7448851605789f04f590ca9fff04758
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863739"
+ms.locfileid: "25873752"
 ---
 # <a name="ado-code-examples-in-microsoft-jscript"></a>Microsoft JScript での ADO コードの例
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 JScript で記述するときの ADO のメソッド、プロパティ、およびイベントの使用方法については、次のコード例を参照してください。
 
@@ -36,21 +36,6 @@ JScript で記述するときの ADO のメソッド、プロパティ、およ�
 
 **プロパティ**
 
-<<<<<<< 見出し
-  - [AbsolutePage プロパティ、PageCount プロパティ、および PageSize プロパティの使用例 (VJ++)](absolutepage-pagecount-and-pagesize-properties-example-jscript.md)
-
-  - [AbsolutePosition プロパティと CursorLocation プロパティの使用例 (VJ++)](absoluteposition-and-cursorlocation-properties-example-jscript.md)
-
-  - [ActiveCommand プロパティの使用例 (VJ++)](activecommand-property-example-jscript.md)
-
-  - [ActiveConnection、CommandText、CommandTimeout、CommandType、Size、および Direction プロパティの使用例 (VJ++)](activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-jscript.md)
-
-  - [ActualSize プロパティと DefinedSize プロパティの使用例 (JScript)](actualsize-and-definedsize-properties-example-jscript.md)
-
-  - [CacheSize プロパティの使用例 (JScript)](cachesize-property-example-jscript.md)
-
-  - [フィルターと RecordCount プロパティの使用例](filter-and-recordcount-properties-example-jscript.md)
-=======
   - [AbsolutePage、PageCount、および PageSize プロパティの使用例](absolutepage-pagecount-and-pagesize-properties-example-jscript.md)
 
   - [AbsolutePosition と CursorLocation プロパティの使用例](absoluteposition-and-cursorlocation-properties-example-jscript.md)
@@ -64,5 +49,4 @@ JScript で記述するときの ADO のメソッド、プロパティ、およ�
   - [CacheSize プロパティの使用例](cachesize-property-example-jscript.md)
 
   - [フィルターと RecordCount プロパティの使用例](filter-and-recordcount-properties-example-jscript.md)
->>>>>>> master
 

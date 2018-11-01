@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248791(v=office.15)
 ms:contentKeyID: 48542962
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 95415802950f90740bdd6be94a277f5ca1dff061
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e9d4b710c8e0a9293c9164395cf9bff3078a3b36
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478794"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879404"
 ---
 # <a name="fields-collection-ado"></a>Fields コレクション (ADO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [Recordset](field-object-ado.md) オブジェクトまたは [Record](recordset-object-ado.md) オブジェクトのすべての [Field](record-object-ado.md) オブジェクトを格納します。
 

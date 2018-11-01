@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249141(v=office.15)
 ms:contentKeyID: 48544245
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 787375117566673b745cf819694a8d2d77e13779
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 6b2766fbdc7976e917b203943b70aae953a5edbc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861569"
+ms.locfileid: "25877591"
 ---
 # <a name="ado-task-table"></a>ADO のタスク表
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の表は、 *ADO プログラマ ガイド」* に含まれているプログラミングのタスクの一覧し、各タスクの参照を提供します。 これらの参照は、テキストによる説明またはコード例のタスクを実行する ADO 機能に関する情報を表示できます。
 

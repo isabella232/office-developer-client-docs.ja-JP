@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm116962
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 107b9b97b22f01b1caaf09ae10936abd8484684f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f5cbb47c8c4b1ecc4990ca53835f8ae9f7ed4d1b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478158"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886572"
 ---
 # <a name="saveobject-macro-action"></a>"SaveObject/オブジェクトの保存" マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **SaveObject**アクションを使用するには指定されていない場合、指定された Access オブジェクトまたはアクティブなオブジェクトのいずれかを保存します。 場合によっては (**クイック アクセス ツールバー**の [名前を**付けて**保存] と同じ機能です) に新しい名前を持つアクティブなオブジェクトを保存することもできます。
 

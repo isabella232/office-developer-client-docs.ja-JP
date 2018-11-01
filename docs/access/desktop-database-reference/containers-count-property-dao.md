@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192657(v=office.15)
 ms:contentKeyID: 48544276
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 233066d9860547c2410f6e480563b51f77ad5766
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 49ec4181d64f26d7a1a5d54ed58bfef6c1206bda
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477373"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25873412"
 ---
 # <a name="containerscount-property-dao"></a>Containers.Count プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **[Connections](connection-object-dao.md)** コレクション内の **[Connection](connections-collection-dao.md)** オブジェクトの数を返します。
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194950(v=office.15)
 ms:contentKeyID: 48545257
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 42c7b8a95eecd055e6a4581bd8d8f3a6c4693168
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 8eca86433098256128dc78cb1c2cf6fd8b87ec6c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478496"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889197"
 ---
 # <a name="recordsetbookmarkable-property-dao"></a>Recordset.Bookmarkable プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **Recordset** オブジェクトがブックマークをサポートしているかどうかを示す、 **[Bookmark](recordset-bookmark-property-dao.md)** プロパティを使用して設定できる値を返します。
 

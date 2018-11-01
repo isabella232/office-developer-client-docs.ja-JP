@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195493(v=office.15)
 ms:contentKeyID: 48545465
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 946ce8ec4219229e047d1bef5c3ff6de403eb7c9
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1c45024d4677fa4ef4a35b07cca0b039378a996f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477016"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889764"
 ---
 # <a name="fieldvalue-property-dao"></a>Field.Value プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 オブジェクトの値を設定します。値の取得および設定が可能です。バリアント型 ( **Variant**) の値を使用します。
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249825(v=office.15)
 ms:contentKeyID: 48547072
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 45164401bbab5cc9134fa7a354fde54bbb02fa37
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 59a7a43e6e3f19bae687eb181bc290883c4915e6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25604786"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887762"
 ---
 # <a name="solutions-for-remote-data-access"></a>リモート データ アクセスのソリューション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ## <a name="the-issue"></a>問題
 
@@ -24,9 +24,7 @@ ADO では、アプリケーションからデータ ソースに直接アクセ
 
 一方、Microsoft® インターネット インフォメーション サービス (IIS) などを中継して、データ ソースに間接的にアクセスすることが必要になる場合もあります。この構成は、3 層システムとも呼ばれます。IIS は、ローカル (クライアント) アプリケーションからインターネットまたはイントラネットを介してリモート (サーバー) プログラムを効率的に呼び出すことができるようにするためのクライアント/サーバー システムです。サーバー プログラムからデータ ソースにアクセスし、取得したデータを処理することもできます。
 
-<<<<<<< ヘッドの例では、イントラネットの Web ページに Microsoft® Visual Basic Scripting Edition (VBScript)、IIS に接続するで作成したアプリケーションが含まれています。 この場合、IIS が実際のデータ ソースに接続してデータを取得し、必要な処理を行って、処理済みの情報をアプリケーションに返します。
-=== など、イントラネットの web ページには、Microsoft® Visual Basic Scripting Edition (VBScript)、IIS に接続するで作成したアプリケーションが含まれています。 この場合、IIS が実際のデータ ソースに接続してデータを取得し、必要な処理を行って、処理済みの情報をアプリケーションに返します。
->>>>>>> master
+など、イントラネットの web ページには、Microsoft® Visual Basic Scripting Edition (VBScript)、IIS に接続するで作成したアプリケーションが含まれています。 この場合、IIS が実際のデータ ソースに接続してデータを取得し、必要な処理を行って、処理済みの情報をアプリケーションに返します。
 
 この例では、アプリケーションがデータ ソースに直接接続することはなく、データ ソースへの接続は IIS が行います。また、IIS は ADO を使用してデータにアクセスします。
 

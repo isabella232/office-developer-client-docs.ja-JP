@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: CacheSize プロパティの使用例 (vc++) TOCTitle: CacheSize プロパティの使用例 (vc++) === タイトル: CacheSize プロパティの使用例 (vc++) TOCTitle: CacheSize プロパティの使用例 (vc++)
->>>>>>> マスターの ms:assetid: bd5bc7ae-c1fa-361b-9b26-a216655e3cbd ms:mtpsurl: https://msdn.microsoft.com/library/JJ249914(v=office.15) ms:contentKeyID: 48547435 ms.date: 2015/09/18 mtps_version: v=office.15
+title: CacheSize プロパティの使用例 (VC++)
+TOCTitle: CacheSize property example (VC++)
+ms:assetid: bd5bc7ae-c1fa-361b-9b26-a216655e3cbd
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249914(v=office.15)
+ms:contentKeyID: 48547435
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 944aaae506a8a7f3faba45e2220daf5caf46bed1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885711"
 ---
-
-<<<<<<< ヘッド
 # <a name="cachesize-property-example-vc"></a>CacheSize プロパティの使用例 (VC++)
-=======
-# <a name="cachesize-property-example-vc"></a>CacheSize プロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の例では、[CacheSize](cachesize-property-ado.md) プロパティを使用して、30 レコードのキャッシュを使用して実行した操作と、使用せずに実行した操作のパフォーマンスの違いを示します。
 

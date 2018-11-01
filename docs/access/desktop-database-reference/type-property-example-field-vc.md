@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 型プロパティの使用例 (フィールド) (vc++) TOCTitle: タイプ プロパティの使用例 (フィールド) (vc++) === タイトル: 型プロパティの使用例 (vc++) の (フィールド) TOCTitle: タイプ プロパティの使用例 (vc++) の (フィールド)
->>>>>>> マスターの ms:assetid: d157407d-e7c9-897e-a0d1-e6396fb78690 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250045(v=office.15) ms:contentKeyID: 48547858 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Type プロパティの使用例 (Field) (VC++)
+TOCTitle: Type property example (Field) (VC++)
+ms:assetid: d157407d-e7c9-897e-a0d1-e6396fb78690
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250045(v=office.15)
+ms:contentKeyID: 48547858
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: bf9a00e4fafeccf5e284599ec55f9252e8bde568
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25884510"
 ---
-
-<<<<<<< ヘッド
 # <a name="type-property-example-field-vc"></a>Type プロパティの使用例 (Field) (VC++)
-=======
-# <a name="type-property-example-field-vc"></a>プロパティの使用例 (vc++) の (フィールド) を入力します。
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、***Employees*** テーブルにあるすべての [Field](field-object-ado.md) オブジェクトの [Type](type-property-ado.md) プロパティの値に対応する定数の名前を表示することによって、**Type** プロパティの機能を示します。このプロシージャを実行するには、FieldType 関数が必要です。
 

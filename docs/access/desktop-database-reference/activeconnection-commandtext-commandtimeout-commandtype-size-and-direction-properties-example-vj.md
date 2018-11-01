@@ -1,16 +1,21 @@
 ---
-<<<<<<< ヘッド タイトル: ActiveConnection、CommandText、CommandTimeout プロパティの使用例 (vj++) TOCTitle: ActiveConnection、CommandText、CommandTimeout、CommandType、サイズ、方向プロパティの使用例 (vj++) ms:assetid。80e69c20-4bad-c036-3b41-cec9d19e37dd ms:mtpsurl: https://msdn.microsoft.com/library/JJ249550(v=office.15) ms:contentKeyID: 48545936 ms.date: 2015/09/18 mtps_version: v=office.15
+title: ActiveConnection、CommandText、CommandTimeout プロパティの使用例 (vj++)
+TOCTitle: ActiveConnection, CommandText, CommandTimeout, CommandType, Size, and Direction properties example (VJ++)
+ms:assetid: 80e69c20-4bad-c036-3b41-cec9d19e37dd
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249550(v=office.15)
+ms:contentKeyID: 48545936
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: 8199c278b6552a40735f17f5f9f3a05e70e3f075
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879201"
 ---
+# <a name="activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vj"></a>ActiveConnection プロパティ、CommandText プロパティ、CommandTimeout プロパティ、CommandType プロパティ、Size プロパティ、Direction プロパティの使用例 (VJ++)
 
-# <a name="activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vj"></a>ActiveConnection、CommandText、CommandTimeout、CommandType、Size、および Direction プロパティの使用例 (VJ++)
-
-=== タイトル: ActiveConnection、CommandText、CommandTimeout プロパティの使用例 (vj++) TOCTitle: ActiveConnection、CommandText、CommandTimeout、CommandType、サイズ、および方向のプロパティの使用例 (vj++) ms:assetid。80e69c20-4bad-c036-3b41-cec9d19e37dd ms:mtpsurl: https://msdn.microsoft.com/library/JJ249550(v=office.15) ms:contentKeyID: 48545936 ms.date: 2018/10/17 mtps_version: v=office.15
----
-
-# <a name="activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vj"></a>ActiveConnection、CommandText、CommandTimeout、CommandType、サイズ、方向プロパティの使用例 (vj++)
->>>>>>> master
-
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の例では、[ActiveConnection](activeconnection-property-ado.md)、[CommandText](commandtext-property-ado.md)、[CommandTimeout](commandtimeout-property-ado.md)、[CommandType](commandtype-property-ado.md)、[Size](size-property-ado.md)、[Direction](direction-property-ado.md) の各プロパティを使用して、ストアド プロシージャを実行します。
 

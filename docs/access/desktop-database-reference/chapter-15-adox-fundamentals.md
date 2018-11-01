@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249673(v=office.15)
 ms:contentKeyID: 48546464
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 362fd0784ee596852af7b16fae5636330a52ed59
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 72152a67a9846adacbc6b200a3517c7e65b9fc4c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863746"
+ms.locfileid: "25881911"
 ---
 # <a name="chapter-15-adox-fundamentals"></a>第 15 章: ADOX の基本事項
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 Microsoft® ActiveX® Data Objects Extensions for Data Definition Language and Security (ADOX) は、ADO オブジェクトおよびプログラミング モデルの拡張機能です。ADOX には、セキュリティに加え、スキーマの作成および変更のためのオブジェクトが含まれます。オブジェクト ベースでスキーマ操作が行われるため、さまざまなデータ ソースに対してそれぞれの文法の違いに関係なく動作するコードを記述することができます。
 

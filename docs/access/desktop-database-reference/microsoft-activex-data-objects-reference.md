@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249010(v=office.15)
 ms:contentKeyID: 48543728
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a774dc4ee20e1f97e2b77d8835abb0524881e465
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 54d605beb0f6653695dafcd4a9ffffeb2f097d5b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25606760"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871431"
 ---
 # <a name="microsoft-activex-data-objects-reference"></a>Microsoft Active X データ オブジェクト (ADO) リファレンス
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ## <a name="purpose"></a>目的
 
@@ -23,9 +23,7 @@ Microsoft ActiveX Data Objects (ADO) により、クライアント アプリケ
 
 ## <a name="rds"></a>RDS
 
-<<<<<<< ヘッドの ADO では、リモート データ サービス (RDS)、サーバーから、クライアント アプリケーションまたは Web ページへのデータは、クライアント上のデータを操作し、ラウンド トリップで 1 つのサーバーに更新プログラムを返すを移動する、機能も備えています。
-=== ADO では、リモート データ サービス (RDS) をサーバーからクライアント アプリケーションまたは web ページへのデータは、クライアント上のデータを操作し、ラウンド トリップで 1 つのサーバーに更新プログラムを返すを移動することができますが機能もあります。
->>>>>>> master
+ADO では、リモート データ サービス (RDS) をサーバーからクライアント アプリケーションまたは web ページへのデータは、クライアント上のデータを操作し、ラウンド トリップで 1 つのサーバーに更新プログラムを返すを移動することができますが機能もあります。
 
 ## <a name="ado-md"></a>ADO MD
 

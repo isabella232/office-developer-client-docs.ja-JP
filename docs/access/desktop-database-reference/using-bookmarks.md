@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250306(v=office.15)
 ms:contentKeyID: 48548935
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f3c5d05c958a30f1ec5782a5dce0dd66ccd5dad4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 9c362e87f3e962586c2bd821bd6facb35966a77f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476551"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886838"
 ---
-# <a name="using-bookmarks"></a>ブックマークを使用する
+# <a name="using-bookmarks"></a>ブックマークの使用
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **Recordset** 内を移動した後、各レコードをスクロールして値を比較しなくても特定のレコードに直接戻ることができると便利な場合があります。たとえば、 **Find** メソッドでレコードを検索して見つからなかった場合、 **Recordset** のいずれかの端に自動的に戻ります。プロバイダーがブックマークをサポートしている場合、ブックマークを使用すると、 **Find** メソッドを使用する前の位置をマークし、その位置に戻ることができます。ブックマークはバリアント ( **Variant** ) 型の値で、 **Recordset** オブジェクト内のレコードを一意に識別します。
 

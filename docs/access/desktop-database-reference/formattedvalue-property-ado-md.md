@@ -6,25 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250189(v=office.15)
 ms:contentKeyID: 48548464
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a834d9618d41e41c818a6a9d69788eff3724e8a7
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: b1c5efe469c7d22307590dec011366e2d76c1456
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25605472"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875281"
 ---
 # <a name="formattedvalue-property-ado-md"></a>FormattedValue プロパティ (ADO MD)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 セル値の書式付き表示を示します。
 
-<<<<<<< ヘッド
 ## <a name="return-values"></a>戻り値
-=======
-## <a name="return-values"></a>戻り値
->>>>>>> master
 
 文字列型 ( **String** ) の値を取得します。値の取得のみが可能です。
 

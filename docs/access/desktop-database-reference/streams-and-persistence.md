@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249289(v=office.15)
 ms:contentKeyID: 48544949
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d47d7bb4d8e9243d48daf4ad7947cef2416d4004
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 65fda92e28aab278fde4dafba4e94c576827370a
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478652"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881749"
 ---
 # <a name="streams-and-persistence"></a>ストリームと永続性
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [レコード セット](recordset-object-ado.md)オブジェクト[の保存](save-method-ado.md)方法、店舗、*引き続き発生する*ファイル、および[Open](open-method-ado-recordset.md)メソッドには、**レコード セット**は、そのファイルから**レコード セット**を復元します。
 

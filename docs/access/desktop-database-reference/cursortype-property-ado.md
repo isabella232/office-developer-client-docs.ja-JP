@@ -1,24 +1,26 @@
 ---
-<<<<<<< ヘッド タイトル: CursorType プロパティ (ADO) TOCTitle: CursorType プロパティ (ADO) === タイトル: CursorType プロパティ (ADO) TOCTitle: CursorType プロパティ (ADO)
->>>>>>> マスターの ms:assetid: f42ded8f-9f92-ef03-a198-ffb892324611 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250239(v=office.15) ms:contentKeyID: 48548682 ms.date: 2015/09/18 mtps_version: v=office.15
+title: CursorType プロパティ (ADO)
+TOCTitle: CursorType property (ADO)
+ms:assetid: f42ded8f-9f92-ef03-a198-ffb892324611
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250239(v=office.15)
+ms:contentKeyID: 48548682
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 1d9560ad975d545015a02bb0e594777ced3cc8d3
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886657"
 ---
-
-<<<<<<< 見出し
 # <a name="cursortype-property-ado"></a>CursorType プロパティ (ADO)
-=======
-# <a name="cursortype-property-ado"></a>CursorType プロパティ (ADO)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [Recordset](recordset-object-ado.md) オブジェクトで使用されているカーソルの種類を示します。
 
-<<<<<<< 見出し
-## <a name="settings-and-return-values"></a>設定値と戻り値
-=======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
->>>>>>> master
 
 [CursorTypeEnum](cursortypeenum.md) の値を設定または取得します。既定値は **adOpenForwardOnly** です。
 

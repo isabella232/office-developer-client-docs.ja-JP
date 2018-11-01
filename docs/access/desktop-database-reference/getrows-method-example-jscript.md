@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249466(v=office.15)
 ms:contentKeyID: 48545620
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c8da290cc259f9be165e069c8a62e61fa8b748b3
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 538ee7d2ba39e6a4da0661901076a296bb063d14
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25864117"
+ms.locfileid: "25877759"
 ---
 # <a name="getrows-method-example-jscript"></a>GetRows メソッドの使用例 (JScript)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の使用例は、[レコード セット](recordset-object-ado.md)から*Custiomers*テーブルのすべての行を取得するために、結果のデータを配列に格納するのには、 [GetRows](getrows-method-ado.md)メソッドを使用します。 **GetRows** メソッドでは、 [EOF](bof-eof-properties-ado.md) に達した場合、および他のユーザーによって削除されたレコードを **GetRows** が取得しようとした場合に、指定よりも少ない数の行が返されます。 2 番目の場合のみ、 **False** が返されます。 次のコードを切り取って Windows のメモ帳またはその他のテキスト エディターに貼り付け、 **GetRowsJS.asp** として保存してください。
 

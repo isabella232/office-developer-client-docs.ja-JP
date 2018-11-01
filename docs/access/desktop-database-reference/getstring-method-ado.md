@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250242(v=office.15)
 ms:contentKeyID: 48548693
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ba235094aa7f491cbd86bf753713d50f01009d47
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: b6c4de1278a093a1b0d4493c5dd994afe6a5d1b8
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25605402"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879873"
 ---
 # <a name="getstring-method-ado"></a>GetString メソッド (ADO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 [Recordset](recordset-object-ado.md) を文字列として返します。
@@ -25,11 +25,7 @@ ms.locfileid: "25605402"
 
 *バリアント* = *レコード セット*です。GetString (*StringFormat*、 *NumRows*、 *";"と*、 *RowDelimiter*、 *NullExpr*)
 
-<<<<<<< ヘッド
 ## <a name="return-value"></a>戻り値
-=======
-## <a name="return-value"></a>戻り値
->>>>>>> master
 
 **Recordset** を文字列値を持つバリアント型 ( **Variant** )、つまり、BSTR として返します。
 

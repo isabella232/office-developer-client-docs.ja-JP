@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250095(v=office.15)
 ms:contentKeyID: 48548052
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6e5651c53a692f016fe17ff001754a6ce5e298ad
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 64678442408bb067e14d3da7909527a456b33152
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861824"
+ms.locfileid: "25889799"
 ---
 # <a name="append-and-createparameter-methods-example-vc"></a>Append メソッドと CreateParameter メソッドの使用例 (VC++)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Append](append-method-ado.md) メソッドと [CreateParameter](createparameter-method-ado.md) メソッドを使用して、入力パラメーターのあるストアド プロシージャを実行します。
 

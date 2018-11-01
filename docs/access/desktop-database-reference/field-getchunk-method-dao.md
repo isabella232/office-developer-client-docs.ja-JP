@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1052871
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 691b4d0b18b31c4c4a40f73e232a1829101913f1
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: c2a308fc5cf33c4d94e4ee2911596ea80c4ec494
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863277"
+ms.locfileid: "25886530"
 ---
 # <a name="fieldgetchunk-method-dao"></a>Field.GetChunk メソッド (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ****Recordset**** オブジェクトの **[Fields](field-object-dao.md)** コレクションに含まれる、メモ型 ( [Memo](fields-collection-dao.md)) またはロング バイナリ型 ( **Long Binary**) の **[Field](recordset-object-dao.md)** オブジェクトについて、全部または一部の内容を取得します。
 
@@ -64,13 +64,9 @@ ms.locfileid: "25863277"
 </table>
 
 
-<<<<<<< 見出し
 ### <a name="return-value"></a>戻り値
-=======
-### <a name="return-value"></a>戻り値
->>>>>>> master
 
-バリアント型 (Variant)
+バリアント型
 
 ## <a name="remarks"></a>注釈
 

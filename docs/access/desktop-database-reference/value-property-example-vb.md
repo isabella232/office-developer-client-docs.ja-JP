@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 値のプロパティの使用例 (VB) TOCTitle: 値のプロパティの使用例 (VB) === タイトル: 値プロパティの使用例 (VB) TOCTitle: 値プロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: c2319a14-e86f-6dc1-b203-fd5f35ffa04f ms:mtpsurl: https://msdn.microsoft.com/library/JJ249947(v=office.15) ms:contentKeyID: 48547547 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Value プロパティの使用例 (VB)
+TOCTitle: Value property example (VB)
+ms:assetid: c2319a14-e86f-6dc1-b203-fd5f35ffa04f
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249947(v=office.15)
+ms:contentKeyID: 48547547
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 37182f2de5342374ddb3d12d38e35c63bafaf1aa
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872831"
 ---
-
-<<<<<<< ヘッド
 # <a name="value-property-example-vb"></a>Value プロパティの使用例 (VB)
-=======
-# <a name="value-property-example-vb"></a>値プロパティの使用例 (VB)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Field](field-object-ado.md) オブジェクトや [Property](property-object-ado.md) オブジェクトで [Value](value-property-ado.md) プロパティを使用して、***Employees*** テーブルのフィールドとプロパティの値を表示します。
 

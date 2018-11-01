@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249711(v=office.15)
 ms:contentKeyID: 48546608
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ab78043392801f04a85a80c103c7afad6091b30b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d57f05905aa0f79c1a72638e70ede8bdabf73b8f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477461"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883688"
 ---
 # <a name="working-with-recordsets"></a>レコードセットを使用する
 
 
-**適用されます**Access 2013 |。Office 2013 
+**適用されます**Access 2013、Office 2013。 
 
 **Recordset** オブジェクトには、結果セット内のデータ順序の並べ替え、指定した基準に基づく特定のレコードの検索、さらにインデックスを使用した検索操作の最適化を実行できる機能が組み込まれています。これらの機能を使用できるかどうかは、プロバイダーによって異なり、 [Index](index-property-ado.md) プロパティなどの場合には、データ ソース自体の構造によっても異なります。
 

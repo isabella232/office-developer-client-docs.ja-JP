@@ -6,22 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn161402(v=office.15)
 ms:contentKeyID: 52074368
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 88444bd34a9baba433fd47685db435b332379e4a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: fc568e7cf6f277a0928dc9d29913f18785562044
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478173"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872264"
 ---
 # <a name="overview-of-the-access-sql-reference"></a>Access SQL リファレンスの概要
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
-- [SQL 集計関数](sql-aggregate-functions-sql.md)
+- [SQL 集合関数](sql-aggregate-functions-sql.md)
 
 - [SQL 式](sql-expressions.md)
 
-- [SQL の予約語](sql-reserved-words.md)
+- [SQL 予約語](sql-reserved-words.md)
 
 - [SQL データ型](sql-data-types.md)
 

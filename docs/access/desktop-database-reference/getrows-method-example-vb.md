@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249311(v=office.15)
 ms:contentKeyID: 48545041
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 10ea58f34b89e01770889e49265ef7bd399b546e
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 2a5594c1de258401b7567ff383558a397578f4e9
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863872"
+ms.locfileid: "25889169"
 ---
 # <a name="getrows-method-example-vb"></a>GetRows メソッドの使用例 (VB)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、 [GetRows](getrows-method-ado.md) メソッドを使用して、指定した数の行を [Recordset](recordset-object-ado.md) から取得し、結果データを配列に設定します。 **GetRows** メソッドでは、 [EOF](bof-eof-properties-ado.md) に達した場合、および他のユーザーによって削除されたレコードを **GetRows** が取得しようとした場合に、指定よりも少ない数の行が返されます。2 番目の場合のみ、 **False** が返されます。このプロシージャを実行するには、GetRowsOK 関数が必要です。
 

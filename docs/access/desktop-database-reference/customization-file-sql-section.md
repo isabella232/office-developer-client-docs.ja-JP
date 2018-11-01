@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248776(v=office.15)
 ms:contentKeyID: 48542901
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 09be671ba15727e3612ade78c5b54af12b1d1c57
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 391d87d23f50fb2b25e5fb8033da95f44eeeb09c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476553"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868617"
 ---
 # <a name="customization-file-sql-section"></a>カスタマイズ ファイルの SQL セクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **sql** セクションには、クライアントのコマンド文字列を置き換える新規 SQL 文字列を含めることができます。このセクションに SQL 文字列がない場合、このセクションは無視されます。
 

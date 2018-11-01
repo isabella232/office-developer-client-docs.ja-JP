@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff820771(v=office.15)
 ms:contentKeyID: 48546712
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f845dc5512611aa948991ad2099169a25bbcb113
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 36dd3e511a3ff252ca44aa6d10fd1be4acd5c5fb
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476432"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878690"
 ---
 # <a name="setvalue-macro-action"></a>SetValue マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 " **SetValue/値の代入** " アクションを使用すると、フォーム、フォーム データシート、またはレポートの Microsoft Access フィールド、コントロール、あるいはプロパティの値を設定できます。
@@ -120,7 +120,7 @@ ms.locfileid: "25476432"
 <tr class="header">
 <th><p>アクション</p></th>
 <th><p>引数: 設定値</p></th>
-<th><p>コンポーネント</p></th>
+<th><p>コメント</p></th>
 </tr>
 </thead>
 <tbody>

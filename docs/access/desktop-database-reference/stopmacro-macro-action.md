@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195473(v=office.15)
 ms:contentKeyID: 48545455
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a918fd128456450c21b5a36e74b7266df661cb75
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 3880b57e235520e3351ef16282fb8883d93b11e3
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477919"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25873713"
 ---
 # <a name="stopmacro-macro-action"></a>StopMacro マクロ アクション
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 " **StopMacro/マクロの中止** " アクションを使用すると、現在実行中のマクロを中止できます。
 

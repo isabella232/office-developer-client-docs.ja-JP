@@ -1,16 +1,21 @@
 ---
-<<<<<<< ヘッド タイトル: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (vj++) TOCTitle: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (vj++) ms:assetid: 6cdf3880-1d77-5826-1d7b-7bf61a886d1b ms:mtpsurl: https://msdn.microsoft.com/library/JJ249431(v=office.15)ms:contentKeyID: 48545480 ms.date: 2015/09/18 mtps_version: v=office.15
+title: AbsolutePage プロパティ、PageCount プロパティ、PageSize プロパティの使用例 (VJ++)
+TOCTitle: AbsolutePage, PageCount, and PageSize properties example (VJ++)
+ms:assetid: 6cdf3880-1d77-5826-1d7b-7bf61a886d1b
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249431(v=office.15)
+ms:contentKeyID: 48545480
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: 6de53b8f0fc44b4aaf85f84f0a646e1eb80539f1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882148"
 ---
+# <a name="absolutepage-pagecount-and-pagesize-properties-example-vj"></a>AbsolutePage プロパティ、PageCount プロパティ、PageSize プロパティの使用例 (VJ++)
 
-# <a name="absolutepage-pagecount-and-pagesize-properties-example-vj"></a>AbsolutePage プロパティ、PageCount プロパティ、および PageSize プロパティの使用例 (VJ++)
-
-=== タイトル: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (vj++) TOCTitle: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (vj++) ms:assetid: 6cdf3880-1d77-5826-1d7b-7bf61a886d1b ms:mtpsurl: https://msdn.microsoft.com/library/JJ249431(v=office.15) ms:contentKeyID。48545480 ms.date: 2018/10/17 mtps_version: v=office.15
----
-
-# <a name="absolutepage-pagecount-and-pagesize-properties-example-vj"></a>AbsolutePage、PageCount、および PageSize プロパティの使用例 (vj++)
->>>>>>> master
-
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の例では、[AbsolutePage](absolutepage-property-ado.md) プロパティ、[PageCount](pagecount-property-ado.md) プロパティ、および [PageSize](pagesize-property-ado.md) プロパティを使用して、***Employee*** テーブルから取得した名前と雇用年月日を一度に 5 レコードずつ表示します。
 

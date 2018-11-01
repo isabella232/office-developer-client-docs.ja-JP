@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 説明、HelpContext、HelpFile プロパティの使用例 (VB) TOCTitle: 説明、HelpContext、HelpFile、以下、番号、ソース、および SQLState プロパティの使用例 (VB) === タイトル: 説明HelpContext、HelpFile プロパティの使用例 (VB) TOCTitle: 説明、HelpContext、HelpFile、以下、番号、ソース、および SQLState プロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: 3c129aec-cd69-5822-4dad-ebef226538e1 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249156(v=office.15) ms:contentKeyID: 48544304 ms.date: 2015/09/18 mtps_version: v=office.15
+title: 説明、HelpContext、HelpFile プロパティの使用例 (VB)
+TOCTitle: Description, HelpContext, HelpFile, NativeError, Number, Source, and SQLState properties example (VB)
+ms:assetid: 3c129aec-cd69-5822-4dad-ebef226538e1
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249156(v=office.15)
+ms:contentKeyID: 48544304
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 1e1aeb7166a52e46951025adbbb2532e0dfa5a9b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882365"
 ---
-
-<<<<<<< ヘッド
-# <a name="description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vb"></a>Description、HelpContext、HelpFile、NativeError、Number、Source、および SQLState プロパティの使用例 (VB)
-=======
-# <a name="description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vb"></a>説明、HelpContext、HelpFile、以下、番号、ソース、および SQLState プロパティの使用例 (VB)
->>>>>>> master
+# <a name="description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vb"></a>Description プロパティ、HelpContext プロパティ、HelpFile プロパティ、NativeError プロパティ、Number プロパティ、Source プロパティ、SQLState プロパティの使用例 (VB)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、エラーを発生させてトラップし、生成された [Error](description-property-ado.md) オブジェクトの [Description](helpcontext-helpfile-properties-ado.md)、[HelpContext](helpcontext-helpfile-properties-ado.md)、[HelpFile](nativeerror-property-ado.md)、[NativeError](number-property-ado.md)、[Number](source-property-ado-error.md)、[Source](sqlstate-property-ado.md)、および [SQLState](error-object-ado.md) プロパティを表示します。
 

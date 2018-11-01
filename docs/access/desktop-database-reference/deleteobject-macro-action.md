@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm152112
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f9ac791ffd0f11c11358298570db833f8d561d11
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 91a6943267ebcd5445c338f12cc9f892ead0e316
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860939"
+ms.locfileid: "25879425"
 ---
 # <a name="deleteobject-macro-action"></a>DeleteObject マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **DeleteObject** アクションを使用すると、指定したデータベース オブジェクトを削除できます。
 

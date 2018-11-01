@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: BOF、EOF、およびブックマークのプロパティの使用例 (vj++) TOCTitle: BOF、EOF、およびブックマークのプロパティの使用例 (vj++) === タイトル: BOF、EOF、およびブックマークのプロパティの使用例 (vj++) TOCTitle: BOF、EOF、およびブックマークのプロパティ例 (vj++)
->>>>>>> マスターの ms:assetid: 68e6fcc5-506a-9064-3e7c-9ce3d64371aa ms:mtpsurl: https://msdn.microsoft.com/library/JJ249412(v=office.15) ms:contentKeyID: 48545400 ms.date: 2015/09/18 mtps_version: v=office.15
+title: BOF プロパティ、EOF プロパティ、Bookmark プロパティの使用例 (VJ++)
+TOCTitle: BOF, EOF, and Bookmark properties example (VJ++)
+ms:assetid: 68e6fcc5-506a-9064-3e7c-9ce3d64371aa
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249412(v=office.15)
+ms:contentKeyID: 48545400
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: bc00c8a4102287fb2488d8ffa99607521a91021b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870430"
 ---
-
-<<<<<<< ヘッド
-# <a name="bof-eof-and-bookmark-properties-example-vj"></a>BOF プロパティ、EOF プロパティ、および Bookmark プロパティの使用例 (VJ++)
-=======
-# <a name="bof-eof-and-bookmark-properties-example-vj"></a>Bof プロパティ、EOF、およびブックマークのプロパティの使用例 (vj++)
->>>>>>> master
+# <a name="bof-eof-and-bookmark-properties-example-vj"></a>BOF プロパティ、EOF プロパティ、Bookmark プロパティの使用例 (VJ++)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の例では、[BOF](bof-eof-properties-ado.md) プロパティと [EOF](bof-eof-properties-ado.md) プロパティを使用して、ユーザーが [Recordset](recordset-object-ado.md) の先頭または最後のレコードを越えて移動しようとした場合にメッセージを表示します。また、 [Bookmark](bookmark-property-ado.md) プロパティを使用して、後からそのレコードに戻れるように、ユーザーが **Recordset** のレコードにフラグを立てることができるようにしています。
 

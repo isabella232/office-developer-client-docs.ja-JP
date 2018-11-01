@@ -6,21 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250268(v=office.15)
 ms:contentKeyID: 48548815
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f53b56cc5fa0c99a7f7349164a42749c9575dd51
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 56d41d25ed2821422d397be7f5a0c6fb68a47811
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863394"
+ms.locfileid: "25889302"
 ---
 # <a name="deleterecord-and-moverecord-methods-example-vb"></a>DeleteRecord メソッドと MoveRecord メソッドの使用例 (VB)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
-<<<<<<< この例では、コピーするには、ヘッドの移動、編集、および Web フォルダーに公開するテキスト ファイルの内容を削除します。 [GetChildren](getchildren-method-ado.md)、 [ParentURL](parenturl-property-ado.md)、[ソース](source-property-ado-record.md)、および[フラッシュ](flush-method-ado.md)その他のプロパティとメソッドが含まれます。
-=== この例では、コピー、移動、編集、および web フォルダーに公開するテキスト ファイルの内容を削除する方法を示します。 [GetChildren](getchildren-method-ado.md)、 [ParentURL](parenturl-property-ado.md)、[ソース](source-property-ado-record.md)、および[フラッシュ](flush-method-ado.md)その他のプロパティとメソッドが含まれます。
->>>>>>> master
+この例では、コピー、移動、編集、および web フォルダーに公開するテキスト ファイルの内容を削除する方法を示します。 [GetChildren](getchildren-method-ado.md)、 [ParentURL](parenturl-property-ado.md)、[ソース](source-property-ado-record.md)、および[フラッシュ](flush-method-ado.md)その他のプロパティとメソッドが含まれます。
 
 ```vb 
  

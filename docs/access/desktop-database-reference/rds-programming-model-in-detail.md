@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248906(v=office.15)
 ms:contentKeyID: 48543364
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c68af31fec00178cf4f2a78cd64980ac0b262206
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: fe14fd74f30a4d686dca517acd84d89a3df82555
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25604450"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871928"
 ---
 # <a name="rds-programming-model-in-detail"></a>RDS プログラミング モデルの詳細
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 
@@ -46,9 +46,7 @@ RDS が提供する既定のサーバー プログラムは、データ ソー�
 
 RDS オブジェクト モデルでは、この機能は [RDSServer.DataFactory](datafactory-object-rdsserver.md) オブジェクトに組み込まれています。
 
-<<<<<<< ヘッドでさらに、このオブジェクトにはプログラムを使用して入力できる空の**レコード セット**オブジェクトを作成するためのメソッド ([CreateRecordset](createrecordset-method-rds.md)) と他の**レコード セット**オブジェクトをテキストに変換する方法Web ページ ([ConvertToString](converttostring-method-rds.md)) を構築する文字列です。
-=== さらに、このオブジェクトにはプログラムを使用して入力できる空の**レコード セット**オブジェクトを作成するためのメソッド ([CreateRecordset](createrecordset-method-rds.md)) と他の**レコード セット**オブジェクトを web ページであること (を構築する文字列に変換する方法[ConvertToString](converttostring-method-rds.md))。
->>>>>>> master
+さらにこのオブジェクトは、プログラムを使用して入力できる空の**レコード セット**オブジェクトを作成するためのメソッド ([CreateRecordset](createrecordset-method-rds.md)) と ([の web ページを作成するテキスト文字列、**レコード セット**オブジェクトに変換するための別の方法ConvertToString](converttostring-method-rds.md))。
 
 ADO では、 **DataFactory** ハンドラーの **RDSServer.DataFactory** の既定の接続およびコマンドの動作の一部、および接続、コマンド、セキュリティなどのパラメーターが格納されたカスタマイズ ファイルを無効にすることができます。
 
@@ -62,9 +60,7 @@ RDS オブジェクト モデルでは、この機能は [RDS.DataControl](datac
 
 **RDS.DataControl** には 2 つの側面があります。1 つはデータ ソースに関する側面です。 **RDS.DataControl** の **Connect** プロパティおよび **SQL** プロパティを使用して、コマンドおよび接続の情報を設定すると、自動的に **RDS.DataSpace** が使用されて、既定の **RDSServer.DataFactory** オブジェクトへの参照が作成されます。その後、 **RDSServer.DataFactory** は、 **Connect** プロパティの値を使用してデータ ソースに接続し、 **SQL** プロパティの値を使用してデータ ソースから **Recordset** を取得して、 **Recordset** オブジェクトを **RDS.DataControl** に返します。
 
-<<<<<<< ヘッドが 2 つ目の縦横の表示に関するものでは、ビジュアル コントロールで**レコード セット**の情報が返されます。 ビジュアル コントロールをバインディングという処理によって **RDS.DataControl** に関連付け、関連する **Recordset** オブジェクトに含まれる情報にアクセスし、クエリの結果を Microsoft® Internet Explorer で Web ページに表示することができます。 各 **RDS.DataControl** オブジェクトは、単一のクエリの結果を表す 1 つの **Recordset** オブジェクトを、1 つまたは複数のビジュアル コントロール (テキスト ボックス、コンボ ボックス、グリッド コントロールなど) にバインドします。 各ページに複数の **RDS.DataControl** オブジェクトが存在する場合があります。 それぞれの **RDS.DataControl** オブジェクトを異なるデータ ソースに接続し、別のクエリの結果を取得することができます。
-===、2 番目の側面は、返された**Recordset**情報のビジュアル コントロールでの表示に関係します。 **Rds. のビジュアル コントロールを関連付けることができます。DataControl** (バインドと呼ばれるプロセス) で、Microsoft® Internet Explorer で web ページのクエリ結果を表示する、関連付けられた**レコード セット**オブジェクト内の情報にアクセスします。 各 **RDS.DataControl** オブジェクトは、単一のクエリの結果を表す 1 つの **Recordset** オブジェクトを、1 つまたは複数のビジュアル コントロール (テキスト ボックス、コンボ ボックス、グリッド コントロールなど) にバインドします。 各ページに複数の **RDS.DataControl** オブジェクトが存在する場合があります。 それぞれの **RDS.DataControl** オブジェクトを異なるデータ ソースに接続し、別のクエリの結果を取得することができます。
->>>>>>> master
+もう 1 つの側面は、返された **Recordset** 情報のビジュアル コントロールでの表示に関するものです。 **Rds. のビジュアル コントロールを関連付けることができます。DataControl** (バインドと呼ばれるプロセス) で、Microsoft® Internet Explorer で web ページのクエリ結果を表示する、関連付けられた**レコード セット**オブジェクト内の情報にアクセスします。 各 **RDS.DataControl** オブジェクトは、単一のクエリの結果を表す 1 つの **Recordset** オブジェクトを、1 つまたは複数のビジュアル コントロール (テキスト ボックス、コンボ ボックス、グリッド コントロールなど) にバインドします。 各ページに複数の **RDS.DataControl** オブジェクトが存在する場合があります。 それぞれの **RDS.DataControl** オブジェクトを異なるデータ ソースに接続し、別のクエリの結果を取得することができます。
 
 また、 **RDS.DataControl** オブジェクトには、関連する **Recordset** オブジェクトの行に対して移動、並べ替え、およびフィルター選択を行うためのメソッドがあります。これらのメソッドは、ADO の **Recordset** オブジェクトのメソッドと似ていますが、同じではありません。
 

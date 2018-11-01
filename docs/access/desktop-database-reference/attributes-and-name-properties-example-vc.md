@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 属性および名前のプロパティの使用例 (vc++) TOCTitle: 属性および名前のプロパティの使用例 (vc++) === タイトル: 属性と名前のプロパティの使用例 (vc++) TOCTitle: 属性および名前のプロパティの使用例 (VC++)
->>>>>>> マスターの ms:assetid: 612b7d4a-b92d-5afd-eeaa-28d7ad1a880a ms:mtpsurl: https://msdn.microsoft.com/library/JJ249356(v=office.15) ms:contentKeyID: 48545203 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Attributes プロパティと Name プロパティの使用例 (VC++)
+TOCTitle: Attributes and Name properties example (VC++)
+ms:assetid: 612b7d4a-b92d-5afd-eeaa-28d7ad1a880a
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249356(v=office.15)
+ms:contentKeyID: 48545203
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: df442df4378589ff82981858b021efe033b05ba6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887419"
 ---
-
-<<<<<<< ヘッド
 # <a name="attributes-and-name-properties-example-vc"></a>Attributes プロパティと Name プロパティの使用例 (VC++)
-=======
-# <a name="attributes-and-name-properties-example-vc"></a>属性および名前のプロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の例では、[Connection](attributes-property-ado.md)、[Field](connection-object-ado.md)、および [Property](field-object-ado.md) の各オブジェクトの [Attributes](property-object-ado.md) プロパティの値を表示します。 [Name](name-property-ado.md) プロパティを使用して、 **Field** および **Property** の各オブジェクトの名前を表示しています。
 

@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff837318(v=office.15)
 ms:contentKeyID: 48548970
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1b7e5634256a3f0acf7dc058f36c5a7d9d0581b0
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 5109b7f512782a8038cd197b74cc669dc5256569
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478900"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871396"
 ---
 # <a name="field2iscomplex-property-dao"></a>Field2.IsComplex プロパティ (DAO)
 
-**適用されます**Access 2013 |。Office 2013 
+**適用されます**Access 2013、Office 2013。 
 
 指定されたフィールドが複数値データ型かどうかを示すブール型 ( **Boolean**) の値を返します。値の取得および設定が可能です。
 

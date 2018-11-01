@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 状態プロパティの使用例 (vj++) TOCTitle: 状態プロパティの使用例 (vj++) === タイトル: 状態プロパティの使用例 (vj++) TOCTitle: 状態プロパティの使用例 (vj++)
->>>>>>> マスターの ms:assetid: bdfc1b26-b384-e7e5-ff4b-d63ed62f70ca ms:mtpsurl: https://msdn.microsoft.com/library/JJ249922(v=office.15) ms:contentKeyID: 48547452 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Status プロパティの使用例 (VJ++)
+TOCTitle: Status property example (VJ++)
+ms:assetid: bdfc1b26-b384-e7e5-ff4b-d63ed62f70ca
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249922(v=office.15)
+ms:contentKeyID: 48547452
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: f903da131d94c72656a2b8d80febb20e01854b49
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872229"
 ---
-
-<<<<<<< ヘッド
 # <a name="status-property-example-vj"></a>Status プロパティの使用例 (VJ++)
-=======
-# <a name="status-property-example-vj"></a>状態プロパティの使用例 (vj++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Status](status-property-ado-recordset.md) プロパティを使用して、一括更新の前にバッチ処理で変更されたレコードを表示します。
 

@@ -1,24 +1,26 @@
 ---
-<<<<<<< ヘッド タイトル: IsolationLevel プロパティ (ADO) TOCTitle: IsolationLevel プロパティ (ADO) === タイトル: IsolationLevel プロパティ (ADO) TOCTitle: IsolationLevel プロパティ (ADO)
->>>>>>> マスターの ms:assetid: 19461be5-c94b-4b61-ce08-7abdf702c3dc ms:mtpsurl: https://msdn.microsoft.com/library/JJ248939(v=office.15) ms:contentKeyID: 48543493 ms.date: 2015/09/18 mtps_version: v=office.15
+title: IsolationLevel プロパティ (ADO)
+TOCTitle: IsolationLevel property (ADO)
+ms:assetid: 19461be5-c94b-4b61-ce08-7abdf702c3dc
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248939(v=office.15)
+ms:contentKeyID: 48543493
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 76978d33fc5f82c9b1f8137b64a663e7e95f2204
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883058"
 ---
-
-<<<<<<< ヘッド
 # <a name="isolationlevel-property-ado"></a>IsolationLevel プロパティ (ADO)
-=======
-# <a name="isolationlevel-property-ado"></a>IsolationLevel プロパティ (ADO)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [Connection](connection-object-ado.md) オブジェクトの分離レベルを示します。
 
-<<<<<<< ヘッド
-## <a name="settings-and-return-values"></a>設定値と戻り値
-=======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
->>>>>>> master
 
 [IsolationLevelEnum](isolationlevelenum.md) の値を設定または取得します。既定値は **adXactChaos** です。
 

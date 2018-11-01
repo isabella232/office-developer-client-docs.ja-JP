@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm27417
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 462dbd34f5666643cceff1fc96b9dd77c36d0071
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 84eff76b29697df46c7159c442865bd00ce051e0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477663"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879124"
 ---
 # <a name="showtoolbar-macro-action"></a>"ShowToolbar/ツール バーの表示" マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **[アドイン**] タブのコマンドのグループを表示または非表示に**切り替えます**を使用することができます。
 

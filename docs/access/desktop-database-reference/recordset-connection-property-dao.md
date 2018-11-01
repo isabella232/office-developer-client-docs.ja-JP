@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1053579
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 88d81ab3f30bc414dec0729c6f2a6cf82f94663c
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: db49c2be9542d04f3663edc6b692c0e9ba3ad511
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477374"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886789"
 ---
 # <a name="recordsetconnection-property-dao"></a>Recordset.Connection プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 データベースに対応する **[Connection](connection-object-dao.md)** オブジェクトを取得します。
 

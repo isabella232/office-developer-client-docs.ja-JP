@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822782(v=office.15)
 ms:contentKeyID: 48547481
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 86631fb15da775c3c5740dce704c519e2912ffba
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 17e8bd561858c8cb1eeb9bf84f6fc636a37f812b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478192"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875064"
 ---
 # <a name="workspace-object-dao"></a>Workspace オブジェクト (DAO)
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **Workspace** オブジェクトは、ユーザー用に名前付きセッションを定義します。これには開いているデータベースが含まれ、同時実行トランザクションのメカニズムを提供し、Microsoft Access ワークスペースの場合は、セキュリティが設定されたワークグループをサポートします。
 

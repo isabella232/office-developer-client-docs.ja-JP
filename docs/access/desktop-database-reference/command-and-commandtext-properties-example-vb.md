@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: コマンドと CommandText プロパティの使用例 (VB) TOCTitle: コマンドと CommandText プロパティの使用例 (VB) === タイトル: コマンドと CommandText プロパティの使用例 (VB) TOCTitle: コマンドと CommandTextプロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: 6bf35604-401b-0727-85e8-ac2ecda368df ms:mtpsurl: https://msdn.microsoft.com/library/JJ249425(v=office.15) ms:contentKeyID: 48545462 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Command プロパティと CommandText プロパティの使用例 (VB)
+TOCTitle: Command and CommandText properties example (VB)
+ms:assetid: 6bf35604-401b-0727-85e8-ac2ecda368df
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249425(v=office.15)
+ms:contentKeyID: 48545462
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: e19ac7517e548f1594c0b525671e6aff66eef72c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25888511"
 ---
-
-<<<<<<< ヘッド
 # <a name="command-and-commandtext-properties-example-vb"></a>Command プロパティと CommandText プロパティの使用例 (VB)
-=======
-# <a name="command-and-commandtext-properties-example-vb"></a>コマンドと CommandText プロパティの使用例 (VB)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次のコードは、プロシージャのテキストを更新するための [Command](command-property-adox.md) プロパティの使用例を示しています。
 
