@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: MaxRecords プロパティの使用例 (vc++) TOCTitle: MaxRecords プロパティの使用例 (vc++) === タイトル: MaxRecords プロパティの使用例 (vc++) TOCTitle: MaxRecords プロパティの使用例 (vc++)
->>>>>>> マスターの ms:assetid: 007936cf-a91c-c447-69f2-8286f3f868e6 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248778(v=office.15) ms:contentKeyID: 48542910 ms.date: 2015/09/18 mtps_version: v=office.15
+title: MaxRecords プロパティの使用例 (VC++)
+TOCTitle: MaxRecords property example (VC++)
+ms:assetid: 007936cf-a91c-c447-69f2-8286f3f868e6
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248778(v=office.15)
+ms:contentKeyID: 48542910
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: dfd310d635f347bf3ad49b2cc8332c2bde84322e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891220"
 ---
-
-<<<<<<< ヘッド
 # <a name="maxrecords-property-example-vc"></a>MaxRecords プロパティの使用例 (VC++)
-=======
-# <a name="maxrecords-property-example-vc"></a>MaxRecords プロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の例では、[MaxRecords](maxrecords-property-ado.md) プロパティを使って、***Titles*** テーブル中の最も価格の高い 10 タイトルを含む [Recordset](recordset-object-ado.md) を開きます。
 

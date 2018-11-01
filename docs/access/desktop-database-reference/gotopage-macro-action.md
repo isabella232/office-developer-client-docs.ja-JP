@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm129285
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: dc7777535fdba5bcb1f6ace167e23e1294f13960
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: b183b7815769c1eed8c3ee0826167b93453ca19d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477153"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891311"
 ---
 # <a name="gotopage-macro-action"></a>"GoToPage/ページの移動" マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **GoToPage**アクションを使用すると、アクティブ フォームの指定したページの先頭のコントロールにフォーカスを移動します。 このアクションは、関連のある情報を改ページで分割しているフォームを作成した場合に使用できます。 たとえば、社員フォームの最初のページに個人情報、2 ページ目に会社情報、3 ページ目に売上情報があるとします。 **GoToPage**アクションを使用すると、目的のページに移動します。 また、タブ コントロールを使用すると、1 つのフォーム上で複数のページに情報を表示することもできます。
 

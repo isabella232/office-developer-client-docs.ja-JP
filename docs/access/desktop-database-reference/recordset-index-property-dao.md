@@ -10,16 +10,16 @@ f1_keywords:
 - dao360.chm1052906
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 01a19fd621d8124616872bebc54c6ac9482ffe08
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1a1799a87ba640ec90253bd262972b068fc01e03
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479145"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891213"
 ---
 # <a name="recordsetindex-property-dao"></a>Recordset.Index プロパティ (DAO)
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 テーブル タイプの **[Recordset](index-object-dao.md)** オブジェクト内にある現在の **[Index](recordset-object-dao.md)** オブジェクトの名前を示す値を設定または取得します (Microsoft Access ワークスペースのみ)。
 

@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm174420
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 8ff22b21bfc411f536b780d74a0c2b62a396a4cf
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: fd70c3fb41b65ae9c21b1651a6af64912b9c3c7c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479716"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25890891"
 ---
 # <a name="minimizewindow-macro-action"></a>"MinimizeWindow/ウィンドウの最小化" マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 タブ付きドキュメントを使用せずにウィンドウを重ねて使用するように Access が構成されている場合、" **MinimizeWindow/ウィンドウの最小化** " アクションを使用してアクティブ ウィンドウを縮小し、Access ウィンドウの下部に小さなタイトル バーとして表示することができます。
 

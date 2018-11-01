@@ -10,16 +10,16 @@ f1_keywords:
 - vbaac10.chm168097
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c4ea6feeec4c8d4189b80354e41a01de61da4e30
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 5ded11512def101bc27dfb843d2315f9f4105fb5
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478607"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891227"
 ---
 # <a name="importexporttext-macro-action"></a>ImportExportText マクロ アクション
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **ImportExportText**アクションは、インポートまたはエクスポートする現在の Microsoft Access データベース (.mdb または .accdb) または Access プロジェクト (.adp) とテキスト ファイルの間のテキストを使用できます。 現在の Access データベースにテキスト ファイル内のデータをリンクすることもできます。 リンクしたテキスト ファイルをアクセスを許可する完全なデータをワード プロセッシング プログラムの中に Access でテキスト データを表示できます。 インポート、エクスポート、およびリンクできますテーブルまたは HTML ファイル内のリストに (\*.html)。
 

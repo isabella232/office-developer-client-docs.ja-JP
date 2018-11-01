@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249710(v=office.15)
 ms:contentKeyID: 48546592
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 74d5381298f58c00c66ee4fb72504ce44f5dd7b5
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 18d226ff8ff270705d8e30425f83eabc289383b1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478902"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883247"
 ---
 # <a name="provider-errors"></a>プロバイダー エラー
 
 
-**適用されます**Access 2013 |。Office 2013 
+**適用されます**Access 2013、Office 2013。 
 
 プロバイダー エラーが発生すると、実行時エラー -2147467259 が返されます。このエラーを受け取った場合は、アクティブな **Connection** オブジェクトの、処理の内容を表す 1 つ以上のエラーが含まれる **Errors** コレクションを調べます。
 
@@ -88,7 +88,7 @@ End Function
 <td><p>プロバイダー固有のエラー番号です。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>番号</strong></p></td>
+<td><p><strong>数値</strong></p></td>
 <td><p>発生したエラーに対応する <strong>ErrorValueEnum</strong> の番号を表す長整数です。</p></td>
 </tr>
 <tr class="odd">

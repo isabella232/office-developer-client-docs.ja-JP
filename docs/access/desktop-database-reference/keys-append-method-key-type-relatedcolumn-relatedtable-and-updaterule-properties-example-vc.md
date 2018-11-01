@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: キーの追加方法、キーの種類、RelatedColumn プロパティの使用例 (vc++) TOCTitle: キーの追加方法、キーの種類、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (vc++) === タイトル: キーの追加方法、Key の Type、RelatedColumn プロパティの使用例 (vc++) TOCTitle: キーの追加方法、キーの種類、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (vc++)
->>>>>>> マスターの ms:assetid: d0784eb5-94aa-ef62-c26f-3d0980485990 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250041(v=office.15) ms:contentKeyID: 48547840 ms.date: 2015/09/18 mtps_version: v=office.15
+title: キーの追加方法、キーの種類、RelatedColumn プロパティの使用例 (vc++)
+TOCTitle: Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule properties example (VC++)
+ms:assetid: d0784eb5-94aa-ef62-c26f-3d0980485990
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250041(v=office.15)
+ms:contentKeyID: 48547840
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 9fed89b0ac9600cf5866bfcfac3497c735ca6929
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25890982"
 ---
-
-<<<<<<< ヘッド
-# <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vc"></a>Keys の Append メソッド、および Key の Type、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VC++)
-=======
 # <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vc"></a>キーの追加方法、キーの種類、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次のコードでは、新しい外部キーの作成方法を示します。ここでは、2 つのテーブル (Customers および Orders) が存在することを前提としています。
 

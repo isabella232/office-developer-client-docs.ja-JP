@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835002(v=office.15)
 ms:contentKeyID: 48547940
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a938abb59783f76d5f6c50d35dbd7ea16a989e12
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f0c6df32c37f73dadf1df43201090d44d81a6a01
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476496"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25890947"
 ---
 # <a name="recordset2validationrule-property-dao"></a>Recordset2.ValidationRule プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 テーブルのフィールドを変更するかテーブルにフィールドを追加するときに、フィールド内のデータを検証する値を設定または取得します (Microsoft Access ワークスペースのみ)。値の取得および設定が可能です。文字列型 ( **String**) の値を使用します。
 

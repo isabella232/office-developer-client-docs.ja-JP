@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 並べ替えのプロパティの使用例 (VB) TOCTitle: 並べ替えのプロパティの使用例 (VB) === タイトル: 並べ替えのプロパティの使用例 (VB) TOCTitle: 並べ替えプロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: 6f981e5e-7ee8-e1e7-bea9-7c2081400391 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249440(v=office.15) ms:contentKeyID: 48545539 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Sort プロパティの使用例 (VB)
+TOCTitle: Sort property example (VB)
+ms:assetid: 6f981e5e-7ee8-e1e7-bea9-7c2081400391
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249440(v=office.15)
+ms:contentKeyID: 48545539
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 6bd5f0f894928032e975e8eebe33b18427c5dae1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891255"
 ---
-
-<<<<<<< ヘッド
 # <a name="sort-property-example-vb"></a>Sort プロパティの使用例 (VB)
-=======
-# <a name="sort-property-example-vb"></a>並べ替えプロパティの使用例 (VB)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[レコード セット](recordset-object-ado.md)オブジェクトの[Sort](sort-property-ado.md)プロパティを使用して、 ***Pubs***データベースの***Authors***テーブルから派生した**レコード セット**の行の順序を変更します。 2 次ユーティリティ ルーチンで各行を出力します。
 
