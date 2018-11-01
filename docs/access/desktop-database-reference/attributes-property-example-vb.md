@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="203f7-101"><<<<<<< ヘッド タイトル: 属性のプロパティの使用例 (VB) TOCTitle: 属性のプロパティの使用例 (VB) === タイトル: 属性のプロパティの使用例 (VB) TOCTitle: 属性のプロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="203f7-101"><<<<<<< HEAD title: Attributes Property Example (VB) TOCTitle: Attributes Property Example (VB) ======= title: Attributes property example (VB) TOCTitle: Attributes property example (VB)</span></span>
->>>>>>> <span data-ttu-id="203f7-102">マスターの ms:assetid: bda5e445-6425-5daf-b182-b6f5ea044b04 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249918(v=office.15) ms:contentKeyID: 48547442 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="203f7-102">master ms:assetid: bda5e445-6425-5daf-b182-b6f5ea044b04 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249918(v=office.15) ms:contentKeyID: 48547442 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Attributes プロパティの使用例 (VB)
+TOCTitle: Attributes property example (VB)
+ms:assetid: bda5e445-6425-5daf-b182-b6f5ea044b04
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249918(v=office.15)
+ms:contentKeyID: 48547442
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 1abdb333551e80a8c2b0e8a440aee9c35ca69120
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879257"
 ---
-
-<span data-ttu-id="203f7-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="203f7-103"><<<<<<< HEAD</span></span>
-# <a name="attributes-property-example-vb"></a><span data-ttu-id="203f7-104">Attributes プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="203f7-104">Attributes Property Example (VB)</span></span>
-=======
-# <a name="attributes-property-example-vb"></a><span data-ttu-id="203f7-105">属性プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="203f7-105">Attributes property example (VB)</span></span>
->>>>>>> <span data-ttu-id="203f7-106">master</span><span class="sxs-lookup"><span data-stu-id="203f7-106">master</span></span>
+# <a name="attributes-property-example-vb"></a><span data-ttu-id="db34c-102">Attributes プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="db34c-102">Attributes property example (VB)</span></span>
 
 
-<span data-ttu-id="203f7-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="203f7-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="db34c-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="db34c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="203f7-p101">ここでは、[Column](attributes-property-adox.md) の [Attributes](column-object-adox.md) プロパティの使用例を示します。このプロパティを **adColNullable** に設定すると、 [Recordset](recordset-object-ado.md)[Field](field-object-ado.md) の値に空の文字列を設定できるようになります。この状態で、ユーザーはデータが認識されていないレコードとデータが適用されていないレコードを区別できます。</span><span class="sxs-lookup"><span data-stu-id="203f7-p101">This example demonstrates the [Attributes](attributes-property-adox.md) property of a [Column](column-object-adox.md). Setting it to **adColNullable** allows the user to set the value of a [Recordset](recordset-object-ado.md)[Field](field-object-ado.md) to an empty string. In this situation, the user can distinguish between a record where data is not known and a record where the data does not apply.</span></span>
+<span data-ttu-id="db34c-p101">ここでは、[Column](attributes-property-adox.md) の [Attributes](column-object-adox.md) プロパティの使用例を示します。このプロパティを **adColNullable** に設定すると、 [Recordset](recordset-object-ado.md)[Field](field-object-ado.md) の値に空の文字列を設定できるようになります。この状態で、ユーザーはデータが認識されていないレコードとデータが適用されていないレコードを区別できます。</span><span class="sxs-lookup"><span data-stu-id="db34c-p101">This example demonstrates the [Attributes](attributes-property-adox.md) property of a [Column](column-object-adox.md). Setting it to **adColNullable** allows the user to set the value of a [Recordset](recordset-object-ado.md)[Field](field-object-ado.md) to an empty string. In this situation, the user can distinguish between a record where data is not known and a record where the data does not apply.</span></span>
 
 ```vb 
  

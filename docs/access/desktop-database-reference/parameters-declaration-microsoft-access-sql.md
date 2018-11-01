@@ -12,25 +12,25 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 8ef554aab94bd5771e1df3313d04a4fbe2c383b8
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 24212ce3a29c0e30fae1dad7566ef93815f8a03f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478302"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876779"
 ---
-# <a name="parameters-declaration-microsoft-access-sql"></a><span data-ttu-id="fbf0d-102">PARAMETERS 宣言 (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="fbf0d-102">PARAMETERS Declaration (Microsoft Access SQL)</span></span>
+# <a name="parameters-declaration-microsoft-access-sql"></a><span data-ttu-id="5eabe-102">PARAMETERS 宣言 (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="5eabe-102">PARAMETERS Declaration (Microsoft Access SQL)</span></span>
 
 
-<span data-ttu-id="fbf0d-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="fbf0d-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="5eabe-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="5eabe-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="fbf0d-104">パラメーター クエリの中で使用する各パラメーターの名前とデータ型を宣言します。</span><span class="sxs-lookup"><span data-stu-id="fbf0d-104">Declares the name and data type of each parameter in a parameter query.</span></span>
+<span data-ttu-id="5eabe-104">パラメーター クエリの中で使用する各パラメーターの名前とデータ型を宣言します。</span><span class="sxs-lookup"><span data-stu-id="5eabe-104">Declares the name and data type of each parameter in a parameter query.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="fbf0d-105">構文</span><span class="sxs-lookup"><span data-stu-id="fbf0d-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5eabe-105">構文</span><span class="sxs-lookup"><span data-stu-id="5eabe-105">Syntax</span></span>
 
-<span data-ttu-id="fbf0d-106">パラメーター*名のデータ型* \[、*名前のデータ型* \[、.\]\]</span><span class="sxs-lookup"><span data-stu-id="fbf0d-106">PARAMETERS *name datatype* \[, *name datatype* \[, …\]\]</span></span>
+<span data-ttu-id="5eabe-106">パラメーター*名のデータ型* \[、*名前のデータ型* \[、.\]\]</span><span class="sxs-lookup"><span data-stu-id="5eabe-106">PARAMETERS *name datatype* \[, *name datatype* \[, …\]\]</span></span>
 
-<span data-ttu-id="fbf0d-107">PARAMETERS 宣言には、次の指定項目があります。</span><span class="sxs-lookup"><span data-stu-id="fbf0d-107">The PARAMETERS declaration has these parts:</span></span>
+<span data-ttu-id="5eabe-107">PARAMETERS 宣言には、次の指定項目があります。</span><span class="sxs-lookup"><span data-stu-id="5eabe-107">The PARAMETERS declaration has these parts:</span></span>
 
 <table>
 <colgroup>
@@ -39,36 +39,36 @@ ms.locfileid: "25478302"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="fbf0d-108">指定項目</span><span class="sxs-lookup"><span data-stu-id="fbf0d-108">Part</span></span></p></th>
-<th><p><span data-ttu-id="fbf0d-109">説明</span><span class="sxs-lookup"><span data-stu-id="fbf0d-109">Description</span></span></p></th>
+<th><p><span data-ttu-id="5eabe-108">指定項目</span><span class="sxs-lookup"><span data-stu-id="5eabe-108">Part</span></span></p></th>
+<th><p><span data-ttu-id="5eabe-109">説明</span><span class="sxs-lookup"><span data-stu-id="5eabe-109">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="fbf0d-110"><em>name</em></span><span class="sxs-lookup"><span data-stu-id="fbf0d-110"><em>name</em></span></span></p></td>
-<td><p><span data-ttu-id="fbf0d-111">パラメーターの名前です。</span><span class="sxs-lookup"><span data-stu-id="fbf0d-111">The name of the parameter.</span></span> <span data-ttu-id="fbf0d-112"><strong>パラメーター</strong>オブジェクトの<strong>Name</strong>プロパティに割り当てられており、<strong>パラメーター</strong>コレクション内のこのパラメーターを識別するために使用します。</span><span class="sxs-lookup"><span data-stu-id="fbf0d-112">Assigned to the <strong>Name</strong> property of the <strong>Parameter</strong> object and used to identify this parameter in the <strong>Parameters</strong> collection.</span></span> <span data-ttu-id="fbf0d-113"><em>名</em>は、アプリケーションがクエリを実行中にダイアログ ボックスで表示される文字列として使用できます。</span><span class="sxs-lookup"><span data-stu-id="fbf0d-113">You can use <em>name</em> as a string that is displayed in a dialog box while your application runs the query.</span></span> <span data-ttu-id="fbf0d-114">スペースや句読点を含む文字列を囲む角かっこ () を使用します。</span><span class="sxs-lookup"><span data-stu-id="fbf0d-114">Use brackets ([ ]) to enclose text that contains spaces or punctuation.</span></span> <span data-ttu-id="fbf0d-115">たとえば、[バーゲン プライス] [どの month? を含むレポートを開始する] とは、有効な<em>名前</em>の引数です。</span><span class="sxs-lookup"><span data-stu-id="fbf0d-115">For example, [Low price] and [Begin report with which month?] are valid <em>name</em> arguments.</span></span></p></td>
+<td><p><span data-ttu-id="5eabe-110"><em>name</em></span><span class="sxs-lookup"><span data-stu-id="5eabe-110"><em>name</em></span></span></p></td>
+<td><p><span data-ttu-id="5eabe-111">パラメーターの名前です。</span><span class="sxs-lookup"><span data-stu-id="5eabe-111">The name of the parameter.</span></span> <span data-ttu-id="5eabe-112"><strong>パラメーター</strong>オブジェクトの<strong>Name</strong>プロパティに割り当てられており、<strong>パラメーター</strong>コレクション内のこのパラメーターを識別するために使用します。</span><span class="sxs-lookup"><span data-stu-id="5eabe-112">Assigned to the <strong>Name</strong> property of the <strong>Parameter</strong> object and used to identify this parameter in the <strong>Parameters</strong> collection.</span></span> <span data-ttu-id="5eabe-113"><em>名</em>は、アプリケーションがクエリを実行中にダイアログ ボックスで表示される文字列として使用できます。</span><span class="sxs-lookup"><span data-stu-id="5eabe-113">You can use <em>name</em> as a string that is displayed in a dialog box while your application runs the query.</span></span> <span data-ttu-id="5eabe-114">スペースや句読点を含む文字列を囲む角かっこ () を使用します。</span><span class="sxs-lookup"><span data-stu-id="5eabe-114">Use brackets ([ ]) to enclose text that contains spaces or punctuation.</span></span> <span data-ttu-id="5eabe-115">たとえば、[バーゲン プライス] [どの month? を含むレポートを開始する] とは、有効な<em>名前</em>の引数です。</span><span class="sxs-lookup"><span data-stu-id="5eabe-115">For example, [Low price] and [Begin report with which month?] are valid <em>name</em> arguments.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="fbf0d-116"><em>datatype</em></span><span class="sxs-lookup"><span data-stu-id="fbf0d-116"><em>datatype</em></span></span></p></td>
-<td><p><span data-ttu-id="fbf0d-117"><a href="sql-data-types.md">Microsoft Access SQL データ型</a>の 1 つ、またはその別名のうちの 1 つを指定します。</span><span class="sxs-lookup"><span data-stu-id="fbf0d-117">One of the primary <a href="sql-data-types.md">Microsoft Access SQL data types</a> or their synonyms.</span></span></p></td>
+<td><p><span data-ttu-id="5eabe-116"><em>datatype</em></span><span class="sxs-lookup"><span data-stu-id="5eabe-116"><em>datatype</em></span></span></p></td>
+<td><p><span data-ttu-id="5eabe-117"><a href="sql-data-types.md">Microsoft Access SQL データ型</a>の 1 つ、またはその別名のうちの 1 つを指定します。</span><span class="sxs-lookup"><span data-stu-id="5eabe-117">One of the primary <a href="sql-data-types.md">Microsoft Access SQL data types</a> or their synonyms.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="fbf0d-118">解説</span><span class="sxs-lookup"><span data-stu-id="fbf0d-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5eabe-118">解説</span><span class="sxs-lookup"><span data-stu-id="5eabe-118">Remarks</span></span>
 
-<span data-ttu-id="fbf0d-p102">定期的に実行するクエリは、PARAMETERS 宣言を使用してパラメーター クエリにすると便利です。パラメーター クエリを使用すると、クエリの抽出条件の変更作業を自動化できます。パラメーター クエリでは、クエリを実行するたびにコードからパラメーターを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fbf0d-p102">For queries that you run regularly, you can use a PARAMETERS declaration to create a parameter query. A parameter query can help automate the process of changing query criteria. With a parameter query, your code will need to provide the parameters each time the query is run.</span></span>
+<span data-ttu-id="5eabe-p102">定期的に実行するクエリは、PARAMETERS 宣言を使用してパラメーター クエリにすると便利です。パラメーター クエリを使用すると、クエリの抽出条件の変更作業を自動化できます。パラメーター クエリでは、クエリを実行するたびにコードからパラメーターを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5eabe-p102">For queries that you run regularly, you can use a PARAMETERS declaration to create a parameter query. A parameter query can help automate the process of changing query criteria. With a parameter query, your code will need to provide the parameters each time the query is run.</span></span>
 
-<span data-ttu-id="fbf0d-122">PARAMETERS 宣言は省略可能ですが、指定する場合は [SELECT](select-statement-microsoft-access-sql.md) ステートメントなどの他のステートメントよりも前に記述します。</span><span class="sxs-lookup"><span data-stu-id="fbf0d-122">The PARAMETERS declaration is optional but when included precedes any other statement, including [SELECT](select-statement-microsoft-access-sql.md).</span></span>
+<span data-ttu-id="5eabe-122">PARAMETERS 宣言は省略可能ですが、指定する場合は [SELECT](select-statement-microsoft-access-sql.md) ステートメントなどの他のステートメントよりも前に記述します。</span><span class="sxs-lookup"><span data-stu-id="5eabe-122">The PARAMETERS declaration is optional but when included precedes any other statement, including [SELECT](select-statement-microsoft-access-sql.md).</span></span>
 
-<span data-ttu-id="fbf0d-p103">この宣言で複数のパラメーターを指定する場合は、パラメーターとパラメーターの間をコンマで区切ります。次の例では、パラメーターを 2 つ指定しています。</span><span class="sxs-lookup"><span data-stu-id="fbf0d-p103">If the declaration includes more than one parameter, separate them with commas. The following example includes two parameters:</span></span>
+<span data-ttu-id="5eabe-p103">この宣言で複数のパラメーターを指定する場合は、パラメーターとパラメーターの間をコンマで区切ります。次の例では、パラメーターを 2 つ指定しています。</span><span class="sxs-lookup"><span data-stu-id="5eabe-p103">If the declaration includes more than one parameter, separate them with commas. The following example includes two parameters:</span></span>
 
 ```sql
 PARAMETERS [Low price] Currency, [Beginning date] DateTime;
 ```
 
-<span data-ttu-id="fbf0d-125">[場所](https://msdn.microsoft.com/library/ff195245\(v=office.15\))または[HAVING](https://msdn.microsoft.com/library/ff193795\(v=office.15\))句の中では、*データ型*ではないですが、*名前*を使用できます。</span><span class="sxs-lookup"><span data-stu-id="fbf0d-125">You can use *name* but not *datatype* in a [WHERE](https://msdn.microsoft.com/library/ff195245\(v=office.15\)) or [HAVING](https://msdn.microsoft.com/library/ff193795\(v=office.15\)) clause.</span></span> <span data-ttu-id="fbf0d-126">次の例では、ユーザーに 2 つのパラメーターの入力を求め、取得した抽出条件を Orders テーブルのレコードに適用します。</span><span class="sxs-lookup"><span data-stu-id="fbf0d-126">The following example expects two parameters to be provided and then applies the criteria to records in the Orders table:</span></span>
+<span data-ttu-id="5eabe-125">[場所](https://msdn.microsoft.com/library/ff195245\(v=office.15\))または[HAVING](https://msdn.microsoft.com/library/ff193795\(v=office.15\))句の中では、*データ型*ではないですが、*名前*を使用できます。</span><span class="sxs-lookup"><span data-stu-id="5eabe-125">You can use *name* but not *datatype* in a [WHERE](https://msdn.microsoft.com/library/ff195245\(v=office.15\)) or [HAVING](https://msdn.microsoft.com/library/ff193795\(v=office.15\)) clause.</span></span> <span data-ttu-id="5eabe-126">次の例では、ユーザーに 2 つのパラメーターの入力を求め、取得した抽出条件を Orders テーブルのレコードに適用します。</span><span class="sxs-lookup"><span data-stu-id="5eabe-126">The following example expects two parameters to be provided and then applies the criteria to records in the Orders table:</span></span>
 
 ```sql
 PARAMETERS [Low price] Currency, 
@@ -79,11 +79,11 @@ WHERE OrderAmount > [Low price]
 AND OrderDate >= [Beginning date];
 ```
 
-## <a name="example"></a><span data-ttu-id="fbf0d-127">使用例</span><span class="sxs-lookup"><span data-stu-id="fbf0d-127">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5eabe-127">使用例</span><span class="sxs-lookup"><span data-stu-id="5eabe-127">Example</span></span>
 
-<span data-ttu-id="fbf0d-128">次の例では、ユーザーに役職の入力を求め、その役職をクエリの抽出条件として使用します。</span><span class="sxs-lookup"><span data-stu-id="fbf0d-128">This example requires the user to provide a job title and then uses that job title as the criteria for the query.</span></span>
+<span data-ttu-id="5eabe-128">次の例では、ユーザーに役職の入力を求め、その役職をクエリの抽出条件として使用します。</span><span class="sxs-lookup"><span data-stu-id="5eabe-128">This example requires the user to provide a job title and then uses that job title as the criteria for the query.</span></span>
 
-<span data-ttu-id="fbf0d-129">この例では、EnumFields プロシージャを呼び出します。EnumFields プロシージャについては、[SELECT ステートメント](select-statement-microsoft-access-sql.md)の使用例を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fbf0d-129">This example calls the EnumFields procedure, which you can find in the [SELECT statement](select-statement-microsoft-access-sql.md) example.</span></span>
+<span data-ttu-id="5eabe-129">この例では、EnumFields プロシージャを呼び出します。EnumFields プロシージャについては、[SELECT ステートメント](select-statement-microsoft-access-sql.md)の使用例を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5eabe-129">This example calls the EnumFields procedure, which you can find in the [SELECT statement](select-statement-microsoft-access-sql.md) example.</span></span>
 
 ```vb
     Sub ParametersX() 

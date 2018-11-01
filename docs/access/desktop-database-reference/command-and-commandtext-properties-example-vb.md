@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="6179b-101"><<<<<<< ヘッド タイトル: コマンドと CommandText プロパティの使用例 (VB) TOCTitle: コマンドと CommandText プロパティの使用例 (VB) === タイトル: コマンドと CommandText プロパティの使用例 (VB) TOCTitle: コマンドと CommandTextプロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="6179b-101"><<<<<<< HEAD title: Command and CommandText Properties Example (VB) TOCTitle: Command and CommandText Properties Example (VB) ======= title: Command and CommandText properties example (VB) TOCTitle: Command and CommandText properties example (VB)</span></span>
->>>>>>> <span data-ttu-id="6179b-102">マスターの ms:assetid: 6bf35604-401b-0727-85e8-ac2ecda368df ms:mtpsurl: https://msdn.microsoft.com/library/JJ249425(v=office.15) ms:contentKeyID: 48545462 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="6179b-102">master ms:assetid: 6bf35604-401b-0727-85e8-ac2ecda368df ms:mtpsurl: https://msdn.microsoft.com/library/JJ249425(v=office.15) ms:contentKeyID: 48545462 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Command プロパティと CommandText プロパティの使用例 (VB)
+TOCTitle: Command and CommandText properties example (VB)
+ms:assetid: 6bf35604-401b-0727-85e8-ac2ecda368df
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249425(v=office.15)
+ms:contentKeyID: 48545462
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: e19ac7517e548f1594c0b525671e6aff66eef72c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25888511"
 ---
-
-<span data-ttu-id="6179b-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="6179b-103"><<<<<<< HEAD</span></span>
-# <a name="command-and-commandtext-properties-example-vb"></a><span data-ttu-id="6179b-104">Command プロパティと CommandText プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="6179b-104">Command and CommandText Properties Example (VB)</span></span>
-=======
-# <a name="command-and-commandtext-properties-example-vb"></a><span data-ttu-id="6179b-105">コマンドと CommandText プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="6179b-105">Command and CommandText properties example (VB)</span></span>
->>>>>>> <span data-ttu-id="6179b-106">master</span><span class="sxs-lookup"><span data-stu-id="6179b-106">master</span></span>
+# <a name="command-and-commandtext-properties-example-vb"></a><span data-ttu-id="c5be2-102">Command プロパティと CommandText プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="c5be2-102">Command and CommandText properties example (VB)</span></span>
 
 
-<span data-ttu-id="6179b-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="6179b-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="c5be2-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c5be2-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="6179b-108">次のコードは、プロシージャのテキストを更新するための [Command](command-property-adox.md) プロパティの使用例を示しています。</span><span class="sxs-lookup"><span data-stu-id="6179b-108">The following code demonstrates how to use the [Command](command-property-adox.md) property to update the text of a procedure.</span></span>
+<span data-ttu-id="c5be2-104">次のコードは、プロシージャのテキストを更新するための [Command](command-property-adox.md) プロパティの使用例を示しています。</span><span class="sxs-lookup"><span data-stu-id="c5be2-104">The following code demonstrates how to use the [Command](command-property-adox.md) property to update the text of a procedure.</span></span>
 
 ```vb 
  

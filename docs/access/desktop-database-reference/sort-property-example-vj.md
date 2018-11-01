@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="1c3f2-101"><<<<<<< ヘッド タイトル: 並べ替えのプロパティの使用例 (vj++) TOCTitle: 並べ替えプロパティの使用例 (vj++) === タイトル: 並べ替えのプロパティの使用例 (vj++) TOCTitle: 並べ替えのプロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="1c3f2-101"><<<<<<< HEAD title: Sort Property Example (VJ++) TOCTitle: Sort Property Example (VJ++) ======= title: Sort property example (VJ++) TOCTitle: Sort property example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="1c3f2-102">マスターの ms:assetid: 29f34b9d-a75a-baa3-2505-ebd70e71950f ms:mtpsurl: https://msdn.microsoft.com/library/JJ249051(v=office.15) ms:contentKeyID: 48543896 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="1c3f2-102">master ms:assetid: 29f34b9d-a75a-baa3-2505-ebd70e71950f ms:mtpsurl: https://msdn.microsoft.com/library/JJ249051(v=office.15) ms:contentKeyID: 48543896 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Sort プロパティの使用例 (VJ++)
+TOCTitle: Sort property example (VJ++)
+ms:assetid: 29f34b9d-a75a-baa3-2505-ebd70e71950f
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249051(v=office.15)
+ms:contentKeyID: 48543896
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 9ea7dd3ee87b3e7ff2d06a6f6cf14d9195216f42
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872082"
 ---
-
-<span data-ttu-id="1c3f2-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="1c3f2-103"><<<<<<< HEAD</span></span>
-# <a name="sort-property-example-vj"></a><span data-ttu-id="1c3f2-104">Sort プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="1c3f2-104">Sort Property Example (VJ++)</span></span>
-=======
-# <a name="sort-property-example-vj"></a><span data-ttu-id="1c3f2-105">並べ替えプロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="1c3f2-105">Sort property example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="1c3f2-106">master</span><span class="sxs-lookup"><span data-stu-id="1c3f2-106">master</span></span>
+# <a name="sort-property-example-vj"></a><span data-ttu-id="61266-102">Sort プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="61266-102">Sort property example (VJ++)</span></span>
 
 
-<span data-ttu-id="1c3f2-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="1c3f2-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="61266-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="61266-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="1c3f2-108">この例では、[レコード セット](recordset-object-ado.md)オブジェクトの[Sort](sort-property-ado.md)プロパティを使用して、 ***Pubs***データベースの***Authors***テーブルから派生した**レコード セット**の行の順序を変更します。</span><span class="sxs-lookup"><span data-stu-id="1c3f2-108">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the ***Pubs*** database.</span></span> <span data-ttu-id="1c3f2-109">2 次ユーティリティ ルーチンで各行を出力します。</span><span class="sxs-lookup"><span data-stu-id="1c3f2-109">A secondary utility routine prints each row.</span></span>
+<span data-ttu-id="61266-104">この例では、[レコード セット](recordset-object-ado.md)オブジェクトの[Sort](sort-property-ado.md)プロパティを使用して、 ***Pubs***データベースの***Authors***テーブルから派生した**レコード セット**の行の順序を変更します。</span><span class="sxs-lookup"><span data-stu-id="61266-104">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the ***Pubs*** database.</span></span> <span data-ttu-id="61266-105">2 次ユーティリティ ルーチンで各行を出力します。</span><span class="sxs-lookup"><span data-stu-id="61266-105">A secondary utility routine prints each row.</span></span>
 
 ```java 
  

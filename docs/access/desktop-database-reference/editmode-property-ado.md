@@ -1,37 +1,39 @@
 ---
-<span data-ttu-id="3aa7b-101"><<<<<<< ヘッド タイトル: EditMode プロパティ (ADO) TOCTitle: EditMode プロパティ (ADO) === タイトル: EditMode プロパティ (ADO) TOCTitle: EditMode プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="3aa7b-101"><<<<<<< HEAD title: EditMode Property (ADO) TOCTitle: EditMode Property (ADO) ======= title: EditMode property (ADO) TOCTitle: EditMode property (ADO)</span></span>
->>>>>>> <span data-ttu-id="3aa7b-102">マスターの ms:assetid: 28ca8f14-abee-ad20-9c16-11bb36b487e4 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249045(v=office.15) ms:contentKeyID: 48543867 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="3aa7b-102">master ms:assetid: 28ca8f14-abee-ad20-9c16-11bb36b487e4 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249045(v=office.15) ms:contentKeyID: 48543867 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: EditMode プロパティ (ADO)
+TOCTitle: EditMode property (ADO)
+ms:assetid: 28ca8f14-abee-ad20-9c16-11bb36b487e4
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249045(v=office.15)
+ms:contentKeyID: 48543867
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 4c859d85dc62e09a1fd21af11deaca5d0f2e8b85
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867350"
 ---
-
-<span data-ttu-id="3aa7b-103"><<<<<<< 見出し</span><span class="sxs-lookup"><span data-stu-id="3aa7b-103"><<<<<<< HEAD</span></span>
-# <a name="editmode-property-ado"></a><span data-ttu-id="3aa7b-104">EditMode プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="3aa7b-104">EditMode Property (ADO)</span></span>
-=======
-# <a name="editmode-property-ado"></a><span data-ttu-id="3aa7b-105">EditMode プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="3aa7b-105">EditMode property (ADO)</span></span>
->>>>>>> <span data-ttu-id="3aa7b-106">master</span><span class="sxs-lookup"><span data-stu-id="3aa7b-106">master</span></span>
+# <a name="editmode-property-ado"></a><span data-ttu-id="60e20-102">EditMode プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="60e20-102">EditMode property (ADO)</span></span>
 
 
-<span data-ttu-id="3aa7b-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="3aa7b-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="60e20-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="60e20-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="3aa7b-108">現在のレコードの編集ステータスを示します。</span><span class="sxs-lookup"><span data-stu-id="3aa7b-108">Indicates the editing status of the current record.</span></span>
+<span data-ttu-id="60e20-104">現在のレコードの編集ステータスを示します。</span><span class="sxs-lookup"><span data-stu-id="60e20-104">Indicates the editing status of the current record.</span></span>
 
-<span data-ttu-id="3aa7b-109"><<<<<<< 見出し</span><span class="sxs-lookup"><span data-stu-id="3aa7b-109"><<<<<<< HEAD</span></span>
-## <a name="return-value"></a><span data-ttu-id="3aa7b-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="3aa7b-110">Return Value</span></span>
-=======
-## <a name="return-value"></a><span data-ttu-id="3aa7b-111">戻り値</span><span class="sxs-lookup"><span data-stu-id="3aa7b-111">Return value</span></span>
->>>>>>> <span data-ttu-id="3aa7b-112">master</span><span class="sxs-lookup"><span data-stu-id="3aa7b-112">master</span></span>
+## <a name="return-value"></a><span data-ttu-id="60e20-105">戻り値</span><span class="sxs-lookup"><span data-stu-id="60e20-105">Return value</span></span>
 
-<span data-ttu-id="3aa7b-113">[EditModeEnum](editmodeenum.md) 値を返します。</span><span class="sxs-lookup"><span data-stu-id="3aa7b-113">Returns an [EditModeEnum](editmodeenum.md) value.</span></span>
+<span data-ttu-id="60e20-106">[EditModeEnum](editmodeenum.md) 値を返します。</span><span class="sxs-lookup"><span data-stu-id="60e20-106">Returns an [EditModeEnum](editmodeenum.md) value.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="3aa7b-114">解説</span><span class="sxs-lookup"><span data-stu-id="3aa7b-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="60e20-107">解説</span><span class="sxs-lookup"><span data-stu-id="60e20-107">Remarks</span></span>
 
-<span data-ttu-id="3aa7b-p101">ADO は、現在のレコードに関連付けられた編集バッファーを保持します。このプロパティは、このバッファーに対して変更が加えられたかどうか、または新しいレコードが作成されたかどうかを示します。現在のレコードの編集状態を調べるには、 **EditMode** プロパティを使います。編集プロセスが中断された場合に保留中の変更があるかどうかを確認して、 [Update](update-method-ado.md) メソッドまたは [CancelUpdate](cancelupdate-method-ado.md) メソッドを使用する必要があるかどうかを判定できます。</span><span class="sxs-lookup"><span data-stu-id="3aa7b-p101">ADO maintains an editing buffer associated with the current record. This property indicates whether changes have been made to this buffer, or whether a new record has been created. Use the **EditMode** property to determine the editing status of the current record. You can test for pending changes if an editing process has been interrupted and determine whether you need to use the [Update](update-method-ado.md) or [CancelUpdate](cancelupdate-method-ado.md) method.</span></span>
+<span data-ttu-id="60e20-p101">ADO は、現在のレコードに関連付けられた編集バッファーを保持します。このプロパティは、このバッファーに対して変更が加えられたかどうか、または新しいレコードが作成されたかどうかを示します。現在のレコードの編集状態を調べるには、 **EditMode** プロパティを使います。編集プロセスが中断された場合に保留中の変更があるかどうかを確認して、 [Update](update-method-ado.md) メソッドまたは [CancelUpdate](cancelupdate-method-ado.md) メソッドを使用する必要があるかどうかを判定できます。</span><span class="sxs-lookup"><span data-stu-id="60e20-p101">ADO maintains an editing buffer associated with the current record. This property indicates whether changes have been made to this buffer, or whether a new record has been created. Use the **EditMode** property to determine the editing status of the current record. You can test for pending changes if an editing process has been interrupted and determine whether you need to use the [Update](update-method-ado.md) or [CancelUpdate](cancelupdate-method-ado.md) method.</span></span>
 
-<span data-ttu-id="3aa7b-119">さまざまな編集条件における [EditMode](addnew-method-ado.md) プロパティの詳細については、「 **AddNew メソッド (ADO)**」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3aa7b-119">See the [AddNew](addnew-method-ado.md) method for a more detailed description of the **EditMode** property under different editing conditions.</span></span>
+<span data-ttu-id="60e20-112">さまざまな編集条件における [EditMode](addnew-method-ado.md) プロパティの詳細については、「 **AddNew メソッド (ADO)**」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="60e20-112">See the [AddNew](addnew-method-ado.md) method for a more detailed description of the **EditMode** property under different editing conditions.</span></span>
 
-<span data-ttu-id="3aa7b-120">[削除](delete-method-ado-recordset.md)する呼び出しが正常にレコードは削除、またはデータのレコードでは、[レコード セット](recordset-object-ado.md)を (参照整合性違反など) のためにソースと編集モードのまま (**EditMode** = **adEditInProgress**).</span><span class="sxs-lookup"><span data-stu-id="3aa7b-120">When a call to [Delete](delete-method-ado-recordset.md) does not successfully delete the record or records in the data source (due to referential integrity violations, for example), the [Recordset](recordset-object-ado.md) will remain in edit mode (**EditMode** = **adEditInProgress**).</span></span> <span data-ttu-id="3aa7b-121">これは、(たとえば **Move**、[NextRecordset](move-method-ado.md)、または [Close](nextrecordset-method-ado.md) などを使って) 現在のレコードから移動する前に [CancelUpdate](close-method-ado.md) メソッドを呼び出す必要があることを意味します。</span><span class="sxs-lookup"><span data-stu-id="3aa7b-121">This means that **CancelUpdate** must be called before moving off the current record (with [Move](move-method-ado.md), [NextRecordset](nextrecordset-method-ado.md), or [Close](close-method-ado.md), for example).</span></span>
+<span data-ttu-id="60e20-113">[削除](delete-method-ado-recordset.md)する呼び出しが正常にレコードは削除、またはデータのレコードでは、[レコード セット](recordset-object-ado.md)を (参照整合性違反など) のためにソースと編集モードのまま (**EditMode** = **adEditInProgress**).</span><span class="sxs-lookup"><span data-stu-id="60e20-113">When a call to [Delete](delete-method-ado-recordset.md) does not successfully delete the record or records in the data source (due to referential integrity violations, for example), the [Recordset](recordset-object-ado.md) will remain in edit mode (**EditMode** = **adEditInProgress**).</span></span> <span data-ttu-id="60e20-114">これは、(たとえば **Move**、[NextRecordset](move-method-ado.md)、または [Close](nextrecordset-method-ado.md) などを使って) 現在のレコードから移動する前に [CancelUpdate](close-method-ado.md) メソッドを呼び出す必要があることを意味します。</span><span class="sxs-lookup"><span data-stu-id="60e20-114">This means that **CancelUpdate** must be called before moving off the current record (with [Move](move-method-ado.md), [NextRecordset](nextrecordset-method-ado.md), or [Close](close-method-ado.md), for example).</span></span>
 
 
 > [!NOTE]
-> <span data-ttu-id="3aa7b-p103">[!メモ] **EditMode** では現在のレコードがないと有効な値は返されません。 **EditMode** では、 [BOF または EOF](bof-eof-properties-ado.md) が TRUE の場合、または現在のレコードが削除されている場合にエラーが返されます。</span><span class="sxs-lookup"><span data-stu-id="3aa7b-p103">**EditMode** can return a valid value only if there is a current record. **EditMode** will return an error if [BOF or EOF](bof-eof-properties-ado.md) is true, or if the current record has been deleted.</span></span>
+> <span data-ttu-id="60e20-p103">[!メモ] **EditMode** では現在のレコードがないと有効な値は返されません。 **EditMode** では、 [BOF または EOF](bof-eof-properties-ado.md) が TRUE の場合、または現在のレコードが削除されている場合にエラーが返されます。</span><span class="sxs-lookup"><span data-stu-id="60e20-p103">**EditMode** can return a valid value only if there is a current record. **EditMode** will return an error if [BOF or EOF](bof-eof-properties-ado.md) is true, or if the current record has been deleted.</span></span>
 
 

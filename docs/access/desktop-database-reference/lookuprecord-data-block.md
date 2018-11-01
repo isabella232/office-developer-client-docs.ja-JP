@@ -6,25 +6,25 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195882(v=office.15)
 ms:contentKeyID: 48545671
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: dd0db6e818ab79fc124760509d07d60b954d49e5
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 3bd9a687d7f74b99dc20ee079f970c37ba627f31
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478291"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25877689"
 ---
-# <a name="lookuprecord-data-block"></a><span data-ttu-id="9a90d-102">LookupRecord データ ブロック</span><span class="sxs-lookup"><span data-stu-id="9a90d-102">LookupRecord Data Block</span></span>
+# <a name="lookuprecord-data-block"></a><span data-ttu-id="5375d-102">LookupRecord データ ブロック</span><span class="sxs-lookup"><span data-stu-id="5375d-102">LookupRecord Data Block</span></span>
 
-<span data-ttu-id="9a90d-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="9a90d-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="5375d-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="5375d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="9a90d-104">**LookupRecord** データ ブロックは、特定のレコードに対して一連のアクションを実行します。</span><span class="sxs-lookup"><span data-stu-id="9a90d-104">A **LookupRecord** data block performs a set of actions on a specific record.</span></span>
+<span data-ttu-id="5375d-104">**LookupRecord** データ ブロックは、特定のレコードに対して一連のアクションを実行します。</span><span class="sxs-lookup"><span data-stu-id="5375d-104">A **LookupRecord** data block performs a set of actions on a specific record.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="9a90d-105">[!メモ] **LookupRecord** データ ブロックは、データ マクロでのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="9a90d-105">The **LookupRecord** data block is available only in Data Macros.</span></span>
+> <span data-ttu-id="5375d-105">[!メモ] **LookupRecord** データ ブロックは、データ マクロでのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="5375d-105">The **LookupRecord** data block is available only in Data Macros.</span></span>
 
-## <a name="setting"></a><span data-ttu-id="9a90d-106">設定</span><span class="sxs-lookup"><span data-stu-id="9a90d-106">Setting</span></span>
+## <a name="setting"></a><span data-ttu-id="5375d-106">設定</span><span class="sxs-lookup"><span data-stu-id="5375d-106">Setting</span></span>
 
-<span data-ttu-id="9a90d-107">**LookupRecord** アクションの引数は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="9a90d-107">The **SetField** action has the following arguments.</span></span>
+<span data-ttu-id="5375d-107">**LookupRecord** アクションの引数は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="5375d-107">The **SetField** action has the following arguments.</span></span>
 
 <table>
 <colgroup>
@@ -34,46 +34,46 @@ ms.locfileid: "25478291"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="9a90d-108">引数</span><span class="sxs-lookup"><span data-stu-id="9a90d-108">Argument</span></span></p></th>
-<th><p><span data-ttu-id="9a90d-109">必須</span><span class="sxs-lookup"><span data-stu-id="9a90d-109">Required</span></span></p></th>
-<th><p><span data-ttu-id="9a90d-110">説明</span><span class="sxs-lookup"><span data-stu-id="9a90d-110">Description</span></span></p></th>
+<th><p><span data-ttu-id="5375d-108">引数</span><span class="sxs-lookup"><span data-stu-id="5375d-108">Argument</span></span></p></th>
+<th><p><span data-ttu-id="5375d-109">必須</span><span class="sxs-lookup"><span data-stu-id="5375d-109">Required</span></span></p></th>
+<th><p><span data-ttu-id="5375d-110">説明</span><span class="sxs-lookup"><span data-stu-id="5375d-110">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="9a90d-111">In</span><span class="sxs-lookup"><span data-stu-id="9a90d-111">In</span></span></p></td>
-<td><p><span data-ttu-id="9a90d-112">はい</span><span class="sxs-lookup"><span data-stu-id="9a90d-112">Yes</span></span></p></td>
-<td><p><span data-ttu-id="9a90d-113">操作対象のレコードを識別する文字列です。</span><span class="sxs-lookup"><span data-stu-id="9a90d-113">A string that identifies the record to operate on.</span></span> <span data-ttu-id="9a90d-114"><em></em>引数は、テーブル、選択クエリ、または SQL ステートメントの名前を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="9a90d-114">The <em>In</em> argument can contain the name of the table, a select query, or a SQL statement.</span></span></p>
+<td><p><span data-ttu-id="5375d-111">In</span><span class="sxs-lookup"><span data-stu-id="5375d-111">In</span></span></p></td>
+<td><p><span data-ttu-id="5375d-112">はい</span><span class="sxs-lookup"><span data-stu-id="5375d-112">Yes</span></span></p></td>
+<td><p><span data-ttu-id="5375d-113">操作対象のレコードを識別する文字列です。</span><span class="sxs-lookup"><span data-stu-id="5375d-113">A string that identifies the record to operate on.</span></span> <span data-ttu-id="5375d-114"><em></em>引数は、テーブル、選択クエリ、または SQL ステートメントの名前を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="5375d-114">The <em>In</em> argument can contain the name of the table, a select query, or a SQL statement.</span></span></p>
 
 > [!NOTE]
-> <span data-ttu-id="9a90d-115">指定したレコードには、リンク テーブルまたは ODBC データ ソース内のデータを含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="9a90d-115">The specified record cannot include data stored in a linked table or ODBC data source.</span></span>
+> <span data-ttu-id="5375d-115">指定したレコードには、リンク テーブルまたは ODBC データ ソース内のデータを含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="5375d-115">The specified record cannot include data stored in a linked table or ODBC data source.</span></span>
 
 
 <p></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="9a90d-116">Where Condition/Where 条件式</span><span class="sxs-lookup"><span data-stu-id="9a90d-116">Where Condition</span></span></p></td>
-<td><p><span data-ttu-id="9a90d-117">いいえ</span><span class="sxs-lookup"><span data-stu-id="9a90d-117">No</span></span></p></td>
-<td><p><span data-ttu-id="9a90d-p102"><strong>LookupRecord</strong> データ ブロックを適用するデータの範囲を制限するための文字列式を指定します。たとえば、多くの場合、抽出条件は SQL 式の WHERE 句と同じ役割を果たします (ただし WHERE という語は使用しません)。抽出条件を省略すると、<strong>LookupRecord</strong> データ ブロックは <em>In</em> 引数で指定したドメイン全体に適用されます。抽出条件に含めるフィールドは、<em>In</em> にも含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="9a90d-p102">A string expression used to restrict the range of data on which the <strong>LookupRecord</strong> data block is performed. For example, criteria are often equivalent to the WHERE clause in an SQL expression, without the word WHERE. If criteria are omitted, the <strong>LookupRecord</strong> data block operates on the entire domain specified by the <em>In</em> argument. Any field that is included in criteria must also be a field in <em>In</em>.</span></span></p></td>
+<td><p><span data-ttu-id="5375d-116">Where Condition/Where 条件式</span><span class="sxs-lookup"><span data-stu-id="5375d-116">Where Condition</span></span></p></td>
+<td><p><span data-ttu-id="5375d-117">いいえ</span><span class="sxs-lookup"><span data-stu-id="5375d-117">No</span></span></p></td>
+<td><p><span data-ttu-id="5375d-p102"><strong>LookupRecord</strong> データ ブロックを適用するデータの範囲を制限するための文字列式を指定します。たとえば、多くの場合、抽出条件は SQL 式の WHERE 句と同じ役割を果たします (ただし WHERE という語は使用しません)。抽出条件を省略すると、<strong>LookupRecord</strong> データ ブロックは <em>In</em> 引数で指定したドメイン全体に適用されます。抽出条件に含めるフィールドは、<em>In</em> にも含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="5375d-p102">A string expression used to restrict the range of data on which the <strong>LookupRecord</strong> data block is performed. For example, criteria are often equivalent to the WHERE clause in an SQL expression, without the word WHERE. If criteria are omitted, the <strong>LookupRecord</strong> data block operates on the entire domain specified by the <em>In</em> argument. Any field that is included in criteria must also be a field in <em>In</em>.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="9a90d-122">エイリアス</span><span class="sxs-lookup"><span data-stu-id="9a90d-122">Alias</span></span></p></td>
-<td><p><span data-ttu-id="9a90d-123">いいえ</span><span class="sxs-lookup"><span data-stu-id="9a90d-123">No</span></span></p></td>
-<td><p><span data-ttu-id="9a90d-124"><em></em>引数で指定されたレコードに別の名前を提供する文字列です。</span><span class="sxs-lookup"><span data-stu-id="9a90d-124">A string that provides an alternative name for the record specified by the <em>In</em> argument.</span></span> <span data-ttu-id="9a90d-125">あいまいな参照を防ぐへの参照のテーブル名を短くには、よく使用されます。</span><span class="sxs-lookup"><span data-stu-id="9a90d-125">Often used to shorten the table name for subsequent references to prevent possible ambiguous references.</span></span> <span data-ttu-id="9a90d-126"><em>エイリアス</em>が指定されていない場合、テーブルまたはクエリの名前がエイリアスとして使用します。</span><span class="sxs-lookup"><span data-stu-id="9a90d-126">If <em>Alias</em> is not specified, the table or query name will be used as the alias.</span></span></p></td>
+<td><p><span data-ttu-id="5375d-122">エイリアス</span><span class="sxs-lookup"><span data-stu-id="5375d-122">Alias</span></span></p></td>
+<td><p><span data-ttu-id="5375d-123">いいえ</span><span class="sxs-lookup"><span data-stu-id="5375d-123">No</span></span></p></td>
+<td><p><span data-ttu-id="5375d-124"><em></em>引数で指定されたレコードに別の名前を提供する文字列です。</span><span class="sxs-lookup"><span data-stu-id="5375d-124">A string that provides an alternative name for the record specified by the <em>In</em> argument.</span></span> <span data-ttu-id="5375d-125">あいまいな参照を防ぐへの参照のテーブル名を短くには、よく使用されます。</span><span class="sxs-lookup"><span data-stu-id="5375d-125">Often used to shorten the table name for subsequent references to prevent possible ambiguous references.</span></span> <span data-ttu-id="5375d-126"><em>エイリアス</em>が指定されていない場合、テーブルまたはクエリの名前がエイリアスとして使用します。</span><span class="sxs-lookup"><span data-stu-id="5375d-126">If <em>Alias</em> is not specified, the table or query name will be used as the alias.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="9a90d-127">備考</span><span class="sxs-lookup"><span data-stu-id="9a90d-127">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5375d-127">備考</span><span class="sxs-lookup"><span data-stu-id="5375d-127">Remarks</span></span>
 
-<span data-ttu-id="9a90d-128">\*\* *条件*引数で指定した抽出条件は、複数のレコードを指定する場合、**不一致**のデータ ブロック、最初のレコードにのみ動作します。</span><span class="sxs-lookup"><span data-stu-id="9a90d-128">If the criteria specified by the *In* and *Where Condition* arguments specifies more than one record, the **LookupRecord** data block will operate only on the first record.</span></span>
+<span data-ttu-id="5375d-128">\*\* *条件*引数で指定した抽出条件は、複数のレコードを指定する場合、**不一致**のデータ ブロック、最初のレコードにのみ動作します。</span><span class="sxs-lookup"><span data-stu-id="5375d-128">If the criteria specified by the *In* and *Where Condition* arguments specifies more than one record, the **LookupRecord** data block will operate only on the first record.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9a90d-129">例</span><span class="sxs-lookup"><span data-stu-id="9a90d-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5375d-129">例</span><span class="sxs-lookup"><span data-stu-id="5375d-129">Example</span></span>
 
-<span data-ttu-id="9a90d-p104">次の例は、 SetReturnVar アクションを使用して名前付きデータ マクロから値を返す方法を示します。" CurrentServiceRequest" という名前の **ReturnVar** が、名前付きデータ マクロの呼び出し元であるマクロまたは Visual Basic for Applications (VBA) サブルーチンに返されます。</span><span class="sxs-lookup"><span data-stu-id="9a90d-p104">The following example shows how to use the SetReturnVar action to return a value from a named data macro. A ReturnVar named **CurrentServiceRequest** is returned to the macro or Visual Basic for Applications (VBA) subroutine that called the named data macro.</span></span>
+<span data-ttu-id="5375d-p104">次の例は、 SetReturnVar アクションを使用して名前付きデータ マクロから値を返す方法を示します。" CurrentServiceRequest" という名前の **ReturnVar** が、名前付きデータ マクロの呼び出し元であるマクロまたは Visual Basic for Applications (VBA) サブルーチンに返されます。</span><span class="sxs-lookup"><span data-stu-id="5375d-p104">The following example shows how to use the SetReturnVar action to return a value from a named data macro. A ReturnVar named **CurrentServiceRequest** is returned to the macro or Visual Basic for Applications (VBA) subroutine that called the named data macro.</span></span>
 
-<span data-ttu-id="9a90d-132">**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。</span><span class="sxs-lookup"><span data-stu-id="9a90d-132">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
+<span data-ttu-id="5375d-132">**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。</span><span class="sxs-lookup"><span data-stu-id="5375d-132">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
 
 ```vb
     RunDataMacro
@@ -90,7 +90,7 @@ ms.locfileid: "25478291"
 
 <br/>
 
-<span data-ttu-id="9a90d-p105">次の例は、" RaiseError" アクションを使用して Before Change データ マクロ イベントを取り消す方法を示します。 AssignedTo フィールドが更新されると、 LookupRecord データ ブロックを使用して、割り当てられた技術者が未解決サービス リクエストに現在割り当てられているかどうかが確認されます。これが真の場合、 Before Change イベントが取り消されて、レコードは更新されません。</span><span class="sxs-lookup"><span data-stu-id="9a90d-p105">The following example shows how to use the RaiseError action to cancel the Before Change data macro event. When the AssignedTo field is updated, a LookupRecord data block is used to determine whether the assigned technician is currently assigned to an open service request. If this is true, the Before Change event is cancelled and the record is not updated.</span></span>
+<span data-ttu-id="5375d-p105">次の例は、" RaiseError" アクションを使用して Before Change データ マクロ イベントを取り消す方法を示します。 AssignedTo フィールドが更新されると、 LookupRecord データ ブロックを使用して、割り当てられた技術者が未解決サービス リクエストに現在割り当てられているかどうかが確認されます。これが真の場合、 Before Change イベントが取り消されて、レコードは更新されません。</span><span class="sxs-lookup"><span data-stu-id="5375d-p105">The following example shows how to use the RaiseError action to cancel the Before Change data macro event. When the AssignedTo field is updated, a LookupRecord data block is used to determine whether the assigned technician is currently assigned to an open service request. If this is true, the Before Change event is cancelled and the record is not updated.</span></span>
 
 ```vb
     /* Get the name of the technician  */

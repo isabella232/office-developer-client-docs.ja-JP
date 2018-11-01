@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249238(v=office.15)
 ms:contentKeyID: 48544697
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 51b7aaaed8e09aa537794415ff2fddabfcd6a9b6
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 7c19e12077c42d9487d6410793f07a6fa2c4bb18
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860337"
+ms.locfileid: "25885613"
 ---
-# <a name="addnew-method-example-vb"></a><span data-ttu-id="7bdcb-102">AddNew メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="7bdcb-102">AddNew method example (VB)</span></span>
+# <a name="addnew-method-example-vb"></a><span data-ttu-id="dc7b2-102">AddNew メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="dc7b2-102">AddNew method example (VB)</span></span>
 
 
-<span data-ttu-id="7bdcb-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="7bdcb-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="dc7b2-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="dc7b2-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="7bdcb-104">この例では、 [AddNew](addnew-method-ado.md) メソッドを使用して、指定した名前を持つ新しいレコードを作成します。</span><span class="sxs-lookup"><span data-stu-id="7bdcb-104">This example uses the [AddNew](addnew-method-ado.md) method to create a new record with the specified name.</span></span>
+<span data-ttu-id="dc7b2-104">この例では、 [AddNew](addnew-method-ado.md) メソッドを使用して、指定した名前を持つ新しいレコードを作成します。</span><span class="sxs-lookup"><span data-stu-id="dc7b2-104">This example uses the [AddNew](addnew-method-ado.md) method to create a new record with the specified name.</span></span>
 
 ```vb 
  

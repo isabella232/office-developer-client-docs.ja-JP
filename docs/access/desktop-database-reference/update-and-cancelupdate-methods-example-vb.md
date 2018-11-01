@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249614(v=office.15)
 ms:contentKeyID: 48546223
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f9f2fe9ca40fb9f9a290b48289646f15d9fef30d
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 436bdfd955494accfc02d4460a6080531f76452d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861058"
+ms.locfileid: "25888196"
 ---
-# <a name="update-and-cancelupdate-methods-example-vb"></a><span data-ttu-id="6744e-102">Update メソッドと CancelUpdate メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="6744e-102">Update and CancelUpdate methods example (VB)</span></span>
+# <a name="update-and-cancelupdate-methods-example-vb"></a><span data-ttu-id="33964-102">Update メソッドと CancelUpdate メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="33964-102">Update and CancelUpdate methods example (VB)</span></span>
 
 
-<span data-ttu-id="6744e-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="6744e-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="33964-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="33964-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="6744e-104">次の例では、[Update](update-method-ado.md) メソッドと [CancelUpdate](cancelupdate-method-ado.md) メソッドを組み合わせて使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="6744e-104">This example demonstrates the [Update](update-method-ado.md) method in conjunction with the [CancelUpdate](cancelupdate-method-ado.md) method.</span></span>
+<span data-ttu-id="33964-104">次の例では、[Update](update-method-ado.md) メソッドと [CancelUpdate](cancelupdate-method-ado.md) メソッドを組み合わせて使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="33964-104">This example demonstrates the [Update](update-method-ado.md) method in conjunction with the [CancelUpdate](cancelupdate-method-ado.md) method.</span></span>
 
 ```vb 
  
@@ -112,7 +112,7 @@ End Sub
 
 <br/>
 
-<span data-ttu-id="6744e-105">次の使用例は、 **Update** メソッドと [AddNew](addnew-method-ado.md) メソッドを組み合わせて使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="6744e-105">This example demonstrates the **Update** method in conjunction with the [AddNew](addnew-method-ado.md) method.</span></span>
+<span data-ttu-id="33964-105">次の使用例は、 **Update** メソッドと [AddNew](addnew-method-ado.md) メソッドを組み合わせて使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="33964-105">This example demonstrates the **Update** method in conjunction with the [AddNew](addnew-method-ado.md) method.</span></span>
 
 ```vb 
  

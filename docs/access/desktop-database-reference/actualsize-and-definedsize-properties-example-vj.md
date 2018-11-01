@@ -1,18 +1,23 @@
 ---
-<span data-ttu-id="a35d8-101"><<<<<<< ヘッド タイトル: ActualSize、DefinedSize プロパティの使用例 (vj++) TOCTitle: ActualSize、DefinedSize プロパティの使用例 (vj++) ms:assetid: 3a25d3b7-df53-66c1-6141-d51cd57aca96 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249145(v=office.15) ms:contentKeyID。48544261 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="a35d8-101"><<<<<<< HEAD title: ActualSize and DefinedSize Properties Example (VJ++) TOCTitle: ActualSize and DefinedSize Properties Example (VJ++) ms:assetid: 3a25d3b7-df53-66c1-6141-d51cd57aca96 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249145(v=office.15) ms:contentKeyID: 48544261 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: ActualSize プロパティと DefinedSize プロパティの使用例 (VJ++)
+TOCTitle: ActualSize and DefinedSize properties example (VJ++)
+ms:assetid: 3a25d3b7-df53-66c1-6141-d51cd57aca96
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249145(v=office.15)
+ms:contentKeyID: 48544261
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: 7a7742f3afe544e775de294e3e955142e646b213
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885039"
 ---
+# <a name="actualsize-and-definedsize-properties-example-vj"></a><span data-ttu-id="38f05-102">ActualSize プロパティと DefinedSize プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="38f05-102">ActualSize and DefinedSize properties example (VJ++)</span></span>
 
-# <a name="actualsize-and-definedsize-properties-example-vj"></a><span data-ttu-id="a35d8-102">ActualSize プロパティと DefinedSize プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="a35d8-102">ActualSize and DefinedSize Properties Example (VJ++)</span></span>
+<span data-ttu-id="38f05-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="38f05-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="a35d8-103">=== タイトル: ActualSize、DefinedSize プロパティの使用例 (vj++) TOCTitle: ActualSize、DefinedSize プロパティの使用例 (vj++) ms:assetid: 3a25d3b7-df53-66c1-6141-d51cd57aca96 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249145(v=office.15) ms:contentKeyID: 48544261 ms.date: 2018/10/17mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="a35d8-103">======= title: ActualSize and DefinedSize properties example (VJ++) TOCTitle: ActualSize and DefinedSize properties example (VJ++) ms:assetid: 3a25d3b7-df53-66c1-6141-d51cd57aca96 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249145(v=office.15) ms:contentKeyID: 48544261 ms.date: 10/17/2018 mtps_version: v=office.15</span></span>
----
-
-# <a name="actualsize-and-definedsize-properties-example-vj"></a><span data-ttu-id="a35d8-104">ActualSize、DefinedSize プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="a35d8-104">ActualSize and DefinedSize properties example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="a35d8-105">master</span><span class="sxs-lookup"><span data-stu-id="a35d8-105">master</span></span>
-
-<span data-ttu-id="a35d8-106">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="a35d8-106">**Applies to**: Access 2013 | Office 2013</span></span>
-
-<span data-ttu-id="a35d8-107">次の例では、[ActualSize](actualsize-property-ado.md) プロパティと [DefinedSize](definedsize-property-ado.md) プロパティを使用して、フィールドの定義されたサイズと実際のサイズを表示します。</span><span class="sxs-lookup"><span data-stu-id="a35d8-107">This example uses the [ActualSize](actualsize-property-ado.md) and [DefinedSize](definedsize-property-ado.md) properties to display the defined size and actual size of a field.</span></span>
+<span data-ttu-id="38f05-104">次の例では、[ActualSize](actualsize-property-ado.md) プロパティと [DefinedSize](definedsize-property-ado.md) プロパティを使用して、フィールドの定義されたサイズと実際のサイズを表示します。</span><span class="sxs-lookup"><span data-stu-id="38f05-104">This example uses the [ActualSize](actualsize-property-ado.md) and [DefinedSize](definedsize-property-ado.md) properties to display the defined size and actual size of a field.</span></span>
 
 ```java 
  

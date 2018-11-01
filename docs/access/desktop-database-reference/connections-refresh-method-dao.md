@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835932(v=office.15)
 ms:contentKeyID: 48548337
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b5fd79cb49e35ce9623575580fb681d06b9004bd
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 4affa13e32ee677d3de898efb41e9639a47a12d5
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478697"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882764"
 ---
-# <a name="connectionsrefresh-method-dao"></a><span data-ttu-id="2ce3b-102">Connections.Refresh メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="2ce3b-102">Connections.Refresh Method (DAO)</span></span>
+# <a name="connectionsrefresh-method-dao"></a><span data-ttu-id="f684d-102">Connections.Refresh メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="f684d-102">Connections.Refresh Method (DAO)</span></span>
 
 
-<span data-ttu-id="2ce3b-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="2ce3b-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="f684d-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f684d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="2ce3b-104">**[Connections](connections-collection-dao.md)** コレクションではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2ce3b-104">Not supported for the **[Connections](connections-collection-dao.md)** collection.</span></span>
+<span data-ttu-id="f684d-104">**[Connections](connections-collection-dao.md)** コレクションではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f684d-104">Not supported for the **[Connections](connections-collection-dao.md)** collection.</span></span>
 
-<span data-ttu-id="2ce3b-105">**Refresh** メソッドは、持続的でないコレクション ( **Connection** オブジェクトの **Connections**、 **Databases**、 **Recordsets**、 **Workspaces**、 **QueryDefs** の各コレクションなど) では使用できません。</span><span class="sxs-lookup"><span data-stu-id="2ce3b-105">You can't use the **Refresh** method with collections that aren't persistent, such as **Connections**, **Databases**, **Recordsets**, **Workspaces**, or the **QueryDefs** collection of a **Connection** object.</span></span>
+<span data-ttu-id="f684d-105">**Refresh** メソッドは、持続的でないコレクション ( **Connection** オブジェクトの **Connections**、 **Databases**、 **Recordsets**、 **Workspaces**、 **QueryDefs** の各コレクションなど) では使用できません。</span><span class="sxs-lookup"><span data-stu-id="f684d-105">You can't use the **Refresh** method with collections that aren't persistent, such as **Connections**, **Databases**, **Recordsets**, **Workspaces**, or the **QueryDefs** collection of a **Connection** object.</span></span>
 

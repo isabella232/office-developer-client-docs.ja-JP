@@ -10,23 +10,23 @@ f1_keywords:
 - dao360.chm1052879
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: dc2e7cb2c6144fc3423440927c99baf2843b8941
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0f05e4b9fe7dfeff687e7709462efbe37f10be42
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478405"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889876"
 ---
-# <a name="databasetransactions-property-dao"></a><span data-ttu-id="4bff2-102">Database.Transactions プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="4bff2-102">Database.Transactions Property (DAO)</span></span>
+# <a name="databasetransactions-property-dao"></a><span data-ttu-id="605ab-102">Database.Transactions プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="605ab-102">Database.Transactions Property (DAO)</span></span>
 
 
-<span data-ttu-id="4bff2-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="4bff2-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="605ab-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="605ab-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="4bff2-p101">オブジェクトがトランザクションをサポートしているかどうかを示す値を取得します。値の取得のみ可能です。ブール型 ( **Boolean**) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="4bff2-p101">Returns a value that indicates whether an object supports transactions. Read-only **Boolean**.</span></span>
+<span data-ttu-id="605ab-p101">オブジェクトがトランザクションをサポートしているかどうかを示す値を取得します。値の取得のみ可能です。ブール型 ( **Boolean**) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="605ab-p101">Returns a value that indicates whether an object supports transactions. Read-only **Boolean**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4bff2-106">構文</span><span class="sxs-lookup"><span data-stu-id="4bff2-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="605ab-106">構文</span><span class="sxs-lookup"><span data-stu-id="605ab-106">Syntax</span></span>
 
-<span data-ttu-id="4bff2-107">*式*です。トランザクション</span><span class="sxs-lookup"><span data-stu-id="4bff2-107">*expression* .Transactions</span></span>
+<span data-ttu-id="605ab-107">*式*です。トランザクション</span><span class="sxs-lookup"><span data-stu-id="605ab-107">*expression* .Transactions</span></span>
 
-<span data-ttu-id="4bff2-108">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="4bff2-108">*expression* A variable that represents a **Database** object.</span></span>
+<span data-ttu-id="605ab-108">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="605ab-108">*expression* A variable that represents a **Database** object.</span></span>
 

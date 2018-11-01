@@ -10,27 +10,27 @@ f1_keywords:
 - dao360.chm1052868
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 9ab4c9d37e051c0bc676d5689daeab88a42f7fa9
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: b9d25b9ccb0c6d3a167e33768d893abdaa8d41a7
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476217"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874651"
 ---
-# <a name="fieldsdelete-method-dao"></a><span data-ttu-id="66339-102">Fields.Delete メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="66339-102">Fields.Delete Method (DAO)</span></span>
+# <a name="fieldsdelete-method-dao"></a><span data-ttu-id="efa22-102">Fields.Delete メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="efa22-102">Fields.Delete Method (DAO)</span></span>
 
 
-<span data-ttu-id="66339-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="66339-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="efa22-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="efa22-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="66339-104">**[Field](field-object-dao.md)** オブジェクトを **[Fields](fields-collection-dao.md)** コレクションから削除します。</span><span class="sxs-lookup"><span data-stu-id="66339-104">Deletes a **[Field](field-object-dao.md)** from the **[Fields](fields-collection-dao.md)** collection.</span></span>
+<span data-ttu-id="efa22-104">**[Field](field-object-dao.md)** オブジェクトを **[Fields](fields-collection-dao.md)** コレクションから削除します。</span><span class="sxs-lookup"><span data-stu-id="efa22-104">Deletes a **[Field](field-object-dao.md)** from the **[Fields](fields-collection-dao.md)** collection.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="66339-105">構文</span><span class="sxs-lookup"><span data-stu-id="66339-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="efa22-105">構文</span><span class="sxs-lookup"><span data-stu-id="efa22-105">Syntax</span></span>
 
-<span data-ttu-id="66339-106">*式*です。(***名前***) を削除します。</span><span class="sxs-lookup"><span data-stu-id="66339-106">*expression* .Delete(***Name***)</span></span>
+<span data-ttu-id="efa22-106">*式*です。(***名前***) を削除します。</span><span class="sxs-lookup"><span data-stu-id="efa22-106">*expression* .Delete(***Name***)</span></span>
 
-<span data-ttu-id="66339-107">\*式\***Fields**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="66339-107">*expression* A variable that represents a **Fields** object.</span></span>
+<span data-ttu-id="efa22-107">\*式\***Fields**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="efa22-107">*expression* A variable that represents a **Fields** object.</span></span>
 
-### <a name="parameters"></a><span data-ttu-id="66339-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="66339-108">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="efa22-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="efa22-108">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -41,30 +41,30 @@ ms.locfileid: "25476217"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="66339-109">名前</span><span class="sxs-lookup"><span data-stu-id="66339-109">Name</span></span></p></th>
-<th><p><span data-ttu-id="66339-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="66339-110">Required/Optional</span></span></p></th>
-<th><p><span data-ttu-id="66339-111">データ型</span><span class="sxs-lookup"><span data-stu-id="66339-111">Data Type</span></span></p></th>
-<th><p><span data-ttu-id="66339-112">説明</span><span class="sxs-lookup"><span data-stu-id="66339-112">Description</span></span></p></th>
+<th><p><span data-ttu-id="efa22-109">名前</span><span class="sxs-lookup"><span data-stu-id="efa22-109">Name</span></span></p></th>
+<th><p><span data-ttu-id="efa22-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="efa22-110">Required/Optional</span></span></p></th>
+<th><p><span data-ttu-id="efa22-111">データ型</span><span class="sxs-lookup"><span data-stu-id="efa22-111">Data Type</span></span></p></th>
+<th><p><span data-ttu-id="efa22-112">説明</span><span class="sxs-lookup"><span data-stu-id="efa22-112">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="66339-113">名前</span><span class="sxs-lookup"><span data-stu-id="66339-113">Name</span></span></p></td>
-<td><p><span data-ttu-id="66339-114">必須</span><span class="sxs-lookup"><span data-stu-id="66339-114">Required</span></span></p></td>
-<td><p><span data-ttu-id="66339-115"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="66339-115"><strong>String</strong></span></span></p></td>
-<td><p><span data-ttu-id="66339-116">削除するフィールドです。</span><span class="sxs-lookup"><span data-stu-id="66339-116">The field to delete.</span></span></p></td>
+<td><p><span data-ttu-id="efa22-113">名前</span><span class="sxs-lookup"><span data-stu-id="efa22-113">Name</span></span></p></td>
+<td><p><span data-ttu-id="efa22-114">必須</span><span class="sxs-lookup"><span data-stu-id="efa22-114">Required</span></span></p></td>
+<td><p><span data-ttu-id="efa22-115"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="efa22-115"><strong>String</strong></span></span></p></td>
+<td><p><span data-ttu-id="efa22-116">削除するフィールドです。</span><span class="sxs-lookup"><span data-stu-id="efa22-116">The field to delete.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="66339-117">注釈</span><span class="sxs-lookup"><span data-stu-id="66339-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="efa22-117">注釈</span><span class="sxs-lookup"><span data-stu-id="efa22-117">Remarks</span></span>
 
-<span data-ttu-id="66339-118">格納されたオブジェクトの削除は直ちに実行されますが、データベース構造の変更によって他のコレクションが影響を受ける可能性がある場合は、そのコレクションに対して **Refresh** メソッドを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="66339-118">The deletion of a stored object occurs immediately, but you should use the **Refresh** method on any other collections that may be affected by changes to the database structure.</span></span>
+<span data-ttu-id="efa22-118">格納されたオブジェクトの削除は直ちに実行されますが、データベース構造の変更によって他のコレクションが影響を受ける可能性がある場合は、そのコレクションに対して **Refresh** メソッドを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="efa22-118">The deletion of a stored object occurs immediately, but you should use the **Refresh** method on any other collections that may be affected by changes to the database structure.</span></span>
 
-## <a name="example"></a><span data-ttu-id="66339-119">例</span><span class="sxs-lookup"><span data-stu-id="66339-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="efa22-119">例</span><span class="sxs-lookup"><span data-stu-id="efa22-119">Example</span></span>
 
-<span data-ttu-id="66339-p101">次の例では、 **Append** メソッドまたは **Delete** メソッドを使用して、 **TableDef** の **Fields** コレクションを変更します。このプロシージャを実行するには、AppendDeleteField プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="66339-p101">This example uses either the **Append** method or the **Delete** method to modify the **Fields** collection of a **TableDef**. The AppendDeleteField procedure is required for this procedure to run.</span></span>
+<span data-ttu-id="efa22-p101">次の例では、 **Append** メソッドまたは **Delete** メソッドを使用して、 **TableDef** の **Fields** コレクションを変更します。このプロシージャを実行するには、AppendDeleteField プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="efa22-p101">This example uses either the **Append** method or the **Delete** method to modify the **Fields** collection of a **TableDef**. The AppendDeleteField procedure is required for this procedure to run.</span></span>
 
 ```vb
     Sub AppendX() 

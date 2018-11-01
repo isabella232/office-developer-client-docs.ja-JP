@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="94890-101"><<<<<<< ヘッド タイトル: CacheSize プロパティの使用例 (JScript) TOCTitle: CacheSize プロパティの使用例 (JScript) === タイトル: CacheSize プロパティの使用例 (JScript) TOCTitle: CacheSize プロパティの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="94890-101"><<<<<<< HEAD title: CacheSize Property Example (JScript) TOCTitle: CacheSize Property Example (JScript) ======= title: CacheSize property example (JScript) TOCTitle: CacheSize property example (JScript)</span></span>
->>>>>>> <span data-ttu-id="94890-102">マスターの ms:assetid: bee835cb-8d26-b8b7-4958-39261809b86c ms:mtpsurl: https://msdn.microsoft.com/library/JJ249928(v=office.15) ms:contentKeyID: 48547473 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="94890-102">master ms:assetid: bee835cb-8d26-b8b7-4958-39261809b86c ms:mtpsurl: https://msdn.microsoft.com/library/JJ249928(v=office.15) ms:contentKeyID: 48547473 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: CacheSize プロパティの使用例 (JScript)
+TOCTitle: CacheSize property example (JScript)
+ms:assetid: bee835cb-8d26-b8b7-4958-39261809b86c
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249928(v=office.15)
+ms:contentKeyID: 48547473
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: ab8a8f3aa1bb968ebed86c5718c4f236a9d4fc3b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887797"
 ---
-
-<span data-ttu-id="94890-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="94890-103"><<<<<<< HEAD</span></span>
-# <a name="cachesize-property-example-jscript"></a><span data-ttu-id="94890-104">CacheSize プロパティの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="94890-104">CacheSize Property Example (JScript)</span></span>
-=======
-# <a name="cachesize-property-example-jscript"></a><span data-ttu-id="94890-105">CacheSize プロパティの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="94890-105">CacheSize property example (JScript)</span></span>
->>>>>>> <span data-ttu-id="94890-106">master</span><span class="sxs-lookup"><span data-stu-id="94890-106">master</span></span>
+# <a name="cachesize-property-example-jscript"></a><span data-ttu-id="9cb5a-102">CacheSize プロパティの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="9cb5a-102">CacheSize property example (JScript)</span></span>
 
 
-<span data-ttu-id="94890-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="94890-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="9cb5a-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="9cb5a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="94890-108">次の例では、[CacheSize](cachesize-property-ado.md) プロパティを使用して、30 レコードのキャッシュを使用して実行した操作と、使用せずに実行した操作のパフォーマンスの違いを示します。</span><span class="sxs-lookup"><span data-stu-id="94890-108">This example uses the [CacheSize](cachesize-property-ado.md) property to show the difference in performance for an operation performed with and without a 30-record cache.</span></span> <span data-ttu-id="94890-109">切り取りメモ帳または別のテキスト エディターに次のコードを貼り付けして**CacheSizeJS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="94890-109">Cut and paste the following code to Notepad or another text editor, and save it as **CacheSizeJS.asp**.</span></span>
+<span data-ttu-id="9cb5a-104">次の例では、[CacheSize](cachesize-property-ado.md) プロパティを使用して、30 レコードのキャッシュを使用して実行した操作と、使用せずに実行した操作のパフォーマンスの違いを示します。</span><span class="sxs-lookup"><span data-stu-id="9cb5a-104">This example uses the [CacheSize](cachesize-property-ado.md) property to show the difference in performance for an operation performed with and without a 30-record cache.</span></span> <span data-ttu-id="9cb5a-105">切り取りメモ帳または別のテキスト エディターに次のコードを貼り付けして**CacheSizeJS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="9cb5a-105">Cut and paste the following code to Notepad or another text editor, and save it as **CacheSizeJS.asp**.</span></span>
 
 ```javascript 
  
@@ -23,11 +29,7 @@
  
 <HTML> 
 <HEAD> 
-<<<<<<< HEAD
-<title>CacheSize Property Example (JScript)</title> 
-=======
 <title>CacheSize property example (JScript)</title> 
->>>>>>> master
 <style> 
 <!-- 
 body { 
@@ -51,11 +53,7 @@ body {
 </style> 
 </HEAD> 
 <BODY> 
-<<<<<<< HEAD
-<h1>CacheSize Property Example (JScript)</h1> 
-=======
 <h1>CacheSize property example (JScript)</h1> 
->>>>>>> master
 <% 
  // connection and recordset variables 
  var Cnxn = Server.CreateObject("ADODB.Connection") 

@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="0f05c-101"><<<<<<< ヘッド タイトル: 属性および名前のプロパティの使用例 (vc++) TOCTitle: 属性および名前のプロパティの使用例 (vc++) === タイトル: 属性と名前のプロパティの使用例 (vc++) TOCTitle: 属性および名前のプロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="0f05c-101"><<<<<<< HEAD title: Attributes and Name Properties Example (VC++) TOCTitle: Attributes and Name Properties Example (VC++) ======= title: Attributes and Name properties example (VC++) TOCTitle: Attributes and Name properties example (VC++)</span></span>
->>>>>>> <span data-ttu-id="0f05c-102">マスターの ms:assetid: 612b7d4a-b92d-5afd-eeaa-28d7ad1a880a ms:mtpsurl: https://msdn.microsoft.com/library/JJ249356(v=office.15) ms:contentKeyID: 48545203 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="0f05c-102">master ms:assetid: 612b7d4a-b92d-5afd-eeaa-28d7ad1a880a ms:mtpsurl: https://msdn.microsoft.com/library/JJ249356(v=office.15) ms:contentKeyID: 48545203 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Attributes プロパティと Name プロパティの使用例 (VC++)
+TOCTitle: Attributes and Name properties example (VC++)
+ms:assetid: 612b7d4a-b92d-5afd-eeaa-28d7ad1a880a
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249356(v=office.15)
+ms:contentKeyID: 48545203
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: df442df4378589ff82981858b021efe033b05ba6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887419"
 ---
-
-<span data-ttu-id="0f05c-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="0f05c-103"><<<<<<< HEAD</span></span>
-# <a name="attributes-and-name-properties-example-vc"></a><span data-ttu-id="0f05c-104">Attributes プロパティと Name プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="0f05c-104">Attributes and Name Properties Example (VC++)</span></span>
-=======
-# <a name="attributes-and-name-properties-example-vc"></a><span data-ttu-id="0f05c-105">属性および名前のプロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="0f05c-105">Attributes and Name properties example (VC++)</span></span>
->>>>>>> <span data-ttu-id="0f05c-106">master</span><span class="sxs-lookup"><span data-stu-id="0f05c-106">master</span></span>
+# <a name="attributes-and-name-properties-example-vc"></a><span data-ttu-id="e6402-102">Attributes プロパティと Name プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="e6402-102">Attributes and Name properties example (VC++)</span></span>
 
 
-<span data-ttu-id="0f05c-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="0f05c-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="e6402-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="e6402-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="0f05c-p101">次の例では、[Connection](attributes-property-ado.md)、[Field](connection-object-ado.md)、および [Property](field-object-ado.md) の各オブジェクトの [Attributes](property-object-ado.md) プロパティの値を表示します。 [Name](name-property-ado.md) プロパティを使用して、 **Field** および **Property** の各オブジェクトの名前を表示しています。</span><span class="sxs-lookup"><span data-stu-id="0f05c-p101">This example displays the value of the [Attributes](attributes-property-ado.md) property for [Connection](connection-object-ado.md), [Field](field-object-ado.md), and [Property](property-object-ado.md) objects. It uses the [Name](name-property-ado.md) property to display the name of each **Field** and **Property** object.</span></span>
+<span data-ttu-id="e6402-p101">次の例では、[Connection](attributes-property-ado.md)、[Field](connection-object-ado.md)、および [Property](field-object-ado.md) の各オブジェクトの [Attributes](property-object-ado.md) プロパティの値を表示します。 [Name](name-property-ado.md) プロパティを使用して、 **Field** および **Property** の各オブジェクトの名前を表示しています。</span><span class="sxs-lookup"><span data-stu-id="e6402-p101">This example displays the value of the [Attributes](attributes-property-ado.md) property for [Connection](connection-object-ado.md), [Field](field-object-ado.md), and [Property](property-object-ado.md) objects. It uses the [Name](name-property-ado.md) property to display the name of each **Field** and **Property** object.</span></span>
 
 ```cpp 
  
@@ -205,7 +211,7 @@ VOID PrintComError(_com_error &e)
 // EndAttributesCpp 
 ```
 
-<span data-ttu-id="0f05c-110">**AttributesX.h**</span><span class="sxs-lookup"><span data-stu-id="0f05c-110">**AttributesX.h**</span></span>
+<span data-ttu-id="e6402-106">**AttributesX.h**</span><span class="sxs-lookup"><span data-stu-id="e6402-106">**AttributesX.h**</span></span>
 
 ```cpp 
  

@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="9ae88-101"><<<<<<< ヘッド タイトル: NumericScale と Precision プロパティの使用例 (vj++) TOCTitle: NumericScale と Precision プロパティの使用例 (vj++) === タイトル: NumericScale と Precision プロパティの使用例 (vj++) TOCTitle: NumericScale と精度プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="9ae88-101"><<<<<<< HEAD title: NumericScale and Precision Properties Example (VJ++) TOCTitle: NumericScale and Precision Properties Example (VJ++) ======= title: NumericScale and Precision properties example (VJ++) TOCTitle: NumericScale and Precision properties example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="9ae88-102">マスターの ms:assetid: 9b6fc40c-b740-ede0-d69d-546eb5d40c95 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249707(v=office.15) ms:contentKeyID: 48546574 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="9ae88-102">master ms:assetid: 9b6fc40c-b740-ede0-d69d-546eb5d40c95 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249707(v=office.15) ms:contentKeyID: 48546574 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: NumericScale プロパティと Precision プロパティの使用例 (VJ++)
+TOCTitle: NumericScale and Precision properties example (VJ++)
+ms:assetid: 9b6fc40c-b740-ede0-d69d-546eb5d40c95
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249707(v=office.15)
+ms:contentKeyID: 48546574
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: fc77017b4e52c9a0e9ef519f9cfa0a6169b4895f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883219"
 ---
-
-<span data-ttu-id="9ae88-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="9ae88-103"><<<<<<< HEAD</span></span>
-# <a name="numericscale-and-precision-properties-example-vj"></a><span data-ttu-id="9ae88-104">NumericScale プロパティと Precision プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="9ae88-104">NumericScale and Precision Properties Example (VJ++)</span></span>
-=======
-# <a name="numericscale-and-precision-properties-example-vj"></a><span data-ttu-id="9ae88-105">NumericScale と Precision プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="9ae88-105">NumericScale and Precision properties example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="9ae88-106">master</span><span class="sxs-lookup"><span data-stu-id="9ae88-106">master</span></span>
+# <a name="numericscale-and-precision-properties-example-vj"></a><span data-ttu-id="65ccc-102">NumericScale プロパティと Precision プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="65ccc-102">NumericScale and Precision properties example (VJ++)</span></span>
 
 
-<span data-ttu-id="9ae88-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="9ae88-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="65ccc-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="65ccc-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="9ae88-108">この例では、[NumericScale](numericscale-property-ado.md) プロパティと [Precision](precision-property-ado.md) プロパティを使って、***Pubs*** データベースの ***Discounts*** テーブル内にあるフィールドの小数点以下の桁数と精度を表示します。</span><span class="sxs-lookup"><span data-stu-id="9ae88-108">This example uses the [NumericScale](numericscale-property-ado.md) and [Precision](precision-property-ado.md) properties to display the numeric scale and precision of fields in the ***Discounts*** table of the ***Pubs*** database.</span></span>
+<span data-ttu-id="65ccc-104">この例では、[NumericScale](numericscale-property-ado.md) プロパティと [Precision](precision-property-ado.md) プロパティを使って、***Pubs*** データベースの ***Discounts*** テーブル内にあるフィールドの小数点以下の桁数と精度を表示します。</span><span class="sxs-lookup"><span data-stu-id="65ccc-104">This example uses the [NumericScale](numericscale-property-ado.md) and [Precision](precision-property-ado.md) properties to display the numeric scale and precision of fields in the ***Discounts*** table of the ***Pubs*** database.</span></span>
 
 ```java 
  

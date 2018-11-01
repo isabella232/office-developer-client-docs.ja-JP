@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="2ab2e-101"><<<<<<< ヘッド タイトル: シーク メソッドは、インデックス プロパティの使用例 (VB) TOCTitle: シーク メソッドは、インデックス プロパティの使用例 (VB) === タイトル: Seek メソッドとインデックス プロパティの使用例 (VB) TOCTitle: Seek メソッドとインデックス プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="2ab2e-101"><<<<<<< HEAD title: Seek Method and Index Property Example (VB) TOCTitle: Seek Method and Index Property Example (VB) ======= title: Seek Method and Index property example (VB) TOCTitle: Seek Method and Index property example (VB)</span></span>
->>>>>>> <span data-ttu-id="2ab2e-102">マスターの ms:assetid: c3ddb72c-2b19-53c8-9779-2c503486e44e ms:mtpsurl: https://msdn.microsoft.com/library/JJ249957(v=office.15) ms:contentKeyID: 48547577 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="2ab2e-102">master ms:assetid: c3ddb72c-2b19-53c8-9779-2c503486e44e ms:mtpsurl: https://msdn.microsoft.com/library/JJ249957(v=office.15) ms:contentKeyID: 48547577 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: メソッド、インデックスのシーク プロパティの使用例 (VB)
+TOCTitle: Seek Method and Index property example (VB)
+ms:assetid: c3ddb72c-2b19-53c8-9779-2c503486e44e
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249957(v=office.15)
+ms:contentKeyID: 48547577
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 692dcd7e046935aa447d6d39de574dd3d3e6b129
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871872"
 ---
-
-<span data-ttu-id="2ab2e-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="2ab2e-103"><<<<<<< HEAD</span></span>
-# <a name="seek-method-and-index-property-example-vb"></a><span data-ttu-id="2ab2e-104">Seek メソッドおよび Index プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="2ab2e-104">Seek Method and Index Property Example (VB)</span></span>
-=======
-# <a name="seek-method-and-index-property-example-vb"></a><span data-ttu-id="2ab2e-105">メソッド、インデックスのシーク プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="2ab2e-105">Seek Method and Index property example (VB)</span></span>
->>>>>>> <span data-ttu-id="2ab2e-106">master</span><span class="sxs-lookup"><span data-stu-id="2ab2e-106">master</span></span>
+# <a name="seek-method-and-index-property-example-vb"></a><span data-ttu-id="28e57-102">メソッド、インデックスのシーク プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="28e57-102">Seek Method and Index property example (VB)</span></span>
 
 
-<span data-ttu-id="2ab2e-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="2ab2e-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="28e57-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="28e57-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="2ab2e-108">この例では、[Recordset](recordset-object-ado.md) オブジェクトの [Seek](seek-method-ado.md) メソッドと [Index](index-property-ado.md) プロパティを、指定された ***Employee ID*** と組み合わせて使用し、Nwind.mdb データベースの ***Employees*** テーブルで社員の名前を検索します。</span><span class="sxs-lookup"><span data-stu-id="2ab2e-108">This example uses the [Recordset](recordset-object-ado.md) object's [Seek](seek-method-ado.md) method and [Index](index-property-ado.md) property in conjunction with a given ***Employee ID***, to locate the employee's name in the ***Employees*** table of the Nwind.mdb database.</span></span>
+<span data-ttu-id="28e57-104">この例では、[Recordset](recordset-object-ado.md) オブジェクトの [Seek](seek-method-ado.md) メソッドと [Index](index-property-ado.md) プロパティを、指定された ***Employee ID*** と組み合わせて使用し、Nwind.mdb データベースの ***Employees*** テーブルで社員の名前を検索します。</span><span class="sxs-lookup"><span data-stu-id="28e57-104">This example uses the [Recordset](recordset-object-ado.md) object's [Seek](seek-method-ado.md) method and [Index](index-property-ado.md) property in conjunction with a given ***Employee ID***, to locate the employee's name in the ***Employees*** table of the Nwind.mdb database.</span></span>
 
 ```vb 
  

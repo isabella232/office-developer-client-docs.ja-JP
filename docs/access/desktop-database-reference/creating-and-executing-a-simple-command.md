@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249699(v=office.15)
 ms:contentKeyID: 48546547
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 88463cf79ace0007cac8e5ebd1694ee7a080f329
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 0446654a6ad39246289690c95f160bd77dcde19d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860351"
+ms.locfileid: "25886264"
 ---
-# <a name="creating-and-executing-a-simple-command"></a><span data-ttu-id="2859a-102">シンプルなコマンドを作成し、実行する</span><span class="sxs-lookup"><span data-stu-id="2859a-102">Creating and Executing a Simple Command</span></span>
+# <a name="creating-and-executing-a-simple-command"></a><span data-ttu-id="1128e-102">シンプルなコマンドを作成し、実行する</span><span class="sxs-lookup"><span data-stu-id="1128e-102">Creating and Executing a Simple Command</span></span>
 
 
-<span data-ttu-id="2859a-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="2859a-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="1128e-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="1128e-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="2859a-p101">**Command** オブジェクトの一般的な使用方法ではありませんが、次のコードに、 **Command** オブジェクトを使用してデータ ソースに対するコマンドを実行する基本的な方法を示します。この場合、行を返すコマンドなので、コマンドの実行結果を **Recordset** オブジェクトに返します。</span><span class="sxs-lookup"><span data-stu-id="2859a-p101">Though not a typical usage of the **Command** object, the following code shows the basic method of using the **Command** object to execute a command against a data source. In this case, it is a row-returning command, so it returns the results of the command execution into a **Recordset** object.</span></span>
+<span data-ttu-id="1128e-p101">**Command** オブジェクトの一般的な使用方法ではありませんが、次のコードに、 **Command** オブジェクトを使用してデータ ソースに対するコマンドを実行する基本的な方法を示します。この場合、行を返すコマンドなので、コマンドの実行結果を **Recordset** オブジェクトに返します。</span><span class="sxs-lookup"><span data-stu-id="1128e-p101">Though not a typical usage of the **Command** object, the following code shows the basic method of using the **Command** object to execute a command against a data source. In this case, it is a row-returning command, so it returns the results of the command execution into a **Recordset** object.</span></span>
 
 ```vb 
  
@@ -78,11 +78,11 @@ ErrHandler:
 'EndBasicCmd 
 ```
 
-<span data-ttu-id="2859a-106">実行するコマンドは、 **CommandText** プロパティで指定します。</span><span class="sxs-lookup"><span data-stu-id="2859a-106">The command to be executed is specified with the **CommandText** property.</span></span>
+<span data-ttu-id="1128e-106">実行するコマンドは、 **CommandText** プロパティで指定します。</span><span class="sxs-lookup"><span data-stu-id="1128e-106">The command to be executed is specified with the **CommandText** property.</span></span>
 
 
 > [!NOTE]
-> <span data-ttu-id="2859a-107">ここでいくつかの例では、 **GetNewConnection**、データ プロバイダーとの接続を確立するために、ユーティリティ関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="2859a-107">Several examples in this section call a utility function, **GetNewConnection**, to establish a connection with the data provider.</span></span> <span data-ttu-id="2859a-108">冗長性を避けるためには、表示されている 1 回だけ。</span><span class="sxs-lookup"><span data-stu-id="2859a-108">To avoid redundancy, it is listed only once:</span></span>
+> <span data-ttu-id="1128e-107">ここでいくつかの例では、 **GetNewConnection**、データ プロバイダーとの接続を確立するために、ユーティリティ関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="1128e-107">Several examples in this section call a utility function, **GetNewConnection**, to establish a connection with the data provider.</span></span> <span data-ttu-id="1128e-108">冗長性を避けるためには、表示されている 1 回だけ。</span><span class="sxs-lookup"><span data-stu-id="1128e-108">To avoid redundancy, it is listed only once:</span></span>
 
 ```vb 
  

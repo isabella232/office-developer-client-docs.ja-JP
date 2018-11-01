@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249514(v=office.15)
 ms:contentKeyID: 48545818
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: baf9a06c8db89e1b3d3ef1c124c8e15ff58f3fee
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ef1d46b75979982818848f1276cfd8b4e6f9922d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476194"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878207"
 ---
-# <a name="key-object-adox-reference"></a><span data-ttu-id="c8807-102">Key オブジェクト (ADOX) リファレンス</span><span class="sxs-lookup"><span data-stu-id="c8807-102">Key Object (ADOX) Reference</span></span>
+# <a name="key-object-adox-reference"></a><span data-ttu-id="ecbf7-102">Key オブジェクト (ADOX) リファレンス</span><span class="sxs-lookup"><span data-stu-id="ecbf7-102">Key Object (ADOX) Reference</span></span>
 
 
-<span data-ttu-id="c8807-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="c8807-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="ecbf7-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="ecbf7-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
 
-  - [<span data-ttu-id="c8807-104">Key オブジェクト (ADOX)</span><span class="sxs-lookup"><span data-stu-id="c8807-104">Key Object (ADOX)</span></span>](key-object-adox.md)
+  - [<span data-ttu-id="ecbf7-104">Key オブジェクト (ADOX)</span><span class="sxs-lookup"><span data-stu-id="ecbf7-104">Key Object (ADOX)</span></span>](key-object-adox.md)
 
-  - [<span data-ttu-id="c8807-105">Key のプロパティ、メソッド、およびイベント (ADOX)</span><span class="sxs-lookup"><span data-stu-id="c8807-105">Key Properties, Methods, and Events (ADOX)</span></span>](key-properties-methods-and-events-adox.md)
+  - [<span data-ttu-id="ecbf7-105">Key のプロパティ、メソッド、およびイベント (ADOX)</span><span class="sxs-lookup"><span data-stu-id="ecbf7-105">Key Properties, Methods, and Events (ADOX)</span></span>](key-properties-methods-and-events-adox.md)
 

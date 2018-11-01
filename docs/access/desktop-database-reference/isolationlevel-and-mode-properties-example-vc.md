@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="54233-101"><<<<<<< ヘッド タイトル: IsolationLevel とモードのプロパティの使用例 (vc++) TOCTitle: IsolationLevel とモードのプロパティの使用例 (vc++) === タイトル: IsolationLevel とモードのプロパティの使用例 (vc++) TOCTitle: IsolationLevel とモードプロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="54233-101"><<<<<<< HEAD title: IsolationLevel and Mode Properties Example (VC++) TOCTitle: IsolationLevel and Mode Properties Example (VC++) ======= title: IsolationLevel and Mode properties example (VC++) TOCTitle: IsolationLevel and Mode properties example (VC++)</span></span>
->>>>>>> <span data-ttu-id="54233-102">マスターの ms:assetid: 851d0dee-6583-d2e2-d598-5a404becc03d ms:mtpsurl: https://msdn.microsoft.com/library/JJ249579(v=office.15) ms:contentKeyID: 48546050 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="54233-102">master ms:assetid: 851d0dee-6583-d2e2-d598-5a404becc03d ms:mtpsurl: https://msdn.microsoft.com/library/JJ249579(v=office.15) ms:contentKeyID: 48546050 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: IsolationLevel プロパティと Mode プロパティの使用例 (VC++)
+TOCTitle: IsolationLevel and Mode properties example (VC++)
+ms:assetid: 851d0dee-6583-d2e2-d598-5a404becc03d
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249579(v=office.15)
+ms:contentKeyID: 48546050
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 23426be11226feeb4c922d55aa7fec8fd4821cfc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871410"
 ---
-
-<span data-ttu-id="54233-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="54233-103"><<<<<<< HEAD</span></span>
-# <a name="isolationlevel-and-mode-properties-example-vc"></a><span data-ttu-id="54233-104">IsolationLevel プロパティと Mode プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="54233-104">IsolationLevel and Mode Properties Example (VC++)</span></span>
-=======
-# <a name="isolationlevel-and-mode-properties-example-vc"></a><span data-ttu-id="54233-105">IsolationLevel とモードのプロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="54233-105">IsolationLevel and Mode properties example (VC++)</span></span>
->>>>>>> <span data-ttu-id="54233-106">master</span><span class="sxs-lookup"><span data-stu-id="54233-106">master</span></span>
+# <a name="isolationlevel-and-mode-properties-example-vc"></a><span data-ttu-id="36e0c-102">IsolationLevel プロパティと Mode プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="36e0c-102">IsolationLevel and Mode properties example (VC++)</span></span>
 
 
-<span data-ttu-id="54233-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="54233-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="36e0c-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="36e0c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="54233-108">この例では、[Mode](mode-property-ado.md) プロパティを使って排他的接続を開き、 [IsolationLevel](isolationlevel-property-ado.md) プロパティを使って他のトランザクションから独立したトランザクションを開きます。</span><span class="sxs-lookup"><span data-stu-id="54233-108">This example uses the [Mode](mode-property-ado.md) property to open an exclusive connection, and the [IsolationLevel](isolationlevel-property-ado.md) property to open a transaction that is conducted in isolation of other transactions.</span></span>
+<span data-ttu-id="36e0c-104">この例では、[Mode](mode-property-ado.md) プロパティを使って排他的接続を開き、 [IsolationLevel](isolationlevel-property-ado.md) プロパティを使って他のトランザクションから独立したトランザクションを開きます。</span><span class="sxs-lookup"><span data-stu-id="36e0c-104">This example uses the [Mode](mode-property-ado.md) property to open an exclusive connection, and the [IsolationLevel](isolationlevel-property-ado.md) property to open a transaction that is conducted in isolation of other transactions.</span></span>
 
 ```cpp 
  
@@ -249,7 +255,7 @@ void PrintComError(_com_error &e)
 // EndIsolationLevelCpp 
 ```
 
-<span data-ttu-id="54233-109">**IsolationLevelX.h**</span><span class="sxs-lookup"><span data-stu-id="54233-109">**IsolationLevelX.h**</span></span>
+<span data-ttu-id="36e0c-105">**IsolationLevelX.h**</span><span class="sxs-lookup"><span data-stu-id="36e0c-105">**IsolationLevelX.h**</span></span>
 
 ```cpp 
  

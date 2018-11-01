@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="5b5db-101"><<<<<<< ヘッド タイトル: ソースのプロパティの使用例 (vj++) TOCTitle: ソースのプロパティの使用例 (vj++) === タイトル: ソースのプロパティの使用例 (vj++) TOCTitle: ソースのプロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="5b5db-101"><<<<<<< HEAD title: Source Property Example (VJ++) TOCTitle: Source Property Example (VJ++) ======= title: Source property example (VJ++) TOCTitle: Source property example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="5b5db-102">マスターの ms:assetid: cfe6293f-19b7-cc57-c53a-611f841273a5 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250036(v=office.15) ms:contentKeyID: 48547821 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="5b5db-102">master ms:assetid: cfe6293f-19b7-cc57-c53a-611f841273a5 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250036(v=office.15) ms:contentKeyID: 48547821 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Source プロパティの使用例 (VJ++)
+TOCTitle: Source property example (VJ++)
+ms:assetid: cfe6293f-19b7-cc57-c53a-611f841273a5
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250036(v=office.15)
+ms:contentKeyID: 48547821
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 032a6804d2976ac6eca1c4fc24cff0555aa949cf
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875715"
 ---
-
-<span data-ttu-id="5b5db-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="5b5db-103"><<<<<<< HEAD</span></span>
-# <a name="source-property-example-vj"></a><span data-ttu-id="5b5db-104">Source プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="5b5db-104">Source Property Example (VJ++)</span></span>
-=======
-# <a name="source-property-example-vj"></a><span data-ttu-id="5b5db-105">ソース プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="5b5db-105">Source property example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="5b5db-106">master</span><span class="sxs-lookup"><span data-stu-id="5b5db-106">master</span></span>
+# <a name="source-property-example-vj"></a><span data-ttu-id="efb56-102">Source プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="efb56-102">Source property example (VJ++)</span></span>
 
 
-<span data-ttu-id="5b5db-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="5b5db-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="efb56-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="efb56-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="5b5db-108">この例では、異なるデータ ソースに基づく 3 つの [Recordset](source-property-ado-recordset.md) オブジェクトを開くことによって、 [Source](recordset-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="5b5db-108">This example demonstrates the [Source](source-property-ado-recordset.md) property by opening three [Recordset](recordset-object-ado.md) objects based on different data sources.</span></span>
+<span data-ttu-id="efb56-104">この例では、異なるデータ ソースに基づく 3 つの [Recordset](source-property-ado-recordset.md) オブジェクトを開くことによって、 [Source](recordset-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="efb56-104">This example demonstrates the [Source](source-property-ado-recordset.md) property by opening three [Recordset](recordset-object-ado.md) objects based on different data sources.</span></span>
 
 ```java 
  

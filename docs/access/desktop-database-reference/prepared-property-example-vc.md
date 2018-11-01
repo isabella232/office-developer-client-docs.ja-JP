@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="eb43a-101"><<<<<<< ヘッド タイトル: 準備されたプロパティの使用例 (vc++) TOCTitle: 準備されたプロパティの使用例 (vc++) === タイトル: Prepared プロパティの使用例 (vc++) TOCTitle: Prepared プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="eb43a-101"><<<<<<< HEAD title: Prepared Property Example (VC++) TOCTitle: Prepared Property Example (VC++) ======= title: Prepared property example (VC++) TOCTitle: Prepared property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="eb43a-102">マスターの ms:assetid: 9b2d8037-e74d-5fbd-c56c-18187236b1b2 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249704(v=office.15) ms:contentKeyID: 48546562 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="eb43a-102">master ms:assetid: 9b2d8037-e74d-5fbd-c56c-18187236b1b2 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249704(v=office.15) ms:contentKeyID: 48546562 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Prepared プロパティの使用例 (VC++)
+TOCTitle: Prepared property example (VC++)
+ms:assetid: 9b2d8037-e74d-5fbd-c56c-18187236b1b2
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249704(v=office.15)
+ms:contentKeyID: 48546562
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: f0c3f6f48418b6b8df95b423b9baba3a9c84c21b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885816"
 ---
-
-<span data-ttu-id="eb43a-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="eb43a-103"><<<<<<< HEAD</span></span>
-# <a name="prepared-property-example-vc"></a><span data-ttu-id="eb43a-104">Prepared プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="eb43a-104">Prepared Property Example (VC++)</span></span>
-=======
-# <a name="prepared-property-example-vc"></a><span data-ttu-id="eb43a-105">Prepared プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="eb43a-105">Prepared property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="eb43a-106">master</span><span class="sxs-lookup"><span data-stu-id="eb43a-106">master</span></span>
+# <a name="prepared-property-example-vc"></a><span data-ttu-id="89025-102">Prepared プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="89025-102">Prepared property example (VC++)</span></span>
 
 
-<span data-ttu-id="eb43a-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="eb43a-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="89025-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="89025-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="eb43a-108">この例では、準備済みのバージョンと準備されていないバージョンの 2 つの [Command](prepared-property-ado.md) オブジェクトを開くことによって、 [Prepared](command-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="eb43a-108">This example demonstrates the [Prepared](prepared-property-ado.md) property by opening two [Command](command-object-ado.md) objects — one prepared and one not prepared.</span></span>
+<span data-ttu-id="89025-104">この例では、準備済みのバージョンと準備されていないバージョンの 2 つの [Command](prepared-property-ado.md) オブジェクトを開くことによって、 [Prepared](command-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="89025-104">This example demonstrates the [Prepared](prepared-property-ado.md) property by opening two [Command](command-object-ado.md) objects — one prepared and one not prepared.</span></span>
 
 ```cpp 
  

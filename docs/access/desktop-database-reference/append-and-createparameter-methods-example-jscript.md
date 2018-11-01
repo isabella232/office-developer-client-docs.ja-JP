@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249494(v=office.15)
 ms:contentKeyID: 48545737
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bd397e13a74c68367d5be4256172d31a469ae509
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 29f573d5faa84f965a83d750fa1f0a815263a2e0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862164"
+ms.locfileid: "25886621"
 ---
-# <a name="append-and-createparameter-methods-example-jscript"></a><span data-ttu-id="5439e-102">Append メソッドと CreateParameter メソッドの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="5439e-102">Append and CreateParameter methods example (JScript)</span></span>
+# <a name="append-and-createparameter-methods-example-jscript"></a><span data-ttu-id="5aeae-102">Append メソッドと CreateParameter メソッドの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="5aeae-102">Append and CreateParameter methods example (JScript)</span></span>
 
 
-<span data-ttu-id="5439e-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="5439e-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="5aeae-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="5aeae-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="5439e-104">この例では、[Append](append-method-ado.md) メソッドと [CreateParameter](createparameter-method-ado.md) メソッドを使用して、入力パラメーターのあるストアド プロシージャを実行します。</span><span class="sxs-lookup"><span data-stu-id="5439e-104">This example uses the [Append](append-method-ado.md) and [CreateParameter](createparameter-method-ado.md) methods to execute a stored procedure with an input parameter.</span></span> <span data-ttu-id="5439e-105">切り取りメモ帳または別のテキスト エディターに次のコードを貼り付けして**AppendJS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="5439e-105">Cut and paste the following code to Notepad or another text editor, and save it as **AppendJS.asp**.</span></span>
+<span data-ttu-id="5aeae-104">この例では、[Append](append-method-ado.md) メソッドと [CreateParameter](createparameter-method-ado.md) メソッドを使用して、入力パラメーターのあるストアド プロシージャを実行します。</span><span class="sxs-lookup"><span data-stu-id="5aeae-104">This example uses the [Append](append-method-ado.md) and [CreateParameter](createparameter-method-ado.md) methods to execute a stored procedure with an input parameter.</span></span> <span data-ttu-id="5aeae-105">切り取りメモ帳または別のテキスト エディターに次のコードを貼り付けして**AppendJS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="5aeae-105">Cut and paste the following code to Notepad or another text editor, and save it as **AppendJS.asp**.</span></span>
 
 ```javascript 
  

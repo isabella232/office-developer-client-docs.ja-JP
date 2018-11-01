@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="4e951-101"><<<<<<< ヘッド タイトル: 属性および名前のプロパティの使用例 (vj++) TOCTitle: 属性および名前のプロパティの使用例 (vj++) === タイトル: 属性と名前のプロパティの使用例 (vj++) TOCTitle: 属性および名前のプロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="4e951-101"><<<<<<< HEAD title: Attributes and Name Properties Example (VJ++) TOCTitle: Attributes and Name Properties Example (VJ++) ======= title: Attributes and Name properties example (VJ++) TOCTitle: Attributes and Name properties example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="4e951-102">マスターの ms:assetid: ad3fe113-ad14-2df3-ec41-c24e6d2b1b21 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249812(v=office.15) ms:contentKeyID: 48547035 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="4e951-102">master ms:assetid: ad3fe113-ad14-2df3-ec41-c24e6d2b1b21 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249812(v=office.15) ms:contentKeyID: 48547035 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Attributes プロパティと Name プロパティの使用例 (VJ++)
+TOCTitle: Attributes and Name properties example (VJ++)
+ms:assetid: ad3fe113-ad14-2df3-ec41-c24e6d2b1b21
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249812(v=office.15)
+ms:contentKeyID: 48547035
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 68690d89e6b747c38647a3c8b49318aa577838fd
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878748"
 ---
-
-<span data-ttu-id="4e951-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="4e951-103"><<<<<<< HEAD</span></span>
-# <a name="attributes-and-name-properties-example-vj"></a><span data-ttu-id="4e951-104">Attributes プロパティと Name プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="4e951-104">Attributes and Name Properties Example (VJ++)</span></span>
-=======
-# <a name="attributes-and-name-properties-example-vj"></a><span data-ttu-id="4e951-105">属性および名前のプロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="4e951-105">Attributes and Name properties example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="4e951-106">master</span><span class="sxs-lookup"><span data-stu-id="4e951-106">master</span></span>
+# <a name="attributes-and-name-properties-example-vj"></a><span data-ttu-id="df00b-102">Attributes プロパティと Name プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="df00b-102">Attributes and Name properties example (VJ++)</span></span>
 
 
-<span data-ttu-id="4e951-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="4e951-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="df00b-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="df00b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="4e951-p101">次の例では、[Connection](attributes-property-ado.md)、[Field](connection-object-ado.md)、[Property](field-object-ado.md) の各オブジェクトの [Attributes](property-object-ado.md) プロパティの値を表示します。 [Name](name-property-ado.md) プロパティを使用して、 **Field** および **Property** の各オブジェクトの名前を表示しています。</span><span class="sxs-lookup"><span data-stu-id="4e951-p101">This example displays the value of the [Attributes](attributes-property-ado.md) property for [Connection](connection-object-ado.md), [Field](field-object-ado.md), and [Property](property-object-ado.md) objects. It uses the [Name](name-property-ado.md) property to display the name of each **Field** and **Property** object.</span></span>
+<span data-ttu-id="df00b-p101">次の例では、[Connection](attributes-property-ado.md)、[Field](connection-object-ado.md)、[Property](field-object-ado.md) の各オブジェクトの [Attributes](property-object-ado.md) プロパティの値を表示します。 [Name](name-property-ado.md) プロパティを使用して、 **Field** および **Property** の各オブジェクトの名前を表示しています。</span><span class="sxs-lookup"><span data-stu-id="df00b-p101">This example displays the value of the [Attributes](attributes-property-ado.md) property for [Connection](connection-object-ado.md), [Field](field-object-ado.md), and [Property](property-object-ado.md) objects. It uses the [Name](name-property-ado.md) property to display the name of each **Field** and **Property** object.</span></span>
 
 ```java 
  

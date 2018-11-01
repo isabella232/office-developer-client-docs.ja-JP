@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="62076-101"><<<<<<< ヘッド タイトル: 状態プロパティの使用例 (vc++) TOCTitle: 状態プロパティの使用例 (vc++) === タイトル: 状態プロパティの使用例 (vc++) TOCTitle: 状態プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="62076-101"><<<<<<< HEAD title: State Property Example (VC++) TOCTitle: State Property Example (VC++) ======= title: State property example (VC++) TOCTitle: State property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="62076-102">マスターの ms:assetid: aedc50d8-81cd-1acd-6d57-48af71369da8 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249830(v=office.15) ms:contentKeyID: 48547085 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="62076-102">master ms:assetid: aedc50d8-81cd-1acd-6d57-48af71369da8 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249830(v=office.15) ms:contentKeyID: 48547085 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: State プロパティの使用例 (VC++)
+TOCTitle: State property example (VC++)
+ms:assetid: aedc50d8-81cd-1acd-6d57-48af71369da8
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249830(v=office.15)
+ms:contentKeyID: 48547085
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 06d91a9e2103fa56025230ae5326cda2d0bfb85f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886915"
 ---
-
-<span data-ttu-id="62076-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="62076-103"><<<<<<< HEAD</span></span>
-# <a name="state-property-example-vc"></a><span data-ttu-id="62076-104">State プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="62076-104">State Property Example (VC++)</span></span>
-=======
-# <a name="state-property-example-vc"></a><span data-ttu-id="62076-105">状態プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="62076-105">State property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="62076-106">master</span><span class="sxs-lookup"><span data-stu-id="62076-106">master</span></span>
+# <a name="state-property-example-vc"></a><span data-ttu-id="54b9c-102">State プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="54b9c-102">State property example (VC++)</span></span>
 
 
-<span data-ttu-id="62076-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="62076-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="54b9c-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="54b9c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="62076-108">この例では、非同期接続を開き、非同期コマンドを実行している間、[State](state-property-ado.md) プロパティを使用してメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="62076-108">This example uses the [State](state-property-ado.md) property to display a message while asynchronous connections are opening and asynchronous commands are executing.</span></span>
+<span data-ttu-id="54b9c-104">この例では、非同期接続を開き、非同期コマンドを実行している間、[State](state-property-ado.md) プロパティを使用してメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="54b9c-104">This example uses the [State](state-property-ado.md) property to display a message while asynchronous connections are opening and asynchronous commands are executing.</span></span>
 
 ```cpp 
  

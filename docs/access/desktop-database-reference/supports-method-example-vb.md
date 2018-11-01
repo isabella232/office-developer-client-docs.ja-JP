@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249438(v=office.15)
 ms:contentKeyID: 48545518
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d3ea5bf64eb4897dab60a8f80e0691a1d1538126
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 306dc8e2a6f0ea89b25a178dde3b879a86fa623c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860358"
+ms.locfileid: "25886082"
 ---
-# <a name="supports-method-example-vb"></a><span data-ttu-id="19f43-102">Supports メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="19f43-102">Supports method example (VB)</span></span>
+# <a name="supports-method-example-vb"></a><span data-ttu-id="10e68-102">Supports メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="10e68-102">Supports method example (VB)</span></span>
 
 
-<span data-ttu-id="19f43-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="19f43-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="10e68-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="10e68-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="19f43-p101">この例は、[Supports](supports-method-ado.md) メソッドを使用して、各種カーソルで開かれたレコードセットによりサポートされるオプションを表示します。このプロシージャを実行するには、DisplaySupport プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="19f43-p101">This example uses the [Supports](supports-method-ado.md) method to display the options supported by a recordset opened with different cursor types. The DisplaySupport procedure is required for this procedure to run.</span></span>
+<span data-ttu-id="10e68-p101">この例は、[Supports](supports-method-ado.md) メソッドを使用して、各種カーソルで開かれたレコードセットによりサポートされるオプションを表示します。このプロシージャを実行するには、DisplaySupport プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="10e68-p101">This example uses the [Supports](supports-method-ado.md) method to display the options supported by a recordset opened with different cursor types. The DisplaySupport procedure is required for this procedure to run.</span></span>
 
 ```vb 
  

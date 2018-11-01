@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="cdeff-101"><<<<<<< ヘッド タイトル: 型プロパティの使用例 (フィールド) (vc++) TOCTitle: タイプ プロパティの使用例 (フィールド) (vc++) === タイトル: 型プロパティの使用例 (vc++) の (フィールド) TOCTitle: タイプ プロパティの使用例 (vc++) の (フィールド)</span><span class="sxs-lookup"><span data-stu-id="cdeff-101"><<<<<<< HEAD title: Type Property Example (Field) (VC++) TOCTitle: Type Property Example (Field) (VC++) ======= title: Type property example (Field) (VC++) TOCTitle: Type property example (Field) (VC++)</span></span>
->>>>>>> <span data-ttu-id="cdeff-102">マスターの ms:assetid: d157407d-e7c9-897e-a0d1-e6396fb78690 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250045(v=office.15) ms:contentKeyID: 48547858 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="cdeff-102">master ms:assetid: d157407d-e7c9-897e-a0d1-e6396fb78690 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250045(v=office.15) ms:contentKeyID: 48547858 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Type プロパティの使用例 (Field) (VC++)
+TOCTitle: Type property example (Field) (VC++)
+ms:assetid: d157407d-e7c9-897e-a0d1-e6396fb78690
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250045(v=office.15)
+ms:contentKeyID: 48547858
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: bf9a00e4fafeccf5e284599ec55f9252e8bde568
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25884510"
 ---
-
-<span data-ttu-id="cdeff-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="cdeff-103"><<<<<<< HEAD</span></span>
-# <a name="type-property-example-field-vc"></a><span data-ttu-id="cdeff-104">Type プロパティの使用例 (Field) (VC++)</span><span class="sxs-lookup"><span data-stu-id="cdeff-104">Type Property Example (Field) (VC++)</span></span>
-=======
-# <a name="type-property-example-field-vc"></a><span data-ttu-id="cdeff-105">プロパティの使用例 (vc++) の (フィールド) を入力します。</span><span class="sxs-lookup"><span data-stu-id="cdeff-105">Type property example (Field) (VC++)</span></span>
->>>>>>> <span data-ttu-id="cdeff-106">master</span><span class="sxs-lookup"><span data-stu-id="cdeff-106">master</span></span>
+# <a name="type-property-example-field-vc"></a><span data-ttu-id="71407-102">Type プロパティの使用例 (Field) (VC++)</span><span class="sxs-lookup"><span data-stu-id="71407-102">Type property example (Field) (VC++)</span></span>
 
 
-<span data-ttu-id="cdeff-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="cdeff-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="71407-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="71407-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="cdeff-p101">この例では、***Employees*** テーブルにあるすべての [Field](field-object-ado.md) オブジェクトの [Type](type-property-ado.md) プロパティの値に対応する定数の名前を表示することによって、**Type** プロパティの機能を示します。このプロシージャを実行するには、FieldType 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="cdeff-p101">This example demonstrates the [Type](type-property-ado.md) property by displaying the name of the constant that corresponds to the value of the **Type** property of all the [Field](field-object-ado.md) objects in the ***Employees*** table. The FieldType function is required for this procedure to run.</span></span>
+<span data-ttu-id="71407-p101">この例では、***Employees*** テーブルにあるすべての [Field](field-object-ado.md) オブジェクトの [Type](type-property-ado.md) プロパティの値に対応する定数の名前を表示することによって、**Type** プロパティの機能を示します。このプロシージャを実行するには、FieldType 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="71407-p101">This example demonstrates the [Type](type-property-ado.md) property by displaying the name of the constant that corresponds to the value of the **Type** property of all the [Field](field-object-ado.md) objects in the ***Employees*** table. The FieldType function is required for this procedure to run.</span></span>
 
 ```cpp 
  

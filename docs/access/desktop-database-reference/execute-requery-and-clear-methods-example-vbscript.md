@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249142(v=office.15)
 ms:contentKeyID: 48544252
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 340be13a5b6acb830ec38108d4a279814d1c459a
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 594c969aafb071888383a717efb2b5db20039b1c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863046"
+ms.locfileid: "25886474"
 ---
-# <a name="execute-requery-and-clear-methods-example-vbscript"></a><span data-ttu-id="4b23a-102">Execute メソッド、Requery メソッド、Clear メソッドの使用例 (VBScript)</span><span class="sxs-lookup"><span data-stu-id="4b23a-102">Execute, Requery, and Clear methods example (VBScript)</span></span>
+# <a name="execute-requery-and-clear-methods-example-vbscript"></a><span data-ttu-id="51973-102">Execute メソッド、Requery メソッド、Clear メソッドの使用例 (VBScript)</span><span class="sxs-lookup"><span data-stu-id="51973-102">Execute, Requery, and Clear methods example (VBScript)</span></span>
 
 
-<span data-ttu-id="4b23a-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="4b23a-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="51973-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="51973-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="4b23a-p101">この例では、Command オブジェクトの Execute メソッドを実行する場合と Connection オブジェクトの Execute メソッドを実行する場合を示します。また、Requery メソッドを使用して Recordset 内の最新のデータを取得し、Clear メソッドを使用して Errors コレクションの内容をクリアします。このプロシージャを実行するには ExecuteCommand プロシージャおよび PrintOutput プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="4b23a-p101">This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object. It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a [recordset](recordset-object-ado.md), and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection. The ExecuteCommand and PrintOutput procedures are required for this procedure to run.</span></span>
+<span data-ttu-id="51973-p101">この例では、Command オブジェクトの Execute メソッドを実行する場合と Connection オブジェクトの Execute メソッドを実行する場合を示します。また、Requery メソッドを使用して Recordset 内の最新のデータを取得し、Clear メソッドを使用して Errors コレクションの内容をクリアします。このプロシージャを実行するには ExecuteCommand プロシージャおよび PrintOutput プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="51973-p101">This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object. It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a [recordset](recordset-object-ado.md), and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection. The ExecuteCommand and PrintOutput procedures are required for this procedure to run.</span></span>
 
-<span data-ttu-id="4b23a-107">次の例は、Active Server Pages (ASP) で使用してください。</span><span class="sxs-lookup"><span data-stu-id="4b23a-107">Use the following example in an Active Server Page (ASP).</span></span> <span data-ttu-id="4b23a-108">**Find** を使用してファイル Adovbs.inc を検索し、使用するディレクトリに置きます。</span><span class="sxs-lookup"><span data-stu-id="4b23a-108">Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use.</span></span> <span data-ttu-id="4b23a-109">次のコードをメモ帳または別のテキスト エディターに貼り付けますを切り取って**ExecuteVBS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="4b23a-109">Cut and paste the following code into Notepad or another text editor, and save it as **ExecuteVBS.asp**.</span></span> <span data-ttu-id="4b23a-110">任意のクライアント ブラウザーに結果を表示します。</span><span class="sxs-lookup"><span data-stu-id="4b23a-110">You can view the result in any client browser.</span></span>
+<span data-ttu-id="51973-107">次の例は、Active Server Pages (ASP) で使用してください。</span><span class="sxs-lookup"><span data-stu-id="51973-107">Use the following example in an Active Server Page (ASP).</span></span> <span data-ttu-id="51973-108">**Find** を使用してファイル Adovbs.inc を検索し、使用するディレクトリに置きます。</span><span class="sxs-lookup"><span data-stu-id="51973-108">Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use.</span></span> <span data-ttu-id="51973-109">次のコードをメモ帳または別のテキスト エディターに貼り付けますを切り取って**ExecuteVBS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="51973-109">Cut and paste the following code into Notepad or another text editor, and save it as **ExecuteVBS.asp**.</span></span> <span data-ttu-id="51973-110">任意のクライアント ブラウザーに結果を表示します。</span><span class="sxs-lookup"><span data-stu-id="51973-110">You can view the result in any client browser.</span></span>
 
 ```vb 
  

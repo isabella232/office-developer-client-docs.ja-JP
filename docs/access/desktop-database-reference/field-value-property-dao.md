@@ -6,38 +6,38 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195493(v=office.15)
 ms:contentKeyID: 48545465
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 946ce8ec4219229e047d1bef5c3ff6de403eb7c9
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1c45024d4677fa4ef4a35b07cca0b039378a996f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477016"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889764"
 ---
-# <a name="fieldvalue-property-dao"></a><span data-ttu-id="6d40e-102">Field.Value プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="6d40e-102">Field.Value Property (DAO)</span></span>
+# <a name="fieldvalue-property-dao"></a><span data-ttu-id="f7019-102">Field.Value プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="f7019-102">Field.Value Property (DAO)</span></span>
 
 
-<span data-ttu-id="6d40e-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="6d40e-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="f7019-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f7019-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="6d40e-p101">オブジェクトの値を設定します。値の取得および設定が可能です。バリアント型 ( **Variant**) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="6d40e-p101">Sets or returns the value of an object. Read/write **Variant**.</span></span>
+<span data-ttu-id="f7019-p101">オブジェクトの値を設定します。値の取得および設定が可能です。バリアント型 ( **Variant**) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="f7019-p101">Sets or returns the value of an object. Read/write **Variant**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="6d40e-106">構文</span><span class="sxs-lookup"><span data-stu-id="6d40e-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f7019-106">構文</span><span class="sxs-lookup"><span data-stu-id="f7019-106">Syntax</span></span>
 
-<span data-ttu-id="6d40e-107">*式*です。値</span><span class="sxs-lookup"><span data-stu-id="6d40e-107">*expression* .Value</span></span>
+<span data-ttu-id="f7019-107">*式*です。値</span><span class="sxs-lookup"><span data-stu-id="f7019-107">*expression* .Value</span></span>
 
-<span data-ttu-id="6d40e-108">\*式\***Field**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="6d40e-108">*expression* A variable that represents a **Field** object.</span></span>
+<span data-ttu-id="f7019-108">\*式\***Field**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="f7019-108">*expression* A variable that represents a **Field** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="6d40e-109">注釈</span><span class="sxs-lookup"><span data-stu-id="6d40e-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f7019-109">注釈</span><span class="sxs-lookup"><span data-stu-id="f7019-109">Remarks</span></span>
 
-<span data-ttu-id="6d40e-110">設定値または戻り値は、オブジェクトの **Type** プロパティに指定されているデータ型に対して適切な値として評価されるバリアント型 (Variant) の値です。</span><span class="sxs-lookup"><span data-stu-id="6d40e-110">The setting or return value is a Variant data type that evaluates to a value appropriate for the data type, as specified by the **Type** property of an object.</span></span>
+<span data-ttu-id="f7019-110">設定値または戻り値は、オブジェクトの **Type** プロパティに指定されているデータ型に対して適切な値として評価されるバリアント型 (Variant) の値です。</span><span class="sxs-lookup"><span data-stu-id="f7019-110">The setting or return value is a Variant data type that evaluates to a value appropriate for the data type, as specified by the **Type** property of an object.</span></span>
 
-<span data-ttu-id="6d40e-111">通常、 **Value** プロパティは **Recordset** オブジェクトのデータを取得および変更するのに使用します。</span><span class="sxs-lookup"><span data-stu-id="6d40e-111">Generally, the **Value** property is used to retrieve and alter data in **Recordset** objects.</span></span>
+<span data-ttu-id="f7019-111">通常、 **Value** プロパティは **Recordset** オブジェクトのデータを取得および変更するのに使用します。</span><span class="sxs-lookup"><span data-stu-id="f7019-111">Generally, the **Value** property is used to retrieve and alter data in **Recordset** objects.</span></span>
 
-<span data-ttu-id="6d40e-p102">**Value** プロパティは、 **Field**、 **Parameter**、および **Property** の各オブジェクトの既定のプロパティです。このため、 **Value** プロパティを指定する代わりに、プロパティを直接参照してこれらのオブジェクトいずれかの値を設定または取得できます。</span><span class="sxs-lookup"><span data-stu-id="6d40e-p102">The **Value** property is the default property of the **Field**, **Parameter**, and **Property** objects. Therefore, you can set or return the value of one of these objects by referring to them directly instead of specifying the **Value** property.</span></span>
+<span data-ttu-id="f7019-p102">**Value** プロパティは、 **Field**、 **Parameter**、および **Property** の各オブジェクトの既定のプロパティです。このため、 **Value** プロパティを指定する代わりに、プロパティを直接参照してこれらのオブジェクトいずれかの値を設定または取得できます。</span><span class="sxs-lookup"><span data-stu-id="f7019-p102">The **Value** property is the default property of the **Field**, **Parameter**, and **Property** objects. Therefore, you can set or return the value of one of these objects by referring to them directly instead of specifying the **Value** property.</span></span>
 
-<span data-ttu-id="6d40e-114">不適切なコンテキスト (たとえば、 **TableDef** オブジェクトの **Fields** コレクションの **Field** オブジェクトの **Value** プロパティ) で **Value** プロパティを設定または取得しようとすると、トラップ可能なエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="6d40e-114">Trying to set or return the **Value** property in an inappropriate context (for example, the **Value** property of a **Field** object in the **Fields** collection of a **TableDef** object) will cause a trappable error.</span></span>
+<span data-ttu-id="f7019-114">不適切なコンテキスト (たとえば、 **TableDef** オブジェクトの **Fields** コレクションの **Field** オブジェクトの **Value** プロパティ) で **Value** プロパティを設定または取得しようとすると、トラップ可能なエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="f7019-114">Trying to set or return the **Value** property in an inappropriate context (for example, the **Value** property of a **Field** object in the **Fields** collection of a **TableDef** object) will cause a trappable error.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="6d40e-115">Microsoft SQL Server データベースから小数の値を取得する場合、これらの値は Microsoft Access ワークスペースで指数表記を使用して書式設定されますが、ODBCDirect ワークスペースでは通常の少数の値として表示されます。</span><span class="sxs-lookup"><span data-stu-id="6d40e-115">When reading decimal values from a Microsoft SQL Server database, they will be formatted using scientific notation through a Microsoft Access workspace, but will appear as normal decimal values through an ODBCDirect workspace.</span></span></P>
+> <P><span data-ttu-id="f7019-115">Microsoft SQL Server データベースから小数の値を取得する場合、これらの値は Microsoft Access ワークスペースで指数表記を使用して書式設定されますが、ODBCDirect ワークスペースでは通常の少数の値として表示されます。</span><span class="sxs-lookup"><span data-stu-id="f7019-115">When reading decimal values from a Microsoft SQL Server database, they will be formatted using scientific notation through a Microsoft Access workspace, but will appear as normal decimal values through an ODBCDirect workspace.</span></span></P>
 
 

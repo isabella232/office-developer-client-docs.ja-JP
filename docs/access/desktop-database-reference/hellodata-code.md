@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249860(v=office.15)
 ms:contentKeyID: 48547213
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5d474ca582cfda5252fe19cf0becae211a12075f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d13c9d32b806985586c9c09807106737483cc267
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477082"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886775"
 ---
-# <a name="hellodata-code"></a><span data-ttu-id="8d50b-102">HelloData のコード</span><span class="sxs-lookup"><span data-stu-id="8d50b-102">HelloData Code</span></span>
+# <a name="hellodata-code"></a><span data-ttu-id="f73a7-102">HelloData コード</span><span class="sxs-lookup"><span data-stu-id="f73a7-102">HelloData Code</span></span>
 
 
-<span data-ttu-id="8d50b-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="8d50b-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="f73a7-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f73a7-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 ```vb 
  

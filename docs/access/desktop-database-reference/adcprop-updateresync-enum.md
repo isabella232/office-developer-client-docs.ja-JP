@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249600(v=office.15)
 ms:contentKeyID: 48546145
 ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 056e68456b3f5bcf30768b0a5a616467c8271a5a
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 2407e412fe63b2cd8dc73927e2adfcd958a67a98
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861408"
+ms.locfileid: "25869401"
 ---
-# <a name="adcpropupdateresyncenum"></a><span data-ttu-id="8d3ae-102">ADCPROP\_UPDATERESYNC\_列挙型</span><span class="sxs-lookup"><span data-stu-id="8d3ae-102">ADCPROP\_UPDATERESYNC\_ENUM</span></span>
+# <a name="adcpropupdateresyncenum"></a><span data-ttu-id="ab724-102">ADCPROP\_UPDATERESYNC\_列挙型</span><span class="sxs-lookup"><span data-stu-id="ab724-102">ADCPROP\_UPDATERESYNC\_ENUM</span></span>
 
-<span data-ttu-id="8d3ae-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="8d3ae-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="ab724-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="ab724-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="8d3ae-104">[UpdateBatch](updatebatch-method-ado.md) メソッドに暗黙の [Resync](resync-method-ado.md) メソッド操作が続くかどうかを示し、続く場合はその操作の適用範囲を指定します。</span><span class="sxs-lookup"><span data-stu-id="8d3ae-104">Specifies whether the [UpdateBatch](updatebatch-method-ado.md) method is followed by an implicit [Resync](resync-method-ado.md) method operation and if so, the scope of that operation.</span></span>
+<span data-ttu-id="ab724-104">[UpdateBatch](updatebatch-method-ado.md) メソッドに暗黙の [Resync](resync-method-ado.md) メソッド操作が続くかどうかを示し、続く場合はその操作の適用範囲を指定します。</span><span class="sxs-lookup"><span data-stu-id="ab724-104">Specifies whether the [UpdateBatch](updatebatch-method-ado.md) method is followed by an implicit [Resync](resync-method-ado.md) method operation and if so, the scope of that operation.</span></span>
 
 <br/>
 
@@ -29,41 +29,41 @@ ms.locfileid: "25861408"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="8d3ae-105">定数</span><span class="sxs-lookup"><span data-stu-id="8d3ae-105">Constant</span></span></p></th>
-<th><p><span data-ttu-id="8d3ae-106">値</span><span class="sxs-lookup"><span data-stu-id="8d3ae-106">Value</span></span></p></th>
-<th><p><span data-ttu-id="8d3ae-107">説明</span><span class="sxs-lookup"><span data-stu-id="8d3ae-107">Description</span></span></p></th>
+<th><p><span data-ttu-id="ab724-105">定数</span><span class="sxs-lookup"><span data-stu-id="ab724-105">Constant</span></span></p></th>
+<th><p><span data-ttu-id="ab724-106">値</span><span class="sxs-lookup"><span data-stu-id="ab724-106">Value</span></span></p></th>
+<th><p><span data-ttu-id="ab724-107">説明</span><span class="sxs-lookup"><span data-stu-id="ab724-107">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="8d3ae-108"><strong>adResyncAll</strong></span><span class="sxs-lookup"><span data-stu-id="8d3ae-108"><strong>adResyncAll</strong></span></span></p></td>
-<td><p><span data-ttu-id="8d3ae-109">15</span><span class="sxs-lookup"><span data-stu-id="8d3ae-109">15</span></span></p></td>
-<td><p><span data-ttu-id="8d3ae-110">他のすべての ADCPROP_UPDATERESYNC_ENUM メンバーの結合された値を使用して、<strong>Resync</strong> を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="8d3ae-110">Invokes <strong>Resync</strong> with the combined value of all the other ADCPROP_UPDATERESYNC_ENUM members.</span></span></p></td>
+<td><p><span data-ttu-id="ab724-108"><strong>adResyncAll</strong></span><span class="sxs-lookup"><span data-stu-id="ab724-108"><strong>adResyncAll</strong></span></span></p></td>
+<td><p><span data-ttu-id="ab724-109">15</span><span class="sxs-lookup"><span data-stu-id="ab724-109">15</span></span></p></td>
+<td><p><span data-ttu-id="ab724-110">他のすべての ADCPROP_UPDATERESYNC_ENUM メンバーの結合された値を使用して、<strong>Resync</strong> を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="ab724-110">Invokes <strong>Resync</strong> with the combined value of all the other ADCPROP_UPDATERESYNC_ENUM members.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8d3ae-111"><strong>adResyncAutoIncrement</strong></span><span class="sxs-lookup"><span data-stu-id="8d3ae-111"><strong>adResyncAutoIncrement</strong></span></span></p></td>
-<td><p><span data-ttu-id="8d3ae-112">1</span><span class="sxs-lookup"><span data-stu-id="8d3ae-112">1</span></span></p></td>
-<td><p><span data-ttu-id="8d3ae-p101">既定値です。Microsoft Jet AutoNumber フィールドや Microsoft SQL Server の Identity 列など、データ ソースによって自動的に増分または生成される列の新しい ID 値を取得します。</span><span class="sxs-lookup"><span data-stu-id="8d3ae-p101">Default. Attempts to retrieve the new identity value for columns that are automatically incremented or generated by the data source, such as Microsoft Jet AutoNumber fields or Microsoft SQL Server Identity columns.</span></span></p></td>
+<td><p><span data-ttu-id="ab724-111"><strong>adResyncAutoIncrement</strong></span><span class="sxs-lookup"><span data-stu-id="ab724-111"><strong>adResyncAutoIncrement</strong></span></span></p></td>
+<td><p><span data-ttu-id="ab724-112">1</span><span class="sxs-lookup"><span data-stu-id="ab724-112">1</span></span></p></td>
+<td><p><span data-ttu-id="ab724-p101">既定値です。Microsoft Jet AutoNumber フィールドや Microsoft SQL Server の Identity 列など、データ ソースによって自動的に増分または生成される列の新しい ID 値を取得します。</span><span class="sxs-lookup"><span data-stu-id="ab724-p101">Default. Attempts to retrieve the new identity value for columns that are automatically incremented or generated by the data source, such as Microsoft Jet AutoNumber fields or Microsoft SQL Server Identity columns.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="8d3ae-115"><strong>adResyncConflicts</strong></span><span class="sxs-lookup"><span data-stu-id="8d3ae-115"><strong>adResyncConflicts</strong></span></span></p></td>
-<td><p><span data-ttu-id="8d3ae-116">2</span><span class="sxs-lookup"><span data-stu-id="8d3ae-116">2</span></span></p></td>
-<td><p><span data-ttu-id="8d3ae-117">同時実行の競合により更新操作または削除操作が失敗したすべての行について、<strong>Resync</strong> を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="8d3ae-117">Invokes <strong>Resync</strong> for all rows in which the update or delete operation failed because of a concurrency conflict.</span></span></p></td>
+<td><p><span data-ttu-id="ab724-115"><strong>adResyncConflicts</strong></span><span class="sxs-lookup"><span data-stu-id="ab724-115"><strong>adResyncConflicts</strong></span></span></p></td>
+<td><p><span data-ttu-id="ab724-116">2</span><span class="sxs-lookup"><span data-stu-id="ab724-116">2</span></span></p></td>
+<td><p><span data-ttu-id="ab724-117">同時実行の競合により更新操作または削除操作が失敗したすべての行について、<strong>Resync</strong> を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="ab724-117">Invokes <strong>Resync</strong> for all rows in which the update or delete operation failed because of a concurrency conflict.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8d3ae-118"><strong>adResyncInserts</strong></span><span class="sxs-lookup"><span data-stu-id="8d3ae-118"><strong>adResyncInserts</strong></span></span></p></td>
-<td><p><span data-ttu-id="8d3ae-119">8</span><span class="sxs-lookup"><span data-stu-id="8d3ae-119">8</span></span></p></td>
-<td><p><span data-ttu-id="8d3ae-120">正常に挿入されたすべての行について、 <strong>Resync</strong>を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="8d3ae-120">Invokes <strong>Resync</strong> for all successfully inserted rows.</span></span> <span data-ttu-id="8d3ae-121">ただし、オートインクリメント ・ カラムの値は再同期できません。</span><span class="sxs-lookup"><span data-stu-id="8d3ae-121">However, AutoIncrement column values are not resynchronized.</span></span> <span data-ttu-id="8d3ae-122">代わりに、新しく挿入された行の内容は、既存の主キーの値に基づいて再同期化されます。</span><span class="sxs-lookup"><span data-stu-id="8d3ae-122">Instead, the contents of newly inserted rows are resynchronized based on the existing primary key value.</span></span> <span data-ttu-id="8d3ae-123">主キーがオートインクリメント値の場合は、<strong>再同期</strong>と、目的の行の内容を取得できません。</span><span class="sxs-lookup"><span data-stu-id="8d3ae-123">If the primary key is an AutoIncrement value, <strong>Resync</strong> won't retrieve the contents of the intended row.</span></span> <span data-ttu-id="8d3ae-124">オートインクリメント ・ プライマリ ・ キー値を自動的にインクリメントするには、合計値の<strong>adResyncAutoIncrement</strong> + <strong>adResyncInserts</strong>に<strong>UpdateBatch</strong>を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="8d3ae-124">For automatically incrementing AutoIncrement primary key values, call <strong>UpdateBatch</strong> with the combined value <strong>adResyncAutoIncrement</strong> + <strong>adResyncInserts</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="ab724-118"><strong>adResyncInserts</strong></span><span class="sxs-lookup"><span data-stu-id="ab724-118"><strong>adResyncInserts</strong></span></span></p></td>
+<td><p><span data-ttu-id="ab724-119">8</span><span class="sxs-lookup"><span data-stu-id="ab724-119">8</span></span></p></td>
+<td><p><span data-ttu-id="ab724-120">正常に挿入されたすべての行について、 <strong>Resync</strong>を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="ab724-120">Invokes <strong>Resync</strong> for all successfully inserted rows.</span></span> <span data-ttu-id="ab724-121">ただし、オートインクリメント ・ カラムの値は再同期できません。</span><span class="sxs-lookup"><span data-stu-id="ab724-121">However, AutoIncrement column values are not resynchronized.</span></span> <span data-ttu-id="ab724-122">代わりに、新しく挿入された行の内容は、既存の主キーの値に基づいて再同期化されます。</span><span class="sxs-lookup"><span data-stu-id="ab724-122">Instead, the contents of newly inserted rows are resynchronized based on the existing primary key value.</span></span> <span data-ttu-id="ab724-123">主キーがオートインクリメント値の場合は、<strong>再同期</strong>と、目的の行の内容を取得できません。</span><span class="sxs-lookup"><span data-stu-id="ab724-123">If the primary key is an AutoIncrement value, <strong>Resync</strong> won't retrieve the contents of the intended row.</span></span> <span data-ttu-id="ab724-124">オートインクリメント ・ プライマリ ・ キー値を自動的にインクリメントするには、合計値の<strong>adResyncAutoIncrement</strong> + <strong>adResyncInserts</strong>に<strong>UpdateBatch</strong>を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="ab724-124">For automatically incrementing AutoIncrement primary key values, call <strong>UpdateBatch</strong> with the combined value <strong>adResyncAutoIncrement</strong> + <strong>adResyncInserts</strong>.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="8d3ae-125"><strong>adResyncNone</strong></span><span class="sxs-lookup"><span data-stu-id="8d3ae-125"><strong>adResyncNone</strong></span></span></p></td>
-<td><p><span data-ttu-id="8d3ae-126">0</span><span class="sxs-lookup"><span data-stu-id="8d3ae-126">0</span></span></p></td>
-<td><p><span data-ttu-id="8d3ae-127"><strong>Resync</strong> を呼び出しません。</span><span class="sxs-lookup"><span data-stu-id="8d3ae-127">Does not invoke <strong>Resync</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="ab724-125"><strong>adResyncNone</strong></span><span class="sxs-lookup"><span data-stu-id="ab724-125"><strong>adResyncNone</strong></span></span></p></td>
+<td><p><span data-ttu-id="ab724-126">0</span><span class="sxs-lookup"><span data-stu-id="ab724-126">0</span></span></p></td>
+<td><p><span data-ttu-id="ab724-127"><strong>Resync</strong> を呼び出しません。</span><span class="sxs-lookup"><span data-stu-id="ab724-127">Does not invoke <strong>Resync</strong>.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8d3ae-128"><strong>adResyncUpdates</strong></span><span class="sxs-lookup"><span data-stu-id="8d3ae-128"><strong>adResyncUpdates</strong></span></span></p></td>
-<td><p><span data-ttu-id="8d3ae-129">4</span><span class="sxs-lookup"><span data-stu-id="8d3ae-129">4</span></span></p></td>
-<td><p><span data-ttu-id="8d3ae-130">正常に更新されたすべての行について、<strong>Resync</strong> を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="8d3ae-130">Invokes <strong>Resync</strong> for all successfully updated rows.</span></span></p></td>
+<td><p><span data-ttu-id="ab724-128"><strong>adResyncUpdates</strong></span><span class="sxs-lookup"><span data-stu-id="ab724-128"><strong>adResyncUpdates</strong></span></span></p></td>
+<td><p><span data-ttu-id="ab724-129">4</span><span class="sxs-lookup"><span data-stu-id="ab724-129">4</span></span></p></td>
+<td><p><span data-ttu-id="ab724-130">正常に更新されたすべての行について、<strong>Resync</strong> を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="ab724-130">Invokes <strong>Resync</strong> for all successfully updated rows.</span></span></p></td>
 </tr>
 </tbody>
 </table>

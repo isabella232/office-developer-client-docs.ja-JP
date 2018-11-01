@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="6eba5-101"><<<<<<< ヘッド タイトル: 列とテーブルの追加方法、名前プロパティの使用例 (VB) TOCTitle: 列とテーブルの追加方法、名前プロパティの使用例 (VB) === タイトル: 列とテーブルの追加方法、名前プロパティの使用例 (VB)TOCTitle: 列とテーブルの追加方法、名前プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="6eba5-101"><<<<<<< HEAD title: Columns and Tables Append Methods, Name Property Example (VB) TOCTitle: Columns and Tables Append Methods, Name Property Example (VB) ======= title: Columns and Tables Append Methods, Name property example (VB) TOCTitle: Columns and Tables Append Methods, Name property example (VB)</span></span>
->>>>>>> <span data-ttu-id="6eba5-102">マスターの ms:assetid: 39458400-f30c-0636-19f2-c2c2788a6534 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249140(v=office.15) ms:contentKeyID: 48544238 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="6eba5-102">master ms:assetid: 39458400-f30c-0636-19f2-c2c2788a6534 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249140(v=office.15) ms:contentKeyID: 48544238 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: 列とテーブルの追加方法、名前プロパティの使用例 (VB)
+TOCTitle: Columns and Tables Append Methods, Name property example (VB)
+ms:assetid: 39458400-f30c-0636-19f2-c2c2788a6534
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249140(v=office.15)
+ms:contentKeyID: 48544238
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: f017092a5bd68a4fbde7cc1a7ceab9ccf3ff2900
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872558"
 ---
-
-<span data-ttu-id="6eba5-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="6eba5-103"><<<<<<< HEAD</span></span>
-# <a name="columns-and-tables-append-methods-name-property-example-vb"></a><span data-ttu-id="6eba5-104">列とテーブルの Append メソッドと Name プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="6eba5-104">Columns and Tables Append Methods, Name Property Example (VB)</span></span>
-=======
-# <a name="columns-and-tables-append-methods-name-property-example-vb"></a><span data-ttu-id="6eba5-105">列とテーブルの追加方法、名前プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="6eba5-105">Columns and Tables Append Methods, Name property example (VB)</span></span>
->>>>>>> <span data-ttu-id="6eba5-106">master</span><span class="sxs-lookup"><span data-stu-id="6eba5-106">master</span></span>
+# <a name="columns-and-tables-append-methods-name-property-example-vb"></a><span data-ttu-id="5bae7-102">列とテーブルの追加方法、名前プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="5bae7-102">Columns and Tables Append Methods, Name property example (VB)</span></span>
 
 
-<span data-ttu-id="6eba5-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="6eba5-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="5bae7-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="5bae7-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="6eba5-108">次のコードでは、新しいテーブルの作成方法を示します。</span><span class="sxs-lookup"><span data-stu-id="6eba5-108">The following code demonstrates how to create a new table.</span></span>
+<span data-ttu-id="5bae7-104">次のコードでは、新しいテーブルの作成方法を示します。</span><span class="sxs-lookup"><span data-stu-id="5bae7-104">The following code demonstrates how to create a new table.</span></span>
 
 ```vb 
  

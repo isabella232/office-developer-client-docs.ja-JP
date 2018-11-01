@@ -6,34 +6,34 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835700(v=office.15)
 ms:contentKeyID: 48548282
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ffca40d22d77a604e4c0b794a8070fb444d44a32
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 3783ed413d57eb3bb9a41fa1880485aa5d3ad281
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478716"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882449"
 ---
-# <a name="field2size-property-dao"></a><span data-ttu-id="024b4-102">Field2.Size プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="024b4-102">Field2.Size Property (DAO)</span></span>
+# <a name="field2size-property-dao"></a><span data-ttu-id="1fc0d-102">Field2.Size プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="1fc0d-102">Field2.Size Property (DAO)</span></span>
 
 
-<span data-ttu-id="024b4-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="024b4-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="1fc0d-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="1fc0d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-<span data-ttu-id="024b4-104">**Field2** オブジェクトの最大サイズをバイト数で示す値を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="024b4-104">Sets or returns a value that indicates the maximum size, in bytes, of a **Field2** object.</span></span>
+<span data-ttu-id="1fc0d-104">**Field2** オブジェクトの最大サイズをバイト数で示す値を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="1fc0d-104">Sets or returns a value that indicates the maximum size, in bytes, of a **Field2** object.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="024b4-105">構文</span><span class="sxs-lookup"><span data-stu-id="024b4-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="1fc0d-105">構文</span><span class="sxs-lookup"><span data-stu-id="1fc0d-105">Syntax</span></span>
 
-<span data-ttu-id="024b4-106">*式*です。サイズ</span><span class="sxs-lookup"><span data-stu-id="024b4-106">*expression* .Size</span></span>
+<span data-ttu-id="1fc0d-106">*式*です。サイズ</span><span class="sxs-lookup"><span data-stu-id="1fc0d-106">*expression* .Size</span></span>
 
-<span data-ttu-id="024b4-107">\*式\***Field2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="024b4-107">*expression* A variable that represents a **Field2** object.</span></span>
+<span data-ttu-id="1fc0d-107">\*式\***Field2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="1fc0d-107">*expression* A variable that represents a **Field2** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="024b4-108">注釈</span><span class="sxs-lookup"><span data-stu-id="024b4-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1fc0d-108">注釈</span><span class="sxs-lookup"><span data-stu-id="1fc0d-108">Remarks</span></span>
 
-<span data-ttu-id="024b4-109">**[Fields](fields-collection-dao.md)** コレクションに追加されていないオブジェクトの場合、このプロパティは値の取得および設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="024b4-109">For an object not yet appended to the **[Fields](fields-collection-dao.md)** collection, this property is read/write.</span></span>
+<span data-ttu-id="1fc0d-109">**[Fields](fields-collection-dao.md)** コレクションに追加されていないオブジェクトの場合、このプロパティは値の取得および設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="1fc0d-109">For an object not yet appended to the **[Fields](fields-collection-dao.md)** collection, this property is read/write.</span></span>
 
-<span data-ttu-id="024b4-p101">文字データを含むフィールド (メモ型 (Memo) フィールドを除く) では、 **Size** プロパティは、そのフィールドが保持できる最大文字数を示します。数値フィールドでは、 **Size** プロパティは保存に必要なバイト数を示します。</span><span class="sxs-lookup"><span data-stu-id="024b4-p101">For fields (other than Memo type fields) that contain character data, the **Size** property indicates the maximum number of characters that the field can hold. For numeric fields, the **Size** property indicates how many bytes of storage are required.</span></span>
+<span data-ttu-id="1fc0d-p101">文字データを含むフィールド (メモ型 (Memo) フィールドを除く) では、 **Size** プロパティは、そのフィールドが保持できる最大文字数を示します。数値フィールドでは、 **Size** プロパティは保存に必要なバイト数を示します。</span><span class="sxs-lookup"><span data-stu-id="1fc0d-p101">For fields (other than Memo type fields) that contain character data, the **Size** property indicates the maximum number of characters that the field can hold. For numeric fields, the **Size** property indicates how many bytes of storage are required.</span></span>
 
-<span data-ttu-id="024b4-112">**Size** プロパティを使用できるかどうかは、次の表に示すように、 **Field2** オブジェクトが追加される **Fields** コレクションを含むオブジェクトによって決まります。</span><span class="sxs-lookup"><span data-stu-id="024b4-112">Use of the **Size** property depends on the object that contains the **Fields** collection to which the **Field2** object is appended, as shown in the following table.</span></span>
+<span data-ttu-id="1fc0d-112">**Size** プロパティを使用できるかどうかは、次の表に示すように、 **Field2** オブジェクトが追加される **Fields** コレクションを含むオブジェクトによって決まります。</span><span class="sxs-lookup"><span data-stu-id="1fc0d-112">Use of the **Size** property depends on the object that contains the **Fields** collection to which the **Field2** object is appended, as shown in the following table.</span></span>
 
 <table>
 <colgroup>
@@ -42,42 +42,42 @@ ms.locfileid: "25478716"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="024b4-113">オブジェクトの追加先</span><span class="sxs-lookup"><span data-stu-id="024b4-113">Object appended to</span></span></p></th>
-<th><p><span data-ttu-id="024b4-114">使用例</span><span class="sxs-lookup"><span data-stu-id="024b4-114">Usage</span></span></p></th>
+<th><p><span data-ttu-id="1fc0d-113">オブジェクトの追加先</span><span class="sxs-lookup"><span data-stu-id="1fc0d-113">Object appended to</span></span></p></th>
+<th><p><span data-ttu-id="1fc0d-114">使用例</span><span class="sxs-lookup"><span data-stu-id="1fc0d-114">Usage</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="024b4-115"><strong>Index</strong></span><span class="sxs-lookup"><span data-stu-id="024b4-115"><strong>Index</strong></span></span></p></td>
-<td><p><span data-ttu-id="024b4-116">サポートされません。</span><span class="sxs-lookup"><span data-stu-id="024b4-116">Not supported</span></span></p></td>
+<td><p><span data-ttu-id="1fc0d-115"><strong>Index</strong></span><span class="sxs-lookup"><span data-stu-id="1fc0d-115"><strong>Index</strong></span></span></p></td>
+<td><p><span data-ttu-id="1fc0d-116">サポートされません。</span><span class="sxs-lookup"><span data-stu-id="1fc0d-116">Not supported</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="024b4-117"><strong>QueryDef</strong></span><span class="sxs-lookup"><span data-stu-id="024b4-117"><strong>QueryDef</strong></span></span></p></td>
-<td><p><span data-ttu-id="024b4-118">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="024b4-118">Read-only</span></span></p></td>
+<td><p><span data-ttu-id="1fc0d-117"><strong>QueryDef</strong></span><span class="sxs-lookup"><span data-stu-id="1fc0d-117"><strong>QueryDef</strong></span></span></p></td>
+<td><p><span data-ttu-id="1fc0d-118">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="1fc0d-118">Read-only</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="024b4-119"><strong>Recordset</strong></span><span class="sxs-lookup"><span data-stu-id="024b4-119"><strong>Recordset</strong></span></span></p></td>
-<td><p><span data-ttu-id="024b4-120">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="024b4-120">Read-only</span></span></p></td>
+<td><p><span data-ttu-id="1fc0d-119"><strong>Recordset</strong></span><span class="sxs-lookup"><span data-stu-id="1fc0d-119"><strong>Recordset</strong></span></span></p></td>
+<td><p><span data-ttu-id="1fc0d-120">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="1fc0d-120">Read-only</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="024b4-121"><strong>Relation</strong></span><span class="sxs-lookup"><span data-stu-id="024b4-121"><strong>Relation</strong></span></span></p></td>
-<td><p><span data-ttu-id="024b4-122">サポートされません。</span><span class="sxs-lookup"><span data-stu-id="024b4-122">Not supported</span></span></p></td>
+<td><p><span data-ttu-id="1fc0d-121"><strong>Relation</strong></span><span class="sxs-lookup"><span data-stu-id="1fc0d-121"><strong>Relation</strong></span></span></p></td>
+<td><p><span data-ttu-id="1fc0d-122">サポートされません。</span><span class="sxs-lookup"><span data-stu-id="1fc0d-122">Not supported</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="024b4-123"><strong>TableDef</strong></span><span class="sxs-lookup"><span data-stu-id="024b4-123"><strong>TableDef</strong></span></span></p></td>
-<td><p><span data-ttu-id="024b4-124">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="024b4-124">Read-only</span></span></p></td>
+<td><p><span data-ttu-id="1fc0d-123"><strong>TableDef</strong></span><span class="sxs-lookup"><span data-stu-id="1fc0d-123"><strong>TableDef</strong></span></span></p></td>
+<td><p><span data-ttu-id="1fc0d-124">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="1fc0d-124">Read-only</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="024b4-p102">テキスト型 (Text) 以外のデータ型の **Field2** オブジェクトを作成した場合、 **Type** プロパティの設定値により **Size** プロパティの設定値が自動的に決まるため、設定する必要はありません。ただし、テキスト型 (Text) の **Field2** オブジェクトでは、 **Size** プロパティを最大テキスト サイズ (Microsoft Access データベース エンジン データベースの場合 255) までの任意の整数に設定できます。サイズを設定していない場合、フィールドはデータベースで許可されるサイズになります。</span><span class="sxs-lookup"><span data-stu-id="024b4-p102">When you create a **Field2** object with a data type other than Text, the **Type** property setting automatically determines the **Size** property setting; you don't need to set it. For a **Field2** object with the Text data type, however, you can set **Size** to any integer up to the maximum text size (255 for Microsoft Access database engine databases). If you do not set the size, the field will be as large as the database allows.</span></span>
+<span data-ttu-id="1fc0d-p102">テキスト型 (Text) 以外のデータ型の **Field2** オブジェクトを作成した場合、 **Type** プロパティの設定値により **Size** プロパティの設定値が自動的に決まるため、設定する必要はありません。ただし、テキスト型 (Text) の **Field2** オブジェクトでは、 **Size** プロパティを最大テキスト サイズ (Microsoft Access データベース エンジン データベースの場合 255) までの任意の整数に設定できます。サイズを設定していない場合、フィールドはデータベースで許可されるサイズになります。</span><span class="sxs-lookup"><span data-stu-id="1fc0d-p102">When you create a **Field2** object with a data type other than Text, the **Type** property setting automatically determines the **Size** property setting; you don't need to set it. For a **Field2** object with the Text data type, however, you can set **Size** to any integer up to the maximum text size (255 for Microsoft Access database engine databases). If you do not set the size, the field will be as large as the database allows.</span></span>
 
-<span data-ttu-id="024b4-p103">ロング バイナリ型 (Long Binary) とメモ型 (Memo) の **Field2** オブジェクトでは、 **Size** は常に 0 に設定されます。特定のレコードのデータのサイズを識別するには、 **Field2** オブジェクトの **FieldSize** プロパティを使用します。ロング バイナリ型 (Long Binary) またはメモ型 (Memo) のフィールドの最大サイズを制限するのは、システム リソースまたはデータベースが許可する最大サイズのみです。</span><span class="sxs-lookup"><span data-stu-id="024b4-p103">For Long Binary and Memo **Field2** objects, **Size** is always set to 0. Use the **FieldSize** property of the **Field2** object to determine the size of the data in a specific record. The maximum size of a Long Binary or Memo field is limited only by your system resources or the maximum size that the database allows.</span></span>
+<span data-ttu-id="1fc0d-p103">ロング バイナリ型 (Long Binary) とメモ型 (Memo) の **Field2** オブジェクトでは、 **Size** は常に 0 に設定されます。特定のレコードのデータのサイズを識別するには、 **Field2** オブジェクトの **FieldSize** プロパティを使用します。ロング バイナリ型 (Long Binary) またはメモ型 (Memo) のフィールドの最大サイズを制限するのは、システム リソースまたはデータベースが許可する最大サイズのみです。</span><span class="sxs-lookup"><span data-stu-id="1fc0d-p103">For Long Binary and Memo **Field2** objects, **Size** is always set to 0. Use the **FieldSize** property of the **Field2** object to determine the size of the data in a specific record. The maximum size of a Long Binary or Memo field is limited only by your system resources or the maximum size that the database allows.</span></span>
 
-## <a name="example"></a><span data-ttu-id="024b4-131">例</span><span class="sxs-lookup"><span data-stu-id="024b4-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1fc0d-131">例</span><span class="sxs-lookup"><span data-stu-id="1fc0d-131">Example</span></span>
 
-<span data-ttu-id="024b4-132">次の使用例は、Employees テーブルの **Field2** オブジェクトの名前とサイズを列挙することで、 **Size** プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="024b4-132">This example demonstrates the **Size** property by enumerating the names and sizes of the **Field2** objects in the Employees table.</span></span>
+<span data-ttu-id="1fc0d-132">次の使用例は、Employees テーブルの **Field2** オブジェクトの名前とサイズを列挙することで、 **Size** プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="1fc0d-132">This example demonstrates the **Size** property by enumerating the names and sizes of the **Field2** objects in the Employees table.</span></span>
 
 ```vb
     Sub SizeX() 

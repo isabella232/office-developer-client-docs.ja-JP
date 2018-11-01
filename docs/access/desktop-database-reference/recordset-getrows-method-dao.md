@@ -10,27 +10,27 @@ f1_keywords:
 - dao360.chm1053362
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1ec084dce260d3371df9928c8cb65f1e8f6027e1
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 8f048ec72abb0037e04dd65cd85c8a1219530297
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25602707"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889757"
 ---
-# <a name="recordsetgetrows-method-dao"></a><span data-ttu-id="7a2d8-102">Recordset.GetRows メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="7a2d8-102">Recordset.GetRows Method (DAO)</span></span>
+# <a name="recordsetgetrows-method-dao"></a><span data-ttu-id="ec557-102">Recordset.GetRows メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="ec557-102">Recordset.GetRows Method (DAO)</span></span>
 
 
-<span data-ttu-id="7a2d8-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="7a2d8-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="ec557-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="ec557-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="7a2d8-104">**[Recordset](recordset-object-dao.md)** オブジェクトから複数の行を取得します。</span><span class="sxs-lookup"><span data-stu-id="7a2d8-104">Retrieves multiple rows from a **[Recordset](recordset-object-dao.md)** object.</span></span>
+<span data-ttu-id="ec557-104">**[Recordset](recordset-object-dao.md)** オブジェクトから複数の行を取得します。</span><span class="sxs-lookup"><span data-stu-id="ec557-104">Retrieves multiple rows from a **[Recordset](recordset-object-dao.md)** object.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="7a2d8-105">構文</span><span class="sxs-lookup"><span data-stu-id="7a2d8-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ec557-105">構文</span><span class="sxs-lookup"><span data-stu-id="ec557-105">Syntax</span></span>
 
-<span data-ttu-id="7a2d8-106">*式*です。GetRows (***NumRows***)</span><span class="sxs-lookup"><span data-stu-id="7a2d8-106">*expression* .GetRows(***NumRows***)</span></span>
+<span data-ttu-id="ec557-106">*式*です。GetRows (***NumRows***)</span><span class="sxs-lookup"><span data-stu-id="ec557-106">*expression* .GetRows(***NumRows***)</span></span>
 
-<span data-ttu-id="7a2d8-107">\*式\***レコード セット**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="7a2d8-107">*expression* A variable that represents a **Recordset** object.</span></span>
+<span data-ttu-id="ec557-107">\*式\***レコード セット**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="ec557-107">*expression* A variable that represents a **Recordset** object.</span></span>
 
-### <a name="parameters"></a><span data-ttu-id="7a2d8-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7a2d8-108">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="ec557-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ec557-108">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -41,62 +41,58 @@ ms.locfileid: "25602707"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="7a2d8-109">名前</span><span class="sxs-lookup"><span data-stu-id="7a2d8-109">Name</span></span></p></th>
-<th><p><span data-ttu-id="7a2d8-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="7a2d8-110">Required/Optional</span></span></p></th>
-<th><p><span data-ttu-id="7a2d8-111">データ型</span><span class="sxs-lookup"><span data-stu-id="7a2d8-111">Data Type</span></span></p></th>
-<th><p><span data-ttu-id="7a2d8-112">説明</span><span class="sxs-lookup"><span data-stu-id="7a2d8-112">Description</span></span></p></th>
+<th><p><span data-ttu-id="ec557-109">名前</span><span class="sxs-lookup"><span data-stu-id="ec557-109">Name</span></span></p></th>
+<th><p><span data-ttu-id="ec557-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="ec557-110">Required/Optional</span></span></p></th>
+<th><p><span data-ttu-id="ec557-111">データ型</span><span class="sxs-lookup"><span data-stu-id="ec557-111">Data Type</span></span></p></th>
+<th><p><span data-ttu-id="ec557-112">説明</span><span class="sxs-lookup"><span data-stu-id="ec557-112">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="7a2d8-113">NumRows</span><span class="sxs-lookup"><span data-stu-id="7a2d8-113">NumRows</span></span></p></td>
-<td><p><span data-ttu-id="7a2d8-114">省略可能</span><span class="sxs-lookup"><span data-stu-id="7a2d8-114">Optional</span></span></p></td>
-<td><p><span data-ttu-id="7a2d8-115"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="7a2d8-115"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="7a2d8-116">取得する行数。</span><span class="sxs-lookup"><span data-stu-id="7a2d8-116">The number of rows to retrieve.</span></span></p></td>
+<td><p><span data-ttu-id="ec557-113">NumRows</span><span class="sxs-lookup"><span data-stu-id="ec557-113">NumRows</span></span></p></td>
+<td><p><span data-ttu-id="ec557-114">省略可能</span><span class="sxs-lookup"><span data-stu-id="ec557-114">Optional</span></span></p></td>
+<td><p><span data-ttu-id="ec557-115"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="ec557-115"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="ec557-116">取得する行数。</span><span class="sxs-lookup"><span data-stu-id="ec557-116">The number of rows to retrieve.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="7a2d8-117"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="7a2d8-117"><<<<<<< HEAD</span></span>
-### <a name="return-value"></a><span data-ttu-id="7a2d8-118">戻り値</span><span class="sxs-lookup"><span data-stu-id="7a2d8-118">Return Value</span></span>
-=======
-### <a name="return-value"></a><span data-ttu-id="7a2d8-119">戻り値</span><span class="sxs-lookup"><span data-stu-id="7a2d8-119">Return value</span></span>
->>>>>>> <span data-ttu-id="7a2d8-120">master</span><span class="sxs-lookup"><span data-stu-id="7a2d8-120">master</span></span>
+### <a name="return-value"></a><span data-ttu-id="ec557-117">戻り値</span><span class="sxs-lookup"><span data-stu-id="ec557-117">Return value</span></span>
 
-<span data-ttu-id="7a2d8-121">バリアント型 (Variant)</span><span class="sxs-lookup"><span data-stu-id="7a2d8-121">Variant</span></span>
+<span data-ttu-id="ec557-118">バリアント型</span><span class="sxs-lookup"><span data-stu-id="ec557-118">Variant</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="7a2d8-122">注釈</span><span class="sxs-lookup"><span data-stu-id="7a2d8-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ec557-119">注釈</span><span class="sxs-lookup"><span data-stu-id="ec557-119">Remarks</span></span>
 
-<span data-ttu-id="7a2d8-p101">**GetRows** メソッドは、**Recordset** からレコードをコピーするために使用します。**GetRows** は 2 次元配列を返します。最初の添え字ではフィールドを指定し、2 番目の添え字では行番号を指定します。たとえば次の例では、intField はフィールドを表し、intRecord は行番号を表します。</span><span class="sxs-lookup"><span data-stu-id="7a2d8-p101">Use the **GetRows** method to copy records from a **Recordset**. **GetRows** returns a two-dimensional array. The first subscript identifies the field and the second identifies the row number. For example, intField represents the field, and intRecord identifies the row number:</span></span>
+<span data-ttu-id="ec557-p101">**GetRows** メソッドは、**Recordset** からレコードをコピーするために使用します。**GetRows** は 2 次元配列を返します。最初の添え字ではフィールドを指定し、2 番目の添え字では行番号を指定します。たとえば次の例では、intField はフィールドを表し、intRecord は行番号を表します。</span><span class="sxs-lookup"><span data-stu-id="ec557-p101">Use the **GetRows** method to copy records from a **Recordset**. **GetRows** returns a two-dimensional array. The first subscript identifies the field and the second identifies the row number. For example, intField represents the field, and intRecord identifies the row number:</span></span>
 
-<span data-ttu-id="7a2d8-127">avarRecords (intField、intRecord)</span><span class="sxs-lookup"><span data-stu-id="7a2d8-127">avarRecords(intField, intRecord)</span></span>
+<span data-ttu-id="ec557-124">avarRecords (intField、intRecord)</span><span class="sxs-lookup"><span data-stu-id="ec557-124">avarRecords(intField, intRecord)</span></span>
 
-<span data-ttu-id="7a2d8-128">2 行目の最初のフィールドの値を取得するには、次のようなコードを使用します。</span><span class="sxs-lookup"><span data-stu-id="7a2d8-128">To get the first field value in the second row returned, use code like the following:</span></span>
+<span data-ttu-id="ec557-125">2 行目の最初のフィールドの値を取得するには、次のようなコードを使用します。</span><span class="sxs-lookup"><span data-stu-id="ec557-125">To get the first field value in the second row returned, use code like the following:</span></span>
 
-<span data-ttu-id="7a2d8-129">フィールド 1 = avarRecords(0,1)</span><span class="sxs-lookup"><span data-stu-id="7a2d8-129">field1 = avarRecords(0,1)</span></span>
+<span data-ttu-id="ec557-126">フィールド 1 = avarRecords(0,1)</span><span class="sxs-lookup"><span data-stu-id="ec557-126">field1 = avarRecords(0,1)</span></span>
 
-<span data-ttu-id="7a2d8-130">1 行目の 2 番目のフィールドの値を取得するには、次のようなコードを使用します。</span><span class="sxs-lookup"><span data-stu-id="7a2d8-130">To get the second field value in the first row, use code like the following:</span></span>
+<span data-ttu-id="ec557-127">1 行目の 2 番目のフィールドの値を取得するには、次のようなコードを使用します。</span><span class="sxs-lookup"><span data-stu-id="ec557-127">To get the second field value in the first row, use code like the following:</span></span>
 
-<span data-ttu-id="7a2d8-131">field2 = avarRecords(1,0)</span><span class="sxs-lookup"><span data-stu-id="7a2d8-131">field2 = avarRecords(1,0)</span></span>
+<span data-ttu-id="ec557-128">field2 = avarRecords(1,0)</span><span class="sxs-lookup"><span data-stu-id="ec557-128">field2 = avarRecords(1,0)</span></span>
 
-<span data-ttu-id="7a2d8-132">avarRecords 変数は、**GetRows** によってデータが返されると、自動的に 2 次元配列となります。</span><span class="sxs-lookup"><span data-stu-id="7a2d8-132">The avarRecords variable automatically becomes a two-dimensional array when **GetRows** returns data.</span></span>
+<span data-ttu-id="ec557-129">avarRecords 変数は、**GetRows** によってデータが返されると、自動的に 2 次元配列となります。</span><span class="sxs-lookup"><span data-stu-id="ec557-129">The avarRecords variable automatically becomes a two-dimensional array when **GetRows** returns data.</span></span>
 
-<span data-ttu-id="7a2d8-133">取得できる行数よりも多くの行を要求すると、 **GetRows** は取得できる行数だけを返します。</span><span class="sxs-lookup"><span data-stu-id="7a2d8-133">If you request more rows than are available, then **GetRows** returns only the number of available rows.</span></span> <span data-ttu-id="7a2d8-134">配列のサイズは返された行数に応じて決まるため、Visual Basic for Applications の **UBound** 関数を使用すると、 **GetRows** によって実際に取得された行数を確認できます。</span><span class="sxs-lookup"><span data-stu-id="7a2d8-134">You can use the Visual Basic for Applications **UBound** function to determine how many rows **GetRows** actually retrieved, because the array is sized to fit the number of returned rows.</span></span> <span data-ttu-id="7a2d8-135">たとえば、**バリアント**varA という名前に結果を格納する場合は、実際に返された行の数を決定する次のコードを使用します。</span><span class="sxs-lookup"><span data-stu-id="7a2d8-135">For example, if you returned the results into a **Variant** called varA, you could use the following code to determine how many rows were actually returned:</span></span>
+<span data-ttu-id="ec557-130">取得できる行数よりも多くの行を要求すると、 **GetRows** は取得できる行数だけを返します。</span><span class="sxs-lookup"><span data-stu-id="ec557-130">If you request more rows than are available, then **GetRows** returns only the number of available rows.</span></span> <span data-ttu-id="ec557-131">配列のサイズは返された行数に応じて決まるため、Visual Basic for Applications の **UBound** 関数を使用すると、 **GetRows** によって実際に取得された行数を確認できます。</span><span class="sxs-lookup"><span data-stu-id="ec557-131">You can use the Visual Basic for Applications **UBound** function to determine how many rows **GetRows** actually retrieved, because the array is sized to fit the number of returned rows.</span></span> <span data-ttu-id="ec557-132">たとえば、**バリアント**varA という名前に結果を格納する場合は、実際に返された行の数を決定する次のコードを使用します。</span><span class="sxs-lookup"><span data-stu-id="ec557-132">For example, if you returned the results into a **Variant** called varA, you could use the following code to determine how many rows were actually returned:</span></span>
 
-<span data-ttu-id="7a2d8-136">numReturned = UBound(varA,2) + 1</span><span class="sxs-lookup"><span data-stu-id="7a2d8-136">numReturned = UBound(varA,2) + 1</span></span>
+<span data-ttu-id="ec557-133">numReturned = UBound(varA,2) + 1</span><span class="sxs-lookup"><span data-stu-id="ec557-133">numReturned = UBound(varA,2) + 1</span></span>
 
-<span data-ttu-id="7a2d8-p103">返された最初の行は配列の 0 番目の要素となるため、"+ 1" を付ける必要があります。取得できる行数は、使用できるメモリの容量によって制限されます。テーブルのサイズが大きい場合は、**GetRows** を使用してテーブル全体を配列として取得しないでください。</span><span class="sxs-lookup"><span data-stu-id="7a2d8-p103">You need to use "+ 1" because the first row returned is in the 0 element of the array. The number of rows that you can retrieve is constrained by the amount of available memory. You shouldn't use **GetRows** to retrieve an entire table into an array if it is large.</span></span>
+<span data-ttu-id="ec557-p103">返された最初の行は配列の 0 番目の要素となるため、"+ 1" を付ける必要があります。取得できる行数は、使用できるメモリの容量によって制限されます。テーブルのサイズが大きい場合は、**GetRows** を使用してテーブル全体を配列として取得しないでください。</span><span class="sxs-lookup"><span data-stu-id="ec557-p103">You need to use "+ 1" because the first row returned is in the 0 element of the array. The number of rows that you can retrieve is constrained by the amount of available memory. You shouldn't use **GetRows** to retrieve an entire table into an array if it is large.</span></span>
 
-<span data-ttu-id="7a2d8-140">**GetRows** は、メモ型 (Memo) およびロング バイナリ型 (Long Binary) のフィールドを含む、 **Recordset** のすべてのフィールドが配列として返されるので、クエリを使用して取得する行数を制限した方がよい場合があります。</span><span class="sxs-lookup"><span data-stu-id="7a2d8-140">Because **GetRows** returns all fields of the **Recordset** into the array, including Memo and Long Binary fields, you might want to use a query that restricts the fields returned.</span></span>
+<span data-ttu-id="ec557-137">**GetRows** は、メモ型 (Memo) およびロング バイナリ型 (Long Binary) のフィールドを含む、 **Recordset** のすべてのフィールドが配列として返されるので、クエリを使用して取得する行数を制限した方がよい場合があります。</span><span class="sxs-lookup"><span data-stu-id="ec557-137">Because **GetRows** returns all fields of the **Recordset** into the array, including Memo and Long Binary fields, you might want to use a query that restricts the fields returned.</span></span>
 
-<span data-ttu-id="7a2d8-141">**GetRows** の呼び出し後、まだ読み込まれていない次の行がカレント レコードになります。</span><span class="sxs-lookup"><span data-stu-id="7a2d8-141">After you call **GetRows**, the current record is positioned at the next unread row.</span></span> <span data-ttu-id="7a2d8-142">**GetRows**は、numrows の**移動**現在のレコードに同じです。</span><span class="sxs-lookup"><span data-stu-id="7a2d8-142">That is, **GetRows** has the same effect on the current record as **Move** numrows.</span></span>
+<span data-ttu-id="ec557-138">**GetRows** の呼び出し後、まだ読み込まれていない次の行がカレント レコードになります。</span><span class="sxs-lookup"><span data-stu-id="ec557-138">After you call **GetRows**, the current record is positioned at the next unread row.</span></span> <span data-ttu-id="ec557-139">**GetRows**は、numrows の**移動**現在のレコードに同じです。</span><span class="sxs-lookup"><span data-stu-id="ec557-139">That is, **GetRows** has the same effect on the current record as **Move** numrows.</span></span>
 
-<span data-ttu-id="7a2d8-p105">複数の **GetRows** 呼び出しを使用してすべての行を取得しようとする場合は、 **[EOF](recordset-eof-property-dao.md)** プロパティを使用して、 **Recordset** の末尾に達していないことを確認してください。 **Recordset** の末尾に達した場合や、要求された範囲のある行を取得できない場合、 **GetRows** は要求された数よりも少ない行を返します。たとえば、10 件のレコードを取得しようといる場合、5 番目のレコードを取得できないときは、 **GetRows** は 4 件のレコードを取得し、5 番目のレコードをカレント レコードにします。この場合、実行時エラーは発生しません。ダイナセット タイプの **Recordset** で別のユーザーがレコードを削除した場合に、このような状況が起こります。このような場合の処理方法については、使用例を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7a2d8-p105">If you are trying to retrieve all the rows by using multiple **GetRows** calls, use the **[EOF](recordset-eof-property-dao.md)** property to be sure that you're at the end of the **Recordset**. **GetRows** returns less than the number requested if it's at the end of the **Recordset**, or if it can't retrieve a row in the range requested. For example, if you're trying to retrieve 10 records, but you can't retrieve the fifth record, **GetRows** returns four records and makes the fifth record the current record. This will not generate a run-time error. This might occur if another user deletes a record in a dynaset-type **Recordset**. See the example for a demonstration of how to handle this.</span></span>
+<span data-ttu-id="ec557-p105">複数の **GetRows** 呼び出しを使用してすべての行を取得しようとする場合は、 **[EOF](recordset-eof-property-dao.md)** プロパティを使用して、 **Recordset** の末尾に達していないことを確認してください。 **Recordset** の末尾に達した場合や、要求された範囲のある行を取得できない場合、 **GetRows** は要求された数よりも少ない行を返します。たとえば、10 件のレコードを取得しようといる場合、5 番目のレコードを取得できないときは、 **GetRows** は 4 件のレコードを取得し、5 番目のレコードをカレント レコードにします。この場合、実行時エラーは発生しません。ダイナセット タイプの **Recordset** で別のユーザーがレコードを削除した場合に、このような状況が起こります。このような場合の処理方法については、使用例を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ec557-p105">If you are trying to retrieve all the rows by using multiple **GetRows** calls, use the **[EOF](recordset-eof-property-dao.md)** property to be sure that you're at the end of the **Recordset**. **GetRows** returns less than the number requested if it's at the end of the **Recordset**, or if it can't retrieve a row in the range requested. For example, if you're trying to retrieve 10 records, but you can't retrieve the fifth record, **GetRows** returns four records and makes the fifth record the current record. This will not generate a run-time error. This might occur if another user deletes a record in a dynaset-type **Recordset**. See the example for a demonstration of how to handle this.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7a2d8-149">例</span><span class="sxs-lookup"><span data-stu-id="7a2d8-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ec557-146">例</span><span class="sxs-lookup"><span data-stu-id="ec557-146">Example</span></span>
 
-<span data-ttu-id="7a2d8-p106">この例では、 **GetRows** メソッドを使用して、指定した数の行を **Recordset** から取得し、結果データを配列に設定します。 **GetRows** メソッドでは、 **EOF** に達した場合、および他のユーザーによって削除されたレコードを **GetRows** が取得しようとした場合に、指定よりも少ない数の行が返されます。2 番目の場合のみ、 **False** が返されます。このプロシージャを実行するには、GetRowsOK 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="7a2d8-p106">This example uses the **GetRows** method to retrieve a specified number of rows from a **Recordset** and to fill an array with the resulting data. The **GetRows** method will return fewer than the desired number of rows in two cases: either if **EOF** has been reached, or if **GetRows** tried to retrieve a record that was deleted by another user. The function returns **False** only if the second case occurs. The GetRowsOK function is required for this procedure to run.</span></span>
+<span data-ttu-id="ec557-p106">この例では、 **GetRows** メソッドを使用して、指定した数の行を **Recordset** から取得し、結果データを配列に設定します。 **GetRows** メソッドでは、 **EOF** に達した場合、および他のユーザーによって削除されたレコードを **GetRows** が取得しようとした場合に、指定よりも少ない数の行が返されます。2 番目の場合のみ、 **False** が返されます。このプロシージャを実行するには、GetRowsOK 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="ec557-p106">This example uses the **GetRows** method to retrieve a specified number of rows from a **Recordset** and to fill an array with the resulting data. The **GetRows** method will return fewer than the desired number of rows in two cases: either if **EOF** has been reached, or if **GetRows** tried to retrieve a record that was deleted by another user. The function returns **False** only if the second case occurs. The GetRowsOK function is required for this procedure to run.</span></span>
 
 ```vb
     Sub GetRowsX() 

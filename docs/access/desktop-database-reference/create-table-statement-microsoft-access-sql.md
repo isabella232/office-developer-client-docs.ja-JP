@@ -10,27 +10,27 @@ f1_keywords:
 - jetsql40.chm5277563
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: ccf9a88b427925528ce4e6a293d0b1351cef9883
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: c143e9121bd86b17856fd0e0998d2af0adf9dec6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863949"
+ms.locfileid: "25880909"
 ---
-# <a name="create-table-statement-microsoft-access-sql"></a><span data-ttu-id="26a1b-102">CREATE TABLE ステートメント (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="26a1b-102">CREATE TABLE statement (Microsoft Access SQL)</span></span>
+# <a name="create-table-statement-microsoft-access-sql"></a><span data-ttu-id="e0d66-102">CREATE TABLE ステートメント (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="e0d66-102">CREATE TABLE statement (Microsoft Access SQL)</span></span>
 
-<span data-ttu-id="26a1b-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="26a1b-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="e0d66-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="e0d66-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="26a1b-104">新しいテーブルを作成します。</span><span class="sxs-lookup"><span data-stu-id="26a1b-104">Creates a new table.</span></span>
+<span data-ttu-id="e0d66-104">新しいテーブルを作成します。</span><span class="sxs-lookup"><span data-stu-id="e0d66-104">Creates a new table.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="26a1b-105">[!メモ] Microsoft Access データベース エンジンは、Microsoft Access データベース エンジン以外のデータベースでは CREATE TABLE 句や DDL (データ定義言語) ステートメントを使用できません。</span><span class="sxs-lookup"><span data-stu-id="26a1b-105">The Microsoft Access database engine does not support the use of CREATE TABLE, or any of the DDL statements, with non-Microsoft Access database engine databases.</span></span> <span data-ttu-id="26a1b-106">**DAO を作成**メソッドを使用してください。</span><span class="sxs-lookup"><span data-stu-id="26a1b-106">Use the **DAO Create** methods instead.</span></span>
+> <span data-ttu-id="e0d66-105">[!メモ] Microsoft Access データベース エンジンは、Microsoft Access データベース エンジン以外のデータベースでは CREATE TABLE 句や DDL (データ定義言語) ステートメントを使用できません。</span><span class="sxs-lookup"><span data-stu-id="e0d66-105">The Microsoft Access database engine does not support the use of CREATE TABLE, or any of the DDL statements, with non-Microsoft Access database engine databases.</span></span> <span data-ttu-id="e0d66-106">**DAO を作成**メソッドを使用してください。</span><span class="sxs-lookup"><span data-stu-id="e0d66-106">Use the **DAO Create** methods instead.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="26a1b-107">構文</span><span class="sxs-lookup"><span data-stu-id="26a1b-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e0d66-107">構文</span><span class="sxs-lookup"><span data-stu-id="e0d66-107">Syntax</span></span>
 
-<span data-ttu-id="26a1b-108">作成\[一時\]テーブルの*テーブル*(*フィールド 1 種類* \[(*サイズ*)\] \[NOT NULL\] \[で圧縮。COMP と\] \[ *index1* \] \[、 *field2* *型* \[(*サイズ*)\] \[NOT NULL\] \[ *index2* \] \[、.\] \] \[、制約*multifieldindex* \[、.\]\])</span><span class="sxs-lookup"><span data-stu-id="26a1b-108">CREATE \[TEMPORARY\] TABLE *table* (*field1 type* \[(*size*)\] \[NOT NULL\] \[WITH COMPRESSION | WITH COMP\] \[*index1*\] \[, *field2* *type* \[(*size*)\] \[NOT NULL\] \[*index2*\] \[, …\]\] \[, CONSTRAINT *multifieldindex* \[, …\]\])</span></span>
+<span data-ttu-id="e0d66-108">作成\[一時\]テーブルの*テーブル*(*フィールド 1 種類* \[(*サイズ*)\] \[NOT NULL\] \[で圧縮。COMP と\] \[ *index1* \] \[、 *field2* *型* \[(*サイズ*)\] \[NOT NULL\] \[ *index2* \] \[、.\] \] \[、制約*multifieldindex* \[、.\]\])</span><span class="sxs-lookup"><span data-stu-id="e0d66-108">CREATE \[TEMPORARY\] TABLE *table* (*field1 type* \[(*size*)\] \[NOT NULL\] \[WITH COMPRESSION | WITH COMP\] \[*index1*\] \[, *field2* *type* \[(*size*)\] \[NOT NULL\] \[*index2*\] \[, …\]\] \[, CONSTRAINT *multifieldindex* \[, …\]\])</span></span>
 
-<span data-ttu-id="26a1b-109">CREATE TABLE ステートメントには、次の指定項目があります。</span><span class="sxs-lookup"><span data-stu-id="26a1b-109">The CREATE TABLE statement has these parts:</span></span>
+<span data-ttu-id="e0d66-109">CREATE TABLE ステートメントには、次の指定項目があります。</span><span class="sxs-lookup"><span data-stu-id="e0d66-109">The CREATE TABLE statement has these parts:</span></span>
 
 <table>
 <colgroup>
@@ -39,58 +39,58 @@ ms.locfileid: "25863949"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="26a1b-110">指定項目</span><span class="sxs-lookup"><span data-stu-id="26a1b-110">Part</span></span></p></th>
-<th><p><span data-ttu-id="26a1b-111">説明</span><span class="sxs-lookup"><span data-stu-id="26a1b-111">Description</span></span></p></th>
+<th><p><span data-ttu-id="e0d66-110">指定項目</span><span class="sxs-lookup"><span data-stu-id="e0d66-110">Part</span></span></p></th>
+<th><p><span data-ttu-id="e0d66-111">説明</span><span class="sxs-lookup"><span data-stu-id="e0d66-111">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="26a1b-112"><em>table</em></span><span class="sxs-lookup"><span data-stu-id="26a1b-112"><em>table</em></span></span></p></td>
-<td><p><span data-ttu-id="26a1b-113">作成するテーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="26a1b-113">The name of the table to be created.</span></span></p></td>
+<td><p><span data-ttu-id="e0d66-112"><em>table</em></span><span class="sxs-lookup"><span data-stu-id="e0d66-112"><em>table</em></span></span></p></td>
+<td><p><span data-ttu-id="e0d66-113">作成するテーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="e0d66-113">The name of the table to be created.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="26a1b-114"><em>field1</em>, <em>field2</em></span><span class="sxs-lookup"><span data-stu-id="26a1b-114"><em>field1</em>, <em>field2</em></span></span></p></td>
-<td><p><span data-ttu-id="26a1b-p102">新しいテーブルに作成するフィールドの名前。少なくとも 1 つのフィールドを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="26a1b-p102">The name of field or fields to be created in the new table. You must create at least one field.</span></span></p></td>
+<td><p><span data-ttu-id="e0d66-114"><em>field1</em>, <em>field2</em></span><span class="sxs-lookup"><span data-stu-id="e0d66-114"><em>field1</em>, <em>field2</em></span></span></p></td>
+<td><p><span data-ttu-id="e0d66-p102">新しいテーブルに作成するフィールドの名前。少なくとも 1 つのフィールドを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e0d66-p102">The name of field or fields to be created in the new table. You must create at least one field.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="26a1b-117"><em>type</em></span><span class="sxs-lookup"><span data-stu-id="26a1b-117"><em>type</em></span></span></p></td>
-<td><p><span data-ttu-id="26a1b-118">新規テーブルの<em>フィールド</em>のデータ型です。</span><span class="sxs-lookup"><span data-stu-id="26a1b-118">The data type of <em>field</em> in the new table.</span></span></p></td>
+<td><p><span data-ttu-id="e0d66-117"><em>type</em></span><span class="sxs-lookup"><span data-stu-id="e0d66-117"><em>type</em></span></span></p></td>
+<td><p><span data-ttu-id="e0d66-118">新規テーブルの<em>フィールド</em>のデータ型です。</span><span class="sxs-lookup"><span data-stu-id="e0d66-118">The data type of <em>field</em> in the new table.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="26a1b-119"><em>size</em></span><span class="sxs-lookup"><span data-stu-id="26a1b-119"><em>size</em></span></span></p></td>
-<td><p><span data-ttu-id="26a1b-120">バイト数で表したフィールド サイズ。テキスト型 (Text) およびバイナリ型 (Binary) フィールドのみ指定します。</span><span class="sxs-lookup"><span data-stu-id="26a1b-120">The field size in characters (Text and Binary fields only).</span></span></p></td>
+<td><p><span data-ttu-id="e0d66-119"><em>size</em></span><span class="sxs-lookup"><span data-stu-id="e0d66-119"><em>size</em></span></span></p></td>
+<td><p><span data-ttu-id="e0d66-120">バイト数で表したフィールド サイズ。テキスト型 (Text) およびバイナリ型 (Binary) フィールドのみ指定します。</span><span class="sxs-lookup"><span data-stu-id="e0d66-120">The field size in characters (Text and Binary fields only).</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="26a1b-121"><em>index1</em>, <em>index2</em></span><span class="sxs-lookup"><span data-stu-id="26a1b-121"><em>index1</em>, <em>index2</em></span></span></p></td>
-<td><p><span data-ttu-id="26a1b-122">単一フィールドを定義する CONSTRAINT 句。</span><span class="sxs-lookup"><span data-stu-id="26a1b-122">A CONSTRAINT clause defining a single-field index.</span></span> <span data-ttu-id="26a1b-123">このインデックスを作成する方法の詳細については、<a href="constraint-clause-microsoft-access-sql.md">制約句</a>を参照してください。</span><span class="sxs-lookup"><span data-stu-id="26a1b-123">For more information about how to create this index, see <a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT clause</a>.</span></span></p></td>
+<td><p><span data-ttu-id="e0d66-121"><em>index1</em>, <em>index2</em></span><span class="sxs-lookup"><span data-stu-id="e0d66-121"><em>index1</em>, <em>index2</em></span></span></p></td>
+<td><p><span data-ttu-id="e0d66-122">単一フィールドを定義する CONSTRAINT 句。</span><span class="sxs-lookup"><span data-stu-id="e0d66-122">A CONSTRAINT clause defining a single-field index.</span></span> <span data-ttu-id="e0d66-123">このインデックスを作成する方法の詳細については、<a href="constraint-clause-microsoft-access-sql.md">制約句</a>を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e0d66-123">For more information about how to create this index, see <a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT clause</a>.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="26a1b-124"><em>multifieldindex</em></span><span class="sxs-lookup"><span data-stu-id="26a1b-124"><em>multifieldindex</em></span></span></p></td>
-<td><p><span data-ttu-id="26a1b-125">複数フィールドを定義する CONSTRAINT 句。</span><span class="sxs-lookup"><span data-stu-id="26a1b-125">A CONSTRAINT clause defining a multiple-field index.</span></span> <span data-ttu-id="26a1b-126">このインデックスを作成する方法の詳細については、<a href="constraint-clause-microsoft-access-sql.md">制約句</a>を参照してください。</span><span class="sxs-lookup"><span data-stu-id="26a1b-126">For more information about how to create this index, see <a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT clause</a>.</span></span></p></td>
+<td><p><span data-ttu-id="e0d66-124"><em>multifieldindex</em></span><span class="sxs-lookup"><span data-stu-id="e0d66-124"><em>multifieldindex</em></span></span></p></td>
+<td><p><span data-ttu-id="e0d66-125">複数フィールドを定義する CONSTRAINT 句。</span><span class="sxs-lookup"><span data-stu-id="e0d66-125">A CONSTRAINT clause defining a multiple-field index.</span></span> <span data-ttu-id="e0d66-126">このインデックスを作成する方法の詳細については、<a href="constraint-clause-microsoft-access-sql.md">制約句</a>を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e0d66-126">For more information about how to create this index, see <a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT clause</a>.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="26a1b-127">解説</span><span class="sxs-lookup"><span data-stu-id="26a1b-127">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e0d66-127">解説</span><span class="sxs-lookup"><span data-stu-id="e0d66-127">Remarks</span></span>
 
-<span data-ttu-id="26a1b-128">CREATE TABLE ステートメントを使用すると、新しいテーブルとそのフィールド、およびフィールドの制約を定義できます。</span><span class="sxs-lookup"><span data-stu-id="26a1b-128">Use the CREATE TABLE statement to define a new table and its fields and field constraints.</span></span> <span data-ttu-id="26a1b-129">しない場合は、フィールドに NULL が指定されて、新しいレコードがそのフィールドに有効なデータが存在する必要です。</span><span class="sxs-lookup"><span data-stu-id="26a1b-129">If NOT NULL is specified for a field, new records are required to have valid data in that field.</span></span>
+<span data-ttu-id="e0d66-128">CREATE TABLE ステートメントを使用すると、新しいテーブルとそのフィールド、およびフィールドの制約を定義できます。</span><span class="sxs-lookup"><span data-stu-id="e0d66-128">Use the CREATE TABLE statement to define a new table and its fields and field constraints.</span></span> <span data-ttu-id="e0d66-129">しない場合は、フィールドに NULL が指定されて、新しいレコードがそのフィールドに有効なデータが存在する必要です。</span><span class="sxs-lookup"><span data-stu-id="e0d66-129">If NOT NULL is specified for a field, new records are required to have valid data in that field.</span></span>
 
-<span data-ttu-id="26a1b-p106">CONSTRAINT 句はフィールドに対してさまざまな制約を設定するもので、これを使用して主キーを設定することができます。また、[CREATE INDEX](create-index-statement-microsoft-access-sql.md) ステートメントを使用して、既存のテーブルに主キーまたは追加のインデックスを作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="26a1b-p106">A CONSTRAINT clause establishes various restrictions on a field, and can be used to establish the primary key. You can also use the [CREATE INDEX](create-index-statement-microsoft-access-sql.md) statement to create a primary key or additional indexes on existing tables.</span></span>
+<span data-ttu-id="e0d66-p106">CONSTRAINT 句はフィールドに対してさまざまな制約を設定するもので、これを使用して主キーを設定することができます。また、[CREATE INDEX](create-index-statement-microsoft-access-sql.md) ステートメントを使用して、既存のテーブルに主キーまたは追加のインデックスを作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="e0d66-p106">A CONSTRAINT clause establishes various restrictions on a field, and can be used to establish the primary key. You can also use the [CREATE INDEX](create-index-statement-microsoft-access-sql.md) statement to create a primary key or additional indexes on existing tables.</span></span>
 
-<span data-ttu-id="26a1b-p107">NOT NULL は、単一フィールド、または名前付き CONSTRAINT 句の内部で使用できます。名前付き CONSTRAINT 句は、単一フィールドまたは複数フィールドのどちらかの名前付き CONSTRAINT 句に適用されます。ただし、NOT NULL の制約を適用できるのはフィールドに対して一度のみです。再度適用しようとした場合は実行時エラーになります。</span><span class="sxs-lookup"><span data-stu-id="26a1b-p107">You can use NOT NULL on a single field or within a named CONSTRAINT clause that applies to either a single field or to a multiple-field named CONSTRAINT. However, you can apply the NOT NULL restriction only once to a field. Attempting to apply this restriction more than once results in a run-time error.</span></span>
+<span data-ttu-id="e0d66-p107">NOT NULL は、単一フィールド、または名前付き CONSTRAINT 句の内部で使用できます。名前付き CONSTRAINT 句は、単一フィールドまたは複数フィールドのどちらかの名前付き CONSTRAINT 句に適用されます。ただし、NOT NULL の制約を適用できるのはフィールドに対して一度のみです。再度適用しようとした場合は実行時エラーになります。</span><span class="sxs-lookup"><span data-stu-id="e0d66-p107">You can use NOT NULL on a single field or within a named CONSTRAINT clause that applies to either a single field or to a multiple-field named CONSTRAINT. However, you can apply the NOT NULL restriction only once to a field. Attempting to apply this restriction more than once results in a run-time error.</span></span>
 
-<span data-ttu-id="26a1b-135">一時テーブルを作成するときは表示が作成されたセッション内でのみです。</span><span class="sxs-lookup"><span data-stu-id="26a1b-135">When a TEMPORARY table is created, it is visible only within the session in which it was created.</span></span> <span data-ttu-id="26a1b-136">セッションが終了すると、自動的に削除されます。</span><span class="sxs-lookup"><span data-stu-id="26a1b-136">It is automatically deleted when the session is terminated.</span></span> <span data-ttu-id="26a1b-137">一時テーブルは、複数のユーザーからアクセスすることができます。</span><span class="sxs-lookup"><span data-stu-id="26a1b-137">Temporary tables can be accessed by more than one user.</span></span>
+<span data-ttu-id="e0d66-135">一時テーブルを作成するときは表示が作成されたセッション内でのみです。</span><span class="sxs-lookup"><span data-stu-id="e0d66-135">When a TEMPORARY table is created, it is visible only within the session in which it was created.</span></span> <span data-ttu-id="e0d66-136">セッションが終了すると、自動的に削除されます。</span><span class="sxs-lookup"><span data-stu-id="e0d66-136">It is automatically deleted when the session is terminated.</span></span> <span data-ttu-id="e0d66-137">一時テーブルは、複数のユーザーからアクセスすることができます。</span><span class="sxs-lookup"><span data-stu-id="e0d66-137">Temporary tables can be accessed by more than one user.</span></span>
 
-<span data-ttu-id="26a1b-138">WITH COMPRESSION 属性には、テキスト型 (Text) であるメモ型 (Memo) や文字型 (Character) および類似のデータ型のみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="26a1b-138">The WITH COMPRESSION attribute can be used only with the CHARACTER and MEMO (also known as TEXT) data types and their synonyms.</span></span>
+<span data-ttu-id="e0d66-138">WITH COMPRESSION 属性には、テキスト型 (Text) であるメモ型 (Memo) や文字型 (Character) および類似のデータ型のみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="e0d66-138">The WITH COMPRESSION attribute can be used only with the CHARACTER and MEMO (also known as TEXT) data types and their synonyms.</span></span>
 
-<span data-ttu-id="26a1b-139">Unicode 文字の表示形式に変更するために、WITH COMPRESSION 属性が CHARACTER 列に追加されました。</span><span class="sxs-lookup"><span data-stu-id="26a1b-139">The WITH COMPRESSION attribute was added for CHARACTER columns because of the change to the Unicode character representation format.</span></span> <span data-ttu-id="26a1b-140">Unicode 文字には、各文字一律に 2 バイトを必要とします。</span><span class="sxs-lookup"><span data-stu-id="26a1b-140">Unicode characters uniformly require two bytes for each character.</span></span> <span data-ttu-id="26a1b-141">主文字データを含む既存の Microsoft Jet データベースを Microsoft Access データベース エンジンの形式に変換するときのサイズで、データベース ・ ファイルがほぼ 2 倍はこの可能性があります。</span><span class="sxs-lookup"><span data-stu-id="26a1b-141">For existing Microsoft Jet databases that contain predominately character data, this could mean that the database file would nearly double in size when converted to the Microsoft Access database engine format.</span></span> <span data-ttu-id="26a1b-142">ただし、sbcs 以前 1 バイト文字を設定 ()、多くの文字セットの Unicode 表現は簡単に 1 バイトに圧縮できます。</span><span class="sxs-lookup"><span data-stu-id="26a1b-142">However, Unicode representation of many character sets, those formerly denoted as Single-Byte Character Sets (SBCS), can easily be compressed to a single byte.</span></span> <span data-ttu-id="26a1b-143">CHARACTER 列をこの属性で定義すると、データが格納時には自動的に圧縮され、取得時には圧縮解除されるようになります。</span><span class="sxs-lookup"><span data-stu-id="26a1b-143">If you define a CHARACTER column with this attribute, data will automatically be compressed as it is stored and uncompressed when retrieved from the column.</span></span>
+<span data-ttu-id="e0d66-139">Unicode 文字の表示形式に変更するために、WITH COMPRESSION 属性が CHARACTER 列に追加されました。</span><span class="sxs-lookup"><span data-stu-id="e0d66-139">The WITH COMPRESSION attribute was added for CHARACTER columns because of the change to the Unicode character representation format.</span></span> <span data-ttu-id="e0d66-140">Unicode 文字には、各文字一律に 2 バイトを必要とします。</span><span class="sxs-lookup"><span data-stu-id="e0d66-140">Unicode characters uniformly require two bytes for each character.</span></span> <span data-ttu-id="e0d66-141">主文字データを含む既存の Microsoft Jet データベースを Microsoft Access データベース エンジンの形式に変換するときのサイズで、データベース ・ ファイルがほぼ 2 倍はこの可能性があります。</span><span class="sxs-lookup"><span data-stu-id="e0d66-141">For existing Microsoft Jet databases that contain predominately character data, this could mean that the database file would nearly double in size when converted to the Microsoft Access database engine format.</span></span> <span data-ttu-id="e0d66-142">ただし、sbcs 以前 1 バイト文字を設定 ()、多くの文字セットの Unicode 表現は簡単に 1 バイトに圧縮できます。</span><span class="sxs-lookup"><span data-stu-id="e0d66-142">However, Unicode representation of many character sets, those formerly denoted as Single-Byte Character Sets (SBCS), can easily be compressed to a single byte.</span></span> <span data-ttu-id="e0d66-143">CHARACTER 列をこの属性で定義すると、データが格納時には自動的に圧縮され、取得時には圧縮解除されるようになります。</span><span class="sxs-lookup"><span data-stu-id="e0d66-143">If you define a CHARACTER column with this attribute, data will automatically be compressed as it is stored and uncompressed when retrieved from the column.</span></span>
 
-<span data-ttu-id="26a1b-p110">MEMO 列もデータの格納を圧縮形式で定義することができます。ただし、これには制限があります。圧縮時 4096 バイト以下になる MEMO 列のインスタンスのみ圧縮されます。それ以外の MEMO 列のインスタンスは圧縮されずに残ります。これは、所定のテーブルの所定の MEMO 列で、圧縮されたデータと圧縮されていないデータが混在している可能性があることを意味します。</span><span class="sxs-lookup"><span data-stu-id="26a1b-p110">MEMO columns can also be defined to store data in a compressed format. However, there is a limitation. Only instances of MEMO columns that, when compressed, will fit within 4096 bytes or less, will be compressed. All other instances of MEMO columns will remain uncompressed. This means that within a given table, for a given MEMO column, some data may be compressed and some data may not be compressed.</span></span>
+<span data-ttu-id="e0d66-p110">MEMO 列もデータの格納を圧縮形式で定義することができます。ただし、これには制限があります。圧縮時 4096 バイト以下になる MEMO 列のインスタンスのみ圧縮されます。それ以外の MEMO 列のインスタンスは圧縮されずに残ります。これは、所定のテーブルの所定の MEMO 列で、圧縮されたデータと圧縮されていないデータが混在している可能性があることを意味します。</span><span class="sxs-lookup"><span data-stu-id="e0d66-p110">MEMO columns can also be defined to store data in a compressed format. However, there is a limitation. Only instances of MEMO columns that, when compressed, will fit within 4096 bytes or less, will be compressed. All other instances of MEMO columns will remain uncompressed. This means that within a given table, for a given MEMO column, some data may be compressed and some data may not be compressed.</span></span>
 
-## <a name="example"></a><span data-ttu-id="26a1b-149">使用例</span><span class="sxs-lookup"><span data-stu-id="26a1b-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e0d66-149">使用例</span><span class="sxs-lookup"><span data-stu-id="e0d66-149">Example</span></span>
 
-<span data-ttu-id="26a1b-150">次の使用例では、2 つのテキスト フィールドを含む "ThisTable" という名前の新しいテーブルを作成します。</span><span class="sxs-lookup"><span data-stu-id="26a1b-150">This example creates a new table called ThisTable with two text fields.</span></span>
+<span data-ttu-id="e0d66-150">次の使用例では、2 つのテキスト フィールドを含む "ThisTable" という名前の新しいテーブルを作成します。</span><span class="sxs-lookup"><span data-stu-id="e0d66-150">This example creates a new table called ThisTable with two text fields.</span></span>
 
 ```vb
     Sub CreateTableX1() 
@@ -112,7 +112,7 @@ ms.locfileid: "25863949"
 
 <br/>
 
-<span data-ttu-id="26a1b-151">次の使用例では、テキスト フィールド 2 つと日付/時刻型 (Date/Time) フィールド、および 3 つのフィールドすべてから作成された一意のインデックスを含む、"MyTable" というテーブルを作成します。</span><span class="sxs-lookup"><span data-stu-id="26a1b-151">This example creates a new table called MyTable with two text fields, a Date/Time field, and a unique index made up of all three fields.</span></span>
+<span data-ttu-id="e0d66-151">次の使用例では、テキスト フィールド 2 つと日付/時刻型 (Date/Time) フィールド、および 3 つのフィールドすべてから作成された一意のインデックスを含む、"MyTable" というテーブルを作成します。</span><span class="sxs-lookup"><span data-stu-id="e0d66-151">This example creates a new table called MyTable with two text fields, a Date/Time field, and a unique index made up of all three fields.</span></span>
 
 ```vb
     Sub CreateTableX2() 
@@ -139,7 +139,7 @@ ms.locfileid: "25863949"
 
 <br/>
 
-<span data-ttu-id="26a1b-p111">次の使用例では、2 つのテキスト フィールドおよび整数型 ( **Integer** ) フィールドを含む新しいテーブルを作成します。SSN フィールドは主キーです。</span><span class="sxs-lookup"><span data-stu-id="26a1b-p111">This example creates a new table with two text fields and an **Integer** field. The SSN field is the primary key.</span></span>
+<span data-ttu-id="e0d66-p111">次の使用例では、2 つのテキスト フィールドおよび整数型 ( **Integer** ) フィールドを含む新しいテーブルを作成します。SSN フィールドは主キーです。</span><span class="sxs-lookup"><span data-stu-id="e0d66-p111">This example creates a new table with two text fields and an **Integer** field. The SSN field is the primary key.</span></span>
 
 ```vb
     Sub CreateTableX3() 
