@@ -10,17 +10,17 @@ f1_keywords:
 - acmain11.chm1032166
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: fb897c4e057b767c98676bc14c9f1e70c22095ee
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: eec27b3bbd8d23fef05ab8bfe4da0209acf80ac1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478420"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875162"
 ---
 # <a name="initializing-the-text-data-source-driver"></a>テキスト データ ソース ドライバーを初期化する
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 テキスト データ ソースと HTML データ ソースには、同じデータベース ドライバーが使用されます。
@@ -115,7 +115,7 @@ Microsoft Access データベース エンジンで使用される、Text キー
 <thead>
 <tr class="header">
 <th><p>エントリ名</p></th>
-<th><p>種類</p></th>
+<th><p>型</p></th>
 <th><p>値</p></th>
 </tr>
 </thead>
@@ -203,7 +203,7 @@ Microsoft Access データベース エンジンで使用される、Text キー
 <thead>
 <tr class="header">
 <th><p>エントリ名</p></th>
-<th><p>種類</p></th>
+<th><p>型</p></th>
 <th><p>値</p></th>
 </tr>
 </thead>
@@ -281,7 +281,7 @@ Microsoft Access データベース エンジンで使用される、Text キー
 <thead>
 <tr class="header">
 <th><p>エントリ名</p></th>
-<th><p>種類</p></th>
+<th><p>型</p></th>
 <th><p>値</p></th>
 </tr>
 </thead>

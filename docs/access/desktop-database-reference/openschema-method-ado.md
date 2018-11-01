@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249294(v=office.15)
 ms:contentKeyID: 48544970
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ddd823baf153ebc78fc34ca838184f415edd29ef
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 36f82510c4dd0004aa89b3f79ac0049cc2193ed3
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25605920"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25877668"
 ---
 # <a name="openschema-method-ado"></a>OpenSchema メソッド (ADO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 プロバイダーからデータベースのスキーマ情報を取得します。
@@ -25,11 +25,7 @@ ms.locfileid: "25605920"
 
 **設定。 レコード セット* = *接続*します。OpenSchema (* QueryType *、*条件*、 *SchemaID*)
 
-<<<<<<< ヘッド
 ## <a name="return-values"></a>戻り値
-=======
-## <a name="return-values"></a>戻り値
->>>>>>> master
 
 スキーマ情報を含む [Recordset](recordset-object-ado.md) オブジェクトを返します。 **Recordset** は読み取り専用の静的カーソルとして開かれます。 *QueryType*は、**レコード セット**に表示する列を決定します。
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248997(v=office.15)
 ms:contentKeyID: 48543690
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 53dfb03616b0610ed580f4e576f4c48ef3be8525
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 8c1308b084efbf68233e9647cfed26d905d56400
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479149"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878774"
 ---
 # <a name="ado-error-reference"></a>ADO のエラー リファレンス
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **ErrorValueEnum** 定数は、ADO エラーの値を表します。これらの列挙定数をすべて記載した一覧 (値を含む) については、「 [付録 B: ADO エラー一覧](appendix-b-ado-errors.md)」を参照してください。このセクションでは、一部の注意が必要なエラーについて概説し、それが発生する可能性のある具体的な状況、または問題の解決策について説明します。 **ErrorValueEnum** 定数と正の 10 進値で表されるエラー番号の両方を示します。
 

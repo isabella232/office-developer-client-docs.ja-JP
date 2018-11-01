@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: タイプ プロパティの使用例 (VB) の (フィールド) TOCTitle: タイプ プロパティの使用例 (VB) の (フィールド) === タイトル: タイプ プロパティの使用例 (VB) の (フィールド) TOCTitle: タイプ プロパティの使用例 (VB) の (フィールド)
->>>>>>> マスターの ms:assetid: ff9e26a8-898d-ec89-5093-69c66dbb05ba ms:mtpsurl: https://msdn.microsoft.com/library/JJ250314(v=office.15) ms:contentKeyID: 48548966 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Type プロパティの使用例 (Field) (VB)
+TOCTitle: Type property example (Field) (VB)
+ms:assetid: ff9e26a8-898d-ec89-5093-69c66dbb05ba
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250314(v=office.15)
+ms:contentKeyID: 48548966
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: b7478dd3ab4574b3315f5d57bf2f3680b8777e22
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889442"
 ---
-
-<<<<<<< ヘッド
 # <a name="type-property-example-field-vb"></a>Type プロパティの使用例 (Field) (VB)
-=======
-# <a name="type-property-example-field-vb"></a>プロパティの使用例 (VB) の (フィールド) を入力します。
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、***Employees*** テーブルにあるすべての [Field](field-object-ado.md) オブジェクトの [Type](type-property-ado.md) プロパティの値に対応する定数の名前を表示することによって、[Type](type-property-ado.md) プロパティの機能を示します。このプロシージャを実行するには、FieldType 関数が必要です。
 

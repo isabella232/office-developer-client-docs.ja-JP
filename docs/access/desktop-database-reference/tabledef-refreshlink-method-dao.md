@@ -10,16 +10,16 @@ f1_keywords:
 - dao360.chm1052980
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 5c9d3e5f48cdd85163eec291a13583c0d4b96204
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 88cd8083f8dc1b71c574be1e31a8b7b735595090
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477448"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876877"
 ---
 # <a name="tabledefrefreshlink-method-dao"></a>TableDef.RefreshLink メソッド (DAO)
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
  
 リンク テーブルの接続情報を更新します (Microsoft Access ワークスペースのみ)。
 

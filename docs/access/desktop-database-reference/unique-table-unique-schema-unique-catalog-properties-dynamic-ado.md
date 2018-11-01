@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250169(v=office.15)
 ms:contentKeyID: 48548374
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 71701d605a9a9b156de7b2c6a23100e30932aaea
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 7d358cf87160d8ddbf0b7354bd36375b5b8d41e9
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25602091"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25884528"
 ---
 # <a name="unique-table-unique-schema-unique-catalog-properties--dynamic-ado"></a>Unique Table、Unique Schema、および Unique Catalog プロパティ -- 動的 (ADO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 複数のベース テーブルに対する JOIN 操作で形成された [Recordset](recordset-object-ado.md) 中の、特定のベース テーブルに対する変更を細かく制御します。
 
@@ -26,11 +26,7 @@ ms.locfileid: "25602091"
 
   - **固有のカタログ**は、*カタログ*、またはテーブルを含むデータベースの名前を指定します。
 
-<<<<<<< ヘッド
-## <a name="settings-and-return-values"></a>設定値と戻り値
-=======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
->>>>>>> master
 
 テーブル、スキーマ、またはカタログの名前である文字列型 ( **String** ) の値を設定または取得します。
 

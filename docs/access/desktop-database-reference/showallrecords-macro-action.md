@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195587(v=office.15)
 ms:contentKeyID: 48545538
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 40221ce69a03f619bd15a5a89af9018c66c52791
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1b6482bcd34562e13e1783f8e0702718eeaed0b0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479177"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881735"
 ---
 # <a name="showallrecords-macro-action"></a>ShowAllRecords マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 " **ShowAllRecords/全レコードの表示** " アクションを使用すると、作業中のテーブル、クエリの結果セット、またはフォームに適用されているフィルターを解除して、テーブルまたは結果セットのすべてのレコード、またはフォームの基になっているテーブルまたはクエリのすべてのレコードを表示できます。

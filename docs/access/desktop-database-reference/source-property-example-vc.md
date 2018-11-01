@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: ソースのプロパティの使用例 (vc++) TOCTitle: ソースのプロパティの使用例 (vc++) === タイトル: ソースのプロパティの使用例 (vc++) TOCTitle: ソースのプロパティの使用例 (vc++)
->>>>>>> マスターの ms:assetid: 2c539e8b-04a8-2fc3-052e-a0776682e16c ms:mtpsurl: https://msdn.microsoft.com/library/JJ249067(v=office.15) ms:contentKeyID: 48543949 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Source プロパティの使用例 (VC++)
+TOCTitle: Source property example (VC++)
+ms:assetid: 2c539e8b-04a8-2fc3-052e-a0776682e16c
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249067(v=office.15)
+ms:contentKeyID: 48543949
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: d977f962e08ba8497392582fb26cfbf1d8691a28
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881203"
 ---
-
-<<<<<<< ヘッド
 # <a name="source-property-example-vc"></a>Source プロパティの使用例 (VC++)
-=======
-# <a name="source-property-example-vc"></a>ソース プロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、異なるデータ ソースに基づく 3 つの [Recordset](source-property-ado-recordset.md) オブジェクトを開くことによって、 [Source](recordset-object-ado.md) プロパティの機能を示します。
 

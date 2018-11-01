@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff836614(v=office.15)
 ms:contentKeyID: 48548642
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 936fff4988b086c4029fa4d933af3a9b9c299157
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 6999a4b95ea18065ed1ad15f336d005a2838a6b6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479161"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875582"
 ---
 # <a name="recordset2transactions-property-dao"></a>Recordset2.Transactions プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 オブジェクトがトランザクションをサポートしているかどうかを示す値を取得します。値の取得のみ可能です。ブール型 ( **Boolean**) の値を使用します。
 

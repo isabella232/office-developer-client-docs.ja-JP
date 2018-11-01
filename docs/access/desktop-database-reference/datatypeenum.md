@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249780(v=office.15)
 ms:contentKeyID: 48546904
 ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: f5c192589f2c90b2ce7b6c7b376b80c92b341e2d
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 7d1cbc0964c4e980c1dd5216431c5efd0c467dc4
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860659"
+ms.locfileid: "25878263"
 ---
 # <a name="datatypeenum"></a>DataTypeEnum
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [Field](field-object-ado.md)、[Parameter](parameter-object-ado.md)、または [Property](property-object-ado.md) のデータ型を指定します。 次の表の [説明] 列では、かっこでは、対応する OLE DB 型のインジケーターが表示されます。 OLE DB データ型の詳細については、第 13 章と付録 A の*OLE DB プログラマ リファレンス*を参照してください。
 

@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195966(v=office.15)
 ms:contentKeyID: 48545686
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 15577750d7c6a2373178bce9fefff16fef512023
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 24cb363d253e9abd18d251299c36edbdb371d56d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25602673"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880783"
 ---
 # <a name="databasecreatequerydef-method-dao"></a>Database.CreateQueryDef メソッド (DAO)
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 新しい **[QueryDef](querydef-object-dao.md)** オブジェクトを作成します。
 
@@ -59,11 +59,7 @@ ms.locfileid: "25602673"
 </table>
 
 
-<<<<<<< ヘッド
 ### <a name="return-value"></a>戻り値
-=======
-### <a name="return-value"></a>戻り値
->>>>>>> master
 
 QueryDef
 

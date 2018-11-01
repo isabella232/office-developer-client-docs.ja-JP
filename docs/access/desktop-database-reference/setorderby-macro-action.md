@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm98639
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 3f14ea2fb2c41058fe15764c3f06931ffd0dc9ae
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ac911110d313243879d6dff993061d58c208cd34
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478467"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876219"
 ---
 # <a name="setorderby-macro-action"></a>SetOrderBy マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **SetOrderBy** アクションを使用し、フォーム、レポート、テーブル、またはクエリ結果のレコードを並べ替えることができます。
 

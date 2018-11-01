@@ -1,29 +1,33 @@
 ---
-<<<<<<< ヘッド タイトル: 属性プロパティ (ADO) TOCTitle: 属性プロパティ (ADO) === タイトル: 属性のプロパティ (ADO) TOCTitle: 属性のプロパティ (ADO)
->>>>>>> マスターの ms:assetid: 4cc1f036-606e-7d4b-d270-af374e9d99fa ms:mtpsurl: https://msdn.microsoft.com/library/JJ249242(v=office.15) ms:contentKeyID: 48544716 ms.date: 2015/09/18 mtps_version: v=office.15 f1_keywords:
-- ado210.chm1231117 f1_categories。
+title: Attributes プロパティ (ADO)
+TOCTitle: Attributes property (ADO)
+ms:assetid: 4cc1f036-606e-7d4b-d270-af374e9d99fa
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249242(v=office.15)
+ms:contentKeyID: 48544716
+ms.date: 09/18/2015
+mtps_version: v=office.15
+f1_keywords:
+- ado210.chm1231117
+f1_categories:
 - Office.Version=v15
+ms.openlocfilehash: ea253515a673f0f941032e2920d84c7ebf68f1bf
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874819"
 ---
-
-<<<<<<< ヘッド
 # <a name="attributes-property-ado"></a>Attributes プロパティ (ADO)
-=======
-# <a name="attributes-property-ado"></a>Attributes プロパティ (ADO)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 ## <a name="attributes-property"></a>Attributes プロパティ
 
 オブジェクトの 1 つまたは複数の属性を示します。
 
-<<<<<<< ヘッド
-## <a name="settings-and-return-values"></a>設定値と戻り値
-=======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
->>>>>>> master
 
 長整数型 ( **Long** ) の値を設定または取得します。
 

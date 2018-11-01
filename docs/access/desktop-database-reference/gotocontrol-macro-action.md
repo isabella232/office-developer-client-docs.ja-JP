@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834370(v=office.15)
 ms:contentKeyID: 48547705
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2617544bf04aa0b26ccbb9d7ce8d7329d42ed1e9
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d068f6e0087d93d4a7dec3c5a7b2ed0f11c36be7
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477725"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874861"
 ---
 # <a name="gotocontrol-macro-action"></a>GoToControl マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 
@@ -88,7 +88,7 @@ Visual Basic for Applications (VBA) モジュールで " **GoToControl/コント
 <tr class="header">
 <th><p>アクション</p></th>
 <th><p>引数: 設定値</p></th>
-<th><p>コンポーネント</p></th>
+<th><p>コメント</p></th>
 </tr>
 </thead>
 <tbody>

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250269(v=office.15)
 ms:contentKeyID: 48548818
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0f3d29d20200b6e435ffafaaa35c7f507b88b939
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a9b106fa88df8205595312aaebdabf82cf12d57c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477833"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887811"
 ---
 # <a name="registering-business-objects-on-the-client-for-use-with-dcom"></a>DCOM を使用してビジネス オブジェクトをクライアントに登録する
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 カスタム ビジネス オブジェクトは、DCOM を介して使用できる識別子 (CLSID) にクライアント側がプログラム名 (ProgId) を確実にマップできるようにしておく必要があります。このため、DCOM オブジェクトの ProgID をクライアント側のレジストリに指定し、サーバー側ビジネス オブジェクトのクラス ID にマップする必要があります。サポートされている他のプロトコル (HTTP、HTTPS、およびインプロセス) では、この操作は必要ありません。
 

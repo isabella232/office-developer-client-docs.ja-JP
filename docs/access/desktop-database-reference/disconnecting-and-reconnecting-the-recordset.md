@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250077(v=office.15)
 ms:contentKeyID: 48547975
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 90435606bb0b3059f5769c12fe7cf3cac0c8f9f3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 094c68fbf5b62a7a1b3af16b826bf9c2c26a2af4
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479518"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882421"
 ---
 # <a name="disconnecting-and-reconnecting-the-recordset"></a>レコードセットを切断し、再接続する
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
-## <a name="disconnecting-and-reconnecting-the-recordset"></a>レコードセットを切断し、再接続する
+## <a name="disconnecting-and-reconnecting-the-recordset"></a>レコードセットの切断および再接続
 
 ADO の最も強力な機能の 1 つは、クライアント側の**Recordset**を開くと、データ ソース、データ ソースから**レコード セット***を切断*する機能です。 **レコード セット**を切断すると、データ ソースへの接続を終了できます、それを維持するために使用するサーバー上のリソースを解放します。 表示し切断されているときに、**レコード セット**内のデータを編集後、データ ソースに再接続し、更新をバッチ モードで送信を続行できます。
 

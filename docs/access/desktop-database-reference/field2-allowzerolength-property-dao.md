@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834791(v=office.15)
 ms:contentKeyID: 48547908
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b64a7312c2c7ce336e877823f6dedd76fccd4017
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f1ec717cdeda58ef8eabcb1cd62c2629018313db
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479104"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882526"
 ---
 # <a name="field2allowzerolength-property-dao"></a>Field2.AllowZeroLength プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 長さが 0 の文字列 ("") が、テキスト型またはメモ型の [Field2](field-value-property-dao.md) オブジェクトの ****Value**** プロパティの有効な設定値かどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。

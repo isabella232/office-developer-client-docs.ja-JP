@@ -1,14 +1,21 @@
 ---
-タイトル: ActionEnum (デスクトップ データベース参照のアクセス) TOCTitle: ActionEnum ms:assetid: 225024c1-9088-b532-2a23-04c1aaaaa892 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248998(v=office.15) ms:contentKeyID: 48543704 <<<<<<< ヘッド ms.date: 2015/09/18 === ms.date: 1017/2018
->>>>>>> マスター mtps_version: v=office.15
+title: ActionEnum (デスクトップ データベース参照のアクセス)
+TOCTitle: ActionEnum
+ms:assetid: 225024c1-9088-b532-2a23-04c1aaaaa892
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248998(v=office.15)
+ms:contentKeyID: 48543704
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: 65fe30c558d5fc22563e002f8d19cb78d7ca3e3d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879999"
 ---
-
 # <a name="actionenum"></a>ActionEnum
 
-<<<<<<< ヘッド
-
-=======
->>>>>>> マスターの**適用先**: Access 2013 |Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [SetPermissions](setpermissions-method-adox.md) メソッドの呼び出し時に実行されるアクションの種類を示します。
 

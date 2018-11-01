@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249566(v=office.15)
 ms:contentKeyID: 48545983
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4468887c0ef187e6dd955c20db91050415ec68ed
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 76bfc8f81b7f9df3d1b0e759620952f92bb5c8f1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476630"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875296"
 ---
 # <a name="detecting-and-resolving-conflicts"></a>競合を検出し、解決する
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
-## <a name="detecting-and-resolving-conflicts"></a>競合を検出し、解決する
+## <a name="detecting-and-resolving-conflicts"></a>競合の検出および解決
 
 **Recordset** をイミディエイト モードで処理している場合は、同時操作の問題が発生する可能性はきわめて低いといえます。一方、アプリケーションでバッチ モードの更新を使用している場合は、あるユーザーがレコードに対して加えた変更が保存される前に、同じレコードを編集している他のユーザーがそのレコードを変更する可能性が十分にあります。このような場合、アプリケーションがその競合をスムーズに処理できると便利です。サーバーに最後に更新を送信した人が "勝者" となる方がよい場合もあれば、直近に更新を実行したユーザーに 2 つの競合する値を提示して、どちらの更新を採用するのか決定してもらう方がよい場合もあります。
 

@@ -1,24 +1,26 @@
 ---
-<<<<<<< ヘッド タイトル: Count プロパティ (ADO) TOCTitle: Count プロパティ (ADO) === タイトル: Count プロパティ (ADO) TOCTitle: Count プロパティ (ADO)
->>>>>>> マスターの ms:assetid: b59f9581-ffd1-471d-44fa-3c1bb812e140 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249871(v=office.15) ms:contentKeyID: 48547253 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Count プロパティ (ADO)
+TOCTitle: Count property (ADO)
+ms:assetid: b59f9581-ffd1-471d-44fa-3c1bb812e140
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249871(v=office.15)
+ms:contentKeyID: 48547253
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: c710b02678940d898f910ef5215d879cd6ded163
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880860"
 ---
-
-<<<<<<< ヘッド
 # <a name="count-property-ado"></a>Count プロパティ (ADO)
-=======
-# <a name="count-property-ado"></a>Count プロパティ (ADO)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 コレクション内のオブジェクト数を示します。
 
-<<<<<<< ヘッド
 ## <a name="return-value"></a>戻り値
-=======
-## <a name="return-value"></a>戻り値
->>>>>>> master
 
 長整数型 ( **Long** ) の値を返します。
 

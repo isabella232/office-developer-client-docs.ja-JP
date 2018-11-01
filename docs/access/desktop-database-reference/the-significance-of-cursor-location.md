@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249296(v=office.15)
 ms:contentKeyID: 48544978
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e1b552ac2774fe0c5d47c19924219800e5bdf865
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 092e14f314b4bba1e49cbb4ad7707aad0311bfbc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477073"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880447"
 ---
 # <a name="the-significance-of-cursor-location"></a>カーソル位置の重要性
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 すべてのカーソルは、そのデータを保持するために、一時的なリソースを使用します。 これらのリソースは、メモリ、ディスクのページング ファイル、一時ディスク ファイル、またはデータベースにも一時的な記憶域にあります。 これらのリソースがクライアント コンピューター上にある場合、カーソルは*クライアント側*カーソルと呼ばれます。 これらのリソースがサーバー上にある場合、カーソルは、*サーバー側*カーソルと呼ばれます。
 

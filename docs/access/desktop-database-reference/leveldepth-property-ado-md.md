@@ -6,25 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249894(v=office.15)
 ms:contentKeyID: 48547366
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 80712421cc146e482f848a997fe5f2d95cd951b1
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 74be66479fbd911979401b66e5af2e2f62ade646
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25604275"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882470"
 ---
 # <a name="leveldepth-property-ado-md"></a>LevelDepth プロパティ (ADO MD)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 階層のルートとメンバーとの間にあるレベルの数を示します。
 
-<<<<<<< ヘッド
 ## <a name="return-values"></a>戻り値
-=======
-## <a name="return-values"></a>戻り値
->>>>>>> master
 
 長整数型 ( **Long** ) の値を取得します。値の取得のみが可能です。
 

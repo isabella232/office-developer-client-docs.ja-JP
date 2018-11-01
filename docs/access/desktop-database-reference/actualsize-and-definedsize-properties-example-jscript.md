@@ -1,16 +1,21 @@
 ---
-<<<<<<< ヘッド タイトル: ActualSize、DefinedSize プロパティの使用例 (JScript) TOCTitle: ActualSize、DefinedSize プロパティの使用例 (JScript) ms:assetid: cf8d6cb6-3446-c193-8774-db41c4d14a2b ms:mtpsurl: https://msdn.microsoft.com/library/JJ250032(v=office.15) ms。contentKeyID: 48547811 ms.date: 2015/09/18 mtps_version: v=office.15
+title: ActualSize プロパティと DefinedSize プロパティの使用例 (JScript)
+TOCTitle: ActualSize and DefinedSize properties example (JScript)
+ms:assetid: cf8d6cb6-3446-c193-8774-db41c4d14a2b
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250032(v=office.15)
+ms:contentKeyID: 48547811
+ms.date: 10/16/2018
+mtps_version: v=office.15
+ms.openlocfilehash: ce9c50039566511a4f22f3ab613e5dce36c3931d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878697"
 ---
-
 # <a name="actualsize-and-definedsize-properties-example-jscript"></a>ActualSize プロパティと DefinedSize プロパティの使用例 (JScript)
 
-=== タイトル: ActualSize、DefinedSize プロパティの使用例 (JScript) TOCTitle: ActualSize、DefinedSize プロパティの使用例 (JScript) ms:assetid: cf8d6cb6-3446-c193-8774-db41c4d14a2b ms:mtpsurl: https://msdn.microsoft.com/library/JJ250032(v=office.15) ms:contentKeyID: 48547811 ms.date: 10/16/2018 mtps_version: v=office.15
----
-
-# <a name="actualsize-and-definedsize-properties-example-jscript"></a>ActualSize、DefinedSize プロパティの使用例 (JScript)
->>>>>>> master
-
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の例では、[ActualSize](actualsize-property-ado.md) プロパティと [DefinedSize](definedsize-property-ado.md) プロパティを使用して、フィールドの定義されたサイズと実際のサイズを表示します。 切り取りメモ帳または別のテキスト エディターに次のコードを貼り付けして**ActualSizeJS.asp**として保存します。
 
@@ -22,11 +27,7 @@
 <html> 
  
 <head> 
-<<<<<<< HEAD
- <title>ActualSize and DefinedSize Properties Example (JScript)</title> 
-=======
  <title>ActualSize and DefinedSize properties example (JScript)</title> 
->>>>>>> master
 <style> 
 <!-- 
 body { 
