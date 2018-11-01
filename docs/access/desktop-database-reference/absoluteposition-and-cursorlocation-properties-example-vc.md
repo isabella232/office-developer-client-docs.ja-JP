@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="ca692-101"><<<<<<< ヘッド タイトル: AbsolutePosition と CursorLocation プロパティの使用例 (vc++) TOCTitle: AbsolutePosition と CursorLocation プロパティの使用例 (vc++) ms:assetid: a1ae63dd-296b-09b0-a898-091b855e3141 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249745(v=office.15)ms:contentKeyID: 48546739 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="ca692-101"><<<<<<< HEAD title: AbsolutePosition and CursorLocation Properties Example (VC++) TOCTitle: AbsolutePosition and CursorLocation Properties Example (VC++) ms:assetid: a1ae63dd-296b-09b0-a898-091b855e3141 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249745(v=office.15) ms:contentKeyID: 48546739 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: AbsolutePosition プロパティと CursorLocation プロパティの使用例 (VC++)
+TOCTitle: AbsolutePosition and CursorLocation properties example (VC++)
+ms:assetid: a1ae63dd-296b-09b0-a898-091b855e3141
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249745(v=office.15)
+ms:contentKeyID: 48546739
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: 4928fe6bc24dc3192809dd6ebfd3b106c0ca9572
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891052"
 ---
-
-# <a name="absoluteposition-and-cursorlocation-properties-example-vc"></a><span data-ttu-id="ca692-102">AbsolutePosition プロパティと CursorLocation プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="ca692-102">AbsolutePosition and CursorLocation Properties Example (VC++)</span></span>
-<span data-ttu-id="ca692-103">=== タイトル: AbsolutePosition と CursorLocation プロパティの使用例 (vc++) TOCTitle: AbsolutePosition と CursorLocation プロパティの使用例 (vc++) ms:assetid: a1ae63dd-296b-09b0-a898-091b855e3141 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249745(v=office.15) ms:contentKeyID: 48546739ms.date: 2018/10/17 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="ca692-103">======= title: AbsolutePosition and CursorLocation properties example (VC++) TOCTitle: AbsolutePosition and CursorLocation properties example (VC++) ms:assetid: a1ae63dd-296b-09b0-a898-091b855e3141 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249745(v=office.15) ms:contentKeyID: 48546739 ms.date: 10/17/2018 mtps_version: v=office.15</span></span>
----
-
-# <a name="absoluteposition-and-cursorlocation-properties-example-vc"></a><span data-ttu-id="ca692-104">AbsolutePosition と CursorLocation プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="ca692-104">AbsolutePosition and CursorLocation properties example (VC++)</span></span>
->>>>>>> <span data-ttu-id="ca692-105">master</span><span class="sxs-lookup"><span data-stu-id="ca692-105">master</span></span>
+# <a name="absoluteposition-and-cursorlocation-properties-example-vc"></a><span data-ttu-id="ad566-102">AbsolutePosition プロパティと CursorLocation プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="ad566-102">AbsolutePosition and CursorLocation properties example (VC++)</span></span>
 
 
-<span data-ttu-id="ca692-106">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="ca692-106">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="ad566-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="ad566-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="ca692-p101">次の例では、[AbsolutePosition](absoluteposition-property-ado.md) プロパティを使用して [Recordset](recordset-object-ado.md) の全レコードを列挙するループの進捗を追跡する方法を示します。この例では、 [CursorLocation](cursorlocation-property-ado.md) プロパティを使用して、カーソルをクライアント カーソルに設定することにより、 **AbsolutePosition** プロパティを有効にしています。</span><span class="sxs-lookup"><span data-stu-id="ca692-p101">This example demonstrates how the [AbsolutePosition](absoluteposition-property-ado.md) property can track the progress of a loop that enumerates all the records of a [Recordset](recordset-object-ado.md). It uses the [CursorLocation](cursorlocation-property-ado.md) property to enable the **AbsolutePosition** property by setting the cursor to a client cursor.</span></span>
+<span data-ttu-id="ad566-p101">次の例では、[AbsolutePosition](absoluteposition-property-ado.md) プロパティを使用して [Recordset](recordset-object-ado.md) の全レコードを列挙するループの進捗を追跡する方法を示します。この例では、 [CursorLocation](cursorlocation-property-ado.md) プロパティを使用して、カーソルをクライアント カーソルに設定することにより、 **AbsolutePosition** プロパティを有効にしています。</span><span class="sxs-lookup"><span data-stu-id="ad566-p101">This example demonstrates how the [AbsolutePosition](absoluteposition-property-ado.md) property can track the progress of a loop that enumerates all the records of a [Recordset](recordset-object-ado.md). It uses the [CursorLocation](cursorlocation-property-ado.md) property to enable the **AbsolutePosition** property by setting the cursor to a client cursor.</span></span>
 
 ```cpp 
  
@@ -296,7 +302,7 @@ void PrintProviderError(_ConnectionPtr pConnection)
 
 <br/>
 
-<span data-ttu-id="ca692-109">**AbsolutePositionX.h**</span><span class="sxs-lookup"><span data-stu-id="ca692-109">**AbsolutePositionX.h**</span></span>
+<span data-ttu-id="ad566-106">**AbsolutePositionX.h**</span><span class="sxs-lookup"><span data-stu-id="ad566-106">**AbsolutePositionX.h**</span></span>
 
 ```cpp 
  

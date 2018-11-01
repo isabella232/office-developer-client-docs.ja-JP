@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="84070-101"><<<<<<< ヘッド タイトル: 属性のプロパティの使用例 (vc++) TOCTitle: 属性のプロパティの使用例 (vc++) === タイトル: 属性のプロパティの使用例 (vc++) TOCTitle: 属性のプロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="84070-101"><<<<<<< HEAD title: Attributes Property Example (VC++) TOCTitle: Attributes Property Example (VC++) ======= title: Attributes property example (VC++) TOCTitle: Attributes property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="84070-102">マスターの ms:assetid: 031e063b-8fe6-85d8-05a7-e801ceeffa04 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248799(v=office.15) ms:contentKeyID: 48542976 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="84070-102">master ms:assetid: 031e063b-8fe6-85d8-05a7-e801ceeffa04 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248799(v=office.15) ms:contentKeyID: 48542976 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Attributes プロパティの使用例 (VC++)
+TOCTitle: Attributes property example (VC++)
+ms:assetid: 031e063b-8fe6-85d8-05a7-e801ceeffa04
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248799(v=office.15)
+ms:contentKeyID: 48542976
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 6c68c163b08c3d7b2be66e072daa2f3895ffef0e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891263"
 ---
-
-<span data-ttu-id="84070-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="84070-103"><<<<<<< HEAD</span></span>
-# <a name="attributes-property-example-vc"></a><span data-ttu-id="84070-104">Attributes プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="84070-104">Attributes Property Example (VC++)</span></span>
-=======
-# <a name="attributes-property-example-vc"></a><span data-ttu-id="84070-105">属性プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="84070-105">Attributes property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="84070-106">master</span><span class="sxs-lookup"><span data-stu-id="84070-106">master</span></span>
+# <a name="attributes-property-example-vc"></a><span data-ttu-id="3825a-102">Attributes プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="3825a-102">Attributes property example (VC++)</span></span>
 
 
-<span data-ttu-id="84070-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="84070-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="3825a-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="3825a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="84070-p101">ここでは、[Column](attributes-property-adox.md) の [Attributes](column-object-adox.md) プロパティの使用例を示します。このプロパティを **adColNullable** に設定すると、 [Recordset](recordset-object-ado.md)[Field](field-object-ado.md) の値に空の文字列を設定できるようになります。この状態で、ユーザーはデータが認識されていないレコードとデータが適用されていないレコードを区別できます。</span><span class="sxs-lookup"><span data-stu-id="84070-p101">This example demonstrates the [Attributes](attributes-property-adox.md) property of a [Column](column-object-adox.md). Setting it to **adColNullable** allows the user to set the value of a [Recordset](recordset-object-ado.md)[Field](field-object-ado.md) to an empty string. In this situation, the user can distinguish between a record where data is not known and a record where the data does not apply.</span></span>
+<span data-ttu-id="3825a-p101">ここでは、[Column](attributes-property-adox.md) の [Attributes](column-object-adox.md) プロパティの使用例を示します。このプロパティを **adColNullable** に設定すると、 [Recordset](recordset-object-ado.md)[Field](field-object-ado.md) の値に空の文字列を設定できるようになります。この状態で、ユーザーはデータが認識されていないレコードとデータが適用されていないレコードを区別できます。</span><span class="sxs-lookup"><span data-stu-id="3825a-p101">This example demonstrates the [Attributes](attributes-property-adox.md) property of a [Column](column-object-adox.md). Setting it to **adColNullable** allows the user to set the value of a [Recordset](recordset-object-ado.md)[Field](field-object-ado.md) to an empty string. In this situation, the user can distinguish between a record where data is not known and a record where the data does not apply.</span></span>
 
 ```cpp 
  
@@ -215,7 +221,7 @@ void AttributesX(void)
 // EndAttributesCpp 
 ```
 
-<span data-ttu-id="84070-111">**ADOXAttributesX.h**</span><span class="sxs-lookup"><span data-stu-id="84070-111">**ADOXAttributesX.h**</span></span>
+<span data-ttu-id="3825a-107">**ADOXAttributesX.h**</span><span class="sxs-lookup"><span data-stu-id="3825a-107">**ADOXAttributesX.h**</span></span>
 
 ```cpp
     // BeginAttributesH 

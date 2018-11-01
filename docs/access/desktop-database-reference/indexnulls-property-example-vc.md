@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="59e7d-101"><<<<<<< ヘッド タイトル: IndexNulls プロパティの使用例 (vc++) TOCTitle: IndexNulls プロパティの使用例 (vc++) === タイトル: IndexNulls プロパティの使用例 (vc++) TOCTitle: IndexNulls プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="59e7d-101"><<<<<<< HEAD title: IndexNulls Property Example (VC++) TOCTitle: IndexNulls Property Example (VC++) ======= title: IndexNulls property example (VC++) TOCTitle: IndexNulls property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="59e7d-102">マスターの ms:assetid: 05d1f8b3-ae70-cca5-d60d-af55f5f7c13a ms:mtpsurl: https://msdn.microsoft.com/library/JJ248813(v=office.15) ms:contentKeyID: 48543039 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="59e7d-102">master ms:assetid: 05d1f8b3-ae70-cca5-d60d-af55f5f7c13a ms:mtpsurl: https://msdn.microsoft.com/library/JJ248813(v=office.15) ms:contentKeyID: 48543039 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: IndexNulls プロパティの使用例 (VC++)
+TOCTitle: IndexNulls property example (VC++)
+ms:assetid: 05d1f8b3-ae70-cca5-d60d-af55f5f7c13a
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248813(v=office.15)
+ms:contentKeyID: 48543039
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 8f91883349a39a5674459328d5335cc892e0bb79
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25877241"
 ---
-
-<span data-ttu-id="59e7d-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="59e7d-103"><<<<<<< HEAD</span></span>
-# <a name="indexnulls-property-example-vc"></a><span data-ttu-id="59e7d-104">IndexNulls プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="59e7d-104">IndexNulls Property Example (VC++)</span></span>
-=======
-# <a name="indexnulls-property-example-vc"></a><span data-ttu-id="59e7d-105">IndexNulls プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="59e7d-105">IndexNulls property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="59e7d-106">master</span><span class="sxs-lookup"><span data-stu-id="59e7d-106">master</span></span>
+# <a name="indexnulls-property-example-vc"></a><span data-ttu-id="a3c44-102">IndexNulls プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="a3c44-102">IndexNulls property example (VC++)</span></span>
 
 
-<span data-ttu-id="59e7d-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="59e7d-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="a3c44-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="a3c44-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="59e7d-108">ここでは、[Index](indexnulls-property-adox.md) の [IndexNulls](index-object-adox.md) プロパティの使用例を示します。</span><span class="sxs-lookup"><span data-stu-id="59e7d-108">This example demonstrates the [IndexNulls](indexnulls-property-adox.md) property of an [Index](index-object-adox.md).</span></span> <span data-ttu-id="59e7d-109">このコードでは、新しいインデックスが作成され、ユーザーの入力に基づいて **IndexNulls** の値が設定されます。</span><span class="sxs-lookup"><span data-stu-id="59e7d-109">The code creates a new index and sets the value of **IndexNulls** based on user input.</span></span> <span data-ttu-id="59e7d-110">次に、**インデックス**は、 *Northwind* [カタログ](catalog-object-adox.md)の [**社員**][テーブル](table-object-adox.md)に追加されます。</span><span class="sxs-lookup"><span data-stu-id="59e7d-110">Then, the **Index** is appended to the **Employees** [Table](table-object-adox.md) in the *Northwind* [Catalog](catalog-object-adox.md).</span></span> <span data-ttu-id="59e7d-111">新しい **Index** が [Employees](recordset-object-ado.md) テーブルに基づいて **Recordset** に適用され、 **Recordset** が開きます。</span><span class="sxs-lookup"><span data-stu-id="59e7d-111">The new **Index** is applied to a [Recordset](recordset-object-ado.md) based on the **Employees** table, and the **Recordset** is opened.</span></span> <span data-ttu-id="59e7d-112">新しいレコードが **Employees** テーブルに追加され、 **Null** 値がインデックス フィールドに入ります。</span><span class="sxs-lookup"><span data-stu-id="59e7d-112">A new record is added to the **Employees** table, with a **Null** value in the indexed field.</span></span> <span data-ttu-id="59e7d-113">この新しいレコードが表示されるかどうかは、 **IndexNulls** プロパティの設定によって決まります。</span><span class="sxs-lookup"><span data-stu-id="59e7d-113">Whether this new record is displayed depends on the setting of the **IndexNulls** property.</span></span>
+<span data-ttu-id="a3c44-104">ここでは、[Index](indexnulls-property-adox.md) の [IndexNulls](index-object-adox.md) プロパティの使用例を示します。</span><span class="sxs-lookup"><span data-stu-id="a3c44-104">This example demonstrates the [IndexNulls](indexnulls-property-adox.md) property of an [Index](index-object-adox.md).</span></span> <span data-ttu-id="a3c44-105">このコードでは、新しいインデックスが作成され、ユーザーの入力に基づいて **IndexNulls** の値が設定されます。</span><span class="sxs-lookup"><span data-stu-id="a3c44-105">The code creates a new index and sets the value of **IndexNulls** based on user input.</span></span> <span data-ttu-id="a3c44-106">次に、**インデックス**は、 *Northwind* [カタログ](catalog-object-adox.md)の [**社員**][テーブル](table-object-adox.md)に追加されます。</span><span class="sxs-lookup"><span data-stu-id="a3c44-106">Then, the **Index** is appended to the **Employees** [Table](table-object-adox.md) in the *Northwind* [Catalog](catalog-object-adox.md).</span></span> <span data-ttu-id="a3c44-107">新しい **Index** が [Employees](recordset-object-ado.md) テーブルに基づいて **Recordset** に適用され、 **Recordset** が開きます。</span><span class="sxs-lookup"><span data-stu-id="a3c44-107">The new **Index** is applied to a [Recordset](recordset-object-ado.md) based on the **Employees** table, and the **Recordset** is opened.</span></span> <span data-ttu-id="a3c44-108">新しいレコードが **Employees** テーブルに追加され、 **Null** 値がインデックス フィールドに入ります。</span><span class="sxs-lookup"><span data-stu-id="a3c44-108">A new record is added to the **Employees** table, with a **Null** value in the indexed field.</span></span> <span data-ttu-id="a3c44-109">この新しいレコードが表示されるかどうかは、 **IndexNulls** プロパティの設定によって決まります。</span><span class="sxs-lookup"><span data-stu-id="a3c44-109">Whether this new record is displayed depends on the setting of the **IndexNulls** property.</span></span>
 
 ```cpp 
  
@@ -209,7 +215,7 @@ void IndexNullsX(_bstr_t strSel)
 
 <br/>
 
-<span data-ttu-id="59e7d-114">**IndexNullX.h**</span><span class="sxs-lookup"><span data-stu-id="59e7d-114">**IndexNullX.h**</span></span>
+<span data-ttu-id="a3c44-110">**IndexNullX.h**</span><span class="sxs-lookup"><span data-stu-id="a3c44-110">**IndexNullX.h**</span></span>
 
 ```cpp
     // BeginIndexNullsH 

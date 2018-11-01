@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="0f5be-101"><<<<<<< ヘッド タイトル: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (vc++) TOCTitle: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (vc++) ms:assetid: 884d9405-646c-6ab1-14c1-3c0fe64e2ebe ms:mtpsurl: https://msdn.microsoft.com/library/JJ249595(v=office.15)ms:contentKeyID: 48546133 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="0f5be-101"><<<<<<< HEAD title: AbsolutePage, PageCount, and PageSize Properties Example (VC++) TOCTitle: AbsolutePage, PageCount, and PageSize Properties Example (VC++) ms:assetid: 884d9405-646c-6ab1-14c1-3c0fe64e2ebe ms:mtpsurl: https://msdn.microsoft.com/library/JJ249595(v=office.15) ms:contentKeyID: 48546133 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: AbsolutePage プロパティ、PageCount プロパティ、PageSize プロパティの使用例 (VC++)
+TOCTitle: AbsolutePage, PageCount, and PageSize properties example (VC++)
+ms:assetid: 884d9405-646c-6ab1-14c1-3c0fe64e2ebe
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249595(v=office.15)
+ms:contentKeyID: 48546133
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: 70415069254edf731734dcd742d8d7bfd36f74d0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891269"
 ---
-
-# <a name="absolutepage-pagecount-and-pagesize-properties-example-vc"></a><span data-ttu-id="0f5be-102">AbsolutePage プロパティ、PageCount プロパティ、および PageSize プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="0f5be-102">AbsolutePage, PageCount, and PageSize Properties Example (VC++)</span></span>
-<span data-ttu-id="0f5be-103">=== タイトル: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (vc++) TOCTitle: と、AbsolutePage、PageCount、および PageSize プロパティの使用例 (vc++) ms:assetid: 884d9405-646c-6ab1-14c1-3c0fe64e2ebe ms:mtpsurl: https://msdn.microsoft.com/library/JJ249595(v=office.15) ms:contentKeyID。48546133 ms.date: 2018/10/17 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="0f5be-103">======= title: AbsolutePage, PageCount, and PageSize properties example (VC++) TOCTitle: AbsolutePage, PageCount, and PageSize properties example (VC++) ms:assetid: 884d9405-646c-6ab1-14c1-3c0fe64e2ebe ms:mtpsurl: https://msdn.microsoft.com/library/JJ249595(v=office.15) ms:contentKeyID: 48546133 ms.date: 10/17/2018 mtps_version: v=office.15</span></span>
----
-
-# <a name="absolutepage-pagecount-and-pagesize-properties-example-vc"></a><span data-ttu-id="0f5be-104">AbsolutePage、PageCount、および PageSize プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="0f5be-104">AbsolutePage, PageCount, and PageSize properties example (VC++)</span></span>
->>>>>>> <span data-ttu-id="0f5be-105">master</span><span class="sxs-lookup"><span data-stu-id="0f5be-105">master</span></span>
+# <a name="absolutepage-pagecount-and-pagesize-properties-example-vc"></a><span data-ttu-id="11855-102">AbsolutePage プロパティ、PageCount プロパティ、PageSize プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="11855-102">AbsolutePage, PageCount, and PageSize properties example (VC++)</span></span>
 
 
-<span data-ttu-id="0f5be-106">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="0f5be-106">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="11855-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="11855-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="0f5be-107">次の例では、[AbsolutePage](absolutepage-property-ado.md) プロパティ、[PageCount](pagecount-property-ado.md) プロパティ、および [PageSize](pagesize-property-ado.md) プロパティを使用して、***Employee*** テーブルから取得した名前と雇用年月日を一度に 5 レコードずつ表示します。</span><span class="sxs-lookup"><span data-stu-id="0f5be-107">This example uses the [AbsolutePage](absolutepage-property-ado.md), [PageCount](pagecount-property-ado.md), and [PageSize](pagesize-property-ado.md) properties to display names and hire dates from the ***Employee*** table, five records at a time.</span></span>
+<span data-ttu-id="11855-104">次の例では、[AbsolutePage](absolutepage-property-ado.md) プロパティ、[PageCount](pagecount-property-ado.md) プロパティ、および [PageSize](pagesize-property-ado.md) プロパティを使用して、***Employee*** テーブルから取得した名前と雇用年月日を一度に 5 レコードずつ表示します。</span><span class="sxs-lookup"><span data-stu-id="11855-104">This example uses the [AbsolutePage](absolutepage-property-ado.md), [PageCount](pagecount-property-ado.md), and [PageSize](pagesize-property-ado.md) properties to display names and hire dates from the ***Employee*** table, five records at a time.</span></span>
 
 ```cpp
 // BeginAbsolutePageCpp 
@@ -191,7 +197,7 @@ void PrintProviderError(_ConnectionPtr pConnection)
 
 <br/>
 
-<span data-ttu-id="0f5be-108">**AbsolutePageX.h**</span><span class="sxs-lookup"><span data-stu-id="0f5be-108">**AbsolutePageX.h**</span></span>
+<span data-ttu-id="11855-105">**AbsolutePageX.h**</span><span class="sxs-lookup"><span data-stu-id="11855-105">**AbsolutePageX.h**</span></span>
 
 ```cpp 
  

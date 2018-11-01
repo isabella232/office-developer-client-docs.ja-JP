@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="c638b-101"><<<<<<< ヘッド タイトル: 並べ替えのプロパティの使用例 (VB) TOCTitle: 並べ替えのプロパティの使用例 (VB) === タイトル: 並べ替えのプロパティの使用例 (VB) TOCTitle: 並べ替えプロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="c638b-101"><<<<<<< HEAD title: Sort Property Example (VB) TOCTitle: Sort Property Example (VB) ======= title: Sort property example (VB) TOCTitle: Sort property example (VB)</span></span>
->>>>>>> <span data-ttu-id="c638b-102">マスターの ms:assetid: 6f981e5e-7ee8-e1e7-bea9-7c2081400391 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249440(v=office.15) ms:contentKeyID: 48545539 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="c638b-102">master ms:assetid: 6f981e5e-7ee8-e1e7-bea9-7c2081400391 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249440(v=office.15) ms:contentKeyID: 48545539 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Sort プロパティの使用例 (VB)
+TOCTitle: Sort property example (VB)
+ms:assetid: 6f981e5e-7ee8-e1e7-bea9-7c2081400391
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249440(v=office.15)
+ms:contentKeyID: 48545539
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 6bd5f0f894928032e975e8eebe33b18427c5dae1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891255"
 ---
-
-<span data-ttu-id="c638b-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="c638b-103"><<<<<<< HEAD</span></span>
-# <a name="sort-property-example-vb"></a><span data-ttu-id="c638b-104">Sort プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="c638b-104">Sort Property Example (VB)</span></span>
-=======
-# <a name="sort-property-example-vb"></a><span data-ttu-id="c638b-105">並べ替えプロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="c638b-105">Sort property example (VB)</span></span>
->>>>>>> <span data-ttu-id="c638b-106">master</span><span class="sxs-lookup"><span data-stu-id="c638b-106">master</span></span>
+# <a name="sort-property-example-vb"></a><span data-ttu-id="17f07-102">Sort プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="17f07-102">Sort property example (VB)</span></span>
 
 
-<span data-ttu-id="c638b-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="c638b-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="17f07-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="17f07-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c638b-108">この例では、[レコード セット](recordset-object-ado.md)オブジェクトの[Sort](sort-property-ado.md)プロパティを使用して、 ***Pubs***データベースの***Authors***テーブルから派生した**レコード セット**の行の順序を変更します。</span><span class="sxs-lookup"><span data-stu-id="c638b-108">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the ***Pubs*** database.</span></span> <span data-ttu-id="c638b-109">2 次ユーティリティ ルーチンで各行を出力します。</span><span class="sxs-lookup"><span data-stu-id="c638b-109">A secondary utility routine prints each row.</span></span>
+<span data-ttu-id="17f07-104">この例では、[レコード セット](recordset-object-ado.md)オブジェクトの[Sort](sort-property-ado.md)プロパティを使用して、 ***Pubs***データベースの***Authors***テーブルから派生した**レコード セット**の行の順序を変更します。</span><span class="sxs-lookup"><span data-stu-id="17f07-104">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the ***Pubs*** database.</span></span> <span data-ttu-id="17f07-105">2 次ユーティリティ ルーチンで各行を出力します。</span><span class="sxs-lookup"><span data-stu-id="17f07-105">A secondary utility routine prints each row.</span></span>
 
 ```vb 
  
@@ -94,7 +100,7 @@ End Sub
 'EndSortVB 
 ```
 
-<span data-ttu-id="c638b-110">次のコードは、与えられたタイトルと、指定された **Recordset** の内容を出力する 2 次ユーティリティ ルーチンです。</span><span class="sxs-lookup"><span data-stu-id="c638b-110">This is the secondary utility routine that prints the given title, and the contents of the specified **Recordset**.</span></span>
+<span data-ttu-id="17f07-106">次のコードは、与えられたタイトルと、指定された **Recordset** の内容を出力する 2 次ユーティリティ ルーチンです。</span><span class="sxs-lookup"><span data-stu-id="17f07-106">This is the secondary utility routine that prints the given title, and the contents of the specified **Recordset**.</span></span>
 
 ```vb 
  
