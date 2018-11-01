@@ -1,61 +1,38 @@
 ---
-タイトル: TOCTitle DDE サーバーとして使用されます DDE サーバーとして Microsoft Access を使用して <<<<<<< ヘッド ms:assetid: a3e82bf7-94b5-8eec-86bc-2d5387d66738 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821067(v=office.15) ms:contentKeyID: 48546801 ms.date: 2015/09/18 ===。説明: Microsoft Access は、送信先 (クライアント) アプリケーションまたはソース (サーバー) アプリケーションとしてダイナミック データ エクス (チェンジ DDE) をサポートしています。  
-ms:assetid: a3e82bf7-94b5-8eec-86bc-2d5387d66738 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821067(v=office.15) ms:contentKeyID: 48546801 ms.date: 2018/10/16
->>>>>>> マスター mtps_version: v=office.15 f1_keywords:
-- vbaac10.chm5186349 f1_categories。
+title: Microsoft Access を DDE サーバーとして使う
+TOCTitle: Use Microsoft Access as a DDE Server
+description: Access は、DDE 先 (クライアント) アプリケーションまたは DDE 元 (サーバー) アプリケーションとして、Dynamic Data Exchange (DDE) 機能をサポートします。
+ms:assetid: a3e82bf7-94b5-8eec-86bc-2d5387d66738
+ms:mtpsurl: https://msdn.microsoft.com/library/Ff821067(v=office.15)
+ms:contentKeyID: 48546801
+ms.date: 10/16/2018
+mtps_version: v=office.15
+f1_keywords:
+- vbaac10.chm5186349
+f1_categories:
 - Office.Version=v15
+ms.openlocfilehash: 0e22eb03571d51f28344f6d41fdcaa47321f67af
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870921"
 ---
+# <a name="use-microsoft-access-as-a-dde-server"></a>Microsoft Access を DDE サーバーとして使う
 
-# <a name="use-microsoft-access-as-a-dde-server"></a>Access を DDE サーバーとして使用します。
-
-**適用されます**Access 2013 |。Office 2013 
+**適用されます**Access 2013、Office 2013。 
 
 Access は、DDE 先 (クライアント) アプリケーションまたは DDE 元 (サーバー) アプリケーションとして、Dynamic Data Exchange (DDE) 機能をサポートします。たとえば、クライアントとして動作する Word などのアプリケーションは、サーバーとして動作する Access データベースからのデータを DDE を通じて要求できます。
 
 > [!TIP]
 > [!ヒント] 他のアプリケーションから Access のオブジェクトを操作する必要がある場合は、オートメーションを使うこともできます。
 
-<<<<<<< ヘッド A 間の dde クライアントとサーバーが特定のトピックを確立します。 トピックとなるのは、サーバー アプリケーションがサポートする形式のデータ ファイルか、またはサーバー アプリケーション自体の情報を与える System トピックです。 特定のトピックで変換が始まった後は、指定したトピックに関連するデータ アイテムのみが送信されます。
-=== 特定のトピックでは、クライアントとサーバー間での DDE 通信が確立されます。 トピックとなるのは、サーバー アプリケーションがサポートする形式のデータ ファイルか、またはサーバー アプリケーション自体の情報を与える System トピックです。 特定のトピックについての会話の開始後は、そのトピックに関連付けられているデータ項目だけを転送できます。
->>>>>>> master
+クライアントとサーバーの間で DDE 変換を行う場合は、特定のトピックを指定します。 トピックとなるのは、サーバー アプリケーションがサポートする形式のデータ ファイルか、またはサーバー アプリケーション自体の情報を与える System トピックです。 特定のトピックについての会話の開始後は、そのトピックに関連付けられているデータ項目だけを転送できます。
 
 たとえば、Word を実行中に Access のデータベースに含まれるデータを Word 文書に挿入する場合は、 **DDEInitiate** 関数で DDE チャネルを開き、データベースのファイル名をトピックに指定します。これで、データベースから Word へ、チャネルを通じてデータを送信できるようになります。
 
 Access を DDE サーバーとして使う場合は、以下のトピックがサポートされます。
 
-<<<<<<< ヘッド
-  - System トピック
-
-  - データベース名 (*database* トピック)
-
-  - テーブル名 (*tablename* トピック)
-
-  - クエリ名 (*queryname* トピック)
-
-  - Access の SQL ステートメント (*sqlstring* トピック)
-
-DDE 変換を実行すると、 **DDEExecute** ステートメントを使って、クライアント アプリケーションからサーバー アプリケーションにコマンドを送信できます。Access を DDE サーバーとして使う場合は、次の内容が有効なコマンドとして認識されます。
-
-  - カレント データベースのマクロの名前。
-
-  - **DoCmd** オブジェクトの 1 つを使って、Visual Basic で実行できるアクション。
-
-  - DDE 操作でのみ使用される OpenDatabase アクションおよび CloseDatabase アクション。使用法については、このトピックの後の例を参照してください。
-
-
-> [!NOTE]
-> <P>[!メモ] マクロのアクションを <STRONG>DDEExecute</STRONG> ステートメントとして指定するときは、 <STRONG>DoCmd</STRONG> オブジェクトの構文に従い、アクション名と引数は、角かっこ ([ ]) で囲む必要があります。ただし、DDE を通じて操作されるアプリケーションは、組み込み定数を認識しません。また、引数の文字列にカンマが含まれている場合は、その文字列を二重引用符 ("") で囲む必要があります。カンマが含まれない文字列は、二重引用符で囲む必要はありません。</P>
-
-
-
-クライアント アプリケーションは、 **DDERequest** 関数を使って、開いている DDE チャネルを通じてサーバー アプリケーションにテキスト データを要求できます。または、 **DDEPoke** ステートメントを使って、サーバー アプリケーションにデータを送信することもできます。通信終了後に、クライアントは **DDETerminate** ステートメントで DDE チャネルを閉じるか、または **DDETerminateAll** ステートメントで開いているすべてのチャネルを閉じることができます。
-
-
-> [!NOTE]
-> <P>[!メモ] クライアント アプリケーションで DDE チャネルを通じてデータを受信した後は、メモリ資源を浪費しないように、DDE チャネルを閉じてください。</P>
-
-
-=======
 - System トピック
 
 - データベース名 (*database* トピック)
@@ -81,7 +58,6 @@ DDE 通信を確立した後は、クライアントからサーバー アプリ
 
 > [!NOTE]
 > [!メモ] クライアント アプリケーションで DDE チャネルを通じてデータを受信した後は、メモリ資源を浪費しないように、DDE チャネルを閉じてください。
->>>>>>> master
 
 次の使用例では、Access を DDE サーバーとして使う Word のプロシージャを、Visual Basic で作成しています。この例を実行するには、Access が実行されている必要があります。
 
@@ -112,17 +88,13 @@ DDE 通信を確立した後は、クライアントからサーバー アプリ
     End Sub
 ```
 
-<a name="-head"></a><<<<<<< ヘッド
-=======
 <br/>
 
->>>>>>> マスターは次のセクションでは、Microsoft Access でサポートされている有効な DDE トピックに関する情報を提供します。
+次の「System トピック」では、Access がサポートする DDE トピックについて説明します。
 
 ## <a name="the-system-topic"></a>System トピック
 
-<<<<<<< ヘッドの「システムのトピックでは、すべて Microsoft Windows ベース アプリケーションの標準的なトピックです。 アプリケーションでサポートされているその他のトピックに関する情報を提供します。 この情報にアクセスするには、コードする必要があります最初に*トピック*の引数として、 **DDEInitiate**関数を呼び出すし、引数*item*に指定された次のいずれかで、 **DDERequest**ステートメントを実行します。
-=== システム トピックは、Microsoft のすべての Windows ベース アプリケーションの標準的なトピックです。 アプリケーションでサポートされているその他のトピックに関する情報を提供します。 この情報にアクセスするに、コードは、*トピック*の引数では、 **DDEInitiate**関数を呼び出して、最初と、引数*item*に指定された次のいずれかで、 **DDERequest**ステートメントを実行する必要があります。
->>>>>>> master
+システム トピックは、Microsoft のすべての Windows ベース アプリケーションの標準的なトピックです。 アプリケーションでサポートされているその他のトピックに関する情報を提供します。 この情報にアクセスするに、コードは、*トピック*の引数では、 **DDEInitiate**関数を呼び出して、最初と、引数*item*に指定された次のいずれかで、 **DDERequest**ステートメントを実行する必要があります。
 
 <table>
 <colgroup>
@@ -155,10 +127,7 @@ DDE 通信を確立した後は、クライアントからサーバー アプリ
 </tbody>
 </table>
 
-<a name="-head"></a><<<<<<< ヘッド
-=======
 <br/>
->>>>>>> master
 
 次の使用例では、 **DDEInitiate** 関数に System トピックを指定し、 **DDERequest** ステートメントを実行しています。
 
@@ -178,16 +147,8 @@ DDE 通信を確立した後は、クライアントからサーバー アプリ
 
 *データベース*トピックは、既存のデータベースのファイル名です。 基本通り (Northwind)、またはそのパスおよび .mdb ファイルの拡張子のいずれかを入力することができます (c:\\アクセス\\のサンプル\\Northwind.mdb)。 データベースとの DDE 通信を開始すると、そのデータベース内のオブジェクトのリストを要求できます。
 
-<<<<<<< ヘッド
-
-> [!NOTE]
-> <P>[!メモ] Access のワークグループ情報ファイルに対するクエリを実行するために DDE を使うことはできません。</P>
-
-
-=======
 > [!NOTE]
 > [!メモ] Access のワークグループ情報ファイルに対するクエリを実行するために DDE を使うことはできません。
->>>>>>> master
 
 *database* トピックでは、以下のアイテムがサポートされます。
 
@@ -205,29 +166,6 @@ DDE 通信を確立した後は、クライアントからサーバー アプリ
 <tbody>
 <tr class="odd">
 <td><p>TableList</p></td>
-<<<<<<< ヘッド
-<td><p>テーブルの一覧</p></td>
-</tr>
-<tr class="even">
-<td><p>QueryList</p></td>
-<td><p>クエリの一覧</p></td>
-</tr>
-<tr class="odd">
-<td><p>FormList</p></td>
-<td><p>フォームの一覧</p></td>
-</tr>
-<tr class="even">
-<td><p>ReportList</p></td>
-<td><p>レポートの一覧</p></td>
-</tr>
-<tr class="odd">
-<td><p>MacroList</p></td>
-<td><p>マクロの一覧</p></td>
-</tr>
-<tr class="even">
-<td><p>ModuleList</p></td>
-<td><p>モジュールの一覧</p></td>
-=======
 <td><p>テーブルの一覧</p></td>
 </tr>
 <tr class="even">
@@ -249,7 +187,6 @@ DDE 通信を確立した後は、クライアントからサーバー アプリ
 <tr class="even">
 <td><p>ModuleList</p></td>
 <td><p>モジュールのリスト</p></td>
->>>>>>>マスター
 </tr>
 <tr class="odd">
 <td><p>ViewList</p></td>
@@ -266,10 +203,7 @@ DDE 通信を確立した後は、クライアントからサーバー アプリ
 </tbody>
 </table>
 
-<a name="-head"></a><<<<<<< ヘッド
-=======
 <br/>
->>>>>>> master
 
 次の使用例では、Visual Basic のプロシージャで、ノースウィンド データベースの [社員] フォームを開きます。
 
@@ -357,69 +291,6 @@ _データベース名_です。**SQL**[ _sqlstring_ ]
 </tr>
 <tr class="even">
 <td><p>フィールド名です。T</p></td>
-<<<<<<< ヘッド
-<td><p>1 行目がフィールド名、2 行目がそのデータ型の 2 行を返します。</p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>返される値とその値が示すデータ型は、次のとおりです。</p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p><b>値</b></p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>1</p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>2</p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>3</p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>4</p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>5</p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>6</p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>7</p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>8</p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>9</p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>10</p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>11</p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>12</p></td>
-=======
 <td><p>1 行目がフィールド名、2 行目がそのデータ型の 2 行を返します。</p>
 <p>これらは、返される値です。</p>
 <p>値</p>
@@ -440,7 +311,6 @@ _データベース名_です。**SQL**[ _sqlstring_ ]
 </ul>
 </p>
 </td>
->>>>>>>マスター
 </tr>
 <tr class="even">
 <td><p>Nextrow を指定</p></td>
@@ -473,10 +343,7 @@ _データベース名_です。**SQL**[ _sqlstring_ ]
 </tbody>
 </table>
 
-<a name="-head"></a><<<<<<< ヘッド
-=======
 <br/>
->>>>>>> master
 
 次の使用例では、Visual Basic プロシージャで DDE を使い、ノースウィンド データベースのテーブルのデータを要求して、そのデータをテキスト ファイルに挿入しています。
 

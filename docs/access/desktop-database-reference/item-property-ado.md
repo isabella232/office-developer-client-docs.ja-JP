@@ -1,15 +1,21 @@
 ---
-<<<<<<< ヘッド タイトル: アイテムのプロパティ (ADO) TOCTitle: アイテムのプロパティ (ADO) === タイトル: Item プロパティ (ADO) TOCTitle: Item プロパティ (ADO)
->>>>>>> マスターの ms:assetid: 793c305f-0e5b-a529-e21f-b7ab0843ed49 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249499(v=office.15) ms:contentKeyID: 48545767 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Item プロパティ (ADO)
+TOCTitle: Item property (ADO)
+ms:assetid: 793c305f-0e5b-a529-e21f-b7ab0843ed49
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249499(v=office.15)
+ms:contentKeyID: 48545767
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 73e6240b92a34a6ff1d215cd3211a844f10fe766
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868310"
 ---
-
-<<<<<<< ヘッド
 # <a name="item-property-ado"></a>Item プロパティ (ADO)
-=======
-# <a name="item-property-ado"></a>Item プロパティ (ADO)
->>>>>>> master
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 コレクションの特定のメンバーをその名前または序数で示します。
 
@@ -17,11 +23,7 @@
 
 *オブジェクト*を設定する = *コレクション*です。項目 (インデックス)
 
-<<<<<<< ヘッド
 ## <a name="return-value"></a>戻り値
-=======
-## <a name="return-value"></a>戻り値
->>>>>>> master
 
 オブジェクトへの参照を返します。
 

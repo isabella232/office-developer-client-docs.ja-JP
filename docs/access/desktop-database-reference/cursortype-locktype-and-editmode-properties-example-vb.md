@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: CursorType、LockType、および EditMode プロパティの使用例 (VB) TOCTitle: CursorType、LockType、および EditMode プロパティの使用例 (VB) === タイトル: CursorType、LockType、および EditMode プロパティの使用例 (VB) TOCTitle。CursorType、LockType、および EditMode プロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: efe3f976-b095-c0ce-376a-693b07ec8e9d ms:mtpsurl: https://msdn.microsoft.com/library/JJ250221(v=office.15) ms:contentKeyID: 48548595 ms.date: 2015/09/18 mtps_version: v=office.15
+title: CursorType プロパティ、LockType プロパティ、EditMode プロパティの使用例 (VB)
+TOCTitle: CursorType, LockType, and EditMode properties example (VB)
+ms:assetid: efe3f976-b095-c0ce-376a-693b07ec8e9d
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250221(v=office.15)
+ms:contentKeyID: 48548595
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 1725c7b6c60df6151da6349f33de43319b912819
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868323"
 ---
-
-<<<<<<< ヘッド
-# <a name="cursortype-locktype-and-editmode-properties-example-vb"></a>CursorType プロパティ、LockType プロパティ、および EditMode プロパティの使用例 (VB)
-=======
-# <a name="cursortype-locktype-and-editmode-properties-example-vb"></a>CursorType、LockType、および EditMode プロパティの使用例 (VB)
->>>>>>> master
+# <a name="cursortype-locktype-and-editmode-properties-example-vb"></a>CursorType プロパティ、LockType プロパティ、EditMode プロパティの使用例 (VB)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Recordset](cursortype-property-ado.md) を開く前に [CursorType](locktype-property-ado.md) プロパティおよび [LockType](recordset-object-ado.md) プロパティを設定します。また、さまざまな条件下での [EditMode](editmode-property-ado.md) プロパティの値も示します。このプロシージャを実行するには、 **EditModeOutput** 関数が必要です。
 

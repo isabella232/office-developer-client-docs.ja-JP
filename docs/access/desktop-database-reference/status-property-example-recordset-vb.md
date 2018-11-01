@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 状態プロパティの使用例 (Recordset) (VB) TOCTitle: 状態プロパティの使用例 (Recordset) (VB) === タイトル: 状態プロパティの使用例 (Recordset) (VB) TOCTitle: 状態プロパティの使用例 (Recordset) (VB)
->>>>>>> マスターの ms:assetid: 97ddd465-88ed-81dd-3714-1841f1c87611 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249677(v=office.15) ms:contentKeyID: 48546476 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Status プロパティの使用例 (Recordset) (VB)
+TOCTitle: Status property example (Recordset) (VB)
+ms:assetid: 97ddd465-88ed-81dd-3714-1841f1c87611
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249677(v=office.15)
+ms:contentKeyID: 48546476
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 23e444b2b10946c815cb25b0ed8aedb7533b89c1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869065"
 ---
-
-<<<<<<< ヘッド
 # <a name="status-property-example-recordset-vb"></a>Status プロパティの使用例 (Recordset) (VB)
-=======
-# <a name="status-property-example-recordset-vb"></a>状態プロパティの使用例 (Recordset) (VB)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Status](status-property-ado-recordset.md) プロパティを使用して、一括更新の前にバッチ処理で変更されたレコードを表示します。
 

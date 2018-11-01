@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249450(v=office.15)
 ms:contentKeyID: 48545571
 ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 942639a4c87cfe325b9ec8326e2eb392458fa8b3
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: b1ebc5cf8df4a0eab125f788544dba40ec373d02
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863691"
+ms.locfileid: "25880650"
 ---
 # <a name="adcpropupdatecriteriaenum"></a>ADCPROP\_UPDATECRITERIA\_列挙型
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [Recordset](recordset-object-ado.md) オブジェクトを使用してデータ ソース行の共有的更新を行う際に、競合の検出に使用するフィールドを表します。
 

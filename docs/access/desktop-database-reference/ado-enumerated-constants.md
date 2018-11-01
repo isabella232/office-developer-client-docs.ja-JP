@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249522(v=office.15)
 ms:contentKeyID: 48545841
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0ecefa3973d2995a69feb9abe82355aae7df63d1
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 3e9944138dcdca49f33ca293a9bdf41d88d86e9e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478849"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882309"
 ---
 # <a name="ado-enumerated-constants"></a>ADO の列挙定数
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ここでは、デバッグ用に各定数の実際の値の一覧を示します。ただし、この値は参考用のものであり、ADO のリリースごとに変更されることがあります。コードを記述するときは、列挙定数の実際の値ではなく、名前のみを使って記述するようにしてください。
 
@@ -87,7 +87,7 @@ ms.locfileid: "25478849"
 <td><p><strong>Recordset</strong> オブジェクトが使用するカーソルの種類を表します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="datatypeenum.md">格納</a></p></td>
+<td><p><a href="datatypeenum.md">DataTypeEnum</a></p></td>
 <td><p><strong>Field</strong>、<strong>Parameter</strong>、または <strong>Property</strong> のデータ型を指定します。</p></td>
 </tr>
 <tr class="odd">
@@ -159,7 +159,7 @@ ms.locfileid: "25478849"
 <td><p><strong>Parameter</strong> オブジェクトの属性を表します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="parameterdirectionenum.md">値</a></p></td>
+<td><p><a href="parameterdirectionenum.md">ParameterDirectionEnum</a></p></td>
 <td><p><strong>Parameter</strong> が入力パラメーターと出力パラメーターのいずれか、またはその両方を表すのか、あるいはストアド プロシージャからの戻り値であるかどうかを指定します。</p></td>
 </tr>
 <tr class="odd">
@@ -183,7 +183,7 @@ ms.locfileid: "25478849"
 <td><p><strong>Record</strong> を開くときのオプションを指定します。これらの値は OR 演算子で結合することもできます。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="recordstatusenum.md">可能</a></p></td>
+<td><p><a href="recordstatusenum.md">RecordStatusEnum</a></p></td>
 <td><p>バッチ更新またはその他の一括操作に関するレコードの状態を表します。</p></td>
 </tr>
 <tr class="odd">

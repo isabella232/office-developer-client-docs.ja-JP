@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm154095
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 39557bca91a500a5abf0871d5977418bf067d562
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 3118c2a6b85d400b4b797c4b9b711e5f5a512c62
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478828"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869240"
 ---
 # <a name="opendiagram-macro-action"></a>"OpenDiagram/ダイアグラムを開く" マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 Access プロジェクトで、デザイン ビューでデータベース ダイアグラムを開く**OpenDiagram**アクションを使用できます。
 

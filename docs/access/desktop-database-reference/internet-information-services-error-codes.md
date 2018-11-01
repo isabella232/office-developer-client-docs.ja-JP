@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248978(v=office.15)
 ms:contentKeyID: 48543625
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d62be19cb472673a4bdafd3574bbe1fcb7b876c9
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 7890bdbd38b790d846b195570a05b55846cdcda9
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476422"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879943"
 ---
 # <a name="internet-information-services-error-codes"></a>インターネット インフォメーション サービスのエラー コード
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の表は、リモート データ サービスの使用に関連する Microsoft インターネット インフォメーション サービス (IIS) のエラー コードの一覧です。下位 2 バイトを正の 10 進数に変換した値、エラー コード全体を負の 10 進数に変換した値、および 16 進数値を示します。
 

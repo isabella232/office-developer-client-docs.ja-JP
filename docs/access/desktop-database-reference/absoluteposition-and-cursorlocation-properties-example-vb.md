@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: AbsolutePosition と CursorLocation プロパティの使用例 (VB) TOCTitle: AbsolutePosition と CursorLocation プロパティの使用例 (VB) の ms:assetid: 572c1a51-b7f4-5861-cfb9-960219e0a831 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249293(v=office.15) ms。contentKeyID: 48544966 ms.date: 2015/09/18 mtps_version: v=office.15
+title: AbsolutePosition プロパティと CursorLocation プロパティの使用例 (VB)
+TOCTitle: AbsolutePosition and CursorLocation properties example (VB)
+ms:assetid: 572c1a51-b7f4-5861-cfb9-960219e0a831
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249293(v=office.15)
+ms:contentKeyID: 48544966
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: b1fb72b167ad24d2d5ef7acd1472d435381428c8
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869646"
 ---
-
 # <a name="absoluteposition-and-cursorlocation-properties-example-vb"></a>AbsolutePosition プロパティと CursorLocation プロパティの使用例 (VB)
-=== タイトル: AbsolutePosition と CursorLocation プロパティの使用例 (VB) TOCTitle: AbsolutePosition と CursorLocation プロパティの使用例 (VB) ms:assetid: 572c1a51-b7f4-5861-cfb9-960219e0a831 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249293(v=office.15) ms:contentKeyID: 48544966ms.date: 2018/10/17 mtps_version: v=office.15
----
-
-# <a name="absoluteposition-and-cursorlocation-properties-example-vb"></a>AbsolutePosition と CursorLocation プロパティの使用例 (VB)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の例では、[AbsolutePosition](absoluteposition-property-ado.md) プロパティを使用して [Recordset](recordset-object-ado.md) の全レコードを列挙するループの進捗を追跡する方法を示します。この例では、 [CursorLocation](cursorlocation-property-ado.md) プロパティを使用して、カーソルをクライアント カーソルに設定することにより、 **AbsolutePosition** プロパティを有効にしています。
 

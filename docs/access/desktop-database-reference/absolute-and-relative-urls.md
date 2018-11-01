@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249501(v=office.15)
 ms:contentKeyID: 48545774
 ms.date: 10/17/2018
 mtps_version: v=office.15
-ms.openlocfilehash: e5ac9c60be702841a4e45628ba609bdc63e14477
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 39286a3b94712c15628e6163c12ee7c8d2d3e502
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862138"
+ms.locfileid: "25882736"
 ---
 # <a name="absolute-and-relative-urls"></a>絶対と相対 Url
 
-**適用されます**Access 2013 |。Office 2013 
+**適用されます**Access 2013、Office 2013。    
 
 URL など、ファイル、ディレクトリ、HTML ページ、画像、プログラム、およびように、ローカルまたはネットワーク コンピューターに保存されているターゲットの場所を指定します。 ここでは、*絶対 URL*は、フォームのです。
 
@@ -81,5 +81,4 @@ recordset.Open "", "URL=https://YourServer/Winnt/",,,adCmdTableDirect
 完全修飾 URL の先頭部分は、URL の残りの部分で識別されるリソースへのアクセスに使用する*スキーム*です。 例としては、HTTP (ハイパー テキスト転送プロトコル) および FTP (ファイル転送プロトコル) です。
 
 ADO には、独自の URL スキームを認識する OLE DB プロバイダーがサポートしています。 たとえば、 [Microsoft OLE DB プロバイダー](microsoft-ole-db-provider-for-internet-publishing.md)するアクセスは、Windows 2000 のファイルを「公開」は、既存の HTTP スキームを認識します。
-
 

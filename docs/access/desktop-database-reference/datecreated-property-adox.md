@@ -6,25 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250209(v=office.15)
 ms:contentKeyID: 48548564
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3f96bdfc7b669aeea279ba746c92bfc299912c70
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: fea3e83f9a171a95eb844d9ba721039969804acf
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25602553"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876471"
 ---
 # <a name="datecreated-property-adox"></a>DateCreated プロパティ (ADOX)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 オブジェクトが作成された日付を示します。
 
-<<<<<<< ヘッド
 ## <a name="return-values"></a>戻り値
-=======
-## <a name="return-values"></a>戻り値
->>>>>>> master
 
 作成された日付を示すバリアント型 ( **Variant** ) の値を返します。プロバイダーが **DateCreated** をサポートしていない場合、値は Null 値になります。
 

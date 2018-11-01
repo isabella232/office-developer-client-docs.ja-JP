@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 作成日時と最終更新日時プロパティの使用例 (VB) TOCTitle: 作成日時と最終更新日時プロパティの使用例 (VB) === タイトル: 作成日時と最終更新日時プロパティの使用例 (VB) TOCTitle: 作成日時と最終更新日時プロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: 5afdb5a9-394f-c38f-83a4-ae7017673c5e ms:mtpsurl: https://msdn.microsoft.com/library/JJ249316(v=office.15) ms:contentKeyID: 48545063 ms.date: 2015/09/18 mtps_version: v=office.15
+title: DateCreated プロパティと DateModified プロパティの使用例 (VB)
+TOCTitle: DateCreated and DateModified properties example (VB)
+ms:assetid: 5afdb5a9-394f-c38f-83a4-ae7017673c5e
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249316(v=office.15)
+ms:contentKeyID: 48545063
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: a8bdeb3c0e703485d5862332a41819503900b3c6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874448"
 ---
-
-<<<<<<< ヘッド
 # <a name="datecreated-and-datemodified-properties-example-vb"></a>DateCreated プロパティと DateModified プロパティの使用例 (VB)
-=======
-# <a name="datecreated-and-datemodified-properties-example-vb"></a>作成日時と最終更新日時プロパティの使用例 (VB)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ここでは、新しい [Column](datecreated-property-adox.md) を既存の [Table](datemodified-property-adox.md) に追加したり、新しい [Table](column-object-adox.md) を作成したりすることで、 [DateCreated](table-object-adox.md) プロパティおよび **DateModified** プロパティの使用例を示します。この例を実行するには DateOutput プロシージャが必要です。
 

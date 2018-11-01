@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm8454
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 29bd256c08a3b7c650609bc9b365436e5d332b8d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1bbb04600dc6f7ecea4ce9084b146d3bf696cd6b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477552"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878123"
 ---
 # <a name="workflowtasks-macro-action"></a>"WorkflowTasks/ワークフロータスク" マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **WorkflowTasks**アクションを使用するには、[**ワークフロー タスク**] ダイアログ ボックスを表示します。
 

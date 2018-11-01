@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249165(v=office.15)
 ms:contentKeyID: 48544342
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: de936da2772b809199d3890140683afd5ef01659
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 9a5fbf4686fc5b8bffc984b4b483f1ee506eb7dd
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476798"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882988"
 ---
 # <a name="deadlocks-with-read-repeatable-isolation-level"></a>分離レベルが繰り返し可能な読み取りのときにデッドロックが発生する
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 カスタム ビジネス オブジェクトが繰り返し可能な読み取りの分離レベルを使用して SQL Server にアクセスする場合に、そのビジネス オブジェクトが、同じトランザクションでクエリを送信し更新する 2 つのクライアントによって同時に呼び出されると、デッドロックが発生する可能性があります。リモート データ サービスは、いずれか 1 つのプロセスをタイムアウトにしてデッドロックを解除できるように設計されていますが、そのクライアントの更新は失敗します。
 

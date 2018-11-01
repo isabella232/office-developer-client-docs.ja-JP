@@ -1,24 +1,26 @@
 ---
-<<<<<<< ヘッド タイトル: プロバイダー プロパティ (ADO) TOCTitle: プロバイダー プロパティ (ADO) === タイトル: プロバイダーのプロパティ (ADO) TOCTitle: プロバイダーのプロパティ (ADO)
->>>>>>> マスターの ms:assetid: 1b795f51-93d7-431c-b1fe-0db95f69a56a ms:mtpsurl: https://msdn.microsoft.com/library/JJ248953(v=office.15) ms:contentKeyID: 48543543 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Provider プロパティ (ADO)
+TOCTitle: Provider property (ADO)
+ms:assetid: 1b795f51-93d7-431c-b1fe-0db95f69a56a
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248953(v=office.15)
+ms:contentKeyID: 48543543
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: df764aca267cab9b38760c432cd19154d6c6827f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881567"
 ---
-
-<<<<<<< ヘッド
 # <a name="provider-property-ado"></a>Provider プロパティ (ADO)
-=======
-# <a name="provider-property-ado"></a>Provider プロパティ (ADO)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [Connection](connection-object-ado.md) オブジェクトのプロバイダー名を示します。
 
-<<<<<<< ヘッド
-## <a name="settings-and-return-values"></a>設定値と戻り値
-=======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
->>>>>>> master
 
 プロバイダー名を示す文字列型 ( **String** ) の値を設定または取得します。
 

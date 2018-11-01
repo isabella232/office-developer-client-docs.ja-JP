@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: キーの追加方法、キーの種類、RelatedColumn プロパティの使用例 (VB) TOCTitle: キーの追加方法、キーの種類、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VB) === タイトル: キーの追加のメソッドは、キー型、RelatedColumn プロパティの使用例 (VB) TOCTitle: キーの追加方法、キーの種類、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: d1b0508d-ab2c-eece-061c-09c67ea9ecae ms:mtpsurl: https://msdn.microsoft.com/library/JJ250047(v=office.15) ms:contentKeyID: 48547871 ms.date: 2015/09/18 mtps_version: v=office.15
+title: キーの追加方法、キーの種類、RelatedColumn プロパティの使用例 (VB)
+TOCTitle: Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule properties example (VB)
+ms:assetid: d1b0508d-ab2c-eece-061c-09c67ea9ecae
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250047(v=office.15)
+ms:contentKeyID: 48547871
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 7cec32ff7229540344d471e6c66b96270bb5a197
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878032"
 ---
-
-<<<<<<< ヘッド
-# <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb"></a>Keys の Append メソッド、および Key の Type、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VB)
-=======
 # <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb"></a>キーの追加方法、キーの種類、RelatedColumn、RelatedTable、UpdateRule プロパティの使用例 (VB)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次のコードでは、新しい外部キーの作成方法を示します。 2 つのテーブル (**Customers**と**Orders**) が存在すると仮定します。
 

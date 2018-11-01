@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 値のプロパティの使用例 (vj++) TOCTitle: 値のプロパティの使用例 (vj++) === タイトル: 値プロパティの使用例 (vj++) TOCTitle: 値プロパティの使用例 (vj++)
->>>>>>> マスターの ms:assetid: 1894c483-f5b0-c83e-35fb-c975ca867fc9 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248934(v=office.15) ms:contentKeyID: 48543474 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Value プロパティの使用例 (VJ++)
+TOCTitle: Value property example (VJ++)
+ms:assetid: 1894c483-f5b0-c83e-35fb-c975ca867fc9
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248934(v=office.15)
+ms:contentKeyID: 48543474
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 7117c9d48269ea9ae2eedf7af83aedab01b77d50
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871949"
 ---
-
-<<<<<<< ヘッド
 # <a name="value-property-example-vj"></a>Value プロパティの使用例 (VJ++)
-=======
-# <a name="value-property-example-vj"></a>値プロパティの使用例 (vj++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Field](field-object-ado.md) オブジェクトや [Property](property-object-ado.md) オブジェクトで [Value](value-property-ado.md) プロパティを使用して、***Employees*** テーブルのフィールドとプロパティの値を表示します。
 

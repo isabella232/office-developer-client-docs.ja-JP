@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm118713
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 21efa96338363646be826248e6c9ca0b951496c9
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 9bb498771e5a1ac3a8e6eb19b3b1ec2886867214
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476617"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876492"
 ---
 # <a name="searchforrecord-macro-action"></a>SearchForRecord マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **SearchForRecord** アクションは、テーブル、クエリ、フォーム、またはレポート内の特定のレコードを検索するために使用します。
 

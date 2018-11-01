@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm89832
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b58478a67468fa7d00c348066459672bc31c52a7
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 05dec445360d5c42636880982e27e0abd46d048e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478795"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883653"
 ---
 # <a name="findnextrecord-macro-action"></a>"FindNextRecord/次のレコードを検索" マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 前の操作を**行って**または、[**検索し、置換**] ダイアログ ボックスの値で指定された条件を満たす次のレコードを検索する**FindNextRecord**アクションを使用することができます ([**ホーム**] タブの [**検索**] をクリック) します。 **FindNextRecord**アクションを使用するにはレコードを繰り返し検索します。 たとえば、すべてのレコードの中から特定の得意先のレコードを連続して検索できます。
 

@@ -1,24 +1,26 @@
 ---
-<<<<<<< ヘッド タイトル: 位置プロパティ (ADO) TOCTitle: 位置プロパティ (ADO) === タイトル: Position プロパティ (ADO) TOCTitle: Position プロパティ (ADO)
->>>>>>> マスターの ms:assetid: a07c9197-673b-ddf2-fca9-b0b54fbd67b4 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249738(v=office.15) ms:contentKeyID: 48546709 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Position プロパティ (ADO)
+TOCTitle: Position property (ADO)
+ms:assetid: a07c9197-673b-ddf2-fca9-b0b54fbd67b4
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249738(v=office.15)
+ms:contentKeyID: 48546709
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: ab1111cdbc0e5a319f1f3431477854c6d38eff20
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875407"
 ---
-
-<<<<<<< ヘッド
 # <a name="position-property-ado"></a>Position プロパティ (ADO)
-=======
-# <a name="position-property-ado"></a>Position プロパティ (ADO)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [Stream](stream-object-ado.md) オブジェクト内の現在の位置を示します。
 
-<<<<<<< ヘッド
-## <a name="settings-and-return-values"></a>設定値と戻り値
-=======
 ## <a name="settings-and-return-values"></a>設定値および戻り値
->>>>>>> master
 
 ストリームの先頭から現在位置までのオフセットをバイト単位で示す長整数型 ( **Long** ) の値を設定または取得します。既定値は 0 で、ストリームの最初のバイトを表します。
 

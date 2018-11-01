@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249865(v=office.15)
 ms:contentKeyID: 48547228
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6088a1af3a99b26b83a0f77e696a46214a009b5a
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 26dbeab9930ddb3abf77aa9c8f10b79a03480b6e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860477"
+ms.locfileid: "25883660"
 ---
 # <a name="locating-the-current-record"></a>現在のレコードの位置
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **Recordset** における現在のカーソル位置は、現在のレコードの位置を表します。コマンドの発行によって結果が返されると、 **Recordset** の **Open** メソッドが呼び出されたときに、カーソルが自動的に最初のレコードに配置されます。したがって、サンプルの **Recordset** では、カーソルは最初のレコードである "Uncle Bob's Organic Dried Pears" に配置されます。
 

@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 状態プロパティの使用例 (VB) の (フィールド) TOCTitle: 状態プロパティの使用例 (VB) の (フィールド) === タイトル: 状態プロパティの使用例 (VB) の (フィールド) TOCTitle: 状態プロパティの使用例 (VB) の (フィールド)
->>>>>>> マスターの ms:assetid: 1dc2807f-f469-de97-1280-4b1984b271b4 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248969(v=office.15) ms:contentKeyID: 48543601 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Status プロパティの使用例 (Field) (VB)
+TOCTitle: Status property example (Field) (VB)
+ms:assetid: 1dc2807f-f469-de97-1280-4b1984b271b4
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248969(v=office.15)
+ms:contentKeyID: 48543601
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 680df8832bea713155435b6a315a008dae7e3309
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25873475"
 ---
-
-<<<<<<< ヘッド
 # <a name="status-property-example-field-vb"></a>Status プロパティの使用例 (Field) (VB)
-=======
-# <a name="status-property-example-field-vb"></a>状態プロパティの使用例 (VB) の (フィールド)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の例では、[Internet Publishing Provider](microsoft-ole-db-provider-for-internet-publishing.md) を使用して読み書き可能なフォルダーからドキュメントを開きます。 [Record](status-property-ado-field.md) の [Field](field-object-ado.md) オブジェクトの [Status](record-object-ado.md) プロパティは、最初は **adFieldPendingInsert** に設定され、次に **adFieldOk** に更新されます。
 

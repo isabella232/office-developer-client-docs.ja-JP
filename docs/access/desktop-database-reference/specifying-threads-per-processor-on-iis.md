@@ -6,21 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248898(v=office.15)
 ms:contentKeyID: 48543344
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5041eb32397fc9a234d0e4a0fff622f31b56a0a5
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 4212b1c2bcf89badedbc7a3b7d4dc72a879a95c7
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603358"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871984"
 ---
 # <a name="specifying-threads-per-processor-on-iis"></a>IIS でプロセッサごとにスレッドを指定する
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
-<<<<<<< Web サーバー上のレジストリを操作することでプロセッサごとに作成されるスレッドの数を制御することができますヘッド、RDS のインターネット情報サービス 4.0 以降を使用する場合、します。 プロセッサごとのスレッド数は、トラフィックが多い場合や、トラフィックが少なくてもクエリのサイズが大きい場合に、パフォーマンスに影響することがあります。 さまざまな状況を試したうえで、最適な設定値を見つける必要があります。
-=== 場合、RDS のインターネット情報サービス 4.0 以降を使用すると、web サーバー上のレジストリを操作することでプロセッサごとに作成されるスレッドの数を制御できます。 プロセッサごとのスレッド数は、トラフィックが多い場合や、トラフィックが少なくてもクエリのサイズが大きい場合に、パフォーマンスに影響することがあります。 さまざまな状況を試したうえで、最適な設定値を見つける必要があります。
->>>>>>> master
+RDS のインターネット情報サービス 4.0 以降を使用している場合は、web サーバー上のレジストリを操作することでプロセッサごとに作成されるスレッドの数を制御できます。 プロセッサごとのスレッド数は、トラフィックが多い場合や、トラフィックが少なくてもクエリのサイズが大きい場合に、パフォーマンスに影響することがあります。 さまざまな状況を試したうえで、最適な設定値を見つける必要があります。
 
 この設定の既定値を決定または変更する方法は、IIS 4.0 サーバーの構成によって異なります。
 

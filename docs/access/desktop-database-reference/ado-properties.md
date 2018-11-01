@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248809(v=office.15)
 ms:contentKeyID: 48543020
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 387ab87bb21d9c49c58a72bb4958426367493c11
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 4571f250891d02f8053e63aae7b94d674f61ca71
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476821"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876401"
 ---
 # <a name="ado-properties"></a>ADO プロパティ
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 <table>
 <colgroup>
@@ -173,7 +173,7 @@ ms.locfileid: "25476821"
 <td><p><strong>Connection</strong> オブジェクト、 <strong>Record</strong> オブジェクト、または <strong>Stream</strong> オブジェクトで使用可能なデータ変更権限を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="name-property-ado.md">名前</a></p></td>
+<td><p><a href="name-property-ado.md">Name</a></p></td>
 <td><p>オブジェクトの名前を示します。</p></td>
 </tr>
 <tr class="odd">
@@ -181,7 +181,7 @@ ms.locfileid: "25476821"
 <td><p>指定された <strong>Error</strong> オブジェクトでプロバイダー固有のエラー コードを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="number-property-ado.md">番号</a></p></td>
+<td><p><a href="number-property-ado.md">数値</a></p></td>
 <td><p><strong>Error</strong> オブジェクトを一意に識別する数値を示します。</p></td>
 </tr>
 <tr class="odd">

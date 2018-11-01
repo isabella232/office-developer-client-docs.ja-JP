@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: DefinedSize プロパティの使用例 (vc++) TOCTitle: DefinedSize プロパティの使用例 (vc++) === タイトル: DefinedSize プロパティの使用例 (vc++) TOCTitle: DefinedSize プロパティの使用例 (vc++)
->>>>>>> マスターの ms:assetid: eac03770-4e6a-90fd-3e0e-89246b61d403 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250192(v=office.15) ms:contentKeyID: 48548474 ms.date: 2015/09/18 mtps_version: v=office.15
+title: DefinedSize プロパティの使用例 (VC++)
+TOCTitle: DefinedSize property example (VC++)
+ms:assetid: eac03770-4e6a-90fd-3e0e-89246b61d403
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250192(v=office.15)
+ms:contentKeyID: 48548474
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: a87889c7cd742c02def55cb802981fd3e16b3f91
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867364"
 ---
-
-<<<<<<< ヘッド
 # <a name="definedsize-property-example-vc"></a>DefinedSize プロパティの使用例 (VC++)
-=======
-# <a name="definedsize-property-example-vc"></a>DefinedSize プロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ここでは、[Column](definedsize-property-adox.md) の [DefinedSize](column-object-adox.md) プロパティの使用例を示します。 コードは、 *Northwind*データベースの [**社員**] テーブルの [フリガナ] 列のサイズを再定義します。 次に、 [Employees](field-object-ado.md) テーブルに基づいた [レコードセット](recordset-object-ado.md)の FirstName **フィールド**の値の変更が表示されます。 既定では、 **DefinedSize** プロパティを再定義すると、FirstName フィールドがスペースで埋められます。
 

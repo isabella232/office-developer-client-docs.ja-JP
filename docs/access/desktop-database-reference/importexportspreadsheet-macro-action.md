@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm31446
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4693cbe643ab34431f7920564e704808c1b0f73b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 78819ba2a82bf2fc9ab5c39300d06c1acdda80bc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476833"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875806"
 ---
 # <a name="importexportspreadsheet-macro-action"></a>ImportExportSpreadsheet マクロ アクション
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **ImportExportSpreadsheet** アクションを使用すると、カレントの Access データベース (.mdb または .accdb) または Access プロジェクト (.adp) とワークシート ファイルとの間でデータをインポートまたはエクスポートできます。Microsoft Excel のワークシートのデータを Microsoft Access のカレント データベースにリンクすることもできます。ワークシートをリンクすると、Access でワークシート データを表示したり編集することができると同時に、Excel のワークシート プログラムからそのデータにアクセスできます。Lotus 1-2-3 のワークシート ファイルのデータにもリンクできますが、そのファイルは Access では読み取り専用になります。
 

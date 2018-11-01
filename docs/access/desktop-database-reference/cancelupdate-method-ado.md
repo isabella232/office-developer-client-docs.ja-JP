@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249065(v=office.15)
 ms:contentKeyID: 48543938
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6aaf4a7e9c94864c5cdd43ad764a305c248718b4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c56d8fc7eaab7989eaa967aa90090ad59c1656dc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479271"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25884766"
 ---
 # <a name="cancelupdate-method-ado"></a>CancelUpdate メソッド (ADO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 [Update](recordset-object-ado.md) メソッドを呼び出す前に行った、 [Recordset](fields-collection-ado.md) オブジェクトのカレント行や新規行に対する変更、または [Record](record-object-ado.md) オブジェクトの [Fields](update-method-ado.md) コレクションに対する変更を、すべてキャンセルします。
 

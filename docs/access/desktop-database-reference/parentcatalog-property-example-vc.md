@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: ParentCatalog プロパティの使用例 (vc++) TOCTitle: ParentCatalog プロパティの使用例 (vc++) === タイトル: ParentCatalog プロパティの使用例 (vc++) TOCTitle: ParentCatalog プロパティの使用例 (vc++)
->>>>>>> マスターの ms:assetid: fad6574f-698f-f48a-ba0b-59f048ae012c ms:mtpsurl: https://msdn.microsoft.com/library/JJ250281(v=office.15) ms:contentKeyID: 48548855 ms.date: 2015/09/18 mtps_version: v=office.15
+title: ParentCatalog プロパティの使用例 (VC++)
+TOCTitle: ParentCatalog property example (VC++)
+ms:assetid: fad6574f-698f-f48a-ba0b-59f048ae012c
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250281(v=office.15)
+ms:contentKeyID: 48548855
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 80a550a65601ee86d34f7e8acf6a88f75f738501
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876051"
 ---
-
-<<<<<<< ヘッド
 # <a name="parentcatalog-property-example-vc"></a>ParentCatalog プロパティの使用例 (VC++)
-=======
-# <a name="parentcatalog-property-example-vc"></a>ParentCatalog プロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次のコードでは、テーブルをカタログに追加する前に プロバイダー に固有のプロパティにアクセスするための、[ParentCatalog](parentcatalog-property-adox.md) プロパティの使用方法を示します。このプロパティは、Microsoft Jet データベース内に AutoIncrement フィールドを作成する AutoIncrement です。
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845158(v=office.15)
 ms:contentKeyID: 48543188
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 79e5379ad2c50eff3ddf12b597defc7b85cefb39
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c7c6842e8463250f6575cfc85364ec3bff7aba1a
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479618"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876044"
 ---
 # <a name="ifthenelse-macro-block"></a>If...Then...Else マクロ ブロック
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 式の値に応じた条件に基づいてアクションのグループを実行するには、 **If** マクロ ブロックを使用します。
 

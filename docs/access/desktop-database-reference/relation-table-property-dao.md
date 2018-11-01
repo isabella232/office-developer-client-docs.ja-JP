@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1053068
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: ba1c70a9aded0ce26cd24d2dc25ecb65c30b1f8e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: bdc58837cea3f54e46a3e805523e77c27cb21e7c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478249"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870829"
 ---
 # <a name="relationtable-property-dao"></a>Relation.Table プロパティ (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **[Relation](relation-object-dao.md)** オブジェクトの主テーブルの名前を示します。これは、 **[TableDef](connection-name-property-dao.md)** オブジェクトまたは **[QueryDef](tabledef-object-dao.md)** オブジェクトの **[Name](querydef-object-dao.md)** プロパティの設定値と同じである必要があります (Microsoft Access ワークスペースのみ)。
 

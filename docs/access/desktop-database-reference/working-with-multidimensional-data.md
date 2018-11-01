@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249740(v=office.15)
 ms:contentKeyID: 48546717
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 426a317f378862bd780abe8bce75bb7ff62bedad
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 7aba6eda9abc84c6f34442f828fe802c4b016653
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478708"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871991"
 ---
 # <a name="working-with-multidimensional-data"></a>多次元データを処理する
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 *セルセット*は、多次元データのクエリの結果です。 軸、通常 4 つ以内の軸と通常 2 つまたは 3 つのコレクションで構成されています。 *軸*は、検索またはキューブ内の特定の値をフィルター処理に使用される 1 つまたは複数のディメンションのメンバーのコレクションです。
 

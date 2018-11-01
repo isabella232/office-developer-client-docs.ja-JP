@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1052885
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7f264695830d33dfebccf0324f50515d9da30a7e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f55cacf0c22130ede5025fcbd1bc55c76150bc95
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476834"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867960"
 ---
 # <a name="recordsetfindprevious-method-dao"></a>Recordset.FindPrevious メソッド (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ダイナセット タイプまたはスナップショット タイプの **[Recordset](recordset-object-dao.md)** オブジェクトで、指定された条件を満たす前のレコードを検索し、そのレコードをカレント レコードにします (Microsoft Access ワークスペースのみ)。
 

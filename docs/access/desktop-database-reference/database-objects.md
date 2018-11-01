@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn161006(v=office.15)
 ms:contentKeyID: 52072968
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8305f030028e99d8352f67a0929ee94fe45f67ef
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 43e2c580ddaef0a5b16316e56822e912d5b7077e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477137"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868211"
 ---
 # <a name="database-objects"></a>Database オブジェクト
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 

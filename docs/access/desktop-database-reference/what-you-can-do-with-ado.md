@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249681(v=office.15)
 ms:contentKeyID: 48546483
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d944d70e7aba054abb7e6f02933b1311bb90ee17
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: be66e8cf4179965f761db5873f4a2ac5de20c49d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476611"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874497"
 ---
 # <a name="what-you-can-do-with-ado"></a>ADO を使って行える操作
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 ADO は、強力で論理的なオブジェクト モデルを開発者に提供し、OLE DB システムを介したさまざまなデータ ソースへのアクセス、編集および更新をプログラムによって実行できるようにします。ADO の最も一般的な使用方法には、リレーショナル データベースのテーブルの照会、アプリケーションでの結果の取得と表示、ユーザーによるデータの変更と保存を可能にすることなどがあります。ADO を使用してプログラムで実行できるその他の処理には、次のような処理があります。
 

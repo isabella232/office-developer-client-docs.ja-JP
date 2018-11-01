@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248979(v=office.15)
 ms:contentKeyID: 48543629
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ae3cc867c00930c71d379e8ce5bb139075d229d8
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 77726a20decd8029d4ced8198ac1bb622a1c6b11
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25602504"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881518"
 ---
 # <a name="getchunk-method-ado"></a>GetChunk メソッド (ADO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 
 サイズの大きいテキスト データやバイナリ データの [Field](field-object-ado.md) オブジェクトから、内容の全体または一部を返します。
@@ -25,11 +25,7 @@ ms.locfileid: "25602504"
 
 *変数* = *フィールド*です。GetChunk (*サイズ*)
 
-<<<<<<< ヘッド
 ## <a name="return-value"></a>戻り値
-=======
-## <a name="return-value"></a>戻り値
->>>>>>> master
 
 バリアント型 ( **Variant** ) の値を返します。
 

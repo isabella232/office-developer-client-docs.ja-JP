@@ -10,16 +10,16 @@ f1_keywords:
 - vbaac10.chm188079
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 06828474aee961dd6df02f29c7d046805a1c764c
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ef2a1f5afd4b8828fdc39744e92d0a4e92ca7bd6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477345"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871494"
 ---
 # <a name="openreport-macro-action"></a>"OpenReport/レポートを開く" マクロ アクション
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **OpenReport**アクションを使用するには、デザイン ビューまたは印刷プレビューでレポートを開くか、プリンターに直接レポートを送信します。 また、レポートに印刷するレコードを制限することもできます。
 

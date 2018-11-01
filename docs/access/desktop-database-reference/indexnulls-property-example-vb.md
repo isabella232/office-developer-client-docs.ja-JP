@@ -1,15 +1,21 @@
 ---
-<<<<<<< ヘッド タイトル: IndexNulls プロパティの使用例 (VB) TOCTitle: IndexNulls プロパティの使用例 (VB) === タイトル: IndexNulls プロパティの使用例 (VB) TOCTitle: IndexNulls プロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: 69b5661c-931e-3a1c-d60e-96a0f93b9494 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249414(v=office.15) ms:contentKeyID: 48545417 ms.date: 2015/09/18 mtps_version: v=office.15
+title: IndexNulls プロパティの使用例 (VB)
+TOCTitle: IndexNulls property example (VB)
+ms:assetid: 69b5661c-931e-3a1c-d60e-96a0f93b9494
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249414(v=office.15)
+ms:contentKeyID: 48545417
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: c1baa2169b2d953f7a390dee44f9841a4c7ecfa4
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869849"
 ---
-
-<<<<<<< ヘッド
 # <a name="indexnulls-property-example-vb"></a>IndexNulls プロパティの使用例 (VB)
-=======
-# <a name="indexnulls-property-example-vb"></a>IndexNulls プロパティの使用例 (VB)
->>>>>>> master
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Index](indexnulls-property-adox.md) の [IndexNulls](index-object-adox.md) プロパティの機能を示します。 このコードでは、新規インデックスが作成され、ユーザーが List1 という名前のリスト ボックスに入力した内容に基づいて **IndexNulls** の値が設定されます。 次に、**インデックス**は、 *Northwind* [カタログ](catalog-object-adox.md)の [**社員**][テーブル](table-object-adox.md)に追加されます。 新しい **Index** が [Employees](recordset-object-ado.md) テーブルに基づいて **Recordset** に適用され、 **Recordset** が開きます。 新しいレコードが **Employees** テーブルに追加され、 **Null** 値がインデックス フィールドに入ります。 この新しいレコードが表示されるかどうかは、 **IndexNulls** プロパティの設定によって決まります。
 

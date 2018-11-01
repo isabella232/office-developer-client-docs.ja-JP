@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249003(v=office.15)
 ms:contentKeyID: 48543708
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 22ed36c0015df458b9f0577350f5f05a03561515
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ca39f78a69c31d45ecab57b297d8b6eaf9031d92
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479056"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875365"
 ---
 # <a name="deleting-records-using-the-delete-method"></a>Delete メソッドを使ってレコードを削除する
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 **Delete** メソッドを使用すると、 **Recordset** オブジェクト内の現在のレコード、またはレコードのグループが削除されるよう設定されます。 **Recordset** オブジェクトでレコードの削除が認められていない場合は、エラーが発生します。イミディエイト更新モードを使用している場合、削除操作はデータベース内で直ちに実行されます。データベースの整合性違反などによってレコードの削除が正常に実行できない場合、レコードは **Update** が呼び出された後も編集モードのまま変化しません。このため、 [Close](cancelupdate-method-ado.md)、[Move](close-method-ado.md)、[NextRecordset](move-method-ado.md) などを使用して現在のレコードから移動する前に、 [CancelUpdate](nextrecordset-method-ado.md) を使用して更新を取り消す必要があります。
 

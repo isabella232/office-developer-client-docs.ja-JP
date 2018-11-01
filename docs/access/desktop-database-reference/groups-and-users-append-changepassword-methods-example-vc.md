@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249252(v=office.15)
 ms:contentKeyID: 48544759
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 841ac1f5f4c29c5eb23d85509d06023000cf1959
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 5f327fd0bc128a1a0a2766448e5d41b124669f02
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863074"
+ms.locfileid: "25878242"
 ---
 # <a name="groups-and-users-append-changepassword-methods-example-vc"></a>Groups と Users の Append メソッドおよび ChangePassword メソッドの使用例 (VC++)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、新しい [Group](group-object-adox.md) および新しい [User](user-object-adox.md) をシステムに追加することによって、[Groups](groups-collection-adox.md) の [Append](append-method-adox-groups.md) メソッドと [Users](users-collection-adox.md) の [Append](append-method-adox-users.md) メソッドの機能を示します。新しい **Group** は、新しい **User** の ** Groups** コレクションに追加されます。したがって、新しい **User** が **Group** に追加されます。また、[ChangePassword](changepassword-method-adox.md) メソッドは、**User** のパスワードを指定するために使用されます。
 

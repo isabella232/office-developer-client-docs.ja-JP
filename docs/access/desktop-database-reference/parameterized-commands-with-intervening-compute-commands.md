@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250311(v=office.15)
 ms:contentKeyID: 48548959
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c05e1a8b31523b9dd225c062caf2b602df1b222e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c44afce969af77696e52cea3bc194d73eb2ddd25
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476210"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25877255"
 ---
 # <a name="parameterized-commands-with-intervening-compute-commands"></a>仲介している COMPUTE コマンドに対してコマンドをパラメーター化する
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 通常、パラメーター化された Shape APPEND コマンドには、クエリ コマンドを使って親 **Recordset** を作成する句と、パラメーター化されたクエリ コマンド (パラメーター プレースホルダーである疑問符 "?" を含んでいるコマンド) を使って子 **Recordset** を作成する別の句があります。そのため、シェイプされた **Recordset** には、上位レベルに親、下位レベルに子の、2 つのレベルがあります。
 

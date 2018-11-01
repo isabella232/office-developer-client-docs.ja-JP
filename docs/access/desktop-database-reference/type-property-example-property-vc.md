@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: タイプ プロパティの使用例 (vc++) の (プロパティ) TOCTitle: タイプ プロパティの使用例 (vc++) の (プロパティ) === タイトル: タイプ プロパティの使用例 (vc++) の (プロパティ) TOCTitle: タイプ プロパティの使用例 (vc++) の (プロパティ)
->>>>>>> マスターの ms:assetid: ddf0233f-585e-6659-7fd6-f924f3a31f21 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250122(v=office.15) ms:contentKeyID: 48548168 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Type プロパティの使用例 (Property) (VC++)
+TOCTitle: Type property example (Property) (VC++)
+ms:assetid: ddf0233f-585e-6659-7fd6-f924f3a31f21
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250122(v=office.15)
+ms:contentKeyID: 48548168
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 21c0f6044b0c59949984a35e6f6d4b51c80b1801
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868428"
 ---
-
-<<<<<<< ヘッド
 # <a name="type-property-example-property-vc"></a>Type プロパティの使用例 (Property) (VC++)
-=======
-# <a name="type-property-example-property-vc"></a>プロパティの使用例 (vc++) の (プロパティ) を入力します。
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Type](type-property-ado.md) プロパティの機能を示します。この例は、 [Properties](properties-collection-ado.md) や [Fields](fields-collection-ado.md) などのコレクションの名前やデータ型の一覧を示すユーティリティのモデルです。
 

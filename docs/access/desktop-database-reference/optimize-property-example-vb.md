@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 最適化プロパティの使用例 (VB) TOCTitle: 最適化プロパティの使用例 (VB) === タイトル: プロパティの使用例 (VB) を最適化する TOCTitle: プロパティの使用例 (VB) を最適化します。
->>>>>>> マスターの ms:assetid: f4576247-6057-c1fe-013d-74feaab33174 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250240(v=office.15) ms:contentKeyID: 48548686 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Optimize プロパティの使用例 (VB)
+TOCTitle: Optimize property example (VB)
+ms:assetid: f4576247-6057-c1fe-013d-74feaab33174
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250240(v=office.15)
+ms:contentKeyID: 48548686
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: a52eae197f2be1f6ed6825dc5c6c9fd3a785451c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871452"
 ---
-
-<<<<<<< ヘッド
 # <a name="optimize-property-example-vb"></a>Optimize プロパティの使用例 (VB)
-=======
-# <a name="optimize-property-example-vb"></a>プロパティの使用例 (VB) を最適化します。
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Field](field-object-ado.md) オブジェクトの動的 Optimize プロパティの機能を示します。 ***Pubs***データベースの***Authors***テーブルの***zip***フィールドのインデックスはありません。 [Optimize](optimize-property-dynamic-ado.md)プロパティを [ ***zip*** ] フィールドを**True**に設定は、ADO [Find](find-method-ado.md)メソッドのパフォーマンスが向上するインデックスを作成するを許可します。
 
