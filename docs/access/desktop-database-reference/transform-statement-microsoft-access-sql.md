@@ -10,24 +10,24 @@ f1_keywords:
 - jetsql40.chm5277581
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 16b88f2cf441802c6246425d5bb7bb2efb71a679
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: c0552d7b98fd0862b3d6b5130d9ad56886402d67
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861219"
+ms.locfileid: "25872656"
 ---
-# <a name="transform-statement-microsoft-access-sql"></a><span data-ttu-id="61999-102">ステートメント (Microsoft Access SQL) を変換します。</span><span class="sxs-lookup"><span data-stu-id="61999-102">TRANSFORM statement (Microsoft Access SQL)</span></span>
+# <a name="transform-statement-microsoft-access-sql"></a><span data-ttu-id="de9c4-102">ステートメント (Microsoft Access SQL) を変換します。</span><span class="sxs-lookup"><span data-stu-id="de9c4-102">TRANSFORM statement (Microsoft Access SQL)</span></span>
 
-<span data-ttu-id="61999-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="61999-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="de9c4-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="de9c4-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="61999-104">クロス集計クエリを作成します。</span><span class="sxs-lookup"><span data-stu-id="61999-104">Creates a crosstab query.</span></span>
+<span data-ttu-id="de9c4-104">クロス集計クエリを作成します。</span><span class="sxs-lookup"><span data-stu-id="de9c4-104">Creates a crosstab query.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="61999-105">構文</span><span class="sxs-lookup"><span data-stu-id="61999-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="de9c4-105">構文</span><span class="sxs-lookup"><span data-stu-id="de9c4-105">Syntax</span></span>
 
-<span data-ttu-id="61999-106">*Aggfunctionselectstatement*ピボット*ピボット フィールド*の変換\[IN (*値 1*\[、 *value2*\[、.\]\])\]</span><span class="sxs-lookup"><span data-stu-id="61999-106">TRANSFORM *aggfunctionselectstatement* PIVOT *pivotfield* \[IN (*value1*\[, *value2*\[, …\]\])\]</span></span>
+<span data-ttu-id="de9c4-106">*Aggfunctionselectstatement*ピボット*ピボット フィールド*の変換\[IN (*値 1*\[、 *value2*\[、.\]\])\]</span><span class="sxs-lookup"><span data-stu-id="de9c4-106">TRANSFORM *aggfunctionselectstatement* PIVOT *pivotfield* \[IN (*value1*\[, *value2*\[, …\]\])\]</span></span>
 
-<span data-ttu-id="61999-107">TRANSFORM ステートメントには、次の指定項目があります。</span><span class="sxs-lookup"><span data-stu-id="61999-107">The TRANSFORM statement has these parts:</span></span>
+<span data-ttu-id="de9c4-107">TRANSFORM ステートメントには、次の指定項目があります。</span><span class="sxs-lookup"><span data-stu-id="de9c4-107">The TRANSFORM statement has these parts:</span></span>
 
 <table>
 <colgroup>
@@ -36,41 +36,41 @@ ms.locfileid: "25861219"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="61999-108">指定項目</span><span class="sxs-lookup"><span data-stu-id="61999-108">Part</span></span></p></th>
-<th><p><span data-ttu-id="61999-109">説明</span><span class="sxs-lookup"><span data-stu-id="61999-109">Description</span></span></p></th>
+<th><p><span data-ttu-id="de9c4-108">指定項目</span><span class="sxs-lookup"><span data-stu-id="de9c4-108">Part</span></span></p></th>
+<th><p><span data-ttu-id="de9c4-109">説明</span><span class="sxs-lookup"><span data-stu-id="de9c4-109">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="61999-110"><em>aggfunction</em></span><span class="sxs-lookup"><span data-stu-id="61999-110"><em>aggfunction</em></span></span></p></td>
-<td><p><span data-ttu-id="61999-111">選択したデータを集計する <a href="sql-aggregate-functions-sql.md">SQL 集計関数</a>。</span><span class="sxs-lookup"><span data-stu-id="61999-111">An <a href="sql-aggregate-functions-sql.md">SQL aggregate function</a> that operates on the selected data.</span></span></p></td>
+<td><p><span data-ttu-id="de9c4-110"><em>aggfunction</em></span><span class="sxs-lookup"><span data-stu-id="de9c4-110"><em>aggfunction</em></span></span></p></td>
+<td><p><span data-ttu-id="de9c4-111">選択したデータを集計する <a href="sql-aggregate-functions-sql.md">SQL 集計関数</a>。</span><span class="sxs-lookup"><span data-stu-id="de9c4-111">An <a href="sql-aggregate-functions-sql.md">SQL aggregate function</a> that operates on the selected data.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="61999-112"><em>selectstatement</em></span><span class="sxs-lookup"><span data-stu-id="61999-112"><em>selectstatement</em></span></span></p></td>
-<td><p><span data-ttu-id="61999-113"><a href="select-statement-microsoft-access-sql.md">SELECT</a> ステートメント。</span><span class="sxs-lookup"><span data-stu-id="61999-113">A <a href="select-statement-microsoft-access-sql.md">SELECT</a> statement.</span></span></p></td>
+<td><p><span data-ttu-id="de9c4-112"><em>selectstatement</em></span><span class="sxs-lookup"><span data-stu-id="de9c4-112"><em>selectstatement</em></span></span></p></td>
+<td><p><span data-ttu-id="de9c4-113"><a href="select-statement-microsoft-access-sql.md">SELECT</a> ステートメント。</span><span class="sxs-lookup"><span data-stu-id="de9c4-113">A <a href="select-statement-microsoft-access-sql.md">SELECT</a> statement.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="61999-114"><em>pivotfield</em></span><span class="sxs-lookup"><span data-stu-id="61999-114"><em>pivotfield</em></span></span></p></td>
-<td><p><span data-ttu-id="61999-115">クエリの結果で列見出しを作成するために使用するフィールドまたは式。</span><span class="sxs-lookup"><span data-stu-id="61999-115">The field or expression you want to use to create column headings in the query's result set.</span></span></p></td>
+<td><p><span data-ttu-id="de9c4-114"><em>pivotfield</em></span><span class="sxs-lookup"><span data-stu-id="de9c4-114"><em>pivotfield</em></span></span></p></td>
+<td><p><span data-ttu-id="de9c4-115">クエリの結果で列見出しを作成するために使用するフィールドまたは式。</span><span class="sxs-lookup"><span data-stu-id="de9c4-115">The field or expression you want to use to create column headings in the query's result set.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="61999-116"><em>value1</em>、<em>value2</em></span><span class="sxs-lookup"><span data-stu-id="61999-116"><em>value1</em>, <em>value2</em></span></span></p></td>
-<td><p><span data-ttu-id="61999-117">列見出しを作成するために使用する固定値。</span><span class="sxs-lookup"><span data-stu-id="61999-117">Fixed values used to create column headings.</span></span></p></td>
+<td><p><span data-ttu-id="de9c4-116"><em>value1</em>、<em>value2</em></span><span class="sxs-lookup"><span data-stu-id="de9c4-116"><em>value1</em>, <em>value2</em></span></span></p></td>
+<td><p><span data-ttu-id="de9c4-117">列見出しを作成するために使用する固定値。</span><span class="sxs-lookup"><span data-stu-id="de9c4-117">Fixed values used to create column headings.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="remarks"></a><span data-ttu-id="61999-118">解説</span><span class="sxs-lookup"><span data-stu-id="61999-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="de9c4-118">解説</span><span class="sxs-lookup"><span data-stu-id="de9c4-118">Remarks</span></span>
 
-<span data-ttu-id="61999-119">クロス集計クエリを使用してデータをまとめる場合は、指定したフィールドや式の値を列見出しとして使用できます。このため、選択クエリよりも簡潔な書式でデータを表示できます。</span><span class="sxs-lookup"><span data-stu-id="61999-119">When you summarize data using a crosstab query, you select values from specified fields or expressions as column headings so you can view data in a more compact format than with a select query.</span></span>
+<span data-ttu-id="de9c4-119">クロス集計クエリを使用してデータをまとめる場合は、指定したフィールドや式の値を列見出しとして使用できます。このため、選択クエリよりも簡潔な書式でデータを表示できます。</span><span class="sxs-lookup"><span data-stu-id="de9c4-119">When you summarize data using a crosstab query, you select values from specified fields or expressions as column headings so you can view data in a more compact format than with a select query.</span></span>
 
-<span data-ttu-id="61999-p101">TRANSFORM ステートメントは省略可能ですが、指定する場合は SQL 文字列の先頭に記述します。行見出しとして使用するフィールドを指定する SELECT ステートメントや、行のグループ化を指定する [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) 句よりも前に記述します。抽出条件や並べ替えを指定する [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql) 句などの句を併用することもできます。さらに、クロス集計クエリの中でサブクエリを述語 (特に WHERE 句の中の述語) として使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="61999-p101">TRANSFORM is optional but when included is the first statement in an SQL string. It precedes a SELECT statement that specifies the fields used as row headings and a [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) clause that specifies row grouping. Optionally, you can include other clauses, such as [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql), that specify additional selection or sorting criteria. You can also use subqueries as predicates — specifically, those in the WHERE clause — in a crosstab query.</span></span>
+<span data-ttu-id="de9c4-p101">TRANSFORM ステートメントは省略可能ですが、指定する場合は SQL 文字列の先頭に記述します。行見出しとして使用するフィールドを指定する SELECT ステートメントや、行のグループ化を指定する [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) 句よりも前に記述します。抽出条件や並べ替えを指定する [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql) 句などの句を併用することもできます。さらに、クロス集計クエリの中でサブクエリを述語 (特に WHERE 句の中の述語) として使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="de9c4-p101">TRANSFORM is optional but when included is the first statement in an SQL string. It precedes a SELECT statement that specifies the fields used as row headings and a [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) clause that specifies row grouping. Optionally, you can include other clauses, such as [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql), that specify additional selection or sorting criteria. You can also use subqueries as predicates — specifically, those in the WHERE clause — in a crosstab query.</span></span>
 
-<span data-ttu-id="61999-p102">引数 *pivotfield* に返された値は、クエリ結果の列見出しに使用されます。たとえば、クロス集計クエリで月間の売上総額を列に指定する場合は、12 個の列を作成します。また、IN 句 (省略可能) に固定値 (引数 *value1*、*value2*) を指定して、列見出しとなる引数 *pivotfield* の値を制限することもできます。さらに、対応するデータのない固定値を指定して、列を追加することもできます。</span><span class="sxs-lookup"><span data-stu-id="61999-p102">The values returned in *pivotfield* are used as column headings in the query's result set. For example, pivoting the sales figures on the month of the sale in a crosstab query would create 12 columns. You can restrict *pivotfield* to create headings from fixed values (*value1*, *value2* ) listed in the optional IN clause. You can also include fixed values for which no data exists to create additional columns.</span></span>
+<span data-ttu-id="de9c4-p102">引数 *pivotfield* に返された値は、クエリ結果の列見出しに使用されます。たとえば、クロス集計クエリで月間の売上総額を列に指定する場合は、12 個の列を作成します。また、IN 句 (省略可能) に固定値 (引数 *value1*、*value2*) を指定して、列見出しとなる引数 *pivotfield* の値を制限することもできます。さらに、対応するデータのない固定値を指定して、列を追加することもできます。</span><span class="sxs-lookup"><span data-stu-id="de9c4-p102">The values returned in *pivotfield* are used as column headings in the query's result set. For example, pivoting the sales figures on the month of the sale in a crosstab query would create 12 columns. You can restrict *pivotfield* to create headings from fixed values (*value1*, *value2* ) listed in the optional IN clause. You can also include fixed values for which no data exists to create additional columns.</span></span>
 
-## <a name="example"></a><span data-ttu-id="61999-128">例</span><span class="sxs-lookup"><span data-stu-id="61999-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="de9c4-128">例</span><span class="sxs-lookup"><span data-stu-id="de9c4-128">Example</span></span>
 
-<span data-ttu-id="61999-p103">次の使用例では、SQL TRANSFORM 句を使用して、1994 年の各四半期に各従業員が受注した注文の数を示すクロス集計クエリを作成します。このプロシージャを実行するには、SQLTRANSFORMOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="61999-p103">This example uses the SQL TRANSFORM clause to create a crosstab query showing the number of orders taken by each employee for each calendar quarter of 1994. The SQLTRANSFORMOutput function is required for this procedure to run.</span></span>
+<span data-ttu-id="de9c4-p103">次の使用例では、SQL TRANSFORM 句を使用して、1994 年の各四半期に各従業員が受注した注文の数を示すクロス集計クエリを作成します。このプロシージャを実行するには、SQLTRANSFORMOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="de9c4-p103">This example uses the SQL TRANSFORM clause to create a crosstab query showing the number of orders taken by each employee for each calendar quarter of 1994. The SQLTRANSFORMOutput function is required for this procedure to run.</span></span>
 
 ```vb
     Sub TransformX1() 
@@ -108,7 +108,7 @@ ms.locfileid: "25861219"
 
 <br/>
 
-<span data-ttu-id="61999-p104">次の使用例では、SQL TRANSFORM 句を使用して、1994 年の各四半期に各従業員が受注した注文の合計のドルの額を示す、やや複雑なクロス集計クエリを作成します。このプロシージャを実行するには、SQLTRANSFORMOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="61999-p104">This example uses the SQL TRANSFORM clause to create a slightly more complex crosstab query showing the total dollar amount of orders taken by each employee for each calendar quarter of 1994. The SQLTRANSFORMOutput function is required for this procedure to run.</span></span>
+<span data-ttu-id="de9c4-p104">次の使用例では、SQL TRANSFORM 句を使用して、1994 年の各四半期に各従業員が受注した注文の合計のドルの額を示す、やや複雑なクロス集計クエリを作成します。このプロシージャを実行するには、SQLTRANSFORMOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="de9c4-p104">This example uses the SQL TRANSFORM clause to create a slightly more complex crosstab query showing the total dollar amount of orders taken by each employee for each calendar quarter of 1994. The SQLTRANSFORMOutput function is required for this procedure to run.</span></span>
 
 ```vb
     Sub TransformX2() 

@@ -10,23 +10,23 @@ f1_keywords:
 - dao360.chm1053178
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 387493b984ad348b9aff8108ac9f053d3aed134a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 380e841571bfa951a917704a51372b8156d05729
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477607"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25888063"
 ---
-# <a name="querydefproperties-property-dao"></a><span data-ttu-id="cfc39-102">QueryDef.Properties プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="cfc39-102">QueryDef.Properties Property (DAO)</span></span>
+# <a name="querydefproperties-property-dao"></a><span data-ttu-id="84891-102">QueryDef.Properties プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="84891-102">QueryDef.Properties Property (DAO)</span></span>
 
 
-<span data-ttu-id="cfc39-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="cfc39-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="84891-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="84891-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="cfc39-p101">指定したオブジェクトの **[Properties](properties-collection-dao.md)** コレクションを取得します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="cfc39-p101">Returns the **[Properties](properties-collection-dao.md)** collection of the specified object. Read-only.</span></span>
+<span data-ttu-id="84891-p101">指定したオブジェクトの **[Properties](properties-collection-dao.md)** コレクションを取得します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="84891-p101">Returns the **[Properties](properties-collection-dao.md)** collection of the specified object. Read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="cfc39-106">構文</span><span class="sxs-lookup"><span data-stu-id="cfc39-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="84891-106">構文</span><span class="sxs-lookup"><span data-stu-id="84891-106">Syntax</span></span>
 
-<span data-ttu-id="cfc39-107">*式*です。プロパティ</span><span class="sxs-lookup"><span data-stu-id="cfc39-107">*expression* .Properties</span></span>
+<span data-ttu-id="84891-107">*式*です。プロパティ</span><span class="sxs-lookup"><span data-stu-id="84891-107">*expression* .Properties</span></span>
 
-<span data-ttu-id="cfc39-108">\*式\***クエリ定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="cfc39-108">*expression* A variable that represents a **QueryDef** object.</span></span>
+<span data-ttu-id="84891-108">\*式\***クエリ定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="84891-108">*expression* A variable that represents a **QueryDef** object.</span></span>
 

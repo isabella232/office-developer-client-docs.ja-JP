@@ -10,28 +10,28 @@ f1_keywords:
 - dao360.chm1052966
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f76cb57345b7ec653092517d72fa3355a29de6cd
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: c7813b73b5e003a32e05592d35ad2a75a8fd7a45
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862563"
+ms.locfileid: "25869702"
 ---
-# <a name="dbenginecreateworkspace-method-dao"></a><span data-ttu-id="00708-102">DBEngine.CreateWorkspace メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="00708-102">DBEngine.CreateWorkspace Method (DAO)</span></span>
+# <a name="dbenginecreateworkspace-method-dao"></a><span data-ttu-id="07257-102">DBEngine.CreateWorkspace メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="07257-102">DBEngine.CreateWorkspace Method (DAO)</span></span>
 
 
-<span data-ttu-id="00708-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="00708-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="07257-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="07257-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-<span data-ttu-id="00708-104">新しい **[Workspace](workspace-object-dao.md)** オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="00708-104">Creates a new **[Workspace](workspace-object-dao.md)** object.</span></span>
+<span data-ttu-id="07257-104">新しい **[Workspace](workspace-object-dao.md)** オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="07257-104">Creates a new **[Workspace](workspace-object-dao.md)** object.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="00708-105">構文</span><span class="sxs-lookup"><span data-stu-id="00708-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="07257-105">構文</span><span class="sxs-lookup"><span data-stu-id="07257-105">Syntax</span></span>
 
-<span data-ttu-id="00708-106">*式*です。CreateWorkspace (***名前***、***ユーザー名***、***パスワード***、 ***UseType***)</span><span class="sxs-lookup"><span data-stu-id="00708-106">*expression* .CreateWorkspace(***Name***, ***UserName***, ***Password***, ***UseType***)</span></span>
+<span data-ttu-id="07257-106">*式*です。CreateWorkspace (***名前***、***ユーザー名***、***パスワード***、 ***UseType***)</span><span class="sxs-lookup"><span data-stu-id="07257-106">*expression* .CreateWorkspace(***Name***, ***UserName***, ***Password***, ***UseType***)</span></span>
 
-<span data-ttu-id="00708-107">\*式\***DBEngine**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="00708-107">*expression* A variable that represents a **DBEngine** object.</span></span>
+<span data-ttu-id="07257-107">\*式\***DBEngine**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="07257-107">*expression* A variable that represents a **DBEngine** object.</span></span>
 
-### <a name="parameters"></a><span data-ttu-id="00708-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="00708-108">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="07257-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="07257-108">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -42,45 +42,45 @@ ms.locfileid: "25862563"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="00708-109">名前</span><span class="sxs-lookup"><span data-stu-id="00708-109">Name</span></span></p></th>
-<th><p><span data-ttu-id="00708-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="00708-110">Required/Optional</span></span></p></th>
-<th><p><span data-ttu-id="00708-111">データ型</span><span class="sxs-lookup"><span data-stu-id="00708-111">Data Type</span></span></p></th>
-<th><p><span data-ttu-id="00708-112">説明</span><span class="sxs-lookup"><span data-stu-id="00708-112">Description</span></span></p></th>
+<th><p><span data-ttu-id="07257-109">名前</span><span class="sxs-lookup"><span data-stu-id="07257-109">Name</span></span></p></th>
+<th><p><span data-ttu-id="07257-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="07257-110">Required/Optional</span></span></p></th>
+<th><p><span data-ttu-id="07257-111">データ型</span><span class="sxs-lookup"><span data-stu-id="07257-111">Data Type</span></span></p></th>
+<th><p><span data-ttu-id="07257-112">説明</span><span class="sxs-lookup"><span data-stu-id="07257-112">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="00708-113">名前</span><span class="sxs-lookup"><span data-stu-id="00708-113">Name</span></span></p></td>
-<td><p><span data-ttu-id="00708-114">必須</span><span class="sxs-lookup"><span data-stu-id="00708-114">Required</span></span></p></td>
-<td><p><span data-ttu-id="00708-115"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="00708-115"><strong>String</strong></span></span></p></td>
-<td><p><span data-ttu-id="00708-p101">新しい <strong>Workspace</strong> オブジェクトの一意の名前を表す文字列型 (<strong>String</strong>) の値。有効な <strong>Workspace</strong> 名の詳細については、<strong><a href="connection-name-property-dao.md">Name</a></strong> プロパティを参照してください。</span><span class="sxs-lookup"><span data-stu-id="00708-p101">A <strong>String</strong> that uniquely names the new <strong>Workspace</strong> object. See the <strong><a href="connection-name-property-dao.md">Name</a></strong> property for details on valid <strong>Workspace</strong> names.</span></span></p></td>
+<td><p><span data-ttu-id="07257-113">名前</span><span class="sxs-lookup"><span data-stu-id="07257-113">Name</span></span></p></td>
+<td><p><span data-ttu-id="07257-114">必須</span><span class="sxs-lookup"><span data-stu-id="07257-114">Required</span></span></p></td>
+<td><p><span data-ttu-id="07257-115"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="07257-115"><strong>String</strong></span></span></p></td>
+<td><p><span data-ttu-id="07257-p101">新しい <strong>Workspace</strong> オブジェクトの一意の名前を表す文字列型 (<strong>String</strong>) の値。有効な <strong>Workspace</strong> 名の詳細については、<strong><a href="connection-name-property-dao.md">Name</a></strong> プロパティを参照してください。</span><span class="sxs-lookup"><span data-stu-id="07257-p101">A <strong>String</strong> that uniquely names the new <strong>Workspace</strong> object. See the <strong><a href="connection-name-property-dao.md">Name</a></strong> property for details on valid <strong>Workspace</strong> names.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="00708-118">UserName</span><span class="sxs-lookup"><span data-stu-id="00708-118">UserName</span></span></p></td>
-<td><p><span data-ttu-id="00708-119">必須</span><span class="sxs-lookup"><span data-stu-id="00708-119">Required</span></span></p></td>
-<td><p><span data-ttu-id="00708-120"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="00708-120"><strong>String</strong></span></span></p></td>
-<td><p><span data-ttu-id="00708-p102">新しい <strong>Workspace</strong> オブジェクトの所有者を表す文字列型 (<strong>String</strong>) の値。詳細については、<strong>UserName</strong> プロパティを参照してください。</span><span class="sxs-lookup"><span data-stu-id="00708-p102">A <strong>String</strong> that identifies the owner of the new <strong>Workspace</strong> object. See the <strong>UserName</strong> property for more information.</span></span></p></td>
+<td><p><span data-ttu-id="07257-118">UserName</span><span class="sxs-lookup"><span data-stu-id="07257-118">UserName</span></span></p></td>
+<td><p><span data-ttu-id="07257-119">必須</span><span class="sxs-lookup"><span data-stu-id="07257-119">Required</span></span></p></td>
+<td><p><span data-ttu-id="07257-120"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="07257-120"><strong>String</strong></span></span></p></td>
+<td><p><span data-ttu-id="07257-p102">新しい <strong>Workspace</strong> オブジェクトの所有者を表す文字列型 (<strong>String</strong>) の値。詳細については、<strong>UserName</strong> プロパティを参照してください。</span><span class="sxs-lookup"><span data-stu-id="07257-p102">A <strong>String</strong> that identifies the owner of the new <strong>Workspace</strong> object. See the <strong>UserName</strong> property for more information.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="00708-123">Password</span><span class="sxs-lookup"><span data-stu-id="00708-123">Password</span></span></p></td>
-<td><p><span data-ttu-id="00708-124">必須</span><span class="sxs-lookup"><span data-stu-id="00708-124">Required</span></span></p></td>
-<td><p><span data-ttu-id="00708-125"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="00708-125"><strong>String</strong></span></span></p></td>
-<td><p><span data-ttu-id="00708-p103">新しい <strong>Workspace</strong> オブジェクトのパスワードが含まれる文字列型 (<strong>String</strong>) の値。パスワードは 20 文字以内にする必要があり、ASCII 文字 0 (null) 以外の任意の文字を使用できます。</span><span class="sxs-lookup"><span data-stu-id="00708-p103">A <strong>String</strong> containing the password for the new <strong>Workspace</strong> object. The password can be up to 20 characters long and can include any characters except ASCII character 0 (null).</span></span></p>
+<td><p><span data-ttu-id="07257-123">Password</span><span class="sxs-lookup"><span data-stu-id="07257-123">Password</span></span></p></td>
+<td><p><span data-ttu-id="07257-124">必須</span><span class="sxs-lookup"><span data-stu-id="07257-124">Required</span></span></p></td>
+<td><p><span data-ttu-id="07257-125"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="07257-125"><strong>String</strong></span></span></p></td>
+<td><p><span data-ttu-id="07257-p103">新しい <strong>Workspace</strong> オブジェクトのパスワードが含まれる文字列型 (<strong>String</strong>) の値。パスワードは 20 文字以内にする必要があり、ASCII 文字 0 (null) 以外の任意の文字を使用できます。</span><span class="sxs-lookup"><span data-stu-id="07257-p103">A <strong>String</strong> containing the password for the new <strong>Workspace</strong> object. The password can be up to 20 characters long and can include any characters except ASCII character 0 (null).</span></span></p>
 
 > [!NOTE]
-> <span data-ttu-id="00708-p104">[!メモ] パスワードには、大文字、小文字、数字、記号を組み合わせた複雑なものを使用してください。これらの文字を混在させたものになっていないパスワードは強固とはいえません。たとえば、Y6dh!et5 は安全性の高いパスワードです。House27 は推測されやすいパスワードです。また、高い安全性を保ちながらも、書き留めておかなくても覚えておくことができるパスワードを使用してください。</span><span class="sxs-lookup"><span data-stu-id="00708-p104">Use strong passwords that combine upper- and lowercase letters, numbers, and symbols. Weak passwords don't mix these elements. Strong password: Y6dh!et5. Weak password: House27. Use a strong password that you can remember so that you don't have to write it down.</span></span>
+> <span data-ttu-id="07257-p104">[!メモ] パスワードには、大文字、小文字、数字、記号を組み合わせた複雑なものを使用してください。これらの文字を混在させたものになっていないパスワードは強固とはいえません。たとえば、Y6dh!et5 は安全性の高いパスワードです。House27 は推測されやすいパスワードです。また、高い安全性を保ちながらも、書き留めておかなくても覚えておくことができるパスワードを使用してください。</span><span class="sxs-lookup"><span data-stu-id="07257-p104">Use strong passwords that combine upper- and lowercase letters, numbers, and symbols. Weak passwords don't mix these elements. Strong password: Y6dh!et5. Weak password: House27. Use a strong password that you can remember so that you don't have to write it down.</span></span>
 
 
 </td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="00708-133">UseType</span><span class="sxs-lookup"><span data-stu-id="00708-133">UseType</span></span></p></td>
-<td><p><span data-ttu-id="00708-134">省略可能</span><span class="sxs-lookup"><span data-stu-id="00708-134">Optional</span></span></p></td>
-<td><p><span data-ttu-id="00708-135"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="00708-135"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="00708-136"><strong><a href="workspacetypeenum-enumeration-dao.md">WorkspaceTypeEnum</a></strong> 値の 1 つ。</span><span class="sxs-lookup"><span data-stu-id="00708-136">One of the <strong><a href="workspacetypeenum-enumeration-dao.md">WorkspaceTypeEnum</a></strong> values.</span></span></p>
+<td><p><span data-ttu-id="07257-133">UseType</span><span class="sxs-lookup"><span data-stu-id="07257-133">UseType</span></span></p></td>
+<td><p><span data-ttu-id="07257-134">省略可能</span><span class="sxs-lookup"><span data-stu-id="07257-134">Optional</span></span></p></td>
+<td><p><span data-ttu-id="07257-135"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="07257-135"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="07257-136"><strong><a href="workspacetypeenum-enumeration-dao.md">WorkspaceTypeEnum</a></strong> 値の 1 つ。</span><span class="sxs-lookup"><span data-stu-id="07257-136">One of the <strong><a href="workspacetypeenum-enumeration-dao.md">WorkspaceTypeEnum</a></strong> values.</span></span></p>
 
 > [!NOTE]
-> <span data-ttu-id="00708-137">[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="00708-137">ODBCDirect workspaces are not supported in Microsoft Access 2013.</span></span> <span data-ttu-id="00708-138">型引数を**dbUseODBC**に設定は、実行時エラーになります。</span><span class="sxs-lookup"><span data-stu-id="00708-138">Setting the type argument to **dbUseODBC** will result in a run-time error.</span></span> <span data-ttu-id="00708-139">Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</span><span class="sxs-lookup"><span data-stu-id="00708-139">Use ADO if you want to access external data sources without using the Microsoft Access database engine.</span></span>
+> <span data-ttu-id="07257-137">[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="07257-137">ODBCDirect workspaces are not supported in Microsoft Access 2013.</span></span> <span data-ttu-id="07257-138">型引数を**dbUseODBC**に設定は、実行時エラーになります。</span><span class="sxs-lookup"><span data-stu-id="07257-138">Setting the type argument to **dbUseODBC** will result in a run-time error.</span></span> <span data-ttu-id="07257-139">Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</span><span class="sxs-lookup"><span data-stu-id="07257-139">Use ADO if you want to access external data sources without using the Microsoft Access database engine.</span></span>
 
 
 </td>
@@ -89,27 +89,23 @@ ms.locfileid: "25862563"
 </table>
 
 
-<span data-ttu-id="00708-140"><<<<<<< 見出し</span><span class="sxs-lookup"><span data-stu-id="00708-140"><<<<<<< HEAD</span></span>
-### <a name="return-value"></a><span data-ttu-id="00708-141">戻り値</span><span class="sxs-lookup"><span data-stu-id="00708-141">Return Value</span></span>
-=======
-### <a name="return-value"></a><span data-ttu-id="00708-142">戻り値</span><span class="sxs-lookup"><span data-stu-id="00708-142">Return value</span></span>
->>>>>>> <span data-ttu-id="00708-143">master</span><span class="sxs-lookup"><span data-stu-id="00708-143">master</span></span>
+### <a name="return-value"></a><span data-ttu-id="07257-140">戻り値</span><span class="sxs-lookup"><span data-stu-id="07257-140">Return value</span></span>
 
-<span data-ttu-id="00708-144">Workspace</span><span class="sxs-lookup"><span data-stu-id="00708-144">Workspace</span></span>
+<span data-ttu-id="07257-141">Workspace</span><span class="sxs-lookup"><span data-stu-id="07257-141">Workspace</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="00708-145">注釈</span><span class="sxs-lookup"><span data-stu-id="00708-145">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="07257-142">注釈</span><span class="sxs-lookup"><span data-stu-id="07257-142">Remarks</span></span>
 
-<span data-ttu-id="00708-146">**CreateWorkspace** メソッドを使用して新しい **Workspace** オブジェクトを作成すると、 **Workspace** セッションが開始され、 **Workspace** オブジェクトをアプリケーションで参照できるようになります。</span><span class="sxs-lookup"><span data-stu-id="00708-146">Once you use the **CreateWorkspace** method to create a new **Workspace** object, a **Workspace** session is started, and you can refer to the **Workspace** object in your application.</span></span>
+<span data-ttu-id="07257-143">**CreateWorkspace** メソッドを使用して新しい **Workspace** オブジェクトを作成すると、 **Workspace** セッションが開始され、 **Workspace** オブジェクトをアプリケーションで参照できるようになります。</span><span class="sxs-lookup"><span data-stu-id="07257-143">Once you use the **CreateWorkspace** method to create a new **Workspace** object, a **Workspace** session is started, and you can refer to the **Workspace** object in your application.</span></span>
 
-<span data-ttu-id="00708-p106">**Workspace** オブジェクトは永続的ではなく、ディスクに保存することはできません。 **Workspace** オブジェクトの作成後はそのオブジェクトのプロパティの設定を変更できませんが、 **Name** プロパティは唯一の例外であり、 **Workspace** オブジェクトを **[Workspaces](workspaces-collection-dao.md)** コレクションに追加する前に変更することができます。</span><span class="sxs-lookup"><span data-stu-id="00708-p106">**Workspace** objects aren't permanent, and you can't save them to disk. Once you create a **Workspace** object, you can't alter any of its property settings, except for the **Name** property, which you can modify before appending the **Workspace** object to the **[Workspaces](workspaces-collection-dao.md)** collection.</span></span>
+<span data-ttu-id="07257-p106">**Workspace** オブジェクトは永続的ではなく、ディスクに保存することはできません。 **Workspace** オブジェクトの作成後はそのオブジェクトのプロパティの設定を変更できませんが、 **Name** プロパティは唯一の例外であり、 **Workspace** オブジェクトを **[Workspaces](workspaces-collection-dao.md)** コレクションに追加する前に変更することができます。</span><span class="sxs-lookup"><span data-stu-id="07257-p106">**Workspace** objects aren't permanent, and you can't save them to disk. Once you create a **Workspace** object, you can't alter any of its property settings, except for the **Name** property, which you can modify before appending the **Workspace** object to the **[Workspaces](workspaces-collection-dao.md)** collection.</span></span>
 
-<span data-ttu-id="00708-p107">新しい **Workspace** オブジェクトを使用するために、このオブジェクトをコレクションに追加する必要はありません。 **Workspaces** コレクションを通じて参照する場合のみ、新しく作成した **Workspace** オブジェクトをコレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="00708-p107">You don't have to append the new **Workspace** object to a collection before you can use it. You append a newly created **Workspace** object only if you need to refer to it through the **Workspaces** collection.</span></span>
+<span data-ttu-id="07257-p107">新しい **Workspace** オブジェクトを使用するために、このオブジェクトをコレクションに追加する必要はありません。 **Workspaces** コレクションを通じて参照する場合のみ、新しく作成した **Workspace** オブジェクトをコレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="07257-p107">You don't have to append the new **Workspace** object to a collection before you can use it. You append a newly created **Workspace** object only if you need to refer to it through the **Workspaces** collection.</span></span>
 
-<span data-ttu-id="00708-151">**Workspaces** コレクションから **Workspace** オブジェクトを削除するには、開いているすべてのデータベースおよび接続を閉じてから、 [Workspace](connection-close-method-dao.md) オブジェクトの \*\*\*\*Close\*\*\*\* メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="00708-151">To remove a **Workspace** object from the **Workspaces** collection, close all open databases and connections and then use the **[Close](connection-close-method-dao.md)** method on the **Workspace** object.</span></span>
+<span data-ttu-id="07257-148">**Workspaces** コレクションから **Workspace** オブジェクトを削除するには、開いているすべてのデータベースおよび接続を閉じてから、 [Workspace](connection-close-method-dao.md) オブジェクトの \*\*\*\*Close\*\*\*\* メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="07257-148">To remove a **Workspace** object from the **Workspaces** collection, close all open databases and connections and then use the **[Close](connection-close-method-dao.md)** method on the **Workspace** object.</span></span>
 
-## <a name="example"></a><span data-ttu-id="00708-152">例</span><span class="sxs-lookup"><span data-stu-id="00708-152">Example</span></span>
+## <a name="example"></a><span data-ttu-id="07257-149">例</span><span class="sxs-lookup"><span data-stu-id="07257-149">Example</span></span>
 
-<span data-ttu-id="00708-p108">この例では、 **CreateWorkspace** メソッドを使用して Microsoft Access ワークスペースを作成します。次に、ワークスペースのプロパティの一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="00708-p108">This example uses the **CreateWorkspace** method to createMicrosoft Access workspace. It then lists the properties of the workspace.</span></span>
+<span data-ttu-id="07257-p108">この例では、 **CreateWorkspace** メソッドを使用して Microsoft Access ワークスペースを作成します。次に、ワークスペースのプロパティの一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="07257-p108">This example uses the **CreateWorkspace** method to createMicrosoft Access workspace. It then lists the properties of the workspace.</span></span>
 
 ```vb 
 Sub CreateWorkspaceX() 
