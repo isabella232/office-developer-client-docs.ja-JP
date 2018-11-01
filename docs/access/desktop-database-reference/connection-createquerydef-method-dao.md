@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1053067
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 35bf71742133b65c2e55583e1c62922cb5bc91e8
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 5ea0e06d133c95506a68e947254bfcd0ea8a2dc6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25606040"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880307"
 ---
 # <a name="connectioncreatequerydef-method-dao"></a>Connection.CreateQueryDef メソッド (DAO)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 新しい **[QueryDef](querydef-object-dao.md)** オブジェクトを作成します。
 
@@ -64,11 +64,7 @@ ms.locfileid: "25606040"
 </table>
 
 
-<<<<<<< ヘッド
 ### <a name="return-value"></a>戻り値
-=======
-### <a name="return-value"></a>戻り値
->>>>>>> master
 
 QueryDef
 

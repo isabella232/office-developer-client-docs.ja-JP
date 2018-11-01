@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 属性および名前のプロパティの使用例 (VB) TOCTitle: 属性および名前のプロパティの使用例 (VB) === タイトル: 属性と名前のプロパティの使用例 (VB) TOCTitle: 属性と名前のプロパティの使用例 (VB)
->>>>>>> マスターの ms:assetid: b049c03c-9add-48b7-6a0a-51d2507c8e33 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249840(v=office.15) ms:contentKeyID: 48547120 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Attributes プロパティと Name プロパティの使用例 (VB)
+TOCTitle: Attributes and Name properties example (VB)
+ms:assetid: b049c03c-9add-48b7-6a0a-51d2507c8e33
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249840(v=office.15)
+ms:contentKeyID: 48547120
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: b4120f175e96d42ec77e748438fd0d369396320c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887846"
 ---
-
-<<<<<<< ヘッド
 # <a name="attributes-and-name-properties-example-vb"></a>Attributes プロパティと Name プロパティの使用例 (VB)
-=======
-# <a name="attributes-and-name-properties-example-vb"></a>属性および名前のプロパティの使用例 (VB)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 次の例では、[Connection](attributes-property-ado.md)、[Field](connection-object-ado.md)、[Property](field-object-ado.md) の各オブジェクトの [Attributes](property-object-ado.md) プロパティの値を表示します。 [Name](name-property-ado.md) プロパティを使用して、 **Field** および **Property** の各オブジェクトの名前を表示しています。
 

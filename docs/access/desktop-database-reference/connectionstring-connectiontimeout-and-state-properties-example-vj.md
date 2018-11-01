@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: 接続文字列、タイムアウト、および状態のプロパティの使用例 (vj++) TOCTitle: 接続文字列、タイムアウト、および状態のプロパティの使用例 (vj++) === タイトル: 接続文字列は、タイムアウト、および状態のプロパティの使用例 (vj++) TOCTitle: 接続文字列、タイムアウト、および状態のプロパティの使用例 (vj++)
->>>>>>> マスターの ms:assetid: 88b3f95e-0e46-7cbb-8086-d583319a6628 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249599(v=office.15) ms:contentKeyID: 48546141 ms.date: 2015/09/18 mtps_version: v=office.15
+title: ConnectionString プロパティ、ConnectionTimeout プロパティ、State プロパティの使用例 (VJ++)
+TOCTitle: ConnectionString, ConnectionTimeout, and State properties example (VJ++)
+ms:assetid: 88b3f95e-0e46-7cbb-8086-d583319a6628
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249599(v=office.15)
+ms:contentKeyID: 48546141
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 6ad29def518f86eaee14ca3fd901e881223753d2
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887839"
 ---
-
-<<<<<<< ヘッド
-# <a name="connectionstring-connectiontimeout-and-state-properties-example-vj"></a>ConnectionString プロパティ、ConnectionTimeout プロパティおよび State プロパティの使用例 (VJ++)
-=======
-# <a name="connectionstring-connectiontimeout-and-state-properties-example-vj"></a>ConnectionString、タイムアウト、および状態のプロパティの使用例 (vj++)
->>>>>>> master
+# <a name="connectionstring-connectiontimeout-and-state-properties-example-vj"></a>ConnectionString プロパティ、ConnectionTimeout プロパティ、State プロパティの使用例 (VJ++)
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、[Connection](connectionstring-property-ado.md) オブジェクトを開くための、 [ConnectionString](connection-object-ado.md) プロパティのさまざまな使い方を示します。また、 [ConnectionTimeout](connectiontimeout-property-ado.md) プロパティを使って接続のタイムアウト時間を設定し、 [State](state-property-ado.md) プロパティを使って接続の状態を確認します。このプロシージャを実行するには、GetState 関数が必要です。
 
