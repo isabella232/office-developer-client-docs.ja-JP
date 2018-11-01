@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="1ec64-101"><<<<<<< ヘッド タイトル: ADO NumericScale と Precision プロパティの使用例 (VB) TOCTitle: NumericScale と Precision プロパティの使用例 (VB) === タイトル: ADO NumericScale と Precision プロパティの使用例 (VB) TOCTitle: NumericScale と精度プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="1ec64-101"><<<<<<< HEAD title: ADO NumericScale and Precision Properties Example (VB) TOCTitle: NumericScale and Precision Properties Example (VB) ======= title: ADO NumericScale and Precision properties example (VB) TOCTitle: NumericScale and Precision properties example (VB)</span></span>
->>>>>>> <span data-ttu-id="1ec64-102">マスターの ms:assetid: 060394b1-0c2c-3726-92a0-0f350bbaa3d5 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248814(v=office.15) ms:contentKeyID: 48543044 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="1ec64-102">master ms:assetid: 060394b1-0c2c-3726-92a0-0f350bbaa3d5 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248814(v=office.15) ms:contentKeyID: 48543044 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: ADO NumericScale と Precision プロパティの使用例 (VB)
+TOCTitle: NumericScale and Precision properties example (VB)
+ms:assetid: 060394b1-0c2c-3726-92a0-0f350bbaa3d5
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248814(v=office.15)
+ms:contentKeyID: 48543044
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 7ed77da6c537407d347ff6d4ebf9d254986c8618
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869695"
 ---
-
-<span data-ttu-id="1ec64-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="1ec64-103"><<<<<<< HEAD</span></span>
-# <a name="ado-numericscale-and-precision-properties-example-vb"></a><span data-ttu-id="1ec64-104">ADO NumericScale プロパティと Precision プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="1ec64-104">ADO NumericScale and Precision Properties Example (VB)</span></span>
-=======
-# <a name="ado-numericscale-and-precision-properties-example-vb"></a><span data-ttu-id="1ec64-105">ADO NumericScale と Precision プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="1ec64-105">ADO NumericScale and Precision properties example (VB)</span></span>
->>>>>>> <span data-ttu-id="1ec64-106">master</span><span class="sxs-lookup"><span data-stu-id="1ec64-106">master</span></span>
+# <a name="ado-numericscale-and-precision-properties-example-vb"></a><span data-ttu-id="95cae-102">ADO NumericScale と Precision プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="95cae-102">ADO NumericScale and Precision properties example (VB)</span></span>
 
 
-<span data-ttu-id="1ec64-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="1ec64-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="95cae-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="95cae-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="1ec64-108">この例では、[NumericScale](numericscale-property-ado.md) プロパティと [Precision](precision-property-ado.md) プロパティを使って、***Pubs*** データベースの ***Discounts*** テーブル内にあるフィールドの小数点以下の桁数と精度を表示します。</span><span class="sxs-lookup"><span data-stu-id="1ec64-108">This example uses the [NumericScale](numericscale-property-ado.md) and [Precision](precision-property-ado.md) properties to display the numeric scale and precision of fields in the ***Discounts*** table of the ***Pubs*** database.</span></span>
+<span data-ttu-id="95cae-104">この例では、[NumericScale](numericscale-property-ado.md) プロパティと [Precision](precision-property-ado.md) プロパティを使って、***Pubs*** データベースの ***Discounts*** テーブル内にあるフィールドの小数点以下の桁数と精度を表示します。</span><span class="sxs-lookup"><span data-stu-id="95cae-104">This example uses the [NumericScale](numericscale-property-ado.md) and [Precision](precision-property-ado.md) properties to display the numeric scale and precision of fields in the ***Discounts*** table of the ***Pubs*** database.</span></span>
 
 ```vb 
  
