@@ -1,16 +1,22 @@
 ---
-<<<<<<< ヘッド タイトル: プロバイダーと DefaultDatabase プロパティの使用例 (vc++) TOCTitle: プロバイダーと DefaultDatabase プロパティの使用例 (vc++) === タイトル: プロバイダーと DefaultDatabase プロパティの使用例 (vc++) TOCTitle: プロバイダーDefaultDatabase プロパティの使用例 (vc++)
->>>>>>> マスターの ms:assetid: 21c38be4-3906-cee8-b77b-300f1226392a ms:mtpsurl: https://msdn.microsoft.com/library/JJ248995(v=office.15) ms:contentKeyID: 48543687 ms.date: 2015/09/18 mtps_version: v=office.15
+title: Provider プロパティと DefaultDatabase プロパティの使用例 (VC++)
+TOCTitle: Provider and DefaultDatabase properties example (VC++)
+ms:assetid: 21c38be4-3906-cee8-b77b-300f1226392a
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248995(v=office.15)
+ms:contentKeyID: 48543687
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: d7f94f0eef4821fcc1dc778d8772926e6af70e5a
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889834"
 ---
-
-<<<<<<< ヘッド
 # <a name="provider-and-defaultdatabase-properties-example-vc"></a>Provider プロパティと DefaultDatabase プロパティの使用例 (VC++)
-=======
-# <a name="provider-and-defaultdatabase-properties-example-vc"></a>プロバイダーと DefaultDatabase プロパティの使用例 (vc++)
->>>>>>> master
 
 
-**適用されます**Access 2013 |。Office 2013
+**適用されます**Access 2013、Office 2013。
 
 この例では、異なるプロバイダーを使用する 3 つの [Connection](provider-property-ado.md) オブジェクトを開くことによって、 [Provider](connection-object-ado.md) プロパティの機能を示します。また、 [DefaultDatabase](defaultdatabase-property-ado.md) プロパティを使用して、Microsoft ODBC Provider の既定のデータベースを設定します。
 
