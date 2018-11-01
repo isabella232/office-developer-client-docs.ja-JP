@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="f398a-101"><<<<<<< ヘッド タイトル: 準備されたプロパティの使用例 (VB) TOCTitle: 準備されたプロパティの使用例 (VB) === タイトル: Prepared プロパティの使用例 (VB) TOCTitle: Prepared プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="f398a-101"><<<<<<< HEAD title: Prepared Property Example (VB) TOCTitle: Prepared Property Example (VB) ======= title: Prepared property example (VB) TOCTitle: Prepared property example (VB)</span></span>
->>>>>>> <span data-ttu-id="f398a-102">マスターの ms:assetid: d7332052-bf2e-f7d4-eb06-59ff8d68f812 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250081(v=office.15) ms:contentKeyID: 48548000 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="f398a-102">master ms:assetid: d7332052-bf2e-f7d4-eb06-59ff8d68f812 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250081(v=office.15) ms:contentKeyID: 48548000 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Prepared プロパティの使用例 (VB)
+TOCTitle: Prepared property example (VB)
+ms:assetid: d7332052-bf2e-f7d4-eb06-59ff8d68f812
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250081(v=office.15)
+ms:contentKeyID: 48548000
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 8c5e139ddfae11a92ccc5cbcea4ca509c8cdeecc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875428"
 ---
-
-<span data-ttu-id="f398a-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="f398a-103"><<<<<<< HEAD</span></span>
-# <a name="prepared-property-example-vb"></a><span data-ttu-id="f398a-104">Prepared プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="f398a-104">Prepared Property Example (VB)</span></span>
-=======
-# <a name="prepared-property-example-vb"></a><span data-ttu-id="f398a-105">Prepared プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="f398a-105">Prepared property example (VB)</span></span>
->>>>>>> <span data-ttu-id="f398a-106">master</span><span class="sxs-lookup"><span data-stu-id="f398a-106">master</span></span>
+# <a name="prepared-property-example-vb"></a><span data-ttu-id="e5f86-102">Prepared プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="e5f86-102">Prepared property example (VB)</span></span>
 
 
-<span data-ttu-id="f398a-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="f398a-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="e5f86-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="e5f86-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f398a-108">この例では、準備済みのバージョンと準備されていないバージョンの 2 つの [Command](prepared-property-ado.md) オブジェクトを開くことによって、 [Prepared](command-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="f398a-108">This example demonstrates the [Prepared](prepared-property-ado.md) property by opening two [Command](command-object-ado.md) objects — one prepared and one not prepared.</span></span>
+<span data-ttu-id="e5f86-104">この例では、準備済みのバージョンと準備されていないバージョンの 2 つの [Command](prepared-property-ado.md) オブジェクトを開くことによって、 [Prepared](command-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="e5f86-104">This example demonstrates the [Prepared](prepared-property-ado.md) property by opening two [Command](command-object-ado.md) objects — one prepared and one not prepared.</span></span>
 
 ```vb 
  

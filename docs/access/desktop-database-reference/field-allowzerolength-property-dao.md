@@ -10,30 +10,30 @@ f1_keywords:
 - dao360.chm1052962
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: cba5790ae557f7e5b29e8068d09d6fa7451cfb27
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 7d5e6ecf7683a41ddb057467f892155143c33144
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477878"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882435"
 ---
-# <a name="fieldallowzerolength-property-dao"></a><span data-ttu-id="179e9-102">Field.AllowZeroLength プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="179e9-102">Field.AllowZeroLength Property (DAO)</span></span>
+# <a name="fieldallowzerolength-property-dao"></a><span data-ttu-id="0154a-102">Field.AllowZeroLength プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="0154a-102">Field.AllowZeroLength Property (DAO)</span></span>
 
-<span data-ttu-id="179e9-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="179e9-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="0154a-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="0154a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="179e9-104">長さゼロの文字列 ("") が、テキスト型またはメモ型の **[Field](field-value-property-dao.md)** オブジェクトの **[Value](field-object-dao.md)** プロパティに対する有効な設定値かどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="179e9-104">Sets or returns a value that indicates whether a zero-length string ("") is a valid setting for the **[Value](field-value-property-dao.md)** property of the **[Field](field-object-dao.md)** object with a Text or Memo data type (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="0154a-104">長さゼロの文字列 ("") が、テキスト型またはメモ型の **[Field](field-value-property-dao.md)** オブジェクトの **[Value](field-object-dao.md)** プロパティに対する有効な設定値かどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="0154a-104">Sets or returns a value that indicates whether a zero-length string ("") is a valid setting for the **[Value](field-value-property-dao.md)** property of the **[Field](field-object-dao.md)** object with a Text or Memo data type (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="179e9-105">構文</span><span class="sxs-lookup"><span data-stu-id="179e9-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="0154a-105">構文</span><span class="sxs-lookup"><span data-stu-id="0154a-105">Syntax</span></span>
 
-<span data-ttu-id="179e9-106">*式*です。AllowZeroLength</span><span class="sxs-lookup"><span data-stu-id="179e9-106">*expression* .AllowZeroLength</span></span>
+<span data-ttu-id="0154a-106">*式*です。AllowZeroLength</span><span class="sxs-lookup"><span data-stu-id="0154a-106">*expression* .AllowZeroLength</span></span>
 
-<span data-ttu-id="179e9-107">\*式\***Field**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="179e9-107">*expression* A variable that represents a **Field** object.</span></span>
+<span data-ttu-id="0154a-107">\*式\***Field**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="0154a-107">*expression* A variable that represents a **Field** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="179e9-108">注釈</span><span class="sxs-lookup"><span data-stu-id="179e9-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0154a-108">注釈</span><span class="sxs-lookup"><span data-stu-id="0154a-108">Remarks</span></span>
 
-<span data-ttu-id="179e9-109">**Fields** コレクションに追加されていないオブジェクトの場合、このプロパティは値の取得および設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="179e9-109">For an object not yet appended to the **Fields** collection, this property is read/write.</span></span>
+<span data-ttu-id="0154a-109">**Fields** コレクションに追加されていないオブジェクトの場合、このプロパティは値の取得および設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="0154a-109">For an object not yet appended to the **Fields** collection, this property is read/write.</span></span>
 
-<span data-ttu-id="179e9-110">**Fields** コレクションに追加されると、 **AllowZeroLength** プロパティを使用できるかどうかは、次の表に示すように、 **Fields** コレクションを含むオブジェクトによって異なります。</span><span class="sxs-lookup"><span data-stu-id="179e9-110">Once appended to a **Fields** collection, the availability of the **AllowZeroLength** property depends on the object that contains the **Fields** collection, as shown in the following table.</span></span>
+<span data-ttu-id="0154a-110">**Fields** コレクションに追加されると、 **AllowZeroLength** プロパティを使用できるかどうかは、次の表に示すように、 **Fields** コレクションを含むオブジェクトによって異なります。</span><span class="sxs-lookup"><span data-stu-id="0154a-110">Once appended to a **Fields** collection, the availability of the **AllowZeroLength** property depends on the object that contains the **Fields** collection, as shown in the following table.</span></span>
 
 <table>
 <colgroup>
@@ -42,40 +42,40 @@ ms.locfileid: "25477878"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="179e9-111">Fields コレクションの所属先</span><span class="sxs-lookup"><span data-stu-id="179e9-111">If the Fields collection belongs to an</span></span></p></th>
-<th><p><span data-ttu-id="179e9-112">AllowZeroLength プロパティの使用</span><span class="sxs-lookup"><span data-stu-id="179e9-112">Then AllowZeroLength is</span></span></p></th>
+<th><p><span data-ttu-id="0154a-111">Fields コレクションの所属先</span><span class="sxs-lookup"><span data-stu-id="0154a-111">If the Fields collection belongs to an</span></span></p></th>
+<th><p><span data-ttu-id="0154a-112">AllowZeroLength プロパティの使用</span><span class="sxs-lookup"><span data-stu-id="0154a-112">Then AllowZeroLength is</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="179e9-113"><strong>Index</strong> オブジェクト</span><span class="sxs-lookup"><span data-stu-id="179e9-113"><strong>Index</strong> object</span></span></p></td>
-<td><p><span data-ttu-id="179e9-114">サポートしません。</span><span class="sxs-lookup"><span data-stu-id="179e9-114">Not supported</span></span></p></td>
+<td><p><span data-ttu-id="0154a-113"><strong>Index</strong> オブジェクト</span><span class="sxs-lookup"><span data-stu-id="0154a-113"><strong>Index</strong> object</span></span></p></td>
+<td><p><span data-ttu-id="0154a-114">サポートしません。</span><span class="sxs-lookup"><span data-stu-id="0154a-114">Not supported</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="179e9-115"><strong>QueryDef</strong> オブジェクト</span><span class="sxs-lookup"><span data-stu-id="179e9-115"><strong>QueryDef</strong> object</span></span></p></td>
-<td><p><span data-ttu-id="179e9-116">読み取り専用</span><span class="sxs-lookup"><span data-stu-id="179e9-116">Read-only</span></span></p></td>
+<td><p><span data-ttu-id="0154a-115"><strong>QueryDef</strong> オブジェクト</span><span class="sxs-lookup"><span data-stu-id="0154a-115"><strong>QueryDef</strong> object</span></span></p></td>
+<td><p><span data-ttu-id="0154a-116">読み取り専用</span><span class="sxs-lookup"><span data-stu-id="0154a-116">Read-only</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="179e9-117"><strong>Recordset</strong> オブジェクト</span><span class="sxs-lookup"><span data-stu-id="179e9-117"><strong>Recordset</strong> object</span></span></p></td>
-<td><p><span data-ttu-id="179e9-118">読み取り専用</span><span class="sxs-lookup"><span data-stu-id="179e9-118">Read-only</span></span></p></td>
+<td><p><span data-ttu-id="0154a-117"><strong>Recordset</strong> オブジェクト</span><span class="sxs-lookup"><span data-stu-id="0154a-117"><strong>Recordset</strong> object</span></span></p></td>
+<td><p><span data-ttu-id="0154a-118">読み取り専用</span><span class="sxs-lookup"><span data-stu-id="0154a-118">Read-only</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="179e9-119"><strong>Relation</strong> オブジェクト</span><span class="sxs-lookup"><span data-stu-id="179e9-119"><strong>Relation</strong> object</span></span></p></td>
-<td><p><span data-ttu-id="179e9-120">サポートしません。</span><span class="sxs-lookup"><span data-stu-id="179e9-120">Not supported</span></span></p></td>
+<td><p><span data-ttu-id="0154a-119"><strong>Relation</strong> オブジェクト</span><span class="sxs-lookup"><span data-stu-id="0154a-119"><strong>Relation</strong> object</span></span></p></td>
+<td><p><span data-ttu-id="0154a-120">サポートしません。</span><span class="sxs-lookup"><span data-stu-id="0154a-120">Not supported</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="179e9-121"><strong>TableDef</strong> オブジェクト</span><span class="sxs-lookup"><span data-stu-id="179e9-121"><strong>TableDef</strong> object</span></span></p></td>
-<td><p><span data-ttu-id="179e9-122">読み取り/書き込み</span><span class="sxs-lookup"><span data-stu-id="179e9-122">Read/write</span></span></p></td>
+<td><p><span data-ttu-id="0154a-121"><strong>TableDef</strong> オブジェクト</span><span class="sxs-lookup"><span data-stu-id="0154a-121"><strong>TableDef</strong> object</span></span></p></td>
+<td><p><span data-ttu-id="0154a-122">読み取り/書き込み</span><span class="sxs-lookup"><span data-stu-id="0154a-122">Read/write</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="179e9-123">このプロパティを **[Required](field-required-property-dao.md)** 、 **[ValidateOnSet](field-validateonset-property-dao.md)** プロパティまたは **[ValidationRule](field-validationrule-property-dao.md)** プロパティと共に使用して、フィールドの値を検証できます。</span><span class="sxs-lookup"><span data-stu-id="179e9-123">You can use this property along with the **[Required](field-required-property-dao.md)**, **[ValidateOnSet](field-validateonset-property-dao.md)**, or **[ValidationRule](field-validationrule-property-dao.md)** property to validate a value in a field.</span></span>
+<span data-ttu-id="0154a-123">このプロパティを **[Required](field-required-property-dao.md)** 、 **[ValidateOnSet](field-validateonset-property-dao.md)** プロパティまたは **[ValidationRule](field-validationrule-property-dao.md)** プロパティと共に使用して、フィールドの値を検証できます。</span><span class="sxs-lookup"><span data-stu-id="0154a-123">You can use this property along with the **[Required](field-required-property-dao.md)**, **[ValidateOnSet](field-validateonset-property-dao.md)**, or **[ValidationRule](field-validationrule-property-dao.md)** property to validate a value in a field.</span></span>
 
-## <a name="example"></a><span data-ttu-id="179e9-124">例</span><span class="sxs-lookup"><span data-stu-id="179e9-124">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0154a-124">例</span><span class="sxs-lookup"><span data-stu-id="0154a-124">Example</span></span>
 
-<span data-ttu-id="179e9-p101">この例では、 **AllowZeroLength** プロパティにより、ユーザーは **Field** オブジェクトの値を空の文字列に設定できます。こうすると、ユーザーはデータが不明のレコードとデータを適用しないレコードを区別できます。</span><span class="sxs-lookup"><span data-stu-id="179e9-p101">In this example, the **AllowZeroLength** property allows the user to set the value of a **Field** to an empty string. In this situation, the user can distinguish between a record where data is not known and a record where the data does not apply.</span></span>
+<span data-ttu-id="0154a-p101">この例では、 **AllowZeroLength** プロパティにより、ユーザーは **Field** オブジェクトの値を空の文字列に設定できます。こうすると、ユーザーはデータが不明のレコードとデータを適用しないレコードを区別できます。</span><span class="sxs-lookup"><span data-stu-id="0154a-p101">In this example, the **AllowZeroLength** property allows the user to set the value of a **Field** to an empty string. In this situation, the user can distinguish between a record where data is not known and a record where the data does not apply.</span></span>
 
 ```vb
     Sub AllowZeroLengthX() 

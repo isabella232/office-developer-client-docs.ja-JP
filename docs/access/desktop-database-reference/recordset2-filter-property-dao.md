@@ -10,37 +10,37 @@ f1_keywords:
 - dao360.chm1053062
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: ba5b43f6b0012e45c3cb4af662454ef76eab9194
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 9be017367a0422884e393acf82d96e6b4908689a
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479008"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876450"
 ---
-# <a name="recordset2filter-property-dao"></a><span data-ttu-id="0e09b-102">Recordset2.Filter プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="0e09b-102">Recordset2.Filter Property (DAO)</span></span>
+# <a name="recordset2filter-property-dao"></a><span data-ttu-id="79b2f-102">Recordset2.Filter プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="79b2f-102">Recordset2.Filter Property (DAO)</span></span>
 
 
-<span data-ttu-id="0e09b-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="0e09b-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="79b2f-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="79b2f-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="0e09b-p101">次に開く **Recordset** オブジェクトに含めるレコードを決める値を設定または取得します (Microsoft Access ワークスペースのみ)。値の取得および設定が可能です。文字列型 ( **String** ) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="0e09b-p101">Sets or returns a value that determines the records included in a subsequently opened **Recordset** object (Microsoft Access workspaces only). Read/write **String**.</span></span>
+<span data-ttu-id="79b2f-p101">次に開く **Recordset** オブジェクトに含めるレコードを決める値を設定または取得します (Microsoft Access ワークスペースのみ)。値の取得および設定が可能です。文字列型 ( **String** ) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="79b2f-p101">Sets or returns a value that determines the records included in a subsequently opened **Recordset** object (Microsoft Access workspaces only). Read/write **String**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="0e09b-106">構文</span><span class="sxs-lookup"><span data-stu-id="0e09b-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="79b2f-106">構文</span><span class="sxs-lookup"><span data-stu-id="79b2f-106">Syntax</span></span>
 
-<span data-ttu-id="0e09b-107">*式*です。フィルター</span><span class="sxs-lookup"><span data-stu-id="0e09b-107">*expression* .Filter</span></span>
+<span data-ttu-id="79b2f-107">*式*です。フィルター</span><span class="sxs-lookup"><span data-stu-id="79b2f-107">*expression* .Filter</span></span>
 
-<span data-ttu-id="0e09b-108">\*式\***Recordset2**オブジェクトを返すオブジェクト式を指定します。</span><span class="sxs-lookup"><span data-stu-id="0e09b-108">*expression* An expression that returns a **Recordset2** object.</span></span>
+<span data-ttu-id="79b2f-108">\*式\***Recordset2**オブジェクトを返すオブジェクト式を指定します。</span><span class="sxs-lookup"><span data-stu-id="79b2f-108">*expression* An expression that returns a **Recordset2** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="0e09b-109">注釈</span><span class="sxs-lookup"><span data-stu-id="0e09b-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="79b2f-109">注釈</span><span class="sxs-lookup"><span data-stu-id="79b2f-109">Remarks</span></span>
 
-<span data-ttu-id="0e09b-110">設定値または戻り値は、SQL ステートメントの WHERE 句から予約語 WHERE を除いた部分を含む文字列データ型 (String) の値です。</span><span class="sxs-lookup"><span data-stu-id="0e09b-110">The setting or return value is a String data type that contains the WHERE clause of an SQL statement without the reserved word WHERE.</span></span>
+<span data-ttu-id="79b2f-110">設定値または戻り値は、SQL ステートメントの WHERE 句から予約語 WHERE を除いた部分を含む文字列データ型 (String) の値です。</span><span class="sxs-lookup"><span data-stu-id="79b2f-110">The setting or return value is a String data type that contains the WHERE clause of an SQL statement without the reserved word WHERE.</span></span>
 
-<span data-ttu-id="0e09b-111">ダイナセット タイプ、スナップショット タイプまたは前方のみタイプの**Recordset**オブジェクトにフィルターを適用するのにには、 **Filter**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="0e09b-111">Use the **Filter** property to apply a filter to a dynaset–, snapshot–, or forward–only–type **Recordset** object.</span></span>
+<span data-ttu-id="79b2f-111">ダイナセット タイプ、スナップショット タイプまたは前方のみタイプの**Recordset**オブジェクトにフィルターを適用するのにには、 **Filter**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="79b2f-111">Use the **Filter** property to apply a filter to a dynaset–, snapshot–, or forward–only–type **Recordset** object.</span></span>
 
-<span data-ttu-id="0e09b-112">**Filter** プロパティを使用すると、既存の **Recordset** オブジェクトに基づいて新しい **Recordset** オブジェクトを開くときに、既存のオブジェクトから取得するレコードを制限できます。</span><span class="sxs-lookup"><span data-stu-id="0e09b-112">You can use the **Filter** property to restrict the records returned from an existing object when a new **Recordset** object is opened based on an existing **Recordset** object.</span></span>
+<span data-ttu-id="79b2f-112">**Filter** プロパティを使用すると、既存の **Recordset** オブジェクトに基づいて新しい **Recordset** オブジェクトを開くときに、既存のオブジェクトから取得するレコードを制限できます。</span><span class="sxs-lookup"><span data-stu-id="79b2f-112">You can use the **Filter** property to restrict the records returned from an existing object when a new **Recordset** object is opened based on an existing **Recordset** object.</span></span>
 
-<span data-ttu-id="0e09b-113">(月-日-年) 米国の日付形式を使用して、米国版の Microsoft Access データベース エンジンを使用していない場合でも、日付を含むフィールドをフィルターするとき (文字列、たとえば、strMonth を連結することにより、任意の日付をアセンブリする必要が場合 &"-"& strDay &"、"& strYear)。</span><span class="sxs-lookup"><span data-stu-id="0e09b-113">Use the U.S. date format (month-day-year) when you filter fields containing dates, even if you're not using the U.S. version of the Microsoft Access database engine (in which case you must assemble any dates by concatenating strings, for example, strMonth & "-" & strDay & "-" & strYear).</span></span> <span data-ttu-id="0e09b-114">この形式で構成されていない場合、データが予期したとおりにフィルター処理されないことがあります。</span><span class="sxs-lookup"><span data-stu-id="0e09b-114">Otherwise, the data may not be filtered as you expect.</span></span>
+<span data-ttu-id="79b2f-113">(月-日-年) 米国の日付形式を使用して、米国版の Microsoft Access データベース エンジンを使用していない場合でも、日付を含むフィールドをフィルターするとき (文字列、たとえば、strMonth を連結することにより、任意の日付をアセンブリする必要が場合 &"-"& strDay &"、"& strYear)。</span><span class="sxs-lookup"><span data-stu-id="79b2f-113">Use the U.S. date format (month-day-year) when you filter fields containing dates, even if you're not using the U.S. version of the Microsoft Access database engine (in which case you must assemble any dates by concatenating strings, for example, strMonth & "-" & strDay & "-" & strYear).</span></span> <span data-ttu-id="79b2f-114">この形式で構成されていない場合、データが予期したとおりにフィルター処理されないことがあります。</span><span class="sxs-lookup"><span data-stu-id="79b2f-114">Otherwise, the data may not be filtered as you expect.</span></span>
 
-<span data-ttu-id="0e09b-115">多くの場合、WHERE 句が含まれた SQL ステートメントを使用すると、より短時間で新しい **Recordset** オブジェクトを開くことができます。</span><span class="sxs-lookup"><span data-stu-id="0e09b-115">In many cases, it's faster to open a new **Recordset** object by using an SQL statement that includes a WHERE clause.</span></span>
+<span data-ttu-id="79b2f-115">多くの場合、WHERE 句が含まれた SQL ステートメントを使用すると、より短時間で新しい **Recordset** オブジェクトを開くことができます。</span><span class="sxs-lookup"><span data-stu-id="79b2f-115">In many cases, it's faster to open a new **Recordset** object by using an SQL statement that includes a WHERE clause.</span></span>
 
-<span data-ttu-id="0e09b-116">非 – 整数値と連結した文字列にプロパティを設定して、システム パラメーター、米国以外の小数点の記号、カンマなどを指定するかどうか (たとえば、strFilter ="価格\>"& lngPrice でと lngPrice = 125,50)、しようとするときにエラーが発生しました。次の**レコード セット**を開きます。</span><span class="sxs-lookup"><span data-stu-id="0e09b-116">If you set the property to a string concatenated with a non–integer value, and the system parameters specify a non-U.S. decimal character such as a comma (for example, strFilter = "PRICE \> " & lngPrice, and lngPrice = 125,50), an error occurs when you try to open the next **Recordset**.</span></span> <span data-ttu-id="0e09b-117">連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、SQL で小数点の記号として使用できるのはピリオドのみであるためです。</span><span class="sxs-lookup"><span data-stu-id="0e09b-117">This is because during concatenation, the number will be converted to a string using your system's default decimal character, and Microsoft Access SQL only accepts U.S. decimal characters.</span></span>
+<span data-ttu-id="79b2f-116">非 – 整数値と連結した文字列にプロパティを設定して、システム パラメーター、米国以外の小数点の記号、カンマなどを指定するかどうか (たとえば、strFilter ="価格\>"& lngPrice でと lngPrice = 125,50)、しようとするときにエラーが発生しました。次の**レコード セット**を開きます。</span><span class="sxs-lookup"><span data-stu-id="79b2f-116">If you set the property to a string concatenated with a non–integer value, and the system parameters specify a non-U.S. decimal character such as a comma (for example, strFilter = "PRICE \> " & lngPrice, and lngPrice = 125,50), an error occurs when you try to open the next **Recordset**.</span></span> <span data-ttu-id="79b2f-117">連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、SQL で小数点の記号として使用できるのはピリオドのみであるためです。</span><span class="sxs-lookup"><span data-stu-id="79b2f-117">This is because during concatenation, the number will be converted to a string using your system's default decimal character, and Microsoft Access SQL only accepts U.S. decimal characters.</span></span>
 

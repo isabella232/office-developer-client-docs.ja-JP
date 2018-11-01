@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="a5303-101"><<<<<<< ヘッド タイトル: 主キーおよび一意のプロパティの使用例 (VB) TOCTitle: 主キーおよび一意のプロパティの使用例 (VB) === タイトル: 主キーや Unique プロパティの使用例 (VB) TOCTitle: 主キーや Unique プロパティの使用例(VB)</span><span class="sxs-lookup"><span data-stu-id="a5303-101"><<<<<<< HEAD title: PrimaryKey and Unique Properties Example (VB) TOCTitle: PrimaryKey and Unique Properties Example (VB) ======= title: PrimaryKey and Unique properties example (VB) TOCTitle: PrimaryKey and Unique properties example (VB)</span></span>
->>>>>>> <span data-ttu-id="a5303-102">マスターの ms:assetid: 888f1a35-b883-2449-3b70-103e5116b29f ms:mtpsurl: https://msdn.microsoft.com/library/JJ249597(v=office.15) ms:contentKeyID: 48546137 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="a5303-102">master ms:assetid: 888f1a35-b883-2449-3b70-103e5116b29f ms:mtpsurl: https://msdn.microsoft.com/library/JJ249597(v=office.15) ms:contentKeyID: 48546137 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: PrimaryKey プロパティと Unique プロパティの使用例 (VB)
+TOCTitle: PrimaryKey and Unique properties example (VB)
+ms:assetid: 888f1a35-b883-2449-3b70-103e5116b29f
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249597(v=office.15)
+ms:contentKeyID: 48546137
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: fa534aa53151361c194b68124b0386ab521f1f30
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878067"
 ---
-
-<span data-ttu-id="a5303-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="a5303-103"><<<<<<< HEAD</span></span>
-# <a name="primarykey-and-unique-properties-example-vb"></a><span data-ttu-id="a5303-104">PrimaryKey プロパティと Unique プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="a5303-104">PrimaryKey and Unique Properties Example (VB)</span></span>
-=======
-# <a name="primarykey-and-unique-properties-example-vb"></a><span data-ttu-id="a5303-105">主キーや Unique プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="a5303-105">PrimaryKey and Unique properties example (VB)</span></span>
->>>>>>> <span data-ttu-id="a5303-106">master</span><span class="sxs-lookup"><span data-stu-id="a5303-106">master</span></span>
+# <a name="primarykey-and-unique-properties-example-vb"></a><span data-ttu-id="7ec19-102">PrimaryKey プロパティと Unique プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="7ec19-102">PrimaryKey and Unique properties example (VB)</span></span>
 
 
-<span data-ttu-id="a5303-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="a5303-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="7ec19-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="7ec19-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="a5303-p101">ここでは、[Index](primarykey-property-adox.md) の [PrimaryKey](unique-property-adox.md) プロパティおよび [Unique](index-object-adox.md) プロパティのコード例を示します。このコードでは 2 つの列を持つ新しいテーブルを作成します。 **PrimaryKey** プロパティおよび **Unique** プロパティを使用して列の 1 つに主キーを設定すると、重複した値の入力ができなくなります。</span><span class="sxs-lookup"><span data-stu-id="a5303-p101">This example demonstrates the [PrimaryKey](primarykey-property-adox.md) and [Unique](unique-property-adox.md) properties of an [Index](index-object-adox.md). The code creates a new table with two columns. The **PrimaryKey** and **Unique** properties are used to make one column the primary key for which duplicate values are not allowed.</span></span>
+<span data-ttu-id="7ec19-p101">ここでは、[Index](primarykey-property-adox.md) の [PrimaryKey](unique-property-adox.md) プロパティおよび [Unique](index-object-adox.md) プロパティのコード例を示します。このコードでは 2 つの列を持つ新しいテーブルを作成します。 **PrimaryKey** プロパティおよび **Unique** プロパティを使用して列の 1 つに主キーを設定すると、重複した値の入力ができなくなります。</span><span class="sxs-lookup"><span data-stu-id="7ec19-p101">This example demonstrates the [PrimaryKey](primarykey-property-adox.md) and [Unique](unique-property-adox.md) properties of an [Index](index-object-adox.md). The code creates a new table with two columns. The **PrimaryKey** and **Unique** properties are used to make one column the primary key for which duplicate values are not allowed.</span></span>
 
 ```vb 
  

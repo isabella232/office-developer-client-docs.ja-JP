@@ -6,25 +6,25 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249198(v=office.15)
 ms:contentKeyID: 48544489
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: eccec24c2e0fa110e0266cbab610c4e7d5c16c84
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: fc2c55b3f4c665860a7d609877823423d87c6690
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863963"
+ms.locfileid: "25882005"
 ---
-# <a name="move-method-example-vbscript"></a><span data-ttu-id="7f81d-102">Move メソッドの使用例 (VBScript)</span><span class="sxs-lookup"><span data-stu-id="7f81d-102">Move method example (VBScript)</span></span>
+# <a name="move-method-example-vbscript"></a><span data-ttu-id="5714b-102">Move メソッドの使用例 (VBScript)</span><span class="sxs-lookup"><span data-stu-id="5714b-102">Move method example (VBScript)</span></span>
 
 
-<span data-ttu-id="7f81d-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="7f81d-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="5714b-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="5714b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="7f81d-104">この例では、[Move](move-method-ado.md) メソッドを使用して、ユーザーの入力に基づいてレコード ポインターを配置します。</span><span class="sxs-lookup"><span data-stu-id="7f81d-104">This example uses the [Move](move-method-ado.md) method to position the record pointer, based on user input.</span></span>
+<span data-ttu-id="5714b-104">この例では、[Move](move-method-ado.md) メソッドを使用して、ユーザーの入力に基づいてレコード ポインターを配置します。</span><span class="sxs-lookup"><span data-stu-id="5714b-104">This example uses the [Move](move-method-ado.md) method to position the record pointer, based on user input.</span></span>
 
-<span data-ttu-id="7f81d-105">次の例は、Active Server Pages (ASP) で使用してください。</span><span class="sxs-lookup"><span data-stu-id="7f81d-105">Use the following example in an Active Server Page (ASP).</span></span>
+<span data-ttu-id="5714b-105">次の例は、Active Server Pages (ASP) で使用してください。</span><span class="sxs-lookup"><span data-stu-id="5714b-105">Use the following example in an Active Server Page (ASP).</span></span>
 
-<span data-ttu-id="7f81d-p101">**Find** を使用してファイル Adovbs.inc を検索し、使用するディレクトリに置きます。次のコードをコピーして Windows のメモ帳またはその他のテキスト エディターに貼り付け、 **MoveVBS.asp** として保存してください。結果は任意のブラウザーで表示できます。</span><span class="sxs-lookup"><span data-stu-id="7f81d-p101">Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code to Notepad or another text editor, and save it as **MoveVBS.asp**. You can view the result in any browser.</span></span>
+<span data-ttu-id="5714b-p101">**Find** を使用してファイル Adovbs.inc を検索し、使用するディレクトリに置きます。次のコードをコピーして Windows のメモ帳またはその他のテキスト エディターに貼り付け、 **MoveVBS.asp** として保存してください。結果は任意のブラウザーで表示できます。</span><span class="sxs-lookup"><span data-stu-id="5714b-p101">Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code to Notepad or another text editor, and save it as **MoveVBS.asp**. You can view the result in any browser.</span></span>
 
-<span data-ttu-id="7f81d-109">英字や整数以外の数を入力すると、エラー処理の動作を確認できます。</span><span class="sxs-lookup"><span data-stu-id="7f81d-109">Try entering a letter or noninteger to see the error handling work.</span></span>
+<span data-ttu-id="5714b-109">英字や整数以外の数を入力すると、エラー処理の動作を確認できます。</span><span class="sxs-lookup"><span data-stu-id="5714b-109">Try entering a letter or noninteger to see the error handling work.</span></span>
 
 ```vb 
  

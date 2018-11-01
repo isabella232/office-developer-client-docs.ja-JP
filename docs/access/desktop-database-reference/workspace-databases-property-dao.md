@@ -10,23 +10,23 @@ f1_keywords:
 - dao360.chm1053174
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 11de92519cd3d2ff917a28ffef40236e0c252fc3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 082c482cca32fa8d861a686b3120409f5e547977
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25477398"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883450"
 ---
-# <a name="workspacedatabases-property-dao"></a><span data-ttu-id="f1793-102">Workspace.Databases プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="f1793-102">Workspace.Databases Property (DAO)</span></span>
+# <a name="workspacedatabases-property-dao"></a><span data-ttu-id="be042-102">Workspace.Databases プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="be042-102">Workspace.Databases Property (DAO)</span></span>
 
 
-<span data-ttu-id="f1793-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="f1793-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="be042-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="be042-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f1793-p101">指定された **Workspace** の開いているデータベースを表す **Databases** コレクションを取得します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="f1793-p101">Returns a **Databases** collection that represents the open databases in the specified **Workspace**. Read-only.</span></span>
+<span data-ttu-id="be042-p101">指定された **Workspace** の開いているデータベースを表す **Databases** コレクションを取得します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="be042-p101">Returns a **Databases** collection that represents the open databases in the specified **Workspace**. Read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f1793-106">構文</span><span class="sxs-lookup"><span data-stu-id="f1793-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="be042-106">構文</span><span class="sxs-lookup"><span data-stu-id="be042-106">Syntax</span></span>
 
-<span data-ttu-id="f1793-107">*式*です。データベース</span><span class="sxs-lookup"><span data-stu-id="f1793-107">*expression* .Databases</span></span>
+<span data-ttu-id="be042-107">*式*です。データベース</span><span class="sxs-lookup"><span data-stu-id="be042-107">*expression* .Databases</span></span>
 
-<span data-ttu-id="f1793-108">\*式\***ワークスペース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="f1793-108">*expression* A variable that represents a **Workspace** object.</span></span>
+<span data-ttu-id="be042-108">\*式\***ワークスペース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="be042-108">*expression* A variable that represents a **Workspace** object.</span></span>
 

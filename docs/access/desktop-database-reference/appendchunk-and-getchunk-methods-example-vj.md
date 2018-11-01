@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249952(v=office.15)
 ms:contentKeyID: 48547562
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4e815f7bb6d1c93e5d2d61275eefa15c962a70de
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: fbe2a3e16fc162fb02613e0df4db7cc52dd60882
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863789"
+ms.locfileid: "25880734"
 ---
-# <a name="appendchunk-and-getchunk-methods-example-vj"></a><span data-ttu-id="a88d2-102">AppendChunk メソッドと GetChunk メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="a88d2-102">AppendChunk and GetChunk methods example (VJ++)</span></span>
+# <a name="appendchunk-and-getchunk-methods-example-vj"></a><span data-ttu-id="212c0-102">AppendChunk メソッドと GetChunk メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="212c0-102">AppendChunk and GetChunk methods example (VJ++)</span></span>
 
 
-<span data-ttu-id="a88d2-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="a88d2-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="212c0-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="212c0-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="a88d2-104">この例では、[AppendChunk](appendchunk-method-ado.md) メソッドと [GetChunk](getchunk-method-ado.md) メソッドを使用して、別のレコードのデータを画像フィールドに格納します。</span><span class="sxs-lookup"><span data-stu-id="a88d2-104">This example uses the [AppendChunk](appendchunk-method-ado.md) and [GetChunk](getchunk-method-ado.md) methods to fill an image field with data from another record.</span></span>
+<span data-ttu-id="212c0-104">この例では、[AppendChunk](appendchunk-method-ado.md) メソッドと [GetChunk](getchunk-method-ado.md) メソッドを使用して、別のレコードのデータを画像フィールドに格納します。</span><span class="sxs-lookup"><span data-stu-id="212c0-104">This example uses the [AppendChunk](appendchunk-method-ado.md) and [GetChunk](getchunk-method-ado.md) methods to fill an image field with data from another record.</span></span>
 
 ```java 
  

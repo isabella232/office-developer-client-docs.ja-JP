@@ -10,34 +10,34 @@ f1_keywords:
 - dao360.chm1053363
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 8e7f5f4b6a0d4fa12be35a20f0a17717fdef1062
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a588504cd42ffdb67dc35633e8d992501fbde304
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476665"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867210"
 ---
-# <a name="errornumber-property-dao"></a><span data-ttu-id="d16f4-102">Error.Number プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="d16f4-102">Error.Number Property (DAO)</span></span>
+# <a name="errornumber-property-dao"></a><span data-ttu-id="78bf2-102">Error.Number プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="78bf2-102">Error.Number Property (DAO)</span></span>
 
 
-<span data-ttu-id="d16f4-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="d16f4-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="78bf2-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="78bf2-103">**Applies to**: Access 2013, Office 2013</span></span>
  
 
-<span data-ttu-id="d16f4-104">エラーを示す数値を取得します。</span><span class="sxs-lookup"><span data-stu-id="d16f4-104">Returns a numeric value specifying an error.</span></span>
+<span data-ttu-id="78bf2-104">エラーを示す数値を取得します。</span><span class="sxs-lookup"><span data-stu-id="78bf2-104">Returns a numeric value specifying an error.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d16f4-105">構文</span><span class="sxs-lookup"><span data-stu-id="d16f4-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="78bf2-105">構文</span><span class="sxs-lookup"><span data-stu-id="78bf2-105">Syntax</span></span>
 
-<span data-ttu-id="d16f4-106">*式*です。番号</span><span class="sxs-lookup"><span data-stu-id="d16f4-106">*expression* .Number</span></span>
+<span data-ttu-id="78bf2-106">*式*です。番号</span><span class="sxs-lookup"><span data-stu-id="78bf2-106">*expression* .Number</span></span>
 
-<span data-ttu-id="d16f4-107">\*式\***エラー**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="d16f4-107">*expression* A variable that represents an **Error** object.</span></span>
+<span data-ttu-id="78bf2-107">\*式\***エラー**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="78bf2-107">*expression* A variable that represents an **Error** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="d16f4-108">注釈</span><span class="sxs-lookup"><span data-stu-id="d16f4-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="78bf2-108">注釈</span><span class="sxs-lookup"><span data-stu-id="78bf2-108">Remarks</span></span>
 
-<span data-ttu-id="d16f4-p101">**Number** プロパティを使用して、発生したエラーを特定します。このプロパティの値は、エラーの状態を表す一意のトラップ番号に対応しています。</span><span class="sxs-lookup"><span data-stu-id="d16f4-p101">Use the **Number** property to determine the error that occurred. The value of the property corresponds to a unique trap number that corresponds to an error condition.</span></span>
+<span data-ttu-id="78bf2-p101">**Number** プロパティを使用して、発生したエラーを特定します。このプロパティの値は、エラーの状態を表す一意のトラップ番号に対応しています。</span><span class="sxs-lookup"><span data-stu-id="78bf2-p101">Use the **Number** property to determine the error that occurred. The value of the property corresponds to a unique trap number that corresponds to an error condition.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d16f4-111">例</span><span class="sxs-lookup"><span data-stu-id="d16f4-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="78bf2-111">例</span><span class="sxs-lookup"><span data-stu-id="78bf2-111">Example</span></span>
 
-<span data-ttu-id="d16f4-112">この例では、エラーを発生させてトラップし、 **Error** オブジェクトの **Description**、 **Number**、 **Source**、 **HelpContext**、および **HelpFile** の各プロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="d16f4-112">This example forces an error, traps it, and displays the **Description**, **Number**, **Source**, **HelpContext**, and **HelpFile** properties of the resulting **Error** object.</span></span>
+<span data-ttu-id="78bf2-112">この例では、エラーを発生させてトラップし、 **Error** オブジェクトの **Description**、 **Number**、 **Source**、 **HelpContext**、および **HelpFile** の各プロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="78bf2-112">This example forces an error, traps it, and displays the **Description**, **Number**, **Source**, **HelpContext**, and **HelpFile** properties of the resulting **Error** object.</span></span>
 
 ```vb 
 Sub DescriptionX() 

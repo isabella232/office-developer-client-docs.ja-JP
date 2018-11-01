@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248942(v=office.15)
 ms:contentKeyID: 48543506
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6da71bb7e8e721225c2e901f72095f0a125c1dc6
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 73ce227e9557481c743c814540a5987f91acd3fc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25479098"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876996"
 ---
-# <a name="error-object-ado-reference"></a><span data-ttu-id="9753d-102">Error オブジェクト (ADO) リファレンス</span><span class="sxs-lookup"><span data-stu-id="9753d-102">Error Object (ADO) Reference</span></span>
+# <a name="error-object-ado-reference"></a><span data-ttu-id="ddbe1-102">Error オブジェクト (ADO) リファレンス</span><span class="sxs-lookup"><span data-stu-id="ddbe1-102">Error Object (ADO) Reference</span></span>
 
 
-<span data-ttu-id="9753d-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="9753d-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="ddbe1-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="ddbe1-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
 
-  - [<span data-ttu-id="9753d-104">Error オブジェクト (ADO)</span><span class="sxs-lookup"><span data-stu-id="9753d-104">Error Object (ADO)</span></span>](error-object-ado.md)
+  - [<span data-ttu-id="ddbe1-104">Error オブジェクト (ADO)</span><span class="sxs-lookup"><span data-stu-id="ddbe1-104">Error Object (ADO)</span></span>](error-object-ado.md)
 
-  - [<span data-ttu-id="9753d-105">Error のプロパティ、メソッド、およびイベント (ADO)</span><span class="sxs-lookup"><span data-stu-id="9753d-105">Error Properties, Methods, and Events (ADO)</span></span>](error-properties-methods-and-events-ado.md)
+  - [<span data-ttu-id="ddbe1-105">Error のプロパティ、メソッド、およびイベント (ADO)</span><span class="sxs-lookup"><span data-stu-id="ddbe1-105">Error Properties, Methods, and Events (ADO)</span></span>](error-properties-methods-and-events-ado.md)
 

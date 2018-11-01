@@ -6,33 +6,33 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248986(v=office.15)
 ms:contentKeyID: 48543659
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: df199d493f9feea393611dc921e1c320f5fee021
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: caaf52e758af6c07674e57d6bd2adb0195cae409
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25478229"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881826"
 ---
-# <a name="columns-collection-properties-methods-and-events-adox"></a><span data-ttu-id="1031e-102">Columns コレクションのプロパティ、メソッド、およびイベント (ADOX)</span><span class="sxs-lookup"><span data-stu-id="1031e-102">Columns Collection Properties, Methods, and Events (ADOX)</span></span>
+# <a name="columns-collection-properties-methods-and-events-adox"></a><span data-ttu-id="e7708-102">Columns コレクションのプロパティ、メソッド、およびイベント (ADOX)</span><span class="sxs-lookup"><span data-stu-id="e7708-102">Columns Collection Properties, Methods, and Events (ADOX)</span></span>
 
 
-<span data-ttu-id="1031e-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="1031e-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="e7708-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="e7708-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1031e-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1031e-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="e7708-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e7708-104">Properties</span></span>
 
-- [<span data-ttu-id="1031e-105">Count プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="1031e-105">Count Property</span></span>](count-property-ado.md)
+- [<span data-ttu-id="e7708-105">Count プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="e7708-105">Count Property</span></span>](count-property-ado.md)
 
-- [<span data-ttu-id="1031e-106">Item プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="1031e-106">Item Property</span></span>](item-property-ado.md)
+- [<span data-ttu-id="e7708-106">Item プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="e7708-106">Item Property</span></span>](item-property-ado.md)
 
-## <a name="methods"></a><span data-ttu-id="1031e-107">メソッド</span><span class="sxs-lookup"><span data-stu-id="1031e-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="e7708-107">メソッド</span><span class="sxs-lookup"><span data-stu-id="e7708-107">Methods</span></span>
 
-- [<span data-ttu-id="1031e-108">Append メソッド (ADOX Columns)</span><span class="sxs-lookup"><span data-stu-id="1031e-108">Append Method (Columns)</span></span>](append-method-adox-columns.md)
+- [<span data-ttu-id="e7708-108">Append メソッド (ADOX Columns)</span><span class="sxs-lookup"><span data-stu-id="e7708-108">Append Method (Columns)</span></span>](append-method-adox-columns.md)
 
-- [<span data-ttu-id="1031e-109">Delete メソッド (ADOX コレクション)</span><span class="sxs-lookup"><span data-stu-id="1031e-109">Delete Method (Collections)</span></span>](delete-method-adox-collections.md)
+- [<span data-ttu-id="e7708-109">Delete メソッド (ADOX コレクション)</span><span class="sxs-lookup"><span data-stu-id="e7708-109">Delete Method (Collections)</span></span>](delete-method-adox-collections.md)
 
-- [<span data-ttu-id="1031e-110">Refresh メソッド (ADO)</span><span class="sxs-lookup"><span data-stu-id="1031e-110">Refresh Method</span></span>](refresh-method-ado.md)
+- [<span data-ttu-id="e7708-110">Refresh メソッド (ADO)</span><span class="sxs-lookup"><span data-stu-id="e7708-110">Refresh Method</span></span>](refresh-method-ado.md)
 
-## <a name="events"></a><span data-ttu-id="1031e-111">イベント</span><span class="sxs-lookup"><span data-stu-id="1031e-111">Events</span></span>
+## <a name="events"></a><span data-ttu-id="e7708-111">イベント</span><span class="sxs-lookup"><span data-stu-id="e7708-111">Events</span></span>
 
-<span data-ttu-id="1031e-112">なし。</span><span class="sxs-lookup"><span data-stu-id="1031e-112">None.</span></span>
+<span data-ttu-id="e7708-112">なし。</span><span class="sxs-lookup"><span data-stu-id="e7708-112">None.</span></span>
 

@@ -6,49 +6,49 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249681(v=office.15)
 ms:contentKeyID: 48546483
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d944d70e7aba054abb7e6f02933b1311bb90ee17
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: be66e8cf4179965f761db5873f4a2ac5de20c49d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476611"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874497"
 ---
-# <a name="what-you-can-do-with-ado"></a><span data-ttu-id="9950f-102">ADO を使って行える操作</span><span class="sxs-lookup"><span data-stu-id="9950f-102">What You Can Do With ADO</span></span>
+# <a name="what-you-can-do-with-ado"></a><span data-ttu-id="fde3d-102">ADO を使って行える操作</span><span class="sxs-lookup"><span data-stu-id="fde3d-102">What You Can Do With ADO</span></span>
 
 
-<span data-ttu-id="9950f-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="9950f-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="fde3d-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="fde3d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="9950f-p101">ADO は、強力で論理的なオブジェクト モデルを開発者に提供し、OLE DB システムを介したさまざまなデータ ソースへのアクセス、編集および更新をプログラムによって実行できるようにします。ADO の最も一般的な使用方法には、リレーショナル データベースのテーブルの照会、アプリケーションでの結果の取得と表示、ユーザーによるデータの変更と保存を可能にすることなどがあります。ADO を使用してプログラムで実行できるその他の処理には、次のような処理があります。</span><span class="sxs-lookup"><span data-stu-id="9950f-p101">ADO is designed to provide developers with a powerful, logical object model for programmatically accessing, editing, and updating a wide variety of data sources through OLE DB system interfaces. The most common usage of ADO is to query a table or tables in a relational database, retrieve and display the results in an application, and perhaps allow users to make and save changes to the data. Other things that can be done programmatically with ADO include:</span></span>
+<span data-ttu-id="fde3d-p101">ADO は、強力で論理的なオブジェクト モデルを開発者に提供し、OLE DB システムを介したさまざまなデータ ソースへのアクセス、編集および更新をプログラムによって実行できるようにします。ADO の最も一般的な使用方法には、リレーショナル データベースのテーブルの照会、アプリケーションでの結果の取得と表示、ユーザーによるデータの変更と保存を可能にすることなどがあります。ADO を使用してプログラムで実行できるその他の処理には、次のような処理があります。</span><span class="sxs-lookup"><span data-stu-id="fde3d-p101">ADO is designed to provide developers with a powerful, logical object model for programmatically accessing, editing, and updating a wide variety of data sources through OLE DB system interfaces. The most common usage of ADO is to query a table or tables in a relational database, retrieve and display the results in an application, and perhaps allow users to make and save changes to the data. Other things that can be done programmatically with ADO include:</span></span>
 
-  - <span data-ttu-id="9950f-107">SQL を使用してデータベースを照会し、結果を表示します。</span><span class="sxs-lookup"><span data-stu-id="9950f-107">Querying a database using SQL and displaying the results.</span></span>
+  - <span data-ttu-id="fde3d-107">SQL を使用してデータベースを照会し、結果を表示します。</span><span class="sxs-lookup"><span data-stu-id="fde3d-107">Querying a database using SQL and displaying the results.</span></span>
 
-  - <span data-ttu-id="9950f-108">インターネットでファイル ストア内の情報にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="9950f-108">Accessing information in a file store over the Internet.</span></span>
+  - <span data-ttu-id="fde3d-108">インターネットでファイル ストア内の情報にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="fde3d-108">Accessing information in a file store over the Internet.</span></span>
 
-  - <span data-ttu-id="9950f-109">電子メール システム内のメッセージやフォルダーを操作します。</span><span class="sxs-lookup"><span data-stu-id="9950f-109">Manipulating messages and folders in an e-mail system.</span></span>
+  - <span data-ttu-id="fde3d-109">電子メール システム内のメッセージやフォルダーを操作します。</span><span class="sxs-lookup"><span data-stu-id="fde3d-109">Manipulating messages and folders in an e-mail system.</span></span>
 
-  - <span data-ttu-id="9950f-110">データベースのデータを XML ファイルに保存します。</span><span class="sxs-lookup"><span data-stu-id="9950f-110">Saving data from a database into an XML file.</span></span>
+  - <span data-ttu-id="fde3d-110">データベースのデータを XML ファイルに保存します。</span><span class="sxs-lookup"><span data-stu-id="fde3d-110">Saving data from a database into an XML file.</span></span>
 
-  - <span data-ttu-id="9950f-111">ユーザーがデータベース テーブル内のデータを確認および変更できるようにします。</span><span class="sxs-lookup"><span data-stu-id="9950f-111">Allowing a user to review and make changes to data in database tables.</span></span>
+  - <span data-ttu-id="fde3d-111">ユーザーがデータベース テーブル内のデータを確認および変更できるようにします。</span><span class="sxs-lookup"><span data-stu-id="fde3d-111">Allowing a user to review and make changes to data in database tables.</span></span>
 
-  - <span data-ttu-id="9950f-112">パラメーター化されたデータベース コマンドを作成して再利用します。</span><span class="sxs-lookup"><span data-stu-id="9950f-112">Creating and reusing parameterized database commands.</span></span>
+  - <span data-ttu-id="fde3d-112">パラメーター化されたデータベース コマンドを作成して再利用します。</span><span class="sxs-lookup"><span data-stu-id="fde3d-112">Creating and reusing parameterized database commands.</span></span>
 
-  - <span data-ttu-id="9950f-113">ストアド プロシージャを実行します。</span><span class="sxs-lookup"><span data-stu-id="9950f-113">Executing stored procedures.</span></span>
+  - <span data-ttu-id="fde3d-113">ストアド プロシージャを実行します。</span><span class="sxs-lookup"><span data-stu-id="fde3d-113">Executing stored procedures.</span></span>
 
-  - <span data-ttu-id="9950f-114">**Recordset** と呼ばれる柔軟な構造を動的に作成して、データを保持、移動、および操作します。</span><span class="sxs-lookup"><span data-stu-id="9950f-114">Dynamically creating a flexible structure, called a **Recordset**, to hold, navigate, and manipulate data.</span></span>
+  - <span data-ttu-id="fde3d-114">**Recordset** と呼ばれる柔軟な構造を動的に作成して、データを保持、移動、および操作します。</span><span class="sxs-lookup"><span data-stu-id="fde3d-114">Dynamically creating a flexible structure, called a **Recordset**, to hold, navigate, and manipulate data.</span></span>
 
-  - <span data-ttu-id="9950f-115">トランザクションによるデータベース操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="9950f-115">Performing transactional database operations.</span></span>
+  - <span data-ttu-id="fde3d-115">トランザクションによるデータベース操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="fde3d-115">Performing transactional database operations.</span></span>
 
-  - <span data-ttu-id="9950f-116">実行時の基準に基づいて、データベース情報のローカル コピーをフィルター処理し、並べ替えます。</span><span class="sxs-lookup"><span data-stu-id="9950f-116">Filtering and sorting local copies of database information based on run-time criteria.</span></span>
+  - <span data-ttu-id="fde3d-116">実行時の基準に基づいて、データベース情報のローカル コピーをフィルター処理し、並べ替えます。</span><span class="sxs-lookup"><span data-stu-id="fde3d-116">Filtering and sorting local copies of database information based on run-time criteria.</span></span>
 
-  - <span data-ttu-id="9950f-117">データベースから階層構造の結果を作成して操作します。</span><span class="sxs-lookup"><span data-stu-id="9950f-117">Creating and manipulating hierarchical results from databases.</span></span>
+  - <span data-ttu-id="fde3d-117">データベースから階層構造の結果を作成して操作します。</span><span class="sxs-lookup"><span data-stu-id="fde3d-117">Creating and manipulating hierarchical results from databases.</span></span>
 
-  - <span data-ttu-id="9950f-118">データベース フィールドをデータを認識するコンポーネントにバインドします。</span><span class="sxs-lookup"><span data-stu-id="9950f-118">Binding database fields to data-aware components.</span></span>
+  - <span data-ttu-id="fde3d-118">データベース フィールドをデータを認識するコンポーネントにバインドします。</span><span class="sxs-lookup"><span data-stu-id="fde3d-118">Binding database fields to data-aware components.</span></span>
 
-  - <span data-ttu-id="9950f-119">リモートの非接続 **Recordset** を作成します。</span><span class="sxs-lookup"><span data-stu-id="9950f-119">Creating remote, disconnected **Recordsets**.</span></span>
+  - <span data-ttu-id="fde3d-119">リモートの非接続 **Recordset** を作成します。</span><span class="sxs-lookup"><span data-stu-id="fde3d-119">Creating remote, disconnected **Recordsets**.</span></span>
 
-<span data-ttu-id="9950f-p102">このような柔軟性を提供するために、ADO は広範なオプションや設定を公開する必要があります。したがって、アプリケーションでの ADO の使用方法を系統立てて習得し、各目標を対処可能な要素に分割することが重要です。</span><span class="sxs-lookup"><span data-stu-id="9950f-p102">ADO must expose a wide variety of options and settings in order to provide such flexibility. Therefore it's important to take a methodical approach to learning how to use ADO in an application, breaking down each of your goals into manageable pieces.</span></span>
+<span data-ttu-id="fde3d-p102">このような柔軟性を提供するために、ADO は広範なオプションや設定を公開する必要があります。したがって、アプリケーションでの ADO の使用方法を系統立てて習得し、各目標を対処可能な要素に分割することが重要です。</span><span class="sxs-lookup"><span data-stu-id="fde3d-p102">ADO must expose a wide variety of options and settings in order to provide such flexibility. Therefore it's important to take a methodical approach to learning how to use ADO in an application, breaking down each of your goals into manageable pieces.</span></span>
 
-<span data-ttu-id="9950f-p103">ほとんどの ADO プログラムには、データの取得、検査、編集、および更新の 4 つの主要な操作があります。次からの 4 つの章では、これらの操作について詳しく説明します。</span><span class="sxs-lookup"><span data-stu-id="9950f-p103">Four primary operations are involved in most ADO programs: getting data, examining data, editing data, and updating data. The next four chapters examine each of these operations in more detail.</span></span>
+<span data-ttu-id="fde3d-p103">ほとんどの ADO プログラムには、データの取得、検査、編集、および更新の 4 つの主要な操作があります。次からの 4 つの章では、これらの操作について詳しく説明します。</span><span class="sxs-lookup"><span data-stu-id="fde3d-p103">Four primary operations are involved in most ADO programs: getting data, examining data, editing data, and updating data. The next four chapters examine each of these operations in more detail.</span></span>
 
-<span data-ttu-id="9950f-p104">次に進む前に、ADO のオブジェクト モデルのオブジェクトに精通しておく必要があります。次に、「[HelloData: 単純な ADO アプリケーション](hellodata-a-simple-ado-application.md)」を確認してください。このアプリケーションは Visual Basic で記述されており、4 つの主要な各 ADO 操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="9950f-p104">Before proceeding, familiarize yourself with the objects in the ADO Object Model. Then review [HelloData: A Simple ADO Application](hellodata-a-simple-ado-application.md). This application is written in Visual Basic and performs each of the four primary ADO operations.</span></span>
+<span data-ttu-id="fde3d-p104">次に進む前に、ADO のオブジェクト モデルのオブジェクトに精通しておく必要があります。次に、「[HelloData: 単純な ADO アプリケーション](hellodata-a-simple-ado-application.md)」を確認してください。このアプリケーションは Visual Basic で記述されており、4 つの主要な各 ADO 操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="fde3d-p104">Before proceeding, familiarize yourself with the objects in the ADO Object Model. Then review [HelloData: A Simple ADO Application](hellodata-a-simple-ado-application.md). This application is written in Visual Basic and performs each of the four primary ADO operations.</span></span>
 

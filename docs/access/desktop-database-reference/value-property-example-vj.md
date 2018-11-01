@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="aeca7-101"><<<<<<< ヘッド タイトル: 値のプロパティの使用例 (vj++) TOCTitle: 値のプロパティの使用例 (vj++) === タイトル: 値プロパティの使用例 (vj++) TOCTitle: 値プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="aeca7-101"><<<<<<< HEAD title: Value Property Example (VJ++) TOCTitle: Value Property Example (VJ++) ======= title: Value property example (VJ++) TOCTitle: Value property example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="aeca7-102">マスターの ms:assetid: 1894c483-f5b0-c83e-35fb-c975ca867fc9 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248934(v=office.15) ms:contentKeyID: 48543474 ms.date: 2015/09/18 mtps_version: v=office.15</span><span class="sxs-lookup"><span data-stu-id="aeca7-102">master ms:assetid: 1894c483-f5b0-c83e-35fb-c975ca867fc9 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248934(v=office.15) ms:contentKeyID: 48543474 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Value プロパティの使用例 (VJ++)
+TOCTitle: Value property example (VJ++)
+ms:assetid: 1894c483-f5b0-c83e-35fb-c975ca867fc9
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248934(v=office.15)
+ms:contentKeyID: 48543474
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 7117c9d48269ea9ae2eedf7af83aedab01b77d50
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871949"
 ---
-
-<span data-ttu-id="aeca7-103"><<<<<<< ヘッド</span><span class="sxs-lookup"><span data-stu-id="aeca7-103"><<<<<<< HEAD</span></span>
-# <a name="value-property-example-vj"></a><span data-ttu-id="aeca7-104">Value プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="aeca7-104">Value Property Example (VJ++)</span></span>
-=======
-# <a name="value-property-example-vj"></a><span data-ttu-id="aeca7-105">値プロパティの使用例 (vj++)</span><span class="sxs-lookup"><span data-stu-id="aeca7-105">Value property example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="aeca7-106">master</span><span class="sxs-lookup"><span data-stu-id="aeca7-106">master</span></span>
+# <a name="value-property-example-vj"></a><span data-ttu-id="244f0-102">Value プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="244f0-102">Value property example (VJ++)</span></span>
 
 
-<span data-ttu-id="aeca7-107">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="aeca7-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="244f0-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="244f0-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="aeca7-108">この例では、[Field](field-object-ado.md) オブジェクトや [Property](property-object-ado.md) オブジェクトで [Value](value-property-ado.md) プロパティを使用して、***Employees*** テーブルのフィールドとプロパティの値を表示します。</span><span class="sxs-lookup"><span data-stu-id="aeca7-108">This example demonstrates the [Value](value-property-ado.md) property with [Field](field-object-ado.md) and [Property](property-object-ado.md) objects by displaying field and property values for the ***Employees*** table.</span></span>
+<span data-ttu-id="244f0-104">この例では、[Field](field-object-ado.md) オブジェクトや [Property](property-object-ado.md) オブジェクトで [Value](value-property-ado.md) プロパティを使用して、***Employees*** テーブルのフィールドとプロパティの値を表示します。</span><span class="sxs-lookup"><span data-stu-id="244f0-104">This example demonstrates the [Value](value-property-ado.md) property with [Field](field-object-ado.md) and [Property](property-object-ado.md) objects by displaying field and property values for the ***Employees*** table.</span></span>
 
 ```java 
  

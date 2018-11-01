@@ -6,33 +6,33 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn124967(v=office.15)
 ms:contentKeyID: 52072587
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e31415927ab8addfe53e03126722a00b6fd9b110
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ba652cfb6cbfca4b663b0ffff020c8caaba76081
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476187"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881903"
 ---
-# <a name="workspace-properties-dao"></a><span data-ttu-id="50964-102">Workspace プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="50964-102">Workspace Properties (DAO)</span></span>
+# <a name="workspace-properties-dao"></a><span data-ttu-id="310e3-102">Workspace プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="310e3-102">Workspace Properties (DAO)</span></span>
 
 
-<span data-ttu-id="50964-103">**適用されます**Access 2013 |。Office 2013</span><span class="sxs-lookup"><span data-stu-id="50964-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="310e3-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="310e3-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
 
-  - [<span data-ttu-id="50964-104">Workspace.Connections プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="50964-104">Workspace.Connections Property (DAO)</span></span>](workspace-connections-property-dao.md)
+  - [<span data-ttu-id="310e3-104">Workspace.Connections プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="310e3-104">Workspace.Connections Property (DAO)</span></span>](workspace-connections-property-dao.md)
 
-  - [<span data-ttu-id="50964-105">Workspace.Databases プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="50964-105">Workspace.Databases Property (DAO)</span></span>](workspace-databases-property-dao.md)
+  - [<span data-ttu-id="310e3-105">Workspace.Databases プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="310e3-105">Workspace.Databases Property (DAO)</span></span>](workspace-databases-property-dao.md)
 
-  - [<span data-ttu-id="50964-106">Workspace.DefaultCursorDriver プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="50964-106">Workspace.DefaultCursorDriver Property (DAO)</span></span>](workspace-defaultcursordriver-property-dao.md)
+  - [<span data-ttu-id="310e3-106">Workspace.DefaultCursorDriver プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="310e3-106">Workspace.DefaultCursorDriver Property (DAO)</span></span>](workspace-defaultcursordriver-property-dao.md)
 
-  - [<span data-ttu-id="50964-107">Workspace.IsolateODBCTrans プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="50964-107">Workspace.IsolateODBCTrans Property (DAO)</span></span>](workspace-isolateodbctrans-property-dao.md)
+  - [<span data-ttu-id="310e3-107">Workspace.IsolateODBCTrans プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="310e3-107">Workspace.IsolateODBCTrans Property (DAO)</span></span>](workspace-isolateodbctrans-property-dao.md)
 
-  - [<span data-ttu-id="50964-108">Workspace.LoginTimeout プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="50964-108">Workspace.LoginTimeout Property (DAO)</span></span>](workspace-logintimeout-property-dao.md)
+  - [<span data-ttu-id="310e3-108">Workspace.LoginTimeout プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="310e3-108">Workspace.LoginTimeout Property (DAO)</span></span>](workspace-logintimeout-property-dao.md)
 
-  - [<span data-ttu-id="50964-109">Workspace.Name プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="50964-109">Workspace.Name Property (DAO)</span></span>](workspace-name-property-dao.md)
+  - [<span data-ttu-id="310e3-109">Workspace.Name プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="310e3-109">Workspace.Name Property (DAO)</span></span>](workspace-name-property-dao.md)
 
-  - [<span data-ttu-id="50964-110">Workspace.Properties プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="50964-110">Workspace.Properties Property (DAO)</span></span>](workspace-properties-property-dao.md)
+  - [<span data-ttu-id="310e3-110">Workspace.Properties プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="310e3-110">Workspace.Properties Property (DAO)</span></span>](workspace-properties-property-dao.md)
 
-  - [<span data-ttu-id="50964-111">Workspace.Type プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="50964-111">Workspace.Type Property (DAO)</span></span>](workspace-type-property-dao.md)
+  - [<span data-ttu-id="310e3-111">Workspace.Type プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="310e3-111">Workspace.Type Property (DAO)</span></span>](workspace-type-property-dao.md)
 
