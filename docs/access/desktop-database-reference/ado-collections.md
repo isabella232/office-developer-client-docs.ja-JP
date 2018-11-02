@@ -1,24 +1,25 @@
 ---
 title: ActiveX データ オブジェクト (ADO) のコレクション
-TOCTitle: ADO Collections
+TOCTitle: ADO collections
 ms:assetid: a57e4c0c-d043-edb8-1bbe-5b7b437a8150
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249769(v=office.15)
 ms:contentKeyID: 48546833
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cbddefcdfa17326f922cad49c774e8ade06e5137
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 9a9510ce1e8c9dcb1e46f7cfdc4e45e71f779910
+ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25873678"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25910860"
 ---
 # <a name="ado-collections"></a>ADO コレクション
 
-
 **適用されます**Access 2013、Office 2013。
 
-各コレクションには、対応するオブジェクトを格納できます。たとえば、[Error](error-object-ado.md) オブジェクトは [Errors](errors-collection-ado.md) コレクションに格納されます。オブジェクトの詳細については、「 [ADO オブジェクトとインターフェイス](ado-objects-and-interfaces.md)」、またはオブジェクトの特定の項目を参照してください。
+各コレクションには、対応するオブジェクトを格納できます。 たとえば、[Error](error-object-ado.md) オブジェクトは [Errors](errors-collection-ado.md) コレクションに格納されます。 オブジェクトの詳細については、 [ADO オブジェクト](ado-objects-and-interfaces.md)または特定のオブジェクトのトピックを参照してください。
+
+<br/>
 
 <table>
 <colgroup>
@@ -26,6 +27,10 @@ ms.locfileid: "25873678"
 <col style="width: 50%" />
 </colgroup>
 <tbody>
+<tr class="even">
+<th>コレクション</th>
+<th>説明</th>
+</tr>
 <tr class="odd">
 <td><p><a href="errors-collection-ado.md">Errors</a></p></td>
 <td><p>プロバイダー関連の 1 つのエラーに対応して発生するすべての <strong>Error</strong> オブジェクトを格納します。</p></td>
@@ -44,4 +49,6 @@ ms.locfileid: "25873678"
 </tr>
 </tbody>
 </table>
+
+<br/>
 

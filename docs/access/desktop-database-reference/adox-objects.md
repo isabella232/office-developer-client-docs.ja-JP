@@ -1,24 +1,25 @@
 ---
 title: ADOX オブジェクト (デスクトップ データベース参照のアクセス)
-TOCTitle: ADOX Objects
+TOCTitle: ADOX objects
 ms:assetid: d7db1aed-251b-888b-bc44-f61caeeac403
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250087(v=office.15)
 ms:contentKeyID: 48548018
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 60dc15ecb7b13619b71078d8e2f0cb7f14e8cd7d
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 6053792912d701fd844b44835721fc0497d23ee4
+ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25879369"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25910895"
 ---
-# <a name="adox-objects"></a>ADOX のオブジェクト
-
+# <a name="adox-objects"></a>ADOX オブジェクト
 
 **適用されます**Access 2013、Office 2013。
 
-**ADOX オブジェクトの概要**
+各オブジェクトは、対応するコレクションに格納できます。 たとえば、 **Table** オブジェクトは、 [Tables](tables-collection-adox.md) コレクションに格納できます。 詳細については、 [ADOX コレクション](adox-collections.md)」、またはコレクションの特定のトピックを参照してください。
+
+<br/>
 
 <table>
 <colgroup>
@@ -71,6 +72,7 @@ ms.locfileid: "25879369"
 </tbody>
 </table>
 
+<br/>
 
-各オブジェクトは、対応するコレクションに格納できます。たとえば、 **Table** オブジェクトは、 [Tables](tables-collection-adox.md) コレクションに格納できます。詳細については、「 [ADOX コレクション](adox-collections.md)」、またはコレクションの特定の項目を参照してください。
+
 

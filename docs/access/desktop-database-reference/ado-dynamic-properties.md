@@ -1,20 +1,19 @@
 ---
 title: ADO の動的プロパティ
-TOCTitle: ADO Dynamic Properties
+TOCTitle: ADO dynamic properties
 ms:assetid: a908bc52-2cb0-89c7-a997-2cde93477e4d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249782(v=office.15)
 ms:contentKeyID: 48546915
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6a35bf0cd62db8f635540bfd1ccd65995b198b46
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: ab0d84931389aecb5bd495c884baa9163c52d4a6
+ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25877549"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25910923"
 ---
 # <a name="ado-dynamic-properties"></a>ADO の動的プロパティ
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -24,12 +23,18 @@ ms.locfileid: "25877549"
 
 次に示す動的プロパティは特に重要で、前のソースでも説明されています。ADO の特別な機能については、次に示す ADO ヘルプ トピックを参照してください。
 
+<br/>
+
 <table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
 <tbody>
+<tr class="even">
+<th>動的プロパティ</th>
+<th>説明</th>
+</tr>
 <tr class="odd">
 <td><p><a href="optimize-property-dynamic-ado.md">最適化</a></p></td>
 <td><p>このフィールドにインデックスを作成するかどうかを指定します。</p></td>
@@ -48,7 +53,7 @@ ms.locfileid: "25877549"
 </tr>
 <tr class="odd">
 <td><p><a href="unique-table-unique-schema-unique-catalog-properties-dynamic-ado.md">固有のテーブル、一意のスキーマ、一意なカタログ</a></p></td>
-<td><p><strong>固有のテーブル</strong>更新、挿入、および削除を許可しているベース テーブルの名前を指定します。 <strong>一意のスキーマ</strong>スキーマ、またはテーブルの所有者の名前を指定します。 <strong>一意なカタログ</strong>カタログ、またはテーブルを含むデータベースの名前を指定します。</p></td>
+<td><p><strong>固有のテーブル</strong>更新、挿入、および削除を許可しているベース テーブルの名前を指定します。<br/><br/><strong>一意のスキーマ</strong>スキーマ、またはテーブルの所有者の名前を指定します。<br/><br/><strong>一意なカタログ</strong>カタログ、またはテーブルを含むデータベースの名前を指定します。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="update-resync-property-dynamic-ado.md">Update Resync</a></p></td>
@@ -56,4 +61,6 @@ ms.locfileid: "25877549"
 </tr>
 </tbody>
 </table>
+
+<br/>
 

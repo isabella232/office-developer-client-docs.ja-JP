@@ -1,24 +1,25 @@
 ---
 title: ADO の列挙定数
-TOCTitle: ADO Enumerated Constants
+TOCTitle: ADO enumerated constants
 ms:assetid: 7c983acd-8b38-dc3c-6704-46e649ebb7d6
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249522(v=office.15)
 ms:contentKeyID: 48545841
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3e9944138dcdca49f33ca293a9bdf41d88d86e9e
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 0e6a6dee6d2882b1d7d1c277584ca8ba46d6db28
+ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25882309"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25910951"
 ---
 # <a name="ado-enumerated-constants"></a>ADO の列挙定数
-
 
 **適用されます**Access 2013、Office 2013。
 
 ここでは、デバッグ用に各定数の実際の値の一覧を示します。ただし、この値は参考用のものであり、ADO のリリースごとに変更されることがあります。コードを記述するときは、列挙定数の実際の値ではなく、名前のみを使って記述するようにしてください。
+
+<br/>
 
 <table>
 <colgroup>
@@ -26,6 +27,10 @@ ms.locfileid: "25882309"
 <col style="width: 50%" />
 </colgroup>
 <tbody>
+<tr class="even">
+<th>列挙型定数</th>
+<th>説明</th>
+</tr>
 <tr class="odd">
 <td><p><a href="adcprop-asyncthreadpriority-enum.md">ADCPROP_ASYNCTHREADPRIORITY_ENUM</a></p></td>
 <td><p>RDS の <strong>Recordset</strong> オブジェクトに対して、データを取得する非同期スレッドの実行優先度を表します。</p></td>

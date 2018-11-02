@@ -1,26 +1,27 @@
 ---
 title: ADO オブジェクトとインターフェイス
-TOCTitle: ADO Objects and Interfaces
+TOCTitle: ADO objects and interfaces
 ms:assetid: bebf4a80-8b6e-c43c-4138-897055cc60d3
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249927(v=office.15)
 ms:contentKeyID: 48547471
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: efab7ce2980393282ee1f96295206e712fcbd15f
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: fa301974b4b417d09b0439b3970ee366eeb5d06e
+ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25882183"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25910728"
 ---
 # <a name="ado-objects-and-interfaces"></a>ADO オブジェクトとインターフェイス
 
-
 **適用されます**Access 2013、Office 2013。
 
-これらのオブジェクトの関係については、ADO オブジェクト モデルを参照してください。
+ActiveX データ オブジェクト (ADO) オブジェクト モデルでは、これらのオブジェクト間の関係が表されます。
 
-各オブジェクトは、対応するコレクションに格納できます。たとえば、[Error](error-object-ado.md) オブジェクトは [Errors](errors-collection-ado.md) コレクションに格納できます。詳細については、「 [ADO コレクション](ado-collections.md)」、またはコレクションの特定の項目を参照してください。
+各オブジェクトは、対応するコレクションに格納できます。 たとえば、[Error](error-object-ado.md) オブジェクトは [Errors](errors-collection-ado.md) コレクションに格納できます。 詳細については、 [ADO コレクション](ado-collections.md)」、またはコレクションの特定のトピックを参照してください。
+
+<br/>
 
 <table>
 <colgroup>
@@ -28,6 +29,10 @@ ms.locfileid: "25882183"
 <col style="width: 50%" />
 </colgroup>
 <tbody>
+<tr class="even">
+<th>オブジェクト</th>
+<th>説明</th>
+</tr>
 <tr class="odd">
 <td><p><a href="adorecordconstruction-interface-ado.md">ADORecordConstruction</a></p></td>
 <td><p>C/C++ アプリケーションで OLE DB <strong>Row</strong> オブジェクトから ADO <strong>Record</strong> オブジェクトを構築します。</p></td>
@@ -35,6 +40,14 @@ ms.locfileid: "25882183"
 <tr class="even">
 <td><p><a href="adorecordsetconstruction-interface-ado.md">ADORecordsetConstruction</a></p></td>
 <td><p>C/C++ アプリケーションで OLE DB <strong>Rowset</strong> オブジェクトから ADO <strong>Recordset</strong> オブジェクトを構築します。</p></td>
+</tr>
+<tr class="odd">
+<td><p><a href="error-object-ado.md">Command</a></p></td>
+<td><p>データ ソースに対して実行する特定のコマンドを定義します。</p></td>
+</tr>
+<tr class="even">
+<td><p><a href="field-object-ado.md">Connection</a></p></td>
+<td><p>データ ソースに対して開かれている接続を表します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="error-object-ado.md">エラー</a></p></td>
@@ -66,4 +79,6 @@ ms.locfileid: "25882183"
 </tr>
 </tbody>
 </table>
+
+<br/>
 

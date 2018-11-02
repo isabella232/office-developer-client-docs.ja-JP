@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249099(v=office.15)
 ms:contentKeyID: 48544090
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 166cdc22c7448851605789f04f590ca9fff04758
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: f35b2ef2d4b7ccd858edc98569239ee757ec9d86
+ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25873752"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25910888"
 ---
 # <a name="ado-code-examples-in-microsoft-jscript"></a>Microsoft JScript での ADO コードの例
 
@@ -22,31 +22,21 @@ JScript で記述するときの ADO のメソッド、プロパティ、およ�
 > [!NOTE]
 > [!メモ] コード例全体を最初から最後までコピーして、コード エディターに貼り付けてください。このコード例は、一部分だけを使用したり、段落の書式設定情報が失われると、正常に動作しない場合があります。
 
-**メソッド**
+## <a name="methods"></a>メソッド
 
-  - [AddNew メソッドの使用例 (VJ++)](addnew-method-example-jscript.md)
+- [AddNew メソッドの使用例](addnew-method-example-jscript.md)
+- [追加および CreateParameter メソッドの使用例](append-and-createparameter-methods-example-jscript.md)
+- [実行、クエリを再実行、およびメソッドの使用例をオフに](execute-requery-and-clear-methods-example-jscript.md)
+- [メソッドの使用例を検索します。](find-method-example-jscript.md)
+- [GetRows メソッドの使用例](getrows-method-example-vb.md)
 
-  - [Append メソッドおよび CreateParameter メソッドの使用例 (JScript)](append-and-createparameter-methods-example-jscript.md)
+## <a name="properties"></a>プロパティ
 
-  - [Execute メソッド、Requery メソッド、および Clear メソッドの使用例 (JScript)](execute-requery-and-clear-methods-example-jscript.md)
-
-  - [Find メソッドの使用例 (VJ++)](find-method-example-jscript.md)
-
-  - [GetRows メソッドの使用例 (VB)](getrows-method-example-vb.md)
-
-**プロパティ**
-
-  - [AbsolutePage、PageCount、および PageSize プロパティの使用例](absolutepage-pagecount-and-pagesize-properties-example-jscript.md)
-
-  - [AbsolutePosition と CursorLocation プロパティの使用例](absoluteposition-and-cursorlocation-properties-example-jscript.md)
-
-  - [ActiveCommand プロパティの使用例](activecommand-property-example-jscript.md)
-
-  - [ActiveConnection、CommandText、CommandTimeout、CommandType、サイズ、および方向のプロパティの例](activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-jscript.md)
-
-  - [ActualSize、DefinedSize プロパティの使用例](actualsize-and-definedsize-properties-example-jscript.md)
-
-  - [CacheSize プロパティの使用例](cachesize-property-example-jscript.md)
-
-  - [フィルターと RecordCount プロパティの使用例](filter-and-recordcount-properties-example-jscript.md)
+- [AbsolutePage、PageCount、および PageSize プロパティの使用例](absolutepage-pagecount-and-pagesize-properties-example-jscript.md)
+- [AbsolutePosition と CursorLocation プロパティの使用例](absoluteposition-and-cursorlocation-properties-example-jscript.md)
+- [ActiveCommand プロパティの使用例](activecommand-property-example-jscript.md)
+- [ActiveConnection、CommandText、CommandTimeout、CommandType、サイズ、および方向のプロパティの例](activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-jscript.md)
+- [ActualSize、DefinedSize プロパティの使用例](actualsize-and-definedsize-properties-example-jscript.md)
+- [CacheSize プロパティの使用例](cachesize-property-example-jscript.md)
+- [フィルターと RecordCount プロパティの使用例](filter-and-recordcount-properties-example-jscript.md)
 

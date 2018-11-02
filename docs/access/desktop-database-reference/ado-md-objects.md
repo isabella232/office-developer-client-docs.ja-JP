@@ -1,22 +1,23 @@
 ---
 title: ADO MD オブジェクト (デスクトップ データベース参照のアクセス)
-TOCTitle: ADO MD Objects
+TOCTitle: ADO MD objects
 ms:assetid: 13501e44-70b6-1036-a8b7-c276f187e4f4
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248907(v=office.15)
 ms:contentKeyID: 48543366
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e09676b222e7199b7f2f9f7520ebf3d5436f9a3c
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: fca73b9e8a77e102ad694dde8fd9759b20c1fcaf
+ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25875134"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25910839"
 ---
-# <a name="ado-md-objects"></a>ADO MD のオブジェクト
-
+# <a name="ado-md-objects"></a>ADO MD オブジェクト
 
 **適用されます**Access 2013、Office 2013。
+
+<br/>
 
 <table>
 <colgroup>
@@ -24,6 +25,10 @@ ms.locfileid: "25875134"
 <col style="width: 50%" />
 </colgroup>
 <tbody>
+<tr class="even">
+<th>オブジェクト</th>
+<th>説明</th>
+</tr>
 <tr class="odd">
 <td><p><a href="axis-object-ado-md.md">軸</a></p></td>
 <td><p>1 つ以上の次元の選択されたメンバーを含む、セルセットの位置またはフィルターの軸を表します。</p></td>
@@ -67,8 +72,11 @@ ms.locfileid: "25875134"
 </tbody>
 </table>
 
+<br/>
 
 また、 **Catalog** オブジェクトは、標準の ADO ライブラリに含まれる ADO **Connection** オブジェクトに接続されます。
+
+<br/>
 
 <table>
 <colgroup>
@@ -89,6 +97,7 @@ ms.locfileid: "25875134"
 </tbody>
 </table>
 
+<br/>
 
 ADO MD オブジェクトの多くは、対応するコレクションに格納できます。たとえば、[CubeDef](cubedef-object-ado-md.md) オブジェクトは [Catalog](cubedefs-collection-ado-md.md) オブジェクトの **CubeDefs** コレクションに格納できます。詳細については、「 [ADO MD コレクション](ado-md-collections.md)」を参照してください。
 

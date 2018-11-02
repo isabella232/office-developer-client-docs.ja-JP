@@ -1,22 +1,23 @@
 ---
 title: ActiveX データ オブジェクト (ADO) メソッド
-TOCTitle: ADO Methods
+TOCTitle: ADO methods
 ms:assetid: 1fd965a0-711c-e199-822c-b9575c5034bd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248984(v=office.15)
 ms:contentKeyID: 48543651
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6ef05e7f322b769102ce25aab7dfc26a75b0aa22
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 3649a7146c0d6ab70bc5f785404f03269df1540b
+ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25879334"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25910804"
 ---
 # <a name="ado-methods"></a>ADO メソッド
 
-
 **適用されます**Access 2013、Office 2013。
+
+<br/>
 
 <table>
 <colgroup>
@@ -24,6 +25,10 @@ ms.locfileid: "25879334"
 <col style="width: 50%" />
 </colgroup>
 <tbody>
+<tr class="even">
+<th>メソッド</th>
+<th>説明</th>
+</tr>
 <tr class="odd">
 <td><p><a href="addnew-method-ado.md">AddNew</a></p></td>
 <td><p>更新可能な <strong>Recordset</strong> オブジェクトの新しいレコードを作成します。</p></td>
@@ -38,8 +43,9 @@ ms.locfileid: "25879334"
 </tr>
 <tr class="even">
 <td><p><a href="begintrans-committrans-and-rollbacktrans-methods-ado.md">BeginTrans、CommitTrans、および RollbackTrans</a></p></td>
-<td><p><strong>接続</strong>オブジェクト内の処理について次のようにトランザクションを管理する: <strong>BeginTrans</strong> : 新しいトランザクションを開始します。<br />
-<strong>CommitTrans</strong> は、すべての変更を保存して現在のトランザクションを終了します。新しいトランザクションを開始する場合もあります。<br />
+<td><p><strong>Connection</strong> オブジェクト内のトランザクション処理を次のように管理します。
+<br/><br/><strong>BeginTrans</strong> は、新しいトランザクションを開始します。<br/><br/>
+<strong>CommitTrans</strong> は、すべての変更を保存して現在のトランザクションを終了します。新しいトランザクションを開始する場合もあります。<br/><br/>
 <strong>RollbackTrans</strong> -行った変更をキャンセルし、現在のトランザクションを終了します。 新しいトランザクションを開始する場合もあります。</p></td>
 </tr>
 <tr class="odd">
@@ -237,3 +243,4 @@ ms.locfileid: "25879334"
 </tbody>
 </table>
 
+<br/>
