@@ -1,40 +1,33 @@
 ---
-title: ActiveX データ オブジェクトの (ADO) API リファレンス
-TOCTitle: ADO API Reference
+title: ActiveX データ オブジェクト (ADO) API リファレンス
+TOCTitle: ADO API reference
 ms:assetid: 0fd6aff8-dbff-50c7-649f-2d9c31aedb2f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248867(v=office.15)
 ms:contentKeyID: 48543275
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 27f0032cc92105a2cc88dd23e18311ee892b105c
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 4fb6b06fd23577812f43db2f80829831b3f6409c
+ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25885550"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25910846"
 ---
-# <a name="ado-api-reference"></a><span data-ttu-id="54b6a-102">ADO API リファレンス</span><span class="sxs-lookup"><span data-stu-id="54b6a-102">ADO API Reference</span></span>
+# <a name="ado-api-reference"></a><span data-ttu-id="9da87-102">ADO API リファレンス</span><span class="sxs-lookup"><span data-stu-id="9da87-102">ADO API reference</span></span>
 
+<span data-ttu-id="9da87-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="9da87-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="54b6a-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="54b6a-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="9da87-104">ActiveX データ オブジェクト (ADO) のマニュアルのこのセクションには、各 ADO オブジェクト、コレクション、プロパティ、動的プロパティ、メソッド、イベント、および列挙に関するトピックが含まれています。</span><span class="sxs-lookup"><span data-stu-id="9da87-104">This section of the ActiveX Data Objects (ADO) documentation contains topics for each ADO object, collection, property, dynamic property, method, event, and enumeration.</span></span> <span data-ttu-id="9da87-105">また、Microsoft Visual C++ と Windows Foundation Class (WFC) で使用される ADO 構文インデックスについても記載されています。</span><span class="sxs-lookup"><span data-stu-id="9da87-105">In addition, it contains a list of ADO syntax indexes to be used with Microsoft Visual C++ and Windows Foundation Classes (WFC).</span></span>
 
-<span data-ttu-id="54b6a-p101">このセクションには、ADO のオブジェクト、コレクション、プロパティ、動的プロパティ、メソッド、イベント、および列挙定数に関するトピックが含まれています。また、Microsoft Visual C++ と Windows Foundation Class (WFC) で使用される ADO 構文インデックスについても記載されています。</span><span class="sxs-lookup"><span data-stu-id="54b6a-p101">This section of the ADO documentation contains topics for each ADO object, collection, property, dynamic property, method, event, and enumeration. In addition, it contains a list of ADO syntax indexes to be used with Microsoft Visual C++ and Windows Foundation Classes (WFC).</span></span>
+<span data-ttu-id="9da87-106">詳細については、特定のトピックをキーワードで検索するか、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="9da87-106">For more information, search for a specific topic in the index or refer to the following topics:</span></span>
 
-<span data-ttu-id="54b6a-106">詳細については、特定のトピックをキーワードで検索するか、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="54b6a-106">For more information, search for a specific topic in the index or refer to the following topics:</span></span>
-
-  - [<span data-ttu-id="54b6a-107">ADO オブジェクトとインターフェイス</span><span class="sxs-lookup"><span data-stu-id="54b6a-107">ADO Objects</span></span>](ado-objects-and-interfaces.md)
-
-  - [<span data-ttu-id="54b6a-108">ADO コレクション</span><span class="sxs-lookup"><span data-stu-id="54b6a-108">ADO Collections</span></span>](ado-collections.md)
-
-  - [<span data-ttu-id="54b6a-109">ADO プロパティ</span><span class="sxs-lookup"><span data-stu-id="54b6a-109">ADO Properties</span></span>](ado-properties.md)
-
-  - [<span data-ttu-id="54b6a-110">ADO の動的プロパティ</span><span class="sxs-lookup"><span data-stu-id="54b6a-110">ADO Dynamic Properties</span></span>](ado-dynamic-properties.md)
-
-  - [<span data-ttu-id="54b6a-111">ADO メソッド</span><span class="sxs-lookup"><span data-stu-id="54b6a-111">ADO Methods</span></span>](ado-methods.md)
-
-  - [<span data-ttu-id="54b6a-112">ADO イベント</span><span class="sxs-lookup"><span data-stu-id="54b6a-112">ADO Events</span></span>](ado-events.md)
-
-  - [<span data-ttu-id="54b6a-113">ADO の列挙定数</span><span class="sxs-lookup"><span data-stu-id="54b6a-113">ADO Enumerated Constants</span></span>](ado-enumerated-constants.md)
-
-  - <span data-ttu-id="54b6a-114">[ADO 構文のインデックス](https://msdn.microsoft.com/library/jj248990\(v=office.15\))</span><span class="sxs-lookup"><span data-stu-id="54b6a-114">[ADO Syntax Indexes](https://msdn.microsoft.com/library/jj248990\(v=office.15\))</span></span>
+- [<span data-ttu-id="9da87-107">ADO オブジェクト</span><span class="sxs-lookup"><span data-stu-id="9da87-107">ADO objects</span></span>](ado-objects-and-interfaces.md)
+- [<span data-ttu-id="9da87-108">ADO コレクション</span><span class="sxs-lookup"><span data-stu-id="9da87-108">ADO collections</span></span>](ado-collections.md)
+- [<span data-ttu-id="9da87-109">ADO プロパティ</span><span class="sxs-lookup"><span data-stu-id="9da87-109">ADO properties</span></span>](ado-properties.md)
+- [<span data-ttu-id="9da87-110">ADO の動的プロパティ</span><span class="sxs-lookup"><span data-stu-id="9da87-110">ADO dynamic properties</span></span>](ado-dynamic-properties.md)
+- [<span data-ttu-id="9da87-111">ADO メソッド</span><span class="sxs-lookup"><span data-stu-id="9da87-111">ADO methods</span></span>](ado-methods.md)
+- [<span data-ttu-id="9da87-112">ADO イベント</span><span class="sxs-lookup"><span data-stu-id="9da87-112">ADO events</span></span>](ado-events.md)
+- [<span data-ttu-id="9da87-113">ADO の列挙定数</span><span class="sxs-lookup"><span data-stu-id="9da87-113">ADO enumerated constants</span></span>](ado-enumerated-constants.md)
+- [<span data-ttu-id="9da87-114">ADO コードの例</span><span class="sxs-lookup"><span data-stu-id="9da87-114">ADO code examples</span></span>](ado-code-examples.md)
+- [<span data-ttu-id="9da87-115">ADO 構文インデックス</span><span class="sxs-lookup"><span data-stu-id="9da87-115">ADO syntax indexes</span></span>](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/ado-syntax-indexes)
 
