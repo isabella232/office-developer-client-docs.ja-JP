@@ -1,30 +1,24 @@
 ---
-title: Errors オブジェクト参照 (DAO)
+title: エラーのオブジェクト (DAO) を参照
 TOCTitle: Errors Object
 ms:assetid: 5ec58b69-652b-4e5d-9f3f-33be1c83dfcd
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn142155(v=office.15)
 ms:contentKeyID: 52072643
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 951244bbf98c228d212292d98fd89a4890ea101e
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: a4b99c77b76f071252ac41611244b49ed538c939
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25874679"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25924226"
 ---
-# <a name="errors-object-reference-dao"></a>Errors オブジェクト参照 (DAO)
-
+# <a name="errors-object-reference-dao"></a>エラーのオブジェクト (DAO) を参照
 
 **適用されます**Access 2013、Office 2013。
 
-
-
-  - [Errors コレクション (DAO)](errors-collection-dao.md)
-
-  - [Errors メンバー (DAO)](errors-members-dao.md)
-
-  - [Errors プロパティ (DAO)](errors-properties-dao.md)
-
-  - [Errors メソッド (DAO)](errors-methods-dao.md)
+- [Errors コレクション (DAO)](errors-collection-dao.md)
+- [エラー メンバー (DAO)](errors-members-dao.md)
+- [エラー プロパティ (DAO)](errors-properties-dao.md)
+- [Errors オブジェクトのメソッド (DAO)](errors-methods-dao.md)
 

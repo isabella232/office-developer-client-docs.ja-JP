@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052904
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 58d6871406c39887af146dc131c302baa450a041
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 50e1cf6b2eb87e27f6ee0ca1468ef6dadc17e602
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25884471"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25922532"
 ---
 # <a name="relationsappend-method-dao"></a>Relations.Append メソッド (DAO)
 

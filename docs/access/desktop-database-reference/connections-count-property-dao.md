@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff198023(v=office.15)
 ms:contentKeyID: 48546563
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ec8ff4d610ef9a9b88f379ff8cc72d1b647f9bb2
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 572fed8afa9eb0f40a2b4938a31e866824147c83
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25871907"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25924470"
 ---
 # <a name="connectionscount-property-dao"></a>Connections.Count プロパティ (DAO)
 

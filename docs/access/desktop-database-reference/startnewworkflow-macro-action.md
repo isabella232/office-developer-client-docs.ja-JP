@@ -1,6 +1,6 @@
 ---
-title: "'StartNewWorkflow/新しいワークフローの開始' マクロ アクション"
-TOCTitle: StartNewWorkflow Macro Action
+title: StartNewWorkflow マクロ アクション
+TOCTitle: StartNewWorkflow macro action
 ms:assetid: b3e81a11-b816-0eef-fc70-6d6da7a5a845
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822054(v=office.15)
 ms:contentKeyID: 48547206
@@ -10,14 +10,14 @@ f1_keywords:
 - vbaac10.chm198223
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 6ba9d38caaa85ab9dd582abdbeb37aff5c7b340e
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: ed3c508f4799b2ef1f9939de8ce212ab11833353
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25886495"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25925493"
 ---
-# <a name="startnewworkflow-macro-action"></a>"StartNewWorkflow/新しいワークフローの開始" マクロ アクション
+# <a name="startnewworkflow-macro-action"></a>StartNewWorkflow マクロ アクション
 
 
 **適用されます**Access 2013、Office 2013。

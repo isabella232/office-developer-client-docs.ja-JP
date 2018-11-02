@@ -1,19 +1,19 @@
 ---
-title: Database メソッド (DAO)
+title: データベース メソッド (DAO)
 TOCTitle: Methods
 ms:assetid: fa1895d9-3ec0-4673-9cf0-6f5fac3223e2
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn180179(v=office.15)
 ms:contentKeyID: 52075128
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8495e5b2e86e7b528f6c0768021a921ffc919f96
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 51d64fd070347806f41674b90f5293434e0e1db4
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25886803"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25926697"
 ---
-# <a name="database-methods-dao"></a>Database メソッド (DAO)
+# <a name="database-methods-dao"></a>データベース メソッド (DAO)
 
 
 **適用されます**Access 2013、Office 2013。

@@ -1,19 +1,19 @@
 ---
-title: Parameter のプロパティ、メソッド、およびイベント (ADO)
+title: パラメーターのプロパティ、メソッド、およびイベント (ADO)
 TOCTitle: Properties, Methods, and Events
 ms:assetid: 3689904e-be91-ce15-1784-72f862033828
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249125(v=office.15)
 ms:contentKeyID: 48544173
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 11460e7f5df30325091ebe103a2b6279f6b42441
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: a4d916f22df99f1d17ba2886ef891954b8381e95
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25883744"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25924709"
 ---
-# <a name="parameter-properties-methods-and-events-ado"></a>Parameter のプロパティ、メソッド、およびイベント (ADO)
+# <a name="parameter-properties-methods-and-events-ado"></a>パラメーターのプロパティ、メソッド、およびイベント (ADO)
 
 
 **適用されます**Access 2013、Office 2013。

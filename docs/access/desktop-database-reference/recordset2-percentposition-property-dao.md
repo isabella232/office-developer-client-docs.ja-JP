@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052973
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d088e1875325d14206f49151c35a247fd8d16c48
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 316dd9e8b430ba0dbb741bc1af81517749d84f77
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25887146"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25921888"
 ---
 # <a name="recordset2percentposition-property-dao"></a>Recordset2.PercentPosition プロパティ (DAO)
 

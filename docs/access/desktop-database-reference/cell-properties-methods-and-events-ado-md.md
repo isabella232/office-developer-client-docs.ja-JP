@@ -1,19 +1,19 @@
 ---
-title: Cell のプロパティ、メソッド、およびイベント (ADO MD)
+title: セルのプロパティ、メソッド、およびイベント (ADO MD)
 TOCTitle: Properties, Methods, and Events
 ms:assetid: 76330293-fc35-0c7c-0806-1f2e253635f2
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249484(v=office.15)
 ms:contentKeyID: 48545691
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 52a642646d6e874dd72fd4975bd777fa5464571f
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 17da3304dd6737712b1bd79dc4c9088bcdc2bc2a
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25875645"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25924541"
 ---
-# <a name="cell-properties-methods-and-events-ado-md"></a>Cell のプロパティ、メソッド、およびイベント (ADO MD)
+# <a name="cell-properties-methods-and-events-ado-md"></a>セルのプロパティ、メソッド、およびイベント (ADO MD)
 
 **適用されます**Access 2013、Office 2013。
 
