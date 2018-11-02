@@ -1,19 +1,19 @@
 ---
-title: DBEngine メソッド (DAO)
+title: DBEngine の方法 (DAO)
 TOCTitle: Methods
 ms:assetid: 8a32c55b-2b72-45be-b907-2efb345677f2
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn125212(v=office.15)
 ms:contentKeyID: 52073337
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4f2fc45d2b62de4f0220a10c6eb720973d077fb5
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 8ce4170c6acd39072db0b6ae6e63ee57fb0be782
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25878711"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25922665"
 ---
-# <a name="dbengine-methods-dao"></a>DBEngine メソッド (DAO)
+# <a name="dbengine-methods-dao"></a>DBEngine の方法 (DAO)
 
 
 **適用されます**Access 2013、Office 2013。

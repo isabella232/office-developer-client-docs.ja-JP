@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194762(v=office.15)
 ms:contentKeyID: 48545157
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 542e4f3f2b0f2b3a88c5f4d358e36a4faa196a7b
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: a20ebb6042fb3195cecd1b53af0f200fa409b290
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869723"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25918927"
 ---
 # <a name="fieldforeignname-property-dao"></a>Field.ForeignName プロパティ (DAO)
 
