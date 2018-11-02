@@ -6,23 +6,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835760(v=office.15)
 ms:contentKeyID: 48548322
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 840d555970efe6f06ccf03358c42e5944b648e10
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: a4fe07dc71e344b7b25eac51a0273f5f53d620db
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25883478"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25923365"
 ---
-# <a name="documentdatecreated-property-dao"></a><span data-ttu-id="87cd2-102">Document.DateCreated プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="87cd2-102">Document.DateCreated Property (DAO)</span></span>
+# <a name="documentdatecreated-property-dao"></a><span data-ttu-id="4ac3e-102">Document.DateCreated プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="4ac3e-102">Document.DateCreated property (DAO)</span></span>
 
 
-<span data-ttu-id="87cd2-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="87cd2-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="4ac3e-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="4ac3e-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="87cd2-p101">オブジェクトが作成された日時を返します。値の取得のみ可能です。バリアント型 ( **Variant**) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="87cd2-p101">Returns the date and time that an object was created. Read-only **Variant**.</span></span>
+<span data-ttu-id="4ac3e-p101">オブジェクトが作成された日時を返します。値の取得のみ可能です。バリアント型 ( **Variant**) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="4ac3e-p101">Returns the date and time that an object was created. Read-only **Variant**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="87cd2-106">構文</span><span class="sxs-lookup"><span data-stu-id="87cd2-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="4ac3e-106">構文</span><span class="sxs-lookup"><span data-stu-id="4ac3e-106">Syntax</span></span>
 
-<span data-ttu-id="87cd2-107">*式*です。作成日時</span><span class="sxs-lookup"><span data-stu-id="87cd2-107">*expression* .DateCreated</span></span>
+<span data-ttu-id="4ac3e-107">*式*です。作成日時</span><span class="sxs-lookup"><span data-stu-id="4ac3e-107">*expression* .DateCreated</span></span>
 
-<span data-ttu-id="87cd2-108">\*式\***ドキュメント**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="87cd2-108">*expression* A variable that represents a **Document** object.</span></span>
+<span data-ttu-id="4ac3e-108">\*式\***ドキュメント**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="4ac3e-108">*expression* A variable that represents a **Document** object.</span></span>
 

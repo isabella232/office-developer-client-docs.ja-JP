@@ -1,52 +1,35 @@
 ---
 title: マクロ コマンド (デスクトップ データベース参照のアクセス)
-TOCTitle: Macro Commands
+TOCTitle: Macro commands
 ms:assetid: 24e7f34d-7902-4644-bb67-33689d9895c0
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn124057(v=office.15)
 ms:contentKeyID: 52071694
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cf17bfee937cad94678a8e5f0d5b209105623450
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: d37d107848808ed7a97b836c4d2be90c6d346c62
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25870654"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25926417"
 ---
-# <a name="macro-commands"></a><span data-ttu-id="002d2-102">マクロ コマンド</span><span class="sxs-lookup"><span data-stu-id="002d2-102">Macro Commands</span></span>
+# <a name="macro-commands"></a><span data-ttu-id="72dcd-102">マクロ コマンド</span><span class="sxs-lookup"><span data-stu-id="72dcd-102">Macro commands</span></span>
 
+<span data-ttu-id="72dcd-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="72dcd-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="002d2-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="002d2-103">**Applies to**: Access 2013, Office 2013</span></span>
-
-
-
-  - [<span data-ttu-id="002d2-104">"CancelEvent/イベントのキャンセル" マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="002d2-104">CancelEvent Macro Action</span></span>](cancelevent-macro-action.md)
-
-  - [<span data-ttu-id="002d2-105">Echo マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="002d2-105">Echo Macro Action</span></span>](echo-macro-action.md)
-
-  - [<span data-ttu-id="002d2-106">"OpenVisualBasicModule/VisualBasicモジュールを開く" マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="002d2-106">OpenVisualBasicModule Macro Action</span></span>](openvisualbasicmodule-macro-action.md)
-
-  - [<span data-ttu-id="002d2-107">"RemoveAllTempVars/すべての一時変数の削除" マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="002d2-107">RemoveAllTempVars Macro Action</span></span>](removealltempvars-macro-action.md)
-
-  - [<span data-ttu-id="002d2-108">"RemoveTempVar/一時変数の削除" マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="002d2-108">RemoveTempVar Macro Action</span></span>](removetempvar-macro-action.md)
-
-  - [<span data-ttu-id="002d2-109">RunCode マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="002d2-109">RunCode Macro Action</span></span>](runcode-macro-action.md)
-
-  - [<span data-ttu-id="002d2-110">"RunDataMacro/データマクロの実行" マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="002d2-110">RunDataMacro Macro Action</span></span>](rundatamacro-macro-action.md)
-
-  - [<span data-ttu-id="002d2-111">RunMacro マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="002d2-111">RunMacro Macro Action</span></span>](runmacro-macro-action.md)
-
-  - [<span data-ttu-id="002d2-112">"RunMenuCommand/メニューコマンドの実行" マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="002d2-112">RunMenuCommand Macro Action</span></span>](runmenucommand-macro-action.md)
-
-  - [<span data-ttu-id="002d2-113">SetTempVar マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="002d2-113">SetTempVar Macro Action</span></span>](settempvar-macro-action.md)
-
-  - [<span data-ttu-id="002d2-114">SingleStep マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="002d2-114">SingleStep Macro Action</span></span>](singlestep-macro-action.md)
-
-  - [<span data-ttu-id="002d2-115">"StartNewWorkflow/新しいワークフローの開始" マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="002d2-115">StartNewWorkflow Macro Action</span></span>](startnewworkflow-macro-action.md)
-
-  - [<span data-ttu-id="002d2-116">"StopAllMacros/全マクロの中止" マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="002d2-116">StopAllMacros Macro Action</span></span>](stopallmacros-macro-action.md)
-
-  - [<span data-ttu-id="002d2-117">StopMacro マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="002d2-117">StopMacro Macro Action</span></span>](stopmacro-macro-action.md)
-
-  - [<span data-ttu-id="002d2-118">"WorkflowTasks/ワークフロータスク" マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="002d2-118">WorkflowTasks Macro Action</span></span>](workflowtasks-macro-action.md)
+- [<span data-ttu-id="72dcd-104">CancelEvent マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="72dcd-104">CancelEvent macro action</span></span>](cancelevent-macro-action.md)
+- [<span data-ttu-id="72dcd-105">Echo マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="72dcd-105">Echo macro action</span></span>](echo-macro-action.md)
+- [<span data-ttu-id="72dcd-106">OpenVisualBasicModule マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="72dcd-106">OpenVisualBasicModule macro action</span></span>](openvisualbasicmodule-macro-action.md)
+- [<span data-ttu-id="72dcd-107">RemoveAllTempVars マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="72dcd-107">RemoveAllTempVars macro action</span></span>](removealltempvars-macro-action.md)
+- [<span data-ttu-id="72dcd-108">RemoveTempVar マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="72dcd-108">RemoveTempVar macro action</span></span>](removetempvar-macro-action.md)
+- [<span data-ttu-id="72dcd-109">RunCode マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="72dcd-109">RunCode macro action</span></span>](runcode-macro-action.md)
+- [<span data-ttu-id="72dcd-110">RunDataMacro マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="72dcd-110">RunDataMacro macro action</span></span>](rundatamacro-macro-action.md)
+- [<span data-ttu-id="72dcd-111">RunMacro マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="72dcd-111">RunMacro macro action</span></span>](runmacro-macro-action.md)
+- [<span data-ttu-id="72dcd-112">RunMenuCommand マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="72dcd-112">RunMenuCommand macro action</span></span>](runmenucommand-macro-action.md)
+- [<span data-ttu-id="72dcd-113">SetTempVar マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="72dcd-113">SetTempVar macro action</span></span>](settempvar-macro-action.md)
+- [<span data-ttu-id="72dcd-114">SingleStep マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="72dcd-114">SingleStep macro action</span></span>](singlestep-macro-action.md)
+- [<span data-ttu-id="72dcd-115">StartNewWorkflow マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="72dcd-115">StartNewWorkflow macro action</span></span>](startnewworkflow-macro-action.md)
+- [<span data-ttu-id="72dcd-116">StopAllMacros マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="72dcd-116">StopAllMacros macro action</span></span>](stopallmacros-macro-action.md)
+- [<span data-ttu-id="72dcd-117">StopMacro マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="72dcd-117">StopMacro macro action</span></span>](stopmacro-macro-action.md)
+- [<span data-ttu-id="72dcd-118">WorkflowTasks マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="72dcd-118">WorkflowTasks macro action</span></span>](workflowtasks-macro-action.md)
 

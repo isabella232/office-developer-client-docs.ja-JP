@@ -1,32 +1,25 @@
 ---
 title: データ マクロ イベント (デスクトップ データベース参照のアクセス)
-TOCTitle: Data Macro Events
+TOCTitle: Data macro events
 ms:assetid: 4b36bcff-f733-442f-9098-cc5e4ee69ca3
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn124692(v=office.15)
 ms:contentKeyID: 52072314
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a98218bb80bb413411feaaf3b0d63483aea4e686
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: f7a68e0351b632a99f057c6972d43551f0e3b3f0
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25879712"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25921706"
 ---
-# <a name="data-macro-events"></a><span data-ttu-id="23b6c-102">データ マクロ イベント</span><span class="sxs-lookup"><span data-stu-id="23b6c-102">Data Macro Events</span></span>
+# <a name="data-macro-events"></a><span data-ttu-id="61582-102">データ マクロ イベント</span><span class="sxs-lookup"><span data-stu-id="61582-102">Data macro events</span></span>
 
+<span data-ttu-id="61582-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="61582-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="23b6c-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="23b6c-103">**Applies to**: Access 2013, Office 2013</span></span>
-
-
-
-  - [<span data-ttu-id="23b6c-104">After Delete マクロ イベント</span><span class="sxs-lookup"><span data-stu-id="23b6c-104">After Delete Macro Event</span></span>](after-delete-macro-event.md)
-
-  - [<span data-ttu-id="23b6c-105">After Insert マクロ イベント</span><span class="sxs-lookup"><span data-stu-id="23b6c-105">After Insert Macro Event</span></span>](after-insert-macro-event.md)
-
-  - [<span data-ttu-id="23b6c-106">After Update マクロ イベント</span><span class="sxs-lookup"><span data-stu-id="23b6c-106">After Update Macro Event</span></span>](after-update-macro-event.md)
-
-  - [<span data-ttu-id="23b6c-107">Before Change マクロ イベント</span><span class="sxs-lookup"><span data-stu-id="23b6c-107">Before Change Macro Event</span></span>](before-change-macro-event.md)
-
-  - [<span data-ttu-id="23b6c-108">Before Delete マクロ イベント</span><span class="sxs-lookup"><span data-stu-id="23b6c-108">Before Delete Macro Event</span></span>](before-delete-macro-event.md)
+- [<span data-ttu-id="61582-104">After Delete マクロ イベント</span><span class="sxs-lookup"><span data-stu-id="61582-104">After Delete macro event</span></span>](after-delete-macro-event.md)
+- [<span data-ttu-id="61582-105">After Insert マクロ イベント</span><span class="sxs-lookup"><span data-stu-id="61582-105">After Insert macro event</span></span>](after-insert-macro-event.md)
+- [<span data-ttu-id="61582-106">After Update マクロ イベント</span><span class="sxs-lookup"><span data-stu-id="61582-106">After Update macro event</span></span>](after-update-macro-event.md)
+- [<span data-ttu-id="61582-107">Before Change マクロ イベント</span><span class="sxs-lookup"><span data-stu-id="61582-107">Before Change macro event</span></span>](before-change-macro-event.md)
+- [<span data-ttu-id="61582-108">マクロのイベントを削除する前に</span><span class="sxs-lookup"><span data-stu-id="61582-108">Before Delete macro event</span></span>](before-delete-macro-event.md)
 

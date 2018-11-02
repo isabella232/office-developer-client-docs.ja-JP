@@ -10,33 +10,33 @@ f1_keywords:
 - dao360.chm1052931
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e7fd7b98b246f4fda24426d9376cc5edc2553b8e
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 4fd7d7e1335e7acd5bc9733d8c13f690be68d82b
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25870311"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25926452"
 ---
-# <a name="indexignorenulls-property-dao"></a><span data-ttu-id="c79a4-102">Index.IgnoreNulls プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="c79a4-102">Index.IgnoreNulls Property (DAO)</span></span>
+# <a name="indexignorenulls-property-dao"></a><span data-ttu-id="43472-102">Index.IgnoreNulls プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="43472-102">Index.IgnoreNulls property (DAO)</span></span>
 
 
-<span data-ttu-id="c79a4-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c79a4-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="43472-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="43472-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c79a4-104">インデックス フィールドに Null 値を持つレコードがインデックス エントリを持つかどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="c79a4-104">Sets or returns a value that indicates whether records that have Null values in their index fields have index entries (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="43472-104">インデックス フィールドに Null 値を持つレコードがインデックス エントリを持つかどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="43472-104">Sets or returns a value that indicates whether records that have Null values in their index fields have index entries (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="c79a4-105">構文</span><span class="sxs-lookup"><span data-stu-id="c79a4-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="43472-105">構文</span><span class="sxs-lookup"><span data-stu-id="43472-105">Syntax</span></span>
 
-<span data-ttu-id="c79a4-106">*式*です。IgnoreNulls</span><span class="sxs-lookup"><span data-stu-id="c79a4-106">*expression* .IgnoreNulls</span></span>
+<span data-ttu-id="43472-106">*式*です。IgnoreNulls</span><span class="sxs-lookup"><span data-stu-id="43472-106">*expression* .IgnoreNulls</span></span>
 
-<span data-ttu-id="c79a4-107">\*式\***Index**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="c79a4-107">*expression* A variable that represents an **Index** object.</span></span>
+<span data-ttu-id="43472-107">\*式\***Index**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="43472-107">*expression* A variable that represents an **Index** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="c79a4-108">注釈</span><span class="sxs-lookup"><span data-stu-id="c79a4-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="43472-108">注釈</span><span class="sxs-lookup"><span data-stu-id="43472-108">Remarks</span></span>
 
-<span data-ttu-id="c79a4-109">このプロパティは、新しい **[Index](index-object-dao.md)** オブジェクトがコレクションに追加されていない場合は値の取得および設定が可能で、 [**Indexes**](indexes-collection-dao.md) コレクション内の既存の **Index** オブジェクトの場合は値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="c79a4-109">This property is read/write for a new **[Index](index-object-dao.md)** object not yet appended to a collection and read-only for an existing **Index** object in an **[Indexes](indexes-collection-dao.md)** collection.</span></span>
+<span data-ttu-id="43472-109">このプロパティは、新しい **[Index](index-object-dao.md)** オブジェクトがコレクションに追加されていない場合は値の取得および設定が可能で、 [**Indexes**](indexes-collection-dao.md) コレクション内の既存の **Index** オブジェクトの場合は値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="43472-109">This property is read/write for a new **[Index](index-object-dao.md)** object not yet appended to a collection and read-only for an existing **Index** object in an **[Indexes](indexes-collection-dao.md)** collection.</span></span>
 
-<span data-ttu-id="c79a4-p101">レコードをより短時間で検索するために、フィールドのインデックスを定義できます。インデックス フィールドへの **null** の入力を許可し、多くの入力値が **null** になる場合、 **Index** オブジェクトの **IgnoreNulls** プロパティを **True** に設定すると、インデックスによって使用される記憶域の容量を節約できます。</span><span class="sxs-lookup"><span data-stu-id="c79a4-p101">To speed up the process of searching for records, you can define an index for a field. If you allow **null** entries in an indexed field and expect many of the entries to be **null**, you can set the **IgnoreNulls** property for the **Index** object to **True** to reduce the amount of storage space that the index uses.</span></span>
+<span data-ttu-id="43472-p101">レコードをより短時間で検索するために、フィールドのインデックスを定義できます。インデックス フィールドへの **null** の入力を許可し、多くの入力値が **null** になる場合、 **Index** オブジェクトの **IgnoreNulls** プロパティを **True** に設定すると、インデックスによって使用される記憶域の容量を節約できます。</span><span class="sxs-lookup"><span data-stu-id="43472-p101">To speed up the process of searching for records, you can define an index for a field. If you allow **null** entries in an indexed field and expect many of the entries to be **null**, you can set the **IgnoreNulls** property for the **Index** object to **True** to reduce the amount of storage space that the index uses.</span></span>
 
-<span data-ttu-id="c79a4-112">**IgnoreNulls** プロパティの設定および **[Required](field-required-property-dao.md)** プロパティの設定によって、インデックス値が **null** のレコードがインデックス エントリを持つかどうかが決まります。</span><span class="sxs-lookup"><span data-stu-id="c79a4-112">The **IgnoreNulls** property setting and the **[Required](field-required-property-dao.md)** property setting together determine whether a record with a **null** index value has an index entry.</span></span>
+<span data-ttu-id="43472-112">**IgnoreNulls** プロパティの設定および **[Required](field-required-property-dao.md)** プロパティの設定によって、インデックス値が **null** のレコードがインデックス エントリを持つかどうかが決まります。</span><span class="sxs-lookup"><span data-stu-id="43472-112">The **IgnoreNulls** property setting and the **[Required](field-required-property-dao.md)** property setting together determine whether a record with a **null** index value has an index entry.</span></span>
 
 <table>
 <colgroup>
@@ -46,34 +46,34 @@ ms.locfileid: "25870311"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="c79a4-113">IgnoreNulls の値</span><span class="sxs-lookup"><span data-stu-id="c79a4-113">If IgnoreNulls is</span></span></p></th>
-<th><p><span data-ttu-id="c79a4-114">Required の値</span><span class="sxs-lookup"><span data-stu-id="c79a4-114">And Required is</span></span></p></th>
-<th><p><span data-ttu-id="c79a4-115">結果</span><span class="sxs-lookup"><span data-stu-id="c79a4-115">Then</span></span></p></th>
+<th><p><span data-ttu-id="43472-113">IgnoreNulls の値</span><span class="sxs-lookup"><span data-stu-id="43472-113">If IgnoreNulls is</span></span></p></th>
+<th><p><span data-ttu-id="43472-114">Required の値</span><span class="sxs-lookup"><span data-stu-id="43472-114">And Required is</span></span></p></th>
+<th><p><span data-ttu-id="43472-115">結果</span><span class="sxs-lookup"><span data-stu-id="43472-115">Then</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="c79a4-116">True</span><span class="sxs-lookup"><span data-stu-id="c79a4-116">True</span></span></p></td>
-<td><p><span data-ttu-id="c79a4-117">False</span><span class="sxs-lookup"><span data-stu-id="c79a4-117">False</span></span></p></td>
-<td><p><span data-ttu-id="c79a4-118">インデックス フィールドへの Null 値の入力が許可されます。インデックス エントリは追加されません。</span><span class="sxs-lookup"><span data-stu-id="c79a4-118">A null value is allowed in the index field; no index entry added.</span></span></p></td>
+<td><p><span data-ttu-id="43472-116">True</span><span class="sxs-lookup"><span data-stu-id="43472-116">True</span></span></p></td>
+<td><p><span data-ttu-id="43472-117">False</span><span class="sxs-lookup"><span data-stu-id="43472-117">False</span></span></p></td>
+<td><p><span data-ttu-id="43472-118">インデックス フィールドへの Null 値の入力が許可されます。インデックス エントリは追加されません。</span><span class="sxs-lookup"><span data-stu-id="43472-118">A null value is allowed in the index field; no index entry added.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="c79a4-119">False</span><span class="sxs-lookup"><span data-stu-id="c79a4-119">False</span></span></p></td>
-<td><p><span data-ttu-id="c79a4-120">False</span><span class="sxs-lookup"><span data-stu-id="c79a4-120">False</span></span></p></td>
-<td><p><span data-ttu-id="c79a4-121">インデックス フィールドへの Null 値の入力が許可されます。インデックス エントリが追加されます。</span><span class="sxs-lookup"><span data-stu-id="c79a4-121">A null value is allowed in the index field; index entry added.</span></span></p></td>
+<td><p><span data-ttu-id="43472-119">False</span><span class="sxs-lookup"><span data-stu-id="43472-119">False</span></span></p></td>
+<td><p><span data-ttu-id="43472-120">False</span><span class="sxs-lookup"><span data-stu-id="43472-120">False</span></span></p></td>
+<td><p><span data-ttu-id="43472-121">インデックス フィールドへの Null 値の入力が許可されます。インデックス エントリが追加されます。</span><span class="sxs-lookup"><span data-stu-id="43472-121">A null value is allowed in the index field; index entry added.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="c79a4-122">True または False</span><span class="sxs-lookup"><span data-stu-id="c79a4-122">True or False</span></span></p></td>
-<td><p><span data-ttu-id="c79a4-123">True</span><span class="sxs-lookup"><span data-stu-id="c79a4-123">True</span></span></p></td>
-<td><p><span data-ttu-id="c79a4-124">インデックス フィールドへの Null 値の入力は許可されません。インデックス エントリは追加されません。</span><span class="sxs-lookup"><span data-stu-id="c79a4-124">A null value isn't allowed in the index field; no index entry added.</span></span></p></td>
+<td><p><span data-ttu-id="43472-122">True または False</span><span class="sxs-lookup"><span data-stu-id="43472-122">True or False</span></span></p></td>
+<td><p><span data-ttu-id="43472-123">True</span><span class="sxs-lookup"><span data-stu-id="43472-123">True</span></span></p></td>
+<td><p><span data-ttu-id="43472-124">インデックス フィールドへの Null 値の入力は許可されません。インデックス エントリは追加されません。</span><span class="sxs-lookup"><span data-stu-id="43472-124">A null value isn't allowed in the index field; no index entry added.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="example"></a><span data-ttu-id="c79a4-125">例</span><span class="sxs-lookup"><span data-stu-id="c79a4-125">Example</span></span>
+## <a name="example"></a><span data-ttu-id="43472-125">例</span><span class="sxs-lookup"><span data-stu-id="43472-125">Example</span></span>
 
-<span data-ttu-id="c79a4-126">この例では、新しい **Index** オブジェクトの **IgnoreNulls** プロパティを、ユーザーの入力に基づいて **True** または **False** に設定し、キー フィールドに **Null** 値が含まれているレコードによる **Recordset** オブジェクトへの影響を示します。</span><span class="sxs-lookup"><span data-stu-id="c79a4-126">This example sets the **IgnoreNulls** property of a new **Index** to **True** or **False** based on user input, and then demonstrates the effect on a **Recordset** with a record whose key field contains a **Null** value.</span></span>
+<span data-ttu-id="43472-126">この例では、新しい **Index** オブジェクトの **IgnoreNulls** プロパティを、ユーザーの入力に基づいて **True** または **False** に設定し、キー フィールドに **Null** 値が含まれているレコードによる **Recordset** オブジェクトへの影響を示します。</span><span class="sxs-lookup"><span data-stu-id="43472-126">This example sets the **IgnoreNulls** property of a new **Index** to **True** or **False** based on user input, and then demonstrates the effect on a **Recordset** with a record whose key field contains a **Null** value.</span></span>
 
 ```vb
     Sub IgnoreNullsX() 

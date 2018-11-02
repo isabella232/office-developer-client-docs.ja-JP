@@ -6,38 +6,38 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff823170(v=office.15)
 ms:contentKeyID: 48547648
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e924dfb89cb67ffa4bc8ec29d0c24a7c61fcb5b5
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: d928864d729cdfb40f44d496e983bf86413d57f7
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25887965"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25925276"
 ---
-# <a name="databasequerytimeout-property-dao"></a><span data-ttu-id="2cc2c-102">Database.QueryTimeout プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="2cc2c-102">Database.QueryTimeout Property (DAO)</span></span>
+# <a name="databasequerytimeout-property-dao"></a><span data-ttu-id="2cb2c-102">Database.QueryTimeout プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="2cb2c-102">Database.QueryTimeout property (DAO)</span></span>
 
 
-<span data-ttu-id="2cc2c-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="2cc2c-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="2cb2c-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="2cb2c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-<span data-ttu-id="2cc2c-104">ODBC データ ソースでクエリが実行される場合の、タイムアウト エラーが発生するまでに待機する秒数を指定する値を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="2cc2c-104">Sets or returns a value that specifies the number of seconds to wait before a timeout error occurs when a query is executed on an ODBC data source.</span></span>
+<span data-ttu-id="2cb2c-104">ODBC データ ソースでクエリが実行される場合の、タイムアウト エラーが発生するまでに待機する秒数を指定する値を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="2cb2c-104">Sets or returns a value that specifies the number of seconds to wait before a timeout error occurs when a query is executed on an ODBC data source.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="2cc2c-105">構文</span><span class="sxs-lookup"><span data-stu-id="2cc2c-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="2cb2c-105">構文</span><span class="sxs-lookup"><span data-stu-id="2cb2c-105">Syntax</span></span>
 
-<span data-ttu-id="2cc2c-106">*式*です。QueryTimeout</span><span class="sxs-lookup"><span data-stu-id="2cc2c-106">*expression* .QueryTimeout</span></span>
+<span data-ttu-id="2cb2c-106">*式*です。QueryTimeout</span><span class="sxs-lookup"><span data-stu-id="2cb2c-106">*expression* .QueryTimeout</span></span>
 
-<span data-ttu-id="2cc2c-107">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="2cc2c-107">*expression* A variable that represents a **Database** object.</span></span>
+<span data-ttu-id="2cb2c-107">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="2cb2c-107">*expression* A variable that represents a **Database** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="2cc2c-108">注釈</span><span class="sxs-lookup"><span data-stu-id="2cc2c-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2cb2c-108">注釈</span><span class="sxs-lookup"><span data-stu-id="2cb2c-108">Remarks</span></span>
 
-<span data-ttu-id="2cc2c-109">既定値は 60 です。</span><span class="sxs-lookup"><span data-stu-id="2cc2c-109">The default value is 60.</span></span>
+<span data-ttu-id="2cb2c-109">既定値は 60 です。</span><span class="sxs-lookup"><span data-stu-id="2cb2c-109">The default value is 60.</span></span>
 
-<span data-ttu-id="2cc2c-p101">Microsoft SQL Server などの ODBC データベースを使用している場合、ネットワーク トラフィックや ODBC サーバーに対する負荷の増大のために、応答が遅れることがあります。無限に待機せずに、待機する時間を指定できます。</span><span class="sxs-lookup"><span data-stu-id="2cc2c-p101">When you're using an ODBC database, such as Microsoft SQL Server, there may be delays due to network traffic or heavy use of the ODBC server. Rather than waiting indefinitely, you can specify how long to wait.</span></span>
+<span data-ttu-id="2cb2c-p101">Microsoft SQL Server などの ODBC データベースを使用している場合、ネットワーク トラフィックや ODBC サーバーに対する負荷の増大のために、応答が遅れることがあります。無限に待機せずに、待機する時間を指定できます。</span><span class="sxs-lookup"><span data-stu-id="2cb2c-p101">When you're using an ODBC database, such as Microsoft SQL Server, there may be delays due to network traffic or heavy use of the ODBC server. Rather than waiting indefinitely, you can specify how long to wait.</span></span>
 
-<span data-ttu-id="2cc2c-p102">[**Connection**](connection-object-dao.md) オブジェクトまたは [**Database**](database-object-dao.md) オブジェクトと共に **QueryTimeout** を使用すると、データベースに関連付けられたすべてのクエリに対してグローバル値が指定されます。特定の [**QueryDef**](querydef-object-dao.md) オブジェクトの **ODBCTimeout** プロパティを設定すると、特定のクエリのこの値を上書きできます。</span><span class="sxs-lookup"><span data-stu-id="2cc2c-p102">When you use **QueryTimeout** with a **[Connection](connection-object-dao.md)** or **[Database](database-object-dao.md)** object, it specifies a global value for all queries associated with the database. You can override this value for a specific query by setting the **ODBCTimeout** property of the particular **[QueryDef](querydef-object-dao.md)** object.</span></span>
+<span data-ttu-id="2cb2c-p102">[**Connection**](connection-object-dao.md) オブジェクトまたは [**Database**](database-object-dao.md) オブジェクトと共に **QueryTimeout** を使用すると、データベースに関連付けられたすべてのクエリに対してグローバル値が指定されます。特定の [**QueryDef**](querydef-object-dao.md) オブジェクトの **ODBCTimeout** プロパティを設定すると、特定のクエリのこの値を上書きできます。</span><span class="sxs-lookup"><span data-stu-id="2cb2c-p102">When you use **QueryTimeout** with a **[Connection](connection-object-dao.md)** or **[Database](database-object-dao.md)** object, it specifies a global value for all queries associated with the database. You can override this value for a specific query by setting the **ODBCTimeout** property of the particular **[QueryDef](querydef-object-dao.md)** object.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2cc2c-114">例</span><span class="sxs-lookup"><span data-stu-id="2cc2c-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2cb2c-114">例</span><span class="sxs-lookup"><span data-stu-id="2cb2c-114">Example</span></span>
 
-<span data-ttu-id="2cc2c-115">この例では、 **ODBCTimeout** プロパティおよび **QueryTimeout** プロパティを使用して、 **Database** オブジェクトの **QueryTimeout** プロパティで、 **Database** オブジェクトから作成された **QueryDef** オブジェクトの **ODBCTimeout** プロパティの既定値を設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="2cc2c-115">This example uses the **ODBCTimeout** and **QueryTimeout** properties to show how the **QueryTimeout** setting on a **Database** object sets the default **ODBCTimeout** setting on any **QueryDef** objects created from the **Database** object.</span></span>
+<span data-ttu-id="2cb2c-115">この例では、 **ODBCTimeout** プロパティおよび **QueryTimeout** プロパティを使用して、 **Database** オブジェクトの **QueryTimeout** プロパティで、 **Database** オブジェクトから作成された **QueryDef** オブジェクトの **ODBCTimeout** プロパティの既定値を設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="2cb2c-115">This example uses the **ODBCTimeout** and **QueryTimeout** properties to show how the **QueryTimeout** setting on a **Database** object sets the default **ODBCTimeout** setting on any **QueryDef** objects created from the **Database** object.</span></span>
 
 ```vb 
 Sub ODBCTimeoutX() 

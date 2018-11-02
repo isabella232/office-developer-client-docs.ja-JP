@@ -1,6 +1,6 @@
 ---
-title: "\"CancelEvent/イベントのキャンセル\" マクロ アクション"
-TOCTitle: CancelEvent Macro Action
+title: CancelEvent マクロ アクション
+TOCTitle: CancelEvent macro action
 ms:assetid: d9d3ea99-c9fb-2524-c570-e3ee6d20af98
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835110(v=office.15)
 ms:contentKeyID: 48548066
@@ -10,32 +10,32 @@ f1_keywords:
 - vbaac10.chm78430
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 0bc9f38e1f91a58fcfc7cedfdfb740a22477f649
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 7999d2acd19fd1f6aa4d7dd9dccd88b7ffea88a7
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880671"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25925329"
 ---
-# <a name="cancelevent-macro-action"></a><span data-ttu-id="8f772-102">"CancelEvent/イベントのキャンセル" マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="8f772-102">CancelEvent Macro Action</span></span>
+# <a name="cancelevent-macro-action"></a><span data-ttu-id="eb40a-102">CancelEvent マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="eb40a-102">CancelEvent macro action</span></span>
 
 
-<span data-ttu-id="8f772-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="8f772-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="eb40a-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="eb40a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-<span data-ttu-id="8f772-p101">" **CancelEvent/イベントのキャンセル** " アクションを使用して、このアクションが定義されたマクロが Access で実行される原因となったイベントを取り消すことができます。" **BeforeUpdate/更新前処理** "、" **OnOpen/開く時** "、" **OnUnload/読み込み解除時** "、" **OnPrint/印刷時** " などのイベント プロパティに、このマクロ名を設定します。</span><span class="sxs-lookup"><span data-stu-id="8f772-p101">You can use the **CancelEvent** action to cancel the event that caused Access to run the macro containing this action. The macro name is the setting of an event property such as **BeforeUpdate**, **OnOpen**, **OnUnload**, or **OnPrint**.</span></span>
+<span data-ttu-id="eb40a-p101">" **CancelEvent/イベントのキャンセル** " アクションを使用して、このアクションが定義されたマクロが Access で実行される原因となったイベントを取り消すことができます。" **BeforeUpdate/更新前処理** "、" **OnOpen/開く時** "、" **OnUnload/読み込み解除時** "、" **OnPrint/印刷時** " などのイベント プロパティに、このマクロ名を設定します。</span><span class="sxs-lookup"><span data-stu-id="eb40a-p101">You can use the **CancelEvent** action to cancel the event that caused Access to run the macro containing this action. The macro name is the setting of an event property such as **BeforeUpdate**, **OnOpen**, **OnUnload**, or **OnPrint**.</span></span>
 
-## <a name="setting"></a><span data-ttu-id="8f772-106">設定値</span><span class="sxs-lookup"><span data-stu-id="8f772-106">Setting</span></span>
+## <a name="setting"></a><span data-ttu-id="eb40a-106">設定値</span><span class="sxs-lookup"><span data-stu-id="eb40a-106">Setting</span></span>
 
-<span data-ttu-id="8f772-107">**モーダル**引数はありません。</span><span class="sxs-lookup"><span data-stu-id="8f772-107">The **CancelEvent** action doesn't have any arguments.</span></span>
+<span data-ttu-id="eb40a-107">**モーダル**引数はありません。</span><span class="sxs-lookup"><span data-stu-id="eb40a-107">The **CancelEvent** action doesn't have any arguments.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="8f772-108">解説</span><span class="sxs-lookup"><span data-stu-id="8f772-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="eb40a-108">解説</span><span class="sxs-lookup"><span data-stu-id="eb40a-108">Remarks</span></span>
 
-<span data-ttu-id="8f772-109">フォームでは、通常に、 **BeforeUpdate**イベントのプロパティに入力検査マクロで**イベントのキャンセル**操作を使用します。</span><span class="sxs-lookup"><span data-stu-id="8f772-109">In a form, you typically use the **CancelEvent** action in a validation macro with the **BeforeUpdate** event property.</span></span> <span data-ttu-id="8f772-110">コントロールまたはレコードにデータを入力すると、ときに、データベースにデータを追加する前にマクロが実行されます。</span><span class="sxs-lookup"><span data-stu-id="8f772-110">When a user enters data in a control or record, Access runs the macro before adding the data to the database.</span></span> <span data-ttu-id="8f772-111">データには、マクロの入力検査の条件が失敗した場合、**イベントのキャンセル**操作は、開始する前に更新処理をキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="8f772-111">If the data fails the validation conditions in the macro, the **CancelEvent** action cancels the update process before it starts.</span></span>
+<span data-ttu-id="eb40a-109">フォームでは、通常に、 **BeforeUpdate**イベントのプロパティに入力検査マクロで**イベントのキャンセル**操作を使用します。</span><span class="sxs-lookup"><span data-stu-id="eb40a-109">In a form, you typically use the **CancelEvent** action in a validation macro with the **BeforeUpdate** event property.</span></span> <span data-ttu-id="eb40a-110">コントロールまたはレコードにデータを入力すると、ときに、データベースにデータを追加する前にマクロが実行されます。</span><span class="sxs-lookup"><span data-stu-id="eb40a-110">When a user enters data in a control or record, Access runs the macro before adding the data to the database.</span></span> <span data-ttu-id="eb40a-111">データには、マクロの入力検査の条件が失敗した場合、**イベントのキャンセル**操作は、開始する前に更新処理をキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="eb40a-111">If the data fails the validation conditions in the macro, the **CancelEvent** action cancels the update process before it starts.</span></span>
 
-<span data-ttu-id="8f772-112">多くの場合、アクションを使用するこのアクションが**メッセージ ボックス**で、データの入力検査の条件が失敗したことを示すために、入力されるデータの種類に関する有用な情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="8f772-112">Often, you use this action with the **MessageBox** action to indicate that the data has failed the validation conditions and to provide helpful information about the kind of data that should be entered.</span></span>
+<span data-ttu-id="eb40a-112">多くの場合、アクションを使用するこのアクションが**メッセージ ボックス**で、データの入力検査の条件が失敗したことを示すために、入力されるデータの種類に関する有用な情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="eb40a-112">Often, you use this action with the **MessageBox** action to indicate that the data has failed the validation conditions and to provide helpful information about the kind of data that should be entered.</span></span>
 
-<span data-ttu-id="8f772-113">次のイベントは、**イベントのキャンセル**操作をキャンセルできます。</span><span class="sxs-lookup"><span data-stu-id="8f772-113">The following events can be canceled by the **CancelEvent** action.</span></span>
+<span data-ttu-id="eb40a-113">次のイベントは、**イベントのキャンセル**操作をキャンセルできます。</span><span class="sxs-lookup"><span data-stu-id="eb40a-113">The following events can be canceled by the **CancelEvent** action.</span></span>
 
 <table>
 <colgroup>
@@ -45,32 +45,32 @@ ms.locfileid: "25880671"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="8f772-114"><strong>ApplyFilter</strong></span><span class="sxs-lookup"><span data-stu-id="8f772-114"><strong>ApplyFilter</strong></span></span></p></td>
-<td><p><span data-ttu-id="8f772-115"><strong>Dirty</strong></span><span class="sxs-lookup"><span data-stu-id="8f772-115"><strong>Dirty</strong></span></span></p></td>
-<td><p><span data-ttu-id="8f772-116"><strong>MouseDown</strong></span><span class="sxs-lookup"><span data-stu-id="8f772-116"><strong>MouseDown</strong></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-114"><strong>ApplyFilter</strong></span><span class="sxs-lookup"><span data-stu-id="eb40a-114"><strong>ApplyFilter</strong></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-115"><strong>Dirty</strong></span><span class="sxs-lookup"><span data-stu-id="eb40a-115"><strong>Dirty</strong></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-116"><strong>MouseDown</strong></span><span class="sxs-lookup"><span data-stu-id="eb40a-116"><strong>MouseDown</strong></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8f772-117"><strong>BeforeDelConfirm</strong></span><span class="sxs-lookup"><span data-stu-id="8f772-117"><strong>BeforeDelConfirm</strong></span></span></p></td>
-<td><p><span data-ttu-id="8f772-118"><strong>Exit</strong></span><span class="sxs-lookup"><span data-stu-id="8f772-118"><strong>Exit</strong></span></span></p></td>
-<td><p><span data-ttu-id="8f772-119"><strong>NoData</strong></span><span class="sxs-lookup"><span data-stu-id="8f772-119"><strong>NoData</strong></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-117"><strong>BeforeDelConfirm</strong></span><span class="sxs-lookup"><span data-stu-id="eb40a-117"><strong>BeforeDelConfirm</strong></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-118"><strong>Exit</strong></span><span class="sxs-lookup"><span data-stu-id="eb40a-118"><strong>Exit</strong></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-119"><strong>NoData</strong></span><span class="sxs-lookup"><span data-stu-id="eb40a-119"><strong>NoData</strong></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="8f772-120"><strong>BeforeInsert</strong></span><span class="sxs-lookup"><span data-stu-id="8f772-120"><strong>BeforeInsert</strong></span></span></p></td>
-<td><p><span data-ttu-id="8f772-121"><strong>Filter</strong></span><span class="sxs-lookup"><span data-stu-id="8f772-121"><strong>Filter</strong></span></span></p></td>
-<td><p><span data-ttu-id="8f772-122"><strong>Open</strong></span><span class="sxs-lookup"><span data-stu-id="8f772-122"><strong>Open</strong></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-120"><strong>BeforeInsert</strong></span><span class="sxs-lookup"><span data-stu-id="eb40a-120"><strong>BeforeInsert</strong></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-121"><strong>Filter</strong></span><span class="sxs-lookup"><span data-stu-id="eb40a-121"><strong>Filter</strong></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-122"><strong>Open</strong></span><span class="sxs-lookup"><span data-stu-id="eb40a-122"><strong>Open</strong></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8f772-123"><strong>BeforeUpdate</strong></span><span class="sxs-lookup"><span data-stu-id="8f772-123"><strong>BeforeUpdate</strong></span></span></p></td>
-<td><p><span data-ttu-id="8f772-124"><strong>Format</strong></span><span class="sxs-lookup"><span data-stu-id="8f772-124"><strong>Format</strong></span></span></p></td>
-<td><p><span data-ttu-id="8f772-125"><strong>Print</strong></span><span class="sxs-lookup"><span data-stu-id="8f772-125"><strong>Print</strong></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-123"><strong>BeforeUpdate</strong></span><span class="sxs-lookup"><span data-stu-id="eb40a-123"><strong>BeforeUpdate</strong></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-124"><strong>Format</strong></span><span class="sxs-lookup"><span data-stu-id="eb40a-124"><strong>Format</strong></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-125"><strong>Print</strong></span><span class="sxs-lookup"><span data-stu-id="eb40a-125"><strong>Print</strong></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="8f772-126"><strong>DblClick</strong></span><span class="sxs-lookup"><span data-stu-id="8f772-126"><strong>DblClick</strong></span></span></p></td>
-<td><p><span data-ttu-id="8f772-127"><strong>KeyPress</strong></span><span class="sxs-lookup"><span data-stu-id="8f772-127"><strong>KeyPress</strong></span></span></p></td>
-<td><p><span data-ttu-id="8f772-128"><strong>Unload</strong></span><span class="sxs-lookup"><span data-stu-id="8f772-128"><strong>Unload</strong></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-126"><strong>DblClick</strong></span><span class="sxs-lookup"><span data-stu-id="eb40a-126"><strong>DblClick</strong></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-127"><strong>KeyPress</strong></span><span class="sxs-lookup"><span data-stu-id="eb40a-127"><strong>KeyPress</strong></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-128"><strong>Unload</strong></span><span class="sxs-lookup"><span data-stu-id="eb40a-128"><strong>Unload</strong></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8f772-129"><strong>Delete</strong></span><span class="sxs-lookup"><span data-stu-id="8f772-129"><strong>Delete</strong></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-129"><strong>Delete</strong></span><span class="sxs-lookup"><span data-stu-id="eb40a-129"><strong>Delete</strong></span></span></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
@@ -80,22 +80,22 @@ ms.locfileid: "25880671"
 
 
 > [!NOTE]
-> <span data-ttu-id="8f772-130">**MouseDown**イベントと**イベントのキャンセル**操作を使用するにはオブジェクトを右クリックしたときに発生するイベントをキャンセルするだけです。</span><span class="sxs-lookup"><span data-stu-id="8f772-130">You can use the **CancelEvent** action with the **MouseDown** event only to cancel the event that occurs when you right-click an object.</span></span>
+> <span data-ttu-id="eb40a-130">**MouseDown**イベントと**イベントのキャンセル**操作を使用するにはオブジェクトを右クリックしたときに発生するイベントをキャンセルするだけです。</span><span class="sxs-lookup"><span data-stu-id="eb40a-130">You can use the **CancelEvent** action with the **MouseDown** event only to cancel the event that occurs when you right-click an object.</span></span>
 
-<span data-ttu-id="8f772-131">コントロールの**OnDblClick**イベント プロパティの設定は、**イベントのキャンセル**操作を含むマクロを指定する場合、アクションは、 **DblClick**イベントをキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="8f772-131">If a control's **OnDblClick** event property setting specifies a macro containing the **CancelEvent** action, the action cancels the **DblClick** event.</span></span>
+<span data-ttu-id="eb40a-131">コントロールの**OnDblClick**イベント プロパティの設定は、**イベントのキャンセル**操作を含むマクロを指定する場合、アクションは、 **DblClick**イベントをキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="eb40a-131">If a control's **OnDblClick** event property setting specifies a macro containing the **CancelEvent** action, the action cancels the **DblClick** event.</span></span>
 
-<span data-ttu-id="8f772-p103">取り消し可能なイベントでは、イベントのマクロが実行された後に、イベントの既定の動作 (イベント発生時の通常の動作) が実行されます。したがって、既定の動作を取り消すことができます。たとえば、テキスト ボックスでカーソル位置にある単語をダブルクリックすると、通常は、その単語が選択されます。 **DblClick** イベントのマクロで、この既定の動作を取り消し、テキスト ボックスのデータに関する情報を表示するフォームを開くなどの別のアクションを実行することができます。取り消し不可能なイベントでは、イベントのマクロが実行される前に、既定の動作が実行されます。</span><span class="sxs-lookup"><span data-stu-id="8f772-p103">For events that can be canceled, the default behavior for the event (that is, what Access typically does when the event occurs) occurs after the macro for the event runs. This enables you to cancel the default behavior. For example, when you double-click a word that the insertion point is on in a text box, Access normally selects the word. You can cancel this default behavior in the macro for the **DblClick** event and perform some other action, such as opening a form containing information about the data in the text box. For events that can't be canceled, the default behavior occurs before the macro runs.</span></span>
+<span data-ttu-id="eb40a-p103">取り消し可能なイベントでは、イベントのマクロが実行された後に、イベントの既定の動作 (イベント発生時の通常の動作) が実行されます。したがって、既定の動作を取り消すことができます。たとえば、テキスト ボックスでカーソル位置にある単語をダブルクリックすると、通常は、その単語が選択されます。 **DblClick** イベントのマクロで、この既定の動作を取り消し、テキスト ボックスのデータに関する情報を表示するフォームを開くなどの別のアクションを実行することができます。取り消し不可能なイベントでは、イベントのマクロが実行される前に、既定の動作が実行されます。</span><span class="sxs-lookup"><span data-stu-id="eb40a-p103">For events that can be canceled, the default behavior for the event (that is, what Access typically does when the event occurs) occurs after the macro for the event runs. This enables you to cancel the default behavior. For example, when you double-click a word that the insertion point is on in a text box, Access normally selects the word. You can cancel this default behavior in the macro for the **DblClick** event and perform some other action, such as opening a form containing information about the data in the text box. For events that can't be canceled, the default behavior occurs before the macro runs.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="8f772-137">フォームの**OnUnload**イベント プロパティは、**イベントのキャンセル**操作を実行するマクロを指定する場合、フォームを閉じることはできません。</span><span class="sxs-lookup"><span data-stu-id="8f772-137">If a form's **OnUnload** event property specifies a macro that carries out a **CancelEvent** action, you won't be able to close the form.</span></span> <span data-ttu-id="8f772-138">**イベントのキャンセル**操作を実行するか、マクロを開くし、**イベントのキャンセル**操作を削除する原因となった条件を修正する必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="8f772-138">You must either correct the condition that caused the **CancelEvent** action to be carried out or open the macro and delete the **CancelEvent** action.</span></span> <span data-ttu-id="8f772-139">フォームがモーダル フォームの場合は、マクロを開くことはできません。</span><span class="sxs-lookup"><span data-stu-id="8f772-139">If the form is a modal form, you won't be able to open the macro.</span></span>
+> <span data-ttu-id="eb40a-137">フォームの**OnUnload**イベント プロパティは、**イベントのキャンセル**操作を実行するマクロを指定する場合、フォームを閉じることはできません。</span><span class="sxs-lookup"><span data-stu-id="eb40a-137">If a form's **OnUnload** event property specifies a macro that carries out a **CancelEvent** action, you won't be able to close the form.</span></span> <span data-ttu-id="eb40a-138">**イベントのキャンセル**操作を実行するか、マクロを開くし、**イベントのキャンセル**操作を削除する原因となった条件を修正する必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="eb40a-138">You must either correct the condition that caused the **CancelEvent** action to be carried out or open the macro and delete the **CancelEvent** action.</span></span> <span data-ttu-id="eb40a-139">フォームがモーダル フォームの場合は、マクロを開くことはできません。</span><span class="sxs-lookup"><span data-stu-id="eb40a-139">If the form is a modal form, you won't be able to open the macro.</span></span>
 
-<span data-ttu-id="8f772-140">アクションを実行するには、**イベントのキャンセル**Visual Basic for Applications (VBA) のモジュールで、 **DoCmd**オブジェクトの**CancelEvent**メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="8f772-140">To carry out the **CancelEvent** action in a Visual Basic for Applications (VBA) module, use the **CancelEvent** method of the **DoCmd** object.</span></span>
+<span data-ttu-id="eb40a-140">アクションを実行するには、**イベントのキャンセル**Visual Basic for Applications (VBA) のモジュールで、 **DoCmd**オブジェクトの**CancelEvent**メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="eb40a-140">To carry out the **CancelEvent** action in a Visual Basic for Applications (VBA) module, use the **CancelEvent** method of the **DoCmd** object.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8f772-141">使用例</span><span class="sxs-lookup"><span data-stu-id="8f772-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="eb40a-141">使用例</span><span class="sxs-lookup"><span data-stu-id="eb40a-141">Example</span></span>
 
-<span data-ttu-id="8f772-142">マクロによるデータの入力検査</span><span class="sxs-lookup"><span data-stu-id="8f772-142">Validate data by using a macro</span></span>
+<span data-ttu-id="eb40a-142">マクロによるデータの入力検査</span><span class="sxs-lookup"><span data-stu-id="eb40a-142">Validate data by using a macro</span></span>
 
-<span data-ttu-id="8f772-143">次の入力検査マクロでは、"仕入先" フォームで入力された郵便番号を確認します。</span><span class="sxs-lookup"><span data-stu-id="8f772-143">The following validation macro checks the postal codes entered in a Suppliers form.</span></span> <span data-ttu-id="8f772-144">このマクロでは、" **StopMacro/マクロの中止** "、" **MessageBox/メッセージボックス** "、" **CancelEvent/イベントのキャンセル** "、および " **GoToControl/コントロールの移動** " の各アクションの使い方を示します。</span><span class="sxs-lookup"><span data-stu-id="8f772-144">It shows the use of the **StopMacro**, **MessageBox**, **CancelEvent**, and **GoToControl** actions.</span></span> <span data-ttu-id="8f772-145">条件式では、フォームのレコードに入力された都道府県と郵便番号を確認します。</span><span class="sxs-lookup"><span data-stu-id="8f772-145">A conditional expression checks the country/region and postal code entered in a record on the form.</span></span> <span data-ttu-id="8f772-146">都道府県に対して郵便番号が正しく入力されていない場合、マクロはメッセージ ボックスを表示して、レコードの保存を取り消します。</span><span class="sxs-lookup"><span data-stu-id="8f772-146">If the postal code is not in the right format for the country/region, the macro displays a message box and cancels saving the record.</span></span> <span data-ttu-id="8f772-147">これは、し、郵便番号] コントロールに戻り、エラーを修正することができます。</span><span class="sxs-lookup"><span data-stu-id="8f772-147">It then returns you to the Postal Code control, where you can correct the error.</span></span> <span data-ttu-id="8f772-148">このマクロは "仕入先" フォームの " **BeforeUpdate/更新前処理** " プロパティに設定します。</span><span class="sxs-lookup"><span data-stu-id="8f772-148">This macro should be attached to the **BeforeUpdate** property of the Suppliers form.</span></span>
+<span data-ttu-id="eb40a-143">次の入力検査マクロでは、"仕入先" フォームで入力された郵便番号を確認します。</span><span class="sxs-lookup"><span data-stu-id="eb40a-143">The following validation macro checks the postal codes entered in a Suppliers form.</span></span> <span data-ttu-id="eb40a-144">このマクロでは、" **StopMacro/マクロの中止** "、" **MessageBox/メッセージボックス** "、" **CancelEvent/イベントのキャンセル** "、および " **GoToControl/コントロールの移動** " の各アクションの使い方を示します。</span><span class="sxs-lookup"><span data-stu-id="eb40a-144">It shows the use of the **StopMacro**, **MessageBox**, **CancelEvent**, and **GoToControl** actions.</span></span> <span data-ttu-id="eb40a-145">条件式では、フォームのレコードに入力された都道府県と郵便番号を確認します。</span><span class="sxs-lookup"><span data-stu-id="eb40a-145">A conditional expression checks the country/region and postal code entered in a record on the form.</span></span> <span data-ttu-id="eb40a-146">都道府県に対して郵便番号が正しく入力されていない場合、マクロはメッセージ ボックスを表示して、レコードの保存を取り消します。</span><span class="sxs-lookup"><span data-stu-id="eb40a-146">If the postal code is not in the right format for the country/region, the macro displays a message box and cancels saving the record.</span></span> <span data-ttu-id="eb40a-147">これは、し、郵便番号] コントロールに戻り、エラーを修正することができます。</span><span class="sxs-lookup"><span data-stu-id="eb40a-147">It then returns you to the Postal Code control, where you can correct the error.</span></span> <span data-ttu-id="eb40a-148">このマクロは "仕入先" フォームの " **BeforeUpdate/更新前処理** " プロパティに設定します。</span><span class="sxs-lookup"><span data-stu-id="eb40a-148">This macro should be attached to the **BeforeUpdate** property of the Suppliers form.</span></span>
 
 <table>
 <colgroup>
@@ -106,66 +106,66 @@ ms.locfileid: "25880671"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="8f772-149">条件</span><span class="sxs-lookup"><span data-stu-id="8f772-149">Condition</span></span></p></th>
-<th><p><span data-ttu-id="8f772-150">アクション</span><span class="sxs-lookup"><span data-stu-id="8f772-150">Action</span></span></p></th>
-<th><p><span data-ttu-id="8f772-151">引数: 設定値</span><span class="sxs-lookup"><span data-stu-id="8f772-151">Arguments: Setting</span></span></p></th>
-<th><p><span data-ttu-id="8f772-152">コメント</span><span class="sxs-lookup"><span data-stu-id="8f772-152">Comment</span></span></p></th>
+<th><p><span data-ttu-id="eb40a-149">条件</span><span class="sxs-lookup"><span data-stu-id="eb40a-149">Condition</span></span></p></th>
+<th><p><span data-ttu-id="eb40a-150">アクション</span><span class="sxs-lookup"><span data-stu-id="eb40a-150">Action</span></span></p></th>
+<th><p><span data-ttu-id="eb40a-151">引数: 設定値</span><span class="sxs-lookup"><span data-stu-id="eb40a-151">Arguments: Setting</span></span></p></th>
+<th><p><span data-ttu-id="eb40a-152">コメント</span><span class="sxs-lookup"><span data-stu-id="eb40a-152">Comment</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="8f772-153">IsNull([CountryRegion])</span><span class="sxs-lookup"><span data-stu-id="8f772-153">IsNull([CountryRegion])</span></span></p></td>
-<td><p><span data-ttu-id="8f772-154">StopMacro</span><span class="sxs-lookup"><span data-stu-id="8f772-154">StopMacro</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-153">IsNull([CountryRegion])</span><span class="sxs-lookup"><span data-stu-id="eb40a-153">IsNull([CountryRegion])</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-154">StopMacro</span><span class="sxs-lookup"><span data-stu-id="eb40a-154">StopMacro</span></span></p></td>
 <td><p></p></td>
-<td><p><span data-ttu-id="8f772-155">[都道府県] が<strong>Null</strong>の場合は、郵便番号を検証できません。</span><span class="sxs-lookup"><span data-stu-id="8f772-155">If CountryRegion is <strong>Null</strong>, postal code can't be validated.</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-155">[都道府県] が<strong>Null</strong>の場合は、郵便番号を検証できません。</span><span class="sxs-lookup"><span data-stu-id="eb40a-155">If CountryRegion is <strong>Null</strong>, postal code can't be validated.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8f772-156">[都道府県](&quot;フランス&quot;、&quot;イタリア&quot;、&quot;スペイン&quot;) と Len ([郵便番号]) &lt; &gt; 5</span><span class="sxs-lookup"><span data-stu-id="8f772-156">[CountryRegion] In (&quot;France&quot;,&quot;Italy&quot;,&quot;Spain&quot;) And Len([Postal Code]) &lt;&gt; 5</span></span></p></td>
-<td><p><span data-ttu-id="8f772-157">MessageBox</span><span class="sxs-lookup"><span data-stu-id="8f772-157">MessageBox</span></span></p></td>
-<td><p><span data-ttu-id="8f772-p106">"Message/メッセージ": 郵便番号は 7 文字である必要があります。 "Beep/警告音": <strong>はい</strong> Type/メッセージの種類: <strong>情報</strong> Title/メッセージ タイトル: 郵便番号エラー  </span><span class="sxs-lookup"><span data-stu-id="8f772-p106">Message: The postal code must be 5 characters. Beep: <strong>Yes</strong> Type: <strong>Information</strong> Title: Postal Code Error</span></span></p></td>
-<td><p><span data-ttu-id="8f772-160">郵便番号が 7 文字でない場合にメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="8f772-160">If the postal code isn't 5 characters, display a message.</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-156">[都道府県](&quot;フランス&quot;、&quot;イタリア&quot;、&quot;スペイン&quot;) と Len ([郵便番号]) &lt; &gt; 5</span><span class="sxs-lookup"><span data-stu-id="eb40a-156">[CountryRegion] In (&quot;France&quot;,&quot;Italy&quot;,&quot;Spain&quot;) And Len([Postal Code]) &lt;&gt; 5</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-157">MessageBox</span><span class="sxs-lookup"><span data-stu-id="eb40a-157">MessageBox</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-p106">"Message/メッセージ": 郵便番号は 7 文字である必要があります。 "Beep/警告音": <strong>はい</strong> Type/メッセージの種類: <strong>情報</strong> Title/メッセージ タイトル: 郵便番号エラー  </span><span class="sxs-lookup"><span data-stu-id="eb40a-p106">Message: The postal code must be 5 characters. Beep: <strong>Yes</strong> Type: <strong>Information</strong> Title: Postal Code Error</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-160">郵便番号が 7 文字でない場合にメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="eb40a-160">If the postal code isn't 5 characters, display a message.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="8f772-161">...</span><span class="sxs-lookup"><span data-stu-id="8f772-161"></span></span></p></td>
-<td><p><span data-ttu-id="8f772-162">CancelEvent</span><span class="sxs-lookup"><span data-stu-id="8f772-162">CancelEvent</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-161">...</span><span class="sxs-lookup"><span data-stu-id="eb40a-161"></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-162">CancelEvent</span><span class="sxs-lookup"><span data-stu-id="eb40a-162">CancelEvent</span></span></p></td>
 <td><p></p></td>
-<td><p><span data-ttu-id="8f772-163">イベントを取り消します。</span><span class="sxs-lookup"><span data-stu-id="8f772-163">Cancel the event.</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-163">イベントを取り消します。</span><span class="sxs-lookup"><span data-stu-id="eb40a-163">Cancel the event.</span></span></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
-<td><p><span data-ttu-id="8f772-164">GoToControl</span><span class="sxs-lookup"><span data-stu-id="8f772-164">GoToControl</span></span></p></td>
-<td><p><span data-ttu-id="8f772-165">"Control Name/コントロール名": 郵便番号</span><span class="sxs-lookup"><span data-stu-id="8f772-165">Control Name: PostalCode</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-164">GoToControl</span><span class="sxs-lookup"><span data-stu-id="eb40a-164">GoToControl</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-165">"Control Name/コントロール名": 郵便番号</span><span class="sxs-lookup"><span data-stu-id="eb40a-165">Control Name: PostalCode</span></span></p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="8f772-166">[都道府県](&quot;オーストラリア&quot;、&quot;シンガポール&quot;) と Len ([郵便番号]) &lt; &gt; 4</span><span class="sxs-lookup"><span data-stu-id="8f772-166">[CountryRegion] In (&quot;Australia&quot;,&quot;Singapore&quot;) And Len([Postal Code]) &lt;&gt; 4</span></span></p></td>
-<td><p><span data-ttu-id="8f772-167">MessageBox</span><span class="sxs-lookup"><span data-stu-id="8f772-167">MessageBox</span></span></p></td>
-<td><p><span data-ttu-id="8f772-p107">"Message/メッセージ": 郵便番号は 7 文字である必要があります。 "Beep/警告音": <strong>はい</strong> Type/メッセージの種類: <strong>情報</strong> Title/メッセージ タイトル: 郵便番号エラー  </span><span class="sxs-lookup"><span data-stu-id="8f772-p107">Message: The postal code must be 4 characters. Beep: <strong>Yes</strong> Type: <strong>Information</strong> Title: Postal Code Error</span></span></p></td>
-<td><p><span data-ttu-id="8f772-170">郵便番号が 7 文字でない場合にメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="8f772-170">If the postal code isn't 4 characters, display a message.</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-166">[都道府県](&quot;オーストラリア&quot;、&quot;シンガポール&quot;) と Len ([郵便番号]) &lt; &gt; 4</span><span class="sxs-lookup"><span data-stu-id="eb40a-166">[CountryRegion] In (&quot;Australia&quot;,&quot;Singapore&quot;) And Len([Postal Code]) &lt;&gt; 4</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-167">MessageBox</span><span class="sxs-lookup"><span data-stu-id="eb40a-167">MessageBox</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-p107">"Message/メッセージ": 郵便番号は 7 文字である必要があります。 "Beep/警告音": <strong>はい</strong> Type/メッセージの種類: <strong>情報</strong> Title/メッセージ タイトル: 郵便番号エラー  </span><span class="sxs-lookup"><span data-stu-id="eb40a-p107">Message: The postal code must be 4 characters. Beep: <strong>Yes</strong> Type: <strong>Information</strong> Title: Postal Code Error</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-170">郵便番号が 7 文字でない場合にメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="eb40a-170">If the postal code isn't 4 characters, display a message.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8f772-171">...</span><span class="sxs-lookup"><span data-stu-id="8f772-171"></span></span></p></td>
-<td><p><span data-ttu-id="8f772-172">CancelEvent</span><span class="sxs-lookup"><span data-stu-id="8f772-172">CancelEvent</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-171">...</span><span class="sxs-lookup"><span data-stu-id="eb40a-171"></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-172">CancelEvent</span><span class="sxs-lookup"><span data-stu-id="eb40a-172">CancelEvent</span></span></p></td>
 <td><p></p></td>
-<td><p><span data-ttu-id="8f772-173">イベントを取り消します。</span><span class="sxs-lookup"><span data-stu-id="8f772-173">Cancel the event.</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-173">イベントを取り消します。</span><span class="sxs-lookup"><span data-stu-id="eb40a-173">Cancel the event.</span></span></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
-<td><p><span data-ttu-id="8f772-174">GoToControl</span><span class="sxs-lookup"><span data-stu-id="8f772-174">GoToControl</span></span></p></td>
-<td><p><span data-ttu-id="8f772-175">"Control Name/コントロール名": 郵便番号</span><span class="sxs-lookup"><span data-stu-id="8f772-175">Control Name: PostalCode</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-174">GoToControl</span><span class="sxs-lookup"><span data-stu-id="eb40a-174">GoToControl</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-175">"Control Name/コントロール名": 郵便番号</span><span class="sxs-lookup"><span data-stu-id="eb40a-175">Control Name: PostalCode</span></span></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8f772-176">([都道府県] =&quot;カナダ&quot;)([郵便番号] が気に入らない&quot;[A-Z] [0-9] [A-Z] [0-9] [A-Z] [0-9]&quot;)</span><span class="sxs-lookup"><span data-stu-id="8f772-176">([CountryRegion] = &quot;Canada&quot;) And ([Postal Code] Not Like&quot;[A-Z][0-9][A-Z] [0-9][A-Z][0-9]&quot;)</span></span></p></td>
-<td><p><span data-ttu-id="8f772-177">MessageBox</span><span class="sxs-lookup"><span data-stu-id="8f772-177">MessageBox</span></span></p></td>
-<td><p><span data-ttu-id="8f772-p108">"Message/メッセージ": 郵便番号が無効です。たとえば、広島県の郵便番号の上 3 桁は 720 ～ 739 です。 Beep/警告音: <strong>はい</strong> Type/メッセージの種類: <strong>情報</strong> Title/メッセージ タイトル: 郵便番号エラー  </span><span class="sxs-lookup"><span data-stu-id="8f772-p108">Message: The postal code is not valid. Example of Canadian code: H1J 1C3 Beep: <strong>Yes</strong> Type: <strong>Information</strong> Title: Postal Code Error</span></span></p></td>
-<td><p><span data-ttu-id="8f772-p109">[都道府県] が広島県で、郵便番号の上 3 桁が 720 ～ 739 でない場合にメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="8f772-p109">If the postal code isn't correct for Canada, display a message. (Example of Canadian code: H1J 1C3)</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-176">([都道府県] =&quot;カナダ&quot;)([郵便番号] が気に入らない&quot;[A-Z] [0-9] [A-Z] [0-9] [A-Z] [0-9]&quot;)</span><span class="sxs-lookup"><span data-stu-id="eb40a-176">([CountryRegion] = &quot;Canada&quot;) And ([Postal Code] Not Like&quot;[A-Z][0-9][A-Z] [0-9][A-Z][0-9]&quot;)</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-177">MessageBox</span><span class="sxs-lookup"><span data-stu-id="eb40a-177">MessageBox</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-p108">"Message/メッセージ": 郵便番号が無効です。たとえば、広島県の郵便番号の上 3 桁は 720 ～ 739 です。 Beep/警告音: <strong>はい</strong> Type/メッセージの種類: <strong>情報</strong> Title/メッセージ タイトル: 郵便番号エラー  </span><span class="sxs-lookup"><span data-stu-id="eb40a-p108">Message: The postal code is not valid. Example of Canadian code: H1J 1C3 Beep: <strong>Yes</strong> Type: <strong>Information</strong> Title: Postal Code Error</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-p109">[都道府県] が広島県で、郵便番号の上 3 桁が 720 ～ 739 でない場合にメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="eb40a-p109">If the postal code isn't correct for Canada, display a message. (Example of Canadian code: H1J 1C3)</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="8f772-182">...</span><span class="sxs-lookup"><span data-stu-id="8f772-182"></span></span></p></td>
-<td><p><span data-ttu-id="8f772-183">CancelEvent</span><span class="sxs-lookup"><span data-stu-id="8f772-183">CancelEvent</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-182">...</span><span class="sxs-lookup"><span data-stu-id="eb40a-182"></span></span></p></td>
+<td><p><span data-ttu-id="eb40a-183">CancelEvent</span><span class="sxs-lookup"><span data-stu-id="eb40a-183">CancelEvent</span></span></p></td>
 <td><p></p></td>
-<td><p><span data-ttu-id="8f772-184">イベントを取り消します。</span><span class="sxs-lookup"><span data-stu-id="8f772-184">Cancel the event.</span></span></p></td>
+<td><p><span data-ttu-id="eb40a-184">イベントを取り消します。</span><span class="sxs-lookup"><span data-stu-id="eb40a-184">Cancel the event.</span></span></p></td>
 </tr>
 </tbody>
 </table>

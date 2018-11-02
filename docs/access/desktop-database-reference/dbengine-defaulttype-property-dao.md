@@ -10,33 +10,33 @@ f1_keywords:
 - dao360.chm1053580
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f0fa2fb5ba12b1537994a4d6df88406db38bfec4
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: ec8dbc1e758b19c15c1a08b9936fa3c00acabde6
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25870927"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25925660"
 ---
-# <a name="dbenginedefaulttype-property-dao"></a><span data-ttu-id="5cfa4-102">DBEngine.DefaultType プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="5cfa4-102">DBEngine.DefaultType Property (DAO)</span></span>
+# <a name="dbenginedefaulttype-property-dao"></a><span data-ttu-id="110a7-102">DBEngine.DefaultType プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="110a7-102">DBEngine.DefaultType property (DAO)</span></span>
 
 
-<span data-ttu-id="5cfa4-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="5cfa4-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="110a7-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="110a7-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="5cfa4-104">次に作成される **[Workspace](workspace-object-dao.md)** オブジェクトが使用するワークスペースの種類を示す値を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="5cfa4-104">Sets or returns a value that indicates what type of workspace will be used by the next **[Workspace](workspace-object-dao.md)** object created.</span></span>
+<span data-ttu-id="110a7-104">次に作成される **[Workspace](workspace-object-dao.md)** オブジェクトが使用するワークスペースの種類を示す値を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="110a7-104">Sets or returns a value that indicates what type of workspace will be used by the next **[Workspace](workspace-object-dao.md)** object created.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="5cfa4-105">構文</span><span class="sxs-lookup"><span data-stu-id="5cfa4-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="110a7-105">構文</span><span class="sxs-lookup"><span data-stu-id="110a7-105">Syntax</span></span>
 
-<span data-ttu-id="5cfa4-106">*式*です。DefaultType</span><span class="sxs-lookup"><span data-stu-id="5cfa4-106">*expression* .DefaultType</span></span>
+<span data-ttu-id="110a7-106">*式*です。DefaultType</span><span class="sxs-lookup"><span data-stu-id="110a7-106">*expression* .DefaultType</span></span>
 
-<span data-ttu-id="5cfa4-107">\*式\***DBEngine**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="5cfa4-107">*expression* A variable that represents a **DBEngine** object.</span></span>
+<span data-ttu-id="110a7-107">\*式\***DBEngine**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="110a7-107">*expression* A variable that represents a **DBEngine** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="5cfa4-108">注釈</span><span class="sxs-lookup"><span data-stu-id="5cfa4-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="110a7-108">注釈</span><span class="sxs-lookup"><span data-stu-id="110a7-108">Remarks</span></span>
 
-<span data-ttu-id="5cfa4-109">設定値または戻り値は、 **[WorkspaceTypeEnum](workspacetypeenum-enumeration-dao.md)** クラスの定数のいずれかです。</span><span class="sxs-lookup"><span data-stu-id="5cfa4-109">The setting or return value can be one of the of the **[WorkspaceTypeEnum](workspacetypeenum-enumeration-dao.md)** constants.</span></span>
+<span data-ttu-id="110a7-109">設定値または戻り値は、 **[WorkspaceTypeEnum](workspacetypeenum-enumeration-dao.md)** クラスの定数のいずれかです。</span><span class="sxs-lookup"><span data-stu-id="110a7-109">The setting or return value can be one of the of the **[WorkspaceTypeEnum](workspacetypeenum-enumeration-dao.md)** constants.</span></span>
 
 
 > [!NOTE]
-> <span data-ttu-id="5cfa4-p101">[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</span><span class="sxs-lookup"><span data-stu-id="5cfa4-p101">ODBCDirect workspaces are not supported in Microsoft Access 2013. Use ADO if you want to access external data sources without using the Microsoft Access database engine.</span></span>
+> <span data-ttu-id="110a7-p101">[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</span><span class="sxs-lookup"><span data-stu-id="110a7-p101">ODBCDirect workspaces are not supported in Microsoft Access 2013. Use ADO if you want to access external data sources without using the Microsoft Access database engine.</span></span>
 
-<span data-ttu-id="5cfa4-112">**[CreateWorkspace](dbengine-createworkspace-method-dao.md)** メソッドに型引数を設定することによって、1 つの**ワークスペース**の設定をオーバーライドできます。</span><span class="sxs-lookup"><span data-stu-id="5cfa4-112">The setting can be overridden for a single **Workspace** by setting the type argument to the **[CreateWorkspace](dbengine-createworkspace-method-dao.md)** method.</span></span>
+<span data-ttu-id="110a7-112">**[CreateWorkspace](dbengine-createworkspace-method-dao.md)** メソッドに型引数を設定することによって、1 つの**ワークスペース**の設定をオーバーライドできます。</span><span class="sxs-lookup"><span data-stu-id="110a7-112">The setting can be overridden for a single **Workspace** by setting the type argument to the **[CreateWorkspace](dbengine-createworkspace-method-dao.md)** method.</span></span>
 
