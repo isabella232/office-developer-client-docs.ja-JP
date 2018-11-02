@@ -1,19 +1,19 @@
 ---
-title: "'LogEvent/イベントのログ記録' マクロ アクション"
-TOCTitle: LogEvent Macro Action
+title: LogEvent マクロ アクション
+TOCTitle: LogEvent macro action
 ms:assetid: 3578c725-64b9-385e-ef73-a15cdf751c33
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192460(v=office.15)
 ms:contentKeyID: 48544148
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 093313028822bebea26fbf86dfc94063e5512e14
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: fa036f73dd4c811191c9d5ba83a6d2fc65a54827
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25873377"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25918976"
 ---
-# <a name="logevent-macro-action"></a>"LogEvent/イベントのログ記録" マクロ アクション
+# <a name="logevent-macro-action"></a>LogEvent マクロ アクション
 
 
 **適用されます**Access 2013、Office 2013。

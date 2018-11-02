@@ -1,19 +1,19 @@
 ---
-title: Workspaces コレクション (DAO)
+title: ワークスぺース コレクション (DAO)
 TOCTitle: Workspaces Collection
 ms:assetid: 88b851ce-4180-964f-582e-bc9571bf554c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197057(v=office.15)
 ms:contentKeyID: 48546142
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4108be7d6c1b2ee66ec5cddf4d26599796bf844c
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 7ac9bfe5d1002318b12faa115ea546324ee3e766
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25870269"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25926928"
 ---
-# <a name="workspaces-collection-dao"></a>Workspaces コレクション (DAO)
+# <a name="workspaces-collection-dao"></a>ワークスぺース コレクション (DAO)
 
 
 **適用されます**Access 2013、Office 2013。

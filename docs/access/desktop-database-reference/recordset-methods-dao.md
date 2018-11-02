@@ -1,19 +1,19 @@
 ---
-title: Recordset メソッド (DAO)
+title: Recordset のメソッド (DAO)
 TOCTitle: Methods
 ms:assetid: 8b713eda-b076-4190-b2f5-ff1ce522e2bf
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn125237(v=office.15)
 ms:contentKeyID: 52073361
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ac41f8f0db13e4972ffa5a787e5d63fa0bb1af59
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 696d3fe0d1b9bf67df3f12608f4bd7ba560d0dae
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880363"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25920754"
 ---
-# <a name="recordset-methods-dao"></a>Recordset メソッド (DAO)
+# <a name="recordset-methods-dao"></a>Recordset のメソッド (DAO)
 
 
 **適用されます**Access 2013、Office 2013。
@@ -40,7 +40,7 @@ ms.locfileid: "25880363"
 
   - [Recordset.FindFirst メソッド (DAO)](recordset-findfirst-method-dao.md)
 
-  - [Recordset.FindLast Method (DAO)](recordset-findlast-method-dao.md)
+  - [Recordset.FindLast メソッド (DAO)](recordset-findlast-method-dao.md)
 
   - [Recordset.FindNext メソッド (DAO)](recordset-findnext-method-dao.md)
 

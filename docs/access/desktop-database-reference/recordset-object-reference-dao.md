@@ -1,30 +1,24 @@
 ---
-title: Recordset オブジェクト参照 (DAO)
+title: レコード セット オブジェクト (DAO) の参照
 TOCTitle: Recordset Object
 ms:assetid: df418993-1f2b-457d-b6c0-3d292456b270
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn125824(v=office.15)
 ms:contentKeyID: 52074696
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b1f226c4b20ecb1d8e8e0ab48ea4385ca3c1912b
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 6968bac37225e4a29d8ab5302a81e1ca2a48c1df
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25885165"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25920348"
 ---
-# <a name="recordset-object-reference-dao"></a>Recordset オブジェクト参照 (DAO)
-
+# <a name="recordset-object-reference-dao"></a>レコード セット オブジェクト (DAO) の参照
 
 **適用されます**Access 2013、Office 2013。
 
-
-
-  - [Recordset オブジェクト (DAO)](recordset-object-dao.md)
-
-  - [Recordset メンバー (DAO)](recordset-members-dao.md)
-
-  - [Recordset プロパティ (DAO)](recordset-properties-dao.md)
-
-  - [Recordset メソッド (DAO)](recordset-methods-dao.md)
+- [レコード セット オブジェクト (DAO)](recordset-object-dao.md)
+- [レコード セットのメンバー (DAO)](recordset-members-dao.md)
+- [(DAO) レコード セットのプロパティ](recordset-properties-dao.md)
+- [Recordset のメソッド (DAO)](recordset-methods-dao.md)
 

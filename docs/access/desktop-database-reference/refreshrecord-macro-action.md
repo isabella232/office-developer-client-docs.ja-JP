@@ -1,6 +1,6 @@
 ---
-title: "'RefreshRecord/レコードの更新' マクロ アクション"
-TOCTitle: RefreshRecord Macro Action
+title: RefreshRecord マクロ アクション
+TOCTitle: RefreshRecord macro action
 ms:assetid: 68c90d7d-f59c-9e83-bc30-8f37cf5a3696
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195261(v=office.15)
 ms:contentKeyID: 48545396
@@ -10,14 +10,14 @@ f1_keywords:
 - vbaac10.chm62122
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 65f972f2ec50212685897d496fd072c7d3f57968
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 4b7ec534579b070d342fe2efd80af44e2ea921ef
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25876023"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25927271"
 ---
-# <a name="refreshrecord-macro-action"></a>"RefreshRecord/レコードの更新" マクロ アクション
+# <a name="refreshrecord-macro-action"></a>RefreshRecord マクロ アクション
 
 
 **適用されます**Access 2013、Office 2013。

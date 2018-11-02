@@ -1,19 +1,19 @@
 ---
-title: "'RaiseError/エラーの生成' マクロ アクション"
-TOCTitle: RaiseError Macro Action
+title: RaiseError マクロ アクション
+TOCTitle: RaiseError macro action
 ms:assetid: c8c57685-b373-67d6-cea6-8f2c334547d3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff823192(v=office.15)
 ms:contentKeyID: 48547661
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e7cddb3ace4027c2dba45fd685fbf16bd57b783e
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: e3e778c8dce83ecad32328f0d7ad762d9f825a6d
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25887342"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25919781"
 ---
-# <a name="raiseerror-macro-action"></a>"RaiseError/エラーの生成" マクロ アクション
+# <a name="raiseerror-macro-action"></a>RaiseError マクロ アクション
 
 **適用されます**Access 2013、Office 2013。 
 

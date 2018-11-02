@@ -1,26 +1,22 @@
 ---
-title: Groups コレクション (ADOX) リファレンス
-TOCTitle: Groups Collection (ADOX)
+title: グループのコレクション (ADOX) 参照
+TOCTitle: Groups collection (ADOX)
 ms:assetid: 99fc8913-b6f9-4df9-9583-ff459e894152
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249693(v=office.15)
 ms:contentKeyID: 48546527
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8882191ab689282e77c7dbafb2e738a8e74c4bab
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 310e09c69e789c4ad8ed089a8cbfa0884eb0d9c9
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25885053"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25927141"
 ---
-# <a name="groups-collection-adox-reference"></a>Groups コレクション (ADOX) リファレンス
-
+# <a name="groups-collection-adox-reference"></a>グループのコレクション (ADOX) 参照
 
 **適用されます**Access 2013、Office 2013。
 
-
-
-  - [Groups コレクション (ADOX)](groups-collection-adox.md)
-
-  - [Groups コレクションのプロパティ、メソッド、およびイベント (ADOX)](groups-collection-properties-methods-and-events-adox.md)
+- [Groups コレクション (ADOX)](groups-collection-adox.md)
+- [Groups コレクションのプロパティ、メソッド、およびイベント (ADOX)](groups-collection-properties-methods-and-events-adox.md)
 

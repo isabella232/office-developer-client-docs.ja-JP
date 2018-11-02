@@ -1,24 +1,21 @@
 ---
-title: データ入力操作
-TOCTitle: Data Entry Operations
+title: データ エントリの操作
+TOCTitle: Data Entry operations
 ms:assetid: fb8b4ffe-affa-432c-9ba4-a6b1bc42a58b
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn180201(v=office.15)
 ms:contentKeyID: 52075150
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4d7304fef98b784c7d55d1e89cefc326af0675b5
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: c31b150d954568391e8ae2dbb7435603e019e32e
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25886768"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25926767"
 ---
-# <a name="data-entry-operations"></a>データ入力操作
-
+# <a name="data-entry-operations"></a>データ エントリの操作
 
 **適用されます**Access 2013、Office 2013。
 
-
-
-  - ["DeleteRecord/レコードの削除" マクロ アクション](deleterecord-macro-action.md)
+- [関係するマクロ アクション](deleterecord-macro-action.md)
 

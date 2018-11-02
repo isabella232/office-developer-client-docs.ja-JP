@@ -1,6 +1,6 @@
 ---
 title: Before Delete マクロ イベント
-TOCTitle: Before Delete Macro Event
+TOCTitle: Before Delete macro event
 ms:assetid: 1a8d3457-5c59-d13e-ada9-6ecd33dfd5b3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845672(v=office.15)
 ms:contentKeyID: 48543520
@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm186077
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 0ee4878a742454eb1b02f4b9a45c14ad79097c46
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 8a2757b062efe022734c674f4c59f994f1c15692
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25876261"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25920257"
 ---
 # <a name="before-delete-macro-event"></a>Before Delete マクロ イベント
 
@@ -70,11 +70,11 @@ ms.locfileid: "25876261"
 </tr>
 <tr class="even">
 <td><p>データ ブロック</p></td>
-<td><p><a href="lookuprecord-data-block.md">不一致のマクロ アクション</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">マクロ アクションの不一致</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>データ アクション</p></td>
-<td><p><a href="clearmacroerror-macro-action.md">"ClearMacroError/マクロエラーのクリア" マクロ アクション</a></p></td>
+<td><p><a href="clearmacroerror-macro-action.md">ClearMacroError マクロ アクション</a></p></td>
 </tr>
 <tr class="even">
 <td><p>データ アクション</p></td>
@@ -82,11 +82,11 @@ ms.locfileid: "25876261"
 </tr>
 <tr class="odd">
 <td><p>データ アクション</p></td>
-<td><p><a href="raiseerror-macro-action.md">"RaiseError/エラーの生成" マクロ アクション</a></p></td>
+<td><p><a href="raiseerror-macro-action.md">RaiseError マクロ アクション</a></p></td>
 </tr>
 <tr class="even">
 <td><p>データ アクション</p></td>
-<td><p><a href="setlocalvar-macro-action.md">"SetLocalVar/ローカル変数の設定" マクロ アクション</a></p></td>
+<td><p><a href="setlocalvar-macro-action.md">SetLocalVar マクロ アクション</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>データ アクション</p></td>

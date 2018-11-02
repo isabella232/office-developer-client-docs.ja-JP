@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff198019(v=office.15)
 ms:contentKeyID: 48546560
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c85be857f7a7ed100e68f77f954b3d7513449fa5
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 5aea96ca6293583eaae8b6b1b8c913f1956c3919
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25870213"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25919823"
 ---
 # <a name="recordset2restartable-property-dao"></a>Recordset2.Restartable プロパティ (DAO)
 

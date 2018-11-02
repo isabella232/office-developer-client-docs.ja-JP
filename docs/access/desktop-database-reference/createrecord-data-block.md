@@ -1,17 +1,17 @@
 ---
 title: CreateRecord データ ブロック
-TOCTitle: CreateRecord Data Block
+TOCTitle: CreateRecord data block
 ms:assetid: e18f47f8-2aad-9a14-ad63-ab603a4d5b07
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835671(v=office.15)
 ms:contentKeyID: 48548263
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bda30265cbcf2377114734d03b16f889b0d165b7
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 69656b6ab65cef0e2dfec01a338dfc5a70752de3
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880818"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25922098"
 ---
 # <a name="createrecord-data-block"></a>CreateRecord データ ブロック
 
@@ -67,7 +67,7 @@ ms.locfileid: "25880818"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="cancelrecordchange-macro-action.md">"CancelRecordChange/レコードの変更の取り消し" マクロ アクション</a></p></td>
+<td><p><a href="cancelrecordchange-macro-action.md">CancelRecordChange マクロ アクション</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="comment-macro-statement.md">Comment マクロ ステートメント</a></p></td>
@@ -79,10 +79,10 @@ ms.locfileid: "25880818"
 <td><p><a href="if-then-else-macro-block.md">もし。。。そうしたら。。。マクロ ステートメントはその他</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="setfield-macro-action.md">"SetField/フィールドの設定" マクロ アクション</a></p></td>
+<td><p><a href="setfield-macro-action.md">SetField マクロ アクション</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="setlocalvar-macro-action.md">"SetLocalVar/ローカル変数の設定" マクロ アクション</a></p></td>
+<td><p><a href="setlocalvar-macro-action.md">SetLocalVar マクロ アクション</a></p></td>
 </tr>
 </tbody>
 </table>
