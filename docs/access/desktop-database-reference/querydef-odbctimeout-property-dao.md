@@ -10,37 +10,37 @@ f1_keywords:
 - dao360.chm1053052
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c335140e6b5bfa46d25d20438d8af2a9e1393644
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: ceb3cf0fa2e16af4df23c6511fd6d1421487a409
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25873671"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25922756"
 ---
-# <a name="querydefodbctimeout-property-dao"></a><span data-ttu-id="93142-102">QueryDef.ODBCTimeout プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="93142-102">QueryDef.ODBCTimeout Property (DAO)</span></span>
+# <a name="querydefodbctimeout-property-dao"></a><span data-ttu-id="30305-102">QueryDef.ODBCTimeout プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="30305-102">QueryDef.ODBCTimeout property (DAO)</span></span>
 
 
-<span data-ttu-id="93142-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="93142-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="30305-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="30305-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="93142-104">ODBC データベースに対して **[QueryDef](querydef-object-dao.md)** を実行したときに、タイムアウト エラーが発生するまでの待ち時間を秒単位で示します。</span><span class="sxs-lookup"><span data-stu-id="93142-104">Indicates the number of seconds to wait before a timeout error occurs when a **[QueryDef](querydef-object-dao.md)** is executed on an ODBC database.</span></span>
+<span data-ttu-id="30305-104">ODBC データベースに対して **[QueryDef](querydef-object-dao.md)** を実行したときに、タイムアウト エラーが発生するまでの待ち時間を秒単位で示します。</span><span class="sxs-lookup"><span data-stu-id="30305-104">Indicates the number of seconds to wait before a timeout error occurs when a **[QueryDef](querydef-object-dao.md)** is executed on an ODBC database.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="93142-105">構文</span><span class="sxs-lookup"><span data-stu-id="93142-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="30305-105">構文</span><span class="sxs-lookup"><span data-stu-id="30305-105">Syntax</span></span>
 
-<span data-ttu-id="93142-106">*式*です。補足</span><span class="sxs-lookup"><span data-stu-id="93142-106">*expression* .ODBCTimeout</span></span>
+<span data-ttu-id="30305-106">*式*です。補足</span><span class="sxs-lookup"><span data-stu-id="30305-106">*expression* .ODBCTimeout</span></span>
 
-<span data-ttu-id="93142-107">\*式\***クエリ定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="93142-107">*expression* A variable that represents a **QueryDef** object.</span></span>
+<span data-ttu-id="30305-107">\*式\***クエリ定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="30305-107">*expression* A variable that represents a **QueryDef** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="93142-108">注釈</span><span class="sxs-lookup"><span data-stu-id="93142-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="30305-108">注釈</span><span class="sxs-lookup"><span data-stu-id="30305-108">Remarks</span></span>
 
-<span data-ttu-id="93142-p101">**ODBCTimeout** プロパティを -1 に設定すると、タイムアウトの既定値は、 [QueryDef](database-querytimeout-property-dao.md) オブジェクトに含まれている [**Connection**](connection-object-dao.md) オブジェクトまたは [**Database**](database-object-dao.md) オブジェクトの \*\*\*\*QueryTimeout\*\*\*\* プロパティに現在設定されている値になります。 **ODBCTimeout** プロパティを 0 に設定すると、タイムアウト エラーは発生しません。</span><span class="sxs-lookup"><span data-stu-id="93142-p101">When the **ODBCTimeout** property is set to -1, the timeout defaults to the current setting of the **[QueryTimeout](database-querytimeout-property-dao.md)** property of the **[Connection](connection-object-dao.md)** or **[Database](database-object-dao.md)** object that contains the **QueryDef**. When the **ODBCTimeout** property is set to 0, no timeout error occurs.</span></span>
+<span data-ttu-id="30305-p101">**ODBCTimeout** プロパティを -1 に設定すると、タイムアウトの既定値は、 [QueryDef](database-querytimeout-property-dao.md) オブジェクトに含まれている [**Connection**](connection-object-dao.md) オブジェクトまたは [**Database**](database-object-dao.md) オブジェクトの \*\*\*\*QueryTimeout\*\*\*\* プロパティに現在設定されている値になります。 **ODBCTimeout** プロパティを 0 に設定すると、タイムアウト エラーは発生しません。</span><span class="sxs-lookup"><span data-stu-id="30305-p101">When the **ODBCTimeout** property is set to -1, the timeout defaults to the current setting of the **[QueryTimeout](database-querytimeout-property-dao.md)** property of the **[Connection](connection-object-dao.md)** or **[Database](database-object-dao.md)** object that contains the **QueryDef**. When the **ODBCTimeout** property is set to 0, no timeout error occurs.</span></span>
 
-<span data-ttu-id="93142-p102">Microsoft SQL Server などの ODBC データベースを使用している場合、ネットワーク トラフィックや ODBC サーバーに対する負荷の増大のために、遅延が発生することがあります。無限に待機しないように、エラーが返されるまでの待ち時間を指定できます。</span><span class="sxs-lookup"><span data-stu-id="93142-p102">When you're using an ODBC database, such as Microsoft SQL Server, delays can occur because of network traffic or heavy use of the ODBC server. Rather than waiting indefinitely, you can specify how long to wait before returning an error.</span></span>
+<span data-ttu-id="30305-p102">Microsoft SQL Server などの ODBC データベースを使用している場合、ネットワーク トラフィックや ODBC サーバーに対する負荷の増大のために、遅延が発生することがあります。無限に待機しないように、エラーが返されるまでの待ち時間を指定できます。</span><span class="sxs-lookup"><span data-stu-id="30305-p102">When you're using an ODBC database, such as Microsoft SQL Server, delays can occur because of network traffic or heavy use of the ODBC server. Rather than waiting indefinitely, you can specify how long to wait before returning an error.</span></span>
 
-<span data-ttu-id="93142-113">**QueryDef** オブジェクトの **ODBCTimeout** プロパティの設定値は、 **QueryDef** オブジェクトに含まれている **Connection** オブジェクトまたは **Database** オブジェクトの **QueryTimeout** プロパティで指定される値より優先されますが、これはその **QueryDef** オブジェクトに対してのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="93142-113">Setting the **ODBCTimeout** property of a **QueryDef** object overrides the value specified by the **QueryTimeout** property of the **Connection** or **Database** object containing the **QueryDef**, but only for that **QueryDef** object.</span></span>
+<span data-ttu-id="30305-113">**QueryDef** オブジェクトの **ODBCTimeout** プロパティの設定値は、 **QueryDef** オブジェクトに含まれている **Connection** オブジェクトまたは **Database** オブジェクトの **QueryTimeout** プロパティで指定される値より優先されますが、これはその **QueryDef** オブジェクトに対してのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="30305-113">Setting the **ODBCTimeout** property of a **QueryDef** object overrides the value specified by the **QueryTimeout** property of the **Connection** or **Database** object containing the **QueryDef**, but only for that **QueryDef** object.</span></span>
 
-## <a name="example"></a><span data-ttu-id="93142-114">例</span><span class="sxs-lookup"><span data-stu-id="93142-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="30305-114">例</span><span class="sxs-lookup"><span data-stu-id="30305-114">Example</span></span>
 
-<span data-ttu-id="93142-115">この例では、 **ODBCTimeout** プロパティおよび **QueryTimeout** プロパティを使用して、 **Database** オブジェクトの **QueryTimeout** プロパティで、 **Database** オブジェクトから作成された **QueryDef** オブジェクトの **ODBCTimeout** プロパティの既定値を設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="93142-115">This example uses the **ODBCTimeout** and **QueryTimeout** properties to show how the **QueryTimeout** setting on a **Database** object sets the default **ODBCTimeout** setting on any **QueryDef** objects created from the **Database** object.</span></span>
+<span data-ttu-id="30305-115">この例では、 **ODBCTimeout** プロパティおよび **QueryTimeout** プロパティを使用して、 **Database** オブジェクトの **QueryTimeout** プロパティで、 **Database** オブジェクトから作成された **QueryDef** オブジェクトの **ODBCTimeout** プロパティの既定値を設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="30305-115">This example uses the **ODBCTimeout** and **QueryTimeout** properties to show how the **QueryTimeout** setting on a **Database** object sets the default **ODBCTimeout** setting on any **QueryDef** objects created from the **Database** object.</span></span>
 
 ```vb 
 Sub ODBCTimeoutX() 

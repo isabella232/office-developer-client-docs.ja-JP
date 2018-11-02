@@ -1,6 +1,6 @@
 ---
-title: "'OpenView/ビューを開く' マクロ アクション"
-TOCTitle: OpenView Macro Action
+title: OpenView マクロ アクション
+TOCTitle: OpenView macro action
 ms:assetid: 4d3b7e6d-4b81-4fbe-7222-24d745350321
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193569(v=office.15)
 ms:contentKeyID: 48544726
@@ -10,29 +10,29 @@ f1_keywords:
 - vbaac10.chm50135
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: ee0a46e909c86534693638de98f42980bccfebba
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 50346ce66d32d91a4f902adbb5600438d214e1fb
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25870171"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25921328"
 ---
-# <a name="openview-macro-action"></a><span data-ttu-id="f7d97-102">"OpenView/ビューを開く" マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="f7d97-102">OpenView Macro Action</span></span>
+# <a name="openview-macro-action"></a><span data-ttu-id="75737-102">OpenView マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="75737-102">OpenView macro action</span></span>
 
 
-<span data-ttu-id="f7d97-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f7d97-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="75737-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="75737-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f7d97-104">Access プロジェクトで、 **OpenView**アクションをデータシート ビュー、デザイン ビュー、または印刷プレビューでビューを開くに使用できます。</span><span class="sxs-lookup"><span data-stu-id="f7d97-104">In an Access project, you can use the **OpenView** action to open a view in Datasheet view, Design view, or Print Preview.</span></span> <span data-ttu-id="f7d97-105">データシート ビューで開いた場合、その名前のビューが実行されます。</span><span class="sxs-lookup"><span data-stu-id="f7d97-105">This action runs the named view when opened in Datasheet view.</span></span> <span data-ttu-id="f7d97-106">ビューを開くときのデータ入力モードの設定を行ったり、ビューで表示するレコードを制限したりできます。</span><span class="sxs-lookup"><span data-stu-id="f7d97-106">You can select data entry for the view and restrict the records that the view displays.</span></span>
+<span data-ttu-id="75737-104">Access プロジェクトで、 **OpenView**アクションをデータシート ビュー、デザイン ビュー、または印刷プレビューでビューを開くに使用できます。</span><span class="sxs-lookup"><span data-stu-id="75737-104">In an Access project, you can use the **OpenView** action to open a view in Datasheet view, Design view, or Print Preview.</span></span> <span data-ttu-id="75737-105">データシート ビューで開いた場合、その名前のビューが実行されます。</span><span class="sxs-lookup"><span data-stu-id="75737-105">This action runs the named view when opened in Datasheet view.</span></span> <span data-ttu-id="75737-106">ビューを開くときのデータ入力モードの設定を行ったり、ビューで表示するレコードを制限したりできます。</span><span class="sxs-lookup"><span data-stu-id="75737-106">You can select data entry for the view and restrict the records that the view displays.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="f7d97-p102">[!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7d97-p102">This action will not be allowed if the database is not trusted. For more information about enabling macros, see the links in the See Also section of this article.</span></span></P>
+> <P><span data-ttu-id="75737-p102">[!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。</span><span class="sxs-lookup"><span data-stu-id="75737-p102">This action will not be allowed if the database is not trusted. For more information about enabling macros, see the links in the See Also section of this article.</span></span></P>
 
 
 
-## <a name="setting"></a><span data-ttu-id="f7d97-109">設定値</span><span class="sxs-lookup"><span data-stu-id="f7d97-109">Setting</span></span>
+## <a name="setting"></a><span data-ttu-id="75737-109">設定値</span><span class="sxs-lookup"><span data-stu-id="75737-109">Setting</span></span>
 
-<span data-ttu-id="f7d97-110">**OpenView**アクションには、次の引数があります。</span><span class="sxs-lookup"><span data-stu-id="f7d97-110">The **OpenView** action has the following arguments.</span></span>
+<span data-ttu-id="75737-110">**OpenView**アクションには、次の引数があります。</span><span class="sxs-lookup"><span data-stu-id="75737-110">The **OpenView** action has the following arguments.</span></span>
 
 <table>
 <colgroup>
@@ -41,36 +41,36 @@ ms.locfileid: "25870171"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="f7d97-111">アクションの引数</span><span class="sxs-lookup"><span data-stu-id="f7d97-111">Action argument</span></span></p></th>
-<th><p><span data-ttu-id="f7d97-112">説明</span><span class="sxs-lookup"><span data-stu-id="f7d97-112">Description</span></span></p></th>
+<th><p><span data-ttu-id="75737-111">アクションの引数</span><span class="sxs-lookup"><span data-stu-id="75737-111">Action argument</span></span></p></th>
+<th><p><span data-ttu-id="75737-112">説明</span><span class="sxs-lookup"><span data-stu-id="75737-112">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="f7d97-113"><strong>View Name/ビュー名</strong></span><span class="sxs-lookup"><span data-stu-id="f7d97-113"><strong>View Name</strong></span></span></p></td>
-<td><p><span data-ttu-id="f7d97-114">開くビューの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="f7d97-114">The name of the view to open.</span></span> <span data-ttu-id="f7d97-115">マクロ ビルダー] ウィンドウの [<strong>ビュー名</strong>] ボックス、[<strong>アクションの引数</strong>] セクションでは、現在のデータベース内のすべてのビューを示しています。</span><span class="sxs-lookup"><span data-stu-id="f7d97-115">The <strong>View Name</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder pane shows all views in the current database.</span></span> <span data-ttu-id="f7d97-116">この引数は省略できません。</span><span class="sxs-lookup"><span data-stu-id="f7d97-116">This is a required argument.</span></span> <span data-ttu-id="f7d97-117">ライブラリ データベースで、 <strong>OpenView</strong>アクションを含むマクロを実行する場合は、最初の検索にライブラリ データベースで、し、[現在のデータベース内にこの名前のビューです。</span><span class="sxs-lookup"><span data-stu-id="f7d97-117">If you run a macro containing the <strong>OpenView</strong> action in a library database, Microsoft Access first looks for the view with this name in the library database, and then in the current database.</span></span></p></td>
+<td><p><span data-ttu-id="75737-113"><strong>View Name/ビュー名</strong></span><span class="sxs-lookup"><span data-stu-id="75737-113"><strong>View Name</strong></span></span></p></td>
+<td><p><span data-ttu-id="75737-114">開くビューの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="75737-114">The name of the view to open.</span></span> <span data-ttu-id="75737-115">マクロ ビルダー] ウィンドウの [<strong>ビュー名</strong>] ボックス、[<strong>アクションの引数</strong>] セクションでは、現在のデータベース内のすべてのビューを示しています。</span><span class="sxs-lookup"><span data-stu-id="75737-115">The <strong>View Name</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder pane shows all views in the current database.</span></span> <span data-ttu-id="75737-116">この引数は省略できません。</span><span class="sxs-lookup"><span data-stu-id="75737-116">This is a required argument.</span></span> <span data-ttu-id="75737-117">ライブラリ データベースで、 <strong>OpenView</strong>アクションを含むマクロを実行する場合は、最初の検索にライブラリ データベースで、し、[現在のデータベース内にこの名前のビューです。</span><span class="sxs-lookup"><span data-stu-id="75737-117">If you run a macro containing the <strong>OpenView</strong> action in a library database, Microsoft Access first looks for the view with this name in the library database, and then in the current database.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="f7d97-118"><strong>View</strong></span><span class="sxs-lookup"><span data-stu-id="f7d97-118"><strong>View</strong></span></span></p></td>
-<td><p><span data-ttu-id="f7d97-p104">ビューを開くときのビューを指定します。[<strong>ビュー</strong>] ボックスで、[<strong>データシート ビュー</strong>]、[<strong>デザイン ビュー</strong>]、[<strong>印刷プレビュー</strong>]、[<strong>ピボットテーブル ビュー</strong>]、または [<strong>ピボットグラフ ビュー</strong>] をクリックします。既定値は [<strong>データシート ビュー</strong>] です。</span><span class="sxs-lookup"><span data-stu-id="f7d97-p104">The view in which the view will open. Click <strong>Datasheet</strong>, <strong>Design</strong>, <strong>Print Preview</strong>, <strong>PivotTable</strong>, or <strong>PivotChart</strong> in the <strong>View</strong> box. The default is <strong>Datasheet</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="75737-118"><strong>View</strong></span><span class="sxs-lookup"><span data-stu-id="75737-118"><strong>View</strong></span></span></p></td>
+<td><p><span data-ttu-id="75737-p104">ビューを開くときのビューを指定します。[<strong>ビュー</strong>] ボックスで、[<strong>データシート ビュー</strong>]、[<strong>デザイン ビュー</strong>]、[<strong>印刷プレビュー</strong>]、[<strong>ピボットテーブル ビュー</strong>]、または [<strong>ピボットグラフ ビュー</strong>] をクリックします。既定値は [<strong>データシート ビュー</strong>] です。</span><span class="sxs-lookup"><span data-stu-id="75737-p104">The view in which the view will open. Click <strong>Datasheet</strong>, <strong>Design</strong>, <strong>Print Preview</strong>, <strong>PivotTable</strong>, or <strong>PivotChart</strong> in the <strong>View</strong> box. The default is <strong>Datasheet</strong>.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="f7d97-122"><strong>Data Mode/データ モード</strong></span><span class="sxs-lookup"><span data-stu-id="f7d97-122"><strong>Data Mode</strong></span></span></p></td>
-<td><p><span data-ttu-id="f7d97-p105">ビューを開くときのデータ入力モードを指定します。これはデータシート  ビューで開いているビューにのみ適用されます。新しいレコードの追加を許可して、既存のレコードの編集を禁止する場合は [<strong>追加</strong>]、既存のレコードの編集および新しいレコードの追加を許可する場合は [<strong>編集</strong>]、レコードの表示のみを許可する場合は [<strong>読み取り専用</strong>] をクリックします。既定値は [<strong>編集</strong>] です。</span><span class="sxs-lookup"><span data-stu-id="f7d97-p105">The data entry mode for the view. This applies only to views opened in Datasheet view. Click <strong>Add</strong> (the user can add new records but can't view or edit existing records), <strong>Edit</strong> (the user can view or edit existing records and add new records), or <strong>Read Only</strong> (the user can only view records). The default is <strong>Edit</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="75737-122"><strong>Data Mode/データ モード</strong></span><span class="sxs-lookup"><span data-stu-id="75737-122"><strong>Data Mode</strong></span></span></p></td>
+<td><p><span data-ttu-id="75737-p105">ビューを開くときのデータ入力モードを指定します。これはデータシート  ビューで開いているビューにのみ適用されます。新しいレコードの追加を許可して、既存のレコードの編集を禁止する場合は [<strong>追加</strong>]、既存のレコードの編集および新しいレコードの追加を許可する場合は [<strong>編集</strong>]、レコードの表示のみを許可する場合は [<strong>読み取り専用</strong>] をクリックします。既定値は [<strong>編集</strong>] です。</span><span class="sxs-lookup"><span data-stu-id="75737-p105">The data entry mode for the view. This applies only to views opened in Datasheet view. Click <strong>Add</strong> (the user can add new records but can't view or edit existing records), <strong>Edit</strong> (the user can view or edit existing records and add new records), or <strong>Read Only</strong> (the user can only view records). The default is <strong>Edit</strong>.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="f7d97-127">解説</span><span class="sxs-lookup"><span data-stu-id="f7d97-127">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="75737-127">解説</span><span class="sxs-lookup"><span data-stu-id="75737-127">Remarks</span></span>
 
-<span data-ttu-id="f7d97-128">このアクションの動作は、ナビゲーション ウィンドウでビューをダブルクリックした場合や、ナビゲーション ウィンドウでビューを右クリックして目的のコマンドをクリックした場合と同じです。</span><span class="sxs-lookup"><span data-stu-id="f7d97-128">This action is similar to double-clicking a view in the Navigation Pane, or right-clicking the view in the Navigation Pane and then clicking the command you want.</span></span>
+<span data-ttu-id="75737-128">このアクションの動作は、ナビゲーション ウィンドウでビューをダブルクリックした場合や、ナビゲーション ウィンドウでビューを右クリックして目的のコマンドをクリックした場合と同じです。</span><span class="sxs-lookup"><span data-stu-id="75737-128">This action is similar to double-clicking a view in the Navigation Pane, or right-clicking the view in the Navigation Pane and then clicking the command you want.</span></span>
 
-<span data-ttu-id="f7d97-129">**ヒント**</span><span class="sxs-lookup"><span data-stu-id="f7d97-129">**Tips**</span></span>
+<span data-ttu-id="75737-129">**ヒント**</span><span class="sxs-lookup"><span data-stu-id="75737-129">**Tips**</span></span>
 
-  - <span data-ttu-id="f7d97-130">ナビゲーション ウィンドウからマクロのアクション行にビューをドラッグできます。</span><span class="sxs-lookup"><span data-stu-id="f7d97-130">You can drag a view from the Navigation Pane to a macro action row.</span></span> <span data-ttu-id="f7d97-131">ビューをデータシート ビューで開く**OpenView**アクションが自動的に作成します。</span><span class="sxs-lookup"><span data-stu-id="f7d97-131">This automatically creates an **OpenView** action that opens the view in Datasheet view.</span></span>
+  - <span data-ttu-id="75737-130">ナビゲーション ウィンドウからマクロのアクション行にビューをドラッグできます。</span><span class="sxs-lookup"><span data-stu-id="75737-130">You can drag a view from the Navigation Pane to a macro action row.</span></span> <span data-ttu-id="75737-131">ビューをデータシート ビューで開く**OpenView**アクションが自動的に作成します。</span><span class="sxs-lookup"><span data-stu-id="75737-131">This automatically creates an **OpenView** action that opens the view in Datasheet view.</span></span>
 
-  - <span data-ttu-id="f7d97-132">(ことを示すビューとレコードの数が影響を受ける)、ビューを実行するときに通常表示されるシステム メッセージが表示されない場合は、これらのメッセージの表示を抑制する**SetWarning**アクションを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="f7d97-132">If you don't want to display the system messages that normally appear when a view is run (indicating it is a view and showing how many records will be affected), you can use the **SetWarning** action to suppress the display of these messages.</span></span>
+  - <span data-ttu-id="75737-132">(ことを示すビューとレコードの数が影響を受ける)、ビューを実行するときに通常表示されるシステム メッセージが表示されない場合は、これらのメッセージの表示を抑制する**SetWarning**アクションを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="75737-132">If you don't want to display the system messages that normally appear when a view is run (indicating it is a view and showing how many records will be affected), you can use the **SetWarning** action to suppress the display of these messages.</span></span>
 
-<span data-ttu-id="f7d97-133">**OpenView**アクションを Visual Basic for Applications (VBA) のモジュールで実行するには、 **DoCmd**オブジェクトの**OpenView**メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="f7d97-133">To run the **OpenView** action in a Visual Basic for Applications (VBA) module, use the **OpenView** method of the **DoCmd** object.</span></span>
+<span data-ttu-id="75737-133">**OpenView**アクションを Visual Basic for Applications (VBA) のモジュールで実行するには、 **DoCmd**オブジェクトの**OpenView**メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="75737-133">To run the **OpenView** action in a Visual Basic for Applications (VBA) module, use the **OpenView** method of the **DoCmd** object.</span></span>
 

@@ -6,37 +6,37 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193530(v=office.15)
 ms:contentKeyID: 48544702
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 94c8ec6dd4493a717feb7a6f5d7402df624e9184
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 79515c413918bca1b83d18abec41c78f3fd52447
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25882442"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25921240"
 ---
-# <a name="fields-collection-dao"></a><span data-ttu-id="8b49b-102">Fields コレクション (DAO)</span><span class="sxs-lookup"><span data-stu-id="8b49b-102">Fields Collection (DAO)</span></span>
+# <a name="fields-collection-dao"></a><span data-ttu-id="d1478-102">Fields コレクション (DAO)</span><span class="sxs-lookup"><span data-stu-id="d1478-102">Fields collection (DAO)</span></span>
 
 
-<span data-ttu-id="8b49b-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="8b49b-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="d1478-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="d1478-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="8b49b-104">**Fields** コレクションには、 **Index** 、 **QueryDef** 、 **Relation** 、 **Recordset** 、または **TableDef** オブジェクトのすべての格納済み **Field** オブジェクトが含まれます。</span><span class="sxs-lookup"><span data-stu-id="8b49b-104">A **Fields** collection contains all stored **Field** objects of an **Index**, **QueryDef**, **Recordset**, **Relation**, or **TableDef** object.</span></span>
+<span data-ttu-id="d1478-104">**Fields** コレクションには、 **Index** 、 **QueryDef** 、 **Relation** 、 **Recordset** 、または **TableDef** オブジェクトのすべての格納済み **Field** オブジェクトが含まれます。</span><span class="sxs-lookup"><span data-stu-id="d1478-104">A **Fields** collection contains all stored **Field** objects of an **Index**, **QueryDef**, **Recordset**, **Relation**, or **TableDef** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="8b49b-105">解説</span><span class="sxs-lookup"><span data-stu-id="8b49b-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d1478-105">解説</span><span class="sxs-lookup"><span data-stu-id="d1478-105">Remarks</span></span>
 
-<span data-ttu-id="8b49b-p101">**Index** 、 **QueryDef** 、 **Relation** 、および **TableDef** の各オブジェクトの **Fields** コレクションには、そのオブジェクトが表すフィールドの定義が含まれます。 **Recordset** オブジェクトの **Fields** コレクションは、データの行、またはレコードの **Field** オブジェクトを表します。 **Recordset** オブジェクトのカレント レコードのフィールドの値を取得および設定するには、 **Recordset** オブジェクトの **Field** オブジェクトを使用します。</span><span class="sxs-lookup"><span data-stu-id="8b49b-p101">The **Fields** collections of the **Index**, **QueryDef**, **Relation**, and **TableDef** objects contain the specifications for the fields those objects represent. The **Fields** collection of a **Recordset** object represents the **Field** objects in a row of data, or in a record. You use the **Field** objects in a **Recordset** object to read and to set values for the fields in the current record of the **Recordset** object.</span></span>
+<span data-ttu-id="d1478-p101">**Index** 、 **QueryDef** 、 **Relation** 、および **TableDef** の各オブジェクトの **Fields** コレクションには、そのオブジェクトが表すフィールドの定義が含まれます。 **Recordset** オブジェクトの **Fields** コレクションは、データの行、またはレコードの **Field** オブジェクトを表します。 **Recordset** オブジェクトのカレント レコードのフィールドの値を取得および設定するには、 **Recordset** オブジェクトの **Field** オブジェクトを使用します。</span><span class="sxs-lookup"><span data-stu-id="d1478-p101">The **Fields** collections of the **Index**, **QueryDef**, **Relation**, and **TableDef** objects contain the specifications for the fields those objects represent. The **Fields** collection of a **Recordset** object represents the **Field** objects in a row of data, or in a record. You use the **Field** objects in a **Recordset** object to read and to set values for the fields in the current record of the **Recordset** object.</span></span>
 
-<span data-ttu-id="8b49b-109">コレクション内の **Field** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="8b49b-109">To refer to a **Field** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
+<span data-ttu-id="d1478-109">コレクション内の **Field** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="d1478-109">To refer to a **Field** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
 
-<span data-ttu-id="8b49b-110">**Fields**(0)</span><span class="sxs-lookup"><span data-stu-id="8b49b-110">**Fields**(0)</span></span>
+<span data-ttu-id="d1478-110">**Fields**(0)</span><span class="sxs-lookup"><span data-stu-id="d1478-110">**Fields**(0)</span></span>
 
-<span data-ttu-id="8b49b-111">**フィールド**("name")</span><span class="sxs-lookup"><span data-stu-id="8b49b-111">**Fields**("name")</span></span>
+<span data-ttu-id="d1478-111">**フィールド**("name")</span><span class="sxs-lookup"><span data-stu-id="d1478-111">**Fields**("name")</span></span>
 
-<span data-ttu-id="8b49b-112">**フィールド**\!\[名\]</span><span class="sxs-lookup"><span data-stu-id="8b49b-112">**Fields**\!\[name\]</span></span>
+<span data-ttu-id="d1478-112">**フィールド**\!\[名\]</span><span class="sxs-lookup"><span data-stu-id="d1478-112">**Fields**\!\[name\]</span></span>
 
-<span data-ttu-id="8b49b-p102">同じ構文を使用して、作成して **Fields** コレクションに追加する **Field** オブジェクトの **Value** プロパティを参照することもできます。フィールド参照のコンテキストにより、 **Field** オブジェクトと **Field** オブジェクトの **Value** プロパティのいずれを参照するかが決まります。</span><span class="sxs-lookup"><span data-stu-id="8b49b-p102">With the same syntax forms, you can also refer to the **Value** property of a **Field** object that you create and append to a **Fields** collection. The context of the field reference will determine whether you are referring to the **Field** object or the **Value** property of the **Field** object.</span></span>
+<span data-ttu-id="d1478-p102">同じ構文を使用して、作成して **Fields** コレクションに追加する **Field** オブジェクトの **Value** プロパティを参照することもできます。フィールド参照のコンテキストにより、 **Field** オブジェクトと **Field** オブジェクトの **Value** プロパティのいずれを参照するかが決まります。</span><span class="sxs-lookup"><span data-stu-id="d1478-p102">With the same syntax forms, you can also refer to the **Value** property of a **Field** object that you create and append to a **Fields** collection. The context of the field reference will determine whether you are referring to the **Field** object or the **Value** property of the **Field** object.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8b49b-115">例</span><span class="sxs-lookup"><span data-stu-id="8b49b-115">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d1478-115">例</span><span class="sxs-lookup"><span data-stu-id="d1478-115">Example</span></span>
 
-<span data-ttu-id="8b49b-p103">この例では、 **Field** オブジェクトの場所 ( **TableDef** の **Fields** コレクション、 **QueryDef** の **Fields** コレクションなど) に応じた、 **Field** オブジェクトに対して有効なプロパティを示します。このプロシージャを実行するには、FieldOutput プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="8b49b-p103">This example shows what properties are valid for a **Field** object depending on where the **Field** resides (for example, the **Fields** collection of a **TableDef**, the **Fields** collection of a **QueryDef**, and so forth). The FieldOutput procedure is required for this procedure to run.</span></span>
+<span data-ttu-id="d1478-p103">この例では、 **Field** オブジェクトの場所 ( **TableDef** の **Fields** コレクション、 **QueryDef** の **Fields** コレクションなど) に応じた、 **Field** オブジェクトに対して有効なプロパティを示します。このプロシージャを実行するには、FieldOutput プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="d1478-p103">This example shows what properties are valid for a **Field** object depending on where the **Field** resides (for example, the **Fields** collection of a **TableDef**, the **Fields** collection of a **QueryDef**, and so forth). The FieldOutput procedure is required for this procedure to run.</span></span>
 
 ```vb
     Sub FieldX() 
@@ -102,7 +102,7 @@ ms.locfileid: "25882442"
 
 <br/>
 
-<span data-ttu-id="8b49b-p104">この例では、 **CreateField** メソッドを使用して、新しい **TableDef** に 3 つの **Fields** オブジェクトを作成します。次に、 **CreateField** メソッドによって自動的に設定される、これらの **Field** オブジェクトのプロパティを表示します ( **Field** オブジェクトの作成時に値が空のプロパティは表示されません)。</span><span class="sxs-lookup"><span data-stu-id="8b49b-p104">This example uses the **CreateField** method to create three **Fields** for a new **TableDef**. It then displays the properties of those **Field** objects that are automatically set by the **CreateField** method. (Properties whose values are empty at the time of **Field** creation are not shown.)</span></span>
+<span data-ttu-id="d1478-p104">この例では、 **CreateField** メソッドを使用して、新しい **TableDef** に 3 つの **Fields** オブジェクトを作成します。次に、 **CreateField** メソッドによって自動的に設定される、これらの **Field** オブジェクトのプロパティを表示します ( **Field** オブジェクトの作成時に値が空のプロパティは表示されません)。</span><span class="sxs-lookup"><span data-stu-id="d1478-p104">This example uses the **CreateField** method to create three **Fields** for a new **TableDef**. It then displays the properties of those **Field** objects that are automatically set by the **CreateField** method. (Properties whose values are empty at the time of **Field** creation are not shown.)</span></span>
 
 ```vb
     Sub CreateFieldX() 

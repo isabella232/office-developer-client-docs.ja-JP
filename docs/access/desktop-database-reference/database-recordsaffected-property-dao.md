@@ -6,29 +6,29 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845732(v=office.15)
 ms:contentKeyID: 48543567
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 346e01359b3ffef50a15ad3a9c3502b1104d6e0f
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: ee3d7283bdf1f7ca1504c3cb6a12ef77fdb84ada
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25889001"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25919004"
 ---
-# <a name="databaserecordsaffected-property-dao"></a><span data-ttu-id="f5069-102">Database.RecordsAffected プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="f5069-102">Database.RecordsAffected Property (DAO)</span></span>
+# <a name="databaserecordsaffected-property-dao"></a><span data-ttu-id="cbe3c-102">Database.RecordsAffected プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="cbe3c-102">Database.RecordsAffected property (DAO)</span></span>
 
 
-<span data-ttu-id="f5069-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f5069-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="cbe3c-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="cbe3c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f5069-104">直前に呼び出された **[Execute](connection-execute-method-dao.md)** メソッドの影響を受けるレコード数を返します。</span><span class="sxs-lookup"><span data-stu-id="f5069-104">Returns the number of records affected by the most recently invoked **[Execute](connection-execute-method-dao.md)** method.</span></span>
+<span data-ttu-id="cbe3c-104">直前に呼び出された **[Execute](connection-execute-method-dao.md)** メソッドの影響を受けるレコード数を返します。</span><span class="sxs-lookup"><span data-stu-id="cbe3c-104">Returns the number of records affected by the most recently invoked **[Execute](connection-execute-method-dao.md)** method.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f5069-105">構文</span><span class="sxs-lookup"><span data-stu-id="f5069-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="cbe3c-105">構文</span><span class="sxs-lookup"><span data-stu-id="cbe3c-105">Syntax</span></span>
 
-<span data-ttu-id="f5069-106">*式*です。RecordsAffected</span><span class="sxs-lookup"><span data-stu-id="f5069-106">*expression* .RecordsAffected</span></span>
+<span data-ttu-id="cbe3c-106">*式*です。RecordsAffected</span><span class="sxs-lookup"><span data-stu-id="cbe3c-106">*expression* .RecordsAffected</span></span>
 
-<span data-ttu-id="f5069-107">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="f5069-107">*expression* A variable that represents a **Database** object.</span></span>
+<span data-ttu-id="cbe3c-107">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="cbe3c-107">*expression* A variable that represents a **Database** object.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f5069-108">例</span><span class="sxs-lookup"><span data-stu-id="f5069-108">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cbe3c-108">例</span><span class="sxs-lookup"><span data-stu-id="cbe3c-108">Example</span></span>
 
-<span data-ttu-id="f5069-p101">次の使用例は、 **Database** オブジェクトおよび **QueryDef** オブジェクトから実行されるアクション クエリと共に **RecordsAffected** プロパティを使用します。このプロシージャを実行するには、RecordsAffectedOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="f5069-p101">This example uses the **RecordsAffected** property with action queries executed from a **Database** object and from a **QueryDef** object. The RecordsAffectedOutput function is required for this procedure to run.</span></span>
+<span data-ttu-id="cbe3c-p101">次の使用例は、 **Database** オブジェクトおよび **QueryDef** オブジェクトから実行されるアクション クエリと共に **RecordsAffected** プロパティを使用します。このプロシージャを実行するには、RecordsAffectedOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="cbe3c-p101">This example uses the **RecordsAffected** property with action queries executed from a **Database** object and from a **QueryDef** object. The RecordsAffectedOutput function is required for this procedure to run.</span></span>
 
 ```vb
     Sub RecordsAffectedX() 

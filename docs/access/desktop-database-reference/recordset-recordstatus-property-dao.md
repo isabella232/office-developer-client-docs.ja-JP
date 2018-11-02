@@ -10,33 +10,33 @@ f1_keywords:
 - dao360.chm1102617
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d1300538f1373929b4ed2bcd4fcd0be78574ae21
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 60a9e840e611988f33a66f67aff11ac5da3fe5ad
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25871921"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25919326"
 ---
-# <a name="recordsetrecordstatus-property-dao"></a><span data-ttu-id="07cce-102">Recordset.RecordStatus プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="07cce-102">Recordset.RecordStatus Property (DAO)</span></span>
+# <a name="recordsetrecordstatus-property-dao"></a><span data-ttu-id="40aed-102">Recordset.RecordStatus プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="40aed-102">Recordset.RecordStatus property (DAO)</span></span>
 
 
-<span data-ttu-id="07cce-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="07cce-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="40aed-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="40aed-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="07cce-104">構文</span><span class="sxs-lookup"><span data-stu-id="07cce-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="40aed-104">構文</span><span class="sxs-lookup"><span data-stu-id="40aed-104">Syntax</span></span>
 
-<span data-ttu-id="07cce-105">*式*です。RecordStatus</span><span class="sxs-lookup"><span data-stu-id="07cce-105">*expression* .RecordStatus</span></span>
+<span data-ttu-id="40aed-105">*式*です。RecordStatus</span><span class="sxs-lookup"><span data-stu-id="40aed-105">*expression* .RecordStatus</span></span>
 
-<span data-ttu-id="07cce-106">\*式\***レコード セット**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="07cce-106">*expression* A variable that represents a **Recordset** object.</span></span>
+<span data-ttu-id="40aed-106">\*式\***レコード セット**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="40aed-106">*expression* A variable that represents a **Recordset** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="07cce-107">注釈</span><span class="sxs-lookup"><span data-stu-id="07cce-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="40aed-107">注釈</span><span class="sxs-lookup"><span data-stu-id="40aed-107">Remarks</span></span>
 
-<span data-ttu-id="07cce-108">**RecordStatus** プロパティの値は、次の共有的バッチ更新でカレント レコードが更新の対象となるかどうかおよびその更新方法を示します。</span><span class="sxs-lookup"><span data-stu-id="07cce-108">The value of the **RecordStatus** property indicates whether and how the current record will be involved in the next optimistic batch update.</span></span>
+<span data-ttu-id="40aed-108">**RecordStatus** プロパティの値は、次の共有的バッチ更新でカレント レコードが更新の対象となるかどうかおよびその更新方法を示します。</span><span class="sxs-lookup"><span data-stu-id="40aed-108">The value of the **RecordStatus** property indicates whether and how the current record will be involved in the next optimistic batch update.</span></span>
 
-<span data-ttu-id="07cce-p101">ユーザーがレコードを変更すると、そのレコードの **RecordStatus** が自動的に **dbRecordModified** に変更されます。同様に、レコードを追加または削除すると、該当する定数が **RecordStatus** に反映されます。その後、バッチ モード **[Update](recordset-update-method-dao.md)** メソッドを使用すると、各レコードの **RecordStatus** プロパティに基づいて、DAO が各レコードに対する適切な操作指示をリモート サーバーに送信します。</span><span class="sxs-lookup"><span data-stu-id="07cce-p101">When a user changes a record, the **RecordStatus** for that record automatically changes to **dbRecordModified**. Similarly, if a record is added or deleted, **RecordStatus** reflects the appropriate constant. When you then use a batch-mode **[Update](recordset-update-method-dao.md)** method, DAO will submit an appropriate operation to the remote server for each record, based on the record's **RecordStatus** property.</span></span>
+<span data-ttu-id="40aed-p101">ユーザーがレコードを変更すると、そのレコードの **RecordStatus** が自動的に **dbRecordModified** に変更されます。同様に、レコードを追加または削除すると、該当する定数が **RecordStatus** に反映されます。その後、バッチ モード **[Update](recordset-update-method-dao.md)** メソッドを使用すると、各レコードの **RecordStatus** プロパティに基づいて、DAO が各レコードに対する適切な操作指示をリモート サーバーに送信します。</span><span class="sxs-lookup"><span data-stu-id="40aed-p101">When a user changes a record, the **RecordStatus** for that record automatically changes to **dbRecordModified**. Similarly, if a record is added or deleted, **RecordStatus** reflects the appropriate constant. When you then use a batch-mode **[Update](recordset-update-method-dao.md)** method, DAO will submit an appropriate operation to the remote server for each record, based on the record's **RecordStatus** property.</span></span>
 
-## <a name="example"></a><span data-ttu-id="07cce-112">例</span><span class="sxs-lookup"><span data-stu-id="07cce-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="40aed-112">例</span><span class="sxs-lookup"><span data-stu-id="40aed-112">Example</span></span>
 
-<span data-ttu-id="07cce-p102">次の使用例は、 **RecordStatus** プロパティおよび **DefaultCursorDriver** プロパティを使用して、バッチ更新中にローカル **Recordset** オブジェクトへの変更が記録される方法を示します。このプロシージャを実行するには、RecordStatusOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="07cce-p102">This example uses the **RecordStatus** and **DefaultCursorDriver** properties to show how changes to a local **Recordset** are tracked during batch updating. The RecordStatusOutput function is required for this procedure to run.</span></span>
+<span data-ttu-id="40aed-p102">次の使用例は、 **RecordStatus** プロパティおよび **DefaultCursorDriver** プロパティを使用して、バッチ更新中にローカル **Recordset** オブジェクトへの変更が記録される方法を示します。このプロシージャを実行するには、RecordStatusOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="40aed-p102">This example uses the **RecordStatus** and **DefaultCursorDriver** properties to show how changes to a local **Recordset** are tracked during batch updating. The RecordStatusOutput function is required for this procedure to run.</span></span>
 
 ```vb 
 Sub RecordStatusX() 

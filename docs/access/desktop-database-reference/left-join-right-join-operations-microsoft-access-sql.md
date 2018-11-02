@@ -1,6 +1,6 @@
 ---
-title: LEFT JOIN 操作および RIGHT JOIN 操作 (Microsoft Access SQL)
-TOCTitle: LEFT JOIN, RIGHT JOIN Operations (Microsoft Access SQL)
+title: LEFT JOIN、RIGHT JOIN 操作 (Microsoft Access SQL)
+TOCTitle: LEFT JOIN, RIGHT JOIN operations (Microsoft Access SQL)
 ms:assetid: 9c10525f-98b1-fd4f-8b40-07a32c5c6502
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198084(v=office.15)
 ms:contentKeyID: 48546586
@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 dev_langs:
 - sql
-ms.openlocfilehash: 4e2c9f8b47622bf9408d02b683af4e48d52c8662
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: a16df1e26e4ab5617e6bf76aa93a11a936ccb49b
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25870528"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25925899"
 ---
-# <a name="left-join-right-join-operations-microsoft-access-sql"></a><span data-ttu-id="da68b-102">LEFT JOIN 操作および RIGHT JOIN 操作 (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="da68b-102">LEFT JOIN, RIGHT JOIN Operations (Microsoft Access SQL)</span></span>
+# <a name="left-join-right-join-operations-microsoft-access-sql"></a><span data-ttu-id="49748-102">LEFT JOIN、RIGHT JOIN 操作 (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="49748-102">LEFT JOIN, RIGHT JOIN operations (Microsoft Access SQL)</span></span>
 
-<span data-ttu-id="da68b-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="da68b-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="49748-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="49748-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="da68b-104">[FROM](https://msdn.microsoft.com/library/ff836674\(v=office.15\)) 句の中で使用され、ソース テーブルのレコードを結合します。</span><span class="sxs-lookup"><span data-stu-id="da68b-104">Combines source-table records when used in any [FROM](https://msdn.microsoft.com/library/ff836674\(v=office.15\)) clause.</span></span>
+<span data-ttu-id="49748-104">[FROM](https://msdn.microsoft.com/library/ff836674\(v=office.15\)) 句の中で使用され、ソース テーブルのレコードを結合します。</span><span class="sxs-lookup"><span data-stu-id="49748-104">Combines source-table records when used in any [FROM](https://msdn.microsoft.com/library/ff836674\(v=office.15\)) clause.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="da68b-105">構文</span><span class="sxs-lookup"><span data-stu-id="da68b-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="49748-105">構文</span><span class="sxs-lookup"><span data-stu-id="49748-105">Syntax</span></span>
 
-<span data-ttu-id="da68b-106">*Table1 という名前*の\[左 |右\] *table1.field1* *compopr table2.field2*では、結合*テーブル 2*</span><span class="sxs-lookup"><span data-stu-id="da68b-106">FROM *table1* \[ LEFT | RIGHT \] JOIN *table2* ON *table1.field1* *compopr table2.field2*</span></span>
+<span data-ttu-id="49748-106">*Table1 という名前*の\[左 |右\] *table1.field1* *compopr table2.field2*では、結合*テーブル 2*</span><span class="sxs-lookup"><span data-stu-id="49748-106">FROM *table1* \[ LEFT | RIGHT \] JOIN *table2* ON *table1.field1* *compopr table2.field2*</span></span>
 
-<span data-ttu-id="da68b-107">LEFT JOIN 操作および RIGHT JOIN 操作には、次の指定項目があります。</span><span class="sxs-lookup"><span data-stu-id="da68b-107">The LEFT JOIN and RIGHT JOIN operations have these parts:</span></span>
+<span data-ttu-id="49748-107">LEFT JOIN 操作および RIGHT JOIN 操作には、次の指定項目があります。</span><span class="sxs-lookup"><span data-stu-id="49748-107">The LEFT JOIN and RIGHT JOIN operations have these parts:</span></span>
 
 <table>
 <colgroup>
@@ -34,36 +34,36 @@ ms.locfileid: "25870528"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="da68b-108">指定項目</span><span class="sxs-lookup"><span data-stu-id="da68b-108">Part</span></span></p></th>
-<th><p><span data-ttu-id="da68b-109">説明</span><span class="sxs-lookup"><span data-stu-id="da68b-109">Description</span></span></p></th>
+<th><p><span data-ttu-id="49748-108">指定項目</span><span class="sxs-lookup"><span data-stu-id="49748-108">Part</span></span></p></th>
+<th><p><span data-ttu-id="49748-109">説明</span><span class="sxs-lookup"><span data-stu-id="49748-109">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="da68b-110"><em>table1</em>、<em>table2</em></span><span class="sxs-lookup"><span data-stu-id="da68b-110"><em>table1</em>, <em>table2</em></span></span></p></td>
-<td><p><span data-ttu-id="da68b-111">結合するレコードのあるテーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="da68b-111">The names of the tables from which records are combined.</span></span></p></td>
+<td><p><span data-ttu-id="49748-110"><em>table1</em>、<em>table2</em></span><span class="sxs-lookup"><span data-stu-id="49748-110"><em>table1</em>, <em>table2</em></span></span></p></td>
+<td><p><span data-ttu-id="49748-111">結合するレコードのあるテーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="49748-111">The names of the tables from which records are combined.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="da68b-112"><em>field1</em>、<em>field2</em></span><span class="sxs-lookup"><span data-stu-id="da68b-112"><em>field1</em>, <em>field2</em></span></span></p></td>
-<td><p><span data-ttu-id="da68b-p101">結合するフィールドの名前。両方のフィールドが同じデータ型で、格納されるデータが同じ種類である必要があります。ただし、同じ名前である必要はありません。</span><span class="sxs-lookup"><span data-stu-id="da68b-p101">The names of the fields that are joined. The fields must be of the same data type and contain the same kind of data, but they do not need to have the same name.</span></span></p></td>
+<td><p><span data-ttu-id="49748-112"><em>field1</em>、<em>field2</em></span><span class="sxs-lookup"><span data-stu-id="49748-112"><em>field1</em>, <em>field2</em></span></span></p></td>
+<td><p><span data-ttu-id="49748-p101">結合するフィールドの名前。両方のフィールドが同じデータ型で、格納されるデータが同じ種類である必要があります。ただし、同じ名前である必要はありません。</span><span class="sxs-lookup"><span data-stu-id="49748-p101">The names of the fields that are joined. The fields must be of the same data type and contain the same kind of data, but they do not need to have the same name.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="da68b-115"><em>compopr</em></span><span class="sxs-lookup"><span data-stu-id="da68b-115"><em>compopr</em></span></span></p></td>
-<td><p><span data-ttu-id="da68b-116">任意の関係比較演算子: &quot;=&quot; &quot; &lt;、&quot; &quot; &gt;、&quot; &quot; &lt;=&quot; &quot; &gt;=、&quot;または&quot; &lt; &gt;。&quot;</span><span class="sxs-lookup"><span data-stu-id="da68b-116">Any relational comparison operator: &quot;=,&quot; &quot;&lt;,&quot; &quot;&gt;,&quot; &quot;&lt;=,&quot; &quot;&gt;=,&quot; or &quot;&lt;&gt;.&quot;</span></span></p></td>
+<td><p><span data-ttu-id="49748-115"><em>compopr</em></span><span class="sxs-lookup"><span data-stu-id="49748-115"><em>compopr</em></span></span></p></td>
+<td><p><span data-ttu-id="49748-116">任意の関係比較演算子: &quot;=&quot; &quot; &lt;、&quot; &quot; &gt;、&quot; &quot; &lt;=&quot; &quot; &gt;=、&quot;または&quot; &lt; &gt;。&quot;</span><span class="sxs-lookup"><span data-stu-id="49748-116">Any relational comparison operator: &quot;=,&quot; &quot;&lt;,&quot; &quot;&gt;,&quot; &quot;&lt;=,&quot; &quot;&gt;=,&quot; or &quot;&lt;&gt;.&quot;</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="da68b-117">解説</span><span class="sxs-lookup"><span data-stu-id="da68b-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="49748-117">解説</span><span class="sxs-lookup"><span data-stu-id="49748-117">Remarks</span></span>
 
-<span data-ttu-id="da68b-p102">左外部結合を作成するには、LEFT JOIN 操作を使用します。左外部結合では、結合する 2 つのテーブルのうち 2 番目 (右側) のテーブルに対応するレコードがなくても、1 番目 (左側) のテーブルのレコードがすべて追加されます。</span><span class="sxs-lookup"><span data-stu-id="da68b-p102">Use a LEFT JOIN operation to create a left outer join. Left outer joins include all of the records from the first (left) of two tables, even if there are no matching values for records in the second (right) table.</span></span>
+<span data-ttu-id="49748-p102">左外部結合を作成するには、LEFT JOIN 操作を使用します。左外部結合では、結合する 2 つのテーブルのうち 2 番目 (右側) のテーブルに対応するレコードがなくても、1 番目 (左側) のテーブルのレコードがすべて追加されます。</span><span class="sxs-lookup"><span data-stu-id="49748-p102">Use a LEFT JOIN operation to create a left outer join. Left outer joins include all of the records from the first (left) of two tables, even if there are no matching values for records in the second (right) table.</span></span>
 
-<span data-ttu-id="da68b-p103">右外部結合を作成するには、RIGHT JOIN 操作を使用します。右外部結合では、結合する 2 つのテーブルのうち 1 番目 (左側) のテーブルに対応するレコードがなくても、2 番目 (右側) のテーブルのレコードがすべて追加されます。</span><span class="sxs-lookup"><span data-stu-id="da68b-p103">Use a RIGHT JOIN operation to create a right outer join. Right outer joins include all of the records from the second (right) of two tables, even if there are no matching values for records in the first (left) table.</span></span>
+<span data-ttu-id="49748-p103">右外部結合を作成するには、RIGHT JOIN 操作を使用します。右外部結合では、結合する 2 つのテーブルのうち 1 番目 (左側) のテーブルに対応するレコードがなくても、2 番目 (右側) のテーブルのレコードがすべて追加されます。</span><span class="sxs-lookup"><span data-stu-id="49748-p103">Use a RIGHT JOIN operation to create a right outer join. Right outer joins include all of the records from the second (right) of two tables, even if there are no matching values for records in the first (left) table.</span></span>
 
-<span data-ttu-id="da68b-p104">たとえば、[部署] テーブル (左側) と [社員] テーブル (右側) がある場合に、どの部署にも所属しない社員も含めた全社員を選択するには、RIGHT JOIN 操作を使用します。反対に、社員が配属されていない部署も含めたすべての部署を選択するには、LEFT JOIN 操作を使用します。</span><span class="sxs-lookup"><span data-stu-id="da68b-p104">For example, you could use LEFT JOIN with the Departments (left) and Employees (right) tables to select all departments, including those that have no employees assigned to them. To select all employees, including those who are not assigned to a department, you would use RIGHT JOIN.</span></span>
+<span data-ttu-id="49748-p104">たとえば、[部署] テーブル (左側) と [社員] テーブル (右側) がある場合に、どの部署にも所属しない社員も含めた全社員を選択するには、RIGHT JOIN 操作を使用します。反対に、社員が配属されていない部署も含めたすべての部署を選択するには、LEFT JOIN 操作を使用します。</span><span class="sxs-lookup"><span data-stu-id="49748-p104">For example, you could use LEFT JOIN with the Departments (left) and Employees (right) tables to select all departments, including those that have no employees assigned to them. To select all employees, including those who are not assigned to a department, you would use RIGHT JOIN.</span></span>
 
-<span data-ttu-id="da68b-p105">次の例では、Categories テーブルと Products テーブルを CategoryID フィールドで結合しています。このクエリでは、商品がまったくない商品区分も含めて、すべての商品区分の一覧が出力されます。</span><span class="sxs-lookup"><span data-stu-id="da68b-p105">The following example shows how you could join the Categories and Products tables on the CategoryID field. The query produces a list of all categories, including those that contain no products:</span></span>
+<span data-ttu-id="49748-p105">次の例では、Categories テーブルと Products テーブルを CategoryID フィールドで結合しています。このクエリでは、商品がまったくない商品区分も含めて、すべての商品区分の一覧が出力されます。</span><span class="sxs-lookup"><span data-stu-id="49748-p105">The following example shows how you could join the Categories and Products tables on the CategoryID field. The query produces a list of all categories, including those that contain no products:</span></span>
 
 ```sql
 SELECT CategoryName, 
@@ -72,22 +72,22 @@ FROM Categories LEFT JOIN Products
 ON Categories.CategoryID = Products.CategoryID;
 ```
 
-<span data-ttu-id="da68b-126">この例では、[区分コード] は、結合されたフィールドですが、 [SELECT](select-statement-microsoft-access-sql.md)ステートメントに含まれていないために、クエリの結果には含まれません。</span><span class="sxs-lookup"><span data-stu-id="da68b-126">In this example, CategoryID is the joined field, but it is not included in the query results because it is not included in the [SELECT](select-statement-microsoft-access-sql.md) statement.</span></span> <span data-ttu-id="da68b-127">結合フィールドを含むように、SELECT ステートメントでフィールド名を入力します: ここで指定してください。</span><span class="sxs-lookup"><span data-stu-id="da68b-127">To include the joined field, enter the field name in the SELECT statement — in this case, Categories.CategoryID.</span></span>
+<span data-ttu-id="49748-126">この例では、[区分コード] は、結合されたフィールドですが、 [SELECT](select-statement-microsoft-access-sql.md)ステートメントに含まれていないために、クエリの結果には含まれません。</span><span class="sxs-lookup"><span data-stu-id="49748-126">In this example, CategoryID is the joined field, but it is not included in the query results because it is not included in the [SELECT](select-statement-microsoft-access-sql.md) statement.</span></span> <span data-ttu-id="49748-127">結合フィールドを含むように、SELECT ステートメントでフィールド名を入力します: ここで指定してください。</span><span class="sxs-lookup"><span data-stu-id="49748-127">To include the joined field, enter the field name in the SELECT statement — in this case, Categories.CategoryID.</span></span>
 
 > [!NOTE]
-> - <span data-ttu-id="da68b-128">結合フィールドのデータが同じレコードのみを選択するクエリを作成するには、[INNER JOIN](inner-join-operation-microsoft-access-sql.md) 操作を使用します。</span><span class="sxs-lookup"><span data-stu-id="da68b-128">To create a query that includes only records in which the data in the joined fields is the same, use an [INNER JOIN](inner-join-operation-microsoft-access-sql.md) operation.</span></span>
-> - <span data-ttu-id="da68b-p107">LEFT JOIN および RIGHT JOIN は、INNER JOIN の中にネストすることができます。しかし、INNER JOIN を LEFT JOIN または RIGHT JOIN の中にネストすることはできません。結合を他の結合にネストする方法の詳細については、「INNER JOIN 操作」のネストに関する説明を参照してください。</span><span class="sxs-lookup"><span data-stu-id="da68b-p107">A LEFT JOIN or a RIGHT JOIN can be nested inside an INNER JOIN, but an INNER JOIN cannot be nested inside a LEFT JOIN or a RIGHT JOIN. See the discussion of nesting in the INNER JOIN topic to see how to nest joins within other joins.</span></span>
-> - <span data-ttu-id="da68b-p108">ON 句は複数連結できます。詳細については、「INNER JOIN 操作」の連結に関する説明を参照してください。</span><span class="sxs-lookup"><span data-stu-id="da68b-p108">You can link multiple ON clauses. See the discussion of clause linking in the INNER JOIN topic to see how this is done.</span></span>
-> - <span data-ttu-id="da68b-133">メモ型 (Memo) または OLE オブジェクト型 (OLE Object) のデータが格納されたフィールドを結合しようとすると、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="da68b-133">If you try to join fields containing Memo or OLE Object data, an error occurs.</span></span>
+> - <span data-ttu-id="49748-128">結合フィールドのデータが同じレコードのみを選択するクエリを作成するには、[INNER JOIN](inner-join-operation-microsoft-access-sql.md) 操作を使用します。</span><span class="sxs-lookup"><span data-stu-id="49748-128">To create a query that includes only records in which the data in the joined fields is the same, use an [INNER JOIN](inner-join-operation-microsoft-access-sql.md) operation.</span></span>
+> - <span data-ttu-id="49748-p107">LEFT JOIN および RIGHT JOIN は、INNER JOIN の中にネストすることができます。しかし、INNER JOIN を LEFT JOIN または RIGHT JOIN の中にネストすることはできません。結合を他の結合にネストする方法の詳細については、「INNER JOIN 操作」のネストに関する説明を参照してください。</span><span class="sxs-lookup"><span data-stu-id="49748-p107">A LEFT JOIN or a RIGHT JOIN can be nested inside an INNER JOIN, but an INNER JOIN cannot be nested inside a LEFT JOIN or a RIGHT JOIN. See the discussion of nesting in the INNER JOIN topic to see how to nest joins within other joins.</span></span>
+> - <span data-ttu-id="49748-p108">ON 句は複数連結できます。詳細については、「INNER JOIN 操作」の連結に関する説明を参照してください。</span><span class="sxs-lookup"><span data-stu-id="49748-p108">You can link multiple ON clauses. See the discussion of clause linking in the INNER JOIN topic to see how this is done.</span></span>
+> - <span data-ttu-id="49748-133">メモ型 (Memo) または OLE オブジェクト型 (OLE Object) のデータが格納されたフィールドを結合しようとすると、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="49748-133">If you try to join fields containing Memo or OLE Object data, an error occurs.</span></span>
 
-## <a name="example"></a><span data-ttu-id="da68b-134">例</span><span class="sxs-lookup"><span data-stu-id="da68b-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="49748-134">例</span><span class="sxs-lookup"><span data-stu-id="49748-134">Example</span></span>
 
-<span data-ttu-id="da68b-135">この例では:</span><span class="sxs-lookup"><span data-stu-id="da68b-135">This example:</span></span>
-- <span data-ttu-id="da68b-136">[社員] テーブルには、架空の部署名、部署 ID フィールドの存在を前提としています。</span><span class="sxs-lookup"><span data-stu-id="da68b-136">Assumes the existence of hypothetical Department Name and Department ID fields in an Employees table.</span></span> <span data-ttu-id="da68b-137">これらのフィールドは存在しないこと実際には Northwind データベースの Employees テーブルに注意してください。</span><span class="sxs-lookup"><span data-stu-id="da68b-137">Note that these fields do not actually exist in the Northwind database Employees table.</span></span>
+<span data-ttu-id="49748-135">この例では:</span><span class="sxs-lookup"><span data-stu-id="49748-135">This example:</span></span>
+- <span data-ttu-id="49748-136">[社員] テーブルには、架空の部署名、部署 ID フィールドの存在を前提としています。</span><span class="sxs-lookup"><span data-stu-id="49748-136">Assumes the existence of hypothetical Department Name and Department ID fields in an Employees table.</span></span> <span data-ttu-id="49748-137">これらのフィールドは存在しないこと実際には Northwind データベースの Employees テーブルに注意してください。</span><span class="sxs-lookup"><span data-stu-id="49748-137">Note that these fields do not actually exist in the Northwind database Employees table.</span></span>
 
-- <span data-ttu-id="da68b-138">従業員も含め、すべての部門を選択します。</span><span class="sxs-lookup"><span data-stu-id="da68b-138">Selects all departments, including those without employees.</span></span>
+- <span data-ttu-id="49748-138">従業員も含め、すべての部門を選択します。</span><span class="sxs-lookup"><span data-stu-id="49748-138">Selects all departments, including those without employees.</span></span>
 
-- <span data-ttu-id="da68b-139">SELECT ステートメントの例である EnumFields プロシージャを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="da68b-139">Calls the EnumFields procedure, which you can find in the SELECT statement example.</span></span>
+- <span data-ttu-id="49748-139">SELECT ステートメントの例である EnumFields プロシージャを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="49748-139">Calls the EnumFields procedure, which you can find in the SELECT statement example.</span></span>
 
 
 ```vb

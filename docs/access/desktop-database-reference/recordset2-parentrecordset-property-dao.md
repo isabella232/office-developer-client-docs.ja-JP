@@ -10,31 +10,31 @@ f1_keywords:
 - dao360.chm1101188
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e4f5c92e0ae1ec4cc5d22aa6a2bc406b46a76c02
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 31f5e0b4dbb924c57c6a94e80cfb98e119292bd7
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25889911"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25922490"
 ---
-# <a name="recordset2parentrecordset-property-dao"></a><span data-ttu-id="bc885-102">Recordset2.ParentRecordset プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="bc885-102">Recordset2.ParentRecordset Property (DAO)</span></span>
+# <a name="recordset2parentrecordset-property-dao"></a><span data-ttu-id="58e33-102">Recordset2.ParentRecordset プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="58e33-102">Recordset2.ParentRecordset property (DAO)</span></span>
 
 
-<span data-ttu-id="bc885-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="bc885-103">**Applies to**: Access 2013, Office 2013</span></span> 
+<span data-ttu-id="58e33-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="58e33-103">**Applies to**: Access 2013, Office 2013</span></span> 
 
-<span data-ttu-id="bc885-p101">指定したレコードセットの親 **Recordset** を返します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="bc885-p101">Returns the parent **Recordset** of the specified recordset. Read-only.</span></span>
+<span data-ttu-id="58e33-p101">指定したレコードセットの親 **Recordset** を返します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="58e33-p101">Returns the parent **Recordset** of the specified recordset. Read-only.</span></span>
 
-## <a name="version-information"></a><span data-ttu-id="bc885-106">バージョン情報</span><span class="sxs-lookup"><span data-stu-id="bc885-106">Version Information</span></span>
+## <a name="version-information"></a><span data-ttu-id="58e33-106">バージョン情報</span><span class="sxs-lookup"><span data-stu-id="58e33-106">Version Information</span></span>
 
-<span data-ttu-id="bc885-107">追加バージョン: Access 2007</span><span class="sxs-lookup"><span data-stu-id="bc885-107">Version Added: Access 2007</span></span>
+<span data-ttu-id="58e33-107">追加バージョン: Access 2007</span><span class="sxs-lookup"><span data-stu-id="58e33-107">Version Added: Access 2007</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="bc885-108">構文</span><span class="sxs-lookup"><span data-stu-id="bc885-108">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="58e33-108">構文</span><span class="sxs-lookup"><span data-stu-id="58e33-108">Syntax</span></span>
 
-<span data-ttu-id="bc885-109">*式*です。ParentRecordset</span><span class="sxs-lookup"><span data-stu-id="bc885-109">*expression* .ParentRecordset</span></span>
+<span data-ttu-id="58e33-109">*式*です。ParentRecordset</span><span class="sxs-lookup"><span data-stu-id="58e33-109">*expression* .ParentRecordset</span></span>
 
-<span data-ttu-id="bc885-110">\*式\***Recordset2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="bc885-110">*expression* A variable that represents a **Recordset2** object.</span></span>
+<span data-ttu-id="58e33-110">\*式\***Recordset2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="58e33-110">*expression* A variable that represents a **Recordset2** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="bc885-111">注釈</span><span class="sxs-lookup"><span data-stu-id="bc885-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="58e33-111">注釈</span><span class="sxs-lookup"><span data-stu-id="58e33-111">Remarks</span></span>
 
-<span data-ttu-id="bc885-112">指定されたレコードセットが複数値を持つフィールドを表していない場合、 **ParentRecordset** プロパティは **Null** を返します。</span><span class="sxs-lookup"><span data-stu-id="bc885-112">The **ParentRecordset** property returns **Null** if the specifed recordset does not represent a multi-valued field.</span></span>
+<span data-ttu-id="58e33-112">指定されたレコードセットが複数値を持つフィールドを表していない場合、 **ParentRecordset** プロパティは **Null** を返します。</span><span class="sxs-lookup"><span data-stu-id="58e33-112">The **ParentRecordset** property returns **Null** if the specifed recordset does not represent a multi-valued field.</span></span>
 
