@@ -1,19 +1,19 @@
 ---
-title: QueryDef メソッド (DAO)
+title: クエリ定義の方法 (DAO)
 TOCTitle: Methods
 ms:assetid: f83b6936-6f43-40b3-84c2-7fb9303afac2
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn180152(v=office.15)
 ms:contentKeyID: 52075101
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f232829ee257fa3ec81392eb9ae5d69f03973aa8
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 2895348c7d46901b9681bf96b6f0f5b12a0e5632
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25887440"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25929973"
 ---
-# <a name="querydef-methods-dao"></a>QueryDef メソッド (DAO)
+# <a name="querydef-methods-dao"></a>クエリ定義の方法 (DAO)
 
 
 **適用されます**Access 2013、Office 2013。

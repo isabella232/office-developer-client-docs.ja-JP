@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821452(v=office.15)
 ms:contentKeyID: 48546941
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ecaddcb30428b167811ab1eafcec149deb4da3ba
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 6eec9f6be18bbf059660c804313918c480631e0b
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25891304"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25927822"
 ---
 # <a name="recordsetrecordcount-property-dao"></a>Recordset.RecordCount プロパティ (DAO)
 

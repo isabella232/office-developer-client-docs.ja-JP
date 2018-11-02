@@ -1,26 +1,22 @@
 ---
-title: Levels コレクション (ADO MD リファレンス)
-TOCTitle: Levels Collection (ADO MD)
+title: Levels コレクション (ADO MD の参照)
+TOCTitle: Levels collection (ADO MD)
 ms:assetid: b5ea0736-4bdc-45ad-913a-b12dbd2e412a
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249872(v=office.15)
 ms:contentKeyID: 48547262
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d1552d827ec9b6a6d0c833ffb8e6cfc997c4d3c7
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: c757bc7b06c8c3a4438effd912df3e66c79de489
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880965"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25931177"
 ---
-# <a name="levels-collection-ado-md-reference"></a>Levels コレクション (ADO MD リファレンス)
-
+# <a name="levels-collection-ado-md-reference"></a>Levels コレクション (ADO MD の参照)
 
 **適用されます**Access 2013、Office 2013。
 
-
-
-  - [Levels コレクション (ADO MD)](levels-collection-ado-md.md)
-
-  - [Levels コレクションのプロパティ、メソッド、およびイベント (ADO MD)](levels-collection-properties-methods-and-events-ado-md.md)
+- [Levels コレクション (ADO MD)](levels-collection-ado-md.md)
+- [Levels コレクションのプロパティ、メソッド、およびイベント (ADO MD)](levels-collection-properties-methods-and-events-ado-md.md)
 

@@ -1,30 +1,24 @@
 ---
-title: Containers オブジェクト参照 (DAO)
+title: コンテナー オブジェクト (DAO) の参照
 TOCTitle: Containers Object
 ms:assetid: 62cc5de0-4528-4068-9104-581b0c987c05
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn142215(v=office.15)
 ms:contentKeyID: 52072703
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1b74d905c4598c1d70268f50082b328d0a6c450c
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 4c217d1cf50f2b0daa9b265691743cef49f21197
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25872397"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25930246"
 ---
-# <a name="containers-object-reference-dao"></a>Containers オブジェクト参照 (DAO)
-
+# <a name="containers-object-reference-dao"></a>コンテナー オブジェクト (DAO) の参照
 
 **適用されます**Access 2013、Office 2013。
 
-
-
-  - [Containers コレクション (DAO)](containers-collection-dao.md)
-
-  - [Containers メンバー (DAO)](containers-members-dao.md)
-
-  - [Containers プロパティ (DAO)](containers-properties-dao.md)
-
-  - [Containers メソッド (DAO)](containers-methods-dao.md)
+- [コンテナーのコレクション (DAO)](containers-collection-dao.md)
+- [コンテナーのメンバー (DAO)](containers-members-dao.md)
+- [コンテナーのプロパティ (DAO)](containers-properties-dao.md)
+- [コンテナー メソッド (DAO)](containers-methods-dao.md)
 

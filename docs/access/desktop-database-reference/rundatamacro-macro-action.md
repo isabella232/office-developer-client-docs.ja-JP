@@ -1,6 +1,6 @@
 ---
-title: "'RunDataMacro/データマクロの実行' マクロ アクション"
-TOCTitle: RunDataMacro Macro Action
+title: RunDataMacro マクロ アクション
+TOCTitle: RunDataMacro macro action
 ms:assetid: fe4ac2f4-7851-7797-ce91-5f2dd3ba4d22
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837269(v=office.15)
 ms:contentKeyID: 48548933
@@ -10,14 +10,14 @@ f1_keywords:
 - vbaac10.chm168493
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 6777ae05d2ab7455016df834d17abb3406a2d710
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: c1d540b909a2ac5741719470f5632e34205806ff
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25889925"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25927985"
 ---
-# <a name="rundatamacro-macro-action"></a>"RunDataMacro/データマクロの実行" マクロ アクション
+# <a name="rundatamacro-macro-action"></a>RunDataMacro マクロ アクション
 
 **適用されます**Access 2013、Office 2013。
 
@@ -49,7 +49,7 @@ ms.locfileid: "25889925"
 
 ## <a name="remarks"></a>備考
 
-**RunDataMacro**アクションを使用すると、マクロ、名前付きデータ マクロでは、およびマクロの次のイベントの中で:**[マクロ イベントの削除後](after-delete-macro-event.md)**、**[マクロ イベントの挿入後](after-insert-macro-event.md)**、**[更新後のマクロ イベント](after-update-macro-event.md)** です。
+**RunDataMacro**アクションを使用すると、マクロ、名前付きデータ マクロでは、およびマクロの次のイベントの中で:**[マクロのイベントの後に削除](after-delete-macro-event.md)**、**[マクロのイベントの後に挿入](after-insert-macro-event.md)** と**[更新後のマクロのイベント](after-update-macro-event.md)** です。
 
 データ マクロの名前は、それが関連付けられている (たとえば、 **Comments.AddComment**、 **AddComment**だけではなく) テーブルを含める必要があります。
 

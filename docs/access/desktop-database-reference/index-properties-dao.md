@@ -1,19 +1,19 @@
 ---
-title: Index プロパティ (DAO)
+title: インデックスのプロパティ (DAO)
 TOCTitle: Properties
 ms:assetid: 50ef6a19-235a-4d0e-979b-7f62fe50ac05
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn124774(v=office.15)
 ms:contentKeyID: 52072396
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a7548d088cc0ccbbebdd4422d6652c8c3879e3e8
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 5374c9ea13eb3f2c7f41e33991d54174ea6e6ba6
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869814"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25930183"
 ---
-# <a name="index-properties-dao"></a>Index プロパティ (DAO)
+# <a name="index-properties-dao"></a>インデックスのプロパティ (DAO)
 
 
 **適用されます**Access 2013、Office 2013。

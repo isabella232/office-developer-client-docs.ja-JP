@@ -1,26 +1,22 @@
 ---
-title: Catalog オブジェクト (ADO MD リファレンス)
-TOCTitle: Catalog Object (ADO MD)
+title: Catalog オブジェクト (ADO MD の参照)
+TOCTitle: Catalog object (ADO MD)
 ms:assetid: 734b3715-0ee1-44a6-9f29-ddd48a6ff983
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249469(v=office.15)
 ms:contentKeyID: 48545632
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2924875d4749bb0887906378bc7fec3d8ab14a68
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: f4108d7205c3a47e7ba91e3ae45f29937723eefc
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25888833"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25929532"
 ---
-# <a name="catalog-object-ado-md-reference"></a>Catalog オブジェクト (ADO MD リファレンス)
-
+# <a name="catalog-object-ado-md-reference"></a>Catalog オブジェクト (ADO MD の参照)
 
 **適用されます**Access 2013、Office 2013。
 
-
-
-  - [Catalog オブジェクト (ADO MD)](catalog-object-ado-md.md)
-
-  - [Catalog のプロパティ、メソッド、およびイベント (ADO MD)](catalog-properties-methods-and-events-ado-md.md)
+- [Catalog オブジェクト (ADO MD)](catalog-object-ado-md.md)
+- [カタログのプロパティ、メソッド、およびイベント (ADO MD)](catalog-properties-methods-and-events-ado-md.md)
 

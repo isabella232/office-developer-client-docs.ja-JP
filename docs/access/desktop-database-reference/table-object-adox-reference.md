@@ -1,26 +1,22 @@
 ---
-title: Table オブジェクト (ADOX) リファレンス
-TOCTitle: Table Object (ADOX)
+title: テーブル オブジェクト (ADOX) 参照
+TOCTitle: Table object (ADOX)
 ms:assetid: 5841a0ab-717b-4e12-b85d-87be480d31ca
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249298(v=office.15)
 ms:contentKeyID: 48544990
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1dc6793f60600b917ce2a4b2c153c8401c1cd0b5
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 2666a98fc27fb9d21a3ddd89068fa02dec8411fd
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25883821"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25928331"
 ---
-# <a name="table-object-adox-reference"></a>Table オブジェクト (ADOX) リファレンス
-
+# <a name="table-object-adox-reference"></a>テーブル オブジェクト (ADOX) 参照
 
 **適用されます**Access 2013、Office 2013。
 
-
-
-  - [Table オブジェクト (ADOX)](table-object-adox.md)
-
-  - [Table のプロパティ、メソッド、およびイベント (ADOX)](table-properties-methods-and-events-adox.md)
+- [Table オブジェクト (ADOX)](table-object-adox.md)
+- [表のプロパティ、メソッド、およびイベント (ADOX)](table-properties-methods-and-events-adox.md)
 

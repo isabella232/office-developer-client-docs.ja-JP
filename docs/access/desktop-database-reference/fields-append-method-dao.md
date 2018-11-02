@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff820791(v=office.15)
 ms:contentKeyID: 48546719
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 44d7b6c8c9c44b51f7771dd731b50848f1cbf175
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 70fa0aba5385157453a1e9b009a167f036dc874b
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25884822"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25929119"
 ---
 # <a name="fieldsappend-method-dao"></a>Fields.Append メソッド (DAO)
 

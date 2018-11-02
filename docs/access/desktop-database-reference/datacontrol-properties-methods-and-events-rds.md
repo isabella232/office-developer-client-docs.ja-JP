@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249652(v=office.15)
 ms:contentKeyID: 48546397
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: dfb2ea094594d3a2b71b1e449ecae1bf7b3631e6
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
+ms.openlocfilehash: 406380b0c935e94b8478e0b135bf5f92180faaca
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910675"
+ms.locfileid: "25928329"
 ---
 # <a name="datacontrol-properties-methods-and-events-rds"></a>DataControl のプロパティ、メソッド、およびイベント (RDS)
 
@@ -19,7 +19,7 @@ ms.locfileid: "25910675"
 
 ## <a name="properties"></a>プロパティ
 
-- [Connect プロパティ (RDS)](connect-property-rds.md)
+- [接続プロパティ (RDS)](connect-property-rds.md)
 
 - [ExecuteOptions プロパティ (RDS)](executeoptions-property-rds.md)
 
@@ -45,7 +45,7 @@ ms.locfileid: "25910675"
 
 - [SortDirection プロパティ (RDS)](sortdirection-property-rds.md)
 
-- [SQL プロパティ [ADO]](https://msdn.microsoft.com/library/jj248989\(v=office.15\))
+- [SQL プロパティ (RDS)](https://msdn.microsoft.com/library/jj248989\(v=office.15\))
 
 - [URL プロパティ (RDS)](url-property-rds.md)
 

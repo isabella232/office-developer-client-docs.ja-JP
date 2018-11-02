@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197340(v=office.15)
 ms:contentKeyID: 48546240
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0092d3ad717b0f671273ca150698de005e7fe27f
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: f5efc7479f69d379f406a9a7cda5d4c522df6325
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25881126"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25930897"
 ---
 # <a name="querydefscount-property-dao"></a>QueryDefs.Count プロパティ (DAO)
 

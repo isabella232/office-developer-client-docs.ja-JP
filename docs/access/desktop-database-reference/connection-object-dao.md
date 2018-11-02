@@ -1,19 +1,19 @@
 ---
-title: Connection オブジェクト (DAO)
+title: 接続オブジェクト (DAO)
 TOCTitle: Connection Object
 ms:assetid: f469b04e-2539-6b53-31f2-85fe22fcc2fc
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836694(v=office.15)
 ms:contentKeyID: 48548690
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7170a28cb1d3ec9c8cdeca9229c255f264b9422e
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 0473a3f4b920e05ad07556b070ed0e778d7ac694
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25883429"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25930155"
 ---
-# <a name="connection-object-dao"></a>Connection オブジェクト (DAO)
+# <a name="connection-object-dao"></a>接続オブジェクト (DAO)
 
 
 **適用されます**Access 2013、Office 2013。

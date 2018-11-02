@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052878
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 53a76c26bca9d36b853c7aa6b0620788389cb765
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: e1e7d124e06331a043a28c71bcdc9707c4664738
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25886488"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25931331"
 ---
 # <a name="fieldsize-property-dao"></a>Field.Size プロパティ (DAO)
 

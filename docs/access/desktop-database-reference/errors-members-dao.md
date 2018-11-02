@@ -1,19 +1,19 @@
 ---
-title: Errors メンバー (DAO)
+title: エラー メンバー (DAO)
 TOCTitle: Errors Members
 ms:assetid: 7e7eb080-16dc-c873-af80-6286222cd5b3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196446(v=office.15)
 ms:contentKeyID: 48545879
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a5c32058cd83a5a34c27b6aa9fc34f337753f3f9
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: b89afc8918792be7c73054404923f448b93802f2
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25870360"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25931303"
 ---
-# <a name="errors-members-dao"></a>Errors メンバー (DAO)
+# <a name="errors-members-dao"></a>エラー メンバー (DAO)
 
 
 **適用されます**Access 2013、Office 2013。

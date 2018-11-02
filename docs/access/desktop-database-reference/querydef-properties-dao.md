@@ -1,19 +1,19 @@
 ---
-title: QueryDef プロパティ (DAO)
+title: クエリ定義のプロパティ (DAO)
 TOCTitle: Properties
 ms:assetid: 6b5687aa-1a67-4c3a-b9b4-ae90ada81326
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn142365(v=office.15)
 ms:contentKeyID: 52072842
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 030ad80589d9141082758a3dae390822b77a0de6
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 127746d036dc7b590b589310cad8bbdc12ed9c1f
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880293"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25931296"
 ---
-# <a name="querydef-properties-dao"></a>QueryDef プロパティ (DAO)
+# <a name="querydef-properties-dao"></a>クエリ定義のプロパティ (DAO)
 
 
 **適用されます**Access 2013、Office 2013。
