@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249308(v=office.15)
 ms:contentKeyID: 48545032
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ef7ca4a9dabb92bc2d13bd0b589180d7d4ca2958
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: b866e9cecc31c4826b0b0fb52b5b8a2524b4bb00
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25871473"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25946455"
 ---
-# <a name="visual-c-extensions-header"></a><span data-ttu-id="01a26-102">Visual C++ Extensions のヘッダー</span><span class="sxs-lookup"><span data-stu-id="01a26-102">Visual C++ Extensions Header</span></span>
+# <a name="visual-c-extensions-header"></a><span data-ttu-id="c7e1f-102">Visual C++ の拡張ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c7e1f-102">Visual C++ Extensions header</span></span>
 
 
-<span data-ttu-id="01a26-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="01a26-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="c7e1f-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c7e1f-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="01a26-p101">次のヘッダー **icrsint.h** で詳細が記述されているインターフェイスを使用することで、クライアントは、 **Recordset** から取得したフィールドを、 **CADORecordBinding** から派生したクラスで定義されている変数に格納できます。アクセスするフィールドごとに、ADO バインディング マクロを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="01a26-p101">The following header, **icrsint.h**, details the interface that allow clients to retrieve fields from a **Recordset** into variables defined in a class derived from **CADORecordBinding**. You must specify an ADO binding macro for each field you intend to access.</span></span>
+<span data-ttu-id="c7e1f-p101">次のヘッダー **icrsint.h** で詳細が記述されているインターフェイスを使用することで、クライアントは、 **Recordset** から取得したフィールドを、 **CADORecordBinding** から派生したクラスで定義されている変数に格納できます。アクセスするフィールドごとに、ADO バインディング マクロを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c7e1f-p101">The following header, **icrsint.h**, details the interface that allow clients to retrieve fields from a **Recordset** into variables defined in a class derived from **CADORecordBinding**. You must specify an ADO binding macro for each field you intend to access.</span></span>
 
 ```cpp 
  

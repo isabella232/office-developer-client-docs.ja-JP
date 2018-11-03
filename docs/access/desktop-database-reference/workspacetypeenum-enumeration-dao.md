@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff823134(v=office.15)
 ms:contentKeyID: 48547625
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8a562f7ab82c3349a4a397ecb72861eed30cb20d
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 65024e67110608d75012ec01382af92937451669
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25870325"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25947162"
 ---
-# <a name="workspacetypeenum-enumeration-dao"></a><span data-ttu-id="b98da-102">WorkspaceTypeEnum 列挙 (DAO)</span><span class="sxs-lookup"><span data-stu-id="b98da-102">WorkspaceTypeEnum Enumeration (DAO)</span></span>
+# <a name="workspacetypeenum-enumeration-dao"></a><span data-ttu-id="48c63-102">WorkspaceTypeEnum 列挙 (DAO)</span><span class="sxs-lookup"><span data-stu-id="48c63-102">WorkspaceTypeEnum enumeration (DAO)</span></span>
 
 
-<span data-ttu-id="b98da-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="b98da-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="48c63-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="48c63-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="b98da-104">**CreateWorkspace** メソッドで、作成するワークスペースの種類を指定するために使用します。</span><span class="sxs-lookup"><span data-stu-id="b98da-104">Used with the **CreateWorkspace** method to specify the type of workspace to create.</span></span>
+<span data-ttu-id="48c63-104">**CreateWorkspace** メソッドで、作成するワークスペースの種類を指定するために使用します。</span><span class="sxs-lookup"><span data-stu-id="48c63-104">Used with the **CreateWorkspace** method to specify the type of workspace to create.</span></span>
 
 <table>
 <colgroup>
@@ -28,16 +28,16 @@ ms.locfileid: "25870325"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="b98da-105">名前</span><span class="sxs-lookup"><span data-stu-id="b98da-105">Name</span></span></p></th>
-<th><p><span data-ttu-id="b98da-106">値</span><span class="sxs-lookup"><span data-stu-id="b98da-106">Value</span></span></p></th>
-<th><p><span data-ttu-id="b98da-107">説明</span><span class="sxs-lookup"><span data-stu-id="b98da-107">Description</span></span></p></th>
+<th><p><span data-ttu-id="48c63-105">名前</span><span class="sxs-lookup"><span data-stu-id="48c63-105">Name</span></span></p></th>
+<th><p><span data-ttu-id="48c63-106">値</span><span class="sxs-lookup"><span data-stu-id="48c63-106">Value</span></span></p></th>
+<th><p><span data-ttu-id="48c63-107">説明</span><span class="sxs-lookup"><span data-stu-id="48c63-107">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="b98da-108">dbUseJet</span><span class="sxs-lookup"><span data-stu-id="b98da-108">dbUseJet</span></span></p></td>
-<td><p><span data-ttu-id="b98da-109">2</span><span class="sxs-lookup"><span data-stu-id="b98da-109">2</span></span></p></td>
-<td><p><span data-ttu-id="b98da-110">Microsoft Access ワークスペースを作成します。</span><span class="sxs-lookup"><span data-stu-id="b98da-110">Create a Microsoft Access workspace.</span></span></p></td>
+<td><p><span data-ttu-id="48c63-108">dbUseJet</span><span class="sxs-lookup"><span data-stu-id="48c63-108">dbUseJet</span></span></p></td>
+<td><p><span data-ttu-id="48c63-109">2</span><span class="sxs-lookup"><span data-stu-id="48c63-109">2</span></span></p></td>
+<td><p><span data-ttu-id="48c63-110">Microsoft Access ワークスペースを作成します。</span><span class="sxs-lookup"><span data-stu-id="48c63-110">Create a Microsoft Access workspace.</span></span></p></td>
 </tr>
 </tbody>
 </table>

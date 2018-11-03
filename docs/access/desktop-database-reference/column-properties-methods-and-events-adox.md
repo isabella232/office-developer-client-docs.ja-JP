@@ -6,45 +6,36 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249162(v=office.15)
 ms:contentKeyID: 48544330
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cc43f9cd31890f39ac072c520f84a036c8ed431a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 3fab3160ad863f83b9dadba5bce04a28abe2cf2b
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919130"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945468"
 ---
-# <a name="column-properties-methods-and-events-adox"></a><span data-ttu-id="bf87d-102">列のプロパティ、メソッド、およびイベント (ADOX)</span><span class="sxs-lookup"><span data-stu-id="bf87d-102">Column properties, methods, and events (ADOX)</span></span>
+# <a name="column-properties-methods-and-events-adox"></a><span data-ttu-id="c44bd-102">列のプロパティ、メソッド、およびイベント (ADOX)</span><span class="sxs-lookup"><span data-stu-id="c44bd-102">Column properties, methods, and events (ADOX)</span></span>
 
-<span data-ttu-id="bf87d-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="bf87d-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="c44bd-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c44bd-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-## <a name="propertiescollections"></a><span data-ttu-id="bf87d-104">プロパティ/コレクション</span><span class="sxs-lookup"><span data-stu-id="bf87d-104">Properties/Collections</span></span>
+## <a name="propertiescollections"></a><span data-ttu-id="c44bd-104">プロパティ/コレクション</span><span class="sxs-lookup"><span data-stu-id="c44bd-104">Properties/Collections</span></span>
 
-- [<span data-ttu-id="bf87d-105">Attributes プロパティ (ADOX)</span><span class="sxs-lookup"><span data-stu-id="bf87d-105">Attributes Property</span></span>](attributes-property-adox.md)
+- [<span data-ttu-id="c44bd-105">属性のプロパティ</span><span class="sxs-lookup"><span data-stu-id="c44bd-105">Attributes property</span></span>](attributes-property-adox.md)
+- [<span data-ttu-id="c44bd-106">DefinedSize プロパティ</span><span class="sxs-lookup"><span data-stu-id="c44bd-106">DefinedSize property</span></span>](definedsize-property-adox.md)
+- [<span data-ttu-id="c44bd-107">Name プロパティ</span><span class="sxs-lookup"><span data-stu-id="c44bd-107">Name property</span></span>](name-property-adox.md)
+- [<span data-ttu-id="c44bd-108">NumericScale プロパティ</span><span class="sxs-lookup"><span data-stu-id="c44bd-108">NumericScale property</span></span>](numericscale-property-adox.md)
+- [<span data-ttu-id="c44bd-109">ParentCatalog プロパティ</span><span class="sxs-lookup"><span data-stu-id="c44bd-109">ParentCatalog property</span></span>](parentcatalog-property-adox.md)
+- [<span data-ttu-id="c44bd-110">精度のプロパティ</span><span class="sxs-lookup"><span data-stu-id="c44bd-110">Precision property</span></span>](precision-property-adox.md)
+- [<span data-ttu-id="c44bd-111">Properties コレクション</span><span class="sxs-lookup"><span data-stu-id="c44bd-111">Properties collection</span></span>](properties-collection-ado.md)
+- [<span data-ttu-id="c44bd-112">RelatedColumn プロパティ</span><span class="sxs-lookup"><span data-stu-id="c44bd-112">RelatedColumn property</span></span>](relatedcolumn-property-adox.md)
+- [<span data-ttu-id="c44bd-113">SortOrder プロパティ</span><span class="sxs-lookup"><span data-stu-id="c44bd-113">SortOrder property</span></span>](sortorder-property-adox.md)
+- <span data-ttu-id="c44bd-114">[Type プロパティ (列)](https://msdn.microsoft.com/library/jj249169\(v=office.15\))</span><span class="sxs-lookup"><span data-stu-id="c44bd-114">[Type property (Column)](https://msdn.microsoft.com/library/jj249169\(v=office.15\))</span></span>
 
-- [<span data-ttu-id="bf87d-106">DefinedSize プロパティ (ADOX)</span><span class="sxs-lookup"><span data-stu-id="bf87d-106">DefinedSize Property</span></span>](definedsize-property-adox.md)
+## <a name="methods"></a><span data-ttu-id="c44bd-115">メソッド</span><span class="sxs-lookup"><span data-stu-id="c44bd-115">Methods</span></span>
 
-- [<span data-ttu-id="bf87d-107">Name プロパティ (ADOX)</span><span class="sxs-lookup"><span data-stu-id="bf87d-107">Name Property</span></span>](name-property-adox.md)
+<span data-ttu-id="c44bd-116">なし</span><span class="sxs-lookup"><span data-stu-id="c44bd-116">None.</span></span>
 
-- [<span data-ttu-id="bf87d-108">NumericScale プロパティ (ADOX)</span><span class="sxs-lookup"><span data-stu-id="bf87d-108">NumericScale Property</span></span>](numericscale-property-adox.md)
+## <a name="events"></a><span data-ttu-id="c44bd-117">イベント</span><span class="sxs-lookup"><span data-stu-id="c44bd-117">Events</span></span>
 
-- [<span data-ttu-id="bf87d-109">ParentCatalog プロパティ (ADOX)</span><span class="sxs-lookup"><span data-stu-id="bf87d-109">ParentCatalog Property</span></span>](parentcatalog-property-adox.md)
-
-- [<span data-ttu-id="bf87d-110">Precision プロパティ (ADOX)</span><span class="sxs-lookup"><span data-stu-id="bf87d-110">Precision Property</span></span>](precision-property-adox.md)
-
-- [<span data-ttu-id="bf87d-111">Properties コレクション (ADO)</span><span class="sxs-lookup"><span data-stu-id="bf87d-111">Properties Collection</span></span>](properties-collection-ado.md)
-
-- [<span data-ttu-id="bf87d-112">RelatedColumn プロパティ (ADOX)</span><span class="sxs-lookup"><span data-stu-id="bf87d-112">RelatedColumn Property</span></span>](relatedcolumn-property-adox.md)
-
-- [<span data-ttu-id="bf87d-113">SortOrder プロパティ (ADOX)</span><span class="sxs-lookup"><span data-stu-id="bf87d-113">SortOrder Property</span></span>](sortorder-property-adox.md)
-
-- <span data-ttu-id="bf87d-114">[Type プロパティ (Column) (ADOX)](https://msdn.microsoft.com/library/jj249169\(v=office.15\))</span><span class="sxs-lookup"><span data-stu-id="bf87d-114">[Type Property (Column)](https://msdn.microsoft.com/library/jj249169\(v=office.15\))</span></span>
-
-## <a name="methods"></a><span data-ttu-id="bf87d-115">メソッド</span><span class="sxs-lookup"><span data-stu-id="bf87d-115">Methods</span></span>
-
-<span data-ttu-id="bf87d-116">なし</span><span class="sxs-lookup"><span data-stu-id="bf87d-116">None.</span></span>
-
-## <a name="events"></a><span data-ttu-id="bf87d-117">イベント</span><span class="sxs-lookup"><span data-stu-id="bf87d-117">Events</span></span>
-
-<span data-ttu-id="bf87d-118">なし。</span><span class="sxs-lookup"><span data-stu-id="bf87d-118">None.</span></span>
+<span data-ttu-id="c44bd-118">なし。</span><span class="sxs-lookup"><span data-stu-id="c44bd-118">None.</span></span>
 

@@ -1,21 +1,20 @@
 ---
-title: CommitTransOptionsEnum 列挙 (DAO)
-TOCTitle: CommitTransOptionsEnum Enumeration
+title: CommitTransOptionsEnum 列挙型 (DAO)
+TOCTitle: CommitTransOptionsEnum enumeration
 ms:assetid: f8bf56f7-41b7-ad90-1e83-58b7f4fc2927
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836959(v=office.15)
 ms:contentKeyID: 48548790
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9cb0c4aab2e50ff34a752efd465cf47b74ac2878
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: aada07e6ba76c01ccec8fb14f4b66824c32950f3
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25881973"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25947820"
 ---
-# <a name="committransoptionsenum-enumeration-dao"></a><span data-ttu-id="3590f-102">CommitTransOptionsEnum 列挙 (DAO)</span><span class="sxs-lookup"><span data-stu-id="3590f-102">CommitTransOptionsEnum Enumeration (DAO)</span></span>
+# <a name="committransoptionsenum-enumeration-dao"></a><span data-ttu-id="5a513-102">CommitTransOptionsEnum 列挙型 (DAO)</span><span class="sxs-lookup"><span data-stu-id="5a513-102">CommitTransOptionsEnum enumeration (DAO)</span></span>
 
+<span data-ttu-id="5a513-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="5a513-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="3590f-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="3590f-103">**Applies to**: Access 2013, Office 2013</span></span>
-
-<span data-ttu-id="3590f-104">未定</span><span class="sxs-lookup"><span data-stu-id="3590f-104">TBD</span></span>
+<span data-ttu-id="5a513-104">未定</span><span class="sxs-lookup"><span data-stu-id="5a513-104">TBD</span></span>

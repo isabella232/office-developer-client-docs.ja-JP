@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn142529(v=office.15)
 ms:contentKeyID: 52073767
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5cb62ab97e71c97e521d7ca4711801f1a13d5011
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 12b3383da1afd91a7debef6d4101654edc3eabc8
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922336"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945654"
 ---
-# <a name="tabledefs-properties-dao"></a><span data-ttu-id="7bd64-102">テーブル定義のプロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="7bd64-102">TableDefs properties (DAO)</span></span>
+# <a name="tabledefs-properties-dao"></a><span data-ttu-id="9660d-102">テーブル定義のプロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="9660d-102">TableDefs properties (DAO)</span></span>
 
+<span data-ttu-id="9660d-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="9660d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="7bd64-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="7bd64-103">**Applies to**: Access 2013, Office 2013</span></span>
-
-
-
-  - [<span data-ttu-id="7bd64-104">TableDefs.Count プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="7bd64-104">TableDefs.Count property (DAO)</span></span>](tabledefs-count-property-dao.md)
+- [<span data-ttu-id="9660d-104">TableDefs.Count プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="9660d-104">TableDefs.Count property (DAO)</span></span>](tabledefs-count-property-dao.md)
 

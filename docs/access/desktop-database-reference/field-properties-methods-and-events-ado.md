@@ -6,51 +6,39 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249186(v=office.15)
 ms:contentKeyID: 48544444
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 83777609718e4859f45d54d3af83901f5393840a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 69c1a25006a0f98963e5e23d9026533b6fe26621
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919305"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25943857"
 ---
-# <a name="field-properties-methods-and-events-ado"></a><span data-ttu-id="e8500-102">フィールドのプロパティ、メソッド、およびイベント (ADO)</span><span class="sxs-lookup"><span data-stu-id="e8500-102">Field properties, methods, and events (ADO)</span></span>
+# <a name="field-properties-methods-and-events-ado"></a><span data-ttu-id="0d300-102">フィールドのプロパティ、メソッド、およびイベント (ADO)</span><span class="sxs-lookup"><span data-stu-id="0d300-102">Field properties, methods, and events (ADO)</span></span>
+
+<span data-ttu-id="0d300-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="0d300-103">**Applies to**: Access 2013, Office 2013</span></span>
+
+## <a name="propertiescollections"></a><span data-ttu-id="0d300-104">プロパティ/コレクション</span><span class="sxs-lookup"><span data-stu-id="0d300-104">Properties/Collections</span></span>
+
+- [<span data-ttu-id="0d300-105">ActualSize プロパティ</span><span class="sxs-lookup"><span data-stu-id="0d300-105">ActualSize property</span></span>](actualsize-property-ado.md)
+- [<span data-ttu-id="0d300-106">Attributes プロパティ</span><span class="sxs-lookup"><span data-stu-id="0d300-106">Attributes property</span></span>](attributes-property-ado.md)
+- [<span data-ttu-id="0d300-107">DefinedSize プロパティ</span><span class="sxs-lookup"><span data-stu-id="0d300-107">DefinedSize property</span></span>](definedsize-property-ado.md)
+- [<span data-ttu-id="0d300-108">Name プロパティ</span><span class="sxs-lookup"><span data-stu-id="0d300-108">Name property</span></span>](name-property-ado.md)
+- [<span data-ttu-id="0d300-109">NumericScale プロパティ</span><span class="sxs-lookup"><span data-stu-id="0d300-109">NumericScale property</span></span>](numericscale-property-ado.md)
+- [<span data-ttu-id="0d300-110">OriginalValue プロパティ</span><span class="sxs-lookup"><span data-stu-id="0d300-110">OriginalValue property</span></span>](originalvalue-property-ado.md)
+- [<span data-ttu-id="0d300-111">精度のプロパティ</span><span class="sxs-lookup"><span data-stu-id="0d300-111">Precision property</span></span>](precision-property-ado.md)
+- [<span data-ttu-id="0d300-112">Properties コレクション</span><span class="sxs-lookup"><span data-stu-id="0d300-112">Properties collection</span></span>](properties-collection-ado.md)
+- [<span data-ttu-id="0d300-113">Status プロパティ (ADO Field)</span><span class="sxs-lookup"><span data-stu-id="0d300-113">Status property (ADO Field)</span></span>](status-property-ado-field.md)
+- [<span data-ttu-id="0d300-114">Type プロパティ</span><span class="sxs-lookup"><span data-stu-id="0d300-114">Type property</span></span>](type-property-ado.md)
+- [<span data-ttu-id="0d300-115">UnderlyingValue プロパティ</span><span class="sxs-lookup"><span data-stu-id="0d300-115">UnderlyingValue property</span></span>](underlyingvalue-property-ado.md)
+- [<span data-ttu-id="0d300-116">Value プロパティ</span><span class="sxs-lookup"><span data-stu-id="0d300-116">Value property</span></span>](value-property-ado.md)
 
 
-<span data-ttu-id="e8500-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="e8500-103">**Applies to**: Access 2013, Office 2013</span></span>
+## <a name="methods"></a><span data-ttu-id="0d300-117">メソッド</span><span class="sxs-lookup"><span data-stu-id="0d300-117">Methods</span></span>
 
-## <a name="propertiescollections"></a><span data-ttu-id="e8500-104">プロパティ/コレクション</span><span class="sxs-lookup"><span data-stu-id="e8500-104">Properties/Collections</span></span>
+- [<span data-ttu-id="0d300-118">AppendChunk メソッド</span><span class="sxs-lookup"><span data-stu-id="0d300-118">AppendChunk method</span></span>](appendchunk-method-ado.md)
+- [<span data-ttu-id="0d300-119">GetChunk メソッド</span><span class="sxs-lookup"><span data-stu-id="0d300-119">GetChunk method</span></span>](getchunk-method-ado.md)
 
-- [<span data-ttu-id="e8500-105">ActualSize プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="e8500-105">ActualSize Property</span></span>](actualsize-property-ado.md)
+## <a name="events"></a><span data-ttu-id="0d300-120">イベント</span><span class="sxs-lookup"><span data-stu-id="0d300-120">Events</span></span>
 
-- [<span data-ttu-id="e8500-106">Attributes プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="e8500-106">Attributes Property</span></span>](attributes-property-ado.md)
-
-- [<span data-ttu-id="e8500-107">DefinedSize プロパティ (ADOX)</span><span class="sxs-lookup"><span data-stu-id="e8500-107">DefinedSize Property</span></span>](definedsize-property-ado.md)
-
-- [<span data-ttu-id="e8500-108">Name プロパティ (ADOX)</span><span class="sxs-lookup"><span data-stu-id="e8500-108">Name Property</span></span>](name-property-ado.md)
-
-- [<span data-ttu-id="e8500-109">NumericScale プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="e8500-109">NumericScale Property</span></span>](numericscale-property-ado.md)
-
-- [<span data-ttu-id="e8500-110">OriginalValue プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="e8500-110">OriginalValue Property</span></span>](originalvalue-property-ado.md)
-
-- [<span data-ttu-id="e8500-111">Precision プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="e8500-111">Precision Property</span></span>](precision-property-ado.md)
-
-- [<span data-ttu-id="e8500-112">Properties コレクション (ADO)</span><span class="sxs-lookup"><span data-stu-id="e8500-112">Properties Collection</span></span>](properties-collection-ado.md)
-
-- [<span data-ttu-id="e8500-113">Status プロパティ (ADO Field)</span><span class="sxs-lookup"><span data-stu-id="e8500-113">Status Property (ADO Field)</span></span>](status-property-ado-field.md)
-
-- [<span data-ttu-id="e8500-114">Type プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="e8500-114">Type Property</span></span>](type-property-ado.md)
-
-- [<span data-ttu-id="e8500-115">UnderlyingValue プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="e8500-115">UnderlyingValue Property</span></span>](underlyingvalue-property-ado.md)
-
-- [<span data-ttu-id="e8500-116">Value プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="e8500-116">Value Property</span></span>](value-property-ado.md)
-
-## <a name="methods"></a><span data-ttu-id="e8500-117">メソッド</span><span class="sxs-lookup"><span data-stu-id="e8500-117">Methods</span></span>
-
-- [<span data-ttu-id="e8500-118">AppendChunk メソッド (ADO)</span><span class="sxs-lookup"><span data-stu-id="e8500-118">AppendChunk Method</span></span>](appendchunk-method-ado.md)
-
-- [<span data-ttu-id="e8500-119">GetChunk メソッド (ADO)</span><span class="sxs-lookup"><span data-stu-id="e8500-119">GetChunk Method</span></span>](getchunk-method-ado.md)
-
-## <a name="events"></a><span data-ttu-id="e8500-120">イベント</span><span class="sxs-lookup"><span data-stu-id="e8500-120">Events</span></span>
-
-<span data-ttu-id="e8500-121">なし。</span><span class="sxs-lookup"><span data-stu-id="e8500-121">None.</span></span>
+<span data-ttu-id="0d300-121">なし。</span><span class="sxs-lookup"><span data-stu-id="0d300-121">None.</span></span>
 

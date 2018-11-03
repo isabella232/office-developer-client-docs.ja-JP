@@ -6,35 +6,30 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249082(v=office.15)
 ms:contentKeyID: 48544026
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c5516e5169be907cc2e8f6d7c0db825926604a43
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: f98b51ac35f9be6c96eb87c4db6bf73a2319692b
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919725"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945118"
 ---
-# <a name="user-properties-methods-and-events-adox"></a><span data-ttu-id="af6b2-102">ユーザーのプロパティ、メソッド、およびイベント (ADOX)</span><span class="sxs-lookup"><span data-stu-id="af6b2-102">User properties, methods, and events (ADOX)</span></span>
+# <a name="user-properties-methods-and-events-adox"></a><span data-ttu-id="d624b-102">ユーザーのプロパティ、メソッド、およびイベント (ADOX)</span><span class="sxs-lookup"><span data-stu-id="d624b-102">User properties, methods, and events (ADOX)</span></span>
 
+<span data-ttu-id="d624b-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="d624b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="af6b2-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="af6b2-103">**Applies to**: Access 2013, Office 2013</span></span>
+## <a name="propertiescollections"></a><span data-ttu-id="d624b-104">プロパティ/コレクション</span><span class="sxs-lookup"><span data-stu-id="d624b-104">Properties/Collections</span></span>
 
-## <a name="propertiescollections"></a><span data-ttu-id="af6b2-104">プロパティ/コレクション</span><span class="sxs-lookup"><span data-stu-id="af6b2-104">Properties/Collections</span></span>
+- [<span data-ttu-id="d624b-105">グループ コレクション</span><span class="sxs-lookup"><span data-stu-id="d624b-105">Groups collection</span></span>](groups-collection-adox.md)
+- [<span data-ttu-id="d624b-106">Name プロパティ</span><span class="sxs-lookup"><span data-stu-id="d624b-106">Name property</span></span>](name-property-adox.md)
+- [<span data-ttu-id="d624b-107">プロパティのコレクション</span><span class="sxs-lookup"><span data-stu-id="d624b-107">Properties collection</span></span>](properties-collection-ado.md)
 
-- [<span data-ttu-id="af6b2-105">Groups コレクション (ADOX)</span><span class="sxs-lookup"><span data-stu-id="af6b2-105">Groups Collection</span></span>](groups-collection-adox.md)
+## <a name="methods"></a><span data-ttu-id="d624b-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="d624b-108">Methods</span></span>
 
-- [<span data-ttu-id="af6b2-106">Name プロパティ (ADOX)</span><span class="sxs-lookup"><span data-stu-id="af6b2-106">Name Property</span></span>](name-property-adox.md)
+- [<span data-ttu-id="d624b-109">パスワードの変更方法</span><span class="sxs-lookup"><span data-stu-id="d624b-109">ChangePassword method</span></span>](changepassword-method-adox.md)
+- [<span data-ttu-id="d624b-110">GetPermissions メソッド</span><span class="sxs-lookup"><span data-stu-id="d624b-110">GetPermissions method</span></span>](getpermissions-method-adox.md)
+- [<span data-ttu-id="d624b-111">SetPermissions メソッド</span><span class="sxs-lookup"><span data-stu-id="d624b-111">SetPermissions method</span></span>](setpermissions-method-adox.md)
 
-- [<span data-ttu-id="af6b2-107">Properties コレクション (ADO)</span><span class="sxs-lookup"><span data-stu-id="af6b2-107">Properties Collection</span></span>](properties-collection-ado.md)
+## <a name="events"></a><span data-ttu-id="d624b-112">イベント</span><span class="sxs-lookup"><span data-stu-id="d624b-112">Events</span></span>
 
-## <a name="methods"></a><span data-ttu-id="af6b2-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="af6b2-108">Methods</span></span>
-
-- [<span data-ttu-id="af6b2-109">ChangePassword メソッド (ADOX)</span><span class="sxs-lookup"><span data-stu-id="af6b2-109">ChangePassword Method</span></span>](changepassword-method-adox.md)
-
-- [<span data-ttu-id="af6b2-110">GetPermissions メソッド (ADOX)</span><span class="sxs-lookup"><span data-stu-id="af6b2-110">GetPermissions Method</span></span>](getpermissions-method-adox.md)
-
-- [<span data-ttu-id="af6b2-111">SetPermissions メソッド (ADOX)</span><span class="sxs-lookup"><span data-stu-id="af6b2-111">SetPermissions Method</span></span>](setpermissions-method-adox.md)
-
-## <a name="events"></a><span data-ttu-id="af6b2-112">イベント</span><span class="sxs-lookup"><span data-stu-id="af6b2-112">Events</span></span>
-
-<span data-ttu-id="af6b2-113">なし。</span><span class="sxs-lookup"><span data-stu-id="af6b2-113">None.</span></span>
+<span data-ttu-id="d624b-113">なし。</span><span class="sxs-lookup"><span data-stu-id="d624b-113">None.</span></span>
 

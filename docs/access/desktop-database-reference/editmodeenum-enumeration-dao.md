@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195860(v=office.15)
 ms:contentKeyID: 48545641
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0ac9617358e30ecdbe97db872b7513d1a464b818
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 41a22e7c9e7239bc6cf4ba5c473744641a0f5f3d
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25886201"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25947946"
 ---
-# <a name="editmodeenum-enumeration-dao"></a><span data-ttu-id="f83e6-102">EditModeEnum 列挙 (DAO)</span><span class="sxs-lookup"><span data-stu-id="f83e6-102">EditModeEnum Enumeration (DAO)</span></span>
+# <a name="editmodeenum-enumeration-dao"></a><span data-ttu-id="9fe9e-102">EditModeEnum 列挙 (DAO)</span><span class="sxs-lookup"><span data-stu-id="9fe9e-102">EditModeEnum enumeration (DAO)</span></span>
 
 
-<span data-ttu-id="f83e6-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f83e6-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="9fe9e-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="9fe9e-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f83e6-104">カレント レコードの編集の状態を示します。</span><span class="sxs-lookup"><span data-stu-id="f83e6-104">Indicates the state of editing for the current record.</span></span>
+<span data-ttu-id="9fe9e-104">カレント レコードの編集の状態を示します。</span><span class="sxs-lookup"><span data-stu-id="9fe9e-104">Indicates the state of editing for the current record.</span></span>
 
 <table>
 <colgroup>
@@ -28,26 +28,26 @@ ms.locfileid: "25886201"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="f83e6-105">名前</span><span class="sxs-lookup"><span data-stu-id="f83e6-105">Name</span></span></p></th>
-<th><p><span data-ttu-id="f83e6-106">値</span><span class="sxs-lookup"><span data-stu-id="f83e6-106">Value</span></span></p></th>
-<th><p><span data-ttu-id="f83e6-107">説明</span><span class="sxs-lookup"><span data-stu-id="f83e6-107">Description</span></span></p></th>
+<th><p><span data-ttu-id="9fe9e-105">名前</span><span class="sxs-lookup"><span data-stu-id="9fe9e-105">Name</span></span></p></th>
+<th><p><span data-ttu-id="9fe9e-106">値</span><span class="sxs-lookup"><span data-stu-id="9fe9e-106">Value</span></span></p></th>
+<th><p><span data-ttu-id="9fe9e-107">説明</span><span class="sxs-lookup"><span data-stu-id="9fe9e-107">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="f83e6-108">dbEditAdd</span><span class="sxs-lookup"><span data-stu-id="f83e6-108">dbEditAdd</span></span></p></td>
-<td><p><span data-ttu-id="f83e6-109">2</span><span class="sxs-lookup"><span data-stu-id="f83e6-109">2</span></span></p></td>
-<td><p><span data-ttu-id="f83e6-110"><strong>AddNew</strong> メソッドが呼び出されました。</span><span class="sxs-lookup"><span data-stu-id="f83e6-110"><strong>AddNew</strong> method invoked.</span></span></p></td>
+<td><p><span data-ttu-id="9fe9e-108">dbEditAdd</span><span class="sxs-lookup"><span data-stu-id="9fe9e-108">dbEditAdd</span></span></p></td>
+<td><p><span data-ttu-id="9fe9e-109">2</span><span class="sxs-lookup"><span data-stu-id="9fe9e-109">2</span></span></p></td>
+<td><p><span data-ttu-id="9fe9e-110"><strong>AddNew</strong> メソッドが呼び出されました。</span><span class="sxs-lookup"><span data-stu-id="9fe9e-110"><strong>AddNew</strong> method invoked.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="f83e6-111">dbEditInProgress</span><span class="sxs-lookup"><span data-stu-id="f83e6-111">dbEditInProgress</span></span></p></td>
-<td><p><span data-ttu-id="f83e6-112">1</span><span class="sxs-lookup"><span data-stu-id="f83e6-112">1</span></span></p></td>
-<td><p><span data-ttu-id="f83e6-113"><strong>Edit</strong> メソッドが呼び出されました。</span><span class="sxs-lookup"><span data-stu-id="f83e6-113"><strong>Edit</strong> method invoked.</span></span></p></td>
+<td><p><span data-ttu-id="9fe9e-111">dbEditInProgress</span><span class="sxs-lookup"><span data-stu-id="9fe9e-111">dbEditInProgress</span></span></p></td>
+<td><p><span data-ttu-id="9fe9e-112">1</span><span class="sxs-lookup"><span data-stu-id="9fe9e-112">1</span></span></p></td>
+<td><p><span data-ttu-id="9fe9e-113"><strong>Edit</strong> メソッドが呼び出されました。</span><span class="sxs-lookup"><span data-stu-id="9fe9e-113"><strong>Edit</strong> method invoked.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="f83e6-114">dbEditNone</span><span class="sxs-lookup"><span data-stu-id="f83e6-114">dbEditNone</span></span></p></td>
-<td><p><span data-ttu-id="f83e6-115">0</span><span class="sxs-lookup"><span data-stu-id="f83e6-115">0</span></span></p></td>
-<td><p><span data-ttu-id="f83e6-116"><strong>Edit</strong> メソッドが呼び出されました。</span><span class="sxs-lookup"><span data-stu-id="f83e6-116"><strong>Edit</strong> method invoked.</span></span></p></td>
+<td><p><span data-ttu-id="9fe9e-114">dbEditNone</span><span class="sxs-lookup"><span data-stu-id="9fe9e-114">dbEditNone</span></span></p></td>
+<td><p><span data-ttu-id="9fe9e-115">0</span><span class="sxs-lookup"><span data-stu-id="9fe9e-115">0</span></span></p></td>
+<td><p><span data-ttu-id="9fe9e-116"><strong>Edit</strong> メソッドが呼び出されました。</span><span class="sxs-lookup"><span data-stu-id="9fe9e-116"><strong>Edit</strong> method invoked.</span></span></p></td>
 </tr>
 </tbody>
 </table>

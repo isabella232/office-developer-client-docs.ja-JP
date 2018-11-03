@@ -6,36 +6,30 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249217(v=office.15)
 ms:contentKeyID: 48544571
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 85a3b0ed045360a0bf20d360ba42170b2cd2ce57
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 240ac8e3f05ddefd85c223cfe18adfbbdd22715d
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922959"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25946049"
 ---
-# <a name="hierarchy-properties-methods-and-events-ado-md"></a><span data-ttu-id="0cdf2-102">階層のプロパティ、メソッド、およびイベント (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="0cdf2-102">Hierarchy properties, methods, and events (ADO MD)</span></span>
+# <a name="hierarchy-properties-methods-and-events-ado-md"></a><span data-ttu-id="f6839-102">階層のプロパティ、メソッド、およびイベント (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="f6839-102">Hierarchy properties, methods, and events (ADO MD)</span></span>
 
+<span data-ttu-id="f6839-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f6839-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="0cdf2-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="0cdf2-103">**Applies to**: Access 2013, Office 2013</span></span>
+## <a name="propertiescollections"></a><span data-ttu-id="f6839-104">プロパティ/コレクション</span><span class="sxs-lookup"><span data-stu-id="f6839-104">Properties/Collections</span></span>
 
+- [<span data-ttu-id="f6839-105">Description プロパティ</span><span class="sxs-lookup"><span data-stu-id="f6839-105">Description property</span></span>](description-property-ado-md.md)
+- [<span data-ttu-id="f6839-106">レベル コレクション</span><span class="sxs-lookup"><span data-stu-id="f6839-106">Levels collection</span></span>](levels-collection-ado-md.md)
+- [<span data-ttu-id="f6839-107">Name プロパティ</span><span class="sxs-lookup"><span data-stu-id="f6839-107">Name property</span></span>](name-property-ado-md.md)
+- [<span data-ttu-id="f6839-108">Properties コレクション</span><span class="sxs-lookup"><span data-stu-id="f6839-108">Properties collection</span></span>](properties-collection-ado.md)
+- [<span data-ttu-id="f6839-109">一意な名前のプロパティ</span><span class="sxs-lookup"><span data-stu-id="f6839-109">UniqueName property</span></span>](uniquename-property-ado-md.md)
 
-## <a name="propertiescollections"></a><span data-ttu-id="0cdf2-104">プロパティ/コレクション</span><span class="sxs-lookup"><span data-stu-id="0cdf2-104">Properties/Collections</span></span>
+## <a name="methods"></a><span data-ttu-id="f6839-110">メソッド</span><span class="sxs-lookup"><span data-stu-id="f6839-110">Methods</span></span>
 
-- [<span data-ttu-id="0cdf2-105">Description プロパティ (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="0cdf2-105">Description Property</span></span>](description-property-ado-md.md)
+<span data-ttu-id="f6839-111">なし</span><span class="sxs-lookup"><span data-stu-id="f6839-111">None.</span></span>
 
-- [<span data-ttu-id="0cdf2-106">Levels コレクション (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="0cdf2-106">Levels Collection</span></span>](levels-collection-ado-md.md)
+## <a name="events"></a><span data-ttu-id="f6839-112">イベント</span><span class="sxs-lookup"><span data-stu-id="f6839-112">Events</span></span>
 
-- [<span data-ttu-id="0cdf2-107">Name プロパティ (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="0cdf2-107">Name Property</span></span>](name-property-ado-md.md)
-
-- [<span data-ttu-id="0cdf2-108">Properties コレクション (ADO)</span><span class="sxs-lookup"><span data-stu-id="0cdf2-108">Properties Collection</span></span>](properties-collection-ado.md)
-
-- [<span data-ttu-id="0cdf2-109">UniqueName プロパティ (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="0cdf2-109">UniqueName Property</span></span>](uniquename-property-ado-md.md)
-
-## <a name="methods"></a><span data-ttu-id="0cdf2-110">メソッド</span><span class="sxs-lookup"><span data-stu-id="0cdf2-110">Methods</span></span>
-
-<span data-ttu-id="0cdf2-111">なし</span><span class="sxs-lookup"><span data-stu-id="0cdf2-111">None.</span></span>
-
-## <a name="events"></a><span data-ttu-id="0cdf2-112">イベント</span><span class="sxs-lookup"><span data-stu-id="0cdf2-112">Events</span></span>
-
-<span data-ttu-id="0cdf2-113">なし。</span><span class="sxs-lookup"><span data-stu-id="0cdf2-113">None.</span></span>
+<span data-ttu-id="f6839-113">なし。</span><span class="sxs-lookup"><span data-stu-id="f6839-113">None.</span></span>
 

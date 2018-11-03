@@ -1,24 +1,24 @@
 ---
-title: メソッド、インデックスのシーク プロパティの使用例 (VB)
-TOCTitle: Seek Method and Index property example (VB)
+title: Seek メソッドと Index プロパティの使用例 (VB)
+TOCTitle: Seek method and Index property example (VB)
 ms:assetid: c3ddb72c-2b19-53c8-9779-2c503486e44e
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249957(v=office.15)
 ms:contentKeyID: 48547577
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 692dcd7e046935aa447d6d39de574dd3d3e6b129
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 41a50e9f115ec308a27a1c7169aaa61a56195dda
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25871872"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945959"
 ---
-# <a name="seek-method-and-index-property-example-vb"></a><span data-ttu-id="28e57-102">メソッド、インデックスのシーク プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="28e57-102">Seek Method and Index property example (VB)</span></span>
+# <a name="seek-method-and-index-property-example-vb"></a><span data-ttu-id="d6895-102">Seek メソッドと Index プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="d6895-102">Seek method and Index property example (VB)</span></span>
 
 
-<span data-ttu-id="28e57-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="28e57-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="d6895-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="d6895-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="28e57-104">この例では、[Recordset](recordset-object-ado.md) オブジェクトの [Seek](seek-method-ado.md) メソッドと [Index](index-property-ado.md) プロパティを、指定された ***Employee ID*** と組み合わせて使用し、Nwind.mdb データベースの ***Employees*** テーブルで社員の名前を検索します。</span><span class="sxs-lookup"><span data-stu-id="28e57-104">This example uses the [Recordset](recordset-object-ado.md) object's [Seek](seek-method-ado.md) method and [Index](index-property-ado.md) property in conjunction with a given ***Employee ID***, to locate the employee's name in the ***Employees*** table of the Nwind.mdb database.</span></span>
+<span data-ttu-id="d6895-104">この例では、[Recordset](recordset-object-ado.md) オブジェクトの [Seek](seek-method-ado.md) メソッドと [Index](index-property-ado.md) プロパティを、指定された ***Employee ID*** と組み合わせて使用し、Nwind.mdb データベースの ***Employees*** テーブルで社員の名前を検索します。</span><span class="sxs-lookup"><span data-stu-id="d6895-104">This example uses the [Recordset](recordset-object-ado.md) object's [Seek](seek-method-ado.md) method and [Index](index-property-ado.md) property in conjunction with a given ***Employee ID***, to locate the employee's name in the ***Employees*** table of the Nwind.mdb database.</span></span>
 
 ```vb 
  

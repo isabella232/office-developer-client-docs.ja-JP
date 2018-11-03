@@ -6,30 +6,28 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249265(v=office.15)
 ms:contentKeyID: 48544831
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1e618599e8b4552017c02fd7d2083676770c050c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 205b296da7654730cdd70b38fde1a9b8bc69e4be
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921804"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945104"
 ---
-# <a name="catalog-properties-methods-and-events-ado-md"></a><span data-ttu-id="e72de-102">カタログのプロパティ、メソッド、およびイベント (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="e72de-102">Catalog properties, methods, and events (ADO MD)</span></span>
+# <a name="catalog-properties-methods-and-events-ado-md"></a><span data-ttu-id="c49f9-102">カタログのプロパティ、メソッド、およびイベント (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="c49f9-102">Catalog properties, methods, and events (ADO MD)</span></span>
 
-<span data-ttu-id="e72de-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="e72de-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="c49f9-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c49f9-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="propertiescollections"></a><span data-ttu-id="e72de-104">プロパティ/コレクション</span><span class="sxs-lookup"><span data-stu-id="e72de-104">Properties/Collections</span></span>
+## <a name="propertiescollections"></a><span data-ttu-id="c49f9-104">プロパティ/コレクション</span><span class="sxs-lookup"><span data-stu-id="c49f9-104">Properties/Collections</span></span>
 
-- [<span data-ttu-id="e72de-105">ActiveConnection プロパティ (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="e72de-105">ActiveConnection Property</span></span>](activeconnection-property-ado-md.md)
+- [<span data-ttu-id="c49f9-105">ActiveConnection プロパティ</span><span class="sxs-lookup"><span data-stu-id="c49f9-105">ActiveConnection property</span></span>](activeconnection-property-ado-md.md)
+- [<span data-ttu-id="c49f9-106">CubeDefs コレクション</span><span class="sxs-lookup"><span data-stu-id="c49f9-106">CubeDefs collection</span></span>](cubedefs-collection-ado-md.md)
+- [<span data-ttu-id="c49f9-107">Name プロパティ</span><span class="sxs-lookup"><span data-stu-id="c49f9-107">Name property</span></span>](name-property-ado-md.md)
 
-- [<span data-ttu-id="e72de-106">CubeDefs コレクション (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="e72de-106">CubeDefs Collection</span></span>](cubedefs-collection-ado-md.md)
+## <a name="methods"></a><span data-ttu-id="c49f9-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="c49f9-108">Methods</span></span>
 
-- [<span data-ttu-id="e72de-107">Name プロパティ (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="e72de-107">Name Property</span></span>](name-property-ado-md.md)
+<span data-ttu-id="c49f9-109">なし</span><span class="sxs-lookup"><span data-stu-id="c49f9-109">None.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="e72de-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="e72de-108">Methods</span></span>
+## <a name="events"></a><span data-ttu-id="c49f9-110">イベント</span><span class="sxs-lookup"><span data-stu-id="c49f9-110">Events</span></span>
 
-<span data-ttu-id="e72de-109">なし</span><span class="sxs-lookup"><span data-stu-id="e72de-109">None.</span></span>
-
-## <a name="events"></a><span data-ttu-id="e72de-110">イベント</span><span class="sxs-lookup"><span data-stu-id="e72de-110">Events</span></span>
-
-<span data-ttu-id="e72de-111">なし。</span><span class="sxs-lookup"><span data-stu-id="e72de-111">None.</span></span>
+<span data-ttu-id="c49f9-111">なし。</span><span class="sxs-lookup"><span data-stu-id="c49f9-111">None.</span></span>
 
