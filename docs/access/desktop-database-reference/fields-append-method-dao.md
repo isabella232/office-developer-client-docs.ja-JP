@@ -6,28 +6,28 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff820791(v=office.15)
 ms:contentKeyID: 48546719
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 44d7b6c8c9c44b51f7771dd731b50848f1cbf175
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 70fa0aba5385157453a1e9b009a167f036dc874b
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25884822"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25929119"
 ---
-# <a name="fieldsappend-method-dao"></a><span data-ttu-id="00dd6-102">Fields.Append メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="00dd6-102">Fields.Append Method (DAO)</span></span>
+# <a name="fieldsappend-method-dao"></a><span data-ttu-id="2a3ed-102">Fields.Append メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="2a3ed-102">Fields.Append method (DAO)</span></span>
 
 
-<span data-ttu-id="00dd6-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="00dd6-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="2a3ed-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="2a3ed-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-<span data-ttu-id="00dd6-104">新しい **[Field](field-object-dao.md)** オブジェクトを **[Fields](fields-collection-dao.md)** コレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="00dd6-104">Adds a new **[Field](field-object-dao.md)** to the **[Fields](fields-collection-dao.md)** collection.</span></span>
+<span data-ttu-id="2a3ed-104">新しい **[Field](field-object-dao.md)** オブジェクトを **[Fields](fields-collection-dao.md)** コレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="2a3ed-104">Adds a new **[Field](field-object-dao.md)** to the **[Fields](fields-collection-dao.md)** collection.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="00dd6-105">構文</span><span class="sxs-lookup"><span data-stu-id="00dd6-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="2a3ed-105">構文</span><span class="sxs-lookup"><span data-stu-id="2a3ed-105">Syntax</span></span>
 
-<span data-ttu-id="00dd6-106">*式*です。(***オブジェクト***) を追加します。</span><span class="sxs-lookup"><span data-stu-id="00dd6-106">*expression* .Append(***Object***)</span></span>
+<span data-ttu-id="2a3ed-106">*式*です。(***オブジェクト***) を追加します。</span><span class="sxs-lookup"><span data-stu-id="2a3ed-106">*expression* .Append(***Object***)</span></span>
 
-<span data-ttu-id="00dd6-107">\*式\***Fields**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="00dd6-107">*expression* A variable that represents a **Fields** object.</span></span>
+<span data-ttu-id="2a3ed-107">\*式\***Fields**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="2a3ed-107">*expression* A variable that represents a **Fields** object.</span></span>
 
-### <a name="parameters"></a><span data-ttu-id="00dd6-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="00dd6-108">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="2a3ed-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="2a3ed-108">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -38,36 +38,36 @@ ms.locfileid: "25884822"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="00dd6-109">名前</span><span class="sxs-lookup"><span data-stu-id="00dd6-109">Name</span></span></p></th>
-<th><p><span data-ttu-id="00dd6-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="00dd6-110">Required/Optional</span></span></p></th>
-<th><p><span data-ttu-id="00dd6-111">データ型</span><span class="sxs-lookup"><span data-stu-id="00dd6-111">Data Type</span></span></p></th>
-<th><p><span data-ttu-id="00dd6-112">説明</span><span class="sxs-lookup"><span data-stu-id="00dd6-112">Description</span></span></p></th>
+<th><p><span data-ttu-id="2a3ed-109">名前</span><span class="sxs-lookup"><span data-stu-id="2a3ed-109">Name</span></span></p></th>
+<th><p><span data-ttu-id="2a3ed-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="2a3ed-110">Required/Optional</span></span></p></th>
+<th><p><span data-ttu-id="2a3ed-111">データ型</span><span class="sxs-lookup"><span data-stu-id="2a3ed-111">Data Type</span></span></p></th>
+<th><p><span data-ttu-id="2a3ed-112">説明</span><span class="sxs-lookup"><span data-stu-id="2a3ed-112">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="00dd6-113">オブジェクト</span><span class="sxs-lookup"><span data-stu-id="00dd6-113">Object</span></span></p></td>
-<td><p><span data-ttu-id="00dd6-114">必須</span><span class="sxs-lookup"><span data-stu-id="00dd6-114">Required</span></span></p></td>
-<td><p><span data-ttu-id="00dd6-115"><strong>オブジェクト型 (Object)</strong></span><span class="sxs-lookup"><span data-stu-id="00dd6-115"><strong>Object</strong></span></span></p></td>
-<td><p><span data-ttu-id="00dd6-116">コレクションに追加するフィールドを表すオブジェクト変数です。</span><span class="sxs-lookup"><span data-stu-id="00dd6-116">An object variable that represents the field being appended to the collection.</span></span></p></td>
+<td><p><span data-ttu-id="2a3ed-113">オブジェクト</span><span class="sxs-lookup"><span data-stu-id="2a3ed-113">Object</span></span></p></td>
+<td><p><span data-ttu-id="2a3ed-114">必須</span><span class="sxs-lookup"><span data-stu-id="2a3ed-114">Required</span></span></p></td>
+<td><p><span data-ttu-id="2a3ed-115"><strong>オブジェクト型 (Object)</strong></span><span class="sxs-lookup"><span data-stu-id="2a3ed-115"><strong>Object</strong></span></span></p></td>
+<td><p><span data-ttu-id="2a3ed-116">コレクションに追加するフィールドを表すオブジェクト変数です。</span><span class="sxs-lookup"><span data-stu-id="2a3ed-116">An object variable that represents the field being appended to the collection.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="00dd6-117">注釈</span><span class="sxs-lookup"><span data-stu-id="00dd6-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2a3ed-117">注釈</span><span class="sxs-lookup"><span data-stu-id="2a3ed-117">Remarks</span></span>
 
-<span data-ttu-id="00dd6-118">**Append** メソッドを使用して、データベースへの新しいテーブルの追加、テーブルへのフィールドの追加、またはインデックスへのフィールドの追加を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="00dd6-118">You can use the **Append** method to add a new table to a database, add a field to a table, and add a field to an index.</span></span>
+<span data-ttu-id="2a3ed-118">**Append** メソッドを使用して、データベースへの新しいテーブルの追加、テーブルへのフィールドの追加、またはインデックスへのフィールドの追加を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="2a3ed-118">You can use the **Append** method to add a new table to a database, add a field to a table, and add a field to an index.</span></span>
 
-<span data-ttu-id="00dd6-119">追加されたオブジェクトは、持続的なオブジェクトになり、 **Delete** メソッドを使用して削除するまでディスクに格納されます。</span><span class="sxs-lookup"><span data-stu-id="00dd6-119">The appended object becomes a persistent object, stored on disk, until you delete it by using the **Delete** method.</span></span>
+<span data-ttu-id="2a3ed-119">追加されたオブジェクトは、持続的なオブジェクトになり、 **Delete** メソッドを使用して削除するまでディスクに格納されます。</span><span class="sxs-lookup"><span data-stu-id="2a3ed-119">The appended object becomes a persistent object, stored on disk, until you delete it by using the **Delete** method.</span></span>
 
-<span data-ttu-id="00dd6-120">新しいオブジェクトの追加は直ちに実行されますが、データベース構造の変更によって他のコレクションが影響を受ける可能性がある場合は、そのコレクションに対して **Refresh** メソッドを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="00dd6-120">The addition of a new object occurs immediately, but you should use the **Refresh** method on any other collections that may be affected by changes to the database structure.</span></span>
+<span data-ttu-id="2a3ed-120">新しいオブジェクトの追加は直ちに実行されますが、データベース構造の変更によって他のコレクションが影響を受ける可能性がある場合は、そのコレクションに対して **Refresh** メソッドを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2a3ed-120">The addition of a new object occurs immediately, but you should use the **Refresh** method on any other collections that may be affected by changes to the database structure.</span></span>
 
-<span data-ttu-id="00dd6-121">追加するオブジェクトが完全ではない場合 ( **Indexes** コレクションに **Index** オブジェクトを追加する前に、その **Fields** コレクションに **Field** オブジェクトが追加されていない場合など) や、1 つ以上の下位オブジェクトで設定されているプロパティが正しくない場合は、 **Append** メソッドを使用するとエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="00dd6-121">If the object you're appending isn't complete (such as when you haven't appended any **Field** objects to a **Fields** collection of an **Index** object before it's appended to an **Indexes** collection) or if the properties set in one or more subordinate objects are incorrect, using the **Append** method causes an error.</span></span> <span data-ttu-id="00dd6-122">たとえば、実行時エラーは、フィールドの種類を指定するいないし、 **TableDef**オブジェクトの**Fields**コレクションに**Field**オブジェクトを追加しようとしに**Append**メソッドを使用してトリガーされます。</span><span class="sxs-lookup"><span data-stu-id="00dd6-122">For example, if you haven’t specified a field type and then try to append the **Field** object to the **Fields** collection in a **TableDef** object, using the **Append** method triggers a run-time error.</span></span>
+<span data-ttu-id="2a3ed-121">追加するオブジェクトが完全ではない場合 ( **Indexes** コレクションに **Index** オブジェクトを追加する前に、その **Fields** コレクションに **Field** オブジェクトが追加されていない場合など) や、1 つ以上の下位オブジェクトで設定されているプロパティが正しくない場合は、 **Append** メソッドを使用するとエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="2a3ed-121">If the object you're appending isn't complete (such as when you haven't appended any **Field** objects to a **Fields** collection of an **Index** object before it's appended to an **Indexes** collection) or if the properties set in one or more subordinate objects are incorrect, using the **Append** method causes an error.</span></span> <span data-ttu-id="2a3ed-122">たとえば、実行時エラーは、フィールドの種類を指定するいないし、 **TableDef**オブジェクトの**Fields**コレクションに**Field**オブジェクトを追加しようとしに**Append**メソッドを使用してトリガーされます。</span><span class="sxs-lookup"><span data-stu-id="2a3ed-122">For example, if you haven’t specified a field type and then try to append the **Field** object to the **Fields** collection in a **TableDef** object, using the **Append** method triggers a run-time error.</span></span>
 
-## <a name="example"></a><span data-ttu-id="00dd6-123">例</span><span class="sxs-lookup"><span data-stu-id="00dd6-123">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2a3ed-123">例</span><span class="sxs-lookup"><span data-stu-id="2a3ed-123">Example</span></span>
 
-<span data-ttu-id="00dd6-p102">次の例では、 **Append** メソッドまたは **Delete** メソッドを使用して、 **TableDef** の **Fields** コレクションを変更します。このプロシージャを実行するには、AppendDeleteField プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="00dd6-p102">This example uses either the **Append** method or the **Delete** method to modify the **Fields** collection of a **TableDef**. The AppendDeleteField procedure is required for this procedure to run.</span></span>
+<span data-ttu-id="2a3ed-p102">次の例では、 **Append** メソッドまたは **Delete** メソッドを使用して、 **TableDef** の **Fields** コレクションを変更します。このプロシージャを実行するには、AppendDeleteField プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="2a3ed-p102">This example uses either the **Append** method or the **Delete** method to modify the **Fields** collection of a **TableDef**. The AppendDeleteField procedure is required for this procedure to run.</span></span>
 
 ```vb
     Sub AppendX() 

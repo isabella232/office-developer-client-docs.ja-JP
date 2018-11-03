@@ -1,28 +1,23 @@
 ---
-title: Property オブジェクト参照 (DAO)
+title: プロパティ オブジェクト参照 (DAO)
 TOCTitle: Property Object
 ms:assetid: f480f51c-5333-4a10-afcd-73713291c7d7
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn180085(v=office.15)
 ms:contentKeyID: 52075035
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4d9fb5efb235b779c28aa903b5e6d12047840cee
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: e2327b312f408bb97c2438917981be5053b7f913
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25888189"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25931275"
 ---
-# <a name="property-object-reference-dao"></a><span data-ttu-id="5af4e-102">Property オブジェクト参照 (DAO)</span><span class="sxs-lookup"><span data-stu-id="5af4e-102">Property Object Reference (DAO)</span></span>
+# <a name="property-object-reference-dao"></a><span data-ttu-id="84b3b-102">プロパティ オブジェクト参照 (DAO)</span><span class="sxs-lookup"><span data-stu-id="84b3b-102">Property object reference (DAO)</span></span>
 
+<span data-ttu-id="84b3b-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="84b3b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="5af4e-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="5af4e-103">**Applies to**: Access 2013, Office 2013</span></span>
-
-
-
-  - [<span data-ttu-id="5af4e-104">Property オブジェクト (DAO)</span><span class="sxs-lookup"><span data-stu-id="5af4e-104">Property Object (DAO)</span></span>](property-object-dao.md)
-
-  - [<span data-ttu-id="5af4e-105">Property メンバー (DAO)</span><span class="sxs-lookup"><span data-stu-id="5af4e-105">Property Members (DAO)</span></span>](property-members-dao.md)
-
-  - [<span data-ttu-id="5af4e-106">Property プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="5af4e-106">Property Properties (DAO)</span></span>](property-properties-dao.md)
+- [<span data-ttu-id="84b3b-104">プロパティ オブジェクト (DAO)</span><span class="sxs-lookup"><span data-stu-id="84b3b-104">Property object (DAO)</span></span>](property-object-dao.md)
+- [<span data-ttu-id="84b3b-105">プロパティのメンバー (DAO)</span><span class="sxs-lookup"><span data-stu-id="84b3b-105">Property members (DAO)</span></span>](property-members-dao.md)
+- [<span data-ttu-id="84b3b-106">プロパティのプロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="84b3b-106">Property properties (DAO)</span></span>](property-properties-dao.md)
 

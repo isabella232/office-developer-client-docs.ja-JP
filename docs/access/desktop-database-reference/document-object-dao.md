@@ -6,23 +6,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822082(v=office.15)
 ms:contentKeyID: 48547247
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 17dfd7d1a6f5a0c7ec6bd985d75d201202a71ff7
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 44dacdab7dc13855426bf366bda2801ddee8c022
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922315"
+ms.locfileid: "25936694"
 ---
-# <a name="document-object-dao"></a><span data-ttu-id="cf84f-102">ドキュメント オブジェクト (DAO)</span><span class="sxs-lookup"><span data-stu-id="cf84f-102">Document object (DAO)</span></span>
+# <a name="document-object-dao"></a><span data-ttu-id="64e26-102">ドキュメント オブジェクト (DAO)</span><span class="sxs-lookup"><span data-stu-id="64e26-102">Document object (DAO)</span></span>
 
 
-<span data-ttu-id="cf84f-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="cf84f-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="64e26-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="64e26-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="cf84f-p101">**Document** オブジェクトには、オブジェクトの 1 つのインスタンスの情報があります。オブジェクトは、データベース、保存されたテーブル、クエリ、またはリレーションシップのいずれかです (Microsoft Access データベース エンジン データベースのみ)。</span><span class="sxs-lookup"><span data-stu-id="cf84f-p101">A **Document** object includes information about one instance of an object. The object can be a database, saved table, query, or relationship (Microsoft Access database engine databases only).</span></span>
+<span data-ttu-id="64e26-p101">**Document** オブジェクトには、オブジェクトの 1 つのインスタンスの情報があります。オブジェクトは、データベース、保存されたテーブル、クエリ、またはリレーションシップのいずれかです (Microsoft Access データベース エンジン データベースのみ)。</span><span class="sxs-lookup"><span data-stu-id="64e26-p101">A **Document** object includes information about one instance of an object. The object can be a database, saved table, query, or relationship (Microsoft Access database engine databases only).</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="cf84f-106">注釈</span><span class="sxs-lookup"><span data-stu-id="cf84f-106">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="64e26-106">注釈</span><span class="sxs-lookup"><span data-stu-id="64e26-106">Remarks</span></span>
 
-<span data-ttu-id="cf84f-p102">各 **Container** オブジェクトには、 **Container** オブジェクトで指定された組み込みのオブジェクトのインスタンスを記述する **Document** オブジェクトを含む **Documents** コレクションがあります。次の表に、各 **Document** オブジェクトが記述するオブジェクトの種類、その **Container** オブジェクトの名前、および **Document** オブジェクトに格納されている情報の種類を示します。</span><span class="sxs-lookup"><span data-stu-id="cf84f-p102">Each **Container** object has a **Documents** collection containing **Document** objects that describe instances of built-in objects of the type specified by the **Container**. The following table lists the type of object each **Document** describes, the name of its **Container** object, and what type of information **Document** contains.</span></span>
+<span data-ttu-id="64e26-p102">各 **Container** オブジェクトには、 **Container** オブジェクトで指定された組み込みのオブジェクトのインスタンスを記述する **Document** オブジェクトを含む **Documents** コレクションがあります。次の表に、各 **Document** オブジェクトが記述するオブジェクトの種類、その **Container** オブジェクトの名前、および **Document** オブジェクトに格納されている情報の種類を示します。</span><span class="sxs-lookup"><span data-stu-id="64e26-p102">Each **Container** object has a **Documents** collection containing **Document** objects that describe instances of built-in objects of the type specified by the **Container**. The following table lists the type of object each **Document** describes, the name of its **Container** object, and what type of information **Document** contains.</span></span>
 
 <table>
 <colgroup>
@@ -32,58 +32,58 @@ ms.locfileid: "25922315"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="cf84f-109">ドキュメント</span><span class="sxs-lookup"><span data-stu-id="cf84f-109">Document</span></span></p></th>
-<th><p><span data-ttu-id="cf84f-110">コンテナー</span><span class="sxs-lookup"><span data-stu-id="cf84f-110">Container</span></span></p></th>
-<th><p><span data-ttu-id="cf84f-111">格納されている情報</span><span class="sxs-lookup"><span data-stu-id="cf84f-111">Contains information about</span></span></p></th>
+<th><p><span data-ttu-id="64e26-109">ドキュメント</span><span class="sxs-lookup"><span data-stu-id="64e26-109">Document</span></span></p></th>
+<th><p><span data-ttu-id="64e26-110">コンテナー</span><span class="sxs-lookup"><span data-stu-id="64e26-110">Container</span></span></p></th>
+<th><p><span data-ttu-id="64e26-111">格納されている情報</span><span class="sxs-lookup"><span data-stu-id="64e26-111">Contains information about</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="cf84f-112">データベース</span><span class="sxs-lookup"><span data-stu-id="cf84f-112">Database</span></span></p></td>
-<td><p><span data-ttu-id="cf84f-113">Databases</span><span class="sxs-lookup"><span data-stu-id="cf84f-113">Databases</span></span></p></td>
-<td><p><span data-ttu-id="cf84f-114">保存されたデータベース</span><span class="sxs-lookup"><span data-stu-id="cf84f-114">Saved database</span></span></p></td>
+<td><p><span data-ttu-id="64e26-112">データベース</span><span class="sxs-lookup"><span data-stu-id="64e26-112">Database</span></span></p></td>
+<td><p><span data-ttu-id="64e26-113">Databases</span><span class="sxs-lookup"><span data-stu-id="64e26-113">Databases</span></span></p></td>
+<td><p><span data-ttu-id="64e26-114">保存されたデータベース</span><span class="sxs-lookup"><span data-stu-id="64e26-114">Saved database</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="cf84f-115">テーブルまたはクエリ</span><span class="sxs-lookup"><span data-stu-id="cf84f-115">Table or query</span></span></p></td>
-<td><p><span data-ttu-id="cf84f-116">Tables</span><span class="sxs-lookup"><span data-stu-id="cf84f-116">Tables</span></span></p></td>
-<td><p><span data-ttu-id="cf84f-117">保存されたテーブルまたはクエリ</span><span class="sxs-lookup"><span data-stu-id="cf84f-117">Saved table or query</span></span></p></td>
+<td><p><span data-ttu-id="64e26-115">テーブルまたはクエリ</span><span class="sxs-lookup"><span data-stu-id="64e26-115">Table or query</span></span></p></td>
+<td><p><span data-ttu-id="64e26-116">Tables</span><span class="sxs-lookup"><span data-stu-id="64e26-116">Tables</span></span></p></td>
+<td><p><span data-ttu-id="64e26-117">保存されたテーブルまたはクエリ</span><span class="sxs-lookup"><span data-stu-id="64e26-117">Saved table or query</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="cf84f-118">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="cf84f-118">Relationship</span></span></p></td>
-<td><p><span data-ttu-id="cf84f-119">Relations</span><span class="sxs-lookup"><span data-stu-id="cf84f-119">Relations</span></span></p></td>
-<td><p><span data-ttu-id="cf84f-120">保存されたリレーションシップ</span><span class="sxs-lookup"><span data-stu-id="cf84f-120">Saved relationship</span></span></p></td>
+<td><p><span data-ttu-id="64e26-118">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="64e26-118">Relationship</span></span></p></td>
+<td><p><span data-ttu-id="64e26-119">Relations</span><span class="sxs-lookup"><span data-stu-id="64e26-119">Relations</span></span></p></td>
+<td><p><span data-ttu-id="64e26-120">保存されたリレーションシップ</span><span class="sxs-lookup"><span data-stu-id="64e26-120">Saved relationship</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 > [!NOTE]
-> <span data-ttu-id="cf84f-p103">[!メモ] 上記の表の **Container** オブジェクトと、同じ名前のコレクションを混同しないでください。Databases の **Container** オブジェクトは、保存されたすべてのデータベース オブジェクトを参照しますが、 **Databases** コレクションは、特定のワークスペースで開いているデータベース オブジェクトのみを参照します。</span><span class="sxs-lookup"><span data-stu-id="cf84f-p103">Don't confuse the **Container** objects listed in the preceding table with the collections of the same name. The Databases **Container** object refers to all saved database objects, but the **Databases** collection refers only to database objects that are open in a particular workspace.</span></span>
+> <span data-ttu-id="64e26-p103">[!メモ] 上記の表の **Container** オブジェクトと、同じ名前のコレクションを混同しないでください。Databases の **Container** オブジェクトは、保存されたすべてのデータベース オブジェクトを参照しますが、 **Databases** コレクションは、特定のワークスペースで開いているデータベース オブジェクトのみを参照します。</span><span class="sxs-lookup"><span data-stu-id="64e26-p103">Don't confuse the **Container** objects listed in the preceding table with the collections of the same name. The Databases **Container** object refers to all saved database objects, but the **Databases** collection refers only to database objects that are open in a particular workspace.</span></span>
 
 
 
-<span data-ttu-id="cf84f-123">**Document** オブジェクトを使用すると、以下の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="cf84f-123">With a **Document** object, you can:</span></span>
+<span data-ttu-id="64e26-123">**Document** オブジェクトを使用すると、以下の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="64e26-123">With a **Document** object, you can:</span></span>
 
-  - <span data-ttu-id="cf84f-124">**Name** プロパティを使用して、ユーザーまたは Microsoft Access データベース エンジンがオブジェクトの作成時に付けた名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="cf84f-124">Use the **Name** property to return the name that a user or the Microsoft Access database engine gave to the object when it was created.</span></span>
+  - <span data-ttu-id="64e26-124">**Name** プロパティを使用して、ユーザーまたは Microsoft Access データベース エンジンがオブジェクトの作成時に付けた名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="64e26-124">Use the **Name** property to return the name that a user or the Microsoft Access database engine gave to the object when it was created.</span></span>
 
-  - <span data-ttu-id="cf84f-125">**Container** プロパティを使用して、 **Document** オブジェクトを含む **Container** オブジェクトの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="cf84f-125">Use the **Container** property to return the name of the **Container** object that contains the **Document** object.</span></span>
+  - <span data-ttu-id="64e26-125">**Container** プロパティを使用して、 **Document** オブジェクトを含む **Container** オブジェクトの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="64e26-125">Use the **Container** property to return the name of the **Container** object that contains the **Document** object.</span></span>
 
-  - <span data-ttu-id="cf84f-p104">**Owner** プロパティを使用して、オブジェクトの所有者を設定または取得します。 **Owner** プロパティを設定するには、 **Document** オブジェクトに対する書き込み権限が必要であり、プロパティを既存の **User** オブジェクトまたは **Group** オブジェクトの名前に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf84f-p104">Use the **Owner** property to set or return the owner of the object. To set the **Owner** property, you must have write permission for the **Document** object, and you must set the property to the name of an existing **User** or **Group** object.</span></span>
+  - <span data-ttu-id="64e26-p104">**Owner** プロパティを使用して、オブジェクトの所有者を設定または取得します。 **Owner** プロパティを設定するには、 **Document** オブジェクトに対する書き込み権限が必要であり、プロパティを既存の **User** オブジェクトまたは **Group** オブジェクトの名前に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="64e26-p104">Use the **Owner** property to set or return the owner of the object. To set the **Owner** property, you must have write permission for the **Document** object, and you must set the property to the name of an existing **User** or **Group** object.</span></span>
 
-  - <span data-ttu-id="cf84f-p105">**UserName** プロパティまたは **Permissions** プロパティを使用して、オブジェクトのユーザーまたはグループのアクセス権限を設定または取得します。これらのプロパティを設定するには、 **Document** オブジェクトへの書き込み権限が必要であり、 **UserName** プロパティを既存の **User** オブジェクトまたは **Group** オブジェクトの名前に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf84f-p105">Use the **UserName** or **Permissions** properties to set or return the access permissions of a user or group for the object. To set these properties, you must have write permission for the **Document** object, and you must set the **UserName** property to the name of an existing **User** or **Group** object.</span></span>
+  - <span data-ttu-id="64e26-p105">**UserName** プロパティまたは **Permissions** プロパティを使用して、オブジェクトのユーザーまたはグループのアクセス権限を設定または取得します。これらのプロパティを設定するには、 **Document** オブジェクトへの書き込み権限が必要であり、 **UserName** プロパティを既存の **User** オブジェクトまたは **Group** オブジェクトの名前に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="64e26-p105">Use the **UserName** or **Permissions** properties to set or return the access permissions of a user or group for the object. To set these properties, you must have write permission for the **Document** object, and you must set the **UserName** property to the name of an existing **User** or **Group** object.</span></span>
 
-  - <span data-ttu-id="cf84f-130">**DateCreated** プロパティを使用して、 **Document** オブジェクトが作成された日時を取得し、 **LastUpdated** プロパティを使用して、最後に変更された日時を取得します。</span><span class="sxs-lookup"><span data-stu-id="cf84f-130">Use the **DateCreated** and **LastUpdated** properties to return the date and time when the **Document** object was created and last modified.</span></span>
+  - <span data-ttu-id="64e26-130">**DateCreated** プロパティを使用して、 **Document** オブジェクトが作成された日時を取得し、 **LastUpdated** プロパティを使用して、最後に変更された日時を取得します。</span><span class="sxs-lookup"><span data-stu-id="64e26-130">Use the **DateCreated** and **LastUpdated** properties to return the date and time when the **Document** object was created and last modified.</span></span>
 
-<span data-ttu-id="cf84f-p106">各 **Document** オブジェクトは、既存のオブジェクトに対応しているため、 **Document** オブジェクトを新規作成したり、既存のオブジェクトを削除することはできません。コレクション内の **Document** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="cf84f-p106">Because a **Document** object corresponds to an existing object, you can't create new **Document** objects or delete existing ones. To refer to a **Document** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
+<span data-ttu-id="64e26-p106">各 **Document** オブジェクトは、既存のオブジェクトに対応しているため、 **Document** オブジェクトを新規作成したり、既存のオブジェクトを削除することはできません。コレクション内の **Document** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="64e26-p106">Because a **Document** object corresponds to an existing object, you can't create new **Document** objects or delete existing ones. To refer to a **Document** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
 
-  - <span data-ttu-id="cf84f-133">**Documents**(0)</span><span class="sxs-lookup"><span data-stu-id="cf84f-133">**Documents**(0)</span></span>
+  - <span data-ttu-id="64e26-133">**Documents**(0)</span><span class="sxs-lookup"><span data-stu-id="64e26-133">**Documents**(0)</span></span>
 
-  - <span data-ttu-id="cf84f-134">**ドキュメント**(以下「*名前*」)</span><span class="sxs-lookup"><span data-stu-id="cf84f-134">**Documents**("*name*")</span></span>
+  - <span data-ttu-id="64e26-134">**ドキュメント**(以下「*名前*」)</span><span class="sxs-lookup"><span data-stu-id="64e26-134">**Documents**("*name*")</span></span>
 
-  - <span data-ttu-id="cf84f-135">**ドキュメント**\!\[*名*\]</span><span class="sxs-lookup"><span data-stu-id="cf84f-135">**Documents**\!\[*name*\]</span></span>
+  - <span data-ttu-id="64e26-135">**ドキュメント**\!\[*名*\]</span><span class="sxs-lookup"><span data-stu-id="64e26-135">**Documents**\!\[*name*\]</span></span>
 
-## <a name="example"></a><span data-ttu-id="cf84f-136">例</span><span class="sxs-lookup"><span data-stu-id="cf84f-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="64e26-136">例</span><span class="sxs-lookup"><span data-stu-id="64e26-136">Example</span></span>
 
-<span data-ttu-id="cf84f-137">この例では、Tables コンテナーの **Documents** コレクションを列挙し、次にコレクションの最初の **Document** オブジェクトの **Properties** コレクションを列挙します。</span><span class="sxs-lookup"><span data-stu-id="cf84f-137">This example enumerates the **Documents** collection of the Tables container, and then enumerates the **Properties** collection of the first **Document** object in the collection.</span></span>
+<span data-ttu-id="64e26-137">この例では、Tables コンテナーの **Documents** コレクションを列挙し、次にコレクションの最初の **Document** オブジェクトの **Properties** コレクションを列挙します。</span><span class="sxs-lookup"><span data-stu-id="64e26-137">This example enumerates the **Documents** collection of the Tables container, and then enumerates the **Properties** collection of the first **Document** object in the collection.</span></span>
 
 ```vb 
 Sub DocumentX() 
@@ -120,7 +120,9 @@ End Sub
  
 ```
 
-<span data-ttu-id="cf84f-138">次の使用例は、 **Owner** プロパティおよび **SystemDB** プロパティを使用して、さまざまな **Document** オブジェクトの所有者を表示します。</span><span class="sxs-lookup"><span data-stu-id="cf84f-138">This example uses the **Owner** and **SystemDB** properties to show the owners of a variety of **Document** objects.</span></span>
+<br/>
+
+<span data-ttu-id="64e26-138">次の使用例は、 **Owner** プロパティおよび **SystemDB** プロパティを使用して、さまざまな **Document** オブジェクトの所有者を表示します。</span><span class="sxs-lookup"><span data-stu-id="64e26-138">This example uses the **Owner** and **SystemDB** properties to show the owners of a variety of **Document** objects.</span></span>
 
 ```vb 
 Sub OwnerX() 

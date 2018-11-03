@@ -10,30 +10,30 @@ f1_keywords:
 - dao360.chm1101191
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c73aa8f4023ea5d3a192608fad88bf336e6e858f
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 571698567816b34071e99c7dc46af11274a54c80
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25924800"
+ms.locfileid: "25937144"
 ---
-# <a name="field2savetofile-method-dao"></a><span data-ttu-id="42b43-102">Field2.SaveToFile メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="42b43-102">Field2.SaveToFile method (DAO)</span></span>
+# <a name="field2savetofile-method-dao"></a><span data-ttu-id="822a2-102">Field2.SaveToFile メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="822a2-102">Field2.SaveToFile method (DAO)</span></span>
 
-<span data-ttu-id="42b43-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="42b43-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="822a2-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="822a2-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="42b43-104">ディスクに添付ファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="42b43-104">Saves an attachment to disk.</span></span>
+<span data-ttu-id="822a2-104">ディスクに添付ファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="822a2-104">Saves an attachment to disk.</span></span>
 
-## <a name="version-information"></a><span data-ttu-id="42b43-105">バージョン情報</span><span class="sxs-lookup"><span data-stu-id="42b43-105">Version Information</span></span>
+## <a name="version-information"></a><span data-ttu-id="822a2-105">バージョン情報</span><span class="sxs-lookup"><span data-stu-id="822a2-105">Version information</span></span>
 
-<span data-ttu-id="42b43-106">追加バージョン: Access 2007</span><span class="sxs-lookup"><span data-stu-id="42b43-106">Version Added: Access 2007</span></span>
+<span data-ttu-id="822a2-106">追加バージョン: Access 2007</span><span class="sxs-lookup"><span data-stu-id="822a2-106">Version added: Access 2007</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="42b43-107">構文</span><span class="sxs-lookup"><span data-stu-id="42b43-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="822a2-107">構文</span><span class="sxs-lookup"><span data-stu-id="822a2-107">Syntax</span></span>
 
-<span data-ttu-id="42b43-108">*式*です。SaveToFile (***ファイル名***)</span><span class="sxs-lookup"><span data-stu-id="42b43-108">*expression* .SaveToFile(***FileName***)</span></span>
+<span data-ttu-id="822a2-108">*式*です。SaveToFile (***ファイル名***)</span><span class="sxs-lookup"><span data-stu-id="822a2-108">*expression* .SaveToFile(***FileName***)</span></span>
 
-<span data-ttu-id="42b43-109">\*式\***Field2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="42b43-109">*expression* A variable that represents a **Field2** object.</span></span>
+<span data-ttu-id="822a2-109">\*式\***Field2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="822a2-109">*expression* A variable that represents a **Field2** object.</span></span>
 
-### <a name="parameters"></a><span data-ttu-id="42b43-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="42b43-110">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="822a2-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="822a2-110">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -44,26 +44,26 @@ ms.locfileid: "25924800"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="42b43-111">名前</span><span class="sxs-lookup"><span data-stu-id="42b43-111">Name</span></span></p></th>
-<th><p><span data-ttu-id="42b43-112">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="42b43-112">Required/Optional</span></span></p></th>
-<th><p><span data-ttu-id="42b43-113">データ型</span><span class="sxs-lookup"><span data-stu-id="42b43-113">Data Type</span></span></p></th>
-<th><p><span data-ttu-id="42b43-114">説明</span><span class="sxs-lookup"><span data-stu-id="42b43-114">Description</span></span></p></th>
+<th><p><span data-ttu-id="822a2-111">名前</span><span class="sxs-lookup"><span data-stu-id="822a2-111">Name</span></span></p></th>
+<th><p><span data-ttu-id="822a2-112">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="822a2-112">Required/Optional</span></span></p></th>
+<th><p><span data-ttu-id="822a2-113">データ型</span><span class="sxs-lookup"><span data-stu-id="822a2-113">Data Type</span></span></p></th>
+<th><p><span data-ttu-id="822a2-114">説明</span><span class="sxs-lookup"><span data-stu-id="822a2-114">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="42b43-115">FileName</span><span class="sxs-lookup"><span data-stu-id="42b43-115">FileName</span></span></p></td>
-<td><p><span data-ttu-id="42b43-116">必須</span><span class="sxs-lookup"><span data-stu-id="42b43-116">Required</span></span></p></td>
-<td><p><span data-ttu-id="42b43-117"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="42b43-117"><strong>String</strong></span></span></p></td>
-<td><p><span data-ttu-id="42b43-118">添付ファイルを保存するファイルの完全修飾パスです。</span><span class="sxs-lookup"><span data-stu-id="42b43-118">The fully qualified path of the file to which you want to save the attachment.</span></span></p></td>
+<td><p><span data-ttu-id="822a2-115">FileName</span><span class="sxs-lookup"><span data-stu-id="822a2-115">FileName</span></span></p></td>
+<td><p><span data-ttu-id="822a2-116">必須</span><span class="sxs-lookup"><span data-stu-id="822a2-116">Required</span></span></p></td>
+<td><p><span data-ttu-id="822a2-117"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="822a2-117"><strong>String</strong></span></span></p></td>
+<td><p><span data-ttu-id="822a2-118">添付ファイルを保存するファイルの完全修飾パスです。</span><span class="sxs-lookup"><span data-stu-id="822a2-118">The fully qualified path of the file to which you want to save the attachment.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="example"></a><span data-ttu-id="42b43-119">例</span><span class="sxs-lookup"><span data-stu-id="42b43-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="822a2-119">例</span><span class="sxs-lookup"><span data-stu-id="822a2-119">Example</span></span>
 
-<span data-ttu-id="42b43-120">次のコードは、 **SaveToFile** メソッドを使用して、特定の社員に関するすべての添付ファイルをディスクに保存する方法の例を示しています。</span><span class="sxs-lookup"><span data-stu-id="42b43-120">The following code snippet illustrates how to use the **SaveToFile** method to save all of the attachments for a specific employee to disk.</span></span>
+<span data-ttu-id="822a2-120">次のコードは、 **SaveToFile** メソッドを使用して、特定の社員に関するすべての添付ファイルをディスクに保存する方法の例を示しています。</span><span class="sxs-lookup"><span data-stu-id="822a2-120">The following code snippet illustrates how to use the **SaveToFile** method to save all of the attachments for a specific employee to disk.</span></span>
 
 ```vb
     '  Instantiate the parent recordset.  
@@ -86,9 +86,9 @@ ms.locfileid: "25924800"
 
 <br/>
 
-<span data-ttu-id="42b43-121">次の例は、添付ファイル型フィールドに保管されているファイルを、指定されたフォルダー パスに保存する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="42b43-121">The following example shows how to save the files stored in an attachment field to the specified folder path.</span></span>
+<span data-ttu-id="822a2-121">次の例は、添付ファイル型フィールドに保管されているファイルを、指定されたフォルダー パスに保存する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="822a2-121">The following example shows how to save the files stored in an attachment field to the specified folder path.</span></span>
 
-<span data-ttu-id="42b43-122">**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。</span><span class="sxs-lookup"><span data-stu-id="42b43-122">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
+<span data-ttu-id="822a2-122">**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。</span><span class="sxs-lookup"><span data-stu-id="822a2-122">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
 
 ```vb
     Public Function SaveAttachments(strPath As String, Optional strPattern As String = "*.*") As Long

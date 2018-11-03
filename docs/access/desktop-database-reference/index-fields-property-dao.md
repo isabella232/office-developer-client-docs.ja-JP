@@ -6,23 +6,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff823154(v=office.15)
 ms:contentKeyID: 48547640
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4a59f9d0c0425a6a7adf728797cb01d424a35f74
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: ad957133c8fe2d5aba3c4edeecbc17101fbcb369
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25879733"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25929028"
 ---
-# <a name="indexfields-property-dao"></a><span data-ttu-id="5be53-102">Index.Fields プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="5be53-102">Index.Fields Property (DAO)</span></span>
+# <a name="indexfields-property-dao"></a><span data-ttu-id="73da2-102">Index.Fields プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="73da2-102">Index.Fields property (DAO)</span></span>
 
 
-<span data-ttu-id="5be53-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="5be53-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="73da2-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="73da2-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="5be53-p101">指定したオブジェクトに格納されているすべての **Field** オブジェクトを表す **Fields** コレクションを取得します。値の取得および設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="5be53-p101">Returns a **Fields** collection that represents all stored **Field** objects for the specified object. Read/write.</span></span>
+<span data-ttu-id="73da2-p101">指定したオブジェクトに格納されているすべての **Field** オブジェクトを表す **Fields** コレクションを取得します。値の取得および設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="73da2-p101">Returns a **Fields** collection that represents all stored **Field** objects for the specified object. Read/write.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="5be53-106">構文</span><span class="sxs-lookup"><span data-stu-id="5be53-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="73da2-106">構文</span><span class="sxs-lookup"><span data-stu-id="73da2-106">Syntax</span></span>
 
-<span data-ttu-id="5be53-107">*式*です。フィールド</span><span class="sxs-lookup"><span data-stu-id="5be53-107">*expression* .Fields</span></span>
+<span data-ttu-id="73da2-107">*式*です。フィールド</span><span class="sxs-lookup"><span data-stu-id="73da2-107">*expression* .Fields</span></span>
 
-<span data-ttu-id="5be53-108">\*式\***Index**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="5be53-108">*expression* A variable that represents an **Index** object.</span></span>
+<span data-ttu-id="73da2-108">\*式\***Index**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="73da2-108">*expression* A variable that represents an **Index** object.</span></span>
 

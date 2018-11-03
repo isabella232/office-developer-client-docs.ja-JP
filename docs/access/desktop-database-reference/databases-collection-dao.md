@@ -6,39 +6,39 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197944(v=office.15)
 ms:contentKeyID: 48546493
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8f5eb99d19efb14ae78f3623efaf6dd5b2e3d751
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: aa56c4ff3ff0ee0001e80ea19a532a0ba041acab
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25878326"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25923330"
 ---
-# <a name="databases-collection-dao"></a><span data-ttu-id="395fb-102">Databases コレクション (DAO)</span><span class="sxs-lookup"><span data-stu-id="395fb-102">Databases Collection (DAO)</span></span>
+# <a name="databases-collection-dao"></a><span data-ttu-id="a3687-102">Databases コレクション (DAO)</span><span class="sxs-lookup"><span data-stu-id="a3687-102">Databases collection (DAO)</span></span>
 
-<span data-ttu-id="395fb-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="395fb-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="a3687-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="a3687-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="395fb-104">**Databases** コレクションには、 **Workspace** オブジェクトで開かれた、または作成されたすべての開いている **Database** オブジェクトが含まれます。</span><span class="sxs-lookup"><span data-stu-id="395fb-104">A **Databases** collection contains all open **Database** objects opened or created in a **Workspace** object.</span></span>
+<span data-ttu-id="a3687-104">**Databases** コレクションには、 **Workspace** オブジェクトで開かれた、または作成されたすべての開いている **Database** オブジェクトが含まれます。</span><span class="sxs-lookup"><span data-stu-id="a3687-104">A **Databases** collection contains all open **Database** objects opened or created in a **Workspace** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="395fb-105">注釈</span><span class="sxs-lookup"><span data-stu-id="395fb-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a3687-105">注釈</span><span class="sxs-lookup"><span data-stu-id="a3687-105">Remarks</span></span>
 
-<span data-ttu-id="395fb-p101">**Workspace** から既存の **Database** オブジェクトを開くかまたは新しいオブジェクトを作成すると、それらは自動的に **Databases** コレクションに追加されます。 [**Close**](connection-close-method-dao.md) メソッドを使用して **Database** オブジェクトを閉じると、オブジェクトは **Databases** コレクションから削除されます。 **Database** オブジェクトを閉じる前に、開いているすべての **Recordset** オブジェクトを閉じる必要があります。</span><span class="sxs-lookup"><span data-stu-id="395fb-p101">When you open an existing **Database** object or create a new one from a **Workspace**, it is automatically appended to the **Databases** collection. When you close a **Database** object with the **[Close](connection-close-method-dao.md)** method, it is removed from the **Databases** collection but not deleted from disk. You should close all open **Recordset** objects before closing a **Database** object.</span></span>
+<span data-ttu-id="a3687-p101">**Workspace** から既存の **Database** オブジェクトを開くかまたは新しいオブジェクトを作成すると、それらは自動的に **Databases** コレクションに追加されます。 [**Close**](connection-close-method-dao.md) メソッドを使用して **Database** オブジェクトを閉じると、オブジェクトは **Databases** コレクションから削除されます。 **Database** オブジェクトを閉じる前に、開いているすべての **Recordset** オブジェクトを閉じる必要があります。</span><span class="sxs-lookup"><span data-stu-id="a3687-p101">When you open an existing **Database** object or create a new one from a **Workspace**, it is automatically appended to the **Databases** collection. When you close a **Database** object with the **[Close](connection-close-method-dao.md)** method, it is removed from the **Databases** collection but not deleted from disk. You should close all open **Recordset** objects before closing a **Database** object.</span></span>
 
-<span data-ttu-id="395fb-109">Microsoft Access ワークスペースでは、データベースの " **Name**/名前" プロパティの設定値は、データベース ファイルを指定するための文字列です。</span><span class="sxs-lookup"><span data-stu-id="395fb-109">In a Microsoft Access workspace, the **Name** property setting of a database is a string that specifies the path of the database file.</span></span>
+<span data-ttu-id="a3687-109">Microsoft Access ワークスペースでは、データベースの " **Name**/名前" プロパティの設定値は、データベース ファイルを指定するための文字列です。</span><span class="sxs-lookup"><span data-stu-id="a3687-109">In a Microsoft Access workspace, the **Name** property setting of a database is a string that specifies the path of the database file.</span></span>
 
-<span data-ttu-id="395fb-110">コレクション内の **Database** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="395fb-110">To refer to a **Database** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
+<span data-ttu-id="a3687-110">コレクション内の **Database** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="a3687-110">To refer to a **Database** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
 
-- <span data-ttu-id="395fb-111">**Databases**(0)</span><span class="sxs-lookup"><span data-stu-id="395fb-111">**Databases**(0)</span></span>
+- <span data-ttu-id="a3687-111">**Databases**(0)</span><span class="sxs-lookup"><span data-stu-id="a3687-111">**Databases**(0)</span></span>
 
-- <span data-ttu-id="395fb-112">**データベース**(以下「*名前*」)</span><span class="sxs-lookup"><span data-stu-id="395fb-112">**Databases**("*name*")</span></span>
+- <span data-ttu-id="a3687-112">**データベース**(以下「*名前*」)</span><span class="sxs-lookup"><span data-stu-id="a3687-112">**Databases**("*name*")</span></span>
 
-- <span data-ttu-id="395fb-113">**データベース**\!\[*名*\]</span><span class="sxs-lookup"><span data-stu-id="395fb-113">**Databases**\!\[*name*\]</span></span>
+- <span data-ttu-id="a3687-113">**データベース**\!\[*名*\]</span><span class="sxs-lookup"><span data-stu-id="a3687-113">**Databases**\!\[*name*\]</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="395fb-p102">[!メモ] **Databases** コレクションに重複する名前を作成して同じデータ ソースまたはデータベースを複数回開くことができます。 **Database** オブジェクトをオブジェクト変数に割り当てて変数名で参照する必要があります。</span><span class="sxs-lookup"><span data-stu-id="395fb-p102">You can open the same data source or database more than once, creating duplicate names in the **Databases** collection. You should assign **Database** objects to object variables and refer to them by variable name.</span></span>
+> <span data-ttu-id="a3687-p102">[!メモ] **Databases** コレクションに重複する名前を作成して同じデータ ソースまたはデータベースを複数回開くことができます。 **Database** オブジェクトをオブジェクト変数に割り当てて変数名で参照する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a3687-p102">You can open the same data source or database more than once, creating duplicate names in the **Databases** collection. You should assign **Database** objects to object variables and refer to them by variable name.</span></span>
 
-## <a name="example"></a><span data-ttu-id="395fb-116">例</span><span class="sxs-lookup"><span data-stu-id="395fb-116">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a3687-116">例</span><span class="sxs-lookup"><span data-stu-id="a3687-116">Example</span></span>
 
-<span data-ttu-id="395fb-p103">この例では、新しい **Database** オブジェクトを作成し、既定の **Workspace** オブジェクト内にある既存の **Database** オブジェクトを開きます。次に、 **Databases** コレクションおよび各 **Database** オブジェクトの **Properties** コレクションを列挙します。</span><span class="sxs-lookup"><span data-stu-id="395fb-p103">This example creates a new **Database** object and opens an existing **Database** object in the default **Workspace** object. Then it enumerates the **Database** collection and the **Properties** collection of each **Database** object.</span></span>
+<span data-ttu-id="a3687-p103">この例では、新しい **Database** オブジェクトを作成し、既定の **Workspace** オブジェクト内にある既存の **Database** オブジェクトを開きます。次に、 **Databases** コレクションおよび各 **Database** オブジェクトの **Properties** コレクションを列挙します。</span><span class="sxs-lookup"><span data-stu-id="a3687-p103">This example creates a new **Database** object and opens an existing **Database** object in the default **Workspace** object. Then it enumerates the **Database** collection and the **Properties** collection of each **Database** object.</span></span>
 
 ```vb 
 Sub DatabaseObjectX() 
@@ -85,7 +85,7 @@ End Sub
 
 <br/>
 
-<span data-ttu-id="395fb-119">この例では、 **CreateDatabase** メソッドを使用して、暗号化された新しい **Database** オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="395fb-119">This example uses **CreateDatabase** to create a new, encrypted **Database** object.</span></span>
+<span data-ttu-id="a3687-119">この例では、 **CreateDatabase** メソッドを使用して、暗号化された新しい **Database** オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="a3687-119">This example uses **CreateDatabase** to create a new, encrypted **Database** object.</span></span>
 
 ```vb
     Sub CreateDatabaseX() 
