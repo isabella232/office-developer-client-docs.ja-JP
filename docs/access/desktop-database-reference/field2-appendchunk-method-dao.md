@@ -10,18 +10,16 @@ f1_keywords:
 - dao360.chm1052867
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f999a0519fccb8f896ed07963db621065530c1a3
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: e5aaab6a79893a66b12216f60c05690c1e806000
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929770"
+ms.locfileid: "25937051"
 ---
 # <a name="field2appendchunk-method-dao"></a>Field2.AppendChunk メソッド (DAO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 文字列式からのデータを [**Recordset**](recordset-object-dao.md) の、メモ型 (Memo) またはロング バイナリ型 (Long Binary) の **Field2** オブジェクトに追加します。
 
@@ -67,11 +65,8 @@ ms.locfileid: "25929770"
 
 カレント レコードがない場合に **AppendChunk** を使用すると、エラーが発生します。
 
-
 > [!NOTE]
-> <P><A href="recordset-edit-method-dao.md"><STRONG>Edit</STRONG></A> メソッドまたは <A href="recordset-addnew-method-dao.md"><STRONG>AddNew</STRONG></A> メソッドの呼び出し後の <STRONG>AppendChunk</STRONG> の最初の操作では、既存のデータを上書きしてフィールドにデータを配置するだけです。同じ <STRONG>Edit</STRONG> または <STRONG>AddNew</STRONG> のセッションのその後の <STRONG>AppendChunk</STRONG> の呼び出しでは、既存のデータに追加されます。</P>
-
-
+> [**Edit**](recordset-edit-method-dao.md) メソッドまたは [**AddNew**](recordset-addnew-method-dao.md) メソッドの呼び出し後の **AppendChunk** の最初の操作では、既存のデータを上書きしてフィールドにデータを配置するだけです。同じ **Edit** または **AddNew** のセッションのその後の **AppendChunk** の呼び出しでは、既存のデータに追加されます。
 
 ## <a name="example"></a>例
 

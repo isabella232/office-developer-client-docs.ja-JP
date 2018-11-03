@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192247(v=office.15)
 ms:contentKeyID: 48543999
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 25ba678f759fefa460dd505cded6e05b3e96fdf5
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 6fbf95e02c9945558d70fff35f12a73ce0dee45e
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928356"
+ms.locfileid: "25937317"
 ---
 # <a name="fieldrequired-property-dao"></a>Field.Required プロパティ (DAO)
 
@@ -72,7 +72,7 @@ ms.locfileid: "25928356"
 
 
 > [!NOTE]
-> <P>[!メモ] このプロパティを <STRONG>Index</STRONG> オブジェクトまたは <STRONG>Field</STRONG> オブジェクトのいずれかに対して設定できる場合は、 <STRONG>Field</STRONG> オブジェクトに対して設定します。 <STRONG>Field</STRONG> オブジェクトに対するプロパティ設定の妥当性は、 <STRONG>Index</STRONG> オブジェクトより前にチェックされます。</P>
+> [!メモ] このプロパティを **Index** オブジェクトまたは **Field** オブジェクトのいずれかに対して設定できる場合は、 **Field** オブジェクトに対して設定します。 **Field** オブジェクトに対するプロパティ設定の妥当性は、 **Index** オブジェクトより前にチェックされます。
 
 
 

@@ -12,12 +12,12 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 068496332479d25dfc4f20bdc683330ee462ce78
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 1a61512c58ccbde82072fa4d8105c82b9f145ebc
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927670"
+ms.locfileid: "25937422"
 ---
 # <a name="union-operation-microsoft-access-sql"></a>UNION 操作 (Microsoft Access SQL)
 
@@ -81,9 +81,7 @@ UNION 操作でクエリが要求するフィールドの数は、すべての�
 
 ## <a name="example"></a>例
 
-次の使用例では、ブラジル国内のすべての仕入先および得意先の名前と都市名を取得します。
-
-この例では、EnumFields プロシージャを呼び出します。EnumFields プロシージャについては、SELECT ステートメントの使用例を参照してください。
+次の使用例では、ブラジル国内のすべての仕入先および得意先の名前と都市名を取得します。 SELECT ステートメントの例で表示できる、EnumFields プロシージャを呼び出します。
 
 ```vb
     Sub UnionX() 

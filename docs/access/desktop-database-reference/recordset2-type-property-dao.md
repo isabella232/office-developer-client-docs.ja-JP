@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052880
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 57c433594a22a78615aa689cccd0b7477bb32e91
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: ca75e1b21e017dfbbbc5028d06a4799a9afd50f3
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930659"
+ms.locfileid: "25936596"
 ---
 # <a name="recordset2type-property-dao"></a>Recordset2.Type プロパティ (DAO)
 
@@ -53,12 +53,7 @@ ms.locfileid: "25930659"
 <tr class="even">
 <td><p><strong>dbOpenDynamic</strong></p></td>
 <td><p>動的 (ODBCDirect ワークスペースのみ)</p>
-
-> [!NOTE]
-> <P>[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</P>
-
-
-<p></p></td>
+<p><strong>注</strong>: Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbOpenDynaset</strong></p></td>

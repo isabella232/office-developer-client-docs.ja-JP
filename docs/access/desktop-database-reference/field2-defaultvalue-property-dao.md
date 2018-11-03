@@ -10,18 +10,16 @@ f1_keywords:
 - dao360.chm1053121
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c0edef512eb6b4c099362e737a760624dcfc0b69
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 683255f8bc425ba5d8d2cdf4c66bc2ff16eec43c
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928476"
+ms.locfileid: "25937674"
 ---
 # <a name="field2defaultvalue-property-dao"></a>Field2.DefaultValue プロパティ (DAO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 **Field2** オブジェクトの既定値を設定または取得します。 [**Fields**](fields-collection-dao.md) コレクションに追加されていない **Field2** オブジェクトの場合、このプロパティは値の取得および設定が可能です (Microsoft Access ワークスペースのみ)。
 
@@ -35,11 +33,8 @@ ms.locfileid: "25928476"
 
 設定値または戻り値は、最大 255 文字の文字列データ型 ( **String**) です。文字列または式を指定できます。プロパティの設定値が式の場合、ユーザー定義関数、Microsoft Access データベース エンジン SQL の集計関数、またはクエリ、フォーム、その他の **Field2** オブジェクトへの参照を含めることはできません。
 
-
 > [!NOTE]
-> <P>[!メモ] <STRONG>TableDef</STRONG> オブジェクトで <STRONG>Field2</STRONG> オブジェクトの <STRONG>DefaultValue</STRONG> プロパティを "GenUniqueID( )" と呼ばれる特殊な値に設定することもできます。これにより、新規レコードを追加または作成すると、このフィールドに乱数が割り当てられ、各レコードに一意の識別子が設定されます。フィールドの <STRONG>Type</STRONG> プロパティは長整数型 ( <STRONG>Long</STRONG>) である必要があります。</P>
-
-
+> [!メモ] **TableDef** オブジェクトで **Field2** オブジェクトの **DefaultValue** プロパティを "GenUniqueID( )" と呼ばれる特殊な値に設定することもできます。これにより、新規レコードを追加または作成すると、このフィールドに乱数が割り当てられ、各レコードに一意の識別子が設定されます。フィールドの **Type** プロパティは長整数型 ( **Long**) である必要があります。
 
 **DefaultValue** プロパティを使用できるかどうかは、次の表に示すように、 **Fields** コレクションを含むオブジェクトによって決まります。
 

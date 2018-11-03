@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197681(v=office.15)
 ms:contentKeyID: 48546422
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f8127109834a617e86116a81731d964181c1bdf2
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 39c1366a182f1757abdcbf4b36a19b553eb2b680
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930596"
+ms.locfileid: "25936764"
 ---
 # <a name="connection-members-dao"></a>接続メンバー (DAO)
 
@@ -20,7 +20,6 @@ ms.locfileid: "25930596"
 > [!NOTE]
 > [!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。 Connection オブジェクトは、ODBC データベースへの接続を表します (ODBCDirect ワークスペースのみ)。
  
-
 ## <a name="methods"></a>メソッド
 
 <table>
@@ -37,12 +36,7 @@ ms.locfileid: "25930596"
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="connection-cancel-method-dao.md">Cancel</a></strong></p></td>
-<td><p></p>
-
-<br/>
-
-
-<p>保留中の非同期メソッド呼び出しの実行をキャンセルします (ODBCDirect ワークスペースのみ)。</p></td>
+<td><p>保留中の非同期メソッド呼び出しの実行をキャンセルします (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="connection-close-method-dao.md">閉じる</a></strong></p></td>
@@ -84,12 +78,7 @@ ms.locfileid: "25930596"
 </tr>
 <tr class="even">
 <td><p><strong><a href="connection-database-property-dao.md">データベース</a></strong></p></td>
-<td><p></p>
-
-<br/>
-
-
-<p>この接続に対応する <strong><a href="database-object-dao.md">Database</a></strong> オブジェクトを返します (ODBCDirect ワークスペースのみ)。</p></td>
+<td><p>この接続に対応する <strong><a href="database-object-dao.md">Database</a></strong> オブジェクトを返します (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="connection-name-property-dao.md">Name</a></strong></p></td>
@@ -113,12 +102,7 @@ ms.locfileid: "25930596"
 </tr>
 <tr class="even">
 <td><p><strong><a href="connection-stillexecuting-property-dao.md">StillExecuting</a></strong></p></td>
-<td><p></p>
-
-<br/>
-
-
-<p>非同期操作 (つまり、 <strong>dbRunAsync</strong> オプションを指定して呼び出したメソッド) の実行が完了したかどうかを示します (ODBCDirect ワークスペースのみ)。</p></td>
+<td><p>非同期操作 (つまり、 <strong>dbRunAsync</strong> オプションを指定して呼び出したメソッド) の実行が完了したかどうかを示します (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="connection-transactions-property-dao.md">トランザクション</a></strong></p></td>

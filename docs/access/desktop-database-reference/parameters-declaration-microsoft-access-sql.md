@@ -12,12 +12,12 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7feb483d60084e62c6233d039e568477eda9d134
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: e906e90fd6f7bf6e26898ed5381ef687c2ee8514
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927866"
+ms.locfileid: "25937344"
 ---
 # <a name="parameters-declaration-microsoft-access-sql"></a>パラメーター宣言 (Microsoft Access SQL)
 
@@ -83,7 +83,7 @@ AND OrderDate >= [Beginning date];
 
 次の例では、ユーザーに役職の入力を求め、その役職をクエリの抽出条件として使用します。
 
-この例では、EnumFields プロシージャを呼び出します。EnumFields プロシージャについては、[SELECT ステートメント](select-statement-microsoft-access-sql.md)の使用例を参照してください。
+[SELECT ステートメント](select-statement-microsoft-access-sql.md)の例である EnumFields プロシージャを呼び出します。
 
 ```vb
     Sub ParametersX() 

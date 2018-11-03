@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835080(v=office.15)
 ms:contentKeyID: 48548030
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 85e518dc5d13a6e8e70c449fb35158395b7a13aa
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 540e5b8226907dc580d34ab3215d3c0dca67e3f6
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920726"
+ms.locfileid: "25936883"
 ---
 # <a name="recordsettype-property-dao"></a>Recordset.Type プロパティ (DAO)
 
@@ -51,7 +51,7 @@ ms.locfileid: "25920726"
 <td><p>動的 (ODBCDirect ワークスペースのみ)</p>
 
 > [!NOTE]
-> <P>[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</P>
+> [!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。
 
 
 <p></p></td>

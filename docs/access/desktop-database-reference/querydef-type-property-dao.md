@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff844814(v=office.15)
 ms:contentKeyID: 48542993
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 43e6e450021269a704650c686dea27a1d38d37f5
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 42bd391cea721176973ce4dd30c9ddc7d15471b8
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929511"
+ms.locfileid: "25937023"
 ---
 # <a name="querydeftype-property-dao"></a>QueryDef.Type プロパティ (DAO)
 
@@ -75,7 +75,7 @@ ms.locfileid: "25929511"
 <td><p>プロシージャ (ODBCDirect ワークスペースのみ)</p>
 
 > [!NOTE]
-> <P>[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</P>
+> [!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。
 
 
 <p></p></td>

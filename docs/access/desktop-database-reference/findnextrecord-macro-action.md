@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm89832
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 0309a72040751aaab994225159fdca6698a189cc
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 426bf296345c47abe58e3e6e5057a43a0d43aa21
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920733"
+ms.locfileid: "25936631"
 ---
 # <a name="findnextrecord-macro-action"></a>FindNextRecord マクロ アクション
 
@@ -34,17 +34,11 @@ ms.locfileid: "25920733"
 
 このアクションの動作は、[ **検索と置換**] ダイアログ ボックスの [ **次を検索**] をクリックした場合と同じです。
 
-
 > [!NOTE]
-> <P>操作を<STRONG>行って</STRONG>は、テーブル、クエリ、およびフォームの [<STRONG>ホーム</STRONG>] タブの [<STRONG>検索</STRONG>] コマンドに対応しています、[コード] ウィンドウで [<STRONG>編集</STRONG>] メニューの [<STRONG>検索</STRONG>] コマンドに対応していません。 モジュール内のテキストを検索する操作を<STRONG>行って</STRONG>、 <STRONG>FindNextRecord</STRONG>アクションを使うことはできません。</P>
-
-
-
+> 操作を**行って**は、テーブル、クエリ、およびフォームの [**ホーム**] タブの [**検索**] コマンドに対応しています、[コード] ウィンドウで [**編集**] メニューの [**検索**] コマンドに対応していません。 モジュール内のテキストを検索する操作を**行って**、 **FindNextRecord**アクションを使うことはできません。
 
 > [!TIP]
-> <P>操作を<STRONG>行って</STRONG>の<STRONG>現在のフィールド</STRONG>の引数を<STRONG>[はい]</STRONG>に設定するとは、検索対象となる、<STRONG>を使用する前にデータを格納しているコントロールにフォーカスを移動するのには<STRONG>フォーカスを移動</STRONG>を使用する必要があります。FindNextRecord</STRONG>アクション。</P>
-
-
+> 操作を**行って**の**現在のフィールド**の引数を **[はい]** に設定するとは、検索対象となる、**を使用する前にデータを格納しているコントロールにフォーカスを移動するのには**フォーカスを移動**を使用する必要があります。FindNextRecord**アクション。
 
 現在選択されているテキストがある場合、検索する文字列と同じ**FindNextRecord**のマクロ アクション実行時に、選択範囲、選択範囲は、同じフィールドで、同じレコードの直後、検索が開始されます。 選択されているテキストと検索テキストが異なる場合は、カレント レコードの先頭から検索が開始されます。 このため、1 つのレコードに同じ検索条件を満たすテキストが複数存在する場合の検索が可能です。
 
