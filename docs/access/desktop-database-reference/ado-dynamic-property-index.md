@@ -1,20 +1,19 @@
 ---
 title: ADO の動的プロパティ インデックス
-TOCTitle: ADO Dynamic Property Index
+TOCTitle: ADO dynamic property index
 ms:assetid: 437beced-b97a-894d-b08f-4a322629a5a6
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249202(v=office.15)
 ms:contentKeyID: 48544502
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6f385f3637f9a64ff94d571345d88fbaa088d126
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 19b7ddca0395869b5a1dba4182a123d33e54e66d
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25876065"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25947603"
 ---
 # <a name="ado-dynamic-property-index"></a>ADO の動的プロパティ インデックス
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -24,13 +23,13 @@ ms.locfileid: "25876065"
 
 「OLE DB プログラマ リファレンス」では、ADO プロパティ名が "説明" 欄に示されています。標準的なプロパティの詳細については、「OLE DB プログラマ リファレンス」を参照してください。OLE DB プロパティ名をキーワードとして検索するか、次のトピックを参照してください。
 
-  - 「付録 C: プロパティ表」
+- 「付録 C: プロパティ表」
 
-  - 「Supported Properties of the Cursor Service」 (英語)
+- 「Supported Properties of the Cursor Service」 (英語)
 
-  - 「Supported Properties of the Persistence Provider」 (英語)
+- 「Supported Properties of the Persistence Provider」 (英語)
 
-  - 「Supported OLE DB Properties of the Remoting Provider」 （英語)
+- 「Supported OLE DB Properties of the Remoting Provider」 （英語)
 
 ## <a name="remarks"></a>解説
 

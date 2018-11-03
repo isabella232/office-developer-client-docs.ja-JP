@@ -1,20 +1,19 @@
 ---
-title: データ スリム化 (デスクトップ データベース参照のアクセス)
-TOCTitle: Data Shaping
+title: データ シェイプ (デスクトップ データベース参照のアクセス)
+TOCTitle: Data shaping
 ms:assetid: 650571cc-6874-2cdb-dd76-0804d1cc4e38
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249390(v=office.15)
 ms:contentKeyID: 48545305
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8fc2e8ec2ceeefc670681a5aec43f03c86fd73d9
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 96a5d7ad82c7cb9182f95b428ff17c9df60c47b3
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25868876"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25947099"
 ---
 # <a name="data-shaping"></a>データ シェイプ
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -41,9 +40,6 @@ Shape コマンド構文を使用して、階層 **Recordset** オブジェク�
 このセクションには、次のトピックが含まれています。
 
 - [リシェイプ](reshaping.md)
-
 - [孫の集計](grandchild-aggregates.md)
-
-- [仲介している COMPUTE コマンドに対してコマンドをパラメーター化する](parameterized-commands-with-intervening-compute-commands.md)
-
-- [階層 Recordset を保存する](persisting-hierarchical-recordsets.md)
+- [計算の間にあるコマンドを使用してパラメーター化されたコマンド](parameterized-commands-with-intervening-compute-commands.md)
+- [階層レコード セットを永続化します。](persisting-hierarchical-recordsets.md)

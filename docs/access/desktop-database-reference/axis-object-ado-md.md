@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249763(v=office.15)
 ms:contentKeyID: 48546807
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ba1e32c3d2638589675a45c7cbc5a3e722651358
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 6e90ff31c0b6a78a3f242927e2fa7e84c42d6ab3
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928433"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945349"
 ---
 # <a name="axis-object-ado-md"></a>Axis オブジェクト (ADO MD)
 
@@ -26,11 +26,11 @@ ms.locfileid: "25928433"
 
 **Axis** オブジェクトのコレクションおよびプロパティを使用すると、次の操作を実行できます。
 
-  - **Name** プロパティを使用して、 [Axis](name-property-ado-md.md) を識別します。
+- **Name** プロパティを使用して、 [Axis](name-property-ado-md.md) を識別します。
 
-  - **Positions** コレクションを使用して、 [Axis](positions-collection-ado-md.md) に沿った位置に反復処理を実行します。
+- **Positions** コレクションを使用して、 [Axis](positions-collection-ado-md.md) に沿った位置に反復処理を実行します。
 
-  - **DimensionCount** プロパティを使用して、 [Axis](dimensioncount-property-ado-md.md) 上の次元の数を取得します。
+- **DimensionCount** プロパティを使用して、 [Axis](dimensioncount-property-ado-md.md) 上の次元の数を取得します。
 
-  - 標準の ADO **Properties** コレクションを使用して、 [Axis](properties-collection-ado.md) のプロバイダー固有の属性を取得します。
+- 標準の ADO **Properties** コレクションを使用して、 [Axis](properties-collection-ado.md) のプロバイダー固有の属性を取得します。
 

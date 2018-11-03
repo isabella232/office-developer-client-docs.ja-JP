@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250144(v=office.15)
 ms:contentKeyID: 48548253
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bdd2e43a122cb2be32794840b43ebaa94b349174
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 33d913e315931af2b748cd6b176f23ee8d3b815b
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927124"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25947204"
 ---
 # <a name="cubedefs-collection-properties-methods-and-events-ado-md"></a>CubeDefs コレクションのプロパティ、メソッド、およびイベント (ADO MD)
 
@@ -19,13 +19,12 @@ ms.locfileid: "25927124"
 
 ## <a name="properties"></a>プロパティ
 
-- [Count プロパティ (ADO)](count-property-ado.md)
-
-- [Item プロパティ (ADO)](item-property-ado.md)
+- [Count プロパティ](count-property-ado.md)
+- [Item プロパティ](item-property-ado.md)
 
 ## <a name="methods"></a>メソッド
 
-- [Refresh メソッド (ADO)](refresh-method-ado.md)
+- [Refresh メソッド](refresh-method-ado.md)
 
 ## <a name="events"></a>イベント
 

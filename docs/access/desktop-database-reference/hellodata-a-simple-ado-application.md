@@ -1,20 +1,19 @@
 ---
-title: 'HelloData: 簡単な ADO アプリケーション'
-TOCTitle: 'HelloData: A Simple ADO Application'
+title: 'HelloData: 単純な ADO アプリケーション'
+TOCTitle: 'HelloData: A simple ADO application'
 ms:assetid: c271abeb-8865-81f9-db8e-47d3db87ad30
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249950(v=office.15)
 ms:contentKeyID: 48547554
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8828d65427eb85eecc9994b14017c4f35249ce7a
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 29d3485526b4adb5084b7dd8277b0c93d664af47
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25891206"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25944656"
 ---
-# <a name="hellodata-a-simple-ado-application"></a>HelloData: 簡単な ADO アプリケーション
-
+# <a name="hellodata-a-simple-ado-application"></a>HelloData: 単純な ADO アプリケーション
 
 **適用されます**Access 2013、Office 2013。
 

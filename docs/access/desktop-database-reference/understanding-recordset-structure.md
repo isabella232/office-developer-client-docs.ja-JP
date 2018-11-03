@@ -6,14 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249027(v=office.15)
 ms:contentKeyID: 48543808
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a7f3d9c64812a0b778d52f3e4c70436a11b270e9
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 4a8372f2c1762e29e4291b00e126ecd2a53618cd
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880412"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945069"
 ---
-# <a name="understanding-recordset-structure"></a>レコードセットの構造について
+# <a name="understanding-recordset-structure"></a>レコード セットの構造を理解します。
 
 **適用されます**Access 2013、Office 2013。
 
@@ -22,8 +22,6 @@ ms.locfileid: "25880412"
 次のトピックでは、 **Fields**コレクション内を移動し、各フィールドに関する情報を取得する方法について説明します。 これらは、 **Field**オブジェクトで使用できる情報の種類とそれを使用する方法について説明します。
 
 - [Fields コレクション](the-fields-collection.md)
-
 - [Field オブジェクト](the-field-object.md)
-
 - [レコードセットを使用する](working-with-recordsets.md)
 

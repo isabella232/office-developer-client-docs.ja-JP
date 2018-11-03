@@ -1,19 +1,19 @@
 ---
-title: 編集モードを判断する
-TOCTitle: Determining Edit Mode
+title: 編集モードを決定します。
+TOCTitle: Determining Edit mode
 ms:assetid: 45e21fa7-94e8-3449-e062-09cbcf15cba8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249215(v=office.15)
 ms:contentKeyID: 48544563
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: facad27e4579a28f45d88bfd4e440e420e70d913
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 9a64350626552ffe89b478007b529f4640f610c2
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25867938"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945965"
 ---
-# <a name="determining-edit-mode"></a>編集モードを判断する
+# <a name="determining-edit-mode"></a>編集モードを決定します。
 
 
 **適用されます**Access 2013、Office 2013。

@@ -1,19 +1,19 @@
 ---
-title: COMPUTE 句を使って Shape を仲介する
-TOCTitle: Intervening Shape COMPUTE Clauses
+title: 図形の計算の間にある句
+TOCTitle: Intervening Shape COMPUTE clauses
 ms:assetid: 3e9dcef2-776c-0365-4a92-68e325f7dbb5
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249174(v=office.15)
 ms:contentKeyID: 48544380
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 72be68975f0f4977198120b92055abd89d0da987
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 1f8edc3b1e873234b04eca0feb7a4e9c36e71e9c
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25889939"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945881"
 ---
-# <a name="intervening-shape-compute-clauses"></a>COMPUTE 句を使って Shape を仲介する
+# <a name="intervening-shape-compute-clauses"></a>図形の計算の間にある句
 
 
 **適用されます**Access 2013、Office 2013。

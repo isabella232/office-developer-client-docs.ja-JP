@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249373(v=office.15)
 ms:contentKeyID: 48545244
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9f1b9c6455d1db3379e34820b0a458b5080ccb89
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 0ad65728bad847b509b5e68d66a994dd290815ce
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928447"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945187"
 ---
 # <a name="command-properties-methods-and-events-ado"></a>コマンドのプロパティ、メソッド、およびイベント (ADO)
 
@@ -20,31 +20,21 @@ ms.locfileid: "25928447"
 
 ## <a name="propertiescollections"></a>プロパティ/コレクション
 
-- [ActiveConnection プロパティ (ADO)](activeconnection-property-ado.md)
-
-- [CommandText プロパティ (ADO)](commandtext-property-ado.md)
-
-- [CommandTimeout プロパティ (ADO)](commandtimeout-property-ado.md)
-
-- [CommandType プロパティ (ADO)](commandtype-property-ado.md)
-
-- [Name プロパティ (ADO)](name-property-ado.md)
-
-- [Parameters コレクション (ADO)](parameters-collection-ado.md)
-
-- [Prepared プロパティ (ADO)](prepared-property-ado.md)
-
-- [Properties コレクション (ADO)](properties-collection-ado.md)
-
-- [State プロパティ (ADO)](state-property-ado.md)
+- [ActiveConnection プロパティ](activeconnection-property-ado.md)
+- [CommandText プロパティ](commandtext-property-ado.md)
+- [CommandTimeout プロパティ](commandtimeout-property-ado.md)
+- [CommandType プロパティ](commandtype-property-ado.md)
+- [Name プロパティ](name-property-ado.md)
+- [Parameters コレクション](parameters-collection-ado.md)
+- [Prepared プロパティ](prepared-property-ado.md)
+- [Properties コレクション](properties-collection-ado.md)
+- [状態プロパティ](state-property-ado.md)
 
 ## <a name="methods"></a>メソッド
 
-- [Cancel メソッド (ADO)](cancel-method-ado.md)
-
-- [CreateParameter メソッド (ADO)](createparameter-method-ado.md)
-
-- [Execute メソッド (ADO Command)](https://msdn.microsoft.com/library/jj248785\(v=office.15\))
+- [Cancel メソッド](cancel-method-ado.md)
+- [CreateParameter メソッド](createparameter-method-ado.md)
+- [メソッド (ADO コマンド) を実行します。](https://msdn.microsoft.com/library/jj248785\(v=office.15\))
 
 ## <a name="events"></a>イベント
 

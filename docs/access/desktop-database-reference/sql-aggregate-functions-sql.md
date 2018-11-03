@@ -1,17 +1,17 @@
 ---
 title: SQL 集計関数 (SQL)
-TOCTitle: SQL Aggregate Functions (SQL)
+TOCTitle: SQL aggregate functions (SQL)
 ms:assetid: 8866cd71-0216-25b4-6a6a-02cb7acad9a2
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197054(v=office.15)
 ms:contentKeyID: 48546136
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1fd06b02d4331a51e0f8a186f713d80d98bbed20
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 946afd4ad9c1a2976e4833b59fa8467911ac1c56
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25870563"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945979"
 ---
 # <a name="sql-aggregate-functions-sql"></a>SQL 集計関数 (SQL)
 
@@ -20,17 +20,17 @@ ms.locfileid: "25870563"
 
 SQL 集計関数を使用すると、値の集合からさまざまな統計情報を求めることができます。SQL 集計関数は、 **QueryDef** オブジェクトの **SQL** プロパティのクエリおよび集計式で使用できます。また、SQL クエリに基づく **Recordset** オブジェクトを作成する場合にも使用できます。
 
-**[Avg 関数](https://msdn.microsoft.com/library/ff822755\(v=office.15\))**
+- [Avg 関数](https://msdn.microsoft.com/library/ff822755\(v=office.15\))
 
-**[Count 関数](https://msdn.microsoft.com/library/ff844748\(v=office.15\))**
+- [Count 関数](https://msdn.microsoft.com/library/ff844748\(v=office.15\))
 
-**[First 関数および Last 関数](https://msdn.microsoft.com/library/ff197381\(v=office.15\))**
+- [First、Last 関数します。](https://msdn.microsoft.com/library/ff197381\(v=office.15\))
 
-**[Min 関数および Max 関数](https://msdn.microsoft.com/library/ff194490\(v=office.15\))**
+- [Min、Max 関数](https://msdn.microsoft.com/library/ff194490\(v=office.15\))
 
-**[StDev 関数および StDevP 関数](https://msdn.microsoft.com/library/ff197043\(v=office.15\))**
+- [StDev、StDevP 関数](https://msdn.microsoft.com/library/ff197043\(v=office.15\))
 
-**[Sum 関数](https://msdn.microsoft.com/library/ff844764\(v=office.15\))**
+- [Sum 関数](https://msdn.microsoft.com/library/ff844764\(v=office.15\))
 
-**[Var 関数および VarP 関数](https://msdn.microsoft.com/library/ff192105\(v=office.15\))**
+- [Var、VarP 関数](https://msdn.microsoft.com/library/ff192105\(v=office.15\))
 

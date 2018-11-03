@@ -1,17 +1,17 @@
 ---
 title: Open メソッド (ADO Recordset)
-TOCTitle: Open Method (ADO Recordset)
+TOCTitle: Open method (ADO Recordset)
 ms:assetid: 87ef19a4-28e1-dec7-ed33-4ae500b9c460
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249591(v=office.15)
 ms:contentKeyID: 48546119
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bf40fa501c24af3433dde1bf2b0686fd3854acf2
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: a753ea57fba54f2e3b1a08c93f1309259f712446
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25884290"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25947708"
 ---
 # <a name="open-method-ado-recordset"></a>Open メソッド (ADO Recordset)
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249567(v=office.15)
 ms:contentKeyID: 48545989
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1162b844ab31faa7fa529e87acf092464e3930a2
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 52c1d64d6c6e9c2e7413f7e31dde73ebdf306ae1
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930239"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25946567"
 ---
 # <a name="catalog-properties-methods-and-events-adox"></a>Catalog のプロパティ、メソッド、イベント (ADOX)
 
@@ -19,25 +19,18 @@ ms.locfileid: "25930239"
 
 ## <a name="propertiescollections"></a>プロパティ/コレクション
 
-- [ActiveConnection プロパティ (ADOX)](activeconnection-property-adox.md)
-
-- [Groups コレクション (ADOX)](groups-collection-adox.md)
-
-- [Procedures コレクション (ADOX)](procedures-collection-adox.md)
-
-- [Tables コレクション (ADOX)](tables-collection-adox.md)
-
-- [Users コレクション (ADOX)](users-collection-adox.md)
-
-- [Views コレクション (ADOX)](views-collection-adox.md)
+- [ActiveConnection プロパティ](activeconnection-property-adox.md)
+- [グループ コレクション](groups-collection-adox.md)
+- [プロシージャのコレクション](procedures-collection-adox.md)
+- [テーブル コレクション](tables-collection-adox.md)
+- [Users コレクション](users-collection-adox.md)
+- [Views コレクション](views-collection-adox.md)
 
 ## <a name="methods"></a>メソッド
 
-- [Create メソッド (ADOX)](create-method-adox.md)
-
-- [GetObjectOwner メソッド (ADOX)](getobjectowner-method-adox.md)
-
-- [SetObjectOwner メソッド (ADOX)](https://msdn.microsoft.com/library/jj249006\(v=office.15\))
+- [メソッドを作成します。](create-method-adox.md)
+- [GetObjectOwner メソッド](getobjectowner-method-adox.md)
+- [SetObjectOwner メソッド](https://msdn.microsoft.com/library/jj249006\(v=office.15\))
 
 ## <a name="events"></a>イベント
 

@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff191889(v=office.15)
 ms:contentKeyID: 48543802
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3e38df07831e21a92afdf8106b6d8eb3844396cc
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 21609d6299caf6de5e2fe0b777796033b69d9f87
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936757"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25946693"
 ---
 # <a name="indexes-collection-dao"></a>Indexes コレクション (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,9 +25,7 @@ ms.locfileid: "25936757"
 
 
 > [!NOTE]
-> <P>[!メモ] <STRONG>Append</STRONG> または <STRONG>Delete</STRONG> メソッドを <STRONG>Indexes</STRONG> コレクションに使用できるのは、元になる <A href="connection-updatable-property-dao.md">TableDef</A> オブジェクトの <STRONG><STRONG>Updatable</STRONG></STRONG> プロパティの設定が <STRONG>True</STRONG> の場合のみです。</P>
-
-
+> [!メモ] **Append** または **Delete** メソッドを **Indexes** コレクションに使用できるのは、元になる [TableDef](connection-updatable-property-dao.md) オブジェクトの ****Updatable**** プロパティの設定が **True** の場合のみです。
 
 新しい **Index** オブジェクトを作成した後は、 **Append** メソッドを使用して **TableDef** オブジェクトの **Indexes** コレクションに追加する必要があります。
 

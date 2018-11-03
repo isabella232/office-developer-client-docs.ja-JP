@@ -1,17 +1,17 @@
 ---
 title: DataFactory のカスタマイズ
-TOCTitle: DataFactory Customization
+TOCTitle: DataFactory customization
 ms:assetid: 43cd7416-1f05-87ee-22f0-6cf0d2d1b39f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249205(v=office.15)
 ms:contentKeyID: 48544511
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3a7ddd728908212716256eaa65adc925548e739e
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 9de748b85e4bf6076c37f49e9d9bc7ff3b0bfe62
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25879706"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25947573"
 ---
 # <a name="datafactory-customization"></a>DataFactory のカスタマイズ
 
@@ -30,16 +30,10 @@ ADO では、 **DataFactory**の作業別の種類のサーバー プログラ�
 
 **DataFactory** オブジェクトのカスタマイズの詳細については、次のトピックを参照してください。
 
-  - [カスタマイズ ファイルの概要](understanding-the-customization-file.md)
-
-  - [カスタマイズ ファイルの Connect セクション](customization-file-connect-section.md)
-
-  - [カスタマイズ ファイルの SQL セクション](customization-file-sql-section.md)
-
-  - [カスタマイズ ファイルの UserList セクション](customization-file-userlist-section.md)
-
-  - [カスタマイズ ファイルの Logs セクション](customization-file-logs-section.md)
-
-  - [クライアントで必要な設定](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/required-client-settings)
-
-  - [カスタマイズした独自のハンドラーを記述する](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/writing-your-own-customized-handler)
+- [カスタマイズ ファイルの概要](understanding-the-customization-file.md)
+- [カスタマイズ ファイルの接続] セクション](customization-file-connect-section.md)
+- [カスタマイズ ファイルの SQL セクション](customization-file-sql-section.md)
+- [カスタマイズ ファイルの UserList セクション](customization-file-userlist-section.md)
+- [カスタマイズ ファイルのログのセクション](customization-file-logs-section.md)
+- [必要なクライアントの設定](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/required-client-settings)
+- [独自のカスタマイズされたハンドラーを記述します。](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/writing-your-own-customized-handler)

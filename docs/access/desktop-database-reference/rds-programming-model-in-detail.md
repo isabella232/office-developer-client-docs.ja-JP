@@ -1,34 +1,28 @@
 ---
-title: RDS プログラミング モデルの詳細
-TOCTitle: RDS Programming Model in Detail
+title: RDS のプログラミング モデルの詳細
+TOCTitle: RDS programming model in detail
 ms:assetid: 133fc059-9b51-52e2-2e61-339716d8d965
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248906(v=office.15)
 ms:contentKeyID: 48543364
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8a34321df27b5270bd35844eaf28b0b335b0294e
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: b152715c104c9c3a4d503254d0dc36622e29006c
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937478"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25943830"
 ---
-# <a name="rds-programming-model-in-detail"></a>RDS プログラミング モデルの詳細
-
+# <a name="rds-programming-model-in-detail"></a>RDS のプログラミング モデルの詳細
 
 **適用されます**Access 2013、Office 2013。
 
-
-
 RDS プログラミング モデルの主な要素は以下のとおりです。
 
-  - RDS.インスタンス
-
-  - RDSServer.DataFactory
-
-  - RDS.DataControl
-
-  - イベント
+- RDS.インスタンス
+- RDSServer.DataFactory
+- RDS.DataControl
+- イベント
 
 ## <a name="rdsdataspace"></a>RDS.インスタンス
 

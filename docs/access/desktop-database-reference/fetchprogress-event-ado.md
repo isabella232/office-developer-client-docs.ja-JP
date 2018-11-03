@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248828(v=office.15)
 ms:contentKeyID: 48543114
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 929202df2d85ba2a4625a94506f8515eaba9fb39
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 44e41c3e9d46c9d26f5aed18755c158a5dc68ba7
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923687"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25946392"
 ---
 # <a name="fetchprogress-event-ado"></a>FetchProgress イベント (ADO)
 
@@ -27,19 +27,19 @@ FetchProgress*の進行状況*、 *MaxProgress*、 *adStatus*、 *pRecordset*
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Progress*
+- *Progress*
 
   - フェッチ操作によって、現在までに取得したレコード数を表す長整数型 ( **Long** ) の値です。
 
-  - *MaxProgress*
+- *MaxProgress*
 
   - 取得する予定の最大レコード数を表す長整数型 ( **Long** ) の値です。
 
-  - *adStatus*
+- *adStatus*
 
   - [EventStatusEnum](eventstatusenum.md) 状態値です。
 
-  - *pRecordset*
+- *pRecordset*
 
   - レコードの取得先のオブジェクトである **Recordset** オブジェクトです。
 

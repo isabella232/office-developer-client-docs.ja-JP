@@ -1,17 +1,17 @@
 ---
-title: 'インターネット サーバー エラー: アクセスは拒否されました'
+title: 'インターネット サーバー エラー: アクセスが拒否されました'
 TOCTitle: 'Internet Server Error: Access Denied'
 ms:assetid: 65f4608b-afec-2867-dae3-e29bae03a6fd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249395(v=office.15)
 ms:contentKeyID: 48545334
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 132ecc75c01cdc54eb2d7664227b7abb1578cc2f
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 885bdc14e5d5d346a17e018a509acf5b6c52108d
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25876541"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25944880"
 ---
 # <a name="internet-server-error-access-denied"></a>インターネット サーバー エラー: アクセスが拒否されました
 

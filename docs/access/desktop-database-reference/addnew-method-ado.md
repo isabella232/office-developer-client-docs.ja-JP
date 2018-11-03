@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249899(v=office.15)
 ms:contentKeyID: 48547384
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 379aa71ad875213ab8c1ae022f7c8af3350b2662
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 5c4ac833f2ff7681e3a4abe77ff53928fc3f4fe2
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927747"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25944565"
 ---
 # <a name="addnew-method-ado"></a>AddNew メソッド (ADO)
 
@@ -26,17 +26,11 @@ ms.locfileid: "25927747"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *recordset*
-
-  - **Recordset** オブジェクトです。
-
-  - *FieldList*
-
-  - 省略可能です。新しいレコード内の単一フィールドの名前であるか、複数フィールドの名前または順序の配列です。
-
-  - *Values*
-
-  - 省略可能です。 1 つの値、または新しいレコードのフィールドの値の配列。 *Fieldlist*が配列の場合は、*値*配列と同じ数のメンバーにもする必要があります。それ以外の場合、エラーが発生します。 また、一方の配列におけるフィールド名の順序と、もう一方の配列におけるフィールド値の順序は、一致している必要があります。
+|パラメーター|説明|
+|:--------|:----------|
+|*recordset* |**Recordset** オブジェクトです。|
+|*FieldList* |省略可能です。新しいレコード内の単一フィールドの名前であるか、複数フィールドの名前または順序の配列です。|
+|*Values* |省略可能です。 1 つの値、または新しいレコードのフィールドの値の配列。 *Fieldlist*が配列の場合は、*値*配列と同じ数のメンバーにもする必要があります。それ以外の場合、エラーが発生します。 また、一方の配列におけるフィールド名の順序と、もう一方の配列におけるフィールド値の順序は、一致している必要があります。|
 
 ## <a name="remarks"></a>解説
 

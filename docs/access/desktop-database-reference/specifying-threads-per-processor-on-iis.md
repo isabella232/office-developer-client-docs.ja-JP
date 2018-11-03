@@ -1,19 +1,19 @@
 ---
-title: IIS でプロセッサごとにスレッドを指定する
-TOCTitle: Specifying Threads Per Processor on IIS
+title: IIS でプロセッサごとのスレッドを指定します。
+TOCTitle: Specifying threads per processor on IIS
 ms:assetid: 12889d7b-5415-8077-2ca0-1c3a96fb89ec
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248898(v=office.15)
 ms:contentKeyID: 48543344
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4212b1c2bcf89badedbc7a3b7d4dc72a879a95c7
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 78d4ad5b2cf87f390051793b290e174fc03e6a82
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25871984"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25947197"
 ---
-# <a name="specifying-threads-per-processor-on-iis"></a>IIS でプロセッサごとにスレッドを指定する
+# <a name="specifying-threads-per-processor-on-iis"></a>IIS でプロセッサごとのスレッドを指定します。
 
 
 **適用されます**Access 2013、Office 2013。

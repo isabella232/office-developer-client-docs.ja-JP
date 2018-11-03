@@ -1,19 +1,19 @@
 ---
-title: DCOM で DLL を実行できるようにする
-TOCTitle: Enabling a DLL to Run on DCOM
+title: DCOM を実行する DLL を有効にします。
+TOCTitle: Enabling a DLL to run on DCOM
 ms:assetid: b405f767-91f0-c869-d34e-7a953de49106
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249859(v=office.15)
 ms:contentKeyID: 48547211
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: eeec1109d2e352d43eaaa66a7e081123d7f388ee
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: f9feb189221a1d447e6c2e0242240ca13784b7fe
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937716"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25946462"
 ---
-# <a name="enabling-a-dll-to-run-on-dcom"></a>DCOM で DLL を実行できるようにする
+# <a name="enabling-a-dll-to-run-on-dcom"></a>DCOM を実行する DLL を有効にします。
 
 
 **適用されます**Access 2013、Office 2013。

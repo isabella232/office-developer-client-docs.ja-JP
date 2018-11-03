@@ -1,20 +1,19 @@
 ---
-title: 失敗した更新操作に対処する
-TOCTitle: Dealing with Failed Updates
+title: 失敗した更新を処理します。
+TOCTitle: Dealing with failed updates
 ms:assetid: f6f4914d-59b3-f3f2-b986-218e07ce5a1d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250258(v=office.15)
 ms:contentKeyID: 48548752
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ca4d8d2fd8797ffb5ae0861e86dfa02faf7bb62c
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 659b5389074371ed4de41b909ab5228ad8fca080
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25875778"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25947750"
 ---
-# <a name="dealing-with-failed-updates"></a>失敗した更新操作に対処する
-
+# <a name="dealing-with-failed-updates"></a>失敗した更新を処理します。
 
 **適用されます**Access 2013、Office 2013。
 

@@ -6,31 +6,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn123943(v=office.15)
 ms:contentKeyID: 52071582
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 80c72ac474ff19363d62ba9e99aba1c2b924b64c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 2b888422a159373b9c4337c96e80ce4bd1d328c7
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928622"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945169"
 ---
 # <a name="relation-properties-dao"></a>関係のプロパティ (DAO)
 
-
 **適用されます**Access 2013、Office 2013。
 
+- [Relation.Attributes プロパティ (DAO)](relation-attributes-property-dao.md)
+- [Relation.Fields プロパティ (DAO)](relation-fields-property-dao.md)
+- [Relation.ForeignTable プロパティ (DAO)](relation-foreigntable-property-dao.md)
+- [Relation.Name プロパティ (DAO)](relation-name-property-dao.md)
+- [Relation.PartialReplica プロパティ (DAO)](relation-partialreplica-property-dao.md)
+- [Relation.Properties プロパティ (DAO)](relation-properties-property-dao.md)
+- [Relation.Table プロパティ (DAO)](relation-table-property-dao.md)
 
-
-  - [Relation.Attributes プロパティ (DAO)](relation-attributes-property-dao.md)
-
-  - [Relation.Fields プロパティ (DAO)](relation-fields-property-dao.md)
-
-  - [Relation.ForeignTable プロパティ (DAO)](relation-foreigntable-property-dao.md)
-
-  - [Relation.Name プロパティ (DAO)](relation-name-property-dao.md)
-
-  - [Relation.PartialReplica プロパティ (DAO)](relation-partialreplica-property-dao.md)
-
-  - [Relation.Properties プロパティ (DAO)](relation-properties-property-dao.md)
-
-  - [Relation.Table プロパティ (DAO)](relation-table-property-dao.md)
 

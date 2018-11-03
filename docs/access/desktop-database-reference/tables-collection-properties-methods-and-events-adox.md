@@ -6,31 +6,27 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248806(v=office.15)
 ms:contentKeyID: 48543009
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: effb963d76dc0077433b002b8077719fed27a42a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 3843846174767396d0292f15ef59b275a93b5e4a
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919158"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25943921"
 ---
 # <a name="tables-collection-properties-methods-and-events-adox"></a>Tables コレクションのプロパティ、メソッド、イベント (ADOX)
-
 
 **適用されます**Access 2013、Office 2013。
 
 ## <a name="properties"></a>プロパティ
 
-- [Count プロパティ (ADO)](count-property-ado.md)
-
-- [Item プロパティ (ADO)](item-property-ado.md)
+- [Count プロパティ](count-property-ado.md)
+- [Item プロパティ](item-property-ado.md)
 
 ## <a name="methods"></a>メソッド
 
-- [Append メソッド (ADOX Tables)](append-method-adox-tables.md)
-
-- [Delete メソッド (ADOX コレクション)](delete-method-adox-collections.md)
-
-- [Refresh メソッド (ADO)](refresh-method-ado.md)
+- [メソッド (テーブル) を追加します。](append-method-adox-tables.md)
+- [メソッド (コレクション) を削除します。](delete-method-adox-collections.md)
+- [Refresh メソッド](refresh-method-ado.md)
 
 ## <a name="events"></a>イベント
 

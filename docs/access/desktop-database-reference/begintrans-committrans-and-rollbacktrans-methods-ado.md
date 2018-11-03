@@ -1,31 +1,29 @@
 ---
-title: BeginTrans メソッド、CommitTrans メソッド、および RollbackTrans メソッド (ADO)
-TOCTitle: BeginTrans, CommitTrans, and RollbackTrans Methods (ADO)
+title: BeginTrans メソッド、CommitTrans メソッド、RollbackTrans メソッド (ADO)
+TOCTitle: BeginTrans, CommitTrans, and RollbackTrans methods (ADO)
 ms:assetid: 9a0415f0-9424-8d1c-4779-92e932292d46
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249694(v=office.15)
 ms:contentKeyID: 48546529
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 68e827f6177c0ea90d4dd8d74c9782d552b3fdd2
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: ca7c63e0c310535ecdf84a11c656d00ff436627f
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25884668"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945923"
 ---
-# <a name="begintrans-committrans-and-rollbacktrans-methods-ado"></a>BeginTrans メソッド、CommitTrans メソッド、および RollbackTrans メソッド (ADO)
-
+# <a name="begintrans-committrans-and-rollbacktrans-methods-ado"></a>BeginTrans メソッド、CommitTrans メソッド、RollbackTrans メソッド (ADO)
 
 **適用されます**Access 2013、Office 2013。
 
-
 これらのトランザクション メソッドは、[Connection](connection-object-ado.md) オブジェクト内のトランザクション処理を次のように管理します。
 
-  - **BeginTrans** は、新しいトランザクションを開始します。
+- **BeginTrans** は、新しいトランザクションを開始します。
 
-  - **CommitTrans** は、すべての変更を保存して現在のトランザクションを終了します。新しいトランザクションを開始する場合もあります。
+- **CommitTrans** は、すべての変更を保存して現在のトランザクションを終了します。新しいトランザクションを開始する場合もあります。
 
-  - **RollbackTrans** は、現在のトランザクションの間に行われたすべての変更をキャンセルし、トランザクションを終了します。新しいトランザクションを開始する場合もあります。
+- **RollbackTrans** は、現在のトランザクションの間に行われたすべての変更をキャンセルし、トランザクションを終了します。新しいトランザクションを開始する場合もあります。
 
 ## <a name="syntax"></a>構文
 
@@ -43,14 +41,13 @@ ms.locfileid: "25884668"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *object*
+- *object*
 
   - **Connection** オブジェクトです。
 
-**Connection**
+### <a name="connection"></a>Connection
 
 **Connection** オブジェクトでこれらのメソッドを使用すると、ソース データに対して行った一連の変更を、1 つの単位として保存または取り消すことができます。たとえば、銀行口座間でお金を移すには、一方の口座からその金額を引き出し、他方の口座に入金するという 2 つの操作が行われます。どちらかの更新が失敗すると、口座の残高が合わなくなります。開いているトランザクションでこのような変更を行うと、すべての変更が正しく処理されるか、またはまったく変更が行われないことが保証されます。
-
 
 > [!NOTE]
 > すべてのプロバイダーがトランザクションをサポートしているわけではありません。プロバイダー定義のプロパティ "**Transaction DDL**" が、**Connection** オブジェクトの [Properties](properties-collection-ado.md) コレクションに含まれることを確認してください。このプロパティは、プロバイダーがトランザクションをサポートすることを示します。プロバイダーがトランザクションをサポートしない場合、いずれかのトランザクション メソッドを呼び出すと、エラーが発生します。
@@ -63,7 +60,7 @@ ms.locfileid: "25884668"
 
 **Connection** オブジェクトの [Attributes](attributes-property-ado.md) プロパティによっては、 **CommitTrans** メソッドまたは **RollbackTrans** メソッドを呼び出すと、新しいトランザクションが自動的に開始する場合があります。 **Attributes** プロパティが **adXactCommitRetaining** に設定されている場合は、 **CommitTrans** メソッドを呼び出すと、プロバイダーが新しいトランザクションを自動的に開始します。 **Attributes** プロパティが **adXactAbortRetaining** に設定されている場合は、 **RollbackTrans** メソッドを呼び出すと、プロバイダーが新しいトランザクションを自動的に開始します。
 
-**リモート データ サービス**
+### <a name="remote-data-service"></a>リモート データ サービス
 
 **BeginTrans** メソッド、 **CommitTrans** メソッド、および **RollbackTrans** メソッドは、クライアント側の **Connection** オブジェクトでは利用できません。
 

@@ -1,19 +1,19 @@
 ---
-title: Delete メソッド (ADO Parameters コレクション)
-TOCTitle: Delete Method (ADO Parameters Collection)
+title: メソッド (ADO Parameters コレクション) を削除します。
+TOCTitle: Delete method (ADO Parameters Collection)
 ms:assetid: 03ffc24d-fea2-30fa-c8e9-43eb524fd51f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248804(v=office.15)
 ms:contentKeyID: 48542998
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e519d40a081b132cd09030e9ba97de9e8987af99
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: b18a09d6a0c9d6a6ad8e9f579068c4f6d7162d1f
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25881959"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25944873"
 ---
-# <a name="delete-method-ado-parameters-collection"></a>Delete メソッド (ADO Parameters コレクション)
+# <a name="delete-method-ado-parameters-collection"></a>メソッド (ADO Parameters コレクション) を削除します。
 
 
 **適用されます**Access 2013、Office 2013。
@@ -27,7 +27,7 @@ ms.locfileid: "25881959"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Index*
+- *Index*
 
   - 削除するオブジェクトの名前、またはコレクション内でのオブジェクトの位置 (インデックス) を含む文字列型 ( **String** ) の値です。
 

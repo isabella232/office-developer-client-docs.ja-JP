@@ -1,19 +1,19 @@
 ---
-title: レコードセットを切断し、再接続する
-TOCTitle: Disconnecting and Reconnecting the Recordset
+title: 接続を切断して、レコード セットを再接続します。
+TOCTitle: Disconnecting and reconnecting the Recordset
 ms:assetid: d608d95d-9a4e-17a1-107a-b88b77f3774c
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250077(v=office.15)
 ms:contentKeyID: 48547975
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 094c68fbf5b62a7a1b3af16b826bf9c2c26a2af4
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: ac1bc4c9c9d6d149faeb18d73f17539e63a4147e
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25882421"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25943942"
 ---
-# <a name="disconnecting-and-reconnecting-the-recordset"></a>レコードセットを切断し、再接続する
+# <a name="disconnecting-and-reconnecting-the-recordset"></a>接続を切断して、レコード セットを再接続します。
 
 
 **適用されます**Access 2013、Office 2013。

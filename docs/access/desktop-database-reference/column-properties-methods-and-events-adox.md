@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249162(v=office.15)
 ms:contentKeyID: 48544330
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cc43f9cd31890f39ac072c520f84a036c8ed431a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 3fab3160ad863f83b9dadba5bce04a28abe2cf2b
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919130"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945468"
 ---
 # <a name="column-properties-methods-and-events-adox"></a>列のプロパティ、メソッド、およびイベント (ADOX)
 
@@ -20,25 +20,16 @@ ms.locfileid: "25919130"
 
 ## <a name="propertiescollections"></a>プロパティ/コレクション
 
-- [Attributes プロパティ (ADOX)](attributes-property-adox.md)
-
-- [DefinedSize プロパティ (ADOX)](definedsize-property-adox.md)
-
-- [Name プロパティ (ADOX)](name-property-adox.md)
-
-- [NumericScale プロパティ (ADOX)](numericscale-property-adox.md)
-
-- [ParentCatalog プロパティ (ADOX)](parentcatalog-property-adox.md)
-
-- [Precision プロパティ (ADOX)](precision-property-adox.md)
-
-- [Properties コレクション (ADO)](properties-collection-ado.md)
-
-- [RelatedColumn プロパティ (ADOX)](relatedcolumn-property-adox.md)
-
-- [SortOrder プロパティ (ADOX)](sortorder-property-adox.md)
-
-- [Type プロパティ (Column) (ADOX)](https://msdn.microsoft.com/library/jj249169\(v=office.15\))
+- [属性のプロパティ](attributes-property-adox.md)
+- [DefinedSize プロパティ](definedsize-property-adox.md)
+- [Name プロパティ](name-property-adox.md)
+- [NumericScale プロパティ](numericscale-property-adox.md)
+- [ParentCatalog プロパティ](parentcatalog-property-adox.md)
+- [精度のプロパティ](precision-property-adox.md)
+- [Properties コレクション](properties-collection-ado.md)
+- [RelatedColumn プロパティ](relatedcolumn-property-adox.md)
+- [SortOrder プロパティ](sortorder-property-adox.md)
+- [Type プロパティ (列)](https://msdn.microsoft.com/library/jj249169\(v=office.15\))
 
 ## <a name="methods"></a>メソッド
 

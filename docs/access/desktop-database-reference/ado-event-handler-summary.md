@@ -1,17 +1,17 @@
 ---
-title: ADO イベント ハンドラーの概要
-TOCTitle: ADO Event Handler Summary
+title: ADO のイベント ハンドラーの概要
+TOCTitle: ADO event handler summary
 ms:assetid: f50b9eb4-df6e-7b9d-0b3d-dca8945167a2
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250247(v=office.15)
 ms:contentKeyID: 48548701
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5e47cf076c213707857285757d936d58bd153e7c
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: d18414793d6a28450dea349e03624ad7aa2537f9
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880601"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945363"
 ---
 # <a name="ado-event-handler-summary"></a>ADO イベント ハンドラーの概要
 
@@ -20,9 +20,9 @@ ms.locfileid: "25880601"
 
 イベントを発行できる ADO オブジェクトは、[Connection](connection-object-ado.md) オブジェクトと [Recordset](recordset-object-ado.md) オブジェクトの 2 つです。 **ConnectionEvent** 系は **Connection** オブジェクトの操作に関係し、 **RecordsetEvent** 系は **Recordset** オブジェクトの操作に関係します。
 
-  - **Connection Events**: 接続上でのトランザクション開始時、コミット時またはロール バック時、 [Command](command-object-ado.md) の実行時、 **Connection Event** 操作中の警告発生時、または **Connection** の開始時か終了時にイベントが発行されます。
+- **Connection Events**: 接続上でのトランザクション開始時、コミット時またはロール バック時、 [Command](command-object-ado.md) の実行時、 **Connection Event** 操作中の警告発生時、または **Connection** の開始時か終了時にイベントが発行されます。
 
-  - **Recordset Events**: **Recordset** オブジェクトの行内での移動時、 **Recordset** の行内のフィールド変更時、 **Recordset** の行の変更時、サーバー側カーソルで **Recordset** を開いたとき、 **Recordset** を閉じたとき、または **Recordset** 内で変更が行われたとき、および非同期のフェッチ操作に関連してもイベントが発行されます。
+- **Recordset Events**: **Recordset** オブジェクトの行内での移動時、 **Recordset** の行内のフィールド変更時、 **Recordset** の行の変更時、サーバー側カーソルで **Recordset** を開いたとき、 **Recordset** を閉じたとき、または **Recordset** 内で変更が行われたとき、および非同期のフェッチ操作に関連してもイベントが発行されます。
 
 次の表は、イベントとその説明の一覧です。
 

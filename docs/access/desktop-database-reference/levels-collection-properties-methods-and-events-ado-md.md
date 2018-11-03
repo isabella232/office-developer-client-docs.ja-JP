@@ -6,27 +6,25 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250286(v=office.15)
 ms:contentKeyID: 48548866
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 170e9065a478c652e5238fe125ec806895d71d82
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: c995a1aa1a943c3fa35d7eacfca0e8584f4db76c
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923183"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25943844"
 ---
 # <a name="levels-collection-properties-methods-and-events-ado-md"></a>Levels コレクションのプロパティ、メソッド、およびイベント (ADO MD)
-
 
 **適用されます**Access 2013、Office 2013。
 
 ## <a name="properties"></a>プロパティ
 
-- [Count プロパティ (ADO)](count-property-ado.md)
-
-- [Item プロパティ (ADO)](item-property-ado.md)
+- [Count プロパティ](count-property-ado.md)
+- [Item プロパティ](item-property-ado.md)
 
 ## <a name="methods"></a>メソッド
 
-- [Refresh メソッド (ADO)](refresh-method-ado.md)
+- [Refresh メソッド](refresh-method-ado.md)
 
 ## <a name="events"></a>イベント
 

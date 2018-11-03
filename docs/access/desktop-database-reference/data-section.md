@@ -1,23 +1,21 @@
 ---
 title: データ セクション (アクセス デスクトップ データベース参照)
-TOCTitle: Data Section
+TOCTitle: Data section
 ms:assetid: fd8d31aa-af13-a52f-5e91-20225b8df175
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250303(v=office.15)
 ms:contentKeyID: 48548920
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 74406232a6f7d458eebb242f3f341bd4e3ccc583
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 98215394af89df30a95fcb9c5a757368cb64d4f1
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25882855"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25946378"
 ---
 # <a name="data-section"></a>データ セクション
 
 **適用されます**Access 2013、Office 2013。
- 
-## <a name="data-section"></a>データ セクション
 
 データ セクションは、行セットのデータ、および保留中の更新、挿入、または削除を定義します。データ セクションには、行が含まれない場合と、1 つ以上の行が含まれる場合があります。スキーマによって行が定義されている単一の行セットからのデータだけを含む場合もあります。また、前述したとおり、データを含まない列は省略される場合があります。属性やサブ要素がデータ セクションで使用されており、その構成体がスキーマ セクションで定義されていない場合、その構成体は自動的に無視されます。
 
@@ -43,7 +41,7 @@ XML で指定された日付の形式の詳細については、 [W3C の XMLDat
 
 XML-Data の仕様で 2 つの等価なデータ型が定義されている場合 (i4 == int など)、ADO ではフレンドリ名で記述されますが、読み取りは両方に対して行われます。
 
-## <a name="managing-pending-changes"></a>保留中の変更を管理する
+## <a name="managing-pending-changes"></a>保留中の変更を管理します。
 
 **Recordset** は、イミディエイト更新モードまたはバッチ更新モードで開くことができます。クライアント側カーソルを使用してバッチ更新モードで開かれた場合、 **Recordset** に対して加えられるすべての変更は、 **UpdateBatch** メソッドが呼び出されるまで保留状態となります。 **Recordset** が保存されると、保留中の変更も保存されます。XML では、これらの変更は、urn:schemas-microsoft-com:rowset 内で定義された "update" 要素を使用して表されます。さらに、行セットを更新できる場合は、行の定義で updatable プロパティが true に設定されている必要があります。たとえば、Shippers テーブルに保留中の変更が含まれることを定義する場合、行の定義は次のようになります。
 

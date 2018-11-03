@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249445(v=office.15)
 ms:contentKeyID: 48545559
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b977db2faf07a47c2e9234cec4a7828def5e6188
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 1dd402a27164b5fb40bab10d7809f042846e37b5
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926739"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25943732"
 ---
 # <a name="catalog-object-ado-md"></a>Catalog オブジェクト (ADO MD)
 
@@ -24,9 +24,9 @@ ms.locfileid: "25926739"
 
 **Catalog** オブジェクトのコレクションおよびプロパティを使用すると、次の操作を実行できます。
 
-  - [ActiveConnection](activeconnection-property-ado-md.md) プロパティを標準の ADO [Connection](connection-object-ado.md) オブジェクトまたは有効な接続文字列に設定して、カタログを開きます。
+- [ActiveConnection](activeconnection-property-ado-md.md) プロパティを標準の ADO [Connection](connection-object-ado.md) オブジェクトまたは有効な接続文字列に設定して、カタログを開きます。
 
-  - **Name** プロパティを使用して、 [Catalog](name-property-ado-md.md) を識別します。
+- **Name** プロパティを使用して、 [Catalog](name-property-ado-md.md) を識別します。
 
-  - [CubeDefs](cubedefs-collection-ado-md.md) コレクションを使用して、キューブに反復処理を実行します。
+- [CubeDefs](cubedefs-collection-ado-md.md) コレクションを使用して、キューブに反復処理を実行します。
 

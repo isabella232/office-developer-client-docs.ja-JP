@@ -1,24 +1,21 @@
 ---
-title: 複数のイベント ハンドラーとの共同作業
-TOCTitle: How Event Handlers Work Together
+title: イベント ハンドラーがどのように連携
+TOCTitle: How event handlers work together
 ms:assetid: 02122824-881e-0bb8-cba1-c963024790ae
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248788(v=office.15)
 ms:contentKeyID: 48542951
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 19f60c196c110787eb7baf57646a9d5d4996fdf0
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 7a926bed97cf3f21e81fbf01eae554aaec45406a
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25877829"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25947785"
 ---
-# <a name="how-event-handlers-work-together"></a>複数のイベント ハンドラーとの共同作業
-
+# <a name="how-event-handlers-work-together"></a>イベント ハンドラーがどのように連携
 
 **適用されます**Access 2013、Office 2013。
-
-
 
 Visual Basic でプログラミングするのでない限り、 **Connection** イベントと **Recordset** イベントのイベント ハンドラーは、それらのイベントを実際に処理するかどうかにかかわらず、すべて実装する必要があります。実装に必要な作業量は、使用するプログラミング言語によって異なります。詳細については、「 [ADO イベントのインスタンス化 (言語別)](https://msdn.microsoft.com/library/jj250244\(v=office.15\))」を参照してください。
 

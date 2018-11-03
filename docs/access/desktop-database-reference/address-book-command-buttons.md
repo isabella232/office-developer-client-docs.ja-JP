@@ -1,17 +1,17 @@
 ---
-title: Address Book のコマンド ボタン
-TOCTitle: Address Book Command Buttons
+title: アドレス帳のコマンド ボタン
+TOCTitle: Address Book command buttons
 ms:assetid: bcea6f53-3e36-b067-03c2-b157ed02d41d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249908(v=office.15)
 ms:contentKeyID: 48547422
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e445414ead78bb5e1b05b3f3812e86f1d6c119ef
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: f586b92f309ffd330230bf732d0e477acf0a8ba9
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869513"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25946931"
 ---
 # <a name="address-book-command-buttons"></a>アドレス帳のコマンド ボタン
 
@@ -21,13 +21,13 @@ ms.locfileid: "25869513"
 
 アドレス帳アプリケーションには次のコマンド ボタンがあります。
 
-  - クエリをデータベースに送信するための [検索] ボタン。
+- クエリをデータベースに送信するための **[検索]** ボタン。
 
-  - 新しい検索を開始する前にテキスト ボックスをクリアするための **[クリア]** ボタン。
+- 新しい検索を開始する前にテキスト ボックスをクリアするための **[クリア]** ボタン。
 
-  - 従業員レコードに対する変更を保存するための  [プロファイルの更新] ボタン。
+- 従業員レコードに対する変更を保存するための  **[プロファイルの更新]** ボタン。
 
-  - 変更を破棄するための [変更の取り消し] ボタン。
+- 変更を破棄するための **[変更の取り消し]** ボタン。
 
 ## <a name="find-button"></a>[検索] ボタン
 

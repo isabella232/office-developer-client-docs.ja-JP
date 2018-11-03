@@ -6,14 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248975(v=office.15)
 ms:contentKeyID: 48543622
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e3a9c6b8dc7a6dc88ac6baf8d05e1baf4a0e048b
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 22f89b4fb22e7625f73eb938aa011beb42c6b99c
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25868554"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25944348"
 ---
-# <a name="using-ado-for-internet-publishing"></a>Internet Publishing 用の ADO の使用
+# <a name="using-ado-for-internet-publishing"></a>インターネット発行に ADO を使用します。
 
 
 **適用されます**Access 2013、Office 2013。

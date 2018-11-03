@@ -6,41 +6,33 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249125(v=office.15)
 ms:contentKeyID: 48544173
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a4d916f22df99f1d17ba2886ef891954b8381e95
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 136d2470533a7fc8176a347a03cd1941531972aa
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25924709"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945566"
 ---
 # <a name="parameter-properties-methods-and-events-ado"></a>パラメーターのプロパティ、メソッド、およびイベント (ADO)
-
 
 **適用されます**Access 2013、Office 2013。
 
 ## <a name="propertiescollections"></a>プロパティ/コレクション
 
-- [Attributes プロパティ (ADO)](attributes-property-ado.md)
+- [属性のプロパティ](attributes-property-ado.md)
+- [Direction プロパティ](direction-property-ado.md)
+- [Name プロパティ](name-property-ado.md)
+- [NumericScale プロパティ](numericscale-property-ado.md)
+- [精度のプロパティ](precision-property-ado.md)
+- [Properties コレクション](properties-collection-ado.md)
+- [Size プロパティ](size-property-ado.md)
+- [Type プロパティ](type-property-ado.md)
+- [Value プロパティ](value-property-ado.md)
 
-- [Direction プロパティ (ADO)](direction-property-ado.md)
-
-- [Name プロパティ (ADO)](name-property-ado.md)
-
-- [NumericScale プロパティ (ADO)](numericscale-property-ado.md)
-
-- [Precision プロパティ (ADO)](precision-property-ado.md)
-
-- [Properties コレクション (ADO)](properties-collection-ado.md)
-
-- [Size プロパティ (ADO)](size-property-ado.md)
-
-- [Type プロパティ (ADO)](type-property-ado.md)
-
-- [Value プロパティ (ADO)](value-property-ado.md)
 
 ## <a name="methods"></a>メソッド
 
-- [AppendChunk メソッド (ADO)](appendchunk-method-ado.md)
+- [AppendChunk メソッド](appendchunk-method-ado.md)
 
 ## <a name="events"></a>イベント
 

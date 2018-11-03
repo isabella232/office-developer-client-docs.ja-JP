@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249984(v=office.15)
 ms:contentKeyID: 48547693
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 17284fd61c44fe17f1c2661eff204c8827bf8e80
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 857a007d1b3bfe2665eea1284bc41cc9c67ccd46
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922343"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25944439"
 ---
 # <a name="clone-method-ado"></a>Clone メソッド (ADO)
 
@@ -32,15 +32,15 @@ ms.locfileid: "25922343"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *rstDuplicate*
+- *rstDuplicate*
 
   - 作成する **Recordset** オブジェクトの複製を示すオブジェクト変数です。
 
-  - *rstOriginal*
+- *rstOriginal*
 
   - 複製元の **Recordset** オブジェクトを示すオブジェクト変数です。
 
-  - *ロック。*
+- *ロック。*
 
   - 省略可能です。複製元 [Recordset](locktypeenum.md) のロックの種類にするか、または読み取り専用 **Recordset** にするかを指定する、 **LockTypeEnum** の値です。有効な値は、 **adLockUnspecified** または **adLockReadOnly** です。
 

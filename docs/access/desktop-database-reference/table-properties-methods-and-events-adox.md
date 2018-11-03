@@ -6,33 +6,27 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249942(v=office.15)
 ms:contentKeyID: 48547535
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0637d8d25c471e6b4e649533a694b8dcebb13adc
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: ccbebd7be6b3b0708173bb56ef9436d3e17695fe
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923078"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25944964"
 ---
 # <a name="table-properties-methods-and-events-adox"></a>表のプロパティ、メソッド、およびイベント (ADOX)
-
 
 **適用されます**Access 2013、Office 2013。
 
 ## <a name="propertiescollections"></a>プロパティ/コレクション
 
-- [DateCreated プロパティ (ADOX)](datecreated-property-adox.md)
+- [DateCreated プロパティ](datecreated-property-adox.md)
+- [最終更新日時プロパティ](datemodified-property-adox.md)
+- [Indexes コレクション](indexes-collection-adox.md)
+- [Keys コレクション](keys-collection-adox.md)
+- [Name プロパティ](name-property-adox.md)
+- [ParentCatalog プロパティ](parentcatalog-property-adox.md)
+- [Type プロパティ (テーブル)](https://msdn.microsoft.com/library/jj250042\(v=office.15\))
 
-- [DateModified プロパティ (ADOX)](datemodified-property-adox.md)
-
-- [Indexes コレクション (ADOX)](indexes-collection-adox.md)
-
-- [Keys コレクション (ADOX)](keys-collection-adox.md)
-
-- [Name プロパティ (ADOX)](name-property-adox.md)
-
-- [ParentCatalog プロパティ (ADOX)](parentcatalog-property-adox.md)
-
-- [Type プロパティ (Table) (ADOX)](https://msdn.microsoft.com/library/jj250042\(v=office.15\))
 
 ## <a name="methods"></a>メソッド
 

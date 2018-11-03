@@ -1,20 +1,19 @@
 ---
 title: バッチ モード (デスクトップ データベース参照のアクセス)
-TOCTitle: Batch Mode
+TOCTitle: Batch mode
 ms:assetid: b73921f6-5a12-9b26-ea65-99b32dd763f6
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249883(v=office.15)
 ms:contentKeyID: 48547294
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3ee4805f89d6a6a9d114c4347d808be61683efe6
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 9541e8b7888f5fb5f16bcfb343d545cf304b1afd
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880615"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945790"
 ---
 # <a name="batch-mode"></a>バッチ モード
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -24,15 +23,10 @@ ms.locfileid: "25880615"
 
 このセクションには、次のトピックが含まれています。
 
-- [更新プログラムを送信する: UpdateBatch](sending-the-updates-updatebatch.md)
-
-- [更新されたレコードにフィルターを適用する](filtering-for-updated-records.md)
-
-- [失敗した更新操作に対処する](dealing-with-failed-updates.md)
-
-- [競合を検出し、解決する](detecting-and-resolving-conflicts.md)
-
-- [レコードセットを切断し、再接続する](disconnecting-and-reconnecting-the-recordset.md)
-
-- [JOIN 操作の結果を更新する: Unique Table](updating-joined-results-unique-table.md)
+- [更新を送信する: UpdateBatch](sending-the-updates-updatebatch.md)
+- [更新されたレコードのフィルタ リング](filtering-for-updated-records.md)
+- [失敗した更新を処理します。](dealing-with-failed-updates.md)
+- [検出して、競合を解決します。](detecting-and-resolving-conflicts.md)
+- [接続を切断して、レコード セットを再接続します。](disconnecting-and-reconnecting-the-recordset.md)
+- [結合の結果を更新します固有のテーブル。](updating-joined-results-unique-table.md)
 

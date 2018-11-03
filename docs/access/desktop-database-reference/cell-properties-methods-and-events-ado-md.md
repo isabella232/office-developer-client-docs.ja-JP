@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249484(v=office.15)
 ms:contentKeyID: 48545691
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 17da3304dd6737712b1bd79dc4c9088bcdc2bc2a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 6ba082ab64a7f2a3f4d5d5a4246e0a31c34fc075
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25924541"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25944572"
 ---
 # <a name="cell-properties-methods-and-events-ado-md"></a>セルのプロパティ、メソッド、およびイベント (ADO MD)
 
@@ -19,15 +19,11 @@ ms.locfileid: "25924541"
 
 ## <a name="propertiescollections"></a>プロパティ/コレクション
 
-- [FormattedValue プロパティ (ADO MD)](formattedvalue-property-ado-md.md)
-
-- [Ordinal プロパティ (ADO MD Cell)](ordinal-property-ado-md-cell.md)
-
-- [Positions コレクション (ADO MD)](positions-collection-ado-md.md)
-
-- [Properties コレクション (ADO)](properties-collection-ado.md)
-
-- [Value プロパティ (ADO MD)](value-property-ado-md.md)
+- [Formattedvalue プロパティ プロパティ](formattedvalue-property-ado-md.md)
+- [Ordinal プロパティ (セル)](ordinal-property-ado-md-cell.md)
+- [位置コレクション](positions-collection-ado-md.md)
+- [Properties コレクション](properties-collection-ado.md)
+- [Value プロパティ](value-property-ado-md.md)
 
 ## <a name="methods"></a>メソッド
 

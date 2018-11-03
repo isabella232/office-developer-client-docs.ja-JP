@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249224(v=office.15)
 ms:contentKeyID: 48544621
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8ae09ff9bfcd694214a63fb630de52260ea7ac31
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: edb2eefd36aea9f037ea4ad6afc51e0da18b76db
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925228"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945636"
 ---
 # <a name="fetchcomplete-event-ado"></a>FetchComplete イベント (ADO)
 
@@ -27,17 +27,17 @@ FetchComplete*pError*、 *adStatus*、 *pRecordset*
 
 ## <a name="parameters"></a>パラメーター
 
-  - *pError*
+- *pError*
 
   - [Error](error-object-ado.md) オブジェクトです。 **adStatus** の値が **adStatusErrorsOccurred** の場合は、発生したエラーを示します。それ以外の場合は設定されません。
 
-  - *adStatus*
+- *adStatus*
 
   - [EventStatusEnum](eventstatusenum.md)
     
     このイベントから制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。
 
-  - *pRecordset*
+- *pRecordset*
 
   - **Recordset** オブジェクト。レコードを取得したオブジェクトです。
 

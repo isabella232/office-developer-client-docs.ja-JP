@@ -6,27 +6,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249503(v=office.15)
 ms:contentKeyID: 48545782
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7ba48851c5ea3b1865bf00065568fd9011870d44
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 9b6c0cb5afb784eacbe190feb2bbe2c82f9db131
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921832"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945643"
 ---
 # <a name="property-properties-methods-and-events-ado"></a>プロパティのプロパティ、メソッド、およびイベント (ADO)
-
 
 **適用されます**Access 2013、Office 2013。
 
 ## <a name="properties"></a>プロパティ
 
-- [Attributes プロパティ (ADO)](attributes-property-ado.md)
-
-- [Name プロパティ (ADO)](name-property-ado.md)
-
-- [Type プロパティ (ADO)](type-property-ado.md)
-
-- [Value プロパティ (ADO)](value-property-ado.md)
+- [Attributes プロパティ](attributes-property-ado.md)
+- [Name プロパティ](name-property-ado.md)
+- [Type プロパティ](type-property-ado.md)
+- [Value プロパティ](value-property-ado.md)
 
 ## <a name="methods"></a>メソッド
 

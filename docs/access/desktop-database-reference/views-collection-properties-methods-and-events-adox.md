@@ -6,31 +6,27 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249570(v=office.15)
 ms:contentKeyID: 48546000
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a655695b627d96650aa7dcc591182608bffc06cc
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: f25bccd392bfa719e1c71e8742c9b70d06f98d6d
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920824"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25943928"
 ---
 # <a name="views-collection-properties-methods-and-events-adox"></a>Views コレクションのプロパティ、メソッド、イベント (ADOX)
-
 
 **適用されます**Access 2013、Office 2013。
 
 ## <a name="properties"></a>プロパティ
 
-- [Count プロパティ (ADO)](count-property-ado.md)
-
-- [Item プロパティ (ADO)](item-property-ado.md)
+- [Count プロパティ](count-property-ado.md)
+- [Item プロパティ](item-property-ado.md)
 
 ## <a name="methods"></a>メソッド
 
-- [Append メソッド (ADOX Views)](append-method-adox-views.md)
-
-- [Delete メソッド (ADOX コレクション)](delete-method-adox-collections.md)
-
-- [Refresh メソッド (ADO)](refresh-method-ado.md)
+- [メソッド (ビュー) を追加します。](append-method-adox-views.md)
+- [メソッド (コレクション) を削除します。](delete-method-adox-collections.md)
+- [Refresh メソッド](refresh-method-ado.md)
 
 ## <a name="events"></a>イベント
 
