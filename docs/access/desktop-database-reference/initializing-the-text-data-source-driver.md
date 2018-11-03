@@ -10,12 +10,12 @@ f1_keywords:
 - acmain11.chm1032166
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: eec27b3bbd8d23fef05ab8bfe4da0209acf80ac1
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: d52020deecce9235db12f749b9d6913653157034
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25875162"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937772"
 ---
 # <a name="initializing-the-text-data-source-driver"></a>テキスト データ ソース ドライバーを初期化する
 
@@ -25,7 +25,7 @@ ms.locfileid: "25875162"
 
 テキスト データ ソースと HTML データ ソースには、同じデータベース ドライバーが使用されます。
 
-テキスト データ ソースのデータベース ドライバーをインストールすると、セットアップ プログラムは MicrosoftR WindowsR レジストリの Engines サブキーと ISAM Formats サブキーに一連の既定値を書き込みます。これらの設定は直接変更しないでください。これらの設定に対して追加、削除、変更を行う場合は、アプリケーションのセットアップ プログラムを使用します。テキスト データ ソースのデータベース ドライバーの初期設定と ISAM 形式の設定に関する説明を、次に示します。
+テキスト データ ソースのデータベース ドライバーをインストールすると、セットアップ プログラムは、一連の既定値をエンジンと ISAM 形式のサブキーで、Microsoft Windows レジストリに書き込みます。 これらの設定を直接変更しないでください。追加、削除、またはこれらの設定を変更するには、アプリケーションのセットアップ プログラムを使用します。 次のセクションでは、初期設定とテキスト データ ソースのデータベース ドライバーの ISAM 形式の設定について説明します。
 
 ## <a name="text-data-source-initialization-settings"></a>テキスト データ ソースの初期設定
 

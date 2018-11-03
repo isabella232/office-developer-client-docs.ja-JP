@@ -1,20 +1,19 @@
 ---
-title: '第 5 章: データの更新および永続化'
-TOCTitle: 'Chapter 5: Updating and Persisting Data'
+title: 第 5 章の更新とデータを永続化します。
+TOCTitle: 'Chapter 5: Updating and persisting data'
 ms:assetid: 77acb763-1c60-1945-791d-3e83d684fb0d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249493(v=office.15)
 ms:contentKeyID: 48545732
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0fe82d2fe434032165a39c95f05d426b8a7342bf
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: decb4eefa7c1215d8889fec85c22296d33eff40c
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25874896"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937310"
 ---
-# <a name="chapter-5-updating-and-persisting-data"></a>第 5 章: データの更新および永続化
-
+# <a name="chapter-5-updating-and-persisting-data"></a>第 5 章の更新とデータを永続化します。
 
 **適用されます**Access 2013、Office 2013。
 
@@ -30,6 +29,5 @@ ms.locfileid: "25874896"
 
 この章では、次のトピックについて説明します。
 
-- [データを更新する (ADO)](updating-data.md)
-
-- [データを保存する (ADO)](persisting-data.md)
+- [(ADO) のデータを更新します。](updating-data.md)
+- [(ADO) データを保持します。](persisting-data.md)

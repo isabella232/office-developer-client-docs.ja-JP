@@ -10,12 +10,12 @@ f1_keywords:
 - jetsql40.chm5277562
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 90dbaae5ab803173493e5348b77b124d83f8f9d6
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 1b12fcf4d92bbe0949065557973efe94688a7a30
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25873034"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937205"
 ---
 # <a name="create-index-statement-microsoft-access-sql"></a>CREATE INDEX ステートメント (Microsoft Access SQL)
 
@@ -24,7 +24,7 @@ ms.locfileid: "25873034"
 既存のテーブルに新しいインデックスを作成します。
 
 > [!NOTE]
-> Microsoft Access 以外のデータベース エンジンのデータベースを Microsoft Access データベース エンジンに以外には、ODBC のリンク テーブルに擬似インデックスを作成) のインデックスの作成またはデータ定義言語 (DDL) ステートメントのいずれかの使用はできません。 **DAO を作成**メソッドを使用してください。 詳細については、「解説」セクションを参照してください。
+> Microsoft Access 以外のデータベース エンジンのデータベースを Microsoft Access データベース エンジンに以外には、ODBC のリンク テーブルに擬似インデックスを作成) のインデックスの作成またはデータ定義言語 (DDL) ステートメントのいずれかの使用はできません。 代わりに DAO の**Create**メソッドを使用します。 詳細については、「解説」セクションを参照してください。
 
 ## <a name="syntax"></a>構文
 

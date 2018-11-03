@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249251(v=office.15)
 ms:contentKeyID: 48544757
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: edfdd66ea1651f71e74e5f98c6f2a3ac2bf36207
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: fc1e9c951ea87869d2e3e2fb047793a06778f249
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25885963"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937464"
 ---
 # <a name="system-requirements-for-the-address-book-application"></a>Address Book アプリケーションの必要システム
 
@@ -24,7 +24,7 @@ Address Book サンプル アプリケーションをセットアップするた
 
 この web アプリケーションを実行するサーバー コンピューターのソフトウェア要件は次のとおりです。
 
-  - Microsoft Windows NT® Server 4.0 Service Pack 3 以降または Microsoft Windows® 2000 Server
+  - Microsoft Windows NT Server 4.0、Service Pack 3 以降、または Microsoft Windows 2000 サーバーです。
 
   - Active Server Pages を含む Microsoft Internet Information Services (IIS) 3.0 以降
 
@@ -38,7 +38,7 @@ Address Book サンプル アプリケーションをセットアップするた
 
 このサンプルを使用するには、次のものが必要です。
 
-  - Microsoft® SQL Server 6.5 以降のデータベース サーバー
+  - 運用の Microsoft SQL Server バージョン 6.5 以降のデータベース サーバーを使用しています。
 
   - データベースを作成し、サンプル データを設定する権限
 

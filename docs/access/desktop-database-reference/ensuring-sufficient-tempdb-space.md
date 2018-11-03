@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249034(v=office.15)
 ms:contentKeyID: 48543830
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7b08980b7bb852a497ea339f4c43d439ac16a7e5
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: fe8d0c2513a723a9be51823866ed896976e79dd9
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25885767"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25936204"
 ---
 # <a name="ensuring-sufficient-tempdb-space"></a>TempDB 用に十分な空き領域を確保する
 
@@ -30,7 +30,7 @@ Microsoft SQL Server 6.5 において処理領域が必要な [Recordset](record
 
 **SQL Server 6.5 の TempDB 領域を拡大するには**
 
-1.  Microsoft® SQL Server Enterprise Manager を起動し、サーバーのツリーを開き、次にデータベース デバイス ツリーを開きます。
+1.  Microsoft SQL Server Enterprise Manager を起動し、サーバーのツリーを開き、次にデータベース デバイスのツリーを開きます。
 
 2.  マスターなどの拡張を (物理的な) デバイスを選択し、デバイスを開くには、[**データベース デバイスの編集**] ダイアログ ボックスをダブルクリックします。 このダイアログ ボックスは、現在のデータベースを使用している容量を表示します。
 

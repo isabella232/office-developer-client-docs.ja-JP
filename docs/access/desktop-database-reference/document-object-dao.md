@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822082(v=office.15)
 ms:contentKeyID: 48547247
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 17dfd7d1a6f5a0c7ec6bd985d75d201202a71ff7
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 44dacdab7dc13855426bf366bda2801ddee8c022
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922315"
+ms.locfileid: "25936694"
 ---
 # <a name="document-object-dao"></a>ドキュメント オブジェクト (DAO)
 
@@ -119,6 +119,8 @@ Sub DocumentX()
 End Sub 
  
 ```
+
+<br/>
 
 次の使用例は、 **Owner** プロパティおよび **SystemDB** プロパティを使用して、さまざまな **Document** オブジェクトの所有者を表示します。
 

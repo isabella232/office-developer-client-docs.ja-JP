@@ -12,12 +12,12 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b55bf1897c6b5fc5cd7ee70402e466f2180b7d92
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 26d2b4b6281dd762e95113d5ca022e7c0d136755
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25890926"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937045"
 ---
 # <a name="constraint-clause-microsoft-access-sql"></a>制約句 (Microsoft Access SQL)
 
@@ -32,11 +32,11 @@ CONSTRAINT 句は、[ALTER TABLE](alter-table-statement-microsoft-access-sql.md)
 
 ## <a name="syntax"></a>構文
 
-**単一フィールド制約**の場合:
+### <a name="single-field-constraint"></a>単一フィールド制約の場合
 
 制約*名*{主キー。固有 |NOT NULL。参照*外部テーブル* \[(*foreignfield1、foreignfield2*)\] \[ON UPDATE CASCADE |設定 NULL\] \[ON DELETE CASCADE |NULL 設定\]}
 
-**複数フィールド制約**の場合:
+### <a name="multiple-field-constraint"></a>複数フィールドの制約
 
 制約*名*{0} プライマリ ・ キー (*primary1*\[、 *primary2* \[、.\]\]) |一意 (*unique 1*\[、 *unique2* \[、.\]\]) |NOT NULL (*notnull1*\[、 *notnull2* \[、.\]\]) |外部キー\[インデックスのない\](*範囲 1*\[、 *ref2* \[、.\] \]) の参照*外部テーブル* \[(*foreignfield1* \[、 *foreignfield2* \[、.\] \])\] \[ON UPDATE CASCADE |設定 NULL\] \[ON DELETE CASCADE |NULL 設定\]}
 

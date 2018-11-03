@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249254(v=office.15)
 ms:contentKeyID: 48544766
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ed450913c7512e8ef20983484ca4b874878fd791
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 213e405718d50369367d439457e8026d4ef71242
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25867168"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937506"
 ---
 # <a name="granting-guest-privileges-to-a-web-server-computer-rds-guest-privileges"></a>Web サーバー コンピューターにゲストの特権を付与します。RDS ゲスト権限 
 
@@ -22,7 +22,7 @@ ms.locfileid: "25867168"
 
 **Web サーバー コンピューターへのゲストの特権を付与するには**
 
-1.  Microsoft Windows® 2000 Server コンピューターに [**スタート**] ボタン、**プログラム**] をポイント **[管理ツール**] をポイントし、[**コンピューターの管理**] をクリックします。
+1.  Microsoft Windows 2000 Server コンピューターに [**スタート**] ボタン、**プログラム**] をポイント **[管理ツール**] をポイントし、し、[**コンピューターの管理**] をクリックします。
 
 2.  コンソール ツリーで、**ローカル ユーザーとグループ**は、[**グループ**] をクリックします。
 

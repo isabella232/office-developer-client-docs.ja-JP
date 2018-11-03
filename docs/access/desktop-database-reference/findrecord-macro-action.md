@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm7496
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 74d3c050b7d3912c6b0b369f99ca163cee87643a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 19b6c80af2bcee9ca3dbe51bbbcf56343f33d550
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919711"
+ms.locfileid: "25937611"
 ---
 # <a name="findrecord-macro-action"></a>FindRecord マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -61,7 +60,7 @@ ms.locfileid: "25919711"
 <td><p>表示書式でデータを検索するかどうかを指定します。Microsoft Office Access 2007 で、フィールドに表示されている書式でデータを検索する場合は [ <strong>はい</strong>] を、データベースに格納されている形式 (表示されている形式とは異なる場合があります) で検索する場合は [ <strong>いいえ</strong>] をクリックします。既定値は [ <strong>いいえ</strong>] です。この機能を使用すると、特定の書式のデータだけを検索することができます。たとえば、コンマが含まれる書式が設定されたフィールドで "1,234" の値を検索する場合は、[ <strong>はい</strong>] をクリックし、" <strong>Find What/検索データ</strong> " 引数に「 <strong>1,234</strong> 」と入力します。「 <strong>1234</strong>」と入力してこのフィールドでデータを検索する場合は、[ <strong>いいえ</strong>] をクリックします。日付の検索では、2003-07-08 のような書式が設定された日付を検索する場合は [ <strong>はい</strong>] をクリックします。[ <strong>いいえ</strong>] をクリックした場合は、Windows コントロール パネルの地域の設定で設定されている書式を使って " <strong>Find What/検索データ</strong> " 引数を入力します。この書式は、地域の設定の [ <strong>日付</strong>] タブにある [ <strong>短い形式</strong>] ボックスに表示されています。たとえば、[ <strong>短い形式</strong>] ボックスに [ <strong>yy/M/d</strong>] が設定されている場合は、「03/7/8」と入力すると、このフィールドの書式にかかわらず、2003 年 7 月 8 日に対応する [日付] フィールドのすべてのエントリが検索されます。  </p>
 
 > [!NOTE]
-> <P><STRONG>Search As Formatted/表示書式で検索</STRONG>引数が有効になるのは、カレント フィールドが連結コントロールであること、<STRONG>Match/検索条件</STRONG>引数に [<STRONG>フィールド全体</STRONG>] が設定されていること、<STRONG>Only Current Field/カレント フィールドのみ検索</STRONG>引数に [<STRONG>はい</STRONG>] が設定されていること、および <STRONG>Match Case/大小文字区別</STRONG>引数に [<STRONG>いいえ</STRONG>] が設定されている場合のみです。</P>
+> **Search As Formatted/表示書式で検索**引数が有効になるのは、カレント フィールドが連結コントロールであること、**Match/検索条件**引数に [**フィールド全体**] が設定されていること、**Only Current Field/カレント フィールドのみ検索**引数に [**はい**] が設定されていること、および **Match Case/大小文字区別**引数に [**いいえ**] が設定されている場合のみです。
 
 
 <p><strong>Match Case/大小文字区別</strong>引数を [<strong>はい</strong>] に設定した場合、または <strong>Only Current Field/カレント フィールドのみ検索</strong>引数を [<strong>いいえ</strong>] に設定した場合は、<strong>Search As Formatted/表示書式で検索</strong>引数を [<strong>はい</strong>] に設定する必要があります。
@@ -90,11 +89,8 @@ ms.locfileid: "25919711"
 
 マクロを使ってレコードを検索する場合は、 **RunMenuCommand** アクションの引数の設定によって [ **検索**] コマンドを実行するのではなく、 **FindRecord** アクションを使用します。
 
-
 > [!NOTE]
-> <P>[!メモ] <STRONG>FindRecord</STRONG> アクションは、テーブル、クエリ、およびフォームでは [ <STRONG>ホーム</STRONG>] タブの [ <STRONG>検索</STRONG>] コマンドに対応していますが、コード ウィンドウでは [ <STRONG>編集</STRONG>] メニューの [ <STRONG>検索</STRONG>] コマンドに対応していません。 <STRONG>FindRecord</STRONG> アクションで、モジュール内のテキストを検索することはできません。</P>
-
-
+> [!メモ] **FindRecord** アクションは、テーブル、クエリ、およびフォームでは [ **ホーム**] タブの [ **検索**] コマンドに対応していますが、コード ウィンドウでは [ **編集**] メニューの [ **検索**] コマンドに対応していません。 **FindRecord** アクションで、モジュール内のテキストを検索することはできません。
 
 現在選択されているテキストが、 **FindRecord** アクション実行時の検索テキストと同じである場合は、同じレコードの同じフィールドの、選択されているテキストの直後から検索が開始されます。選択されているテキストと検索テキストが異なる場合は、カレント レコードの先頭から検索が開始されます。このため、1 つのレコードに同じ検索条件を満たすテキストが複数存在する場合の検索が可能です。
 
@@ -114,7 +110,6 @@ ms.locfileid: "25919711"
 </tr>
 </tbody>
 </table>
-
 
 コマンド ボタンを使って、 **FindNext** アクションが含まれているマクロを実行する場合も、同様の問題が発生します。
 

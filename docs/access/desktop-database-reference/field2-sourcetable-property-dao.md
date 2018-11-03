@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff191839(v=office.15)
 ms:contentKeyID: 48543768
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fbde7aa9785e4e875f96569884e7f6e45743f2bb
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 253be078fa6a8f5fdd4cb0c6c67fc6d5385e554c
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925584"
+ms.locfileid: "25936540"
 ---
 # <a name="field2sourcetable-property-dao"></a>Field2.SourceTable プロパティ (DAO)
 
@@ -70,6 +70,6 @@ ms.locfileid: "25925584"
 
 
 > [!NOTE]
-> <P>[!メモ] <STRONG>SourceTable</STRONG> プロパティは、テーブル タイプの <STRONG>Recordset</STRONG> オブジェクトの <STRONG>Fields</STRONG> コレクションに含まれる <STRONG>Field2</STRONG> オブジェクトで使用した場合、有効なテーブル名を返しません。</P>
+> [!メモ] **SourceTable** プロパティは、テーブル タイプの **Recordset** オブジェクトの **Fields** コレクションに含まれる **Field2** オブジェクトで使用した場合、有効なテーブル名を返しません。
 
 

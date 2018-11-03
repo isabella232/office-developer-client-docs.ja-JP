@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249523(v=office.15)
 ms:contentKeyID: 48545842
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cf12c224de0593fa3202ab74cdd0c5346c9570a8
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 24e7940c86b079d5eb51fa894426a19e7700bf39
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25874196"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937485"
 ---
 # <a name="transaction-processing"></a>トランザクション処理
 
@@ -34,7 +34,7 @@ ADO では、トランザクションを制御するために、 **BeginTrans** 
 
 ## <a name="transaction-isolation-level"></a>トランザクション分離レベル
 
-**Connection** オブジェクトでトランザクションの分離レベルを設定するには、 **IsolationLevel** プロパティを使用します。この設定は、次に [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドを呼び出すまで有効になりません。要求した分離レベルを使用できない場合、プロバイダーはその次に高い分離レベルを返すことがあります。有効な値の詳細については、「ADO プログラマ リファレンス」の **IsolationLevel** プロパティを参照してください。
+**Connection** オブジェクトでトランザクションの分離レベルを設定するには、 **IsolationLevel** プロパティを使用します。 この設定は、次に [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドを呼び出すまで有効になりません。 要求した分離レベルを使用できない場合、プロバイダーはその次に高い分離レベルを返すことがあります。 **IsolationLevel**プロパティで有効な値の詳細については、「ADO プログラマ リファレンスを参照してください。
 
 ## <a name="nested-transactions"></a>ネストされているトランザクション
 

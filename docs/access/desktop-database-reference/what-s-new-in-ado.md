@@ -1,45 +1,45 @@
 ---
-title: ActiveX データ オブジェクト (ADO) の新機能
-TOCTitle: What's New in ADO
+title: 新機能では、ActiveX データ オブジェクト (ADO)
+TOCTitle: What's new in ADO
 ms:assetid: fd3d0f9c-e9df-d130-13e3-757620e9400c
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250297(v=office.15)
 ms:contentKeyID: 48548905
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5f374abd42659708ddb1e9fcd131faaac94f05cf
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 950edd8ce1cd0e5081d569b1b11a02a14fe94d99
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25891115"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937702"
 ---
 # <a name="whats-new-in-ado"></a>ADO の新機能
 
-
 **適用されます**Access 2013、Office 2013。 
  
-
 ADO 2.5 リリースには、次に示す新機能および拡充されたマニュアルが含まれています。この一覧では、ADO、ADO MD、および ADOX を扱っています。
 
 ## <a name="new-features"></a>新機能
 
-**[レコードとストリーム](chapter-10-records-and-streams.md)**
+- **[レコードとストリーム](chapter-10-records-and-streams.md)**
 
-このリリースの ADO では、[Record](record-object-ado.md) オブジェクトが導入されており、ファイル システムのディレクトリやファイル、および電子メール システムのフォルダーやメッセージのような要素を表して管理できます。 **Record** は [Recordset](recordset-object-ado.md) の行を表すこともできますが、 **Record** オブジェクトと **Recordset** オブジェクトでは、メソッドおよびプロパティが異なります。
+  このリリースの ADO では、[Record](record-object-ado.md) オブジェクトが導入されており、ファイル システムのディレクトリやファイル、および電子メール システムのフォルダーやメッセージのような要素を表して管理できます。 **Record** は [Recordset](recordset-object-ado.md) の行を表すこともできますが、 **Record** オブジェクトと **Recordset** オブジェクトでは、メソッドおよびプロパティが異なります。
 
-新しい [Stream](stream-object-ado.md) オブジェクトは、ファイルやメッセージのストリームを構成するバイトまたはテキストのバイナリ ストリームの読み取り、書き込み、および管理を行うための手段を提供します。
+  新しい [Stream](stream-object-ado.md) オブジェクトは、ファイルやメッセージのストリームを構成するバイトまたはテキストのバイナリ ストリームの読み取り、書き込み、および管理を行うための手段を提供します。
 
-**[URL の使用](absolute-and-relative-urls.md)**
+- **[URL の使用方法](absolute-and-relative-urls.md)**
 
-このリリースでは、データ ストア オブジェクトを指定するための接続文字列やコマンド テキストに代わる手段として、Uniform Resource Locator (URL) の使用が導入されました。URL は、既存の [Connection](connection-object-ado.md) オブジェクトや **Recordset** オブジェクトだけでなく、新しい **Record** オブジェクトや **Stream** オブジェクトでも使用できます。
+  このリリースでは、データ ストア オブジェクトを指定するための接続文字列やコマンド テキストに代わる手段として、Uniform Resource Locator (URL) の使用が導入されました。URL は、既存の [Connection](connection-object-ado.md) オブジェクトや **Recordset** オブジェクトだけでなく、新しい **Record** オブジェクトや **Stream** オブジェクトでも使用できます。
 
-このリリースでは、ADO では、独自の URL スキームを認識する OLE DB プロバイダーがサポートしています。 などの[OLE DB プロバイダー](microsoft-ole-db-provider-for-internet-publishing.md)*,* 、Windows 2000 ファイル システムをアクセスするには、既存の HTTP スキームを認識します。
+  このリリースでは、ADO では、独自の URL スキームを認識する OLE DB プロバイダーがサポートしています。 などの[OLE DB プロバイダー](microsoft-ole-db-provider-for-internet-publishing.md)*,* 、Windows 2000 ファイル システムをアクセスするには、既存の HTTP スキームを認識します。
 
-**[ドキュメント ソース プロバイダー用の特殊なフィールド](records-and-provider-supplied-fields.md)**
+- **[ドキュメント ソース プロバイダー用の特殊なフィールド](records-and-provider-supplied-fields.md)**
 
-プロバイダーでは、*ドキュメント ソース*プロバイダーと呼ばれる特別なクラスでは、フォルダーやドキュメントを管理します。 ドキュメントを表す**Record**オブジェクトまたは**Recordset**オブジェクトがドキュメントのフォルダーを表す、ドキュメント ソース プロバイダーは、ドキュメントの特性を記述したフィールドの一意なセットでこれらのオブジェクトを作成します。 これらのフィールドは、*リソース***の Record**または**Recordset**を構成します。
+  プロバイダーでは、*ドキュメント ソース*プロバイダーと呼ばれる特別なクラスでは、フォルダーやドキュメントを管理します。 ドキュメントを表す**Record**オブジェクトまたは**Recordset**オブジェクトがドキュメントのフォルダーを表す、ドキュメント ソース プロバイダーは、ドキュメントの特性を記述したフィールドの一意なセットでこれらのオブジェクトを作成します。 これらのフィールドは、*リソース***の Record**または**Recordset**を構成します。
 
 ## <a name="new-reference-topics"></a>新しいリファレンス トピック
+
+### <a name="properties"></a>プロパティ
 
 このリリースでは、以下の新しいプロパティが組み込まれました。
 
@@ -102,6 +102,7 @@ ADO 2.5 リリースには、次に示す新機能および拡充されたマニ
 </tbody>
 </table>
 
+### <a name="methods"></a>メソッド
 
 このリリースでは、以下の新しいメソッドが組み込まれました。
 
@@ -187,15 +188,15 @@ ADO 2.5 リリースには、次に示す新機能および拡充されたマニ
 
 ## <a name="new-and-enhanced-documentation"></a>新規および拡充されたドキュメント
 
-**[コード例のトピック](ado-code-examples.md)**
+- **[コード例のトピック](ado-code-examples.md)**
 
-例が拡充され、Microsoft Visual C++® および Microsoft Visual J++® で作成されたコード例が追加されました。これらのコード例は、コピーしてエディターに貼り付けることができます。
+  例は、Microsoft Visual C++、Microsoft Visual j で記述されたコード例を格納するために展開されています。 これらのコード例は、コピーしてエディターに貼り付けることができます。
 
-**[プロバイダーのトピック](appendix-a-providers.md)**
+- **[プロバイダーのトピック](appendix-a-providers.md)**
 
-[OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) と共に ADO を使用する方法を説明した新しいトピックが追加されました。
+  [OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) と共に ADO を使用する方法を説明した新しいトピックが追加されました。
 
-**[ADO を使ったプログラミング](appendix-c-programming-with-ado.md)**
+- **[ADO を使ったプログラミング](appendix-c-programming-with-ado.md)**
 
-この新しいセクションには、さまざまなプログラミング言語で ADO を使用するためのヒントが含まれます。ADO 用 Visual C++ Extensions と ADO/WFC の既存の構文インデックス、および Microsoft Visual Basic®、Microsoft Visual Basic® Scripting Edition、Microsoft JScript®、Microsoft Visual C++、または Microsoft Visual J++ を使用する開発者向けの新しい情報が含まれます。
+  この新しいセクションには、さまざまなプログラミング言語で ADO を使用するためのヒントが含まれます。 ADO と ADO/WFC と、新しい情報を開発者が Microsoft Visual Basic、Microsoft Visual Basic Scripting Edition、Microsoft JScript、Microsoft Visual C++ を使用して特定の Visual C++ の拡張機能のための既存の構文インデックスが含まれていますかMicrosoft Visual J では。
 

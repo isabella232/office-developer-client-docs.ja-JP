@@ -1,20 +1,19 @@
 ---
-title: '第 3 章: データの検査'
-TOCTitle: 'Chapter 3: Examining Data'
+title: '第 3 章: データを調べること。'
+TOCTitle: 'Chapter 3: Examining data'
 ms:assetid: 73c69134-3127-3344-d5c3-5ecb9e0e958b
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249474(v=office.15)
 ms:contentKeyID: 48545648
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b5542b465cc6fc31949f2ceb5ed8bda408b1e653
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 4b489400536675fccced8f87aae515b019b87123
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25875932"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25936862"
 ---
-# <a name="chapter-3-examining-data"></a>第 3 章: データの検査
-
+# <a name="chapter-3-examining-data"></a>第 3 章: データを調べること。
 
 **適用されます**Access 2013、Office 2013。
 
@@ -54,6 +53,8 @@ ErrHandler:
 End Sub 
 'EndRsTour 
 ```
+
+<br/>
 
 次の SQL クエリは、5 つの行 (レコード) と 3 つの列 (フィールド) を持つ **Recordset** を取得します。次の表に各行の値を示します。
 
@@ -107,8 +108,6 @@ End Sub
 
 この章では、次のトピックについて説明します。
 
-  - [現在のレコードを探す (ADO)](locating-the-current-record.md)
-
-  - [データ間を移動する (ADO)](navigating-through-the-data.md)
-
-  - [レコードセット構造の概要 (ADO)](understanding-recordset-structure.md)
+- [(ADO) の現在のレコードを検索します。](locating-the-current-record.md)
+- [(ADO) のデータを移動します。](navigating-through-the-data.md)
+- [(ADO) レコード セットの構造を理解します。](understanding-recordset-structure.md)

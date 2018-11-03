@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249776(v=office.15)
 ms:contentKeyID: 48546887
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b37f5930f9a9a36603700a1d27458527f128ad34
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 4ff66a39de070759e0ad31b441e4be5735d87516
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922035"
+ms.locfileid: "25936613"
 ---
 # <a name="find-method-ado"></a>Find メソッド (ADO)
 
@@ -57,12 +57,9 @@ ms.locfileid: "25922035"
 
 
 > [!NOTE]
-> <P>[!メモ] <STRONG>Find</STRONG> メソッドを呼び出す前にカレント行の位置が設定されていない場合は、エラーが発生します。 <A href="movefirst-movelast-movenext-and-moveprevious-methods-ado.md">Find</A> メソッドを呼び出す前に、 <STRONG>MoveFirst</STRONG> などの、行の位置を設定するメソッドを呼び出す必要があります。</P>
-
-
-
+> [!メモ] **Find** メソッドを呼び出す前にカレント行の位置が設定されていない場合は、エラーが発生します。 [Find](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) メソッドを呼び出す前に、 **MoveFirst** などの、行の位置を設定するメソッドを呼び出す必要があります。
 
 > [!NOTE]
-> <P>[!メモ] レコードセットに対して <STRONG>Find</STRONG> メソッドを呼び出す場合で、レコードセット内の現在の位置が最後のレコードまたはファイルの最後 (EOF) の場合、何も検索されません。あらかじめ <STRONG>MoveFirst</STRONG> メソッドを呼び出して、現在の位置またはカーソルをレコードセットの先頭に設定する必要があります。</P>
+> [!メモ] レコードセットに対して **Find** メソッドを呼び出す場合で、レコードセット内の現在の位置が最後のレコードまたはファイルの最後 (EOF) の場合、何も検索されません。あらかじめ **MoveFirst** メソッドを呼び出して、現在の位置またはカーソルをレコードセットの先頭に設定する必要があります。
 
 

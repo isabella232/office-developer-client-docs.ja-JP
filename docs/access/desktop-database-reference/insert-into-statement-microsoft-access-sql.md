@@ -10,12 +10,12 @@ f1_keywords:
 - jetsql40.chm5277575
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1635ff8ad43af45a62cd2223be853cefb5b6e999
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: c20701e9863d72a9308679965425b74c9f9818ac
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25870801"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937639"
 ---
 # <a name="insert-into-statement-microsoft-access-sql"></a>INSERT INTO ステートメント (Microsoft Access SQL)
 
@@ -25,11 +25,11 @@ ms.locfileid: "25870801"
 
 ## <a name="syntax"></a>構文
 
-**複数レコード追加クエリ**:
+### <a name="multiple-record-append-query"></a>複数レコード追加クエリ
 
 INSERT INTO*ターゲット* \[(*フィールド 1*\[、*フィールド 2*\[、.\] \])\] \[ *Externaldatabase*で\]を選択して\[*ソース*です。\]*フィールド 1*\[、*フィールド 2*\[をしています.\] *Tableexpression*から
 
-**単一レコード追加クエリ**:
+### <a name="single-record-append-query"></a>単一レコード追加クエリ
 
 INSERT INTO*ターゲット* \[(*フィールド 1*\[、*フィールド 2*\[、.\] \])\]の値 (*値 1*\[、*値 2*\[、.\])
 

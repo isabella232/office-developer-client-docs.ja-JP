@@ -1,20 +1,19 @@
 ---
-title: '第 2 章: データの取得'
-TOCTitle: 'Chapter 2: Getting Data'
+title: '第 2 章: データを取得します。'
+TOCTitle: 'Chapter 2: Getting data'
 ms:assetid: 72d097e1-9284-cc27-fd48-e6bbb6a2a543
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249465(v=office.15)
 ms:contentKeyID: 48545619
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7b045676cad97ffa1dc60f7370ec5013d4c30bdf
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 729d7a74c8e1ead84810e82d608e4e9b37268a6b
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25888077"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937002"
 ---
-# <a name="chapter-2-getting-data"></a>第 2 章: データの取得
-
+# <a name="chapter-2-getting-data"></a>第 2 章: データを取得します。
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,20 +25,17 @@ ms.locfileid: "25888077"
 
 ADO のオブジェクト モデルでは、接続の概念を **Connection** オブジェクトで表します。これは、ADO の多くの機能の基盤となるものです。 **Connection** オブジェクトの目的は次のとおりです。
 
-  - ADO が、データ ソースと通信し、セッションを確立するために必要な情報を定義します。
+- ADO が、データ ソースと通信し、セッションを確立するために必要な情報を定義します。
 
-  - セッションのトランザクション機能を定義します。
+- セッションのトランザクション機能を定義します。
 
-  - コマンドを作成し、データ ソースに対して実行できるようにします。
+- コマンドを作成し、データ ソースに対して実行できるようにします。
 
-  - 基になるデータ ソースのデザインに関する情報をスキーマ行セットの形で提供します。スキーマ行セットの詳細については、「[OpenSchema メソッド (ADO)](openschema-method-ado.md)」を参照してください。
+- 基になるデータ ソースのデザインに関する情報をスキーマ行セットの形で提供します。スキーマ行セットの詳細については、「[OpenSchema メソッド (ADO)](openschema-method-ado.md)」を参照してください。
 
 この章では、次のトピックについて説明します。
 
-  - [接続を作成する](making-a-connection.md)
-
-  - [Connection オブジェクトの使用のリファレンス (ADO)](using-the-connection-object-access.md)
-
-  - [Command オブジェクトの使用のリファレンス (ADO)](using-the-command-object-access.md)
-
-  - [レコードセットにデータを追加する (ADO)](adding-data-to-a-recordset.md)
+- [接続を作成します。](making-a-connection.md)
+- [接続オブジェクト参照 (ADO) を使用します。](using-the-connection-object-access.md)
+- [(ADO) コマンド オブジェクト参照を使用します。](using-the-command-object-access.md)
+- [レコード セット (ADO) にデータを追加します。](adding-data-to-a-recordset.md)

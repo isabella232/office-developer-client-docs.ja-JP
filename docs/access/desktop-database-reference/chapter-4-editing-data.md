@@ -1,20 +1,19 @@
 ---
 title: '第 4 章: データの編集'
-TOCTitle: 'Chapter 4: Editing Data'
+TOCTitle: 'Chapter 4: Editing data'
 ms:assetid: 822b7365-0926-6411-6fb4-30de032570f8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249563(v=office.15)
 ms:contentKeyID: 48545974
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a484cef1e04ce84c30d823a2ac7783008651e77d
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 28103cebeea517395ce2507402677fcde8114bb0
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25875792"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25936589"
 ---
 # <a name="chapter-4-editing-data"></a>第 4 章: データの編集
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -73,12 +72,8 @@ End Function
 
 この章では、次のトピックについて説明します。
 
-- [既存のレコードを編集する](editing-existing-records.md)
-
-- [サポートされている内容を確認する](determining-what-is-supported.md)
-
-- [Delete メソッドを使ってレコードを削除する](deleting-records-using-the-delete-method.md)
-
-- [他の方法: SQL ステートメントを使用する](alternatives-using-sql-statements.md)
-
-- [レコードを追加する (ADO)](adding-records.md)
+- [既存レコードの編集](editing-existing-records.md)
+- [サポート内容を決定します。](determining-what-is-supported.md)
+- [Delete メソッドを使用してレコードを削除します。](deleting-records-using-the-delete-method.md)
+- [他の方法: SQL ステートメントを使用します。](alternatives-using-sql-statements.md)
+- [(ADO) のレコードを追加します。](adding-records.md)

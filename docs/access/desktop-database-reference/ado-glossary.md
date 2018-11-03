@@ -6,14 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249184(v=office.15)
 ms:contentKeyID: 48544438
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 809431c51b7fab9e56d492b44610d607e4da3b06
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: e7085edf0d7f30c70868d308130b3f438347ad4b
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869968"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937821"
 ---
-# <a name="ado-glossary"></a>ADO 用語集
+# <a name="ado-glossary"></a>ADO の用語集
 
 **適用されます**Access 2013、Office 2013。
 
@@ -419,11 +419,11 @@ COM アプリケーションで Windows レジストリにマップされた一�
 
 インターネットまたはイントラネット上にあるリソースの場所を指定します。完全な URL は、(FTP、HTTP、mailto、file のような) スキームと、それに続くコロン、サーバー名、(ドキュメント、グラフィックス、またはその他のファイルのような) リソースの完全パスから構成されます。以下は、いくつかの URL の例です。  
   
-https://www.domain.com/default.html  
-ftp://ftp.server.somewhere/ftp.file  
+- https://www.domain.com/default.html  
+- ftp://ftp.server.somewhere/ftp.file  
   
-ftp://ftp.server.somewhere/ftp.file  
-file://Server/Share/File.doc
+- ftp://ftp.server.somewhere/ftp.file  
+- file://Server/Share/File.doc
 
 **絶対 URL** と **相対 URL** も参照。
 
@@ -431,5 +431,5 @@ file://Server/Share/File.doc
 
 Web サービスとイントラネットとインターネットのユーザーにページを提供するコンピューターです。
 
-トップに戻る
+
 

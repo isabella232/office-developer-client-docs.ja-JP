@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192499(v=office.15)
 ms:contentKeyID: 48544205
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3c26b5e0a7e5448340cded61717ad27fb68aa827
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 8fbc57c0a07777d62e5af82048e373e98678a8c1
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869625"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25936967"
 ---
 # <a name="using-wildcard-characters-in-string-comparisons"></a>ワイルドカードによる文字列の比較
 
@@ -60,7 +60,7 @@ ms.locfileid: "25869625"
 
 *Charlist*は、角かっこで囲まれた文字の簡単な一覧だけでなく文字にハイフン (-) と、範囲の下限を使用して文字の範囲を指定できます。 などを使用して\[A ~ Z\] *パターン*一致*式*で対応する文字の位置には、大文字の A から Z までの範囲内のいずれかが含まれている場合にします。範囲を区切ることがなく、角かっこ内の複数の範囲を含めることができます。 たとえば、 \[、-zA-Z0-9\]英数字の文字に一致します。
 
-注意することが重要、ANSI SQL のワイルドカード (%) と (\_)、Microsoft® Jet のバージョンでのみ利用 4.X および Microsoft OLE DB プロバイダーの Jet です。 Microsoft Access や DAO を介して使用する場合は、リテラルとして取り扱われます。
+注意することが重要、ANSI SQL のワイルドカード (%) と (\_)、Microsoft Jet のバージョンでのみ利用 4.X および Microsoft OLE DB プロバイダーの Jet です。 Microsoft Access や DAO を介して使用する場合は、リテラルとして取り扱われます。
 
 パターン マッチングに関する重要な規則としては、これ以外に次のようなものがあります。
 

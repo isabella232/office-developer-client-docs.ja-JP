@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052899
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1672c893994c1257a3898304042816d859e83314
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 600fe2855ba10e1ab36413f6395d3455bb7bd00b
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927320"
+ms.locfileid: "25937058"
 ---
 # <a name="field2ordinalposition-property-dao"></a>Field2.OrdinalPosition プロパティ (DAO)
 
@@ -87,7 +87,7 @@ ms.locfileid: "25927320"
 
 
 > [!NOTE]
-> <P>[!メモ] <A href="tabledef-object-dao.md"><STRONG>TableDef</STRONG></A> の <STRONG>Fields</STRONG> コレクションが更新されていない場合でも、 <A href="recordset-object-dao.md">TableDef</A> から開いた <STRONG><STRONG>Recordset</STRONG></STRONG> は、 <STRONG>TableDef</STRONG> オブジェクトの <STRONG>OrdinalPosition</STRONG> データを反映します。テーブル タイプの <STRONG>Recordset</STRONG> には、基になるテーブルと同じ <STRONG>OrdinalPosition</STRONG> データが使用されますが、その他のタイプの <STRONG>Recordset</STRONG> には、 <STRONG>TableDef</STRONG> オブジェクトの <STRONG>OrdinalPosition</STRONG> データによって指定される順序に従った、0 から始まる新しい <STRONG>OrdinalPosition</STRONG> データが使用されます。</P>
+> **[TableDef](tabledef-object-dao.md)** オブジェクトの**Fields**コレクションが更新されていない場合でも、**テーブル定義**から開かれた**[レコード セット](recordset-object-dao.md)** のフィールドの順序には、 **TableDef**オブジェクトの**OrdinalPosition**データが反映されます。 テーブル タイプの **Recordset** には、基になるテーブルと同じ **OrdinalPosition** データが使用されますが、その他のタイプの **Recordset** には、 **TableDef** オブジェクトの **OrdinalPosition** データによって指定される順序に従った、0 から始まる新しい **OrdinalPosition** データが使用されます。
 
 
 

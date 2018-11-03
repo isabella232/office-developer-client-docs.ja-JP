@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248797(v=office.15)
 ms:contentKeyID: 48542973
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5fccddd2f9566e0cb864a7a1cb4ccddb340fd0c5
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: d5de504f851bfa228bfaddad8923d7365e25492b
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25873461"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25936533"
 ---
 # <a name="openschema-method-example-vb"></a>OpenSchema メソッドの使用例 (VB)
 
@@ -74,6 +74,8 @@ ErrorHandler:
 End Sub 
 'EndOpenSchemaVB 
 ```
+
+<br/>
 
 テーブルを指定する次の使用例\_ **OpenSchema**メソッド***に引数***の型クエリの制約です。 その結果、 ***Pubs***データベースで指定されたビューのスキーマ情報のみが返されます。 その後、この例では各テーブルの名前と型を表示します。
 

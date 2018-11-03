@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248906(v=office.15)
 ms:contentKeyID: 48543364
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fe14fd74f30a4d686dca517acd84d89a3df82555
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 8a34321df27b5270bd35844eaf28b0b335b0294e
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25871928"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937478"
 ---
 # <a name="rds-programming-model-in-detail"></a>RDS プログラミング モデルの詳細
 
@@ -60,7 +60,7 @@ RDS オブジェクト モデルでは、この機能は [RDS.DataControl](datac
 
 **RDS.DataControl** には 2 つの側面があります。1 つはデータ ソースに関する側面です。 **RDS.DataControl** の **Connect** プロパティおよび **SQL** プロパティを使用して、コマンドおよび接続の情報を設定すると、自動的に **RDS.DataSpace** が使用されて、既定の **RDSServer.DataFactory** オブジェクトへの参照が作成されます。その後、 **RDSServer.DataFactory** は、 **Connect** プロパティの値を使用してデータ ソースに接続し、 **SQL** プロパティの値を使用してデータ ソースから **Recordset** を取得して、 **Recordset** オブジェクトを **RDS.DataControl** に返します。
 
-もう 1 つの側面は、返された **Recordset** 情報のビジュアル コントロールでの表示に関するものです。 **Rds. のビジュアル コントロールを関連付けることができます。DataControl** (バインドと呼ばれるプロセス) で、Microsoft® Internet Explorer で web ページのクエリ結果を表示する、関連付けられた**レコード セット**オブジェクト内の情報にアクセスします。 各 **RDS.DataControl** オブジェクトは、単一のクエリの結果を表す 1 つの **Recordset** オブジェクトを、1 つまたは複数のビジュアル コントロール (テキスト ボックス、コンボ ボックス、グリッド コントロールなど) にバインドします。 各ページに複数の **RDS.DataControl** オブジェクトが存在する場合があります。 それぞれの **RDS.DataControl** オブジェクトを異なるデータ ソースに接続し、別のクエリの結果を取得することができます。
+もう 1 つの側面は、返された **Recordset** 情報のビジュアル コントロールでの表示に関するものです。 **Rds. のビジュアル コントロールを関連付けることができます。DataControl** (バインドと呼ばれるプロセス) で、Microsoft Internet Explorer で web ページのクエリ結果を表示する、関連付けられた**レコード セット**オブジェクト内の情報にアクセスします。 各 **RDS.DataControl** オブジェクトは、単一のクエリの結果を表す 1 つの **Recordset** オブジェクトを、1 つまたは複数のビジュアル コントロール (テキスト ボックス、コンボ ボックス、グリッド コントロールなど) にバインドします。 各ページに複数の **RDS.DataControl** オブジェクトが存在する場合があります。 それぞれの **RDS.DataControl** オブジェクトを異なるデータ ソースに接続し、別のクエリの結果を取得することができます。
 
 また、 **RDS.DataControl** オブジェクトには、関連する **Recordset** オブジェクトの行に対して移動、並べ替え、およびフィルター選択を行うためのメソッドがあります。これらのメソッドは、ADO の **Recordset** オブジェクトのメソッドと似ていますが、同じではありません。
 

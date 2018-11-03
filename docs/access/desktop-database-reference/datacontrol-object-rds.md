@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249801(v=office.15)
 ms:contentKeyID: 48547001
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8cb71c5e51e56447636b25639dae0733a729bdb1
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
+ms.openlocfilehash: 2d4b622cd65cfaf71c45ac7ae8c77bdb596ebd3a
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910867"
+ms.locfileid: "25937807"
 ---
 # <a name="datacontrol-object-rds"></a>DataControl オブジェクト (RDS)
 
@@ -92,7 +92,7 @@ Rds. の**を定義する場合DataControl** web ページ上のオブジェク�
 
 リモート データ サービスのクライアント コンポーネントは、Internet Explorer 4.0 の一部として既に組み込まれています。このため、 **RDS.DataControl** オブジェクトのタグに、CODEBASE パラメーターを含める必要はありません。
 
-Internet Explorer 4.0 以降では、HTML コントロールと ActiveX® コントロールがアパートメント モデル コントロールに設定されている場合にのみ、これらのコントロールを使用してデータに連結できます。
+Internet Explorer 4.0 以降では、アパートメント モデル コントロールとしてマークされている場合にのみ、HTML コントロールおよび ActiveX コントロールを使用してデータにバインドできます。
 
 **Microsoft Visual Basic のユーザー****Rds.DataControl** 、web ベースのアプリケーションでのみ使用します。 Visual Basic クライアント アプリケーションでは不要です。
 

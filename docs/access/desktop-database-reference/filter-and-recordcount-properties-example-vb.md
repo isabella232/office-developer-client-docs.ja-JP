@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249167(v=office.15)
 ms:contentKeyID: 48544354
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3fe5065c75408e7093fbd2b39e7a84400d648e99
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: c291dcfdcaf14543100d68bed46cabbc05403d7e
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25873167"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25936519"
 ---
 # <a name="filter-and-recordcount-properties-example-vb"></a>Filter プロパティと RecordCount プロパティの使用例 (VB)
 
@@ -105,7 +105,7 @@ End Sub
 
 
 > [!NOTE]
-> <P>[!メモ] 選択するデータがわかっている場合は、SQL ステートメントを使用して <STRONG>Recordset</STRONG> を開く方が一般に効率的です。この例は、単一の <STRONG>Recordset</STRONG> を作成し、特定の国/地域からレコードを取得する方法を示します。</P>
+> [!メモ] 選択するデータがわかっている場合は、SQL ステートメントを使用して **Recordset** を開く方が一般に効率的です。この例は、単一の **Recordset** を作成し、特定の国/地域からレコードを取得する方法を示します。
 
 
 

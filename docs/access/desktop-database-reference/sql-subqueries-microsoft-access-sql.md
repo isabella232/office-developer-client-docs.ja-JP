@@ -12,12 +12,12 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 72d9d9d27ac128ec587621231b5c899bc89c2752
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: b2a7bdadeb700bdbc6bf18dda2e73401afb7df86
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925951"
+ms.locfileid: "25937352"
 ---
 # <a name="sql-subqueries-microsoft-access-sql"></a>SQL サブクエリ (Microsoft Access SQL)
 
@@ -111,9 +111,7 @@ WHERE T1.Title = Employees.Title) Order by Title;
 
 ## <a name="example"></a>使用例
 
-次の使用例では、1995 年の第 2 四半期に注文を出した各得意先の名前および連絡先がリストされます。
-
-この例では、EnumFields プロシージャを呼び出します。EnumFields プロシージャについては、SELECT ステートメントの使用例を参照してください。
+次の使用例では、1995 年の第 2 四半期に注文を出した各得意先の名前および連絡先がリストされます。 SELECT ステートメントの例で表示できる、EnumFields プロシージャを呼び出します。
 
 ```vb
     Sub SubQueryX() 

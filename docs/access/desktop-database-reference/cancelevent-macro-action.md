@@ -10,18 +10,16 @@ f1_keywords:
 - vbaac10.chm78430
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7999d2acd19fd1f6aa4d7dd9dccd88b7ffea88a7
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: b0b8d7cb1a224b7f9c4d587d5c8941977dab2f66
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925329"
+ms.locfileid: "25937128"
 ---
 # <a name="cancelevent-macro-action"></a>CancelEvent マクロ アクション
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 " **CancelEvent/イベントのキャンセル** " アクションを使用して、このアクションが定義されたマクロが Access で実行される原因となったイベントを取り消すことができます。" **BeforeUpdate/更新前処理** "、" **OnOpen/開く時** "、" **OnUnload/読み込み解除時** "、" **OnPrint/印刷時** " などのイベント プロパティに、このマクロ名を設定します。
 
@@ -76,8 +74,6 @@ ms.locfileid: "25925329"
 </tr>
 </tbody>
 </table>
-
-
 
 > [!NOTE]
 > **MouseDown**イベントと**イベントのキャンセル**操作を使用するにはオブジェクトを右クリックしたときに発生するイベントをキャンセルするだけです。

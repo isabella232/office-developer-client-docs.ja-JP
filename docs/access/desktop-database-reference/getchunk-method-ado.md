@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248979(v=office.15)
 ms:contentKeyID: 48543629
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6a61130db9bd4564523688adc4e045f665e7310e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: ea7346c8c1b97ef16af71f56aafbbf777635d906
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919011"
+ms.locfileid: "25937786"
 ---
 # <a name="getchunk-method-ado"></a>GetChunk メソッド (ADO)
 
@@ -49,6 +49,6 @@ ms.locfileid: "25919011"
 
 
 > [!NOTE]
-> <P>[!メモ] <STRONG>GetChunk</STRONG> メソッドでは、 <STRONG>Record</STRONG> オブジェクトの <A href="record-object-ado.md">Field</A> オブジェクトを操作できません。操作は何も実行されず、実行時エラーが発生します。</P>
+> [!メモ] **GetChunk** メソッドでは、 **Record** オブジェクトの [Field](record-object-ado.md) オブジェクトを操作できません。操作は何も実行されず、実行時エラーが発生します。
 
 

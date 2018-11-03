@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249784(v=office.15)
 ms:contentKeyID: 48546923
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 376d80bc79af772cfd09b6f5b8759321ed4431ee
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 67bdcdbaa525039f544a7d45cb4411faeee297e8
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25887168"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937030"
 ---
 # <a name="overview-of-multidimensional-schemas-and-data"></a>多次元スキーマおよびデータの概要
 
@@ -80,17 +80,14 @@ Hamburg, Munich, Stuttgart}
 
 階層のリーフ レベルのメンバーに子はなく、ルート レベルのメンバーに親はありません。他のすべてのメンバーには、少なくとも 1 つの親と 1 つの子があります。たとえば、Geography 次元の階層ツリーを部分的にスキャンすると、以下の親子関係が生成されます。
 
-  - {すべて}(親の){ヨーロッパ、北アメリカ。
-
-  - {(北アメリカ)。(親の){カナダ、アメリカ合衆国}
-
-  - {アメリカ合衆国}(親の){NE ではアメリカ合衆国、アメリカ合衆国の NW、アメリカ合衆国 SE (米国)-SW}
-
-  - {アメリカ合衆国の NW}(親の){ボイシ、シアトル。
+- {すべて}(親の){ヨーロッパ、北アメリカ。
+- {(北アメリカ)。(親の){カナダ、アメリカ合衆国}
+- {アメリカ合衆国}(親の){NE ではアメリカ合衆国、アメリカ合衆国の NW、アメリカ合衆国 SE (米国)-SW}
+- {アメリカ合衆国の NW}(親の){ボイシ、シアトル。
 
 メンバーは各次元で 1 つ以上の階層に統合できます。
 
-この例は、Year-Week 階層の Week レベルのメンバーは Year-Quarter 階層のどのレベルにも表示されないという、もう 1 つの特性も示しています。つまり、階層に次元のすべてのメンバーを含める必要はありません。
+この例では、別の特性も示しています。 年週階層の週レベルの一部のメンバーは、4 分の 1 年の階層のどのレベルには表示されません。 つまり、階層に次元のすべてのメンバーを含める必要はありません。
 
 ## <a name="understanding-multidimensional-schemas"></a>多次元スキーマについて
 
@@ -164,5 +161,5 @@ Hamburg, Munich, Stuttgart}
 
 メンバーは各次元で 1 つ以上の階層に統合できます。
 
-この例は、Year-Week 階層の Week レベルのメンバーは Year-Quarter 階層のどのレベルにも表示されないという、もう 1 つの特性も示しています。つまり、階層に次元のすべてのメンバーを含める必要はありません。
+この例では、別の特性も示しています。 年週階層の週レベルの一部のメンバーは、4 分の 1 年の階層のどのレベルには表示されません。 つまり、階層に次元のすべてのメンバーを含める必要はありません。
 

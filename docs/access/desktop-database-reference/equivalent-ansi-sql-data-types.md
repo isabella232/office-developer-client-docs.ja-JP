@@ -10,19 +10,19 @@ f1_keywords:
 - jetsql40.chm5277587
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: cac58601277079f6843df6ac9ac7bcae7824b18a
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: ed13aab8d1f6851dd05ea2d79877e34c14665a3f
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869527"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937163"
 ---
 # <a name="equivalent-ansi-sql-data-types"></a>Microsoft Access データベース エンジン SQL と ANSI SQL のデータ型
 
 
 **適用されます**Access 2013、Office 2013。
 
-次の表は、ANSI SQL でサポートされているデータ型、およびそれらと一致する Microsoft Access データベース エンジン SQL でサポートされているデータ型とその別名を示したものです。また、この表には、Microsoft Jet データベース エンジン SQL と ANSI SQL のデータ型に対応する Microsoft® SQL Server のデータ型も示されています。
+次の表は、ANSI SQL でサポートされているデータ型、およびそれらと一致する Microsoft Access データベース エンジン SQL でサポートされているデータ型とその別名を示したものです。 同等の Microsoft SQL Server™ データ型を一覧表示します。
 
 <table>
 <colgroup>

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248922(v=office.15)
 ms:contentKeyID: 48543423
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: be6c210ef75b6a9e96b8733d12f3aa598d158df7
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 4240ca118adfcc122ebe346cb60f8b9a0b6efd9e
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25881259"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937492"
 ---
 # <a name="securing-rds-applications"></a>RDS アプリケーションをセキュリティ保護する
 
@@ -19,7 +19,7 @@ ms.locfileid: "25881259"
 
 ## <a name="microsoft-internet-explorer-security-issues"></a>Microsoft Internet Explorer のセキュリティの問題点
 
-Microsoft® Internet Explorer に新しいセキュリティ機能が追加されたことに伴い、いくつかの ADO オブジェクトと RDS オブジェクトは "セーフ" モード環境でしか動作しなくなりました。そのため、ゾーンの相違、セキュリティ レベル、動作の制限、安全でない操作、カスタマイズされたセキュリティ設定などの問題に注意を払う必要があります。
+Microsoft Internet Explorer に追加された新しいセキュリティ強化では、いくつかの ADO と RDS のオブジェクトは、「安全な」モードの環境でのみ実行しているに制限されます。 そのため、ゾーンの相違、セキュリティ レベル、動作の制限、安全でない操作、カスタマイズされたセキュリティ設定などの問題に注意を払う必要があります。
 
 これらの問題の詳細については、「ADO」 (英語) の「ADO and RDS Security Issues in Microsoft Internet Explorer」 (英語) を参照してください。
 

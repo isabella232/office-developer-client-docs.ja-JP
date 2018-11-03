@@ -1,25 +1,25 @@
 ---
 title: ADO プログラマ ガイド
-TOCTitle: ADO Programmer's Guide
+TOCTitle: ADO programmer's guide
 ms:assetid: b68a982e-17b6-7dd6-ca9d-3a5960d815da
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249876(v=office.15)
 ms:contentKeyID: 48547278
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2e0ad3f70f1bfe2aa8128e0bd2f504c200546a9a
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: ed490a6260e6cf15f98ef00f32bde2a100854a38
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25883639"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937688"
 ---
 # <a name="ado-programmers-guide"></a>ADO プログラマ ガイド
 
 **適用されます**Access 2013、Office 2013。
 
-「ADO プログラマ ガイド」は、ADO を初めて使用する開発者を支援するために作成され、ADO 技術を詳細に紹介しています。このガイドでは、ADO ファミリのライブラリについて説明すると共に、さまざまな言語で記述されたサンプル コードを使用して、ライブラリの使用方法、ライブラリを使用するにあたって推奨される方法、および ADO アプリケーションのパフォーマンスを最大限に向上させるためのヒントについて説明します。
+ADO に新しいテクノロジの詳細に紹介をすることでは、開発者を支援するためには、ADO プログラマ ガイド」が用意されています。 このガイドでは、ADO ファミリのライブラリについて説明すると共に、さまざまな言語で記述されたサンプル コードを使用して、ライブラリの使用方法、ライブラリを使用するにあたって推奨される方法、および ADO アプリケーションのパフォーマンスを最大限に向上させるためのヒントについて説明します。
 
-「ADO プログラマ ガイド」は、次のセクションおよび章で構成されています。
+ADO プログラマ ガイド」には、次のセクションとの章が含まれています。
 
 - [Introduction](introduction-to-ado-programming.md)
   

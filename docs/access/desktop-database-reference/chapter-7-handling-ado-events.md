@@ -1,20 +1,19 @@
 ---
-title: '7 章: ADO イベントを処理する'
-TOCTitle: 'Chapter 7: Handling ADO Events'
+title: '第 7 章: ADO イベントの処理'
+TOCTitle: 'Chapter 7: Handling ADO events'
 ms:assetid: 22924fe2-d00d-8a0c-52f5-2dc6039537ff
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249004(v=office.15)
 ms:contentKeyID: 48543709
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 48b74b3de734ecc10a4ff9a46b517eba18191179
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 58186a9f5612308c7762a815520d49ddce8eaf57
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880076"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937541"
 ---
-# <a name="chapter-7-handling-ado-events"></a>7 章: ADO イベントを処理する
-
+# <a name="chapter-7-handling-ado-events"></a>第 7 章: ADO イベントの処理
 
 **適用されます**Access 2013、Office 2013。
 
@@ -28,12 +27,8 @@ ADO イベント モデルを使用するとアプリケーションのオーバ
 
 この章では、次のトピックについて説明します。
 
-- [ADO イベント ハンドラーの概要](ado-event-handler-summary.md)
-
+- [ADO のイベント ハンドラーの概要](ado-event-handler-summary.md)
 - [イベントの種類](types-of-events.md)
-
 - [イベント パラメーター](event-parameters.md)
-
-- [複数のイベント ハンドラーとの共同作業](how-event-handlers-work-together.md)
-
-- [ADO イベントのインスタンス化 (言語別) (ADO)](ado-event-instantiation-by-language-ado.md)
+- [イベント ハンドラーがどのように連携](how-event-handlers-work-together.md)
+- [(ADO) の言語によって、ADO イベントのインスタンス化](ado-event-instantiation-by-language-ado.md)

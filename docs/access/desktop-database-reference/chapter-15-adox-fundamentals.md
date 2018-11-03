@@ -1,46 +1,41 @@
 ---
-title: '第 15 章: ADOX の基本事項'
-TOCTitle: 'Chapter 15: ADOX Fundamentals'
+title: '第 15 章: ADOX の基礎'
+TOCTitle: 'Chapter 15: ADOX fundamentals'
 ms:assetid: 973d7579-4f34-3b31-a761-a951ab29e850
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249673(v=office.15)
 ms:contentKeyID: 48546464
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 72152a67a9846adacbc6b200a3517c7e65b9fc4c
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 6b410fcaa81aa847732e530bd18bc18200f04ebc
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25881911"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25936869"
 ---
-# <a name="chapter-15-adox-fundamentals"></a>第 15 章: ADOX の基本事項
-
+# <a name="chapter-15-adox-fundamentals"></a>第 15 章: ADOX の基礎
 
 **適用されます**Access 2013、Office 2013。
 
-Microsoft® ActiveX® Data Objects Extensions for Data Definition Language and Security (ADOX) は、ADO オブジェクトおよびプログラミング モデルの拡張機能です。ADOX には、セキュリティに加え、スキーマの作成および変更のためのオブジェクトが含まれます。オブジェクト ベースでスキーマ操作が行われるため、さまざまなデータ ソースに対してそれぞれの文法の違いに関係なく動作するコードを記述することができます。
+Microsoft ActiveX Data Objects Extensions for Data Definition Language and Security (ADOX) は、ADO のオブジェクトとプログラミング モデルを拡張したものです。ADOX には、セキュリティのためのオブジェクトに加え、スキーマの作成および修正のためのオブジェクトが用意されています。ADOX では、オブジェクト ベースの手法を使用してスキーマを操作するため、使用される構文の違いにかかわらず、さまざまなデータ ソースで動作するコードを記述できます。
 
-ADOX は、コア ADO オブジェクトに付随するライブラリです。これにより、テーブルやプロシージャなどのスキーマ オブジェクトの作成、修正、および削除のための追加オブジェクトが提供されます。これにはまた、ユーザーおよびグループを管理し、オブジェクトに対する権限を与えたり取り消すためのセキュリティ オブジェクトも含まれます。
+ADOX は、ADO のコア オブジェクトに添付されるライブラリで、テーブルやプロシージャなどのスキーマ オブジェクトを作成、修正、および削除するための追加のオブジェクトを公開します。また、ユーザーとグループを管理したり、オブジェクトに対する権限を付与および削除したりするためのセキュリティ オブジェクトも備えています。
 
 開発ツールで ADOX を使用するには、ADOX タイプ ライブラリへの参照を確立する必要があります。ADOX ライブラリとは、Microsoft ADO Ext. for DDL and Security のことです。ADOX ライブラリのファイル名は Msadox.dll で、プログラム ID (ProgID) は "ADOX" です。ライブラリへの参照を確立する方法の詳細については、開発ツールのマニュアルを参照してください。
 
 Microsoft OLE DB Provider for the Microsoft Jet Database Engine は、ADOX を完全にサポートしています。データ プロバイダーによっては、ADOX の特定の機能がサポートされていない場合があります。Microsoft OLE DB Provider for ODBC、Microsoft OLE DB Provider for Oracle、または Microsoft SQL Server OLE DB Provider でサポートされている機能に関する詳細については、MDAC の Readme ファイルを参照してください。
 
-このドキュメントは、Microsoft® Visual Basic® のプログラミング言語を使用できる知識および ADO に関する一般的な知識を持っていることを前提としています。 ADO の詳細については、「[ADO プログラマ ガイド](ado-programmer-s-guide.md)」を参照してください。
+このドキュメントは、Microsoft Visual Basic のプログラミング言語の実用的な知識および ADO に関する一般的な知識を想定しています。 ADO の詳細については、 [ADO プログラマ ガイド」](ado-programmer-s-guide.md)を参照してください。
 
 この章では、次のトピックについて説明します。
 
-- [ADOX のプロバイダー サポート](provider-support-for-adox.md)
+- [プロバイダー ADOX のサポート](provider-support-for-adox.md)
 
 ADOX に関する概要については、次のトピックを参照してください。
 
 - [ADOX オブジェクト](adox-objects.md)
-
-- [ADOX コレクション](adox-collections.md)
-
+- [ADOX のコレクション](adox-collections.md)
 - [ADOX のプロパティ](adox-properties.md)
-
-- [ADOX メソッド](adox-methods.md)
-
-- [ADOX コードの例](adox-code-examples.md)
+- [ADOX のメソッド](adox-methods.md)
+- [ADOX の例](adox-code-examples.md)
 

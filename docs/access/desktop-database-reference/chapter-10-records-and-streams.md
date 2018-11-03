@@ -1,20 +1,19 @@
 ---
 title: '第 10 章: レコードとストリーム'
-TOCTitle: 'Chapter 10: Records and Streams'
+TOCTitle: 'Chapter 10: Records and streams'
 ms:assetid: 74862096-2273-3b61-f89c-06554ccf42cd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249477(v=office.15)
 ms:contentKeyID: 48545663
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c61aef7a4f0cc34f256300304823341c99fb8436
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 6d0d5eec3c032780dd6065bd29f6d41c299a7379
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25876968"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937695"
 ---
 # <a name="chapter-10-records-and-streams"></a>第 10 章: レコードとストリーム
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -36,28 +35,25 @@ ADO には現在、リレーショナル データベースなどのデータ �
 
 **Stream** オブジェクトは、連続するバイトの読み取り、書き込み、および管理の手段を提供します。このバイト ストリームは、テキストやバイナリであることもあり、システム リソースによってのみサイズが制限されます。通常、ADO **Stream** オブジェクトは、次のような目的で使用されます。
 
-  - 通常、Microsoft OLE DB Provider for Internet Publishing などのプロバイダーで使用される、ファイルやメッセージを構成するテキストやバイトを格納します。 **Stream** オブジェクトの使用の詳細については、「 [インターネット発行に ADO を使用する](using-ado-for-internet-publishing.md)」を参照してください。
+- 通常、Microsoft OLE DB Provider for Internet Publishing などのプロバイダーで使用される、ファイルやメッセージを構成するテキストやバイトを格納します。 **Stream** オブジェクトの使用の詳細については、「 [インターネット発行に ADO を使用する](using-ado-for-internet-publishing.md)」を参照してください。
 
 **Stream** オブジェクトは、次のものに対して開くことができます。
 
-  - URL で指定された単純なファイル。
+- URL で指定された単純なファイル。
 
-  - **Stream** オブジェクトを含む **Record** または **Recordset** のフィールド。
+- **Stream** オブジェクトを含む **Record** または **Recordset** のフィールド。
 
-  - ディレクトリまたは複合ファイルを表す **Record** オブジェクトまたは **Recordset** オブジェクトの既定のストリーム。
+- ディレクトリまたは複合ファイルを表す **Record** オブジェクトまたは **Recordset** オブジェクトの既定のストリーム。
 
-  - 単純なファイルの URL を含むリソース フィールド。
+- 単純なファイルの URL を含むリソース フィールド。
 
-  - 特定のソースの指定なし。この場合、 **Stream** オブジェクトはメモリで開かれます。データを書き込み、別の **Stream** やファイルに保存できます。
+- 特定のソースの指定なし。この場合、 **Stream** オブジェクトはメモリで開かれます。データを書き込み、別の **Stream** やファイルに保存できます。
 
-  - **Recordset** 内の BLOB フィールド。
+- **Recordset** 内の BLOB フィールド。
 
 この章では、次のトピックについて説明します。
 
 - [ストリームと永続性](streams-and-persistence.md)
-
 - [レコードおよびプロバイダー提供のフィールド](records-and-provider-supplied-fields.md)
-
-- [絶対 URL と相対 URL](absolute-and-relative-urls.md)
-
-- [インターネット発行に ADO を使用する (ADO)](using-ado-for-internet-publishing.md)
+- [絶対と相対 Url](absolute-and-relative-urls.md)
+- [ADO を使用してインターネット パブリッシング (ADO) を](using-ado-for-internet-publishing.md)

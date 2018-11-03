@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm58124
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 90d50ce1f1435d38fdfe1ed11e76b49c212b87b3
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 5986b8e891b42ce37cb68d8ce06e7f33feba1b8f
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922455"
+ms.locfileid: "25937730"
 ---
 # <a name="gotorecord-macro-action"></a>GoToRecord マクロ アクション
 
@@ -61,7 +61,7 @@ ms.locfileid: "25922455"
 </ul>
 
 > [!NOTE]
-> <P><STRONG></STRONG> <STRONG>最初</STRONG>、<STRONG>最後</STRONG>、または<STRONG>新規</STRONG>の設定を使用する場合<STRONG>、この引数</STRONG>は無視されます。 大きすぎて<STRONG>オフセット</STRONG>の引数を入力する場合は、エラー メッセージが表示されます。 <STRONG>オフセット</STRONG>の引数に負の値を入力できません。</P>
+> **** **最初**、**最後**、または**新規**の設定を使用する場合 **、この引数**は無視されます。 大きすぎて**オフセット**の引数を入力する場合は、エラー メッセージが表示されます。 **オフセット**の引数に負の値を入力できません。
 
 
 <p></p>
