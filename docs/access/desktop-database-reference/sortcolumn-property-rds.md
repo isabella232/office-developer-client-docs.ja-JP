@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248835(v=office.15)
 ms:contentKeyID: 48543151
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4bccd0eb536ec67937e8c3659b2ac62ef49a0bb3
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 61d31ba6044448d2b2534d6affa6157765e9cbc7
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25924065"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949636"
 ---
 # <a name="sortcolumn-property-rds"></a>SortColumn プロパティ (RDS)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,13 +25,10 @@ ms.locfileid: "25924065"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *DataControl*
-
-  - [RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。
-
-  - *String*
-
-  - レコードの並べ替えに使用する列の名前または別名を表す文字列型 ( **String** ) の値。
+|パラメーター|説明|
+|:--------|:----------|
+|*DataControl* |[RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。|
+|*String* |レコードの並べ替えに使用する列の名前または別名を表す文字列型 ( **String** ) の値。|
 
 ## <a name="remarks"></a>解説
 

@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250027(v=office.15)
 ms:contentKeyID: 48547802
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ee2dbaf7dd3a15cf6cd415af208ec10a14fc9c9b
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: be8127ea3f298a8f137012615b1f4de656a6ea1f
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923379"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949713"
 ---
 # <a name="seek-method-ado"></a>Seek メソッド (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
-
 
 [Recordset](recordset-object-ado.md) のインデックスを検索して、指定された値と一致する行をすばやく探し、その行をカレント行にします。
 
@@ -28,13 +25,10 @@ ms.locfileid: "25923379"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *KeyValues*
-
-  - バリアント型 ( **Variant** ) の値の配列。インデックスは 1 つまたは複数の列から成るため、対応する各列と比較する値をこの配列に格納します。
-
-  - *SeekOption*
-
-  - インデックスの各列とそれに対応する *KeyValues* の比較に使用する比較の種類を指定する [SeekEnum](seekenum.md) 値。
+|パラメーター|説明|
+|:--------|:----------|
+|*KeyValues* |バリアント型 ( **Variant** ) の値の配列。インデックスは 1 つまたは複数の列から成るため、対応する各列と比較する値をこの配列に格納します。|
+|*SeekOption* |インデックスの各列とそれに対応する *KeyValues* の比較に使用する比較の種類を指定する [SeekEnum](seekenum.md) 値。|
 
 ## <a name="remarks"></a>解説
 

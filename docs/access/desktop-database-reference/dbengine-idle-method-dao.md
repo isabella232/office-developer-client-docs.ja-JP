@@ -10,18 +10,16 @@ f1_keywords:
 - dao360.chm1052978
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d750bd39835a8bb69d195663b72254d3f53cd635
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 68c0e6d246370f9c4f0c241195fb19c241ca49e5
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926081"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949720"
 ---
 # <a name="dbengineidle-method-dao"></a>DBEngine.Idle メソッド (DAO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 データの処理を中断し、Microsoft Access データベース エンジンでメモリの最適化やページのタイムアウトなどのタスクを完了できるようにします (Microsoft Access ワークスペースのみ)。
 
@@ -31,7 +29,7 @@ ms.locfileid: "25926081"
 
 *式***DBEngine**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -50,7 +48,7 @@ ms.locfileid: "25926081"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>アクション</p></td>
+<td><p><em>Action</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>実行するアクションを指定します。指定できる定数は、<strong><a href="idleenum-enumeration-dao.md">IdleEnum</a></strong> クラスの定数のいずれかです。</p></td>

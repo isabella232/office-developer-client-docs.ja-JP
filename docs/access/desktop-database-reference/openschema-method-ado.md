@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249294(v=office.15)
 ms:contentKeyID: 48544970
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 846d1c0f73ba4a17f166fffc7c1bb4682ad31d49
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: a204f6e86a1c50be49400430f53dd99468668a9e
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921167"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950000"
 ---
 # <a name="openschema-method-ado"></a>OpenSchema メソッド (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 プロバイダーからデータベースのスキーマ情報を取得します。
 
@@ -31,17 +29,11 @@ ms.locfileid: "25921167"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *QueryType*
-
-  - 実行するスキーマ クエリの種類を表す [SchemaEnum](schemaenum.md) 値を指定します。
-
-  - *Criteria*
-
-  - 省略可能です。 **SchemaEnum**に記載されている各*QueryType*オプション、クエリの制約の配列。
-
-  - *SchemaID*
-
-  - OLE DB 仕様で定義されていないプロバイダー スキーマ クエリの GUID です。 *QueryType*が**adSchemaProviderSpecific**; に設定されている場合、このパラメーターが必要ですそれ以外の場合は使用されません。
+|パラメーター|説明|
+|:--------|:----------|
+|*QueryType* |実行するスキーマ クエリの種類を表す [SchemaEnum](schemaenum.md) 値を指定します。|
+|*Criteria* |省略可能です。 **SchemaEnum**に記載されている各*QueryType*オプション、クエリの制約の配列。|
+|*SchemaID* |OLE DB 仕様で定義されていないプロバイダー スキーマ クエリの GUID です。 *QueryType*が**adSchemaProviderSpecific**; に設定されている場合、このパラメーターが必要ですそれ以外の場合は使用されません。|
 
 ## <a name="remarks"></a>解説
 

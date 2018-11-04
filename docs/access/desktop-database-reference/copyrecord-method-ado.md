@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249459(v=office.15)
 ms:contentKeyID: 48545605
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0f25d3f7cb576a9fb8ddf79a887bb3c795144682
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 161cfec0e8450ef7e80c47bc8fb1b8304790e7c5
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919032"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949909"
 ---
 # <a name="copyrecord-method-ado"></a>CopyRecord メソッド (ADO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,29 +25,14 @@ ms.locfileid: "25919032"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Source*
-
-  - 省略可能です。 コピー元のエンティティ (ファイル、ディレクトリなど) を指定する URL を含む文字列型 ( **String** ) の値を指定します。 *ソース*を省略すると、空の文字列を指定する場合は、ファイルまたはディレクトリが現在の[レコード](record-object-ado.md)で表されますがコピーされます。
-
-  - *Destination*
-
-  - 省略可能です。 *ソース*のコピー先の場所を指定する URL を含む**文字列**値。
-
-  - *UserName*
-
-  - 省略可能です。*Destination* へのアクセス権が設定されている場合、アクセス権を持つユーザー ID を含む、文字列型 (**String**) の値を指定します。
-
-  - *Password*
-
-  - 省略可能です。*UserName* を確認するためのパスワードを含む、文字列型 (**String**) の値を指定します。
-
-  - *Options*
-
-  - 省略可能です。[CopyRecordOptionsEnum](copyrecordoptionsenum.md) 値を指定します。既定値は、 **adCopyUnspecified** です。このメソッドの動作を指定します。
-
-  - *Async*
-
-  - 省略可能です。ブール型 ( **Boolean** ) の値を指定します。値が **True** の場合、この動作は非同期で実行されます。
+|パラメーター|説明|
+|:--------|:----------|
+|*Source* |省略可能です。 コピー元のエンティティ (ファイル、ディレクトリなど) を指定する URL を含む文字列型 ( **String** ) の値を指定します。 *ソース*を省略すると、空の文字列を指定する場合は、ファイルまたはディレクトリが現在の[レコード](record-object-ado.md)で表されますがコピーされます。|
+|*Destination* |省略可能です。 *ソース*のコピー先の場所を指定する URL を含む**文字列**値。|
+|*UserName* |省略可能です。*Destination* へのアクセス権が設定されている場合、アクセス権を持つユーザー ID を含む、文字列型 (**String**) の値を指定します。|
+|*Password* |省略可能です。*UserName* を確認するためのパスワードを含む、文字列型 (**String**) の値を指定します。|
+|*Options* |省略可能です。[CopyRecordOptionsEnum](copyrecordoptionsenum.md) 値を指定します。既定値は、 **adCopyUnspecified** です。このメソッドの動作を指定します。|
+|*Async* |省略可能です。ブール型 ( **Boolean** ) の値を指定します。値が **True** の場合、この動作は非同期で実行されます。|
 
 ## <a name="return-value"></a>戻り値
 
@@ -62,11 +46,8 @@ ms.locfileid: "25919032"
 
 **AdCopyOverWrite**を指定しない限り、*移動先*が (たとえば、ファイルまたはディレクトリ)、既存のエンティティを識別する場合、このメソッドが失敗します。
 
-
 > [!IMPORTANT]
 > **AdCopyOverWrite**オプションを慎重に使用します。 などのディレクトリにファイルをコピーするときにこのオプションを指定するディレクトリは*削除*し、ファイルで置き換えます。
-
-
 
 
 > [!NOTE]

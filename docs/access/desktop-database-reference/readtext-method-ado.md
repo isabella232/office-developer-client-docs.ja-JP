@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248826(v=office.15)
 ms:contentKeyID: 48543108
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 97ef84cbacc02da0a3150cf0efcb3a24e548f2d2
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 66db24f95e3f6338174be3a70ca75dbb3332adeb
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929315"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949391"
 ---
 # <a name="readtext-method-ado"></a>ReadText メソッド (ADO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,9 +25,9 @@ ms.locfileid: "25929315"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *NumChars*
-
-  - 省略可能です。ファイルから読み取る文字の数を指定する長整数型 ( **Long** ) の値、または [StreamReadEnum](streamreadenum.md) 値を指定します。既定値は **adReadAll** です。
+|パラメーター|説明|
+|:--------|:----------|
+|*NumChars* |省略可能です。ファイルから読み取る文字の数を指定する長整数型 ( **Long** ) の値、または [StreamReadEnum](streamreadenum.md) 値を指定します。既定値は **adReadAll** です。|
 
 ## <a name="return-value"></a>戻り値
 
@@ -38,8 +37,6 @@ ms.locfileid: "25929315"
 
 *NumChar* がストリームに残っている文字の数よりも大きい場合、残っている文字のみが返されます。読み取った文字列に、*NumChar* で指定した長さに合うようにスペースが補充されることはありません。読み取る文字が残っていない場合は、値が Null のバリアント型が返されます。**ReadText** は、逆方向の読み取りに使用することはできません。
 
-
 > [!NOTE]
-> <P><STRONG>ReadText</STRONG> メソッドは、文字列型ストリーム (<A href="type-property-ado-stream.md">Type</A> が <STRONG>adTypeText</STRONG>) で使用します。バイナリ型のストリーム (<STRONG>Type</STRONG> が <STRONG>adTypeBinary</STRONG>) の場合は、<A href="read-method-ado.md">Read</A> を使用してください。</P>
-
+> **ReadText** メソッドは、文字列型ストリーム ([Type](type-property-ado-stream.md) が **adTypeText**) で使用します。バイナリ型のストリーム (**Type** が **adTypeBinary**) の場合は、[Read](read-method-ado.md) を使用してください。
 

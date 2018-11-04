@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1088781
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 5e0282d95a77f302103414df1ee904d300a0330e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 2d6d40d88051e708944dadfabb984d44cc8c5cbc
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922952"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949888"
 ---
 # <a name="dbenginesetoption-method-dao"></a>DBEngine.SetOption メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -30,7 +29,7 @@ Windows レジストリに登録されている Microsoft Access データベー
 
 *式***DBEngine**オブジェクトを返すオブジェクト式を指定します。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -49,13 +48,13 @@ Windows レジストリに登録されている Microsoft Access データベー
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>オプション</p></td>
+<td><p><em>Option</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>Long 型 (Long)</strong></p></td>
 <td><p>「解説」で説明している定数です。</p></td>
 </tr>
 <tr class="even">
-<td><p>値</p></td>
+<td><p><em>Value</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>オプションを設定する値です。</p></td>

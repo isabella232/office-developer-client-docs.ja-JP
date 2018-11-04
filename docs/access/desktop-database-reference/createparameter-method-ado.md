@@ -10,18 +10,16 @@ f1_keywords:
 - ado210.chm1231042
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 88a5d62cc94aa707c2e90467d74dc07d80a0af02
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: d3b36d04345df4c1d556d0607c70b3425f0047e6
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928944"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949958"
 ---
 # <a name="createparameter-method-ado"></a>CreateParameter メソッド (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 指定したプロパティを使用して、新規 [Parameter](parameter-object-ado.md) オブジェクトを作成します。
 
@@ -35,25 +33,13 @@ ms.locfileid: "25928944"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Name*
-
-  - 省略可能です。 **Parameter** オブジェクト名を含む文字列型 ( **String** ) の値を指定します。
-
-  - *Type*
-
-  - 省略可能です。 [Parameter](datatypeenum.md) オブジェクトのデータ型を **DataTypeEnum** 値で指定します。
-
-  - *Direction*
-
-  - 省略可能です。 [Parameter](parameterdirectionenum.md) オブジェクトのデータ型を **ParameterDirectionEnum** 値で指定します。
-
-  - *Size*
-
-  - 省略可能です。パラメーター値の最大長を文字数またはバイト数で指定する長整数型 ( **Long** ) の値を指定します。
-
-  - *Value*
-
-  - 省略可能です。 **Parameter** オブジェクトの値を指定するバリアント型 ( **Variant** ) の値を指定します。
+|パラメーター|説明|
+|:--------|:----------|
+|*Name* |省略可能です。 **Parameter** オブジェクト名を含む文字列型 ( **String** ) の値を指定します。|
+|*Type* |省略可能です。 [Parameter](datatypeenum.md) オブジェクトのデータ型を **DataTypeEnum** 値で指定します。|
+|*Direction* |省略可能です。 [Parameter](parameterdirectionenum.md) オブジェクトのデータ型を **ParameterDirectionEnum** 値で指定します。|
+|*Size* |省略可能です。パラメーター値の最大長を文字数またはバイト数で指定する長整数型 ( **Long** ) の値を指定します。|
+|*Value* |省略可能です。 **Parameter** オブジェクトの値を指定するバリアント型 ( **Variant** ) の値を指定します。|
 
 ## <a name="remarks"></a>解説
 

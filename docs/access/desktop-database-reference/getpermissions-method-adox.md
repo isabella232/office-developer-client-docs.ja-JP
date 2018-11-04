@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249683(v=office.15)
 ms:contentKeyID: 48546496
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 14cba54742a71a8b319f80b6fd1a910a85debcec
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: b0860606bd0ee6036ea8a760c76662a778eb0175
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926725"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949328"
 ---
 # <a name="getpermissions-method-adox"></a>GetPermissions メソッド (ADOX)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 グループまたはユーザーのオブジェクトまたはオブジェクト コンテナーに対する権限を取得します。
 
@@ -31,15 +29,9 @@ ms.locfileid: "25926725"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Name*
-
-  - 権限を設定するオブジェクトの名前を示すバリアント型 ( **Variant** ) の値を指定します。 オブジェクト コンテナーの権限を取得する場合は、null 値に*名前*を設定します。
-
-  - *ObjectType*
-
-  - 権限を取得するオブジェクトの種類を示す、**ObjectTypeEnum** 定数の 1 つである長整数型 ( [Long](objecttypeenum.md) ) の値を指定します。
-
-  - *ObjectTypeId*
-
-  - 省略可能。 OLE DB 仕様で定義されていないプロバイダーのオブジェクト型の GUID を指定する**バリアント型**の値です。 **AdPermObjProviderSpecific**; に*オブジェクト タイプ*が設定されている場合、このパラメーターが必要ですそれ以外の場合は使用されません。
+|パラメーター|説明|
+|:--------|:----------|
+|*Name* |権限を設定するオブジェクトの名前を示すバリアント型 ( **Variant** ) の値を指定します。 オブジェクト コンテナーの権限を取得する場合は、null 値に*名前*を設定します。|
+|*ObjectType* |権限を取得するオブジェクトの種類を示す、**ObjectTypeEnum** 定数の 1 つである長整数型 ( [Long](objecttypeenum.md) ) の値を指定します。|
+|*ObjectTypeId* |省略可能。 OLE DB 仕様で定義されていないプロバイダーのオブジェクト型の GUID を指定する**バリアント型**の値です。 **AdPermObjProviderSpecific**; に*オブジェクト タイプ*が設定されている場合、このパラメーターが必要ですそれ以外の場合は使用されません。|
 

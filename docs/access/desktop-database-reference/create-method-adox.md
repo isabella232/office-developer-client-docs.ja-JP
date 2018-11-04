@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250060(v=office.15)
 ms:contentKeyID: 48547924
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 01f45adaf5bdd15841be86bfea62cca58e21a9d9
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 866faae5d8c99258075a81f504fa9ce069f4690a
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925517"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949377"
 ---
 # <a name="create-method-adox"></a>Create メソッド (ADOX)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 新規カタログを作成します。
 
@@ -27,9 +25,9 @@ ms.locfileid: "25925517"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *あわせて*
-
-  - データ ソースとの接続に使用される文字列型 ( **String** ) の値を指定します。
+|パラメーター|説明|
+|:--------|:----------|
+|*あわせて* |データ ソースとの接続に使用される文字列型 ( **String** ) の値を指定します。|
 
 ## <a name="remarks"></a>解説
 

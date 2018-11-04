@@ -6,19 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250051(v=office.15)
 ms:contentKeyID: 48547887
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: da7e23974b9541a29aa78ba9d7de22e76102971b
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 6ca95e311f6040d5834fa24ce24d392375953990
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929553"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949937"
 ---
 # <a name="nextrecordset-method-ado"></a>NextRecordset メソッド (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
  
-
 現在の [Recordset](recordset-object-ado.md) オブジェクトをクリアし、一連のコマンド操作を実行して次の **Recordset** を返します。
 
 ## <a name="syntax"></a>構文
@@ -31,15 +29,12 @@ ms.locfileid: "25929553"
 
 ## <a name="parameters"></a>パラメーター
 
-- *RecordsAffected*
-
-- 省略可能です。長整数型 ( **Long** ) の変数を指定します。プロバイダーは、操作の影響を受けたレコード数をここに返します。
-
+|パラメーター|説明|
+|:--------|:----------|
+|*RecordsAffected* |省略可能です。長整数型 ( **Long** ) の変数を指定します。プロバイダーは、操作の影響を受けたレコード数をここに返します。|
 
 > [!NOTE]
-> <P>[!メモ] このパラメーターは、操作の影響を受けたレコード数のみを返します。 <STRONG>Recordset</STRONG> を作成するために使用された Select ステートメントからのレコード数を返すことはありません。</P>
-
-
+> [!メモ] このパラメーターは、操作の影響を受けたレコード数のみを返します。 **Recordset** を作成するために使用された Select ステートメントからのレコード数を返すことはありません。
 
 ## <a name="remarks"></a>解説
 

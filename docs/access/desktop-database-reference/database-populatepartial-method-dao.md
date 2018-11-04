@@ -10,18 +10,16 @@ f1_keywords:
 - dao360.chm1101186
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 2d90d82db89060894eda1e58442cb6f9d52f124e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: fc089ded79e9a25da566f44b668bf788d97fc4be
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919494"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949979"
 ---
 # <a name="databasepopulatepartial-method-dao"></a>Database.PopulatePartial メソッド (DAO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 部分レプリカ内の変更をフル レプリカと同期させ、部分レプリカ内のすべてのレコードを消去し、現在のレプリカ フィルターに基づいて部分レプリカのデータを再設定します (Microsoft Office Access データベース エンジンのデータベースのみ)。
 
@@ -31,7 +29,7 @@ ms.locfileid: "25919494"
 
 *式***データベース**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -50,7 +48,7 @@ ms.locfileid: "25919494"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>DbPathName</p></td>
+<td><p><em>DbPathName</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>レコードの設定元となるフル レプリカのパスおよび名前。</p></td>

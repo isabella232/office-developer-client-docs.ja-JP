@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052936
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e898a089843774792b1ed48cea65086331a94ec6
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: df7533376bf6f6d3c5387173a90c7d5e1a5013cd
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931219"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950049"
 ---
 # <a name="dbenginecompactdatabase-method-dao"></a>DBEngine.CompactDatabase メソッド (DAO)
 
@@ -32,7 +32,7 @@ ms.locfileid: "25931219"
 
 *式***DBEngine**オブジェクトを返すオブジェクト式を指定します。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -51,19 +51,19 @@ ms.locfileid: "25931219"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>SrcName</p></td>
+<td><p><em>SrcName</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>既存の閉じているデータベースを識別します。 できます、完全なパスとファイル名の場合は、次のように&quot;C:\db1.mdb&quot;。 ファイル名に拡張子が含まれる場合、それも指定する必要があります。 ネットワークでサポートされている場合は、指定することもネットワーク パスでは、次のように&quot; \\server1\share1\dir1\db1.mdb&quot;</p></td>
 </tr>
 <tr class="even">
-<td><p>DstName</p></td>
+<td><p><em>DstName</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>作成中の最適化されたデータベースのファイル名およびそのパス。ネットワーク パスを指定することもできます。この引数を使用して、SrcName と同じデータベース ファイルを指定することはできません。</p></td>
 </tr>
 <tr class="odd">
-<td><p>DstLocale</p></td>
+<td><p><em>DstLocale</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>「解説」に指定されているように、DstName の作成のための照合順序を指定する文字列式。</p>
@@ -74,21 +74,16 @@ ms.locfileid: "25931219"
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>選択肢</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>省略可能。解説に指定されているように、1 つ以上のオプションを示す定数または定数の組み合わせ。対応する定数を加算すると、オプションを組み合わせることができます。</p></td>
 </tr>
 <tr class="odd">
-<td><p>password</p></td>
+<td><p><em>password</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
-<td><p>データベースが暗号化されている場合に、暗号化キーを含む文字列式です。 文字列&quot;; pwd =&quot;実際のパスワードを付ける必要があります。 パスワード設定を DstLocale に含めると、この設定は無視されます。</p>
-
-> [!NOTE]
-> これは非推奨のパラメーターでありでサポートされていません。ACCDB 形式です。 暗号化します。ACCDB ファイルを使用して、"pwd ="オプション文字列。 [!メモ] パスワードには、大文字、小文字、数字、記号を組み合わせた複雑なものを使用してください。 これらの文字を混在させたものになっていないパスワードは強固とはいえません。 たとえば、Y6dh!et5 は安全性の高いパスワードです。 House27 は推測されやすいパスワードです。 また、高い安全性を保ちながらも、書き留めておかなくても覚えておくことができるパスワードを使用してください。
-
-
+<td><p>データベースが暗号化されている場合に、暗号化キーを含む文字列式です。 文字列&quot;; pwd =&quot;実際のパスワードを付ける必要があります。 パスワード設定を DstLocale に含めると、この設定は無視されます。</p><p><strong>注</strong>: これは非推奨のパラメーターでありでサポートされていません。ACCDB 形式です。 暗号化します。ACCDB ファイルを使用して、"pwd ="オプション文字列。 [!メモ] パスワードには、大文字、小文字、数字、記号を組み合わせた複雑なものを使用してください。 これらの文字を混在させたものになっていないパスワードは強固とはいえません。 たとえば、Y6dh!et5 は安全性の高いパスワードです。 House27 は推測されやすいパスワードです。 また、高い安全性を保ちながらも、書き留めておかなくても覚えておくことができるパスワードを使用してください。</p>
 </td>
 </tr>
 </tbody>

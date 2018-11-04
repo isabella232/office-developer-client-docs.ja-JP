@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835040(v=office.15)
 ms:contentKeyID: 48547978
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6a06837ec98d96cc4c6ae75a19dd953ca4dc59dc
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: d95b33531f32ebc3524737c3322c92838518b97f
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920082"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949538"
 ---
 # <a name="connectionexecute-method-dao"></a>Connection.Execute メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,7 +25,7 @@ ms.locfileid: "25920082"
 
 *式***接続**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -45,13 +44,13 @@ ms.locfileid: "25920082"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Query</p></td>
+<td><p><em>Query</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>SQL ステートメントまたは <strong>QueryDef</strong> オブジェクトの <strong>Name</strong> プロパティの値を示す文字列型 (<strong>String</strong>) の値。</p></td>
 </tr>
 <tr class="even">
-<td><p>選択肢</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>[設定] で指定された、クエリのデータ整合性の特性を表す定数 (または定数の組み合わせ)。</p></td>

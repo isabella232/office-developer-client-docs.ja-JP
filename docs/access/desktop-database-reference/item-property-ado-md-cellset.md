@@ -1,17 +1,17 @@
 ---
 title: Item プロパティ (ADO MD Cellset)
-TOCTitle: Item Property (ADO MD Cellset)
+TOCTitle: Item property (ADO MD Cellset)
 ms:assetid: 47510643-47af-0bfd-dc1f-ab984057bcd3
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249220(v=office.15)
 ms:contentKeyID: 48544595
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d53912b9c1b84b88929a00f9e74caf4c138a1410
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: fdf405ab5cd59e7ab4268e2fea870272836fb164
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946616"
+ms.locfileid: "25949608"
 ---
 # <a name="item-property-ado-md-cellset"></a>Item プロパティ (ADO MD Cellset)
 
@@ -25,15 +25,9 @@ ms.locfileid: "25946616"
 
 ## <a name="parameters"></a>パラメーター
 
-- *Positions*
-
-- セルを一意に指定するための値のバリアント型配列 ( **Variant** **Array** )。 *位置*には、次のいずれかを指定できます。
-    
-  - 位置番号の配列
-    
-  - メンバー名の配列
-    
-  - 位置を表す序数
+|パラメーター|説明|
+|:--------|:----------|
+|*Positions* |セルを一意に指定する値の**バリアント型の配列**です。 *位置*には、次のいずれかを指定できます。<br/><br/>位置番号の配列<br/>-メンバー名の配列<br/>序数の位置 |
 
 ## <a name="remarks"></a>解説
 

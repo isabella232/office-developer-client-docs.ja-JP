@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249345(v=office.15)
 ms:contentKeyID: 48545160
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f842ad1498e0f6752299cd3d16d8c558042a850e
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 21176e050c77b0f14fcb03b054e8a1ab692df7d5
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945783"
+ms.locfileid: "25949258"
 ---
 # <a name="recordset-sourcerecordset-properties-rds"></a>Recordset プロパティと SourceRecordset プロパティ (RDS)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -28,13 +27,10 @@ ms.locfileid: "25945783"
 
 ## <a name="parameters"></a>パラメーター
 
-- *DataControl*
-
-  - [RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。
-
-- *Recordset*
-
-  - **Recordset** オブジェクトを表すオブジェクト変数です。
+|パラメーター|説明|
+|:--------|:----------|
+|*DataControl* |[RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。|
+|*Recordset* |**Recordset** オブジェクトを表すオブジェクト変数です。|
 
 ## <a name="remarks"></a>解説
 

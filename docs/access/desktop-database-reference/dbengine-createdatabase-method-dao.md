@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052972
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7478a06df491f4c2254f8c72f0eacf9c4b19d49e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: e988eec4b3997bb24bf3a9aa0bb7faed1629b1f1
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927509"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950105"
 ---
 # <a name="dbenginecreatedatabase-method-dao"></a>DBEngine.CreateDatabase メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -30,7 +29,7 @@ ms.locfileid: "25927509"
 
 *式***DBEngine**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -49,13 +48,13 @@ ms.locfileid: "25927509"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>名前</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>作成するデータベース ファイルの名前は、255 文字までの文字列です。 完全なパスとファイル名を指定できます。 ネットワークでサポートされている場合は、指定することもネットワーク パスでは、次のように&quot; \\server1\share1\dir1\db1&quot;。 のみ、このメソッドを使用して Microsoft Access データベース ファイルを作成できます。</p></td>
 </tr>
 <tr class="even">
-<td><p>Locale</p></td>
+<td><p><em>Locale</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><ul>
@@ -64,11 +63,11 @@ ms.locfileid: "25927509"
 <li><p>dbLangSpanish &amp; &quot;; pwd = NewPassword&quot;</p></li>
 <li><p>既定の <em>locale</em> を使用し、パスワードを指定する場合は、単に <em>locale</em> 引数としてパスワード文字列を入力します。</p></li>
 <li><p>&quot;pwd = NewPassword&quot;</p></li>
-<li><p>[!メモ] パスワードには、大文字、小文字、数字、記号を組み合わせた複雑なものを使用してください。これらの文字を混在させたものになっていないパスワードは強固とはいえません。たとえば、Y6dh!et5 は安全性の高いパスワードです。House27 は推測されやすいパスワードです。また、高い安全性を保ちながらも、書き留めておかなくても覚えておくことができるパスワードを使用してください。</p></li>
+<li><p>大文字、小文字、数字、記号を組み合わせた強力なパスワードを使用してください。これらの文字を混在させていないパスワードは脆弱なパスワードです。Y6dh!et5 は強力なパスワードです。House27 は脆弱なパスワードです。強力なパスワードでありながら、書き留めておかなくても覚えておくことができるパスワードを使用してください。  </p></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>オプション</p></td>
+<td><p><em>Option</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>1 つ以上のオプションを示す定数 (または定数の組み合わせ)。オプションを組み合わせるには、対応する定数を追加します。</p></td>

@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250113(v=office.15)
 ms:contentKeyID: 48548136
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 747c2942478da323dfe036eb5cfe8a4bda56e45a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 0accdb33aecacdb6bb6c51a3ec1a39d2edb08ead
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25924702"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949447"
 ---
 # <a name="converttostring-method-rds"></a>ConvertToString メソッド (RDS)
-
 
 **適用されます**Access 2013、Office 2013。 
 
@@ -26,13 +25,10 @@ ms.locfileid: "25924702"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *DataFactory*
-
-  - [RDSServer.DataFactory](datafactory-object-rdsserver.md) オブジェクトを表すオブジェクト変数です。
-
-  - *Recordset*
-
-  - **Recordset** オブジェクトを表すオブジェクト変数です。
+|パラメーター|説明|
+|:--------|:----------|
+|*DataFactory* |[RDSServer.DataFactory](datafactory-object-rdsserver.md) オブジェクトを表すオブジェクト変数です。|
+|*Recordset* |**Recordset** オブジェクトを表すオブジェクト変数です。|
 
 ## <a name="remarks"></a>解説
 
@@ -42,8 +38,7 @@ ms.locfileid: "25924702"
 
 クライアントでは、リモート データ サービスで MIME 文字列を変換し、完全に機能する **Recordset** に戻すことができます。1 行が 1,024 バイト以下で行数が 400 行未満のデータは、適切に処理されます。BLOB データおよび大きな結果セットを HTTP でストリーム配信する場合は、このメソッドを使用しないでください。文字列はワイヤー圧縮されないため、オンライン向けに最適化されたテーブルグラム形式と比較して、HTTP で大きなデータ セットを転送するにはかなりの時間がかかります。テーブルグラム形式は、リモート データ サービスのネイティブ転送プロトコル形式として定義され、展開されています。
 
-
 > [!NOTE]
-> [!メモ] Active Server Pages を使用して、生成された MIME 文字列をクライアントの HTML ページに埋め込む場合、2.0 より前のバージョンの VBScript では、文字列のサイズが 32K に制限されていることに注意してください。この制限を超えると、エラーが返されます。.asp ファイルで MIME の埋め込みを使用するときは、クエリの適用範囲を比較的小さくするようにしてください。この問題を回避するには、[Microsoft ダウンロード センター](https://www.microsoft.com/downloads/en/default.aspx)から最新バージョンの VBScript をダウンロードしてください。
+> [!メモ] Active Server Pages を使用して、生成された MIME 文字列をクライアントの HTML ページに埋め込む場合、2.0 より前のバージョンの VBScript では、文字列のサイズが 32K に制限されていることに注意してください。この制限を超えると、エラーが返されます。.asp ファイルで MIME の埋め込みを使用するときは、クエリの適用範囲を比較的小さくするようにしてください。この問題を回避するには、[Microsoft ダウンロード センター](https://www.microsoft.com/download/default.aspx)から最新バージョンの VBScript をダウンロードしてください。
 
 

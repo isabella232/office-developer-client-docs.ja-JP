@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249267(v=office.15)
 ms:contentKeyID: 48544834
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5a9724d84bed6c89267aeb811936eeb49b49bc17
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: f9887551d4d8a141c8390764bcd23c98c59edc26
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929343"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950224"
 ---
 # <a name="filtercriterion-property-rds"></a>FilterCriterion プロパティ (RDS)
 
-
 **適用されます**Access 2013、Office 2013。
-
-
 
 フィルター値に使う評価演算子を表します。
 
@@ -28,13 +25,10 @@ ms.locfileid: "25929343"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *DataControl*
-
-  - [RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。
-
-  - *String*
-
-  - レコードに **FilterValue** の評価演算子を指定する文字列型 ( [String](filtervalue-property-rds.md) ) の値を指定します。 次のいずれかをすることができます: \<、 \<= \>、 \>=、=、または\< \>。
+|パラメーター|説明|
+|:--------|:----------|
+|*DataControl* |[RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。|
+|*String* |レコードに **FilterValue** の評価演算子を指定する文字列型 ( [String](filtervalue-property-rds.md) ) の値を指定します。 次のいずれかをすることができます: \<、 \<= \>、 \>=、=、または\< \>。|
 
 ## <a name="remarks"></a>解説
 

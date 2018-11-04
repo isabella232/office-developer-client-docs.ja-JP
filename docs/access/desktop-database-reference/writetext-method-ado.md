@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248963(v=office.15)
 ms:contentKeyID: 48543574
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5c0c4668141c0da6e5faddee009d2548f1ee2c53
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 6aecdbee544d3b30a6f6386c98d3083bb1167539
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926998"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949804"
 ---
 # <a name="writetext-method-ado"></a>WriteText メソッド (ADO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,13 +25,10 @@ ms.locfileid: "25926998"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Data*
-
-  - 書き込むテキストが格納された文字列型 ( **String** ) の値を指定します。
-
-  - *Options*
-
-  - 省略可能です。指定された文字列の末尾に行区切り文字を書き込むかどうかを指定する [StreamWriteEnum](streamwriteenum.md) 値を指定します。
+|パラメーター|説明|
+|:--------|:----------|
+|*Data* |書き込むテキストが格納された文字列型 ( **String** ) の値を指定します。|
+|*Options* |省略可能です。指定された文字列の末尾に行区切り文字を書き込むかどうかを指定する [StreamWriteEnum](streamwriteenum.md) 値を指定します。|
 
 ## <a name="remarks"></a>解説
 
@@ -42,8 +38,7 @@ ms.locfileid: "25926998"
 
 現在の [EOS](eos-property-ado.md) 位置を越えて書き込みを行うと、新しい文字がすべて格納できるように [Stream](https://msdn.microsoft.com/library/jj250128\(v=office.15\)) の **Size** が大きくなり、 **EOS** が **Stream** 内の新しい末尾バイトへと移動します。
 
-
 > [!NOTE]
-> <P><STRONG>WriteText</STRONG> メソッドは、テキスト ストリーム (<A href="type-property-ado-stream.md">Type</A> が <STRONG>adTypeText</STRONG>) で使用します。バイナリ ストリーム (<STRONG>Type</STRONG> が <STRONG>adTypeBinary</STRONG>) の場合は、<A href="write-method-ado.md">Write</A> を使用してください。</P>
+> **WriteText** メソッドは、テキスト ストリーム ([Type](type-property-ado-stream.md) が **adTypeText**) で使用します。バイナリ ストリーム (**Type** が **adTypeBinary**) の場合は、[Write](write-method-ado.md) を使用してください。
 
 

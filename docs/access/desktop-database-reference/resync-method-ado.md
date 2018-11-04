@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250251(v=office.15)
 ms:contentKeyID: 48548717
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 73633c38bb21a794bc2137554f0341f93d9f265d
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: bfcb392fc9b89f614a8372b888db794ee4a1eb06
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931044"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950181"
 ---
 # <a name="resync-method-ado"></a>Resync メソッド (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
-
 
 現在の [Recordset](recordset-object-ado.md) オブジェクト、または [Record](fields-collection-ado.md) オブジェクトの [Fields](record-object-ado.md) コレクションのデータを、基になるデータベースのデータで更新します。
 
@@ -30,17 +27,14 @@ ms.locfileid: "25931044"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *AffectRecords*
-
-  - 省略可能です。 [Resync](affectenum.md) メソッドで操作するレコードの数を決定する **AffectEnum** 値を指定します。既定値は **adAffectAll** です。この値は、 **Record** オブジェクトの **Fields** コレクションに対する **Resync** メソッドでは使用できません。
-
-  - *ResyncValues*
-
-  - 省略可能です。基になる値を上書きするかどうかを指定する [ResyncEnum](resyncenum.md) 値を指定します。既定値は **adResyncAllValues** です。
+|パラメーター|説明|
+|:--------|:----------|
+|*AffectRecords* |省略可能です。 [Resync](affectenum.md) メソッドで操作するレコードの数を決定する **AffectEnum** 値を指定します。既定値は **adAffectAll** です。この値は、 **Record** オブジェクトの **Fields** コレクションに対する **Resync** メソッドでは使用できません。|
+|*ResyncValues* |省略可能です。基になる値を上書きするかどうかを指定する [ResyncEnum](resyncenum.md) 値を指定します。既定値は **adResyncAllValues** です。|
 
 ## <a name="remarks"></a>解説
 
-**Recordset**
+### <a name="recordset"></a>Recordset
 
 **Resync** メソッドは、現在の **Recordset** のレコードを基になるデータベースと再同期させる場合に使用します。このメソッドは、静的または前方専用のカーソルを使用していて、基になるデータベースの変更を確認する場合に役立ちます。
 
@@ -52,7 +46,7 @@ ms.locfileid: "25931044"
 
 ダイナミック プロパティ [Unique Table](unique-table-unique-schema-unique-catalog-properties-dynamic-ado.md) および [Resync Command](resync-command-property-dynamic-ado.md) が設定されていて、 **Recordset** が複数のテーブルに対する JOIN 操作の実行結果である場合、 **Resync** メソッドは、 **Unique Table** プロパティで指定されているテーブルに対してのみ、 **Resync Command** プロパティで指定されているコマンドを実行します。
 
-**Fields**
+### <a name="fields"></a>フィールド
 
 **Resync** メソッドは、 **Record** オブジェクトの **Fields** コレクションの値を、基になるデータ ソースと再同期させる場合に使用します。 [Count](count-property-ado.md) プロパティは、このメソッドによる影響を受けません。
 

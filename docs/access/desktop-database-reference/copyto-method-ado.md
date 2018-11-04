@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248958(v=office.15)
 ms:contentKeyID: 48543558
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a17e74e1e3483b7ad2a70c5444503234cff5be12
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: a27d8e98d6768ace36d7c66c95191b0d1484e86a
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920250"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949902"
 ---
 # <a name="copyto-method-ado"></a>CopyTo メソッド (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 [Stream](type-property-ado-stream.md) オブジェクトから、指定した文字数またはバイト数 ( [Type](stream-object-ado.md) によって決まる) のデータを別の **Stream** オブジェクトにコピーします。
 
@@ -27,18 +25,12 @@ ms.locfileid: "25920250"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *DestStream*
+|パラメーター|説明|
+|:--------|:----------|
+|*DestStream* |開いている **Stream** オブジェクトへの参照を含むオブジェクト変数の値を指定します。*DestStream* で指定した **Stream** に現在の **Stream** がコピーされます。コピー先の **Stream** は既に開かれている必要があります。開かれていない場合は、実行時エラーが発生します。
 
-  - 開いている **Stream** オブジェクトへの参照を含むオブジェクト変数の値を指定します。*DestStream* で指定した **Stream** に現在の **Stream** がコピーされます。コピー先の **Stream** は既に開かれている必要があります。開かれていない場合は、実行時エラーが発生します。
-
-   
-
-    > [!NOTE]
-    > *DestStream*パラメーターはありません、 **Stream**オブジェクトのプロキシ クライアントをリモート化不可能な**ストリーム**オブジェクトのプライベート インターフェイスへのアクセスが必要です。
-
-  - *NumChars*
-
-  - 省略可能です。 コピー元 **Stream** の現在の位置からコピー先の **Stream** にコピーするバイト数または文字数を指定する整数型 ( **Integer** ) の値を指定します。 既定値は、-1 で、すべての文字またはバイトを[eos](eos-property-ado.md)の現在の位置からコピーされるように指定します。
+<br/><br/>**注**: *DestStream*パラメーターはありません、 **Stream**オブジェクトのプロキシ クライアントをリモート化不可能な**ストリーム**オブジェクトのプライベート インターフェイスへのアクセスが必要です。|
+|*NumChars* |省略可能です。 コピー元 **Stream** の現在の位置からコピー先の **Stream** にコピーするバイト数または文字数を指定する整数型 ( **Integer** ) の値を指定します。 既定値は、-1 で、すべての文字またはバイトを[eos](eos-property-ado.md)の現在の位置からコピーされるように指定します。|
 
 ## <a name="remarks"></a>解説
 

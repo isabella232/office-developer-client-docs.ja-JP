@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249611(v=office.15)
 ms:contentKeyID: 48546208
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4148baa827b42f34d9b4d15f2f94df2667959b0c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: c8ac4ab83062d9297483b7ee4883ab0b289af227
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928314"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949832"
 ---
 # <a name="willconnect-event-ado"></a>WillConnect イベント (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 **WillConnect** イベントは、接続が開始される前に呼び出されます。
 
@@ -27,33 +25,14 @@ WillConnect*接続文字列*、*ユーザー Id*、*パスワード*、*オプ�
 
 ## <a name="parameters"></a>パラメーター
 
-  - *ConnectionString*
-
-  - 保留中の接続の接続情報が格納された文字列型 ( **String** ) の値です。
-
-  - *ユーザー Id*
-
-  - 保留中の接続のユーザー名が格納された文字列型 ( **String** ) の値です。
-
-  - *Password*
-
-  - 保留中の接続のパスワードが格納された文字列型 ( **String** ) の値です。
-
-  - *Options*
-
-  - プロバイダーが *ConnectionString* を評価する方法を示す長整数型 (**Long**) の値です。オプションは **adAsyncOpen** のみ指定できます。
-
-  - *adStatus*
-
-  - [EventStatusEnum](eventstatusenum.md)
-    
-    このイベントが呼び出されたとき、既定では、このパラメーターは **adStatusOK** に設定されます。保留中の操作の取り消しをイベントが要求できない場合、このパラメーターは **adStatusCantDeny** に設定されます。
-    
-    このイベントから制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。この通知の取り消しを実行する接続操作を要求するには、このパラメーターを **adStatusCancel** に設定します。
-
-  - *pConnection*
-
-  - このイベント通知が適用される [Connection](connection-object-ado.md) オブジェクト。 **WillConnect** イベント ハンドラーで **Connection** のパラメーターが変更されても、 **Connection** には影響はありません。
+|パラメーター|説明|
+|:--------|:----------|
+|*ConnectionString* |保留中の接続の接続情報が格納された文字列型 ( **String** ) の値です。|
+|*ユーザー Id* |保留中の接続のユーザー名が格納された文字列型 ( **String** ) の値です。|
+|*Password* |保留中の接続のパスワードが格納された文字列型 ( **String** ) の値です。|
+|*Options* |プロバイダーが *ConnectionString* を評価する方法を示す長整数型 (**Long**) の値です。オプションは **adAsyncOpen** のみ指定できます。|
+|*adStatus* |[EventStatusEnum](eventstatusenum.md)。 このイベントが呼び出されたとき、既定では、このパラメーターは **adStatusOK** に設定されます。 保留中の操作の取り消しをイベントが要求できない場合、このパラメーターは **adStatusCantDeny** に設定されます。<br/><br/>このイベントから制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。この通知の取り消しを実行する接続操作を要求するには、このパラメーターを **adStatusCancel** に設定します。|
+|*pConnection* |このイベント通知が適用される [Connection](connection-object-ado.md) オブジェクト。 **WillConnect** イベント ハンドラーで **Connection** のパラメーターが変更されても、 **Connection** には影響はありません。|
 
 ## <a name="remarks"></a>解説
 

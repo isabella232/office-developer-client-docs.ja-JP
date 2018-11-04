@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052968
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 59e5cc34eb6325b6151ab053f9c870a999bd94aa
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 8a5e220903a7404689b7fb4088cf10164333d67e
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927894"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950043"
 ---
 # <a name="databasecreatetabledef-method-dao"></a>Database.CreateTableDef メソッド (DAO)
 
@@ -29,7 +29,7 @@ ms.locfileid: "25927894"
 
 *式***データベース**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -48,25 +48,25 @@ ms.locfileid: "25927894"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>名前</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>新しい <strong>TableDef</strong> オブジェクトの一意の名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。有効な <strong>TableDef</strong> 名の詳細については、<strong><a href="tabledef-name-property-dao.md">Name</a></strong> プロパティを参照してください。</p></td>
 </tr>
 <tr class="even">
-<td><p>属性</p></td>
+<td><p><em>Attributes</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>新しい <strong>TableDef</strong> オブジェクトの 1 つ以上の特性を示す定数 (または定数の組み合わせ)。詳細については、 <strong><a href="tabledef-attributes-property-dao.md">Attributes</a></strong> プロパティを参照してください。  </p></td>
 </tr>
 <tr class="odd">
-<td><p>SourceTableName</p></td>
+<td><p><em>SourceTableName</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>データの元のソースである外部データベースのテーブルの名前を格納している、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。source 文字列は、新しい <strong>TableDef</strong> オブジェクトの <strong><a href="tabledef-sourcetablename-property-dao.md">SourceTableName</a></strong> プロパティの設定値になります。</p></td>
 </tr>
 <tr class="even">
-<td><p>ブラウザでの</p></td>
+<td><p><em>Connect</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>開いているデータベース、パススルー クエリで使用されるデータベース、またはリンク テーブルのソースに関する情報を格納している、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。有効な接続文字列の詳細については、<strong><a href="tabledef-connect-property-dao.md">Connect</a></strong> プロパティを参照してください。</p></td>
@@ -75,7 +75,7 @@ ms.locfileid: "25927894"
 </table>
 
 
-### <a name="return-value"></a>戻り値
+## <a name="return-value"></a>戻り値
 
 TableDef
 

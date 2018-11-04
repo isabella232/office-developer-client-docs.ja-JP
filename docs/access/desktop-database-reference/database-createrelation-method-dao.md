@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052969
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 45d2835f4745a26d60c57c950ca1a48a9b47cd77
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 2a1ad7798fc6236f95d31c18cd864fe64e7a3fd8
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927007"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949929"
 ---
 # <a name="databasecreaterelation-method-dao"></a>Database.CreateRelation メソッド (DAO)
 
@@ -29,7 +29,7 @@ ms.locfileid: "25927007"
 
 *式***データベース**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -48,25 +48,25 @@ ms.locfileid: "25927007"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>名前</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>新しい <strong>Relation</strong> オブジェクトの一意の名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。有効な <strong>Relation</strong> 名の詳細については、<strong><a href="connection-name-property-dao.md">Name</a></strong> プロパティを参照してください。</p></td>
 </tr>
 <tr class="even">
-<td><p>テーブル</p></td>
+<td><p><em>Table</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>リレーションにおける主テーブルの名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。<strong>Relation</strong> オブジェクトを追加する前にこのテーブルが存在していないと、実行時エラーが発生します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>外部テーブル</p></td>
+<td><p><em>外部テーブル</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>リレーションにおける外部キー側のテーブルの名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。<strong>Relation</strong> オブジェクトを追加する前にこのテーブルが存在していないと、実行時エラーが発生します。</p></td>
 </tr>
 <tr class="even">
-<td><p>属性</p></td>
+<td><p><em>Attributes</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>リレーションシップの種類に関する情報を格納している定数 (または定数の組み合わせ)。詳細については、<strong><a href="field-attributes-property-dao.md">Attributes</a></strong> プロパティを参照してください。</p></td>
@@ -75,7 +75,7 @@ ms.locfileid: "25927007"
 </table>
 
 
-### <a name="return-value"></a>戻り値
+## <a name="return-value"></a>戻り値
 
 Relation
 

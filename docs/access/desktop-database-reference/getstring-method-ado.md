@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250242(v=office.15)
 ms:contentKeyID: 48548693
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2c6524c52ad3c4821d5b7987415f8a9c2dcb1b1d
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 2b4926b3568d6c7289ca9d3158a8723e016ed344
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919025"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949674"
 ---
 # <a name="getstring-method-ado"></a>GetString メソッド (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 [Recordset](recordset-object-ado.md) を文字列として返します。
 
@@ -31,25 +29,13 @@ ms.locfileid: "25919025"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *StringFormat*
-
-  - **Recordset** を文字列に変換する方法を示す [StringFormatEnum](stringformatenum.md) 値を指定します。*RowDelimiter*、*ColumnDelimiter*、および *NullExpr* パラメーターは、*StringFormat* に **adClipString** を指定した場合にのみ使用できます。
-
-  - *NumRows*
-
-  - 省略可能です。 **Recordset** から変換する行数を指定します。 *NumRows*を指定しない場合、または**レコード セット**内の行の合計数より大きい場合は、**レコード セット**内のすべての行は変換されます。
-
-  - *";"と*
-
-  - 省略可能です。列間に使用する区切り記号を指定し、指定しないとタブ文字が使用されます。
-
-  - *RowDelimiter*
-
-  - 省略可能です。行間に使用する区切り記号を指定し、指定しないとキャリッジ リターン文字が使用されます。
-
-  - *NullExpr*
-
-  - 省略可能です。Null 値の代わりに使用する表現を指定し、指定しないと空文字列が使用されます。
+|パラメーター|説明|
+|:--------|:----------|
+|*StringFormat* |**Recordset** を文字列に変換する方法を示す [StringFormatEnum](stringformatenum.md) 値を指定します。*RowDelimiter*、*ColumnDelimiter*、および *NullExpr* パラメーターは、*StringFormat* に **adClipString** を指定した場合にのみ使用できます。|
+|*NumRows* |省略可能です。 **Recordset** から変換する行数を指定します。 *NumRows*を指定しない場合、または**レコード セット**内の行の合計数より大きい場合は、**レコード セット**内のすべての行は変換されます。|
+|*";"と* |省略可能です。列間に使用する区切り記号を指定し、指定しないとタブ文字が使用されます。|
+|*RowDelimiter* |省略可能です。行間に使用する区切り記号を指定し、指定しないとキャリッジ リターン文字が使用されます。|
+|*NullExpr* |省略可能です。Null 値の代わりに使用する表現を指定し、指定しないと空文字列が使用されます。|
 
 ## <a name="remarks"></a>解説
 

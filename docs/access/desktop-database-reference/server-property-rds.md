@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248926(v=office.15)
 ms:contentKeyID: 48543448
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 062a4a319073ccf8f2810205973c11a845e2cc6f
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 492602d7150f3080df329d30a38e3af51755cf0f
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925234"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949503"
 ---
 # <a name="server-property-rds"></a>Server プロパティ (RDS)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -42,17 +41,11 @@ ms.locfileid: "25925234"
 
 ## <a name="parameters"></a>パラメーター
 
-*awebsrvr*または*コンピューター名*
-
-- サーバーがリモート コンピューター上にある場合は、インターネット パス、イントラネット パス、またはコンピューター名を含む文字列型 ( **String** ) の値。サーバーがローカル コンピューター上にある場合は空の文字列。
-
-*port*
-
-- 省略可能。 IIS サーバーへの接続に使用されるポートです。 Internet Explorer で、ポート番号を設定 ([**ツール**] メニューで、 **[インターネット オプション**] をクリックし、[**接続**] タブを選択し、) または IIS で。
-
-*DataControl*
-
-- **RDS.DataControl** オブジェクトを表すオブジェクト変数を指定します。
+|パラメーター|説明|
+|:--------|:----------|
+|*awebsrvr*または*コンピューター名* |サーバーがリモート コンピューター上にある場合は、インターネット パス、イントラネット パス、またはコンピューター名を含む文字列型 ( **String** ) の値。サーバーがローカル コンピューター上にある場合は空の文字列。|
+|*port* |省略可能。 IIS サーバーへの接続に使用されるポートです。 Internet Explorer で、ポート番号を設定 ([**ツール**] メニューで、 **[インターネット オプション**] をクリックし、[**接続**] タブを選択し、) または IIS で。|
+|*DataControl* |**RDS.DataControl** オブジェクトを表すオブジェクト変数を指定します。|
 
 ## <a name="remarks"></a>解説
 

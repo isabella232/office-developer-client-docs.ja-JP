@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250294(v=office.15)
 ms:contentKeyID: 48548893
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c0a62618eef0a829db84de050aa07c2c645636e5
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 7501f7607dbee558a67dd0e11d7f2498874f8870
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929439"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950231"
 ---
 # <a name="update-method-ado"></a>Update メソッド (ADO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -28,27 +27,24 @@ ms.locfileid: "25929439"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Fields*
-
-  - 省略可能です。変更する単一のフィールドの名前を表すバリアント型 ( **Variant** ) の値、または複数のフィールドの名前か順序を表すバリアント型 ( **Variant** ) の配列を指定します。
-
-  - *Values*
-
-  - 省略可能です。新しいレコードでの単一のフィールドの値を表すバリアント型 ( **Variant** ) の値、または複数のフィールドの値を表すバリアント型 ( **Variant** ) の配列を指定します。
+|パラメーター|説明|
+|:--------|:----------|
+|*Fields* |省略可能です。変更する単一のフィールドの名前を表すバリアント型 ( **Variant** ) の値、または複数のフィールドの名前か順序を表すバリアント型 ( **Variant** ) の配列を指定します。|
+|*Values* |省略可能です。新しいレコードでの単一のフィールドの値を表すバリアント型 ( **Variant** ) の値、または複数のフィールドの値を表すバリアント型 ( **Variant** ) の配列を指定します。|
 
 ## <a name="remarks"></a>解説
 
-**Recordset**
+### <a name="recordset"></a>Recordset
 
 **Update** メソッドを使用すると、 **AddNew** メソッドを呼び出したか、または既存レコードのいずれかのフィールドの値を変更した時点以降に [Recordset](addnew-method-ado.md) オブジェクトのカレント レコードに加えた変更がすべて保存されます。 **Recordset** オブジェクトが更新をサポートしている必要があります。
 
 フィールドの値を設定するには、次のいずれかを行います。
 
-  - [Field](field-object-ado.md) オブジェクトの [Value](value-property-ado.md) プロパティに値を代入してから、 **Update** メソッドを呼び出します。
+- [Field](field-object-ado.md) オブジェクトの [Value](value-property-ado.md) プロパティに値を代入してから、 **Update** メソッドを呼び出します。
 
-  - フィールド名と値を **Update** 呼び出しで引数として渡します。
+- フィールド名と値を **Update** 呼び出しで引数として渡します。
 
-  - フィールド名の配列と値の配列を **Update** 呼び出しで渡します。
+- フィールド名の配列と値の配列を **Update** 呼び出しで渡します。
 
 フィールドと値の配列を使用する場合は、両方の配列の要素の数を同じにする必要があります。また、フィールド名の順序がフィールドの値の順序と一致している必要があります。フィールドと値の数と順序が一致していないと、エラーが発生します。
 
@@ -58,7 +54,7 @@ ms.locfileid: "25929439"
 
 カレント レコードは、 **Update** メソッドを呼び出した後もカレントのままです。
 
-**Record**
+### <a name="record"></a>Record
 
 **Update** メソッドは、 [Record](fields-collection-ado.md) オブジェクトの **Fields** コレクションへのフィールドの追加、削除、および更新を完了させます。
 

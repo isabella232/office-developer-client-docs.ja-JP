@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249603(v=office.15)
 ms:contentKeyID: 48546167
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 89ca397c4e95dd6f18de41862e9383f77fe14aa8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 36babff0c6de48e0539375caaad367698906e3fd
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928839"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950189"
 ---
 # <a name="endofrecordset-event-ado"></a>EndOfRecordset イベント (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
-
 
 **EndOfRecordset** イベントは、 [Recordset](recordset-object-ado.md) の末尾を越える行に移動しようとすると呼び出されます。
 
@@ -28,21 +25,11 @@ EndOfRecordset*fMoreData*、 *adStatus*、 *pRecordset*
 
 ## <a name="parameters"></a>パラメーター
 
-  - *fMoreData*
-
-  - A**バリアント\_BOOL**値をバリアント型に設定\_true の場合、複数の行は、**レコード セット**に追加されていることを示します。
-
-  - *adStatus*
-
-  - [EventStatusEnum](eventstatusenum.md)
-    
-    **EndOfRecordset** が呼び出されたとき、イベントを発生させた操作が成功した場合、このパラメーターは **adStatusOK** に設定されます。イベントを発生させた操作の取り消しをこのイベントが要求できない場合、このパラメーターは **adStatusCantDeny** に設定されます。
-    
-    **EndOfRecordset** から制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。
-
-  - *pRecordset*
-
-  - **Recordset** オブジェクト。このイベントが発生した **Recordset** オブジェクトです。
+|パラメーター|説明|
+|:--------|:----------|
+|*fMoreData* |A**バリアント\_BOOL**値をバリアント型に設定\_true の場合、複数の行は、**レコード セット**に追加されていることを示します。|
+|*adStatus* |[EventStatusEnum](eventstatusenum.md)。 **EndOfRecordset** が呼び出されたとき、イベントを発生させた操作が成功した場合、このパラメーターは **adStatusOK** に設定されます。 イベントを発生させた操作の取り消しをこのイベントが要求できない場合、このパラメーターは **adStatusCantDeny** に設定されます。<br/><br/>**EndOfRecordset** から制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。|
+|*pRecordset* | **Recordset** オブジェクト。このイベントが発生した **Recordset** オブジェクトです。|
 
 ## <a name="remarks"></a>解説
 

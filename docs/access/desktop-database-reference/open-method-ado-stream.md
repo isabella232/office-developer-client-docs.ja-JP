@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250275(v=office.15)
 ms:contentKeyID: 48548833
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cc0f12e05e65dd24b73dfcf5702fbe09169ba397
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 2c45c10ae75688eb1965307ba8b2fb67c752f81f
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944838"
+ms.locfileid: "25949825"
 ---
 # <a name="open-method-ado-stream"></a>Open メソッド (ADO Stream)
 
@@ -27,25 +27,13 @@ ms.locfileid: "25944838"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Source*
-
-  - 省略可能です。 **ストリーム**のデータのソースを指定する**バリアント型**の値です。 *ソース*に、電子メールまたはファイル システムのように、既知のツリー構造内の既存のノードを指す絶対 URL 文字列が含まれている可能性があります。 URL キーワードを使用して URL を指定する必要があります (「URL://*サーバー*の*設定*を =/*フォルダー*"). 代わりに、*ソース*には、**レコード**に関連付けられた既定ストリームを開きの既に開いている[Record](record-object-ado.md)オブジェクトへの参照が含まれて可能性があります。 *ソース*が指定されていない場合、**ストリーム**は、既定でない基になるソースに関連付けられています。 URL スキームと、関連付けられているプロバイダーの詳細については、[絶対パスと相対 Url](absolute-and-relative-urls.md)を参照してください。
-
-  - *Mode*
-
-  - 省略可能です。 結果の [Stream](connectmodeenum.md) に対するアクセス モード (読み取り/書き込み、読み取り専用など) を **ConnectModeEnum** 値で指定します。 既定値は **adModeUnknown** です。 アクセス モードの詳細については、「 [Mode プロパティ (ADO)](mode-property-ado.md)」を参照してください。 *モード*を指定しない場合は、ソース オブジェクトによって継承されます。 たとえば、ソース **Record** が読み取り専用モードで開かれている場合、既定では、その **Stream** も読み取り専用モードで開かれます。
-
-  - *OpenOptions*
-
-  - 省略可能です。[StreamOpenOptionsEnum](streamopenoptionsenum.md) 値を指定します。既定値は **adOpenStreamUnspecified** です。
-
-  - *UserName*
-
-  - 省略可能です。必要に応じて、 **Stream** オブジェクトにアクセスするためのユーザー ID を含む、文字列型 ( **String** ) の値を指定します。
-
-  - *Password*
-
-  - 省略可能です。必要に応じて、 **Stream** オブジェクトにアクセスするためのパスワードを含む、文字列型 ( **String** ) の値を指定します。
+|パラメーター|説明|
+|:--------|:----------|
+|*Source* |省略可能です。 **ストリーム**のデータのソースを指定する**バリアント型**の値です。 *ソース*には、電子メールまたはファイル システムのように、既知のツリー構造内の既存のノードを指す絶対 URL 文字列が含まれて可能性があります。 URL キーワードを使用して URL を指定する必要があります (「URL://*サーバー*の*設定*を =/*フォルダー*"). 代わりに、*ソース*には、**レコード**に関連付けられた既定ストリームを開きの既に開いている[Record](record-object-ado.md)オブジェクトへの参照が含まれて可能性があります。 *ソース*が指定されていない場合、**ストリーム**は、既定でない基になるソースに関連付けられています。 URL スキームと、関連付けられているプロバイダーの詳細については、[絶対と相対 Url](absolute-and-relative-urls.md)を参照してください。|
+|*Mode* |省略可能です。 結果の [Stream](connectmodeenum.md) に対するアクセス モード (読み取り/書き込み、読み取り専用など) を **ConnectModeEnum** 値で指定します。 既定値は **adModeUnknown** です。 アクセス モードの詳細については、「 [Mode プロパティ (ADO)](mode-property-ado.md)」を参照してください。 *モード*を指定しない場合は、ソース オブジェクトによって継承されます。 たとえば、ソース **Record** が読み取り専用モードで開かれている場合、既定では、その **Stream** も読み取り専用モードで開かれます。|
+|*OpenOptions* |省略可能です。[StreamOpenOptionsEnum](streamopenoptionsenum.md) 値を指定します。既定値は **adOpenStreamUnspecified** です。|
+|*UserName* |省略可能です。必要に応じて、 **Stream** オブジェクトにアクセスするためのユーザー ID を含む、文字列型 ( **String** ) の値を指定します。|
+|*Password* |省略可能です。必要に応じて、 **Stream** オブジェクトにアクセスするためのパスワードを含む、文字列型 ( **String** ) の値を指定します。|
 
 ## <a name="remarks"></a>解説
 

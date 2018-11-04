@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249499(v=office.15)
 ms:contentKeyID: 48545767
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 73e6240b92a34a6ff1d215cd3211a844f10fe766
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: e4afbb31fb95aeea66d9cf93624b95c8796e2d25
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25868310"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949363"
 ---
 # <a name="item-property-ado"></a>Item プロパティ (ADO)
 
@@ -29,9 +29,9 @@ ms.locfileid: "25868310"
 
 ## <a name="parameters"></a>パラメーター
 
-- *Index*
-
-- コレクション内のオブジェクトの名前または序数に評価されるバリアント型 ( **Variant** ) の式を指定します。
+|パラメーター|説明|
+|:--------|:----------|
+|*Index* |コレクション内のオブジェクトの名前または序数に評価されるバリアント型 ( **Variant** ) の式を指定します。|
 
 ## <a name="remarks"></a>解説
 

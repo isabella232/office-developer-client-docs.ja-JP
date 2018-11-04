@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249851(v=office.15)
 ms:contentKeyID: 48547162
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3177e27d3485d8a4ec6adafaa03d968fc15fa62a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 4488b18d6c3ab603a84822bfeea732931746b3be
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925961"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949951"
 ---
 # <a name="willchangerecord-and-recordchangecomplete-events-ado"></a>WillChangeRecord イベントと RecordChangeComplete イベント (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 **WillChangeRecord** イベントは、 [Recordset](recordset-object-ado.md) の 1 つ以上のレコード (行) が変更される前に呼び出されます。 **RecordChangeComplete** イベントは、1 つ以上のレコードが変更された後に呼び出されます。
 
@@ -29,33 +27,13 @@ RecordChangeComplete*adReason*、 *cRecords*、 *pError*、 *adStatus*、 *pReco
 
 ## <a name="parameters"></a>パラメーター
 
-  - *adReason*
-
-  - このイベントの原因を示す [EventReasonEnum](eventreasonenum.md) 値です。値は **adRsnAddNew** 、 **adRsnDelete** 、 **adRsnUpdate** 、 **adRsnUndoUpdate** 、 **adRsnUndoAddNew** 、 **adRsnUndoDelete** 、または **adRsnFirstChange** です。
-
-  - *cRecords*
-
-  - 変更される (影響を受ける) レコードの数を示す長整数型 ( **Long** ) の値です。
-
-  - *pError*
-
-  - [Error](error-object-ado.md) オブジェクトです。 *adStatus* の値が **adStatusErrorsOccurred** の場合は、発生したエラーを示します。それ以外の場合は設定されません。
-
-  - *adStatus*
-
-  - [EventStatusEnum](eventstatusenum.md)
-    
-    **WillChangeRecord** が呼び出されたとき、イベントを発生させた操作が成功した場合、このパラメーターは **adStatusOK** に設定されます。保留中の操作の取り消しをこのイベントが要求できない場合、このパラメーターは **adStatusCantDeny** に設定されます。
-    
-    **RecordChangeComplete** が呼び出されたとき、このパラメーターは、イベントを発生させた操作が成功した場合は **adStatusOK** 、失敗した場合は **adStatusErrorsOccurred** に設定されます。
-    
-    **WillChangeRecord** から制御が戻る前に、このイベントを発生させた操作の取り消しを要求するには、このパラメーターを **adStatusCancel** に設定し、後続の通知が行われないようにするには、このパラメーターを adStatusUnwantedEvent に設定します。
-    
-    **RecordChangeComplete** から制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。
-
-  - *pRecordset*
-
-  - **Recordset** オブジェクト。このイベントが発生した **Recordset** オブジェクトです。
+|パラメーター|説明|
+|:--------|:----------|
+|*adReason* |このイベントの原因を示す [EventReasonEnum](eventreasonenum.md) 値です。値は **adRsnAddNew** 、 **adRsnDelete** 、 **adRsnUpdate** 、 **adRsnUndoUpdate** 、 **adRsnUndoAddNew** 、 **adRsnUndoDelete** 、または **adRsnFirstChange** です。|
+|*cRecords* |変更される (影響を受ける) レコードの数を示す長整数型 ( **Long** ) の値です。|
+|*pError* |[Error](error-object-ado.md) オブジェクトです。 *adStatus* の値が **adStatusErrorsOccurred** の場合は、発生したエラーを示します。それ以外の場合は設定されません。|
+|*adStatus* |[EventStatusEnum](eventstatusenum.md)。 **WillChangeRecord** が呼び出されたとき、イベントを発生させた操作が成功した場合、このパラメーターは **adStatusOK** に設定されます。 保留中の操作の取り消しをこのイベントが要求できない場合、このパラメーターは **adStatusCantDeny** に設定されます。 <br/><br/>**RecordChangeComplete** が呼び出されたとき、このパラメーターは、イベントを発生させた操作が成功した場合は **adStatusOK** 、失敗した場合は **adStatusErrorsOccurred** に設定されます。 <br/><br/>**WillChangeRecord** から制御が戻る前に、このイベントを発生させた操作の取り消しを要求するには、このパラメーターを **adStatusCancel** に設定し、後続の通知が行われないようにするには、このパラメーターを adStatusUnwantedEvent に設定します。 <br/><br/>**RecordChangeComplete** から制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。|
+|*pRecordset* |**Recordset** オブジェクト。このイベントが発生した **Recordset** オブジェクトです。|
 
 ## <a name="remarks"></a>解説
 

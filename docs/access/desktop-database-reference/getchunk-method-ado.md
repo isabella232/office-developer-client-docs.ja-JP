@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248979(v=office.15)
 ms:contentKeyID: 48543629
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ea7346c8c1b97ef16af71f56aafbbf777635d906
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 27d6f2c9884441042d67615072738c7762f4f789
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937786"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949916"
 ---
 # <a name="getchunk-method-ado"></a>GetChunk メソッド (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 サイズの大きいテキスト データやバイナリ データの [Field](field-object-ado.md) オブジェクトから、内容の全体または一部を返します。
 
@@ -31,9 +29,9 @@ ms.locfileid: "25937786"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Size*
-
-  - 取得するバイト数または文字数と等しい長整数型 ( **Long** ) の式を指定します。
+|パラメーター|説明|
+|:--------|:----------|
+|*Size* |取得するバイト数または文字数と等しい長整数型 ( **Long** ) の式を指定します。|
 
 ## <a name="remarks"></a>解説
 

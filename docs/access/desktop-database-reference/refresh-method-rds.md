@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249668(v=office.15)
 ms:contentKeyID: 48546450
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b52d6a4250f19709dd72dbedd516c9a88c0522c7
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: d49b91f129a0661c5c81243bb405de9088b1e06d
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926291"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950119"
 ---
 # <a name="refresh-method-rds"></a>Refresh メソッド (RDS)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,9 +25,9 @@ ms.locfileid: "25926291"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *DataControl*
-
-  - [RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。
+|パラメーター|説明|
+|:--------|:----------|
+|*DataControl* |[RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。|
 
 ## <a name="remarks"></a>解説
 

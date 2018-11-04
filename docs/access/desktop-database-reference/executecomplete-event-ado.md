@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249219(v=office.15)
 ms:contentKeyID: 48544589
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 58683a8721ede0e7535b159f095b44bc6db6c1b7
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 49ab3d51deae86a02a486da224459bcfaaf057b2
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926732"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949679"
 ---
 # <a name="executecomplete-event-ado"></a>ExecuteComplete イベント (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
-
 
 **ExecuteComplete** イベントは、コマンドが実行を終了した後に呼び出されます。
 
@@ -28,31 +25,14 @@ ExecuteComplete*RecordsAffected*、 *pError*、 *adStatus*、 *pCommand*、 *pRe
 
 ## <a name="parameters"></a>パラメーター
 
-  - *RecordsAffected*
-
-  - コマンドによって影響を受けるレコードの数を表す長整数型 ( **Long** ) の値です。
-
-  - *pError*
-
-  - [Error](error-object-ado.md) オブジェクトです。 **adStatus** の値が **adStatusErrorsOccurred** の場合は、発生したエラーを示します。それ以外の場合は設定されません。
-
-  - *adStatus*
-
-  - [EventStatusEnum](eventstatusenum.md)
-    
-    このイベントから制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。
-
-  - *pCommand*
-
-  - 実行された [Command](command-object-ado.md) オブジェクトです。明示的に **Command** を作成せずに **Connection.Execute** または **Recordset.Open** を呼び出しても **Command** オブジェクトが格納されます (この場合、 **Command** オブジェクトは ADO によって内部的に作成されます)。
-
-  - *pRecordset*
-
-  - 実行されたコマンドの結果の [Recordset](recordset-object-ado.md) オブジェクトです。この **Recordset** は空の場合もあります。この Recordset オブジェクトは、このイベント ハンドラーから破棄しないでください。破棄した場合には、ADO が存在しないオブジェクトにアクセスしようとしたときにアクセス違反が発生します。
-
-  - *pConnection*
-
-  - [Connection](connection-object-ado.md) オブジェクトです。操作を実行したときの接続です。
+|パラメーター|説明|
+|:--------|:----------|
+|*RecordsAffected* |コマンドによって影響を受けるレコードの数を表す長整数型 ( **Long** ) の値です。|
+|*pError* |[Error](error-object-ado.md) オブジェクトです。 **adStatus** の値が **adStatusErrorsOccurred** の場合は、発生したエラーを示します。それ以外の場合は設定されません。|
+|*adStatus* |[EventStatusEnum](eventstatusenum.md)。 このイベントから制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。|
+|*pCommand* |実行された [Command](command-object-ado.md) オブジェクトです。明示的に **Command** を作成せずに **Connection.Execute** または **Recordset.Open** を呼び出しても **Command** オブジェクトが格納されます (この場合、 **Command** オブジェクトは ADO によって内部的に作成されます)。|
+|*pRecordset* |実行されたコマンドの結果の [Recordset](recordset-object-ado.md) オブジェクトです。この **Recordset** は空の場合もあります。この Recordset オブジェクトは、このイベント ハンドラーから破棄しないでください。破棄した場合には、ADO が存在しないオブジェクトにアクセスしようとしたときにアクセス違反が発生します。|
+|*pConnection* |[Connection](connection-object-ado.md) オブジェクトです。操作を実行したときの接続です。|
 
 ## <a name="remarks"></a>解説
 

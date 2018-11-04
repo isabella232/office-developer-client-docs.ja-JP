@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249130(v=office.15)
 ms:contentKeyID: 48544188
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d6a6427574cd04d8196153618c5960cb38da2b04
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 794c77c0ab6ab2abf22b04def8763fd1e0c51913
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25924737"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949615"
 ---
 # <a name="cancelupdate-method-rds"></a>CancelUpdate メソッド (RDS)
 
-
 **適用されます**Access 2013、Office 2013。
-
-
 
 [Recordset](recordset-object-ado.md) オブジェクトの現在の行または新しい行に加えられたすべての変更をキャンセルします。
 
@@ -28,9 +25,9 @@ ms.locfileid: "25924737"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *DataControl*
-
-  - [RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。
+|パラメーター|説明|
+|:--------|:----------|
+|*DataControl* |[RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。|
 
 ## <a name="remarks"></a>解説
 

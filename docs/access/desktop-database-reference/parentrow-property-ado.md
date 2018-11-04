@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249971(v=office.15)
 ms:contentKeyID: 48547638
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 28f0d1c7dbc0e062ff133b9f9997f1a737c3262e
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 06bb1110dfa7e7a055fa6cd863dcd2cc17f3f585
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25872131"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950152"
 ---
 # <a name="parentrow-property-ado"></a>ParentRow プロパティ (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 OLE DB **Row** オブジェクトのコンテナーを **ADORecordConstruction** オブジェクトに設定し、行の親が ADO **Record** オブジェクトに変換されるようにします。
 
@@ -29,15 +27,15 @@ HRESULT に\_ParentRow (\[の\]IUnknown\* pParent)。
 
 ## <a name="parameters"></a>パラメーター
 
-  - *pParent*
-
-  - 行のコンテナー。
+|パラメーター|説明|
+|:--------|:----------|
+|*pParent* |行のコンテナー。|
 
 ## <a name="return-values"></a>戻り値
 
 このプロパティのメソッドなどの標準の HRESULT 値を返します。\_[ok] および E\_は失敗します。
 
-## <a name="applies-to"></a>対象
+## <a name="applies-to"></a>適用対象
 
 [ADORecordConstruction](adorecordconstruction-interface-ado.md)
 

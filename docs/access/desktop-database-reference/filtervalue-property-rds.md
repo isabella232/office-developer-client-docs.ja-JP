@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249399(v=office.15)
 ms:contentKeyID: 48545350
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e2573500fe47c69dfd1779ecc4ad5e0abb7dcf8c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 0de54097c7992583851bbbd7b04c40f10fbca76e
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925304"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949482"
 ---
 # <a name="filtervalue-property-rds"></a>FilterValue プロパティ (RDS)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 レコードをフィルター処理するための値を示します。
 
@@ -27,17 +25,16 @@ ms.locfileid: "25925304"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *DataControl*
-
-  - [RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。
-
-  - *String*
-
-  - **文字列**を表す値 (たとえば、'プログラマ' または 125) のフィルター処理に使用するデータ値を記録します。
+|パラメーター|説明|
+|:--------|:----------|
+|*DataControl* |[RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。|
+|*String* |**文字列**を表す値 (たとえば、'プログラマ' または 125) のフィルター処理に使用するデータ値を記録します。|
 
 ## <a name="remarks"></a>解説
 
-プロパティ [SortColumn](sortcolumn-property-rds.md)、[SortDirection](sortdirection-property-rds.md)、 **FilterValue** 、 [FilterCriterion](filtercriterion-property-rds.md)、および [FilterColumn](filtercolumn-property-rds.md) は、クライアント側のキャッシュ上で並べ替え機能とフィルター機能を提供します。並べ替え機能は、列の値でレコードを並べ替えます。フィルター機能は、キャッシュ内の完全な [Recordset](recordset-object-ado.md) は保持したまま、検索条件に基づいてレコードのサブセットを表示します。 [Reset](reset-method-rds.md) メソッドは検索条件を実行し、現在の **Recordset** を更新可能な **Recordset** に置き換えます。
+プロパティ [SortColumn](sortcolumn-property-rds.md)、 [SortDirection](sortdirection-property-rds.md) 、 **FilterValue**、[FilterCriterion](filtercriterion-property-rds.md)、および [FilterColumn](filtercolumn-property-rds.md) は、クライアント側のキャッシュ上で並べ替え機能とフィルター機能を提供します。 
+
+並べ替え機能は、列の値でレコードを並べ替えます。 フィルター機能は、キャッシュ内の完全な [Recordset](recordset-object-ado.md) は保持したまま、検索条件に基づいてレコードのサブセットを表示します。 [Reset](reset-method-rds.md) メソッドは検索条件を実行し、現在の **Recordset** を更新可能な **Recordset** に置き換えます。
 
 Null 値は型の不一致エラーになります。
 

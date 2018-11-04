@@ -6,19 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250085(v=office.15)
 ms:contentKeyID: 48548014
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 95ed1b9b7c048353950b2481c7fefe2211b2799b
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 3d7523a930feed7431bf8be0bbb7222a4b305483
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944278"
+ms.locfileid: "25949398"
 ---
 # <a name="chapter-property-ado"></a>Chapter プロパティ (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
  
-
 OLE DB Chapter オブジェクトを ADORecordsetConstruction オブジェクトから取得するか、または、OLE DB Chapter オブジェクトを ADORecordsetConstruction オブジェクトに設定します。 使用すると**に\_章****章**オブジェクトを設定する行のサブセットになって、ADO**レコード セット**オブジェクトにします。 これにより、 **Rowset**オブジェクトのカレント チャプターが設定されます。 値の取得および設定が可能です。
 
 ## <a name="syntax"></a>構文
@@ -29,13 +27,10 @@ HRESULT に\_の章 (\[に\]長 lChapter)。
 
 ## <a name="parameters"></a>パラメーター
 
-- *plChapter*
-
-  - チャプターのハンドルへのポインターです。
-
-- *LChapter*
-
-  - チャプターのハンドルです。
+|パラメーター|説明|
+|:--------|:----------|
+|*plChapter* |チャプターのハンドルへのポインターです。|
+|*LChapter* |チャプターのハンドルです。|
 
 ## <a name="return-values"></a>戻り値
 

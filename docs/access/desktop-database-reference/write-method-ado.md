@@ -1,23 +1,21 @@
 ---
-title: ActiveX データ オブジェクト (ADO) メソッドを作成します。
+title: メソッド - を作成するには、ActiveX データ オブジェクト (ADO)
 TOCTitle: Write method (ADO)
 ms:assetid: cabe4581-409f-7f05-bd59-d495bfb2c6fd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249986(v=office.15)
 ms:contentKeyID: 48547697
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a04825a59f19b6b54fbb10652a1bba2fd0479588
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 93336294380ffa207f47adbcad630be3fdd1a8b8
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920964"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950217"
 ---
 # <a name="write-method-ado"></a>Write メソッド (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 バイナリ データを [Stream](stream-object-ado.md) オブジェクトに書き込みます。
 
@@ -27,9 +25,9 @@ ms.locfileid: "25920964"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Buffer*
-
-  - 書き込むバイト配列の入ったバリアント型 ( **Variant** ) の値を指定します。
+|パラメーター|説明|
+|:--------|:----------|
+|*Buffer* |書き込むバイト配列の入ったバリアント型 ( **Variant** ) の値を指定します。|
 
 ## <a name="remarks"></a>解説
 
@@ -39,8 +37,6 @@ ms.locfileid: "25920964"
 
 現在の [EOS](eos-property-ado.md) 位置を越えて書き込みを行うと、新しいバイトがすべて格納できるように [Stream](https://msdn.microsoft.com/library/jj250128\(v=office.15\)) の **Size** が大きくなり、 **EOS** が **Stream** 内の新しい末尾バイトへと移動します。
 
-
 > [!NOTE]
-> <P><STRONG>Write</STRONG> メソッドは、バイナリ ストリーム (<A href="type-property-ado-stream.md">Type</A> が <STRONG>adTypeBinary</STRONG>) で使用します。テキスト ストリーム (<STRONG>Type</STRONG> が <STRONG>adTypeText</STRONG>) の場合は、<A href="writetext-method-ado.md">WriteText</A> を使用してください。</P>
-
+> **Write** メソッドは、バイナリ ストリーム ([Type](type-property-ado-stream.md) が **adTypeBinary**) で使用します。テキスト ストリーム (**Type** が **adTypeText**) の場合は、[WriteText](writetext-method-ado.md) を使用してください。
 

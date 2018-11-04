@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1053371
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: a47709d1be3eab66f849e076c5756d5081d28fc8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 632bf0af35dd49951d58ba126b6e03678a1a12db
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930232"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950252"
 ---
 # <a name="databasemakereplica-method-dao"></a>Database.MakeReplica メソッド (DAO)
 
@@ -29,7 +29,7 @@ ms.locfileid: "25930232"
 
 *式***データベース**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -48,19 +48,19 @@ ms.locfileid: "25930232"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>パス名</p></td>
+<td><p><em>パス名</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>新しいレプリカのパスおよびファイル名。レプリカの名前として既存のファイル名を指定すると、エラーが発生します。</p></td>
 </tr>
 <tr class="even">
-<td><p>説明</p></td>
+<td><p><em>説明</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>作成するレプリカの説明を表す文字列型 (<strong>String</strong>) の値。</p></td>
 </tr>
 <tr class="odd">
-<td><p>選択肢</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>作成するレプリカの特性を指定する<strong><a href="replicatypeenum-enumeration-dao.md">ReplicaTypeEnum</a></strong>クラスの定数を取得します。</p></td>

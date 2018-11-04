@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249629(v=office.15)
 ms:contentKeyID: 48546293
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2799feebc3d2c2c4599249f0af310cf4020dcb49
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: f49bbffc2cfbaec77bf1b0d6aa692412c45254ae
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945515"
+ms.locfileid: "25949685"
 ---
 # <a name="connectcomplete-and-disconnect-events-ado"></a>ConnectComplete イベントと Disconnect イベント (ADO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -28,19 +27,9 @@ ConnectComplete*pError*、 *adStatus*、 *pConnection*
 
 ## <a name="parameters"></a>パラメーター
 
-- *pError*
-
-  - [Error](error-object-ado.md) オブジェクトです。 *adStatus* の値が **adStatusErrorsOccurred** の場合は、発生したエラーを示します。それ以外の場合は設定されません。
-
-- *adStatus*
-
-  - [EventStatusEnum](eventstatusenum.md)
-    
-    **WillConnect** イベントが保留中の接続の取り消しを要求しているときに **ConnectComplete** が呼び出されると、このパラメーターは **adStatusCancel** に設定されます。
-    
-    いずれかのイベントから制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。ただし、 [Connection](connection-object-ado.md) をいったん閉じてから再び開くと、これらのイベントが再度発生します。
-
-- *pConnection*
-
-  - このイベントが適用される **Connection** オブジェクト。
+|パラメーター|説明|
+|:--------|:----------|
+|*pError* |[Error](error-object-ado.md) オブジェクトです。 *adStatus* の値が **adStatusErrorsOccurred** の場合は、発生したエラーを示します。それ以外の場合は設定されません。|
+|*adStatus* |[EventStatusEnum](eventstatusenum.md)。 **WillConnect** イベントが保留中の接続の取り消しを要求しているときに **ConnectComplete** が呼び出されると、このパラメーターは **adStatusCancel** に設定されます。<br/><br/>いずれかのイベントから制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。ただし、 [Connection](connection-object-ado.md) をいったん閉じてから再び開くと、これらのイベントが再度発生します。|
+|*pConnection* |このイベントが適用される **Connection** オブジェクト。|
 

@@ -1,24 +1,21 @@
 ---
-title: ActiveX データ オブジェクト (ADO) メソッドのクローンを作成します。
+title: メソッドを ActiveX データ オブジェクト (ADO) の複製します。
 TOCTitle: Clone method (ADO)
 ms:assetid: ca9b2b76-90bf-9a60-2611-3cb4977d5591
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249984(v=office.15)
 ms:contentKeyID: 48547693
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 857a007d1b3bfe2665eea1284bc41cc9c67ccd46
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: c72902c4ed1d1d2657bfa6e2b4c5f84d76dfefa3
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944439"
+ms.locfileid: "25950259"
 ---
 # <a name="clone-method-ado"></a>Clone メソッド (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
-
 
 既存の [Recordset](recordset-object-ado.md) オブジェクトから **Recordset** オブジェクトの複製を作成します。必要に応じて、複製を読み取り専用に指定できます。
 
@@ -32,17 +29,11 @@ ms.locfileid: "25944439"
 
 ## <a name="parameters"></a>パラメーター
 
-- *rstDuplicate*
-
-  - 作成する **Recordset** オブジェクトの複製を示すオブジェクト変数です。
-
-- *rstOriginal*
-
-  - 複製元の **Recordset** オブジェクトを示すオブジェクト変数です。
-
-- *ロック。*
-
-  - 省略可能です。複製元 [Recordset](locktypeenum.md) のロックの種類にするか、または読み取り専用 **Recordset** にするかを指定する、 **LockTypeEnum** の値です。有効な値は、 **adLockUnspecified** または **adLockReadOnly** です。
+|パラメーター|説明|
+|:--------|:----------|
+|*rstDuplicate* |作成する **Recordset** オブジェクトの複製を示すオブジェクト変数です。|
+|*rstOriginal* |複製元の **Recordset** オブジェクトを示すオブジェクト変数です。|
+|*ロック。* |省略可能です。複製元 [Recordset](locktypeenum.md) のロックの種類にするか、または読み取り専用 **Recordset** にするかを指定する、 **LockTypeEnum** の値です。有効な値は、 **adLockUnspecified** または **adLockReadOnly** です。|
 
 ## <a name="remarks"></a>解説
 

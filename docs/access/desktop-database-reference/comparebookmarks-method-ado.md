@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249564(v=office.15)
 ms:contentKeyID: 48545977
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 88257a39ffc459f04a8fbd5afda476ef58955c03
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 8b4ff47c0fa778e89479df7a4281abd534fdcec8
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945664"
+ms.locfileid: "25949624"
 ---
 # <a name="comparebookmarks-method-ado"></a>CompareBookmarks メソッド (ADO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -30,13 +29,10 @@ ms.locfileid: "25945664"
 
 ## <a name="parameters"></a>パラメーター
 
-- *Bookmark1*
-
-  - 最初の行のブックマークです。
-
-- *Bookmark2*
-
-  - 2 番目の行のブックマークです。
+|パラメーター|説明|
+|:--------|:----------|
+|*Bookmark1* |最初の行のブックマークです。|
+|*Bookmark2* |2 番目の行のブックマークです。|
 
 ## <a name="remarks"></a>解説
 

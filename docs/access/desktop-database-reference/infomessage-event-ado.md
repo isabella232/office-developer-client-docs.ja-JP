@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249328(v=office.15)
 ms:contentKeyID: 48545109
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f3850d57bfcbf61cd5e17456f86dd30812dfde4e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 1db793ec99dd0248eacc527bd76068ceec025a58
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921755"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949433"
 ---
 # <a name="infomessage-event-ado"></a>InfoMessage イベント (ADO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,17 +25,9 @@ InfoMessage*pError*、 *adStatus*、 *pConnection*
 
 ## <a name="parameters"></a>パラメーター
 
-  - *pError*
-
-  - [Error](error-object-ado.md) オブジェクトです。このパラメーターには、返されたすべてのエラーが格納されます。複数のエラーが返される場合、 **Errors** コレクションを列挙してエラーを確認してください。
-
-  - *adStatus*
-
-  - [EventStatusEnum](eventstatusenum.md)
-    
-    このイベントから制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。
-
-  - *pConnection*
-
-  - [Connection](connection-object-ado.md) オブジェクトです。警告が発生した接続です。たとえば、 **Connection** オブジェクトを開いたり、 [Connection](command-object-ado.md) で **Command** コマンドを実行したときに、警告が発生する可能性があります。
+|パラメーター|説明|
+|:--------|:----------|
+|*pError* |[Error](error-object-ado.md) オブジェクトです。このパラメーターには、返されたすべてのエラーが格納されます。複数のエラーが返される場合、 **Errors** コレクションを列挙してエラーを確認してください。|
+|*adStatus* |[EventStatusEnum](eventstatusenum.md)。 このイベントから制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。|
+|*pConnection* |[Connection](connection-object-ado.md) オブジェクトです。警告が発生した接続です。たとえば、 **Connection** オブジェクトを開いたり、 [Connection](command-object-ado.md) で **Command** コマンドを実行したときに、警告が発生する可能性があります。|
 

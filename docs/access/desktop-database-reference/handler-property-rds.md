@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249792(v=office.15)
 ms:contentKeyID: 48546962
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2bb9444091611fbd051da9fa649b5d3efdb92ee6
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 98aeb3a56203fd5adbeb5b58a1298a7b1df98439
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923582"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950133"
 ---
 # <a name="handler-property-rds"></a>Handler プロパティ (RDS)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 [RDSServer.DataFactory](datafactory-object-rdsserver.md)のおよび*ハンドラー*によって使用されるパラメーターの機能を拡張するサーバー側のカスタマイズ プログラム (ハンドラー) の名前を示します。
 
@@ -27,13 +25,10 @@ ms.locfileid: "25923582"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *DataControl*
-
-  - [RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。
-
-  - *String*
-
-  - ハンドラーおよびパラメーターをすべてコンマ (たとえば、「handlerName、parm1、parm2、...、 *N*のパラメーター」) の名前を含む**文字列**値。
+|パラメーター|説明|
+|:--------|:----------|
+|*DataControl* |[RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。|
+|*String* |ハンドラーおよびパラメーターをすべてコンマ (たとえば、「handlerName、parm1、parm2、...、 *N*のパラメーター」) の名前を含む**文字列**値。|
 
 ## <a name="remarks"></a>解説
 

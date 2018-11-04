@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248905(v=office.15)
 ms:contentKeyID: 48543360
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d08b596afb24fff430c6c662a557da1880addefa
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: f622ee94fa6e37c2f618b038aea746791e58e9b8
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921181"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950083"
 ---
 # <a name="createobject-method-rds"></a>CreateObject メソッド (RDS)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 目的のビジネス オブジェクトのプロキシを作成し、そのポインターを返します。プロキシは、インターネット上で要求やデータを送信するビジネス オブジェクトと交信するために、データをパッケージ化し、サーバー側スタブにマーシャリングします。インプロセス コンポーネント オブジェクトでは、プロキシは使用されず、オブジェクトへのポインターのみが返されます。
 
@@ -59,21 +57,12 @@ RDS は、HTTP、HTTPS (HTTP over Secure Socket Layer)、DCOM、およびイン�
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Object*
-
-  - *ProgID* に指定された種類のオブジェクトに評価されるオブジェクト変数を指定します。
-
-  - *インスタンス*
-
-  - 新規オブジェクトのインスタンスの作成に使用される [RDS.DataSpace](dataspace-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。
-
-  - *ProgID*
-
-  - アプリケーションのビジネス ルールを適用する、サーバー側のビジネス オブジェクトを指定するプログラム ID を含む文字列型 ( **String** ) の値を指定します。
-
-  - *awebsrvr*または*コンピューター名*
-
-  - サーバー ビジネス オブジェクトのインスタンスを作成する、インターネット インフォメーション サービス (IIS) web サーバーを識別する URL を表す**文字列**値。
+|パラメーター|説明|
+|:--------|:----------|
+|*オブジェクト* |*ProgID* に指定された種類のオブジェクトに評価されるオブジェクト変数を指定します。|
+|*インスタンス* |新規オブジェクトのインスタンスの作成に使用される [RDS.DataSpace](dataspace-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。|
+|*ProgID* |アプリケーションのビジネス ルールを適用する、サーバー側のビジネス オブジェクトを指定するプログラム ID を含む文字列型 ( **String** ) の値を指定します。|
+|*awebsrvr*または*コンピューター名* |サーバー ビジネス オブジェクトのインスタンスを作成する、インターネット インフォメーション サービス (IIS) web サーバーを識別する URL を表す**文字列**値。|
 
 ## <a name="remarks"></a>備考
 

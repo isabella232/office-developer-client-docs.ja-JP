@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249292(v=office.15)
 ms:contentKeyID: 48544963
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b472f8e2cb7d95a3aa79194e7704a877864c1339
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 853f971f68bb0ec4069ba58e04b7cf9d231c6467
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920278"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949860"
 ---
 # <a name="getrows-method-ado"></a>GetRows メソッド (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 [Recordset](recordset-object-ado.md) オブジェクトの複数のレコードを配列に取り込みます。
 
@@ -31,17 +29,11 @@ ms.locfileid: "25920278"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Rows*
-
-  - 省略可能です。取得するレコード数を示す [GetRowsOptionEnum](getrowsoptionenum.md) 値を指定します。既定値は **adGetRowsRest** です。
-
-  - *Start*
-
-  - 省略可能です。 **GetRows** 操作を開始するレコードへのブックマークとして評価される文字列型 ( **String** ) の値またはバリアント型 ( **Variant** ) を指定します。 [BookmarkEnum](bookmarkenum.md) 値を使用することもできます。
-
-  - *Fields*
-
-  - 省略可能です。単一のフィールド名または順序を表す、あるいは複数のフィールド名または順序番号の配列を表す、バリアント型 ( **Variant** ) を指定します。指定したフィールドのデータだけが返されます。
+|パラメーター|説明|
+|:--------|:----------|
+|*Rows* |省略可能です。取得するレコード数を示す [GetRowsOptionEnum](getrowsoptionenum.md) 値を指定します。既定値は **adGetRowsRest** です。|
+|*Start* |省略可能です。 **GetRows** 操作を開始するレコードへのブックマークとして評価される文字列型 ( **String** ) の値またはバリアント型 ( **Variant** ) を指定します。 [BookmarkEnum](bookmarkenum.md) 値を使用することもできます。|
+|*Fields* |省略可能です。単一のフィールド名または順序を表す、あるいは複数のフィールド名または順序番号の配列を表す、バリアント型 ( **Variant** ) を指定します。指定したフィールドのデータだけが返されます。|
 
 ## <a name="remarks"></a>解説
 

@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248982(v=office.15)
 ms:contentKeyID: 48543645
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 55439f14cd2a498ec2592c533dd308f82798b1e8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 30feb9aabeb84c577b415b2872ce407cf3fc0f44
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929448"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950007"
 ---
 # <a name="move-method-ado"></a>Move メソッド (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
-
 
 [Recordset](recordset-object-ado.md) オブジェクトでカレント レコードの位置を移動します。
 
@@ -28,13 +25,10 @@ ms.locfileid: "25929448"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *NumRecords*
-
-  - カレント レコードの位置を移動するレコード数を指定する、符号付きの長整数型 ( **Long** ) の式を指定します。
-
-  - *Start*
-
-  - 省略可能です。ブックマークとして評価される文字列型 ( **String** ) の値またはバリアント型 ( **Variant** ) を指定します。 [BookmarkEnum](bookmarkenum.md) 値を使用することもできます。
+|パラメーター|説明|
+|:--------|:----------|
+|*NumRecords* |カレント レコードの位置を移動するレコード数を指定する、符号付きの長整数型 ( **Long** ) の式を指定します。|
+|*Start* |省略可能です。ブックマークとして評価される文字列型 ( **String** ) の値またはバリアント型 ( **Variant** ) を指定します。 [BookmarkEnum](bookmarkenum.md) 値を使用することもできます。|
 
 ## <a name="remarks"></a>解説
 

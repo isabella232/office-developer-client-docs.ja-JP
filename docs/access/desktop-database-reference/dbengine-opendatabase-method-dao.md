@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052979
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 23357443eeb479a6bdba2a3cc994de226290118a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: eb3f6795ba2e64ebd6be1b04d6aa6aecccef781b
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922623"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950091"
 ---
 # <a name="dbengineopendatabase-method-dao"></a>DBEngine.OpenDatabase メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -30,7 +29,7 @@ ms.locfileid: "25922623"
 
 *式***DBEngine**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -49,25 +48,25 @@ ms.locfileid: "25922623"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>名前</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>既存の Microsoft Access データベース ファイルの名前、または ODBC データ ソースのデータ ソース名 (DSN)。この値の設定方法の詳細については、 <strong><a href="connection-name-property-dao.md">Name</a></strong> プロパティを参照してください。  </p></td>
 </tr>
 <tr class="even">
-<td><p>選択肢</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>「備考」に記載されたデータベースのさまざまなオプションを設定します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>ReadOnly</p></td>
+<td><p><em>ReadOnly</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p><strong>True</strong> に設定すると、データベースが読み取り専用アクセスで開かれ、 <strong>False</strong> (既定値) に設定すると、読み取り/書き込みアクセスで開かれます。</p></td>
 </tr>
 <tr class="even">
-<td><p>ブラウザでの</p></td>
+<td><p><em>Connect</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>パスワードなどさまざまな接続情報を指定します。</p></td>
@@ -76,7 +75,7 @@ ms.locfileid: "25922623"
 </table>
 
 
-### <a name="return-value"></a>戻り値
+## <a name="return-value"></a>戻り値
 
 データベース
 
@@ -112,14 +111,13 @@ ms.locfileid: "25922623"
 
 データベース名を使用する場合は、いくつかの考慮事項が適用されます。
 
-  - 別のユーザーによって既に排他的に開かれているデータベースを指定すると、エラーが発生します。
+- 別のユーザーによって既に排他的に開かれているデータベースを指定すると、エラーが発生します。
 
-  - 既存のデータベース、または有効な ODBC データ ソース名を指定していない場合は、エラーが発生します。
+- 既存のデータベース、または有効な ODBC データ ソース名を指定していない場合は、エラーが発生します。
 
-  - 長さ 0 の文字列である場合 ("") とは、"ODBC;"は、*接続*ユーザーがデータベースを選択できるように登録されているすべての ODBC データ ソース名をリストするダイアログ ボックスが表示されます。
+- 長さ 0 の文字列である場合 ("") とは、"ODBC;"は、*接続*ユーザーがデータベースを選択できるように登録されているすべての ODBC データ ソース名をリストするダイアログ ボックスが表示されます。
 
 データベースを閉じ、その **Database** オブジェクトを **Databases** コレクションから削除するには、そのオブジェクトの **[Close](connection-close-method-dao.md)** メソッドを使用します。
-
 
 > [!NOTE]
 > [!メモ] Microsoft Access データベース エンジンに接続している ODBC データ ソースにアクセスするときは、ODBC データ ソースに接続された **Database** オブジェクトを開いた方が、個々の [TableDef](tabledef-object-dao.md) オブジェクトを ODBC データ ソースの特定のテーブルにリンクさせるよりもアプリケーションのパフォーマンスが向上します。

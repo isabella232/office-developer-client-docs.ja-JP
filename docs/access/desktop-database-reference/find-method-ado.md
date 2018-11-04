@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249776(v=office.15)
 ms:contentKeyID: 48546887
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4ff66a39de070759e0ad31b441e4be5735d87516
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: fa7dc2361d31a6d18af3c381dd75f8f934e78e05
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936613"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949881"
 ---
 # <a name="find-method-ado"></a>Find メソッド (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 [Recordset](recordset-object-ado.md) から、指定した条件を満たす行を検索します。必要に応じて、検索の方向、開始行、および開始行からのオフセットを指定できます。条件が一致すると、カレント行の位置は、検出されたレコードに設定され、条件を満たす行がない場合は、 **Recordset** の最後 (または最初) に設定されます。
 
@@ -27,21 +25,12 @@ ms.locfileid: "25936613"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Criteria*
-
-  - 検索に使用する列の名前、比較演算子、および値を指定するステートメントを含む文字列型 ( **String** ) の値を指定します。
-
-  - *SkipRows*
-
-  - 省略可能な *.* 既定値が 0 で、現在の行または検索を開始するのにはブックマークの*開始*から行のオフセットを指定する**Long**値。 既定では、現在の行で、検索を開始します。
-
-  - *SearchDirection*
-
-  - 省略可能な *.* 現在の行、または、検索の方向の次の使用可能な行の検索を開始するかどうかを指定する[SearchDirectionEnum](searchdirectionenum.md)の値です。 検索が失敗したは、値が**adSearchForward**である場合、**レコード セット**の最後で停止します。 検索が失敗したは、値が**adSearchBackward**である場合、**レコード セット**の先頭で停止します。
-
-  - *Start*
-
-  - 省略可能です。検索の開始位置として使用する、バリアント型 ( **Variant** ) のブックマークを指定します。
+|パラメーター|説明|
+|:--------|:----------|
+|*Criteria* |検索に使用する列の名前、比較演算子、および値を指定するステートメントを含む文字列型 ( **String** ) の値を指定します。|
+|*SkipRows* |省略可能。 既定値が 0 で、現在の行または検索を開始するのにはブックマークの*開始*から行のオフセットを指定する**Long**値。 既定では、現在の行で、検索を開始します。|
+|*SearchDirection* |省略可能。 現在の行、または、検索の方向の次の使用可能な行の検索を開始するかどうかを指定する[SearchDirectionEnum](searchdirectionenum.md)の値です。 検索が失敗したは、値が**adSearchForward**である場合、**レコード セット**の最後で停止します。 検索が失敗したは、値が**adSearchBackward**である場合、**レコード セット**の先頭で停止します。|
+|*Start* |省略可能です。検索の開始位置として使用する、バリアント型 ( **Variant** ) のブックマークを指定します。|
 
 ## <a name="remarks"></a>解説
 
@@ -54,7 +43,6 @@ ms.locfileid: "25936613"
 比較演算子に "like"を使用する場合、文字列値にアスタリスク (\*) を含めると、1 つまたは複数の文字、または部分文字列を検索することができます。たとえば、「state like 'M\*'」と指定すると、Maine や Massachusetts が該当します。また、文字列の先頭と末尾にアスタリスクを使用して、その間に含まれる部分文字列を検索対象として指定することもできます。たとえば、「state like '\*as\*'」と指定すると、Alaska、Arkansas、および Massachusetts が該当します。
 
 上の例のように、アスタリスクは、検索文字列の末尾のみに使用するか、または検索文字列の先頭と末尾の両方で使用することができます。ただし、先頭のみのワイルドカード ('\*str') または文字列中のワイルドカード ('s\*r') としてアスタリスクを使用することはできません。この場合はエラーが発生します。
-
 
 > [!NOTE]
 > [!メモ] **Find** メソッドを呼び出す前にカレント行の位置が設定されていない場合は、エラーが発生します。 [Find](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) メソッドを呼び出す前に、 **MoveFirst** などの、行の位置を設定するメソッドを呼び出す必要があります。

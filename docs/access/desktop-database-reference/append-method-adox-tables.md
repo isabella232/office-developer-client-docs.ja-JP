@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249726(v=office.15)
 ms:contentKeyID: 48546664
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b1bdfa895c00354064437406424fa0a5211d42a5
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 8e43f8fe5537ded015b5b8d79bb32f811e73368c
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926634"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949349"
 ---
 # <a name="append-method-adox-tables"></a>Append メソッド (ADOX Tables)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 新しい [Table](table-object-adox.md) オブジェクトを [Tables](tables-collection-adox.md) コレクションに追加します。
 
@@ -27,9 +25,9 @@ ms.locfileid: "25926634"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Table*
-
-  - 追加する **Table** への参照を含むバリアント型 ( **Variant** ) の値、または作成して追加するテーブルの名前を指定します。
+|パラメーター|説明|
+|:--------|:----------|
+|*Table* | 追加する **Table** への参照を含むバリアント型 ( **Variant** ) の値、または作成して追加するテーブルの名前を指定します。|
 
 ## <a name="remarks"></a>解説
 

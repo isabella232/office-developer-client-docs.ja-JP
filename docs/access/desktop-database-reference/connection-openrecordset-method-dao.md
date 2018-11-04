@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194324(v=office.15)
 ms:contentKeyID: 48544993
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 310f6e8961faed0a60b686bc9aeb9e7f8bcf5deb
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 1c71d92af9c833fd532aed2d436cb186412fe0e8
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926893"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950021"
 ---
 # <a name="connectionopenrecordset-method-dao"></a>Connection.OpenRecordset メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,7 +25,7 @@ ms.locfileid: "25926893"
 
 *式***接続**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -45,52 +44,37 @@ ms.locfileid: "25926893"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>名前</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>新しい <strong>Recordset</strong> のレコードの取得元です。テーブル名、クエリ名、またはレコードを返す SQL ステートメントを指定できます。Microsoft Access データベース エンジンのデータベースに含まれるテーブル タイプの <strong>Recordset</strong> オブジェクトの場合は、テーブル名でのみ指定できます。  </p></td>
 </tr>
 <tr class="even">
-<td><p>型</p></td>
+<td><p><em>Type</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
-<td><p>開く <a href="recordsettypeenum-enumeration-dao.md">Recordset</a> の型を示す <strong><strong>RecordsetTypeEnum</strong></strong> 定数。</p>
-
-> [!NOTE]
-> Microsoft Access ワークスペースで **Recordset** を開くときに、型を指定しない場合、**OpenRecordset** は、テーブル タイプの **Recordset** を作成します (可能な場合)。リンクされたテーブルまたはクエリを指定した場合、**OpenRecordset** は、ダイナセット タイプの **Recordset** を作成します。
-
-
+<td><p>開く <a href="recordsettypeenum-enumeration-dao.md">Recordset</a> の型を示す <strong><strong>RecordsetTypeEnum</strong></strong> 定数。</p><p><strong>注</strong>:<strong><strong>レコード セット</strong>を開くには、Microsoft Access ワークスペースで、種類を指定しない場合は、作成、テーブル タイプの<strong>レコード セット</strong>可能な場合</strong>です。 <strong>リンク テーブルまたはクエリを指定する場合、ダイナセット タイプの<strong>レコード セット</strong>が作成します。</strong></p>
 </td>
 </tr>
 <tr class="odd">
-<td><p>選択肢</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
-<td><p>新しい <a href="recordsetoptionenum-enumeration-dao.md">Recordset</a> の特性を指定する <strong><strong>RecordsetOptionEnum</strong></strong> 定数の組み合わせ。</p>
-
-> [!NOTE]
-> 定数を**指定できます**し、**組み合わせて**、相互に排他的な両方を使用して、エラーが発生します。 **DbReadOnly**定数を使用するオプションと、lockedits 引数を指定すると、エラーが発生します。
-
-
+<td><p>新しい <a href="recordsetoptionenum-enumeration-dao.md">Recordset</a> の特性を指定する <strong><strong>RecordsetOptionEnum</strong></strong> 定数の組み合わせ。</p><p><strong>注</strong>: 定数を<strong>指定できます</strong>し、<strong>組み合わせて</strong>が、相互に排他的で両方を使用して、エラーが発生します。 <strong>DbReadOnly</strong>定数を使用するオプションと、lockedits 引数を指定すると、エラーが発生します。</p>
 </td>
 </tr>
 <tr class="even">
-<td><p>LockEdit</p></td>
+<td><p><em>LockEdit</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
-<td><p><a href="locktypeenum-enumeration-dao.md">Recordset</a> のロックを決定する <strong><strong>LockTypeEnum</strong></strong> 定数。</p>
-
-> [!NOTE]
-> **dbReadOnly** を Options 引数または Lockedits 引数のどちらか一方で使用することはできますが、両方で使用することはできません。両方の引数で使用した場合、実行時エラーが発生します。
-
-
+<td><p><a href="locktypeenum-enumeration-dao.md">Recordset</a> のロックを決定する <strong><strong>LockTypeEnum</strong></strong> 定数。</p><p><strong>注</strong>: オプションの引数と、引数 lockedits の片方だけに<strong>dbReadOnly</strong>を使用することができます。 で両方の引数を使用する場合は、実行時エラーが発生します。</p>
 </td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="return-value"></a>戻り値
+## <a name="return-value"></a>戻り値
 
 Recordset
 
@@ -103,7 +87,6 @@ IDENTITY 列を持つ Microsoft SQL Server 6.0 以降のテーブルに対して
 ODBC データ ソースで複数の **Recordset** を開こうとすると、 **OpenRecordset** に対する前の呼び出しで接続がビジー状態となるため、失敗する場合があります。これを回避する方法の 1 つは、 **Recordset** を開いた直後に、 **MoveLast** メソッドを使用して **Recordset** の末尾までデータを読み込むことです。
 
 [**Close**](connection-close-method-dao.md) メソッドを使用して **Recordset** を閉じると、そのレコードセットは自動的に **Recordsets** コレクションから削除されます。
-
 
 > [!NOTE]
 > *ソース*を指す場合、整数以外の値に連結された文字列、SQL ステートメントで構成され、システム ・ パラメーターは、米国以外の小数点の記号、カンマなどを指定 (たとえば、strSQL ="価格&gt;" &amp; lngPrice でと lngPrice =125,50)、**レコード セット**を開こうとするとエラーが発生します。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、SQL で小数点の記号として使用できるのはピリオドのみになるからです。

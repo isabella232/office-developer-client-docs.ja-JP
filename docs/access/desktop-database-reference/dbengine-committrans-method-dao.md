@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845171(v=office.15)
 ms:contentKeyID: 48543197
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 564f1852fac571bdf1459c98620f31e2419b2cf3
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: de57bfff5b47e3c4202a17910db2413686f73d9b
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925710"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950266"
 ---
 # <a name="dbenginecommittrans-method-dao"></a>DBEngine.CommitTrans メソッド (DAO)
 
@@ -26,7 +26,7 @@ ms.locfileid: "25925710"
 
 *式***DBEngine**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -45,7 +45,7 @@ ms.locfileid: "25925710"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>オプション</p></td>
+<td><p><em>Option</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>長整数型 (Long)</strong></p></td>
 <td><p>Microsoft Access ワークスペースでは、 <strong>CommitTrans</strong> で定数 <strong>dbForceOSFlush</strong> を指定できます。これにより、更新を一時的にキャッシュする代わりに、すべての更新が即座にディスクにフラッシュされます。このオプションを使用しないと、アプリケーション プログラムが <strong>CommitTrans</strong> を呼び出した直後にユーザーに制御が戻り、ユーザーがコンピューターの電源が切ったためにデータがディスクに書き込まれないということが起こり得ます。このオプションを使用すると、アプリケーションのパフォーマンスに影響を与える可能性がありますが、キャッシュされた更新がディスクに保存される前にコンピューターの電源が切れる可能性がある状況においては、このオプションが役立ちます。  </p></td>

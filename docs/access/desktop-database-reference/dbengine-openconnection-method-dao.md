@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1053574
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f958081ee73e64ca6c895217c8aa3e821617b283
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 08e26c4a32e8648eb1833dc493b4e121030d1f1a
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927194"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950035"
 ---
 # <a name="dbengineopenconnection-method-dao"></a>DBEngine.OpenConnection メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -28,7 +27,7 @@ ms.locfileid: "25927194"
 
 *式***DBEngine**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -47,25 +46,25 @@ ms.locfileid: "25927194"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>名前</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>文字列式を指定します。「解説」の説明を参照してください。</p></td>
 </tr>
 <tr class="even">
-<td><p>選択肢</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>「解説」に記載されている接続のさまざまなオプションを設定します。ODBC ドライバー マネージャーは、この値に基づき、データ ソース名 (DSN)、ユーザー名、パスワードなどの接続情報の指定をユーザーに求めます。</p></td>
 </tr>
 <tr class="odd">
-<td><p>ReadOnly</p></td>
+<td><p><em>ReadOnly</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p><strong>True</strong> に設定すると、接続が読み取り専用アクセスで開かれ、 <strong>False</strong> (既定値) に設定すると、読み取り/書き込みアクセスで開かれます。</p></td>
 </tr>
 <tr class="even">
-<td><p>ブラウザでの</p></td>
+<td><p><em>Connect</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>ODBC 接続文字列です。 この文字列の固有の要素および構文については、 <strong><a href="connection-connect-property-dao.md">Connect</a></strong> プロパティのトピックを参照してください。 先頭に追加された&quot;ODBC;&quot;が必要です。</p></td>
@@ -74,7 +73,7 @@ ms.locfileid: "25927194"
 </table>
 
 
-### <a name="return-value"></a>戻り値
+## <a name="return-value"></a>戻り値
 
 Connection
 

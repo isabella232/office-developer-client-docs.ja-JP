@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249106(v=office.15)
 ms:contentKeyID: 48544119
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: aef8b658bbe16c7b56c97900edb5a9c6bf1e8a0c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 0db4bd5661bc32cb6f9ce8191dd4ac5bad7eff4c
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929644"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950112"
 ---
 # <a name="sortdirection-property-rds"></a>SortDirection プロパティ (RDS)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 並べ替え順序が昇順であるか、降順であるかを示します。
 
@@ -27,13 +25,10 @@ ms.locfileid: "25929644"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *DataControl*
-
-  - [RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。
-
-  - *Value*
-
-  - ブール型 ( **Boolean** ) の値。 **True** に設定されている場合は、並べ替え順序が昇順であることを示します。 **False** は降順であることを示します。
+|パラメーター|説明|
+|:--------|:----------|
+|*DataControl* |[RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。|
+|*Value* |ブール型 ( **Boolean** ) の値。 **True** に設定されている場合は、並べ替え順序が昇順であることを示します。 **False** は降順であることを示します。|
 
 ## <a name="remarks"></a>解説
 

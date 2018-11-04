@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248793(v=office.15)
 ms:contentKeyID: 48542968
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d779fc5cff955ca669635ca827456dafb8927d8a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 86d164a133538379a15c80f7fb5f2f4ba71267bf
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919683"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950210"
 ---
 # <a name="save-method-ado"></a>Save メソッド (ADO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,13 +25,10 @@ ms.locfileid: "25919683"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Destination*
-
-  - 省略可能です。 **Recordset** の保存先であるファイルの完全なパス名を表すバリアント型 ( **Variant** ) の値、または **Stream** オブジェクトへの参照を指定します。
-
-  - *PersistFormat*
-
-  - 省略可能です。 [Recordset](persistformatenum.md) の保存形式 (XML または ADTG) を **PersistFormatEnum** 値で指定します。既定値は **adPersistADTG** です。
+|パラメーター|説明|
+|:--------|:----------|
+|*Destination* |省略可能です。 **Recordset** の保存先であるファイルの完全なパス名を表すバリアント型 ( **Variant** ) の値、または **Stream** オブジェクトへの参照を指定します。|
+|*PersistFormat* |省略可能です。 [Recordset](persistformatenum.md) の保存形式 (XML または ADTG) を **PersistFormatEnum** 値で指定します。既定値は **adPersistADTG** です。|
 
 ## <a name="remarks"></a>解説
 
@@ -56,11 +52,8 @@ ms.locfileid: "25919683"
 
 **Recordset** の **CursorLocation** プロパティが **adUseServer** に設定されたままの場合、その **Recordset** の更新機能が制限されます。プロバイダーの機能によって異なりますが、通常は、単一テーブルの更新、挿入、および削除のみが許可されます。この設定では、 [Resync](resync-method-ado.md) メソッドも利用できません。
 
-
 > [!NOTE]
-> <P>[!メモ] ADO では、 <STRONG>Fields</STRONG> の種類が <STRONG>adVariant</STRONG> 、 <STRONG>adIDispatch</STRONG> 、または <STRONG>adIUnknown</STRONG> に設定された <STRONG>Recordset</STRONG> の保存はサポートされていないため、予期しない結果が生じることがあります。</P>
-
-
+> [!メモ] ADO では、 **Fields** の種類が **adVariant** 、 **adIDispatch** 、または **adIUnknown** に設定された **Recordset** の保存はサポートされていないため、予期しない結果が生じることがあります。
 
 **フィルター**の抽出条件の文字列形式でのみ (例:"受注日" \> ' 12/31/1999 ') 保存された**レコード セット**の内容に影響を与えます。 **Bookmarks** の配列で作成されたフィルター、または **FilterGroupEnum** の値を使用して作成されたフィルターは、永続化された **Recordset** の内容に影響しません。 これらの規則は、クライアント側カーソルまたはサーバー側カーソルを使用して作成された **Recordsets** に当てはまります。
 
@@ -68,11 +61,8 @@ ms.locfileid: "25919683"
 
 次の Visual Basic コードに示すように、XML 形式の **Recordset** を MSXML DOM オブジェクトのインスタンスに保存することもできます。
 
-
 > [!NOTE]
-> <P>[!メモ] 階層 <STRONG>Recordset</STRONG> (データ シェイプ) を XML 形式で保存するときは、2 つの制限事項があります。階層 <STRONG>Recordset</STRONG> に保留中の更新が含まれている場合は、XML で保存できません。また、パラメーター化された階層 <STRONG>Recordset</STRONG> を保存することはできません。</P>
-
-
+> [!メモ] 階層 **Recordset** (データ シェイプ) を XML 形式で保存するときは、2 つの制限事項があります。階層 **Recordset** に保留中の更新が含まれている場合は、XML で保存できません。また、パラメーター化された階層 **Recordset** を保存することはできません。
 
 XML 形式で保存した Recordset は、UTF-8 形式を使用して保存されます。このようなファイルを ADO Stream に読み込むと、Stream オブジェクトはストリームの Charset プロパティが UTF-8 形式用の適切な値に設定されていない限り、ストリームから Recordset を開こうとしません。
 

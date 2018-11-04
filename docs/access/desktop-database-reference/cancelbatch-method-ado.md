@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249925(v=office.15)
 ms:contentKeyID: 48547463
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: eefe1042404c24040aef204a1ceca0ce583847e8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 88bf83cad220056d9ee21f300e5543030e5d18cd
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926956"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950079"
 ---
 # <a name="cancelbatch-method-ado"></a>CancelBatch メソッド (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 保留中のバッチ更新をキャンセルします。
 
@@ -27,9 +25,9 @@ ms.locfileid: "25926956"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *AffectRecords*
-
-  - 省略可能です。 [CancelBatch](affectenum.md) メソッドで処理するレコードの数を示す **AffectEnum** 値です。
+|パラメーター|説明|
+|:--------|:----------|
+|*AffectRecords* |省略可能です。 [CancelBatch](affectenum.md) メソッドで処理するレコードの数を示す **AffectEnum** 値です。 |
 
 ## <a name="remarks"></a>解説
 

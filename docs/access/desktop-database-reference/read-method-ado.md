@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249641(v=office.15)
 ms:contentKeyID: 48546357
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cdbf9bc7ab29b98c7d1b96700adccaa17275d698
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 2bcee0de272a14825f978abb1f6dd2834a998f86
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946553"
+ms.locfileid: "25949335"
 ---
 # <a name="read-method-ado"></a>Read メソッド (ADO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,9 +25,9 @@ ms.locfileid: "25946553"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *NumBytes*
-
-  - 省略可能です。ファイルから読み取るバイト数を指定する長整数型 ( **Long** ) の値、または [StreamReadEnum](streamreadenum.md) 値の **adReadAll** (既定値) を指定します。
+|パラメーター|説明|
+|:--------|:----------|
+|*NumBytes* |省略可能です。ファイルから読み取るバイト数を指定する長整数型 ( **Long** ) の値、または [StreamReadEnum](streamreadenum.md) 値の **adReadAll** (既定値) を指定します。|
 
 ## <a name="return-value"></a>戻り値
 
@@ -38,8 +37,7 @@ ms.locfileid: "25946553"
 
 *NumBytes* が **Stream** に残っているバイト数よりも大きい場合、残っているバイトのみが返されます。読み取ったデータに、*NumBytes* で指定した長さに合うようにスペースが補充されることはありません。読み取るデータが残っていない場合は、Null 値のバリアント型が返されます。**Read** を使用して逆方向の読み取りを行うことはできません。
 
-
 > [!NOTE]
-> <P><EM>NumBytes</EM> は常にバイトを表します。テキストの <STRONG>Stream</STRONG> オブジェクト (<A href="type-property-ado-stream.md">Type</A> が <STRONG>adTypeText</STRONG>) の場合は、<A href="readtext-method-ado.md">ReadText</A> を使用してください。</P>
+> *NumBytes* は常にバイトを表します。テキストの **Stream** オブジェクト ([Type](type-property-ado-stream.md) が **adTypeText**) の場合は、[ReadText](readtext-method-ado.md) を使用してください。
 
 

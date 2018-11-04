@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248924(v=office.15)
 ms:contentKeyID: 48543435
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e336a7ddf4db6e927c185b33a4138ab8dd5d5e9a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: cebb2f464b63106545ff5b27b1722b6417b9dbe1
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925969"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949944"
 ---
 # <a name="reset-method-rds"></a>Reset メソッド (RDS)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,13 +25,10 @@ ms.locfileid: "25925969"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *DataControl*
-
-  - [RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。
-
-  - *value*
-
-  - 省略可能です。ブール型 ( **Boolean** ) の値を指定します。現在 "フィルター選択されている" 行セットでフィルターを実行する場合は、 **True** (既定値) を指定します。 **False** は、以前のフィルター オプションをすべて破棄して元の行セットでフィルターを実行する場合に指定します。
+|パラメーター|説明|
+|:--------|:----------|
+|*DataControl* |[RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。|
+|*value* |省略可能です。ブール型 ( **Boolean** ) の値を指定します。現在 "フィルター選択されている" 行セットでフィルターを実行する場合は、 **True** (既定値) を指定します。 **False** は、以前のフィルター オプションをすべて破棄して元の行セットでフィルターを実行する場合に指定します。|
 
 ## <a name="remarks"></a>解説
 

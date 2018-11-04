@@ -1,24 +1,22 @@
 ---
 title: Open メソッド (ADO Connection)
-TOCTitle: Open Method (ADO Connection)
+TOCTitle: Open method (ADO Connection)
 ms:assetid: 1adaa17d-dfe1-22e0-3415-720516d138f8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248951(v=office.15)
 ms:contentKeyID: 48543525
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3bd698f7ea6c05d81e07969ae8031049804b7706
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 66a62128a8ad8828c501cdaf899448edd9f1d37f
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25889470"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949874"
 ---
 # <a name="open-method-ado-connection"></a>Open メソッド (ADO Connection)
 
-
 **適用されます**Access 2013、Office 2013。
  
-
 データ ソースへの接続を開きます。
 
 ## <a name="syntax"></a>構文
@@ -27,21 +25,12 @@ ms.locfileid: "25889470"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *ConnectionString*
-
-  - 省略可能です。接続情報を含む文字列型 ( **String** ) の値です。有効な設定値の詳細については、 [ConnectionString](connectionstring-property-ado.md) プロパティを参照してください。
-
-  - *ユーザー Id*
-
-  - 省略可能です。接続を確立するときに使用するユーザー名を含む、文字列型 ( **String** ) の値です。
-
-  - *Password*
-
-  - 省略可能です。接続を確立するときに使用するパスワードを含む、文字列型 ( **String** ) の値です。
-
-  - *Options*
-
-  - 省略可能です。接続が確立された後 (同期) または接続が確立される前 (非同期) のどちらでこのメソッドが返るかを指定する [ConnectOptionEnum](connectoptionenum.md) 値です。
+|パラメーター|説明|
+|:--------|:----------|
+|*ConnectionString* |省略可能です。接続情報を含む文字列型 ( **String** ) の値です。有効な設定値の詳細については、 [ConnectionString](connectionstring-property-ado.md) プロパティを参照してください。|
+|*ユーザー Id* |省略可能です。接続を確立するときに使用するユーザー名を含む、文字列型 ( **String** ) の値です。|
+|*Password* |省略可能です。接続を確立するときに使用するパスワードを含む、文字列型 ( **String** ) の値です。|
+|*Options* |省略可能です。接続が確立された後 (同期) または接続が確立される前 (非同期) のどちらでこのメソッドが返るかを指定する [ConnectOptionEnum](connectoptionenum.md) 値です。|
 
 ## <a name="remarks"></a>解説
 
@@ -54,7 +43,6 @@ ms.locfileid: "25889470"
 開いている **Connection** オブジェクトに対する操作が完了したら、[Close](close-method-ado.md) メソッドを使用して関連するすべてのシステム リソースを解放します。オブジェクトを閉じても、オブジェクトはメモリから削除されません。オブジェクトのプロパティ設定を変更し、**Open** メソッドを使用して、後で再度開くことができます。オブジェクトをメモリから完全に削除するには、オブジェクト変数に *Nothing* を設定します。
 
 **リモート データ サービスの使用法**クライアント側の**接続**オブジェクトを使用する場合は、**接続**オブジェクトの[レコード セット](recordset-object-ado.md)が開かれるまで、 **Open**メソッドは実際には、サーバーへの接続を確立されません。
-
 
 > [!NOTE]
 > [!メモ] http 体系を使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、[絶対と相対 Url](absolute-and-relative-urls.md)を参照してください。

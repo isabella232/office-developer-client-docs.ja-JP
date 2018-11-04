@@ -6,19 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250217(v=office.15)
 ms:contentKeyID: 48548588
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5aab77571b0b12c6b26cd15af386c9ee89162681
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 296232b05041c1e059b5134fdde11fceac4e3d43
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930015"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949895"
 ---
 # <a name="moverecord-method-ado"></a>MoveRecord メソッド (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
  
-
 [Record](record-object-ado.md) で表されるエンティティを別の場所に移動します。
 
 ## <a name="syntax"></a>構文
@@ -27,29 +25,14 @@ ms.locfileid: "25930015"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Source*
-
-  - 省略可能です。移動する **Record** を示す URL を含む文字列型 (**String**) の値を指定します。*Source* を省略するか、または空文字列を指定すると、この **Record** で表されるオブジェクトが移動されます。たとえば、**Record** がファイルを表している場合は、ファイルの内容が *Destination* で指定した場所に移動されます。
-
-  - *Destination*
-
-  - 省略可能です。 *ソース*の移動先の場所を指定する URL を含む**文字列**値。
-
-  - *UserName*
-
-  - 省略可能です。*Destination* へのアクセス権が設定されている場合、アクセス権を持つユーザー ID を含む、文字列型 (**String**) の値を指定します。
-
-  - *Password*
-
-  - 省略可能です。*UserName* を確認するためのパスワードを含む、文字列型 (**String**) を指定します。
-
-  - *Options*
-
-  - 省略可能です。[MoveRecordOptionsEnum](moverecordoptionsenum.md) 値を指定します。既定値は、 **adMoveUnspecified** です。このメソッドの動作を指定します。
-
-  - *Async*
-
-  - 省略可能です。ブール型 ( **Boolean** ) の値を指定します。値が **True** の場合、この動作は非同期で実行されます。
+|パラメーター|説明|
+|:--------|:----------|
+|*Source* |省略可能です。移動する **Record** を示す URL を含む文字列型 (**String**) の値を指定します。*Source* を省略するか、または空文字列を指定すると、この **Record** で表されるオブジェクトが移動されます。たとえば、**Record** がファイルを表している場合は、ファイルの内容が *Destination* で指定した場所に移動されます。|
+|*Destination* |省略可能です。 *ソース*の移動先の場所を指定する URL を含む**文字列**値。|
+|*UserName* |省略可能です。*Destination* へのアクセス権が設定されている場合、アクセス権を持つユーザー ID を含む、文字列型 (**String**) の値を指定します。|
+|*Password* |省略可能です。*UserName* を確認するためのパスワードを含む、文字列型 (**String**) を指定します。|
+|*Options* |省略可能です。[MoveRecordOptionsEnum](moverecordoptionsenum.md) 値を指定します。既定値は、 **adMoveUnspecified** です。このメソッドの動作を指定します。|
+|*Async* |省略可能。 **ブール型**の値**true の場合**、この操作を非同期にする必要がありますを指定します。|
 
 ## <a name="return-value"></a>戻り値
 

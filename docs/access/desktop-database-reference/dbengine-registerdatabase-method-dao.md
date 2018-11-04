@@ -10,18 +10,16 @@ f1_keywords:
 - dao360.chm1052938
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 767bd146de7a5568d7441024adb9ad6816cb806e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 8310f695bdcf229e61e09bce6c0846f9520c0fc6
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923512"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949867"
 ---
 # <a name="dbengineregisterdatabase-method-dao"></a>DBEngine.RegisterDatabase メソッド (DAO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 ODBC データ ソースの接続情報を Windows レジストリに追加します。ODBC ドライバーでは、セッション中に ODBC データ ソースが開かれるときに、接続情報が必要になります。
 
@@ -31,7 +29,7 @@ ODBC データ ソースの接続情報を Windows レジストリに追加し�
 
 *式***DBEngine**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -50,25 +48,25 @@ ODBC データ ソースの接続情報を Windows レジストリに追加し�
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Dsn</p></td>
+<td><p><em>Dsn</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p><strong><a href="dbengine-opendatabase-method-dao.md">OpenDatabase</a></strong> メソッドで使用される名前です。データ ソースに関する説明的な情報を指します。たとえば、データ ソースが ODBC リモート データベースである場合は、サーバー名などを指定します。</p></td>
 </tr>
 <tr class="even">
-<td><p>ドライバー</p></td>
+<td><p><em>ドライバー</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>ODBC ドライバーの名前です。ODBC ドライバーの DLL ファイルの名前ではありません。</p></td>
 </tr>
 <tr class="odd">
-<td><p>サイレント</p></td>
+<td><p><em>サイレント</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>ブール型 (Boolean)</strong></p></td>
 <td><p><strong>True の</strong>場合、ドライバー固有の情報の入力を求める ODBC ドライバー ダイアログ ボックスを表示したくないです。または、 <strong>false を指定</strong>する場合は、ODBC ドライバーのダイアログ ボックスを表示します。 場合<strong>はサイレント</strong>、属性には、必要なすべてのドライバー固有の情報が含まれている必要があります、またはダイアログ ボックスが表示されますか。</p></td>
 </tr>
 <tr class="even">
-<td><p>属性</p></td>
+<td><p><em>Attributes</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>Windows レジストリに追加するキーワードの一覧です。キーワードは、改行で区切られた文字列として指定します。</p></td>

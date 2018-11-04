@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250104(v=office.15)
 ms:contentKeyID: 48548097
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 535e743a9de708b264c225f4e86390a11e1d20e5
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: df7545b9abd29571788a0bbfc69323ec31e75f65
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925029"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949811"
 ---
 # <a name="savetofile-method-ado"></a>SaveToFile メソッド (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
-
 
 [Stream](stream-object-ado.md) のバイナリの内容をファイルに保存します。
 
@@ -28,19 +25,13 @@ ms.locfileid: "25925029"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Filename*
-
-  - **Stream** の内容の保存先であるファイルの完全修飾名を含む文字列型 ( **String** ) の値を指定します。有効なローカルの場所、または UNC 値を介してアクセスできる場所への保存が可能です。
-
-  - *SaveOptions*
-
-  - 保存するファイルがまだ存在しない場合に、 [SaveToFile](saveoptionsenum.md) メソッドで新しいファイルを作成するかどうかを **SaveOptionsEnum** 値で指定します。既定値は **adSaveCreateNotExists** です。これらのオプションでは、指定したファイルが存在しない場合にエラーが発生するように指定できます。また、 **SaveToFile** メソッドで既存ファイルの現在の内容を上書きするように指定することもできます。
-
+|パラメーター|説明|
+|:--------|:----------|
+|*Filename* |**Stream** の内容の保存先であるファイルの完全修飾名を含む文字列型 ( **String** ) の値を指定します。有効なローカルの場所、または UNC 値を介してアクセスできる場所への保存が可能です。|
+|*SaveOptions* |保存するファイルがまだ存在しない場合に、 [SaveToFile](saveoptionsenum.md) メソッドで新しいファイルを作成するかどうかを **SaveOptionsEnum** 値で指定します。既定値は **adSaveCreateNotExists** です。これらのオプションでは、指定したファイルが存在しない場合にエラーが発生するように指定できます。また、 **SaveToFile** メソッドで既存ファイルの現在の内容を上書きするように指定することもできます。|
 
 > [!NOTE]
-> <P>[!メモ] <STRONG>adSaveCreateOverwrite</STRONG> を設定して既存ファイルを上書きすると、 <STRONG>SaveToFile</STRONG> メソッドによって、元の既存ファイルから、新しい <A href="eos-property-ado.md">EOS</A> 以降のバイトがすべて削除されます。</P>
-
-
+> [!メモ] **adSaveCreateOverwrite** を設定して既存ファイルを上書きすると、 **SaveToFile** メソッドによって、元の既存ファイルから、新しい [EOS](eos-property-ado.md) 以降のバイトがすべて削除されます。
 
 ## <a name="remarks"></a>解説
 

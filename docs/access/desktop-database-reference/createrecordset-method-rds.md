@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248940(v=office.15)
 ms:contentKeyID: 48543497
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 42a5bf11e2ed287ac683f634d3953739b2501f60
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 0b4d68ac2dfca344cb98885846f2cd09fafd0ea0
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922805"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950238"
 ---
 # <a name="createrecordset-method-rds"></a>CreateRecordset メソッド (RDS)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 空の、接続されていない [Recordset](recordset-object-ado.md) を作成します。
 
@@ -27,50 +25,20 @@ ms.locfileid: "25922805"
 
 ## <a name="parameters"></a>パラメーター
 
-  - *Object*
+|パラメーター|説明|
+|:--------|:----------|
+|*Object* |[RDSServer.DataFactory](datafactory-object-rdsserver.md) オブジェクトまたは [RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。|
+|*ColumnsInfos* |作成した **Recordset** の各列を定義する属性を、バリアント型 ( **Variant** ) の配列で指定します。 各列には、次の 4 つの必須属性と 1 つの省略可能な属性を持つ配列を定義します。 各列の配列は、 **Recordset** を定義する 1 つの配列にまとめられます。 属性のリストは、次の表を参照してください。|
 
-  - [RDSServer.DataFactory](datafactory-object-rdsserver.md) オブジェクトまたは [RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。
+### <a name="variant-array-attributes"></a>配列と属性
 
-  - *ColumnsInfos*
-
-  - 作成した **Recordset** の各列を定義する属性を、バリアント型 ( **Variant** ) の配列で指定します。各列には、次の 4 つの必須属性と 1 つの省略可能な属性を持つ配列を定義します。 各列の配列は、 **Recordset** を定義する 1 つの配列にまとめられます。
-    
-    <table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><p>属性</p></th>
-    <th><p>説明</p></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>Name</p></td>
-    <td><p>列のヘッダー名を指定します。</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Type</p></td>
-    <td><p>データ型の整数値を指定します。</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Size</p></td>
-    <td><p>データ型にかかわらず、列の幅を文字数による整数値で指定します。</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Nullability</p></td>
-    <td><p>ブール型の値を指定します。</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Scale<br />
-(省略可能)</p></td>
-    <td><p>この属性は省略可能です。数値フィールドの小数値の桁数を定義します。この属性が省略された場合、小数点以下の桁数は 3 桁となり、4 桁以下は切り捨てられます。ただし、小数点以下の表示桁数が 3 桁になるだけで、精度には影響ありません。</p></td>
-    </tr>
-    </tbody>
-    </table>
-
+|属性|説明|
+|:--------|:----------|
+|Name |列のヘッダー名を指定します。|
+|Type |データ型の整数値を指定します。|
+|Size |データ型にかかわらず、列の幅を文字数による整数値で指定します。|
+|Nullability |ブール型の値を指定します。|
+|スケール (省略可能) |この属性は省略可能です。数値フィールドの小数値の桁数を定義します。この属性が省略された場合、小数点以下の桁数は 3 桁となり、4 桁以下は切り捨てられます。ただし、小数点以下の表示桁数が 3 桁になるだけで、精度には影響ありません。|
 
 ## <a name="remarks"></a>解説
 
