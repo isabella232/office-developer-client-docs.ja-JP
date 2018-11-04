@@ -6,59 +6,36 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249904(v=office.15)
 ms:contentKeyID: 48547407
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2967b6670ad96752e7ce47d82227fad70335e1f6
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 5c6f6d0f44000c0e40f93b7acfc461c7e3fb4e9c
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927404"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949839"
 ---
-# <a name="willchangefield-and-fieldchangecomplete-events-ado"></a><span data-ttu-id="8d999-102">WillChangeField イベントと FieldChangeComplete イベント (ADO)</span><span class="sxs-lookup"><span data-stu-id="8d999-102">WillChangeField and FieldChangeComplete events (ADO)</span></span>
+# <a name="willchangefield-and-fieldchangecomplete-events-ado"></a><span data-ttu-id="cdaa1-102">WillChangeField イベントと FieldChangeComplete イベント (ADO)</span><span class="sxs-lookup"><span data-stu-id="cdaa1-102">WillChangeField and FieldChangeComplete events (ADO)</span></span>
 
+<span data-ttu-id="cdaa1-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="cdaa1-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="8d999-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="8d999-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="cdaa1-p101">**WillChangeField** イベントは、保留中の操作で [Recordset](field-object-ado.md) 内の 1 つ以上の [Field](recordset-object-ado.md) オブジェクトの値が変更される前に呼び出されます。 **FieldChangeComplete** イベントは、1 つ以上の **Field** オブジェクトの値が変更された後に呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="cdaa1-p101">The **WillChangeField** event is called before a pending operation changes the value of one or more [Field](field-object-ado.md) objects in the [Recordset](recordset-object-ado.md). The **FieldChangeComplete** event is called after the value of one or more **Field** objects has changed.</span></span>
 
-<span data-ttu-id="8d999-p101">**WillChangeField** イベントは、保留中の操作で [Recordset](field-object-ado.md) 内の 1 つ以上の [Field](recordset-object-ado.md) オブジェクトの値が変更される前に呼び出されます。 **FieldChangeComplete** イベントは、1 つ以上の **Field** オブジェクトの値が変更された後に呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="8d999-p101">The **WillChangeField** event is called before a pending operation changes the value of one or more [Field](field-object-ado.md) objects in the [Recordset](recordset-object-ado.md). The **FieldChangeComplete** event is called after the value of one or more **Field** objects has changed.</span></span>
+## <a name="syntax"></a><span data-ttu-id="cdaa1-106">構文</span><span class="sxs-lookup"><span data-stu-id="cdaa1-106">Syntax</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8d999-106">構文</span><span class="sxs-lookup"><span data-stu-id="8d999-106">Syntax</span></span>
+<span data-ttu-id="cdaa1-107">WillChangeField*cFields*、*フィールド*、 *adStatus*、 *pRecordset*</span><span class="sxs-lookup"><span data-stu-id="cdaa1-107">WillChangeField*cFields*, *Fields*, *adStatus*, *pRecordset*</span></span>
 
-<span data-ttu-id="8d999-107">WillChangeField*cFields*、*フィールド*、 *adStatus*、 *pRecordset*</span><span class="sxs-lookup"><span data-stu-id="8d999-107">WillChangeField*cFields*, *Fields*, *adStatus*, *pRecordset*</span></span>
+<span data-ttu-id="cdaa1-108">FieldChangeComplete*cFields*、*フィールド*、 *pError*、 *adStatus*、 *pRecordset*</span><span class="sxs-lookup"><span data-stu-id="cdaa1-108">FieldChangeComplete*cFields*, *Fields*, *pError*, *adStatus*, *pRecordset*</span></span>
 
-<span data-ttu-id="8d999-108">FieldChangeComplete*cFields*、*フィールド*、 *pError*、 *adStatus*、 *pRecordset*</span><span class="sxs-lookup"><span data-stu-id="8d999-108">FieldChangeComplete*cFields*, *Fields*, *pError*, *adStatus*, *pRecordset*</span></span>
+## <a name="parameters"></a><span data-ttu-id="cdaa1-109">パラメーター</span><span class="sxs-lookup"><span data-stu-id="cdaa1-109">Parameters</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="8d999-109">パラメーター</span><span class="sxs-lookup"><span data-stu-id="8d999-109">Parameters</span></span>
+|<span data-ttu-id="cdaa1-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="cdaa1-110">Parameter</span></span>|<span data-ttu-id="cdaa1-111">説明</span><span class="sxs-lookup"><span data-stu-id="cdaa1-111">Description</span></span>|
+|:--------|:----------|
+|<span data-ttu-id="cdaa1-112">*cFields*</span><span class="sxs-lookup"><span data-stu-id="cdaa1-112">*cFields*</span></span> |<span data-ttu-id="cdaa1-113">*Fields* 内の **Field** オブジェクトの数を表す長整数型 (**Long**) の値です。</span><span class="sxs-lookup"><span data-stu-id="cdaa1-113">A **Long** that indicates the number of **Field** objects in *Fields*.</span></span>|
+|<span data-ttu-id="cdaa1-114">*Fields*</span><span class="sxs-lookup"><span data-stu-id="cdaa1-114">*Fields*</span></span> |<span data-ttu-id="cdaa1-115">**WillChangeField**の場合は、*フィールド*のパラメーターは元の値を持つ**フィールド**オブジェクトを格納する**バリアント**の配列です。</span><span class="sxs-lookup"><span data-stu-id="cdaa1-115">For **WillChangeField**, the *Fields* parameter is an array of **Variants** that contains **Field** objects with the original values.</span></span> <br/><br/><span data-ttu-id="cdaa1-116">**FieldChangeComplete**の場合、*フィールド*・ パラメーターの値が変更された**フィールド**のオブジェクトを含む**バリアント**の配列です。</span><span class="sxs-lookup"><span data-stu-id="cdaa1-116">For **FieldChangeComplete**, the *Fields* parameter is an array of **Variants** that contains **Field** objects with the changed values.</span></span>|
+|<span data-ttu-id="cdaa1-117">*pError*</span><span class="sxs-lookup"><span data-stu-id="cdaa1-117">*pError*</span></span> |<span data-ttu-id="cdaa1-p102">[Error](error-object-ado.md) オブジェクトです。 *adStatus* の値が **adStatusErrorsOccurred** の場合は、発生したエラーを示します。それ以外の場合は設定されません。</span><span class="sxs-lookup"><span data-stu-id="cdaa1-p102">An [Error](error-object-ado.md) object. It describes the error that occurred if the value of *adStatus* is **adStatusErrorsOccurred**; otherwise it is not set.</span></span>|
+|<span data-ttu-id="cdaa1-120">*adStatus*</span><span class="sxs-lookup"><span data-stu-id="cdaa1-120">*adStatus*</span></span> |<span data-ttu-id="cdaa1-121">[EventStatusEnum](eventstatusenum.md)。</span><span class="sxs-lookup"><span data-stu-id="cdaa1-121">[EventStatusEnum](eventstatusenum.md).</span></span> <span data-ttu-id="cdaa1-122">**WillChangeField** が呼び出されたとき、イベントを発生させた操作が成功した場合、このパラメーターは **adStatusOK** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="cdaa1-122">When **WillChangeField** is called, this parameter is set to **adStatusOK** if the operation that caused the event was successful.</span></span> <span data-ttu-id="cdaa1-123">保留中の操作の取り消しをこのイベントが要求できない場合、このパラメーターは **adStatusCantDeny** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="cdaa1-123">It is set to **adStatusCantDeny** if this event cannot request cancellation of the pending operation.</span></span> <br/><br/><span data-ttu-id="cdaa1-124">**FieldChangeComplete** が呼び出されたとき、このパラメーターは、イベントを発生させた操作が成功した場合は **adStatusOK** 、失敗した場合は **adStatusErrorsOccurred** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="cdaa1-124">When **FieldChangeComplete** is called, this parameter is set to **adStatusOK** if the operation that caused the event was successful, or to **adStatusErrorsOccurred** if the operation failed.</span></span> <br/><br/><span data-ttu-id="cdaa1-125">**WillChangeField** から制御が戻る前に保留中の操作の取り消しを要求する場合は、このパラメーターを **adStatusCancel** に設定します。</span><span class="sxs-lookup"><span data-stu-id="cdaa1-125">Before **WillChangeField** returns, set this parameter to **adStatusCancel** to request cancellation of the pending operation.</span></span> <br/><br/><span data-ttu-id="cdaa1-126">**FieldChangeComplete** から制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。</span><span class="sxs-lookup"><span data-stu-id="cdaa1-126">Before **FieldChangeComplete** returns, set this parameter to **adStatusUnwantedEvent** to prevent subsequent notifications.</span></span>|
+|<span data-ttu-id="cdaa1-127">*pRecordset*</span><span class="sxs-lookup"><span data-stu-id="cdaa1-127">*pRecordset*</span></span> |<span data-ttu-id="cdaa1-p104">**Recordset** オブジェクト。このイベントが発生した **Recordset** オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="cdaa1-p104">A **Recordset** object. The **Recordset** for which this event occurred.</span></span>|
 
-  - <span data-ttu-id="8d999-110">*cFields*</span><span class="sxs-lookup"><span data-stu-id="8d999-110">*cFields*</span></span>
+## <a name="remarks"></a><span data-ttu-id="cdaa1-130">解説</span><span class="sxs-lookup"><span data-stu-id="cdaa1-130">Remarks</span></span>
 
-  - <span data-ttu-id="8d999-111">*Fields* 内の **Field** オブジェクトの数を表す長整数型 (**Long**) の値です。</span><span class="sxs-lookup"><span data-stu-id="8d999-111">A **Long** that indicates the number of **Field** objects in *Fields*.</span></span>
-
-  - <span data-ttu-id="8d999-112">*Fields*</span><span class="sxs-lookup"><span data-stu-id="8d999-112">*Fields*</span></span>
-
-  - <span data-ttu-id="8d999-113">**WillChangeField**の場合は、*フィールド*のパラメーターは元の値を持つ**フィールド**オブジェクトを格納する**バリアント**の配列です。</span><span class="sxs-lookup"><span data-stu-id="8d999-113">For **WillChangeField**, the *Fields* parameter is an array of **Variants** that contains **Field** objects with the original values.</span></span>  
-      
-    <span data-ttu-id="8d999-114">**FieldChangeComplete**の場合、*フィールド*・ パラメーターの値が変更された**フィールド**のオブジェクトを含む**バリアント**の配列です。</span><span class="sxs-lookup"><span data-stu-id="8d999-114">For **FieldChangeComplete**, the *Fields* parameter is an array of **Variants** that contains **Field** objects with the changed values.</span></span>
-
-  - <span data-ttu-id="8d999-115">*pError*</span><span class="sxs-lookup"><span data-stu-id="8d999-115">*pError*</span></span>
-
-  - <span data-ttu-id="8d999-p102">[Error](error-object-ado.md) オブジェクトです。 *adStatus* の値が **adStatusErrorsOccurred** の場合は、発生したエラーを示します。それ以外の場合は設定されません。</span><span class="sxs-lookup"><span data-stu-id="8d999-p102">An [Error](error-object-ado.md) object. It describes the error that occurred if the value of *adStatus* is **adStatusErrorsOccurred**; otherwise it is not set.</span></span>
-
-  - <span data-ttu-id="8d999-118">*adStatus*</span><span class="sxs-lookup"><span data-stu-id="8d999-118">*adStatus*</span></span>
-
-  - [<span data-ttu-id="8d999-119">EventStatusEnum</span><span class="sxs-lookup"><span data-stu-id="8d999-119">EventStatusEnum</span></span>](eventstatusenum.md)
-    
-    <span data-ttu-id="8d999-p103">**WillChangeField** が呼び出されたとき、イベントを発生させた操作が成功した場合、このパラメーターは **adStatusOK** に設定されます。保留中の操作の取り消しをこのイベントが要求できない場合、このパラメーターは **adStatusCantDeny** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="8d999-p103">When **WillChangeField** is called, this parameter is set to **adStatusOK** if the operation that caused the event was successful. It is set to **adStatusCantDeny** if this event cannot request cancellation of the pending operation.</span></span>
-    
-    <span data-ttu-id="8d999-122">**FieldChangeComplete** が呼び出されたとき、このパラメーターは、イベントを発生させた操作が成功した場合は **adStatusOK** 、失敗した場合は **adStatusErrorsOccurred** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="8d999-122">When **FieldChangeComplete** is called, this parameter is set to **adStatusOK** if the operation that caused the event was successful, or to **adStatusErrorsOccurred** if the operation failed.</span></span>
-    
-    <span data-ttu-id="8d999-123">**WillChangeField** から制御が戻る前に保留中の操作の取り消しを要求する場合は、このパラメーターを **adStatusCancel** に設定します。</span><span class="sxs-lookup"><span data-stu-id="8d999-123">Before **WillChangeField** returns, set this parameter to **adStatusCancel** to request cancellation of the pending operation.</span></span>
-    
-    <span data-ttu-id="8d999-124">**FieldChangeComplete** から制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。</span><span class="sxs-lookup"><span data-stu-id="8d999-124">Before **FieldChangeComplete** returns, set this parameter to **adStatusUnwantedEvent** to prevent subsequent notifications.</span></span>
-
-  - <span data-ttu-id="8d999-125">*pRecordset*</span><span class="sxs-lookup"><span data-stu-id="8d999-125">*pRecordset*</span></span>
-
-  - <span data-ttu-id="8d999-p104">**Recordset** オブジェクト。このイベントが発生した **Recordset** オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="8d999-p104">A **Recordset** object. The **Recordset** for which this event occurred.</span></span>
-
-## <a name="remarks"></a><span data-ttu-id="8d999-128">解説</span><span class="sxs-lookup"><span data-stu-id="8d999-128">Remarks</span></span>
-
-<span data-ttu-id="8d999-129">**WillChangeField** イベントまたは **FieldChangeComplete** イベントは、 [Value](value-property-ado.md) プロパティを設定し、フィールドと値配列パラメーターを指定して [Update](update-method-ado.md) メソッドを呼び出したときに発生します。</span><span class="sxs-lookup"><span data-stu-id="8d999-129">A **WillChangeField** or **FieldChangeComplete** event may occur when setting the [Value](value-property-ado.md) property and calling the [Update](update-method-ado.md) method with field and value array parameters.</span></span>
+<span data-ttu-id="cdaa1-131">**WillChangeField** イベントまたは **FieldChangeComplete** イベントは、 [Value](value-property-ado.md) プロパティを設定し、フィールドと値配列パラメーターを指定して [Update](update-method-ado.md) メソッドを呼び出したときに発生します。</span><span class="sxs-lookup"><span data-stu-id="cdaa1-131">A **WillChangeField** or **FieldChangeComplete** event may occur when setting the [Value](value-property-ado.md) property and calling the [Update](update-method-ado.md) method with field and value array parameters.</span></span>
 

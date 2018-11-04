@@ -6,32 +6,30 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249726(v=office.15)
 ms:contentKeyID: 48546664
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b1bdfa895c00354064437406424fa0a5211d42a5
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 8e43f8fe5537ded015b5b8d79bb32f811e73368c
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926634"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949349"
 ---
-# <a name="append-method-adox-tables"></a><span data-ttu-id="41da4-102">Append メソッド (ADOX Tables)</span><span class="sxs-lookup"><span data-stu-id="41da4-102">Append method (ADOX Tables)</span></span>
+# <a name="append-method-adox-tables"></a><span data-ttu-id="7ec9e-102">Append メソッド (ADOX Tables)</span><span class="sxs-lookup"><span data-stu-id="7ec9e-102">Append method (ADOX Tables)</span></span>
 
+<span data-ttu-id="7ec9e-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="7ec9e-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="41da4-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="41da4-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="7ec9e-104">新しい [Table](table-object-adox.md) オブジェクトを [Tables](tables-collection-adox.md) コレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="7ec9e-104">Adds a new [Table](table-object-adox.md) object to the [Tables](tables-collection-adox.md) collection.</span></span>
 
+## <a name="syntax"></a><span data-ttu-id="7ec9e-105">構文</span><span class="sxs-lookup"><span data-stu-id="7ec9e-105">Syntax</span></span>
 
-<span data-ttu-id="41da4-104">新しい [Table](table-object-adox.md) オブジェクトを [Tables](tables-collection-adox.md) コレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="41da4-104">Adds a new [Table](table-object-adox.md) object to the [Tables](tables-collection-adox.md) collection.</span></span>
+<span data-ttu-id="7ec9e-106">*テーブル*です。*テーブル*を追加します。</span><span class="sxs-lookup"><span data-stu-id="7ec9e-106">*Tables*.Append*Table*</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="41da4-105">構文</span><span class="sxs-lookup"><span data-stu-id="41da4-105">Syntax</span></span>
+## <a name="parameters"></a><span data-ttu-id="7ec9e-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7ec9e-107">Parameters</span></span>
 
-<span data-ttu-id="41da4-106">*テーブル*です。*テーブル*を追加します。</span><span class="sxs-lookup"><span data-stu-id="41da4-106">*Tables*.Append*Table*</span></span>
+|<span data-ttu-id="7ec9e-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7ec9e-108">Parameter</span></span>|<span data-ttu-id="7ec9e-109">説明</span><span class="sxs-lookup"><span data-stu-id="7ec9e-109">Description</span></span>|
+|:--------|:----------|
+|<span data-ttu-id="7ec9e-110">*Table*</span><span class="sxs-lookup"><span data-stu-id="7ec9e-110">*Table*</span></span> | <span data-ttu-id="7ec9e-111">追加する **Table** への参照を含むバリアント型 ( **Variant** ) の値、または作成して追加するテーブルの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="7ec9e-111">A **Variant** value that contains a reference to the **Table** to append or the name of the table to create and append.</span></span>|
 
-## <a name="parameters"></a><span data-ttu-id="41da4-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="41da4-107">Parameters</span></span>
+## <a name="remarks"></a><span data-ttu-id="7ec9e-112">解説</span><span class="sxs-lookup"><span data-stu-id="7ec9e-112">Remarks</span></span>
 
-  - <span data-ttu-id="41da4-108">*Table*</span><span class="sxs-lookup"><span data-stu-id="41da4-108">*Table*</span></span>
-
-  - <span data-ttu-id="41da4-109">追加する **Table** への参照を含むバリアント型 ( **Variant** ) の値、または作成して追加するテーブルの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="41da4-109">A **Variant** value that contains a reference to the **Table** to append or the name of the table to create and append.</span></span>
-
-## <a name="remarks"></a><span data-ttu-id="41da4-110">解説</span><span class="sxs-lookup"><span data-stu-id="41da4-110">Remarks</span></span>
-
-<span data-ttu-id="41da4-111">プロバイダーがテーブルの作成をサポートしていない場合は、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="41da4-111">An error will occur if the provider does not support creating tables.</span></span>
+<span data-ttu-id="7ec9e-113">プロバイダーがテーブルの作成をサポートしていない場合は、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="7ec9e-113">An error will occur if the provider does not support creating tables.</span></span>
 
