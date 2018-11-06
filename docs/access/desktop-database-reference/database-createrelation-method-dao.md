@@ -10,26 +10,26 @@ f1_keywords:
 - dao360.chm1052969
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 2a1ad7798fc6236f95d31c18cd864fe64e7a3fd8
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: 1de2b13892ceda1cf34758414d38e649545f229e
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949929"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998274"
 ---
-# <a name="databasecreaterelation-method-dao"></a><span data-ttu-id="58166-102">Database.CreateRelation メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="58166-102">Database.CreateRelation method (DAO)</span></span>
+# <a name="databasecreaterelation-method-dao"></a><span data-ttu-id="d113e-102">Database.CreateRelation メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="d113e-102">Database.CreateRelation method (DAO)</span></span>
 
-<span data-ttu-id="58166-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="58166-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="d113e-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="d113e-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="58166-p101">新しい **[Relation](relation-object-dao.md)** オブジェクトを作成します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="58166-p101">Creates a new **[Relation](relation-object-dao.md)** object (Microsoft Access workspaces only). .</span></span>
+<span data-ttu-id="d113e-p101">新しい **[Relation](relation-object-dao.md)** オブジェクトを作成します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="d113e-p101">Creates a new **[Relation](relation-object-dao.md)** object (Microsoft Access workspaces only). .</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="58166-106">構文</span><span class="sxs-lookup"><span data-stu-id="58166-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d113e-106">構文</span><span class="sxs-lookup"><span data-stu-id="d113e-106">Syntax</span></span>
 
-<span data-ttu-id="58166-107">*式*です。CreateRelation (***名前***、***テーブル***、***外部テーブル\*\*\*\*\*\*の属性***)</span><span class="sxs-lookup"><span data-stu-id="58166-107">*expression* .CreateRelation(***Name***, ***Table***, ***ForeignTable***, ***Attributes***)</span></span>
+<span data-ttu-id="d113e-107">*式*です。CreateRelation (***名前***、***テーブル***、***外部テーブル\*\*\*\*\*\*の属性***)</span><span class="sxs-lookup"><span data-stu-id="d113e-107">*expression* .CreateRelation(***Name***, ***Table***, ***ForeignTable***, ***Attributes***)</span></span>
 
-<span data-ttu-id="58166-108">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="58166-108">*expression* A variable that represents a **Database** object.</span></span>
+<span data-ttu-id="d113e-108">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="d113e-108">*expression* A variable that represents a **Database** object.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="58166-109">パラメーター</span><span class="sxs-lookup"><span data-stu-id="58166-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="d113e-109">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d113e-109">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -40,62 +40,62 @@ ms.locfileid: "25949929"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="58166-110">名前</span><span class="sxs-lookup"><span data-stu-id="58166-110">Name</span></span></p></th>
-<th><p><span data-ttu-id="58166-111">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="58166-111">Required/Optional</span></span></p></th>
-<th><p><span data-ttu-id="58166-112">データ型</span><span class="sxs-lookup"><span data-stu-id="58166-112">Data Type</span></span></p></th>
-<th><p><span data-ttu-id="58166-113">説明</span><span class="sxs-lookup"><span data-stu-id="58166-113">Description</span></span></p></th>
+<th><p><span data-ttu-id="d113e-110">名前</span><span class="sxs-lookup"><span data-stu-id="d113e-110">Name</span></span></p></th>
+<th><p><span data-ttu-id="d113e-111">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="d113e-111">Required/optional</span></span></p></th>
+<th><p><span data-ttu-id="d113e-112">データ型</span><span class="sxs-lookup"><span data-stu-id="d113e-112">Data type</span></span></p></th>
+<th><p><span data-ttu-id="d113e-113">説明</span><span class="sxs-lookup"><span data-stu-id="d113e-113">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="58166-114"><em>Name</em></span><span class="sxs-lookup"><span data-stu-id="58166-114"><em>Name</em></span></span></p></td>
-<td><p><span data-ttu-id="58166-115">省略可能</span><span class="sxs-lookup"><span data-stu-id="58166-115">Optional</span></span></p></td>
-<td><p><span data-ttu-id="58166-116"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="58166-116"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="58166-p102">新しい <strong>Relation</strong> オブジェクトの一意の名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。有効な <strong>Relation</strong> 名の詳細については、<strong><a href="connection-name-property-dao.md">Name</a></strong> プロパティを参照してください。</span><span class="sxs-lookup"><span data-stu-id="58166-p102">A <strong>Variant</strong> (<strong>String</strong> subtype) that uniquely names the new <strong>Relation</strong> object. See the <strong><a href="connection-name-property-dao.md">Name</a></strong> property for details on valid <strong>Relation</strong> names.</span></span></p></td>
+<td><p><span data-ttu-id="d113e-114"><em>Name</em></span><span class="sxs-lookup"><span data-stu-id="d113e-114"><em>Name</em></span></span></p></td>
+<td><p><span data-ttu-id="d113e-115">省略可能</span><span class="sxs-lookup"><span data-stu-id="d113e-115">Optional</span></span></p></td>
+<td><p><span data-ttu-id="d113e-116"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="d113e-116"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="d113e-p102">新しい <strong>Relation</strong> オブジェクトの一意の名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。有効な <strong>Relation</strong> 名の詳細については、<strong><a href="connection-name-property-dao.md">Name</a></strong> プロパティを参照してください。</span><span class="sxs-lookup"><span data-stu-id="d113e-p102">A <strong>Variant</strong> (<strong>String</strong> subtype) that uniquely names the new <strong>Relation</strong> object. See the <strong><a href="connection-name-property-dao.md">Name</a></strong> property for details on valid <strong>Relation</strong> names.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="58166-119"><em>Table</em></span><span class="sxs-lookup"><span data-stu-id="58166-119"><em>Table</em></span></span></p></td>
-<td><p><span data-ttu-id="58166-120">省略可能</span><span class="sxs-lookup"><span data-stu-id="58166-120">Optional</span></span></p></td>
-<td><p><span data-ttu-id="58166-121"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="58166-121"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="58166-p103">リレーションにおける主テーブルの名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。<strong>Relation</strong> オブジェクトを追加する前にこのテーブルが存在していないと、実行時エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="58166-p103">A <strong>Variant</strong> (<strong>String</strong> subtype) that names the primary table in the relation. If the table doesn't exist before you append the <strong>Relation</strong> object, a run-time error occurs.</span></span></p></td>
+<td><p><span data-ttu-id="d113e-119"><em>Table</em></span><span class="sxs-lookup"><span data-stu-id="d113e-119"><em>Table</em></span></span></p></td>
+<td><p><span data-ttu-id="d113e-120">省略可能</span><span class="sxs-lookup"><span data-stu-id="d113e-120">Optional</span></span></p></td>
+<td><p><span data-ttu-id="d113e-121"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="d113e-121"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="d113e-p103">リレーションにおける主テーブルの名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。<strong>Relation</strong> オブジェクトを追加する前にこのテーブルが存在していないと、実行時エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d113e-p103">A <strong>Variant</strong> (<strong>String</strong> subtype) that names the primary table in the relation. If the table doesn't exist before you append the <strong>Relation</strong> object, a run-time error occurs.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="58166-124"><em>外部テーブル</em></span><span class="sxs-lookup"><span data-stu-id="58166-124"><em>ForeignTable</em></span></span></p></td>
-<td><p><span data-ttu-id="58166-125">省略可能</span><span class="sxs-lookup"><span data-stu-id="58166-125">Optional</span></span></p></td>
-<td><p><span data-ttu-id="58166-126"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="58166-126"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="58166-p104">リレーションにおける外部キー側のテーブルの名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。<strong>Relation</strong> オブジェクトを追加する前にこのテーブルが存在していないと、実行時エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="58166-p104">A <strong>Variant</strong> (<strong>String</strong> subtype) that names the foreign table in the relation. If the table doesn't exist before you append the <strong>Relation</strong> object, a run-time error occurs.</span></span></p></td>
+<td><p><span data-ttu-id="d113e-124"><em>外部テーブル</em></span><span class="sxs-lookup"><span data-stu-id="d113e-124"><em>ForeignTable</em></span></span></p></td>
+<td><p><span data-ttu-id="d113e-125">省略可能</span><span class="sxs-lookup"><span data-stu-id="d113e-125">Optional</span></span></p></td>
+<td><p><span data-ttu-id="d113e-126"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="d113e-126"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="d113e-p104">リレーションにおける外部キー側のテーブルの名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。<strong>Relation</strong> オブジェクトを追加する前にこのテーブルが存在していないと、実行時エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d113e-p104">A <strong>Variant</strong> (<strong>String</strong> subtype) that names the foreign table in the relation. If the table doesn't exist before you append the <strong>Relation</strong> object, a run-time error occurs.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="58166-129"><em>Attributes</em></span><span class="sxs-lookup"><span data-stu-id="58166-129"><em>Attributes</em></span></span></p></td>
-<td><p><span data-ttu-id="58166-130">省略可能</span><span class="sxs-lookup"><span data-stu-id="58166-130">Optional</span></span></p></td>
-<td><p><span data-ttu-id="58166-131"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="58166-131"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="58166-p105">リレーションシップの種類に関する情報を格納している定数 (または定数の組み合わせ)。詳細については、<strong><a href="field-attributes-property-dao.md">Attributes</a></strong> プロパティを参照してください。</span><span class="sxs-lookup"><span data-stu-id="58166-p105">A constant or combination of constants that contains information about the relationship type. See the <strong><a href="field-attributes-property-dao.md">Attributes</a></strong> property for details.</span></span></p></td>
+<td><p><span data-ttu-id="d113e-129"><em>Attributes</em></span><span class="sxs-lookup"><span data-stu-id="d113e-129"><em>Attributes</em></span></span></p></td>
+<td><p><span data-ttu-id="d113e-130">省略可能</span><span class="sxs-lookup"><span data-stu-id="d113e-130">Optional</span></span></p></td>
+<td><p><span data-ttu-id="d113e-131"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="d113e-131"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="d113e-p105">リレーションシップの種類に関する情報を格納している定数 (または定数の組み合わせ)。詳細については、<strong><a href="field-attributes-property-dao.md">Attributes</a></strong> プロパティを参照してください。</span><span class="sxs-lookup"><span data-stu-id="d113e-p105">A constant or combination of constants that contains information about the relationship type. See the <strong><a href="field-attributes-property-dao.md">Attributes</a></strong> property for details.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="return-value"></a><span data-ttu-id="58166-134">戻り値</span><span class="sxs-lookup"><span data-stu-id="58166-134">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d113e-134">戻り値</span><span class="sxs-lookup"><span data-stu-id="d113e-134">Return value</span></span>
 
-<span data-ttu-id="58166-135">Relation</span><span class="sxs-lookup"><span data-stu-id="58166-135">Relation</span></span>
+<span data-ttu-id="d113e-135">Relation</span><span class="sxs-lookup"><span data-stu-id="d113e-135">Relation</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="58166-136">注釈</span><span class="sxs-lookup"><span data-stu-id="58166-136">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d113e-136">注釈</span><span class="sxs-lookup"><span data-stu-id="d113e-136">Remarks</span></span>
 
-<span data-ttu-id="58166-p106">**Relation** オブジェクトは、2 つの **[TableDef](tabledef-object-dao.md)** オブジェクトまたは **[QueryDef](querydef-object-dao.md)** オブジェクト間のリレーションシップに関する情報を Microsoft Access データベース エンジンに渡します。 **Attributes** プロパティを使用して、参照整合性を実装できます。</span><span class="sxs-lookup"><span data-stu-id="58166-p106">The **Relation** object provides information to the Microsoft Access database engine about the relationship between fields in two **[TableDef](tabledef-object-dao.md)** or **[QueryDef](querydef-object-dao.md)** objects. You can implement referential integrity by using the **Attributes** property.</span></span>
+<span data-ttu-id="d113e-p106">**Relation** オブジェクトは、2 つの **[TableDef](tabledef-object-dao.md)** オブジェクトまたは **[QueryDef](querydef-object-dao.md)** オブジェクト間のリレーションシップに関する情報を Microsoft Access データベース エンジンに渡します。 **Attributes** プロパティを使用して、参照整合性を実装できます。</span><span class="sxs-lookup"><span data-stu-id="d113e-p106">The **Relation** object provides information to the Microsoft Access database engine about the relationship between fields in two **[TableDef](tabledef-object-dao.md)** or **[QueryDef](querydef-object-dao.md)** objects. You can implement referential integrity by using the **Attributes** property.</span></span>
 
-<span data-ttu-id="58166-p107">**CreateRelation** メソッドの使用時に省略可能な引数を省略した場合は、新しいオブジェクトをコレクションに追加する前に適切な代入ステートメントを使用して、対応するプロパティを設定またはリセットできます。オブジェクトの追加後は、プロパティの設定は一切変更できません。詳細については、各プロパティのトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="58166-p107">If you omit one or more of the optional parts when you use the **CreateRelation** method, you can use an appropriate assignment statement to set or reset the corresponding property before you append the new object to a collection. After you append the object, you can't alter any of its property settings. See the individual property topics for more details.</span></span>
+<span data-ttu-id="d113e-p107">**CreateRelation** メソッドの使用時に省略可能な引数を省略した場合は、新しいオブジェクトをコレクションに追加する前に適切な代入ステートメントを使用して、対応するプロパティを設定またはリセットできます。オブジェクトの追加後は、プロパティの設定は一切変更できません。詳細については、各プロパティのトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="d113e-p107">If you omit one or more of the optional parts when you use the **CreateRelation** method, you can use an appropriate assignment statement to set or reset the corresponding property before you append the new object to a collection. After you append the object, you can't alter any of its property settings. See the individual property topics for more details.</span></span>
 
-<span data-ttu-id="58166-142">[Relation](fields-append-method-dao.md) オブジェクトの \*\*\*\*Append\*\*\*\* メソッドを使用する前に、適切な **[Field](field-object-dao.md)** オブジェクトを追加して、主キーと外部キーのリレーションシップのテーブルを定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="58166-142">Before you can use the **[Append](fields-append-method-dao.md)** method on a **Relation** object, you must append the appropriate **[Field](field-object-dao.md)** objects to define the primary and foreign key relationship tables.</span></span>
+<span data-ttu-id="d113e-142">[Relation](fields-append-method-dao.md) オブジェクトの \*\*\*\*Append\*\*\*\* メソッドを使用する前に、適切な **[Field](field-object-dao.md)** オブジェクトを追加して、主キーと外部キーのリレーションシップのテーブルを定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d113e-142">Before you can use the **[Append](fields-append-method-dao.md)** method on a **Relation** object, you must append the appropriate **[Field](field-object-dao.md)** objects to define the primary and foreign key relationship tables.</span></span>
 
-<span data-ttu-id="58166-143">名が既にコレクションのメンバーであるオブジェクトを参照する場合、または従属**Fields**コレクションに**Field**オブジェクトの名前が無効な場合は、 **Append**メソッドを使用すると、実行時エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="58166-143">If name refers to an object that is already a member of the collection or if the **Field** object names provided in the subordinate **Fields** collection are invalid, a run-time error occurs when you use the **Append** method.</span></span>
+<span data-ttu-id="d113e-143">名が既にコレクションのメンバーであるオブジェクトを参照する場合、または従属**Fields**コレクションに**Field**オブジェクトの名前が無効な場合は、 **Append**メソッドを使用すると、実行時エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="d113e-143">If name refers to an object that is already a member of the collection or if the **Field** object names provided in the subordinate **Fields** collection are invalid, a run-time error occurs when you use the **Append** method.</span></span>
 
-<span data-ttu-id="58166-144">レプリケートされたテーブルとローカル テーブルの間にリレーションシップを設定したり、設定を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="58166-144">You can't establish or maintain a relationship between a replicated table and a local table.</span></span>
+<span data-ttu-id="d113e-144">レプリケートされたテーブルとローカル テーブルの間にリレーションシップを設定したり、設定を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="d113e-144">You can't establish or maintain a relationship between a replicated table and a local table.</span></span>
 
-<span data-ttu-id="58166-145">[**Relations**](relations-collection-dao.md) コレクションから **Relation** オブジェクトを削除するには、コレクションの **[Delete](fields-delete-method-dao.md)** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="58166-145">To remove a **Relation** object from the **[Relations](relations-collection-dao.md)** collection, use the **[Delete](fields-delete-method-dao.md)** method on the collection.</span></span>
+<span data-ttu-id="d113e-145">[**Relations**](relations-collection-dao.md) コレクションから **Relation** オブジェクトを削除するには、コレクションの **[Delete](fields-delete-method-dao.md)** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="d113e-145">To remove a **Relation** object from the **[Relations](relations-collection-dao.md)** collection, use the **[Delete](fields-delete-method-dao.md)** method on the collection.</span></span>
 
-## <a name="example"></a><span data-ttu-id="58166-146">例</span><span class="sxs-lookup"><span data-stu-id="58166-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d113e-146">例</span><span class="sxs-lookup"><span data-stu-id="d113e-146">Example</span></span>
 
-<span data-ttu-id="58166-p108">この例では、 **CreateRelation** メソッドを使用して、Employees **TableDef** と新規作成された Departments という **TableDef** の間に **Relation** を作成します。この例では、 **Relation** を新規作成することによって、外部テーブルに必要な **Indexes** が作成されることも示します (Employees テーブルの DepartmentsEmployees Index)。</span><span class="sxs-lookup"><span data-stu-id="58166-p108">This example uses the **CreateRelation** method to create a **Relation** between the Employees **TableDef** and a new **TableDef** called Departments. This example also demonstrates how creating a new **Relation** will also create any necessary **Indexes** in the foreign table (the DepartmentsEmployees Index in the Employees table).</span></span>
+<span data-ttu-id="d113e-p108">この例では、 **CreateRelation** メソッドを使用して、Employees **TableDef** と新規作成された Departments という **TableDef** の間に **Relation** を作成します。この例では、 **Relation** を新規作成することによって、外部テーブルに必要な **Indexes** が作成されることも示します (Employees テーブルの DepartmentsEmployees Index)。</span><span class="sxs-lookup"><span data-stu-id="d113e-p108">This example uses the **CreateRelation** method to create a **Relation** between the Employees **TableDef** and a new **TableDef** called Departments. This example also demonstrates how creating a new **Relation** will also create any necessary **Indexes** in the foreign table (the DepartmentsEmployees Index in the Employees table).</span></span>
 
 ```vb
     Sub CreateRelationX() 

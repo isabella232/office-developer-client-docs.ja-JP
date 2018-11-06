@@ -10,41 +10,37 @@ f1_keywords:
 - dao360.chm1101187
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f1d587501cb9a3279db055b9eee27d765e002a03
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: a30c9d12de32f4137e3bb365254445f96e8b03c6
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925941"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998785"
 ---
-# <a name="querydefprepare-property-dao"></a><span data-ttu-id="46aa9-102">QueryDef.Prepare プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="46aa9-102">QueryDef.Prepare property (DAO)</span></span>
+# <a name="querydefprepare-property-dao"></a><span data-ttu-id="7293d-102">QueryDef.Prepare プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="7293d-102">QueryDef.Prepare property (DAO)</span></span>
 
+<span data-ttu-id="7293d-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="7293d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="46aa9-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="46aa9-103">**Applies to**: Access 2013, Office 2013</span></span>
+## <a name="syntax"></a><span data-ttu-id="7293d-104">構文</span><span class="sxs-lookup"><span data-stu-id="7293d-104">Syntax</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="46aa9-104">構文</span><span class="sxs-lookup"><span data-stu-id="46aa9-104">Syntax</span></span>
+<span data-ttu-id="7293d-105">*式*です。準備</span><span class="sxs-lookup"><span data-stu-id="7293d-105">*expression* .Prepare</span></span>
 
-<span data-ttu-id="46aa9-105">*式*です。準備</span><span class="sxs-lookup"><span data-stu-id="46aa9-105">*expression* .Prepare</span></span>
+<span data-ttu-id="7293d-106">\*式\***クエリ定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="7293d-106">*expression* A variable that represents a **QueryDef** object.</span></span>
 
-<span data-ttu-id="46aa9-106">\*式\***クエリ定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="46aa9-106">*expression* A variable that represents a **QueryDef** object.</span></span>
+## <a name="remarks"></a><span data-ttu-id="7293d-107">注釈</span><span class="sxs-lookup"><span data-stu-id="7293d-107">Remarks</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="46aa9-107">注釈</span><span class="sxs-lookup"><span data-stu-id="46aa9-107">Remarks</span></span>
+<span data-ttu-id="7293d-p101">**Prepare** プロパティを使用すると、クエリから一時的なストアド プロシージャをサーバーに作成した後でそのプロシージャを実行するか、またはクエリを直接実行するかを指定できます。既定では、 **Prepare** プロパティは **dbQPrepare** に設定されています。一方、このプロパティを **dbQUnprepare** に設定すると、クエリのプロシージャは準備されません。この場合、クエリは **SQLExecDirect** API を使用して実行されます。</span><span class="sxs-lookup"><span data-stu-id="7293d-p101">You can use the **Prepare** property to either have the server create a temporary stored procedure from your query and then execute it, or just have the query executed directly. By default the **Prepare** property is set to **dbQPrepare**. However, you can set this property to **dbQUnprepare** to prohibit preparing of the query. In this case, the query is executed using the **SQLExecDirect** API.</span></span>
 
-<span data-ttu-id="46aa9-p101">**Prepare** プロパティを使用すると、クエリから一時的なストアド プロシージャをサーバーに作成した後でそのプロシージャを実行するか、またはクエリを直接実行するかを指定できます。既定では、 **Prepare** プロパティは **dbQPrepare** に設定されています。一方、このプロパティを **dbQUnprepare** に設定すると、クエリのプロシージャは準備されません。この場合、クエリは **SQLExecDirect** API を使用して実行されます。</span><span class="sxs-lookup"><span data-stu-id="46aa9-p101">You can use the **Prepare** property to either have the server create a temporary stored procedure from your query and then execute it, or just have the query executed directly. By default the **Prepare** property is set to **dbQPrepare**. However, you can set this property to **dbQUnprepare** to prohibit preparing of the query. In this case, the query is executed using the **SQLExecDirect** API.</span></span>
+<span data-ttu-id="7293d-p102">ストアド プロシージャを作成すると初期操作の速度は低下する可能性がありますが、それ以降のクエリに対するすべての参照のパフォーマンスが向上します。ただし、一部のクエリは、ストアド プロシージャの形式で実行できません。これらのクエリに対しては、 **Prepare** プロパティを **dbQUnprepare** に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7293d-p102">Creating a stored procedure can slow down the initial operation, but increases performance of all subsequent references to the query. However, some queries cannot be executed in the form of stored procedures. In these cases, you must set the **Prepare** property to **dbQUnprepare**.</span></span>
 
-<span data-ttu-id="46aa9-p102">ストアド プロシージャを作成すると初期操作の速度は低下する可能性がありますが、それ以降のクエリに対するすべての参照のパフォーマンスが向上します。ただし、一部のクエリは、ストアド プロシージャの形式で実行できません。これらのクエリに対しては、 **Prepare** プロパティを **dbQUnprepare** に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="46aa9-p102">Creating a stored procedure can slow down the initial operation, but increases performance of all subsequent references to the query. However, some queries cannot be executed in the form of stored procedures. In these cases, you must set the **Prepare** property to **dbQUnprepare**.</span></span>
-
-<span data-ttu-id="46aa9-115">**準備**が**dbQPrepare**に設定されているこの**dbExecDirect**に**[Execute](querydef-execute-method-dao.md)** メソッドのオプションの引数を設定することによってクエリが実行されるときは、オーバーライドできます。</span><span class="sxs-lookup"><span data-stu-id="46aa9-115">If **Prepare** is set to **dbQPrepare**, this can be overridden when the query is executed by setting the **[Execute](querydef-execute-method-dao.md)** method's options argument to **dbExecDirect**.</span></span>
-
+<span data-ttu-id="7293d-115">**準備**が**dbQPrepare**に設定されているこの**dbExecDirect**に**[Execute](querydef-execute-method-dao.md)** メソッドのオプションの引数を設定することによってクエリが実行されるときは、オーバーライドできます。</span><span class="sxs-lookup"><span data-stu-id="7293d-115">If **Prepare** is set to **dbQPrepare**, this can be overridden when the query is executed by setting the **[Execute](querydef-execute-method-dao.md)** method's options argument to **dbExecDirect**.</span></span>
 
 > [!NOTE]
-> <P><span data-ttu-id="46aa9-p103">[!メモ] ODBC <STRONG>SQLPrepare</STRONG> API は、DAO <STRONG><A href="querydef-sql-property-dao.md">SQL</A></STRONG> プロパティを設定した直後に呼び出されます。このため、 <STRONG>dbQUnprepare</STRONG> オプションを使用してパフォーマンスを向上させる場合は、 <STRONG>SQL</STRONG> プロパティを設定する前に <STRONG>Prepare</STRONG> プロパティを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="46aa9-p103">The ODBC <STRONG>SQLPrepare</STRONG> API is called as soon as the DAO <STRONG><A href="querydef-sql-property-dao.md">SQL</A></STRONG> property is set. Therefore, if you want to improve performance using the <STRONG>dbQUnprepare</STRONG> option, you must set the <STRONG>Prepare</STRONG> property before setting the <STRONG>SQL</STRONG> property.</span></span></P>
+> <span data-ttu-id="7293d-p103">[!メモ] ODBC **SQLPrepare** API は、DAO **[SQL](querydef-sql-property-dao.md)** プロパティを設定した直後に呼び出されます。このため、 **dbQUnprepare** オプションを使用してパフォーマンスを向上させる場合は、 **SQL** プロパティを設定する前に **Prepare** プロパティを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7293d-p103">The ODBC **SQLPrepare** API is called as soon as the DAO **[SQL](querydef-sql-property-dao.md)** property is set. Therefore, if you want to improve performance using the **dbQUnprepare** option, you must set the **Prepare** property before setting the **SQL** property.</span></span>
 
+## <a name="example"></a><span data-ttu-id="7293d-118">例</span><span class="sxs-lookup"><span data-stu-id="7293d-118">Example</span></span>
 
-
-## <a name="example"></a><span data-ttu-id="46aa9-118">例</span><span class="sxs-lookup"><span data-stu-id="46aa9-118">Example</span></span>
-
-<span data-ttu-id="46aa9-119">この例では、 **Prepare** プロパティを使用して、最初に一時的なストアド プロシージャをサーバーに作成するのではなく、クエリを直接実行するように指定します。</span><span class="sxs-lookup"><span data-stu-id="46aa9-119">This example uses the **Prepare** property to specify that a query should be executed directly rather than first creating a temporary stored procedure on the server.</span></span>
+<span data-ttu-id="7293d-119">この例では、 **Prepare** プロパティを使用して、最初に一時的なストアド プロシージャをサーバーに作成するのではなく、クエリを直接実行するように指定します。</span><span class="sxs-lookup"><span data-stu-id="7293d-119">This example uses the **Prepare** property to specify that a query should be executed directly rather than first creating a temporary stored procedure on the server.</span></span>
 
 ```vb 
 Sub PrepareX() 

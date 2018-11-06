@@ -6,27 +6,26 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197351(v=office.15)
 ms:contentKeyID: 48546252
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 66f08fa9733de0b63ca8bb659972abbc59183e16
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 0c725919b6509b5c802502fc8280823c407516f6
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922322"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998827"
 ---
-# <a name="indexesdelete-method-dao"></a><span data-ttu-id="b4365-102">Indexes.Delete メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="b4365-102">Indexes.Delete method (DAO)</span></span>
+# <a name="indexesdelete-method-dao"></a><span data-ttu-id="5eda8-102">Indexes.Delete メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="5eda8-102">Indexes.Delete method (DAO)</span></span>
 
+<span data-ttu-id="5eda8-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="5eda8-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="b4365-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="b4365-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="5eda8-104">指定した **Index** を **Indexes** コレクションから削除します。</span><span class="sxs-lookup"><span data-stu-id="5eda8-104">Deletes the specified **Index** from the **Indexes** collection.</span></span>
 
-<span data-ttu-id="b4365-104">指定した **Index** を **Indexes** コレクションから削除します。</span><span class="sxs-lookup"><span data-stu-id="b4365-104">Deletes the specified **Index** from the **Indexes** collection.</span></span>
+## <a name="syntax"></a><span data-ttu-id="5eda8-105">構文</span><span class="sxs-lookup"><span data-stu-id="5eda8-105">Syntax</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="b4365-105">構文</span><span class="sxs-lookup"><span data-stu-id="b4365-105">Syntax</span></span>
+<span data-ttu-id="5eda8-106">*式*です。(***名前***) を削除します。</span><span class="sxs-lookup"><span data-stu-id="5eda8-106">*expression* .Delete(***Name***)</span></span>
 
-<span data-ttu-id="b4365-106">*式*です。(***名前***) を削除します。</span><span class="sxs-lookup"><span data-stu-id="b4365-106">*expression* .Delete(***Name***)</span></span>
+<span data-ttu-id="5eda8-107">\*式\***インデックス**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="5eda8-107">*expression* A variable that represents an **Indexes** object.</span></span>
 
-<span data-ttu-id="b4365-107">\*式\***インデックス**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="b4365-107">*expression* A variable that represents an **Indexes** object.</span></span>
-
-### <a name="parameters"></a><span data-ttu-id="b4365-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b4365-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="5eda8-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5eda8-108">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -37,24 +36,24 @@ ms.locfileid: "25922322"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="b4365-109">名前</span><span class="sxs-lookup"><span data-stu-id="b4365-109">Name</span></span></p></th>
-<th><p><span data-ttu-id="b4365-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="b4365-110">Required/Optional</span></span></p></th>
-<th><p><span data-ttu-id="b4365-111">データ型</span><span class="sxs-lookup"><span data-stu-id="b4365-111">Data Type</span></span></p></th>
-<th><p><span data-ttu-id="b4365-112">説明</span><span class="sxs-lookup"><span data-stu-id="b4365-112">Description</span></span></p></th>
+<th><p><span data-ttu-id="5eda8-109">名前</span><span class="sxs-lookup"><span data-stu-id="5eda8-109">Name</span></span></p></th>
+<th><p><span data-ttu-id="5eda8-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="5eda8-110">Required/optional</span></span></p></th>
+<th><p><span data-ttu-id="5eda8-111">データ型</span><span class="sxs-lookup"><span data-stu-id="5eda8-111">Data type</span></span></p></th>
+<th><p><span data-ttu-id="5eda8-112">説明</span><span class="sxs-lookup"><span data-stu-id="5eda8-112">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="b4365-113">名前</span><span class="sxs-lookup"><span data-stu-id="b4365-113">Name</span></span></p></td>
-<td><p><span data-ttu-id="b4365-114">必須</span><span class="sxs-lookup"><span data-stu-id="b4365-114">Required</span></span></p></td>
-<td><p><span data-ttu-id="b4365-115"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="b4365-115"><strong>String</strong></span></span></p></td>
-<td><p><span data-ttu-id="b4365-116">削除するインデックスの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="b4365-116">The name of the index to delete.</span></span></p></td>
+<td><p><span data-ttu-id="5eda8-113"><em>Name</em></span><span class="sxs-lookup"><span data-stu-id="5eda8-113"><em>Name</em></span></span></p></td>
+<td><p><span data-ttu-id="5eda8-114">必須</span><span class="sxs-lookup"><span data-stu-id="5eda8-114">Required</span></span></p></td>
+<td><p><span data-ttu-id="5eda8-115"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="5eda8-115"><strong>String</strong></span></span></p></td>
+<td><p><span data-ttu-id="5eda8-116">削除するインデックスの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="5eda8-116">The name of the index to delete.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="b4365-117">注釈</span><span class="sxs-lookup"><span data-stu-id="b4365-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5eda8-117">注釈</span><span class="sxs-lookup"><span data-stu-id="5eda8-117">Remarks</span></span>
 
-<span data-ttu-id="b4365-118">**削除**メソッドは、**インデックス**オブジェクトは、新しいされ、データベースに追加されていない場合にのみでサポートされています。</span><span class="sxs-lookup"><span data-stu-id="b4365-118">The **Delete** method is supported only when the **Index** object is new and hasn’t been appended to the database.</span></span>
+<span data-ttu-id="5eda8-118">**削除**メソッドは、**インデックス**オブジェクトは、新しいされ、データベースに追加されていない場合にのみでサポートされています。</span><span class="sxs-lookup"><span data-stu-id="5eda8-118">The **Delete** method is supported only when the **Index** object is new and hasn’t been appended to the database.</span></span>
 

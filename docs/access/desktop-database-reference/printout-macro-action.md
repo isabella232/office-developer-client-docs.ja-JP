@@ -10,29 +10,25 @@ f1_keywords:
 - vbaac10.chm1697
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 125aa2a4d289db64d21859b6bd12b703c44aff6c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: c2e5b3e2cdfb743df8a098d3978ccd3d6eb66d90
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926753"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999030"
 ---
-# <a name="printout-macro-action"></a><span data-ttu-id="b7d60-102">PrintOut マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="b7d60-102">PrintOut macro action</span></span>
+# <a name="printout-macro-action"></a><span data-ttu-id="62d67-102">PrintOut マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="62d67-102">PrintOut macro action</span></span>
 
+<span data-ttu-id="62d67-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="62d67-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="b7d60-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="b7d60-103">**Applies to**: Access 2013, Office 2013</span></span>
-
-<span data-ttu-id="b7d60-104">**プリント アウト**のアクションを使用するには、開いているデータベースのアクティブ オブジェクトを印刷します。</span><span class="sxs-lookup"><span data-stu-id="b7d60-104">You can use the **PrintOut** action to print the active object in the open database.</span></span> <span data-ttu-id="b7d60-105">データシート、レポート、フォーム、データ アクセス ページ、およびモジュールを印刷できます。</span><span class="sxs-lookup"><span data-stu-id="b7d60-105">You can print datasheets, reports, forms, data access pages, and modules.</span></span>
-
+<span data-ttu-id="62d67-104">**プリント アウト**のアクションを使用するには、開いているデータベースのアクティブ オブジェクトを印刷します。</span><span class="sxs-lookup"><span data-stu-id="62d67-104">You can use the **PrintOut** action to print the active object in the open database.</span></span> <span data-ttu-id="62d67-105">データシート、レポート、フォーム、データ アクセス ページ、およびモジュールを印刷できます。</span><span class="sxs-lookup"><span data-stu-id="62d67-105">You can print datasheets, reports, forms, data access pages, and modules.</span></span>
 
 > [!NOTE]
-> <P><span data-ttu-id="b7d60-p102">[!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。</span><span class="sxs-lookup"><span data-stu-id="b7d60-p102">This action will not be allowed if the database is not trusted. For more information about enabling macros, see the links in the See Also section of this article.</span></span></P>
+> <span data-ttu-id="62d67-106">[!メモ] データベースが信頼されていない場合、このアクションは許可されません。</span><span class="sxs-lookup"><span data-stu-id="62d67-106">This action will not be allowed if the database is not trusted.</span></span> 
 
+## <a name="setting"></a><span data-ttu-id="62d67-107">設定値</span><span class="sxs-lookup"><span data-stu-id="62d67-107">Setting</span></span>
 
-
-## <a name="setting"></a><span data-ttu-id="b7d60-108">設定値</span><span class="sxs-lookup"><span data-stu-id="b7d60-108">Setting</span></span>
-
-<span data-ttu-id="b7d60-109">**印刷**操作では、次の引数があります。</span><span class="sxs-lookup"><span data-stu-id="b7d60-109">The **PrintOut** action has the following arguments.</span></span>
+<span data-ttu-id="62d67-108">**印刷**操作では、次の引数があります。</span><span class="sxs-lookup"><span data-stu-id="62d67-108">The **PrintOut** action has the following arguments.</span></span>
 
 <table>
 <colgroup>
@@ -41,50 +37,47 @@ ms.locfileid: "25926753"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="b7d60-110">アクションの引数</span><span class="sxs-lookup"><span data-stu-id="b7d60-110">Action argument</span></span></p></th>
-<th><p><span data-ttu-id="b7d60-111">説明</span><span class="sxs-lookup"><span data-stu-id="b7d60-111">Description</span></span></p></th>
+<th><p><span data-ttu-id="62d67-109">アクションの引数</span><span class="sxs-lookup"><span data-stu-id="62d67-109">Action argument</span></span></p></th>
+<th><p><span data-ttu-id="62d67-110">説明</span><span class="sxs-lookup"><span data-stu-id="62d67-110">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="b7d60-112"><strong>Print Range/印刷範囲</strong></span><span class="sxs-lookup"><span data-stu-id="b7d60-112"><strong>Print Range</strong></span></span></p></td>
-<td><p><span data-ttu-id="b7d60-113">印刷する範囲。</span><span class="sxs-lookup"><span data-stu-id="b7d60-113">The range to print.</span></span> <span data-ttu-id="b7d60-114"><strong>すべて</strong>(ユーザーが印刷のすべてのオブジェクト)、<strong>選択範囲</strong>(ユーザーが選択されているオブジェクトの一部を印刷できます)、または<strong>ページ</strong>(ユーザーはページの範囲を<strong>ページから</strong><strong>ページへ</strong>の引数に指定できます) をクリックして、<strong>で印刷範囲</strong>、[マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションのボックスです。</span><span class="sxs-lookup"><span data-stu-id="b7d60-114">Click <strong>All</strong> (the user can print all of the object), <strong>Selection</strong> (the user can print the part of the object that's selected), or <strong>Pages</strong> (the user can specify a range of pages in the <strong>Page From</strong> and <strong>Page To</strong> arguments) in the <strong>Print Range</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder pane.</span></span> <span data-ttu-id="b7d60-115">既定値は [ <strong>すべてのレコード</strong>] です。</span><span class="sxs-lookup"><span data-stu-id="b7d60-115">The default is <strong>All</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="62d67-111"><strong>Print Range/印刷範囲</strong></span><span class="sxs-lookup"><span data-stu-id="62d67-111"><strong>Print Range</strong></span></span></p></td>
+<td><p><span data-ttu-id="62d67-112">印刷する範囲。</span><span class="sxs-lookup"><span data-stu-id="62d67-112">The range to print.</span></span> <span data-ttu-id="62d67-113"><strong>すべて</strong>(ユーザーが印刷のすべてのオブジェクト)、<strong>選択範囲</strong>(ユーザーが選択されているオブジェクトの一部を印刷できます)、または<strong>ページ</strong>(ユーザーはページの範囲を<strong>ページから</strong><strong>ページへ</strong>の引数に指定できます) をクリックして、<strong>で印刷範囲</strong>、[マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションのボックスです。</span><span class="sxs-lookup"><span data-stu-id="62d67-113">Click <strong>All</strong> (the user can print all of the object), <strong>Selection</strong> (the user can print the part of the object that's selected), or <strong>Pages</strong> (the user can specify a range of pages in the <strong>Page From</strong> and <strong>Page To</strong> arguments) in the <strong>Print Range</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder pane.</span></span> <span data-ttu-id="62d67-114">既定値は [ <strong>すべてのレコード</strong>] です。</span><span class="sxs-lookup"><span data-stu-id="62d67-114">The default is <strong>All</strong>.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="b7d60-116"><strong>Page From/開始ページ</strong></span><span class="sxs-lookup"><span data-stu-id="b7d60-116"><strong>Page From</strong></span></span></p></td>
-<td><p><span data-ttu-id="b7d60-p104">印刷する最初のページを指定します。このページの先頭から印刷が開始されます。[ <strong>印刷範囲</strong>] ボックスで [ <strong>ページ指定</strong>] を選択した場合、この引数は省略できません。  </span><span class="sxs-lookup"><span data-stu-id="b7d60-p104">The first page to print. Printing starts at the top of this page. This argument is required if you select <strong>Pages</strong> in the <strong>Print Range</strong> box.</span></span></p></td>
+<td><p><span data-ttu-id="62d67-115"><strong>Page From/開始ページ</strong></span><span class="sxs-lookup"><span data-stu-id="62d67-115"><strong>Page From</strong></span></span></p></td>
+<td><p><span data-ttu-id="62d67-p103">印刷する最初のページを指定します。このページの先頭から印刷が開始されます。[ <strong>印刷範囲</strong>] ボックスで [ <strong>ページ指定</strong>] を選択した場合、この引数は省略できません。  </span><span class="sxs-lookup"><span data-stu-id="62d67-p103">The first page to print. Printing starts at the top of this page. This argument is required if you select <strong>Pages</strong> in the <strong>Print Range</strong> box.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="b7d60-120"><strong>Page To/終了ページ</strong></span><span class="sxs-lookup"><span data-stu-id="b7d60-120"><strong>Page To</strong></span></span></p></td>
-<td><p><span data-ttu-id="b7d60-p105">印刷する最後のページを指定します。このページの最後で印刷が終了します。[ <strong>印刷範囲</strong>] ボックスで [ <strong>ページ指定</strong>] を選択した場合、この引数は省略できません。  </span><span class="sxs-lookup"><span data-stu-id="b7d60-p105">The last page to print. Printing stops at the bottom of this page. This argument is required if you select <strong>Pages</strong> in the <strong>Print Range</strong> box.</span></span></p></td>
+<td><p><span data-ttu-id="62d67-119"><strong>Page To/終了ページ</strong></span><span class="sxs-lookup"><span data-stu-id="62d67-119"><strong>Page To</strong></span></span></p></td>
+<td><p><span data-ttu-id="62d67-p104">印刷する最後のページを指定します。このページの最後で印刷が終了します。[ <strong>印刷範囲</strong>] ボックスで [ <strong>ページ指定</strong>] を選択した場合、この引数は省略できません。  </span><span class="sxs-lookup"><span data-stu-id="62d67-p104">The last page to print. Printing stops at the bottom of this page. This argument is required if you select <strong>Pages</strong> in the <strong>Print Range</strong> box.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="b7d60-124"><strong>Print Quality/印刷品質</strong></span><span class="sxs-lookup"><span data-stu-id="b7d60-124"><strong>Print Quality</strong></span></span></p></td>
-<td><p><span data-ttu-id="b7d60-p106">印刷の品質を指定します。[ <strong>高</strong>]、[ <strong>中</strong>]、[ <strong>低</strong>]、[ <strong>簡易</strong>] のいずれかをクリックします。印刷の品質が低いほど、速く印刷されます。既定値は [ <strong>高</strong>] です。  </span><span class="sxs-lookup"><span data-stu-id="b7d60-p106">The print quality. Click <strong>High</strong>, <strong>Medium</strong>, <strong>Low</strong>, or <strong>Draft</strong>. The lower the quality, the faster the object prints. The default is <strong>High</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="62d67-123"><strong>Print Quality/印刷品質</strong></span><span class="sxs-lookup"><span data-stu-id="62d67-123"><strong>Print Quality</strong></span></span></p></td>
+<td><p><span data-ttu-id="62d67-p105">印刷の品質を指定します。[ <strong>高</strong>]、[ <strong>中</strong>]、[ <strong>低</strong>]、[ <strong>簡易</strong>] のいずれかをクリックします。印刷の品質が低いほど、速く印刷されます。既定値は [ <strong>高</strong>] です。  </span><span class="sxs-lookup"><span data-stu-id="62d67-p105">The print quality. Click <strong>High</strong>, <strong>Medium</strong>, <strong>Low</strong>, or <strong>Draft</strong>. The lower the quality, the faster the object prints. The default is <strong>High</strong>.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="b7d60-129"><strong>Copies/部数</strong></span><span class="sxs-lookup"><span data-stu-id="b7d60-129"><strong>Copies</strong></span></span></p></td>
-<td><p><span data-ttu-id="b7d60-p107">印刷部数を指定します。既定値は 1 です。</span><span class="sxs-lookup"><span data-stu-id="b7d60-p107">The number of copies to print. The default is 1.</span></span></p></td>
+<td><p><span data-ttu-id="62d67-128"><strong>Copies/部数</strong></span><span class="sxs-lookup"><span data-stu-id="62d67-128"><strong>Copies</strong></span></span></p></td>
+<td><p><span data-ttu-id="62d67-p106">印刷部数を指定します。既定値は 1 です。</span><span class="sxs-lookup"><span data-stu-id="62d67-p106">The number of copies to print. The default is 1.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="b7d60-132"><strong>Collate Copies/部単位で印刷</strong></span><span class="sxs-lookup"><span data-stu-id="b7d60-132"><strong>Collate Copies</strong></span></span></p></td>
-<td><p><span data-ttu-id="b7d60-p108">部単位で印刷する場合は [はい]、部単位で印刷しない場合は [いいえ] をクリックします。この引数を [いいえ] に設定すると、[はい] の場合より速く印刷できます。既定値は [はい] です。</span><span class="sxs-lookup"><span data-stu-id="b7d60-p108">Click <strong>Yes</strong> (collate the printed copies) or <strong>No</strong> (do not collate copies). The object may print faster if this argument is set to <strong>No</strong>. The default is <strong>Yes</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="62d67-131"><strong>Collate Copies/部単位で印刷</strong></span><span class="sxs-lookup"><span data-stu-id="62d67-131"><strong>Collate Copies</strong></span></span></p></td>
+<td><p><span data-ttu-id="62d67-p107">部単位で印刷する場合は [はい]、部単位で印刷しない場合は [いいえ] をクリックします。この引数を [いいえ] に設定すると、[はい] の場合より速く印刷できます。既定値は [はい] です。</span><span class="sxs-lookup"><span data-stu-id="62d67-p107">Click <strong>Yes</strong> (collate the printed copies) or <strong>No</strong> (do not collate copies). The object may print faster if this argument is set to <strong>No</strong>. The default is <strong>Yes</strong>.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="b7d60-136">解説</span><span class="sxs-lookup"><span data-stu-id="b7d60-136">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="62d67-135">解説</span><span class="sxs-lookup"><span data-stu-id="62d67-135">Remarks</span></span>
 
-<span data-ttu-id="b7d60-p109">このアクションの動作は、オブジェクトを選択し、[ **ファイル**] タブをクリックして、[ **印刷**] をクリックした場合と同じです。ただし、このアクションを使用する場合は、[ **印刷**] ダイアログ ボックスは表示されません。</span><span class="sxs-lookup"><span data-stu-id="b7d60-p109">This action is similar to selecting an object, clicking the **File** tab and then clicking **Print**. With this action, however, no **Print** dialog box appears.</span></span>
-
+<span data-ttu-id="62d67-p108">このアクションの動作は、オブジェクトを選択し、[ **ファイル**] タブをクリックして、[ **印刷**] をクリックした場合と同じです。ただし、このアクションを使用する場合は、[ **印刷**] ダイアログ ボックスは表示されません。</span><span class="sxs-lookup"><span data-stu-id="62d67-p108">This action is similar to selecting an object, clicking the **File** tab and then clicking **Print**. With this action, however, no **Print** dialog box appears.</span></span>
 
 > [!TIP]
-> <P><span data-ttu-id="b7d60-139">頻繁に使用する特定の印刷設定をした場合は、引数内のこれらの設定で<STRONG>プリント アウト</STRONG>のアクションを含むマクロを作成します。</span><span class="sxs-lookup"><span data-stu-id="b7d60-139">If you have particular print settings you use frequently, create a macro containing a <STRONG>PrintOut</STRONG> action with these settings in its arguments.</span></span></P>
+> <span data-ttu-id="62d67-138">頻繁に使用する特定の印刷設定をした場合は、引数内のこれらの設定で**プリント アウト**のアクションを含むマクロを作成します。</span><span class="sxs-lookup"><span data-stu-id="62d67-138">If you have particular print settings you use frequently, create a macro containing a **PrintOut** action with these settings in its arguments.</span></span>
 
+<span data-ttu-id="62d67-139">このアクションの引数は、[**印刷**] ダイアログ ボックスのオプションに対応しています。</span><span class="sxs-lookup"><span data-stu-id="62d67-139">The arguments for this action correspond to options in the **Print** dialog box.</span></span> <span data-ttu-id="62d67-140">ただし、操作を**行って** **[検索し、置換**] ダイアログ ボックスとは異なり引数の設定値とは共用されません、 **[印刷**] ダイアログ ボックスのオプションです。</span><span class="sxs-lookup"><span data-stu-id="62d67-140">However, unlike the **FindRecord** action and **Find and Replace** dialog box, the argument settings aren't shared with the **Print** dialog box options.</span></span>
 
-
-<span data-ttu-id="b7d60-140">このアクションの引数は、[**印刷**] ダイアログ ボックスのオプションに対応しています。</span><span class="sxs-lookup"><span data-stu-id="b7d60-140">The arguments for this action correspond to options in the **Print** dialog box.</span></span> <span data-ttu-id="b7d60-141">ただし、操作を**行って** **[検索し、置換**] ダイアログ ボックスとは異なり引数の設定値とは共用されません、 **[印刷**] ダイアログ ボックスのオプションです。</span><span class="sxs-lookup"><span data-stu-id="b7d60-141">However, unlike the **FindRecord** action and **Find and Replace** dialog box, the argument settings aren't shared with the **Print** dialog box options.</span></span>
-
-<span data-ttu-id="b7d60-142">Visual Basic for Applications (VBA) モジュールの**印刷**操作を実行するには、 **DoCmd**オブジェクトの**PrintOut**メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="b7d60-142">To run the **PrintOut** action in a Visual Basic for Applications (VBA) module, use the **PrintOut** method of the **DoCmd** object.</span></span>
+<span data-ttu-id="62d67-141">Visual Basic for Applications (VBA) モジュールの**印刷**操作を実行するには、 **DoCmd**オブジェクトの**PrintOut**メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="62d67-141">To run the **PrintOut** action in a Visual Basic for Applications (VBA) module, use the **PrintOut** method of the **DoCmd** object.</span></span>
 
