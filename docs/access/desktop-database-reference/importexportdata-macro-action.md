@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm51789
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 847f23c429b06fee51b42aa211d672b051accb7c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 363945386233fd992390f1fbc4b6115e272dc923
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920397"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997617"
 ---
 # <a name="importexportdata-macro-action"></a>ImportExportData マクロ アクション
 
@@ -24,7 +24,7 @@ ms.locfileid: "25920397"
 インポートまたは現在の Access データベース (.mdb または .accdb) または Access プロジェクト (.adp) と他のデータベース間でデータをエクスポートするのには、 **ImportExportData**アクションを使用できます。 Microsoft Access データベースでは、他のデータベースからカレント データベースにテーブルをリンクすることもできます。 テーブルをリンクすると、テーブル自体は他のデータベース内にあっても、そのテーブルのデータにアクセスできます。
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。
+> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
 
 ## <a name="settings"></a>設定値
 
@@ -44,13 +44,7 @@ ms.locfileid: "25920397"
 <tbody>
 <tr class="odd">
 <td><p><strong>Transfer Type/変換の種類</strong></p></td>
-<td><p>変換の種類を指定します。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>変換の種類</strong>] ボックスで、[ <strong>インポート</strong>]、[ <strong>エクスポート</strong>]、または [ <strong>リンク</strong>] を選択します。既定値は [ <strong>インポート</strong>] です。  </p>
-
-> [!NOTE]
-> [**リンク**] は、Access プロジェクト (.adp) ではサポートされていません。
-
-
-<p></p></td>
+<td><p>変換の種類を指定します。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>変換の種類</strong>] ボックスで、[ <strong>インポート</strong>]、[ <strong>エクスポート</strong>]、または [ <strong>リンク</strong>] を選択します。既定値は [ <strong>インポート</strong>] です。  </p><p><strong>注</strong>: Access プロジェクト (.adp) では、<strong>リンク</strong>の転送の種類はサポートされていません。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Database Type/データベースの種類</strong></p></td>

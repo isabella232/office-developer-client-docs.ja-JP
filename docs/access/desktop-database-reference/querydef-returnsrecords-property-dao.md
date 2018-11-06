@@ -10,18 +10,16 @@ f1_keywords:
 - dao360.chm1053005
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 66905394b0bf7127e952c9fe17860e84a151a3b0
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: a651e017b77e01a3fc6e810f58c00c94ece123ad
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937604"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997771"
 ---
 # <a name="querydefreturnsrecords-property-dao"></a>QueryDef.ReturnsRecords プロパティ (DAO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 外部データベースに対する SQL パススルー クエリでレコードを返すかどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。
 
@@ -35,11 +33,8 @@ ms.locfileid: "25937604"
 
 外部データベースに対するすべての SQL パススルー クエリで、レコードが返されるわけではありません。たとえば、SQL UPDATE ステートメントでは、レコードを返さずにレコードを更新しますが、SQL SELECT ステートメントではレコードを返します。クエリでレコードが返される場合、 **ReturnsRecords** プロパティは **True** に設定されます。クエリでレコードが返されない場合、 **ReturnsRecords** プロパティは **False** に設定されます。
 
-
 > [!NOTE]
-> <P>[!メモ] <A href="querydef-connect-property-dao.md">ReturnsRecords</A> プロパティを設定する前に、 <STRONG><STRONG>Connect</STRONG></STRONG> プロパティを設定する必要があります。</P>
-
-
+> [!メモ] [ReturnsRecords](querydef-connect-property-dao.md) プロパティを設定する前に、 ****Connect**** プロパティを設定する必要があります。
 
 ## <a name="example"></a>例
 

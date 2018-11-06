@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195400(v=office.15)
 ms:contentKeyID: 48545428
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2c780a3a379e94ec5a166428afee0a01e001718a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: cf0b964de6e9bbf529faa0ef1391ddcd5deafc05
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920054"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997190"
 ---
 # <a name="recordset2findlast-method-dao"></a>Recordset2.FindLast メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,7 +25,7 @@ ms.locfileid: "25920054"
 
 *式***Recordset2**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -45,7 +44,7 @@ ms.locfileid: "25920054"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>基準</p></td>
+<td><p><em>Criteria</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>レコードの検索に使用する文字列です。SQL ステートメントの WHERE 句に似ていますが、WHERE という語は付けません。</p></td>
@@ -117,14 +116,11 @@ rstEmployees.FindFirst "HireDate > #" _
         & Format(mydate, 'm-d-yy' ) & "#" 
 ```
 
-基準は、整数以外の値に連結された文字列の作成し、システムのパラメーターは、米国以外の小数点の記号、カンマなどを指定する場合 (たとえば、strSQL ="価格\>"& lngPrice でと lngPrice = 125,50) をしようとするときにエラーが発生しました。メソッドを呼び出します。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、SQL で小数点の記号として使用できるのはピリオドのみであるためです。
-
+> [!NOTE]
+> 基準は、整数以外の値に連結された文字列の作成し、システムのパラメーターは、米国以外の小数点の記号、カンマなどを指定する場合 (たとえば、strSQL ="価格\>"& lngPrice でと lngPrice = 125,50) をしようとするときにエラーが発生しました。メソッドを呼び出します。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、SQL で小数点の記号として使用できるのはピリオドのみであるためです。
 
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>最高のパフォーマンスを<EM>基準</EM>する必要がありますいずれかの方法でフォーム"<EM>フィールド</EM> = <EM>値</EM>"<EM>フィールド</EM>が、インデックス付きのフィールド内にある基になるベース テーブル、または「<EM>フィールド</EM><EM>のプレフィックス</EM>と同じように」<EM>フィールド</EM>がある、<EM>プレフィックス</EM>と基になるベース テーブルでインデックス付きのフィールドは、プレフィックス検索文字列 (たとえば、「アート *」) です。</P>
-> <LI>
-> <P>一般に、同じような検索を行う場合は、 <STRONG>Find</STRONG> メソッドよりも <STRONG>Seek</STRONG> メソッドを使用する方がパフォーマンスが優れています。ただし、これを使用できるのは、テーブル タイプの <STRONG>Recordset</STRONG> オブジェクトだけを検索対象とする場合です。</P></LI></UL>
+> - 最適なパフォーマンスを*基準** フォームのいずれかにする必要があります"*フィールド* = *値*"*フィールド*が、インデックス付きのフィールド内にある基になるベース テーブル、または「*フィールド**のプレフィックス*と同じように」*フィールド*がある、*プレフィックス*と基になるベース テーブルでインデックス付きのフィールドは、プレフィックス検索文字列 (たとえば、「アート *」) です。
+> - 一般に、同じような検索を行う場合は、 **Find** メソッドよりも **Seek** メソッドを使用する方がパフォーマンスが優れています。ただし、これを使用できるのは、テーブル タイプの **Recordset** オブジェクトだけを検索対象とする場合です。
 
 

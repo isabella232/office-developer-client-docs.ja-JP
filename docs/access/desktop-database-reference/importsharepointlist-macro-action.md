@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm152234
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e8b1e32eca6862645fc4f9c3b9021258e805dc8c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: f01899833b4cf0537a4437a643f2aeedf99e586c
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921321"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996917"
 ---
 # <a name="importsharepointlist-macro-action"></a>ImportSharePointList マクロ アクション
 
@@ -24,7 +24,7 @@ ms.locfileid: "25921321"
 **ImportSharePointList**アクションを使用するにはインポートまたは Microsoft SharePoint Foundation サイトからデータをリンクします。
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。
+> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
 
 ## <a name="setting"></a>設定値
 

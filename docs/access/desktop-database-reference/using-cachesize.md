@@ -6,25 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249846(v=office.15)
 ms:contentKeyID: 48547148
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: aa624c545d17ef0d56a076b3d30326bacd2c6edf
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: edf413cbfac35aa20b09508c3af5069f18d5076e
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25871963"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997435"
 ---
 # <a name="using-cachesize"></a>CacheSize の使用
-
 
 **適用されます**Access 2013、Office 2013。
 
 **CacheSize** プロパティを使用すると、プロバイダーからローカル メモリに一度に取り込むレコード数を制御できます。たとえば、 **CacheSize** が 10 の場合、 **Recordset** オブジェクトが初めて開かれた後に、最初の 10 のレコードがプロバイダーによってローカル メモリに取り込まれます。 **Recordset** オブジェクト内を移動すると、プロバイダーはローカル メモリのバッファーからデータを返します。キャッシュ内の最後のレコードより後ろのレコードに移動すると、プロバイダーはすぐに次の 10 のレコードをデータ ソースからキャッシュに取り込みます。
 
-
 > [!NOTE]
-> <P>[!メモ] <STRONG>CacheSize</STRONG> は、 <STRONG>Recordset</STRONG> オブジェクトの <STRONG>Properties</STRONG> コレクションに含まれる <STRONG>Maximum Open Rows</STRONG> というプロバイダー固有のプロパティを基にしています。 <STRONG>CacheSize</STRONG> は、 <STRONG>Maximum Open Rows</STRONG> よりも大きい値には設定できません。プロバイダーが開くことのできる行数を変更するには、 <STRONG>Maximum Open Rows</STRONG> を設定します。</P>
-
-
+> [!メモ] **CacheSize** は、 **Recordset** オブジェクトの **Properties** コレクションに含まれる **Maximum Open Rows** というプロバイダー固有のプロパティを基にしています。 **CacheSize** は、 **Maximum Open Rows** よりも大きい値には設定できません。プロバイダーが開くことのできる行数を変更するには、 **Maximum Open Rows** を設定します。
 
 **CacheSize** の値は、 **Recordset** オブジェクトの存続中に調整できますが、この値を変更しても、データ ソースから次にデータが取り込まれるまで、キャッシュ内のレコード数は変化しません。プロパティ値を変更しただけでは、キャッシュの現在の内容は変更されません。
 

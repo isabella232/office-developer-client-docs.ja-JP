@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1053061
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b86713870efb2ed5974f462197cadc95df43fcb3
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 5df9c972095d61ff17fa2a405a6786c08dad74fc
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920775"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997778"
 ---
 # <a name="recordsetseek-method-dao"></a>Recordset.Seek メソッド (DAO)
 
@@ -29,7 +29,7 @@ ms.locfileid: "25920775"
 
 *式***レコード セット**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -48,13 +48,13 @@ ms.locfileid: "25920775"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Comparison</p></td>
+<td><p><em>Comparison</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>&lt;、&lt;=、=、&gt;=、&gt; のうちいずれかの文字列式です。</p></td>
 </tr>
 <tr class="even">
-<td><p>Key1, Key2...Key13</p></td>
+<td><p><em>Key1, Key2...Key13</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p><strong>Recordset</strong> オブジェクトの <strong>Index</strong> プロパティの設定で指定された現在のインデックスのフィールドに対応する 1 つ以上の値です。 引数 key は最大 13 個まで使用できます。</p></td>

@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm24439
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f0c0ba73274d6f27a9e2a857aea1061416168f3a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 84d5b9c5f65e032523be8c646cdea18890744367
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922917"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997449"
 ---
 # <a name="emaildatabaseobject-macro-action"></a>EMailDatabaseObject マクロ アクション
 
@@ -24,7 +24,7 @@ ms.locfileid: "25922917"
 **EMailDatabaseObject**アクションを使用すると、指定した Access データシート、フォーム、レポート、モジュール、またはデータ アクセス ページは、メール メッセージを表示および転送できます。
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。
+> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
 
 ## <a name="settings"></a>設定値
 
@@ -108,11 +108,11 @@ ms.locfileid: "25922917"
 
 Visual Basic for Applications (VBA) モジュールに**EMailDatabaseObject**アクションを実行するには、 **DoCmd**オブジェクトの**SendObject**メソッドを使用します。
 
-### <a name="about-the-contributor"></a>投稿者について
+### <a name="about-the-contributor"></a>共同作成者について
 
 **によってリンクが提供されます。** Luke Chung [FMS, Inc.](https://www.fmsinc.com/)、創設者で、FMS, Inc. は、カスタム データベース ソリューションと開発ツールのリーディング ・ プロバイダーの社長です。
 
-  - [送信用の SendObject メソッドの使用に関する機能と制限](https://www.fmsinc.com/microsoftaccess/email/sendobject.html)
+- [送信用の SendObject メソッドの使用に関する機能と制限](https://www.fmsinc.com/microsoftaccess/email/sendobject.html)
 
 
 

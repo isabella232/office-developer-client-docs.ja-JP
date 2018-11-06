@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248975(v=office.15)
 ms:contentKeyID: 48543622
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 22f89b4fb22e7625f73eb938aa011beb42c6b99c
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: e63e765461eec1c89f3e3dc04d35f1bf88a3c578
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944348"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997624"
 ---
 # <a name="using-ado-for-internet-publishing"></a>インターネット発行に ADO を使用します。
 
@@ -20,7 +20,7 @@ ms.locfileid: "25944348"
 
 
 
-「[OLE DB Provider for Internet Publishing](the-ole-db-provider-for-internet-publishing.md)」では、ADO を使用して異種データにアクセスする場合の具体的な例が示されています。一方、このセクションの例は、Internet Publishing Provider を使用する場合に固有の例ですが、示されている原理は、他のデータ プロバイダー (電子メール ストアのプロバイダーなど) で異種データに対して ADO を使用する場合と同じです。
+「[OLE DB Provider for Internet Publishing](the-ole-db-provider-for-internet-publishing.md)」では、ADO を使用して異種データにアクセスする場合の具体的な例が示されています。 このセクションの例は、特定のインターネット パブリッシング プロバイダーを使用してありますが、中には、電子メール ストア プロバイダーなどの異機種混在のデータを他のプロバイダーで ADO を使用する場合、基本的な部分がのようなはずです。
 
 ## <a name="urls"></a>URL
 

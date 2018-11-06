@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm98700
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: acf8ed2bd10efd55436b8933a862833b8e49c5f0
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: bac15bed3b416d57f75dc7482b085478a27d5fa4
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926690"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996700"
 ---
 # <a name="runcode-macro-action"></a>RunCode マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -42,13 +41,7 @@ ms.locfileid: "25926690"
 <tbody>
 <tr class="odd">
 <td><p><strong>Function Name/関数名</strong></p></td>
-<td><p>呼び出す VBA の Function プロシージャの名前を指定します。関数の引数はかっこ ( ) で囲みます。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>関数名</strong>] ボックスに関数名を入力します。この引数は省略できません。  </p>
-
-> [!NOTE]
-> <P>Access データベース (.mdb または .accdb) では、[<STRONG>ビルド</STRONG>] をクリックし、式ビルダーを使用してこの引数の関数を選択します。式ビルダーに表示される一覧で目的の関数をクリックします。</P>
-
-
-<p></p></td>
+<td><p>呼び出す VBA の Function プロシージャの名前を指定します。関数の引数はかっこ ( ) で囲みます。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>関数名</strong>] ボックスに関数名を入力します。この引数は省略できません。  </p><p><strong>注</strong>: で Access データベース (.mdb または .accdb) は、この引数に関数を選択するのには、式ビルダーを使用する<strong>ビルド</strong>ボタンをクリックします。 [式ビルダー] の一覧で目的の機能] をクリックします。</p></td>
 </tr>
 </tbody>
 </table>
@@ -66,17 +59,11 @@ ms.locfileid: "25926690"
 
 関数の戻り値は無視されます。
 
-
 > [!NOTE]
-> <P>[!メモ] 関数名とモジュール名が同じ場合、マクロから Function プロシージャを呼び出すことはできません。</P>
-
-
-
+> [!メモ] 関数名とモジュール名が同じ場合、マクロから Function プロシージャを呼び出すことはできません。
 
 > [!TIP]
-> <P>[!ヒント] Visual Basic で記述した Sub プロシージャまたはイベント プロシージャを実行するには、Sub プロシージャまたはイベント プロシージャを呼び出す Function プロシージャを作成します。その後、 <STRONG>RunCode</STRONG> アクションを使用して、Function プロシージャを実行します。</P>
-
-
+> [!ヒント] Visual Basic で記述した Sub プロシージャまたはイベント プロシージャを実行するには、Sub プロシージャまたはイベント プロシージャを呼び出す Function プロシージャを作成します。その後、 **RunCode** アクションを使用して、Function プロシージャを実行します。
 
 **RunCode** アクションを使用して関数を呼び出すと、 **Function Name/関数名** 引数で指定した名前の関数が、データベースの標準モジュールで検索されます。ただし、フォームまたはレポートでメニュー コマンドをクリックしてこのアクションを実行した場合や、フォームまたはレポートのイベントに応じてこのアクションが実行された場合、この関数は、最初にフォームまたはレポートのクラス モジュールで検索され、次に標準モジュールで検索されます。 **Function Name/関数名** 引数で指定した関数は、ナビゲーション ウィンドウの [ **モジュール**] 領域に表示されるクラス モジュールでは検索されません。
 

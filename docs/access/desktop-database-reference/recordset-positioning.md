@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248955(v=office.15)
 ms:contentKeyID: 48543546
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5116adbf68e4e98c7fbda8285348e00638465742
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: bf4c442ecd7cbce740df69d60b5ec3e1e405a412
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946273"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997855"
 ---
 # <a name="recordset-positioning"></a>レコード セットを配置
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -24,8 +23,7 @@ ms.locfileid: "25946273"
 
 **AbsolutePosition** プロパティを設定すると、現在のキャッシュに存在するレコードが対象であっても、指定したレコードで始まる新しいレコード グループがキャッシュに再読み込みされます。 **CacheSize** プロパティにより、このグループのサイズが決定されます。
 
-
 > [!NOTE]
-> <P>[!メモ] 代替レコード番号として <STRONG>AbsolutePosition</STRONG> プロパティを使用することはできません。特定のレコードの位置は、前のレコードを削除すると変更されます。また、 <STRONG>Recordset</STRONG> オブジェクトを再クエリした場合、または再び開いた場合は、特定のレコードの <STRONG>AbsolutePosition</STRONG> が同じ値になるとは限りません。特定の位置を保持し、その位置に戻るためにお勧めする方法、そしてすべての種類の <STRONG>Recordset</STRONG> オブジェクトで位置を決定できる唯一の方法は、ブックマークを使用することです。</P>
+> [!メモ] 代替レコード番号として **AbsolutePosition** プロパティを使用することはできません。特定のレコードの位置は、前のレコードを削除すると変更されます。また、 **Recordset** オブジェクトを再クエリした場合、または再び開いた場合は、特定のレコードの **AbsolutePosition** が同じ値になるとは限りません。特定の位置を保持し、その位置に戻るためにお勧めする方法、そしてすべての種類の **Recordset** オブジェクトで位置を決定できる唯一の方法は、ブックマークを使用することです。
 
 

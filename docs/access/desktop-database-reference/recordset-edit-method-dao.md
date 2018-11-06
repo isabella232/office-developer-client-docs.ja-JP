@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821175(v=office.15)
 ms:contentKeyID: 48546850
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1221129ee7aaa7d53ada51f7a92dc5e91bc4afee
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 76868140d9f6f1b16a35219864d054ed1f742e84
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925330"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996483"
 ---
 # <a name="recordsetedit-method-dao"></a>Recordset.Edit メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -32,31 +31,25 @@ ms.locfileid: "25925330"
 
 カレント レコードは、 **Edit** の使用後もカレント レコードのままです。
 
-
 > [!NOTE]
-> <P>[!メモ] レコードの編集後、 <STRONG>Update</STRONG> を使用せずに他のレコードへ移動する操作を行った場合、変更は警告なしに取り消されます。 さらに、レコード セットを閉じるか、<STRONG>レコード セット</STRONG>または親の<STRONG><A href="database-object-dao.md">データベース</A></STRONG>または<STRONG><A href="connection-object-dao.md">接続</A></STRONG>オブジェクトを宣言するプロシージャを終了した場合は、警告なし、編集されたレコードが破棄されます。</P>
-
-
+> [!メモ] レコードの編集後、 **Update** を使用せずに他のレコードへ移動する操作を行った場合、変更は警告なしに取り消されます。 さらに、レコード セットを閉じるか、**レコード セット**または親の**[データベース](database-object-dao.md)** または**[接続](connection-object-dao.md)** オブジェクトを宣言するプロシージャを終了した場合は、警告なし、編集されたレコードが破棄されます。
 
 次の場合は、 **Edit** を使用するとエラーが発生します。
 
-  - カレント レコードがない場合
+- カレント レコードがない場合
 
-  - **Connection** 、 **Database** 、または **Recordset** の各オブジェクトが読み取り専用で開かれている場合。
+- **Connection** 、 **Database** 、または **Recordset** の各オブジェクトが読み取り専用で開かれている場合。
 
-  - 更新可能なフィールドがレコードにない場合
+- 更新可能なフィールドがレコードにない場合
 
-  - **Database** または **Recordset** が他のユーザーによって排他的に開かれている場合 (Microsoft Access ワークスペース)。
+- **Database** または **Recordset** が他のユーザーによって排他的に開かれている場合 (Microsoft Access ワークスペース)。
 
-  - レコードを格納しているページが別のユーザーによってロックされている場合 (Microsoft Access ワークスペース)
+- レコードを格納しているページが別のユーザーによってロックされている場合 (Microsoft Access ワークスペース)
 
 Microsoft Access ワークスペースでは、マルチユーザー環境で **Recordset** オブジェクトの **[LockEdits](recordset-lockedits-property-dao.md)** プロパティが **True** に設定されている場合 (排他的ロック)、レコードは **Edit** が使用された時点から更新が完了するまでロックされたままになります。 **LockEdits** プロパティが **False** に設定されている場合 (共有的ロック)、レコードはロックされ、データベースが更新される直前に、編集前のレコードと比較されます。 **Edit** メソッドを使用した時点からレコードが変更されている場合、 **dbSeeChanges** を指定せずに **OpenRecordset** を使用すると、 **Update** 操作で実行時エラーが発生して更新が失敗します。既定では、Microsoft Access データベース エンジンに接続された ODBC データベースおよびインストール可能な ISAM データベースは、常に共有的ロックを使用します。
 
-
 > [!NOTE]
-> <P>[!メモ] レコードを追加、編集、削除するには、基になるデータ ソースのレコードに一意のインデックスが存在している必要があります。一意のインデックスが存在しない場合、Microsoft Access ワークスペースでは <STRONG><A href="recordset-addnew-method-dao.md">AddNew</A></STRONG> 、 <STRONG><A href="fields-delete-method-dao.md">Delete</A></STRONG> 、または <STRONG>Edit</STRONG> メソッドを呼び出したときに「アクセスが拒否されました」のエラーが発生します。</P>
-
-
+> [!メモ] レコードを追加、編集、削除するには、基になるデータ ソースのレコードに一意のインデックスが存在している必要があります。一意のインデックスが存在しない場合、Microsoft Access ワークスペースでは **[AddNew](recordset-addnew-method-dao.md)** 、 **[Delete](fields-delete-method-dao.md)** 、または **Edit** メソッドを呼び出したときに「アクセスが拒否されました」のエラーが発生します。
 
 ## <a name="example"></a>例
 

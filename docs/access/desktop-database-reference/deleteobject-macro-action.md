@@ -10,23 +10,21 @@ f1_keywords:
 - vbaac10.chm152112
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 65072fcc418e6a75ea1684c6830f3acfc4875aee
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 3ed8580d95128dae475a6d5fe3963f7daaad53f0
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921944"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997260"
 ---
 # <a name="deleteobject-macro-action"></a>DeleteObject マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
 **DeleteObject** アクションを使用すると、指定したデータベース オブジェクトを削除できます。
 
-
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。
+> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
 
 ## <a name="setting"></a>設定
 
@@ -55,12 +53,8 @@ ms.locfileid: "25921944"
 </tbody>
 </table>
 
-
-
 > [!WARNING]
 > [!注意] [ **オブジェクトの種類** ] ボックスと [ **オブジェクト名** ] ボックスに値を指定しない場合、 **DeleteObject** アクションでは、ナビゲーション ウィンドウで選択したオブジェクトが削除されますが、削除を確認するメッセージは表示されません。
-
-
 
 ## <a name="remarks"></a>解説
 

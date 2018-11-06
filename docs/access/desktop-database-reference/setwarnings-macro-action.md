@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm165020
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d72a594a09196f5061ede52b4fbcbbc2cf96253c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 7642c7a727853005cb6cf664bf44f29bcd6e14ed
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923162"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997973"
 ---
 # <a name="setwarnings-macro-action"></a>SetWarnings マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
 **よって**を使用すると、システム メッセージを有効または無効にします。
 
-
 > [!NOTE]
-> <P>[!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。</P>
-
-
+> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
 
 ## <a name="setting"></a>設定値
 
@@ -64,11 +60,8 @@ ms.locfileid: "25923162"
 
 多くの場合、それが完了するまで、マクロの結果を非表示にする**エコー**のアクションでは、このアクションを使用します。 **よって**を使用すると、警告と同様のメッセージ ボックスを非表示にします。
 
-
 > [!WARNING]
-> <P><STRONG>よって</STRONG>がマクロとのやりとりを簡略化できますが、システム メッセージを無効にするには注意が必要です。 状況によっては、特定の警告メッセージが表示される場合は、マクロを続行するはありません。 しない限り、すべてのマクロ アクションの結果を確実に把握して、このアクションの使用を避ける必要があります。</P>
-
-
+> **よって**がマクロとのやりとりを簡略化できますが、システム メッセージを無効にするには注意が必要です。 状況によっては、特定の警告メッセージが表示される場合は、マクロを続行するはありません。 しない限り、すべてのマクロ アクションの結果を確実に把握して、このアクションの使用を避ける必要があります。
 
 実行するには**よって**を Visual Basic for Applications (VBA) モジュールで**DoCmd**オブジェクトの**SetWarnings**メソッドを使用します。
 

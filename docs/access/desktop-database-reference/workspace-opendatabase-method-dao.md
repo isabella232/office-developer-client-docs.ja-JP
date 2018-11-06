@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835343(v=office.15)
 ms:contentKeyID: 48548108
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1ef8c2399ec8a2ddedde47197388698c2b83c57c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 4c4f799d9e0e3ea2ffddbf981adf9332cca672ee
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926669"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997288"
 ---
 # <a name="workspaceopendatabase-method-dao"></a>Workspace.OpenDatabase メソッド (DAO)
 
@@ -25,7 +25,7 @@ ms.locfileid: "25926669"
 
 *式***ワークスペース**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -44,25 +44,25 @@ ms.locfileid: "25926669"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>名前</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>既存の Microsoft Access データベース エンジンのデータベース ファイル名、または ODBC データ ソースのデータ ソース名 (DSN) です。この値を設定する方法の詳細については、 <strong><a href="connection-name-property-dao.md">Name</a></strong> プロパティのトピックを参照してください。  </p></td>
 </tr>
 <tr class="even">
-<td><p>選択肢</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>「備考」に記載されたデータベースのさまざまなオプションを設定します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>ReadOnly</p></td>
+<td><p><em>ReadOnly</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p><strong>True</strong> に設定すると、データベースが読み取り専用アクセスで開かれ、 <strong>False</strong> (既定値) に設定すると、読み取り/書き込みアクセスで開かれます。</p></td>
 </tr>
 <tr class="even">
-<td><p>ブラウザでの</p></td>
+<td><p><em>Connect</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>パスワードなどさまざまな接続情報を指定します。</p></td>
@@ -71,7 +71,7 @@ ms.locfileid: "25926669"
 </table>
 
 
-### <a name="return-value"></a>戻り値
+## <a name="return-value"></a>戻り値
 
 データベース
 
@@ -102,6 +102,7 @@ ms.locfileid: "25926669"
 </tbody>
 </table>
 
+<br/>
 
 データベースを開くと、そのデータベースは自動的に **Databases** コレクションに追加されます。
 

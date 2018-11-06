@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248788(v=office.15)
 ms:contentKeyID: 48542951
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7a926bed97cf3f21e81fbf01eae554aaec45406a
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: a397b0f88bb60552a6e53432a3c8c4d788013103
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947785"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997274"
 ---
 # <a name="how-event-handlers-work-together"></a>イベント ハンドラーがどのように連携
 
@@ -29,7 +29,7 @@ Visual Basic でプログラミングするのでない限り、 **Connection** 
 
 複数の Will イベントが発生する状況では、そのうちの 1 つのイベントで、保留中の操作が取り消される可能性があります。たとえば、アプリケーションで **Field** の値を変更する場合、通常は、 **WillChangeField** イベント ハンドラーと **WillChangeRecord** イベント ハンドラーの両方が呼び出されます。しかし、最初に呼び出されたイベント ハンドラーで操作が取り消されると、それと対の Complete ハンドラーが **adStatusOperationCancelled** で呼び出されます。2 つ目のハンドラーは呼び出されません。これに対し、最初のイベント ハンドラーでイベントの続行が許可されると、2 つ目のイベント ハンドラーも呼びさ出されます。2 つ目のハンドラーで操作が取り消されると、前の例に示したように、対になる Complete イベントが 2 つとも呼び出されます。
 
-## <a name="unpaired-event-handlers"></a>対でないイベント ハンドラー
+## <a name="unpaired-event-handlers"></a>対になっていないイベント ハンドラー
 
 としてイベントに渡されるステータスが**adStatusCantDeny**ではありません、*状態*パラメーターに**adStatusUnwantedEvent**を返すことによって任意のイベントのイベント通知を無効にできます。 たとえば、完了イベント ハンドラーが呼び出されると最初に、 **adStatusUnwantedEvent**を返すことができます。 その後 Will イベントのみが表示されます。 ただし、理由の 1 つ以上のいくつかのイベントは発生します。 その場合は、イベントは、 *"理由*"パラメーターがあります。 **AdStatusUnwantedEvent**を返すとき、その特定の理由が発生したときにのみイベント通知の受信を停止します。 つまり、イベントが発生することを理由の通知が表示されます可能性があります。
 
@@ -41,12 +41,11 @@ Visual Basic でプログラミングするのでない限り、 **Connection** 
 
 たとえば、非常に大きな [Recordset](recordset-object-ado.md) オブジェクトへのデータの格納には時間がかかることがあります。 アプリケーションが適切に書き込まれる場合、操作を開始し、他の処理を続行できます。 **Recordset** へのデータ格納が完了したことは、 **ExecuteComplete** イベントの通知によって知るようにします。
 
-## <a name="single-event-handlers-and-multiple-objects"></a>単一のイベント ハンドラーと複数のオブジェクト
+## <a name="single-event-handlers-and-multiple-objects"></a>1 つのイベント ハンドラーと複数のオブジェクト
 
 Microsoft Visual C++ のような柔軟性のあるプログラミング言語では、複数のオブジェクトからのイベントを 1 つのイベント ハンドラーで処理することができます。たとえば、複数の **Connection** オブジェクトからのイベントを 1 つの **Disconnect** イベント ハンドラーで処理できます。接続の 1 つが終了すると、 **Disconnect** イベント ハンドラーが呼び出されます。イベント ハンドラーのオブジェクト パラメーターが対応する **Connection** オブジェクトに設定されるため、どの接続がイベントを発生させたかを判別できます。
 
-
 > [!NOTE]
-> <P>[!メモ] Visual Basic では 1 つのイベント ハンドラーに 1 つのオブジェクトしか関連付けできないため、この手法は Visual Basic では使用できません。</P>
+> [!メモ] Visual Basic では 1 つのイベント ハンドラーに 1 つのオブジェクトしか関連付けできないため、この手法は Visual Basic では使用できません。
 
 

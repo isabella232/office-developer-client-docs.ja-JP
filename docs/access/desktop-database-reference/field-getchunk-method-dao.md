@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052871
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 228c7d64d67b93a5f057c8d27c0f7a4fcc7d9064
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: f8d245223549d51c49e769eedd0b92bb335357cf
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921552"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996994"
 ---
 # <a name="fieldgetchunk-method-dao"></a>Field.GetChunk メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -30,7 +29,7 @@ ms.locfileid: "25921552"
 
 *式***Field**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -49,13 +48,13 @@ ms.locfileid: "25921552"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Offset</p></td>
+<td><p><em>Offset</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>長整数型 (Long)</strong></p></td>
 <td><p>コピーを開始する前にスキップするバイト数。</p></td>
 </tr>
 <tr class="even">
-<td><p>バイト</p></td>
+<td><p><em>バイト</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>長整数型 (Long)</strong></p></td>
 <td><p>取得するバイト数。</p></td>
@@ -64,7 +63,7 @@ ms.locfileid: "25921552"
 </table>
 
 
-### <a name="return-value"></a>戻り値
+## <a name="return-value"></a>戻り値
 
 バリアント型
 
@@ -76,11 +75,8 @@ ms.locfileid: "25921552"
 
 Numbytes がフィールド内のバイト数より大きい場合、 **GetChunk**はフィールドに実際の残りのバイト数を返します。
 
-
 > [!NOTE]
 > [!メモ] 文字列の場合はメモ型 ( **Memo**) のフィールドを使用し、ロング バイナリ型 ( **Long Binary**) のフィールドにはバイナリ データのみ格納してください。この逆を行うと、予期しない結果を招きます。
-
-
 
 ## <a name="example"></a>例
 

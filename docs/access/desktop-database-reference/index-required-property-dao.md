@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052963
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 44fa827be7359c598ff610313be4c2acf30d5e50
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: d5daadde111c18831108c1149170b71960d84b64
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920565"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996840"
 ---
 # <a name="indexrequired-property-dao"></a>Index.Required プロパティ (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -32,11 +31,8 @@ ms.locfileid: "25920565"
 
 ## <a name="remarks"></a>注釈
 
-
 > [!NOTE]
-> <P>[!メモ] <STRONG>Index</STRONG> オブジェクトまたは <STRONG>Field</STRONG> オブジェクトのいずれかにこのプロパティを設定できる場合は、 <STRONG>Field</STRONG> オブジェクトに設定します。 <STRONG>Field</STRONG> オブジェクトのプロパティ設定の妥当性が検査された後、 <STRONG>Index</STRONG> オブジェクトの設定が検査されます。</P>
-
-
+> [!メモ] **Index** オブジェクトまたは **Field** オブジェクトのいずれかにこのプロパティを設定できる場合は、 **Field** オブジェクトに設定します。 **Field** オブジェクトのプロパティ設定の妥当性が検査された後、 **Index** オブジェクトの設定が検査されます。
 
 **Required** プロパティを使用できるかどうかは、次の表に示すように、 [Fields](fields-collection-dao.md) コレクションが含まれているオブジェクトによって決まります。
 

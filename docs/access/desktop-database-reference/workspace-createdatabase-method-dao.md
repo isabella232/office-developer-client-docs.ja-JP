@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822832(v=office.15)
 ms:contentKeyID: 48547514
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5774eb4c9965cad7679d37754fd9a1f431ddaa48
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 3bb08ff90bb6a9981ef0d25c3beb1652a9415a34
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923414"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996896"
 ---
 # <a name="workspacecreatedatabase-method-dao"></a>Workspace.CreateDatabase メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,7 +25,7 @@ ms.locfileid: "25923414"
 
 *式***ワークスペース**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -45,13 +44,13 @@ ms.locfileid: "25923414"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>名前</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>作成するデータベース ファイルの名前は、255 文字までの文字列です。 完全なパスとファイル名を指定できます。 ネットワークでサポートされている場合は、指定することもネットワーク パスでは、次のように&quot; \\server1\share1\dir1\db1&quot;。 のみ、このメソッドを使用して Microsoft Access データベース ファイルを作成できます。</p></td>
 </tr>
 <tr class="even">
-<td><p>ブラウザでの</p></td>
+<td><p><em>Connect</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><ul>
@@ -60,11 +59,11 @@ ms.locfileid: "25923414"
 <li><p>dbLangSpanish &amp; &quot;; pwd = NewPassword&quot;</p></li>
 <li><p>既定の <em>locale</em> を使用し、パスワードを指定する場合は、単に <em>locale</em> 引数としてパスワード文字列を入力します。</p></li>
 <li><p>&quot;pwd = NewPassword&quot;</p></li>
-<li><p>[!メモ] パスワードには、大文字、小文字、数字、記号を組み合わせた複雑なものを使用してください。これらの文字を混在させたものになっていないパスワードは強固とはいえません。たとえば、Y6dh!et5 は安全性の高いパスワードです。House27 は推測されやすいパスワードです。また、高い安全性を保ちながらも、書き留めておかなくても覚えておくことができるパスワードを使用してください。</p></li>
+<li><p>大文字、小文字、数字、記号を組み合わせた強力なパスワードを使用してください。これらの文字を混在させていないパスワードは脆弱なパスワードです。Y6dh!et5 は強力なパスワードです。House27 は脆弱なパスワードです。強力なパスワードでありながら、書き留めておかなくても覚えておくことができるパスワードを使用してください。  </p></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>オプション</p></td>
+<td><p><em>Option</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>1 つ以上のオプションを示す定数 (または定数の組み合わせ)。オプションを組み合わせるには、対応する定数を追加します。</p></td>
@@ -176,6 +175,7 @@ ms.locfileid: "25923414"
 </tbody>
 </table>
 
+<br/>
 
 次の定数 (複数可) を options 引数に使用して、データ形式のバージョン、およびデータベースを暗号化するかどうかを指定できます。
 
@@ -222,6 +222,7 @@ ms.locfileid: "25923414"
 </tbody>
 </table>
 
+<br/>
 
 暗号化の定数を省略した場合は、 **CreateDatabase** により暗号化されていないデータベースが作成されます。
 

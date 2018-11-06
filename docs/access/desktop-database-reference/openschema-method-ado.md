@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249294(v=office.15)
 ms:contentKeyID: 48544970
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a204f6e86a1c50be49400430f53dd99468668a9e
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: e9e7fb19504e606fed9960a3982c0f98f9081325
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25950000"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997563"
 ---
 # <a name="openschema-method-ado"></a>OpenSchema メソッド (ADO)
 
@@ -49,8 +49,7 @@ ms.locfileid: "25950000"
 
 **リモート データ サービスの使用法****OpenSchema**メソッドがクライアント側の[Connection](connection-object-ado.md)オブジェクトで使用可能ではありません。
 
-
 > [!NOTE]
-> <P>Visual Basic では、 <STRONG>Connection</STRONG>オブジェクトの<STRONG>OpenSchema</STRONG>メソッドから返される<STRONG>レコード セット</STRONG>では 4 バイトの符号なし整数 (DBTYPE UI4) が設定されている列は他の変数を比較できません。 OLE DB データ型の詳細については、第 13 章と付録 A の<EM>Microsoft OLE DB プログラマ リファレンス</EM>を参照してください。</P>
+> Visual Basic では、 **Connection**オブジェクトの**OpenSchema**メソッドから返される**レコード セット**では 4 バイトの符号なし整数 (DBTYPE UI4) が設定されている列は他の変数を比較できません。 OLE DB データ型の詳細については、第 13 章と付録 A の*Microsoft OLE DB プログラマ リファレンス*を参照してください。
 
 

@@ -1,20 +1,19 @@
 ---
 title: フィールド オブジェクト (デスクトップ データベース参照のアクセス)
-TOCTitle: The Field Object
+TOCTitle: The Field object
 ms:assetid: 55531e04-d74f-6394-df64-1660e5d572ca
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249284(v=office.15)
 ms:contentKeyID: 48544926
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cf5e5de6c45cd3b8cc8827a794f5c2ce394d8f43
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: d7a8dad03bee863ec53f2731f9e3c99287a70442
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947295"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997428"
 ---
 # <a name="field-object"></a>Field オブジェクト
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -24,33 +23,33 @@ ms.locfileid: "25947295"
 
 **Field** オブジェクトのコレクション、メソッド、およびプロパティを使用すると、次の操作を実行できます。
 
-  - **Name** プロパティを使用して、フィールドの名前を返すことができます。
+- **Name** プロパティを使用して、フィールドの名前を返すことができます。
 
-  - **Value** プロパティを使用して、フィールド内のデータを表示または変更できます。 **Value** は、 **Field** オブジェクトの既定のプロパティです。
+- **Value** プロパティを使用して、フィールド内のデータを表示または変更できます。 **Value** は、 **Field** オブジェクトの既定のプロパティです。
 
-  - **Type** 、 **Precision** 、および **NumericScale** の各プロパティを使用して、フィールドの基本的な特性を返すことができます。
+- **Type** 、 **Precision** 、および **NumericScale** の各プロパティを使用して、フィールドの基本的な特性を返すことができます。
 
-  - **DefinedSize** プロパティを使用して、フィールドの宣言されたサイズを返すことができます。
+- **DefinedSize** プロパティを使用して、フィールドの宣言されたサイズを返すことができます。
 
-  - **ActualSize** プロパティを使用して、特定のフィールドに含まれるデータの実際のサイズを返すことができます。
+- **ActualSize** プロパティを使用して、特定のフィールドに含まれるデータの実際のサイズを返すことができます。
 
-  - **Attributes** プロパティおよび **Properties** コレクションを使用して、特定のフィールドについてサポートされている機能の種類を確認できます。
+- **Attributes** プロパティおよび **Properties** コレクションを使用して、特定のフィールドについてサポートされている機能の種類を確認できます。
 
-  - **AppendChunk** メソッドおよび **GetChunk** メソッドを使用して、長いバイナリ データまたは長い文字データを含むフィールドの値を操作できます。
+- **AppendChunk** メソッドおよび **GetChunk** メソッドを使用して、長いバイナリ データまたは長い文字データを含むフィールドの値を操作できます。
 
-プロバイダーがバッチ更新をサポートしている場合は、 **OriginalValue** プロパティおよび **UnderlyingValue** プロパティを使用して、バッチ更新中に発生するフィールドの値の不一致を解決できます。
+- プロバイダーがバッチ更新をサポートしている場合は、 **OriginalValue** プロパティおよび **UnderlyingValue** プロパティを使用して、バッチ更新中に発生するフィールドの値の不一致を解決できます。
 
-## <a name="describing-a-field"></a>フィールドに関する情報を記述する
+## <a name="describing-a-field"></a>フィールドを記述します。
 
 以降のトピックでは、[Field](field-object-ado.md) オブジェクト自体に関する情報、つまりフィールドのメタデータを表す **Field** オブジェクトのプロパティについて説明します。この情報を使用すると、 **Recordset** のスキーマについて多くのことを確認できます。これらのプロパティには、 **Type** 、 **DefinedSize** と **ActualSize** 、 **Name** 、 **NumericScale** と **Precision** などがあります。
 
-## <a name="discovering-the-data-type"></a>データ型を確認する
+## <a name="discovering-the-data-type"></a>データ型を検出します。
 
 **Type**プロパティは、フィールドのデータ型を示します。 ADO でサポートされているデータ型の列挙定数については、 *ADO プログラマーズ リファレンス*に[格納](datatypeenum.md)してください。
 
 **adNumeric** などの浮動小数点型については、より多くの情報を取得できます。 **NumericScale** プロパティは、 **Field** の値を表現するために使用する小数部の桁数を示します。 **Precision** プロパティは、 **Field** の値を表現するために使用する最大桁数を指定します。
 
-## <a name="determining-field-size"></a>フィールドのサイズを確認する
+## <a name="determining-field-size"></a>フィールドのサイズを決定します。
 
 **DefinedSize** プロパティを使用すると、 **Field** オブジェクトのデータ容量を確認できます。
 
@@ -58,19 +57,16 @@ ms.locfileid: "25947295"
 
 **DefinedSize** プロパティと **ActualSize** プロパティの目的は異なります。たとえば、宣言された型が **adVarChar** で、 **DefinedSize** プロパティの値が 50 である **Field** オブジェクトに、文字が 1 つだけ含まれているとします。この場合、返される **ActualSize** プロパティの値は、この 1 文字のバイト単位の長さとなります。
 
-## <a name="determining-field-contents"></a>フィールドの内容を確認する
+## <a name="determining-field-contents"></a>フィールドの内容を決定します。
 
 データ ソースから取得された列の識別子は、 **Field** の **Name** プロパティで表されます。 **Field** オブジェクトの **Value** プロパティは、フィールドの実際の値を返したり、設定したりするために使用します。これは既定のプロパティです。
 
 フィールドの値を変更するには、 **Value** プロパティを適切な型の新しい値に設定します。フィールドの内容を変更するためには、使用しているカーソルが更新をサポートしている必要があります。バッチ モードでは、この時点でデータベースの検証が行われないため、 **UpdateBatch** を呼び出すときにエラーがないことを確認する必要があります。一部のプロバイダーは、ADO **Field** オブジェクトの **UnderlyingValue** プロパティと **OriginalValue** プロパティをサポートしており、バッチ更新を実行しようとしたときに発生する競合の解決に役立ちます。そのような競合の解決方法の詳細については、「 [4 章: データを編集する](chapter-4-editing-data.md)」を参照してください。
 
-
 > [!NOTE]
-> <P>[!メモ] 新しい <STRONG>Field</STRONG> を <STRONG>Recordset</STRONG> に追加する場合は、 <STRONG>Recordset Field</STRONG> の値を設定できません。新しい <STRONG>Field</STRONG> は、閉じている <STRONG>Recordset</STRONG> に追加できます。追加した後に <STRONG>Recordset</STRONG> を開いて、これらの新しい <STRONG>Field</STRONG> に値を割り当てる必要があります。</P>
+> [!メモ] 新しい **Field** を **Recordset** に追加する場合は、 **Recordset Field** の値を設定できません。新しい **Field** は、閉じている **Recordset** に追加できます。追加した後に **Recordset** を開いて、これらの新しい **Field** に値を割り当てる必要があります。
 
-
-
-## <a name="getting-more-field-information"></a>フィールドに関する詳細情報を取得する
+## <a name="getting-more-field-information"></a>フィールドに関する詳細情報を取得します。
 
 ADO オブジェクトには、組み込みのプロパティと動的プロパティという 2 種類のプロパティがあります。これまでは、 **Field** オブジェクトの組み込みのプロパティについてのみ説明してきました。
 
@@ -82,13 +78,13 @@ ADO オブジェクトには、組み込みのプロパティと動的プロパ�
 
 動的プロパティである **Property** オブジェクトには、それ自体に次の 4 つの組み込みのプロパティがあります。
 
-  - **Name** プロパティは、プロパティを識別する文字列です。
+- **Name** プロパティは、プロパティを識別する文字列です。
 
-  - **Type** プロパティは、プロパティのデータ型を指定する整数です。
+- **Type** プロパティは、プロパティのデータ型を指定する整数です。
 
-  - **Value** プロパティは、プロパティの設定を格納する変数です。 **Value** は、 **Property** オブジェクトの既定のプロパティです。
+- **Value** プロパティは、プロパティの設定を格納する変数です。 **Value** は、 **Property** オブジェクトの既定のプロパティです。
 
-  - **Attributes** プロパティは、プロバイダー固有のプロパティの特性を示すロング型 ( **Long** ) の値です。
+- **Attributes** プロパティは、プロバイダー固有のプロパティの特性を示すロング型 ( **Long** ) の値です。
 
 **Field** オブジェクトの **Properties** コレクションには、フィールドに関する追加のメタデータが含まれます。このコレクションの内容は、プロバイダーによって異なります。この章の最初で使用したサンプルの **Recordset** の **Properties** コレクションを確認するコード例を次に示します。ここでは、まずコレクションの内容を確認します。このコードでは、 [Microsoft OLE DB Provider for SQL Server](microsoft-ole-db-provider-for-sql-server.md) を使用しているため、 **Properties** コレクションには、そのプロバイダーに関する情報が格納されています。
 
@@ -107,7 +103,7 @@ ADO オブジェクトには、組み込みのプロパティと動的プロパ�
 'EndFieldProps 
 ```
 
-## <a name="dealing-with-binary-data"></a>バイナリ データを処理する
+## <a name="dealing-with-binary-data"></a>バイナリ データを処理します。
 
 [Field](appendchunk-method-ado.md) オブジェクトの **AppendChunk** メソッドを使用すると、そのオブジェクトに長いバイナリ データまたは文字データを格納できます。システムのメモリ容量が少ない場合、 **AppendChunk** メソッドを使用して、長い値の全体ではなく一部を操作できます。
 

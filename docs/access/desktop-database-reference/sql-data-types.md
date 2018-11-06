@@ -10,12 +10,12 @@ f1_keywords:
 - jetsql40.chm5277590
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: bd5deb6d14aaf5911cd87c4d562dbec74e7ad1f2
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: ef5a794014f1397202483e008d164cb5de0b5179
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944488"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997813"
 ---
 # <a name="sql-data-types"></a>SQL データ型
 
@@ -112,13 +112,6 @@ Microsoft Access データベース エンジンの SQL データ型は、Micros
 </tbody>
 </table>
 
-
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P><A href="alter-table-statement-microsoft-access-sql.md">ALTER TABLE ステートメント</A>を使用して、シード値とインクリメント値を変更できます。変更した後にテーブルに挿入された行の列には、新しいシード値とインクリメント値に従って自動的に作成された値が格納されます。変更前と変更後のシード値およびインクリメント値に従って作成された値が一致する場合は、複製が作成されます。列が主キーである場合は、新しい列を挿入すると、複製の作成時にエラーになります。</P>
-> <LI>
-> <P>自動インクリメントが設定されている列に対して最後に使用された値を調べるために、SELECT @@IDENTITY ステートメントを使用することができます。テーブル名を指定することはできません。最後に更新されたテーブルで、自動インクリメントが設定された列に格納されている値が返されます。</P></LI></UL>
-
-
+> - [ALTER TABLE ステートメント](alter-table-statement-microsoft-access-sql.md)を使用して、シード値とインクリメント値を変更できます。変更した後にテーブルに挿入された行の列には、新しいシード値とインクリメント値に従って自動的に作成された値が格納されます。変更前と変更後のシード値およびインクリメント値に従って作成された値が一致する場合は、複製が作成されます。列が主キーである場合は、新しい列を挿入すると、複製の作成時にエラーになります。
+> - 自動インクリメントが設定されている列に対して最後に使用された値を調べるために、SELECT @@IDENTITY ステートメントを使用することができます。テーブル名を指定することはできません。最後に更新されたテーブルで、自動インクリメントが設定された列に格納されている値が返されます。

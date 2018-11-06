@@ -10,31 +10,22 @@ f1_keywords:
 - vbaac10.chm27417
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 254a54b4b672ba9e40253e3bd95283eec655d3dc
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: ed69a84f9b1774b7c33711a0bb8e80da54e656cc
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920509"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997931"
 ---
 # <a name="showtoolbar-macro-action"></a>ShowToolbar マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
 **[アドイン**] タブのコマンドのグループを表示または非表示に**切り替えます**を使用することができます。
 
-
 > [!NOTE]
-> <P><STRONG>ShowToolbar</STRONG>アクションは、ショートカット メニューには影響しません。</P>
-
-
-
-
-> [!NOTE]
-> <P>[!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。</P>
-
-
+> - **ShowToolbar**アクションは、ショートカット メニューには影響しません。
+> - [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
 
 ## <a name="setting"></a>設定値
 

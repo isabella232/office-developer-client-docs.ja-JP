@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff196045(v=office.15)
 ms:contentKeyID: 48545716
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f93924c579dc32e0841177eeb1068df64e12ab9b
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: dfb24f1fd183dd917b1eeb4033fe53a3310d5a12
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931086"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997015"
 ---
 # <a name="recordset2lockedits-property-dao"></a>Recordset2.LockEdits プロパティ (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -62,11 +61,8 @@ ms.locfileid: "25931086"
 
 Microsoft Access データベース エンジンに接続された ODBC データ ソースを使用する場合は、 **LockEdits** プロパティを常に **False** に設定するか、または共有的ロックを有効にします。Microsoft Access データベース エンジンは、外部のデータベース サーバーで使用されるロック機能に対する制御は行いません。
 
-
 > [!NOTE]
-> <P><STRONG><A href="connection-openrecordset-method-dao.md">何らか</A></STRONG>のメソッドの引数 lockedits を設定して<STRONG>レコード セット</STRONG>を開いたとき、 <STRONG>LockEdits</STRONG>の値を事前設定できます。 Lockedits 引数を<STRONG>dbPessimistic</STRONG>に設定に<STRONG>は True</STRONG>、 <STRONG>LockEdits</STRONG>プロパティが設定され、設定 lockedits を他の任意の値には<STRONG>False</STRONG>に<STRONG>LockEdits</STRONG>プロパティを設定します。</P>
-
-
+> **[何らか](connection-openrecordset-method-dao.md)** のメソッドの引数 lockedits を設定して**レコード セット**を開いたとき、 **LockEdits**の値を事前設定できます。 Lockedits 引数を**dbPessimistic**に設定に**は True**、 **LockEdits**プロパティが設定され、設定 lockedits を他の任意の値には**False**に**LockEdits**プロパティを設定します。
 
 ## <a name="example"></a>例
 

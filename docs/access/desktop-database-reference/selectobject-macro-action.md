@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm41840
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f134a43aaa56a1b206330175658f92e5076a4a14
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: b34deff80157b3de63038251a649794587dacc85
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919291"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997414"
 ---
 # <a name="selectobject-macro-action"></a>SelectObject マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -46,13 +45,7 @@ ms.locfileid: "25919291"
 </tr>
 <tr class="even">
 <td><p><strong>オブジェクト名</strong></p></td>
-<td><p>選択するオブジェクトの名前です。 [ <strong>オブジェクト名</strong> ] ボックスには、データベース内のオブジェクトのうち、" <strong>Object Type/オブジェクトの種類</strong> " 引数で選択した種類のオブジェクトがすべて表示されます。 これは、 <strong>[はい]</strong>に、ナビゲーション ウィンドウで引数を設定しない限り、必要な引数です。</p>
-
-> [!NOTE]
-> <P>Access プロジェクト (.adp) の<STRONG>オブジェクト名</STRONG>] ボックスでは、<STRONG>サーバー ビュー</STRONG>、<STRONG>ダイアグラム</STRONG>、または<STRONG>ストアド プロシージャ</STRONG>のオブジェクトのオブジェクト名は表示されません。</P>
-
-
-<p></p></td>
+<td><p>選択するオブジェクトの名前です。 [ <strong>オブジェクト名</strong> ] ボックスには、データベース内のオブジェクトのうち、" <strong>Object Type/オブジェクトの種類</strong> " 引数で選択した種類のオブジェクトがすべて表示されます。 これは、 <strong>[はい]</strong>に、ナビゲーション ウィンドウで引数を設定しない限り、必要な引数です。</p><p><strong>注</strong>: Access プロジェクト (.adp) の<STRONG>オブジェクト名</STRONG>] ボックスに<STRONG>サーバー ビュー</STRONG>、<STRONG>ダイアグラム</STRONG>、または<STRONG>ストアド プロシージャ</STRONG>のオブジェクトのオブジェクト名が表示されません。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>In Navigation Pane/ナビゲーション ウィンドウ内</strong></p></td>

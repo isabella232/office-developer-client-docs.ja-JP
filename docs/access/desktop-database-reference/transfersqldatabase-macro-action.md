@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm111536
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: ae05da3d07cc17f54584d11282721ac83f23ccd8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: ff903c459a351f69b272224ca29f9cc717498f0a
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926543"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996854"
 ---
 # <a name="transfersqldatabase-macro-action"></a>TransferSQLDatabase マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
 Access プロジェクトで、Microsoft SQL Server 7.0 以降のデータベースを別の SQL Server 7.0、またはそれ以降のデータベースを転送するのに**TransferSQLDatabase**アクションを使用できます。 データベースを転送することに関する詳細については、SQL Server のマニュアルを参照してください。
 
-
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。
-
-
+> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。
 
 ## <a name="setting"></a>設定値
 
@@ -82,17 +78,12 @@ Access プロジェクトで、Microsoft SQL Server 7.0 以降のデータベー
 
 データベースを転送するには、次の要件があります。
 
-  - 操作を実行するユーザーは、転送先のサーバーにおける sysadmin ロールのメンバーであること (転送元のサーバーでは特にロールは問いません)。
+- 操作を実行するユーザーは、転送先のサーバーにおける sysadmin ロールのメンバーであること (転送元のサーバーでは特にロールは問いません)。
 
-<!-- end list -->
+- Access プロジェクトに接続されている現在の SQL サーバーと、データベースの転送先のサーバーが SQL Server Version 7.0 以降であること。
 
-  - Access プロジェクトに接続されている現在の SQL サーバーと、データベースの転送先のサーバーが SQL Server Version 7.0 以降であること。
-
-
-> [!NOTE]
-> <P>[!メモ] リンク サーバーは、データベースの転送時には転送されません。</P>
-
-
+  > [!NOTE]
+  > [!メモ] リンク サーバーは、データベースの転送時には転送されません。
 
 **TransferSQLDatabase**アクションを Visual Basic for Applications (VBA) のモジュールで実行するには、 **DoCmd**オブジェクトの**TransferSQLDatabase**メソッドを使用します。
 

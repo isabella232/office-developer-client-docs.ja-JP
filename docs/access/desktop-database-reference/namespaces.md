@@ -6,20 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250158(v=office.15)
 ms:contentKeyID: 48548318
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ef37f04ec6824cedf773cb72751b2364d2b3edf8
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: a5fb61c02a5679c6fd63e9d5dd2a257ab5f7d96a
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25876562"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996469"
 ---
 # <a name="namespaces"></a>名前空間
 
-
 **適用されます**Access 2013、Office 2013。
 
-## <a name="namespaces"></a>名前空間
-
 ADO での XML の保存形式には、次の 4 つの名前空間が使用されます。
 
 <table>
@@ -56,11 +53,8 @@ ADO での XML の保存形式には、次の 4 つの名前空間が使用さ�
 
 仕様に定義されているように、クライアントは独自のタグをこれらの名前空間に追加することはできません。たとえば、クライアントは名前空間を "urn:schemas-microsoft-com:rowset" として定義し、"rs:MyOwnTag" などを書き込むことはできません。名前空間の詳細については、「[XML 名前空間 (英語)](https://www.w3.org/tr/xml-names/)」を参照してください。
 
-
 > [!NOTE]
-> <P>[!メモ] スキーマ タグの ID は "RowsetSchema" であることが必要です。また、現在の行セットのスキーマを表すために使用される名前空間は、"#RowsetSchema" を指す必要があります。</P>
-
-
+> [!メモ] スキーマ タグの ID は "RowsetSchema" であることが必要です。また、現在の行セットのスキーマを表すために使用される名前空間は、"#RowsetSchema" を指す必要があります。
 
 名前空間のプレフィックス (コロンの右側で等号の左側の部分) は任意です。
 
@@ -71,56 +65,5 @@ xmlns:rs="urn:schemas-microsoft-com:rowset"
 
 この名前が XML ドキュメント全体で一貫して使用される限り、ユーザーはこれを任意の名前に定義できます。ADO は常に "s"、"rs"、"dt"、および "z" を書き込みますが、これらのプレフィックス名は、読み込むコンポーネント内にはハードコーディングされません。
 
-## <a name="namespaces"></a>名前空間
 
-ADO での XML の保存形式には、次の 4 つの名前空間が使用されます。
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>接頭語</p></th>
-<th><p>説明</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>s</p></td>
-<td><p>参照して、 &quot;XML データ&quot;名前空間の要素と現在の<strong>レコード セット</strong>のスキーマを定義する属性が含まれています。</p></td>
-</tr>
-<tr class="even">
-<td><p>dt</p></td>
-<td><p>データ型定義の仕様を表します。</p></td>
-</tr>
-<tr class="odd">
-<td><p>rs</p></td>
-<td><p>ADO の <strong>Recordset</strong> プロパティおよび属性に固有の要素と属性を含む名前空間を表します。</p></td>
-</tr>
-<tr class="even">
-<td><p>z</p></td>
-<td><p>現在の行セットのスキーマを表します。</p></td>
-</tr>
-</tbody>
-</table>
-
-
-仕様に定義されているように、クライアントは独自のタグをこれらの名前空間に追加することはできません。たとえば、クライアントは名前空間を "urn:schemas-microsoft-com:rowset" として定義し、"rs:MyOwnTag" などを書き込むことはできません。名前空間の詳細については、「[XML 名前空間 (英語)](https://www.w3.org/tr/xml-names/)」を参照してください。
-
-
-> [!NOTE]
-> <P>[!メモ] スキーマ タグの ID は "RowsetSchema" であることが必要です。また、現在の行セットのスキーマを表すために使用される名前空間は、"#RowsetSchema" を指す必要があります。</P>
-
-
-
-名前空間のプレフィックス (コロンの右側で等号の左側の部分) は任意です。
-
-```vb 
- 
-xmlns:rs="urn:schemas-microsoft-com:rowset" 
-```
-
-この名前が XML ドキュメント全体で一貫して使用される限り、ユーザーはこれを任意の名前に定義できます。ADO は常に "s"、"rs"、"dt"、および "z" を書き込みますが、これらのプレフィックス名は、読み込むコンポーネント内にはハードコーディングされません。
 

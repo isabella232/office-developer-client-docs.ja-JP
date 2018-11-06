@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052925
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: a4b44545453d9ed92ae09c1d7722ae24ea35fd78
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 47dbb798a0b293f1651308de9aa2064e1c421a07
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926347"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996861"
 ---
 # <a name="tabledefvalidationrule-property-dao"></a>TableDef.ValidationRule プロパティ (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -44,8 +43,5 @@ ms.locfileid: "25926347"
 
 リンク テーブルに基づく **TableDef** オブジェクトの場合、 **ValidationRule** プロパティは、基になるベース テーブルの **ValidationRule** プロパティの設定値を継承します。基になるベース テーブルが検証をサポートしていない場合、このプロパティの値は長さ 0 の文字列 ("") となります。
 
-
 > [!NOTE]
-> <P>文字列、整数以外の値に連結するプロパティを設定して、システム ・ パラメーターは、米国以外の小数点の記号、カンマなどを指定する場合 (たとえば、strRule ="価格&gt;" &amp; lngPrice でと lngPrice = 125,50)、エラーが発生時コードでは、任意のデータを検証しようとしています。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、SQL で小数点の記号として使用できるのはピリオドのみであるためです。</P>
-
-
+> 文字列、整数以外の値に連結するプロパティを設定して、システム ・ パラメーターは、米国以外の小数点の記号、カンマなどを指定する場合 (たとえば、strRule ="価格&gt;" &amp; lngPrice でと lngPrice = 125,50)、エラーが発生時コードでは、任意のデータを検証しようとしています。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、SQL で小数点の記号として使用できるのはピリオドのみであるためです。

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249456(v=office.15)
 ms:contentKeyID: 48545596
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bd5b694906e8c0ac1f15329f4342586793e114ec
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 1623b32a5ec52acd086bf028a5c1775daae989e8
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946152"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997050"
 ---
 # <a name="operation-of-parameterized-commands"></a>パラメーター化コマンドの操作
 
@@ -34,11 +34,8 @@ SHAPE {SELECT * FROM customer}
 
 親と子テーブルがある列の名前、共通の顧客に\_*.* の id *子コマンド*には"?"プレース ホルダー、RELATE 句の参照先 (つまり、".パラメーター 0") です。
 
-
 > [!NOTE]
-> <P>[!メモ] PARAMETER 句は、Shape コマンドの構文にのみ影響します。ADO の <A href="parameter-object-ado.md">Parameter</A> オブジェクトまたは <A href="parameters-collection-ado.md">Parameters</A> コレクションとは関係ありません。</P>
-
-
+> [!メモ] PARAMETER 句は、Shape コマンドの構文にのみ影響します。ADO の [Parameter](parameter-object-ado.md) オブジェクトまたは [Parameters](parameters-collection-ado.md) コレクションとは関係ありません。
 
 パラメーター化された Shape コマンドが実行されると、次のようになります。
 
@@ -56,8 +53,7 @@ SHAPE {SELECT * FROM customer}
 
 既定では、 **Cache Child Rows** 動的プロパティは **True** に設定されています。キャッシュの動作は、クエリのパラメーター値によって異なります。単一のパラメーターが指定されたクエリの場合、指定されたパラメーター値に対応する子 **Recordset** は、その値を持つ子に対する要求があるまでキャッシュに保持されます。次のコードにこの例を示します。
 
-```vb 
- 
+```vb
 ... 
 SCmd = "SHAPE {select * from customer} " & _ 
  "APPEND({select * from orders where cust_id = ?} " & _ 

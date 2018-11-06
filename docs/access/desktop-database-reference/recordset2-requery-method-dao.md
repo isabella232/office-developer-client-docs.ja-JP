@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052940
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e9b6986ca4baeda6adad4154538304c31e023390
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: c69c04f5ef87a487f7e14ccb6f68bb487226df96
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925486"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997897"
 ---
 # <a name="recordset2requery-method-dao"></a>Recordset2.Requery メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -30,7 +29,7 @@ ms.locfileid: "25925486"
 
 *式***Recordset2**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -49,7 +48,7 @@ ms.locfileid: "25925486"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>NewQueryDef</p></td>
+<td><p><em>NewQueryDef</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p><a href="querydef-object-dao.md"><strong>QueryDef</strong></a> オブジェクトの <strong>Name</strong> プロパティの値を表します。</p></td>

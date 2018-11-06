@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052884
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 165a2703b3b3715ace7326df31477f1f9293be12
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 55a3f8a345ffa6669ef721395be4cb1286f2696b
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926214"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997393"
 ---
 # <a name="querydefexecute-method-dao"></a>QueryDef.Execute メソッド (DAO)
 
@@ -29,7 +29,7 @@ ms.locfileid: "25926214"
 
 *式***クエリ定義**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ ms.locfileid: "25926214"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>オプション</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p></p></td>

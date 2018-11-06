@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249477(v=office.15)
 ms:contentKeyID: 48545663
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6d0d5eec3c032780dd6065bd29f6d41c299a7379
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 96350229bce2ecc25ff035f2e5949f080f0fa10f
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937695"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997729"
 ---
 # <a name="chapter-10-records-and-streams"></a>第 10 章: レコードとストリーム
 
@@ -25,7 +25,7 @@ ADO には現在、リレーショナル データベースなどのデータ �
 
 特に、従来のリレーショナル データベースではないデータ ソースのプロバイダー (**Microsoft OLE DB Provider for Internet Publishing**) を使用することで、 [Record](microsoft-ole-db-provider-for-internet-publishing.md) オブジェクトを他の目的に使用することもできます。処理する必要のある情報の多くは、データベース内のテーブルとしてではなく、電子メール システム内のメッセージおよび最新のファイル システム内のファイルとして存在していることがあります。このような場合、 **Record** オブジェクトと **Stream** オブジェクトを使用すると、リレーショナル データベース以外のソースに格納された情報に容易にアクセスできるようになります。
 
-**Record** オブジェクトは、ファイル システム内のディレクトリやファイルなどのデータ、または電子メール システムのフォルダーやメッセージなどのデータを表したり、管理したりすることができます。このような目的の場合、 **Record** のソースは、開かれた **Connection** オブジェクトと連動する、開かれた [Recordset](connection-object-ado.md) のカレント行または絶対 URL や相対 URL にすることができます。
+**Record**オブジェクトでは、表現でき、ファイル ・ システムまたはフォルダーとメッセージの電子メール システムのディレクトリおよびファイルなどのデータを管理することができます。 このような目的の場合、 **Record** のソースは、開かれた **Connection** オブジェクトと連動する、開かれた [Recordset](connection-object-ado.md) のカレント行または絶対 URL や相対 URL にすることができます。
 
 通常、 **Recordset** は、フォルダーやディレクトリなどの階層内のコンテナーや親を表すときに使用されます。 **Record** は、ファイルやドキュメントなど、親コンテナーの 1 つのノードについて特定の情報を返すときに使用されます。このような種類の情報を表すときに **Records** が使用される主な理由は、これらのデータ ソースが異なった要素を持つためです。これは、各 **Record** のフィールドのセットおよび数が、それぞれ異なっていることを意味します。データベースからの行を含む従来の **Recordsets** の要素は同種、つまり、各行のフィールドの数およびタイプは同じです。
 

@@ -1,6 +1,6 @@
 ---
 title: Index.Primary プロパティ (DAO)
-TOCTitle: Primary Property
+TOCTitle: Primary property
 ms:assetid: 90eda1cb-cf7f-9682-9b74-81c27a37af16
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197416(v=office.15)
 ms:contentKeyID: 48546336
@@ -10,18 +10,16 @@ f1_keywords:
 - dao360.chm1052908
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 2ef796ca15ea551010ebf3605a6662bf66d83131
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: ff99f60fce41c7fa7de604a5109e68f6f744e68a
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921881"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997645"
 ---
 # <a name="indexprimary-property-dao"></a>Index.Primary プロパティ (DAO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 **[Index](index-object-dao.md)** オブジェクトがテーブルの主キー インデックスを表すかどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。
 
@@ -37,11 +35,8 @@ ms.locfileid: "25921881"
 
 主キー インデックスは、定義済みの順序で、テーブル内のすべてのレコードを一意に識別する 1 つ以上のフィールドで構成されます。インデックス フィールドは一意にする必要があるため、 [Index](index-unique-property-dao.md) オブジェクトの ****Unique**** プロパティを **True** に設定します。主キー インデックスが複数のフィールドで構成される場合、それぞれのフィールドには重複する値を格納できますが、インデックスが設定されたすべてのフィールドの値を組み合わせた結果は一意である必要があります。主キー インデックスはテーブルのキーで構成され、通常、主キーと同じフィールドが含まれます。
 
-
 > [!NOTE]
-> <P>[!メモ] 必ずしもテーブルにインデックスを作成する必要はありませんが、インデックスを持たない大きなテーブルでは、特定のレコードにアクセスするのに長い時間がかかる場合があります。 <A href="field-attributes-property-dao.md">Index</A> オブジェクト内にある各 <A href="field-object-dao.md"><STRONG>Field</STRONG></A> オブジェクトの <STRONG><STRONG>Attributes</STRONG></STRONG> プロパティによってレコードの順序が決まり、その結果、そのインデックスに対して使用するアクセス方法が決まります。データベースに新しいテーブルを作成する場合は、各レコードが一意に識別される 1 つ以上のフィールドでインデックスを作成し、 <STRONG>Index</STRONG> オブジェクトの <STRONG>Primary</STRONG> プロパティを <STRONG>True</STRONG> に設定することをお勧めします。</P>
-
-
+> [!メモ] 必ずしもテーブルにインデックスを作成する必要はありませんが、インデックスを持たない大きなテーブルでは、特定のレコードにアクセスするのに長い時間がかかる場合があります。 [Index](field-attributes-property-dao.md) オブジェクト内にある各 [**Field**](field-object-dao.md) オブジェクトの ****Attributes**** プロパティによってレコードの順序が決まり、その結果、そのインデックスに対して使用するアクセス方法が決まります。データベースに新しいテーブルを作成する場合は、各レコードが一意に識別される 1 つ以上のフィールドでインデックスを作成し、 **Index** オブジェクトの **Primary** プロパティを **True** に設定することをお勧めします。
 
 テーブルの主キーを設定すると、その主キーがテーブルの主キー インデックスとして自動的に定義されます。
 

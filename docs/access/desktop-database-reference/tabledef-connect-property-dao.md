@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1053064
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 322b59c6556b73186fe4034e64c75d9104d29560
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: d5ce90c362d6d8cddcbf04326b5443b2c1dda2ae
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926900"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996791"
 ---
 # <a name="tabledefconnect-property-dao"></a>TableDef.Connect プロパティ (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -159,12 +158,6 @@ Microsoft Exchange のデータを完全に解決済みのフォルダーのパ�
 
 Micorosoft Access データベースのベース テーブルの場合、 **Connect** プロパティ設定は長さ 0 の文字列 ("") です。
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>[!メモ] <STRONG>ReturnsRecords</STRONG> プロパティを設定する前に、 <STRONG>Connect</STRONG> プロパティを設定する必要があります。</P>
-> <LI>
-> <P>アクセスするデータベース サーバーがインストールされているコンピューターに対するアクセス権限を持っている必要があります。</P></LI></UL>
-
-
+> - [!メモ] **ReturnsRecords** プロパティを設定する前に、 **Connect** プロパティを設定する必要があります。
+> - アクセスするデータベース サーバーがインストールされているコンピューターに対するアクセス権限を持っている必要があります。

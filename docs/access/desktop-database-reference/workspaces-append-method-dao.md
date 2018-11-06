@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845644(v=office.15)
 ms:contentKeyID: 48543498
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5b3d53a26d4f60c0ef385af23d4cb074be2e101d
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: ac8e1c9624932bf24fb47cd8a038f60b5933dad7
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927614"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997652"
 ---
 # <a name="workspacesappend-method-dao"></a>Workspaces.Append メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,7 +25,7 @@ ms.locfileid: "25927614"
 
 *式***ワークスペース**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -45,7 +44,7 @@ ms.locfileid: "25927614"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>オブジェクト</p></td>
+<td><p><em>Object</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>オブジェクト型 (Object)</strong></p></td>
 <td><p>コレクションに追加するフィールドを表すオブジェクト変数です。</p></td>

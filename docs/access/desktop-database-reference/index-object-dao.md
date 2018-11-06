@@ -1,17 +1,17 @@
 ---
-title: インデックス オブジェクトのデータ アクセス オブジェクトの (DAO)
-TOCTitle: Index Object
+title: インデックス オブジェクトのデータ アクセス オブジェクト (DAO)
+TOCTitle: Index object
 ms:assetid: 92c32cad-ec8a-1243-1d18-83f50b269ecb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197655(v=office.15)
 ms:contentKeyID: 48546380
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cc849e22da654bd384065e4c169b3fd5540c6061
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 6646a3121bc353c8e8d74e3698ae688272656769
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928965"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997400"
 ---
 # <a name="index-object-dao"></a>インデックス オブジェクト (DAO)
 
@@ -34,14 +34,14 @@ Microsoft Access データベース エンジンは、すべてのベース テ�
 テーブル タイプの **Recordset** オブジェクトにアクセスする場合、オブジェクトの **Index** プロパティを使用してレコードの順序を指定します。このプロパティを、 **Indexes** コレクションの既存の **Index** オブジェクトの **Name** プロパティの設定値に設定します。このコレクションは、操作する [Recordset](tabledef-object-dao.md) オブジェクトの基になる ****TableDef**** オブジェクトに含まれています。
 
 > [!NOTE]
-> <P>[!メモ] テーブルのインデックスを作成する必要はありませんが、インデックスが設定されていない大きなテーブルの場合、特定のレコードへのアクセスまたは結合の処理に時間がかかることがあります。逆に、インデックスが多すぎると、テーブル インデックスがそれぞれ修正されるため、データベースの更新速度が遅くなる場合があります。</P>
+> [!メモ] テーブルのインデックスを作成する必要はありませんが、インデックスが設定されていない大きなテーブルの場合、特定のレコードへのアクセスまたは結合の処理に時間がかかることがあります。逆に、インデックスが多すぎると、テーブル インデックスがそれぞれ修正されるため、データベースの更新速度が遅くなる場合があります。
 
 インデックスの各 [Field](field-attributes-property-dao.md) オブジェクトの ****Attributes**** プロパティは、返されるレコードの順序を決定するため、そのインデックスに使用するアクセス方法も決定されます。
 
 **Index** オブジェクトの **Fields** コレクションの各 **Field** オブジェクトは、インデックスのコンポーネントです。新しい **Index** オブジェクトを定義するときには、コレクションに追加する前にそのプロパティを設定して、 **Index** オブジェクトを以降使用できるようにします。
 
 > [!NOTE]
-> <P>[!メモ] 既存の <STRONG>Index</STRONG> オブジェクトの <STRONG>Name</STRONG> プロパティの設定値を変更できるのは、それを含んでいる <A href="connection-updatable-property-dao.md">TableDef</A> オブジェクトの <STRONG><STRONG>Updatable</STRONG></STRONG> プロパティの設定値が <STRONG>True</STRONG> の場合のみです。</P>
+> [!メモ] 既存の **Index** オブジェクトの **Name** プロパティの設定値を変更できるのは、それを含んでいる [TableDef](connection-updatable-property-dao.md) オブジェクトの ****Updatable**** プロパティの設定値が **True** の場合のみです。
 
 テーブルの主キーを設定すると、Microsoft Access データベース エンジンでは、その主キーが主インデックスとして自動的に定義されます。主インデックスは、テーブルのすべてのレコードを定義済みの順序で一意に識別する、1 つ以上のフィールドで構成されます。主インデックス フィールドは一意である必要があるため、Microsoft Access データベース エンジンでは、主 **Index** オブジェクトの **Unique** プロパティが自動的に **True** に設定されます。主インデックスが複数のフィールドで構成される場合、各フィールドに重複する値を含めることができますが、インデックスが設定されたすべてのフィールドの値を組み合わせた結果は一意である必要があります。主インデックスはテーブルの 1 つのキーから成り、常に主キーと同じフィールドで構成されます。
 
@@ -59,12 +59,9 @@ Microsoft Access データベース エンジンは、すべてのベース テ�
 4.  **Field** オブジェクトを **Fields** コレクションに追加します。
 
 5.  **Index** オブジェクトを **Indexes** コレクションに追加します。
-    
 
     > [!NOTE]
-    > <P>[!メモ] クラスター化インデックスをサポートしていない Microsoft Access データベース エンジンを使用するデータベースの場合、 <STRONG>Clustered</STRONG> プロパティは無視されます。</P>
-
-
+    > [!メモ] クラスター化インデックスをサポートしていない Microsoft Access データベース エンジンを使用するデータベースの場合、 **Clustered** プロパティは無視されます。
 
 ## <a name="example"></a>例
 

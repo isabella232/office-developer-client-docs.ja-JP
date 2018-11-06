@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249605(v=office.15)
 ms:contentKeyID: 48546174
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a051c62d73a36fed0832f17b1cb53b1641d4a152
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 49a61e72a4d9260b73275d84ce912ebc76f37652
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25889281"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996455"
 ---
 # <a name="reshaping"></a>リシェイプ
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -38,8 +37,7 @@ rs2.Open "SHAPE {select * from Employees} " & _
 
 2 番目の関数は、構文を使用して、既存の子**Recordset**オブジェクトへのチャプター化されていないアクセスを有効にするのには`"SHAPE <recordset reshape name>"`です。
 
-
 > [!NOTE]
-> <P>[!メモ] 既存の <STRONG>Recordset</STRONG> に列を追加したり、パラメーター化された <STRONG>Recordset</STRONG> または挿入 COMPUTE 句内の <STRONG>Recordset</STRONG> オブジェクトをリシェイプしたり、リシェイプされる <STRONG>Recordset</STRONG> からの子孫の <STRONG>Recordset</STRONG> に集計操作を実行したりすることはできません。リシェイプされる <STRONG>Recordset</STRONG> と新しい Shape コマンドは、いずれも同じ <A href="connection-object-ado.md">Connection</A> を使用する必要があります。</P>
+> [!メモ] 既存の **Recordset** に列を追加したり、パラメーター化された **Recordset** または挿入 COMPUTE 句内の **Recordset** オブジェクトをリシェイプしたり、リシェイプされる **Recordset** からの子孫の **Recordset** に集計操作を実行したりすることはできません。 形状が変更されている**レコード セット**と新しい図形コマンドを使う必要があります両方とも同じ * *[接続](connection-object-ado.md)オブジェクトです。
 
 

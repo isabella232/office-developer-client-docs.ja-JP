@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249905(v=office.15)
 ms:contentKeyID: 48547413
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b44b7b858adca5672266eb1898213d8f28429f2e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: b3d91af56dc37cf8719a241a35046d663f7c9d57
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931135"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998073"
 ---
 # <a name="users-collection-adox"></a>Users コレクション (ADOX)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,20 +25,18 @@ ms.locfileid: "25931135"
 
 [Users](append-method-adox-users.md) コレクションの **Append** メソッドは、ADOX に対して一意です。次のことができます。
 
-  - **Append** メソッドを使用して、新しいユーザーをコレクションに追加します。
+- **Append** メソッドを使用して、新しいユーザーをコレクションに追加します。
 
 残りのプロパティとメソッドは、ADO コレクションに標準で装備されています。次のことができます。
 
-  - [Item](item-property-ado.md) プロパティを使用して、コレクションのユーザーにアクセスします。
+- [Item](item-property-ado.md) プロパティを使用して、コレクションのユーザーにアクセスします。
 
-  - [Count](count-property-ado.md) プロパティを使用して、コレクションに含まれるユーザーの数を返します。
+- [Count](count-property-ado.md) プロパティを使用して、コレクションに含まれるユーザーの数を返します。
 
-  - [Delete](delete-method-adox-collections.md) メソッドを使用して、コレクションからユーザーを削除します。
+- [Delete](delete-method-adox-collections.md) メソッドを使用して、コレクションからユーザーを削除します。
 
-  - [Refresh](refresh-method-ado.md) メソッドを使用して、コレクションのオブジェクトを更新し、カレント データベースのスキーマを反映します。
-
+- [Refresh](refresh-method-ado.md) メソッドを使用して、コレクションのオブジェクトを更新し、カレント データベースのスキーマを反映します。
 
 > [!NOTE]
-> <P>[!メモ] <STRONG>User</STRONG> オブジェクトを <STRONG>Group</STRONG> オブジェクトの <STRONG>Users</STRONG> コレクションに追加する前に、追加するものと同じ <STRONG>Name プロパティ (ADOX)</STRONG> を持つ <A href="name-property-adox.md">User</A> オブジェクトが、あらかじめ <STRONG>Catalog</STRONG> の <STRONG>Users</STRONG> コレクションに存在している必要があります。</P>
-
+> [!メモ] **User** オブジェクトを **Group** オブジェクトの **Users** コレクションに追加する前に、追加するものと同じ **Name プロパティ (ADOX)** を持つ [User](name-property-adox.md) オブジェクトが、あらかじめ **Catalog** の **Users** コレクションに存在している必要があります。
 

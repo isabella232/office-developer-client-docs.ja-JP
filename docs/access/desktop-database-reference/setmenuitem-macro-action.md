@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm16614
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: ecdfcb638a471a91cc6249636748c02b341151b8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 342b4c38b6a48ad36dc6d62ee34900e6f2057d42
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922553"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996868"
 ---
 # <a name="setmenuitem-macro-action"></a>SetMenuItem マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
 **SetMenuItem**アクションを使用すると、[**アドイン**] タブで、カスタムまたはグローバル メニューのメニュー項目の (有効または無効になっている、選択または選択されていない場合) の状態を設定します。
 
-
 > [!NOTE]
-> <P><STRONG>SetMenuItem</STRONG>アクションは、メニュー マクロで作成されたユーザー設定とグローバルのメニューでのみ動作します。 <STRONG>SetMenuItem</STRONG>アクションは、以前のバージョンとの互換性のための Microsoft Access に含まれます。 コマンド バーの機能は動作しません。 ただしを無効にするまたは有効にする選択するか、ショートカット メニュー上の項目の選択を解除するのには、Visual Basic for Applications (VBA) モジュールのプロパティを<STRONG>有効に</STRONG>し、<STRONG>状態</STRONG>またはユーザー設定やグローバル メニューを使用することができます。</P>
-
-
+> **SetMenuItem**アクションは、メニュー マクロで作成されたユーザー設定とグローバルのメニューでのみ動作します。 **SetMenuItem**アクションは、以前のバージョンとの互換性のための Microsoft Access に含まれます。 コマンド バーの機能は動作しません。 ただしを無効にするまたは有効にする選択するか、ショートカット メニュー上の項目の選択を解除するのには、Visual Basic for Applications (VBA) モジュールのプロパティを**有効に**し、**状態**またはユーザー設定やグローバル メニューを使用することができます。
 
 ## <a name="setting"></a>設定値
 

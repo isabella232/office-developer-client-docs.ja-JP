@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249184(v=office.15)
 ms:contentKeyID: 48544438
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e7085edf0d7f30c70868d308130b3f438347ad4b
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 9b9fd656aeda727cc829ab47ea4cb9fab8f2a169
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937821"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997792"
 ---
 # <a name="ado-glossary"></a>ADO の用語集
 
@@ -263,7 +263,7 @@ Microsoft インターネット インフォメーション サービス (IIS) �
 
 **MIME (Multi-purpose Internet Mail Extension)**
 
-当初、異種のネットワーク、コンピューター、および電子メール環境間でリッチ コンテンツを含む電子メール メッセージのやり取りを可能にする目的で開発されたインターネット プロトコル。実際には、MIME は、メール以外のアプリケーションにも採用され、拡張されています。
+異機種混在環境のネットワーク、コンピューター、および電子メール環境間でのリッチ コンテンツを含む電子メール メッセージの交換を許可するインターネット プロトコルが開発されました。 実際には、MIME は、メール以外のアプリケーションにも採用され、拡張されています。
 
 MIME は、バイナリ データの発行やインターネット上の読み取りを可能にする標準です。 バイナリ データを含むファイルのヘッダーには、データの MIME タイプが含まれています。クライアント プログラムに通知 (たとえば web ブラウザーやメール パッケージなど) よりも、純粋なテキストを処理する別の方法でデータを処理する必要があります。 たとえば、JPEG 画像を含む web 文書のヘッダーには、JPEG ファイル形式に固有の MIME の種類が含まれています。 こうと、JPEG ビューアーでファイルを表示するブラウザーが存在する場合。
 

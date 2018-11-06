@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249179(v=office.15)
 ms:contentKeyID: 48544405
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9103135100c5a10931ee63bfbdeabe9d97119fd2
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: 260fe01066e14578655089d397b0e76a705b9802
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949265"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996847"
 ---
 # <a name="appendchunk-method-ado"></a>AppendChunk メソッド (ADO)
 
@@ -34,7 +34,7 @@ ms.locfileid: "25949265"
 
 **AppendChunk** メソッドは、長いバイナリ データまたは文字データを格納するために、 **Field** オブジェクトまたは **Parameter** オブジェクトに対して使用します。システムのメモリに制限がある場合は、 **AppendChunk** メソッドを使用することで、長い値を全体としてではなく、複数の部分に分けて操作できます。
 
-**Field**
+### <a name="field"></a>フィールド
 
 **Field** オブジェクトの [Attributes](attributes-property-ado.md) プロパティの **adFldLong** ビットが True に設定されている場合は、そのフィールドに対して **AppendChunk** メソッドを使用できます。
 
@@ -42,13 +42,10 @@ ms.locfileid: "25949265"
 
 **Field** オブジェクトで **AppendChunk** を呼び出したときにカレント レコードが存在しないと、エラーが発生します。
 
-
 > [!NOTE]
 > [!メモ] **AppendChunk** メソッドでは、 **Record** オブジェクトの [Field](record-object-ado.md) オブジェクトを操作できません。操作は何も実行されず、実行時エラーが発生します。
 
-
-
-**Parameter**
+### <a name="parameters"></a>パラメーター
 
 **Parameter** オブジェクトの **Attributes** プロパティの **adParamLong** ビットが True に設定されていると、そのパラメーターに対して **AppendChunk** メソッドを使用できます。
 

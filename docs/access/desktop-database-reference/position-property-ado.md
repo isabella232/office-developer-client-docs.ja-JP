@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249738(v=office.15)
 ms:contentKeyID: 48546709
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ab1111cdbc0e5a319f1f3431477854c6d38eff20
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 0d4d907cedc3490f4ca13d47a12b9719cf3e2ee1
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25875407"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997155"
 ---
 # <a name="position-property-ado"></a>Position プロパティ (ADO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,13 +25,10 @@ ms.locfileid: "25875407"
 
 ## <a name="remarks"></a>解説
 
-現在位置はストリームの末尾よりも後ろに移動できます。ストリームの末尾を越えて現在位置を指定すると、 [Stream](https://msdn.microsoft.com/library/jj250128\(v=office.15\)) オブジェクトの **Size** も拡張されます。この方法で追加された新しいバイトはすべて Null になります。
-
+現在位置はストリームの末尾よりも後ろに移動できます。ストリームの末尾を越えて現在位置を指定すると、 [Stream](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream) オブジェクトの **Size** も拡張されます。この方法で追加された新しいバイトはすべて Null になります。
 
 > [!NOTE]
-> <P>[!メモ] <STRONG>Position</STRONG> は常にバイト単位です。マルチバイト文字セットを使用するテキスト ストリームでは、位置と文字サイズを乗算することによって文字数がわかります。たとえば、2 バイト文字セットの場合、最初の文字の位置は 0、2 番目の文字の位置は 2、3 番目の文字の位置は 4 のようになります。</P>
-
-
+> [!メモ] **Position** は常にバイト単位です。マルチバイト文字セットを使用するテキスト ストリームでは、位置と文字サイズを乗算することによって文字数がわかります。たとえば、2 バイト文字セットの場合、最初の文字の位置は 0、2 番目の文字の位置は 2、3 番目の文字の位置は 4 のようになります。
 
 負の値を使用して **Stream** 内の現在位置を変更することはできません。 **Position** で使用できるのは正の値だけです。
 

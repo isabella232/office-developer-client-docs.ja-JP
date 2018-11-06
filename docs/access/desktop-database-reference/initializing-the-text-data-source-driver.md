@@ -10,18 +10,16 @@ f1_keywords:
 - acmain11.chm1032166
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f87c8e45cbc719ee50c017abd45a8950dc6ec7ed
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 4248adc507a93284a15725bbda0255a3518e90a9
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945447"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997470"
 ---
 # <a name="initializing-the-text-data-source-driver"></a>テキスト データ ソース ドライバーを初期化しています。
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 テキスト データ ソースと HTML データ ソースには、同じデータベース ドライバーが使用されます。
 
@@ -184,13 +182,10 @@ Microsoft Access データベース エンジンで使用される、Text キー
 </table>
 
 
-
 > [!NOTE]
-> <P>[!メモ] Windows レジストリの設定を変更した場合は、新しい設定内容を有効にするために、データベース エンジンをいったん終了してから再起動する必要があります。</P>
+> [!メモ] Windows レジストリの設定を変更した場合は、新しい設定内容を有効にするために、データベース エンジンをいったん終了してから再起動する必要があります。
 
-
-
-## <a name="html-import-isam-formats"></a>HTML インポートの ISAM 形式
+## <a name="html-import-isam-formats"></a>インポート ISAM 形式の HTML
 
 **アクセス接続エンジン\\ISAM 形式\\HTML インポート**フォルダーには、次のエントリが含まれています。
 
@@ -261,14 +256,10 @@ Microsoft Access データベース エンジンで使用される、Text キー
 </tbody>
 </table>
 
-
-
 > [!NOTE]
-> <P>[!メモ] Windows レジストリの設定を変更した場合は、新しい設定内容を有効にするために、データベース エンジンをいったん終了してから再起動する必要があります。</P>
+> [!メモ] Windows レジストリの設定を変更した場合は、新しい設定内容を有効にするために、データベース エンジンをいったん終了してから再起動する必要があります。
 
-
-
-## <a name="html-export-isam-formats"></a>HTML エクスポートの ISAM 形式
+## <a name="html-export-isam-formats"></a>エクスポート ISAM 形式の HTML
 
 **アクセス接続エンジン\\ISAM 形式\\HTML のエクスポート**フォルダーには、次のエントリが含まれています。
 
@@ -334,14 +325,10 @@ Microsoft Access データベース エンジンで使用される、Text キー
 </tbody>
 </table>
 
-
-
 > [!NOTE]
-> <P>[!メモ] Windows レジストリの設定を変更した場合は、新しい設定内容を有効にするために、データベース エンジンをいったん終了してから再起動する必要があります。</P>
+> [!メモ] Windows レジストリの設定を変更した場合は、新しい設定内容を有効にするために、データベース エンジンをいったん終了してから再起動する必要があります。
 
-
-
-## <a name="customizing-the-schemaini-file-for-text-and-html-data"></a>テキスト データと HTML データのための Schema.ini ファイルのカスタマイズ
+## <a name="customizing-the-schemaini-file-for-text-and-html-data"></a>テキストと HTML データの Schema.ini ファイルをカスタマイズします。
 
 テキスト データと HTML データの読み取り、インポート、またはエクスポートを行うには、Schema.ini ファイルを作成してその中にテキストの ISAM 情報を追加する必要があります。Schema.ini には、テキスト ファイルの書式化方法、インポート時の読み取り方法、ファイルへの既定のエクスポート書式など、データ ソースの仕様を記述します。次の例では、固定長のファイルである Filename.txt に対するレイアウトを示しています。
 
@@ -368,6 +355,8 @@ Microsoft Access データベース エンジンで使用される、Text キー
     Col5=columnname9 LongChar Width 10
 ```
 
+<br/>
+
 同様に、区切り記号付きファイルの書式は次のように指定します。
 
 ```text
@@ -385,6 +374,8 @@ Microsoft Access データベース エンジンで使用される、Text キー
     
     Col2=dateofbirth Date width 9
 ```
+
+<br/>
 
 データを区切り記号付きテキスト ファイルにエクスポートする場合は、そのファイルに対して同様に次の書式を指定します。
 
@@ -421,6 +412,8 @@ Microsoft Access データベース エンジンで使用される、Text キー
     
     TextDelimeter="
 ```
+
+<br/>
 
 My Special Export の例では、特定のエクスポート オプションについて説明しています。接続時にはさまざまなエクスポート オプションを指定できます。また、この最後の例は、接続時に必要に応じて渡すことのできるデータ ソース名 (DSN) にも対応しています。この 3 つの書式セクションは、すべて同じ .ini ファイルに追加できます。
 
@@ -509,8 +502,6 @@ Microsoft Access データベース エンジンで使用される、Schema.ini 
 </tr>
 </tbody>
 </table>
-
-
 
 > [!NOTE]
 > [!メモ] Schema.ini ファイルの設定を変更した場合は、新しい設定内容を有効にするために、データベース エンジンをいったん終了してから再起動する必要があります。

@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm6446
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f01fc72a620e5c08a6f98b4b69a8eb8da7b98bbb
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 27fc0c38ec0f3ec98c2709a96b6dedcce17db693
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925675"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996812"
 ---
 # <a name="runmenucommand-macro-action"></a>RunMenuCommand マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -47,18 +46,14 @@ ms.locfileid: "25925675"
 </tbody>
 </table>
 
-
 ## <a name="remarks"></a>解説
 
 **RunMenuCommand**アクションを使用すると、カスタム メニュー バー、グローバル メニュー バー、カスタム ショートカット メニューまたはグローバル ショートカット メニューから、Access コマンドを実行します。
 
 マクロ内で条件付き書式**RunMenuCommand**アクションを使用するには一定の条件に従ってコマンドを実行します。
 
-
 > [!NOTE]
-> <P>[<STRONG>ファイル</STRONG>] タブをクリックし、[<STRONG>最近使用した</STRONG>最近使用したデータベースを示しています。 <STRONG>開く</STRONG>をクリックする代わりにこれらのデータベースのいずれかをクリックすることができます。 データベースのこれらの項目は、<STRONG>コマンド</STRONG>の引数のドロップダウン リスト ボックスに表示されないし、 <STRONG>RunMenuCommand</STRONG>アクションを使用してマクロ内で使用できません。</P>
-
-
+> [**ファイル**] タブをクリックし、[**最近使用した**最近使用したデータベースを示しています。 **開く**をクリックする代わりにこれらのデータベースのいずれかをクリックすることができます。 データベースのこれらの項目は、**コマンド**の引数のドロップダウン リスト ボックスに表示されないし、 **RunMenuCommand**アクションを使用してマクロ内で使用できません。
 
 以前のバージョンの Access から Access データベースを変換するときにいくつかのコマンドが利用できなくです。 コマンドでは、可能性がありますが名前が変更されて、別のメニューに移動または、Access で使用可能な不要になった場合があります。 **RunMenuCommand**アクションには、このようなコマンドの動作を**DoMenuItem**を変換できません。 マクロを開くと、このようなコマンドの**コマンド**の引数が空で、 **RunMenuCommand**アクションが表示されます。 マクロを編集、有効なコマンド引数を入力し、または**RunMenuCommand**アクションを削除する必要があります。
 

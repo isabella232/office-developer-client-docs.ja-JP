@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052990
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 85d0ceec1cea782a8e43a2bebd6779841c2a56ff
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: dd3bd047afed2e547be0fb7b6999c16dd0b12cc1
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926109"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996476"
 ---
 # <a name="indexunique-property-dao"></a>Index.Unique プロパティ (DAO)
 
@@ -37,21 +37,12 @@ ms.locfileid: "25926109"
 
 **Index** オブジェクトの [Unique](index-primary-property-dao.md) プロパティと ****Primary**** プロパティの両方が **True** に設定されている場合、そのインデックスは、固有の主インデックスとなり、定義済みの論理的な順序でテーブル内のすべてのレコードを一意に識別します。 **Primary** プロパティが **False** に設定されている場合、2 次インデックスとなります。2 次インデックス (キーと非キーの両方) は、テーブル内のレコードの識別子としては機能せずに、定義済み順序でレコードを論理的に配列します。
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>テーブルにインデックスを作成する必要はありませんが、テーブルが大きくてインデックスが設定されていない場合、特定のレコードへのアクセス時間が長くなる可能性があります。</P>
-> <LI>
-> <P>インデックスのないテーブルからレコードを取得する場合、特定の順序でレコードを取得することはできません。</P>
-> <LI>
-> <P><A href="field-attributes-property-dao.md">Index</A> オブジェクト内の各 <A href="field-object-dao.md"><STRONG>Field</STRONG></A> オブジェクトの <STRONG><STRONG>Attributes</STRONG></STRONG> プロパティによって、レコードの順序が決まり、したがって該当する <STRONG>Index</STRONG> オブジェクトに使用するアクセス手法が決まります。</P>
-> <LI>
-> <P>固有インデックスは、レコードの検索を最適化するのに便利です。</P>
-> <LI>
-> <P>インデックスは、ベース テーブルの物理的順序には影響を与えません。特定のインデックスを選択するか、Microsoft Access データベース エンジンで <A href="recordset-object-dao.md">Recordset</A> オブジェクトを作成する際に、テーブル タイプの <STRONG><STRONG>Recordset</STRONG></STRONG> オブジェクトによるレコードへのアクセス方法にのみ影響を与えます。</P></LI></UL>
-
-
+> - テーブルにインデックスを作成する必要はありませんが、テーブルが大きくてインデックスが設定されていない場合、特定のレコードへのアクセス時間が長くなる可能性があります。
+> - インデックスのないテーブルからレコードを取得する場合、特定の順序でレコードを取得することはできません。
+> - [Index](field-attributes-property-dao.md) オブジェクト内の各 [**Field**](field-object-dao.md) オブジェクトの ****Attributes**** プロパティによって、レコードの順序が決まり、したがって該当する **Index** オブジェクトに使用するアクセス手法が決まります。
+> - 固有インデックスは、レコードの検索を最適化するのに便利です。
+> - インデックスはベース テーブルの物理的順序を変更しません。影響を与える方法のみレコードにアクセスするテーブル タイプの**[Recordset](recordset-object-dao.md)** オブジェクトが特定のインデックスを選択した場合、または Microsoft Access データベース エンジンは、**レコード セット**オブジェクトを作成するときにインデックスを作成します。
 
 ## <a name="example"></a>例
 

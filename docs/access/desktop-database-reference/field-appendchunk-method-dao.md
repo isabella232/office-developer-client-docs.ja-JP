@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff837014(v=office.15)
 ms:contentKeyID: 48548819
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 830d9d10aa2d166f3e9dca013697acdeebe8a767
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 257dd342d0c0aa171d7961ab61a69da099497688
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923988"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997407"
 ---
 # <a name="fieldappendchunk-method-dao"></a>Field.AppendChunk メソッド (DAO)
 
@@ -25,7 +25,7 @@ ms.locfileid: "25923988"
 
 *式***Field**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -44,7 +44,7 @@ ms.locfileid: "25923988"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Val</p></td>
+<td><p><em>Val</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p><strong>Field</strong> オブジェクトに追加するバリアント型 (Variant) (文字列型 (String) サブタイプ) の式または変数です。</p></td>

@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052883
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b07717a209fdb0152964bcd33d228d17cecd4eec
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: b9a9a5624697779bb7231626b7440d8db9c40244
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922350"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996819"
 ---
 # <a name="recordsetaddnew-method-dao"></a>Recordset.AddNew メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -36,33 +35,24 @@ ms.locfileid: "25922350"
 
 新しいレコードを編集した後に、 **[Update](recordset-update-method-dao.md)** メソッドを使用して変更内容を保存し、 **Recordset** にレコードを追加します。 **Update** メソッドを使用するまで、データベースは変更されません。
 
+> [!NOTE]
+> [!メモ] **AddNew** を実行してから、 **Update** メソッドを使用せずに別のレコードに移動する操作を実行すると、警告なしで変更内容が失われます。また、 **Recordset** を閉じるか、あるいは **Recordset** または **[Database](database-object-dao.md)** オブジェクトを宣言するプロシージャを終了すると、警告なしで新しいレコードが失われます。
 
 > [!NOTE]
-> <P>[!メモ] <STRONG>AddNew</STRONG> を実行してから、 <STRONG>Update</STRONG> メソッドを使用せずに別のレコードに移動する操作を実行すると、警告なしで変更内容が失われます。また、 <STRONG>Recordset</STRONG> を閉じるか、あるいは <STRONG>Recordset</STRONG> または <STRONG><A href="database-object-dao.md">Database</A></STRONG> オブジェクトを宣言するプロシージャを終了すると、警告なしで新しいレコードが失われます。</P>
-
-
-
-
-> [!NOTE]
-> <P>[!メモ] Microsoft Access ワークスペースで <STRONG>AddNew</STRONG> を使用し、データベース エンジンがカレント レコードを格納するために新しいページを作成する必要がある場合、ページのロック状態は排他的となります。一方、新しいレコードが既存のページに収まる場合は、ページのロック状態は共有的となります。</P>
-
-
+> [!メモ] Microsoft Access ワークスペースで **AddNew** を使用し、データベース エンジンがカレント レコードを格納するために新しいページを作成する必要がある場合、ページのロック状態は排他的となります。一方、新しいレコードが既存のページに収まる場合は、ページのロック状態は共有的となります。
 
 **Recordset** の最後のレコードに移動していない場合、他のプロセスでベース テーブルに追加されたレコードがカレント レコード以降に配置された場合は、それらもレコードセットに含まれます。しかし、レコードを自身の **Recordset** に追加する場合は、レコードは **Recordset** に表示され、基になるテーブルに含められるため、すべての新しい **Recordset** オブジェクトで表示されるようになります。
 
 新しいレコードの位置は、 **Recordset** の種類に依存します。
 
-  - ダイナセット タイプの **Recordset** オブジェクトでは、 **Recordset** が開かれたときに有効になっていた並べ替えルールにかかわらず、レコードは **Recordset** の最後に追加されます。
+- ダイナセット タイプの **Recordset** オブジェクトでは、 **Recordset** が開かれたときに有効になっていた並べ替えルールにかかわらず、レコードは **Recordset** の最後に追加されます。
 
-  - [**Index**](recordset-index-property-dao.md) プロパティが設定されているテーブル タイプの **Recordset** オブジェクトでは、レコードは並べ替え順序に応じた位置に返されます。 **Index** プロパティが設定されていない場合、新しいレコードは **Recordset** の最後に返されます。
+- [**Index**](recordset-index-property-dao.md) プロパティが設定されているテーブル タイプの **Recordset** オブジェクトでは、レコードは並べ替え順序に応じた位置に返されます。 **Index** プロパティが設定されていない場合、新しいレコードは **Recordset** の最後に返されます。
 
 **AddNew** を使用する前のカレント レコードは、カレントのままになります。新しいレコードをカレントにするには、 **[Bookmark](recordset-bookmark-property-dao.md)** プロパティを **[LastModified](recordset-lastmodified-property-dao.md)** プロパティの設定によって識別されるブックマークに設定します。
 
-
 > [!NOTE]
-> <P>[!メモ] レコードを追加、編集、削除するには、基になるデータ ソースのレコードに一意のインデックスが存在している必要があります。一意のインデックスが存在しない場合、Microsoft Access ワークスペースでは <STRONG>AddNew</STRONG> 、 <STRONG>Delete</STRONG> 、または <STRONG>Edit</STRONG> メソッドを呼び出したときに "アクセスが拒否されました。" のエラーが発生します。</P>
-
-
+> [!メモ] レコードを追加、編集、削除するには、基になるデータ ソースのレコードに一意のインデックスが存在している必要があります。一意のインデックスが存在しない場合、Microsoft Access ワークスペースでは **AddNew** 、 **Delete** 、または **Edit** メソッドを呼び出したときに "アクセスが拒否されました。" のエラーが発生します。
 
 ## <a name="example"></a>例
 

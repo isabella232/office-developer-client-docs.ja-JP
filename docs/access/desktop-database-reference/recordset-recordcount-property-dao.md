@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821452(v=office.15)
 ms:contentKeyID: 48546941
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6eec9f6be18bbf059660c804313918c480631e0b
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 50134e8271ec5bb89a35eb3114b8b8e63267450a
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927822"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997526"
 ---
 # <a name="recordsetrecordcount-property-dao"></a>Recordset.RecordCount プロパティ (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -30,11 +29,8 @@ ms.locfileid: "25927822"
 
 **RecordCount** プロパティを使用して、 **Recordset** オブジェクトまたは **TableDef** オブジェクトのアクセス済みのレコード数を調べます。 ダイナセット タイプ、スナップショット タイプまたは前方のみタイプの**Recordset**オブジェクトでレコードの数が含まれているすべてのレコードがアクセス済みになるまで**RecordCount**プロパティに示されません。 最後のレコードにアクセスすると、 **Recordset** オブジェクトまたは **TableDef** オブジェクトにある、削除されていないレコードの合計数が **RecordCount** プロパティに示されます。 最後のレコードを強制的にアクセス済みにするには、 [Recordset](recordset-movelast-method-dao.md) オブジェクトに対して ****MoveLast**** メソッドを使用します。 また、SQL の **Count** 関数を使用して、クエリから返される概算のレコード数を調べることもできます。
 
-
 > [!NOTE]
-> <P>[!メモ] 新しく開いた <STRONG>Recordset</STRONG> オブジェクトに、 <STRONG>MoveLast</STRONG> メソッドを使用して値を設定するとパフォーマンスが低下します。 <STRONG>Recordset</STRONG> を開いた直後に正確な <STRONG>RecordCount</STRONG> プロパティの値が必要な場合を除き、コードの他の部分で <STRONG>Recordset</STRONG> オブジェクトに値が設定されるまで待機してから、 <STRONG>RecordCount</STRONG> プロパティを確認することをお勧めします。</P>
-
-
+> [!メモ] 新しく開いた **Recordset** オブジェクトに、 **MoveLast** メソッドを使用して値を設定するとパフォーマンスが低下します。 **Recordset** を開いた直後に正確な **RecordCount** プロパティの値が必要な場合を除き、コードの他の部分で **Recordset** オブジェクトに値が設定されるまで待機してから、 **RecordCount** プロパティを確認することをお勧めします。
 
 ダイナセット タイプの **Recordset** オブジェクトにあるレコードをアプリケーションで削除すると、 **RecordCount** プロパティの値が減少します。ただし、他のユーザーが削除したレコードは、カレント レコードがその削除済みのレコードに移動するまで **RecordCount** プロパティに反映されません。 **RecordCount** プロパティの設定値に影響を与えるトランザクションを実行し、後でそのトランザクションをロールバックすると、残っているレコードの実際の数が **RecordCount** プロパティに反映されません。
 

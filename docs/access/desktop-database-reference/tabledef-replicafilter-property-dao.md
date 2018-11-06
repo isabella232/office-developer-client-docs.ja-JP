@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1055548
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: dbd8ecc670742d6b9f88dd9c608d2304e26a8d09
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: dc8f9103cffb4df4a4db327da9c8ff36e3ec2555
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929665"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997806"
 ---
 # <a name="tabledefreplicafilter-property-dao"></a>TableDef.ReplicaFilter プロパティ (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -78,11 +77,8 @@ ms.locfileid: "25929665"
 
 フィルターを削除するには、 **ReplicaFilter** プロパティを **False** に設定します。すべてのフィルターを削除して、 **PopulatePartial** メソッドを呼び出すと、部分レプリカのレプリケートされたテーブルにレコードが表示されることはありません。
 
-
 > [!NOTE]
-> <P>[!メモ] レプリカ フィルターを変更し、最初に <STRONG>PopulatePartial</STRONG> メソッドを呼び出さずに <STRONG>Synchronize</STRONG> メソッドを呼び出すと、トラップ可能なエラーが発生します。</P>
-
-
+> [!メモ] レプリカ フィルターを変更し、最初に **PopulatePartial** メソッドを呼び出さずに **Synchronize** メソッドを呼び出すと、トラップ可能なエラーが発生します。
 
 ## <a name="example"></a>例
 
