@@ -10,31 +10,31 @@ f1_keywords:
 - dao360.chm1053575
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 3bbc70c132f0171b5aaeed02abdcdcc933926297
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: ada4a573b691fc63a34a9daa5bd60d3aebe0c87d
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920677"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997071"
 ---
-# <a name="recordset2nextrecordset-method-dao"></a><span data-ttu-id="df516-102">Recordset2.NextRecordset メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="df516-102">Recordset2.NextRecordset method (DAO)</span></span>
+# <a name="recordset2nextrecordset-method-dao"></a><span data-ttu-id="b3055-102">Recordset2.NextRecordset メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="b3055-102">Recordset2.NextRecordset method (DAO)</span></span>
 
 
-<span data-ttu-id="df516-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="df516-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b3055-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="b3055-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="df516-104">構文</span><span class="sxs-lookup"><span data-stu-id="df516-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b3055-104">構文</span><span class="sxs-lookup"><span data-stu-id="b3055-104">Syntax</span></span>
 
-<span data-ttu-id="df516-105">*式*です。NextRecordset</span><span class="sxs-lookup"><span data-stu-id="df516-105">*expression* .NextRecordset</span></span>
+<span data-ttu-id="b3055-105">*式*です。NextRecordset</span><span class="sxs-lookup"><span data-stu-id="b3055-105">*expression* .NextRecordset</span></span>
 
-<span data-ttu-id="df516-106">\*式\***Recordset2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="df516-106">*expression* A variable that represents a **Recordset2** object.</span></span>
+<span data-ttu-id="b3055-106">\*式\***Recordset2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="b3055-106">*expression* A variable that represents a **Recordset2** object.</span></span>
 
-### <a name="return-value"></a><span data-ttu-id="df516-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="df516-107">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b3055-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="b3055-107">Return value</span></span>
 
-<span data-ttu-id="df516-108">ブール型</span><span class="sxs-lookup"><span data-stu-id="df516-108">Boolean</span></span>
+<span data-ttu-id="b3055-108">ブール型</span><span class="sxs-lookup"><span data-stu-id="b3055-108">Boolean</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="df516-109">注釈</span><span class="sxs-lookup"><span data-stu-id="df516-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b3055-109">注釈</span><span class="sxs-lookup"><span data-stu-id="b3055-109">Remarks</span></span>
 
-<span data-ttu-id="df516-110">ODBCDirect ワークスペースでは、内の**何らか**の場合は、変換元の引数または**[クエリ定義](querydef-object-dao.md)** オブジェクトは、次の例のように選択クエリの**[SQL](querydef-sql-property-dao.md)** プロパティに 1 つ以上の select クエリが含まれている**レコード セット**を開くことができます。</span><span class="sxs-lookup"><span data-stu-id="df516-110">In an ODBCDirect workspace, you can open a **Recordset** containing more than one select query in the source argument of **OpenRecordset**, or the **[SQL](querydef-sql-property-dao.md)** property of a select query **[QueryDef](querydef-object-dao.md)** object, as in the following example.</span></span>
+<span data-ttu-id="b3055-110">ODBCDirect ワークスペースでは、内の**何らか**の場合は、変換元の引数または**[クエリ定義](querydef-object-dao.md)** オブジェクトは、次の例のように選択クエリの**[SQL](querydef-sql-property-dao.md)** プロパティに 1 つ以上の select クエリが含まれている**レコード セット**を開くことができます。</span><span class="sxs-lookup"><span data-stu-id="b3055-110">In an ODBCDirect workspace, you can open a **Recordset** containing more than one select query in the source argument of **OpenRecordset**, or the **[SQL](querydef-sql-property-dao.md)** property of a select query **[QueryDef](querydef-object-dao.md)** object, as in the following example.</span></span>
 
 ```sql
     SELECT LastName, FirstName FROM Authors 
@@ -43,15 +43,15 @@ ms.locfileid: "25920677"
     WHERE Pub_ID = 9999 
 ```
 
-<span data-ttu-id="df516-p101">返される **Recordset** は、最初のクエリの結果に基づいて開かれます。次のクエリの結果に基づくレコードの結果セットを取得するには、 **NextRecordset** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="df516-p101">The returned **Recordset** will open with the results of the first query. To obtain the result sets of records from subsequent queries, use the **NextRecordset** method.</span></span>
+<span data-ttu-id="b3055-p101">返される **Recordset** は、最初のクエリの結果に基づいて開かれます。次のクエリの結果に基づくレコードの結果セットを取得するには、 **NextRecordset** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="b3055-p101">The returned **Recordset** will open with the results of the first query. To obtain the result sets of records from subsequent queries, use the **NextRecordset** method.</span></span>
 
-<span data-ttu-id="df516-p102">他にもレコードがある (つまり、 **OpenRecordset** 呼び出しまたは **SQL** プロパティに別の選択クエリが指定されていた) 場合は、次のクエリから返されるレコードが **Recordset** に読み込まれ、 **NextRecordset** はレコードがあることを示す **True** を返します。これ以上レコードがない (つまり、最後の選択クエリの結果が既に **Recordset** に読み込まれていた) 場合は、 **NextRecordset** は **False** を返し、 **Recordset** は空になります。</span><span class="sxs-lookup"><span data-stu-id="df516-p102">If more records are available (that is, there was another select query in the **OpenRecordset** call or in the **SQL** property), the records returned from the next query will be loaded into the **Recordset**, and **NextRecordset** will return **True**, indicating that the records are available. When no more records are available (that is, results of the last select query have been loaded into the **Recordset**), then **NextRecordset** will return **False**, and the **Recordset** will be empty.</span></span>
+<span data-ttu-id="b3055-p102">他にもレコードがある (つまり、 **OpenRecordset** 呼び出しまたは **SQL** プロパティに別の選択クエリが指定されていた) 場合は、次のクエリから返されるレコードが **Recordset** に読み込まれ、 **NextRecordset** はレコードがあることを示す **True** を返します。これ以上レコードがない (つまり、最後の選択クエリの結果が既に **Recordset** に読み込まれていた) 場合は、 **NextRecordset** は **False** を返し、 **Recordset** は空になります。</span><span class="sxs-lookup"><span data-stu-id="b3055-p102">If more records are available (that is, there was another select query in the **OpenRecordset** call or in the **SQL** property), the records returned from the next query will be loaded into the **Recordset**, and **NextRecordset** will return **True**, indicating that the records are available. When no more records are available (that is, results of the last select query have been loaded into the **Recordset**), then **NextRecordset** will return **False**, and the **Recordset** will be empty.</span></span>
 
-<span data-ttu-id="df516-p103">**[Cancel](connection-cancel-method-dao.md)** メソッドを使用して、 **Recordset** の内容を消去することもできます。ただし、 **Cancel** を使用すると、まだ読み込まれていないレコードも消去されます。</span><span class="sxs-lookup"><span data-stu-id="df516-p103">You can also use the **[Cancel](connection-cancel-method-dao.md)** method to flush the contents of a **Recordset**. However, **Cancel** also flushes any additional records not yet loaded.</span></span>
+<span data-ttu-id="b3055-p103">**[Cancel](connection-cancel-method-dao.md)** メソッドを使用して、 **Recordset** の内容を消去することもできます。ただし、 **Cancel** を使用すると、まだ読み込まれていないレコードも消去されます。</span><span class="sxs-lookup"><span data-stu-id="b3055-p103">You can also use the **[Cancel](connection-cancel-method-dao.md)** method to flush the contents of a **Recordset**. However, **Cancel** also flushes any additional records not yet loaded.</span></span>
 
-## <a name="example"></a><span data-ttu-id="df516-117">例</span><span class="sxs-lookup"><span data-stu-id="df516-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b3055-117">例</span><span class="sxs-lookup"><span data-stu-id="b3055-117">Example</span></span>
 
-<span data-ttu-id="df516-p104">次の使用例では、 **NextRecordset** メソッドを使用して、複合 SELECT クエリから返されたデータを表示します。このようなクエリを実行するときは、 **DefaultCursorDriver** プロパティを **dbUseODBCCursor** に設定する必要があります。SELECT ステートメントの一部または全部が 0 件のレコードを返したとしても **NextRecordset** メソッドは **True** を返し、個々の SQL 句をすべて調べた後でのみ **False** を返します。</span><span class="sxs-lookup"><span data-stu-id="df516-p104">This example uses the **NextRecordset** method to view the data from a compound SELECT query. The **DefaultCursorDriver** property must be set to **dbUseODBCCursor** when executing such queries. The **NextRecordset** method will return **True** even if some or all of the SELECT statements return zero records; it will return **False** only after all the individual SQL clauses have been checked.</span></span>
+<span data-ttu-id="b3055-p104">次の使用例では、 **NextRecordset** メソッドを使用して、複合 SELECT クエリから返されたデータを表示します。このようなクエリを実行するときは、 **DefaultCursorDriver** プロパティを **dbUseODBCCursor** に設定する必要があります。SELECT ステートメントの一部または全部が 0 件のレコードを返したとしても **NextRecordset** メソッドは **True** を返し、個々の SQL 句をすべて調べた後でのみ **False** を返します。</span><span class="sxs-lookup"><span data-stu-id="b3055-p104">This example uses the **NextRecordset** method to view the data from a compound SELECT query. The **DefaultCursorDriver** property must be set to **dbUseODBCCursor** when executing such queries. The **NextRecordset** method will return **True** even if some or all of the SELECT statements return zero records; it will return **False** only after all the individual SQL clauses have been checked.</span></span>
 
 ```vb
     Sub NextRecordsetX() 
@@ -108,7 +108,7 @@ ms.locfileid: "25920677"
 
 <br/>
 
-<span data-ttu-id="df516-p105">複合 SQL ステートメントを含むプリペアド ステートメントを作成して、同じ作業を実行することもできます。 **QueryDef** オブジェクトの **CacheSize** プロパティが 1 に設定されていて、 **Recordset** オブジェクトが前方スクロール タイプであり、かつ読み取り専用である必要があります。</span><span class="sxs-lookup"><span data-stu-id="df516-p105">Another way to accomplish the same task would be to create a prepared statement containing the compound SQL statement. The **CacheSize** property of the **QueryDef** object must be set to 1, and the **Recordset** object must be forward-only and read-only.</span></span>
+<span data-ttu-id="b3055-p105">複合 SQL ステートメントを含むプリペアド ステートメントを作成して、同じ作業を実行することもできます。 **QueryDef** オブジェクトの **CacheSize** プロパティが 1 に設定されていて、 **Recordset** オブジェクトが前方スクロール タイプであり、かつ読み取り専用である必要があります。</span><span class="sxs-lookup"><span data-stu-id="b3055-p105">Another way to accomplish the same task would be to create a prepared statement containing the compound SQL statement. The **CacheSize** property of the **QueryDef** object must be set to 1, and the **Recordset** object must be forward-only and read-only.</span></span>
 
 ```vb 
 Sub NextRecordsetX2() 

@@ -6,26 +6,26 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835343(v=office.15)
 ms:contentKeyID: 48548108
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1ef8c2399ec8a2ddedde47197388698c2b83c57c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 4c4f799d9e0e3ea2ffddbf981adf9332cca672ee
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926669"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997288"
 ---
-# <a name="workspaceopendatabase-method-dao"></a><span data-ttu-id="5cccc-102">Workspace.OpenDatabase メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="5cccc-102">Workspace.OpenDatabase method (DAO)</span></span>
+# <a name="workspaceopendatabase-method-dao"></a><span data-ttu-id="95fc0-102">Workspace.OpenDatabase メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="95fc0-102">Workspace.OpenDatabase method (DAO)</span></span>
 
-<span data-ttu-id="5cccc-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="5cccc-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="95fc0-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="95fc0-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="5cccc-104">**[Workspace](workspace-object-dao.md)** オブジェクト内で指定されたデータベースを開き、そのデータベースを表す **[Database](database-object-dao.md)** オブジェクトへの参照を返します。</span><span class="sxs-lookup"><span data-stu-id="5cccc-104">Opens a specified database in a **[Workspace](workspace-object-dao.md)** object and returns a reference to the **[Database](database-object-dao.md)** object that represents it.</span></span>
+<span data-ttu-id="95fc0-104">**[Workspace](workspace-object-dao.md)** オブジェクト内で指定されたデータベースを開き、そのデータベースを表す **[Database](database-object-dao.md)** オブジェクトへの参照を返します。</span><span class="sxs-lookup"><span data-stu-id="95fc0-104">Opens a specified database in a **[Workspace](workspace-object-dao.md)** object and returns a reference to the **[Database](database-object-dao.md)** object that represents it.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="5cccc-105">構文</span><span class="sxs-lookup"><span data-stu-id="5cccc-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="95fc0-105">構文</span><span class="sxs-lookup"><span data-stu-id="95fc0-105">Syntax</span></span>
 
-<span data-ttu-id="5cccc-106">*式*です。OpenDatabase (***名前***、***オプション***、***読み取り専用***、***接続***)</span><span class="sxs-lookup"><span data-stu-id="5cccc-106">*expression* .OpenDatabase(***Name***, ***Options***, ***ReadOnly***, ***Connect***)</span></span>
+<span data-ttu-id="95fc0-106">*式*です。OpenDatabase (***名前***、***オプション***、***読み取り専用***、***接続***)</span><span class="sxs-lookup"><span data-stu-id="95fc0-106">*expression* .OpenDatabase(***Name***, ***Options***, ***ReadOnly***, ***Connect***)</span></span>
 
-<span data-ttu-id="5cccc-107">\*式\***ワークスペース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="5cccc-107">*expression* A variable that represents a **Workspace** object.</span></span>
+<span data-ttu-id="95fc0-107">\*式\***ワークスペース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="95fc0-107">*expression* A variable that represents a **Workspace** object.</span></span>
 
-### <a name="parameters"></a><span data-ttu-id="5cccc-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5cccc-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="95fc0-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="95fc0-108">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -36,48 +36,48 @@ ms.locfileid: "25926669"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="5cccc-109">名前</span><span class="sxs-lookup"><span data-stu-id="5cccc-109">Name</span></span></p></th>
-<th><p><span data-ttu-id="5cccc-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="5cccc-110">Required/Optional</span></span></p></th>
-<th><p><span data-ttu-id="5cccc-111">データ型</span><span class="sxs-lookup"><span data-stu-id="5cccc-111">Data Type</span></span></p></th>
-<th><p><span data-ttu-id="5cccc-112">説明</span><span class="sxs-lookup"><span data-stu-id="5cccc-112">Description</span></span></p></th>
+<th><p><span data-ttu-id="95fc0-109">名前</span><span class="sxs-lookup"><span data-stu-id="95fc0-109">Name</span></span></p></th>
+<th><p><span data-ttu-id="95fc0-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="95fc0-110">Required/optional</span></span></p></th>
+<th><p><span data-ttu-id="95fc0-111">データ型</span><span class="sxs-lookup"><span data-stu-id="95fc0-111">Data type</span></span></p></th>
+<th><p><span data-ttu-id="95fc0-112">説明</span><span class="sxs-lookup"><span data-stu-id="95fc0-112">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="5cccc-113">名前</span><span class="sxs-lookup"><span data-stu-id="5cccc-113">Name</span></span></p></td>
-<td><p><span data-ttu-id="5cccc-114">必須</span><span class="sxs-lookup"><span data-stu-id="5cccc-114">Required</span></span></p></td>
-<td><p><span data-ttu-id="5cccc-115"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="5cccc-115"><strong>String</strong></span></span></p></td>
-<td><p><span data-ttu-id="5cccc-p101">既存の Microsoft Access データベース エンジンのデータベース ファイル名、または ODBC データ ソースのデータ ソース名 (DSN) です。この値を設定する方法の詳細については、 <strong><a href="connection-name-property-dao.md">Name</a></strong> プロパティのトピックを参照してください。  </span><span class="sxs-lookup"><span data-stu-id="5cccc-p101">the name of an existing Microsoft Access database engine database file, or the data source name (DSN) of an ODBC data source. See the <strong><a href="connection-name-property-dao.md">Name</a></strong> property for more information about setting this value.</span></span></p></td>
+<td><p><span data-ttu-id="95fc0-113"><em>Name</em></span><span class="sxs-lookup"><span data-stu-id="95fc0-113"><em>Name</em></span></span></p></td>
+<td><p><span data-ttu-id="95fc0-114">必須</span><span class="sxs-lookup"><span data-stu-id="95fc0-114">Required</span></span></p></td>
+<td><p><span data-ttu-id="95fc0-115"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="95fc0-115"><strong>String</strong></span></span></p></td>
+<td><p><span data-ttu-id="95fc0-p101">既存の Microsoft Access データベース エンジンのデータベース ファイル名、または ODBC データ ソースのデータ ソース名 (DSN) です。この値を設定する方法の詳細については、 <strong><a href="connection-name-property-dao.md">Name</a></strong> プロパティのトピックを参照してください。  </span><span class="sxs-lookup"><span data-stu-id="95fc0-p101">the name of an existing Microsoft Access database engine database file, or the data source name (DSN) of an ODBC data source. See the <strong><a href="connection-name-property-dao.md">Name</a></strong> property for more information about setting this value.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="5cccc-118">選択肢</span><span class="sxs-lookup"><span data-stu-id="5cccc-118">Options</span></span></p></td>
-<td><p><span data-ttu-id="5cccc-119">省略可能</span><span class="sxs-lookup"><span data-stu-id="5cccc-119">Optional</span></span></p></td>
-<td><p><span data-ttu-id="5cccc-120"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="5cccc-120"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="5cccc-121">「備考」に記載されたデータベースのさまざまなオプションを設定します。</span><span class="sxs-lookup"><span data-stu-id="5cccc-121">Sets various options for the database, as specified in Remarks.</span></span></p></td>
+<td><p><span data-ttu-id="95fc0-118"><em>Options</em></span><span class="sxs-lookup"><span data-stu-id="95fc0-118"><em>Options</em></span></span></p></td>
+<td><p><span data-ttu-id="95fc0-119">省略可能</span><span class="sxs-lookup"><span data-stu-id="95fc0-119">Optional</span></span></p></td>
+<td><p><span data-ttu-id="95fc0-120"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="95fc0-120"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="95fc0-121">「備考」に記載されたデータベースのさまざまなオプションを設定します。</span><span class="sxs-lookup"><span data-stu-id="95fc0-121">Sets various options for the database, as specified in Remarks.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="5cccc-122">ReadOnly</span><span class="sxs-lookup"><span data-stu-id="5cccc-122">ReadOnly</span></span></p></td>
-<td><p><span data-ttu-id="5cccc-123">省略可能</span><span class="sxs-lookup"><span data-stu-id="5cccc-123">Optional</span></span></p></td>
-<td><p><span data-ttu-id="5cccc-124"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="5cccc-124"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="5cccc-125"><strong>True</strong> に設定すると、データベースが読み取り専用アクセスで開かれ、 <strong>False</strong> (既定値) に設定すると、読み取り/書き込みアクセスで開かれます。</span><span class="sxs-lookup"><span data-stu-id="5cccc-125"><strong>True</strong> if you want to open the database with read-only access, or <strong>False</strong> (default) if you want to open the database with read/write access.</span></span></p></td>
+<td><p><span data-ttu-id="95fc0-122"><em>ReadOnly</em></span><span class="sxs-lookup"><span data-stu-id="95fc0-122"><em>ReadOnly</em></span></span></p></td>
+<td><p><span data-ttu-id="95fc0-123">省略可能</span><span class="sxs-lookup"><span data-stu-id="95fc0-123">Optional</span></span></p></td>
+<td><p><span data-ttu-id="95fc0-124"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="95fc0-124"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="95fc0-125"><strong>True</strong> に設定すると、データベースが読み取り専用アクセスで開かれ、 <strong>False</strong> (既定値) に設定すると、読み取り/書き込みアクセスで開かれます。</span><span class="sxs-lookup"><span data-stu-id="95fc0-125"><strong>True</strong> if you want to open the database with read-only access, or <strong>False</strong> (default) if you want to open the database with read/write access.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="5cccc-126">ブラウザでの</span><span class="sxs-lookup"><span data-stu-id="5cccc-126">Connect</span></span></p></td>
-<td><p><span data-ttu-id="5cccc-127">省略可能</span><span class="sxs-lookup"><span data-stu-id="5cccc-127">Optional</span></span></p></td>
-<td><p><span data-ttu-id="5cccc-128"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="5cccc-128"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="5cccc-129">パスワードなどさまざまな接続情報を指定します。</span><span class="sxs-lookup"><span data-stu-id="5cccc-129">Specifies various connection information, including passwords.</span></span></p></td>
+<td><p><span data-ttu-id="95fc0-126"><em>Connect</em></span><span class="sxs-lookup"><span data-stu-id="95fc0-126"><em>Connect</em></span></span></p></td>
+<td><p><span data-ttu-id="95fc0-127">省略可能</span><span class="sxs-lookup"><span data-stu-id="95fc0-127">Optional</span></span></p></td>
+<td><p><span data-ttu-id="95fc0-128"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="95fc0-128"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="95fc0-129">パスワードなどさまざまな接続情報を指定します。</span><span class="sxs-lookup"><span data-stu-id="95fc0-129">Specifies various connection information, including passwords.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="return-value"></a><span data-ttu-id="5cccc-130">戻り値</span><span class="sxs-lookup"><span data-stu-id="5cccc-130">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="95fc0-130">戻り値</span><span class="sxs-lookup"><span data-stu-id="95fc0-130">Return value</span></span>
 
-<span data-ttu-id="5cccc-131">データベース</span><span class="sxs-lookup"><span data-stu-id="5cccc-131">Database</span></span>
+<span data-ttu-id="95fc0-131">データベース</span><span class="sxs-lookup"><span data-stu-id="95fc0-131">Database</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="5cccc-132">注釈</span><span class="sxs-lookup"><span data-stu-id="5cccc-132">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="95fc0-132">注釈</span><span class="sxs-lookup"><span data-stu-id="95fc0-132">Remarks</span></span>
 
-<span data-ttu-id="5cccc-133">引数 options で使用できる値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="5cccc-133">You can use the following values for the options argument.</span></span>
+<span data-ttu-id="95fc0-133">引数 options で使用できる値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="95fc0-133">You can use the following values for the options argument.</span></span>
 
 <table>
 <colgroup>
@@ -86,41 +86,42 @@ ms.locfileid: "25926669"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="5cccc-134">設定</span><span class="sxs-lookup"><span data-stu-id="5cccc-134">Setting</span></span></p></th>
-<th><p><span data-ttu-id="5cccc-135">説明</span><span class="sxs-lookup"><span data-stu-id="5cccc-135">Description</span></span></p></th>
+<th><p><span data-ttu-id="95fc0-134">設定</span><span class="sxs-lookup"><span data-stu-id="95fc0-134">Setting</span></span></p></th>
+<th><p><span data-ttu-id="95fc0-135">説明</span><span class="sxs-lookup"><span data-stu-id="95fc0-135">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="5cccc-136"><strong>True</strong></span><span class="sxs-lookup"><span data-stu-id="5cccc-136"><strong>True</strong></span></span></p></td>
-<td><p><span data-ttu-id="5cccc-137">データベースを排他モードで開きます。</span><span class="sxs-lookup"><span data-stu-id="5cccc-137">Opens the database in exclusive mode.</span></span></p></td>
+<td><p><span data-ttu-id="95fc0-136"><strong>True</strong></span><span class="sxs-lookup"><span data-stu-id="95fc0-136"><strong>True</strong></span></span></p></td>
+<td><p><span data-ttu-id="95fc0-137">データベースを排他モードで開きます。</span><span class="sxs-lookup"><span data-stu-id="95fc0-137">Opens the database in exclusive mode.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="5cccc-138"><strong>False</strong></span><span class="sxs-lookup"><span data-stu-id="5cccc-138"><strong>False</strong></span></span></p></td>
-<td><p><span data-ttu-id="5cccc-139">(既定値) データベースを共有モードで開きます。</span><span class="sxs-lookup"><span data-stu-id="5cccc-139">(Default) Opens the database in shared mode.</span></span></p></td>
+<td><p><span data-ttu-id="95fc0-138"><strong>False</strong></span><span class="sxs-lookup"><span data-stu-id="95fc0-138"><strong>False</strong></span></span></p></td>
+<td><p><span data-ttu-id="95fc0-139">(既定値) データベースを共有モードで開きます。</span><span class="sxs-lookup"><span data-stu-id="95fc0-139">(Default) Opens the database in shared mode.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
+<br/>
 
-<span data-ttu-id="5cccc-140">データベースを開くと、そのデータベースは自動的に **Databases** コレクションに追加されます。</span><span class="sxs-lookup"><span data-stu-id="5cccc-140">When you open a database, it is automatically added to the **Databases** collection.</span></span>
+<span data-ttu-id="95fc0-140">データベースを開くと、そのデータベースは自動的に **Databases** コレクションに追加されます。</span><span class="sxs-lookup"><span data-stu-id="95fc0-140">When you open a database, it is automatically added to the **Databases** collection.</span></span>
 
-<span data-ttu-id="5cccc-141">データベース名を使用する場合は、いくつかの考慮事項が適用されます。</span><span class="sxs-lookup"><span data-stu-id="5cccc-141">Some considerations apply when you use dbname:</span></span>
+<span data-ttu-id="95fc0-141">データベース名を使用する場合は、いくつかの考慮事項が適用されます。</span><span class="sxs-lookup"><span data-stu-id="95fc0-141">Some considerations apply when you use dbname:</span></span>
 
-- <span data-ttu-id="5cccc-142">別のユーザーによって既に排他的に開かれているデータベースを指定すると、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="5cccc-142">If it refers to a database that is already open for access by another user, an error occurs.</span></span>
+- <span data-ttu-id="95fc0-142">別のユーザーによって既に排他的に開かれているデータベースを指定すると、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="95fc0-142">If it refers to a database that is already open for access by another user, an error occurs.</span></span>
 
-- <span data-ttu-id="5cccc-143">既存のデータベース、または有効な ODBC データ ソース名を指定していない場合は、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="5cccc-143">If it doesn't refer to an existing database or valid ODBC data source name, an error occurs.</span></span>
+- <span data-ttu-id="95fc0-143">既存のデータベース、または有効な ODBC データ ソース名を指定していない場合は、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="95fc0-143">If it doesn't refer to an existing database or valid ODBC data source name, an error occurs.</span></span>
 
-- <span data-ttu-id="5cccc-144">長さ 0 の文字列である場合 ("") とは、"ODBC;"は、*接続*ユーザーがデータベースを選択できるように登録されているすべての ODBC データ ソース名をリストするダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="5cccc-144">If it's a zero-length string ("") and *connect* is "ODBC;" , a dialog box listing all registered ODBC data source names is displayed so the user can select a database.</span></span>
+- <span data-ttu-id="95fc0-144">長さ 0 の文字列である場合 ("") とは、"ODBC;"は、*接続*ユーザーがデータベースを選択できるように登録されているすべての ODBC データ ソース名をリストするダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="95fc0-144">If it's a zero-length string ("") and *connect* is "ODBC;" , a dialog box listing all registered ODBC data source names is displayed so the user can select a database.</span></span>
 
-<span data-ttu-id="5cccc-145">データベースを閉じ、その **Database** オブジェクトを **Databases** コレクションから削除するには、そのオブジェクトの **[Close](connection-close-method-dao.md)** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="5cccc-145">To close a database, and thus remove the **Database** object from the **Databases** collection, use the **[Close](connection-close-method-dao.md)** method on the object.</span></span>
+<span data-ttu-id="95fc0-145">データベースを閉じ、その **Database** オブジェクトを **Databases** コレクションから削除するには、そのオブジェクトの **[Close](connection-close-method-dao.md)** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="95fc0-145">To close a database, and thus remove the **Database** object from the **Databases** collection, use the **[Close](connection-close-method-dao.md)** method on the object.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="5cccc-146">[!メモ] Microsoft Access データベース エンジンに接続している ODBC データ ソースにアクセスするときは、ODBC データ ソースに接続された **Database** オブジェクトを開いた方が、個々の **[TableDef](tabledef-object-dao.md)** オブジェクトを ODBC データ ソースの特定のテーブルにリンクさせるよりもアプリケーションのパフォーマンスが向上します。</span><span class="sxs-lookup"><span data-stu-id="5cccc-146">When you access a Microsoft access database engine-connected ODBC data source, you can improve your application's performance by opening a **Database** object connected to the ODBC data source, rather than by linking individual **[TableDef](tabledef-object-dao.md)** objects to specific tables in the ODBC data source.</span></span>
+> <span data-ttu-id="95fc0-146">[!メモ] Microsoft Access データベース エンジンに接続している ODBC データ ソースにアクセスするときは、ODBC データ ソースに接続された **Database** オブジェクトを開いた方が、個々の **[TableDef](tabledef-object-dao.md)** オブジェクトを ODBC データ ソースの特定のテーブルにリンクさせるよりもアプリケーションのパフォーマンスが向上します。</span><span class="sxs-lookup"><span data-stu-id="95fc0-146">When you access a Microsoft access database engine-connected ODBC data source, you can improve your application's performance by opening a **Database** object connected to the ODBC data source, rather than by linking individual **[TableDef](tabledef-object-dao.md)** objects to specific tables in the ODBC data source.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5cccc-147">例</span><span class="sxs-lookup"><span data-stu-id="5cccc-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="95fc0-147">例</span><span class="sxs-lookup"><span data-stu-id="95fc0-147">Example</span></span>
 
-<span data-ttu-id="5cccc-148">この例では、 **OpenDatabase** メソッドを使用して、Microsoft Access データベースと、Microsoft Access データベース エンジンに接続された 2 つの ODBC データベースを開きます。</span><span class="sxs-lookup"><span data-stu-id="5cccc-148">This example uses the **OpenDatabase** method to open one Microsoft Access database and two Microsoft Access database engine-connected ODBC databases.</span></span>
+<span data-ttu-id="95fc0-148">この例では、 **OpenDatabase** メソッドを使用して、Microsoft Access データベースと、Microsoft Access データベース エンジンに接続された 2 つの ODBC データベースを開きます。</span><span class="sxs-lookup"><span data-stu-id="95fc0-148">This example uses the **OpenDatabase** method to open one Microsoft Access database and two Microsoft Access database engine-connected ODBC databases.</span></span>
 
 ```vb 
 Sub OpenDatabaseX() 

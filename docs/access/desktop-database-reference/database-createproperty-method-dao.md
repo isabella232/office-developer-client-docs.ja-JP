@@ -6,26 +6,26 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff836607(v=office.15)
 ms:contentKeyID: 48548638
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b746ba3d8acfd8f32b20ed41f8f7bffe1b4d3b12
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: 27d4650dcbb8b286e5f07c9e4e2418f4ec7e2b0a
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25950196"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997841"
 ---
-# <a name="databasecreateproperty-method-dao"></a><span data-ttu-id="bd2f8-102">Database.CreateProperty メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="bd2f8-102">Database.CreateProperty method (DAO)</span></span>
+# <a name="databasecreateproperty-method-dao"></a><span data-ttu-id="2847b-102">Database.CreateProperty メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="2847b-102">Database.CreateProperty method (DAO)</span></span>
 
-<span data-ttu-id="bd2f8-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="bd2f8-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="2847b-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="2847b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="bd2f8-p101">新しいユーザー定義の **[Property](property-object-dao.md)** オブジェクトを作成します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="bd2f8-p101">Creates a new user-defined **[Property](property-object-dao.md)** object (Microsoft Access workspaces only). .</span></span>
+<span data-ttu-id="2847b-p101">新しいユーザー定義の **[Property](property-object-dao.md)** オブジェクトを作成します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="2847b-p101">Creates a new user-defined **[Property](property-object-dao.md)** object (Microsoft Access workspaces only). .</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="bd2f8-106">構文</span><span class="sxs-lookup"><span data-stu-id="bd2f8-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="2847b-106">構文</span><span class="sxs-lookup"><span data-stu-id="2847b-106">Syntax</span></span>
 
-<span data-ttu-id="bd2f8-107">*式*です。CreateProperty (***名前***、***型***、***値***、 ***DDL***)</span><span class="sxs-lookup"><span data-stu-id="bd2f8-107">*expression* .CreateProperty(***Name***, ***Type***, ***Value***, ***DDL***)</span></span>
+<span data-ttu-id="2847b-107">*式*です。CreateProperty (***名前***、***型***、***値***、 ***DDL***)</span><span class="sxs-lookup"><span data-stu-id="2847b-107">*expression* .CreateProperty(***Name***, ***Type***, ***Value***, ***DDL***)</span></span>
 
-<span data-ttu-id="bd2f8-108">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="bd2f8-108">*expression* A variable that represents a **Database** object.</span></span>
+<span data-ttu-id="2847b-108">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="2847b-108">*expression* A variable that represents a **Database** object.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="bd2f8-109">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bd2f8-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="2847b-109">パラメーター</span><span class="sxs-lookup"><span data-stu-id="2847b-109">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -36,62 +36,62 @@ ms.locfileid: "25950196"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="bd2f8-110">名前</span><span class="sxs-lookup"><span data-stu-id="bd2f8-110">Name</span></span></p></th>
-<th><p><span data-ttu-id="bd2f8-111">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="bd2f8-111">Required/Optional</span></span></p></th>
-<th><p><span data-ttu-id="bd2f8-112">データ型</span><span class="sxs-lookup"><span data-stu-id="bd2f8-112">Data Type</span></span></p></th>
-<th><p><span data-ttu-id="bd2f8-113">説明</span><span class="sxs-lookup"><span data-stu-id="bd2f8-113">Description</span></span></p></th>
+<th><p><span data-ttu-id="2847b-110">名前</span><span class="sxs-lookup"><span data-stu-id="2847b-110">Name</span></span></p></th>
+<th><p><span data-ttu-id="2847b-111">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="2847b-111">Required/optional</span></span></p></th>
+<th><p><span data-ttu-id="2847b-112">データ型</span><span class="sxs-lookup"><span data-stu-id="2847b-112">Data type</span></span></p></th>
+<th><p><span data-ttu-id="2847b-113">説明</span><span class="sxs-lookup"><span data-stu-id="2847b-113">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="bd2f8-114"><em>Name</em></span><span class="sxs-lookup"><span data-stu-id="bd2f8-114"><em>Name</em></span></span></p></td>
-<td><p><span data-ttu-id="bd2f8-115">省略可能</span><span class="sxs-lookup"><span data-stu-id="bd2f8-115">Optional</span></span></p></td>
-<td><p><span data-ttu-id="bd2f8-116"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="bd2f8-116"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="bd2f8-p102">新しい <strong>Property</strong> オブジェクトの一意の名前を表す文字列型 ( <strong>String</strong> ) の値。有効な <strong>Property</strong> 名の詳細については、 <strong>Name</strong> プロパティを参照してください。  </span><span class="sxs-lookup"><span data-stu-id="bd2f8-p102">A <strong>String</strong> that uniquely names the new <strong>Property</strong> object. See the <strong>Name</strong> property for details on valid <strong>Property</strong> names.</span></span></p></td>
+<td><p><span data-ttu-id="2847b-114"><em>Name</em></span><span class="sxs-lookup"><span data-stu-id="2847b-114"><em>Name</em></span></span></p></td>
+<td><p><span data-ttu-id="2847b-115">省略可能</span><span class="sxs-lookup"><span data-stu-id="2847b-115">Optional</span></span></p></td>
+<td><p><span data-ttu-id="2847b-116"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="2847b-116"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="2847b-p102">新しい <strong>Property</strong> オブジェクトの一意の名前を表す文字列型 ( <strong>String</strong> ) の値。有効な <strong>Property</strong> 名の詳細については、 <strong>Name</strong> プロパティを参照してください。  </span><span class="sxs-lookup"><span data-stu-id="2847b-p102">A <strong>String</strong> that uniquely names the new <strong>Property</strong> object. See the <strong>Name</strong> property for details on valid <strong>Property</strong> names.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="bd2f8-119"><em>Type</em></span><span class="sxs-lookup"><span data-stu-id="bd2f8-119"><em>Type</em></span></span></p></td>
-<td><p><span data-ttu-id="bd2f8-120">省略可能</span><span class="sxs-lookup"><span data-stu-id="bd2f8-120">Optional</span></span></p></td>
-<td><p><span data-ttu-id="bd2f8-121"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="bd2f8-121"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="bd2f8-p103">新しい <strong>Property</strong> オブジェクトのデータ型を定義する定数。有効なデータ型については、 <strong><a href="field-type-property-dao.md">Type</a></strong> プロパティを参照してください。  </span><span class="sxs-lookup"><span data-stu-id="bd2f8-p103">A constant that defines the data type of the new <strong>Property</strong> object. See the <strong><a href="field-type-property-dao.md">Type</a></strong> property for valid data types.</span></span></p></td>
+<td><p><span data-ttu-id="2847b-119"><em>Type</em></span><span class="sxs-lookup"><span data-stu-id="2847b-119"><em>Type</em></span></span></p></td>
+<td><p><span data-ttu-id="2847b-120">省略可能</span><span class="sxs-lookup"><span data-stu-id="2847b-120">Optional</span></span></p></td>
+<td><p><span data-ttu-id="2847b-121"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="2847b-121"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="2847b-p103">新しい <strong>Property</strong> オブジェクトのデータ型を定義する定数。有効なデータ型については、 <strong><a href="field-type-property-dao.md">Type</a></strong> プロパティを参照してください。  </span><span class="sxs-lookup"><span data-stu-id="2847b-p103">A constant that defines the data type of the new <strong>Property</strong> object. See the <strong><a href="field-type-property-dao.md">Type</a></strong> property for valid data types.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="bd2f8-124"><em>Value</em></span><span class="sxs-lookup"><span data-stu-id="bd2f8-124"><em>Value</em></span></span></p></td>
-<td><p><span data-ttu-id="bd2f8-125">省略可能</span><span class="sxs-lookup"><span data-stu-id="bd2f8-125">Optional</span></span></p></td>
-<td><p><span data-ttu-id="bd2f8-126"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="bd2f8-126"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="bd2f8-p104">初期プロパティ値を格納しているバリアント型 ( <strong>Variant</strong> ) の値。詳細については、 <strong><a href="field-value-property-dao.md">Value</a></strong> プロパティを参照してください。  </span><span class="sxs-lookup"><span data-stu-id="bd2f8-p104">A <strong>Variant</strong> containing the initial property value. See the <strong><a href="field-value-property-dao.md">Value</a></strong> property for details.</span></span></p></td>
+<td><p><span data-ttu-id="2847b-124"><em>Value</em></span><span class="sxs-lookup"><span data-stu-id="2847b-124"><em>Value</em></span></span></p></td>
+<td><p><span data-ttu-id="2847b-125">省略可能</span><span class="sxs-lookup"><span data-stu-id="2847b-125">Optional</span></span></p></td>
+<td><p><span data-ttu-id="2847b-126"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="2847b-126"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="2847b-p104">初期プロパティ値を格納しているバリアント型 ( <strong>Variant</strong> ) の値。詳細については、 <strong><a href="field-value-property-dao.md">Value</a></strong> プロパティを参照してください。  </span><span class="sxs-lookup"><span data-stu-id="2847b-p104">A <strong>Variant</strong> containing the initial property value. See the <strong><a href="field-value-property-dao.md">Value</a></strong> property for details.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="bd2f8-129"><em>DDL</em></span><span class="sxs-lookup"><span data-stu-id="bd2f8-129"><em>DDL</em></span></span></p></td>
-<td><p><span data-ttu-id="bd2f8-130">省略可能</span><span class="sxs-lookup"><span data-stu-id="bd2f8-130">Optional</span></span></p></td>
-<td><p><span data-ttu-id="bd2f8-131"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="bd2f8-131"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="bd2f8-132"><strong>バリアント型</strong>(<strong>ブール型</strong>のサブタイプ)<strong>プロパティ</strong>は、DDL オブジェクトであるかどうかを示す。</span><span class="sxs-lookup"><span data-stu-id="bd2f8-132">A <strong>Variant</strong> (<strong>Boolean</strong> subtype) that indicates whether or not the <strong>Property</strong> is a DDL object.</span></span> <span data-ttu-id="bd2f8-133">既定値は、False です。</span><span class="sxs-lookup"><span data-stu-id="bd2f8-133">The default is False.</span></span> <span data-ttu-id="bd2f8-134">DDL が True の場合は、ユーザーが変更または dbSecWriteDef 権限を持たない<strong>プロパティ</strong>オブジェクトを削除できません。</span><span class="sxs-lookup"><span data-stu-id="bd2f8-134">If DDL is True, users can't change or delete this <strong>Property</strong> object unless they have dbSecWriteDef permission.</span></span></p></td>
+<td><p><span data-ttu-id="2847b-129"><em>DDL</em></span><span class="sxs-lookup"><span data-stu-id="2847b-129"><em>DDL</em></span></span></p></td>
+<td><p><span data-ttu-id="2847b-130">省略可能</span><span class="sxs-lookup"><span data-stu-id="2847b-130">Optional</span></span></p></td>
+<td><p><span data-ttu-id="2847b-131"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="2847b-131"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="2847b-132"><strong>バリアント型</strong>(<strong>ブール型</strong>のサブタイプ)<strong>プロパティ</strong>は、DDL オブジェクトであるかどうかを示す。</span><span class="sxs-lookup"><span data-stu-id="2847b-132">A <strong>Variant</strong> (<strong>Boolean</strong> subtype) that indicates whether or not the <strong>Property</strong> is a DDL object.</span></span> <span data-ttu-id="2847b-133">既定値は、False です。</span><span class="sxs-lookup"><span data-stu-id="2847b-133">The default is False.</span></span> <span data-ttu-id="2847b-134">DDL が True の場合は、ユーザーが変更または dbSecWriteDef 権限を持たない<strong>プロパティ</strong>オブジェクトを削除できません。</span><span class="sxs-lookup"><span data-stu-id="2847b-134">If DDL is True, users can't change or delete this <strong>Property</strong> object unless they have dbSecWriteDef permission.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="return-value"></a><span data-ttu-id="bd2f8-135">戻り値</span><span class="sxs-lookup"><span data-stu-id="bd2f8-135">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2847b-135">戻り値</span><span class="sxs-lookup"><span data-stu-id="2847b-135">Return value</span></span>
 
-<span data-ttu-id="bd2f8-136">プロパティ</span><span class="sxs-lookup"><span data-stu-id="bd2f8-136">Property</span></span>
+<span data-ttu-id="2847b-136">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2847b-136">Property</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="bd2f8-137">注釈</span><span class="sxs-lookup"><span data-stu-id="bd2f8-137">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2847b-137">注釈</span><span class="sxs-lookup"><span data-stu-id="2847b-137">Remarks</span></span>
 
-<span data-ttu-id="bd2f8-138">ユーザー定義の **Property** オブジェクトを作成できるのは、持続的なオブジェクトの **[Properties](properties-collection-dao.md)** コレクション内だけです。</span><span class="sxs-lookup"><span data-stu-id="bd2f8-138">You can create a user-defined **Property** object only in the **[Properties](properties-collection-dao.md)** collection of an object that is persistent.</span></span>
+<span data-ttu-id="2847b-138">ユーザー定義の **Property** オブジェクトを作成できるのは、持続的なオブジェクトの **[Properties](properties-collection-dao.md)** コレクション内だけです。</span><span class="sxs-lookup"><span data-stu-id="2847b-138">You can create a user-defined **Property** object only in the **[Properties](properties-collection-dao.md)** collection of an object that is persistent.</span></span>
 
-<span data-ttu-id="bd2f8-p106">**CreateProperty** の使用時に省略可能な引数を省略した場合は、新しいオブジェクトをコレクションに追加する前に適切な代入ステートメントを使用して、対応するプロパティを設定またはリセットできます。オブジェクトの追加後は、一部のプロパティの設定は変更できません。詳細については、 **Name**、 **Type**、および **Value** の各プロパティのトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="bd2f8-p106">If you omit one or more of the optional parts when you use **CreateProperty**, you can use an appropriate assignment statement to set or reset the corresponding property before you append the new object to a collection. After you append the object, you can alter some but not all of its property settings. See the **Name**, **Type**, and **Value** property topics for more details.</span></span>
+<span data-ttu-id="2847b-p106">**CreateProperty** の使用時に省略可能な引数を省略した場合は、新しいオブジェクトをコレクションに追加する前に適切な代入ステートメントを使用して、対応するプロパティを設定またはリセットできます。オブジェクトの追加後は、一部のプロパティの設定は変更できません。詳細については、 **Name**、 **Type**、および **Value** の各プロパティのトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="2847b-p106">If you omit one or more of the optional parts when you use **CreateProperty**, you can use an appropriate assignment statement to set or reset the corresponding property before you append the new object to a collection. After you append the object, you can alter some but not all of its property settings. See the **Name**, **Type**, and **Value** property topics for more details.</span></span>
 
-<span data-ttu-id="bd2f8-142">名は、既にコレクションのメンバーであるオブジェクトを参照している場合、 **[Append](fields-append-method-dao.md)** メソッドを使用すると、実行時エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="bd2f8-142">If name refers to an object that is already a member of the collection, a run-time error occurs when you use the **[Append](fields-append-method-dao.md)** method.</span></span>
+<span data-ttu-id="2847b-142">名は、既にコレクションのメンバーであるオブジェクトを参照している場合、 **[Append](fields-append-method-dao.md)** メソッドを使用すると、実行時エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="2847b-142">If name refers to an object that is already a member of the collection, a run-time error occurs when you use the **[Append](fields-append-method-dao.md)** method.</span></span>
 
-<span data-ttu-id="bd2f8-p107">ユーザー定義の **Property** オブジェクトをコレクションから削除するには、 [Properties](fields-delete-method-dao.md) コレクションの \*\*\*\*Delete\*\*\*\* メソッドを使用します。組み込みのプロパティは削除できません。</span><span class="sxs-lookup"><span data-stu-id="bd2f8-p107">To remove a user-defined **Property** object from the collection, use the **[Delete](fields-delete-method-dao.md)** method on the **Properties** collection. You can't delete built-in properties.</span></span>
+<span data-ttu-id="2847b-p107">ユーザー定義の **Property** オブジェクトをコレクションから削除するには、 [Properties](fields-delete-method-dao.md) コレクションの \*\*\*\*Delete\*\*\*\* メソッドを使用します。組み込みのプロパティは削除できません。</span><span class="sxs-lookup"><span data-stu-id="2847b-p107">To remove a user-defined **Property** object from the collection, use the **[Delete](fields-delete-method-dao.md)** method on the **Properties** collection. You can't delete built-in properties.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="bd2f8-145">DDL 引数を省略した場合のデフォルト値は False (DDL 以外)。</span><span class="sxs-lookup"><span data-stu-id="bd2f8-145">If you omit the DDL argument, it defaults to False (non-DDL).</span></span> <span data-ttu-id="bd2f8-146">対応する DDL プロパティは公開されていないので、DDL から DDL 以外に変更する **Property** オブジェクトを削除し、再作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bd2f8-146">Because no corresponding DDL property is exposed, you must delete and re-create a **Property** object you want to change from DDL to non-DDL.</span></span>
+> <span data-ttu-id="2847b-145">DDL 引数を省略した場合のデフォルト値は False (DDL 以外)。</span><span class="sxs-lookup"><span data-stu-id="2847b-145">If you omit the DDL argument, it defaults to False (non-DDL).</span></span> <span data-ttu-id="2847b-146">対応する DDL プロパティは公開されていないので、DDL から DDL 以外に変更する **Property** オブジェクトを削除し、再作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2847b-146">Because no corresponding DDL property is exposed, you must delete and re-create a **Property** object you want to change from DDL to non-DDL.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="bd2f8-147">例</span><span class="sxs-lookup"><span data-stu-id="bd2f8-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2847b-147">例</span><span class="sxs-lookup"><span data-stu-id="2847b-147">Example</span></span>
 
-<span data-ttu-id="bd2f8-p109">この例では、ユーザー定義のプロパティに値を設定します。プロパティが存在しない場合は、 **CreateProperty** メソッドを使用して作成してから値を設定します。このプロシージャを実行するには、SetProperty プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="bd2f8-p109">This example tries to set the value of a user-defined property. If the property doesn't exist, it uses the **CreateProperty** method to create and set the value of the new property. The SetProperty procedure is required for this procedure to run.</span></span>
+<span data-ttu-id="2847b-p109">この例では、ユーザー定義のプロパティに値を設定します。プロパティが存在しない場合は、 **CreateProperty** メソッドを使用して作成してから値を設定します。このプロシージャを実行するには、SetProperty プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="2847b-p109">This example tries to set the value of a user-defined property. If the property doesn't exist, it uses the **CreateProperty** method to create and set the value of the new property. The SetProperty procedure is required for this procedure to run.</span></span>
 
 ```vb
     Sub CreatePropertyX() 
