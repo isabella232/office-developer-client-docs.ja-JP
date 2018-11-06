@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm165893
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 88009020fb320c823f9ca4c1688a0f2bfdecbd44
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 7d47a59bc82cb6f603fc52d45c675eb8e2877f91
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931009"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998967"
 ---
 # <a name="renameobject-macro-action"></a>RenameObject マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
 **RenameObject**アクションを使用するには、指定されたデータベース オブジェクトの名前を変更します。
 
-
 > [!NOTE]
-> <P>[!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。</P>
-
-
+> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。
 
 ## <a name="setting"></a>設定値
 
@@ -56,13 +52,7 @@ ms.locfileid: "25931009"
 </tr>
 <tr class="odd">
 <td><p><strong>Old Name/古い名前</strong></p></td>
-<td><p>名前を変更するオブジェクトの名前。 <strong>古い名前</strong>] ボックスでは、<strong>オブジェクトの種類</strong>の引数で選択した種類のデータベース内のすべてのオブジェクトを示しています。 <strong>オブジェクトの型</strong>引数を空白のままにする場合は、この引数を指定しないも。</p>
-
-> [!NOTE]
-> <P>ライブラリ データベースで<STRONG>名前を変更</STRONG>アクションを含むマクロを実行する場合は、最初の検索にライブラリ データベースで、し、[現在のデータベース内にこの名前のオブジェクト。</P>
-
-
-<p></p></td>
+<td><p>名前を変更するオブジェクトの名前。 <strong>古い名前</strong>] ボックスでは、<strong>オブジェクトの種類</strong>の引数で選択した種類のデータベース内のすべてのオブジェクトを示しています。 <strong>オブジェクトの型</strong>引数を空白のままにする場合は、この引数を指定しないも。</p><p><strong>注</strong>: 場合は、ライブラリ データベースで<STRONG>名前を変更</STRONG>アクションを含むマクロを実行すると、最初の検索にライブラリ データベースで、し、[現在のデータベース内にこの名前のオブジェクト。</p></td>
 </tr>
 </tbody>
 </table>

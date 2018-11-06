@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052994
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 41260e801be8ebd43d89f9f495f236ff60582a56
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 4eb1a961a91bf32a69154a1f0e7b734dd00f24b6
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930064"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998897"
 ---
 # <a name="propertyvalue-property-dao"></a>Property.Value プロパティ (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -40,8 +39,7 @@ ms.locfileid: "25930064"
 
 不適切なコンテキスト (たとえば、 **TableDef** オブジェクトの **Fields** コレクションの **Field** オブジェクトの **Value** プロパティ) で **Value** プロパティを設定または取得しようとすると、トラップ可能なエラーが発生します。
 
-
 > [!NOTE]
-> <P>Microsoft SQL Server データベースから小数の値を取得する場合、これらの値は Microsoft Access ワークスペースで指数表記を使用して書式設定されますが、ODBCDirect ワークスペースでは通常の少数の値として表示されます。</P>
+> Microsoft SQL Server データベースから小数の値を取得する場合、これらの値は Microsoft Access ワークスペースで指数表記を使用して書式設定されますが、ODBCDirect ワークスペースでは通常の少数の値として表示されます。
 
 

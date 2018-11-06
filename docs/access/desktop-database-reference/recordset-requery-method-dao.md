@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821155(v=office.15)
 ms:contentKeyID: 48546840
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8405cf2f8d6eea7ce0e55bb543510db6242be84a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: d5c98eeb94e49693cf13d358987307f61f15069c
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919088"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998337"
 ---
 # <a name="recordsetrequery-method-dao"></a>Recordset.Requery メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,7 +25,7 @@ ms.locfileid: "25919088"
 
 *式***レコード セット**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -45,7 +44,7 @@ ms.locfileid: "25919088"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>NewQueryDef</p></td>
+<td><p><em>NewQueryDef</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p><a href="querydef-object-dao.md"><strong>QueryDef</strong></a> オブジェクトの <strong>Name</strong> プロパティの値を表します。</p></td>

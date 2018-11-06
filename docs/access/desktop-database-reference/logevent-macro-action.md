@@ -6,25 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192460(v=office.15)
 ms:contentKeyID: 48544148
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fa036f73dd4c811191c9d5ba83a6d2fc65a54827
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: edc2fcaa72f6bfb912708948903aa09b25447580
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25918976"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998175"
 ---
 # <a name="logevent-macro-action"></a>LogEvent マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
 **LogEvent**アクションは、 **USysApplicationLog**システム ・ テーブルに情報を書き込みます。
 
-
 > [!NOTE]
-> <P><STRONG>LogEvent</STRONG>アクションは、データ マクロでのみ使用可能。</P>
-
-
+> **LogEvent**アクションは、データ マクロでのみ使用可能。
 
 ## <a name="setting"></a>設定
 
@@ -51,7 +47,6 @@ ms.locfileid: "25918976"
 </tr>
 </tbody>
 </table>
-
 
 ## <a name="remarks"></a>備考
 

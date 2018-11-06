@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff836907(v=office.15)
 ms:contentKeyID: 48548761
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 13516830ddb9cb22e8e50872b51743ea5d54ab98
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: e9679a39a8509bb73e9d788e776e208f3c899d3c
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921489"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998407"
 ---
 # <a name="recordset2cancelupdate-method-dao"></a>Recordset2.CancelUpdate メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,7 +25,7 @@ ms.locfileid: "25921489"
 
 *式***Recordset2**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -45,15 +44,10 @@ ms.locfileid: "25921489"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>UpdateType</p></td>
+<td><p><em>UpdateType</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>長整数型 (Long)</strong></p></td>
-<td><p><strong><a href="updatetypeenum-enumeration-dao.md">UpdateTypeEnum</a></strong>値のいずれかに設定します。</p>
-
-> [!NOTE]
-> <P><EM>DbUpdateRegular</EM>および<EM>dbUpdateBatch</EM>値は、バッチ更新が有効になっている場合にのみ有効です。</P>
-
-
+<td><p><strong><a href="updatetypeenum-enumeration-dao.md">UpdateTypeEnum</a></strong>値のいずれかに設定します。</p><p><strong>注</strong>: <EM>dbUpdateRegular</EM>および<EM>dbUpdateBatch</EM>値は、バッチ更新が有効になっている場合にのみ有効です。</p>
 </td>
 </tr>
 </tbody>
@@ -66,11 +60,8 @@ ms.locfileid: "25921489"
 
 [Recordset](recordset2-editmode-property-dao.md) の ****EditMode**** プロパティを確認して、取り消すことができる保留中の操作があるかどうかを確認します。
 
-
 > [!NOTE]
-> <P>[!メモ] <STRONG>CancelUpdate</STRONG> メソッドを使用することは、カレント レコードが変更されないこと、 <STRONG><A href="recordset2-update-method-dao.md">BOF</A></STRONG> 、 <STRONG><A href="recordset2-bof-property-dao.md">EOF</A></STRONG> などの各種のプロパティが更新されないことを除いて、 <STRONG><A href="recordset2-eof-property-dao.md">Update</A></STRONG> メソッドを使用せずに別のレコードに移動することと同じです。</P>
-
-
+> [!メモ] **CancelUpdate** メソッドを使用することは、カレント レコードが変更されないこと、 **[BOF](recordset2-update-method-dao.md)** 、 **[EOF](recordset2-bof-property-dao.md)** などの各種のプロパティが更新されないことを除いて、 **[Update](recordset2-eof-property-dao.md)** メソッドを使用せずに別のレコードに移動することと同じです。
 
 ## <a name="example"></a>例
 

@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff823095(v=office.15)
 ms:contentKeyID: 48547604
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 68f1651dd2f96f660d60e037eddbca4226e0420e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: c1813a80c43eb77f8fb90442ecd6e0336b636191
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927859"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998974"
 ---
 # <a name="openform-macro-action"></a>OpenForm マクロ アクション
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 " **OpenForm/フォームを開く** " アクションを使用すると、フォーム ビュー、フォーム デザイン ビュー、印刷プレビュー、またはデータシート ビューのいずれかで、フォームを開くことができます。フォームを開くときのデータ入力モードやウィンドウ モードの設定を行ったり、フォームで表示するレコードを制限したりできます。
 
@@ -45,13 +43,7 @@ ms.locfileid: "25927859"
 <td><p><strong>View</strong></p></td>
 <td><p>フォームを開くときのビューを指定します。[<strong>ビュー</strong>] ボックスで、[<strong>フォーム ビュー</strong>]、[<strong>デザイン ビュー</strong>]、[<strong>印刷プレビュー</strong>]、[<strong>データシート ビュー</strong>]、[<strong>ピボットテーブル ビュー</strong>]、または [<strong>ピボットグラフ ビュー</strong>] をクリックします。既定値は [<strong>フォーム ビュー</strong>] です。  
  
-</p>
-
-> [!NOTE]
-> <P>"<STRONG>View/ビュー</STRONG>" 引数の設定は、フォームの "<STRONG>DefaultView/既定のビュー</STRONG>" および "<STRONG>ViewsAllowed/ビュー設定</STRONG>" プロパティの設定よりも優先されます。たとえば、フォームの "<STRONG>ViewsAllowed/ビュー設定</STRONG>" プロパティが [<STRONG>データシート</STRONG>] に設定されていても、"<STRONG>OpenForm/フォームを開く</STRONG>" アクションを使用すると、フォーム ビューでフォームを開くことができます。</P>
-
-
-<p></p></td>
+</p><p><strong>注</strong>:<STRONG>表示</STRONG>の引数の設定が、フォームの<STRONG>既定のビュー</STRONG>と [<STRONG>ビュー設定</STRONG>のプロパティの設定をオーバーライドします。 など、フォームの<STRONG>ビュー設定</STRONG>のプロパティは、<STRONG>データシート</STRONG>に設定されている場合も使用できます<STRONG>、このアクション</STRONG>をフォーム ビューでフォームを開きます。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Filter Name</strong></p></td>
@@ -59,13 +51,7 @@ ms.locfileid: "25927859"
 </tr>
 <tr class="even">
 <td><p><strong>Where Condition</strong></p></td>
-<td><p>有効な SQL WHERE 句 (単語なしで) フォームからレコードを選択するときに使用する式には、テーブルまたはクエリの基になるか。 <strong>フィルター名</strong>の引数を指定してフィルターを選択する場合は、フィルターの結果に次の WHERE 句が適用されます。 フォームを開くし、別のフォーム上のコントロールの値で指定されているレコードを制限する、次の式を使用して、:<em>フィールド名</em>の<strong>[</strong><strong>] フォームを =! [</strong><em>フォーム名</em><strong>]![</strong><em>名の他のフォームに置き換えます</em><strong>]</strong>の基になるテーブルまたはクエリ、フォームを開きたいので、フィールド名と<em>フィールド名</em>を交換しています。 <em>フォーム名</em>と<em>名の他のフォームに置き換えます</em>を他のフォームと一致する最初のフォーム内のレコードが必要な値を含むその他のフォーム上のコントロールの名前に置き換えます。</p>
-
-> [!NOTE]
-> <P>"<STRONG>Where Condition/Where 条件式</STRONG>" 引数の最大長は 255 バイトです。これより長くて複雑な SQL WHERE 句を入力する必要がある場合は、代わりに Visual Basic for Applications (VBA) モジュールで、<STRONG>DoCmd</STRONG> オブジェクトの <STRONG>OpenForm</STRONG> メソッドを使用します。VBA では、最大 32,768 バイトの SQL WHERE 句のステートメントを入力できます。</P>
-
-
-<p></p></td>
+<td><p>有効な SQL WHERE 句 (単語なしで) フォームからレコードを選択するときに使用する式には、テーブルまたはクエリの基になるか。 <strong>フィルター名</strong>の引数を指定してフィルターを選択する場合は、フィルターの結果に次の WHERE 句が適用されます。 フォームを開くし、別のフォーム上のコントロールの値で指定されているレコードを制限する、次の式を使用して、:<em>フィールド名</em>の<strong>[</strong><strong>] フォームを =! [</strong><em>フォーム名</em><strong>]![</strong><em>名の他のフォームに置き換えます</em><strong>]</strong>の基になるテーブルまたはクエリ、フォームを開きたいので、フィールド名と<em>フィールド名</em>を交換しています。 <em>フォーム名</em>と<em>名の他のフォームに置き換えます</em>を他のフォームと一致する最初のフォーム内のレコードが必要な値を含むその他のフォーム上のコントロールの名前に置き換えます。</p><p><strong>注</strong>:<STRONG>条件</STRONG>式の最大長は 255 文字、です。 複雑な SQL WHERE 句よりも長い時間を入力する場合は、代わりに<STRONG>DoCmd</STRONG>オブジェクトの<STRONG>OpenForm</STRONG>メソッドで Visual Basic for Applications (VBA) モジュール。 VBA では、SQL 句のステートメントの最大 32,768 文字を入力できます。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Data Mode/データ モード</strong></p></td>
@@ -78,13 +64,7 @@ ms.locfileid: "25927859"
 </tr>
 <tr class="even">
 <td><p><strong>Window Mode</strong></p></td>
-<td><p>フォームを開くときのウィンドウ モードを指定します。フォームのプロパティで設定されたモードで開く場合は [<strong>標準</strong>]、フォームを非表示にする場合は [<strong>非表示</strong>]、画面の下部に小さなタイトル バーにフォームを最小化する場合は [<strong>アイコン</strong>]、フォームの "<strong>Modal/作業ウィンドウ固定</strong>" および "<strong>PopUp/ポップアップ</strong>" プロパティを [<strong>はい</strong>] に設定する場合は [<strong>ダイアログ</strong>] をクリックします。既定値は [<strong>標準</strong>] です。</p>
-
-> [!NOTE]
-> <P><STRONG>Window Mode</STRONG> 引数の設定値によっては、タブ付きドキュメントを使用していると、適用されない場合があります。ウィンドウを重ねて表示するように切り替えるには、次の操作を行います。</P>
-
-
-<p></p>
+<td><p>フォームを開くときのウィンドウ モードを指定します。フォームのプロパティで設定されたモードで開く場合は [<strong>標準</strong>]、フォームを非表示にする場合は [<strong>非表示</strong>]、画面の下部に小さなタイトル バーにフォームを最小化する場合は [<strong>アイコン</strong>]、フォームの "<strong>Modal/作業ウィンドウ固定</strong>" および "<strong>PopUp/ポップアップ</strong>" プロパティを [<strong>はい</strong>] に設定する場合は [<strong>ダイアログ</strong>] をクリックします。既定値は [<strong>標準</strong>] です。</p><p><strong>注</strong>: タブ付きドキュメントを使用する場合いくつかの<STRONG>ウィンドウ モード</STRONG>の引数の設定は適用されません。 重ねて表示されるウィンドウに切り替えるには</p>
 <ol>
 <li><p>ファイル] タブをクリックし、[<strong>オプション</strong>] をクリックします。</p></li>
 <li><p>[ <strong>Access のオプション</strong>] ダイアログ ボックスの [ <strong>カレント データベース</strong>] をクリックします。</p></li>
@@ -104,11 +84,8 @@ ms.locfileid: "25927859"
 
 " **Window Mode/ウィンドウ モード** " 引数を [ **ダイアログ**] に設定してフォームを開くと、フォームが閉じるか非表示になるまでマクロが中断されます。フォームを非表示にするには、" **SetValue/値の代入** " アクションを使用して、 **Visible** プロパティを **No** に設定します。
 
-
 > [!TIP]
-> <P>[!ヒント] フォームをナビゲーション ウィンドウで選択し、マクロのアクション行にドラッグすると、フォームをフォーム ビューで開く " <STRONG>OpenForm/フォームを開く</STRONG> " アクションが自動的に作成されます。</P>
-
-
+> [!ヒント] フォームをナビゲーション ウィンドウで選択し、マクロのアクション行にドラッグすると、フォームをフォーム ビューで開く " **OpenForm/フォームを開く** " アクションが自動的に作成されます。
 
 フィルターおよび WHERE 条件式を指定すると、フォームの " **Filter/フィルター** " プロパティの設定値として使用されます。
 

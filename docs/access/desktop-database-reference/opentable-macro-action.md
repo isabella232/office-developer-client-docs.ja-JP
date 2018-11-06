@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm149011
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 451d27f97c0b4f5fc4707d3947e262ba84b9a40e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: d80065c976a014ccf379bdc2016b0324cb02b269
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926102"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998148"
 ---
 # <a name="opentable-macro-action"></a>OpenTable マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -55,16 +54,12 @@ ms.locfileid: "25926102"
 </tbody>
 </table>
 
-
 ## <a name="remarks"></a>解説
 
 このアクションの動作は、ナビゲーション ウィンドウでテーブルをダブルクリックした場合や、ナビゲーション ウィンドウでテーブルを右クリックしてビューをクリックした場合と同じです。
 
-
 > [!TIP]
-> <P>ナビゲーション ウィンドウからテーブルをドラッグするにはマクロのアクション行にします。 テーブルをデータシート ビューで開きます<STRONG>OpenTable</STRONG>アクションが自動的に作成します。</P>
-
-
+> ナビゲーション ウィンドウからテーブルをドラッグするにはマクロのアクション行にします。 テーブルをデータシート ビューで開きます**OpenTable**アクションが自動的に作成します。
 
 **OpenTable**アクションを Visual Basic for Applications (VBA) のモジュールで実行するには、 **DoCmd**オブジェクトの**OpenTable**メソッドを使用します。
 

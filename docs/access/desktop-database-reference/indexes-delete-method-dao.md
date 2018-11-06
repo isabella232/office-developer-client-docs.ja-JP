@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197351(v=office.15)
 ms:contentKeyID: 48546252
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 66f08fa9733de0b63ca8bb659972abbc59183e16
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 0c725919b6509b5c802502fc8280823c407516f6
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922322"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998827"
 ---
 # <a name="indexesdelete-method-dao"></a>Indexes.Delete メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,7 +25,7 @@ ms.locfileid: "25922322"
 
 *式***インデックス**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -45,7 +44,7 @@ ms.locfileid: "25922322"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>名前</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>削除するインデックスの名前を指定します。</p></td>

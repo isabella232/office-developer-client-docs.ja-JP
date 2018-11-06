@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm50916
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7d3d2d5f76e087e428bc9211805c524ebe5247d9
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 274ec88483066b4e8dd4032501ecfcc6a662b134
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930449"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998141"
 ---
 # <a name="openvisualbasicmodule-macro-action"></a>OpenVisualBasicModule マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
 開くには、指定された Visual Basic for Applications (VBA) モジュールは、指定されたプロシージャでは、 **OpenVisualBasicModule**アクションを使用できます。 指定できるのは、Sub プロシージャ、Function プロシージャ、およびイベント プロシージャです。
 
-
 > [!NOTE]
-> <P>[!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。</P>
-
-
+> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
 
 ## <a name="setting"></a>設定値
 
@@ -57,11 +53,8 @@ ms.locfileid: "25930449"
 </tbody>
 </table>
 
-
-
 > [!NOTE]
-> <P><STRONG>モジュール名</STRONG>や<STRONG>プロシージャ名</STRONG>のいずれかの引数に有効な名前を入力してください。</P>
-
+> **モジュール名**や**プロシージャ名**のいずれかの引数に有効な名前を入力してください。
 
 
 ## <a name="remarks"></a>解説
@@ -74,11 +67,8 @@ ms.locfileid: "25930449"
 
 このアクションの動作は、ナビゲーション ウィンドウでモジュールを右クリックして [ **デザイン ビュー**] をクリックした場合と同じです。このアクションを使用すると、プロシージャ名を指定して、データベースの標準モジュールで検索することもできます。
 
-
 > [!TIP]
-> <P>ナビゲーション ウィンドウでモジュールを選択し、マクロのアクション行にドラッグできます。 宣言セクションには、モジュールを開く<STRONG>OpenVisualBasicModule</STRONG>アクションが自動的に作成します。</P>
-
-
+> ナビゲーション ウィンドウでモジュールを選択し、マクロのアクション行にドラッグできます。 宣言セクションには、モジュールを開く**OpenVisualBasicModule**アクションが自動的に作成します。
 
 VBA モジュールでは、 **OpenVisualBasicModule**アクションを実行するには、 **DoCmd**オブジェクトの**OpenModule**メソッドを使用します。
 

@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1053074
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 6adf3e5ec2ec36163d4818411a1abc07e940b209
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 76137608ed5de0fbd2b841fba3101d70209c7a6d
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922686"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998757"
 ---
 # <a name="recordset2absoluteposition-property-dao"></a>Recordset2.AbsolutePosition プロパティ (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -40,15 +39,9 @@ ms.locfileid: "25922686"
 
 このプロパティをレコード番号の代わりに使用しないでください。ブックマークが、特定の位置を保持してその位置に戻るための推奨手段であり、すべての種類の **Recordset2** オブジェクトでカレント レコードの位置を指定するための唯一の手段です。特に、レコードの位置は、それより前にある 1 つ以上のレコードを削除すると変わります。また、SQL ステートメントで ORDER BY 句を使用して **Recordset** オブジェクトを作成した場合を除き、そのオブジェクト内の各レコードの順序は保証されないため、 **Recordset2** オブジェクトを再作成すると、同じレコードの絶対的な位置が以前と同じになる保証はありません。
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>新たに開いた後でまだレコードを格納していない <STRONG>Recordset2</STRONG> オブジェクトの <STRONG>AbsolutePosition</STRONG> プロパティを 0 より大きい値に設定すると、トラップ可能なエラーが発生します。 <STRONG>MoveLast</STRONG> メソッドを使用して、まず <STRONG>Recordset2</STRONG> オブジェクトに値を設定してください。</P>
-> <LI>
-> <P><STRONG>AbsolutePosition</STRONG>プロパティは、前方スクロール タイプの<STRONG>Recordset2</STRONG>オブジェクト、または Microsoft Access データベース エンジンに接続された ODBC データベースに対するパススルー クエリから開いた<STRONG>Recordset2</STRONG>オブジェクトでは使用できません。</P></LI></UL>
-
-
+> - 新たに開いた後でまだレコードを格納していない **Recordset2** オブジェクトの **AbsolutePosition** プロパティを 0 より大きい値に設定すると、トラップ可能なエラーが発生します。 **MoveLast** メソッドを使用して、まず **Recordset2** オブジェクトに値を設定してください。
+> - **AbsolutePosition**プロパティは、前方スクロール タイプの**Recordset2**オブジェクト、または Microsoft Access データベース エンジンに接続された ODBC データベースに対するパススルー クエリから開いた**Recordset2**オブジェクトでは使用できません。
 
 ## <a name="example"></a>例
 

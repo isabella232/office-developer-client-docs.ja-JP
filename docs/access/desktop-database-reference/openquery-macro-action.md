@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm89069
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1e5e031b0dc89626a40934cb42f8f54a0eb8d057
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: fe08f6c6ab0eba46f7fff2713403f56e82983357
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928111"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999065"
 ---
 # <a name="openquery-macro-action"></a>OpenQuery マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
 **OpenQuery** アクションを使用すると、選択クエリまたはクロス集計クエリをデータシート ビュー、デザイン ビュー、印刷プレビューのいずれかで開くことができます。このアクションでは、アクション クエリが実行されます。クエリを開くときのデータ入力モードを選択することもできます。
 
-
 > [!NOTE]
-> <P>[!メモ] このアクションは、Access データベース (.mdb または .accdb) 環境でのみ使用できます。Access プロジェクト (.adp) 環境で使用する場合は、 <STRONG>OpenView</STRONG> アクション、 <STRONG>OpenStoredProcedure</STRONG> アクション、または <STRONG>OpenFunction</STRONG> アクションのトピックを参照してください。</P>
-
-
+> [!メモ] このアクションは、Access データベース (.mdb または .accdb) 環境でのみ使用できます。Access プロジェクト (.adp) 環境で使用する場合は、 **OpenView** アクション、 **OpenStoredProcedure** アクション、または **OpenFunction** アクションのトピックを参照してください。
 
 ## <a name="setting"></a>設定
 
@@ -68,11 +64,9 @@ ms.locfileid: "25928111"
 
 **OpenQuery** アクションの動作は、ナビゲーション ウィンドウでクエリをダブルクリックした場合や、ナビゲーション ウィンドウでクエリを右クリックしてビューをクリックした場合と同じです。このアクションにより、別のオプションも選択できます。
 
-**Tips/ヒント**
-
-  - クエリをナビゲーション ウィンドウで選択し、マクロのアクション行にドラッグすると、クエリをデータシート ビューで開く **OpenQuery** アクションが自動的に作成されます。 クエリが開いているときにデザイン ビューに切り替えると、クエリの **Data Mode/データ モード** 引数の設定は解除されます。再びデータシート ビューに切り替えても、元の設定には戻りません。
-
-  - アクション クエリを実行すると、通常は、それがアクション クエリであること、および影響を受けるレコード数を示すシステム メッセージが表示されますが、これを表示しないようにするには、 **SetWarnings** アクションを使用します。
+> [!TIP]
+> - クエリをナビゲーション ウィンドウで選択し、マクロのアクション行にドラッグすると、クエリをデータシート ビューで開く **OpenQuery** アクションが自動的に作成されます。 クエリが開いているときにデザイン ビューに切り替えると、クエリの **Data Mode/データ モード** 引数の設定は解除されます。再びデータシート ビューに切り替えても、元の設定には戻りません。
+> - アクション クエリを実行すると、通常は、それがアクション クエリであること、および影響を受けるレコード数を示すシステム メッセージが表示されますが、これを表示しないようにするには、 **SetWarnings** アクションを使用します。
 
 Visual Basic for Applications (VBA) モジュールで **OpenQuery** アクションを実行するには、 **DoCmd** オブジェクトの **OpenQuery** メソッドを使用します。
 

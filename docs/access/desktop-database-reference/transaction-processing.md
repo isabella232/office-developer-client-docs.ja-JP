@@ -6,25 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249523(v=office.15)
 ms:contentKeyID: 48545842
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f16ae14bc468ce1d96b924faa04bb9a315cab708
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: c4031bd4da8d0e1e8f1501e5d3bd23c41b33ea50
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946266"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998302"
 ---
 # <a name="transaction-processing"></a>トランザクション処理
-
 
 **適用されます**Access 2013、Office 2013。
 
 ADO では、トランザクションを制御するために、 **BeginTrans** 、 **CommitTrans** 、および **RollbackTrans** の各メソッドを提供しています。 **Connection** オブジェクトでこれらのメソッドを使用すると、ソース データに対する一連の変更を 1 つの単位として、保存または取り消しを行うことができます。たとえば、口座間で振り込みをするには、ある口座からその金額を引き出し、同じ金額を別の口座に入金します。いずれかの更新が失敗すると口座の残高が合わなくなります。開いている 1 つのトランザクション内でこうした変更を行う場合、すべての変更が完了するか、すべての変更が取り消されるかのいずれかになります。
 
-
 > [!NOTE]
-> <P>すべてのプロバイダーがトランザクションをサポートしているわけではありません。プロバイダー定義のプロパティ "<STRONG>Transaction DDL</STRONG>" が、<STRONG>Connection</STRONG> オブジェクトの <A href="properties-collection-ado.md">Properties</A> コレクションに含まれることを確認してください。このプロパティは、プロバイダーがトランザクションをサポートすることを示します。プロバイダーがトランザクションをサポートしない場合、いずれかのトランザクション メソッドを呼び出すと、エラーが発生します。</P>
-
-
+> すべてのプロバイダーがトランザクションをサポートしているわけではありません。プロバイダー定義のプロパティ "**Transaction DDL**" が、**Connection** オブジェクトの [Properties](properties-collection-ado.md) コレクションに含まれることを確認してください。このプロパティは、プロバイダーがトランザクションをサポートすることを示します。プロバイダーがトランザクションをサポートしない場合、いずれかのトランザクション メソッドを呼び出すと、エラーが発生します。
 
 **BeginTrans** メソッドを呼び出すと、 **CommitTrans** または **RollbackTrans** を呼び出してトランザクションを終了するまで、変更が直ちにコミットされなくなります。
 
@@ -36,7 +32,7 @@ ADO では、トランザクションを制御するために、 **BeginTrans** 
 
 **Connection** オブジェクトでトランザクションの分離レベルを設定するには、 **IsolationLevel** プロパティを使用します。 この設定は、次に [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドを呼び出すまで有効になりません。 要求した分離レベルを使用できない場合、プロバイダーはその次に高い分離レベルを返すことがあります。 **IsolationLevel**プロパティで有効な値の詳細については、「ADO プログラマ リファレンスを参照してください。
 
-## <a name="nested-transactions"></a>ネストされているトランザクション
+## <a name="nested-transactions"></a>入れ子になったトランザクション
 
 ネストされているトランザクションをサポートしているプロバイダーの場合、開いているトランザクションで **BeginTrans** メソッドを呼び出すと、新規のネストされているトランザクションが開始されます。戻り値は、ネストのレベルを示します。"1" はトップレベルのトランザクション (他のトランザクション内にネストされていないトランザクション) を開いたことを示し、"2" は 2 番目のレベルのトランザクション (トップレベルのトランザクション内にネストされているトランザクション) を開いたことを示し、以降も同様です。 **CommitTrans** または **RollbackTrans** を呼び出すと、最後に開いたトランザクションのみに影響します。上位レベルのトランザクションを解決するには、まず現在のトランザクションを閉じるか、またはロールバックする必要があります。
 

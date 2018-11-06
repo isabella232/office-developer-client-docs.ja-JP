@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193483(v=office.15)
 ms:contentKeyID: 48544664
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e4a6cf889e7676895534b053e8aacd4bb0eada89
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: c58695678cf3b80d995a5eec75e3fbd31983eafc
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919354"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999016"
 ---
 # <a name="recordsetnextrecordset-method-dao"></a>Recordset.NextRecordset メソッド (DAO)
 
@@ -24,7 +24,7 @@ ms.locfileid: "25919354"
 
 *式***レコード セット**オブジェクトを表す変数です。
 
-### <a name="return-value"></a>戻り値
+## <a name="return-value"></a>戻り値
 
 ブール型
 

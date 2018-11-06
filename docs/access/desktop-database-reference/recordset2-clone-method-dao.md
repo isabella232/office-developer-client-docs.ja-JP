@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff836567(v=office.15)
 ms:contentKeyID: 48548614
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 666e27b176fb973298c791f7473dbda6fe37c7b0
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 598944aadb344ab97d7561e7ef55a67041c4fbf1
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928832"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998750"
 ---
 # <a name="recordset2clone-method-dao"></a>Recordset2.Clone メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,7 +25,7 @@ ms.locfileid: "25928832"
 
 *式***Recordset2**オブジェクトを表す変数です。
 
-### <a name="return-value"></a>戻り値
+## <a name="return-value"></a>戻り値
 
 Recordset
 
@@ -38,15 +37,9 @@ Recordset
 
 元のオブジェクトまたは複製オブジェクトのどちらかで **[Close](connection-close-method-dao.md)** メソッドを使用しても、もう一方のオブジェクトに影響が及ぶことはありません。たとえば、元のレコードセットで **Close** を使用しても、複製が閉じられることはありません。
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>保留中のトランザクションで複製レコードセットを閉じると、 <STRONG>Rollback</STRONG> 操作が暗黙的に実行されます。</P>
-> <LI>
-> <P>Microsoft Access ワークスペースでテーブル タイプの <STRONG>Recordset</STRONG> オブジェクトを複製した場合、 <STRONG><A href="recordset2-index-property-dao.md">Index</A></STRONG> プロパティの設定はレコードセットの新しいコピーに反映されません。このため、 <STRONG>Index</STRONG> プロパティの設定を手動でコピーする必要があります。</P></LI></UL>
-
-
+> - 保留中のトランザクションで複製レコードセットを閉じると、 **Rollback** 操作が暗黙的に実行されます。
+> - Microsoft Access ワークスペースでテーブル タイプの **Recordset** オブジェクトを複製した場合、 **[Index](recordset2-index-property-dao.md)** プロパティの設定はレコードセットの新しいコピーに反映されません。このため、 **Index** プロパティの設定を手動でコピーする必要があります。
 
 ## <a name="example"></a>例
 

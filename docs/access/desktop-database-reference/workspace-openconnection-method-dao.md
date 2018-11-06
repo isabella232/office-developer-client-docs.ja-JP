@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff198249(v=office.15)
 ms:contentKeyID: 48546628
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9ca2c1b66b8c74eb66bbbf8de2614bfb2ad546a3
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 6a2c7e64d691564eca90c1cf80d57766e04637bb
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919935"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998883"
 ---
 # <a name="workspaceopenconnection-method-dao"></a>Workspace.OpenConnection メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -24,7 +23,7 @@ ms.locfileid: "25919935"
 
 *式***ワークスペース**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -43,25 +42,25 @@ ms.locfileid: "25919935"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>名前</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>文字列式を指定します。「解説」の説明を参照してください。</p></td>
 </tr>
 <tr class="even">
-<td><p>選択肢</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>「解説」に記載されている接続のさまざまなオプションを設定します。ODBC ドライバー マネージャーは、この値に基づき、データ ソース名 (DSN)、ユーザー名、パスワードなどの接続情報の指定をユーザーに求めます。</p></td>
 </tr>
 <tr class="odd">
-<td><p>ReadOnly</p></td>
+<td><p><em>ReadOnly</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p><strong>True</strong> に設定すると、接続が読み取り専用アクセスで開かれ、 <strong>False</strong> (既定値) に設定すると、読み取り/書き込みアクセスで開かれます。</p></td>
 </tr>
 <tr class="even">
-<td><p>ブラウザでの</p></td>
+<td><p><em>Connect</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>ODBC 接続文字列です。 この文字列の固有の要素および構文については、 <strong><a href="connection-connect-property-dao.md">Connect</a></strong> プロパティのトピックを参照してください。 先頭に追加された&quot;ODBC;&quot;が必要です。</p></td>
@@ -70,7 +69,7 @@ ms.locfileid: "25919935"
 </table>
 
 
-### <a name="return-value"></a>戻り値
+## <a name="return-value"></a>戻り値
 
 Connection
 
@@ -117,6 +116,7 @@ Connection
 </tbody>
 </table>
 
+<br/>
 
 **OpenConnection** は、接続に関する情報を含む **Connection** オブジェクトを返します。 **Connection** オブジェクトは **[Database](database-object-dao.md)** オブジェクトに似ています。主な違いは、 **Database** オブジェクトは、通常、データベースを表すものの、Microsoft Access ワークスペースから ODBC データ ソースへの接続を表すためにも使用できることです。
 

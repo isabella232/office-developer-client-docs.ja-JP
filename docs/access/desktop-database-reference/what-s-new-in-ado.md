@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250297(v=office.15)
 ms:contentKeyID: 48548905
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 950edd8ce1cd0e5081d569b1b11a02a14fe94d99
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 232af159c669968c9c3b4d3d65acbc181f958689
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937702"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998904"
 ---
 # <a name="whats-new-in-ado"></a>ADO の新機能
 
@@ -23,7 +23,7 @@ ADO 2.5 リリースには、次に示す新機能および拡充されたマニ
 
 - **[レコードとストリーム](chapter-10-records-and-streams.md)**
 
-  このリリースの ADO では、[Record](record-object-ado.md) オブジェクトが導入されており、ファイル システムのディレクトリやファイル、および電子メール システムのフォルダーやメッセージのような要素を表して管理できます。 **Record** は [Recordset](recordset-object-ado.md) の行を表すこともできますが、 **Record** オブジェクトと **Recordset** オブジェクトでは、メソッドおよびプロパティが異なります。
+  ADO の今回のリリースでは、[レコード](record-object-ado.md)オブジェクトを表し、ファイル ・ システム、およびフォルダーやメッセージの電子メール システムのディレクトリやファイルなどを管理できますが導入されています。 **Record** は [Recordset](recordset-object-ado.md) の行を表すこともできますが、 **Record** オブジェクトと **Recordset** オブジェクトでは、メソッドおよびプロパティが異なります。
 
   新しい [Stream](stream-object-ado.md) オブジェクトは、ファイルやメッセージのストリームを構成するバイトまたはテキストのバイナリ ストリームの読み取り、書き込み、および管理を行うための手段を提供します。
 

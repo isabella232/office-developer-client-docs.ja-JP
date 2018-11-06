@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm183441
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: aa029e3a81670746cdc467ddf7578c5900b58b29
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 206c12d324b2b9c11b22357a3262a343bba3c122
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929035"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998806"
 ---
 # <a name="sendkeys-macro-action"></a>SendKeys マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -37,14 +36,10 @@ ms.locfileid: "25929035"
 </tbody>
 </table>
 
-
 **SendKeys** アクションを使用すると、Microsoft Access やアクティブな Windows ベースのアプリケーションにキー操作を直接送信することができます。
 
-
 > [!NOTE]
-> <P>[!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。</P>
-
-
+> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
 
 ## <a name="setting"></a>設定
 
@@ -80,23 +75,14 @@ ms.locfileid: "25929035"
 
 キー操作を指定するには、 **SendKeys** ステートメントと同じ構文を使用します。
 
-
 > [!NOTE]
-> <P>[!メモ] <STRONG>Keystrokes/キー操作</STRONG> 引数に不適切な構文、スペルを誤った文字列、または送り先のウィンドウにとって不適切な値が含まれる場合は、エラーが発生します。</P>
-
-
+> [!メモ] **Keystrokes/キー操作** 引数に不適切な構文、スペルを誤った文字列、または送り先のウィンドウにとって不適切な値が含まれる場合は、エラーが発生します。
 
 このアクションは、ダイアログ ボックスに情報を入力する場合 (特にマクロを中断せずにダイアログ ボックスに手動で入力する場合) に使用します。Access のアクションには、よく使用するダイアログ ボックスのオプションを自動的に選択する **PrintOut** アクションや **FindRecord** アクションなどがありますが、それ以外のダイアログ ボックスのオプションを選択するには **SendKeys** アクションを使います。
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>[!メモ] ダイアログ ボックスによってマクロが中断されるので、ダイアログ ボックスを開くアクションの前に <STRONG>SendKeys</STRONG> アクションを配置し、 <STRONG>Wait/待機</STRONG> 引数を [ <STRONG>いいえ</STRONG> ] に設定する必要があります。</P>
-> <LI>
-> <P>Access やその他のアプリケーションにキー操作が到達するタイミングには注意が必要です。目的の処理を実行するために、<STRONG>SendKeys</STRONG> アクションを使わずに他の<STRONG>FindRecord</STRONG> アクションなどを使用してダイアログ ボックスのオプションを入力できる場合は、他のアクションを使用することをお勧めします。</P></LI></UL>
-
-
+> - [!メモ] ダイアログ ボックスによってマクロが中断されるので、ダイアログ ボックスを開くアクションの前に **SendKeys** アクションを配置し、 **Wait/待機** 引数を [ **いいえ** ] に設定する必要があります。
+> - Access やその他のアプリケーションにキー操作が到達するタイミングには注意が必要です。目的の処理を実行するために、**SendKeys** アクションを使わずに他の**FindRecord** アクションなどを使用してダイアログ ボックスのオプションを入力できる場合は、他のアクションを使用することをお勧めします。
 
 Access やその他の Windows ベースのアプリケーションに 255 文字を超えるキー操作を送る場合は、マクロで **SendKeys** アクションを複数回続けて使用します。
 

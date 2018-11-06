@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff820791(v=office.15)
 ms:contentKeyID: 48546719
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 70fa0aba5385157453a1e9b009a167f036dc874b
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 576928e6538ea704bf6f10d0826c0e6bbb359bf1
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929119"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998239"
 ---
 # <a name="fieldsappend-method-dao"></a>Fields.Append メソッド (DAO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 新しい **[Field](field-object-dao.md)** オブジェクトを **[Fields](fields-collection-dao.md)** コレクションに追加します。
 
@@ -27,7 +25,7 @@ ms.locfileid: "25929119"
 
 *式***Fields**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -46,7 +44,7 @@ ms.locfileid: "25929119"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>オブジェクト</p></td>
+<td><p><em>Object</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>オブジェクト型 (Object)</strong></p></td>
 <td><p>コレクションに追加するフィールドを表すオブジェクト変数です。</p></td>

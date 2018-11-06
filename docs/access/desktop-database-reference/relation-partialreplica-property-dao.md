@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1053557
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 30b23b424b8c76f0681d0128348590c1558e81ec
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 11f8017c01cec9af2da26bedaf689d69554e554c
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929385"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998191"
 ---
 # <a name="relationpartialreplica-property-dao"></a>Relation.PartialReplica プロパティ (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -46,6 +45,10 @@ ms.locfileid: "25929385"
     
 
 > [!NOTE]
-> <P>レプリカ フィルターまたはレプリカ リレーションシップを設定した場合、部分レプリカ内の制限条件を満たさないレコードは部分レプリカから削除されますが、フル レプリカからは削除されません。たとえば、部分レプリカの顧客 <STRONG>TableDef</STRONG> オブジェクトの <STRONG>ReplicaFilter</STRONG> プロパティを "Region = 'CA'" に設定し、データベースにもう一度値を設定するとします。これにより、カリフォルニア地域の顧客のすべてのレコードが挿入または更新されます。次に、<STRONG>ReplicaFilter</STRONG> プロパティを "Region = 'FL'" に再設定し、データベースにもう一度値を設定すると、部分レプリカ内にあるカリフォルニア地域のすべてのレコードが削除され、フル レプリカからフロリダ地域の顧客のすべてのレコードが挿入されます。フル レプリカ内のレコードは削除されません。<STRONG>ReplicaFilter</STRONG> プロパティまたは <STRONG>PartialReplica</STRONG> プロパティを設定する前に、これらのプロパティを設定する部分レプリカをフル レプリカと同期させることをお勧めします。これにより、部分レプリカ内のすべてのレコードが削除される前に、部分レプリカの保留中の変更がフル レプリカに反映されます。</P>
+> [!メモ] レプリカ フィルターまたはレプリカ リレーションシップを設定した場合、部分レプリカ内の制限条件を満たさないレコードは部分レプリカから削除されますが、フル レプリカからは削除されません。 たとえば、部分レプリカで得意先**テーブル定義**に、 **ReplicaFilter**プロパティを設定する"地域 = 'CA'"し、データベースを再作成するとします。 これにより、カリフォルニア地域の顧客のすべてのレコードが挿入または更新されます。 
+> 
+> **ReplicaFilter**プロパティをリセットするかどうか」領域 = 'FL'"とは、データベースを再作成し、部分レプリカ内にあるカリフォルニア地域のすべてのレコードは削除され、フル レプリカからフロリダ地域の顧客からのすべてのレコードが挿入されます。 フル レプリカ内のレコードは削除されません。 
+>
+> **ReplicaFilter** プロパティまたは **PartialReplica** プロパティを設定する前に、これらのプロパティを設定する部分レプリカをフル レプリカと同期させることをお勧めします。 これにより、部分レプリカ内のすべてのレコードが削除される前に、部分レプリカの保留中の変更がフル レプリカに反映されます。
 
 

@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250310(v=office.15)
 ms:contentKeyID: 48548958
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 856f145c195c189775355fef662ea082ec629fd0
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 6a61803648a0efa5f226b222fb54ce96c8aadbfe
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25883940"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999058"
 ---
 # <a name="value-property-ado"></a>Value プロパティ (ADO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -30,11 +29,8 @@ ms.locfileid: "25883940"
 
 ADO では、 **Value** プロパティを使用してロング バイナリ データを設定および取得できます。
 
-
 > [!NOTE]
-> <P>[!メモ] <STRONG>Parameter</STRONG> オブジェクトの場合、ADO はプロバイダーから一度だけ <STRONG>Value</STRONG> プロパティを取得します。コマンドに含まれる <STRONG>Parameter</STRONG> の <STRONG>Value</STRONG> プロパティが空で、このコマンドから <A href="recordset-object-ado.md">Recordset</A> を作成する場合は、 <STRONG>Value</STRONG> プロパティを取得する前に、 <STRONG>Recordset</STRONG> を閉じる必要があります。このようにしないと、プロバイダーによっては、 <STRONG>Value</STRONG> プロパティが空になり、正しい値が格納されない場合があります。</P>
-
-
+> [!メモ] **Parameter** オブジェクトの場合、ADO はプロバイダーから一度だけ **Value** プロパティを取得します。コマンドに含まれる **Parameter** の **Value** プロパティが空で、このコマンドから [Recordset](recordset-object-ado.md) を作成する場合は、 **Value** プロパティを取得する前に、 **Recordset** を閉じる必要があります。このようにしないと、プロバイダーによっては、 **Value** プロパティが空になり、正しい値が格納されない場合があります。
 
 **Record** オブジェクトの [Fields](fields-collection-ado.md) コレクションに新しい [Field](record-object-ado.md) オブジェクトを追加した場合は、 **Value** プロパティを最初に設定してから、他の **Field** プロパティを指定する必要があります。まず、 **Value** プロパティに特定の値を割り当て、 [Fields](update-method-ado.md) コレクションで **Update** を呼び出します。その後は、 [Type](type-property-ado.md) や [Attributes](attributes-property-ado.md) などの他のプロパティにアクセスできます。
 

@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192306(v=office.15)
 ms:contentKeyID: 48544079
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0d5e636bf5ecae615df458754d6c4e08f00065ff
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 83db6ae8da804237222fc1f58e03058951d7ce41
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923610"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998988"
 ---
 # <a name="recordset2movelast-method-dao"></a>Recordset2.MoveLast メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,7 +25,7 @@ ms.locfileid: "25923610"
 
 *式***Recordset2**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -45,7 +44,7 @@ ms.locfileid: "25923610"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>オプション</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>長整数型 (Long)</strong></p></td>
 <td><p><strong>MoveLast</strong> への呼び出しを非同期で実行する場合に <strong>dbRunAsync</strong> に設定します。</p></td>
@@ -66,11 +65,10 @@ ms.locfileid: "25923610"
 
 レコード セットは、テーブル タイプ**のレコード セット**(Microsoft Access ワークスペースのみ) を参照している場合の移動は現在のインデックスに従います。 現在のインデックスを設定するには、 **Index** プロパティを使用します。 現在のインデックスを設定しない場合、返されるレコードの順序は未定義となります。
 
-
 > [!NOTE]
-> <P>[!メモ] <STRONG>MoveLast</STRONG> メソッドを使用すると、ダイナセット タイプまたはスナップショット タイプの <STRONG>Recordset</STRONG> の末尾までデータを格納して、 <STRONG>Recordset</STRONG> に含まれる現在のレコード数を示すことができます。ただし、このような目的で <STRONG>MoveLast</STRONG> を使用すると、アプリケーションのパフォーマンスが低下する場合があります。 <STRONG>MoveLast</STRONG> を使用してレコード数を取得するのは、新しく開かれた <STRONG>Recordset</STRONG> の正確なレコード数をどうしても取得する必要がある場合だけにしてください。 <STRONG>MoveLast</STRONG> で <STRONG>dbRunAsync</STRONG> 定数を使用すると、メソッドの呼び出しが非同期で実行されます。 <STRONG>Recordset</STRONG> の末尾までデータが格納されたことを確認するには <STRONG>StillExecuting</STRONG> プロパティを使用し、 <STRONG>MoveLast</STRONG> メソッドに対する非同期呼び出しの実行を終了するには <STRONG>Cancel</STRONG> メソッドを使用します。</P>
-
-
+> [!メモ] **MoveLast** メソッドを使用すると、ダイナセット タイプまたはスナップショット タイプの **Recordset** の末尾までデータを格納して、 **Recordset** に含まれる現在のレコード数を示すことができます。 ただし、このような目的で **MoveLast** を使用すると、アプリケーションのパフォーマンスが低下する場合があります。 **MoveLast** を使用してレコード数を取得するのは、新しく開かれた **Recordset** の正確なレコード数をどうしても取得する必要がある場合だけにしてください。 
+>
+> **MoveLast** で **dbRunAsync** 定数を使用すると、メソッドの呼び出しが非同期で実行されます。 **Recordset** の末尾までデータが格納されたことを確認するには **StillExecuting** プロパティを使用し、 **MoveLast** メソッドに対する非同期呼び出しの実行を終了するには **Cancel** メソッドを使用します。
 
 前方のみタイプの**Recordset**オブジェクトでは、 **MoveFirst**、 **MoveLast**、および**MovePrevious**メソッドを使うことはできません。
 

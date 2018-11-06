@@ -1,6 +1,6 @@
 ---
 title: Recordset.GetRows メソッド (DAO)
-TOCTitle: GetRows Method
+TOCTitle: GetRows method
 ms:assetid: 59f6e4f0-e7b1-db60-31c7-3338b66d3345
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194427(v=office.15)
 ms:contentKeyID: 48545031
@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1053362
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1b0df2371ec9da675346cc24fd53d602cf69a170
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: ec7947fd5d8d15eee92a033a47a8574f2933e73b
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931240"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998386"
 ---
 # <a name="recordsetgetrows-method-dao"></a>Recordset.GetRows メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -30,7 +29,7 @@ ms.locfileid: "25931240"
 
 *式***レコード セット**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -49,7 +48,7 @@ ms.locfileid: "25931240"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>NumRows</p></td>
+<td><p><em>NumRows</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>取得する行数。</p></td>
@@ -58,29 +57,29 @@ ms.locfileid: "25931240"
 </table>
 
 
-### <a name="return-value"></a>戻り値
+## <a name="return-value"></a>戻り値
 
 バリアント型
 
 ## <a name="remarks"></a>注釈
 
-**GetRows** メソッドは、**Recordset** からレコードをコピーするために使用します。**GetRows** は 2 次元配列を返します。最初の添え字ではフィールドを指定し、2 番目の添え字では行番号を指定します。たとえば次の例では、intField はフィールドを表し、intRecord は行番号を表します。
+**GetRows** メソッドは、 **Recordset** からレコードをコピーするときに使用します。 **GetRows** は、2 次元の配列を返します。 1 番目の添え字でフィールドを指定し、2 番目の添え字で行番号を指定します。 たとえば、`intField`フィールドを表しますと`intRecord`行番号を指定します。
 
-avarRecords (intField、intRecord)
+`avarRecords(intField, intRecord)`
 
 2 行目の最初のフィールドの値を取得するには、次のようなコードを使用します。
 
-フィールド 1 = avarRecords(0,1)
+`field1 = avarRecords(0,1)`
 
 1 行目の 2 番目のフィールドの値を取得するには、次のようなコードを使用します。
 
-field2 = avarRecords(1,0)
+`field2 = avarRecords(1,0)`
 
 avarRecords 変数は、**GetRows** によってデータが返されると、自動的に 2 次元配列となります。
 
 取得できる行数よりも多くの行を要求すると、 **GetRows** は取得できる行数だけを返します。 配列のサイズは返された行数に応じて決まるため、Visual Basic for Applications の **UBound** 関数を使用すると、 **GetRows** によって実際に取得された行数を確認できます。 たとえば、**バリアント**varA という名前に結果を格納する場合は、実際に返された行の数を決定する次のコードを使用します。
 
-numReturned = UBound(varA,2) + 1
+`numReturned = UBound(varA,2) + 1`
 
 返された最初の行は配列の 0 番目の要素となるため、"+ 1" を付ける必要があります。取得できる行数は、使用できるメモリの容量によって制限されます。テーブルのサイズが大きい場合は、**GetRows** を使用してテーブル全体を配列として取得しないでください。
 

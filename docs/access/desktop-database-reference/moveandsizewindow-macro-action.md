@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197001(v=office.15)
 ms:contentKeyID: 48546090
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fd5bbe18af823e2b36772ef209db18ba6cb4b1d4
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 8737de80c38626b72933eb15a59e08ab0452ce74
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925269"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998813"
 ---
 # <a name="moveandsizewindow-macro-action"></a>MoveAndSizeWindow マクロ アクション
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 タブ付きドキュメントではなくウィンドウを重ねて使用するようにドキュメント ウィンドウ オプションを設定すると、" **MoveAndSizeWindow/ウィンドウの移動とサイズ変更** " アクションを使用して、アクティブ ウィンドウの移動またはサイズ変更を行うことができます。ドキュメント ウィンドウ オプションを設定する方法については、「注釈」セクションを参照してください。
 
@@ -61,17 +59,14 @@ ms.locfileid: "25925269"
 
 少なくとも 1 つの引数に対して値を入力する必要があります。
 
-
 > [!NOTE]
-> <P>[!メモ] 各測定値はインチまたはセンチメートル単位で指定します。どちらの単位を使用するかは、Windows コントロール パネルの地域の設定によって決まります。</P>
-
-
+> [!メモ] 各測定値はインチまたはセンチメートル単位で指定します。どちらの単位を使用するかは、Windows コントロール パネルの地域の設定によって決まります。
 
 ## <a name="remarks"></a>注釈
 
 タブ付きドキュメントではなくウィンドウを重ねて使用するようにアプリケーションを設定するには、次の手順を実行します。
 
-1.  次に、[ **オプション**] をクリックします。
+1.  [**オプション**] をクリックします。
 
 2.  [ **カレント データベース**] をクリックします。
 
@@ -83,11 +78,9 @@ ms.locfileid: "25925269"
 
 このアクションは、すべてのウィンドウおよびビューで使用できます。
 
-**ヒント**
-
-  - サイズを変更せずにウィンドウを移動するには、" **Right/右** " および " **Down/下** " 引数に値を入力し、" **Width/幅** " および " **Height/高さ** " 引数は空白のままにしておきます。
-
-  - 移動せずにウィンドウのサイズを変更するには、" **Width/幅** " および " **Height/高さ** " 引数に値を入力し、" **Right/右** " および " **Down/下** " 引数は空白のままにしておきます。
+> [!TIP]
+> - サイズを変更せずにウィンドウを移動するには、" **Right/右** " および " **Down/下** " 引数に値を入力し、" **Width/幅** " および " **Height/高さ** " 引数は空白のままにしておきます。
+> - 移動せずにウィンドウのサイズを変更するには、" **Width/幅** " および " **Height/高さ** " 引数に値を入力し、" **Right/右** " および " **Down/下** " 引数は空白のままにしておきます。
 
 Visual Basic for Applications (VBA) モジュールで " **MoveAndSizeWindow/ウィンドウの移動とサイズ変更** " アクションを実行するには、 **DoCmd** オブジェクトの **MoveSize** メソッドを使用します。
 

@@ -6,24 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835963(v=office.15)
 ms:contentKeyID: 48548373
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0f2034bb4d8d1fbf3f1a0a37bf6adc7c8b8001bb
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 330ae78b86c678b675cfd44afa75f72348ac582f
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925206"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998911"
 ---
 # <a name="copydatabasefile-macro-action"></a>CopyDatabaseFile マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
 " **CopyDatabaseFile/データベースファイルのコピー** " アクションを使用すると、Access プロジェクトに接続されている Microsoft SQL Server 7.0 以降のカレント データベースのコピーを作成できます。 アクセスでは、現在のデータベースをデタッチし、移行先サーバーに結び付けます。 データベースの切断と接続の詳細については、SQL Server のドキュメントを参照してください。
 
-
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。
-
+> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
 
 
 ## <a name="setting"></a>設定値
@@ -52,13 +49,7 @@ ms.locfileid: "25925206"
 </tr>
 <tr class="odd">
 <td><p><strong>Disconnect All Users/全ユーザーの切断</strong></p></td>
-<td><p>データベースからユーザーを強制的かどうかを指定します。 場合は<strong>[はい]</strong>に設定、現在のデータベースに接続されているすべてのユーザーを切断し、データベースのコピー操作を続行できます。 場合設定<strong>なし</strong>もう 1 つまたはより多くのユーザーは、コピーのデータベース操作が失敗する、データベースに接続しています。 既定値は [ <strong>いいえ</strong>] です。</p>
-
-> [!WARNING]
-> 十分な通知を行わずにユーザーをデータベースから切断すると、データの損失を招く可能性があります。
-
-
-<p></p></td>
+<td><p>データベースからユーザーを強制的かどうかを指定します。 場合は<strong>[はい]</strong>に設定、現在のデータベースに接続されているすべてのユーザーを切断し、データベースのコピー操作を続行できます。 場合設定<strong>なし</strong>もう 1 つまたはより多くのユーザーは、コピーのデータベース操作が失敗する、データベースに接続しています。 既定値は [ <strong>いいえ</strong>] です。</p><p><strong>警告</strong>: 適切な警告は、データの損失につながる可能性がなく、データベースからユーザーを切断します。</p></td>
 </tr>
 </tbody>
 </table>
@@ -72,19 +63,17 @@ ms.locfileid: "25925206"
 
 データベースのコピー操作の要件を次に示します。
 
-  - データベース ファイルをコピーする前にすべてのアプリケーションとユーザーを切断する必要があります。
+- データベース ファイルをコピーする前にすべてのアプリケーションとユーザーを切断する必要があります。
 
-  - ナビゲーション ウィンドウ以外のすべてのオブジェクトとビューを閉じる必要があります。
+- ナビゲーション ウィンドウ以外のすべてのオブジェクトとビューを閉じる必要があります。
 
-  - カレント データベースはレプリケートできません。
+- カレント データベースはレプリケートできません。
 
-  - サーバー データベースをコピーするには、ローカル コンピューターに Microsoft SQL Server Version 7.0 以降または SQL Server 2000 Desktop Engine が必要です。
+- サーバー データベースをコピーするには、ローカル コンピューターに Microsoft SQL Server Version 7.0 以降または SQL Server 2000 Desktop Engine が必要です。
 
-<!-- end list -->
+- コピー元のサーバーにある SQL Server データベースは、単一のファイル データベースであることが必要です。
 
-  - コピー元のサーバーにある SQL Server データベースは、単一のファイル データベースであることが必要です。
-
-  - コピーを実行するユーザーは、コピー元とコピー先の両方の SQL Server コンピューターにおいて sysadmin ロールのメンバーである必要がありです。
+- コピーを実行するユーザーは、コピー元とコピー先の両方の SQL Server コンピューターにおいて sysadmin ロールのメンバーである必要がありです。
 
 モジュールの Visual Basic for Applications では、**データベースファイルのコピー**操作を実行するには、 **DoCmd**オブジェクトの**データベースファイルのコピー**メソッドを使用します。
 

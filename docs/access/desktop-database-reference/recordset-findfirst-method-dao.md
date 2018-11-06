@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194787(v=office.15)
 ms:contentKeyID: 48545170
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 23f7609cb918ce1dc04c17d84178daf2ce43be31
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 489e6060fdbaa4183c006e3f422c207d9a5013ee
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925395"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998855"
 ---
 # <a name="recordsetfindfirst-method-dao"></a>Recordset.FindFirst メソッド (DAO)
 
@@ -25,7 +25,7 @@ ms.locfileid: "25925395"
 
 *式***レコード セット**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -44,7 +44,7 @@ ms.locfileid: "25925395"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>基準</p></td>
+<td><p><em>Criteria</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>文字列型 (String)</strong></p></td>
 <td><p>レコードの検索に使用する文字列です。SQL ステートメントの WHERE 句に似ていますが、WHERE という語は付けません。</p></td>

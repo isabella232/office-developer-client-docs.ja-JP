@@ -12,15 +12,14 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1a61512c58ccbde82072fa4d8105c82b9f145ebc
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: ed31f0105d8381667e1398fc5d91577d40998d81
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937422"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998820"
 ---
 # <a name="union-operation-microsoft-access-sql"></a>UNION 操作 (Microsoft Access SQL)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -69,15 +68,9 @@ UNION 操作でクエリが要求するフィールドの数は、すべての�
 
 別名は、先頭の SELECT ステートメントでのみ使用してください。これ以外の場所では無視されます。ORDER BY 句の中では、先頭の SELECT 句で使用しているフィールド名を使用してください。
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>各<EM>クエリ</EM>の引数で、 <A href="https://msdn.microsoft.com/library/ff837271(v=office.15)">GROUP BY</A>句または<A href="https://msdn.microsoft.com/library/ff193795(v=office.15)">HAVING</A>句を使用すると、返されたデータをグループ化します。</P>
-> <LI>
-> <P><EM>クエリ</EM>の最後の引数の最後に指定された順序で返されるデータを表示するのには<A href="https://msdn.microsoft.com/library/ff198293(v=office.15)">ORDER BY</A>句を使用できます。</P></LI></UL>
-
-
+> - 各*クエリ*の引数で、 [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql)句または[HAVING](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/having-clause-microsoft-access-sql)句を使用すると、返されたデータをグループ化します。
+> - *クエリ*の最後の引数の最後に指定された順序で返されるデータを表示するのには[ORDER BY](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/order-by-clause-microsoft-access-sql)句を使用できます。
 
 ## <a name="example"></a>例
 

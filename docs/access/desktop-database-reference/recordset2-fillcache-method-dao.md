@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052942
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 308d388b023b2697d1e7af52b47218eeb3d023f2
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: ef0f4ad298e316cbae295bcf4f6c4c5349b18655
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949531"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998533"
 ---
 # <a name="recordset2fillcache-method-dao"></a>Recordset2.FillCache メソッド (DAO)
 
@@ -29,7 +29,7 @@ Microsoft Access データベース エンジンに接続している ODBC デ�
 
 *式***Recordset2**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -48,13 +48,13 @@ Microsoft Access データベース エンジンに接続している ODBC デ�
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>行</p></td>
+<td><p><em>Rows</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>キャッシュに格納する行数を表す、サブタイプが整数型 (<strong>Integer</strong>) であるバリアント型 (<strong>Variant</strong>) の値。この引数を省略した場合、<strong><a href="recordset2-cachesize-property-dao.md">CacheSize</a></strong> プロパティの設定値によって値が指定されます。</p></td>
 </tr>
 <tr class="even">
-<td><p>StartBookmark</p></td>
+<td><p><em>StartBookmark</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>ブックマークを表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。このブックマークで示されたレコードから、キャッシュへの読み込みが開始されます。この引数を省略した場合、<strong><a href="recordset2-cachestart-property-dao.md">CacheStart</a></strong> プロパティによって示されたレコードから、キャッシュへの読み込みが開始されます。</p></td>
@@ -75,15 +75,9 @@ Microsoft Access データベース エンジンに接続している ODBC デ�
 
 **FillCache** で要求したレコードの数がリモート データ ソースに残っているレコードの数よりも多い場合は、残りのレコードのみが取得され、エラーは発生しません。
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>キャッシュから取得したレコードには、他のユーザーが平行してソース データに加えた変更は反映されていません。</P>
-> <LI>
-> <P><STRONG>FillCache</STRONG> では、まだキャッシュされていないレコードのみが取得されます。キャッシュされたすべてのデータの更新を強制実行するには、 <STRONG>Recordset</STRONG> の <STRONG>CacheSize</STRONG> をいったん 0 に設定し、当初に要求したキャッシュのサイズに再び設定してから、 <STRONG>FillCache</STRONG> を使用します。</P></LI></UL>
-
-
+> - キャッシュから取得したレコードには、他のユーザーが平行してソース データに加えた変更は反映されていません。
+> - **FillCache** では、まだキャッシュされていないレコードのみが取得されます。キャッシュされたすべてのデータの更新を強制実行するには、 **Recordset** の **CacheSize** をいったん 0 に設定し、当初に要求したキャッシュのサイズに再び設定してから、 **FillCache** を使用します。
 
 ## <a name="example"></a>例
 

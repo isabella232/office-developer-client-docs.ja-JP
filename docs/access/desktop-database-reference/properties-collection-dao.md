@@ -1,20 +1,19 @@
 ---
 title: プロパティ コレクション (DAO)
-TOCTitle: Properties Collection
+TOCTitle: Properties collection
 ms:assetid: cd07184a-a261-29c9-542f-bc2eff6f4af6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834455(v=office.15)
 ms:contentKeyID: 48547753
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 05379dee652732bc0839abb056cc15962e3683b0
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 0cd2198d0578c6ec42e4bf800d95e1d7afe22786
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926942"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998344"
 ---
 # <a name="properties-collection-dao"></a>プロパティ コレクション (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -28,29 +27,23 @@ ms.locfileid: "25926942"
 
 ユーザー定義のプロパティは **Delete** メソッドを使用して **Properties** コレクションから削除できますが、組み込みプロパティは削除できません。
 
-
 > [!NOTE]
-> <P>[!メモ] ユーザー定義の <STRONG>Property</STRONG> オブジェクトは、1 つのオブジェクトの特定のインスタンスにのみ関連付けられます。プロパティは、選択した種類のオブジェクトのすべてのインスタンスに定義されるわけではありません。</P>
-
-
+> [!メモ] ユーザー定義の **Property** オブジェクトは、1 つのオブジェクトの特定のインスタンスにのみ関連付けられます。プロパティは、選択した種類のオブジェクトのすべてのインスタンスに定義されるわけではありません。
 
 コレクション内の組み込み **Property** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。
 
-オブジェクトです。**プロパティ**(0)
+- オブジェクトです。**プロパティ**(0)
 
-オブジェクトです。**プロパティ**("name")
+- オブジェクトです。**プロパティ**("name")
 
-オブジェクトです。**プロパティ**\!\[名\]
+- オブジェクトです。**プロパティ**\!\[名\]
 
 組み込みプロパティの場合、次の構文を使用することもできます。
 
-object.name
-
+- object.name
 
 > [!NOTE]
-> <P>ユーザー定義のプロパティでは、完全なオブジェクトを使用する必要があります。<STRONG>プロパティ</STRONG>("name") の構文です。</P>
-
-
+> ユーザー定義のプロパティでは、完全なオブジェクトを使用する必要があります。**プロパティ**("name") の構文です。
 
 同じ構文を使って、 **Property** オブジェクトの **Value** プロパティを参照することもできます。 **Property** オブジェクト自身、または **Property** オブジェクトの **Value** プロパティのどちらを参照するのかは、参照のコンテキストで決まります。
 

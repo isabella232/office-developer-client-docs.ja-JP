@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835635(v=office.15)
 ms:contentKeyID: 48548211
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d8ed9eb021df9d4c82473f1924a539787680f76a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: d2231e94703b49fd14fb89d7642c0144c1dda532
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928804"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998596"
 ---
 # <a name="recordset2move-method-dao"></a>Recordset2.Move メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -26,7 +25,7 @@ ms.locfileid: "25928804"
 
 *式***Recordset2**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -45,13 +44,13 @@ ms.locfileid: "25928804"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>行</p></td>
+<td><p><em>Rows</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>長整数型 (Long)</strong></p></td>
 <td><p>位置を移動する行数。rows が 0 より大きい場合は、前方 (ファイルの末尾) に向かって位置が移動します。rows が 0 より小さい場合は、後方 (ファイルの先頭) に向かって位置が移動します。</p></td>
 </tr>
 <tr class="even">
-<td><p>StartBookmark</p></td>
+<td><p><em>StartBookmark</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p>ブックマークを示す値。startbookmark を指定した場合、このブックマークが移動の開始位置となります。それ以外の場合は、カレント レコードが移動の開始位置となります。</p></td>
@@ -68,16 +67,10 @@ ms.locfileid: "25928804"
 
 **BOF** プロパティまたは **EOF** プロパティが **True** の場合に、有効なブックマークを指定せずに **Move** メソッドを使用しようとすると、実行時エラーが発生します。
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>前方スクロール タイプの <STRONG>Recordset</STRONG> オブジェクトで <STRONG>Move</STRONG> を使用するときは、引数 rows に正の整数を指定する必要があり、ブックマークは指定できません。つまり、移動できる方向は前方のみです。</P>
-> <LI>
-> <P><STRONG>Recordset</STRONG> の最初のレコード、最後のレコード、次のレコード、または前のレコードをカレント レコードにするには、 <STRONG>MoveFirst</STRONG>、 <STRONG>MoveLast</STRONG>、 <STRONG>MoveNext</STRONG>、または <STRONG>MovePrevious</STRONG> の各メソッドを使用します。</P>
-> <LI>
-> <P>rows に 0 を指定して <STRONG>Move</STRONG> を使用すると、カレント レコードの基になるデータを簡単に取得できます。この方法は、カレント レコードにベース テーブルの最新のデータが格納されていることを確認するときに便利です。またこの方法を使用すると、 <STRONG><A href="recordset2-edit-method-dao.md">Edit</A></STRONG> または <STRONG><A href="recordset-addnew-method-dao.md">AddNew</A></STRONG> に対する保留中の呼び出しが取り消されます。</P></LI></UL>
-
+> - 前方スクロール タイプの **Recordset** オブジェクトで **Move** を使用するときは、引数 rows に正の整数を指定する必要があり、ブックマークは指定できません。つまり、移動できる方向は前方のみです。
+> - **Recordset** の最初のレコード、最後のレコード、次のレコード、または前のレコードをカレント レコードにするには、 **MoveFirst**、 **MoveLast**、 **MoveNext**、または **MovePrevious** の各メソッドを使用します。
+> - rows に 0 を指定して **Move** を使用すると、カレント レコードの基になるデータを簡単に取得できます。この方法は、カレント レコードにベース テーブルの最新のデータが格納されていることを確認するときに便利です。またこの方法を使用すると、 **[Edit](recordset2-edit-method-dao.md)** または **[AddNew](recordset-addnew-method-dao.md)** に対する保留中の呼び出しが取り消されます。
 
 
 ## <a name="example"></a>例

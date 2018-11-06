@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm119055
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 9d8747c5c4fd1a32a36841f648017bc0cab3de8f
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 7da3eb87e775a6b02694910cd017c9535fde1df7
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920810"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998281"
 ---
 # <a name="navigateto-macro-action"></a>NavigateTo マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -52,52 +51,50 @@ ms.locfileid: "25920810"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>備考
 
-  - このアクションの動作は、ナビゲーション ウィンドウのタイトル バーからカテゴリやグループを選択した場合と同じです。
+- このアクションは、ナビゲーション ウィンドウのタイトル バーからカテゴリとグループを選択することに似ています。
 
-  - **グループ**の有効な引数は、どの**カテゴリ**の引数の使用によって異なります。 **グループ**の無効な引数を入力すると、エラー メッセージが表示されます。次の表には、各**カテゴリ**の引数に有効な**グループ**の引数の例が含まれています。
+- **グループ**の有効な引数は、どの**カテゴリ**の引数の使用によって異なります。 **グループ**の無効な引数を入力すると、エラー メッセージが表示されます。次の表には、各**カテゴリ**の引数に有効な**グループ**の引数の例が含まれています。
     
-    <table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><p>引数 Category</p></th>
-    <th><p>"Group/グループ" 引数の例</p></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>オブジェクトの種類</p></td>
-    <td><p>テーブル、フォーム、クエリ、ページ、マクロ、モジュール</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>テーブルとビュー</p></td>
-    <td><p>データベース内の特定のテーブルの名前</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>更新日</p></td>
-    <td><p>今日、昨日、先月、先月よりも前の日付</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>作成日</p></td>
-    <td><p>今日、昨日、先月、先月よりも前の日付</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>ユーザー設定のカテゴリ</p></td>
-    <td><p>指定したユーザー設定のカテゴリに対応する作成済みグループの名前</p></td>
-    </tr>
-    </tbody>
-    </table>
+  <table>
+  <colgroup>
+  <col style="width: 50%" />
+  <col style="width: 50%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th><p>引数 Category</p></th>
+  <th><p>"Group/グループ" 引数の例</p></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td><p>オブジェクトの種類</p></td>
+  <td><p>テーブル、フォーム、クエリ、ページ、マクロ、モジュール</p></td>
+  </tr>
+  <tr class="even">
+  <td><p>テーブルとビュー</p></td>
+  <td><p>データベース内の特定のテーブルの名前</p></td>
+  </tr>
+  <tr class="odd">
+  <td><p>更新日</p></td>
+  <td><p>今日、昨日、先月、先月よりも前の日付</p></td>
+  </tr>
+  <tr class="even">
+  <td><p>作成日</p></td>
+  <td><p>今日、昨日、先月、先月よりも前の日付</p></td>
+  </tr>
+  <tr class="odd">
+  <td><p>ユーザー設定のカテゴリ</p></td>
+  <td><p>指定したユーザー設定のカテゴリに対応する作成済みグループの名前</p></td>
+  </tr>
+  </tbody>
+  </table>
 
-
-  - VBA モジュールでは、**移動**操作を実行するには、 **DoCmd**オブジェクトの**NavigateTo**メソッドを使用します。
-
+- VBA モジュールでは、**移動**操作を実行するには、 **DoCmd**オブジェクトの**NavigateTo**メソッドを使用します。
 
 > [!NOTE]
-> <P>(<STRONG>すべてのテーブル</STRONG>、<STRONG>すべての Access オブジェクト</STRONG>、または<STRONG>すべての日付</STRONG>など) のカテゴリの最上位レベルに移動するにする必要があります、グループ引数を指定しません。 などの引数<STRONG>Category</STRONG> <STRONG>オブジェクトの種類</STRONG>がある場合は、エラー<STRONG>グループ</STRONG>引数の結果として<STRONG>すべての Access オブジェクト</STRONG>を入力します。</P>
+> (**すべてのテーブル**、**すべての Access オブジェクト**、または**すべての日付**など) のカテゴリの最上位レベルに移動するにする必要があります、グループ引数を指定しません。 などの引数**Category** **オブジェクトの種類**がある場合は、エラー**グループ**引数の結果として**すべての Access オブジェクト**を入力します。
 
 

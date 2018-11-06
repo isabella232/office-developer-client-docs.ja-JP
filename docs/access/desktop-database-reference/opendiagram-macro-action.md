@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm154095
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c170c9d02967cb04b387d9f549ad77933d1f55b8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: b04870a416874e2136e21b40c62d8e64a6182efe
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925647"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998547"
 ---
 # <a name="opendiagram-macro-action"></a>OpenDiagram マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
 Access プロジェクトで、デザイン ビューでデータベース ダイアグラムを開く**OpenDiagram**アクションを使用できます。
 
-
 > [!NOTE]
-> <P>[!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。</P>
-
-
+> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
 
 ## <a name="setting"></a>設定値
 
@@ -53,16 +49,12 @@ Access プロジェクトで、デザイン ビューでデータベース ダ�
 </tbody>
 </table>
 
-
 ## <a name="remarks"></a>解説
 
 このアクションの動作は、ナビゲーション ウィンドウでデータベース ダイアグラムをダブルクリックした場合や、ナビゲーション ウィンドウでデータベース ダイアグラムを右クリックして [ **デザイン ビュー**] をクリックした場合と同じです。
 
-
 > [!TIP]
-> <P>ナビゲーション ウィンドウからマクロのアクション行にデータベース ダイアグラムをドラッグできます。 <STRONG>OpenDiagram</STRONG>操作デザイン ビューでデータベース ダイアグラムを開くことが自動的に作成します。</P>
-
-
+> ナビゲーション ウィンドウからマクロのアクション行にデータベース ダイアグラムをドラッグできます。 **OpenDiagram**操作デザイン ビューでデータベース ダイアグラムを開くことが自動的に作成します。
 
 **OpenDiagram**アクションを Visual Basic for Applications (VBA) のモジュールで実行するには、 **DoCmd**オブジェクトの**OpenDiagram**メソッドを使用します。
 

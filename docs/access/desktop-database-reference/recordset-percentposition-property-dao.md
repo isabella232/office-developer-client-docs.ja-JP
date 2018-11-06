@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821751(v=office.15)
 ms:contentKeyID: 48547077
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 31f1cbf1f6bbc2f2c7ce855cccb667e71638b1b8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 14f2f0249a878e933f89c50e7c10058cf22565b9
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929572"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998834"
 ---
 # <a name="recordsetpercentposition-property-dao"></a>Recordset.PercentPosition プロパティ (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -30,11 +29,8 @@ ms.locfileid: "25929572"
 
 **Recordset** オブジェクト内のカレント レコードのおよその位置を示したり変更したりするには、 **PercentPosition** プロパティを確認または設定します。ベース テーブルから直接開いたダイナセット タイプまたはスナップショット タイプの **Recordset** オブジェクトを使用する場合は、 **PercentPosition** プロパティを設定または確認する前に、最後のレコードに移動して **Recordset** オブジェクトに値を設定します。 **Recordset** オブジェクトに値がすべて設定される前に **PercentPosition** プロパティを使用すると、移動量は、 **[RecordCount](recordset-recordcount-property-dao.md)** プロパティの設定値に示されている、アクセス済みのレコード数に対する割合になります。 **[MoveLast](recordset-movelast-method-dao.md)** メソッドを使用すると、最後のレコードに移動できます。
 
-
 > [!NOTE]
-> <P>[!メモ] <STRONG>PercentPosition</STRONG> プロパティを使用してカレント レコードを <STRONG>Recordset</STRONG> オブジェクトの特定のレコードに移動する方法は推奨されず、この操作を行うには、 <STRONG><A href="recordset-bookmark-property-dao.md">Bookmark</A></STRONG> プロパティの使用が適しています。</P>
-
-
+> **PercentPosition**プロパティを使用して、**レコード セット**オブジェクトの特定のレコードをカレント レコードを移動するのにはお勧めしません。 **[Bookmark](recordset-bookmark-property-dao.md)** プロパティは、この作業に適しています。
 
 いったん **PercentPosition** プロパティをある値に設定すると、その値に対応するおよその位置にあるレコードがカレント レコードになり、 **PercentPosition** プロパティはカレント レコードのおよその位置が反映された値に再設定されます。たとえば、 **Recordset** オブジェクトに格納されているレコードが 5 件のみの場合に、その **PercentPosition** プロパティの値を 77 に設定すると、 **PercentPosition** プロパティから取得される値は 77 ではなく 80 になることがあります。
 

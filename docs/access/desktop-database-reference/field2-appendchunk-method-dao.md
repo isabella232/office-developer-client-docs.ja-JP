@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052867
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e5aaab6a79893a66b12216f60c05690c1e806000
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: eeaed6e6c2f32463a12f617c8fee90b2d5f24a86
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937051"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998435"
 ---
 # <a name="field2appendchunk-method-dao"></a>Field2.AppendChunk メソッド (DAO)
 
@@ -29,7 +29,7 @@ ms.locfileid: "25937051"
 
 *式***Field2**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ ms.locfileid: "25937051"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Val</p></td>
+<td><p><em>Val</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>バリアント型 (Variant)</strong></p></td>
 <td><p><strong>Field2</strong> オブジェクトに追加するデータが格納されている、サブタイプが文字列型 (String) であるバリアント型 (Variant) の式。</p></td>

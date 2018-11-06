@@ -10,12 +10,12 @@ f1_keywords:
 - jetsql40.chm5277591
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c43987be9e07a92c4276d13f1f2b51e3242312db
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: dc481a699ad0703075e7c7c4f97dffb147cd0280
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947169"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998946"
 ---
 # <a name="sql-reserved-words"></a>SQL 予約語
 
@@ -24,9 +24,7 @@ ms.locfileid: "25947169"
 次の一覧は、Microsoft Access データベース エンジンが SQL ステートメント用に予約しているすべての予約語を示したものです。一覧の中で小文字が含まれている予約語は、他のアプリケーションの予約語でもあります。このため、これらの予約語の個々のヘルプ トピックには、SQL での使用とは関係のない一般的な説明も含まれています。
 
 > [!NOTE]
-> <P>単語の後にアスタリスク (*) は予約されていますが、(たとえば、<STRONG>レベル</STRONG>、 <STRONG>TableID</STRONG>) は、Microsoft Access SQL ステートメントのコンテキストで意味を持つ現在ありません。 下線付きで表示されない単語には、リンクの説明はありません。</P>
-
-
+> 単語の後にアスタリスク (*) は予約されていますが、(たとえば、**レベル**、 **TableID**) は、Microsoft Access SQL ステートメントのコンテキストで意味を持つ現在ありません。 下線付きで表示されない単語には、リンクの説明はありません。
 
 ## <a name="a"></a>A
 

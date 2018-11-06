@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193917(v=office.15)
 ms:contentKeyID: 48544842
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9d9d154bb7506ca75862006a889c84906e43bc2a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 60d843773c00e7bd40e3e8e28997422fbda3c215
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925423"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998309"
 ---
 # <a name="recordset2sort-property-dao"></a>Recordset2.Sort プロパティ (DAO)
-
 
 **適用されます**Access 2013、Office 2013。 
 
@@ -36,11 +35,8 @@ ms.locfileid: "25925423"
 
 **Sort**プロパティをテーブル – または前方のみタイプの**Recordset**オブジェクトに適用されません。 テーブル タイプの**Recordset**オブジェクトを並べ替えるには、 **[Index](recordset2-index-property-dao.md)** プロパティを使用します。
 
-
 > [!NOTE]
-> <P>[!メモ] 多くの場合、並べ替え条件が含まれた SQL ステートメントを使用した方が、短時間で新しい <STRONG>Recordset</STRONG> オブジェクトを開くことができます。</P>
-
-
+> [!メモ] 多くの場合、並べ替え条件が含まれた SQL ステートメントを使用した方が、短時間で新しい **Recordset** オブジェクトを開くことができます。
 
 ## <a name="example"></a>例
 

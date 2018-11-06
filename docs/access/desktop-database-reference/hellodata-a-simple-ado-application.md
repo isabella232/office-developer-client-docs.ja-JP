@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249950(v=office.15)
 ms:contentKeyID: 48547554
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 29d3485526b4adb5084b7dd8277b0c93d664af47
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 359816f828191a8643941a21ac520ba7b3231e6b
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944656"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998204"
 ---
 # <a name="hellodata-a-simple-ado-application"></a>HelloData: 単純な ADO アプリケーション
 
@@ -33,11 +33,8 @@ ADO ライブラリ検索の例として、"HelloData" という単純な ADO �
 
 5.  最後に、 [HelloData のコード](hellodata-code.md)に記載されているコードをコピーし、フォームのコード エディター ウィンドウに貼り付けます。 **F5** キーを押してコードを実行します。
 
-
 > [!NOTE]
-> <P>[!メモ] 次の例およびこのガイドでは、サーバーでの認証用ユーザー ID は "MyId"、パスワードは "123aBc" を使用します。これらの値は、お使いになるサーバーに合わせて有効なログオン認証に置き換えてください。また、"MyServer" も使用するサーバー名に置き換えてください。</P>
-
-
+> [!メモ] 次の例およびこのガイドでは、サーバーでの認証用ユーザー ID は "MyId"、パスワードは "123aBc" を使用します。これらの値は、お使いになるサーバーに合わせて有効なログオン認証に置き換えてください。また、"MyServer" も使用するサーバー名に置き換えてください。
 
 コードの詳細については、 [HelloData の詳細](hellodata-details.md)を参照してください。
 

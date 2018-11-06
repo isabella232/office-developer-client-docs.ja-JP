@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052930
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4e7bd39d3329c83ec2a26fbef11e3a3b4e51e760
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 95b12df62fe47779c1867a291018726ada299390
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921305"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998932"
 ---
 # <a name="indexclustered-property-dao"></a>Index.Clustered プロパティ (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -38,12 +37,8 @@ ms.locfileid: "25921305"
 
 **Clustered** プロパティは、コレクションに追加されていない新しい **Index** オブジェクトの場合は値の設定と取得が可能で、 **Indexes** コレクションの既存の **Index** オブジェクトの場合は値の取得のみが可能です。
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Microsoft Access データベース エンジンはクラスター化インデックスをサポートしていないため、Microsoft Access データベース エンジン データベースでは <STRONG>Clustered</STRONG> プロパティは無視されます。</P>
-> <LI>
-> <P>ODBC データ ソースの場合、 <STRONG>Clustered</STRONG> プロパティは常に <STRONG>False</STRONG> を返し、ODBC データ ソースにクラスター化インデックスがあるかどうかは検出しません。</P></LI></UL>
+> - Microsoft Access データベース エンジンはクラスター化インデックスをサポートしていないため、Microsoft Access データベース エンジン データベースでは **Clustered** プロパティは無視されます。
+> - ODBC データ ソースの場合、 **Clustered**プロパティ常に返します**false を指定**します。ODBC データ ソースはクラスター化インデックスを持つかどうかは検出されません。
 
 

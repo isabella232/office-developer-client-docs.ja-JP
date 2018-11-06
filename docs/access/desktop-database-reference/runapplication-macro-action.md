@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm93359
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 2fcc3cc7bac9bcc4ab1f87c6e3da791eab06fc94
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: caa22f142062b929b2520d5a2de69f9ccddb2145
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919277"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998680"
 ---
 # <a name="runapplication-macro-action"></a>RunApplication マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -35,14 +34,10 @@ ms.locfileid: "25919277"
 </tbody>
 </table>
 
-
 **RunApplication**アクションを使用すると、Microsoft access から Microsoft Excel、Word、または Microsoft PowerPoint など、Windows ベースまたは ms-dos アプリケーションを実行します。 たとえば、Excel スプレッドシートのデータを Access データベースに貼り付ける可能性があります。
 
-
 > [!NOTE]
-> <P>[!メモ] データベースが信頼されていない場合、このアクションは許可されません。マクロの有効化の詳細については、この記事の「 See Also」セクションのリンクを参照してください。</P>
-
-
+> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
 
 ## <a name="setting"></a>設定値
 

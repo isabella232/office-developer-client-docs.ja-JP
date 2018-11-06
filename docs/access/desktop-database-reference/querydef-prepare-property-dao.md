@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1101187
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f1d587501cb9a3279db055b9eee27d765e002a03
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: a30c9d12de32f4137e3bb365254445f96e8b03c6
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925941"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998785"
 ---
 # <a name="querydefprepare-property-dao"></a>QueryDef.Prepare プロパティ (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -36,11 +35,8 @@ ms.locfileid: "25925941"
 
 **準備**が**dbQPrepare**に設定されているこの**dbExecDirect**に**[Execute](querydef-execute-method-dao.md)** メソッドのオプションの引数を設定することによってクエリが実行されるときは、オーバーライドできます。
 
-
 > [!NOTE]
-> <P>[!メモ] ODBC <STRONG>SQLPrepare</STRONG> API は、DAO <STRONG><A href="querydef-sql-property-dao.md">SQL</A></STRONG> プロパティを設定した直後に呼び出されます。このため、 <STRONG>dbQUnprepare</STRONG> オプションを使用してパフォーマンスを向上させる場合は、 <STRONG>SQL</STRONG> プロパティを設定する前に <STRONG>Prepare</STRONG> プロパティを設定する必要があります。</P>
-
-
+> [!メモ] ODBC **SQLPrepare** API は、DAO **[SQL](querydef-sql-property-dao.md)** プロパティを設定した直後に呼び出されます。このため、 **dbQUnprepare** オプションを使用してパフォーマンスを向上させる場合は、 **SQL** プロパティを設定する前に **Prepare** プロパティを設定する必要があります。
 
 ## <a name="example"></a>例
 

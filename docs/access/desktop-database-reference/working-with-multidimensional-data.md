@@ -1,20 +1,19 @@
 ---
-title: 多次元データを処理する
-TOCTitle: Working with Multidimensional Data
+title: マルチ ディメンション データの操作
+TOCTitle: Working with multidimensional data
 ms:assetid: a0c9ac73-04da-cfdd-8787-15c8a53ff819
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249740(v=office.15)
 ms:contentKeyID: 48546717
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2210799fe46a0993a917a85a0e06a1a806b04548
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 1fc86aa61b9dda9db2246b7b5720eed31a595ea0
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945825"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998694"
 ---
 # <a name="working-with-multidimensional-data"></a>マルチ ディメンション データの操作
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -28,35 +27,27 @@ ms.locfileid: "25945825"
 
 たとえば、キューブに以下の 6 つの次元があるとします。このキューブのスキーマは、「[多次元スキーマおよびデータの概要](overview-of-multidimensional-schemas-and-data.md)」の例と多少異なることに注意してください。
 
-  - Salesperson
-
-  - Geography (地理的な階層) - Continents、Countries、States など
-
-  - Quarters - Quarters、Months、Days
-
-  - Years
-
-  - Measures - Sales、PercentChange、BudgetedSales
-
-  - Products
-
+- Salesperson
+- Geography (地理的な階層) - Continents、Countries、States など
+- Quarters - Quarters、Months、Days
+- Years
+- Measures - Sales、PercentChange、BudgetedSales
+- Products
 
 > [!NOTE]
-> <P>[!メモ] この例のセル値は軸位置の序数の整列されたペアとして表示でき、最初の桁は x 軸の位置を表し、2 桁目が Y 軸の位置を表します。</P>
-
-
+> [!メモ] この例のセル値は軸位置の序数の整列されたペアとして表示でき、最初の桁は x 軸の位置を表し、2 桁目が Y 軸の位置を表します。
 
 このセルセットの特性は次のとおりです。
 
-  - 軸の次元: Quarters、Salesperson、Geography
+- 軸の次元: Quarters、Salesperson、Geography
 
-  - フィルター次元: Measures、Years、Products
+- フィルター次元: Measures、Years、Products
 
-  - 2 つの軸: COLUMN (x または Axis 0) と ROW (y または Axis 1)
+- 2 つの軸: COLUMN (x または Axis 0) と ROW (y または Axis 1)
 
-  - x 軸: ネストされた 2 つの次元 (Salesperson と Geography)
+- x 軸: ネストされた 2 つの次元 (Salesperson と Geography)
 
-  - y 軸: Quarters 次元
+- y 軸: Quarters 次元
 
 x 軸には、Salesperson と Geography という 2 つの次元があります。Geography からは、Seattle、Boston、USA-South、および Japan の 4 つのメンバーが選択されます。Salesperson からは、Valentine と Nash という 2 つのメンバーが選択されます。これによって、この軸には合計 8 つの位置が生成されます (8 = 4 \*2)。
 

@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248871(v=office.15)
 ms:contentKeyID: 48543292
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 588f99d495716ca3c40376ce323d7c1557da9319
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 0105fb67c095355e607c6c73fc73fc4c6b1050ed
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925801"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998195"
 ---
 # <a name="requery-method-ado"></a>Requery メソッド (ADO)
 
-
 **適用されます**Access 2013、Office 2013。
-
-
 
 オブジェクトの基になるクエリを再実行して、[Recordset](recordset-object-ado.md) オブジェクトのデータを更新します。
 
@@ -26,17 +23,14 @@ ms.locfileid: "25925801"
 
 *レコード セット*です。*オプション*のクエリを再実行します。
 
-## <a name="parameter"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
-  - *Options*
-
-  - 省略可能です。この操作に対する [ExecuteOptionEnum](executeoptionenum.md) 値と [CommandTypeEnum](commandtypeenum.md) 値を含む、ビットマスクを指定します。
-
+|名前 |説明|
+|:----|:----------|
+|*Options* |省略可能です。この操作に対する [ExecuteOptionEnum](executeoptionenum.md) 値と [CommandTypeEnum](commandtypeenum.md) 値を含む、ビットマスクを指定します。|
 
 > [!NOTE]
-> <P><EM>オプション</EM>は、 <STRONG>adAsyncExecute</STRONG>に設定されている場合、この操作を非同期に実行され、 <A href="willchangerecordset-and-recordsetchangecomplete-events-ado.md">RecordsetChangeComplete</A>イベントが終了するときに発行されます。</P>
-
-
+> *オプション*は、 **adAsyncExecute**に設定されている場合、この操作を非同期に実行され、 [RecordsetChangeComplete](willchangerecordset-and-recordsetchangecomplete-events-ado.md)イベントが終了するときに発行されます。
 
 **Requery** では、 **ExecuteOpenEnum** の値 **adExecuteNoRecords** または **adExecuteStream** は使用できません。
 

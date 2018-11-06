@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052904
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 50e1cf6b2eb87e27f6ee0ca1468ef6dadc17e602
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: c3f8ee64f7eff6b02ddf4a004eaec7364436e0d1
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922532"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998421"
 ---
 # <a name="relationsappend-method-dao"></a>Relations.Append メソッド (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -30,7 +29,7 @@ ms.locfileid: "25922532"
 
 *式***関係**オブジェクトを表す変数です。
 
-### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
 <table>
 <colgroup>
@@ -49,7 +48,7 @@ ms.locfileid: "25922532"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>オブジェクト</p></td>
+<td><p><em>Object</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>オブジェクト型 (Object)</strong></p></td>
 <td><p>コレクションに追加するフィールドを表すオブジェクト変数です。</p></td>

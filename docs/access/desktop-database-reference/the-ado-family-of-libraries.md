@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249724(v=office.15)
 ms:contentKeyID: 48546656
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e4d37ef012e6db60c4a92267c82664694ed63afe
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 821de4312d3fa76468311305b18eaaa156e05318
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936512"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999044"
 ---
 # <a name="the-ado-family-of-libraries"></a>ADO ファミリのライブラリ
 
@@ -21,7 +21,7 @@ ADO ファミリは、ADO (RDS を含む)、ADO MD、および ADOX という 3 
 
 ## <a name="ado"></a>ADO
 
-ADO により、クライアント アプリケーションが、OLE DB プロバイダーを通じてデータベース サーバーのデータにアクセスし、これを処理できるようになります。ADO の主な利点は、使用が簡単で、高速に動作し、メモリのオーバーヘッドが小さく、ディスクの使用量が少ないことです。ADO では、クライアント/サーバー アプリケーションおよび Web ベース アプリケーションを構築するための重要な機能がサポートされています。
+ADO により、クライアント アプリケーションが、OLE DB プロバイダーを通じてデータベース サーバーのデータにアクセスし、これを処理できるようになります。 ADO の主な利点は、使用が簡単で、高速に動作し、メモリのオーバーヘッドが小さく、ディスクの使用量が少ないことです。 ADO には、クライアント/サーバーおよび web ベースのアプリケーションを構築するための主要な機能がサポートされています。
 
 ADO では、リモート データ サービス (RDS) をサーバーからクライアント アプリケーションまたは web ページへのデータは、クライアント上のデータを操作し、ラウンド トリップで 1 つのサーバーに更新プログラムを返すを移動することができますが機能もあります。
 

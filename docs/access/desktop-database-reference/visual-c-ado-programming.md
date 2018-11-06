@@ -1,20 +1,19 @@
 ---
-title: Visual C++ での ADO プログラミング
-TOCTitle: Visual C++ ADO Programming
+title: Visual C++ の ADO プログラミング
+TOCTitle: Visual C++ ADO programming
 ms:assetid: 117c4fad-8c11-5e3a-ea0c-18811e87475f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248878(v=office.15)
 ms:contentKeyID: 48543319
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7478a90e3c6242c68a1325b08e998f4c76a62f3d
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 5278a998363359f4bd2aad14881865505ce45633
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944663"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998414"
 ---
 # <a name="visual-c-ado-programming"></a>Visual C++ の ADO プログラミング
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -114,7 +113,7 @@ rs->Fields->Item["au_fname"]->Value = "value";
 
 この規則が当てはまらないのは、COM 固有のデータ型であるバリアント型 ( **Variant** )、 **BSTR** 型、および **SafeArray** 型です。
 
-## <a name="variant"></a>バリアント型 (Variant)
+### <a name="variant"></a>バリアント型 (Variant)
 
 バリアント型 ( **Variant** ) は、値メンバーとデータ型メンバーを格納する構造化データ型です。バリアント型 ( **Variant** ) には、別のバリアント型 (Variant)、BSTR、ブール型 (Boolean)、IDispatch ポインターまたは IUnknown ポインター、通貨、日付など、さまざまなデータ型を格納できます。また、COM には、データ型の変換を簡単に実行できるメソッドが用意されています。
 
@@ -124,7 +123,7 @@ rs->Fields->Item["au_fname"]->Value = "value";
 
 「ADO API リファレンス」のトピックの「 **パラメーター** 」セクションでオペランドがバリアント型 ( **Variant** ) であると記載されている場合は、この規則が明白に当てはまります。例外は、このドキュメントでオペランドが長整数型 ( **Long** ) やバイト型 ( **Byte** ) などの標準データ型である、または列挙型であると明示的に記載されている場合です。また、オペランドが文字列型 ( **String** ) である場合も例外です。
 
-## <a name="bstr"></a>BSTR 型
+### <a name="bstr"></a>BSTR 型
 
 **BSTR** (**B**asic **STR**ing) は、文字列と文字列長を格納する構造化データ型です。COM には、**BSTR** 型を割り当て、操作、および解放するメソッドが用意されています。
 
@@ -132,7 +131,7 @@ rs->Fields->Item["au_fname"]->Value = "value";
 
 「ADO API リファレンス」でメソッドまたはプロパティが**文字列**値を受け取る、ときにことを意味値の形式で、 ** \_bstr\_t**.
 
-## <a name="casting-variantt-and-bstrt-classes"></a>キャスト\_バリアント\_t と\_bstr\_t クラス
+#### <a name="casting-variantt-and-bstrt-classes"></a>キャスト\_バリアント\_t と\_bstr\_t クラス
 
 多くの場合、コードでは明示的にする必要はありません、**\_バリアント\_t**または**\_bstr\_t**操作への引数にします。 場合、**\_バリアント\_t**または**\_bstr\_t**クラスには、引数のデータ型に一致するコンス トラクターは、コンパイラが生成されます、適切な**\_バリアント\_t**または**\_bstr\_t**。
 
@@ -160,7 +159,7 @@ rs->Fields->Item["au_fname"]->Value = "value";
 
 コンス トラクターの 2 番目のブール型の引数のオプションの既定値の true を明示的にコーディングする方法も。 この引数は、**バリアント型**コンス トラクターは、ADO の呼び出しを自動的に補正、 **AddRef**() メソッドを呼び出す、**\_バリアント\_t::Release**() メソッドの ADO のメソッドまたはプロパティの呼び出しが完了するとします。
 
-## <a name="safearray"></a>SafeArray
+### <a name="safearray"></a>SafeArray
 
 **SafeArray**は、他のデータ型の配列を含む構造化データ タイプです。 **SafeArray**は各配列の次元、およびそれらの範囲内の配列要素へのアクセス制限の範囲に関する情報が含まれているために、*安全*と呼ばれます。
 
@@ -170,7 +169,7 @@ rs->Fields->Item["au_fname"]->Value = "value";
 
 さらに別の例として、 **Find** メソッドの最初の引数がバリアント型 ( **Variant** ) で、その値が 1 次元の **SafeArray** 型である場合、 **AddNew** の最初と 2 番目のオプションの引数はそれぞれ 1 次元の **SafeArray** 型で、 **GetRows** メソッドの戻り値は、値が 2 次元の **SafeArray** 型であるバリアント型 ( **Variant** ) です。
 
-## <a name="missing-and-default-parameters"></a>省略可能なパラメーターと既定のパラメーター
+## <a name="missing-and-default-parameters"></a>不足していると、既定のパラメーター
 
 Visual Basic では、メソッドのパラメーターを省略できます。たとえば、 **Recordset** オブジェクトの **Open** メソッドには 5 つのパラメーターがありますが、中間のパラメーターを省略して、後続のパラメーターをそのまま使用できます。省略可能なオペランドのデータ型に応じて、既定の **BSTR** 型またはバリアント型 ( **Variant** ) が代用されます。
 
@@ -210,11 +209,11 @@ COM では、ほとんどの操作は、関数が正常に完了したかどう�
 
 **\#インポート**ディレクティブによって作成のみエラー処理ルーチンでメソッドおよびプロパティは、ADO .dll で宣言されているのです。 ただし、自分でエラー確認マクロやインライン関数を記述すると、同じエラー処理機構を利用できます。 例については、「 [ADO 用の Visual C++ Extensions](visual-c-extensions-for-ado.md)」または、以下に説明するコードを参照してください。
 
-## <a name="visual-c-equivalents-of-visual-basic-conventions"></a>Visual Basic の規則と同等の Visual C++ の規則
+## <a name="visual-c-equivalents-of-visual-basic-conventions"></a>Visual C++ に対応する Visual Basic の規則の
 
 Visual Basic および、それと同等の Visual C++ でコーディングされた ADO ドキュメントにおけるいくつかの規則の概要を次に示します。
 
-## <a name="declaring-an-ado-object"></a>ADO オブジェクトの宣言
+### <a name="declaring-an-ado-object"></a>ADO オブジェクトの宣言
 
 Visual Basic では、ADO オブジェクト変数 (この場合は **Recordset** オブジェクトの変数) を次のように宣言します。
 
@@ -279,7 +278,9 @@ rs->Open(...);
 
 2 つの方法の 1 つの変数を使用できます、"-\>"インターフェイスへのポインターのように動作するクラスのインスタンスを許可する演算子をオーバー ロードします。 インスタンス変数のプライベート クラス メンバーへのポインターを含む、**\_レコード セット**インタ フェースです。"-\>"演算子がそのポインターを返します。返されたポインターのメンバーにアクセスして、**\_レコード セット**オブジェクトです。
 
-## <a name="coding-a-missing-parameter"></a>省略可能なパラメーターのコーディング: バリアント型 (Variant)
+### <a name="coding-a-missing-parameter"></a>欠落しているパラメーターのコーディング
+
+#### <a name="string"></a>文字列
 
 Visual Basic で省略可能な文字列型 ( **String** ) のオペランドをコーディングする場合は、単純にそのオペランドを省略します。 Visual C++ では、そのオペランドを指定する必要があります。 コードは**\_bstr\_t**の値として空の文字列を持ちます。
 
@@ -288,7 +289,7 @@ Visual Basic で省略可能な文字列型 ( **String** ) のオペランドを
 _bstr_t strMissing(L""); 
 ```
 
-## <a name="coding-a-missing-parameter"></a>省略可能なパラメーターのコーディング: バリアント型 (Variant)
+#### <a name="variant"></a>バリアント型 (Variant)
 
 Visual Basic で省略可能なバリアント型 ( **Variant** ) のオペランドをコーディングする場合は、単純にそのオペランドを省略します。 Visual C++ では、そのオペランドを指定する必要があります。 コードで不足している**バリアント型**パラメーター、**\_バリアント\_t**変位、特別な値に設定\_E\_PARAMNOTFOUND、および、型の VT\_エラーです。 **VtMissing**同等であるの代わりに、指定によって定義済みの定数が指定された、**\#インポート**ディレクティブです。
 
@@ -304,7 +305,7 @@ _variant_t vtMissingYours(DISP_E_PARAMNOTFOUND, VT_ERROR);
 ...vtMissing...; 
 ```
 
-## <a name="declaring-a-variant"></a>バリアント型 (Variant) の宣言
+### <a name="declaring-a-variant"></a>バリアント型を宣言します。
 
 Visual Basic では、バリアント型 ( **Variant** ) は次のように **Dim** ステートメントで宣言します。
 
@@ -315,11 +316,8 @@ Dim VariableName As Variant
 
 Visual C++ の型として変数を宣言**\_バリアント\_t**。 いくつかの回路図**\_バリアント\_t**の宣言を以下に示します。
 
-
 > [!NOTE]
-> <P>[!メモ] これらの宣言では、プログラムでコーディングする内容の概要のみを示しています。詳細については、後の例や Visual C++ のドキュメントを参照してください。</P>
-
-
+> [!メモ] これらの宣言では、プログラムでコーディングする内容の概要のみを示しています。詳細については、後の例や Visual C++ のドキュメントを参照してください。
 
 ```cpp 
  
@@ -329,7 +327,7 @@ _variant_t VariableName(value, VT_DATATYPE);
 _variant_t VariableName(interface * value, bool fAddRef = true); 
 ```
 
-## <a name="using-arrays-of-variants"></a>バリアント型 (Variant) の配列の使用
+### <a name="using-arrays-of-variants"></a>バリアントの配列を使用します。
 
 Visual Basic では、バリアント型 ( **Variant** ) の配列は **Dim** ステートメントを使用するか、または **Array** 関数を使用してコーディングできます。次にコード例を示します。
 
@@ -353,100 +351,96 @@ End Sub
 
 Visual C++ の例を次に使用される**SafeArray**を使用する、**\_バリアント\_t**。
 
-
 > [!NOTE]
-> <P>[!メモ] 次の注意事項は、コード例のコメント部分に対応しています。</P>
+> [!メモ] 次の注意事項は、コード例のコメント部分に対応しています。
 
+1. 既存のエラー処理機構を利用するために、もう一度、TESTHR() インライン関数を定義します。
 
-
-1.  既存のエラー処理機構を利用するために、もう一度、TESTHR() インライン関数を定義します。
-
-2.  必要なのは 1 次元配列のみであるため、汎用の **SAFEARRAYBOUND** 宣言と **SafeArrayCreate** 関数の代わりに **SafeArrayCreateVector** 関数を使用できます。次に、 **SafeArrayCreate** を使用した場合のコードを示します。
+2. 必要なのは 1 次元配列のみであるため、汎用の **SAFEARRAYBOUND** 宣言と **SafeArrayCreate** 関数の代わりに **SafeArrayCreateVector** 関数を使用できます。次に、 **SafeArrayCreate** を使用した場合のコードを示します。
     
-    ```cpp 
+   ```cpp 
      
      SAFEARRAYBOUND sabound[1]; 
      sabound[0].lLbound = 0; 
      sabound[0].cElements = 4; 
      pSa = SafeArrayCreate(VT_VARIANT, 1, sabound); 
-    ```
+   ```
 
-3.  列挙定数**adSchemaColumns**、によって識別されるスキーマは、次の 4 つの制約列に関連付けられている: テーブル\_カタログ、テーブル\_スキーマ、テーブル\_名、および列\_名です。 したがって、4 つの要素を持つバリアント型 ( **Variant** ) の値の配列が作成されます。 3 番目の列では、テーブルに対応する制約値にし、\_の名前が指定されています。 返される **Recordset** はいくつかの列で構成され、そのサブセットは制約列です。 返される各行に対する制約列の値は、対応する制約値と同じである必要があります。
+3. 列挙定数**adSchemaColumns**、によって識別されるスキーマは、次の 4 つの制約列に関連付けられている: テーブル\_カタログ、テーブル\_スキーマ、テーブル\_名、および列\_名です。 したがって、4 つの要素を持つバリアント型 ( **Variant** ) の値の配列が作成されます。 3 番目の列では、テーブルに対応する制約値にし、\_の名前が指定されています。 返される **Recordset** はいくつかの列で構成され、そのサブセットは制約列です。 返される各行に対する制約列の値は、対応する制約値と同じである必要があります。
 
-4.  ご存知の**Safearray**を見て驚かれるかもしれません**SafeArrayDestroy**() が終了する前に呼び出されません。 実際、 **SafeArrayDestroy**() を呼び出してここで例外が発生実行時。 理由は、vtCriteria のデストラクターが**VariantClear**() を呼び出すことと、**\_バリアント\_t** **SafeArray**を開放するには、スコープ外に出る。 **SafeArrayDestroy**を呼び出すことを手動でオフにすることがなく、**\_バリアント\_t**、デストラクターが無効な**SafeArray**ポインターをオフにしようとしていますが発生します。 **SafeArrayDestroy** を呼び出した場合、コードは次のようになります。
+4. ご存知の**Safearray**を見て驚かれるかもしれません**SafeArrayDestroy**() が終了する前に呼び出されません。 実際、 **SafeArrayDestroy**() を呼び出してここで例外が発生実行時。 理由は、vtCriteria のデストラクターが**VariantClear**() を呼び出すことと、**\_バリアント\_t** **SafeArray**を開放するには、スコープ外に出る。 **SafeArrayDestroy**を呼び出すことを手動でオフにすることがなく、**\_バリアント\_t**、デストラクターが無効な**SafeArray**ポインターをオフにしようとしていますが発生します。 **SafeArrayDestroy** を呼び出した場合、コードは次のようになります。
     
-    ```cpp 
+   ```cpp 
      
      TESTHR(SafeArrayDestroy(pSa)); 
      vtCriteria.vt = VT_EMPTY; 
      vtCriteria.parray = NULL; 
-    ```
+   ```
     
-    ただし、ことができるようにした方が簡単、**\_バリアント\_t** **SafeArray**を管理します。
+   ただし、ことができるようにした方が簡単、**\_バリアント\_t** **SafeArray**を管理します。
 
-<!-- end list -->
 
 ```cpp 
  
-#import "c:\Program Files\Common Files\System\ADO\msado15.dll" no_namespace rename("EOF", "EndOfFile") 
-#include <stdio.h> 
- 
-// Note 1 
-inline void TESTHR( HRESULT _hr ) 
- { if FAILED(_hr) _com_issue_error(_hr); } 
- 
-void main(void) 
-{ 
- CoInitialize(NULL); 
- try 
- { 
- _RecordsetPtr pRs("ADODB.Recordset"); 
- _ConnectionPtr pCn("ADODB.Connection"); 
- _variant_t vtTableName("authors"), 
- vtCriteria; 
- long ix[1]; 
- SAFEARRAY *pSa = NULL; 
- 
- pCn->Open("DSN=pubs;User ID=MyUserId;pwd=MyPassword;Provider=MSDASQL;", "", "", 
- adConnectUnspecified); 
-// Note 2, Note 3 
- pSa = SafeArrayCreateVector(VT_VARIANT, 1, 4); 
- if (!pSa) _com_issue_error(E_OUTOFMEMORY); 
- 
-// Specify TABLE_NAME in the third array element (index of 2). 
- 
- ix[0] = 2; 
- TESTHR(SafeArrayPutElement(pSa, ix, &vtTableName)); 
- 
-// There is no Variant constructor for a SafeArray, so manually set the 
-// type (SafeArray of Variant) and value (pointer to a SafeArray). 
- 
- vtCriteria.vt = VT_ARRAY | VT_VARIANT; 
- vtCriteria.parray = pSa; 
- 
- pRs = pCn->OpenSchema(adSchemaColumns, vtCriteria, vtMissing); 
- 
- long limit = pRs->GetFields()->Count; 
- for (long x = 0; x < limit; x++) 
- printf("%d: %s\n", x+1, 
- ((char*) pRs->GetFields()->Item[x]->Name)); 
-// Note 4 
- pRs->Close(); 
- pCn->Close(); 
- } 
- catch (_com_error &e) 
- { 
- printf("Error:\n"); 
- printf("Code = %08lx\n", e.Error()); 
- printf("Code meaning = %s\n", (char*) e.ErrorMessage()); 
- printf("Source = %s\n", (char*) e.Source()); 
- printf("Description = %s\n", (char*) e.Description()); 
- } 
- CoUninitialize(); 
-} 
+    #import "c:\Program Files\Common Files\System\ADO\msado15.dll" no_namespace rename("EOF", "EndOfFile") 
+    #include <stdio.h> 
+    
+    // Note 1 
+    inline void TESTHR( HRESULT _hr ) 
+    { if FAILED(_hr) _com_issue_error(_hr); } 
+    
+    void main(void) 
+    { 
+    CoInitialize(NULL); 
+    try 
+    { 
+    _RecordsetPtr pRs("ADODB.Recordset"); 
+    _ConnectionPtr pCn("ADODB.Connection"); 
+    _variant_t vtTableName("authors"), 
+    vtCriteria; 
+    long ix[1]; 
+    SAFEARRAY *pSa = NULL; 
+    
+    pCn->Open("DSN=pubs;User ID=MyUserId;pwd=MyPassword;Provider=MSDASQL;", "", "", 
+    adConnectUnspecified); 
+    // Note 2, Note 3 
+    pSa = SafeArrayCreateVector(VT_VARIANT, 1, 4); 
+    if (!pSa) _com_issue_error(E_OUTOFMEMORY); 
+    
+    // Specify TABLE_NAME in the third array element (index of 2). 
+    
+    ix[0] = 2; 
+    TESTHR(SafeArrayPutElement(pSa, ix, &vtTableName)); 
+    
+    // There is no Variant constructor for a SafeArray, so manually set the 
+    // type (SafeArray of Variant) and value (pointer to a SafeArray). 
+    
+    vtCriteria.vt = VT_ARRAY | VT_VARIANT; 
+    vtCriteria.parray = pSa; 
+    
+    pRs = pCn->OpenSchema(adSchemaColumns, vtCriteria, vtMissing); 
+    
+    long limit = pRs->GetFields()->Count; 
+    for (long x = 0; x < limit; x++) 
+    printf("%d: %s\n", x+1, 
+    ((char*) pRs->GetFields()->Item[x]->Name)); 
+    // Note 4 
+    pRs->Close(); 
+    pCn->Close(); 
+    } 
+    catch (_com_error &e) 
+    { 
+    printf("Error:\n"); 
+    printf("Code = %08lx\n", e.Error()); 
+    printf("Code meaning = %s\n", (char*) e.ErrorMessage()); 
+    printf("Source = %s\n", (char*) e.Source()); 
+    printf("Description = %s\n", (char*) e.Description()); 
+    } 
+    CoUninitialize(); 
+    } 
 ```
 
-## <a name="using-property-getputputref"></a>Get/Put/PutRef プロパティの使用
+### <a name="using-property-getputputref"></a>プロパティ取得、構造体、PutRef Put を使用します。
 
 Visual Basic では、プロパティが取得、割り当て、または参照を割り当てられるかどうかによって、プロパティの名前が修飾されることはありません。
 
@@ -469,17 +463,14 @@ Visual Basic では、プロパティが取得、割り当て、または参照�
 
 この Visual C++ の例は、**取得**/**に**/**PutRef。 プロパティ*。
 
-
 > [!NOTE]
 > [!メモ] 次の注意事項は、コード例のコメント部分に対応しています。
 
+1. 不足している文字列の引数の 2 つのフォームを使用して、次の使用例: 明示的な定数**strMissing**と一時領域を作成するコンパイラを使用する文字列**\_bstr\_t**の**Open**メソッドのスコープが存在します。
 
-
-1.  不足している文字列の引数の 2 つのフォームを使用して、次の使用例: 明示的な定数**strMissing**と一時領域を作成するコンパイラを使用する文字列**\_bstr\_t**の**Open**メソッドのスコープが存在します。
-
-2.  Rs のオペランドをキャストする必要はありません\>に PutRefActiveConnection(cn) (IDispatch \*) のオペランドの型が既にあるため (IDispatch \*)。
+2. Rs のオペランドをキャストする必要はありません\>に PutRefActiveConnection(cn) (IDispatch \*) のオペランドの型が既にあるため (IDispatch \*)。
     
-    ```cpp 
+   ```cpp 
      
     #import "c:\Program Files\Common Files\System\ADO\msado15.dll" no_namespace rename("EOF", "EndOfFile") 
     #include <stdio.h> 
@@ -524,9 +515,9 @@ Visual Basic では、プロパティが取得、割り当て、または参照�
      } 
      ::CoUninitialize(); 
     } 
-    ```
+   ```
 
-## <a name="using-getitemx-and-itemx"></a>GetItem(x) とアイテムを使用して\[x\]
+### <a name="using-getitemx-and-itemx"></a>GetItem(x) とアイテムを使用して\[x\]
 
 この Visual Basic の例では、**Item**() の標準構文と代替構文を示します。
 
@@ -551,15 +542,12 @@ End Sub
 
 この Visual C++ の例は、 **Item** を示します。
 
-
 > [!NOTE]
-> <P>[!メモ] 次の注意事項は、コード例のコメント部分に対応しています。</P>
+> [!メモ] 次の注意事項は、コード例のコメント部分に対応しています。
 
-
-
-1.  コレクションに **Item** を使用してアクセスした場合、適切なコンストラクターが呼び出されるように、インデックス **2** が **long** にキャストされる必要があります。
+1. コレクションに **Item** を使用してアクセスした場合、適切なコンストラクターが呼び出されるように、インデックス **2** が **long** にキャストされる必要があります。
     
-    ```cpp 
+   ```cpp 
      
     #import "c:\Program Files\Common Files\System\ADO\msado15.dll" no_namespace rename("EOF", "EndOfFile") 
     #include <stdio.h> 
@@ -600,23 +588,20 @@ End Sub
      } 
      ::CoUninitialize(); 
     } 
-    ```
+   ```
 
-## <a name="casting-ado-object-pointers-with-idispatch-"></a>(IDispatch \*) による ADO オブジェクト ポインターのキャスト
+### <a name="casting-ado-object-pointers-with-idispatch-"></a>(IDispatch \*) による ADO オブジェクト ポインターのキャスト
 
 次の Visual C++ の例では、(IDispatch \*) を使用した ADO オブジェクト ポイントのキャストを示します。
 
-
 > [!NOTE]
-> <P>[!メモ] 次の注意事項は、コード例のコメント部分に対応しています。</P>
+> [!メモ] 次の注意事項は、コード例のコメント部分に対応しています。
 
+1. 明示的にコーディングされたバリアント型 ( **Variant** ) で、開いている **Connection** オブジェクトを指定します。 キャスト (IDispatch \*)、適切なコンス トラクターが呼び出されるようにします。 また、2 番目を明示的に設定**\_バリアント\_t**パラメーター、既定値**は true**、 **Recordset::Open**操作が終了したときに、オブジェクトの参照カウントが正しくありますので。
 
-
-1.  明示的にコーディングされたバリアント型 ( **Variant** ) で、開いている **Connection** オブジェクトを指定します。 キャスト (IDispatch \*)、適切なコンス トラクターが呼び出されるようにします。 また、2 番目を明示的に設定**\_バリアント\_t**パラメーター、既定値**は true**、 **Recordset::Open**操作が終了したときに、オブジェクトの参照カウントが正しくありますので。
-
-2.  式 (\_bstr\_t)、キャストではありませんが、**\_バリアント\_t**を抽出するための演算子、 ** \_bstr\_t** **値**によって返される**バリアント型**の文字列。 式 (char\*)、キャストではありませんが、 ** \_bstr\_t**にカプセル化された文字列へのポインターを抽出するための演算子、 ** \_bstr\_t**オブジェクト。 コードのこのセクションでは、いくつかの便利な動作を示します**\_バリアント\_t**と**\_bstr\_t**演算子です。
+2. 式 (\_bstr\_t)、キャストではありませんが、**\_バリアント\_t**を抽出するための演算子、 ** \_bstr\_t** **値**によって返される**バリアント型**の文字列。 式 (char\*)、キャストではありませんが、 ** \_bstr\_t**にカプセル化された文字列へのポインターを抽出するための演算子、 ** \_bstr\_t**オブジェクト。 コードのこのセクションでは、いくつかの便利な動作を示します**\_バリアント\_t**と**\_bstr\_t**演算子です。
     
-    ```cpp 
+   ```cpp 
      
     #import "c:\Program Files\Common Files\System\ADO\msado15.dll" no_namespace rename("EOF", "EndOfFile") 
      
@@ -655,5 +640,5 @@ End Sub
      } 
     ::CoUninitialize(); 
     } 
-    ```
+   ```
 

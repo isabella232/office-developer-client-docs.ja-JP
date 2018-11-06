@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm11103
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: fb857e7eda7860150feb7af07babcc2574c3972f
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: dfd7877ff1db960afcbf864f1e72ff01b12e8f09
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929049"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998953"
 ---
 # <a name="restorewindow-macro-action"></a>RestoreWindow マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
 **RestoreWindow**アクションを使用すると、元のサイズを最大化または最小化されたウィンドウを復元します。
 
-
 > [!NOTE]
-> <P>[!メモ] このアクションは、Visual Basic Editor のコード ウィンドウには適用できません。コード ウィンドウへの影響の詳細については、 <STRONG>WindowState</STRONG> プロパティのトピックを参照してください。</P>
-
-
+> [!メモ] このアクションは、Visual Basic Editor のコード ウィンドウには適用できません。コード ウィンドウへの影響の詳細については、 **WindowState** プロパティのトピックを参照してください。
 
 ## <a name="setting"></a>設定値
 
