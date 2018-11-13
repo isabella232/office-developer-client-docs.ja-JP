@@ -362,34 +362,34 @@ items:
           items:
           - name: Access における変更点
             href: access/desktop-database-reference/changes-in-access.md
-          - name: Microsoft Access のテーブル、フォーム、レポートの変換
-            href: access/desktop-database-reference/convert-microsoft-access-tables-forms-and-reports.md
           - name: DAO コードを ADO に変換する
             href: access/desktop-database-reference/converting-dao-code-to-ado.md
+          - name: テーブル、フォーム、レポートを変換する
+            href: access/desktop-database-reference/convert-microsoft-access-tables-forms-and-reports.md
         - name: リボン
           href: access/desktop-database-reference/ribbon.md
           items:
-          - name: Access の起動時にリボンを非表示にする
-            href: access/desktop-database-reference/how-to-hide-the-ribbon-when-access-starts.md
           - name: フォームまたはレポートにカスタム リボンを適用する
             href: access/desktop-database-reference/how-to-apply-a-custom-ribbon-to-a-form-or-report.md
           - name: Access の起動時にカスタム リボンを適用する
             href: access/desktop-database-reference/how-to-apply-a-custom-ribbon-when-starting-access.md
+          - name: Access の起動時にリボンを非表示にする
+            href: access/desktop-database-reference/how-to-hide-the-ribbon-when-access-starts.md
         - name: その他のアプリケーションとの連携
           href: access/desktop-database-reference/working-with-other-applications-access.md
           items:
           - name: Microsoft Access によるオートメーション
             href: access/desktop-database-reference/automation-with-microsoft-access.md
+          - name: ActiveX データ オブジェクトを使う
+            href: access/desktop-database-reference/using-activex-data-objects.md
           - name: Microsoft Access を DDE サーバーとして使う
             href: access/desktop-database-reference/use-microsoft-access-as-a-dde-server.md
-          - name: ActiveX データ オブジェクトの使用
-            href: access/desktop-database-reference/using-activex-data-objects.md
         - name: フォーム、レポート、コントロールのプロパティを設定する
           href: access/desktop-database-reference/set-form-report-and-control-properties.md
-      - name: Microsoft データ アクセス オブジェクト リファレンス
+      - name: Microsoft Data Access Objects リファレンス
         href: access/desktop-database-reference/microsoft-data-access-objects-reference.md
         items:
-        - name: ComplexType オブジェクト
+        - name: ComplexType
           href: access/desktop-database-reference/complextype-object-reference-dao.md
           items:
           - name: ComplexType オブジェクト
@@ -401,7 +401,7 @@ items:
             items:
             - name: Fields プロパティ
               href: access/desktop-database-reference/complextype-fields-property-dao.md
-        - name: Connection オブジェクト
+        - name: Connection
           href: access/desktop-database-reference/connection-object-reference-dao.md
           items:
           - name: Connection オブジェクト
@@ -444,7 +444,7 @@ items:
               href: access/desktop-database-reference/connection-execute-method-dao.md
             - name: OpenRecordset メソッド
               href: access/desktop-database-reference/connection-openrecordset-method-dao.md
-        - name: Connections オブジェクト
+        - name: Connections
           href: access/desktop-database-reference/connections-object-reference-dao.md
           items:
           - name: Connections コレクション
@@ -461,7 +461,7 @@ items:
             items:
             - name: Refresh メソッド
               href: access/desktop-database-reference/connections-refresh-method-dao.md
-        - name: Container オブジェクト
+        - name: Container
           href: access/desktop-database-reference/container-object-reference-dao.md
           items:
           - name: Container オブジェクト
@@ -477,7 +477,7 @@ items:
               href: access/desktop-database-reference/container-name-property-dao.md
             - name: Properties プロパティ
               href: access/desktop-database-reference/container-properties-property-dao.md
-        - name: Containers オブジェクト
+        - name: Containers
           href: access/desktop-database-reference/containers-object-reference-dao.md
           items:
           - name: Containers オブジェクト
@@ -494,7 +494,7 @@ items:
             items:
             - name: Refresh メソッド
               href: access/desktop-database-reference/containers-refresh-method-dao.md
-        - name: Database オブジェクト
+        - name: Database
           href: access/desktop-database-reference/database-object-reference-dao.md
           items:
           - name: Database オブジェクト
@@ -563,7 +563,7 @@ items:
               href: access/desktop-database-reference/database-populatepartial-method-dao.md
             - name: Synchronize メソッド
               href: access/desktop-database-reference/database-synchronize-method-dao.md
-        - name: Databases オブジェクト
+        - name: Databases
           href: access/desktop-database-reference/databases-object-reference-dao.md
           items:
           - name: Databases コレクション
@@ -580,7 +580,7 @@ items:
             items:
             - name: Refresh メソッド
               href: access/desktop-database-reference/databases-refresh-method-dao.md
-        - name: DBEngine オブジェクト
+        - name: DBEngine
           href: access/desktop-database-reference/dbengine-object-reference-dao.md
           items:
           - name: DBEngine オブジェクト
@@ -633,7 +633,7 @@ items:
               href: access/desktop-database-reference/dbengine-rollback-method-dao.md
             - name: SetOption メソッド
               href: access/desktop-database-reference/dbengine-setoption-method-dao.md
-        - name: Document オブジェクト
+        - name: Document
           href: access/desktop-database-reference/document-object-reference-dao.md
           items:
           - name: Document オブジェクト
@@ -658,7 +658,7 @@ items:
             items:
             - name: CreateProperty メソッド
               href: access/desktop-database-reference/document-createproperty-method-dao.md
-        - name: Documents オブジェクト
+        - name: Documents
           href: access/desktop-database-reference/documents-object-reference-dao.md
           items:
           - name: Documents コレクション
@@ -675,7 +675,7 @@ items:
             items:
             - name: Refresh メソッド
               href: access/desktop-database-reference/documents-refresh-method-dao.md
-        - name: Error オブジェクト
+        - name: Error
           href: access/desktop-database-reference/error-object-reference-dao.md
           items:
           - name: Error オブジェクト
@@ -691,7 +691,7 @@ items:
               href: access/desktop-database-reference/error-number-property-dao.md
             - name: Source プロパティ
               href: access/desktop-database-reference/error-source-property-dao.md
-        - name: Errors オブジェクト
+        - name: Errors
           href: access/desktop-database-reference/errors-object-reference-dao.md
           items:
           - name: Errors コレクション
@@ -708,7 +708,7 @@ items:
             items:
             - name: Refresh メソッド
               href: access/desktop-database-reference/errors-refresh-method-dao.md
-        - name: Field オブジェクト
+        - name: Field
           href: access/desktop-database-reference/field-object-reference-dao.md
           items:
           - name: Field オブジェクト
@@ -769,7 +769,7 @@ items:
               href: access/desktop-database-reference/field-createproperty-method-dao.md
             - name: GetChunk メソッド
               href: access/desktop-database-reference/field-getchunk-method-dao.md
-        - name: Field2 オブジェクト
+        - name: Field2
           href: access/desktop-database-reference/field2-object-reference-dao.md
           items:
           - name: Field2 オブジェクト
@@ -842,7 +842,7 @@ items:
               href: access/desktop-database-reference/field2-loadfromfile-method-dao.md
             - name: SaveToFile メソッド
               href: access/desktop-database-reference/field2-savetofile-method-dao.md
-        - name: Fields オブジェクト
+        - name: Fields
           href: access/desktop-database-reference/fields-object-reference-dao.md
           items:
           - name: Fields コレクション
@@ -863,7 +863,7 @@ items:
               href: access/desktop-database-reference/fields-delete-method-dao.md
             - name: Refresh メソッド
               href: access/desktop-database-reference/fields-refresh-method-dao.md
-        - name: Index オブジェクト
+        - name: Index
           href: access/desktop-database-reference/index-object-reference-dao.md
           items:
           - name: Index オブジェクト
@@ -900,7 +900,7 @@ items:
               href: access/desktop-database-reference/index-createfield-method-dao.md
             - name: CreateProperty メソッド
               href: access/desktop-database-reference/index-createproperty-method-dao.md
-        - name: Indexes オブジェクト
+        - name: Indexes
           href: access/desktop-database-reference/indexes-object-reference-dao.md
           items:
           - name: Indexes コレクション
@@ -921,7 +921,7 @@ items:
               href: access/desktop-database-reference/indexes-delete-method-dao.md
             - name: Refresh メソッド
               href: access/desktop-database-reference/indexes-refresh-method-dao.md
-        - name: Parameter オブジェクト
+        - name: Parameter
           href: access/desktop-database-reference/parameter-object-reference-dao.md
           items:
           - name: Parameter オブジェクト
@@ -941,7 +941,7 @@ items:
               href: access/desktop-database-reference/parameter-type-property-dao.md
             - name: Value プロパティ
               href: access/desktop-database-reference/parameter-value-property-dao.md
-        - name: Parameters オブジェクト
+        - name: Parameters
           href: access/desktop-database-reference/parameters-object-reference-dao.md
           items:
           - name: Parameters コレクション
@@ -958,7 +958,7 @@ items:
             items:
             - name: Refresh メソッド
               href: access/desktop-database-reference/parameters-refresh-method-dao.md
-        - name: Properties オブジェクト
+        - name: Properties
           href: access/desktop-database-reference/properties-object-reference-dao.md
           items:
           - name: Properties コレクション
@@ -979,7 +979,7 @@ items:
               href: access/desktop-database-reference/properties-delete-method-dao.md
             - name: Refresh メソッド
               href: access/desktop-database-reference/properties-refresh-method-dao.md
-        - name: Property オブジェクト
+        - name: Property
           href: access/desktop-database-reference/property-object-reference-dao.md
           items:
           - name: Property オブジェクト
@@ -999,7 +999,7 @@ items:
               href: access/desktop-database-reference/property-type-property-dao.md
             - name: Value プロパティ
               href: access/desktop-database-reference/property-value-property-dao.md
-        - name: QueryDef オブジェクト
+        - name: QueryDef
           href: access/desktop-database-reference/querydef-object-reference-dao.md
           items:
           - name: QueryDef オブジェクト
@@ -1056,7 +1056,7 @@ items:
               href: access/desktop-database-reference/querydef-execute-method-dao.md
             - name: OpenRecordset メソッド
               href: access/desktop-database-reference/querydef-openrecordset-method-dao.md
-        - name: QueryDefs オブジェクト
+        - name: QueryDefs
           href: access/desktop-database-reference/querydefs-object-reference-dao.md
           items:
           - name: QueryDefs コレクション
@@ -1077,7 +1077,7 @@ items:
               href: access/desktop-database-reference/querydefs-delete-method-dao.md
             - name: Refresh メソッド
               href: access/desktop-database-reference/querydefs-refresh-method-dao.md
-        - name: Recordset オブジェクト
+        - name: Recordset
           href: access/desktop-database-reference/recordset-object-reference-dao.md
           items:
           - name: Recordset オブジェクト
@@ -1208,7 +1208,7 @@ items:
               href: access/desktop-database-reference/recordset-seek-method-dao.md
             - name: Update メソッド
               href: access/desktop-database-reference/recordset-update-method-dao.md
-        - name: Recordset2 オブジェクト
+        - name: Recordset2
           href: access/desktop-database-reference/recordset2-object-reference-dao.md
           items:
           - name: Recordset2 オブジェクト
@@ -1339,7 +1339,7 @@ items:
               href: access/desktop-database-reference/recordset2-seek-method-dao.md
             - name: Update メソッド
               href: access/desktop-database-reference/recordset2-update-method-dao.md
-        - name: Recordsets オブジェクト
+        - name: Recordsets
           href: access/desktop-database-reference/recordsets-object-reference-dao.md
           items:
           - name: Recordsets コレクション
@@ -1356,7 +1356,7 @@ items:
             items:
             - name: Refresh メソッド
               href: access/desktop-database-reference/recordsets-refresh-method-dao.md
-        - name: Relation オブジェクト
+        - name: Relation
           href: access/desktop-database-reference/relation-object-reference-dao.md
           items:
           - name: Relation オブジェクト
@@ -1385,7 +1385,7 @@ items:
             items:
             - name: CreateField メソッド
               href: access/desktop-database-reference/relation-createfield-method-dao.md
-        - name: Relations オブジェクト
+        - name: Relations
           href: access/desktop-database-reference/relations-object-reference-dao.md
           items:
           - name: Relations コレクション
@@ -1406,7 +1406,7 @@ items:
               href: access/desktop-database-reference/relations-delete-method-dao.md
             - name: Refresh メソッド
               href: access/desktop-database-reference/relations-refresh-method-dao.md
-        - name: TableDef オブジェクト
+        - name: TableDef
           href: access/desktop-database-reference/tabledef-object-reference-dao.md
           items:
           - name: TableDef オブジェクト
@@ -1459,7 +1459,7 @@ items:
               href: access/desktop-database-reference/tabledef-openrecordset-method-dao.md
             - name: RefreshLink メソッド
               href: access/desktop-database-reference/tabledef-refreshlink-method-dao.md
-        - name: TableDefs オブジェクト
+        - name: TableDefs
           href: access/desktop-database-reference/tabledefs-object-reference-dao.md
           items:
           - name: TableDefs コレクション
@@ -1480,7 +1480,7 @@ items:
               href: access/desktop-database-reference/tabledefs-delete-method-dao.md
             - name: Refresh メソッド
               href: access/desktop-database-reference/tabledefs-refresh-method-dao.md
-        - name: Workspace オブジェクト
+        - name: Workspace
           href: access/desktop-database-reference/workspace-object-reference-dao.md
           items:
           - name: Workspace オブジェクト
@@ -1523,7 +1523,7 @@ items:
               href: access/desktop-database-reference/workspace-opendatabase-method-dao.md
             - name: Rollback メソッド
               href: access/desktop-database-reference/workspace-rollback-method-dao.md
-        - name: Workspaces オブジェクト
+        - name: Workspaces
           href: access/desktop-database-reference/workspaces-object-reference-dao.md
           items:
           - name: Workspaces コレクション
@@ -1603,15 +1603,11 @@ items:
         href: access/desktop-database-reference/microsoft-activex-data-objects-reference.md
         items:
         - name: ADO プログラマ ガイド
-          href: access/desktop-database-reference/ado-programmer-s-guide-topics.md
+          href: access/desktop-database-reference/ado-programmer-s-guide.md
           items:
-          - name: ADO プログラマ ガイド
-            href: access/desktop-database-reference/ado-programmer-s-guide.md
           - name: ADO の紹介
-            href: access/desktop-database-reference/introduction-to-ado.md
+            href: access/desktop-database-reference/introduction-to-ado-programming.md
             items:
-            - name: 概要
-              href: access/desktop-database-reference/introduction-to-ado-programming.md
             - name: ADO の新機能
               href: access/desktop-database-reference/what-s-new-in-ado.md
             - name: 前提条件
@@ -1627,58 +1623,44 @@ items:
             - name: ADO 用語集
               href: access/desktop-database-reference/ado-glossary.md
           - name: 'セクション I: ActiveX データ オブジェクト'
-            href: access/desktop-database-reference/section-i-activex-data-objects-access.md
+            href: access/desktop-database-reference/section-i-activex-data-objects.md
             items:
-            - name: 'セクション I: ActiveX データ オブジェクト'
-              href: access/desktop-database-reference/section-i-activex-data-objects.md
             - name: '第 1 章: ADO の基本事項'
-              href: access/desktop-database-reference/chapter-1-ado-fundamentals-ado.md
+              href: access/desktop-database-reference/chapter-1-ado-fundamentals.md
               items:
-              - name: '第 1 章: ADO の基本事項'
-                href: access/desktop-database-reference/chapter-1-ado-fundamentals.md
               - name: ADO でできること
                 href: access/desktop-database-reference/what-you-can-do-with-ado.md
               - name: エラー
                 href: access/desktop-database-reference/errors.md
               - name: 'HelloData: 簡単な ADO アプリケーション'
-                href: access/desktop-database-reference/hellodata-a-simple-ado-application-ado.md
+                href: access/desktop-database-reference/hellodata-a-simple-ado-application.md
                 items:
-                - name: 'HelloData: 簡単な ADO アプリケーション'
-                  href: access/desktop-database-reference/hellodata-a-simple-ado-application.md
                 - name: HelloData の詳細
                   href: access/desktop-database-reference/hellodata-details.md
                 - name: HelloData コード
                   href: access/desktop-database-reference/hellodata-code.md
               - name: OLE DB プロバイダー
-                href: access/desktop-database-reference/ole-db-providers-ado.md
+                href: access/desktop-database-reference/ole-db-providers.md
                 items:
-                - name: OLE DB プロバイダー
-                  href: access/desktop-database-reference/ole-db-providers.md
                 - name: データ プロバイダー
                   href: access/desktop-database-reference/data-providers.md
                 - name: サービス プロバイダーとコンポーネント
                   href: access/desktop-database-reference/service-providers-and-components.md
             - name: '第 2 章: データの取得'
-              href: access/desktop-database-reference/chapter-2-getting-data-ado.md
+              href: access/desktop-database-reference/chapter-2-getting-data.md
               items:
-              - name: '第 2 章: データの取得'
-                href: access/desktop-database-reference/chapter-2-getting-data.md
               - name: 接続の作成
                 href: access/desktop-database-reference/making-a-connection.md
               - name: Connection オブジェクトの使用
-                href: access/desktop-database-reference/using-the-connection-object-reference-ado.md
+                href: access/desktop-database-reference/using-the-connection-object-access.md
                 items:
-                - name: Connection オブジェクトの使用
-                  href: access/desktop-database-reference/using-the-connection-object-access.md
                 - name: 接続文字列の作成
                   href: access/desktop-database-reference/creating-the-connection-string.md
                 - name: トランザクションの制御
                   href: access/desktop-database-reference/controlling-transactions.md
               - name: Command オブジェクトの使用
-                href: access/desktop-database-reference/using-the-command-object-reference-ado.md
+                href: access/desktop-database-reference/using-the-command-object-access.md
                 items:
-                - name: Command オブジェクトの使用
-                  href: access/desktop-database-reference/using-the-command-object-access.md
                 - name: Command オブジェクトの概要
                   href: access/desktop-database-reference/command-object-overview.md
                 - name: 簡単なコマンドの作成と実行
@@ -1690,29 +1672,20 @@ items:
                 - name: 名前付きコマンド
                   href: access/desktop-database-reference/named-commands.md
               - name: レコードセットへのデータの追加
-                href: access/desktop-database-reference/adding-data-to-a-recordset-ado.md
-                items:
-                - name: レコードセットへのデータの追加
-                  href: access/desktop-database-reference/adding-data-to-a-recordset.md
+                href: access/desktop-database-reference/adding-data-to-a-recordset.md
             - name: '第 3 章: データの検査'
-              href: access/desktop-database-reference/chapter-3-examining-data-ado.md
+              href: access/desktop-database-reference/chapter-3-examining-data.md
               items:
-              - name: '第 3 章: データの検査'
-                href: access/desktop-database-reference/chapter-3-examining-data.md
-              - name: 現在のレコードの位置
-                href: access/desktop-database-reference/locating-the-current-record-ado.md
+              - name: 現在のレコードの検索
+                href: access/desktop-database-reference/locating-the-current-record.md
                 items:
-                - name: 現在のレコードの位置
-                  href: access/desktop-database-reference/locating-the-current-record.md
                 - name: 行のカウント
                   href: access/desktop-database-reference/counting-rows.md
                 - name: レコードセットの制限
                   href: access/desktop-database-reference/the-limits-of-a-recordset.md
               - name: データ内の移動
-                href: access/desktop-database-reference/navigating-through-the-data-ado.md
+                href: access/desktop-database-reference/navigating-through-the-data.md
                 items:
-                - name: データ内の移動
-                  href: access/desktop-database-reference/navigating-through-the-data.md
                 - name: レコードへのジャンプ
                   href: access/desktop-database-reference/jumping-to-a-record.md
                 - name: レコードセットでのその他の移動方法
@@ -1724,10 +1697,8 @@ items:
                 - name: レコードセットの配置
                   href: access/desktop-database-reference/recordset-positioning.md
               - name: レコードセットの構造について
-                href: access/desktop-database-reference/understanding-recordset-structure-ado.md
+                href: access/desktop-database-reference/understanding-recordset-structure.md
                 items:
-                - name: レコードセットの構造について
-                  href: access/desktop-database-reference/understanding-recordset-structure.md
                 - name: Fields コレクション
                   href: access/desktop-database-reference/the-fields-collection.md
                 - name: Field オブジェクト
@@ -1735,10 +1706,8 @@ items:
                 - name: レコードセットの利用
                   href: access/desktop-database-reference/working-with-recordsets.md
             - name: '第 4 章: データの編集'
-              href: access/desktop-database-reference/chapter-4-editing-data-ado.md
+              href: access/desktop-database-reference/chapter-4-editing-data.md
               items:
-              - name: '第 4 章: データの編集'
-                href: access/desktop-database-reference/chapter-4-editing-data.md
               - name: 既存のレコードの編集
                 href: access/desktop-database-reference/editing-existing-records.md
               - name: サポート内容の決定
@@ -1748,10 +1717,8 @@ items:
               - name: '他の方法: SQL ステートメントの使用'
                 href: access/desktop-database-reference/alternatives-using-sql-statements.md
               - name: レコードの追加
-                href: access/desktop-database-reference/adding-records-ado.md
+                href: access/desktop-database-reference/adding-records.md
                 items:
-                - name: レコードの追加
-                  href: access/desktop-database-reference/adding-records.md
                 - name: 複数のフィールドの追加
                   href: access/desktop-database-reference/adding-multiple-fields.md
                 - name: 編集モードの決定
@@ -1759,24 +1726,18 @@ items:
                 - name: イミディエイト モードとバッチ モードでの AddNew の使用
                   href: access/desktop-database-reference/using-addnew-in-immediate-and-batch-modes.md
             - name: '第 5 章: データの更新および永続化'
-              href: access/desktop-database-reference/chapter-5-updating-and-persisting-data-ado.md
+              href: access/desktop-database-reference/chapter-5-updating-and-persisting-data.md
               items:
-              - name: '第 5 章: データの更新および永続化'
-                href: access/desktop-database-reference/chapter-5-updating-and-persisting-data.md
               - name: データの更新
-                href: access/desktop-database-reference/updating-data-ado.md
+                href: access/desktop-database-reference/updating-data.md
                 items:
-                - name: データの更新
-                  href: access/desktop-database-reference/updating-data.md
                 - name: イミディエイト モード
                   href: access/desktop-database-reference/immediate-mode.md
                 - name: トランザクション処理
                   href: access/desktop-database-reference/transaction-processing.md
                 - name: バッチ モード
-                  href: access/desktop-database-reference/batch-mode-ado.md
+                  href: access/desktop-database-reference/batch-mode.md
                   items:
-                  - name: バッチ モード
-                    href: access/desktop-database-reference/batch-mode.md
                   - name: '更新の送信: UpdateBatch'
                     href: access/desktop-database-reference/sending-the-updates-updatebatch.md
                   - name: 更新済みのレコードのフィルター処理
@@ -1790,19 +1751,15 @@ items:
                   - name: 'JOINed の結果の更新: 固有のテーブル'
                     href: access/desktop-database-reference/updating-joined-results-unique-table.md
               - name: データの永続化
-                href: access/desktop-database-reference/persisting-data-ado.md
+                href: access/desktop-database-reference/persisting-data.md
                 items:
-                - name: データの永続化
-                  href: access/desktop-database-reference/persisting-data.md
                 - name: レコードセットの永続化に関する詳細情報
                   href: access/desktop-database-reference/more-about-recordset-persistence.md
                 - name: フィルター済みのレコードセットと階層レコードセットの永続化
                   href: access/desktop-database-reference/persisting-filtered-and-hierarchical-recordsets.md
                 - name: XML 形式でのレコードの永続化
-                  href: access/desktop-database-reference/persisting-records-in-xml-format-ado.md
+                  href: access/desktop-database-reference/persisting-records-in-xml-format.md
                   items:
-                  - name: XML 形式でのレコードの永続化
-                    href: access/desktop-database-reference/persisting-records-in-xml-format.md
                   - name: XML 永続化形式
                     href: access/desktop-database-reference/xml-persistence-format.md
                   - name: 名前空間
@@ -1822,23 +1779,10 @@ items:
                   - name: XML セキュリティに関する考慮事項
                     href: access/desktop-database-reference/xml-security-considerations.md
                   - name: XML レコードセットの永続化シナリオ
-                    href: access/desktop-database-reference/xml-recordset-persistence-scenario-topics.md
-                    items:
-                    - name: XML レコードセットの永続化シナリオ
-                      href: access/desktop-database-reference/xml-recordset-persistence-scenario.md
-                    - name: '手順 1: アプリケーションのセットアップ'
-                      href: access/desktop-database-reference/step-1-set-up-the-application.md
-                    - name: '手順 2: データの取得'
-                      href: access/desktop-database-reference/step-2-get-the-data.md
-                    - name: '手順 3: データの送信'
-                      href: access/desktop-database-reference/step-3-send-the-data.md
-                    - name: '手順 4: データの受信および表示'
-                      href: access/desktop-database-reference/step-4-receive-and-display-the-data.md
+                    href: access/desktop-database-reference/xml-recordset-persistence-scenario.md
             - name: '第 6 章: エラー処理'
-              href: access/desktop-database-reference/chapter-6-error-handlinge-ado.md
+              href: access/desktop-database-reference/chapter-6-error-handling.md
               items:
-              - name: '第 6 章: エラー処理'
-                href: access/desktop-database-reference/chapter-6-error-handling.md
               - name: ADO エラー
                 href: access/desktop-database-reference/ado-errors.md
               - name: ADO エラー リファレンス
@@ -1849,24 +1793,20 @@ items:
                 href: access/desktop-database-reference/field-related-error-information.md
               - name: レコードセットに関連するエラー情報
                 href: access/desktop-database-reference/recordset-related-error-information.md
-              - name: エラーを予測する
+              - name: エラーの予測
                 href: access/desktop-database-reference/anticipating-errors.md
               - name: 他の言語でのエラー処理
-                href: access/desktop-database-reference/handling-errors-in-other-languages-ado.md
+                href: access/desktop-database-reference/handling-errors-in-other-languages.md
                 items:
                 - name: JScript でのエラー処理
                   href: access/desktop-database-reference/handling-errors-in-jscript.md
-                - name: 他の言語でのエラー処理
-                  href: access/desktop-database-reference/handling-errors-in-other-languages.md
                 - name: VBScript でのエラー処理
                   href: access/desktop-database-reference/handling-errors-in-vbscript.md
                 - name: Visual C++ でのエラー処理
                   href: access/desktop-database-reference/handling-errors-in-visual-c.md
             - name: '第 7 章: ADO イベントの処理'
-              href: access/desktop-database-reference/chapter-7-handling-ado-events-ado.md
+              href: access/desktop-database-reference/chapter-7-handling-ado-events.md
               items:
-              - name: '第 7 章: ADO イベントの処理'
-                href: access/desktop-database-reference/chapter-7-handling-ado-events.md
               - name: ADO イベント ハンドラーの概要
                 href: access/desktop-database-reference/ado-event-handler-summary.md
               - name: イベントの種類
@@ -1891,10 +1831,8 @@ items:
                 - name: ADO/WFC
                   href: access/desktop-database-reference/ado-wfc.md
             - name: '第 8 章: カーソルとロックについて'
-              href: access/desktop-database-reference/chapter-8-understanding-cursors-and-locks-ado.md
+              href: access/desktop-database-reference/chapter-8-understanding-cursors-and-locks.md
               items:
-              - name: '第 8 章: カーソルとロックについて'
-                href: access/desktop-database-reference/chapter-8-understanding-cursors-and-locks.md
               - name: カーソルとは
                 href: access/desktop-database-reference/what-is-a-cursor.md
               - name: カーソル位置の重要性
@@ -1905,18 +1843,9 @@ items:
                 href: access/desktop-database-reference/using-cachesize.md
               - name: カーソルとロックの特性
                 href: access/desktop-database-reference/cursor-and-lock-characteristics.md
-              - name: ロックとは
-                href: access/desktop-database-reference/what-is-a-lock-ado.md
-                items:
-                - name: ロックとは
-                  href: access/desktop-database-reference/what-is-a-lock.md
-                - name: ロックの種類
-                  href: access/desktop-database-reference/types-of-locks.md
               - name: カーソルの種類
-                href: access/desktop-database-reference/types-of-cursors-ado.md
+                href: access/desktop-database-reference/types-of-cursors.md
                 items:
-                - name: カーソルの種類
-                  href: access/desktop-database-reference/types-of-cursors.md
                 - name: 順方向専用カーソル
                   href: access/desktop-database-reference/forward-only-cursors.md
                 - name: 動的カーソル
@@ -1925,11 +1854,13 @@ items:
                   href: access/desktop-database-reference/static-cursors.md
                 - name: キーセット カーソル
                   href: access/desktop-database-reference/keyset-cursors.md
+              - name: ロックとは
+                href: access/desktop-database-reference/what-is-a-lock.md
+              - name: ロックの種類
+                href: access/desktop-database-reference/types-of-locks.md
             - name: '第 9 章: データ シェイプ'
-              href: access/desktop-database-reference/chapter-9-data-shaping-ado.md
+              href: access/desktop-database-reference/chapter-9-data-shaping.md
               items:
-              - name: '第 9 章: データ シェイプ'
-                href: access/desktop-database-reference/chapter-9-data-shaping.md
               - name: データ シェイプに必要なプロバイダー
                 href: access/desktop-database-reference/required-providers-for-data-shaping.md
               - name: Shape COMPUTE 句
@@ -1943,10 +1874,8 @@ items:
               - name: Visual Basic for Applications の関数
                 href: access/desktop-database-reference/visual-basic-for-applications-functions.md
               - name: Shape APPEND 句
-                href: access/desktop-database-reference/shape-append-clause-ado.md
+                href: access/desktop-database-reference/shape-append-clause.md
                 items:
-                - name: Shape APPEND 句
-                  href: access/desktop-database-reference/shape-append-clause.md
                 - name: 非パラメーター化コマンドの操作
                   href: access/desktop-database-reference/operation-of-non-parameterized-commands.md
                 - name: パラメーター化コマンドの操作
@@ -1955,13 +1884,9 @@ items:
                   href: access/desktop-database-reference/hybrid-commands.md
                 - name: Shape COMPUTE 句の挿入
                   href: access/desktop-database-reference/intervening-shape-compute-clauses.md
-              - name: データ シェイプの概要
-                href: access/desktop-database-reference/data-shaping-summary-ado.md
+              - name: データ シェイプ
+                href: access/desktop-database-reference/data-shaping.md
                 items:
-                - name: データ シェイプの概要
-                  href: access/desktop-database-reference/data-shaping-summary.md
-                - name: データ シェイプ
-                  href: access/desktop-database-reference/data-shaping.md
                 - name: リシェイプ
                   href: access/desktop-database-reference/reshaping.md
                 - name: 孫の集計
@@ -1971,19 +1896,15 @@ items:
                 - name: 階層レコードセットの永続化
                   href: access/desktop-database-reference/persisting-hierarchical-recordsets.md
               - name: 一般的な Shape コマンド
-                href: access/desktop-database-reference/shape-commands-in-general-ado.md
+                href: access/desktop-database-reference/shape-commands-in-general.md
                 items:
-                - name: 一般的な Shape コマンド
-                  href: access/desktop-database-reference/shape-commands-in-general.md
                 - name: 集計関数、CALC 関数、NEW キーワード
                   href: access/desktop-database-reference/aggregate-functions-the-calc-function-and-the-new-keyword.md
                 - name: 基になるデータ プロバイダーへのコマンドの発行
                   href: access/desktop-database-reference/issuing-commands-to-the-underlying-data-provider.md
             - name: '第 10 章: レコードとストリーム'
-              href: access/desktop-database-reference/chapter-10-records-and-streams-ado.md
+              href: access/desktop-database-reference/chapter-10-records-and-streams.md
               items:
-              - name: '第 10 章: レコードとストリーム'
-                href: access/desktop-database-reference/chapter-10-records-and-streams.md
               - name: セッションと永続化
                 href: access/desktop-database-reference/streams-and-persistence.md
               - name: レコードとプロバイダー供給のフィールド
@@ -1991,35 +1912,18 @@ items:
               - name: 絶対 URL と相対 URL
                 href: access/desktop-database-reference/absolute-and-relative-urls.md
               - name: Internet Publishing 用の ADO の使用
-                href: access/desktop-database-reference/using-ado-for-internet-publishing-ado.md
+                href: access/desktop-database-reference/using-ado-for-internet-publishing.md
                 items:
-                - name: Internet Publishing 用の ADO の使用
-                  href: access/desktop-database-reference/using-ado-for-internet-publishing.md
                 - name: OLE DB Provider for Internet Publishing
                   href: access/desktop-database-reference/the-ole-db-provider-for-internet-publishing.md
                 - name: Internet Publishing シナリオ
-                  href: access/desktop-database-reference/internet-publishing-scenario-topics.md
-                  items:
-                  - name: Internet Publishing シナリオ
-                    href: access/desktop-database-reference/internet-publishing-scenario.md
-                  - name: '手順 1: Visual Studio プロジェクトのセットアップ'
-                    href: access/desktop-database-reference/step-1-set-up-the-visual-basic-project.md
-                  - name: '手順 2: Main リスト ボックスの初期化'
-                    href: access/desktop-database-reference/step-2-initialize-the-main-list-box.md
-                  - name: '手順 3: Fields リスト ボックスの設定'
-                    href: access/desktop-database-reference/step-3-populate-the-fields-list-box.md
-                  - name: '手順 4: Details テキスト ボックスの設定'
-                    href: access/desktop-database-reference/step-4-populate-the-details-text-box.md
+                  href: access/desktop-database-reference/internet-publishing-scenario.md
           - name: 'セクション II: リモート データ サービス'
-            href: access/desktop-database-reference/section-ii-remote-data-service-access.md
+            href: access/desktop-database-reference/section-ii-remote-data-service.md
             items:
-            - name: 'セクション II: リモート データ サービス'
-              href: access/desktop-database-reference/section-ii-remote-data-service.md
             - name: '第 11 章: RDS の基本事項'
-              href: access/desktop-database-reference/chapter-11-rds-fundamentals-ado.md
+              href: access/desktop-database-reference/chapter-11-rds-fundamentals.md
               items:
-              - name: '第 11 章: RDS の基本事項'
-                href: access/desktop-database-reference/chapter-11-rds-fundamentals.md
               - name: リモート データ アクセスのソリューション
                 href: access/desktop-database-reference/solutions-for-remote-data-access.md
               - name: 基本的な RDS プログラミング モデル
@@ -2044,31 +1948,10 @@ items:
                 - name: アドレス帳の移動ボタン
                   href: access/desktop-database-reference/address-book-navigation-buttons.md
             - name: '第 12 章: RDS チュートリアル'
-              href: access/desktop-database-reference/chapter-12-rds-tutorial-ado.md
-              items:
-              - name: '第 12 章: RDS チュートリアル'
-                href: access/desktop-database-reference/chapter-12-rds-tutorial.md
-              - name: '手順 1: サーバー プログラムの指定 (RDS チュートリアル)'
-                href: access/desktop-database-reference/step-1-specify-a-server-program-rds-tutorial.md
-              - name: '手順 2: サーバー プログラムの呼び出し (RDS チュートリアル)'
-                href: access/desktop-database-reference/step-2-invoke-the-server-program-rds-tutorial.md
-              - name: '手順 3: サーバーによるレコードセットの取得 (RDS チュートリアル)'
-                href: access/desktop-database-reference/step-3-server-obtains-a-recordset-rds-tutorial.md
-              - name: '手順 4: サーバーによりレコードセットが返される (RDS チュートリアル)'
-                href: access/desktop-database-reference/step-4-server-returns-the-recordset-rds-tutorial.md
-              - name: '手順 5: DataControl を使用可能な状態にする (RDS チュートリアル)'
-                href: access/desktop-database-reference/step-5-datacontrol-is-made-usable-rds-tutorial.md
-              - name: '手順 6: サーバーへの変更の送信 (RDS チュートリアル)'
-                href: access/desktop-database-reference/step-6-changes-are-sent-to-the-server-rds-tutorial.md
-              - name: RDS チュートリアル (VBScript)
-                href: access/desktop-database-reference/rds-tutorial-vbscript.md
-              - name: RDS チュートリアル (Visual J++)
-                href: access/desktop-database-reference/rds-tutorial-visual-j.md
+              href: access/desktop-database-reference/chapter-12-rds-tutorial.md
             - name: '第 13 章: RDS の使用とセキュリティ'
-              href: access/desktop-database-reference/chapter-13-rds-usage-and-security-ado.md
+              href: access/desktop-database-reference/chapter-13-rds-usage-and-security.md
               items:
-              - name: '第 13 章: RDS の使用とセキュリティ'
-                href: access/desktop-database-reference/chapter-13-rds-usage-and-security.md
               - name: RDS の構成
                 href: access/desktop-database-reference/configuring-rds.md
               - name: Web サーバー コンピューターへの特権 (RDS ゲスト特権) の付与 [ADO]
@@ -2090,19 +1973,15 @@ items:
               - name: DataFactory をセーフ モードまたは無制限モードに設定する
                 href: access/desktop-database-reference/configuring-datafactory-for-safe-or-unrestricted-modes.md
               - name: RDS 関連技術の使用
-                href: access/desktop-database-reference/using-related-technologies-with-rds-ado.md
+                href: access/desktop-database-reference/using-related-technologies-with-rds.md
                 items:
-                - name: RDS 関連技術の使用
-                  href: access/desktop-database-reference/using-related-technologies-with-rds.md
                 - name: RDS を ODBC 接続プールと共に使用する
                   href: access/desktop-database-reference/using-rds-with-odbc-connection-pooling.md
                 - name: コンポーネント サービスでのビジネス オブジェクトの実行
                   href: access/desktop-database-reference/running-business-objects-in-component-services.md
               - name: DataFactory のカスタマイズ
-                href: access/desktop-database-reference/datafactory-customization-ado.md
+                href: access/desktop-database-reference/datafactory-customization.md
                 items:
-                - name: DataFactory のカスタマイズ
-                  href: access/desktop-database-reference/datafactory-customization.md
                 - name: カスタマイズ ファイルについて
                   href: access/desktop-database-reference/understanding-the-customization-file.md
                 - name: カスタマイズ ファイルの Connect セクション
@@ -2114,32 +1993,26 @@ items:
                 - name: カスタマイズ ファイルの Logs セクション
                   href: access/desktop-database-reference/customization-file-logs-section.md
               - name: RDS のトラブルシューティング
-                href: access/desktop-database-reference/troubleshooting-rds-ado.md
+                href: access/desktop-database-reference/troubleshooting-rds.md
                 items:
-                - name: RDS のトラブルシューティング
-                  href: access/desktop-database-reference/troubleshooting-rds.md
                 - name: Windows 2000 での RDS の構成
                   href: access/desktop-database-reference/configuring-rds-on-windows-2000.md
                 - name: 'インターネット サーバー エラー: アクセスが拒否されました'
                   href: access/desktop-database-reference/internet-server-error-access-denied.md
                 - name: RDS によって返される「ストリームが読み取れません」のエラー
                   href: access/desktop-database-reference/rds-returns-stream-not-read-error.md
-                - name: 反復可能読み取り分離レベルのときにデッドロックが発生する
+                - name: 読み取りが繰り返し可能な分離レベルでのデッドロック
                   href: access/desktop-database-reference/deadlocks-with-read-repeatable-isolation-level.md
                 - name: 十分な TempDB 領域の確保
                   href: access/desktop-database-reference/ensuring-sufficient-tempdb-space.md
                 - name: ログ ファイルの使用領域の最小化
                   href: access/desktop-database-reference/minimizing-log-file-space-usage.md
           - name: 'セクション III: ADO (多次元) (ADO MD)'
-            href: access/desktop-database-reference/section-iii-ado-multidimensional-ado-md-access.md
+            href: access/desktop-database-reference/section-iii-ado-multidimensional-ado-md.md
             items:
-            - name: 'セクション III: ADO (多次元) (ADO MD)'
-              href: access/desktop-database-reference/section-iii-ado-multidimensional-ado-md.md
             - name: '第 14 章: ADO MD の基本事項'
-              href: access/desktop-database-reference/chapter-14-ado-md-fundamentals-ado.md
+              href: access/desktop-database-reference/chapter-14-ado-md-fundamentals.md
               items:
-              - name: '第 14 章: ADO MD の基本事項'
-                href: access/desktop-database-reference/chapter-14-ado-md-fundamentals.md
               - name: 多次元スキーマとデータの概要
                 href: access/desktop-database-reference/overview-of-multidimensional-schemas-and-data.md
               - name: 多次元データの使用
@@ -2149,27 +2022,19 @@ items:
               - name: ADO MD を使用したプログラミング
                 href: access/desktop-database-reference/programming-with-ado-md.md
           - name: 'セクション IV: データ定義言語およびセキュリティの ADO 拡張機能 (ADOX)'
-            href: access/desktop-database-reference/section-iv-ado-extensions-for-data-definition-language-and-security-adox-access.md
+            href: access/desktop-database-reference/section-iv-ado-extensions-for-data-definition-language-and-security-adox.md
             items:
-            - name: 'セクション IV: データ定義言語およびセキュリティの ADO 拡張機能 (ADOX)'
-              href: access/desktop-database-reference/section-iv-ado-extensions-for-data-definition-language-and-security-adox.md
             - name: '第 15 章: ADOX の基本事項'
-              href: access/desktop-database-reference/chapter-15-adox-fundamentals-ado.md
+              href: access/desktop-database-reference/chapter-15-adox-fundamentals.md
               items:
-              - name: '第 15 章: ADOX の基本事項'
-                href: access/desktop-database-reference/chapter-15-adox-fundamentals.md
               - name: ADOX のプロバイダー サポート
                 href: access/desktop-database-reference/provider-support-for-adox.md
           - name: 'セクション V: 付録'
-            href: access/desktop-database-reference/section-v-appendixes-access.md
+            href: access/desktop-database-reference/section-v-appendixes.md
             items:
-            - name: 'セクション V: 付録'
-              href: access/desktop-database-reference/section-v-appendixes.md
             - name: '付録 A: プロバイダー'
-              href: access/desktop-database-reference/appendix-a-providers-ado.md
+              href: access/desktop-database-reference/appendix-a-providers.md
               items:
-              - name: '付録 A: プロバイダー'
-                href: access/desktop-database-reference/appendix-a-providers.md
               - name: Microsoft OLE DB Provider for ODBC
                 href: access/desktop-database-reference/microsoft-ole-db-provider-for-odbc.md
               - name: Microsoft OLE DB Provider for Microsoft Indexing Service
@@ -2193,10 +2058,8 @@ items:
               - name: Microsoft Cursor Service for OLE DB (ADO サービス コンポーネント)
                 href: access/desktop-database-reference/microsoft-cursor-service-for-ole-db-ado-service-component.md
             - name: '付録 B: ADO エラー'
-              href: access/desktop-database-reference/appendix-b-ado-errors-ado.md
+              href: access/desktop-database-reference/appendix-b-ado-errors.md
               items:
-              - name: '付録 B: ADO エラー'
-                href: access/desktop-database-reference/appendix-b-ado-errors.md
               - name: ADO のエラー コード
                 href: access/desktop-database-reference/ado-error-codes.md
               - name: DataControl のエラー コード
@@ -2206,26 +2069,20 @@ items:
               - name: インターネット インフォメーション サービスのエラー コード
                 href: access/desktop-database-reference/internet-information-services-error-codes.md
             - name: '付録 C: ADO を使用したプログラミング'
-              href: access/desktop-database-reference/appendix-c-programming-with-ado-ado.md
+              href: access/desktop-database-reference/appendix-c-programming-with-ado.md
               items:
-              - name: '付録 C: ADO を使用したプログラミング'
-                href: access/desktop-database-reference/appendix-c-programming-with-ado.md
               - name: Microsoft Visual Basic での ADO の使用
                 href: access/desktop-database-reference/using-ado-with-microsoft-visual-basic.md
               - name: スクリプトの言語での ADO の使用
-                href: access/desktop-database-reference/using-ado-with-scripting-languages-topics.md
+                href: access/desktop-database-reference/using-ado-with-scripting-languages.md
                 items:
-                - name: スクリプトの言語での ADO の使用
-                  href: access/desktop-database-reference/using-ado-with-scripting-languages.md
                 - name: JScript ADO プログラミング
                   href: access/desktop-database-reference/jscript-ado-programming.md
                 - name: VBScript ADO プログラミング
                   href: access/desktop-database-reference/vbscript-ado-programming.md
               - name: Microsoft Visual C++ での ADO の使用
-                href: access/desktop-database-reference/using-ado-with-microsoft-visual-c-topics.md
+                href: access/desktop-database-reference/using-ado-with-microsoft-visual-c.md
                 items:
-                - name: Microsoft Visual C++ での ADO の使用
-                  href: access/desktop-database-reference/using-ado-with-microsoft-visual-c.md
                 - name: Visual C++ ADO プログラミング
                   href: access/desktop-database-reference/visual-c-ado-programming.md
                 - name: ADO 用 Visual C++ Extensions
@@ -2237,10 +2094,8 @@ items:
                 - name: Visual C++ Extensions の例
                   href: access/desktop-database-reference/visual-c-extensions-example.md
               - name: Microsoft Visual J++ での ADO の使用
-                href: access/desktop-database-reference/using-ado-with-microsoft-visual-j-topics.md
+                href: access/desktop-database-reference/using-ado-with-microsoft-visual-j.md
                 items:
-                - name: Microsoft Visual J++ での ADO の使用
-                  href: access/desktop-database-reference/using-ado-with-microsoft-visual-j.md
                 - name: ADO/WFC プログラミング
                   href: access/desktop-database-reference/ado-wfc-programming.md
                 - name: Java タイプ ライブラリ ウィザードの使用
@@ -2250,241 +2105,230 @@ items:
                 - name: ADO Java クラス ラッパー
                   href: access/desktop-database-reference/ado-java-class-wrappers.md
             - name: '付録 D: ADO サンプル'
-              href: access/desktop-database-reference/appendix-d-ado-samples-ado.md
-              items:
-              - name: '付録 D: ADO サンプル'
-                href: access/desktop-database-reference/appendix-d-ado-samples.md
+              href: access/desktop-database-reference/appendix-d-ado-samples.md
         - name: ADO プログラマ リファレンス
           href: access/desktop-database-reference/ado-programmer-s-reference-topics.md
           items:
           - name: ADO API リファレンス
-            href: access/desktop-database-reference/ado-api-reference-topics.md
+            href: access/desktop-database-reference/ado-api-reference.md
             items:
-            - name: ADO API リファレンス
-              href: access/desktop-database-reference/ado-api-reference.md
-            - name: ADO オブジェクトとインターフェイス
-              href: access/desktop-database-reference/ado-objects-and-interfaces-reference.md
+            - name: ADO のオブジェクトとインターフェイス
+              href: access/desktop-database-reference/ado-objects-and-interfaces.md
               items:
-              - name: ADO オブジェクトとインターフェイス
-                href: access/desktop-database-reference/ado-objects-and-interfaces.md
-              - name: ADORecordConstruction インターフェイス (ADO)
+              - name: ADORecordConstruction インターフェイス
                 href: access/desktop-database-reference/adorecordconstruction-interface-ado.md
-              - name: ADORecordsetConstruction インターフェイス (ADO)
+              - name: ADORecordsetConstruction インターフェイス
                 href: access/desktop-database-reference/adorecordsetconstruction-interface-ado.md
-              - name: Command オブジェクト (ADO)
+              - name: Command
                 href: access/desktop-database-reference/command-object-ado-reference.md
                 items:
-                - name: Command オブジェクト (ADO)
+                - name: Command オブジェクト
                   href: access/desktop-database-reference/command-object-ado.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/command-properties-methods-and-events-ado.md
-              - name: Connection オブジェクト (ADO)
+              - name: Connection
                 href: access/desktop-database-reference/connection-object-ado-reference.md
                 items:
-                - name: Connection オブジェクト (ADO)
+                - name: Connection オブジェクト
                   href: access/desktop-database-reference/connection-object-ado.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/connection-properties-methods-and-events-ado.md
-              - name: Error オブジェクト (ADO)
+              - name: Error
                 href: access/desktop-database-reference/error-object-ado-reference.md
                 items:
-                - name: Error オブジェクト (ADO)
+                - name: Error オブジェクト
                   href: access/desktop-database-reference/error-object-ado.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/error-properties-methods-and-events-ado.md
-              - name: Field オブジェクト (ADO)
+              - name: Field
                 href: access/desktop-database-reference/field-object-ado-reference.md
                 items:
-                - name: Field オブジェクト (ADO)
+                - name: Field オブジェクト
                   href: access/desktop-database-reference/field-object-ado.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/field-properties-methods-and-events-ado.md
-              - name: Parameter オブジェクト (ADO)
+              - name: Parameter
                 href: access/desktop-database-reference/parameter-object-ado-reference.md
                 items:
-                - name: Parameter オブジェクト (ADO)
+                - name: Parameter オブジェクト
                   href: access/desktop-database-reference/parameter-object-ado.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/parameter-properties-methods-and-events-ado.md
-              - name: Property オブジェクト (ADO)
+              - name: Property
                 href: access/desktop-database-reference/property-object-ado-reference.md
                 items:
-                - name: Property オブジェクト (ADO)
+                - name: Property オブジェクト
                   href: access/desktop-database-reference/property-object-ado.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/property-properties-methods-and-events-ado.md
-              - name: Record オブジェクト (ADO)
+              - name: Record
                 href: access/desktop-database-reference/record-object-ado-reference.md
                 items:
-                - name: Record オブジェクト (ADO)
+                - name: Record オブジェクト
                   href: access/desktop-database-reference/record-object-ado.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/record-properties-methods-and-events-ado.md
-              - name: Recordset オブジェクト (ADO)
+              - name: Recordset
                 href: access/desktop-database-reference/recordset-object-ado-reference.md
                 items:
-                - name: Recordset オブジェクト (ADO)
+                - name: Recordset オブジェクト
                   href: access/desktop-database-reference/recordset-object-ado.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/recordset-properties-methods-and-events-ado.md
-              - name: Stream オブジェクト (ADO)
+              - name: Stream
                 href: access/desktop-database-reference/stream-object-ado-reference.md
                 items:
-                - name: Stream オブジェクト (ADO)
+                - name: Stream オブジェクト
                   href: access/desktop-database-reference/stream-object-ado.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/stream-properties-methods-and-events-ado.md
-            - name: ADO コレクション
-              href: access/desktop-database-reference/ado-collections-reference.md
+            - name: ADO のコレクション
+              href: access/desktop-database-reference/ado-collections.md
               items:
-              - name: ADO コレクション
-                href: access/desktop-database-reference/ado-collections.md
-              - name: Errors コレクション (ADO)
+              - name: Errors
                 href: access/desktop-database-reference/errors-collection-ado-reference.md
                 items:
-                - name: Errors コレクション (ADO)
+                - name: Errors コレクション
                   href: access/desktop-database-reference/errors-collection-ado.md
                 - name: Errors コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/errors-collection-properties-methods-and-events.md
-              - name: Fields コレクション (ADO)
+              - name: Fields
                 href: access/desktop-database-reference/fields-collection-ado-reference.md
                 items:
-                - name: Fields コレクション (ADO)
+                - name: Fields コレクション
                   href: access/desktop-database-reference/fields-collection-ado.md
                 - name: Fields コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/fields-collection-properties-methods-and-events.md
-              - name: Parameters コレクション (ADO)
+              - name: Parameters
                 href: access/desktop-database-reference/parameters-collection-ado-reference.md
                 items:
-                - name: Parameters コレクション (ADO)
+                - name: Parameters コレクション
                   href: access/desktop-database-reference/parameters-collection-ado.md
                 - name: Parameters コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/parameters-collection-properties-methods-and-events.md
-              - name: Properties コレクション (ADO)
+              - name: Properties
                 href: access/desktop-database-reference/properties-collection-ado-reference.md
                 items:
-                - name: Properties コレクション (ADO)
+                - name: Properties コレクション
                   href: access/desktop-database-reference/properties-collection-ado.md
                 - name: Properties コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/properties-collection-properties-methods-and-events.md
             - name: ADO プロパティ
-              href: access/desktop-database-reference/ado-properties-reference.md
+              href: access/desktop-database-reference/ado-properties.md
               items:
-              - name: ADO プロパティ
-                href: access/desktop-database-reference/ado-properties.md
-              - name: AbsolutePage プロパティ (ADO)
+              - name: AbsolutePage プロパティ
                 href: access/desktop-database-reference/absolutepage-property-ado.md
-              - name: AbsolutePosition プロパティ (ADO)
+              - name: AbsolutePosition プロパティ
                 href: access/desktop-database-reference/absoluteposition-property-ado.md
-              - name: ActiveCommand プロパティ (ADO)
+              - name: ActiveCommand プロパティ
                 href: access/desktop-database-reference/activecommand-property-ado.md
-              - name: ActiveConnection プロパティ (ADO)
+              - name: ActiveConnection プロパティ
                 href: access/desktop-database-reference/activeconnection-property-ado.md
-              - name: ActualSize プロパティ (ADO)
+              - name: ActualSize プロパティ
                 href: access/desktop-database-reference/actualsize-property-ado.md
-              - name: Attributes プロパティ (ADO)
+              - name: Attributes プロパティ
                 href: access/desktop-database-reference/attributes-property-ado.md
-              - name: BOF プロパティと EOF プロパティ (ADO)
+              - name: BOF プロパティと EOF プロパティ
                 href: access/desktop-database-reference/bof-eof-properties-ado.md
-              - name: Bookmark プロパティ (ADO)
+              - name: Bookmark プロパティ
                 href: access/desktop-database-reference/bookmark-property-ado.md
-              - name: CacheSize プロパティ (ADO)
+              - name: CacheSize プロパティ
                 href: access/desktop-database-reference/cachesize-property-ado.md
-              - name: Chapter プロパティ (ADO)
+              - name: Chapter プロパティ
                 href: access/desktop-database-reference/chapter-property-ado.md
-              - name: Charset プロパティ (ADO)
+              - name: CharSet プロパティ
                 href: access/desktop-database-reference/charset-property-ado.md
-              - name: CommandText プロパティ (ADO)
+              - name: CommandText プロパティ
                 href: access/desktop-database-reference/commandtext-property-ado.md
-              - name: CommandTimeout プロパティ (ADO)
+              - name: CommandTimeout プロパティ
                 href: access/desktop-database-reference/commandtimeout-property-ado.md
-              - name: CommandType プロパティ (ADO)
+              - name: CommandType プロパティ
                 href: access/desktop-database-reference/commandtype-property-ado.md
-              - name: ConnectionString プロパティ (ADO)
+              - name: ConnectionString プロパティ
                 href: access/desktop-database-reference/connectionstring-property-ado.md
-              - name: ConnectionTimeout プロパティ (ADO)
+              - name: ConnectionTimeout プロパティ
                 href: access/desktop-database-reference/connectiontimeout-property-ado.md
-              - name: Count プロパティ (ADO)
+              - name: Count プロパティ
                 href: access/desktop-database-reference/count-property-ado.md
-              - name: CursorLocation プロパティ (ADO)
+              - name: CursorLocation プロパティ
                 href: access/desktop-database-reference/cursorlocation-property-ado.md
-              - name: CursorType プロパティ (ADO)
+              - name: CursorType プロパティ
                 href: access/desktop-database-reference/cursortype-property-ado.md
-              - name: DataMember プロパティ (ADO)
+              - name: DataMember プロパティ
                 href: access/desktop-database-reference/datamember-property-ado.md
-              - name: DataSource プロパティ (ADO)
+              - name: DataSource プロパティ
                 href: access/desktop-database-reference/datasource-property-ado.md
-              - name: DefaultDatabase プロパティ (ADO)
+              - name: DefaultDatabase プロパティ
                 href: access/desktop-database-reference/defaultdatabase-property-ado.md
-              - name: DefinedSize プロパティ (ADO)
+              - name: DefinedSize プロパティ
                 href: access/desktop-database-reference/definedsize-property-ado.md
-              - name: Description プロパティ (ADO)
+              - name: Description プロパティ
                 href: access/desktop-database-reference/description-property-ado.md
-              - name: Direction プロパティ (ADO)
+              - name: Direction プロパティ
                 href: access/desktop-database-reference/direction-property-ado.md
-              - name: EditMode プロパティ (ADO)
+              - name: EditMode プロパティ
                 href: access/desktop-database-reference/editmode-property-ado.md
-              - name: EOS プロパティ (ADO)
+              - name: EOS プロパティ
                 href: access/desktop-database-reference/eos-property-ado.md
-              - name: Filter プロパティ (ADO)
+              - name: Filter プロパティ
                 href: access/desktop-database-reference/filter-property-ado.md
-              - name: HelpContext プロパティと HelpFile プロパティ (ADO)
+              - name: HelpContext プロパティと HelpFile プロパティ
                 href: access/desktop-database-reference/helpcontext-helpfile-properties-ado.md
-              - name: Index プロパティ (ADO)
+              - name: Index プロパティ
                 href: access/desktop-database-reference/index-property-ado.md
-              - name: IsolationLevel プロパティ (ADO)
+              - name: IsolationLevel プロパティ
                 href: access/desktop-database-reference/isolationlevel-property-ado.md
-              - name: Item プロパティ (ADO)
+              - name: Item プロパティ
                 href: access/desktop-database-reference/item-property-ado.md
-              - name: LineSeparator プロパティ (ADO)
+              - name: LineSeparator プロパティ
                 href: access/desktop-database-reference/lineseparator-property-ado.md
-              - name: LockType プロパティ (ADO)
+              - name: LockType プロパティ
                 href: access/desktop-database-reference/locktype-property-ado.md
-              - name: MarshalOptions プロパティ (ADO)
+              - name: MarshalOptions プロパティ
                 href: access/desktop-database-reference/marshaloptions-property-ado.md
-              - name: MaxRecords プロパティ (ADO)
+              - name: MaxRecords プロパティ
                 href: access/desktop-database-reference/maxrecords-property-ado.md
-              - name: Mode プロパティ (ADO)
+              - name: Mode プロパティ
                 href: access/desktop-database-reference/mode-property-ado.md
-              - name: Name プロパティ (ADO)
+              - name: Name プロパティ
                 href: access/desktop-database-reference/name-property-ado.md
-              - name: NativeError プロパティ (ADO)
+              - name: NativeError プロパティ
                 href: access/desktop-database-reference/nativeerror-property-ado.md
-              - name: Number プロパティ (ADO)
+              - name: Number プロパティ
                 href: access/desktop-database-reference/number-property-ado.md
-              - name: NumericScale プロパティ (ADO)
+              - name: NumericScale プロパティ
                 href: access/desktop-database-reference/numericscale-property-ado.md
-              - name: OriginalValue プロパティ (ADO)
+              - name: OriginalValue プロパティ
                 href: access/desktop-database-reference/originalvalue-property-ado.md
-              - name: PageCount プロパティ (ADO)
+              - name: PageCount プロパティ
                 href: access/desktop-database-reference/pagecount-property-ado.md
-              - name: PageSize プロパティ (ADO)
+              - name: PageSize プロパティ
                 href: access/desktop-database-reference/pagesize-property-ado.md
-              - name: ParentRow プロパティ (ADO)
+              - name: ParentRow プロパティ
                 href: access/desktop-database-reference/parentrow-property-ado.md
-              - name: ParentURL プロパティ (ADO)
+              - name: ParentURL プロパティ
                 href: access/desktop-database-reference/parenturl-property-ado.md
-              - name: Position プロパティ (ADO)
+              - name: Position プロパティ
                 href: access/desktop-database-reference/position-property-ado.md
-              - name: Precision プロパティ (ADO)
+              - name: Precision プロパティ
                 href: access/desktop-database-reference/precision-property-ado.md
-              - name: Prepared プロパティ (ADO)
+              - name: Prepared プロパティ
                 href: access/desktop-database-reference/prepared-property-ado.md
-              - name: Provider プロパティ (ADO)
+              - name: Provider プロパティ
                 href: access/desktop-database-reference/provider-property-ado.md
-              - name: RecordCount プロパティ (ADO)
+              - name: RecordCount プロパティ
                 href: access/desktop-database-reference/recordcount-property-ado.md
-              - name: RecordType プロパティ (ADO)
+              - name: RecordType プロパティ
                 href: access/desktop-database-reference/recordtype-property-ado.md
-              - name: Row プロパティ (ADO)
+              - name: Row プロパティ
                 href: access/desktop-database-reference/row-property-ado.md
-              - name: RowPosition プロパティ (ADO)
+              - name: RowPosition プロパティ
                 href: access/desktop-database-reference/rowposition-property-ado.md
-              - name: Rowset プロパティ (ADO)
+              - name: Rowset プロパティ
                 href: access/desktop-database-reference/rowset-property-ado.md
-              - name: Size プロパティ (ADO)
+              - name: Size プロパティ
                 href: access/desktop-database-reference/size-property-ado.md
-              - name: Sort プロパティ (ADO)
+              - name: Sort プロパティ
                 href: access/desktop-database-reference/sort-property-ado.md
               - name: Source プロパティ (ADO Error)
                 href: access/desktop-database-reference/source-property-ado-error.md
@@ -2492,107 +2336,103 @@ items:
                 href: access/desktop-database-reference/source-property-ado-record.md
               - name: Source プロパティ (ADO Recordset)
                 href: access/desktop-database-reference/source-property-ado-recordset.md
-              - name: SQLState プロパティ (ADO)
+              - name: SQLState プロパティ
                 href: access/desktop-database-reference/sqlstate-property-ado.md
-              - name: State プロパティ (ADO)
+              - name: State プロパティ
                 href: access/desktop-database-reference/state-property-ado.md
-              - name: StayInSync プロパティ (ADO)
-                href: access/desktop-database-reference/stayinsync-property-ado.md
               - name: Status プロパティ (ADO Field)
                 href: access/desktop-database-reference/status-property-ado-field.md
               - name: Status プロパティ (ADO Recordset)
                 href: access/desktop-database-reference/status-property-ado-recordset.md
-              - name: Type プロパティ (ADO)
+              - name: StayInSync プロパティ
+                href: access/desktop-database-reference/stayinsync-property-ado.md
+              - name: Type プロパティ
                 href: access/desktop-database-reference/type-property-ado.md
               - name: Type プロパティ (ADO Stream)
                 href: access/desktop-database-reference/type-property-ado-stream.md
-              - name: UnderlyingValue プロパティ (ADO)
+              - name: UnderlyingValue プロパティ
                 href: access/desktop-database-reference/underlyingvalue-property-ado.md
-              - name: Value プロパティ (ADO)
+              - name: Value プロパティ
                 href: access/desktop-database-reference/value-property-ado.md
-              - name: Version プロパティ (ADO)
+              - name: Version プロパティ
                 href: access/desktop-database-reference/version-property-ado.md
             - name: ADO の動的プロパティ
-              href: access/desktop-database-reference/ado-dynamic-properties-reference.md
+              href: access/desktop-database-reference/ado-dynamic-properties.md
               items:
-              - name: ADO の動的プロパティ
-                href: access/desktop-database-reference/ado-dynamic-properties.md
               - name: ADO の動的プロパティ インデックス
                 href: access/desktop-database-reference/ado-dynamic-property-index.md
-              - name: Optimize プロパティ -- 動的 (ADO)
+              - name: Optimize プロパティ
                 href: access/desktop-database-reference/optimize-property-dynamic-ado.md
-              - name: Prompt プロパティ -- 動的 (ADO)
+              - name: Prompt プロパティ
                 href: access/desktop-database-reference/prompt-property-dynamic-ado.md
-              - name: Reshape Name プロパティ -- 動的 (ADO)
+              - name: Reshape Name プロパティ
                 href: access/desktop-database-reference/reshape-name-property-dynamic-ado.md
-              - name: Resync Command プロパティ -- 動的 (ADO)
+              - name: Resync Command プロパティ
                 href: access/desktop-database-reference/resync-command-property-dynamic-ado.md
-              - name: Unique Table プロパティ、Unique Schema プロパティ、Unique Catalog プロパティ -- 動的 (ADO)
+              - name: Unique Table プロパティ、Unique Schema プロパティ、Unique Catalog プロパティ
                 href: access/desktop-database-reference/unique-table-unique-schema-unique-catalog-properties-dynamic-ado.md
-              - name: Update Resync プロパティ -- 動的 (ADO)
+              - name: Update Resync プロパティ
                 href: access/desktop-database-reference/update-resync-property-dynamic-ado.md
-            - name: ADO メソッド
-              href: access/desktop-database-reference/ado-methods-reference.md
+            - name: ADO のメソッド
+              href: access/desktop-database-reference/ado-methods.md
               items:
-              - name: ADO メソッド
-                href: access/desktop-database-reference/ado-methods.md
-              - name: AddNew メソッド (ADO)
+              - name: AddNew メソッド
                 href: access/desktop-database-reference/addnew-method-ado.md
-              - name: Append メソッド (ADO)
+              - name: Append メソッド
                 href: access/desktop-database-reference/append-method-ado.md
-              - name: AppendChunk メソッド (ADO)
+              - name: AppendChunk メソッド
                 href: access/desktop-database-reference/appendchunk-method-ado.md
-              - name: BeginTrans メソッド、CommitTrans メソッド、RollbackTrans メソッド (ADO)
+              - name: BeginTrans メソッド、CommitTrans メソッド、RollbackTrans メソッド
                 href: access/desktop-database-reference/begintrans-committrans-and-rollbacktrans-methods-ado.md
-              - name: Cancel メソッド (ADO)
+              - name: Cancel メソッド
                 href: access/desktop-database-reference/cancel-method-ado.md
-              - name: CancelBatch メソッド (ADO)
+              - name: CancelBatch メソッド
                 href: access/desktop-database-reference/cancelbatch-method-ado.md
-              - name: CancelUpdate メソッド (ADO)
+              - name: CancelUpdate メソッド
                 href: access/desktop-database-reference/cancelupdate-method-ado.md
-              - name: Clear メソッド (ADO)
+              - name: Clear メソッド
                 href: access/desktop-database-reference/clear-method-ado.md
-              - name: Clone メソッド (ADO)
+              - name: Clone メソッド
                 href: access/desktop-database-reference/clone-method-ado.md
-              - name: Close メソッド (ADO)
+              - name: Close メソッド
                 href: access/desktop-database-reference/close-method-ado.md
-              - name: CompareBookmarks メソッド (ADO)
+              - name: CompareBookmarks メソッド
                 href: access/desktop-database-reference/comparebookmarks-method-ado.md
-              - name: CopyRecord メソッド (ADO)
+              - name: CopyRecord メソッド
                 href: access/desktop-database-reference/copyrecord-method-ado.md
-              - name: CopyTo メソッド (ADO)
+              - name: CopyTo メソッド
                 href: access/desktop-database-reference/copyto-method-ado.md
-              - name: CreateParameter メソッド (ADO)
+              - name: CreateParameter メソッド
                 href: access/desktop-database-reference/createparameter-method-ado.md
               - name: Delete メソッド (ADO Fields コレクション)
                 href: access/desktop-database-reference/delete-method-ado-fields-collection.md
               - name: Delete メソッド (ADO Parameters コレクション)
                 href: access/desktop-database-reference/delete-method-ado-parameters-collection.md
-              - name: Delete メソッド (ADO レコードセット)
+              - name: Delete メソッド (ADO Recordset)
                 href: access/desktop-database-reference/delete-method-ado-recordset.md
-              - name: DeleteRecord メソッド (ADO)
+              - name: DeleteRecord メソッド
                 href: access/desktop-database-reference/deleterecord-method-ado.md
-              - name: Find メソッド (ADO)
+              - name: Find メソッド
                 href: access/desktop-database-reference/find-method-ado.md
-              - name: Flush メソッド (ADO)
+              - name: Flush メソッド
                 href: access/desktop-database-reference/flush-method-ado.md
-              - name: GetChildren メソッド (ADO)
+              - name: GetChildren メソッド
                 href: access/desktop-database-reference/getchildren-method-ado.md
-              - name: GetChunk メソッド (ADO)
+              - name: GetChunk メソッド
                 href: access/desktop-database-reference/getchunk-method-ado.md
-              - name: GetRows メソッド (ADO)
+              - name: GetRows メソッド
                 href: access/desktop-database-reference/getrows-method-ado.md
-              - name: GetString メソッド (ADO)
+              - name: GetString メソッド
                 href: access/desktop-database-reference/getstring-method-ado.md
-              - name: LoadFromFile メソッド (ADO)
+              - name: LoadFromFile メソッド
                 href: access/desktop-database-reference/loadfromfile-method-ado.md
-              - name: Move メソッド (ADO)
+              - name: Move メソッド
                 href: access/desktop-database-reference/move-method-ado.md
-              - name: MoveFirst メソッド、MoveLast メソッド、MoveNext メソッド、MovePrevious メソッド (ADO)
+              - name: MoveFirst メソッド、MoveLast メソッド、MoveNext メソッド、MovePrevious メソッド
                 href: access/desktop-database-reference/movefirst-movelast-movenext-and-moveprevious-methods-ado.md
-              - name: MoveRecord メソッド (ADO)
+              - name: MoveRecord メソッド
                 href: access/desktop-database-reference/moverecord-method-ado.md
-              - name: NextRecordset メソッド (ADO)
+              - name: NextRecordset メソッド
                 href: access/desktop-database-reference/nextrecordset-method-ado.md
               - name: Open メソッド (ADO Connection)
                 href: access/desktop-database-reference/open-method-ado-connection.md
@@ -2602,76 +2442,72 @@ items:
                 href: access/desktop-database-reference/open-method-ado-recordset.md
               - name: Open メソッド (ADO Stream)
                 href: access/desktop-database-reference/open-method-ado-stream.md
-              - name: OpenSchema メソッド (ADO)
+              - name: OpenSchema メソッド
                 href: access/desktop-database-reference/openschema-method-ado.md
-              - name: Read メソッド (ADO)
+              - name: Read メソッド
                 href: access/desktop-database-reference/read-method-ado.md
-              - name: ReadText メソッド (ADO)
+              - name: ReadText メソッド
                 href: access/desktop-database-reference/readtext-method-ado.md
-              - name: Refresh メソッド (ADO)
+              - name: Refresh メソッド
                 href: access/desktop-database-reference/refresh-method-ado.md
-              - name: Requery メソッド (ADO)
+              - name: Requery メソッド
                 href: access/desktop-database-reference/requery-method-ado.md
-              - name: Resync メソッド (ADO)
+              - name: Resync メソッド
                 href: access/desktop-database-reference/resync-method-ado.md
-              - name: Save メソッド (ADO)
+              - name: Save メソッド
                 href: access/desktop-database-reference/save-method-ado.md
-              - name: SaveToFile メソッド (ADO)
+              - name: SaveToFile メソッド
                 href: access/desktop-database-reference/savetofile-method-ado.md
-              - name: Seek メソッド (ADO)
+              - name: Seek メソッド
                 href: access/desktop-database-reference/seek-method-ado.md
-              - name: SetEOS メソッド (ADO)
+              - name: SetEOS メソッド
                 href: access/desktop-database-reference/seteos-method-ado.md
-              - name: SkipLine メソッド (ADO)
+              - name: SkipLine メソッド
                 href: access/desktop-database-reference/skipline-method-ado.md
-              - name: Stat メソッド (ADO)
+              - name: Stat メソッド
                 href: access/desktop-database-reference/stat-method-ado.md
-              - name: Supports メソッド (ADO)
+              - name: Supports メソッド
                 href: access/desktop-database-reference/supports-method-ado.md
-              - name: Update メソッド (ADO)
+              - name: Update メソッド
                 href: access/desktop-database-reference/update-method-ado.md
-              - name: UpdateBatch メソッド (ADO)
+              - name: UpdateBatch メソッド
                 href: access/desktop-database-reference/updatebatch-method-ado.md
-              - name: Write メソッド (ADO)
+              - name: Write メソッド
                 href: access/desktop-database-reference/write-method-ado.md
-              - name: WriteText メソッド (ADO)
+              - name: WriteText メソッド
                 href: access/desktop-database-reference/writetext-method-ado.md
             - name: ADO イベント
-              href: access/desktop-database-reference/ado-events-reference.md
+              href: access/desktop-database-reference/ado-events.md
               items:
-              - name: ADO イベント
-                href: access/desktop-database-reference/ado-events.md
-              - name: BeginTransComplete イベント、CommitTransComplete イベント、RollbackTransComplete イベント (ADO)
+              - name: BeginTransComplete イベント、CommitTransComplete イベント、RollbackTransComplete イベント
                 href: access/desktop-database-reference/begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md
-              - name: ConnectComplete イベントと Disconnect イベント (ADO)
+              - name: ConnectComplete イベントと Disconnect イベント
                 href: access/desktop-database-reference/connectcomplete-and-disconnect-events-ado.md
-              - name: EndOfRecordset イベント (ADO)
+              - name: EndOfRecordset イベント
                 href: access/desktop-database-reference/endofrecordset-event-ado.md
-              - name: ExecuteComplete イベント (ADO)
+              - name: ExecuteComplete イベント
                 href: access/desktop-database-reference/executecomplete-event-ado.md
-              - name: FetchComplete イベント (ADO)
+              - name: FetchComplete イベント
                 href: access/desktop-database-reference/fetchcomplete-event-ado.md
-              - name: FetchProgress イベント (ADO)
+              - name: FetchProgress イベント
                 href: access/desktop-database-reference/fetchprogress-event-ado.md
-              - name: InfoMessage イベント (ADO)
+              - name: InfoMessage イベント
                 href: access/desktop-database-reference/infomessage-event-ado.md
-              - name: WillChangeField イベントと FieldChangeComplete イベント (ADO)
+              - name: WillChangeField イベントと FieldChangeComplete イベント
                 href: access/desktop-database-reference/willchangefield-and-fieldchangecomplete-events-ado.md
-              - name: WillChangeRecord イベントと RecordChangeComplete イベント (ADO)
+              - name: WillChangeRecord イベントと RecordChangeComplete イベント
                 href: access/desktop-database-reference/willchangerecord-and-recordchangecomplete-events-ado.md
-              - name: WillChangeRecordset イベントと RecordsetChangeComplete イベント (ADO)
+              - name: WillChangeRecordset イベントと RecordsetChangeComplete イベント
                 href: access/desktop-database-reference/willchangerecordset-and-recordsetchangecomplete-events-ado.md
-              - name: WillConnect イベント (ADO)
+              - name: WillConnect イベント
                 href: access/desktop-database-reference/willconnect-event-ado.md
-              - name: WillExecute イベント (ADO)
+              - name: WillExecute イベント
                 href: access/desktop-database-reference/willexecute-event-ado.md
-              - name: WillMove イベントと MoveComplete イベント (ADO)
+              - name: WillMove イベントと MoveComplete イベント
                 href: access/desktop-database-reference/willmove-and-movecomplete-events-ado.md
             - name: ADO の列挙定数
-              href: access/desktop-database-reference/ado-enumerated-constants-reference.md
+              href: access/desktop-database-reference/ado-enumerated-constants.md
               items:
-              - name: ADO の列挙定数
-                href: access/desktop-database-reference/ado-enumerated-constants.md
               - name: ADCPROP_ASYNCTHREADPRIORITY_ENUM
                 href: access/desktop-database-reference/adcprop-asyncthreadpriority-enum.md
               - name: ADCPROP_AUTORECALC_ENUM
@@ -2779,15 +2615,11 @@ items:
               - name: XactAttributeEnum
                 href: access/desktop-database-reference/xactattributeenum.md
             - name: ADO コードの例
-              href: access/desktop-database-reference/ado-code-examples-access.md
+              href: access/desktop-database-reference/ado-code-examples.md
               items:
-              - name: ADO コードの例
-                href: access/desktop-database-reference/ado-code-examples.md
               - name: Microsoft Visual Basic での ADO コードの例
-                href: access/desktop-database-reference/ado-code-examples-in-microsoft-visual-basic-access.md
+                href: access/desktop-database-reference/ado-code-examples-in-microsoft-visual-basic.md
                 items:
-                - name: Microsoft Visual Basic での ADO コードの例
-                  href: access/desktop-database-reference/ado-code-examples-in-microsoft-visual-basic.md
                 - name: AbsolutePage プロパティ、PageCount プロパティ、PageSize プロパティの使用例 (VB)
                   href: access/desktop-database-reference/absolutepage-pagecount-and-pagesize-properties-example-vb.md
                 - name: AbsolutePosition プロパティと CursorLocation プロパティの使用例 (VB)
@@ -2913,10 +2745,8 @@ items:
                 - name: Version プロパティの使用例 (VB)
                   href: access/desktop-database-reference/version-property-example-vb.md
               - name: Microsoft Visual Basic Scripting Edition での ADO コードの例
-                href: access/desktop-database-reference/ado-code-examples-in-microsoft-visual-basic-scripting-edition-access.md
+                href: access/desktop-database-reference/ado-code-examples-in-microsoft-visual-basic-scripting-edition.md
                 items:
-                - name: Microsoft Visual Basic Scripting Edition での ADO コードの例
-                  href: access/desktop-database-reference/ado-code-examples-in-microsoft-visual-basic-scripting-edition.md
                 - name: AddNew メソッドの使用例 (VBScript)
                   href: access/desktop-database-reference/addnew-method-example-vbscript.md
                 - name: Clone メソッドの使用例 (VBScript)
@@ -2932,10 +2762,8 @@ items:
                 - name: Open メソッドと Close メソッドの使用例 (VBScript)
                   href: access/desktop-database-reference/open-and-close-methods-example-vbscript.md
               - name: Microsoft Visual C++ での ADO コードの例
-                href: access/desktop-database-reference/ado-code-examples-in-microsoft-visual-c-access.md
+                href: access/desktop-database-reference/ado-code-examples-in-microsoft-visual-c.md
                 items:
-                - name: Microsoft Visual C++ での ADO コードの例
-                  href: access/desktop-database-reference/ado-code-examples-in-microsoft-visual-c.md
                 - name: ADO イベント モデルの使用例 (VC++)
                   href: access/desktop-database-reference/ado-events-model-example-vc.md
                 - name: AbsolutePage プロパティ、PageCount プロパティ、PageSize プロパティの使用例 (VC++)
@@ -3047,10 +2875,8 @@ items:
                 - name: Version プロパティの使用例 (VC++)
                   href: access/desktop-database-reference/version-property-example-vc.md
               - name: Microsoft Visual J++ での ADO コードの例
-                href: access/desktop-database-reference/ado-code-examples-in-microsoft-visual-j-access.md
+                href: access/desktop-database-reference/ado-code-examples-in-microsoft-visual-j.md
                 items:
-                - name: Microsoft Visual J++ での ADO コードの例
-                  href: access/desktop-database-reference/ado-code-examples-in-microsoft-visual-j.md
                 - name: AbsolutePage プロパティ、PageCount プロパティ、PageSize プロパティの使用例 (VJ++)
                   href: access/desktop-database-reference/absolutepage-pagecount-and-pagesize-properties-example-vj.md
                 - name: AbsolutePosition プロパティと CursorLocation プロパティの使用例 (VJ++)
@@ -3156,10 +2982,8 @@ items:
                 - name: Version プロパティの使用例 (VJ++)
                   href: access/desktop-database-reference/version-property-example-vj.md
               - name: Microsoft JScript での ADO コードの例
-                href: access/desktop-database-reference/ado-code-examples-in-microsoft-jscript-access.md
+                href: access/desktop-database-reference/ado-code-examples-in-microsoft-jscript.md
                 items:
-                - name: Microsoft JScript での ADO コードの例
-                  href: access/desktop-database-reference/ado-code-examples-in-microsoft-jscript.md
                 - name: AbsolutePage プロパティ、PageCount プロパティ、PageSize プロパティの使用例 (JScript)
                   href: access/desktop-database-reference/absolutepage-pagecount-and-pagesize-properties-example-jscript.md
                 - name: AbsolutePosition プロパティと CursorLocation プロパティの使用例 (JScript)
@@ -3185,486 +3009,454 @@ items:
                 - name: GetRows メソッドの使用例 (JScript)
                   href: access/desktop-database-reference/getrows-method-example-jscript.md
           - name: RDS API リファレンス
-            href: access/desktop-database-reference/rds-api-reference-topics.md
+            href: access/desktop-database-reference/rds-api-reference.md
             items:
-            - name: RDS API リファレンス
-              href: access/desktop-database-reference/rds-api-reference.md
             - name: RDS のオブジェクト
-              href: access/desktop-database-reference/rds-objects-access.md
+              href: access/desktop-database-reference/rds-objects.md
               items:
-              - name: RDS のオブジェクト
-                href: access/desktop-database-reference/rds-objects.md
-              - name: DataControl オブジェクト (RDS)
+              - name: DataControl
                 href: access/desktop-database-reference/datacontrol-object-rds-ado.md
                 items:
-                - name: DataControl オブジェクト (RDS)
+                - name: DataControl オブジェクト
                   href: access/desktop-database-reference/datacontrol-object-rds.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/datacontrol-properties-methods-and-events-rds.md
-              - name: DataFactoryObject (RDSServer)
+              - name: DataFactory (RDSServer)
                 href: access/desktop-database-reference/datafactoryobject-rdsserver.md
                 items:
-                - name: DataFactory オブジェクト (RDSServer)
+                - name: DataFactory オブジェクト
                   href: access/desktop-database-reference/datafactory-object-rdsserver.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/datafactoryobject-properties-methods-and-events-rds.md
-              - name: DataSpace オブジェクト (RDS)
+              - name: DataSpace
                 href: access/desktop-database-reference/dataspace-object-rds-ado.md
                 items:
-                - name: DataSpace オブジェクト (RDS)
+                - name: DataSpace オブジェクト
                   href: access/desktop-database-reference/dataspace-object-rds.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/dataspace-properties-methods-and-events-rds.md
-            - name: RDS のプロパティ
-              href: access/desktop-database-reference/rds-properties-access.md
+            - name: RDS プロパティ
+              href: access/desktop-database-reference/rds-properties.md
               items:
-              - name: RDS のプロパティ
-                href: access/desktop-database-reference/rds-properties.md
-              - name: Connect プロパティ (RDS)
+              - name: Connect プロパティ
                 href: access/desktop-database-reference/connect-property-rds.md
-              - name: ExecuteOptions プロパティ (RDS)
+              - name: ExecuteOptions プロパティ
                 href: access/desktop-database-reference/executeoptions-property-rds.md
-              - name: FetchOptions プロパティ (RDS)
+              - name: FetchOptions プロパティ
                 href: access/desktop-database-reference/fetchoptions-property-rds.md
-              - name: FilterColumn プロパティ (RDS)
+              - name: FilterColumn プロパティ
                 href: access/desktop-database-reference/filtercolumn-property-rds.md
-              - name: FilterCriterion プロパティ (RDS)
+              - name: FilterCriterion プロパティ
                 href: access/desktop-database-reference/filtercriterion-property-rds.md
-              - name: FilterValue プロパティ (RDS)
+              - name: FilterValue プロパティ
                 href: access/desktop-database-reference/filtervalue-property-rds.md
-              - name: Handler プロパティ (RDS)
+              - name: Handler プロパティ
                 href: access/desktop-database-reference/handler-property-rds.md
-              - name: InternetTimeout プロパティ (RDS)
+              - name: InternetTimeout プロパティ
                 href: access/desktop-database-reference/internettimeout-property-rds.md
-              - name: ReadyState プロパティ (RDS)
+              - name: ReadyState プロパティ
                 href: access/desktop-database-reference/readystate-property-rds.md
-              - name: Recordset プロパティと SourceRecordset プロパティ (RDS)
+              - name: Recordset プロパティと SourceRecordset プロパティ
                 href: access/desktop-database-reference/recordset-sourcerecordset-properties-rds.md
-              - name: Server プロパティ (RDS)
+              - name: Server プロパティ
                 href: access/desktop-database-reference/server-property-rds.md
-              - name: SortColumn プロパティ (RDS)
+              - name: SortColumn プロパティ
                 href: access/desktop-database-reference/sortcolumn-property-rds.md
-              - name: SortDirection プロパティ (RDS)
+              - name: SortDirection プロパティ
                 href: access/desktop-database-reference/sortdirection-property-rds.md
-              - name: URL プロパティ (RDS)
+              - name: URL プロパティ
                 href: access/desktop-database-reference/url-property-rds.md
             - name: RDS のメソッド
-              href: access/desktop-database-reference/rds-methods-access.md
+              href: access/desktop-database-reference/rds-methods.md
               items:
-              - name: RDS のメソッド
-                href: access/desktop-database-reference/rds-methods.md
-              - name: Cancel メソッド (RDS)
+              - name: Cancel メソッド
                 href: access/desktop-database-reference/cancel-method-rds.md
-              - name: CancelUpdate メソッド (RDS)
+              - name: CancelUpdate メソッド
                 href: access/desktop-database-reference/cancelupdate-method-rds.md
-              - name: ConvertToString メソッド (RDS)
+              - name: ConvertToString メソッド
                 href: access/desktop-database-reference/converttostring-method-rds.md
-              - name: CreateObject メソッド (RDS)
+              - name: CreateObject メソッド
                 href: access/desktop-database-reference/createobject-method-rds.md
-              - name: CreateRecordset メソッド (RDS)
+              - name: CreateRecordset メソッド
                 href: access/desktop-database-reference/createrecordset-method-rds.md
-              - name: MoveFirst メソッド、MoveLast メソッド、MoveNext メソッド、MovePrevious メソッド (RDS)
+              - name: MoveFirst メソッド、MoveLast メソッド、MoveNext メソッド、MovePrevious メソッド
                 href: access/desktop-database-reference/movefirst-movelast-movenext-and-moveprevious-methods-rds.md
-              - name: Query メソッド (RDS)
+              - name: Query メソッド
                 href: access/desktop-database-reference/query-method-rds.md
-              - name: Refresh メソッド (RDS)
+              - name: Refresh メソッド
                 href: access/desktop-database-reference/refresh-method-rds.md
-              - name: Reset メソッド (RDS)
+              - name: Reset メソッド
                 href: access/desktop-database-reference/reset-method-rds.md
-              - name: SubmitChanges メソッド (RDS)
+              - name: SubmitChanges メソッド
                 href: access/desktop-database-reference/submitchanges-method-rds.md
             - name: RDS のイベント
-              href: access/desktop-database-reference/rds-events-access.md
+              href: access/desktop-database-reference/rds-events.md
               items:
-              - name: RDS のイベント
-                href: access/desktop-database-reference/rds-events.md
-              - name: onError イベント (RDS)
+              - name: OnError イベント
                 href: access/desktop-database-reference/onerror-event-rds.md
-              - name: onReadyStateChange イベント (RDS)
+              - name: onReadyStateChange イベント
                 href: access/desktop-database-reference/onreadystatechange-event-rds.md
           - name: ADO MD API リファレンス
-            href: access/desktop-database-reference/ado-md-api-reference-topics.md
+            href: access/desktop-database-reference/ado-md-api-reference.md
             items:
-            - name: ADO MD API リファレンス
-              href: access/desktop-database-reference/ado-md-api-reference.md
             - name: ADO MD のオブジェクト
-              href: access/desktop-database-reference/ado-md-objects-reference.md
+              href: access/desktop-database-reference/ado-md-objects.md
               items:
-              - name: ADO MD のオブジェクト
-                href: access/desktop-database-reference/ado-md-objects.md
-              - name: Axis オブジェクト (ADO MD)
+              - name: Axis
                 href: access/desktop-database-reference/axis-object-ado-md-reference.md
                 items:
-                - name: Axis オブジェクト (ADO MD)
+                - name: Axis オブジェクト
                   href: access/desktop-database-reference/axis-object-ado-md.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/axis-properties-methods-and-events-ado-md.md
-              - name: Catalog オブジェクト (ADO MD)
+              - name: Catalog
                 href: access/desktop-database-reference/catalog-object-ado-md-reference.md
                 items:
-                - name: Catalog オブジェクト (ADO MD)
+                - name: Catalog オブジェクト
                   href: access/desktop-database-reference/catalog-object-ado-md.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/catalog-properties-methods-and-events-ado-md.md
-              - name: Cell オブジェクト (ADO MD)
+              - name: Cell
                 href: access/desktop-database-reference/cell-object-ado-md-reference.md
                 items:
-                - name: Cell オブジェクト (ADO MD)
+                - name: Cell オブジェクト
                   href: access/desktop-database-reference/cell-object-ado-md.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/cell-properties-methods-and-events-ado-md.md
-              - name: Cellset オブジェクト (ADO MD)
+              - name: Cellset
                 href: access/desktop-database-reference/cellset-object-ado-md-reference.md
                 items:
-                - name: Cellset オブジェクト (ADO MD)
+                - name: Cellset オブジェクト
                   href: access/desktop-database-reference/cellset-object-ado-md.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/cellset-properties-methods-and-events-ado-md.md
-              - name: CubeDef オブジェクト (ADO MD)
+              - name: CubeDef
                 href: access/desktop-database-reference/cubedef-object-ado-md-reference.md
                 items:
-                - name: CubeDef オブジェクト (ADO MD)
+                - name: CubeDef オブジェクト
                   href: access/desktop-database-reference/cubedef-object-ado-md.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/cubedef-properties-methods-and-events-ado-md.md
-              - name: Dimension オブジェクト (ADO MD)
+              - name: Dimension
                 href: access/desktop-database-reference/dimension-object-ado-md-reference.md
                 items:
-                - name: Dimension オブジェクト (ADO MD)
+                - name: Dimension オブジェクト
                   href: access/desktop-database-reference/dimension-object-ado-md.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/dimension-properties-methods-and-events-ado-md.md
-              - name: Hierarchy オブジェクト (ADO MD)
+              - name: Hierarchy
                 href: access/desktop-database-reference/hierarchy-object-ado-md-reference.md
                 items:
-                - name: Hierarchy オブジェクト (ADO MD)
+                - name: Hierarchy オブジェクト
                   href: access/desktop-database-reference/hierarchy-object-ado-md.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/hierarchy-properties-methods-and-events-ado-md.md
-              - name: Level オブジェクト (ADO MD)
+              - name: Level
                 href: access/desktop-database-reference/level-object-ado-md-reference.md
                 items:
-                - name: Level オブジェクト (ADO MD)
+                - name: Level オブジェクト
                   href: access/desktop-database-reference/level-object-ado-md.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/level-properties-methods-and-events-ado-md.md
-              - name: Member オブジェクト (ADO MD)
+              - name: Member
                 href: access/desktop-database-reference/member-object-ado-md-reference.md
                 items:
-                - name: Member オブジェクト (ADO MD)
+                - name: Member オブジェクト
                   href: access/desktop-database-reference/member-object-ado-md.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/member-properties-methods-and-events-ado-md.md
-              - name: Position オブジェクト (ADO MD)
+              - name: Position
                 href: access/desktop-database-reference/position-object-ado-md-reference.md
                 items:
-                - name: Position オブジェクト (ADO MD)
+                - name: Position オブジェクト
                   href: access/desktop-database-reference/position-object-ado-md.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/position-properties-methods-and-events-ado-md.md
             - name: ADO MD のコレクション
-              href: access/desktop-database-reference/ado-md-collections-reference.md
+              href: access/desktop-database-reference/ado-md-collections.md
               items:
-              - name: ADO MD のコレクション
-                href: access/desktop-database-reference/ado-md-collections.md
-              - name: Axes コレクション (ADO MD)
+              - name: Axes
                 href: access/desktop-database-reference/axes-collection-ado-md-reference.md
                 items:
-                - name: Axes コレクション (ADO MD)
+                - name: Axes コレクション
                   href: access/desktop-database-reference/axes-collection-ado-md.md
                 - name: Axes コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/axes-collection-properties-methods-and-events-ado-md.md
-              - name: CubeDefs コレクション (ADO MD)
+              - name: CubeDefs
                 href: access/desktop-database-reference/cubedefs-collection-ado-md-reference.md
                 items:
-                - name: CubeDefs コレクション (ADO MD)
+                - name: CubeDefs コレクション
                   href: access/desktop-database-reference/cubedefs-collection-ado-md.md
                 - name: CubeDefs コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/cubedefs-collection-properties-methods-and-events-ado-md.md
-              - name: Dimensions コレクション (ADO MD)
+              - name: Dimensions
                 href: access/desktop-database-reference/dimensions-collection-ado-md-reference.md
                 items:
-                - name: Dimensions コレクション (ADO MD)
+                - name: Dimensions コレクション
                   href: access/desktop-database-reference/dimensions-collection-ado-md.md
                 - name: Dimensions コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/dimensions-collection-properties-methods-and-events-ado-md.md
-              - name: Hierarchies コレクション (ADO MD)
+              - name: Hierarchies
                 href: access/desktop-database-reference/hierarchies-collection-ado-md-reference.md
                 items:
-                - name: Hierarchies コレクション (ADO MD)
+                - name: Hierarchies コレクション
                   href: access/desktop-database-reference/hierarchies-collection-ado-md.md
                 - name: Hierarchies コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/hierarchies-collection-properties-methods-and-events-ado-md.md
-              - name: Levels コレクション (ADO MD)
+              - name: Levels
                 href: access/desktop-database-reference/levels-collection-ado-md-reference.md
                 items:
-                - name: Levels コレクション (ADO MD)
+                - name: Levels コレクション
                   href: access/desktop-database-reference/levels-collection-ado-md.md
                 - name: Levels コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/levels-collection-properties-methods-and-events-ado-md.md
-              - name: Members コレクション (ADO MD)
+              - name: Members
                 href: access/desktop-database-reference/members-collection-ado-md-reference.md
                 items:
-                - name: Members コレクション (ADO MD)
+                - name: Members コレクション
                   href: access/desktop-database-reference/members-collection-ado-md.md
                 - name: Members コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/members-collection-properties-methods-and-events-ado-md.md
-              - name: Positions コレクション (ADO MD)
+              - name: Positions
                 href: access/desktop-database-reference/positions-collection-ado-md-reference.md
                 items:
-                - name: Positions コレクション (ADO MD)
+                - name: Positions コレクション
                   href: access/desktop-database-reference/positions-collection-ado-md.md
                 - name: Positions コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/positions-collection-properties-methods-and-events-ado-md.md
             - name: ADO MD のプロパティ
-              href: access/desktop-database-reference/ado-md-properties-reference.md
+              href: access/desktop-database-reference/ado-md-properties.md
               items:
-              - name: ADO MD のプロパティ
-                href: access/desktop-database-reference/ado-md-properties.md
-              - name: ActiveConnection プロパティ (ADO MD)
+              - name: ActiveConnection プロパティ
                 href: access/desktop-database-reference/activeconnection-property-ado-md.md
-              - name: Caption プロパティ (ADO MD)
+              - name: Caption プロパティ
                 href: access/desktop-database-reference/caption-property-ado-md.md
-              - name: ChildCount プロパティ (ADO MD)
+              - name: ChildCount プロパティ
                 href: access/desktop-database-reference/childcount-property-ado-md.md
-              - name: Children プロパティ (ADO MD)
+              - name: Children プロパティ
                 href: access/desktop-database-reference/children-property-ado-md.md
-              - name: Depth プロパティ (ADO MD)
+              - name: Depth プロパティ
                 href: access/desktop-database-reference/depth-property-ado-md.md
-              - name: Description プロパティ (ADO MD)
+              - name: Description プロパティ
                 href: access/desktop-database-reference/description-property-ado-md.md
-              - name: DimensionCount プロパティ (ADO MD)
+              - name: DimensionCount プロパティ
                 href: access/desktop-database-reference/dimensioncount-property-ado-md.md
-              - name: DrilledDown プロパティ (ADO MD)
+              - name: DrilledDown プロパティ
                 href: access/desktop-database-reference/drilleddown-property-ado-md.md
-              - name: FilterAxis プロパティ (ADO MD)
+              - name: FilterAxis プロパティ
                 href: access/desktop-database-reference/filteraxis-property-ado-md.md
-              - name: FormattedValue プロパティ (ADO MD)
+              - name: FormattedValue プロパティ
                 href: access/desktop-database-reference/formattedvalue-property-ado-md.md
               - name: Item プロパティ (ADO MD Cellset)
                 href: access/desktop-database-reference/item-property-ado-md-cellset.md
-              - name: LevelDepth プロパティ (ADO MD)
+              - name: LevelDepth プロパティ
                 href: access/desktop-database-reference/leveldepth-property-ado-md.md
-              - name: LevelName プロパティ (ADO MD)
+              - name: LevelName プロパティ
                 href: access/desktop-database-reference/levelname-property-ado-md.md
-              - name: Name プロパティ (ADO MD)
+              - name: Name プロパティ
                 href: access/desktop-database-reference/name-property-ado-md.md
               - name: Ordinal プロパティ (ADO MD Cell)
                 href: access/desktop-database-reference/ordinal-property-ado-md-cell.md
               - name: Ordinal プロパティ (ADO MD Position)
                 href: access/desktop-database-reference/ordinal-property-ado-md-position.md
-              - name: Parent プロパティ (ADO MD)
+              - name: Parent プロパティ
                 href: access/desktop-database-reference/parent-property-ado-md.md
-              - name: ParentSameAsPrev プロパティ (ADO MD)
+              - name: ParentSameAsPrev プロパティ
                 href: access/desktop-database-reference/parentsameasprev-property-ado-md.md
-              - name: Source プロパティ (ADO MD)
+              - name: Source プロパティ
                 href: access/desktop-database-reference/source-property-ado-md.md
-              - name: State プロパティ (ADO MD)
+              - name: State プロパティ
                 href: access/desktop-database-reference/state-property-ado-md.md
-              - name: Type プロパティ (ADO MD)
+              - name: Type プロパティ
                 href: access/desktop-database-reference/type-property-ado-md.md
-              - name: UniqueName プロパティ (ADO MD)
+              - name: UniqueName プロパティ
                 href: access/desktop-database-reference/uniquename-property-ado-md.md
-              - name: Value プロパティ (ADO MD)
+              - name: Value プロパティ
                 href: access/desktop-database-reference/value-property-ado-md.md
             - name: ADO MD のメソッド
-              href: access/desktop-database-reference/ado-md-methods-reference.md
+              href: access/desktop-database-reference/ado-md-methods.md
               items:
-              - name: ADO MD のメソッド
-                href: access/desktop-database-reference/ado-md-methods.md
-              - name: Close メソッド (ADO MD)
+              - name: Close メソッド
                 href: access/desktop-database-reference/close-method-ado-md.md
-              - name: Open メソッド (ADO MD)
+              - name: Open メソッド
                 href: access/desktop-database-reference/open-method-ado-md.md
             - name: ADO MD の列挙定数
-              href: access/desktop-database-reference/ado-md-enumerated-constants-reference.md
+              href: access/desktop-database-reference/ado-md-enumerated-constants.md
               items:
-              - name: ADO MD の列挙定数
-                href: access/desktop-database-reference/ado-md-enumerated-constants.md
               - name: MemberTypeEnum
                 href: access/desktop-database-reference/membertypeenum.md
           - name: ADOX API リファレンス
-            href: access/desktop-database-reference/adox-api-reference-topics.md
+            href: access/desktop-database-reference/adox-api-reference.md
             items:
-            - name: ADOX API リファレンス
-              href: access/desktop-database-reference/adox-api-reference.md
             - name: ADOX のオブジェクト
-              href: access/desktop-database-reference/adox-objects-reference.md
+              href: access/desktop-database-reference/adox-objects.md
               items:
-              - name: ADOX のオブジェクト
-                href: access/desktop-database-reference/adox-objects.md
-              - name: Catalog オブジェクト (ADOX)
+              - name: Catalog
                 href: access/desktop-database-reference/catalog-object-adox-reference.md
                 items:
-                - name: Catalog オブジェクト (ADOX)
+                - name: Catalog オブジェクト
                   href: access/desktop-database-reference/catalog-object-adox.md
-                - name: Catalog のプロパティ、メソッド、イベント (ADOX)
+                - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/catalog-properties-methods-and-events-adox.md
-              - name: Column オブジェクト (ADOX)
+              - name: Column
                 href: access/desktop-database-reference/column-object-adox-reference.md
                 items:
-                - name: Column オブジェクト (ADOX)
+                - name: Column オブジェクト
                   href: access/desktop-database-reference/column-object-adox.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/column-properties-methods-and-events-adox.md
-              - name: Group オブジェクト (ADOX)
+              - name: Group
                 href: access/desktop-database-reference/group-object-adox-reference.md
                 items:
-                - name: Group オブジェクト (ADOX)
+                - name: Group オブジェクト
                   href: access/desktop-database-reference/group-object-adox.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/group-properties-methods-and-events-adox.md
-              - name: Index オブジェクト (ADOX)
+              - name: Index
                 href: access/desktop-database-reference/index-object-adox-reference.md
                 items:
-                - name: Index オブジェクト (ADOX)
+                - name: Index オブジェクト
                   href: access/desktop-database-reference/index-object-adox.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/index-properties-methods-and-events-adox.md
-              - name: Key オブジェクト (ADOX)
+              - name: Key
                 href: access/desktop-database-reference/key-object-adox-reference.md
                 items:
-                - name: Key オブジェクト (ADOX)
+                - name: Key オブジェクト
                   href: access/desktop-database-reference/key-object-adox.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/key-properties-methods-and-events-adox.md
-              - name: Procedure オブジェクト (ADOX)
+              - name: Procedure
                 href: access/desktop-database-reference/procedure-object-adox-reference.md
                 items:
-                - name: Procedure オブジェクト (ADOX)
+                - name: Procedure オブジェクト
                   href: access/desktop-database-reference/procedure-object-adox.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/procedure-properties-methods-and-events-adox.md
-              - name: Table オブジェクト (ADOX)
+              - name: Table
                 href: access/desktop-database-reference/table-object-adox-reference.md
                 items:
-                - name: Table オブジェクト (ADOX)
+                - name: Table オブジェクト
                   href: access/desktop-database-reference/table-object-adox.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/table-properties-methods-and-events-adox.md
-              - name: User オブジェクト (ADOX)
+              - name: User
                 href: access/desktop-database-reference/user-object-adox-reference.md
                 items:
-                - name: User オブジェクト (ADOX)
+                - name: User オブジェクト
                   href: access/desktop-database-reference/user-object-adox.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/user-properties-methods-and-events-adox.md
-              - name: View オブジェクト (ADOX)
+              - name: View
                 href: access/desktop-database-reference/view-object-adox-reference.md
                 items:
-                - name: View オブジェクト (ADOX)
+                - name: View オブジェクト
                   href: access/desktop-database-reference/view-object-adox.md
                 - name: プロパティ、メソッド、イベント
                   href: access/desktop-database-reference/view-properties-methods-and-events-adox.md
             - name: ADOX のコレクション
-              href: access/desktop-database-reference/adox-collections-reference.md
+              href: access/desktop-database-reference/adox-collections.md
               items:
-              - name: ADOX のコレクション
-                href: access/desktop-database-reference/adox-collections.md
-              - name: Columns コレクション (ADOX)
+              - name: Columns
                 href: access/desktop-database-reference/columns-collection-adox-reference.md
                 items:
-                - name: Columns コレクション (ADOX)
+                - name: Columns コレクション
                   href: access/desktop-database-reference/columns-collection-adox.md
-                - name: Columns コレクションのプロパティ、メソッド、イベント (ADOX)
+                - name: Columns コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/columns-collection-properties-methods-and-events-adox.md
-              - name: Groups コレクション (ADOX)
+              - name: Groups
                 href: access/desktop-database-reference/groups-collection-adox-reference.md
                 items:
-                - name: Groups コレクション (ADOX)
+                - name: Groups コレクション
                   href: access/desktop-database-reference/groups-collection-adox.md
-                - name: Groups コレクションのプロパティ、メソッド、イベント (ADOX)
+                - name: Groups コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/groups-collection-properties-methods-and-events-adox.md
-              - name: Indexes コレクション (ADOX)
+              - name: Indexes
                 href: access/desktop-database-reference/indexes-collection-adox-reference.md
                 items:
-                - name: Indexes コレクション (ADOX)
+                - name: Indexes コレクション
                   href: access/desktop-database-reference/indexes-collection-adox.md
-                - name: Indexes コレクションのプロパティ、メソッド、イベント (ADOX)
+                - name: Indexes コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/indexes-collection-properties-methods-and-events-adox.md
-              - name: Keys コレクション (ADOX)
+              - name: Keys
                 href: access/desktop-database-reference/keys-collection-adox-reference.md
                 items:
-                - name: Keys コレクション (ADOX)
+                - name: Keys コレクション
                   href: access/desktop-database-reference/keys-collection-adox.md
-                - name: Keys コレクションのプロパティ、メソッド、イベント (ADOX)
+                - name: Keys コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/keys-collection-properties-methods-and-events-adox.md
-              - name: Procedures コレクション (ADOX)
+              - name: Procedures
                 href: access/desktop-database-reference/procedures-collection-adox-reference.md
                 items:
-                - name: Procedures コレクション (ADOX)
+                - name: Procedures コレクション
                   href: access/desktop-database-reference/procedures-collection-adox.md
-                - name: Procedures コレクションのプロパティ、メソッド、イベント (ADOX)
+                - name: Procedures コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/procedures-collection-properties-methods-and-events-adox.md
-              - name: Tables コレクション (ADOX)
+              - name: Tables
                 href: access/desktop-database-reference/tables-collection-adox-reference.md
                 items:
-                - name: Tables コレクション (ADOX)
+                - name: Tables コレクション
                   href: access/desktop-database-reference/tables-collection-adox.md
-                - name: Tables コレクションのプロパティ、メソッド、イベント (ADOX)
+                - name: Tables コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/tables-collection-properties-methods-and-events-adox.md
-              - name: Users コレクション (ADOX)
+              - name: Users
                 href: access/desktop-database-reference/users-collection-adox-reference.md
                 items:
-                - name: Users コレクション (ADOX)
+                - name: Users コレクション
                   href: access/desktop-database-reference/users-collection-adox.md
-                - name: Users コレクションのプロパティ、メソッド、イベント (ADOX)
+                - name: Users コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/users-collection-properties-methods-and-events-adox.md
-              - name: Views コレクション (ADOX)
+              - name: Views
                 href: access/desktop-database-reference/views-collection-adox-reference.md
                 items:
-                - name: Views コレクション (ADOX)
+                - name: Views コレクション
                   href: access/desktop-database-reference/views-collection-adox.md
-                - name: Views コレクションのプロパティ、メソッド、イベント (ADOX)
+                - name: Views コレクションのプロパティ、メソッド、イベント
                   href: access/desktop-database-reference/views-collection-properties-methods-and-events-adox.md
             - name: ADOX のプロパティ
-              href: access/desktop-database-reference/adox-properties-reference.md
+              href: access/desktop-database-reference/adox-properties.md
               items:
-              - name: ADOX のプロパティ
-                href: access/desktop-database-reference/adox-properties.md
-              - name: ActiveConnection プロパティ (ADOX)
+              - name: ActiveConnection プロパティ
                 href: access/desktop-database-reference/activeconnection-property-adox.md
-              - name: Attributes プロパティ (ADOX)
+              - name: Attributes プロパティ
                 href: access/desktop-database-reference/attributes-property-adox.md
-              - name: Clustered プロパティ (ADOX)
+              - name: Clustered プロパティ
                 href: access/desktop-database-reference/clustered-property-adox.md
-              - name: Command プロパティ (ADOX)
+              - name: Command プロパティ
                 href: access/desktop-database-reference/command-property-adox.md
-              - name: DateCreated プロパティ (ADOX)
+              - name: DateCreated プロパティ
                 href: access/desktop-database-reference/datecreated-property-adox.md
-              - name: DateModified プロパティ (ADOX)
+              - name: DateModified プロパティ
                 href: access/desktop-database-reference/datemodified-property-adox.md
-              - name: DefinedSize プロパティ (ADOX)
+              - name: DefinedSize プロパティ
                 href: access/desktop-database-reference/definedsize-property-adox.md
-              - name: DeleteRule プロパティ (ADOX)
+              - name: DeleteRule プロパティ
                 href: access/desktop-database-reference/deleterule-property-adox.md
-              - name: IndexNulls プロパティ (ADOX)
+              - name: IndexNulls プロパティ
                 href: access/desktop-database-reference/indexnulls-property-adox.md
-              - name: Name プロパティ (ADOX)
+              - name: Name プロパティ
                 href: access/desktop-database-reference/name-property-adox.md
-              - name: NumericScale プロパティ (ADOX)
+              - name: NumericScale プロパティ
                 href: access/desktop-database-reference/numericscale-property-adox.md
-              - name: ParentCatalog プロパティ (ADOX)
+              - name: ParentCatalog プロパティ
                 href: access/desktop-database-reference/parentcatalog-property-adox.md
-              - name: Precision プロパティ (ADOX)
+              - name: Precision プロパティ
                 href: access/desktop-database-reference/precision-property-adox.md
-              - name: PrimaryKey プロパティ (ADOX)
+              - name: PrimaryKey プロパティ
                 href: access/desktop-database-reference/primarykey-property-adox.md
-              - name: RelatedColumn プロパティ (ADOX)
+              - name: RelatedColumn プロパティ
                 href: access/desktop-database-reference/relatedcolumn-property-adox.md
-              - name: RelatedTable プロパティ (ADOX)
+              - name: RelatedTable プロパティ
                 href: access/desktop-database-reference/relatedtable-property-adox.md
-              - name: SortOrder プロパティ (ADOX)
+              - name: SortOrder プロパティ
                 href: access/desktop-database-reference/sortorder-property-adox.md
-              - name: Unique プロパティ (ADOX)
+              - name: Unique プロパティ
                 href: access/desktop-database-reference/unique-property-adox.md
-              - name: UpdateRule プロパティ (ADOX)
+              - name: UpdateRule プロパティ
                 href: access/desktop-database-reference/updaterule-property-adox.md
             - name: ADOX のメソッド
-              href: access/desktop-database-reference/adox-methods-reference.md
+              href: access/desktop-database-reference/adox-methods.md
               items:
-              - name: ADOX のメソッド
-                href: access/desktop-database-reference/adox-methods.md
               - name: Append メソッド (ADOX Columns)
                 href: access/desktop-database-reference/append-method-adox-columns.md
               - name: Append メソッド (ADOX Groups)
@@ -3681,23 +3473,21 @@ items:
                 href: access/desktop-database-reference/append-method-adox-users.md
               - name: Append メソッド (ADOX Views)
                 href: access/desktop-database-reference/append-method-adox-views.md
-              - name: ChangePassword メソッド (ADOX)
+              - name: ChangePassword メソッド
                 href: access/desktop-database-reference/changepassword-method-adox.md
-              - name: Create メソッド (ADOX)
+              - name: Create メソッド
                 href: access/desktop-database-reference/create-method-adox.md
               - name: Delete メソッド (ADOX コレクション)
                 href: access/desktop-database-reference/delete-method-adox-collections.md
-              - name: GetObjectOwner メソッド (ADOX)
+              - name: GetObjectOwner メソッド
                 href: access/desktop-database-reference/getobjectowner-method-adox.md
-              - name: GetPermissions メソッド (ADOX)
+              - name: GetPermissions メソッド
                 href: access/desktop-database-reference/getpermissions-method-adox.md
-              - name: SetPermissions メソッド (ADOX)
+              - name: SetPermissions メソッド
                 href: access/desktop-database-reference/setpermissions-method-adox.md
             - name: ADOX の列挙定数
-              href: access/desktop-database-reference/adox-enumerated-constants-reference.md
+              href: access/desktop-database-reference/adox-enumerated-constants.md
               items:
-              - name: ADOX の列挙定数
-                href: access/desktop-database-reference/adox-enumerated-constants.md
               - name: ActionEnum
                 href: access/desktop-database-reference/actionenum.md
               - name: AllowNullsEnum
@@ -3715,15 +3505,11 @@ items:
               - name: SortOrderEnum
                 href: access/desktop-database-reference/sortorderenum.md
             - name: ADOX コードの例
-              href: access/desktop-database-reference/adox-code-example-topics.md
+              href: access/desktop-database-reference/adox-code-examples.md
               items:
-              - name: ADOX コードの例
-                href: access/desktop-database-reference/adox-code-examples.md
               - name: Microsoft Visual Basic での ADOX コードの例
-                href: access/desktop-database-reference/adox-code-examples-in-microsoft-visual-basic-topics.md
+                href: access/desktop-database-reference/adox-code-examples-in-microsoft-visual-basic.md
                 items:
-                - name: Microsoft Visual Basic での ADOX コードの例
-                  href: access/desktop-database-reference/adox-code-examples-in-microsoft-visual-basic.md
                 - name: Attributes プロパティの使用例 (VB)
                   href: access/desktop-database-reference/attributes-property-example-vb.md
                 - name: Catalog の ActiveConnection プロパティの使用例 (VB)
@@ -3783,10 +3569,8 @@ items:
                 - name: Views の Refresh メソッドの使用例 (VB)
                   href: access/desktop-database-reference/views-refresh-method-example-vb.md
               - name: Microsoft Visual C++ での ADOX コードの例
-                href: access/desktop-database-reference/adox-code-examples-in-microsoft-visual-c-topics.md
+                href: access/desktop-database-reference/adox-code-examples-in-microsoft-visual-c.md
                 items:
-                - name: Microsoft Visual C++ での ADOX コードの例
-                  href: access/desktop-database-reference/adox-code-examples-in-microsoft-visual-c.md
                 - name: Attributes プロパティの使用例 (VC++)
                   href: access/desktop-database-reference/attributes-property-example-vc.md
                 - name: Catalog の ActiveConnection プロパティの使用例 (VC++)
@@ -12592,9 +12376,9 @@ items:
     href: swayuri.md
   - name: Office URI スキーム
     href: office-uri-schemes.md
-ms.openlocfilehash: df26ee538c123ab874a29b94e78322683b12e0d3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: cf1b67706f1d090d21e8c8da48cfe6b844addf6d
+ms.sourcegitcommit: 007141520d6479860f452371532f9267f33eb260
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25453825"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999516"
