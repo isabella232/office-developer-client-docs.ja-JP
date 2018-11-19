@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250201(v=office.15)
 ms:contentKeyID: 48548521
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ba6b6ff2d373a8b05d0839d4cc113f48b47d8cad
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: 4b5c18aa12519e9206702eb2a152e6f0d084edc9
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949587"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026345"
 ---
 # <a name="submitchanges-method-rds"></a>SubmitChanges メソッド (RDS)
 
@@ -25,7 +25,7 @@ ms.locfileid: "25949587"
 
 *DataFactory*。SubmitChanges*接続*、*レコード セット*
 
-## <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>Parameters
 
 |パラメーター|説明|
 |:--------|:----------|
@@ -36,7 +36,7 @@ ms.locfileid: "25949587"
 
 ## <a name="remarks"></a>解説
 
-[RDS.DataControl](connect-property-rds.md) オブジェクトで [SubmitChanges](server-property-rds.md) メソッドを使用するには、その前に [Connect](https://msdn.microsoft.com/library/jj248989\(v=office.15\)) プロパティ、 **Server** プロパティ、および **SQL** プロパティを設定しておく必要があります。
+[RDS.DataControl](connect-property-rds.md) オブジェクトで [SubmitChanges](server-property-rds.md) メソッドを使用するには、その前に [Connect](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado) プロパティ、 **Server** プロパティ、および **SQL** プロパティを設定しておく必要があります。
 
 [SubmitChanges](cancelupdate-method-rds.md) を呼び出した後に同じ **Recordset** オブジェクトに対して **CancelUpdate** メソッドを呼び出しても、既に変更がコミットされているため、その **CancelUpdate** 呼び出しは失敗します。
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249652(v=office.15)
 ms:contentKeyID: 48546397
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: de0d78a0387c783e18aaa34ce81cf7edab846055
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 3a1ea2a2b195711a1bdd30150fc675bc4c71a270
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946889"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026357"
 ---
 # <a name="datacontrol-properties-methods-and-events-rds"></a>DataControl のプロパティ、メソッド、およびイベント (RDS)
 
@@ -32,7 +32,7 @@ ms.locfileid: "25946889"
 - [Server プロパティ (RDS)](server-property-rds.md)
 - [SortColumn プロパティ (RDS)](sortcolumn-property-rds.md)
 - [SortDirection プロパティ (RDS)](sortdirection-property-rds.md)
-- [SQL プロパティ (RDS)](https://msdn.microsoft.com/library/jj248989\(v=office.15\))
+- [SQL プロパティ (RDS)](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado)
 - [URL プロパティ (RDS)](url-property-rds.md)
 
 

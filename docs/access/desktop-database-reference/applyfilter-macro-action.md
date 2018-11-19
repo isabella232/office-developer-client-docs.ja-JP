@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm79035
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 782445e9d0bb12054d41ac780c86d5d6f1a32972
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: f6f0511a1358e8d9b0d0ee820e83cf59d2400345
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926662"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025968"
 ---
 # <a name="applyfilter-macro-action"></a>ApplyFilter マクロ アクション
 
@@ -44,13 +44,7 @@ ms.locfileid: "25926662"
 <tbody>
 <tr class="odd">
 <td><p>Filter Name</p></td>
-<td><p>テーブル、フォーム、またはレポートのレコードの制限または並べ替えを行うフィルターまたはクエリの名前を指定します。[ <strong>マクロ ビルダー</strong>] ウィンドウの [ <strong>アクションの引数</strong>] セクションの [ <strong>フィルター名</strong>] ボックスに、既存のクエリ、またはクエリとして保存されているフィルターの名前を入力できます。  </p>
-
-> [!NOTE]
-> このアクションを使用してサーバー フィルターを適用するには、Filter Name 引数を空白にしておく必要があります。
-
-
-<p></p></td>
+<td><p>テーブル、フォーム、またはレポートのレコードの制限または並べ替えを行うフィルターまたはクエリの名前を指定します。[ <strong>マクロ ビルダー</strong>] ウィンドウの [ <strong>アクションの引数</strong>] セクションの [ <strong>フィルター名</strong>] ボックスに、既存のクエリ、またはクエリとして保存されているフィルターの名前を入力できます。  </p><p><strong>注</strong>: サーバー フィルターを適用するのにはこのアクションを使用する場合、[フィルター名] 引数が空白する必要があります。</p></td>
 </tr>
 <tr class="even">
 <td><p>Where Condition</p></td>

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195882(v=office.15)
 ms:contentKeyID: 48545671
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d53bb8b6e4520810b98bfe81c9d35186a2392904
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: c93f312dd9b43a3235f049b9e6d3f95d08eba87f
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928594"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025596"
 ---
 # <a name="lookuprecord-data-block"></a>不一致データのブロック
 
@@ -43,13 +43,7 @@ ms.locfileid: "25928594"
 <tr class="odd">
 <td><p>In</p></td>
 <td><p>はい</p></td>
-<td><p>操作対象のレコードを識別する文字列です。 <em></em>引数は、テーブル、選択クエリ、または SQL ステートメントの名前を含めることができます。</p>
-
-> [!NOTE]
-> 指定したレコードには、リンク テーブルまたは ODBC データ ソース内のデータを含めることはできません。
-
-
-<p></p></td>
+<td><p>操作対象のレコードを識別する文字列です。 <em></em>引数は、テーブル、選択クエリ、または SQL ステートメントの名前を含めることができます。</p><p><strong>注</strong>: 指定されたレコードは、リンク テーブルまたは ODBC データ ソースに格納されたデータを含めることはできません。</p></td>
 </tr>
 <tr class="even">
 <td><p>Where Condition/Where 条件式</p></td>
@@ -65,7 +59,7 @@ ms.locfileid: "25928594"
 </table>
 
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 ** *条件*引数で指定した抽出条件は、複数のレコードを指定する場合、**不一致**のデータ ブロック、最初のレコードにのみ動作します。
 

@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff844937(v=office.15)
 ms:contentKeyID: 48543052
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cd5350248c33b344695a02020b4b91bdbb1bb984
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 8ce6b1ae1ab15a25eca61a22049d538736c3672d
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937177"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026184"
 ---
 # <a name="comparison-of-microsoft-access-sql-and-ansi-sql"></a>Microsoft Access SQL と ANSI SQL の比較
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -22,15 +21,15 @@ Microsoft Access データベース エンジン SQL は、ANSI 文字セット 
 
 ## <a name="major-differences"></a>主な相違点
 
-  - Microsoft Office Access SQL と ANSI SQL とでは、異なる予約語およびデータ型があります。詳細については、「[SQL 予約語](sql-reserved-words.md)」および「[Microsoft Jet データベース エンジン SQL と ANSI SQL のデータ型](equivalent-ansi-sql-data-types.md)」を参照してください。Microsoft Office Access Database Engine OLE DB Provider と組み合わせて使うと、追加の予約語を使用できます。
+- Microsoft Office Access SQL と ANSI SQL とでは、異なる予約語およびデータ型があります。詳細については、「[SQL 予約語](sql-reserved-words.md)」および「[Microsoft Jet データベース エンジン SQL と ANSI SQL のデータ型](equivalent-ansi-sql-data-types.md)」を参照してください。Microsoft Office Access Database Engine OLE DB Provider と組み合わせて使うと、追加の予約語を使用できます。
 
-  - **[Between...And](https://msdn.microsoft.com/library/ff192436\(v=office.15\))**
+- **[Between...And](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/and-operator)**
     
-    *式 1*\[いない\]**の間で** *value1* **と** *value2*
+  *式 1*\[いない\]**の間で** *value1* **と** *value2*
     
-    Microsoft Access SQL では、引数 *value1* に引数 *value2* より大きい値を指定できますが、ANSI SQL では引数 *value1* は必ず引数 *value2* 以下の値である必要があります。
+  Microsoft Access SQL では、引数 *value1* に引数 *value2* より大きい値を指定できますが、ANSI SQL では引数 *value1* は必ず引数 *value2* 以下の値である必要があります。
 
-  - Microsoft Office Access SQL では、ANSI SQL の[ワイルドカード文字](using-wildcard-characters-in-string-comparisons.md)と、 **[Like](https://msdn.microsoft.com/library/ff195752\(v=office.15\))** 演算子の指定項目の中で使われる Microsoft Office Access データベース エンジンに固有のワイルドカード文字の両方がサポートされています。ANSI SQL のワイルドカード文字と Microsoft Office Access データベース エンジンに固有のワイルドカード文字は互いに排他的です。このため、これらを同時に使用することはできず、どちらか一方を使用する必要があります。ANSI SQL のワイルドカード文字を使用できるのは、Microsoft Office Access データベース エンジンと Microsoft Office Access Database Engine OLE DB Provider を組み合わせて使う場合だけです。Microsoft Office Access または DAO を介して ANSI SQL のワイルドカード文字を使うと、リテラルとして解釈されます。Microsoft Office Access Database Engine OLE DB Provider を使用しているときは、Microsoft Office Access データベース エンジンのワイルドカード文字がリテラルとして解釈されます。
+- Microsoft Office Access SQL では、ANSI SQL の[ワイルドカード文字](using-wildcard-characters-in-string-comparisons.md)と、 **[Like](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/like-operator-microsoft-access-sql)** 演算子の指定項目の中で使われる Microsoft Office Access データベース エンジンに固有のワイルドカード文字の両方がサポートされています。ANSI SQL のワイルドカード文字と Microsoft Office Access データベース エンジンに固有のワイルドカード文字は互いに排他的です。このため、これらを同時に使用することはできず、どちらか一方を使用する必要があります。ANSI SQL のワイルドカード文字を使用できるのは、Microsoft Office Access データベース エンジンと Microsoft Office Access Database Engine OLE DB Provider を組み合わせて使う場合だけです。Microsoft Office Access または DAO を介して ANSI SQL のワイルドカード文字を使うと、リテラルとして解釈されます。Microsoft Office Access Database Engine OLE DB Provider を使用しているときは、Microsoft Office Access データベース エンジンのワイルドカード文字がリテラルとして解釈されます。
     
     <table>
     <colgroup>
@@ -60,25 +59,25 @@ Microsoft Access データベース エンジン SQL は、ANSI 文字セット 
     </table>
 
 
-  - 一般的に、Microsoft Access SQL の方が ANSI SQL よりも制限がありません。たとえば、式のグループ化や並べ替えが可能です。
+- 一般的に、Microsoft Access SQL の方が ANSI SQL よりも制限がありません。たとえば、式のグループ化や並べ替えが可能です。
 
-  - Microsoft Access SQL では、ANSI SQL よりも強力な式がサポートされています。
+- Microsoft Access SQL では、ANSI SQL よりも強力な式がサポートされています。
 
 ## <a name="enhanced-features-of-microsoft-access-sql"></a>Microsoft Access SQL の拡張機能
 
 Microsoft Access SQL には、次の拡張機能があります。
 
-  - クロス集計クエリをサポートする [TRANSFORM](transform-statement-microsoft-access-sql.md) ステートメント。
+- クロス集計クエリをサポートする [TRANSFORM](transform-statement-microsoft-access-sql.md) ステートメント。
 
-  - [StDev](sql-aggregate-functions-sql.md) や **VarP** などの **集計関数**。
+- [StDev](sql-aggregate-functions-sql.md) や **VarP** などの **集計関数**。
 
-  - パラメーター クエリの定義に使用する [PARAMETERS](parameters-declaration-microsoft-access-sql.md) 宣言。
+- パラメーター クエリの定義に使用する [PARAMETERS](parameters-declaration-microsoft-access-sql.md) 宣言。
 
-## <a name="ansi-sql-features-not-supported-in-microsoft-access-sql"></a>Microsoft Access SQL でサポートされていない ANSI SQL の機能
+## <a name="ansi-sql-features-not-supported-in-microsoft-access-sql"></a>Microsoft Access SQL ではサポートされていない ANSI SQL の機能
 
 Microsoft Access SQL では、ANSI SQL の次の機能がサポートされていません。
 
-  - DISTINCT 集計関数の参照。たとえば、Microsoft Access SQL では、SUM(DISTINCT *columnname*) のような DISTINCT 集計関数の参照がサポートされていません。
+- DISTINCT 集計関数の参照。たとえば、Microsoft Access SQL では、SUM(DISTINCT *columnname*) のような DISTINCT 集計関数の参照がサポートされていません。
 
-  - 制限する*nn* ROWS 句クエリで返される行の数を制限するために使用します。 クエリの適用範囲を制限するために使用できるのは、 [WHERE 句](https://msdn.microsoft.com/library/ff195245\(v=office.15\))のみです。
+- 制限する*nn* ROWS 句クエリで返される行の数を制限するために使用します。 クエリの適用範囲を制限するために使用できるのは、 [WHERE 句](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql)のみです。
 

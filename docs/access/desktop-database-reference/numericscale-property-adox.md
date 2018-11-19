@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250197(v=office.15)
 ms:contentKeyID: 48548501
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c7dd53830216c302d68adf44e1bea88bbc52e980
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 1b1a15f78463ca0ff6e690b600b9cdca7cc194c7
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921314"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025960"
 ---
 # <a name="numericscale-property-adox"></a>NumericScale プロパティ (ADOX)
 
@@ -22,7 +22,7 @@ ms.locfileid: "25921314"
 
 ## <a name="settings-and-return-values"></a>設定値および戻り値
 
-**Type** プロパティが [adNumeric](https://msdn.microsoft.com/library/jj249169\(v=office.15\)) または **adDecimal** の場合、列にあるデータ値の小数点以下の桁数をバイト型 ( **Byte** ) の値で設定および取得します。その他のすべてのデータ型では、 **NumericScale** は無視されます。
+**Type** プロパティが [adNumeric](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-columnadox) または **adDecimal** の場合、列にあるデータ値の小数点以下の桁数をバイト型 ( **Byte** ) の値で設定および取得します。その他のすべてのデータ型では、 **NumericScale** は無視されます。
 
 ## <a name="remarks"></a>解説
 

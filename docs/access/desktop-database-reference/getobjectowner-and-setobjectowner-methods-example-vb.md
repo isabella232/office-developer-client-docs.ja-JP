@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248833(v=office.15)
 ms:contentKeyID: 48543146
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 67b970f50ab6928e94741cf70be30aa88fddfdae
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: ec71ee93a0c513b9a613c9f1c1a8a6b7d39a6d4e
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25887454"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025890"
 ---
 # <a name="getobjectowner-and-setobjectowner-methods-example-vb"></a>GetObjectOwner メソッドと SetObjectOwner メソッドの使用例 (VB)
 
 
 **適用されます**Access 2013、Office 2013。
 
-この例では、[GetObjectOwner](getobjectowner-method-adox.md) メソッドと [SetObjectOwner](https://msdn.microsoft.com/library/jj249006\(v=office.15\)) メソッドの機能を示します。 このコード グループの存在を前提としています (参照[グループおよびユーザーの追加、パスワードの変更方法の例 (VB)](groups-and-users-append-changepassword-methods-example-vb.md)をこのグループをシステムに追加する方法を参照してください) の会計です。 Categories テーブルの所有者は Accounting に設定されます。
+この例では、[GetObjectOwner](getobjectowner-method-adox.md) メソッドと [SetObjectOwner](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) メソッドの機能を示します。 このコード グループの存在を前提としています (参照[グループおよびユーザーの追加、パスワードの変更方法の例 (VB)](groups-and-users-append-changepassword-methods-example-vb.md)をこのグループをシステムに追加する方法を参照してください) の会計です。 Categories テーブルの所有者は Accounting に設定されます。
 
 ```vb 
  

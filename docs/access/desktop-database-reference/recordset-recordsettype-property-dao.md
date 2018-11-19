@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm13361
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e521c4de48f45d080a3b201ac431b2d7da14bc22
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: e4babfce754ec0e9c4744142570054c0249936f8
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923225"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026212"
 ---
 # <a name="recordsetrecordsettype-property-dao"></a>Recordset.RecordsetType プロパティ (DAO)
 
@@ -65,12 +65,8 @@ Microsoft Office Access データベースでは、" **RecordsetType**/レコー
 </tbody>
 </table>
 
-
-
 > [!NOTE]
 > [!メモ] フォームをフォーム ビューまたはデータシート ビューで表示しているときに、連結コントロール内のデータを編集できないようにするには、" **RecordsetType**/レコードセット" プロパティを 2 に設定します。
-
-
 
 Microsoft Office Access プロジェクト (.adp) では、" **RecordsetType**/レコードセット" プロパティの設定値は次のとおりです。
 
@@ -101,12 +97,8 @@ Microsoft Office Access プロジェクト (.adp) では、" **RecordsetType**/�
 </tbody>
 </table>
 
-
-
 > [!NOTE]
 > [!メモ] 開いているフォームまたはレポートの " **RecordsetType**/レコードセット" プロパティを変更すると、自動的にレコードセットが再作成されます。
-
-
 
 複数のテーブルを基にフォームを作成し、コントロールをフィールドと連結させることができます。" **RecordsetType**/レコードセット" プロパティの設定値によって、どのコントロールを編集可能にするかを制限できます。
 

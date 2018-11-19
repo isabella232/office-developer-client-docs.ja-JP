@@ -1,19 +1,19 @@
 ---
-title: 集計関数、CALC 関数、および NEW キーワード
+title: 集計関数、CALC 関数、NEW キーワード
 TOCTitle: Aggregate functions, the CALC function, and the NEW keyword
 ms:assetid: c91fef19-bf41-8d04-f195-5470fb18393f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249977(v=office.15)
 ms:contentKeyID: 48547669
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: db726ea0b51a345e0e40c9814cef100b90b1350f
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: fb3e667a23d5bfd1d3dda5b4eb8dbd60a47e36ba
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947890"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025988"
 ---
-# <a name="aggregate-functions-the-calc-function-and-the-new-keyword"></a>集計関数、CALC 関数、および NEW キーワード
+# <a name="aggregate-functions-the-calc-function-and-the-new-keyword"></a>集計関数、CALC 関数、NEW キーワード
 
 
 **適用されます**Access 2013、Office 2013。
@@ -61,17 +61,12 @@ ms.locfileid: "25947890"
 <tr class="odd">
 <td><p>任意 (<em>チャプター エイリアス</em>です<em>。列名</em>)</p></td>
 <td><p>指定された列の値です。ANY の値を予測できるのは、その列の値がチャプター内の全行について同じである場合のみです。
-</p>
-
-> [!NOTE]
-> 列の値がチャプター内の全行について同じでない場合、SHAPE コマンドは、ANY 関数の値として、複数ある値のうち任意のものを 1 つ返します。
-
-
-<p></p></td>
+</p><p><strong>注</strong>: 列に、章内の行のすべてに同じ値が含まれていない場合 SHAPE コマンド任意に返す任意の関数の値を指定する値の 1 つです。</p></td>
 </tr>
 </tbody>
 </table>
 
+<br/>
 
 <table>
 <colgroup>
@@ -92,6 +87,7 @@ ms.locfileid: "25947890"
 </tbody>
 </table>
 
+<br/>
 
 <table>
 <colgroup>
@@ -112,6 +108,7 @@ ms.locfileid: "25947890"
 </tbody>
 </table>
 
+<br/>
 
 NEW キーワードと共に渡す*フィールドの型*には、次のデータ型のいずれかを指定できます。
 

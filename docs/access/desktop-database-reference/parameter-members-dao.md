@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192517(v=office.15)
 ms:contentKeyID: 48544228
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cd6f2621b65a0584d79ef72bbba0341b8391ccf1
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: e62125ee61598d6be125f9edb01f2aa4531043b9
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937597"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026072"
 ---
 # <a name="parameter-members-dao"></a>パラメーターのメンバー (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -36,12 +35,7 @@ Parameter オブジェクトは、クエリに指定する値を表します。�
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="parameter-direction-property-dao.md">Direction</a></strong></p></td>
-<td><p></p>
-
-> [!NOTE]
-> [!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。
-
-
+<td><p><strong>注</strong>: Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Office Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p>
 <p><strong><a href="parameter-object-dao.md">Parameter</a></strong> オブジェクトが入力パラメーター、出力パラメーター、その両方、またはプロシージャからの戻り値のいずれを表すかを示す値を設定または取得します (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
@@ -53,7 +47,7 @@ Parameter オブジェクトは、クエリに指定する値を表します。�
 <td><p>指定したオブジェクトの <strong><a href="properties-collection-dao.md">Properties</a></strong> コレクションを取得します。値の取得のみ可能です。  </p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="parameter-type-property-dao.md">型</a></strong></p></td>
+<td><p><strong><a href="parameter-type-property-dao.md">Type</a></strong></p></td>
 <td><p>オブジェクトの操作の種類またはデータ型を示す値を設定または取得します。値の取得および設定が可能です。整数型 ( <strong>Integer</strong> ) の値を使用します。</p></td>
 </tr>
 <tr class="odd">

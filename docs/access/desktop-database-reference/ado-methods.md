@@ -6,14 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248984(v=office.15)
 ms:contentKeyID: 48543651
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3649a7146c0d6ab70bc5f785404f03269df1540b
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
+ms.openlocfilehash: 5d5b08478b714a9b70e5cb08daff6e04b8883071
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910804"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026380"
 ---
-# <a name="ado-methods"></a>ADO メソッド
+# <a name="ado-methods"></a>ADO のメソッド
 
 **適用されます**Access 2013、Office 2013。
 
@@ -105,11 +105,11 @@ ms.locfileid: "25910804"
 <td><p>ファイルまたはディレクトリとそのすべてのサブディレクトリを削除します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/jj248785(v=office.15)">(ADO コマンド) を実行します。</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command">(ADO コマンド) を実行します。</a></p></td>
 <td><p><strong>CommandText</strong> プロパティで指定されたクエリ、SQL ステートメント、またはストアド プロシージャを実行します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/jj249832(v=office.15)">(ADO 接続の場合) を実行します。</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection">(ADO 接続の場合) を実行します。</a></p></td>
 <td><p>指定されたクエリ、SQL ステートメント、ストアド プロシージャ、またはプロバイダー固有のテキストを実行します。</p></td>
 </tr>
 <tr class="odd">

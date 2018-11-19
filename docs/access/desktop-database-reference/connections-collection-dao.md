@@ -6,23 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195178(v=office.15)
 ms:contentKeyID: 48545330
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f47b3ca15e51211a8593c5e177f53507128b2f76
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: ca6acbea99dd2a6dcb434cf4c4d18a0a065af133
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936582"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026016"
 ---
 # <a name="connections-collection-dao"></a>接続のコレクション (DAO)
 
-
 **適用されます**Access 2013、Office 2013。
-
 
 > [!NOTE]
 > [!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。
-
-
 
 **Connections** コレクションには、 **Workspace** オブジェクトの現在の **Connection** オブジェクトが含まれます (ODBCDirect ワークスペースのみ)。
 
@@ -34,16 +30,15 @@ ms.locfileid: "25936582"
 
 **Connection** の **Name** プロパティの設定は、データベース ファイルを指定するための文字列です。コレクション内の **Connection** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。
 
-  - **Connections**(0)
+- **Connections**(0)
 
-  - **接続**(以下「*名前*」)
+- **接続**(以下「*名前*」)
 
-  - **接続**\!\[*名*\]
+- **接続**\!\[*名*\]
 
 
 > [!NOTE]
 > [!メモ] **Connections** コレクションに重複する名前を作成して同じデータ ソースを複数回開くことができます。 **Connection** オブジェクトをオブジェクト変数に割り当てて変数名で参照する必要があります。
-
 
 
 ## <a name="example"></a>例

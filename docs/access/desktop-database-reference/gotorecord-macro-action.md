@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm58124
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 5986b8e891b42ce37cb68d8ce06e7f33feba1b8f
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 3840576f343492724c6f30860ceab8b82c9e2b9e
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937730"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026002"
 ---
 # <a name="gotorecord-macro-action"></a>GoToRecord マクロ アクション
 
@@ -57,18 +57,12 @@ ms.locfileid: "25937730"
 <td><p>整数型または整数値に評価される式です。 式の前に等号 (=) (<strong>=</strong>)。 この引数は、カレント レコードのレコードを指定します。 2 つの方法では、<strong>この引数</strong>を使用できます。</p>
 <ul>
 <li><p><strong>Record</strong>引数は、<strong>次</strong>または<strong>前</strong>に、Microsoft Office Access 2007 は、前方または後方は、<strong>この引数</strong>で指定されたレコードの数を移動します。</p></li>
-<li><p><strong>レコード</strong>の引数が<strong>移動先</strong>にある場合は、<strong>オフセット</strong>の引数に等しい数のレコードに移動します。 レコード番号は、ウィンドウの下部にあるレコード番号ボックスに表示されます。</p></li>
-</ul>
-
-> [!NOTE]
-> **** **最初**、**最後**、または**新規**の設定を使用する場合 **、この引数**は無視されます。 大きすぎて**オフセット**の引数を入力する場合は、エラー メッセージが表示されます。 **オフセット**の引数に負の値を入力できません。
-
-
-<p></p>
-<ul>
+<li><p><strong>レコード</strong>の引数が<strong>移動先</strong>にある場合は、<strong>オフセット</strong>の引数に等しい数のレコードに移動します。 レコード番号は、ウィンドウの下部にあるレコード番号ボックスに表示されます。</p>
+<p><strong>注</strong>:<strong>最初</strong>、<strong>最後</strong>、または<strong>新しい</strong><strong>レコード</strong>の引数の設定を使用する場合<strong>、この引数</strong>は無視されます。 大きすぎて<strong>オフセット</strong>の引数を入力する場合は、エラー メッセージが表示されます。 <strong>オフセット</strong>の引数に負の値を入力できません。</p></li>
 <li><p><strong>Record</strong>引数は、<strong>次</strong>または<strong>前</strong>に、Microsoft Office Access 2007 は、前方または後方は、<strong>この引数</strong>で指定されたレコードの数を移動します。</p></li>
 <li><p><strong>レコード</strong>の引数が<strong>移動先</strong>にある場合は、<strong>オフセット</strong>の引数に等しい数のレコードに移動します。 レコード番号は、ウィンドウの下部にあるレコード番号ボックスに表示されます。</p></li>
-</ul></td>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>

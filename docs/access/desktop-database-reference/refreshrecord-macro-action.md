@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm62122
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4b7ec534579b070d342fe2efd80af44e2ea921ef
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 5e842ed4898f98f0d3c51955c3fb66010ef02853
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927271"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026198"
 ---
 # <a name="refreshrecord-macro-action"></a>RefreshRecord マクロ アクション
 
@@ -32,7 +32,7 @@ ms.locfileid: "25927271"
 
 ## <a name="client-database"></a>クライアント データベースの場合
 
-クライアント データベースでは、アクティブ フォームまたはアクティブ データシートの現在のセット内のデータに加えられた変更を反映するために基になるレコード ソースを更新するのに**RefreshRecord**アクションを使用できます。 現在のユーザーによって、またはマルチ ユーザー環境で他のユーザーによって加えられた変更も含まれます。 **[Refresh](https://msdn.microsoft.com/library/ff836021\(v=office.15\))** メソッドと同じであります。
+クライアント データベースでは、アクティブ フォームまたはアクティブ データシートの現在のセット内のデータに加えられた変更を反映するために基になるレコード ソースを更新するのに**RefreshRecord**アクションを使用できます。 現在のユーザーによって、またはマルチ ユーザー環境で他のユーザーによって加えられた変更も含まれます。 **[Refresh](https://docs.microsoft.com/office/vba/api/Access.Form.Refresh)** メソッドと同じであります。
 
 **RefreshRecord**マクロ アクションでは、クライアント データベースで、次が行われます。
 

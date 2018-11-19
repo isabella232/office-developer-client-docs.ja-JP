@@ -1,20 +1,19 @@
 ---
 title: ワイルドカードによる文字列の比較
-TOCTitle: Using Wildcard Characters in String Comparisons
+TOCTitle: Using wildcard characters in string comparisons
 ms:assetid: 37dda2b8-c710-4f73-bb2a-76a1348c42fe
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192499(v=office.15)
 ms:contentKeyID: 48544205
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bc45b71f1b70f1a36a9456f3ab83612933af11f6
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 9fb6c63d5d2db1db54d52a03fef41e44a29f42c9
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946707"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026166"
 ---
-# <a name="using-wildcard-characters-in-string-comparisons"></a>文字列比較でワイルドカード文字を使用します。
-
+# <a name="using-wildcard-characters-in-string-comparisons"></a>ワイルドカードによる文字列の比較
 
 **適用されます**Access 2013、Office 2013。
 
@@ -64,11 +63,11 @@ ms.locfileid: "25946707"
 
 パターン マッチングに関する重要な規則としては、これ以外に次のようなものがあります。
 
-  - 感嘆符 (\!)*式*で見つかった*charlist*の以外の文字がある場合に一致が行われたが*charlist*の先頭にします。 角かっこの外側に置くと、感嘆符そのものに一致します。
+- 感嘆符 (\!)*式*で見つかった*charlist*の以外の文字がある場合に一致が行われたが*charlist*の先頭にします。 角かっこの外側に置くと、感嘆符そのものに一致します。
 
-  - 自体を比較するのには先頭 (感嘆符を使用する場合) または*charlist*の最後にあるハイフン (-) を使用できます。 それ以外の位置に置かれた場合は、文字の範囲を示します。
+- 自体を比較するのには先頭 (感嘆符を使用する場合) または*charlist*の最後にあるハイフン (-) を使用できます。 それ以外の位置に置かれた場合は、文字の範囲を示します。
 
-  - 文字の範囲は、[A-Z]、[あ-ん]、[0-9] などのように昇順で指定する必要があります。 \[A ~ Z\]は、有効なパターンが、 \[Z A\]ではありません。
+- 文字の範囲は、[A-Z]、[あ-ん]、[0-9] などのように昇順で指定する必要があります。 \[A ~ Z\]は、有効なパターンが、 \[Z A\]ではありません。
 
-  - 文字シーケンス\[\]は無視されます。長さ 0 の文字列と見なされます ("")。
+- 文字シーケンス\[\]は無視されます。長さ 0 の文字列と見なされます ("")。
 

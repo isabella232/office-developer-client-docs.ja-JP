@@ -10,29 +10,26 @@ f1_keywords:
 - jetsql40.chm5277473
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 6e312bf0b6092df88f86f4bbf843d7951f3c86cc
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 4e841da9d401558311682f0abcbefde9161b71b3
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947876"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025995"
 ---
 # <a name="odbc-scalar-functions"></a>ODBC スカラー関数
 
-
 **適用されます**Access 2013、Office 2013。
 
-Microsoft Access SQL では、スカラー関数で ODBC 定義構文を使用をサポートしています。 たとえば、次のようなクエリがあるとします。
+Microsoft Access SQL では、スカラー関数で ODBC 定義構文を使用をサポートしています。 
 
-SELECT DAILYCLOSE, DAILYCHANGE FROM DAILYQUOTE WHERE {fn ABS(DAILYCHANGE)} \> 5
-
-このクエリは、株式価格の変化の絶対値が 5 よりも大きいすべての列を返します。
+クエリでは、 `SELECT DAILYCLOSE, DAILYCHANGE FROM DAILYQUOTE WHERE {fn ABS(DAILYCHANGE)} > 5` 、株式の価格の変化の絶対値が 5 より大きい場合、すべての行を返します。
 
 ODBC 定義構文を使用できるスカラー関数のサブセットがサポートされています。次の表は、使用できるスカラー関数の一覧を示します。
 
 SQL ステートメントで関数を使用するためのエスケープ構文の完全な説明と、引数の記述方法については、ODBC のマニュアルを参照してください。
 
-## <a name="string-functions"></a>文字列を処理する関数
+## <a name="string-functions"></a>文字列関数
 
 <table>
 <colgroup>
@@ -70,7 +67,7 @@ SQL ステートメントで関数を使用するためのエスケープ構文�
 </table>
 
 
-## <a name="numeric-functions"></a>数値を処理する関数
+## <a name="numeric-functions"></a>数値関数
 
 <table>
 <colgroup>
@@ -108,7 +105,7 @@ SQL ステートメントで関数を使用するためのエスケープ構文�
 </table>
 
 
-## <a name="time--date-functions"></a>時間と日付
+## <a name="time--date-functions"></a>時刻と日付の関数
 
 <table>
 <colgroup>

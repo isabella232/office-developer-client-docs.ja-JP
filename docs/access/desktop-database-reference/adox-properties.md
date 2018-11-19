@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249480(v=office.15)
 ms:contentKeyID: 48545675
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a7bf5ee16987ba72c6f191b5f74390b26cf90ceb
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
+ms.openlocfilehash: bcad6b9e1c106bb365b0594e1e2cb32df33f0b23
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910902"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026093"
 ---
 # <a name="adox-properties"></a>ADOX のプロパティ
 
@@ -26,7 +26,7 @@ ms.locfileid: "25910902"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>プロパティ</p></th>
+<th><p>Property</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
@@ -36,7 +36,7 @@ ms.locfileid: "25910902"
 <td><p>カタログが属する ADO<strong>接続</strong>オブジェクトを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="attributes-property-adox.md">Attributes</a></p></td>
+<td><p><a href="attributes-property-adox.md">属性</a></p></td>
 <td><p>列の属性を示します。</p></td>
 </tr>
 <tr class="odd">
@@ -108,15 +108,15 @@ ms.locfileid: "25910902"
 <td><p>列の並べ替え順序を示します (インデックス列のみ)。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/jj249169(v=office.15)">(列) の種類</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-columnadox">(列) の種類</a></p></td>
 <td><p>列データの型を示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/jj248879(v=office.15)">(キー) の入力</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-keyadox">(キー) の入力</a></p></td>
 <td><p>キーのデータ型を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/jj250042(v=office.15)">タイプ (テーブル)</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-tableadox">タイプ (テーブル)</a></p></td>
 <td><p>テーブルの種類を示します。</p></td>
 </tr>
 <tr class="odd">

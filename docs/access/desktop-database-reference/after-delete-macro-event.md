@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm15155
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 943f16c5bb1f1525c8da36938fa6beb2e6f71444
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 8f72083201fefffc5dfff4627cd3b54c1449e083
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929798"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026058"
 ---
 # <a name="after-delete-macro-event"></a>After Delete マクロ イベント
-
 
 **適用されます**Access 2013、Office 2013。
 
 **後 Delete**イベントは、レコードが削除された後に発生します。
 
-
 > [!NOTE]
 > **削除した後**のイベントは、データ マクロでのみ使用可能です。
-
-
 
 ## <a name="remarks"></a>備考
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250065(v=office.15)
 ms:contentKeyID: 48547945
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 75e0422b6c6fcd2f893777884d35bade81a793f6
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
+ms.openlocfilehash: 6255acb0d9b7678fd8a8105bb7d0dcbdbd453d39
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997043"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025785"
 ---
 # <a name="stream-object-ado"></a>Stream オブジェクト (ADO)
 
@@ -54,7 +54,7 @@ ms.locfileid: "25997043"
 
   - **Cancel** メソッドを使用して、非同期 [Stream](cancel-method-ado.md) 操作を停止できます。
 
-  - **Size** プロパティを使用して、 [Stream](https://msdn.microsoft.com/library/jj250128\(v=office.15\)) 内のバイト数を設定できます。
+  - **Size** プロパティを使用して、 [Stream](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream) 内のバイト数を設定できます。
 
   - **Position** プロパティを使用して、 [Stream](position-property-ado.md) 内の現在の位置を制御できます。
 

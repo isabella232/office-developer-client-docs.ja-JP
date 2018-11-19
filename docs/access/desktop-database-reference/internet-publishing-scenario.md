@@ -1,19 +1,19 @@
 ---
-title: インターネット公開シナリオ
+title: Internet Publishing シナリオ
 TOCTitle: Internet publishing scenario
 ms:assetid: 25a3fa8b-86ec-9e72-5e62-bf0d849479b7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249024(v=office.15)
 ms:contentKeyID: 48543790
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7d502c95b985d83f5c19f68d3477a678c5471c54
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 1f481c4bc5cf11f9345458b3859c099b40a79885
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945874"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026450"
 ---
-# <a name="internet-publishing-scenario"></a>インターネット公開シナリオ
+# <a name="internet-publishing-scenario"></a>Internet Publishing シナリオ
 
 **適用されます**Access 2013、Office 2013。
 
@@ -36,7 +36,7 @@ ms.locfileid: "25945874"
 
 2.  **プロジェクト**] メニューの [**参照設定**] をクリックします。
 
-3.  選択 **"Microsoft ActiveX データ オブジェクトの 2.5 ライブラリ**"[ **OK**] をクリックします。
+3.  **Microsoft ActiveX データ オブジェクトの 2.5 ライブラリ**を選択し、し、[ **OK**] をクリックします。
 
 ### <a name="insert-controls-on-the-main-form"></a>メイン フォーム上のコントロールを挿入します。
 

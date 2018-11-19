@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250238(v=office.15)
 ms:contentKeyID: 48548673
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c8e9e6e655198cba28ece0951414af85ec14f26f
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 07031639b707fc24a3e5b057520c601c9472b01b
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25878060"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026317"
 ---
 # <a name="microsoft-ole-db-remoting-provider-ado-service-provider"></a>Microsoft OLE DB Remoting Provider (ADO サービス プロバイダー)
 
@@ -153,7 +153,7 @@ cn.Properties("Internet Timeout") = 5000
 
 ADO 2.0 では、OLE DB リモート プロバイダーが[レコード セット](recordset-object-ado.md)オブジェクトの**Open**メソッドの*ActiveConnection*パラメーターにのみ指定します。 ADO 2.1 以降では、プロバイダーも指定できます[Connection](connection-object-ado.md)オブジェクトの**Open**メソッドの*接続文字列*パラメーターで。
 
-**RDS.DataControl** オブジェクトの [SQL](https://msdn.microsoft.com/library/jj248989\(v=office.15\)) プロパティと等価な動的プロパティはありません。 [レコード セット](recordset-object-ado.md)オブジェクトの**Open**メソッドの*Source*引数が使用されます。
+**RDS.DataControl** オブジェクトの [SQL](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado) プロパティと等価な動的プロパティはありません。 [レコード セット](recordset-object-ado.md)オブジェクトの**Open**メソッドの*Source*引数が使用されます。
 
 "...;Remote Provider=MS Remote;..." のように指定すると 4 層のシナリオになります。3 層を超えるシナリオについてはテストは行われておらず、必要になることもありません。
 

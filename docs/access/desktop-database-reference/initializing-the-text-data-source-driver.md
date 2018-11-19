@@ -10,18 +10,18 @@ f1_keywords:
 - acmain11.chm1032166
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4248adc507a93284a15725bbda0255a3518e90a9
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
+ms.openlocfilehash: 9b240dbf55d2907b24b47349ee56e492f7d5e08d
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997470"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026464"
 ---
 # <a name="initializing-the-text-data-source-driver"></a>テキスト データ ソース ドライバーを初期化しています。
 
 **適用されます**Access 2013、Office 2013。
 
-テキスト データ ソースと HTML データ ソースには、同じデータベース ドライバーが使用されます。
+両方のデータ ソースのテキストと HTML データ ソースは、同じデータベース ドライバーが使用されます。
 
 テキスト データ ソースのデータベース ドライバーをインストールすると、セットアップ プログラムは、一連の既定値をエンジンと ISAM 形式のサブキーで、Microsoft Windows レジストリに書き込みます。 これらの設定を直接変更しないでください。追加、削除、またはこれらの設定を変更するには、アプリケーションのセットアップ プログラムを使用します。 次のセクションでは、初期設定とテキスト データ ソースのデータベース ドライバーの ISAM 形式の設定について説明します。
 
@@ -44,6 +44,8 @@ ms.locfileid: "25997470"
     
     ExportCurrencySymbols=Yes
 ```
+
+<br/>
 
 Microsoft Access データベース エンジンで使用される、Text キーのエントリを次に示します。
 

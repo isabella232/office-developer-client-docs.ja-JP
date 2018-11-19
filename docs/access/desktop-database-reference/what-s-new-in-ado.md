@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250297(v=office.15)
 ms:contentKeyID: 48548905
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 232af159c669968c9c3b4d3d65acbc181f958689
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
+ms.openlocfilehash: a36695e0d858a630ba91b954bfc9a46136e26403
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998904"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025974"
 ---
 # <a name="whats-new-in-ado"></a>ADO の新機能
 
@@ -84,7 +84,7 @@ ADO 2.5 リリースには、次に示す新機能および拡充されたマニ
 <td><p><strong>Record</strong> オブジェクトの種類を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/jj250128(v=office.15)">Size</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream">Size</a></p></td>
 <td><p>ストリームのサイズをバイト数で示します。</p></td>
 </tr>
 <tr class="odd">
@@ -96,7 +96,7 @@ ADO 2.5 リリースには、次に示す新機能および拡充されたマニ
 <td><p>対象になるすべてのオブジェクトについて、オブジェクトの状態が開いているか、閉じているかを示します。 非同期メソッドを実行する対象になるすべてのオブジェクトについて、オブジェクトの状態が接続、実行、取得のいずれであるかを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="type-property-ado-stream.md">型</a></p></td>
+<td><p><a href="type-property-ado-stream.md">Type</a></p></td>
 <td><p><strong>Stream</strong> オブジェクトに含まれるデータの種類を示します (バイナリまたはテキスト)。</p></td>
 </tr>
 </tbody>

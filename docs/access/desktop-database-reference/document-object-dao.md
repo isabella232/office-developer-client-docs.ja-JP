@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822082(v=office.15)
 ms:contentKeyID: 48547247
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 44dacdab7dc13855426bf366bda2801ddee8c022
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 4dbd7de05a3bb2402d436e4bbac59f1ca4687317
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936694"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026331"
 ---
 # <a name="document-object-dao"></a>ドキュメント オブジェクト (DAO)
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -59,27 +58,25 @@ ms.locfileid: "25936694"
 > [!NOTE]
 > [!メモ] 上記の表の **Container** オブジェクトと、同じ名前のコレクションを混同しないでください。Databases の **Container** オブジェクトは、保存されたすべてのデータベース オブジェクトを参照しますが、 **Databases** コレクションは、特定のワークスペースで開いているデータベース オブジェクトのみを参照します。
 
-
-
 **Document** オブジェクトを使用すると、以下の操作を実行できます。
 
-  - **Name** プロパティを使用して、ユーザーまたは Microsoft Access データベース エンジンがオブジェクトの作成時に付けた名前を取得します。
+- **Name** プロパティを使用して、ユーザーまたは Microsoft Access データベース エンジンがオブジェクトの作成時に付けた名前を取得します。
 
-  - **Container** プロパティを使用して、 **Document** オブジェクトを含む **Container** オブジェクトの名前を取得します。
+- **Container** プロパティを使用して、 **Document** オブジェクトを含む **Container** オブジェクトの名前を取得します。
 
-  - **Owner** プロパティを使用して、オブジェクトの所有者を設定または取得します。 **Owner** プロパティを設定するには、 **Document** オブジェクトに対する書き込み権限が必要であり、プロパティを既存の **User** オブジェクトまたは **Group** オブジェクトの名前に設定する必要があります。
+- **Owner** プロパティを使用して、オブジェクトの所有者を設定または取得します。 **Owner** プロパティを設定するには、 **Document** オブジェクトに対する書き込み権限が必要であり、プロパティを既存の **User** オブジェクトまたは **Group** オブジェクトの名前に設定する必要があります。
 
-  - **UserName** プロパティまたは **Permissions** プロパティを使用して、オブジェクトのユーザーまたはグループのアクセス権限を設定または取得します。これらのプロパティを設定するには、 **Document** オブジェクトへの書き込み権限が必要であり、 **UserName** プロパティを既存の **User** オブジェクトまたは **Group** オブジェクトの名前に設定する必要があります。
+- **UserName** プロパティまたは **Permissions** プロパティを使用して、オブジェクトのユーザーまたはグループのアクセス権限を設定または取得します。これらのプロパティを設定するには、 **Document** オブジェクトへの書き込み権限が必要であり、 **UserName** プロパティを既存の **User** オブジェクトまたは **Group** オブジェクトの名前に設定する必要があります。
 
-  - **DateCreated** プロパティを使用して、 **Document** オブジェクトが作成された日時を取得し、 **LastUpdated** プロパティを使用して、最後に変更された日時を取得します。
+- **DateCreated** プロパティを使用して、 **Document** オブジェクトが作成された日時を取得し、 **LastUpdated** プロパティを使用して、最後に変更された日時を取得します。
 
 各 **Document** オブジェクトは、既存のオブジェクトに対応しているため、 **Document** オブジェクトを新規作成したり、既存のオブジェクトを削除することはできません。コレクション内の **Document** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。
 
-  - **Documents**(0)
+- **Documents**(0)
 
-  - **ドキュメント**(以下「*名前*」)
+- **ドキュメント**(以下「*名前*」)
 
-  - **ドキュメント**\!\[*名*\]
+- **ドキュメント**\!\[*名*\]
 
 ## <a name="example"></a>例
 

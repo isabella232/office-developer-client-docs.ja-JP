@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm85126
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 237b3633ab70bcdbe84ce52f7d25b2203091cb1e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 24a6bbd951fd19e7fdd25f4f1ab8bd8e9dcd2ade
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919137"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026191"
 ---
 # <a name="after-update-macro-event"></a>After Update マクロ イベント
-
 
 **適用されます**Access 2013、Office 2013。
 
 **後の更新**イベントは、レコードが変更された後に発生します。
 
-
 > [!NOTE]
 > **更新後処理**イベントは、データ マクロでのみ使用します。
-
-
 
 ## <a name="remarks"></a>備考
 

@@ -12,12 +12,12 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: ed31f0105d8381667e1398fc5d91577d40998d81
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
+ms.openlocfilehash: 14e23b0df5344048fb510d8813a6e1bc2b9e1978
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998820"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026030"
 ---
 # <a name="union-operation-microsoft-access-sql"></a>UNION 操作 (Microsoft Access SQL)
 
@@ -62,7 +62,7 @@ FROM Customers
 WHERE OrderAmount > 1000;
 ```
 
-UNION 操作を使用する場合、特に指定しなければ重複したレコードは返されません。ただし、[ALL](https://msdn.microsoft.com/library/ff195711\(v=office.15\)) 述語を使用すると重複分を含むすべてのレコードが必ず返され、クエリの実行速度も速くなります。
+UNION 操作を使用する場合、特に指定しなければ重複したレコードは返されません。ただし、[ALL](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/all-distinct-distinctrow-top-predicates-microsoft-access-sql) 述語を使用すると重複分を含むすべてのレコードが必ず返され、クエリの実行速度も速くなります。
 
 UNION 操作でクエリが要求するフィールドの数は、すべてのクエリで同じである必要があります。ただし、フィールドのサイズやデータ型は同じである必要はありません。
 

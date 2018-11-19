@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff191889(v=office.15)
 ms:contentKeyID: 48543802
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 21609d6299caf6de5e2fe0b777796033b69d9f87
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: a809afb8e38cf23faf43d5eb49c5edadaf70b2b1
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946693"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025834"
 ---
 # <a name="indexes-collection-dao"></a>Indexes コレクション (DAO)
 
@@ -23,17 +23,13 @@ ms.locfileid: "25946693"
 
 テーブル タイプの Recordset オブジェクトにアクセスする場合は、オブジェクトの **Index** プロパティを使用してレコードの順序を指定します。このプロパティを ****Recordset**** オブジェクトの元になっている [**TableDef**](tabledef-object-dao.md) の **Indexes** コレクションの既存の [Index](recordset-object-dao.md) オブジェクトの **Name** プロパティに設定します。
 
-
 > [!NOTE]
 > [!メモ] **Append** または **Delete** メソッドを **Indexes** コレクションに使用できるのは、元になる [TableDef](connection-updatable-property-dao.md) オブジェクトの ****Updatable**** プロパティの設定が **True** の場合のみです。
 
 新しい **Index** オブジェクトを作成した後は、 **Append** メソッドを使用して **TableDef** オブジェクトの **Indexes** コレクションに追加する必要があります。
 
-
 > [!IMPORTANT]
 > [!重要] データが新しいインデックスの属性に準拠している必要があります。インデックスに一意の値が必要な場合は、既存のデータ レコードに重複値がないことを確認します。重複がある場合は、Microsoft Access データベース エンジンはインデックスを作成できません。新しいインデックスに Append メソッドを使用しようとすると、トラップ可能なエラーが発生します。
-
-
 
 ## <a name="example"></a>例
 

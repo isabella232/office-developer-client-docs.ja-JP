@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249132(v=office.15)
 ms:contentKeyID: 48544197
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9f4ef26113d81910fa989196a0b58865e1ca62f3
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 6aa7828ac915b737fda541e1c9e0b967d8fe7fb0
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945755"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026303"
 ---
 # <a name="ado-events-model-example-vc"></a>ADO イベント モデルの使用例 (vc++)
 
 **適用されます**Access 2013、Office 2013。
 
-「[ADO イベントのインスタンス化 (言語別)](https://msdn.microsoft.com/library/jj250244\(v=office.15\))」の Visual C++ のセクションには、ADO イベント モデルのインスタンスを作成する方法についての一般的な説明があります。 次の具体的な例によって作成される環境内でイベント モデルのインスタンスを作成するのでは、**\#インポート**ディレクティブです。
+「[ADO イベントのインスタンス化 (言語別)](https://docs.microsoft.com/office/client-developer/access/desktop-database-reference/ado-event-instantiation-by-language-ado)」の Visual C++ のセクションには、ADO イベント モデルのインスタンスを作成する方法についての一般的な説明があります。 次の具体的な例によって作成される環境内でイベント モデルのインスタンスを作成するのでは、**\#インポート**ディレクティブです。
 
 一般的な説明では、メソッド シグネチャの参照として **adoint.h** を使います。 ただし、全般的な説明で、いくつかの詳細を若干変更を使用した結果、**\#インポート**ディレクティブ。
 

@@ -10,12 +10,12 @@ f1_keywords:
 - acmain11.chm1032168
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 99e2b31cf686895a56e9d70b177314355c1aff3c
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: b961869f3add04cf4af827f96721aad6dba611b6
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945147"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025603"
 ---
 # <a name="customizing-windows-registry-settings-for-the-microsoft-access-database-engine"></a>Microsoft Access データベース エンジン用の Windows レジストリ設定のカスタマイズ
 
@@ -25,8 +25,8 @@ ms.locfileid: "25945147"
 
 Windows レジストリの設定は、次の 4 とおりの方法でカスタマイズできます。
 
-- [Regedit.exe を使用して既定の設定を上書きするには](https://msdn.microsoft.com/library/ff193205\(v=office.15\))
-- [設定を管理するのには、アプリケーションのレジストリ ツリーの一部を作成します。](https://msdn.microsoft.com/library/ff836342\(v=office.15\))
-- [DAO から SetOption メソッドを使用します。](https://msdn.microsoft.com/library/ff194471\(v=office.15\))
-- [アクセス用の Microsoft OLE DB プロバイダーの接続プロパティを使用してください。](https://msdn.microsoft.com/library/ff196356\(v=office.15\))
+- [Regedit.exe を使用して既定の設定を上書きするには](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/using-regedit-exe-to-overwrite-the-default-settings)
+- [設定を管理するのには、アプリケーションのレジストリ ツリーの一部を作成します。](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/creating-a-portion-in-your-application-s-registry-tree-to-manage-the-settings)
+- [DAO から SetOption メソッドを使用します。](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/using-the-setoption-method-from-dao)
+- [アクセス用の Microsoft OLE DB プロバイダーの接続プロパティを使用してください。](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/using-the-connection-properties-in-the-microsoft-ole-db-provider-for-access)
 

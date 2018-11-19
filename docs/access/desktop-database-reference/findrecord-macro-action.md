@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm7496
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 19b6c80af2bcee9ca3dbe51bbbcf56343f33d550
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 4c115a5f7c2d13e918e891e80997a7327885669d
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937611"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026275"
 ---
 # <a name="findrecord-macro-action"></a>FindRecord マクロ アクション
 
@@ -58,11 +58,7 @@ ms.locfileid: "25937611"
 <tr class="odd">
 <td><p><strong>Search As Formatted/表示書式で検索</strong></p></td>
 <td><p>表示書式でデータを検索するかどうかを指定します。Microsoft Office Access 2007 で、フィールドに表示されている書式でデータを検索する場合は [ <strong>はい</strong>] を、データベースに格納されている形式 (表示されている形式とは異なる場合があります) で検索する場合は [ <strong>いいえ</strong>] をクリックします。既定値は [ <strong>いいえ</strong>] です。この機能を使用すると、特定の書式のデータだけを検索することができます。たとえば、コンマが含まれる書式が設定されたフィールドで "1,234" の値を検索する場合は、[ <strong>はい</strong>] をクリックし、" <strong>Find What/検索データ</strong> " 引数に「 <strong>1,234</strong> 」と入力します。「 <strong>1234</strong>」と入力してこのフィールドでデータを検索する場合は、[ <strong>いいえ</strong>] をクリックします。日付の検索では、2003-07-08 のような書式が設定された日付を検索する場合は [ <strong>はい</strong>] をクリックします。[ <strong>いいえ</strong>] をクリックした場合は、Windows コントロール パネルの地域の設定で設定されている書式を使って " <strong>Find What/検索データ</strong> " 引数を入力します。この書式は、地域の設定の [ <strong>日付</strong>] タブにある [ <strong>短い形式</strong>] ボックスに表示されています。たとえば、[ <strong>短い形式</strong>] ボックスに [ <strong>yy/M/d</strong>] が設定されている場合は、「03/7/8」と入力すると、このフィールドの書式にかかわらず、2003 年 7 月 8 日に対応する [日付] フィールドのすべてのエントリが検索されます。  </p>
-
-> [!NOTE]
-> **Search As Formatted/表示書式で検索**引数が有効になるのは、カレント フィールドが連結コントロールであること、**Match/検索条件**引数に [**フィールド全体**] が設定されていること、**Only Current Field/カレント フィールドのみ検索**引数に [**はい**] が設定されていること、および **Match Case/大小文字区別**引数に [**いいえ**] が設定されている場合のみです。
-
-
+<p><strong>注</strong>:<strong>全体のフィールド</strong>に<strong>一致する</strong>引数を設定する現在のフィールドにバインドされたコントロールがある場合のみに<strong>表示書式で検索</strong>引数を反映、<strong>現在のフィールド</strong>の引数が<strong>[はい]</strong>、および<strong>の一致に設定ケース</strong>の引数を<strong>No</strong>に設定します。</p>
 <p><strong>Match Case/大小文字区別</strong>引数を [<strong>はい</strong>] に設定した場合、または <strong>Only Current Field/カレント フィールドのみ検索</strong>引数を [<strong>いいえ</strong>] に設定した場合は、<strong>Search As Formatted/表示書式で検索</strong>引数を [<strong>はい</strong>] に設定する必要があります。
 
 </p></td>

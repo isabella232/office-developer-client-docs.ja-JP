@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249986(v=office.15)
 ms:contentKeyID: 48547697
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 93336294380ffa207f47adbcad630be3fdd1a8b8
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: 227c7a3746d0c743c33f76362023d6d374269a81
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25950217"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026282"
 ---
 # <a name="write-method-ado"></a>Write メソッド (ADO)
 
@@ -23,7 +23,7 @@ ms.locfileid: "25950217"
 
 *ストリーム*。*バッファー*の書き込み
 
-## <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>Parameters
 
 |パラメーター|説明|
 |:--------|:----------|
@@ -35,7 +35,7 @@ ms.locfileid: "25950217"
 
 カレント [Position](position-property-ado.md) は、書き込まれたデータの次のバイトに設定されます。 **Write** メソッドがストリーム内の残りのデータを切り捨てることはありません。後ろのバイトを切り捨てるには、 [SetEOS](seteos-method-ado.md) を呼び出してください。
 
-現在の [EOS](eos-property-ado.md) 位置を越えて書き込みを行うと、新しいバイトがすべて格納できるように [Stream](https://msdn.microsoft.com/library/jj250128\(v=office.15\)) の **Size** が大きくなり、 **EOS** が **Stream** 内の新しい末尾バイトへと移動します。
+現在の [EOS](eos-property-ado.md) 位置を越えて書き込みを行うと、新しいバイトがすべて格納できるように [Stream](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream) の **Size** が大きくなり、 **EOS** が **Stream** 内の新しい末尾バイトへと移動します。
 
 > [!NOTE]
 > **Write** メソッドは、バイナリ ストリーム ([Type](type-property-ado-stream.md) が **adTypeBinary**) で使用します。テキスト ストリーム (**Type** が **adTypeText**) の場合は、[WriteText](writetext-method-ado.md) を使用してください。

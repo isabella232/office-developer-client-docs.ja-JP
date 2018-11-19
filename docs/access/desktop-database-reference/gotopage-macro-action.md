@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm129285
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f754cb913918a757c91f8b87e00ef88fb0674684
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 179ee840370cef98c70e947cef555401408bbe12
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936680"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026225"
 ---
 # <a name="gotopage-macro-action"></a>GoToPage マクロ アクション
-
 
 **適用されます**Access 2013、Office 2013。
 
@@ -56,7 +55,7 @@ ms.locfileid: "25936680"
 </table>
 
 > [!NOTE]
-> >**右**と**下**の引数は、インチまたはセンチメートル、Windows コントロール パネルの [地域の設定によって測定されます。
+> **右**と**下**の引数は、インチまたはセンチメートル、Windows コントロール パネルの [地域の設定によって測定されます。
 
 ## <a name="remarks"></a>解説
 
@@ -66,9 +65,9 @@ Access ウィンドウよりも大きいページでは、フォームの**右**
 
 **GoToPage**アクションは、次の場合に使用できません。
 
-  - 非表示のフォームのページにフォーカスを移動する場合
+- 非表示のフォームのページにフォーカスを移動する場合
 
-  - タブ コントロール内の別のページにフォーカスを移動する場合
+- タブ コントロール内の別のページにフォーカスを移動する場合
 
 Visual Basic for Applications (VBA) モジュールでは、 **GoToPage**アクションを実行するには、 **DoCmd**オブジェクトの**GoToPage**メソッドを使用します。
 

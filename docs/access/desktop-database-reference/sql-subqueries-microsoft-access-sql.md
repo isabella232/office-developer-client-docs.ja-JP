@@ -12,12 +12,12 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b2a7bdadeb700bdbc6bf18dda2e73401afb7df86
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 4efa4e92d7fab2dc8a4aae932ccb1ffe69c7c6c8
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937352"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026100"
 ---
 # <a name="sql-subqueries-microsoft-access-sql"></a>SQL サブクエリ (Microsoft Access SQL)
 
@@ -68,7 +68,7 @@ ms.locfileid: "25937352"
 
 ## <a name="remarks"></a>解説
 
-サブクエリは、SELECT ステートメントのフィールド リストの中で、または [WHERE](https://msdn.microsoft.com/library/ff195245\(v=office.15\)) 句や [HAVING](https://msdn.microsoft.com/library/ff193795\(v=office.15\)) 句の中で、式の代わりとして使用できます。サブクエリでは、SELECT ステートメントを使用して、WHERE 句および HAVING 句の式で評価に使用する 1 つまたは複数の値を取得します。
+サブクエリは、SELECT ステートメントのフィールド リストの中で、または [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql) 句や [HAVING](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/having-clause-microsoft-access-sql) 句の中で、式の代わりとして使用できます。サブクエリでは、SELECT ステートメントを使用して、WHERE 句および HAVING 句の式で評価に使用する 1 つまたは複数の値を取得します。
 
 サブクエリで取得したレコードとの比較結果が真になるレコードをメイン クエリから取得するには、ANY 述語または SOME 述語 (この 2 つは同義) を使用します。次の例では、値引率 25% 以上で売られた商品よりも単価の高いすべての商品を返します。
 
@@ -79,7 +79,7 @@ WHERE UnitPrice > ANY
 WHERE Discount >= .25);
 ```
 
-サブクエリで取得したすべてのレコードとの比較結果が真になるレコードのみをメイン クエリから取得するには、[ALL](https://msdn.microsoft.com/library/ff195711\(v=office.15\)) 述語を使用します。前の例で ANY を ALL に変更すると、値引率 25% 以上で売られたすべての商品よりも単価の高い商品のみを返します。つまり、取得されるレコードがさらに限定されます。
+サブクエリで取得したすべてのレコードとの比較結果が真になるレコードのみをメイン クエリから取得するには、[ALL](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/all-distinct-distinctrow-top-predicates-microsoft-access-sql) 述語を使用します。前の例で ANY を ALL に変更すると、値引率 25% 以上で売られたすべての商品よりも単価の高い商品のみを返します。つまり、取得されるレコードがさらに限定されます。
 
 サブクエリの中に同じ値を持つレコードのみをメイン クエリから取得するには、IN 述語を使用します。次の例では、値引率 25% 以上で売られたすべての商品を返します。
 
@@ -94,7 +94,7 @@ WHERE Discount >= .25);
 
 EXISTS 述語 (予約語 NOT を併用することも可能) はサブクエリがレコードを返すかどうかを調べることができるので、True/False の中で使用できます。
 
-サブクエリの中でテーブル名の別名を使用すると、サブクエリの外側にある [FROM](https://msdn.microsoft.com/library/ff836674\(v=office.15\)) 句に指定したテーブルを参照することができます。次の例では、同じ役職の全社員のうち平均以上の給与を受け取っている社員の名前を返します。また、Employees テーブルに "T1" という別名を与えています。
+サブクエリの中でテーブル名の別名を使用すると、サブクエリの外側にある [FROM](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/from-clause-microsoft-access-sql) 句に指定したテーブルを参照することができます。次の例では、同じ役職の全社員のうち平均以上の給与を受け取っている社員の名前を返します。また、Employees テーブルに "T1" という別名を与えています。
 
 ```sql
 SELECT LastName,

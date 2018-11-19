@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192855(v=office.15)
 ms:contentKeyID: 48544403
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 84f8be8360996eb209462347dc18b118cf460442
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: a6e62d302dc1164e70d83dcbb06ac56c21898b82
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937618"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026261"
 ---
 # <a name="querydef-members-dao"></a>クエリ定義のメンバー (DAO)
 
@@ -36,12 +36,7 @@ QueryDef オブジェクトは、Microsoft Access データベース エンジ�
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="querydef-cancel-method-dao.md">Cancel</a></strong></p></td>
-<td><p></p>
-
-> [!NOTE]
-> [!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。
-
-
+<td><p><strong>注</strong>: Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p>
 <p>保留中の非同期メソッド呼び出しの実行をキャンセルします (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
@@ -116,12 +111,7 @@ QueryDef オブジェクトは、Microsoft Access データベース エンジ�
 </tr>
 <tr class="even">
 <td><p><strong><a href="querydef-prepare-property-dao.md">Prepare</a></strong></p></td>
-<td><p></p>
-
-> [!NOTE]
-> [!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。
-
-
+<td><p><strong>注</strong>: Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Office Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p>
 <p>ODBC <strong>SQLPrepare</strong> API 関数を使用して、実行する前にクエリを一時的なストアド プロシージャとしてサーバーに準備する必要があるか、または ODBC <strong>SQLExecDirect</strong> API 関数を使用して、クエリを直接実行するかどうかを示す値を設定します (ODBCDirect ワークスペースのみ)。値の取得および設定が可能です。 <strong><a href="querydefstateenum-enumeration-dao.md">QueryDefStateEnum</a></strong> クラスの定数を使用します。</p></td>
 </tr>
 <tr class="odd">
@@ -142,16 +132,11 @@ QueryDef オブジェクトは、Microsoft Access データベース エンジ�
 </tr>
 <tr class="odd">
 <td><p><strong><a href="querydef-stillexecuting-property-dao.md">StillExecuting</a></strong></p></td>
-<td><p></p>
-
-> [!NOTE]
-> [!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。
-
-
+<td><p><strong>注</strong>: Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p>
 <p>非同期操作 (つまり、 <a href="recordsetoptionenum-enumeration-dao.md">dbRunAsync</a> オプションを指定して呼び出したメソッド) の実行が完了したかどうかを示します (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="querydef-type-property-dao.md">型</a></strong></p></td>
+<td><p><strong><a href="querydef-type-property-dao.md">Type</a></strong></p></td>
 <td><p>オブジェクトの操作の種類またはデータ型を示す値を設定あるいは取得します。値の取得のみ可能です。整数型 (<strong>Integer</strong>) の値を使用します。</p></td>
 </tr>
 <tr class="odd">

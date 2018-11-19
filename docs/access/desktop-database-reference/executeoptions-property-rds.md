@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250285(v=office.15)
 ms:contentKeyID: 48548864
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4868cc92bdb6313c581ede7442ce8f6af9fd960d
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 6db51927182008314da045021f81e6547d5d78be
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921629"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026142"
 ---
 # <a name="executeoptions-property-rds"></a>ExecuteOptions プロパティ (RDS)
 
@@ -47,12 +47,8 @@ ms.locfileid: "25921629"
 </tbody>
 </table>
 
-
-
 > [!NOTE]
 > [!メモ] これらの定数を使うクライアント側の各実行可能ファイルは、その定数を宣言する必要があります。C:\Program Files\Common Files\System\MSADC フォルダーの Adcvbs.inc ファイルから、定数の宣言を切り取って貼り付けることができます。
-
-
 
 ## <a name="remarks"></a>解説
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834370(v=office.15)
 ms:contentKeyID: 48547705
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4ccaffdbc39634f42f4af680786b5dc8b3957475
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 3e5318652430f6cb9564fb1bb02832cc120b080b
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937632"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026247"
 ---
 # <a name="gotocontrol-macro-action"></a>GoToControl マクロ アクション
 
@@ -43,12 +43,7 @@ ms.locfileid: "25937632"
 <td><p>フォーカスの移動先のフィールドまたはコントロールの名前を指定します。[マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>コントロール名</strong>] ボックスにフィールドまたはコントロールの名前を入力します。この引数は省略できません。  
  
 </p>
-
-> [!NOTE]
-> "**Control Name/コントロール名**" 引数には、完全な識別子 (<フォーム>!<製品>![製品 ID] など) ではなく、フィールドまたはコントロールの名前のみを入力してください。
-
-
-<p></p></td>
+<p><strong>注</strong>: 引数に<strong>コントロール名</strong>、完全修飾識別子ではなく、フォームのフィールドまたはコントロールの名前だけを入力してください。製品です。[プロダクト ID] です。</p></td>
 </tr>
 </tbody>
 </table>
@@ -99,7 +94,7 @@ Visual Basic for Applications (VBA) モジュールで " **GoToControl/コント
 <td><p>[製品] フォームを開きます。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>値の代入</strong></p></td>
+<td><p><strong>SetValue</strong></p></td>
 <td><p><strong>Item/アイテム</strong>: [フォーム]![製品]![SupplierID] <strong>Expression/式</strong>: SupplierID</p></td>
 <td><p>[仕入先コード] コントロールを [仕入先] フォームの現在の仕入先に設定します。</p></td>
 </tr>

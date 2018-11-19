@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249811(v=office.15)
 ms:contentKeyID: 48547034
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ac4416dce7d3f9fa52c4b948b1e8d3e0167c2751
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: b1b7ebd312727e1dc5071964cf1125d1c76bec4d
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930631"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026009"
 ---
 # <a name="column-object-adox"></a>Column オブジェクト (ADOX)
 
@@ -30,7 +30,7 @@ ms.locfileid: "25930631"
 
   - [Name](name-property-adox.md) プロパティを使用して、列を識別します。
 
-  - [Type](https://msdn.microsoft.com/library/jj249169\(v=office.15\)) プロパティを使用して、列のデータ型を指定します。
+  - [Type](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-columnadox) プロパティを使用して、列のデータ型を指定します。
 
   - [Attributes](attributes-property-adox.md) プロパティを使用して、列が固定長かどうか、または Null 値を含めることができるかどうかを特定します。
 

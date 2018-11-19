@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249942(v=office.15)
 ms:contentKeyID: 48547535
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ccbebd7be6b3b0708173bb56ef9436d3e17695fe
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 9c3a3efb3a17ac7eb6e57ba16e83b9156103e3f4
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944964"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026023"
 ---
 # <a name="table-properties-methods-and-events-adox"></a>表のプロパティ、メソッド、およびイベント (ADOX)
 
@@ -20,12 +20,12 @@ ms.locfileid: "25944964"
 ## <a name="propertiescollections"></a>プロパティ/コレクション
 
 - [DateCreated プロパティ](datecreated-property-adox.md)
-- [最終更新日時プロパティ](datemodified-property-adox.md)
+- [DateModified プロパティ](datemodified-property-adox.md)
 - [Indexes コレクション](indexes-collection-adox.md)
 - [Keys コレクション](keys-collection-adox.md)
 - [Name プロパティ](name-property-adox.md)
 - [ParentCatalog プロパティ](parentcatalog-property-adox.md)
-- [Type プロパティ (テーブル)](https://msdn.microsoft.com/library/jj250042\(v=office.15\))
+- [Type プロパティ (テーブル)](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-tableadox)
 
 
 ## <a name="methods"></a>メソッド

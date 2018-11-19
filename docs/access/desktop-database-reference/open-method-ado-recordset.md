@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249591(v=office.15)
 ms:contentKeyID: 48546119
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 21798f476e0d67b7b23ef38c6e2b268893173ac6
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: 5e0d5302291f1514fd11bca8fe7094af4525c900
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25950063"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026478"
 ---
 # <a name="open-method-ado-recordset"></a>Open メソッド (ADO Recordset)
 
@@ -23,7 +23,7 @@ ms.locfileid: "25950063"
 
 *レコード セット*です。*ソース*、 *ActiveConnection*、 *CursorType*、 *LockType*、*オプション*を開く
 
-## <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>Parameters
 
 |パラメーター|説明|
 |:--------|:----------|
@@ -46,7 +46,7 @@ ADO の **Recordset** の既定のカーソルは、サーバー側にある読�
 
 オプションの*Source*引数を使用して、次のいずれかを使用してデータ ソースを指定する:**コマンド**オブジェクト変数、SQL ステートメント、ストアド プロシージャ、テーブル名、URL やファイルの完全なパス名です。 *ソース*がファイルのパス名の場合は、ことができます、完全なパス ("c:\\dir\\file.rst")、相対パス ("..\\file.rst")、または URL ("https://files/file.rst")。
 
-ありません、呼び出しが成功したかどうかを判断する簡単な方法がないため、レコードを返さないアクション クエリを実行するのには**Open**メソッドの*Source*引数を使用することをお勧めします。 このようなクエリによって返される**レコード セット**は閉じられます。 SQL INSERT ステートメントなど、レコードを返さないクエリを実行するのには、 **Command**オブジェクトの[Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command)メソッドまたは**Connection**オブジェクトの[Execute](https://msdn.microsoft.com/library/jj249832\(v=office.15\))メソッドを代わりに呼び出します。
+ありません、呼び出しが成功したかどうかを判断する簡単な方法がないため、レコードを返さないアクション クエリを実行するのには**Open**メソッドの*Source*引数を使用することをお勧めします。 このようなクエリによって返される**レコード セット**は閉じられます。 SQL INSERT ステートメントなど、レコードを返さないクエリを実行するのには、 **Command**オブジェクトの[Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command)メソッドまたは**Connection**オブジェクトの[Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection)メソッドを代わりに呼び出します。
 
 *暗黙的*では、 [ActiveConnection](activeconnection-property-ado.md)プロパティに対応し、接続を開くには、**レコード セット**オブジェクトを指定します。 この引数に接続の定義を指定すると、ADO により、指定されたパラメーターを使用して新しい接続が開かれます。 クライアント側カーソルで**レコード セット**を開いた後 (**CursorLocation** = **adUseClient**)、別のプロバイダーに更新を送信するには、このプロパティの値を変更することができます。 また、このプロパティを **Nothing** (Microsoft Visual Basic の場合) または NULL に設定すると、その **Recordset** を任意のプロバイダーから切断することができます。 ただし、サーバー側カーソルの **ActiveConnection** を変更すると、エラーが発生します。
 

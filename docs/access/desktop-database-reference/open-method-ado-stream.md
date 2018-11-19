@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250275(v=office.15)
 ms:contentKeyID: 48548833
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2c45c10ae75688eb1965307ba8b2fb67c752f81f
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: b20a68f1707e496b92ba8acbf8bc7ed8d8a2b058
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949825"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026415"
 ---
 # <a name="open-method-ado-stream"></a>Open メソッド (ADO Stream)
 
@@ -25,7 +25,7 @@ ms.locfileid: "25949825"
 
 *ストリーム*。 *ソース*、*モード*、 *OpenOptions*、*ユーザー名*、*パスワード*を開く
 
-## <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>Parameters
 
 |パラメーター|説明|
 |:--------|:----------|
@@ -37,7 +37,7 @@ ms.locfileid: "25949825"
 
 ## <a name="remarks"></a>解説
 
-**Record**オブジェクトへのアクセスが用意されているため、ソース パラメーターは、*ユーザー Id*と*パスワード*のパラメーターとしての**Record**オブジェクトが渡されるときは使用されません。 同様に、 **Record**オブジェクトの[モード](mode-property-ado.md)は、**ストリーム**オブジェクトに転送されます。*ソース*が指定されていない、開かれている**ストリーム**はデータが含まれていないと、[サイズ](https://msdn.microsoft.com/library/jj250128\(v=office.15\))はゼロ (0)。 **ストリーム**が閉じているときに、この**ストリーム**に書き込まれるすべてのデータが失われるを避けるためには、**ストリーム**を付けて、 [CopyTo](copyto-method-ado.md)メソッドまたは[SaveToFile](savetofile-method-ado.md)メソッド、またはメモリの別の場所に保存します。
+**Record**オブジェクトへのアクセスが用意されているため、ソース パラメーターは、*ユーザー Id*と*パスワード*のパラメーターとしての**Record**オブジェクトが渡されるときは使用されません。 同様に、 **Record**オブジェクトの[モード](mode-property-ado.md)は、**ストリーム**オブジェクトに転送されます。*ソース*が指定されていない、開かれている**ストリーム**はデータが含まれていないと、[サイズ](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream)はゼロ (0)。 **ストリーム**が閉じているときに、この**ストリーム**に書き込まれるすべてのデータが失われるを避けるためには、**ストリーム**を付けて、 [CopyTo](copyto-method-ado.md)メソッドまたは[SaveToFile](savetofile-method-ado.md)メソッド、またはメモリの別の場所に保存します。
 
 *OpenOptions*値の**adOpenStreamFromRecord**は、 *Source*パラメーターを既に開いている**レコード**オブジェクトの内容を識別します。 既定の動作では、ファイルなどのツリー構造内のノードを直接指し示す URL として*Source*を扱います。 そのノードに関連付けられる既定のストリームが開かれます。
 

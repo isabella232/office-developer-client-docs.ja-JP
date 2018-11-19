@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249978(v=office.15)
 ms:contentKeyID: 48547670
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 951eb10c30a0e83903b3f7c075e72d5f82e0ce9b
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
+ms.openlocfilehash: a0394b95b392bf26f68dc64f64ad70ada09e8d86
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910881"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025764"
 ---
 # <a name="ado-code-examples-in-microsoft-visual-j"></a>Microsoft Visual J++ での ADO コードの例
 
@@ -58,7 +58,7 @@ Microsoft Visual J++ で記述するときの ADO のメソッドおよびプロ
 - [Bof プロパティ、EOF、およびブックマークのプロパティの例](bof-eof-and-bookmark-properties-example-vj.md)
 - [CacheSize プロパティの使用例](cachesize-property-example-vj.md)
 - [ConnectionString、タイムアウト、および状態のプロパティの例](connectionstring-connectiontimeout-and-state-properties-example-vj.md)
-- [Count プロパティの使用例](count-property-example-vj.md)
+- [Count プロパティの使用例 (VJ++)](count-property-example-vj.md)
 - [CursorType、LockType、および EditMode プロパティの使用例](cursortype-locktype-and-editmode-properties-example-vj.md)
 - [説明、HelpContext、HelpFile、以下、番号、ソース、および SQLState プロパティの使用例](description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vj.md)
 - [フィルターと RecordCount プロパティの使用例](filter-and-recordcount-properties-example-vj.md)
@@ -76,8 +76,8 @@ Microsoft Visual J++ で記述するときの ADO のメソッドおよびプロ
 - [状態プロパティの使用例](state-property-example-vj.md)
 - [状態プロパティの使用例](status-property-example-vj.md)
 - [StayInSync プロパティの使用例](stayinsync-property-example-vj.md)
-- [プロパティの使用例 (フィールド) を入力します。](https://msdn.microsoft.com/library/jj250207\(v=office.15\))
-- [プロパティの使用例 (プロパティ) を入力します。](https://msdn.microsoft.com/library/jj249182\(v=office.15\))
-- [値プロパティの使用例](value-property-example-vj.md)
+- [プロパティの使用例 (フィールド) を入力します。](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-example-fieldvj-plus-plus)
+- [プロパティの使用例 (プロパティ) を入力します。](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-example-propertyvj-plus-plus)
+- [Value プロパティの使用例 (VJ++)](value-property-example-vj.md)
 - [バージョン プロパティの使用例](version-property-example-vj.md)
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249314(v=office.15)
 ms:contentKeyID: 48545053
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d067d26120e694975c662c3d018443e325e75119
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 193cf5db350fdf0b30fe19da9a61026d1cd39aa9
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937135"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026471"
 ---
 # <a name="filter-property-ado"></a>Filter プロパティ (ADO)
 
@@ -41,12 +41,9 @@ ms.locfileid: "25937135"
   - *演算子*は、次のいずれかである必要があります: \<、 \>、 \<= \>= \< \>、=、または**のような**。
 
   - *値*は、フィールドの値を比較する値 (たとえば、'Smith' \#8/24/95\#、12.345、または $50.00)。 文字列に単一引用符を使用し、シャープ記号 (\#) の日付にします。 数値の場合、小数点、ドル記号、および指数表記を使用できます。 **ような***演算子*がある場合、*値*は、ワイルドカードを使用できます。 アスタリスクのみ (\*) し、パーセント記号 (%)、ワイルドカードを使用し、文字列の最後の文字にする必要があります。 *値*を null にすることはできません。
-    
 
     > [!NOTE]
     > [!メモ] フィルターの "値" に単一引用符 (') を含めるには、2 つの単一引用符を使って 1 つの単一引用符を表します。たとえば、O'Malley にフィルターを設定するには、条件文字列は、"col1 = 'O''Malley'" とします。フィルター値の先頭と末尾に単一引用符を含めるには、シャープ記号 (#) で文字列を囲みます。たとえば、'1' にフィルターを設定するには、条件文字列を "col1 = #'1'#" とします。
-
-
 
   - **AND** と **OR** の間に優先順位はありません。句はかっこでグループにまとめることができます。ただし、次のように、 **OR** で句を結合してできた句のグループを、 **AND** を使ってさらに別の句と結合することはできません。
 

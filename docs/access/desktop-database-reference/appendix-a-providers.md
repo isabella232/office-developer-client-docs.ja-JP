@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249857(v=office.15)
 ms:contentKeyID: 48547207
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6665159eaf0d385d213a35a8463cdc09e738ef45
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 45416c68d52a2ba20ba9adfa19a6ebd89d1e0240
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25888035"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026205"
 ---
 # <a name="appendix-a-providers"></a>付録 A: プロバイダー
 
@@ -27,11 +27,11 @@ ADO は高性能で柔軟性に富んでおり、使用するプロバイダー�
 
 ただし、各データ プロバイダーはそれぞれ異なるので、アプリケーションと ADO の間でどのようなやり取りが行われるかは、データ プロバイダーごとに少しずつ異なります。この相違点は、通常、次の 3 つのカテゴリのいずれかに分類されます。
 
-  - [ConnectionString](connectionstring-property-ado.md) プロパティの接続パラメーター
+- [ConnectionString](connectionstring-property-ado.md) プロパティの接続パラメーター
 
-  - [Command](command-object-ado.md) オブジェクトの使用方法
+- [Command](command-object-ado.md) オブジェクトの使用方法
 
-  - プロバイダー固有の [Recordset](recordset-object-ado.md) の動作
+- プロバイダー固有の [Recordset](recordset-object-ado.md) の動作
 
 Microsoft から現在入手可能な各データ プロバイダーの詳細については、次の各トピックを参照してください。
 
@@ -89,17 +89,17 @@ Microsoft から現在入手可能な各データ プロバイダーの詳細に
 
 サービス プロバイダーを使用するには、キーワードを指定する必要があります。また、各サービス プロバイダーに関連付けられたプロバイダー固有の動的プロパティを理解しておく必要があります。Microsoft から現在入手可能な各サービス プロバイダーの詳細については、次の各トピックを参照してください。
 
-  - [Microsoft Data Shaping Service for OLE DB (ADO サービス プロバイダー)](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md)
+- [Microsoft Data Shaping Service for OLE DB (ADO サービス プロバイダー)](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md)
 
-  - [Microsoft OLE DB Persistence Provider (ADO サービス プロバイダー)](microsoft-ole-db-persistence-provider-ado-service-provider.md)
+- [Microsoft OLE DB Persistence Provider (ADO サービス プロバイダー)](microsoft-ole-db-persistence-provider-ado-service-provider.md)
 
-  - [Microsoft OLE DB Remoting Provider (ADO サービス プロバイダー)](microsoft-ole-db-remoting-provider-ado-service-provider.md)
+- [Microsoft OLE DB Remoting Provider (ADO サービス プロバイダー)](microsoft-ole-db-remoting-provider-ado-service-provider.md)
 
 ## <a name="service-components"></a>サービス コンポーネント
 
 [Cursor Service for OLE DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) サービス コンポーネントは、データ プロバイダーのカーソル サポート機能を補完します。また、サービス コンポーネントはキーワードを必要とし、動的プロパティを持ちます。
 
-プロバイダーの詳細については、Microsoft Data Access Components SDK の Microsoft OLE DB のマニュアルまたは「[データ プラットフォーム デベロッパー センター](https://msdn.microsoft.com/data/default.aspx)」を参照してください。
+プロバイダーの詳細については、Microsoft Data Access Components SDK の Microsoft OLE DB のマニュアルまたは「[データ プラットフォーム デベロッパー センター](https://docs.microsoft.com/sql/connect/sql-data-developer?view=sql-server-2017)」を参照してください。
 
 ## <a name="provider-commands"></a>プロバイダーのコマンド
 

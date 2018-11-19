@@ -10,12 +10,12 @@ f1_keywords:
 - acmain11.chm1032667
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 39cad98bc6f14509491e78ac4057d6488528f0b4
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: c64f28769d88c2684485ba537bdbdf22afd30ac5
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947855"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026051"
 ---
 # <a name="initializing-the-microsoft-exchange-data-source-driver"></a>Microsoft Exchange データ ソース ドライバーを初期化しています。
 
@@ -169,7 +169,7 @@ Microsoft Outlook の ISAM 形式の使用結果と Microsoft Exchange クライ
 
 
 
-## <a name="customizing-the-schemaini-file-for-outlook-and-exchange-data"></a>Microsoft Outlook データと Microsoft Exchange データのために Schema.ini ファイルをカスタマイズする
+## <a name="customizing-the-schemaini-file-for-outlook-and-exchange-data"></a>Schema.ini ファイルの Outlook と Exchange のデータをカスタマイズします。
 
 Schema.ini ファイルは、テキストの ISAM で使用されるのと同様の方法で、Microsoft Outlook と Microsoft Exchange の ISAM でも使用されます。Schema.ini には、データの書式化方法、アクセスされる列名など、データ ソースの仕様が記述されています。
 

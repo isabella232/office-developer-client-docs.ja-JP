@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm37891
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: badfb4468c8f485d52535b33c644b88b5fae531d
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: d04c98da0ecef1c2323930c74588b7a6a07c2e29
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923169"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026268"
 ---
 # <a name="addmenu-macro-action"></a>AddMenu マクロ アクション
 
@@ -57,12 +57,7 @@ ms.locfileid: "25923169"
 <td><p>メニュー コマンドのマクロを含むマクロ グループの名前を指定します。この引数は省略できません。 
 
 </p>
-
-> [!NOTE]
-> ライブラリ データベースでは、**メニューの追加**アクションを含むマクロを実行すると、現在のデータベースだけでは、この名前のマクロ グループの Microsoft Office Access 2007 が検索されます。
-
-
-<p></p></td>
+<p><strong>注</strong>: ライブラリ データベースでは、<strong>メニューの追加</strong>アクションを含むマクロを実行すると、Microsoft Office Access 2007 が現在のデータベースだけでは、この名前のマクロ ・ グループの検索します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Status Bar Text/ステータス バー テキスト</strong></p></td>

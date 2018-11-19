@@ -10,21 +10,24 @@ f1_keywords:
 - jetsql40.chm5277591
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: dc481a699ad0703075e7c7c4f97dffb147cd0280
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
+ms.openlocfilehash: e3de2ba6696ac9abc065c6d4588d362f79fba273
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998946"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026401"
 ---
 # <a name="sql-reserved-words"></a>SQL 予約語
 
 **適用されます**Access 2013、Office 2013。
 
-次の一覧は、Microsoft Access データベース エンジンが SQL ステートメント用に予約しているすべての予約語を示したものです。一覧の中で小文字が含まれている予約語は、他のアプリケーションの予約語でもあります。このため、これらの予約語の個々のヘルプ トピックには、SQL での使用とは関係のない一般的な説明も含まれています。
+次の一覧は、Microsoft Access データベース エンジンが SQL ステートメント用に予約しているすべての予約語を示したものです。 
 
-> [!NOTE]
-> 単語の後にアスタリスク (*) は予約されていますが、(たとえば、**レベル**、 **TableID**) は、Microsoft Access SQL ステートメントのコンテキストで意味を持つ現在ありません。 下線付きで表示されない単語には、リンクの説明はありません。
+- 一覧の中で小文字が含まれている予約語は、他のアプリケーションの予約語でもあります。 このため、これらの予約語の個々のヘルプ トピックには、SQL での使用とは関係のない一般的な説明も含まれています。
+
+- 単語の後にアスタリスク (*) は予約されておりが、(たとえば、**レベル**、 **TableID**) は、Microsoft Access SQL ステートメントのコンテキストで意味を持つ現在ありません。 
+
+- 下線付きで表示されない単語には、リンクの説明はありません。
 
 ## <a name="a"></a>A
 
@@ -44,10 +47,10 @@ ms.locfileid: "25998946"
 </tr>
 <tr class="odd">
 <td><p>ADMINDB</p></td>
-<td><p><a href="select-statement-microsoft-access-sql.md">として</a></p></td>
+<td><p><a href="select-statement-microsoft-access-sql.md">AS</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/ff845430(v=office.15)">すべての</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff845430(v=office.15)">ALL</a></p></td>
 <td><p><a href="https://msdn.microsoft.com/library/ff193772(v=office.15)">ASC</a></p></td>
 </tr>
 <tr class="odd">
@@ -63,11 +66,11 @@ ms.locfileid: "25998946"
 <td><p><a href="equivalent-ansi-sql-data-types.md">AUTOINCREMENT</a>: 「COUNTER」を参照</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="https://msdn.microsoft.com/library/ff192436(v=office.15)">そして</a></strong></p></td>
+<td><p><strong><a href="https://msdn.microsoft.com/library/ff192436(v=office.15)">And</a></strong></p></td>
 <td><p><strong><a href="https://msdn.microsoft.com/library/ff822755(v=office.15)">Avg</a></strong></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/ff197723(v=office.15)">として</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff197723(v=office.15)">AS</a></p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -83,7 +86,7 @@ ms.locfileid: "25998946"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="transaction-statement-microsoft-access-sql.md">BEGIN</a></p></td>
+<td><p><a href="transaction-statement-microsoft-access-sql.md">開始</a></p></td>
 <td><p>COLLATION</p></td>
 </tr>
 <tr class="even">
@@ -111,8 +114,8 @@ ms.locfileid: "25998946"
 <td><p><a href="constraint-clause-microsoft-access-sql.md">制約制約</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/ff822010(v=office.15)">で</a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff836657(v=office.15)">コンテナー</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff822010(v=office.15)">BY</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff836657(v=office.15)">CONTAINER</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="sql-data-types.md">バイト</a></p></td>
@@ -132,11 +135,11 @@ ms.locfileid: "25998946"
 </tr>
 <tr class="odd">
 <td><p><a href="equivalent-ansi-sql-data-types.md">CHAR_LENGTH</a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff192473(v=office.15)">作成</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff192473(v=office.15)">CREATE</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="equivalent-ansi-sql-data-types.md">CHARACTER_LENGTH</a></p></td>
-<td><p><a href="sql-data-types.md">CURRENCY</a></p></td>
+<td><p><a href="sql-data-types.md">通貨</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>CHECK</p></td>
@@ -196,7 +199,7 @@ ms.locfileid: "25998946"
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/ff192454(v=office.15)">DELETE</a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff836857(v=office.15)">ドロップ</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff836857(v=office.15)">DROP</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/ff193772(v=office.15)">DESC</a></p></td>
@@ -220,7 +223,7 @@ ms.locfileid: "25998946"
 </tr>
 <tr class="even">
 <td><p>EXCLUSIVECONNECT</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff821771(v=office.15)">差出人</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff821771(v=office.15)">FROM</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>EXEC、EXECUTE</p></td>
@@ -243,7 +246,7 @@ ms.locfileid: "25998946"
 <td><p><a href="sql-data-types.md">GUID</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/ff821754(v=office.15)">まずは</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff821754(v=office.15)">FIRST</a></p></td>
 <td><p><a href="https://msdn.microsoft.com/library/ff193795(v=office.15)">HAVING</a></p></td>
 </tr>
 <tr class="odd">
@@ -276,7 +279,7 @@ ms.locfileid: "25998946"
 </tr>
 <tr class="odd">
 <td><p><a href="equivalent-ansi-sql-data-types.md">IEEESINGLE</a>: 「SINGLE」を参照</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff837307(v=office.15)">挿入</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff837307(v=office.15)">INSERT</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="create-index-statement-microsoft-access-sql.md">無視します。</a></p></td>
@@ -299,8 +302,8 @@ ms.locfileid: "25998946"
 <td><p><a href="equivalent-ansi-sql-data-types.md">間隔</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/ff836851(v=office.15)">インデックス</a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff837051(v=office.15)">に</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff836851(v=office.15)">INDEX</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff837051(v=office.15)">INTO</a></p></td>
 </tr>
 <tr class="even">
 <td><p>INDEXCREATEDB</p></td>
@@ -335,7 +338,7 @@ ms.locfileid: "25998946"
 <td><p>MATCH</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/ff195256(v=office.15)">前の</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff195256(v=office.15)">LAST</a></p></td>
 <td><p><strong><a href="https://msdn.microsoft.com/library/ff194490(v=office.15)">Max</a></strong></p></td>
 </tr>
 <tr class="odd">
@@ -479,7 +482,7 @@ ms.locfileid: "25998946"
 <td><p>SQL</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/ff835037(v=office.15)">スキーマ</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff835037(v=office.15)">SCHEMA</a></p></td>
 <td><p>SQLCODE、SQLERROR、SQLSTATE</p></td>
 </tr>
 <tr class="even">
@@ -487,7 +490,7 @@ ms.locfileid: "25998946"
 <td><p><strong><a href="https://msdn.microsoft.com/library/ff197043(v=office.15)">StDev</a></strong></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/ff822042(v=office.15)">選択します。</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff822042(v=office.15)">SELECT</a></p></td>
 <td><p><strong><a href="https://msdn.microsoft.com/library/ff197043(v=office.15)">StDevP</a></strong></p></td>
 </tr>
 <tr class="even">
@@ -527,7 +530,7 @@ ms.locfileid: "25998946"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/ff192734(v=office.15)">テーブル</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff192734(v=office.15)">TABLE</a></p></td>
 <td><p><a href="https://msdn.microsoft.com/library/ff193874(v=office.15)">UPDATEOWNER</a></p></td>
 </tr>
 <tr class="even">
@@ -544,7 +547,7 @@ ms.locfileid: "25998946"
 </tr>
 <tr class="odd">
 <td><p><a href="equivalent-ansi-sql-data-types.md">TIME</a>: 「DATETIME」を参照</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff197645(v=office.15)">ユーザー</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff197645(v=office.15)">USER</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="equivalent-ansi-sql-data-types.md">タイムスタンプ</a></p></td>
@@ -563,7 +566,7 @@ ms.locfileid: "25998946"
 <td><p><strong><a href="https://msdn.microsoft.com/library/ff192105(v=office.15)">Var</a></strong></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/ff191822(v=office.15)">宛先</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff191822(v=office.15)">TO</a></p></td>
 <td><p><a href="equivalent-ansi-sql-data-types.md">VARBINARY</a>: 「BINARY」を参照</p></td>
 </tr>
 <tr class="odd">
@@ -572,7 +575,7 @@ ms.locfileid: "25998946"
 </tr>
 <tr class="even">
 <td><p>TRAILING</p></td>
-<td><p><strong><a href="https://msdn.microsoft.com/library/ff192105(v=office.15)">Varp 関数</a></strong></p></td>
+<td><p><strong><a href="https://msdn.microsoft.com/library/ff192105(v=office.15)">VarP</a></strong></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="transaction-statement-microsoft-access-sql.md">トランザクション</a></p></td>
@@ -580,7 +583,7 @@ ms.locfileid: "25998946"
 </tr>
 <tr class="even">
 <td><p><a href="transform-statement-microsoft-access-sql.md">トランス フォーム</a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff836065(v=office.15)">ビュー</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff836065(v=office.15)">VIEW</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>TRANSLATE</p></td>
@@ -592,11 +595,11 @@ ms.locfileid: "25998946"
 </tr>
 <tr class="odd">
 <td><p>TRIM</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff195245(v=office.15)">どこ</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff195245(v=office.15)">WHERE</a></p></td>
 </tr>
 <tr class="even">
 <td><p>TRUE</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff192721(v=office.15)">で</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff192721(v=office.15)">WITH</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="union-operation-microsoft-access-sql.md">共用体</a></p></td>
@@ -615,7 +618,7 @@ ms.locfileid: "25998946"
 <td><p><a href="equivalent-ansi-sql-data-types.md">YESNO</a>: 「BIT」を参照</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/ff836602(v=office.15)">更新</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff836602(v=office.15)">UPDATE</a></p></td>
 <td><p>ZONE</p></td>
 </tr>
 <tr class="even">

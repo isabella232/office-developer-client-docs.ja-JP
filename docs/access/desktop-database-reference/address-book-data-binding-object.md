@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250030(v=office.15)
 ms:contentKeyID: 48547807
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f90a0e4ff4accfd4496df46fb48faaf6f589f37c
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: bc8fe1fa2addab5338d7c330d90e8616f0af9b5c
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945182"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025715"
 ---
 # <a name="address-book-data-binding-object"></a>アドレス帳のデータバインディング オブジェクト
 
@@ -95,7 +95,7 @@ OBJECT タグで、 **RDS.DataControl** コンポーネントをプログラム�
 <td><p>SQL Server に接続するために <strong>RDS.DataControl</strong> に必要な接続情報を指定します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/jj248989(v=office.15)">SQL</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado">SQL</a></p></td>
 <td><p><a href="recordset-object-ado.md">Recordset</a> を取得するために使用されるクエリ文字列を設定または取得します。</p></td>
 </tr>
 </tbody>

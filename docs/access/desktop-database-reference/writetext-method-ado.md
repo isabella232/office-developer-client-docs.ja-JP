@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248963(v=office.15)
 ms:contentKeyID: 48543574
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6aecdbee544d3b30a6f6386c98d3083bb1167539
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: 9f2a65373add9263bac97ca20a9f29de4307599f
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949804"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025841"
 ---
 # <a name="writetext-method-ado"></a>WriteText メソッド (ADO)
 
@@ -23,7 +23,7 @@ ms.locfileid: "25949804"
 
 *ストリーム*。WriteText*データ*、*オプション*
 
-## <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>Parameters
 
 |パラメーター|説明|
 |:--------|:----------|
@@ -36,7 +36,7 @@ ms.locfileid: "25949804"
 
 カレント [Position](position-property-ado.md) は、書き込まれたデータの次の文字に設定されます。 **WriteText** メソッドがストリーム内の残りのデータを切り捨てることはありません。後ろの文字を切り捨てるには、 [SetEOS](seteos-method-ado.md) を呼び出してください。
 
-現在の [EOS](eos-property-ado.md) 位置を越えて書き込みを行うと、新しい文字がすべて格納できるように [Stream](https://msdn.microsoft.com/library/jj250128\(v=office.15\)) の **Size** が大きくなり、 **EOS** が **Stream** 内の新しい末尾バイトへと移動します。
+現在の [EOS](eos-property-ado.md) 位置を越えて書き込みを行うと、新しい文字がすべて格納できるように [Stream](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream) の **Size** が大きくなり、 **EOS** が **Stream** 内の新しい末尾バイトへと移動します。
 
 > [!NOTE]
 > **WriteText** メソッドは、テキスト ストリーム ([Type](type-property-ado-stream.md) が **adTypeText**) で使用します。バイナリ ストリーム (**Type** が **adTypeBinary**) の場合は、[Write](write-method-ado.md) を使用してください。

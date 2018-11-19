@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250304(v=office.15)
 ms:contentKeyID: 48548929
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7cc27964bed572431f3482e0834868690f3b77df
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 5bc2eeaf4d26c957abb67780fe2f5d0df8f73049
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921902"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026177"
 ---
 # <a name="index-object-adox"></a>Index オブジェクト (ADOX)
 
@@ -27,19 +27,19 @@ ms.locfileid: "25921902"
 
 **Index** オブジェクトのプロパティとコレクションを使用すると、次の操作を実行できます。
 
-  - [Name](name-property-adox.md) プロパティを使用して、インデックスを識別します。
+- [Name](name-property-adox.md) プロパティを使用して、インデックスを識別します。
 
-  - [Columns](columns-collection-adox.md) コレクションを使用して、インデックスによって指定されたデータベースの列にアクセスします。
+- [Columns](columns-collection-adox.md) コレクションを使用して、インデックスによって指定されたデータベースの列にアクセスします。
 
-  - [Unique](unique-property-adox.md) プロパティを使用して、インデックス キーを一意にする必要があるかどうかを指定します。
+- [Unique](unique-property-adox.md) プロパティを使用して、インデックス キーを一意にする必要があるかどうかを指定します。
 
-  - [PrimaryKey](primarykey-property-adox.md) プロパティを使用して、インデックスがテーブルの主キーかどうかを指定します。
+- [PrimaryKey](primarykey-property-adox.md) プロパティを使用して、インデックスがテーブルの主キーかどうかを指定します。
 
-  - [IndexNulls](indexnulls-property-adox.md) プロパティを使用して、インデックス フィールドが Null 値のレコードがインデックス エントリを持っているかどうかを指定します。
+- [IndexNulls](indexnulls-property-adox.md) プロパティを使用して、インデックス フィールドが Null 値のレコードがインデックス エントリを持っているかどうかを指定します。
 
-  - [Clustered](clustered-property-adox.md) プロパティを使用して、インデックスがクラスター化されているかどうかを指定します。
+- [Clustered](clustered-property-adox.md) プロパティを使用して、インデックスがクラスター化されているかどうかを指定します。
 
-  - [Properties](properties-collection-ado.md) コレクションを使用して、プロバイダー固有のインデックスのプロパティにアクセスします。
+- [Properties](properties-collection-ado.md) コレクションを使用して、プロバイダー固有のインデックスのプロパティにアクセスします。
 
 
 > [!NOTE]

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250177(v=office.15)
 ms:contentKeyID: 48548423
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0ffc93c2d09c185ea7eaa4a9291ec87aaa72d5eb
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: c2f14be526100b1ffcbe34af89c1f72d0a64ff99
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25943571"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025499"
 ---
 # <a name="using-the-connection-object-access"></a>接続オブジェクト (Access) を使用してください。
 
@@ -27,6 +27,5 @@ ms.locfileid: "25943571"
 
 このセクションには、次のトピックが含まれています。
 
-- [接続文字列を作成する](creating-the-connection-string.md)
-
-- [トランザクションを制御する](controlling-transactions.md)
+- [接続文字列の作成](creating-the-connection-string.md)
+- [トランザクションを制御します。](controlling-transactions.md)

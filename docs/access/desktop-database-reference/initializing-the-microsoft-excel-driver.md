@@ -1,6 +1,6 @@
 ---
-title: Microsoft Office Excel ドライバーを初期化する
-TOCTitle: Initializing the Microsoft Excel Driver
+title: Microsoft Office Excel ドライバーの初期化
+TOCTitle: Initializing the Microsoft Excel driver
 ms:assetid: 06c7f823-8e74-0811-cc00-e6b32075ef11
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844939(v=office.15)
 ms:contentKeyID: 48543054
@@ -10,15 +10,14 @@ f1_keywords:
 - acmain11.chm1032159
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f039378c619cb5c9ebe6a70ccae718f5abfdd306
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 87f2b5667c1406caec3e750c1ee256606851fe96
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25873902"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026338"
 ---
-# <a name="initializing-the-microsoft-excel-driver"></a>Microsoft Office Excel ドライバーを初期化する
-
+# <a name="initializing-the-microsoft-excel-driver"></a>Microsoft Office Excel ドライバーの初期化
 
 **適用されます**Access 2013 |。Office 2013
 
@@ -77,6 +76,7 @@ Microsoft Access データベース エンジンで使用される、Excel キ�
 </tbody>
 </table>
 
+<br/>
 
 **アクセス接続エンジン\\エンジン\\Excel 8.0**フォルダーには、Microsoft Excel 97 に適用されますが、次のエントリが含まれています。
 
@@ -149,4 +149,4 @@ Microsoft Access データベース エンジンで使用される、Excel キ�
 
 ## <a name="see-also"></a>関連項目
 
-[Excel ドライバーで TypeGuessRows 設定を使用します。](https://support.office.com/en-us/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b?ui=en-US&rs=en-US&ad=US)
+- [Excel ドライバーで TypeGuessRows 設定を使用します。](https://support.office.com/en-us/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b?ui=en-US&rs=en-US&ad=US)

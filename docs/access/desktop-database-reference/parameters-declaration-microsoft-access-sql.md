@@ -12,12 +12,12 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e906e90fd6f7bf6e26898ed5381ef687c2ee8514
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 64e40da96dc6d82c0f682cba5a3ebc7cfb82bb50
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937344"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026408"
 ---
 # <a name="parameters-declaration-microsoft-access-sql"></a>パラメーター宣言 (Microsoft Access SQL)
 
@@ -68,7 +68,7 @@ PARAMETERS 宣言は省略可能ですが、指定する場合は [SELECT](selec
 PARAMETERS [Low price] Currency, [Beginning date] DateTime;
 ```
 
-[場所](https://msdn.microsoft.com/library/ff195245\(v=office.15\))または[HAVING](https://msdn.microsoft.com/library/ff193795\(v=office.15\))句の中では、*データ型*ではないですが、*名前*を使用できます。 次の例では、ユーザーに 2 つのパラメーターの入力を求め、取得した抽出条件を Orders テーブルのレコードに適用します。
+[場所](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql)または[HAVING](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/having-clause-microsoft-access-sql)句の中では、*データ型*ではないですが、*名前*を使用できます。 次の例では、ユーザーに 2 つのパラメーターの入力を求め、取得した抽出条件を Orders テーブルのレコードに適用します。
 
 ```sql
 PARAMETERS [Low price] Currency, 
