@@ -8,16 +8,16 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5a88adf0-9265-4d49-976d-de0d93269aa9
 description: OSC プロバイダーの拡張メソッドの OSC プロバイダーによって返されるすべての XML は、OSC プロバイダーの次の XML スキーマに準拠する必要があります。 OSC スキーマが完全にここで再現します。
-ms.openlocfilehash: b1ec7888f5b6d9a7264f597e0c1ef3855d27b011
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.openlocfilehash: 578f0ea0c8df4f81c51ce71b50aa2768fe930d5c
+ms.sourcegitcommit: 4590b7ed906d008693a58abe63f089ed8a380b34
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25394105"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "26643172"
 ---
-# <a name="outlook-social-connector-provider-xml-schema"></a><span data-ttu-id="ee2e2-104">Outlook ソーシャル コネクタ プロバイダーの XML スキーマ</span><span class="sxs-lookup"><span data-stu-id="ee2e2-104">Outlook Social Connector provider XML schema</span></span>
+# <a name="outlook-social-connector-provider-xml-schema"></a><span data-ttu-id="0a6a4-104">Outlook ソーシャル コネクタ プロバイダーの XML スキーマ</span><span class="sxs-lookup"><span data-stu-id="0a6a4-104">Outlook Social Connector provider XML schema</span></span>
 
-<span data-ttu-id="ee2e2-105">OSC プロバイダーの拡張メソッドの OSC プロバイダーによって返されるすべての XML は、OSC プロバイダーの次の XML スキーマに準拠する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ee2e2-105">All XML that is returned by OSC providers in OSC provider extensibility methods must comply with the following OSC provider XML schema.</span></span> <span data-ttu-id="ee2e2-106">OSC スキーマが完全にここで再現します。</span><span class="sxs-lookup"><span data-stu-id="ee2e2-106">The OSC schema is reproduced here in its entirety.</span></span> <span data-ttu-id="ee2e2-107">現在のスキーマ定義ファイル、OutlookSocialProvider1_1.xsd は、この記事に付属するプロバイダー テンプレートのダウンロードにも提供されます。</span><span class="sxs-lookup"><span data-stu-id="ee2e2-107">The current schema definition file, OutlookSocialProvider1_1.xsd, is also provided in the download for the provider templates that accompany this article.</span></span> <span data-ttu-id="ee2e2-108">詳細についてを参照してください[Outlook ソーシャル コネクタ 2013: プロバイダー テンプレート](https://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c)。</span><span class="sxs-lookup"><span data-stu-id="ee2e2-108">For more information, see [Outlook Social Connector 2013: Provider templates](https://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c).</span></span> 
+<span data-ttu-id="0a6a4-105">OSC プロバイダーの拡張メソッドの OSC プロバイダーによって返されるすべての XML は、OSC プロバイダーの次の XML スキーマに準拠する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0a6a4-105">All XML that is returned by OSC providers in OSC provider extensibility methods must comply with the following OSC provider XML schema.</span></span> <span data-ttu-id="0a6a4-106">OSC スキーマが完全にここで再現します。</span><span class="sxs-lookup"><span data-stu-id="0a6a4-106">The OSC schema is reproduced here in its entirety.</span></span> <span data-ttu-id="0a6a4-107">現在のスキーマ定義ファイル、OutlookSocialProvider1_1.xsd は、この記事に付属するプロバイダー テンプレートのダウンロードにも提供されます。</span><span class="sxs-lookup"><span data-stu-id="0a6a4-107">The current schema definition file, OutlookSocialProvider1_1.xsd, is also provided in the download for the provider templates that accompany this article.</span></span> <span data-ttu-id="0a6a4-108">詳細についてを参照してください[Outlook ソーシャル コネクタ 2013: プロバイダー テンプレート](https://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c)。</span><span class="sxs-lookup"><span data-stu-id="0a6a4-108">For more information, see [Outlook Social Connector 2013: Provider templates](https://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c).</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -262,7 +262,7 @@ ms.locfileid: "25394105"
       <!-- Indicates if the OSC should sync on-demand contacts when people pane is minimized -->
       <xs:element name="showOnDemandContactsWhenMinimized" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
       <!-- Indicates hashing function used to hash email addresses, ignored unless-->
-      <!-- dynamicActivitiesLookupEx = true or dyanamicContactsLookup = true in capabilities XML-->
+      <!-- dynamicActivitiesLookupEx = true or dynamicContactsLookup = true in capabilities XML-->
       <xs:element name="hashFunction" minOccurs="0" maxOccurs="1">
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -458,13 +458,13 @@ ms.locfileid: "25394105"
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="ee2e2-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="ee2e2-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0a6a4-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="0a6a4-109">See also</span></span>
 
-- [<span data-ttu-id="ee2e2-110">機能の XML の例</span><span class="sxs-lookup"><span data-stu-id="ee2e2-110">Capabilities XML Example</span></span>](capabilities-xml-example.md)  
-- [<span data-ttu-id="ee2e2-111">友人の XML の例</span><span class="sxs-lookup"><span data-stu-id="ee2e2-111">Friends XML Example</span></span>](friends-xml-example.md) 
-- [<span data-ttu-id="ee2e2-112">アクティビティ フィードの XML の例</span><span class="sxs-lookup"><span data-stu-id="ee2e2-112">Activity Feed XML Example</span></span>](activity-feed-xml-example.md)  
-- [<span data-ttu-id="ee2e2-113">機能のための XML</span><span class="sxs-lookup"><span data-stu-id="ee2e2-113">XML for Capabilities</span></span>](xml-for-capabilities.md)  
-- [<span data-ttu-id="ee2e2-114">友人の XML</span><span class="sxs-lookup"><span data-stu-id="ee2e2-114">XML for Friends</span></span>](xml-for-friends.md)  
-- [<span data-ttu-id="ee2e2-115">活動の XML</span><span class="sxs-lookup"><span data-stu-id="ee2e2-115">XML for Activities</span></span>](xml-for-activities.md)  
-- [<span data-ttu-id="ee2e2-116">Outlook ソーシャル コネクタ プロバイダー インターフェイス</span><span class="sxs-lookup"><span data-stu-id="ee2e2-116">Outlook Social Connector Provider Interfaces</span></span>](outlook-social-connector-provider-interfaces.md)
+- [<span data-ttu-id="0a6a4-110">機能の XML の例</span><span class="sxs-lookup"><span data-stu-id="0a6a4-110">Capabilities XML Example</span></span>](capabilities-xml-example.md)  
+- [<span data-ttu-id="0a6a4-111">友人の XML の例</span><span class="sxs-lookup"><span data-stu-id="0a6a4-111">Friends XML Example</span></span>](friends-xml-example.md) 
+- [<span data-ttu-id="0a6a4-112">アクティビティ フィードの XML の例</span><span class="sxs-lookup"><span data-stu-id="0a6a4-112">Activity Feed XML Example</span></span>](activity-feed-xml-example.md)  
+- [<span data-ttu-id="0a6a4-113">機能のための XML</span><span class="sxs-lookup"><span data-stu-id="0a6a4-113">XML for Capabilities</span></span>](xml-for-capabilities.md)  
+- [<span data-ttu-id="0a6a4-114">友人の XML</span><span class="sxs-lookup"><span data-stu-id="0a6a4-114">XML for Friends</span></span>](xml-for-friends.md)  
+- [<span data-ttu-id="0a6a4-115">活動の XML</span><span class="sxs-lookup"><span data-stu-id="0a6a4-115">XML for Activities</span></span>](xml-for-activities.md)  
+- [<span data-ttu-id="0a6a4-116">Outlook ソーシャル コネクタ プロバイダー インターフェイス</span><span class="sxs-lookup"><span data-stu-id="0a6a4-116">Outlook Social Connector Provider Interfaces</span></span>](outlook-social-connector-provider-interfaces.md)
 
