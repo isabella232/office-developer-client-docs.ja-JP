@@ -9,12 +9,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 3dfecc0b-a91c-448e-8721-5d3486b625fa
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 9cdbb10ea68723bd7e1cd9289e8592a7cc087c46
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 34784f6895386efe7e6c3ca7ec213c7d71931058
+ms.sourcegitcommit: f139451a43598b59da22775333779df691df460a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798887"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26685180"
 ---
 # <a name="known-issues-in-excel-xll-development"></a>Excel アドイン (XLL) 開発における既知の問題
 
@@ -28,7 +28,7 @@ XLL で関数やコマンドを登録すると、Excel 上で新しいリソー�
   
 ## <a name="argument-description-string-truncation-in-the-function-wizard"></a>関数ウィザードにおける引数の説明文字列の切り捨て
 
-*PxArgumentHelp1* パラメーターと、その後の **xlfRegister** 関数のパラメーターはすべて、XLL 関数の引数に相当し、文字列は省略することができます。 引数作成ダイアログ ボックスにヘルプを表示するために、関数ウィザードにはこれらのパラメータが表示されます。 ダイアログ ボックスに表示する際、最後の引数に相当する文字列が Excel 上で 1 文字または 2 文字切り捨てられる場合があります。 これを回避するには、最終文字列の末尾に 1 文字または 2 文字分のスペースを追加します。 
+*PxArgumentHelp1* パラメーターと、その後の **xlfRegister** 関数のパラメーターはすべて、XLL 関数の引数に相当し、文字列は省略することができます。 引数作成ダイアログ ボックスにヘルプを表示するために、関数ウィザードにはこれらのパラメータが表示されます。 ダイアログ ボックスに表示する際、最後の引数に相当する文字列が Excel 上で 1 文字または 2 文字切り捨てられる場合があります。 これを回避するために、関数登録の最後の「引数ヘルプ」パラメーターとして付加的な「空の文字列」を追加できます。
   
 ## <a name="binary-name-scope-limitation"></a>バイナリ名のスコープ制限
 
