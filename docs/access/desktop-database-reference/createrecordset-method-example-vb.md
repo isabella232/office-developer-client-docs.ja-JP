@@ -6,21 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249943(v=office.15)
 ms:contentKeyID: 48547536
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 427159a5f9bf73081e459dfe11cdb13dc3969cf0
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 79d4bcb9547cdfd9b72dda71c8591a1ad009890b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25877332"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28719877"
 ---
-# <a name="createrecordset-method-example-vb"></a><span data-ttu-id="c5bf5-102">CreateRecordset メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="c5bf5-102">CreateRecordset method example (VB)</span></span>
+# <a name="createrecordset-method-example-vb"></a><span data-ttu-id="7cf2b-102">CreateRecordset メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="7cf2b-102">CreateRecordset method example (VB)</span></span>
 
 
-<span data-ttu-id="c5bf5-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c5bf5-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="7cf2b-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="7cf2b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c5bf5-p101">CreateRecordset メソッドを使用すると、[Recordset](recordset-object-ado.md) オブジェクトを作成し、列情報を指定できます。 **Recordset** オブジェクトにデータを挿入すると、挿入された情報は基になる行セットにバッファーされます。</span><span class="sxs-lookup"><span data-stu-id="c5bf5-p101">You can create a [Recordset](recordset-object-ado.md) object and specify the column information. You can then insert data into the **Recordset** object; the underlying rowset buffers the inserts.</span></span>
+<span data-ttu-id="7cf2b-p101">CreateRecordset メソッドを使用すると、[Recordset](recordset-object-ado.md) オブジェクトを作成し、列情報を指定できます。 **Recordset** オブジェクトにデータを挿入すると、挿入された情報は基になる行セットにバッファーされます。</span><span class="sxs-lookup"><span data-stu-id="7cf2b-p101">You can create a [Recordset](recordset-object-ado.md) object and specify the column information. You can then insert data into the **Recordset** object; the underlying rowset buffers the inserts.</span></span>
 
-<span data-ttu-id="c5bf5-p102">次のコード例では、**RDSServer.DataFactory** オブジェクトを使用した [Recordset](datafactory-object-rdsserver.md) の定義方法を示します。 [RDS.DataControl](datacontrol-object-rds.md) オブジェクトでも、同じように使用できます。</span><span class="sxs-lookup"><span data-stu-id="c5bf5-p102">The following code example shows how to define a **Recordset** by using the [RDSServer.DataFactory](datafactory-object-rdsserver.md) object. You can also do this with the [RDS.DataControl](datacontrol-object-rds.md) object.</span></span>
+<span data-ttu-id="7cf2b-p102">次のコード例では、**RDSServer.DataFactory** オブジェクトを使用した [Recordset](datafactory-object-rdsserver.md) の定義方法を示します。 [RDS.DataControl](datacontrol-object-rds.md) オブジェクトでも、同じように使用できます。</span><span class="sxs-lookup"><span data-stu-id="7cf2b-p102">The following code example shows how to define a **Recordset** by using the [RDSServer.DataFactory](datafactory-object-rdsserver.md) object. You can also do this with the [RDS.DataControl](datacontrol-object-rds.md) object.</span></span>
 
 ```vb 
  

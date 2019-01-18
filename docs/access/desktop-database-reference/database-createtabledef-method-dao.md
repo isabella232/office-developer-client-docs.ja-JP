@@ -10,26 +10,27 @@ f1_keywords:
 - dao360.chm1052968
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f2e8eab52491eb4ff48f398848d7ffc303999bb4
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: c986f0a96c14dac8a9ee4f3c7fded5a049fa451e
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998890"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718491"
 ---
-# <a name="databasecreatetabledef-method-dao"></a><span data-ttu-id="307d1-102">Database.CreateTableDef メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="307d1-102">Database.CreateTableDef method (DAO)</span></span>
+# <a name="databasecreatetabledef-method-dao"></a><span data-ttu-id="69d01-102">Database.CreateTableDef メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="69d01-102">Database.CreateTableDef method (DAO)</span></span>
 
-<span data-ttu-id="307d1-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="307d1-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="69d01-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="69d01-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="307d1-p101">新しい **[TableDef](tabledef-object-dao.md)** オブジェクトを作成します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="307d1-p101">Creates a new **[TableDef](tabledef-object-dao.md)** object (Microsoft Access workspaces only). .</span></span>
+<span data-ttu-id="69d01-p101">新しい **[TableDef](tabledef-object-dao.md)** オブジェクトを作成します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="69d01-p101">Creates a new **[TableDef](tabledef-object-dao.md)** object (Microsoft Access workspaces only). .</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="307d1-106">構文</span><span class="sxs-lookup"><span data-stu-id="307d1-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="69d01-106">構文</span><span class="sxs-lookup"><span data-stu-id="69d01-106">Syntax</span></span>
 
-<span data-ttu-id="307d1-107">*式*です。CreateTableDef (***名前***、***属性***、 ***SourceTableName***、***接続***)</span><span class="sxs-lookup"><span data-stu-id="307d1-107">*expression* .CreateTableDef(***Name***, ***Attributes***, ***SourceTableName***, ***Connect***)</span></span>
+<span data-ttu-id="69d01-107">*式*です。CreateTableDef (***名前***、***属性***、 ***SourceTableName***、***接続***)</span><span class="sxs-lookup"><span data-stu-id="69d01-107">*expression* .CreateTableDef(***Name***, ***Attributes***, ***SourceTableName***, ***Connect***)</span></span>
 
-<span data-ttu-id="307d1-108">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="307d1-108">*expression* A variable that represents a **Database** object.</span></span>
+<span data-ttu-id="69d01-108">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="69d01-108">*expression* A variable that represents a **Database** object.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="307d1-109">パラメーター</span><span class="sxs-lookup"><span data-stu-id="307d1-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="69d01-109">パラメーター</span><span class="sxs-lookup"><span data-stu-id="69d01-109">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -40,56 +41,56 @@ ms.locfileid: "25998890"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="307d1-110">名前</span><span class="sxs-lookup"><span data-stu-id="307d1-110">Name</span></span></p></th>
-<th><p><span data-ttu-id="307d1-111">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="307d1-111">Required/optional</span></span></p></th>
-<th><p><span data-ttu-id="307d1-112">データ型</span><span class="sxs-lookup"><span data-stu-id="307d1-112">Data type</span></span></p></th>
-<th><p><span data-ttu-id="307d1-113">説明</span><span class="sxs-lookup"><span data-stu-id="307d1-113">Description</span></span></p></th>
+<th><p><span data-ttu-id="69d01-110">名前</span><span class="sxs-lookup"><span data-stu-id="69d01-110">Name</span></span></p></th>
+<th><p><span data-ttu-id="69d01-111">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="69d01-111">Required/optional</span></span></p></th>
+<th><p><span data-ttu-id="69d01-112">データ型</span><span class="sxs-lookup"><span data-stu-id="69d01-112">Data type</span></span></p></th>
+<th><p><span data-ttu-id="69d01-113">説明</span><span class="sxs-lookup"><span data-stu-id="69d01-113">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="307d1-114"><em>Name</em></span><span class="sxs-lookup"><span data-stu-id="307d1-114"><em>Name</em></span></span></p></td>
-<td><p><span data-ttu-id="307d1-115">省略可能</span><span class="sxs-lookup"><span data-stu-id="307d1-115">Optional</span></span></p></td>
-<td><p><span data-ttu-id="307d1-116"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="307d1-116"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="307d1-p102">新しい <strong>TableDef</strong> オブジェクトの一意の名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。有効な <strong>TableDef</strong> 名の詳細については、<strong><a href="tabledef-name-property-dao.md">Name</a></strong> プロパティを参照してください。</span><span class="sxs-lookup"><span data-stu-id="307d1-p102">A <strong>Variant</strong> (<strong>String</strong> subtype) that uniquely names the new <strong>TableDef</strong> object. See the <strong><a href="tabledef-name-property-dao.md">Name</a></strong> property for details on valid <strong>TableDef</strong> names.</span></span></p></td>
+<td><p><span data-ttu-id="69d01-114"><em>Name</em></span><span class="sxs-lookup"><span data-stu-id="69d01-114"><em>Name</em></span></span></p></td>
+<td><p><span data-ttu-id="69d01-115">省略可能</span><span class="sxs-lookup"><span data-stu-id="69d01-115">Optional</span></span></p></td>
+<td><p><span data-ttu-id="69d01-116"><strong>Variant (バリアント型)</strong></span><span class="sxs-lookup"><span data-stu-id="69d01-116"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="69d01-p102">新しい <strong>TableDef</strong> オブジェクトの一意の名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。有効な <strong>TableDef</strong> 名の詳細については、<strong><a href="tabledef-name-property-dao.md">Name</a></strong> プロパティを参照してください。</span><span class="sxs-lookup"><span data-stu-id="69d01-p102">A <strong>Variant</strong> (<strong>String</strong> subtype) that uniquely names the new <strong>TableDef</strong> object. See the <strong><a href="tabledef-name-property-dao.md">Name</a></strong> property for details on valid <strong>TableDef</strong> names.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="307d1-119"><em>Attributes</em></span><span class="sxs-lookup"><span data-stu-id="307d1-119"><em>Attributes</em></span></span></p></td>
-<td><p><span data-ttu-id="307d1-120">省略可能</span><span class="sxs-lookup"><span data-stu-id="307d1-120">Optional</span></span></p></td>
-<td><p><span data-ttu-id="307d1-121"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="307d1-121"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="307d1-p103">新しい <strong>TableDef</strong> オブジェクトの 1 つ以上の特性を示す定数 (または定数の組み合わせ)。詳細については、 <strong><a href="tabledef-attributes-property-dao.md">Attributes</a></strong> プロパティを参照してください。  </span><span class="sxs-lookup"><span data-stu-id="307d1-p103">A constant or combination of constants that indicates one or more characteristics of the new <strong>TableDef</strong> object. See the <strong><a href="tabledef-attributes-property-dao.md">Attributes</a></strong> property for more information.</span></span></p></td>
+<td><p><span data-ttu-id="69d01-119"><em>Attributes</em></span><span class="sxs-lookup"><span data-stu-id="69d01-119"><em>Attributes</em></span></span></p></td>
+<td><p><span data-ttu-id="69d01-120">省略可能</span><span class="sxs-lookup"><span data-stu-id="69d01-120">Optional</span></span></p></td>
+<td><p><span data-ttu-id="69d01-121"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="69d01-121"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="69d01-p103">新しい <strong>TableDef</strong> オブジェクトの 1 つ以上の特性を示す定数 (または定数の組み合わせ)。詳細については、 <strong><a href="tabledef-attributes-property-dao.md">Attributes</a></strong> プロパティを参照してください。  </span><span class="sxs-lookup"><span data-stu-id="69d01-p103">A constant or combination of constants that indicates one or more characteristics of the new <strong>TableDef</strong> object. See the <strong><a href="tabledef-attributes-property-dao.md">Attributes</a></strong> property for more information.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="307d1-124"><em>SourceTableName</em></span><span class="sxs-lookup"><span data-stu-id="307d1-124"><em>SourceTableName</em></span></span></p></td>
-<td><p><span data-ttu-id="307d1-125">省略可能</span><span class="sxs-lookup"><span data-stu-id="307d1-125">Optional</span></span></p></td>
-<td><p><span data-ttu-id="307d1-126"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="307d1-126"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="307d1-p104">データの元のソースである外部データベースのテーブルの名前を格納している、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。source 文字列は、新しい <strong>TableDef</strong> オブジェクトの <strong><a href="tabledef-sourcetablename-property-dao.md">SourceTableName</a></strong> プロパティの設定値になります。</span><span class="sxs-lookup"><span data-stu-id="307d1-p104">A <strong>Variant</strong> (<strong>String</strong> subtype) containing the name of a table in an external database that is the original source of the data. The source string becomes the <strong><a href="tabledef-sourcetablename-property-dao.md">SourceTableName</a></strong> property setting of the new <strong>TableDef</strong> object.</span></span></p></td>
+<td><p><span data-ttu-id="69d01-124"><em>SourceTableName</em></span><span class="sxs-lookup"><span data-stu-id="69d01-124"><em>SourceTableName</em></span></span></p></td>
+<td><p><span data-ttu-id="69d01-125">省略可能</span><span class="sxs-lookup"><span data-stu-id="69d01-125">Optional</span></span></p></td>
+<td><p><span data-ttu-id="69d01-126"><strong>Variant (バリアント型)</strong></span><span class="sxs-lookup"><span data-stu-id="69d01-126"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="69d01-p104">データの元のソースである外部データベースのテーブルの名前を格納している、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。source 文字列は、新しい <strong>TableDef</strong> オブジェクトの <strong><a href="tabledef-sourcetablename-property-dao.md">SourceTableName</a></strong> プロパティの設定値になります。</span><span class="sxs-lookup"><span data-stu-id="69d01-p104">A <strong>Variant</strong> (<strong>String</strong> subtype) containing the name of a table in an external database that is the original source of the data. The source string becomes the <strong><a href="tabledef-sourcetablename-property-dao.md">SourceTableName</a></strong> property setting of the new <strong>TableDef</strong> object.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="307d1-129"><em>Connect</em></span><span class="sxs-lookup"><span data-stu-id="307d1-129"><em>Connect</em></span></span></p></td>
-<td><p><span data-ttu-id="307d1-130">省略可能</span><span class="sxs-lookup"><span data-stu-id="307d1-130">Optional</span></span></p></td>
-<td><p><span data-ttu-id="307d1-131"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="307d1-131"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="307d1-p105">開いているデータベース、パススルー クエリで使用されるデータベース、またはリンク テーブルのソースに関する情報を格納している、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。有効な接続文字列の詳細については、<strong><a href="tabledef-connect-property-dao.md">Connect</a></strong> プロパティを参照してください。</span><span class="sxs-lookup"><span data-stu-id="307d1-p105">A <strong>Variant</strong> (<strong>String</strong> subtype) containing information about the source of an open database, a database used in a pass-through query, or a linked table. See the <strong><a href="tabledef-connect-property-dao.md">Connect</a></strong> property for more information about valid connection strings.</span></span></p></td>
+<td><p><span data-ttu-id="69d01-129"><em>Connect</em></span><span class="sxs-lookup"><span data-stu-id="69d01-129"><em>Connect</em></span></span></p></td>
+<td><p><span data-ttu-id="69d01-130">省略可能</span><span class="sxs-lookup"><span data-stu-id="69d01-130">Optional</span></span></p></td>
+<td><p><span data-ttu-id="69d01-131"><strong>Variant (バリアント型)</strong></span><span class="sxs-lookup"><span data-stu-id="69d01-131"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="69d01-p105">開いているデータベース、パススルー クエリで使用されるデータベース、またはリンク テーブルのソースに関する情報を格納している、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。有効な接続文字列の詳細については、<strong><a href="tabledef-connect-property-dao.md">Connect</a></strong> プロパティを参照してください。</span><span class="sxs-lookup"><span data-stu-id="69d01-p105">A <strong>Variant</strong> (<strong>String</strong> subtype) containing information about the source of an open database, a database used in a pass-through query, or a linked table. See the <strong><a href="tabledef-connect-property-dao.md">Connect</a></strong> property for more information about valid connection strings.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="return-value"></a><span data-ttu-id="307d1-134">戻り値</span><span class="sxs-lookup"><span data-stu-id="307d1-134">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="69d01-134">戻り値</span><span class="sxs-lookup"><span data-stu-id="69d01-134">Return value</span></span>
 
-<span data-ttu-id="307d1-135">TableDef</span><span class="sxs-lookup"><span data-stu-id="307d1-135">TableDef</span></span>
+<span data-ttu-id="69d01-135">TableDef</span><span class="sxs-lookup"><span data-stu-id="69d01-135">TableDef</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="307d1-136">解説</span><span class="sxs-lookup"><span data-stu-id="307d1-136">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="69d01-136">解説</span><span class="sxs-lookup"><span data-stu-id="69d01-136">Remarks</span></span>
 
-<span data-ttu-id="307d1-p106">**CreateTableDef** メソッドの使用時に省略可能な引数を省略した場合は、新しいオブジェクトをコレクションに追加する前に、適切な代入ステートメントを使用して対応するプロパティを設定またはリセットできます。オブジェクトの追加後は、一部のプロパティは変更できません。詳細については、各プロパティのトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="307d1-p106">If you omit one or more of the optional parts when you use the **CreateTableDef** method, you can use an appropriate assignment statement to set or reset the corresponding property before you append the new object to a collection. After you append the object, you can alter some but not all of its properties. See the individual property topics for more details.</span></span>
+<span data-ttu-id="69d01-p106">**CreateTableDef** メソッドの使用時に省略可能な引数を省略した場合は、新しいオブジェクトをコレクションに追加する前に、適切な代入ステートメントを使用して対応するプロパティを設定またはリセットできます。オブジェクトの追加後は、一部のプロパティは変更できません。詳細については、各プロパティのトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="69d01-p106">If you omit one or more of the optional parts when you use the **CreateTableDef** method, you can use an appropriate assignment statement to set or reset the corresponding property before you append the new object to a collection. After you append the object, you can alter some but not all of its properties. See the individual property topics for more details.</span></span>
 
-<span data-ttu-id="307d1-140">名が既にコレクションのメンバーであるオブジェクトを参照を追加する**tabledef オブジェクト**または**[Field](field-object-dao.md)** オブジェクトに無効なプロパティを指定する場合、 **[Append](tabledefs-append-method-dao.md)** メソッドを使用すると、実行時エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="307d1-140">If name refers to an object that is already a member of the collection, or you specify an invalid property in the **TableDef** or **[Field](field-object-dao.md)** object you're appending, a run-time error occurs when you use the **[Append](tabledefs-append-method-dao.md)** method.</span></span> <span data-ttu-id="307d1-141">また、 **TableDef** オブジェクトの **Field** を少なくとも 1 つ定義しないと、 **TableDef** オブジェクトを **TableDefs** コレクションに追加できません。</span><span class="sxs-lookup"><span data-stu-id="307d1-141">Also, you can't append a **TableDef** object to the **TableDefs** collection until you define at least one **Field** for the **TableDef** object.</span></span>
+<span data-ttu-id="69d01-140">名が既にコレクションのメンバーであるオブジェクトを参照を追加する**tabledef オブジェクト**または**[Field](field-object-dao.md)** オブジェクトに無効なプロパティを指定する場合、 **[Append](tabledefs-append-method-dao.md)** メソッドを使用すると、実行時エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="69d01-140">If name refers to an object that is already a member of the collection, or you specify an invalid property in the **TableDef** or **[Field](field-object-dao.md)** object you're appending, a run-time error occurs when you use the **[Append](tabledefs-append-method-dao.md)** method.</span></span> <span data-ttu-id="69d01-141">また、 **TableDef** オブジェクトの **Field** を少なくとも 1 つ定義しないと、 **TableDef** オブジェクトを **TableDefs** コレクションに追加できません。</span><span class="sxs-lookup"><span data-stu-id="69d01-141">Also, you can't append a **TableDef** object to the **TableDefs** collection until you define at least one **Field** for the **TableDef** object.</span></span>
 
-<span data-ttu-id="307d1-142">[**TableDefs**](tabledefs-collection-dao.md) コレクションから **TableDef** オブジェクトを削除するには、コレクションの **[Delete](tabledefs-delete-method-dao.md)** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="307d1-142">To remove a **TableDef** object from the **[TableDefs](tabledefs-collection-dao.md)** collection, use the **[Delete](tabledefs-delete-method-dao.md)** method on the collection.</span></span>
+<span data-ttu-id="69d01-142">[**TableDefs**](tabledefs-collection-dao.md) コレクションから **TableDef** オブジェクトを削除するには、コレクションの **[Delete](tabledefs-delete-method-dao.md)** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="69d01-142">To remove a **TableDef** object from the **[TableDefs](tabledefs-collection-dao.md)** collection, use the **[Delete](tabledefs-delete-method-dao.md)** method on the collection.</span></span>
 
-## <a name="example"></a><span data-ttu-id="307d1-143">例</span><span class="sxs-lookup"><span data-stu-id="307d1-143">Example</span></span>
+## <a name="example"></a><span data-ttu-id="69d01-143">例</span><span class="sxs-lookup"><span data-stu-id="69d01-143">Example</span></span>
 
-<span data-ttu-id="307d1-144">この例では、Northwind データベースで新しい **TableDef** オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="307d1-144">This example creates a new **TableDef** object in the Northwind database.</span></span>
+<span data-ttu-id="69d01-144">この例では、Northwind データベースで新しい **TableDef** オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="69d01-144">This example creates a new **TableDef** object in the Northwind database.</span></span>
 
 ```vb
     Sub CreateTableDefX() 
@@ -154,7 +155,7 @@ ms.locfileid: "25998890"
 
 <br/>
 
-<span data-ttu-id="307d1-p108">この例では、 **CreateTableDef** メソッドと **FillCache** メソッド、および **CacheSize** 、 **CacheStart** 、 **SourceTableName** の各プロパティを使用して、リンクされたテーブルのレコードを 2 回列挙します。その後、50 レコードのキャッシュを使用してレコードを 2 回列挙します。さらに、リンクされたテーブルの処理にキャッシュを使用しなかった場合と使用した場合のパフォーマンスの統計を表示します。</span><span class="sxs-lookup"><span data-stu-id="307d1-p108">This example uses the **CreateTableDef** and **FillCache** methods and the **CacheSize**, **CacheStart** and **SourceTableName** properties to enumerate the records in a linked table twice. Then it enumerates the records twice with a 50-record cache. The example then displays the performance statistics for the uncached and cached runs through the linked table.</span></span>
+<span data-ttu-id="69d01-p108">この例では、 **CreateTableDef** メソッドと **FillCache** メソッド、および **CacheSize** 、 **CacheStart** 、 **SourceTableName** の各プロパティを使用して、リンクされたテーブルのレコードを 2 回列挙します。その後、50 レコードのキャッシュを使用してレコードを 2 回列挙します。さらに、リンクされたテーブルの処理にキャッシュを使用しなかった場合と使用した場合のパフォーマンスの統計を表示します。</span><span class="sxs-lookup"><span data-stu-id="69d01-p108">This example uses the **CreateTableDef** and **FillCache** methods and the **CacheSize**, **CacheStart** and **SourceTableName** properties to enumerate the records in a linked table twice. Then it enumerates the records twice with a 50-record cache. The example then displays the performance statistics for the uncached and cached runs through the linked table.</span></span>
 
 ```vb
     Sub ClientServerX3() 

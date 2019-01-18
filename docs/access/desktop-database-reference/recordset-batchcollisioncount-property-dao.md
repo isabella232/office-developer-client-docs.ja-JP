@@ -10,35 +10,36 @@ f1_keywords:
 - dao360.chm1101181
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7d2100fb9803de406eca258b1d1093b343a6e88d
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: d0c4af9744accd21a91dca2676a08cad3d1cc7e7
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929658"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28711939"
 ---
-# <a name="recordsetbatchcollisioncount-property-dao"></a><span data-ttu-id="185e2-102">Recordset.BatchCollisionCount プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="185e2-102">Recordset.BatchCollisionCount property (DAO)</span></span>
+# <a name="recordsetbatchcollisioncount-property-dao"></a><span data-ttu-id="3fa07-102">Recordset.BatchCollisionCount プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="3fa07-102">Recordset.BatchCollisionCount property (DAO)</span></span>
 
 
-<span data-ttu-id="185e2-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="185e2-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="3fa07-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="3fa07-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="185e2-104">構文</span><span class="sxs-lookup"><span data-stu-id="185e2-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="3fa07-104">構文</span><span class="sxs-lookup"><span data-stu-id="3fa07-104">Syntax</span></span>
 
-<span data-ttu-id="185e2-105">*式*です。BatchCollisionCount</span><span class="sxs-lookup"><span data-stu-id="185e2-105">*expression* .BatchCollisionCount</span></span>
+<span data-ttu-id="3fa07-105">*式*です。BatchCollisionCount</span><span class="sxs-lookup"><span data-stu-id="3fa07-105">*expression* .BatchCollisionCount</span></span>
 
-<span data-ttu-id="185e2-106">\*式\***レコード セット**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="185e2-106">*expression* A variable that represents a **Recordset** object.</span></span>
+<span data-ttu-id="3fa07-106">\*式\***レコード セット**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="3fa07-106">*expression* A variable that represents a **Recordset** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="185e2-107">注釈</span><span class="sxs-lookup"><span data-stu-id="185e2-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3fa07-107">注釈</span><span class="sxs-lookup"><span data-stu-id="3fa07-107">Remarks</span></span>
 
-<span data-ttu-id="185e2-p101">このプロパティは、競合が発生したレコード数、または最後のバッチ更新を実行しようとしたときに更新に失敗したレコード数を示します。このプロパティの値は、 **[BatchCollisions](recordset-batchcollisions-property-dao.md)** プロパティのブックマークの数に対応します。</span><span class="sxs-lookup"><span data-stu-id="185e2-p101">This property indicates how many records encountered collisions or otherwise failed to update during the last batch update attempt. The value of this property corresponds to the number of bookmarks in the **[BatchCollisions](recordset-batchcollisions-property-dao.md)** property.</span></span>
+<span data-ttu-id="3fa07-p101">このプロパティは、競合が発生したレコード数、または最後のバッチ更新を実行しようとしたときに更新に失敗したレコード数を示します。このプロパティの値は、 **[BatchCollisions](recordset-batchcollisions-property-dao.md)** プロパティのブックマークの数に対応します。</span><span class="sxs-lookup"><span data-stu-id="3fa07-p101">This property indicates how many records encountered collisions or otherwise failed to update during the last batch update attempt. The value of this property corresponds to the number of bookmarks in the **[BatchCollisions](recordset-batchcollisions-property-dao.md)** property.</span></span>
 
-<span data-ttu-id="185e2-110">作業中の **[Recordset](recordset-object-dao.md)** オブジェクトの **[Bookmark](recordset-bookmark-property-dao.md)** プロパティを、 **BatchCollisions** 配列のブックマークの値に設定すると、最新のバッチ **[Update](recordset-update-method-dao.md)** 操作の完了に失敗した各レコードに移動できます。</span><span class="sxs-lookup"><span data-stu-id="185e2-110">If you set the working **[Recordset](recordset-object-dao.md)** object's **[Bookmark](recordset-bookmark-property-dao.md)** property to bookmark values in the **BatchCollisions** array, you can move to each record that failed to complete the most recent batch **[Update](recordset-update-method-dao.md)** operation.</span></span>
+<span data-ttu-id="3fa07-110">作業中の **[Recordset](recordset-object-dao.md)** オブジェクトの **[Bookmark](recordset-bookmark-property-dao.md)** プロパティを、 **BatchCollisions** 配列のブックマークの値に設定すると、最新のバッチ **[Update](recordset-update-method-dao.md)** 操作の完了に失敗した各レコードに移動できます。</span><span class="sxs-lookup"><span data-stu-id="3fa07-110">If you set the working **[Recordset](recordset-object-dao.md)** object's **[Bookmark](recordset-bookmark-property-dao.md)** property to bookmark values in the **BatchCollisions** array, you can move to each record that failed to complete the most recent batch **[Update](recordset-update-method-dao.md)** operation.</span></span>
 
-<span data-ttu-id="185e2-p102">競合するレコードを修正した後、バッチモードの **Update** メソッドを再び呼び出すことができます。ここで DAO はもう一度バッチ更新を試み、再び **BatchCollisions** プロパティに、2 回目の実行で失敗したレコードのセットが反映されます。以前の実行が正常に終了したレコードは、 **[RecordStatus](recordset-recordstatus-property-dao.md)** プロパティが dbRecordUnmodified に設定されているため、現在の実行には送信されません。このプロセスは、競合が発生する限り続行できますが、更新を中止して結果セットを閉じることもできます。</span><span class="sxs-lookup"><span data-stu-id="185e2-p102">After the collision records are corrected, a batch-mode **Update** method can be called again. At this point DAO attempts another batch update, and the **BatchCollisions** property again reflects the set of records that failed the second attempt. Any records that succeeded in the previous attempt are not sent in the current attempt, because they now have a **[RecordStatus](recordset-recordstatus-property-dao.md)** property of dbRecordUnmodified. This process can continue as long as collisions occur, or until you abandon the updates and close the result set.</span></span>
+<span data-ttu-id="3fa07-p102">競合するレコードを修正した後、バッチモードの **Update** メソッドを再び呼び出すことができます。ここで DAO はもう一度バッチ更新を試み、再び **BatchCollisions** プロパティに、2 回目の実行で失敗したレコードのセットが反映されます。以前の実行が正常に終了したレコードは、 **[RecordStatus](recordset-recordstatus-property-dao.md)** プロパティが dbRecordUnmodified に設定されているため、現在の実行には送信されません。このプロセスは、競合が発生する限り続行できますが、更新を中止して結果セットを閉じることもできます。</span><span class="sxs-lookup"><span data-stu-id="3fa07-p102">After the collision records are corrected, a batch-mode **Update** method can be called again. At this point DAO attempts another batch update, and the **BatchCollisions** property again reflects the set of records that failed the second attempt. Any records that succeeded in the previous attempt are not sent in the current attempt, because they now have a **[RecordStatus](recordset-recordstatus-property-dao.md)** property of dbRecordUnmodified. This process can continue as long as collisions occur, or until you abandon the updates and close the result set.</span></span>
 
-## <a name="example"></a><span data-ttu-id="185e2-115">例</span><span class="sxs-lookup"><span data-stu-id="185e2-115">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3fa07-115">例</span><span class="sxs-lookup"><span data-stu-id="3fa07-115">Example</span></span>
 
-<span data-ttu-id="185e2-116">次の使用例は、 **BatchCollisionCount** プロパティと **Update** メソッドを使用して、バッチ更新を強制することで競合を解決するバッチ更新を示します。</span><span class="sxs-lookup"><span data-stu-id="185e2-116">This example uses the **BatchCollisionCount** property and the **Update** method to demonstrate batch updating where any collisions are resolved by forcing the batch update.</span></span>
+<span data-ttu-id="3fa07-116">次の使用例は、 **BatchCollisionCount** プロパティと **Update** メソッドを使用して、バッチ更新を強制することで競合を解決するバッチ更新を示します。</span><span class="sxs-lookup"><span data-stu-id="3fa07-116">This example uses the **BatchCollisionCount** property and the **Update** method to demonstrate batch updating where any collisions are resolved by forcing the batch update.</span></span>
 
 ```vb 
 Sub BatchX() 

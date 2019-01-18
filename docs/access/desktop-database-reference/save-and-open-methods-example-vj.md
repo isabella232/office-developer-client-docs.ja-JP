@@ -6,21 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248920(v=office.15)
 ms:contentKeyID: 48543414
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 14b2cfdce80371aac923b46d59a8dfc149263e57
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 2536dd76c6080590852cba00eef9adca0e18d2cb
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25889813"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718330"
 ---
-# <a name="save-and-open-methods-example-vj"></a><span data-ttu-id="236bb-102">Save メソッドと Open メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="236bb-102">Save and Open methods example (VJ++)</span></span>
+# <a name="save-and-open-methods-example-vj"></a><span data-ttu-id="fd41c-102">Save メソッドと Open メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="fd41c-102">Save and Open methods example (VJ++)</span></span>
 
 
-<span data-ttu-id="236bb-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="236bb-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="fd41c-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="fd41c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="236bb-104">次の 3 つの例では、[Save](save-method-ado.md) メソッドと **Open** メソッドを組み合わせて使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="236bb-104">These three examples demonstrate how the [Save](save-method-ado.md) and **Open** methods can be used together.</span></span>
+<span data-ttu-id="fd41c-104">次の 3 つの例では、[Save](save-method-ado.md) メソッドと **Open** メソッドを組み合わせて使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="fd41c-104">These three examples demonstrate how the [Save](save-method-ado.md) and **Open** methods can be used together.</span></span>
 
-<span data-ttu-id="236bb-p101">出張先に、データベースに含まれているテーブルを持っていく必要があるとします。この場合、出かける前に [Recordset](recordset-object-ado.md) としてデータにアクセスし、持ち出し可能な形式で保存します。出張先では、接続されていないローカルな **Recordset** として **Recordset** にアクセスします。そして **Recordset** に変更を加え、再度保存します。最後に、会社に戻ってから、データベースに再度接続し、出張中に加えた変更でデータベースを更新します。</span><span class="sxs-lookup"><span data-stu-id="236bb-p101">Assume you are going on a business trip and want to take along a table from a database. Before you go, you access the data as a [Recordset](recordset-object-ado.md) and save it in a transportable form. When you arrive at your destination, you access the **Recordset** as a local, disconnected **Recordset**. You make changes to the **Recordset**, then save it again, along with your changes. Finally, when you return home, you connect to the database again and update it with the changes you made on the road.</span></span>
+<span data-ttu-id="fd41c-p101">出張先に、データベースに含まれているテーブルを持っていく必要があるとします。この場合、出かける前に [Recordset](recordset-object-ado.md) としてデータにアクセスし、持ち出し可能な形式で保存します。出張先では、接続されていないローカルな **Recordset** として **Recordset** にアクセスします。そして **Recordset** に変更を加え、再度保存します。最後に、会社に戻ってから、データベースに再度接続し、出張中に加えた変更でデータベースを更新します。</span><span class="sxs-lookup"><span data-stu-id="fd41c-p101">Assume you are going on a business trip and want to take along a table from a database. Before you go, you access the data as a [Recordset](recordset-object-ado.md) and save it in a transportable form. When you arrive at your destination, you access the **Recordset** as a local, disconnected **Recordset**. You make changes to the **Recordset**, then save it again, along with your changes. Finally, when you return home, you connect to the database again and update it with the changes you made on the road.</span></span>
 
 ```java 
  

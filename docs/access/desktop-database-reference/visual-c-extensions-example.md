@@ -6,23 +6,24 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250305(v=office.15)
 ms:contentKeyID: 48548934
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2f7bbcdc4f3ddcadfd45ba627873945ec1a3adfe
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 080281ae0deb25fa10fcdccd8577d3aab076c2cd
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946914"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28716496"
 ---
-# <a name="visual-c-extensions-example"></a><span data-ttu-id="5d3cd-102">Visual C++ Extensions の例</span><span class="sxs-lookup"><span data-stu-id="5d3cd-102">Visual C++ Extensions example</span></span>
+# <a name="visual-c-extensions-example"></a><span data-ttu-id="6d9fa-102">Visual C++ Extensions の例</span><span class="sxs-lookup"><span data-stu-id="6d9fa-102">Visual C++ Extensions example</span></span>
 
 
-<span data-ttu-id="5d3cd-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="5d3cd-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="6d9fa-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="6d9fa-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="5d3cd-104">このプログラムは、値がフィールドからどのように取得され、C/C++ 変数に変換されるかを示します。</span><span class="sxs-lookup"><span data-stu-id="5d3cd-104">This program shows how values are retrieved from fields and converted to C/C++ variables.</span></span>
+<span data-ttu-id="6d9fa-104">このプログラムは、値がフィールドからどのように取得され、C/C++ 変数に変換されるかを示します。</span><span class="sxs-lookup"><span data-stu-id="6d9fa-104">This program shows how values are retrieved from fields and converted to C/C++ variables.</span></span>
 
-<span data-ttu-id="5d3cd-105">この例では、スマート ポインター、」の呼び出し、 **IADORecordBinding**インターフェイスに対する参照カウントの COM 固有の詳細情報を自動的に処理することも活用します。</span><span class="sxs-lookup"><span data-stu-id="5d3cd-105">This example also takes advantage of "smart pointers," which automatically handle the COM-specific details of calling and reference counting for the **IADORecordBinding** interface.</span></span>
+<span data-ttu-id="6d9fa-105">この例では、スマート ポインター、」の呼び出し、 **IADORecordBinding**インターフェイスに対する参照カウントの COM 固有の詳細情報を自動的に処理することも活用します。</span><span class="sxs-lookup"><span data-stu-id="6d9fa-105">This example also takes advantage of "smart pointers," which automatically handle the COM-specific details of calling and reference counting for the **IADORecordBinding** interface.</span></span>
 
-<span data-ttu-id="5d3cd-106">スマート ポインターを使用しない場合は、次のようにコーディングします。</span><span class="sxs-lookup"><span data-stu-id="5d3cd-106">Without smart pointers, you would code:</span></span>
+<span data-ttu-id="6d9fa-106">スマート ポインターを使用しない場合は、次のようにコーディングします。</span><span class="sxs-lookup"><span data-stu-id="6d9fa-106">Without smart pointers, you would code:</span></span>
 
 ```cpp 
  
@@ -34,21 +35,21 @@ TESTHR(pRs->QueryInterface(
 if (picRs) picRs->Release(); 
 ```
 
-<span data-ttu-id="5d3cd-107">スマート ポインターを使用する IADORecordBindingPtr 型から派生次のステートメントで IADORecordBinding インターフェイスからの種類。</span><span class="sxs-lookup"><span data-stu-id="5d3cd-107">With smart pointers, you derive the IADORecordBindingPtr type from the type from the IADORecordBinding interface with this statement:</span></span>
+<span data-ttu-id="6d9fa-107">スマート ポインターを使用する IADORecordBindingPtr 型から派生次のステートメントで IADORecordBinding インターフェイスからの種類。</span><span class="sxs-lookup"><span data-stu-id="6d9fa-107">With smart pointers, you derive the IADORecordBindingPtr type from the type from the IADORecordBinding interface with this statement:</span></span>
 
 ```cpp 
  
 _COM_SMARTPTR_TYPEDEF(IADORecordBinding, __uuidof(IADORecordBinding)); 
 ```
 
-<span data-ttu-id="5d3cd-108">そして、次のようにポインターのインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="5d3cd-108">And instantiate the pointer like this:</span></span>
+<span data-ttu-id="6d9fa-108">そして、次のようにポインターのインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="6d9fa-108">And instantiate the pointer like this:</span></span>
 
 ```cpp 
  
 IADORecordBindingPtr picRs(pRs); 
 ```
 
-<span data-ttu-id="5d3cd-109">PicRs、スマート ポインターのコンス トラクターは、**レコード セット**オブジェクトでは、Visual C++ の拡張機能が実装されている、ため、 \_RecordsetPtr ポインター、pRs です。</span><span class="sxs-lookup"><span data-stu-id="5d3cd-109">Because the Visual C++ Extensions are implemented by the **Recordset** object, the constructor for the smart pointer, picRs , takes the \_RecordsetPtr pointer, pRs .</span></span> <span data-ttu-id="5d3cd-110">コンス トラクターが pRs を使用して検索する QueryInterface を呼び出すのでは、 \_RecordsetPtr ポインター、pRs です。</span><span class="sxs-lookup"><span data-stu-id="5d3cd-110">The constructor calls QueryInterface using pRs to find the , takes the \_RecordsetPtr pointer, pRs .</span></span> <span data-ttu-id="5d3cd-111">コンス トラクターには、IADORecordBinding インターフェイスを検索するのには、pRs を使用して QueryInterface が呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="5d3cd-111">The constructor calls QueryInterface using pRs to find the IADORecordBinding interface.</span></span>
+<span data-ttu-id="6d9fa-109">PicRs、スマート ポインターのコンス トラクターは、**レコード セット**オブジェクトでは、Visual C++ の拡張機能が実装されている、ため、 \_RecordsetPtr ポインター、pRs です。</span><span class="sxs-lookup"><span data-stu-id="6d9fa-109">Because the Visual C++ Extensions are implemented by the **Recordset** object, the constructor for the smart pointer, picRs , takes the \_RecordsetPtr pointer, pRs .</span></span> <span data-ttu-id="6d9fa-110">コンス トラクターが pRs を使用して検索する QueryInterface を呼び出すのでは、 \_RecordsetPtr ポインター、pRs です。</span><span class="sxs-lookup"><span data-stu-id="6d9fa-110">The constructor calls QueryInterface using pRs to find the , takes the \_RecordsetPtr pointer, pRs .</span></span> <span data-ttu-id="6d9fa-111">コンス トラクターには、IADORecordBinding インターフェイスを検索するのには、pRs を使用して QueryInterface が呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="6d9fa-111">The constructor calls QueryInterface using pRs to find the IADORecordBinding interface.</span></span>
 
 ```cpp 
  

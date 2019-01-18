@@ -10,46 +10,47 @@ f1_keywords:
 - dao360.chm1053586
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f7d468d703989fdc26538d18cbc00eb950fe0e8e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 3260fd3f01e8ca22d5be4f8d14f6376c31e2735a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930218"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28712261"
 ---
-# <a name="parameterdirection-property-dao"></a><span data-ttu-id="238af-102">Parameter.Direction プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="238af-102">Parameter.Direction property (DAO)</span></span>
+# <a name="parameterdirection-property-dao"></a><span data-ttu-id="bcd7d-102">Parameter.Direction プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="bcd7d-102">Parameter.Direction property (DAO)</span></span>
 
 
-<span data-ttu-id="238af-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="238af-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="bcd7d-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="bcd7d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-## <a name="syntax"></a><span data-ttu-id="238af-104">構文</span><span class="sxs-lookup"><span data-stu-id="238af-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="bcd7d-104">構文</span><span class="sxs-lookup"><span data-stu-id="bcd7d-104">Syntax</span></span>
 
-<span data-ttu-id="238af-105">*式*です。方向</span><span class="sxs-lookup"><span data-stu-id="238af-105">*expression* .Direction</span></span>
+<span data-ttu-id="bcd7d-105">*式*です。方向</span><span class="sxs-lookup"><span data-stu-id="bcd7d-105">*expression* .Direction</span></span>
 
-<span data-ttu-id="238af-106">\*式\***パラメーター**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="238af-106">*expression* A variable that represents a **Parameter** object.</span></span>
+<span data-ttu-id="bcd7d-106">\*式\***パラメーター**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="bcd7d-106">*expression* A variable that represents a **Parameter** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="238af-107">注釈</span><span class="sxs-lookup"><span data-stu-id="238af-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bcd7d-107">注釈</span><span class="sxs-lookup"><span data-stu-id="bcd7d-107">Remarks</span></span>
 
-<span data-ttu-id="238af-108">設定値または戻り値は、 **[ParameterDirectionEnum](parameterdirectionenum-enumeration-dao.md)** クラスの定数のいずれかに設定できる長整数型 (Long) の値です。</span><span class="sxs-lookup"><span data-stu-id="238af-108">The setting or return value is a Long that can be set to one of the **[ParameterDirectionEnum](parameterdirectionenum-enumeration-dao.md)** constants.</span></span>
+<span data-ttu-id="bcd7d-108">設定値または戻り値は、 **[ParameterDirectionEnum](parameterdirectionenum-enumeration-dao.md)** クラスの定数のいずれかに設定できる長整数型 (Long) の値です。</span><span class="sxs-lookup"><span data-stu-id="bcd7d-108">The setting or return value is a Long that can be set to one of the **[ParameterDirectionEnum](parameterdirectionenum-enumeration-dao.md)** constants.</span></span>
 
-<span data-ttu-id="238af-p101">**Direction** プロパティを使用して、パラメーターが入力パラメーター、出力パラメーター、その両方、またはプロシージャからの戻り値のいずれであるかを調べます。一部の ODBC ドライバーでは、SELECT ステートメントまたはプロシージャ コールにパラメーターの方向情報を提供しません。このような場合、方向を設定してからクエリを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="238af-p101">Use the **Direction** property to determine whether the parameter is an input parameter, output parameter, both, or the return value from the procedure. Some ODBC drivers do not provide information on the direction of parameters to a SELECT statement or procedure call. In these cases, it is necessary to set the direction prior to executing the query.</span></span>
+<span data-ttu-id="bcd7d-p101">**Direction** プロパティを使用して、パラメーターが入力パラメーター、出力パラメーター、その両方、またはプロシージャからの戻り値のいずれであるかを調べます。一部の ODBC ドライバーでは、SELECT ステートメントまたはプロシージャ コールにパラメーターの方向情報を提供しません。このような場合、方向を設定してからクエリを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcd7d-p101">Use the **Direction** property to determine whether the parameter is an input parameter, output parameter, both, or the return value from the procedure. Some ODBC drivers do not provide information on the direction of parameters to a SELECT statement or procedure call. In these cases, it is necessary to set the direction prior to executing the query.</span></span>
 
-<span data-ttu-id="238af-112">たとえば、次の手順がという名前のストアド プロシージャから値を返します"取得\_従業員」。</span><span class="sxs-lookup"><span data-stu-id="238af-112">For example, the following procedure returns a value from a stored procedure named "get\_employees":</span></span>
+<span data-ttu-id="bcd7d-112">たとえば、次の手順がという名前のストアド プロシージャから値を返します"取得\_従業員」。</span><span class="sxs-lookup"><span data-stu-id="bcd7d-112">For example, the following procedure returns a value from a stored procedure named "get\_employees":</span></span>
 
-<span data-ttu-id="238af-113">{?</span><span class="sxs-lookup"><span data-stu-id="238af-113"></span></span> <span data-ttu-id="238af-114">get の呼び出しを =\_の従業員。</span><span class="sxs-lookup"><span data-stu-id="238af-114">= call get\_employees}</span></span>
+<span data-ttu-id="bcd7d-113">{?</span><span class="sxs-lookup"><span data-stu-id="bcd7d-113"></span></span> <span data-ttu-id="bcd7d-114">get の呼び出しを =\_の従業員。</span><span class="sxs-lookup"><span data-stu-id="bcd7d-114">= call get\_employees}</span></span>
 
-<span data-ttu-id="238af-p103">この呼び出しにより、1 つのパラメーター、つまり戻り値が作成されます。このパラメーターの方向を **dbParamOutput** または **dbParamReturnValue** に設定してから、 **[QueryDef](querydef-object-dao.md)** を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="238af-p103">This call produces one parameter — the return value. You need to set the direction of this parameter to **dbParamOutput** or **dbParamReturnValue** before executing the **[QueryDef](querydef-object-dao.md)**.</span></span>
+<span data-ttu-id="bcd7d-p103">この呼び出しにより、1 つのパラメーター、つまり戻り値が作成されます。このパラメーターの方向を **dbParamOutput** または **dbParamReturnValue** に設定してから、 **[QueryDef](querydef-object-dao.md)** を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcd7d-p103">This call produces one parameter — the return value. You need to set the direction of this parameter to **dbParamOutput** or **dbParamReturnValue** before executing the **[QueryDef](querydef-object-dao.md)**.</span></span>
 
-<span data-ttu-id="238af-117">**dbParamInput** を除くすべてのパラメーターの方向を設定してから、パラメーターの値にアクセスまたは設定し、 **QueryDef** を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="238af-117">You need to set all parameter directions except **dbParamInput** before accessing or setting the values of the parameters and before executing the **QueryDef**.</span></span>
+<span data-ttu-id="bcd7d-117">**dbParamInput** を除くすべてのパラメーターの方向を設定してから、パラメーターの値にアクセスまたは設定し、 **QueryDef** を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcd7d-117">You need to set all parameter directions except **dbParamInput** before accessing or setting the values of the parameters and before executing the **QueryDef**.</span></span>
 
-<span data-ttu-id="238af-118">戻り値には **dbParamReturnValue** を使用する必要がありますが、そのオプションがドライバーまたはサーバーでサポートされていない場合は、代わりに **dbParamOutput** を使用できます。</span><span class="sxs-lookup"><span data-stu-id="238af-118">You should use **dbParamReturnValue** for return values, but in cases where that option is not supported by the driver or the server, you can use **dbParamOutput** instead.</span></span>
+<span data-ttu-id="bcd7d-118">戻り値には **dbParamReturnValue** を使用する必要がありますが、そのオプションがドライバーまたはサーバーでサポートされていない場合は、代わりに **dbParamOutput** を使用できます。</span><span class="sxs-lookup"><span data-stu-id="bcd7d-118">You should use **dbParamReturnValue** for return values, but in cases where that option is not supported by the driver or the server, you can use **dbParamOutput** instead.</span></span>
 
-<span data-ttu-id="238af-p104">Microsoft SQL Server ドライバーでは、すべてのプロシージャ パラメーターの **Direction** プロパティが自動的に設定されます。ODBC ドライバーの一部は、クエリ パラメーターの方向を判断できません。このような場合は、方向を設定してからクエリを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="238af-p104">The Microsoft SQL Server driver automatically sets the **Direction** property for all procedure parameters. Not all ODBC drivers can determine the direction of a query parameter. In these cases, it is necessary to set the direction prior to executing the query.</span></span>
+<span data-ttu-id="bcd7d-p104">Microsoft SQL Server ドライバーでは、すべてのプロシージャ パラメーターの **Direction** プロパティが自動的に設定されます。ODBC ドライバーの一部は、クエリ パラメーターの方向を判断できません。このような場合は、方向を設定してからクエリを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bcd7d-p104">The Microsoft SQL Server driver automatically sets the **Direction** property for all procedure parameters. Not all ODBC drivers can determine the direction of a query parameter. In these cases, it is necessary to set the direction prior to executing the query.</span></span>
 
-## <a name="example"></a><span data-ttu-id="238af-122">例</span><span class="sxs-lookup"><span data-stu-id="238af-122">Example</span></span>
+## <a name="example"></a><span data-ttu-id="bcd7d-122">例</span><span class="sxs-lookup"><span data-stu-id="bcd7d-122">Example</span></span>
 
-<span data-ttu-id="238af-123">次の使用例は、 **Direction** プロパティを使用して、ODBC データ ソースへのクエリのパラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="238af-123">This example uses the **Direction** property to configure the parameters of a query to an ODBC data source.</span></span>
+<span data-ttu-id="bcd7d-123">次の使用例は、 **Direction** プロパティを使用して、ODBC データ ソースへのクエリのパラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="bcd7d-123">This example uses the **Direction** property to configure the parameters of a query to an ODBC data source.</span></span>
 
 ```vb 
 Sub DirectionX() 

@@ -10,23 +10,24 @@ f1_keywords:
 - dao360.chm1053179
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 57d28675bf3a7533d9e2dde223e46864f9179f0b
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: d1a16f2ee39233dc42af0afeb3c07d8c4294ac14
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922049"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28720171"
 ---
-# <a name="databasequerydefs-property-dao"></a><span data-ttu-id="fedfc-102">Database.QueryDefs プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="fedfc-102">Database.QueryDefs property (DAO)</span></span>
+# <a name="databasequerydefs-property-dao"></a><span data-ttu-id="f3ab4-102">Database.QueryDefs プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="f3ab4-102">Database.QueryDefs property (DAO)</span></span>
 
 
-<span data-ttu-id="fedfc-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="fedfc-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="f3ab4-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f3ab4-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="fedfc-p101">指定したデータベースのすべての **QueryDef** オブジェクトを含む **QueryDefs** コレクションを返します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="fedfc-p101">Returns a **QueryDefs** collection that contains all of the **QueryDef** objects of the specified database. Read-only.</span></span>
+<span data-ttu-id="f3ab4-p101">指定したデータベースのすべての **QueryDef** オブジェクトを含む **QueryDefs** コレクションを返します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="f3ab4-p101">Returns a **QueryDefs** collection that contains all of the **QueryDef** objects of the specified database. Read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="fedfc-106">構文</span><span class="sxs-lookup"><span data-stu-id="fedfc-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f3ab4-106">構文</span><span class="sxs-lookup"><span data-stu-id="f3ab4-106">Syntax</span></span>
 
-<span data-ttu-id="fedfc-107">*式*です。クエリ定義</span><span class="sxs-lookup"><span data-stu-id="fedfc-107">*expression* .QueryDefs</span></span>
+<span data-ttu-id="f3ab4-107">*式*です。クエリ定義</span><span class="sxs-lookup"><span data-stu-id="f3ab4-107">*expression* .QueryDefs</span></span>
 
-<span data-ttu-id="fedfc-108">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="fedfc-108">*expression* A variable that represents a **Database** object.</span></span>
+<span data-ttu-id="f3ab4-108">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="f3ab4-108">*expression* A variable that represents a **Database** object.</span></span>
 

@@ -6,25 +6,26 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249400(v=office.15)
 ms:contentKeyID: 48545352
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5b93081c577a0d93d442706f231dace5e7865976
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 27d69e760b65a917270b0851743c108692c601e2
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927705"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28717826"
 ---
-# <a name="children-property-ado-md"></a><span data-ttu-id="25c72-102">Children プロパティ (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="25c72-102">Children property (ADO MD)</span></span>
+# <a name="children-property-ado-md"></a><span data-ttu-id="0738c-102">Children プロパティ (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="0738c-102">Children property (ADO MD)</span></span>
 
 
-<span data-ttu-id="25c72-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="25c72-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="0738c-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="0738c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="25c72-104">階層内で、現在の [Member](members-collection-ado-md.md) を親とする [Members](member-object-ado-md.md) コレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="25c72-104">Returns a [Members](members-collection-ado-md.md) collection for which the current [Member](member-object-ado-md.md) is the parent in the hierarchy.</span></span>
+<span data-ttu-id="0738c-104">階層内で、現在の [Member](members-collection-ado-md.md) を親とする [Members](member-object-ado-md.md) コレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="0738c-104">Returns a [Members](members-collection-ado-md.md) collection for which the current [Member](member-object-ado-md.md) is the parent in the hierarchy.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="25c72-105">戻り値</span><span class="sxs-lookup"><span data-stu-id="25c72-105">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="0738c-105">戻り値</span><span class="sxs-lookup"><span data-stu-id="0738c-105">Return values</span></span>
 
-<span data-ttu-id="25c72-106">**Members** コレクションを取得します。値の取得のみが可能です。</span><span class="sxs-lookup"><span data-stu-id="25c72-106">Returns a **Members** collection and is read-only.</span></span>
+<span data-ttu-id="0738c-106">**Members** コレクションを取得します。値の取得のみが可能です。</span><span class="sxs-lookup"><span data-stu-id="0738c-106">Returns a **Members** collection and is read-only.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="25c72-107">解説</span><span class="sxs-lookup"><span data-stu-id="25c72-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0738c-107">解説</span><span class="sxs-lookup"><span data-stu-id="0738c-107">Remarks</span></span>
 
-<span data-ttu-id="25c72-p101">**Children** プロパティには、現在の **Member** を階層内で親とする **Members** コレクションが含まれます。リーフ レベルの **Member** オブジェクトには **Members** コレクションに子メンバーがありません。このプロパティは、 **Level** オブジェクトに属する [Member](level-object-ado-md.md) オブジェクトでのみサポートされています。 **Position** オブジェクトに属する [Member](position-object-ado-md.md) オブジェクトからこのプロパティが参照されると、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="25c72-p101">The **Children** property contains a **Members** collection for which the current **Member** is the hierarchical parent. Leaf level **Member** objects have no child members in the **Members** collection. This property is only supported on **Member** objects belonging to a [Level](level-object-ado-md.md) object. An error occurs when this property is referenced from **Member** objects belonging to a [Position](position-object-ado-md.md) object.</span></span>
+<span data-ttu-id="0738c-p101">**Children** プロパティには、現在の **Member** を階層内で親とする **Members** コレクションが含まれます。リーフ レベルの **Member** オブジェクトには **Members** コレクションに子メンバーがありません。このプロパティは、 **Level** オブジェクトに属する [Member](level-object-ado-md.md) オブジェクトでのみサポートされています。 **Position** オブジェクトに属する [Member](position-object-ado-md.md) オブジェクトからこのプロパティが参照されると、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="0738c-p101">The **Children** property contains a **Members** collection for which the current **Member** is the hierarchical parent. Leaf level **Member** objects have no child members in the **Members** collection. This property is only supported on **Member** objects belonging to a [Level](level-object-ado-md.md) object. An error occurs when this property is referenced from **Member** objects belonging to a [Position](position-object-ado-md.md) object.</span></span>
 

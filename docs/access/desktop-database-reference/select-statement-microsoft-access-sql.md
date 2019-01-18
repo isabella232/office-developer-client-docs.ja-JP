@@ -8,24 +8,25 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 dev_langs:
 - sql
-ms.openlocfilehash: 2b03834914c352a0e9c462c50bee48ac992276e3
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 962e425c2c69511b6d7770fb03e954588249cf2a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860583"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718785"
 ---
-# <a name="select-statement-microsoft-access-sql"></a><span data-ttu-id="957ac-102">SELECT ステートメント (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="957ac-102">SELECT statement (Microsoft Access SQL)</span></span>
+# <a name="select-statement-microsoft-access-sql"></a><span data-ttu-id="d4444-102">SELECT ステートメント (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="d4444-102">SELECT statement (Microsoft Access SQL)</span></span>
 
-<span data-ttu-id="957ac-103">**に適用されます:** Access 2013 |Office 2013</span><span class="sxs-lookup"><span data-stu-id="957ac-103">**Applies to:** Access 2013 | Office 2013</span></span>
+<span data-ttu-id="d4444-103">**に適用されます:** Access 2013 |Office 2013</span><span class="sxs-lookup"><span data-stu-id="d4444-103">**Applies to:** Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="957ac-104">データベースの情報をレコードのセットとして返すよう Microsoft Access データベース エンジンに指示します。</span><span class="sxs-lookup"><span data-stu-id="957ac-104">Instructs the Microsoft Access database engine to return information from the database as a set of records.</span></span>
+<span data-ttu-id="d4444-104">データベースの情報をレコードのセットとして返すよう Microsoft Access データベース エンジンに指示します。</span><span class="sxs-lookup"><span data-stu-id="d4444-104">Instructs the Microsoft Access database engine to return information from the database as a set of records.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="957ac-105">構文</span><span class="sxs-lookup"><span data-stu-id="957ac-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d4444-105">構文</span><span class="sxs-lookup"><span data-stu-id="d4444-105">Syntax</span></span>
 
-<span data-ttu-id="957ac-106">選択\[*述語*\] { \*  | *テーブル*です\*。 |  \[*テーブル*です。\]*フィールド 1* \[ *alias1*と\] \[、 \[*テーブル*です。\]*フィールド 2* \[ *alias2*と\] \[、.\] \]} *Tableexpression*から\[をしています.\] \[ *Externaldatabase*内\]\[位置しています.</span><span class="sxs-lookup"><span data-stu-id="957ac-106">SELECT \[*predicate*\] { \* | *table*.\* | \[*table*.\]*field1* \[AS *alias1*\] \[, \[*table*.\]*field2* \[AS *alias2*\] \[, …\]\]} FROM *tableexpression* \[, …\] \[IN *externaldatabase*\] \[WHERE…</span></span> <span data-ttu-id="957ac-107">\]\[別にグループ化しています.</span><span class="sxs-lookup"><span data-stu-id="957ac-107">\] \[GROUP BY…</span></span> <span data-ttu-id="957ac-108">\]\[HAVING.</span><span class="sxs-lookup"><span data-stu-id="957ac-108">\] \[HAVING…</span></span> <span data-ttu-id="957ac-109">\]\[を注文しています.</span><span class="sxs-lookup"><span data-stu-id="957ac-109">\] \[ORDER BY…</span></span> <span data-ttu-id="957ac-110">\]\[OWNERACCESS オプションを使用して\]</span><span class="sxs-lookup"><span data-stu-id="957ac-110">\] \[WITH OWNERACCESS OPTION\]</span></span>
+<span data-ttu-id="d4444-106">選択\[*述語*\] { \*  | *テーブル*です\*。 |  \[*テーブル*です。\]*フィールド 1* \[ *alias1*と\] \[、 \[*テーブル*です。\]*フィールド 2* \[ *alias2*と\] \[、.\] \]} *Tableexpression*から\[をしています.\] \[ *Externaldatabase*内\]\[位置しています.</span><span class="sxs-lookup"><span data-stu-id="d4444-106">SELECT \[*predicate*\] { \* | *table*.\* | \[*table*.\]*field1* \[AS *alias1*\] \[, \[*table*.\]*field2* \[AS *alias2*\] \[, …\]\]} FROM *tableexpression* \[, …\] \[IN *externaldatabase*\] \[WHERE…</span></span> <span data-ttu-id="d4444-107">\]\[別にグループ化しています.</span><span class="sxs-lookup"><span data-stu-id="d4444-107">\] \[GROUP BY…</span></span> <span data-ttu-id="d4444-108">\]\[HAVING.</span><span class="sxs-lookup"><span data-stu-id="d4444-108">\] \[HAVING…</span></span> <span data-ttu-id="d4444-109">\]\[を注文しています.</span><span class="sxs-lookup"><span data-stu-id="d4444-109">\] \[ORDER BY…</span></span> <span data-ttu-id="d4444-110">\]\[OWNERACCESS オプションを使用して\]</span><span class="sxs-lookup"><span data-stu-id="d4444-110">\] \[WITH OWNERACCESS OPTION\]</span></span>
 
-<span data-ttu-id="957ac-111">SELECT 句には、次の指定項目があります。</span><span class="sxs-lookup"><span data-stu-id="957ac-111">The SELECT statement has these parts:</span></span>
+<span data-ttu-id="d4444-111">SELECT 句には、次の指定項目があります。</span><span class="sxs-lookup"><span data-stu-id="d4444-111">The SELECT statement has these parts:</span></span>
 
 <table>
 <colgroup>
@@ -34,62 +35,62 @@ ms.locfileid: "25860583"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="957ac-112">指定項目</span><span class="sxs-lookup"><span data-stu-id="957ac-112">Part</span></span></p></th>
-<th><p><span data-ttu-id="957ac-113">説明</span><span class="sxs-lookup"><span data-stu-id="957ac-113">Description</span></span></p></th>
+<th><p><span data-ttu-id="d4444-112">指定項目</span><span class="sxs-lookup"><span data-stu-id="d4444-112">Part</span></span></p></th>
+<th><p><span data-ttu-id="d4444-113">説明</span><span class="sxs-lookup"><span data-stu-id="d4444-113">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="957ac-114"><em>predicate</em></span><span class="sxs-lookup"><span data-stu-id="957ac-114"><em>predicate</em></span></span></p></td>
-<td><p><span data-ttu-id="957ac-p102"><a href="https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/all-distinct-distinctrow-top-predicates-microsoft-access-sql">ALL、DISTINCT、DISTINCTROW、TOP</a> のいずれかの述語。これらの述語は、返されるレコードの数を制限するために使用します。指定がない場合は、ALL になります。  </span><span class="sxs-lookup"><span data-stu-id="957ac-p102">One of the following predicates: <a href="https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/all-distinct-distinctrow-top-predicates-microsoft-access-sql">ALL, DISTINCT, DISTINCTROW, or TOP</a>. You use the predicate to restrict the number of records returned. If none is specified, the default is ALL.</span></span></p></td>
+<td><p><span data-ttu-id="d4444-114"><em>predicate</em></span><span class="sxs-lookup"><span data-stu-id="d4444-114"><em>predicate</em></span></span></p></td>
+<td><p><span data-ttu-id="d4444-p102"><a href="https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/all-distinct-distinctrow-top-predicates-microsoft-access-sql">ALL、DISTINCT、DISTINCTROW、TOP</a> のいずれかの述語。これらの述語は、返されるレコードの数を制限するために使用します。指定がない場合は、ALL になります。  </span><span class="sxs-lookup"><span data-stu-id="d4444-p102">One of the following predicates: <a href="https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/all-distinct-distinctrow-top-predicates-microsoft-access-sql">ALL, DISTINCT, DISTINCTROW, or TOP</a>. You use the predicate to restrict the number of records returned. If none is specified, the default is ALL.</span></span></p></td>
 </tr>
 <tr class="even">
 <td><p><em>*</em></p></td>
-<td><p><span data-ttu-id="957ac-118">この記号を付けると、指定したテーブルのすべてのフィールドが選択されます。</span><span class="sxs-lookup"><span data-stu-id="957ac-118">Specifies that all fields from the specified table or tables are selected.</span></span></p></td>
+<td><p><span data-ttu-id="d4444-118">この記号を付けると、指定したテーブルのすべてのフィールドが選択されます。</span><span class="sxs-lookup"><span data-stu-id="d4444-118">Specifies that all fields from the specified table or tables are selected.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="957ac-119"><em>table</em></span><span class="sxs-lookup"><span data-stu-id="957ac-119"><em>table</em></span></span></p></td>
-<td><p><span data-ttu-id="957ac-120">レコードを選択するフィールドのあるテーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="957ac-120">The name of the table containing the fields from which records are selected.</span></span></p></td>
+<td><p><span data-ttu-id="d4444-119"><em>table</em></span><span class="sxs-lookup"><span data-stu-id="d4444-119"><em>table</em></span></span></p></td>
+<td><p><span data-ttu-id="d4444-120">レコードを選択するフィールドのあるテーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="d4444-120">The name of the table containing the fields from which records are selected.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="957ac-121"><em>field1</em>、<em>field2</em></span><span class="sxs-lookup"><span data-stu-id="957ac-121"><em>field1</em>, <em>field2</em></span></span></p></td>
-<td><p><span data-ttu-id="957ac-p103">取得するデータのある 1 つ以上のフィールドの名前。複数のフィールドを指定した場合は、指定順に取得されます。</span><span class="sxs-lookup"><span data-stu-id="957ac-p103">The names of the fields containing the data you want to retrieve. If you include more than one field, they are retrieved in the order listed.</span></span></p></td>
+<td><p><span data-ttu-id="d4444-121"><em>field1</em>、<em>field2</em></span><span class="sxs-lookup"><span data-stu-id="d4444-121"><em>field1</em>, <em>field2</em></span></span></p></td>
+<td><p><span data-ttu-id="d4444-p103">取得するデータのある 1 つ以上のフィールドの名前。複数のフィールドを指定した場合は、指定順に取得されます。</span><span class="sxs-lookup"><span data-stu-id="d4444-p103">The names of the fields containing the data you want to retrieve. If you include more than one field, they are retrieved in the order listed.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="957ac-124"><em>alias1</em>、<em>alias2</em></span><span class="sxs-lookup"><span data-stu-id="957ac-124"><em>alias1</em>, <em>alias2</em></span></span></p></td>
-<td><p><span data-ttu-id="957ac-125">引数 <em>table</em> の元の列名の代わりに列見出しとして使用する名前。</span><span class="sxs-lookup"><span data-stu-id="957ac-125">The names to use as column headers instead of the original column names in <em>table</em>.</span></span></p></td>
+<td><p><span data-ttu-id="d4444-124"><em>alias1</em>、<em>alias2</em></span><span class="sxs-lookup"><span data-stu-id="d4444-124"><em>alias1</em>, <em>alias2</em></span></span></p></td>
+<td><p><span data-ttu-id="d4444-125">引数 <em>table</em> の元の列名の代わりに列見出しとして使用する名前。</span><span class="sxs-lookup"><span data-stu-id="d4444-125">The names to use as column headers instead of the original column names in <em>table</em>.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="957ac-126"><em>tableexpression</em></span><span class="sxs-lookup"><span data-stu-id="957ac-126"><em>tableexpression</em></span></span></p></td>
-<td><p><span data-ttu-id="957ac-127">取得するデータのある 1 つ以上のテーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="957ac-127">The name of the table or tables containing the data you want to retrieve.</span></span></p></td>
+<td><p><span data-ttu-id="d4444-126"><em>tableexpression</em></span><span class="sxs-lookup"><span data-stu-id="d4444-126"><em>tableexpression</em></span></span></p></td>
+<td><p><span data-ttu-id="d4444-127">取得するデータのある 1 つ以上のテーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="d4444-127">The name of the table or tables containing the data you want to retrieve.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="957ac-128"><em>externaldatabase</em></span><span class="sxs-lookup"><span data-stu-id="957ac-128"><em>externaldatabase</em></span></span></p></td>
-<td><p><span data-ttu-id="957ac-129">現在のデータベースには存在しない場合は、 <em>tableexpression</em>内のテーブルを含むデータベースの名前です。</span><span class="sxs-lookup"><span data-stu-id="957ac-129">The name of the database containing the tables in <em>tableexpression</em> if they are not in the current database.</span></span></p></td>
+<td><p><span data-ttu-id="d4444-128"><em>externaldatabase</em></span><span class="sxs-lookup"><span data-stu-id="d4444-128"><em>externaldatabase</em></span></span></p></td>
+<td><p><span data-ttu-id="d4444-129">現在のデータベースには存在しない場合は、 <em>tableexpression</em>内のテーブルを含むデータベースの名前です。</span><span class="sxs-lookup"><span data-stu-id="d4444-129">The name of the database containing the tables in <em>tableexpression</em> if they are not in the current database.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="957ac-130">備考</span><span class="sxs-lookup"><span data-stu-id="957ac-130">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d4444-130">注釈</span><span class="sxs-lookup"><span data-stu-id="d4444-130">Remarks</span></span>
 
-<span data-ttu-id="957ac-131">この操作を実行するには、Microsoft Jet データベース エンジン、指定したテーブルの検索、選択された列を抽出し、基準、および並べ替え、または結果の行のグループを指定された順序に一致する行を選択します。</span><span class="sxs-lookup"><span data-stu-id="957ac-131">To perform this operation, the Microsoft Jet database engine searches the specified table or tables, extracts the chosen columns, selects rows that meet the criterion, and sorts or groups the resulting rows into the order specified.</span></span>
+<span data-ttu-id="d4444-131">この操作を実行するには、Microsoft Jet データベース エンジン、指定したテーブルの検索、選択された列を抽出し、基準、および並べ替え、または結果の行のグループを指定された順序に一致する行を選択します。</span><span class="sxs-lookup"><span data-stu-id="d4444-131">To perform this operation, the Microsoft Jet database engine searches the specified table or tables, extracts the chosen columns, selects rows that meet the criterion, and sorts or groups the resulting rows into the order specified.</span></span>
 
-<span data-ttu-id="957ac-132">SELECT ステートメントは、データベース内のデータの内容を変更しません。</span><span class="sxs-lookup"><span data-stu-id="957ac-132">SELECT statements do not change data in the database.</span></span>
+<span data-ttu-id="d4444-132">SELECT ステートメントは、データベース内のデータの内容を変更しません。</span><span class="sxs-lookup"><span data-stu-id="d4444-132">SELECT statements do not change data in the database.</span></span>
 
-<span data-ttu-id="957ac-p104">通常、SELECT は SQL ステートメントの先頭に記述します。ほとんどの SQL ステートメントは SELECT ステートメントまたは [SELECT...INTO](select-into-statement-microsoft-access-sql.md) ステートメントのいずれかになります。</span><span class="sxs-lookup"><span data-stu-id="957ac-p104">SELECT is usually the first word in an SQL statement. Most SQL statements are either SELECT or [SELECT…INTO](select-into-statement-microsoft-access-sql.md) statements.</span></span>
+<span data-ttu-id="d4444-p104">通常、SELECT は SQL ステートメントの先頭に記述します。ほとんどの SQL ステートメントは SELECT ステートメントまたは [SELECT...INTO](select-into-statement-microsoft-access-sql.md) ステートメントのいずれかになります。</span><span class="sxs-lookup"><span data-stu-id="d4444-p104">SELECT is usually the first word in an SQL statement. Most SQL statements are either SELECT or [SELECT…INTO](select-into-statement-microsoft-access-sql.md) statements.</span></span>
 
-<span data-ttu-id="957ac-135">SELECT ステートメントの最も簡単な構文を次に示します。</span><span class="sxs-lookup"><span data-stu-id="957ac-135">The minimum syntax for a SELECT statement is:</span></span>
+<span data-ttu-id="d4444-135">SELECT ステートメントの最も簡単な構文を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d4444-135">The minimum syntax for a SELECT statement is:</span></span>
 
-<span data-ttu-id="957ac-136">*フィールド*から*テーブル*を選択します。</span><span class="sxs-lookup"><span data-stu-id="957ac-136">SELECT *fields* FROM *table*</span></span>
+<span data-ttu-id="d4444-136">*フィールド*から*テーブル*を選択します。</span><span class="sxs-lookup"><span data-stu-id="d4444-136">SELECT *fields* FROM *table*</span></span>
 
-<span data-ttu-id="957ac-p105">アスタリスク (\*) を使用すると、テーブル内のすべてのフィールドが選択できます。次の例では、Employees テーブルにあるすべてのフィールドが選択されます。</span><span class="sxs-lookup"><span data-stu-id="957ac-p105">You can use an asterisk (\*) to select all fields in a table. The following example selects all of the fields in the Employees table:</span></span>
+<span data-ttu-id="d4444-p105">アスタリスク (\*) を使用すると、テーブル内のすべてのフィールドが選択できます。次の例では、Employees テーブルにあるすべてのフィールドが選択されます。</span><span class="sxs-lookup"><span data-stu-id="d4444-p105">You can use an asterisk (\*) to select all fields in a table. The following example selects all of the fields in the Employees table:</span></span>
 
 ```sql
 SELECT * FROM Employees;
 ```
 
-<span data-ttu-id="957ac-139">FROM 句で複数のテーブルのフィールド名が含まれている場合、は、先頭にテーブル名と、 **.**</span><span class="sxs-lookup"><span data-stu-id="957ac-139">If a field name is included in more than one table in the FROM clause, precede it with the table name and the **.**</span></span> <span data-ttu-id="957ac-140">(ドット) 演算子です。</span><span class="sxs-lookup"><span data-stu-id="957ac-140">(dot) operator.</span></span> <span data-ttu-id="957ac-141">部門フィールドは次の例では、[社員] テーブルと、スーパーバイザーによるテーブルの両方で、です。</span><span class="sxs-lookup"><span data-stu-id="957ac-141">In the following example, the Department field is in both the Employees table and the Supervisors table.</span></span> <span data-ttu-id="957ac-142">SQL ステートメントでは、スーパーバイザーのテーブルから従業員のテーブルと監修者の名前から部門を選択します。</span><span class="sxs-lookup"><span data-stu-id="957ac-142">The SQL statement selects departments from the Employees table and supervisor names from the Supervisors table:</span></span>
+<span data-ttu-id="d4444-139">FROM 句で複数のテーブルのフィールド名が含まれている場合、は、先頭にテーブル名と、 **.**</span><span class="sxs-lookup"><span data-stu-id="d4444-139">If a field name is included in more than one table in the FROM clause, precede it with the table name and the **.**</span></span> <span data-ttu-id="d4444-140">(ドット) 演算子です。</span><span class="sxs-lookup"><span data-stu-id="d4444-140">(dot) operator.</span></span> <span data-ttu-id="d4444-141">部門フィールドは次の例では、[社員] テーブルと、スーパーバイザーによるテーブルの両方で、です。</span><span class="sxs-lookup"><span data-stu-id="d4444-141">In the following example, the Department field is in both the Employees table and the Supervisors table.</span></span> <span data-ttu-id="d4444-142">SQL ステートメントでは、スーパーバイザーのテーブルから従業員のテーブルと監修者の名前から部門を選択します。</span><span class="sxs-lookup"><span data-stu-id="d4444-142">The SQL statement selects departments from the Employees table and supervisor names from the Supervisors table:</span></span>
 
 ```sql
 SELECT Employees.Department, Supervisors.SupvName 
@@ -97,33 +98,33 @@ FROM Employees INNER JOIN Supervisors
 WHERE Employees.Department = Supervisors.Department;
 ```
 
-<span data-ttu-id="957ac-143">**レコード セット**オブジェクトが作成されると、Microsoft Jet データベース エンジンは、 **Recordset**オブジェクト内の**フィールド**オブジェクト名としてテーブルのフィールド名を使用します。</span><span class="sxs-lookup"><span data-stu-id="957ac-143">When a **Recordset** object is created, the Microsoft Jet database engine uses the table's field name as the **Field** object name in the **Recordset** object.</span></span> <span data-ttu-id="957ac-144">AS を使用して、別のフィールド名を使用するフィールドを生成するために使用する式は、名前を明示しない場合、予約語です。</span><span class="sxs-lookup"><span data-stu-id="957ac-144">If you want a different field name or a name is not implied by the expression used to generate the field, use the AS reserved word.</span></span> <span data-ttu-id="957ac-145">次の例では、結果の**Recordset**オブジェクトに返される**Field**オブジェクトの名前をタイトルの生年月日を使用します。</span><span class="sxs-lookup"><span data-stu-id="957ac-145">The following example uses the title Birth to name the returned **Field** object in the resulting **Recordset** object:</span></span>
+<span data-ttu-id="d4444-143">**レコード セット**オブジェクトが作成されると、Microsoft Jet データベース エンジンは、 **Recordset**オブジェクト内の**フィールド**オブジェクト名としてテーブルのフィールド名を使用します。</span><span class="sxs-lookup"><span data-stu-id="d4444-143">When a **Recordset** object is created, the Microsoft Jet database engine uses the table's field name as the **Field** object name in the **Recordset** object.</span></span> <span data-ttu-id="d4444-144">AS を使用して、別のフィールド名を使用するフィールドを生成するために使用する式は、名前を明示しない場合、予約語です。</span><span class="sxs-lookup"><span data-stu-id="d4444-144">If you want a different field name or a name is not implied by the expression used to generate the field, use the AS reserved word.</span></span> <span data-ttu-id="d4444-145">次の例では、結果の**Recordset**オブジェクトに返される**Field**オブジェクトの名前をタイトルの生年月日を使用します。</span><span class="sxs-lookup"><span data-stu-id="d4444-145">The following example uses the title Birth to name the returned **Field** object in the resulting **Recordset** object:</span></span>
 
 ```sql
 SELECT BirthDate 
 AS Birth FROM Employees;
 ```
 
-<span data-ttu-id="957ac-p108">集計関数を使用する場合、またはあいまいな Field オブジェクト名や重複する Field オブジェクト名を返すクエリを使用する場合は、必ず AS 句を使用して Field オブジェクトに別の名前を付ける必要があります。次の例では、Recordset オブジェクトに返される Field オブジェクトのフィールド名は "HeadCount" になります。</span><span class="sxs-lookup"><span data-stu-id="957ac-p108">Whenever you use aggregate functions or queries that return ambiguous or duplicate **Field** object names, you must use the AS clause to provide an alternate name for the **Field** object. The following example uses the title HeadCount to name the returned **Field** object in the resulting **Recordset** object:</span></span>
+<span data-ttu-id="d4444-p108">集計関数を使用する場合、またはあいまいな Field オブジェクト名や重複する Field オブジェクト名を返すクエリを使用する場合は、必ず AS 句を使用して Field オブジェクトに別の名前を付ける必要があります。次の例では、Recordset オブジェクトに返される Field オブジェクトのフィールド名は "HeadCount" になります。</span><span class="sxs-lookup"><span data-stu-id="d4444-p108">Whenever you use aggregate functions or queries that return ambiguous or duplicate **Field** object names, you must use the AS clause to provide an alternate name for the **Field** object. The following example uses the title HeadCount to name the returned **Field** object in the resulting **Recordset** object:</span></span>
 
 ```sql
 SELECT COUNT(EmployeeID)
 AS HeadCount FROM Employees;
 ```
 
-<span data-ttu-id="957ac-p109">SELECT ステートメントでは、これ以外にもさまざまな句を使用して、返されるデータを制限したり整理したりできます。詳細については、使用する句のヘルプ トピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="957ac-p109">You can use the other clauses in a SELECT statement to further restrict and organize your returned data. For more information, see the Help topic for the clause you are using.</span></span>
+<span data-ttu-id="d4444-p109">SELECT ステートメントでは、これ以外にもさまざまな句を使用して、返されるデータを制限したり整理したりできます。詳細については、使用する句のヘルプ トピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="d4444-p109">You can use the other clauses in a SELECT statement to further restrict and organize your returned data. For more information, see the Help topic for the clause you are using.</span></span>
 
-<span data-ttu-id="957ac-150">**でリンクが用意されている** [UtterAccess](https://www.utteraccess.com)のコミュニティです。</span><span class="sxs-lookup"><span data-stu-id="957ac-150">**Links provided by** the [UtterAccess](https://www.utteraccess.com) community.</span></span> <span data-ttu-id="957ac-151">UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。</span><span class="sxs-lookup"><span data-stu-id="957ac-151">UtterAccess is the premier Microsoft Access wiki and help forum.</span></span>
+<span data-ttu-id="d4444-150">**でリンクが用意されている** [UtterAccess](https://www.utteraccess.com)のコミュニティです。</span><span class="sxs-lookup"><span data-stu-id="d4444-150">**Links provided by** the [UtterAccess](https://www.utteraccess.com) community.</span></span> <span data-ttu-id="d4444-151">UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。</span><span class="sxs-lookup"><span data-stu-id="d4444-151">UtterAccess is the premier Microsoft Access wiki and help forum.</span></span>
 
-- [<span data-ttu-id="957ac-152">SQL to VBA Formatter</span><span class="sxs-lookup"><span data-stu-id="957ac-152">SQL to VBA Formatter</span></span>](https://www.utteraccess.com/forum/sql-vba-formatter-t1165308.html)
+- [<span data-ttu-id="d4444-152">SQL to VBA Formatter</span><span class="sxs-lookup"><span data-stu-id="d4444-152">SQL to VBA Formatter</span></span>](https://www.utteraccess.com/forum/sql-vba-formatter-t1165308.html)
 
-- [<span data-ttu-id="957ac-153">Viewing Records Within A Defined Range</span><span class="sxs-lookup"><span data-stu-id="957ac-153">Viewing Records Within A Defined Range</span></span>](https://www.utteraccess.com/wiki/index.php/records_within_a_defined_range)
+- [<span data-ttu-id="d4444-153">Viewing Records Within A Defined Range</span><span class="sxs-lookup"><span data-stu-id="d4444-153">Viewing Records Within A Defined Range</span></span>](https://www.utteraccess.com/wiki/index.php/records_within_a_defined_range)
 
-## <a name="example"></a><span data-ttu-id="957ac-154">使用例</span><span class="sxs-lookup"><span data-stu-id="957ac-154">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d4444-154">使用例</span><span class="sxs-lookup"><span data-stu-id="d4444-154">Example</span></span>
 
-<span data-ttu-id="957ac-p111">次に示す一部の使用例では、Employees テーブルに Salary フィールドが含まれていると仮定しています。実際には、ノースウィンド データベースの Employees テーブルにこのフィールドは含まれていないので注意してください。</span><span class="sxs-lookup"><span data-stu-id="957ac-p111">Some of the following examples assume the existence of a hypothetical Salary field in an Employees table. Note that this field does not actually exist in the Northwind database Employees table.</span></span>
+<span data-ttu-id="d4444-p111">次に示す一部の使用例では、Employees テーブルに Salary フィールドが含まれていると仮定しています。実際には、ノースウィンド データベースの Employees テーブルにこのフィールドは含まれていないので注意してください。</span><span class="sxs-lookup"><span data-stu-id="d4444-p111">Some of the following examples assume the existence of a hypothetical Salary field in an Employees table. Note that this field does not actually exist in the Northwind database Employees table.</span></span>
 
-<span data-ttu-id="957ac-157">この例では、[社員] テーブルのすべてのレコードの [氏名] と [部署名] フィールドを選択する SQL ステートメントに基づくダイナセット タイプの**レコード セット**を作成します。</span><span class="sxs-lookup"><span data-stu-id="957ac-157">This example creates a dynaset-type **Recordset** based on an SQL statement that selects the LastName and FirstName fields of all records in the Employees table.</span></span> <span data-ttu-id="957ac-158">**デバッグ**ウィンドウに、**レコード セット**オブジェクトの内容を印刷する、EnumFields プロシージャを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="957ac-158">It calls the EnumFields procedure, which prints the contents of a **Recordset** object to the **Debug** window.</span></span>
+<span data-ttu-id="d4444-157">この例では、[社員] テーブルのすべてのレコードの [氏名] と [部署名] フィールドを選択する SQL ステートメントに基づくダイナセット タイプの**レコード セット**を作成します。</span><span class="sxs-lookup"><span data-stu-id="d4444-157">This example creates a dynaset-type **Recordset** based on an SQL statement that selects the LastName and FirstName fields of all records in the Employees table.</span></span> <span data-ttu-id="d4444-158">**デバッグ**ウィンドウに、**レコード セット**オブジェクトの内容を印刷する、EnumFields プロシージャを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="d4444-158">It calls the EnumFields procedure, which prints the contents of a **Recordset** object to the **Debug** window.</span></span>
 
 ```sql
     Sub SelectX1() 
@@ -153,7 +154,7 @@ AS HeadCount FROM Employees;
 
 <br/>
 
-<span data-ttu-id="957ac-159">次の使用例では、PostalCode フィールドにエントリがあるレコードの数を調べ、その値が返されるフィールドとして Tally フィールドを指定します。</span><span class="sxs-lookup"><span data-stu-id="957ac-159">This example counts the number of records that have an entry in the PostalCode field and names the returned field Tally.</span></span>
+<span data-ttu-id="d4444-159">次の使用例では、PostalCode フィールドにエントリがあるレコードの数を調べ、その値が返されるフィールドとして Tally フィールドを指定します。</span><span class="sxs-lookup"><span data-stu-id="d4444-159">This example counts the number of records that have an entry in the PostalCode field and names the returned field Tally.</span></span>
 
 ```sql
     Sub SelectX2() 
@@ -183,7 +184,7 @@ AS HeadCount FROM Employees;
 
 <br/>
 
-<span data-ttu-id="957ac-160">次の使用例では、社員数と平均給与額および最高給与額を表示します。</span><span class="sxs-lookup"><span data-stu-id="957ac-160">This example shows the number of employees and the average and maximum salaries.</span></span>
+<span data-ttu-id="d4444-160">次の使用例では、社員数と平均給与額および最高給与額を表示します。</span><span class="sxs-lookup"><span data-stu-id="d4444-160">This example shows the number of employees and the average and maximum salaries.</span></span>
 
 ```sql
     Sub SelectX3() 
@@ -216,7 +217,7 @@ AS HeadCount FROM Employees;
 
 <br/>
 
-<span data-ttu-id="957ac-p113">**Sub** プロシージャである EnumFields には、呼び出し元のプロシージャから **Recordset** オブジェクトが渡されます。次に **Recordset** のフィールドがフォーマットされ、 **Debug** ウィンドウに出力されます。変数は、必要な出力フィールド幅を示します。一部のフィールドが表示されない場合もあります。</span><span class="sxs-lookup"><span data-stu-id="957ac-p113">The **Sub** procedure EnumFields is passed a **Recordset** object from the calling procedure. The procedure then formats and prints the fields of the **Recordset** to the **Debug** window. The variable is the desired printed field width. Some fields may be truncated.</span></span>
+<span data-ttu-id="d4444-p113">**Sub** プロシージャである EnumFields には、呼び出し元のプロシージャから **Recordset** オブジェクトが渡されます。次に **Recordset** のフィールドがフォーマットされ、 **Debug** ウィンドウに出力されます。変数は、必要な出力フィールド幅を示します。一部のフィールドが表示されない場合もあります。</span><span class="sxs-lookup"><span data-stu-id="d4444-p113">The **Sub** procedure EnumFields is passed a **Recordset** object from the calling procedure. The procedure then formats and prints the fields of the **Recordset** to the **Debug** window. The variable is the desired printed field width. Some fields may be truncated.</span></span>
 
 ```sql
     Sub EnumFields(rst As Recordset, intFldLen As Integer) 

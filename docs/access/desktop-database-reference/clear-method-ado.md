@@ -6,27 +6,28 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249329(v=office.15)
 ms:contentKeyID: 48545110
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2cb522a0b70517e81f086f544b1b1e366c166087
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: b0d76480bdb5d5a3ab258e103a00707af303a4d3
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947400"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28716860"
 ---
-# <a name="clear-method-ado"></a><span data-ttu-id="489de-102">Clear メソッド (ADO)</span><span class="sxs-lookup"><span data-stu-id="489de-102">Clear method (ADO)</span></span>
+# <a name="clear-method-ado"></a><span data-ttu-id="778b0-102">Clear メソッド (ADO)</span><span class="sxs-lookup"><span data-stu-id="778b0-102">Clear method (ADO)</span></span>
 
 
-<span data-ttu-id="489de-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="489de-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="778b0-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="778b0-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="489de-104">**Errors** コレクションからすべての **Error** オブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="489de-104">Removes all the **Error** objects from the **Errors** collection.</span></span>
+<span data-ttu-id="778b0-104">**Errors** コレクションからすべての **Error** オブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="778b0-104">Removes all the **Error** objects from the **Errors** collection.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="489de-105">構文</span><span class="sxs-lookup"><span data-stu-id="489de-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="778b0-105">構文</span><span class="sxs-lookup"><span data-stu-id="778b0-105">Syntax</span></span>
 
-<span data-ttu-id="489de-106">*エラー*です。クリア</span><span class="sxs-lookup"><span data-stu-id="489de-106">*Errors*.Clear</span></span>
+<span data-ttu-id="778b0-106">*エラー*です。クリア</span><span class="sxs-lookup"><span data-stu-id="778b0-106">*Errors*.Clear</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="489de-107">解説</span><span class="sxs-lookup"><span data-stu-id="489de-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="778b0-107">解説</span><span class="sxs-lookup"><span data-stu-id="778b0-107">Remarks</span></span>
 
-<span data-ttu-id="489de-p101">**Errors** コレクションの [Clear](errors-collection-ado.md) メソッドは、コレクションから既存のすべての [Error](error-object-ado.md) オブジェクトを削除する場合に使用します。エラーが発生すると、 **Errors** コレクションは自動的にクリアされ、新しいエラーに基づく **Error** オブジェクトが格納されます。</span><span class="sxs-lookup"><span data-stu-id="489de-p101">Use the **Clear** method on the [Errors](errors-collection-ado.md) collection to remove all existing [Error](error-object-ado.md) objects from the collection. When an error occurs, ADO automatically clears the **Errors** collection and fills it with **Error** objects based on the new error.</span></span>
+<span data-ttu-id="778b0-p101">**Errors** コレクションの [Clear](errors-collection-ado.md) メソッドは、コレクションから既存のすべての [Error](error-object-ado.md) オブジェクトを削除する場合に使用します。エラーが発生すると、 **Errors** コレクションは自動的にクリアされ、新しいエラーに基づく **Error** オブジェクトが格納されます。</span><span class="sxs-lookup"><span data-stu-id="778b0-p101">Use the **Clear** method on the [Errors](errors-collection-ado.md) collection to remove all existing [Error](error-object-ado.md) objects from the collection. When an error occurs, ADO automatically clears the **Errors** collection and fills it with **Error** objects based on the new error.</span></span>
 
-<span data-ttu-id="489de-p102">プロパティとメソッドの中には、 **Errors** コレクションの **Error** オブジェクトとして警告を返しても、プログラムの実行を停止しないものがあります。 [Recordset](resync-method-ado.md) オブジェクトで [Resync](updatebatch-method-ado.md) メソッド、 [UpdateBatch](cancelbatch-method-ado.md) メソッド、または [CancelBatch](recordset-object-ado.md) メソッドを呼び出す前、 [Connection](open-method-ado-connection.md) オブジェクトで [Open](connection-object-ado.md) メソッドを呼び出す前、または [Recordset](filter-property-ado.md) オブジェクトで **Filter** プロパティを設定する前に、 **Errors** コレクションで **Clear** メソッドを呼び出す必要があります。これにより、 [Errors](count-property-ado.md) コレクションの **Count** プロパティを読み取り、返された警告を調べることができます。</span><span class="sxs-lookup"><span data-stu-id="489de-p102">Some properties and methods return warnings that appear as **Error** objects in the **Errors** collection but do not halt a program's execution. Before you call the [Resync](resync-method-ado.md), [UpdateBatch](updatebatch-method-ado.md), or [CancelBatch](cancelbatch-method-ado.md) methods on a [Recordset](recordset-object-ado.md) object; the [Open](open-method-ado-connection.md) method on a [Connection](connection-object-ado.md) object; or set the [Filter](filter-property-ado.md) property on a **Recordset** object, call the **Clear** method on the **Errors** collection. That way, you can read the [Count](count-property-ado.md) property of the **Errors** collection to test for returned warnings.</span></span>
+<span data-ttu-id="778b0-p102">プロパティとメソッドの中には、 **Errors** コレクションの **Error** オブジェクトとして警告を返しても、プログラムの実行を停止しないものがあります。 [Recordset](resync-method-ado.md) オブジェクトで [Resync](updatebatch-method-ado.md) メソッド、 [UpdateBatch](cancelbatch-method-ado.md) メソッド、または [CancelBatch](recordset-object-ado.md) メソッドを呼び出す前、 [Connection](open-method-ado-connection.md) オブジェクトで [Open](connection-object-ado.md) メソッドを呼び出す前、または [Recordset](filter-property-ado.md) オブジェクトで **Filter** プロパティを設定する前に、 **Errors** コレクションで **Clear** メソッドを呼び出す必要があります。これにより、 [Errors](count-property-ado.md) コレクションの **Count** プロパティを読み取り、返された警告を調べることができます。</span><span class="sxs-lookup"><span data-stu-id="778b0-p102">Some properties and methods return warnings that appear as **Error** objects in the **Errors** collection but do not halt a program's execution. Before you call the [Resync](resync-method-ado.md), [UpdateBatch](updatebatch-method-ado.md), or [CancelBatch](cancelbatch-method-ado.md) methods on a [Recordset](recordset-object-ado.md) object; the [Open](open-method-ado-connection.md) method on a [Connection](connection-object-ado.md) object; or set the [Filter](filter-property-ado.md) property on a **Recordset** object, call the **Clear** method on the **Errors** collection. That way, you can read the [Count](count-property-ado.md) property of the **Errors** collection to test for returned warnings.</span></span>
 

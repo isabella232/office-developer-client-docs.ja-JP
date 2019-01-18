@@ -10,33 +10,34 @@ f1_keywords:
 - vbaac10.chm11103
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: dfd7877ff1db960afcbf864f1e72ff01b12e8f09
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 35637781035b7a449ba574cf5f6c84f2cb5223db
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998953"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718834"
 ---
-# <a name="restorewindow-macro-action"></a><span data-ttu-id="55fe2-102">RestoreWindow マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="55fe2-102">RestoreWindow macro action</span></span>
+# <a name="restorewindow-macro-action"></a><span data-ttu-id="c1926-102">RestoreWindow マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="c1926-102">RestoreWindow macro action</span></span>
 
-<span data-ttu-id="55fe2-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="55fe2-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="c1926-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c1926-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="55fe2-104">**RestoreWindow**アクションを使用すると、元のサイズを最大化または最小化されたウィンドウを復元します。</span><span class="sxs-lookup"><span data-stu-id="55fe2-104">You can use the **RestoreWindow** action to restore a maximized or minimized window to its previous size.</span></span>
+<span data-ttu-id="c1926-104">**RestoreWindow**アクションを使用すると、元のサイズを最大化または最小化されたウィンドウを復元します。</span><span class="sxs-lookup"><span data-stu-id="c1926-104">You can use the **RestoreWindow** action to restore a maximized or minimized window to its previous size.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="55fe2-p101">[!メモ] このアクションは、Visual Basic Editor のコード ウィンドウには適用できません。コード ウィンドウへの影響の詳細については、 **WindowState** プロパティのトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="55fe2-p101">This action can't be applied to code windows in the Visual Basic Editor. For information about how to affect code windows, see the **WindowState** property topic.</span></span>
+> <span data-ttu-id="c1926-p101">[!メモ] このアクションは、Visual Basic Editor のコード ウィンドウには適用できません。コード ウィンドウへの影響の詳細については、 **WindowState** プロパティのトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="c1926-p101">This action can't be applied to code windows in the Visual Basic Editor. For information about how to affect code windows, see the **WindowState** property topic.</span></span>
 
-## <a name="setting"></a><span data-ttu-id="55fe2-107">設定値</span><span class="sxs-lookup"><span data-stu-id="55fe2-107">Setting</span></span>
+## <a name="setting"></a><span data-ttu-id="c1926-107">設定値</span><span class="sxs-lookup"><span data-stu-id="c1926-107">Setting</span></span>
 
-<span data-ttu-id="55fe2-108">**RestoreWindow**アクション引数はありません。</span><span class="sxs-lookup"><span data-stu-id="55fe2-108">The **RestoreWindow** action doesn't have any arguments.</span></span>
+<span data-ttu-id="c1926-108">**RestoreWindow**アクション引数はありません。</span><span class="sxs-lookup"><span data-stu-id="c1926-108">The **RestoreWindow** action doesn't have any arguments.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="55fe2-109">解説</span><span class="sxs-lookup"><span data-stu-id="55fe2-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c1926-109">解説</span><span class="sxs-lookup"><span data-stu-id="c1926-109">Remarks</span></span>
 
-<span data-ttu-id="55fe2-110">この操作は、選択したオブジェクトに対して機能します。</span><span class="sxs-lookup"><span data-stu-id="55fe2-110">This action works on the selected object.</span></span> <span data-ttu-id="55fe2-111">オブジェクトが最小化されている場合、 **SelectObject**アクションを使用して選択して、 **RestoreWindow**アクションを使用して元のサイズに復元できます。</span><span class="sxs-lookup"><span data-stu-id="55fe2-111">If an object has been minimized, you can first select it by using the **SelectObject** action and then restore it to its previous size by using the **RestoreWindow** action.</span></span>
+<span data-ttu-id="c1926-110">この操作は、選択したオブジェクトに対して機能します。</span><span class="sxs-lookup"><span data-stu-id="c1926-110">This action works on the selected object.</span></span> <span data-ttu-id="c1926-111">オブジェクトが最小化されている場合、 **SelectObject**アクションを使用して選択して、 **RestoreWindow**アクションを使用して元のサイズに復元できます。</span><span class="sxs-lookup"><span data-stu-id="c1926-111">If an object has been minimized, you can first select it by using the **SelectObject** action and then restore it to its previous size by using the **RestoreWindow** action.</span></span>
 
-<span data-ttu-id="55fe2-112">移動または復元したウィンドウのサイズは、 **MoveAndSizeWindow**アクションを使用できます。</span><span class="sxs-lookup"><span data-stu-id="55fe2-112">You can use the **MoveAndSizeWindow** action to move or size a window that you have restored.</span></span>
+<span data-ttu-id="c1926-112">移動または復元したウィンドウのサイズは、 **MoveAndSizeWindow**アクションを使用できます。</span><span class="sxs-lookup"><span data-stu-id="c1926-112">You can use the **MoveAndSizeWindow** action to move or size a window that you have restored.</span></span>
 
-<span data-ttu-id="55fe2-113">**RestoreWindow**アクションは、ウィンドウの右上隅で [**復元**] ボタンをクリックするか、ウィンドウの**コントロール**メニューの [**復元**] コマンドをクリックすると同じです。</span><span class="sxs-lookup"><span data-stu-id="55fe2-113">The **RestoreWindow** action has the same effect as clicking the **Restore** button in the window's upper-right corner or clicking the **Restore** command on the window's **Control** menu.</span></span>
+<span data-ttu-id="c1926-113">**RestoreWindow**アクションは、ウィンドウの右上隅で [**復元**] ボタンをクリックするか、ウィンドウの**コントロール**メニューの [**復元**] コマンドをクリックすると同じです。</span><span class="sxs-lookup"><span data-stu-id="c1926-113">The **RestoreWindow** action has the same effect as clicking the **Restore** button in the window's upper-right corner or clicking the **Restore** command on the window's **Control** menu.</span></span>
 
-<span data-ttu-id="55fe2-114">Visual Basic for Applications (VBA) モジュールに**RestoreWindow**アクションを実行するには、 **DoCmd**オブジェクトの**復元**方法を使用します。</span><span class="sxs-lookup"><span data-stu-id="55fe2-114">To run the **RestoreWindow** action in a Visual Basic for Applications (VBA) module, use the **Restore** method of the **DoCmd** object.</span></span>
+<span data-ttu-id="c1926-114">Visual Basic for Applications (VBA) モジュールに**RestoreWindow**アクションを実行するには、 **DoCmd**オブジェクトの**復元**方法を使用します。</span><span class="sxs-lookup"><span data-stu-id="c1926-114">To run the **RestoreWindow** action in a Visual Basic for Applications (VBA) module, use the **Restore** method of the **DoCmd** object.</span></span>
 
