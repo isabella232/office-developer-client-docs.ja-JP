@@ -6,21 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248928(v=office.15)
 ms:contentKeyID: 48543452
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ae4ffe7f1d600fe89788c3084a9e9dc409fc00f1
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: bb72b0a3d0e0b497b61925b05a2ee6b0c4b98960
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25882498"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28705625"
 ---
-# <a name="item-property-example-vc"></a><span data-ttu-id="05199-102">Item プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="05199-102">Item property example (VC++)</span></span>
+# <a name="item-property-example-vc"></a><span data-ttu-id="598f5-102">Item プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="598f5-102">Item property example (VC++)</span></span>
 
 
-<span data-ttu-id="05199-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="05199-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="598f5-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="598f5-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="05199-p101">この例では、[Item](item-property-ado.md) プロパティを使用してコレクションのメンバーにアクセスする方法を示します。この例では、パラメーター化されたコマンドを使用して、***Pubs*** データベースの ***Authors*** テーブルを開いています。</span><span class="sxs-lookup"><span data-stu-id="05199-p101">This example demonstrates how the [Item](item-property-ado.md) property accesses members of a collection. The example opens the ***Authors*** table of the ***Pubs*** database with a parameterized command.</span></span>
+<span data-ttu-id="598f5-p101">この例では、[Item](item-property-ado.md) プロパティを使用してコレクションのメンバーにアクセスする方法を示します。この例では、パラメーター化されたコマンドを使用して、***Pubs*** データベースの ***Authors*** テーブルを開いています。</span><span class="sxs-lookup"><span data-stu-id="598f5-p101">This example demonstrates how the [Item](item-property-ado.md) property accesses members of a collection. The example opens the ***Authors*** table of the ***Pubs*** database with a parameterized command.</span></span>
 
-<span data-ttu-id="05199-p102">データベースに対して発行されるコマンドのパラメーターには、[Command](command-object-ado.md) オブジェクトの [Parameters](parameters-collection-ado.md) コレクションから、インデックスと名前でアクセスします。また、返される [Recordset](recordset-object-ado.md) のフィールドには、そのオブジェクトの [Fields](fields-collection-ado.md) コレクションから、インデックスと名前でアクセスします。</span><span class="sxs-lookup"><span data-stu-id="05199-p102">The parameter in the command issued against the database is accessed from the [Command](command-object-ado.md) object's [Parameters](parameters-collection-ado.md) collection by index and name. Then the fields of the returned [Recordset](recordset-object-ado.md) are accessed from that object's [Fields](fields-collection-ado.md) collection by index and name.</span></span>
+<span data-ttu-id="598f5-p102">データベースに対して発行されるコマンドのパラメーターには、[Command](command-object-ado.md) オブジェクトの [Parameters](parameters-collection-ado.md) コレクションから、インデックスと名前でアクセスします。また、返される [Recordset](recordset-object-ado.md) のフィールドには、そのオブジェクトの [Fields](fields-collection-ado.md) コレクションから、インデックスと名前でアクセスします。</span><span class="sxs-lookup"><span data-stu-id="598f5-p102">The parameter in the command issued against the database is accessed from the [Command](command-object-ado.md) object's [Parameters](parameters-collection-ado.md) collection by index and name. Then the fields of the returned [Recordset](recordset-object-ado.md) are accessed from that object's [Fields](fields-collection-ado.md) collection by index and name.</span></span>
 
 ```cpp 
  
