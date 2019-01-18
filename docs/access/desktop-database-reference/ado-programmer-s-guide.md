@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249876(v=office.15)
 ms:contentKeyID: 48547278
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: df937a4b0d7252cf94ebf96fe261068c801b9f3e
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: b44bf60399cd3bdab9e5a1e51d13cbfc1daaba6c
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944320"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28704764"
 ---
 # <a name="ado-programmers-guide"></a>ADO プログラマ ガイド
 
@@ -21,7 +22,7 @@ ADO に新しいテクノロジの詳細に紹介をすることでは、開発�
 
 ADO プログラマ ガイド」には、次のセクションとの章が含まれています。
 
-- [Introduction](introduction-to-ado-programming.md)
+- [はじめに](introduction-to-ado-programming.md)
   
 - [セクション I: ActiveX データ オブジェクト (ADO)](section-i-activex-data-objects.md)
     

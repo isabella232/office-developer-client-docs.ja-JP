@@ -1,19 +1,20 @@
 ---
-title: 複数のフィールドを追加します。
+title: 複数のフィールドの追加
 TOCTitle: Adding multiple fields
 ms:assetid: 81b2f9de-4805-4494-9990-09ffda1b2068
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249560(v=office.15)
 ms:contentKeyID: 48545961
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6ea9b4999ae107c6b6ca88ca7cf75888163a5b05
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: bc9822f2055e7cdfd9a2ef5fe9d2312fc5622ac7
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944110"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702307"
 ---
-# <a name="adding-multiple-fields"></a>複数のフィールドを追加します。
+# <a name="adding-multiple-fields"></a>複数のフィールドの追加
 
 **適用されます**Access 2013、Office 2013。
 

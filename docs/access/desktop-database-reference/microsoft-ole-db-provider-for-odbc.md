@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249964(v=office.15)
 ms:contentKeyID: 48547602
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 66ef27165e6f5823cc97a295643dfc2ae5c205c2
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 4f5ffae4880cadb90f47f1ac348ffc8b3ea58785
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25883184"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28704561"
 ---
 # <a name="microsoft-ole-db-provider-for-odbc"></a>Microsoft OLE DB Provider for ODBC
 
@@ -408,7 +409,7 @@ ODBC には、ストアド プロシージャを呼び出すための独自の�
 <td><p>値の取得のみ</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="filter-property-ado.md">Filter</a></p></td>
+<td><p><a href="filter-property-ado.md">フィルター</a></p></td>
 <td><p>値の取得および設定</p></td>
 <td><p>値の取得および設定</p></td>
 <td><p>値の取得および設定</p></td>
@@ -471,7 +472,7 @@ ODBC には、ストアド プロシージャを呼び出すための独自の�
 <td><p>値の取得のみ</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="status-property-ado-recordset.md">Status</a></p></td>
+<td><p><a href="status-property-ado-recordset.md">状態</a></p></td>
 <td><p>値の取得のみ</p></td>
 <td><p>値の取得のみ</p></td>
 <td><p>値の取得のみ</p></td>

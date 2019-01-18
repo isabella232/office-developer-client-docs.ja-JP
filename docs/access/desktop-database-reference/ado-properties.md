@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248809(v=office.15)
 ms:contentKeyID: 48543020
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ce8e5b8d442ba81120056219ee06753e08332354
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: a0efb40d1b5e4c5d675d8add7cdb7a05760578a9
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910909"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28704260"
 ---
 # <a name="ado-properties"></a>ADO プロパティ
 
@@ -50,7 +51,7 @@ ms.locfileid: "25910909"
 <td><p>フィールドの値の実際の長さを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="attributes-property-ado.md">Attributes</a></p></td>
+<td><p><a href="attributes-property-ado.md">属性</a></p></td>
 <td><p>オブジェクトの 1 つまたは複数の属性を示します。</p></td>
 </tr>
 <tr class="odd">
@@ -70,7 +71,7 @@ ms.locfileid: "25910909"
 <td><p>OLE DB Chapter オブジェクトを ADORecordsetConstruction オブジェクトから取得するか、または、OLE DB Chapter オブジェクトを ADORecordsetConstruction オブジェクトに設定します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="charset-property-ado.md">文字セット</a></p></td>
+<td><p><a href="charset-property-ado.md">CharSet</a></p></td>
 <td><p>テキスト <strong>Stream</strong> の内容を変換する文字セットを示します。</p></td>
 </tr>
 <tr class="even">
@@ -138,7 +139,7 @@ ms.locfileid: "25910909"
 <td><p>現在の位置がストリームの末尾にあるかどうかを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="filter-property-ado.md">Filter</a></p></td>
+<td><p><a href="filter-property-ado.md">フィルター</a></p></td>
 <td><p><strong>Recordset</strong> のデータに対するフィルターを示します。</p></td>
 </tr>
 <tr class="odd">
@@ -154,7 +155,7 @@ ms.locfileid: "25910909"
 <td><p><strong>Connection</strong> オブジェクトの分離レベルを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="item-property-ado.md">Item</a></p></td>
+<td><p><a href="item-property-ado.md">アイテム</a></p></td>
 <td><p>コレクションの特定のメンバーをその名前または序数で示します。</p></td>
 </tr>
 <tr class="odd">
@@ -238,7 +239,7 @@ ms.locfileid: "25910909"
 <td><p><strong>Record</strong> オブジェクトの種類を示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="row-property-ado.md">Row</a></p></td>
+<td><p><a href="row-property-ado.md">行</a></p></td>
 <td><p><strong>ADORecordConstruction</strong> オブジェクトの OLE DB <strong>Row</strong> オブジェクトを設定または取得します。</p></td>
 </tr>
 <tr class="even">
@@ -310,7 +311,7 @@ ms.locfileid: "25910909"
 <td><p><strong>Field</strong> オブジェクト、 <strong>Parameter</strong> オブジェクト、または <strong>Property</strong> オブジェクトに割り当てられた値を示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="version-property-ado.md">Version</a></p></td>
+<td><p><a href="version-property-ado.md">バージョン</a></p></td>
 <td><p>ADO のバージョン番号を示します。</p></td>
 </tr>
 </tbody>

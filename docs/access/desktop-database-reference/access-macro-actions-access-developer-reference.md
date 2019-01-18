@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn161227(v=office.15)
 ms:contentKeyID: 52074194
 ms.date: 10/17/2018
 mtps_version: v=office.15
-ms.openlocfilehash: cea75ba4f6af4e2a319457e0d7d4466a61c0c1b6
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: ccf94d51160aebcae8644def4433ace4f369b205
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944860"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28705251"
 ---
 # <a name="access-macro-actions-access-developer-reference"></a>Access マクロのアクション (Access の開発者用リファレンス)
 
@@ -24,7 +25,7 @@ ms.locfileid: "25944860"
 - [データのインポート/エクスポート](data-import-export.md)
 - [データ マクロ イベント](data-macro-events.md)
 - [データベース オブジェクト](database-objects.md)
-- [検索/フィルター/クエリ](filter-query-search.md)
+- [フィルター/クエリ/検索](filter-query-search.md)
 - [マクロ コマンド](macro-commands.md)
 - [プログラム フロー](program-flow.md)
 - [System コマンド](system-commands.md)
