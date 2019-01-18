@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250220(v=office.15)
 ms:contentKeyID: 48548594
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b7a53a094906a8095380b59eae4d6db79d72ed4a
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: f4937a241054b5694e15ff8a0b35014886bf7ec0
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25876513"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28706721"
 ---
-# <a name="append-and-createparameter-methods-example-vj"></a><span data-ttu-id="adb99-102">Append メソッドと CreateParameter メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="adb99-102">Append and CreateParameter methods example (VJ++)</span></span>
+# <a name="append-and-createparameter-methods-example-vj"></a><span data-ttu-id="4ebae-102">Append メソッドと CreateParameter メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="4ebae-102">Append and CreateParameter methods example (VJ++)</span></span>
 
 
-<span data-ttu-id="adb99-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="adb99-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="4ebae-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="4ebae-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="adb99-104">この例では、[Append](append-method-ado.md) メソッドと [CreateParameter](createparameter-method-ado.md) メソッドを使用して、入力パラメーターのあるストアド プロシージャを実行します。</span><span class="sxs-lookup"><span data-stu-id="adb99-104">This example uses the [Append](append-method-ado.md) and [CreateParameter](createparameter-method-ado.md) methods to execute a stored procedure with an input parameter.</span></span>
+<span data-ttu-id="4ebae-104">この例では、[Append](append-method-ado.md) メソッドと [CreateParameter](createparameter-method-ado.md) メソッドを使用して、入力パラメーターのあるストアド プロシージャを実行します。</span><span class="sxs-lookup"><span data-stu-id="4ebae-104">This example uses the [Append](append-method-ado.md) and [CreateParameter](createparameter-method-ado.md) methods to execute a stored procedure with an input parameter.</span></span>
 
 ```java 
  

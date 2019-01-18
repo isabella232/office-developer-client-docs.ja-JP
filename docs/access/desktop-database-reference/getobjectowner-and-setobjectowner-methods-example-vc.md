@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249835(v=office.15)
 ms:contentKeyID: 48547096
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2245ddca1dc71027887f99127f599e405a0782c2
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: b1227d60555dcb8da919e75bfa773fd64103a956
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026422"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28713360"
 ---
-# <a name="getobjectowner-and-setobjectowner-methods-example-vc"></a><span data-ttu-id="4fee4-102">GetObjectOwner メソッドと SetObjectOwner メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="4fee4-102">GetObjectOwner and SetObjectOwner methods example (VC++)</span></span>
+# <a name="getobjectowner-and-setobjectowner-methods-example-vc"></a><span data-ttu-id="9ee54-102">GetObjectOwner メソッドと SetObjectOwner メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="9ee54-102">GetObjectOwner and SetObjectOwner methods example (VC++)</span></span>
 
 
-<span data-ttu-id="4fee4-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="4fee4-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="9ee54-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="9ee54-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="4fee4-104">この例では、[GetObjectOwner](getobjectowner-method-adox.md) メソッドと [SetObjectOwner](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) メソッドの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="4fee4-104">This example demonstrates the [GetObjectOwner](getobjectowner-method-adox.md) and [SetObjectOwner](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) methods.</span></span> <span data-ttu-id="4fee4-105">このコード グループの存在を前提としています (の[グループおよびユーザーの追加、パスワードの変更方法の例 (vc++)](groups-and-users-append-changepassword-methods-example-vc.md)このグループをシステムに追加する方法についてを参照してください) の会計です。</span><span class="sxs-lookup"><span data-stu-id="4fee4-105">This code assumes the existence of the group Accounting (see the [Groups and Users Append, ChangePassword methods example (VC++)](groups-and-users-append-changepassword-methods-example-vc.md) to see how to add this group to the system).</span></span> <span data-ttu-id="4fee4-106">Categories テーブルの所有者は Accounting に設定されます。</span><span class="sxs-lookup"><span data-stu-id="4fee4-106">The owner of the Categories table is set to Accounting.</span></span>
+<span data-ttu-id="9ee54-104">この例では、[GetObjectOwner](getobjectowner-method-adox.md) メソッドと [SetObjectOwner](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) メソッドの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="9ee54-104">This example demonstrates the [GetObjectOwner](getobjectowner-method-adox.md) and [SetObjectOwner](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) methods.</span></span> <span data-ttu-id="9ee54-105">このコード グループの存在を前提としています (の[グループおよびユーザーの追加、パスワードの変更方法の例 (vc++)](groups-and-users-append-changepassword-methods-example-vc.md)このグループをシステムに追加する方法についてを参照してください) の会計です。</span><span class="sxs-lookup"><span data-stu-id="9ee54-105">This code assumes the existence of the group Accounting (see the [Groups and Users Append, ChangePassword methods example (VC++)](groups-and-users-append-changepassword-methods-example-vc.md) to see how to add this group to the system).</span></span> <span data-ttu-id="9ee54-106">Categories テーブルの所有者は Accounting に設定されます。</span><span class="sxs-lookup"><span data-stu-id="9ee54-106">The owner of the Categories table is set to Accounting.</span></span>
 
 ```cpp 
  

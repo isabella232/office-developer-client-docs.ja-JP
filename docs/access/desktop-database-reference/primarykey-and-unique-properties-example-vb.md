@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249597(v=office.15)
 ms:contentKeyID: 48546137
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fa534aa53151361c194b68124b0386ab521f1f30
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: bab87e8bfa2ac69adbfdbaff44e1e8e08f58223a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25878067"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28708866"
 ---
-# <a name="primarykey-and-unique-properties-example-vb"></a><span data-ttu-id="7ec19-102">PrimaryKey プロパティと Unique プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="7ec19-102">PrimaryKey and Unique properties example (VB)</span></span>
+# <a name="primarykey-and-unique-properties-example-vb"></a><span data-ttu-id="6ac0f-102">PrimaryKey プロパティと Unique プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="6ac0f-102">PrimaryKey and Unique properties example (VB)</span></span>
 
 
-<span data-ttu-id="7ec19-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="7ec19-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="6ac0f-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="6ac0f-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="7ec19-p101">ここでは、[Index](primarykey-property-adox.md) の [PrimaryKey](unique-property-adox.md) プロパティおよび [Unique](index-object-adox.md) プロパティのコード例を示します。このコードでは 2 つの列を持つ新しいテーブルを作成します。 **PrimaryKey** プロパティおよび **Unique** プロパティを使用して列の 1 つに主キーを設定すると、重複した値の入力ができなくなります。</span><span class="sxs-lookup"><span data-stu-id="7ec19-p101">This example demonstrates the [PrimaryKey](primarykey-property-adox.md) and [Unique](unique-property-adox.md) properties of an [Index](index-object-adox.md). The code creates a new table with two columns. The **PrimaryKey** and **Unique** properties are used to make one column the primary key for which duplicate values are not allowed.</span></span>
+<span data-ttu-id="6ac0f-p101">ここでは、[Index](primarykey-property-adox.md) の [PrimaryKey](unique-property-adox.md) プロパティおよび [Unique](index-object-adox.md) プロパティのコード例を示します。このコードでは 2 つの列を持つ新しいテーブルを作成します。 **PrimaryKey** プロパティおよび **Unique** プロパティを使用して列の 1 つに主キーを設定すると、重複した値の入力ができなくなります。</span><span class="sxs-lookup"><span data-stu-id="6ac0f-p101">This example demonstrates the [PrimaryKey](primarykey-property-adox.md) and [Unique](unique-property-adox.md) properties of an [Index](index-object-adox.md). The code creates a new table with two columns. The **PrimaryKey** and **Unique** properties are used to make one column the primary key for which duplicate values are not allowed.</span></span>
 
 ```vb 
  

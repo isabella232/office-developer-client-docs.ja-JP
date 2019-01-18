@@ -6,25 +6,26 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250264(v=office.15)
 ms:contentKeyID: 48548794
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ebca4027a74bb88a006d3d62a27047f9607b32d0
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: ce036da3db888482de9328d70eb2656801897d88
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928398"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28708012"
 ---
-# <a name="position-object-ado-md"></a><span data-ttu-id="f6472-102">Position オブジェクト (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="f6472-102">Position object (ADO MD)</span></span>
+# <a name="position-object-ado-md"></a><span data-ttu-id="12f5a-102">Position オブジェクト (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="12f5a-102">Position object (ADO MD)</span></span>
 
 
-<span data-ttu-id="f6472-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f6472-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="12f5a-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="12f5a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f6472-104">軸に沿った位置を定義する、異なる次元の 1 つ以上のメンバーのセットを表します。</span><span class="sxs-lookup"><span data-stu-id="f6472-104">Represents a set of one or more members of different dimensions that defines a point along an axis.</span></span>
+<span data-ttu-id="12f5a-104">軸に沿った位置を定義する、異なる次元の 1 つ以上のメンバーのセットを表します。</span><span class="sxs-lookup"><span data-stu-id="12f5a-104">Represents a set of one or more members of different dimensions that defines a point along an axis.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="f6472-105">解説</span><span class="sxs-lookup"><span data-stu-id="f6472-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="12f5a-105">解説</span><span class="sxs-lookup"><span data-stu-id="12f5a-105">Remarks</span></span>
 
-<span data-ttu-id="f6472-106">**Position** オブジェクトのコレクションおよびプロパティを使用すると、次の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="f6472-106">With the properties and collections of a **Position** object you can do the following:</span></span>
+<span data-ttu-id="12f5a-106">**Position** オブジェクトのコレクションおよびプロパティを使用すると、次の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="12f5a-106">With the properties and collections of a **Position** object you can do the following:</span></span>
 
-  - <span data-ttu-id="f6472-107">**Ordinal** プロパティを使用して、 **Axis** に沿った [Position](axis-object-ado-md.md) の位置を表す序数を返します。</span><span class="sxs-lookup"><span data-stu-id="f6472-107">Use the **Ordinal** property to return the ordinal position of the **Position** along the [Axis](axis-object-ado-md.md).</span></span>
+  - <span data-ttu-id="12f5a-107">**Ordinal** プロパティを使用して、 **Axis** に沿った [Position](axis-object-ado-md.md) の位置を表す序数を返します。</span><span class="sxs-lookup"><span data-stu-id="12f5a-107">Use the **Ordinal** property to return the ordinal position of the **Position** along the [Axis](axis-object-ado-md.md).</span></span>
 
-  - <span data-ttu-id="f6472-108">[Members](members-collection-ado-md.md) コレクションを使用して、 **Axis** に沿った位置を構成するメンバーを返します。</span><span class="sxs-lookup"><span data-stu-id="f6472-108">Use the [Members](members-collection-ado-md.md) collection to return the members that make up the position along the **Axis**.</span></span>
+  - <span data-ttu-id="12f5a-108">[Members](members-collection-ado-md.md) コレクションを使用して、 **Axis** に沿った位置を構成するメンバーを返します。</span><span class="sxs-lookup"><span data-stu-id="12f5a-108">Use the [Members](members-collection-ado-md.md) collection to return the members that make up the position along the **Axis**.</span></span>
 

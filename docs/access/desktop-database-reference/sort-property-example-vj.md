@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249051(v=office.15)
 ms:contentKeyID: 48543896
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9ea7dd3ee87b3e7ff2d06a6f6cf14d9195216f42
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 138364f58024f20d547a898ef4c0c00d4bd7893d
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25872082"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28709083"
 ---
-# <a name="sort-property-example-vj"></a><span data-ttu-id="61266-102">Sort プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="61266-102">Sort property example (VJ++)</span></span>
+# <a name="sort-property-example-vj"></a><span data-ttu-id="eca85-102">Sort プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="eca85-102">Sort property example (VJ++)</span></span>
 
 
-<span data-ttu-id="61266-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="61266-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="eca85-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="eca85-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="61266-104">この例では、[レコード セット](recordset-object-ado.md)オブジェクトの[Sort](sort-property-ado.md)プロパティを使用して、 ***Pubs***データベースの***Authors***テーブルから派生した**レコード セット**の行の順序を変更します。</span><span class="sxs-lookup"><span data-stu-id="61266-104">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the ***Pubs*** database.</span></span> <span data-ttu-id="61266-105">2 次ユーティリティ ルーチンで各行を出力します。</span><span class="sxs-lookup"><span data-stu-id="61266-105">A secondary utility routine prints each row.</span></span>
+<span data-ttu-id="eca85-104">この例では、[レコード セット](recordset-object-ado.md)オブジェクトの[Sort](sort-property-ado.md)プロパティを使用して、 ***Pubs***データベースの***Authors***テーブルから派生した**レコード セット**の行の順序を変更します。</span><span class="sxs-lookup"><span data-stu-id="eca85-104">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the ***Pubs*** database.</span></span> <span data-ttu-id="eca85-105">2 次ユーティリティ ルーチンで各行を出力します。</span><span class="sxs-lookup"><span data-stu-id="eca85-105">A secondary utility routine prints each row.</span></span>
 
 ```java 
  

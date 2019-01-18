@@ -6,39 +6,40 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192114(v=office.15)
 ms:contentKeyID: 48543972
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f6975a438e4e724a6fc1f72be92088f0d07a5b44
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 8c3168dcce9fb13d057380e7a1a4ef89f8814e02
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25996707"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28706689"
 ---
-# <a name="recordset2nomatch-property-dao"></a><span data-ttu-id="d9153-102">Recordset2.NoMatch プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="d9153-102">Recordset2.NoMatch property (DAO)</span></span>
+# <a name="recordset2nomatch-property-dao"></a><span data-ttu-id="c73e9-102">Recordset2.NoMatch プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="c73e9-102">Recordset2.NoMatch property (DAO)</span></span>
 
-<span data-ttu-id="d9153-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="d9153-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="c73e9-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c73e9-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="d9153-104">**[Seek](recordset2-seek-method-dao.md)** メソッドを使用するかまたは **[Find](recordset2-findfirst-method-dao.md)** メソッドの 1 つを使用して、特定のレコードが見つかったかどうかを示します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="d9153-104">Indicates whether a particular record was found by using the **[Seek](recordset2-seek-method-dao.md)** method or one of the **[Find](recordset2-findfirst-method-dao.md)** methods (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="c73e9-104">**[Seek](recordset2-seek-method-dao.md)** メソッドを使用するかまたは **[Find](recordset2-findfirst-method-dao.md)** メソッドの 1 つを使用して、特定のレコードが見つかったかどうかを示します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="c73e9-104">Indicates whether a particular record was found by using the **[Seek](recordset2-seek-method-dao.md)** method or one of the **[Find](recordset2-findfirst-method-dao.md)** methods (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d9153-105">構文</span><span class="sxs-lookup"><span data-stu-id="d9153-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c73e9-105">構文</span><span class="sxs-lookup"><span data-stu-id="c73e9-105">Syntax</span></span>
 
-<span data-ttu-id="d9153-106">*式*です。NoMatch</span><span class="sxs-lookup"><span data-stu-id="d9153-106">*expression* .NoMatch</span></span>
+<span data-ttu-id="c73e9-106">*式*です。NoMatch</span><span class="sxs-lookup"><span data-stu-id="c73e9-106">*expression* .NoMatch</span></span>
 
-<span data-ttu-id="d9153-107">\*式\***Recordset2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="d9153-107">*expression* A variable that represents a **Recordset2** object.</span></span>
+<span data-ttu-id="c73e9-107">\*式\***Recordset2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="c73e9-107">*expression* A variable that represents a **Recordset2** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="d9153-108">注釈</span><span class="sxs-lookup"><span data-stu-id="d9153-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c73e9-108">注釈</span><span class="sxs-lookup"><span data-stu-id="c73e9-108">Remarks</span></span>
 
-<span data-ttu-id="d9153-109">**[Recordset](recordset-object-dao.md)** オブジェクトを開くかまたは作成すると、そのオブジェクトの **NoMatch** プロパティは **False** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="d9153-109">When you open or create a **[Recordset](recordset-object-dao.md)** object, its **NoMatch** property is set to **False**.</span></span>
+<span data-ttu-id="c73e9-109">**[Recordset](recordset-object-dao.md)** オブジェクトを開くかまたは作成すると、そのオブジェクトの **NoMatch** プロパティは **False** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="c73e9-109">When you open or create a **[Recordset](recordset-object-dao.md)** object, its **NoMatch** property is set to **False**.</span></span>
 
-<span data-ttu-id="d9153-p101">レコードを見つける場合、テーブル タイプの **Recordset** オブジェクトに対しては **Seek** メソッドを使用し、ダイナセット タイプまたはスナップショット タイプの **Recordset** オブジェクトに対しては **Find** メソッドのいずれか 1 つを使用します。 **NoMatch** プロパティの設定値を調べ、レコードが見つかったかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="d9153-p101">To locate a record, use the **Seek** method on a table-type **Recordset** object or one of the **Find** methods on a dynaset- or snapshot-type **Recordset** object. Check the **NoMatch** property setting to see whether the record was found.</span></span>
+<span data-ttu-id="c73e9-p101">レコードを見つける場合、テーブル タイプの **Recordset** オブジェクトに対しては **Seek** メソッドを使用し、ダイナセット タイプまたはスナップショット タイプの **Recordset** オブジェクトに対しては **Find** メソッドのいずれか 1 つを使用します。 **NoMatch** プロパティの設定値を調べ、レコードが見つかったかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="c73e9-p101">To locate a record, use the **Seek** method on a table-type **Recordset** object or one of the **Find** methods on a dynaset- or snapshot-type **Recordset** object. Check the **NoMatch** property setting to see whether the record was found.</span></span>
 
-<span data-ttu-id="d9153-p102">**Seek** メソッドまたは **Find** メソッドで検出されず、 **NoMatch** プロパティが **True** に設定されると、カレント レコードは無効になります。そのレコードに戻る必要がある場合は、 **Seek** メソッドまたは **Find** メソッドを使用する前に、カレント レコードのブックマークを取得してください。</span><span class="sxs-lookup"><span data-stu-id="d9153-p102">If the **Seek** or **Find** method is unsuccessful and the **NoMatch** property is **True**, the current record will no longer be valid. Be sure to obtain the current record's bookmark before using the **Seek** method or a **Find** method if you'll need to return to that record.</span></span>
+<span data-ttu-id="c73e9-p102">**Seek** メソッドまたは **Find** メソッドで検出されず、 **NoMatch** プロパティが **True** に設定されると、カレント レコードは無効になります。そのレコードに戻る必要がある場合は、 **Seek** メソッドまたは **Find** メソッドを使用する前に、カレント レコードのブックマークを取得してください。</span><span class="sxs-lookup"><span data-stu-id="c73e9-p102">If the **Seek** or **Find** method is unsuccessful and the **NoMatch** property is **True**, the current record will no longer be valid. Be sure to obtain the current record's bookmark before using the **Seek** method or a **Find** method if you'll need to return to that record.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d9153-114">[!メモ] [Recordset](recordset-movefirst-method-dao.md) オブジェクトでいずれの \*\*\*\*Move\*\*\*\* メソッドを使用しても、そのオブジェクトの **NoMatch** プロパティの設定値には反映されません。</span><span class="sxs-lookup"><span data-stu-id="d9153-114">Using any of the **[Move](recordset-movefirst-method-dao.md)** methods on a **Recordset** object won't affect its **NoMatch** property setting.</span></span>
+> <span data-ttu-id="c73e9-114">[!メモ] [Recordset](recordset-movefirst-method-dao.md) オブジェクトでいずれの \*\*\*\*Move\*\*\*\* メソッドを使用しても、そのオブジェクトの **NoMatch** プロパティの設定値には反映されません。</span><span class="sxs-lookup"><span data-stu-id="c73e9-114">Using any of the **[Move](recordset-movefirst-method-dao.md)** methods on a **Recordset** object won't affect its **NoMatch** property setting.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d9153-115">例</span><span class="sxs-lookup"><span data-stu-id="d9153-115">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c73e9-115">例</span><span class="sxs-lookup"><span data-stu-id="c73e9-115">Example</span></span>
 
-<span data-ttu-id="d9153-p103">次の例では、 **NoMatch** プロパティを使用して **Seek** および **FindFirst** が成功したかどうか確認し、成功しなかった場合は適切なフィードバックを表示します。このプロシージャを実行するには、SeekMatch プロシージャと FindMatch プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="d9153-p103">This example uses the **NoMatch** property to determine whether a **Seek** and a **FindFirst** were successful, and if not, to give appropriate feedback. The SeekMatch and FindMatch procedures are required for this procedure to run.</span></span>
+<span data-ttu-id="c73e9-p103">次の例では、 **NoMatch** プロパティを使用して **Seek** および **FindFirst** が成功したかどうか確認し、成功しなかった場合は適切なフィードバックを表示します。このプロシージャを実行するには、SeekMatch プロシージャと FindMatch プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="c73e9-p103">This example uses the **NoMatch** property to determine whether a **Seek** and a **FindFirst** were successful, and if not, to give appropriate feedback. The SeekMatch and FindMatch procedures are required for this procedure to run.</span></span>
 
 ```vb
     Sub NoMatchX() 

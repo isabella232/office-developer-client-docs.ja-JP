@@ -10,22 +10,23 @@ f1_keywords:
 - vbaac10.chm129285
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 179ee840370cef98c70e947cef555401408bbe12
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 10d55b435a59594eaf3e8380b6690ebbda63a258
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026225"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28712373"
 ---
-# <a name="gotopage-macro-action"></a><span data-ttu-id="a50a8-102">GoToPage マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="a50a8-102">GoToPage macro action</span></span>
+# <a name="gotopage-macro-action"></a><span data-ttu-id="58f43-102">GoToPage マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="58f43-102">GoToPage macro action</span></span>
 
-<span data-ttu-id="a50a8-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="a50a8-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="58f43-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="58f43-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="a50a8-104">**GoToPage**アクションを使用すると、アクティブ フォームの指定したページの先頭のコントロールにフォーカスを移動します。</span><span class="sxs-lookup"><span data-stu-id="a50a8-104">You can use the **GoToPage** action to move the focus in the active form to the first control on a specified page.</span></span> <span data-ttu-id="a50a8-105">このアクションは、関連のある情報を改ページで分割しているフォームを作成した場合に使用できます。</span><span class="sxs-lookup"><span data-stu-id="a50a8-105">You can use this action if you have created a form with page breaks that contains groups of related information.</span></span> <span data-ttu-id="a50a8-106">たとえば、社員フォームの最初のページに個人情報、2 ページ目に会社情報、3 ページ目に売上情報があるとします。</span><span class="sxs-lookup"><span data-stu-id="a50a8-106">For example, you might have an Employees form with personal information on one page, office information on another page, and sales information on a third page.</span></span> <span data-ttu-id="a50a8-107">**GoToPage**アクションを使用すると、目的のページに移動します。</span><span class="sxs-lookup"><span data-stu-id="a50a8-107">You can use the **GoToPage** action to move to the desired page.</span></span> <span data-ttu-id="a50a8-108">また、タブ コントロールを使用すると、1 つのフォーム上で複数のページに情報を表示することもできます。</span><span class="sxs-lookup"><span data-stu-id="a50a8-108">You can also present multiple pages of information on a single form by using tab controls.</span></span>
+<span data-ttu-id="58f43-104">**GoToPage**アクションを使用すると、アクティブ フォームの指定したページの先頭のコントロールにフォーカスを移動します。</span><span class="sxs-lookup"><span data-stu-id="58f43-104">You can use the **GoToPage** action to move the focus in the active form to the first control on a specified page.</span></span> <span data-ttu-id="58f43-105">このアクションは、関連のある情報を改ページで分割しているフォームを作成した場合に使用できます。</span><span class="sxs-lookup"><span data-stu-id="58f43-105">You can use this action if you have created a form with page breaks that contains groups of related information.</span></span> <span data-ttu-id="58f43-106">たとえば、社員フォームの最初のページに個人情報、2 ページ目に会社情報、3 ページ目に売上情報があるとします。</span><span class="sxs-lookup"><span data-stu-id="58f43-106">For example, you might have an Employees form with personal information on one page, office information on another page, and sales information on a third page.</span></span> <span data-ttu-id="58f43-107">**GoToPage**アクションを使用すると、目的のページに移動します。</span><span class="sxs-lookup"><span data-stu-id="58f43-107">You can use the **GoToPage** action to move to the desired page.</span></span> <span data-ttu-id="58f43-108">また、タブ コントロールを使用すると、1 つのフォーム上で複数のページに情報を表示することもできます。</span><span class="sxs-lookup"><span data-stu-id="58f43-108">You can also present multiple pages of information on a single form by using tab controls.</span></span>
 
-## <a name="setting"></a><span data-ttu-id="a50a8-109">設定値</span><span class="sxs-lookup"><span data-stu-id="a50a8-109">Setting</span></span>
+## <a name="setting"></a><span data-ttu-id="58f43-109">設定値</span><span class="sxs-lookup"><span data-stu-id="58f43-109">Setting</span></span>
 
-<span data-ttu-id="a50a8-110">**GoToPage**アクションには、次の引数があります。</span><span class="sxs-lookup"><span data-stu-id="a50a8-110">The **GoToPage** action has the following arguments.</span></span>
+<span data-ttu-id="58f43-110">**GoToPage**アクションには、次の引数があります。</span><span class="sxs-lookup"><span data-stu-id="58f43-110">The **GoToPage** action has the following arguments.</span></span>
 
 <table>
 <colgroup>
@@ -34,40 +35,40 @@ ms.locfileid: "26026225"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="a50a8-111">アクションの引数</span><span class="sxs-lookup"><span data-stu-id="a50a8-111">Action argument</span></span></p></th>
-<th><p><span data-ttu-id="a50a8-112">説明</span><span class="sxs-lookup"><span data-stu-id="a50a8-112">Description</span></span></p></th>
+<th><p><span data-ttu-id="58f43-111">アクションの引数</span><span class="sxs-lookup"><span data-stu-id="58f43-111">Action argument</span></span></p></th>
+<th><p><span data-ttu-id="58f43-112">説明</span><span class="sxs-lookup"><span data-stu-id="58f43-112">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="a50a8-113"><strong>ページ番号</strong></span><span class="sxs-lookup"><span data-stu-id="a50a8-113"><strong>Page Number</strong></span></span></p></td>
-<td><p><span data-ttu-id="a50a8-114">フォーカスを移動するページの数です。</span><span class="sxs-lookup"><span data-stu-id="a50a8-114">The number of the page to which you want to move the focus.</span></span> <span data-ttu-id="a50a8-115">マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションの<strong>ページ番号</strong>ボックスにページ番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="a50a8-115">Enter the page number in the <strong>Page Number</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder pane.</span></span> <span data-ttu-id="a50a8-116">この引数を指定しないと、フォーカスはカレント ページにとどまります。</span><span class="sxs-lookup"><span data-stu-id="a50a8-116">If you leave this argument blank, the focus stays on the current page.</span></span> <span data-ttu-id="a50a8-117">表示するページの部分を表示するのには、<strong>右</strong>と<strong>下</strong>の引数を使用できます。</span><span class="sxs-lookup"><span data-stu-id="a50a8-117">You can use the <strong>Right</strong> and <strong>Down</strong> arguments to display the part of the page you want to see.</span></span></p></td>
+<td><p><span data-ttu-id="58f43-113"><strong>ページ番号</strong></span><span class="sxs-lookup"><span data-stu-id="58f43-113"><strong>Page Number</strong></span></span></p></td>
+<td><p><span data-ttu-id="58f43-114">フォーカスを移動するページの数です。</span><span class="sxs-lookup"><span data-stu-id="58f43-114">The number of the page to which you want to move the focus.</span></span> <span data-ttu-id="58f43-115">マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションの<strong>ページ番号</strong>ボックスにページ番号を入力します。</span><span class="sxs-lookup"><span data-stu-id="58f43-115">Enter the page number in the <strong>Page Number</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder pane.</span></span> <span data-ttu-id="58f43-116">この引数を指定しないと、フォーカスはカレント ページにとどまります。</span><span class="sxs-lookup"><span data-stu-id="58f43-116">If you leave this argument blank, the focus stays on the current page.</span></span> <span data-ttu-id="58f43-117">表示するページの部分を表示するのには、<strong>右</strong>と<strong>下</strong>の引数を使用できます。</span><span class="sxs-lookup"><span data-stu-id="58f43-117">You can use the <strong>Right</strong> and <strong>Down</strong> arguments to display the part of the page you want to see.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="a50a8-118"><strong>Right</strong></span><span class="sxs-lookup"><span data-stu-id="a50a8-118"><strong>Right</strong></span></span></p></td>
-<td><p><span data-ttu-id="a50a8-119">ページで、スポットの水平方向の位置は、ウィンドウの左端に表示するウィンドウの左端から計測されます。</span><span class="sxs-lookup"><span data-stu-id="a50a8-119">The horizontal position of the spot on the page, measured from the left edge of its containing window, that is to appear at the left edge of the window.</span></span> <span data-ttu-id="a50a8-120"><strong></strong>引数を指定する場合に必要です。</span><span class="sxs-lookup"><span data-stu-id="a50a8-120">This is required if you specify a <strong>Down</strong> argument.</span></span></p></td>
+<td><p><span data-ttu-id="58f43-118"><strong>Right</strong></span><span class="sxs-lookup"><span data-stu-id="58f43-118"><strong>Right</strong></span></span></p></td>
+<td><p><span data-ttu-id="58f43-119">ページで、スポットの水平方向の位置は、ウィンドウの左端に表示するウィンドウの左端から計測されます。</span><span class="sxs-lookup"><span data-stu-id="58f43-119">The horizontal position of the spot on the page, measured from the left edge of its containing window, that is to appear at the left edge of the window.</span></span> <span data-ttu-id="58f43-120"><strong></strong>引数を指定する場合に必要です。</span><span class="sxs-lookup"><span data-stu-id="58f43-120">This is required if you specify a <strong>Down</strong> argument.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="a50a8-121"><strong>Down</strong></span><span class="sxs-lookup"><span data-stu-id="a50a8-121"><strong>Down</strong></span></span></p></td>
-<td><p><span data-ttu-id="a50a8-122">ページ上の場所の垂直方向の位置は、ウィンドウの上端に表示するウィンドウの上端から測定されます。</span><span class="sxs-lookup"><span data-stu-id="a50a8-122">The vertical position of the spot on the page, measured from the top edge of its containing window, that is to appear at the top edge of the window.</span></span> <span data-ttu-id="a50a8-123"><strong>右</strong>の引数を指定する場合に必要です。</span><span class="sxs-lookup"><span data-stu-id="a50a8-123">This is required if you specify a <strong>Right</strong> argument.</span></span></p></td>
+<td><p><span data-ttu-id="58f43-121"><strong>Down</strong></span><span class="sxs-lookup"><span data-stu-id="58f43-121"><strong>Down</strong></span></span></p></td>
+<td><p><span data-ttu-id="58f43-122">ページ上の場所の垂直方向の位置は、ウィンドウの上端に表示するウィンドウの上端から測定されます。</span><span class="sxs-lookup"><span data-stu-id="58f43-122">The vertical position of the spot on the page, measured from the top edge of its containing window, that is to appear at the top edge of the window.</span></span> <span data-ttu-id="58f43-123"><strong>右</strong>の引数を指定する場合に必要です。</span><span class="sxs-lookup"><span data-stu-id="58f43-123">This is required if you specify a <strong>Right</strong> argument.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 > [!NOTE]
-> <span data-ttu-id="a50a8-124">**右**と**下**の引数は、インチまたはセンチメートル、Windows コントロール パネルの [地域の設定によって測定されます。</span><span class="sxs-lookup"><span data-stu-id="a50a8-124">The **Right** and **Down** arguments are measured in inches or centimeters, depending on the regional settings in Windows Control Panel.</span></span>
+> <span data-ttu-id="58f43-124">**右**と**下**の引数は、インチまたはセンチメートル、Windows コントロール パネルの [地域の設定によって測定されます。</span><span class="sxs-lookup"><span data-stu-id="58f43-124">The **Right** and **Down** arguments are measured in inches or centimeters, depending on the regional settings in Windows Control Panel.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="a50a8-125">解説</span><span class="sxs-lookup"><span data-stu-id="a50a8-125">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="58f43-125">解説</span><span class="sxs-lookup"><span data-stu-id="58f43-125">Remarks</span></span>
 
-<span data-ttu-id="a50a8-126">ページで指定された最初のコントロール (フォームのタブ オーダーで定義されている) を選択するのには、このアクションを使用できます。</span><span class="sxs-lookup"><span data-stu-id="a50a8-126">You can use this action to select the first control (as defined by the form's tab order) on the specified page.</span></span> <span data-ttu-id="a50a8-127">**フォーカスを移動**を使用すると、フォーム上の特定のコントロールに移動できます。</span><span class="sxs-lookup"><span data-stu-id="a50a8-127">Use the **GoToControl** action to move to a particular control on the form.</span></span>
+<span data-ttu-id="58f43-126">ページで指定された最初のコントロール (フォームのタブ オーダーで定義されている) を選択するのには、このアクションを使用できます。</span><span class="sxs-lookup"><span data-stu-id="58f43-126">You can use this action to select the first control (as defined by the form's tab order) on the specified page.</span></span> <span data-ttu-id="58f43-127">**フォーカスを移動**を使用すると、フォーム上の特定のコントロールに移動できます。</span><span class="sxs-lookup"><span data-stu-id="58f43-127">Use the **GoToControl** action to move to a particular control on the form.</span></span>
 
-<span data-ttu-id="a50a8-128">Access ウィンドウよりも大きいページでは、フォームの**右**と**下**の引数を使用できます。</span><span class="sxs-lookup"><span data-stu-id="a50a8-128">You can use the **Right** and **Down** arguments for forms with pages larger than the Access window.</span></span> <span data-ttu-id="a50a8-129">" **Page Number/ページ番号** " 引数を使用して目的のページに移動し、次に " **Right/右** " 引数と " **Down/下** " 引数を使ってページの必要な部分を表示します。</span><span class="sxs-lookup"><span data-stu-id="a50a8-129">Use the **Page Number** argument to move to the desired page, and then use the **Right** and **Down** arguments to display the part of the page you want to see.</span></span> <span data-ttu-id="a50a8-130">このとき、ウィンドウの左上隅から、引数で指定した間隔を置いた位置に、ページの左上隅が表示されます。</span><span class="sxs-lookup"><span data-stu-id="a50a8-130">Access displays the part of the page whose upper-left corner is offset the specified distance from the upper-left corner of the page.</span></span>
+<span data-ttu-id="58f43-128">Access ウィンドウよりも大きいページでは、フォームの**右**と**下**の引数を使用できます。</span><span class="sxs-lookup"><span data-stu-id="58f43-128">You can use the **Right** and **Down** arguments for forms with pages larger than the Access window.</span></span> <span data-ttu-id="58f43-129">" **Page Number/ページ番号** " 引数を使用して目的のページに移動し、次に " **Right/右** " 引数と " **Down/下** " 引数を使ってページの必要な部分を表示します。</span><span class="sxs-lookup"><span data-stu-id="58f43-129">Use the **Page Number** argument to move to the desired page, and then use the **Right** and **Down** arguments to display the part of the page you want to see.</span></span> <span data-ttu-id="58f43-130">このとき、ウィンドウの左上隅から、引数で指定した間隔を置いた位置に、ページの左上隅が表示されます。</span><span class="sxs-lookup"><span data-stu-id="58f43-130">Access displays the part of the page whose upper-left corner is offset the specified distance from the upper-left corner of the page.</span></span>
 
-<span data-ttu-id="a50a8-131">**GoToPage**アクションは、次の場合に使用できません。</span><span class="sxs-lookup"><span data-stu-id="a50a8-131">You can't use the **GoToPage** action in the following cases:</span></span>
+<span data-ttu-id="58f43-131">**GoToPage**アクションは、次の場合に使用できません。</span><span class="sxs-lookup"><span data-stu-id="58f43-131">You can't use the **GoToPage** action in the following cases:</span></span>
 
-- <span data-ttu-id="a50a8-132">非表示のフォームのページにフォーカスを移動する場合</span><span class="sxs-lookup"><span data-stu-id="a50a8-132">To move the focus to a page on a hidden form.</span></span>
+- <span data-ttu-id="58f43-132">非表示のフォームのページにフォーカスを移動する場合</span><span class="sxs-lookup"><span data-stu-id="58f43-132">To move the focus to a page on a hidden form.</span></span>
 
-- <span data-ttu-id="a50a8-133">タブ コントロール内の別のページにフォーカスを移動する場合</span><span class="sxs-lookup"><span data-stu-id="a50a8-133">To move the focus from one page to another within the tab control.</span></span>
+- <span data-ttu-id="58f43-133">タブ コントロール内の別のページにフォーカスを移動する場合</span><span class="sxs-lookup"><span data-stu-id="58f43-133">To move the focus from one page to another within the tab control.</span></span>
 
-<span data-ttu-id="a50a8-134">Visual Basic for Applications (VBA) モジュールでは、 **GoToPage**アクションを実行するには、 **DoCmd**オブジェクトの**GoToPage**メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="a50a8-134">To run the **GoToPage** action in a Visual Basic for Applications (VBA) module, use the **GoToPage** method of the **DoCmd** object.</span></span>
+<span data-ttu-id="58f43-134">Visual Basic for Applications (VBA) モジュールでは、 **GoToPage**アクションを実行するには、 **DoCmd**オブジェクトの**GoToPage**メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="58f43-134">To run the **GoToPage** action in a Visual Basic for Applications (VBA) module, use the **GoToPage** method of the **DoCmd** object.</span></span>
 

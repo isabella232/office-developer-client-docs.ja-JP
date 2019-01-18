@@ -6,21 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250055(v=office.15)
 ms:contentKeyID: 48547914
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0465c14c8dc95becd7ddf7a28eae9db811d51e32
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: d9797d1cd48c397dedcd236d8762fa0dfcef7c93
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25886985"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28710182"
 ---
-# <a name="bof-eof-and-bookmark-properties-example-vc"></a><span data-ttu-id="6aaa4-102">BOF プロパティ、EOF プロパティ、Bookmark プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="6aaa4-102">BOF, EOF, and Bookmark properties example (VC++)</span></span>
+# <a name="bof-eof-and-bookmark-properties-example-vc"></a><span data-ttu-id="30281-102">BOF プロパティ、EOF プロパティ、Bookmark プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="30281-102">BOF, EOF, and Bookmark properties example (VC++)</span></span>
 
 
-<span data-ttu-id="6aaa4-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="6aaa4-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="30281-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="30281-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="6aaa4-p101">次の例の最初の関数は、[BOF](bof-eof-properties-ado.md) プロパティと [EOF](bof-eof-properties-ado.md) プロパティを使用して、ユーザーが [Recordset](recordset-object-ado.md) の先頭または最後のレコードを越えて移動しようとした場合にメッセージを表示します。また、 [Bookmark](bookmark-property-ado.md) プロパティを使用して、後からそのレコードに戻れるように、ユーザーが **Recordset** のレコードにフラグを立てることができるようにしています。</span><span class="sxs-lookup"><span data-stu-id="6aaa4-p101">The first function in this example uses the [BOF](bof-eof-properties-ado.md) and [EOF](bof-eof-properties-ado.md) properties to display a message if a user tries to move past the first or last record of a [Recordset](recordset-object-ado.md). It uses the [Bookmark](bookmark-property-ado.md) property to let the user flag a record in a **Recordset** and return to it later.</span></span>
+<span data-ttu-id="30281-p101">次の例の最初の関数は、[BOF](bof-eof-properties-ado.md) プロパティと [EOF](bof-eof-properties-ado.md) プロパティを使用して、ユーザーが [Recordset](recordset-object-ado.md) の先頭または最後のレコードを越えて移動しようとした場合にメッセージを表示します。また、 [Bookmark](bookmark-property-ado.md) プロパティを使用して、後からそのレコードに戻れるように、ユーザーが **Recordset** のレコードにフラグを立てることができるようにしています。</span><span class="sxs-lookup"><span data-stu-id="30281-p101">The first function in this example uses the [BOF](bof-eof-properties-ado.md) and [EOF](bof-eof-properties-ado.md) properties to display a message if a user tries to move past the first or last record of a [Recordset](recordset-object-ado.md). It uses the [Bookmark](bookmark-property-ado.md) property to let the user flag a record in a **Recordset** and return to it later.</span></span>
 
-<span data-ttu-id="6aaa4-106">2 つ目の関数は、Bookmark プロパティを使用して **Recordset** の 1 つおきのレコードの **Bookmark** を配列に格納してから、その配列を使用して Recordset にフィルターをかけます。</span><span class="sxs-lookup"><span data-stu-id="6aaa4-106">The second function uses the Bookmark property to place the **Bookmark** of every other record from a **Recordset** into an array, and then filters the Recordset using the array.</span></span>
+<span data-ttu-id="30281-106">2 つ目の関数は、Bookmark プロパティを使用して **Recordset** の 1 つおきのレコードの **Bookmark** を配列に格納してから、その配列を使用して Recordset にフィルターをかけます。</span><span class="sxs-lookup"><span data-stu-id="30281-106">The second function uses the Bookmark property to place the **Bookmark** of every other record from a **Recordset** into an array, and then filters the Recordset using the array.</span></span>
 
 ```cpp 
  
@@ -355,7 +356,7 @@ void PrintProviderError(_ConnectionPtr pConnection)
 // EndBOFCpp 
 ```
 
-<span data-ttu-id="6aaa4-107">**BofEofBookmark.h**</span><span class="sxs-lookup"><span data-stu-id="6aaa4-107">**BofEofBookmark.h**</span></span>
+<span data-ttu-id="30281-107">**BofEofBookmark.h**</span><span class="sxs-lookup"><span data-stu-id="30281-107">**BofEofBookmark.h**</span></span>
 
 ```cpp 
  

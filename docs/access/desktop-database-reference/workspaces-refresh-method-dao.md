@@ -10,27 +10,28 @@ f1_keywords:
 - dao360.chm1052977
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: a0659159d9d4ae1c04f471550c059a6517494850
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: c3618a6efae3a77e6b1fb2e22e27025450934542
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923465"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28712170"
 ---
-# <a name="workspacesrefresh-method-dao"></a><span data-ttu-id="c9e09-102">Workspaces.Refresh メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="c9e09-102">Workspaces.Refresh method (DAO)</span></span>
+# <a name="workspacesrefresh-method-dao"></a><span data-ttu-id="63ef3-102">Workspaces.Refresh メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="63ef3-102">Workspaces.Refresh method (DAO)</span></span>
 
 
-<span data-ttu-id="c9e09-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c9e09-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="63ef3-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="63ef3-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c9e09-104">このオブジェクトではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c9e09-104">Not supported for this object.</span></span>
+<span data-ttu-id="63ef3-104">このオブジェクトではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="63ef3-104">Not supported for this object.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="c9e09-105">構文</span><span class="sxs-lookup"><span data-stu-id="c9e09-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="63ef3-105">構文</span><span class="sxs-lookup"><span data-stu-id="63ef3-105">Syntax</span></span>
 
-<span data-ttu-id="c9e09-106">*式*です。更新</span><span class="sxs-lookup"><span data-stu-id="c9e09-106">*expression* .Refresh</span></span>
+<span data-ttu-id="63ef3-106">*式*です。更新</span><span class="sxs-lookup"><span data-stu-id="63ef3-106">*expression* .Refresh</span></span>
 
-<span data-ttu-id="c9e09-107">\*式\***ワークスペース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="c9e09-107">*expression* A variable that represents a **Workspaces** object.</span></span>
+<span data-ttu-id="63ef3-107">\*式\***ワークスペース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="63ef3-107">*expression* A variable that represents a **Workspaces** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="c9e09-108">注釈</span><span class="sxs-lookup"><span data-stu-id="c9e09-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="63ef3-108">注釈</span><span class="sxs-lookup"><span data-stu-id="63ef3-108">Remarks</span></span>
 
-<span data-ttu-id="c9e09-109">**Refresh** メソッドは、持続的でないコレクション ( **Connection** オブジェクトの **Connections**、 **Databases**、 **Recordsets**、 **Workspaces**、 **QueryDefs** の各コレクションなど) では使用できません。</span><span class="sxs-lookup"><span data-stu-id="c9e09-109">You can't use the **Refresh** method with collections that aren't persistent, such as **Connections**, **Databases**, **Recordsets**, **Workspaces**, or the **QueryDefs** collection of a **Connection** object.</span></span>
+<span data-ttu-id="63ef3-109">**Refresh** メソッドは、持続的でないコレクション ( **Connection** オブジェクトの **Connections**、 **Databases**、 **Recordsets**、 **Workspaces**、 **QueryDefs** の各コレクションなど) では使用できません。</span><span class="sxs-lookup"><span data-stu-id="63ef3-109">You can't use the **Refresh** method with collections that aren't persistent, such as **Connections**, **Databases**, **Recordsets**, **Workspaces**, or the **QueryDefs** collection of a **Connection** object.</span></span>
 

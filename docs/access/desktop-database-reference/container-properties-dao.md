@@ -6,18 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn161089(v=office.15)
 ms:contentKeyID: 52073051
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 861faa1e2360b945d3476408f7e352204ed7ee7a
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: a9edf150eb411950c605224d9370f7266f13542c
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944509"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28709846"
 ---
-# <a name="container-properties-dao"></a><span data-ttu-id="7149d-102">コンテナーのプロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="7149d-102">Container properties (DAO)</span></span>
+# <a name="container-properties-dao"></a><span data-ttu-id="f1738-102">コンテナーのプロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="f1738-102">Container properties (DAO)</span></span>
 
-<span data-ttu-id="7149d-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="7149d-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="f1738-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f1738-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="7149d-104">Container.Documents プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="7149d-104">Container.Documents property (DAO)</span></span>](container-documents-property-dao.md)
-- [<span data-ttu-id="7149d-105">Container.Name プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="7149d-105">Container.Name property (DAO)</span></span>](container-name-property-dao.md)
-- [<span data-ttu-id="7149d-106">Container.Properties プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="7149d-106">Container.Properties property (DAO)</span></span>](container-properties-property-dao.md)
+- [<span data-ttu-id="f1738-104">Container.Documents プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="f1738-104">Container.Documents property (DAO)</span></span>](container-documents-property-dao.md)
+- [<span data-ttu-id="f1738-105">Container.Name プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="f1738-105">Container.Name property (DAO)</span></span>](container-name-property-dao.md)
+- [<span data-ttu-id="f1738-106">Container.Properties プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="f1738-106">Container.Properties property (DAO)</span></span>](container-properties-property-dao.md)
 

@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249812(v=office.15)
 ms:contentKeyID: 48547035
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 68690d89e6b747c38647a3c8b49318aa577838fd
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 6347c64c9622abd433136d19ed352e81407fd8be
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25878748"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28707634"
 ---
-# <a name="attributes-and-name-properties-example-vj"></a><span data-ttu-id="df00b-102">Attributes プロパティと Name プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="df00b-102">Attributes and Name properties example (VJ++)</span></span>
+# <a name="attributes-and-name-properties-example-vj"></a><span data-ttu-id="679e1-102">Attributes プロパティと Name プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="679e1-102">Attributes and Name properties example (VJ++)</span></span>
 
 
-<span data-ttu-id="df00b-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="df00b-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="679e1-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="679e1-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="df00b-p101">次の例では、[Connection](attributes-property-ado.md)、[Field](connection-object-ado.md)、[Property](field-object-ado.md) の各オブジェクトの [Attributes](property-object-ado.md) プロパティの値を表示します。 [Name](name-property-ado.md) プロパティを使用して、 **Field** および **Property** の各オブジェクトの名前を表示しています。</span><span class="sxs-lookup"><span data-stu-id="df00b-p101">This example displays the value of the [Attributes](attributes-property-ado.md) property for [Connection](connection-object-ado.md), [Field](field-object-ado.md), and [Property](property-object-ado.md) objects. It uses the [Name](name-property-ado.md) property to display the name of each **Field** and **Property** object.</span></span>
+<span data-ttu-id="679e1-p101">次の例では、[Connection](attributes-property-ado.md)、[Field](connection-object-ado.md)、[Property](field-object-ado.md) の各オブジェクトの [Attributes](property-object-ado.md) プロパティの値を表示します。 [Name](name-property-ado.md) プロパティを使用して、 **Field** および **Property** の各オブジェクトの名前を表示しています。</span><span class="sxs-lookup"><span data-stu-id="679e1-p101">This example displays the value of the [Attributes](attributes-property-ado.md) property for [Connection](connection-object-ado.md), [Field](field-object-ado.md), and [Property](property-object-ado.md) objects. It uses the [Name](name-property-ado.md) property to display the name of each **Field** and **Property** object.</span></span>
 
 ```java 
  
