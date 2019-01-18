@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192517(v=office.15)
 ms:contentKeyID: 48544228
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e62125ee61598d6be125f9edb01f2aa4531043b9
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 25eae70d88307331c44983c4e7cbbcce3fe9d309
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026072"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28707907"
 ---
 # <a name="parameter-members-dao"></a>パラメーターのメンバー (DAO)
 
@@ -19,7 +20,7 @@ ms.locfileid: "26026072"
 
 Parameter オブジェクトは、クエリに指定する値を表します。パラメーターは、パラメーター クエリを基に作成した QueryDef オブジェクトに関連付けられています。
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 <table>
 <colgroup>
@@ -47,7 +48,7 @@ Parameter オブジェクトは、クエリに指定する値を表します。�
 <td><p>指定したオブジェクトの <strong><a href="properties-collection-dao.md">Properties</a></strong> コレクションを取得します。値の取得のみ可能です。  </p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="parameter-type-property-dao.md">Type</a></strong></p></td>
+<td><p><strong><a href="parameter-type-property-dao.md">型</a></strong></p></td>
 <td><p>オブジェクトの操作の種類またはデータ型を示す値を設定または取得します。値の取得および設定が可能です。整数型 ( <strong>Integer</strong> ) の値を使用します。</p></td>
 </tr>
 <tr class="odd">

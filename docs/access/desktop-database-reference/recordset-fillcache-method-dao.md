@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834751(v=office.15)
 ms:contentKeyID: 48547861
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7fc8843e2d36179ec8a0168b0c44c6cdf3e866c4
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 4ef268a821d65732e0a54776872387f62c67e999
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998498"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28706591"
 ---
 # <a name="recordsetfillcache-method-dao"></a>Recordset.FillCache メソッド (DAO)
 
@@ -46,13 +47,13 @@ Microsoft Access データベース エンジンに接続している ODBC デ�
 <tr class="odd">
 <td><p><em>Rows</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p><strong>Variant (バリアント型)</strong></p></td>
 <td><p>キャッシュに格納する行数を表す、サブタイプが整数型 (<strong>Integer</strong>) であるバリアント型 (<strong>Variant</strong>) の値。この引数を省略した場合、<strong><a href="recordset-cachesize-property-dao.md">CacheSize</a></strong> プロパティの設定値によって値が指定されます。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>StartBookmark</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p><strong>Variant (バリアント型)</strong></p></td>
 <td><p>ブックマークを表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。このブックマークで示されたレコードから、キャッシュへの読み込みが開始されます。この引数を省略した場合、<strong><a href="recordset-cachestart-property-dao.md">CacheStart</a></strong> プロパティによって示されたレコードから、キャッシュへの読み込みが開始されます。</p></td>
 </tr>
 </tbody>

@@ -10,12 +10,13 @@ f1_keywords:
 - vbaac10.chm188079
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: a6166f8da8597e5b0672ba0d5fdfdd3745cfd159
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: cff57a185d226328792bef79072dfc46c6134f98
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927768"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28707242"
 ---
 # <a name="openreport-macro-action"></a>OpenReport マクロ アクション
 
@@ -44,7 +45,7 @@ ms.locfileid: "25927768"
 <td><p>開くレポートの名前を指定します。[ <strong>マクロ ビルダー</strong>] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>レポート名</strong>] ボックスには、カレント データベース内のビューがすべて表示されます。この引数は省略できません。ライブラリ データベースで OpenReport アクションが定義されているマクロを実行すると、この名前のレポートが、最初にライブラリ データベースで検索され、次にカレント データベースで検索されます。  </p></td>
 </tr>
 <tr class="even">
-<td><p>表示</p></td>
+<td><p>View</p></td>
 <td><p>レポートを開くときのビューを指定します。[ <strong>ビュー</strong>] ボックスで [ <strong>印刷</strong>] (レポートをすぐに印刷する場合)、[ <strong>デザイン</strong>]、または [ <strong>印刷プレビュー</strong>] をクリックします。既定値は [ <strong>印刷</strong>] です。  </p></td>
 </tr>
 <tr class="odd">
@@ -75,7 +76,7 @@ ms.locfileid: "25927768"
 </table>
 
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 " **View/ビュー** " 引数で [ **印刷**] を選択すると、現在のプリンター設定を使用してすぐにレポートが印刷されますが、[ **印刷**] ダイアログ ボックスは表示されません。また、" **OpenReport/レポートを開く** " アクションを使用すると、レポートを開いて設定した後に、 PrintOut アクションを使用してレポートを印刷することもできます。たとえば、印刷前に、レポートを修正したり、" **PrintOut/印刷** " アクションを使用してプリンター設定を変更することができます。
 

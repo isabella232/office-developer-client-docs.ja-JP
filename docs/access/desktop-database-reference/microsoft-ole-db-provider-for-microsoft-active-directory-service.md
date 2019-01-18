@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249647(v=office.15)
 ms:contentKeyID: 48546385
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c1555883ef8305225d6ddd1969d98de082288a6b
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 23e1cab32fee6103a046219a7cda8c90f02d9f79
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25887538"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28712037"
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-active-directory-service"></a>Microsoft OLE DB Provider for Microsoft Active Directory Service
 
@@ -92,11 +93,11 @@ ADSDSOObject
 <td><p>検索を開始する <strong>ADsPath</strong> オブジェクト (つまり、検索のルート) を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Filter</em></p></td>
+<td><p><em>フィルター</em></p></td>
 <td><p>RFC 1960 形式の検索フィルターを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>Attributes</em></p></td>
+<td><p><em>属性</em></p></td>
 <td><p>返される属性をコンマ区切りの一覧で示します。</p></td>
 </tr>
 <tr class="even">
@@ -187,7 +188,7 @@ objectClass='user' AND objectCategory='Person'"
 <td><p>値の取得のみ</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="filter-property-ado.md">Filter</a></p></td>
+<td><p><a href="filter-property-ado.md">フィルター</a></p></td>
 <td><p>値の取得および設定</p></td>
 </tr>
 <tr class="even">
@@ -223,7 +224,7 @@ objectClass='user' AND objectCategory='Person'"
 <td><p>値の取得のみ</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="status-property-ado-recordset.md">Status</a></p></td>
+<td><p><a href="status-property-ado-recordset.md">状態</a></p></td>
 <td><p>値の取得のみ</p></td>
 </tr>
 </tbody>

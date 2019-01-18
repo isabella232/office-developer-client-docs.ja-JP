@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834366(v=office.15)
 ms:contentKeyID: 48547703
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 159f476b592a8c944df2dc4570d84377c89b5043
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: d203d1f1888539a4907da246e20ed711e61ee51f
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929232"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28708425"
 ---
 # <a name="recordset2cancel-method-dao"></a>Recordset2.Cancel メソッド (DAO)
 
@@ -24,7 +25,7 @@ ms.locfileid: "25929232"
 
 *式***Recordset2**オブジェクトを返すオブジェクト式を指定します。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **Cancel**メソッドを使用して、**実行**または**されます**メソッドの非同期呼び出しの実行を中止する (つまり、メソッドが dbRunAsync オプションを指定して呼び出されました)。 終了するメソッドで dbRunAsync が使用できない場合、**キャンセル**実行時エラー戻ります。
 

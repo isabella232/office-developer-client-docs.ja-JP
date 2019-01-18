@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1053357
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: dc32087ad924a81eea5290d84ffb63dc4ad5e1ff
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 411948f3c0ac4d6c353cd2722136dffb6a25fb17
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25999051"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28709888"
 ---
 # <a name="databasesynchronize-method-dao"></a>Database.Synchronize メソッド (DAO)
 
@@ -51,13 +52,13 @@ ms.locfileid: "25999051"
 <tr class="odd">
 <td><p><em>DbPathName</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>文字列型 (String)</strong></p></td>
+<td><p><strong>String</strong></p></td>
 <td><p>データベースを同期させる対象のレプリカへのパスです。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>ExchangeType</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p><strong>Variant (バリアント型)</strong></p></td>
 <td><p>2 つのデータベース間で変更を同期させる方向を示す <strong><a href="synchronizetypeenum-enumeration-dao.md">SynchronizeTypeEnum</a></strong> クラスの定数です。</p></td>
 </tr>
 </tbody>

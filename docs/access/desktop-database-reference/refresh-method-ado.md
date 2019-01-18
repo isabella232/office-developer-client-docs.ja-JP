@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250227(v=office.15)
 ms:contentKeyID: 48548631
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d7548a31518f225c15dbf0e9a6de2b82c66c72af
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: bd7c47e7c3e41a7b42571043cfafc9e4e909a9f9
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25950140"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28710588"
 ---
 # <a name="refresh-method-ado"></a>Refresh メソッド (ADO)
 
@@ -42,7 +43,7 @@ ms.locfileid: "25950140"
 
 **Fields** コレクションに対して **Refresh** メソッドを使用しても、目に見える効果はありません。基になっているデータベース構造から変更を取得するには、 [Requery](requery-method-ado.md) メソッドを使用するか、または [Recordset](recordset-object-ado.md) オブジェクトがブックマークをサポートしない場合は [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) メソッドを使用する必要があります。
 
-### <a name="properties"></a>プロパティ
+### <a name="properties"></a>Properties
 
 一部のオブジェクトの **Properties** コレクションに対して **Refresh** メソッドを使用すると、プロバイダーが公開するダイナミック プロパティでコレクションが作成されます。このようなプロパティは、ADO がサポートする組み込みプロパティにはない、プロバイダーに固有の機能に関する情報を提供します。
 

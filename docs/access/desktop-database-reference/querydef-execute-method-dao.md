@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052884
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 55a3f8a345ffa6669ef721395be4cb1286f2696b
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 7ef7f61ef632617b8d64a3fd9c34e5887e50065c
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997393"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28709538"
 ---
 # <a name="querydefexecute-method-dao"></a>QueryDef.Execute メソッド (DAO)
 
@@ -50,7 +51,7 @@ ms.locfileid: "25997393"
 <tr class="odd">
 <td><p><em>Options</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p><strong>Variant</strong></p></td>
 <td><p></p></td>
 </tr>
 </tbody>

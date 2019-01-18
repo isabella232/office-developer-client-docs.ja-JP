@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835325(v=office.15)
 ms:contentKeyID: 48548082
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 61d45f73aa4cb777875fa2ed25e73dd00d873138
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 08120f4ebb6b2d9989051171a0c71b6d9fcf6e5c
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997582"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28706507"
 ---
 # <a name="recordset2openrecordset-method-dao"></a>Recordset2.OpenRecordset メソッド (DAO)
 
@@ -46,27 +47,27 @@ ms.locfileid: "25997582"
 <tr class="odd">
 <td><p><em>Name</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>文字列型 (String)</strong></p></td>
+<td><p><strong>String</strong></p></td>
 <td><p>新しい <strong>Recordset</strong> のレコードの取得元です。テーブル名、クエリ名、またはレコードを返す SQL ステートメントを指定できます。Microsoft Access データベース エンジンのデータベースに含まれるテーブル タイプの <strong>Recordset</strong> オブジェクトの場合は、テーブル名でのみ指定できます。  </p></td>
 </tr>
 <tr class="even">
 <td><p><em>Type</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p><strong>Variant</strong></p></td>
 <td><p>開く <a href="recordsettypeenum-enumeration-dao.md">Recordset</a> の型を示す <strong><strong>RecordsetTypeEnum</strong></strong> 定数。</p><p><strong>注</strong>:<STRONG><STRONG>レコード セット</STRONG>を開くには、Microsoft Access ワークスペースで、種類を指定しない場合は、作成、テーブル タイプの<STRONG>レコード セット</STRONG>可能な場合</STRONG>です。 <STRONG>リンク テーブルまたはクエリを指定する場合、ダイナセット タイプの<STRONG>レコード セット</STRONG>が作成します。</STRONG></p>
 </td>
 </tr>
 <tr class="odd">
 <td><p><em>Options</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p><strong>Variant</strong></p></td>
 <td><p>新しい <a href="recordsetoptionenum-enumeration-dao.md">Recordset</a> の特性を指定する <strong><strong>RecordsetOptionEnum</strong></strong> 定数の組み合わせ。</p><p><strong>注</strong>: 定数を<STRONG>指定できます</STRONG>し、<STRONG>組み合わせて</STRONG>が、相互に排他的で両方を使用して、エラーが発生します。 Lockedits 引数を指定するオプションは、定数<STRONG>dbReadOnly</STRONG>を使用する場合と、エラーが発生します。</p>
 </td>
 </tr>
 <tr class="even">
 <td><p><em>LockEdit</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p><strong>Variant</strong></p></td>
 <td><p><a href="locktypeenum-enumeration-dao.md">Recordset</a> のロックを決定する <strong><strong>LockTypeEnum</strong></strong> 定数。</p><p><strong>注</strong>: オプションの引数と、引数 lockedits の片方だけに<STRONG>dbReadOnly</STRONG>を使用することができます。 で両方の引数を使用する場合は、実行時エラーが発生します。</p>
 </td>
 </tr>

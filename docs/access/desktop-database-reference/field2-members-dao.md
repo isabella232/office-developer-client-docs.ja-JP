@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff191913(v=office.15)
 ms:contentKeyID: 48543839
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f7d368077e94a24dfd7b3d20dcdaafb0ee7d3c84
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: cf3deac487f1e114bea2a69d5423a210a51a5944
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937793"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28707144"
 ---
 # <a name="field2-members-dao"></a>Field2 メンバー (DAO)
 
@@ -101,8 +102,8 @@ Field2 オブジェクトは、共通のデータ型およびプロパティの�
 <td><p><strong>Field2</strong> オブジェクトの既定値を設定または取得します。 <a href="fields-collection-dao.md"><strong>Fields</strong></a> コレクションに追加されていない <strong>Field2</strong> オブジェクトの場合、このプロパティは値の取得および設定が可能です (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="field2-expression-property-dao.md">Expression</a></strong></p></td>
-<td><p>値の取得および設定が可能です。</p></td>
+<td><p><strong><a href="field2-expression-property-dao.md">式</a></strong></p></td>
+<td><p>取得/設定が可能な値です</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="field2-fieldsize-property-dao.md">フィールド サイズします。</a></strong></p></td>

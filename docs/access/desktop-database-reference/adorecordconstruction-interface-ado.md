@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249175(v=office.15)
 ms:contentKeyID: 48544387
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b719c6314fb2c68a0a343a800da35ee944654df3
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 1a53eb107bab0d31606dc161b9f9c910894c5bc6
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25924590"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28712009"
 ---
 # <a name="adorecordconstruction-interface-ado"></a>ADORecordConstruction インタ フェース (ADO)
 
@@ -36,8 +37,8 @@ ms.locfileid: "25924590"
 この ADO<strong>レコード</strong>オブジェクトの OLE DB<strong>の行</strong>オブジェクトのコンテナーを設定します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="row-property-ado.md">Row</a></p></td>
-<td><p>読み取り/書き込み。<br />
+<td><p><a href="row-property-ado.md">行</a></p></td>
+<td><p>読み取り/書き込み可能。<br />
 OLE DB<strong>の行</strong>のオブジェクトから/この ADO<strong>レコード</strong>オブジェクトを取得または設定します。</p></td>
 </tr>
 </tbody>
@@ -52,7 +53,7 @@ OLE DB<strong>の行</strong>のオブジェクトから/この ADO<strong>レ�
 
 なし
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 OLE DB**の行**オブジェクト (pRow)、ADO**レコード**オブジェクトの () の構築、ADO**レコード**オブジェクト (adoR) の金額を次の 3 つの基本的な操作を指定します。
 

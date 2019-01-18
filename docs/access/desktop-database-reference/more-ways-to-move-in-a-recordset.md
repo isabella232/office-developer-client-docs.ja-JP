@@ -1,19 +1,20 @@
 ---
-title: レコード セット内を移動する方法
+title: レコードセットでのその他の移動方法
 TOCTitle: More ways to move in a Recordset
 ms:assetid: ae49b20e-0050-c44b-67e9-7e39de5098c4
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249822(v=office.15)
 ms:contentKeyID: 48547067
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8524f34da92d1d38c6ecedddf3877dd9e4361ade
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 2d10a493aac39934a047c6fa311233fd6c9fac4e
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945048"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28710574"
 ---
-# <a name="more-ways-to-move-in-a-recordset"></a>レコード セット内を移動する方法
+# <a name="more-ways-to-move-in-a-recordset"></a>レコードセットでのその他の移動方法
 
 **適用されます**Access 2013、Office 2013。
 

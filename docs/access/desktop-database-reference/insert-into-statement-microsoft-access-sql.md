@@ -10,12 +10,13 @@ f1_keywords:
 - jetsql40.chm5277575
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c20701e9863d72a9308679965425b74c9f9818ac
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 4fee5e9e8878274f2c20dd83a3dbedaf2903ca62
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937639"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28710805"
 ---
 # <a name="insert-into-statement-microsoft-access-sql"></a>INSERT INTO ステートメント (Microsoft Access SQL)
 
@@ -68,7 +69,7 @@ INSERT INTO ステートメントには、次の指定項目があります。
 <td><p>挿入するレコードのある 1 つ以上のテーブルの名前。単一のテーブル名、保存されたクエリ名、または <a href="inner-join-operation-microsoft-access-sql.md">INNER JOIN</a>、<a href="left-join-right-join-operations-microsoft-access-sql.md">LEFT JOIN</a>、<a href="left-join-right-join-operations-microsoft-access-sql.md">RIGHT JOIN</a> のいずれかの操作の結果としてできる複合テーブルを指定します。  </p></td>
 </tr>
 <tr class="even">
-<td><p><em>value1</em>、<em>value2</em></p></td>
+<td><p><em>value1</em>, <em>value2</em></p></td>
 <td><p>新しいレコードの特定のフィールドに挿入する値。それぞれの値は、記述順にフィールドに挿入されます。つまり、引数 <em>value1</em> は新しいレコードの引数 <em>field1</em> に、引数 <em>value2</em> は引数 <em>value2</em> に挿入されます。値と値の間はコンマで区切り、テキスト フィールドの値は単一引用符 (') で囲みます。</p></td>
 </tr>
 </tbody>

@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249223(v=office.15)
 ms:contentKeyID: 48544617
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cf497c64767a872a2bfd1e07754fcc8a5afa9dd9
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 00bbbce065cd27819687667a2856de951ed9a328
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25881833"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28707060"
 ---
 # <a name="visual-basic-for-applications-functions"></a>Visual Basic for Applications の関数
 
@@ -65,8 +66,8 @@ ms.locfileid: "25881833"
 <tr class="odd">
 <td><p>DateDiff</p></td>
 <td><p>DatePart</p></td>
-<td><p>Dateserial 関数</p></td>
-<td><p>Datevalue 関数</p></td>
+<td><p>DateSerial</p></td>
+<td><p>DateValue</p></td>
 <td><p>Day</p></td>
 <td><p>DDB</p></td>
 </tr>
@@ -90,7 +91,7 @@ ms.locfileid: "25881833"
 <td><p>Int</p></td>
 <td><p>IPmt</p></td>
 <td><p>IRR</p></td>
-<td><p>Isdate 関数</p></td>
+<td><p>IsDate</p></td>
 <td><p>IsEmpty</p></td>
 <td><p>IsError</p></td>
 </tr>

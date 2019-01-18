@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194740(v=office.15)
 ms:contentKeyID: 48545150
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 128a938af23b6aba1f69045bcbcdba202bd416ef
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 7f8531d2135dd19e672c1f9533afc4ef6494b904
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928888"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28709146"
 ---
 # <a name="complextype-members-dao"></a>複合型のメンバー (DAO)
 
@@ -20,7 +21,7 @@ ms.locfileid: "25928888"
 
 複数値を持つフィールドを表します。
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 <table>
 <colgroup>

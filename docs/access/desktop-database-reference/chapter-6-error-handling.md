@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249420(v=office.15)
 ms:contentKeyID: 48545440
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4c6e4f4e4218992b89a3370375bb322adfcdd57c
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 14d3dc4b291d96a47e0fb67c0e7d837463cd4bf2
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937184"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28708873"
 ---
 # <a name="chapter-6-error-handling"></a>第 6 章: エラー処理
 
@@ -38,9 +39,9 @@ ADO では、次のようなさまざまな方法でエラーが通知されま�
 以降のセクションでは、これらの各通知方法について詳細に説明します。
 
 - [ADO エラー](ado-errors.md)
-- [ADO エラーの参照](ado-error-reference.md)
+- [ADO エラー リファレンス](ado-error-reference.md)
 - [プロバイダー エラー](provider-errors.md)
 - [フィールドに関連するエラー情報](field-related-error-information.md)
-- [レコード セットに関連するエラー情報](recordset-related-error-information.md)
-- [エラーを予測します。](anticipating-errors.md)
+- [レコードセットに関連するエラー情報](recordset-related-error-information.md)
+- [エラーの予測](anticipating-errors.md)
 - [他の言語 (ADO) でのエラーを処理](handling-errors-in-other-languages.md)

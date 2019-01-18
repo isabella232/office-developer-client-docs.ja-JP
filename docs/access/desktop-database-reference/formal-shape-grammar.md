@@ -1,19 +1,20 @@
 ---
-title: 図形の正式な文法
+title: 正式な Shape 文法
 TOCTitle: Formal shape grammar
 ms:assetid: a3220569-8804-3dc3-7f9f-b4f8cdab1316
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249752(v=office.15)
 ms:contentKeyID: 48546774
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0de4f2eca0b5dd607cb9d93cc7e90f4af0ba8d89
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: d30ff9146146bb0457a5aa383b2b720a4fdaeb78
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945538"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28708047"
 ---
-# <a name="formal-shape-grammar"></a>図形の正式な文法
+# <a name="formal-shape-grammar"></a>正式な Shape 文法
 
 **適用されます**Access 2013、Office 2013。
 
@@ -98,7 +99,7 @@ ms.locfileid: "25945538"
 </tr>
 <tr class="odd">
 <td><p>&lt;パラメーター渡し&gt;</p></td>
-<td><p>&lt;番号&gt;</p></td>
+<td><p>&lt;number&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>&lt;フィールド リスト&gt;</p></td>
@@ -146,7 +147,7 @@ ms.locfileid: "25945538"
 <td><p>alpha [アルファ | 数字 | _ | # |: |...]</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;番号&gt;</p></td>
+<td><p>&lt;number&gt;</p></td>
 <td><p>数字 [桁]</p></td>
 </tr>
 <tr class="even">
@@ -158,11 +159,11 @@ ms.locfileid: "25945538"
 <td><p>OLE DB または ADO のデータ型</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;文字列&gt;</p></td>
+<td><p>&lt;string&gt;</p></td>
 <td><p>unicode 文字 [unicode 文字です..]。</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;式&gt;</p></td>
+<td><p>&lt;expression&gt;</p></td>
 <td><p>同じ行でオペランドが他の非 CALC 列の Visual Basic for Application 式</p></td>
 </tr>
 </tbody>

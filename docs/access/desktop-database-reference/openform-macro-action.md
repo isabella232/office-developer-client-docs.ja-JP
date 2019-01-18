@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff823095(v=office.15)
 ms:contentKeyID: 48547604
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c1813a80c43eb77f8fb90442ecd6e0336b636191
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: cf89b61a65c11f09d5a07e52caeee5ad416c118a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998974"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28707627"
 ---
 # <a name="openform-macro-action"></a>OpenForm マクロ アクション
 
@@ -125,7 +126,7 @@ ms.locfileid: "25998974"
 <td><p>[製品] フォームを開きます。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>値の代入</strong></p></td>
+<td><p><strong>SetValue</strong></p></td>
 <td><p><strong>Item/アイテム</strong>: [フォーム]![製品]![SupplierID] <strong>Expression/式</strong>: SupplierID</p></td>
 <td><p>[仕入先コード] コントロールを [仕入先] フォームの現在の仕入先に設定します。</p></td>
 </tr>

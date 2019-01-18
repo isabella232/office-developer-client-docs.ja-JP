@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1101191
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 14021d3f16987b40af24491ff72abdfb95052045
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 78b08575b1fde304dc47b8219c1143cda265baf8
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998764"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28706983"
 ---
 # <a name="field2savetofile-method-dao"></a>Field2.SaveToFile メソッド (DAO)
 
@@ -52,9 +53,9 @@ ms.locfileid: "25998764"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Filename</em></p></td>
+<td><p><em>FileName</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>文字列型 (String)</strong></p></td>
+<td><p><strong>String</strong></p></td>
 <td><p>添付ファイルを保存するファイルの完全修飾パスです。</p></td>
 </tr>
 </tbody>

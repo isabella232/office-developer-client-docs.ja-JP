@@ -10,12 +10,13 @@ f1_keywords:
 - vbaac10.chm7496
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4c115a5f7c2d13e918e891e80997a7327885669d
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 086993095daef3ff4ad87aed9f572a09124a9d31
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026275"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28709972"
 ---
 # <a name="findrecord-macro-action"></a>FindRecord マクロ アクション
 
@@ -40,7 +41,7 @@ ms.locfileid: "26026275"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Find What/検索する文字列</strong></p></td>
+<td><p><strong>検索する文字列</strong></p></td>
 <td><p>レコードを検索するデータを指定します。 テキスト、数値、または、等号 (=) に続く式を入力日付を入力してください (<strong>=</strong>)、[マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションで<strong>[検索する文字列</strong>ボックスします。 ワイルドカード文字を使用することができます。 この引数は省略できません。</p></td>
 </tr>
 <tr class="even">
