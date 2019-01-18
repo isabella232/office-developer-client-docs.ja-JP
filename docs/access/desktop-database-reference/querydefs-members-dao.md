@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834754(v=office.15)
 ms:contentKeyID: 48547864
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5e00cde4c3cc44900a0a499548a987d61763148e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: e5f77697bbf0f9231500f325545c0e6ccd9c45fe
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923211"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28714543"
 ---
 # <a name="querydefs-members-dao"></a>クエリ定義のメンバー (DAO)
 
@@ -65,7 +66,7 @@ QueryDefs コレクションには、Microsoft Access データベース エン�
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="querydefs-count-property-dao.md">カウント</a></strong></p></td>
+<td><p><strong><a href="querydefs-count-property-dao.md">Count</a></strong></p></td>
 <td><p>指定したコレクション内のオブジェクトの数を取得します。値の取得のみ可能です。</p></td>
 </tr>
 </tbody>

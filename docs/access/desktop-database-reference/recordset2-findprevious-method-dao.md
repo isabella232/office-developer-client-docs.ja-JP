@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff836294(v=office.15)
 ms:contentKeyID: 48548509
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 24984909510a54125c2dcdb62a02d16b289e9ccf
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 9cf53526f9643737c7236bb2c98589e74f3f2eb5
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998172"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28712114"
 ---
 # <a name="recordset2findprevious-method-dao"></a>Recordset2.FindPrevious メソッド (DAO)
 
@@ -46,7 +47,7 @@ ms.locfileid: "25998172"
 <tr class="odd">
 <td><p><em>Criteria</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>文字列型 (String)</strong></p></td>
+<td><p><strong>String</strong></p></td>
 <td><p>レコードの検索に使用する文字列です。SQL ステートメントの WHERE 句に似ていますが、WHERE という語は付けません。</p></td>
 </tr>
 </tbody>

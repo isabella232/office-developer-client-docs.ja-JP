@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248866(v=office.15)
 ms:contentKeyID: 48543270
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bcfde7e343a37d65356e1f9ed8d879030913f5ed
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 8bf2234e5935c2a1a13871e7e45c980fb9f33109
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25868785"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28713780"
 ---
 # <a name="using-visual-c-extensions"></a>Visual C++ Extensions を使用する
 
@@ -117,7 +118,7 @@ _**バインディング エントリの終了**_
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Class</em></p></td>
+<td><p><em>クラス</em></p></td>
 <td><p>バインディング エントリおよび C/C++ 変数を定義するクラスです。</p></td>
 </tr>
 <tr class="even">
@@ -137,12 +138,12 @@ _**バインディング エントリの終了**_
 <td><p>バイト数で示す <em>Buffer</em> の最大サイズです。<em>Buffer</em> に可変長文字列を格納する場合は、末尾のゼロを含んだサイズになります。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Status</em></p></td>
+<td><p><em>状態</em></p></td>
 <td><p><em>Buffer</em> の内容が有効かどうか、および <em>DataType</em> へのフィールドの変換が成功したかどうかを示す変数の名前です。
  この変数で最も重要な 2 つの値は、変換が成功したことを示す <strong>adFldOK</strong> と、フィールドの値が VT_NULL 型の VARIANT であって単なる空ではないことを示す <strong>adFldNull</strong> です。 <em>ステータス</em>の値が次の表に記載されている&quot;のステータス値。&quot;</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>変更</em></p></td>
+<td><p><em>Modify</em></p></td>
 <td><p>ブール型のフラグです。TRUE の場合は、ADO が対応する <strong>Recordset</strong> フィールドを <em>Buffer</em> の値で更新できることを示します。
  バインドされたフィールドを ADO が更新できるようにするには、ブール型の <em>modify</em> パラメーターを TRUE に設定します。確認だけでフィールドを変更しない場合は FALSE に設定します。</p></td>
 </tr>

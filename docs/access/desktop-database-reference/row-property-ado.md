@@ -6,18 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248959(v=office.15)
 ms:contentKeyID: 48543562
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1882486de2a2dfe61b98d4461abeea9cbcc23363
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 9b4beaa742bfc46ecd32fc04733c3e6ddaf12aa2
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949314"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28715005"
 ---
 # <a name="row-property-ado"></a>Row プロパティ (ADO)
 
 **適用されます**Access 2013、Office 2013。
 
-**ADORecordConstruction** オブジェクトの OLE DB **Row** オブジェクトを設定または取得します。 使用すると**に\_行****行**オブジェクトを設定するのには、行になって ADO**レコード**オブジェクトにします。 値の取得および設定が可能です。
+**ADORecordConstruction** オブジェクトの OLE DB **Row** オブジェクトを設定または取得します。 使用すると**に\_行****行**オブジェクトを設定するのには、行になって ADO**レコード**オブジェクトにします。 値の取得と設定が可能です。
 
 ## <a name="syntax"></a>構文
 

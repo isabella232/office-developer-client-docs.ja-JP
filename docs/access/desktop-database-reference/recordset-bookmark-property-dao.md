@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052887
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 8b45d0bdf605f77084353da065c2cc8c674bd24e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 1ebf963695b2d754a4501077e2236c52280a9a2e
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922882"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28714529"
 ---
 # <a name="recordsetbookmark-property-dao"></a>Recordset.Bookmark プロパティ (DAO)
 
@@ -30,7 +31,7 @@ ms.locfileid: "25922882"
 
 *式***レコード セット**オブジェクトを表す変数です。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **レコード セット**オブジェクトを Microsoft Access データベース エンジンのテーブルを基に、 **Bookmarkable**プロパティの値は、true の場合、およびその**レコード セット**の**Bookmark**プロパティを使用することができます。 ただし、その他のデータベース製品では、ブックマークがサポートされていない場合があります。 たとえば、主キーを持たないリンク テーブルの Paradox に準拠する **Recordset** オブジェクトではブックマークを使用できません。
 

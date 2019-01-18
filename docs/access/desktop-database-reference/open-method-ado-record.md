@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249896(v=office.15)
 ms:contentKeyID: 48547371
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 32d719235953f83d0fc28a45b04f50e64c268480
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: db8953cafc5ad266c81c51e59cbf92787d07cdfb
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25950070"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28713479"
 ---
 # <a name="open-method-ado-record"></a>Open メソッド (ADO Record)
 
@@ -35,7 +36,7 @@ ms.locfileid: "25950070"
 |*UserName* |省略可能です。*Source* へのアクセス権が設定されている場合、アクセス権を持つユーザー ID を含む、文字列型 (**String**) の値を指定します。|
 |*Password* |省略可能です。*UserName* を確認するためのパスワードを含む、文字列型 (**String**) の値を指定します。|
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 *ソース*があります。
 

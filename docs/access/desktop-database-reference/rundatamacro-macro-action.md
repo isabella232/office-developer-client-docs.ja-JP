@@ -10,12 +10,13 @@ f1_keywords:
 - vbaac10.chm168493
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c1d540b909a2ac5741719470f5632e34205806ff
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 32945f0822682a9432d75ed1ac59117dde3cc0e9
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927985"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28709979"
 ---
 # <a name="rundatamacro-macro-action"></a>RunDataMacro マクロ アクション
 
@@ -47,7 +48,7 @@ ms.locfileid: "25927985"
 </table>
 
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 **RunDataMacro**アクションを使用すると、マクロ、名前付きデータ マクロでは、およびマクロの次のイベントの中で:**[マクロのイベントの後に削除](after-delete-macro-event.md)**、**[マクロのイベントの後に挿入](after-insert-macro-event.md)** と**[更新後のマクロのイベント](after-update-macro-event.md)** です。
 

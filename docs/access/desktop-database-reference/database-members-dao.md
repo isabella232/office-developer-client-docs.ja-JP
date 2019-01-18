@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195257(v=office.15)
 ms:contentKeyID: 48545392
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: aa627d7c44700041209b9884374e57f7e3fa6c28
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: d2254aeff94aeb2b8b078fc4f4cd4d3ef807e597
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937100"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28713052"
 ---
 # <a name="database-members-dao"></a>データベース メンバー (DAO)
 
@@ -55,7 +56,7 @@ Database オブジェクトは、開いているデータベースを表しま�
 <td><p>新しい <strong><a href="tabledef-object-dao.md">TableDef</a></strong> オブジェクトを作成します (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="database-execute-method-dao.md">Execute</a></strong></p></td>
+<td><p><strong><a href="database-execute-method-dao.md">実行</a></strong></p></td>
 <td><p>指定したオブジェクトのアクション クエリまたは SQL ステートメントを実行します。</p></td>
 </tr>
 <tr class="odd">
@@ -126,7 +127,7 @@ Database オブジェクトは、開いているデータベースを表しま�
 <td><p>指定したオブジェクトの <strong><a href="properties-collection-dao.md">Properties</a></strong> コレクションを取得します。値の取得のみ可能です。  </p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="database-querydefs-property-dao.md">クエリ定義</a></strong></p></td>
+<td><p><strong><a href="database-querydefs-property-dao.md">QueryDefs</a></strong></p></td>
 <td><p>指定したデータベースのすべての <strong>QueryDef</strong> オブジェクトを含む <strong>QueryDefs</strong> コレクションを返します。値の取得のみ可能です。</p></td>
 </tr>
 <tr class="odd">
@@ -150,7 +151,7 @@ Database オブジェクトは、開いているデータベースを表しま�
 <td><p>データベース レプリカを一意に識別する 16 バイトの値を取得します (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="database-tabledefs-property-dao.md">テーブル定義</a></strong></p></td>
+<td><p><strong><a href="database-tabledefs-property-dao.md">TableDefs</a></strong></p></td>
 <td><p>指定したデータベースに保存されたすべての <strong>TableDef</strong> オブジェクトを含む <strong>TableDefs</strong> コレクションを返します。値の取得のみ可能です。</p></td>
 </tr>
 <tr class="odd">

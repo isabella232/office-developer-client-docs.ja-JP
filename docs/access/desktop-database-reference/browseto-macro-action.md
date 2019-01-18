@@ -10,12 +10,13 @@ f1_keywords:
 - vbaac10.chm35083
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c648e7ea8700a6881e3cc2deda4fd2ee9955c8b1
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 0bcf0a37f8c1596856f5d7b921430371d620f7a3
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923812"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28711071"
 ---
 # <a name="browseto-macro-action"></a>BrowseTo マクロ アクション
 
@@ -56,7 +57,7 @@ ms.locfileid: "25923812"
 <td><p>指定した場合は、オブジェクト レコード ソースの Where 条件を置き換えます。</p></td>
 </tr>
 <tr class="odd">
-<td><p>Page オブジェクト</p></td>
+<td><p>Page</p></td>
 <td><p>指定した場合は、現在のページになる帳票フォームのページを設定します。 この引数は、web のみです。</p></td>
 </tr>
 <tr class="even">
@@ -67,7 +68,7 @@ ms.locfileid: "25923812"
 </table>
 
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 PathToSubFormControl 引数は、次のコード例に示す構文で指定します。
 

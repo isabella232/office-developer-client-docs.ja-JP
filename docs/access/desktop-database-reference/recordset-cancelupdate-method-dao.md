@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1053072
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 6cb9823cec79a31f8ae26b2518d4368f6eefe2ce
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 5950154d8896678889af01254104a2ac0dfef4cc
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25999079"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28712435"
 ---
 # <a name="recordsetcancelupdate-method-dao"></a>Recordset.CancelUpdate メソッド (DAO)
 
@@ -50,7 +51,7 @@ ms.locfileid: "25999079"
 <tr class="odd">
 <td><p><em>UpdateType</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>長整数型 (Long)</strong></p></td>
+<td><p><strong>Long</strong></p></td>
 <td><p><strong><a href="updatetypeenum-enumeration-dao.md">UpdateTypeEnum</a></strong>値のいずれかに設定します。</p><p><strong>注</strong>: <EM>dbUpdateRegular</EM>および<EM>dbUpdateBatch</EM>値は、バッチ更新が有効になっている場合にのみ有効です。</p>
 </td>
 </tr>

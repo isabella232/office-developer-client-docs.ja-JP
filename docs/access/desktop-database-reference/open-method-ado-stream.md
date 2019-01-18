@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250275(v=office.15)
 ms:contentKeyID: 48548833
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b20a68f1707e496b92ba8acbf8bc7ed8d8a2b058
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 3a943209ce329d59fb4846ed18fd008bc45803da
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026415"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28715544"
 ---
 # <a name="open-method-ado-stream"></a>Open メソッド (ADO Stream)
 
@@ -25,7 +26,7 @@ ms.locfileid: "26026415"
 
 *ストリーム*。 *ソース*、*モード*、 *OpenOptions*、*ユーザー名*、*パスワード*を開く
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|

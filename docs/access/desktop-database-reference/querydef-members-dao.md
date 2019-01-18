@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192855(v=office.15)
 ms:contentKeyID: 48544403
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a6e62d302dc1164e70d83dcbb06ac56c21898b82
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 5b3afc134636d5621f38ece4530be5312e42bc74
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026261"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28716146"
 ---
 # <a name="querydef-members-dao"></a>クエリ定義のメンバー (DAO)
 
@@ -48,7 +49,7 @@ QueryDef オブジェクトは、Microsoft Access データベース エンジ�
 <td><p>新しいユーザー定義の <strong><a href="property-object-dao.md">Property</a></strong> オブジェクトを作成します (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="querydef-execute-method-dao.md">Execute</a></strong></p></td>
+<td><p><strong><a href="querydef-execute-method-dao.md">実行</a></strong></p></td>
 <td><p>指定したオブジェクトの SQL ステートメントを実行します。</p></td>
 </tr>
 <tr class="odd">
@@ -59,7 +60,7 @@ QueryDef オブジェクトは、Microsoft Access データベース エンジ�
 </table>
 
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 <table>
 <colgroup>
@@ -136,7 +137,7 @@ QueryDef オブジェクトは、Microsoft Access データベース エンジ�
 <p>非同期操作 (つまり、 <a href="recordsetoptionenum-enumeration-dao.md">dbRunAsync</a> オプションを指定して呼び出したメソッド) の実行が完了したかどうかを示します (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="querydef-type-property-dao.md">Type</a></strong></p></td>
+<td><p><strong><a href="querydef-type-property-dao.md">型</a></strong></p></td>
 <td><p>オブジェクトの操作の種類またはデータ型を示す値を設定あるいは取得します。値の取得のみ可能です。整数型 (<strong>Integer</strong>) の値を使用します。</p></td>
 </tr>
 <tr class="odd">

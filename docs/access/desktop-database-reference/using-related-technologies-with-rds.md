@@ -6,14 +6,15 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249250(v=office.15)
 ms:contentKeyID: 48544752
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6a1fc46e1a5b8f320810f2e0e5ea891e3a6cb85a
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 3e58978145a59a0057f5c7218afe417f8455fcb3
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947869"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28710038"
 ---
-# <a name="using-related-technologies-with-rds"></a>Rds 関連のテクノロジを使用します。
+# <a name="using-related-technologies-with-rds"></a>RDS 関連技術の使用
 
 **適用されます**Access 2013、Office 2013。
 
@@ -21,7 +22,7 @@ ms.locfileid: "25947869"
 
 - [ODBC 接続プールで RDS を使用します。](using-rds-with-odbc-connection-pooling.md)
 
-- [コンポーネント サービスでビジネス オブジェクトを実行します。](running-business-objects-in-component-services.md)
+- [コンポーネント サービスでのビジネス オブジェクトの実行](running-business-objects-in-component-services.md)
 
 **インターネット インフォメーション サービス**Microsoft インターネット インフォメーション サービス (IIS) の詳細については、Microsoft インターネット インフォメーション サービス web サイトを参照してください。
 

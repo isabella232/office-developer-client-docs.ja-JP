@@ -1,19 +1,20 @@
 ---
-title: '第 2 章: データを取得します。'
+title: '第 2 章: データの取得'
 TOCTitle: 'Chapter 2: Getting data'
 ms:assetid: 72d097e1-9284-cc27-fd48-e6bbb6a2a543
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249465(v=office.15)
 ms:contentKeyID: 48545619
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 729d7a74c8e1ead84810e82d608e4e9b37268a6b
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: f059e5dfe064442f10972fd36344e64f84fe7ea5
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937002"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28715194"
 ---
-# <a name="chapter-2-getting-data"></a>第 2 章: データを取得します。
+# <a name="chapter-2-getting-data"></a>第 2 章: データの取得
 
 **適用されます**Access 2013、Office 2013。
 
@@ -35,7 +36,7 @@ ADO のオブジェクト モデルでは、接続の概念を **Connection** �
 
 この章では、次のトピックについて説明します。
 
-- [接続を作成します。](making-a-connection.md)
+- [接続の作成](making-a-connection.md)
 - [接続オブジェクト参照 (ADO) を使用します。](using-the-connection-object-access.md)
 - [(ADO) コマンド オブジェクト参照を使用します。](using-the-command-object-access.md)
 - [レコード セット (ADO) にデータを追加します。](adding-data-to-a-recordset.md)

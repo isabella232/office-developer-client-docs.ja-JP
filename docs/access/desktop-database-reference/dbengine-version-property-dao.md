@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052986
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1723deea7f29c59fb388a11acc5e5ffcced4abe1
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 7e22645127f18ad815c398fd38f9ac4615dfadc9
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25924597"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28712786"
 ---
 # <a name="dbengineversion-property-dao"></a>DBEngine.Version プロパティ (DAO)
 
@@ -30,7 +31,7 @@ ms.locfileid: "25924597"
 
 *式***DBEngine**オブジェクトを表す変数です。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 戻り値は、"<メジャー>.<マイナー>" の形式で評価結果がバージョン番号になる文字列型 (String) の値です。たとえば、"3.0" などです。製品のバージョン番号は、バージョン番号 (3)、ピリオド、およびリリース番号 (0) で構成されます。
 

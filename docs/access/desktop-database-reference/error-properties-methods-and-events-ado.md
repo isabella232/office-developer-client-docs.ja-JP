@@ -6,22 +6,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249607(v=office.15)
 ms:contentKeyID: 48546183
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 297108566d3ce8e6f2c3037d9d607d1c233a4c4f
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 06497982f3c338ea3c3eb499e788dd527c05e351
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946560"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28710623"
 ---
 # <a name="error-properties-methods-and-events-ado"></a>エラーのプロパティ、メソッド、およびイベント (ADO)
 
 **適用されます**Access 2013、Office 2013。
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 - [Description プロパティ](description-property-ado.md)
-- [HelpContext、HelpFile プロパティ](helpcontext-helpfile-properties-ado.md)
-- [以下のプロパティ](nativeerror-property-ado.md)
+- [HelpContext プロパティと HelpFile プロパティ](helpcontext-helpfile-properties-ado.md)
+- [NativeError プロパティ](nativeerror-property-ado.md)
 - [Number プロパティ](number-property-ado.md)
 - [Source プロパティ (ADO Error)](source-property-ado-error.md)
 - [SQLState プロパティ](sqlstate-property-ado.md)

@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052938
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 45e6933d01a4c47253c90857d9c42bf0ab386c16
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 632f6e10d79d74dfef295b34a52ce62f1690101b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997567"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28715607"
 ---
 # <a name="dbengineregisterdatabase-method-dao"></a>DBEngine.RegisterDatabase メソッド (DAO)
 
@@ -50,25 +51,25 @@ ODBC データ ソースの接続情報を Windows レジストリに追加し�
 <tr class="odd">
 <td><p><em>Dsn</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>文字列型 (String)</strong></p></td>
+<td><p><strong>String</strong></p></td>
 <td><p><strong><a href="dbengine-opendatabase-method-dao.md">OpenDatabase</a></strong> メソッドで使用される名前です。データ ソースに関する説明的な情報を指します。たとえば、データ ソースが ODBC リモート データベースである場合は、サーバー名などを指定します。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>ドライバー</em></p></td>
+<td><p><em>Driver</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>文字列型 (String)</strong></p></td>
+<td><p><strong>String</strong></p></td>
 <td><p>ODBC ドライバーの名前です。ODBC ドライバーの DLL ファイルの名前ではありません。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>サイレント</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>ブール型 (Boolean)</strong></p></td>
+<td><p><strong>Boolean</strong></p></td>
 <td><p><strong>True の</strong>場合、ドライバー固有の情報の入力を求める ODBC ドライバー ダイアログ ボックスを表示したくないです。または、 <strong>false を指定</strong>する場合は、ODBC ドライバーのダイアログ ボックスを表示します。 場合<strong>はサイレント</strong>、属性には、必要なすべてのドライバー固有の情報が含まれている必要があります、またはダイアログ ボックスが表示されますか。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Attributes</em></p></td>
+<td><p><em>属性</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>文字列型 (String)</strong></p></td>
+<td><p><strong>String</strong></p></td>
 <td><p>Windows レジストリに追加するキーワードの一覧です。キーワードは、改行で区切られた文字列として指定します。</p></td>
 </tr>
 </tbody>

@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052943
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e72d879482c3ed69b262f2f4d0f07a4e11f8fa4c
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 20f09dbfba50526409472f7eb804ba2c47e4d1d5
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998939"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28708670"
 ---
 # <a name="databasenewpassword-method-dao"></a>Database.NewPassword メソッド (DAO)
 
@@ -50,13 +51,13 @@ ms.locfileid: "25998939"
 <tr class="odd">
 <td><p><em>bstrOld</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>文字列型 (String)</strong></p></td>
+<td><p><strong>String</strong></p></td>
 <td><p><strong>Database</strong> オブジェクトの <strong>Password</strong> プロパティの現在の設定値。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>bstrNew</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>文字列型 (String)</strong></p></td>
+<td><p><strong>String</strong></p></td>
 <td><p><strong>Database</strong>オブジェクトの<strong>Password</strong>プロパティの新しい設定します。</p>
 <p><strong>注</strong>: 大文字と小文字の英字、数字、および記号を組み合わせた強力なパスワードを使用します。 これらの文字を混在させたものになっていないパスワードは強固とはいえません。 たとえば、Y6dh!et5 は安全性の高いパスワードです。 House27 は推測されやすいパスワードです。 また、高い安全性を保ちながらも、書き留めておかなくても覚えておくことができるパスワードを使用してください。</p>
 </td>

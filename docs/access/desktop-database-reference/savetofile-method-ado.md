@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250104(v=office.15)
 ms:contentKeyID: 48548097
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: df7545b9abd29571788a0bbfc69323ec31e75f65
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: f3b08c9df435c7ce995a40af7b8ad5466b79245d
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949811"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28706542"
 ---
 # <a name="savetofile-method-ado"></a>SaveToFile メソッド (ADO)
 
@@ -27,7 +28,7 @@ ms.locfileid: "25949811"
 
 |パラメーター|説明|
 |:--------|:----------|
-|*Filename* |**Stream** の内容の保存先であるファイルの完全修飾名を含む文字列型 ( **String** ) の値を指定します。有効なローカルの場所、または UNC 値を介してアクセスできる場所への保存が可能です。|
+|*FileName* |**Stream** の内容の保存先であるファイルの完全修飾名を含む文字列型 ( **String** ) の値を指定します。有効なローカルの場所、または UNC 値を介してアクセスできる場所への保存が可能です。|
 |*SaveOptions* |保存するファイルがまだ存在しない場合に、 [SaveToFile](saveoptionsenum.md) メソッドで新しいファイルを作成するかどうかを **SaveOptionsEnum** 値で指定します。既定値は **adSaveCreateNotExists** です。これらのオプションでは、指定したファイルが存在しない場合にエラーが発生するように指定できます。また、 **SaveToFile** メソッドで既存ファイルの現在の内容を上書きするように指定することもできます。|
 
 > [!NOTE]

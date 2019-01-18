@@ -1,19 +1,20 @@
 ---
-title: コマンドを使用してストアド プロシージャを呼び出す
+title: コマンドを使用したストアド プロシージャの呼び出し
 TOCTitle: Calling a stored procedure with a command
 ms:assetid: 19d600d7-f717-39df-11a0-951e3ed0f812
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248944(v=office.15)
 ms:contentKeyID: 48543509
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4d3086124dd83fcaabda2784b8e2c9b7a2f525e8
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 6578dbfc50ae8ffeaa31f49b694b37ba5fd534e8
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945202"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28713213"
 ---
-# <a name="calling-a-stored-procedure-with-a-command"></a>コマンドを使用してストアド プロシージャを呼び出す
+# <a name="calling-a-stored-procedure-with-a-command"></a>コマンドを使用したストアド プロシージャの呼び出し
 
 
 **適用されます**Access 2013、Office 2013。
