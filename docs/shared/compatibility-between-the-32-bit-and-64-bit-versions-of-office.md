@@ -2,15 +2,15 @@
 title: Office の 32 ビット バージョンと 64 ビット バージョン間の互換性
 ms.date: 04/27/2016
 ms.audience: ITPro
-localization_priority: Normal
 ms.assetid: ff49dc9e-daf8-43cf-8802-51c2537ed561
 description: 32 ビット バージョンの Office と 64 ビット バージョンの Office の互換性についてご確認ください。
-ms.openlocfilehash: eeff11f11d4f2595b7111c0233703d09b1c46651
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+localization_priority: Priority
+ms.openlocfilehash: b03323b37b242c9992c47cd737ae54f3f9bbf2ca
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25390941"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28712016"
 ---
 # <a name="compatibility-between-the-32-bit-and-64-bit-versions-of-office"></a>Office の 32 ビット バージョンと 64 ビット バージョン間の互換性
 

@@ -3,15 +3,15 @@ title: Word
 manager: kelbow
 ms.date: 12/13/2017
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 9eeb591e-b040-4a53-beef-f69913543fb4
 description: ソリューションの開発と Word のカスタマイズを行う方法を記載したコンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、技術記事をご覧ください。
-ms.openlocfilehash: 936b4826343fb39c34d21c96228af60f9f6b34db
-ms.sourcegitcommit: 6a314fdfde4349591ed899019695c36537f45924
+localization_priority: Priority
+ms.openlocfilehash: acd9fab9c09c88100ec473b0d456f90652643457
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454531"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28716776"
 ---
 # <a name="word"></a>Word
 

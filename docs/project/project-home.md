@@ -3,15 +3,15 @@ title: Project
 manager: kelbow
 ms.date: 12/13/2017
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 71d3ae83-3b5d-47c1-b618-4acf13470afb
 description: ソリューションの開発と Project のカスタマイズに関する HowTo コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および技術記事を検索できます。
-ms.openlocfilehash: 7ad5e31f60565bdba5ba391c43e4428fd28fdd02
-ms.sourcegitcommit: 6a314fdfde4349591ed899019695c36537f45924
+localization_priority: Priority
+ms.openlocfilehash: 723de79427c8507c4f849546e8a6b2d72ac5e18c
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454496"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28708656"
 ---
 # <a name="project"></a>Project 
 

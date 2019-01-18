@@ -3,15 +3,15 @@ title: Office との統合
 manager: soliver
 ms.date: 07/29/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 369b30e3-eadf-4086-b023-abbdd8e810b0
 description: アプリケーションおよび Web ベース環境から Office for iOS、Office for Android、Office Online と Excel、PowerPoint、または Word Mobile を統合できます。これによりユーザーは、サード パーティ ソリューションから Office アプリケーションでの作業にシームレスに移行できます。
-ms.openlocfilehash: 3656e458857124430949a515f2f517fca7cad23b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+localization_priority: Priority
+ms.openlocfilehash: 332f61f2b7a551516e55e7c966c649a6ee5f7f80
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388288"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28719345"
 ---
 # <a name="integrate-with-office"></a>Office との統合
 

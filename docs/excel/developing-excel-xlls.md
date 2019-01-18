@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 keywords:
 - アドイン - [excel 2007],XLL の開発 - [Excel 2007],XLL - [Excel 2007],開発
-localization_priority: Normal
 ms.assetid: dd27ae4d-ef97-47db-885c-ddd955816900
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: cb2483b9cd1b11bcfeee81bba02b6d593e8818fc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+localization_priority: Priority
+ms.openlocfilehash: d05041f2629694c4a96240ea83b6e84b17f9be38
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798780"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28701096"
 ---
 # <a name="developing-excel-xlls"></a>Excel XLL の開発
 

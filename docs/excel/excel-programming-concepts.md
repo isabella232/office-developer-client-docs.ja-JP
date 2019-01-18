@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 keywords:
 - excel programming,Excel concepts
-localization_priority: Normal
 ms.assetid: f572a0d4-631a-4adc-a1a3-714d96ff6b39
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 9a8598aeaf92a3f6950b6baa809cdcc071516bce
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+localization_priority: Priority
+ms.openlocfilehash: 13f99e3d4154516071fe42dcb27beb944ce384f4
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798807"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28719653"
 ---
 # <a name="excel-programming-concepts"></a>Excel プログラミングの概念
 

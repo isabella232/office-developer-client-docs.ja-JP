@@ -3,15 +3,15 @@ title: Office 共有
 manager: soliver
 ms.date: 04/20/2016
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 1c4937c4-0998-4f81-a994-50d3dd54727c
 description: ソリューションの開発と Office のカスタマイズに関する HowTo コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および技術記事を検索できます。
-ms.openlocfilehash: c0c08c980e0f42128b0fe8b2ad6c9225e38c9afe
-ms.sourcegitcommit: 6a314fdfde4349591ed899019695c36537f45924
+localization_priority: Priority
+ms.openlocfilehash: 758d0b25457089de0d611d41fa962e7323985abe
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454559"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28704414"
 ---
 # <a name="office-shared"></a>Office 共有
 
@@ -32,7 +32,7 @@ ms.locfileid: "25454559"
   
 ### <a name="office-365-apis"></a>Office 365 API
   
-- [作業の開始](https://developer.microsoft.com/ja-JP/office/docs)
+- [作業の開始](https://developer.microsoft.com/en-us/office/docs)
   
 - [プラットフォームの概要](https://docs.microsoft.com/previous-versions/office/office-365-api/)
   

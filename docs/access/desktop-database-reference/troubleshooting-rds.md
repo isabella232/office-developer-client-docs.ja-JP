@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249938(v=office.15)
 ms:contentKeyID: 48547518
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 28bc66cb521030a9f0b1fca79bd0ccb4babe407b
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+localization_priority: Normal
+ms.openlocfilehash: 9f62bb4578cfcad978bf596648ad040552edd1a4
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25943788"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726198"
 ---
 # <a name="troubleshooting-rds"></a>RDS のトラブルシューティング
 
@@ -21,9 +22,9 @@ ms.locfileid: "25943788"
 
 - [Windows 2000 に RDS を構成する](configuring-rds-on-windows-2000.md)
 - [反復可能な読み取りの分離レベルでのデッドロック](deadlocks-with-read-repeatable-isolation-level.md)
-- [TempDB に十分な領域を確保します。](ensuring-sufficient-tempdb-space.md)
+- [十分な TempDB 領域の確保](ensuring-sufficient-tempdb-space.md)
 - [インターネット サーバー エラー: アクセスが拒否されました](internet-server-error-access-denied.md)
-- [ログ ファイル領域の使用量を最小限に抑える](minimizing-log-file-space-usage.md)
+- [ログ ファイルの使用領域の最小化](minimizing-log-file-space-usage.md)
 - [RDS には、[ストリーム未読"のエラーが返されます。](rds-returns-stream-not-read-error.md)
 
 

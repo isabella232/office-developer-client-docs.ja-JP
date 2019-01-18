@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 keywords:
 - 登録データ型 [excel 2007],Excel データ型,文字 [Excel 2007],数字 [Excel 2007],データ構造 [Excel 2007],データ型 [Excel 2007]
-localization_priority: Normal
 ms.assetid: 8740a8fb-ad67-4232-a49b-d78967a786c2
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: b32a9beb2f77c12e6b6f2c445672c717a2546386
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+localization_priority: Priority
+ms.openlocfilehash: c546fc80b212301689744d3279a59733d9cc5524
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798779"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28710609"
 ---
 # <a name="data-types-used-by-excel"></a>Excel で使用されるデータ型
 
@@ -50,7 +50,7 @@ Excel 2007 以降:
     
 Excel のワークシート番号はすべて倍精度小数点として格納されているため、Excel でアドイン関数をこれに代わる整数型として宣言する必要はありません (むしろそうするなら小さな変換オーバーヘッドが発生します) 。
   
-整数型を使用している場合、Excel は入力が型の範囲内の値であることを確認します。範囲外の場合は **#NUM!**  で失敗します。 例外は、関数を登録して、short int で実装される **Boolean** 引数を取る場合です。この場合、0 以外の入力はすべて 1 に変換され、0 は直接渡されます。 
+整数型を使用している場合、Excel は入力が型の範囲内に入っていることを確認します。範囲外の場合は **#NUM!** で失敗します。例外は、関数を登録して、short int で実装される **Boolean** 引数を取る場合です。この場合、0 以外の入力はすべて 1 に変換され、0 は直接渡されます。 
   
 ## <a name="excel-specific-data-structures"></a>Excel 固有のデータ構造
 

@@ -10,12 +10,13 @@ f1_keywords:
 - vbaac10.chm152234
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f01899833b4cf0537a4437a643f2aeedf99e586c
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
+localization_priority: Normal
+ms.openlocfilehash: df77d2375b66df907832b6ff2717427ae54a35a4
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25996917"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726205"
 ---
 # <a name="importsharepointlist-macro-action"></a>ImportSharePointList マクロ アクション
 
@@ -93,7 +94,7 @@ ms.locfileid: "25996917"
     
   2. 対象のビューが表示されていない場合は、[ **ビュー**] ボックスの矢印をクリックし、対象のビューを選択します。
     
-  3. **ビュー**のドロップダウン矢印をクリックし、**このビューの変更**を選択します.ブラウザーのアドレス バーのアドレスには、リストとビューの両方の Guid が含まれています。 リストの GUID に依存して**リスト =**、ビューの GUID に依存していると**ビュー =**。 ただし、アドレスの各 **{** (左中かっこ) 文字は、文字列で表される、 **%7b**、各**-**(ハイフン) は、文字列で表される **%2 D**、 **}** (右中かっこ) 文字は、文字列**によって表されます%7 D**です。 例:
+  3. **ビュー**のドロップダウン矢印をクリックし、**このビューの変更**を選択します.ブラウザーのアドレス バーのアドレスには、リストとビューの両方の Guid が含まれています。 リストの GUID に依存して**リスト =**、ビューの GUID に依存していると**ビュー =**。 ただし、アドレスの各 **{** (左中かっこ) 文字は、文字列で表される、 **%7b**、各**-**(ハイフン) は、文字列で表される **%2 D**、 **}** (右中かっこ) 文字は、文字列**によって表されます%7 D**です。 次に例を示します。
         
      `https://MySite12/_layouts/ViewEdit.aspx?List=%7B2A82A404%2D5529%2D47DC%2DAE13%2DAC1D9BC0A84F%7D&View=%7B357B4FE6%2D44CF%2D4275%2DB91F%2D46558301579B%7D`
         

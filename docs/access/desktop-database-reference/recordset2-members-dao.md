@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195572(v=office.15)
 ms:contentKeyID: 48545523
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5f7011edaf7cbeb145ea30af64f7ba6bd85945f4
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+localization_priority: Normal
+ms.openlocfilehash: 29d1472e8cd02d8968ba84dbc1c1cf99be7ee858
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937709"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726282"
 ---
 # <a name="recordset2-members-dao"></a>Recordset2 メンバー (DAO)
 
@@ -125,7 +126,7 @@ Recordset2 オブジェクトは、ベース テーブルのレコード、ま�
 <td><p><strong><a href="recordset-object-dao.md">Recordset</a></strong> オブジェクトの基になるクエリを再実行することにより、オブジェクト内のデータを更新します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="recordset2-seek-method-dao.md">シーク</a></strong></p></td>
+<td><p><strong><a href="recordset2-seek-method-dao.md">Seek</a></strong></p></td>
 <td><p>インデックス付きのテーブル タイプの <strong>Recordset</strong> オブジェクトで、現在のインデックスの指定された条件を満たすレコードを検索し、そのレコードをカレント レコードにします (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
@@ -175,7 +176,7 @@ Recordset2 オブジェクトは、ベース テーブルのレコード、ま�
 <td><p>カレント レコードの位置が <strong>Recordset</strong> オブジェクトの最初のレコードの前であることを示す値を返します。取得のみが可能です。ブール型 ( <strong>Boolean</strong>) の値を使用します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="recordset2-bookmark-property-dao.md">ブックマーク</a></strong></p></td>
+<td><p><strong><a href="recordset2-bookmark-property-dao.md">Bookmark</a></strong></p></td>
 <td><p><strong>Recordset</strong> オブジェクト内のカレント レコードを一意に識別するブックマークを設定または取得します。</p></td>
 </tr>
 <tr class="odd">

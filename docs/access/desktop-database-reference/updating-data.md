@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248794(v=office.15)
 ms:contentKeyID: 48542970
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 70ca34183d135c6907a185984b02b394776bfda4
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+localization_priority: Normal
+ms.openlocfilehash: 8e6989468e23fc1c9c611eb091172822a6ffe938
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944222"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726338"
 ---
 # <a name="updating-data"></a>データの更新
 
@@ -28,7 +29,7 @@ ms.locfileid: "25944222"
 
 このセクションには、次のトピックが含まれています。
 
-- [イミディ エイト モード](immediate-mode.md)
+- [イミディエイト モード](immediate-mode.md)
 - [トランザクション処理](transaction-processing.md)
 - [バッチ モード (ADO)](batch-mode.md)
 

@@ -1,19 +1,20 @@
 ---
-title: Shape Append 句
+title: Shape APPEND 句
 TOCTitle: Shape Append clause
 ms:assetid: 8f29afc3-fb93-4439-b67b-cad0eed0bda9
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249633(v=office.15)
 ms:contentKeyID: 48546301
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7eab008a03cf016edc259ef5e9d41cf320e85c8c
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+localization_priority: Normal
+ms.openlocfilehash: 40c35e8b2c3fb3f0b92bf261b62c252a61a367b4
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944851"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726352"
 ---
-# <a name="shape-append-clause"></a>Shape Append 句
+# <a name="shape-append-clause"></a>Shape APPEND 句
 
 
 **適用されます**Access 2013、Office 2013。

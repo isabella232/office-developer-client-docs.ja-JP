@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 keywords:
 - ダイアログ ボックス [excel 2007]、excel コマンドの呼び出し、DLL [Excel 2007]、Excel への呼び出し、C API 関数への引数の引き渡し [Excel 2007]、コマンド [Excel 2007]、ダイアログ ボックスでの呼び出し、コマンド [Excel 2007]、DLL/XLL からアクセス可能、Excel4 関数 [Excel 2007]、Excel12 関数 [Excel 2007]、XLCallVer 関数 [Excel 2007]、operRes 引数 [Excel 2007]、関数 [Excel 2007]、DLL/XLL からアクセス可能、Excel12v 関数 [Excel 2007]、DLL 専用関数 [Excel 2007]、C API [Excel 2007]、引数の引き渡し、引数の数 [Excel 2007]、コマンド [Excel 2007]、インターナショナル バージョンでの呼び出し、DLL 専用コマンド [Excel 2007]、インターナショナル バージョン [Excel 2007]、関数およびコマンドの呼び出し、XLL [Excel 2007]、Excel への呼び出し、Excel 4v 関数 [Excel 2007]、xlfn 引数 [Excel 2007]、関数 [Excel 2007]、インターナショナル バージョンでの呼び出し
-localization_priority: Normal
 ms.assetid: 616e3def-e4ec-4f3c-bc65-3b92710da1e6
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 996226aa8e01d58edbe9b9a8d6e6996b2453d581
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+localization_priority: Priority
+ms.openlocfilehash: 8f2b63ba84b0a78bbf317c284913a8ec0986436f
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567707"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726121"
 ---
 # <a name="calling-into-excel-from-the-dll-or-xll"></a>DLL または XLL から Excel に呼び出す
 

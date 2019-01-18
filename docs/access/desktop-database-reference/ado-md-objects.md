@@ -6,14 +6,15 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248907(v=office.15)
 ms:contentKeyID: 48543366
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fca73b9e8a77e102ad694dde8fd9759b20c1fcaf
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
+localization_priority: Normal
+ms.openlocfilehash: a2d3acf1b236e23522da0143d577bbcbeacbb4b7
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910839"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726212"
 ---
-# <a name="ado-md-objects"></a>ADO MD オブジェクト
+# <a name="ado-md-objects"></a>ADO MD のオブジェクト
 
 **適用されます**Access 2013、Office 2013。
 
@@ -30,11 +31,11 @@ ms.locfileid: "25910839"
 <th>説明</th>
 </tr>
 <tr class="odd">
-<td><p><a href="axis-object-ado-md.md">軸</a></p></td>
+<td><p><a href="axis-object-ado-md.md">Axis</a></p></td>
 <td><p>1 つ以上の次元の選択されたメンバーを含む、セルセットの位置またはフィルターの軸を表します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="catalog-object-ado-md.md">カタログ</a></p></td>
+<td><p><a href="catalog-object-ado-md.md">Catalog</a></p></td>
 <td><p>多次元データ プロバイダー (MDP) に固有の多次元スキーマ情報 (つまり、キューブおよび基になる次元、階層、レベル、およびメンバー) が含まれます。</p></td>
 </tr>
 <tr class="odd">
@@ -42,7 +43,7 @@ ms.locfileid: "25910839"
 <td><p>セルセットに含まれる、座標軸の交点のデータを表します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="cellset-object-ado-md.md">セルセット</a></p></td>
+<td><p><a href="cellset-object-ado-md.md">Cellset</a></p></td>
 <td><p>多次元クエリの結果を表します。キューブまたは他のセルセットから選択されたセルのコレクションになります。</p></td>
 </tr>
 <tr class="odd">
@@ -50,11 +51,11 @@ ms.locfileid: "25910839"
 <td><p>関連する次元のセットを含む、多次元スキーマからのキューブを表します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="dimension-object-ado-md.md">ディメンション</a></p></td>
+<td><p><a href="dimension-object-ado-md.md">Dimension</a></p></td>
 <td><p>1 つ以上のメンバーの階層を含む、多次元キューブの次元の 1 つを表します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="hierarchy-object-ado-md.md">階層</a></p></td>
+<td><p><a href="hierarchy-object-ado-md.md">Hierarchy</a></p></td>
 <td><p>いずれかのように、ディメンションのメンバーを集約することを表すまたは&quot;ロール アップします。&quot;ディメンションは 1 つまたは複数の階層ごとに集約できます。</p></td>
 </tr>
 <tr class="even">

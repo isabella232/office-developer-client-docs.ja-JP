@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff184653(v=office.15)
 ms:contentKeyID: 55119838
 ms.date: 07/24/2014
 mtps_version: v=office.15
-ms.openlocfilehash: 0b95621df2e021f52587d5a40d0de43e5505b80c
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+localization_priority: Normal
+ms.openlocfilehash: 7f85324b31ae865c69e2c40806d9654a0b443f4b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25406436"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28722740"
 ---
 # <a name="modify-the-layout-of-an-electronic-business-card"></a>電子名刺のレイアウトを変更する
 
@@ -24,7 +25,7 @@ ms.locfileid: "25406436"
 
 電子名刺には、連絡先から特定の情報をキャプチャする連絡先ビューが示されます。 **ContactItem** インターフェイスは、電子名刺に関連する特定のメンバーを提供します。 そのメンバーとは、**BusinessCardLayoutXml**、[BusinessCardType](https://msdn.microsoft.com/library/bb612276\(v=office.15\))、[AddBusinessCardLogoPicture(String)](https://msdn.microsoft.com/library/bb646681\(v=office.15\))、[ForwardAsBusinessCard()](https://msdn.microsoft.com/library/bb646342\(v=office.15\))、[ResetBusinessCard()](https://msdn.microsoft.com/library/bb644057\(v=office.15\))、[SaveBusinessCardImage(String)](https://msdn.microsoft.com/library/bb623060\(v=office.15\))、および [ShowBusinessCardEditor()](https://msdn.microsoft.com/library/bb646685\(v=office.15\)) です。
 
-次のコード例では、電子名刺のレイアウトを変更するために、まず、BusinessCardLayoutExample で **ContactItem** オブジェクトを取得します。 この例の場合、**ContactItem** は [Subject](https://msdn.microsoft.com/library/bb624088\(v=office.15\)) プロパティの値が "Melissa MacBeth" と一致する連絡先です。 その次に、BusinessCardLayoutExample で XML ドキュメント クラス [XmlDocument](https://msdn.microsoft.com/ja-JP/library/6kza7w4k) を作成して、このクラスの layout 属性を文字列で取得するために **ContactItem** オブジェクトの **BusinessCardLayoutXML** 値を使用します。 その後で、カードのレイアウトを左揃えから右揃えに変更します。
+次のコード例では、電子名刺のレイアウトを変更するために、まず、BusinessCardLayoutExample で **ContactItem** オブジェクトを取得します。 この例の場合、**ContactItem** は [Subject](https://msdn.microsoft.com/library/bb624088\(v=office.15\)) プロパティの値が "Melissa MacBeth" と一致する連絡先です。 その次に、BusinessCardLayoutExample で XML ドキュメント クラス [XmlDocument](https://msdn.microsoft.com/en-us/library/6kza7w4k) を作成して、このクラスの layout 属性を文字列で取得するために **ContactItem** オブジェクトの **BusinessCardLayoutXML** 値を使用します。 その後で、カードのレイアウトを左揃えから右揃えに変更します。
 
 Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
