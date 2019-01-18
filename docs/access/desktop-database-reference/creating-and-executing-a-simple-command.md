@@ -1,19 +1,20 @@
 ---
-title: 作成して、単純なコマンドを実行します。
+title: 簡単なコマンドの作成と実行
 TOCTitle: Creating and executing a simple command
 ms:assetid: 9ace1abe-cfae-0677-bc57-5cbda85b79db
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249699(v=office.15)
 ms:contentKeyID: 48546547
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 333f8481958914eadbd830600c08035acc92b031
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 2229c7580acc6848551103d83b7bfcf981d37bef
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947477"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702657"
 ---
-# <a name="creating-and-executing-a-simple-command"></a>作成して、単純なコマンドを実行します。
+# <a name="creating-and-executing-a-simple-command"></a>簡単なコマンドの作成と実行
 
 
 **適用されます**Access 2013、Office 2013。

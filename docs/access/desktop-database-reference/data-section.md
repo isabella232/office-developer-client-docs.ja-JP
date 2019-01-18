@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250303(v=office.15)
 ms:contentKeyID: 48548920
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 98215394af89df30a95fcb9c5a757368cb64d4f1
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 1b8e3baf4d147edcc739e59933da4697c08cdef0
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946378"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28700774"
 ---
 # <a name="data-section"></a>データ セクション
 
@@ -27,13 +28,14 @@ ms.locfileid: "25946378"
 <z:row CompanyName="Joe&apos;s Garage"/> 
 ```
 
-次の文字は、XML で予約されているし、文字エン ティティに置き換える必要があります: {'、"、および、\<、\>} です。
+次の文字は、XML で予約されているし、文字エン ティティに置き換える必要があります: {0} '、"、&、\<、\>} です。
 
 ## <a name="binary"></a>バイナリ型 (Binary)
 
 バイナリ データは、bin.hex 方式でエンコードされます。つまり、2 文字に 1 バイト (1/2 バイトにつき 1 文字) が割り当てられます。
 
 ## <a name="datetime"></a>DateTime
+
 
 バリアント VT\_日付の形式が XML データのデータ型によって直接サポートされていません。 データと時刻の両方のコンポーネントを使用して日付の正しい形式は、年年年年-月月-日日**T**hh:mm:ss です。
 

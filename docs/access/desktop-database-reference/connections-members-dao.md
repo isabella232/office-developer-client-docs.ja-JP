@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835954(v=office.15)
 ms:contentKeyID: 48548361
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 672e37da0a29ecb0d9db52de6c424602c7169df2
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 7506e59104997cebb6fe55d3b892b8176da83ec6
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937800"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28700914"
 ---
 # <a name="connections-members-dao"></a>接続メンバー (DAO)
 
@@ -42,7 +43,7 @@ ms.locfileid: "25937800"
 </table>
 
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 <table>
 <colgroup>
@@ -57,7 +58,7 @@ ms.locfileid: "25937800"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="connections-count-property-dao.md">カウント</a></strong></p></td>
+<td><p><strong><a href="connections-count-property-dao.md">Count</a></strong></p></td>
 <td><p><strong><a href="connection-object-dao.md">Connections</a></strong> コレクション内の <strong><a href="connections-collection-dao.md">Connection</a></strong> オブジェクトの数を返します。</p></td>
 </tr>
 </tbody>

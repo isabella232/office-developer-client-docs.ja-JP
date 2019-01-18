@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250277(v=office.15)
 ms:contentKeyID: 48548837
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fb29fd070a693b608cede1d21329b3749c18e852
-ms.sourcegitcommit: 007141520d6479860f452371532f9267f33eb260
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: aca77ac08688e643327bdbf229ab6c1dec40d109
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25999502"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28704806"
 ---
 # <a name="chapter-12-remote-data-service-rds-tutorial"></a>第 12 章: リモート データ サービス (RDS) のチュートリアル
 
@@ -31,7 +32,7 @@ ms.locfileid: "25999502"
 
 RDS プログラミング モデルについて、次に説明します。チュートリアルを使用するうえでのガイドラインとして使用してください。
 
-### <a name="rds-programming-model-with-objects"></a>オブジェクトと、RDS プログラミング モデル
+### <a name="rds-programming-model-with-objects"></a>RDS プログラミング モデルとオブジェクト
 
 - サーバーで呼び出されるプログラムを指定し、クライアントからそのプログラムを参照するための経路 (プロキシ) を取得します。
 

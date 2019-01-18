@@ -6,14 +6,15 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249505(v=office.15)
 ms:contentKeyID: 48545791
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 177eeb0499f3ba3376237c4773e776f8c7c7583f
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 268cd381cdeef11f2a6f351160d930e4b169cfbf
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946511"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28698842"
 ---
-# <a name="adding-records"></a>レコードを追加します。
+# <a name="adding-records"></a>レコードの追加
 
 **適用されます**Access 2013、Office 2013。
 
@@ -25,7 +26,7 @@ ms.locfileid: "25946511"
 
 このセクションには、次のトピックが含まれています。
 
-- [複数のフィールドを追加します。](adding-multiple-fields.md)
+- [複数のフィールドの追加](adding-multiple-fields.md)
 - [編集モードを決定します。](determining-edit-mode.md)
 - [イミディ エイトとバッチ モードで AddNew を使用します。](using-addnew-in-immediate-and-batch-modes.md)
 

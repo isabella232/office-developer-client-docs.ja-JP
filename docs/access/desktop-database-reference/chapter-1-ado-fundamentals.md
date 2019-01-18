@@ -1,19 +1,20 @@
 ---
-title: '第 1 章: ADO に関する基本事項'
+title: '第 1 章: ADO の基本事項'
 TOCTitle: 'Chapter 1: ADO fundamentals'
 ms:assetid: d9834665-062b-c469-77a6-7fd9ea2a848e
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250096(v=office.15)
 ms:contentKeyID: 48548054
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d5177da1cb271a93e058d0d03972dad277fccc91
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: c0206545f14fdcc80312baa03137e933c545a789
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937436"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28716965"
 ---
-# <a name="chapter-1-ado-fundamentals"></a>第 1 章: ADO に関する基本事項
+# <a name="chapter-1-ado-fundamentals"></a>第 1 章: ADO の基本事項
 
 **適用されます**Access 2013、Office 2013。
 
@@ -22,6 +23,6 @@ ms.locfileid: "25937436"
 この章では、次のトピックについて説明します。
 
 - [ADO を使って行うことができます。](what-you-can-do-with-ado.md)
-- [Errors](errors.md)
+- [エラー](errors.md)
 - [HelloData: 単純な ADO アプリケーション (ADO)](hellodata-a-simple-ado-application.md)
 - [OLE DB プロバイダー (ADO)](ole-db-providers.md)

@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193209(v=office.15)
 ms:contentKeyID: 48544594
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3339a75a121d67345610334df7ff6a58b5ab6c9c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 7e18bb9ecb65e2664b082d5305196386c536b716
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931212"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28698023"
 ---
 # <a name="comment-macro-statement"></a>Comment マクロ ステートメント
 
@@ -20,7 +21,7 @@ ms.locfileid: "25931212"
 
 **Comment** ステートメントを使用して、マクロに説明コメントを指定できます。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **Comment** には、最大 1000 文字まで使用できます。ただし、既定ではコメントの先頭行のみが表示されます。
 

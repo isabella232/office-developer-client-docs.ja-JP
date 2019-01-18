@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248951(v=office.15)
 ms:contentKeyID: 48543525
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 66a62128a8ad8828c501cdaf899448edd9f1d37f
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: b3b83eb87b181320c86e1aea91ede70cd173a5ce
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949874"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28717567"
 ---
 # <a name="open-method-ado-connection"></a>Open メソッド (ADO Connection)
 
@@ -28,7 +29,7 @@ ms.locfileid: "25949874"
 |パラメーター|説明|
 |:--------|:----------|
 |*ConnectionString* |省略可能です。接続情報を含む文字列型 ( **String** ) の値です。有効な設定値の詳細については、 [ConnectionString](connectionstring-property-ado.md) プロパティを参照してください。|
-|*ユーザー Id* |省略可能です。接続を確立するときに使用するユーザー名を含む、文字列型 ( **String** ) の値です。|
+|*UserID* |省略可能です。接続を確立するときに使用するユーザー名を含む、文字列型 ( **String** ) の値です。|
 |*Password* |省略可能です。接続を確立するときに使用するパスワードを含む、文字列型 ( **String** ) の値です。|
 |*Options* |省略可能です。接続が確立された後 (同期) または接続が確立される前 (非同期) のどちらでこのメソッドが返るかを指定する [ConnectOptionEnum](connectoptionenum.md) 値です。|
 

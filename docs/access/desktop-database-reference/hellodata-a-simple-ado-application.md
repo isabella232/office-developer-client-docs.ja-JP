@@ -1,19 +1,20 @@
 ---
-title: 'HelloData: 単純な ADO アプリケーション'
+title: 'HelloData: 簡単な ADO アプリケーション'
 TOCTitle: 'HelloData: A simple ADO application'
 ms:assetid: c271abeb-8865-81f9-db8e-47d3db87ad30
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249950(v=office.15)
 ms:contentKeyID: 48547554
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 359816f828191a8643941a21ac520ba7b3231e6b
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 3c7d9be9b91b3f847516eb3c22aa37e46c8a551d
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998204"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28703497"
 ---
-# <a name="hellodata-a-simple-ado-application"></a>HelloData: 単純な ADO アプリケーション
+# <a name="hellodata-a-simple-ado-application"></a>HelloData: 簡単な ADO アプリケーション
 
 **適用されます**Access 2013、Office 2013。
 
@@ -75,7 +76,7 @@ ADO ライブラリ検索の例として、"HelloData" という単純な ADO �
 <td><p>grdDisplay1</p></td>
 </tr>
 <tr class="odd">
-<td><p>テキスト ボックス</p></td>
+<td><p>TextBox</p></td>
 <td><p>Name</p></td>
 <td><p>txtDisplay1</p></td>
 </tr>

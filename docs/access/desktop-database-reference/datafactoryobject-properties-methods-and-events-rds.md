@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250075(v=office.15)
 ms:contentKeyID: 48547971
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 86ad613da0cc438b01593c79521aa80dfd666b43
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 3febbf56077ad1961ee0e0dd122ef2d0508d6878
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919319"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28720143"
 ---
 # <a name="datafactory-properties-methods-and-events-rds"></a>DataFactory のプロパティ、メソッド、およびイベント (RDS)
 
@@ -20,7 +21,7 @@ ms.locfileid: "25919319"
 
 
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 なし。
 

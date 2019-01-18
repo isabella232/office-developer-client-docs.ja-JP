@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195857(v=office.15)
 ms:contentKeyID: 48545637
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 306962eda3430a1797cf79dc04a34d2e55e9daf8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 31791e9fb3c7081989232e36a90b184ed7e31866
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930974"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28699255"
 ---
 # <a name="recordset2bookmark-property-dao"></a>Recordset2.Bookmark プロパティ (DAO)
 
@@ -26,7 +27,7 @@ ms.locfileid: "25930974"
 
 *式***Recordset2**オブジェクトを表す変数です。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **レコード セット**オブジェクトを Microsoft Access データベース エンジンのテーブルを基に、 **Bookmarkable**プロパティの値は、true の場合、およびそのレコード セットの**Bookmark**プロパティを使用することができます。 ただし、他のデータベース製品はブックマークをサポートしていない場合があります。 たとえば、主キーを持たないリンク テーブルの Paradox に準拠する **Recordset2** オブジェクトではブックマークを使用できません。
 

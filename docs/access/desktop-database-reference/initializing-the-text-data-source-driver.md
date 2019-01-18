@@ -10,12 +10,13 @@ f1_keywords:
 - acmain11.chm1032166
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 9b240dbf55d2907b24b47349ee56e492f7d5e08d
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 2e76cc7d6b5254f2347e2264b0588ee1df643d05
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026464"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28709139"
 ---
 # <a name="initializing-the-text-data-source-driver"></a>テキスト データ ソース ドライバーを初期化しています。
 

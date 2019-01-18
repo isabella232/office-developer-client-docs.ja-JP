@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192303(v=office.15)
 ms:contentKeyID: 48544076
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 874ac5f6e5b26a5d7e3aa4b34d85e8ee548040b6
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: fe60c12a85eff0dd8f796f9affeef71979dac580
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922931"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28699143"
 ---
 # <a name="property-members-dao"></a>プロパティのメンバー (DAO)
 
@@ -20,7 +21,7 @@ ms.locfileid: "25922931"
 
 Property オブジェクトは、DAO オブジェクトの組み込みまたはユーザー定義の特性を表します。
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 <table>
 <colgroup>

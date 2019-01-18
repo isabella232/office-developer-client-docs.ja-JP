@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249205(v=office.15)
 ms:contentKeyID: 48544511
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9de748b85e4bf6076c37f49e9d9bc7ff3b0bfe62
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: a5fc1c284ee7aae77c4fb067ad57d50200119594
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947573"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28700025"
 ---
 # <a name="datafactory-customization"></a>DataFactory のカスタマイズ
 
@@ -34,6 +35,6 @@ ADO では、 **DataFactory**の作業別の種類のサーバー プログラ�
 - [カスタマイズ ファイルの接続] セクション](customization-file-connect-section.md)
 - [カスタマイズ ファイルの SQL セクション](customization-file-sql-section.md)
 - [カスタマイズ ファイルの UserList セクション](customization-file-userlist-section.md)
-- [カスタマイズ ファイルのログのセクション](customization-file-logs-section.md)
-- [必要なクライアントの設定](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/required-client-settings)
+- [カスタマイズ ファイルの Logs セクション](customization-file-logs-section.md)
+- [クライアントで必要な設定](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/required-client-settings)
 - [独自のカスタマイズされたハンドラーを記述します。](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/writing-your-own-customized-handler)

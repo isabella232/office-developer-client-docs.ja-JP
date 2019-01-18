@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197681(v=office.15)
 ms:contentKeyID: 48546422
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 39c1366a182f1757abdcbf4b36a19b553eb2b680
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 098f44d87390351c23e61000ecbe47eae35810ae
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936764"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28703903"
 ---
 # <a name="connection-members-dao"></a>接続メンバー (DAO)
 
@@ -47,7 +48,7 @@ ms.locfileid: "25936764"
 <td><p>新しい <strong><a href="querydef-object-dao.md">QueryDef</a></strong> オブジェクトを作成します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="connection-execute-method-dao.md">Execute</a></strong></p></td>
+<td><p><strong><a href="connection-execute-method-dao.md">実行</a></strong></p></td>
 <td><p>指定したオブジェクトのアクション クエリまたは SQL ステートメントを実行します。</p></td>
 </tr>
 <tr class="odd">
@@ -58,7 +59,7 @@ ms.locfileid: "25936764"
 </table>
 
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 <table>
 <colgroup>
@@ -85,7 +86,7 @@ ms.locfileid: "25936764"
 <td><p><strong><a href="connection-object-dao.md">Connection</a></strong> オブジェクトの名前を取得します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="connection-querydefs-property-dao.md">クエリ定義</a></strong></p></td>
+<td><p><strong><a href="connection-querydefs-property-dao.md">QueryDefs</a></strong></p></td>
 <td><p>指定した接続のすべての <strong>QueryDef</strong> オブジェクトを含む <strong>QueryDefs</strong> コレクションを返します。値の取得のみ可能です。</p></td>
 </tr>
 <tr class="odd">

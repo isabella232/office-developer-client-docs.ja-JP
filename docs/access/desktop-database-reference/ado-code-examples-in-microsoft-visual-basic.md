@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249342(v=office.15)
 ms:contentKeyID: 48545145
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 184100c09c2b5e34f98bf29711bf9f176fa034a8
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 8237e9f846bb012c593bf4d94c83bac835daf28d
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910916"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702405"
 ---
 # <a name="ado-code-examples-in-microsoft-visual-basic"></a>Microsoft Visual Basic での ADO コードの例
 
@@ -41,7 +42,7 @@ Visual Basic で記述するときの ADO のメソッド、プロパティ、�
 - [GetRows メソッドの使用例](getrows-method-example-vb.md)
 - [GetString メソッドの使用例](getstring-method-example-vb.md)
 - [SkipLine メソッド、EOS、および LineSeparator プロパティの使用例](eos-and-lineseparator-properties-and-skipline-method-example-vb.md)
-- [Move メソッドの使用例](move-method-example-vb.md)
+- [Move メソッドの使用例 (VB)](move-method-example-vb.md)
 - [MoveFirst、MoveLast、MoveNext、および MovePrevious メソッドの使用例](movefirst-movelast-movenext-and-moveprevious-methods-example-vb.md)
 - [NextRecordset メソッドの使用例](nextrecordset-method-example-vb.md)
 - [開いたり閉じたりする方法の例](open-and-close-methods-example-vb.md)
@@ -55,7 +56,7 @@ Visual Basic で記述するときの ADO のメソッド、プロパティ、�
 - [更新と CancelUpdate メソッドの使用例](update-and-cancelupdate-methods-example-vb.md)
 - [UpdateBatch、および CancelBatch メソッドの使用例](updatebatch-and-cancelbatch-methods-example-vb.md)
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 - [AbsolutePage、PageCount、および PageSize プロパティの使用例](absolutepage-pagecount-and-pagesize-properties-example-vb.md)
 - [AbsolutePosition と CursorLocation プロパティの使用例](absoluteposition-and-cursorlocation-properties-example-vb.md)
@@ -66,7 +67,7 @@ Visual Basic で記述するときの ADO のメソッド、プロパティ、�
 - [Bof プロパティ、EOF、およびブックマークのプロパティの例](bof-eof-and-bookmark-properties-example-vb.md)
 - [CacheSize プロパティの使用例](cachesize-property-example-vb.md)
 - [ConnectionString、タイムアウト、および状態のプロパティの例](connectionstring-connectiontimeout-and-state-properties-example-vb.md)
-- [Count プロパティの使用例](count-property-example-vb.md)
+- [Count プロパティの使用例 (VJ++)](count-property-example-vb.md)
 - [CursorType、LockType、および EditMode プロパティの使用例](cursortype-locktype-and-editmode-properties-example-vb.md)
 - [説明、HelpContext、HelpFile、以下、番号、ソース、および SQLState プロパティの使用例](description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vb.md)
 - [EOS プロパティと LineSeparator プロパティ、SkipLine メソッドの使用例](eos-and-lineseparator-properties-and-skipline-method-example-vb.md)
@@ -87,6 +88,6 @@ Visual Basic で記述するときの ADO のメソッド、プロパティ、�
 - [StayInSync プロパティの使用例](stayinsync-property-example-vb.md)
 - [プロパティの使用例 (フィールド) を入力します。](type-property-example-field-vb.md)
 - [プロパティの使用例 (プロパティ) を入力します。](type-property-example-property-vb.md)
-- [値プロパティの使用例](value-property-example-vb.md)
+- [Value プロパティの使用例 (VJ++)](value-property-example-vb.md)
 - [バージョン プロパティの使用例](version-property-example-vb.md)
 

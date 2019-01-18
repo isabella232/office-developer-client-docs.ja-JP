@@ -1,19 +1,20 @@
 ---
-title: Visual C++ の ADO プログラミング
+title: Visual C++ ADO プログラミング
 TOCTitle: Visual C++ ADO programming
 ms:assetid: 117c4fad-8c11-5e3a-ea0c-18811e87475f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248878(v=office.15)
 ms:contentKeyID: 48543319
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5278a998363359f4bd2aad14881865505ce45633
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 2a890b4906fb9f207f12ff17ef0d3ccf1a97a44d
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998414"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28721291"
 ---
-# <a name="visual-c-ado-programming"></a>Visual C++ の ADO プログラミング
+# <a name="visual-c-ado-programming"></a>Visual C++ ADO プログラミング
 
 **適用されます**Access 2013、Office 2013。
 
@@ -280,7 +281,7 @@ rs->Open(...);
 
 ### <a name="coding-a-missing-parameter"></a>欠落しているパラメーターのコーディング
 
-#### <a name="string"></a>文字列
+#### <a name="string"></a>String
 
 Visual Basic で省略可能な文字列型 ( **String** ) のオペランドをコーディングする場合は、単純にそのオペランドを省略します。 Visual C++ では、そのオペランドを指定する必要があります。 コードは**\_bstr\_t**の値として空の文字列を持ちます。
 
@@ -289,7 +290,7 @@ Visual Basic で省略可能な文字列型 ( **String** ) のオペランドを
 _bstr_t strMissing(L""); 
 ```
 
-#### <a name="variant"></a>バリアント型 (Variant)
+#### <a name="variant"></a>バリアント型
 
 Visual Basic で省略可能なバリアント型 ( **Variant** ) のオペランドをコーディングする場合は、単純にそのオペランドを省略します。 Visual C++ では、そのオペランドを指定する必要があります。 コードで不足している**バリアント型**パラメーター、**\_バリアント\_t**変位、特別な値に設定\_E\_PARAMNOTFOUND、および、型の VT\_エラーです。 **VtMissing**同等であるの代わりに、指定によって定義済みの定数が指定された、**\#インポート**ディレクティブです。
 

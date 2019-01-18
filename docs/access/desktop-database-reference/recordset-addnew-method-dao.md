@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052883
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b9a9a5624697779bb7231626b7440d8db9c40244
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 79c8691fcea7cf04bac7d6cd05711730b510e215
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25996819"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28703945"
 ---
 # <a name="recordsetaddnew-method-dao"></a>Recordset.AddNew メソッド (DAO)
 
@@ -29,7 +30,7 @@ ms.locfileid: "25996819"
 
 *式***レコード セット**オブジェクトを表す変数です。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **AddNew** メソッドを使用して、レコードセットによって名付けられた **Recordset** オブジェクトに新しいレコードを作成して追加します。このメソッドによってフィールドは既定値に設定されますが、既定値が指定されていない場合は Null (**Recordset** というテーブル タイプに指定されている既定値) に設定されます。
 

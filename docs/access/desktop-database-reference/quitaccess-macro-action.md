@@ -10,12 +10,13 @@ f1_keywords:
 - vbaac10.chm96777
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 793e6c2e57f50b5086780d8632952c45f3d4442d
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 424b2b2cab9bc4272052a201350a0cc2ab297b8c
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997986"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28698310"
 ---
 # <a name="quitaccess-macro-action"></a>QuitAccess マクロ アクション
 
@@ -43,7 +44,7 @@ ms.locfileid: "25997986"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Options</strong></p></td>
+<td><p><strong>オプション</strong></p></td>
 <td><p>Access の終了時の未保存のオブジェクトに対する処理を指定します。[マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>オプション</strong>] ボックスで、ダイアログ ボックスを表示してオブジェクトごとに保存するかどうかを指定する場合は [<strong>確認</strong>]、ダイアログ ボックスを表示せずにすべてのオブジェクトを保存する場合は [<strong>すべて保存</strong>]、オブジェクトを保存せずに終了する場合は [<strong>終了</strong>] をクリックします。既定値は [<strong>すべて保存</strong>] です。</p></td>
 </tr>
 </tbody>

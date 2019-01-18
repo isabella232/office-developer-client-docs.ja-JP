@@ -1,19 +1,20 @@
 ---
-title: Delete メソッドを使用してレコードを削除します。
+title: Delete メソッドによるレコードの削除
 TOCTitle: Deleting records using the Delete method
 ms:assetid: 22917c33-4d14-ebab-d85c-2cbe7f68c560
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249003(v=office.15)
 ms:contentKeyID: 48543708
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a8f9097f791596f45f574749d98919b61f67cb4f
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: a476e9bc57224b0e46afb31bf092450c26de0a17
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944495"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28699066"
 ---
-# <a name="deleting-records-using-the-delete-method"></a>Delete メソッドを使用してレコードを削除します。
+# <a name="deleting-records-using-the-delete-method"></a>Delete メソッドによるレコードの削除
 
 
 **適用されます**Access 2013、Office 2013。

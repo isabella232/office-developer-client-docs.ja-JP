@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249060(v=office.15)
 ms:contentKeyID: 48543926
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8ab9723d3acc698aa36210e26e370c0edfa67728
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 98342d5456c545e6da8539c11f616c08fd52a932
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25924233"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28701279"
 ---
 # <a name="adorecordsetconstruction-interface-ado"></a>ADORecordsetConstruction インターフェイス (ADO)
 
@@ -32,17 +33,17 @@ ms.locfileid: "25924233"
 <tbody>
 <tr class="odd">
 <td><p><a href="chapter-property-ado.md">章</a></p></td>
-<td><p>読み取り/書き込み。<br />
+<td><p>読み取り/書き込み可能。<br />
 <strong>章</strong>の OLE DB オブジェクトから/この ADO<strong>レコード セット</strong>オブジェクトを取得または設定します。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="rowposition-property-ado.md">RowPosition</a></p></td>
-<td><p>読み取り/書き込み。<br />
+<td><p>読み取り/書き込み可能。<br />
 OLE DB <strong>RowPosition</strong>オブジェクトから/この ADO<strong>レコード セット</strong>オブジェクトを取得または設定します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="rowset-property-ado.md">行セット</a></p></td>
-<td><p>読み取り/書き込み。<br />
+<td><p>読み取り/書き込み可能。<br />
 /に ADO<strong>レコード セット</strong>オブジェクトには、OLE DB<strong>行セット</strong>オブジェクトを取得または設定します。</p></td>
 </tr>
 </tbody>
@@ -57,7 +58,7 @@ OLE DB <strong>RowPosition</strong>オブジェクトから/この ADO<strong>�
 
 なし
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 次の 3 つの基本的な操作を OLE DB の**行セット**オブジェクトのため、ADO**レコード セット**オブジェクトの () の構築、ADO**レコード セット**のオブジェクト (どちら) 金額の構築を指定します。
 

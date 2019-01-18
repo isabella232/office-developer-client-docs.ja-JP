@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192304(v=office.15)
 ms:contentKeyID: 48544077
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 14f3cd56323b68f54228e01413f984542c7f3c1a
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 1175e3903e54fd3420be43dfd9e3652d9990468b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944516"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28722929"
 ---
 # <a name="messagebox-macro-action"></a>MessageBox マクロ アクション
 
@@ -48,7 +49,7 @@ ms.locfileid: "25944516"
 <td><p>メッセージ ボックスの種類を指定します。種類ごとにアイコンが異なります。[<strong>なし</strong>]、[<strong>警告</strong>]、[<strong>注意?</strong>]、[<strong>注意!</strong>]、または [<strong>情報</strong>] をクリックします。既定値は [<strong>なし</strong>] です。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>タイトル</strong></p></td>
+<td><p><strong>Title</strong></p></td>
 <td><p>メッセージ ボックスのタイトル バーに表示されるテキストです。 タイトル バーの表示を持つことができますたとえば、&quot;顧客 ID の検証&quot;。 この引数を空白のままにする場合は、 &quot;Access&quot;が表示されます。</p></td>
 </tr>
 </tbody>

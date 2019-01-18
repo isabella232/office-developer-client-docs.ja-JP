@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248842(v=office.15)
 ms:contentKeyID: 48543166
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0f1443d1f2a4eccd8599256425a971bc63cd4d8b
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 653291ade258d602d7ec523dcac7e9fe51dd91fb
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25918983"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702027"
 ---
 # <a name="update-resync-dynamic-property-ado"></a>再同期の動的なプロパティ (ADO) を更新します。
 
@@ -24,7 +25,7 @@ ms.locfileid: "25918983"
 
 いずれかを取得または設定します[ADCPROP\_UPDATERESYNC\_列挙型](adcprop-updateresync-enum.md)の値です。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 ADCPROP の値\_UPDATERESYNC\_既に残りの値の組み合わせを表す adResyncAll を除いて、列挙型を組み合わせることができます。
 

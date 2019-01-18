@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249268(v=office.15)
 ms:contentKeyID: 48544836
 ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 63b4ae569ce76c480725853e119b4807dd121758
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 95e5744d5e19e7c3d40de19e240bbe338b2d5d55
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25882820"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28701131"
 ---
 # <a name="cursorlocationenum"></a>CursorLocationEnum
 
@@ -48,7 +49,7 @@ ms.locfileid: "25882820"
 <tr class="odd">
 <td><p><strong>adUseServer</strong></p></td>
 <td><p>2</p></td>
-<td><p>既定値です。 データ プロバイダーまたはドライバーによって提供されるカーソルを使用します。 これらのカーソルは、非常に柔軟性のある場合があり、データ ソースに加える他のユーザーの変更を検出できるようにします。 ただし、サーバー側カーソル (<a href="recordset-object-ado.md">レコード セット</a>オブジェクトを作り出す) などの<a href="microsoft-cursor-service-for-ole-db-ado-service-component.md">OLE DB のカーソル サービスをマイクロソフト</a>の一部の機能をシミュレートすることはできませんし、これらの機能はこの設定では利用できません。</p></td>
+<td><p>既定値。 データ プロバイダーまたはドライバーによって提供されるカーソルを使用します。 これらのカーソルは、非常に柔軟性のある場合があり、データ ソースに加える他のユーザーの変更を検出できるようにします。 ただし、サーバー側カーソル (<a href="recordset-object-ado.md">レコード セット</a>オブジェクトを作り出す) などの<a href="microsoft-cursor-service-for-ole-db-ado-service-component.md">OLE DB のカーソル サービスをマイクロソフト</a>の一部の機能をシミュレートすることはできませんし、これらの機能はこの設定では利用できません。</p></td>
 </tr>
 </tbody>
 </table>

@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249806(v=office.15)
 ms:contentKeyID: 48547019
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fea6f59479578cfd701b1adeece609c6595583a1
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: d49605e923f13cd423b7ad0ac6b0d1ef64b94841
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947799"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702237"
 ---
 # <a name="recordset-properties-methods-and-events-ado"></a>レコード セットのプロパティ、メソッド、およびイベント (ADO)
 
@@ -23,11 +24,11 @@ ms.locfileid: "25947799"
 - [AbsolutePosition プロパティ](absoluteposition-property-ado.md)
 - [ActiveCommand プロパティ](activecommand-property-ado.md)
 - [ActiveConnection プロパティ](activeconnection-property-ado.md)
-- [Bof プロパティ、EOF プロパティ](bof-eof-properties-ado.md)
+- [BOF プロパティと EOF プロパティ](bof-eof-properties-ado.md)
 - [Bookmark プロパティ](bookmark-property-ado.md)
 - [CacheSize プロパティ](cachesize-property-ado.md)
 - [CursorLocation プロパティ](cursorlocation-property-ado.md)
-- [CursorType プロパティには](cursortype-property-ado.md)
+- [CursorType プロパティ](cursortype-property-ado.md)
 - [DataMember プロパティ](datamember-property-ado.md)
 - [DataSource プロパティ](datasource-property-ado.md)
 - [EditMode プロパティ](editmode-property-ado.md)
@@ -43,7 +44,7 @@ ms.locfileid: "25947799"
 - [RecordCount プロパティ](recordcount-property-ado.md)
 - [Sort プロパティ](sort-property-ado.md)
 - [Source プロパティ (ADO Recordset)](source-property-ado-recordset.md)
-- [状態プロパティ](state-property-ado.md)
+- [State プロパティ](state-property-ado.md)
 - [Status プロパティ (ADO Recordset)](status-property-ado-recordset.md)
 - [StayInSync プロパティ](stayinsync-property-ado.md)
 
@@ -57,19 +58,19 @@ ms.locfileid: "25947799"
 - [Clone メソッド](clone-method-ado.md)
 - [Close メソッド](close-method-ado.md)
 - [CompareBookmarks メソッド](comparebookmarks-method-ado.md)
-- [Delete メソッド (ADO レコードセット)](delete-method-ado-recordset.md)
+- [Delete メソッド (ADO Recordset)](delete-method-ado-recordset.md)
 - [Find メソッド](find-method-ado.md)
 - [GetRows メソッド](getrows-method-ado.md)
 - [GetString メソッド](getstring-method-ado.md)
 - [Move メソッド](move-method-ado.md)
-- [MoveFirst、MoveLast、MoveNext、および MovePrevious メソッド](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)
+- [MoveFirst メソッド、MoveLast メソッド、MoveNext メソッド、MovePrevious メソッド](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)
 - [NextRecordset メソッド](nextrecordset-method-ado.md)
 - [Open メソッド (ADO Recordset)](open-method-ado-recordset.md)
 - [Requery メソッド](requery-method-ado.md)
 - [Resync メソッド](resync-method-ado.md)
-- [メソッドを保存します。](save-method-ado.md)
+- [Save メソッド](save-method-ado.md)
 - [Seek メソッド](seek-method-ado.md)
-- [メソッドをサポートしています。](supports-method-ado.md)
+- [Supports メソッド](supports-method-ado.md)
 - [Update メソッド](update-method-ado.md)
 - [UpdateBatch メソッド](updatebatch-method-ado.md)
 
@@ -79,9 +80,9 @@ ms.locfileid: "25947799"
 - [EndOfRecordset イベント](endofrecordset-event-ado.md)
 - [FetchComplete イベント](fetchcomplete-event-ado.md)
 - [FetchProgress イベント](fetchprogress-event-ado.md)
-- [WillChangeField と FieldChangeComplete イベント](willchangefield-and-fieldchangecomplete-events-ado.md)
-- [WillChangeRecord と RecordChangeComplete イベント](willchangerecord-and-recordchangecomplete-events-ado.md)
-- [WillChangeRecordset と RecordsetChangeComplete イベント](willchangerecordset-and-recordsetchangecomplete-events-ado.md)
-- [WillMove および MoveComplete イベント](willmove-and-movecomplete-events-ado.md)
+- [WillChangeField イベントと FieldChangeComplete イベント](willchangefield-and-fieldchangecomplete-events-ado.md)
+- [WillChangeRecord イベントと RecordChangeComplete イベント](willchangerecord-and-recordchangecomplete-events-ado.md)
+- [WillChangeRecordset イベントと RecordsetChangeComplete イベント](willchangerecordset-and-recordsetchangecomplete-events-ado.md)
+- [WillMove イベントと MoveComplete イベント](willmove-and-movecomplete-events-ado.md)
 
 

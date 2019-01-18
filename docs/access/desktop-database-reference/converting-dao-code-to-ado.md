@@ -10,12 +10,13 @@ f1_keywords:
 - vbaac10.chm5267115
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 60baeabfce93c2987cb9621c7cc877a7525a954c
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 77d56efd63d6a0841b595f12456baa808751706e
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25876744"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28720339"
 ---
 # <a name="convert-dao-code-to-ado"></a>DAO コードを ADO に変換する
 
@@ -36,7 +37,7 @@ ms.locfileid: "25876744"
 <tr class="header">
 <th><p><strong>DAO</strong></p></th>
 <th><p><strong>ADO (ADODB)</strong></p></th>
-<th><p><strong>メモ</strong></p></th>
+<th><p><strong>注</strong></p></th>
 </tr>
 </thead>
 <tbody>

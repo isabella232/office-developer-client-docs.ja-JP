@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff837300(v=office.15)
 ms:contentKeyID: 48548953
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 94bb24fcd6df83f06a704c8569a1a6391638ad91
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 7ab090dd6cf0b6e2676cf05907ac77c438f22652
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923533"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28711708"
 ---
 # <a name="recordsetfilter-property-dao"></a>Recordset.Filter プロパティ (DAO)
 
@@ -33,7 +34,7 @@ ms.locfileid: "25923533"
 
 **Filter** プロパティを使用すると、既存の **Recordset** オブジェクトに基づいて新しい **Recordset** オブジェクトを開くときに、既存のオブジェクトから取得するレコードを制限できます。
 
-(月-日-年) 米国の日付形式を使用して、米国版の Microsoft Access データベース エンジンを使用していない場合でも、日付を含むフィールドをフィルターするとき (文字列、たとえば、strMonth を連結することにより、任意の日付をアセンブリする必要が場合 &"-"& strDay &"、"& strYear)。 この形式で構成されていない場合、データが予期したとおりにフィルター処理されないことがあります。
+(月-日-年) 米国の日付形式を使用して、米国版の Microsoft Access データベース エンジンを使用していない場合でも、日付を含むフィールドをフィルターするとき (場合に、たとえば、strMonth & の文字列を連結することにより任意の日付をアセンブリする必要が"-"& strDay &"-"& strYear)。 この形式で構成されていない場合、データが予期したとおりにフィルター処理されないことがあります。
 
 多くの場合、WHERE 句が含まれた SQL ステートメントを使用すると、より短時間で新しい **Recordset** オブジェクトを開くことができます。
 

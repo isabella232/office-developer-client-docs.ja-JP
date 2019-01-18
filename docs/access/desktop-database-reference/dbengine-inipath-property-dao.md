@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1053070
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: fd744f10d212d8ff0f7c78ca72781869ccdcd57e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: f14f9f2d028bb8a9a8e71bc9d7b97ea5672466f1
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928762"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28717630"
 ---
 # <a name="dbengineinipath-property-dao"></a>DBEngine.IniPath プロパティ (DAO)
 
@@ -32,7 +33,7 @@ Microsoft Access データベース エンジン用の値が含まれた Windows
 
 ## <a name="remarks"></a>注釈
 
-Windows レジストリを使用して Microsoft Access データベース エンジンを構成できます。このレジストリを使用すると、インストール可能な ISAM DLL などのオプションを設定できます。
+Windows レジストリには、Microsoft Access データベース エンジンを構成できます。 このレジストリを使用すると、インストール可能な ISAM DLL などのオプションを設定できます。
 
 このオプションを有効にするには、 **IniPath** プロパティを設定してから、アプリケーションで他の DAO コードを呼び出す必要があります。この設定の有効範囲は使用するアプリケーションに限定され、範囲を変更するにはアプリケーションを再起動する必要があります。
 
