@@ -6,26 +6,27 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197940(v=office.15)
 ms:contentKeyID: 48546489
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6db35b060d59891bfc33bb75c6e6bb370fb3dc9a
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 9510faab9035f2b2cbcccae0a8ddefa484a95cb1
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998231"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28700648"
 ---
-# <a name="recordset2seek-method-dao"></a><span data-ttu-id="d96db-102">Recordset2.Seek メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="d96db-102">Recordset2.Seek method (DAO)</span></span>
+# <a name="recordset2seek-method-dao"></a><span data-ttu-id="865e8-102">Recordset2.Seek メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="865e8-102">Recordset2.Seek method (DAO)</span></span>
 
-<span data-ttu-id="d96db-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="d96db-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="865e8-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="865e8-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="d96db-104">インデックス付きのテーブル タイプの **Recordset** オブジェクトで、現在のインデックスの指定された条件を満たすレコードを検索し、そのレコードをカレント レコードにします (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="d96db-104">Locates the record in an indexed table-type **Recordset** object that satisfies the specified criteria for the current index and makes that record the current record (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="865e8-104">インデックス付きのテーブル タイプの **Recordset** オブジェクトで、現在のインデックスの指定された条件を満たすレコードを検索し、そのレコードをカレント レコードにします (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="865e8-104">Locates the record in an indexed table-type **Recordset** object that satisfies the specified criteria for the current index and makes that record the current record (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d96db-105">構文</span><span class="sxs-lookup"><span data-stu-id="d96db-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="865e8-105">構文</span><span class="sxs-lookup"><span data-stu-id="865e8-105">Syntax</span></span>
 
-<span data-ttu-id="d96db-106">*式*です。(***比較***、 ***Key1***、 ***Key2***、 ***key3 以降***、 ***Key4***、 ***Key5***、 ***Key6***、 ***Key7***、 ***Key8***、 ***Key9***、 ***Key10***、 ***Key11***、 ***Key12***、 ***Key13***) を求める</span><span class="sxs-lookup"><span data-stu-id="d96db-106">*expression* .Seek(***Comparison***, ***Key1***, ***Key2***, ***Key3***, ***Key4***, ***Key5***, ***Key6***, ***Key7***, ***Key8***, ***Key9***, ***Key10***, ***Key11***, ***Key12***, ***Key13***)</span></span>
+<span data-ttu-id="865e8-106">*式*です。(***比較***、 ***Key1***、 ***Key2***、 ***key3 以降***、 ***Key4***、 ***Key5***、 ***Key6***、 ***Key7***、 ***Key8***、 ***Key9***、 ***Key10***、 ***Key11***、 ***Key12***、 ***Key13***) を求める</span><span class="sxs-lookup"><span data-stu-id="865e8-106">*expression* .Seek(***Comparison***, ***Key1***, ***Key2***, ***Key3***, ***Key4***, ***Key5***, ***Key6***, ***Key7***, ***Key8***, ***Key9***, ***Key10***, ***Key11***, ***Key12***, ***Key13***)</span></span>
 
-<span data-ttu-id="d96db-107">\*式\***Recordset2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="d96db-107">*expression* A variable that represents a **Recordset2** object.</span></span>
+<span data-ttu-id="865e8-107">\*式\***Recordset2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="865e8-107">*expression* A variable that represents a **Recordset2** object.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="d96db-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d96db-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="865e8-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="865e8-108">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -36,54 +37,54 @@ ms.locfileid: "25998231"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="d96db-109">名前</span><span class="sxs-lookup"><span data-stu-id="d96db-109">Name</span></span></p></th>
-<th><p><span data-ttu-id="d96db-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="d96db-110">Required/optional</span></span></p></th>
-<th><p><span data-ttu-id="d96db-111">データ型</span><span class="sxs-lookup"><span data-stu-id="d96db-111">Data type</span></span></p></th>
-<th><p><span data-ttu-id="d96db-112">説明</span><span class="sxs-lookup"><span data-stu-id="d96db-112">Description</span></span></p></th>
+<th><p><span data-ttu-id="865e8-109">名前</span><span class="sxs-lookup"><span data-stu-id="865e8-109">Name</span></span></p></th>
+<th><p><span data-ttu-id="865e8-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="865e8-110">Required/optional</span></span></p></th>
+<th><p><span data-ttu-id="865e8-111">データ型</span><span class="sxs-lookup"><span data-stu-id="865e8-111">Data type</span></span></p></th>
+<th><p><span data-ttu-id="865e8-112">説明</span><span class="sxs-lookup"><span data-stu-id="865e8-112">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="d96db-113"><em>Comparison</em></span><span class="sxs-lookup"><span data-stu-id="d96db-113"><em>Comparison</em></span></span></p></td>
-<td><p><span data-ttu-id="d96db-114">必須</span><span class="sxs-lookup"><span data-stu-id="d96db-114">Required</span></span></p></td>
-<td><p><span data-ttu-id="d96db-115"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="d96db-115"><strong>String</strong></span></span></p></td>
-<td><p><span data-ttu-id="d96db-116">&lt;、&lt;=、=、&gt;=、&gt; のうちいずれかの文字列式です。</span><span class="sxs-lookup"><span data-stu-id="d96db-116">One of the following string expressions: &lt;, &lt;=, =, &gt;=, or &gt;.</span></span></p></td>
+<td><p><span data-ttu-id="865e8-113"><em>Comparison</em></span><span class="sxs-lookup"><span data-stu-id="865e8-113"><em>Comparison</em></span></span></p></td>
+<td><p><span data-ttu-id="865e8-114">必須</span><span class="sxs-lookup"><span data-stu-id="865e8-114">Required</span></span></p></td>
+<td><p><span data-ttu-id="865e8-115"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="865e8-115"><strong>String</strong></span></span></p></td>
+<td><p><span data-ttu-id="865e8-116">&lt;、&lt;=、=、&gt;=、&gt; のうちいずれかの文字列式です。</span><span class="sxs-lookup"><span data-stu-id="865e8-116">One of the following string expressions: &lt;, &lt;=, =, &gt;=, or &gt;.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="d96db-117"><em>Key1, Key2...Key13</em></span><span class="sxs-lookup"><span data-stu-id="d96db-117"><em>Key1, Key2...Key13</em></span></span></p></td>
-<td><p><span data-ttu-id="d96db-118">必須</span><span class="sxs-lookup"><span data-stu-id="d96db-118">Required</span></span></p></td>
-<td><p><span data-ttu-id="d96db-119"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="d96db-119"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="d96db-120"><strong>Recordset</strong> オブジェクトの <strong>Index</strong> プロパティの設定で指定された現在のインデックスのフィールドに対応する 1 つ以上の値です。</span><span class="sxs-lookup"><span data-stu-id="d96db-120">One or more values corresponding to fields in the <strong>Recordset</strong> object's current index, as specified by its <strong>Index</strong> property setting.</span></span> <span data-ttu-id="d96db-121">引数 key は最大 13 個まで使用できます。</span><span class="sxs-lookup"><span data-stu-id="d96db-121">You can use up to 13 key arguments.</span></span></p></td>
+<td><p><span data-ttu-id="865e8-117"><em>Key1, Key2...Key13</em></span><span class="sxs-lookup"><span data-stu-id="865e8-117"><em>Key1, Key2...Key13</em></span></span></p></td>
+<td><p><span data-ttu-id="865e8-118">必須</span><span class="sxs-lookup"><span data-stu-id="865e8-118">Required</span></span></p></td>
+<td><p><span data-ttu-id="865e8-119"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="865e8-119"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="865e8-120"><strong>Recordset</strong> オブジェクトの <strong>Index</strong> プロパティの設定で指定された現在のインデックスのフィールドに対応する 1 つ以上の値です。</span><span class="sxs-lookup"><span data-stu-id="865e8-120">One or more values corresponding to fields in the <strong>Recordset</strong> object's current index, as specified by its <strong>Index</strong> property setting.</span></span> <span data-ttu-id="865e8-121">引数 key は最大 13 個まで使用できます。</span><span class="sxs-lookup"><span data-stu-id="865e8-121">You can use up to 13 key arguments.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="d96db-122">注釈</span><span class="sxs-lookup"><span data-stu-id="d96db-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="865e8-122">注釈</span><span class="sxs-lookup"><span data-stu-id="865e8-122">Remarks</span></span>
 
-<span data-ttu-id="d96db-p102">**Seek** を使用する前に、 **Index** プロパティで現在のインデックスを設定しておく必要があります。インデックスが一意でないキー フィールドを指している場合、 **Seek** は条件を満たす最初のレコードを返します。</span><span class="sxs-lookup"><span data-stu-id="d96db-p102">You must set the current index with the **Index** property before you use **Seek**. If the index identifies a nonunique key field, **Seek** locates the first record that satisfies the criteria.</span></span>
+<span data-ttu-id="865e8-p102">**Seek** を使用する前に、 **Index** プロパティで現在のインデックスを設定しておく必要があります。インデックスが一意でないキー フィールドを指している場合、 **Seek** は条件を満たす最初のレコードを返します。</span><span class="sxs-lookup"><span data-stu-id="865e8-p102">You must set the current index with the **Index** property before you use **Seek**. If the index identifies a nonunique key field, **Seek** locates the first record that satisfies the criteria.</span></span>
 
-<span data-ttu-id="d96db-125">**Seek**メソッドは、指定されたキー フィールドを検索し、key1 と対照的に指定した抽出条件を満たす最初のレコードを検索します。</span><span class="sxs-lookup"><span data-stu-id="d96db-125">The **Seek** method searches through the specified key fields and locates the first record that satisfies the criteria specified by comparison and key1.</span></span> <span data-ttu-id="d96db-126">レコードを検出すると、そのレコードをカレント レコードにし、 **NoMatch** プロパティを **False** に設定します。</span><span class="sxs-lookup"><span data-stu-id="d96db-126">Once found, it makes that record current and sets the **NoMatch** property to **False**.</span></span> <span data-ttu-id="d96db-127">**Seek** メソッドで一致するレコードが見つからなかった場合は、 **NoMatch** プロパティが **True** に設定され、カレント レコードは未定義となります。</span><span class="sxs-lookup"><span data-stu-id="d96db-127">If the **Seek** method fails to locate a match, the **NoMatch** property is set to **True**, and the current record is undefined.</span></span>
+<span data-ttu-id="865e8-125">**Seek**メソッドは、指定されたキー フィールドを検索し、key1 と対照的に指定した抽出条件を満たす最初のレコードを検索します。</span><span class="sxs-lookup"><span data-stu-id="865e8-125">The **Seek** method searches through the specified key fields and locates the first record that satisfies the criteria specified by comparison and key1.</span></span> <span data-ttu-id="865e8-126">レコードを検出すると、そのレコードをカレント レコードにし、 **NoMatch** プロパティを **False** に設定します。</span><span class="sxs-lookup"><span data-stu-id="865e8-126">Once found, it makes that record current and sets the **NoMatch** property to **False**.</span></span> <span data-ttu-id="865e8-127">**Seek** メソッドで一致するレコードが見つからなかった場合は、 **NoMatch** プロパティが **True** に設定され、カレント レコードは未定義となります。</span><span class="sxs-lookup"><span data-stu-id="865e8-127">If the **Seek** method fails to locate a match, the **NoMatch** property is set to **True**, and the current record is undefined.</span></span>
 
-<span data-ttu-id="d96db-128">比較では場合、等号 (=) より大きいか等しい (\>=)、またはより大きい (\>)、 **Seek**はインデックスの先頭から開始し、正方向に検索します。</span><span class="sxs-lookup"><span data-stu-id="d96db-128">If comparison is equal (=), greater than or equal (\>=), or greater than (\>), **Seek** starts at the beginning of the index and searches forward.</span></span>
+<span data-ttu-id="865e8-128">比較では場合、等号 (=) より大きいか等しい (\>=)、またはより大きい (\>)、 **Seek**はインデックスの先頭から開始し、正方向に検索します。</span><span class="sxs-lookup"><span data-stu-id="865e8-128">If comparison is equal (=), greater than or equal (\>=), or greater than (\>), **Seek** starts at the beginning of the index and searches forward.</span></span>
 
-<span data-ttu-id="d96db-129">比較の場合よりも小さい (\<) と同じかそれより小さい、または (\<=)、**シーク**はインデックスの末尾から開始し、逆方向検索します。</span><span class="sxs-lookup"><span data-stu-id="d96db-129">If comparison is less than (\<) or less than or equal (\<=), **Seek** starts at the end of the index and searches backward.</span></span> <span data-ttu-id="d96db-130">しかし、インデックスの末尾に重複するインデックスのエントリがある場合、 **Seek** は重複するエントリのうち任意のエントリから始まり、先頭に向かって検索を進めます。</span><span class="sxs-lookup"><span data-stu-id="d96db-130">However, if there are duplicate index entries at the end of the index, **Seek** starts at an arbitrary entry among the duplicates and then searches backward.</span></span>
+<span data-ttu-id="865e8-129">比較の場合よりも小さい (\<) と同じかそれより小さい、または (\<=)、**シーク**はインデックスの末尾から開始し、逆方向検索します。</span><span class="sxs-lookup"><span data-stu-id="865e8-129">If comparison is less than (\<) or less than or equal (\<=), **Seek** starts at the end of the index and searches backward.</span></span> <span data-ttu-id="865e8-130">しかし、インデックスの末尾に重複するインデックスのエントリがある場合、 **Seek** は重複するエントリのうち任意のエントリから始まり、先頭に向かって検索を進めます。</span><span class="sxs-lookup"><span data-stu-id="865e8-130">However, if there are duplicate index entries at the end of the index, **Seek** starts at an arbitrary entry among the duplicates and then searches backward.</span></span>
 
-<span data-ttu-id="d96db-131">インデックスで定義されているすべてのフィールドには、値を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d96db-131">You must specify values for all fields defined in the index.</span></span> <span data-ttu-id="d96db-132">複数列のインデックスを指定して **Seek** を使用するときに、インデックスのすべてのフィールドに comparison の値を指定しない場合は、comparison に等値演算子 (=) を使用できません。</span><span class="sxs-lookup"><span data-stu-id="d96db-132">If you use **Seek** with a multiple-column index, and you don't specify a comparison value for every field in the index, then you cannot use the equal (=) operator in the comparison.</span></span> <span data-ttu-id="d96db-133">一部 (key2、key3 以降) に、抽出条件フィールドのデフォルトと一致していない可能性がありますが、Null にするためです。</span><span class="sxs-lookup"><span data-stu-id="d96db-133">That's because some of the criteria fields (key2, key3, and so on) will default to Null, which will probably not match.</span></span> <span data-ttu-id="d96db-134">このため、等値演算子が正しく機能するのは、検索対象以外のすべてのキーが **null** であるレコードが存在する場合だけです。</span><span class="sxs-lookup"><span data-stu-id="d96db-134">Therefore, the equal operator will work correctly only if you have a record which is all **null** except the key you're looking for.</span></span> <span data-ttu-id="d96db-135">大きいか等しいを使用することをお勧めしますが (\>=) 演算子代わりにします。</span><span class="sxs-lookup"><span data-stu-id="d96db-135">It's recommended that you use the greater than or equal (\>=) operator instead.</span></span>
+<span data-ttu-id="865e8-131">インデックスで定義されているすべてのフィールドには、値を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="865e8-131">You must specify values for all fields defined in the index.</span></span> <span data-ttu-id="865e8-132">複数列のインデックスを指定して **Seek** を使用するときに、インデックスのすべてのフィールドに comparison の値を指定しない場合は、comparison に等値演算子 (=) を使用できません。</span><span class="sxs-lookup"><span data-stu-id="865e8-132">If you use **Seek** with a multiple-column index, and you don't specify a comparison value for every field in the index, then you cannot use the equal (=) operator in the comparison.</span></span> <span data-ttu-id="865e8-133">一部 (key2、key3 以降) に、抽出条件フィールドのデフォルトと一致していない可能性がありますが、Null にするためです。</span><span class="sxs-lookup"><span data-stu-id="865e8-133">That's because some of the criteria fields (key2, key3, and so on) will default to Null, which will probably not match.</span></span> <span data-ttu-id="865e8-134">このため、等値演算子が正しく機能するのは、検索対象以外のすべてのキーが **null** であるレコードが存在する場合だけです。</span><span class="sxs-lookup"><span data-stu-id="865e8-134">Therefore, the equal operator will work correctly only if you have a record which is all **null** except the key you're looking for.</span></span> <span data-ttu-id="865e8-135">大きいか等しいを使用することをお勧めしますが (\>=) 演算子代わりにします。</span><span class="sxs-lookup"><span data-stu-id="865e8-135">It's recommended that you use the greater than or equal (\>=) operator instead.</span></span>
 
-<span data-ttu-id="d96db-136">引数 key1 は、現在のインデックスに対応するフィールドと同じフィールドのデータ型でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="d96db-136">The key1 argument must be of the same field data type as the corresponding field in the current index.</span></span> <span data-ttu-id="d96db-137">たとえば、現在のインデックスを指す場合、数値フィールド (従業員 ID など)、key1 は数値である必要があります。</span><span class="sxs-lookup"><span data-stu-id="d96db-137">For example, if the current index refers to a number field (such as Employee ID), key1 must be numeric.</span></span> <span data-ttu-id="d96db-138">同様に、現在のインデックスを指す場合、テキスト フィールド (姓など)、key1 は文字列である必要があります。</span><span class="sxs-lookup"><span data-stu-id="d96db-138">Similarly, if the current index refers to a Text field (such as Last Name), key1 must be a string.</span></span>
+<span data-ttu-id="865e8-136">引数 key1 は、現在のインデックスに対応するフィールドと同じフィールドのデータ型でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="865e8-136">The key1 argument must be of the same field data type as the corresponding field in the current index.</span></span> <span data-ttu-id="865e8-137">たとえば、現在のインデックスを指す場合、数値フィールド (従業員 ID など)、key1 は数値である必要があります。</span><span class="sxs-lookup"><span data-stu-id="865e8-137">For example, if the current index refers to a number field (such as Employee ID), key1 must be numeric.</span></span> <span data-ttu-id="865e8-138">同様に、現在のインデックスを指す場合、テキスト フィールド (姓など)、key1 は文字列である必要があります。</span><span class="sxs-lookup"><span data-stu-id="865e8-138">Similarly, if the current index refers to a Text field (such as Last Name), key1 must be a string.</span></span>
 
-<span data-ttu-id="d96db-139">**Seek** を使用するときは、カレント レコードが設定されている必要はありません。</span><span class="sxs-lookup"><span data-stu-id="d96db-139">There doesn't have to be a current record when you use **Seek**.</span></span>
+<span data-ttu-id="865e8-139">**Seek** を使用するときは、カレント レコードが設定されている必要はありません。</span><span class="sxs-lookup"><span data-stu-id="865e8-139">There doesn't have to be a current record when you use **Seek**.</span></span>
 
-<span data-ttu-id="d96db-140">**[Indexes](indexes-collection-dao.md)** コレクションを使用すると、既存のインデックスを列挙できます。</span><span class="sxs-lookup"><span data-stu-id="d96db-140">You can use the **[Indexes](indexes-collection-dao.md)** collection to enumerate the existing indexes.</span></span>
+<span data-ttu-id="865e8-140">**[Indexes](indexes-collection-dao.md)** コレクションを使用すると、既存のインデックスを列挙できます。</span><span class="sxs-lookup"><span data-stu-id="865e8-140">You can use the **[Indexes](indexes-collection-dao.md)** collection to enumerate the existing indexes.</span></span>
 
-<span data-ttu-id="d96db-p107">ダイナセット タイプまたはスナップショット タイプの **Recordset** で、既存のインデックスでは対応できない特定の条件を満たすレコードを検索するには、 **[Find](recordset2-findfirst-method-dao.md)** メソッドを使用します。特定の条件を満たすレコードだけでなく、すべてのレコードを対象にするには、 **[Move](recordset-movefirst-method-dao.md)** メソッドを使用してレコード間を移動します。</span><span class="sxs-lookup"><span data-stu-id="d96db-p107">To locate a record in a dynaset- or snapshot-type **Recordset** that satisfies a specific condition that is not covered by existing indexes, use the **[Find](recordset2-findfirst-method-dao.md)** methods. To include all records, not just those that satisfy a specific condition, use the **[Move](recordset-movefirst-method-dao.md)** methods to move from record to record.</span></span>
+<span data-ttu-id="865e8-p107">ダイナセット タイプまたはスナップショット タイプの **Recordset** で、既存のインデックスでは対応できない特定の条件を満たすレコードを検索するには、 **[Find](recordset2-findfirst-method-dao.md)** メソッドを使用します。特定の条件を満たすレコードだけでなく、すべてのレコードを対象にするには、 **[Move](recordset-movefirst-method-dao.md)** メソッドを使用してレコード間を移動します。</span><span class="sxs-lookup"><span data-stu-id="865e8-p107">To locate a record in a dynaset- or snapshot-type **Recordset** that satisfies a specific condition that is not covered by existing indexes, use the **[Find](recordset2-findfirst-method-dao.md)** methods. To include all records, not just those that satisfy a specific condition, use the **[Move](recordset-movefirst-method-dao.md)** methods to move from record to record.</span></span>
 
-<span data-ttu-id="d96db-p108">リンク テーブルはテーブル タイプの **Recordset** オブジェクトとして開くことができないため、 **Seek** メソッドはリンク テーブルに対して使用できません。しかし、 **[OpenDatabase](dbengine-opendatabase-method-dao.md)** メソッドを使用してインストール可能な ISAM (ODBC でない) データベースを直接開いた場合は、そのデータベース内のテーブルに対して **Seek** を使用できます。</span><span class="sxs-lookup"><span data-stu-id="d96db-p108">You can't use the **Seek** method on a linked table because you can't open linked tables as table-type **Recordset** objects. However, if you use the **[OpenDatabase](dbengine-opendatabase-method-dao.md)** method to directly open an installable ISAM (non-ODBC) database, you can use **Seek** on tables in that database.</span></span>
+<span data-ttu-id="865e8-p108">リンク テーブルはテーブル タイプの **Recordset** オブジェクトとして開くことができないため、 **Seek** メソッドはリンク テーブルに対して使用できません。しかし、 **[OpenDatabase](dbengine-opendatabase-method-dao.md)** メソッドを使用してインストール可能な ISAM (ODBC でない) データベースを直接開いた場合は、そのデータベース内のテーブルに対して **Seek** を使用できます。</span><span class="sxs-lookup"><span data-stu-id="865e8-p108">You can't use the **Seek** method on a linked table because you can't open linked tables as table-type **Recordset** objects. However, if you use the **[OpenDatabase](dbengine-opendatabase-method-dao.md)** method to directly open an installable ISAM (non-ODBC) database, you can use **Seek** on tables in that database.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d96db-145">例</span><span class="sxs-lookup"><span data-stu-id="d96db-145">Example</span></span>
+## <a name="example"></a><span data-ttu-id="865e8-145">例</span><span class="sxs-lookup"><span data-stu-id="865e8-145">Example</span></span>
 
-<span data-ttu-id="d96db-146">この例では、 **Seek** メソッドを使用して、ユーザーが ID 番号に基づき製品を検索できるようにする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="d96db-146">This example demonstrates the **Seek** method by allowing the user to search for a product based on an ID number.</span></span>
+<span data-ttu-id="865e8-146">この例では、 **Seek** メソッドを使用して、ユーザーが ID 番号に基づき製品を検索できるようにする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="865e8-146">This example demonstrates the **Seek** method by allowing the user to search for a product based on an ID number.</span></span>
 
 ```vb
     Sub SeekX() 
@@ -145,7 +146,7 @@ ms.locfileid: "25998231"
 
 <br/>
 
-<span data-ttu-id="d96db-p109">次の例では、 **NoMatch** プロパティを使用して **Seek** および **FindFirst** が成功したかどうか確認し、成功しなかった場合は適切なフィードバックを表示します。このプロシージャを実行するには、SeekMatch プロシージャと FindMatch プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="d96db-p109">This example uses the **NoMatch** property to determine whether a **Seek** and a **FindFirst** were successful, and if not, to give appropriate feedback. The SeekMatch and FindMatch procedures are required for this procedure to run.</span></span>
+<span data-ttu-id="865e8-p109">次の例では、 **NoMatch** プロパティを使用して **Seek** および **FindFirst** が成功したかどうか確認し、成功しなかった場合は適切なフィードバックを表示します。このプロシージャを実行するには、SeekMatch プロシージャと FindMatch プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="865e8-p109">This example uses the **NoMatch** property to determine whether a **Seek** and a **FindFirst** were successful, and if not, to give appropriate feedback. The SeekMatch and FindMatch procedures are required for this procedure to run.</span></span>
 
 ```vb
     Sub NoMatchX() 

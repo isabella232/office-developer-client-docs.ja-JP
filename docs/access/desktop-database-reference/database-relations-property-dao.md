@@ -10,23 +10,24 @@ f1_keywords:
 - dao360.chm1052922
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 8f322cc04885d7cc60cecb91c4ef4eedb4839d4a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: e14cfde828322fee22b8a833bdbc7934900953a7
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930316"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28701005"
 ---
-# <a name="databaserelations-property-dao"></a><span data-ttu-id="0a0f4-102">Database.Relations プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="0a0f4-102">Database.Relations property (DAO)</span></span>
+# <a name="databaserelations-property-dao"></a><span data-ttu-id="e3456-102">Database.Relations プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="e3456-102">Database.Relations property (DAO)</span></span>
 
 
-<span data-ttu-id="0a0f4-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="0a0f4-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="e3456-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="e3456-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="0a0f4-p101">指定したデータベースの、すべての保存された **Relation** オブジェクトを含む **Relations** コレクションを返します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="0a0f4-p101">Returns a **Relations** collection that contains all of the stored **Relation** objects for the specified database. Read-only.</span></span>
+<span data-ttu-id="e3456-p101">指定したデータベースの、すべての保存された **Relation** オブジェクトを含む **Relations** コレクションを返します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="e3456-p101">Returns a **Relations** collection that contains all of the stored **Relation** objects for the specified database. Read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="0a0f4-106">構文</span><span class="sxs-lookup"><span data-stu-id="0a0f4-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e3456-106">構文</span><span class="sxs-lookup"><span data-stu-id="e3456-106">Syntax</span></span>
 
-<span data-ttu-id="0a0f4-107">*式*です。関係</span><span class="sxs-lookup"><span data-stu-id="0a0f4-107">*expression* .Relations</span></span>
+<span data-ttu-id="e3456-107">*式*です。関係</span><span class="sxs-lookup"><span data-stu-id="e3456-107">*expression* .Relations</span></span>
 
-<span data-ttu-id="0a0f4-108">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="0a0f4-108">*expression* A variable that represents a **Database** object.</span></span>
+<span data-ttu-id="e3456-108">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="e3456-108">*expression* A variable that represents a **Database** object.</span></span>
 

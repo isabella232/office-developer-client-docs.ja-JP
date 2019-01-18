@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249914(v=office.15)
 ms:contentKeyID: 48547435
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 944aaae506a8a7f3faba45e2220daf5caf46bed1
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 819c6adee877de66299af4f1e234f1e2886b6bd2
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25885711"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702202"
 ---
-# <a name="cachesize-property-example-vc"></a><span data-ttu-id="0763d-102">CacheSize プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="0763d-102">CacheSize property example (VC++)</span></span>
+# <a name="cachesize-property-example-vc"></a><span data-ttu-id="061a5-102">CacheSize プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="061a5-102">CacheSize property example (VC++)</span></span>
 
 
-<span data-ttu-id="0763d-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="0763d-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="061a5-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="061a5-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="0763d-104">次の例では、[CacheSize](cachesize-property-ado.md) プロパティを使用して、30 レコードのキャッシュを使用して実行した操作と、使用せずに実行した操作のパフォーマンスの違いを示します。</span><span class="sxs-lookup"><span data-stu-id="0763d-104">This example uses the [CacheSize](cachesize-property-ado.md) property to show the difference in performance for an operation performed with and without a 30-record cache.</span></span>
+<span data-ttu-id="061a5-104">次の例では、[CacheSize](cachesize-property-ado.md) プロパティを使用して、30 レコードのキャッシュを使用して実行した操作と、使用せずに実行した操作のパフォーマンスの違いを示します。</span><span class="sxs-lookup"><span data-stu-id="061a5-104">This example uses the [CacheSize](cachesize-property-ado.md) property to show the difference in performance for an operation performed with and without a 30-record cache.</span></span>
 
 ```cpp 
  

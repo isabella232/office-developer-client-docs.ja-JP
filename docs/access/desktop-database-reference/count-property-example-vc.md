@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249340(v=office.15)
 ms:contentKeyID: 48545134
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7a2761c34e71664d97118766ddfd8121542b67c5
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 5f21bb3c2f20f0d9d446a099fd6322928e626616
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25867224"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702102"
 ---
-# <a name="count-property-example-vc"></a><span data-ttu-id="22b92-102">Count プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="22b92-102">Count property example (VC++)</span></span>
+# <a name="count-property-example-vc"></a><span data-ttu-id="face7-102">Count プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="face7-102">Count property example (VC++)</span></span>
 
 
-<span data-ttu-id="22b92-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="22b92-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="face7-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="face7-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="22b92-104">この例では、***従業員***データベース内の 2 つのコレクションの[Count](count-property-ado.md)プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="22b92-104">This example demonstrates the [Count](count-property-ado.md) property with two collections in the ***Employee*** database.</span></span> <span data-ttu-id="22b92-105">このプロパティで、各コレクション内のオブジェクト数を取得し、これらのコレクションを列挙するループに上限を設定します。</span><span class="sxs-lookup"><span data-stu-id="22b92-105">The property obtains the number of objects in each collection, and sets the upper limit for loops that enumerate these collections.</span></span> <span data-ttu-id="22b92-106">**Count**プロパティを使用せずにこれらのコレクションを列挙するために別の方法は、ステートメントを使用することです。</span><span class="sxs-lookup"><span data-stu-id="22b92-106">Another way to enumerate these collections without using the **Count** property would be to use statements.</span></span>
+<span data-ttu-id="face7-104">この例では、***従業員***データベース内の 2 つのコレクションの[Count](count-property-ado.md)プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="face7-104">This example demonstrates the [Count](count-property-ado.md) property with two collections in the ***Employee*** database.</span></span> <span data-ttu-id="face7-105">このプロパティで、各コレクション内のオブジェクト数を取得し、これらのコレクションを列挙するループに上限を設定します。</span><span class="sxs-lookup"><span data-stu-id="face7-105">The property obtains the number of objects in each collection, and sets the upper limit for loops that enumerate these collections.</span></span> <span data-ttu-id="face7-106">**Count**プロパティを使用せずにこれらのコレクションを列挙するために別の方法は、ステートメントを使用することです。</span><span class="sxs-lookup"><span data-stu-id="face7-106">Another way to enumerate these collections without using the **Count** property would be to use statements.</span></span>
 
 ```cpp 
  

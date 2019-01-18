@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250314(v=office.15)
 ms:contentKeyID: 48548966
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b7478dd3ab4574b3315f5d57bf2f3680b8777e22
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: a0023eddf98acdfbcdc38095276342010e153321
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25889442"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28703301"
 ---
-# <a name="type-property-example-field-vb"></a><span data-ttu-id="b2fd5-102">Type プロパティの使用例 (Field) (VB)</span><span class="sxs-lookup"><span data-stu-id="b2fd5-102">Type property example (Field) (VB)</span></span>
+# <a name="type-property-example-field-vb"></a><span data-ttu-id="1726e-102">Type プロパティの使用例 (Field) (VB)</span><span class="sxs-lookup"><span data-stu-id="1726e-102">Type property example (Field) (VB)</span></span>
 
 
-<span data-ttu-id="b2fd5-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="b2fd5-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="1726e-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="1726e-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="b2fd5-p101">この例では、***Employees*** テーブルにあるすべての [Field](field-object-ado.md) オブジェクトの [Type](type-property-ado.md) プロパティの値に対応する定数の名前を表示することによって、[Type](type-property-ado.md) プロパティの機能を示します。このプロシージャを実行するには、FieldType 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="b2fd5-p101">This example demonstrates the [Type](type-property-ado.md) property by displaying the name of the constant that corresponds to the value of the [Type](type-property-ado.md) property of all the [Field](field-object-ado.md) objects in the ***Employees*** table. The FieldType function is required for this procedure to run.</span></span>
+<span data-ttu-id="1726e-p101">この例では、***Employees*** テーブルにあるすべての [Field](field-object-ado.md) オブジェクトの [Type](type-property-ado.md) プロパティの値に対応する定数の名前を表示することによって、[Type](type-property-ado.md) プロパティの機能を示します。このプロシージャを実行するには、FieldType 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="1726e-p101">This example demonstrates the [Type](type-property-ado.md) property by displaying the name of the constant that corresponds to the value of the [Type](type-property-ado.md) property of all the [Field](field-object-ado.md) objects in the ***Employees*** table. The FieldType function is required for this procedure to run.</span></span>
 
 ```vb 
  

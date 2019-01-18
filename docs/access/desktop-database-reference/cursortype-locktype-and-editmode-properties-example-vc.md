@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250205(v=office.15)
 ms:contentKeyID: 48548545
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f6dfa575146ddce9e3161cc2e6b2c352d8467a95
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: bdd804c846316f2637bb9603043a44f13eae59a6
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25870507"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28715733"
 ---
-# <a name="cursortype-locktype-and-editmode-properties-example-vc"></a><span data-ttu-id="ab804-102">CursorType プロパティ、LockType プロパティ、EditMode プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="ab804-102">CursorType, LockType, and EditMode properties example (VC++)</span></span>
+# <a name="cursortype-locktype-and-editmode-properties-example-vc"></a><span data-ttu-id="9071b-102">CursorType プロパティ、LockType プロパティ、EditMode プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="9071b-102">CursorType, LockType, and EditMode properties example (VC++)</span></span>
 
 
-<span data-ttu-id="ab804-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="ab804-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="9071b-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="9071b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="ab804-p101">この例では、[Recordset](cursortype-property-ado.md) を開く前に [CursorType](locktype-property-ado.md) プロパティおよび [LockType](recordset-object-ado.md) プロパティを設定します。また、さまざまな条件下での [EditMode](editmode-property-ado.md) プロパティの値も示します。このプロシージャを実行するには、EditModeOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="ab804-p101">This example demonstrates setting the [CursorType](cursortype-property-ado.md) and [LockType](locktype-property-ado.md) properties before opening a [Recordset](recordset-object-ado.md). It also shows the value of the [EditMode](editmode-property-ado.md) property under various conditions. The EditModeOutput function is required for this procedure to run.</span></span>
+<span data-ttu-id="9071b-p101">この例では、[Recordset](cursortype-property-ado.md) を開く前に [CursorType](locktype-property-ado.md) プロパティおよび [LockType](recordset-object-ado.md) プロパティを設定します。また、さまざまな条件下での [EditMode](editmode-property-ado.md) プロパティの値も示します。このプロシージャを実行するには、EditModeOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="9071b-p101">This example demonstrates setting the [CursorType](cursortype-property-ado.md) and [LockType](locktype-property-ado.md) properties before opening a [Recordset](recordset-object-ado.md). It also shows the value of the [EditMode](editmode-property-ado.md) property under various conditions. The EditModeOutput function is required for this procedure to run.</span></span>
 
 ```cpp 
  

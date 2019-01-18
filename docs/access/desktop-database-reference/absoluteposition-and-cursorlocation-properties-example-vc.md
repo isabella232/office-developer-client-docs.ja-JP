@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249745(v=office.15)
 ms:contentKeyID: 48546739
 ms.date: 10/17/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 4928fe6bc24dc3192809dd6ebfd3b106c0ca9572
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: fe9ef182f19d62b45b3e69695d04f930c4634abf
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25891052"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28700256"
 ---
-# <a name="absoluteposition-and-cursorlocation-properties-example-vc"></a><span data-ttu-id="ad566-102">AbsolutePosition プロパティと CursorLocation プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="ad566-102">AbsolutePosition and CursorLocation properties example (VC++)</span></span>
+# <a name="absoluteposition-and-cursorlocation-properties-example-vc"></a><span data-ttu-id="ece85-102">AbsolutePosition プロパティと CursorLocation プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="ece85-102">AbsolutePosition and CursorLocation properties example (VC++)</span></span>
 
 
-<span data-ttu-id="ad566-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="ad566-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="ece85-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="ece85-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="ad566-p101">次の例では、[AbsolutePosition](absoluteposition-property-ado.md) プロパティを使用して [Recordset](recordset-object-ado.md) の全レコードを列挙するループの進捗を追跡する方法を示します。この例では、 [CursorLocation](cursorlocation-property-ado.md) プロパティを使用して、カーソルをクライアント カーソルに設定することにより、 **AbsolutePosition** プロパティを有効にしています。</span><span class="sxs-lookup"><span data-stu-id="ad566-p101">This example demonstrates how the [AbsolutePosition](absoluteposition-property-ado.md) property can track the progress of a loop that enumerates all the records of a [Recordset](recordset-object-ado.md). It uses the [CursorLocation](cursorlocation-property-ado.md) property to enable the **AbsolutePosition** property by setting the cursor to a client cursor.</span></span>
+<span data-ttu-id="ece85-p101">次の例では、[AbsolutePosition](absoluteposition-property-ado.md) プロパティを使用して [Recordset](recordset-object-ado.md) の全レコードを列挙するループの進捗を追跡する方法を示します。この例では、 [CursorLocation](cursorlocation-property-ado.md) プロパティを使用して、カーソルをクライアント カーソルに設定することにより、 **AbsolutePosition** プロパティを有効にしています。</span><span class="sxs-lookup"><span data-stu-id="ece85-p101">This example demonstrates how the [AbsolutePosition](absoluteposition-property-ado.md) property can track the progress of a loop that enumerates all the records of a [Recordset](recordset-object-ado.md). It uses the [CursorLocation](cursorlocation-property-ado.md) property to enable the **AbsolutePosition** property by setting the cursor to a client cursor.</span></span>
 
 ```cpp 
  
@@ -302,7 +303,7 @@ void PrintProviderError(_ConnectionPtr pConnection)
 
 <br/>
 
-<span data-ttu-id="ad566-106">**AbsolutePositionX.h**</span><span class="sxs-lookup"><span data-stu-id="ad566-106">**AbsolutePositionX.h**</span></span>
+<span data-ttu-id="ece85-106">**AbsolutePositionX.h**</span><span class="sxs-lookup"><span data-stu-id="ece85-106">**AbsolutePositionX.h**</span></span>
 
 ```cpp 
  

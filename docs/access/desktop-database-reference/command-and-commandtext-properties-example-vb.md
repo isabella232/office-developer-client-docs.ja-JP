@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249425(v=office.15)
 ms:contentKeyID: 48545462
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e19ac7517e548f1594c0b525671e6aff66eef72c
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 99570fc54cc7393d3dff7c51e81df086696b58f9
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25888511"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28701082"
 ---
-# <a name="command-and-commandtext-properties-example-vb"></a><span data-ttu-id="c5be2-102">Command プロパティと CommandText プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="c5be2-102">Command and CommandText properties example (VB)</span></span>
+# <a name="command-and-commandtext-properties-example-vb"></a><span data-ttu-id="f9aba-102">Command プロパティと CommandText プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="f9aba-102">Command and CommandText properties example (VB)</span></span>
 
 
-<span data-ttu-id="c5be2-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c5be2-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="f9aba-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f9aba-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c5be2-104">次のコードは、プロシージャのテキストを更新するための [Command](command-property-adox.md) プロパティの使用例を示しています。</span><span class="sxs-lookup"><span data-stu-id="c5be2-104">The following code demonstrates how to use the [Command](command-property-adox.md) property to update the text of a procedure.</span></span>
+<span data-ttu-id="f9aba-104">次のコードは、プロシージャのテキストを更新するための [Command](command-property-adox.md) プロパティの使用例を示しています。</span><span class="sxs-lookup"><span data-stu-id="f9aba-104">The following code demonstrates how to use the [Command](command-property-adox.md) property to update the text of a procedure.</span></span>
 
 ```vb 
  

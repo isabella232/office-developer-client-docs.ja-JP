@@ -6,21 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249088(v=office.15)
 ms:contentKeyID: 48544057
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fece7aea728e1c98ac290c23172ce351cc38f342
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: ce8ebea2e9ce1f31adc239195614f4a8b1e2bd1b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947190"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28722621"
 ---
-# <a name="microsoft-cursor-service-for-ole-db"></a><span data-ttu-id="eafd2-102">Microsoft Cursor Service for OLE DB</span><span class="sxs-lookup"><span data-stu-id="eafd2-102">Microsoft Cursor Service for OLE DB</span></span>
+# <a name="microsoft-cursor-service-for-ole-db"></a><span data-ttu-id="98919-102">Microsoft Cursor Service for OLE DB</span><span class="sxs-lookup"><span data-stu-id="98919-102">Microsoft Cursor Service for OLE DB</span></span>
 
 
-<span data-ttu-id="eafd2-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="eafd2-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="98919-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="98919-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="eafd2-p101">クライアント側カーソルを選択、つまり **CursorLocation** プロパティを **adUseClient** に設定すると、Microsoft Cursor Service for OLE DB が呼び出されます。"Client Cursor Engine" と呼ばれることもありますが、ADO のコンテキストでは本質的に同じ機能を表します。このサービスは、データ プロバイダーのカーソル サポート機能を補完するものです。その結果、すべてのデータ プロバイダーで、比較的一定した機能を得ることができます。</span><span class="sxs-lookup"><span data-stu-id="eafd2-p101">When you select a client-side cursor, or set the **CursorLocation** property to **adUseClient**, you are invoking the Microsoft Cursor Service for OLE DB. You might also see references to the "Client Cursor Engine", which is essentially the same thing in the context of ADO. This service supplements the cursor-support functions of data providers. As a result, you can perceive relatively uniform functionality from all data providers.</span></span>
+<span data-ttu-id="98919-p101">クライアント側カーソルを選択、つまり **CursorLocation** プロパティを **adUseClient** に設定すると、Microsoft Cursor Service for OLE DB が呼び出されます。"Client Cursor Engine" と呼ばれることもありますが、ADO のコンテキストでは本質的に同じ機能を表します。このサービスは、データ プロバイダーのカーソル サポート機能を補完するものです。その結果、すべてのデータ プロバイダーで、比較的一定した機能を得ることができます。</span><span class="sxs-lookup"><span data-stu-id="98919-p101">When you select a client-side cursor, or set the **CursorLocation** property to **adUseClient**, you are invoking the Microsoft Cursor Service for OLE DB. You might also see references to the "Client Cursor Engine", which is essentially the same thing in the context of ADO. This service supplements the cursor-support functions of data providers. As a result, you can perceive relatively uniform functionality from all data providers.</span></span>
 
-<span data-ttu-id="eafd2-p102">Cursor Service for OLE DB により、動的プロパティが使用できるようになり、一部のメソッドの動作が拡張されます。たとえば、動的プロパティの **Optimize** を使用すると、一時的なインデックスを作成して、 **Find** メソッドなど一部の操作を円滑化できます。</span><span class="sxs-lookup"><span data-stu-id="eafd2-p102">The Cursor Service for OLE DB makes dynamic properties available and enhances the behavior of certain methods. For example, the **Optimize** dynamic property enables the creation of temporary indexes to facilitate certain operations, such as the **Find** method.</span></span>
+<span data-ttu-id="98919-p102">Cursor Service for OLE DB により、動的プロパティが使用できるようになり、一部のメソッドの動作が拡張されます。たとえば、動的プロパティの **Optimize** を使用すると、一時的なインデックスを作成して、 **Find** メソッドなど一部の操作を円滑化できます。</span><span class="sxs-lookup"><span data-stu-id="98919-p102">The Cursor Service for OLE DB makes dynamic properties available and enhances the behavior of certain methods. For example, the **Optimize** dynamic property enables the creation of temporary indexes to facilitate certain operations, such as the **Find** method.</span></span>
 
-<span data-ttu-id="eafd2-p103">Cursor Service を使用すると、あらゆる場合にバッチ更新が実行できるようになります。また、データ プロバイダーが、静的カーソルなど、機能が限定されたカーソルしかサポートしていない場合でも、動的カーソルなど、より高機能な種類のカーソルをシミュレートすることもできます。</span><span class="sxs-lookup"><span data-stu-id="eafd2-p103">The Cursor Service enables support for batch updating in all cases. It also simulates more capable cursor types, such as dynamic cursors, when a data provider can only supply less capable cursors, such as static cursors.</span></span>
+<span data-ttu-id="98919-p103">Cursor Service を使用すると、あらゆる場合にバッチ更新が実行できるようになります。また、データ プロバイダーが、静的カーソルなど、機能が限定されたカーソルしかサポートしていない場合でも、動的カーソルなど、より高機能な種類のカーソルをシミュレートすることもできます。</span><span class="sxs-lookup"><span data-stu-id="98919-p103">The Cursor Service enables support for batch updating in all cases. It also simulates more capable cursor types, such as dynamic cursors, when a data provider can only supply less capable cursors, such as static cursors.</span></span>
 
