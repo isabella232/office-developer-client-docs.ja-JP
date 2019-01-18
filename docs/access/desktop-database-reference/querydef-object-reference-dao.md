@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn123782(v=office.15)
 ms:contentKeyID: 52071422
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fc149bc8e2b97bd1e1a73f6f3b3092be8dec806e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: f785ef787bc1d7e80586d2fd2db2efc2a42657cf
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926921"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28699724"
 ---
-# <a name="querydef-object-reference-dao"></a><span data-ttu-id="0c412-102">クエリ定義のオブジェクト参照 (DAO)</span><span class="sxs-lookup"><span data-stu-id="0c412-102">QueryDef object reference (DAO)</span></span>
+# <a name="querydef-object-reference-dao"></a><span data-ttu-id="e17cd-102">クエリ定義のオブジェクト参照 (DAO)</span><span class="sxs-lookup"><span data-stu-id="e17cd-102">QueryDef object reference (DAO)</span></span>
 
-<span data-ttu-id="0c412-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="0c412-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="e17cd-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="e17cd-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="0c412-104">クエリ定義オブジェクト (DAO)</span><span class="sxs-lookup"><span data-stu-id="0c412-104">QueryDef object (DAO)</span></span>](querydef-object-dao.md)
-- [<span data-ttu-id="0c412-105">クエリ定義のメンバー (DAO)</span><span class="sxs-lookup"><span data-stu-id="0c412-105">QueryDef members (DAO)</span></span>](querydef-members-dao.md)
-- [<span data-ttu-id="0c412-106">クエリ定義のプロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="0c412-106">QueryDef properties (DAO)</span></span>](querydef-properties-dao.md)
-- [<span data-ttu-id="0c412-107">クエリ定義の方法 (DAO)</span><span class="sxs-lookup"><span data-stu-id="0c412-107">QueryDef methods (DAO)</span></span>](querydef-methods-dao.md)
+- [<span data-ttu-id="e17cd-104">クエリ定義オブジェクト (DAO)</span><span class="sxs-lookup"><span data-stu-id="e17cd-104">QueryDef object (DAO)</span></span>](querydef-object-dao.md)
+- [<span data-ttu-id="e17cd-105">クエリ定義のメンバー (DAO)</span><span class="sxs-lookup"><span data-stu-id="e17cd-105">QueryDef members (DAO)</span></span>](querydef-members-dao.md)
+- [<span data-ttu-id="e17cd-106">クエリ定義のプロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="e17cd-106">QueryDef properties (DAO)</span></span>](querydef-properties-dao.md)
+- [<span data-ttu-id="e17cd-107">クエリ定義の方法 (DAO)</span><span class="sxs-lookup"><span data-stu-id="e17cd-107">QueryDef methods (DAO)</span></span>](querydef-methods-dao.md)
 

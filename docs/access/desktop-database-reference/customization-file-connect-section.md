@@ -1,37 +1,38 @@
 ---
-title: カスタマイズ ファイルの接続] セクション
+title: カスタマイズ ファイルの Connect セクション
 TOCTitle: Customization File Connect section
 ms:assetid: 037abfb4-798d-4b09-6133-356969aee95c
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248802(v=office.15)
 ms:contentKeyID: 48542985
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 49e2d6cc8579f064df3e752268fce5b47c9b1ada
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 8652aa2c028350aab79cdf101cba189026b9a5ae
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944187"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702853"
 ---
-# <a name="customization-file-connect-section"></a><span data-ttu-id="fe420-102">カスタマイズ ファイルの接続] セクション</span><span class="sxs-lookup"><span data-stu-id="fe420-102">Customization File Connect section</span></span>
+# <a name="customization-file-connect-section"></a><span data-ttu-id="06f18-102">カスタマイズ ファイルの Connect セクション</span><span class="sxs-lookup"><span data-stu-id="06f18-102">Customization File Connect section</span></span>
 
-<span data-ttu-id="fe420-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="fe420-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="06f18-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="06f18-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="fe420-p101">ハンドラーの既定の動作では、すべての接続が拒否されます。 **connect** セクションで、この動作の例外を指定します。たとえば、 **connect** セクションが 1 つもないか、あっても空の場合、既定では接続は行われません。</span><span class="sxs-lookup"><span data-stu-id="fe420-p101">The default behavior of the handler is to deny all connections. The **connect** section specifies exceptions to that behavior. For example, if all the **connect** sections were absent or empty, then by default no connections could be made.</span></span>
+<span data-ttu-id="06f18-p101">ハンドラーの既定の動作では、すべての接続が拒否されます。 **connect** セクションで、この動作の例外を指定します。たとえば、 **connect** セクションが 1 つもないか、あっても空の場合、既定では接続は行われません。</span><span class="sxs-lookup"><span data-stu-id="06f18-p101">The default behavior of the handler is to deny all connections. The **connect** section specifies exceptions to that behavior. For example, if all the **connect** sections were absent or empty, then by default no connections could be made.</span></span>
 
-<span data-ttu-id="fe420-107">**connect** セクションには、次のものを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="fe420-107">The **connect** section can contain:</span></span>
+<span data-ttu-id="06f18-107">**connect** セクションには、次のものを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="06f18-107">The **connect** section can contain:</span></span>
 
-- <span data-ttu-id="fe420-p102">この接続で実行できる既定の読み取り/書き込み操作を指定する、既定のアクセス エントリ。このセクションに既定のアクセス エントリが存在しない場合、このセクションは無視されます。</span><span class="sxs-lookup"><span data-stu-id="fe420-p102">A default access entry that specifies the default read and write operations allowed on this connection. If there is no default access entry in the section, the section will be ignored.</span></span>
+- <span data-ttu-id="06f18-p102">この接続で実行できる既定の読み取り/書き込み操作を指定する、既定のアクセス エントリ。このセクションに既定のアクセス エントリが存在しない場合、このセクションは無視されます。</span><span class="sxs-lookup"><span data-stu-id="06f18-p102">A default access entry that specifies the default read and write operations allowed on this connection. If there is no default access entry in the section, the section will be ignored.</span></span>
 
-- <span data-ttu-id="fe420-110">クライアントの接続文字列を置き換える新しい接続文字列。</span><span class="sxs-lookup"><span data-stu-id="fe420-110">A new connection string that replaces the client connection string.</span></span>
+- <span data-ttu-id="06f18-110">クライアントの接続文字列を置き換える新しい接続文字列。</span><span class="sxs-lookup"><span data-stu-id="06f18-110">A new connection string that replaces the client connection string.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="fe420-111">構文</span><span class="sxs-lookup"><span data-stu-id="fe420-111">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="06f18-111">構文</span><span class="sxs-lookup"><span data-stu-id="06f18-111">Syntax</span></span>
 
-<span data-ttu-id="fe420-112">既定のアクセス エントリの形式は、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="fe420-112">A default access entry is of the form:</span></span>
+<span data-ttu-id="06f18-112">既定のアクセス エントリの形式は、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="06f18-112">A default access entry is of the form:</span></span>
 
 `Access=accessRight`
 
-<span data-ttu-id="fe420-113">置き換える接続文字列エントリの形式は、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="fe420-113">A replacement connection string entry is of the form:</span></span>
+<span data-ttu-id="06f18-113">置き換える接続文字列エントリの形式は、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="06f18-113">A replacement connection string entry is of the form:</span></span>
 
 `Connect=connectionString`
 
@@ -42,32 +43,32 @@ ms.locfileid: "25944187"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="fe420-114">引数</span><span class="sxs-lookup"><span data-stu-id="fe420-114">Part</span></span></p></th>
-<th><p><span data-ttu-id="fe420-115">説明</span><span class="sxs-lookup"><span data-stu-id="fe420-115">Description</span></span></p></th>
+<th><p><span data-ttu-id="06f18-114">引数</span><span class="sxs-lookup"><span data-stu-id="06f18-114">Part</span></span></p></th>
+<th><p><span data-ttu-id="06f18-115">説明</span><span class="sxs-lookup"><span data-stu-id="06f18-115">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="fe420-116"><strong>Connect</strong></span><span class="sxs-lookup"><span data-stu-id="fe420-116"><strong>Connect</strong></span></span></p></td>
-<td><p><span data-ttu-id="fe420-117">これが接続文字列のエントリであることを示すリテラル文字列。</span><span class="sxs-lookup"><span data-stu-id="fe420-117">A literal string that indicates this is a connection string entry.</span></span></p></td>
+<td><p><span data-ttu-id="06f18-116"><strong>Connect</strong></span><span class="sxs-lookup"><span data-stu-id="06f18-116"><strong>Connect</strong></span></span></p></td>
+<td><p><span data-ttu-id="06f18-117">これが接続文字列のエントリであることを示すリテラル文字列。</span><span class="sxs-lookup"><span data-stu-id="06f18-117">A literal string that indicates this is a connection string entry.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="fe420-118"><strong><em>接続文字列</em></strong></span><span class="sxs-lookup"><span data-stu-id="fe420-118"><strong><em>connectionString</em></strong></span></span></p></td>
-<td><p><span data-ttu-id="fe420-119">クライアントのすべての接続文字列を置き換える文字列。</span><span class="sxs-lookup"><span data-stu-id="fe420-119">A string that replaces the whole client connection string.</span></span></p></td>
+<td><p><span data-ttu-id="06f18-118"><strong><em>接続文字列</em></strong></span><span class="sxs-lookup"><span data-stu-id="06f18-118"><strong><em>connectionString</em></strong></span></span></p></td>
+<td><p><span data-ttu-id="06f18-119">クライアントのすべての接続文字列を置き換える文字列。</span><span class="sxs-lookup"><span data-stu-id="06f18-119">A string that replaces the whole client connection string.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="fe420-120"><strong>Access</strong></span><span class="sxs-lookup"><span data-stu-id="fe420-120"><strong>Access</strong></span></span></p></td>
-<td><p><span data-ttu-id="fe420-121">これがアクセス エントリであることを示すリテラル文字列。</span><span class="sxs-lookup"><span data-stu-id="fe420-121">A literal string that indicates this is an access entry.</span></span></p></td>
+<td><p><span data-ttu-id="06f18-120"><strong>Access</strong></span><span class="sxs-lookup"><span data-stu-id="06f18-120"><strong>Access</strong></span></span></p></td>
+<td><p><span data-ttu-id="06f18-121">これがアクセス エントリであることを示すリテラル文字列。</span><span class="sxs-lookup"><span data-stu-id="06f18-121">A literal string that indicates this is an access entry.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="fe420-122"><strong><em>アクセス権</em></strong></span><span class="sxs-lookup"><span data-stu-id="fe420-122"><strong><em>accessRight</em></strong></span></span></p></td>
-<td><p><span data-ttu-id="fe420-123">次のアクセス権のいずれかを指定します。
-</span><span class="sxs-lookup"><span data-stu-id="fe420-123">One of the following access rights:</span></span></p>
+<td><p><span data-ttu-id="06f18-122"><strong><em>アクセス権</em></strong></span><span class="sxs-lookup"><span data-stu-id="06f18-122"><strong><em>accessRight</em></strong></span></span></p></td>
+<td><p><span data-ttu-id="06f18-123">次のアクセス権のいずれかを指定します。
+</span><span class="sxs-lookup"><span data-stu-id="06f18-123">One of the following access rights:</span></span></p>
 <p></p>
 <ul>
-<li><p><span data-ttu-id="fe420-124"><strong>NoAccess</strong> ユーザーは、データ ソースにアクセスできません。</span><span class="sxs-lookup"><span data-stu-id="fe420-124"><strong>NoAccess</strong> — User cannot access the data source.</span></span></p></li>
-<li><p><span data-ttu-id="fe420-125"><strong>ReadOnly</strong> ユーザーは、データ ソースの読み取りが可能です。</span><span class="sxs-lookup"><span data-stu-id="fe420-125"><strong>ReadOnly</strong> — User can read the data source.</span></span></p></li>
-<li><p><span data-ttu-id="fe420-126"><strong>ReadWrite</strong> ユーザーは、データ ソースの読み取り/書き込みが可能です。</span><span class="sxs-lookup"><span data-stu-id="fe420-126"><strong>ReadWrite</strong> — User can read or write to the data source.</span></span></p></li>
+<li><p><span data-ttu-id="06f18-124"><strong>NoAccess</strong> ユーザーは、データ ソースにアクセスできません。</span><span class="sxs-lookup"><span data-stu-id="06f18-124"><strong>NoAccess</strong> — User cannot access the data source.</span></span></p></li>
+<li><p><span data-ttu-id="06f18-125"><strong>ReadOnly</strong> ユーザーは、データ ソースの読み取りが可能です。</span><span class="sxs-lookup"><span data-stu-id="06f18-125"><strong>ReadOnly</strong> — User can read the data source.</span></span></p></li>
+<li><p><span data-ttu-id="06f18-126"><strong>ReadWrite</strong> ユーザーは、データ ソースの読み取り/書き込みが可能です。</span><span class="sxs-lookup"><span data-stu-id="06f18-126"><strong>ReadWrite</strong> — User can read or write to the data source.</span></span></p></li>
 </ul>
 <p></p></td>
 </tr>
@@ -75,5 +76,5 @@ ms.locfileid: "25944187"
 </table>
 
 
-<span data-ttu-id="fe420-127">(この効果を使用して、ハンドラーの既定の動作を無効にする) のすべての接続を許可して、[**既定の接続**] セクションでアクセス エントリを設定、削除、または任意の他の\**接続\*\*\*識別子*のセクションをコメントにする場合。</span><span class="sxs-lookup"><span data-stu-id="fe420-127">If you want to allow any connection (in effect, disabling the default handler behavior), set the access entry in the **connect default** section to , and delete or comment out any other **connect** *identifier* section.</span></span>
+<span data-ttu-id="06f18-127">(この効果を使用して、ハンドラーの既定の動作を無効にする) のすべての接続を許可して、[**既定の接続**] セクションでアクセス エントリを設定、削除、または任意の他の\**接続\*\*\*識別子*のセクションをコメントにする場合。</span><span class="sxs-lookup"><span data-stu-id="06f18-127">If you want to allow any connection (in effect, disabling the default handler behavior), set the access entry in the **connect default** section to , and delete or comment out any other **connect** *identifier* section.</span></span>
 

@@ -10,33 +10,34 @@ f1_keywords:
 - dao360.chm1052901
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 9139ae6593f2c1645c8bf68fe2b79f2f763f746c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: bd2610e728d97d3a9fc2f6359a42fd3cdccb11e5
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929112"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28722551"
 ---
-# <a name="tabledefsourcetablename-property-dao"></a><span data-ttu-id="fb199-102">TableDef.SourceTableName プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="fb199-102">TableDef.SourceTableName property (DAO)</span></span>
+# <a name="tabledefsourcetablename-property-dao"></a><span data-ttu-id="91a0e-102">TableDef.SourceTableName プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="91a0e-102">TableDef.SourceTableName property (DAO)</span></span>
 
 
-<span data-ttu-id="fb199-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="fb199-103">**Applies to**: Access 2013, Office 2013</span></span> 
+<span data-ttu-id="91a0e-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="91a0e-103">**Applies to**: Access 2013, Office 2013</span></span> 
 
-<span data-ttu-id="fb199-104">リンク テーブルの名前、またはベース テーブルの名前を指定する値を設定または取得します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="fb199-104">Sets or returns a value that specifies the name of a linked table or the name of a base table (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="91a0e-104">リンク テーブルの名前、またはベース テーブルの名前を指定する値を設定または取得します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="91a0e-104">Sets or returns a value that specifies the name of a linked table or the name of a base table (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="fb199-105">構文</span><span class="sxs-lookup"><span data-stu-id="fb199-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="91a0e-105">構文</span><span class="sxs-lookup"><span data-stu-id="91a0e-105">Syntax</span></span>
 
-<span data-ttu-id="fb199-106">*式*です。SourceTableName</span><span class="sxs-lookup"><span data-stu-id="fb199-106">*expression* .SourceTableName</span></span>
+<span data-ttu-id="91a0e-106">*式*です。SourceTableName</span><span class="sxs-lookup"><span data-stu-id="91a0e-106">*expression* .SourceTableName</span></span>
 
-<span data-ttu-id="fb199-107">\*式\***テーブル定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="fb199-107">*expression* A variable that represents a **TableDef** object.</span></span>
+<span data-ttu-id="91a0e-107">\*式\***テーブル定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="91a0e-107">*expression* A variable that represents a **TableDef** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="fb199-108">注釈</span><span class="sxs-lookup"><span data-stu-id="fb199-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="91a0e-108">注釈</span><span class="sxs-lookup"><span data-stu-id="91a0e-108">Remarks</span></span>
 
-<span data-ttu-id="fb199-p101">このプロパティの設定値は、ベース テーブルでは取得のみ可能で、リンク テーブルまたはコレクションに追加されないオブジェクトでは、取得および設定が可能です。ベース テーブルの場合、設定値は長さ 0 の文字列 ("") となります。</span><span class="sxs-lookup"><span data-stu-id="fb199-p101">This property setting is read-only for a base table and read/write for a linked table or an object not appended to a collection. For a base table, the setting is a zero-length string ("").</span></span>
+<span data-ttu-id="91a0e-p101">このプロパティの設定値は、ベース テーブルでは取得のみ可能で、リンク テーブルまたはコレクションに追加されないオブジェクトでは、取得および設定が可能です。ベース テーブルの場合、設定値は長さ 0 の文字列 ("") となります。</span><span class="sxs-lookup"><span data-stu-id="91a0e-p101">This property setting is read-only for a base table and read/write for a linked table or an object not appended to a collection. For a base table, the setting is a zero-length string ("").</span></span>
 
-## <a name="example"></a><span data-ttu-id="fb199-111">例</span><span class="sxs-lookup"><span data-stu-id="fb199-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="91a0e-111">例</span><span class="sxs-lookup"><span data-stu-id="91a0e-111">Example</span></span>
 
-<span data-ttu-id="fb199-p102">次の例では、 **Connect** プロパティと **SourceTableName** プロパティを使用して、さまざまな外部キー側のテーブルを Microsoft Access データベースにリンクします。このプロシージャを実行するには、ConnectOutput プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="fb199-p102">This example uses the **Connect** and **SourceTableName** properties to link various external tables to a Microsoft Access database. The ConnectOutput procedure is required for this procedure to run.</span></span>
+<span data-ttu-id="91a0e-p102">次の例では、 **Connect** プロパティと **SourceTableName** プロパティを使用して、さまざまな外部キー側のテーブルを Microsoft Access データベースにリンクします。このプロシージャを実行するには、ConnectOutput プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="91a0e-p102">This example uses the **Connect** and **SourceTableName** properties to link various external tables to a Microsoft Access database. The ConnectOutput procedure is required for this procedure to run.</span></span>
 
 ```vb 
 Sub ConnectX() 

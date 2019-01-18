@@ -10,37 +10,38 @@ f1_keywords:
 - dao360.chm1053583
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 0156983a455c72e4046424def188e41b94705087
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 6738762ba18289293c67392d47e278066ead071d
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998228"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28699311"
 ---
-# <a name="querydefmaxrecords-property-dao"></a><span data-ttu-id="0beda-102">QueryDef.MaxRecords プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="0beda-102">QueryDef.MaxRecords property (DAO)</span></span>
+# <a name="querydefmaxrecords-property-dao"></a><span data-ttu-id="f538e-102">QueryDef.MaxRecords プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="f538e-102">QueryDef.MaxRecords property (DAO)</span></span>
 
-<span data-ttu-id="0beda-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="0beda-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="f538e-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f538e-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="0beda-104">ODBC データ ソースに対して実行するクエリから返されるレコードの最大数を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="0beda-104">Sets or returns the maximum number of records to return from a query against an ODBC data source.</span></span>
+<span data-ttu-id="f538e-104">ODBC データ ソースに対して実行するクエリから返されるレコードの最大数を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="f538e-104">Sets or returns the maximum number of records to return from a query against an ODBC data source.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="0beda-105">構文</span><span class="sxs-lookup"><span data-stu-id="0beda-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f538e-105">構文</span><span class="sxs-lookup"><span data-stu-id="f538e-105">Syntax</span></span>
 
-<span data-ttu-id="0beda-106">*式*です。MaxRecords</span><span class="sxs-lookup"><span data-stu-id="0beda-106">*expression* .MaxRecords</span></span>
+<span data-ttu-id="f538e-106">*式*です。MaxRecords</span><span class="sxs-lookup"><span data-stu-id="f538e-106">*expression* .MaxRecords</span></span>
 
-<span data-ttu-id="0beda-107">\*式\***クエリ定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="0beda-107">*expression* A variable that represents a **QueryDef** object.</span></span>
+<span data-ttu-id="f538e-107">\*式\***クエリ定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="f538e-107">*expression* A variable that represents a **QueryDef** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="0beda-108">注釈</span><span class="sxs-lookup"><span data-stu-id="0beda-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f538e-108">注釈</span><span class="sxs-lookup"><span data-stu-id="f538e-108">Remarks</span></span>
 
-<span data-ttu-id="0beda-109">既定値は 0 で、この値は、返されるレコード数に制限がないことを示します。</span><span class="sxs-lookup"><span data-stu-id="0beda-109">The default value is 0, indicating no limit on the number of records returned.</span></span>
+<span data-ttu-id="f538e-109">既定値は 0 で、この値は、返されるレコード数に制限がないことを示します。</span><span class="sxs-lookup"><span data-stu-id="f538e-109">The default value is 0, indicating no limit on the number of records returned.</span></span>
 
-<span data-ttu-id="0beda-p101">**MaxRecords** に指定した行数が **[Recordset](recordset-object-dao.md)** のアプリケーションに返されると、 **Recordset** にクエリ条件を満たすレコードがさらに存在する場合でも、クエリ プロセッサはそれらのレコードを返しません。このプロパティは、クライアントのリソースに制限があり、大量のレコードを管理できない環境で役に立ちます。</span><span class="sxs-lookup"><span data-stu-id="0beda-p101">Once the number of rows specified by **MaxRecords** is returned to your application in a **[Recordset](recordset-object-dao.md)**, the query processor will stop returning additional records even if more records would qualify for inclusion in the **Recordset**. This property is useful in situations where limited client resources prohibit management of large numbers of records.</span></span>
+<span data-ttu-id="f538e-p101">**MaxRecords** に指定した行数が **[Recordset](recordset-object-dao.md)** のアプリケーションに返されると、 **Recordset** にクエリ条件を満たすレコードがさらに存在する場合でも、クエリ プロセッサはそれらのレコードを返しません。このプロパティは、クライアントのリソースに制限があり、大量のレコードを管理できない環境で役に立ちます。</span><span class="sxs-lookup"><span data-stu-id="f538e-p101">Once the number of rows specified by **MaxRecords** is returned to your application in a **[Recordset](recordset-object-dao.md)**, the query processor will stop returning additional records even if more records would qualify for inclusion in the **Recordset**. This property is useful in situations where limited client resources prohibit management of large numbers of records.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="0beda-112">[!メモ] **MaxRecords** プロパティは、ODBC データ ソースに対してのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="0beda-112">The **MaxRecords** property can only be used with an ODBC data source.</span></span>
+> <span data-ttu-id="f538e-112">[!メモ] **MaxRecords** プロパティは、ODBC データ ソースに対してのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="f538e-112">The **MaxRecords** property can only be used with an ODBC data source.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0beda-113">例</span><span class="sxs-lookup"><span data-stu-id="0beda-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f538e-113">例</span><span class="sxs-lookup"><span data-stu-id="f538e-113">Example</span></span>
 
-<span data-ttu-id="0beda-114">この例では、 **MaxRecords** プロパティを使用して、ODBC データ ソースに対するクエリによって返されるレコード数の制限を設定します。</span><span class="sxs-lookup"><span data-stu-id="0beda-114">This example uses the **MaxRecords** property to set a limit on how many records are returned by a query on an ODBC data source.</span></span>
+<span data-ttu-id="f538e-114">この例では、 **MaxRecords** プロパティを使用して、ODBC データ ソースに対するクエリによって返されるレコード数の制限を設定します。</span><span class="sxs-lookup"><span data-stu-id="f538e-114">This example uses the **MaxRecords** property to set a limit on how many records are returned by a query on an ODBC data source.</span></span>
 
 ```vb 
 Sub MaxRecordsX() 

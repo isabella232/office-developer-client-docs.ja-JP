@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249536(v=office.15)
 ms:contentKeyID: 48545893
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b4517e49427356047fac9f1726ba064ebcd83112
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: e74e5bb72914be57268cc30dfd94874b08040b88
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25867700"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702769"
 ---
-# <a name="updatebatch-and-cancelbatch-methods-example-vb"></a><span data-ttu-id="e861c-102">UpdateBatch メソッドと CancelBatch メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="e861c-102">UpdateBatch and CancelBatch methods example (VB)</span></span>
+# <a name="updatebatch-and-cancelbatch-methods-example-vb"></a><span data-ttu-id="8a4f4-102">UpdateBatch メソッドと CancelBatch メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="8a4f4-102">UpdateBatch and CancelBatch methods example (VB)</span></span>
 
 
-<span data-ttu-id="e861c-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="e861c-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="8a4f4-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="8a4f4-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="e861c-104">次の例では、[UpdateBatch](updatebatch-method-ado.md) メソッドと [CancelBatch](cancelbatch-method-ado.md) メソッドを組み合わせて使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="e861c-104">This example demonstrates the [UpdateBatch](updatebatch-method-ado.md) method in conjunction with the [CancelBatch](cancelbatch-method-ado.md) method.</span></span>
+<span data-ttu-id="8a4f4-104">次の例では、[UpdateBatch](updatebatch-method-ado.md) メソッドと [CancelBatch](cancelbatch-method-ado.md) メソッドを組み合わせて使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="8a4f4-104">This example demonstrates the [UpdateBatch](updatebatch-method-ado.md) method in conjunction with the [CancelBatch](cancelbatch-method-ado.md) method.</span></span>
 
 ```vb 
  

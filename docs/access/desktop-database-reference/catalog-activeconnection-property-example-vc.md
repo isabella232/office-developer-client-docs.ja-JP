@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248861(v=office.15)
 ms:contentKeyID: 48543246
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 55faf280d56b90f6033aaba700d3b9fa7a7e2724
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 8839d436359a9d08c3ec1d31b1187d74701daac9
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869191"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718911"
 ---
-# <a name="catalog-activeconnection-property-example-vc"></a><span data-ttu-id="3cda5-102">Catalog の ActiveConnection プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="3cda5-102">Catalog ActiveConnection property example (VC++)</span></span>
+# <a name="catalog-activeconnection-property-example-vc"></a><span data-ttu-id="6e5ea-102">Catalog の ActiveConnection プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="6e5ea-102">Catalog ActiveConnection property example (VC++)</span></span>
 
 
-<span data-ttu-id="3cda5-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="3cda5-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="6e5ea-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="6e5ea-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="3cda5-p101">[ActiveConnection](activeconnection-property-adox.md) プロパティを有効に設定すると、開いている接続によってカタログが開かれます。開いたカタログから、そのカタログ内に含まれているスキーマ オブジェクトにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="3cda5-p101">Setting the [ActiveConnection](activeconnection-property-adox.md) property to a valid, open connection "opens" the catalog. From an open catalog, you can access the schema objects contained within that catalog.</span></span>
+<span data-ttu-id="6e5ea-p101">[ActiveConnection](activeconnection-property-adox.md) プロパティを有効に設定すると、開いている接続によってカタログが開かれます。開いたカタログから、そのカタログ内に含まれているスキーマ オブジェクトにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="6e5ea-p101">Setting the [ActiveConnection](activeconnection-property-adox.md) property to a valid, open connection "opens" the catalog. From an open catalog, you can access the schema objects contained within that catalog.</span></span>
 
 ```cpp 
  

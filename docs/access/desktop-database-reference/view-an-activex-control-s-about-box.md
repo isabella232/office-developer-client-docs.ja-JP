@@ -1,5 +1,5 @@
 ---
-title: バージョン情報ボックスに ActiveX コントロールを表示します。
+title: ActiveX コントロールのバージョン情報の表示
 TOCTitle: View an ActiveX control About box
 description: バージョン情報ボックスを表示するのには手順を実行します。
 ms:assetid: 72a855b4-dd1a-a531-6402-0321335d3bf5
@@ -11,20 +11,21 @@ f1_keywords:
 - vbaac10.chm4039
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 0ccd656669dc265170bd084efff595b97d428e0b
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 01de3eb221187da95dcb8b3984a78c0dcb62af08
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25884570"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28709377"
 ---
-# <a name="view-an-activex-control-about-box"></a><span data-ttu-id="1a2d7-103">バージョン情報ボックスに ActiveX コントロールを表示します。</span><span class="sxs-lookup"><span data-stu-id="1a2d7-103">View an ActiveX control About box</span></span>
+# <a name="view-an-activex-control-about-box"></a><span data-ttu-id="4f9e0-103">ActiveX コントロールのバージョン情報の表示</span><span class="sxs-lookup"><span data-stu-id="4f9e0-103">View an ActiveX control About box</span></span>
 
-<span data-ttu-id="1a2d7-104">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="1a2d7-104">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="4f9e0-104">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="4f9e0-104">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="1a2d7-105">ActiveX コントロールのバージョンと著作権の情報を示す **[バージョン情報**ボックスを表示します。</span><span class="sxs-lookup"><span data-stu-id="1a2d7-105">To view an **About** box showing version and copyright information for an ActiveX control:</span></span>
+<span data-ttu-id="4f9e0-105">ActiveX コントロールのバージョンと著作権の情報を示す **[バージョン情報**ボックスを表示します。</span><span class="sxs-lookup"><span data-stu-id="4f9e0-105">To view an **About** box showing version and copyright information for an ActiveX control:</span></span>
 
-1. <span data-ttu-id="1a2d7-106">Microsoft Access のプロパティ シート**の**プロパティのボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="1a2d7-106">Choose the **About** property box in the Microsoft Access property sheet.</span></span>
+1. <span data-ttu-id="4f9e0-106">Microsoft Access のプロパティ シート**の**プロパティのボックスを選択します。</span><span class="sxs-lookup"><span data-stu-id="4f9e0-106">Choose the **About** property box in the Microsoft Access property sheet.</span></span>
 
-2. <span data-ttu-id="1a2d7-107">プロパティ ボックスの右側に [**ビルド**] ボタンを選択します。</span><span class="sxs-lookup"><span data-stu-id="1a2d7-107">Choose the **Build** button to the right of the property box.</span></span>
+2. <span data-ttu-id="4f9e0-107">プロパティ ボックスの右側に [**ビルド**] ボタンを選択します。</span><span class="sxs-lookup"><span data-stu-id="4f9e0-107">Choose the **Build** button to the right of the property box.</span></span>
 

@@ -6,34 +6,35 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249205(v=office.15)
 ms:contentKeyID: 48544511
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9de748b85e4bf6076c37f49e9d9bc7ff3b0bfe62
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: a5fc1c284ee7aae77c4fb067ad57d50200119594
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947573"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28700025"
 ---
-# <a name="datafactory-customization"></a><span data-ttu-id="221d0-102">DataFactory のカスタマイズ</span><span class="sxs-lookup"><span data-stu-id="221d0-102">DataFactory customization</span></span>
+# <a name="datafactory-customization"></a><span data-ttu-id="9ee07-102">DataFactory のカスタマイズ</span><span class="sxs-lookup"><span data-stu-id="9ee07-102">DataFactory customization</span></span>
 
 
-<span data-ttu-id="221d0-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="221d0-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="9ee07-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="9ee07-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="221d0-p101">リモート データ サービス (RDS) には、3 階層のクライアント/サーバー システムでデータ アクセスを簡単に行う手段があります。クライアントのデータ コントロールで、リモート データ ソース上でクエリを実行するための接続文字列とコマンド文字列のパラメーターを指定するか、または、更新を実行するための接続文字列と [Recordset](recordset-object-ado.md) オブジェクトのパラメーターを指定します。</span><span class="sxs-lookup"><span data-stu-id="221d0-p101">Remote Data Service (RDS) provides a way to easily perform data access in a three-tier client/server system. A client data control specifies connection and command string parameters to perform a query on a remote data source, or connection string and [Recordset](recordset-object-ado.md) object parameters to perform an update.</span></span>
+<span data-ttu-id="9ee07-p101">リモート データ サービス (RDS) には、3 階層のクライアント/サーバー システムでデータ アクセスを簡単に行う手段があります。クライアントのデータ コントロールで、リモート データ ソース上でクエリを実行するための接続文字列とコマンド文字列のパラメーターを指定するか、または、更新を実行するための接続文字列と [Recordset](recordset-object-ado.md) オブジェクトのパラメーターを指定します。</span><span class="sxs-lookup"><span data-stu-id="9ee07-p101">Remote Data Service (RDS) provides a way to easily perform data access in a three-tier client/server system. A client data control specifies connection and command string parameters to perform a query on a remote data source, or connection string and [Recordset](recordset-object-ado.md) object parameters to perform an update.</span></span>
 
-<span data-ttu-id="221d0-p102">パラメーターは、リモート データ ソースでデータ アクセス操作を実行するサーバー プログラムに渡されます。RDS には、[RDSServer.DataFactory](datafactory-object-rdsserver.md) オブジェクトという既定のサーバー プログラムがあります。この **RDSServer.DataFactory** は、クエリで作成された **Recordset** オブジェクトをクライアントに返します。</span><span class="sxs-lookup"><span data-stu-id="221d0-p102">The parameters are passed to a server program, which performs the data-access operation on the remote data source. RDS provides a default server program called the [RDSServer.DataFactory](datafactory-object-rdsserver.md) object. The **RDSServer.DataFactory** object returns any **Recordset** object produced by a query to the client.</span></span>
+<span data-ttu-id="9ee07-p102">パラメーターは、リモート データ ソースでデータ アクセス操作を実行するサーバー プログラムに渡されます。RDS には、[RDSServer.DataFactory](datafactory-object-rdsserver.md) オブジェクトという既定のサーバー プログラムがあります。この **RDSServer.DataFactory** は、クエリで作成された **Recordset** オブジェクトをクライアントに返します。</span><span class="sxs-lookup"><span data-stu-id="9ee07-p102">The parameters are passed to a server program, which performs the data-access operation on the remote data source. RDS provides a default server program called the [RDSServer.DataFactory](datafactory-object-rdsserver.md) object. The **RDSServer.DataFactory** object returns any **Recordset** object produced by a query to the client.</span></span>
 
-<span data-ttu-id="221d0-p103">ただし、 **RDSServer.DataFactory** が実行できるのは、クエリと更新に制限されています。接続文字列またはコマンド文字列の検証または処理は、実行できません。</span><span class="sxs-lookup"><span data-stu-id="221d0-p103">However, the **RDSServer.DataFactory** is limited to performing queries and updates. It cannot perform any validation or processing on the connection or command strings.</span></span>
+<span data-ttu-id="9ee07-p103">ただし、 **RDSServer.DataFactory** が実行できるのは、クエリと更新に制限されています。接続文字列またはコマンド文字列の検証または処理は、実行できません。</span><span class="sxs-lookup"><span data-stu-id="9ee07-p103">However, the **RDSServer.DataFactory** is limited to performing queries and updates. It cannot perform any validation or processing on the connection or command strings.</span></span>
 
-<span data-ttu-id="221d0-111">ADO では、 **DataFactory**の作業別の種類のサーバー プログラムと連携して、*ハンドラー*が呼び出されることを指定できます。</span><span class="sxs-lookup"><span data-stu-id="221d0-111">With ADO, you can specify that the **DataFactory** work in conjunction with another type of server program called a *handler*.</span></span> <span data-ttu-id="221d0-112">ハンドラーでは、データ ソースへのアクセスに使用されるようにクライアントの接続文字列とコマンド文字列を変更できます。</span><span class="sxs-lookup"><span data-stu-id="221d0-112">The handler can modify client connection and command strings before they are used to access the data source.</span></span> <span data-ttu-id="221d0-113">さらに、ハンドラーは、データ ソースにデータを読み書きするクライアントの権限を制御するアクセス権を適用できます。</span><span class="sxs-lookup"><span data-stu-id="221d0-113">In addition, the handler can enforce access rights, which govern the ability of the client to read and write data to the data source.</span></span>
+<span data-ttu-id="9ee07-111">ADO では、 **DataFactory**の作業別の種類のサーバー プログラムと連携して、*ハンドラー*が呼び出されることを指定できます。</span><span class="sxs-lookup"><span data-stu-id="9ee07-111">With ADO, you can specify that the **DataFactory** work in conjunction with another type of server program called a *handler*.</span></span> <span data-ttu-id="9ee07-112">ハンドラーでは、データ ソースへのアクセスに使用されるようにクライアントの接続文字列とコマンド文字列を変更できます。</span><span class="sxs-lookup"><span data-stu-id="9ee07-112">The handler can modify client connection and command strings before they are used to access the data source.</span></span> <span data-ttu-id="9ee07-113">さらに、ハンドラーは、データ ソースにデータを読み書きするクライアントの権限を制御するアクセス権を適用できます。</span><span class="sxs-lookup"><span data-stu-id="9ee07-113">In addition, the handler can enforce access rights, which govern the ability of the client to read and write data to the data source.</span></span>
 
-<span data-ttu-id="221d0-114">ハンドラーがクライアントのパラメーターとアクセス権の変更に使用するパラメーターは、カスタマイズ ファイルの各セクションに指定します。</span><span class="sxs-lookup"><span data-stu-id="221d0-114">The parameters the handler uses to modify client parameters and access rights are specified in sections of a customization file.</span></span>
+<span data-ttu-id="9ee07-114">ハンドラーがクライアントのパラメーターとアクセス権の変更に使用するパラメーターは、カスタマイズ ファイルの各セクションに指定します。</span><span class="sxs-lookup"><span data-stu-id="9ee07-114">The parameters the handler uses to modify client parameters and access rights are specified in sections of a customization file.</span></span>
 
-<span data-ttu-id="221d0-115">**DataFactory** オブジェクトのカスタマイズの詳細については、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="221d0-115">See the following topics for more information about customizing the **DataFactory** object:</span></span>
+<span data-ttu-id="9ee07-115">**DataFactory** オブジェクトのカスタマイズの詳細については、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="9ee07-115">See the following topics for more information about customizing the **DataFactory** object:</span></span>
 
-- [<span data-ttu-id="221d0-116">カスタマイズ ファイルの概要</span><span class="sxs-lookup"><span data-stu-id="221d0-116">Understanding the Customization File</span></span>](understanding-the-customization-file.md)
-- <span data-ttu-id="221d0-117">[カスタマイズ ファイルの接続] セクション](customization-file-connect-section.md)</span><span class="sxs-lookup"><span data-stu-id="221d0-117">[Customization File Connect section](customization-file-connect-section.md)</span></span>
-- [<span data-ttu-id="221d0-118">カスタマイズ ファイルの SQL セクション</span><span class="sxs-lookup"><span data-stu-id="221d0-118">Customization File SQL section</span></span>](customization-file-sql-section.md)
-- [<span data-ttu-id="221d0-119">カスタマイズ ファイルの UserList セクション</span><span class="sxs-lookup"><span data-stu-id="221d0-119">Customization File UserList section</span></span>](customization-file-userlist-section.md)
-- [<span data-ttu-id="221d0-120">カスタマイズ ファイルのログのセクション</span><span class="sxs-lookup"><span data-stu-id="221d0-120">Customization File Logs section</span></span>](customization-file-logs-section.md)
-- [<span data-ttu-id="221d0-121">必要なクライアントの設定</span><span class="sxs-lookup"><span data-stu-id="221d0-121">Required client settings</span></span>](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/required-client-settings)
-- [<span data-ttu-id="221d0-122">独自のカスタマイズされたハンドラーを記述します。</span><span class="sxs-lookup"><span data-stu-id="221d0-122">Writing your own customized handler</span></span>](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/writing-your-own-customized-handler)
+- [<span data-ttu-id="9ee07-116">カスタマイズ ファイルの概要</span><span class="sxs-lookup"><span data-stu-id="9ee07-116">Understanding the Customization File</span></span>](understanding-the-customization-file.md)
+- <span data-ttu-id="9ee07-117">[カスタマイズ ファイルの接続] セクション](customization-file-connect-section.md)</span><span class="sxs-lookup"><span data-stu-id="9ee07-117">[Customization File Connect section](customization-file-connect-section.md)</span></span>
+- [<span data-ttu-id="9ee07-118">カスタマイズ ファイルの SQL セクション</span><span class="sxs-lookup"><span data-stu-id="9ee07-118">Customization File SQL section</span></span>](customization-file-sql-section.md)
+- [<span data-ttu-id="9ee07-119">カスタマイズ ファイルの UserList セクション</span><span class="sxs-lookup"><span data-stu-id="9ee07-119">Customization File UserList section</span></span>](customization-file-userlist-section.md)
+- [<span data-ttu-id="9ee07-120">カスタマイズ ファイルの Logs セクション</span><span class="sxs-lookup"><span data-stu-id="9ee07-120">Customization File Logs section</span></span>](customization-file-logs-section.md)
+- [<span data-ttu-id="9ee07-121">クライアントで必要な設定</span><span class="sxs-lookup"><span data-stu-id="9ee07-121">Required client settings</span></span>](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/required-client-settings)
+- [<span data-ttu-id="9ee07-122">独自のカスタマイズされたハンドラーを記述します。</span><span class="sxs-lookup"><span data-stu-id="9ee07-122">Writing your own customized handler</span></span>](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/writing-your-own-customized-handler)

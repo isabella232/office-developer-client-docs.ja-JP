@@ -6,18 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249515(v=office.15)
 ms:contentKeyID: 48545819
 ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: aca4cdb3ae20fa96f40d130ece4ec78540b6e41d
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: c184253551fa3f974de1840d47654af597881cb8
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25876765"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28701432"
 ---
-# <a name="allownullsenum"></a><span data-ttu-id="2caeb-102">AllowNullsEnum</span><span class="sxs-lookup"><span data-stu-id="2caeb-102">AllowNullsEnum</span></span>
+# <a name="allownullsenum"></a><span data-ttu-id="fa759-102">AllowNullsEnum</span><span class="sxs-lookup"><span data-stu-id="fa759-102">AllowNullsEnum</span></span>
 
-<span data-ttu-id="2caeb-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="2caeb-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="fa759-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="fa759-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="2caeb-104">Null 値を含むレコードにインデックスを付けるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="2caeb-104">Specifies whether records with null values are indexed.</span></span>
+<span data-ttu-id="fa759-104">Null 値を含むレコードにインデックスを付けるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="fa759-104">Specifies whether records with null values are indexed.</span></span>
 
 <br/>
 
@@ -29,31 +30,31 @@ ms.locfileid: "25876765"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="2caeb-105">定数</span><span class="sxs-lookup"><span data-stu-id="2caeb-105">Constant</span></span></p></th>
-<th><p><span data-ttu-id="2caeb-106">値</span><span class="sxs-lookup"><span data-stu-id="2caeb-106">Value</span></span></p></th>
-<th><p><span data-ttu-id="2caeb-107">説明</span><span class="sxs-lookup"><span data-stu-id="2caeb-107">Description</span></span></p></th>
+<th><p><span data-ttu-id="fa759-105">定数</span><span class="sxs-lookup"><span data-stu-id="fa759-105">Constant</span></span></p></th>
+<th><p><span data-ttu-id="fa759-106">値</span><span class="sxs-lookup"><span data-stu-id="fa759-106">Value</span></span></p></th>
+<th><p><span data-ttu-id="fa759-107">説明</span><span class="sxs-lookup"><span data-stu-id="fa759-107">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="2caeb-108"><strong>adIndexNullsAllow</strong></span><span class="sxs-lookup"><span data-stu-id="2caeb-108"><strong>adIndexNullsAllow</strong></span></span></p></td>
-<td><p><span data-ttu-id="2caeb-109">0</span><span class="sxs-lookup"><span data-stu-id="2caeb-109">0</span></span></p></td>
-<td><p><span data-ttu-id="2caeb-p101">インデックスは、キー列が Null 値のエントリを許可します。Null 値がキー列に入力された場合、そのエントリはインデックスに挿入されます。</span><span class="sxs-lookup"><span data-stu-id="2caeb-p101">The index does allow entries in which the key columns are null. If a null value is entered in a key column, the entry is inserted into the index.</span></span></p></td>
+<td><p><span data-ttu-id="fa759-108"><strong>adIndexNullsAllow</strong></span><span class="sxs-lookup"><span data-stu-id="fa759-108"><strong>adIndexNullsAllow</strong></span></span></p></td>
+<td><p><span data-ttu-id="fa759-109">0</span><span class="sxs-lookup"><span data-stu-id="fa759-109">0</span></span></p></td>
+<td><p><span data-ttu-id="fa759-p101">インデックスは、キー列が Null 値のエントリを許可します。Null 値がキー列に入力された場合、そのエントリはインデックスに挿入されます。</span><span class="sxs-lookup"><span data-stu-id="fa759-p101">The index does allow entries in which the key columns are null. If a null value is entered in a key column, the entry is inserted into the index.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="2caeb-112"><strong>adIndexNullsDisallow</strong></span><span class="sxs-lookup"><span data-stu-id="2caeb-112"><strong>adIndexNullsDisallow</strong></span></span></p></td>
-<td><p><span data-ttu-id="2caeb-113">1</span><span class="sxs-lookup"><span data-stu-id="2caeb-113">1</span></span></p></td>
-<td><p><span data-ttu-id="2caeb-p102">既定値です。インデックスは、キー列が Null 値のエントリを許可しません。Null 値がキー列に入力された場合、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="2caeb-p102">Default. The index does not allow entries in which the key columns are null. If a null value is entered in a key column, an error will occur.</span></span></p></td>
+<td><p><span data-ttu-id="fa759-112"><strong>adIndexNullsDisallow</strong></span><span class="sxs-lookup"><span data-stu-id="fa759-112"><strong>adIndexNullsDisallow</strong></span></span></p></td>
+<td><p><span data-ttu-id="fa759-113">1</span><span class="sxs-lookup"><span data-stu-id="fa759-113">1</span></span></p></td>
+<td><p><span data-ttu-id="fa759-p102">既定値です。インデックスは、キー列が Null 値のエントリを許可しません。Null 値がキー列に入力された場合、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="fa759-p102">Default. The index does not allow entries in which the key columns are null. If a null value is entered in a key column, an error will occur.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="2caeb-117"><strong>adIndexNullsIgnore</strong></span><span class="sxs-lookup"><span data-stu-id="2caeb-117"><strong>adIndexNullsIgnore</strong></span></span></p></td>
-<td><p><span data-ttu-id="2caeb-118">2</span><span class="sxs-lookup"><span data-stu-id="2caeb-118">2</span></span></p></td>
-<td><p><span data-ttu-id="2caeb-p103">インデックスは、Null 値のキーを含むエントリを挿入しません。Null 値がキー列に入力された場合、そのエントリは無視され、エラーは発生しません。</span><span class="sxs-lookup"><span data-stu-id="2caeb-p103">The index does not insert entries containing null keys. If a null value is entered in a key column, the entry is ignored and no error occurs.</span></span></p></td>
+<td><p><span data-ttu-id="fa759-117"><strong>adIndexNullsIgnore</strong></span><span class="sxs-lookup"><span data-stu-id="fa759-117"><strong>adIndexNullsIgnore</strong></span></span></p></td>
+<td><p><span data-ttu-id="fa759-118">2</span><span class="sxs-lookup"><span data-stu-id="fa759-118">2</span></span></p></td>
+<td><p><span data-ttu-id="fa759-p103">インデックスは、Null 値のキーを含むエントリを挿入しません。Null 値がキー列に入力された場合、そのエントリは無視され、エラーは発生しません。</span><span class="sxs-lookup"><span data-stu-id="fa759-p103">The index does not insert entries containing null keys. If a null value is entered in a key column, the entry is ignored and no error occurs.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="2caeb-121"><strong>adIndexNullsIgnoreAny</strong></span><span class="sxs-lookup"><span data-stu-id="2caeb-121"><strong>adIndexNullsIgnoreAny</strong></span></span></p></td>
-<td><p><span data-ttu-id="2caeb-122">4</span><span class="sxs-lookup"><span data-stu-id="2caeb-122">4</span></span></p></td>
-<td><p><span data-ttu-id="2caeb-p104">インデックスは、キー列に Null 値を含むエントリを挿入しません。複数列キーを持つインデックスでは、Null 値が入力された列がある場合、そのエントリは無視され、エラーは発生しません。</span><span class="sxs-lookup"><span data-stu-id="2caeb-p104">The index does not insert entries where some key column has a null value. For an index having a multi-column key, if a null value is entered in some column, the entry is ignored and no error occurs.</span></span></p></td>
+<td><p><span data-ttu-id="fa759-121"><strong>adIndexNullsIgnoreAny</strong></span><span class="sxs-lookup"><span data-stu-id="fa759-121"><strong>adIndexNullsIgnoreAny</strong></span></span></p></td>
+<td><p><span data-ttu-id="fa759-122">4</span><span class="sxs-lookup"><span data-stu-id="fa759-122">4</span></span></p></td>
+<td><p><span data-ttu-id="fa759-p104">インデックスは、キー列に Null 値を含むエントリを挿入しません。複数列キーを持つインデックスでは、Null 値が入力された列がある場合、そのエントリは無視され、エラーは発生しません。</span><span class="sxs-lookup"><span data-stu-id="fa759-p104">The index does not insert entries where some key column has a null value. For an index having a multi-column key, if a null value is entered in some column, the entry is ignored and no error occurs.</span></span></p></td>
 </tr>
 </tbody>
 </table>

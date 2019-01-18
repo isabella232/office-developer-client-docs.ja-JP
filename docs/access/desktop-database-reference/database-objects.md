@@ -6,30 +6,31 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn161006(v=office.15)
 ms:contentKeyID: 52072968
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4729170e5759ce4f0df273febdefce843eb0759f
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 76bc229ffb0fd361575a6d7d7e8643b387228c24
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931261"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718470"
 ---
-# <a name="database-objects"></a><span data-ttu-id="32223-102">データベース オブジェクト</span><span class="sxs-lookup"><span data-stu-id="32223-102">Database objects</span></span>
+# <a name="database-objects"></a><span data-ttu-id="7d701-102">データベース オブジェクト</span><span class="sxs-lookup"><span data-stu-id="7d701-102">Database objects</span></span>
 
-<span data-ttu-id="32223-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="32223-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="7d701-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="7d701-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="32223-104">CopyObject マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="32223-104">CopyObject macro action</span></span>](copyobject-macro-action.md)
-- [<span data-ttu-id="32223-105">DeleteObject マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="32223-105">DeleteObject macro action</span></span>](deleteobject-macro-action.md)
-- [<span data-ttu-id="32223-106">GoToControl マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="32223-106">GoToControl macro action</span></span>](gotocontrol-macro-action.md)
-- [<span data-ttu-id="32223-107">GoToPage マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="32223-107">GoToPage macro action</span></span>](gotopage-macro-action.md)
-- [<span data-ttu-id="32223-108">GoToRecord マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="32223-108">GoToRecord macro action</span></span>](gotorecord-macro-action.md)
-- [<span data-ttu-id="32223-109">OpenForm マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="32223-109">OpenForm macro action</span></span>](openform-macro-action.md)
-- [<span data-ttu-id="32223-110">OpenReport マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="32223-110">OpenReport macro action</span></span>](openreport-macro-action.md)
-- [<span data-ttu-id="32223-111">OpenTable マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="32223-111">OpenTable macro action</span></span>](opentable-macro-action.md)
-- [<span data-ttu-id="32223-112">RenameObject マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="32223-112">RenameObject macro action</span></span>](renameobject-macro-action.md)
-- [<span data-ttu-id="32223-113">RepaintObject マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="32223-113">RepaintObject macro action</span></span>](repaintobject-macro-action.md)
-- [<span data-ttu-id="32223-114">SaveObject マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="32223-114">SaveObject macro action</span></span>](saveobject-macro-action.md)
-- [<span data-ttu-id="32223-115">SelectObject マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="32223-115">SelectObject macro action</span></span>](selectobject-macro-action.md)
-- [<span data-ttu-id="32223-116">SetProperty マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="32223-116">SetProperty macro action</span></span>](setproperty-macro-action.md)
-- [<span data-ttu-id="32223-117">SetValue マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="32223-117">SetValue macro action</span></span>](setvalue-macro-action.md)
+- [<span data-ttu-id="7d701-104">CopyObject マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="7d701-104">CopyObject macro action</span></span>](copyobject-macro-action.md)
+- [<span data-ttu-id="7d701-105">DeleteObject マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="7d701-105">DeleteObject macro action</span></span>](deleteobject-macro-action.md)
+- [<span data-ttu-id="7d701-106">GoToControl マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="7d701-106">GoToControl macro action</span></span>](gotocontrol-macro-action.md)
+- [<span data-ttu-id="7d701-107">GoToPage マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="7d701-107">GoToPage macro action</span></span>](gotopage-macro-action.md)
+- [<span data-ttu-id="7d701-108">GoToRecord マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="7d701-108">GoToRecord macro action</span></span>](gotorecord-macro-action.md)
+- [<span data-ttu-id="7d701-109">OpenForm マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="7d701-109">OpenForm macro action</span></span>](openform-macro-action.md)
+- [<span data-ttu-id="7d701-110">OpenReport マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="7d701-110">OpenReport macro action</span></span>](openreport-macro-action.md)
+- [<span data-ttu-id="7d701-111">OpenTable マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="7d701-111">OpenTable macro action</span></span>](opentable-macro-action.md)
+- [<span data-ttu-id="7d701-112">RenameObject マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="7d701-112">RenameObject macro action</span></span>](renameobject-macro-action.md)
+- [<span data-ttu-id="7d701-113">RepaintObject マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="7d701-113">RepaintObject macro action</span></span>](repaintobject-macro-action.md)
+- [<span data-ttu-id="7d701-114">SaveObject マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="7d701-114">SaveObject macro action</span></span>](saveobject-macro-action.md)
+- [<span data-ttu-id="7d701-115">SelectObject マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="7d701-115">SelectObject macro action</span></span>](selectobject-macro-action.md)
+- [<span data-ttu-id="7d701-116">SetProperty マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="7d701-116">SetProperty macro action</span></span>](setproperty-macro-action.md)
+- [<span data-ttu-id="7d701-117">SetValue マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="7d701-117">SetValue macro action</span></span>](setvalue-macro-action.md)
 
 

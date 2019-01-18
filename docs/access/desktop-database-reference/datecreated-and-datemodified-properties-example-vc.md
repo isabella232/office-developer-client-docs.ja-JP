@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248962(v=office.15)
 ms:contentKeyID: 48543573
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 100062ceb7aab0b3d5b74ee3ac1b13cf725c09bc
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: c74b90ad45055689c7235e4062b83d71919c02a4
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25870178"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28699171"
 ---
-# <a name="datecreated-and-datemodified-properties-example-vc"></a><span data-ttu-id="f7a1c-102">DateCreated プロパティと DateModified プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="f7a1c-102">DateCreated and DateModified properties example (VC++)</span></span>
+# <a name="datecreated-and-datemodified-properties-example-vc"></a><span data-ttu-id="de910-102">DateCreated プロパティと DateModified プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="de910-102">DateCreated and DateModified properties example (VC++)</span></span>
 
 
-<span data-ttu-id="f7a1c-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f7a1c-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="de910-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="de910-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f7a1c-p101">ここでは、新しい [Column](datecreated-property-adox.md) を既存の [Table](datemodified-property-adox.md) に追加したり、新しい [Table](column-object-adox.md) を作成したりすることで、 [DateCreated](table-object-adox.md) プロパティおよび **DateModified** プロパティの使用例を示します。この例を実行するには DateOutput プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="f7a1c-p101">This example demonstrates the [DateCreated](datecreated-property-adox.md) and [DateModified](datemodified-property-adox.md) properties by adding a new [Column](column-object-adox.md) to an existing [Table](table-object-adox.md) and by creating a new **Table**. The DateOutput procedure is required for this example to run.</span></span>
+<span data-ttu-id="de910-p101">ここでは、新しい [Column](datecreated-property-adox.md) を既存の [Table](datemodified-property-adox.md) に追加したり、新しい [Table](column-object-adox.md) を作成したりすることで、 [DateCreated](table-object-adox.md) プロパティおよび **DateModified** プロパティの使用例を示します。この例を実行するには DateOutput プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="de910-p101">This example demonstrates the [DateCreated](datecreated-property-adox.md) and [DateModified](datemodified-property-adox.md) properties by adding a new [Column](column-object-adox.md) to an existing [Table](table-object-adox.md) and by creating a new **Table**. The DateOutput procedure is required for this example to run.</span></span>
 
 ```cpp 
  

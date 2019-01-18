@@ -6,21 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193209(v=office.15)
 ms:contentKeyID: 48544594
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3339a75a121d67345610334df7ff6a58b5ab6c9c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 7e18bb9ecb65e2664b082d5305196386c536b716
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931212"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28698023"
 ---
-# <a name="comment-macro-statement"></a><span data-ttu-id="1daed-102">Comment マクロ ステートメント</span><span class="sxs-lookup"><span data-stu-id="1daed-102">Comment macro statement</span></span>
+# <a name="comment-macro-statement"></a><span data-ttu-id="98b0a-102">Comment マクロ ステートメント</span><span class="sxs-lookup"><span data-stu-id="98b0a-102">Comment macro statement</span></span>
 
 
-<span data-ttu-id="1daed-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="1daed-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="98b0a-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="98b0a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="1daed-104">**Comment** ステートメントを使用して、マクロに説明コメントを指定できます。</span><span class="sxs-lookup"><span data-stu-id="1daed-104">The **Comment** statement can be used to provide explanatory remarks in a macro.</span></span>
+<span data-ttu-id="98b0a-104">**Comment** ステートメントを使用して、マクロに説明コメントを指定できます。</span><span class="sxs-lookup"><span data-stu-id="98b0a-104">The **Comment** statement can be used to provide explanatory remarks in a macro.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="1daed-105">備考</span><span class="sxs-lookup"><span data-stu-id="1daed-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="98b0a-105">注釈</span><span class="sxs-lookup"><span data-stu-id="98b0a-105">Remarks</span></span>
 
-<span data-ttu-id="1daed-p101">**Comment** には、最大 1000 文字まで使用できます。ただし、既定ではコメントの先頭行のみが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1daed-p101">A **Comment** may be up to 1000 characters in length. However, by default, only the first line of the comment is displayed.</span></span>
+<span data-ttu-id="98b0a-p101">**Comment** には、最大 1000 文字まで使用できます。ただし、既定ではコメントの先頭行のみが表示されます。</span><span class="sxs-lookup"><span data-stu-id="98b0a-p101">A **Comment** may be up to 1000 characters in length. However, by default, only the first line of the comment is displayed.</span></span>
 

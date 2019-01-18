@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250025(v=office.15)
 ms:contentKeyID: 48547798
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 13d0173886b2b75d6e416d242eb6f437c97418ec
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 7b4b12fb7a9bbe8d3363574936d63d1c5f175665
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25884724"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28713339"
 ---
-# <a name="filter-and-recordcount-properties-example-vj"></a><span data-ttu-id="29324-102">Filter プロパティと RecordCount プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="29324-102">Filter and RecordCount properties example (VJ++)</span></span>
+# <a name="filter-and-recordcount-properties-example-vj"></a><span data-ttu-id="dfeab-102">Filter プロパティと RecordCount プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="dfeab-102">Filter and RecordCount properties example (VJ++)</span></span>
 
 
-<span data-ttu-id="29324-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="29324-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="dfeab-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="dfeab-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="29324-p101">この例では、[Filter](filter-property-ado.md) プロパティを使って、既存の [Recordset](recordset-object-ado.md) に適用されている特定の条件に基づいて新規 **Recordset** を開きます。この例では、 [RecordCount](recordcount-property-ado.md) プロパティを使って、2 つの **Recordset** 内のレコードの数を示します。このプロシージャを実行するには、FilterField 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="29324-p101">This example uses the [Filter](filter-property-ado.md) property to open a new [Recordset](recordset-object-ado.md) based on a specified condition applied to an existing **Recordset**. It uses the [RecordCount](recordcount-property-ado.md) property to show the number of records in the two **Recordsets**. The FilterField function is required for this procedure to run.</span></span>
+<span data-ttu-id="dfeab-p101">この例では、[Filter](filter-property-ado.md) プロパティを使って、既存の [Recordset](recordset-object-ado.md) に適用されている特定の条件に基づいて新規 **Recordset** を開きます。この例では、 [RecordCount](recordcount-property-ado.md) プロパティを使って、2 つの **Recordset** 内のレコードの数を示します。このプロシージャを実行するには、FilterField 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="dfeab-p101">This example uses the [Filter](filter-property-ado.md) property to open a new [Recordset](recordset-object-ado.md) based on a specified condition applied to an existing **Recordset**. It uses the [RecordCount](recordcount-property-ado.md) property to show the number of records in the two **Recordsets**. The FilterField function is required for this procedure to run.</span></span>
 
 ```java 
  

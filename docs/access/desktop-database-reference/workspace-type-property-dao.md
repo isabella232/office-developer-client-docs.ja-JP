@@ -6,29 +6,30 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197086(v=office.15)
 ms:contentKeyID: 48546177
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6c715da6ec535d90397b49e47be6ca76a72e5685
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: e698963d60809e8d88c4ff87532fb7b74cff275c
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926774"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28722684"
 ---
-# <a name="workspacetype-property-dao"></a><span data-ttu-id="098e3-102">Workspace.Type プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="098e3-102">Workspace.Type property (DAO)</span></span>
+# <a name="workspacetype-property-dao"></a><span data-ttu-id="d0690-102">Workspace.Type プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="d0690-102">Workspace.Type property (DAO)</span></span>
 
 
-<span data-ttu-id="098e3-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="098e3-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="d0690-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="d0690-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="098e3-p101">オブジェクトの操作の種類またはデータ型を示す値を設定または取得します。値の取得のみ可能です。整数型 ( **Integer** ) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="098e3-p101">Sets or returns a value that indicates the operational type or data type of an object. Read-only **Integer**.</span></span>
+<span data-ttu-id="d0690-p101">オブジェクトの操作の種類またはデータ型を示す値を設定または取得します。値の取得のみ可能です。整数型 ( **Integer** ) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="d0690-p101">Sets or returns a value that indicates the operational type or data type of an object. Read-only **Integer**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="098e3-106">構文</span><span class="sxs-lookup"><span data-stu-id="098e3-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d0690-106">構文</span><span class="sxs-lookup"><span data-stu-id="d0690-106">Syntax</span></span>
 
-<span data-ttu-id="098e3-107">*式*です。タイプ</span><span class="sxs-lookup"><span data-stu-id="098e3-107">*expression* .Type</span></span>
+<span data-ttu-id="d0690-107">*式*です。タイプ</span><span class="sxs-lookup"><span data-stu-id="d0690-107">*expression* .Type</span></span>
 
-<span data-ttu-id="098e3-108">\*式\***ワークスペース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="098e3-108">*expression* A variable that represents a **Workspace** object.</span></span>
+<span data-ttu-id="d0690-108">\*式\***ワークスペース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="d0690-108">*expression* A variable that represents a **Workspace** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="098e3-109">注釈</span><span class="sxs-lookup"><span data-stu-id="098e3-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d0690-109">注釈</span><span class="sxs-lookup"><span data-stu-id="d0690-109">Remarks</span></span>
 
-<span data-ttu-id="098e3-110">**Workspace** オブジェクトの場合、設定できる値と戻り値は次のようになります。</span><span class="sxs-lookup"><span data-stu-id="098e3-110">For a **Workspace** object, the possible settings and return values are as follows.</span></span>
+<span data-ttu-id="d0690-110">**Workspace** オブジェクトの場合、設定できる値と戻り値は次のようになります。</span><span class="sxs-lookup"><span data-stu-id="d0690-110">For a **Workspace** object, the possible settings and return values are as follows.</span></span>
 
 <table>
 <colgroup>
@@ -37,18 +38,18 @@ ms.locfileid: "25926774"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="098e3-111">定数</span><span class="sxs-lookup"><span data-stu-id="098e3-111">Constant</span></span></p></th>
-<th><p><span data-ttu-id="098e3-112">ワークスペースの種類</span><span class="sxs-lookup"><span data-stu-id="098e3-112">Workspace type</span></span></p></th>
+<th><p><span data-ttu-id="d0690-111">定数</span><span class="sxs-lookup"><span data-stu-id="d0690-111">Constant</span></span></p></th>
+<th><p><span data-ttu-id="d0690-112">ワークスペースの種類</span><span class="sxs-lookup"><span data-stu-id="d0690-112">Workspace type</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="098e3-113"><strong>dbUseJet</strong></span><span class="sxs-lookup"><span data-stu-id="098e3-113"><strong>dbUseJet</strong></span></span></p></td>
-<td><p><span data-ttu-id="098e3-114"><strong>Workspace</strong> は Microsoft Access データベース エンジンに接続されます。</span><span class="sxs-lookup"><span data-stu-id="098e3-114">The <strong>Workspace</strong> is connected to the Microsoft Access database engine.</span></span></p></td>
+<td><p><span data-ttu-id="d0690-113"><strong>dbUseJet</strong></span><span class="sxs-lookup"><span data-stu-id="d0690-113"><strong>dbUseJet</strong></span></span></p></td>
+<td><p><span data-ttu-id="d0690-114"><strong>Workspace</strong> は Microsoft Access データベース エンジンに接続されます。</span><span class="sxs-lookup"><span data-stu-id="d0690-114">The <strong>Workspace</strong> is connected to the Microsoft Access database engine.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="098e3-115"><strong>dbUseODBC</strong></span><span class="sxs-lookup"><span data-stu-id="098e3-115"><strong>dbUseODBC</strong></span></span></p></td>
-<td><p><span data-ttu-id="098e3-116"><strong>Workspace</strong> は ODBC データ ソースに接続されます。</span><span class="sxs-lookup"><span data-stu-id="098e3-116">The <strong>Workspace</strong> is connected to an ODBC data source.</span></span></p></td>
+<td><p><span data-ttu-id="d0690-115"><strong>dbUseODBC</strong></span><span class="sxs-lookup"><span data-stu-id="d0690-115"><strong>dbUseODBC</strong></span></span></p></td>
+<td><p><span data-ttu-id="d0690-116"><strong>Workspace</strong> は ODBC データ ソースに接続されます。</span><span class="sxs-lookup"><span data-stu-id="d0690-116">The <strong>Workspace</strong> is connected to an ODBC data source.</span></span></p></td>
 </tr>
 </tbody>
 </table>

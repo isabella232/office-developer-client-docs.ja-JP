@@ -1,24 +1,25 @@
 ---
-title: 作成して、単純なコマンドを実行します。
+title: 簡単なコマンドの作成と実行
 TOCTitle: Creating and executing a simple command
 ms:assetid: 9ace1abe-cfae-0677-bc57-5cbda85b79db
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249699(v=office.15)
 ms:contentKeyID: 48546547
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 333f8481958914eadbd830600c08035acc92b031
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 2229c7580acc6848551103d83b7bfcf981d37bef
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947477"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702657"
 ---
-# <a name="creating-and-executing-a-simple-command"></a><span data-ttu-id="adb3b-102">作成して、単純なコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="adb3b-102">Creating and executing a simple command</span></span>
+# <a name="creating-and-executing-a-simple-command"></a><span data-ttu-id="2eaa8-102">簡単なコマンドの作成と実行</span><span class="sxs-lookup"><span data-stu-id="2eaa8-102">Creating and executing a simple command</span></span>
 
 
-<span data-ttu-id="adb3b-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="adb3b-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="2eaa8-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="2eaa8-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="adb3b-p101">**Command** オブジェクトの一般的な使用方法ではありませんが、次のコードに、 **Command** オブジェクトを使用してデータ ソースに対するコマンドを実行する基本的な方法を示します。この場合、行を返すコマンドなので、コマンドの実行結果を **Recordset** オブジェクトに返します。</span><span class="sxs-lookup"><span data-stu-id="adb3b-p101">Though not a typical usage of the **Command** object, the following code shows the basic method of using the **Command** object to execute a command against a data source. In this case, it is a row-returning command, so it returns the results of the command execution into a **Recordset** object.</span></span>
+<span data-ttu-id="2eaa8-p101">**Command** オブジェクトの一般的な使用方法ではありませんが、次のコードに、 **Command** オブジェクトを使用してデータ ソースに対するコマンドを実行する基本的な方法を示します。この場合、行を返すコマンドなので、コマンドの実行結果を **Recordset** オブジェクトに返します。</span><span class="sxs-lookup"><span data-stu-id="2eaa8-p101">Though not a typical usage of the **Command** object, the following code shows the basic method of using the **Command** object to execute a command against a data source. In this case, it is a row-returning command, so it returns the results of the command execution into a **Recordset** object.</span></span>
 
 ```vb 
  
@@ -78,11 +79,11 @@ ErrHandler:
 'EndBasicCmd 
 ```
 
-<span data-ttu-id="adb3b-106">実行するコマンドは、 **CommandText** プロパティで指定します。</span><span class="sxs-lookup"><span data-stu-id="adb3b-106">The command to be executed is specified with the **CommandText** property.</span></span>
+<span data-ttu-id="2eaa8-106">実行するコマンドは、 **CommandText** プロパティで指定します。</span><span class="sxs-lookup"><span data-stu-id="2eaa8-106">The command to be executed is specified with the **CommandText** property.</span></span>
 
 
 > [!NOTE]
-> <span data-ttu-id="adb3b-107">ここでいくつかの例では、 **GetNewConnection**、データ プロバイダーとの接続を確立するために、ユーティリティ関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="adb3b-107">Several examples in this section call a utility function, **GetNewConnection**, to establish a connection with the data provider.</span></span> <span data-ttu-id="adb3b-108">冗長性を避けるためには、表示されている 1 回だけ。</span><span class="sxs-lookup"><span data-stu-id="adb3b-108">To avoid redundancy, it is listed only once:</span></span>
+> <span data-ttu-id="2eaa8-107">ここでいくつかの例では、 **GetNewConnection**、データ プロバイダーとの接続を確立するために、ユーティリティ関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="2eaa8-107">Several examples in this section call a utility function, **GetNewConnection**, to establish a connection with the data provider.</span></span> <span data-ttu-id="2eaa8-108">冗長性を避けるためには、表示されている 1 回だけ。</span><span class="sxs-lookup"><span data-stu-id="2eaa8-108">To avoid redundancy, it is listed only once:</span></span>
 
 ```vb 
  

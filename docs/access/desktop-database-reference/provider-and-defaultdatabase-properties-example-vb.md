@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249104(v=office.15)
 ms:contentKeyID: 48544107
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c213347532407b96c13fc009fa05740dabc4658d
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 81c0a12a84f948fff483f236052c01eeeeb88d0a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25891010"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28698107"
 ---
-# <a name="provider-and-defaultdatabase-properties-example-vb"></a><span data-ttu-id="aad82-102">Provider プロパティと DefaultDatabase プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="aad82-102">Provider and DefaultDatabase properties example (VB)</span></span>
+# <a name="provider-and-defaultdatabase-properties-example-vb"></a><span data-ttu-id="8d556-102">Provider プロパティと DefaultDatabase プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="8d556-102">Provider and DefaultDatabase properties example (VB)</span></span>
 
 
-<span data-ttu-id="aad82-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="aad82-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="8d556-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="8d556-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="aad82-p101">この例では、異なるプロバイダーを使用する 3 つの [Connection](provider-property-ado.md) オブジェクトを開くことによって、 [Provider](connection-object-ado.md) プロパティの機能を示します。また、 [DefaultDatabase](defaultdatabase-property-ado.md) プロパティを使用して、Microsoft ODBC Provider の既定のデータベースを設定します。</span><span class="sxs-lookup"><span data-stu-id="aad82-p101">This example demonstrates the [Provider](provider-property-ado.md) property by opening three [Connection](connection-object-ado.md) objects using different providers. It also uses the [DefaultDatabase](defaultdatabase-property-ado.md) property to set the default database for the Microsoft ODBC Provider.</span></span>
+<span data-ttu-id="8d556-p101">この例では、異なるプロバイダーを使用する 3 つの [Connection](provider-property-ado.md) オブジェクトを開くことによって、 [Provider](connection-object-ado.md) プロパティの機能を示します。また、 [DefaultDatabase](defaultdatabase-property-ado.md) プロパティを使用して、Microsoft ODBC Provider の既定のデータベースを設定します。</span><span class="sxs-lookup"><span data-stu-id="8d556-p101">This example demonstrates the [Provider](provider-property-ado.md) property by opening three [Connection](connection-object-ado.md) objects using different providers. It also uses the [DefaultDatabase](defaultdatabase-property-ado.md) property to set the default database for the Microsoft ODBC Provider.</span></span>
 
 ```vb 
  

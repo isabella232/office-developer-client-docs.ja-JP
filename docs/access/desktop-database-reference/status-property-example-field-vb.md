@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248969(v=office.15)
 ms:contentKeyID: 48543601
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 680df8832bea713155435b6a315a008dae7e3309
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 68583b1ee211802a3cade63e85f0f62bbf3cb686
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25873475"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28720969"
 ---
-# <a name="status-property-example-field-vb"></a><span data-ttu-id="9c315-102">Status プロパティの使用例 (Field) (VB)</span><span class="sxs-lookup"><span data-stu-id="9c315-102">Status property example (Field) (VB)</span></span>
+# <a name="status-property-example-field-vb"></a><span data-ttu-id="0aeb0-102">Status プロパティの使用例 (Field) (VB)</span><span class="sxs-lookup"><span data-stu-id="0aeb0-102">Status property example (Field) (VB)</span></span>
 
 
-<span data-ttu-id="9c315-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="9c315-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="0aeb0-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="0aeb0-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="9c315-p101">次の例では、[Internet Publishing Provider](microsoft-ole-db-provider-for-internet-publishing.md) を使用して読み書き可能なフォルダーからドキュメントを開きます。 [Record](status-property-ado-field.md) の [Field](field-object-ado.md) オブジェクトの [Status](record-object-ado.md) プロパティは、最初は **adFieldPendingInsert** に設定され、次に **adFieldOk** に更新されます。</span><span class="sxs-lookup"><span data-stu-id="9c315-p101">The following example opens a document from a read/write folder using the [Internet Publishing Provider](microsoft-ole-db-provider-for-internet-publishing.md). The [Status](status-property-ado-field.md) property of a [Field](field-object-ado.md) object of the [Record](record-object-ado.md) will first be set to **adFieldPendingInsert**, then be updated to **adFieldOk**.</span></span>
+<span data-ttu-id="0aeb0-p101">次の例では、[Internet Publishing Provider](microsoft-ole-db-provider-for-internet-publishing.md) を使用して読み書き可能なフォルダーからドキュメントを開きます。 [Record](status-property-ado-field.md) の [Field](field-object-ado.md) オブジェクトの [Status](record-object-ado.md) プロパティは、最初は **adFieldPendingInsert** に設定され、次に **adFieldOk** に更新されます。</span><span class="sxs-lookup"><span data-stu-id="0aeb0-p101">The following example opens a document from a read/write folder using the [Internet Publishing Provider](microsoft-ole-db-provider-for-internet-publishing.md). The [Status](status-property-ado-field.md) property of a [Field](field-object-ado.md) object of the [Record](record-object-ado.md) will first be set to **adFieldPendingInsert**, then be updated to **adFieldOk**.</span></span>
 
 ```vb
     'BeginStatusFieldVB
@@ -77,7 +78,7 @@ ms.locfileid: "25873475"
 
 <br/>
 
-<span data-ttu-id="9c315-p102">次の例では、ドキュメントから開いている **Record** から既知の **Field** を削除します。 **Status** プロパティは、最初は **adFieldOK** に設定され、次に **adFieldPendingUnknown** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="9c315-p102">The following example deletes a known **Field** from a **Record** opened from a document. The **Status** property will first be set to **adFieldOK**, then **adFieldPendingUnknown**.</span></span>
+<span data-ttu-id="0aeb0-p102">次の例では、ドキュメントから開いている **Record** から既知の **Field** を削除します。 **Status** プロパティは、最初は **adFieldOK** に設定され、次に **adFieldPendingUnknown** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="0aeb0-p102">The following example deletes a known **Field** from a **Record** opened from a document. The **Status** property will first be set to **adFieldOK**, then **adFieldPendingUnknown**.</span></span>
 
 ```vb
     'BeginStatusField2VB
@@ -131,7 +132,7 @@ ms.locfileid: "25873475"
 
 <br/>
 
-<span data-ttu-id="9c315-p103">次のコードは、読み取り専用のドキュメントで開いている **Record** から **Field** を削除します。 **Status** は **adFieldPendingDelete** に設定されます。 [Update](update-method-ado.md) を呼び出すと、削除は失敗し、 **Status** は **adFieldPendingDelete** および **adFieldPermissionDenied** になります。 [CancelUpdate](cancelupdate-method-ado.md) によって保留状態の **Status** の設定がクリアされます。</span><span class="sxs-lookup"><span data-stu-id="9c315-p103">The following code deletes a **Field** from a **Record** opened on a read-only document. **Status** will be set to **adFieldPendingDelete**. At [Update](update-method-ado.md), the delete will fail and **Status** will be **adFieldPendingDelete** plus **adFieldPermissionDenied**. [CancelUpdate](cancelupdate-method-ado.md) clears the pending **Status** setting.</span></span>
+<span data-ttu-id="0aeb0-p103">次のコードは、読み取り専用のドキュメントで開いている **Record** から **Field** を削除します。 **Status** は **adFieldPendingDelete** に設定されます。 [Update](update-method-ado.md) を呼び出すと、削除は失敗し、 **Status** は **adFieldPendingDelete** および **adFieldPermissionDenied** になります。 [CancelUpdate](cancelupdate-method-ado.md) によって保留状態の **Status** の設定がクリアされます。</span><span class="sxs-lookup"><span data-stu-id="0aeb0-p103">The following code deletes a **Field** from a **Record** opened on a read-only document. **Status** will be set to **adFieldPendingDelete**. At [Update](update-method-ado.md), the delete will fail and **Status** will be **adFieldPendingDelete** plus **adFieldPermissionDenied**. [CancelUpdate](cancelupdate-method-ado.md) clears the pending **Status** setting.</span></span>
 
 ```vb
     Sub Main()

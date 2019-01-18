@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249167(v=office.15)
 ms:contentKeyID: 48544354
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c291dcfdcaf14543100d68bed46cabbc05403d7e
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: f892349d2ddb9c8fc5063d3fbec37ca9ef0d469f
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936519"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28721641"
 ---
-# <a name="filter-and-recordcount-properties-example-vb"></a><span data-ttu-id="fd156-102">Filter プロパティと RecordCount プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="fd156-102">Filter and RecordCount properties example (VB)</span></span>
+# <a name="filter-and-recordcount-properties-example-vb"></a><span data-ttu-id="96d05-102">Filter プロパティと RecordCount プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="96d05-102">Filter and RecordCount properties example (VB)</span></span>
 
 
-<span data-ttu-id="fd156-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="fd156-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="96d05-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="96d05-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="fd156-104">次の使用例は、 ***Pubs***データベースの Publishers テーブルの**レコード セット**を開きます。</span><span class="sxs-lookup"><span data-stu-id="fd156-104">This example open a **Recordset** on the Publishers table in the ***Pubs*** database.</span></span> <span data-ttu-id="fd156-105">次に、 [Filter](filter-property-ado.md) プロパティを使って、特定の国/領域のパブリッシャーに対して表示されるレコードの数を制限します。</span><span class="sxs-lookup"><span data-stu-id="fd156-105">It then uses the [Filter](filter-property-ado.md) property to limit the number of visible records to those publishers in a particular country/region.</span></span> <span data-ttu-id="fd156-106">**RecordCount** プロパティは、フィルターが適用されているレコードセットとフィルターが適用されていないレコードセットとの相違を示すために使います。</span><span class="sxs-lookup"><span data-stu-id="fd156-106">The **RecordCount** property is used to show the difference between the filtered and unfiltered recordsets.</span></span>
+<span data-ttu-id="96d05-104">次の使用例は、 ***Pubs***データベースの Publishers テーブルの**レコード セット**を開きます。</span><span class="sxs-lookup"><span data-stu-id="96d05-104">This example open a **Recordset** on the Publishers table in the ***Pubs*** database.</span></span> <span data-ttu-id="96d05-105">次に、 [Filter](filter-property-ado.md) プロパティを使って、特定の国/領域のパブリッシャーに対して表示されるレコードの数を制限します。</span><span class="sxs-lookup"><span data-stu-id="96d05-105">It then uses the [Filter](filter-property-ado.md) property to limit the number of visible records to those publishers in a particular country/region.</span></span> <span data-ttu-id="96d05-106">**RecordCount** プロパティは、フィルターが適用されているレコードセットとフィルターが適用されていないレコードセットとの相違を示すために使います。</span><span class="sxs-lookup"><span data-stu-id="96d05-106">The **RecordCount** property is used to show the difference between the filtered and unfiltered recordsets.</span></span>
 
 ```vb 
  
@@ -105,7 +106,7 @@ End Sub
 
 
 > [!NOTE]
-> <span data-ttu-id="fd156-p102">[!メモ] 選択するデータがわかっている場合は、SQL ステートメントを使用して **Recordset** を開く方が一般に効率的です。この例は、単一の **Recordset** を作成し、特定の国/地域からレコードを取得する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="fd156-p102">When you know the data you want to select, it's usually more efficient to open a **Recordset** with an SQL statement. This example shows how you can create just one **Recordset** and obtain records from a particular country/region.</span></span>
+> <span data-ttu-id="96d05-p102">[!メモ] 選択するデータがわかっている場合は、SQL ステートメントを使用して **Recordset** を開く方が一般に効率的です。この例は、単一の **Recordset** を作成し、特定の国/地域からレコードを取得する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="96d05-p102">When you know the data you want to select, it's usually more efficient to open a **Recordset** with an SQL statement. This example shows how you can create just one **Recordset** and obtain records from a particular country/region.</span></span>
 
 
 

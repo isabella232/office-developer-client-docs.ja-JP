@@ -6,20 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250176(v=office.15)
 ms:contentKeyID: 48548415
 ms.date: 10/17/2018
 mtps_version: v=office.15
-ms.openlocfilehash: d7ef113a3d167d94d1b3e262b84d68197a08cd9f
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 80e13c2ad871adf330fb4c607679d542c024a266
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25878613"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28698219"
 ---
-# <a name="activecommand-property-example-vj"></a><span data-ttu-id="1e5da-102">ActiveCommand プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="1e5da-102">ActiveCommand property example (VJ++)</span></span>
+# <a name="activecommand-property-example-vj"></a><span data-ttu-id="12669-102">ActiveCommand プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="12669-102">ActiveCommand property example (VJ++)</span></span>
 
-<span data-ttu-id="1e5da-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="1e5da-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="12669-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="12669-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="1e5da-104">次の例では、[ActiveCommand](activecommand-property-ado.md) プロパティの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="1e5da-104">This example demonstrates the [ActiveCommand](activecommand-property-ado.md) property.</span></span>
+<span data-ttu-id="12669-104">次の例では、[ActiveCommand](activecommand-property-ado.md) プロパティの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="12669-104">This example demonstrates the [ActiveCommand](activecommand-property-ado.md) property.</span></span>
 
-<span data-ttu-id="1e5da-105">サブルーチンが、[Recordset](recordset-object-ado.md) オブジェクトを受け取り、その **ActiveCommand** プロパティを使用して、 **Recordset** を作成したコマンド テキストとパラメーターを表示します。</span><span class="sxs-lookup"><span data-stu-id="1e5da-105">A subroutine is given a [Recordset](recordset-object-ado.md) object whose **ActiveCommand** property is used to display the command text and parameter that created the **Recordset**.</span></span>
+<span data-ttu-id="12669-105">サブルーチンが、[Recordset](recordset-object-ado.md) オブジェクトを受け取り、その **ActiveCommand** プロパティを使用して、 **Recordset** を作成したコマンド テキストとパラメーターを表示します。</span><span class="sxs-lookup"><span data-stu-id="12669-105">A subroutine is given a [Recordset](recordset-object-ado.md) object whose **ActiveCommand** property is used to display the command text and parameter that created the **Recordset**.</span></span>
 
 ```java 
  

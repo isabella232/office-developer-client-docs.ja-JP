@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250012(v=office.15)
 ms:contentKeyID: 48547726
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 19a5f34734f98b84e9a232dd06bd4f35f016a58f
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: c929bcf5dc7f5267c2e7d3a8dac5ed6bfb55b20b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25877507"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28717266"
 ---
-# <a name="propertyattributesenum"></a><span data-ttu-id="18d84-102">PropertyAttributesEnum</span><span class="sxs-lookup"><span data-stu-id="18d84-102">PropertyAttributesEnum</span></span>
+# <a name="propertyattributesenum"></a><span data-ttu-id="fd37a-102">PropertyAttributesEnum</span><span class="sxs-lookup"><span data-stu-id="fd37a-102">PropertyAttributesEnum</span></span>
 
 
-<span data-ttu-id="18d84-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="18d84-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="fd37a-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="fd37a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="18d84-104">[Property](property-object-ado.md) オブジェクトの属性を表します。</span><span class="sxs-lookup"><span data-stu-id="18d84-104">Specifies the attributes of a [Property](property-object-ado.md) object.</span></span>
+<span data-ttu-id="fd37a-104">[Property](property-object-ado.md) オブジェクトの属性を表します。</span><span class="sxs-lookup"><span data-stu-id="fd37a-104">Specifies the attributes of a [Property](property-object-ado.md) object.</span></span>
 
 <table>
 <colgroup>
@@ -28,44 +29,44 @@ ms.locfileid: "25877507"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="18d84-105">定数</span><span class="sxs-lookup"><span data-stu-id="18d84-105">Constant</span></span></p></th>
-<th><p><span data-ttu-id="18d84-106">値</span><span class="sxs-lookup"><span data-stu-id="18d84-106">Value</span></span></p></th>
-<th><p><span data-ttu-id="18d84-107">説明</span><span class="sxs-lookup"><span data-stu-id="18d84-107">Description</span></span></p></th>
+<th><p><span data-ttu-id="fd37a-105">定数</span><span class="sxs-lookup"><span data-stu-id="fd37a-105">Constant</span></span></p></th>
+<th><p><span data-ttu-id="fd37a-106">値</span><span class="sxs-lookup"><span data-stu-id="fd37a-106">Value</span></span></p></th>
+<th><p><span data-ttu-id="fd37a-107">説明</span><span class="sxs-lookup"><span data-stu-id="fd37a-107">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="18d84-108"><strong>adPropNotSupported</strong></span><span class="sxs-lookup"><span data-stu-id="18d84-108"><strong>adPropNotSupported</strong></span></span></p></td>
-<td><p><span data-ttu-id="18d84-109">0</span><span class="sxs-lookup"><span data-stu-id="18d84-109">0</span></span></p></td>
-<td><p><span data-ttu-id="18d84-110">プロバイダーがプロパティをサポートしていないことを示します。</span><span class="sxs-lookup"><span data-stu-id="18d84-110">Indicates that the property is not supported by the provider.</span></span></p></td>
+<td><p><span data-ttu-id="fd37a-108"><strong>adPropNotSupported</strong></span><span class="sxs-lookup"><span data-stu-id="fd37a-108"><strong>adPropNotSupported</strong></span></span></p></td>
+<td><p><span data-ttu-id="fd37a-109">0</span><span class="sxs-lookup"><span data-stu-id="fd37a-109">0</span></span></p></td>
+<td><p><span data-ttu-id="fd37a-110">プロバイダーがプロパティをサポートしていないことを示します。</span><span class="sxs-lookup"><span data-stu-id="fd37a-110">Indicates that the property is not supported by the provider.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="18d84-111"><strong>adPropRequired</strong></span><span class="sxs-lookup"><span data-stu-id="18d84-111"><strong>adPropRequired</strong></span></span></p></td>
-<td><p><span data-ttu-id="18d84-112">1</span><span class="sxs-lookup"><span data-stu-id="18d84-112">1</span></span></p></td>
-<td><p><span data-ttu-id="18d84-113">データ ソースを初期化するには、ユーザーがこのプロパティ値を指定する必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="18d84-113">Indicates that the user must specify a value for this property before the data source is initialized.</span></span></p></td>
+<td><p><span data-ttu-id="fd37a-111"><strong>adPropRequired</strong></span><span class="sxs-lookup"><span data-stu-id="fd37a-111"><strong>adPropRequired</strong></span></span></p></td>
+<td><p><span data-ttu-id="fd37a-112">1</span><span class="sxs-lookup"><span data-stu-id="fd37a-112">1</span></span></p></td>
+<td><p><span data-ttu-id="fd37a-113">データ ソースを初期化するには、ユーザーがこのプロパティ値を指定する必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="fd37a-113">Indicates that the user must specify a value for this property before the data source is initialized.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="18d84-114"><strong>adPropOptional</strong></span><span class="sxs-lookup"><span data-stu-id="18d84-114"><strong>adPropOptional</strong></span></span></p></td>
-<td><p><span data-ttu-id="18d84-115">2</span><span class="sxs-lookup"><span data-stu-id="18d84-115">2</span></span></p></td>
-<td><p><span data-ttu-id="18d84-116">ユーザーがこのプロパティ値を指定しなくてもデータ ソースを初期化できることを表します。</span><span class="sxs-lookup"><span data-stu-id="18d84-116">Indicates that the user does not need to specify a value for this property before the data source is initialized.</span></span></p></td>
+<td><p><span data-ttu-id="fd37a-114"><strong>adPropOptional</strong></span><span class="sxs-lookup"><span data-stu-id="fd37a-114"><strong>adPropOptional</strong></span></span></p></td>
+<td><p><span data-ttu-id="fd37a-115">2</span><span class="sxs-lookup"><span data-stu-id="fd37a-115">2</span></span></p></td>
+<td><p><span data-ttu-id="fd37a-116">ユーザーがこのプロパティ値を指定しなくてもデータ ソースを初期化できることを表します。</span><span class="sxs-lookup"><span data-stu-id="fd37a-116">Indicates that the user does not need to specify a value for this property before the data source is initialized.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="18d84-117"><strong>adPropRead</strong></span><span class="sxs-lookup"><span data-stu-id="18d84-117"><strong>adPropRead</strong></span></span></p></td>
-<td><p><span data-ttu-id="18d84-118">512</span><span class="sxs-lookup"><span data-stu-id="18d84-118">512</span></span></p></td>
-<td><p><span data-ttu-id="18d84-119">ユーザーがプロパティを読み取り可能であることを示します。</span><span class="sxs-lookup"><span data-stu-id="18d84-119">Indicates that the user can read the property.</span></span></p></td>
+<td><p><span data-ttu-id="fd37a-117"><strong>adPropRead</strong></span><span class="sxs-lookup"><span data-stu-id="fd37a-117"><strong>adPropRead</strong></span></span></p></td>
+<td><p><span data-ttu-id="fd37a-118">512</span><span class="sxs-lookup"><span data-stu-id="fd37a-118">512</span></span></p></td>
+<td><p><span data-ttu-id="fd37a-119">ユーザーがプロパティを読み取り可能であることを示します。</span><span class="sxs-lookup"><span data-stu-id="fd37a-119">Indicates that the user can read the property.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="18d84-120"><strong>adPropWrite</strong></span><span class="sxs-lookup"><span data-stu-id="18d84-120"><strong>adPropWrite</strong></span></span></p></td>
-<td><p><span data-ttu-id="18d84-121">1024</span><span class="sxs-lookup"><span data-stu-id="18d84-121">1024</span></span></p></td>
-<td><p><span data-ttu-id="18d84-122">ユーザーがプロパティを設定できることを示します。</span><span class="sxs-lookup"><span data-stu-id="18d84-122">Indicates that the user can set the property.</span></span></p></td>
+<td><p><span data-ttu-id="fd37a-120"><strong>adPropWrite</strong></span><span class="sxs-lookup"><span data-stu-id="fd37a-120"><strong>adPropWrite</strong></span></span></p></td>
+<td><p><span data-ttu-id="fd37a-121">1024</span><span class="sxs-lookup"><span data-stu-id="fd37a-121">1024</span></span></p></td>
+<td><p><span data-ttu-id="fd37a-122">ユーザーがプロパティを設定できることを示します。</span><span class="sxs-lookup"><span data-stu-id="fd37a-122">Indicates that the user can set the property.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a><span data-ttu-id="18d84-123">ADO/WFC に相当</span><span class="sxs-lookup"><span data-stu-id="18d84-123">ADO/WFC equivalent</span></span>
+### <a name="adowfc-equivalent"></a><span data-ttu-id="fd37a-123">ADO/WFC に相当</span><span class="sxs-lookup"><span data-stu-id="fd37a-123">ADO/WFC equivalent</span></span>
 
-<span data-ttu-id="18d84-124">パッケージ: **com.ms.wfc.data**</span><span class="sxs-lookup"><span data-stu-id="18d84-124">Package: **com.ms.wfc.data**</span></span>
+<span data-ttu-id="fd37a-124">パッケージ: **com.ms.wfc.data**</span><span class="sxs-lookup"><span data-stu-id="fd37a-124">Package: **com.ms.wfc.data**</span></span>
 
 <table>
 <colgroup>
@@ -73,24 +74,24 @@ ms.locfileid: "25877507"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="18d84-125">定数</span><span class="sxs-lookup"><span data-stu-id="18d84-125">Constant</span></span></p></th>
+<th><p><span data-ttu-id="fd37a-125">定数</span><span class="sxs-lookup"><span data-stu-id="fd37a-125">Constant</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="18d84-126">AdoEnums.PropertyAttributes.NOTSUPPORTED</span><span class="sxs-lookup"><span data-stu-id="18d84-126">AdoEnums.PropertyAttributes.NOTSUPPORTED</span></span></p></td>
+<td><p><span data-ttu-id="fd37a-126">AdoEnums.PropertyAttributes.NOTSUPPORTED</span><span class="sxs-lookup"><span data-stu-id="fd37a-126">AdoEnums.PropertyAttributes.NOTSUPPORTED</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="18d84-127">AdoEnums.PropertyAttributes.REQUIRED</span><span class="sxs-lookup"><span data-stu-id="18d84-127">AdoEnums.PropertyAttributes.REQUIRED</span></span></p></td>
+<td><p><span data-ttu-id="fd37a-127">AdoEnums.PropertyAttributes.REQUIRED</span><span class="sxs-lookup"><span data-stu-id="fd37a-127">AdoEnums.PropertyAttributes.REQUIRED</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="18d84-128">AdoEnums.PropertyAttributes.OPTIONAL</span><span class="sxs-lookup"><span data-stu-id="18d84-128">AdoEnums.PropertyAttributes.OPTIONAL</span></span></p></td>
+<td><p><span data-ttu-id="fd37a-128">AdoEnums.PropertyAttributes.OPTIONAL</span><span class="sxs-lookup"><span data-stu-id="fd37a-128">AdoEnums.PropertyAttributes.OPTIONAL</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="18d84-129">AdoEnums.PropertyAttributes.READ</span><span class="sxs-lookup"><span data-stu-id="18d84-129">AdoEnums.PropertyAttributes.READ</span></span></p></td>
+<td><p><span data-ttu-id="fd37a-129">AdoEnums.PropertyAttributes.READ</span><span class="sxs-lookup"><span data-stu-id="fd37a-129">AdoEnums.PropertyAttributes.READ</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="18d84-130">AdoEnums.PropertyAttributes.WRITE</span><span class="sxs-lookup"><span data-stu-id="18d84-130">AdoEnums.PropertyAttributes.WRITE</span></span></p></td>
+<td><p><span data-ttu-id="fd37a-130">AdoEnums.PropertyAttributes.WRITE</span><span class="sxs-lookup"><span data-stu-id="fd37a-130">AdoEnums.PropertyAttributes.WRITE</span></span></p></td>
 </tr>
 </tbody>
 </table>
