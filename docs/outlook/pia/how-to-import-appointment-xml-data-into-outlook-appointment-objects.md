@@ -6,30 +6,31 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff462092(v=office.15)
 ms:contentKeyID: 55119821
 ms.date: 07/24/2014
 mtps_version: v=office.15
-ms.openlocfilehash: 22d7e17e208aa67648e2fe785d58bc030b41e001
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+localization_priority: Normal
+ms.openlocfilehash: 0af86772fced3e69d1d28cf8d98a544e3b4d90d2
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25405834"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28705387"
 ---
-# <a name="import-appointment-xml-data-into-outlook-appointment-objects"></a><span data-ttu-id="c2072-102">予定の XML データを Outlook の予定オブジェクトにインポートする</span><span class="sxs-lookup"><span data-stu-id="c2072-102">Import Appointment XML Data into Outlook Appointment Objects</span></span>
+# <a name="import-appointment-xml-data-into-outlook-appointment-objects"></a><span data-ttu-id="2275c-102">予定の XML データを Outlook の予定オブジェクトにインポートする</span><span class="sxs-lookup"><span data-stu-id="2275c-102">Import appointment XML data into Outlook appointment objects</span></span>
 
-<span data-ttu-id="c2072-103">ここでは、XML 形式の予定データを読み取る方法、Outlook の [AppointmentItem](https://msdn.microsoft.com/library/bb645611\(v=office.15\)) オブジェクトの既定の予定表にデータを保存する方法、および配列で予定オブジェクトを返す方法を示します。</span><span class="sxs-lookup"><span data-stu-id="c2072-103">This topic shows how to read appointment data formatted in XML, save the data to Outlook [AppointmentItem](https://msdn.microsoft.com/library/bb645611\(v=office.15\)) objects in the default calendar, and return the appointment objects in an array.</span></span>
+<span data-ttu-id="2275c-103">ここでは、XML 形式の予定データを読み取る方法、Outlook の [AppointmentItem](https://msdn.microsoft.com/library/bb645611\(v=office.15\)) オブジェクトの既定の予定表にデータを保存する方法、および配列で予定オブジェクトを返す方法を示します。</span><span class="sxs-lookup"><span data-stu-id="2275c-103">This topic shows how to read appointment data formatted in XML, save the data to Outlook [AppointmentItem](https://msdn.microsoft.com/library/bb645611\(v=office.15\)) objects in the default calendar, and return the appointment objects in an array.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c2072-104">例</span><span class="sxs-lookup"><span data-stu-id="c2072-104">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2275c-104">例</span><span class="sxs-lookup"><span data-stu-id="2275c-104">Example</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="c2072-105">次のコード例は、Helmut Obertanner 氏が提供したものです。</span><span class="sxs-lookup"><span data-stu-id="c2072-105">Helmut Obertanner provided the following code examples.</span></span> <span data-ttu-id="c2072-106">Helmut 氏の得意分野は、Office Developer Tools for Visual Studio と Outlook です。</span><span class="sxs-lookup"><span data-stu-id="c2072-106">Helmut Obertanner provided the following code examples. Helmut's expertise is in Office Developer Tools for Visual Studio and Outlook. Helmut maintains a professional site at X4Uelectronix.</span></span> 
+> <span data-ttu-id="2275c-105">次のコード例は、Helmut Obertanner 氏が提供したものです。</span><span class="sxs-lookup"><span data-stu-id="2275c-105">Helmut Obertanner provided the following code examples.</span></span> <span data-ttu-id="2275c-106">Helmut 氏の得意分野は、Office Developer Tools for Visual Studio と Outlook です。</span><span class="sxs-lookup"><span data-stu-id="2275c-106">Helmut's expertise is in Office Developer Tools for Visual Studio and Outlook.</span></span> 
 
 
-<span data-ttu-id="c2072-107">次のコード例には、Sample クラスの CreateAppointmentsFromXml メソッドが含まれています。このメソッドは、Outlook アドイン プロジェクトの一部として実装されています。</span><span class="sxs-lookup"><span data-stu-id="c2072-107">The following code examples contain the   method of the   class, implemented as part of an Outlook add-in project.</span></span> <span data-ttu-id="c2072-108">それぞれのプロジェクトでは、[Microsoft.Office.Interop.Outlook](https://msdn.microsoft.com/library/bb610835\(v=office.15\)) 名前空間に基づいた、Outlook プライマリ互換運用機能アセンブリへの参照を追加しています。</span><span class="sxs-lookup"><span data-stu-id="c2072-108">Each project adds a reference to the Outlook Primary Interop Assembly, which is based on the [Microsoft.Office.Interop.Outlook](https://msdn.microsoft.com/library/bb610835\(v=office.15\)) namespace.</span></span>
+<span data-ttu-id="2275c-107">次のコード例には、Sample クラスの CreateAppointmentsFromXml メソッドが含まれています。このメソッドは、Outlook アドイン プロジェクトの一部として実装されています。</span><span class="sxs-lookup"><span data-stu-id="2275c-107">The following code examples contain the CreateAppointmentsFromXml method of the Sample class, implemented as part of an Outlook add-in project.</span></span> <span data-ttu-id="2275c-108">それぞれのプロジェクトでは、[Microsoft.Office.Interop.Outlook](https://msdn.microsoft.com/library/bb610835\(v=office.15\)) 名前空間に基づいた、Outlook プライマリ互換運用機能アセンブリへの参照を追加しています。</span><span class="sxs-lookup"><span data-stu-id="2275c-108">Each project adds a reference to the Outlook Primary Interop Assembly, which is based on the [Microsoft.Office.Interop.Outlook](https://msdn.microsoft.com/library/bb610835\(v=office.15\)) namespace.</span></span>
 
-<span data-ttu-id="c2072-109">CreateAppointmentsFromXml メソッドは、次の 2 つの入力パラメーターを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="c2072-109">The CreateAppointmentsFromXml method accepts two input parameters:</span></span>
+<span data-ttu-id="2275c-109">CreateAppointmentsFromXml メソッドは、次の 2 つの入力パラメーターを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="2275c-109">The CreateAppointmentsFromXml method accepts two input parameters:</span></span>
 
-  - <span data-ttu-id="c2072-110">application は、信頼された Outlook [Application](https://msdn.microsoft.com/library/bb646615\(v=office.15\)) オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="c2072-110">application is a trusted Outlook [Application](https://msdn.microsoft.com/library/bb646615\(v=office.15\)) object.</span></span>
+  - <span data-ttu-id="2275c-110">application は、信頼された Outlook [Application](https://msdn.microsoft.com/library/bb646615\(v=office.15\)) オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="2275c-110">application is a trusted Outlook [Application](https://msdn.microsoft.com/library/bb646615\(v=office.15\)) object.</span></span>
 
-  - <span data-ttu-id="c2072-p103">xml は、XML 文字列、または妥当な XML ファイルのパスを表す文字列のどちらかです。次のコード例では、以下の XML タグを使用して XML の予定データを区切っています。</span><span class="sxs-lookup"><span data-stu-id="c2072-p103">xml is either an XML string, or a string that represents a path to a valid XML file. For the purpose of the following code examples, the XML delimits appointment data by using the following XML tags:</span></span>
+  - <span data-ttu-id="2275c-p103">xml は、XML 文字列、または妥当な XML ファイルのパスを表す文字列のどちらかです。次のコード例では、以下の XML タグを使用して XML の予定データを区切っています。</span><span class="sxs-lookup"><span data-stu-id="2275c-p103">xml is either an XML string, or a string that represents a path to a valid XML file. For the purpose of the following code examples, the XML delimits appointment data by using the following XML tags:</span></span>
     
     <table>
     <colgroup>
@@ -38,44 +39,44 @@ ms.locfileid: "25405834"
     </colgroup>
     <thead>
     <tr class="header">
-    <th><p><span data-ttu-id="c2072-113">予定データ</span><span class="sxs-lookup"><span data-stu-id="c2072-113">Appointment data</span></span></p></th>
-    <th><p><span data-ttu-id="c2072-114">区切りの XML タグ</span><span class="sxs-lookup"><span data-stu-id="c2072-114">Delimiting XML tag</span></span></p></th>
+    <th><p><span data-ttu-id="2275c-113">予定データ</span><span class="sxs-lookup"><span data-stu-id="2275c-113">Appointment data</span></span></p></th>
+    <th><p><span data-ttu-id="2275c-114">区切りの XML タグ</span><span class="sxs-lookup"><span data-stu-id="2275c-114">Delimiting XML tag</span></span></p></th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td><p><span data-ttu-id="c2072-115">予定データのセット全体</span><span class="sxs-lookup"><span data-stu-id="c2072-115">Entire set of appointment data</span></span></p></td>
-    <td><p><span data-ttu-id="c2072-116">appointments</span><span class="sxs-lookup"><span data-stu-id="c2072-116">appointments</span></span></p></td>
+    <td><p><span data-ttu-id="2275c-115">予定データのセット全体</span><span class="sxs-lookup"><span data-stu-id="2275c-115">Entire set of appointment data</span></span></p></td>
+    <td><p><span data-ttu-id="2275c-116">appointments</span><span class="sxs-lookup"><span data-stu-id="2275c-116">appointments</span></span></p></td>
     </tr>
     <tr class="even">
-    <td><p><span data-ttu-id="c2072-117">セット内のそれぞれの予定</span><span class="sxs-lookup"><span data-stu-id="c2072-117">Each appointment in the set</span></span></p></td>
-    <td><p><span data-ttu-id="c2072-118">appointment</span><span class="sxs-lookup"><span data-stu-id="c2072-118">appointment</span></span></p></td>
+    <td><p><span data-ttu-id="2275c-117">セット内のそれぞれの予定</span><span class="sxs-lookup"><span data-stu-id="2275c-117">Each appointment in the set</span></span></p></td>
+    <td><p><span data-ttu-id="2275c-118">appointment</span><span class="sxs-lookup"><span data-stu-id="2275c-118">appointment</span></span></p></td>
     </tr>
     <tr class="odd">
-    <td><p><span data-ttu-id="c2072-119">予定の開始時刻</span><span class="sxs-lookup"><span data-stu-id="c2072-119">Start time of an appointment</span></span></p></td>
-    <td><p><span data-ttu-id="c2072-120">starttime</span><span class="sxs-lookup"><span data-stu-id="c2072-120">starttime</span></span></p></td>
+    <td><p><span data-ttu-id="2275c-119">予定の開始時刻</span><span class="sxs-lookup"><span data-stu-id="2275c-119">Start time of an appointment</span></span></p></td>
+    <td><p><span data-ttu-id="2275c-120">starttime</span><span class="sxs-lookup"><span data-stu-id="2275c-120">starttime</span></span></p></td>
     </tr>
     <tr class="even">
-    <td><p><span data-ttu-id="c2072-121">予定の終了時刻</span><span class="sxs-lookup"><span data-stu-id="c2072-121">End time of an appointment</span></span></p></td>
-    <td><p><span data-ttu-id="c2072-122">endtime</span><span class="sxs-lookup"><span data-stu-id="c2072-122">endtime</span></span></p></td>
+    <td><p><span data-ttu-id="2275c-121">予定の終了時刻</span><span class="sxs-lookup"><span data-stu-id="2275c-121">End time of an appointment</span></span></p></td>
+    <td><p><span data-ttu-id="2275c-122">endtime</span><span class="sxs-lookup"><span data-stu-id="2275c-122">endtime</span></span></p></td>
     </tr>
     <tr class="odd">
-    <td><p><span data-ttu-id="c2072-123">予定の件名</span><span class="sxs-lookup"><span data-stu-id="c2072-123">Title of an appointment</span></span></p></td>
-    <td><p><span data-ttu-id="c2072-124">subject</span><span class="sxs-lookup"><span data-stu-id="c2072-124">subject</span></span></p></td>
+    <td><p><span data-ttu-id="2275c-123">予定の件名</span><span class="sxs-lookup"><span data-stu-id="2275c-123">Title of an appointment</span></span></p></td>
+    <td><p><span data-ttu-id="2275c-124">subject</span><span class="sxs-lookup"><span data-stu-id="2275c-124">subject</span></span></p></td>
     </tr>
     <tr class="even">
-    <td><p><span data-ttu-id="c2072-125">予定の場所</span><span class="sxs-lookup"><span data-stu-id="c2072-125">Location of an appointment</span></span></p></td>
-    <td><p><span data-ttu-id="c2072-126">location</span><span class="sxs-lookup"><span data-stu-id="c2072-126">location</span></span></p></td>
+    <td><p><span data-ttu-id="2275c-125">予定の場所</span><span class="sxs-lookup"><span data-stu-id="2275c-125">Location of an appointment</span></span></p></td>
+    <td><p><span data-ttu-id="2275c-126">location</span><span class="sxs-lookup"><span data-stu-id="2275c-126">location</span></span></p></td>
     </tr>
     <tr class="odd">
-    <td><p><span data-ttu-id="c2072-127">予定の詳細</span><span class="sxs-lookup"><span data-stu-id="c2072-127">Details of an appointment</span></span></p></td>
-    <td><p><span data-ttu-id="c2072-128">body</span><span class="sxs-lookup"><span data-stu-id="c2072-128">body</span></span></p></td>
+    <td><p><span data-ttu-id="2275c-127">予定の詳細</span><span class="sxs-lookup"><span data-stu-id="2275c-127">Details of an appointment</span></span></p></td>
+    <td><p><span data-ttu-id="2275c-128">body</span><span class="sxs-lookup"><span data-stu-id="2275c-128">body</span></span></p></td>
     </tr>
     </tbody>
     </table>
 
 
-<span data-ttu-id="c2072-129">次の例は、*xml* パラメーターの入力データを示しています。</span><span class="sxs-lookup"><span data-stu-id="c2072-129">The following example shows input data for the  *xml* parameter.</span></span>
+<span data-ttu-id="2275c-129">次の例は、*xml* パラメーターの入力データを示しています。</span><span class="sxs-lookup"><span data-stu-id="2275c-129">The following example shows input data for the *xml* parameter.</span></span>
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -104,13 +105,13 @@ ms.locfileid: "25405834"
 </appointments>
 ```
 
-<span data-ttu-id="c2072-p104">CreateAppointmentsFromXml メソッドは、Microsoft COM 実装の XML ドキュメント オブジェクト モデル (DOM) を使用して、xml が示す XML データの読み込みと処理を行います。CreateAppointmentsFromXml はまず、xml が示すのが XML データの有効なソースかどうかをチェックします。有効な場合は、XML ドキュメント [DOMDocument](https://msdn.microsoft.com/library/ms756987\(v=office.15\)) にデータを読み込みます。有効でない場合は、CreateAppointmentsFromXml は例外をスローします。XML DOM の詳細については、「[DOM](https://msdn.microsoft.com/library/ms766487\(v=office.15\))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c2072-p104">The CreateAppointmentsFromXml method uses the Microsoft COM implementation of the XML Document Object Model (DOM) to load and process the XML data that xml provides. CreateAppointmentsFromXml first checks whether xml specifies a valid source of XML data. If so, it loads the data into an XML document, [DOMDocument](https://msdn.microsoft.com/library/ms756987\(v=office.15\)). Otherwise, CreateAppointmentsFromXml throws an exception. For more information about the XML DOM, see [DOM](https://msdn.microsoft.com/library/ms766487\(v=office.15\)).</span></span>
+<span data-ttu-id="2275c-p104">CreateAppointmentsFromXml メソッドは、Microsoft COM 実装の XML ドキュメント オブジェクト モデル (DOM) を使用して、xml が示す XML データの読み込みと処理を行います。CreateAppointmentsFromXml はまず、xml が示すのが XML データの有効なソースかどうかをチェックします。有効な場合は、XML ドキュメント [DOMDocument](https://msdn.microsoft.com/library/ms756987\(v=office.15\)) にデータを読み込みます。有効でない場合は、CreateAppointmentsFromXml は例外をスローします。XML DOM の詳細については、「[DOM](https://msdn.microsoft.com/library/ms766487\(v=office.15\))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2275c-p104">The CreateAppointmentsFromXml method uses the Microsoft COM implementation of the XML Document Object Model (DOM) to load and process the XML data that xml provides. CreateAppointmentsFromXml first checks whether xml specifies a valid source of XML data. If so, it loads the data into an XML document, [DOMDocument](https://msdn.microsoft.com/library/ms756987\(v=office.15\)). Otherwise, CreateAppointmentsFromXml throws an exception. For more information about the XML DOM, see [DOM](https://msdn.microsoft.com/library/ms766487\(v=office.15\)).</span></span>
 
-<span data-ttu-id="c2072-135">CreateAppointmentsFromXml では、XML データ内の appointment タグで区切られた予定の子ノードごとに固有のタグを検索し、DOM を使用してデータを抽出して、そのデータを対応する **AppointmentItem** オブジェクトのプロパティ ([Start](https://msdn.microsoft.com/library/bb647263\(v=office.15\))、[End](https://msdn.microsoft.com/library/bb623715\(v=office.15\))、[Subject](https://msdn.microsoft.com/library/bb611653\(v=office.15\))、[Location](https://msdn.microsoft.com/library/bb608946\(v=office.15\))、および [Body](https://msdn.microsoft.com/library/bb644880\(v=office.15\))) に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="c2072-135">For each appointment child node delimited by the appointment tag in the XML data,   looks for specific tags, uses the DOM to extract the data, and assigns the data to corresponding properties of an AppointmentItem object: Start , End , Subject , Location , and Body .</span></span> <span data-ttu-id="c2072-136">その後、CreateAppointmentsFromXml では既定の予定表に予定を保存します。</span><span class="sxs-lookup"><span data-stu-id="c2072-136"> then saves the appointment to the default calendar.</span></span>
+<span data-ttu-id="2275c-135">CreateAppointmentsFromXml では、XML データ内の appointment タグで区切られた予定の子ノードごとに固有のタグを検索し、DOM を使用してデータを抽出して、そのデータを対応する **AppointmentItem** オブジェクトのプロパティ ([Start](https://msdn.microsoft.com/library/bb647263\(v=office.15\))、[End](https://msdn.microsoft.com/library/bb623715\(v=office.15\))、[Subject](https://msdn.microsoft.com/library/bb611653\(v=office.15\))、[Location](https://msdn.microsoft.com/library/bb608946\(v=office.15\))、および [Body](https://msdn.microsoft.com/library/bb644880\(v=office.15\))) に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="2275c-135">For each appointment child node delimited by the appointment tag in the XML data, CreateAppointmentsFromXml looks for specific tags, uses the DOM to extract the data, and assigns the data to corresponding properties of an **AppointmentItem** object: [Start](https://msdn.microsoft.com/library/bb647263\(v=office.15\)), [End](https://msdn.microsoft.com/library/bb623715\(v=office.15\)), [Subject](https://msdn.microsoft.com/library/bb611653\(v=office.15\)), [Location](https://msdn.microsoft.com/library/bb608946\(v=office.15\)), and [Body](https://msdn.microsoft.com/library/bb644880\(v=office.15\)).</span></span> <span data-ttu-id="2275c-136">その後、CreateAppointmentsFromXml では既定の予定表に予定を保存します。</span><span class="sxs-lookup"><span data-stu-id="2275c-136">CreateAppointmentsFromXml then saves the appointment to the default calendar.</span></span>
 
-<span data-ttu-id="c2072-137">CreateAppointmentsFromXml では、[System.Collections.Generic](https://docs.microsoft.com/dotnet/api/system.collections.generic?view=netframework-4.7.2) 名前空間内の [List\<T\>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1?view=netframework-4.7.2) クラスの [Add](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.add?view=netframework-4.7.2) メソッドを使用して、該当する AppointmentItem オブジェクトを集約します。</span><span class="sxs-lookup"><span data-stu-id="c2072-137"> uses the Add method of the ListT  class in the System.Collections.Generic namespace to aggregate these AppointmentItem objects.</span></span> <span data-ttu-id="c2072-138">このメソッドは、XML データに含まれるすべての予定を処理すると、配列で AppointmentItem オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="c2072-138">When the method has processed all the appointments in the XML data, it returns the AppointmentItem objects in an array.</span></span>
+<span data-ttu-id="2275c-137">CreateAppointmentsFromXml では、[System.Collections.Generic](https://docs.microsoft.com/dotnet/api/system.collections.generic?view=netframework-4.7.2) 名前空間内の [List\<T\>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1?view=netframework-4.7.2) クラスの [Add](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.add?view=netframework-4.7.2) メソッドを使用して、該当する AppointmentItem オブジェクトを集約します。</span><span class="sxs-lookup"><span data-stu-id="2275c-137">CreateAppointmentsFromXml uses the [Add](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.add?view=netframework-4.7.2) method of the [List\<T\>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1?view=netframework-4.7.2) class in the [System.Collections.Generic](https://docs.microsoft.com/dotnet/api/system.collections.generic?view=netframework-4.7.2) namespace to aggregate these AppointmentItem objects.</span></span> <span data-ttu-id="2275c-138">このメソッドは、XML データに含まれるすべての予定を処理すると、配列で AppointmentItem オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="2275c-138">When the method has processed all the appointments in the XML data, it returns the AppointmentItem objects in an array.</span></span>
 
-<span data-ttu-id="c2072-139">Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。</span><span class="sxs-lookup"><span data-stu-id="c2072-139">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the   variable when you import the Microsoft.Office.Interop.Outlook namespace.</span></span> <span data-ttu-id="c2072-140">**Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c2072-140">The Imports or using statement must not occur directly before the functions in the code example but must be added before the public   declaration.</span></span> <span data-ttu-id="c2072-141">次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="c2072-141">The following lines of code show how to do the import and assignment in Visual Basic and C#.</span></span>
+<span data-ttu-id="2275c-139">Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。</span><span class="sxs-lookup"><span data-stu-id="2275c-139">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the Outlook variable when you import the **Microsoft.Office.Interop.Outlook** namespace.</span></span> <span data-ttu-id="2275c-140">**Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2275c-140">The **Imports** or **using** statement must not occur directly before the functions in the code example but must be added before the public Class declaration.</span></span> <span data-ttu-id="2275c-141">次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="2275c-141">The following lines of code show how to do the import and assignment in Visual Basic and C\#.</span></span>
 
 
 ```vb
@@ -123,7 +124,7 @@ Imports Outlook = Microsoft.Office.Interop.Outlook
 using Outlook = Microsoft.Office.Interop.Outlook;
 ```
 
-<span data-ttu-id="c2072-142">次に、Visual Basic のコード例を示します。その後に、C\# のコード例を示します。</span><span class="sxs-lookup"><span data-stu-id="c2072-142">The following is the Visual Basic code example, followed by the C# code example.</span></span>
+<span data-ttu-id="2275c-142">次に、Visual Basic のコード例を示します。その後に、C\# のコード例を示します。</span><span class="sxs-lookup"><span data-stu-id="2275c-142">The following is the Visual Basic code example, followed by the C\# code example.</span></span>
 
 
 
@@ -291,7 +292,7 @@ namespace OutlookAddIn1
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="c2072-143">関連項目</span><span class="sxs-lookup"><span data-stu-id="c2072-143">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2275c-143">関連項目</span><span class="sxs-lookup"><span data-stu-id="2275c-143">See also</span></span>
 
-- [<span data-ttu-id="c2072-144">予定</span><span class="sxs-lookup"><span data-stu-id="c2072-144">Appointments</span></span>](appointments.md)
+- [<span data-ttu-id="2275c-144">予定</span><span class="sxs-lookup"><span data-stu-id="2275c-144">Appointments</span></span>](appointments.md)
 

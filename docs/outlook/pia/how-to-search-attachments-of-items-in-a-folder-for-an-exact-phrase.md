@@ -6,26 +6,27 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Bb609825(v=office.15)
 ms:contentKeyID: 55119889
 ms.date: 07/24/2014
 mtps_version: v=office.15
-ms.openlocfilehash: 915ddd65e8227f6cc720c4494ed1767deed121b1
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+localization_priority: Normal
+ms.openlocfilehash: f237a2268fd287e96959dfc0522103b47e55d37b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25406156"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28698296"
 ---
-# <a name="search-attachments-of-items-in-a-folder-for-an-exact-phrase"></a><span data-ttu-id="3c882-102">フォルダー内のアイテムの添付ファイルで完全に一致する語句を検索する</span><span class="sxs-lookup"><span data-stu-id="3c882-102">Search attachments of items in a folder for an exact phrase</span></span>
+# <a name="search-attachments-of-items-in-a-folder-for-an-exact-phrase"></a><span data-ttu-id="068ac-102">フォルダー内のアイテムの添付ファイルで完全に一致する語句を検索する</span><span class="sxs-lookup"><span data-stu-id="068ac-102">Search attachments of items in a folder for an exact phrase</span></span>
 
-<span data-ttu-id="3c882-103">この例では、受信トレイ内のアイテムへの添付ファイルで、文字列 "office" を完全一致で検索します。</span><span class="sxs-lookup"><span data-stu-id="3c882-103">This example searches for the exact search string "office" in attachments to items in the Inbox.</span></span>
+<span data-ttu-id="068ac-103">この例では、受信トレイ内のアイテムへの添付ファイルで、文字列 "office" を完全一致で検索します。</span><span class="sxs-lookup"><span data-stu-id="068ac-103">This example searches for the exact search string "office" in attachments to items in the Inbox.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3c882-104">例</span><span class="sxs-lookup"><span data-stu-id="3c882-104">Example</span></span>
+## <a name="example"></a><span data-ttu-id="068ac-104">例</span><span class="sxs-lookup"><span data-stu-id="068ac-104">Example</span></span>
 
-<span data-ttu-id="3c882-105">このコード例では、DAV Searching and Locating (DASL) 構文を使用してクエリを指定します。</span><span class="sxs-lookup"><span data-stu-id="3c882-105">This code sample uses a DAV Searching and Locating (DASL) syntax to specify a query.</span></span> <span data-ttu-id="3c882-106">フィルターを作成するために、まずクイック検索が既定のストアで有効になっているかどうかをチェックし、添付ファイル内で "office" を完全一致で検索する **ci\_phrasematch** キーワードを使用するかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="3c882-106">To construct the filter, the code sample first checks whether Instant Search is enabled in the default store to determine whether to use the ci_phrasematch keyword for an exact phrase match to "office" in any attachment.</span></span> <span data-ttu-id="3c882-107">その後で、この例では、受信トレイの [GetTable](https://msdn.microsoft.com/library/bb612592\(v=office.15\)) メソッドにフィルターを適用して、[Table](https://msdn.microsoft.com/library/bb652856\(v=office.15\)) オブジェクトで結果を取得します。</span><span class="sxs-lookup"><span data-stu-id="3c882-107">The sample then applies the filter to the [GetTable](https://msdn.microsoft.com/library/bb612592\(v=office.15\)) method on the Inbox and obtains the results in a [Table](https://msdn.microsoft.com/library/bb652856\(v=office.15\)) object.</span></span> <span data-ttu-id="3c882-108">さらに、このコード例では、**Table** で返された各アイテムの件名を表示します。</span><span class="sxs-lookup"><span data-stu-id="3c882-108">The code sample then displays the subject of each of the returned items in the **Table**.</span></span>
+<span data-ttu-id="068ac-105">このコード例では、DAV Searching and Locating (DASL) 構文を使用してクエリを指定します。</span><span class="sxs-lookup"><span data-stu-id="068ac-105">This code sample uses a DAV Searching and Locating (DASL) syntax to specify a query.</span></span> <span data-ttu-id="068ac-106">フィルターを作成するために、まずクイック検索が既定のストアで有効になっているかどうかをチェックし、添付ファイル内で "office" を完全一致で検索する **ci\_phrasematch** キーワードを使用するかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="068ac-106">To construct the filter, the code sample first checks whether Instant Search is enabled in the default store to determine whether to use the **ci\_phrasematch** keyword for an exact phrase match to "office" in any attachment.</span></span> <span data-ttu-id="068ac-107">その後で、この例では、受信トレイの [GetTable](https://msdn.microsoft.com/library/bb612592\(v=office.15\)) メソッドにフィルターを適用して、[Table](https://msdn.microsoft.com/library/bb652856\(v=office.15\)) オブジェクトで結果を取得します。</span><span class="sxs-lookup"><span data-stu-id="068ac-107">The sample then applies the filter to the [GetTable](https://msdn.microsoft.com/library/bb612592\(v=office.15\)) method on the Inbox and obtains the results in a [Table](https://msdn.microsoft.com/library/bb652856\(v=office.15\)) object.</span></span> <span data-ttu-id="068ac-108">さらに、このコード例では、**Table** で返された各アイテムの件名を表示します。</span><span class="sxs-lookup"><span data-stu-id="068ac-108">The code sample then displays the subject of each of the returned items in the **Table**.</span></span>
 
-<span data-ttu-id="3c882-109">このコード例では、アイテムの **Attachments** プロパティを指定するために、名前空間の表現として https://schemas.microsoft.com/mapi/proptag/0x0EA5001E を使用しています。</span><span class="sxs-lookup"><span data-stu-id="3c882-109">The code sample specifies the **Attachments** property of an item using the namespace representation,  https://schemas.microsoft.com/mapi/proptag/0x0EA5001E.</span></span> <span data-ttu-id="3c882-110">**ci\_phrasematch** キーワードの構文は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="3c882-110">The syntax for using the ci_phrasematch keyword is:</span></span>
+<span data-ttu-id="068ac-109">このコード例では、アイテムの **Attachments** プロパティを指定するために、名前空間の表現として https://schemas.microsoft.com/mapi/proptag/0x0EA5001E を使用しています。</span><span class="sxs-lookup"><span data-stu-id="068ac-109">The code sample specifies the **Attachments** property of an item using the namespace representation, https://schemas.microsoft.com/mapi/proptag/0x0EA5001E.</span></span> <span data-ttu-id="068ac-110">**ci\_phrasematch** キーワードの構文は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="068ac-110">The syntax for using the **ci\_phrasematch** keyword is:</span></span>
 
 `<PropertySchemaName> ci_phrasematch <ComparisonString>`
 
-<span data-ttu-id="3c882-111">Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。</span><span class="sxs-lookup"><span data-stu-id="3c882-111">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the   variable when you import the Microsoft.Office.Interop.Outlook namespace.</span></span> <span data-ttu-id="3c882-112">**Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3c882-112">The Imports or using statement must not occur directly before the functions in the code example but must be added before the public   declaration.</span></span> <span data-ttu-id="3c882-113">次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="3c882-113">The following lines of code show how to do the import and assignment in Visual Basic and C#.</span></span>
+<span data-ttu-id="068ac-111">Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。</span><span class="sxs-lookup"><span data-stu-id="068ac-111">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the Outlook variable when you import the **Microsoft.Office.Interop.Outlook** namespace.</span></span> <span data-ttu-id="068ac-112">**Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="068ac-112">The **Imports** or **using** statement must not occur directly before the functions in the code example but must be added before the public Class declaration.</span></span> <span data-ttu-id="068ac-113">次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="068ac-113">The following lines of code show how to do the import and assignment in Visual Basic and C\#.</span></span>
 
 ```vb
 Imports Outlook = Microsoft.Office.Interop.Outlook
@@ -82,7 +83,7 @@ private void DemoSearchAttachments()
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="3c882-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="3c882-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="068ac-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="068ac-114">See also</span></span>
 
-- [<span data-ttu-id="3c882-115">検索とフィルター</span><span class="sxs-lookup"><span data-stu-id="3c882-115">Search and Filter</span></span>](search-and-filter.md)
+- [<span data-ttu-id="068ac-115">検索とフィルター</span><span class="sxs-lookup"><span data-stu-id="068ac-115">Search and filter</span></span>](search-and-filter.md)
 
