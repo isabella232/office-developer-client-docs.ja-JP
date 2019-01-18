@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: ee190ba7-9e71-97e4-7bf1-7b97adc73eed
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d71dd44d2dfc39124c5300d2597f5d8ed1e95ebb
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.openlocfilehash: 356f4470be26ae3803a53af1cec34b3ac6eb0cc9
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395414"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723034"
 ---
 # <a name="iconvertersessionmimetomapi"></a>IConverterSession::MIMEToMAPI
 
@@ -69,6 +69,9 @@ CCSF_INCLUDE_BCC
 CCSF_USE_RTF
   
 > MAPI メッセージの MIME ストリームの HTML 本文をリッチ テキスト形式 (RTF) に変換する必要があります。
+
+CCSF_GLOBAL_MESSAGE
+> コンバーターでは、国際メッセージ (EAI/RFC6530) として MIME ストリームを処理する必要があります。 Outlook 2013 でサポートされていません。
     
 ## <a name="return-value"></a>戻り値
 
@@ -76,7 +79,7 @@ E_INVALIDARG
   
 > _Pstm_が**null**こと、 _pmsg_が**null**、または、 _ulFlags_が有効ではありませんを示します。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 _UlFlags_の一部として**CCSF_USE_RTF**を指定した送信先メッセージ ・ ストアが HTML や rtf 形式の両方をサポートしている場合は、MAPI メッセージは、html 形式または rtf 形式に変換されます。 変換後のフォーマットを圧縮する場合は、メッセージを rtf 形式に変換すると、rtf 形式、HTML は、圧縮された RTF 文字列に埋め込まれ、 [PidTagRtfCompressed の標準的なプロパティ](pidtagrtfcompressed-canonical-property.md)に文字列が含まれます。
   
@@ -108,5 +111,5 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
 [IConverterSession::SetTextWrapping](iconvertersession-settextwrapping.md)
 
 
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
 

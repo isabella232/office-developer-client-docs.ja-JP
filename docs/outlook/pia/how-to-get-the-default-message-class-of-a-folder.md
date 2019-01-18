@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff184594(v=office.15)
 ms:contentKeyID: 55119860
 ms.date: 07/24/2014
 mtps_version: v=office.15
-ms.openlocfilehash: c03e0737a3dd2e74f39d90ffbac31bb134d16348
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+localization_priority: Normal
+ms.openlocfilehash: bef6ebe051e669b831dfee752b1b17db0a9023b8
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25407220"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28705275"
 ---
 # <a name="get-the-default-message-class-of-a-folder"></a>フォルダーの既定のメッセージ クラスを取得する
 
@@ -24,7 +25,7 @@ ms.locfileid: "25407220"
 
 フォルダーの既定のメッセージ クラスを取得するには、[MAPIFolder](https://msdn.microsoft.com/library/bb624369\(v=office.15\)) オブジェクトの **DefaultMessageClass** プロパティを使用します。 たとえば、[Folder](https://msdn.microsoft.com/library/bb645774\(v=office.15\)) オブジェクトの **DefaultMessageClass** が IPM.Contact であれば、Contact フォルダーを表します。 しかし、フォルダーの既定のフォームがカスタム フォームまたは代替フォームの場合は、 [PropertyAccessor](https://msdn.microsoft.com/library/bb646034\(v=office.15\)) オブジェクトを使用して既定のフォームのメッセージ クラスを決定する必要があります。 **DefaultMessageClass** プロパティはフォルダーの既定のフォームのメッセージ クラスを返しません。
 
-次のコード例では、GetDefaultMessageClass プロシージャが **PropertyAccessor** を使用してフォルダーの既定のフォームを決定します。 フォルダーのプロパティ **PR\_DEF\_POST\_MSGCLASS** [(PidTagDefaultPostMessageClass)](https://msdn.microsoft.com/library/cc815305\(v=office.15\)) が見つからず、Outlook でエラーが発生すると、**try…catch** ブロックから **Folder** の **DefaultMessageClass** プロパティが返されます。
+次のコード例では、GetDefaultMessageClass プロシージャが **PropertyAccessor** を使用してフォルダーの既定のフォームを決定します。 場合、フォルダーのプロパティ**PR\_DEF\_ポスト\_MSGCLASS** [(PidTagDefaultPostMessageClass)](https://msdn.microsoft.com/library/cc815305\(v=office.15\))が見つからない場合は、Outlook でエラーが発生し、 **try... catch**ブロックの**DefaultMessageClass**プロパティを返します、。**フォルダー**です。
 
 Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 

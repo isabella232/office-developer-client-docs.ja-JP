@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.assetid: 4ad2f417-be8f-4fc8-9321-82097289074b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7843a31094d2564f30000f21ee888e525f39f960
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.openlocfilehash: ce823159047410a8cea13b7eff5566cd8abaa5b9
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397185"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28699514"
 ---
 # <a name="pidtagexchangeprofilesectionid-canonical-property"></a>PidTagExchangeProfileSectionId 標準プロパティ
 
@@ -34,9 +34,9 @@ ms.locfileid: "25397185"
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |複数の Exchange アカウント  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-Microsoft Outlook 2010 と Microsoft Outlook 2013 は、1 つ 1 つの Exchange アカウントではなく、複数の Exchange アカウントをサポートします。 複数の Exchange アカウントに対応するため、MAPI プロファイルのレイアウトが変更されました。 Microsoft Office Outlook 2007 と以前のバージョンでは、プロファイルには、サーバー名、ユーザー名、およびオフライン フォルダー ファイル (.ost) などの Exchange の設定には専用の固定プロファイル セクションが含まれています。 場所です。 **PbGlobalProfileSectionGuid**プロパティの一意の識別子を使用してこれらの設定が確認されました。 交換の設定に使用されるセクションは、Exchange のグローバル プロファイル セクションと呼ばれます。 Outlook 2007 で Exchange のグローバル プロファイルの詳細については、[グローバル プロファイル セクションを開く方法](https://support.microsoft.com/kb/188482)を参照してください。
+Microsoft Outlook 2010 と Microsoft Outlook 2013 は、1 つ 1 つの Exchange アカウントではなく、複数の Exchange アカウントをサポートします。 複数の Exchange アカウントに対応するため、MAPI プロファイルのレイアウトが変更されました。 Microsoft Office Outlook 2007 と以前のバージョンでは、プロファイルには、サーバー名、ユーザー名、およびオフライン フォルダー ファイル (.ost) などの Exchange の設定には専用の固定プロファイル セクションが含まれています。 場所です。 **PbGlobalProfileSectionGuid**プロパティの一意の識別子を使用してこれらの設定が確認されました。 交換の設定に使用されるセクションは、Exchange のグローバル プロファイル セクションと呼ばれます。 
   
 固定プロファイル セクションの場所は、複数の Exchange アカウントに対応するために十分ではありません。 代わりに、プロファイルに Exchange アカウントごとのセクションが存在し、そのアカウントの設定は、専用です。 交換の設定に使用される新しいセクションは、 **emsmdbUID**の一意の識別子によって識別されます。
   
@@ -67,7 +67,7 @@ Exchange アカウントの 1 つは、従来の Exchange アカウントとし�
 
 
 
-[複数の Exchange アカウントの使用](using-multiple-exchange-accounts.md)
+[複数の Exchange アカウントを使用します。](using-multiple-exchange-accounts.md)
 
 
 [[�O���[�o�� �v���t�@�C��] �Z�N�V������J�����@](https://support.microsoft.com/kb/188482)

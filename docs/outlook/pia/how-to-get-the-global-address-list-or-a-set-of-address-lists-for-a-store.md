@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff184631(v=office.15)
 ms:contentKeyID: 55119800
 ms.date: 07/24/2014
 mtps_version: v=office.15
-ms.openlocfilehash: b27c6c6fd9cf70a691f4a2df628a342cf024d8d6
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+localization_priority: Normal
+ms.openlocfilehash: 582b0e836edc361d1d8717f94a5d7490c57cd530
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25406457"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28719465"
 ---
 # <a name="get-the-global-address-list-or-a-set-of-address-lists-for-a-store"></a>ストアのグローバル アドレス一覧またはアドレス一覧のセットを取得する
 
@@ -83,7 +84,7 @@ public Outlook.AddressList GetGlobalAddressList(Outlook.Store store)
 }
 ```
 
-2 番目のコード例には、EnumerateAddressListsForStore メソッドと GetAddressLists 関数が含まれています。 EnumerateAddressListsForStore メソッドでは、現在のストアで定義された各アドレス一覧の種類と解決順序が表示されます。 EnumerateAddressListsForStore はまず現在のストアを取得し、その後 GetAddressLists を呼び出して現在のストアの AddressList オブジェクトが格納されている .NET Framework の汎用 [List\<T\>](https://msdn.microsoft.com/ja-JP/library/6sh2ey19)を取得します。 
+2 番目のコード例には、EnumerateAddressListsForStore メソッドと GetAddressLists 関数が含まれています。 EnumerateAddressListsForStore メソッドでは、現在のストアで定義された各アドレス一覧の種類と解決順序が表示されます。 EnumerateAddressListsForStore はまず現在のストアを取得し、その後 GetAddressLists を呼び出して現在のストアの AddressList オブジェクトが格納されている .NET Framework の汎用 [List\<T\>](https://msdn.microsoft.com/en-us/library/6sh2ey19)を取得します。 
 
 GetAddressLists は本セッションで定義された各アドレス一覧を列挙し、PropertyAccessor オブジェクトと MAPI 名前付きプロパティ https://schemas.microsoft.com/mapi/proptag/0x3D150102 を使用してアドレス一覧の PR\_EMSMDB\_SECTION\_UID プロパティと現在のストアの PR\_EMSMDB\_SECTION\_UID プロパティを取得します。 GetGlobalAddressList は、アドレス一覧とストアの PR\_EMSMDB\_SECTION\_UID プロパティが一致した場合にそのアドレス一覧がストアに関連付けられたものと識別し、現在のストアのアドレス一覧のセットを返します。 その後、EnumerateAddressListsForStore は **AddressList** オブジェクトの [AddressListType](https://msdn.microsoft.com/library/bb610942\(v=office.15\)) と [ResolutionOrder](https://msdn.microsoft.com/library/bb646853\(v=office.15\)) プロパティを使用して、返された各アドレス一覧の種類と解決順序を表示します。
 
