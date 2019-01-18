@@ -8,12 +8,13 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 dev_langs:
 - sql
-ms.openlocfilehash: 2b03834914c352a0e9c462c50bee48ac992276e3
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 962e425c2c69511b6d7770fb03e954588249cf2a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860583"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718785"
 ---
 # <a name="select-statement-microsoft-access-sql"></a>SELECT ステートメント (Microsoft Access SQL)
 
@@ -71,7 +72,7 @@ SELECT 句には、次の指定項目があります。
 </table>
 
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この操作を実行するには、Microsoft Jet データベース エンジン、指定したテーブルの検索、選択された列を抽出し、基準、および並べ替え、または結果の行のグループを指定された順序に一致する行を選択します。
 

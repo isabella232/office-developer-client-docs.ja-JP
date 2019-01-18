@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193917(v=office.15)
 ms:contentKeyID: 48544842
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 60d843773c00e7bd40e3e8e28997422fbda3c215
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: a5784054ce195a1a2ea516d4f6a3417c5a8db71c
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998309"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28722887"
 ---
 # <a name="recordset2sort-property-dao"></a>Recordset2.Sort プロパティ (DAO)
 
@@ -25,7 +26,7 @@ ms.locfileid: "25998309"
 
 *式***Recordset2**オブジェクトを表す変数です。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **Sort**プロパティを持つダイナセット: およびスナップショット タイプの**レコード セット**オブジェクトを使用できます。
 

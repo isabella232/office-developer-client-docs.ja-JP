@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249933(v=office.15)
 ms:contentKeyID: 48547500
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: aa9cf4128f8c5ae37281cd8b996b9bf59094ba70
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 9728c8a736e2639816f65b006394e513ea5a5d64
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910700"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718925"
 ---
 # <a name="adox-collections"></a>ADOX のコレクション
 
@@ -36,7 +37,7 @@ ms.locfileid: "25910700"
 <td><p>テーブル、インデックス、またはキーのすべての <strong>Column</strong> オブジェクトを含みます。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="groups-collection-adox.md">グループ</a></p></td>
+<td><p><a href="groups-collection-adox.md">Groups</a></p></td>
 <td><p>カタログまたはユーザーのすべての格納された <strong>Group</strong> オブジェクトを含みます。</p></td>
 </tr>
 <tr class="odd">
@@ -48,7 +49,7 @@ ms.locfileid: "25910700"
 <td><p>テーブルのすべての <strong>Key</strong> オブジェクトを含みます。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="procedures-collection-adox.md">手順</a></p></td>
+<td><p><a href="procedures-collection-adox.md">Procedures</a></p></td>
 <td><p>カタログのすべての <strong>Procedure</strong> オブジェクトを含みます。</p></td>
 </tr>
 <tr class="even">
@@ -56,11 +57,11 @@ ms.locfileid: "25910700"
 <td><p>カタログのすべての <strong>Table</strong> オブジェクトを含みます。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="users-collection-adox.md">ユーザー</a></p></td>
+<td><p><a href="users-collection-adox.md">Users</a></p></td>
 <td><p>カタログまたはグループのすべての格納された <strong>User</strong> オブジェクトを含みます。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="views-collection-adox.md">ビュー</a></p></td>
+<td><p><a href="views-collection-adox.md">Views</a></p></td>
 <td><p>カタログのすべての <strong>View</strong> オブジェクトを含みます。</p></td>
 </tr>
 </tbody>

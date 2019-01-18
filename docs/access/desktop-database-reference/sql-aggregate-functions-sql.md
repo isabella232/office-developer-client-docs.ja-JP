@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197054(v=office.15)
 ms:contentKeyID: 48546136
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1ce5056ebedb293d13793768a5c3509266aade8a
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: fdfcc9be363e2338a8889dbde4f56d56fce5eb67
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26025666"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28714606"
 ---
 # <a name="sql-aggregate-functions-sql"></a>SQL 集計関数 (SQL)
 
@@ -21,9 +22,9 @@ SQL 集計関数を使用すると、値の集合からさまざまな統計情�
 
 - [Avg 関数](https://docs.microsoft.com/office/vba/access/concepts/criteria-expressions/avg-function-microsoft-access-sql)
 - [Count 関数](https://docs.microsoft.com/office/vba/access/concepts/criteria-expressions/count-function-microsoft-access-sql)
-- [First、Last 関数します。](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/first-last-functions-microsoft-access-sql)
-- [Min、Max 関数](https://docs.microsoft.com/office/vba/access/concepts/criteria-expressions/min-max-functions-microsoft-access-sql)
-- [StDev、StDevP 関数](https://docs.microsoft.com/office/vba/access/concepts/criteria-expressions/stdev-stdevp-functions-microsoft-access-sql)
+- [First 関数および Last 関数](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/first-last-functions-microsoft-access-sql)
+- [Min 関数および Max 関数](https://docs.microsoft.com/office/vba/access/concepts/criteria-expressions/min-max-functions-microsoft-access-sql)
+- [StDev 関数および StDevP 関数](https://docs.microsoft.com/office/vba/access/concepts/criteria-expressions/stdev-stdevp-functions-microsoft-access-sql)
 - [Sum 関数](https://docs.microsoft.com/office/vba/access/concepts/criteria-expressions/sum-function-microsoft-access-sql)
-- [Var、VarP 関数](https://docs.microsoft.com/office/vba/access/concepts/criteria-expressions/var-varp-functions-microsoft-access-sql)
+- [Var 関数および VarP 関数](https://docs.microsoft.com/office/vba/access/concepts/criteria-expressions/var-varp-functions-microsoft-access-sql)
 

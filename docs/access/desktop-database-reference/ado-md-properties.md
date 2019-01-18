@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249180(v=office.15)
 ms:contentKeyID: 48544416
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0323ba7adb617bd68ed5c97098c93be9f990ac70
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 3ac650d54d08b77bd0ba3311c1ac7c3005d75dfe
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910930"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28716223"
 ---
 # <a name="ado-md-properties"></a>ADO MD のプロパティ
 
@@ -70,11 +71,11 @@ ms.locfileid: "25910930"
 <td><p>現在のセルセットのフィルター情報を示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="item-property-ado-md-cellset.md">Item</a></p></td>
+<td><p><a href="item-property-ado-md-cellset.md">アイテム</a></p></td>
 <td><p>座標を使用して、セルセットからセルを取得します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="item-property-ado.md">Item</a></p></td>
+<td><p><a href="item-property-ado.md">アイテム</a></p></td>
 <td><p>名前またはインデックスを使用してコレクションの特定のメンバーを返します。</p></td>
 </tr>
 <tr class="odd">

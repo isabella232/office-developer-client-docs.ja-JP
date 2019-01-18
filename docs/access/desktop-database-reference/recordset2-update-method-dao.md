@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052882
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 996686501d355555814a48bc665f3eb634a74298
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 4259da0eb48e7ff13e246b326cc6e96d7a916ea7
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998617"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28714914"
 ---
 # <a name="recordset2update-method-dao"></a>Recordset2.Update メソッド (DAO)
 
@@ -54,7 +55,7 @@ ms.locfileid: "25998617"
 <tr class="even">
 <td><p><em>Force</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>ブール型 (Boolean)</strong></p></td>
+<td><p><strong>Boolean</strong></p></td>
 <td><p><a href="recordset-addnew-method-dao.md"><strong>AddNew</strong></a> 、 <a href="fields-delete-method-dao.md"><strong>Delete</strong></a> 、または <a href="recordset2-edit-method-dao.md"><strong>Edit</strong></a> の呼び出し後に、基になるデータが他のユーザーによって変更されたかどうかにかかわらず、変更を強制的にデータベースに反映するかどうかを示すブール型 ( <strong>Boolean</strong> ) の値です。 <strong>True</strong> に設定すると、変更が強制的に反映され、他のユーザーによる変更は単純に上書きされます。 <strong>False</strong> (既定値) に設定すると、更新が保留されている間に他のユーザーが変更を加えた場合、競合する変更の更新が失敗します。エラーは発生しませんが、 <strong><a href="recordset-batchcollisioncount-property-dao.md">BatchCollisionCount</a></strong> プロパティと <strong>BatchCollisions</strong> プロパティに、競合の数と競合によって影響を受ける行が、それぞれ格納されます (ODBCDirect ワークスペースのみ)。  </p></td>
 </tr>
 </tbody>

@@ -1,19 +1,20 @@
 ---
-title: IIS で仮想サーバーを構成します。
+title: IIS での仮想サーバーの構成
 TOCTitle: Configuring virtual servers on IIS
 ms:assetid: 0a8057a2-c90b-d0b5-21c8-5343e80708ce
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248837(v=office.15)
 ms:contentKeyID: 48543154
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f8ab3bf8e6ffec2b72744d3abacceb4725c98b02
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: a9c7f5782885aafd43e365ddc4f08dedd0975234
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946728"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28719316"
 ---
-# <a name="configuring-virtual-servers-on-iis"></a>IIS で仮想サーバーを構成します。
+# <a name="configuring-virtual-servers-on-iis"></a>IIS での仮想サーバーの構成
 
 **適用されます**Access 2013、Office 2013。
 

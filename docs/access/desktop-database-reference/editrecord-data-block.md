@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff837277(v=office.15)
 ms:contentKeyID: 48548940
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c2b3499d7b2a779739dc965e6f0ca35ebab369ea
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 32ddfbbf21e62d5967fa1f2f31bab0222664eb39
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930883"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28715754"
 ---
 # <a name="editrecord-data-block"></a>EditRecord データ ブロック
 
@@ -40,7 +41,7 @@ ms.locfileid: "25930883"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>エイリアス</strong></p></td>
+<td><p><strong>Alias</strong></p></td>
 <td><p>編集するレコードを識別する文字列です。 <em>別名</em>引数を指定しない場合、現在のレコードを編集します。</p></td>
 </tr>
 </tbody>

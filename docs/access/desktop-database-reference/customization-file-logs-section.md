@@ -1,19 +1,20 @@
 ---
-title: カスタマイズ ファイルのログのセクション
+title: カスタマイズ ファイルの Logs セクション
 TOCTitle: Customization File Logs section
 ms:assetid: de331a97-c9cd-5f02-692b-d7afd9e9342a
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250124(v=office.15)
 ms:contentKeyID: 48548178
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c9a8b9c2255825b135fbc181900a73b3686c64c7
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 3a9af5d09a7a7a7a7ec97d757d502efbf2402900
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946151"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28715635"
 ---
-# <a name="customization-file-logs-section"></a>カスタマイズ ファイルのログのセクション
+# <a name="customization-file-logs-section"></a>カスタマイズ ファイルの Logs セクション
 
 **適用されます**Access 2013、Office 2013。
 
@@ -44,7 +45,7 @@ ms.locfileid: "25946151"
 <td><p>これがログ ファイル エントリであることを示すリテラル文字列。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Filename</em></p></td>
+<td><p><em>FileName</em></p></td>
 <td><p>完全パスとファイル名。通常のファイル名は、<strong>c:\msdfmap.log</strong> です。</p></td>
 </tr>
 </tbody>

@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835671(v=office.15)
 ms:contentKeyID: 48548263
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 69656b6ab65cef0e2dfec01a338dfc5a70752de3
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 63e189143e77f9fcc42fa8d48c3ebfb2feda6633
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922098"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28719819"
 ---
 # <a name="createrecord-data-block"></a>CreateRecord データ ブロック
 
@@ -47,7 +48,7 @@ ms.locfileid: "25922098"
 <td><p>新しいレコードを作成するテーブルの名前。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>エイリアス</strong></p></td>
+<td><p><strong>Alias</strong></p></td>
 <td><p>いいえ</p></td>
 <td><p>レコードを識別する文字列。レコードの別名を使用できます。</p></td>
 </tr>
@@ -55,7 +56,7 @@ ms.locfileid: "25922098"
 </table>
 
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **CreateRecord** で作成したレコードは自動的にカレント レコードになります。
 

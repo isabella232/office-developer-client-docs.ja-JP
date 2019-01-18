@@ -10,12 +10,13 @@ f1_keywords:
 - jetsql40.chm5277591
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e3de2ba6696ac9abc065c6d4588d362f79fba273
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 43fa81fa2f175c7b67c5de4cfda5158cc067bbac
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026401"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718253"
 ---
 # <a name="sql-reserved-words"></a>SQL 予約語
 
@@ -66,7 +67,7 @@ ms.locfileid: "26026401"
 <td><p><a href="equivalent-ansi-sql-data-types.md">AUTOINCREMENT</a>: 「COUNTER」を参照</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="https://msdn.microsoft.com/library/ff192436(v=office.15)">And</a></strong></p></td>
+<td><p><strong><a href="https://msdn.microsoft.com/library/ff192436(v=office.15)">そして</a></strong></p></td>
 <td><p><strong><a href="https://msdn.microsoft.com/library/ff822755(v=office.15)">Avg</a></strong></p></td>
 </tr>
 <tr class="odd">
@@ -127,7 +128,7 @@ ms.locfileid: "26026401"
 </tr>
 <tr class="odd">
 <td><p>CATALOG</p></td>
-<td><p><strong><a href="https://msdn.microsoft.com/library/ff844748(v=office.15)">Count</a></strong></p></td>
+<td><p><strong><a href="https://msdn.microsoft.com/library/ff844748(v=office.15)">カウント</a></strong></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="equivalent-ansi-sql-data-types.md">CHAR、CHARACTER</a>: 「TEXT」を参照</p></td>
@@ -294,7 +295,7 @@ ms.locfileid: "26026401"
 <td><p><a href="equivalent-ansi-sql-data-types.md">INTEGER1</a>: 「BYTE」を参照</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="https://msdn.microsoft.com/library/ff836369(v=office.15)">で</a></strong></p></td>
+<td><p><strong><a href="https://msdn.microsoft.com/library/ff836369(v=office.15)">In</a></strong></p></td>
 <td><p><a href="equivalent-ansi-sql-data-types.md">INTEGER2</a>: 「SHORT」を参照</p></td>
 </tr>
 <tr class="even">

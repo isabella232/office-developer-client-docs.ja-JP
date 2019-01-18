@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845437(v=office.15)
 ms:contentKeyID: 48543374
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 525b261f5184f520d6f24c81f3d446fee8aa800e
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 8a2105c13f5f7ce9a75e7e18e20477d8b283543a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936960"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28719234"
 ---
 # <a name="workspace-members-dao"></a>ワークスペースのメンバー (DAO)
 
@@ -51,7 +52,7 @@ Workspace オブジェクトは、ユーザー用に名前付きセッション�
 <td><p>新しい <strong><a href="database-object-dao.md">Database</a></strong> オブジェクトを作成し、そのデータベースをディスクに保存し、開かれた <strong>Database</strong> オブジェクトとして返します (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="workspace-openconnection-method-dao.md">されます</a></strong></p></td>
+<td><p><strong><a href="workspace-openconnection-method-dao.md">OpenConnection</a></strong></p></td>
 <td><p><strong>注</strong>: Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Office Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p>
 <p>ODBC データ ソースの <strong><a href="connection-object-dao.md">Connection</a></strong> オブジェクトを開きます (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
@@ -67,7 +68,7 @@ Workspace オブジェクトは、ユーザー用に名前付きセッション�
 </table>
 
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 <table>
 <colgroup>

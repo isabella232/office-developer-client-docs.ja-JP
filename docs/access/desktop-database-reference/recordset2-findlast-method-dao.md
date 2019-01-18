@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195400(v=office.15)
 ms:contentKeyID: 48545428
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cf0b964de6e9bbf529faa0ef1391ddcd5deafc05
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: e358459c1737cd6fff1484d1562dad02a7585337
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997190"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28717007"
 ---
 # <a name="recordset2findlast-method-dao"></a>Recordset2.FindLast メソッド (DAO)
 
@@ -46,7 +47,7 @@ ms.locfileid: "25997190"
 <tr class="odd">
 <td><p><em>Criteria</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>文字列型 (String)</strong></p></td>
+<td><p><strong>String</strong></p></td>
 <td><p>レコードの検索に使用する文字列です。SQL ステートメントの WHERE 句に似ていますが、WHERE という語は付けません。</p></td>
 </tr>
 </tbody>
