@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052871
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f8d245223549d51c49e769eedd0b92bb335357cf
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: c7eabceb1f7c130e349428aeb6b2dc079fe4319d
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25996994"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28703749"
 ---
 # <a name="fieldgetchunk-method-dao"></a>Field.GetChunk メソッド (DAO)
 
@@ -50,13 +51,13 @@ ms.locfileid: "25996994"
 <tr class="odd">
 <td><p><em>Offset</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>長整数型 (Long)</strong></p></td>
+<td><p><strong>Long</strong></p></td>
 <td><p>コピーを開始する前にスキップするバイト数。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>バイト</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>長整数型 (Long)</strong></p></td>
+<td><p><strong>Long</strong></p></td>
 <td><p>取得するバイト数。</p></td>
 </tr>
 </tbody>

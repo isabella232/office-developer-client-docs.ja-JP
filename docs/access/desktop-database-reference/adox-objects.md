@@ -6,14 +6,15 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250087(v=office.15)
 ms:contentKeyID: 48548018
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6053792912d701fd844b44835721fc0497d23ee4
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: d5051a9842645ac8f93be26bf6309dd05da7ec24
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910895"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28704785"
 ---
-# <a name="adox-objects"></a>ADOX オブジェクト
+# <a name="adox-objects"></a>ADOX のオブジェクト
 
 **適用されます**Access 2013、Office 2013。
 
@@ -34,15 +35,15 @@ ms.locfileid: "25910895"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="catalog-object-adox.md">カタログ</a></p></td>
+<td><p><a href="catalog-object-adox.md">Catalog</a></p></td>
 <td><p>データ ソースのスキーマ カタログを表すコレクションを含みます。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="column-object-adox.md">Column</a></p></td>
+<td><p><a href="column-object-adox.md">列</a></p></td>
 <td><p>テーブル、インデックス、またはキーの列を表します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="group-object-adox.md">Group</a></p></td>
+<td><p><a href="group-object-adox.md">グループ</a></p></td>
 <td><p>保護されているデータベースへの権限を持つグループ アカウントを表します。</p></td>
 </tr>
 <tr class="even">
@@ -50,11 +51,11 @@ ms.locfileid: "25910895"
 <td><p>データベース テーブルのインデックスを表します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="key-object-adox.md">キー</a></p></td>
+<td><p><a href="key-object-adox.md">Key</a></p></td>
 <td><p>データベース テーブルの主キー フィールド、外部キー フィールド、または一意なキー フィールドを表します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="procedure-object-adox.md">Procedure</a></p></td>
+<td><p><a href="procedure-object-adox.md">プロシージャ</a></p></td>
 <td><p>ストアド プロシージャを表します。</p></td>
 </tr>
 <tr class="odd">
@@ -62,7 +63,7 @@ ms.locfileid: "25910895"
 <td><p>列、インデックス、およびキーを含むデータベース テーブルを表します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="user-object-adox.md">User</a></p></td>
+<td><p><a href="user-object-adox.md">ユーザー</a></p></td>
 <td><p>保護されているデータベースへの権限を持つユーザー アカウントを表します。</p></td>
 </tr>
 <tr class="odd">

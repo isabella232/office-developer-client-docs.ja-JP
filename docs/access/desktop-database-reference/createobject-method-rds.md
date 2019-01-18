@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248905(v=office.15)
 ms:contentKeyID: 48543360
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f622ee94fa6e37c2f618b038aea746791e58e9b8
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 47ad61495bcc96b3099af6273796626e9442cbf0
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25950083"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702846"
 ---
 # <a name="createobject-method-rds"></a>CreateObject メソッド (RDS)
 
@@ -59,12 +60,12 @@ RDS は、HTTP、HTTPS (HTTP over Secure Socket Layer)、DCOM、およびイン�
 
 |パラメーター|説明|
 |:--------|:----------|
-|*オブジェクト* |*ProgID* に指定された種類のオブジェクトに評価されるオブジェクト変数を指定します。|
-|*インスタンス* |新規オブジェクトのインスタンスの作成に使用される [RDS.DataSpace](dataspace-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。|
+|*Object* |*ProgID* に指定された種類のオブジェクトに評価されるオブジェクト変数を指定します。|
+|*DataSpace* |新規オブジェクトのインスタンスの作成に使用される [RDS.DataSpace](dataspace-object-rds.md) オブジェクトを表すオブジェクト変数を指定します。|
 |*ProgID* |アプリケーションのビジネス ルールを適用する、サーバー側のビジネス オブジェクトを指定するプログラム ID を含む文字列型 ( **String** ) の値を指定します。|
 |*awebsrvr*または*コンピューター名* |サーバー ビジネス オブジェクトのインスタンスを作成する、インターネット インフォメーション サービス (IIS) web サーバーを識別する URL を表す**文字列**値。|
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 *HTTP プロトコル*は、標準の web プロトコルです。*HTTPS*は、セキュリティで保護された web プロトコルです。 HTTP なしのローカル ・ エリア ・ ネットワークを実行している場合は、 *DCOM プロトコル*を使用します。 *プロセス内*のプロトコルは、ローカルのダイナミック リンク ライブラリ (DLL) です。ネットワークを使用しません。
 

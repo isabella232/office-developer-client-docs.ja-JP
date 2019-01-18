@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197351(v=office.15)
 ms:contentKeyID: 48546252
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0c725919b6509b5c802502fc8280823c407516f6
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 6ab52f353b7a3e636f64ff2ad6ad5354d62bed48
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998827"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28703546"
 ---
 # <a name="indexesdelete-method-dao"></a>Indexes.Delete メソッド (DAO)
 
@@ -46,7 +47,7 @@ ms.locfileid: "25998827"
 <tr class="odd">
 <td><p><em>Name</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>文字列型 (String)</strong></p></td>
+<td><p><strong>String</strong></p></td>
 <td><p>削除するインデックスの名前を指定します。</p></td>
 </tr>
 </tbody>

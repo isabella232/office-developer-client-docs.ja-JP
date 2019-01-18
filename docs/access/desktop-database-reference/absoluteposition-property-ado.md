@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249259(v=office.15)
 ms:contentKeyID: 48544787
 ms.date: 10/17/2018
 mtps_version: v=office.15
-ms.openlocfilehash: a090630b5db741f761314f598fcc783dd124d1cf
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 9b5e25e014c6e93d35e3621bb9b5b3c21d5e77f9
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25881861"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702377"
 ---
 # <a name="absoluteposition-property-ado"></a>AbsolutePosition プロパティ (ADO)
 
@@ -23,7 +24,7 @@ ms.locfileid: "25881861"
 
 1 から **Recordset** オブジェクトのレコード数 ([RecordCount](recordcount-property-ado.md)) までの長整数型 (**Long**) の値を設定するか、または [PositionEnum](positionenum.md) 値の 1 つを取得します。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **AbsolutePosition**プロパティを設定するには、ADO は、使用している OLE DB プロバイダーがクラス インターフェイスを実装する必要があります。
 

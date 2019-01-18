@@ -1,19 +1,20 @@
 ---
-title: '第 14 章: ADO MD の基礎'
+title: '第 14 章: ADO MD の基本事項'
 TOCTitle: 'Chapter 14: ADO MD fundamentals'
 ms:assetid: 129baa54-0bc1-985d-4bfd-25a1c1c3018e
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248899(v=office.15)
 ms:contentKeyID: 48543346
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8079851a59e8fe0d077dcbeed5b354e924aca6a2
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 44a4e666fb615f7d3870acfbd986e93971606d5b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936735"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28701138"
 ---
-# <a name="chapter-14-ado-md-fundamentals"></a>第 14 章: ADO MD の基礎
+# <a name="chapter-14-ado-md-fundamentals"></a>第 14 章: ADO MD の基本事項
 
 **適用されます**Access 2013、Office 2013。
 
@@ -25,7 +26,7 @@ ADO MD は、ADO と同様に、基になる OLE DB プロバイダーを使用�
 
 この章では、次のトピックについて説明します。
 
-- [多次元スキーマおよびデータの概要](overview-of-multidimensional-schemas-and-data.md)
+- [多次元スキーマとデータの概要](overview-of-multidimensional-schemas-and-data.md)
 - [マルチ ディメンション データの操作](working-with-multidimensional-data.md)
 - [ADO と ADO MD を共に使用する](using-ado-with-ado-md.md)
 - [ADO MD を使ってプログラミングする](programming-with-ado-md.md)

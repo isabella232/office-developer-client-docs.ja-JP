@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192953(v=office.15)
 ms:contentKeyID: 48544509
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4810bd1804433be091fc9a4b30aa9ba62f057965
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: a0826a30f22cc46eb6ff9a114dbf02cab1d9f76a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922546"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718932"
 ---
 # <a name="connectioncancel-method-dao"></a>Connection.Cancel メソッド (DAO)
 
@@ -23,7 +24,7 @@ ms.locfileid: "25922546"
 
 *式***接続**オブジェクトを表す変数です。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **Cancel**メソッドを使用して、**実行**または**されます**メソッドの非同期呼び出しの実行を中止する (つまり、メソッドが dbRunAsync オプションを指定して呼び出されました)。 終了するメソッドで dbRunAsync が使用できない場合、**キャンセル**実行時エラー戻ります。
 

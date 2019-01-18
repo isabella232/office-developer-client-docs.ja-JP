@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052970
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 429b64ae3909e320433b34d1426e396926fafba7
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: baa82b659cc2260d4a003c644b2d03d6c897fd21
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997477"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28706236"
 ---
 # <a name="tabledefcreateindex-method-dao"></a>TableDef.CreateIndex メソッド (DAO)
 
@@ -50,7 +51,7 @@ ms.locfileid: "25997477"
 <tr class="odd">
 <td><p><em>Name</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p><strong>Variant (バリアント型)</strong></p></td>
 <td><p>新しい <strong>Index</strong> オブジェクトの一意の名前を表す文字列型 (<strong>String</strong>) の値。有効な <strong>Index</strong> 名の詳細については、<strong>Name</strong> プロパティを参照してください。</p></td>
 </tr>
 </tbody>

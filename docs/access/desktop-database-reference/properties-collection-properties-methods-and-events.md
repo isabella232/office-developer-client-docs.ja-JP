@@ -6,18 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249076(v=office.15)
 ms:contentKeyID: 48543991
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: dfdd1626c986333d001e44e163208d901853b654
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 5fa82ffc4040fdfde8314c7f97600adf6a8b0157
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947659"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28698996"
 ---
 # <a name="properties-collection-properties-methods-and-events"></a>Properties コレクションのプロパティ、メソッド、イベント
 
 **適用されます**Access 2013、Office 2013。
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 - [Count プロパティ](count-property-ado.md)
 - [Item プロパティ](item-property-ado.md)

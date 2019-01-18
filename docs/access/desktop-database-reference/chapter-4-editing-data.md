@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249563(v=office.15)
 ms:contentKeyID: 48545974
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 28103cebeea517395ce2507402677fcde8114bb0
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: b954cf8b730a74fb7e630fbafb96c046491c6f46
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936589"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28701145"
 ---
 # <a name="chapter-4-editing-data"></a>第 4 章: データの編集
 
@@ -72,8 +73,8 @@ End Function
 
 この章では、次のトピックについて説明します。
 
-- [既存レコードの編集](editing-existing-records.md)
-- [サポート内容を決定します。](determining-what-is-supported.md)
-- [Delete メソッドを使用してレコードを削除します。](deleting-records-using-the-delete-method.md)
+- [既存のレコードの編集](editing-existing-records.md)
+- [サポート内容の決定](determining-what-is-supported.md)
+- [Delete メソッドによるレコードの削除](deleting-records-using-the-delete-method.md)
 - [他の方法: SQL ステートメントを使用します。](alternatives-using-sql-statements.md)
 - [(ADO) のレコードを追加します。](adding-records.md)

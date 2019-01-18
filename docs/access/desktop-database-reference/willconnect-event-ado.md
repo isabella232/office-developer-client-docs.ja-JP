@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249611(v=office.15)
 ms:contentKeyID: 48546208
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c8ac4ab83062d9297483b7ee4883ab0b289af227
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 6e62a01d274752b33f7bf3f6f4af6171e7efb16b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949832"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28703434"
 ---
 # <a name="willconnect-event-ado"></a>WillConnect イベント (ADO)
 
@@ -28,7 +29,7 @@ WillConnect*接続文字列*、*ユーザー Id*、*パスワード*、*オプ�
 |パラメーター|説明|
 |:--------|:----------|
 |*ConnectionString* |保留中の接続の接続情報が格納された文字列型 ( **String** ) の値です。|
-|*ユーザー Id* |保留中の接続のユーザー名が格納された文字列型 ( **String** ) の値です。|
+|*UserID* |保留中の接続のユーザー名が格納された文字列型 ( **String** ) の値です。|
 |*Password* |保留中の接続のパスワードが格納された文字列型 ( **String** ) の値です。|
 |*Options* |プロバイダーが *ConnectionString* を評価する方法を示す長整数型 (**Long**) の値です。オプションは **adAsyncOpen** のみ指定できます。|
 |*adStatus* |[EventStatusEnum](eventstatusenum.md)。 このイベントが呼び出されたとき、既定では、このパラメーターは **adStatusOK** に設定されます。 保留中の操作の取り消しをイベントが要求できない場合、このパラメーターは **adStatusCantDeny** に設定されます。<br/><br/>このイベントから制御が戻る前に後続の通知が行われるのを防ぐには、このパラメーターを **adStatusUnwantedEvent** に設定します。この通知の取り消しを実行する接続操作を要求するには、このパラメーターを **adStatusCancel** に設定します。|

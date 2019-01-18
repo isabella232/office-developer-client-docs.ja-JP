@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197365(v=office.15)
 ms:contentKeyID: 48546270
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d21151b2a30ec44b717031f2b0b8a8f506f22193
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: cd50ec72113b0615849ff6b8b2e8d73c0e61c3ce
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930421"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28720010"
 ---
 # <a name="document-members-dao"></a>ドキュメントのメンバー (DAO)
 
@@ -42,7 +43,7 @@ Document オブジェクトには、オブジェクトの 1 つのインスタ�
 </table>
 
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 <table>
 <colgroup>

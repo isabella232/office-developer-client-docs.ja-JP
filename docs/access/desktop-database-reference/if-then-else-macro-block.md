@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845158(v=office.15)
 ms:contentKeyID: 48543188
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c671ced7d3de2ce461af3bcf0a5d832e092bbf17
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: fb6cbd6cc925a3e4841d9e7d6d77332cc36c7a03
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922938"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28703112"
 ---
 # <a name="ifthenelse-macro-block"></a>If...Then...Else マクロ ブロック
 
@@ -54,7 +55,7 @@ ms.locfileid: "25922938"
 </table>
 
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **If** マクロ ブロックを選択するとテキスト ボックスが表示されるので、そこにテストする条件を表す式を入力します。さらに、マクロ アクションを挿入できるコンボ ボックスも表示されます。マクロ アクションの下に、"End If" というテキストが自動的に表示されます。If と End If は、アクションのグループ (ブロック) を入力できる領域を囲みます。ブロックは、入力した式が True の場合にのみ実行されます。
 

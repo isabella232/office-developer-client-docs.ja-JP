@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff820771(v=office.15)
 ms:contentKeyID: 48546712
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1ec96fd588e4b20b6c2ebe0ef25f488841aa4d70
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 6b6f16c22e9265159c73279cfa1b2644adbc0277
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998876"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28722691"
 ---
 # <a name="setvalue-macro-action"></a>SetValue マクロ アクション
 
@@ -40,7 +41,7 @@ ms.locfileid: "25998876"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Item</strong></p></td>
+<td><p><strong>アイテム</strong></p></td>
 <td><p>値を設定するフィールド、コントロール、またはプロパティの名前を指定します。[マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>アイテム</strong>] ボックスに、フィールド、コントロール、またはプロパティの名前を入力します。このアイテムを参照するには、<em>controlname</em> (マクロが呼び出されたフォームまたはレポートのコントロールの場合)、<strong>Forms</strong>!<em>formname</em>!<em>controlname</em> など、完全な構文を使用する必要があります。この引数は省略できません。</p></td>
 </tr>
 <tr class="even">
@@ -112,7 +113,7 @@ ms.locfileid: "25998876"
 <td><p>[製品] フォームを開きます。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>値の代入</strong></p></td>
+<td><p><strong>SetValue</strong></p></td>
 <td><p><strong>Item/アイテム</strong>: [フォーム]![製品]![SupplierID] <strong>Expression/式</strong>: SupplierID</p></td>
 <td><p>[仕入先コード] コントロールを [仕入先] フォームの現在の仕入先に設定します。</p></td>
 </tr>

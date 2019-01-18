@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052978
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f94d869cd04dc0b16e0b428abaf60e4be32dacb7
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 7a84e3cc4b35886a12b2e6b4cf92b7483fea293a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998057"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28705114"
 ---
 # <a name="dbengineidle-method-dao"></a>DBEngine.Idle メソッド (DAO)
 
@@ -50,7 +51,7 @@ ms.locfileid: "25998057"
 <tr class="odd">
 <td><p><em>Action</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p><strong>Variant (バリアント型)</strong></p></td>
 <td><p>実行するアクションを指定します。指定できる定数は、<strong><a href="idleenum-enumeration-dao.md">IdleEnum</a></strong> クラスの定数のいずれかです。</p></td>
 </tr>
 </tbody>

@@ -6,14 +6,15 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249141(v=office.15)
 ms:contentKeyID: 48544245
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b7da083471149316c39595913aec26053e5ad718
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: ffb9ece91d674e3447f43ae17e2ea9415e2339ac
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936750"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28700179"
 ---
-# <a name="ado-task-table"></a>ADO タスク テーブル
+# <a name="ado-task-table"></a>ADO のタスク表
 
 **適用されます**Access 2013、Office 2013。
 

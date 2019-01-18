@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845280(v=office.15)
 ms:contentKeyID: 48543262
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a9fde088cee3dd97f71a8e9f982ebb026cf45d07
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 05229e5402df87e9bfba6f64ffa3e9112c339735
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925820"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28698030"
 ---
 # <a name="error-members-dao"></a>エラー メンバー (DAO)
 
@@ -20,7 +21,7 @@ ms.locfileid: "25925820"
 
 Error オブジェクトにはデータ アクセス エラーに関する詳細が含まれ、各オブジェクトが DAO を扱う 1 回の操作に対応しています。
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 <table>
 <colgroup>
@@ -39,7 +40,7 @@ Error オブジェクトにはデータ アクセス エラーに関する詳細
 <td><p>エラーについて説明する文字列を取得します。これは、 <strong>Error</strong> オブジェクトの既定のプロパティです。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="error-number-property-dao.md">数値</a></strong></p></td>
+<td><p><strong><a href="error-number-property-dao.md">番号</a></strong></p></td>
 <td><p>エラーを示す数値を取得します。</p></td>
 </tr>
 <tr class="odd">

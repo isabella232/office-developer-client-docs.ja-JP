@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248867(v=office.15)
 ms:contentKeyID: 48543275
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4fb6b06fd23577812f43db2f80829831b3f6409c
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: dac3a8faed269bab138b10d307e9845ca3dda140
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910846"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28700319"
 ---
 # <a name="ado-api-reference"></a>ADO API リファレンス
 
@@ -22,10 +23,10 @@ ActiveX データ オブジェクト (ADO) のマニュアルのこのセクシ�
 詳細については、特定のトピックをキーワードで検索するか、次のトピックを参照してください。
 
 - [ADO オブジェクト](ado-objects-and-interfaces.md)
-- [ADO コレクション](ado-collections.md)
+- [ADO のコレクション](ado-collections.md)
 - [ADO プロパティ](ado-properties.md)
 - [ADO の動的プロパティ](ado-dynamic-properties.md)
-- [ADO メソッド](ado-methods.md)
+- [ADO のメソッド](ado-methods.md)
 - [ADO イベント](ado-events.md)
 - [ADO の列挙定数](ado-enumerated-constants.md)
 - [ADO コードの例](ado-code-examples.md)

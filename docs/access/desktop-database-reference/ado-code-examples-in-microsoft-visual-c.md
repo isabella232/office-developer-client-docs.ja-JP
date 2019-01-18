@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249212(v=office.15)
 ms:contentKeyID: 48544550
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3653099bc19bde7c1dd349c8b7984a7f988a8e11
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: a3ffa94797d14e392b52e32022a225489a9d7b2b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910776"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28703336"
 ---
 # <a name="ado-code-examples-in-microsoft-visual-c"></a>Microsoft Visual C++ での ADO コードの例
 
@@ -48,7 +49,7 @@ Microsoft Visual C++ で記述するときの ADO のメソッド、プロパテ
 - [更新と CancelUpdate メソッドの使用例](update-and-cancelupdate-methods-example-vc.md)
 - [UpdateBatch、および CancelBatch メソッドの使用例](updatebatch-and-cancelbatch-methods-example-vc.md)
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 - [AbsolutePage、PageCount、および PageSize プロパティの使用例](absolutepage-pagecount-and-pagesize-properties-example-vc.md)
 - [AbsolutePosition と CursorLocation プロパティの使用例](absoluteposition-and-cursorlocation-properties-example-vc.md)
@@ -59,7 +60,7 @@ Microsoft Visual C++ で記述するときの ADO のメソッド、プロパテ
 - [Bof プロパティ、EOF、およびブックマークのプロパティの例](bof-eof-and-bookmark-properties-example-vc.md)
 - [CacheSize プロパティの使用例](cachesize-property-example-vc.md)
 - [ConnectionString、タイムアウト、および状態のプロパティの例](connectionstring-connectiontimeout-and-state-properties-example-vc.md)
-- [Count プロパティの使用例](count-property-example-vc.md)
+- [Count プロパティの使用例 (VJ++)](count-property-example-vc.md)
 - [CursorType、LockType、および EditMode プロパティの使用例](cursortype-locktype-and-editmode-properties-example-vc.md)
 - [説明、HelpContext、HelpFile、以下、番号、ソース、および SQLState プロパティの使用例](description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vc.md)
 - [フィルターと RecordCount プロパティの使用例](filter-and-recordcount-properties-example-vc.md)
@@ -80,7 +81,7 @@ Microsoft Visual C++ で記述するときの ADO のメソッド、プロパテ
 - [StayInSync プロパティの使用例](stayinsync-property-example-vc.md)
 - [プロパティの使用例 (フィールド) を入力します。](type-property-example-field-vc.md)
 - [プロパティの使用例 (プロパティ) を入力します。](type-property-example-property-vc.md)
-- [値プロパティの使用例](value-property-example-vc.md)
+- [Value プロパティの使用例 (VJ++)](value-property-example-vc.md)
 - [バージョン プロパティの使用例](version-property-example-vc.md)
 
 ## <a name="events"></a>イベント

@@ -10,12 +10,13 @@ f1_keywords:
 - vbaac10.chm119055
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7da3eb87e775a6b02694910cd017c9535fde1df7
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 1c37e798e0624a5655b63a76332073e5b57c0823
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998281"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28704141"
 ---
 # <a name="navigateto-macro-action"></a>NavigateTo マクロ アクション
 
@@ -44,14 +45,14 @@ ms.locfileid: "25998281"
 <td><p>必ず指定します。ナビゲーション ウィンドウにオブジェクトを表示する際に使用するカテゴリを指定します。[<strong>カテゴリ</strong>] ボックスで [<strong>オブジェクトの種類</strong>]、[<strong>テーブルとビュー</strong>]、[<strong>更新日</strong>]、[<strong>作成日</strong>]、または [<strong>ユーザー設定</strong>] をクリックします。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Group</strong></p></td>
+<td><p><strong>グループ</strong></p></td>
 <td><p>省略可能。 カテゴリ内のオブジェクト、<strong>グループ</strong>引数の制限は、ナビゲーション ウィンドウに表示されます。 引数<strong>Group</strong>を空白のままにする場合、ナビゲーション ウィンドウには、引数<strong>Category</strong>で指定した条件によって分類されるすべてのデータベース オブジェクトが表示されます。 さまざまな<strong>カテゴリ</strong>の引数の有効な<strong>グループ</strong>の引数の例としては、次の表に表示されます。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 - このアクションは、ナビゲーション ウィンドウのタイトル バーからカテゴリとグループを選択することに似ています。
 

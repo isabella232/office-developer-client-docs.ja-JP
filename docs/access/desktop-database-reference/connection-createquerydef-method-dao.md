@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1053067
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 681da274ab1f709da2eb614df038e6aa492a224a
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: b6600d4508a33a31098d6a2e7c92f5904beb0e95
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997253"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28705933"
 ---
 # <a name="connectioncreatequerydef-method-dao"></a>Connection.CreateQueryDef メソッド (DAO)
 
@@ -50,13 +51,13 @@ ms.locfileid: "25997253"
 <tr class="odd">
 <td><p><em>Name</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p><strong>Variant (バリアント型)</strong></p></td>
 <td><p>新しい <strong>QueryDef</strong> の一意の名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>SQLText</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p><strong>Variant (バリアント型)</strong></p></td>
 <td><p><strong>QueryDef</strong> を定義する SQL ステートメントを表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。この引数を省略した場合、コレクションへの追加前または追加後に、<strong><a href="querydef-sql-property-dao.md">SQL</a></strong> プロパティを設定して、<strong>QueryDef</strong> を定義できます。</p></td>
 </tr>
 </tbody>

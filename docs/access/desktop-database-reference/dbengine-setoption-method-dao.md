@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1088781
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 55baceac9523400c5e646fbc4c1e7bb411219697
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 5875a8935b1b44c3c36b29344af32df552f6e01c
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998589"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28699892"
 ---
 # <a name="dbenginesetoption-method-dao"></a>DBEngine.SetOption メソッド (DAO)
 
@@ -56,14 +57,14 @@ Windows レジストリに登録されている Microsoft Access データベー
 <tr class="even">
 <td><p><em>Value</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p><strong>Variant (バリアント型)</strong></p></td>
 <td><p>オプションを設定する値です。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 HKEY のパスに対応するレジストリ キーには、各定数\_ローカル\_マシン\\ソフトウェア\\Microsoft\\Office\\12.0\\アクセス接続エンジン\\エンジン\\(つまり、エース**dbSharedAsyncDelay**は HKEY のキーに対応する\_ローカル\_マシン\\ソフトウェア\\Microsoft\\Office\\12.0\\アクセス接続エンジン\\エンジン\\エース\\SharedAsyncDelay というように)。
 

@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248946(v=office.15)
 ms:contentKeyID: 48543515
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0d5979cb42e2ed4a979dc07016a4bb02b8097994
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: be2a4855b3411a11ddd5a76225acaa52344877a4
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949790"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28706143"
 ---
 # <a name="rowset-property-ado"></a>Rowset プロパティ (ADO)
 
@@ -19,7 +20,7 @@ ms.locfileid: "25949790"
 
 **ADORecordsetConstruction** オブジェクトの OLE DB **Rowset** オブジェクトを取得または設定します。 Put を使用すると、\_、ADO**レコード セット**オブジェクトに、行セットの行セットが有効になっています。
 
-値の取得および設定が可能です。
+値の取得と設定が可能です。
 
 ## <a name="syntax"></a>構文
 
