@@ -6,18 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249675(v=office.15)
 ms:contentKeyID: 48546472
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 051f0ce18cf12ef2d3450dbf9ecc27ebb36134a0
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+localization_priority: Normal
+ms.openlocfilehash: 58bde31a3386e3c129933d02e6464de5bc18fd68
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25874238"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726464"
 ---
-# <a name="sortorder-property-example-vb"></a><span data-ttu-id="ec730-102">SortOrder プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="ec730-102">SortOrder property example (VB)</span></span>
+# <a name="sortorder-property-example-vb"></a><span data-ttu-id="33f5c-102">SortOrder プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="33f5c-102">SortOrder property example (VB)</span></span>
 
-<span data-ttu-id="ec730-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="ec730-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="33f5c-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="33f5c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="ec730-p101">この例では、[Index](sortorder-property-adox.md) の [Columns](column-object-adox.md) コレクションに追加された [Column](columns-collection-adox.md) の [SortOrder](index-object-adox.md) プロパティの機能を示します。このコードは、 **Employees** テーブルの Country 列に昇順のインデックスを追加してレコードを表示します。次に、 **Employees** テーブルの Country 列に降順のインデックスを追加して、レコードを再表示します。これにより、昇順と降順のインデックスの違いを示します。</span><span class="sxs-lookup"><span data-stu-id="ec730-p101">This example demonstrates the [SortOrder](sortorder-property-adox.md) property of a [Column](column-object-adox.md) that has been appended to the [Columns](columns-collection-adox.md) collection of an [Index](index-object-adox.md). The code appends an ascending index to the Country column in the **Employees** table, then displays the records. Then the code appends a descending index to the Country column in the **Employees** table and displays the records again. The difference between ascending and descending indexes is shown.</span></span>
+<span data-ttu-id="33f5c-p101">この例では、[Index](sortorder-property-adox.md) の [Columns](column-object-adox.md) コレクションに追加された [Column](columns-collection-adox.md) の [SortOrder](index-object-adox.md) プロパティの機能を示します。このコードは、 **Employees** テーブルの Country 列に昇順のインデックスを追加してレコードを表示します。次に、 **Employees** テーブルの Country 列に降順のインデックスを追加して、レコードを再表示します。これにより、昇順と降順のインデックスの違いを示します。</span><span class="sxs-lookup"><span data-stu-id="33f5c-p101">This example demonstrates the [SortOrder](sortorder-property-adox.md) property of a [Column](column-object-adox.md) that has been appended to the [Columns](columns-collection-adox.md) collection of an [Index](index-object-adox.md). The code appends an ascending index to the Country column in the **Employees** table, then displays the records. Then the code appends a descending index to the Country column in the **Employees** table and displays the records again. The difference between ascending and descending indexes is shown.</span></span>
 
 
 ```vb 

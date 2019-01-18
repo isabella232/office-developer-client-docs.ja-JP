@@ -6,16 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248907(v=office.15)
 ms:contentKeyID: 48543366
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fca73b9e8a77e102ad694dde8fd9759b20c1fcaf
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
+localization_priority: Normal
+ms.openlocfilehash: a2d3acf1b236e23522da0143d577bbcbeacbb4b7
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910839"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726212"
 ---
-# <a name="ado-md-objects"></a><span data-ttu-id="942c7-102">ADO MD オブジェクト</span><span class="sxs-lookup"><span data-stu-id="942c7-102">ADO MD objects</span></span>
+# <a name="ado-md-objects"></a><span data-ttu-id="40d6d-102">ADO MD のオブジェクト</span><span class="sxs-lookup"><span data-stu-id="40d6d-102">ADO MD objects</span></span>
 
-<span data-ttu-id="942c7-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="942c7-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="40d6d-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="40d6d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 <br/>
 
@@ -26,55 +27,55 @@ ms.locfileid: "25910839"
 </colgroup>
 <tbody>
 <tr class="even">
-<th><span data-ttu-id="942c7-104">オブジェクト</span><span class="sxs-lookup"><span data-stu-id="942c7-104">Object</span></span></th>
-<th><span data-ttu-id="942c7-105">説明</span><span class="sxs-lookup"><span data-stu-id="942c7-105">Description</span></span></th>
+<th><span data-ttu-id="40d6d-104">オブジェクト</span><span class="sxs-lookup"><span data-stu-id="40d6d-104">Object</span></span></th>
+<th><span data-ttu-id="40d6d-105">説明</span><span class="sxs-lookup"><span data-stu-id="40d6d-105">Description</span></span></th>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="942c7-106"><a href="axis-object-ado-md.md">軸</a></span><span class="sxs-lookup"><span data-stu-id="942c7-106"><a href="axis-object-ado-md.md">Axis</a></span></span></p></td>
-<td><p><span data-ttu-id="942c7-107">1 つ以上の次元の選択されたメンバーを含む、セルセットの位置またはフィルターの軸を表します。</span><span class="sxs-lookup"><span data-stu-id="942c7-107">Represents a positional or filter axis of a cellset, containing selected members of one or more dimensions.</span></span></p></td>
+<td><p><span data-ttu-id="40d6d-106"><a href="axis-object-ado-md.md">Axis</a></span><span class="sxs-lookup"><span data-stu-id="40d6d-106"><a href="axis-object-ado-md.md">Axis</a></span></span></p></td>
+<td><p><span data-ttu-id="40d6d-107">1 つ以上の次元の選択されたメンバーを含む、セルセットの位置またはフィルターの軸を表します。</span><span class="sxs-lookup"><span data-stu-id="40d6d-107">Represents a positional or filter axis of a cellset, containing selected members of one or more dimensions.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="942c7-108"><a href="catalog-object-ado-md.md">カタログ</a></span><span class="sxs-lookup"><span data-stu-id="942c7-108"><a href="catalog-object-ado-md.md">Catalog</a></span></span></p></td>
-<td><p><span data-ttu-id="942c7-109">多次元データ プロバイダー (MDP) に固有の多次元スキーマ情報 (つまり、キューブおよび基になる次元、階層、レベル、およびメンバー) が含まれます。</span><span class="sxs-lookup"><span data-stu-id="942c7-109">Contains multidimensional schema information (that is, cubes and underlying dimensions, hierarchies, levels, and members) specific to a multidimensional data provider (MDP).</span></span></p></td>
+<td><p><span data-ttu-id="40d6d-108"><a href="catalog-object-ado-md.md">Catalog</a></span><span class="sxs-lookup"><span data-stu-id="40d6d-108"><a href="catalog-object-ado-md.md">Catalog</a></span></span></p></td>
+<td><p><span data-ttu-id="40d6d-109">多次元データ プロバイダー (MDP) に固有の多次元スキーマ情報 (つまり、キューブおよび基になる次元、階層、レベル、およびメンバー) が含まれます。</span><span class="sxs-lookup"><span data-stu-id="40d6d-109">Contains multidimensional schema information (that is, cubes and underlying dimensions, hierarchies, levels, and members) specific to a multidimensional data provider (MDP).</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="942c7-110"><a href="cell-object-ado-md.md">Cell</a></span><span class="sxs-lookup"><span data-stu-id="942c7-110"><a href="cell-object-ado-md.md">Cell</a></span></span></p></td>
-<td><p><span data-ttu-id="942c7-111">セルセットに含まれる、座標軸の交点のデータを表します。</span><span class="sxs-lookup"><span data-stu-id="942c7-111">Represents the data at the intersection of axis coordinates, contained in a cellset.</span></span></p></td>
+<td><p><span data-ttu-id="40d6d-110"><a href="cell-object-ado-md.md">Cell</a></span><span class="sxs-lookup"><span data-stu-id="40d6d-110"><a href="cell-object-ado-md.md">Cell</a></span></span></p></td>
+<td><p><span data-ttu-id="40d6d-111">セルセットに含まれる、座標軸の交点のデータを表します。</span><span class="sxs-lookup"><span data-stu-id="40d6d-111">Represents the data at the intersection of axis coordinates, contained in a cellset.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="942c7-112"><a href="cellset-object-ado-md.md">セルセット</a></span><span class="sxs-lookup"><span data-stu-id="942c7-112"><a href="cellset-object-ado-md.md">Cellset</a></span></span></p></td>
-<td><p><span data-ttu-id="942c7-p101">多次元クエリの結果を表します。キューブまたは他のセルセットから選択されたセルのコレクションになります。</span><span class="sxs-lookup"><span data-stu-id="942c7-p101">Represents the results of a multidimensional query. It is a collection of cells selected from cubes or other cellsets.</span></span></p></td>
+<td><p><span data-ttu-id="40d6d-112"><a href="cellset-object-ado-md.md">Cellset</a></span><span class="sxs-lookup"><span data-stu-id="40d6d-112"><a href="cellset-object-ado-md.md">Cellset</a></span></span></p></td>
+<td><p><span data-ttu-id="40d6d-p101">多次元クエリの結果を表します。キューブまたは他のセルセットから選択されたセルのコレクションになります。</span><span class="sxs-lookup"><span data-stu-id="40d6d-p101">Represents the results of a multidimensional query. It is a collection of cells selected from cubes or other cellsets.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="942c7-115"><a href="cubedef-object-ado-md.md">CubeDef</a></span><span class="sxs-lookup"><span data-stu-id="942c7-115"><a href="cubedef-object-ado-md.md">CubeDef</a></span></span></p></td>
-<td><p><span data-ttu-id="942c7-116">関連する次元のセットを含む、多次元スキーマからのキューブを表します。</span><span class="sxs-lookup"><span data-stu-id="942c7-116">Represents a cube from a multidimensional schema, containing a set of related dimensions.</span></span></p></td>
+<td><p><span data-ttu-id="40d6d-115"><a href="cubedef-object-ado-md.md">CubeDef</a></span><span class="sxs-lookup"><span data-stu-id="40d6d-115"><a href="cubedef-object-ado-md.md">CubeDef</a></span></span></p></td>
+<td><p><span data-ttu-id="40d6d-116">関連する次元のセットを含む、多次元スキーマからのキューブを表します。</span><span class="sxs-lookup"><span data-stu-id="40d6d-116">Represents a cube from a multidimensional schema, containing a set of related dimensions.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="942c7-117"><a href="dimension-object-ado-md.md">ディメンション</a></span><span class="sxs-lookup"><span data-stu-id="942c7-117"><a href="dimension-object-ado-md.md">Dimension</a></span></span></p></td>
-<td><p><span data-ttu-id="942c7-118">1 つ以上のメンバーの階層を含む、多次元キューブの次元の 1 つを表します。</span><span class="sxs-lookup"><span data-stu-id="942c7-118">Represents one of the dimensions of a multidimensional cube, containing one or more hierarchies of members.</span></span></p></td>
+<td><p><span data-ttu-id="40d6d-117"><a href="dimension-object-ado-md.md">Dimension</a></span><span class="sxs-lookup"><span data-stu-id="40d6d-117"><a href="dimension-object-ado-md.md">Dimension</a></span></span></p></td>
+<td><p><span data-ttu-id="40d6d-118">1 つ以上のメンバーの階層を含む、多次元キューブの次元の 1 つを表します。</span><span class="sxs-lookup"><span data-stu-id="40d6d-118">Represents one of the dimensions of a multidimensional cube, containing one or more hierarchies of members.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="942c7-119"><a href="hierarchy-object-ado-md.md">階層</a></span><span class="sxs-lookup"><span data-stu-id="942c7-119"><a href="hierarchy-object-ado-md.md">Hierarchy</a></span></span></p></td>
-<td><p><span data-ttu-id="942c7-120">いずれかのように、ディメンションのメンバーを集約することを表すまたは&quot;ロール アップします。&quot;ディメンションは 1 つまたは複数の階層ごとに集約できます。</span><span class="sxs-lookup"><span data-stu-id="942c7-120">Represents one way in which the members of a dimension can be aggregated or &quot;rolled up.&quot; A dimension can be aggregated along one or more hierarchies.</span></span></p></td>
+<td><p><span data-ttu-id="40d6d-119"><a href="hierarchy-object-ado-md.md">Hierarchy</a></span><span class="sxs-lookup"><span data-stu-id="40d6d-119"><a href="hierarchy-object-ado-md.md">Hierarchy</a></span></span></p></td>
+<td><p><span data-ttu-id="40d6d-120">いずれかのように、ディメンションのメンバーを集約することを表すまたは&quot;ロール アップします。&quot;ディメンションは 1 つまたは複数の階層ごとに集約できます。</span><span class="sxs-lookup"><span data-stu-id="40d6d-120">Represents one way in which the members of a dimension can be aggregated or &quot;rolled up.&quot; A dimension can be aggregated along one or more hierarchies.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="942c7-121"><a href="level-object-ado-md.md">Level</a></span><span class="sxs-lookup"><span data-stu-id="942c7-121"><a href="level-object-ado-md.md">Level</a></span></span></p></td>
-<td><p><span data-ttu-id="942c7-122">階層内で同じランクを持つメンバーのセットが含まれます。</span><span class="sxs-lookup"><span data-stu-id="942c7-122">Contains a set of members, each of which has the same rank within a hierarchy.</span></span></p></td>
+<td><p><span data-ttu-id="40d6d-121"><a href="level-object-ado-md.md">Level</a></span><span class="sxs-lookup"><span data-stu-id="40d6d-121"><a href="level-object-ado-md.md">Level</a></span></span></p></td>
+<td><p><span data-ttu-id="40d6d-122">階層内で同じランクを持つメンバーのセットが含まれます。</span><span class="sxs-lookup"><span data-stu-id="40d6d-122">Contains a set of members, each of which has the same rank within a hierarchy.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="942c7-123"><a href="member-object-ado-md.md">メンバー</a></span><span class="sxs-lookup"><span data-stu-id="942c7-123"><a href="member-object-ado-md.md">Member</a></span></span></p></td>
-<td><p><span data-ttu-id="942c7-124">キューブ内のレベルのメンバー、レベルのメンバーの子、またはセルセットの軸に沿ったメンバーの位置を表します。</span><span class="sxs-lookup"><span data-stu-id="942c7-124">Represents a member of a level in a cube, the children of a member of a level, or a member of a position along an axis of a cellset.</span></span></p></td>
+<td><p><span data-ttu-id="40d6d-123"><a href="member-object-ado-md.md">メンバー</a></span><span class="sxs-lookup"><span data-stu-id="40d6d-123"><a href="member-object-ado-md.md">Member</a></span></span></p></td>
+<td><p><span data-ttu-id="40d6d-124">キューブ内のレベルのメンバー、レベルのメンバーの子、またはセルセットの軸に沿ったメンバーの位置を表します。</span><span class="sxs-lookup"><span data-stu-id="40d6d-124">Represents a member of a level in a cube, the children of a member of a level, or a member of a position along an axis of a cellset.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="942c7-125"><a href="position-object-ado-md.md">Position</a></span><span class="sxs-lookup"><span data-stu-id="942c7-125"><a href="position-object-ado-md.md">Position</a></span></span></p></td>
-<td><p><span data-ttu-id="942c7-126">軸に沿った位置を定義する、異なる次元の 1 つ以上のメンバーのセットを表します。</span><span class="sxs-lookup"><span data-stu-id="942c7-126">Represents a set of one or more members of different dimensions that defines a point along an axis.</span></span></p></td>
+<td><p><span data-ttu-id="40d6d-125"><a href="position-object-ado-md.md">Position</a></span><span class="sxs-lookup"><span data-stu-id="40d6d-125"><a href="position-object-ado-md.md">Position</a></span></span></p></td>
+<td><p><span data-ttu-id="40d6d-126">軸に沿った位置を定義する、異なる次元の 1 つ以上のメンバーのセットを表します。</span><span class="sxs-lookup"><span data-stu-id="40d6d-126">Represents a set of one or more members of different dimensions that defines a point along an axis.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 <br/>
 
-<span data-ttu-id="942c7-127">また、 **Catalog** オブジェクトは、標準の ADO ライブラリに含まれる ADO **Connection** オブジェクトに接続されます。</span><span class="sxs-lookup"><span data-stu-id="942c7-127">Also, the **Catalog** object is connected to an ADO **Connection** object, which is included with the standard ADO library:</span></span>
+<span data-ttu-id="40d6d-127">また、 **Catalog** オブジェクトは、標準の ADO ライブラリに含まれる ADO **Connection** オブジェクトに接続されます。</span><span class="sxs-lookup"><span data-stu-id="40d6d-127">Also, the **Catalog** object is connected to an ADO **Connection** object, which is included with the standard ADO library:</span></span>
 
 <br/>
 
@@ -85,19 +86,19 @@ ms.locfileid: "25910839"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="942c7-128">オブジェクト</span><span class="sxs-lookup"><span data-stu-id="942c7-128">Object</span></span></p></th>
-<th><p><span data-ttu-id="942c7-129">説明</span><span class="sxs-lookup"><span data-stu-id="942c7-129">Description</span></span></p></th>
+<th><p><span data-ttu-id="40d6d-128">オブジェクト</span><span class="sxs-lookup"><span data-stu-id="40d6d-128">Object</span></span></p></th>
+<th><p><span data-ttu-id="40d6d-129">説明</span><span class="sxs-lookup"><span data-stu-id="40d6d-129">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="942c7-130"><a href="connection-object-ado.md">Connection</a></span><span class="sxs-lookup"><span data-stu-id="942c7-130"><a href="connection-object-ado.md">Connection</a></span></span></p></td>
-<td><p><span data-ttu-id="942c7-131">データ ソースに対して開かれている接続を表します。</span><span class="sxs-lookup"><span data-stu-id="942c7-131">Represents an open connection to a data source.</span></span></p></td>
+<td><p><span data-ttu-id="40d6d-130"><a href="connection-object-ado.md">Connection</a></span><span class="sxs-lookup"><span data-stu-id="40d6d-130"><a href="connection-object-ado.md">Connection</a></span></span></p></td>
+<td><p><span data-ttu-id="40d6d-131">データ ソースに対して開かれている接続を表します。</span><span class="sxs-lookup"><span data-stu-id="40d6d-131">Represents an open connection to a data source.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 <br/>
 
-<span data-ttu-id="942c7-p102">ADO MD オブジェクトの多くは、対応するコレクションに格納できます。たとえば、[CubeDef](cubedef-object-ado-md.md) オブジェクトは [Catalog](cubedefs-collection-ado-md.md) オブジェクトの **CubeDefs** コレクションに格納できます。詳細については、「 [ADO MD コレクション](ado-md-collections.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="942c7-p102">Many ADO MD objects can be contained in a corresponding collection. For example, a [CubeDef](cubedef-object-ado-md.md) object can be contained in a [CubeDefs](cubedefs-collection-ado-md.md) collection of a **Catalog**. For more information, see [ADO MD Collections](ado-md-collections.md).</span></span>
+<span data-ttu-id="40d6d-p102">ADO MD オブジェクトの多くは、対応するコレクションに格納できます。たとえば、[CubeDef](cubedef-object-ado-md.md) オブジェクトは [Catalog](cubedefs-collection-ado-md.md) オブジェクトの **CubeDefs** コレクションに格納できます。詳細については、「 [ADO MD コレクション](ado-md-collections.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="40d6d-p102">Many ADO MD objects can be contained in a corresponding collection. For example, a [CubeDef](cubedef-object-ado-md.md) object can be contained in a [CubeDefs](cubedefs-collection-ado-md.md) collection of a **Catalog**. For more information, see [ADO MD Collections](ado-md-collections.md).</span></span>
 

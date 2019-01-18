@@ -6,17 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249929(v=office.15)
 ms:contentKeyID: 48547480
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b2a8a839edaa3da4f2efed747b3e86cae113ee21
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+localization_priority: Normal
+ms.openlocfilehash: 23da290e3d0e6b38ab28f3fda396d9f7c17d93c0
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946112"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726296"
 ---
-# <a name="fields-collection-ado-reference"></a><span data-ttu-id="fe862-102">フィールドのコレクション (ADO) の参照</span><span class="sxs-lookup"><span data-stu-id="fe862-102">Fields collection (ADO) reference</span></span>
+# <a name="fields-collection-ado-reference"></a><span data-ttu-id="c66b6-102">フィールドのコレクション (ADO) の参照</span><span class="sxs-lookup"><span data-stu-id="c66b6-102">Fields collection (ADO) reference</span></span>
 
-<span data-ttu-id="fe862-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="fe862-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="c66b6-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c66b6-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="fe862-104">Fields コレクション (ADO)</span><span class="sxs-lookup"><span data-stu-id="fe862-104">Fields collection (ADO)</span></span>](fields-collection-ado.md)
-- [<span data-ttu-id="fe862-105">Fields コレクションのプロパティ、メソッド、およびイベント</span><span class="sxs-lookup"><span data-stu-id="fe862-105">Fields collection properties, methods, and events</span></span>](fields-collection-properties-methods-and-events.md)
+- [<span data-ttu-id="c66b6-104">Fields コレクション (ADO)</span><span class="sxs-lookup"><span data-stu-id="c66b6-104">Fields collection (ADO)</span></span>](fields-collection-ado.md)
+- [<span data-ttu-id="c66b6-105">Fields コレクションのプロパティ、メソッド、およびイベント</span><span class="sxs-lookup"><span data-stu-id="c66b6-105">Fields collection properties, methods, and events</span></span>](fields-collection-properties-methods-and-events.md)
 

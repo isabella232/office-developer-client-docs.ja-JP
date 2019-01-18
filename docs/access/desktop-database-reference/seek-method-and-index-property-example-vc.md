@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250270(v=office.15)
 ms:contentKeyID: 48548820
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 79cb9c7bd51f7d4f3b57eeb3097cae60dcf4f012
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+localization_priority: Normal
+ms.openlocfilehash: 5a9498a24b858de013aa717e9ce54963a81ab137
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944012"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726457"
 ---
-# <a name="seek-method-and-index-property-example-vc"></a><span data-ttu-id="0fa53-102">Seek メソッドと Index プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="0fa53-102">Seek method and Index property example (VC++)</span></span>
+# <a name="seek-method-and-index-property-example-vc"></a><span data-ttu-id="f40db-102">Seek メソッドと Index プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="f40db-102">Seek method and Index property example (VC++)</span></span>
 
 
-<span data-ttu-id="0fa53-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="0fa53-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="f40db-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f40db-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="0fa53-104">この例では、[Recordset](recordset-object-ado.md) オブジェクトの [Seek](seek-method-ado.md) メソッドと [Index](index-property-ado.md) プロパティを、指定された ***Employee ID*** と組み合わせて使用し、Nwind.mdb データベースの ***Employees*** テーブルで社員の名前を検索します。</span><span class="sxs-lookup"><span data-stu-id="0fa53-104">This example uses the [Recordset](recordset-object-ado.md) object's [Seek](seek-method-ado.md) method and [Index](index-property-ado.md) property in conjunction with a given ***Employee ID***, to locate the employee's name in the ***Employees*** table of the Nwind.mdb database.</span></span>
+<span data-ttu-id="f40db-104">この例では、[Recordset](recordset-object-ado.md) オブジェクトの [Seek](seek-method-ado.md) メソッドと [Index](index-property-ado.md) プロパティを、指定された ***Employee ID*** と組み合わせて使用し、Nwind.mdb データベースの ***Employees*** テーブルで社員の名前を検索します。</span><span class="sxs-lookup"><span data-stu-id="f40db-104">This example uses the [Recordset](recordset-object-ado.md) object's [Seek](seek-method-ado.md) method and [Index](index-property-ado.md) property in conjunction with a given ***Employee ID***, to locate the employee's name in the ***Employees*** table of the Nwind.mdb database.</span></span>
 
 ```cpp 
  
@@ -242,7 +243,7 @@ void PrintComError(_com_error &e)
 // EndSeekCpp 
 ```
 
-<span data-ttu-id="0fa53-105">**SeekX.h**</span><span class="sxs-lookup"><span data-stu-id="0fa53-105">**SeekX.h**</span></span>
+<span data-ttu-id="f40db-105">**SeekX.h**</span><span class="sxs-lookup"><span data-stu-id="f40db-105">**SeekX.h**</span></span>
 
 ```cpp 
  

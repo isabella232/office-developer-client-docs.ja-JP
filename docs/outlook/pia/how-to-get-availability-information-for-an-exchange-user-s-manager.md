@@ -6,22 +6,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Bb646996(v=office.15)
 ms:contentKeyID: 55119849
 ms.date: 07/24/2014
 mtps_version: v=office.15
-ms.openlocfilehash: 927389609e7a16a538cb480cc24891873ec1650c
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+localization_priority: Normal
+ms.openlocfilehash: df3779a3b92368af75d152e662eedec1a30a97bd
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25405897"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28717252"
 ---
-# <a name="get-availability-information-for-an-exchange-users-manager"></a><span data-ttu-id="a331f-102">Exchange ユーザーの上司の空き時間情報を取得する</span><span class="sxs-lookup"><span data-stu-id="a331f-102">Get availability information for an Exchange user's manager</span></span>
+# <a name="get-availability-information-for-an-exchange-users-manager"></a><span data-ttu-id="e7d91-102">Exchange ユーザーの上司の空き時間情報を取得する</span><span class="sxs-lookup"><span data-stu-id="e7d91-102">Get availability information for an Exchange user's manager</span></span>
 
-<span data-ttu-id="a331f-103">この例では、ユーザーの上司の予定表で次に空いている 60 分時間枠を表示します。</span><span class="sxs-lookup"><span data-stu-id="a331f-103">This example displays the next free 60-minute time slot in the calendar for a user's manager.</span></span>
+<span data-ttu-id="e7d91-103">この例では、ユーザーの上司の予定表で次に空いている 60 分時間枠を表示します。</span><span class="sxs-lookup"><span data-stu-id="e7d91-103">This example displays the next free 60-minute time slot in the calendar for a user's manager.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a331f-104">例</span><span class="sxs-lookup"><span data-stu-id="a331f-104">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e7d91-104">例</span><span class="sxs-lookup"><span data-stu-id="e7d91-104">Example</span></span>
 
-<span data-ttu-id="a331f-105">次のコード サンプルでは、現在のユーザーが Exchange ユーザーかどうかを調べます。</span><span class="sxs-lookup"><span data-stu-id="a331f-105">This code sample checks whether the current user is an Exchange user.</span></span> <span data-ttu-id="a331f-106">Exchange ユーザーであり、現在のユーザーに上司がいる場合は、[AddressEntry](https://msdn.microsoft.com/library/bb611808\(v=office.15\)) オブジェクトの [GetExchangeUser](https://msdn.microsoft.com/library/bb609728\(v=office.15\)) メソッドおよび [ExchangeUser](https://msdn.microsoft.com/library/bb646656\(v=office.15\)) オブジェクトの [GetExchangeUserManager](https://msdn.microsoft.com/library/bb609574\(v=office.15\)) メソッドを呼び出して、上司の情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="a331f-106">If so, and if the current user has a manager, it obtains the manager's information by calling the [GetExchangeUser](https://msdn.microsoft.com/library/bb611808\(v=office.15\)) method of the [AddressEntry](https://msdn.microsoft.com/library/bb609728\(v=office.15\)) object and the [GetExchangeUserManager](https://msdn.microsoft.com/library/bb646656\(v=office.15\)) method of the [ExchangeUser](https://msdn.microsoft.com/library/bb609574\(v=office.15\)) object.</span></span> <span data-ttu-id="a331f-107">上司の情報は **ExchangeUser** オブジェクトに格納されています。これには上司の空き時間スケジュールが含まれます。</span><span class="sxs-lookup"><span data-stu-id="a331f-107">The manager's information is contained in an **ExchangeUser** object that includes the manager's free/busy schedule.</span></span>
+<span data-ttu-id="e7d91-105">次のコード サンプルでは、現在のユーザーが Exchange ユーザーかどうかを調べます。</span><span class="sxs-lookup"><span data-stu-id="e7d91-105">This code sample checks whether the current user is an Exchange user.</span></span> <span data-ttu-id="e7d91-106">Exchange ユーザーであり、現在のユーザーに上司がいる場合は、[AddressEntry](https://msdn.microsoft.com/library/bb611808\(v=office.15\)) オブジェクトの [GetExchangeUser](https://msdn.microsoft.com/library/bb609728\(v=office.15\)) メソッドおよび [ExchangeUser](https://msdn.microsoft.com/library/bb646656\(v=office.15\)) オブジェクトの [GetExchangeUserManager](https://msdn.microsoft.com/library/bb609574\(v=office.15\)) メソッドを呼び出して、上司の情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="e7d91-106">If so, and if the current user has a manager, it obtains the manager's information by calling the [GetExchangeUser](https://msdn.microsoft.com/library/bb611808\(v=office.15\)) method of the [AddressEntry](https://msdn.microsoft.com/library/bb609728\(v=office.15\)) object and the [GetExchangeUserManager](https://msdn.microsoft.com/library/bb646656\(v=office.15\)) method of the [ExchangeUser](https://msdn.microsoft.com/library/bb609574\(v=office.15\)) object.</span></span> <span data-ttu-id="e7d91-107">上司の情報は **ExchangeUser** オブジェクトに格納されています。これには上司の空き時間スケジュールが含まれます。</span><span class="sxs-lookup"><span data-stu-id="e7d91-107">The manager's information is contained in an **ExchangeUser** object that includes the manager's Free/Busy schedule.</span></span>
 
-<span data-ttu-id="a331f-108">Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。</span><span class="sxs-lookup"><span data-stu-id="a331f-108">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the   variable when you import the Microsoft.Office.Interop.Outlook namespace.</span></span> <span data-ttu-id="a331f-109">**Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a331f-109">The Imports or using statement must not occur directly before the functions in the code example but must be added before the public   declaration.</span></span> <span data-ttu-id="a331f-110">次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="a331f-110">The following lines of code show how to do the import and assignment in Visual Basic and C#.</span></span>
+<span data-ttu-id="e7d91-108">Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。</span><span class="sxs-lookup"><span data-stu-id="e7d91-108">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the Outlook variable when you import the **Microsoft.Office.Interop.Outlook** namespace.</span></span> <span data-ttu-id="e7d91-109">**Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e7d91-109">The **Imports** or **using** statement must not occur directly before the functions in the code example but must be added before the public Class declaration.</span></span> <span data-ttu-id="e7d91-110">次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="e7d91-110">The following lines of code show how to do the import and assignment in Visual Basic and C\#.</span></span>
 
 ```vb
 Imports Outlook = Microsoft.Office.Interop.Outlook
@@ -121,7 +122,7 @@ private void GetManagerOpenInterval()
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="a331f-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="a331f-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e7d91-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="e7d91-111">See also</span></span>
 
-- [<span data-ttu-id="a331f-112">Exchange ユーザー</span><span class="sxs-lookup"><span data-stu-id="a331f-112">Exchange Users</span></span>](exchange-users.md)
+- [<span data-ttu-id="e7d91-112">Exchange ユーザー</span><span class="sxs-lookup"><span data-stu-id="e7d91-112">Exchange users</span></span>](exchange-users.md)
 

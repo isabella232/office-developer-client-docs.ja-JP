@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249367(v=office.15)
 ms:contentKeyID: 48545232
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f30a4193e915a9dfcb231216a77f6aba3427527e
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+localization_priority: Normal
+ms.openlocfilehash: 33f34a657f483a406c1e0c61707b6eeaa9cf2bee
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25885088"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726149"
 ---
-# <a name="find-method-example-vj"></a><span data-ttu-id="63064-102">Find メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="63064-102">Find method example (VJ++)</span></span>
+# <a name="find-method-example-vj"></a><span data-ttu-id="2be8e-102">Find メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="2be8e-102">Find method example (VJ++)</span></span>
 
 
-<span data-ttu-id="63064-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="63064-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="2be8e-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="2be8e-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="63064-104">この例では、[レコード セット](recordset-object-ado.md)オブジェクトの[Find](find-method-ado.md)メソッドを使用して、検索して、 ***Pubs***データベース内のビジネス書籍の数をカウントします。</span><span class="sxs-lookup"><span data-stu-id="63064-104">This example uses the [Recordset](recordset-object-ado.md) object's [Find](find-method-ado.md) method to locate and count the number of business titles in the ***Pubs*** database.</span></span> <span data-ttu-id="63064-105">基になるプロバイダーは同様の機能をサポートしていないものと仮定します。</span><span class="sxs-lookup"><span data-stu-id="63064-105">The example assumes the underlying provider does not support similar functionality.</span></span>
+<span data-ttu-id="2be8e-104">この例では、[レコード セット](recordset-object-ado.md)オブジェクトの[Find](find-method-ado.md)メソッドを使用して、検索して、 ***Pubs***データベース内のビジネス書籍の数をカウントします。</span><span class="sxs-lookup"><span data-stu-id="2be8e-104">This example uses the [Recordset](recordset-object-ado.md) object's [Find](find-method-ado.md) method to locate and count the number of business titles in the ***Pubs*** database.</span></span> <span data-ttu-id="2be8e-105">基になるプロバイダーは同様の機能をサポートしていないものと仮定します。</span><span class="sxs-lookup"><span data-stu-id="2be8e-105">The example assumes the underlying provider does not support similar functionality.</span></span>
 
 ```java 
  
