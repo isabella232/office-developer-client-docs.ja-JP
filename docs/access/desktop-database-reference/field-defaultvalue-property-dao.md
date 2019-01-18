@@ -6,37 +6,38 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197092(v=office.15)
 ms:contentKeyID: 48546185
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 38ce5fe4287b298ddf48e4c6c60556ace2d567cb
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 18fb4d3a4427db2b407b6a20507339fe83665c97
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928251"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28711736"
 ---
-# <a name="fielddefaultvalue-property-dao"></a><span data-ttu-id="d3b5e-102">Field.DefaultValue プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="d3b5e-102">Field.DefaultValue property (DAO)</span></span>
+# <a name="fielddefaultvalue-property-dao"></a><span data-ttu-id="c0c6c-102">Field.DefaultValue プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="c0c6c-102">Field.DefaultValue property (DAO)</span></span>
 
 
-<span data-ttu-id="d3b5e-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="d3b5e-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="c0c6c-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c0c6c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-<span data-ttu-id="d3b5e-p101">**[Field](field-object-dao.md)** オブジェクトの既定値を設定または取得します。 [**Fields**](fields-collection-dao.md) コレクションにまだ追加されていない **Field** オブジェクトの場合、このプロパティは値の取得および設定が可能です (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="d3b5e-p101">Sets or returns the default value of a **[Field](field-object-dao.md)** object. For a **Field** object not yet appended to the **[Fields](fields-collection-dao.md)** collection, this property is read/write (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="c0c6c-p101">**[Field](field-object-dao.md)** オブジェクトの既定値を設定または取得します。 [**Fields**](fields-collection-dao.md) コレクションにまだ追加されていない **Field** オブジェクトの場合、このプロパティは値の取得および設定が可能です (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="c0c6c-p101">Sets or returns the default value of a **[Field](field-object-dao.md)** object. For a **Field** object not yet appended to the **[Fields](fields-collection-dao.md)** collection, this property is read/write (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d3b5e-106">構文</span><span class="sxs-lookup"><span data-stu-id="d3b5e-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c0c6c-106">構文</span><span class="sxs-lookup"><span data-stu-id="c0c6c-106">Syntax</span></span>
 
-<span data-ttu-id="d3b5e-107">*式*です。既定値</span><span class="sxs-lookup"><span data-stu-id="d3b5e-107">*expression* .DefaultValue</span></span>
+<span data-ttu-id="c0c6c-107">*式*です。既定値</span><span class="sxs-lookup"><span data-stu-id="c0c6c-107">*expression* .DefaultValue</span></span>
 
-<span data-ttu-id="d3b5e-108">\*式\***Field**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="d3b5e-108">*expression* A variable that represents a **Field** object.</span></span>
+<span data-ttu-id="c0c6c-108">\*式\***Field**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="c0c6c-108">*expression* A variable that represents a **Field** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="d3b5e-109">注釈</span><span class="sxs-lookup"><span data-stu-id="d3b5e-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c0c6c-109">注釈</span><span class="sxs-lookup"><span data-stu-id="c0c6c-109">Remarks</span></span>
 
-<span data-ttu-id="d3b5e-p102">設定値または戻り値は、最大 255 文字の文字列データ型 ( **String**) です。文字列または式を指定できます。プロパティの設定値が式の場合、ユーザー定義関数、Microsoft Access データベース エンジン SQL の集計関数、またはクエリ、フォーム、その他の **Field** オブジェクトへの参照を含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="d3b5e-p102">The setting or return value is a **String** data type that can contain a maximum of 255 characters. It can be either text or an expression. If the property setting is an expression, it can't contain user-defined functions, Microsoft Access database engine SQL aggregate functions, or references to queries, forms, or other **Field** objects.</span></span>
+<span data-ttu-id="c0c6c-p102">設定値または戻り値は、最大 255 文字の文字列データ型 ( **String**) です。文字列または式を指定できます。プロパティの設定値が式の場合、ユーザー定義関数、Microsoft Access データベース エンジン SQL の集計関数、またはクエリ、フォーム、その他の **Field** オブジェクトへの参照を含めることはできません。</span><span class="sxs-lookup"><span data-stu-id="c0c6c-p102">The setting or return value is a **String** data type that can contain a maximum of 255 characters. It can be either text or an expression. If the property setting is an expression, it can't contain user-defined functions, Microsoft Access database engine SQL aggregate functions, or references to queries, forms, or other **Field** objects.</span></span>
 
 
 > [!NOTE]
-> <span data-ttu-id="d3b5e-p103">[!メモ] \*\*\*\*TableDef\*\*\*\* オブジェクトで [Field](tabledef-object-dao.md) オブジェクトの DefaultValue プロパティを "GenUniqueID( )" と呼ばれる特殊な値に設定することもできます。これにより、新規レコードを追加または作成すると、このフィールドに乱数が割り当てられ、各レコードに一意の識別子が設定されます。フィールドの [Type](field-type-property-dao.md) プロパティは長整数型 ( **Long**) である必要があります。</span><span class="sxs-lookup"><span data-stu-id="d3b5e-p103">You can also set the **DefaultValue** property of a **Field** object on a [TableDef](tabledef-object-dao.md) object to a special value called "GenUniqueID( )". This causes a random number to be assigned to this field whenever a new record is added or created, thereby giving each record a unique identifier. The field's [Type](field-type-property-dao.md) property must be **Long**.</span></span>
+> <span data-ttu-id="c0c6c-p103">[!メモ] \*\*\*\*TableDef\*\*\*\* オブジェクトで [Field](tabledef-object-dao.md) オブジェクトの DefaultValue プロパティを "GenUniqueID( )" と呼ばれる特殊な値に設定することもできます。これにより、新規レコードを追加または作成すると、このフィールドに乱数が割り当てられ、各レコードに一意の識別子が設定されます。フィールドの [Type](field-type-property-dao.md) プロパティは長整数型 ( **Long**) である必要があります。</span><span class="sxs-lookup"><span data-stu-id="c0c6c-p103">You can also set the **DefaultValue** property of a **Field** object on a [TableDef](tabledef-object-dao.md) object to a special value called "GenUniqueID( )". This causes a random number to be assigned to this field whenever a new record is added or created, thereby giving each record a unique identifier. The field's [Type](field-type-property-dao.md) property must be **Long**.</span></span>
 
 
-<span data-ttu-id="d3b5e-116">**DefaultValue** プロパティを使用できるかどうかは、次の表に示すように、 **Fields** コレクションを含むオブジェクトによって決まります。</span><span class="sxs-lookup"><span data-stu-id="d3b5e-116">The availability of the **DefaultValue** property depends on the object that contains the **Fields** collection, as shown in the following table.</span></span>
+<span data-ttu-id="c0c6c-116">**DefaultValue** プロパティを使用できるかどうかは、次の表に示すように、 **Fields** コレクションを含むオブジェクトによって決まります。</span><span class="sxs-lookup"><span data-stu-id="c0c6c-116">The availability of the **DefaultValue** property depends on the object that contains the **Fields** collection, as shown in the following table.</span></span>
 
 <table>
 <colgroup>
@@ -45,42 +46,42 @@ ms.locfileid: "25928251"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="d3b5e-117">Fields コレクションの所属先</span><span class="sxs-lookup"><span data-stu-id="d3b5e-117">If the Fields collection belongs to an</span></span></p></th>
-<th><p><span data-ttu-id="d3b5e-118">DefaultValue プロパティの使用</span><span class="sxs-lookup"><span data-stu-id="d3b5e-118">Then DefaultValue is</span></span></p></th>
+<th><p><span data-ttu-id="c0c6c-117">Fields コレクションの所属先</span><span class="sxs-lookup"><span data-stu-id="c0c6c-117">If the Fields collection belongs to an</span></span></p></th>
+<th><p><span data-ttu-id="c0c6c-118">DefaultValue プロパティの使用</span><span class="sxs-lookup"><span data-stu-id="c0c6c-118">Then DefaultValue is</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="d3b5e-119">Index オブジェクト</span><span class="sxs-lookup"><span data-stu-id="d3b5e-119">Index object</span></span></p></td>
-<td><p><span data-ttu-id="d3b5e-120">サポートしません。</span><span class="sxs-lookup"><span data-stu-id="d3b5e-120">Not supported</span></span></p></td>
+<td><p><span data-ttu-id="c0c6c-119">Index オブジェクト</span><span class="sxs-lookup"><span data-stu-id="c0c6c-119">Index object</span></span></p></td>
+<td><p><span data-ttu-id="c0c6c-120">サポートしません。</span><span class="sxs-lookup"><span data-stu-id="c0c6c-120">Not supported</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="d3b5e-121">QueryDef オブジェクト</span><span class="sxs-lookup"><span data-stu-id="d3b5e-121">QueryDef object</span></span></p></td>
-<td><p><span data-ttu-id="d3b5e-122">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="d3b5e-122">Read-only</span></span></p></td>
+<td><p><span data-ttu-id="c0c6c-121">QueryDef オブジェクト</span><span class="sxs-lookup"><span data-stu-id="c0c6c-121">QueryDef object</span></span></p></td>
+<td><p><span data-ttu-id="c0c6c-122">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="c0c6c-122">Read-only</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="d3b5e-123">Recordset オブジェクト</span><span class="sxs-lookup"><span data-stu-id="d3b5e-123">Recordset object</span></span></p></td>
-<td><p><span data-ttu-id="d3b5e-124">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="d3b5e-124">Read-only</span></span></p></td>
+<td><p><span data-ttu-id="c0c6c-123">Recordset オブジェクト</span><span class="sxs-lookup"><span data-stu-id="c0c6c-123">Recordset object</span></span></p></td>
+<td><p><span data-ttu-id="c0c6c-124">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="c0c6c-124">Read-only</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="d3b5e-125">Relation オブジェクト</span><span class="sxs-lookup"><span data-stu-id="d3b5e-125">Relation object</span></span></p></td>
-<td><p><span data-ttu-id="d3b5e-126">サポートしません。</span><span class="sxs-lookup"><span data-stu-id="d3b5e-126">Not supported</span></span></p></td>
+<td><p><span data-ttu-id="c0c6c-125">Relation オブジェクト</span><span class="sxs-lookup"><span data-stu-id="c0c6c-125">Relation object</span></span></p></td>
+<td><p><span data-ttu-id="c0c6c-126">サポートしません。</span><span class="sxs-lookup"><span data-stu-id="c0c6c-126">Not supported</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="d3b5e-127">TableDef オブジェクト</span><span class="sxs-lookup"><span data-stu-id="d3b5e-127">TableDef object</span></span></p></td>
-<td><p><span data-ttu-id="d3b5e-128">値の取得および設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="d3b5e-128">Read/write</span></span></p></td>
+<td><p><span data-ttu-id="c0c6c-127">TableDef オブジェクト</span><span class="sxs-lookup"><span data-stu-id="c0c6c-127">TableDef object</span></span></p></td>
+<td><p><span data-ttu-id="c0c6c-128">値の取得および設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="c0c6c-128">Read/write</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="d3b5e-p104">新しいレコードが作成されると、 **DefaultValue** プロパティの設定値は、フィールドの値として自動的に入力されます。 **[Value](field-value-property-dao.md)** プロパティを設定することにより、フィールド値を変更できます。</span><span class="sxs-lookup"><span data-stu-id="d3b5e-p104">When a new record is created, the **DefaultValue** property setting is automatically entered as the value for the field. You can change the field value by setting its **[Value](field-value-property-dao.md)** property.</span></span>
+<span data-ttu-id="c0c6c-p104">新しいレコードが作成されると、 **DefaultValue** プロパティの設定値は、フィールドの値として自動的に入力されます。 **[Value](field-value-property-dao.md)** プロパティを設定することにより、フィールド値を変更できます。</span><span class="sxs-lookup"><span data-stu-id="c0c6c-p104">When a new record is created, the **DefaultValue** property setting is automatically entered as the value for the field. You can change the field value by setting its **[Value](field-value-property-dao.md)** property.</span></span>
 
-<span data-ttu-id="d3b5e-131">**DefaultValue** プロパティは、オートナンバ型 ( **AutoNumber**) とロング バイナリ型 ( **Long Binary** ) のフィールドには適用されません。</span><span class="sxs-lookup"><span data-stu-id="d3b5e-131">The **DefaultValue** property doesn't apply to **AutoNumber** and **Long Binary** fields.</span></span>
+<span data-ttu-id="c0c6c-131">**DefaultValue** プロパティは、オートナンバ型 ( **AutoNumber**) とロング バイナリ型 ( **Long Binary** ) のフィールドには適用されません。</span><span class="sxs-lookup"><span data-stu-id="c0c6c-131">The **DefaultValue** property doesn't apply to **AutoNumber** and **Long Binary** fields.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d3b5e-132">例</span><span class="sxs-lookup"><span data-stu-id="d3b5e-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c0c6c-132">例</span><span class="sxs-lookup"><span data-stu-id="c0c6c-132">Example</span></span>
 
-<span data-ttu-id="d3b5e-p105">次の使用例は、 **DefaultValue** プロパティを使用して、ユーザーに入力を要求するときに、フィールドの通常の値を通知するために表示します。また、他に入力がない場合に、 **DefaultValue** が使用されて新しいレコードにデータが設定される方法を示します。このプロシージャを実行するには、DefaultPrompt 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="d3b5e-p105">This example uses the **DefaultValue** property to alert the user of a field's normal value while prompting for input. In addition, it demonstrates how new records will be filled using **DefaultValue** in the absence of any other input. The DefaultPrompt function is required for this procedure to run.</span></span>
+<span data-ttu-id="c0c6c-p105">次の使用例は、 **DefaultValue** プロパティを使用して、ユーザーに入力を要求するときに、フィールドの通常の値を通知するために表示します。また、他に入力がない場合に、 **DefaultValue** が使用されて新しいレコードにデータが設定される方法を示します。このプロシージャを実行するには、DefaultPrompt 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="c0c6c-p105">This example uses the **DefaultValue** property to alert the user of a field's normal value while prompting for input. In addition, it demonstrates how new records will be filled using **DefaultValue** in the absence of any other input. The DefaultPrompt function is required for this procedure to run.</span></span>
 
 ```vb
     Sub DefaultValueX() 

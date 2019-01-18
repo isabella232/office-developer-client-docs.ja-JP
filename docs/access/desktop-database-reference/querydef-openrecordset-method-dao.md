@@ -6,26 +6,27 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822070(v=office.15)
 ms:contentKeyID: 48547232
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b3948ba2bd8eb63176483a97942984823b9f45b0
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: a046359f39611e38b9e517495f54041f876addfc
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997148"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28710245"
 ---
-# <a name="querydefopenrecordset-method-dao"></a><span data-ttu-id="67e13-102">QueryDef.OpenRecordset メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="67e13-102">QueryDef.OpenRecordset method (DAO)</span></span>
+# <a name="querydefopenrecordset-method-dao"></a><span data-ttu-id="285a1-102">QueryDef.OpenRecordset メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="285a1-102">QueryDef.OpenRecordset method (DAO)</span></span>
 
-<span data-ttu-id="67e13-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="67e13-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="285a1-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="285a1-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="67e13-104">新しい **[Recordset](recordset-object-dao.md)** オブジェクトを作成して **Recordsets** コレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="67e13-104">Creates a new **[Recordset](recordset-object-dao.md)** object and appends it to the **Recordsets** collection.</span></span>
+<span data-ttu-id="285a1-104">新しい **[Recordset](recordset-object-dao.md)** オブジェクトを作成して **Recordsets** コレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="285a1-104">Creates a new **[Recordset](recordset-object-dao.md)** object and appends it to the **Recordsets** collection.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="67e13-105">構文</span><span class="sxs-lookup"><span data-stu-id="67e13-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="285a1-105">構文</span><span class="sxs-lookup"><span data-stu-id="285a1-105">Syntax</span></span>
 
-<span data-ttu-id="67e13-106">*式*です。何らか (***型***、***オプション***、 ***LockEdit***)</span><span class="sxs-lookup"><span data-stu-id="67e13-106">*expression* .OpenRecordset(***Type***, ***Options***, ***LockEdit***)</span></span>
+<span data-ttu-id="285a1-106">*式*です。何らか (***型***、***オプション***、 ***LockEdit***)</span><span class="sxs-lookup"><span data-stu-id="285a1-106">*expression* .OpenRecordset(***Type***, ***Options***, ***LockEdit***)</span></span>
 
-<span data-ttu-id="67e13-107">\*式\***クエリ定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="67e13-107">*expression* A variable that represents a **QueryDef** object.</span></span>
+<span data-ttu-id="285a1-107">\*式\***クエリ定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="285a1-107">*expression* A variable that represents a **QueryDef** object.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="67e13-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="67e13-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="285a1-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="285a1-108">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -36,51 +37,51 @@ ms.locfileid: "25997148"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="67e13-109">名前</span><span class="sxs-lookup"><span data-stu-id="67e13-109">Name</span></span></p></th>
-<th><p><span data-ttu-id="67e13-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="67e13-110">Required/optional</span></span></p></th>
-<th><p><span data-ttu-id="67e13-111">データ型</span><span class="sxs-lookup"><span data-stu-id="67e13-111">Data type</span></span></p></th>
-<th><p><span data-ttu-id="67e13-112">説明</span><span class="sxs-lookup"><span data-stu-id="67e13-112">Description</span></span></p></th>
+<th><p><span data-ttu-id="285a1-109">名前</span><span class="sxs-lookup"><span data-stu-id="285a1-109">Name</span></span></p></th>
+<th><p><span data-ttu-id="285a1-110">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="285a1-110">Required/optional</span></span></p></th>
+<th><p><span data-ttu-id="285a1-111">データ型</span><span class="sxs-lookup"><span data-stu-id="285a1-111">Data type</span></span></p></th>
+<th><p><span data-ttu-id="285a1-112">説明</span><span class="sxs-lookup"><span data-stu-id="285a1-112">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="67e13-113"><em>Type</em></span><span class="sxs-lookup"><span data-stu-id="67e13-113"><em>Type</em></span></span></p></td>
-<td><p><span data-ttu-id="67e13-114">省略可能</span><span class="sxs-lookup"><span data-stu-id="67e13-114">Optional</span></span></p></td>
-<td><p><span data-ttu-id="67e13-115"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="67e13-115"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="67e13-116">開く <a href="recordsettypeenum-enumeration-dao.md">Recordset</a> の型を示す <strong><strong>RecordsetTypeEnum</strong></strong> 定数。</span><span class="sxs-lookup"><span data-stu-id="67e13-116">A <strong><a href="recordsettypeenum-enumeration-dao.md">RecordsetTypeEnum</a></strong> constant that indicates the type of <strong>Recordset</strong> to open.</span></span></p><p><span data-ttu-id="67e13-117"><strong>注</strong>:<STRONG><STRONG>レコード セット</STRONG>を開くには、Microsoft Access ワークスペースで、種類を指定しない場合は、作成、テーブル タイプの<STRONG>レコード セット</STRONG>可能な場合</STRONG>です。</span><span class="sxs-lookup"><span data-stu-id="67e13-117"><strong>NOTE</strong>: If you open a <STRONG>Recordset</STRONG> in a Microsoft Access workspace and you don't specify a type, <STRONG>OpenRecordset</STRONG> creates a table-type <STRONG>Recordset</STRONG>, if possible.</span></span> <span data-ttu-id="67e13-118"><STRONG>リンク テーブルまたはクエリを指定する場合、ダイナセット タイプの<STRONG>レコード セット</STRONG>が作成します。</STRONG></span><span class="sxs-lookup"><span data-stu-id="67e13-118">If you specify a linked table or query, <STRONG>OpenRecordset</STRONG> creates a dynaset-type <STRONG>Recordset</STRONG>.</span></span></p>
+<td><p><span data-ttu-id="285a1-113"><em>型</em></span><span class="sxs-lookup"><span data-stu-id="285a1-113"><em>Type</em></span></span></p></td>
+<td><p><span data-ttu-id="285a1-114">省略可能</span><span class="sxs-lookup"><span data-stu-id="285a1-114">Optional</span></span></p></td>
+<td><p><span data-ttu-id="285a1-115"><strong>Variant</strong></span><span class="sxs-lookup"><span data-stu-id="285a1-115"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="285a1-116">開く <a href="recordsettypeenum-enumeration-dao.md">Recordset</a> の型を示す <strong><strong>RecordsetTypeEnum</strong></strong> 定数。</span><span class="sxs-lookup"><span data-stu-id="285a1-116">A <strong><a href="recordsettypeenum-enumeration-dao.md">RecordsetTypeEnum</a></strong> constant that indicates the type of <strong>Recordset</strong> to open.</span></span></p><p><span data-ttu-id="285a1-117"><strong>注</strong>:<STRONG><STRONG>レコード セット</STRONG>を開くには、Microsoft Access ワークスペースで、種類を指定しない場合は、作成、テーブル タイプの<STRONG>レコード セット</STRONG>可能な場合</STRONG>です。</span><span class="sxs-lookup"><span data-stu-id="285a1-117"><strong>NOTE</strong>: If you open a <STRONG>Recordset</STRONG> in a Microsoft Access workspace and you don't specify a type, <STRONG>OpenRecordset</STRONG> creates a table-type <STRONG>Recordset</STRONG>, if possible.</span></span> <span data-ttu-id="285a1-118"><STRONG>リンク テーブルまたはクエリを指定する場合、ダイナセット タイプの<STRONG>レコード セット</STRONG>が作成します。</STRONG></span><span class="sxs-lookup"><span data-stu-id="285a1-118">If you specify a linked table or query, <STRONG>OpenRecordset</STRONG> creates a dynaset-type <STRONG>Recordset</STRONG>.</span></span></p>
 </td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="67e13-119"><em>Options</em></span><span class="sxs-lookup"><span data-stu-id="67e13-119"><em>Options</em></span></span></p></td>
-<td><p><span data-ttu-id="67e13-120">省略可能</span><span class="sxs-lookup"><span data-stu-id="67e13-120">Optional</span></span></p></td>
-<td><p><span data-ttu-id="67e13-121"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="67e13-121"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="67e13-122">新しい <a href="recordsetoptionenum-enumeration-dao.md">Recordset</a> の特性を指定する <strong><strong>RecordsetOptionEnum</strong></strong> 定数の組み合わせ。</span><span class="sxs-lookup"><span data-stu-id="67e13-122">A combination of <strong><a href="recordsetoptionenum-enumeration-dao.md">RecordsetOptionEnum</a></strong> constants that specify characteristics of the new <strong>Recordset</strong>.</span></span></p></p><p><span data-ttu-id="67e13-123"><strong>注</strong>: 定数を<STRONG>指定できます</STRONG>し、<STRONG>組み合わせて</STRONG>が、相互に排他的で両方を使用して、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="67e13-123"><strong>NOTE</strong>: The constants <STRONG>dbConsistent</STRONG> and <STRONG>dbInconsistent</STRONG> are mutually exclusive, and using both causes an error.</span></span> <span data-ttu-id="67e13-124">Lockedits 引数を指定するオプションは、定数<STRONG>dbReadOnly</STRONG>を使用する場合と、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="67e13-124">Supplying a lockedits argument when options uses the <STRONG>dbReadOnly</STRONG> constant also causes an error.</span></span></p>
+<td><p><span data-ttu-id="285a1-119"><em>Options</em></span><span class="sxs-lookup"><span data-stu-id="285a1-119"><em>Options</em></span></span></p></td>
+<td><p><span data-ttu-id="285a1-120">省略可能</span><span class="sxs-lookup"><span data-stu-id="285a1-120">Optional</span></span></p></td>
+<td><p><span data-ttu-id="285a1-121"><strong>Variant</strong></span><span class="sxs-lookup"><span data-stu-id="285a1-121"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="285a1-122">新しい <a href="recordsetoptionenum-enumeration-dao.md">Recordset</a> の特性を指定する <strong><strong>RecordsetOptionEnum</strong></strong> 定数の組み合わせ。</span><span class="sxs-lookup"><span data-stu-id="285a1-122">A combination of <strong><a href="recordsetoptionenum-enumeration-dao.md">RecordsetOptionEnum</a></strong> constants that specify characteristics of the new <strong>Recordset</strong>.</span></span></p></p><p><span data-ttu-id="285a1-123"><strong>注</strong>: 定数を<STRONG>指定できます</STRONG>し、<STRONG>組み合わせて</STRONG>が、相互に排他的で両方を使用して、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="285a1-123"><strong>NOTE</strong>: The constants <STRONG>dbConsistent</STRONG> and <STRONG>dbInconsistent</STRONG> are mutually exclusive, and using both causes an error.</span></span> <span data-ttu-id="285a1-124">Lockedits 引数を指定するオプションは、定数<STRONG>dbReadOnly</STRONG>を使用する場合と、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="285a1-124">Supplying a lockedits argument when options uses the <STRONG>dbReadOnly</STRONG> constant also causes an error.</span></span></p>
 </td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="67e13-125"><em>LockEdit</em></span><span class="sxs-lookup"><span data-stu-id="67e13-125"><em>LockEdit</em></span></span></p></td>
-<td><p><span data-ttu-id="67e13-126">省略可能</span><span class="sxs-lookup"><span data-stu-id="67e13-126">Optional</span></span></p></td>
-<td><p><span data-ttu-id="67e13-127"><strong>バリアント型 (Variant)</strong></span><span class="sxs-lookup"><span data-stu-id="67e13-127"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="67e13-128"><a href="locktypeenum-enumeration-dao.md">Recordset</a> のロックを決定する <strong><strong>LockTypeEnum</strong></strong> 定数。</span><span class="sxs-lookup"><span data-stu-id="67e13-128">A <strong><a href="locktypeenum-enumeration-dao.md">LockTypeEnum</a></strong> constant that determines the locking for the <strong>Recordset</strong>.</span></span></p></p><p><span data-ttu-id="67e13-129"><strong>注</strong>: オプションの引数と、引数 lockedits の片方だけに<STRONG>dbReadOnly</STRONG>を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="67e13-129"><strong>NOTE</strong>: You can use <STRONG>dbReadOnly</STRONG> in either the options argument or the lockedits argument, but not both.</span></span> <span data-ttu-id="67e13-130">で両方の引数を使用する場合は、実行時エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="67e13-130">If you use it for both arguments, a run-time error occurs.</span></span></p>
+<td><p><span data-ttu-id="285a1-125"><em>LockEdit</em></span><span class="sxs-lookup"><span data-stu-id="285a1-125"><em>LockEdit</em></span></span></p></td>
+<td><p><span data-ttu-id="285a1-126">省略可能</span><span class="sxs-lookup"><span data-stu-id="285a1-126">Optional</span></span></p></td>
+<td><p><span data-ttu-id="285a1-127"><strong>Variant</strong></span><span class="sxs-lookup"><span data-stu-id="285a1-127"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="285a1-128"><a href="locktypeenum-enumeration-dao.md">Recordset</a> のロックを決定する <strong><strong>LockTypeEnum</strong></strong> 定数。</span><span class="sxs-lookup"><span data-stu-id="285a1-128">A <strong><a href="locktypeenum-enumeration-dao.md">LockTypeEnum</a></strong> constant that determines the locking for the <strong>Recordset</strong>.</span></span></p></p><p><span data-ttu-id="285a1-129"><strong>注</strong>: オプションの引数と、引数 lockedits の片方だけに<STRONG>dbReadOnly</STRONG>を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="285a1-129"><strong>NOTE</strong>: You can use <STRONG>dbReadOnly</STRONG> in either the options argument or the lockedits argument, but not both.</span></span> <span data-ttu-id="285a1-130">で両方の引数を使用する場合は、実行時エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="285a1-130">If you use it for both arguments, a run-time error occurs.</span></span></p>
 </td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="return-value"></a><span data-ttu-id="67e13-131">戻り値</span><span class="sxs-lookup"><span data-stu-id="67e13-131">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="285a1-131">戻り値</span><span class="sxs-lookup"><span data-stu-id="285a1-131">Return value</span></span>
 
-<span data-ttu-id="67e13-132">Recordset</span><span class="sxs-lookup"><span data-stu-id="67e13-132">Recordset</span></span>
+<span data-ttu-id="285a1-132">Recordset</span><span class="sxs-lookup"><span data-stu-id="285a1-132">Recordset</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="67e13-133">解説</span><span class="sxs-lookup"><span data-stu-id="67e13-133">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="285a1-133">解説</span><span class="sxs-lookup"><span data-stu-id="285a1-133">Remarks</span></span>
 
-<span data-ttu-id="67e13-134">IDENTITY 列を持つ Microsoft SQL Server 6.0 以降のテーブルに対して Microsoft Access データベース エンジンが接続された ODBC ワークスペースの [Recordset](recordsetoptionenum-enumeration-dao.md) を開く場合は、 \*\*\*\*dbSeeChanges\*\*\*\* 定数も使用する必要があり、使用しないとエラーが生じます。</span><span class="sxs-lookup"><span data-stu-id="67e13-134">You should also use the **[dbSeeChanges](recordsetoptionenum-enumeration-dao.md)** constant if you open a **Recordset** in a Microsoft Access database engine-connected ODBC workspace against a Microsoft SQL Server 6.0 (or later) table that has an IDENTITY column, otherwise an error may result.</span></span>
+<span data-ttu-id="285a1-134">IDENTITY 列を持つ Microsoft SQL Server 6.0 以降のテーブルに対して Microsoft Access データベース エンジンが接続された ODBC ワークスペースの [Recordset](recordsetoptionenum-enumeration-dao.md) を開く場合は、 \*\*\*\*dbSeeChanges\*\*\*\* 定数も使用する必要があり、使用しないとエラーが生じます。</span><span class="sxs-lookup"><span data-stu-id="285a1-134">You should also use the **[dbSeeChanges](recordsetoptionenum-enumeration-dao.md)** constant if you open a **Recordset** in a Microsoft Access database engine-connected ODBC workspace against a Microsoft SQL Server 6.0 (or later) table that has an IDENTITY column, otherwise an error may result.</span></span>
 
-<span data-ttu-id="67e13-p104">ODBC データ ソースで複数の **Recordset** を開こうとすると、 **OpenRecordset** に対する前の呼び出しで接続がビジー状態となるため、失敗する場合があります。これを回避する方法の 1 つは、 **Recordset** を開いた直後に、 **[MoveLast](recordset-movelast-method-dao.md)** メソッドを使用して **Recordset** の末尾までデータを読み込むことです。</span><span class="sxs-lookup"><span data-stu-id="67e13-p104">Opening more than one **Recordset** on an ODBC data source may fail because the connection is busy with a prior **OpenRecordset** call. One way around this is to fully populate the **Recordset** by using the **[MoveLast](recordset-movelast-method-dao.md)** method as soon as the **Recordset** is opened.</span></span>
+<span data-ttu-id="285a1-p104">ODBC データ ソースで複数の **Recordset** を開こうとすると、 **OpenRecordset** に対する前の呼び出しで接続がビジー状態となるため、失敗する場合があります。これを回避する方法の 1 つは、 **Recordset** を開いた直後に、 **[MoveLast](recordset-movelast-method-dao.md)** メソッドを使用して **Recordset** の末尾までデータを読み込むことです。</span><span class="sxs-lookup"><span data-stu-id="285a1-p104">Opening more than one **Recordset** on an ODBC data source may fail because the connection is busy with a prior **OpenRecordset** call. One way around this is to fully populate the **Recordset** by using the **[MoveLast](recordset-movelast-method-dao.md)** method as soon as the **Recordset** is opened.</span></span>
 
-<span data-ttu-id="67e13-137">**Close** メソッドを使用して **Recordset** を閉じると、そのレコードセットは自動的に **Recordsets** コレクションから削除されます。</span><span class="sxs-lookup"><span data-stu-id="67e13-137">Closing a **Recordset** with the **Close** method automatically deletes it from the **Recordsets** collection.</span></span>
+<span data-ttu-id="285a1-137">**Close** メソッドを使用して **Recordset** を閉じると、そのレコードセットは自動的に **Recordsets** コレクションから削除されます。</span><span class="sxs-lookup"><span data-stu-id="285a1-137">Closing a **Recordset** with the **Close** method automatically deletes it from the **Recordsets** collection.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="67e13-138">*ソース*を指す場合、整数以外の値に連結された文字列、SQL ステートメントで構成され、システム ・ パラメーターは、米国以外の小数点の記号、カンマなどを指定 (たとえば、strSQL ="価格&gt;" &amp; lngPrice でと lngPrice =125,50)、**レコード セット**を開こうとするとエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="67e13-138">If *source* refers to an SQL statement composed of a string concatenated with a non-integer value, and the system parameters specify a non-U.S. decimal character such as a comma (for example, strSQL = "PRICE &gt; " &amp; lngPrice, and lngPrice = 125,50), an error occurs when you try to open the **Recordset**.</span></span> <span data-ttu-id="67e13-139">連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、SQL で小数点の記号として使用できるのはピリオドのみになるからです。</span><span class="sxs-lookup"><span data-stu-id="67e13-139">This is because during concatenation, the number will be converted to a string using your system's default decimal character, and SQL only accepts U.S. decimal characters.</span></span>
+> <span data-ttu-id="285a1-138">*ソース*を指す場合、整数以外の値に連結された文字列、SQL ステートメントで構成され、システム ・ パラメーターは、米国以外の小数点の記号、カンマなどを指定 (たとえば、strSQL ="価格&gt;" &amp; lngPrice でと lngPrice =125,50)、**レコード セット**を開こうとするとエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="285a1-138">If *source* refers to an SQL statement composed of a string concatenated with a non-integer value, and the system parameters specify a non-U.S. decimal character such as a comma (for example, strSQL = "PRICE &gt; " &amp; lngPrice, and lngPrice = 125,50), an error occurs when you try to open the **Recordset**.</span></span> <span data-ttu-id="285a1-139">連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、SQL で小数点の記号として使用できるのはピリオドのみになるからです。</span><span class="sxs-lookup"><span data-stu-id="285a1-139">This is because during concatenation, the number will be converted to a string using your system's default decimal character, and SQL only accepts U.S. decimal characters.</span></span>
 
 

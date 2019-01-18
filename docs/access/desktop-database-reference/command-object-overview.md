@@ -1,39 +1,40 @@
 ---
-title: コマンド オブジェクトの概要
+title: Command オブジェクトの概要
 TOCTitle: Command object overview
 ms:assetid: 3d6d81c4-4cf0-0c13-adb3-0c2c5934dc21
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249166(v=office.15)
 ms:contentKeyID: 48544346
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 65ca58b7a2edc0397207cf7bbf6a001349ffc636
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: f2c7697d4ae8b830afb53eee10e7dd59a7dc8db4
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947393"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28712086"
 ---
-# <a name="command-object-overview"></a><span data-ttu-id="1fd4d-102">コマンド オブジェクトの概要</span><span class="sxs-lookup"><span data-stu-id="1fd4d-102">Command object overview</span></span>
+# <a name="command-object-overview"></a><span data-ttu-id="8820a-102">Command オブジェクトの概要</span><span class="sxs-lookup"><span data-stu-id="8820a-102">Command object overview</span></span>
 
-<span data-ttu-id="1fd4d-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="1fd4d-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="8820a-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="8820a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="1fd4d-104">**Command** オブジェクトのコレクション、メソッド、およびプロパティを使用すると、次の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="1fd4d-104">With the collections, methods, and properties of a **Command** object, you can do the following:</span></span>
+<span data-ttu-id="8820a-104">**Command** オブジェクトのコレクション、メソッド、およびプロパティを使用すると、次の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="8820a-104">With the collections, methods, and properties of a **Command** object, you can do the following:</span></span>
 
-  - <span data-ttu-id="1fd4d-105">**CommandText** プロパティを使用して、コマンドの実行可能なテキスト (SQL ステートメントやストアド プロシージャなど) を定義できます。</span><span class="sxs-lookup"><span data-stu-id="1fd4d-105">Define the executable text of the command (for example, a SQL statement or a stored procedure) by using the **CommandText** property.</span></span>
+  - <span data-ttu-id="8820a-105">**CommandText** プロパティを使用して、コマンドの実行可能なテキスト (SQL ステートメントやストアド プロシージャなど) を定義できます。</span><span class="sxs-lookup"><span data-stu-id="8820a-105">Define the executable text of the command (for example, a SQL statement or a stored procedure) by using the **CommandText** property.</span></span>
 
-  - <span data-ttu-id="1fd4d-106">**Parameter** オブジェクトと **Parameters** コレクションを使用して、パラメーター付きクエリやストアド プロシージャの引数を定義できます。</span><span class="sxs-lookup"><span data-stu-id="1fd4d-106">Define parameterized queries or stored procedure arguments by using **Parameter** objects and the **Parameters** collection.</span></span>
+  - <span data-ttu-id="8820a-106">**Parameter** オブジェクトと **Parameters** コレクションを使用して、パラメーター付きクエリやストアド プロシージャの引数を定義できます。</span><span class="sxs-lookup"><span data-stu-id="8820a-106">Define parameterized queries or stored procedure arguments by using **Parameter** objects and the **Parameters** collection.</span></span>
 
-  - <span data-ttu-id="1fd4d-107">**Execute** メソッドを使用して、コマンドを実行し、必要に応じて **Recordset** オブジェクトを返すことができます。</span><span class="sxs-lookup"><span data-stu-id="1fd4d-107">Execute a command and return a **Recordset** object, if appropriate, by using the **Execute** method.</span></span>
+  - <span data-ttu-id="8820a-107">**Execute** メソッドを使用して、コマンドを実行し、必要に応じて **Recordset** オブジェクトを返すことができます。</span><span class="sxs-lookup"><span data-stu-id="8820a-107">Execute a command and return a **Recordset** object, if appropriate, by using the **Execute** method.</span></span>
 
-  - <span data-ttu-id="1fd4d-108">**CommandType** プロパティを使用して、コマンドを実行する前にそのコマンドの種類を指定し、パフォーマンスを向上させることができます。</span><span class="sxs-lookup"><span data-stu-id="1fd4d-108">Specify the type of command by using the **CommandType** property prior to execution to optimize performance.</span></span>
+  - <span data-ttu-id="8820a-108">**CommandType** プロパティを使用して、コマンドを実行する前にそのコマンドの種類を指定し、パフォーマンスを向上させることができます。</span><span class="sxs-lookup"><span data-stu-id="8820a-108">Specify the type of command by using the **CommandType** property prior to execution to optimize performance.</span></span>
 
-  - <span data-ttu-id="1fd4d-109">**Prepared** プロパティを使用して、コマンドの実行前に、プロバイダーがそのコマンドの準備された (コンパイル済みの) バージョンを保存するかどうかを制御できます。</span><span class="sxs-lookup"><span data-stu-id="1fd4d-109">Control whether the provider saves a prepared (or compiled) version of the command prior to execution by using the **Prepared** property.</span></span>
+  - <span data-ttu-id="8820a-109">**Prepared** プロパティを使用して、コマンドの実行前に、プロバイダーがそのコマンドの準備された (コンパイル済みの) バージョンを保存するかどうかを制御できます。</span><span class="sxs-lookup"><span data-stu-id="8820a-109">Control whether the provider saves a prepared (or compiled) version of the command prior to execution by using the **Prepared** property.</span></span>
 
-  - <span data-ttu-id="1fd4d-110">**CommandTimeout** プロパティを使用して、コマンドの実行までプロバイダーが待機する時間を秒数で設定できます。</span><span class="sxs-lookup"><span data-stu-id="1fd4d-110">Set the number of seconds that a provider will wait for a command to execute by using the **CommandTimeout** property.</span></span>
+  - <span data-ttu-id="8820a-110">**CommandTimeout** プロパティを使用して、コマンドの実行までプロバイダーが待機する時間を秒数で設定できます。</span><span class="sxs-lookup"><span data-stu-id="8820a-110">Set the number of seconds that a provider will wait for a command to execute by using the **CommandTimeout** property.</span></span>
 
-  - <span data-ttu-id="1fd4d-111">**Command** オブジェクトの **ActiveConnection** プロパティを使用して、開いている接続をそのオブジェクトに関連付けることができます。</span><span class="sxs-lookup"><span data-stu-id="1fd4d-111">Associate an open connection with a **Command** object by setting its **ActiveConnection** property.</span></span>
+  - <span data-ttu-id="8820a-111">**Command** オブジェクトの **ActiveConnection** プロパティを使用して、開いている接続をそのオブジェクトに関連付けることができます。</span><span class="sxs-lookup"><span data-stu-id="8820a-111">Associate an open connection with a **Command** object by setting its **ActiveConnection** property.</span></span>
 
-  - <span data-ttu-id="1fd4d-112">**Name** プロパティを設定して、 **Command** オブジェクトを関連付けられている **Connection** オブジェクトのメソッドとして識別できます。</span><span class="sxs-lookup"><span data-stu-id="1fd4d-112">Set the **Name** property to identify the **Command** object as a method on the associated **Connection** object.</span></span>
+  - <span data-ttu-id="8820a-112">**Name** プロパティを設定して、 **Command** オブジェクトを関連付けられている **Connection** オブジェクトのメソッドとして識別できます。</span><span class="sxs-lookup"><span data-stu-id="8820a-112">Set the **Name** property to identify the **Command** object as a method on the associated **Connection** object.</span></span>
 
-  - <span data-ttu-id="1fd4d-113">**Command** オブジェクトを **Recordset** の **Source** プロパティに渡すことにより、データを取得できます。</span><span class="sxs-lookup"><span data-stu-id="1fd4d-113">Pass a **Command** object to the **Source** property of a **Recordset** in order to obtain data.</span></span>
+  - <span data-ttu-id="8820a-113">**Command** オブジェクトを **Recordset** の **Source** プロパティに渡すことにより、データを取得できます。</span><span class="sxs-lookup"><span data-stu-id="8820a-113">Pass a **Command** object to the **Source** property of a **Recordset** in order to obtain data.</span></span>
 

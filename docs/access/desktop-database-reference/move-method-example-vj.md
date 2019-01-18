@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249558(v=office.15)
 ms:contentKeyID: 48545956
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 778f942098d97d1e8e4c8e75f2511af06191ac30
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 029306002946e3743f19a868c3d809a0bd0a079a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25877248"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28710063"
 ---
-# <a name="move-method-example-vj"></a><span data-ttu-id="7e2bf-102">Move メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="7e2bf-102">Move method example (VJ++)</span></span>
+# <a name="move-method-example-vj"></a><span data-ttu-id="d4c74-102">Move メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="d4c74-102">Move method example (VJ++)</span></span>
 
 
-<span data-ttu-id="7e2bf-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="7e2bf-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="d4c74-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="d4c74-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="7e2bf-104">この例では、 [Move](move-method-ado.md) メソッドを使用して、ユーザーの入力に基づいてレコード ポインターを配置します。</span><span class="sxs-lookup"><span data-stu-id="7e2bf-104">This example uses the [Move](move-method-ado.md) method to position the record pointer based on user input.</span></span>
+<span data-ttu-id="d4c74-104">この例では、 [Move](move-method-ado.md) メソッドを使用して、ユーザーの入力に基づいてレコード ポインターを配置します。</span><span class="sxs-lookup"><span data-stu-id="d4c74-104">This example uses the [Move](move-method-ado.md) method to position the record pointer based on user input.</span></span>
 
 ```java 
  

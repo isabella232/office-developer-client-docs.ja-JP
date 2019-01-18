@@ -10,35 +10,36 @@ f1_keywords:
 - dao360.chm1053581
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 91b452eb70ecd93cf73650c68891fd00f2dfa267
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 7033c612642aa3ae6ce6c6175560438c893cde6d
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920040"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28711932"
 ---
-# <a name="connectiondatabase-property-dao"></a><span data-ttu-id="8069b-102">Connection.Database プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="8069b-102">Connection.Database property (DAO)</span></span>
+# <a name="connectiondatabase-property-dao"></a><span data-ttu-id="9b97a-102">Connection.Database プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="9b97a-102">Connection.Database property (DAO)</span></span>
 
 
-<span data-ttu-id="8069b-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="8069b-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="9b97a-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="9b97a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
 
-## <a name="syntax"></a><span data-ttu-id="8069b-104">構文</span><span class="sxs-lookup"><span data-stu-id="8069b-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="9b97a-104">構文</span><span class="sxs-lookup"><span data-stu-id="9b97a-104">Syntax</span></span>
 
-<span data-ttu-id="8069b-105">*式*です。データベース</span><span class="sxs-lookup"><span data-stu-id="8069b-105">*expression* .Database</span></span>
+<span data-ttu-id="9b97a-105">*式*です。データベース</span><span class="sxs-lookup"><span data-stu-id="9b97a-105">*expression* .Database</span></span>
 
-<span data-ttu-id="8069b-106">\*式\***接続**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="8069b-106">*expression* A variable that represents a **Connection** object.</span></span>
+<span data-ttu-id="9b97a-106">\*式\***接続**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="9b97a-106">*expression* A variable that represents a **Connection** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="8069b-107">注釈</span><span class="sxs-lookup"><span data-stu-id="8069b-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9b97a-107">注釈</span><span class="sxs-lookup"><span data-stu-id="9b97a-107">Remarks</span></span>
 
-<span data-ttu-id="8069b-p101">**[Connection](connection-object-dao.md)** オブジェクトで、 **Database** プロパティを使用して、 **Connection** オブジェクトに対応する **Database** オブジェクトへの参照を取得します。DAO では、 **Connection** オブジェクトとそれに対応する **Database** オブジェクトは、同じオブジェクトへの 2 つの異なるオブジェクト変数参照です。 **Connection** オブジェクトの **Database** プロパティと [Database](database-connection-property-dao.md) オブジェクトの \*\*\*\*Connection\*\*\*\* プロパティを利用すると、Microsoft Access データベース エンジンを介した ODBC データ ソースへの接続を変更して ODBCDirect を使用することが容易になります。</span><span class="sxs-lookup"><span data-stu-id="8069b-p101">On a **[Connection](connection-object-dao.md)** object, use the **Database** property to obtain a reference to a **Database** object that corresponds to the **Connection**. In DAO, a **Connection** object and its corresponding **Database** object are simply two different object variable references to the same object. The **Database** property of a **Connection** object and the **[Connection](database-connection-property-dao.md)** property of a **Database** object make it easier to change connections to an ODBC data source through the Microsoft Access database engine to use ODBCDirect.</span></span>
+<span data-ttu-id="9b97a-p101">**[Connection](connection-object-dao.md)** オブジェクトで、 **Database** プロパティを使用して、 **Connection** オブジェクトに対応する **Database** オブジェクトへの参照を取得します。DAO では、 **Connection** オブジェクトとそれに対応する **Database** オブジェクトは、同じオブジェクトへの 2 つの異なるオブジェクト変数参照です。 **Connection** オブジェクトの **Database** プロパティと [Database](database-connection-property-dao.md) オブジェクトの \*\*\*\*Connection\*\*\*\* プロパティを利用すると、Microsoft Access データベース エンジンを介した ODBC データ ソースへの接続を変更して ODBCDirect を使用することが容易になります。</span><span class="sxs-lookup"><span data-stu-id="9b97a-p101">On a **[Connection](connection-object-dao.md)** object, use the **Database** property to obtain a reference to a **Database** object that corresponds to the **Connection**. In DAO, a **Connection** object and its corresponding **Database** object are simply two different object variable references to the same object. The **Database** property of a **Connection** object and the **[Connection](database-connection-property-dao.md)** property of a **Database** object make it easier to change connections to an ODBC data source through the Microsoft Access database engine to use ODBCDirect.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8069b-111">例</span><span class="sxs-lookup"><span data-stu-id="8069b-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9b97a-111">例</span><span class="sxs-lookup"><span data-stu-id="9b97a-111">Example</span></span>
 
-<span data-ttu-id="8069b-112">この例では、 **Database** プロパティを使用して、Microsoft Access データベース エンジンを介して ODBC データにアクセスするときに使用されるコードを変換して、ODBCDirect Connection オブジェクトを使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="8069b-112">This example uses the **Database** property to show how code that used to access ODBC data through the Microsoft Access database engine can be converted to use ODBCDirect Connection objects.</span></span>
+<span data-ttu-id="9b97a-112">この例では、 **Database** プロパティを使用して、Microsoft Access データベース エンジンを介して ODBC データにアクセスするときに使用されるコードを変換して、ODBCDirect Connection オブジェクトを使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9b97a-112">This example uses the **Database** property to show how code that used to access ODBC data through the Microsoft Access database engine can be converted to use ODBCDirect Connection objects.</span></span>
 
-<span data-ttu-id="8069b-113">OldDatabaseCode プロシージャは、Microsoft Access データベース エンジンに接続されたデータ ソースを使用して ODBC データベースにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="8069b-113">The OldDatabaseCode procedure uses a Microsoft Access database engine-connected data source to access an ODBC database.</span></span>
+<span data-ttu-id="9b97a-113">OldDatabaseCode プロシージャは、Microsoft Access データベース エンジンに接続されたデータ ソースを使用して ODBC データベースにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="9b97a-113">The OldDatabaseCode procedure uses a Microsoft Access database engine-connected data source to access an ODBC database.</span></span>
 
 ```vb
     Sub OldDatabaseCode() 
@@ -87,7 +88,7 @@ ms.locfileid: "25920040"
     End Sub 
 ```
 
-<span data-ttu-id="8069b-p102">NewDatabaseCode の例は、ODBCDirect ワークスペースの **Connection** オブジェクトを開きます。次に、 **Connection** オブジェクトの **Database** プロパティを、前のプロシージャのデータ ソースと同じ名前のオブジェクト変数に割り当てます。後続のコードは、Microsoft Access ワークスペースに固有の機能を使用しない限り、変更の必要はありません。</span><span class="sxs-lookup"><span data-stu-id="8069b-p102">The NewDatabaseCode example opens a **Connection** object in an ODBCDirect workspace. It then assigns the **Database** property of the **Connection** object to an object variable with the same name as the data source in the old procedure. None of the subsequent code has to be changed as long as it doesn't use any features specific to Microsoft Access workspaces.</span></span>
+<span data-ttu-id="9b97a-p102">NewDatabaseCode の例は、ODBCDirect ワークスペースの **Connection** オブジェクトを開きます。次に、 **Connection** オブジェクトの **Database** プロパティを、前のプロシージャのデータ ソースと同じ名前のオブジェクト変数に割り当てます。後続のコードは、Microsoft Access ワークスペースに固有の機能を使用しない限り、変更の必要はありません。</span><span class="sxs-lookup"><span data-stu-id="9b97a-p102">The NewDatabaseCode example opens a **Connection** object in an ODBCDirect workspace. It then assigns the **Database** property of the **Connection** object to an object variable with the same name as the data source in the old procedure. None of the subsequent code has to be changed as long as it doesn't use any features specific to Microsoft Access workspaces.</span></span>
 
 ```vb 
 Sub NewDatabaseCode() 

@@ -10,26 +10,27 @@ f1_keywords:
 - dao360.chm1052938
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 45e6933d01a4c47253c90857d9c42bf0ab386c16
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 632f6e10d79d74dfef295b34a52ce62f1690101b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997567"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28715607"
 ---
-# <a name="dbengineregisterdatabase-method-dao"></a><span data-ttu-id="0d54e-102">DBEngine.RegisterDatabase メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="0d54e-102">DBEngine.RegisterDatabase method (DAO)</span></span>
+# <a name="dbengineregisterdatabase-method-dao"></a><span data-ttu-id="fe536-102">DBEngine.RegisterDatabase メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="fe536-102">DBEngine.RegisterDatabase method (DAO)</span></span>
 
-<span data-ttu-id="0d54e-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="0d54e-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="fe536-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="fe536-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="0d54e-p101">ODBC データ ソースの接続情報を Windows レジストリに追加します。ODBC ドライバーでは、セッション中に ODBC データ ソースが開かれるときに、接続情報が必要になります。</span><span class="sxs-lookup"><span data-stu-id="0d54e-p101">Enters connection information for an ODBC data source in the Windows Registry. The ODBC driver needs connection information when the ODBC data source is opened during a session.</span></span>
+<span data-ttu-id="fe536-p101">ODBC データ ソースの接続情報を Windows レジストリに追加します。ODBC ドライバーでは、セッション中に ODBC データ ソースが開かれるときに、接続情報が必要になります。</span><span class="sxs-lookup"><span data-stu-id="fe536-p101">Enters connection information for an ODBC data source in the Windows Registry. The ODBC driver needs connection information when the ODBC data source is opened during a session.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="0d54e-106">構文</span><span class="sxs-lookup"><span data-stu-id="0d54e-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="fe536-106">構文</span><span class="sxs-lookup"><span data-stu-id="fe536-106">Syntax</span></span>
 
-<span data-ttu-id="0d54e-107">*式*です。RegisterDatabase (***Dsn\*\*\*\*\*\*ドライバー***、***サイレント***、***属性***)</span><span class="sxs-lookup"><span data-stu-id="0d54e-107">*expression* .RegisterDatabase(***Dsn***, ***Driver***, ***Silent***, ***Attributes***)</span></span>
+<span data-ttu-id="fe536-107">*式*です。RegisterDatabase (***Dsn\*\*\*\*\*\*ドライバー***、***サイレント***、***属性***)</span><span class="sxs-lookup"><span data-stu-id="fe536-107">*expression* .RegisterDatabase(***Dsn***, ***Driver***, ***Silent***, ***Attributes***)</span></span>
 
-<span data-ttu-id="0d54e-108">\*式\***DBEngine**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="0d54e-108">*expression* A variable that represents a **DBEngine** object.</span></span>
+<span data-ttu-id="fe536-108">\*式\***DBEngine**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="fe536-108">*expression* A variable that represents a **DBEngine** object.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="0d54e-109">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d54e-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="fe536-109">パラメーター</span><span class="sxs-lookup"><span data-stu-id="fe536-109">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -40,52 +41,52 @@ ms.locfileid: "25997567"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="0d54e-110">名前</span><span class="sxs-lookup"><span data-stu-id="0d54e-110">Name</span></span></p></th>
-<th><p><span data-ttu-id="0d54e-111">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="0d54e-111">Required/optional</span></span></p></th>
-<th><p><span data-ttu-id="0d54e-112">データ型</span><span class="sxs-lookup"><span data-stu-id="0d54e-112">Data type</span></span></p></th>
-<th><p><span data-ttu-id="0d54e-113">説明</span><span class="sxs-lookup"><span data-stu-id="0d54e-113">Description</span></span></p></th>
+<th><p><span data-ttu-id="fe536-110">名前</span><span class="sxs-lookup"><span data-stu-id="fe536-110">Name</span></span></p></th>
+<th><p><span data-ttu-id="fe536-111">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="fe536-111">Required/optional</span></span></p></th>
+<th><p><span data-ttu-id="fe536-112">データ型</span><span class="sxs-lookup"><span data-stu-id="fe536-112">Data type</span></span></p></th>
+<th><p><span data-ttu-id="fe536-113">説明</span><span class="sxs-lookup"><span data-stu-id="fe536-113">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="0d54e-114"><em>Dsn</em></span><span class="sxs-lookup"><span data-stu-id="0d54e-114"><em>Dsn</em></span></span></p></td>
-<td><p><span data-ttu-id="0d54e-115">必須</span><span class="sxs-lookup"><span data-stu-id="0d54e-115">Required</span></span></p></td>
-<td><p><span data-ttu-id="0d54e-116"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="0d54e-116"><strong>String</strong></span></span></p></td>
-<td><p><span data-ttu-id="0d54e-p102"><strong><a href="dbengine-opendatabase-method-dao.md">OpenDatabase</a></strong> メソッドで使用される名前です。データ ソースに関する説明的な情報を指します。たとえば、データ ソースが ODBC リモート データベースである場合は、サーバー名などを指定します。</span><span class="sxs-lookup"><span data-stu-id="0d54e-p102">the name used in the <strong><a href="dbengine-opendatabase-method-dao.md">OpenDatabase</a></strong> method. It refers to a block of descriptive information about the data source. For example, if the data source is an ODBC remote database, it could be the name of the server.</span></span></p></td>
+<td><p><span data-ttu-id="fe536-114"><em>Dsn</em></span><span class="sxs-lookup"><span data-stu-id="fe536-114"><em>Dsn</em></span></span></p></td>
+<td><p><span data-ttu-id="fe536-115">必須</span><span class="sxs-lookup"><span data-stu-id="fe536-115">Required</span></span></p></td>
+<td><p><span data-ttu-id="fe536-116"><strong>String</strong></span><span class="sxs-lookup"><span data-stu-id="fe536-116"><strong>String</strong></span></span></p></td>
+<td><p><span data-ttu-id="fe536-p102"><strong><a href="dbengine-opendatabase-method-dao.md">OpenDatabase</a></strong> メソッドで使用される名前です。データ ソースに関する説明的な情報を指します。たとえば、データ ソースが ODBC リモート データベースである場合は、サーバー名などを指定します。</span><span class="sxs-lookup"><span data-stu-id="fe536-p102">the name used in the <strong><a href="dbengine-opendatabase-method-dao.md">OpenDatabase</a></strong> method. It refers to a block of descriptive information about the data source. For example, if the data source is an ODBC remote database, it could be the name of the server.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="0d54e-120"><em>ドライバー</em></span><span class="sxs-lookup"><span data-stu-id="0d54e-120"><em>Driver</em></span></span></p></td>
-<td><p><span data-ttu-id="0d54e-121">必須</span><span class="sxs-lookup"><span data-stu-id="0d54e-121">Required</span></span></p></td>
-<td><p><span data-ttu-id="0d54e-122"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="0d54e-122"><strong>String</strong></span></span></p></td>
-<td><p><span data-ttu-id="0d54e-p103">ODBC ドライバーの名前です。ODBC ドライバーの DLL ファイルの名前ではありません。</span><span class="sxs-lookup"><span data-stu-id="0d54e-p103">The name of the ODBC driver. This isn't the name of the ODBC driver DLL file.</span></span></p></td>
+<td><p><span data-ttu-id="fe536-120"><em>Driver</em></span><span class="sxs-lookup"><span data-stu-id="fe536-120"><em>Driver</em></span></span></p></td>
+<td><p><span data-ttu-id="fe536-121">必須</span><span class="sxs-lookup"><span data-stu-id="fe536-121">Required</span></span></p></td>
+<td><p><span data-ttu-id="fe536-122"><strong>String</strong></span><span class="sxs-lookup"><span data-stu-id="fe536-122"><strong>String</strong></span></span></p></td>
+<td><p><span data-ttu-id="fe536-p103">ODBC ドライバーの名前です。ODBC ドライバーの DLL ファイルの名前ではありません。</span><span class="sxs-lookup"><span data-stu-id="fe536-p103">The name of the ODBC driver. This isn't the name of the ODBC driver DLL file.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="0d54e-125"><em>サイレント</em></span><span class="sxs-lookup"><span data-stu-id="0d54e-125"><em>Silent</em></span></span></p></td>
-<td><p><span data-ttu-id="0d54e-126">必須</span><span class="sxs-lookup"><span data-stu-id="0d54e-126">Required</span></span></p></td>
-<td><p><span data-ttu-id="0d54e-127"><strong>ブール型 (Boolean)</strong></span><span class="sxs-lookup"><span data-stu-id="0d54e-127"><strong>Boolean</strong></span></span></p></td>
-<td><p><span data-ttu-id="0d54e-128"><strong>True の</strong>場合、ドライバー固有の情報の入力を求める ODBC ドライバー ダイアログ ボックスを表示したくないです。または、 <strong>false を指定</strong>する場合は、ODBC ドライバーのダイアログ ボックスを表示します。</span><span class="sxs-lookup"><span data-stu-id="0d54e-128"><strong>True</strong> if you don't want to display the ODBC driver dialog boxes that prompt for driver-specific information; or <strong>False</strong> if you want to display the ODBC driver dialog boxes.</span></span> <span data-ttu-id="0d54e-129">場合<strong>はサイレント</strong>、属性には、必要なすべてのドライバー固有の情報が含まれている必要があります、またはダイアログ ボックスが表示されますか。</span><span class="sxs-lookup"><span data-stu-id="0d54e-129">If silent is <strong>True</strong>, attributes must contain all the necessary driver-specific information or the dialog boxes are displayed anyway.</span></span></p></td>
+<td><p><span data-ttu-id="fe536-125"><em>サイレント</em></span><span class="sxs-lookup"><span data-stu-id="fe536-125"><em>Silent</em></span></span></p></td>
+<td><p><span data-ttu-id="fe536-126">必須</span><span class="sxs-lookup"><span data-stu-id="fe536-126">Required</span></span></p></td>
+<td><p><span data-ttu-id="fe536-127"><strong>Boolean</strong></span><span class="sxs-lookup"><span data-stu-id="fe536-127"><strong>Boolean</strong></span></span></p></td>
+<td><p><span data-ttu-id="fe536-128"><strong>True の</strong>場合、ドライバー固有の情報の入力を求める ODBC ドライバー ダイアログ ボックスを表示したくないです。または、 <strong>false を指定</strong>する場合は、ODBC ドライバーのダイアログ ボックスを表示します。</span><span class="sxs-lookup"><span data-stu-id="fe536-128"><strong>True</strong> if you don't want to display the ODBC driver dialog boxes that prompt for driver-specific information; or <strong>False</strong> if you want to display the ODBC driver dialog boxes.</span></span> <span data-ttu-id="fe536-129">場合<strong>はサイレント</strong>、属性には、必要なすべてのドライバー固有の情報が含まれている必要があります、またはダイアログ ボックスが表示されますか。</span><span class="sxs-lookup"><span data-stu-id="fe536-129">If silent is <strong>True</strong>, attributes must contain all the necessary driver-specific information or the dialog boxes are displayed anyway.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="0d54e-130"><em>Attributes</em></span><span class="sxs-lookup"><span data-stu-id="0d54e-130"><em>Attributes</em></span></span></p></td>
-<td><p><span data-ttu-id="0d54e-131">必須</span><span class="sxs-lookup"><span data-stu-id="0d54e-131">Required</span></span></p></td>
-<td><p><span data-ttu-id="0d54e-132"><strong>文字列型 (String)</strong></span><span class="sxs-lookup"><span data-stu-id="0d54e-132"><strong>String</strong></span></span></p></td>
-<td><p><span data-ttu-id="0d54e-p105">Windows レジストリに追加するキーワードの一覧です。キーワードは、改行で区切られた文字列として指定します。</span><span class="sxs-lookup"><span data-stu-id="0d54e-p105">A list of keywords to be added to the Windows Registry. The keywords are in a carriage-return–delimited string.</span></span></p></td>
+<td><p><span data-ttu-id="fe536-130"><em>属性</em></span><span class="sxs-lookup"><span data-stu-id="fe536-130"><em>Attributes</em></span></span></p></td>
+<td><p><span data-ttu-id="fe536-131">必須</span><span class="sxs-lookup"><span data-stu-id="fe536-131">Required</span></span></p></td>
+<td><p><span data-ttu-id="fe536-132"><strong>String</strong></span><span class="sxs-lookup"><span data-stu-id="fe536-132"><strong>String</strong></span></span></p></td>
+<td><p><span data-ttu-id="fe536-p105">Windows レジストリに追加するキーワードの一覧です。キーワードは、改行で区切られた文字列として指定します。</span><span class="sxs-lookup"><span data-stu-id="fe536-p105">A list of keywords to be added to the Windows Registry. The keywords are in a carriage-return–delimited string.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="0d54e-135">注釈</span><span class="sxs-lookup"><span data-stu-id="0d54e-135">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="fe536-135">注釈</span><span class="sxs-lookup"><span data-stu-id="fe536-135">Remarks</span></span>
 
-<span data-ttu-id="0d54e-136">**RegisterDatabase** メソッドを使用した時点で、データベースが既に Windows レジストリに登録されている (接続情報が既に追加されている) 場合は、その接続情報が更新されます。</span><span class="sxs-lookup"><span data-stu-id="0d54e-136">If the database is already registered (connection information is already entered) in the Windows Registry when you use the **RegisterDatabase** method, the connection information is updated.</span></span>
+<span data-ttu-id="fe536-136">**RegisterDatabase** メソッドを使用した時点で、データベースが既に Windows レジストリに登録されている (接続情報が既に追加されている) 場合は、その接続情報が更新されます。</span><span class="sxs-lookup"><span data-stu-id="fe536-136">If the database is already registered (connection information is already entered) in the Windows Registry when you use the **RegisterDatabase** method, the connection information is updated.</span></span>
 
-<span data-ttu-id="0d54e-137">**RegisterDatabase** メソッドがなんらかの理由で失敗すると、Windows レジストリは変更されず、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="0d54e-137">If the **RegisterDatabase** method fails for any reason, no changes are made to the Windows Registry, and an error occurs.</span></span>
+<span data-ttu-id="fe536-137">**RegisterDatabase** メソッドがなんらかの理由で失敗すると、Windows レジストリは変更されず、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="fe536-137">If the **RegisterDatabase** method fails for any reason, no changes are made to the Windows Registry, and an error occurs.</span></span>
 
-<span data-ttu-id="0d54e-138">SQL Server など ODBC ドライバーの詳細については、ドライバーに付属のヘルプ ファイルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="0d54e-138">For more information about ODBC drivers such as SQL Server, see the Help file provided with the driver.</span></span>
+<span data-ttu-id="fe536-138">SQL Server など ODBC ドライバーの詳細については、ドライバーに付属のヘルプ ファイルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="fe536-138">For more information about ODBC drivers such as SQL Server, see the Help file provided with the driver.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0d54e-139">例</span><span class="sxs-lookup"><span data-stu-id="0d54e-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fe536-139">例</span><span class="sxs-lookup"><span data-stu-id="fe536-139">Example</span></span>
 
-<span data-ttu-id="0d54e-140">次の例では、 **RegisterDatabase** メソッドを使用して、Publishers という名前の Microsoft SQL Server データ ソースを Windows レジストリに登録します。</span><span class="sxs-lookup"><span data-stu-id="0d54e-140">This example uses the **RegisterDatabase** method to register a Microsoft SQL Server data source named Publishers in the Windows Registry.</span></span>
+<span data-ttu-id="fe536-140">次の例では、 **RegisterDatabase** メソッドを使用して、Publishers という名前の Microsoft SQL Server データ ソースを Windows レジストリに登録します。</span><span class="sxs-lookup"><span data-stu-id="fe536-140">This example uses the **RegisterDatabase** method to register a Microsoft SQL Server data source named Publishers in the Windows Registry.</span></span>
 
 ```vb 
 Sub RegisterDatabaseX() 

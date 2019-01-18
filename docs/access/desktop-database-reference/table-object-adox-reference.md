@@ -6,17 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249298(v=office.15)
 ms:contentKeyID: 48544990
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2666a98fc27fb9d21a3ddd89068fa02dec8411fd
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 602e632e7a068dc34c755cb685db02f0da05f29b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928331"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28714851"
 ---
-# <a name="table-object-adox-reference"></a><span data-ttu-id="bfb86-102">テーブル オブジェクト (ADOX) 参照</span><span class="sxs-lookup"><span data-stu-id="bfb86-102">Table object (ADOX) reference</span></span>
+# <a name="table-object-adox-reference"></a><span data-ttu-id="960e4-102">テーブル オブジェクト (ADOX) 参照</span><span class="sxs-lookup"><span data-stu-id="960e4-102">Table object (ADOX) reference</span></span>
 
-<span data-ttu-id="bfb86-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="bfb86-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="960e4-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="960e4-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="bfb86-104">Table オブジェクト (ADOX)</span><span class="sxs-lookup"><span data-stu-id="bfb86-104">Table object (ADOX)</span></span>](table-object-adox.md)
-- [<span data-ttu-id="bfb86-105">表のプロパティ、メソッド、およびイベント (ADOX)</span><span class="sxs-lookup"><span data-stu-id="bfb86-105">Table properties, methods, and events (ADOX)</span></span>](table-properties-methods-and-events-adox.md)
+- [<span data-ttu-id="960e4-104">Table オブジェクト (ADOX)</span><span class="sxs-lookup"><span data-stu-id="960e4-104">Table object (ADOX)</span></span>](table-object-adox.md)
+- [<span data-ttu-id="960e4-105">表のプロパティ、メソッド、およびイベント (ADOX)</span><span class="sxs-lookup"><span data-stu-id="960e4-105">Table properties, methods, and events (ADOX)</span></span>](table-properties-methods-and-events-adox.md)
 

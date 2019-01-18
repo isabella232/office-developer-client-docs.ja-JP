@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249922(v=office.15)
 ms:contentKeyID: 48547452
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f903da131d94c72656a2b8d80febb20e01854b49
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: db791ddce4c4f207bfe096d3f59acd7ff99e57ef
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25872229"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28715110"
 ---
-# <a name="status-property-example-vj"></a><span data-ttu-id="5c866-102">Status プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="5c866-102">Status property example (VJ++)</span></span>
+# <a name="status-property-example-vj"></a><span data-ttu-id="123e7-102">Status プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="123e7-102">Status property example (VJ++)</span></span>
 
 
-<span data-ttu-id="5c866-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="5c866-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="123e7-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="123e7-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="5c866-104">この例では、[Status](status-property-ado-recordset.md) プロパティを使用して、一括更新の前にバッチ処理で変更されたレコードを表示します。</span><span class="sxs-lookup"><span data-stu-id="5c866-104">This example uses the [Status](status-property-ado-recordset.md) property to display which records have been modified in a batch operation before a batch update has occurred.</span></span>
+<span data-ttu-id="123e7-104">この例では、[Status](status-property-ado-recordset.md) プロパティを使用して、一括更新の前にバッチ処理で変更されたレコードを表示します。</span><span class="sxs-lookup"><span data-stu-id="123e7-104">This example uses the [Status](status-property-ado-recordset.md) property to display which records have been modified in a batch operation before a batch update has occurred.</span></span>
 
 ```java 
  

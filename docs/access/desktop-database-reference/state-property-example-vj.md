@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249529(v=office.15)
 ms:contentKeyID: 48545869
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ac8e066e537f86095c31ee975fd27f0f38211c2c
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: fef0e19b8cc7b9e5586414d010701dad5e578f39
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25881686"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28710427"
 ---
-# <a name="state-property-example-vj"></a><span data-ttu-id="09206-102">State プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="09206-102">State property example (VJ++)</span></span>
+# <a name="state-property-example-vj"></a><span data-ttu-id="e2888-102">State プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="e2888-102">State property example (VJ++)</span></span>
 
 
-<span data-ttu-id="09206-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="09206-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="e2888-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="e2888-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="09206-104">この例では、非同期接続を開き、非同期コマンドを実行している間、[State](state-property-ado.md) プロパティを使用してメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="09206-104">This example uses the [State](state-property-ado.md) property to display a message while asynchronous connections are opening and asynchronous commands are executing.</span></span>
+<span data-ttu-id="e2888-104">この例では、非同期接続を開き、非同期コマンドを実行している間、[State](state-property-ado.md) プロパティを使用してメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="e2888-104">This example uses the [State](state-property-ado.md) property to display a message while asynchronous connections are opening and asynchronous commands are executing.</span></span>
 
 ```java 
  
