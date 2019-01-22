@@ -1,83 +1,84 @@
 ---
-title: テーブル定義オブジェクト (DAO)
+title: TableDef オブジェクト (DAO)
 TOCTitle: TableDef Object
 ms:assetid: 715146b6-c62a-abff-28ee-e6bbe3c08adf
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195790(v=office.15)
 ms:contentKeyID: 48545582
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2670dadade6e934a1696251867d8ea67e8bbfc53
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 6e1182427c688e7c8b5ca53c1f5f4bb208b3609a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927369"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726345"
 ---
-# <a name="tabledef-object-dao"></a><span data-ttu-id="692f0-102">テーブル定義オブジェクト (DAO)</span><span class="sxs-lookup"><span data-stu-id="692f0-102">TableDef object (DAO)</span></span>
+# <a name="tabledef-object-dao"></a><span data-ttu-id="838ae-102">TableDef オブジェクト (DAO)</span><span class="sxs-lookup"><span data-stu-id="838ae-102">TableDef Object (DAO)</span></span>
 
-<span data-ttu-id="692f0-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="692f0-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="838ae-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="838ae-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="692f0-104">**TableDef** オブジェクトは、ベース テーブルまたはリンク テーブルのストアド定義を表します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="692f0-104">A **TableDef** object represents the stored definition of a base table or a linked table (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="838ae-104">**TableDef** オブジェクトは、ベース テーブルまたはリンク テーブルの保存済み定義を表します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="838ae-104">A **TableDef** object represents the stored definition of a base table or a linked table (Microsoft Access workspaces only).</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="692f0-105">注釈</span><span class="sxs-lookup"><span data-stu-id="692f0-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="838ae-105">解説</span><span class="sxs-lookup"><span data-stu-id="838ae-105">Remarks</span></span>
 
-<span data-ttu-id="692f0-p101">**TableDef** オブジェクトと、そのメソッドおよびプロパティを使用して、テーブル定義を操作できます。たとえば、以下の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="692f0-p101">You manipulate a table definition using a **TableDef** object and its methods and properties. For example, you can:</span></span>
+<span data-ttu-id="838ae-p101">**TableDef** オブジェクトと、そのメソッドおよびプロパティを使用して、テーブル定義を操作できます。たとえば、以下の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="838ae-p101">You manipulate a table definition using a **TableDef** object and its methods and properties. For example, you can:</span></span>
 
-- <span data-ttu-id="692f0-108">データベースの任意のローカル テーブル、リンク テーブル、または外部キー側のテーブルのフィールドおよびインデックス構造を調べます。</span><span class="sxs-lookup"><span data-stu-id="692f0-108">Examine the field and index structure of any local, linked, or external table in a database.</span></span>
+- <span data-ttu-id="838ae-108">データベースの任意のローカル テーブル、リンク テーブル、または外部キー側のテーブルのフィールドおよびインデックス構造を調べます。</span><span class="sxs-lookup"><span data-stu-id="838ae-108">Examine the field and index structure of any local, linked, or external table in a database.</span></span>
 
-- <span data-ttu-id="692f0-109">**Connect** プロパティおよび **SourceTableName** プロパティを使用して、リンク テーブルに関する情報を設定または取得し、 **RefreshLink** メソッドを使用して、リンク テーブルへの接続を更新します。</span><span class="sxs-lookup"><span data-stu-id="692f0-109">Use the **Connect** and **SourceTableName** properties to set or return information about linked tables, and use the **RefreshLink** method to update connections to linked tables.</span></span>
+- <span data-ttu-id="838ae-109">**Connect** プロパティおよび **SourceTableName** プロパティを使用して、リンク テーブルに関する情報を設定または取得し、 **RefreshLink** メソッドを使用して、リンク テーブルへの接続を更新します。</span><span class="sxs-lookup"><span data-stu-id="838ae-109">Use the **Connect** and **SourceTableName** properties to set or return information about linked tables, and use the **RefreshLink** method to update connections to linked tables.</span></span>
 
-- <span data-ttu-id="692f0-110">**ValidationRule** プロパティおよび **ValidationText** プロパティを使用して、入力検査の条件を設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="692f0-110">Use the **ValidationRule** and **ValidationText** properties to set or return validation conditions.</span></span>
+- <span data-ttu-id="838ae-110">**ValidationRule** プロパティおよび **ValidationText** プロパティを使用して、検証条件を設定したり、返したりします。</span><span class="sxs-lookup"><span data-stu-id="838ae-110">Use the **ValidationRule** and **ValidationText** properties to set or return validation conditions.</span></span>
 
-- <span data-ttu-id="692f0-111">テーブル –、ダイナセット、ダイナミック –、スナップショット タイプ、または前方のみタイプの**Recordset**オブジェクト、テーブルの定義に基づくを作成するのにには、**何らか**の方法を使用します。</span><span class="sxs-lookup"><span data-stu-id="692f0-111">Use the **OpenRecordset** method to create a table–, dynaset–, dynamic–, snapshot–, or forward–only–type **Recordset** object, based on the table definition.</span></span>
+- <span data-ttu-id="838ae-111">**OpenRecordset** メソッドを使用して、テーブル定義に基づいて、テーブル、ダイナセット、ダイナミック、スナップショット、転送専用の種類の **Recordset** オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="838ae-111">Use the **OpenRecordset** method to create a table-, dynaset-, dynamic-, snapshot-, or forward-only-type **Recordset** object, based on the table definition.</span></span>
 
-<span data-ttu-id="692f0-112">ベース テーブルの場合、 **RecordCount** プロパティには、指定したデータベース テーブルのレコード数が含まれます。</span><span class="sxs-lookup"><span data-stu-id="692f0-112">For base tables, the **RecordCount** property contains the number of records in the specified database table.</span></span> <span data-ttu-id="692f0-113">リンク テーブルは、 **RecordCount**プロパティの設定は常に値が – 1 です。</span><span class="sxs-lookup"><span data-stu-id="692f0-113">For linked tables, the **RecordCount** property setting is always –1.</span></span>
+<span data-ttu-id="838ae-112">ベース テーブルの場合、**RecordCount** プロパティには、指定されたデータベース テーブルのレコード数が含まれます。</span><span class="sxs-lookup"><span data-stu-id="838ae-112">For base tables, the **RecordCount** property contains the number of records in the specified database table.</span></span> <span data-ttu-id="838ae-113">リンク テーブルの場合、**RecordCount** プロパティ設定値は必ず –1 です。</span><span class="sxs-lookup"><span data-stu-id="838ae-113">For linked tables, the **RecordCount** property setting is always -1.</span></span>
 
-<span data-ttu-id="692f0-114">新しい **TableDef** オブジェクトを作成するには、 **[CreateTableDef](database-createtabledef-method-dao.md)** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="692f0-114">To create a new **TableDef** object, use the **[CreateTableDef](database-createtabledef-method-dao.md)** method.</span></span>
+<span data-ttu-id="838ae-114">新しい **TableDef** オブジェクトを作成するには、**[CreateTableDef](database-createtabledef-method-dao.md)** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="838ae-114">To create a new **TableDef** object, use the **[CreateTableDef](database-createtabledef-method-dao.md)** method.</span></span>
 
-### <a name="to-add-a-field-to-a-table"></a><span data-ttu-id="692f0-115">テーブルにフィールドを追加するには</span><span class="sxs-lookup"><span data-stu-id="692f0-115">To add a field to a table</span></span>
+### <a name="to-add-a-field-to-a-table"></a><span data-ttu-id="838ae-115">テーブルにフィールドを追加するには</span><span class="sxs-lookup"><span data-stu-id="838ae-115">To add a field to a table</span></span>
 
-1.  <span data-ttu-id="692f0-116">テーブルに基づいた **[Recordset](recordset-object-dao.md)** オブジェクトがすべて閉じていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="692f0-116">Make sure any **[Recordset](recordset-object-dao.md)** objects based on the table are all closed.</span></span>
+1.  <span data-ttu-id="838ae-116">テーブルに基づいた **[Recordset](recordset-object-dao.md)** オブジェクトがすべて閉じていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="838ae-116">Make sure any **[Recordset](recordset-object-dao.md)** objects based on the table are all closed.</span></span>
 
-2.  <span data-ttu-id="692f0-117">**CreateField** メソッドを使用して、 **Field** オブジェクト変数を作成し、そのプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="692f0-117">Use the **CreateField** method to create a **Field** object variable and set its properties.</span></span>
+2.  <span data-ttu-id="838ae-117">**CreateField** メソッドを使用して、 **Field** オブジェクト変数を作成し、そのプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="838ae-117">Use the **CreateField** method to create a **Field** object variable and set its properties.</span></span>
 
-3.  <span data-ttu-id="692f0-118">**Append** メソッドを使用して、 **Field** オブジェクトを **TableDef** オブジェクトの **Fields** コレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="692f0-118">Use the **Append** method to add the **Field** object to the **Fields** collection of the **TableDef** object.</span></span>
+3.  <span data-ttu-id="838ae-118">**Append** メソッドを使用して、 **Field** オブジェクトを **TableDef** オブジェクトの **Fields** コレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="838ae-118">Use the **Append** method to add the **Field** object to the **Fields** collection of the **TableDef** object.</span></span>
 
-<span data-ttu-id="692f0-119">インデックスが割り当てられていない場合、 **TableDefs** コレクションから **Field** オブジェクトを削除できますが、フィールドのデータが失われます。</span><span class="sxs-lookup"><span data-stu-id="692f0-119">You can delete a **Field** object from a **TableDefs** collection if it doesn't have any indexes assigned to it, but you will lose the field's data.</span></span>
+<span data-ttu-id="838ae-119">インデックスが割り当てられていない場合、 **TableDefs** コレクションから **Field** オブジェクトを削除できますが、フィールドのデータが失われます。</span><span class="sxs-lookup"><span data-stu-id="838ae-119">You can delete a **Field** object from a **TableDefs** collection if it doesn't have any indexes assigned to it, but you will lose the field's data.</span></span>
 
-### <a name="to-create-a-table-that-is-ready-for-new-records-in-a-database"></a><span data-ttu-id="692f0-120">データベースの新しいレコードを格納するテーブルを作成するには</span><span class="sxs-lookup"><span data-stu-id="692f0-120">To create a table that is ready for new records in a database</span></span>
+### <a name="to-create-a-table-that-is-ready-for-new-records-in-a-database"></a><span data-ttu-id="838ae-120">データベースの新しいレコードを格納するテーブルを作成するには</span><span class="sxs-lookup"><span data-stu-id="838ae-120">To create a table that is ready for new records in a database</span></span>
 
-1.  <span data-ttu-id="692f0-121">**CreateTableDef** メソッドを使用して、 **TableDef** オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="692f0-121">Use the **CreateTableDef** method to create a **TableDef** object.</span></span>
+1.  <span data-ttu-id="838ae-121">**CreateTableDef** メソッドを使用して、 **TableDef** オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="838ae-121">Use the **CreateTableDef** method to create a **TableDef** object.</span></span>
 
-2.  <span data-ttu-id="692f0-122">そのプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="692f0-122">Set its properties.</span></span>
+2.  <span data-ttu-id="838ae-122">そのプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="838ae-122">Set its properties.</span></span>
 
-3.  <span data-ttu-id="692f0-123">テーブルのフィールドごとに、 **CreateField** メソッドを使用して、 **Field** オブジェクト変数を作成し、そのプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="692f0-123">For each field in the table, use the **CreateField** method to create a **Field** object variable and set its properties.</span></span>
+3.  <span data-ttu-id="838ae-123">テーブルのフィールドごとに、 **CreateField** メソッドを使用して、 **Field** オブジェクト変数を作成し、そのプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="838ae-123">For each field in the table, use the **CreateField** method to create a **Field** object variable and set its properties.</span></span>
 
-4.  <span data-ttu-id="692f0-124">**Append** メソッドを使用して、フィールドを **TableDef** オブジェクトの **Fields** コレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="692f0-124">Use the **Append** method to add the fields to the **Fields** collection of the **TableDef** object.</span></span>
+4.  <span data-ttu-id="838ae-124">**Append** メソッドを使用して、フィールドを **TableDef** オブジェクトの **Fields** コレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="838ae-124">Use the **Append** method to add the fields to the **Fields** collection of the **TableDef** object.</span></span>
 
-5.  <span data-ttu-id="692f0-125">**Append** メソッドを使用して、新しい **TableDef** オブジェクトを **Database** オブジェクトの **TableDefs** コレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="692f0-125">Use the **Append** method to add the new **TableDef** object to the **TableDefs** collection of the **Database** object.</span></span>
+5.  <span data-ttu-id="838ae-125">**Append** メソッドを使用して、新しい **TableDef** オブジェクトを **Database** オブジェクトの **TableDefs** コレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="838ae-125">Use the **Append** method to add the new **TableDef** object to the **TableDefs** collection of the **Database** object.</span></span>
 
-<span data-ttu-id="692f0-126">リンク テーブルは、 **TableDef** オブジェクトの **SourceTableName** プロパティおよび **Connect** プロパティによってデータベースに接続されます。</span><span class="sxs-lookup"><span data-stu-id="692f0-126">A linked table is connected to the database by the **SourceTableName** and **Connect** properties of the **TableDef** object.</span></span>
+<span data-ttu-id="838ae-126">リンク テーブルは、 **TableDef** オブジェクトの **SourceTableName** プロパティおよび **Connect** プロパティによってデータベースに接続されます。</span><span class="sxs-lookup"><span data-stu-id="838ae-126">A linked table is connected to the database by the **SourceTableName** and **Connect** properties of the **TableDef** object.</span></span>
 
-### <a name="to-link-a-table-to-a-database"></a><span data-ttu-id="692f0-127">テーブルをデータベースにリンクするには</span><span class="sxs-lookup"><span data-stu-id="692f0-127">To link a table to a database</span></span>
+### <a name="to-link-a-table-to-a-database"></a><span data-ttu-id="838ae-127">テーブルをデータベースにリンクするには</span><span class="sxs-lookup"><span data-stu-id="838ae-127">To link a table to a database</span></span>
 
-1.  <span data-ttu-id="692f0-128">**CreateTableDef** メソッドを使用して、 **TableDef** オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="692f0-128">Use the **CreateTableDef** method to create a **TableDef** object.</span></span>
+1.  <span data-ttu-id="838ae-128">**CreateTableDef** メソッドを使用して、 **TableDef** オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="838ae-128">Use the **CreateTableDef** method to create a **TableDef** object.</span></span>
 
-2.  <span data-ttu-id="692f0-129">その **Connect** プロパティおよび **SourceTableName** プロパティ、さらにオプションで **Attributes** プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="692f0-129">Set its **Connect** and **SourceTableName** properties (and optionally, its **Attributes** property).</span></span>
+2.  <span data-ttu-id="838ae-129">その **Connect** プロパティおよび **SourceTableName** プロパティ、さらにオプションで **Attributes** プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="838ae-129">Set its **Connect** and **SourceTableName** properties (and optionally, its **Attributes** property).</span></span>
 
-3.  <span data-ttu-id="692f0-130">**Append** メソッドを使用して、 **Database** の **TableDefs** コレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="692f0-130">Use the **Append** method to add it to the **TableDefs** collection of a **Database**.</span></span>
+3.  <span data-ttu-id="838ae-130">**Append** メソッドを使用して、 **Database** の **TableDefs** コレクションに追加します。</span><span class="sxs-lookup"><span data-stu-id="838ae-130">Use the **Append** method to add it to the **TableDefs** collection of a **Database**.</span></span>
 
-<span data-ttu-id="692f0-131">コレクション内の **TableDef** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="692f0-131">To refer to a **TableDef** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
+<span data-ttu-id="838ae-131">コレクション内の **TableDef** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="838ae-131">To refer to a **TableDef** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
 
-<span data-ttu-id="692f0-132">**テーブル定義**(0)</span><span class="sxs-lookup"><span data-stu-id="692f0-132">**TableDefs**(0)</span></span>
+<span data-ttu-id="838ae-132">**TableDefs**(0)</span><span class="sxs-lookup"><span data-stu-id="838ae-132">**TableDefs**(0)</span></span>
 
-<span data-ttu-id="692f0-133">**テーブル定義**("name")</span><span class="sxs-lookup"><span data-stu-id="692f0-133">**TableDefs**("name")</span></span>
+<span data-ttu-id="838ae-133">**TableDefs**("name")</span><span class="sxs-lookup"><span data-stu-id="838ae-133">**TableDefs**("name")</span></span>
 
-<span data-ttu-id="692f0-134">**テーブル**\!\[名\]</span><span class="sxs-lookup"><span data-stu-id="692f0-134">**TableDefs**\!\[name\]</span></span>
+<span data-ttu-id="838ae-134">**TableDefs**\!\[name\]</span><span class="sxs-lookup"><span data-stu-id="838ae-134">**TableDefs**\!\[name\]</span></span>
 
-## <a name="example"></a><span data-ttu-id="692f0-135">例</span><span class="sxs-lookup"><span data-stu-id="692f0-135">Example</span></span>
+## <a name="example"></a><span data-ttu-id="838ae-135">例</span><span class="sxs-lookup"><span data-stu-id="838ae-135">Example</span></span>
 
-<span data-ttu-id="692f0-p103">この例では、新しい **TableDef** オブジェクトを作成し、Northwind Database オブジェクトの **TableDefs** コレクションに追加します。次に、 **TableDefs** コレクションおよび新しい **TableDef** オブジェクトの **Properties** コレクションを列挙します。</span><span class="sxs-lookup"><span data-stu-id="692f0-p103">This example creates a new **TableDef** object and appends it to the **TableDefs** collection of the Northwind Database object. It then enumerates the **TableDefs** collection and the **Properties** collection of the new **TableDef**.</span></span>
+<span data-ttu-id="838ae-p103">この例では、新しい **TableDef** オブジェクトを作成し、Northwind Database オブジェクトの **TableDefs** コレクションに追加します。次に、 **TableDefs** コレクションおよび新しい **TableDef** オブジェクトの **Properties** コレクションを列挙します。</span><span class="sxs-lookup"><span data-stu-id="838ae-p103">This example creates a new **TableDef** object and appends it to the **TableDefs** collection of the Northwind Database object. It then enumerates the **TableDefs** collection and the **Properties** collection of the new **TableDef**.</span></span>
 
 ```vb
     Sub TableDefX() 
@@ -130,7 +131,7 @@ ms.locfileid: "25927369"
 
 <br/>
 
-<span data-ttu-id="692f0-138">この例では、Northwind データベースで新しい **TableDef** オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="692f0-138">This example creates a new **TableDef** object in the Northwind database.</span></span>
+<span data-ttu-id="838ae-138">この例では、Northwind データベースで新しい **TableDef** オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="838ae-138">This example creates a new **TableDef** object in the Northwind database.</span></span>
 
 ```vb 
 Sub CreateTableDefX() 
@@ -193,9 +194,9 @@ Sub CreateTableDefX()
 
 <br/>
 
-<span data-ttu-id="692f0-p104">次の例は、集計フィールドを作成する方法を示します。 CreateField メソッドで、" **FullName**" という名前のフィールドを作成します。次に、 Expression プロパティを、フィールドの値を計算する式に設定します。</span><span class="sxs-lookup"><span data-stu-id="692f0-p104">The following example shows how to create a calculated field. The CreateField method creates a field named **FullName**. The Expression property is then set to the expression that calculates the value of the field.</span></span>
+<span data-ttu-id="838ae-p104">次の例は、集計フィールドを作成する方法を示します。 CreateField メソッドで、" **FullName**" という名前のフィールドを作成します。次に、 Expression プロパティを、フィールドの値を計算する式に設定します。</span><span class="sxs-lookup"><span data-stu-id="838ae-p104">The following example shows how to create a calculated field. The CreateField method creates a field named **FullName**. The Expression property is then set to the expression that calculates the value of the field.</span></span>
 
-<span data-ttu-id="692f0-142">**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。</span><span class="sxs-lookup"><span data-stu-id="692f0-142">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
+<span data-ttu-id="838ae-142">**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。</span><span class="sxs-lookup"><span data-stu-id="838ae-142">**Sample code provided by:** The [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)</span></span>
 
 ```vb
     Sub CreateCalculatedField()
