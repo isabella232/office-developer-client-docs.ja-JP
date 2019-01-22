@@ -10,25 +10,26 @@ f1_keywords:
 - vbaac10.chm31446
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: eaab9d43e85ee94c5e71d52399a92515cce94693
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: f910393c6d7a64258e5afc7545641fc5c6778b03
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997134"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726009"
 ---
 # <a name="importexportspreadsheet-macro-action"></a>ImportExportSpreadsheet マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **ImportExportSpreadsheet** アクションを使用すると、カレントの Access データベース (.mdb または .accdb) または Access プロジェクト (.adp) とワークシート ファイルとの間でデータをインポートまたはエクスポートできます。Microsoft Excel のワークシートのデータを Microsoft Access のカレント データベースにリンクすることもできます。ワークシートをリンクすると、Access でワークシート データを表示したり編集することができると同時に、Excel のワークシート プログラムからそのデータにアクセスできます。Lotus 1-2-3 のワークシート ファイルのデータにもリンクできますが、そのファイルは Access では読み取り専用になります。
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
+> このアクションは、データベースが信頼されていない場合には許可されません。 
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>設定値
 
-**TransferSpreadsheet** アクションの引数は次のとおりです。
+**TransferSpreadsheet** アクションには次の引数があります。
 
 <table>
 <colgroup>
@@ -43,12 +44,12 @@ ms.locfileid: "25997134"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Transfer Type/変換の種類</strong></p></td>
-<td><p>変換の種類を指定します。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>変換の種類</strong>] ボックスで、[ <strong>インポート</strong>]、[ <strong>エクスポート</strong>]、または [ <strong>リンク</strong>] を選択します。既定値は [ <strong>インポート</strong>] です。  </p><p><strong>注</strong>: Access プロジェクト (.adp) では、<STRONG>リンク</STRONG>の転送の種類はサポートされていません。</p></td>
+<td><p><strong>Transfer Type/転送の種類</strong></p></td>
+<td><p>変換の種類を指定します。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>変換の種類</strong>] ボックスで、[ <strong>インポート</strong>]、[ <strong>エクスポート</strong>]、または [ <strong>リンク</strong>] を選択します。既定値は [ <strong>インポート</strong>] です。  </p><p><strong>注意</strong>: Access プロジェクト (.adp) では、転送の種類 <STRONG>[リンク]</STRONG> はサポートされていません。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Spreadsheet Type/ワークシートの種類</strong></p></td>
-<td><p>インポート元、エクスポート先、またはリンク先のワークシートの種類を指定します。このボックスでは、多数のワークシートの種類から 1 つを選択できます。既定値は [ <strong>Excel ブック</strong>] です。  </p><p><strong>注</strong>: からインポートし、ロータス (読み取り専用) にリンクすることができます。WK4 ファイルの場合は、この形式のワークシートにデータへのアクセスをエクスポートできません。 不要になったアクセスには、インポート、エクスポート、またはロータスからデータをリンクがサポートされています。WKS またはこの操作で Excel のバージョン 2.0 スプレッドシートです。 Excel 2.0 または Lotus のワークシートのデータをからインポートまたはリンクする場合。WKS 形式、新しいバージョンの Excel または Lotus 1-2-3 インポートまたは Access にデータをリンクする前にスプレッドシートのデータに変換します。</p>
+<td><p>インポート元、エクスポート先、またはリンク先のワークシートの種類を指定します。このボックスでは、多数のワークシートの種類から 1 つを選択できます。既定値は [ <strong>Excel ブック</strong>] です。  </p><p><strong>注意</strong>: Lotus WK4 ファイルからインポートしたりリンク (読み取り専用) したりできますが、Access データをこのワークシート形式にエクスポートすることはできません。 また Access では、WKS または Excel バージョン 2.0 ワークシートのデータをこのアクションでインポート、エクスポート、リンクすることはサポートされなくなりました。 Excel バージョン 2.0 または Lotus .WKS 形式のワークシート データをインポートしたりリンクしたりする場合には、ワークシート データを Excel の新しいバージョンや Lotus 1-2-3 に変換してから、Access にデータをインポートまたはリンクします。</p>
 </td>
 </tr>
 <tr class="odd">
@@ -56,7 +57,7 @@ ms.locfileid: "25997134"
 <td><p>ワークシート データのインポート先、エクスポート元、またはリンク先となる Access のテーブル名を指定します。また、データのエクスポート元として Access の選択クエリ名を入力することもできます。この引数は省略できません。 <strong>Transfer Type/変換の種類</strong> 引数で [ <strong>インポート</strong>] を選択すると、テーブルが既に存在する場合は、ワークシートのデータがこのテーブルに追加されます。テーブルが存在しない場合は、新しいテーブルが作成され、指定したワークシートのデータがインポートされます。Access では、 <strong>ImportExportSpreadsheet</strong> アクションを使用するときに、エクスポートするデータを SQL ステートメントを使って指定することができません。SQL ステートメントを使うのではなく、クエリを作成してから、 <strong>Table Name/テーブル名</strong> 引数にそのクエリの名前を指定する必要があります。  </p></td>
 </tr>
 <tr class="even">
-<td><p><strong>ファイル名</strong></p></td>
+<td><p><strong>File Name/ファイル名</strong></p></td>
 <td><p>インポート元、エクスポート先、またはリンク先のワークシート ファイルの名前を指定します。ファイル名が既存のワークシートの名前と同じ場合、既存のワークシートが置き換えられます。この引数は省略できません。Access のデータをエクスポートすると、新しいワークシートが作成されます。ファイル名が既存のワークシートの名前と同じ場合、既存のワークシートが置き換えられます。ただし、Excel 5.0 以降のバージョンのブックをエクスポートする場合は、エクスポートされたデータがブック内の次に使用できる新しいワークシートにコピーされます。Excel 5.0 以降のバージョンのワークシートのデータをインポートまたはリンクする場合、 <strong>Range/範囲</strong> 引数を使用して特定のワークシートを指定できます。  </p></td>
 </tr>
 <tr class="odd">
@@ -64,12 +65,12 @@ ms.locfileid: "25997134"
 <td><p>ワークシートの先頭行にフィールド名を含めるかどうかを指定します。[ <strong>はい</strong>] を選択した場合は、ワークシートのデータをインポートまたはリンクするときに、先頭行の名前が Access のテーブルのフィールド名として使用されます。[ <strong>いいえ</strong>] を選択した場合は、先頭行が通常のデータ行として処理されます。既定値は [ <strong>いいえ</strong>] です。Access のテーブルや選択クエリをワークシートにエクスポートした場合は、この引数の値に関係なく、ワークシートの先頭行にフィールド名が挿入されます。  </p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Range/範囲</strong></p></td>
+<td><p><strong>Range</strong></p></td>
 <td><p>インポートまたはリンクするセルの範囲を指定します。この引数を指定しないと、ワークシート全体がインポートまたはリンクされます。インポートまたはリンクするワークシートの範囲名を入力するか、A1:E25 のようにセル範囲を指定することができます。Access 97 以降のバージョンでは、A1..E25 の構文は使用できないことに注意してください。Excel 5.0 以降のバージョンのワークシートのデータをインポートまたはリンクする場合は、範囲の前にワークシート名と感嘆符を付けることができます (たとえば、<ワークシート名>!A1:C7)。 
 
 
 
-</p><p><strong>注</strong>: スプレッドシートにエクスポートするときにする必要がありますこの引数を指定しません。 範囲を入力する場合、エクスポートは失敗します。</p></td>
+</p><p><strong>注意</strong>: ワークシートにエクスポートする場合、この引数を空白のままにするにする必要があります。 範囲を入力すると、エクスポートは失敗します。</p></td>
 </tr>
 </tbody>
 </table>

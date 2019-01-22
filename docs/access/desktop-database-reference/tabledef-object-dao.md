@@ -1,25 +1,26 @@
 ---
-title: テーブル定義オブジェクト (DAO)
+title: TableDef オブジェクト (DAO)
 TOCTitle: TableDef Object
 ms:assetid: 715146b6-c62a-abff-28ee-e6bbe3c08adf
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195790(v=office.15)
 ms:contentKeyID: 48545582
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2670dadade6e934a1696251867d8ea67e8bbfc53
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 6e1182427c688e7c8b5ca53c1f5f4bb208b3609a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927369"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726345"
 ---
-# <a name="tabledef-object-dao"></a>テーブル定義オブジェクト (DAO)
+# <a name="tabledef-object-dao"></a>TableDef オブジェクト (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**TableDef** オブジェクトは、ベース テーブルまたはリンク テーブルのストアド定義を表します (Microsoft Access ワークスペースのみ)。
+**TableDef** オブジェクトは、ベース テーブルまたはリンク テーブルの保存済み定義を表します (Microsoft Access ワークスペースのみ)。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 **TableDef** オブジェクトと、そのメソッドおよびプロパティを使用して、テーブル定義を操作できます。たとえば、以下の操作を実行できます。
 
@@ -27,13 +28,13 @@ ms.locfileid: "25927369"
 
 - **Connect** プロパティおよび **SourceTableName** プロパティを使用して、リンク テーブルに関する情報を設定または取得し、 **RefreshLink** メソッドを使用して、リンク テーブルへの接続を更新します。
 
-- **ValidationRule** プロパティおよび **ValidationText** プロパティを使用して、入力検査の条件を設定または取得します。
+- **ValidationRule** プロパティおよび **ValidationText** プロパティを使用して、検証条件を設定したり、返したりします。
 
-- テーブル –、ダイナセット、ダイナミック –、スナップショット タイプ、または前方のみタイプの**Recordset**オブジェクト、テーブルの定義に基づくを作成するのにには、**何らか**の方法を使用します。
+- **OpenRecordset** メソッドを使用して、テーブル定義に基づいて、テーブル、ダイナセット、ダイナミック、スナップショット、転送専用の種類の **Recordset** オブジェクトを作成します。
 
-ベース テーブルの場合、 **RecordCount** プロパティには、指定したデータベース テーブルのレコード数が含まれます。 リンク テーブルは、 **RecordCount**プロパティの設定は常に値が – 1 です。
+ベース テーブルの場合、**RecordCount** プロパティには、指定されたデータベース テーブルのレコード数が含まれます。 リンク テーブルの場合、**RecordCount** プロパティ設定値は必ず –1 です。
 
-新しい **TableDef** オブジェクトを作成するには、 **[CreateTableDef](database-createtabledef-method-dao.md)** メソッドを使用します。
+新しい **TableDef** オブジェクトを作成するには、**[CreateTableDef](database-createtabledef-method-dao.md)** メソッドを使用します。
 
 ### <a name="to-add-a-field-to-a-table"></a>テーブルにフィールドを追加するには
 
@@ -69,11 +70,11 @@ ms.locfileid: "25927369"
 
 コレクション内の **TableDef** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。
 
-**テーブル定義**(0)
+**TableDefs**(0)
 
-**テーブル定義**("name")
+**TableDefs**("name")
 
-**テーブル**\!\[名\]
+**TableDefs**\!\[name\]
 
 ## <a name="example"></a>例
 
@@ -195,7 +196,7 @@ Sub CreateTableDefX()
 
 次の例は、集計フィールドを作成する方法を示します。 CreateField メソッドで、" **FullName**" という名前のフィールドを作成します。次に、 Expression プロパティを、フィールドの値を計算する式に設定します。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     Sub CreateCalculatedField()
