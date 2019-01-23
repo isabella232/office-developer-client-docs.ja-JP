@@ -3,50 +3,50 @@ title: Project Server のアーキテクチャ
 manager: soliver
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 2cfa5a6e-2f5c-440c-b35a-bc7a34648f9c
-description: Project Server 2013 では、SharePoint ファーム全体でのプロジェクト管理機能を統合し、オンラインのプロジェクトのレポート データのクライアント側オブジェクト モデル (CSOM) と、OData インターフェイスを使用できるようにします。
-ms.openlocfilehash: 633532d85b4d910c11a284231cb9a4c3e5a549cc
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: MT
+description: Project Server 2013 は、SharePoint ファーム全体のプロジェクト管理機能を統合し、クライアント側オブジェクト モデル (CSOM) とレポート データ用の OData インターフェイスを持つ Project Online の使用を可能にします。
+localization_priority: Priority
+ms.openlocfilehash: db4dd0eed9c043021f586041fa0e28708fdbd243
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25394098"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28711659"
 ---
 # <a name="project-server-architecture"></a>Project Server のアーキテクチャ
 
-Project Server 2013 では、SharePoint ファーム全体でのプロジェクト管理機能を統合し、オンラインのプロジェクトのレポート データのクライアント側オブジェクト モデル (CSOM) と、OData インターフェイスを使用できるようにします。
+Project Server 2013 は、SharePoint ファーム全体のプロジェクト管理機能を統合し、クライアント側オブジェクト モデル (CSOM) とレポート データ用の OData インターフェイスを持つ Project Online の使用を可能にします。
    
-Project Server 2013 は、Office Project Server 2007 で導入されたアーキテクチャを拡張した多層システムです。 アーキテクチャの変更には、Project アプリケーション サービス、SharePoint サイト コレクション、web フロント エンド サーバー上のいくつかのビジネス オブジェクトの追加 (WFE)、リモート アクセス用のクライアント側オブジェクト モデル (CSOM)、1 つのプロジェクト データベースとの関連付けが含まれます、OData インターフェイス、ローカル サーバー、および複数の Project Server によってアクセス可能なリモート イベント レシーバーのレポート テーブルおよびビュー、Windows Workflow Foundation ワークフロー マネージャー クライアント 1.0 で、雲の中、またはバージョン 4 (WF4) の統合インストールします。 設置型のカスタム ソリューションに加え、リモート イベント レシーバーと CSOM および OData インターフェイスにアクセスするコンポーネントを含むアプリケーションを作成できます。
+Project Server 2013 は、Office Project Server 2007 で導入されたアーキテクチャを拡張する多層システムです。 アーキテクチャの変更は、Project Application Service と SharePoint サイト コレクションの関連付け、Web フロントエンド (WFE) でのビジネス オブジェクトの追加、リモート アクセス用のクライアント側オブジェクト モデル (CSOM)、単一の Project データベース、レポート テーブルおよびビューのための OData インターフェイス、クラウド内またはローカル サーバー上での ワークフロー マネージャー クライアント 1.0 を介した Windows Workflow Foundation バージョン 4 (WF4) の統合、複数の Project Server インストールからアクセスできるリモート イベント レシーバーなどです。 オンプレミスのカスタム ソリューションに加えて、CSOM や OData インターフェイスにアクセスするリモート イベント レシーバーやコンポーネントを含むアプリケーションを作成できます。
   
-フロント エンド層には、評価のためのプロジェクトを Project Web App では、サード ・ パーティ製のアプリケーションが含まれています。 クライアント アプリケーションは、プロジェクト Server インターフェイス (PSI) を使用」または「CSOM のエンドポイントでは、PSI とビジネス オブジェクト層との通信中間層と通信します。 データベースへのアクセスは、ビジネス オブジェクトに統合されています。 プロジェクトのサーバー イベント処理システムは、ローカルのイベント ハンドラーとリモート イベント レシーバーの両方にアクセスできます。 プロジェクトの計算サービスは、Project Server 内で Project Professional のスケジュール エンジンを実装します。 プロジェクト データベースに直接アクセスするクライアント アプリケーションしないかどうか)Project Server は、クライアントからビジネス オブジェクトを非表示にします。
+フロントエンド層には、Project Professional 2013、Project Web App、およびサードパーティ アプリケーションが含まれます。 クライアント アプリケーションは Project Server Interface (PSI) または CSOM エンドポイントを通して中間層と通信し、中間層は PSI およびビジネス オブジェクト層と通信します。 データベース アクセスはビジネス オブジェクトに統合されます。 Project Server のイベント システムはローカルのイベント ハンドラーとリモートのイベント レシーバーの両方にアクセスできます。 Project Calculation Service は Project Server 内に Project Professional のスケジューリング エンジンを実装します。 クライアント アプリケーションは、Project データベースに直接アクセスしません (または直接のアクセスは禁止されています)。Project Server は、クライアントから直接アクセスできないようにビジネス オブジェクトを隠蔽します。
   
 > [!NOTE]
-> SharePoint アーキテクチャには、project Server がビルドされます。 SharePoint Server 2013 のアーキテクチャと、SharePoint アプリケーションのモデルについては、Office 2013 の開発者向けのドキュメントで、 *SharePoint の開発の概要*のセクションを参照してください。 
+> Project Server は、SharePoint アーキテクチャの上に構築されています。 SharePoint Server 2013 アーキテクチャと SharePoint アプリケーション モデルの詳細については、Office 2013 の開発者向けドキュメントの「*SharePoint 開発の作業の開始*」セクションを参照してください。 
 
 <a name="pj15_Architecture_SharePoint"> </a>
 
 ## <a name="integrating-with-sharepoint-site-collections"></a>SharePoint サイト コレクションとの統合
 
-Project Server 2013 で Project アプリケーション サービスは、SharePoint タスク リストを使用するための SharePoint サイト コレクションに関連付けることができます。、Project アプリケーション サービスはすべての Project Server のエンタープライズ プロジェクトとして、SharePoint タスク リストをインポートもことができます。コントロールです。 SharePoint タスク リストでは、SharePoint がサイト コレクション内のプロジェクトのサイトを維持します。Project Professional と同期でき、タスクの一覧を更新することができます。 独立型の SharePoint タスク リストや、.mpp ファイルを使用して同期されるタスク リストをプロジェクトのサイトとして使用することができます。.mpp ファイルは、ローカル コンピューターまたは SharePoint ライブラリに格納できます。 
+Project Server 2013 の Project Application Service は、SharePoint タスク リストで使用するために SharePoint サイト コレクションに関連付けることができます。Project Application Service は、Project Server をフル コントロールするために SharePoint タスク リストをエンタープライズ プロジェクトとしてインポートすることもできます。 SharePoint タスク リストがある場合、SharePoint はプロジェクト サイトをサイト コレクションに保持します。Project Professional はタスク リストと同期し、タスク リストを更新できます。 プロジェクト サイトは、独立した SharePoint タスク リスト、または .mpp ファイルと同期されたタスク リストにすることができます。.mpp ファイルは、ローカルまたは SharePoint ライブラリに格納できます。 
   
-フル コントロールがある場合、project Server がプロジェクトを保持します。Project Professional では、Project Server に直接データを保存します。 表 1 は、Project Server にフル コントロールがある場合のタスクの一覧、スケジュールの web パーツ、その他の機能およびインポートされたプロジェクトのタスク リストの SharePoint コントロールの動作を比較します。 スケジュールの web パーツには、プロジェクトのスケジュールを編集することができます、Project Web App ページ上のグリッドが含まれています。 結合モードでは、状態管理のデータが入力される 1 回の両方のタスクとタイムシートです。1 つのエントリのモードでは、タイムシートから、タスクの状態管理データが別々 に入力します。
+Project Server はフル コントロールがある場合にプロジェクトを保持します。Project Professional はデータを Project Server に直接保存します。 表 1 では、タスク リスト、スケジュール Web パーツ、および他の機能について、SharePoint コントロールのタスク リストの場合と、インポートされたプロジェクトに対して Project Server がフル コントロールを持つ場合との間で比較します。 スケジュール Web パーツには Project Web App ページのグリッドが含まれており、ここでプロジェクト スケジュールを編集できます。 統合モードでは、タスクとタイムシートの両方について、状態管理データを 1 度に入力します。単一入力モードでは、タスクの状態管理データをタイムシートから個別に入力します。
   
-**表 1. SharePoint タスク リストとフル コントロールの比較**
+**表 1. SharePoint タスク リストと フル コントロールの比較**
 
 | 機能 | タスク リスト | フル コントロール |
 |:-----|:-----|:-----|
 |**SharePoint のタスク リスト** <br/> |読み取り/書き込み  <br/> |読み取り専用  <br/> |
-|**スケジュールの web パーツ** <br/> |読み取り専用  <br/> |読み取り/書き込み  <br/> |
-|**レポート** <br/> |Project Server を介した豊富なレポート機能  <br/> |Project Server を介した豊富なレポート機能  <br/> |
-|**Project Server のその他の機能** <br/> | ブロックされる機能:  <br/>-サーバー側プロジェクト編集では、Project Web App またはカスタムのクライアント ・ アプリケーションで  <br/>-状態管理  <br/>-タスクがリンク付けされているモードで表示されません。  <br/> |フル機能が有効  <br/> |
+|**スケジュール Web パーツ** <br/> |読み取り専用  <br/> |読み取り/書き込み  <br/> |
+|**レポート** <br/> |Project Server を使用した機能豊富なレポート  <br/> |Project Server を使用した機能豊富なレポート  <br/> |
+|**他の Project Server 機能** <br/> | ブロックされる機能:  <br/>- Project Web App またはカスタム クライアント アプリケーションを使用したサーバー側のプロジェクト編集  <br/>- 状態管理  <br/>- 統合モードではタスクは非表示  <br/> |すべての機能が有効  <br/> |
    
-### <a name="managing-projects-as-sharepoint-task-lists"></a>SharePoint タスク リストとしてのプロジェクトの管理
+### <a name="managing-projects-as-sharepoint-task-lists"></a>プロジェクトを SharePoint タスク リストとして管理する
 <a name="pj15_Architecture_VisibilityMode"> </a>
 
-Project Server は、SharePoint の管理、タスク ・ リストおよびドキュメント ライブラリ内の評価のためのプロジェクト (.mpp) ファイルは、プロジェクトのアプリケーション サービスに表示されているが、SharePoint の管理、SharePoint サイト コレクションに関連付けられている場合、マスター同期のためのデータ (図 1 を参照してください)。 サーバー側がスケジュールの web パーツを使用したスケジューリングを実行できません。 同期して、プロジェクト サイトのタスク リストを編集するのには、Project Professional を使用できます。 SharePoint タスク リストから、組織は Project Server のすべての機能を使用する展開徐々 にできます。
+Project Server が、SharePoint がコントロールを保持する SharePoint サイト コレクションと関連付けられている場合、Project Application Service にタスク リストとドキュメント ライブラリ内の Project Professional 2013 (.mpp) ファイルが表示されますが、同期するためのマスター データは、SharePoint が保持しています (図 1 を参照)。 スケジュール Web パーツを使用するサーバー側スケジューリングは実行できません。 Project Professional を使用すると、プロジェクト サイトのタスク リストと同期したり、タスク リストを編集したりできます。 SharePoint タスク リストから始めることにより、組織は徐々に Project Server のフル機能を使いこなすようになっていくことができます。
   
-図 1 は、SharePoint タスク リストでプロジェクトが管理されている場合の以下の処理を示しています。 
+図 1 は、プロジェクトが SharePoint タスク リストで管理される場合の以下の処理を示しています。 
   
 - (A) Project Professional は、Project Application Service との関連付けの前後どちらでも、タスク リストと同期したり、サイト コレクションに新しいプロジェクト サイトを作成したりできます。
     
@@ -54,18 +54,18 @@ Project Server は、SharePoint の管理、タスク ・ リストおよびド�
     
 - (C) 関連付けの後、Project Professional で新しいプロジェクトを作成し、保存または Project Server に発行できます。Project Professional のアクティブ キャッシュにより、Project Server とのデータ同期が維持されます。
     
-- (D) と、Project Professional の新しいプロジェクトが発行されると、ユーザーは、プロジェクトのプロジェクト サイトを作成するオプションを持ちます。 プロジェクトは、SharePoint タスク リストのプロジェクトの種類、またはフル コントロールのエンタープライズ プロジェクトの種類 (EPT) として、Project Web App で作成することもできます。 手順 (D) は、フル コントロール EPT を示しています。
+- (D) Project Professional で新しいプロジェクトが発行されると、ユーザーはそのプロジェクトのプロジェクト サイトを作成できるようになります。 プロジェクトは、SharePoint タスク リスト プロジェクトの種類またはフル コントロール エンタープライズ プロジェクトの種類 (EPT) として Project Web App 内で作成することもできます。 手順 (D) はフル コントロール EPT を示しています。
     
-**図 1. SharePoint タスク リストとしてのプロジェクト サイトの使用**
+**図 1. プロジェクト サイトを SharePoint タスク リストとして使用する**
 
-![表示/非表示モードでのプロジェクトのサイトを使用します。](media/pj15_Architecture_VisibilityMode.gif "表示/非表示モードでのプロジェクトのサイトを使用します。")
+![認識モードでのプロジェクト サイトの使用](media/pj15_Architecture_VisibilityMode.gif "認識モードでのプロジェクト サイトの使用")
 
 <br/>
 
-### <a name="managing-projects-with-full-control"></a>フル コントロールの権限を使用したプロジェクトの管理
+### <a name="managing-projects-with-full-control"></a>フル コントロールを使用してプロジェクトを管理する
 <a name="pj15_Architecture_ManagedMode"> </a>
 
-Project Server は、サイト コレクションに関連付けられてし、フル コントロールを持って、Project Server がエンタープライズ プロジェクトでは、タスクの一覧を表示する SharePoint がインポートされ、関連の .mpp ファイルを削除することができます。 Project Server のタスク リストの同期化のマスター データを維持します。サイト コレクション内のタスクの一覧では、読み取り専用 (図 2 参照) になります。 Project Professional を使用するか、Project Web App を使用して、インポートされたプロジェクトを編集できます。
+Project Server がサイト コレクションと関連付けられていて、フル コントロールの権限を持っている場合、Project Server は SharePoint タスク リストをエンタープライズ プロジェクトとしてインポートします。このとき、関連する .mpp ファイルはすべて削除できます。 タスク リスト同期のためのマスター データは、Project Server が保持します。サイト コレクションのタスク リストは読み取り専用になります (図 2 を参照)。 インポートされたプロジェクトは、Project Professional または Project Web App を使用して編集できます。
   
 > [!NOTE]
 > Project Server がプロジェクトをインポートした後、ユーザーは、サイトからプロジェクトを削除するか、またはプロジェクトを編集する前に接続を切断するかを選択します。Project Professional でこの選択を行うことができます。 
@@ -74,115 +74,115 @@ Project Server は、サイト コレクションに関連付けられてし、�
   
 - (A) ユーザーはインポートするプロジェクト サイトを選択できます。Project Server はプロジェクト サイトをインポートし、オプションで、関連する .mpp ファイルを削除します。インポートされたプロジェクトの SharePoint タスク リストは読み取り専用になります。
     
-- (関連付けの後 B) は、Project Professional は新しいプロジェクトを作成、保存またはと Project Server に発行します。 Project Professional でアクティブ キャッシュは、プロジェクトのサーバーとデータの同期を維持します。 Project Web App の [スケジュール] web パーツには、サーバー側のスケジュールを実行できます。
+- (B) 関連付けの後、Project Professional は新しいプロジェクトを作成し、Project Server に保存または発行します。 Project Professional のアクティブ キャッシュにより、Project Server とのデータ同期が維持されます。 Project Web App 内のスケジュール Web パーツは、サーバー側のスケジューリングを実行できます。
     
-- (C) と、Project Professional の新しいプロジェクトが発行されると、ユーザーは、プロジェクトのプロジェクト サイトを作成するオプションを持ちます。 プロジェクトのフル コントロール EPT と、Project Web App で作成したし、プロジェクト サイトのサイト コレクションに読み取り専用のタスク ・ リストの発行もできます。
+- (C) Project Professional で新しいプロジェクトが発行されると、ユーザーはそのプロジェクトのプロジェクト サイトを作成できるようになります。 Project Web App でフル コントロール EPT のプロジェクトを作成して、サイト コレクションのプロジェクト サイトに読み取り専用のタスク リストと共に発行することもできます。
     
-**図 2. フル コントロールの権限を使用したプロジェクト サイトの使用**
+**図 2. フル コントロールを使用してプロジェクト サイトを管理する**
 
-![管理モードでのプロジェクトのサイトを使用します。](media/pj15_Architecture_ManagedMode.gif "管理モードでのプロジェクトのサイトを使用します。")
+![プロジェクト サイトを管理モードで使用する](media/pj15_Architecture_ManagedMode.gif "プロジェクト サイトを管理モードで使用する")
   
 ## <a name="general-architecture"></a>アーキテクチャの概要
 <a name="pj15_Architecture_General"> </a>
 
-図 3 は、プロジェクト サービス アプリケーションで、WFE では、上の 1 つの Project Web App インスタンスおよび評価のためのプロジェクトを含む他のいくつかのクライアント アプリケーションを含む、Project Server 2013 のアーキテクチャの汎用的なビューを示しています。
+図 3 は、Project Server 2013 アーキテクチャの概要を示した図であり、Project サービス アプリケーション、WFE 上の 1 つの Project Web App インスタンス、およびその他のクライアント アプリケーション (Project Professional 2013 など) がいくつか含まれています。
   
-バックエンド プロジェクト サービス アプリケーションと通信する複数の Project Web App インスタンスが存在することができます。 設置型インストール、WFE を SharePoint ファーム構成で別のサーバーにすることができます。 またはプロジェクト サービス アプリケーションと同じ SharePoint サーバーのことができます。 オンライン プロジェクトにはには、WFE、プロジェクト サービス アプリケーション、およびローカルまたはリモート ワークフロー マネージャーのクライアント 1.0 サーバーが含まれています。 
+バックエンド Project サービス アプリケーションと通信する Project Web App インスタンスが複数存在する場合があります。 オンプレミス インストールでは、WFE を SharePoint ファーム内の別のサーバーに置いたり、Project サービス アプリケーションと同じ SharePoint サーバーに置いたりする場合があります。 Project Online には、WFE、Project サービス アプリケーション、ローカルまたはリモートのワークフロー マネージャー クライアント 1.0 サーバーが含まれます。 
   
-**図 3. Project Server 2013 のアーキテクチャの概要**
+**図 3. Project Server 2013 アーキテクチャの概要**
 
-![Project Server のアーキテクチャ](media/pj15_Architecture_ProjectServiceApp_WFE.gif "Project Server のアーキテクチャ")
+![Project Server アーキテクチャ](media/pj15_Architecture_ProjectServiceApp_WFE.gif "Project Server アーキテクチャ")
 
 <br/>
 
 図 3 には、次の一般的な説明が該当します。
   
-- **オンライン プロジェクト:** CSOM、残りの部分、および OData インターフェイスを使用するアプリケーションを作成することができます。 アプリケーション パッケージは、ローカル サーバー上で、Azure サーバーの場合、または Microsoft Azure には、カスタムの web サービスでリモート イベント レシーバーをインストールすることも。 プロジェクトのオンラインでは、サード ・ パーティ製の設置型ソリューション、WCF インターフェイス、ASMX インターフェイス、またはローカルのイベント ハンドラーをサポートしていません。 
+- **Project Online:** CSOM、REST、および OData インターフェイスを使用するアプリケーションを作成できます。 アプリケーション パッケージで、ローカル サーバー、Azure サーバー、または Microsoft Azure のカスタム Web サービスにリモート イベント レシーバーもインストールできます。 Project Online は、サードパーティのオンプレミス ソリューション、WCF インターフェイス、ASMX インターフェイス、またはローカル イベント ハンドラーのいずれもサポートしていません。 
     
-- **イベントの受信機:** イベント レシーバーは、イベント ハンドラーをということができます。 プロジェクトのオンラインでは、クラウド内の Project Web App インスタンスまたはオンプレミスの Project Server インストールで使用できる、リモートの Project Server イベント レシーバーの登録をサポートしています。 設置の Project Server インストールでは、リモート イベント レシーバーとローカルの完全信頼のイベント ハンドラーをサポートします。 
+- **イベント レシーバー:** イベント レシーバーはイベント ハンドラーとも呼ばれます。 Project Online は、クラウド内の Project Web App インスタンスやオンプレミスの Project Server インストールが使用できるリモートの Project Server イベント レシーバーの登録をサポートしています。 オンプレミスの Project Server インストールは、リモートのイベント レシーバーとローカルの完全信頼イベント ハンドラーをサポートしています。 
     
-- **ブラウザー:** Project Server 2010 では、Project Web App の一部のページを表示するブラウザー間の制限はありません。 Project Web App で完全に使用するためは、以下のブラウザーがサポートされています。 
+- **ブラウザー:** Project Server 2010 とは違い、Project Web App ページの表示に関してブラウザー間の制限はありません。 Project Web App では、以下のブラウザーのすべての機能の使用がサポートされています。 
     
-  - Internet Explorer の Windows 7 と Windows の以前のバージョン)、8.x Internet Explorer 9.x、および Internet Explorer の 10.x 
-  - Firefox 4.x (Windows、Mac OS-X、および Linux/Unix)
+  - Internet Explorer 8.x (Windows 7 以前のバージョンの Microsoft Windows)、Internet Explorer 9.x、および Internet Explorer 10.x 
+  - Firefox 4.x (Windows、Mac OS X、および Linux/Unix)
   - Safari 5.x (Windows および Mac OS-X)
   - Chrome
     
-- **プログラムのインタ フェース:** サード ・ パーティ製のアプリケーションのオンライン プロジェクトを公開する、HTTP および HTTPS インターフェイス (残りの部分を含む)、CSOM インタ フェース、CSOM の OData サービスおよびレポートの OData サービス。 設置 (イントラネット) 上にあるサードパーティ製のクライアント アプリケーションで、PSI の WCF インターフェイスを使用することができます。 または HTTP を介して CSOM、OData では、および残りの部分のインターフェイスを使用することができます。 Project Web App と評価のためのプロジェクトの両方のクライアントは、WCF インターフェイスを使用します。 インストールでは、1 台のサーバー、フロント エンド ASMX web サービス、CSOM、および残りの部分を内部で呼び出しますバックエンド WCF サービスです。 
+- **プログラム インターフェイス:** サードパーティ アプリケーションに対して、Project Online は HTTP/HTTPS インターフェイス (REST など)、CSOM インターフェイス、CSOM 用 OData サービス、およびレポート用 OData サービスを公開します。 オンンプレミス (イントラネット) のサードパーティ クライアント アプリケーションの場合、PSI 用の WCF インターフェイス、または CSOM、OData、および HTTP を介した REST インターフェイスを使用できます。 Project Web App と Project Professional 2013 はどちらも WCF インターフェイスを使用します。 単一サーバーのインストールでは、フロントエンド ASMX Web サービス、CSOM、および REST が内部でバックエンド WCF サービスを呼び出します。 
     
     > [!NOTE]
-    > PSI web サービスの SOAP ベースの ASMX インターフェイスでは、Project Server 2013 では、引き続き利用ですは推奨されていません。 
+    > PSI の Web サービス用の SOAP ベースの ASMX インターフェイスは引き続き Project Server 2013 で利用できますが、廃止される予定です。 
   
-    レポートの OData サービスは、内部の OData.svc の WCF サービスによって実装されます。 使用して、レポート データのサービスのメタデータ ドキュメントを取得できます`https://ServerName/ProjectServerName/_api/ProjectData/$metadata`。 
+    レポート用の OData サービスは、内部の OData.svc WCF サービスによって実装されます。 `https://ServerName/ProjectServerName/_api/ProjectData/$metadata` を使用して、レポート データのサービス メタデータ ドキュメントを取得できます。 
     
-    CSOM の OData サービスは Windows RT、iOS、Android は、HTML ページに JavaScript の REST インターフェイスを使用する場所などのプラットフォームを対象としています。 
+    CSOM 用の OData サービスは、HTML ページの JavaScript で REST インターフェイスを使用できる、Windows RT、iOS や Android などのプラットフォームを対象にしています。 
     
     > [!NOTE]
-    > ですが、 `$metadata` **ProjectData**サービスが無効な場合、レポート作成ののためのオプション、`$metadata`オプションを使用しない、CSOM の**ProjectServer**サービスが Project Server 2013 のリリース バージョンで削除します。 CSOM の残りのクエリの詳細については、 [Project Server のクライアント側オブジェクト モデル (CSOM)](client-side-object-model-csom-for-project-2013.md)を参照してください。 
+    > **ProjectData** レポート サービスの `$metadata` オプションは有効ですが、CSOM の **ProjectServer** サービスの `$metadata` オプションは、リリース済みバージョンの Project Server 2013 では削除されています。 CSOM 用の REST クエリの詳細については、「[Client-side object model (CSOM) for Project Server](client-side-object-model-csom-for-project-2013.md)」を参照してください。 
   
-- **PSI フォワーダー:** 個別 WFE の PSI へのプログラムによるアクセスは、WCF フォワーダーや Web サービス フォワーダーを含む、PSI フォワーダーを通過します。 ASMX インターフェイスを使用するクライアントは、Web サービス フォワーダーを通じて PSI をアクセスします。 WCF インターフェイスを使用するクライアントは、WCF フォワーダーを通じて PSI をアクセスします。 CSOM、OData では、および他のプログラムによるアクセスは、WCF フォワーダーをパイプします。 
+- **PSI フォワーダー:** 異なる WFE の PSI へのプログラムによるアクセスは PSI フォワーダーを経由して行われ、これには WCF フォワーダーと Web サービス フォワーダーが含まれます。 ASMX インターフェイスを使用するクライアントでは、Web サービス フォワーダーを経由して PSI にアクセスします。 WCF インターフェイスを使用するクライアントでは、WCF フォワーダーを経由して PSI にアクセスします。 プログラムによる CSOM、OData、および REST へのアクセスは、WCF フォワーダー経由でパイプされます。 
     
-- **ワークフロー:** 宣言型ワークフロー (SharePoint Designer 2013 で定義されているワークフロー) は、処理のためにワークフロー マネージャーのクライアント 1.0 に任されます。 ワークフロー マネージャー クライアント 1.0 は、別のサーバー ファームでは、SharePoint、クラウド、Microsoft Azure またはテストやデモンストレーションの 1 つの Project Server コンピューター上で実行できます。 Visual Studio 2012 で開発されるコード化されたワークフローは、Project Server 2010 のように、SharePoint のワークフローの実行時に処理されます。 詳細については、 [Project Server のワークフローの開発を開始する](getting-started-developing-project-server-workflows.md)を参照してください。
+- **ワークフロー:** 宣言型ワークフロー (SharePoint Designer 2013 で定義されたワークフロー) の処理は、ワークフロー マネージャー クライアント 1.0 にオフロードされます。 ワークフロー マネージャー クライアント 1.0 は、SharePoint ファームの別のサーバー、クラウドの Microsoft Azure、または単一の Project Server コンピューターで実行して、テストまたはデモンストレーションできます。 Visual Studio 2012 で開発された、コード化されたワークフローは、Project Server 2010 と同様に SharePoint 内のワークフロー ランタイムで処理されます。 詳細については、「[Project Server ワークフロー開発の作業開始](getting-started-developing-project-server-workflows.md)」を参照してください。
     
-- **境界ネットワーク (DMZ):** 図 3 では、追加のファイアウォールを境界ネットワーク (「非武装地帯」または DMZ とも呼ばれます) により、オンプレミスの WFE サーバーを分離することができますが表示されません。 境界領域のネットワークは、インターネット クライアントが SharePoint と Project Server をファイアウォール経由でアクセスを許可できます。 
+- **境界ネットワーク (DMZ):** 図 3 では、境界ネットワーク ("非武装地帯" または DMZ とも呼ばれます) にファイアウォールを追加することでオンプレミスの WFE サーバーを分離できることは示されていません。 境界ネットワークでは、インターネット クライアントがファイアウォールを越えて SharePoint および Project Server にアクセスできます。 
     
-- **SharePoint Web サービス:** 図 3 では、バックエンドの SharePoint Web サービス アプリケーション、SharePoint Server 2013 の一部であるなどの SharePoint インフラストラクチャは表示されません。 Project Server をインストールすると、プロジェクト サービス アプリケーションは、SharePoint Web サービスに追加されます。 
+- **SharePoint Web サービス:** 図 3 では、SharePoint Server 2013 に含まれるバックエンド SharePoint Web サービス アプリケーションなどの SharePoint インフラストラクチャは示されていません。 Project Server のインストール時に Project サービス アプリケーションが SharePoint Web サービスに追加されます。 
     
-フロント エンド層には、サードパーティ製のアプリケーション、Project Professional および Project Web App が含まれています。 ブラウザーでは、Project Web App の 4.0 の ASP.NET ページ (.aspx) を表示します。 Project Web App ページでは、PSI と通信し、標準的な SharePoint の Web パーツを使用しても Web パーツのサーバー プロジェクトを使用します。 
+フロントエンド層には、サードパーティ アプリケーション、Project Professional、および Project Web App が含まれます。 ブラウザーには Project Web App の ASP.NET 4.0 のページ (.aspx ページ) が表示されます。 Project Web App のページでは、PSI と通信する Project Server Web パーツを使用し、標準の SharePoint Web パーツも使用します。 
   
-PSI および Project Server のビジネス エンティティを表す論理オブジェクトで構成されるビジネス オブジェクト層、中間層が含まれます。 ビジネス エンティティには、プロジェクト、タスク、リソース、割り当て、およびなどが含まれます。 PSI とビジネス オブジェクト層を密に結合し、同じサーバー上にあります。 クライアント アプリケーションは、使用可能なインタ フェースのいずれかで、PSI を呼び出すし、PSI がビジネス オブジェクトを呼び出します。 パフォーマンス向上のため、WFE の Project Server 2013 には、Project Server キュー システムを使用したり、プロジェクトの計算サービスを必要としないで、要求のいくつかのビジネス オブジェクトが含まれています。 WFE のビジネス オブジェクトは、プロジェクト データベースと直接通信します。
+中間層に含まれるのは、PSI と、Project Server のビジネス エンティティを表す論理オブジェクトから成るビジネス オブジェクト レイヤーです。 ビジネス エンティティには、プロジェクト、タスク、リソース、割り当てなどが含まれます。 PSI とビジネス オブジェクト層は密接に結び付いていて、同じサーバー上にあります。 使用可能ないずれかのインターフェイスからクライアント アプリケーションが PSI を呼び出すと、PSI はビジネス オブジェクトを呼び出します。 パフォーマンスを向上させるため、Project Server 2013 の WFE は、Project Server のキュー システムを使用しない要求、または Project Calculation Service を必要としない要求でビジネス オブジェクトを含めています。 WFE のビジネス オブジェクトは、Project データベースと直接通信します。
   
-Project Server の Project Web App のコンポーネントでは、SharePoint 2013 の構成データベースを使用して、プロジェクト サイトのセットアップ ・ タスク ・ リスト、カスタム ページ、ワークフロー、管理設定、ドキュメント、およびリストなどのプロジェクト サイトのコンテンツのコンテンツ データベース懸案事項、リスク、およびコミットメント。 SharePoint の構成とプロジェクト管理、プロジェクト テンプレートなど、ワークスペースのコンテンツ データベースのサポートの追加機能は、チームの共同作業、およびレポートのユーザー設定が一覧表示されます。
+Project Server の Project Web App コンポーネントは、プロジェクト サイトのセットアップに SharePoint Server 2013 の構成データベースを使用し、タスク リスト、カスタム ページ、ワークフロー、管理設定、ドキュメント、および問題、リスク、コミットメントのリストなどのプロジェクト サイトのコンテンツにコンテンツ データベースを使用します。 SharePoint の構成データベースとコンテンツ データベースは、プロジェクト テンプレートとワークスペース、チーム コラボレーションのカスタム リスト、レポートなど、プロジェクト管理用の追加機能をサポートします。
   
 ### <a name="project-web-app-and-the-wfe"></a>Project Web App と WFE
 <a name="pj15_Architecture_PWAServer"> </a>
 
-WFE および企業イントラネット内の複数の WFE サーバーのイントラネット クライアントの負荷分散を有効にするには、複数の Project Web App インスタンスを構成できます。 クライアント アプリケーションは、別の WFE サーバーに Project Web App インスタンスを使用する場合は、PSI の呼び出しが、PSI フォワーダーを通してルーティングされます。 (WCF フォワーダーや Web サービス フォワーダー) は、PSI フォワーダーは、次の関数を実行します。
+イントラネット クライアントでの負荷分散を有効にするために、WFE 上で複数の Project Web App インスタンスを 構成し、企業のイントラネット内で複数の WFE サーバーを構成することができます。 クライアント アプリケーションが別の WFE サーバー上で Project Web App インスタンスを使用する場合は、PSI 呼び出しは PSI フォワーダーを通してルーティングされます。 PSI フォワーダー (WCF フォワーダーまたは Web サービス フォワーダーのいずれか ) は、次の機能を実行します。
   
-- リモート クライアントから PSI への呼び出しを最適化します。
+- リモート クライアントからの PSI への呼び出しを最適化します。
     
 - Project Server Queue Service を必要とする PSI の呼び出しと、必要としない呼び出しを区別します。非同期 PSI メソッドの名前は Queue で始まります (**QueueCreateProject** など)。
     
-- 登録されているローカル イベント ハンドラーを呼び出す PSI 呼び出しを識別します。
+- 登録されているローカルのイベント ハンドラーを呼び出す PSI 呼び出しを識別します。
     
 - Project Calculation Service を必要とする PSI 呼び出しを識別します。
     
-- Project Professional のクライアント側アクティブ キャッシュと連動するサーバー ベースのキャッシュを使用して、Project Server へのラウンドトリップ呼び出しの数を減らします。
+- Project Server へのラウンドトリップ要求を減らすために、Project Professional 内のクライアント側のアクティブ キャッシュと連携動作するサーバー ベースのキャッシュを使用します。
     
-SharePoint サーバーでは、Project Server でユーザーを認証、PSI フォワーダー PSI サービスのバックエンド サービスを使用して、Project Server を実行しているコンピューター上の要求を透過的に送信します。 バックエンド サービスを必要としない要求は、ローカルの Project Web App インスタンス内のビジネス オブジェクトに送信されます。 PSI フォワーダーは、LAN、WAN、およびプロジェクトをオンラインでの処理、Project Server のスケーラビリティ、パフォーマンス、および信頼性を向上します。
+Project Server ユーザーが SharePoint Server から認証された後、PSI フォワーダーは Project Server を実行しているコンピューター上の PSI サービスに、バックエンド サービスを使用する要求を透過的に送信します。 バックエンド サービスを必要としない要求は、ローカル Project Web App インスタンスのビジネス オブジェクトに送信されます。 PSI フォワーダーは、LAN や WAN を介した Project Server の処理および Project Online での Project Server の処理についてスケーラビリティ、パフォーマンス、および信頼性を向上させます。
   
-Project Web App は、ASP.NET 4.0 で開発されています。 (HTML、サーバー コントロール、および静的テキスト) に、.aspx ファイル内のビジュアル要素は、コンパイル済みアセンブリ (.dll ファイル) では、分離コード クラスのプログラミング ロジックとは別です。 最上位のページ、プロジェクト センターでは、レポート センターなどでは、Project Web App では、サイト ページをカスタマイズするには、Web パーツを使用します。 タイムシートの確認] ページで、[サーバー設定] ページなど、**サイトの操作**] メニュー**の編集] ページ**のオプションがないアプリケーション ページは編集できません。 
+Project Web App は、ASP.NET 4.0 を使用して開発されています。 .aspx ファイルの視覚要素 (HTML、サーバー コントロール、および固定テキスト) は、コンパイルされたアセンブリ (.dll ファイル) にある分離コード クラスのプログラミング ロジックから隔離されています。 最上位のページ、プロジェクト センター、レポート センターなどの Project Web App 内のサイト ページは、Web パーツを使用してカスタマイズできます。 [サーバー設定] ページや [タイムシートの確認] ページなど、 [**サイト アクション**] メニューに [**ページの編集**] オプションがないアプリケーション ページは編集できません。 
   
 ### <a name="the-csom-and-the-project-server-interface"></a>CSOM と Project Server Interface
 <a name="pj15_Architecture_PSI"> </a>
 
-PSI は 22 の公共サービス、**プロジェクト**、**リソース**、**カスタム フィールド**、**状態管理**などの影響を考慮します。 PSI には、内部使用のための 7 つのプライベート サービスも含まれています。 。 Project Server の基本的な API では、PSI です。CSOM および外部のアプリケーションに、Project Server の機能を公開します。 CSOM には、最も一般的に使用される PSI クラスおよびサード ・ パーティ製のアプリケーションに使用されるメンバーにアクセスするクラスが含まれています。 Project Server 2013 では、プロジェクトのサーバー機能の一部は、CSOM、**管理**、**予定表**、 **PortfolioAnalyses**、および**セキュリティ**サービスなどで利用可能ではありません。 
+PSI は、**プロジェクト**、**リソース**、**CustomField**、および**状態管理**などの 22 の公開サービスに盛り込まれています。 PSI には、内部使用のための非公開サービスが 7 つ含まれています。 PSI は Project Server の基本的な API で、Project Server の機能を、CSOM および外部のアプリケーションに公開します。 CSOM には、最もよく使用される PSI クラスにアクセスするクラスおよびサード パーティ製のアプリケーションで使用されるメンバーが含まれています。 Project Server 2013 では、**管理**、**予定表**、 **PortfolioAnalyses**、および**セキュリティ**サービスなどの Project Server の一部の機能は CSOM で利用できません。 
   
-プロジェクトの評価のための Project Web App の使用の下書きで、発行されると、Project Server データにアクセスするための PSI と、テーブルとビューのプロジェクトのデータベースをアーカイブします。 PSI サービスにアクセスするにはプロキシ ファイルまたは、WCF サービスまたは ASMX web サービスのプロキシ アセンブリを使用します。
+Project Professional 2013 および Project Web App は、PSI を使用して Project データベースの下書き、発行済み、アーカイブのテーブルおよびビューの Project Server データにアクセスします。 WCF サービスまたは ASMX Web サービスのいずれかの場合、プロキシ ファイルまたはプロキシ アセンブリを通じて PSI サービスにアクセスできます。
   
 > [!NOTE]
-> CSOM は、サードパーティの Project Server の開発者の推奨されるインタ フェースです。オンプレミスの Project Server のインストールとオンライン プロジェクトにアクセスするアプリケーションを使用できます。 CSOM には、アプリケーションを必要とする機能が含まれている場合、新しいアプリケーションを開発するため、CSOM を使用することをお勧めします。 
+> サードパーティの Project Server 開発者には、CSOM インターフェイスがお勧めです。CSOM は、オンプレミスの Project Server インストールおよび Project Online の両方にアクセスするアプリケーションに使用できます。 開発する新しいアプリケーションに必要な機能が CSOM に含まれている場合は、CSOM を使用して開発することをお勧めします。 
   
-一部の基幹業務 (LOB) アプリケーションと Project Server 2010 用に開発されている他のサード ・ パーティ製アプリケーション、CSOM でまだ表されない PSI サービスが必要です。 プロジェクトのサーバーの設置型インストールのみを対象にする場合、アプリケーションは、WCF インターフェイスまたは PSI の ASMX インターフェイスを使用するのには継続できます。
+Project Server 2010 用に開発された一部の基幹業務 (LOB) アプリケーションやその他のサードパーティ アプリケーションでは、まだ CSOM で表現されていない PSI サービスが必要です。 PSI サービスの対象が Project Server のオンプレミス インストールのみの場合、アプリケーションでは引き続き PSI の WCF インターフェイスまたは ASMX インターフェイスを使用できます。
   
-クライアント アプリケーションは、サービス プロキシを通じて PSI を呼び出します。 WCF インターフェイスを使用するクライアントからのすべての PSI サービスのアクセス`https://ServerName/ProjectServerName/_vti_bin/psi/ProjectServer.svc`。 ASMX web サービスのインタ フェースを使用するクライアントは、特定のサービスの Project Web App の URL を使用します。 **リソース**のサービスが、たとえば、 `https://ServerName/ProjectServerName/_vti_bin/psi/resource.asmx?wsdl`。 アプリケーションでは、プロジェクトのサーバーをイントラネットにアクセスすることはない場合は、Project Web App サーバー (図 3 では表示されません)、境界ネットワークで使用できます。
+クライアント アプリケーションでは、サービス プロキシを通して PSI を呼び出します。 WCF インターフェイスを使用するクライアントでは、`https://ServerName/ProjectServerName/_vti_bin/psi/ProjectServer.svc`からのすべての PSI サービスにアクセスします。 ASMX Web サービス インターフェイスを使用するクライアントでは、このサービスのために Project Web App の URL を使用します。 たとえば、**リソース**サービスは、`https://ServerName/ProjectServerName/_vti_bin/psi/resource.asmx?wsdl` から利用できます。 アプリケーションが Project Server にイントラネット アクセスできない場合、アプリケーションは境界ネットワーク内の Project Web App サーバーを使用することができます (図 3 には表示されていません)。
   
-図 4 は、ワークフロー マネージャーのクライアント 1.0 の SharePoint Server 2013 は、Project Server 2013 とローカルのワークフローの管理サイトの単一サーバー インストールの [**インターネット インフォメーション サービス (IIS) マネージャー**の **[接続**] ウィンドウを示します。 SharePoint サイト コレクション (A) には、フロント エンドの PSI サービスが含まれています、`_vti_bin\PSI`仮想サブディレクトリです。 SharePoint Web サービス アプリケーション (B) には、プロジェクト サービス アプリケーションのバックエンドの PSI サービスに、`508c23fb7dfd4c83a8919fae24bc68c5/PSI`仮想サブディレクトリです。 GUID は、Project Server のインストールのプロジェクト サービス アプリケーション インスタンスの名前です。 
+図 4 は、SharePoint Server 2013 の単一サーバーインストール、Project Server 2013、および ワークフロー マネージャー クライアント 1.0 のローカルのワークフロー管理サイトでの、**インターネット インフォメーション サービス (IIS) マネージャー** の [**接続**] ウィンドウを示しています。 SharePoint サイト コレクション (A) では、フロント エンド PSI サービスは `_vti_bin\PSI` 仮想サブディレクトリに含まれています。 SharePoint Web サービス アプリケーション (B) では、Project Service アプリケーションのバック エンド PSI サービスは `508c23fb7dfd4c83a8919fae24bc68c5/PSI` 仮想サブディレクトリに含まれています。 GUID は、この Project Server のインストールでの Project Service アプリケーションのインスタンスの名前です。 
   
-**図 4. フロントエンド PSI (A) とバックエンド PSI (B) が表示された IIS マネージャー**
+**図 4. フロント エンド PSI (A) とバック エンド PSI (B) を示す IIS マネージャー**
 
-![PSI をフロント エンドとバックエンドの PSI](media/pj15_Architecture_PSI_IIS.gif "PSI をフロント エンドとバックエンドの PSI")
+![フロント エンド PSI とバック エンド PSI](media/pj15_Architecture_PSI_IIS.gif "フロント エンド PSI とバック エンド PSI")
   
-クライアント アプリケーションは、バックエンド プロジェクト サービス アプリケーションで PSI の WCF サービスに直接アクセスできません。 プロジェクト オンライン、クライアント アプリケーションへのアクセスを必要としないし、LOB アプリケーションのコンポーネントは、PSI のプロキシを使用します。 WCF のインターフェイスの図 4 では、**リソース**のサービスは、たとえば、バックエンドの URL になります`https://ServerName:32843/508c23fb7dfd4c83a8919fae24bc68c5/psi/resource.svc`。 ポート 32843 では、SharePoint Web サービス アプリケーションの既定の HTTP ポート (HTTPS 通信用のポートでは 32844)。 ただし、Project Web App のブロックの web.config ファイルに直接アクセスするバックエンドの PSI サービスです。
+クライアント アプリケーションは、バック エンド Project Service アプリケーションの PSI 用の WCF サービスに直接アクセスできません。 クライアント アプリケーションが Project Online にアクセスする必要がない場合、クライアント アプリケーションおよび LOB アプリケーションのコンポーネントは PSI でプロキシを使用できます。 例えば、図 4 の**リソース**サービスの WCF インターフェイスのバックエンド URL は `https://ServerName:32843/508c23fb7dfd4c83a8919fae24bc68c5/psi/resource.svc` になります。 ポート 32843 は、SharePoint Web サービス アプリケーションの既定の HTTP ポートです (32844 は HTTPS 通信用のポートです)。 ただし、Project Web App の web.config ファイルは、バック エンド PSI サービスへの直接のアクセスをブロックします。
   
 > [!NOTE]
-> Project 2013 SDK ダウンロードには、WCF サービスと、ASMX サービスの PSI プロキシ ファイルとプロキシ アセンブリにコンパイルするための手順が含まれています。 > WCF インターフェイスを使用して、更新済みの PSI プロキシ ファイルを作成するにはには、Project Server コンピューター上で直接、svcutil.exe ユーティリティまたは Visual Studio を使用する必要が。 
+> Project 2013 SDK ダウンロードには、WCF サービスと ASMX サービス用の PSI プロキシ ファイルと、それらのファイルをプロキシ アセンブリにコンパイルする手順が含まれています。 > WCF インターフェイスを使用する更新版の PSI プロキシ ファイルを作成するには、Project Server コンピューター上で直接 svcutil.exe ユーティリティまたは Visual Studio を使用する必要があります。 
   
-PSI サービスのメンバーは通常生成またはビジネス オブジェクトと情報を交換するための手段として型指定された**DataSet**オブジェクトを使用します。 PSI 開発のためのいくつかの異なるモデルが用意されています。 たとえば、**リソース****名**、および**LookupTable**の PSI サービスでは、XML オブジェクトをフィルターを使用して、**データセット**を操作するため、他のサービスがないです。**状態管理**サービスの一部のメソッドは、他の方法およびサービスの操作を行いますしないときに_changeXml_パラメーターを使用します。 CSOM は、データセットを使用していません。 CSOM、PSI よりも別のプログラミング モデルには、.NET アセンブリまたは JavaScript を使用することができます、CSOM を使用した開発が一般に簡単、PSI を開発するよりもより一貫性のあります。 
+通常、PSI サービスのメンバーは、ビジネス オブジェクトと情報を交換するための手段として、型指定された **DataSet** オブジェクトを作成または使用します。 また、PSI 開発ではいくつかの異なるモデルが使用されます。 たとえば、**リソース**、**CustomFields**、および **LookupTable** といった PSI サービスでは**DataSet** 操作で XML フィルター オブジェクトが使用されますが、他のサービスでは使用されません。また、_changeXml_ パラメーターは**状態管理**サービスの一部のメソッドで使用されますが、他のメソッドやサービスでは使用されません。 CSOM はデータセットを使用しません。 CSOM のプログラミング モデルは PSI のものと異なり、.NET アセンブリまたは JavaScript のいずれも使用できますが、一般的には、CSOM を使用する開発は PSI を使用する開発に比べてより簡単で一貫生があります。 
   
-PSI の詳細については、[プロジェクトの PSI リファレンスの概要](project-psi-reference-overview.md)を参照してください。 CSOM の詳細については、 [Project 2013 のクライアント側オブジェクト モデル (CSOM)](client-side-object-model-csom-for-project-2013.md)を参照してください。
+PSI に関する詳細については、「[プロジェクト PSI リファレンスの概要](project-psi-reference-overview.md)」を参照してください。 CSOM に関する詳細については、「[Client-side object model (CSOM) for Project Server 2013](client-side-object-model-csom-for-project-2013.md)」を参照してください。
   
-### <a name="business-objects-in-the-wfe-and-the-project-service-application"></a>WFE のビジネス オブジェクトと Project サービス アプリケーション
+### <a name="business-objects-in-the-wfe-and-the-project-service-application"></a>WFE および Project Service アプリケーションのビジネス オブジェクト
 <a name="pj15_Architecture_BusinessObjects"> </a>
 
 Project Server の内部オブジェクト モデルには、プロジェクトやリソースなどの論理エンティティを表すビジネス オブジェクトが含まれます。クライアント アプリケーションが必ず CSOM または PSI を介してビジネス オブジェクトにアクセスし、ビジネス オブジェクトがプロジェクト データベースの下書き、発行済み、およびアーカイブの各テーブルとビューにアクセスします。
@@ -193,59 +193,59 @@ Project Server の内部オブジェクト モデルには、プロジェクト�
     
 - **ビジネス エンティティ**は、タイムシート、プロジェクト ポートフォリオ、モデルなどのオブジェクトです。ビジネス エンティティは追加のビジネス ロジックを含み、通常はコア エンティティの組み合わせから構築されます。 
     
-- **サポート エンティティ**は、セキュリティ、検証などのオブジェクトです。 
+- **サポート エンティティ**は、セキュリティや検証などのオブジェクトです。 
     
-Project Server 2010 では、すべてのビジネス オブジェクトは、プロジェクト サービス アプリケーションで実装されます。 Project Server 2013 で、WFE は多くの同期メソッドを処理し、プロジェクトの計算サービスを必要としないビジネス オブジェクトをホストします。 **DeleteProject**や**ReadAssignments**などの同期の PSI メソッドは、Project Server キューのサービスを使用しません。 PSI での非同期メソッドで始まる名前を持つ`Queue`、 **QueueCreateProject**や**QueueUpdateTimesheet**などです。 非同期メソッドは、コントロールがユーザーに返されるときに、メソッドの処理をスケジュールするプロジェクト サーバー キュー サービスにメッセージを送ります。
+Project Server 2010 では、すべてのビジネス オブジェクトは、Project Service アプリケーションで実装しています。 Project Server 2013 では、同期メソッドを処理するビジネス オブジェクトや Project Calculation Service を必要としないビジネス オブジェクトの多くが WFE でホストされます。 **DeleteProject** や **ReadAssignments** などの同期型の PSI メソッドは Project Server Queue Service を使用しません。  PSI の非同期メソッドには、**QueueCreateProjec** や **QueueUpdateTimesheet** などの `Queue` で始まる名前が付いています。 非同期メソッドは Project Server Queue Service にメッセージを送信し、メソッドの処理をスケジュールするとともに、制御をユーザーに戻します。
   
 PSI フォワーダーは、どの要求を Project サービス アプリケーションに送るか、WFE のビジネス オブジェクトがどの要求を処理できるかを判断します。WFE のビジネス オブジェクトは、WFE のその他の SharePoint の処理が構成データベースやコンテンツ データベースに直接アクセスするのと同じように、Project サービス アプリケーションをバイパスして、プロジェクト データベースに直接アクセスできます。WFE で多くのビジネス オブジェクトを実行すると、Project Server の効率が向上し、アプリケーション層の負荷が低減され、Project Server は作業負荷の増加に備えてスケールアップできます。
   
 > [!NOTE]
-> Project Server 2013 では、WFE と、バックエンド Project Server コンピューターにローカルのイベント ハンドラーを配置する必要があります。 
+> Project Server 2013 では、WFE とバックエンド Project Server コンピューターにローカル イベント ハンドラーを配置する必要があります。 
   
 ### <a name="project-server-database"></a>Project Server データベース
 <a name="pj15_Architecture_DAL"> </a>
 
-Project Server 2013 のでは、以前のバージョンの 4 つの Project Server データベースは SQL Server のプロジェクトのデータベースを 1 つに結合されます。 プロジェクトの既定のデータベース名は、ProjectService です。 レポート テーブルおよびビューで、前の名前を保持する、 `dbo` dbo のようなプリフィックスです。MSP_EpmProject dbo.MSP_EpmProject_UserView。 テーブルとビューの下書きデータベースに含まれていたが、`draft`のプレフィックスです。 発行済みデータベースからテーブルとビューがある、`pub`のプレフィックスです。 アーカイブ データベースからテーブルとビューがある、`ver`のプレフィックスです。 
+Project Server 2013 では、以前のバージョンの 4 つの Project Server データベースは、SQL Server 内で 1 つのProject データベースに統合されます。 Project データベースの既定の名前は ProjectService です。 レポート テーブルおよびビューは以前の名前を引き継ぎますが、dbo.MSP_EpmProject や dbo.MSP_EpmProject_UserView などのように `dbo` プレフィックスが追加されます。 以前に下書きデータベースに含まれていたテーブルおよびビューのプレフィックスは `draft` です。 発行済みデータベースからのテーブルおよびビューのプレフィックスは `pub` です。 アーカイブ データベースからのテーブルおよびビューのプレフィックスは `ver` です。 
   
 > [!IMPORTANT]
-> 直接のアクセスが、ドラフトではサポートされていません (`draft`プレフィックス)、公開されている (`pub`プレフィックス)、およびアーカイブ (`ver`プレフィックス) のテーブルとビューです。 のみ、レポート テーブルおよびビューを持つレポートを使用する必要があります、`dbo`のプレフィックスです。 
+> 下書き (`draft` プレフィックス)、発行済み (`pub` プレフィックス)、アーカイブ (`ver` プレフィックス) のテーブルおよびビューには直接アクセスできません。 レポートでは、`dbo`プレフィックスが付いているレポート テーブルおよびビューのみを使用する必要があります。 
   
-プロジェクト データベースの Project Server データは、次のように分けられています。
+Project Server データは、Project データベースで次のようにパーティション分割されます。
   
-- ドラフト テーブルとビューには、Project Professional と他のアプリケーションによって作成された非公開のプロジェクトからのデータが含まれています。 Project Web App では、ドラフトのテーブルおよびビューからプロジェクトのデータは表示されません。
+- 下書きテーブルおよびビューには、Project Professional および他のアプリケーションで作成された未発行プロジェクトのデータが含まれます。 Project Web App では、下書きテーブルおよびビューのプロジェクト データは表示されません。
     
-- パブリッシュされたテーブルやビューのすべての発行済みプロジェクトとエンタープライズ リソース、エンタープライズ プロジェクトの種類 (EPTs)、グローバルなデータおよびその他のプロジェクト テンプレートが含まれています。 発行されたプロジェクトは、Project Web App で表示されます。 パブリッシュされたデータには、Project Web App の (タイムシート、モデル、ビュー、およびなど) に固有のテーブルとグローバル ・ データ ・ テーブル (ユーザー設定フィールド、参照テーブル、Project Server のアクセス許可、およびメタデータ) も含まれています。
+- 発行済みテーブルおよびビューには、すべての発行済みプロジェクトとエンタープライズ リソース、エンタープライズ プロジェクトの種類 (EPT) のグローバル データ、およびその他のプロジェクト テンプレートが格納されます。 発行済みプロジェクトは、Project Web App に表示されます。 発行済みデータには、Project Web App に固有のテーブル (タイムシート、モデル、ビューなど) およびグローバル データ テーブル (ユーザー設定フィールド、参照テーブル、Project Server 承認アクセス許可、メタデータ) も格納されます。
     
-- アーカイブ データには、プロジェクト、リソース、ユーザー設定フィールドなどのデータのバックアップ バージョンが保存されます。
+- アーカイブ データは、プロジェクト、リソース、ユーザー設定フィールド、およびその他のデータのバックアップ バージョンを保存します。
     
-- サード ・ パーティ製のアプリケーションで読み取り専用のアクセス、レポート、レポートのデータを使用できます。 プロジェクト サーバーの OLAP キューブを使用して、レポートのビューを持つ、`_OlapView`のサフィックスです。 OLAP キューブ設置の Project Server のインストールの場合では使用しないプロジェクトをオンラインで利用可能です。 
+- レポート データは、サード パーティ製のアプリケーションでの読み取り専用アクセスとレポートのために使用できます。 Project Server OLAP キューブは、`_OlapView` サフィックスが付いているレポート ビューを使用します。 OLAP キューブはオンプレミスの Project Server インストールで使用できますが、Project Online では使用できません。 
     
     レポート データは広範であり、ほぼリアルタイムで更新されます。レポート テーブルおよびビューは、読み取り専用のレポート生成用に最適化されています。たとえば、レポート テーブルは、冗長なデータを提供し、リレーショナル テーブルの数を減らすために、非正規化されています。
     
 リソースやプロジェクトなどの論理エンティティは複数のテーブルに分かれている場合があり、特定のエンティティに関連するすべてのテーブルには同じ主キーが設定されています。主キーは、特定のエンティティの 1 つのインスタンスを一意に識別する単一の列の GUID です。
   
-プロジェクトの Project Web App インスタンスごとにサーバーのデータは、別の名前で別のプロジェクト データベースに格納されます。 Project Server に直接アクセスするクライアント アプリケーションは、レポート テーブルおよびビューに直接読み取る。 リモート アクセスは、クライアント アプリケーションは、レポート データを取得するのに OData インターフェイスと REST インターフェイスを使用できます。 クライアントは、CSOM のみか、PSI を使用して、発行されると、下書きにアクセスして、テーブルとビューをアーカイブする必要があります。 レポート データ サービス (RDS、図 3 に示されていない) では、ほぼリアルタイムにパブリッシュされたデータからレポート データを更新します。 プロジェクト データベースは、別のサーバーに配置できます。
+Project Web App の各インスタンスの Project Server データは、それぞれ別の名前で個別の Project データベースに保存されます。 Project Server に直接アクセスできるクライアント アプリケーションは、レポート テーブルおよびビューを直接読み取ることができます。 リモート アクセスの場合、クライアント アプリケーションは OData インターフェイスおよび REST インターフェイスを使用してレポート用のデータを取得できます。 クライアントは、下書き、発行済み、アーカイブのテーブルおよびビューにアクセスするのに、CSOM または PSI のみを使用する必要があります。 レポート データ サービス (RDS、図 3 に示されていません) は、発行済みデータからのレポート データを、ほぼリアルタイムで更新します。 Project データベースは、別のサーバーに配置することができます。
   
-スキーマは、レポート テーブルおよびビューにのみ記載されています。 設置型のプロジェクトのサーバーのインストールの場合、レポートのテーブルおよびプロジェクトのデータベース スキーマで定義されていないエンティティのビューを追加できます。 カスタム、オンプレミス アプリケーションに別個のデータベースを作成することもできます。 変更は、下書きはサポートされていません、発行およびテーブルとビューをアーカイブします。 プロジェクト データベースがプロジェクトをオンラインで直接アクセス可能でないため、レポート テーブルおよびビューは変更できません。 ただし、SQL Azure のアカウントがある場合は、プロジェクトをオンラインでカスタムの使用するための別のデータベースを作成できます。
+スキーマは、レポート テーブルおよびビューに関してのみ記述されます。 オンプレミスの Project Server インストールの場合は、Project データベース スキーマで定義されていないエンティティのレポート テーブルおよびビューを追加できます。 カスタム オンプレミス アプリケーションごとに個別のデータベースを作成することもできます。 下書き、発行済み、アーカイブのテーブルおよびビューの変更はサポートされていません。 Project Online では Project データベースへ直接アクセスできないため、レポート テーブルおよびビューは変更できません。 ただし、SQL Azure アカウントがある場合は、Project Online でカスタム使用するために個別のデータベースを作成することができます。
   
 ### <a name="event-receivers"></a>イベント レシーバー
 <a name="pj15_Architecture_EventHandlers"> </a>
 
-ローカル イベント ハンドラーとリモート イベント レシーバーを Project Server には、サード ・ パーティ製の機能拡張を作成するか、プロジェクトの発行など、プロジェクトのサーバー イベントへの応答を有効にします。 Project Server 2010 では、すべてのイベント ハンドラーは、ローカルでを導入したり、WFEs では、Project Server を実行しているコンピューター上で直接、プロジェクトのサーバー イベント処理システム内で実行して、完全信頼コードで記述されました。 完全に信頼できるイベント ハンドラーは、オンラインのプロジェクトの場合に使用することはできません、ために、Project Server 2013 は SharePoint Server 2013 でリモート イベント レシーバーのようなリモート イベント レシーバーを実装します。 Project Server 2013 の設置型インストールには、従来の完全に信頼できるイベント ハンドラーとリモート イベント レシーバーを使用できます。
+Project Server のローカルのイベント ハンドラーおよびリモートのイベント レシーバーは、プロジェクトの作成や発行などの Project Server イベントへの応答でのサード パーティ拡張機能を有効にします。 Project Server 2010 では、すべてのイベント ハンドラーはローカルで、完全信頼コードで記述され、Project Server を実行しているコンピューター上で WFE に対して直接展開され、そして Project Server イベント システム内で実行されます。 Project Online では完全信頼イベント ハンドラーを使用できないため、Project Server 2013 では SharePoint Server 2013 のリモート イベント レシーバーに似たリモート イベント レシーバーを実装されます。 Project Server 2013 のオンプレミス インストールでは、従来の完全信頼イベント ハンドラーおよびリモートのイベント レシーバーがサポートされています。
   
-Project Server のリモート イベント レシーバーは、Microsoft Azure または SOAP web サービスをサポートするその他の環境で実行される SOAP エンドポイントのカスタムの web サービスで実装できます。 Project Server アプリケーション パッケージは、アプリケーションと共にインストールされているリモート イベント レシーバーを含めることができます。
+Project Server リモート イベント レシーバーは、SOAP Web サービスをサポートする Microsoft Azure などの環境で稼働する SOAP エンドポイントのあるカスタム Web サービスに実装できます。 Project Server アプリケーション パッケージにリモート イベント レシーバーを含めて、アプリケーションと共にインストールされるようにすることができます。
   
-リモート イベント レシーバーは、CSOM 端点 (図 3 では表示されません) を使用して Project Server にコールバックできます。 リモート イベント レシーバーを呼び出すには、呼び出しを発行するプロジェクトのサーバーのイベント システムと Project Web App インスタンス (またはプロジェクトをオンラインで Project Web App のテナント) からの情報が含まれています。 リモート イベント レシーバーを作成し、複数の Project Server のインストールで使用できる 1 つの web サービスをホストできます。 対照的に、ローカルの完全信頼のイベント ハンドラーは、Project Server のインストールごとに展開する必要があります。
+リモート イベント レシーバーは、CSOM エンドポイント (図 3 には表示されていません) を使用して Project Server へのコールバックを行えます。 リモート イベント レシーバーへの呼び出しには、Project Server イベント システムと、呼び出しを発行する Project Web App インスタンス (または Project Online での Project Web App テナント) からの情報が含まれます。 リモート イベント レシーバーは、複数の Project Server インストールで使用できる単一の Web サービスを作成しホストすることを可能にします。 一方、ローカルの完全信頼イベント ハンドラーは、Project Server のそれぞれのインストールに展開する必要があります。
   
-### <a name="publishing-and-server-side-scheduling"></a>発行とサーバー側スケジューリング
+### <a name="publishing-and-server-side-scheduling"></a>発行とサーバー側のスケジューリング
 <a name="pj15_Architecture_PublishingScheduling"> </a>
 
-Project Server 2013 には、手動と自動のプロジェクト スケジュールの更新プログラムの両方がサポートされています。 既定のプロセスは、手動のスケジュール更新です。 プロジェクト マネージャーをチェック アウトと Project Professional または Project Web App でプロジェクトを開く、変更を適用を保存し、変更する、利用可能なすべてのプロジェクトを発行します。、 Project Professional には、変更を計算し、Project Server に変更を保存し、スケジュール エンジンがあります。 Project Server 2010 では、サーバー側のスケジュール エンジンとは、Project Professional のスケジュール エンジンから別の実装です。
+Project Server 2013 では、プロジェクト スケジュールの手動更新と自動更新の両方がサポートされています。 既定の処理は、手動によるスケジュール更新です。 つまり、プロジェクト マネージャーが Project Professional または Project Web App でプロジェクトをチェック アウトして開き、変更を適用し、すべてのユーザーが変更内容を利用できるようにプロジェクトを保存し発行するという処理です。 Project Professional にはスケジューリング エンジンがあり、変更内容を計算して Project Server に変更を保存します。 Project Server 2010 では、サーバー側のスケジューリング エンジンは、Project Professional のスケジューリング エンジンとは異なる実装です。
   
-Project Server 2013 のでは、プロジェクトの計算サービスは、評価のためのプロジェクト内にある同じスケジューリング エンジンを実装します。 プロジェクトの計算サービスは、 **Microsoft Project サーバーの計算サービス**をという名前の Windows サービスで実行されます。 Project Web App または CSOM 結果を正確に同じスケジュールの変更、Project Professional で使用するサード ・ パーティ製アプリケーションとプロジェクトのスケジュールを編集します。
+Project Server 2013 では、Project Calculation Service は Project Professional 2013 に含まれるスケジュール エンジンと同じスケジューリング エンジンを実装します。 Project Calculation Service は、**Microsoft Project Server Calculation Service** という名前の Windows サービスで実行されます。 Project Web App または CSOM を使用するサード パーティのアプリケーションでプロジェクト スケジュールを編集する場合、Project Professional で行う場合と全く同じスケジュール変更が行われます。
   
 > [!NOTE]
-> PSI を使用するサード ・ パーティ製アプリケーションは、Project Web App を計算するためのスケジュールからいくつかのスケジュールの違いを表示する可能性があります。 下位互換性のためは、サーバー側でもスケジュール設定を行う PSI のパブリック メソッドは、Project Server 2010 で導入されたスケジューリング エンジンを使用します。 **QueueUpdateProject2**、Project Server 2013 の新しい PSI メソッドは例外です。 などのスケジュール エンジンが古いはサブプロジェクトまたは他のプロジェクトへのリンクをスケジュールしませんし、達成額フィールドは計算されません。 避けるために可能性のあるサードパーティ製のアプリケーションと Project Professional または Project Web App では、間の相違をスケジューリングする必要がありますアプリケーションを開発する、CSOM で可能な場合。 
+> PSI を使用するサード パーティのアプリケーションでは、Project Web App で計算されるスケージュールとは一部異なるスケジューリングが行われる場合があります。 サーバー側のスケジューリングを行う公開 PSI メソッドは、下位互換性のために、Project Server 2010 で導入されたスケジューリング エンジンを引き続き使用します。 Project Server 2013 での新しい PSI メソッドの **QueueUpdateProject2** は例外です。 たとえば、従来のスケジューリング エンジンではサブプロジェクトまたは他のプロジェクトへのリンクはスケジュールされず、達成額フィールドも計算されません。 サードパーティ アプリケーションと Project Professional または Project Web App の間でのスケジュールの相違の可能性を避けるために、可能な場合はCMOS 内でアプリケーションを開発してください。 
   
 Project Server では、以下の手順により、プロジェクト マネージャーが下書きバージョンを使用している間に、プロジェクトの発行済みバージョンを更新できます。
   
@@ -257,16 +257,16 @@ Project Server では、以下の手順により、プロジェクト マネー�
     
    - Project Professional でプロジェクトの発行が試みられます。
     
-3. 競合がある場合はプロジェクト マネージャーに知らせ、プロジェクト マネージャーは下書きバージョンを発行する前に競合を解決する必要があります。
+3. 相違がある場合、プロジェクト マネージャーに通知が送信されます。下書きバージョンを公開する前に、相違を解決する必要があります。
     
 ## <a name="see-also"></a>関連項目
 
 - [開発者向け Project 2013 の概要](https://msdn.microsoft.com/library/8da91ab0-af4f-429f-8241-490600e3f7bd%28Office.15%29.aspx)
 - [Project Server プログラミング](project-server-programmability.md)  
 - [Project 2013 のクライアント側オブジェクト モデル (CSOM)](client-side-object-model-csom-for-project-2013.md)  
-- [PSI のすること、しないこと](what-the-psi-does-and-does-not-do.md)  
+- [PSI ができること、できないこと](what-the-psi-does-and-does-not-do.md)  
 - [Project Server ワークフロー開発の作業開始](getting-started-developing-project-server-workflows.md)   
-- [プロジェクト PSI リファレンスの概要](project-psi-reference-overview.md)   
+- [Project PSI 参照の概要](project-psi-reference-overview.md)   
 - [Open Data Protocol](https://www.odata.org/)
     
 
