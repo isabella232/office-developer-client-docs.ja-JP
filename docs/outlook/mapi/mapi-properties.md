@@ -1,35 +1,35 @@
 ---
-title: MAPI プロパティ
+title: MAPI のプロパティ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 3b980217-b65b-442b-8c18-b8b9f3ff487a
 description: '最終更新日: 2013 年 3 月 12 日'
-ms.openlocfilehash: 8550963a50ea2475a3f5a6869264eb714eef6b5a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: d08e0526035010d5eaf272dfa9b3311c7aeda6c0
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585403"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28719313"
 ---
-# <a name="mapi-properties"></a>MAPI プロパティ
+# <a name="mapi-properties"></a>MAPI のプロパティ
 
  
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このセクションには、Microsoft Outlook メッセージング API (MAPI) によってサポートされる標準のプロパティが含まれています。 各標準的なプロパティは、1 つまたは複数の関連する MAPI プロパティに対応します。 標準のプロパティの詳細については、[標準の MAPI プロパティ](mapi-canonical-properties.md)を参照してください。 MAPI プロパティと、各オブジェクトに使用できるプロパティの一覧の動作の一般的な説明については、 [MAPI プロパティの概要](mapi-property-overview.md)を参照してください。 プロパティに関連するマクロの詳細については、 [SPropValue](spropvalue.md)構造体のリファレンス ページを参照してください。 MAPI プロパティと既定のプロパティ名の対応の包括的な一覧は、 [MAPI 名前を標準のプロパティ名にマッピング](mapping-mapi-names-to-canonical-property-names.md)し、 [MAPI の名前を標準のプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)を参照してください。 
+このセクションには、Microsoft Outlook メッセージ API (MAPI) でサポートされている標準プロパティが含まれています。 それぞれの標準プロパティは、1 つまたは複数の関連する MAPI プロパティに対応しています。 標準プロパティの詳細については、「[MAPI の標準プロパティ](mapi-canonical-properties.md)」を参照してください。 プロパティを使用した MAPI の機能についての一般的な説明と、各オブジェクトで使用できるプロパティのリストは、「[MAPI のプロパティの概要](mapi-property-overview.md)」を参照してください。 プロパティに関連するマクロの詳細については、[SPropValue](spropvalue.md) 構造体の参考ページを参照してください。 MAPI のプロパティと、それらの標準プロパティ名へのマッピングの包括的なリストは、「[MAPI の名前を標準プロパティの名前にマッピングする](mapping-mapi-names-to-canonical-property-names.md)」および「[標準プロパティの名前を MAPI の名前にマッピングする](mapping-canonical-property-names-to-mapi-names.md)」を参照してください。 
   
-メモ: OLE バリアント型配列のメンバーとは異なり MAPI プロパティが複数値を持つ配列内のすべてのメンバーが同じ型の。 
+注: OLE バリアント型配列のメンバーとは異なり、MAPI の複数値を持つプロパティの配列にある各メンバーは同じ型です。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI ���t�@�����X](mapi-reference.md)
+[MAPI リファレンス](mapi-reference.md)
 

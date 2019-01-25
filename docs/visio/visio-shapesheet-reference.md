@@ -1,43 +1,43 @@
 ---
-title: Visio ShapeSheet のリファレンス
+title: Visio シェイプ シート リファレンス
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
 ms.assetid: ca06502c-884c-c1ad-d2c9-31f2b2b30ae5
-description: このリファレンスには、概念の概要、プログラミング タスク、サンプル、および Visio 2013 に基づくソリューションを開発するときに参照が含まれています。
-ms.openlocfilehash: 097ac45b76dcf725575fd1c94dd315a1bd25d724
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: MT
+description: このリファレンスには、Visio 2013 に基づくソリューションを開発するときに役立つ概念情報、プログラミング タスク、サンプル、および参考情報が含まれています。
+localization_priority: Priority
+ms.openlocfilehash: 56fa9ee3fa8b86eea08039b0064efed978735e3d
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25391648"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726366"
 ---
-# <a name="visio-shapesheet-reference"></a>Visio ShapeSheet のリファレンス
+# <a name="visio-shapesheet-reference"></a>Visio シェイプ シート リファレンス
 
-このリファレンスには、概念の概要、プログラミング タスク、サンプル、および Visio 2013 に基づくソリューションを開発するときに参照が含まれています。
+このリファレンスには、Visio 2013 に基づくソリューションを開発するときに役立つ概念情報、プログラミング タスク、サンプル、および参考情報が含まれています。
   
-このコンテンツに関する質問、コメントをお待ちします。 **[Docthis@microsoft.com](mailto:docthis@microsoft.com)** にフィードバックを送信することができます。 
+このコンテンツに関する質問やコメントをお送りください。 **[docthis@microsoft.com](mailto:docthis@microsoft.com)** 宛にフィードバックを送信できます。 
   
- **初版**: 2012 年 7 月 | **更新**: 2012 年 10 月
+ **初版**: 2012 年 7 月| **更新**: 2012 年 10 月
   
-ここでは、次のセクションを掲載しています。
+このドキュメントには、次のセクションが含まれています。
   
-- [新](what-s-new-for-visio-shapesheet-developers.md): オブジェクトをアルファベット順に新しいメンバーの一覧を提供します。
+- [新機能](what-s-new-for-visio-shapesheet-developers.md): 新しいメンバーをオブジェクトごとに、アルファベット順でリストします。
     
-- [概念](concepts-visio-shapesheet.md): Visio シェイプ シートのカスタム ソリューションを開発するための重要な概念を提供します。
+- [概念](concepts-visio-shapesheet.md): カスタムの Visio シェイプシート ソリューションを開発するときの、重要な概念について説明します。
     
-- [一般的な作業](common-tasks-visio-shapesheet.md): ShapeSheet の一般的な作業のための簡単な手順をいくつか提供します。
+- [よく使う機能](common-tasks-visio-shapesheet.md): 最も一般的なシェイプシートのタスク用に、簡単な手順を提供します。
     
-- [参照](reference-visio-shapesheet.md): 参照は、Visio のシェイプ シートの関数、セル、行、およびセクションの資料です。
+- [リファレンス](reference-visio-shapesheet.md): Visio シェイプシートの関数、セル、行、およびセクションに関する参照資料を提供します。
     
 ## <a name="see-also"></a>関連項目
 
 - [Visio デベロッパー センター](https://msdn.microsoft.com/office/aa905478.aspx)    
 - [マイクロソフト製品のアクセシビリティ機能](https://www.microsoft.com/enable/products/default.aspx)    
 - [ドキュメントの表記規則](https://msdn.microsoft.com/office/aa905365.aspx)   
-- [Visio SDK の著作権表示](visio-sdk-copyright-notice.md)
+- [Visio SDK の著作権情報](visio-sdk-copyright-notice.md)
 
     
 

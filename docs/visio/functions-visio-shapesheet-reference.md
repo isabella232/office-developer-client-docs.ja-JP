@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
 ms.assetid: 928b8cff-c314-4502-be4f-daa44503c7f0
-ms.openlocfilehash: b803c2cafbe79ca2e965ec18250a0db6b7cb8b67
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 606f34af82a8acd3152d672c1a20fae9f70d7900
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805467"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28712870"
 ---
 # <a name="functions-visio-shapesheet-reference"></a>関数 (Visio シェイプシート リファレンス)
 
@@ -83,7 +83,7 @@ ms.locfileid: "19805467"
     
 - [COSH 関数](cosh-function.md)
     
-- [COS Function (VisioShapeSheet)](cos-function-visioshapesheet.md)
+- [COS 関数 (VisioShapeSheet)](cos-function-visioshapesheet.md)
     
 - [CREATOR 関数](creator-function.md)
     
@@ -97,13 +97,13 @@ ms.locfileid: "19805467"
     
 - [DATETIME 関数](datetime-function.md)
     
-- [DATEVALUE Function (VisioShapeSheet)](datevalue-function-visioshapesheet.md)
+- [DATEVALUE 関数 (VisioShapeSheet)](datevalue-function-visioshapesheet.md)
     
-- [DATE Function (VisioShapeSheet)](date-function-visioshapesheet.md)
+- [DATE 関数 (VisioShapeSheet)](date-function-visioshapesheet.md)
     
 - [DAYOFYEAR 関数](dayofyear-function.md)
     
-- [DAY Function (VisioShapeSheet)](day-function-visioshapesheet.md)
+- [DAY 関数 (VisioShapeSheet)](day-function-visioshapesheet.md)
     
 - [DECIMALSEP 関数](decimalsep-function.md)
     
@@ -169,7 +169,7 @@ ms.locfileid: "19805467"
     
 - [HELP 関数](help-function.md)
     
-- [HOUR Function (VisioShapeSheet)](hour-function-visioshapesheet.md)
+- [HOUR 関数 (VisioShapeSheet)](hour-function-visioshapesheet.md)
     
 - [HSL 関数](hsl-function.md)
     
@@ -201,7 +201,7 @@ ms.locfileid: "19805467"
     
 - [ISERRNA 関数](iserrna-function.md)
     
-- [ISERROR Function (VisioShapeSheet)](iserror-function-visioshapesheet.md)
+- [ISERROR 関数 (VisioShapeSheet)](iserror-function-visioshapesheet.md)
     
 - [ISERRVALUE 関数](iserrvalue-function.md)
     
@@ -233,7 +233,7 @@ ms.locfileid: "19805467"
     
 - [LOCTOPAR 関数](loctopar-function.md)
     
-- [LOC Function (VisioShapeSheet)](loc-function-visioshapesheet.md)
+- [LOC 関数 (VisioShapeSheet)](loc-function-visioshapesheet.md)
     
 - [LOG10 関数](log10-function.md)
     
@@ -255,7 +255,7 @@ ms.locfileid: "19805467"
     
 - [MID 関数 (VisioShapeSheet)](mid-function-visioshapesheet.md)
     
-- [MINUTE Function (VisioShapeSheet)](minute-function-visioshapesheet.md)
+- [MINUTE 関数 (VisioShapeSheet)](minute-function-visioshapesheet.md)
     
 - [MIN 関数](min-function.md)
     
@@ -275,7 +275,7 @@ ms.locfileid: "19805467"
     
 - [NOT 関数](not-function.md)
     
-- [NOW Function (VisioShapeSheet)](now-function-visioshapesheet.md)
+- [NOW 関数 (VisioShapeSheet)](now-function-visioshapesheet.md)
     
 - [NURBS 関数](nurbs-function.md)
     
@@ -339,7 +339,7 @@ ms.locfileid: "19805467"
     
 - [RIGHT 関数 (VisioShapeSheet)](right-function-visioshapesheet.md)
     
-- [ROUND Function (VisioShapeSheet)](round-function-visioshapesheet.md)
+- [ROUND 関数 (VisioShapeSheet)](round-function-visioshapesheet.md)
     
 - [RUNADDONWARGS 関数](runaddonwargs-function.md)
     
@@ -351,7 +351,7 @@ ms.locfileid: "19805467"
     
 - [SAT 関数](sat-function.md)
     
-- [SECOND Function (VisioShapeSheet)](second-function-visioshapesheet.md)
+- [SECOND 関数 (VisioShapeSheet)](second-function-visioshapesheet.md)
     
 - [SEGMENTCOUNT 関数](segmentcount-function.md)
     
@@ -373,7 +373,7 @@ ms.locfileid: "19805467"
     
 - [SINH 関数](sinh-function.md)
     
-- [SIN Function (VisioShapeSheet)](sin-function-visioshapesheet.md)
+- [SIN 関数 (VisioShapeSheet)](sin-function-visioshapesheet.md)
     
 - [SQRT 関数](sqrt-function.md)
     
@@ -405,9 +405,9 @@ ms.locfileid: "19805467"
     
 - [THEMEVAL 関数](themeval-function.md)
     
-- [TIMEVALUE Function (VisioShapeSheet)](timevalue-function-visioshapesheet.md)
+- [TIMEVALUE 関数 (VisioShapeSheet)](timevalue-function-visioshapesheet.md)
     
-- [TIME Function (VisioShapeSheet)](time-function-visioshapesheet.md)
+- [TIME 関数 (VisioShapeSheet)](time-function-visioshapesheet.md)
     
 - [TINT 関数](tint-function.md)
     
@@ -435,6 +435,6 @@ ms.locfileid: "19805467"
     
 - [WEEKDAY 関数 (VisioShapeSheet)](weekday-function-visioshapesheet.md)
     
-- [YEAR Function (VisioShapeSheet)](year-function-visioshapesheet.md)
+- [YEAR 関数 (VisioShapeSheet)](year-function-visioshapesheet.md)
     
 

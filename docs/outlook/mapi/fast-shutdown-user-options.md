@@ -1,33 +1,33 @@
 ---
-title: 高速シャット ダウンのユーザー オプション
+title: 高速シャットダウンのユーザー オプション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 220aeab5-20f6-4520-96c9-8aaa0e8ea15b
 description: '最終更新日: 2012 年 6 月 26 日'
-ms.openlocfilehash: bd541ed09bc661f3697408d3f475928b9ef0bcc1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 3c60862733c6b38e60650ae9daba9bba578fcd58
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585193"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28716370"
 ---
-# <a name="fast-shutdown-user-options"></a>高速シャット ダウンのユーザー オプション
+# <a name="fast-shutdown-user-options"></a>高速シャットダウンのユーザー オプション
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックでは、3 つ Windows レジストリ設定、使用可能な Microsoft Outlook 2010 で起動して、Microsoft Outlook 2013 では、ユーザーの MAPI クライアントの高速シャット ダウンを含むについて説明します。 管理者は、クライアントの高速シャット ダウンの MAPI プロバイダーのサポートによって優先するクライアントのシャット ダウン動作を指定するのにこれらのレジストリ設定を使用できます。 管理者の設定には、MAPI サブシステムが高速シャット ダウンの利用可能なサポートの観点から[IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md)の MAPI クライアントの呼び出しに応答する方法を決定します。 
+このトピックでは、ユーザーの MAPI クライアントを高速シャットダウンするための 3 つの Windows レジストリ設定について説明します。この設定は、この設定は、Microsoft Outlook 2010 から現在の Microsoft Outlook 2013 で使用できます。 この 3 つのレジストリ設定を使用することで、管理者はクライアントの高速シャットダウンに対する MAPI プロバイダーのサポートに応じて優先されるクライアント シャットダウン動作を指定できます。 管理者の設定により、MAPI サブシステムが [IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) に対する MAPI クライアントの呼び出しに利用可能な高速シャットダウンのサポートに関して応答する方法が決まります。 
   
-MAPI クライアントの開発者が、クライアントがその他の MAPI クライアントとは別に高速シャット ダウンをサポートしているかどうかを決定できる場合でも、レジストリの設定では、すべての MAPI クライアントの高速シャット ダウンのユーザー レベルでの管理者の設定を反映と管理者のレジストリ設定です。 とはいえ、正常に実行するのには高速シャット ダウンのユーザーは、必要なレジストリ設定を持つ必要があります、MAPI クライアントを使用して、高速シャット ダウンを開始する必要があります、 [IMAPIClientShutdown: IUnknown](imapiclientshutdowniunknown.md)インターフェイス、および MAPI プロバイダーと連携する、クライアントを実装する必要があります、 [IMAPIProviderShutdown: IUnknown](imapiprovidershutdowniunknown.md)クライアントの高速シャット ダウンをサポートするインターフェイス。 
+レジストリ設定は、すべての MAPI クライアントの高速シャットダウンに対する管理者の優先設定をユーザー レベルで反映しますが、MAPI クライアントの開発者は、その他の MAPI クライアントの設定および管理者のレジストリ設定とは無関係に、クライアントで高速シャットダウンをサポートするかどうかを決定できます。 ただし、高速シャットダウンを正常に実施するには、ユーザーが必要なレジストリ設定を保持し、MAPI クライアントが [IMAPIClientShutdown : IUnknown](imapiclientshutdowniunknown.md) インターフェイスを使用して高速シャットダウンを開始し、クライアントと連携する MAPI プロバイダーはクライアントの高速シャットダウンをサポートする [IMAPIProviderShutdown : IUnknown](imapiprovidershutdowniunknown.md) インターフェイスを実装する必要があります。 
   
-次の一覧では、ユーザー レベルの 3 つのオプションについて説明します。
+次に、これら 3 つのユーザー レベルのオプションについて説明します。
   
-### <a name="option-1-the-mapi-subsystem-enables-fast-shutdown-unless-mapi-providers-explicitly-opt-out"></a>オプション 1: MAPI のサブシステムにより、高速シャット ダウン MAPI プロバイダーが明示的に選択しない限り、 
+### <a name="option-1-the-mapi-subsystem-enables-fast-shutdown-unless-mapi-providers-explicitly-opt-out"></a>オプション 1: MAPI サブシステムで高速シャットダウンを有効にする (ただし、MAPI プロバイダーが明示的に無効にしている場合を除く) 
     
-開始すると、Outlook 2010 では、これは、Outlook が MAPI クライアントの場合それは必ずしも他の MAPI クライアントの既定の動作ではありません。 Outlook でこのオプションを明示的に指定するには、管理者は、次のレジストリ キーと値を設定するのには選択できます。
+Outlook 2010 以降、Outlook が MAPI クライアントのときには、この動作が既定の動作になります。これは、その他の MAPI クライアントの既定の動作ではない場合があります。 このオプションを Outlook に明示的に指定するために、管理者は次のレジストリ キーと値を設定することもできます。
     
 レジストリ キー:
   
@@ -37,15 +37,15 @@ MAPI クライアントの開発者が、クライアントがその他の MAPI 
   
 >  `"FastShutdownBehavior"=dword:00000000`
     
-返すことによって、MAPI サブシステムがクエリに応答の MAPI クライアントでは、高速シャット ダウンを開始し、高速シャット ダウンをサポートするため、クエリするために**IMAPIClientShutdown::QueryFastShutdown**を呼び出す、ときに S\_限り、アクティブな MAPI いる MAPI プロバイダーがありません [ok]MAPI クライアントとのセッションが高速シャット ダウンのサポートを選択して明示的にします。 
+MAPI クライアントが高速シャットダウンを開始し、高速シャットダウンのサポートについてクエリするために **IMAPIClientShutdown::QueryFastShutdown** を呼び出すと、MAPI サブシステムは、S\_OK を返すことでクエリに応答します。ただし、MAPI クライアントとのアクティブな MAPI セッションを持つ MAPI プロバイダーが高速シャットダウンのサポートを明示的に無効にしている場合を除きます。 
 
-MAPI プロバイダーがエラーを返す[IMAPIProviderShutdown::QueryFastShutdown](imapiprovidershutdown-queryfastshutdown.md)メソッドを実装することにより高速シャット ダウンを選んだ (MAPI\_E\_NO\_のサポート)。 MAPI サブシステムが MAPI_\E_\NO を返す場合は 1 つまたは複数の MAPI プロバイダーは、 **IMAPIProviderShutdown::QueryFastShutdown**でエラーを返す、\_ **IMAPIClientShutdown::QueryFastShutdown**をサポートします。 
+MAPI プロバイダーは、エラー (MAPI\_E\_NO\_SUPPORT) を返す [IMAPIProviderShutdown::QueryFastShutdown](imapiprovidershutdown-queryfastshutdown.md) メソッドを実装することで、高速シャットダウンを無効にします。 1 つ以上の MAPI プロバイダーが **IMAPIProviderShutdown::QueryFastShutdown** でエラーを返すと、MAPI サブシステムは **IMAPIClientShutdown::QueryFastShutdown** に MAPI_\E_\NO\_SUPPORT を返します。 
 
-MAPI プロバイダーが、MAPI のサブシステムを返します S を選んだ場合を除き、\_確かに、1 つまたは複数のプロバイダーを実装していない場合でも、 **IMAPIProviderShutdown: IUnknown**インタ フェースです。 
+MAPI プロバイダーが無効にしていない限り、1 つ以上のプロバイダーが **IMAPIProviderShutdown : IUnknown** を実装していない場合でも、MAPI サブシステムは S\_OK を返します。 
     
-### <a name="option-2-the-mapi-subsystem-enables-fast-shutdown-only-if-every-mapi-provider-explicitly-opts-in"></a>オプション 2: MAPI のサブシステムにより、高速シャット ダウンのすべての MAPI プロバイダーが明示的に選んだ場合にのみ 
+### <a name="option-2-the-mapi-subsystem-enables-fast-shutdown-only-if-every-mapi-provider-explicitly-opts-in"></a>オプション 2: すべての MAPI プロバイダーが明示的に有効化している場合にのみ MAPI サブシステムで高速シャットダウンを有効にする 
     
-管理者は、次のレジストリ キーおよびクライアントの高速シャット ダウンの環境設定を指定する値を明示的に設定する必要があります。
+管理者は、この優先設定をクライアントの高速シャットダウンに指定するために、次のレジストリ キーと値を明示的に設定する必要があります。
     
 レジストリ キー:
   
@@ -55,13 +55,13 @@ MAPI プロバイダーが、MAPI のサブシステムを返します S を選�
   
 >  `"FastShutdownBehavior"=dword:00000001`
     
-返すことによって、MAPI サブシステムがクエリに応答の MAPI クライアントでは、高速シャット ダウンを開始し、高速シャット ダウンをサポートするため、クエリするために**IMAPIClientShutdown::QueryFastShutdown**を呼び出す、ときに S\_すべての MAPI プロバイダーがアクティブなセッションがある場合に [ok]MAPI クライアント サポート高速シャット ダウンします。 MAPI プロバイダーがエラーのないコードを返すには、 **IMAPIProviderShutdown::QueryFastShutdown**を実装することでのサポートを示します (S\_[ok])。 
+MAPI クライアントが高速シャットダウンを開始し、高速シャットダウンのサポートについてクエリするために **IMAPIClientShutdown::QueryFastShutdown** を呼び出すと、MAPI サブシステムは、MAPI クライアントとのアクティブな MAPI セッションを持つすべての MAPI プロバイダーが高速シャットダウンをサポートしている場合に S\_OK を返すことでクエリに応答します。 MAPI プロバイダーは、エラーではないコード (S\_OK) を返す **IMAPIProviderShutdown::QueryFastShutdown** を実装することで、サポートしていることを示します。 
 
-このような MAPI プロバイダーが 1 つまたは複数が MAPI を返す場合は、\_E\_NO\_のサポート、または**IMAPIProviderShutdown::QueryFastShutdown**を実装していない MAPI サブシステムは、 **IMAPIClientShutdown::QueryFastShutdown**にエラー コードを返します.
+1 つ以上の MAPI プロバイダーが MAPI\_E\_NO\_SUPPORT を返した場合や、**IMAPIProviderShutdown::QueryFastShutdown** を実装していない場合、MAPI サブシステムは **IMAPIClientShutdown::QueryFastShutdown** にエラー コードを返します。
     
-### <a name="option-3-an-administrator-disables-support-for-client-fast-shutdown"></a>オプション 3: 管理者はクライアントの高速シャット ダウンのサポートを無効にします
+### <a name="option-3-an-administrator-disables-support-for-client-fast-shutdown"></a>オプション 3: 管理者がクライアントの高速シャットダウンを無効にする
     
-管理者は、次のレジストリ キーと値をクライアントの高速シャット ダウンのサポートを無効にするを明示的に設定する必要があります。
+管理者は、クライアントの高速シャットダウンを無効にするために、次のレジストリ キーと値を明示的に設定する必要があります。
     
 レジストリ キー:
   
@@ -71,11 +71,11 @@ MAPI プロバイダーが、MAPI のサブシステムを返します S を選�
   
 >  `"FastShutdownBehavior"=dword:00000002`
     
-かどうかに関係なく、MAPI_E_NO_SUPPORT を返すことによって、MAPI サブシステムがクエリに応答と、MAPI クライアントは、高速シャット ダウンを開始し、クエリを高速シャット ダウンをサポートするため**IMAPIClientShutdown::QueryFastShutdown**を呼び出して、任意の MAPI プロバイダーサポートには、シャット ダウンが高速です。 このレジストリ設定は、[MAPI サブシステムは決して任意のプロバイダーの**IMAPIProviderShutdown::QueryFastShutdown**または[IMAPIProviderShutdown::DoFastShutdown](imapiprovidershutdown-dofastshutdown.md)メソッドを呼び出します。 
+MAPI クライアントが高速シャットダウンを開始し、高速シャットダウンのサポートについてクエリするために **IMAPIClientShutdown::QueryFastShutdown** を呼び出すと、MAPI サブシステムは、MAPI プロバイダーが高速シャットダウンをサポートしているかどうかに関係なく MAPI_E_NO_SUPPORT を返すことでクエリに応答します。 このレジストリ設定により、MAPI サブシステムはプロバイダーの **IMAPIProviderShutdown::QueryFastShutdown** メソッドまたは [IMAPIProviderShutdown::DoFastShutdown](imapiprovidershutdown-dofastshutdown.md) メソッドを呼び出さなくなります。 
     
 ## <a name="see-also"></a>関連項目
 
-- [Mapi クライアントのシャット ダウン](client-shutdown-in-mapi.md)
+- [MAPI でのクライアント シャットダウン](client-shutdown-in-mapi.md)
 - [高速シャットダウンの概要](fast-shutdown-overview.md)
 - [高速シャットダウンのためのベスト プラクティス](best-practices-for-fast-shutdown.md)
 

@@ -3,58 +3,58 @@ title: MAPI サブシステムのインストール
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 29fb4c44-1a59-457e-813b-a982bd72891c
-description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: adb4d09ccce95683ac46e7b271fafa328b1a9f97
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: MT
+description: '最終更新日: 2015 年 3 月 9 日'
+localization_priority: Priority
+ms.openlocfilehash: 112a683f5967f8740c2d21285eb4ebbc0f455c48
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575351"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28722439"
 ---
 # <a name="installing-the-mapi-subsystem"></a>MAPI サブシステムのインストール
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-サポートされているバージョンの Windows で Mapi32.dll、MAPI スタブ ライブラリをインストールする、_\<ドライブ\>_ \Windows\System32 フォルダーです。 
+サポートされているバージョンの Windows で、_\<ドライブ\>_ \Windows\System32 フォルダーに MAPI スタブ ライブラリ、Mapi32.dll をインストールします。 
   
-サポートされているバージョンの Windows は次のとおりです。
+サポートされているバージョンの Windows を次に示します。
   
 - Windows 7。
     
-- Windows Vista の場合です。
+- Windows Vista。
     
 - Windows Server 2008。
     
-- Windows Server 2003 です。
+- Windows Server 2003。
     
-- Windows XP です。
+- Windows XP。
     
-MAPI のサブシステムを正しくインストールするには、Microsoft Outlook などの MAPI ベースのサブシステムを含むアプリケーションをインストールします。
+MAPI サブシステムを正しくインストールするには、MAPI ベースのサブシステム (Microsoft Outlook など) を含むアプリケーションをインストールします。
   
-システム レジストリで、コンピューターの MAPI サブシステムのインストールに関する情報が表示されます。 レジストリ エントリのすべての値は、文字の文字列です。 
+コンピューターの MAPI サブシステムのインストールに関する情報は、システム レジストリにあります。 レジストリ エントリの値は、すべて文字列です。 
   
-メッセージ サービスのインストール プログラムは、システムの次のレジストリ キーのインストール情報の作成を担当します。 
+メッセージ サービスのインストール プログラムは、次のシステム レジストリキーにインストール情報を作成します。 
   
  `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Messaging Subsystem`
   
 メッセージ サービスは、システム レジストリにエントリを追加する必要があります。 
   
-次の表は、クライアントが自分のコンピューター上の MAPI サブシステムのバージョン情報を取得する方法をまとめたものです。
+次の表に、クライアントがコンピューター上の MAPI サブシステムのバージョン情報を取得する方法を要約します。
   
-|**チェックするには**|**Registry**|
+|**確認**|**レジストリ**|
 |:-----|:-----|
-|MAPI の可用性  <br/> |`MAPIX=1`。  <br/> |
-|MAPI のバージョン  <br/> |" _X.x.x_"の形式の MAPIXVER 文字列を検索します。  <br/> |
+|MAPI の可用性  <br/> |`MAPIX=1` を検索します。  <br/> |
+|利用可能な MAPI のバージョン  <br/> |" _x.x.x_" 形式の MAPIXVER 文字列を検索します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI �v���O���~���O�̊T�v](mapi-programming-overview.md)
+[MAPI プログラミングの概要](mapi-programming-overview.md)
 

@@ -4,33 +4,33 @@ manager: kelbow
 ms.date: 08/18/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
 ms.assetid: 628745f4-82e9-4838-9726-6f3e506a654f
-ms.openlocfilehash: d837a83ea8773018033a27ec894375a22c15c8a3
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: d7d27e98189a5b6784e4db48c81a545b85f01fc1
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25391123"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28716818"
 ---
 # <a name="create-and-customize-a-web-app-in-access"></a>Access で Web アプリを作成してカスタマイズする
 
 > [!IMPORTANT]
-> 現在 Microsoft では、SharePoint での Access Web アプリの作成や使用は推奨していません。代替策として、[Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) を使用して、Web およびモバイル デバイス用の、コーディングが不要なビジネス ソリューションを構築することを検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/ja-JP/)を使用して検討してください。 
   
 Access 2013を特徴付けるものとして、新しいアプリケーション モデルがあります。これにより、領域の専門家は Web ベース アプリケーションをすばやく作成できます。Access に含まれる一連のテンプレートを使用してアプリケーションの作成にすぐに着手できます。
 
 <a name="ac15_CreateAndCustomizeWebApp_Prerequisites"> </a>
 
-## <a name="prerequisites-for-building-an-app-with-access-2013"></a>Access 2013 でアプリを構築するための前提条件
+## <a name="prerequisites-for-building-an-app-with-access-2013"></a>Access 2013 でアプリを作成するための前提条件
 
-この例の手順に従うには、以下のものが必要です。
+この例の手順を実行するには、次のものが必要です。
   
 - Access
     
 - SharePoint 開発環境
     
-SharePoint 開発環境の設定に関する詳細については、 [SharePoint の全般的な開発環境のセットアップ](https://docs.microsoft.com/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)を参照してください。 
+SharePoint 開発環境の設定の詳細については、「[SharePoint の一般的な開発環境の設定](https://docs.microsoft.com/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)」を参照してください。 
   
 Access と SharePoint の入手方法の詳細については、「[ダウンロード](https://msdn.microsoft.com/office/apps/fp123627)」を参照してください。
 
@@ -50,11 +50,11 @@ Access と SharePoint の入手方法の詳細については、「[ダウンロ
     
    問題を追跡するのに役立つ場合があるテンプレートのリストが図 1 に示されています。
     
-   **図 1。問題に関する検索に一致するテンプレート**
+   **図 1. 問題に関する検索に一致するテンプレート**
 
-   ![問題の検索に一致するテンプレート](media/odc_Access15_CreateAndCustomizeWebApp_Figure01.JPG "問題の検索に一致するテンプレート")
+   ![問題に関する検索に一致するテンプレート](media/odc_Access15_CreateAndCustomizeWebApp_Figure01.JPG "問題に関する検索に一致するテンプレート")
   
-4. [ **問題**] を選択します。
+4. **[問題]** を選択します。
     
 Access は、一連のテーブルとビューを作成します。
   
@@ -69,9 +69,9 @@ Access デスクトップ (.accdb) データベースでは、テーブル間の
   
 [ **顧客** ] フィールドは [ **顧客** ] テーブルに関連付けられています。リレーションシップを調べるには、[ **顧客** ] フィールドを選択し、[ **ルックアップ**] を選択します。図 2 のように、 **ルックアップ ウィザード**が表示されます。 
   
-**図 2。[顧客] テーブルへのリレーションシップを表示するルックアップ ウィザード**
+**図 2. [顧客] テーブルへのリレーションシップが表示されているルックアップ ウィザード**
 
-![ルックアップ ウィザードがリレーションシップを表示します。](media/odc_Access15_CreateAndCustomizeWebApp_Figure02.jpg "ルックアップ ウィザードがリレーションシップを表示します。")
+![リレーションシップが表示されているルックアップ ウィザード](media/odc_Access15_CreateAndCustomizeWebApp_Figure02.jpg "リレーションシップが表示されているルックアップ ウィザード")
   
 [ルックアップ ウィザード] ダイアログ ボックスでは、[ **顧客** ] フィールドが [ **顧客** ] テーブルにリンクされており、[ **名前を名姓の順で表示** ] フィールドが [ **顧客** ] テーブルから返されることが示されています。 
   
@@ -79,11 +79,11 @@ Access デスクトップ (.accdb) データベースでは、テーブル間の
   
 [ **問題** ] テーブルを閉じて、タイル ウィンドウを調べます。図 3 のように、上の 3 つのタイル ([ **問題** ]、[ **顧客** ]、および [ **従業員** ] テーブル用のタイル) は、下の 2 つのタイル ([ **関連の問題** ] および [ **問題に対するコメント** ] テーブル用のタイル) と異なって表示されています。 
   
-**図 3。[問題] スキーマのタイル ウィンドウ**
+**図 3. [問題] スキーマのタイル ウィンドウ**
 
-![問題のスキーマのウィンドウを並べて表示](media/odc_Access15_CreateAndCustomizeWebApp_Figure03.jpg "問題のスキーマのウィンドウを並べて表示")
+![[問題] スキーマのタイル ウィンドウ](media/odc_Access15_CreateAndCustomizeWebApp_Figure03.jpg "[問題] スキーマのタイル ウィンドウ")
   
-[ **関連の問題** ] と [ **問題に対するコメント** ] テーブルは、Web ブラウザー上で非表示とするために淡色表示になっています。 
+**[関連の問題]** テーブルと **[問題に対するコメント]** テーブルは、Web ブラウザーでユーザーに表示されなくなるため選択不可になっています。 
   
 このアプリを使用していくつかの問題を追跡してみましょう。これを行うには、[ **アプリの起動**] をクリックし、Web ブラウザーでアプリを開きます。 
   
@@ -91,7 +91,7 @@ Access デスクトップ (.accdb) データベースでは、テーブル間の
   
 図 4 に示されているように、ビュー セレクターを使用して、[ **顧客** ] テーブルで使用可能な 3 つのビューのうちの 1 つを選択します。[ **リスト**]、[ **データシート**]、[ **グループ**] とラベル付けされているビューです。 
   
-**図 4。ビュー セレクター**
+**図 4. ビュー セレクター**
 
 ![ビュー セレクター](media/odc_Access15_CreateAndCustomizeWebApp_Figure04.jpg "ビュー セレクター")
   
@@ -103,15 +103,15 @@ Access デスクトップ (.accdb) データベースでは、テーブル間の
   
 顧客を追加する場合は、操作バーを使用して、レコードの追加、レコードの編集、レコードの保存、レコードの削除、編集の取り消しを行います。操作バーはカスタマイズ可能なツールバーであり、図 5 のように、各ビューの上部に表示されます。
   
-**図 5。操作バー**
+**図 5. 操作バー**
 
-![アクション バー](media/odc_Access15_CreateAndCustomizeWebApp_Figure05.jpg "アクション バー")
+![操作バー](media/odc_Access15_CreateAndCustomizeWebApp_Figure05.jpg "操作バー")
   
 顧客と従業員の追加が終了した後、[問題リスト] ビューを開いて、問題の追加を開始します。顧客の名前を [顧客] ボックスに入力すると、図 6 のように、1 つ以上の顧客名が表示されます。
   
-**図 6。オートコンプリート コントロール**
+**図 6. オートコンプリート コントロール**
 
-![オートコンプリートのコントロール](media/odc_Access15_CreateAndCustomizeWebApp_Figure06.jpg "オートコンプリートのコントロール")
+![オートコンプリート コントロール](media/odc_Access15_CreateAndCustomizeWebApp_Figure06.jpg "オートコンプリート コントロール")
   
 [顧客] ボックスは、オートコンプリート コントロールです。オートコンプリート コントロールでは、ボックスに入力されている内容に一致するレコードのリストが表示されます。これにより、データ入力の正確性が確保されます。
   
@@ -130,7 +130,7 @@ Access デスクトップ (.accdb) データベースでは、テーブル間の
     
 4. [ **データ型**] 列で [ **短いテキスト**] を選択します。 
     
-5. [ **上書き保存**] を選択します。
+5. **[保存]** を選択します。
     
 6. [問題] テーブルを閉じます。
     
@@ -155,11 +155,11 @@ Access デスクトップ (.accdb) データベースでは、テーブル間の
     > [!NOTE]
     > [!メモ] 2 つの [ **新しいアクションの追加**] ドロップダウンが表示されます。1 つは [ **レコードの参照** ] ブロックの内側にあり、もう 1 つは [ **レコードの参照** ] ブロックの外側にあります。図 7 に示されているように、[ **レコードの参照** ] ブロックの内側にある [ **新しいアクションの追加**] ドロップダウンを選択する必要があります。 
   
-   **図 7。[新しいアクションの追加] ドロップダウン**
+   **図 7. [新しいアクションの追加] ドロップダウン**
 
-   ![新しいアクションの追加のドロップダウン リスト](media/odc_Access15_CreateAndCustomizeWebApp_Figure07.jpg "新しいアクションの追加のドロップダウン リスト")
+   ![[新しいアクションの追加] ドロップダウン](media/odc_Access15_CreateAndCustomizeWebApp_Figure07.jpg "[新しいアクションの追加] ドロップダウン")
   
-8. [ **名前**] ボックスに「 **連絡先電話番号** 」と入力します。 
+8. **[名前]** ボックスに「**ContactPhone**」と入力します。 
     
 9. [ **式**] ボックスに「 **[顧客].[勤務先電話番号]** 」と入力します。 
     
@@ -167,7 +167,7 @@ Access デスクトップ (.accdb) データベースでは、テーブル間の
     
     マクロは、図 8 のようになります。
     
-    **図 8。GetContactPhone データ マクロ**
+    **図 8. GetContactPhone データ マクロ**
 
     ![GetContactPhone データ マクロ](media/odc_Access15_CreateAndCustomizeWebApp_Figure08.jpg "GetContactPhone データ マクロ")
   
@@ -187,7 +187,7 @@ Access デスクトップ (.accdb) データベースでは、テーブル間の
     
 5. [ **コントロール名**] ボックスに「 **CustomerContact** 」と入力し、[ **データ**] ポップアップを閉じます。 
     
-6. [ **上書き保存**] を選択します。
+6. **[保存]** を選択します。
     
 ここで、[ **勤務先電話番号** ] フィールドを [ **顧客** ] テーブルから [ **問題** ] テーブルの [ **連絡先電話番号** ] フィールドにコピーするユーザー インターフェイス (UI) マクロを記述する必要があります。マクロの記述場所として、 **CustomerAutocomplete** コントロールの **更新後処理** イベントが適しています。 
   
@@ -217,31 +217,31 @@ Access デスクトップ (.accdb) データベースでは、テーブル間の
     
 9. [ **値**] ボックスに「 **=[Phone]** 」と入力します。 
     
-10. [ **上書き保存**] を選択します。
+10. **[保存]** を選択します。
     
     マクロは、図 9 のようになります。
     
-    **図 9。更新後処理マクロ**
+    **図 9. 更新後処理マクロ**
 
-    ![更新後のマクロ](media/odc_Access15_CreateAndCustomizeWebApp_Figure09.jpg "更新後のマクロ")
+    ![更新後処理マクロ](media/odc_Access15_CreateAndCustomizeWebApp_Figure09.jpg "更新後処理マクロ")
   
 11. マクロのデザイン ビューを閉じます。
     
-12. [問題リスト] ビューを閉じます。変更内容の保存を求めるプロンプトが表示された場合、[ **はい**] を選択します。 
+12. [問題リスト] ビューを閉じます。変更の保存を求めるダイアログが表示されたら **[はい]** を選択します。 
     
-カスタマイズをテストする準備ができました。 [ **アプリの起動**] をクリックして、Web ブラウザーでアプリを開いて、新しい問題を追加します。 **連絡先番号**] ボックスは、図 10 に示すように、顧客名を入力した後に自動的を更新します。 
+この時点で、カスタマイズをテキストにする準備が整いました。 **[アプリの起動]** をクリックして、Web ブラウザーでアプリを開き、新しい問題を追加します。 **[連絡先番号]** ボックスは、顧客名の入力後に自動的に更新されます (図 10 を参照)。 
   
-**図 10。電話番号が更新された [問題] ビュー**
+**図 10. 電話番号が更新された [問題] ビュー**
 
-![電話番号を使用して更新の問題の表示](media/odc_Access15_CreateAndCustomizeWebApp_Figure10.jpg "電話番号を使用して更新の問題の表示")
+![電話番号が更新された [問題] ビュー](media/odc_Access15_CreateAndCustomizeWebApp_Figure10.jpg "電話番号が更新された [問題] ビュー")
   
-## <a name="conclusion"></a>終わりに
+## <a name="conclusion"></a>まとめ
 
 Access Web アプリの作成にすぐに着手するには、 に含まれるスキーマ テンプレートの 1 つを使用することをお勧めします。自動的に作成されるビューには、Access デーストップ データベースへの実装にユーザー設定コードが必要とされる高度な機能が含まれています。 
   
 ## <a name="see-also"></a>関連項目
 
-- [開発者へのアクセスの新機能](https://msdn.microsoft.com/library/df778f51-d65e-4c30-b618-65003ceb39b3%28Office.15%29.aspx) 
+- [Access 2013 の開発者向け新機能](https://msdn.microsoft.com/library/df778f51-d65e-4c30-b618-65003ceb39b3%28Office.15%29.aspx) 
 - [Access カスタム Web アプリ リファレンス](access-custom-web-app-reference.md)
   
 

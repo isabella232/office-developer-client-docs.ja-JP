@@ -3,22 +3,22 @@ title: Format 関数 (カスタム web アプリケーションのアクセス) 
 manager: kelbow
 ms.date: 08/18/2017
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: f7d15fe6-bdad-4f1f-aa18-12a21fc111c4
 description: カスタムの書式設定を作成して、日付または時刻の表示方法を制御する方法を説明します。
-ms.openlocfilehash: 17724cfe1c26a2b3e52eea18dfef53aff027085c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 76ba7361be4f7902a3ee4a1a8d6e51211ad114bd
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798595"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702314"
 ---
 # <a name="custom-date-and-time-formats-for-the-format-function-access-custom-web-app"></a>Format 関数 (カスタム web アプリケーションのアクセス) のユーザー設定の日付と時刻の書式を設定します。
 
-カスタムの書式設定を作成して、日付または時刻の表示方法を制御する方法を説明します。
+カスタムの書式を作成して、日付または時刻の表示方法を制御する方法について説明します。
   
 > [!IMPORTANT]
-> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/ja-JP/)を使用して検討してください。 
   
 ## <a name="format-specifications"></a>書式指定
 
@@ -39,7 +39,7 @@ ms.locfileid: "19798595"
 |MMMM  <br/> |完全な月名 (たとえば、January) で月を表示します。  <br/> |
 |gg  <br/> |時代/元号の文字列 (たとえば、A.D.) を表示します。  <br/> |
 |h  <br/> |12 時間形式を使用し、前に 0 を付けずに、時間を数値 (たとえば、1:15:15 PM) で表示します。ユーザー定義の数値書式でこれが唯一の文字である場合は、%h を使用します。  <br/> |
-|hh  <br/> |12 時間形式を使用し、前に 0 を付けて、時間を数値 (たとえば、01:15:15 PM) で表示します。  <br/> |
+|Hh  <br/> |12 時間形式を使用し、前に 0 を付けて、時間を数値 (たとえば、01:15:15 PM) で表示します。  <br/> |
 |H  <br/> |24 時間形式を使用し、前に 0 を付けずに、時間を数値 (たとえば、1:15:15) で表示します。ユーザー定義の数値書式でこれが唯一の文字である場合は、%H を使用します。  <br/> |
 |HH  <br/> |24 時間形式を使用し、前に 0 を付けて、時間を数値 (たとえば、01:15:15) で表示します。  <br/> |
 |m  <br/> |前に 0 を付けない数値 (たとえば、12:1:15) で分を表示します。ユーザー定義の数値書式でこれが唯一の文字である場合は、%m を使用します。  <br/> |
@@ -64,7 +64,7 @@ ms.locfileid: "19798595"
   
 ## <a name="see-also"></a>関連項目
 
-- [Format 関数 (カスタム web アプリケーションのアクセス)](format-function-access-custom-web-app.md) 
+- [Format 関数 (Access カスタム Web アプリ)](format-function-access-custom-web-app.md) 
 - [Format 関数 (カスタム web アプリケーションのアクセス) 用のカスタムの数値書式](custom-numeric-formats-for-the-format-function-access-custom-web-app.md)
   
 
