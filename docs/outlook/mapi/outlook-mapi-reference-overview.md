@@ -3,68 +3,68 @@ title: Outlook MAPI リファレンス概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 4c126d0c-d7c0-45c0-801c-c9f1e44c9db6
-description: '�ŏI�X�V��: 2013�N2��1��'
-ms.openlocfilehash: a5c1daf44f89d1ef8aa7472d69dfd7e86bbb92f6
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: MT
+description: '最終更新日: 2013 年 2 月 1 日'
+localization_priority: Priority
+ms.openlocfilehash: dc743824cf96800c32d4b4006ae86fbff0bd48a0
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388001"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723020"
 ---
-# <a name="outlook-mapi-reference-overview"></a><span data-ttu-id="8f3b1-103">Outlook MAPI リファレンス概要</span><span class="sxs-lookup"><span data-stu-id="8f3b1-103">Outlook MAPI Reference Overview</span></span>
+# <a name="outlook-mapi-reference-overview"></a><span data-ttu-id="64b58-103">Outlook MAPI リファレンス概要</span><span class="sxs-lookup"><span data-stu-id="64b58-103">Outlook MAPI Reference Overview</span></span>
 
-<span data-ttu-id="8f3b1-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="8f3b1-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="64b58-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="64b58-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="8f3b1-105">このトピックでは、Outlook 2013 MAPI のリファレンス ドキュメントの概要情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-105">This topic provides overview information about the Outlook 2013 MAPI Reference documentation.</span></span>
+<span data-ttu-id="64b58-105">このトピックでは、Outlook 2013 MAPI リファレンス ドキュメントに関する概要情報を示します。</span><span class="sxs-lookup"><span data-stu-id="64b58-105">This topic provides overview information about the Outlook 2013 MAPI Reference documentation.</span></span>
   
-## <a name="about-this-documentation"></a><span data-ttu-id="8f3b1-106">このマニュアルについて</span><span class="sxs-lookup"><span data-stu-id="8f3b1-106">About this documentation</span></span>
+## <a name="about-this-documentation"></a><span data-ttu-id="64b58-106">このドキュメントについて</span><span class="sxs-lookup"><span data-stu-id="64b58-106">About this documentation</span></span>
 
-<span data-ttu-id="8f3b1-107">このドキュメントは、Microsoft Outlook 2013 でメッセージング API (MAPI) の実装に適用されます。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-107">This documentation applies to the implementation of the Messaging API (MAPI) in Microsoft Outlook 2013.</span></span> 
+<span data-ttu-id="64b58-107">このドキュメントは、Microsoft Outlook 2013 のメッセージ API (MAPI) の実装に適用されます。</span><span class="sxs-lookup"><span data-stu-id="64b58-107">This documentation applies to the implementation of the Messaging API (MAPI) in Microsoft Outlook 2013.</span></span> 
   
-<span data-ttu-id="8f3b1-108">Microsoft Office Outlook 2007 では、以前は、MAPI のプログラマーズ リファレンスは、Microsoft Exchange のドキュメントの一部をでした。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-108">Previous to Microsoft Office Outlook 2007, the MAPI Programmer's Reference was part of the Microsoft Exchange documentation.</span></span>
+<span data-ttu-id="64b58-108">Microsoft Office Outlook 2007 より前の MAPI プログラマーズ リファレンスは、Microsoft Exchange ドキュメントの一部でした。</span><span class="sxs-lookup"><span data-stu-id="64b58-108">Previous to Microsoft Office Outlook 2007, the MAPI Programmer's Reference was part of the Microsoft Exchange documentation.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="8f3b1-109">Exchange は、MAPI の使用を Microsoft Exchange Server 2007 以降 deemphasized はため、Exchange の実装が制限されているをサポートします。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-109">Because Exchange has deemphasized the use of MAPI since Microsoft Exchange Server 2007, support for the Exchange implementation is limited.</span></span> 
+> <span data-ttu-id="64b58-109">Microsoft Exchange Server 2007 以降の Exchange では MAPI の使用が重視されていないため、Exchange 実装のサポートは制限されています。</span><span class="sxs-lookup"><span data-stu-id="64b58-109">Because Exchange has deemphasized the use of MAPI since Microsoft Exchange Server 2007, support for the Exchange implementation is limited.</span></span> 
   
-<span data-ttu-id="8f3b1-110">MAPI の Outlook の実装は、Microsoft Exchange の実装によって異なります。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-110">The Outlook implementation of MAPI differs from the Microsoft Exchange implementation.</span></span> <span data-ttu-id="8f3b1-111">Outlook の実装では、クライアント コンピューターで実行するために最適化し、低レイテンシを強調しています。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-111">The Outlook implementation is optimized for running on client computers and emphasizes low latency.</span></span> <span data-ttu-id="8f3b1-112">Exchange の実装は、サーバが高可用性と優れたマルチ スレッドが重要です。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-112">The Exchange implementation is intended for servers where high availability and better multithreading are important.</span></span>
+<span data-ttu-id="64b58-110">MAPI の Outlook 実装は、Microsoft Exchange の実装とは異なります。</span><span class="sxs-lookup"><span data-stu-id="64b58-110">The Outlook implementation of MAPI differs from the Microsoft Exchange implementation.</span></span> <span data-ttu-id="64b58-111">Outlook の実装は、クライアント コンピューターでの実行に最適化されていて、待機時間の短さが重視されています。</span><span class="sxs-lookup"><span data-stu-id="64b58-111">The Outlook implementation is optimized for running on client computers and emphasizes low latency.</span></span> <span data-ttu-id="64b58-112">Exchange の実装は、高可用性とマルチスレッド処理の優秀さが重要になるサーバーを対象としています。</span><span class="sxs-lookup"><span data-stu-id="64b58-112">The Exchange implementation is intended for servers where high availability and better multithreading are important.</span></span>
   
-<span data-ttu-id="8f3b1-113">エンド ・ ユーザーのシステムで実行するアプリケーションにこのドキュメントを使用します。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-113">Use this documentation for applications running on end-user systems.</span></span> <span data-ttu-id="8f3b1-114">サーバー アプリケーションでは、MAPI が該当する場合の Exchange の実装を使用して、または Exchange Web サービスなど、Exchange の現在の Api を使用します。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-114">For server applications, use the Exchange implementation of MAPI if appropriate, or use current Exchange APIs such as Exchange Web Services.</span></span> <span data-ttu-id="8f3b1-115">Exchange Web サービスの詳細については、 [Exchange Web サービスの参照](https://msdn.microsoft.com/library/bb204119.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-115">For more information on Exchange Web Services, see the [Exchange Web Services Reference](https://msdn.microsoft.com/library/bb204119.aspx).</span></span>
+<span data-ttu-id="64b58-113">このドキュメントは、エンド ユーザーのシステムで実行するアプリケーションに使用してください。</span><span class="sxs-lookup"><span data-stu-id="64b58-113">Use this documentation for applications running on end-user systems.</span></span> <span data-ttu-id="64b58-114">サーバー アプリケーションについては、MAPI の Exchange 実装を使用してください (適切な場合)。または、現行の Exchange API (Exchange Web サービスなど) を使用してください。</span><span class="sxs-lookup"><span data-stu-id="64b58-114">For server applications, use the Exchange implementation of MAPI if appropriate, or use current Exchange APIs such as Exchange Web Services.</span></span> <span data-ttu-id="64b58-115">Exchange Web サービスの詳細については、「[Exchange Web サービスのリファレンス](https://msdn.microsoft.com/library/bb204119.aspx)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="64b58-115">For more information on Exchange Web Services, see the [Exchange Web Services Reference](https://msdn.microsoft.com/library/bb204119.aspx).</span></span>
   
-<span data-ttu-id="8f3b1-116">MAPI、Outlook または Exchange の実装で動作するアプリケーションを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-116">It may be possible to write applications that work with either the Outlook or Exchange implementations of MAPI.</span></span> <span data-ttu-id="8f3b1-117">など MFCMAPI は、両方のプラットフォームでうまく動作します。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-117">For example, MFCMAPI works well on either platform.</span></span> <span data-ttu-id="8f3b1-118">実装は、多くの一般的な機能が明らかと微妙な違いがあります。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-118">The implementations have many common features, but there are differences both obvious and subtle.</span></span> <span data-ttu-id="8f3b1-119">アプリケーションのすべての環境で動作する場合は、両方のプラットフォームで慎重にテストする必要があります。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-119">You will have to test carefully on both platforms if you intend for your application to work in all environments.</span></span> <span data-ttu-id="8f3b1-120">このテストにより、どちらの実装を実行して、同じオペレーティング システムのインストールではサポートされていないために、2 つのシステムが必要です。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-120">This testing will require two systems because running both implementations on the same operating system installation is not supported.</span></span>
+<span data-ttu-id="64b58-116">MAPI の Outlook 実装または Exchange 実装のどちらでも動作するアプリケーションを作成することは可能です。</span><span class="sxs-lookup"><span data-stu-id="64b58-116">It may be possible to write applications that work with either the Outlook or Exchange implementations of MAPI.</span></span> <span data-ttu-id="64b58-117">たとえば、MFCMAPI はどちらのプラットフォームでも適切に動作します。</span><span class="sxs-lookup"><span data-stu-id="64b58-117">For example, MFCMAPI works well on either platform.</span></span> <span data-ttu-id="64b58-118">実装には多数の共通機能がありますが、明確な相違点と微妙な相違点の両方が存在します。</span><span class="sxs-lookup"><span data-stu-id="64b58-118">The implementations have many common features, but there are differences both obvious and subtle.</span></span> <span data-ttu-id="64b58-119">すべての環境でアプリケーションが動作するようにするには、両方のプラットフォームで十分にテストする必要があります。</span><span class="sxs-lookup"><span data-stu-id="64b58-119">You will have to test carefully on both platforms if you intend for your application to work in all environments.</span></span> <span data-ttu-id="64b58-120">このテストには 2 つのシステムが必要になります。これは、同じオペレーティング システムのインストール環境で両方の実装を実行することはサポートされていないためです。</span><span class="sxs-lookup"><span data-stu-id="64b58-120">This testing will require two systems because running both implementations on the same operating system installation is not supported.</span></span>
   
-<span data-ttu-id="8f3b1-121">MAPI は MAPI ストア内のデータへの低レベルのアクセスや、トランスポート、メッセージ ストアやアドレス帳プロバイダーを構築するために適切なことに注意します。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-121">Be aware that MAPI is appropriate for low-level access to data in a MAPI store or for building a transport, message store, or address book provider.</span></span> <span data-ttu-id="8f3b1-122">MAPI が Outlook のビジネス ロジックをバイパスするため、ソリューションを構築するための Api を評価するとき Outlook オブジェクト モデルの使用も考慮する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-122">Because MAPI bypasses Outlook's business logic, you should also consider the use of the Outlook object model when you evaluate APIs for building your solution.</span></span> <span data-ttu-id="8f3b1-123">Outlook オブジェクト モデルは Outlook のビジネス ロジックをカプセル化はしますが、マルチ スレッド コード、同期プロバイダー、または Windows サービス アプリケーションには適していません。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-123">The Outlook object model does encapsulate Outlook business logic but is not suitable for multithreaded code, sync providers, or Windows Service applications.</span></span>
+<span data-ttu-id="64b58-121">MAPI は、MAPI ストア内のデータへのローレベル アクセスや、トランスポート、メッセージストア、アドレス帳プロバイダーの作成に適しています。</span><span class="sxs-lookup"><span data-stu-id="64b58-121">Be aware that MAPI is appropriate for low-level access to data in a MAPI store or for building a transport, message store, or address book provider.</span></span> <span data-ttu-id="64b58-122">MAPI は Outlook のビジネス ロジックをバイパスするため、ソリューションの作成の際に API を評価するときには、Outlook オブジェクト モデルの使用についても検討する必要があります。</span><span class="sxs-lookup"><span data-stu-id="64b58-122">Because MAPI bypasses Outlook's business logic, you should also consider the use of the Outlook object model when you evaluate APIs for building your solution.</span></span> <span data-ttu-id="64b58-123">Outlook オブジェクト モデルは Outlook ビジネス ロジックをカプセル化しますが、マルチスレッド コード、同期プロバイダー、または Windows サービス アプリケーションには適していません。</span><span class="sxs-lookup"><span data-stu-id="64b58-123">The Outlook object model does encapsulate Outlook business logic but is not suitable for multithreaded code, sync providers, or Windows Service applications.</span></span>
   
-<span data-ttu-id="8f3b1-124">このエディションに新機能に関する情報については、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-124">For information about what is new in this edition, see the following topics:</span></span>
+<span data-ttu-id="64b58-124">このエディションの新機能の詳細については、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="64b58-124">For information about what is new in this edition, see the following topics:</span></span>
   
-- <span data-ttu-id="8f3b1-125">[���̃o�[�W�����̐V�@�\���܂��B](what-s-new-in-this-edition.md)</span><span class="sxs-lookup"><span data-stu-id="8f3b1-125">[What's New in This Edition](what-s-new-in-this-edition.md)</span></span>
+- [<span data-ttu-id="64b58-125">このエディションの新機能</span><span class="sxs-lookup"><span data-stu-id="64b58-125">What's New in This Edition</span></span>](what-s-new-in-this-edition.md)
     
-- [<span data-ttu-id="8f3b1-126">���� Edition �Ŕp�~���ꂽ API �v�f</span><span class="sxs-lookup"><span data-stu-id="8f3b1-126">API Elements Deprecated in This Edition</span></span>](api-elements-deprecated-in-this-edition.md)
+- [<span data-ttu-id="64b58-126">このエディションで非推奨の API 要素</span><span class="sxs-lookup"><span data-stu-id="64b58-126">API Elements Deprecated in This Edition</span></span>](api-elements-deprecated-in-this-edition.md)
     
-<span data-ttu-id="8f3b1-127">Outlook の MAPI アプリケーションの開発に慣れていない場合は、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-127">If you are new to developing MAPI applications for Outlook, see the following topics:</span></span>
+<span data-ttu-id="64b58-127">Outlook 用の MAPI アプリケーションを初めて開発する場合は、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="64b58-127">If you are new to developing MAPI applications for Outlook, see the following topics:</span></span>
   
-- [<span data-ttu-id="8f3b1-128">Outlook 2013 用のソリューションを開発するための API またはテクノロジの選択</span><span class="sxs-lookup"><span data-stu-id="8f3b1-128">Selecting an API or technology for developing solutions for Outlook 2013</span></span>](https://msdn.microsoft.com/library/jj900714.aspx)
+- [<span data-ttu-id="64b58-128">Outlook 2013 用のソリューションを開発するための API またはテクノロジの選択</span><span class="sxs-lookup"><span data-stu-id="64b58-128">Selecting an API or technology for developing solutions for Outlook 2013</span></span>](https://msdn.microsoft.com/library/jj900714.aspx)
     
-- <span data-ttu-id="8f3b1-129">[�悭�g����w�b�_�[ �t�@�C��](commonly-used-header-files.md)</span><span class="sxs-lookup"><span data-stu-id="8f3b1-129">[Commonly Used Header Files](commonly-used-header-files.md)</span></span>
+- [<span data-ttu-id="64b58-129">よく使用されるヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="64b58-129">Commonly Used Header Files</span></span>](commonly-used-header-files.md)
     
-- [<span data-ttu-id="8f3b1-130">�悭�g�p�����v���p�e�B</span><span class="sxs-lookup"><span data-stu-id="8f3b1-130">Commonly Used Properties</span></span>](commonly-used-properties.md)
+- [<span data-ttu-id="64b58-130">よく使用されるプロパティ</span><span class="sxs-lookup"><span data-stu-id="64b58-130">Commonly Used Properties</span></span>](commonly-used-properties.md)
     
-- [<span data-ttu-id="8f3b1-131">�悭�g�p�����I�u�W�F�N�g</span><span class="sxs-lookup"><span data-stu-id="8f3b1-131">Commonly Used Objects</span></span>](commonly-used-objects.md)
+- [<span data-ttu-id="64b58-131">よく使用されるオブジェクト</span><span class="sxs-lookup"><span data-stu-id="64b58-131">Commonly Used Objects</span></span>](commonly-used-objects.md)
     
-<span data-ttu-id="8f3b1-132">この参照の残りの部分は、情報の次の 3 種類に分類されます。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-132">The rest of this reference is categorized into the following three types of information:</span></span>
+<span data-ttu-id="64b58-132">このリファレンスの残りの部分は、次の 3 種類の情報に分類されています。</span><span class="sxs-lookup"><span data-stu-id="64b58-132">The rest of this reference is categorized into the following three types of information:</span></span>
   
-- <span data-ttu-id="8f3b1-133">[MAPI のサンプル](mapi-samples.md)では、API のさまざまな要素と基本の MAPI プロバイダーを実装して、Outlook アイテムを作成する方法の使用を示すコード サンプルが多数に指示します。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-133">[MAPI Samples](mapi-samples.md) - Directs you to many code samples that show the use of various API elements and how to implement basic MAPI providers and create Outlook items.</span></span> 
+- <span data-ttu-id="64b58-133">[MAPI のサンプル](mapi-samples.md): さまざまな API 要素の使用法と、基本的な MAPI プロバイダーの実装方法および Outlook アイテムの作成方法を示す多数のコード サンプルに誘導します。</span><span class="sxs-lookup"><span data-stu-id="64b58-133">[MAPI Samples](mapi-samples.md) - Directs you to many code samples that show the use of various API elements and how to implement basic MAPI providers and create Outlook items.</span></span> 
     
-- <span data-ttu-id="8f3b1-134">[MAPI の概念](mapi-concepts.md)には、MAPI のアーキテクチャと概念について説明します。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-134">[MAPI Concepts](mapi-concepts.md) - Explains the concepts and architecture of MAPI.</span></span> 
+- <span data-ttu-id="64b58-134">[MAPI の概念](mapi-concepts.md): MAPI の概念とアーキテクチャについて説明します。</span><span class="sxs-lookup"><span data-stu-id="64b58-134">[MAPI Concepts](mapi-concepts.md) - Explains the concepts and architecture of MAPI.</span></span> 
     
-- <span data-ttu-id="8f3b1-135">[MAPI の参照](mapi-reference.md)では、関数、インターフェイス、構造体、および MAPI のプロパティに関する詳細情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="8f3b1-135">[MAPI Reference](mapi-reference.md) - Provides detailed information about the functions, interfaces, structures, and properties in MAPI.</span></span> 
+- <span data-ttu-id="64b58-135">[MAPI リファレンス](mapi-reference.md): MAPI の関数、インターフェイス、構造体、プロパティに関する詳細な情報を示します。</span><span class="sxs-lookup"><span data-stu-id="64b58-135">[MAPI Reference](mapi-reference.md) - Provides detailed information about the functions, interfaces, structures, and properties in MAPI.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="8f3b1-136">関連項目</span><span class="sxs-lookup"><span data-stu-id="8f3b1-136">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="64b58-136">関連項目</span><span class="sxs-lookup"><span data-stu-id="64b58-136">See also</span></span>
 
-- [<span data-ttu-id="8f3b1-137">Outlook MAPI リファレンスの概要</span><span class="sxs-lookup"><span data-stu-id="8f3b1-137">Getting Started with the Outlook MAPI Reference</span></span>](getting-started-with-the-outlook-mapi-reference.md)
-- [<span data-ttu-id="8f3b1-138">MAPI Samples</span><span class="sxs-lookup"><span data-stu-id="8f3b1-138">MAPI Samples</span></span>](mapi-samples.md)
-- [<span data-ttu-id="8f3b1-139">MAPI �̊T�O</span><span class="sxs-lookup"><span data-stu-id="8f3b1-139">MAPI Concepts</span></span>](mapi-concepts.md)
+- [<span data-ttu-id="64b58-137">Outlook MAPI リファレンスの概要</span><span class="sxs-lookup"><span data-stu-id="64b58-137">Getting Started with the Outlook MAPI Reference</span></span>](getting-started-with-the-outlook-mapi-reference.md)
+- [<span data-ttu-id="64b58-138">MAPI のサンプル</span><span class="sxs-lookup"><span data-stu-id="64b58-138">MAPI Samples</span></span>](mapi-samples.md)
+- [<span data-ttu-id="64b58-139">MAPI の概念</span><span class="sxs-lookup"><span data-stu-id="64b58-139">MAPI Concepts</span></span>](mapi-concepts.md)
 
