@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0e5ffb61-1469-bc91-f237-27d1156179cd
 description: 使用のアカウント マネージャーを初期化します。
-ms.openlocfilehash: 621c6a73ab2bcbdff17b87ce15af8b4e0c2e1e24
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5a643a4636251afc98750be8acf47cd3bdab3847
+ms.sourcegitcommit: b361919ae2d3ac000d9fcaa3030713df7062ecd4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799466"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "29715341"
 ---
 # <a name="iolkaccountmanagerinit"></a>IOlkAccountManager::Init
 
@@ -43,7 +43,9 @@ _dwFlags_
    - **ACCT_INIT_NO_STORES_CHECK** -(IMAP アカウントの場合) などのアカウントが、関連付けられているストアとの同期することを防止します。 
     
    - **ACCT_INIT_NOSYNCH_MAPI_ACCTS** -により、MAPI サービス アカウントと同期します。 
-    
+   
+   - **ACCT_INIT_NO_NOTIFICATIONS** : アカウント マネージャーが他のアプリケーション向けのブロードキャスト メッセージを受信することを防止します。 
+   
    - **OLK_ACCOUNT_NO_FLAGS** -同期の MAPI サービス アカウントです。 
     
 ## <a name="return-values"></a>戻り値
