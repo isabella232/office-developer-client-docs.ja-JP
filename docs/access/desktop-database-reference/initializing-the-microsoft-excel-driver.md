@@ -11,22 +11,22 @@ f1_keywords:
 f1_categories:
 - Office.Version=v15
 localization_priority: Normal
-ms.openlocfilehash: 12fb79f459024ed113007e6f764945ca9564cb3c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.openlocfilehash: cec7890385e5730831cea9241278511d88b6f3a1
+ms.sourcegitcommit: 8ead5b5501f59c108cf02969070be21f7fc52467
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712933"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30135748"
 ---
 # <a name="initializing-the-microsoft-excel-driver"></a>Microsoft Office Excel ドライバーの初期化
 
-**適用されます**Access 2013 |。Office 2013
+**適用**対象: Access 2013 |Office 2013
 
-Excel ドライバーをインストールすると、セットアップ プログラムは、一連の既定値をエンジンと ISAM 形式のサブキーで、Windows レジストリに書き込みます。 これらの設定を直接変更しないでください。追加、削除、またはこれらの設定を変更するには、アプリケーションのセットアップ プログラムを使用します。 次のセクションでは、初期化し、Microsoft Excel のデータベース ドライバーの ISAM 形式の設定について説明します。
+Excel ドライバーをインストールすると、セットアッププログラムによって、エンジンおよび ISAM 形式のサブキーに、Windows レジストリに既定値のセットが書き込まれます。 これらの設定は直接変更しないでください。アプリケーションのセットアッププログラムを使用して、これらの設定を追加、削除、または変更します。 次のセクションでは、Microsoft Excel データベースドライバーの初期化と ISAM 形式の設定について説明します。
 
-## <a name="excel-initialization-settings"></a>Excel の初期設定
+## <a name="excel-initialization-settings"></a>Excel の初期化設定
 
-**アクセス接続エンジン\\エンジン\\Excel**フォルダーには、Microsoft Excel ワークシートへの外部アクセスの使用、Aceexcl.dll のドライバーの初期設定が含まれています。 通常、このキーのエントリの設定は次のようになっています。
+**access Connectivity Engine Engine\\\\Excel**フォルダーには、Microsoft excel ワークシートへの外部アクセスに使用される Aceexcl ドライバーの初期化設定が含まれています。 通常、このキーのエントリの設定は次のようになっています。
 
 ```vb
     win32=<path>\ Aceexcl.dll  
@@ -60,18 +60,18 @@ Microsoft Access データベース エンジンで使用される、Excel キ�
 </tr>
 <tr class="even">
 <td><p>TypeGuessRows</p></td>
-<td><p>データ型を調べる行の数です。 検出されたデータの種類の最大数を指定したデータ型が決定されます。 データ型は次の順序で決定は、同順がある場合は、: 数値、通貨、日付、文字列、ブール値です。 列のデータ型に一致しないデータが検出された場合は<strong>Null</strong>値として返されます。 インポート時に [列のデータ型が混在している場合列全体は、ImportMixedTypes の設定に従ってキャストされます。 チェックする行の既定数は、8 です。 値の型は REG_DWORD 型です。</p></td>
+<td><p>データ型を確認する行の数を指定します。 データ型は、検出されたデータの種類の最大数に応じて決定されます。 が関連付けられている場合、データ型は次の順序で決定されます。数値、通貨、日付、テキスト、ブール値です。 列に対して推測されるデータ型と一致しないデータが検出された場合、そのデータは<strong>Null</strong>値として返されます。 インポート時に、列のデータ型が混在している場合は、ImportMixedTypes の設定に従って列全体がキャストされます。 チェックする既定の行数は8です。 値の型は REG_DWORD 型です。</p></td>
 </tr>
 <tr class="odd">
 <td><p>ImportMixedTypes</p></td>
 <td><p>MajorityType または Text のどちらかを設定できます。MajorityType を設定した場合、データ型が混在している列は、インポート時に最も数の多いデータ型にキャストされます。Text を設定した場合、データ型が混在している列は、インポート時にテキスト型 (Text) にキャストされます。既定値は Text です。値の型は REG_SZ 型です。</p></td>
 </tr>
 <tr class="even">
-<td><p>AppendBlankRows</p></td>
+<td><p>append空白行</p></td>
 <td><p>Microsoft Jet 3.5 または 4.0 で、新しいデータを追加する前にワークシートの末尾に付加される空行の数です。たとえば、AppendBlankRows を 4 に設定すると、Microsoft Jet データベース エンジンはワークシートの末尾に 4 つの空行を付加してから、その後にデータのある行を付加します。このエントリには、0 ～ 16 の範囲の整数値を設定します。既定値は 01 (1 行の付加) です。値の型は REG_DWORD 型です。</p></td>
 </tr>
 <tr class="odd">
-<td><p>消えて</p></td>
+<td><p>FirstRowHasNames</p></td>
 <td><p>テーブルの 1 行目に列名があるかどうかを示すバイナリ値です。値 01 では、インポート時に列名が 1 行目に設定されます。値 00 では、1 行目に列名が含まれません。この場合、列名は F1、F2、F3、というように表示されます。既定値は 01 です。値の型は REG_BINARY 型です。</p></td>
 </tr>
 </tbody>
@@ -79,7 +79,7 @@ Microsoft Access データベース エンジンで使用される、Excel キ�
 
 <br/>
 
-**アクセス接続エンジン\\エンジン\\Excel 8.0**フォルダーには、Microsoft Excel 97 に適用されますが、次のエントリが含まれています。
+**access Connectivity Engine Engine\\\\Excel 8.0**フォルダーには次のエントリが含まれています。これは、Microsoft Excel 97 に適用されます。
 
 <table>
 <colgroup>
@@ -101,53 +101,133 @@ Microsoft Access データベース エンジンで使用される、Excel キ�
 <td><p>Excel</p></td>
 </tr>
 <tr class="even">
-<td><p>ExportFilter</p></td>
+<td><p>exportfilter</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>Microsoft Excel 97-2000 (*.xls)</p></td>
 </tr>
 <tr class="odd">
-<td><p>CanLink</p></td>
+<td><p>canlink</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>01</p></td>
+<td><p>atl-fs-01</p></td>
 </tr>
 <tr class="even">
-<td><p>OneTablePerFile</p></td>
+<td><p>onetableperfile</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>00</p></td>
+<td><p>+</p></td>
 </tr>
 <tr class="odd">
-<td><p>IsamType</p></td>
+<td><p>isamtype</p></td>
 <td><p>REG_DWORD</p></td>
-<td><p>1</p></td>
+<td><p>1-d</p></td>
 </tr>
 <tr class="even">
-<td><p>IndexDialog</p></td>
+<td><p>indexdialog</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>00</p></td>
+<td><p>+</p></td>
 </tr>
 <tr class="odd">
-<td><p>CreateDBOnExport</p></td>
+<td><p>createdbonexport</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>01</p></td>
+<td><p>atl-fs-01</p></td>
 </tr>
 <tr class="even">
-<td><p>ResultTextExport</p></td>
+<td><p>resulttextexport</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>カレント データベースから Microsoft Excel 97 ファイルにデータをエクスポートします。既存のファイルにエクスポートする場合、ファイル内のデータは上書きされます。</p></td>
 </tr>
 <tr class="odd">
-<td><p>SupportsLongNames</p></td>
+<td><p>supportslongnames</p></td>
 <td><p>REG_BINARY</p></td>
-<td><p>01</p></td>
+<td><p>atl-fs-01</p></td>
 </tr>
 </tbody>
 </table>
 
+## <a name="using-the-typeguessrows-setting-for-excel-driver"></a>Excel ドライバーの TypeGuessRows 設定を使用する
+Microsoft Excel ドライバーを使用する場合は、 **TypeGuessRows**レジストリ値を使用して、データ型をチェックする行の数を構成できます。 **TypeGuessRows**の値は、次のレジストリサブキーの下にあります。
 
+# <a name="office-2016taboffice-2016"></a>[Office 2016](#tab/office-2016)
 
+Office の MSI インストールの場合
+
+- 32ビット版の windows または64ビット版の office (64 ビット版の windows) の場合:
+    
+  **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\16.0\Access Connectivity Engine\Engines\Excel**
+
+- 32ビット版 Office 用の64ビット版の Windows の場合:
+
+  **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\16.0\Access Connectivity Engine\Engines\Excel**
+    
+Office のクイック実行インストールの場合
+
+- 32ビット版の windows または64ビット版の office (64 ビット版の windows) の場合:
+    
+  **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\Microsoft\Office\16.0\Access Connectivity Engine\Engines\Excel**
+
+- 32ビット版 Office 用の64ビット版の Windows の場合:
+    
+  **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\Wow6432Node\Microsoft\Office\16.0\Access Connectivity Engine\Engines\Excel**
+
+チェックする既定の行数は**8** (8) です。 **TypeGuessRows**値を**0** (ゼロ) に設定すると、Excel ドライバーはデータ型の最初の16384行をチェックします。 16384を超える行数をチェックする場合は、 **TypeGuessRows**を目的の範囲に基づく値に設定します。 すべての行をチェックするには、 **TypeGuessRows**を 1048576 (Excel で許可される最大行数) に設定します。
+ 
+データ型は、検出されたデータの種類の最大数によって決まります。 が関連付けられている場合、データ型は次の順序で決定されます。
+
+- 数値
+- 通貨
+- 日付
+- テキスト
+- ブール値
+
+列の予想されるデータ型と一致しないデータが検出された場合、そのデータは**Null**値として返されます。 インポート時に、列のデータ型が混在している場合は、 **ImportMixedTypes**設定によって設定されたデータ型に列全体がキャストされます。
+
+# <a name="office-2013taboffice-2013"></a>[Office 2013](#tab/office-2013)
+
+32ビット版の windows または64ビット版の office (64 ビット版の windows) の場合:
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\15.0\Access Connectivity Engine\Engines\Excel**
+
+32ビット版 Office 用の64ビット版の Windows の場合:
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\15.0\Access Connectivity Engine\Engines\Excel**
+
+チェックする既定の行数は**8** (8) です。 **TypeGuessRows**値を**0** (ゼロ) に設定すると、Excel ドライバーはデータ型の最初の16384行をチェックします。 16384を超える行数をチェックする場合は、 **TypeGuessRows**を目的の範囲に基づく値に設定します。 すべての行をチェックするには、 **TypeGuessRows**を 1048576 (Excel で許可される最大行数) に設定します。
+ 
+データ型は、検出されたデータの種類の最大数によって決まります。 が関連付けられている場合、データ型は次の順序で決定されます。
+
+- 数値
+- 通貨
+- 日付
+- テキスト
+- ブール値
+
+列の予想されるデータ型と一致しないデータが検出された場合、そのデータは**Null**値として返されます。 インポート時に、列のデータ型が混在している場合は、 **ImportMixedTypes**設定によって設定されたデータ型に列全体がキャストされます。
+
+# <a name="office-2010taboffice-2010"></a>[Office 2010](#tab/office-2010)
+
+32ビット版の windows または64ビット版の office (64 ビット版の windows) の場合:
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\15.0\Access Connectivity Engine\Engines\Excel**
+
+32ビット版 Office 用の64ビット版の Windows の場合:
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\15.0\Access Connectivity Engine\Engines\Excel**
+
+チェックする既定の行数は**8** (8) です。 **TypeGuessRows**値を**0** (ゼロ) に設定すると、Excel ドライバーはデータ型の最初の16384行をチェックします。 16384を超える行数をチェックする場合は、 **TypeGuessRows**を目的の範囲に基づく値に設定します。 すべての行をチェックするには、 **TypeGuessRows**を 1048576 (Excel で許可される最大行数) に設定します。
+ 
+データ型は、検出されたデータの種類の最大数によって決まります。 が関連付けられている場合、データ型は次の順序で決定されます。
+
+- 数値
+- 通貨
+- 日付
+- テキスト
+- ブール値
+
+列の予想されるデータ型と一致しないデータが検出された場合、そのデータは**Null**値として返されます。 インポート時に、列のデータ型が混在している場合は、 **ImportMixedTypes**設定によって設定されたデータ型に列全体がキャストされます。
+
+---
 > [!NOTE]
 > [!メモ] Windows レジストリの設定を変更した場合は、新しい設定内容を有効にするために、データベース エンジンをいったん終了してから再起動する必要があります。
 
 ## <a name="see-also"></a>関連項目
 
-- [Excel ドライバーで TypeGuessRows 設定を使用します。](https://support.office.com/en-us/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b?ui=en-US&rs=en-US&ad=US)
+- [Excel ドライバーの TypeGuessRows 設定を使用する](https://support.office.com/en-us/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b?ui=en-US&rs=en-US&ad=US)
