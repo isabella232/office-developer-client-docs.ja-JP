@@ -11,12 +11,12 @@ f1_keywords:
 f1_categories:
 - Office.Version=v15
 localization_priority: Normal
-ms.openlocfilehash: cec7890385e5730831cea9241278511d88b6f3a1
-ms.sourcegitcommit: 8ead5b5501f59c108cf02969070be21f7fc52467
+ms.openlocfilehash: 2fe59f34c04314f70117b3bc7f08d78c2d23ae6d
+ms.sourcegitcommit: 62228a65109a9543cd223dfbf326dbf1af256748
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30135748"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30179664"
 ---
 # <a name="initializing-the-microsoft-excel-driver"></a>Microsoft Office Excel ドライバーの初期化
 
@@ -228,6 +228,3 @@ Office のクイック実行インストールの場合
 > [!NOTE]
 > [!メモ] Windows レジストリの設定を変更した場合は、新しい設定内容を有効にするために、データベース エンジンをいったん終了してから再起動する必要があります。
 
-## <a name="see-also"></a>関連項目
-
-- [Excel ドライバーの TypeGuessRows 設定を使用する](https://support.office.com/en-us/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b?ui=en-US&rs=en-US&ad=US)
