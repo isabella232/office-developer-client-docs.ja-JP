@@ -107,8 +107,7 @@ int Excel12(int iFunction, LPXLOPER12 pxRes, int iCount, LPXLOPER12 argument1, .
   
 ### <a name="writing-international-dlls"></a>International DLL の作成
 
-
-            **iFunction** の **xlIntl** ビットを設定する場合、その関数またはコマンドは、インターナショナル マクロ シートから呼び出されている場合と同様に実行されます。これは、そのコマンドが国際バージョン (ローカライズされたバージョン) で実行されているとしても、Excel の米国バージョンと同様に動作するという意味です。
+**iFunction** の **xlIntl** ビットを設定する場合、その関数またはコマンドは、インターナショナル マクロ シートから呼び出されている場合と同様に実行されます。これは、そのコマンドが国際バージョン (ローカライズされたバージョン) で実行されているとしても、Excel の米国バージョンと同様に動作するという意味です。
   
 ### <a name="xlretuncalced-or-xlretabort"></a>xlretUncalced または xlretAbort
 
