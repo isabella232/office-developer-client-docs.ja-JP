@@ -11,16 +11,16 @@ f1_keywords:
 f1_categories:
 - Office.Version=v15
 localization_priority: Normal
-ms.openlocfilehash: 2fe59f34c04314f70117b3bc7f08d78c2d23ae6d
-ms.sourcegitcommit: 62228a65109a9543cd223dfbf326dbf1af256748
+ms.openlocfilehash: c3424fd4b85108120ea4accc2dfa65d55394f0d2
+ms.sourcegitcommit: e59070b67358b3700ca677149a849768c144c1a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30179664"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518132"
 ---
 # <a name="initializing-the-microsoft-excel-driver"></a>Microsoft Office Excel ドライバーの初期化
 
-**適用**対象: Access 2013 |Office 2013
+**適用**対象: Excel 2016 |Access 2016 |Access 2013 |Office 2013 |Excel 2013 |Office for business Access 2013 |Excel 2010 |Access 2010
 
 Excel ドライバーをインストールすると、セットアッププログラムによって、エンジンおよび ISAM 形式のサブキーに、Windows レジストリに既定値のセットが書き込まれます。 これらの設定は直接変更しないでください。アプリケーションのセットアッププログラムを使用して、これらの設定を追加、削除、または変更します。 次のセクションでは、Microsoft Excel データベースドライバーの初期化と ISAM 形式の設定について説明します。
 
@@ -49,7 +49,7 @@ Microsoft Access データベース エンジンで使用される、Excel キ�
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>エントリ</p></th>
+<th><p>値</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
@@ -60,7 +60,7 @@ Microsoft Access データベース エンジンで使用される、Excel キ�
 </tr>
 <tr class="even">
 <td><p>TypeGuessRows</p></td>
-<td><p>データ型を確認する行の数を指定します。 データ型は、検出されたデータの種類の最大数に応じて決定されます。 が関連付けられている場合、データ型は次の順序で決定されます。数値、通貨、日付、テキスト、ブール値です。 列に対して推測されるデータ型と一致しないデータが検出された場合、そのデータは<strong>Null</strong>値として返されます。 インポート時に、列のデータ型が混在している場合は、ImportMixedTypes の設定に従って列全体がキャストされます。 チェックする既定の行数は8です。 値の型は REG_DWORD 型です。</p></td>
+<td><p>データ型を調べる行の数です。 データ型は、最も多いデータ型によって決められます。 同数の場合は、数値型 (Number)、通貨型 (Currency)、日付型 (Date)、テキスト型 (Text)、ブール型 (Boolean) の順に決められます。 列のデータ型に一致しないデータがある場合、そのデータは <strong>Null</strong> 値として返されます。 インポート時に、列内に複数のデータ型が混在している場合は、その列全体が ImportMixedTypes の設定に従ってキャストされます。 調べる行数の既定値は 8 です。 値の型は REG_DWORD 型です。</p></td>
 </tr>
 <tr class="odd">
 <td><p>ImportMixedTypes</p></td>
@@ -118,7 +118,7 @@ Microsoft Access データベース エンジンで使用される、Excel キ�
 <tr class="odd">
 <td><p>isamtype</p></td>
 <td><p>REG_DWORD</p></td>
-<td><p>1-d</p></td>
+<td><p>1</p></td>
 </tr>
 <tr class="even">
 <td><p>indexdialog</p></td>
@@ -143,10 +143,11 @@ Microsoft Access データベース エンジンで使用される、Excel キ�
 </tbody>
 </table>
 
+
 ## <a name="using-the-typeguessrows-setting-for-excel-driver"></a>Excel ドライバーの TypeGuessRows 設定を使用する
 Microsoft Excel ドライバーを使用する場合は、 **TypeGuessRows**レジストリ値を使用して、データ型をチェックする行の数を構成できます。 **TypeGuessRows**の値は、次のレジストリサブキーの下にあります。
 
-# <a name="office-2016taboffice-2016"></a>[Office 2016](#tab/office-2016)
+# [<a name="office-2016"></a>Office 2016](#tab/office-2016)
 
 Office の MSI インストールの場合
 
@@ -172,15 +173,15 @@ Office のクイック実行インストールの場合
  
 データ型は、検出されたデータの種類の最大数によって決まります。 が関連付けられている場合、データ型は次の順序で決定されます。
 
-- 数値
+- 番号
 - 通貨
 - 日付
 - テキスト
-- ブール値
+- Boolean
 
 列の予想されるデータ型と一致しないデータが検出された場合、そのデータは**Null**値として返されます。 インポート時に、列のデータ型が混在している場合は、 **ImportMixedTypes**設定によって設定されたデータ型に列全体がキャストされます。
 
-# <a name="office-2013taboffice-2013"></a>[Office 2013](#tab/office-2013)
+# [<a name="office-2013"></a>Office 2013](#tab/office-2013)
 
 32ビット版の windows または64ビット版の office (64 ビット版の windows) の場合:
 
@@ -194,15 +195,15 @@ Office のクイック実行インストールの場合
  
 データ型は、検出されたデータの種類の最大数によって決まります。 が関連付けられている場合、データ型は次の順序で決定されます。
 
-- 数値
+- 番号
 - 通貨
 - 日付
 - テキスト
-- ブール値
+- Boolean
 
 列の予想されるデータ型と一致しないデータが検出された場合、そのデータは**Null**値として返されます。 インポート時に、列のデータ型が混在している場合は、 **ImportMixedTypes**設定によって設定されたデータ型に列全体がキャストされます。
 
-# <a name="office-2010taboffice-2010"></a>[Office 2010](#tab/office-2010)
+# [<a name="office-2010"></a>Office 2010](#tab/office-2010)
 
 32ビット版の windows または64ビット版の office (64 ビット版の windows) の場合:
 
@@ -216,15 +217,19 @@ Office のクイック実行インストールの場合
  
 データ型は、検出されたデータの種類の最大数によって決まります。 が関連付けられている場合、データ型は次の順序で決定されます。
 
-- 数値
+- 番号
 - 通貨
 - 日付
 - テキスト
-- ブール値
+- Boolean
 
 列の予想されるデータ型と一致しないデータが検出された場合、そのデータは**Null**値として返されます。 インポート時に、列のデータ型が混在している場合は、 **ImportMixedTypes**設定によって設定されたデータ型に列全体がキャストされます。
 
 ---
 > [!NOTE]
 > [!メモ] Windows レジストリの設定を変更した場合は、新しい設定内容を有効にするために、データベース エンジンをいったん終了してから再起動する必要があります。
+
+## <a name="see-also"></a>関連項目
+
+- [Excel ドライバーの TypeGuessRows 設定を使用する](https://support.office.com/en-us/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b?ui=en-US&rs=en-US&ad=US)
 
