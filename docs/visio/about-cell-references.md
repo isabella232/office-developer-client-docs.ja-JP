@@ -11,20 +11,20 @@ ms.assetid: e6a9aceb-90d7-fb53-eaf4-416a1ae2a98b
 description: シェイプシートのセルの参照を使用すると、数式間の相互依存を作成できます。セルの参照によって、別のセルの値を基にセルの値を計算できます。たとえば、図形の [Width] セルに、図形の [Height] セルの値を参照して図形の幅を計算する数式が含まれている場合、図形の高さを変更すると、高さに比例して図形の幅も変更されます。
 ms.openlocfilehash: 54c7fd69e2ddaa9350996e2d8c921958a04e34ab
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804741"
 ---
-# <a name="about-cell-references"></a>セル参照について
+# <a name="about-cell-references"></a>セルの参照について
 
 シェイプシートのセルの参照を使用すると、数式間の相互依存を作成できます。セルの参照によって、別のセルの値を基にセルの値を計算できます。たとえば、図形の [Width] セルに、図形の [Height] セルの値を参照して図形の幅を計算する数式が含まれている場合、図形の高さを変更すると、高さに比例して図形の幅も変更されます。
   
 セルの数式では、同じ図形のセル、または図面やページなどの他のオブジェクトのセルを参照できるので、Microsoft Visio では特定のセルの値を基にして別のセルの値を計算できます。
   
-## <a name="what-cell-references-can-include"></a>セル参照の要素
+## <a name="what-cell-references-can-include"></a>セルの参照に含められるもの
 
-セル参照には、図形の識別子 (Id) または名前を含めることができます。 か、図形の名前はあるかどうかによって、ID をページ上の任意の図形を常に参照できます。 図形に名前が付いていない場合、既定の名前は、シートです。 *i* *という図形の id。* 図形が作成され、別のページまたはドキュメントに図形を移動する場合を除き、変更されませんがある場合は、ID が割り当てられます。 ページ上の複数の図形に同じ名前がある場合は、割り当てられた ID を含める必要があります。 
+セルの参照は、図形の識別子 (ID) または名前を含むことができます。 図形に名前があってもなくても、そのID を用いてページ上にある全ての図形をいつでも参照できます。 図形に名前が付いていない場合、図形の既定の名前は Sheet です。 図形の IDが *i*であるところの*i*。 図形が作成されると割り当てられる ID は、その図形を別のぺ―ジまたは別のドキュメントに移動しない限り変更しません。 ページ上に同じ名前の図形が複数ある場合、割り当てられた ID を含む必要があります。 
   
 ## <a name="cell-reference-syntax-and-examples"></a>セル参照の構文と例
 
@@ -36,71 +36,19 @@ ms.locfileid: "19804741"
     
 - 特殊な文字を含む名前は、一重引用符で囲む必要があります。特殊な名前の一部に一重引用符を使用する場合は、その引用符の前に一重引用符を付けます。
     
-|**セルを参照するのには**|**この構文を使用します。**|**例**|
+|**セルを参照するには**|**次の構文を使用します**|**例**|
 |:-----|:-----|:-----|
-|
-                
-                
-                同じ図形
-  <br/> | CellName  <br/> | Width  <br/> |
-| 
-                
-                
-                図形、グループ、またはガイド
-  <br/> | なります!CellName  <br/> | 
-                
-                
-                Star!Angle
-  <br/> |
-| 
-                
-                
-                同じレベルに複数の図形があり、それらが同じ名前を持っている場合の図形、グループ、またはガイド
-  <br/> | Shapename.ID!CellName  <br/> | Executive.2!高さ  <br/> |
-| 
-                
-                
-                インデックスが付いた行を含んでいる、名前付きの列
-  <br/> | Section.Column[index]  <br/> | Char.Font[3]  <br/> |
-| 
-                
-                
-                インデックスが付いた行を含んでいる、名前の付いていない列
-  <br/> | Section.ColumnIndex  <br/> | Scratch.A5  <br/> |
-| 
-                
-                
-                すべての図形、ページ、マスター シェイプ、またはスタイル
-  <br/> | Sheet.ID!CellName  <br/> | Sheet.8!FillForegnd  <br/> |
-| 
-                
-                
-                マスター シェイプ
-  <br/> | マスター [MasterName]!SheetName!CellReference  <br/> | [装置] のマスターです。シャフト!Geometry1.X1  <br/> |
-| 
-                
-                
-                オブジェクトが存在するページまたはマスター ページ
-  <br/> | ページです。CellReference  <br/> | ページです。User.Vanishing_Point  <br/> |
-| 
-                
-                
-                図面の他のページ
-  <br/> | [PageName] のページです。SheetName!CellReference  <br/> | [ページ 3] のページです。Sheet.4![Beginx]  <br/> |
-| 
-                
-                
-                スタイル
-  <br/> | スタイル!SheetName!CellReference  <br/> | スタイル!マネージャーです。線の色  <br/> |
-| 
-                
-                
-                図面
-  <br/> | TheDoc!CellReference  <br/> | TheDoc!PreviewQuality  <br/> |
-| 
-                
-                
-                特殊な名前が付いた図形、ページ、マスター、図面、またはスタイル
-  <br/> | ' シート '!CellName  <br/> | ' 1 D'!線の色  <br/> |
+|同じ図形  <br/> | CellName  <br/> | Width  <br/> |
+| 図形、グループまたはガイド  <br/> | Shapename!CellName  <br/> | Star!Angle  <br/> |
+| 同じレベルに同じ名前を持つ図形が複数あるところの図形、グループまたはガイド  <br/> | Shapename.ID!CellName  <br/> | Executive.2!Height  <br/> |
+| インデックス付きの行を含む名前付きの列  <br/> | Section.Column[index]  <br/> | Char.Font[3]  <br/> |
+| インデックス付きの行を含む名前の付いていない列  <br/> | Section.ColumnIndex  <br/> | Scratch.A5  <br/> |
+| すべての図形、ページ、マスターまたはスタイル  <br/> | Sheet.ID!CellName  <br/> | Sheet.8!FillForegnd  <br/> |
+| マスター  <br/> | Masters[MasterName]!SheetName!CellReference  <br/> | Masters[Gear]!Shaft!Geometry1.X1  <br/> |
+| オブジェクトが存在するマスター ページまたはページ  <br/> | ThePage!CellReference  <br/> | ThePage!User.Vanishing_Point  <br/> |
+| ドキュメント内の別のページ  <br/> | Pages[PageName]!SheetName!CellReference  <br/> | Pages[Page-3]!Sheet.4!BeginX  <br/> |
+| スタイル  <br/> | Styles!SheetName!CellReference  <br/> | Styles!Manager!LineColor  <br/> |
+| ドキュメント  <br/> | TheDoc!CellReference  <br/> | TheDoc!PreviewQuality  <br/> |
+| 非標準の名前付きの図形、ページ、マスター、ドキュメントまたはスタイル。  <br/> | 'Sheetname'!CellName  <br/> | '1-D'!LineColor  <br/> |
    
 
