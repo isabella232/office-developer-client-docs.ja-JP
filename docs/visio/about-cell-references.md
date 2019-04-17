@@ -11,96 +11,44 @@ ms.assetid: e6a9aceb-90d7-fb53-eaf4-416a1ae2a98b
 description: シェイプシートのセルの参照を使用すると、数式間の相互依存を作成できます。セルの参照によって、別のセルの値を基にセルの値を計算できます。たとえば、図形の [Width] セルに、図形の [Height] セルの値を参照して図形の幅を計算する数式が含まれている場合、図形の高さを変更すると、高さに比例して図形の幅も変更されます。
 ms.openlocfilehash: 54c7fd69e2ddaa9350996e2d8c921958a04e34ab
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804741"
 ---
-# <a name="about-cell-references"></a><span data-ttu-id="78db0-105">セル参照について</span><span class="sxs-lookup"><span data-stu-id="78db0-105">About Cell References</span></span>
+# <a name="about-cell-references"></a><span data-ttu-id="2b499-105">セルの参照について</span><span class="sxs-lookup"><span data-stu-id="2b499-105">About Cell References</span></span>
 
-<span data-ttu-id="78db0-p102">シェイプシートのセルの参照を使用すると、数式間の相互依存を作成できます。セルの参照によって、別のセルの値を基にセルの値を計算できます。たとえば、図形の [Width] セルに、図形の [Height] セルの値を参照して図形の幅を計算する数式が含まれている場合、図形の高さを変更すると、高さに比例して図形の幅も変更されます。</span><span class="sxs-lookup"><span data-stu-id="78db0-p102">You can create interdependencies among formulas by means of ShapeSheet cell references. Cell references give you the power to calculate a value for one cell based on another cell's value. For example, a shape's Width cell might contain a formula that calculates the shape's width by referring to the value of its Height cell, so that when a user resizes the shape vertically, its width stays in proportion.</span></span>
+<span data-ttu-id="2b499-p102">シェイプシートのセルの参照を使用すると、数式間の相互依存を作成できます。セルの参照によって、別のセルの値を基にセルの値を計算できます。たとえば、図形の [Width] セルに、図形の [Height] セルの値を参照して図形の幅を計算する数式が含まれている場合、図形の高さを変更すると、高さに比例して図形の幅も変更されます。</span><span class="sxs-lookup"><span data-stu-id="2b499-p102">You can create interdependencies among formulas by means of ShapeSheet cell references. Cell references give you the power to calculate a value for one cell based on another cell's value. For example, a shape's Width cell might contain a formula that calculates the shape's width by referring to the value of its Height cell, so that when a user resizes the shape vertically, its width stays in proportion.</span></span>
   
-<span data-ttu-id="78db0-109">セルの数式では、同じ図形のセル、または図面やページなどの他のオブジェクトのセルを参照できるので、Microsoft Visio では特定のセルの値を基にして別のセルの値を計算できます。</span><span class="sxs-lookup"><span data-stu-id="78db0-109">In a cell's formula, you can refer to a cell of the same shape or another object, such as a document or page, so that Microsoft Visio calculates a value for one cell based on another cell's value.</span></span>
+<span data-ttu-id="2b499-109">セルの数式では、同じ図形のセル、または図面やページなどの他のオブジェクトのセルを参照できるので、Microsoft Visio では特定のセルの値を基にして別のセルの値を計算できます。</span><span class="sxs-lookup"><span data-stu-id="2b499-109">In a cell's formula, you can refer to a cell of the same shape or another object, such as a document or page, so that Microsoft Visio calculates a value for one cell based on another cell's value.</span></span>
   
-## <a name="what-cell-references-can-include"></a><span data-ttu-id="78db0-110">セル参照の要素</span><span class="sxs-lookup"><span data-stu-id="78db0-110">What cell references can include</span></span>
+## <a name="what-cell-references-can-include"></a><span data-ttu-id="2b499-110">セルの参照に含められるもの</span><span class="sxs-lookup"><span data-stu-id="2b499-110">What cell references can include</span></span>
 
-<span data-ttu-id="78db0-111">セル参照には、図形の識別子 (Id) または名前を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="78db0-111">Cell references can include shape identifiers (IDs) or names.</span></span> <span data-ttu-id="78db0-112">か、図形の名前はあるかどうかによって、ID をページ上の任意の図形を常に参照できます。</span><span class="sxs-lookup"><span data-stu-id="78db0-112">You can always refer to any shape on the page by its ID, whether the shape is named or not.</span></span> <span data-ttu-id="78db0-113">図形に名前が付いていない場合、既定の名前は、シートです。</span><span class="sxs-lookup"><span data-stu-id="78db0-113">If a shape hasn't been named, its default name is Sheet.</span></span> <span data-ttu-id="78db0-114">*i* *という図形の id。*</span><span class="sxs-lookup"><span data-stu-id="78db0-114">*i*  , where  *i*  is the shape ID.</span></span> <span data-ttu-id="78db0-115">図形が作成され、別のページまたはドキュメントに図形を移動する場合を除き、変更されませんがある場合は、ID が割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="78db0-115">The ID is assigned when the shape is created and does not change unless you move the shape to another page or document.</span></span> <span data-ttu-id="78db0-116">ページ上の複数の図形に同じ名前がある場合は、割り当てられた ID を含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="78db0-116">If more than one shape on a page has the same name, you must include the assigned ID.</span></span> 
+<span data-ttu-id="2b499-111">セルの参照は、図形の識別子 (ID) または名前を含むことができます。</span><span class="sxs-lookup"><span data-stu-id="2b499-111">Cell references can include shape identifiers (IDs) or names.</span></span> <span data-ttu-id="2b499-112">図形に名前があってもなくても、そのID を用いてページ上にある全ての図形をいつでも参照できます。</span><span class="sxs-lookup"><span data-stu-id="2b499-112">You can always refer to any shape on the page by its ID, whether the shape is named or not.</span></span> <span data-ttu-id="2b499-113">図形に名前が付いていない場合、図形の既定の名前は Sheet です。</span><span class="sxs-lookup"><span data-stu-id="2b499-113">If a shape hasn't been named, its default name is Sheet.</span></span> <span data-ttu-id="2b499-114">図形の IDが *i*であるところの*i*。</span><span class="sxs-lookup"><span data-stu-id="2b499-114">*i*  , where  *i*  is the shape ID.</span></span> <span data-ttu-id="2b499-115">図形が作成されると割り当てられる ID は、その図形を別のぺ―ジまたは別のドキュメントに移動しない限り変更しません。</span><span class="sxs-lookup"><span data-stu-id="2b499-115">The ID is assigned when the shape is created and does not change unless you move the shape to another page or document.</span></span> <span data-ttu-id="2b499-116">ページ上に同じ名前の図形が複数ある場合、割り当てられた ID を含む必要があります。</span><span class="sxs-lookup"><span data-stu-id="2b499-116">If more than one shape on a page has the same name, you must include the assigned ID.</span></span> 
   
-## <a name="cell-reference-syntax-and-examples"></a><span data-ttu-id="78db0-117">セル参照の構文と例</span><span class="sxs-lookup"><span data-stu-id="78db0-117">Cell reference syntax and examples</span></span>
+## <a name="cell-reference-syntax-and-examples"></a><span data-ttu-id="2b499-117">セル参照の構文と例</span><span class="sxs-lookup"><span data-stu-id="2b499-117">Cell reference syntax and examples</span></span>
 
-<span data-ttu-id="78db0-p104">使用する構文、および名前によって図形を参照できるかどうかは、2 つのオブジェクトの関係によって決まります。次の一般的な規則が適用されます。</span><span class="sxs-lookup"><span data-stu-id="78db0-p104">The syntax you use and whether you can refer to a shape by name depend on the relationship between the two objects. These general rules apply:</span></span>
+<span data-ttu-id="2b499-p104">使用する構文、および名前によって図形を参照できるかどうかは、2 つのオブジェクトの関係によって決まります。次の一般的な規則が適用されます。</span><span class="sxs-lookup"><span data-stu-id="2b499-p104">The syntax you use and whether you can refer to a shape by name depend on the relationship between the two objects. These general rules apply:</span></span>
   
-- <span data-ttu-id="78db0-p105">数式を編集している図形と参照先となる図形が同等なものである場合、図形を名前で参照できます。この同等の図形がグループである場合、グループを名前で参照することはできますが、そのメンバーは参照できません。さらに、図形の親または図形の親と同等な図形は名前で参照できません。</span><span class="sxs-lookup"><span data-stu-id="78db0-p105">If a shape is a peer of the shape whose formula you are editing, you can refer to the peer shape by name. If the peer shape is a group, you can refer by name to the group, but not its members. Neither can you refer by name to a shape's parent or its parent's peers.</span></span>
+- <span data-ttu-id="2b499-p105">数式を編集している図形と参照先となる図形が同等なものである場合、図形を名前で参照できます。この同等の図形がグループである場合、グループを名前で参照することはできますが、そのメンバーは参照できません。さらに、図形の親または図形の親と同等な図形は名前で参照できません。</span><span class="sxs-lookup"><span data-stu-id="2b499-p105">If a shape is a peer of the shape whose formula you are editing, you can refer to the peer shape by name. If the peer shape is a group, you can refer by name to the group, but not its members. Neither can you refer by name to a shape's parent or its parent's peers.</span></span>
     
-- <span data-ttu-id="78db0-123">Sheet.ID 構文を使用すると、図形がグループに属しているかどうか、または図形がある図形の親であるかどうかに関係なく、ページ上の図形をどれでも参照できます。</span><span class="sxs-lookup"><span data-stu-id="78db0-123">You can use Sheet.ID syntax to refer to any shape on the page, whether the shape is in a group or is a parent of a shape.</span></span>
+- <span data-ttu-id="2b499-123">Sheet.ID 構文を使用すると、図形がグループに属しているかどうか、または図形がある図形の親であるかどうかに関係なく、ページ上の図形をどれでも参照できます。</span><span class="sxs-lookup"><span data-stu-id="2b499-123">You can use Sheet.ID syntax to refer to any shape on the page, whether the shape is in a group or is a parent of a shape.</span></span>
     
-- <span data-ttu-id="78db0-p106">特殊な文字を含む名前は、一重引用符で囲む必要があります。特殊な名前の一部に一重引用符を使用する場合は、その引用符の前に一重引用符を付けます。</span><span class="sxs-lookup"><span data-stu-id="78db0-p106">Names that contain nonstandard characters must be enclosed in single quotation marks. Single quotation mark characters in a nonstandard name must be prefixed by a single quotation mark.</span></span>
+- <span data-ttu-id="2b499-p106">特殊な文字を含む名前は、一重引用符で囲む必要があります。特殊な名前の一部に一重引用符を使用する場合は、その引用符の前に一重引用符を付けます。</span><span class="sxs-lookup"><span data-stu-id="2b499-p106">Names that contain nonstandard characters must be enclosed in single quotation marks. Single quotation mark characters in a nonstandard name must be prefixed by a single quotation mark.</span></span>
     
-|<span data-ttu-id="78db0-126">**セルを参照するのには**</span><span class="sxs-lookup"><span data-stu-id="78db0-126">**To reference a cell of**</span></span>|<span data-ttu-id="78db0-127">**この構文を使用します。**</span><span class="sxs-lookup"><span data-stu-id="78db0-127">**Use this syntax**</span></span>|<span data-ttu-id="78db0-128">**例**</span><span class="sxs-lookup"><span data-stu-id="78db0-128">**Example**</span></span>|
+|<span data-ttu-id="2b499-126">**セルを参照するには**</span><span class="sxs-lookup"><span data-stu-id="2b499-126">**To reference a cell of**</span></span>|<span data-ttu-id="2b499-127">**次の構文を使用します**</span><span class="sxs-lookup"><span data-stu-id="2b499-127">**Use this syntax:**</span></span>|<span data-ttu-id="2b499-128">**例**</span><span class="sxs-lookup"><span data-stu-id="2b499-128">**Example**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="78db0-129">
-                
-                
-                同じ図形
-</span><span class="sxs-lookup"><span data-stu-id="78db0-129">The same shape</span></span>  <br/> | <span data-ttu-id="78db0-130">CellName</span><span class="sxs-lookup"><span data-stu-id="78db0-130">CellName</span></span>  <br/> | <span data-ttu-id="78db0-131">Width</span><span class="sxs-lookup"><span data-stu-id="78db0-131">Width</span></span>  <br/> |
-| <span data-ttu-id="78db0-132">
-                
-                
-                図形、グループ、またはガイド
-</span><span class="sxs-lookup"><span data-stu-id="78db0-132">A shape, group, or guide</span></span>  <br/> | <span data-ttu-id="78db0-133">なります!CellName</span><span class="sxs-lookup"><span data-stu-id="78db0-133">Shapename!CellName</span></span>  <br/> | <span data-ttu-id="78db0-134">
-                
-                
-                Star!Angle
-</span><span class="sxs-lookup"><span data-stu-id="78db0-134">Star!Angle</span></span>  <br/> |
-| <span data-ttu-id="78db0-135">
-                
-                
-                同じレベルに複数の図形があり、それらが同じ名前を持っている場合の図形、グループ、またはガイド
-</span><span class="sxs-lookup"><span data-stu-id="78db0-135">A shape, group, or guide in which more than one shape at the same level has the same name</span></span>  <br/> | <span data-ttu-id="78db0-136">Shapename.ID!CellName</span><span class="sxs-lookup"><span data-stu-id="78db0-136">Shapename.ID!CellName</span></span>  <br/> | <span data-ttu-id="78db0-137">Executive.2!高さ</span><span class="sxs-lookup"><span data-stu-id="78db0-137">Executive.2!Height</span></span>  <br/> |
-| <span data-ttu-id="78db0-138">
-                
-                
-                インデックスが付いた行を含んでいる、名前付きの列
-</span><span class="sxs-lookup"><span data-stu-id="78db0-138">A named column with indexed rows</span></span>  <br/> | <span data-ttu-id="78db0-139">Section.Column[index]</span><span class="sxs-lookup"><span data-stu-id="78db0-139">Section.Column[index]</span></span>  <br/> | <span data-ttu-id="78db0-140">Char.Font[3]</span><span class="sxs-lookup"><span data-stu-id="78db0-140">Char.Font[3]</span></span>  <br/> |
-| <span data-ttu-id="78db0-141">
-                
-                
-                インデックスが付いた行を含んでいる、名前の付いていない列
-</span><span class="sxs-lookup"><span data-stu-id="78db0-141">An unnamed column with indexed rows</span></span>  <br/> | <span data-ttu-id="78db0-142">Section.ColumnIndex</span><span class="sxs-lookup"><span data-stu-id="78db0-142">Section.ColumnIndex</span></span>  <br/> | <span data-ttu-id="78db0-143">Scratch.A5</span><span class="sxs-lookup"><span data-stu-id="78db0-143">Scratch.A5</span></span>  <br/> |
-| <span data-ttu-id="78db0-144">
-                
-                
-                すべての図形、ページ、マスター シェイプ、またはスタイル
-</span><span class="sxs-lookup"><span data-stu-id="78db0-144">Any shape, page, master, or style</span></span>  <br/> | <span data-ttu-id="78db0-145">Sheet.ID!CellName</span><span class="sxs-lookup"><span data-stu-id="78db0-145">Sheet.ID!CellName</span></span>  <br/> | <span data-ttu-id="78db0-146">Sheet.8!FillForegnd</span><span class="sxs-lookup"><span data-stu-id="78db0-146">Sheet.8!FillForegnd</span></span>  <br/> |
-| <span data-ttu-id="78db0-147">
-                
-                
-                マスター シェイプ
-</span><span class="sxs-lookup"><span data-stu-id="78db0-147">A master</span></span>  <br/> | <span data-ttu-id="78db0-148">マスター [MasterName]!SheetName!CellReference</span><span class="sxs-lookup"><span data-stu-id="78db0-148">Masters[MasterName]!SheetName!CellReference</span></span>  <br/> | <span data-ttu-id="78db0-149">[装置] のマスターです。シャフト!Geometry1.X1</span><span class="sxs-lookup"><span data-stu-id="78db0-149">Masters[Gear]!Shaft!Geometry1.X1</span></span>  <br/> |
-| <span data-ttu-id="78db0-150">
-                
-                
-                オブジェクトが存在するページまたはマスター ページ
-</span><span class="sxs-lookup"><span data-stu-id="78db0-150">The page or master page on which the object is located</span></span>  <br/> | <span data-ttu-id="78db0-151">ページです。CellReference</span><span class="sxs-lookup"><span data-stu-id="78db0-151">ThePage!CellReference</span></span>  <br/> | <span data-ttu-id="78db0-152">ページです。User.Vanishing_Point</span><span class="sxs-lookup"><span data-stu-id="78db0-152">ThePage!User.Vanishing_Point</span></span>  <br/> |
-| <span data-ttu-id="78db0-153">
-                
-                
-                図面の他のページ
-</span><span class="sxs-lookup"><span data-stu-id="78db0-153">Another page in the document</span></span>  <br/> | <span data-ttu-id="78db0-154">[PageName] のページです。SheetName!CellReference</span><span class="sxs-lookup"><span data-stu-id="78db0-154">Pages[PageName]!SheetName!CellReference</span></span>  <br/> | <span data-ttu-id="78db0-155">[ページ 3] のページです。Sheet.4![Beginx]</span><span class="sxs-lookup"><span data-stu-id="78db0-155">Pages[Page-3]!Sheet.4!BeginX</span></span>  <br/> |
-| <span data-ttu-id="78db0-156">
-                
-                
-                スタイル
-</span><span class="sxs-lookup"><span data-stu-id="78db0-156">A style</span></span>  <br/> | <span data-ttu-id="78db0-157">スタイル!SheetName!CellReference</span><span class="sxs-lookup"><span data-stu-id="78db0-157">Styles!SheetName!CellReference</span></span>  <br/> | <span data-ttu-id="78db0-158">スタイル!マネージャーです。線の色</span><span class="sxs-lookup"><span data-stu-id="78db0-158">Styles!Manager!LineColor</span></span>  <br/> |
-| <span data-ttu-id="78db0-159">
-                
-                
-                図面
-</span><span class="sxs-lookup"><span data-stu-id="78db0-159">The document</span></span>  <br/> | <span data-ttu-id="78db0-160">TheDoc!CellReference</span><span class="sxs-lookup"><span data-stu-id="78db0-160">TheDoc!CellReference</span></span>  <br/> | <span data-ttu-id="78db0-161">TheDoc!PreviewQuality</span><span class="sxs-lookup"><span data-stu-id="78db0-161">TheDoc!PreviewQuality</span></span>  <br/> |
-| <span data-ttu-id="78db0-162">
-                
-                
-                特殊な名前が付いた図形、ページ、マスター、図面、またはスタイル
-</span><span class="sxs-lookup"><span data-stu-id="78db0-162">A shape, page, master, document, or style with a nonstandard name.</span></span>  <br/> | <span data-ttu-id="78db0-163">' シート '!CellName</span><span class="sxs-lookup"><span data-stu-id="78db0-163">'Sheetname'!CellName</span></span>  <br/> | <span data-ttu-id="78db0-164">' 1 D'!線の色</span><span class="sxs-lookup"><span data-stu-id="78db0-164">'1-D'!LineColor</span></span>  <br/> |
+|<span data-ttu-id="2b499-129">同じ図形</span><span class="sxs-lookup"><span data-stu-id="2b499-129">The same shape</span></span>  <br/> | <span data-ttu-id="2b499-130">CellName</span><span class="sxs-lookup"><span data-stu-id="2b499-130">CellName</span></span>  <br/> | <span data-ttu-id="2b499-131">Width</span><span class="sxs-lookup"><span data-stu-id="2b499-131">Width</span></span>  <br/> |
+| <span data-ttu-id="2b499-132">図形、グループまたはガイド</span><span class="sxs-lookup"><span data-stu-id="2b499-132">A shape, group, or guide</span></span>  <br/> | <span data-ttu-id="2b499-133">Shapename!CellName</span><span class="sxs-lookup"><span data-stu-id="2b499-133">Shapename!CellName</span></span>  <br/> | <span data-ttu-id="2b499-134">Star!Angle</span><span class="sxs-lookup"><span data-stu-id="2b499-134">Star!Angle</span></span>  <br/> |
+| <span data-ttu-id="2b499-135">同じレベルに同じ名前を持つ図形が複数あるところの図形、グループまたはガイド</span><span class="sxs-lookup"><span data-stu-id="2b499-135">A shape, group, or guide in which more than one shape at the same level has the same name</span></span>  <br/> | <span data-ttu-id="2b499-136">Shapename.ID!CellName</span><span class="sxs-lookup"><span data-stu-id="2b499-136">Shapename.ID!CellName</span></span>  <br/> | <span data-ttu-id="2b499-137">Executive.2!Height</span><span class="sxs-lookup"><span data-stu-id="2b499-137">Executive.2!Height</span></span>  <br/> |
+| <span data-ttu-id="2b499-138">インデックス付きの行を含む名前付きの列</span><span class="sxs-lookup"><span data-stu-id="2b499-138">A named column with indexed rows</span></span>  <br/> | <span data-ttu-id="2b499-139">Section.Column[index]</span><span class="sxs-lookup"><span data-stu-id="2b499-139">Section.Column[index]</span></span>  <br/> | <span data-ttu-id="2b499-140">Char.Font[3]</span><span class="sxs-lookup"><span data-stu-id="2b499-140">Char.Font[3]</span></span>  <br/> |
+| <span data-ttu-id="2b499-141">インデックス付きの行を含む名前の付いていない列</span><span class="sxs-lookup"><span data-stu-id="2b499-141">An unnamed column with indexed rows</span></span>  <br/> | <span data-ttu-id="2b499-142">Section.ColumnIndex</span><span class="sxs-lookup"><span data-stu-id="2b499-142">Section.ColumnIndex</span></span>  <br/> | <span data-ttu-id="2b499-143">Scratch.A5</span><span class="sxs-lookup"><span data-stu-id="2b499-143">Scratch.A5</span></span>  <br/> |
+| <span data-ttu-id="2b499-144">すべての図形、ページ、マスターまたはスタイル</span><span class="sxs-lookup"><span data-stu-id="2b499-144">Any shape, page, master, or style</span></span>  <br/> | <span data-ttu-id="2b499-145">Sheet.ID!CellName</span><span class="sxs-lookup"><span data-stu-id="2b499-145">Sheet.ID!CellName</span></span>  <br/> | <span data-ttu-id="2b499-146">Sheet.8!FillForegnd</span><span class="sxs-lookup"><span data-stu-id="2b499-146">Sheet.8!FillForegnd</span></span>  <br/> |
+| <span data-ttu-id="2b499-147">マスター</span><span class="sxs-lookup"><span data-stu-id="2b499-147">A master</span></span>  <br/> | <span data-ttu-id="2b499-148">Masters[MasterName]!SheetName!CellReference</span><span class="sxs-lookup"><span data-stu-id="2b499-148">Masters[MasterName]!SheetName!CellReference</span></span>  <br/> | <span data-ttu-id="2b499-149">Masters[Gear]!Shaft!Geometry1.X1</span><span class="sxs-lookup"><span data-stu-id="2b499-149">Masters[Gear]!Shaft!Geometry1.X1</span></span>  <br/> |
+| <span data-ttu-id="2b499-150">オブジェクトが存在するマスター ページまたはページ</span><span class="sxs-lookup"><span data-stu-id="2b499-150">The page or master page on which the object is located</span></span>  <br/> | <span data-ttu-id="2b499-151">ThePage!CellReference</span><span class="sxs-lookup"><span data-stu-id="2b499-151">ThePage!CellReference</span></span>  <br/> | <span data-ttu-id="2b499-152">ThePage!User.Vanishing_Point</span><span class="sxs-lookup"><span data-stu-id="2b499-152">ThePage!User.Vanishing_Point</span></span>  <br/> |
+| <span data-ttu-id="2b499-153">ドキュメント内の別のページ</span><span class="sxs-lookup"><span data-stu-id="2b499-153">Another page in the document</span></span>  <br/> | <span data-ttu-id="2b499-154">Pages[PageName]!SheetName!CellReference</span><span class="sxs-lookup"><span data-stu-id="2b499-154">Pages[PageName]!SheetName!CellReference</span></span>  <br/> | <span data-ttu-id="2b499-155">Pages[Page-3]!Sheet.4!BeginX</span><span class="sxs-lookup"><span data-stu-id="2b499-155">Pages[Page-3]!Sheet.4!BeginX</span></span>  <br/> |
+| <span data-ttu-id="2b499-156">スタイル</span><span class="sxs-lookup"><span data-stu-id="2b499-156">A style</span></span>  <br/> | <span data-ttu-id="2b499-157">Styles!SheetName!CellReference</span><span class="sxs-lookup"><span data-stu-id="2b499-157">Styles!SheetName!CellReference</span></span>  <br/> | <span data-ttu-id="2b499-158">Styles!Manager!LineColor</span><span class="sxs-lookup"><span data-stu-id="2b499-158">Styles!Manager!LineColor</span></span>  <br/> |
+| <span data-ttu-id="2b499-159">ドキュメント</span><span class="sxs-lookup"><span data-stu-id="2b499-159">The document</span></span>  <br/> | <span data-ttu-id="2b499-160">TheDoc!CellReference</span><span class="sxs-lookup"><span data-stu-id="2b499-160">TheDoc!CellReference</span></span>  <br/> | <span data-ttu-id="2b499-161">TheDoc!PreviewQuality</span><span class="sxs-lookup"><span data-stu-id="2b499-161">TheDoc!PreviewQuality</span></span>  <br/> |
+| <span data-ttu-id="2b499-162">非標準の名前付きの図形、ページ、マスター、ドキュメントまたはスタイル。</span><span class="sxs-lookup"><span data-stu-id="2b499-162">A shape, page, master, document, or style with a nonstandard name.</span></span>  <br/> | <span data-ttu-id="2b499-163">'Sheetname'!CellName</span><span class="sxs-lookup"><span data-stu-id="2b499-163">'Sheetname'!CellName</span></span>  <br/> | <span data-ttu-id="2b499-164">'1-D'!LineColor</span><span class="sxs-lookup"><span data-stu-id="2b499-164">'1-D'!LineColor</span></span>  <br/> |
    
 
