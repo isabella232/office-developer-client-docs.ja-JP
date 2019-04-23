@@ -1,5 +1,5 @@
 ---
-title: TableDef.Updatable プロパティ (DAO)
+title: TableDef プロパティ (DAO)
 TOCTitle: Updatable Property
 ms:assetid: 0b1ae7e5-416d-06f0-5d74-989c6db67ff2
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845128(v=office.15)
@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a6e6c7409b89058c6be55d9fb83eb85c7af9fb9c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28725974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314414"
 ---
-# <a name="tabledefupdatable-property-dao"></a>TableDef.Updatable プロパティ (DAO)
+# <a name="tabledefupdatable-property-dao"></a>TableDef プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-DAO オブジェクトを変更できるかどうかを示す値を取得します。値の取得のみ可能です。ブール型 ( **Boolean**) の値を使用します。
+DAO オブジェクトを変更できるかどうかを示す値を返します。 値の取得のみ可能なブール型 (**Boolean**) の値です。
 
 ## <a name="syntax"></a>構文
 
-*式*です。更新可能です
+*式*。できる
 
-*式***テーブル定義**オブジェクトを表す変数です。
+*式***TableDef**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 

@@ -1,5 +1,5 @@
 ---
-title: (デスクトップ データベース参照のアクセス) のデータを更新します。
+title: データを更新する (Access デスクトップデータベースリファレンス)
 TOCTitle: Updating Data
 ms:assetid: 02e82066-77c8-cbb2-db28-98e2fc94404c
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248794(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8e6989468e23fc1c9c611eb091172822a6ffe938
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32313567"
 ---
 # <a name="updating-data"></a>データの更新
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 更新動作および更新機能は、更新モード (ロックの種類)、カーソルの種類、およびカーソル位置に大きく依存します。
 
@@ -27,9 +27,9 @@ ms.locfileid: "28726338"
 
 **Update** メソッドまたは **UpdateBatch** メソッドを呼び出した後も、現在のレコードは変わりません。
 
-このセクションには、次のトピックが含まれています。
+このセクションでは、以下のトピックについて説明します。
 
 - [イミディエイト モード](immediate-mode.md)
 - [トランザクション処理](transaction-processing.md)
-- [バッチ モード (ADO)](batch-mode.md)
+- [バッチモード (ADO)](batch-mode.md)
 

@@ -1,5 +1,5 @@
 ---
-title: TableDef.Indexes プロパティ (DAO)
+title: TableDef プロパティ (DAO)
 TOCTitle: Indexes Property
 ms:assetid: b168ff75-0a5f-2bc0-9180-2add520a12c6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822007(v=office.15)
@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 59eb77548d6fc46db99596204cb931c916f5c80c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314344"
 ---
-# <a name="tabledefindexes-property-dao"></a>TableDef.Indexes プロパティ (DAO)
+# <a name="tabledefindexes-property-dao"></a>TableDef プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-指定されたテーブル用に保存されている **Index** オブジェクトをすべて含む **Indexes** コレクションを返します。値の取得のみ可能です。
+指定したテーブルの保存された **Index** オブジェクトすべてが含まれている **Indexes** コレクションを取得します。 読み取り専用です。
 
 ## <a name="syntax"></a>構文
 
-*式*です。インデックス
+*式*。添
 
-*式***テーブル定義**オブジェクトを表す変数です。
+*式***TableDef**オブジェクトを表す変数を取得します。
 

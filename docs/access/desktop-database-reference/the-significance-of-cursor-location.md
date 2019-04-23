@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3ae9cc65d61416767140572b32d3f2e1b8e4d8eb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32313980"
 ---
 # <a name="significance-of-cursor-location"></a>カーソル位置の重要性
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-すべてのカーソルは、そのデータを保持するために、一時的なリソースを使用します。 これらのリソースは、メモリ、ディスクのページング ファイル、一時ディスク ファイル、またはデータベースにも一時的な記憶域にあります。 これらのリソースがクライアント コンピューター上にある場合、カーソルは*クライアント側*カーソルと呼ばれます。 これらのリソースがサーバー上にある場合、カーソルは、*サーバー側*カーソルと呼ばれます。
+すべてのカーソルは、一時リソースを使用してデータを保持します。これらのリソースには、メモリ、ディスク上のページング ファイル、ディスク上の一時ファイルの他、データベース内の一時記憶域が使用される場合もあります。これらのリソースがクライアント コンピューター側にある場合、そのカーソルは "クライアント側" カーソルと呼ばれます。一方、これらのリソースがサーバー上にある場合、そのカーソルは "サーバー側" カーソルと呼ばれます。
 
 ## <a name="client-side-cursors"></a>クライアント側カーソル
 
