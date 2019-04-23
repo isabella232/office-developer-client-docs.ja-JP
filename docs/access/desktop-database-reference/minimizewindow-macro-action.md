@@ -12,40 +12,40 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 9f7c4ab535010dc0329673fd04721615f6eb3cd8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288884"
 ---
 # <a name="minimizewindow-macro-action"></a>MinimizeWindow マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 タブ付きドキュメントを使用せずにウィンドウを重ねて使用するように Access が構成されている場合、" **MinimizeWindow/ウィンドウの最小化** " アクションを使用してアクティブ ウィンドウを縮小し、Access ウィンドウの下部に小さなタイトル バーとして表示することができます。
 
 > [!NOTE]
 > [!メモ] このアクションは、Visual Basic Editor のコード ウィンドウには適用できません。コード ウィンドウへの影響の詳細については、 **WindowState** プロパティのトピックを参照してください。
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**MinimizeWindow**アクション引数はありません。
+"MinimizeWindow/ウィンドウの最小化" アクションには、引数はありません。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-オブジェクトを開いたまま、ウィンドウを画面から削除するのには、このアクションを使用できます。 オブジェクトを開くウィンドウを表示せずにこの操作を使用することもできます。 オブジェクトを表示するには、 **MaximizeWindow**または**RestoreWindow**のいずれかのアクションに**SelectObject**アクションを使用します。 **RestoreWindow**アクションは、元のサイズを最小化したウィンドウを復元します。
+You can use this action to remove a window from the screen while leaving the object open. You can also use this action to open an object without displaying its window. To display the object, use the **SelectObject** action with either the **MaximizeWindow** or **RestoreWindow** action. The **RestoreWindow** action restores a minimized window to its previous size.
 
-**MinimizeWindow**アクションは、ウィンドウの右上隅の [**最小化**] ボタンをクリックするか、**コントロール**] メニューの [**最小化**] をクリックと同じです。
+The **MinimizeWindow** action has the same effect as clicking the **Minimize** button in the window's upper-right corner or clicking **Minimize** on the window's **Control** menu.
 
 **ヒント**
 
-- 最初必要があります作業中のウィンドウ以外のウィンドウを最小化したい場合は、 **SelectObject**アクションを使用します。
+- You may first need to use the **SelectObject** action if the window you want to minimize isn't the active window.
 
-- ナビゲーション ウィンドウを非表示にするには、ナビゲーション ウィンドウに引数が **[はい]** に設定し、 **MinimizeWindow**アクションを使用して**SelectObject**アクションを使用します。 **SelectObject**アクションで選択したオブジェクトは、データベース内のオブジェクトにできます。
+- To hide the Navigation Pane, use the **SelectObject** action with the In Navigation Pane argument set to **Yes** and then use the **MinimizeWindow** action. The object you select in the **SelectObject** action can be any object in the database.
 
 - アクティブ ウィンドウを非表示にするには、[ **表示**] メニューの [ **このウィンドウの管理**] をクリックし、[ **表示しない**] をクリックします。この場合、ウィンドウは最小化されるのではなく、非表示になります。同じく [ **表示**] メニューの [ **再表示**] をクリックすると、ウィンドウを再度表示できます。これらのコマンドをマクロから実行するには、"RunMenuCommand/メニューコマンドの実行" アクションを使用します。
 
-- フォームのウィンドウを表示または非表示に、フォームの**Visible**プロパティを設定するのには **、アクション**を使用することもできます。
+- You can also use the **SetValue** action to set a form's **Visible** property to hide or show the form's window.
 
-Visual Basic for Applications (VBA) モジュールに**MinimizeWindow**アクションを実行するには、 **DoCmd**オブジェクトの**最小化**の方法を使用します。
+To run the **MinimizeWindow** action in a Visual Basic for Applications (VBA) module, use the **Minimize** method of the **DoCmd** object.
 

@@ -1,5 +1,5 @@
 ---
-title: ActiveX データ オブジェクト (ADO) の作業テーブル
+title: ActiveX Data Objects (ADO) タスクテーブル
 TOCTitle: ADO task table
 ms:assetid: 39671d86-72ac-a7b0-53d2-7a17429b15ad
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249141(v=office.15)
@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ffb9ece91d674e3447f43ae17e2ea9415e2339ac
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283248"
 ---
 # <a name="ado-task-table"></a>ADO のタスク表
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-次の表は、 *ADO プログラマ ガイド」* に含まれているプログラミングのタスクの一覧し、各タスクの参照を提供します。 これらの参照は、テキストによる説明またはコード例のタスクを実行する ADO 機能に関する情報を表示できます。
+次の表は、 *ADO プログラマガイド*に含まれるプログラミングタスクと、各タスクのリファレンスを示しています。 These references can be textual descriptions or code examples in which you can find information about the ADO feature that performs the task.
 
 <table>
 <colgroup>
@@ -28,7 +28,7 @@ ms.locfileid: "28700179"
 <thead>
 <tr class="header">
 <th><p>ADO タスク</p></th>
-<th><p>参照箇所</p></th>
+<th><p>References</p></th>
 </tr>
 </thead>
 <tbody>
@@ -38,7 +38,7 @@ ms.locfileid: "28700179"
 </tr>
 <tr class="even">
 <td><p>コマンドの実行またはストアド プロシージャの呼び出し</p></td>
-<td><p><a href="using-the-command-object-access.md">コマンド オブジェクトの使用</a></p></td>
+<td><p><a href="using-the-command-object-access.md">Command オブジェクトを使用する</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong> を開く</p></td>
@@ -86,7 +86,7 @@ ms.locfileid: "28700179"
 </tr>
 <tr class="even">
 <td><p>エラーの処理</p></td>
-<td><p><a href="ado-errors.md">ADO エラー</a></p></td>
+<td><p><a href="ado-errors.md">ADO エラー一覧</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>イベントの処理、非同期プログラミング</p></td>

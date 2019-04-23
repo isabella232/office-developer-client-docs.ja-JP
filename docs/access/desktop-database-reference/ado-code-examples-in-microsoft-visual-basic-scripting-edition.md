@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b8be48c74dbf17062388866d3ab982b6a24643f8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281840"
 ---
 # <a name="ado-code-examples-in-microsoft-visual-basic-scripting-edition"></a>Microsoft Visual Basic Scripting Edition での ADO コードの例
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 Visual Basic Scripting Edition (VBScript) で記述するときの ADO メソッドの使用方法については、次のトピックを参照してください。
 
@@ -25,11 +25,11 @@ Visual Basic Scripting Edition (VBScript) で記述するときの ADO メソッ
 
 ## <a name="methods"></a>メソッド
 
-- [AddNew メソッドの使用例](addnew-method-example-vbscript.md)
-- [クローン メソッドの使用例](clone-method-example-vbscript.md)
-- [メソッドの例を削除します。](delete-method-example-vbscript.md)
-- [実行、クエリを再実行、およびメソッドの使用例をオフに](execute-requery-and-clear-methods-example-vbscript.md)
+- [AddNew メソッドの使用例 (vb)](addnew-method-example-vbscript.md)
+- [Clone メソッドの例](clone-method-example-vbscript.md)
+- [Delete メソッドの使用例 (vb)](delete-method-example-vbscript.md)
+- [Execute メソッド、Requery メソッド、および Clear メソッドの使用例 (vb)](execute-requery-and-clear-methods-example-vbscript.md)
 - [Move メソッドの使用例 (VB)](move-method-example-vbscript.md)
-- [MoveFirst、MoveLast、MoveNext、および MovePrevious メソッドの使用例](movefirst-movelast-movenext-and-moveprevious-methods-example-vbscript.md)
-- [開いたり閉じたりする方法の例](open-and-close-methods-example-vbscript.md)
+- [MoveFirst、MoveLast、MoveNext、および MovePrevious メソッドの使用例 (vb)](movefirst-movelast-movenext-and-moveprevious-methods-example-vbscript.md)
+- [Open メソッドと Close メソッドの使用例 (vb)](open-and-close-methods-example-vbscript.md)
 

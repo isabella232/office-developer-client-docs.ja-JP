@@ -1,5 +1,5 @@
 ---
-title: 名前空間 (アクセスのデスクトップのデータベース参照)
+title: 名前空間 (Access デスクトップデータベースリファレンス)
 TOCTitle: Namespaces
 ms:assetid: e39f003c-3d16-1fae-48c5-304593c41f2f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250158(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 905edba502fcc2994be6f6b8e50a7200b66a82b8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288626"
 ---
 # <a name="namespaces"></a>名前空間
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ADO での XML の保存形式には、次の 4 つの名前空間が使用されます。
 
@@ -27,21 +27,21 @@ ADO での XML の保存形式には、次の 4 つの名前空間が使用さ�
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>接頭語</p></th>
+<th><p>Prefix</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>s</p></td>
-<td><p>参照して、 &quot;XML データ&quot;名前空間の要素と現在の<strong>レコード セット</strong>のスキーマを定義する属性が含まれています。</p></td>
+<td><p>現在の<strong>Recordset</strong>のスキーマを&quot;定義する要素と属性を含む&quot;XML データ名前空間を参照します。</p></td>
 </tr>
 <tr class="even">
 <td><p>dt</p></td>
 <td><p>データ型定義の仕様を表します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>rs</p></td>
+<td><p>clr</p></td>
 <td><p>ADO の <strong>Recordset</strong> プロパティおよび属性に固有の要素と属性を含む名前空間を表します。</p></td>
 </tr>
 <tr class="even">

@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: fe5d331b7f3ab4685cb930323076d111a25ec68e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289778"
 ---
 # <a name="marking-business-objects-as-safe-for-scripting"></a>スクリプト実行に安全なビジネス オブジェクトとしてマークする
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 インターネット環境のセキュリティを確保するには、[RDS.DataSpace](dataspace-object-rds.md) オブジェクトの [CreateObject メソッド (RDS)](createobject-method-rds.md) を使用してインスタンス作成されたすべてのビジネス オブジェクトを、"スクリプトを実行しても安全" だとマークする必要があります。ビジネス オブジェクトを DCOM で使用する前に、システム レジストリの License エリアでそのようにマークされていることを確認する必要があります。
 
@@ -30,13 +30,13 @@ Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}]
 Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}] 
 ```
 
-場所\< *MyActiveXGUID* \>は、ビジネス オブジェクトの GUID の 16 進数です。 保存し、レジストリ エディターを使用するか、Windows エクスプ ローラーで .reg ファイルをダブルクリックすると、レジストリにマージすること。
+\< *myactivexguid* \>は、ビジネスオブジェクトの16進数の guid 番号です。 Save it and merge it into your registry by using the Registry Editor or double-clicking the .reg file in Windows Explorer.
 
-Microsoft Visual Basic 内に作成されるビジネス オブジェクトは、「スクリプトを実行しても安全」とで自動的にパッケージと展開ウィザードとマークできます。 ファミリー セーフティの設定を指定するウィザードが表示されたら、ときに、**初期化**と**スクリプティングの安全性**を選択します。
+Microsoft Visual Basic で作成されたビジネスオブジェクトは、パッケージと展開ウィザードを使用して、自動的に "スクリプトを実行しても安全" とマークできます。 When the wizard asks you to specify safety settings, select **Safe for initialization** and **Safe for scripting**.
 
 アプリケーション セットアップ ウィザードの最後の手順では, .htm ファイルと .cab ファイルが作成されます。これらの 2 つのファイルを目的のコンピューターにコピーし, .htm ファイルをダブルクリックすると、ページを読み込んでサーバーを正しく登録できます。
 
-ビジネス オブジェクトは、Windows にインストールするため\\System32\\既定では、ディレクトリを作成は、Windows に移動\\System32 ディレクトリを変更して、 **HKEY\_クラス\_ルート\\CLSID\\ **\< *MyActiveXGUID*\>\\**InprocServer32**のレジストリ キーに正しいパスと一致します。
+ビジネスオブジェクトは\\既定で windows system32\\occache ディレクトリにインストールされるため、windows\\system32 ディレクトリに移動し、 **HKEY\_クラス\_のルート\\CLSID\\ **を変更します。\< *myactivexguid*\>\\**InprocServer32**レジストリキーを正しいパスに一致させます。
 
 
 > [!NOTE]

@@ -12,20 +12,20 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 119e824cae71d54bb398aa68f476a667f14a6888
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280274"
 ---
 # <a name="addmenu-macro-action"></a>AddMenu マクロ アクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**Addmenu マクロ**の基本的な操作をについて説明します。
+This article describes the basic operation of the **AddMenu** macro action.
 
-作成するのには、**メニューの追加**アクションを使用できます。
+You can use the **AddMenu** action to create:
 
 - 特定のフォームやレポートに対する、[ **アドイン**] タブのカスタム メニュー。
 
@@ -33,9 +33,9 @@ ms.locfileid: "28699158"
 
 - グローバル ショートカット メニュー。グローバル ショートカット メニューは、フォーム、 レポート、またはコントロールのカスタム ショートカット メニューを追加した場合を除き、テーブルやクエリ データシート内のフィールド、フォーム、およびレポートで、組み込みショートカット メニューの代わりに表示されます。
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**メニューの追加**アクションでは、次の引数があります。
+"AddMenu/メニューの追加" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -51,24 +51,22 @@ ms.locfileid: "28699158"
 <tbody>
 <tr class="odd">
 <td><p><strong>Menu Name/メニュー名</strong></p></td>
-<td><p>たとえば、メニューの名前&quot;レポート コマンド&quot;または&quot;ツール&quot;。 メニューを選択するキーボードを使用できるようにアクセス キーを作成するのには、アンパサンドを入力します (<strong>&amp;</strong>)、アクセス キーに文字の前にします。 <strong>[アドイン</strong>] タブのメニュー名で、この文字が下線付きで表示します。</p></td>
+<td><p>メニューの名前&quot;(レポートコマンド&quot;や&quot;ツール&quot;など)。 キーボードを使用してメニューを選択できるようにアクセスキーを作成するには、アクセスキー<strong>&amp;</strong>として使用する文字の前にアンパサンド () を入力します。 [<strong>アドイン</strong>] タブのメニュー名で、この文字に下線が付きます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Menu Macro Name/メニュー マクロ名</strong></p></td>
-<td><p>メニュー コマンドのマクロを含むマクロ グループの名前を指定します。この引数は省略できません。 
-
-</p>
-<p><strong>注</strong>: ライブラリ データベースでは、<strong>メニューの追加</strong>アクションを含むマクロを実行すると、Microsoft Office Access 2007 が現在のデータベースだけでは、この名前のマクロ ・ グループの検索します。</p></td>
+<td><p>メニュー コマンドのマクロを含むマクロ グループの名前を指定します。 この引数は省略できません。</p>
+<p><strong>注</strong>: ライブラリデータベースで " <strong>AddMenu/メニュー</strong>の作成" アクションが記述されたマクロを実行すると、Microsoft Office Access 2007 は、この名前のマクログループをカレントデータベースでのみ検索します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Status Bar Text/ステータス バー テキスト</strong></p></td>
-<td><p>メニュー選択時にステータス バーに表示されるテキストを指定します。ショートカット メニューの場合、この引数は無視されます。</p></td>
+<td><p>メニュー選択時にステータス バーに表示されるテキストを指定します。 ショートカット メニューの場合、この引数は無視されます。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-Visual Basic for Applications (VBA) モジュールの**メニューの追加**アクションを実行するには、 **DoCmd**オブジェクトの**AddMenu**メソッドを使用します。 **[アドイン**] タブにカスタム メニューを作成するか、カスタム ショートカット メニューをフォーム、レポート、またはコントロールにアタッチするのには、VBA では、 **MenuBar**プロパティまたは**ShortcutMenuBar**プロパティを設定することもできます。 グローバル ショートカット メニューを作成する**アプリケーション**オブジェクトの**ShortcutMenuBar**プロパティを設定することができます。
+To run the **AddMenu** action in a Visual Basic for Applications (VBA) module, use the **AddMenu** method of the **DoCmd** object. You can also set the **MenuBar** or **ShortcutMenuBar** property in VBA to create a custom menu on the **Add-Ins** tab or to attach a custom shortcut menu to a form, report, or control. You can set the **ShortcutMenuBar** property of the **Application** object to create a global shortcut menu.
 

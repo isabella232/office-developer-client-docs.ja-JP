@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e0c0eef638cb76676cd2287a34c0e4b17bd89c4d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287791"
 ---
 # <a name="parent-property-ado-md"></a>Parent プロパティ (ADO MD)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 階層内の現在のメンバーの親であるメンバーを示します。
 
@@ -25,7 +25,7 @@ ms.locfileid: "28700001"
 
 [Member](member-object-ado-md.md) オブジェクトを取得します。値の取得のみが可能です。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-階層の最上位レベル (ルート) にあるメンバーには、親はありません。このプロパティは、**Level** オブジェクトに属する [Member](level-object-ado-md.md) オブジェクトでのみサポートされます。 **Position** オブジェクトに属する [Member](position-object-ado-md.md) オブジェクトからこのプロパティが参照されると、エラーが発生します。
+階層の最上位レベル (ルート) にあるメンバーには、親はありません。このプロパティは、[Level](level-object-ado-md.md) オブジェクトに属する **Member** オブジェクトでのみサポートされます。[Position](position-object-ado-md.md) オブジェクトに属する **Member** オブジェクトからこのプロパティが参照されると、エラーが発生します。
 

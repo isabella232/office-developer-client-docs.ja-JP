@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c37c1257ad3f3cb046f7faf82ffcb93f067b1ff5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283374"
 ---
 # <a name="ado-event-handler-summary"></a>ADO イベント ハンドラーの概要
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 イベントを発行できる ADO オブジェクトは、[Connection](connection-object-ado.md) オブジェクトと [Recordset](recordset-object-ado.md) オブジェクトの 2 つです。 **ConnectionEvent** 系は **Connection** オブジェクトの操作に関係し、 **RecordsetEvent** 系は **Recordset** オブジェクトの操作に関係します。
 
@@ -40,15 +40,15 @@ ms.locfileid: "28710210"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">BeginTransComplete</a>CommitTransComplete、RollbackTransComplete</p></td>
+<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">begintranscomplete</a>、committranscomplete、RollbackTransComplete</p></td>
 <td><p><strong>トランザクション管理</strong> 接続上でカレント トランザクションが開始されたこと、コミットされたこと、またはロール バックされたことを通知します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="willconnect-event-ado.md">WillConnect</a>、 <a href="connectcomplete-and-disconnect-events-ado.md">ConnectComplete、切断</a></p></td>
+<td><p><a href="willconnect-event-ado.md">WillConnect</a>、<a href="connectcomplete-and-disconnect-events-ado.md">ConnectComplete、Disconnect</a></p></td>
 <td><p><strong>接続管理</strong> 現在の接続がこれから開始されること、開始されたこと、または終了したことを通知します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="willexecute-event-ado.md">アクティビ ティー</a>、 <a href="executecomplete-event-ado.md">ExecuteComplete</a></p></td>
+<td><p>は<a href="willexecute-event-ado.md">execute</a>、 <a href="executecomplete-event-ado.md">ExecuteComplete</a></p></td>
 <td><p><strong>コマンド実行管理</strong> 接続上で現在のコマンドの実行がこれから開始されること、または終了したことを通知します。</p></td>
 </tr>
 <tr class="even">
@@ -72,19 +72,19 @@ ms.locfileid: "28710210"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="fetchprogress-event-ado.md">FetchProgress</a>、 <a href="fetchcomplete-event-ado.md">FetchComplete</a></p></td>
+<td><p><a href="fetchprogress-event-ado.md">fetchprogress</a>、 <a href="fetchcomplete-event-ado.md">fetchprogress</a></p></td>
 <td><p><strong>取得状況</strong> データ取得操作が進行中であること、または完了したことを通知します。これらのイベントは、<strong>Recordset</strong> がクライアント側カーソルを使用して開かれたときにのみ利用できます。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="willchangefield-and-fieldchangecomplete-events-ado.md">WillChangeField、FieldChangeComplete</a></p></td>
+<td><p><a href="willchangefield-and-fieldchangecomplete-events-ado.md">changefield、FieldChangeComplete</a></p></td>
 <td><p><strong>フィールド変更管理</strong> 現在のフィールド値をこれから変更すること、または変更したことを通知します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="willmove-and-movecomplete-events-ado.md">WillMove、MoveComplete</a>、 <a href="endofrecordset-event-ado.md">EndOfRecordset</a></p></td>
+<td><p><a href="willmove-and-movecomplete-events-ado.md">move、MoveComplete</a>、 <a href="endofrecordset-event-ado.md">endofrecordset</a></p></td>
 <td><p><strong>移動管理</strong><strong>Recordset</strong> でのカレント行の位置をこれから変更すること、変更が完了したこと、または <strong>Recordset</strong> の最後に達したことを通知します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="willchangerecord-and-recordchangecomplete-events-ado.md">WillChangeRecord、RecordChangeComplete</a></p></td>
+<td><p><a href="willchangerecord-and-recordchangecomplete-events-ado.md">/changerecord、RecordChangeComplete</a></p></td>
 <td><p><strong>行変更管理</strong><strong>Recordset</strong> のカレント行の内容をこれから変更すること、または変更したことを通知します。</p></td>
 </tr>
 <tr class="odd">

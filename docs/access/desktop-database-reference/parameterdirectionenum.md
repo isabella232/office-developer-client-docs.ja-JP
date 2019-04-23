@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: fac07165416841691ee7bc3ca5dfcdc366861023
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287973"
 ---
 # <a name="parameterdirectionenum"></a>ParameterDirectionEnum
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Parameter](parameter-object-ado.md) が入力パラメーターと出力パラメーターのいずれか、またはその両方を表すのか、あるいはストアド プロシージャからの戻り値であるかを表します。
 
@@ -36,35 +36,35 @@ ms.locfileid: "28715502"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>adParamInput</strong></p></td>
-<td><p>1</p></td>
+<td><p><strong>adparaminput</strong></p></td>
+<td><p>1-d</p></td>
 <td><p>既定値。パラメーターが入力パラメーターを表すことを示します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adParamInputOutput</strong></p></td>
-<td><p>3</p></td>
+<td><p>1/3</p></td>
 <td><p>パラメーターが入力パラメーターと出力パラメーターの両方を表すことを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adParamOutput</strong></p></td>
-<td><p>2</p></td>
+<td><p><strong>adparamoutput</strong></p></td>
+<td><p>pbm-2</p></td>
 <td><p>パラメーターが出力パラメーターを表すことを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adParamReturnValue</strong></p></td>
-<td><p>4</p></td>
+<td><p><strong>adparamreturnvalue</strong></p></td>
+<td><p>2/4</p></td>
 <td><p>パラメーターが戻り値を表すことを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adParamUnknown</strong></p></td>
-<td><p>0</p></td>
+<td><p><strong>adparamunknown</strong></p></td>
+<td><p>.0</p></td>
 <td><p>パラメーターの方向が不明であることを示します。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC に相当
+### <a name="adowfc-equivalent"></a>ADO/WFC と同等
 
 パッケージ: **com.ms.wfc.data**
 
@@ -79,19 +79,19 @@ ms.locfileid: "28715502"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.ParameterDirection.INPUT</p></td>
+<td><p>AdoEnums</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.ParameterDirection.INPUTOUTPUT</p></td>
+<td><p>AdoEnums ParameterDirection</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.ParameterDirection.OUTPUT</p></td>
+<td><p>AdoEnums</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.ParameterDirection.RETURNVALUE</p></td>
+<td><p>AdoEnums。 ParameterDirection</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.ParameterDirection.UNKNOWN</p></td>
+<td><p>AdoEnums ParameterDirection</p></td>
 </tr>
 </tbody>
 </table>

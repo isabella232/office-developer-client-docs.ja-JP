@@ -8,26 +8,26 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b37ccc0c9a61e00b3c2e8f5eb3367831e5ddea43
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288120"
 ---
 # <a name="pagecount-property-ado"></a>PageCount プロパティ (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Recordset](recordset-object-ado.md) オブジェクトに含まれるデータのページ数を示します。
 
 ## <a name="return-value"></a>戻り値
 
-**Recordset** のページ数を示す長整数型 ( **Long** ) の値を返します。
+**Recordset** のページ数を示す長整数型 (**Long**) の値を返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**PageCount**プロパティのデータ ページの数を決定するが、**レコード セット**オブジェクトでは使用します。 *ページ*は、 [PageSize](pagesize-property-ado.md)プロパティの設定のと同じサイズのレコードのグループです。 **PageSize**の値よりも少ないレコードがあるため、最後のページが完了しない場合でも、 **PageCount**の値に追加ページとしてカウントします。 **Recordset**オブジェクトがこのプロパティをサポートしていない場合、値は**PageCount**は決められていないことを示す-1 になります。
+Use the **PageCount** property to determine how many pages of data are in the **Recordset** object. *ページ*は、 [PageSize](pagesize-property-ado.md)プロパティの設定値に等しいサイズを持つレコードのグループです。 Even if the last page is incomplete because there are fewer records than the **PageSize** value, it counts as an additional page in the **PageCount** value. If the **Recordset** object does not support this property, the value will be -1 to indicate that the **PageCount** is indeterminable.
 
 ページ機能の詳細については、 **PageSize** プロパティおよび [AbsolutePage](absolutepage-property-ado.md) プロパティのトピックを参照してください。
 

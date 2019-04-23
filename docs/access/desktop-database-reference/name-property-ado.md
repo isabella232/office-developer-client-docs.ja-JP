@@ -8,26 +8,26 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f6fbfbd7008919cc4d784a4d0468d8471d102708
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288666"
 ---
 # <a name="name-property-ado"></a>Name プロパティ (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 オブジェクトの名前を示します。
 
-## <a name="settings-and-return-values"></a>設定値および戻り値
+## <a name="settings-and-return-values"></a>設定値と戻り値
 
-オブジェクトの名前を示す文字列型 ( **String** ) の値を設定または取得します。
+オブジェクトの名前を示す文字列型 (**String**) の値を設定または取得します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**Name** プロパティは、 **Command** オブジェクト、 **Property** オブジェクト、 **Field** オブジェクト、または **Parameter** オブジェクトの名前を設定または取得するために使用します。
+**Name** プロパティは、**Command** オブジェクト、**Property** オブジェクト、**Field** オブジェクト、または **Parameter**  オブジェクトの名前を設定または取得するために使用します。
 
 値は、 **Command** オブジェクトでは読み取り/書き込み可能で、 **Property** オブジェクトでは読み取り専用になります。
 
@@ -35,5 +35,5 @@ ms.locfileid: "28721548"
 
 **Parameters** コレクションに追加されていない [Parameter](parameters-collection-ado.md) オブジェクトでは、 **Name** プロパティは読み取り/書き込み可能です。追加された **Parameter** オブジェクトとその他のオブジェクトでは、 **Name** プロパティは読み取り専用です。名前はコレクション内で一意でなくてもかまいません。
 
-オブジェクトの **Name** は、序数参照で取得でき、その後は、その名前で直接オブジェクトを参照できます。 などの場合は rstMain.Properties(20) です。名には、更新機能が得られます、このプロパティは更新の結果が、後で参照できる、rstMain.Properties("Updatability") としてこのプロパティを後で参照できます。
+オブジェクトの **Name** は、序数参照で取得でき、その後は、その名前で直接オブジェクトを参照できます。 たとえば、rstmain プロパティ (20) を使用します。Name は更新可能になり、後でこのプロパティを参照すると、更新の更新が可能になり、このプロパティを rstmain. プロパティ ("更新可能性") と呼ぶことができます。
 

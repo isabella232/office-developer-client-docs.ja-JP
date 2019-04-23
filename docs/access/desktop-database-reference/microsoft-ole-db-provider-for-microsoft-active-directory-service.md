@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 23e1cab32fee6103a046219a7cda8c90f02d9f79
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288940"
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-active-directory-service"></a>Microsoft OLE DB Provider for Microsoft Active Directory Service
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 Microsoft Active Directory Service Interfaces (ADSI) プロバイダーを使用すると、ADO から ADSI をとおして異種ディレクトリ サービスに接続できます。これによって、ADO アプリケーションでは、Microsoft Windows NT 4.0 および Microsoft Windows 2000 のディレクトリ サービス、LDAP 準拠のディレクトリ サービス、および Novell Directory Services に対する読み取り専用アクセスが可能になります。ADSI 自体がプロバイダー モデルに基づいているので、新しいプロバイダーで別のディレクトリへのアクセスを提供する場合でも、ADO アプリケーションはシームレスにアクセスできます。ADSI プロバイダーはフリースレッドであり、Unicode に対応しています。
 
 ## <a name="connection-string-parameters"></a>接続文字列のパラメーター
 
-このプロバイダーに接続するには、**ConnectionString** プロパティの [Provider](connectionstring-property-ado.md) 引数を次のように設定します。
+このプロバイダーに接続するには、[ConnectionString](connectionstring-property-ado.md) プロパティの **Provider** 引数を次のように設定します。
 
 ```vb 
  
@@ -60,11 +60,11 @@ ADSDSOObject
 </tr>
 <tr class="even">
 <td><p><strong>User ID</strong></p></td>
-<td><p>ユーザー名を指定します。このキーワードを省略すると、現在のログオンが使用されます。</p></td>
+<td><p>ユーザー名を指定します。 このキーワードを省略すると、現在のログオンが使用されます。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Password</strong></p></td>
-<td><p>ユーザー パスワードを指定します。このキーワードを省略すると、現在のログオンが使用されます。</p></td>
+<td><p>ユーザー パスワードを指定します。 このキーワードを省略すると、現在のログオンが使用されます。</p></td>
 </tr>
 </tbody>
 </table>
@@ -89,11 +89,11 @@ ADSDSOObject
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Root</em></p></td>
+<td><p><em>原因</em></p></td>
 <td><p>検索を開始する <strong>ADsPath</strong> オブジェクト (つまり、検索のルート) を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>フィルター</em></p></td>
+<td><p><em>Filter</em></p></td>
 <td><p>RFC 1960 形式の検索フィルターを示します。</p></td>
 </tr>
 <tr class="odd">
@@ -101,10 +101,10 @@ ADSDSOObject
 <td><p>返される属性をコンマ区切りの一覧で示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>スコープ</em></p></td>
-<td><p>省略可能。 検索のスコープを指定する<strong>文字列</strong>です。 次のいずれか: 基本: ベース オブジェクト (検索のルート) のみを検索します。<br />
-1 レベル-は、1 レベルのみを検索します。<br />
-サブツリー-は、サブツリー全体を検索します。</p></td>
+<td><p><em>Scope</em></p></td>
+<td><p>省略可能です。 検索の範囲を指定する<strong>文字列</strong>。 次のいずれかをすることができます。 base-ベースオブジェクトのみを検索します (検索のルート)。<br />
+OneLevel-1 つのレベルのみを検索します。<br />
+subtree-サブツリー全体を検索します。</p></td>
 </tr>
 </tbody>
 </table>
@@ -129,7 +129,7 @@ objectClass='user' AND objectCategory='Person'"
 
 ## <a name="recordset-behavior"></a>Recordset の動作
 
-次の表は、このプロバイダーで開かれた [Recordset](recordset-object-ado.md) オブジェクトで利用可能な機能の一覧です。 静的カーソルの種類 (**adOpenStatic**) のみがあります。
+次の表は、このプロバイダーで開かれた [Recordset](recordset-object-ado.md) オブジェクトで利用可能な機能の一覧です。 使用できるのは、静的カーソルの種類 (**adopenstatic**) だけです。
 
 プロバイダーの構成による **Recordset** の動作の詳細については、 [Supports](supports-method-ado.md) メソッドを実行し、 [Recordset](properties-collection-ado.md) の **Properties** コレクションを列挙して、プロバイダー固有の動的プロパティが存在するかどうかを確認してください。
 
@@ -143,40 +143,40 @@ objectClass='user' AND objectCategory='Person'"
 <thead>
 <tr class="header">
 <th><p>プロパティ</p></th>
-<th><p>利用可能性</p></th>
+<th><p>Availability</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><a href="absolutepage-property-ado.md">AbsolutePage</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="absoluteposition-property-ado.md">AbsolutePosition</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="activeconnection-property-ado.md">ActiveConnection</a></p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="bof-eof-properties-ado.md">BOF</a></p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="bookmark-property-ado.md">Bookmark</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="cachesize-property-ado.md">CacheSize</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="cursorlocation-property-ado.md">CursorLocation</a></p></td>
 <td><p>常に <strong>adUseServer</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="cursortype-property-ado.md">カーソル。</a></p></td>
+<td><p><a href="cursortype-property-ado.md">CursorType</a></p></td>
 <td><p>常に <strong>adOpenStatic</strong></p></td>
 </tr>
 <tr class="odd">
@@ -185,47 +185,47 @@ objectClass='user' AND objectCategory='Person'"
 </tr>
 <tr class="even">
 <td><p><a href="bof-eof-properties-ado.md">EOF</a></p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="filter-property-ado.md">フィルター</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p><a href="filter-property-ado.md">Filter</a></p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="locktype-property-ado.md">ロック。</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p><a href="locktype-property-ado.md">LockType</a></p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="marshaloptions-property-ado.md">スレッド</a></p></td>
+<td><p><a href="marshaloptions-property-ado.md">MarshalOptions</a></p></td>
 <td><p>利用不可</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="maxrecords-property-ado.md">MaxRecords</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="pagecount-property-ado.md">PageCount</a></p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="pagesize-property-ado.md">PageSize</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="recordcount-property-ado.md">RecordCount</a></p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="source-property-ado-recordset.md">Source</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="state-property-ado.md">State</a></p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="status-property-ado-recordset.md">状態</a></p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 </tbody>
 </table>
@@ -241,7 +241,7 @@ objectClass='user' AND objectCategory='Person'"
 <thead>
 <tr class="header">
 <th><p>メソッド</p></th>
-<th><p>利用可能性</p></th>
+<th><p>できる?</p></th>
 </tr>
 </thead>
 <tbody>
@@ -310,11 +310,11 @@ objectClass='user' AND objectCategory='Person'"
 <td><p>はい</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="resync-method-ado.md">再同期</a></p></td>
+<td><p><a href="resync-method-ado.md">Resync</a></p></td>
 <td><p>はい</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="supports-method-ado.md">サポートしています</a></p></td>
+<td><p><a href="supports-method-ado.md">機能</a></p></td>
 <td><p>はい</p></td>
 </tr>
 <tr class="odd">

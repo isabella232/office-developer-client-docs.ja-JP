@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 38183cd8306f2425a362bd2650639120a2d16845
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288968"
 ---
 # <a name="microsoft-ole-db-provider-for-internet-publishing"></a>Microsoft OLE DB Provider for Internet Publishing
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 Microsoft OLE DB Provider for Internet Publishing を使用すると、ADO から、Microsoft FrontPage や Microsoft Internet Information Server が提供するリソースにアクセスできます。このリソースには、HTML ファイルなどの Web ソース ファイルや Windows 2000 の Web フォルダーも含まれます。
 
-## <a name="connection-string-parameters"></a>接続文字列パラメーター
+## <a name="connection-string-parameters"></a>接続文字列のパラメーター
 
-このプロバイダーに接続するには、*ConnectionString* プロパティの [Provider](connectionstring-property-ado.md) 引数を次のように設定します。
+このプロバイダーに接続するには、[ConnectionString](connectionstring-property-ado.md) プロパティの *Provider* 引数を次のように設定します。
 
 ```vb 
  
@@ -31,7 +31,7 @@ MSDAIPP.DSO
 
 この値は、[Provider](provider-property-ado.md) プロパティを使用して設定または取得することもできます。
 
-## <a name="typical-connection-string"></a>一般的な接続文字列
+## <a name="typical-connection-string"></a>標準的な接続文字列
 
 このプロバイダーの標準的な接続文字列を次に示します。
 
@@ -40,7 +40,7 @@ MSDAIPP.DSO
 "Provider=MSDAIPP.DSO;Data Source=ResourceURL;User ID=userName;Password=userPassword;" 
 ```
 
-\-または -
+\-や
 
 ```vb 
  
@@ -67,7 +67,7 @@ MSDAIPP.DSO
 </tr>
 <tr class="even">
 <td><p><strong>Data Source</strong> または <strong>URL</strong></p></td>
-<td><p>ファイルまたは web フォルダーで公開されているディレクトリの URL を指定します。</p></td>
+<td><p>web フォルダーに公開されているファイルまたはディレクトリの URL を指定します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>User ID</strong></p></td>
@@ -84,5 +84,5 @@ MSDAIPP.DSO
 接続文字列の "URL=" の *ResourceURL* の値を無効な値に設定すると、既定では、Internet Publishing Provider により有効な値の入力を促すダイアログ ボックスが表示されます。この動作は、アプリケーションの中間層のコンポーネントでは好ましくありません。ダイアログ ボックスを閉じるまでプログラムの実行が中断され、このコンポーネントから応答がなく、クライアントがフリーズしたように見えるためです。
 
 > [!NOTE]
-> 場合 MSDAIPP。DSO はプロバイダーの値として明示的に指定されたか、*プロバイダー*の接続文字列キーワードまたは**Provider**プロパティを使うことはできません"URL ="接続文字列にします。 "URL=" を使用すると、エラーが発生します。 代わりに、「 [OLE DB Provider for Internet Publishing](the-ole-db-provider-for-internet-publishing.md)」に示されているように URL のみを指定します。
+> 接続文字列の *Provider* キーワードまたは **Provider** プロパティのいずれかで、プロバイダーの値として MSDAIPP.DSO が明示的に指定されている場合、接続文字列で "URL=" を使用できません。"URL=" を使用すると、エラーが発生します。代わりに、「[OLE DB Provider for Internet Publishing](the-ole-db-provider-for-internet-publishing.md)」に示されているように URL のみを指定します。
 

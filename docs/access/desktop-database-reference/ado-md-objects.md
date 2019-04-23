@@ -1,5 +1,5 @@
 ---
-title: ADO MD オブジェクト (デスクトップ データベース参照のアクセス)
+title: ADO MD オブジェクト (Access デスクトップデータベースリファレンス)
 TOCTitle: ADO MD objects
 ms:assetid: 13501e44-70b6-1036-a8b7-c276f187e4f4
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248907(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a2d3acf1b236e23522da0143d577bbcbeacbb4b7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283297"
 ---
 # <a name="ado-md-objects"></a>ADO MD のオブジェクト
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 <br/>
 
@@ -27,7 +27,7 @@ ms.locfileid: "28726212"
 </colgroup>
 <tbody>
 <tr class="even">
-<th>オブジェクト</th>
+<th>Object</th>
 <th>説明</th>
 </tr>
 <tr class="odd">
@@ -44,7 +44,7 @@ ms.locfileid: "28726212"
 </tr>
 <tr class="even">
 <td><p><a href="cellset-object-ado-md.md">Cellset</a></p></td>
-<td><p>多次元クエリの結果を表します。キューブまたは他のセルセットから選択されたセルのコレクションになります。</p></td>
+<td><p>多次元クエリの結果を表します。 キューブまたは他のセルセットから選択されたセルのコレクションになります。</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="cubedef-object-ado-md.md">CubeDef</a></p></td>
@@ -56,14 +56,14 @@ ms.locfileid: "28726212"
 </tr>
 <tr class="odd">
 <td><p><a href="hierarchy-object-ado-md.md">Hierarchy</a></p></td>
-<td><p>いずれかのように、ディメンションのメンバーを集約することを表すまたは&quot;ロール アップします。&quot;ディメンションは 1 つまたは複数の階層ごとに集約できます。</p></td>
+<td><p>次元のメンバーを集約または&quot;ロールアップできる1つの方法を表します。&quot;次元は、1つ以上の階層に基づいて集約できます。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="level-object-ado-md.md">Level</a></p></td>
 <td><p>階層内で同じランクを持つメンバーのセットが含まれます。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="member-object-ado-md.md">メンバー</a></p></td>
+<td><p><a href="member-object-ado-md.md">Member</a></p></td>
 <td><p>キューブ内のレベルのメンバー、レベルのメンバーの子、またはセルセットの軸に沿ったメンバーの位置を表します。</p></td>
 </tr>
 <tr class="even">
@@ -75,7 +75,7 @@ ms.locfileid: "28726212"
 
 <br/>
 
-また、 **Catalog** オブジェクトは、標準の ADO ライブラリに含まれる ADO **Connection** オブジェクトに接続されます。
+また、**Catalog** オブジェクトは、標準の ADO ライブラリに含まれる ADO **Connection** オブジェクトに接続されます。
 
 <br/>
 
@@ -86,7 +86,7 @@ ms.locfileid: "28726212"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>オブジェクト</p></th>
+<th><p>Object</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
@@ -100,5 +100,5 @@ ms.locfileid: "28726212"
 
 <br/>
 
-ADO MD オブジェクトの多くは、対応するコレクションに格納できます。たとえば、[CubeDef](cubedef-object-ado-md.md) オブジェクトは [Catalog](cubedefs-collection-ado-md.md) オブジェクトの **CubeDefs** コレクションに格納できます。詳細については、「 [ADO MD コレクション](ado-md-collections.md)」を参照してください。
+ADO MD オブジェクトの多くは、対応するコレクションに格納できます。たとえば、[CubeDef](cubedef-object-ado-md.md) オブジェクトは **Catalog** オブジェクトの [CubeDefs](cubedefs-collection-ado-md.md) コレクションに格納できます。詳細については、「[ADO MD コレクション](ado-md-collections.md)」を参照してください。
 

@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 53e51f2386658ee975ec8847f7e5550ac22bbd8e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281902"
 ---
 # <a name="adcpropasyncthreadpriorityenum"></a>ADCPROP\_ASYNCTHREADPRIORITY\_列挙型
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 RDS の [Recordset](recordset-object-ado.md) オブジェクトに対して、データを取得する非同期スレッドの実行優先度を表します。
 
@@ -40,33 +40,33 @@ RDS の [Recordset](recordset-object-ado.md) オブジェクトに対して、�
 <tbody>
 <tr class="odd">
 <td><p><strong>adPriorityAboveNormal</strong></p></td>
-<td><p>4</p></td>
+<td><p>2/4</p></td>
 <td><p>優先度を標準と最高の間に設定します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adPriorityBelowNormal</strong></p></td>
-<td><p>2</p></td>
+<td><p>pbm-2</p></td>
 <td><p>優先度を最低と標準の間に設定します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adPriorityHighest</strong></p></td>
+<td><p><strong>ad優先度: 最高</strong></p></td>
 <td><p>5</p></td>
 <td><p>優先度を可能な最高レベルに設定します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>AdPriorityLowest</strong></p></td>
-<td><p>1</p></td>
+<td><p><strong>ad優先順位の最も低い</strong></p></td>
+<td><p>1-d</p></td>
 <td><p>優先度を可能な最低レベルに設定します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adPriorityNormal</strong></p></td>
-<td><p>3</p></td>
+<td><p><strong>ad優先順位標準</strong></p></td>
+<td><p>1/3</p></td>
 <td><p>優先度を標準に設定します。</p></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="adowfc-equivalent"></a>ADO/WFC に相当
+### <a name="adowfc-equivalent"></a>ADO/WFC と同等
 
 パッケージ: **com.ms.wfc.data**
 
@@ -81,19 +81,19 @@ RDS の [Recordset](recordset-object-ado.md) オブジェクトに対して、�
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.AdcPropAsyncThreadPriority.ABOVENORMAL</p></td>
+<td><p>ABOVENORMAL を AdoEnums します。</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.AdcPropAsyncThreadPriority.BELOWNORMAL</p></td>
+<td><p>BELOWNORMAL を AdoEnums します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.AdcPropAsyncThreadPriority.HIGHEST</p></td>
+<td><p>AdoEnums の優先度が最も高い</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.AdcPropAsyncThreadPriority.LOWEST</p></td>
+<td><p>AdoEnums、またはそれより小さい</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.AdcPropAsyncThreadPriority.NORMAL</p></td>
+<td><p>AdoEnums を行います。標準</p></td>
 </tr>
 </tbody>
 </table>

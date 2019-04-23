@@ -1,5 +1,5 @@
 ---
-title: ADORecordConstruction インタ フェース (ADO)
+title: ADORecordConstruction インターフェイス (ADO)
 TOCTitle: ADORecordConstruction interface (ADO)
 ms:assetid: 3f0afbdb-f1c4-e44e-7c0f-a0c4cee554a7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249175(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1a53eb107bab0d31606dc161b9f9c910894c5bc6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281627"
 ---
-# <a name="adorecordconstruction-interface-ado"></a>ADORecordConstruction インタ フェース (ADO)
+# <a name="adorecordconstruction-interface-ado"></a>ADORecordConstruction インターフェイス (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **ADORecordConstruction** インターフェイスは、C/C++ アプリケーションで OLE DB **Row** から ADO **Record** オブジェクトを作成するために使用します。
 
@@ -33,13 +33,15 @@ ms.locfileid: "28712009"
 <tbody>
 <tr class="odd">
 <td><p><a href="parentrow-property-ado.md">ParentRow</a></p></td>
-<td><p>値の設定のみ可能です。<br />
-この ADO<strong>レコード</strong>オブジェクトの OLE DB<strong>の行</strong>オブジェクトのコンテナーを設定します。</p></td>
+<td><p>書き込み専用です。<br />
+
+ADO <strong>Record</strong> オブジェクトに対する OLE DB <strong>Row</strong> オブジェクトのコンテナーを設定します。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="row-property-ado.md">行</a></p></td>
 <td><p>読み取り/書き込み可能。<br />
-OLE DB<strong>の行</strong>のオブジェクトから/この ADO<strong>レコード</strong>オブジェクトを取得または設定します。</p></td>
+
+ADO <strong>Record</strong> オブジェクトに対する OLE DB <strong>Row</strong> オブジェクトを取得または設定します。</p></td>
 </tr>
 </tbody>
 </table>
@@ -47,15 +49,15 @@ OLE DB<strong>の行</strong>のオブジェクトから/この ADO<strong>レ�
 
 ## <a name="methods"></a>メソッド
 
-なし
+なし。
 
 ## <a name="events"></a>イベント
 
-なし
+なし。
 
 ## <a name="remarks"></a>注釈
 
-OLE DB**の行**オブジェクト (pRow)、ADO**レコード**オブジェクトの () の構築、ADO**レコード**オブジェクト (adoR) の金額を次の 3 つの基本的な操作を指定します。
+OLE DB **Row**オブジェクト (prow)、ado record オブジェクト (adoR) の**** 構造、および次の3つの基本的な**** 操作に対する金額を指定します。
 
 1.  ADO **Record** オブジェクトを作成します。
     
@@ -72,7 +74,7 @@ OLE DB**の行**オブジェクト (pRow)、ADO**レコード**オブジェク�
                             (void**)&adoRConstruct);
     ```
 
-3.  呼び出す、 **IADORecordConstruction::put\_行**プロパティ メソッドは、ADO**レコード**オブジェクトの OLE DB**の行**オブジェクトを設定します。
+3.  **IADORecordConstruction::p ut\_row**プロパティメソッドを呼び出して、ADO **Record**オブジェクトの OLE DB **Row**オブジェクトを設定します。
     
     ```vb
         IUnknown *pUnk=NULL;
@@ -84,7 +86,7 @@ OLE DB**の行**オブジェクト (pRow)、ADO**レコード**オブジェク�
 
 ADO **Record** オブジェクトは、OLE DB **Row** オブジェクトのコンテナーからも作成できます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 
 **バージョン:** ADO 2.0 以上
 

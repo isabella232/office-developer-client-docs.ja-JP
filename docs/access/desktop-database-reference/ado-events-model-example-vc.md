@@ -1,5 +1,5 @@
 ---
-title: ADO イベント モデルの使用例 (vc++)
+title: ADO イベントモデルの使用例 (VC + +)
 TOCTitle: ADO Events Model example (VC++)
 ms:assetid: 3785406b-844c-419f-e6ac-78aa8c4e78b2
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249132(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8e47e8961436be44a78596498754e01e3b0677d1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283353"
 ---
-# <a name="ado-events-model-example-vc"></a>ADO イベント モデルの使用例 (vc++)
+# <a name="ado-events-model-example-vc"></a>ADO イベントモデルの使用例 (VC + +)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-「[ADO イベントのインスタンス化 (言語別)](https://docs.microsoft.com/office/client-developer/access/desktop-database-reference/ado-event-instantiation-by-language-ado)」の Visual C++ のセクションには、ADO イベント モデルのインスタンスを作成する方法についての一般的な説明があります。 次の具体的な例によって作成される環境内でイベント モデルのインスタンスを作成するのでは、**\#インポート**ディレクティブです。
+「[ADO イベントのインスタンス化 (言語別)](https://docs.microsoft.com/office/client-developer/access/desktop-database-reference/ado-event-instantiation-by-language-ado)」の Visual C++ のセクションには、ADO イベント モデルのインスタンスを作成する方法についての一般的な説明があります。 以下に、 ** \#import**ディレクティブによって作成された環境内でイベントモデルをインスタンス化する具体的な例を示します。
 
-一般的な説明では、メソッド シグネチャの参照として **adoint.h** を使います。 ただし、全般的な説明で、いくつかの詳細を若干変更を使用した結果、**\#インポート**ディレクティブ。
+一般的な説明では、メソッド シグネチャの参照として **adoint.h** を使います。 ただし、 ** \#import**ディレクティブを使用した結果として、一般的な説明の一部の詳細が若干変更されています。
 
-- **\#インポート**ディレクティブの基本的なフォームに**typedef**のおよびメソッド シグネチャのデータ型および修飾子を解決します。
+- ** \#import**ディレクティブは、 **typedef**、メソッドシグネチャのデータ型、およびそれらの基本形式への修飾子を解決します。
 
-- 純粋仮想メソッドを上書きする必要がありますが、すべて先頭に"**生\_**」です。
+- 上書きする必要がある純粋仮想メソッドには、すべて "**raw\_**" というプレフィックスが付いています。
 
 コードの一部は、単にコーディングのスタイルを示します。
 
@@ -34,13 +34,13 @@ ms.locfileid: "28712100"
 
 - QueryInterface、AddRef、および Release に関して、より強固な実装をコーディングすることもできます。
 
-- ** \_ \_Uuidof()** ディレクティブは、インターフェイス Id を取得するのには広範囲に使用します。
+- ** \_ \_uuidof ()** ディレクティブは、インターフェイス id を取得するために広く使用されています。
 
 最後に、例には動作可能なコードが含まれています。
 
 - 例は、コンソール アプリケーションとして記述されています。
 
-- コメントの下で、独自のコードを挿入する必要があります」といくつかの作業を行うと"です。
+- 独自のコードをコメントの下に挿入する必要があります。 "//処理を行う"。
 
 - 既定では、すべてのイベント ハンドラーは、何も実行しないで後続の通知を取り消します。ユーザーは、アプリケーションに適したコードを挿入し、必要に応じて通知を利用してください。
 

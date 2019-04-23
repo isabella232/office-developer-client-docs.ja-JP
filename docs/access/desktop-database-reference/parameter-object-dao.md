@@ -1,5 +1,5 @@
 ---
-title: パラメーター オブジェクト (DAO)
+title: Parameter オブジェクト (DAO)
 TOCTitle: Parameter Object
 ms:assetid: 194efd23-6086-13ac-beb9-c2aec101d6fe
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845640(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5df04b1ee06a2224db9e21f67e9c68a3ee5740bf
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288085"
 ---
-# <a name="parameter-object-dao"></a>パラメーター オブジェクト (DAO)
+# <a name="parameter-object-dao"></a>Parameter オブジェクト (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**Parameter** オブジェクトは、クエリに指定する値を表します。パラメーターは、パラメーター クエリを基に作成した **QueryDef** オブジェクトに関連付けられています。
+**Parameter** オブジェクトは、クエリに指定する値を表します。 パラメーターは、パラメーター クエリを基に作成した **QueryDef** オブジェクトに関連付けられています。
 
 ## <a name="remarks"></a>注釈
 

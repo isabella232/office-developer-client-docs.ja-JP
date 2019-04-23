@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b44bf60399cd3bdab9e5a1e51d13cbfc1daaba6c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283241"
 ---
 # <a name="ado-programmers-guide"></a>ADO プログラマ ガイド
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-ADO に新しいテクノロジの詳細に紹介をすることでは、開発者を支援するためには、ADO プログラマ ガイド」が用意されています。 このガイドでは、ADO ファミリのライブラリについて説明すると共に、さまざまな言語で記述されたサンプル コードを使用して、ライブラリの使用方法、ライブラリを使用するにあたって推奨される方法、および ADO アプリケーションのパフォーマンスを最大限に向上させるためのヒントについて説明します。
+ado プログラマガイドは、ado を初めて利用する開発者を支援するために作成されています。これは、テクノロジについて詳細に説明しています。 このガイドでは、ADO ファミリのライブラリについて説明すると共に、さまざまな言語で記述されたサンプル コードを使用して、ライブラリの使用方法、ライブラリを使用するにあたって推奨される方法、および ADO アプリケーションのパフォーマンスを最大限に向上させるためのヒントについて説明します。
 
-ADO プログラマ ガイド」には、次のセクションとの章が含まれています。
+「ADO プログラマーズガイド」には、以下のセクションと章が含まれています。
 
 - [はじめに](introduction-to-ado-programming.md)
   

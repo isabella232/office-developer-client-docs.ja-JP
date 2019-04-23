@@ -1,5 +1,5 @@
 ---
-title: Parameter.Direction プロパティ (DAO)
+title: パラメーター Direction プロパティ (DAO)
 TOCTitle: Direction Property
 ms:assetid: b78c87ff-1181-21ef-7126-92d309751005
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822422(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 3260fd3f01e8ca22d5be4f8d14f6376c31e2735a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288092"
 ---
-# <a name="parameterdirection-property-dao"></a>Parameter.Direction プロパティ (DAO)
+# <a name="parameterdirection-property-dao"></a>パラメーター Direction プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
 ## <a name="syntax"></a>構文
 
-*式*です。方向
+*式*。縦書き
 
-*式***パラメーター**オブジェクトを表す変数です。
+*式***Parameter**オブジェクトを表す変数を指定します。
 
 ## <a name="remarks"></a>注釈
 
@@ -36,9 +36,9 @@ ms.locfileid: "28712261"
 
 **Direction** プロパティを使用して、パラメーターが入力パラメーター、出力パラメーター、その両方、またはプロシージャからの戻り値のいずれであるかを調べます。一部の ODBC ドライバーでは、SELECT ステートメントまたはプロシージャ コールにパラメーターの方向情報を提供しません。このような場合、方向を設定してからクエリを実行する必要があります。
 
-たとえば、次の手順がという名前のストアド プロシージャから値を返します"取得\_従業員」。
+たとえば、次のプロシージャは、"get\_employees" という名前のストアドプロシージャから値を返します。
 
-{? get の呼び出しを =\_の従業員。
+{? = get\_employees}
 
 この呼び出しにより、1 つのパラメーター、つまり戻り値が作成されます。このパラメーターの方向を **dbParamOutput** または **dbParamReturnValue** に設定してから、 **[QueryDef](querydef-object-dao.md)** を実行する必要があります。
 

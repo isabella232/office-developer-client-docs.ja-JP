@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 380fdf6c15f6774e27221e8500100870d22350c4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289423"
 ---
 # <a name="member-object-ado-md"></a>Member オブジェクト (ADO MD)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 キューブ内のレベルのメンバー、レベルのメンバーの子、またはセルセットの軸に沿ったメンバーの位置を表します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Member** のプロパティは、使用されているコンテキストによって異なります。 **CubeDef** の [Level](level-object-ado-md.md) の [Member](cubedef-object-ado-md.md) には、階層の現在の [Member](children-property-ado-md.md) のすぐ下のレベルの **Members** を返す **Children** プロパティがあります。 **Position** の [Member](position-object-ado-md.md) では、 **Children** コレクションは常に空です。また、 [Type](type-property-ado-md.md) プロパティは、 **Level** の **Members** のみに適用されます。
 
@@ -61,7 +61,7 @@ ms.locfileid: "28709580"
 
   - [ParentSameAsPrev](parentsameasprev-property-ado-md.md) プロパティを使用して、この **Member** の親が **Member** の直上の親と同じかどうかを特定します。
 
-  - 標準の ADO [Properties](properties-collection-ado.md) コレクションを使用して、 **Level** オブジェクトに関する追加情報を取得します。
+  - 標準の ADO [Properties](properties-collection-ado.md) コレクションを使用して、**Level** オブジェクトに関する追加情報を取得します。
 
 **Properties** コレクションには、プロバイダー固有のプロパティが含まれます。次の表に、使用できるプロパティを示します。実際に使用できるプロパティの一覧は、プロバイダーの実装によって異なります。使用できるプロパティの完全な一覧については、各自のプロバイダーのドキュメントを参照してください。
 
@@ -78,7 +78,7 @@ ms.locfileid: "28709580"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>カタログ名</p></td>
+<td><p>CatalogName</p></td>
 <td><p>このキューブが属しているカタログの名前。</p></td>
 </tr>
 <tr class="even">
@@ -86,11 +86,11 @@ ms.locfileid: "28709580"
 <td><p>メンバーの子の数。</p></td>
 </tr>
 <tr class="odd">
-<td><p>キューブ名</p></td>
+<td><p>CubeName</p></td>
 <td><p>キューブの名前。</p></td>
 </tr>
 <tr class="even">
-<td><p>Description</p></td>
+<td><p>説明</p></td>
 <td><p>メンバーの説明。</p></td>
 </tr>
 <tr class="odd">
@@ -102,7 +102,7 @@ ms.locfileid: "28709580"
 <td><p>階層の明確な名前。</p></td>
 </tr>
 <tr class="odd">
-<td><p>LevelNumber</p></td>
+<td><p>levelnumber</p></td>
 <td><p>階層のルートとレベルの距離。</p></td>
 </tr>
 <tr class="even">
@@ -110,19 +110,19 @@ ms.locfileid: "28709580"
 <td><p>レベルの明確な名前。</p></td>
 </tr>
 <tr class="odd">
-<td><p>MemberCaption</p></td>
+<td><p>メンバーキャプション</p></td>
 <td><p>メンバーに関連付けられているラベルまたはキャプション。</p></td>
 </tr>
 <tr class="even">
-<td><p>MemberGUID</p></td>
+<td><p>memberguid</p></td>
 <td><p>メンバーの GUID。</p></td>
 </tr>
 <tr class="odd">
-<td><p>メンバー名</p></td>
+<td><p>MemberName</p></td>
 <td><p>メンバーの名前。</p></td>
 </tr>
 <tr class="even">
-<td><p>MemberOrdinal</p></td>
+<td><p>memberordinal</p></td>
 <td><p>メンバーの序数。</p></td>
 </tr>
 <tr class="odd">
@@ -134,11 +134,11 @@ ms.locfileid: "28709580"
 <td><p>メンバーの明確な名前。</p></td>
 </tr>
 <tr class="odd">
-<td><p>ParentCount</p></td>
+<td><p>parentcount</p></td>
 <td><p>このメンバーが持っている親の数。</p></td>
 </tr>
 <tr class="even">
-<td><p>ParentLevel</p></td>
+<td><p>parentlevel</p></td>
 <td><p>メンバーの親のレベル番号。</p></td>
 </tr>
 <tr class="odd">
@@ -146,7 +146,7 @@ ms.locfileid: "28709580"
 <td><p>メンバーの親の明確な名前。</p></td>
 </tr>
 <tr class="even">
-<td><p>スキーマ名</p></td>
+<td><p>SchemaName</p></td>
 <td><p>このキューブが属しているスキーマの名前。</p></td>
 </tr>
 </tbody>

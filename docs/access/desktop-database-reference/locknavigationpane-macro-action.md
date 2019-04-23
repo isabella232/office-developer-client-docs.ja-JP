@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 7f6ee19edaf2efdc03301e98e709db6dd69f101a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289872"
 ---
 # <a name="locknavigationpane-macro-action"></a>LockNavigationPane マクロ アクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 " **LockNavigationPane** /ナビゲーションウィンドウのロック" アクションを使用すると、ナビゲーション ウィンドウに表示されているデータベース オブジェクトをユーザーが削除できないように設定できます。
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**LockNavigationPane**アクションには、次の引数があります。
+"LockNavigationPane/ナビゲーションウィンドウのロック" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -43,15 +43,15 @@ ms.locfileid: "28717805"
 <tbody>
 <tr class="odd">
 <td><p><strong>Lock</strong></p></td>
-<td><p><strong>はい</strong>ナビゲーション ウィンドウ] または [<strong>いいえ</strong>ナビゲーション ウィンドウのロックを解除をロックするを選択します。</p></td>
+<td><p>ナビゲーションウィンドウをロックするには [<strong>はい</strong>] を、ナビゲーションウィンドウのロックを解除するには [<strong>いいえ</strong>] を選択します。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-ナビゲーション ウィンドウをロックすると、データベース オブジェクトまたはデータベース オブジェクトを切り取ってクリップボードを削除できなくなります。 *ない*次の操作のいずれかの操作を実行することを防ぐ。
+Locking the Navigation Pane prevents you from deleting database objects or cutting database objects to the clipboard. 次の操作のいずれかを実行することはでき*ません*。
 
   - データベース オブジェクトをクリップボードにコピーする
 
@@ -63,5 +63,5 @@ ms.locfileid: "28717805"
 
   - ナビゲーション ウィンドウのセクションの表示と非表示を切り替える
 
-**LockNavigationPane**アクションは、VBA モジュールで実行するには、 **DoCmd**オブジェクトの**LockNavigationPane**メソッドを使用します。
+To run the **LockNavigationPane** action in a VBA module, use the **LockNavigationPane** method of the **DoCmd** object.
 

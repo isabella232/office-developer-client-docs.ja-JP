@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c1b127995a2f9a0af7da80e9df862259b570870e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288807"
 ---
 # <a name="moveandsizewindow-macro-action"></a>MoveAndSizeWindow マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 タブ付きドキュメントではなくウィンドウを重ねて使用するようにドキュメント ウィンドウ オプションを設定すると、" **MoveAndSizeWindow/ウィンドウの移動とサイズ変更** " アクションを使用して、アクティブ ウィンドウの移動またはサイズ変更を行うことができます。ドキュメント ウィンドウ オプションを設定する方法については、「注釈」セクションを参照してください。
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
-" **MoveAndSizeWindow/ウィンドウの移動とサイズ変更** " アクションの引数は次のとおりです。
+"**MoveAndSizeWindow/ウィンドウの移動とサイズ変更**" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -61,7 +61,7 @@ ms.locfileid: "28721648"
 少なくとも 1 つの引数に対して値を入力する必要があります。
 
 > [!NOTE]
-> [!メモ] 各測定値はインチまたはセンチメートル単位で指定します。どちらの単位を使用するかは、Windows コントロール パネルの地域の設定によって決まります。
+> 各測定値はインチまたはセンチメートル単位で指定します。どちらの単位を使用するかは、Windows コントロール パネルの地域の設定によって決まります。
 
 ## <a name="remarks"></a>注釈
 
@@ -83,7 +83,7 @@ ms.locfileid: "28721648"
 > - サイズを変更せずにウィンドウを移動するには、" **Right/右** " および " **Down/下** " 引数に値を入力し、" **Width/幅** " および " **Height/高さ** " 引数は空白のままにしておきます。
 > - 移動せずにウィンドウのサイズを変更するには、" **Width/幅** " および " **Height/高さ** " 引数に値を入力し、" **Right/右** " および " **Down/下** " 引数は空白のままにしておきます。
 
-Visual Basic for Applications (VBA) モジュールで " **MoveAndSizeWindow/ウィンドウの移動とサイズ変更** " アクションを実行するには、 **DoCmd** オブジェクトの **MoveSize** メソッドを使用します。
+Visual Basic for Applications (VBA) モジュールで "**MoveAndSizeWindow/ウィンドウの移動とサイズ変更**" アクションを実行するには、**DoCmd** オブジェクトの **MoveSize** メソッドを使用します。
 
 ## <a name="example"></a>例
 
@@ -103,7 +103,7 @@ Visual Basic for Applications (VBA) モジュールで " **MoveAndSizeWindow/ウ
 <th><p>条件</p></th>
 <th><p>アクション</p></th>
 <th><p>引数: 設定値</p></th>
-<th><p>コメント</p></th>
+<th><p>Comment</p></th>
 </tr>
 </thead>
 <tbody>
@@ -116,7 +116,7 @@ Visual Basic for Applications (VBA) モジュールで " **MoveAndSizeWindow/ウ
 <tr class="even">
 <td><p>IsNull([仕入先コード])</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Message/メッセージ</strong>: 表示する商品を扱う仕入先のレコードに移動し、[商品の参照] ボタンを再度クリックします。 <strong>ビープ音を鳴らす</strong>: <strong>YesType</strong>: <strong>NoneTitle</strong>: 仕入先を選択します。</p></td>
+<td><p><strong>Message/メッセージ</strong>: 表示する商品を扱う仕入先のレコードに移動し、[商品の参照] ボタンを再度クリックします。 <strong>Beep</strong>: <strong>yestype</strong>: <strong>none title</strong>: 仕入先の選択</p></td>
 <td><p>[仕入先] フォームに現在の仕入先が存在しない場合、メッセージを表示します。</p></td>
 </tr>
 <tr class="odd">
@@ -134,13 +134,13 @@ Visual Basic for Applications (VBA) モジュールで " **MoveAndSizeWindow/ウ
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>OpenForm</strong></p></td>
-<td><p><strong>フォーム名</strong>: 製品リストの<strong>表示</strong>: <strong>DatasheetFilter の名前</strong>: <strong>Where 条件式</strong>: [仕入先コード] = [Forms]![仕入先]![仕入先コード]<strong>データ モード</strong>:<strong>読み取り OnlyWindow モード</strong>:<strong>標準</strong></p></td>
+<td><p><strong>フォーム名</strong>: 製品リスト<strong>ビュー</strong>: <strong>DatasheetFilter Name</strong>: <strong>Where Condition</strong>: [Supplier ID] = [Forms]![仕入先]!SupplierID<strong>データモード</strong>:<strong>読み取りのみウィンドウモード</strong>:<strong>標準</strong></p></td>
 <td><p>[製品リスト] フォームを開き、現在の仕入先の製品を表示します。</p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p><strong>MoveAndSizeWindow</strong></p></td>
-<td><p><strong>右</strong>: 0.7799&quot; <strong>ダウン</strong>: 1.8&quot;</p></td>
+<td><p><strong>Right</strong>: 0.7799&quot; <strong>Down</strong>: 1.8&quot;</p></td>
 <td><p>[製品リスト] を [仕入先] フォームの右下に配置します。</p></td>
 </tr>
 </tbody>

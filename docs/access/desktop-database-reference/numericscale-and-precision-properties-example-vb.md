@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e067c2ae893d19efdbcdc160fc7a7d54b9682297
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288547"
 ---
 # <a name="numericscale-and-precision-properties-example-vb"></a>NumericScale プロパティと Precision プロパティの使用例 (VB)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-ここでは、[Column](numericscale-property-adox.md) オブジェクトの [NumericScale](precision-property-adox.md) プロパティおよび [Precision](column-object-adox.md) プロパティの使用例を示します。 このコードでは、*ノースウィンド*データベースの [**受注明細**] テーブルの値を表示します。
+ここでは、[Column](column-object-adox.md) オブジェクトの [NumericScale](numericscale-property-adox.md) プロパティおよび [Precision](precision-property-adox.md) プロパティの使用例を示します。このコードは、*Northwind* データベースの **Order Details** テーブルを取得して、これらのプロパティの値を表示します。
 
 ```vb 
  

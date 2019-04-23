@@ -8,17 +8,17 @@ ms.date: 10/16/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 99c88249180a0c8aeb7baff0e81a7c9e590a5ef4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280582"
 ---
 # <a name="actualsize-and-definedsize-properties-example-jscript"></a>ActualSize プロパティと DefinedSize プロパティの使用例 (JScript)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-次の例では、[ActualSize](actualsize-property-ado.md) プロパティと [DefinedSize](definedsize-property-ado.md) プロパティを使用して、フィールドの定義されたサイズと実際のサイズを表示します。 切り取りメモ帳または別のテキスト エディターに次のコードを貼り付けして**ActualSizeJS.asp**として保存します。
+This example uses the [ActualSize](actualsize-property-ado.md) and [DefinedSize](definedsize-property-ado.md) properties to display the defined size and actual size of a field. Cut and paste the following code to Notepad or another text editor, and save it as **ActualSizeJS.asp**.
 
 ```javascript
 <!-- BeginActualSizeJS --> 

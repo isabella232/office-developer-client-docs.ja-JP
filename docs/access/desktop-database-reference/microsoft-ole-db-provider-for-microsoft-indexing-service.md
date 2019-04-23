@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ba27bfdf6cc1317b441e626c61784e2c50b589f1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288919"
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-indexing-service"></a>Microsoft OLE DB Provider for Microsoft Indexing Service
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-Microsoft OLE DB プロバイダーを Microsoft インデックス サービスでは、ファイル システムおよび web データを Microsoft インデックス サービスでインデックスを作成するプログラムの読み取り専用アクセスを提供します。 ADO アプリケーションでは、SQL クエリを使用してコンテンツおよびファイルのプロパティ情報を取得できます。
+microsoft OLE DB Provider for microsoft indexing service は、microsoft indexing service によってインデックス処理されたファイルシステムと web データに対して、プログラムによる読み取り専用アクセスを提供します。 ADO アプリケーションでは、SQL クエリを使用してコンテンツおよびファイルのプロパティ情報を取得できます。
 
 このプロバイダーはフリースレッドであり、Unicode に対応しています。
 
 ## <a name="connection-string-parameters"></a>接続文字列のパラメーター
 
-このプロバイダーに接続するには、**ConnectionString** プロパティの [Provider=](connectionstring-property-ado.md) 引数を次のように設定します。
+このプロバイダーに接続するには、[ConnectionString](connectionstring-property-ado.md) プロパティの **Provider=** 引数を次のように設定します。
 
 ```vb 
  
@@ -59,11 +59,11 @@ MSIDXS
 <tbody>
 <tr class="odd">
 <td><p><strong>Provider</strong></p></td>
-<td><p>OLE DB Provider for Microsoft Indexing Service を指定します。通常、この接続文字列ではこのキーワードのみを指定します。</p></td>
+<td><p>OLE DB Provider for Microsoft Indexing Service を指定します。 通常、この接続文字列ではこのキーワードのみを指定します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Data Source</strong></p></td>
-<td><p>インデックス サービスのカタログ名を指定します。このキーワードを指定しない場合は、既定のシステム カタログが使用されます。</p></td>
+<td><p>インデックス サービスのカタログ名を指定します。 このキーワードを指定しない場合は、既定のシステム カタログが使用されます。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Locale Identifier</strong></p></td>
@@ -83,7 +83,7 @@ MSIDXS
 
 ## <a name="recordset-behavior"></a>Recordset の動作
 
-次の表は、このプロバイダーで開かれた **Recordset** オブジェクトで利用可能な機能の一覧です。 静的カーソルの種類 (**adOpenStatic**) のみがあります。
+次の表は、このプロバイダーで開かれた **Recordset** オブジェクトで利用可能な機能の一覧です。 使用できるのは、静的カーソルの種類 (**adopenstatic**) だけです。
 
 プロバイダーの構成による **Recordset** の動作の詳細については、 [Supports](supports-method-ado.md) メソッドを実行し、 [Recordset](properties-collection-ado.md) の **Properties** コレクションを列挙して、プロバイダー固有の動的プロパティが存在するかどうかを確認してください。
 
@@ -97,40 +97,40 @@ MSIDXS
 <thead>
 <tr class="header">
 <th><p>プロパティ</p></th>
-<th><p>利用可能性</p></th>
+<th><p>Availability</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><a href="absolutepage-property-ado.md">AbsolutePage</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="absoluteposition-property-ado.md">AbsolutePosition</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="activeconnection-property-ado.md">ActiveConnection</a></p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="bof-eof-properties-ado.md">BOF</a></p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="bookmark-property-ado.md">ブックマーク</a>*</p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="cachesize-property-ado.md">CacheSize</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="cursorlocation-property-ado.md">CursorLocation</a></p></td>
 <td><p>常に <strong>adUseServer</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="cursortype-property-ado.md">カーソル。</a></p></td>
+<td><p><a href="cursortype-property-ado.md">CursorType</a></p></td>
 <td><p>常に <strong>adOpenStatic</strong></p></td>
 </tr>
 <tr class="odd">
@@ -139,53 +139,53 @@ MSIDXS
 </tr>
 <tr class="even">
 <td><p><a href="bof-eof-properties-ado.md">EOF</a></p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="filter-property-ado.md">フィルター</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p><a href="filter-property-ado.md">Filter</a></p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="locktype-property-ado.md">ロック。</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p><a href="locktype-property-ado.md">LockType</a></p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="marshaloptions-property-ado.md">スレッド</a></p></td>
+<td><p><a href="marshaloptions-property-ado.md">MarshalOptions</a></p></td>
 <td><p>利用不可</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="maxrecords-property-ado.md">MaxRecords</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="pagecount-property-ado.md">PageCount</a></p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="pagesize-property-ado.md">PageSize</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="recordcount-property-ado.md">RecordCount</a></p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="source-property-ado-recordset.md">Source</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="state-property-ado.md">State</a></p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="status-property-ado-recordset.md">状態</a></p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 </tbody>
 </table>
 
 
-\*ブックマークは**レコード セット**上に存在するこの機能のためにプロバイダーを有効にする必要があります。
+\*この機能が**Recordset**に存在するためには、プロバイダーでブックマークが有効になっている必要があります。
 
 標準的な ADO **Recordset** のメソッドの利用可能性は、次のとおりです。
 
@@ -197,7 +197,7 @@ MSIDXS
 <thead>
 <tr class="header">
 <th><p>メソッド</p></th>
-<th><p>利用可能性</p></th>
+<th><p>できる?</p></th>
 </tr>
 </thead>
 <tbody>
@@ -254,11 +254,11 @@ MSIDXS
 <td><p>はい</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="resync-method-ado.md">再同期</a></p></td>
+<td><p><a href="resync-method-ado.md">Resync</a></p></td>
 <td><p>はい</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="supports-method-ado.md">サポートしています</a></p></td>
+<td><p><a href="supports-method-ado.md">機能</a></p></td>
 <td><p>はい</p></td>
 </tr>
 <tr class="even">
@@ -275,5 +275,5 @@ MSIDXS
 
 ## <a name="see-also"></a>関連項目
 
-特定の実装の詳細と機能については、Microsoft OLE DB プロバイダーが Microsoft インデックス サービスでは、Microsoft OLE DB プログラマ リファレンスを参照してください。
+Microsoft OLE DB Provider for Microsoft Indexing Service の実装方法および機能の詳細については、「Microsoft OLE DB Programmer's Reference」を参照してください。
 

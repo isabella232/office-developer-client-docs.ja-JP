@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 98342d5456c545e6da8539c11f616c08fd52a932
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281634"
 ---
 # <a name="adorecordsetconstruction-interface-ado"></a>ADORecordsetConstruction インターフェイス (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 . **ADORecordsetConstruction** インターフェイスは、C/C++ アプリケーションで OLE DB **Rowset** オブジェクトから ADO **Recordset** オブジェクトを作成するために使用されます。
 
@@ -32,19 +32,22 @@ ms.locfileid: "28701279"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="chapter-property-ado.md">章</a></p></td>
+<td><p><a href="chapter-property-ado.md">節</a></p></td>
 <td><p>読み取り/書き込み可能。<br />
-<strong>章</strong>の OLE DB オブジェクトから/この ADO<strong>レコード セット</strong>オブジェクトを取得または設定します。</p></td>
+
+ADO <strong>Recordset</strong> オブジェクトに対する OLE DB <strong>Chapter</strong> オブジェクトを取得または設定します。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="rowposition-property-ado.md">RowPosition</a></p></td>
 <td><p>読み取り/書き込み可能。<br />
-OLE DB <strong>RowPosition</strong>オブジェクトから/この ADO<strong>レコード セット</strong>オブジェクトを取得または設定します。</p></td>
+
+ADO <strong>Recordset</strong> オブジェクトに対する OLE DB <strong>RowPosition</strong> オブジェクトを取得または設定します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="rowset-property-ado.md">行セット</a></p></td>
+<td><p><a href="rowset-property-ado.md">行</a></p></td>
 <td><p>読み取り/書き込み可能。<br />
-/に ADO<strong>レコード セット</strong>オブジェクトには、OLE DB<strong>行セット</strong>オブジェクトを取得または設定します。</p></td>
+
+ADO <strong>Recordset</strong> オブジェクトに対する OLE DB <strong>Rowset</strong> オブジェクトを取得または設定します。</p></td>
 </tr>
 </tbody>
 </table>
@@ -52,15 +55,15 @@ OLE DB <strong>RowPosition</strong>オブジェクトから/この ADO<strong>�
 
 ## <a name="methods"></a>メソッド
 
-なし
+なし。
 
 ## <a name="events"></a>イベント
 
-なし
+なし。
 
 ## <a name="remarks"></a>注釈
 
-次の 3 つの基本的な操作を OLE DB の**行セット**オブジェクトのため、ADO**レコード セット**オブジェクトの () の構築、ADO**レコード セット**のオブジェクト (どちら) 金額の構築を指定します。
+OLE DB **Rowset**オブジェクト (pRowset) (ado **recordset**オブジェクトの構造) () を指定すると、ado **recordset**オブジェクト (adors) の構造は次の3つの基本的な操作になります。
 
 1. ADO **Recordset** オブジェクトを作成します。
     
@@ -76,18 +79,18 @@ OLE DB <strong>RowPosition</strong>オブジェクトから/この ADO<strong>�
          (void**)&adoRsConstruct);
    ```
 
-3. IADORecordsetConstruction::put を呼び出す\_ADO レコード セット オブジェクトの OLE DB 行セット オブジェクトを設定するのには行セット プロパティのメソッド。
+3. IADORecordsetConstruction::p ut\_rowset プロパティメソッドを呼び出して、ADO の Recordset オブジェクトの OLE DB Rowset オブジェクトを設定します。
 
    ```vb     
     IUnknown *pUnk=NULL;
     pRowset->QueryInterface(IID_IUnknown, (void**)&pUnk);
     adoRsConstruct->put_Rowset(pUnk);
    ```
-これで、結果のオブジェクトは、OLE DB**行セット**オブジェクトから作成された ADO**レコード セット**オブジェクトを表します。
+これで、結果オブジェクトは、OLE DB **Rowset**オブジェクトから作成された ADO **Recordset**オブジェクトを表します。
 
 ADO **Recordset** オブジェクトは、OLE DB **Chapter** または **RowPosition** オブジェクトから作成することもできます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 
 - **バージョン:** ADO 2.0 以上
 

@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: fa3221814839200117bbc5bc824812437d68281f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283311"
 ---
 # <a name="ado-md-api-reference"></a>ADO MD API リファレンス
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-ActiveX データ オブジェクト (ADO) MD マニュアルのこのセクションには、各 ADO MD オブジェクト、コレクション、メソッド、プロパティと該当する場合のコード例のトピックが含まれています。 詳細については、特定のトピックをキーワードで検索するか、次のトピックを参照してください。
+ActiveX Data Objects (ADO) MD ドキュメントのこのセクションには、ado md のオブジェクト、コレクション、メソッド、およびプロパティについてのトピックのほか、必要に応じてサンプルコードも含まれています。 詳細については、特定のトピックをキーワードで検索するか、次のトピックを参照してください。
 
-- [ADO MD オブジェクト](ado-md-objects.md)
+- [ADO MD のオブジェクト](ado-md-objects.md)
 - [ADO MD のコレクション](ado-md-collections.md)
 - [ADO MD のプロパティ](ado-md-properties.md)
 - [ADO MD のメソッド](ado-md-methods.md)

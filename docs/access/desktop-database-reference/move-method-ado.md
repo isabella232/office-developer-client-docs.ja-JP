@@ -1,5 +1,5 @@
 ---
-title: メソッドを ActiveX データ オブジェクト (ADO) の移動します。
+title: Move メソッド-ActiveX データオブジェクト (ADO)
 TOCTitle: Move method (ADO)
 ms:assetid: 1f858654-5fa3-273d-7cdc-574c5f09a420
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248982(v=office.15)
@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6c7db661e590bc21605d9c289b1de6d4ae9f46e2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288835"
 ---
 # <a name="move-method-ado"></a>Move メソッド (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Recordset](recordset-object-ado.md) オブジェクトでカレント レコードの位置を移動します。
 
 ## <a name="syntax"></a>構文
 
-*レコード セット*です。*NumRecords*、*起動*に移動します。
+*recordset*。Move *NumRecords*, *Start*
 
 ## <a name="parameters"></a>パラメーター
 
@@ -31,23 +31,23 @@ ms.locfileid: "28712576"
 |*NumRecords* |カレント レコードの位置を移動するレコード数を指定する、符号付きの長整数型 ( **Long** ) の式を指定します。|
 |*Start* |省略可能です。ブックマークとして評価される文字列型 ( **String** ) の値またはバリアント型 ( **Variant** ) を指定します。 [BookmarkEnum](bookmarkenum.md) 値を使用することもできます。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Move** メソッドは、すべての **Recordset** オブジェクトでサポートされています。
 
 *NumRecords* 引数がゼロより大きい場合、現在のレコードの位置は前方 (**Recordset** の末尾方向) に移動します。*NumRecords* がゼロより小さい場合、現在のレコードの位置は後方 (**Recordset** の先頭方向) に移動します。
 
-**Move**メソッドを呼び出しては、最初のレコードよりも前にカレント レコードの位置を移動すると、現在のレコードに設定 (されます[BOF](bof-eof-properties-ado.md)が**True**になる)、レコード セットの最初のレコードより前に位置します。 **BOF** プロパティが既に **True** の場合、後方へ移動しようとすると、エラーが発生します。
+**move**メソッドを呼び出して、カレントレコードの位置を最初のレコードの前に移動すると、ADO は現在のレコードを recordset の最初のレコードの前の位置 ([BOF](bof-eof-properties-ado.md)が**True**) に設定します。 **BOF** プロパティが既に **True** の場合、後方へ移動しようとすると、エラーが発生します。
 
-**Move**メソッドを呼び出しては、最後のレコードの後のポイントにカレント レコードの位置を移動に設定され、現在のレコード位置 ([EOF](bof-eof-properties-ado.md)は**True**)、レコード セットの最後のレコードより後にします。 **EOF** プロパティが既に **True** の場合、前方へ移動しようとすると、エラーが発生します。
+**Move** メソッドを呼び出してカレント レコードの位置を最後のレコードの後に移動しようとすると、カレント レコードがレコードセットの最後のレコードの後に設定され、[EOF](bof-eof-properties-ado.md) が **True** になります。**EOF** プロパティが既に **True** の場合、前方へ移動しようとすると、エラーが発生します。
 
 空の **Recordset** オブジェクトから **Move** メソッドを呼び出すと、エラーが発生します。
 
-*起動*引数を渡すと、移動は、 **Recordset**オブジェクトがブックマークをサポートするいると仮定して、このブックマークを持つレコードを基準にしては。 指定しない場合は、カレント レコードが移動の基準となります。
+*Start* 引数を指定した場合、**Recordset** オブジェクトではブックマークがサポートされていると見なされ、このブックマークを持つレコードが移動の基準となります。指定しない場合は、カレント レコードが移動の基準となります。
 
-*NumRecords*引数を現在のレコード位置が現在キャッシュされているレコード グループの範囲外に移動する、プロバイダーからのレコードをローカルにキャッシュ、 [CacheSize](cachesize-property-ado.md)プロパティを使用する場合、レコードの新しいグループを取得するために ADO を強制的に移動先のレコードから開始しています。 新しく取り込まれるグループのサイズは **CacheSize** プロパティによって決まり、移動先のレコードが最初に取得されるレコードになります。
+[CacheSize](cachesize-property-ado.md) プロパティを使用してプロバイダーからのレコードをローカルにキャッシュしている場合、*NumRecords* 引数を渡して、現在キャッシュされているレコード グループの範囲外に現在のレコード位置を移動すると、移動先のレコードから始まる新規レコード グループが強制的に取得されます。**CacheSize** プロパティが、新規に取得されるグループのサイズを決定し、移動先のレコードが最初に取得されるレコードになります。
 
-場合は、 **Recordset**オブジェクトが前方スクロールのみ、ユーザー渡すこともできます、 *NumRecords*引数より小さい値 0、リンク先が現在キャッシュされているレコードのセット内では。 **Move** メソッドを呼び出して、カレント レコードの位置を、キャッシュされている最初のレコードより前のレコードに移動しようとすると、エラーが発生します。 このように、前方スクロールのみをサポートするプロバイダーで、完全スクロールをサポートするレコード キャッシュを使用することができます。 キャッシュされたレコードはメモリに読み込まれるため、必要以上のレコードのキャッシュは避けてください。 前方スクロールのみ可能な **Recordset** オブジェクトでも、この方法で後方への移動をサポートできますが、前方スクロールのみ可能な [Recordset](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) オブジェクトで **MovePrevious** メソッドを呼び出すと、エラーが発生します。
+**Recordset** オブジェクトが前方スクロールのみ可能な場合でも、移動先が現在キャッシュされているレコードセットの範囲内であれば、*NumRecords* 引数に 0 より小さい値を指定できます。**Move** メソッドを呼び出して、カレント レコードの位置を、キャッシュされている最初のレコードより前のレコードに移動しようとすると、エラーが発生します。このように、前方スクロールのみをサポートするプロバイダーで、完全スクロールをサポートするレコード キャッシュを使用することができます。キャッシュされたレコードはメモリに読み込まれるため、必要以上のレコードのキャッシュは避けてください。前方スクロールのみ可能な **Recordset** オブジェクトでも、この方法で後方への移動をサポートできますが、前方スクロールのみ可能な **Recordset** オブジェクトで [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) メソッドを呼び出すと、エラーが発生します。
 
 
 > [!NOTE]

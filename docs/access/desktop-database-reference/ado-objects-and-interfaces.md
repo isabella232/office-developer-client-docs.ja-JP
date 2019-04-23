@@ -1,5 +1,5 @@
 ---
-title: ADO オブジェクトとインターフェイス
+title: ADO のオブジェクトとインターフェイス
 TOCTitle: ADO objects and interfaces
 ms:assetid: bebf4a80-8b6e-c43c-4138-897055cc60d3
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249927(v=office.15)
@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 539feb1918877189548d0e7cff6ceb28e50abddc
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283262"
 ---
-# <a name="ado-objects-and-interfaces"></a>ADO オブジェクトとインターフェイス
+# <a name="ado-objects-and-interfaces"></a>ADO のオブジェクトとインターフェイス
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-ActiveX データ オブジェクト (ADO) オブジェクト モデルでは、これらのオブジェクト間の関係が表されます。
+これらのオブジェクト間のリレーションシップは、ActiveX Data objects (ADO) オブジェクトモデルで表されます。
 
-各オブジェクトは、対応するコレクションに格納できます。 たとえば、[Error](error-object-ado.md) オブジェクトは [Errors](errors-collection-ado.md) コレクションに格納できます。 詳細については、 [ADO コレクション](ado-collections.md)」、またはコレクションの特定のトピックを参照してください。
+各オブジェクトは、対応するコレクションに格納できます。 たとえば、[Error](error-object-ado.md) オブジェクトは [Errors](errors-collection-ado.md) コレクションに格納できます。 詳細については、「 [ADO コレクション](ado-collections.md)」または「特定のコレクションのトピック」を参照してください。
 
 <br/>
 
@@ -31,7 +31,7 @@ ActiveX データ オブジェクト (ADO) オブジェクト モデルでは、
 </colgroup>
 <tbody>
 <tr class="even">
-<th>オブジェクト</th>
+<th>Object</th>
 <th>説明</th>
 </tr>
 <tr class="odd">
@@ -63,7 +63,7 @@ ActiveX データ オブジェクト (ADO) オブジェクト モデルでは、
 <td><p>パラメーター クエリまたはストアド プロシージャに基づく、<strong>Command</strong> オブジェクトに関連付けられたパラメーターまたは引数を表します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="property-object-ado.md">プロパティ</a></p></td>
+<td><p><a href="property-object-ado.md">Property</a></p></td>
 <td><p>プロバイダーで定義される ADO オブジェクトの動的特性を表します。</p></td>
 </tr>
 <tr class="odd">

@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d12946a90d61a941bf5ef7d479970c8c96e074f9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289844"
 ---
 # <a name="locktype-property-ado"></a>LockType プロパティ (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 編集時にレコードに適用されるロックの種類を示します。
 
-## <a name="settings-and-return-values"></a>設定値および戻り値
+## <a name="settings-and-return-values"></a>設定値と戻り値
 
-[LockTypeEnum](locktypeenum.md) の値を設定または取得します。既定値は **adLockReadOnly** です。
+[LockTypeEnum](locktypeenum.md) の値を設定または取得します。 既定値は **adLockReadOnly** です。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 プロバイダーが **Recordset** を開くときに使用するロックの種類は、 [LockType](recordset-object-ado.md) プロパティを使用して事前に設定します。開いている **Recordset** オブジェクトで使用されているロックの種類は、このプロパティを取得することで確認できます。
 
@@ -35,5 +35,5 @@ ms.locfileid: "28712478"
 
 **LockType** プロパティは、 **Recordset** が閉じているときは読み取り/書き込み可能で、開いているときは読み取り専用になります。
 
-**リモート データ サービスの使用法**クライアント側の Recordset オブジェクトで使用すると、 **LockType**プロパティは**adLockBatchOptimistic**にのみ設定できます。
+**リモートデータサービスの使用状況**クライアント側の Recordset オブジェクトで使用する場合、 **LockType**プロパティは**adlockbatchoptimistic**にのみ設定できます。
 

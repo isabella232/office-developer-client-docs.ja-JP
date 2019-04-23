@@ -1,5 +1,5 @@
 ---
-title: OLE DB プロバイダー (デスクトップ データベース参照のアクセス)
+title: OLE DB プロバイダー (Access デスクトップデータベースリファレンス)
 TOCTitle: OLE DB providers
 ms:assetid: ef412198-eac5-bf86-73fd-574e67276408
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250215(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 649f1db283b772a0f6798fae0d56a3a80c59e21b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288484"
 ---
 # <a name="ole-db-providers"></a>OLE DB プロバイダー
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-ADO プログラマ ガイド[の紹介](introduction-to-ado-programming.md)では、ADO と Microsoft Data Access アーキテクチャの残りの部分との間の関係について説明します。 OLE DB は、さまざまな情報ソースに格納されているデータに各アプリケーションから同じようにアクセスできる、一連の COM インターフェイスを定義します。 このアプローチにより、データ ソースに適した豊富な DBMS 機能をサポートするインターフェイスを介して、データ ソースでデータを共有できます。 OLE DB の高パフォーマンスのアーキテクチャは、柔軟性のあるコンポーネント ベースのサービス モデルの使用に基づいて設計されています。 OLE DB では、アプリケーションとデータ間の中継層の数を指定せず、特定のタスクを実行するために必要な数のコンポーネントだけを必要とします。
+「ado プログラマガイドの[概要](introduction-to-ado-programming.md)」では、ado とその他の Microsoft データアクセスアーキテクチャとの関係について説明しています。 OLE DB は、さまざまな情報ソースに格納されているデータに各アプリケーションから同じようにアクセスできる、一連の COM インターフェイスを定義します。 このアプローチにより、データ ソースに適した豊富な DBMS 機能をサポートするインターフェイスを介して、データ ソースでデータを共有できます。 OLE DB の高パフォーマンスのアーキテクチャは、柔軟性のあるコンポーネント ベースのサービス モデルの使用に基づいて設計されています。 OLE DB では、アプリケーションとデータ間の中継層の数を指定せず、特定のタスクを実行するために必要な数のコンポーネントだけを必要とします。
 
 たとえば、ユーザーがクエリを実行する場合を考えてみます。次のようなシナリオを考えてみましょう。
 
@@ -37,7 +37,7 @@ ADO プログラマ ガイド[の紹介](introduction-to-ado-programming.md)で�
 
 ADO は、さまざまな OLE DB プロバイダーに一貫した高レベルのインターフェイスを提供します。
 
-このセクションには、次のトピックが含まれています。
+このセクションでは、以下のトピックについて説明します。
 
 - [データ プロバイダー](data-providers.md)
 

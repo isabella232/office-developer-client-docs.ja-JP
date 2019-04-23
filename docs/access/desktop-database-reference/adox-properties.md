@@ -1,5 +1,5 @@
 ---
-title: ADOX のプロパティ (アクセス デスクトップ データベース参照)
+title: ADOX プロパティ (Access デスクトップデータベースリファレンス)
 TOCTitle: ADOX properties
 ms:assetid: 7559af18-83a4-dc7f-015f-6a7c55c520d8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249480(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0056764d80b5cfa19bf8e229d33c2c84c8b08c28
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285252"
 ---
 # <a name="adox-properties"></a>ADOX のプロパティ
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 <br/>
 
@@ -34,15 +34,15 @@ ms.locfileid: "28703035"
 <tbody>
 <tr class="odd">
 <td><p><a href="activeconnection-property-adox.md">ActiveConnection</a></p></td>
-<td><p>カタログが属する ADO<strong>接続</strong>オブジェクトを示します。</p></td>
+<td><p>カタログが属する ADO <strong>Connection</strong> オブジェクトを示します。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="attributes-property-adox.md">属性</a></p></td>
-<td><p>列の属性を示します。</p></td>
+<td><p>列の属性を表します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="clustered-property-adox.md">Clustered</a></p></td>
-<td><p>インデックスがクラスター化されているかどうかを示します。</p></td>
+<td><p>インデックスがクラスター化しているかどうかを示します。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="command-property-adox.md">Command</a></p></td>
@@ -73,8 +73,8 @@ ms.locfileid: "28703035"
 <td><p>インデックス フィールドの Null 値を持つレコードがインデックスへのエントリを持つかどうかを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="item-property-ado.md">アイテム</a></p></td>
-<td><p>コレクションの特定のメンバーをその名前または序数で示します。</p></td>
+<td><p><a href="item-property-ado.md">Item</a></p></td>
+<td><p>コレクションの特定のメンバーを名前またはコレクションで付けられたインデックスで示します。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="name-property-adox.md">Name</a></p></td>
@@ -82,18 +82,18 @@ ms.locfileid: "28703035"
 </tr>
 <tr class="odd">
 <td><p><a href="numericscale-property-adox.md">NumericScale</a></p></td>
-<td><p>列中の数値の小数点以下の桁数を示します。</p></td>
+<td><p>列にある数値の小数点以下の桁数を示します。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="parentcatalog-property-adox.md">ParentCatalog</a></p></td>
-<td><p>プロバイダー固有のプロパティへのアクセスを提供する、テーブルまたは列の親カタログを指定します。</p></td>
+<td><p>プロバイダーに固有のプロパティへのアクセスを提供するために、テーブルまたは列の親カタログを指定します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>Precision<a href="precision-property-adox.md"></a></p></td>
-<td><p>列のデータ値の最大桁数を示します。</p></td>
+<td><p><a href="precision-property-adox.md">精度</a></p></td>
+<td><p>列にあるデータ値の最大桁数を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="primarykey-property-adox.md">主キー</a></p></td>
+<td><p><a href="primarykey-property-adox.md">PrimaryKey</a></p></td>
 <td><p>インデックスがテーブルの主キーを表しているかどうかを示します。</p></td>
 </tr>
 <tr class="odd">
@@ -109,15 +109,15 @@ ms.locfileid: "28703035"
 <td><p>列の並べ替え順序を示します (インデックス列のみ)。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-columnadox">(列) の種類</a></p></td>
-<td><p>列データの型を示します。</p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-columnadox">Type プロパティ (Column) (ADOX)</a></p></td>
+<td><p>列のデータ型を示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-keyadox">(キー) の入力</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-keyadox">Type プロパティ (Key) (ADOX)</a></p></td>
 <td><p>キーのデータ型を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-tableadox">タイプ (テーブル)</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-tableadox">Type プロパティ (Table) (ADOX)</a></p></td>
 <td><p>テーブルの種類を示します。</p></td>
 </tr>
 <tr class="odd">

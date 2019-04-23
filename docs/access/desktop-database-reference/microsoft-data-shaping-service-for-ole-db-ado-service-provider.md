@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5065b966608f8d6a3ef1cb05be890b9a1f147dc8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288961"
 ---
 # <a name="microsoft-data-shaping-service-for-ole-db-ado-service-provider"></a>Microsoft Data Shaping Service for OLE DB (ADO サービス プロバイダー)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 Microsoft Data Shaping Service for OLE DB サービス プロバイダーは、データ プロバイダーからの階層 (シェイプされた) [Recordset](recordset-object-ado.md) オブジェクトの構築をサポートします。
 
@@ -48,7 +48,7 @@ Data Shaping Service for OLE DB を呼び出すには、接続文字列のキー
 <tbody>
 <tr class="odd">
 <td><p><strong>Unique Reshape Names</strong></p></td>
-<td><p><strong>変形の名前</strong>プロパティの値が重複して<strong>レコード セット</strong>オブジェクトを許可するかどうかを示します。 新しい<strong>レコード セット</strong>が作成され、この動的プロパティが<strong>True</strong>の場合、既存の<strong>レコード セット</strong>として名前の形状を変更、同じユーザーが指定したし、新しい<strong>レコード セット</strong>オブジェクトのリシェイプ名が一意になるように変更します。 このプロパティが<strong>False</strong>であり、新しい<strong>レコード セット</strong>が作成され、既存の<strong>レコード セット</strong>として名前の形状を変更、同じユーザーが指定した、両方の<strong>レコード セット</strong>オブジェクトには、同じ名前の形状を変更する必要があります。 したがって、どちらの<strong>Recordset</strong>もリシェイプできません両方のレコード セットが存在する限りに。 このプロパティの既定値は <strong>False</strong> です。</p></td>
+<td><p><strong>Reshape Name</strong> プロパティの値が重複する <strong>Recordset</strong> オブジェクトを作成できるかどうかを示します。 この動的プロパティが <strong>True</strong> の場合、既存の <strong>Recordset</strong> と同じ名前で新しく <strong>Recordset</strong> を作成すると、新しい <strong>Recordset</strong> オブジェクトのリシェイプ名は、一意になるように変更されます。 このプロパティが <strong>False</strong> の場合、既存の <strong>Recordset</strong> と同じリシェイプ名を指定して新しく <strong>Recordset</strong> を作成すると、両方の <strong>Recordset</strong> オブジェクトのリシェイプ名が同じになります。 したがって、両方のレコードセットが存在する限り、どちらの <strong>Recordset</strong> もリシェイプできません。 このプロパティの既定値は <strong>False</strong> です。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Data Provider</strong></p></td>

@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d79d060922c6e7f28209242ebe82821c2ba97bfd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288989"
 ---
-# <a name="microsoft-cursor-service-for-ole-db-ado-service-component"></a>OLE DB の Microsoft カーソル サービス (ADO サービス コンポーネント)
+# <a name="microsoft-cursor-service-for-ole-db-ado-service-component"></a>Microsoft Cursor Service for OLE DB (ADO サービス コンポーネント)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 Microsoft Cursor Service for OLE DB は、データ プロバイダーのカーソル サポート機能を補完します。その結果、すべてのデータ プロバイダーで機能の統一感が向上します。
 
@@ -33,9 +33,9 @@ Cursor Service を使用すると、あらゆる場合での一括更新が可�
 
 ## <a name="dynamic-properties"></a>動的プロパティ
 
-Cursor Service for OLE DB を呼び出すと、次に示す動的プロパティが **Recordset** オブジェクトの [Properties](properties-collection-ado.md) コレクションに追加されます。 **Connection** オブジェクトおよび **Recordset** オブジェクトのすべての動的プロパティの一覧については、「 [ADO の動的プロパティ インデックス](ado-dynamic-property-index.md)」を参照してください。対応する OLE DB プロパティ名がある場合は、ADO プロパティ名の後にかっこで囲んで示しています。
+Cursor Service for OLE DB を呼び出すと、次に示す動的プロパティが **Recordset** オブジェクトの [Properties](properties-collection-ado.md) コレクションに追加されます。**Connection** オブジェクトおよび **Recordset** オブジェクトのすべての動的プロパティの一覧については、「[ADO の動的プロパティ インデックス](ado-dynamic-property-index.md)」を参照してください。対応する OLE DB プロパティ名がある場合は、ADO プロパティ名の後にかっこで囲んで示しています。
 
-Cursor Service を呼び出した後、動的プロパティを変更しても、基になるデータ ソースで認識されない場合があります。 などの**レコード セット**の*コマンドのタイムアウト*プロパティを設定は表示されませんを基になるデータ プロバイダー。
+Cursor Service を呼び出した後、動的プロパティを変更しても、基になるデータ ソースで認識されない場合があります。たとえば、**Recordset** で *Command Time out* プロパティを設定しても、基になるデータ プロバイダーには認識されません。
 
 ```vb 
 ... 
@@ -52,7 +52,7 @@ Recordset1.Properties.Item("Command Time out") = 50
 アプリケーションが Cursor Service を必要とし、基になるプロバイダーの動的プロパティを設定する必要がある場合は、Cursor Service を呼び出す前に動的プロパティを設定します。コマンド オブジェクトのプロパティの設定値は、カーソルの位置に関係なく、常に基になるデータ プロバイダーに渡されます。したがって、いつでも、コマンド オブジェクトを使用してプロパティを設定することもできます。
 
 > [!NOTE]
-> 動的プロパティ DBPROP_SERVERDATAONINSERT は、基になるデータ プロバイダーでサポートされている場合でも、カーソル サービスではサポートされません。
+> [!メモ] 動的プロパティ DBPROP_SERVERDATAONINSERT は、基になるデータ プロバイダーでサポートされている場合でも、カーソル サービスではサポートされません。
 
 
 
@@ -99,7 +99,7 @@ Recordset1.Properties.Item("Command Time out") = 50
 </tr>
 <tr class="odd">
 <td><p><a href="reshape-name-property-dynamic-ado.md">Reshape Name</a></p></td>
-<td><p><strong>Recordset</strong> の名前を示します。現在またはそれ以降のデータ シェイプ コマンドで参照される場合があります。</p></td>
+<td><p><strong>Recordset</strong> の名前を示します。 現在またはそれ以降のデータ シェイプ コマンドで参照される場合があります。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="resync-command-property-dynamic-ado.md">Resync Command</a></p></td>
@@ -130,7 +130,7 @@ Recordset1.Properties.Item("Command Time out") = 50
 </table>
 
 
-動的プロパティの名前を **Properties** コレクションのインデックスとして指定して、動的プロパティを設定または取得することもできます。たとえば、 [Optimize](optimize-property-dynamic-ado.md) 動的プロパティの値を取得して出力した後、新しい値を設定するには、次のように指定します。
+動的プロパティの名前を **Properties** コレクションのインデックスとして指定して、動的プロパティを設定または取得することもできます。たとえば、[Optimize](optimize-property-dynamic-ado.md) 動的プロパティの値を取得して出力した後、新しい値を設定するには、次のように指定します。
 
 ```vb 
  
@@ -155,12 +155,12 @@ Cursor Service for OLE DB は、特定の組み込みプロパティの動作に
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="cursortype-property-ado.md">カーソル。</a></p></td>
+<td><p><a href="cursortype-property-ado.md">CursorType</a></p></td>
 <td><p><strong>Recordset</strong> で利用可能なカーソルの種類を補完します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="locktype-property-ado.md">ロック。</a></p></td>
-<td><p><strong>Recordset</strong> で利用可能なロックの種類を補完します。一括更新を可能にします。</p></td>
+<td><p><a href="locktype-property-ado.md">LockType</a></p></td>
+<td><p><strong>Recordset</strong> で利用可能なロックの種類を補完します。 一括更新を可能にします。</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="sort-property-ado.md">Sort</a></p></td>
@@ -172,5 +172,5 @@ Cursor Service for OLE DB は、特定の組み込みプロパティの動作に
 
 ## <a name="method-behavior"></a>メソッドの動作
 
-Cursor Service for OLE DB は、[Field](field-object-ado.md) オブジェクトの [Append](append-method-ado.md) メソッドや、 **Recordset** オブジェクトの [Open](open-method-ado-recordset.md) メソッド、 [Resync](resync-method-ado.md) メソッド、 [UpdateBatch](updatebatch-method-ado.md) メソッド、および [Save](save-method-ado.md) メソッドにも影響を与えます。
+Cursor Service for OLE DB は、[Field](field-object-ado.md) オブジェクトの [Append](append-method-ado.md) メソッドや、**Recordset** オブジェクトの [Open](open-method-ado-recordset.md) メソッド、[Resync](resync-method-ado.md) メソッド、[UpdateBatch](updatebatch-method-ado.md) メソッド、および [Save](save-method-ado.md) メソッドにも影響を与えます。
 

@@ -1,5 +1,5 @@
 ---
-title: ActiveX データ オブジェクト (ADO) のイベント
+title: ActiveX Data Objects (ADO) イベント
 TOCTitle: ADO events
 ms:assetid: 84ca9525-99cb-4ba6-2a4d-172414b8f0cc
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249576(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: cc2ef73798dca18e00c42768fde78da2abdb56a3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283339"
 ---
 # <a name="ado-events"></a>ADO イベント
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 <br/>
 
@@ -31,11 +31,11 @@ ms.locfileid: "28706045"
 <th>説明</th>
 </tr>
 <tr class="odd">
-<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">BeginTransComplete</a></p></td>
+<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">begintranscomplete イベント</a></p></td>
 <td><p><strong>BeginTrans</strong> の操作が終了した後に呼び出されます。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">CommitTransComplete</a></p></td>
+<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">committranscomplete イベント</a></p></td>
 <td><p><strong>CommitTrans</strong> の操作が終了した後に呼び出されます。</p></td>
 </tr>
 <tr class="odd">
@@ -103,12 +103,12 @@ ms.locfileid: "28706045"
 <td><p>接続が開始される前に呼び出されます。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="willexecute-event-ado.md">アクティビ ティー</a></p></td>
+<td><p><a href="willexecute-event-ado.md">WillExecute</a></p></td>
 <td><p>保留中のコマンドがこの接続で実行される直前に呼び出され、ユーザーに、保留中の実行パラメーターの確認と変更を行う機会を与えます。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="willmove-and-movecomplete-events-ado.md">WillMove</a></p></td>
-<td><p><strong>WillMove</strong>イベントが呼び出された<em>する前に</em>保留中の操作は、<strong>レコード セット</strong>内の現在位置を変更します。</p></td>
+<td><p>イベント<strong></strong>は、保留中の操作によって<strong>Recordset</strong>内の現在の位置が変更さ<em>れる前に</em>呼び出されます。</p></td>
 </tr>
 </tbody>
 </table>

@@ -12,20 +12,20 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: feb24e0f498e02bae01ef689a2ad62e487e314bc
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287945"
 ---
 # <a name="parameters-collection-ado"></a>Parameters コレクション (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-[Command](parameter-object-ado.md) オブジェクトのすべての [Parameter](command-object-ado.md) オブジェクトを格納します。
+[Command](command-object-ado.md) オブジェクトのすべての [Parameter](parameter-object-ado.md) オブジェクトを格納します。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **Command** オブジェクトには、 **Parameter** オブジェクトから構成される **Parameters** コレクションがあります。
 

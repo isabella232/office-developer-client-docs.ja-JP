@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 88bebab46cd6b76fb101c86c4fe33c5ab86a3e70
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288302"
 ---
 # <a name="openview-macro-action"></a>OpenView マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-Access プロジェクトで、 **OpenView**アクションをデータシート ビュー、デザイン ビュー、または印刷プレビューでビューを開くに使用できます。 データシート ビューで開いた場合、その名前のビューが実行されます。 ビューを開くときのデータ入力モードの設定を行ったり、ビューで表示するレコードを制限したりできます。
+In an Access project, you can use the **OpenView** action to open a view in Datasheet view, Design view, or Print Preview. This action runs the named view when opened in Datasheet view. You can select data entry for the view and restrict the records that the view displays.
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
+> このアクションは、データベースが信頼されていない場合には許可されません。 
 
 ## <a name="setting"></a>設定値
 
-**OpenView**アクションには、次の引数があります。
+"OpenView/ビューを開く" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -45,7 +45,7 @@ Access プロジェクトで、 **OpenView**アクションをデータシート
 <tbody>
 <tr class="odd">
 <td><p><strong>View Name/ビュー名</strong></p></td>
-<td><p>開くビューの名前を指定します。 マクロ ビルダー] ウィンドウの [<strong>ビュー名</strong>] ボックス、[<strong>アクションの引数</strong>] セクションでは、現在のデータベース内のすべてのビューを示しています。 この引数は省略できません。 ライブラリ データベースで、 <strong>OpenView</strong>アクションを含むマクロを実行する場合は、最初の検索にライブラリ データベースで、し、[現在のデータベース内にこの名前のビューです。</p></td>
+<td><p>開くビューの名前を指定します。 [マクロビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>ビュー名</strong>] ボックスには、カレントデータベースのすべてのビューが表示されます。 この引数は省略できません。 ライブラリ データベースで "OpenView/ビューを開く" アクションが定義されているマクロを実行すると、この名前のビューが、最初にライブラリ データベースで検索され、次にカレント データベースで検索されます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>View</strong></p></td>
@@ -59,13 +59,13 @@ Access プロジェクトで、 **OpenView**アクションをデータシート
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このアクションの動作は、ナビゲーション ウィンドウでビューをダブルクリックした場合や、ナビゲーション ウィンドウでビューを右クリックして目的のコマンドをクリックした場合と同じです。
 
 > [!TIP]
-> - ナビゲーション ウィンドウからマクロのアクション行にビューをドラッグできます。 ビューをデータシート ビューで開く**OpenView**アクションが自動的に作成します。
-> - (ことを示すビューとレコードの数が影響を受ける)、ビューを実行するときに通常表示されるシステム メッセージが表示されない場合は、これらのメッセージの表示を抑制する**SetWarning**アクションを使用することができます。
+> - You can drag a view from the Navigation Pane to a macro action row. This automatically creates an **OpenView** action that opens the view in Datasheet view.
+> - If you don't want to display the system messages that normally appear when a view is run (indicating it is a view and showing how many records will be affected), you can use the **SetWarning** action to suppress the display of these messages.
 
-**OpenView**アクションを Visual Basic for Applications (VBA) のモジュールで実行するには、 **DoCmd**オブジェクトの**OpenView**メソッドを使用します。
+To run the **OpenView** action in a Visual Basic for Applications (VBA) module, use the **OpenView** method of the **DoCmd** object.
 

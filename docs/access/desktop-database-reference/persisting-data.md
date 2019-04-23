@@ -1,5 +1,5 @@
 ---
-title: データを保持する (デスクトップ データベース参照のアクセス)
+title: データを永続化する (Access デスクトップデータベースリファレンス)
 TOCTitle: Persisting data
 ms:assetid: cb8a32f7-2cdc-26ed-c6d4-dd93c1ac37ba
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250010(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f5788216a20e62cfc39fd2081f4f672bc4f9b808
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287602"
 ---
 # <a name="persisting-data"></a>データの永続化
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ポータブル コンピューター (ラップトップなど) の場合、接続状態と切断状態の両方で実行できるアプリケーションが必要です。ADO では、クライアント カーソル **Recordset** をディスクに保存し、後で再読み込みできる機能を開発者に提供することで、このような状況をサポートしています。
 
@@ -51,9 +51,9 @@ ADO で **Recordset** の保存および読み込みを行うには、ADO **Reco
 
 **CursorLocation** プロパティを **adUseServer** に設定して **Recordset** を保存する場合、その **Recordset** の更新機能は制限されます。プロバイダーの機能によって異なりますが、通常は単一テーブルに対する更新、挿入、および削除のみが許可されます。この設定では、 [Resync](resync-method-ado.md) メソッドも使用できません。
 
-*Destination*パラメーターには、OLE DB **IStream**インターフェイスをサポートする任意のオブジェクトを使用できますが、あるために、ASP**応答**オブジェクトに直接**レコード セット**を保存できます。
+*Destination* パラメーターには、OLE DB **IStream** インターフェイスをサポートするすべてのオブジェクトを指定できるため、**Recordset** を ASP **Response** オブジェクトに直接保存することができます。
 
-次の例では、 **Save** メソッドと **Open** メソッドを使用して **Recordset** を保存し、後で再び開きます。
+次の例では、**Save** メソッドと **Open** メソッドを使用して **Recordset** を保存し、後で再び開きます。
 
 ```vb 
  
@@ -104,7 +104,7 @@ ADO で **Recordset** の保存および読み込みを行うには、ADO **Reco
 'EndPersist 
 ```
 
-このセクションには、次のトピックが含まれています。
+このセクションでは、以下のトピックについて説明します。
 
 - [レコードセットの保存の詳細](more-about-recordset-persistence.md)
 

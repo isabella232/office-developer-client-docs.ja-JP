@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b9b506f40039ff91a6b1985606322fd86a9e7c0e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288933"
 ---
 # <a name="microsoft-ole-db-provider-for-oracle"></a>Microsoft OLE DB Provider for Oracle
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 Microsoft OLE DB Provider for Oracle を使用すると、ADO から Oracle データベースにアクセスできます。
 
 ## <a name="connection-string-parameters"></a>接続文字列のパラメーター
 
-このプロバイダーに接続するには、*ConnectionString* プロパティの [Provider](connectionstring-property-ado.md) 引数を次のように設定します。
+このプロバイダーに接続するには、[ConnectionString](connectionstring-property-ado.md) プロパティの *Provider* 引数を次のように設定します。
 
 ```vb 
  

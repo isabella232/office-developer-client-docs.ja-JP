@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e7c87acd433df4a303c1e6a15a60184cadf994c3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282465"
 ---
 # <a name="address-book-navigation-buttons"></a>アドレス帳の移動ボタン
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-アドレス帳アプリケーションでは、web ページの下部にあるナビゲーション ボタンが表示されます。 ナビゲーション ボタンを使ってデータの最初または最後の行、あるいは現在の行の前後にある行を選択することにより、HTML のグリッド表示内でデータ間を移動できます。
+アドレス帳アプリケーションでは、web ページの下部にあるナビゲーションボタンが表示されます。 ナビゲーション ボタンを使ってデータの最初または最後の行、あるいは現在の行の前後にある行を選択することにより、HTML のグリッド表示内でデータ間を移動できます。
 
 ## <a name="navigation-sub-procedures"></a>ナビゲーションのサブ プロシージャ
 
-アドレス帳アプリケーションは、ユーザーが、**最初**、**次****前**、および**最後**のボタンのデータを移動する] をクリックしてできるようにするいくつかの手順を説明します。
+Address Book アプリケーションには、ユーザーが [First]、[Next]、[Previous]、および [Last] の各ボタンをクリックしてデータ間を移動できるようにする複数のプロシージャが含まれています。
 
-たとえば、最初の VBScript をアクティブに**最初**のボタンをクリックすると\_OnClick Sub プロシージャです。 プロシージャは、データの現在の選択範囲の最初の行では、 [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-rds.md)メソッドを実行します。 アクティブに最後の**最後**のボタンをクリックすると\_OnClick Sub プロシージャは、データの最後の行の現在の選択範囲を作成、 [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-rds.md)メソッドを呼び出します。 他のナビゲーション ボタンは、同様の方法で動作します。
+たとえば、**最初**のボタンをクリックすると、VBScript\_の最初の OnClick Sub プロシージャがアクティブになります。 The procedure executes a [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) method, which makes the first row of data the current selection. **最後**のボタンをクリックすると\_、 [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-rds.md)メソッドが呼び出され、その最後の行のデータが現在の選択範囲になる直前の OnClick Sub プロシージャがアクティブになります。 The remaining navigation buttons work in a similar fashion.
 
 ```vb 
  

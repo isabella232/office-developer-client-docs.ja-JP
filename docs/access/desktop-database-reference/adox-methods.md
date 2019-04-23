@@ -1,5 +1,5 @@
 ---
-title: ADOX メソッド (デスクトップ データベース参照のアクセス)
+title: ADOX メソッド (Access デスクトップデータベースリファレンス)
 TOCTitle: ADOX methods
 ms:assetid: 1a2eed52-2b09-e528-2cdc-134df3c9441f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248947(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 40c4ca85e28813f9827d959ff202e0036e379e96
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270008"
 ---
 # <a name="adox-methods"></a>ADOX のメソッド
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 <br/>
 
@@ -33,35 +33,35 @@ ms.locfileid: "28721718"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="append-method-adox-columns.md">(列) を追加します。</a></p></td>
+<td><p><a href="append-method-adox-columns.md">Append メソッド (ADOX Columns)</a></p></td>
 <td><p>新しい <strong>Column</strong> オブジェクトを <strong>Columns</strong> コレクションに追加します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="append-method-adox-groups.md">(グループ) を追加します。</a></p></td>
+<td><p><a href="append-method-adox-groups.md">Append メソッド (ADOX Groups)</a></p></td>
 <td><p>新しい <strong>Group</strong> オブジェクトを <strong>Groups</strong> コレクションに追加します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="append-method-adox-indexes.md">(インデックス) を追加します。</a></p></td>
+<td><p><a href="append-method-adox-indexes.md">Append メソッド (ADOX Indexes)</a></p></td>
 <td><p>新しい <strong>Index</strong> オブジェクトを <strong>Indexes</strong> コレクションに追加します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="append-method-adox-keys.md">(キー) を追加します。</a></p></td>
+<td><p><a href="append-method-adox-keys.md">Append メソッド (ADOX Keys)</a></p></td>
 <td><p>新しい <strong>Key</strong> オブジェクトを <strong>Keys</strong> コレクションに追加します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="append-method-adox-procedures.md">(プロシージャ) を追加します。</a></p></td>
+<td><p><a href="append-method-adox-procedures.md">Append メソッド (ADOX Procedures)</a></p></td>
 <td><p>新しい <strong>Procedure</strong> オブジェクトを <strong>Procedures</strong> コレクションに追加します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="append-method-adox-tables.md">(テーブル) を追加します。</a></p></td>
+<td><p><a href="append-method-adox-tables.md">Append メソッド (ADOX Tables)</a></p></td>
 <td><p>新しい <strong>Table</strong> オブジェクトを <strong>Tables</strong> コレクションに追加します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="append-method-adox-users.md">(ユーザー) を追加します。</a></p></td>
+<td><p><a href="append-method-adox-users.md">Append メソッド (ADOX Users)</a></p></td>
 <td><p>新しい <strong>User</strong> オブジェクトを <strong>Users</strong> コレクションに追加します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="append-method-adox-views.md">(ビュー) を追加します。</a></p></td>
+<td><p><a href="append-method-adox-views.md">Append メソッド (ADOX Views)</a></p></td>
 <td><p>新しい <strong>View</strong> オブジェクトを <strong>Views</strong> コレクションに追加します。</p></td>
 </tr>
 <tr class="odd">
@@ -70,18 +70,18 @@ ms.locfileid: "28721718"
 </tr>
 <tr class="even">
 <td><p><a href="create-method-adox.md">Create</a></p></td>
-<td><p>新規カタログを作成します。</p></td>
+<td><p>新しいカタログを作成します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="delete-method-adox-collections.md">Delete</a></p></td>
 <td><p>コレクションからオブジェクトを削除します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="getobjectowner-method-adox.md">GetObjectOwner</a></p></td>
+<td><p><a href="getobjectowner-method-adox.md">getobjectowner メソッド</a></p></td>
 <td><p>カタログ内のオブジェクトの所有者を返します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="getpermissions-method-adox.md">GetPermissions</a></p></td>
+<td><p><a href="getpermissions-method-adox.md">getpermissions メソッド</a></p></td>
 <td><p>オブジェクトに対するグループまたはユーザーの権限を返します。</p></td>
 </tr>
 <tr class="even">

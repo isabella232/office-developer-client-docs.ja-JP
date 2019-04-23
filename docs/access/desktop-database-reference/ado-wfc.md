@@ -1,5 +1,5 @@
 ---
-title: Windows Foundation クラス (ADO/WFC) 用の ADO
+title: Windows Foundation Classes 用の ado (ado/WFC)
 TOCTitle: ADO/WFC
 ms:assetid: 73206be8-6515-79e4-e904-cc2d0d59411d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249468(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: df9def320274df0eb4636aa237deb566dd5725b7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281723"
 ---
 # <a name="adowfc"></a>ADO/WFC
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 Windows Foundation Classes (ADO/WFC) 用の ADO は、ADO のイベント モデルを基に構築されており、簡素化されたアプリケーション プログラミング インターフェイスを提供します。通常、ADO/WFC は、ADO イベントを取得してイベント パラメーターを単一のイベント クラスに統合してから、イベント ハンドラーを呼び出します。
 
@@ -62,12 +62,9 @@ Windows Foundation Classes (ADO/WFC) 用の ADO は、ADO のイベント モデ
             new ConnectionEventHandler(this.onConnectComplete); 
     ```
     
-    
+    唯一の引数は、目的のクラス (**this**) と、そのクラス内のメソッド (**onConnectComplete**) への参照です。
 
-唯一の引数は、目的のクラス (**this**) と、そのクラス内のメソッド (**onConnectComplete**) への参照です。
-
-
-3.  特定の種類のイベントを処理するためのハンドラーの一覧に、イベント ハンドラーを追加します。 メソッドを次のように名前を使用 **addOn。 EventName*(*ハンドラー*)。
+3.  Add your event handler to a list of handlers designated to process a particular type of event. メソッドには、**addOn * * * EventName*(*handler*) などの名前を付けて使用します。
 
 4.  ADO/WFC では、すべての ADO のイベント ハンドラーが内部的に実装されています。このため、 **Connection** または **Recordset** の操作によって発生するイベントは、ADO/WFC のイベント ハンドラーによって取得されます。 ADO/WFC のイベント ハンドラーは、ADO の **ConnectionEvent** のパラメーターを ADO/WFC の **ConnectionEvent** クラスのインスタンスとして、また ADO の **RecordsetEvent** のパラメーターを ADO/WFC の **RecordsetEvent** クラスのインスタンスとして渡します。これらの ADO/WFC クラスは、ADO イベントのパラメーターを統合したものです。つまり、各 ADO/WFC クラスには、ADO の **ConnectionEvent** または **RecordsetEvent** の全メソッドの一意のパラメーターごとに 1 つのデータ メンバーが含まれます。
 
@@ -78,9 +75,9 @@ Windows Foundation Classes (ADO/WFC) 用の ADO は、ADO のイベント モデ
         public void onConnectComplete(Object sender,ConnectionEvent e) 
     ```
     
-    ([Connection](connection-object-ado.md)や[Recordset](recordset-object-ado.md))、イベントを送信するオブジェクトの種類は、最初の引数と 2 番目の引数は、ADO/WFC のイベント オブジェクト (**ConnectionEvent**または**RecordsetEvent**)。 このイベント ハンドラーのシグネチャは、ADO イベントよりも単純です。 ただし、イベントに適用されるパラメーター、および応答の方法を理解するには、ADO のイベント モデルを理解しておく必要があります。
+    最初の引数は、イベントを送信したオブジェクトの型 ([Connection](connection-object-ado.md) または [Recordset](recordset-object-ado.md))、2 番目の引数は、ADO/WFC のイベント オブジェクト (**ConnectionEvent** または **RecordsetEvent**) です。 このイベント ハンドラーのシグネチャは、ADO イベントよりも単純です。 ただし、イベントに適用されるパラメーター、および応答の方法を理解するには、ADO のイベント モデルを理解しておく必要があります。
 
 6.  作成したイベント ハンドラーから、ADO イベントの ADO/WFC ハンドラーに制御が戻ります。ADO/WFC は、関係する ADO/WFC のイベント データ メンバーを ADO のイベント パラメーターにコピーし、ADO のイベント ハンドラーに制御が戻ります。
 
-7.  終了したら ADO/WFC のイベント ハンドラーの一覧から、ハンドラーを削除する処理をします。 メソッドを次のように名前を使用 **removeOn。 EventName*(*ハンドラー*)。
+7.  When you are finished processing, remove your handler from the list of ADO/WFC event handlers. メソッドには、**removeon * * * EventName*(*handler*) などの名前を付けて使用します。
 

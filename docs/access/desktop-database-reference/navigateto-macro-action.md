@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 1c37e798e0624a5655b63a76332073e5b57c0823
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288603"
 ---
 # <a name="navigateto-macro-action"></a>NavigateTo マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**移動**操作を使用するには、ナビゲーション ウィンドウでデータベース オブジェクトの表示を制御します。 たとえば、データベース オブジェクトの分類方法を変更したり、フィルターを適用して特定のデータベース オブジェクトだけを表示したりできます。
+You can use the **NavigateTo** action to control the display of database objects in the Navigation Pane. For example, you can change how the database objects are categorized, and you can filter the objects so that only certain ones are displayed.
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**移動**操作では、次の引数があります。
+"NavigateTo/移動先" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -45,8 +45,8 @@ ms.locfileid: "28704141"
 <td><p>必ず指定します。ナビゲーション ウィンドウにオブジェクトを表示する際に使用するカテゴリを指定します。[<strong>カテゴリ</strong>] ボックスで [<strong>オブジェクトの種類</strong>]、[<strong>テーブルとビュー</strong>]、[<strong>更新日</strong>]、[<strong>作成日</strong>]、または [<strong>ユーザー設定</strong>] をクリックします。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>グループ</strong></p></td>
-<td><p>省略可能。 カテゴリ内のオブジェクト、<strong>グループ</strong>引数の制限は、ナビゲーション ウィンドウに表示されます。 引数<strong>Group</strong>を空白のままにする場合、ナビゲーション ウィンドウには、引数<strong>Category</strong>で指定した条件によって分類されるすべてのデータベース オブジェクトが表示されます。 さまざまな<strong>カテゴリ</strong>の引数の有効な<strong>グループ</strong>の引数の例としては、次の表に表示されます。</p></td>
+<td><p><strong>Group</strong></p></td>
+<td><p>省略可能です。 "Group/グループ" 引数は、ナビゲーション ウィンドウ内のカテゴリに表示されるオブジェクトを制限します。 引数<strong>Group</strong>を省略すると、引数<strong>Category</strong>に指定した条件によって分類されたすべてのデータベースオブジェクトがナビゲーションウィンドウに表示されます。 次の表は、さまざまな "Category/カテゴリ" 引数で使用できる有効な "Group/グループ" 引数の例を示しています。</p></td>
 </tr>
 </tbody>
 </table>
@@ -54,9 +54,9 @@ ms.locfileid: "28704141"
 
 ## <a name="remarks"></a>注釈
 
-- このアクションは、ナビゲーション ウィンドウのタイトル バーからカテゴリとグループを選択することに似ています。
+- このアクションの動作は、ナビゲーションウィンドウのタイトルバーからカテゴリとグループを選択した場合と同じです。
 
-- **グループ**の有効な引数は、どの**カテゴリ**の引数の使用によって異なります。 **グループ**の無効な引数を入力すると、エラー メッセージが表示されます。次の表には、各**カテゴリ**の引数に有効な**グループ**の引数の例が含まれています。
+- Valid **Group** arguments depend on which **Category** argument is used. If you enter an invalid **Group** argument, an error message appears.The following table contains examples of valid **Group** arguments for each **Category** argument.
     
   <table>
   <colgroup>
@@ -93,9 +93,9 @@ ms.locfileid: "28704141"
   </tbody>
   </table>
 
-- VBA モジュールでは、**移動**操作を実行するには、 **DoCmd**オブジェクトの**NavigateTo**メソッドを使用します。
+- To run the **NavigateTo** action in a VBA module, use the **NavigateTo** method of the **DoCmd** object.
 
 > [!NOTE]
-> (**すべてのテーブル**、**すべての Access オブジェクト**、または**すべての日付**など) のカテゴリの最上位レベルに移動するにする必要があります、グループ引数を指定しません。 などの引数**Category** **オブジェクトの種類**がある場合は、エラー**グループ**引数の結果として**すべての Access オブジェクト**を入力します。
+> To navigate to the top level of a category (for example, **All Tables**, **All Access Objects**, or **All Dates**), you must leave the Group argument blank. For example, when the **Category** argument is **Object Type**, entering **All Access Objects** as a **Group** argument results in an error.
 
 

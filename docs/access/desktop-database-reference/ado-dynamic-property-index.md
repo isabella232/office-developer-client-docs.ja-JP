@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2bfe788923d623300edac28f0f27534b3ffd8b32
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283402"
 ---
 # <a name="ado-dynamic-property-index"></a>ADO の動的プロパティ インデックス
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 データ プロバイダー、サービス プロバイダー、およびサービス コンポーネントでは、開いていない **Connection** オブジェクトおよび [Recordset](connection-object-ado.md) オブジェクトの [Properties](recordset-object-ado.md) コレクションに動的プロパティを追加できます。これらのオブジェクトが開いている場合は、任意のプロバイダーでも追加プロパティを挿入できます。これらのプロパティの一部は、「 [ADO の動的プロパティ](ado-dynamic-properties.md)」の一覧に示されています。「[付録 A: プロバイダー](appendix-a-providers.md)」には、特定のプロバイダーごとに、さらに詳細な一覧が示されています。
 
@@ -32,13 +32,13 @@ ms.locfileid: "28703553"
 
 - 「Supported OLE DB Properties of the Remoting Provider」 （英語)
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 表中で使用されている番号の意味は、次のとおりです。
 
 (1) このプロパティは、ブール型 (Boolean) のフラグで、指定したインターフェイスを使用するかどうかを示します。等価の OLE DB プロパティが存在する場合は、その名前を示します。
 
-(2)、ADO のブックマークを「設定」プロパティは、内部的に生成の下位互換性を維持して、DBPROP の OLE DB プロパティにマップされている\_クラス。 これは、ADO プロパティ IRowsetLocate に対応するプロパティと同じです。
+(2) "Bookmarkable" ADO プロパティは、下位互換性のために内部的に生成され、OLE DB プロパティの\_DBPROP IROWSETLOCATE にマップされます。 これは、ADO プロパティ IRowsetLocate に対応するプロパティと同じです。
 
 (3) ADO プロパティ名 "Hidden Columns" は、OLE DB プロパティ名の "説明" 欄では "Hidden Columns Count" となっています。
 
@@ -149,7 +149,7 @@ ms.locfileid: "28703553"
 <td><p>DBPROP_INIT_LCID</p></td>
 </tr>
 <tr class="odd">
-<td><p>Location</p></td>
+<td><p>場所</p></td>
 <td><p>DBPROP_INIT_LOCATION</p></td>
 </tr>
 <tr class="even">
@@ -338,7 +338,7 @@ ms.locfileid: "28703553"
 </tr>
 <tr class="even">
 <td><p>IChapteredRowset</p></td>
-<td><p>(1)</p></td>
+<td><p>スナップショット</p></td>
 </tr>
 <tr class="odd">
 <td><p>IColumnsInfo</p></td>
@@ -353,8 +353,8 @@ ms.locfileid: "28703553"
 <td><p>DBPROP_ICONNECTIONPOINTCONTAINER (1)</p></td>
 </tr>
 <tr class="even">
-<td><p>IConvertType</p></td>
-<td><p>(1)</p></td>
+<td><p>iconverttype</p></td>
+<td><p>スナップショット</p></td>
 </tr>
 <tr class="odd">
 <td><p>ILockBytes</p></td>
@@ -365,12 +365,12 @@ ms.locfileid: "28703553"
 <td><p>DBPROP_IROWSET (1)</p></td>
 </tr>
 <tr class="odd">
-<td><p>IDBAsynchStatus</p></td>
+<td><p>idbas/chstatus</p></td>
 <td><p>DBPROP_IDBASYNCHSTATUS (1)</p></td>
 </tr>
 <tr class="even">
-<td><p>IParentRowset</p></td>
-<td><p>(1)</p></td>
+<td><p>iparentrowset</p></td>
+<td><p>スナップショット</p></td>
 </tr>
 <tr class="odd">
 <td><p>IRowsetChange</p></td>
@@ -378,7 +378,7 @@ ms.locfileid: "28703553"
 </tr>
 <tr class="even">
 <td><p>IRowsetExactScroll</p></td>
-<td><p>(1)</p></td>
+<td><p>スナップショット</p></td>
 </tr>
 <tr class="odd">
 <td><p>IRowsetFind</p></td>
@@ -402,7 +402,7 @@ ms.locfileid: "28703553"
 </tr>
 <tr class="even">
 <td><p>IRowsetResynch</p></td>
-<td><p>(1)</p></td>
+<td><p>スナップショット</p></td>
 </tr>
 <tr class="odd">
 <td><p>IRowsetScroll</p></td>
@@ -614,7 +614,7 @@ ms.locfileid: "28703553"
 </tr>
 <tr class="odd">
 <td><p>Private1</p></td>
-<td><p>(5)</p></td>
+<td><p>5</p></td>
 </tr>
 <tr class="even">
 <td><p>Quick Restart</p></td>

@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 55af2ce884b26b4c3df219e7d1986e7dc2e4c8ce
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288281"
 ---
 # <a name="openvisualbasicmodule-macro-action"></a>OpenVisualBasicModule マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-開くには、指定された Visual Basic for Applications (VBA) モジュールは、指定されたプロシージャでは、 **OpenVisualBasicModule**アクションを使用できます。 指定できるのは、Sub プロシージャ、Function プロシージャ、およびイベント プロシージャです。
+You can use the **OpenVisualBasicModule** action to open a specified Visual Basic for Applications (VBA) module at a specified procedure. This can be a Sub procedure, a Function procedure, or an event procedure.
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
+> このアクションは、データベースが信頼されていない場合には許可されません。 
 
 ## <a name="setting"></a>設定値
 
-**OpenVisualBasicModule**アクションには、次の引数があります。
+"OpenVisualBasicModule/VisualBasicモジュールを開く" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -45,7 +45,7 @@ ms.locfileid: "28701698"
 <tbody>
 <tr class="odd">
 <td><p><strong>Module Name/モジュール名</strong></p></td>
-<td><p>開くモジュールの名前。 できますこの引数を指定しない場合は、プロシージャがデータベース内のすべての標準モジュールを検索し、そのプロシージャに適切なモジュールを開きます。 ライブラリ データベースで、 <strong>OpenVisualBasicModule</strong>アクションを含むマクロを実行する場合は、最初の検索にライブラリ データベースで、し、[現在のデータベース内に同じ名前のモジュールです。</p></td>
+<td><p>開くモジュールの名前を指定します。 データベースのすべての標準モジュールでプロシージャを検索して、そのプロシージャに適切なモジュールを開く場合は、この引数を指定しません。 ライブラリ データベースで "OpenVisualBasicModule/VisualBasicモジュールを開く" アクションが定義されているマクロを実行すると、この名前のモジュールが、最初にライブラリ データベースで検索され、次にカレント データベースで検索されます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Procedure Name/プロシージャ名</strong></p></td>
@@ -55,12 +55,12 @@ ms.locfileid: "28701698"
 </table>
 
 > [!NOTE]
-> **モジュール名**や**プロシージャ名**のいずれかの引数に有効な名前を入力してください。
+> "Module Name/モジュール名" 引数または有効な "プロシージャ名" 引数のいずれかに有効な名前を指定する必要があります。
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**モジュール名**の引数は、**プロシージャ名**の引数を指定することによって、イベント プロシージャを開くには、このアクションを使用できます。 などを注文フォームの [PrintInvoice] ボタンの**Click**イベント プロシージャを開くには、**モジュール名**の引数を**Form.Orders**に設定し、**プロシージャ名**の引数を設定**PrintInvoice\_をクリックして**。 フォームまたはレポートが、フォームまたはレポートのイベント プロシージャを表示するには、開く必要があります。
+You can use this action to open an event procedure by specifying the **Module Name** argument and the **Procedure Name** argument. たとえば、フォームの注文で **[** printinvoice] ボタンの click イベントプロシージャを開くには、" **Module name/名前**" 引数を [フォームに設定する] を指定し、 **"** **プロシージャ名**" 引数を**\_printinvoice クリック**に設定します。 To view the event procedure for a form or report, the form or report must be open.
 
 同様に、クラス モジュールでプロシージャを開くには、モジュール名を指定する必要がありますが、そのクラス モジュールを開いておく必要はありません。
 
@@ -69,7 +69,7 @@ ms.locfileid: "28701698"
 このアクションの動作は、ナビゲーション ウィンドウでモジュールを右クリックして [ **デザイン ビュー**] をクリックした場合と同じです。このアクションを使用すると、プロシージャ名を指定して、データベースの標準モジュールで検索することもできます。
 
 > [!TIP]
-> ナビゲーション ウィンドウでモジュールを選択し、マクロのアクション行にドラッグできます。 宣言セクションには、モジュールを開く**OpenVisualBasicModule**アクションが自動的に作成します。
+> You can select a module in the Navigation Pane and drag it to a macro action row. This automatically creates an **OpenVisualBasicModule** action that opens the module to the Declarations section.
 
-VBA モジュールでは、 **OpenVisualBasicModule**アクションを実行するには、 **DoCmd**オブジェクトの**OpenModule**メソッドを使用します。
+To run the **OpenVisualBasicModule** action in a VBA module, use the **OpenModule** method of the **DoCmd** object.
 

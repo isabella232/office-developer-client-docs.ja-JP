@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8be93b0b7e4b32e3c040e871ff7d97a95f1e247e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282853"
 ---
-# <a name="adcpropupdatecriteriaenum"></a>ADCPROP\_UPDATECRITERIA\_列挙型
+# <a name="adcpropupdatecriteriaenum"></a>ADCPROP\_UPDATECRITERIA\_列挙
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Recordset](recordset-object-ado.md) オブジェクトを使用してデータ ソース行の共有的更新を行う際に、競合の検出に使用するフィールドを表します。
 
@@ -39,30 +39,30 @@ ms.locfileid: "28704309"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>adCriteriaAllCols</strong></p></td>
-<td><p>1</p></td>
+<td><p><strong>adの基準 aallcols</strong></p></td>
+<td><p>1-d</p></td>
 <td><p>データ ソース行の列が変更された場合に競合を検出します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adCriteriaKey</strong></p></td>
-<td><p>0</p></td>
+<td><p><strong>ad基準 akey</strong></p></td>
+<td><p>.0</p></td>
 <td><p>データ ソース行のキー列が変更された場合、つまり行が削除された場合に競合を検出します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adCriteriaTimeStamp</strong></p></td>
-<td><p>3</p></td>
+<td><p><strong>(adme) スタンプ</strong></p></td>
+<td><p>1/3</p></td>
 <td><p>データ ソース行のタイムスタンプが変更された場合、つまり <strong>Recordset</strong> を取得した後に行にアクセスがあった場合に競合を検出します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adCriteriaUpdCols</strong></p></td>
-<td><p>2</p></td>
+<td><p><strong>adます。</strong></p></td>
+<td><p>pbm-2</p></td>
 <td><p><strong>Recordset</strong> の更新されたフィールドに対応するデータ ソース行の列が変更された場合に競合を検出します。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC に相当
+### <a name="adowfc-equivalent"></a>ADO/WFC と同等
 
 パッケージ: **com.ms.wfc.data**
 
@@ -77,16 +77,16 @@ ms.locfileid: "28704309"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.AdcPropUpdateCriteria.ALLCOLS</p></td>
+<td><p>AdoEnums AdcPropUpdateCriteria</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.AdcPropUpdateCriteria.KEY</p></td>
+<td><p>AdoEnums</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.AdcPropUpdateCriteria.TIMESTAMP</p></td>
+<td><p>AdoEnums</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.AdcPropUpdateCriteria.UPDCOLS</p></td>
+<td><p>AdoEnums AdcPropUpdateCriteria</p></td>
 </tr>
 </tbody>
 </table>

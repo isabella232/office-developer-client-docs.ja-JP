@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: b13d21ef1bd8a95587eb78cd448f19f9fd0c24c0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288365"
 ---
 # <a name="openfunction-macro-action"></a>OpenFunction マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-Access プロジェクトで、ユーザー定義関数をデータシート ビュー、インライン関数のデザイン ビュー、ビューの SQL テキスト エディターで開くに**OpenFunction**アクションを使用することができます (スカラーのまたはテーブル ユーザー定義関数)、または印刷プレビューします。 このアクションでは、データシート ビューで開くと、ユーザー定義関数を実行します。 また、ユーザー定義関数に対してデータ入力モードを選択して、ユーザー定義関数を表示するレコードを制限できます。
+In an Access project, you can use the **OpenFunction** action to open a user-defined function in Datasheet view, inline function Design view, SQL Text Editor view (for a scalar or table user-defined function), or Print Preview. This action runs the user-defined function when opened in Datasheet view. You can also select the data entry mode for the user-defined function and restrict the records that the user-defined function displays.
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
+> このアクションは、データベースが信頼されていない場合には許可されません。 
 
 ## <a name="setting"></a>設定値
 
-**OpenFunction**アクションには、次の引数があります。
+"OpenFunction/関数を開く" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -45,7 +45,7 @@ Access プロジェクトで、ユーザー定義関数をデータシート ビ
 <tbody>
 <tr class="odd">
 <td><p><strong>Function Name/関数名</strong></p></td>
-<td><p>開くユーザー定義関数の名前。 マクロ ビルダー] ウィンドウの [<strong>関数名</strong>] ボックス、[<strong>アクションの引数</strong>] セクションでは、現在のデータベースですべてのユーザー定義関数を示しています。 これは、必要な引数です。ライブラリ データベースで<strong>Function</strong>アクションが定義されたマクロを実行すると、Microsoft Access は最初ライブラリ データベースで、[し、[現在のデータベース内にこの名前の関数を検索します。</p></td>
+<td><p>開くユーザー定義関数の名前を指定します。 [マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>関数名</strong>] ボックスには、カレント データベース内のユーザー定義関数がすべて表示されます。 これは必須の引数です。ライブラリデータベースで<strong>function</strong>アクションを含むマクロを実行すると、最初にライブラリデータベースでこの名前の関数が検索され、次にカレントデータベースで検索されます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>View</strong></p></td>
@@ -59,15 +59,15 @@ Access プロジェクトで、ユーザー定義関数をデータシート ビ
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このアクションの動作は、ナビゲーション ウィンドウでユーザー定義関数をダブルクリックした場合や、ナビゲーション ウィンドウで関数を右クリックしてビューをクリックした場合と同じです。
 
-ユーザー定義関数を開いているときに、デザイン ビューに切り替え、ユーザー定義関数に対して**データ モード**引数の設定を削除します。 再びデータシート ビューに切り替えても、元の設定には戻りません。
+Switching to Design view while the user-defined function is open removes the **Data Mode** argument setting for the user-defined function. This setting is not in effect, even if the user returns to Datasheet view.
 
 > [!TIP]
-> - ナビゲーション ウィンドウでユーザー定義関数を選択し、マクロのアクション行にドラッグできます。 **OpenFunction**操作、ユーザー定義関数をデータシート ビューに表示を自動的に作成されます。
-> - ユーザー定義関数を実行するときに表示されるシステム メッセージを表示したくない場合 (ユーザー定義関数を示す、レコードの数が影響を受けるアクションを使って、 **SetWarning**の表示を非表示にするこれらのメッセージです。
+> - You can select a user-defined function in the Navigation Pane and drag it to a macro action row. This automatically creates an **OpenFunction** action that opens the user-defined function in Datasheet view.
+> - If you don't want to display the system messages that normally appear when a user-defined function is run (indicating it is a user-defined function and showing how many records will be affected), you can use the **SetWarning** action to suppress the display of these messages.
 
-**OpenFunction**アクションを Visual Basic for Applications (VBA) のモジュールで実行するには、 **DoCmd**オブジェクトの**OpenFunction**メソッドを使用します。
+To run the **OpenFunction** action in a Visual Basic for Applications (VBA) module, use the **OpenFunction** method of the **DoCmd** object.
 

@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 3294efe5ea1ab0f82be19f5c64a51287cc4df9b7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288344"
 ---
 # <a name="openquery-macro-action"></a>OpenQuery マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **OpenQuery** アクションを使用すると、選択クエリまたはクロス集計クエリをデータシート ビュー、デザイン ビュー、印刷プレビューのいずれかで開くことができます。このアクションでは、アクション クエリが実行されます。クエリを開くときのデータ入力モードを選択することもできます。
 
 > [!NOTE]
 > [!メモ] このアクションは、Access データベース (.mdb または .accdb) 環境でのみ使用できます。Access プロジェクト (.adp) 環境で使用する場合は、 **OpenView** アクション、 **OpenStoredProcedure** アクション、または **OpenFunction** アクションのトピックを参照してください。
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
 **OpenQuery** アクションの引数は次のとおりです。
 
@@ -59,9 +59,9 @@ ms.locfileid: "28709559"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**View/ビュー** 引数に [ **データシート ビュー**] を指定すると、選択クエリ、クロス集計クエリ、ユニオン クエリ、または **ReturnsRecords/レコード表示** プロパティが [ **はい** に設定されているパススルー クエリの場合は、クエリの結果セットが表示されます。一方、アクション クエリ、データ定義クエリ、または **ReturnsRecords /レコード表示** プロパティが [ **いいえ** ] に設定されているパススルー クエリの場合は、そのクエリが実行されます。
+**View/ビュー**引数に [**データシート ビュー**] を指定すると、選択クエリ、クロス集計クエリ、ユニオン クエリ、または **ReturnsRecords/レコード表示**プロパティが [**はい** に設定されているパススルー クエリの場合は、クエリの結果セットが表示されます。一方、アクション クエリ、データ定義クエリ、または**ReturnsRecords /レコード表示**プロパティが [**いいえ**] に設定されているパススルー クエリの場合は、そのクエリが実行されます。
 
 **OpenQuery** アクションの動作は、ナビゲーション ウィンドウでクエリをダブルクリックした場合や、ナビゲーション ウィンドウでクエリを右クリックしてビューをクリックした場合と同じです。このアクションにより、別のオプションも選択できます。
 

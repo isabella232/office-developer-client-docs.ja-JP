@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3e879df56cbf3c35aae67ece0e4c464bc7587e63
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287770"
 ---
 # <a name="parentcatalog-property-example-vc"></a>ParentCatalog プロパティの使用例 (VC++)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 次のコードでは、テーブルをカタログに追加する前に プロバイダー に固有のプロパティにアクセスするための、[ParentCatalog](parentcatalog-property-adox.md) プロパティの使用方法を示します。このプロパティは、Microsoft Jet データベース内に AutoIncrement フィールドを作成する AutoIncrement です。
 

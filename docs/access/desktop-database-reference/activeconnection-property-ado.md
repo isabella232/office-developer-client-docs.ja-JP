@@ -12,35 +12,35 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 037ae753f427c42f147972170dbb2e645b260623
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282531"
 ---
 # <a name="activeconnection-property-ado"></a>ActiveConnection プロパティ (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 指定された [Command](connection-object-ado.md) オブジェクト、 [Recordset](command-object-ado.md) オブジェクト、または [Record](recordset-object-ado.md) オブジェクトが現在属している [Connection](record-object-ado.md) オブジェクトを示します。
 
-## <a name="settings-and-return-values"></a>設定値および戻り値
+## <a name="settings-and-return-values"></a>設定値と戻り値
 
 接続が閉じている場合には接続の定義が格納された文字列型 ( **String** ) の値を、接続が開いている場合には現在の **Connection** オブジェクトが格納されたバリアント型 ( **Variant** ) の値を設定または取得します。既定は、Null オブジェクト参照です。 [ConnectionString](connectionstring-property-ado.md) プロパティの説明を参照してください。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **ActiveConnection** プロパティを使用すると、指定された **Command** オブジェクトを実行する、または指定された **Recordset** を開く **Connection** オブジェクトを調べることができます。
 
 ### <a name="command"></a>Command
 
-**Command** オブジェクトの場合、 **ActiveConnection** プロパティは値の設定も取得も可能です。
+**Command** オブジェクトの場合、**ActiveConnection** プロパティは値の設定も取得も可能です。
 
 開いている [Connection](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) オブジェクトまたは有効な接続文字列をこのプロパティに設定する前に、 **Command** オブジェクトに対して **Execute** を呼び出そうとすると、エラーが発生します。
 
-**Microsoft Visual Basic**: 現在の**接続**からの**コマンド**オブジェクトの関連付けを解除し、プロバイダーからのデータに関連付けられているリソースを解放すると、 **ActiveConnection**プロパティを*Nothing*に設定します。ソースです。 その後は、その **Command** オブジェクトを同じまたは別の **Connection** オブジェクトに関連付けることができます。 一部のプロバイダーを使用すると、最初のプロパティを*Nothing*に設定することがなく 1 つの**接続**から、別のプロパティ設定を変更できます。
+**Microsoft Visual Basic**: **ActiveConnection**プロパティを*Nothing*に設定すると、現在の**接続**から**Command**オブジェクトを切り離し、プロバイダーがデータに関連付けられているリソースを解放します。ソース. その後は、その **Command** オブジェクトを同じまたは別の **Connection** オブジェクトに関連付けることができます。 プロバイダーによっては、プロパティを*Nothing*に設定しなくても、ある接続から別の**接続**にプロパティ設定を変更することができます。
 
-**コマンド**オブジェクトの[Parameters](parameters-collection-ado.md)コレクションには、プロバイダーによって指定されたパラメーターが含まれています、 *Nothing*または別の**接続**オブジェクトは、 **ActiveConnection**プロパティを設定する場合、コレクションがクリアされます。 手動で[パラメーター](parameter-object-ado.md)オブジェクトを作成、使用して、**コマンド**オブジェクトの**Parameters**コレクションを設定する場合設定の**ActiveConnection**プロパティは*Nothing*または別の**接続**オブジェクトにまま**パラメーター**コレクションをそのままの状態です。
+**Command** オブジェクトの [Parameters](parameters-collection-ado.md) コレクションにプロバイダーから供給されたパラメーターが格納されている場合は、**ActiveConnection** プロパティを *Nothing* に設定したり、他の **Connection** オブジェクトに設定したりすると、コレクションがクリアされます。手作業で [Parameter](parameter-object-ado.md) オブジェクトを作成し、それを使用して **Command** オブジェクトの **Parameters** コレクションにデータを格納した場合は、**ActiveConnection** プロパティを *Nothing* や他の **Connection** オブジェクトに設定しても、**Parameters** コレクションはそのまま残されます。
 
 **Command** オブジェクトが関連付けられている **Connection** オブジェクトを閉じると、**ActiveConnection** プロパティが *Nothing* に設定されます。このプロパティに閉じている **Connection** オブジェクトを設定すると、エラーが発生します。
 
@@ -50,20 +50,20 @@ ms.locfileid: "28703203"
 
 このプロパティは、有効な **Connection** オブジェクトまたは有効な接続文字列に設定できます。この場合、プロバイダーが、この定義を使用して新しい **Connection** オブジェクトを作成し、接続を開きます。さらに、プログラマが **Connection** オブジェクトにアクセスして拡張エラー情報を取得したり、その他のコマンドを実行したりできるように、プロバイダーがこのプロパティを新しい **Connection** オブジェクトに設定する場合もあります。
 
-**Recordset**オブジェクトを開くに*は、 [Open](open-method-ado-recordset.md)メソッドの暗黙的*を使用する場合、 **ActiveConnection**プロパティは、引数の値を継承します。
+[Open](open-method-ado-recordset.md) メソッドの *ActiveConnection* 引数を使用して **Recordset** オブジェクトを開いた場合、**ActiveConnection** プロパティは引数の値を継承します。
 
-**Recordset** オブジェクトの **Source** プロパティを有効な **Command** オブジェクト変数に設定すると、 **Recordset** の **ActiveConnection** プロパティは、 **Command** オブジェクトの **ActiveConnection** プロパティの値を継承します。
+**Recordset** オブジェクトの **Source** プロパティを有効な **Command** オブジェクト変数に設定すると、**Recordset** の **ActiveConnection** プロパティは、**Command** オブジェクトの **ActiveConnection** プロパティの値を継承します。
 
-**リモート データ サービスの使用法**: クライアント側の Recordset オブジェクトで使用するとこのプロパティのみを接続文字列、または (Microsoft Visual Basic または Visual Basic、Scripting Edition) で*何も*します。
+**リモートデータサービスの使用法**: クライアント側の Recordset オブジェクトで使用されている場合、このプロパティは、接続文字列または (Microsoft visual basic または visual basic, Scripting Edition では) *Nothing*にのみ設定できます。
 
 ### <a name="record"></a>Record
 
-このプロパティは、 **Record** オブジェクトが閉じている場合には値の設定および取得が可能で、接続文字列または開いている **Connection** オブジェクトの参照を格納できます。 **Record** オブジェクトが開いている場合は値の取得のみ可能で、開いている **Connection** オブジェクトの参照が格納されています。
+このプロパティは、**Record** オブジェクトが閉じている場合には値の設定および取得が可能で、接続文字列または開いている **Connection** オブジェクトの参照を格納できます。**Record** オブジェクトが開いている場合は値の取得のみ可能で、開いている **Connection** オブジェクトの参照が格納されています。
 
-**Connection** オブジェクトは、URL から **Record** オブジェクトが開かれたときに暗黙的に作成されます。 既存の、開いている **Connection** オブジェクトで **Record** を開くには、 **Connection** オブジェクトをこのプロパティに代入するか、または **Connection** オブジェクトを [Open](open-method-ado-record.md) メソッド呼び出しのパラメーターとして使用します。 既存の**レコード**または[レコード セット](recordset-object-ado.md)から**レコード**を開く場合は、**レコード**または**レコード セット**オブジェクトの**接続**オブジェクトに自動的に関連付けられます。
+**Connection** オブジェクトは、URL から **Record** オブジェクトが開かれたときに暗黙的に作成されます。 既存の、開いている **Connection** オブジェクトで **Record** を開くには、 **Connection** オブジェクトをこのプロパティに代入するか、または **Connection** オブジェクトを [Open](open-method-ado-record.md) メソッド呼び出しのパラメーターとして使用します。 **record**を既存の**record**または[recordset](recordset-object-ado.md)から開いた場合は、そのレコードまたは**** **recordset**オブジェクトの**Connection**オブジェクトに自動的に関連付けられます。
 
 > [!NOTE]
-> [!メモ] http 体系を使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、[絶対と相対 Url](absolute-and-relative-urls.md)を参照してください。
+> [!メモ] http スキームを使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、「[絶対 url と相対 url](absolute-and-relative-urls.md)」を参照してください。
 
 
 

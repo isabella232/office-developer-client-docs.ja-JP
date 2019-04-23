@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b1d4f4777d904cd9078217e179bcebb31b7b6a1d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288323"
 ---
 # <a name="openschema-method-example-vb"></a>OpenSchema メソッドの使用例 (VB)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 この例では、[OpenSchema](openschema-method-ado.md) メソッドを使用して、***Pubs*** データベース内の各テーブルの名前と型を表示します。
 
@@ -78,7 +78,7 @@ End Sub
 
 <br/>
 
-テーブルを指定する次の使用例\_ **OpenSchema**メソッド***に引数***の型クエリの制約です。 その結果、 ***Pubs***データベースで指定されたビューのスキーマ情報のみが返されます。 その後、この例では各テーブルの名前と型を表示します。
+次の使用例は\_、 **OpenSchema** method ***Criteria***引数に、テーブルの種類のクエリ制約を指定します。 結果として、***Pubs*** データベースで指定されたビューのスキーマ情報のみが返されます。 その後、この例では各テーブルの名前と型を表示します。
 
 ```vb 
  

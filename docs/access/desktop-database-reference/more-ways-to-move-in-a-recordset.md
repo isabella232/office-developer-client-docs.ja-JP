@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2d10a493aac39934a047c6fa311233fd6c9fac4e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288863"
 ---
 # <a name="more-ways-to-move-in-a-recordset"></a>レコードセットでのその他の移動方法
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **MoveFirst、MoveLast、MoveNext、および MovePrevious** の 4 つのメソッドを使用すると、 [Recordset](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) 内を移動またはスクロールできます (前方スクロール カーソルでは使用できないメソッドもあります)。
 
@@ -40,7 +40,7 @@ If oRs.BOF Then oRs.MoveFirst
 . . . 
 ```
 
-フィルター処理または並べ替えが行われた **Recordset** で現在のレコードのデータを変更すると、その位置も変更されることがあります。 その場合、 **MoveNext** メソッドは正常に動作しますが、その位置が、元の位置からではなく、変更後の位置から 1 つ前に移動されることに注意する必要があります。 たとえば、レコードが並べ替えられた**レコード セット**の末尾に移動するように、現在のレコードのデータを変更することは、 **MoveNext**の呼び出し元が得られる ADO では、**の最後のレコードより後に位置する現在のレコードを設定レコード セット**(**EOF** = **場合は True**)。
+フィルター処理または並べ替えが行われた **Recordset** で現在のレコードのデータを変更すると、その位置も変更されることがあります。 その場合、 **MoveNext** メソッドは正常に動作しますが、その位置が、元の位置からではなく、変更後の位置から 1 つ前に移動されることに注意する必要があります。 たとえば、レコードが並べ替えられた**Recordset**の末尾に移動されるように、現在のレコードのデータを変更すると、ADO で**MoveNext**の結果を呼び出したときに、現在のレコードの最後のレコード**の位置をRecordset** (**EOF** = **True**)。
 
 **Recordset** オブジェクトのさまざまな Move メソッドの動作は、 **Recordset** 内のデータによってある程度異なります。 **Recordset** に追加された新規レコードは、最初はデータ ソースで定義され、新規レコードのデータに暗黙的または明示的に依存する特定の順序で追加されます。たとえば、 **Recordset** を設定するクエリで並べ替えまたは結合を実行すると、 **Recordset** 内の該当する位置に新規レコードが挿入されます。 **Recordset** の作成時に順序が明示的に指定されていない場合、データ ソースの実装を変更すると、返される行の順序が予期せずに変更されることがあります。さらに、 **Recordset** の並べ替え、フィルター、および編集機能は順序にも影響し、表示されるレコードセットの行にも影響する可能性があります。
 

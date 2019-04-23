@@ -8,17 +8,17 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a488617dc7ba0d7d1f7e38391f8382fa1e7ed247
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282102"
 ---
 # <a name="absolute-and-relative-urls"></a>絶対 URL と相対 URL
 
-**適用されます**Access 2013、Office 2013。    
+**適用先:** Access 2013、Office 2013    
 
-URL など、ファイル、ディレクトリ、HTML ページ、画像、プログラム、およびように、ローカルまたはネットワーク コンピューターに保存されているターゲットの場所を指定します。 ここでは、*絶対 URL*は、フォームのです。
+URL で、ファイル、ディレクトリ、HTML ページ、画像、プログラムなどの保存先、つまりローカルまたはネットワーク コンピューターでの場所を指定します。 ここでは、"絶対 URL" は次の形式とします。
 
 *scheme://server/path/resource*
 
@@ -26,38 +26,38 @@ URL など、ファイル、ディレクトリ、HTML ページ、画像、プ�
 
 |名前 |説明|
 |:----|:----------|
-|*scheme*|*リソース*のアクセス方法を指定します。|
-|*server*|*リソース*が配置されているコンピューターの名前を指定します。|
-|*path*|ターゲットに導くディレクトリの順序を指定します。*resource* が省略されると、ターゲットは *path* 内の最後のディレクトリと見なされます。|
-|*resource*|含まれる場合、*リソース*は、ターゲットであるし、ファイルの名前は、通常です。 *簡易ファイル*のバイト数、または*構造化ドキュメント*、1 つ以上の記憶域とバイトのバイナリ ストリームを含む単一のバイナリ ストリームを格納しているがある可能性があります。|
+|*scheme*|*resource* がどのようにアクセスされるかを指定します。|
+|*server*|*resource* が存在するコンピューターの名前を指定します。|
+|*path*|ターゲットに導くディレクトリの順序を指定します。 *resource* が省略されると、ターゲットは *path* 内の最後のディレクトリと見なされます。|
+|*resource*|指定されている場合、 *resource*はターゲットで、通常はファイルの名前です。 単一のバイナリストリームを含む*単純なファイル*、または1つまたは複数のストレージファイルとバイナリストリームを含む、構造化された*ドキュメント*があります。|
 
-*絶対 URL*には、リソースを特定するために必要なすべての情報が含まれています。
+"絶対 URL" には、リソースを検索するために必要なすべての情報が含まれています。
 
-*相対 URL*では、開始点として絶対 URL を使用してリソースを検索します。 実際には、ターゲットの「完全 URL」は、絶対 url と相対 Url を連結することによって指定されます。 相対 URL 通常は、のみ*のパス*、および必要に応じて、*リソース*がない*スキーム*または*サーバー*。
+*相対 url*は、開始点として絶対 url を使用してリソースを検索します。 In effect, the "complete URL" of the target is specified by concatenating the absolute and relative URLs. 通常、相対 URL は*パス*のみで構成され、必要に応じて*リソース*を構成しますが、*スキーム*や*サーバー*は含まれません。
 
-## <a name="url-scheme-registration"></a>URL パターンの登録
+## <a name="url-scheme-registration"></a>URL スキーマの登録
 
-プロバイダーが URL をサポートしている場合、1 つまたは複数の URL スキーマに登録します。 つまり、このスキーマを使用する URL は、登録されたプロバイダーを自動的に呼び出します。 たとえば、 [Microsoft OLE DB プロバイダー インターネット パブリッシング用](microsoft-ole-db-provider-for-internet-publishing.md)に*http*スキームが登録されています。 ADO では、"http"で始まるすべての Url は、web フォルダーまたはインターネット発行プロバイダーで使用するファイルを表すものとします。 プロバイダーにより登録されるスキーマの詳細については、使用しているプロバイダーのマニュアルを参照してください。
+プロバイダーが URL をサポートしている場合、1 つまたは複数の URL スキーマに登録します。 つまり、このスキーマを使用する URL は、登録されたプロバイダーを自動的に呼び出します。 たとえば、*http* スキーマは、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) に登録されます。 ADO では、プレフィックス "http" が付いているすべての url は、インターネット発行プロバイダーで使用する web フォルダーまたはファイルを表しています。 プロバイダーにより登録されるスキーマの詳細については、使用しているプロバイダーのマニュアルを参照してください。
 
-## <a name="defining-context-with-a-url"></a>URL を使用してコンテキストを定義します。
+## <a name="defining-context-with-a-url"></a>URL を使用してコンテキストを定義する
 
 [Connection](connection-object-ado.md) オブジェクトで表される開かれた接続の機能の 1 つは、その接続で表されるデータ ソースへの後続の操作を制限することです。つまり、接続によって後続の操作のコンテキストが定義されます。
 
 ADO 2.5 では、絶対 URL でコンテキストを定義することもできます。たとえば、[Record](record-object-ado.md) オブジェクトが絶対 URL で開かれたとき、URL に指定されたリソースを表すために、 **Connection** オブジェクトが暗黙的に作成されます。
 
-コンテキストを定義する絶対 URL は、 **Record**オブジェクトの[Open](open-method-ado-record.md)メソッドの*ActiveConnection*パラメーターで指定できます。 絶対 URL を指定すると、新規の値として`URL=`**接続**オブジェクト[Open](open-method-ado-connection.md)メソッド*接続文字列*パラメーター、および[レコード セット](recordset-object-ado.md)オブジェクトの[Open](open-method-ado-recordset.md)メソッドの*ActiveConnection*のキーワードパラメーターです。
+コンテキストを定義する絶対 URL は、**Record** オブジェクト [Open](open-method-ado-record.md) メソッドの *ActiveConnection* パラメーターに指定することができます。 また、絶対`URL=` URL は、 **Connection**オブジェクトの[open](open-method-ado-connection.md)メソッドの*ConnectionString*パラメーターで new キーワードの値として指定され、 [Recordset](recordset-object-ado.md)オブジェクトの[open](open-method-ado-recordset.md)メソッドは*ActiveConnection*になります。parameter.
 
-ディレクトリを表す、開かれた Record オブジェクトや Recordset オブジェクトは既にコンテキストを指定する Connection オブジェクトを明示的または暗黙的に宣言しているので、これらの Record オブジェクトや Recordset オブジェクトを使用してコンテキストを定義することもできます。
+Context may also be defined with an open **Record** or **Recordset** object that represents a directory because these objects already have an implicitly or explicitly declared **Connection** object that specifies context.
 
-## <a name="scoped-operations"></a>スコープ操作
+## <a name="scoped-operations"></a>スコープ指定された操作
 
-コンテキストの*スコープ*を同時に定義する-は、ディレクトリとそのサブディレクトリ以降の操作に参加します。 **レコード**オブジェクトには、スコープ指定など複数の方法、[つまり](copyrecord-method-ado.md)、[関係](moverecord-method-ado.md)、および[関係する](deleterecord-method-ado.md)ディレクトリとそのすべてのサブディレクトリに対して動作するがあります。
+コンテキストは、*スコープ*(つまり、以降の操作に参加する可能性があるディレクトリとそのサブディレクトリ) を同時に定義します。 The **Record** object has several scoped methods, including [CopyRecord](copyrecord-method-ado.md), [MoveRecord](moverecord-method-ado.md), and [DeleteRecord](deleterecord-method-ado.md), that operate on a directory and all its subdirectories.
 
-## <a name="relative-urls-as-command-text"></a>コマンド テキストとの相対 Url
+## <a name="relative-urls-as-command-text"></a>コマンドテキストとしての相対 url
 
-オブジェクトの**Execute**メソッドを**接続**する*CommandText*パラメーター、および**Recordset**オブジェクト**Open**メソッドの*ソース*パラメーターでは、データ ソース上で実行するコマンドを指定する文字列を指定できます。
+データ ソースで実行されるコマンドを指定する文字列は、**Connection** オブジェクト **Execute** メソッドの *CommandText* パラメーター、および **Recordset** オブジェクト **Open** メソッドの *Source* パラメーター内で指定することができます。
 
-*CommandText*または*ソース*のパラメーターでは、相対 URL を指定できます。 相対 URL は実際には SQL コマンドなどのコマンドを指定するわけではなく、単にこれらのパラメーター内に指定されるだけです。 さらに、アクティブな接続のコンテキストは絶対 URL である必要があり、 **adCmdTableDirect**に*オプション*のパラメーターを設定する必要があります。
+相対 URL は、*CommandText* パラメーターまたは *Source* パラメーター内に指定できます。相対 URL は実際には SQL コマンドなどのコマンドを指定するわけではなく、単にこれらのパラメーター内に指定されるだけです。また、アクティブな接続のコンテキストは絶対 URL である必要があり、*Option* パラメーターは **adCmdTableDirect** に設定する必要があります。
 
 たとえば、次のようにして、Winnt/system32 ディレクトリの Readme25.txt ファイルで **Recordset** を開くことができます。
 
@@ -65,21 +65,21 @@ ADO 2.5 では、絶対 URL でコンテキストを定義することもでき�
 recordset.Open "system32/Readme25.txt", "URL=https://YourServer/Winnt/",,,adCmdTableDirect 
 ```
 
-接続文字列に絶対 URL は、サーバー (通常) とパス (Winnt) を指定します。 この URL は、コンテキストも定義しています。
+接続文字列内の絶対 URL は、サーバー (サーバー名) とパス (Winnt) を指定します。 この URL は、コンテキストも定義しています。
 
-コマンド テキスト内の相対 URL では、開始点として絶対 URL を使用し、(system32) のパスとファイルを開くには (Readme25.txt) の残りの部分を指定します。
+コマンドテキストの相対 url は、絶対 url を開始点として使用し、パスの残りの部分 (system32) と開くファイル (readme25.txt) を指定します。
 
 [オプション] フィールドは、コマンドの種類が相対 URL であることを示します。
 
-別の例として次のコードは、ディレクトリの内容には、**レコード セット**を開きます。
+もう1つの例として、次のコードでは、ディレクトリの内容に関する**Recordset**を開きます。
 
 ```vb
 recordset.Open "", "URL=https://YourServer/Winnt/",,,adCmdTableDirect 
 ```
 
-## <a name="ole-db-provider-supplied-url-schemes"></a>OLE DB プロバイダーが指定した URL のスキーム
+## <a name="ole-db-provider-supplied-url-schemes"></a>OLE DB プロバイダー提供の URL スキーマ
 
-完全修飾 URL の先頭部分は、URL の残りの部分で識別されるリソースへのアクセスに使用する*スキーム*です。 例としては、HTTP (ハイパー テキスト転送プロトコル) および FTP (ファイル転送プロトコル) です。
+完全修飾 URL の先頭部分は、URL の残りの部分で識別されるリソースへのアクセスに使用される "スキーマ" です。ここに示す例は、HTTP (ハイパーテキスト転送プロトコル) と FTP (ファイル転送プロトコル) です。
 
-ADO には、独自の URL スキームを認識する OLE DB プロバイダーがサポートしています。 たとえば、 [Microsoft OLE DB プロバイダー](microsoft-ole-db-provider-for-internet-publishing.md)するアクセスは、Windows 2000 のファイルを「公開」は、既存の HTTP スキームを認識します。
+ADO supports OLE DB providers that recognize their own URL schemes. たとえば、 [Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md)は、"公開された" Windows 2000 ファイルにアクセスして、既存の HTTP スキームを認識します。
 

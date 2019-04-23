@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 47c1001b3f2829c9cc593c9eb70a08617ff71798
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288442"
 ---
 # <a name="open-and-close-methods-example-vb"></a>Open メソッドと Close メソッドの使用例 (VB)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 この例では、開かれている **Recordset** オブジェクトと [Connection](close-method-ado.md) オブジェクトの両方に対して、 [Open](recordset-object-ado.md) メソッドと [Close](connection-object-ado.md) メソッドを使用します。
 

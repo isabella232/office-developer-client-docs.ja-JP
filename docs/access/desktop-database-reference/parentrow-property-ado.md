@@ -1,5 +1,5 @@
 ---
-title: ParentRow プロパティ (ADO)
+title: parentrow プロパティ (ADO)
 TOCTitle: ParentRow property (ADO)
 ms:assetid: c7520353-9428-9c8f-9d21-ff42e30e1193
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249971(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2844f7c93164c4b384a895cd32a13bd682154ce3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287739"
 ---
-# <a name="parentrow-property-ado"></a>ParentRow プロパティ (ADO)
+# <a name="parentrow-property-ado"></a>parentrow プロパティ (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 OLE DB **Row** オブジェクトのコンテナーを **ADORecordConstruction** オブジェクトに設定し、行の親が ADO **Record** オブジェクトに変換されるようにします。
 
@@ -24,17 +24,17 @@ OLE DB **Row** オブジェクトのコンテナーを **ADORecordConstruction**
 
 ## <a name="syntax"></a>構文
 
-HRESULT に\_ParentRow (\[の\]IUnknown\* pParent)。
+HRESULT put\_parentrow (\[\] IUnknown\* pparent)。
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
-|*pParent* |行のコンテナー。|
+|*pparent* |行のコンテナー。|
 
 ## <a name="return-values"></a>戻り値
 
-このプロパティのメソッドなどの標準の HRESULT 値を返します。\_[ok] および E\_は失敗します。
+このプロパティメソッドは、S\_OK および E\_FAIL を含む標準の HRESULT 値を返します。
 
 ## <a name="applies-to"></a>適用対象
 

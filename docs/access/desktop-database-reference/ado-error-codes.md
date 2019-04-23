@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2d3d51fa745f17fb07f6a46064ba8ffc626cbb3e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283388"
 ---
 # <a name="ado-error-codes"></a>ADO のエラー コード
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Errors](error-object-ado.md) コレクションの [Error](errors-collection-ado.md) オブジェクトに返されるプロバイダー エラーに加えて、ADO 自体が実行時環境の例外処理メカニズムにエラーを返す場合があります。ADO エラーを捕捉するには、Microsoft Visual Basic の **On Error** ステートメントや、Microsoft Visual C++ または Microsoft Visual J++ の **try-catch** ブロックなど、プログラミング言語のエラー トラッピング機能を使用します。
 

@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: fae0df2a4cc5c9de585d2b101e9fa31cb6a0a545
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281716"
 ---
 # <a name="ado-dynamic-properties"></a>ADO の動的プロパティ
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 動的プロパティは、[Connection](properties-collection-ado.md) オブジェクト、 [Command](connection-object-ado.md) オブジェクト、または [Recordset](command-object-ado.md) オブジェクトの [Properties](recordset-object-ado.md) コレクションに追加できます。これらの動的プロパティのソースは、 [OLE DB Provider for SQL Server](microsoft-ole-db-provider-for-sql-server.md) などのデータ プロバイダー、または [Microsoft Cursor Service for OLE DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) などのサービス プロバイダーです。各動的プロバイダーの詳細については、それぞれのデータ プロバイダーまたはサービス プロバイダーのマニュアルを参照してください。
 
@@ -53,8 +53,8 @@ ms.locfileid: "28714522"
 <td><p><strong>Unique Table</strong> 動的プロパティに指定されているテーブルのデータを更新するために <strong>Resync</strong> メソッドが発行する、ユーザー指定のコマンド文字列を指定します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="unique-table-unique-schema-unique-catalog-properties-dynamic-ado.md">固有のテーブル、一意のスキーマ、一意なカタログ</a></p></td>
-<td><p><strong>固有のテーブル</strong>更新、挿入、および削除を許可しているベース テーブルの名前を指定します。<br/><br/><strong>一意のスキーマ</strong>スキーマ、またはテーブルの所有者の名前を指定します。<br/><br/><strong>一意なカタログ</strong>カタログ、またはテーブルを含むデータベースの名前を指定します。</p></td>
+<td><p><a href="unique-table-unique-schema-unique-catalog-properties-dynamic-ado.md">Unique Table、Unique Schema、Unique Catalog</a></p></td>
+<td><p><strong>Unique table</strong> -更新、挿入、および削除が許可されるベーステーブルの名前を指定します。<br/><br/><strong>Unique schema</strong> -スキーマ、またはテーブルの所有者の名前を指定します。<br/><br/><strong>Unique catalog</strong> -カタログ、またはそのテーブルを含むデータベースの名前を指定します。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="update-resync-property-dynamic-ado.md">Update Resync</a></p></td>

@@ -1,5 +1,5 @@
 ---
-title: ActiveX データ オブジェクト (ADO) エラー
+title: ActiveX データオブジェクト (ADO) エラー
 TOCTitle: ADO errors
 ms:assetid: 02fcf563-ce2d-9ef7-b8ae-2795f667335a
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248796(v=office.15)
@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5a25dc0d1d5e621a610b34ca1875c3fd76ba56eb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283381"
 ---
 # <a name="ado-errors"></a>ADO エラー
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-ADO エラーは、実行時エラーとしてプログラムに報告されます。 使用しているプログラミング言語のエラー トラッピング機構を使用すると、これらのエラーをトラッピングして処理できます。 たとえば、Visual Basic では、 **On Error** ステートメントを使用します。 Visual J++ では、 **try-catch** ブロックを使用します。 Visual C++ では、ADO ライブラリへのアクセス方法によって操作が異なります。 \#のインポートは、 **try-catch**ブロックを使用します。 それ以外の場合は、 **GetErrorInfo** を呼び出すことによって、明示的にエラー オブジェクトを取得する必要があります。 次の Visual Basic の sub プロシージャでは、ADO エラーをトラッピングする方法を示します。
+ADO エラーは、実行時エラーとしてプログラムに報告されます。 使用しているプログラミング言語のエラー トラッピング機構を使用すると、これらのエラーをトラッピングして処理できます。 たとえば、Visual Basic では、 **On Error** ステートメントを使用します。 Visual J++ では、 **try-catch** ブロックを使用します。 Visual C++ では、ADO ライブラリへのアクセス方法によって操作が異なります。 import \#では、 **try-catch**ブロックを使用します。 それ以外の場合は、 **GetErrorInfo** を呼び出すことによって、明示的にエラー オブジェクトを取得する必要があります。 次の Visual Basic の sub プロシージャでは、ADO エラーをトラッピングする方法を示します。
 
 ```vb 
  
@@ -77,7 +77,7 @@ End Sub
 ' EndErrorHandlingVB01 
 ```
 
-これは、**フォーム\_ロード**イベント プロシージャが 2 回、同じ**接続**オブジェクトを開こうとしてエラーを意図的に作成します。 **Open** メソッドが 2 度目に呼び出されたときに、エラー ハンドラーが起動されます。 この場合、エラーの種類は **adErrObjectOpen** であるため、プログラムの実行が再開される前に、エラー ハンドラーによって次のメッセージが表示されます。
+この**Form\_Load**イベントプロシージャでは、同じ**Connection**オブジェクトを2回開こうとすることによって、意図的にエラーが作成されます。 **Open** メソッドが 2 度目に呼び出されたときに、エラー ハンドラーが起動されます。 この場合、エラーの種類は **adErrObjectOpen** であるため、プログラムの実行が再開される前に、エラー ハンドラーによって次のメッセージが表示されます。
 
 ```vb 
 Error #3705: Operation is not allowed when the object is open. 

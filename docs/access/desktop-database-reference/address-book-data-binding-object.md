@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 7fb5302d1c2b8e4eebb6dbe1a5906459834b8e41
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281868"
 ---
 # <a name="address-book-data-binding-object"></a>アドレス帳のデータバインディング オブジェクト
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 Address Book アプリケーションでは、[RDS.DataControl](datacontrol-object-rds.md) オブジェクトを使って、SQL Server データベースのデータをクライアントの HTML ページに表示されるオブジェクト (この場合は DHTML テーブル) にバインドします。イベントドリブン型の VBScript プログラム ロジックでは、 [RDS.DataControl](datacontrol-object-rds.md) を使って次の処理を行います。
 
@@ -73,7 +73,7 @@ OBJECT タグで、 **RDS.DataControl** コンポーネントをプログラム�
 
 ## <a name="rdsdatacontrol-tag-parameters"></a>RDS.DataControl タグ パラメーター
 
-次の表に、 **RDS.DataControl** オブジェクトに固有のパラメーターを示します。 **RDS.DataControl** オブジェクトのすべてのパラメーター一覧、およびその実装時期については、「 [DataControl オブジェクト (RDS)](datacontrol-object-rds.md)」を参照してください。
+次の表に、**RDS.DataControl** オブジェクトに固有のパラメーターを示します。**RDS.DataControl** オブジェクトのすべてのパラメーター一覧、およびその実装時期については、「[DataControl オブジェクト (RDS)](datacontrol-object-rds.md)」を参照してください。
 
 <table>
 <colgroup>
@@ -88,11 +88,11 @@ OBJECT タグで、 **RDS.DataControl** コンポーネントをプログラム�
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="server-property-rds.md">サーバー</a></p></td>
-<td><p>HTTP を使用する場合値は、https://サーバー コンピューターの名前です。</p></td>
+<td><p><a href="server-property-rds.md">SERVER</a></p></td>
+<td><p>HTTP を使用している場合、値はサーバーコンピューターの名前で、その後に https://が付加されます。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="connect-property-rds.md">接続</a></p></td>
+<td><p><a href="connect-property-rds.md">結び付ける</a></p></td>
 <td><p>SQL Server に接続するために <strong>RDS.DataControl</strong> に必要な接続情報を指定します。</p></td>
 </tr>
 <tr class="odd">

@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 226d930f0f4e532a1de4633c00cd72472a94fac1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288596"
 ---
 # <a name="navigating-through-the-data"></a>データ内の移動
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-これで、データ ソースに対してコマンドを実行し、結果セットにデータが含まれていることを確認したら、ナビゲーション メソッドと**レコード セット**オブジェクトによって提供されるプロパティを使用して結果を移動できます。 
+データソースに対してコマンドを実行し、結果セットにデータが含まれていることを確認したので、 **Recordset**オブジェクトによって提供されるナビゲーションメソッドとプロパティを使用して、結果を移動できます。 
 
-次のトピックでは、 **recordset**オブジェクトにこれらのメソッドとプロパティを使用する方法について説明します。
+次のトピックでは、これらのメソッドおよびプロパティをサンプル**Recordset**で使用する方法について説明します。
 
-- [レコードにジャンプすること](jumping-to-a-record.md)
+- [レコードへのジャンプ](jumping-to-a-record.md)
 - [レコードセットでのその他の移動方法](more-ways-to-move-in-a-recordset.md)
 - [ブックマークの使用](using-bookmarks.md)
 - [ページの使用](using-pages.md)
-- [レコード セットを配置](recordset-positioning.md)
+- [レコードセットの配置](recordset-positioning.md)
 

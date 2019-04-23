@@ -8,19 +8,19 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e385df5029238106b51aa62949d5e4e94f065657
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280523"
 ---
-# <a name="adcpropautorecalcenum"></a>ADCPROP\_AUTORECALC\_列挙型
+# <a name="adcpropautorecalcenum"></a>ADCPROP\_AUTORECALC\_列挙
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 階層 Recordset の集計列と計算列を [MSDataShape](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md) プロバイダーがいつ再計算するかを指定します。
 
-これらの定数に対してのみ使用**MSDataShape**プロバイダーと、**レコード セット**"**自動再計算**"動的プロパティが、 [ADO の動的プロパティ インデックス](ado-dynamic-property-index.md)で参照されているカーソル サービスをマイクロソフトの[に記載されている OLEDB](microsoft-cursor-service-for-ole-db-ado-service-component.md)や[Microsoft データ シェイプ サービス](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md)のドキュメントです。
+これらの定数は、 [ADO の動的プロパティインデックス](ado-dynamic-property-index.md)で参照さ**** れていて、Microsoft Cursor Service for OLE でドキュメント化されている、 **MSDataShape**プロバイダおよび**Recordset**の "自動再計算" 動的プロパティでのみ使用されます。 [db](microsoft-cursor-service-for-ole-db-ado-service-component.md)または[Microsoft データシェイプサービスを使用した OLE db](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md)ドキュメント。
 
 <br/>
 
@@ -40,19 +40,19 @@ ms.locfileid: "28705401"
 <tbody>
 <tr class="odd">
 <td><p><strong>adRecalcAlways</strong></p></td>
-<td><p>1</p></td>
+<td><p>1-d</p></td>
 <td><p>既定値です。計算列が依存する値が変更されたと <strong>MSDataShape</strong> プロバイダーが判断したときに再計算します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adRecalcUpFront</strong></p></td>
-<td><p>0</p></td>
+<td><p>.0</p></td>
 <td><p>階層 <strong>Recordset</strong> の最初の作成時のみ計算します。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC に相当
+### <a name="adowfc-equivalent"></a>ADO/WFC と同等
 
 これらの定数に ADO/WFC 等価はありません。
 

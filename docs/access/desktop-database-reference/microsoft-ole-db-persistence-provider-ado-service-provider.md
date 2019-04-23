@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4045445120d42f1ca88fce22ce566fc970fce28b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288954"
 ---
 # <a name="microsoft-ole-db-persistence-provider-ado-service-provider"></a>Microsoft OLE DB Persistence Provider (ADO サービス プロバイダー)
 
 
-**適用されます**Access 2013、Office 2013。 
+**適用先:** Access 2013、Office 2013 
 
 Microsoft OLE DB Persistence Provider を使用すると、[Recordset](recordset-object-ado.md) オブジェクトをファイルに保存し、後でその **Recordset** オブジェクトをファイルから復元できます。スキーマ情報、データ、および保留中の変更が保持されます。
 
@@ -60,13 +60,13 @@ Microsoft OLE DB Persistence Provider を使用すると、[Recordset](recordset
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Microsoft OLE DB Persistence Provider は動的プロパティを公開しません。
 
 現在、パラメーター化された階層 **Recordset** オブジェクトのみ保存できません。
 
-**Recordset** オブジェクトの永続的保存の詳細については、「 [レコードセットの保存の詳細](more-about-recordset-persistence.md)」を参照してください。
+**Recordset** オブジェクトの永続的保存の詳細については、「[レコードセットの保存の詳細](more-about-recordset-persistence.md)」を参照してください。
 
-ストリームが使用すると、**レコード セット**を開く必要がありますパラメーターが指定されていない、 **Open**メソッドの*Source*パラメーター以外の場合。
+ストリームを使用して **Recordset** を開く場合、**Open** メソッドの *Source* パラメーター以外のパラメーターは指定しないでください。
 
