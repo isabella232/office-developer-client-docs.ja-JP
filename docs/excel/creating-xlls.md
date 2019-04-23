@@ -24,11 +24,11 @@ DLL が自己完結型であるか、他のライブラリのみに依存する�
   
 ただし、DLL が Excel の機能にアクセスする必要がある場合 (たとえば、セルの内容を取得するときや、ワークシート関数を呼び出すとき、または Excel を照会してワークスペース情報を取得するときなど) は、コードから Excel へのコールバックが可能でなければなりません。
   
-Excel C API �ɂ́ADll ���� Excel �ւ̃R�[���o�b�N��\�ɂ��邢�����̋@�\������܂��B�����ɃA�N�Z�X����ɂ́ADLL �� Excel �� 32 �r�b�g�Ń��C�u���� (xlcall32.lib) �ɃR���p�C�����ɐÓI�Ƀ����N������K�v������܂��B���̐ÓI���C�u�����́AMicrosoft Excel 2013 XLL SDK �̈ꕔ�Ƃ��� Microsoft ����_�E�����[�h�\�ł��BXLL SDK �ɂ́A���̃��C�u������ 32 �r�b�g�ł� 64 �r�b�g�ł̗������܂܂�Ă��܂��B
+Excel C API には、Dll が Excel にコールバックできるようにするいくつかの関数が用意されています。これらにアクセスするには、Excel 32 ビットライブラリ xlcall32 を使用して、コンパイル時に DLL を静的にリンクする必要があります。静的ライブラリは、このライブラリの 32 ビット版と 64 ビット版の両方を含む Microsoft Excel 2013 XLL SDK の一部として Microsoft からダウンロードできます。
   
 ## <a name="enabling-dlls-to-call-back-into-excel"></a>Dll から Excel へのコールバックを可能にする
 
-DLL �� Excel �̋@�\�ɃA�N�Z�X���ă��[�N�X�y�[�X����擾����ѐݒ�ł���悤�ɂ��邽�߂ɂ́A�܂� Excel �̃R�[���o�b�N�� **Excel4**�A **Excel4v**�A **Excel12**�A����� **Excel12v** �̃A�h���X��擾����K�v������܂��B�Ō�� 2 �̊��� Excel 2007 �œ������ꂽ��̂ł���A�㑱�̃o�[�W�����Ŏg�p�\�ł��B�����̂��ׂĂɃA�N�Z�X����ɂ́ADLL �v���W�F�N�g�� Excel 2013 XLL SDK �̈ȉ��Ɏ����t�@�C���ւ̎Q�Ƃ�܂߂�K�v������܂��B (�ǂ̃o�[�W������ Excel �ɂ�܂܂��) �ŏ��� 2 �̃R�[���o�b�N�݂̂ɃA�N�Z�X����ꍇ�́A�ŏ��� 2 �̃t�@�C���݂̂�v���W�F�N�g�Ɋ܂߂�K�v������܂��B
+DLL が Excel の機能にアクセスし、ワークスペース情報を取得または設定できるようにするには、まず Excel のコールバック関数 **Excel4**、**Excel4v**、**Excel12**、および **Excel12v** のアドレスを取得する必要があります。最後の 2 つは、Excel 2007 で導入され、以降のバージョンで利用可能です。これらのすべてにアクセスするには、DLL プロジェクトに、Excel 2013 XLL SDK から次のファイルへの参照が含まれている必要があります。最初の 2 つのコールバック (任意のバージョンの Excel) にのみアクセスする場合は、プロジェクトに最初の 2 つのファイルのみを含める必要があります。
   
 ### <a name="xlcallh"></a>Xlcall.h
 
@@ -42,43 +42,43 @@ Xlcall.h ファイルには、次の項目が含まれます。
     
 - コールバック関数の戻り値の定義。
     
-���̃t�@�C���ł́AC API �ɃA�N�Z�X���邷�ׂẴt�@�C���A�܂��� C API ���g�p����f�[�^�^��������邷�ׂẴt�@�C���ɂ����āA���̃t�@�C���� **#include** �f�B���N�e�B�u�� (���ځA���邢�͕ʂ̃w�b�_�[ �t�@�C�����ĊԐړI��) �g�p����K�v������܂��B 
+このファイルでは、C API にアクセスするすべてのファイル、または C API が使用するデータ型を処理するすべてのファイルにおいて、このファイルの **#include** ディレクティブを (直接、あるいは別のヘッダー ファイルを介して間接的に) 使用する必要があります。 
   
 ### <a name="xlcall32lib"></a>Xlcall32.lib
 
-Xlcall32.lib ���C�u�����́A�ŏ��� 2 �̃R�[���o�b�N **Excel4** ����� **Excel4v** �̑��A **XlCallVer** ����G�N�X�|�[�g���܂��B�v���W�F�N�g�ɂ��̃��C�u�����ւ̎Q�Ƃ��Ȃ��ƁA�R�[�h��ł����̃R�[���o�b�N�̂����ꂩ��g�p���Ă���ꍇ�A�����J�[�� XLL ��쐬�ł��܂���B(�����̊��̃A�h���X�́A�ʏ�� Excel �̃C���X�g�[���̈�Ƃ��ăV�X�e���ɃR�s�[����铯���� Xlcall32.dll �ɓ��I�Ƀ����N���邱�ƂŎ擾�ł��܂��B) 
+Xlcall32 ライブラリは、最初の 2 つのコールバック、**Excel4** と **Excel4v**、および **XlCallVer** 関数もエクスポートします。プロジェクトでこのライブラリへの参照がなければ、コードでこれらのコールバックのいずれかを使用している場合は、リンカーは XLL を作成できません。(これらの関数のアドレスは、通常の Excel インストールの一部としてシステムにコピーされる同等の Xlcall32.dll に動的にリンクすることによって取得できます) 
   
 ### <a name="xlcallcpp"></a>Xlcall.cpp
 
-Excel �R�[���o�b�N **Excel12** ����� **Excel12v** �� Xlcall32.lib �ł̓G�N�X�|�[�g����܂���B����ɂ��AExcel 2007 �ȍ~�ō쐬���� XLL �v���W�F�N�g��������O�̃o�[�W������ Excel �ł����ł���悤�ɂȂ��Ă��܂��BXlcall.cpp ���W���[���ɂ́A **Excel12** ���� **Excel12v** ���̃R�[�h���܂܂�Ă��܂��B�����́AExcel 2007 �ȍ~�ł� Excel �̃G���g�� �|�C���g��Ăяo���A������O�̃o�[�W������ Excel ����s���Ă���ꍇ�͈��S�ȃG���[�l��Ԃ��܂��BExcel 2007 �ȍ~�œ��삵�A��K�͂ȃO���b�h�ƒ��� Unicode ��������������V�����f�[�^�^��g�p�ł��� XLL ��쐬����ꍇ�́A�v���W�F�N�g�ɂ��̃��W���[����܂߂�K�v������܂��B 
+Excel のコールバック **Excel12** と **Excel12v** は Xlcall32.lib ではエクスポートされません。これにより、Excel 2007 以降で作成する XLL プロジェクトは、以前のバージョンの Excel でも機能します。Xlcall.cpp モジュールには **Excel12** および **Excel12v** 関数のコードが含まれており、Excel 2007 以降の Excel エントリ ポイントを呼び出したり、以前のバージョンの Excel を実行している場合は安全なエラー値を返したりします。Excel 2007 以降で実行する、より大きなグリッドと長い Unicode 文字列を処理する新しいデータ型を使用できる XLL を作成したい場合は、このモジュールをプロジェクトに含める必要があります。 
   
 > [!NOTE]
 > Excel 2010 SDK 以降では、このファイルは 32 ビットと 64 ビットの両方の XLL にコンパイルできます。 
   
-## <a name="turning-dlls-into-xlls-add-in-manager-interface-functions"></a>DLL �� XLL �ɂ���:�A�h�C�� �}�l�[�W���[ �C���^�[�t�F�C�X��
+## <a name="turning-dlls-into-xlls-add-in-manager-interface-functions"></a>DLL を XLL に変換する: アドイン マネージャー インターフェイス関数
 
 XLL は、Excel または Excel のアドイン マネージャーによって呼び出されるいくつかのプロシージャをエクスポートする DLL です。ここでは、これらのプロシージャを簡単に説明します。詳細な説明については、「[アドイン マネージャーと XLL インターフェイス関数](add-in-manager-and-xll-interface-functions.md)」を参照してください。これらの DLL コールバックはすべてプレフィックス **xlAuto** で始まります。これらのうち必須コマンドは **xlAutoOpen** のみです。これは、アドインが有効になると呼び出され、通常は Excel に XLL の関数とコマンドを登録してその他の初期化タスクを実行するために使用されます。すべての **xlAuto** 関数の関数シグネチャと実装例は、後のセクションで説明します。  
   
-�����̃R�[���o�b�N�̒��ŕK�{�Ȃ̂� **xlAutoOpen** �����ł����A�A�h�C���̓���ɂ���ẮA���̃R�}���h��G�N�X�|�[�g����K�v������\��������܂��B 
+これらのコールバックの中で必須なのは **xlAutoOpen** だけですが、アドインの動作によっては、他のコマンドもエクスポートする必要がある可能性があります。 
   
-Excel 2007 �ł́A��K�͂ȃO���b�h�ւ̑Ή��ƒ��� Unicode ������̃T�|�[�g�̂��߂ɁA�V�����f�[�^�^ **XLOPER12** ����������܂����B **XLOPER12** �ɂ��ẮA���̃g�s�b�N�Ō�ɐ�����܂��B **xlAuto** ���͌Â��f�[�^�^�ł��� **XLOPER** ��󂯎������Ԃ����肷��̂ɑ��AExcel 2007 �œ������ꂽ���̊��̐V�����o�[�W������ **XLOPER12** �f�[�^�^��g�p���܂��B **XLOPER12** ������ ���[�N������邽�߂Ɏ������K�{�ł��邱�Ƃ����� **xlAutoFree12** ��ʂɂ���A���ׂẴo�[�W���� 12 �� **xlAuto** ���͏ȗ����Ă���S��̖��͂���܂���B�ȗ�����ꍇ�AExcel 2007 �ȍ~�� Excel �� **XLOPER** �o�[�W������Ăяo���܂��B 
+Excel 2007 では、より大きなグリッドに対応し、長い Unicode 文字列をサポートするために、新しいデータ型 **XLOPER12** が導入されました。 **XLOPER12** については、このトピックの後半で説明します。**xlAuto** 関数は古いデータ型 **XLOPER** を取得または返すのに対し、これらの関数の新しいバージョンは **XLOPER12** データ型を使用する Excel 2007 で導入されました。**XLOPER12** のメモリリークを回避するために実装する必要がある **xlAutoFree12** を除いて、バージョン 12 の **xlAuto** 関数をすべて省略しても問題ありません (この場合、Excel 2007 以降では **XLOPER** バージョンが呼び出されます)。 
   
 ### <a name="xlautoopen"></a>xlAutoOpen
 
-XLL ���A�N�e�B�u�������ƁAExcel �� [xlAutoOpen](xlautoopen.md) ����Ăяo���܂��BExcel �Z�b�V�������J�n����Ƃ��ɂ́A����I�������O��� Excel �Z�b�V�����ŃA�N�e�B�u�ł������A�h�C�����A�N�e�B�u������܂��B�A�h�C���́AExcel �Z�b�V�������ɓǂݍ��܂��ƁA�A�N�e�B�u�ɂȂ�܂��B�A�h�C���́AExcel �Z�b�V�������ɔ�A�N�e�B�u��������A�ăA�N�e�B�u�������肷�邱�Ƃ��ł��܂��B�ăA�N�e�B�u������ۂɂ͊����Ăяo����܂��B 
+Excel は、XLL がアクティブになるたびに [xlAutoOpen](xlautoopen.md) 関数を呼び出します。正常終了した最後の Excel セッションでアクティブだったアドインは、次の Excel セッションの開始時にアクティブ化されます。アドインは、Excel セッション中に読み込まれると、アクティブになります。アドインが Excel セッション中に非アクティブにされてから再度アクティブにされる場合の、再アクティブ化のときにこの関数が呼び出されます。 
   
-XLL �̊��ƃR�}���h�̓o�^�A�f�[�^�\���̏������A���[�U�[ �C���^�[�t�F�C�X�̃J�X�^�}�C�Y�Ȃǂ�s���ɂ́A **xlAutoOpen** ��g�p����K�v������܂��B 
+XLL の関数とコマンドの登録、データ構造の初期化、ユーザー インターフェイスのカスタマイズなどを行うには、**xlAutoOpen** を使用する必要があります。 
   
-�A�h�C���� [xlAutoRegister](xlautoregister-xlautoregister12.md) ���� [xlAutoRegister12](xlautoregister-xlautoregister12.md) �����������уG�N�X�|�[�g����ꍇ�AExcel ����� **xlAutoOpen** ����Ăяo�����Ɋ���R�}���h��A�N�e�B�u�ɂ��ēo�^���悤�Ƃ��邱�Ƃ�����܂��B���̏ꍇ�́A���܂��̓R�}���h���������@�\����悤�ɁA�A�h�C�����\���ɏ���������Ă��邱�Ƃ�m�F����K�v������܂��B�����Ȃ��Ă��Ȃ��ꍇ�A����R�}���h�̓o�^��A�K�v�ȏ������̎��s�����s���܂��B 
+アドインが [xlAutoRegister](xlautoregister-xlautoregister12.md) 関数または [xlAutoRegister12](xlautoregister-xlautoregister12.md) 関数を実装してエクスポートする場合、Excel は最初に **xlAutoOpen** 関数を呼び出さずに関数やコマンドをアクティブ化して登録しようとすることがあります。この場合は、関数またはコマンドが正しく機能するように、アドインが十分に初期化されていることを確認する必要があります。そうなっていない場合、関数やコマンドの登録や、必要な初期化の実行が失敗します。 
   
 ### <a name="xlautoclose"></a>xlAutoClose
 
-XLL ����A�N�e�B�u�������ƁAExcel �� [xlAutoClose](xlautoclose.md) ����Ăяo���܂��BExcel �Z�b�V����������ɏI������ƁA�A�h�C���͔�A�N�e�B�u������܂��BExcel �Z�b�V�������Ƀ��[�U�[���A�h�C�����A�N�e�B�u������ƁA�����Ăяo����܂��B 
+XLL ファイルが非アクティブになるたびに、Excel は [xlAutoClose](xlautoclose.md) を呼び出します。Excel セッションが正常に終了すると、アドインは非アクティブになります。Excel セッション中にユーザーがアドインを非アクティブ化する場合に、この関数は呼び出されます。 
   
-���ƃR�}���h�̓o�^����A���\�[�X�̉���A�J�X�^�}�C�Y�̉���Ȃǂ�s���ɂ́A **xlAutoClose** ��g�p����K�v������܂��B 
+関数とコマンドの登録解除、リソースの解放、カスタマイズの解除などを行うには、**xlAutoClose** を使用する必要があります。 
   
 > [!NOTE]
-> [!����] ���ƃR�}���h�̓o�^����Ɋւ��ẮA���m�̖�肪����܂��B�ڂ����́A�u[Excel �A�h�C�� (XLL) �J���ɂ�������m�̖��](known-issues-in-excel-xll-development.md)�v��������������B 
+> 関数とコマンドの登録解除に関しては、既知の問題があります。詳しくは、「[Excel XLL 開発での既知の問題](known-issues-in-excel-xll-development.md)」をご覧ください。 
   
 ### <a name="xlautoadd"></a>xlAutoAdd
 
@@ -94,18 +94,18 @@ XLL ����A�N�e�B�u�������ƁAExcel �� [xlAutoClo
   
 ### <a name="xladdinmanagerinfoxladdinmanagerinfo12"></a>xlAddInManagerInfo/xlAddInManagerInfo12
 
-�A�h�C�� �}�l�[�W���[�� Excel �Z�b�V�����ŏ��߂ČĂяo�����Ƃ��AExcel �� [xlAddInManagerInfo](xladdinmanagerinfo-xladdinmanagerinfo12.md) ����Ăяo���܂��BExcel �� 1 �Ɠ�����������n���ꍇ�A���̊��͕����� (�ʏ�́A�A�h�C���̖��O) ��Ԃ��K�v������܂��B����ȊO�̏ꍇ�́A **#VALUE!** ��Ԃ��K�v������܂��B
+アドイン マネージャーが Excel セッションで初めて呼び出されるとき、Excel は [xlAddInManagerInfo](xladdinmanagerinfo-xladdinmanagerinfo12.md) 関数を呼び出します。Excel が 1 と等しい引数を渡す場合、この関数は文字列 (通常は、アドインの名前) を返す必要があります。それ以外の場合は、**#VALUE!** を返す必要があります。
   
-Excel 2007 �ȍ~�ł́A **xlAddInManagerInfo12** ���� XLL �ɂ���ăG�N�X�|�[�g����Ă���ꍇ�AExcel �͂��̊��� **xlAddInManagerInfo** ������D�悵�ČĂяo���܂��B�o�[�W�����ɂ���� XLL �̓���ɈႢ�������邱�Ƃ����邽�߂ɁA **xlAddInManagerInfo12** ���� **xlAddInManagerInfo** ���͓�����������K�v������܂��B **xlAddInManagerInfo12** ���� **XLOPER12** �f�[�^�^��Ԃ��K�v������A **xlAddInManagerInfo** ���� **XLOPER** �f�[�^�^��Ԃ��K�v������܂��B 
+Excel 2007 以降のバージョンでは、XLL によってエクスポートされる場合には **xlAddInManagerInfo** 関数ではなく **xlAddInManagerInfo12** 関数が呼び出されます。**xlAddInManagerInfo12** 関数は、**xlAddInManagerInfo** と同じように機能して、XLL の動作におけるバージョン固有の相違点を回避する必要があります。**xlAddInManagerInfo12** 関数は **XLOPER12** データ型を返し、**xlAddInManagerInfo** は **XLOPER** データ型を返す必要があります。 
   
 ### <a name="xlautoregisterxlautoregister12"></a>xlAutoRegister/xlAutoRegister12
 
-XLM �� [REGISTER](xlautoregister-xlautoregister12.md) �܂��͂���Ɠ����� C API �� **xlfRegister** ���Ăяo���ꂽ�Ƃ��A�o�^�Ώۂ̊��̖߂�l�ƈ����̌^���w�肳��Ă��Ȃ��ƁAExcel �� [xlAutoRegister](xlfregister-form-1.md) ����Ăяo���܂��B **xlAutoRegister** ���ɂ��AXLL �͂��̓���ɂ���G�N�X�|�[�g���ꂽ���ƃR�}���h�̃��X�g��������Ă��̊�������ƂƂ�ɓo�^���A�w�肳�ꂽ�^��Ԃ����Ƃ��ł��܂��B 
+Excel は登録対象の関数の戻り値の型と引数の型がない状態で、XLM 関数 **REGISTER**、または C API の同等の [xlfRegister](xlfregister-form-1.md) 関数に対する呼び出しが実行されると、常に [xlAutoRegister 関数](xlautoregister-xlautoregister12.md)を呼び出します。**xlAutoRegister**関数により、XLL はその内部にあるエクスポートされた関数とコマンドのリストを検索してその関数を引数とともに登録し、指定された型を返すことができます。 
   
-Excel 2007 �ȍ~�ł́A **xlAddInRegister12** ���� XLL �ɂ���ăG�N�X�|�[�g����Ă���ꍇ�AExcel �͂��̊��� **xlAddInRegister** ������D�悵�ČĂяo���܂��B 
+Excel 2007 以降では、**xlAddInRegister12** 関数が XLL によってエクスポートされている場合、Excel はこの関数を **xlAddInRegister** 関数よりも優先して呼び出します。 
   
 > [!NOTE]
-> [!����] �����Ɩ߂�l�̌^�̎w�肪�Ȃ��܂܂� **xlAddInRegister**/  **xlAddInRegister12** ������o�^���悤�Ƃ���A�ċA�I�ȌĂяo���̃��[�v���������A�ŏI�I�ɂ̓R�[�� �X�^�b�N���I�[�o�[�t���[���� Excel ���I�����邩�A�������Ȃ��Ȃ�܂��B 
+> 引数と戻り値の型の指定がないままで **xlAddInRegister**/ **xlAddInRegister12** が関数を登録しようとすれば、再帰的な呼び出しのループが発生し、最終的にはコール スタックがオーバーフローして Excel が終了するか、応答しなくなります。 
   
 ### <a name="xlautofreexlautofree12"></a>xlAutoFree/xlAutoFree12
 
@@ -116,7 +116,7 @@ XLL が開放する必要があるメモリがまだあることを Excel に通
   
 ### <a name="creating-64-bit-xlls"></a>64 ビット XLL の作成
 
-Excel ����у��[�U�[��`���́A32 �r�b�g �I�y���[�e�B���O �V�X�e������D�ꂽ�p�t�H�[�}���X����҂ł��� 64 �r�b�g �I�y���[�e�B���O �V�X�e���Ŏ��s�\�ł��BExcel �́A�f�[�^�̌^�Ɋւ������܂� **XLOPER12** �\���̒l��n���܂��B **XLOPER12** �\���ƃl�C�e�B�u�^ ( **int** �܂��͂��傫���^�ɒl��ێ�����|�C���^�[�Ȃ�) �̊ԂŒl��ϊ�����ꍇ�͂����ӂ��������B 
+Excel およびユーザー定義関数は、32 ビット オペレーティング システムよりも優れたパフォーマンスを期待できる 64 ビット オペレーティング システムで実行可能です。Excel は、データの型に関する情報を含む **XLOPER12** 構造の値を渡します。**XLOPER12** 構造とネイティブ型 (**int** またはより大きい型に値を保持するポインターなど) の間で値を変換する場合はご注意ください。 
   
 ## <a name="see-also"></a>関連項目
 
