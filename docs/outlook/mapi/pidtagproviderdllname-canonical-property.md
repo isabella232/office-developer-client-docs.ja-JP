@@ -12,53 +12,53 @@ api_type:
 - COM
 ms.assetid: 9ddb38eb-9a32-4dbe-b42c-6ea9db98acd2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3bf6347102fc0865b081847a0b66763ba2654665
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 57fdc754ed4be29dbdd50a198707d8f39a14b3d4
+ms.sourcegitcommit: 18f3d9462048859fe040e12136ff66f19066764b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589484"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31980460"
 ---
 # <a name="pidtagproviderdllname-canonical-property"></a>PidTagProviderDllName 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI サービス プロバイダーのダイナミック リンク ライブラリ (DLL) の基本ファイル名が含まれています。
+MAPI サービスプロバイダーのダイナミックリンクライブラリ (DLL) のベースファイル名が含まれています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_PROVIDER_DLL_NAME、PR_PROVIDER_DLL_NAME_A、PR_PROVIDER_DLL_NAME_W  <br/> |
-|識別子:  <br/> |0x300A  <br/> |
+|識別子:  <br/> |0x300a  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |一般的な MAPI  <br/> |
+|エリア:  <br/> |MAPI 共通  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-MAPI は、DLL ファイルの名前付け規則を使用します。 ベース ファイル名には、DLL を一意に識別する最大 6 つの文字が含まれています。 MAPI では、32 ビット プラットフォーム上で動作するバージョンを識別する基本の DLL の名前に 32 の文字列を追加します。 たとえば、MAPI の名前です。DLL を指定すると、MAPI が MAPI32 名を作成します。DLL が、DLL の対応する 32 ビット バージョンを表す。
+MAPI は DLL ファイルの名前付け規則を使用します。 文字列32をベース DLL 名に追加して、32ビットプラットフォームで実行されているバージョンを識別します。 たとえば、MAPI という名前があるとします。DLL が指定されている場合、MAPI は MAPI32 という名前を作成します。dll は、対応する32ビットバージョンの dll を表します。
   
-これらのプロパティは、基本名を指定する必要があります。 MAPI では、必要に応じて文字列の 32 を追加します。 このプロパティによりエラーの一部として 32 の文字列を含みます。
+これらのプロパティは、基本名を指定する必要があります。 MAPI は、文字列32を必要に応じて追加します。 このプロパティの一部として文字列32を含めると、エラーになります。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
