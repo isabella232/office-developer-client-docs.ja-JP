@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1a4863a222eaa777897242895ea2758219eea619
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288772"
 ---
-# <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vbscript"></a><span data-ttu-id="392e8-102">MoveFirst メソッド、MoveLast メソッド、MoveNext メソッド、MovePrevious メソッドの使用例 (VBScript)</span><span class="sxs-lookup"><span data-stu-id="392e8-102">MoveFirst, MoveLast, MoveNext, and MovePrevious methods example (VBScript)</span></span>
+# <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vbscript"></a><span data-ttu-id="19a55-102">MoveFirst メソッド、MoveLast メソッド、MoveNext メソッド、MovePrevious メソッドの使用例 (VBScript)</span><span class="sxs-lookup"><span data-stu-id="19a55-102">MoveFirst, MoveLast, MoveNext, and MovePrevious methods example (VBScript)</span></span>
 
 
-<span data-ttu-id="392e8-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="392e8-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="19a55-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="19a55-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="392e8-104">この例では、与えられたコマンドに基づいて [Recordset](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) のレコード ポインターを移動するために、 [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、[MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、[MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、および [MovePrevious](recordset-object-ado.md) メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="392e8-104">This example uses the [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), and [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) methods to move the record pointer of a [Recordset](recordset-object-ado.md) based on the supplied command.</span></span>
+<span data-ttu-id="19a55-104">この例では、与えられたコマンドに基づいて [Recordset](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) のレコード ポインターを移動するために、 [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、[MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、[MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、および [MovePrevious](recordset-object-ado.md) メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="19a55-104">This example uses the [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), and [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) methods to move the record pointer of a [Recordset](recordset-object-ado.md) based on the supplied command.</span></span>
 
-<span data-ttu-id="392e8-p101">次のコードをコピーして Windows のメモ帳またはその他のテキスト エディターに貼り付け、 **MoveFirstVBS.asp** として保存してください。結果は任意のブラウザーで表示できます。</span><span class="sxs-lookup"><span data-stu-id="392e8-p101">Cut and paste the following code into Notepad or another text editor, and save it as **MoveFirstVBS.asp**. You can view the result in any browser.</span></span>
+<span data-ttu-id="19a55-p101">次のコードをコピーして Windows のメモ帳またはその他のテキスト エディターに貼り付け、 **MoveFirstVBS.asp** として保存してください。結果は任意のブラウザーで表示できます。</span><span class="sxs-lookup"><span data-stu-id="19a55-p101">Cut and paste the following code into Notepad or another text editor, and save it as **MoveFirstVBS.asp**. You can view the result in any browser.</span></span>
 
 ```vb 
  

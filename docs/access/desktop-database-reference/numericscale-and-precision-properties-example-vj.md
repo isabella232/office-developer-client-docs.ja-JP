@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 373aa8a8a2f69ff9d15891b953aac796f7f4da50
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288561"
 ---
-# <a name="numericscale-and-precision-properties-example-vj"></a><span data-ttu-id="9e238-102">NumericScale プロパティと Precision プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="9e238-102">NumericScale and Precision properties example (VJ++)</span></span>
+# <a name="numericscale-and-precision-properties-example-vj"></a><span data-ttu-id="15554-102">NumericScale プロパティと Precision プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="15554-102">NumericScale and Precision properties example (VJ++)</span></span>
 
 
-<span data-ttu-id="9e238-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="9e238-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="15554-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="15554-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="9e238-104">この例では、[NumericScale](numericscale-property-ado.md) プロパティと [Precision](precision-property-ado.md) プロパティを使って、***Pubs*** データベースの ***Discounts*** テーブル内にあるフィールドの小数点以下の桁数と精度を表示します。</span><span class="sxs-lookup"><span data-stu-id="9e238-104">This example uses the [NumericScale](numericscale-property-ado.md) and [Precision](precision-property-ado.md) properties to display the numeric scale and precision of fields in the ***Discounts*** table of the ***Pubs*** database.</span></span>
+<span data-ttu-id="15554-104">この例では、[NumericScale](numericscale-property-ado.md) プロパティと [Precision](precision-property-ado.md) プロパティを使って、***Pubs*** データベースの ***Discounts*** テーブル内にあるフィールドの小数点以下の桁数と精度を表示します。</span><span class="sxs-lookup"><span data-stu-id="15554-104">This example uses the [NumericScale](numericscale-property-ado.md) and [Precision](precision-property-ado.md) properties to display the numeric scale and precision of fields in the ***Discounts*** table of the ***Pubs*** database.</span></span>
 
 ```java 
  

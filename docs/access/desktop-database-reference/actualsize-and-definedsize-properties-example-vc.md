@@ -8,18 +8,18 @@ ms.date: 10/16/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 06398c6f7dd534c459a26b0de31342f37f22f9ec
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280489"
 ---
-# <a name="actualsize-and-definedsize-properties-example-vc"></a><span data-ttu-id="93549-102">ActualSize プロパティと DefinedSize プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="93549-102">ActualSize and DefinedSize properties example (VC++)</span></span>
+# <a name="actualsize-and-definedsize-properties-example-vc"></a><span data-ttu-id="b8d8c-102">ActualSize プロパティと DefinedSize プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="b8d8c-102">ActualSize and DefinedSize properties example (VC++)</span></span>
 
 
-<span data-ttu-id="93549-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="93549-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b8d8c-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="b8d8c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="93549-104">次の例では、[ActualSize](actualsize-property-ado.md) プロパティと [DefinedSize](definedsize-property-ado.md) プロパティを使用して、フィールドの定義されたサイズと実際のサイズを表示します。</span><span class="sxs-lookup"><span data-stu-id="93549-104">This example uses the [ActualSize](actualsize-property-ado.md) and [DefinedSize](definedsize-property-ado.md) properties to display the defined size and actual size of a field.</span></span>
+<span data-ttu-id="b8d8c-104">This example uses the [ActualSize](actualsize-property-ado.md) and [DefinedSize](definedsize-property-ado.md) properties to display the defined size and actual size of a field.</span><span class="sxs-lookup"><span data-stu-id="b8d8c-104">This example uses the [ActualSize](actualsize-property-ado.md) and [DefinedSize](definedsize-property-ado.md) properties to display the defined size and actual size of a field.</span></span>
 
 ```cpp 
  

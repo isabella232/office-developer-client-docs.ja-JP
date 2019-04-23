@@ -8,26 +8,26 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b37ccc0c9a61e00b3c2e8f5eb3367831e5ddea43
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288120"
 ---
-# <a name="pagecount-property-ado"></a><span data-ttu-id="01abc-102">PageCount プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="01abc-102">PageCount property (ADO)</span></span>
+# <a name="pagecount-property-ado"></a><span data-ttu-id="d1ce9-102">PageCount プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="d1ce9-102">PageCount property (ADO)</span></span>
 
 
-<span data-ttu-id="01abc-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="01abc-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="d1ce9-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="d1ce9-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="01abc-104">[Recordset](recordset-object-ado.md) オブジェクトに含まれるデータのページ数を示します。</span><span class="sxs-lookup"><span data-stu-id="01abc-104">Indicates how many pages of data the [Recordset](recordset-object-ado.md) object contains.</span></span>
+<span data-ttu-id="d1ce9-104">[Recordset](recordset-object-ado.md) オブジェクトに含まれるデータのページ数を示します。</span><span class="sxs-lookup"><span data-stu-id="d1ce9-104">Indicates how many pages of data the [Recordset](recordset-object-ado.md) object contains.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="01abc-105">戻り値</span><span class="sxs-lookup"><span data-stu-id="01abc-105">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d1ce9-105">戻り値</span><span class="sxs-lookup"><span data-stu-id="d1ce9-105">Return value</span></span>
 
-<span data-ttu-id="01abc-106">**Recordset** のページ数を示す長整数型 ( **Long** ) の値を返します。</span><span class="sxs-lookup"><span data-stu-id="01abc-106">Returns a **Long** value that indicates the number of pages in the **Recordset**.</span></span>
+<span data-ttu-id="d1ce9-106">**Recordset** のページ数を示す長整数型 (**Long**) の値を返します。</span><span class="sxs-lookup"><span data-stu-id="d1ce9-106">Returns a **Long** value that indicates the number of pages in the **Recordset**.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="01abc-107">解説</span><span class="sxs-lookup"><span data-stu-id="01abc-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d1ce9-107">注釈</span><span class="sxs-lookup"><span data-stu-id="d1ce9-107">Remarks</span></span>
 
-<span data-ttu-id="01abc-108">**PageCount**プロパティのデータ ページの数を決定するが、**レコード セット**オブジェクトでは使用します。</span><span class="sxs-lookup"><span data-stu-id="01abc-108">Use the **PageCount** property to determine how many pages of data are in the **Recordset** object.</span></span> <span data-ttu-id="01abc-109">*ページ*は、 [PageSize](pagesize-property-ado.md)プロパティの設定のと同じサイズのレコードのグループです。</span><span class="sxs-lookup"><span data-stu-id="01abc-109">*Pages* are groups of records whose size equals the [PageSize](pagesize-property-ado.md) property setting.</span></span> <span data-ttu-id="01abc-110">**PageSize**の値よりも少ないレコードがあるため、最後のページが完了しない場合でも、 **PageCount**の値に追加ページとしてカウントします。</span><span class="sxs-lookup"><span data-stu-id="01abc-110">Even if the last page is incomplete because there are fewer records than the **PageSize** value, it counts as an additional page in the **PageCount** value.</span></span> <span data-ttu-id="01abc-111">**Recordset**オブジェクトがこのプロパティをサポートしていない場合、値は**PageCount**は決められていないことを示す-1 になります。</span><span class="sxs-lookup"><span data-stu-id="01abc-111">If the **Recordset** object does not support this property, the value will be -1 to indicate that the **PageCount** is indeterminable.</span></span>
+<span data-ttu-id="d1ce9-108">Use the **PageCount** property to determine how many pages of data are in the **Recordset** object.</span><span class="sxs-lookup"><span data-stu-id="d1ce9-108">Use the **PageCount** property to determine how many pages of data are in the **Recordset** object.</span></span> <span data-ttu-id="d1ce9-109">*ページ*は、 [PageSize](pagesize-property-ado.md)プロパティの設定値に等しいサイズを持つレコードのグループです。</span><span class="sxs-lookup"><span data-stu-id="d1ce9-109">*Pages* are groups of records whose size equals the [PageSize](pagesize-property-ado.md) property setting.</span></span> <span data-ttu-id="d1ce9-110">Even if the last page is incomplete because there are fewer records than the **PageSize** value, it counts as an additional page in the **PageCount** value.</span><span class="sxs-lookup"><span data-stu-id="d1ce9-110">Even if the last page is incomplete because there are fewer records than the **PageSize** value, it counts as an additional page in the **PageCount** value.</span></span> <span data-ttu-id="d1ce9-111">If the **Recordset** object does not support this property, the value will be -1 to indicate that the **PageCount** is indeterminable.</span><span class="sxs-lookup"><span data-stu-id="d1ce9-111">If the **Recordset** object does not support this property, the value will be -1 to indicate that the **PageCount** is indeterminable.</span></span>
 
-<span data-ttu-id="01abc-112">ページ機能の詳細については、 **PageSize** プロパティおよび [AbsolutePage](absolutepage-property-ado.md) プロパティのトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="01abc-112">See the **PageSize** and [AbsolutePage](absolutepage-property-ado.md) properties for more on page functionality.</span></span>
+<span data-ttu-id="d1ce9-112">ページ機能の詳細については、 **PageSize** プロパティおよび [AbsolutePage](absolutepage-property-ado.md) プロパティのトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="d1ce9-112">See the **PageSize** and [AbsolutePage](absolutepage-property-ado.md) properties for more on page functionality.</span></span>
 

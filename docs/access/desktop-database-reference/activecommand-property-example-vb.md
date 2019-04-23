@@ -8,20 +8,20 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 32ab8ba94570c98da03c3effc484490c327fd0a9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282601"
 ---
-# <a name="activecommand-property-example-vb"></a><span data-ttu-id="bb62a-102">ActiveCommand プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="bb62a-102">ActiveCommand property example (VB)</span></span>
+# <a name="activecommand-property-example-vb"></a><span data-ttu-id="90f13-102">ActiveCommand プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="90f13-102">ActiveCommand property example (VB)</span></span>
 
 
-<span data-ttu-id="bb62a-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="bb62a-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="90f13-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="90f13-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="bb62a-104">次の例では、[ActiveCommand](activecommand-property-ado.md) プロパティの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="bb62a-104">This example demonstrates the [ActiveCommand](activecommand-property-ado.md) property.</span></span>
+<span data-ttu-id="90f13-104">次の例では、[ActiveCommand](activecommand-property-ado.md) プロパティの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="90f13-104">This example demonstrates the [ActiveCommand](activecommand-property-ado.md) property.</span></span>
 
-<span data-ttu-id="bb62a-105">サブルーチンが、[Recordset](recordset-object-ado.md) オブジェクトを受け取り、その **ActiveCommand** プロパティを使用して、 **Recordset** を作成したコマンド テキストとパラメーターを表示します。</span><span class="sxs-lookup"><span data-stu-id="bb62a-105">A subroutine is given a [Recordset](recordset-object-ado.md) object whose **ActiveCommand** property is used to display the command text and parameter that created the **Recordset**.</span></span>
+<span data-ttu-id="90f13-105">サブルーチンが、[Recordset](recordset-object-ado.md) オブジェクトを受け取り、その **ActiveCommand** プロパティを使用して、 **Recordset** を作成したコマンド テキストとパラメーターを表示します。</span><span class="sxs-lookup"><span data-stu-id="90f13-105">A subroutine is given a [Recordset](recordset-object-ado.md) object whose **ActiveCommand** property is used to display the command text and parameter that created the **Recordset**.</span></span>
 
 ```vb 
  
@@ -88,11 +88,11 @@ End Sub
 'EndActiveCommandVB 
 ```
 
-<span data-ttu-id="bb62a-p101">**ActiveCommandXprint** ルーチンは、 **Recordset** オブジェクトしか受け取りませんが、その **Recordset** を作成したコマンド テキストとパラメーターを表示する必要があります。これが可能なのは、関連付けられている **Command** オブジェクトを **Recordset** オブジェクトの [ActiveCommand](command-object-ado.md) プロパティから取得できるからです。</span><span class="sxs-lookup"><span data-stu-id="bb62a-p101">The **ActiveCommandXprint** routine is given only a **Recordset** object, yet it must print the command text and parameter that created the **Recordset**. This can be done because the **Recordset** object's **ActiveCommand** property yields the associated [Command](command-object-ado.md) object.</span></span>
+<span data-ttu-id="90f13-p101">**ActiveCommandXprint** ルーチンは、 **Recordset** オブジェクトしか受け取りませんが、その **Recordset** を作成したコマンド テキストとパラメーターを表示する必要があります。これが可能なのは、関連付けられている **Command** オブジェクトを **Recordset** オブジェクトの [ActiveCommand](command-object-ado.md) プロパティから取得できるからです。</span><span class="sxs-lookup"><span data-stu-id="90f13-p101">The **ActiveCommandXprint** routine is given only a **Recordset** object, yet it must print the command text and parameter that created the **Recordset**. This can be done because the **Recordset** object's **ActiveCommand** property yields the associated [Command](command-object-ado.md) object.</span></span>
 
-<span data-ttu-id="bb62a-p102">**Command** オブジェクトの [CommandText](commandtext-property-ado.md) プロパティから、**Recordset** の作成に使用されたパラメーター化されたコマンドを取得できます。**Command** オブジェクトの [Parameters](parameters-collection-ado.md) コレクションから、コマンドのパラメーター プレースホルダー ("**?**") を置き換えた値を取得できます。</span><span class="sxs-lookup"><span data-stu-id="bb62a-p102">The **Command** object's [CommandText](commandtext-property-ado.md) property yields the parameterized command that created the **Recordset**. The **Command** object's [Parameters](parameters-collection-ado.md) collection yields the value that was substituted for the command's parameter placeholder ("**?**").</span></span>
+<span data-ttu-id="90f13-p102">**Command** オブジェクトの [CommandText](commandtext-property-ado.md) プロパティから、**Recordset** の作成に使用されたパラメーター化されたコマンドを取得できます。**Command** オブジェクトの [Parameters](parameters-collection-ado.md) コレクションから、コマンドのパラメーター プレースホルダー ("**?**") を置き換えた値を取得できます。</span><span class="sxs-lookup"><span data-stu-id="90f13-p102">The **Command** object's [CommandText](commandtext-property-ado.md) property yields the parameterized command that created the **Recordset**. The **Command** object's [Parameters](parameters-collection-ado.md) collection yields the value that was substituted for the command's parameter placeholder ("**?**").</span></span>
 
-<span data-ttu-id="bb62a-110">最後に、エラー メッセージまたは作成者の名前と ID が表示されます。</span><span class="sxs-lookup"><span data-stu-id="bb62a-110">Finally, an error message or the author's name and ID are printed.</span></span>
+<span data-ttu-id="90f13-110">最後に、エラー メッセージまたは作成者の名前と ID が表示されます。</span><span class="sxs-lookup"><span data-stu-id="90f13-110">Finally, an error message or the author's name and ID are printed.</span></span>
 
 ```vb 
  

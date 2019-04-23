@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 76bc583804942f139e311aa75206ecf971ddc2a1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288435"
 ---
-# <a name="open-and-close-methods-example-vbscript"></a><span data-ttu-id="43ee8-102">Open メソッドと Close メソッドの使用例 (VBScript)</span><span class="sxs-lookup"><span data-stu-id="43ee8-102">Open and Close methods example (VBScript)</span></span>
+# <a name="open-and-close-methods-example-vbscript"></a><span data-ttu-id="7f68d-102">Open メソッドと Close メソッドの使用例 (VBScript)</span><span class="sxs-lookup"><span data-stu-id="7f68d-102">Open and Close methods example (VBScript)</span></span>
 
 
-<span data-ttu-id="43ee8-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="43ee8-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="7f68d-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="7f68d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="43ee8-104">この例では、既に開かれている [Recordset](open-method-ado-recordset.md) オブジェクトと [Connection](close-method-ado.md) オブジェクトの両方に対し、 [Open](recordset-object-ado.md) メソッドと [Close](connection-object-ado.md) メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="43ee8-104">This example uses the [Open](open-method-ado-recordset.md) and [Close](close-method-ado.md) methods on both [Recordset](recordset-object-ado.md) and [Connection](connection-object-ado.md) objects that have been opened.</span></span>
+<span data-ttu-id="7f68d-104">この例では、既に開かれている [Recordset](open-method-ado-recordset.md) オブジェクトと [Connection](close-method-ado.md) オブジェクトの両方に対し、 [Open](recordset-object-ado.md) メソッドと [Close](connection-object-ado.md) メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="7f68d-104">This example uses the [Open](open-method-ado-recordset.md) and [Close](close-method-ado.md) methods on both [Recordset](recordset-object-ado.md) and [Connection](connection-object-ado.md) objects that have been opened.</span></span>
 
-<span data-ttu-id="43ee8-105">次の例は、Active Server Pages (ASP) で使用してください。</span><span class="sxs-lookup"><span data-stu-id="43ee8-105">Use the following example in an Active Server Page (ASP).</span></span> <span data-ttu-id="43ee8-106">**Find** を使用してファイル Adovbs.inc を検索し、使用するディレクトリに置きます。</span><span class="sxs-lookup"><span data-stu-id="43ee8-106">Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use.</span></span> <span data-ttu-id="43ee8-107">次のコードをメモ帳または別のテキスト エディターに貼り付けますを切り取って**OpenVBS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="43ee8-107">Cut and paste the following code into Notepad or another text editor, and save it as **OpenVBS.asp**.</span></span> <span data-ttu-id="43ee8-108">結果は任意のブラウザーで表示できます。</span><span class="sxs-lookup"><span data-stu-id="43ee8-108">You can view the result in any browser.</span></span>
+<span data-ttu-id="7f68d-p101">Use the following example in an Active Server Page (ASP). Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code into Notepad or another text editor, and save it as **OpenVBS.asp**. You can view the result in any browser.</span><span class="sxs-lookup"><span data-stu-id="7f68d-p101">Use the following example in an Active Server Page (ASP). Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code into Notepad or another text editor, and save it as **OpenVBS.asp**. You can view the result in any browser.</span></span>
 
 ```vb 
  

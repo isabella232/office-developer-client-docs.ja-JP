@@ -8,30 +8,30 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a80b089fa72ef01eb1b4b2f1dae494e002c6a6fb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281957"
 ---
-# <a name="accessing-rows-in-a-hierarchical-recordset"></a><span data-ttu-id="dba77-102">階層レコードセット内の行へのアクセス</span><span class="sxs-lookup"><span data-stu-id="dba77-102">Accessing rows in a hierarchical Recordset</span></span>
+# <a name="accessing-rows-in-a-hierarchical-recordset"></a><span data-ttu-id="44e55-102">階層レコードセット内の行へのアクセス</span><span class="sxs-lookup"><span data-stu-id="44e55-102">Accessing rows in a hierarchical Recordset</span></span>
 
-<span data-ttu-id="dba77-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="dba77-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="44e55-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="44e55-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="dba77-104">次の例では、階層 [Recordset](recordset-object-ado.md) 内の行へのアクセスに必要な手順を示します。</span><span class="sxs-lookup"><span data-stu-id="dba77-104">The following example shows the steps necessary to access rows in a hierarchical [Recordset](recordset-object-ado.md):</span></span>
+<span data-ttu-id="44e55-104">次の例では、階層 [Recordset](recordset-object-ado.md) 内の行へのアクセスに必要な手順を示します。</span><span class="sxs-lookup"><span data-stu-id="44e55-104">The following example shows the steps necessary to access rows in a hierarchical [Recordset](recordset-object-ado.md):</span></span>
 
-1. <span data-ttu-id="dba77-105">authors および titleauthor テーブルの **Recordset** オブジェクトが、author ID によって関連付けられます。</span><span class="sxs-lookup"><span data-stu-id="dba77-105">**Recordset** objects from the authors and titleauthor tables are related by author ID.</span></span>
+1. <span data-ttu-id="44e55-105">authors および titleauthor テーブルの **Recordset** オブジェクトが、author ID によって関連付けられます。</span><span class="sxs-lookup"><span data-stu-id="44e55-105">**Recordset** objects from the authors and titleauthor tables are related by author ID.</span></span>
 
-2. <span data-ttu-id="dba77-106">外側のループで、各作成者の姓名、州、および ID が表示されます。</span><span class="sxs-lookup"><span data-stu-id="dba77-106">The outer loop displays each author's first and last name, state, and identification.</span></span>
+2. <span data-ttu-id="44e55-106">外側のループで、各作成者の姓名、州、および ID が表示されます。</span><span class="sxs-lookup"><span data-stu-id="44e55-106">The outer loop displays each author's first and last name, state, and identification.</span></span>
 
-3. <span data-ttu-id="dba77-107">各行に対して追加された **Recordset** が **Fields** コレクションから取得され、*rstTitleAuthor* に割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="dba77-107">The appended **Recordset** for each row is retrieved from the **Fields** collection and assigned to *rstTitleAuthor*.</span></span>
+3. <span data-ttu-id="44e55-107">各行に対して追加された **Recordset** が **Fields** コレクションから取得され、*rstTitleAuthor* に割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="44e55-107">The appended **Recordset** for each row is retrieved from the **Fields** collection and assigned to *rstTitleAuthor*.</span></span>
 
-4. <span data-ttu-id="dba77-108">内側のループで、追加された **Recordset** の各行からの 4 つのフィールドが表示されます。</span><span class="sxs-lookup"><span data-stu-id="dba77-108">The inner loop displays four fields from each row in the appended **Recordset**.</span></span>
+4. <span data-ttu-id="44e55-108">内側のループで、追加された **Recordset** の各行からの 4 つのフィールドが表示されます。</span><span class="sxs-lookup"><span data-stu-id="44e55-108">The inner loop displays four fields from each row in the appended **Recordset**.</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="dba77-109">[StayInSync](stayinsync-property-ado.md)プロパティは、明示的に変更するには外側のループの各イテレーションでこの章を確認するための説明のため、FALSE に設定されます。</span><span class="sxs-lookup"><span data-stu-id="dba77-109">The [StayInSync](stayinsync-property-ado.md) property is set to FALSE for purposes of illustration, so you can see the chapter change explicitly in each iteration of the outer loop.</span></span> <span data-ttu-id="dba77-110">ただし、手順 2 にある最初の行の前に手順 3 の割り当て作業を移動すると、割り当てが 1 回だけで済むので、より効率的になります。</span><span class="sxs-lookup"><span data-stu-id="dba77-110">However, the example will be more efficient if the assignment in step 3 is moved before the first line in step 2, so that the assignment is performed only once.</span></span> <span data-ttu-id="dba77-111">*最初*は暗黙的に、自動的に変更する対応する章を*rst*が新しい行に移動したときに**StayInSync**プロパティを true に設定します。</span><span class="sxs-lookup"><span data-stu-id="dba77-111">Set the **StayInSync** property to TRUE, so that *rstTitleAuthor* will implicitly and automatically change to the corresponding chapter whenever *rst* moves to a new row.</span></span>
+> <span data-ttu-id="44e55-109">[StayInSync](stayinsync-property-ado.md)プロパティは、説明のために FALSE に設定されているので、外側のループの各反復処理でチャプターを明示的に変更できます。</span><span class="sxs-lookup"><span data-stu-id="44e55-109">The [StayInSync](stayinsync-property-ado.md) property is set to FALSE for purposes of illustration, so you can see the chapter change explicitly in each iteration of the outer loop.</span></span> <span data-ttu-id="44e55-110">ただし、手順 2 にある最初の行の前に手順 3 の割り当て作業を移動すると、割り当てが 1 回だけで済むので、より効率的になります。</span><span class="sxs-lookup"><span data-stu-id="44e55-110">However, the example will be more efficient if the assignment in step 3 is moved before the first line in step 2, so that the assignment is performed only once.</span></span> <span data-ttu-id="44e55-111">**StayInSync**プロパティを TRUE に設定すると、 *rstTitleAuthor*が暗黙的に自動的に対応するチャプターに変更されます。この場合、 *rst*が新しい行に移動します。</span><span class="sxs-lookup"><span data-stu-id="44e55-111">Set the **StayInSync** property to TRUE, so that *rstTitleAuthor* will implicitly and automatically change to the corresponding chapter whenever *rst* moves to a new row.</span></span>
 
-<span data-ttu-id="dba77-112">**例**</span><span class="sxs-lookup"><span data-stu-id="dba77-112">**Example**</span></span>
+<span data-ttu-id="44e55-112">**例**</span><span class="sxs-lookup"><span data-stu-id="44e55-112">**Example**</span></span>
 
 ```vb 
  

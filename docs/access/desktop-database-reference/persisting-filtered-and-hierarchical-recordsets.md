@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1332d4348c993f94d8b2ee61280b8b35c02324c4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28725946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287588"
 ---
-# <a name="persisting-filtered-and-hierarchical-recordsets"></a><span data-ttu-id="76b54-102">フィルター済みのレコードセットと階層レコードセットの永続化</span><span class="sxs-lookup"><span data-stu-id="76b54-102">Persisting filtered and hierarchical Recordsets</span></span>
+# <a name="persisting-filtered-and-hierarchical-recordsets"></a><span data-ttu-id="a40f8-102">フィルター済みのレコードセットと階層レコードセットの永続化</span><span class="sxs-lookup"><span data-stu-id="a40f8-102">Persisting filtered and hierarchical Recordsets</span></span>
 
 
-<span data-ttu-id="76b54-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="76b54-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="a40f8-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="a40f8-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="76b54-p101">[Recordset](filter-property-ado.md) で **Filter** プロパティが有効になっている場合、フィルターでアクセスできる行のみが保存されます。 **Recordset** が階層の場合、現在の子 **Recordset** とその子が、親 **Recordset** と共に保存されます。子 **Recordset** の **Save** メソッドを呼び出すと、子とそのすべての子は保存されますが、親は保存されません。階層 **Recordset** の詳細については、「 [9 章: データ シェイプ](chapter-9-data-shaping.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="76b54-p101">If the [Filter](filter-property-ado.md) property is in effect for the **Recordset**, only the rows accessible under the filter are saved. If the **Recordset** is hierarchical, the current child **Recordset** and its children are saved, including the parent **Recordset**. If the **Save** method of a child **Recordset** is called, the child and all its children are saved, but the parent is not. For more information about hierarchical **Recordsets**, see [Chapter 9: Data Shaping](chapter-9-data-shaping.md).</span></span>
+<span data-ttu-id="a40f8-p101">[Recordset](filter-property-ado.md) で **Filter** プロパティが有効になっている場合、フィルターでアクセスできる行のみが保存されます。 **Recordset** が階層の場合、現在の子 **Recordset** とその子が、親 **Recordset** と共に保存されます。子 **Recordset** の **Save** メソッドを呼び出すと、子とそのすべての子は保存されますが、親は保存されません。階層 **Recordset** の詳細については、「 [9 章: データ シェイプ](chapter-9-data-shaping.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a40f8-p101">If the [Filter](filter-property-ado.md) property is in effect for the **Recordset**, only the rows accessible under the filter are saved. If the **Recordset** is hierarchical, the current child **Recordset** and its children are saved, including the parent **Recordset**. If the **Save** method of a child **Recordset** is called, the child and all its children are saved, but the parent is not. For more information about hierarchical **Recordsets**, see [Chapter 9: Data Shaping](chapter-9-data-shaping.md).</span></span>
 
 
 > [!NOTE]
-> <span data-ttu-id="76b54-p102">[!メモ] 階層 **Recordset** (データ シェイプ) を XML 形式で保存する場合、いくつかの制限が適用されます。詳細については、「 [XML の階層 Recordset](hierarchical-recordsets-in-xml.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="76b54-p102">Some limitations apply when saving hierarchical **Recordsets** (data shapes) in XML format. For more information, see [Hierarchical Recordsets in XML](hierarchical-recordsets-in-xml.md).</span></span>
+> <span data-ttu-id="a40f8-p102">[!メモ] 階層 **Recordset** (データ シェイプ) を XML 形式で保存する場合、いくつかの制限が適用されます。詳細については、「 [XML の階層 Recordset](hierarchical-recordsets-in-xml.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a40f8-p102">Some limitations apply when saving hierarchical **Recordsets** (data shapes) in XML format. For more information, see [Hierarchical Recordsets in XML](hierarchical-recordsets-in-xml.md).</span></span>
 
 

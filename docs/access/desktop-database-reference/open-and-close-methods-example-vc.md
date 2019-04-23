@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9f9d226f33fba327d3784d18d631f6c0c74a337a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288414"
 ---
-# <a name="open-and-close-methods-example-vc"></a><span data-ttu-id="db4cf-102">Open メソッドと Close メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="db4cf-102">Open and Close methods example (VC++)</span></span>
+# <a name="open-and-close-methods-example-vc"></a><span data-ttu-id="eefb9-102">Open メソッドと Close メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="eefb9-102">Open and Close methods example (VC++)</span></span>
 
 
-<span data-ttu-id="db4cf-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="db4cf-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="eefb9-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="eefb9-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="db4cf-104">この例では、開かれている **Recordset** オブジェクトと [Connection](close-method-ado.md) オブジェクトの両方に対して、 [Open](recordset-object-ado.md) メソッドと [Close](connection-object-ado.md) メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="db4cf-104">This example uses the **Open** and [Close](close-method-ado.md) methods on both [Recordset](recordset-object-ado.md) and [Connection](connection-object-ado.md) objects that have been opened.</span></span>
+<span data-ttu-id="eefb9-104">この例では、開かれている **Recordset** オブジェクトと [Connection](close-method-ado.md) オブジェクトの両方に対して、 [Open](recordset-object-ado.md) メソッドと [Close](connection-object-ado.md) メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="eefb9-104">This example uses the **Open** and [Close](close-method-ado.md) methods on both [Recordset](recordset-object-ado.md) and [Connection](connection-object-ado.md) objects that have been opened.</span></span>
 
 ```cpp 
  
@@ -219,7 +219,7 @@ void PrintComError(_com_error &e)
 // EndOpenCpp 
 ```
 
-<span data-ttu-id="db4cf-105">**OpenX.h**</span><span class="sxs-lookup"><span data-stu-id="db4cf-105">**OpenX.h**</span></span>
+<span data-ttu-id="eefb9-105">**openx**</span><span class="sxs-lookup"><span data-stu-id="eefb9-105">**OpenX.h**</span></span>
 
 ```cpp 
  

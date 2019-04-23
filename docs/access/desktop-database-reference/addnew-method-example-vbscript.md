@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 86fc5698cd6463c7236ab4f82a2f4f74374d664e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281854"
 ---
-# <a name="addnew-method-example-vbscript"></a><span data-ttu-id="04317-102">AddNew メソッドの使用例 (VBScript)</span><span class="sxs-lookup"><span data-stu-id="04317-102">AddNew method example (VBScript)</span></span>
+# <a name="addnew-method-example-vbscript"></a><span data-ttu-id="8161a-102">AddNew メソッドの使用例 (VBScript)</span><span class="sxs-lookup"><span data-stu-id="8161a-102">AddNew method example (VBScript)</span></span>
 
 
-<span data-ttu-id="04317-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="04317-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="8161a-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="8161a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="04317-104">この例では、[AddNew](addnew-method-ado.md) メソッドを使用して、指定された名前で新しいレコードを作成します。</span><span class="sxs-lookup"><span data-stu-id="04317-104">This example uses the [AddNew](addnew-method-ado.md) method to create a new record with the specified name.</span></span>
+<span data-ttu-id="8161a-104">この例では、[AddNew](addnew-method-ado.md) メソッドを使用して、指定された名前で新しいレコードを作成します。</span><span class="sxs-lookup"><span data-stu-id="8161a-104">This example uses the [AddNew](addnew-method-ado.md) method to create a new record with the specified name.</span></span>
 
-<span data-ttu-id="04317-105">次の例は、Active Server Pages (ASP) で使用してください。</span><span class="sxs-lookup"><span data-stu-id="04317-105">Use the following example in an Active Server Page (ASP).</span></span> <span data-ttu-id="04317-106">**Find** を使用してファイル Adovbs.inc を検索し、使用するディレクトリに置きます。</span><span class="sxs-lookup"><span data-stu-id="04317-106">Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use.</span></span> <span data-ttu-id="04317-107">メモ帳または別のテキスト エディターに以下のコードを切り取って**addnewvbs.asp**保存します。</span><span class="sxs-lookup"><span data-stu-id="04317-107">Cut and paste the following code to Notepad or another text editor, and save it as **AddNewVBS.asp**.</span></span> <span data-ttu-id="04317-108">任意のクライアント ブラウザーに結果を表示します。</span><span class="sxs-lookup"><span data-stu-id="04317-108">You can view the result in any client browser.</span></span>
+<span data-ttu-id="8161a-p101">Use the following example in an Active Server Page (ASP). Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code to Notepad or another text editor, and save it as **AddNewVBS.asp**. You can view the result in any client browser.</span><span class="sxs-lookup"><span data-stu-id="8161a-p101">Use the following example in an Active Server Page (ASP). Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code to Notepad or another text editor, and save it as **AddNewVBS.asp**. You can view the result in any client browser.</span></span>
 
-<span data-ttu-id="04317-109">例を実行するには、HTML フォームで新しいレコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="04317-109">To exercise the example, add a new record in the HTML form.</span></span> <span data-ttu-id="04317-110">[**新規追加**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="04317-110">Click **Add New**.</span></span> <span data-ttu-id="04317-111">不要なレコードを削除する[削除メソッドの例](delete-method-example-vbscript.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="04317-111">See the [Delete Method Example](delete-method-example-vbscript.md) to remove unwanted records.</span></span>
+<span data-ttu-id="8161a-p102">To exercise the example, add a new record in the HTML form. Click **Add New**. See the [Delete Method Example](delete-method-example-vbscript.md) to remove unwanted records.</span><span class="sxs-lookup"><span data-stu-id="8161a-p102">To exercise the example, add a new record in the HTML form. Click **Add New**. See the [Delete Method Example](delete-method-example-vbscript.md) to remove unwanted records.</span></span>
 
 ```vb
  

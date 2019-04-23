@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d452408337ed1aabfb94a224af4c1f1ee84a3961
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288540"
 ---
-# <a name="numericscale-and-precision-properties-example-vc"></a><span data-ttu-id="13478-102">NumericScale プロパティと Precision プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="13478-102">NumericScale and Precision properties example (VC++)</span></span>
+# <a name="numericscale-and-precision-properties-example-vc"></a><span data-ttu-id="b4eab-102">NumericScale プロパティと Precision プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="b4eab-102">NumericScale and Precision properties example (VC++)</span></span>
 
 
-<span data-ttu-id="13478-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="13478-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b4eab-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="b4eab-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="13478-104">ここでは、[Column](numericscale-property-adox.md) オブジェクトの [NumericScale](precision-property-adox.md) プロパティおよび [Precision](column-object-adox.md) プロパティの使用例を示します。</span><span class="sxs-lookup"><span data-stu-id="13478-104">This example demonstrates the [NumericScale](numericscale-property-adox.md) and [Precision](precision-property-adox.md) properties of the [Column](column-object-adox.md) object.</span></span> <span data-ttu-id="13478-105">このコードでは、*ノースウィンド*データベースの [**受注明細**] テーブルの値を表示します。</span><span class="sxs-lookup"><span data-stu-id="13478-105">This code displays their value for the **Order Details** table of the *Northwind* database.</span></span>
+<span data-ttu-id="b4eab-p101">ここでは、[Column](column-object-adox.md) オブジェクトの [NumericScale](numericscale-property-adox.md) プロパティおよび [Precision](precision-property-adox.md) プロパティの使用例を示します。このコードは、*Northwind* データベースの **Order Details** テーブルを取得して、これらのプロパティの値を表示します。</span><span class="sxs-lookup"><span data-stu-id="b4eab-p101">This example demonstrates the [NumericScale](numericscale-property-adox.md) and [Precision](precision-property-adox.md) properties of the [Column](column-object-adox.md) object. This code displays their value for the **Order Details** table of the *Northwind* database.</span></span>
 
 ```cpp 
  

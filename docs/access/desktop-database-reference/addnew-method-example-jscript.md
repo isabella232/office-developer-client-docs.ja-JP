@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 11a280ffc1434d58b73169231b47f1ff132e1263
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280210"
 ---
-# <a name="addnew-method-example-jscript"></a><span data-ttu-id="41222-102">AddNew メソッドの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="41222-102">AddNew method example (JScript)</span></span>
+# <a name="addnew-method-example-jscript"></a><span data-ttu-id="60c7d-102">AddNew メソッドの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="60c7d-102">AddNew method example (JScript)</span></span>
 
-<span data-ttu-id="41222-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="41222-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="60c7d-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="60c7d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="41222-p101">この例では、[AddNew](addnew-method-ado.md) メソッドを使用して、指定された名前で新しいレコードを作成します。以下のコードをコピーしてメモ帳などのテキスト エディターに貼り付け、 **AddNewJS.asp** という名前で保存してください。</span><span class="sxs-lookup"><span data-stu-id="41222-p101">This example uses the [AddNew](addnew-method-ado.md) method to create a new record with the specified name. Cut and paste the following code to Notepad or another text editor, and save it as **AddNewJS.asp**.</span></span>
+<span data-ttu-id="60c7d-p101">この例では、[AddNew](addnew-method-ado.md) メソッドを使用して、指定された名前で新しいレコードを作成します。以下のコードをコピーしてメモ帳などのテキスト エディターに貼り付け、 **AddNewJS.asp** という名前で保存してください。</span><span class="sxs-lookup"><span data-stu-id="60c7d-p101">This example uses the [AddNew](addnew-method-ado.md) method to create a new record with the specified name. Cut and paste the following code to Notepad or another text editor, and save it as **AddNewJS.asp**.</span></span>
 
 ```javascript
 <!-- BeginAddNewJS --> 

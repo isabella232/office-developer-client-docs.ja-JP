@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1f7c1d48bca7460ca5dc7aea4c65ffd25ea5c0ac
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288218"
 ---
-# <a name="optimize-property-example-vc"></a><span data-ttu-id="457fc-102">Optimize プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="457fc-102">Optimize property example (VC++)</span></span>
+# <a name="optimize-property-example-vc"></a><span data-ttu-id="ec16e-102">Optimize プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="ec16e-102">Optimize property example (VC++)</span></span>
 
 
-<span data-ttu-id="457fc-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="457fc-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="ec16e-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="ec16e-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="457fc-104">この例では、[Field](field-object-ado.md) オブジェクトの動的 Optimize プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="457fc-104">This example demonstrates the [Field](field-object-ado.md) object dynamic Optimize property.</span></span> <span data-ttu-id="457fc-105">***Pubs***データベースの***Authors***テーブルの***zip***フィールドのインデックスはありません。</span><span class="sxs-lookup"><span data-stu-id="457fc-105">The ***zip*** field of the ***Authors*** table in the ***Pubs*** database is not indexed.</span></span> <span data-ttu-id="457fc-106">[Optimize](optimize-property-dynamic-ado.md)プロパティを [ ***zip*** ] フィールドを**True**に設定は、ADO [Find](find-method-ado.md)メソッドのパフォーマンスが向上するインデックスを作成するを許可します。</span><span class="sxs-lookup"><span data-stu-id="457fc-106">Setting the [Optimize](optimize-property-dynamic-ado.md) property to **True** on the ***zip*** field authorizes ADO to build an index that improves the performance of the [Find](find-method-ado.md) method.</span></span>
+<span data-ttu-id="ec16e-104">この例では、[Field](field-object-ado.md) オブジェクトの動的 Optimize プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="ec16e-104">This example demonstrates the [Field](field-object-ado.md) object dynamic Optimize property.</span></span> <span data-ttu-id="ec16e-105">***Pubs*** データベース内の ***Authors*** テーブルの ***zip*** フィールドには、インデックスが作成されていません。</span><span class="sxs-lookup"><span data-stu-id="ec16e-105">The ***zip*** field of the ***Authors*** table in the ***Pubs*** database is not indexed.</span></span> <span data-ttu-id="ec16e-106">**zip** フィールドの [Optimize](optimize-property-dynamic-ado.md) プロパティを ***True*** に設定すると、ADO によってインデックスが作成され、[Find](find-method-ado.md) メソッドのパフォーマンスが向上します。</span><span class="sxs-lookup"><span data-stu-id="ec16e-106">Setting the [Optimize](optimize-property-dynamic-ado.md) property to **True** on the ***zip*** field authorizes ADO to build an index that improves the performance of the [Find](find-method-ado.md) method.</span></span>
 
 ```cpp 
  

@@ -8,17 +8,17 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ab6600c6fd1794e860f432f41e4733690cc516af
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280706"
 ---
-# <a name="absolutepage-pagecount-and-pagesize-properties-example-jscript"></a><span data-ttu-id="83576-102">AbsolutePage プロパティ、PageCount プロパティ、PageSize プロパティの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="83576-102">AbsolutePage, PageCount, and PageSize properties example (JScript)</span></span>
+# <a name="absolutepage-pagecount-and-pagesize-properties-example-jscript"></a><span data-ttu-id="af2d3-102">AbsolutePage プロパティ、PageCount プロパティ、PageSize プロパティの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="af2d3-102">AbsolutePage, PageCount, and PageSize properties example (JScript)</span></span>
 
-<span data-ttu-id="83576-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="83576-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="af2d3-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="af2d3-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="83576-104">次の例では、[AbsolutePage](absolutepage-property-ado.md) プロパティ、[PageCount](pagecount-property-ado.md) プロパティ、および [PageSize](pagesize-property-ado.md) プロパティを使用して、***Employee*** テーブルから取得した名前と雇用年月日を一度に 5 レコードずつ表示します。</span><span class="sxs-lookup"><span data-stu-id="83576-104">This example uses the [AbsolutePage](absolutepage-property-ado.md), [PageCount](pagecount-property-ado.md), and [PageSize](pagesize-property-ado.md) properties to display names and hire dates from the ***Employees*** table, five records at a time.</span></span> <span data-ttu-id="83576-105">切り取りメモ帳または別のテキスト エディターに次のコードを貼り付けして**AbsolutePageJS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="83576-105">Cut and paste the following code to Notepad or another text editor, and save it as **AbsolutePageJS.asp**.</span></span>
+<span data-ttu-id="af2d3-104">次の例では、[AbsolutePage](absolutepage-property-ado.md) プロパティ、[PageCount](pagecount-property-ado.md) プロパティ、および [PageSize](pagesize-property-ado.md) プロパティを使用して、***Employee*** テーブルから取得した名前と雇用年月日を一度に 5 レコードずつ表示します。</span><span class="sxs-lookup"><span data-stu-id="af2d3-104">This example uses the [AbsolutePage](absolutepage-property-ado.md), [PageCount](pagecount-property-ado.md), and [PageSize](pagesize-property-ado.md) properties to display names and hire dates from the ***Employees*** table, five records at a time.</span></span> <span data-ttu-id="af2d3-105">Cut and paste the following code to Notepad or another text editor, and save it as **AbsolutePageJS.asp**.</span><span class="sxs-lookup"><span data-stu-id="af2d3-105">Cut and paste the following code to Notepad or another text editor, and save it as **AbsolutePageJS.asp**.</span></span>
 
 ```javascript
 <!-- BeginAbsolutePageJS --> 

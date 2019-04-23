@@ -8,17 +8,17 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 598cfa0cc7d35586e02f003ac28401f72a5e2929
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280640"
 ---
-# <a name="activecommand-property-example-jscript"></a><span data-ttu-id="22110-102">ActiveCommand プロパティの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="22110-102">ActiveCommand property example (JScript)</span></span>
+# <a name="activecommand-property-example-jscript"></a><span data-ttu-id="d4dfa-102">ActiveCommand プロパティの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="d4dfa-102">ActiveCommand property example (JScript)</span></span>
 
-<span data-ttu-id="22110-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="22110-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="d4dfa-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="d4dfa-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="22110-104">次の例では、[ActiveCommand](activecommand-property-ado.md) プロパティの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="22110-104">This example demonstrates the [ActiveCommand](activecommand-property-ado.md) property.</span></span> <span data-ttu-id="22110-105">切り取りメモ帳または別のテキスト エディターに次のコードを貼り付けして**ActiveCommandJS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="22110-105">Cut and paste the following code to Notepad or another text editor, and save it as **ActiveCommandJS.asp**.</span></span>
+<span data-ttu-id="d4dfa-p101">This example demonstrates the [ActiveCommand](activecommand-property-ado.md) property. Cut and paste the following code to Notepad or another text editor, and save it as **ActiveCommandJS.asp**.</span><span class="sxs-lookup"><span data-stu-id="d4dfa-p101">This example demonstrates the [ActiveCommand](activecommand-property-ado.md) property. Cut and paste the following code to Notepad or another text editor, and save it as **ActiveCommandJS.asp**.</span></span>
 
 ```javascript
 <!-- BeginActiveCommandJS --> 

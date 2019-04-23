@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3e879df56cbf3c35aae67ece0e4c464bc7587e63
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287770"
 ---
-# <a name="parentcatalog-property-example-vc"></a><span data-ttu-id="91da8-102">ParentCatalog プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="91da8-102">ParentCatalog property example (VC++)</span></span>
+# <a name="parentcatalog-property-example-vc"></a><span data-ttu-id="2a791-102">ParentCatalog プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="2a791-102">ParentCatalog property example (VC++)</span></span>
 
 
-<span data-ttu-id="91da8-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="91da8-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="2a791-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="2a791-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="91da8-p101">次のコードでは、テーブルをカタログに追加する前に プロバイダー に固有のプロパティにアクセスするための、[ParentCatalog](parentcatalog-property-adox.md) プロパティの使用方法を示します。このプロパティは、Microsoft Jet データベース内に AutoIncrement フィールドを作成する AutoIncrement です。</span><span class="sxs-lookup"><span data-stu-id="91da8-p101">The following code demonstrates how to use the [ParentCatalog](parentcatalog-property-adox.md) property to access a provider-specific property prior to appending a table to a catalog. The property is AutoIncrement, which creates an AutoIncrement field in a Microsoft Jet database.</span></span>
+<span data-ttu-id="2a791-p101">次のコードでは、テーブルをカタログに追加する前に プロバイダー に固有のプロパティにアクセスするための、[ParentCatalog](parentcatalog-property-adox.md) プロパティの使用方法を示します。このプロパティは、Microsoft Jet データベース内に AutoIncrement フィールドを作成する AutoIncrement です。</span><span class="sxs-lookup"><span data-stu-id="2a791-p101">The following code demonstrates how to use the [ParentCatalog](parentcatalog-property-adox.md) property to access a provider-specific property prior to appending a table to a catalog. The property is AutoIncrement, which creates an AutoIncrement field in a Microsoft Jet database.</span></span>
 
 ```cpp 
  

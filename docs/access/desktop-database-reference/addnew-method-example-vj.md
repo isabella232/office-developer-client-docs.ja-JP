@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1ec0bc0bc2bcb355a2d9d3e37f94c50b7620e60b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281861"
 ---
-# <a name="addnew-method-example-vj"></a><span data-ttu-id="88632-102">AddNew メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="88632-102">AddNew method example (VJ++)</span></span>
+# <a name="addnew-method-example-vj"></a><span data-ttu-id="dc087-102">AddNew メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="dc087-102">AddNew method example (VJ++)</span></span>
 
 
-<span data-ttu-id="88632-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="88632-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="dc087-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="dc087-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="88632-104">この例では、 [AddNew](addnew-method-ado.md) メソッドを使用して、指定した名前を持つ新しいレコードを作成します。</span><span class="sxs-lookup"><span data-stu-id="88632-104">This example uses the [AddNew](addnew-method-ado.md) method to create a new record with the specified name.</span></span>
+<span data-ttu-id="dc087-104">この例では、 [AddNew](addnew-method-ado.md) メソッドを使用して、指定した名前を持つ新しいレコードを作成します。</span><span class="sxs-lookup"><span data-stu-id="dc087-104">This example uses the [AddNew](addnew-method-ado.md) method to create a new record with the specified name.</span></span>
 
 ```java 
  

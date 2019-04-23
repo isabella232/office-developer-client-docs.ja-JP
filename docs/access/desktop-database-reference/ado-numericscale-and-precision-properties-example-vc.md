@@ -1,5 +1,5 @@
 ---
-title: ADO NumericScale と Precision プロパティの使用例 (vc++)
+title: ADO numericscale プロパティと Precision プロパティの使用例 (VC + +)
 TOCTitle: NumericScale and Precision properties example (VC++)
 ms:assetid: f0bc84c6-5563-509c-9b4e-3fb45c70a04e
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250225(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 98bea29dbae3ffe8b0b0f7158d29213be8a3a1a0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283269"
 ---
-# <a name="ado-numericscale-and-precision-properties-example-vc"></a><span data-ttu-id="2e4a6-102">ADO NumericScale と Precision プロパティの使用例 (vc++)</span><span class="sxs-lookup"><span data-stu-id="2e4a6-102">ADO NumericScale and Precision properties example (VC++)</span></span>
+# <a name="ado-numericscale-and-precision-properties-example-vc"></a><span data-ttu-id="361c0-102">ADO numericscale プロパティと Precision プロパティの使用例 (VC + +)</span><span class="sxs-lookup"><span data-stu-id="361c0-102">ADO NumericScale and Precision properties example (VC++)</span></span>
 
 
-<span data-ttu-id="2e4a6-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="2e4a6-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="361c0-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="361c0-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="2e4a6-104">この例では、[NumericScale](numericscale-property-ado.md) プロパティと [Precision](precision-property-ado.md) プロパティを使って、***Pubs*** データベースの ***Discounts*** テーブル内にあるフィールドの小数点以下の桁数と精度を表示します。</span><span class="sxs-lookup"><span data-stu-id="2e4a6-104">This example uses the [NumericScale](numericscale-property-ado.md) and [Precision](precision-property-ado.md) properties to display the numeric scale and precision of fields in the ***Discounts*** table of the ***Pubs*** database.</span></span>
+<span data-ttu-id="361c0-104">この例では、[NumericScale](numericscale-property-ado.md) プロパティと [Precision](precision-property-ado.md) プロパティを使って、***Pubs*** データベースの ***Discounts*** テーブル内にあるフィールドの小数点以下の桁数と精度を表示します。</span><span class="sxs-lookup"><span data-stu-id="361c0-104">This example uses the [NumericScale](numericscale-property-ado.md) and [Precision](precision-property-ado.md) properties to display the numeric scale and precision of fields in the ***Discounts*** table of the ***Pubs*** database.</span></span>
 
 ```cpp 
  

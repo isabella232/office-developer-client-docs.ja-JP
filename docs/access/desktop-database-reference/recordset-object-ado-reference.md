@@ -1,5 +1,5 @@
 ---
-title: レコード セット オブジェクト (ADO) の参照
+title: Recordset オブジェクト (ADO) リファレンス
 TOCTitle: Recordset object (ADO)
 ms:assetid: 276c0dcb-2327-4035-b604-ef181a1490cd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249037(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0551ac262d9fda989b71abfb503d30f55cdffd66
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284526"
 ---
-# <a name="recordset-object-ado-reference"></a><span data-ttu-id="ef555-102">レコード セット オブジェクト (ADO) の参照</span><span class="sxs-lookup"><span data-stu-id="ef555-102">Recordset object (ADO) reference</span></span>
+# <a name="recordset-object-ado-reference"></a><span data-ttu-id="73aee-102">Recordset オブジェクト (ADO) リファレンス</span><span class="sxs-lookup"><span data-stu-id="73aee-102">Recordset object (ADO) reference</span></span>
 
-<span data-ttu-id="ef555-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="ef555-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="73aee-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="73aee-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="ef555-104">Recordset オブジェクト (ADO)</span><span class="sxs-lookup"><span data-stu-id="ef555-104">Recordset object (ADO)</span></span>](recordset-object-ado.md)
-- [<span data-ttu-id="ef555-105">レコード セットのプロパティ、メソッド、およびイベント (ADO)</span><span class="sxs-lookup"><span data-stu-id="ef555-105">Recordset properties, methods, and events (ADO)</span></span>](recordset-properties-methods-and-events-ado.md)
+- [<span data-ttu-id="73aee-104">Recordset オブジェクト (ADO)</span><span class="sxs-lookup"><span data-stu-id="73aee-104">Recordset object (ADO)</span></span>](recordset-object-ado.md)
+- [<span data-ttu-id="73aee-105">Recordset のプロパティ、メソッド、およびイベント (ADO)</span><span class="sxs-lookup"><span data-stu-id="73aee-105">Recordset properties, methods, and events (ADO)</span></span>](recordset-properties-methods-and-events-ado.md)
 

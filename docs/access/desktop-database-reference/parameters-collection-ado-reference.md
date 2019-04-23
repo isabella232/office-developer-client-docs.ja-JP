@@ -1,5 +1,5 @@
 ---
-title: パラメーターのコレクション (ADO) の参照
+title: Parameters コレクション (ADO) リファレンス
 TOCTitle: Parameters collection (ADO)
 ms:assetid: ac05170e-6add-4eb1-bfd1-52594359882f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249799(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4e8f8f24ab1c8a463b45080008b2be9ebb9eafe3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287959"
 ---
-# <a name="parameters-collection-ado-reference"></a><span data-ttu-id="a929c-102">パラメーターのコレクション (ADO) の参照</span><span class="sxs-lookup"><span data-stu-id="a929c-102">Parameters collection (ADO) reference</span></span>
+# <a name="parameters-collection-ado-reference"></a><span data-ttu-id="c5267-102">Parameters コレクション (ADO) リファレンス</span><span class="sxs-lookup"><span data-stu-id="c5267-102">Parameters collection (ADO) reference</span></span>
 
-<span data-ttu-id="a929c-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="a929c-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="c5267-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="c5267-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="a929c-104">Parameters コレクション (ADO)</span><span class="sxs-lookup"><span data-stu-id="a929c-104">Parameters collection (ADO)</span></span>](parameters-collection-ado.md)
-- [<span data-ttu-id="a929c-105">パラメーター コレクションのプロパティ、メソッド、およびイベント</span><span class="sxs-lookup"><span data-stu-id="a929c-105">Parameters collection properties, methods, and events</span></span>](parameters-collection-properties-methods-and-events.md)
+- [<span data-ttu-id="c5267-104">Parameters コレクション (ADO)</span><span class="sxs-lookup"><span data-stu-id="c5267-104">Parameters collection (ADO)</span></span>](parameters-collection-ado.md)
+- [<span data-ttu-id="c5267-105">Parameters コレクションのプロパティ、メソッド、イベント</span><span class="sxs-lookup"><span data-stu-id="c5267-105">Parameters collection properties, methods, and events</span></span>](parameters-collection-properties-methods-and-events.md)
 

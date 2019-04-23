@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2d8da02821ccb6d1066288b69d2698971aeb00e2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288758"
 ---
-# <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vc"></a><span data-ttu-id="d82c0-102">MoveFirst メソッド、MoveLast メソッド、MoveNext メソッド、MovePrevious メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="d82c0-102">MoveFirst, MoveLast, MoveNext, and MovePrevious methods example (VC++)</span></span>
+# <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vc"></a><span data-ttu-id="f58c1-102">MoveFirst メソッド、MoveLast メソッド、MoveNext メソッド、MovePrevious メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="f58c1-102">MoveFirst, MoveLast, MoveNext, and MovePrevious methods example (VC++)</span></span>
 
 
-<span data-ttu-id="d82c0-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="d82c0-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="f58c1-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="f58c1-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="d82c0-p101">この例では、与えられたコマンドに基づいて [Recordset](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) のレコード ポインターを移動するために、 [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、[MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、[MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、および [MovePrevious](recordset-object-ado.md) メソッドを使用します。このコードを実行するには、MoveAny 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="d82c0-p101">This example uses the [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), and [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) methods to move the record pointer of a [Recordset](recordset-object-ado.md) based on the supplied command. The MoveAny function is required for this example to run.</span></span>
+<span data-ttu-id="f58c1-p101">この例では、与えられたコマンドに基づいて [Recordset](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) のレコード ポインターを移動するために、 [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、[MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、[MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)、および [MovePrevious](recordset-object-ado.md) メソッドを使用します。このコードを実行するには、MoveAny 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="f58c1-p101">This example uses the [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), and [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) methods to move the record pointer of a [Recordset](recordset-object-ado.md) based on the supplied command. The MoveAny function is required for this example to run.</span></span>
 
 ```cpp 
  

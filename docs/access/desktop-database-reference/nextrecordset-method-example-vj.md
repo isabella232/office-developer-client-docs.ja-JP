@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0a520ae6a2480bec2220cc590c90058739737339
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288568"
 ---
-# <a name="nextrecordset-method-example-vj"></a><span data-ttu-id="fd8c6-102">NextRecordset メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="fd8c6-102">NextRecordset method example (VJ++)</span></span>
+# <a name="nextrecordset-method-example-vj"></a><span data-ttu-id="f15a8-102">NextRecordset メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="f15a8-102">NextRecordset method example (VJ++)</span></span>
 
 
-<span data-ttu-id="fd8c6-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="fd8c6-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="f15a8-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="f15a8-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="fd8c6-104">この例では、3 つの別個の [SELECT](nextrecordset-method-ado.md) ステートメントから成る複合コマンド ステートメントを使用するレコードセット内のデータを、 **NextRecordset** メソッドを使用して表示します。</span><span class="sxs-lookup"><span data-stu-id="fd8c6-104">This example uses the [NextRecordset](nextrecordset-method-ado.md) method to view the data in a recordset that uses a compound command statement made up of three separate **SELECT** statements.</span></span>
+<span data-ttu-id="f15a8-104">この例では、3 つの別個の [SELECT](nextrecordset-method-ado.md) ステートメントから成る複合コマンド ステートメントを使用するレコードセット内のデータを、 **NextRecordset** メソッドを使用して表示します。</span><span class="sxs-lookup"><span data-stu-id="f15a8-104">This example uses the [NextRecordset](nextrecordset-method-ado.md) method to view the data in a recordset that uses a compound command statement made up of three separate **SELECT** statements.</span></span>
 
 ```java 
  
