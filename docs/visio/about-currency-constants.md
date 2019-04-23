@@ -11,988 +11,234 @@ ms.assetid: d94c740f-29e1-1e7f-39f6-8aa215f3111d
 description: 数値を通貨として書式設定するには、CY 関数を使用して、どの国/地域の通貨を使用するかを指定するオプションの定数を渡します。通貨定数は、国/地域に対応する ID 番号、または ISO 4217 の 3 文字の省略形を示す文字列 (引用符で囲む) として指定できます。
 ms.openlocfilehash: ce27cbcb03b4c41cce3cf08fbcd234678fcdc773
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19804751"
 ---
-# <a name="about-currency-constants"></a><span data-ttu-id="fe7f8-104">通貨定数について</span><span class="sxs-lookup"><span data-stu-id="fe7f8-104">About Currency Constants</span></span>
+# <a name="about-currency-constants"></a><span data-ttu-id="7ee05-104">通貨定数について</span><span class="sxs-lookup"><span data-stu-id="7ee05-104">About Currency Constants</span></span>
 
-<span data-ttu-id="fe7f8-p102">数値を通貨として書式設定するには、CY 関数を使用して、どの国/地域の通貨を使用するかを指定するオプションの定数を渡します。通貨定数は、国/地域に対応する ID 番号、または ISO 4217 の 3 文字の省略形を示す文字列 (引用符で囲む) として指定できます。</span><span class="sxs-lookup"><span data-stu-id="fe7f8-p102">To format a number as currency, you can use the CY function and pass an optional constant to specify which country/region's currency to use. The currency constants can be specified as the ID number that corresponds to a country/region or as a string (enclosed in quotation marks) that corresponds to an ISO 4217 three-character abbreviation.</span></span>
+<span data-ttu-id="7ee05-p102">数値を通貨として書式設定するには、CY 関数を使用して、どの国/地域の通貨を使用するかを指定するオプションの定数を渡します。通貨定数は、国/地域に対応する ID 番号、または ISO 4217 の 3 文字の省略形を示す文字列 (引用符で囲む) として指定できます。</span><span class="sxs-lookup"><span data-stu-id="7ee05-p102">To format a number as currency, you can use the CY function and pass an optional constant to specify which country/region's currency to use. The currency constants can be specified as the ID number that corresponds to a country/region or as a string (enclosed in quotation marks) that corresponds to an ISO 4217 three-character abbreviation.</span></span>
   
-<span data-ttu-id="fe7f8-107">現地通貨以外の通貨記号を表示したときに、指定した通貨の記号をシステムが判断できない場合は、ドル記号 ($) が表示されます。</span><span class="sxs-lookup"><span data-stu-id="fe7f8-107">If you show currency symbols for nonlocal currencies, and the system does not know the symbol for a given currency, the dollar symbol ($) is displayed.</span></span>
+<span data-ttu-id="7ee05-107">現地通貨以外の通貨記号を表示したときに、指定した通貨の記号をシステムが判断できない場合は、ドル記号 ($) が表示されます。</span><span class="sxs-lookup"><span data-stu-id="7ee05-107">If you show currency symbols for nonlocal currencies, and the system does not know the symbol for a given currency, the dollar symbol ($) is displayed.</span></span>
   
-## <a name="ids-and-abbreviations"></a><span data-ttu-id="fe7f8-108">ID と省略形</span><span class="sxs-lookup"><span data-stu-id="fe7f8-108">IDs and abbreviations</span></span>
+## <a name="ids-and-abbreviations"></a><span data-ttu-id="7ee05-108">ID と省略形</span><span class="sxs-lookup"><span data-stu-id="7ee05-108">IDs and abbreviations</span></span>
 
-|<span data-ttu-id="fe7f8-109">**ID**</span><span class="sxs-lookup"><span data-stu-id="fe7f8-109">**ID**</span></span>|<span data-ttu-id="fe7f8-110">**Abbreviation**</span><span class="sxs-lookup"><span data-stu-id="fe7f8-110">**Abbreviation**</span></span>|<span data-ttu-id="fe7f8-111">**通貨型**</span><span class="sxs-lookup"><span data-stu-id="fe7f8-111">**Currency**</span></span>|
+|<span data-ttu-id="7ee05-109">**ID**</span><span class="sxs-lookup"><span data-stu-id="7ee05-109">**ID**</span></span>|<span data-ttu-id="7ee05-110">**略語**</span><span class="sxs-lookup"><span data-stu-id="7ee05-110">**Abbreviation**</span></span>|<span data-ttu-id="7ee05-111">**通貨**</span><span class="sxs-lookup"><span data-stu-id="7ee05-111">**Currency**</span></span>|
 |:-----|:-----|:-----|
-| <span data-ttu-id="fe7f8-112">0</span><span class="sxs-lookup"><span data-stu-id="fe7f8-112">0</span></span>  <br/> | <span data-ttu-id="fe7f8-113"> 
-SYS 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-113">SYS</span></span>  <br/> | <span data-ttu-id="fe7f8-114"> 
-システム設定を使用 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-114">Uses system settings</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-115">1</span><span class="sxs-lookup"><span data-stu-id="fe7f8-115">1</span></span>  <br/> | <span data-ttu-id="fe7f8-116"> 
-XXX 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-116">XXX</span></span>  <br/> | <span data-ttu-id="fe7f8-117"> 
-数値として書式設定 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-117">Formats as a number</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-118"> 
-2 - 9 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-118">2 - 9</span></span>  <br/> | <span data-ttu-id="fe7f8-119">Reserved</span><span class="sxs-lookup"><span data-stu-id="fe7f8-119">Reserved</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-120">10</span><span class="sxs-lookup"><span data-stu-id="fe7f8-120">10</span></span>  <br/> | <span data-ttu-id="fe7f8-121">EUR</span><span class="sxs-lookup"><span data-stu-id="fe7f8-121">EUR</span></span>  <br/> | <span data-ttu-id="fe7f8-122">ユーロ</span><span class="sxs-lookup"><span data-stu-id="fe7f8-122">Euro</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-123">11</span><span class="sxs-lookup"><span data-stu-id="fe7f8-123">11</span></span>  <br/> | <span data-ttu-id="fe7f8-124"> 
-USD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-124">USD</span></span>  <br/> | <span data-ttu-id="fe7f8-125"> 
-米ドル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-125">U.S. dollar</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-126">12</span><span class="sxs-lookup"><span data-stu-id="fe7f8-126">12</span></span>  <br/> | <span data-ttu-id="fe7f8-127">ATS</span><span class="sxs-lookup"><span data-stu-id="fe7f8-127">ATS</span></span>  <br/> | <span data-ttu-id="fe7f8-128">オーストリア シリング</span><span class="sxs-lookup"><span data-stu-id="fe7f8-128">Austrian Schilling</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-129">13</span><span class="sxs-lookup"><span data-stu-id="fe7f8-129">13</span></span>  <br/> | <span data-ttu-id="fe7f8-130">AUD</span><span class="sxs-lookup"><span data-stu-id="fe7f8-130">AUD</span></span>  <br/> | <span data-ttu-id="fe7f8-131"> 
-オーストラリア ドル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-131">Australian Dollar</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-132">14</span><span class="sxs-lookup"><span data-stu-id="fe7f8-132">14</span></span>  <br/> | <span data-ttu-id="fe7f8-133">BEF</span><span class="sxs-lookup"><span data-stu-id="fe7f8-133">BEF</span></span>  <br/> | <span data-ttu-id="fe7f8-134">ベルギー フラン</span><span class="sxs-lookup"><span data-stu-id="fe7f8-134">Belgian Franc</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-135">15</span><span class="sxs-lookup"><span data-stu-id="fe7f8-135">15</span></span>  <br/> | <span data-ttu-id="fe7f8-136"> 
-CAD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-136">CAD</span></span>  <br/> | <span data-ttu-id="fe7f8-137"> 
-カナダ ドル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-137">Canadian Dollar</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-138">16</span><span class="sxs-lookup"><span data-stu-id="fe7f8-138">16</span></span>  <br/> | <span data-ttu-id="fe7f8-139"> 
-CHF 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-139">CHF</span></span>  <br/> | <span data-ttu-id="fe7f8-140"> 
-スイス フラン 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-140">Swiss Franc</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-141">17</span><span class="sxs-lookup"><span data-stu-id="fe7f8-141">17</span></span>  <br/> | <span data-ttu-id="fe7f8-142"> 
-CNY 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-142">CNY</span></span>  <br/> | <span data-ttu-id="fe7f8-143"> 
-中国人民元 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-143">Chinese Yuan Renminbi</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-144">18</span><span class="sxs-lookup"><span data-stu-id="fe7f8-144">18</span></span>  <br/> | <span data-ttu-id="fe7f8-145">DEM</span><span class="sxs-lookup"><span data-stu-id="fe7f8-145">DEM</span></span>  <br/> | <span data-ttu-id="fe7f8-146"> 
-ドイツ マルク 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-146">German Mark</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-147">19</span><span class="sxs-lookup"><span data-stu-id="fe7f8-147">19</span></span>  <br/> | <span data-ttu-id="fe7f8-148">DKK</span><span class="sxs-lookup"><span data-stu-id="fe7f8-148">DKK</span></span>  <br/> | <span data-ttu-id="fe7f8-149">デンマーク クローネ</span><span class="sxs-lookup"><span data-stu-id="fe7f8-149">Danish Krone</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-150">20</span><span class="sxs-lookup"><span data-stu-id="fe7f8-150">20</span></span>  <br/> | <span data-ttu-id="fe7f8-151">ESP</span><span class="sxs-lookup"><span data-stu-id="fe7f8-151">ESP</span></span>  <br/> | <span data-ttu-id="fe7f8-152">スペイン ペセタ</span><span class="sxs-lookup"><span data-stu-id="fe7f8-152">Spanish Peseta</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-153">21</span><span class="sxs-lookup"><span data-stu-id="fe7f8-153">21</span></span>  <br/> | <span data-ttu-id="fe7f8-154">FIM</span><span class="sxs-lookup"><span data-stu-id="fe7f8-154">FIM</span></span>  <br/> | <span data-ttu-id="fe7f8-155">フィンランド マルッカ</span><span class="sxs-lookup"><span data-stu-id="fe7f8-155">Finnish Markka</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-156">22</span><span class="sxs-lookup"><span data-stu-id="fe7f8-156">22</span></span>  <br/> | <span data-ttu-id="fe7f8-157">FRF</span><span class="sxs-lookup"><span data-stu-id="fe7f8-157">FRF</span></span>  <br/> | <span data-ttu-id="fe7f8-158">フランス フラン</span><span class="sxs-lookup"><span data-stu-id="fe7f8-158">French Franc</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-159">23</span><span class="sxs-lookup"><span data-stu-id="fe7f8-159">23</span></span>  <br/> | <span data-ttu-id="fe7f8-160">GBP</span><span class="sxs-lookup"><span data-stu-id="fe7f8-160">GBP</span></span>  <br/> | <span data-ttu-id="fe7f8-161"> 
-イギリス ポンド 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-161">British Pound Sterling</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-162">24</span><span class="sxs-lookup"><span data-stu-id="fe7f8-162">24</span></span>  <br/> | <span data-ttu-id="fe7f8-163">GRD</span><span class="sxs-lookup"><span data-stu-id="fe7f8-163">GRD</span></span>  <br/> | <span data-ttu-id="fe7f8-164"> 
-ギリシャ ドラクマ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-164">Greek Drachma</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-165">25</span><span class="sxs-lookup"><span data-stu-id="fe7f8-165">25</span></span>  <br/> | <span data-ttu-id="fe7f8-166"> 
-HKD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-166">HKD</span></span>  <br/> | <span data-ttu-id="fe7f8-167"> 
-香港ドル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-167">Hong Kong Special Administrative Region (SAR) Dollar</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-168">26</span><span class="sxs-lookup"><span data-stu-id="fe7f8-168">26</span></span>  <br/> | <span data-ttu-id="fe7f8-169"> 
-HUF 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-169">HUF</span></span>  <br/> | <span data-ttu-id="fe7f8-170"> 
-ハンガリー フォリント 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-170">Hungarian Forint</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-171">27</span><span class="sxs-lookup"><span data-stu-id="fe7f8-171">27</span></span>  <br/> | <span data-ttu-id="fe7f8-172"> 
-IDR 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-172">IDR</span></span>  <br/> | <span data-ttu-id="fe7f8-173"> 
-インドネシア ルピア 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-173">Indonesian Rupiah</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-174">28</span><span class="sxs-lookup"><span data-stu-id="fe7f8-174">28</span></span>  <br/> | <span data-ttu-id="fe7f8-175">IEP</span><span class="sxs-lookup"><span data-stu-id="fe7f8-175">IEP</span></span>  <br/> | <span data-ttu-id="fe7f8-176">アイリッシュ ポンドします。</span><span class="sxs-lookup"><span data-stu-id="fe7f8-176">Irish Punt</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-177">29</span><span class="sxs-lookup"><span data-stu-id="fe7f8-177">29</span></span>  <br/> | <span data-ttu-id="fe7f8-178"> 
-ILS 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-178">ILS</span></span>  <br/> | <span data-ttu-id="fe7f8-179"> 
-イスラエル シェケル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-179">Israeli Shekel</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-180">30</span><span class="sxs-lookup"><span data-stu-id="fe7f8-180">30</span></span>  <br/> | <span data-ttu-id="fe7f8-181">ITL</span><span class="sxs-lookup"><span data-stu-id="fe7f8-181">ITL</span></span>  <br/> | <span data-ttu-id="fe7f8-182">イタリア リラ</span><span class="sxs-lookup"><span data-stu-id="fe7f8-182">Italian Lira</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-183">31</span><span class="sxs-lookup"><span data-stu-id="fe7f8-183">31</span></span>  <br/> | <span data-ttu-id="fe7f8-184"> 
-JPY 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-184">JPY</span></span>  <br/> | <span data-ttu-id="fe7f8-185"> 
-日本円 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-185">Japanese Yen</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-186">32</span><span class="sxs-lookup"><span data-stu-id="fe7f8-186">32</span></span>  <br/> | <span data-ttu-id="fe7f8-187"> 
-KRW 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-187">KRW</span></span>  <br/> | <span data-ttu-id="fe7f8-188"> 
-韓国ウォン 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-188">Korean Won</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-189">33</span><span class="sxs-lookup"><span data-stu-id="fe7f8-189">33</span></span>  <br/> | <span data-ttu-id="fe7f8-190">LUF</span><span class="sxs-lookup"><span data-stu-id="fe7f8-190">LUF</span></span>  <br/> | <span data-ttu-id="fe7f8-191"> 
-ルクセンブルク フラン 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-191">Luxembourgian Franc</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-192">34</span><span class="sxs-lookup"><span data-stu-id="fe7f8-192">34</span></span>  <br/> | <span data-ttu-id="fe7f8-193"> 
-MXN 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-193">MXN</span></span>  <br/> | <span data-ttu-id="fe7f8-194"> 
-メキシコ ペソ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-194">Mexican Peso</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-195">35</span><span class="sxs-lookup"><span data-stu-id="fe7f8-195">35</span></span>  <br/> | <span data-ttu-id="fe7f8-196"> 
-MYR 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-196">MYR</span></span>  <br/> | <span data-ttu-id="fe7f8-197"> 
-マレーシア リンギ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-197">Malaysian Ringgit</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-198">36</span><span class="sxs-lookup"><span data-stu-id="fe7f8-198">36</span></span>  <br/> | <span data-ttu-id="fe7f8-199">NLG</span><span class="sxs-lookup"><span data-stu-id="fe7f8-199">NLG</span></span>  <br/> | <span data-ttu-id="fe7f8-200"> 
-オランダ ギルダー 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-200">Dutch Guilder</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-201">37</span><span class="sxs-lookup"><span data-stu-id="fe7f8-201">37</span></span>  <br/> | <span data-ttu-id="fe7f8-202"> 
-NOK 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-202">NOK</span></span>  <br/> | <span data-ttu-id="fe7f8-203"> 
-ノルウェー クローネ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-203">Norwegian Krone</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-204">38</span><span class="sxs-lookup"><span data-stu-id="fe7f8-204">38</span></span>  <br/> | <span data-ttu-id="fe7f8-205"> 
-NZD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-205">NZD</span></span>  <br/> | <span data-ttu-id="fe7f8-206"> 
-ニュージーランド ドル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-206">New Zealand Dollar</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-207">39</span><span class="sxs-lookup"><span data-stu-id="fe7f8-207">39</span></span>  <br/> | <span data-ttu-id="fe7f8-208">PHP</span><span class="sxs-lookup"><span data-stu-id="fe7f8-208">PHP</span></span>  <br/> | <span data-ttu-id="fe7f8-209"> 
-フィリピン ペソ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-209">Philippine Peso</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-210">40</span><span class="sxs-lookup"><span data-stu-id="fe7f8-210">40</span></span>  <br/> | <span data-ttu-id="fe7f8-p103"> 
-PLZ (現在は PLN を使用) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-p103">PLZ (Historic. Use PLN.)</span></span>  <br/> | <span data-ttu-id="fe7f8-213"> 
-ポーランド ズウォティ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-213">Polish Zloty</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-214">41</span><span class="sxs-lookup"><span data-stu-id="fe7f8-214">41</span></span>  <br/> | <span data-ttu-id="fe7f8-215">PTE</span><span class="sxs-lookup"><span data-stu-id="fe7f8-215">PTE</span></span>  <br/> | <span data-ttu-id="fe7f8-216">ポルトガル エスクード</span><span class="sxs-lookup"><span data-stu-id="fe7f8-216">Portuguese Escudo</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-217">42</span><span class="sxs-lookup"><span data-stu-id="fe7f8-217">42</span></span>  <br/> | <span data-ttu-id="fe7f8-218"> 
-ROL 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-218">ROL</span></span>  <br/> | <span data-ttu-id="fe7f8-219"> 
-ルーマニア レイ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-219">Romanian Leu</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-220">43</span><span class="sxs-lookup"><span data-stu-id="fe7f8-220">43</span></span>  <br/> | <span data-ttu-id="fe7f8-p104"> 
-RUR (現在は RUB を使用) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-p104">RUR (Historic. Use RUB.)</span></span>  <br/> | <span data-ttu-id="fe7f8-223"> 
-ロシア ルーブル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-223">Russian Ruble</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-224">44</span><span class="sxs-lookup"><span data-stu-id="fe7f8-224">44</span></span>  <br/> | <span data-ttu-id="fe7f8-225">SEK</span><span class="sxs-lookup"><span data-stu-id="fe7f8-225">SEK</span></span>  <br/> | <span data-ttu-id="fe7f8-226"> 
-スウェーデン クローネ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-226">Swedish Kroner</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-227">45</span><span class="sxs-lookup"><span data-stu-id="fe7f8-227">45</span></span>  <br/> | <span data-ttu-id="fe7f8-228"> 
-SGD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-228">SGD</span></span>  <br/> | <span data-ttu-id="fe7f8-229"> 
-シンガポール ドル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-229">Singapore Dollar</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-230">46</span><span class="sxs-lookup"><span data-stu-id="fe7f8-230">46</span></span>  <br/> | <span data-ttu-id="fe7f8-231"> 
-THB 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-231">THB</span></span>  <br/> | <span data-ttu-id="fe7f8-232"> 
-タイ バーツ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-232">Thai Baht</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-233">47</span><span class="sxs-lookup"><span data-stu-id="fe7f8-233">47</span></span>  <br/> | <span data-ttu-id="fe7f8-234"> 
-TWD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-234">TWD</span></span>  <br/> | <span data-ttu-id="fe7f8-235"> 
-新台湾ドル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-235">New Taiwan Dollar</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-236">48</span><span class="sxs-lookup"><span data-stu-id="fe7f8-236">48</span></span>  <br/> | <span data-ttu-id="fe7f8-p105"> 
-XEU (現在は EUR を使用) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-p105">XEU (Historic. Use EUR.)</span></span>  <br/> | <span data-ttu-id="fe7f8-239"> 
-欧州通貨 (1998 年以前) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-239">ECU (pre-1998)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-240">49</span><span class="sxs-lookup"><span data-stu-id="fe7f8-240">49</span></span>  <br/> | <span data-ttu-id="fe7f8-p106"> 
-YUN (現在は YUM を使用) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-p106">YUN (Historic. Use YUM.)</span></span>  <br/> | <span data-ttu-id="fe7f8-243"> 
-ユーゴスラヴィア ディナール 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-243">Yugoslavian Dinar</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-244">50</span><span class="sxs-lookup"><span data-stu-id="fe7f8-244">50</span></span>  <br/> | <span data-ttu-id="fe7f8-245"> 
-ZAR 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-245">ZAR</span></span>  <br/> | <span data-ttu-id="fe7f8-246"> 
-南アフリカ ラント 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-246">South African Rand</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-247"> 
-51 - 55 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-247">51 - 55</span></span>  <br/> | <span data-ttu-id="fe7f8-248">Reserved</span><span class="sxs-lookup"><span data-stu-id="fe7f8-248">Reserved</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-249">56</span><span class="sxs-lookup"><span data-stu-id="fe7f8-249">56</span></span>  <br/> | <span data-ttu-id="fe7f8-250"> 
-ARS 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-250">ARS</span></span>  <br/> | <span data-ttu-id="fe7f8-251"> 
-アルゼンチン ペソ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-251">Argentinean Peso</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-252">57</span><span class="sxs-lookup"><span data-stu-id="fe7f8-252">57</span></span>  <br/> | <span data-ttu-id="fe7f8-253"> 
-BMD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-253">BMD</span></span>  <br/> | <span data-ttu-id="fe7f8-254"> 
-バミューダ ドル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-254">Bermudian Dollar</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-255">58</span><span class="sxs-lookup"><span data-stu-id="fe7f8-255">58</span></span>  <br/> | <span data-ttu-id="fe7f8-256"> 
-BOB 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-256">BOB</span></span>  <br/> | <span data-ttu-id="fe7f8-257"> 
-ボリビア ボリビアーノ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-257">Bolivian Boliviano</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-258">59</span><span class="sxs-lookup"><span data-stu-id="fe7f8-258">59</span></span>  <br/> | <span data-ttu-id="fe7f8-p107"> 
-BRR (現在は BRL を使用) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-p107">BRR (Historic. Use BRL.)</span></span>  <br/> | <span data-ttu-id="fe7f8-261"> 
-ブラジル レアール 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-261">Brazilian Cruziero Real</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-262">60</span><span class="sxs-lookup"><span data-stu-id="fe7f8-262">60</span></span>  <br/> | <span data-ttu-id="fe7f8-263"> 
-BSD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-263">BSD</span></span>  <br/> | <span data-ttu-id="fe7f8-264"> 
-バハマ ドル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-264">Bahamanian Dollar</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-265">61</span><span class="sxs-lookup"><span data-stu-id="fe7f8-265">61</span></span>  <br/> | <span data-ttu-id="fe7f8-266"> 
-CLP 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-266">CLP</span></span>  <br/> | <span data-ttu-id="fe7f8-267"> 
-チリ ペソ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-267">Chilean Peso</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-268">62</span><span class="sxs-lookup"><span data-stu-id="fe7f8-268">62</span></span>  <br/> | <span data-ttu-id="fe7f8-269"> 
-COP 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-269">COP</span></span>  <br/> | <span data-ttu-id="fe7f8-270"> 
-コロンビア ペソ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-270">Colombian Peso</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-271">63</span><span class="sxs-lookup"><span data-stu-id="fe7f8-271">63</span></span>  <br/> | <span data-ttu-id="fe7f8-272"> 
-CRC 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-272">CRC</span></span>  <br/> | <span data-ttu-id="fe7f8-273"> 
-コスタリカ コロン 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-273">Costa Rican Colon</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-274">64</span><span class="sxs-lookup"><span data-stu-id="fe7f8-274">64</span></span>  <br/> | <span data-ttu-id="fe7f8-275"> 
-CZK 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-275">CZK</span></span>  <br/> | <span data-ttu-id="fe7f8-276"> 
-チェコ コルナ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-276">Czech Koruna</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-277">65</span><span class="sxs-lookup"><span data-stu-id="fe7f8-277">65</span></span>  <br/> | <span data-ttu-id="fe7f8-278"> 
-DOP 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-278">DOP</span></span>  <br/> | <span data-ttu-id="fe7f8-279"> 
-ドミニカ ペソ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-279">Dominican Peso</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-280">66</span><span class="sxs-lookup"><span data-stu-id="fe7f8-280">66</span></span>  <br/> | <span data-ttu-id="fe7f8-281"> 
-ECS 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-281">ECS</span></span>  <br/> | <span data-ttu-id="fe7f8-282"> 
-エクアドル スクレ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-282">Ecuadorean Sucre</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-283">67</span><span class="sxs-lookup"><span data-stu-id="fe7f8-283">67</span></span>  <br/> | <span data-ttu-id="fe7f8-284"> 
-EGP 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-284">EGP</span></span>  <br/> | <span data-ttu-id="fe7f8-285"> 
-エジプト ポンド 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-285">Egyptian Pound</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-286">68</span><span class="sxs-lookup"><span data-stu-id="fe7f8-286">68</span></span>  <br/> | <span data-ttu-id="fe7f8-287"> 
-HNL 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-287">HNL</span></span>  <br/> | <span data-ttu-id="fe7f8-288"> 
-ホンジュラス レンピラ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-288">Honduran Lempira</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-289">69</span><span class="sxs-lookup"><span data-stu-id="fe7f8-289">69</span></span>  <br/> | <span data-ttu-id="fe7f8-290"> 
-INR 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-290">INR</span></span>  <br/> | <span data-ttu-id="fe7f8-291"> 
-インド ルピー 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-291">Indian Rupee</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-292">70</span><span class="sxs-lookup"><span data-stu-id="fe7f8-292">70</span></span>  <br/> | <span data-ttu-id="fe7f8-293"> 
-JMD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-293">JMD</span></span>  <br/> | <span data-ttu-id="fe7f8-294"> 
-ジャマイカ ドル
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-294">Jamaican Dollar</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-295">71</span><span class="sxs-lookup"><span data-stu-id="fe7f8-295">71</span></span>  <br/> | <span data-ttu-id="fe7f8-296"> 
-JOD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-296">JOD</span></span>  <br/> | <span data-ttu-id="fe7f8-297"> 
-ヨルダン ディナール 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-297">Jordanian Dinar</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-298">72</span><span class="sxs-lookup"><span data-stu-id="fe7f8-298">72</span></span>  <br/> | <span data-ttu-id="fe7f8-299"> 
-KWD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-299">KWD</span></span>  <br/> | <span data-ttu-id="fe7f8-300"> 
-クウェート ディナール 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-300">Kuwaiti Dinar</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-301">73</span><span class="sxs-lookup"><span data-stu-id="fe7f8-301">73</span></span>  <br/> | <span data-ttu-id="fe7f8-302"> 
-MOP 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-302">MOP</span></span>  <br/> | <span data-ttu-id="fe7f8-303"> 
-マカオ パタカ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-303">Macanese Pataca</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-304">74</span><span class="sxs-lookup"><span data-stu-id="fe7f8-304">74</span></span>  <br/> | <span data-ttu-id="fe7f8-305"> 
-NIO 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-305">NIO</span></span>  <br/> | <span data-ttu-id="fe7f8-306"> 
-ニカラグア コルドバ オロ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-306">Nicaraguan Cordoba Oro</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-307">75</span><span class="sxs-lookup"><span data-stu-id="fe7f8-307">75</span></span>  <br/> | <span data-ttu-id="fe7f8-308"> 
-PAB 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-308">PAB</span></span>  <br/> | <span data-ttu-id="fe7f8-309"> 
-パナマ バルボア 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-309">Panamanian Balboa</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-310">76</span><span class="sxs-lookup"><span data-stu-id="fe7f8-310">76</span></span>  <br/> | <span data-ttu-id="fe7f8-311"> 
-PEN 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-311">PEN</span></span>  <br/> | <span data-ttu-id="fe7f8-312"> 
-ペルー ヌエボ ソル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-312">Peruvian Nuevo Sol</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-313">77</span><span class="sxs-lookup"><span data-stu-id="fe7f8-313">77</span></span>  <br/> | <span data-ttu-id="fe7f8-314"> 
-PKR 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-314">PKR</span></span>  <br/> | <span data-ttu-id="fe7f8-315"> 
-パキスタン ルピー 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-315">Pakistani Rupee</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-316">78</span><span class="sxs-lookup"><span data-stu-id="fe7f8-316">78</span></span>  <br/> | <span data-ttu-id="fe7f8-317"> 
-PYG 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-317">PYG</span></span>  <br/> | <span data-ttu-id="fe7f8-318"> 
-パラグアイ グアラニー 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-318">Paraguayan Guarani</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-319">79</span><span class="sxs-lookup"><span data-stu-id="fe7f8-319">79</span></span>  <br/> | <span data-ttu-id="fe7f8-320"> 
-SAR 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-320">SAR</span></span>  <br/> | <span data-ttu-id="fe7f8-321"> 
-サウジ リアル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-321">Saudi Riyal</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-322">80</span><span class="sxs-lookup"><span data-stu-id="fe7f8-322">80</span></span>  <br/> | <span data-ttu-id="fe7f8-323"> 
-SIT 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-323">SIT</span></span>  <br/> | <span data-ttu-id="fe7f8-324"> 
-スロベニア トラル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-324">Slovenian Tolar</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-325">81</span><span class="sxs-lookup"><span data-stu-id="fe7f8-325">81</span></span>  <br/> | <span data-ttu-id="fe7f8-326"> 
-SKK 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-326">SKK</span></span>  <br/> | <span data-ttu-id="fe7f8-327"> 
-スロヴァキア コルナ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-327">Slovakian Koruna</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-328">82</span><span class="sxs-lookup"><span data-stu-id="fe7f8-328">82</span></span>  <br/> | <span data-ttu-id="fe7f8-329"> 
-SVC 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-329">SVC</span></span>  <br/> | <span data-ttu-id="fe7f8-330"> 
-エルサルバドル コロン 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-330">El Salvadoran Colon</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-331">83</span><span class="sxs-lookup"><span data-stu-id="fe7f8-331">83</span></span>  <br/> | <span data-ttu-id="fe7f8-332">実行してください。</span><span class="sxs-lookup"><span data-stu-id="fe7f8-332">TRY</span></span>  <br/> | <span data-ttu-id="fe7f8-333"> 
-新トルコ リラ
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-333">New Turkish Lira</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-334">84</span><span class="sxs-lookup"><span data-stu-id="fe7f8-334">84</span></span>  <br/> | <span data-ttu-id="fe7f8-335"> 
-TTD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-335">TTD</span></span>  <br/> | <span data-ttu-id="fe7f8-336"> 
-トリニダード・トバゴ ドル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-336">Trinidad and Tobago Dollar</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-337">85</span><span class="sxs-lookup"><span data-stu-id="fe7f8-337">85</span></span>  <br/> | <span data-ttu-id="fe7f8-338"> 
-UYU 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-338">UYU</span></span>  <br/> | <span data-ttu-id="fe7f8-339"> 
-ウルグアイ ペソ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-339">Uruguayan Peso Uruguayo</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-340">86</span><span class="sxs-lookup"><span data-stu-id="fe7f8-340">86</span></span>  <br/> | <span data-ttu-id="fe7f8-341"> 
-VEB 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-341">VEB</span></span>  <br/> | <span data-ttu-id="fe7f8-342"> 
-ベネズエラ ボリバル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-342">Venezuelan Bolivar</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-343">87</span><span class="sxs-lookup"><span data-stu-id="fe7f8-343">87</span></span>  <br/> | <span data-ttu-id="fe7f8-344"> 
-VND 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-344">VND</span></span>  <br/> | <span data-ttu-id="fe7f8-345"> 
-ヴェトナム ドン 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-345">Vietnamese Dong</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-346">88</span><span class="sxs-lookup"><span data-stu-id="fe7f8-346">88</span></span>  <br/> | <span data-ttu-id="fe7f8-347"> 
-BRL 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-347">BRL</span></span>  <br/> | <span data-ttu-id="fe7f8-348"> 
-ブラジル レアール 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-348">Brazilian Real</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-349">89</span><span class="sxs-lookup"><span data-stu-id="fe7f8-349">89</span></span>  <br/> | <span data-ttu-id="fe7f8-350"> 
-PLN 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-350">PLN</span></span>  <br/> | <span data-ttu-id="fe7f8-351"> 
-ポーランド ズウォティ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-351">Polish Zloty</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-352">90</span><span class="sxs-lookup"><span data-stu-id="fe7f8-352">90</span></span>  <br/> | <span data-ttu-id="fe7f8-353"> 
-RUB 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-353">RUB</span></span>  <br/> | <span data-ttu-id="fe7f8-354"> 
-ロシア ルーブル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-354">Russian Ruble</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-355">91</span><span class="sxs-lookup"><span data-stu-id="fe7f8-355">91</span></span>  <br/> | <span data-ttu-id="fe7f8-356"> 
-YUM 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-356">YUM</span></span>  <br/> | <span data-ttu-id="fe7f8-357"> 
-ユーゴスラヴィア ディナール 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-357">Yugoslavian Dinar</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-358"> 
-92 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-358">92</span></span>  <br/> | <span data-ttu-id="fe7f8-p108"> 
-BYB (現在は BYR を使用) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-p108">BYB (Historic. Use BYR.)</span></span>  <br/> | <span data-ttu-id="fe7f8-361"> 
-ベラルーシ ルーブル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-361">Belarusian Ruble</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-362"> 
-93 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-362">93</span></span>  <br/> | <span data-ttu-id="fe7f8-363"> 
-UAH 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-363">UAH</span></span>  <br/> | <span data-ttu-id="fe7f8-364"> 
-ウクライナ グリブナ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-364">Ukrainian Hryvnia</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-365"> 
-94 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-365">94</span></span>  <br/> | <span data-ttu-id="fe7f8-366"> 
-AFA 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-366">AFA</span></span>  <br/> | <span data-ttu-id="fe7f8-367"> 
-アフガニー (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-367">Afghani (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-368">95</span><span class="sxs-lookup"><span data-stu-id="fe7f8-368">95</span></span>  <br/> | <span data-ttu-id="fe7f8-369">ALL</span><span class="sxs-lookup"><span data-stu-id="fe7f8-369">ALL</span></span>  <br/> | <span data-ttu-id="fe7f8-370"> 
-レク (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-370">Lek (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-371">96</span><span class="sxs-lookup"><span data-stu-id="fe7f8-371">96</span></span>  <br/> | <span data-ttu-id="fe7f8-372"> 
-DZD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-372">DZD</span></span>  <br/> | <span data-ttu-id="fe7f8-373"> 
-アルジェリア ディナール (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-373">Algerian Dinar (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-374">97</span><span class="sxs-lookup"><span data-stu-id="fe7f8-374">97</span></span>  <br/> | <span data-ttu-id="fe7f8-375"> 
-ADP 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-375">ADP</span></span>  <br/> | <span data-ttu-id="fe7f8-376"> 
-アンドラ ペセタ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-376">Andorran Peseta (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-377">98</span><span class="sxs-lookup"><span data-stu-id="fe7f8-377">98</span></span>  <br/> | <span data-ttu-id="fe7f8-378"> 
-AOA 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-378">AOA</span></span>  <br/> | <span data-ttu-id="fe7f8-379"> 
-クワンザ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-379">Kwanza (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-380">99</span><span class="sxs-lookup"><span data-stu-id="fe7f8-380">99</span></span>  <br/> | <span data-ttu-id="fe7f8-381"> 
-XCD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-381">XCD</span></span>  <br/> | <span data-ttu-id="fe7f8-382"> 
-東カリブ ドル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-382">East Caribbean Dollar (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-383">100</span><span class="sxs-lookup"><span data-stu-id="fe7f8-383">100</span></span>  <br/> | <span data-ttu-id="fe7f8-384"> 
-AMD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-384">AMD</span></span>  <br/> | <span data-ttu-id="fe7f8-385"> 
-アルメニア ドラム (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-385">Armenian Dram (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-386">101</span><span class="sxs-lookup"><span data-stu-id="fe7f8-386">101</span></span>  <br/> | <span data-ttu-id="fe7f8-387"> 
-AWG 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-387">AWG</span></span>  <br/> | <span data-ttu-id="fe7f8-388"> 
-アルバ ギルダー (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-388">Aruban Guilder (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-389">102</span><span class="sxs-lookup"><span data-stu-id="fe7f8-389">102</span></span>  <br/> | <span data-ttu-id="fe7f8-390"> 
-AZM 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-390">AZM</span></span>  <br/> | <span data-ttu-id="fe7f8-391"> 
-アゼルバイジャン マナト (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-391">Azerbaijanian Manat (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-392">103</span><span class="sxs-lookup"><span data-stu-id="fe7f8-392">103</span></span>  <br/> | <span data-ttu-id="fe7f8-393"> 
-BHD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-393">BHD</span></span>  <br/> | <span data-ttu-id="fe7f8-394"> 
-バーレーン ディナール (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-394">Bahraini Dinar (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-395">104</span><span class="sxs-lookup"><span data-stu-id="fe7f8-395">104</span></span>  <br/> | <span data-ttu-id="fe7f8-396"> 
-BDT 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-396">BDT</span></span>  <br/> | <span data-ttu-id="fe7f8-397"> 
-タカ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-397">Taka (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-398">105</span><span class="sxs-lookup"><span data-stu-id="fe7f8-398">105</span></span>  <br/> | <span data-ttu-id="fe7f8-399"> 
-BBD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-399">BBD</span></span>  <br/> | <span data-ttu-id="fe7f8-400"> 
-バルバドス ドル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-400">Barbados Dollar (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-401">106</span><span class="sxs-lookup"><span data-stu-id="fe7f8-401">106</span></span>  <br/> | <span data-ttu-id="fe7f8-402"> 
-BYR 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-402">BYR</span></span>  <br/> | <span data-ttu-id="fe7f8-403"> 
-ベラルーシ ルーブル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-403">Belarussian Ruble (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-404">107</span><span class="sxs-lookup"><span data-stu-id="fe7f8-404">107</span></span>  <br/> | <span data-ttu-id="fe7f8-405"> 
-BZD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-405">BZD</span></span>  <br/> | <span data-ttu-id="fe7f8-406"> 
-ベリーズ ドル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-406">Belize Dollar (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-407">108</span><span class="sxs-lookup"><span data-stu-id="fe7f8-407">108</span></span>  <br/> | <span data-ttu-id="fe7f8-408"> 
-XOF 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-408">XOF</span></span>  <br/> | <span data-ttu-id="fe7f8-409"> 
-CFA フラン BCEAO (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-409">CFA Franc BCEAO (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-410">109</span><span class="sxs-lookup"><span data-stu-id="fe7f8-410">109</span></span>  <br/> | <span data-ttu-id="fe7f8-411"> 
-BTN 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-411">BTN</span></span>  <br/> | <span data-ttu-id="fe7f8-412"> 
-ニュルタム (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-412">Ngultrum (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-413"> 
-110 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-413">110</span></span>  <br/> | <span data-ttu-id="fe7f8-414"> 
-BAM 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-414">BAM</span></span>  <br/> | <span data-ttu-id="fe7f8-415"> 
-コンヴェルティビルナ マルカ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-415">Convertible Marks (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-416">111</span><span class="sxs-lookup"><span data-stu-id="fe7f8-416">111</span></span>  <br/> | <span data-ttu-id="fe7f8-417"> 
-BWP 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-417">BWP</span></span>  <br/> | <span data-ttu-id="fe7f8-418"> 
-プラ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-418">Pula (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-419">112</span><span class="sxs-lookup"><span data-stu-id="fe7f8-419">112</span></span>  <br/> | <span data-ttu-id="fe7f8-420"> 
-BND 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-420">BND</span></span>  <br/> | <span data-ttu-id="fe7f8-421"> 
-ブルネイ ドル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-421">Brunei Dollar (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-422">113</span><span class="sxs-lookup"><span data-stu-id="fe7f8-422">113</span></span>  <br/> | <span data-ttu-id="fe7f8-p109"> 
-BGL (現在は BGN を使用) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-p109">BGL (Historic. Use BGN.)</span></span>  <br/> | <span data-ttu-id="fe7f8-425"> 
-レフ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-425">Lev</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-426">114</span><span class="sxs-lookup"><span data-stu-id="fe7f8-426">114</span></span>  <br/> | <span data-ttu-id="fe7f8-427"> 
-BGN 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-427">BGN</span></span>  <br/> | <span data-ttu-id="fe7f8-428"> 
-ブルガリア レフ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-428">Bulgarian Lev (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-429"> 
-115 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-429">115</span></span>  <br/> | <span data-ttu-id="fe7f8-430"> 
-BIF 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-430">BIF</span></span>  <br/> | <span data-ttu-id="fe7f8-431"> 
-ブルンジ フラン (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-431">Burundi Franc (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-432"> 
-116 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-432">116</span></span>  <br/> | <span data-ttu-id="fe7f8-433"> 
-KHR 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-433">KHR</span></span>  <br/> | <span data-ttu-id="fe7f8-434"> 
-リエル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-434">Riel (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-435"> 
-117 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-435">117</span></span>  <br/> | <span data-ttu-id="fe7f8-436"> 
-XAF 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-436">XAF</span></span>  <br/> | <span data-ttu-id="fe7f8-437"> 
-CFA フラン BEAC (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-437">CFA Franc BEAC (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-438"> 
-118 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-438">118</span></span>  <br/> | <span data-ttu-id="fe7f8-439"> 
-CVE 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-439">CVE</span></span>  <br/> | <span data-ttu-id="fe7f8-440"> 
-カーボベルデ エスクード (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-440">Cape Verde Escudo (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-441"> 
-119 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-441">119</span></span>  <br/> | <span data-ttu-id="fe7f8-442"> 
-KYD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-442">KYD</span></span>  <br/> | <span data-ttu-id="fe7f8-443"> 
-ケイマン諸島 ドル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-443">Cayman Islands Dollar (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-444"> 
-120 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-444">120</span></span>  <br/> | <span data-ttu-id="fe7f8-445"> 
-KMF 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-445">KMF</span></span>  <br/> | <span data-ttu-id="fe7f8-446"> 
-コモロ フラン (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-446">Comoro Franc (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-447">121</span><span class="sxs-lookup"><span data-stu-id="fe7f8-447">121</span></span>  <br/> | <span data-ttu-id="fe7f8-448"> 
-CDF 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-448">CDF</span></span>  <br/> | <span data-ttu-id="fe7f8-449"> 
-コンゴ フラン (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-449">Franc Congolais (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-450">122</span><span class="sxs-lookup"><span data-stu-id="fe7f8-450">122</span></span>  <br/> | <span data-ttu-id="fe7f8-451"> 
-HRK 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-451">HRK</span></span>  <br/> | <span data-ttu-id="fe7f8-452"> 
-クロアチア クーナ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-452">Croatian Kuna (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-453">123</span><span class="sxs-lookup"><span data-stu-id="fe7f8-453">123</span></span>  <br/> | <span data-ttu-id="fe7f8-454">カップ</span><span class="sxs-lookup"><span data-stu-id="fe7f8-454">CUP</span></span>  <br/> | <span data-ttu-id="fe7f8-455"> 
-キューバ ペソ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-455">Cuban Peso (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-456">124</span><span class="sxs-lookup"><span data-stu-id="fe7f8-456">124</span></span>  <br/> | <span data-ttu-id="fe7f8-457"> 
-CYP 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-457">CYP</span></span>  <br/> | <span data-ttu-id="fe7f8-458"> 
-キプロス ポンド (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-458">Cyprus Pound (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-459">125</span><span class="sxs-lookup"><span data-stu-id="fe7f8-459">125</span></span>  <br/> | <span data-ttu-id="fe7f8-460"> 
-DJF 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-460">DJF</span></span>  <br/> | <span data-ttu-id="fe7f8-461"> 
-ジブチ フラン (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-461">Djibouti Franc (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-462"> 
-126 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-462">126</span></span>  <br/> | <span data-ttu-id="fe7f8-463"> 
-TPE 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-463">TPE</span></span>  <br/> | <span data-ttu-id="fe7f8-464"> 
-ティモール エスクード (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-464">Timor Escudo (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-465"> 
-127 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-465">127</span></span>  <br/> | <span data-ttu-id="fe7f8-466"> 
-ERN 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-466">ERN</span></span>  <br/> | <span data-ttu-id="fe7f8-467"> 
-ナクファ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-467">Nakfa (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-468"> 
-128 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-468">128</span></span>  <br/> | <span data-ttu-id="fe7f8-469"> 
-EEK 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-469">EEK</span></span>  <br/> | <span data-ttu-id="fe7f8-470"> 
-クローン (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-470">Kroon (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-471"> 
-129 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-471">129</span></span>  <br/> | <span data-ttu-id="fe7f8-472"> 
-ETB 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-472">ETB</span></span>  <br/> | <span data-ttu-id="fe7f8-473"> 
-エチオピア ブル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-473">Ethiopian Birr (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-474">130</span><span class="sxs-lookup"><span data-stu-id="fe7f8-474">130</span></span>  <br/> | <span data-ttu-id="fe7f8-475"> 
-FKP 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-475">FKP</span></span>  <br/> | <span data-ttu-id="fe7f8-476"> 
-フォークランド (マルビナス) 諸島ポンド (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-476">Falkland Islands (Islas Malvinas) Pound (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-477">131</span><span class="sxs-lookup"><span data-stu-id="fe7f8-477">131</span></span>  <br/> | <span data-ttu-id="fe7f8-478"> 
-FJD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-478">FJD</span></span>  <br/> | <span data-ttu-id="fe7f8-479"> 
-フィジー ドル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-479">Fijian Dollar (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-480">132</span><span class="sxs-lookup"><span data-stu-id="fe7f8-480">132</span></span>  <br/> | <span data-ttu-id="fe7f8-481"> 
-XPF 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-481">XPF</span></span>  <br/> | <span data-ttu-id="fe7f8-482"> 
-CFP フラン (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-482">CFP Franc (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-483">133</span><span class="sxs-lookup"><span data-stu-id="fe7f8-483">133</span></span>  <br/> | <span data-ttu-id="fe7f8-484"> 
-GMD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-484">GMD</span></span>  <br/> | <span data-ttu-id="fe7f8-485"> 
-ダラシ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-485">Dalasi (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-486">134</span><span class="sxs-lookup"><span data-stu-id="fe7f8-486">134</span></span>  <br/> | <span data-ttu-id="fe7f8-487"> 
-GEL 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-487">GEL</span></span>  <br/> | <span data-ttu-id="fe7f8-488"> 
-ラリ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-488">Lari (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-489"> 
-135 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-489">135</span></span>  <br/> | <span data-ttu-id="fe7f8-490"> 
-GHC 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-490">GHC</span></span>  <br/> | <span data-ttu-id="fe7f8-491"> 
-セディ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-491">Cedi (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-492"> 
-136 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-492">136</span></span>  <br/> | <span data-ttu-id="fe7f8-493"> 
-GIP 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-493">GIP</span></span>  <br/> | <span data-ttu-id="fe7f8-494"> 
-ジブラルタル ポンド (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-494">Gibraltar Pound (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-495"> 
-137 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-495">137</span></span>  <br/> | <span data-ttu-id="fe7f8-496"> 
-GTQ 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-496">GTQ</span></span>  <br/> | <span data-ttu-id="fe7f8-497"> 
-ケツァル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-497">Quetzal (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-498"> 
-138 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-498">138</span></span>  <br/> | <span data-ttu-id="fe7f8-499"> 
-GNF 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-499">GNF</span></span>  <br/> | <span data-ttu-id="fe7f8-500"> 
-ギニア フラン (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-500">Guinea Franc (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-501"> 
-139 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-501">139</span></span>  <br/> | <span data-ttu-id="fe7f8-502"> 
-GWP 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-502">GWP</span></span>  <br/> | <span data-ttu-id="fe7f8-503"> 
-ギニアビサウ ペソ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-503">Guinea-Bissau Peso (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-504"> 
-140 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-504">140</span></span>  <br/> | <span data-ttu-id="fe7f8-505"> 
-GYD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-505">GYD</span></span>  <br/> | <span data-ttu-id="fe7f8-506"> 
-ガイアナ ドル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-506">Guyana Dollar (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-507">141</span><span class="sxs-lookup"><span data-stu-id="fe7f8-507">141</span></span>  <br/> | <span data-ttu-id="fe7f8-508"> 
-HTG 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-508">HTG</span></span>  <br/> | <span data-ttu-id="fe7f8-509"> 
-グールド (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-509">Gourde (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-510">142</span><span class="sxs-lookup"><span data-stu-id="fe7f8-510">142</span></span>  <br/> | <span data-ttu-id="fe7f8-511"> 
-ISK 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-511">ISK</span></span>  <br/> | <span data-ttu-id="fe7f8-512"> 
-アイスランド クローネ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-512">Iceland Krona (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-513">143</span><span class="sxs-lookup"><span data-stu-id="fe7f8-513">143</span></span>  <br/> | <span data-ttu-id="fe7f8-514">IRR</span><span class="sxs-lookup"><span data-stu-id="fe7f8-514">IRR</span></span>  <br/> | <span data-ttu-id="fe7f8-515"> 
-イラン リアル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-515">Iranian Rial (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-516">144</span><span class="sxs-lookup"><span data-stu-id="fe7f8-516">144</span></span>  <br/> | <span data-ttu-id="fe7f8-517"> 
-IQD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-517">IQD</span></span>  <br/> | <span data-ttu-id="fe7f8-518"> 
-イラク ディナール (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-518">Iraqi Dinar (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-519">145</span><span class="sxs-lookup"><span data-stu-id="fe7f8-519">145</span></span>  <br/> | <span data-ttu-id="fe7f8-520"> 
-KZT 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-520">KZT</span></span>  <br/> | <span data-ttu-id="fe7f8-521"> 
-テンゲ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-521">Tenge (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-522">146</span><span class="sxs-lookup"><span data-stu-id="fe7f8-522">146</span></span>  <br/> | <span data-ttu-id="fe7f8-523"> 
-KES 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-523">KES</span></span>  <br/> | <span data-ttu-id="fe7f8-524"> 
-ケニア シリング (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-524">Kenyan Shilling (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-525">147</span><span class="sxs-lookup"><span data-stu-id="fe7f8-525">147</span></span>  <br/> | <span data-ttu-id="fe7f8-526"> 
-KPW 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-526">KPW</span></span>  <br/> | <span data-ttu-id="fe7f8-527"> 
-北朝鮮 ウォン (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-527">North Korean Won (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-528">148</span><span class="sxs-lookup"><span data-stu-id="fe7f8-528">148</span></span>  <br/> | <span data-ttu-id="fe7f8-529"> 
-KGS 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-529">KGS</span></span>  <br/> | <span data-ttu-id="fe7f8-530"> 
-ソム (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-530">Som (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-531">149</span><span class="sxs-lookup"><span data-stu-id="fe7f8-531">149</span></span>  <br/> | <span data-ttu-id="fe7f8-532"> 
-LAK 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-532">LAK</span></span>  <br/> | <span data-ttu-id="fe7f8-533"> 
-キープ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-533">Kip (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-534"> 
-150 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-534">150</span></span>  <br/> | <span data-ttu-id="fe7f8-535">LVL (歴史的です。</span><span class="sxs-lookup"><span data-stu-id="fe7f8-535">LVL (Historic.</span></span> <span data-ttu-id="fe7f8-536">ユーロを使用)</span><span class="sxs-lookup"><span data-stu-id="fe7f8-536">Use EUR.)</span></span>  <br/> | <span data-ttu-id="fe7f8-537"> 
-ラトビア ラッツ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-537">Latvian Lats (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-538">151</span><span class="sxs-lookup"><span data-stu-id="fe7f8-538">151</span></span>  <br/> | <span data-ttu-id="fe7f8-539"> 
-LBP 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-539">LBP</span></span>  <br/> | <span data-ttu-id="fe7f8-540"> 
-レバノン ポンド (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-540">Lebanese Pound (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-541"> 
-152 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-541">152</span></span>  <br/> | <span data-ttu-id="fe7f8-542"> 
-LSL 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-542">LSL</span></span>  <br/> | <span data-ttu-id="fe7f8-543"> 
-マロチ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-543">Loti (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-544"> 
-153 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-544">153</span></span>  <br/> | <span data-ttu-id="fe7f8-545"> 
-LRD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-545">LRD</span></span>  <br/> | <span data-ttu-id="fe7f8-546"> 
-リベリア ドル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-546">Liberian Dollar (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-547"> 
-154 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-547">154</span></span>  <br/> | <span data-ttu-id="fe7f8-548"> 
-LYD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-548">LYD</span></span>  <br/> | <span data-ttu-id="fe7f8-549"> 
-リビア ディナール (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-549">Libyan Dinar (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-550"> 
-155 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-550">155</span></span>  <br/> | <span data-ttu-id="fe7f8-551"> 
-LTL 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-551">LTL</span></span>  <br/> | <span data-ttu-id="fe7f8-552"> 
-リトアニア リタス (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-552">Lithuanian Litus (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-553"> 
-156 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-553">156</span></span>  <br/> | <span data-ttu-id="fe7f8-554"> 
-MKD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-554">MKD</span></span>  <br/> | <span data-ttu-id="fe7f8-555"> 
-デナル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-555">Denar (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-556"> 
-157 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-556">157</span></span>  <br/> | <span data-ttu-id="fe7f8-p111"> 
-MGF (現在は MGA を使用) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-p111">MGF (Historic. Use MGA.)</span></span>  <br/> | <span data-ttu-id="fe7f8-559"> 
-マダガスカル フラン (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-559">Madagascar Franc (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-560">158</span><span class="sxs-lookup"><span data-stu-id="fe7f8-560">158</span></span>  <br/> | <span data-ttu-id="fe7f8-561"> 
-MWK 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-561">MWK</span></span>  <br/> | <span data-ttu-id="fe7f8-562"> 
-マラウイ クワチャ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-562">Malawian Kwacha (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-563">159</span><span class="sxs-lookup"><span data-stu-id="fe7f8-563">159</span></span>  <br/> | <span data-ttu-id="fe7f8-564"> 
-MVR 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-564">MVR</span></span>  <br/> | <span data-ttu-id="fe7f8-565"> 
-ルフィア (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-565">Rufiyaa (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-566">160</span><span class="sxs-lookup"><span data-stu-id="fe7f8-566">160</span></span>  <br/> | <span data-ttu-id="fe7f8-567"> 
-MTL 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-567">MTL</span></span>  <br/> | <span data-ttu-id="fe7f8-568"> 
-マルタ リラ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-568">Maltese Lira (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-569">161</span><span class="sxs-lookup"><span data-stu-id="fe7f8-569">161</span></span>  <br/> | <span data-ttu-id="fe7f8-570"> 
-MRO 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-570">MRO</span></span>  <br/> | <span data-ttu-id="fe7f8-571"> 
-ウギア (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-571">Ouguiya (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-572">162</span><span class="sxs-lookup"><span data-stu-id="fe7f8-572">162</span></span>  <br/> | <span data-ttu-id="fe7f8-573"> 
-MUR 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-573">MUR</span></span>  <br/> | <span data-ttu-id="fe7f8-574"> 
-モーリシャス ルピー (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-574">Mauritius Rupee (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-575">163</span><span class="sxs-lookup"><span data-stu-id="fe7f8-575">163</span></span>  <br/> | <span data-ttu-id="fe7f8-576"> 
-MDL 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-576">MDL</span></span>  <br/> | <span data-ttu-id="fe7f8-577"> 
-モルドバ レイ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-577">Moldovan Leu (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-578">164</span><span class="sxs-lookup"><span data-stu-id="fe7f8-578">164</span></span>  <br/> | <span data-ttu-id="fe7f8-579"> 
-MNT 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-579">MNT</span></span>  <br/> | <span data-ttu-id="fe7f8-580"> 
-トグログ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-580">Tugrik (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-581">165</span><span class="sxs-lookup"><span data-stu-id="fe7f8-581">165</span></span>  <br/> | <span data-ttu-id="fe7f8-582"> 
-MAD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-582">MAD</span></span>  <br/> | <span data-ttu-id="fe7f8-583"> 
-モロッコ ディルハム (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-583">Moroccan Dirham (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-584">166</span><span class="sxs-lookup"><span data-stu-id="fe7f8-584">166</span></span>  <br/> | <span data-ttu-id="fe7f8-585"> 
-MZM 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-585">MZM</span></span>  <br/> | <span data-ttu-id="fe7f8-586"> 
-メティカル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-586">Metical (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-587">167</span><span class="sxs-lookup"><span data-stu-id="fe7f8-587">167</span></span>  <br/> | <span data-ttu-id="fe7f8-588"> 
-MMK 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-588">MMK</span></span>  <br/> | <span data-ttu-id="fe7f8-589"> 
-チャット (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-589">Kyat (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-590">168</span><span class="sxs-lookup"><span data-stu-id="fe7f8-590">168</span></span>  <br/> | <span data-ttu-id="fe7f8-591"> 
-NAD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-591">NAD</span></span>  <br/> | <span data-ttu-id="fe7f8-592"> 
-ナミビア ドル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-592">Namibia Dollar (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-593">169</span><span class="sxs-lookup"><span data-stu-id="fe7f8-593">169</span></span>  <br/> | <span data-ttu-id="fe7f8-594"> 
-NPR 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-594">NPR</span></span>  <br/> | <span data-ttu-id="fe7f8-595"> 
-ネパール ルピー (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-595">Nepalese Rupee (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-596">170</span><span class="sxs-lookup"><span data-stu-id="fe7f8-596">170</span></span>  <br/> | <span data-ttu-id="fe7f8-597">ANG</span><span class="sxs-lookup"><span data-stu-id="fe7f8-597">ANG</span></span>  <br/> | <span data-ttu-id="fe7f8-598"> 
-オランダ領アンティル ギルダー (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-598">Netherlands Antillian Guilder (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-599">171</span><span class="sxs-lookup"><span data-stu-id="fe7f8-599">171</span></span>  <br/> | <span data-ttu-id="fe7f8-600"> 
-NGN 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-600">NGN</span></span>  <br/> | <span data-ttu-id="fe7f8-601"> 
-ナイラ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-601">Naira (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-602">172</span><span class="sxs-lookup"><span data-stu-id="fe7f8-602">172</span></span>  <br/> | <span data-ttu-id="fe7f8-603"> 
-OMR 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-603">OMR</span></span>  <br/> | <span data-ttu-id="fe7f8-604"> 
-オマーン リアル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-604">Rial Omani (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-605">173</span><span class="sxs-lookup"><span data-stu-id="fe7f8-605">173</span></span>  <br/> | <span data-ttu-id="fe7f8-606"> 
-PGK 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-606">PGK</span></span>  <br/> | <span data-ttu-id="fe7f8-607"> 
-キナ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-607">Kina (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-608">174</span><span class="sxs-lookup"><span data-stu-id="fe7f8-608">174</span></span>  <br/> | <span data-ttu-id="fe7f8-609"> 
-QAR 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-609">QAR</span></span>  <br/> | <span data-ttu-id="fe7f8-610"> 
-カタール リアル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-610">Qatari Rial (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-611">175</span><span class="sxs-lookup"><span data-stu-id="fe7f8-611">175</span></span>  <br/> | <span data-ttu-id="fe7f8-612"> 
-RWF 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-612">RWF</span></span>  <br/> | <span data-ttu-id="fe7f8-613"> 
-ルワンダ フラン (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-613">Rwanda Franc (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-614">176</span><span class="sxs-lookup"><span data-stu-id="fe7f8-614">176</span></span>  <br/> | <span data-ttu-id="fe7f8-615"> 
-SHP 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-615">SHP</span></span>  <br/> | <span data-ttu-id="fe7f8-616"> 
-セントヘレナ ポンド (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-616">Saint Helena Pound (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-617">177</span><span class="sxs-lookup"><span data-stu-id="fe7f8-617">177</span></span>  <br/> | <span data-ttu-id="fe7f8-618"> 
-WST 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-618">WST</span></span>  <br/> | <span data-ttu-id="fe7f8-619"> 
-タラ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-619">Tala (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-620">178</span><span class="sxs-lookup"><span data-stu-id="fe7f8-620">178</span></span>  <br/> | <span data-ttu-id="fe7f8-621"> 
-STD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-621">STD</span></span>  <br/> | <span data-ttu-id="fe7f8-622"> 
-ドブラ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-622">Dobra (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-623"> 
-179 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-623">179</span></span>  <br/> | <span data-ttu-id="fe7f8-624">SCR</span><span class="sxs-lookup"><span data-stu-id="fe7f8-624">SCR</span></span>  <br/> | <span data-ttu-id="fe7f8-625"> 
-セーシェル ルピー (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-625">Seychelles Rupee (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-626">180</span><span class="sxs-lookup"><span data-stu-id="fe7f8-626">180</span></span>  <br/> | <span data-ttu-id="fe7f8-627"> 
-SLL 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-627">SLL</span></span>  <br/> | <span data-ttu-id="fe7f8-628"> 
-レオネ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-628">Leone (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-629">181</span><span class="sxs-lookup"><span data-stu-id="fe7f8-629">181</span></span>  <br/> | <span data-ttu-id="fe7f8-630"> 
-SBD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-630">SBD</span></span>  <br/> | <span data-ttu-id="fe7f8-631"> 
-ソロモン諸島 ドル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-631">Solomon Islands Dollar (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-632">182</span><span class="sxs-lookup"><span data-stu-id="fe7f8-632">182</span></span>  <br/> | <span data-ttu-id="fe7f8-633"> 
-SOS 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-633">SOS</span></span>  <br/> | <span data-ttu-id="fe7f8-634"> 
-ソマリア シリング (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-634">Somali Shilling (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-635"> 
-183 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-635">183</span></span>  <br/> | <span data-ttu-id="fe7f8-636"> 
-LKR 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-636">LKR</span></span>  <br/> | <span data-ttu-id="fe7f8-637"> 
-スリランカ ルピー (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-637">Sri Lanka Rupee (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-638"> 
-184 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-638">184</span></span>  <br/> | <span data-ttu-id="fe7f8-639"> 
-SDD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-639">SDD</span></span>  <br/> | <span data-ttu-id="fe7f8-640"> 
-スーダン ディナール (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-640">Sudanese Dinar (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-641"> 
-185 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-641">185</span></span>  <br/> | <span data-ttu-id="fe7f8-642"> 
-SRG 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-642">SRG</span></span>  <br/> | <span data-ttu-id="fe7f8-643"> 
-スリナム ギルダー (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-643">Suriname Guilder (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-644"> 
-186 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-644">186</span></span>  <br/> | <span data-ttu-id="fe7f8-645"> 
-SZL 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-645">SZL</span></span>  <br/> | <span data-ttu-id="fe7f8-646"> 
-リランジェニ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-646">Lilangeni (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-647"> 
-187 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-647">187</span></span>  <br/> | <span data-ttu-id="fe7f8-648"> 
-SYP 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-648">SYP</span></span>  <br/> | <span data-ttu-id="fe7f8-649"> 
-シリア ポンド (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-649">Syrian Pound (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-650">188</span><span class="sxs-lookup"><span data-stu-id="fe7f8-650">188</span></span>  <br/> | <span data-ttu-id="fe7f8-p112"> 
-TJR (現在は TJS を使用) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-p112">TJR (Historic. Use TJS.)</span></span>  <br/> | <span data-ttu-id="fe7f8-653"> 
-タジク ルーブル 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-653">Tajik Ruble</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-654"> 
-189 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-654">189</span></span>  <br/> | <span data-ttu-id="fe7f8-655"> 
-TJS 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-655">TJS</span></span>  <br/> | <span data-ttu-id="fe7f8-656"> 
-タジキスタン ソモニ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-656">Tajik Somoni (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-657"> 
-190 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-657">190</span></span>  <br/> | <span data-ttu-id="fe7f8-658"> 
-TZS 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-658">TZS</span></span>  <br/> | <span data-ttu-id="fe7f8-659"> 
-タンザニア シリング (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-659">Tanzanian Shilling (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-660"> 
-191 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-660">191</span></span>  <br/> | <span data-ttu-id="fe7f8-661">TOP</span><span class="sxs-lookup"><span data-stu-id="fe7f8-661">TOP</span></span>  <br/> | <span data-ttu-id="fe7f8-662"> 
-バアンガ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-662">Pa'anga (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-663"> 
-192 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-663">192</span></span>  <br/> | <span data-ttu-id="fe7f8-664"> 
-TND 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-664">TND</span></span>  <br/> | <span data-ttu-id="fe7f8-665"> 
-チュニジア ディナール (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-665">Tunisian Dinar (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-666"> 
-193 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-666">193</span></span>  <br/> | <span data-ttu-id="fe7f8-667"> 
-TMM 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-667">TMM</span></span>  <br/> | <span data-ttu-id="fe7f8-668"> 
-マナト (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-668">Manat (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-669"> 
-194 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-669">194</span></span>  <br/> | <span data-ttu-id="fe7f8-670"> 
-UGX 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-670">UGX</span></span>  <br/> | <span data-ttu-id="fe7f8-671"> 
-ウガンダ シリング (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-671">Uganda Shilling (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-672"> 
-195 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-672">195</span></span>  <br/> | <span data-ttu-id="fe7f8-673"> 
-AED 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-673">AED</span></span>  <br/> | <span data-ttu-id="fe7f8-674"> 
-アラブ首長国連邦 ディルハム (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-674">UAE Dirham (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-675"> 
-196 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-675">196</span></span>  <br/> | <span data-ttu-id="fe7f8-676"> 
-UZS 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-676">UZS</span></span>  <br/> | <span data-ttu-id="fe7f8-677"> 
-ウズベキスタン スム (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-677">Uzbekistan Sum (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-678"> 
-197 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-678">197</span></span>  <br/> | <span data-ttu-id="fe7f8-679"> 
-VUV 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-679">VUV</span></span>  <br/> | <span data-ttu-id="fe7f8-680"> 
-バツ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-680">Vatu (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-681"> 
-198 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-681">198</span></span>  <br/> | <span data-ttu-id="fe7f8-682"> 
-YER 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-682">YER</span></span>  <br/> | <span data-ttu-id="fe7f8-683"> 
-イエメン リアル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-683">Yemeni Rial (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-684"> 
-199 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-684">199</span></span>  <br/> | <span data-ttu-id="fe7f8-685"> 
-ZMK 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-685">ZMK</span></span>  <br/> | <span data-ttu-id="fe7f8-686"> 
-ザンビア クワチャ (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-686">Zambian Kwacha (added in Visio 2002)</span></span>  <br/> |
-| <span data-ttu-id="fe7f8-687"> 
-200 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-687">200</span></span>  <br/> | <span data-ttu-id="fe7f8-688"> 
-ZWD 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-688">ZWD</span></span>  <br/> | <span data-ttu-id="fe7f8-689"> 
-ジンバブエ ドル (Visio 2002 で追加) 
-</span><span class="sxs-lookup"><span data-stu-id="fe7f8-689">Zimbabwe Dollar (added in Visio 2002)</span></span>  <br/> |
-|<span data-ttu-id="fe7f8-690">201</span><span class="sxs-lookup"><span data-stu-id="fe7f8-690">201</span></span>  <br/> |<span data-ttu-id="fe7f8-691">VEF</span><span class="sxs-lookup"><span data-stu-id="fe7f8-691">VEF</span></span>  <br/> |<span data-ttu-id="fe7f8-692">ベネズエラ ボリバル フエルテ (Visio 2010 で追加)</span><span class="sxs-lookup"><span data-stu-id="fe7f8-692">Venezuelan Bolivar Fuente (added in Visio 2010)</span></span>  <br/> |
-|<span data-ttu-id="fe7f8-693">202</span><span class="sxs-lookup"><span data-stu-id="fe7f8-693">202</span></span>  <br/> |<span data-ttu-id="fe7f8-694">MGA</span><span class="sxs-lookup"><span data-stu-id="fe7f8-694">MGA</span></span>  <br/> |<span data-ttu-id="fe7f8-695">マダガスカル アリアリ (Visio 2010 で追加)</span><span class="sxs-lookup"><span data-stu-id="fe7f8-695">Malagasy Ariary (added in Visio 2010)</span></span>  <br/> |
-|<span data-ttu-id="fe7f8-696">203</span><span class="sxs-lookup"><span data-stu-id="fe7f8-696">203</span></span>  <br/> |<span data-ttu-id="fe7f8-697">RSD</span><span class="sxs-lookup"><span data-stu-id="fe7f8-697">RSD</span></span>  <br/> |<span data-ttu-id="fe7f8-698">セルビア ディナール (Visio 2010 で追加)</span><span class="sxs-lookup"><span data-stu-id="fe7f8-698">Serbian Dinar (added in Visio 2010)</span></span>  <br/> |
-|<span data-ttu-id="fe7f8-699">204</span><span class="sxs-lookup"><span data-stu-id="fe7f8-699">204</span></span>  <br/> |<span data-ttu-id="fe7f8-p113">CSD (現在は RSD を使用)</span><span class="sxs-lookup"><span data-stu-id="fe7f8-p113">CSD (Historic. Use RSD.)</span></span>  <br/> |<span data-ttu-id="fe7f8-702">セルビア ディナール (Visio 2010 で追加)</span><span class="sxs-lookup"><span data-stu-id="fe7f8-702">Serbian Dinar (added in Visio 2010)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-112">0</span><span class="sxs-lookup"><span data-stu-id="7ee05-112">0%</span></span>  <br/> | <span data-ttu-id="7ee05-113">SYS</span><span class="sxs-lookup"><span data-stu-id="7ee05-113">SYS</span></span>  <br/> | <span data-ttu-id="7ee05-114">システム設定を使う</span><span class="sxs-lookup"><span data-stu-id="7ee05-114">Uses system settings</span></span>  <br/> |
+| <span data-ttu-id="7ee05-115">1</span><span class="sxs-lookup"><span data-stu-id="7ee05-115">1.</span></span>  <br/> | <span data-ttu-id="7ee05-116">xxx</span><span class="sxs-lookup"><span data-stu-id="7ee05-116">XXX</span></span>  <br/> | <span data-ttu-id="7ee05-117">数値の形式</span><span class="sxs-lookup"><span data-stu-id="7ee05-117">Formats as a number</span></span>  <br/> |
+| <span data-ttu-id="7ee05-118">2 - 9</span><span class="sxs-lookup"><span data-stu-id="7ee05-118">2 - 9</span></span>  <br/> | <span data-ttu-id="7ee05-119">予備</span><span class="sxs-lookup"><span data-stu-id="7ee05-119">Reserved</span></span>  <br/> |
+| <span data-ttu-id="7ee05-120">10</span><span class="sxs-lookup"><span data-stu-id="7ee05-120">1.0</span></span>  <br/> | <span data-ttu-id="7ee05-121">EUR</span><span class="sxs-lookup"><span data-stu-id="7ee05-121">EUR</span></span>  <br/> | <span data-ttu-id="7ee05-122">ユーロ</span><span class="sxs-lookup"><span data-stu-id="7ee05-122">Euro</span></span>  <br/> |
+| <span data-ttu-id="7ee05-123">11</span><span class="sxs-lookup"><span data-stu-id="7ee05-123">1.1</span></span>  <br/> | <span data-ttu-id="7ee05-124">USD</span><span class="sxs-lookup"><span data-stu-id="7ee05-124">USD</span></span>  <br/> | <span data-ttu-id="7ee05-125">米ドル</span><span class="sxs-lookup"><span data-stu-id="7ee05-125">U.S. dollar</span></span>  <br/> |
+| <span data-ttu-id="7ee05-126">12</span><span class="sxs-lookup"><span data-stu-id="7ee05-126">1.2</span></span>  <br/> | <span data-ttu-id="7ee05-127">ATS</span><span class="sxs-lookup"><span data-stu-id="7ee05-127">ATS</span></span>  <br/> | <span data-ttu-id="7ee05-128">オーストリア シリング</span><span class="sxs-lookup"><span data-stu-id="7ee05-128">Austrian Schilling</span></span>  <br/> |
+| <span data-ttu-id="7ee05-129">13</span><span class="sxs-lookup"><span data-stu-id="7ee05-129">1.3</span></span>  <br/> | <span data-ttu-id="7ee05-130">AUD</span><span class="sxs-lookup"><span data-stu-id="7ee05-130">aud</span></span>  <br/> | <span data-ttu-id="7ee05-131">オーストラリア ドル</span><span class="sxs-lookup"><span data-stu-id="7ee05-131">Australian Dollar</span></span>  <br/> |
+| <span data-ttu-id="7ee05-132">14</span><span class="sxs-lookup"><span data-stu-id="7ee05-132">1.4</span></span>  <br/> | <span data-ttu-id="7ee05-133">BEF</span><span class="sxs-lookup"><span data-stu-id="7ee05-133">BEF</span></span>  <br/> | <span data-ttu-id="7ee05-134">ベルギー フラン</span><span class="sxs-lookup"><span data-stu-id="7ee05-134">Belgian Franc</span></span>  <br/> |
+| <span data-ttu-id="7ee05-135">15</span><span class="sxs-lookup"><span data-stu-id="7ee05-135">1.5</span></span>  <br/> | <span data-ttu-id="7ee05-136">CAD</span><span class="sxs-lookup"><span data-stu-id="7ee05-136">CAD</span></span>  <br/> | <span data-ttu-id="7ee05-137">カナダ ドル</span><span class="sxs-lookup"><span data-stu-id="7ee05-137">Canadian Dollar</span></span>  <br/> |
+| <span data-ttu-id="7ee05-138">16</span><span class="sxs-lookup"><span data-stu-id="7ee05-138">1.6</span></span>  <br/> | <span data-ttu-id="7ee05-139">CHF</span><span class="sxs-lookup"><span data-stu-id="7ee05-139">CHF</span></span>  <br/> | <span data-ttu-id="7ee05-140">スイス フラン</span><span class="sxs-lookup"><span data-stu-id="7ee05-140">Swiss Franc</span></span>  <br/> |
+| <span data-ttu-id="7ee05-141">17</span><span class="sxs-lookup"><span data-stu-id="7ee05-141">1.7</span></span>  <br/> | <span data-ttu-id="7ee05-142">CNY</span><span class="sxs-lookup"><span data-stu-id="7ee05-142">CNY</span></span>  <br/> | <span data-ttu-id="7ee05-143">中国 人民元</span><span class="sxs-lookup"><span data-stu-id="7ee05-143">Chinese Yuan Renminbi</span></span>  <br/> |
+| <span data-ttu-id="7ee05-144">18</span><span class="sxs-lookup"><span data-stu-id="7ee05-144">1.8</span></span>  <br/> | <span data-ttu-id="7ee05-145">DEM</span><span class="sxs-lookup"><span data-stu-id="7ee05-145">DEM</span></span>  <br/> | <span data-ttu-id="7ee05-146">ドイツ マルク</span><span class="sxs-lookup"><span data-stu-id="7ee05-146">German Mark</span></span>  <br/> |
+| <span data-ttu-id="7ee05-147">19</span><span class="sxs-lookup"><span data-stu-id="7ee05-147">1.9</span></span>  <br/> | <span data-ttu-id="7ee05-148">DKK</span><span class="sxs-lookup"><span data-stu-id="7ee05-148">DKK</span></span>  <br/> | <span data-ttu-id="7ee05-149">デンマーク クローネ</span><span class="sxs-lookup"><span data-stu-id="7ee05-149">Danish Krone</span></span>  <br/> |
+| <span data-ttu-id="7ee05-150">20</span><span class="sxs-lookup"><span data-stu-id="7ee05-150">2.0</span></span>  <br/> | <span data-ttu-id="7ee05-151">ESP</span><span class="sxs-lookup"><span data-stu-id="7ee05-151">ESP</span></span>  <br/> | <span data-ttu-id="7ee05-152">スペイン ペセタ</span><span class="sxs-lookup"><span data-stu-id="7ee05-152">Spanish Peseta</span></span>  <br/> |
+| <span data-ttu-id="7ee05-153">21</span><span class="sxs-lookup"><span data-stu-id="7ee05-153">2.1</span></span>  <br/> | <span data-ttu-id="7ee05-154">FIM</span><span class="sxs-lookup"><span data-stu-id="7ee05-154">FIM</span></span>  <br/> | <span data-ttu-id="7ee05-155">フィンランド マルカ</span><span class="sxs-lookup"><span data-stu-id="7ee05-155">Finnish Markka</span></span>  <br/> |
+| <span data-ttu-id="7ee05-156">22</span><span class="sxs-lookup"><span data-stu-id="7ee05-156">2.2</span></span>  <br/> | <span data-ttu-id="7ee05-157">FRF</span><span class="sxs-lookup"><span data-stu-id="7ee05-157">FRF</span></span>  <br/> | <span data-ttu-id="7ee05-158">フランス フラン</span><span class="sxs-lookup"><span data-stu-id="7ee05-158">French Franc</span></span>  <br/> |
+| <span data-ttu-id="7ee05-159">23</span><span class="sxs-lookup"><span data-stu-id="7ee05-159">2.3</span></span>  <br/> | <span data-ttu-id="7ee05-160">GBP</span><span class="sxs-lookup"><span data-stu-id="7ee05-160">GBP</span></span>  <br/> | <span data-ttu-id="7ee05-161">イギリス ポンド</span><span class="sxs-lookup"><span data-stu-id="7ee05-161">British Pound Sterling</span></span>  <br/> |
+| <span data-ttu-id="7ee05-162">24</span><span class="sxs-lookup"><span data-stu-id="7ee05-162">2.4</span></span>  <br/> | <span data-ttu-id="7ee05-163">GRD</span><span class="sxs-lookup"><span data-stu-id="7ee05-163">GRD</span></span>  <br/> | <span data-ttu-id="7ee05-164">ギリシャ ドラクマ</span><span class="sxs-lookup"><span data-stu-id="7ee05-164">Greek Drachma</span></span>  <br/> |
+| <span data-ttu-id="7ee05-165">25</span><span class="sxs-lookup"><span data-stu-id="7ee05-165">/25</span></span>  <br/> | <span data-ttu-id="7ee05-166">HKD</span><span class="sxs-lookup"><span data-stu-id="7ee05-166">HKD</span></span>  <br/> | <span data-ttu-id="7ee05-167">香港特別行政区 (SAR) ドル</span><span class="sxs-lookup"><span data-stu-id="7ee05-167">Hong Kong Special Administrative Region (SAR) Dollar</span></span>  <br/> |
+| <span data-ttu-id="7ee05-168">26</span><span class="sxs-lookup"><span data-stu-id="7ee05-168">/26</span></span>  <br/> | <span data-ttu-id="7ee05-169">HUF</span><span class="sxs-lookup"><span data-stu-id="7ee05-169">HUF</span></span>  <br/> | <span data-ttu-id="7ee05-170">ハンガリー フォリント</span><span class="sxs-lookup"><span data-stu-id="7ee05-170">Hungarian Forint</span></span>  <br/> |
+| <span data-ttu-id="7ee05-171">27</span><span class="sxs-lookup"><span data-stu-id="7ee05-171">/27</span></span>  <br/> | <span data-ttu-id="7ee05-172">IDR</span><span class="sxs-lookup"><span data-stu-id="7ee05-172">IDR</span></span>  <br/> | <span data-ttu-id="7ee05-173">インドネシア ルピア</span><span class="sxs-lookup"><span data-stu-id="7ee05-173">Indonesian Rupiah</span></span>  <br/> |
+| <span data-ttu-id="7ee05-174">28</span><span class="sxs-lookup"><span data-stu-id="7ee05-174">/28</span></span>  <br/> | <span data-ttu-id="7ee05-175">IEP</span><span class="sxs-lookup"><span data-stu-id="7ee05-175">IEP</span></span>  <br/> | <span data-ttu-id="7ee05-176">アイルランド プント</span><span class="sxs-lookup"><span data-stu-id="7ee05-176">Irish Punt</span></span>  <br/> |
+| <span data-ttu-id="7ee05-177">29</span><span class="sxs-lookup"><span data-stu-id="7ee05-177">/29</span></span>  <br/> | <span data-ttu-id="7ee05-178">ILS</span><span class="sxs-lookup"><span data-stu-id="7ee05-178">ILS</span></span>  <br/> | <span data-ttu-id="7ee05-179">イスラエル シェケル</span><span class="sxs-lookup"><span data-stu-id="7ee05-179">Israeli Shekel</span></span>  <br/> |
+| <span data-ttu-id="7ee05-180">30</span><span class="sxs-lookup"><span data-stu-id="7ee05-180">-30</span></span>  <br/> | <span data-ttu-id="7ee05-181">ITL</span><span class="sxs-lookup"><span data-stu-id="7ee05-181">ITL</span></span>  <br/> | <span data-ttu-id="7ee05-182">イタリア リラ</span><span class="sxs-lookup"><span data-stu-id="7ee05-182">Italian Lira</span></span>  <br/> |
+| <span data-ttu-id="7ee05-183">31</span><span class="sxs-lookup"><span data-stu-id="7ee05-183">3.1</span></span>  <br/> | <span data-ttu-id="7ee05-184">JPY</span><span class="sxs-lookup"><span data-stu-id="7ee05-184">JPY</span></span>  <br/> | <span data-ttu-id="7ee05-185">日本 円</span><span class="sxs-lookup"><span data-stu-id="7ee05-185">Japanese Yen</span></span>  <br/> |
+| <span data-ttu-id="7ee05-186">32</span><span class="sxs-lookup"><span data-stu-id="7ee05-186">3.2</span></span>  <br/> | <span data-ttu-id="7ee05-187">KRW</span><span class="sxs-lookup"><span data-stu-id="7ee05-187">KRW</span></span>  <br/> | <span data-ttu-id="7ee05-188">韓国 ウォン</span><span class="sxs-lookup"><span data-stu-id="7ee05-188">Korean Won</span></span>  <br/> |
+| <span data-ttu-id="7ee05-189">33</span><span class="sxs-lookup"><span data-stu-id="7ee05-189">3.3</span></span>  <br/> | <span data-ttu-id="7ee05-190">LUF</span><span class="sxs-lookup"><span data-stu-id="7ee05-190">LUF</span></span>  <br/> | <span data-ttu-id="7ee05-191">ルクセンブルク フラン</span><span class="sxs-lookup"><span data-stu-id="7ee05-191">Luxembourgian Franc</span></span>  <br/> |
+| <span data-ttu-id="7ee05-192">34</span><span class="sxs-lookup"><span data-stu-id="7ee05-192">3.4</span></span>  <br/> | <span data-ttu-id="7ee05-193">MXN</span><span class="sxs-lookup"><span data-stu-id="7ee05-193">MXN</span></span>  <br/> | <span data-ttu-id="7ee05-194">メキシコ ペソ</span><span class="sxs-lookup"><span data-stu-id="7ee05-194">Mexican Peso</span></span>  <br/> |
+| <span data-ttu-id="7ee05-195">35</span><span class="sxs-lookup"><span data-stu-id="7ee05-195">(35)</span></span>  <br/> | <span data-ttu-id="7ee05-196">MYR</span><span class="sxs-lookup"><span data-stu-id="7ee05-196">MYR</span></span>  <br/> | <span data-ttu-id="7ee05-197">マレーシア リンギット</span><span class="sxs-lookup"><span data-stu-id="7ee05-197">Malaysian Ringgit</span></span>  <br/> |
+| <span data-ttu-id="7ee05-198">36</span><span class="sxs-lookup"><span data-stu-id="7ee05-198">-36</span></span>  <br/> | <span data-ttu-id="7ee05-199">NLG</span><span class="sxs-lookup"><span data-stu-id="7ee05-199">NLG</span></span>  <br/> | <span data-ttu-id="7ee05-200">オランダ ギルダー</span><span class="sxs-lookup"><span data-stu-id="7ee05-200">Dutch Guilder</span></span>  <br/> |
+| <span data-ttu-id="7ee05-201">37</span><span class="sxs-lookup"><span data-stu-id="7ee05-201">-37</span></span>  <br/> | <span data-ttu-id="7ee05-202">NOK</span><span class="sxs-lookup"><span data-stu-id="7ee05-202">NOK</span></span>  <br/> | <span data-ttu-id="7ee05-203">ノルウェー クローネ</span><span class="sxs-lookup"><span data-stu-id="7ee05-203">Norwegian Krone</span></span>  <br/> |
+| <span data-ttu-id="7ee05-204">38</span><span class="sxs-lookup"><span data-stu-id="7ee05-204">-38</span></span>  <br/> | <span data-ttu-id="7ee05-205">NZD</span><span class="sxs-lookup"><span data-stu-id="7ee05-205">NZD</span></span>  <br/> | <span data-ttu-id="7ee05-206">ニュージーランド ドル</span><span class="sxs-lookup"><span data-stu-id="7ee05-206">New Zealand Dollar</span></span>  <br/> |
+| <span data-ttu-id="7ee05-207">39</span><span class="sxs-lookup"><span data-stu-id="7ee05-207">3.9</span></span>  <br/> | <span data-ttu-id="7ee05-208">PHP</span><span class="sxs-lookup"><span data-stu-id="7ee05-208">PHP</span></span>  <br/> | <span data-ttu-id="7ee05-209">フィリピン ペソ</span><span class="sxs-lookup"><span data-stu-id="7ee05-209">Philippine Peso</span></span>  <br/> |
+| <span data-ttu-id="7ee05-210">40</span><span class="sxs-lookup"><span data-stu-id="7ee05-210">-40</span></span>  <br/> | <span data-ttu-id="7ee05-211">PLZ (旧称。</span><span class="sxs-lookup"><span data-stu-id="7ee05-211">PLZ (Historic.</span></span> <span data-ttu-id="7ee05-212">PLN を使用)</span><span class="sxs-lookup"><span data-stu-id="7ee05-212">
+PLZ (Historic. Use PLN.) 
+</span></span>  <br/> | <span data-ttu-id="7ee05-213">ポーランド ズウォティ</span><span class="sxs-lookup"><span data-stu-id="7ee05-213">Polish Zloty</span></span>  <br/> |
+| <span data-ttu-id="7ee05-214">41</span><span class="sxs-lookup"><span data-stu-id="7ee05-214">4.1</span></span>  <br/> | <span data-ttu-id="7ee05-215">PTE</span><span class="sxs-lookup"><span data-stu-id="7ee05-215">PTE</span></span>  <br/> | <span data-ttu-id="7ee05-216">ポルトガル エスクード</span><span class="sxs-lookup"><span data-stu-id="7ee05-216">Portuguese Escudo</span></span>  <br/> |
+| <span data-ttu-id="7ee05-217">42</span><span class="sxs-lookup"><span data-stu-id="7ee05-217">4.2</span></span>  <br/> | <span data-ttu-id="7ee05-218">ROL</span><span class="sxs-lookup"><span data-stu-id="7ee05-218">ROL</span></span>  <br/> | <span data-ttu-id="7ee05-219">ルーマニア レウ</span><span class="sxs-lookup"><span data-stu-id="7ee05-219">Romanian Leu</span></span>  <br/> |
+| <span data-ttu-id="7ee05-220">43</span><span class="sxs-lookup"><span data-stu-id="7ee05-220">4.3</span></span>  <br/> | <span data-ttu-id="7ee05-221">PUR (旧称。</span><span class="sxs-lookup"><span data-stu-id="7ee05-221">RUR (Historic.</span></span> <span data-ttu-id="7ee05-222">RUBを使用)</span><span class="sxs-lookup"><span data-stu-id="7ee05-222">
+RUR (Historic. Use RUB.) 
+</span></span>  <br/> | <span data-ttu-id="7ee05-223">ロシア ルーブル</span><span class="sxs-lookup"><span data-stu-id="7ee05-223">Russian Ruble</span></span>  <br/> |
+| <span data-ttu-id="7ee05-224">44</span><span class="sxs-lookup"><span data-stu-id="7ee05-224">4.4</span></span>  <br/> | <span data-ttu-id="7ee05-225">SEK</span><span class="sxs-lookup"><span data-stu-id="7ee05-225">SEK</span></span>  <br/> | <span data-ttu-id="7ee05-226">スウェーデン クローネ</span><span class="sxs-lookup"><span data-stu-id="7ee05-226">Swedish Kroner</span></span>  <br/> |
+| <span data-ttu-id="7ee05-227">45</span><span class="sxs-lookup"><span data-stu-id="7ee05-227">4.5</span></span>  <br/> | <span data-ttu-id="7ee05-228">SGD</span><span class="sxs-lookup"><span data-stu-id="7ee05-228">SGD</span></span>  <br/> | <span data-ttu-id="7ee05-229">シンガポール ドル</span><span class="sxs-lookup"><span data-stu-id="7ee05-229">Singapore Dollar</span></span>  <br/> |
+| <span data-ttu-id="7ee05-230">46</span><span class="sxs-lookup"><span data-stu-id="7ee05-230">4.6</span></span>  <br/> | <span data-ttu-id="7ee05-231">THB</span><span class="sxs-lookup"><span data-stu-id="7ee05-231">THB</span></span>  <br/> | <span data-ttu-id="7ee05-232">タイ バーツ</span><span class="sxs-lookup"><span data-stu-id="7ee05-232">Thai Baht</span></span>  <br/> |
+| <span data-ttu-id="7ee05-233">47</span><span class="sxs-lookup"><span data-stu-id="7ee05-233">4.7</span></span>  <br/> | <span data-ttu-id="7ee05-234">TWD</span><span class="sxs-lookup"><span data-stu-id="7ee05-234">TWD</span></span>  <br/> | <span data-ttu-id="7ee05-235">新台湾ドル</span><span class="sxs-lookup"><span data-stu-id="7ee05-235">New Taiwan Dollar</span></span>  <br/> |
+| <span data-ttu-id="7ee05-236">48</span><span class="sxs-lookup"><span data-stu-id="7ee05-236">4.8</span></span>  <br/> | <span data-ttu-id="7ee05-237">XEU (旧称。</span><span class="sxs-lookup"><span data-stu-id="7ee05-237">XEU (Historic.</span></span> <span data-ttu-id="7ee05-238">現在はユーロを使用)</span><span class="sxs-lookup"><span data-stu-id="7ee05-238">
+XEU (Historic. Use EUR.) 
+</span></span>  <br/> | <span data-ttu-id="7ee05-239">ECU (1998 年以前)</span><span class="sxs-lookup"><span data-stu-id="7ee05-239">ECU (pre-1998)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-240">49</span><span class="sxs-lookup"><span data-stu-id="7ee05-240">4.9</span></span>  <br/> | <span data-ttu-id="7ee05-241">YUN (旧称。</span><span class="sxs-lookup"><span data-stu-id="7ee05-241">YUN (Historic.</span></span> <span data-ttu-id="7ee05-242">YUM を使用)</span><span class="sxs-lookup"><span data-stu-id="7ee05-242">
+YUN (Historic. Use YUM.) 
+</span></span>  <br/> | <span data-ttu-id="7ee05-243">ユーゴスラビア ディナール</span><span class="sxs-lookup"><span data-stu-id="7ee05-243">Yugoslavian Dinar</span></span>  <br/> |
+| <span data-ttu-id="7ee05-244">50</span><span class="sxs-lookup"><span data-stu-id="7ee05-244">50%</span></span>  <br/> | <span data-ttu-id="7ee05-245">ZAR</span><span class="sxs-lookup"><span data-stu-id="7ee05-245">ZAR</span></span>  <br/> | <span data-ttu-id="7ee05-246">南アフリカ ランド</span><span class="sxs-lookup"><span data-stu-id="7ee05-246">South African Rand</span></span>  <br/> |
+| <span data-ttu-id="7ee05-247">51 - 55</span><span class="sxs-lookup"><span data-stu-id="7ee05-247">51 - 55</span></span>  <br/> | <span data-ttu-id="7ee05-248">予備</span><span class="sxs-lookup"><span data-stu-id="7ee05-248">Reserved</span></span>  <br/> |
+| <span data-ttu-id="7ee05-249">56</span><span class="sxs-lookup"><span data-stu-id="7ee05-249">5.6</span></span>  <br/> | <span data-ttu-id="7ee05-250">ARS</span><span class="sxs-lookup"><span data-stu-id="7ee05-250">ARS</span></span>  <br/> | <span data-ttu-id="7ee05-251">アルゼンチン ペソ</span><span class="sxs-lookup"><span data-stu-id="7ee05-251">Argentinean Peso</span></span>  <br/> |
+| <span data-ttu-id="7ee05-252">57</span><span class="sxs-lookup"><span data-stu-id="7ee05-252">5.7</span></span>  <br/> | <span data-ttu-id="7ee05-253">BMD</span><span class="sxs-lookup"><span data-stu-id="7ee05-253">BMD</span></span>  <br/> | <span data-ttu-id="7ee05-254">バミューダ ドル</span><span class="sxs-lookup"><span data-stu-id="7ee05-254">Bermudian Dollar</span></span>  <br/> |
+| <span data-ttu-id="7ee05-255">58</span><span class="sxs-lookup"><span data-stu-id="7ee05-255">5.8</span></span>  <br/> | <span data-ttu-id="7ee05-256">BOB</span><span class="sxs-lookup"><span data-stu-id="7ee05-256">Bob</span></span>  <br/> | <span data-ttu-id="7ee05-257">ボリビア ボリビアーノ</span><span class="sxs-lookup"><span data-stu-id="7ee05-257">Bolivian Boliviano</span></span>  <br/> |
+| <span data-ttu-id="7ee05-258">59</span><span class="sxs-lookup"><span data-stu-id="7ee05-258">5.9</span></span>  <br/> | <span data-ttu-id="7ee05-259">BRR (旧称。</span><span class="sxs-lookup"><span data-stu-id="7ee05-259">BRR (Historic.</span></span> <span data-ttu-id="7ee05-260">BRL を使用)</span><span class="sxs-lookup"><span data-stu-id="7ee05-260">
+BRR (Historic. Use BRL.) 
+</span></span>  <br/> | <span data-ttu-id="7ee05-261">ブラジル クルゼイロ・レアル</span><span class="sxs-lookup"><span data-stu-id="7ee05-261">Brazilian Cruziero Real</span></span>  <br/> |
+| <span data-ttu-id="7ee05-262">60</span><span class="sxs-lookup"><span data-stu-id="7ee05-262">6.0</span></span>  <br/> | <span data-ttu-id="7ee05-263">BSD</span><span class="sxs-lookup"><span data-stu-id="7ee05-263">BSD</span></span>  <br/> | <span data-ttu-id="7ee05-264">バハマ ドル</span><span class="sxs-lookup"><span data-stu-id="7ee05-264">Bahamanian Dollar</span></span>  <br/> |
+| <span data-ttu-id="7ee05-265">61</span><span class="sxs-lookup"><span data-stu-id="7ee05-265">6.1</span></span>  <br/> | <span data-ttu-id="7ee05-266">CLP</span><span class="sxs-lookup"><span data-stu-id="7ee05-266">CLP</span></span>  <br/> | <span data-ttu-id="7ee05-267">チリ ペソ</span><span class="sxs-lookup"><span data-stu-id="7ee05-267">Chilean Peso</span></span>  <br/> |
+| <span data-ttu-id="7ee05-268">62</span><span class="sxs-lookup"><span data-stu-id="7ee05-268">6.2</span></span>  <br/> | <span data-ttu-id="7ee05-269">COP</span><span class="sxs-lookup"><span data-stu-id="7ee05-269">COP</span></span>  <br/> | <span data-ttu-id="7ee05-270">コロンビア ペソ</span><span class="sxs-lookup"><span data-stu-id="7ee05-270">Colombian Peso</span></span>  <br/> |
+| <span data-ttu-id="7ee05-271">63</span><span class="sxs-lookup"><span data-stu-id="7ee05-271">6.3</span></span>  <br/> | <span data-ttu-id="7ee05-272">CRC</span><span class="sxs-lookup"><span data-stu-id="7ee05-272">CRC</span></span>  <br/> | <span data-ttu-id="7ee05-273">コスタリカ コロン</span><span class="sxs-lookup"><span data-stu-id="7ee05-273">Costa Rican Colon</span></span>  <br/> |
+| <span data-ttu-id="7ee05-274">64</span><span class="sxs-lookup"><span data-stu-id="7ee05-274">6.4</span></span>  <br/> | <span data-ttu-id="7ee05-275">CZK</span><span class="sxs-lookup"><span data-stu-id="7ee05-275">CZK</span></span>  <br/> | <span data-ttu-id="7ee05-276">チェコ コルナ</span><span class="sxs-lookup"><span data-stu-id="7ee05-276">Czech Koruna</span></span>  <br/> |
+| <span data-ttu-id="7ee05-277">65</span><span class="sxs-lookup"><span data-stu-id="7ee05-277">6.5</span></span>  <br/> | <span data-ttu-id="7ee05-278">DOP</span><span class="sxs-lookup"><span data-stu-id="7ee05-278">DOP</span></span>  <br/> | <span data-ttu-id="7ee05-279">ドミニカ ペソ</span><span class="sxs-lookup"><span data-stu-id="7ee05-279">Dominican Peso</span></span>  <br/> |
+| <span data-ttu-id="7ee05-280">66</span><span class="sxs-lookup"><span data-stu-id="7ee05-280">6.6</span></span>  <br/> | <span data-ttu-id="7ee05-281">ECS</span><span class="sxs-lookup"><span data-stu-id="7ee05-281">ECS</span></span>  <br/> | <span data-ttu-id="7ee05-282">エクアドル スクレ</span><span class="sxs-lookup"><span data-stu-id="7ee05-282">Ecuadorean Sucre</span></span>  <br/> |
+| <span data-ttu-id="7ee05-283">67</span><span class="sxs-lookup"><span data-stu-id="7ee05-283">6.7</span></span>  <br/> | <span data-ttu-id="7ee05-284">EGP</span><span class="sxs-lookup"><span data-stu-id="7ee05-284">EGP</span></span>  <br/> | <span data-ttu-id="7ee05-285">エジプト ポンド</span><span class="sxs-lookup"><span data-stu-id="7ee05-285">Egyptian Pound</span></span>  <br/> |
+| <span data-ttu-id="7ee05-286">68</span><span class="sxs-lookup"><span data-stu-id="7ee05-286">6.8</span></span>  <br/> | <span data-ttu-id="7ee05-287">HNL</span><span class="sxs-lookup"><span data-stu-id="7ee05-287">HNL</span></span>  <br/> | <span data-ttu-id="7ee05-288">ホンジュラス レンピラ</span><span class="sxs-lookup"><span data-stu-id="7ee05-288">Honduran Lempira</span></span>  <br/> |
+| <span data-ttu-id="7ee05-289">69</span><span class="sxs-lookup"><span data-stu-id="7ee05-289">6.9</span></span>  <br/> | <span data-ttu-id="7ee05-290">INR</span><span class="sxs-lookup"><span data-stu-id="7ee05-290">INR</span></span>  <br/> | <span data-ttu-id="7ee05-291">インド ルピー</span><span class="sxs-lookup"><span data-stu-id="7ee05-291">Indian Rupee</span></span>  <br/> |
+| <span data-ttu-id="7ee05-292">70</span><span class="sxs-lookup"><span data-stu-id="7ee05-292">-70</span></span>  <br/> | <span data-ttu-id="7ee05-293">JMD</span><span class="sxs-lookup"><span data-stu-id="7ee05-293">JMD</span></span>  <br/> | <span data-ttu-id="7ee05-294">ジャマイカ ドル</span><span class="sxs-lookup"><span data-stu-id="7ee05-294">Jamaican Dollar</span></span>  <br/> |
+| <span data-ttu-id="7ee05-295">71</span><span class="sxs-lookup"><span data-stu-id="7ee05-295">7.1</span></span>  <br/> | <span data-ttu-id="7ee05-296">JOD</span><span class="sxs-lookup"><span data-stu-id="7ee05-296">JOD</span></span>  <br/> | <span data-ttu-id="7ee05-297">ヨルダン ディナール</span><span class="sxs-lookup"><span data-stu-id="7ee05-297">Jordanian Dinar</span></span>  <br/> |
+| <span data-ttu-id="7ee05-298">72</span><span class="sxs-lookup"><span data-stu-id="7ee05-298">7.2</span></span>  <br/> | <span data-ttu-id="7ee05-299">KWD</span><span class="sxs-lookup"><span data-stu-id="7ee05-299">KWD</span></span>  <br/> | <span data-ttu-id="7ee05-300">クウェート ディナール</span><span class="sxs-lookup"><span data-stu-id="7ee05-300">Kuwaiti Dinar</span></span>  <br/> |
+| <span data-ttu-id="7ee05-301">73</span><span class="sxs-lookup"><span data-stu-id="7ee05-301">7.3</span></span>  <br/> | <span data-ttu-id="7ee05-302">MOP</span><span class="sxs-lookup"><span data-stu-id="7ee05-302">MOP</span></span>  <br/> | <span data-ttu-id="7ee05-303">マカオ パタカ</span><span class="sxs-lookup"><span data-stu-id="7ee05-303">Macanese Pataca</span></span>  <br/> |
+| <span data-ttu-id="7ee05-304">74</span><span class="sxs-lookup"><span data-stu-id="7ee05-304">7.4</span></span>  <br/> | <span data-ttu-id="7ee05-305">NIO</span><span class="sxs-lookup"><span data-stu-id="7ee05-305">NIO</span></span>  <br/> | <span data-ttu-id="7ee05-306">ニカラグア コルドバ・オロ</span><span class="sxs-lookup"><span data-stu-id="7ee05-306">Nicaraguan Cordoba Oro</span></span>  <br/> |
+| <span data-ttu-id="7ee05-307">75</span><span class="sxs-lookup"><span data-stu-id="7ee05-307">7.5</span></span>  <br/> | <span data-ttu-id="7ee05-308">PAB</span><span class="sxs-lookup"><span data-stu-id="7ee05-308">PAB</span></span>  <br/> | <span data-ttu-id="7ee05-309">パナマ バルボア</span><span class="sxs-lookup"><span data-stu-id="7ee05-309">Panamanian Balboa</span></span>  <br/> |
+| <span data-ttu-id="7ee05-310">76</span><span class="sxs-lookup"><span data-stu-id="7ee05-310">7.6</span></span>  <br/> | <span data-ttu-id="7ee05-311">PEN</span><span class="sxs-lookup"><span data-stu-id="7ee05-311">PEN</span></span>  <br/> | <span data-ttu-id="7ee05-312">ペルー ヌエボ・ソル</span><span class="sxs-lookup"><span data-stu-id="7ee05-312">Peruvian Nuevo Sol</span></span>  <br/> |
+| <span data-ttu-id="7ee05-313">77</span><span class="sxs-lookup"><span data-stu-id="7ee05-313">7.7</span></span>  <br/> | <span data-ttu-id="7ee05-314">PKR</span><span class="sxs-lookup"><span data-stu-id="7ee05-314">PKR</span></span>  <br/> | <span data-ttu-id="7ee05-315">パキスタン ルピー</span><span class="sxs-lookup"><span data-stu-id="7ee05-315">Pakistani Rupee</span></span>  <br/> |
+| <span data-ttu-id="7ee05-316">78</span><span class="sxs-lookup"><span data-stu-id="7ee05-316">7.8</span></span>  <br/> | <span data-ttu-id="7ee05-317">PYG</span><span class="sxs-lookup"><span data-stu-id="7ee05-317">PYG</span></span>  <br/> | <span data-ttu-id="7ee05-318">パラグアイ グアラニー</span><span class="sxs-lookup"><span data-stu-id="7ee05-318">Paraguayan Guarani</span></span>  <br/> |
+| <span data-ttu-id="7ee05-319">79</span><span class="sxs-lookup"><span data-stu-id="7ee05-319">7.9</span></span>  <br/> | <span data-ttu-id="7ee05-320">SAR</span><span class="sxs-lookup"><span data-stu-id="7ee05-320">Macau SAR</span></span>  <br/> | <span data-ttu-id="7ee05-321">サウジアラビア リヤル</span><span class="sxs-lookup"><span data-stu-id="7ee05-321">Saudi Riyal</span></span>  <br/> |
+| <span data-ttu-id="7ee05-322">80</span><span class="sxs-lookup"><span data-stu-id="7ee05-322">80%</span></span>  <br/> | <span data-ttu-id="7ee05-323">SIT</span><span class="sxs-lookup"><span data-stu-id="7ee05-323">SIT</span></span>  <br/> | <span data-ttu-id="7ee05-324">スロベニア トラール</span><span class="sxs-lookup"><span data-stu-id="7ee05-324">Slovenian Tolar</span></span>  <br/> |
+| <span data-ttu-id="7ee05-325">81</span><span class="sxs-lookup"><span data-stu-id="7ee05-325">8.1</span></span>  <br/> | <span data-ttu-id="7ee05-326">SKK</span><span class="sxs-lookup"><span data-stu-id="7ee05-326">SKK</span></span>  <br/> | <span data-ttu-id="7ee05-327">スロバキア コルナ</span><span class="sxs-lookup"><span data-stu-id="7ee05-327">Slovakian Koruna</span></span>  <br/> |
+| <span data-ttu-id="7ee05-328">82</span><span class="sxs-lookup"><span data-stu-id="7ee05-328">8.2</span></span>  <br/> | <span data-ttu-id="7ee05-329">SVC</span><span class="sxs-lookup"><span data-stu-id="7ee05-329">SVC</span></span>  <br/> | <span data-ttu-id="7ee05-330">エルサルバドル コロン</span><span class="sxs-lookup"><span data-stu-id="7ee05-330">El Salvadoran Colon</span></span>  <br/> |
+| <span data-ttu-id="7ee05-331">83</span><span class="sxs-lookup"><span data-stu-id="7ee05-331">8.3</span></span>  <br/> | <span data-ttu-id="7ee05-332">TRY</span><span class="sxs-lookup"><span data-stu-id="7ee05-332">try</span></span>  <br/> | <span data-ttu-id="7ee05-333">新トルコ リラ</span><span class="sxs-lookup"><span data-stu-id="7ee05-333">New Turkish Lira</span></span>  <br/> |
+| <span data-ttu-id="7ee05-334">84</span><span class="sxs-lookup"><span data-stu-id="7ee05-334">8.4</span></span>  <br/> | <span data-ttu-id="7ee05-335">TTD</span><span class="sxs-lookup"><span data-stu-id="7ee05-335">TTD</span></span>  <br/> | <span data-ttu-id="7ee05-336">トリニダード・トバゴ ドル</span><span class="sxs-lookup"><span data-stu-id="7ee05-336">Trinidad and Tobago Dollar</span></span>  <br/> |
+| <span data-ttu-id="7ee05-337">85</span><span class="sxs-lookup"><span data-stu-id="7ee05-337">8.5</span></span>  <br/> | <span data-ttu-id="7ee05-338">UYU</span><span class="sxs-lookup"><span data-stu-id="7ee05-338">UYU</span></span>  <br/> | <span data-ttu-id="7ee05-339">ウルグアイ ペソ</span><span class="sxs-lookup"><span data-stu-id="7ee05-339">Uruguayan Peso Uruguayo</span></span>  <br/> |
+| <span data-ttu-id="7ee05-340">86</span><span class="sxs-lookup"><span data-stu-id="7ee05-340">8.6</span></span>  <br/> | <span data-ttu-id="7ee05-341">VEB</span><span class="sxs-lookup"><span data-stu-id="7ee05-341">VEB</span></span>  <br/> | <span data-ttu-id="7ee05-342">ベネズエラ ボリバル</span><span class="sxs-lookup"><span data-stu-id="7ee05-342">Venezuelan Bolivar</span></span>  <br/> |
+| <span data-ttu-id="7ee05-343">87</span><span class="sxs-lookup"><span data-stu-id="7ee05-343">-87</span></span>  <br/> | <span data-ttu-id="7ee05-344">VND</span><span class="sxs-lookup"><span data-stu-id="7ee05-344">VND</span></span>  <br/> | <span data-ttu-id="7ee05-345">ベトナム ドン</span><span class="sxs-lookup"><span data-stu-id="7ee05-345">Vietnamese Dong</span></span>  <br/> |
+| <span data-ttu-id="7ee05-346">88</span><span class="sxs-lookup"><span data-stu-id="7ee05-346">88%</span></span>  <br/> | <span data-ttu-id="7ee05-347">BRL</span><span class="sxs-lookup"><span data-stu-id="7ee05-347">BRL</span></span>  <br/> | <span data-ttu-id="7ee05-348">ブラジル レアル</span><span class="sxs-lookup"><span data-stu-id="7ee05-348">Brazilian Real</span></span>  <br/> |
+| <span data-ttu-id="7ee05-349">89</span><span class="sxs-lookup"><span data-stu-id="7ee05-349">-89</span></span>  <br/> | <span data-ttu-id="7ee05-350">PLN</span><span class="sxs-lookup"><span data-stu-id="7ee05-350">PLN</span></span>  <br/> | <span data-ttu-id="7ee05-351">ポーランド ズウォティ</span><span class="sxs-lookup"><span data-stu-id="7ee05-351">Polish Zloty</span></span>  <br/> |
+| <span data-ttu-id="7ee05-352">90</span><span class="sxs-lookup"><span data-stu-id="7ee05-352">-90</span></span>  <br/> | <span data-ttu-id="7ee05-353">RUB</span><span class="sxs-lookup"><span data-stu-id="7ee05-353">RUB</span></span>  <br/> | <span data-ttu-id="7ee05-354">ロシア ルーブル</span><span class="sxs-lookup"><span data-stu-id="7ee05-354">Russian Ruble</span></span>  <br/> |
+| <span data-ttu-id="7ee05-355">91</span><span class="sxs-lookup"><span data-stu-id="7ee05-355">9.1</span></span>  <br/> | <span data-ttu-id="7ee05-356">YUM</span><span class="sxs-lookup"><span data-stu-id="7ee05-356">YUM</span></span>  <br/> | <span data-ttu-id="7ee05-357">ユーゴスラビア ディナール</span><span class="sxs-lookup"><span data-stu-id="7ee05-357">Yugoslavian Dinar</span></span>  <br/> |
+| <span data-ttu-id="7ee05-358">92</span><span class="sxs-lookup"><span data-stu-id="7ee05-358">92%</span></span>  <br/> | <span data-ttu-id="7ee05-359">BYB (旧称。</span><span class="sxs-lookup"><span data-stu-id="7ee05-359">BYB (Historic.</span></span> <span data-ttu-id="7ee05-360">BYR を使用)</span><span class="sxs-lookup"><span data-stu-id="7ee05-360">
+BYB (Historic. Use BYR.) 
+</span></span>  <br/> | <span data-ttu-id="7ee05-361">ベラルーシ ルーブル</span><span class="sxs-lookup"><span data-stu-id="7ee05-361">Belarusian Ruble</span></span>  <br/> |
+| <span data-ttu-id="7ee05-362">93</span><span class="sxs-lookup"><span data-stu-id="7ee05-362">93</span></span>  <br/> | <span data-ttu-id="7ee05-363">UAH</span><span class="sxs-lookup"><span data-stu-id="7ee05-363">UAH</span></span>  <br/> | <span data-ttu-id="7ee05-364">ウクライナ フリヴニャ</span><span class="sxs-lookup"><span data-stu-id="7ee05-364">Ukrainian Hryvnia</span></span>  <br/> |
+| <span data-ttu-id="7ee05-365">94</span><span class="sxs-lookup"><span data-stu-id="7ee05-365">MediumToHigh 94</span></span>  <br/> | <span data-ttu-id="7ee05-366">AFA</span><span class="sxs-lookup"><span data-stu-id="7ee05-366">AFA</span></span>  <br/> | <span data-ttu-id="7ee05-367">アフガニ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-367">Afghani (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-368">95</span><span class="sxs-lookup"><span data-stu-id="7ee05-368">-95</span></span>  <br/> | <span data-ttu-id="7ee05-369">すべて</span><span class="sxs-lookup"><span data-stu-id="7ee05-369">ALL</span></span>  <br/> | <span data-ttu-id="7ee05-370">レク (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-370">Lek (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-371">96</span><span class="sxs-lookup"><span data-stu-id="7ee05-371">-96</span></span>  <br/> | <span data-ttu-id="7ee05-372">DZD</span><span class="sxs-lookup"><span data-stu-id="7ee05-372">DZD</span></span>  <br/> | <span data-ttu-id="7ee05-373">アルジェリア ディナール (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-373">Algerian Dinar (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-374">97</span><span class="sxs-lookup"><span data-stu-id="7ee05-374">-97</span></span>  <br/> | <span data-ttu-id="7ee05-375">ADP</span><span class="sxs-lookup"><span data-stu-id="7ee05-375">ADP objects</span></span>  <br/> | <span data-ttu-id="7ee05-376">アンドラ ペセタ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-376">Andorran Peseta (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-377">98</span><span class="sxs-lookup"><span data-stu-id="7ee05-377">-98</span></span>  <br/> | <span data-ttu-id="7ee05-378">AOA</span><span class="sxs-lookup"><span data-stu-id="7ee05-378">AOA</span></span>  <br/> | <span data-ttu-id="7ee05-379">クワンザ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-379">Kwanza (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-380">99</span><span class="sxs-lookup"><span data-stu-id="7ee05-380">99%</span></span>  <br/> | <span data-ttu-id="7ee05-381">XCD</span><span class="sxs-lookup"><span data-stu-id="7ee05-381">XCD</span></span>  <br/> | <span data-ttu-id="7ee05-382">東カリブ ドル (Visio 2002 で追加) </span><span class="sxs-lookup"><span data-stu-id="7ee05-382">East Caribbean Dollar (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-383">100</span><span class="sxs-lookup"><span data-stu-id="7ee05-383">100%</span></span>  <br/> | <span data-ttu-id="7ee05-384">AMD</span><span class="sxs-lookup"><span data-stu-id="7ee05-384">AMD</span></span>  <br/> | <span data-ttu-id="7ee05-385">アルメニア ドラム (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-385">Armenian Dram (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-386">101</span><span class="sxs-lookup"><span data-stu-id="7ee05-386">10.1</span></span>  <br/> | <span data-ttu-id="7ee05-387">AWG</span><span class="sxs-lookup"><span data-stu-id="7ee05-387">AWG</span></span>  <br/> | <span data-ttu-id="7ee05-388">アルバ ギルダー (Visio 2002 で追加) </span><span class="sxs-lookup"><span data-stu-id="7ee05-388">Aruban Guilder (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-389">102</span><span class="sxs-lookup"><span data-stu-id="7ee05-389">10.2</span></span>  <br/> | <span data-ttu-id="7ee05-390">AZM</span><span class="sxs-lookup"><span data-stu-id="7ee05-390">AZM</span></span>  <br/> | <span data-ttu-id="7ee05-391">アゼルバイジャン マナト (Visio 2002 で追加) </span><span class="sxs-lookup"><span data-stu-id="7ee05-391">Azerbaijanian Manat (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-392">103</span><span class="sxs-lookup"><span data-stu-id="7ee05-392">10.3</span></span>  <br/> | <span data-ttu-id="7ee05-393">BHD</span><span class="sxs-lookup"><span data-stu-id="7ee05-393">BHD</span></span>  <br/> | <span data-ttu-id="7ee05-394">バーレーン ディナール (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-394">Bahraini Dinar (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-395">104</span><span class="sxs-lookup"><span data-stu-id="7ee05-395">10.4</span></span>  <br/> | <span data-ttu-id="7ee05-396">BDT</span><span class="sxs-lookup"><span data-stu-id="7ee05-396">BDT</span></span>  <br/> | <span data-ttu-id="7ee05-397">タカ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-397">Taka (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-398">105</span><span class="sxs-lookup"><span data-stu-id="7ee05-398">10.5</span></span>  <br/> | <span data-ttu-id="7ee05-399">BBD</span><span class="sxs-lookup"><span data-stu-id="7ee05-399">BBD</span></span>  <br/> | <span data-ttu-id="7ee05-400">バルバドス ドル (Visio 2002 で追加) </span><span class="sxs-lookup"><span data-stu-id="7ee05-400">Barbados Dollar (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-401">106</span><span class="sxs-lookup"><span data-stu-id="7ee05-401">10.6</span></span>  <br/> | <span data-ttu-id="7ee05-402">BYR</span><span class="sxs-lookup"><span data-stu-id="7ee05-402">BYR</span></span>  <br/> | <span data-ttu-id="7ee05-403">ベラルーシ ルーブル (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-403">Belarussian Ruble (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-404">107</span><span class="sxs-lookup"><span data-stu-id="7ee05-404">10.7</span></span>  <br/> | <span data-ttu-id="7ee05-405">BZD</span><span class="sxs-lookup"><span data-stu-id="7ee05-405">BZD</span></span>  <br/> | <span data-ttu-id="7ee05-406">ベリーズ ドル (Visio 2002 で追加) </span><span class="sxs-lookup"><span data-stu-id="7ee05-406">Belize Dollar (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-407">108</span><span class="sxs-lookup"><span data-stu-id="7ee05-407">10.8</span></span>  <br/> | <span data-ttu-id="7ee05-408">XOF</span><span class="sxs-lookup"><span data-stu-id="7ee05-408">XOF</span></span>  <br/> | <span data-ttu-id="7ee05-409">CFA フラン BCEAO (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-409">CFA Franc BCEAO (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-410">109</span><span class="sxs-lookup"><span data-stu-id="7ee05-410">10.9</span></span>  <br/> | <span data-ttu-id="7ee05-411">BTN</span><span class="sxs-lookup"><span data-stu-id="7ee05-411">BTN</span></span>  <br/> | <span data-ttu-id="7ee05-412">ニュルタム (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-412">Ngultrum (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-413">110</span><span class="sxs-lookup"><span data-stu-id="7ee05-413">110 ms.</span></span>  <br/> | <span data-ttu-id="7ee05-414">BAM</span><span class="sxs-lookup"><span data-stu-id="7ee05-414">BAM</span></span>  <br/> | <span data-ttu-id="7ee05-415">兌換マルク (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-415">Convertible Marks (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-416">111</span><span class="sxs-lookup"><span data-stu-id="7ee05-416">11.1</span></span>  <br/> | <span data-ttu-id="7ee05-417">BWP</span><span class="sxs-lookup"><span data-stu-id="7ee05-417">BWP</span></span>  <br/> | <span data-ttu-id="7ee05-418">プラ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-418">Pula (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-419">112</span><span class="sxs-lookup"><span data-stu-id="7ee05-419">11.2</span></span>  <br/> | <span data-ttu-id="7ee05-420">BND</span><span class="sxs-lookup"><span data-stu-id="7ee05-420">BND</span></span>  <br/> | <span data-ttu-id="7ee05-421">ブルネイ ドル (Visio 2002 で追加) </span><span class="sxs-lookup"><span data-stu-id="7ee05-421">Brunei Dollar (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-422">113</span><span class="sxs-lookup"><span data-stu-id="7ee05-422">11.3</span></span>  <br/> | <span data-ttu-id="7ee05-423">BGL (旧称。</span><span class="sxs-lookup"><span data-stu-id="7ee05-423">BGL (Historic.</span></span> <span data-ttu-id="7ee05-424">BGN を使用)</span><span class="sxs-lookup"><span data-stu-id="7ee05-424">
+BGL (Historic. Use BGN.) 
+</span></span>  <br/> | <span data-ttu-id="7ee05-425">レフ</span><span class="sxs-lookup"><span data-stu-id="7ee05-425">Lev</span></span>  <br/> |
+| <span data-ttu-id="7ee05-426">114</span><span class="sxs-lookup"><span data-stu-id="7ee05-426">11.4</span></span>  <br/> | <span data-ttu-id="7ee05-427">BGN</span><span class="sxs-lookup"><span data-stu-id="7ee05-427">BGN</span></span>  <br/> | <span data-ttu-id="7ee05-428">ブルガリア レフ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-428">Bulgarian Lev (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-429">115</span><span class="sxs-lookup"><span data-stu-id="7ee05-429">115</span></span>  <br/> | <span data-ttu-id="7ee05-430">BIF</span><span class="sxs-lookup"><span data-stu-id="7ee05-430">BIF</span></span>  <br/> | <span data-ttu-id="7ee05-431">ブルンジ フラン (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-431">Burundi Franc (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-432">116</span><span class="sxs-lookup"><span data-stu-id="7ee05-432">116</span></span>  <br/> | <span data-ttu-id="7ee05-433">KHR</span><span class="sxs-lookup"><span data-stu-id="7ee05-433">KHR</span></span>  <br/> | <span data-ttu-id="7ee05-434">リエル (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-434">Riel (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-435">117</span><span class="sxs-lookup"><span data-stu-id="7ee05-435">117</span></span>  <br/> | <span data-ttu-id="7ee05-436">XAF</span><span class="sxs-lookup"><span data-stu-id="7ee05-436">XAF</span></span>  <br/> | <span data-ttu-id="7ee05-437">CFA フラン BEAC (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-437">CFA Franc BEAC (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-438">118</span><span class="sxs-lookup"><span data-stu-id="7ee05-438">1/18:</span></span>  <br/> | <span data-ttu-id="7ee05-439">CVE</span><span class="sxs-lookup"><span data-stu-id="7ee05-439">CVE</span></span>  <br/> | <span data-ttu-id="7ee05-440">カーボベルデ エスクード (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-440">Cape Verde Escudo (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-441">119</span><span class="sxs-lookup"><span data-stu-id="7ee05-441">119</span></span>  <br/> | <span data-ttu-id="7ee05-442">KYD</span><span class="sxs-lookup"><span data-stu-id="7ee05-442">KYD</span></span>  <br/> | <span data-ttu-id="7ee05-443">ケイマン諸島 ドル (Visio 2002 で追加) </span><span class="sxs-lookup"><span data-stu-id="7ee05-443">Cayman Islands Dollar (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-444">120</span><span class="sxs-lookup"><span data-stu-id="7ee05-444">120 days</span></span>  <br/> | <span data-ttu-id="7ee05-445">KMF</span><span class="sxs-lookup"><span data-stu-id="7ee05-445">KMF</span></span>  <br/> | <span data-ttu-id="7ee05-446">コモロ フラン (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-446">Comoro Franc (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-447">121</span><span class="sxs-lookup"><span data-stu-id="7ee05-447">12.1</span></span>  <br/> | <span data-ttu-id="7ee05-448">CDF</span><span class="sxs-lookup"><span data-stu-id="7ee05-448">CDF</span></span>  <br/> | <span data-ttu-id="7ee05-449">コンゴ フラン (Visio 2002 で追加) </span><span class="sxs-lookup"><span data-stu-id="7ee05-449">Franc Congolais (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-450">122</span><span class="sxs-lookup"><span data-stu-id="7ee05-450">12.2</span></span>  <br/> | <span data-ttu-id="7ee05-451">HRK</span><span class="sxs-lookup"><span data-stu-id="7ee05-451">HRK</span></span>  <br/> | <span data-ttu-id="7ee05-452">クロアチア クーナ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-452">Croatian Kuna (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-453">123</span><span class="sxs-lookup"><span data-stu-id="7ee05-453">12.3</span></span>  <br/> | <span data-ttu-id="7ee05-454">CUP</span><span class="sxs-lookup"><span data-stu-id="7ee05-454">"cup"</span></span>  <br/> | <span data-ttu-id="7ee05-455">キューバ ペソ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-455">Cuban Peso (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-456">124</span><span class="sxs-lookup"><span data-stu-id="7ee05-456">12.4</span></span>  <br/> | <span data-ttu-id="7ee05-457">CYP</span><span class="sxs-lookup"><span data-stu-id="7ee05-457">CYP</span></span>  <br/> | <span data-ttu-id="7ee05-458">キプロス ポンド (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-458">Cyprus Pound (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-459">125</span><span class="sxs-lookup"><span data-stu-id="7ee05-459">12.5</span></span>  <br/> | <span data-ttu-id="7ee05-460">DJF</span><span class="sxs-lookup"><span data-stu-id="7ee05-460">DJF</span></span>  <br/> | <span data-ttu-id="7ee05-461">ジブチ フラン (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-461">Djibouti Franc (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-462">126</span><span class="sxs-lookup"><span data-stu-id="7ee05-462">126</span></span>  <br/> | <span data-ttu-id="7ee05-463">TPE</span><span class="sxs-lookup"><span data-stu-id="7ee05-463">TPE</span></span>  <br/> | <span data-ttu-id="7ee05-464">ティモール エスクード (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-464">Timor Escudo (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-465">127</span><span class="sxs-lookup"><span data-stu-id="7ee05-465">127</span></span>  <br/> | <span data-ttu-id="7ee05-466">ERN</span><span class="sxs-lookup"><span data-stu-id="7ee05-466">ERN</span></span>  <br/> | <span data-ttu-id="7ee05-467">ナクファ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-467">Nakfa (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-468">128</span><span class="sxs-lookup"><span data-stu-id="7ee05-468">Default: 128</span></span>  <br/> | <span data-ttu-id="7ee05-469">EEK</span><span class="sxs-lookup"><span data-stu-id="7ee05-469">EEK</span></span>  <br/> | <span data-ttu-id="7ee05-470">クローン (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-470">Kroon (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-471">129</span><span class="sxs-lookup"><span data-stu-id="7ee05-471">129</span></span>  <br/> | <span data-ttu-id="7ee05-472">ETB</span><span class="sxs-lookup"><span data-stu-id="7ee05-472">ETB</span></span>  <br/> | <span data-ttu-id="7ee05-473">エチオピア ブル (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-473">Ethiopian Birr (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-474">130</span><span class="sxs-lookup"><span data-stu-id="7ee05-474">1-30</span></span>  <br/> | <span data-ttu-id="7ee05-475">FKP</span><span class="sxs-lookup"><span data-stu-id="7ee05-475">FKP</span></span>  <br/> | <span data-ttu-id="7ee05-476">フォークランド諸島 ポンド (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-476">Falkland Islands (Islas Malvinas) Pound (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-477">131</span><span class="sxs-lookup"><span data-stu-id="7ee05-477">13.1</span></span>  <br/> | <span data-ttu-id="7ee05-478">FJD</span><span class="sxs-lookup"><span data-stu-id="7ee05-478">FJD</span></span>  <br/> | <span data-ttu-id="7ee05-479">フィジー ドル (Visio 2002 で追加) </span><span class="sxs-lookup"><span data-stu-id="7ee05-479">Fijian Dollar (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-480">132</span><span class="sxs-lookup"><span data-stu-id="7ee05-480">13.2</span></span>  <br/> | <span data-ttu-id="7ee05-481">XPF</span><span class="sxs-lookup"><span data-stu-id="7ee05-481">XPF file</span></span>  <br/> | <span data-ttu-id="7ee05-482">CFP フラン (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-482">CFP Franc (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-483">133</span><span class="sxs-lookup"><span data-stu-id="7ee05-483">13.3</span></span>  <br/> | <span data-ttu-id="7ee05-484">GMD</span><span class="sxs-lookup"><span data-stu-id="7ee05-484">GMD</span></span>  <br/> | <span data-ttu-id="7ee05-485">ダラシ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-485">Dalasi (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-486">134</span><span class="sxs-lookup"><span data-stu-id="7ee05-486">13.4</span></span>  <br/> | <span data-ttu-id="7ee05-487">GEL</span><span class="sxs-lookup"><span data-stu-id="7ee05-487">GEL</span></span>  <br/> | <span data-ttu-id="7ee05-488">ラリ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-488">Lari (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-489">135</span><span class="sxs-lookup"><span data-stu-id="7ee05-489">135</span></span>  <br/> | <span data-ttu-id="7ee05-490">GHC</span><span class="sxs-lookup"><span data-stu-id="7ee05-490">GHC</span></span>  <br/> | <span data-ttu-id="7ee05-491">セディ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-491">Cedi (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-492">136</span><span class="sxs-lookup"><span data-stu-id="7ee05-492">136</span></span>  <br/> | <span data-ttu-id="7ee05-493">GIP</span><span class="sxs-lookup"><span data-stu-id="7ee05-493">GIP</span></span>  <br/> | <span data-ttu-id="7ee05-494">ジブラルタル ポンド (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-494">Gibraltar Pound (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-495">137</span><span class="sxs-lookup"><span data-stu-id="7ee05-495">137</span></span>  <br/> | <span data-ttu-id="7ee05-496">GTQ</span><span class="sxs-lookup"><span data-stu-id="7ee05-496">GTQ</span></span>  <br/> | <span data-ttu-id="7ee05-497">ケツァル (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-497">Quetzal (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-498">138</span><span class="sxs-lookup"><span data-stu-id="7ee05-498">138</span></span>  <br/> | <span data-ttu-id="7ee05-499">GNF</span><span class="sxs-lookup"><span data-stu-id="7ee05-499">GNF</span></span>  <br/> | <span data-ttu-id="7ee05-500">ギニア フラン (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-500">Guinea Franc (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-501">139</span><span class="sxs-lookup"><span data-stu-id="7ee05-501">139</span></span>  <br/> | <span data-ttu-id="7ee05-502">GWP</span><span class="sxs-lookup"><span data-stu-id="7ee05-502">GWP</span></span>  <br/> | <span data-ttu-id="7ee05-503">ギニアビサウ ペソ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-503">Guinea-Bissau Peso (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-504">140</span><span class="sxs-lookup"><span data-stu-id="7ee05-504">140</span></span>  <br/> | <span data-ttu-id="7ee05-505">GYD</span><span class="sxs-lookup"><span data-stu-id="7ee05-505">GYD</span></span>  <br/> | <span data-ttu-id="7ee05-506">ガイアナ ドル (Visio 2002 で追加) </span><span class="sxs-lookup"><span data-stu-id="7ee05-506">Guyana Dollar (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-507">141</span><span class="sxs-lookup"><span data-stu-id="7ee05-507">14.1</span></span>  <br/> | <span data-ttu-id="7ee05-508">HTG</span><span class="sxs-lookup"><span data-stu-id="7ee05-508">HTG</span></span>  <br/> | <span data-ttu-id="7ee05-509">グールド (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-509">Gourde (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-510">142</span><span class="sxs-lookup"><span data-stu-id="7ee05-510">14.2</span></span>  <br/> | <span data-ttu-id="7ee05-511">ISK</span><span class="sxs-lookup"><span data-stu-id="7ee05-511">ISK</span></span>  <br/> | <span data-ttu-id="7ee05-512">アイスランド クローナ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-512">Iceland Krona (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-513">143</span><span class="sxs-lookup"><span data-stu-id="7ee05-513">14.3</span></span>  <br/> | <span data-ttu-id="7ee05-514">IRR</span><span class="sxs-lookup"><span data-stu-id="7ee05-514">IRR</span></span>  <br/> | <span data-ttu-id="7ee05-515">イラン リヤル (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-515">Iranian Rial (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-516">144</span><span class="sxs-lookup"><span data-stu-id="7ee05-516">14.4</span></span>  <br/> | <span data-ttu-id="7ee05-517">IQD</span><span class="sxs-lookup"><span data-stu-id="7ee05-517">IQD</span></span>  <br/> | <span data-ttu-id="7ee05-518">イラク ディナール (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-518">Iraqi Dinar (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-519">145</span><span class="sxs-lookup"><span data-stu-id="7ee05-519">14.5</span></span>  <br/> | <span data-ttu-id="7ee05-520">KZT</span><span class="sxs-lookup"><span data-stu-id="7ee05-520">KZT</span></span>  <br/> | <span data-ttu-id="7ee05-521">テンゲ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-521">Tenge (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-522">146</span><span class="sxs-lookup"><span data-stu-id="7ee05-522">14.6</span></span>  <br/> | <span data-ttu-id="7ee05-523">KES</span><span class="sxs-lookup"><span data-stu-id="7ee05-523">KES</span></span>  <br/> | <span data-ttu-id="7ee05-524">ケニア シリング (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-524">Kenyan Shilling (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-525">147</span><span class="sxs-lookup"><span data-stu-id="7ee05-525">14.7</span></span>  <br/> | <span data-ttu-id="7ee05-526">KPW</span><span class="sxs-lookup"><span data-stu-id="7ee05-526">KPW</span></span>  <br/> | <span data-ttu-id="7ee05-527">北朝鮮 ウォン (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-527">North Korean Won (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-528">148</span><span class="sxs-lookup"><span data-stu-id="7ee05-528">14.8</span></span>  <br/> | <span data-ttu-id="7ee05-529">KGS</span><span class="sxs-lookup"><span data-stu-id="7ee05-529">KGS</span></span>  <br/> | <span data-ttu-id="7ee05-530">ソム (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-530">Som (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-531">149</span><span class="sxs-lookup"><span data-stu-id="7ee05-531">14.9</span></span>  <br/> | <span data-ttu-id="7ee05-532">LAK</span><span class="sxs-lookup"><span data-stu-id="7ee05-532">LAK</span></span>  <br/> | <span data-ttu-id="7ee05-533">キープ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-533">Kip (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-534">150</span><span class="sxs-lookup"><span data-stu-id="7ee05-534">150 MB</span></span>  <br/> | <span data-ttu-id="7ee05-535">LVL (旧称。</span><span class="sxs-lookup"><span data-stu-id="7ee05-535">LVL (Historic.</span></span> <span data-ttu-id="7ee05-536">現在はユーロを使用)</span><span class="sxs-lookup"><span data-stu-id="7ee05-536">
+XEU (Historic. Use EUR.) 
+</span></span>  <br/> | <span data-ttu-id="7ee05-537">ラトビア ラッツ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-537">Latvian Lats (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-538">151</span><span class="sxs-lookup"><span data-stu-id="7ee05-538">1-51</span></span>  <br/> | <span data-ttu-id="7ee05-539">LBP</span><span class="sxs-lookup"><span data-stu-id="7ee05-539">LBP</span></span>  <br/> | <span data-ttu-id="7ee05-540">レバノン ポンド (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-540">Lebanese Pound (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-541">152</span><span class="sxs-lookup"><span data-stu-id="7ee05-541">152 GB</span></span>  <br/> | <span data-ttu-id="7ee05-542">LSL</span><span class="sxs-lookup"><span data-stu-id="7ee05-542">LSL</span></span>  <br/> | <span data-ttu-id="7ee05-543">ロチ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-543">Loti (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-544">153</span><span class="sxs-lookup"><span data-stu-id="7ee05-544">153</span></span>  <br/> | <span data-ttu-id="7ee05-545">LRD</span><span class="sxs-lookup"><span data-stu-id="7ee05-545">LRD</span></span>  <br/> | <span data-ttu-id="7ee05-546">リベリア ドル (Visio 2002 で追加) </span><span class="sxs-lookup"><span data-stu-id="7ee05-546">Liberian Dollar (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-547">154</span><span class="sxs-lookup"><span data-stu-id="7ee05-547">154 GB</span></span>  <br/> | <span data-ttu-id="7ee05-548">LYD</span><span class="sxs-lookup"><span data-stu-id="7ee05-548">LYD</span></span>  <br/> | <span data-ttu-id="7ee05-549">リビア ディナール (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-549">Libyan Dinar (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-550">155</span><span class="sxs-lookup"><span data-stu-id="7ee05-550">155</span></span>  <br/> | <span data-ttu-id="7ee05-551">LTL</span><span class="sxs-lookup"><span data-stu-id="7ee05-551">LTL</span></span>  <br/> | <span data-ttu-id="7ee05-552">リトアニア リタス (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-552">Lithuanian Litus (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-553">156</span><span class="sxs-lookup"><span data-stu-id="7ee05-553">156</span></span>  <br/> | <span data-ttu-id="7ee05-554">MKD</span><span class="sxs-lookup"><span data-stu-id="7ee05-554">MKD</span></span>  <br/> | <span data-ttu-id="7ee05-555">デナール (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-555">Denar (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-556">157</span><span class="sxs-lookup"><span data-stu-id="7ee05-556">Returns 157.</span></span>  <br/> | <span data-ttu-id="7ee05-557">MGF (旧称。</span><span class="sxs-lookup"><span data-stu-id="7ee05-557">MGF (Historic.</span></span> <span data-ttu-id="7ee05-558">MGA を使用)</span><span class="sxs-lookup"><span data-stu-id="7ee05-558">
+MGF (Historic. Use MGA.) 
+</span></span>  <br/> | <span data-ttu-id="7ee05-559">マダガスカル フラン (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-559">Madagascar Franc (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-560">158</span><span class="sxs-lookup"><span data-stu-id="7ee05-560">-158</span></span>  <br/> | <span data-ttu-id="7ee05-561">MWK</span><span class="sxs-lookup"><span data-stu-id="7ee05-561">MWK</span></span>  <br/> | <span data-ttu-id="7ee05-562">マラウイ クワチャ (Visio 2002 で追加) </span><span class="sxs-lookup"><span data-stu-id="7ee05-562">Malawian Kwacha (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-563">159</span><span class="sxs-lookup"><span data-stu-id="7ee05-563">-159</span></span>  <br/> | <span data-ttu-id="7ee05-564">MVR</span><span class="sxs-lookup"><span data-stu-id="7ee05-564">MVR</span></span>  <br/> | <span data-ttu-id="7ee05-565">ルフィヤ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-565">Rufiyaa (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-566">160</span><span class="sxs-lookup"><span data-stu-id="7ee05-566">-160</span></span>  <br/> | <span data-ttu-id="7ee05-567">MTL</span><span class="sxs-lookup"><span data-stu-id="7ee05-567">MTL</span></span>  <br/> | <span data-ttu-id="7ee05-568">マルタ リラ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-568">Maltese Lira (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-569">161</span><span class="sxs-lookup"><span data-stu-id="7ee05-569">-161</span></span>  <br/> | <span data-ttu-id="7ee05-570">MRO</span><span class="sxs-lookup"><span data-stu-id="7ee05-570">MRO</span></span>  <br/> | <span data-ttu-id="7ee05-571">ウギア (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-571">Ouguiya (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-572">162</span><span class="sxs-lookup"><span data-stu-id="7ee05-572">-162</span></span>  <br/> | <span data-ttu-id="7ee05-573">MUR</span><span class="sxs-lookup"><span data-stu-id="7ee05-573">MUR</span></span>  <br/> | <span data-ttu-id="7ee05-574">モーリシャス ルピー (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-574">Mauritius Rupee (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-575">163</span><span class="sxs-lookup"><span data-stu-id="7ee05-575">-163</span></span>  <br/> | <span data-ttu-id="7ee05-576">MDL</span><span class="sxs-lookup"><span data-stu-id="7ee05-576">MDL</span></span>  <br/> | <span data-ttu-id="7ee05-577">モルドバ レウ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-577">Moldovan Leu (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-578">164</span><span class="sxs-lookup"><span data-stu-id="7ee05-578">-164</span></span>  <br/> | <span data-ttu-id="7ee05-579">MNT</span><span class="sxs-lookup"><span data-stu-id="7ee05-579">MNT</span></span>  <br/> | <span data-ttu-id="7ee05-580">トゥグルグ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-580">Tugrik (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-581">165</span><span class="sxs-lookup"><span data-stu-id="7ee05-581">-165</span></span>  <br/> | <span data-ttu-id="7ee05-582">MAD</span><span class="sxs-lookup"><span data-stu-id="7ee05-582">MAD</span></span>  <br/> | <span data-ttu-id="7ee05-583">モロッコ ディルハム (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-583">Moroccan Dirham (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-584">166</span><span class="sxs-lookup"><span data-stu-id="7ee05-584">-166</span></span>  <br/> | <span data-ttu-id="7ee05-585">MZM</span><span class="sxs-lookup"><span data-stu-id="7ee05-585">MZM</span></span>  <br/> | <span data-ttu-id="7ee05-586">メティカル (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-586">Metical (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-587">167</span><span class="sxs-lookup"><span data-stu-id="7ee05-587">-167</span></span>  <br/> | <span data-ttu-id="7ee05-588">MMK</span><span class="sxs-lookup"><span data-stu-id="7ee05-588">MMK</span></span>  <br/> | <span data-ttu-id="7ee05-589">チャット (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-589">Kyat (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-590">168</span><span class="sxs-lookup"><span data-stu-id="7ee05-590">-168</span></span>  <br/> | <span data-ttu-id="7ee05-591">NAD</span><span class="sxs-lookup"><span data-stu-id="7ee05-591">NAD</span></span>  <br/> | <span data-ttu-id="7ee05-592">ナミビア ドル (Visio 2002 で追加) </span><span class="sxs-lookup"><span data-stu-id="7ee05-592">Namibia Dollar (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-593">169</span><span class="sxs-lookup"><span data-stu-id="7ee05-593">-169</span></span>  <br/> | <span data-ttu-id="7ee05-594">NPR</span><span class="sxs-lookup"><span data-stu-id="7ee05-594">NPR</span></span>  <br/> | <span data-ttu-id="7ee05-595">ネパール ルピー (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-595">Nepalese Rupee (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-596">170</span><span class="sxs-lookup"><span data-stu-id="7ee05-596">-170</span></span>  <br/> | <span data-ttu-id="7ee05-597">ANG</span><span class="sxs-lookup"><span data-stu-id="7ee05-597">"ang"</span></span>  <br/> | <span data-ttu-id="7ee05-598">アンティル ギルダー (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-598">Netherlands Antillian Guilder (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-599">171</span><span class="sxs-lookup"><span data-stu-id="7ee05-599">-171</span></span>  <br/> | <span data-ttu-id="7ee05-600">NGN</span><span class="sxs-lookup"><span data-stu-id="7ee05-600">NGN</span></span>  <br/> | <span data-ttu-id="7ee05-601">ナイラ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-601">Naira (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-602">172</span><span class="sxs-lookup"><span data-stu-id="7ee05-602">-172</span></span>  <br/> | <span data-ttu-id="7ee05-603">OMR</span><span class="sxs-lookup"><span data-stu-id="7ee05-603">OMR</span></span>  <br/> | <span data-ttu-id="7ee05-604">オマーン リアル (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-604">Rial Omani (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-605">173</span><span class="sxs-lookup"><span data-stu-id="7ee05-605">-173</span></span>  <br/> | <span data-ttu-id="7ee05-606">PGK</span><span class="sxs-lookup"><span data-stu-id="7ee05-606">PGK</span></span>  <br/> | <span data-ttu-id="7ee05-607">キナ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-607">Kina (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-608">174</span><span class="sxs-lookup"><span data-stu-id="7ee05-608">-174</span></span>  <br/> | <span data-ttu-id="7ee05-609">QAR</span><span class="sxs-lookup"><span data-stu-id="7ee05-609">QAR</span></span>  <br/> | <span data-ttu-id="7ee05-610">カタール リヤル (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-610">Qatari Rial (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-611">175</span><span class="sxs-lookup"><span data-stu-id="7ee05-611">-175</span></span>  <br/> | <span data-ttu-id="7ee05-612">RWF</span><span class="sxs-lookup"><span data-stu-id="7ee05-612">RWF</span></span>  <br/> | <span data-ttu-id="7ee05-613">ルワンダ フラン (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-613">Rwanda Franc (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-614">176</span><span class="sxs-lookup"><span data-stu-id="7ee05-614">-176</span></span>  <br/> | <span data-ttu-id="7ee05-615">SHP</span><span class="sxs-lookup"><span data-stu-id="7ee05-615">SHP</span></span>  <br/> | <span data-ttu-id="7ee05-616">セントヘレナ ポンド (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-616">Saint Helena Pound (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-617">177</span><span class="sxs-lookup"><span data-stu-id="7ee05-617">-177</span></span>  <br/> | <span data-ttu-id="7ee05-618">WST</span><span class="sxs-lookup"><span data-stu-id="7ee05-618">WST</span></span>  <br/> | <span data-ttu-id="7ee05-619">タラ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-619">Tala (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-620">178</span><span class="sxs-lookup"><span data-stu-id="7ee05-620">-178</span></span>  <br/> | <span data-ttu-id="7ee05-621">STD</span><span class="sxs-lookup"><span data-stu-id="7ee05-621">STD</span></span>  <br/> | <span data-ttu-id="7ee05-622">ドブラ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-622">Dobra (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-623">179</span><span class="sxs-lookup"><span data-stu-id="7ee05-623">179</span></span>  <br/> | <span data-ttu-id="7ee05-624">SCR</span><span class="sxs-lookup"><span data-stu-id="7ee05-624">Scr.</span></span>  <br/> | <span data-ttu-id="7ee05-625">セーシェル ルピー (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-625">Seychelles Rupee (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-626">180</span><span class="sxs-lookup"><span data-stu-id="7ee05-626">-180</span></span>  <br/> | <span data-ttu-id="7ee05-627">SLL</span><span class="sxs-lookup"><span data-stu-id="7ee05-627">SLL</span></span>  <br/> | <span data-ttu-id="7ee05-628">レオン (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-628">Leone (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-629">181</span><span class="sxs-lookup"><span data-stu-id="7ee05-629">-181</span></span>  <br/> | <span data-ttu-id="7ee05-630">SBD</span><span class="sxs-lookup"><span data-stu-id="7ee05-630">SBD</span></span>  <br/> | <span data-ttu-id="7ee05-631">ソロモン諸島 ドル (Visio 2002 で追加) </span><span class="sxs-lookup"><span data-stu-id="7ee05-631">Solomon Islands Dollar (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-632">182</span><span class="sxs-lookup"><span data-stu-id="7ee05-632">-182</span></span>  <br/> | <span data-ttu-id="7ee05-633">SOS</span><span class="sxs-lookup"><span data-stu-id="7ee05-633">SOS</span></span>  <br/> | <span data-ttu-id="7ee05-634">ソマリ シリング (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-634">Somali Shilling (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-635">183</span><span class="sxs-lookup"><span data-stu-id="7ee05-635">183 (bullet)</span></span>  <br/> | <span data-ttu-id="7ee05-636">LKR</span><span class="sxs-lookup"><span data-stu-id="7ee05-636">LKR</span></span>  <br/> | <span data-ttu-id="7ee05-637">スリランカ ルピー (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-637">Sri Lanka Rupee (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-638">184</span><span class="sxs-lookup"><span data-stu-id="7ee05-638">184</span></span>  <br/> | <span data-ttu-id="7ee05-639">SDD</span><span class="sxs-lookup"><span data-stu-id="7ee05-639">SDD</span></span>  <br/> | <span data-ttu-id="7ee05-640">スーダン ディナール (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-640">Sudanese Dinar (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-641">185</span><span class="sxs-lookup"><span data-stu-id="7ee05-641">185</span></span>  <br/> | <span data-ttu-id="7ee05-642">SRG</span><span class="sxs-lookup"><span data-stu-id="7ee05-642">SRG</span></span>  <br/> | <span data-ttu-id="7ee05-643">スリナム ギルダー (Visio 2002 で追加) </span><span class="sxs-lookup"><span data-stu-id="7ee05-643">Suriname Guilder (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-644">186</span><span class="sxs-lookup"><span data-stu-id="7ee05-644">186</span></span>  <br/> | <span data-ttu-id="7ee05-645">SZL</span><span class="sxs-lookup"><span data-stu-id="7ee05-645">SZL</span></span>  <br/> | <span data-ttu-id="7ee05-646">リランゲニ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-646">Lilangeni (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-647">187</span><span class="sxs-lookup"><span data-stu-id="7ee05-647">187</span></span>  <br/> | <span data-ttu-id="7ee05-648">SYP</span><span class="sxs-lookup"><span data-stu-id="7ee05-648">SYP</span></span>  <br/> | <span data-ttu-id="7ee05-649">シリア ポンド (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-649">Syrian Pound (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-650">188</span><span class="sxs-lookup"><span data-stu-id="7ee05-650">188</span></span>  <br/> | <span data-ttu-id="7ee05-651">TJR (旧称。</span><span class="sxs-lookup"><span data-stu-id="7ee05-651">TJR (Historic.</span></span> <span data-ttu-id="7ee05-652">TJSを使用）</span><span class="sxs-lookup"><span data-stu-id="7ee05-652">
+TJR (Historic. Use TJS.) 
+</span></span>  <br/> | <span data-ttu-id="7ee05-653">タジク ルーブル</span><span class="sxs-lookup"><span data-stu-id="7ee05-653">Tajik Ruble</span></span>  <br/> |
+| <span data-ttu-id="7ee05-654">189</span><span class="sxs-lookup"><span data-stu-id="7ee05-654">189</span></span>  <br/> | <span data-ttu-id="7ee05-655">TJS</span><span class="sxs-lookup"><span data-stu-id="7ee05-655">TJS</span></span>  <br/> | <span data-ttu-id="7ee05-656">タジク ソモニ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-656">Tajik Somoni (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-657">190</span><span class="sxs-lookup"><span data-stu-id="7ee05-657">190</span></span>  <br/> | <span data-ttu-id="7ee05-658">TZS</span><span class="sxs-lookup"><span data-stu-id="7ee05-658">TZS</span></span>  <br/> | <span data-ttu-id="7ee05-659">タンザニア シリング (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-659">Tanzanian Shilling (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-660">191</span><span class="sxs-lookup"><span data-stu-id="7ee05-660">191</span></span>  <br/> | <span data-ttu-id="7ee05-661">TOP</span><span class="sxs-lookup"><span data-stu-id="7ee05-661">Top</span></span>  <br/> | <span data-ttu-id="7ee05-662">パアンガ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-662">Pa'anga (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-663">192</span><span class="sxs-lookup"><span data-stu-id="7ee05-663">192 GB</span></span>  <br/> | <span data-ttu-id="7ee05-664">TND</span><span class="sxs-lookup"><span data-stu-id="7ee05-664">TND</span></span>  <br/> | <span data-ttu-id="7ee05-665">チュニジア ディナール (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-665">Tunisian Dinar (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-666">193</span><span class="sxs-lookup"><span data-stu-id="7ee05-666">193</span></span>  <br/> | <span data-ttu-id="7ee05-667">TMM</span><span class="sxs-lookup"><span data-stu-id="7ee05-667">TMM</span></span>  <br/> | <span data-ttu-id="7ee05-668">マナト (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-668">Manat (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-669">194</span><span class="sxs-lookup"><span data-stu-id="7ee05-669">194 ms.</span></span>  <br/> | <span data-ttu-id="7ee05-670">UGX</span><span class="sxs-lookup"><span data-stu-id="7ee05-670">UGX</span></span>  <br/> | <span data-ttu-id="7ee05-671">ウガンダ シリング (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-671">Uganda Shilling (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-672">195</span><span class="sxs-lookup"><span data-stu-id="7ee05-672">195</span></span>  <br/> | <span data-ttu-id="7ee05-673">AED</span><span class="sxs-lookup"><span data-stu-id="7ee05-673">AED</span></span>  <br/> | <span data-ttu-id="7ee05-674">UAE ディルハム (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-674">UAE Dirham (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-675">196</span><span class="sxs-lookup"><span data-stu-id="7ee05-675">196</span></span>  <br/> | <span data-ttu-id="7ee05-676">UZS</span><span class="sxs-lookup"><span data-stu-id="7ee05-676">UZS</span></span>  <br/> | <span data-ttu-id="7ee05-677">ウズベキスタン スム (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-677">Uzbekistan Sum (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-678">197</span><span class="sxs-lookup"><span data-stu-id="7ee05-678">197</span></span>  <br/> | <span data-ttu-id="7ee05-679">VUV</span><span class="sxs-lookup"><span data-stu-id="7ee05-679">VUV</span></span>  <br/> | <span data-ttu-id="7ee05-680">バツ (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-680">Vatu (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-681">198</span><span class="sxs-lookup"><span data-stu-id="7ee05-681">198</span></span>  <br/> | <span data-ttu-id="7ee05-682">YER</span><span class="sxs-lookup"><span data-stu-id="7ee05-682">YER</span></span>  <br/> | <span data-ttu-id="7ee05-683">イエメン リヤル (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-683">Yemeni Rial (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-684">199</span><span class="sxs-lookup"><span data-stu-id="7ee05-684">199</span></span>  <br/> | <span data-ttu-id="7ee05-685">ZMK</span><span class="sxs-lookup"><span data-stu-id="7ee05-685">ZMK</span></span>  <br/> | <span data-ttu-id="7ee05-686">ザンビア クワチャ (Visio 2002 で追加) </span><span class="sxs-lookup"><span data-stu-id="7ee05-686">Zambian Kwacha (added in Visio 2002)</span></span>  <br/> |
+| <span data-ttu-id="7ee05-687">200</span><span class="sxs-lookup"><span data-stu-id="7ee05-687">200 ms</span></span>  <br/> | <span data-ttu-id="7ee05-688">ZWD</span><span class="sxs-lookup"><span data-stu-id="7ee05-688">ZWD</span></span>  <br/> | <span data-ttu-id="7ee05-689">ジンバブエ ドル (Visio 2002 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-689">Zimbabwe Dollar (added in Visio 2002)</span></span>  <br/> |
+|<span data-ttu-id="7ee05-690">201</span><span class="sxs-lookup"><span data-stu-id="7ee05-690">201</span></span>  <br/> |<span data-ttu-id="7ee05-691">VEF</span><span class="sxs-lookup"><span data-stu-id="7ee05-691">VEF</span></span>  <br/> |<span data-ttu-id="7ee05-692">ベネズエラ ボリバル フエルテ (Visio 2010 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-692">Venezuelan Bolivar Fuente (added in Visio 2010)</span></span>  <br/> |
+|<span data-ttu-id="7ee05-693">202</span><span class="sxs-lookup"><span data-stu-id="7ee05-693">202 Accepted</span></span>  <br/> |<span data-ttu-id="7ee05-694">MGA</span><span class="sxs-lookup"><span data-stu-id="7ee05-694">MGA</span></span>  <br/> |<span data-ttu-id="7ee05-695">マダガスカル アリアリ (Visio 2010 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-695">Malagasy Ariary (added in Visio 2010)</span></span>  <br/> |
+|<span data-ttu-id="7ee05-696">203</span><span class="sxs-lookup"><span data-stu-id="7ee05-696">203</span></span>  <br/> |<span data-ttu-id="7ee05-697">RSD</span><span class="sxs-lookup"><span data-stu-id="7ee05-697">RSD</span></span>  <br/> |<span data-ttu-id="7ee05-698">セルビア ディナール (Visio 2010 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-698">Serbian Dinar (added in Visio 2010)</span></span>  <br/> |
+|<span data-ttu-id="7ee05-699">204</span><span class="sxs-lookup"><span data-stu-id="7ee05-699">204 OK</span></span>  <br/> |<span data-ttu-id="7ee05-p113">CSD (現在は RSD を使用)</span><span class="sxs-lookup"><span data-stu-id="7ee05-p113">CSD (Historic. Use RSD.)</span></span>  <br/> |<span data-ttu-id="7ee05-702">セルビア ディナール (Visio 2010 で追加)</span><span class="sxs-lookup"><span data-stu-id="7ee05-702">Serbian Dinar (added in Visio 2010)</span></span>  <br/> |
    
 
