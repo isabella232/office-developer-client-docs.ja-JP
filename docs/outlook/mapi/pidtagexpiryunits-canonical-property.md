@@ -13,11 +13,11 @@ api_type:
 ms.assetid: f6a1ca22-cf4c-4e59-8846-6bd937fa8f6e
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8e8deb67990ce25b10a3b0fc1d373f635f958013
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25392299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316409"
 ---
 # <a name="pidtagexpiryunits-canonical-property"></a>PidTagExpiryUnits 標準プロパティ
 
@@ -25,52 +25,52 @@ ms.locfileid: "25392299"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**PR_EXPIRY_NUMBER** ([PidTagExpiryNumber](pidtagexpirynumber-canonical-property.md)) のプロパティを乗算すると時間の単位について説明します。
+**PR_EXPIRY_NUMBER** ([PidTagExpiryNumber](pidtagexpirynumber-canonical-property.md)) プロパティが乗算する時間の単位を表します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_EXPIRY_UNITS  <br/> |
-|識別子:  <br/> |0x3FEE  <br/> |
+|識別子:  <br/> |0x3fee  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |MAPI のステータス  <br/> |
+|エリア:  <br/> |MAPI の状態  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティでは場合は、次の値のいずれかである必要があります。
+このプロパティを設定する場合は、次のいずれかの値を指定する必要があります。
   
 |||
 |:-----|:-----|
-|PidTagExpiryUnits  <br/> |説明 (水曜)  <br/> |
-|0x00000000  <br/> |分、たとえば 60 秒  <br/> |
-|0x00000001  <br/> |時間、たとえば 60 × 60 秒  <br/> |
-|0x00000002  <br/> |日、たとえば 24 x 60 x 60 秒  <br/> |
-|0x00000003  <br/> |週、たとえば 7x24x60x60 秒  <br/> |
+|PidTagExpiryUnits  <br/> |説明 (timeof)  <br/> |
+|0x00000000  <br/> |分 (60 秒など)  <br/> |
+|0x00000001  <br/> |時間 (例: 60x60 秒)  <br/> |
+|0x00000002  <br/> |日 (たとえば24x60x60 秒)  <br/> |
+|0x00000003  <br/> |週 (7x24x60x60 秒など)  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
+> 電子メールメッセージオブジェクトに対して許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

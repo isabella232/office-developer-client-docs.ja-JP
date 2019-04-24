@@ -12,24 +12,24 @@ api_type:
 - HeaderDef
 ms.assetid: 627f95e9-39ac-4d43-8f02-687783b09785
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 706c628241e519642209a271dce62d21b16938e8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dfdf1068caaab3894b1b489d53ccc8debe1b3a29
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316481"
 ---
 # <a name="rtfsync"></a>RTFSync
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-リッチ テキスト形式 (RTF) メッセージのテキストがテキスト形式のバージョンと一致していることを確認します。 RTF 形式を読み取る前に、RTF 形式を変更した後にこの関数を呼び出す必要があります。 
+リッチテキスト形式 (RTF) のメッセージテキストがプレーンテキストバージョンと一致することを確認します。 rtf バージョンを読み取る前に、または rtf バージョンを変更した後に、この関数を呼び出す必要があります。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |Rtf 形式に対応したクライアント アプリケーション、およびメッセージ ストア プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |RTF 対応クライアントアプリケーションとメッセージストアプロバイダー  <br/> |
    
 ```cpp
 HRESULT RTFSync(
@@ -41,43 +41,43 @@ HRESULT RTFSync(
 
 ## <a name="parameters"></a>パラメーター
 
-_lpMessage_
+_lpmessage_
   
-> [in]更新するメッセージへのポインター。
+> 順番更新するメッセージへのポインター。
     
 _ulFlags_
   
-> [in]Rtf 形式またはテキスト形式のメッセージを示すために使用するフラグのビットが変更されています。 次のフラグを設定することができます。
+> 順番メッセージの RTF またはプレーンテキストのバージョンが変更されたことを示すために使用されるフラグのビットマスク。 次のフラグを設定できます。
     
   - RTF_SYNC_BODY_CHANGED: メッセージのテキスト形式のバージョンが変更されました。
       
-  - RTF_SYNC_RTF_CHANGED: RTF 形式のメッセージが変更されました。
+  - RTF_SYNC_RTF_CHANGED: メッセージの RTF バージョンが変更されました。
     
-  _UlFlags_パラメーターで他のすべてのビットは、将来使用するために予約されています。 
+  _ulflags_パラメーターの他のすべてのビットは、今後の使用のために予約されています。 
     
-_lpfMessageUpdated_
+_lpfmessageupdated_
   
-> [out]更新されたメッセージが表示されるかどうかを示す変数へのポインター。 TRUE を指定するとメッセージが表示される更新された、FALSE それ以外の場合。
+> 読み上げ更新されたメッセージがあるかどうかを示す変数へのポインター。 更新されたメッセージがある場合は TRUE、それ以外の場合は FALSE。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
-**PR_RTF_IN_SYNC** ([PidTagRtfInSync](pidtagrtfinsync-canonical-property.md)) のプロパティが存在しないか、FALSE が使用され、RTF_SYNC_BODY_ のプロパティを読み取って、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))**へ**の関数を呼び出す必要があります前にフラグが設定を変更します。 
+**PR_RTF_IN_SYNC** ([PidTagRtfInSync](pidtagrtfinsync-canonical-property.md)) プロパティが存在しないか FALSE の場合は、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) プロパティを読み取る前に、RTF_SYNC_BODY_ を使用して**rtfsync**関数を呼び出す必要があります。フラグセットが変更されました。 
   
-**PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) プロパティでは、STORE_RTF_OK フラグは設定されていない場合、RTF_SYNC_RTF_CHANGED フラグが設定されている**PR_RTF_COMPRESSED**を変更した後でこの関数が呼び出さ 必要があります。 
+STORE_RTF_OK フラグが**PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) プロパティで設定されていない場合、この関数は、 **PR_RTF_COMPRESSED**の変更後に RTF_SYNC_RTF_CHANGED フラグセットを使用して呼び出されます。 
   
-([PidTagBody](pidtagbody-canonical-property.md)) である**PR_BODY**と**PR_RTF_COMPRESSED**の両方が変更されている場合両方のフラグが設定を**行う**関数を呼び出す必要があります。 
+**PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) と**PR_RTF_COMPRESSED**の両方が変更されている場合は、両方の flags セットを使用して**rtfsync**関数を呼び出す必要があります。 
   
-_LpfMessageUpdated_パラメーターの値は、TRUE に設定されている場合、メッセージの[IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出す必要があります。 **SaveChanges**が呼び出されない場合、メッセージの変更は保存されません。 
+_lpfmessageupdated_パラメーターの値が TRUE に設定されている場合は、メッセージに対して[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出す必要があります。 **SaveChanges**が呼び出されていない場合、変更はメッセージに保存されません。 
   
-メッセージ ストア プロバイダーは、 **PR_BODY**と**PR_RTF_COMPRESSED**プロパティの同期を維持するのに、**行う**を使用できます。 
+メッセージストアプロバイダーは、 **rtfsync**を使用して、 **PR_BODY**プロパティと**PR_RTF_COMPRESSED**プロパティを同期させておくことができます。 
   
-詳細については、[メッセージ ストア プロバイダーの rtf 形式のテキストをサポートしている](supporting-rtf-text-for-message-store-providers.md)を参照してください。 
+詳細については、「[メッセージストアプロバイダー用の RTF テキストのサポート](supporting-rtf-text-for-message-store-providers.md)」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

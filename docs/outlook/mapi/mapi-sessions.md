@@ -7,31 +7,31 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c5a7c137-393e-40ff-a2b9-afe02da2435a
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a2ab44081c79e72e082687006ab06d0f83b8367e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 3dd55d8ee3cb2751fb27184f0069ae831e2164ee
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319585"
 ---
 # <a name="mapi-sessions"></a>MAPI セッション
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 ��ɂȂ郁�b�Z�[�W���O �V�X�e���Ăяo���N���C�A���g �A�v���P�[�V�����ɂ́A�O�ɁA�Z�b�V�����A�܂��� MAPI �T�u�V�X�e���Ƃ̐ڑ���m������K�v������܂��B
   
 ���O�I������ƁA���[�U�[�A�L���ȃv���t�@�C���ɃA�N�Z�X���A���b�Z�[�W���O �V�X�e���ƃ��b�Z�[�W �T�[�r�X�̎��i����m�F����v���Z�X�́A�Z�b�V�������J�n����܂��B���ɁA�v���Z�X�ɂ��A���ׂẴv���t�@�C���̃��b�Z�[�W�̃T�[�r�X���������\������Ă��܂��B�N���C�A���g�̃C���^�[�t�F�C�X��g�p����ɂ́A���O�I���Ăяo�������܂�܂��BMAPI �N���C�A���g�ł́A [MAPILogonEx](mapilogonex.md)�֐���Ăяo���܂��B 
   
-メッセージ サービスの構成は、ログオン プロセスの最も重要な部分の 1 つです。 プロファイルは、構成情報の最初のソースです。 特定のメッセージ サービスの情報がない場合は、ログオン プロセスは、それを指定するように求めるしようとします。 これは常に成功した 2 つの理由: 最初に、ユーザーに確認が必要です] ダイアログ ボックスが表示します。 クライアント ログオン呼び出しにフラグを渡すことにより、ユーザー インターフェイスの表示を禁止することができます。 第 2 に、ユーザーは、必要な情報を追加する前に、ダイアログ ボックスをキャンセル可能性があります。
+Message service configuration is one of the most important parts of the logon process. The profile is the initial source for configuration information. If information for a particular message service is missing, the logon process tries to prompt the user to supply it. This is not always successful for two reasons: First, prompting the user requires the display of a dialog box. It is possible for clients to disallow the display of a user interface by passing a flag into the logon call. Second, the user could cancel the dialog box before the needed information can be added.
   
-ログオン プロセスでは、1 回失敗すると、ユーザー エラーの通知は、再試行するか、エラー状態を修正する機会を与えられました。 もう一度、ユーザー インターフェイスが表示されます、クライアントを使用して、そのユーザーがどのようなデータが不足しているを入力する求められます。 この 2 つ目の試行が失敗した場合は、MAPI には、セッションの間のメッセージ サービスですべてのサービス プロバイダーが無効になります。 実際には、メッセージ全体のサービスが無効になります。 これは、ことを意味メッセージ サービスのサービス プロバイダーのことができます。 これは 1 つのプロバイダーには、ログオンが失敗した場合、他のプロバイダーは、通常も失敗するためです。 ログオン プロセスは、互換性のないバージョンの MAPI、メッセージング サーバーを使用できない、またはデータの破損のために必要なリソースの無効なパスが原因で失敗します。 
+When a logon process fails one time, the user is informed of the failure and given the chance to retry or correct the error condition. Once again, a user interface will be displayed, if the client allows it, and the user will be prompted to enter whatever data is missing. If this second try is unsuccessful, MAPI disables all service providers in the message service for the duration of the session. In effect, the whole message service is disabled. This means that none of the service providers in the message service can work. This is done because if one provider fails logon, the other providers usually also fail. The logon process can fail due to an invalid path for a necessary resource, an incompatible version of MAPI, an unavailable messaging server, or data corruption. 
   
 �N���C�A���g�����O�I���ʘb��m������Z�b�V������ 2 ��ނ̂����ꂩ��w��ł��܂��B �X �̃Z�b�V�����܂��͋��L�̃Z�b�V�����B�X �̃Z�b�V�����̓v���C�x�[�g�ڑ����܂��B�N���C�A���g �A�v���P�[�V������g�p���Ă���Z�b�V�����̊Ԃ̈�Έꃊ���[�V�����V�b�v������܂��B���ʂƂ��āA�Z�b�V�����̋��L��N���C�A���g �A�v���P�[�V������v���t�@�C������L���܂��B���L�Z�b�V������ 1 ��m�����܂����A������g�p����K�v�����邻�̑��̃N���C�A���g �A�v���P�[�V�����Ŏg�p���邱�Ƃ��ł��܂��B�v���t�@�C������ю��i���́A�ŏ��̃��O�I���݂̂�w�肵�܂��B 
   
-クライアントにログオンできます複数回、同じユーザーまたは複数のユーザーとして。 MAPI は、これにも防止できません。 サービス プロバイダーによっては、ただし、あります、柔軟性が高く、一度ログオンするとエラー値 MAPI_E_SESSION_LIMIT が返されます。 基になるハードウェアの制限を使用するサービス プロバイダーは、セッションの制限を適用する必要あります。
+Clients can log on multiple times as the same user or as multiple users. MAPI does not prevent this. Some service providers, however, might not be as flexible, returning the error value MAPI_E_SESSION_LIMIT on subsequent logon attempts. Service providers with underlying hardware limitations can be required to enforce a session limit.
   
-セッションを確立するための関数呼び出しは、セッションを作成する方法を制御するフラグとパラメーターのコレクションを取得します。 クライアントは、省略可能なプロファイルの名前と表示されるダイアログ ボックスの親ウィンドウとして機能するウィンドウ ハンドルを指定します。 フラグには、MAPI_NEW_SESSION で、(共有セッションではなく)、個々 の新しいセッションを確立することを要求して、MAPI_LOGON_UI のユーザー インターフェイスのフラグが含まれます。 ログオン ダイアログ ボックスを要求するユーザー ・ インタ フェース ・ フラグが設定されています。
+The function calls for establishing a session have a collection of flags and parameters that control how the session is created. The client specifies an optional profile name and a window handle that acts as the parent window for any dialog boxes that are displayed. The flags include MAPI_NEW_SESSION, which requests that a new, individual session (rather than a shared session) be established, and the MAPI_LOGON_UI user interface flag. The user interface flag is set to request a logon dialog box.
   
 ���̐}�́A�����̂��܂��܂ȃp�����[�^�[�ƃt���O�� MAPI �Z�b�V������m��������@������܂��B
   
@@ -41,7 +41,7 @@ ms.locfileid: "22575029"
   
 �N���C�A���g �A�v���P�[�V���������Z�b�V�����̏������@�̏ڍׂɂ��ẮA [MAPI �Z�b�V�����̏���](mapi-session-handling.md)��Q�Ƃ��Ă��������B
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 - [MAPILogonEx](mapilogonex.md)  
 - [IMAPISession: IUnknown](imapisessioniunknown.md)

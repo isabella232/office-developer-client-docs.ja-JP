@@ -1,5 +1,5 @@
 ---
-title: IPSTX2 IPSTX
+title: IPSTX2 ipstx
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,33 +12,33 @@ api_type:
 - COM
 ms.assetid: f8858fcf-315e-dc62-60ad-f9782676e51d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 75a876d38e7fd7447058d70ec96f709f84812dae
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: abc0afa30aaac75d7980d7de83705ae4c3b43f99
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315048"
 ---
 # <a name="ipstx2--ipstx"></a>IPSTX2 : IPSTX
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このインターフェイスは、 **[IOSTX](iostxiunknown.md)** インターフェイスを使用するレプリケーションを実行するときに、ヘルパー機能を提供します。 
+このインターフェイスは、 **[iostx](iostxiunknown.md)** インターフェイスを介してレプリケーションを実行するときに、ヘルパー機能を提供します。 
   
 |||
 |:-----|:-----|
-|によって提供されます。  <br/> |[IMsgStore](imsgstoreimapiprop.md)に対してクエリを実行 <br/> |
-|インターフェイスの識別子。  <br/> |IID_IPSTX2  <br/> |
+|提供元  <br/> |[IMsgStore](imsgstoreimapiprop.md)のクエリ <br/> |
+|インターフェイス識別子:  <br/> |IID_IPSTX2  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-| *プレース ホルダー メンバー*  <br/> | *いないサポートまたは文書化されています。*  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *いないサポートまたは文書化されています。*  <br/> |
-|**[SetSpoolSuspendState](ipstx2-setspoolsuspendstate.md)** <br/> |スプーラーを一時停止の状態を設定します。  <br/> |
+| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
+| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
+|**[SetSpoolSuspendState](ipstx2-setspoolsuspendstate.md)** <br/> |スプーラーの中断状態を設定します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -46,5 +46,5 @@ ms.locfileid: "22587048"
 
 [レプリケーション API について](about-the-replication-api.md)
   
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
 

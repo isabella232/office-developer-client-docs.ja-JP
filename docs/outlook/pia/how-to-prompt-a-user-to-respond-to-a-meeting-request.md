@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 26e59cca7431e9f11f3fea5fa058548b9a5903a4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32320049"
 ---
 # <a name="prompt-a-user-to-respond-to-a-meeting-request"></a>会議出席依頼への返信をユーザーに求める
 

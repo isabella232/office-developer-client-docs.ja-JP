@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4e7147ea-0eb0-324a-80d8-4f0eef654c32
-description: ユーザーの空き時間情報データ ブロックの列挙体の時間の範囲を設定します。
-ms.openlocfilehash: 84a25a2dd43f594caa075d90e4f183086452184a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: ユーザーのデータの空き時間ブロックの列挙時間の範囲を設定します。
+ms.openlocfilehash: 4647453acb0e530521aa808f7f017e3e311644bb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317480"
 ---
 # <a name="ifreebusydatasetfbrange"></a>IFreeBusyData::SetFBRange
 
-ユーザーの空き時間情報データ ブロックの列挙体の時間の範囲を設定します。
+ユーザーのデータの空き時間ブロックの列挙時間の範囲を設定します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -31,21 +31,21 @@ HRESULT SetFBRange(
 
 ## <a name="parameters"></a>パラメーター
 
-_rtmStart_
+_rtmstart_
   
-> [in]空き時間情報の開始時刻の相対的な値です。 この値は、1601 年 1 月 1 日以降の分の数です。
+> 順番空き時間情報の開始の相対時間値。 この値は、1601年1月1日からの経過時間 (分単位) です。
     
 _rtmEnd_
   
-> [in]空き時間情報の最後の時間の相対値です。 この値は、1601 年 1 月 1 日以降の分の数です。
+> 順番空き時間情報の終了の相対時間値。 この値は、1601年1月1日からの経過時間 (分単位) です。
     
 ## <a name="return-values"></a>戻り値
 
 呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。
   
-## <a name="remarks"></a>解釈
+## <a name="remarks"></a>解説
 
-予定表のアイテムの詳細を取得するための時間の範囲を示すためにこのメソッドを使用します。 *FtmStart*と*ftmEnd*の値がキャッシュされ、 [IFreeBusyData::GetFBPublishRange](ifreebusydata-getfbpublishrange.md)の後続の呼び出しで返されます。
+このメソッドは、詳細を取得する予定表アイテムの時間範囲を示すために使用されます。 *ftmstart*および*ftmEnd*の値はキャッシュされ、その後の[IFreeBusyData:: getfbpublishrange](ifreebusydata-getfbpublishrange.md)の呼び出しで返されます。
   
 ## <a name="see-also"></a>関連項目
 

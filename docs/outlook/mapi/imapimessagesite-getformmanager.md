@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: d48bd537-c562-4deb-8a4c-011208991054
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5e3a2224daace9be7f4504a693806ccb3cf4abbe
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2d4100d9bcd1b086747d742d9636c4bf7a39f50b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321373"
 ---
 # <a name="imapimessagesitegetformmanager"></a>IMAPIMessageSite::GetFormManager
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォーム サーバーが別のフォームのサーバーを開くに使用できるフォーム マネージャーのインターフェイスを返します。
+フォームサーバーが別のフォームサーバーを開くために使用できるフォームマネージャーインターフェイスを返します。
   
 ```cpp
 HRESULT GetFormManager(
@@ -35,27 +35,27 @@ HRESULT GetFormManager(
 
 ## <a name="parameters"></a>パラメーター
 
- _ppFormMgr_
+ _ppformmgr_
   
-> [out]返されるフォーム マネージャーのインターフェイスへのポインターへのポインター。
+> 読み上げ返されるフォームマネージャーインターフェイスへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
-フォームのサーバーに関連するインターフェイスの一覧は、 [MAPI フォームのインタ フェース](mapi-form-interfaces.md)を参照してください。
+フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetFormManager  <br/> |MFCMAPI では、 **IMAPIMessageSite::GetFormManager**メソッドを使用して、 [MAPIOpenFormMgr](mapiopenformmgr.md)を呼び出すし、その呼び出しの結果を返します。  <br/> |
+|MyMAPIFormViewer  <br/> |cmymapiformviewer:: getformmanager  <br/> |mfcmapi は、 **IMAPIMessageSite:: getformmanager**メソッドを使用して[MAPIOpenFormMgr](mapiopenformmgr.md)を呼び出し、その呼び出しの結果を返します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -68,5 +68,5 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
+[MAPI フォームインターフェイス](mapi-form-interfaces.md)
 

@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5b050392-46b5-4f3a-dc67-714c32e6f8fd
-description: このメンバーは、プレース ホルダーではサポートされていません。
-ms.openlocfilehash: 8d0c86071a79780b38a874a9416a0212f35f9ac5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このメンバーはプレースホルダーで、サポートされていません。
+ms.openlocfilehash: 4793fcbb58e9c50152eefb68f8022f529c37cdcd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319825"
 ---
 # <a name="ifreebusysupportplaceholder3"></a>IFreeBusySupport::Placeholder3
 
-このメンバーは、プレース ホルダーではサポートされていません。
+このメンバーはプレースホルダーで、サポートされていません。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -28,10 +28,10 @@ HRESULT Placeholder3();
 
 ## <a name="return-values"></a>戻り値
 
-常に S_OK、ため、このメンバーのプレース ホルダーは、サポートされています。
+このメンバーはプレースホルダーで、サポートされていないため、常に S_OK。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このメンバーには、S_OK を返す必要があります。
+このメンバーは S_OK を返す必要があります。
   
 

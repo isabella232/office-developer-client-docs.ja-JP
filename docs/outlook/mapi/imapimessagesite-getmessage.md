@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 49d12c49-84f8-44ac-bc4a-2ee44a46f8c1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3612c12a503174484d4a469ffa167922a015ed5b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 03dd0553d0203585850ac5c4f8c91c86ef60236a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321281"
 ---
 # <a name="imapimessagesitegetmessage"></a>IMAPIMessageSite::GetMessage
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 現在のメッセージを返します。
   
@@ -37,9 +37,9 @@ HRESULT GetMessage(
 
  _ppmsg_
   
-> [out]メッセージの返されるインターフェイスへのポインターへのポインター。
+> 読み上げメッセージに対して返されるインターフェイスへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -47,23 +47,23 @@ S_OK
     
 S_FALSE 
   
-> メッセージ現在存在しない呼び出し元のフォームにします。
+> 呼び出し元フォームのメッセージは現在存在しません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォームでは、現在のメッセージのメッセージのインターフェイスを取得する**IMAPIMessageSite::GetMessage**メソッドを呼び出します。 現在のメッセージは、 [IPersistMessage::InitNew](ipersistmessage-initnew.md)、 [IPersistMessage::Load](ipersistmessage-load.md)、または[IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md)メソッドに渡されたものでは以前と同じメッセージ。 
+フォームは、 **IMAPIMessageSite:: GetMessage**メソッドを呼び出して、現在のメッセージのメッセージインターフェイスを取得します。 現在のメッセージは、 [IPersistMessage:: InitNew](ipersistmessage-initnew.md)、 [IPersistMessage:: Load](ipersistmessage-load.md)、または[IPersistMessage:: SaveCompleted](ipersistmessage-savecompleted.md)メソッドで以前に渡されたのと同じメッセージです。 
   
- メッセージ現在存在しない場合は、**自動インクリメント**は S_FALSE を返します。 [IPersistMessage::HandsOffMessage](ipersistmessage-handsoffmessage.md)メソッド、または**IPersistMessage::Load**の次の呼び出しの前に、の呼び出しの後に発生することがこの状態や、 **IPersistMessage::SaveCompleted**が行われます。 
+ 現在、メッセージが存在しない場合、 **GetMessage**は S_FALSE を返します。 この状態は、 [IPersistMessage:: handsoffmessage](ipersistmessage-handsoffmessage.md)メソッドへの呼び出し、または**IPersistMessage:: Load**または**IPersistMessage:: SaveCompleted**の次の呼び出しの前に発生する可能性があります。 
   
-フォームのサーバーに関連するインターフェイスの一覧は、 [MAPI フォームのインタ フェース](mapi-form-interfaces.md)を参照してください。
+フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetSession  <br/> |MFCMAPI メソッドを使用して、 **IMAPIMessageSite::GetMessage** 、現在キャッシュされているメッセージ ポインターを返すことがある場合。  <br/> |
+|MyMAPIFormViewer  <br/> |cmymapiformviewer:: getsession  <br/> |mfcmapi は、 **IMAPIMessageSite:: GetMessage**メソッドを使用して、現在キャッシュされているメッセージポインター (使用可能な場合) を返します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -84,5 +84,5 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
+[MAPI フォームインターフェイス](mapi-form-interfaces.md)
 

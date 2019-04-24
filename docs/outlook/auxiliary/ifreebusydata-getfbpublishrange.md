@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1a8bbe0c-17d1-9349-4c63-f257faf4edda
-description: ユーザーのデータのブロックの空き時間情報の列挙型の事前に設定された時間の範囲を取得します。
-ms.openlocfilehash: 2a322a43da38a0b902789f4c83baaabd769154c7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: ユーザーのデータの空き時間ブロックの列挙の事前設定の時間範囲を取得します。
+ms.openlocfilehash: 26951ea6a885f8d0e5e6a2fb5bcf9a63069c7f44
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317529"
 ---
 # <a name="ifreebusydatagetfbpublishrange"></a>IFreeBusyData::GetFBPublishRange
 
-ユーザーのデータのブロックの空き時間情報の列挙型の事前に設定された時間の範囲を取得します。
+ユーザーのデータの空き時間ブロックの列挙の事前設定の時間範囲を取得します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -32,23 +32,23 @@ HRESULT GetFBPublishRange(
 
 ## <a name="parameters"></a>パラメーター
 
-_prtmStart_
+_prtmstart_
   
-> [out]空き時間情報の開始時刻の相対的な値です。 この値は、1601 年 1 月 1 日以降の分の数です。
+> 読み上げ空き時間情報の開始の相対時間値。 この値は、1601年1月1日からの経過時間 (分単位) です。
     
 _prtmEnd_
   
-> [out]空き時間情報の最後の時間の相対値です。 この値は、1601 年 1 月 1 日以降の分の数です。
+> 読み上げ空き時間情報の終了の相対時間値。 この値は、1601年1月1日からの経過時間 (分単位) です。
     
 ## <a name="return-values"></a>戻り値
 
 呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。
   
-## <a name="remarks"></a>解釈
+## <a name="remarks"></a>解説
 
-空き/予約済みのプロバイダーには、列挙体の時間範囲を設定するには、 [IFreeBusyData::EnumBlocks](ifreebusydata-enumblocks.md)または[IFreeBusyData::SetFBRange](ifreebusydata-setfbrange.md)が呼び出されます。 1601 年 4 月 1 日、00:00:00Z と 11:59:59Z が 4500 年 8 月 31 日間、 **prtmStart**および**prtmEnd**の既定値を設定する必要があります[IFreeBusyData::EnumBlocks](ifreebusydata-enumblocks.md)または[IFreeBusyData::SetFBRange](ifreebusydata-setfbrange.md)のいずれかが呼び出されなかった場合、それぞれ。 さらに、開始時刻を終了時刻より大きい値を設定しないでください。 
+空き時間情報プロバイダーは、 [IFreeBusyData:: enumblocks](ifreebusydata-enumblocks.md)または[IFreeBusyData:: setfbrange](ifreebusydata-setfbrange.md)を呼び出して、列挙の時間範囲を設定します。 [IFreeBusyData:: enumblocks](ifreebusydata-enumblocks.md)または[IFreeBusyData:: setfbrange](ifreebusydata-setfbrange.md)がまだ呼び出されていない場合は、 **prtmstart**および**prtmEnd**の既定値は4月1日、1601 00:00: 00z、4500 11 年8月31日の間に設定する必要があります。59z4.3. さらに、開始時刻を終了時刻よりも大きい値に設定することはできません。 
   
-**IFreeBusyData::GetFBPublishRange**は、 **IFreeBusyData::EnumBlocks**または**IFreeBusyData::SetFBRange**の最新の呼び出しによってキャッシュされた時間の範囲の値の設定を返す必要があります。 
+**IFreeBusyData:: getfbpublishrange**は、 **IFreeBusyData:: enumblocks**または**IFreeBusyData:: setfbrange**最新の呼び出しによって設定された時間範囲のキャッシュされた値を返す必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

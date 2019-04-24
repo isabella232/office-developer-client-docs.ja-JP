@@ -1,5 +1,5 @@
 ---
-title: IMAPIFormInfoSaveForm
+title: imapiforminfosaveform
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 18a10f14-0795-4d4d-b590-f4cef4f2902a
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7fec6b6236d26789a3ec9abee7d2ae1c620f89b4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 391ea3ef4f44db2a9d007241232f58db27647ba2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321715"
 ---
 # <a name="imapiforminfosaveform"></a>IMAPIFormInfo::SaveForm
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-構成ファイル内の特定のフォームの説明を保存します。
+構成ファイルに特定のフォームの説明を保存します。
   
 ```cpp
 HRESULT SaveForm(
@@ -35,11 +35,11 @@ HRESULT SaveForm(
 
 ## <a name="parameters"></a>パラメーター
 
- _szFileName_
+ _szfilename_
   
-> [in]説明が保存されているフォームの説明のメッセージ ファイルの名前を示す文字列です。 このファイル名には、.fdm 拡張機能が必要です。
+> 順番フォームの説明メッセージファイルの名前を示す文字列。説明は保存されます。 このファイル名には、拡張子 fdm を付ける必要があります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -47,21 +47,21 @@ S_OK
     
 MAPI_E_EXTENDED_ERROR 
   
-> 構成ファイルに書き込めませんでした。 エラーに関連付けられている[MAPIERROR](mapierror.md)構造体を取得するには、 [IMAPIProp::GetLastError](imapiprop-getlasterror.md)メソッドを呼び出します。 
+> 構成ファイルを書き込めませんでした。 エラーに関連付けられている[MAPIERROR](mapierror.md)構造体を取得するには、 [imapiprop:: GetLastError](imapiprop-getlasterror.md)メソッドを呼び出します。 
     
 MAPI_E_NO_SUPPORT 
   
-> **SaveForm**は、ローカルのフォームのコンテナー内のフォームを保存する可能性がありますと呼ばれます。 **SaveForm**は、ローカルのフォームのコンテナーではサポートされていません。 
+> **saveform**は、ローカルフォームコンテナーにフォームを保存するために呼び出された可能性があります。 **saveform**は、ローカルフォームコンテナーではサポートされていません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアント アプリケーションは、指定したファイル名を持つファイルの現在のフォームの説明を保存するのには**IMAPIFormInfo::SaveForm**メソッドを呼び出します。 **SaveForm**は、構成ファイルを作成します。 
+クライアントアプリケーションは、指定されたファイル名を持つファイルに現在のフォームの説明を保存するために、 **imapiforminfo:: saveform**メソッドを呼び出します。 **saveform**構成ファイルを作成します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-フォーム ライブラリ プロバイダーの表示] ダイアログ ボックスでフォーム記述子メッセージの一覧から選択してフォームを再インストールすることができます。 フォーム記述子のメッセージに推奨される拡張子は、.fdm です。
+フォームを再インストールするには、フォームライブラリプロバイダーが表示するダイアログボックスでフォーム記述子メッセージのリストからフォームを選択します。 フォーム記述子メッセージに推奨される拡張子は、fdm です。
   
-MAPI_E_EXTENDED_ERROR、 **SaveForm**場合、 [IMAPIProp::GetLastError](imapiprop-getlasterror.md)メソッドを呼び出すし、エラーが発生した状態を判断するのには返された**MAPIERROR**構造体をチェックします。 
+**saveform**が MAPI_E_EXTENDED_ERROR を返す場合は、 [imapiprop:: GetLastError](imapiprop-getlasterror.md)メソッドを呼び出し、返された**MAPIERROR**構造を調べて、エラーの原因となった条件を特定します。 
   
 ## <a name="see-also"></a>関連項目
 

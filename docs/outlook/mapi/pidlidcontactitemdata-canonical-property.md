@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 411e8f81-c2b9-440a-9e9a-d6add5e4be63
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 031e5483539ce17c8b9b994690985c2349573e27
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319511"
 ---
 # <a name="pidlidcontactitemdata-canonical-property"></a>PidLidContactItemData 標準プロパティ
 
@@ -25,45 +25,45 @@ ms.locfileid: "25400809"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-連絡先情報を表示する場合に使用されます。
+連絡先情報を表示するために使用されます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |dispidContactItemData  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Address  <br/> |
-|長い ID (LID):  <br/> |0x00008007  <br/> |
+|プロパティセット:  <br/> |PSETID_Address  <br/> |
+|ロング ID (LID):  <br/> |0x00008007  <br/> |
 |データの種類 :   <br/> |PT_MV_LONG  <br/> |
-|エリア:  <br/> |Contact  <br/> |
+|エリア:  <br/> |連絡先  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-存在する場合、プロパティには、各アプリケーションのユーザー インターフェイスに表示されるフィールドに対応する 6 つのエントリが必要です。
+指定する場合、プロパティには、アプリケーションのユーザーインターフェイスで表示されるフィールドに対応する6つのエントリが必要です。
   
-|**複数値プロパティに 1 から始まるインデックス**|**値は、次のいずれかである必要があります。**|**説明**|
+|**複数値を持つプロパティへの1から始まるインデックス**|**この値は、次のいずれかであることが必要です。**|**説明**|
 |:-----|:-----|:-----|
-|1  <br/> |0x00000001  <br/> |アプリケーションは、連絡先の自宅の住所を表示する必要があります。  <br/> |
-|1  <br/> |0x00000002、0x00000000 または  <br/> |アプリケーションでは、取引先担当者の作業時間を表示する必要があります。  <br/> |
-|1  <br/> |0x00000003  <br/> |アプリケーションを表示する必要があります、連絡先の他のアドレスです。  <br/> |
-|2  <br/> |0x00008080  <br/> |アプリケーションでは、Email1 を表示する必要があります。  <br/> |
-|2  <br/> |0x00008090  <br/> |アプリケーションは、電子メール 2 を表示する必要があります。  <br/> |
-|2  <br/> |0x000080A0  <br/> |アプリケーションは、電子メール 3 を表示する必要があります。  <br/> |
-|3,4,5,6  <br/> |電話のプロパティのいずれかまたは[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)で指定されている fax 番号のいずれかの PropertyID。  <br/> |アプリケーションでは、対応するプロパティを表示する必要があります。  <br/> |
+|1-d  <br/> |0x00000001  <br/> |アプリケーションには、連絡先の自宅の住所が表示されます。  <br/> |
+|1-d  <br/> |0x00000002 または0x00000000  <br/> |アプリケーションに連絡先の仕事が表示されます。  <br/> |
+|1-d  <br/> |0x00000003  <br/> |アプリケーションには、連絡先のその他のアドレスが表示されます。  <br/> |
+|pbm-2  <br/> |0x00008080  <br/> |アプリケーションに Email1 が表示されます。  <br/> |
+|pbm-2  <br/> |0x00008090  <br/> |アプリケーションに Email2 が表示されます。  <br/> |
+|pbm-2  <br/> |0x000080a0  <br/> |アプリケーションに Email3 が表示されます。  <br/> |
+|3、4、5、6  <br/> |PropertyID [[OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)で指定されている電話のプロパティまたは fax 番号のいずれかを指定します。  <br/> |アプリケーションには、対応するプロパティが表示されます。  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
-> プロパティは、連絡先、個人用配布リストの許可の操作を指定します。
+> 連絡先および個人用配布リストに対して許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -71,9 +71,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -1,5 +1,5 @@
 ---
-title: 構成のプロパティ シートを表示します。
+title: 構成プロパティ シートの表示
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,22 +7,22 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c9386b98-615f-488c-8212-11d9abebbdcf
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: fa48e97ed25fe1175ffd3a92ac961dcf5bde50b4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: a796f458e9d30206dc4c6feb37cbdb1e6b6a704b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316402"
 ---
-# <a name="displaying-configuration-property-sheets"></a>構成のプロパティ シートを表示します。
+# <a name="displaying-configuration-property-sheets"></a>構成プロパティ シートの表示
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポート プロバイダーは、プロパティ シートの構成を実装するために[IMAPISupport::DoConfigPropsheet](imapisupport-doconfigpropsheet.md)メソッドを使用します。 **DoConfigPropSheet**を呼び出すと、トランスポート プロバイダーはそれらを表示する方法についての情報とプロパティの配列をポインターで渡します。 MAPI ではユーザーにプロパティが、標準のダイアログ ボックスを使用してに表示されます。 一貫性のあるインターフェイスのユーザーにとってのメリットのためのトランスポート プロバイダーを実装する場合、このプロパティ シートのメカニズムを使用するよう強くお勧めします。
+トランスポートプロバイダーは、 [imapisupport::D oconfigpropsheet](imapisupport-doconfigpropsheet.md)メソッドを使用して構成プロパティシートを実装します。 **doconfigpropsheet**を呼び出すと、トランスポートプロバイダーは、プロパティの配列へのポインターと、プロパティの表示方法に関する情報を渡します。 その後、MAPI は標準のダイアログボックスを使って、ユーザーにプロパティを提示します。 一貫性のあるインターフェイスをユーザーに提供することにより、トランスポートプロバイダーを実装する場合は、このプロパティシート機構を使用することを強くお勧めします。
   
-## <a name="transport-providers"></a>トランスポート プロバイダー
+## <a name="transport-providers"></a>トランスポートプロバイダー
 
-トランスポート プロバイダーは、 **DoConfigPropSheet**で使用するため、表示された表の作成を簡略化するのに[BuildDisplayTable](builddisplaytable.md)関数を使用することができます。 トランスポート プロバイダーは、プロパティ シート API を直接使用することができますもします。 バッファーのプロパティを変更するには、トランスポート プロバイダーは、 [CreateIProp](createiprop.md)関数を使用できます。 ユーザー プロパティに格納されている値を変更するときに、ユーザーがキャンセルの処理が簡素化されます。 かどうか、必要に応じてトランスポート プロバイダーも提供できますウィザード ダイアログ ボックスがユーザーの構成作業を簡略化します。 
+トランスポートプロバイダーは[builddisplaytable](builddisplaytable.md)関数を使用して、 **doconfigpropsheet**で使用する表示テーブルの構造を簡素化できます。 トランスポートプロバイダーは、プロパティシート API を直接使用することもできます。 プロパティに対する変更をバッファリングするために、トランスポートプロバイダーは[createiprop](createiprop.md)関数を使用できます。 これにより、ユーザーがプロパティに格納されている値を変更している間、ユーザーによる取り消しの処理が簡略化されます。 必要に応じて、トランスポートプロバイダーは、ユーザーの構成タスクを簡素化するためのウィザードダイアログボックスを提供することもできます。 
   
 

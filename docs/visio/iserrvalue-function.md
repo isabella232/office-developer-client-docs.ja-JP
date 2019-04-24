@@ -8,29 +8,29 @@ f1_keywords:
 - Vis_DSS.chm82251453
 localization_priority: Normal
 ms.assetid: c7feec6f-f47a-60ee-b056-7b2dc51ed9a9
-description: Cellreference の値がエラーの場合は TRUE を返しますが、数式内の引数が間違った型である、#VALUE を入力します。 ISERRVALUE 関数は、別のセルを参照する論理式で使用されます。
-ms.openlocfilehash: 50c501cc404d9c5f80e0bd1261b3d3bcd7087de2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'cellreference の値が error type #VALUE の場合は TRUE を返します。数式の引数の型が正しくありません。 iserrvalue 関数は、別のセルを参照する論理式で使用します。'
+ms.openlocfilehash: 62058522dc8a2387aec9867e4892da740aba9b44
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317886"
 ---
 # <a name="iserrvalue-function"></a>ISERRVALUE 関数
 
-_Cellreference_の値がエラーの場合は TRUE を返しますが、数式内の引数が間違った型である、#VALUE を入力します。 ISERRVALUE 関数は、別のセルを参照する論理式で使用されます。 
+_cellreference_の値が error type #VALUE の場合は TRUE を返します。数式の引数の型が正しくありません。 iserrvalue 関数は、別のセルを参照する論理式で使用します。 
   
 ## <a name="syntax"></a>構文
 
-ISERRVALUE (* * *cellreference* * *) 
+iserrvalue (* * *cellreference* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _cellreference_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |セルの参照を指定します。  <br/> |
+| _cellreference_ <br/> |必須  <br/> |**String** <br/> |セルの参照を指定します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 [Scratch] セル A ～ D は #VALUE! エラーを返しません。このセルの数式では、同じ文字列内に数値と文字を含めることができるためです。ただしセル [X] および [Y] では、数値のみを含めることができます。 
   
@@ -38,8 +38,8 @@ ISERRVALUE (* * *cellreference* * *)
 
 |**Cell**|**Formula**|**戻り値**|
 |:-----|:-----|:-----|
-|Scratch.X1  <br/> |= "House"  <br/> |#VALUE!  <br/> |
-|Scratch.A1  <br/> |= If (ISERRVALUE(Scratch.X1),2,Scratch.X1)  <br/> |2  <br/> |
+|最初の X1  <br/> |= "House"  <br/> |#VALUE!  <br/> |
+|最初の A1  <br/> |= If (ISERRVALUE(Scratch.X1),2,Scratch.X1)  <br/> |pbm-2  <br/> |
    
 戻り値は #VALUE! エラーを示す 2 です。Microsoft Visio でエラーの代わりに 2 を返すように式で指定されています。
   
@@ -47,8 +47,8 @@ ISERRVALUE (* * *cellreference* * *)
 
 |**Cell**|**Formula**|**戻り値**|
 |:-----|:-----|:-----|
-|Scratch.A1  <br/> |="5 +7"  <br/> |5 + 7  <br/> |
-|Scratch.B1  <br/> |=If (ISERRVALUE(Scratch.A1),2,Scratch.A1)  <br/> |5 + 7  <br/> |
+|最初の A1  <br/> |="5 +7"  <br/> |5 + 7  <br/> |
+|最初の B1  <br/> |=If (ISERRVALUE(Scratch.A1),2,Scratch.A1)  <br/> |5 + 7  <br/> |
    
 戻り値は #VALUE! エラーではなく、また元のセルの値を返すように式で指定されているため、12 を返します。
   

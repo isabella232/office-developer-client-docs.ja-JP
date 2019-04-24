@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: f9d4ee2d-c7da-d969-4457-e37384768ac5
 description: base64 文字列をデコードし、それをバイナリ データとして格納します。
-ms.openlocfilehash: b94b2c9934cb1522ec22d4503ff2590c671217da
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3dedbbe80f1ffab04ef6dd2b2cacf79da374a6ae
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317963"
 ---
 # <a name="blob-function"></a>BLOB 関数
 
@@ -28,6 +28,6 @@ BLOB (* * *bintext* * *)
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _bintext_ <br/> |必須  <br/> |**文字列型 (String)** <br/> | base64 エンコード文字列を指定します。  <br/> |
+| _bintext_ <br/> |必須  <br/> |**String** <br/> | base64 エンコード文字列を指定します。  <br/> |
    
 

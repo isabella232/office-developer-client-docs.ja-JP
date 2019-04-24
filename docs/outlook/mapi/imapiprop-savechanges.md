@@ -1,5 +1,5 @@
 ---
-title: IMAPIPropSaveChanges
+title: imapipropsavechanges
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 864dbc3e-2039-435a-a279-385d79d1d13f
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 2c8244180a5cafedc887fa72f36f233fb5084f79
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316633"
 ---
 # <a name="imapipropsavechanges"></a>IMAPIProp::SaveChanges
 
@@ -25,7 +25,7 @@ ms.locfileid: "25398844"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-前回の保存操作以降は、オブジェクトに対して行われた変更を永続的になります。 
+前回の保存操作以降にオブジェクトに加えられたすべての変更を永続的に行います。 
   
 ```cpp
 HRESULT SaveChanges(
@@ -33,96 +33,96 @@ HRESULT SaveChanges(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]**IMAPIProp::SaveChanges**メソッドが呼び出されたときにオブジェクトの動作を制御するフラグのビットマスクです。 次のフラグを設定することができます。 
+> 順番**imapiprop:: SaveChanges**メソッドが呼び出されたときに、オブジェクトに対して行われる処理を制御するフラグのビットマスク。 次のフラグを設定できます。 
     
 NON_EMS_XP_SAVE
   
-> Microsoft Exchange Server のメッセージが配信されていないことを示します。 このフラグは、 [IMAPIFolder::CreateMessage](imapifolder-createmessage.md)メソッドを使用して組み合わせて使用する必要があり、ITEMPROC_FORCE を示すフラグを PST ストア、メッセージの対象とするルールの処理のいずれかの個人用フォルダー ファイル (PST) のストアに通知する前に到着したメッセージをリッスンしているクライアント。 このルールの処理で作成される[IMAPIFolder::CreateMessage](imapifolder-createmessage.md)である場合、Exchange Server ではないサーバーで Exchange Server の新しいメッセージにのみ適用されますが既に処理が、メッセージのルール。 
+> メッセージが Microsoft Exchange サーバーから配信されていないことを示します。 このフラグを[imapifolder:: CreateMessage](imapifolder-createmessage.md)メソッドおよび ITEMPROC_FORCE フラグと組み合わせて使用して、個人用フォルダーファイル (pst) ストアが通知する前に、ルール処理の対象となるメッセージを pst ストアに示すように指定します。受信したクライアントメッセージが到着したこと。 このルールの処理は、exchange サーバー以外のサーバー上で[imapifolder:: CreateMessage](imapifolder-createmessage.md)を使用して作成された新しいメッセージにのみ適用されます。この場合、exchange サーバーはメッセージに対して既にルールを処理しています。 
     
 FORCE_SAVE 
   
-> オブジェクトに加えられた直前の変更をオーバーライドする、オブジェクトに変更を書き込むし、オブジェクトを閉じる必要があります。 操作を完了するのには、読み取り/書き込みアクセス許可を設定しなければなりません。 **Savechanges メソッド**の呼び出し前に、MAPI_E_OBJECT_CHANGED が返された後は、FORCE_SAVE フラグを使用します。 
+> オブジェクトに変更を加えて、オブジェクトに対する以前の変更を上書きし、オブジェクトを閉じる必要があります。 操作を正常に行うには、読み取り/書き込みアクセス許可が設定されている必要があります。 FORCE_SAVE フラグは、以前に**SaveChanges**が MAPI_E_OBJECT_CHANGED を呼び出した後に使用されます。 
     
 KEEP_OPEN_READONLY 
   
-> 変更をコミットする必要があり、オブジェクトは読み込み用にオープンして保持する必要があります。 追加の変更は行われません。 
+> 変更を確定して、オブジェクトを読み取り用に開いたままにしておく必要があります。 追加の変更は行われません。 
     
 KEEP_OPEN_READWRITE 
   
-> 変更をコミットする必要があり、オブジェクトは、読み取り/書き込みアクセス許可も開いたまま必要があります。 このフラグは通常、読み取り/書き込みのアクセス許可オブジェクトを最初に開いたときに設定されます。 オブジェクトへのそれ以降の変更が許可されています。 
+> 変更をコミットし、オブジェクトを読み取り/書き込みアクセス許可のために開いたままにしておく必要があります。 通常、このフラグは、オブジェクトが読み取り/書き込みアクセス許可で最初に開かれたときに設定されます。 その後、オブジェクトに対する変更を行うことができます。 
     
 MAPI_DEFERRED_ERRORS 
   
-> 正常に完了が完全にコミットされた変更前に、 **SaveChanges**を使用できます。 
+> 変更が完全にコミットされる前に、 **SaveChanges**が正常に戻ることができるようにします。 
     
 SPAMFILTER_ONSAVE
   
-> フィルターが保存されているメッセージに迷惑メールを有効に スパムのフィルタ リングのサポートは、送信者の電子メール アドレスの種類は、簡易メール転送プロトコル (SMTP)、メッセージは個人用フォルダー ファイル (PST) のストアに保存されている場合にのみ使用できます。
+> 保存されているメッセージに対してスパムフィルター処理を有効にします。 スパムのフィルター処理に関するサポートは、送信者の電子メール アドレスの種類が簡易メール転送プロトコル (SMTP) であり、メッセージが個人用フォルダー ファイル (PST) 向けのストアに保存されている場合にのみ使用することができます。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 変更のコミットに成功しました。
+> 変更のコミットメントに成功しました。
     
 MAPI_E_NO_ACCESS 
   
-> **SaveChanges**できないオブジェクトを開いたまま読み取り専用のアクセス許可の場合は KEEP_OPEN_READONLY セット、または読み取り/書き込み権限 KEEP_OPEN_READWRITE が設定されている場合。 変更のコミットはありません。 
+> KEEP_OPEN_READONLY が設定されている場合は読み取り専用アクセス許可、KEEP_OPEN_READWRITE が設定されている場合は読み取り/書き込みアクセス許可の場合、 **SaveChanges**ではオブジェクトを開いたままにすることはできません。 変更はコミットされません。 
     
 MAPI_E_OBJECT_CHANGED 
   
-> オブジェクトは、開かれた後に変更されました。
+> オブジェクトが開かれた後に変更されました。
     
 MAPI_E_OBJECT_DELETED 
   
-> 開かれた後、オブジェクトが削除されました。
+> オブジェクトが開かれた後に削除されています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-**IMAPIProp::SaveChanges**メソッドでは、プロパティの変更を永続的に処理する場合、メッセージ、添付ファイル、アドレス帳コンテナー、およびメッセージングのユーザー オブジェクトのトランザクション モデルをサポートするオブジェクトになります。 フォルダー、メッセージ ストア、およびプロファイルのセクションなどのトランザクションをサポートしないオブジェクト変更永続的なすぐにします。 **Savechanges メソッド**の呼び出しは必要ありません。 
+**imapiprop:: SaveChanges**メソッドを使用すると、メッセージ、添付ファイル、アドレス帳コンテナー、メッセージングユーザーオブジェクトなど、処理のトランザクションモデルをサポートするオブジェクトのプロパティの変更を永続的に行うことができます。 フォルダー、メッセージストア、プロファイルセクションなど、トランザクションをサポートしていないオブジェクトは、直ちに変更を反映します。 **SaveChanges**を呼び出す必要はありません。 
   
-サービス プロバイダーは、すべてのプロパティが保存されるまで、そのオブジェクトのエントリ id を生成する必要はありません、ためオブジェクトの**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) できない可能性がありますまで、 **SaveChanges**メソッドの後呼び出されました。 プロバイダーによって、KEEP_OPEN_READONLY フラグが設定されるまでの待機、 **SaveChanges**の呼び出しです。 KEEP_OPEN_READONLY は、現在の呼び出しで保存する変更がオブジェクトに対して実行される最後の変更になることを示します。 
+すべてのプロパティが保存されるまでは、サービスプロバイダーはオブジェクトのエントリ識別子を生成する必要がないため、 **SaveChanges**メソッドの後までオブジェクトの**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティを使用できない場合があります。が呼び出されました。 一部のプロバイダーは、 **SaveChanges**呼び出しで KEEP_OPEN_READONLY フラグが設定されるまで待機します。 KEEP_OPEN_READONLY は、現在の呼び出しに保存される変更が、オブジェクトに対して最後に行われた変更であることを示します。 
   
-メッセージ ストアの実装によって操作を行いますフォルダー内のメッセージは新しく作成された表示しないクライアントまで保存して、メッセージ**SaveChanges**を使用して変更[が](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドを使用して、メッセージ オブジェクトを解放します。 さらに、いくつかのオブジェクトの実装を生成できません**PR_ENTRYID**プロパティまでの新しく作成されたオブジェクトの後、 **SaveChanges**が呼び出されると、およびいくつかは、KEEP_OPEN_READONLY を使用して、 **SaveChanges**が呼び出された後にのみ_ulFlags_で設定します。
+メッセージストアの実装によっては、クライアントが**SaveChanges**を使用してメッセージの変更を保存し、 [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドを使用してメッセージオブジェクトを解放するまで、新しく作成されたメッセージがフォルダーに表示されないことがあります。 また、一部のオブジェクト実装では、 **savechanges**が呼び出されるまで、新しく作成されたオブジェクトの**PR_ENTRYID**プロパティを生成できません。また、KEEP_OPEN_READONLY を使用して**savechanges**が呼び出された後にのみ実行できるものもあります。_ulflags_で設定します。
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-KEEP_OPEN_READONLY フラグを受信した場合は、オブジェクトの読み取り/書き込みアクセス権をそのままのオプションがあります。 ただし、プロバイダーできますしない状態のままにオブジェクト読み取り専用 KEEP_OPEN_READWRITE フラグが渡される。
+KEEP_OPEN_READONLY フラグを受信した場合は、オブジェクトのアクセスを読み取り/書き込み可能にするオプションがあります。 ただし、KEEP_OPEN_READWRITE フラグが渡された場合、プロバイダーはオブジェクトを読み取り専用状態にしておくことはできません。
   
-クライアントは、複数のメッセージに複数の添付ファイルを保存するときに、すべての添付ファイルとすべてのメッセージの**SaveChanges**メソッドを呼び出します。 クライアントでは多くの場合は最後の 1 つを除いて、これらの呼び出しごとに MAPI_DEFERRED_ERRORS を設定します。 最後の呼び出しまたはそれ以前の呼び出しのいずれかのエラーを返すことができます。 フラグを無視してもかまいません。 
+クライアントが複数のメッセージに複数の添付ファイルを保存すると、すべての添付ファイルとすべてのメッセージに対して**SaveChanges**メソッドが呼び出されます。 多くの場合、クライアントは、これらの呼び出しごとに MAPI_DEFERRED_ERRORS を設定します (最後の呼び出しを除く)。 前回の通話または以前の呼び出しでエラーを返すことができます。 フラグは無視してもかまいません。 
   
-MAPI_DEFERRED_ERRORS と KEEP_OPEN_READWRITE または KEEP_OPEN_READONLY のいずれかが設定されている場合は、繰延の要求のエラーを無視できます。 延期されていたエラーのいずれかが返されることができます_ulFlags_で MAPI_DEFERRED_ERRORS が設定されていない場合、 **SaveChanges**の呼び出しをします。 
+KEEP_OPEN_READWRITE または KEEP_OPEN_READONLY のどちらかが MAPI_DEFERRED_ERRORS と共に設定されている場合は、エラー繰延要求を無視できます。 _ulflags_に MAPI_DEFERRED_ERRORS が設定されていない場合は、以前に遅延したエラーの1つを**SaveChanges**呼び出しに対して返すことができます。 
   
-リモート トランスポート プロバイダーがこのメソッドの実装の機能を提供するかどうかはオプションであり、他の実装では、設計上の選択によって異なります。 このメソッドを実装する場合は、次のマニュアルに従って。 フォルダー オブジェクトおよびオブジェクトの状態は処理されないため、少なくとも**SaveChanges**のリモート トランスポート プロバイダーの実装する必要があります S_OK を返します実際に作業を行うことがなく。 
+リモートトランスポートプロバイダーがこのメソッドの機能実装を提供するかどうかはオプションであり、実装での他の設計上の選択によって異なります。 このメソッドを実装する場合は、ここに記載されているドキュメントに従ってください。 folder オブジェクトと status オブジェクトは処理されないため、少なくともリモートトランスポートプロバイダーの**SaveChanges**の実装は、実際には何も作業を行わずに S_OK を返す必要があります。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-KEEP_OPEN_READONLY を渡す、 [IMAPIProp::SetProps](imapiprop-setprops.md)メソッドを呼び出すし、 **SaveChanges**を再度呼び出すクライアントに、同じ実装が失敗する可能性があります。 
+クライアントが KEEP_OPEN_READONLY に合格した場合は、 [imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出してから、再度**SaveChanges**を呼び出すと、同じ実装が失敗する可能性があります。 
   
-呼び出しから MAPI_E_NO_ACCESS を受信した後を設定すると KEEP_OPEN_READWRITE で引き続きオブジェクトへの読み取り/書き込み権限があります。 **SaveChanges** KEEP_OPEN_READONLY フラグまたは KEEP_OPEN_SUFFIX を持つフラグなしのいずれかを渡すことを呼び出すことができます。 
+KEEP_OPEN_READWRITE を設定した呼び出しから MAPI_E_NO_ACCESS を受信した後、そのオブジェクトに対する読み取り/書き込みアクセス許可が引き続き付与されます。 再度、 **SaveChanges**を呼び出すことができます。 KEEP_OPEN_READONLY フラグを渡すか、KEEP_OPEN_SUFFIX を使用してフラグを設定する必要はありません。 
   
-プロバイダーが、KEEP_OPEN_READWRITE フラグをサポートしているかどうかは、プロバイダーの実装によって異なります。 
+プロバイダーが KEEP_OPEN_READWRITE フラグをサポートしているかどうかは、プロバイダーの実装によって異なります。 
   
-**SaveChanges**の後にオブジェクトに対して実行するだけの呼び出し**が**であることを示す、フラグを設定しない_ulFlags_パラメーターにします。 **SaveChanges**のエラーは、それを作成できませんでした、保留中の変更永続的なことを示します。 別のプロバイダーでは、異なる方法で**SaveChanges**の呼び出しにフラグがない場合を処理します。 プロバイダーによってこの状態と同様に処理 KEEP_OPEN_READONLY です。他のプロバイダーの解釈に KEEP_OPEN_READWRITE と同じです。 まだ他のプロバイダー、 **SaveChanges**の呼び出しフラグを受信しない場合、オブジェクトをシャット ダウンします。 
+**SaveChanges**が**IUnknown:: Release**の後にのみオブジェクトで行われる呼び出しを示すには、 _ulflags_パラメーターにフラグを設定しません。 **SaveChanges**からのエラーは、保留中の変更を永続的にできないことを示します。 さまざまなプロバイダーが、 **SaveChanges**呼び出しでのフラグの欠落を異なる方法で処理します。 プロバイダーによっては、この状態を KEEP_OPEN_READONLY と同じものとして扱います。他のプロバイダーは、KEEP_OPEN_READWRITE と同じように解釈します。 その他のプロバイダーは、 **SaveChanges**呼び出しでフラグを受信しない場合、そのオブジェクトをシャットダウンします。 
   
-**SaveChanges**が呼び出されるまでと、場合によっては、**リリース**で、通常の計算されたプロパティは、いくつかのプロパティを処理できません。
+一部のプロパティ (通常は計算プロパティ) は、 **SaveChanges**を呼び出し、場合によっては**解放**されるまで処理できません。
   
-複数のメッセージに添付ファイルを保存するなどの一括変更を加える場合は、 _ulFlags_で MAPI_DEFERRED_ERRORS フラグを設定することで処理中にエラーを延期します。 複数のメッセージに複数の添付ファイルを保存する場合は、1 つ**SaveChanges**の呼び出しの各添付ファイルと 1 つ**SaveChanges**の呼び出しの各メッセージを確認します。 最後の 1 つを除くすべてのメッセージの添付ファイルの呼び出しごとに MAPI_DEFERRED_ERRORS フラグを設定します。 
+添付ファイルを複数のメッセージに保存するなどの一括変更を行う場合は、 _ulflags_で MAPI_DEFERRED_ERRORS フラグを設定することにより、エラー処理を延期します。 複数の添付ファイルを複数のメッセージに保存する場合は、各添付ファイルに**savechanges**呼び出しを1つずつ、各メッセージに**savechanges**呼び出しを1つ行います。 添付ファイルの各呼び出しに対して MAPI_DEFERRED_ERRORS フラグを設定し、最後のメッセージ以外のすべてのメッセージに対して設定します。 
   
-**SaveChanges** MAPI_E_OBJECT_CHANGED が返された場合は、元のオブジェクトが変更されたかどうかを確認します。 その場合は、変更が前の変更を上書きするか、オブジェクトを別の場所での保存を要求できるか、ユーザーと、ユーザーに警告します。 元のオブジェクトが削除されている場合は、別の場所にオブジェクトを保存する機会を与えるユーザーを警告します。 
+**SaveChanges**が MAPI_E_OBJECT_CHANGED を返す場合は、元のオブジェクトが変更されていないかどうかを確認します。 その場合は、変更によって以前の変更を上書きするか、別の場所に保存するかをユーザーに警告します。 元のオブジェクトが削除されている場合は、オブジェクトを別の場所に保存する機会をユーザーに提供するようにユーザーに警告します。 
   
-FORCE_SAVE のフラグが削除されているオブジェクトを開くには、 **SaveChanges**を呼び出すことはできません。 
+開いているオブジェクトが削除されている場合、FORCE_SAVE フラグを使用して**SaveChanges**を呼び出すことはできません。 
   
-**SaveChanges**がエラーを返した場合、オブジェクトの変更をしたまま保存開くには、 _ulFlags_パラメーターで設定されているフラグに関係なく。 
+**SaveChanges**がエラーを返す場合、 _ulflags_パラメーターに設定されているフラグに関係なく、変更を保存しようとしたオブジェクトは開いたままになります。 
   
 > [!IMPORTANT]
-> _UlFlags_ダウンロード可能なヘッダー ファイルに現在ある NON_EMS_XP_SAVE および SPAMFILTER_ONSAVE を定義する可能性がない、場合に追加できます、次の値を使用してコード: >`#define SPAMFILTER_ONSAVE ((ULONG) 0x00000080)`>  `#define NON_EMS_XP_SAVE ((ULONG) 0x00001000)`
+> _ulflags_ NON_EMS_XP_SAVE および SPAMFILTER_ONSAVE は、現在のダウンロード可能なヘッダーファイルでは定義されていない場合があります。その場合は、次の値を使用してコードに追加できます。 >`#define SPAMFILTER_ONSAVE ((ULONG) 0x00000080)`>  `#define NON_EMS_XP_SAVE ((ULONG) 0x00001000)`
   
-詳細については、 [MAPI プロパティの保存](saving-mapi-properties.md)を参照してください。
+詳細については、「 [MAPI プロパティの保存](saving-mapi-properties.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

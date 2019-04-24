@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 54bd69c3-a9fa-d2ac-9a91-67187c92fc8a
-description: 先頭にカーソルを設定することにより、列挙子をリセットします。
-ms.openlocfilehash: 3b4676735979cab4c3ae42af361ad7aab4656fd2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: カーソルを先頭に設定して、列挙子をリセットします。
+ms.openlocfilehash: 589f8e310cc1c0053434a9ab4fb78931b339ca46
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317578"
 ---
 # <a name="ienumfbblockreset"></a>IEnumFBBlock::Reset
 
-先頭にカーソルを設定することにより、列挙子をリセットします。
+カーソルを先頭に設定して、列挙子をリセットします。
   
 ## <a name="quick-info"></a>クイック ヒント
 

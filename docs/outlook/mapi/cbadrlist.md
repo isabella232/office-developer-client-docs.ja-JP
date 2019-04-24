@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: 2507c3fa-e34c-4da0-88b5-2d1a98b32d4a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a262275640897a0243330404c4d141144bb64f21
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f45a8ee2f52673dc04a9dc60971777200d1e8438
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318108"
 ---
 # <a name="cbadrlist"></a>CbADRLIST
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-既存の[ADRLIST](adrlist.md)構造体のバイト数を計算します。 
+既存の[adrlist](adrlist.md)構造体のバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造  <br/> |**ADRLIST** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造  <br/> |**ADRLIST** <br/> |
    
 ```cpp
 CbADRLIST (_lpadrlist)
@@ -40,7 +40,7 @@ CbADRLIST (_lpadrlist)
 
  __lpadrlist_
   
-> 既存の**ADRLIST**構造体へのポインター。 
+> 既存の**adrlist**構造体へのポインター。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -49,5 +49,5 @@ CbADRLIST (_lpadrlist)
 [ADRLIST](adrlist.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

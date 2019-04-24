@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 2ab4681e-0013-4ba0-ba26-50517bbf3f5b
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7cca884eae2111a94d87cc24a6d30542148ab845
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25394875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316318"
 ---
 # <a name="pidtagfoldertype-canonical-property"></a>PidTagFolderType 標準プロパティ
 
@@ -25,66 +25,66 @@ ms.locfileid: "25394875"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダーの種類を示す定数が含まれています。 
+フォルダーの種類を示す定数が格納されています。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_FOLDER_TYPE  <br/> |
 |識別子:  <br/> |0x3601  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |MAPI のコンテナー  <br/> |
+|エリア:  <br/> |MAPI コンテナー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティは、次の値の 1 つだけ持つことができます。
+このプロパティには、次のいずれかの値を指定できます。
   
 FOLDER_GENERIC 
   
-> メッセージおよびその他のフォルダーに含まれている一般的なフォルダーです。
+> メッセージおよびその他のフォルダーが格納されている汎用フォルダー。
     
 FOLDER_ROOT 
   
-> フォルダーの階層テーブル、つまり、親フォルダーがないフォルダーのルート フォルダーです。
+> フォルダー階層テーブルのルートフォルダーです。つまり、親フォルダーがないフォルダーです。
     
 FOLDER_SEARCH 
   
-> 検索条件を満たすメッセージへのリンクの形式で、検索の結果を格納するフォルダーです。
+> 検索条件を満たすメッセージへのリンクの形式で、検索結果を含むフォルダー。
     
-メッセージ ストアのルートは、そのストア内の個人間メッセージ (IPM) サブツリーのルートと混同しないでください。 ストアのルート フォルダーは、親を持たないが null のエントリの識別子を使用して[IMsgStore::OpenEntry](imsgstore-openentry.md)メソッドを呼び出すことによって取得されます。 **OpenEntry**呼び出しの**PR_IPM_SUBTREE_ENTRYID** ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md)) プロパティの値を使用して、IPM サブツリーのルート フォルダーは、親を持っているが、取得します。 
+メッセージストアのルートを、そのストア内の個人間メッセージ (IPM) サブツリーのルートと混同しないようにする必要があります。 親を持たないストアのルートフォルダーは、null エントリ識別子を使用して[IMsgStore:: openentry](imsgstore-openentry.md)メソッドを呼び出すことによって取得されます。 親を持つ IPM サブツリーのルートフォルダーは、 **openentry**呼び出しの**PR_IPM_SUBTREE_ENTRYID** ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md)) プロパティの値を使用して取得されます。 
   
-MAPI は、メッセージ ・ ストアごとに 1 つだけのルート フォルダーを使用できます。 このフォルダーには、メッセージ、およびその他のフォルダーが含まれています。 ルート フォルダーの**PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md)) のプロパティには、フォルダーのエントリ id が含まれています。
+MAPI では、メッセージストアごとに1つのルートフォルダーしか許可しません。 このフォルダーには、メッセージとその他のフォルダーが含まれています。 ルートフォルダーの**PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md)) プロパティには、フォルダー自身のエントリ識別子が含まれています。
   
-検索結果フォルダー内の情報がそのコンテンツ ・ テーブルの一般的な内容のテーブルと同じ列と一致する各メッセージが含まれているフォルダーを識別する 2 つの余分な列が含まれている主に格納されている: **PR_PARENT_DISPLAY** ([PidTagParentDisplay](pidtagparentdisplay-canonical-property.md)) (表示名が必要です)、このプロパティ (エントリの識別子、省略可能)。
+検索結果フォルダー内の情報は、主に contents テーブルと同じ列を含む contents テーブルに格納されます。また、各メッセージが見つかったフォルダーを示す2つの列もあります。 **PR_PARENT_DISPLAY** ([PidTagParentDisplay](pidtagparentdisplay-canonical-property.md)) (表示名、必須) およびこのプロパティ (エントリ識別子、省略可能)。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
+[[OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
   
-> フォルダーの操作を処理します。
+> フォルダー操作を処理します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: f5eeb75d-debb-4ac1-b239-e8e852460ce0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6c09c271fefcf31dcde01526d65091714c0b682d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e274e24d9aff30bb39b1865306477164d413d9a8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319174"
 ---
 # <a name="smapiforminfoarray"></a>SMAPIFormInfoArray
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォーム オブジェクトの情報へのポインターの配列が含まれています。 
+フォーム情報オブジェクトへのポインターの配列を格納します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
 |関連するマクロ:  <br/> |[CbMAPIFormInfoArray](cbmapiforminfoarray.md) <br/> |
    
 ```cpp
@@ -43,17 +43,17 @@ typedef struct
 
 ## <a name="members"></a>Members
 
- **cForms**
+ **cforms**
   
-> **AFormInfo**メンバーが指す配列内のポインターの数です。 
+> **aforminfo**メンバーによって示される配列内のポインターの数。 
     
- **aFormInfo**
+ **aforminfo**
   
-> フォーム オブジェクトの情報へのポインターの配列へのポインター。
+> フォーム情報オブジェクトへのポインターの配列へのポインター。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**SMAPIFormInfoArray**構造体は、次のメソッドのパラメーターとして渡されます。 
+**smapiforminfoarray**構造体は、次のメソッドのパラメーターとして渡されます。 
   
 - [IMAPIFormMgr::ResolveMultipleMessageClasses](imapiformmgr-resolvemultiplemessageclasses.md)
     

@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: 3b8b8d9f-33e1-45c3-b024-9afcaab8839c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f31bccb9c975bbbccb079e40526f6c16eda37474
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: de6836c036c1b8c80a030a8a49009b8899267aa0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317970"
 ---
 # <a name="cbnewsrowset"></a>CbNewSRowSet
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[SRow](srow.md)構造体によって表される行の指定した番号を含む新しい[SRowSet](srowset.md)構造体に割り当てられるバイト数を計算します。 
+[srowset](srow.md)構造で表される、指定された数の行を含む新しい[srowset](srowset.md)構造体に割り当てるバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**SRowSet** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**SRowSet** <br/> |
    
 ```cpp
 CbNewSRowSet (_crow)
@@ -40,7 +40,7 @@ CbNewSRowSet (_crow)
 
  __クロウズ_
   
-> 新しい**SRowSet**構造体に含まれる行の数を示す**SRow**の構造体の数です。 
+> 新しい**srow**構造に含める行数を示す、 **srow**構造の数を示します。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -51,5 +51,5 @@ CbNewSRowSet (_crow)
 [SRow](srow.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

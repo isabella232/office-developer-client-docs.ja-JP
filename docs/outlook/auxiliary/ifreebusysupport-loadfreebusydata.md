@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: f0baa310-7a53-07ee-0a7d-33dd1fb465c2
-description: ユーザーごとに指定された、時間の範囲内のデータのブロックの空き時間情報を列挙するためのインターフェイスを返します。
-ms.openlocfilehash: 9af5a40da9f0a831de7346b44cee9ca004c02300
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 指定した各ユーザーについて、時間範囲内のデータの空き時間ブロックを列挙するためのインターフェイスを返します。
+ms.openlocfilehash: e55f902117a20bfefaa5d9a2f3a067cb78ec86cb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319405"
 ---
 # <a name="ifreebusysupportloadfreebusydata"></a>IFreeBusySupport::LoadFreeBusyData
 
-ユーザーごとに指定された、時間の範囲内のデータのブロックの空き時間情報を列挙するためのインターフェイスを返します。 
+指定した各ユーザーについて、時間範囲内のデータの空き時間ブロックを列挙するためのインターフェイスを返します。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -34,28 +34,28 @@ HRESULT LoadFreeBusyData(
 
 ## <a name="parameters"></a>パラメーター
 
-_cMax_
+_cmax_
   
-> [in]返す[IFreeBusyData](ifreebusydata.md)のインタ フェースの数です。 
+> 順番取得する[IFreeBusyData](ifreebusydata.md)インターフェイスの数を指定します。 
     
 _rgfbuser_
   
-> [in]データを取得するユーザーの空き時間情報の配列。
+> 順番データを取得する空き時間情報ユーザーの配列。
     
 _prgfbdata_
   
-> [in][out]_Rgfbuser_ [FBUser](fbuser.md)構造体の配列に対応する**IFreeBusyData**インターフェイスの配列。 
+> 順番読み上げ[fbuser](fbuser.md)構造の_rgfbuser_配列に対応する**IFreeBusyData**インターフェイスの配列。 
     
    > [!NOTE]
-   > このポインターの配列は、呼び出し元によって割り当てられているし、呼び出し元によって解放されます。 示される実際のインターフェイスは、後に、呼び出し元に解放されます。 
+   > このポインターの配列は、呼び出し元によって割り当てられ、呼び出し元によって解放されます。 呼び出し元が実行されたときに、参照されている実際のインターフェイスは解放されます。 
   
 _phrStatus_
   
-> [out]**HRESULT**の配列は、それぞれ対応する**IFreeBusyData**インターフェイスを取得するため発生します。 値は NULL である可能性があります。 結果は、対応する_prgfbdata_が有効な場合は S_OK に設定されています。 
+> 読み上げそれぞれの対応する**IFreeBusyData**インターフェイスを取得するための**HRESULT**結果の配列。 値は NULL である場合があります。 対応する_prgfbdata_が有効な場合、結果は S_OK に設定されます。 
     
-_pcRead_
+_pcread_
   
->  [out]**IFreeBusyData**インタ フェースが検出されましたユーザーの実際の数です。 
+>  読み上げ**IFreeBusyData**インターフェイスが検出された実際のユーザー数。 
     
 ## <a name="return-values"></a>戻り値
 
@@ -63,5 +63,5 @@ _pcRead_
   
 ## <a name="see-also"></a>関連項目
 
-- [定数 (空き時間情報の API)](constants-free-busy-api.md)
+- [定数 (空き時間情報 API)](constants-free-busy-api.md)
 

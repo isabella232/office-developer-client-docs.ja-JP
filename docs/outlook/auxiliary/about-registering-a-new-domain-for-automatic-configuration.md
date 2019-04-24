@@ -6,38 +6,38 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: a7ab8a50-dd30-4ba5-b6d8-e6d1f482e6f1
-description: Outlook には、新しいメッセージ サービス用のドメインを自動構成を指定し、アカウントを構成するのにはメッセージ サービス プロバイダーを使用する方法が用意されています。
+description: Outlook では、自動構成用に新しいメッセージサービスドメインを指定し、メッセージサービスプロバイダーがアカウントを構成できるようにする方法を提供します。
 ms.openlocfilehash: bf06ff8d145ed6173e3545f784f8b5b7b5f433be
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316969"
 ---
 # <a name="about-registering-a-new-domain-for-automatic-configuration"></a>自動構成のための新しいドメインの登録について
 
-Outlook には、新しいメッセージ サービス用のドメインを自動構成を指定し、アカウントを構成するのにはメッセージ サービス プロバイダーを使用する方法が用意されています。
+Outlook では、自動構成用に新しいメッセージサービスドメインを指定し、メッセージサービスプロバイダーがアカウントを構成できるようにする方法を提供します。
   
-メッセージ サービス プロバイダーを設計する場合は、対応するメッセージ サービス プロバイダーによって自動的に構成するのには新しいドメインを指定する Windows レジストリの次のキーを使用できます。 
+メッセージサービスプロバイダーを設計する場合、Windows レジストリの次のキーを使用して、対応するメッセージサービスプロバイダーによって自動的に構成される新しいドメインを指定できます。 
   
 `HKLM\Software\Microsoft\Office\Outlook\AutoConfigDomains\<domain name>\`
   
-キーには、`<domain name>`は、ドメインを自動的に構成します。 このドメイン名は、ワイルドカードをサポートしています\*開始時のみです。 次の表は、このキーがサポートされている値を示します。 
+キーで、 `<domain name>`は自動構成のドメインです。 このドメイン名は、先頭\*のみにワイルドカードをサポートしています。 次の表に、このキーがサポートする値を示します。 
   
-| 値 | 種類 | 説明 |
+| 値 | 型 | 説明 |
 |:-----|:-----|:-----|
-|フレンドリ名  <br/> |REG_SZ  <br/> |自動構成中にユーザーに表示されているドメイン名です。  <br/> |
-|サービス名  <br/> |REG_SZ  <br/> |メッセージ サービスは、このドメインをサポートしている mapisvc.inf に登録します。  <br/> |
-|インストール場所  <br/> |REG_SZ  <br/> |インストールされていない場合、メッセージ ・ サービス ・ プロバイダーをインストールする場所の URL です。  <br/> |
-|最小バージョン  <br/> |REG_DWORD  <br/> |必要なメッセージ ・ サービス ・ プロバイダーの .dll ファイルの最小バージョンです。 この値は省略可能です。  <br/> |
+|フレンドリ名  <br/> |REG_SZ  <br/> |自動構成時にユーザーに対して表示されるドメイン名。  <br/> |
+|サービス名  <br/> |REG_SZ  <br/> |このドメインをサポートする mapisvc.inf に登録されているメッセージサービス。  <br/> |
+|インストール先  <br/> |REG_SZ  <br/> |メッセージサービスプロバイダーがまだインストールされていない場合は、その場所の URL。  <br/> |
+|最小バージョン  <br/> |REG_DWORD  <br/> |必要なメッセージサービスプロバイダーの .dll の最小バージョン。 この値は省略できます。  <br/> |
    
-Outlook は、電子メール アカウントの自動構成を開始するときは、電子メール アドレスで指定されたドメインの登録のための Windows レジストリをチェックします。 ドメインは既に Windows のレジストリに指定されて、Outlook はメッセージ サービスが、Mapisvc.inf に登録されているかどうかをチェックします。 Outlook は、Windows レジストリで指定されていない限り、ドメインの自動構成を続行できません。
+Outlook は、電子メールアカウントの自動構成を開始するときに、電子メールアドレスによって指定されたドメインの登録を Windows レジストリで確認します。 ドメインが Windows レジストリで既に指定されている場合、Outlook はメッセージサービスが mapisvc.inf に登録されているかどうかを確認します。 Windows レジストリで指定されていない場合、Outlook はドメインの自動構成を続行できません。
   
-Outlook が指定したフレンドリ名を使用しをインストールするように求める場合 Mapisvc.inf に指定したメッセージ サービスが現在登録されていないか、メッセージ サービス プロバイダーがインストールされている .dll ファイルを指定された最小値より前のバージョンが、プロバイダーです。 ユーザーを受け取る場合、Outlook は、ユーザーがプロバイダーをインストールできるように、指定したインストール場所に、ユーザーをリダイレクトします。 Mapisvc.inf のメッセージ サービスを登録するプロバイダーをインストールします。
+指定されたメッセージサービスが mapisvc.inf に現在登録されていない場合、またはメッセージサービスプロバイダーがインストールされているが、.dll に指定されている最小値より前のバージョンがある場合、Outlook は指定されたフレンドリ名を使用して、ユーザーに供給. ユーザーが受け入れた場合、Outlook はユーザーがプロバイダーをインストールできるように、指定されたインストール場所にユーザーをリダイレクトします。 プロバイダーをインストールすると、mapisvc.inf にメッセージサービスが登録されます。
   
-Outlook が[IMsgServiceAdmin::CreateMsgService](https://msdn.microsoft.com/library/0135f049-0311-45e5-9685-78597d599a4e%28Office.15%29.aspx)を使用して、メッセージ サービスを作成し、[を使用して構成し、メッセージ サービスは、現在登録されている Mapisvc.inf の場合、サービス プロバイダーの .dll ファイルは、適切なバージョンIMsgServiceAdmin::ConfigureMsgService](https://msdn.microsoft.com/library/a08f5905-2585-49ca-abb7-a77f2736f604%28Office.15%29.aspx)。 Outlook の自動構成では、次の 3 つのプロパティを使用して、プロバイダーのアカウントを設定するを許可する: [PidTagAutoConfigurationUserName](https://msdn.microsoft.com/library/05dfa0e2-4ab1-4f57-9009-6a815aca87bd%28Office.15%29.aspx)、 [PidTagAutoConfigurationUserEmail](https://msdn.microsoft.com/library/845140c8-5454-4b47-acec-ab5aff00b768%28Office.15%29.aspx)、および[PidTagAutoConfigurationUserPassword](https://msdn.microsoft.com/library/d33e7c45-55d8-4dc1-ade9-605542d87e61%28Office.15%29.aspx).
+メッセージサービスが mapisvc.inf に現在登録されていて、サービスプロバイダが適切なバージョンである場合、Outlook は[IMsgServiceAdmin:: CreateMsgService](https://msdn.microsoft.com/library/0135f049-0311-45e5-9685-78597d599a4e%28Office.15%29.aspx)を使用してメッセージサービスを作成し、それを使用[して構成します。IMsgServiceAdmin:: ConfigureMsgService](https://msdn.microsoft.com/library/a08f5905-2585-49ca-abb7-a77f2736f604%28Office.15%29.aspx)。 Outlook の自動構成では、次の3つのプロパティを使用して、プロバイダーがアカウントをセットアップできるようにします。 [PidTagAutoConfigurationUserName](https://msdn.microsoft.com/library/05dfa0e2-4ab1-4f57-9009-6a815aca87bd%28Office.15%29.aspx)、 [PidTagAutoConfigurationUserEmail](https://msdn.microsoft.com/library/845140c8-5454-4b47-acec-ab5aff00b768%28Office.15%29.aspx)、および[PidTagAutoConfigurationUserPassword](https://msdn.microsoft.com/library/d33e7c45-55d8-4dc1-ade9-605542d87e61%28Office.15%29.aspx).
   
 ## <a name="see-also"></a>関連項目
 
-- [MapiSvc.inf のファイル形式](https://msdn.microsoft.com/library/b48eda17-83a8-4dc4-85c8-4ca827d13d25%28Office.15%29.aspx)
+- [mapisvc.inf のファイル形式](https://msdn.microsoft.com/library/b48eda17-83a8-4dc4-85c8-4ca827d13d25%28Office.15%29.aspx)
 

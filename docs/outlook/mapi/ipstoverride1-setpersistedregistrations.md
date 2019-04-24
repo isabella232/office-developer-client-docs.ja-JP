@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5f4b62db-a759-41a2-9bea-29fc04b2962b
-description: '最終更新日: 2011 年 11 月 8 日'
-ms.openlocfilehash: 3592584a08bf14725c0289831740e91fb8f1a5b2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年11月8日'
+ms.openlocfilehash: 6583765d4df7c7bfae9e7a62606beaa857874954
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315478"
 ---
 # <a name="ipstoverride1setpersistedregistrations"></a>IPSTOVERRIDE1::SetPersistedRegistrations
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-それ以降、HrTrustedPSTOverrideHandlerCallback の呼び出しを回避する自動ロック解除では、個人用フォルダー (.pst) ファイルを登録します。
+自動ロック解除のために個人用フォルダー (.pst) ファイルを登録し、HrTrustedPSTOverrideHandlerCallback へのその他の呼び出しを回避します。
   
 ```cpp
 HRESULT SetPersistedRegistrations(
@@ -35,27 +35,27 @@ HRESULT SetPersistedRegistrations(
 
 _pmval_
   
-> [in][SPropValue](spropvalue.md)構造のダイナミック リンク ライブラリ (DLL) が登録するパスへのポインターが含まれています。 構造体には、次の特徴があります。 
+> 順番登録するダイナミックリンクライブラリ (DLL) のパスへのポインターを含む[spropvalue](spropvalue.md)構造。 この構造には、次のような特徴があります。 
     
-   - [PROP_TAG](prop_tag.md)(PT_MV_UNICODE, PROP_ID_NULL) の ulPropTag です。
+   - [PROP_TAG](prop_tag.md)の ulPropTag (PT_MV_UNICODE, PROP_ID_NULL)。
     
-   - Unicode 文字の null で終わる文字列の配列に設定されている MVszW 値プロパティです。 詳細については、 [SWStringArray](swstringarray.md)のトピックを参照してください。 
+   - null で終了する Unicode 文字列の配列に設定されている MVszW value プロパティ。 詳細については、 [swstringarray](swstringarray.md)のトピックを参照してください。 
     
 > [!NOTE]
-> SPropValue は、pst ファイルの内部の範囲の MAPI プロパティに格納されます。 このプロパティは、通常の MAPI アプリケーションにアクセス可能ではありません。 
+> spropvalue は、PST の内部範囲の MAPI プロパティに格納されます。 このプロパティは、通常の MAPI アプリケーションにはアクセスできません。 
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 関数の呼び出しに成功しました。
+> 関数呼び出しが成功しました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-永続的な登録には、pst ファイルを開く Windows デスクトップ サーチでは、Outlook などのアプリケーションのパフォーマンスに悪影響を与える可能性があります。 使用するか、永続的な登録の使用法を拡張するときにパフォーマンスに与える影響を検討してください。
+永続的な登録を行うと、pst を開く Outlook や Windows デスクトップサーチなど、アプリケーションのパフォーマンスに悪影響を及ぼす可能性があります。 永続登録の使用を使用または拡張する場合のパフォーマンスの影響を考慮してください。
   
 > [!IMPORTANT]
-> このメソッドは、Unicode のみ実装されます。 さらに、先制と、失敗、配列内のパスのいずれかの .dll のファイル名の拡張子はありません。 
+> このメソッドは、Unicode に対してのみ実装されています。 さらに、配列内のパスのいずれかが .dll のファイル名拡張子を持たない場合、preemptively は失敗します。 
   
 ## <a name="see-also"></a>関連項目
 

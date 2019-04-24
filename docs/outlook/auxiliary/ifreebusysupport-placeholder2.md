@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: cf176321-b9ff-9b47-b785-da7da5e77536
-description: このメンバーは、プレース ホルダーではサポートされていません。
-ms.openlocfilehash: 8c52d724a21871d8899547d0c74444fd032cac2e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このメンバーはプレースホルダーで、サポートされていません。
+ms.openlocfilehash: b0150e0f43a1a115d45a7abe77a3852c31b02771
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319356"
 ---
 # <a name="ifreebusysupportplaceholder2"></a>IFreeBusySupport::Placeholder2
 
-このメンバーは、プレース ホルダーではサポートされていません。
+このメンバーはプレースホルダーで、サポートされていません。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -28,14 +28,14 @@ HRESULT Placeholder2();
 
 ## <a name="return-values"></a>戻り値
 
-常に S_OK、ため、このメンバーのプレース ホルダーは、サポートされています。
+このメンバーはプレースホルダーで、サポートされていないため、常に S_OK。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このメンバーには、S_OK を返す必要があります。
+このメンバーは S_OK を返す必要があります。
   
 ## <a name="see-also"></a>関連項目
 
-- [定数 (空き時間情報の API)](constants-free-busy-api.md)  
+- [定数 (空き時間情報 API)](constants-free-busy-api.md)  
 - [IFreeBusySupport::LoadFreeBusyData](ifreebusysupport-loadfreebusydata.md)
 

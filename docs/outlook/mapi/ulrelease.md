@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 95db96ef-f95f-41da-b216-f717c23bffd2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 46c37dbcf1aa3b0469281b8db99f210bda0918be
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 288e34a159db48b1344524b87f02b045259f1565
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315296"
 ---
 # <a name="ulrelease"></a>UlRelease
 
@@ -25,13 +25,13 @@ ms.locfileid: "22582302"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**** OLE メソッドを呼び出す別の方法を提供します。 
+OLE メソッド**IUnknown:: Release**を呼び出す別の方法を提供します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 ULONG UlRelease(
@@ -43,9 +43,9 @@ ULONG UlRelease(
 
  _パンク_
   
-> [in]インターフェイスへのポインターは、任意の MAPI インターフェイスに、 **IUnknown**インターフェイスから派生します。 
+> 順番**IUnknown**インターフェイスから派生したインターフェイスへのポインター、つまり任意の MAPI インターフェイス。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -53,16 +53,16 @@ S_OK
     
 MAPI_E_CALL_FAILED 
   
-> 予期しない、または不明な発生元のエラーでは、操作を完了できませんでした。
+> 予期しないまたは不明な配信元のエラーにより、操作が完了しませんでした。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-参照カウントは、既存のポインターを解放するオブジェクトの数です。 
+参照カウントは、解放されるオブジェクトへの既存のポインターの数です。 
   
-_Punk_パラメーターが NULL の場合は、**リ ス**を呼び出さずに、関数は直ちに戻ります
+_punk_パラメーターが NULL の場合、この関数は**IUnknown:: Release**を呼び出すことなく、すぐに戻ります。
   
- **UlRelease**は、リリースするオブジェクトの参照カウントと同じにすることができます**が**メソッドによって返される値を返します。 
+ **ulrelease**は、 **IUnknown:: Release**メソッドによって返された値を返します。これは、解放されるオブジェクトの参照カウントと同じにすることができます。 
   
-**リ ス**の詳細については、 [IUnknown インターフェイスを実装する](implementing-the-iunknown-interface.md)を参照してください。 
+**iunknown:: Release**の詳細については、「 [iunknown インターフェイスを実装する](implementing-the-iunknown-interface.md)」を参照してください。 
   
 

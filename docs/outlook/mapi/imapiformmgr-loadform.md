@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 5ca500c3-c737-45a5-b0fc-473b75c1d68d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3e758acfa1cf0c11be666dd730d9bf589d2e9d77
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7e445646477ad1fc56b41141b541358d9b9f9616
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321696"
 ---
 # <a name="imapiformmgrloadform"></a>IMAPIFormMgr::LoadForm
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームを開くには既存のメッセージを開始します。
+既存のメッセージを開くフォームを開始します。
   
 ```cpp
 HRESULT LoadForm(
@@ -45,59 +45,59 @@ HRESULT LoadForm(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulUIParam_
+ _uluiparam_
   
-> [in]フォームを開いたときに表示される進行状況のインジケーターの親ウィンドウへのハンドル。 _UlFlags_パラメーターで MAPI_DIALOG フラグが設定されていない場合、 _ulUIParam_パラメーターは無視されます。 
+> 順番フォームが開かれている間に表示される進行状況インジケーターの親ウィンドウへのハンドル。 _uluiparam_パラメーターは、 _ulflags_パラメーターで MAPI_DIALOG フラグが設定されていない場合は無視されます。 
     
  _ulFlags_
   
-> [in]フォームを開く方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番フォームを開く方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_DIALOG 
   
-> ステータスを指定するか、詳細についてはユーザーの入力を求めるのためのユーザー インターフェイスを表示します。 このフラグが設定されていない場合、ユーザー インターフェイスは表示されません。
+> 状態を提供するユーザーインターフェイスを表示します。詳細については、ユーザーに確認します。 このフラグが設定されていない場合、ユーザーインターフェイスは表示されません。
     
 MAPIFORM_EXACTMATCH 
   
-> 完全に一致するメッセージ クラス文字列のみを解決する必要があります。
+> 完全一致のメッセージクラス文字列のみを解決する必要があります。
     
- _lpszMessageClass_
+ _lpszmessageclass_
   
-> [in]読み込まれるメッセージのメッセージ クラスの名前を示す文字列へのポインター。 _LpszMessageClass_パラメーターに NULL を渡した場合、メッセージ クラスは、 _pmsg_パラメーターで指定されたメッセージから判断されます。 
+> 順番読み込むメッセージのメッセージクラスの名前を示す文字列へのポインター。 NULL が_lpszmessageclass_パラメーターで渡された場合、メッセージクラスは_pmsg_パラメーターによって示されるメッセージから判断されます。 
     
- _ulMessageStatus_
+ _ulmessagestatus_
   
-> [in]メッセージの状態に関する情報を提供するメッセージの**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) のプロパティからコピーしたクライアント定義またはプロバイダー定義のフラグのビットマスクです。 _LpszMessageClass_は、NULL 以外の場合、 _ulMessageStatus_パラメーターを設定する必要があります。それ以外の場合、 _ulMessageStatus_は無視されます。 
+> 順番メッセージの状態に関する情報を提供する、メッセージの**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) プロパティからコピーされた、クライアント定義またはプロバイダー定義のフラグのビットマスク。 _lpszmessageclass_が NULL 以外の場合は_ulmessagestatus_パラメーターを設定する必要があります。それ以外の場合、 _ulmessagestatus_は無視されます。 
     
- _ulMessageFlags_
+ _ulmessageflags_
   
-> [in]フラグは、 **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) のプロパティ、メッセージの現在の状態を示すメッセージのコピーのビットマップへのポインター。 _LpszMessageClass_は、NULL 以外の場合、 _ulMessageFlags_パラメーターを設定する必要があります。それ以外の場合、 _ulMessageFlags_は無視されます。 
+> 順番メッセージの現在の状態を示す、メッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティからコピーされたフラグのビットマスクへのポインター。 _lpszmessageclass_が NULL 以外の場合は、 _ulmessageflags_パラメーターを設定する必要があります。それ以外の場合、 _ulmessageflags_は無視されます。 
     
- _pFolderFocus_
+ _pfolderfocus_
   
-> [in]直接メッセージを含むフォルダーへのポインター。 _PFolderFocus_パラメーターは、(たとえば、メッセージは、別のメッセージに埋め込まれている) 場合、このようなフォルダーが存在しない場合、NULL にすることができます。 
+> 順番直接メッセージを含むフォルダーへのポインター。 このようなフォルダーが存在しない場合 (たとえば、メッセージが別のメッセージに埋め込まれている場合) は、 _pfolderfocus_パラメーターを NULL にすることができます。 
     
- _pMessageSite_
+ _pメッセージ ite_
   
-> [in]メッセージのメッセージのサイトへのポインター。
+> 順番メッセージのメッセージサイトへのポインター。
     
  _pmsg_
   
-> [in]メッセージへのポインター。
+> 順番メッセージへのポインター。
     
- _pViewContext_
+ _pviewcontext_
   
-> [in]メッセージのビュー コンテキストへのポインター。 _PViewContext_パラメーターは NULL にできます。 
+> 順番メッセージのビューコンテキストへのポインター。 _pviewcontext_パラメーターは NULL にすることができます。 
     
  _riid_
   
-> [in]返信されたフォーム オブジェクトに使用するインターフェイスのインターフェイス id (IID)。 _Riid_パラメーターを NULL にする必要がありますはできません。 
+> 順番返される form オブジェクトに対して使用されるインターフェイスのインターフェイス識別子 (IID)。 _riid_パラメーターを NULL にすることはできません。 
     
  _ppvObj_
   
-> [out]返されたインターフェイスへのポインターへのポインター。
+> 読み上げ返されるインターフェイスへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -105,29 +105,29 @@ S_OK
     
 MAPI_E_NO_INTERFACE 
   
-> フォームは、要求されたインターフェイスをサポートしていません。
+> フォームでは、要求されたインターフェイスがサポートされていません。
     
 MAPI_E_NOT_FOUND 
   
-> _LpszMessageClass_に渡されるメッセージ クラスでは、フォーム ライブラリ内の任意のフォームのメッセージ クラスが一致しません。 
+> _lpszmessageclass_で渡されるメッセージクラスが、フォームライブラリ内のフォームのメッセージクラスと一致しません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォームの閲覧者は、既存のメッセージのフォームを開くに**IMAPIFormMgr::LoadForm**メソッドを呼び出します。 **LoadForm**フォーム オブジェクトを開きます、フォーム オブジェクトにメッセージを読み込みます、必要に応じて、適切なビューのコンテキストを設定し、フォーム オブジェクトの要求されたインターフェイスを返します。 
+フォーム閲覧者は、 **imapiformmgr:: loadform**メソッドを呼び出して、既存のメッセージのフォームを開きます。 **loadform**は form オブジェクトを開き、form オブジェクトにメッセージを読み込み、必要に応じて適切なビューコンテキストを設定し、form オブジェクトの要求されたインターフェイスを返します。 
   
-_PFolderFocus_パラメーターは、メッセージを含むフォルダーを指します。 メッセージは、別のメッセージに埋め込まれている場合_pFolderFocus_は NULL である必要があります。 
+_pfolderfocus_パラメーターは、メッセージを含むフォルダーを指します。 メッセージが別のメッセージに埋め込まれている場合、 _pfolderfocus_は NULL である必要があります。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-実装がメッセージの**PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))、 **PR_MSG_STATUS** **PR_MESSAGE_FLAGS から、メッセージのメッセージ クラス、状態、およびフラグを取得する場合は_lpszMessageClass_に NULL が渡されると、** プロパティ。 _LpszMessageClass_のメッセージ クラスの文字列を指定すると、実装は_ulMessageStatus_と_ulMessageFlags_の値を使用する必要があります。
+_lpszmessageclass_で NULL が渡されると、メッセージのメッセージクラス、状態、およびフラグがメッセージの**PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))、 **PR_MSG_STATUS** 、および PR_MESSAGE_FLAGS から取得されます。 **** プロパティ。 メッセージクラスの文字列が_lpszmessageclass_で提供されている場合、この実装では_ulmessagestatus_および_ulmessagestatus_の値を使用する必要があります。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIFormFunctions.cpp  <br/> |OpenMessageNonModal  <br/> |MFCMAPI では、 **IMAPIFormMgr::LoadForm**メソッドを使用して、表示する前にフォームをロードします。  <br/> |
+|MAPIFormFunctions  <br/> |openmessagenonmodal  <br/> |mfcmapi は、 **imapiformmgr:: loadform**メソッドを使用して、表示する前にフォームを読み込みます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

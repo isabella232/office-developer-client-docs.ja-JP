@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 0afceb1f-9086-4cc9-8ce4-fb9256a81a9c
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 8e1f15ae354894aede4e8418e6428d0524ccb70d
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316485"
 ---
 # <a name="testing-and-debugging"></a>テストとデバッグ
 
@@ -21,15 +21,15 @@ ms.locfileid: "25383661"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-テスト戦略は、クライアントまたはサービス プロバイダーを開発しているかどうかによって異なります。 クライアント アプリケーションは、動作する 1 つまたは複数のサービス プロバイダーを必要とするため、さまざまなサービス ・ プロバイダーのセットがある環境でクライアントをテストしてください。
+テスト方法は、クライアントまたはサービスプロバイダーを開発しているかどうかによって異なります。 クライアントアプリケーションでは、1つ以上のサービスプロバイダーが動作する必要があるため、さまざまなサービスプロバイダーのセットを備えた環境でクライアントをテストする必要があります。
   
-ただし、サービス ・ プロバイダーの場合は、他のプロバイダーと統合することの前に単独でテストしてください。 MAPI には、特定の種類のサービス ・ プロバイダーの機能をテストするツールが用意されています。 [MFCMAPI](https://go.microsoft.com/fwlink/?LinkId=124154)サンプル アプリケーションは、アドレス帳プロバイダーの機能をテストする方法を示していて、メッセージとの連携がプロバイダーを格納します。 
+ただし、サービスプロバイダーは、他のプロバイダーと統合する前に、分離してテストする必要があります。 MAPI は、特定の種類のサービスプロバイダーの機能をテストするためのツールを提供します。 [mfcmapi](https://go.microsoft.com/fwlink/?LinkId=124154)サンプルアプリケーションは、アドレス帳プロバイダーの機能をテストし、メッセージストアプロバイダーと連携する方法を示しています。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI �v���O���~���O�̊T�v](mapi-programming-overview.md)
+[MAPI プログラミングの概要](mapi-programming-overview.md)
   
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
 

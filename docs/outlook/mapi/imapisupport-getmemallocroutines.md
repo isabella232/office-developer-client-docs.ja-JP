@@ -1,5 +1,5 @@
 ---
-title: IMAPISupportGetMemAllocRoutines
+title: imapisupportgetmemallocroutines
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 52d45876-367b-42da-b99a-29cdb71fa5a9
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: c3ec99e4e284ca2cdc4fba8fcf53a6c5741594cb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 680fd16771b62d705808a04d768115a076e54750
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316563"
 ---
 # <a name="imapisupportgetmemallocroutines"></a>IMAPISupport::GetMemAllocRoutines
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI メモリの割り当てと割り当て解除関数 ([MAPIAllocateBuffer](mapiallocatebuffer.md)、 [MAPIAllocateMore](mapiallocatemore.md)、および[MAPIFreeBuffer](mapifreebuffer.md)) のアドレスを取得します。
+MAPI メモリ割り当て関数および割り当て解除関数 ([MAPIAllocateBuffer](mapiallocatebuffer.md)、 [MAPIAllocateMore](mapiallocatemore.md)、および[MAPIFreeBuffer](mapifreebuffer.md)) のアドレスを取得します。
   
 ```cpp
 HRESULT GetMemAllocRoutines(
@@ -37,27 +37,27 @@ HRESULT GetMemAllocRoutines(
 
 ## <a name="parameters"></a>パラメーター
 
- _lppAllocateBuffer_
+ _lppallocatebuffer_
   
-> [out]**MAPIAllocateBuffer**関数へのポインターへのポインター。 **MAPIAllocateBuffer**は、メモリを割り当てます。 
+> 読み上げ**MAPIAllocateBuffer**関数へのポインターへのポインター。 **MAPIAllocateBuffer**はメモリを割り当てます。 
     
  _lppAllocateMore_
   
-> [out]**MAPIAllocateMore**関数へのポインターへのポインター。 **MAPIAllocateMore**は、 **MAPIAllocateBuffer**を使用して割り当てられているメモリの追加のメモリを割り当てます。
+> 読み上げ**MAPIAllocateMore**関数へのポインターへのポインター。 **MAPIAllocateMore**は、 **MAPIAllocateBuffer**を使用して最初に割り当てられたメモリの追加メモリを割り当てます。
     
- _lppFreeBuffer_
+ _lppfreebuffer_
   
-> [out]**MAPIFreeBuffer**関数へのポインターへのポインター。 **MAPIFreeBuffer**は、メモリを解放します。 
+> 読み上げ**MAPIFreeBuffer**関数へのポインターへのポインター。 **MAPIFreeBuffer**はメモリを解放します。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > 関数のアドレスが正常に返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-サポートのすべてのオブジェクトの**IMAPISupport::GetMemAllocRoutines**メソッドを実装します。 サービス プロバイダーは、 [ABProviderInit](abproviderinit.md)、 [MSProviderInit](msproviderinit.md)、( [XPProviderInit](xpproviderinit.md)) は、その初期化関数に渡される 3 つのメモリ割り当て関数のアドレスを取得するのには**GetMemAllocRoutines**を呼び出します。 
+**imapisupport:: getmemallocroutines**メソッドは、すべてのサポートオブジェクトに実装されています。 サービスプロバイダーは、 **getmemallocroutines**を呼び出して、初期化関数 ( [abproviderinit](abproviderinit.md)、 [msproviderinit](msproviderinit.md)、または[xps プロバイダー init](xpproviderinit.md)) に渡される3つのメモリ割り当て関数のアドレスを取得します。 
   
 ## <a name="see-also"></a>関連項目
 

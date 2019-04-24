@@ -8,17 +8,17 @@ f1_keywords:
 - Vis_DSS.chm82251452
 localization_priority: Normal
 ms.assetid: 4864ebc2-fee6-2415-7c59-e0af8611f8d6
-description: Cellreference の値は、エラーの種類は、かどうかに TRUE を返します。それ以外の場合、FALSE を返します。 ISERROR 関数は、別のセルを参照する数式で使用されます。
-ms.openlocfilehash: c93801f5d61e45be5d178027405ead3aa129654d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: cellreference の値がエラー型の場合は TRUE を返します。それ以外の場合は、FALSE を返します。 ISERROR 関数は、別のセルを参照する数式で使用されます。
+ms.openlocfilehash: a07b2345858e36dc2e4514d7e4f0f0d653491b50
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317893"
 ---
 # <a name="iserror-function-visioshapesheet"></a>ISERROR 関数 (VisioShapeSheet)
 
-_Cellreference_の値は、エラーの種類は、かどうかに TRUE を返します。それ以外の場合、FALSE を返します。 ISERROR 関数は、別のセルを参照する数式で使用されます。 
+_cellreference_の値がエラー型の場合は TRUE を返します。それ以外の場合は、FALSE を返します。 ISERROR 関数は、別のセルを参照する数式で使用されます。 
   
 ## <a name="syntax"></a>構文
 
@@ -28,14 +28,14 @@ ISERROR (* * *cellreference* * *)
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _cellreference_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |セルの参照を指定します。  <br/> |
+| _cellreference_ <br/> |必須  <br/> |**String** <br/> |セルの参照を指定します。  <br/> |
    
 ## <a name="example-1"></a>例 1
 
 |**Cell**|**Formula**|**戻り値**|
 |:-----|:-----|:-----|
-|Scratch.A1  <br/> |=NA( )  <br/> |#N/A!  <br/> |
-|Scratch.B1  <br/> |=ISERROR(Scratch.A1)  <br/> |TRUE  <br/> |
+|最初の A1  <br/> |=NA( )  <br/> |#N/A!  <br/> |
+|最初の B1  <br/> |= ISERROR (最初に A1)  <br/> |TRUE  <br/> |
    
 ISERROR 関数は #N/A! エラーを認識するため、TRUE を返します。#N/A! エラー以外のすべてのエラー タイプを検出する場合は、ISERR を使用できます。
   
@@ -43,8 +43,8 @@ ISERROR 関数は #N/A! エラーを認識するため、TRUE を返します。
 
 |**Cell**|**Formula**|**戻り値**|
 |:-----|:-----|:-----|
-|Scratch.X1  <br/> |="House"  <br/> |#VALUE!  <br/> |
-|Scratch.B1  <br/> |=ISERROR(Scratch.X1)  <br/> |TRUE  <br/> |
+|最初の X1  <br/> |= "House"  <br/> |#VALUE!  <br/> |
+|最初の B1  <br/> |= ISERROR (最初の X1)  <br/> |TRUE  <br/> |
    
 ISERROR 関数は #VALUE! エラーを認識するため、TRUE を返します。#VALUE! エラーを基に式を作成するには、ISERRVALUE 関数を使用します。
   

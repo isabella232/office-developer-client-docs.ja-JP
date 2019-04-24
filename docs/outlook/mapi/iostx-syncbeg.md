@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4a935df3-98c4-2742-206e-4e16eda7b9bc
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 37d37d6402b165ea57626fe4791cfb1a4bcf76cc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: ae4497295328155780fc5208d1699169698e02d8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317172"
 ---
 # <a name="iostxsyncbeg"></a>IOSTX::SyncBeg
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-特定の状態の同期をローカル ストアを準備し、複製に必要な情報を取得します。
+特定の状態の同期用にローカルストアを準備し、レプリケートするために必要な情報を取得します。
   
 ```cpp
 HRESULT SyncBeg( 
@@ -36,9 +36,9 @@ HRESULT SyncBeg(
 
 ## <a name="parameters"></a>パラメーター
 
- _uiSync_
+ _uisync_
   
->  [in]ローカル ストアが入力されている状態です。 状態識別子の一覧は次のとおりです。 
+>  順番ローカルストアが入力する状態。 state 識別子のリストを次に示します。 
     
 LR_SYNC_IDLE
   
@@ -86,7 +86,7 @@ LR_SYNC_DOWNLOAD_TABLE
     
  _ppv_
   
->  [内] と [出力] を入力する状態に対応するデータ構造へのポインター。 
+>  [in]/[out] 入力する状態に対応するデータ構造体へのポインター。 
     
 [DNHIER](dnhier.md)
   
@@ -100,7 +100,7 @@ LR_SYNC_DOWNLOAD_TABLE
   
 > 
     
-[SYNC](sync.md)
+[頻度](sync.md)
   
 > 
     
@@ -148,11 +148,11 @@ LR_SYNC_DOWNLOAD_TABLE
   
 > 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアントでは、同期の結果を設定するのには**[IOSTX::SetSyncResult](iostx-setsyncresult.md)** を呼び出すし、その状態を終了するのには**[IOSTX::SyncEnd](iostx-syncend.md)** を呼び出します。 クライアントは、状態が正常にレプリケートされたかどうかを判断するために**IOSTX::SyncBeg**が呼び出されるたびに、 **[IOSTX::SyncEnd](iostx-syncend.md)** を呼び出す必要があります。 これが判明すると、Outlook の内部の状態をクリーンアップするのには開始できます。 
+クライアントは**[iostx:: SetSyncResult](iostx-setsyncresult.md)** を呼び出して、同期の結果を設定した後、 **[iostx:: syncend](iostx-syncend.md)** を呼び出してその状態を終了します。 クライアントは、状態が正常にレプリケートされたかどうかを判断するために、 **iostx** :: SyncBeg への各呼び出しに**[iostx:: syncend](iostx-syncend.md)** を呼び出す必要があります。 これが決定されると、Outlook は内部状態のクリーンアップを開始できるようになります。 
   
-[Out] これらの構造体の大部分が含まれている/[in] については、Outlook が Outlook に情報を渡すには、クライアント、およびクライアントに情報を渡すことを許可します。 クライアントは、 **IOSTX::SyncBeg**を呼び出して、Outlook は特定の状態のデータ構造体を割り当てるし、その状態の情報を初期化しています。 [Out] の情報です。 、状態のときに、クライアントは、対応するデータ構造体をその状態を更新します。 [In] これは、情報です。 
+これらの構造のほとんどには [out]/[in] 情報が含まれており、outlook が情報をクライアントに渡し、クライアントが outlook に情報を渡すことができます。 クライアントが**iostx:: SyncBeg**を呼び出すと、Outlook は指定された状態のデータ構造を割り当て、その状態の情報で初期化します。 これは、[out] の情報です。 状態になっている間、クライアントは、その状態に対応するデータ構造を更新します。 これは [入力] 情報です。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -173,5 +173,5 @@ LR_SYNC_DOWNLOAD_TABLE
 [IOSTX : IUnknown](iostxiunknown.md)
 
 
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
 

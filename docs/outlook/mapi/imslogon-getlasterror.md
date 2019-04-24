@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3e296f6d-4833-4c68-9b84-df0b09878474
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 811be1f6506cee092e487af3bd43bdf6e136d4eb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 472502d0f033370b06a69596944350152ab794f9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317298"
 ---
 # <a name="imslogongetlasterror"></a>IMSLogon::GetLastError
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ ストアのオブジェクトに対して発生した最後のエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。 
+メッセージストアオブジェクトに対して発生した最後のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,21 +39,21 @@ HRESULT GetLastError(
 
  _hResult_
   
-> [in]メッセージ ストア オブジェクトの以前のメソッドの呼び出しで生成されたエラー値を含む HRESULT のデータ型です。
+> 順番以前のメソッド呼び出しでメッセージストアオブジェクトに対して生成されたエラー値を含む HRESULT データ型。
     
  _ulFlags_
   
-> [in]返される文字列の種類を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> _LppMAPIError_パラメーターに返された**MAPIERROR**構造体の文字列は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。 
+> _lppMAPIError_パラメーターで返される**MAPIERROR**構造体の文字列は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。 
     
  _lppMAPIError_
   
-> [out]エラーのバージョン、コンポーネント、およびコンテキストの情報を格納する返された**MAPIERROR**構造体へのポインターへのポインター。 返すには、 **MAPIERROR**がない場合、 _lppMAPIError_パラメーターを NULL に設定できます。 
+> 読み上げエラーのバージョン、コンポーネント、およびコンテキスト情報を含む、返された**MAPIERROR**構造体へのポインターへのポインター。 返す**MAPIERROR**が存在しない場合は、 _lppMAPIError_パラメーターを NULL に設定できます。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -61,15 +61,15 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> か、MAPI_UNICODE フラグが設定された実装は Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、実装は、Unicode だけをサポートしています。
+> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-最後に、メッセージ ストアのオブジェクトのメソッドの呼び出しから返されるエラーに関するユーザーへのメッセージに表示するのに情報を取得するために**IMSLogon::GetLastError**メソッドを使用します。 
+**IMSLogon:: GetLastError**メソッドを使用すると、メッセージにメッセージとして表示される情報を取得するために、メッセージストアオブジェクトに対するメソッド呼び出しから返された最後のエラーに関する情報を取得します。 
   
-返された**MAPIERROR**構造体は、MAPI によって割り当てられたすべてのメモリを解放するには、クライアント アプリケーションにのみ、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出す必要があります。 
+返された**MAPIERROR**構造に対して MAPI によって割り当てられたすべてのメモリを解放するには、クライアントアプリケーションは[MAPIFreeBuffer](mapifreebuffer.md)関数のみを呼び出す必要があります。 
   
-**GetLastError**からの戻り値は、 **MAPIERROR**を使用するアプリケーションの S_OK をする必要があります。 戻り値が S_OK の場合であって、 **MAPIERROR**が返されません。 実装は、最後のエラーが特定できない場合、または、 **MAPIERROR**は、エラー、 **GetLastError**のポインターを返します NULL に_lppMAPIError_の代わりには使用できません。 
+アプリケーションが**MAPIERROR**を使用するには、 **GetLastError**の戻り値が S_OK である必要があります。 戻り値が S_OK の場合でも、 **MAPIERROR**は返されない可能性があります。 最後のエラーが発生したかどうかを実装が判断できない場合、またはそのエラーに対して**MAPIERROR**が使用できない場合、 **GetLastError**は_lppMAPIError_で NULL へのポインターを返します。 
   
 ## <a name="see-also"></a>関連項目
 

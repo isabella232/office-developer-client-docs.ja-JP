@@ -6,27 +6,27 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 48ab98bd-2966-443c-b3db-befeb271550f
-description: 整数値で、図形に適用されているテーマのコネクタの設定を決定します。
-ms.openlocfilehash: 3d918a7e8cc9c4134ccf25894367b24eaccf43b4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 図形に適用されるテーマのコネクタスキームを整数で指定します。
+ms.openlocfilehash: 77d16632db63d187477ba62a1a6f4b9319e156fc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319713"
 ---
 # <a name="connectorschemeindex-cell-theme-properties-section"></a>[ConnectorSchemeIndex] セル ([テーマのプロパティ] セクション)
 
-整数値で、図形に適用されているテーマのコネクタの設定を決定します。 
+図形に適用されるテーマのコネクタスキームを整数で指定します。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**セル**要素の**N**属性の値によって、別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ **ConnectorSchemeIndex** ] セルへの参照を取得、次のように使用します。 
+別の数式から、 **cell**要素の**N**属性の値によって、または**CellsU**プロパティを使用したプログラムから、名前によって [ **[connectorschemeindex]** ] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | ConnectorSchemeIndex  <br/> |
+| セル名:  <br/> | [connectorschemeindex]  <br/> |
    
-プログラムから、インデックスによって [ **ConnectorSchemeIndex** ] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ **[connectorschemeindex]** ] セルへの参照を取得するには、 **CellsSRC**プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

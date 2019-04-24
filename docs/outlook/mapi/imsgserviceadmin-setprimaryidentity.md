@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 763cab41-f6f6-4cb0-8cb8-170fdf2a92e6
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 92807cb216e8a7f4eef6b4d95a8d12826b176e6e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: b237a57dfea020c7bfcb66d49d43428c1f6506c2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317361"
 ---
 # <a name="imsgserviceadminsetprimaryidentity"></a>IMsgServiceAdmin::SetPrimaryIdentity
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ サービス プロファイルのプライマリ id のサプライヤーになることを指定します。
+メッセージサービスがプロファイルのプライマリ id のサプライヤーであることを指定します。
   
 ```cpp
 HRESULT SetPrimaryIdentity(
@@ -36,27 +36,27 @@ HRESULT SetPrimaryIdentity(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpUID_
+ _lpuid_
   
-> [in]主の id を指定するのにはメッセージ サービスの一意の識別子を含む[MAPIUID](mapiuid.md)構造体または**SetPrimaryIdentity**が現在の id をクリアする必要があることを示す、NULL へのポインター。 
+> 順番プライマリ id を指定するメッセージサービスの一意の識別子を含む[MAPIUID](mapiuid.md)構造体へのポインター。または NULL。これは、 **setprimaryidentity**が現在の id をクリアする必要があることを示します。 
     
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> メッセージ サービスは、プライマリ id の提供元を正常に割り当てられました。
+> メッセージサービスに、プライマリ id のサプライヤーが正常に割り当てられました。
     
 MAPI_E_NO_ACCESS 
   
-> **SetPrimaryIdentity**では、SERVICE_NO_PRIMARY_IDENTITY フラグの**PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) プロパティを設定するメッセージ サービスを指定しようとしています。
+> **setprimaryidentity**は、 **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) プロパティに SERVICE_NO_PRIMARY_IDENTITY フラグが設定されたメッセージサービスを指定しようとしました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMsgServiceAdmin::SetPrimaryIdentity**メソッドは、プロファイルのプライマリ id の提供元として、メッセージ サービスを確立します。 プライマリ id は、通常はメッセージ サービスにログオンしているユーザーです。 3 つのプロパティによって表されます。 
+**IMsgServiceAdmin:: setprimaryidentity**メソッドは、プロファイルのプライマリ id のサプライヤーとしてメッセージサービスを確立します。 プライマリ id は、通常、メッセージサービスにログオンしているユーザーです。 次の3つのプロパティで表されます。 
   
 - **PR_IDENTITY_DISPLAY**([PidTagIdentityDisplay](pidtagidentitydisplay-canonical-property.md))
     
@@ -64,11 +64,11 @@ MAPI_E_NO_ACCESS
     
 - **PR_IDENTITY_SEARCH_KEY**([PidTagIdentitySearchKey](pidtagidentitysearchkey-canonical-property.md))
     
-指定されたメッセージ サービスですべてのサービス プロバイダーは、表示名、エントリ id、およびプライマリ id を提供するメッセージングのユーザーのキーを検索するにはこれら 3 つのプロパティを設定します。 クライアントは、 [IMAPISession::QueryIdentity](imapisession-queryidentity.md)メソッドを呼び出すことによって、プライマリ id のエントリ id を取得できます。 
+指定したメッセージサービスのすべてのサービスプロバイダーは、これら3つのプロパティを、プライマリ id を提供するメッセージングユーザーの表示名、エントリ識別子、および検索キーに設定します。 クライアントは、 [imapisession:: queryidentity](imapisession-queryidentity.md)メソッドを呼び出すことによって、プライマリ id のエントリ id を取得できます。 
   
-主の id を提供するメッセージ サービスのメンバーであるすべてのプロバイダーの STATUS_PRIMARY_IDENTITY とメッセージ サービスの SERVICE_PRIMARY_IDENTITY、 **PR_RESOURCE_FLAGS**プロパティが設定されています。 サービス プロバイダーは、メッセージ サービスのプライマリ id を提供できません、 **PR_RESOURCE_FLAGS**を STATUS_NO_PRIMARY_IDENTITY に設定します。 **SetPrimaryIdentity**は、SERVICE_NO_PRIMARY_IDENTITY をプライマリ id を指定していないが、各メッセージ サービスの**PR_RESOURCE_FLAGS**プロパティを設定します。 
+**PR_RESOURCE_FLAGS**プロパティは、プライマリ id を提供するメッセージサービスのメンバーであるすべてのプロバイダーの STATUS_PRIMARY_IDENTITY、およびメッセージサービスの SERVICE_PRIMARY_IDENTITY に設定されます。 サービスプロバイダーがメッセージサービスのプライマリ id を提供できない場合、 **PR_RESOURCE_FLAGS**は STATUS_NO_PRIMARY_IDENTITY に設定されます。 **setprimaryidentity**は、プライマリ id を指定していない各メッセージサービスの**PR_RESOURCE_FLAGS**プロパティを SERVICE_NO_PRIMARY_IDENTITY に設定します。 
   
-クライアントがサービスにログオンすると、MAPI には詳細情報が含まれているメッセージの各サービス プロバイダーは、ユーザーごとの id を確立できます。 ただし、MAPI は MAPI セッションごとに複数のサービス プロバイダーへの接続をサポートするためは全体として、MAPI セッションの特定のユーザーの id の定義をしっかりユーザーの id は、どのサービスが含まれているによって異なります。 クライアントは、そのユーザーのプライマリ id として、ユーザーのメッセージ サービスによって確立された多くのユーザーのいずれかを指定するのには**SetPrimaryIdentity**を呼び出すことができます。 
+MAPI が情報を持っている各メッセージサービスプロバイダーは、クライアントがサービスにログオンしたときに、各ユーザーの id を確立できます。 ただし、mapi は各 mapi セッションに対して複数のサービスプロバイダーへの接続をサポートしているため、mapi セッション全体で特定のユーザーの id を定義することはありません。ユーザーの id は、関係するサービスによって異なります。 クライアントは**setprimaryidentity**を呼び出して、そのユーザーのプライマリ id として、メッセージサービスによってユーザーに対して確立された複数の id の1つを指定できます。 
   
 ## <a name="see-also"></a>関連項目
 

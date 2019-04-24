@@ -13,11 +13,11 @@ api_type:
 ms.assetid: cbf34dd6-7733-47f6-9c41-9d82656ca9dc
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: f5dcf90e8224f1bf2e96042a7344109293cc2c3f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319223"
 ---
 # <a name="pidtagattachfilename-canonical-property"></a>PidTagAttachFilename 標準プロパティ
 
@@ -25,7 +25,7 @@ ms.locfileid: "25385712"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-添付ファイルのベース ファイル名とパスを除外する拡張子が含まれています。
+添付ファイルの基本ファイル名と拡張子を含みます (パスを除く)。
   
 |||
 |:-----|:-----|
@@ -34,57 +34,57 @@ ms.locfileid: "25385712"
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-オブジェクトの添付ファイルが**PR_ATTACH_METHOD**の**ATTACH_BY_VALUE**、 **ATTACH_BY_REFERENCE**、 **ATTACH_BY_REF_RESOLVE**、および**ATTACH_BY_REF_ONLY**の値に関係するこれらのプロパティを公開することをお勧めします。([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) のプロパティです。 **PR_ATTACH_FILENAME**と関連付けられているプロパティは、必要な場合これらの値のいずれかを使用します。 
+attachment オブジェクトは、これらのプロパティを公開することをお勧めします。これらのプロパティは、 **PR_ATTACH_METHOD**の**ATTACH_BY_VALUE**、 **ATTACH_BY_REFERENCE**、 **ATTACH_BY_REF_RESOLVE**、および**ATTACH_BY_REF_ONLY**の値に関連しています。([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) プロパティ。 これらの値のいずれかを使用する場合は、 **PR_ATTACH_FILENAME**および関連するプロパティが必要です。 
   
-**PR_ATTACH_EXTENSION** ([PidTagAttachExtension](pidtagattachextension-canonical-property.md)) のプロパティが指定されていない場合は、ファイル名の拡張子を指定して、添付ファイルを保存するため、これらのプロパティを既定のファイル名として使用できます。 
+これらのプロパティは、添付ファイルを保存するための推奨されるファイル名として使用でき、 **PR_ATTACH_EXTENSION** ([PidTagAttachExtension](pidtagattachextension-canonical-property.md)) プロパティが指定されていない場合はファイル名拡張子を指定します。 
   
-ファイル名は、8 文字および 3 文字の拡張子に制限されます。 長いファイル名をサポートしているプラットフォームでは、このプロパティと**PR_ATTACH_LONG_FILENAME** ([PidTagAttachLongFilename](pidtagattachlongfilename-canonical-property.md)) のプロパティの両方を設定します。 
+ファイル名が8文字に制限され、3文字の拡張子になります。 長いファイル名をサポートするプラットフォームでは、このプロパティと**PR_ATTACH_LONG_FILENAME** ([PidTagAttachLongFilename](pidtagattachlongfilename-canonical-property.md)) プロパティの両方を設定します。 
   
-MAPI の機能をファイル名に、および米国規格協会 (ANSI) 文字セットで、その他の文字列が渡されます。 正規機器製造元 (OEM) 文字セットでファイル名を使用するクライアント アプリケーションする必要があります ANSI に変換する、MAPI を呼び出す前にします。 
+MAPI は、米国規格協会 (ANSI) 文字セットで、ファイル名とそれに渡されるその他の文字列に対してのみ機能します。 OEM (相手先ブランド供給) 文字セットでファイル名を使用するクライアントアプリケーションは、MAPI を呼び出す前に、それらを ANSI に変換する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルのオブジェクトを処理します。
+> メッセージと添付ファイルオブジェクトを処理します。
     
-[[MS OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
-> メッセージ オブジェクト インターネット標準の電子メールの表記規則からに変換します。
+> インターネット標準の電子メールの規則からメッセージオブジェクトに変換します。
     
-[[MS OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
+[[OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
   
-> 権限管理でエンコードされたメッセージのプロパティを指定します。
+> 権限が管理されたエンコード済みメッセージのプロパティを指定します。
     
-[[MS OXOSMIME]](https://msdn.microsoft.com/library/bb17d126-d211-462c-8cd3-454ed33c8746%28Office.15%29.aspx)
+[[OXOSMIME]](https://msdn.microsoft.com/library/bb17d126-d211-462c-8cd3-454ed33c8746%28Office.15%29.aspx)
   
-> S/MIME 署名され、暗号化メッセージのプロパティを指定します。
+> S/MIME で署名および暗号化されたメッセージのプロパティを指定します。
     
-[[MS OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
+[[OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
   
-> エンコードし、メッセージと添付ファイルのオブジェクトを効率的なストリーム形式をデコードします。
+> メッセージと添付ファイルオブジェクトをエンコードし、効率的なストリーム表現にデコードします。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

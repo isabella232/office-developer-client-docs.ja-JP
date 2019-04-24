@@ -13,11 +13,11 @@ api_type:
 ms.assetid: fe87eb3d-21d1-45bb-b848-e141ce1be6a0
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3bc475292e47a9ad8dd9565e17640ef95e7b3c76
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316682"
 ---
 # <a name="pidlidtaskstartdate-canonical-property"></a>PidLidTaskStartDate 標準プロパティ
 
@@ -25,37 +25,37 @@ ms.locfileid: "25383528"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ユーザーがタスクを開始するのには必要とする日付です。
+ユーザーがタスクを開始することを期待する日付。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidTaskStartDate  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Task  <br/> |
-|長い ID (LID):  <br/> |0x00008104  <br/> |
+|関連するプロパティ:  <br/> |dispidtaskstartdate  <br/> |
+|プロパティセット:  <br/> |PSETID_Task  <br/> |
+|ロング ID (LID):  <br/> |0x00008104  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
 |エリア:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティの値が未設定のままである場合、タスクには開始日はありません。 "0x5AE980E0"(1,525,252,320) の値は、タスクに開始日がないことも意味します。 タスクに開始日がある場合は、値が午前 0 時という時刻成分を持つ必要があり、 **dispidTaskDueDate** ([PidLidTaskDueDate](pidlidtaskduedate-canonical-property.md)) と**dispidCommonStart** ([PidLidCommonStart](pidlidcommonstart-canonical-property.md)) のプロパティを設定もする必要があります。
+このプロパティの値が設定されていない場合は、タスクに開始日がありません。 値 "0x5AE980E0" (1525252320) は、タスクに開始日が設定されていないことも意味します。 タスクの開始日が設定されている場合は、その値に午前0時の時間コンポーネントを指定し、 **dispidTaskDueDate** ([PidLidTaskDueDate](pidlidtaskduedate-canonical-property.md)) および**dispidcommonstart** ([PidLidCommonStart](pidlidcommonstart-canonical-property.md)) プロパティも設定する必要があります。
   
-情報フラグを設定するプロトコルの仕様でこのプロパティを共有し、Task-Related オブジェクトのプロトコル仕様は、 [[MS OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)にあります。
+このプロパティは、 [[OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)にある情報フラグのプロトコル仕様とタスク関連のオブジェクトプロトコル仕様によって共有されます。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
-> 連絡先と個人用配布リストで許可されている操作のプロパティを指定します。
+> 連絡先および個人用配布リストで許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -68,9 +68,9 @@ Mapidefs.h
 [PidLidCommonStart ���K���̃v���p�e�B](pidlidcommonstart-canonical-property.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

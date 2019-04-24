@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 63f58b9f-c814-4b6c-b896-098bfc02fc54
-description: このメンバーは、プレース ホルダーではサポートされていません。
-ms.openlocfilehash: 04c4b5479503b427c357c15bb4a5b04340d9bb3d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このメンバーはプレースホルダーで、サポートされていません。
+ms.openlocfilehash: f3fdc83f3cbae0a95382a23b787de24167e98609
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317474"
 ---
 # <a name="ifreebusydataplaceholder6"></a>IFreeBusyData::Placeholder6
 
-このメンバーは、プレース ホルダーではサポートされていません。
+このメンバーはプレースホルダーで、サポートされていません。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -35,15 +35,15 @@ HRESULT Placeholder6(
 
 ## <a name="return-values"></a>戻り値
 
-常に E_NOTIMP、このメンバーは、 **IFreeBusyData**内のプレース ホルダーがあるためにサポート。 
+このメンバーは**IFreeBusyData**のプレースホルダーであり、サポートされていないため、常に E_NOTIMPL。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 このメンバーは、E_NOTIMPL を返す必要があります。
   
 ## <a name="see-also"></a>関連項目
 
-- [定数 (空き時間情報の API)](constants-free-busy-api.md)
+- [定数 (空き時間情報 API)](constants-free-busy-api.md)
 - [IFreeBusyData::EnumBlocks](ifreebusydata-enumblocks.md)
 - [IFreeBusyData::GetFBPublishRange](ifreebusydata-getfbpublishrange.md)
 - [IFreeBusyData::SetFBRange](ifreebusydata-setfbrange.md)

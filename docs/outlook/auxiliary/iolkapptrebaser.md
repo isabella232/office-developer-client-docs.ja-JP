@@ -6,36 +6,36 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: d67bd395-d324-217d-8ddc-1d48dd724383
-description: 予定を予定表フォルダーを再配置をサポートします。
-ms.openlocfilehash: 57ca59121f74c7b64a84282c7493e4aed3179f7a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 予定表フォルダー内の予定の再配置をサポートします。
+ms.openlocfilehash: cf4f7c790a8561f149160c83418a0d5ebd91a455
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321862"
 ---
 # <a name="iolkapptrebaser"></a>IOlkApptRebaser
 
-予定を予定表フォルダーを再配置をサポートします。
+予定表フォルダー内の予定の再配置をサポートします。
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|継承します。  <br/> |**IUnknown** <br/> |
-|ヘッダー ファイル:  <br/> |tzmovelib.h  <br/> |
-|によって実装されます。  <br/> |tzmovelib.dll  <br/> |
-|によって呼び出されます。  <br/> |MAPI クライアント アプリケーション  <br/> |
-|公開されます。  <br/> |Outlook の再配置オブジェクト  <br/> |
+|継承元:  <br/> |**IUnknown** <br/> |
+|ヘッダー ファイル:  <br/> |、tzmovelib.h  <br/> |
+|実装元:  <br/> |、tzmovelib.h  <br/> |
+|呼び出し元:  <br/> |MAPI クライアントアプリケーション  <br/> |
+|公開:  <br/> |Outlook のリベース/再配置オブジェクト  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
 |**[BeginEnumerateAppointments](iolkapptrebaser-beginenumerateappointments.md)** <br/> |タスクを再配置する必要がある予定を検索するには、予定表フォルダーの予定の列挙を開始します。  <br/> |
 |**[EndEnumerateAppointments](iolkapptrebaser-endenumerateappointments.md)** <br/> |予定の列挙を完了するには、予定表フォルダーでの待機し、その必要性を再配置する予定のリストを返します。  <br/> |
-|**[BeginRebaseAppointments](iolkapptrebaser-beginrebaseappointments.md)** <br/> |予定は予定、 **EndEnumerateAppointments**から取得した通常のリストを再配置するためのタスクを開始します。  <br/> |
-|**[EndRebaseAppointments](iolkapptrebaser-endrebaseappointments.md)** <br/> |完了する再配置を予定するまで待機し、結果を取得します。  <br/> |
+|**[beginrebaseappointments](iolkapptrebaser-beginrebaseappointments.md)** <br/> |通常**EndEnumerateAppointments**から取得された予定の一覧がある場合、予定の再配置のタスクを開始します。  <br/> |
+|**[endrebaseappointments](iolkapptrebaser-endrebaseappointments.md)** <br/> |完了する再配置を予定するまで待機し、結果を取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

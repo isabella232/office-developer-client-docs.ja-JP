@@ -8,24 +8,24 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9e055269-f3bf-4b64-8384-3cbc372c0b34
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9ef3f37ab266469e83434d5d9bd0bc7e2ef897fa
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e7abcb2c86ff5cabe0b8f5664ec316244617ac09
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316675"
 ---
 # <a name="direntryid"></a>DIR_ENTRYID
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ディレクトリのエントリ id のプロパティについて説明します。
+ディレクトリエントリ id のプロパティについて説明します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |entryid.h  <br/> |
+|ヘッダー ファイル:  <br/> |entryid  <br/> |
    
 ```cpp
 #pragma pack(4)
@@ -42,35 +42,35 @@ typedef struct _dir_entryid
 
 ## <a name="members"></a>Members
 
- **abFlags**
+ **abflags**
   
-> オブジェクトを記述する情報を提供するフラグのビットマスクです。 詳細については、[エントリ ID](entryid.md)の構造体の**abFlags**フィールドの説明を参照してください。 
+> オブジェクトについての情報を提供するフラグのビットマスク。 詳細については、 [ENTRYID](entryid.md)構造の**abflags**フィールドの説明を参照してください。 
     
  **muid**
   
-> ストア プロバイダーを識別する GUID。
+> ストアプロバイダーを識別する GUID。
     
- **ulVersion**
+ **ulversion**
   
-> **DIR_ENTRYID**構造体のバージョン番号です。 CONTAB_VERSION に設定する必要があります。 
+> **DIR_ENTRYID**構造体のバージョン番号。 CONTAB_VERSION に設定する必要があります。 
     
- **ulType**
+ **ultype**
   
-> ディレクトリ エントリ ID の種類を表す整数。 次の値のいずれかを指定する必要があります。
+> ディレクトリエントリ ID の種類を表す整数。 次のいずれかの値であることが必要です。
     
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
-|CONTAB_ROOT  <br/> |MAPI アドレス帳のルート フォルダーです。  <br/> |
-|CONTAB_SUBROOT  <br/> |MAPI アドレス帳のオブジェクトのルート フォルダー内に含まれるサブフォルダー。  <br/> |
+|CONTAB_ROOT  <br/> |MAPI アドレス帳のルートフォルダー。  <br/> |
+|CONTAB_SUBROOT  <br/> |MAPI アドレス帳のオブジェクトのルート フォルダー内に含まれるサブフォルダーです。  <br/> |
 |CONTAB_CONTAINER  <br/> |�A�h���X���̃R���e�i�[ �I�u�W�F�N�g�ł��B  <br/> |
    
  **muidID**
   
-> ログオン オブジェクトを識別する GUID です。
+> ログオンオブジェクトを識別する GUID。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**DIR_ENTRYID**と[CONTAB_ENTRYID](contab_entryid.md)の構造体では、 **ulType**メンバーを除くと同じです。 **UlType**メンバーの内容は、どの構造体は、残りのフィールドの適切なを確認します。 
+**DIR_ENTRYID**と[CONTAB_ENTRYID](contab_entryid.md)の構造は同じですが、 **ultype**メンバーを除きます。 **ultype**メンバーの内容は、残りのフィールドに適した構造を決定します。 
   
 ## <a name="see-also"></a>関連項目
 

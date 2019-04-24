@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 7f24910a-e14e-44a1-8477-d8968130ba74
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8dfa777480af48819e5357fad9b1e7524148a8b7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 32ebdea3a594b5adf5d46dc081098d3628ae145b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317399"
 ---
 # <a name="imsgserviceadminopenprofilesection"></a>IMsgServiceAdmin::OpenProfileSection
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-現在のプロファイルのセクションを開き、さらにアクセスするための[IProfSect](iprofsectimapiprop.md)ポインターを返します。 
+現在のプロファイルのセクションを開き、さらにアクセスできるように[IProfSect](iprofsectimapiprop.md)ポインターを返します。 
   
 ```cpp
 HRESULT OpenProfileSection(
@@ -38,69 +38,69 @@ HRESULT OpenProfileSection(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpUID_
+ _lpuid_
   
-> プロファイル セクションを識別する[MAPIUID](mapiuid.md)構造体へのポインター。 
+> プロファイルセクションを識別する[MAPIUID](mapiuid.md)構造体へのポインター。 
     
- _lpInterface_
+ _lpinterface_
   
-> [in]プロファイル セクションにアクセスするためのインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 _LppProfSect_パラメーターで返される、標準のインターフェイスへのポインターに NULL を渡すことが発生します。 プロファイル セクションのための標準インターフェイスは、 **IProfSect**です。
+> 順番プロファイルセクションへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 _lppProfSect_パラメーターで返される標準インターフェイスへのポインターで NULL 値が渡されます。 プロファイルセクションの標準インターフェイスは**IProfSect**です。
     
  _ulFlags_
   
-> [in]プロファイル セクションへのアクセスを制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番プロファイルセクションへのアクセスを制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_DEFERRED_ERRORS 
   
-> 正常に完了するのには**OpenProfileSection**では、可能性のあるプロファイルする前にセクションは、呼び出し側のクライアントに完全に使用可能。 プロファイル セクションが利用できない場合は、それ以降の呼び出しを行うとエラーが発生します。 
+> 呼び出し**** 元クライアントがプロファイルセクションを完全に利用できるようになるまで、openprofile の開始を正常に戻すことができます。 プロファイルセクションが使用できない場合は、その後の呼び出しでエラーが発生する可能性があります。 
     
 MAPI_MODIFY 
   
-> 要求の読み取り/書き込みのアクセス許可 既定では、読み取り専用のアクセス許可を持つプロファイルのセクションを開くし、クライアントが読み取り/書き込みアクセス許可が付与されていることを前提に動作しない必要があります。 
+> 読み取り/書き込みアクセス許可を要求します。 既定では、プロファイルセクションは読み取り専用のアクセス許可で開かれ、読み取り/書き込みアクセス許可が与えられているという前提でクライアントを動作させることはできません。 
     
 MAPI_FORCE_ACCESS
   
-> 個々 のサービス ・ プロバイダーが所有するものであっても、すべてのプロファイル セクションへのアクセスを許可します。
+> 個々のサービスプロバイダによって所有されているものも含め、すべてのプロファイルセクションへのアクセスを許可します。
     
  _lppProfSect_
   
-> [out]プロファイル セクションへのポインターへのポインター。
+> 読み上げプロファイルセクションへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> プロファイル セクションが正常に開かれました。
+> プロファイルセクションが正常に開かれました。
     
 MAPI_E_NO_ACCESS 
   
-> 呼び出し元が十分なアクセス許可を持っているプロファイル セクションにアクセスしようとしました。
+> 発信者が十分なアクセス許可を持っていないプロファイルセクションにアクセスしようとしました。
     
 MAPI_E_NOT_FOUND 
   
-> 要求したプロファイル セクションが存在しません。
+> [要求されたプロファイル] セクションが存在しません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMsgServiceAdmin::OpenProfileSection**メソッドは、プロファイルのセクションでは、 [IProfSect](iprofsectimapiprop.md)インターフェイスをサポートするオブジェクトを開きます。 プロファイルのセクションでは、情報の読み込みおよびセッション ・ プロファイル情報を書き込むのために使用されます。 
+**IMsgServiceAdmin:: openprofile**のメソッドは、プロファイルセクション、 [IProfSect](iprofsectimapiprop.md)インターフェイスをサポートするオブジェクトを開きます。 プロファイルセクションは、セッションプロファイルに関する情報の読み取りおよび書き込みに使用されます。 
   
- **OpenProfileSection**は、MAPI_FORCE_ACCESS を使用しない場合は、個々 のサービス ・ プロバイダーが所有するプロファイルのセクションを開くには使用できません。 
+ **** MAPI_FORCE_ACCESS が使用されていない場合、openprofile を使用して、個々のサービスプロバイダーが所有するプロファイルセクションを開くことはできません。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-複数のクライアントが読み取り専用のアクセス許可を持つプロファイル セクションを開くことができますが、1 つのクライアントは、読み取り/書き込みアクセス許可を持つプロファイル セクションを開くことができます。 プロファイルのセクションを開くには、MAPI_MODIFY フラグを設定して**OpenProfileSection**を呼び出すことで開こうとすると、別のクライアントの場合は、MAPI_E_NO_ACCESS を返す呼び出しが失敗します。 
+複数のクライアントが読み取り専用アクセス許可でプロファイルセクションを開くことはできますが、読み取り/書き込みアクセス許可を持つプロファイルセクションを開くことができるクライアントは1つだけです。 MAPI_MODIFY フラグセットを使用して openprofile を呼び出すことによっ**** て開こうとして、別のクライアントでプロファイルセクションが開いている場合、呼び出しは失敗し、MAPI_E_NO_ACCESS が返されます。 
   
-セクションが書き込み用に開いている場合、読み取り専用ファイルを開く操作が失敗します。 
+読み取り専用の開く操作は、セクションが書き込み用に開かれている場合は失敗します。 
   
-MAPI_MODIFY フラグと、 _lpUID_パラメーターに存在しない[MAPIUID](mapiuid.md)構造体の**OpenProfileSection**を呼び出すことによって、プロファイルのセクションを作成できます。 MAPI_MODIFY を指定することを確認します。 存在しない**MAPIUID**を指すように_lpUID_を設定すると、 **OpenProfileSection**は読み取り専用の既定のアクセス モードを使用する設定は、MAPI_E_NOT_FOUND の呼び出しは失敗します。 
+MAPI_MODIFY フラグと、 _lpuid_パラメーターに存在しない[MAPIUID](mapiuid.md)構造で**openprofile**を呼び出すことで、プロファイルセクションを作成できます。 必ず MAPI_MODIFY を指定してください。 存在しない**MAPIUID**をポイントするように_lpuid_を設定し、 **openプロファイル**が読み取り専用の既定のアクセスモードを使用するように設定されている場合、呼び出しは MAPI_E_NOT_FOUND で失敗します。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIProfileFunctions.cpp  <br/> |OpenProfileSection  <br/> |MFCMAPI では、 **IMsgServiceAdmin::OpenProfileSection**メソッドを使用して、プロファイルのセクションを開きます。  <br/> |
+|MAPIProfileFunctions  <br/> |openプロファイル '  <br/> |mfcmapi は、 **IMsgServiceAdmin:: openprofile**の例を使用して、プロファイルセクションを開きます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

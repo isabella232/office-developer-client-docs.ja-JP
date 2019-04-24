@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 0dec535d-d48f-39a5-97d5-0bd109134b3b
-description: タイム ゾーンのプロパティ、PidLidAppointmentTimeZoneDefinitionEndDisplay、PidLidAppointmentTimeZoneDefinitionRecur、および PidLidAppointmentTimeZoneDefinitionStartDisplay はバイナリに対応するストリームを含む、プロパティの名前、TZDEFINITION 構造体の永続化された形式です。
+description: タイムゾーンのプロパティ、PidLidAppointmentTimeZoneDefinitionEndDisplay、PidLidAppointmentTimeZoneDefinitionRecur、および PidLidAppointmentTimeZoneDefinitionStartDisplay は、バイナリという名前のプロパティであり、それぞれに、それぞれに対応するストリームが含まれています。TZDEFINITION 構造の永続形式。
 ms.openlocfilehash: f94b751a55aa852c962eebe5d46968e9e622e315
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316977"
 ---
 # <a name="about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property"></a>バイナリ プロパティにコミットするためにストリームに TZDEFINITION を保持することについて
 
-タイム ゾーンのプロパティ、 [PidLidAppointmentTimeZoneDefinitionEndDisplay](https://msdn.microsoft.com/library/7b6193cb-612b-408e-b9bc-285df313e2cc%28Office.15%29.aspx)、 [PidLidAppointmentTimeZoneDefinitionRecur](https://msdn.microsoft.com/library/52fd57a0-9e34-4452-9ecd-2acb454446c9%28Office.15%29.aspx)、および[PidLidAppointmentTimeZoneDefinitionStartDisplay](https://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx)はバイナリのプロパティを名前付きの[TZDEFINITION](tzdefinition.md)構造体の保存形式に対応するストリームが含まれています。 
+タイムゾーンのプロパティ、 [PidLidAppointmentTimeZoneDefinitionEndDisplay](https://msdn.microsoft.com/library/7b6193cb-612b-408e-b9bc-285df313e2cc%28Office.15%29.aspx)、 [PidLidAppointmentTimeZoneDefinitionRecur](https://msdn.microsoft.com/library/52fd57a0-9e34-4452-9ecd-2acb454446c9%28Office.15%29.aspx)、および[PidLidAppointmentTimeZoneDefinitionStartDisplay](https://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx)は、バイナリという名前のプロパティで、各[TZDEFINITION](tzdefinition.md)構造の永続化された形式にマップするストリームを格納します。 
   
-このトピックでは、次の 3 つのバイナリ プロパティのいずれかにコミットする**TZDEFINITION**をストリームに保存する場合に使用できる、リトル エンディアン形式について説明します。 これらのプロパティのいずれかから取得したストリームの値を解釈するためにパーサーで同じのエンディアンの形式を使用します。 
+このトピックでは、 **TZDEFINITION**を stream に永続化して、3つのバイナリプロパティのいずれかにコミットするときに使用できるリトルエンディアン形式について説明します。 これらのプロパティのいずれかから取得したストリーム値を解釈するには、パーサーで同じエンディアン形式を使用します。 
   
 ```cpp
 BYTE  bMajorVersion;    // breaking change
@@ -45,21 +45,21 @@ if (TZDEFINITION_FLAG_VALID_KEYNAME)
    SYSTEMTIME  stDaylightDate;       // time to switch to daylight time
 ```
 
-メジャー バージョン番号を使用して、変更、互換性に影響を確認します。 メジャー バージョン番号に慣れていないするクライアントが存在しないかのようにプロパティを扱う必要があります。 クライアントの構造を記述するには、定数**TZ_BIN_VERSION_MAJOR**を指定してください。 
+メジャーバージョン番号は、互換性に影響する変更を行うために使用されます。 メジャーバージョン番号に不慣れなクライアントでは、プロパティが存在しない場合と同様に処理する必要があります。 構造を書き込むクライアントは、定数**TZ_BIN_VERSION_MAJOR**を指定する必要があります。 
   
-マイナー バージョン番号は、機能拡張に使用されます。 マイナー バージョン番号に慣れていないするクライアントは、データを理解し、ルールごとに、または全体のストリームに追加することがありますデータはスキップされるはずです。 クライアントの構造を記述するには、定数**TZ_BIN_VERSION_MINOR**を指定してください。 
+マイナーバージョン番号は、拡張性のために使用されます。 マイナーバージョン番号に不慣れなクライアントは、自分が理解しているデータを読み取って、各ルールまたはストリーム全体に追加される可能性のあるデータをスキップする必要があります。 構造を書き込むクライアントは、定数**TZ_BIN_VERSION_MINOR**を指定する必要があります。 
   
-パーサーが、ヘッダーのメジャー バージョンを認識しない場合する必要があります構造体の残りの部分を読んでされず、データが不足しているように動作します。 パーサーが、ヘッダーのマイナー バージョンを認識しない場合は、それに対応していない部分と理解しているストリームの一部を読み取るための高度を無視するように**cbHeader**を使用してください。 
+パーサーがヘッダーのメジャーバージョンを認識しない場合、その構造体の残りの部分を読み取らず、データが欠落しているかのように動作する必要があります。 パーサーがヘッダーのマイナーバージョンを認識しない場合は、 **cbheader**を使用して、理解していない部分を無視して、認識されるストリームの部分を読み取る必要があります。 
   
-**WFlags**の値は、常に**TZDEFINITION_FLAG_VALID_KEYNAME**です。 キー名は、 **MAX_PATH**の最大サイズです。 
+**wflags**の値は常に**TZDEFINITION_FLAG_VALID_KEYNAME**です。 キー名の最大サイズは**MAX_PATH**です。 
   
-ルールのメジャー バージョンが、パーサーで認識されない場合、ルールを無視するクライアント側で確認し、 **cbRule**を使用して、次のルールに移動する必要があります。 パーサーは、ルールのマイナー バージョンを認識できない場合は、クライアントする必要があります理解しているルールの構成要素を解析してのみ。 
+パーサーがルールのメジャーバージョンを認識しない場合は、クライアントはルールを無視し、 **cbrule**指定を使用して次のルールに進みます。 パーサーがルールのマイナーバージョンを認識しない場合、クライアントは、ルールを認識する部分のみを解析する必要があります。 
   
-ストリームに**TZDEFINITION**構造体を保持する場合、パーサーくださいそれに対応していないすべての情報を記述します。 
+**TZDEFINITION**構造体をストリームに永続化する場合、パーサーは、認識できない情報を書き込めないようにしてください。 
   
-ルールの最大数は、1024 です。
+ルールの最大数は1024です。
   
-[TZREG](tzreg.md)構造体が保持されているこことは異なる、単独で永続化すると、同じコードは使用できませんそれを解析するよりも注意してください。 
+[TZREG](tzreg.md)構造体は単独で永続化する場合とは異なる方法で保持されるため、同じコードを使用して解析することはできません。 
   
 ## <a name="see-also"></a>関連項目
 

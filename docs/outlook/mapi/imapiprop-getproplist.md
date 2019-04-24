@@ -1,5 +1,5 @@
 ---
-title: IMAPIPropGetPropList
+title: imapipropgetproplist
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 0069c223-32bb-4286-b763-39fd45dc263b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5417853dbb1fa87d2beead2f73ca57329e17b044
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f089fa2c608fb9fcb7deba2e061c5cf5886aa02f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316570"
 ---
 # <a name="imapipropgetproplist"></a>IMAPIProp::GetPropList
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-すべてのプロパティのプロパティ タグを返します。 
+すべてのプロパティのプロパティタグを返します。 
   
 ```cpp
 HRESULT GetPropList(
@@ -34,53 +34,53 @@ HRESULT GetPropList(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]返されるプロパティは、タグ内の文字列の書式を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番返される property タグ内の文字列の形式を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 関数が返す文字列は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。
+> 返される文字列は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
     
  _lppPropTagArray_
   
-> [out]オブジェクトのプロパティのすべてのタグを含むプロパティ タグ配列へのポインターへのポインター。
+> 読み上げすべてのオブジェクトのプロパティのタグを含む、プロパティタグ配列へのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> プロパティ タグのすべてが正常に返されました。
+> すべてのプロパティタグが正常に返されました。
     
 MAPI_E_BAD_CHARWIDTH 
   
-> か、MAPI_UNICODE フラグが設定された実装は Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、実装は、Unicode だけをサポートしています。
+> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPIProp::GetPropList**メソッドは、現在のオブジェクトによってサポートされている各プロパティのプロパティ タグを取得します。 オブジェクトは、任意のプロパティを現在サポートしていません、 **getproplist メソッド**は**あう**メンバーが 0 に設定するプロパティ タグ配列を返します。 
+**imapiprop:: getproplist**メソッドは、オブジェクトで現在サポートされている各プロパティの property タグを取得します。 オブジェクトが現在プロパティをサポートしていない場合、 **getproplist**は**cvalues**メンバーが0に設定されたプロパティタグ配列を返します。 
   
-**Getproplist メソッド**から返されるプロパティのスコープは、プロバイダーによって異なります。 一部のサービス プロバイダーは、呼び出し元がアクセス権を持たないこれらのプロパティを除外します。 すべてのプロバイダーでは、 **PT_OBJECT**の種類のプロパティが返されます。
+**getproplist**によって返されるプロパティの範囲は、プロバイダーによって異なります。 一部のサービスプロバイダーは、呼び出し元がアクセス権を持っていないプロパティを除外します。 すべてのプロバイダーは、 **PT_OBJECT**型のプロパティを返します。
   
-オブジェクトが Unicode をサポートしていない場合、 **getproplist メソッド**は、オブジェクトに対して定義されている文字列のプロパティがない場合でも、MAPI_E_BAD_CHARWIDTH を返します。 
+オブジェクトが Unicode をサポートしていない場合、オブジェクトに対して定義されている文字列プロパティがない場合でも、 **getproplist**は MAPI_E_BAD_CHARWIDTH を返します。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-リモート トランスポート プロバイダーは、ここで指定どおり正確に**getproplist メソッド**を実装します。 特別な懸念事項はありません。 実装では、同じように[IMAPIProp::GetProps](imapiprop-getprops.md)メソッドでサポートされているプロパティの一覧を返しますは、もちろん。 
+リモートトランスポートプロバイダーは、ここで指定されたとおりに**getproplist**を実装します。 特別な問題はありません。 もちろん、実装では、 [imapiprop:: GetProps](imapiprop-getprops.md)メソッドでサポートされているのと同じプロパティのリストを返す必要があります。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-_LppPropTagArray_で指定されたプロパティ タグ配列を解放する[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出します。 
+[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、 _lppPropTagArray_によって示されるプロパティタグ配列を解放します。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIFunctions.cpp  <br/> |GetPropsNULL  <br/> |MFCMAPI は、 **GetProps**に渡すプロパティの一覧を取得するのに**IMAPIProp::GetPropList**メソッドを使用します。  <br/> |
+|MAPIFunctions  <br/> |GetPropsNULL  <br/> |mfcmapi は、 **imapiprop:: getproplist**メソッドを使用して、 **GetProps**に渡すプロパティリストを取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

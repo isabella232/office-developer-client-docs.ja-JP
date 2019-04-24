@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: a41f707a-5c84-49aa-aeb6-469b2600e181
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 41066d4418760a676fbc02241bfc12d83275da9d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: c7124c8e3f2ced66d303321ff7aee8592a723a2b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317123"
 ---
 # <a name="iprofadminchangeprofilepassword"></a>IProfAdmin::ChangeProfilePassword
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 現在は廃止されています。 プロファイルのパスワードを変更します。
   
@@ -38,35 +38,35 @@ HRESULT ChangeProfilePassword(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpszProfileName_
+ _lpszprofilename_
   
-> [in]変更するパスワードに関連付けられているプロファイルの名前へのポインター。
+> 順番変更するパスワードに関連付けられているプロファイルの名前へのポインター。
     
- _lpszOldPassword_
+ _lpszoldpassword_
   
-> [in]現在のパスワードへのポインター。
+> 順番現在のパスワードへのポインター。
     
  _lpszNewPassword_
   
-> [in]新しいパスワードへのポインター。
+> 順番新しいパスワードへのポインター。
     
  _ulFlags_
   
-> [in]渡された文字列の種類を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番渡された文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> プロファイル名とパスワード、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式でこれらの文字列です。
+> プロファイル名とパスワードは、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、これらの文字列は ANSI 形式になります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> このメソッドが呼び出されると、S_OK を返します。 ただし、動作も起こりません。
+> このメソッドが呼び出されると、S_OK が返されます。 ただし、アクションは何も実行されません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このメソッドを使用することはしません。 MAPI は、プロファイルのパスワードをサポートしていません。
+このメソッドは使用しないでください。 MAPI では、プロファイルのパスワードがサポートされていません。
   
 ## <a name="see-also"></a>関連項目
 

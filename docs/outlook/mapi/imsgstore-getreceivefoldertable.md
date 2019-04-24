@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: d115ab58-07d2-4b49-8e08-2881c2924102
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 681fd68fc068633912df1cb7f060b8c4111b5de8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 303c2ef855d5cfc1d6614bda92b46c2da97717c8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317354"
 ---
 # <a name="imsgstoregetreceivefoldertable"></a>IMsgStore::GetReceiveFolderTable
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-受信フォルダーのテーブルのすべてのメッセージ ストアの受信フォルダーに関する情報が含まれるテーブルへのアクセスを提供します。
+受信フォルダーテーブル (メッセージストアのすべての受信フォルダーに関する情報を含むテーブル) へのアクセスを提供します。
   
 ```cpp
 HRESULT GetReceiveFolderTable(
@@ -33,51 +33,51 @@ HRESULT GetReceiveFolderTable(
   LPMAPITABLE FAR * lppTable );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]テーブルのアクセスを制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番テーブルアクセスを制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_DEFERRED_ERRORS 
   
-> 正常に戻す、可能性のあるテーブルは、呼び出し元に完全に利用できる前に**GetReceiveFolderTable**を使用できます。 テーブルを完全に使用できない場合は、テーブルのそれ以降の呼び出しを行うとエラーが発生します。 
+> 呼び出し元がテーブルを完全に使用できるようになる前に、 **getreceivefoldertable**を正常に返すことができるようにします。 テーブルが完全に使用できない場合は、次のテーブル呼び出しを行うとエラーが発生する可能性があります。 
     
 MAPI_UNICODE 
   
-> 関数が返す文字列は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。
+> 返される文字列は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
     
- _lppTable_
+ _lpptable_
   
-> [out]フォルダーの受信表へのポインターへのポインター。
+> 読み上げ受信フォルダーテーブルへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 受信フォルダーのテーブルが正常に返されました。
+> 受信フォルダーテーブルが正常に返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMsgStore::GetReceiveFolderTable**メソッドは、すべてのメッセージ ストアのプロパティの設定値が表示されるフォルダーを表示するテーブルへのアクセスを提供します。 
+**IMsgStore:: getreceivefoldertable**メソッドは、すべてのメッセージストアの受信フォルダーのプロパティ設定を示すテーブルへのアクセスを提供します。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-受信フォルダー テーブルで必要な列の一覧、[フォルダーのテーブルに表示される](receive-folder-tables.md)を参照してください。 
+受信フォルダーテーブルに必要な列の一覧については、「[受信フォルダーテーブル](receive-folder-tables.md)」を参照してください。 
   
-実装、 **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) のプロパティのプロパティの制限の設定をサポートするためにフォルダーのテーブルを表示します。 このを有効に簡単にアクセスする特定のフォルダーが表示されます。
+受信フォルダーテーブルを実装して、 **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) プロパティのプロパティ制限の設定をサポートします。 これにより、特定の受信フォルダーへのアクセスが容易になります。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-_UlFlags_パラメーターに MAPI_UNICODE フラグを設定する、 [IMAPITable::QueryColumns](imapitable-querycolumns.md)メソッドと[IMAPITable::QueryRows](imapitable-queryrows.md)メソッドから返される列の形式に影響します。 このフラグは、 [IMAPITable::QuerySortOrder](imapitable-querysortorder.md)メソッドによって返される並べ替え順序のプロパティの種類も制御します。 
+_ulflags_パラメーターの MAPI_UNICODE フラグを設定すると、 [imapitable:: querycolumns](imapitable-querycolumns.md)および[imapitable:: QueryRows](imapitable-queryrows.md)メソッドから返される列の形式に影響します。 このフラグは、 [IMAPITable:: querysortorder](imapitable-querysortorder.md)メソッドによって返される並べ替え順序で、プロパティの種類を制御することもできます。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MsgStoreDlg.cpp  <br/> |CMsgStoreDlg::OnDisplayReceiveFolderTable  <br/> |MFCMAPI では、 **IMsgStore::GetReceiveFolderTable**メソッドを使用して、表示する受信フォルダーのテーブルを取得します。  <br/> |
+|MsgStoreDlg  <br/> |CMsgStoreDlg:: ondisplayreceivefoldertable  <br/> |mfcmapi は、 **IMsgStore:: getreceivefoldertable**メソッドを使用して、表示する受信フォルダーテーブルを取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

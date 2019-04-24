@@ -1,5 +1,5 @@
 ---
-title: メッセージ サービスの削除
+title: メッセージサービスの削除
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,26 +7,26 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 346608d7-f7de-497e-9852-4d4d7696177e
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f39f721d434f4e54cbfa5d25a3ba626858f2b13e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 27c20242417e51886ab184b1cc87d6ebb185e4bf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316864"
 ---
-# <a name="deleting-a-message-service"></a>メッセージ サービスの削除
+# <a name="deleting-a-message-service"></a>メッセージサービスの削除
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
- **メッセージ サービスをプロファイルから削除するのには**
+ **メッセージサービスをプロファイルから削除するには**
   
-1. メッセージ サービス テーブルにアクセスするのには**IMAPISession::GetMsgServiceTable**を呼び出します。 
+1. メッセージサービステーブルにアクセスするには、 **imapisession:: getmsgservicetable**を呼び出します。 
     
-2. メッセージ サービス用の行を検索し、 _lpuid_パラメーターで、 **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) の列を[IMsgServiceAdmin::DeleteMsgService](imsgserviceadmin-deletemsgservice.md)に渡します。 
+2. メッセージサービスの行を探し、 _lpuid_パラメーターの**PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) 列を[IMsgServiceAdmin::D eletemsgservice](imsgserviceadmin-deletemsgservice.md)に渡します。 
     
- **DeleteMsgService**は、MSG_SERVICE_DELETE に_ulContext_パラメーターを使用して、メッセージ サービスのエントリ ポイント関数を呼び出します。 メッセージ サービスは、プロファイルから削除される前に、この時点で、タスクのクリーンアップを実行します。 
+ **DeleteMsgService**は、 _ulcontext_パラメーターを MSG_SERVICE_DELETE に設定して、メッセージサービスのエントリポイント関数を呼び出します。 メッセージサービスプロファイルから削除される前に、この時点でクリーンアップタスクを実行します。 
   
 

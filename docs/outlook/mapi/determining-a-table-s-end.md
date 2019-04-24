@@ -1,5 +1,5 @@
 ---
-title: テーブルの末尾の判別
+title: テーブルの終了を決定する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,28 +7,28 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c879e972-05f4-4716-8fc2-db5b22f34ca8
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f9979baf144b6106adcec416ee04439404e05d19
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 28892e2d351b8dc9aa864c9eff52c94bb0f20e8f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316717"
 ---
-# <a name="determining-a-tables-end"></a>テーブルの末尾の判別
+# <a name="determining-a-tables-end"></a>テーブルの終了を決定する
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
- 一般的なエラーでは、こと、テーブルの末尾に達しました場合を想定しています。 
+ 一般的なエラーは、次のような場合にテーブルの最後に到達したと仮定します。 
   
-- [IMAPITable::QueryRows](imapitable-queryrows.md)は、 [IMAPITable::GetRowCount](imapitable-getrowcount.md)によって返される行の数によって決定されるループの最後に、ループ内で呼び出されました。 **な**を表すカウント常にはありません。 テーブル内の行の正確な数おおよそのカウントすることをお勧めします。 
+- [imapitable:: QueryRows](imapitable-queryrows.md)がループで呼び出され、 [IMAPITable:: getrowcount](imapitable-getrowcount.md)から返される行の数によってループの終わりが決定されます。 **getrowcount**が返すカウントは、必ずしもテーブル内の行数の正確な数を表すわけではありません。これはおおよそのカウントです。 
     
-- **QueryRows**が固定数の行で呼び出されより少ない行が返されます。 **QueryRows**がそれ以上の行を取得するのにはゼロに等しい行の数を設定する行を返すまでではなくをお勧めします。 
+- **QueryRows**は固定数の行で呼び出されており、返される行が少なくなっています。 **QueryRows**は、行数が0である行セットを返し、それ以上行を取得しないことを示します。 
     
 > [!IMPORTANT]
-> 呼び出し元が正行の数については、表の最後に、または負の値の行の数については、表の先頭にカーソルが配置されていることを引き受けることが唯一の時間は、値 S_OK は、0 個の行が返されたときです。 値 MAPI_E_NOT_FOUND が返されることはありません。 
+> 呼び出し元が、カーソルが正の行数の場合はテーブルの末尾に配置されていること、または負の行数に対してテーブルの先頭にある場合は、値 S_OK および0の行が返された場合のみ、そのことを前提とすることができます。 値 MAPI_E_NOT_FOUND は返されません。 
   
 ## <a name="see-also"></a>関連項目
 

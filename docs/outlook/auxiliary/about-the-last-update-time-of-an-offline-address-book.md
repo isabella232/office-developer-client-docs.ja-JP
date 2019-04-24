@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: d8c554c5-89ac-9b32-5561-8d8178d2525a
 description: オフライン アドレス帳 (OAB) は、Outlook ユーザーが、切断された状態情報にアクセスできるディレクトリからグローバル アドレス一覧 (GAL) およびその他のアドレス帳からを提供します。
 ms.openlocfilehash: 3374f87cd62d46a80ed823bff0516115a58c155c
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25392285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317018"
 ---
 # <a name="about-the-last-update-time-of-an-offline-address-book"></a>オフライン アドレス帳の最終更新時刻について
 

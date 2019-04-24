@@ -7,11 +7,11 @@ ms.assetid: 4c4ef9e8-6b30-481b-8023-2e1280bcbcc9
 description: このリファレンスには、OneNote 2013 デスクトップ クライアント アプリケーション用のソリューションを開発するときに役立つ概念情報とプログラム関連のリファレンスが含まれています。
 localization_priority: Priority
 ms.openlocfilehash: d2b401a768e62c4b9712b1590bfaf499c2b022ab
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28725925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317053"
 ---
 # <a name="onenote-developer-reference"></a>OneNote 開発者用リファレンス
 

@@ -12,45 +12,45 @@ api_type:
 - COM
 ms.assetid: eddca896-9497-4425-9904-87ef3cbae298
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1803707b46b9b58e7372e7e58cc36241d0ebdb4d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1f815a914deb5e21f3d913abe46a84cc7a32b4ee
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315037"
 ---
 # <a name="itnef--iunknown"></a>ITnef : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージに関連付けることができるバイナリ ストリームに、メッセージング システムがサポートされていない MAPI プロパティをカプセル化するためのメソッドを提供します。 このカプセル化に使用される形式は、トランスポート ニュートラル カプセル化形式 (TNEF) です。 ターゲット トランスポート プロバイダーまたは MAPI ベースのクライアント アプリケーション、TNEF の添付ファイルを含むメッセージを受信するには、回復できます、プロパティ、添付ファイルから。
+メッセージングシステムでサポートされていない MAPI プロパティを、メッセージに添付できるバイナリストリームにカプセル化するためのメソッドを提供します。 このカプセル化に使用される形式は、トランスポートに依存しないカプセル化形式 (TNEF) です。 その後、宛先のトランスポートプロバイダーまたは MAPI ベースのクライアントアプリケーションは、TNEF 添付ファイルを含むメッセージを受信するときに、添付ファイルからプロパティを回復します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Tnef.h  <br/> |
-|によって公開されます。  <br/> |TNEF オブジェクト  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |トランスポート プロバイダー、メッセージ ストア プロバイダー、およびゲートウェイ  <br/> |
-|インターフェイスの識別子。  <br/> |IID_ITNEF  <br/> |
-|ポインターの型。  <br/> |LPTNEF  <br/> |
+|ヘッダー ファイル:  <br/> |Tnef  <br/> |
+|公開者:  <br/> |TNEF オブジェクト  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |トランスポートプロバイダー、メッセージストアプロバイダー、ゲートウェイ  <br/> |
+|インターフェイス識別子:  <br/> |IID_ITNEF  <br/> |
+|ポインターの種類:  <br/> |LPTNEF  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[AddProps](itnef-addprops.md) <br/> |メッセージまたは添付ファイルをカプセル化するプロパティを追加するのには、呼び出し元のサービス プロバイダーまたはゲートウェイを有効にします。  <br/> |
-|[ExtractProps](itnef-extractprops.md) <br/> |TNEF のカプセル化のプロパティを抽出します。  <br/> |
-|[Finish](itnef-finish.md) <br/> |完了するとキューに登録されたすべての TNEF の操作を処理し、待機しています。  <br/> |
-|[OpenTaggedBody](itnef-opentaggedbody.md) <br/> |カプセル化されたメッセージのテキストのストリームのインタ フェースを開きます。  <br/> |
-|[SetProps](itnef-setprops.md) <br/> |元のメッセージまたは添付ファイルを変更することがなくカプセル化されたメッセージまたは添付ファイルの 1 つまたは複数のプロパティの値を設定します。  <br/> |
-|[EncodeRecips](itnef-encoderecips.md) <br/> |メッセージの TNEF データ ストリーム内のメッセージの受信者テーブルのビューをエンコードします。  <br/> |
-|[FinishComponent](itnef-finishcomponent.md) <br/> |TNEF ストリームに同時に 1 つのメッセージからの個々 のコンポーネントを処理します。  <br/> |
+|[addprops](itnef-addprops.md) <br/> |呼び出し元のサービスプロバイダーまたはゲートウェイが、メッセージまたは添付ファイルのカプセル化にプロパティを追加できるようにします。  <br/> |
+|[ExtractProps](itnef-extractprops.md) <br/> |TNEF のカプセル化からプロパティを抽出します。  <br/> |
+|[Finish](itnef-finish.md) <br/> |キューに入って待機しているすべての TNEF 操作の処理を終了します。  <br/> |
+|[OpenTaggedBody](itnef-opentaggedbody.md) <br/> |カプセル化されたメッセージのテキストにストリームインターフェイスを開きます。  <br/> |
+|[setprops による](itnef-setprops.md) <br/> |元のメッセージまたは添付ファイルを変更せずに、カプセル化されたメッセージまたは添付ファイルの1つ以上のプロパティの値を設定します。  <br/> |
+|[EncodeRecips](itnef-encoderecips.md) <br/> |メッセージの受信者テーブルのビューを、メッセージの TNEF データストリームでエンコードします。  <br/> |
+|[finish コンポーネント](itnef-finishcomponent.md) <br/> |メッセージから1つずつ、個々のコンポーネントを TNEF ストリームに処理します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

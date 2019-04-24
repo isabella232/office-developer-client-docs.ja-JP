@@ -12,47 +12,47 @@ api_type:
 - COM
 ms.assetid: bdb4cdca-8dfd-4f90-9467-ec31cea3f518
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 559680b9ca4ea5be85718d8f9692df93f77b0edf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bedec72e8371d0e8aa69415d2f0dc77b4c62ff76
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315527"
 ---
 # <a name="iprovideradmin--iunknown"></a>IProviderAdmin : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ サービスのサービス プロバイダーを使用します。 
+メッセージサービスのサービスプロバイダーと連携します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって公開されます。  <br/> |プロバイダー管理オブジェクト  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IProviderAdmin  <br/> |
-|ポインターの型。  <br/> |LPPROVIDERADMIN  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|公開者:  <br/> |プロバイダー管理オブジェクト  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|インターフェイス識別子:  <br/> |IID_IProviderAdmin  <br/> |
+|ポインターの種類:  <br/> |lpprovideradmin  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[発生しました](iprovideradmin-getlasterror.md) <br/> |プロバイダーの管理オブジェクトに発生した前のエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
-|[GetProviderTable](iprovideradmin-getprovidertable.md) <br/> |メッセージ サービスのプロバイダーのテーブル、メッセージ サービスのサービス プロバイダーの一覧へのアクセスを提供します。  <br/> |
-|[CreateProvider](iprovideradmin-createprovider.md) <br/> |メッセージ サービスにサービス プロバイダーを追加します。  <br/> |
-|[DeleteProvider](iprovideradmin-deleteprovider.md) <br/> |メッセージ サービスからサービス プロバイダーを削除します。  <br/> |
-|[OpenProfileSection](iprovideradmin-openprofilesection.md) <br/> |現在のプロファイルからプロファイルのセクションを開き、さらにアクセスするための[IProfSect](iprofsectimapiprop.md)ポインターを返します。  <br/> |
+|[GetLastError](iprovideradmin-getlasterror.md) <br/> |プロバイダー管理オブジェクトに発生した前のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
+|[getprovidertable](iprovideradmin-getprovidertable.md) <br/> |メッセージサービスのプロバイダーテーブルへのアクセスを提供します。これには、メッセージサービスのサービスプロバイダーの一覧が含まれます。  <br/> |
+|[createprovider](iprovideradmin-createprovider.md) <br/> |メッセージサービスにサービスプロバイダーを追加します。  <br/> |
+|[deleteprovider](iprovideradmin-deleteprovider.md) <br/> |メッセージサービスからサービスプロバイダーを削除します。  <br/> |
+|[openプロファイル '](iprovideradmin-openprofilesection.md) <br/> |現在のプロファイルからプロファイルセクションを開き、さらにアクセスできるように[IProfSect](iprofsectimapiprop.md)ポインターを返します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアントは、 [IMsgServiceAdmin::AdminProviders](imsgserviceadmin-adminproviders.md)メソッドを呼び出すことによって**IProviderAdmin**インターフェイスにポインターを取得することができます。メッセージ サービスのエントリ ポイント関数が呼び出されたときに、サービス プロバイダーは、 **IProviderAdmin**ポインターに渡されます。 
+クライアントは、 [IMsgServiceAdmin:: adminproviders](imsgserviceadmin-adminproviders.md)メソッドを呼び出して、 **IProviderAdmin**インターフェイスへのポインターを取得できます。サービスプロバイダーのメッセージサービスのエントリポイント関数が呼び出されると、 **IProviderAdmin**ポインターが渡されます。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

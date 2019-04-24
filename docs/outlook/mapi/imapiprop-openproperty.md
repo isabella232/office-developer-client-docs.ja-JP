@@ -1,5 +1,5 @@
 ---
-title: IMAPIPropOpenProperty
+title: imapipropopenproperty
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,17 +13,17 @@ api_type:
 ms.assetid: e400e6cc-4e36-43fc-9304-b688a0a7fd77
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7bf1d6912e44319c36e288cd3870218e8c4e45ff
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319811"
 ---
 # <a name="imapipropopenproperty"></a>IMAPIProp::OpenProperty
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティにアクセスするために使用するインターフェイスへのポインターを返します。
+プロパティへのアクセスに使用できるインターフェイスへのポインターを返します。
   
 ```cpp
 HRESULT OpenProperty(
@@ -39,96 +39,96 @@ HRESULT OpenProperty(
 
  _ulPropTag_
   
-> [in]アクセスするプロパティのプロパティ タグです。 識別子と型の両方は、プロパティ タグに含める必要があります。
+> 順番アクセスされるプロパティのプロパティタグ。 識別子と型の両方が property タグに含まれている必要があります。
     
  _lpiid_
   
-> [in]プロパティへのアクセスに使用するインターフェイスの識別子へのポインター。 _Lpiid_パラメーターを**null**にするにはできません。
+> 順番プロパティへのアクセスに使用するインターフェイスの識別子へのポインター。 _lpiid_パラメーターを**null**にすることはできません。
     
- _ulInterfaceOptions_
+ _ulinterfaceoptions_
   
-> [in]_Lpiid_パラメーターで識別されるインターフェイスに関連するデータです。 
+> 順番_lpiid_パラメーターによって識別されるインターフェイスに関連するデータ。 
     
  _ulFlags_
   
-> [in]プロパティへのアクセスを制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番プロパティへのアクセスを制御するフラグのビットマスク。 次のフラグを設定できます。
     
-タグ 
+MAPI_CREATE 
   
-> プロパティが存在しない場合は作成する必要があります。 プロパティが存在する場合、プロパティの現在の値は破棄されます。 タグ フラグを設定すると、呼び出し元としても、MAPI_MODIFY フラグを設定する必要があります。
+> プロパティが存在しない場合は、作成する必要があります。 プロパティが存在する場合は、プロパティの現在の値を破棄する必要があります。 発信者が MAPI_CREATE フラグを設定する場合は、MAPI_MODIFY フラグも設定する必要があります。
     
 MAPI_DEFERRED_ERRORS 
   
-> 正常に戻す、可能性のあるオブジェクトが呼び出し元に完全に利用できる前に**OpenProperty**を使用できます。 オブジェクトが使用できない場合は、後続のオブジェクトの呼び出しを行うとエラーが発生します。 
+> オブジェクトが完全に呼び出し元で使用可能になる前に、 **openproperty**を正常に返すことができるようにします。 オブジェクトが使用できない場合は、その後のオブジェクト呼び出しでエラーが発生することがあります。 
     
 MAPI_MODIFY 
   
-> MAPI_MODIFY がこのような状況で必要です。
+> MAPI_MODIFY は、次のような状況で必要になります。
     
-  - 時、 **IID_IStream**、それを変更するなどのストリームのプロパティを開いています。
+  - stream プロパティ ( **IID_IStream**など) を開いて変更する場合。
     
-  - 時、 [PR_ATTACH_DATA_OBJ](pidtagattachdataobject-canonical-property.md)を**IID_IMessage**、それを変更すると開くように、埋め込みメッセージの添付ファイルを開いています。
+  - 埋め込みメッセージ添付ファイル ( **IID_IMessage**で開かれた[PR_ATTACH_DATA_OBJ](pidtagattachdataobject-canonical-property.md)など) を開いて変更する場合。
     
- _lppUnk_
+ _lppunk_
   
-> [out]プロパティへのアクセスに使用する要求されたインターフェイスへのポインター。
+> 読み上げプロパティへのアクセスに使用する要求されたインターフェイスへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 要求されたインターフェイス ポインターが正常に返されました。
+> 要求されたインターフェイスポインターが正常に返されました。
     
 MAPI_E_INTERFACE_NOT_SUPPORTED 
   
-> このプロパティには、要求されたインターフェイスはサポートされていません。
+> 要求されたインターフェイスは、このプロパティではサポートされていません。
     
 MAPI_E_NO_ACCESS 
   
-> 呼び出し側では、プロパティにアクセスする十分なアクセス許可を持っています。
+> 呼び出し元に、プロパティにアクセスするための十分な権限がありません。
     
 MAPI_E_NO_SUPPORT 
   
-> オブジェクトは、要求されたインターフェイスには、このプロパティへのアクセスを提供できません。
+> オブジェクトは、要求されたインターフェイス経由でこのプロパティへのアクセスを提供できません。
     
 MAPI_E_NOT_FOUND 
   
-> 要求されたプロパティが存在しないため、 _ulFlags_パラメーターのタグが設定されていませんでした。 
+> 要求されたプロパティが存在せず、 _ulflags_パラメーターに MAPI_CREATE が設定されていません。 
     
 MAPI_E_INVALID_PARAMETER 
   
-> タグのプロパティの型は、PT_UNSPECIFIED に設定されます。
+> タグ内のプロパティの型は、PT_UNSPECIFIED に設定されています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-**IMAPIProp::OpenProperty**メソッドは、特定のインターフェイスからプロパティへのアクセスを提供します。 **OpenProperty**は、 [IMAPIProp::GetProps](imapiprop-getprops.md)と[IMAPIProp::SetProps](imapiprop-setprops.md)メソッドの代替です。 **GetProps**または**SetProps**のいずれかのプロパティには、大きすぎる、または複雑すぎるために失敗した場合、 **OpenProperty**を呼び出します。 **OpenProperty**は、PT_OBJECT の種類のプロパティにアクセスするのには通常使用されます。 
+**imapiprop:: openproperty**メソッドは、特定のインターフェイスを介してプロパティへのアクセスを提供します。 **openproperty**は、 [imapiprop:: GetProps](imapiprop-getprops.md)および[imapiprop:: setprops](imapiprop-setprops.md)メソッドの代わりになります。 プロパティが大きすぎるか、または複雑すぎるため、 **GetProps**または**setprops**が失敗する場合は、 **openproperty**を呼び出します。 **openproperty**は、通常、PT_OBJECT 型のプロパティにアクセスするために使用されます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-メッセージの添付ファイルにアクセスするには、添付ファイルの種類に応じて、別のインターフェイス識別子を使用して**PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) のプロパティを開きます。 次の表には、さまざまな種類の添付ファイルの**OpenProperty**を呼び出す方法について説明します。 
+メッセージの添付ファイルにアクセスするには、添付ファイルの種類に応じて、別のインターフェイス識別子を使用して**PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) プロパティを開きます。 次の表では、さまざまな種類の添付ファイルの**openproperty**を呼び出す方法について説明します。 
   
-|**添付ファイルの種類**|**インターフェイス識別子を使用するには**|
+|**添付ファイルの種類**|**使用するインターフェイス識別子**|
 |:-----|:-----|
-|バイナリ  <br/> |IID_IStream  <br/> |
+|Binary  <br/> |IID_IStream  <br/> |
 |String  <br/> |IID_IStream  <br/> |
-|Message  <br/> |IID_IMessage  <br/> |
+|メッセージ  <br/> |IID_IMessage  <br/> |
 |OLE 2.0  <br/> |IID_IStreamDocfile  <br/> |
    
-**IStreamDocfile**は、OLE 2.0 の複合ファイルに基づく[IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)インターフェイスの派生物です。 **IStreamDocfile**は、最小限のオーバーヘッドが伴うので、OLE 2.0 の添付ファイルをアクセスするための最適な選択肢です。 [IStorage](https://msdn.microsoft.com/library/aa380015%28VS.85%29.aspx)インターフェイスを使用できるが構造化ストレージに保存されたデータが含まれているこれらのプロパティには、IID_IStreamDocFile を使用できます。 
+**IStreamDocfile**は、OLE 2.0 複合ファイルに基づく[IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)インターフェイスから派生したものです。 **IStreamDocfile**は、最小限のオーバーヘッドを必要とするため、OLE 2.0 の添付ファイルにアクセスするのに最適です。 IID_IStreamDocFile は、 [IStorage](https://msdn.microsoft.com/library/aa380015%28VS.85%29.aspx)インターフェイスを介して使用できる構造化ストレージに格納されているデータを含むプロパティに使用できます。 
   
-添付ファイル付きの**OpenProperty**を使用する方法の詳細については、 **PR_ATTACH_DATA_OBJ**プロパティと[添付ファイルを開く](opening-an-attachment.md)を参照してください。
+添付ファイル付きの**openproperty**の使用方法の詳細については、 **PR_ATTACH_DATA_OBJ**プロパティを参照し、[添付ファイルを開い](opening-an-attachment.md)てください。
   
-メソッドを呼び出すときに、[シーク](https://msdn.microsoft.com/library/aa380043%28v=VS.85%29.aspx)または[setsize 関数](https://msdn.microsoft.com/library/aa380044%28v=VS.85%29.aspx)のいずれか、ゼロの位置またはサイズの変数を使用する場合を除き、受信した**IStream**ポインターを使用しません。 **シーク**の呼び出しから返された_plibNewPosition_の出力パラメーターの値に依存しないでも、します。 
+0の位置またはサイズ変数を使用しない場合は、受け取った**IStream**ポインターを使用して、 [Seek](https://msdn.microsoft.com/library/aa380043%28v=VS.85%29.aspx)メソッドまたは[SetSize](https://msdn.microsoft.com/library/aa380044%28v=VS.85%29.aspx)メソッドを呼び出すことはできません。 また、 **Seek**呼び出しから返される_plibnewposition_出力パラメーターの値に依存しないようにしてください。 
   
-**IStream**インターフェイスを使用してプロパティにアクセスするのには**OpenProperty**を呼び出す場合は、変更することをそのインタ フェースを使用します。 その他のプロパティを更新しようとはしないで[IMAPIProp: IUnknown](imapipropiunknown.md) **SetProps**や[IMAPIProp::DeleteProps](imapiprop-deleteprops.md)などのメソッドです。 
+**IStream**インターフェイスを使用してプロパティにアクセスするために**openproperty**を呼び出す場合は、そのインターフェイスのみを使用して変更を加えます。 **setprops**や[imapiprop::D eleteprops](imapiprop-deleteprops.md)など、他の[imapiprop: IUnknown](imapipropiunknown.md)メソッドのいずれかを使用してプロパティを更新しないようにしてください。 
   
-**OpenProperty**のプロパティを複数回開くしないでください。 プロバイダーによって異なる場合があるため、結果は定義されていません。 
+**openproperty**を持つプロパティを複数回開いてはいけません。 結果は、プロバイダーによって異なる可能性があるため、未定義となります。 
   
-開く] プロパティを変更する場合は、MAPI_MODIFY フラグを設定します。 オブジェクトがプロパティをサポートするかどうかがわからない場合は、必要と思われるタグと MAPI_MODIFY フラグを設定します。 タグを設定すると、MAPI_MODIFY も設定する必要があります。
+開くプロパティを変更する必要がある場合は、MAPI_MODIFY フラグを設定します。 オブジェクトでプロパティがサポートされているかどうかがわからない場合は、MAPI_CREATE フラグと MAPI_MODIFY フラグを設定します。 MAPI_CREATE が設定されている場合は常に、MAPI_MODIFY も設定する必要があります。
   
-_Lpiid_パラメーターで指定されたインターフェイスに対応する 1 つに、 _lppUnk_パラメーターで返されるインターフェイス ポインターを見直すために責任があります。 メソッドを呼び出す[が](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)操作を終了するときに返されたポインターを使用することもする必要があります。 
+_lppunk_パラメーターで返されるインターフェイスポインターが、 _lpiid_パラメーターで指定されているインターフェイスに適したものになるように、recasting を担当しています。 また、返されたポインターを使用して、終了時に[IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドを呼び出す必要があります。 
   
-_UlFlags_パラメーターでフラグを設定ことがあります不足のために必要なプロパティへのアクセスの種類を示すためにではありません。 _UlInterfaceOptions_パラメーターには、フラグなどの追加データを配置できます。 依存するインターフェイスです。 いくつかのインタ フェース ( **IStream**) が使われ、そうでないです。 たとえば、 **IStream**を変更するプロパティを開くと MAPI_MODIFY だけでなく、 _ulInterfaceOptions_パラメーターに STGM_WRITE フラグを設定します。 [IMAPITable](imapitableiunknown.md)インターフェイスを使用してテーブルを開くときは、文字列のプロパティを保持するテーブルの列が Unicode 形式である必要があるかどうかを示すために MAPI_UNICODE に_ulInterfaceOptions_を設定できます。 
+_ulflags_パラメーターのフラグを設定しても、必要なプロパティへのアクセスの種類を示すには不十分な場合があります。 _ulinterfaceoptions_パラメーターには、フラグなどの追加データを入れることができます。 このデータはインターフェイスに依存します。 **IStream**などの一部のインターフェイスは、それを使用します。そうでないものもあります。 たとえば、 **IStream**を使用して変更するプロパティを開いた場合は、MAPI_MODIFY に加えて、 _ulinterfaceoptions_パラメーターの STGM_WRITE フラグを設定します。 [IMAPITable](imapitableiunknown.md)インターフェイスを使用してテーブルを開いた場合、MAPI_UNICODE に_ulinterfaceoptions_を設定して、テーブル内の文字列プロパティを保持する列が UNICODE 形式であるかどうかを示すことができます。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -136,7 +136,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|StreamEditor.cpp  <br/> |CStreamEditor::ReadTextStreamFromProperty  <br/> |MFCMAPI では、 **IMAPIProp::OpenProperty**メソッドを使用して、サイズの大きなテキストおよびバイナリのプロパティのストリーム インターフェイスを取得します。  <br/> |
+|streameditor .cpp  <br/> |cstreameditor:: readtextstreamfromproperty  <br/> |mfcmapi は、 **imapiprop:: openproperty**メソッドを使用して、大きなテキストおよびバイナリプロパティのストリームインターフェイスを取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -147,6 +147,6 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
 - [IMAPISupport::IStorageFromStream](imapisupport-istoragefromstream.md)
 - [IMAPITable : IUnknown](imapitableiunknown.md)
 - [IMAPIProp : IUnknown](imapipropiunknown.md)
-- [コード サンプルとしての MFCMAPI](mfcmapi-as-a-code-sample.md)
+- [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
 - [添付ファイルを開く](opening-an-attachment.md)
 

@@ -6,27 +6,27 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 39192535-b55b-4c49-b63f-edb542c7a2e5
-description: セクションの長さの割合として、スケッチ効果を使用する場合は、図形の線を図形の座標からのランダム化の量を決定します。 SketchLineChange セルの値を 0% に設定すると、図形の線のジオメトリは、図形の座標を一致します。 値が 100% の場合は、図形の線のジオメトリは、図形のジオメトリを従っていません。
-ms.openlocfilehash: 57d2af1a914710d7e5a58686b577014ceb7af424
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: スケッチ効果を使用するときに、図形の線のランダム化の量を、セクションの長さに対する割合として指定します。 [sketchlinechange] セルの値が 0% に設定されている場合、図形の線のジオメトリは図形の図形座標と一致します。 値が 100% の場合、図形の線のジオメトリは図形のジオメトリに沿っていません。
+ms.openlocfilehash: ba57a4d2e43a91475f4c3ab4862f723eb2653a89
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315128"
 ---
 # <a name="sketchlinechange-cell-additional-effect-properties-section"></a>[SketchLineChange] セル ([追加効果のプロパティ] セクション)
 
-セクションの長さの割合として、スケッチ効果を使用する場合は、図形の線を図形の座標からのランダム化の量を決定します。 **SketchLineChange**セルの値を 0% に設定すると、図形の線のジオメトリは、図形の座標を一致します。 値が 100% の場合は、図形の線のジオメトリは、図形のジオメトリを従っていません。 
+スケッチ効果を使用するときに、図形の線のランダム化の量を、セクションの長さに対する割合として指定します。 **[sketchlinechange]** セルの値が 0% に設定されている場合、図形の線のジオメトリは図形の図形座標と一致します。 値が 100% の場合、図形の線のジオメトリは図形のジオメトリに沿っていません。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-最適な結果を得るための [**SketchLineChange**] セルの値の理想的な範囲は、15% から 50% の間です。15% を下回る値ではほとんどわからず、50% を上回る値では線が過度にランダム化される可能性があります。 
+最適な結果を得るための [**SketchLineChange**] セルの値の理想的な範囲は、15% から 50% の間です。 15% を下回る値ではほとんどわからず、50% を上回る値では線が過度にランダム化される可能性があります。 
   
 別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**SketchLineChange**] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | SketchLineChange  <br/> |
+| セル名:  <br/> | [sketchlinechange]  <br/> |
    
 プログラムから、インデックスによって [**SketchLineChange**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

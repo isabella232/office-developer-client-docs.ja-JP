@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: f2220060-65ea-4969-88d7-8348bd5aa242
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8017094f6af95940aab8352d52cd1160f0b7a827
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ec806ed3ab871d6a36778b0898b2977628ccdcec
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316206"
 ---
 # <a name="pidtagformversion-canonical-property"></a>PidTagFormVersion 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 フォームのバージョンが含まれています。 
   
@@ -32,31 +32,31 @@ ms.locfileid: "22573762"
 |関連するプロパティ:  <br/> |PR_FORM_VERSION、PR_FORM_VERSION_A、PR_FORM_VERSION_W  <br/> |
 |識別子:  <br/> |0x3301  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |一般的な MAPI  <br/> |
+|エリア:  <br/> |MAPI 共通  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-これらのプロパティは、どのようなデザインのバージョンは、現在を示すフォームの効果です。 バージョンが定義され、フォームが管理しているデザイナーのし、任意の MAPI コンポーネントのバージョンは必ずしも関係ありません。 
+これらのプロパティは、フォームに対して現在有効なデザインバージョンを示します。 バージョンはフォームのデザイナーによって定義され、管理されており、すべての MAPI コンポーネントのバージョンに関連しているとは限りません。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

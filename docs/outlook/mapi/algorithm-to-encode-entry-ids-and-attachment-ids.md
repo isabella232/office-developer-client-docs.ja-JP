@@ -1,25 +1,25 @@
 ---
-title: エントリ ID と添付 ID をエンコードするためのアルゴリズム
+title: エントリ id と添付ファイル id をエンコードするためのアルゴリズム
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b9ae6679-99b7-6509-74d4-12aa13d54928
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 4d3ca89ea7d3d72f625d38e37494e253b05b1569
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 6c39fe513be122f265fdc316629a3e64a156fdc1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318180"
 ---
-# <a name="algorithm-to-encode-entry-ids-and-attachment-ids"></a>エントリ ID と添付 ID をエンコードするためのアルゴリズム
+# <a name="algorithm-to-encode-entry-ids-and-attachment-ids"></a>エントリ id と添付ファイル id をエンコードするためのアルゴリズム
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ストア プロバイダーに送信できます MAPI 統一リソース ロケーター (URL) の一部として、エントリ ID と、添付ファイル ID MAPI プロトコル ハンドラーでインデックス作成の準備が整っているオブジェクトを識別します。 ストア プロバイダーは、ID と ID の添付ファイルのエントリを Unicode 文字列としてエンコードします。 このトピックは、エントリ ID または添付ファイル ID のコンパクトな表現を生成するアルゴリズムを示しています。
+ストアプロバイダーは、mapi の Uniform resource Locator (URL) の一部として送信し、インデックス処理の準備ができているオブジェクトを識別するために、エントリ id と添付ファイル id を mapi プロトコルハンドラーに送信できます。 ストアプロバイダーは、エントリ id と添付ファイル id を Unicode 文字列としてエンコードします。 このトピックでは、エントリ id または添付ファイル id のコンパクト表現を生成するアルゴリズムを示します。
   
 ```cpp
 const WORD kwBaseOffset = 0xAC00;  // Hangul char range (AC00-D7AF) 
@@ -56,7 +56,7 @@ LPWSTR EncodeID(ULONG cbEID, LPENTRYID rgbID)
 
 
 
-[通知ベースのストア インデックス作成について](about-notification-based-store-indexing.md)
+[通知ベースのストアインデックス作成について](about-notification-based-store-indexing.md)
   
-[通知ベースのインデックス作成の MAPI URL について](about-mapi-urls-for-notification-based-indexing.md)
+[通知ベースのインデックス作成の MAPI url について](about-mapi-urls-for-notification-based-indexing.md)
 

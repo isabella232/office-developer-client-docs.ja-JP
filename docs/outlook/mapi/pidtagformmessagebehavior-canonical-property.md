@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: 8fd82432-9fd9-49ed-aa52-72109db04dc9
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0abb3cba2b72c18a2bc1a43a07130509ba29b56c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8bfb7e5af2e2e5e1a51225dc1cf20baf897752c1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316213"
 ---
 # <a name="pidtagformmessagebehavior-canonical-property"></a>PidTagFormMessageBehavior 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-TRUE が含まれる場合、メッセージは、現在のフォルダー内で構成する必要があります。 
+現在のフォルダー内にメッセージを構成する必要がある場合は、TRUE を指定します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_FORM_MESSAGE_BEHAVIOR  <br/> |
 |識別子:  <br/> |0x330A  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |一般的な MAPI  <br/> |
+|エリア:  <br/> |MAPI 共通  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-FALSE の値は、こと、メッセージする必要がありますで構成されるその他の個人間のメッセージとしては、[送信トレイ] フォルダーにことを示します。 
+値が FALSE の場合、メッセージは、送信トレイフォルダーにある他の個人外のメッセージとして構成する必要があることを示します。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

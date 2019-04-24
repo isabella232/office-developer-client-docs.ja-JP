@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: cd15d220-1f3d-440d-8699-0c934518b4a7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 716550a847aff868d01cb67356409537df83b6d8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ce087516dde110a22c129ae73259cc95e456e765
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317949"
 ---
 # <a name="cbnewsproptagarray"></a>CbNewSPropTagArray
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティ タグの指定された番号を含む新しい[SPropTagArray](sproptagarray.md)構造体に割り当てられるバイト数を計算します。 
+指定した数のプロパティタグを含む新しい[SPropTagArray](sproptagarray.md)構造に割り当てるバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**SPropTagArray** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**SPropTagArray** <br/> |
    
 ```cpp
 CbNewSPropTagArray (_ctag)
@@ -40,7 +40,7 @@ CbNewSPropTagArray (_ctag)
 
  __ctag_
   
-> 新しい**SPropTagArray**構造体に含まれるプロパティ タグの数。 
+> 新しい**SPropTagArray**構造に含めるプロパティタグの数。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -49,5 +49,5 @@ CbNewSPropTagArray (_ctag)
 [SPropTagArray](sproptagarray.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

@@ -6,20 +6,20 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 68fef652-5db7-4273-a0ad-b196c5fa114b
-description: 迷惑メールからアカウントを保護して、POP3 アカウントのメッセージのダウンロードを管理するアカウントの変更内容の通知をサポートして、アカウント情報へのアクセスを提供します。
-ms.openlocfilehash: 8d3a79045652869d56eb2a6c30e06408b67e0ca7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: アカウント情報へのアクセスを提供し、アカウント変更の通知をサポートし、スパムからアカウントを保護し、POP3 アカウントのメッセージダウンロードを管理します。
+ms.openlocfilehash: 83761292028021cc90bd171b02d875b36f2a09a3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316927"
 ---
 # <a name="account-management-api-reference"></a>アカウント管理 API リファレンス
 
-ここでは、アカウント管理 API、アカウント情報へのアクセスは、アカウントの変更の通知をサポートして、迷惑メールからアカウントを保護して、POP3 アカウントのメッセージのダウンロードを管理するための参照の内容を示します。
+このセクションでは、アカウント情報へのアクセスを提供し、アカウントの変更の通知をサポートし、スパムからアカウントを保護し、POP3 アカウントのメッセージダウンロードを管理する、アカウント管理 API のリファレンスコンテンツを提供します。
 
 
-- [定数](constants-account-management-api.md)
+- [Constants](constants-account-management-api.md)
     
 - [データ型](data-types-account-management-api.md)
     

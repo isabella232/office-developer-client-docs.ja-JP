@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: e6900ad7-c147-4816-93a9-5773170b115a
 description: WindowとWindowsのインターフェイスは、 OneNote 2013 API は OneNote ウィンドウを操作するユーザーを有効にするオブジェクトです。これらのオブジェクトでは、OneNote ウィンドウの集合を列挙し、特定のウィンドウのプロパティを変更することができます。
 ms.openlocfilehash: efc34312def588ecff54c63b3db84f8bf909352b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25399950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317037"
 ---
 # <a name="window-interfaces-onenote"></a>ウィンドウ インターフェイス (OneNote 2013)
 
@@ -30,45 +30,45 @@ OneNote ウィンドウ用に使用できる 4 つの表示モードを次に示
     
 - デスクトップの端に-(タスク バーのような)、デスクトップの任意の辺に OneNote ウィンドウをドッキングすることができますが表示されます。このビューは、ウィンドウに収まるように、デスクトップのサイズを縮小します。1 つだけのウィンドウをドッキングするには、任意の時点と、ウィンドウは、デスクトップをブロックすることがなく常に表示します。 
     
-次の図は、どのような全ページの表示、デスクトップの表示では、ドッキング ステーションと、すばやくメモがデスクトップ上のようになります。
+次の図は、完全なページビュー、デスクトップ上のドッキング、およびデスクトップ上のクイックノートの外観を示しています。
   
 **OneNote のビュー**
 
-![OneNote ウィンドウのビュー](media/ON15Con_views.jpg "OneNote ウィンドウのビュー")
+![OneNote ウィンドウビュー](media/ON15Con_views.jpg "OneNote ウィンドウビュー")
   
 ## <a name="interfaces"></a>インターフェイス
 
 このセクションは OneNote ウィンドウをプログラムで変更するのに使用できるメンバー、インターフェイスを示します。
   
-### <a name="windows-interface"></a>Windows のインターフェイス
+### <a name="windows-interface"></a>Windows インターフェイス
 
 **Windows**インターフェイスは、一連の OneNote ウィンドウを開いてアクセスすることができます。 **Application.Windows**を使用してアクセス、OneNote の **Application**クラスのプロパティです。これは、OneNote ウィンドウの列挙型のセットを返します。 
   
-**新しいプロパティ**
+**プロパティ**
 
-|**名前**|**型**|**説明**|
+|**名前**|**Type**|**説明**|
 |:-----|:-----|:-----|
 |**Count** <br/> |ulong  <br/> |**Windows**セットには、 **Window**オブジェクトの数を取得します。  <br/> |
-|**カレント ウィンドウ** <br/> |**Window** <br/> |アクティブな OneNote ウィンドウの **Window**オブジェクトを取得します。  <br/> |
+|**currentwindow** <br/> |**Window** <br/> |アクティブな OneNote ウィンドウの **Window**オブジェクトを取得します。  <br/> |
 |**Items** <br/> |**Window** <br/> |渡されたインデックス値に対応する **Window**オブジェクトを返します。このプロパティに直接アクセスできません。オブジェクトを返すため、 **Window** 、 **Windows [(uint) index]** を使用します。 <br/> |
    
-### <a name="window-interface"></a>ウィンドウ インターフェイス
+### <a name="window-interface"></a>ウィンドウインターフェイス
 
 **Window**インターフェイスは、各ウィンドウの特定のプロパティにアクセスすることができます。各 OneNote ウィンドウを列挙、 **Application**クラスの **Windows**プロパティを使用してアクセスできます。 
   
 **新しいプロパティ**
 
-|**名前**|**型**|**説明**|
+|**名前**|**Type**|**説明**|
 |:-----|:-----|:-----|
 |**Active** <br/> |bool  <br/> |取得またはウィンドウは、アクティブな OneNote ウィンドウであるかどうかを示す値を設定します。  <br/> |
-|**Application** <br/> |**Application** <br/> |ウィンドウに関連付けられている、OneNote の **Application**オブジェクトを取得します。  <br/> |
+|**Application** <br/> |**アプリケーション** <br/> |ウィンドウに関連付けられている、OneNote の **Application**オブジェクトを取得します。  <br/> |
 |**CurrentPageId** <br/> |string  <br/> |ウィンドウの作業中の OneNote のページのオブジェクト ID を取得します。  <br/> |
-|**CurrentSectionId** <br/> |string  <br/> |ウィンドウの作業中の OneNote のセクションのオブジェクト ID を取得します。  <br/> |
-|**CurrentSectionGroupId** <br/> |string  <br/> |オブジェクト ウィンドウの作業中の OneNote のセクション グループの ID を取得します。  <br/> |
+|**currentsectionid** <br/> |string  <br/> |ウィンドウの作業中の OneNote のセクションのオブジェクト ID を取得します。  <br/> |
+|**currentsectiongroupid** <br/> |string  <br/> |オブジェクト ウィンドウの作業中の OneNote のセクション グループの ID を取得します。  <br/> |
 |**CurrentNotebookId** <br/> |string  <br/> |ウィンドウの作業中の OneNote ノートブックのオブジェクト ID を取得します。  <br/> |
-|**DockedLocation** <br/> |**DockedLocation** <br/> |取得または、OneNote ウィンドウのドッキング場所を設定します。  <br/> |
+|**doc/場所** <br/> |**doc/場所** <br/> |取得または、OneNote ウィンドウのドッキング場所を設定します。  <br/> |
 |**FullPageView** <br/> |bool  <br/> |取得またはウィンドウが全体表示 (最小限の UI ビュー) であるかどうかを示す値を設定します。  <br/> |
-|**エピソードがあります。** <br/> |bool  <br/> |取得またはをすばやくメモ ウィンドウだかどうかを示す値を設定します。  <br/> |
+|**sidenote 示す** <br/> |bool  <br/> |取得またはをすばやくメモ ウィンドウだかどうかを示す値を設定します。  <br/> |
 |**WindowHandle** <br/> |ulong  <br/> |OneNote ウィンドウのハンドル ID を取得します。  <br/> |
    
 **メソッド**
@@ -87,11 +87,11 @@ OneNote ウィンドウ用に使用できる 4 つの表示モードを次に示
 
 |||
 |:-----|:-----|
-|**説明** <br/> |OneNote のリンクを渡された場合 (onenote://)、OneNote 内の対応する場所には、OneNote ウィンドウが開きます。 ただし、リンクが外部リンク、https://、file://などの場合、[セキュリティ] ダイアログ ボックスが表示されます。 棄却に関する、OneNote でリンクを開くしようし、HResult.hrObjectDoesNotExist エラーが返されます。  <br/> |
+|**説明** <br/> |OneNote のリンクを渡された場合 (onenote://)、OneNote 内の対応する場所には、OneNote ウィンドウが開きます。 ただし、リンクが https://や file://などの外部リンクの場合は、[セキュリティ] ダイアログボックスが表示されます。 棄却に関する、OneNote でリンクを開くしようし、HResult.hrObjectDoesNotExist エラーが返されます。  <br/> |
 |**構文** <br/> | `HRESULT NavigateToUrl (`           ` [in]BSTR bstrUrl); ` <br/> |
 |**パラメーター** <br/> | _bstrUrl_-URL に移動します。  <br/> |
    
-**SetDockedLocation**
+**setdoc/location**
 
 |||
 |:-----|:-----|
@@ -99,7 +99,7 @@ OneNote ウィンドウ用に使用できる 4 つの表示モードを次に示
 |**構文** <br/> | `HRESULT SetDockedLocation`(           `[in] DockLocation dockLocation,`           `[in] POINT ptMonitor);` <br/> |
 |**パラメーター** <br/> | _dockLocation_ - は、 OneNote 2013ウィンドウのドッキング場所を示します。  <br/>  _ptMonitor_ - x、y 座標、ウィンドウを監視する (省略可) を示しますに固定する必要があります。  <br/> |
    
-## <a name="example"></a>次の使用例では、テーブルからレコードを削除できないようにします。
+## <a name="example"></a>例
 
 次のコードでは、OneNote ウィンドウ ドッキング ウィンドウを反復処理します。ドッキング モードのウィンドウが存在しない場合の例は、作業中のウィンドウをドッキングします。アクティブなウィンドウが存在しない場合、コードは新しいドッキング ウィンドウを作成します。
   

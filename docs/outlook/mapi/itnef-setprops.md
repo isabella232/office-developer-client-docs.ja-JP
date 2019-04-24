@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 09e4b427-316b-4630-9f3d-81e74f040d7b
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 81f9388b67d3194fe1442091b9f4f75a7671cb6d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: f7372830624d774fb914ae956e86a9e4476cf487
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315051"
 ---
 # <a name="itnefsetprops"></a>ITnef::SetProps
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-元のメッセージまたは添付ファイルを変更することがなくカプセル化されたメッセージまたは添付ファイルの 1 つまたは複数のプロパティの値を設定します。 
+元のメッセージまたは添付ファイルを変更せずに、カプセル化されたメッセージまたは添付ファイルの1つ以上のプロパティの値を設定します。 
   
 ```cpp
 HRESULT SetProps(
@@ -36,42 +36,42 @@ HRESULT SetProps(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]プロパティの値を設定する方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番プロパティ値の設定方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 TNEF_PROP_CONTAINED 
   
-> メッセージまたは添付ファイルの_ulElemID_パラメーターで指定されたプロパティのみをエンコードします。 
+> _ulの id_パラメーターで指定されたメッセージまたは添付ファイルからのプロパティのみをエンコードします。 
     
- _ulElemID_
+ _ulの id_
   
-> [in]添付ファイルの**PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティは、一意にその数値が含まれていますが、親メッセージの添付ファイルを識別します。
+> 順番添付ファイルの**PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティ。親メッセージの添付ファイルを一意に識別する番号を含みます。
     
- _あう_
+ _cvalues_
   
-> [in]_LpProps_パラメーターが指す[SPropValue](spropvalue.md)構造体のプロパティ値の数です。 
+> 順番_lpprops_パラメーターによってポイントされている[spropvalue](spropvalue.md)構造のプロパティ値の数。 
     
- _lpProps_
+ _lpprops_
   
-> [in]設定するプロパティのプロパティ値を含む**SPropValue**構造体へのポインター。 
+> 順番設定するプロパティのプロパティ値を含む**spropvalue**構造体へのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、予期される値または値が返されます。
+> 呼び出しが成功し、予想される値または値が返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-プロバイダー、転送メッセージ ストア プロバイダーでは、プロパティを設定するのにはゲートウェイの呼び出し、 **ITnef::SetProps**メソッドに含める元のメッセージまたは添付ファイルを変更することがなく、メッセージまたは添付ファイルをカプセル化します。 この呼び出しで設定されたプロパティは、カプセル化されたメッセージ内の既存のプロパティをオーバーライドします。 
+トランスポートプロバイダー、メッセージストアプロバイダー、ゲートウェイは、 **ITnef:: setprops**メソッドを呼び出して、元のメッセージまたは添付ファイルを変更せずに、メッセージまたは添付ファイルのカプセル化に含めるプロパティを設定します。 この呼び出しで設定されたプロパティは、カプセル化されたメッセージの既存のプロパティより優先されます。 
   
- **SetProps**が[OpenTnefStream](opentnefstream.md)または[OpenTnefStreamEx](opentnefstreamex.md)関数の場合、TNEF_ENCODE フラグを使用して開かれている TNEF オブジェクトに対してのみサポートされています。 プロパティの任意の数は、この呼び出しで設定できます。 
+ **setprops**は、 [OpenTnefStream](opentnefstream.md)または[OpenTnefStreamEx](opentnefstreamex.md)関数の TNEF_ENCODE フラグを使用して開かれた TNEF オブジェクトに対してのみサポートされています。 この呼び出しでは、任意の数のプロパティを設定できます。 
   
 > [!NOTE]
-> **SetProps**の実際の TNEF エンコードが行われないまで、 [ITnef::Finish](itnef-finish.md)メソッドが呼び出された後です。 **SetProps**に渡されたポインターに保つように有効期限**を終了**する呼び出しが行われた後、この機能を示します。 その時点で、すべてのオブジェクトと**SetProps**の呼び出しに渡されるデータは、リリースまたは解放されます。 
+> [ITnef:: Finish](itnef-finish.md)メソッドが呼び出されるまで、 **setprops**の実際の TNEF エンコードは行われません。 この機能は、 **setprops**に渡されたポインターが、呼び出しが**完了**するまで有効なままである必要があることを意味します。 この時点で、 **setprops**呼び出しに渡されたすべてのオブジェクトとデータを解放または解放することができます。 
   
 ## <a name="see-also"></a>関連項目
 

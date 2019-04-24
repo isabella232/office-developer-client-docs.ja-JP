@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 027092f0-f2d6-49e8-a8d0-8926824953a2
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 548ec33e39e181aba8a72b5325f3f426b9d51762
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 822b4164737aa6010ccce108b544410104ac023d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315471"
 ---
 # <a name="ipstoverride1getpersistedregistrations"></a>IPSTOVERRIDE1::GetPersistedRegistrations
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-個人用フォルダー (.pst) ファイルの登録の一覧を取得します。
+個人用フォルダー (.pst) ファイルの登録リストを取得します。
   
 ```cpp
 HRESULT GetPersistedRegistration(SPropValue **ppmval);
@@ -35,16 +35,16 @@ HRESULT GetPersistedRegistration(SPropValue **ppmval);
 
  _ppmval_
   
-> [in][SPropValue](spropvalue.md)構造体へのポインターへのポインター。 この構造体の ulPropTag メンバーは、型の PT_MV_UNICODE と MVszW の値のメンバーが null で終わる Unicode 文字列の配列になります。 これらの文字列は、登録の永続化するための Dll へのパスです。 
+> 順番[spropvalue](spropvalue.md)構造体へのポインターへのポインター。 この構造体の ulPropTag メンバーの型は PT_MV_UNICODE で、MVszW value メンバーは、null で終了する UNICODE 文字列の配列になります。 これらの文字列は、登録が永続化されている dll へのパスです。 
     
 > [!NOTE]
-> ANSI .pst のサポートが実装されていません。 
+> ANSI の .pst サポートは実装されていません。 
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 関数の呼び出しに成功しました。
+> 関数呼び出しが成功しました。
     
 ## <a name="see-also"></a>関連項目
 

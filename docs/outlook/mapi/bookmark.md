@@ -12,47 +12,47 @@ api_type:
 - COM
 ms.assetid: 678bdc52-3404-48b2-9154-64ce2a941555
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: be41a9916b6b231d5715cf18fe2b0d804434f2ea
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 069cb41ceac70a2eaaa08440e43745605890f071
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318040"
 ---
 # <a name="bookmark"></a>BOOKMARK
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブル内の位置を記憶するためのブックマークのデータを定義します。 
+テーブル内の位置を記憶するためのブックマークデータを定義します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連する方法があります。  <br/> |[IMAPITable::CreateBookmark](imapitable-createbookmark.md)[IMAPITable::FreeBookmark](imapitable-freebookmark.md) <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連するメソッド:  <br/> |[IMAPITable:: createbookmark](imapitable-createbookmark.md)[IMAPITable:: freebookmark](imapitable-freebookmark.md) <br/> |
    
 ```cpp
 typedef ULONG_PTR BOOKMARK;
 ```
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-MAPI には、以下のとおり、3 つのブックマークが定義されています。
+MAPI では、次のように3つのブックマークが定義されています。
   
 BOOKMARK_BEGINNING 
   
-> テーブルの開始位置を記憶します。 
+> 表の開始位置を記憶します。 
     
 BOOKMARK_CURRENT 
   
-> テーブルの現在の位置を記憶します。
+> 表の現在の位置を記憶します。
     
 BOOKMARK_END 
   
-> テーブルの末尾の位置を記憶します。
+> 表の終了位置を記憶します。
     
-クライアントは、他のテーブルの位置を記憶するための他のブックマークを作成できます。 ブックマークは、テーブルが開いているときのみ有効です。 クライアントは、関連するテーブルを閉じる前に、作成したすべてのブックマークを解放する必要があります。 
+クライアントは、他のテーブルの位置を記憶するためのブックマークを作成できます。 ブックマークは、テーブルを開いている場合にのみ有効です。 クライアントは、関連付けられたテーブルを閉じる前に、作成したすべてのブックマークを解放する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -67,5 +67,5 @@ BOOKMARK_END
 [IMAPITable::SeekRow](imapitable-seekrow.md)
 
 
-[MAPI データ型](mapi-data-types.md)
+[MAPI のデータ型](mapi-data-types.md)
 

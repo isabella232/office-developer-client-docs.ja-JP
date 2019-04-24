@@ -1,5 +1,5 @@
 ---
-title: Windows サービスからの MAPI 呼び出し
+title: Windows サービスからの MAPI の呼び出し
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,37 +7,37 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: debf7ec3-e9f9-4912-b9a2-fc0953a56a01
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: a606b8bf82ce4c06c8e55f6e4df94220bc67501d
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318107"
 ---
-# <a name="calling-mapi-from-windows-services"></a>Windows サービスからの MAPI 呼び出し
+# <a name="calling-mapi-from-windows-services"></a>Windows サービスからの MAPI の呼び出し
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI に準拠したサービス ・ プロバイダーで動作する Windows サービスとして記述されている MAPI クライアント アプリケーションを有効にするには、MAPI には、いくつかの制限事項と要件が課されます。
+mapi 準拠のサービスプロバイダーで動作するように Windows サービスとして記述されている mapi クライアントアプリケーションを有効にするために、mapi にはいくつかの制限と要件があります。
   
-MAPI クライアントでは、次の制限があります。
+MAPI クライアントには、次の制限があります。
   
-- ユーザー インターフェイスすることができません。
+- ユーザーインターフェイスを許可することはできません。
     
-- 密結合のメッセージ ・ ストアおよびトランスポート経由でのみメッセージを送信するプロバイダーです。 さらに、MAPI クライアントは送信し、Microsoft Exchange Server ではのみ、または別のサーバ ・ ベースのトランスポート プロバイダーを使用してメッセージを受信できます。 ほとんどのトランスポート プロバイダーは、クライアント アプリケーションと MAPI スプーラーとの間の id およびセキュリティの問題のため、サービスでサポートされていません。 
+- メッセージは密結合されたメッセージストアとトランスポートプロバイダーを使用してのみ送信できます。 また、MAPI クライアントは、Microsoft Exchange Server または別のサーバーベースのトランスポートプロバイダーのみを使用して、メッセージの送受信を行うことができます。 クライアントアプリケーションと MAPI スプーラーとの間の id とセキュリティの問題のため、サービスではほとんどのトランスポートプロバイダーがサポートされていません。 
     
-すべての MAPI クライアント アプリケーション、Windows サービスとして実装されるかどうかが MAPI ライブラリを初期化するために[生じます](mapiinitialize.md)関数を呼び出す必要があります。 [OleInitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx)関数の呼び出しは、OLE ライブラリを使用する必要もあります。 [生じます](mapiinitialize.md)、 [OleInitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx)の両方は、コンポーネント オブジェクト モデル (COM) ライブラリを初期化するために、 [CoInitialize](https://msdn.microsoft.com/library/ms678543%28VS.85%29.aspx)関数への呼び出しを確認します。 サービスのクライアント、MAPI_NT_SERVICE、特別なフラグ、 **ulFlags** 、 [MAPIINIT_0](mapiinit_0.md)構造体のメンバー[生じます](mapiinitialize.md)に渡されるのと設定[MAPILogonEx](mapilogonex.md)に渡される_ulFlags_パラメーターでMAPI の特殊な実装に通知する関数です。 
+Windows サービスとして実装されているかどうかにかかわらず、すべての mapi クライアントアプリケーションは、 [MAPIInitialize](mapiinitialize.md)関数を呼び出して mapi ライブラリを初期化する必要があります。 [oleinitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx)関数の呼び出しは、OLE ライブラリを使用するためにも必要です。 [MAPIInitialize](mapiinitialize.md)と[oleinitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx)の両方で、 [CoInitialize](https://msdn.microsoft.com/library/ms678543%28VS.85%29.aspx)関数を呼び出して、コンポーネントオブジェクトモデル (COM) ライブラリを初期化します。 サービスであるクライアントは、 [MAPIInitialize](mapiinitialize.md)に渡される[MAPIINIT_0](mapiinit_0.md)構造の**ulflags**メンバーと、 [MAPILogonEx](mapilogonex.md)に渡される_ulflags_パラメーターに、特殊なフラグ MAPI_NT_SERVICE を設定する必要があります。MAPI に特別な実装を通知する関数。 
   
-Windows サービスとして作成され、MAPI クライアント ・ インタ フェースを記述する MAPI クライアントでは、追加の要件があります。 [MAPILogonEx](mapilogonex.md)の呼び出しでは、MAPI_NO_MAIL フラグを設定する必要があります。 その他の種類のクライアントは、MAPI によって自動的に設定されているために、ログオンにフラグを設定する必要はありません。
+Windows サービスとして記述され、mapi クライアントインターフェイスで記述された mapi クライアントには、追加の要件があります。 MAPI_NO_MAIL フラグは、 [MAPILogonEx](mapilogonex.md)への呼び出しで設定する必要があります。 他の種類のクライアントは、MAPI によって自動的に設定されるので、ログオンのフラグを設定する必要はありません。
   
-初期化スレッドでメッセージを処理するためにサービスとして実装されている MAPI クライアントは、次の。
+初期化スレッドでメッセージを処理するために、サービスとして実装されている MAPI クライアントは次のことを行います。
   
-1. [MsgWaitForMultipleObjects](https://msdn.microsoft.com/library/ms684242%28VS.85%29.aspx)関数を呼び出すときに、メイン スレッドはブロックします。 
+1. メインスレッドがブロックされたときに[MsgWaitForMultipleObjects](https://msdn.microsoft.com/library/ms684242%28VS.85%29.aspx)関数を呼び出します。 
     
-2. _NCount_パラメーターの値の合計が[MsgWaitForMultipleObjects](https://msdn.microsoft.com/library/ms684242%28VS.85%29.aspx)に返されるときにメッセージを処理するために Windows の機能の[自動インクリメント](https://msdn.microsoft.com/library/ms644936%28VS.85%29.aspx)を[獲得](https://msdn.microsoft.com/library/ms644955%28VS.85%29.aspx)で[もないとき](https://msdn.microsoft.com/library/ms644934%28VS.85%29.aspx)のシーケンスを呼び出すと、**WAIT_OBJECT_0**メッセージがキュー内であることを示す値です。
+2. [GetMessage](https://msdn.microsoft.com/library/ms644936%28VS.85%29.aspx)、 [TranslateMessage](https://msdn.microsoft.com/library/ms644955%28VS.85%29.aspx)、および[DispatchMessage](https://msdn.microsoft.com/library/ms644934%28VS.85%29.aspx)の一連の Windows 関数を呼び出して、 [MsgWaitForMultipleObjects](https://msdn.microsoft.com/library/ms684242%28VS.85%29.aspx)が_nCount_パラメーターの値の合計を返す場合にメッセージを処理します。**WAIT_OBJECT_0**の値。これは、メッセージがキューにあることを示します。
     
 ## <a name="see-also"></a>関連項目
 

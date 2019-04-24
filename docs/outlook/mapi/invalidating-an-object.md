@@ -1,5 +1,5 @@
 ---
-title: オブジェクトの無効化
+title: オブジェクトを無効にする
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,27 +7,27 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 7d601cee-ffc4-4c7c-8006-40b717dee247
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2346ec8541e1a8b7f5ea198722833447f9f5a289
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: bf7ef15ccfd9cd015771785bda9d6ad79415736b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317200"
 ---
-# <a name="invalidating-an-object"></a>オブジェクトの無効化
+# <a name="invalidating-an-object"></a>オブジェクトを無効にする
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロバイダーのシャット ダウン プロセスの一環として、オブジェクトを無効にすることもできます。 オブジェクトが無効では、vtable と vtable が同じ 3 つの**IUnknown**メソッドの実装が含まれている: **AddRef**、**リリース**、および**バージョン管理規則によって**。 [IMAPISupport::MakeInvalid](imapisupport-makeinvalid.md)、3 つの一般的なプロバイダーの種類のそれぞれのサポート オブジェクトに含まれるメソッドを呼び出すことによってオブジェクトを無効にします。 プロバイダーは、通常、ログオン オブジェクトの**ログオフ時**のメソッドの実装ではこの呼び出しを作成します。 
+プロバイダーのシャットダウンプロセスの一環として、オブジェクトを無効にすることもできます。 オブジェクトを無効にするには、3つの**IUnknown**メソッド ( **AddRef**、 **Release**、および**QueryInterface**) の実装を含む vtable に vtable を置き換える必要があります。 3つの一般的なプロバイダーの各種類の support オブジェクトに含まれているメソッドである[imapisupport:: makeinvalid](imapisupport-makeinvalid.md)を呼び出して、オブジェクトを無効にします。 プロバイダーは通常、この呼び出しをログオンオブジェクトの**Logoff**メソッドの実装で行います。 
   
-MAPI オブジェクトに関連付けられているメモリを解放する最終的な責任は、オブジェクトを無効にします。 すべてのオブジェクトに接続されているリソースを解放し、すべての継承されたインターフェイスのメソッドを無効にする**MakeInvalid**を呼び出してできます。 これらのメソッドへの呼び出しには、MAPI_E_INVALID_OBJECT が返されます。 **MakeInvalid**を使用して、無視するように多くのサービス プロバイダーを選択するオプションです。 
+オブジェクトを無効にすると、オブジェクトに関連付けられているメモリを解放するための最終的な責任が MAPI に提供されます。 オブジェクトに接続されているすべてのリソースを解放し、 **makeinvalid**を呼び出して、継承されたインターフェイス内のすべてのメソッドを無効にすることができます。 これらのメソッドを呼び出すと、MAPI_E_INVALID_OBJECT が返されます。 **makeinvalid**を使用することは、多くのサービスプロバイダーが無視することを選択するオプションです。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[サービス プロバイダーのシャットダウン](shutting-down-a-service-provider.md)
+[サービスプロバイダーのシャットダウン](shutting-down-a-service-provider.md)
 

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5ca86ee8-1bf6-4ec8-95b3-575c22fbb170
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 329771bf79e30f07c9de0a311aa2a836ca507c38
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 87432d8982c5dc1f64396187739e97314edb385c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321848"
 ---
 # <a name="imapiformmgrisinconflict"></a>IMAPIFormMgr::IsInConflict
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームに独自のメッセージの競合を処理できるかどうかを決定します。 メッセージとは競合している場合は複数のユーザーによって同時に編集されましたが。 パブリック フォルダー内のメッセージに可能性があります。
+フォームが独自のメッセージ競合を処理できるかどうかを決定します。 メッセージが複数のユーザーによって同時に編集されている場合、メッセージは競合しています。 これは、パブリックフォルダー内のメッセージに発生する可能性があります。
   
 ```cpp
 HRESULT IsInConflict(
@@ -37,41 +37,41 @@ HRESULT IsInConflict(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulMessageFlags_
+ _ulmessageflags_
   
-> [in]フラグは、 **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) のプロパティ、メッセージの現在の状態を示すメッセージのコピーのビットマップへのポインター。
+> 順番メッセージの現在の状態を示す、メッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティからコピーされたフラグのビットマスクへのポインター。
     
- _ulMessageStatus_
+ _ulmessagestatus_
   
-> [in]メッセージの状態に関する追加情報を提供するメッセージの**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) のプロパティからコピーしたクライアント定義またはプロバイダー定義のフラグのビットマスクです。
+> 順番メッセージの状態に関する追加情報を提供する、メッセージの**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) プロパティからコピーされた、クライアント定義またはプロバイダー定義のフラグのビットマスク。
     
- _szMessageClass_
+ _szmessageclass_
   
-> [in]メッセージのメッセージ クラスの名前を示す文字列です。
+> 順番メッセージのメッセージクラスの名前を表す文字列。
     
- _pFolderFocus_
+ _pfolderfocus_
   
-> [in]メッセージを含むフォルダーへのポインター。 _PFolderFocus_パラメーターは、(たとえば、メッセージは、別のメッセージに埋め込まれている) 場合、このようなフォルダーが存在しない場合、NULL にすることができます。 
+> 順番メッセージを含むフォルダーへのポインター。 このようなフォルダーが存在しない場合 (たとえば、メッセージが別のメッセージに埋め込まれている場合) は、 _pfolderfocus_パラメーターを NULL にすることができます。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> フォームは、独自のメッセージの競合を処理しません。
+> フォームでは、独自のメッセージの競合は処理されません。
     
 S_FALSE 
   
-> フォームは、独自のメッセージの競合を処理または対象の情報が渡されたメッセージは競合ではないです。
+> フォームが独自のメッセージ競合を処理するか、渡された情報が競合していないことを示すメッセージを表示します。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォーム ビューアーは、特定のフォームが独自のメッセージの競合を処理していないかどうかを検出する**IMAPIFormMgr::IsInConflict**メソッドを呼び出します。 **IsInConflict**では、競合のフラグが存在する_ulMessageFlags_および_ulMessageStatus_パラメーターにビットマスクがチェックされます。 競合のフラグが設定されている場合、 **IsInConflict**は、 _szMessageClass_パラメーターに渡されるメッセージ クラスを解決し、フォームは、独自の競合を処理しない場合は、S_OK を返します。 **IsInConflict**は、フォームは、独自の競合を処理する場合に S_FALSE を返します。 
+フォームビューアーは、 **imapiformmgr:: IsInConflict**メソッドを呼び出して、特定のフォームが独自のメッセージ競合を処理していないかどうかを検出します。 **IsInConflict**は、競合フラグが存在するかどうかについて、 _ulmessageflags_および_ulmessageflags_パラメーターのビットマスクをチェックします。 競合フラグが設定されている場合、 **IsInConflict**は、 _szmessageclass_パラメーターで渡されたメッセージクラスを解決し、フォームが自身の競合を処理していない場合は S_OK を返します。 フォームが自身の競合を処理する場合、 **IsInConflict**は S_FALSE を返します。 
   
-独自の競合を処理しないフォームでは、 [IMAPIFormMgr::LoadForm](imapiformmgr-loadform.md)メソッドを使用して開く必要があり、既存のフォーム オブジェクトを再利用することはできません。 
+独自の競合を処理しないフォームは、 [imapiformmgr:: loadform](imapiformmgr-loadform.md)メソッドを使用して開く必要があります。また、既存の form オブジェクトを再利用することはできません。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-クライアント アプリケーションは、通常、フォルダー内の次または前のメッセージを 1 つのメッセージから、アプリケーションが移動するときに、競合に対処するあります。 メッセージが競合しているがそのメッセージのフォームのサーバーの競合を処理できる場合は、クライアント アプリケーションは、次または前のメッセージを表示するため、通常のコードを実行する必要があります。 フォームのサーバーには、競合を処理できません、クライアント アプリケーションは必要がありますの次または前のメッセージのメッセージ クラスに気付いていなかったかのように進みます。 
+通常、クライアントアプリケーションは、あるメッセージからフォルダー内の次または前のメッセージにアプリケーションが移動したときに、競合を処理する必要があります。 メッセージが競合していても、そのメッセージのフォームサーバーが競合を処理できる場合、クライアントアプリケーションは、次のメッセージまたは前のメッセージを表示するために、通常のコードを実行する必要があります。 フォームサーバーが競合を処理できない場合は、次または前のメッセージのメッセージクラスを認識していない場合と同様に、クライアントアプリケーションを続行する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

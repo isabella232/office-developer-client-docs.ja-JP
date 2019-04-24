@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: e22244a2-ac5f-910a-501f-4483ea0667c2
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5a0632ffd892c08fdf19de2c9b34607c27534f19
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: b9086383b45d40d5839284ac785d72438be60e00
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317193"
 ---
 # <a name="iostxinitsync"></a>IOSTX::InitSync
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-同期を開始しようとしていますが、ローカル メッセージ ストアに通知します。
+同期が開始されようとしていることをローカルメッセージストアに通知します。
   
 ```cpp
 HRESULT InitSync( 
@@ -33,11 +33,11 @@ HRESULT InitSync(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]同期中に、適切な動作を決定するフラグを設定します。 Outlook は、クライアントに提供する情報を決定するのにレプリケーションの状態マシンの各状態でこれらのフラグを使用します。 たとえば、クライアントでは、 **SYNC_ONLY_ASSOCIATED**が成功した場合 Outlook はのみを返す関連付けられている (非表示) の項目に関連する情報です。 
+> 順番同期時に適切な動作を決定するフラグ。 Outlook は、レプリケーション状態マシンの各状態でこれらのフラグを使用して、クライアントに対して提供する必要のある情報を特定します。 たとえば、クライアントが**SYNC_ONLY_ASSOCIATED**に合格した場合、Outlook は関連付けられた (または非表示の) アイテムに関連する情報のみを返します。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -58,5 +58,5 @@ HRESULT InitSync(
 [IOSTX : IUnknown](iostxiunknown.md)
 
 
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
 

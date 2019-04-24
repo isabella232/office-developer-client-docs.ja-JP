@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 56c3bdae-a3a8-4334-b6d2-a89c6820d72e
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 1c48ceefa84658b236b8dfa4e10df18c175d920e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 6de0fed4df9d23e67c3520ffb019a961b890f988
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316559"
 ---
 # <a name="imapisupportgetsvcconfigsupportobj"></a>IMAPISupport::GetSvcConfigSupportObj
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ サービスのサポート オブジェクトを作成します。
+メッセージサービスサポートオブジェクトを作成します。
   
 ```cpp
 HRESULT GetSvcConfigSupportObj(
@@ -34,7 +34,7 @@ HRESULT GetSvcConfigSupportObj(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
@@ -42,19 +42,19 @@ HRESULT GetSvcConfigSupportObj(
     
  _lppSvcSupport_
   
-> [out]メッセージ サービスのサポートの新しいオブジェクトへのポインターへのポインター。
+> 読み上げ新しいメッセージサービスサポートオブジェクトへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 構成のサポート オブジェクトが正常に作成されました。
+> 構成サポートオブジェクトが正常に作成されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-サポートのすべてのオブジェクトの**IMAPISupport::GetSvcConfigSupportObj**メソッドを実装します。 サービス プロバイダーは、メッセージ サービスのエントリ ポイント関数に渡す設定のサポート オブジェクトを作成するのには**GetSvcConfigSupportObj**を呼び出します。 
+**imapisupport:: GetSvcConfigSupportObj**メソッドは、すべてのサポートオブジェクトに実装されています。 サービスプロバイダーは**GetSvcConfigSupportObj**を呼び出して、メッセージサービスエントリポイント関数に渡す構成サポートオブジェクトを作成します。 
   
-メッセージ サービスのエントリ ポイント関数では、 [MSGSERVICEENTRY](msgserviceentry.md)のプロトタイプに基づいており、 [IMsgServiceAdmin](imsgserviceadminiunknown.md)インターフェイスのメソッドによって呼び出されます。 メッセージ サービスのエントリ ポイント関数は、メッセージ サービス自体を構成するか、プロファイルが変更されたときに、その他のアクションを実行できます。 メッセージ サービスのエントリ ポイント関数は、プロパティ シートを表示することによって、またはプロパティ値の配列を構成の変更をサポートできますが、 [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)メソッドに渡されます。 
+メッセージサービスエントリポイント関数は、 [msgserviceentry](msgserviceentry.md)プロトタイプに基づいており、 [IMsgServiceAdmin](imsgserviceadminiunknown.md)インターフェイスのメソッドによって呼び出されます。 メッセージサービスエントリポイント関数を使用すると、メッセージサービスが自分自身を構成したり、プロファイルが変更されたときに他のアクションを実行したりできます。 メッセージサービスエントリポイント関数は、プロパティシートを表示するか、 [IMsgServiceAdmin:: ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)メソッドに渡されたプロパティ値配列を使用して、構成の変更をサポートできます。 
   
 ## <a name="see-also"></a>関連項目
 

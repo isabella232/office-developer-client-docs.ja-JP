@@ -1,5 +1,5 @@
 ---
-title: IPropDataHrAddObjProps
+title: ipropdatahraddobjprops
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 683cf476-3c02-4b3b-939f-6fff6611f9aa
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: ae0d6d58f96738a9686dbdda86336c040c2e2f68
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: df63f08d3d453575816c4f7ab043f802023e21d0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315534"
 ---
 # <a name="ipropdatahraddobjprops"></a>IPropData::HrAddObjProps
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_OBJECT の種類の 1 つまたは複数のプロパティをオブジェクトに追加します。
+オブジェクトに PT_OBJECT 型の1つ以上のプロパティを追加します。
   
 ```cpp
 HRESULT HrAddObjProps(
@@ -34,43 +34,43 @@ HRESULT HrAddObjProps(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _lpPropTagArray_
   
-> [in]追加するプロパティを指定するプロパティ タグの配列へのポインター。
+> 順番追加するプロパティを示すプロパティタグの配列へのポインター。
     
- _lppProblems_
+ _lppproblems 問題_
   
-> [で [チェック アウト]入力がある、 [SPropProblemArray](spropproblemarray.md)構造体への有効なポインターまたは NULL。 [出力、追加できませんでしたのプロパティに関する情報を格納する構造体へのポインターへのポインターまたは NULL。 プロパティの問題の配列の構造体へのポインターが有効なポインターが渡された場合にのみ返されます。 
+> [入力]入力時、 [spropの配列](spropproblemarray.md)構造体への有効なポインター、または NULL。 出力時に、追加できなかったプロパティに関する情報を含む構造体へのポインター、または NULL。 プロパティ問題の配列構造体へのポインターは、有効なポインターが渡された場合にのみ返されます。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> プロパティに追加されました。
+> プロパティが正常に追加されました。
     
 MAPI_E_INVALID_TYPE 
   
-> プロパティは、PT_OBJECT は、 _lpPropTagArray_パラメーターが指す配列に渡された以外を入力します。 
+> PT_OBJECT 以外のプロパティの種類が、 _lpPropTagArray_パラメーターが指す配列に渡されました。 
     
 MAPI_E_NO_ACCESS 
   
-> オブジェクトは、読み取り/書き込み権限を許可しないように設定されています。
+> オブジェクトには、読み取り/書き込みアクセス許可が設定されていません。
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> すべてではなく、いくつかのプロパティが追加されました。
+> プロパティのいくつかは追加されていますが、全部ではありません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IPropData::HrAddObjProps**メソッドは、PT_OBJECT の種類の 1 つまたは複数のプロパティをオブジェクトに追加します。 **SetProps**を呼び出すことによってオブジェクトのプロパティを作成することはできませんので、 **HrAddObjProps**は代わりに、オブジェクトのプロパティの[IMAPIProp::SetProps](imapiprop-setprops.md)メソッドを提供します。 [IMAPIProp::GetPropList](imapiprop-getproplist.md)メソッドで返されるプロパティ タグのリストに含まれているプロパティ タグでオブジェクトのプロパティの結果を追加します。 
+**ipropdata:: hraddobjprops**メソッドは、オブジェクトに PT_OBJECT 型の1つ以上のプロパティを追加します。 **hraddobjprops**は、オブジェクトプロパティの[imapiprop:: setprops](imapiprop-setprops.md)メソッドに代わる方法を提供します。これは、 **setprops**を呼び出すことでオブジェクトのプロパティを作成できないためです。 [imapiprop:: getproplist](imapiprop-getproplist.md)メソッドによって返される property タグのリストに含まれる property タグに、オブジェクトプロパティの結果が追加されました。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**HrAddObjProps** MAPI_W_PARTIAL_COMPLETION を取得する_lppProblems_の有効なポインターを設定した場合、どのプロパティが追加されていないことを確認する返された[SPropProblemArray](spropproblemarray.md)構造体を確認してください。 通常、発生する唯一の問題は、メモリ不足です。 操作を終了したら、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出すことによって、 **SPropProblemArray**構造体を解放します。 
+**hraddobjprops**が MAPI_W_PARTIAL_COMPLETION を返し、 _lppproblems 問題_を有効なポインターに設定している場合は、返された[spropprops 配列](spropproblemarray.md)構造を調べて、追加されなかったプロパティを確認します。 通常、発生する問題はメモリが不足していることだけです。 完了したら、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、 **spropの配列**構造を解放します。 
   
-プロパティを追加するには、対象のオブジェクトに読み取り/書き込み権限が必要です。 **HrAddObjProps**では、MAPI_E_NO_ACCESS が返された場合の変更が許可されていないために、オブジェクトにプロパティを追加することはできません。 **HrAddObjProps**を呼び出す前にオブジェクトへの読み取り/書き込み権限を取得するには、 [IPropData::HrSetObjAccess](ipropdata-hrsetobjaccess.md)を呼び出すし、 _ulAccess_パラメーターを IPROP_READWRITE に設定します。 
+プロパティを追加するには、ターゲットオブジェクトが読み取り/書き込みアクセス許可を持っている必要があります。 **hraddobjprops**が MAPI_E_NO_ACCESS を返す場合は、変更が許可されていないため、オブジェクトにプロパティを追加することはできません。 **hraddobjprops**を呼び出す前に、オブジェクトへの読み取り/書き込みアクセス許可を取得するには、 [ipropdata:: HrSetObjAccess](ipropdata-hrsetobjaccess.md)を呼び出し、 _ulaccess_パラメーターを IPROP_READWRITE に設定します。 
   
 ## <a name="see-also"></a>関連項目
 

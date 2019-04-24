@@ -1,5 +1,5 @@
 ---
-title: IMAPIForm IUnknown
+title: imapiform IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,45 +12,45 @@ api_type:
 - COM
 ms.assetid: e9059739-51b4-4574-bd0f-709eb5144ae7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ce0e109aad52bfc4d7f4f55abfe1001d76276f64
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 172cbf9478d3206742df61d211051594e69ab173
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321778"
 ---
 # <a name="imapiform--iunknown"></a>IMAPIForm : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームの閲覧者は、フォーム ビューのコンテキストと、フォームの動詞を実行して、フォームをシャット ダウンするのにはフォームの通知を有効にします。
+フォームビューアーがフォームビューのコンテキストとフォームの通知を操作したり、フォームの動詞を実行したり、フォームをシャットダウンしたりできるようにします。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
-|によって公開されます。  <br/> |フォーム オブジェクト  <br/> |
-|によって実装されます。  <br/> |フォーム サーバー  <br/> |
-|によって呼び出されます。  <br/> |フォームの閲覧者  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMAPIForm  <br/> |
-|ポインターの型。  <br/> |LPMAPIFORM  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
+|公開者:  <br/> |フォーム オブジェクト  <br/> |
+|実装元:  <br/> |フォーム サーバー  <br/> |
+|呼び出し元:  <br/> |フォームビューアー  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMAPIForm  <br/> |
+|ポインターの種類:  <br/> |LPMAPIFORM  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[SetViewContext](imapiform-setviewcontext.md) <br/> |フォームのビュー コンテキストを確立します。  <br/> |
-|[GetViewContext](imapiform-getviewcontext.md) <br/> |フォームの現在のビュー コンテキストを返します。  <br/> |
-|[ShutdownForm](imapiform-shutdownform.md) <br/> |フォームを閉じます。  <br/> |
-|[DoVerb](imapiform-doverb.md) <br/> |フォームは、タスクをどのような実行要求は、特定の動作に関連付けます。  <br/> |
-|[アドバイス](imapiform-advise.md) <br/> |フォーム ビューアーの形式に影響するイベント通知を登録します。  <br/> |
-|[アドバイズ中止します。](imapiform-unadvise.md) <br/> |**アドバイズ**を呼び出すことによって確立されていたフォーム ビューアーを使用して通知の登録をキャンセルします。  <br/> |
-|[発生しました](imapiform-getlasterror.md) <br/> |前の form オブジェクトに発生したエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
+|[setviewcontext](imapiform-setviewcontext.md) <br/> |フォームのビューコンテキストを確立します。  <br/> |
+|[getviewcontext](imapiform-getviewcontext.md) <br/> |フォームの現在のビューコンテキストを返します。  <br/> |
+|[shutdownform](imapiform-shutdownform.md) <br/> |フォームを閉じます。  <br/> |
+|[DoVerb](imapiform-doverb.md) <br/> |フォームが特定の動詞に関連付けられている任意のタスクを実行するよう要求します。  <br/> |
+|[助言](imapiform-advise.md) <br/> |フォームに影響を与えるイベントに関する通知に対してフォームビューアーを登録します。  <br/> |
+|[アドバイズ](imapiform-unadvise.md) <br/> |以前に呼び出し先の**アドバイズ**によって設定されたフォームビューアーでの通知の登録を取り消します。  <br/> |
+|[GetLastError](imapiform-getlasterror.md) <br/> |form オブジェクトの前に発生したエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

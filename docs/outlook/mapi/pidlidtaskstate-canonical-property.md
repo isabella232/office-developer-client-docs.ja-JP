@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 06d1f8a3-53e1-4c9a-9703-75de7a11a772
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 149f238ea53e0669f4d95c8e6c2b17a2b5a1c209
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316535"
 ---
 # <a name="pidlidtaskstate-canonical-property"></a>PidLidTaskState 標準プロパティ
 
@@ -25,55 +25,55 @@ ms.locfileid: "25400986"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-タスクの現在の割り当ての状態を示します。
+タスクの現在の割り当て状態を示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidTaskState  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Task  <br/> |
-|長い ID (LID):  <br/> |0x00008113  <br/> |
+|関連するプロパティ:  <br/> |dispidtaskstate  <br/> |
+|プロパティセット:  <br/> |PSETID_Task  <br/> |
+|ロング ID (LID):  <br/> |0x00008113  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティの値は、次のいずれかである必要があります。
+このプロパティの値は、次のいずれかであることが必要です。
   
 |**値**|**説明**|
 |:-----|:-----|
-|0x00000000  <br/> |このタスクは、タスクの辞退に埋め込まれたが、見つかりませんでしたローカルのタスクに対応するように作成されました。  <br/> |
+|0x00000000  <br/> |このタスクは、タスクの却下に埋め込まれているが、ローカルでは見つからないタスクに対応するために作成されました。  <br/> |
 |0x00000001  <br/> |タスクが割り当てられていません。  <br/> |
 |0x00000002  <br/> |タスクは、割り当てられたタスクのタスク実施者のコピーです。  <br/> |
-|0x00000003  <br/> |タスクは、割り当てられたタスクの作業仕事を割り当てた人のコピーです。  <br/> |
-|0x00000004  <br/> |辞退されたタスクの作業仕事を割り当てた人のコピーです。  <br/> |
+|0x00000003  <br/> |タスクは、割り当てられたタスクのタスク assigner のコピーです。  <br/> |
+|0x00000004  <br/> |タスクは、却下されたタスクのタスク assigner のコピーです。  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
-> タスク、タスクの割り当て、およびタスクの更新に相当する電子をモデル化したいくつかのオブジェクトを定義します。
+> タスク、タスクの割り当て、およびタスクの更新に相当する電子メールをモデル化する複数のオブジェクトを定義します。
     
-[[MS OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
+[[OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
   
-> プロパティを作成すると、メールボックス内の特別なフォルダーを検索する操作を指定します。
+> メールボックス内の特別なフォルダーを作成および検索するためのプロパティと操作を指定します。
     
-[[MS OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
+[[OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
-> IETF RFC2445、RFC2446、RFC2447、および予定と会議のオブジェクトに変換します。
+> IETF RFC2445、RFC2446、RFC2447、予定および会議の各オブジェクトを変換します。
     
-[[MS OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
-> 順序と、クライアントとサーバー間のデータ転送のフローを処理します。
+> クライアントとサーバー間のデータ転送の順序と流れを処理します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -81,9 +81,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

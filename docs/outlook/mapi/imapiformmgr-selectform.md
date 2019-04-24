@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: c1cfe71b-01f3-429a-8b4c-73191a2ffea0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3c6242c9a926341908cb86645a8ea8586a9ca598
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c25f352e7fa607a46741164574a4ba91d4026edf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321673"
 ---
 # <a name="imapiformmgrselectform"></a>IMAPIFormMgr::SelectForm
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-、フォームを選択するユーザーを有効にする] ダイアログ ボックスを表示し、そのフォームを記述するフォームの情報オブジェクトを返します。
+ユーザーがフォームを選択できるようにするダイアログボックスを表示し、そのフォームを記述するフォーム情報オブジェクトを返します。
   
 ```cpp
 HRESULT SelectForm(
@@ -39,31 +39,31 @@ HRESULT SelectForm(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulUIParam_
+ _uluiparam_
   
-> [in]表示されたダイアログ ボックスの親ウィンドウへのハンドル。 
+> 順番表示されるダイアログボックスの親ウィンドウへのハンドル。 
     
  _ulFlags_
   
-> [in]渡された文字列の種類を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番渡された文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 渡された文字列は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。
+> 渡された文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
     
- _pszTitle_
+ _psztitle_
   
-> [in]ダイアログ ボックスのキャプションを含む文字列へのポインター。 _PszTitle_パラメーターが NULL の場合は、フォーム ライブラリのプロバイダーは、既定のキャプションを提供します。 
+> 順番ダイアログボックスのキャプションを含む文字列へのポインター。 _psztitle_パラメーターが NULL の場合、フォームライブラリプロバイダは既定のキャプションを提供します。 
     
  _pfld_
   
-> [in]フォームを選択するフォルダーへのポインター。 _Pfld_パラメーターが NULL の場合は、ローカル、個人、または組織フォームのコンテナーから、フォームを選択できます。 
+> 順番フォームを選択するフォルダーへのポインター。 _pfld_パラメーターが NULL の場合、フォームはローカル、個人用、または組織のフォームコンテナーから選択できます。 
     
- _ppfrminfoReturned_
+ _ppfrminを有効にする_
   
-> [out]返されたフォームの情報オブジェクトへのポインターへのポインター。
+> 読み上げ返されるフォーム情報オブジェクトへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -71,27 +71,27 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> か、MAPI_UNICODE フラグが設定された実装は Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、実装は、Unicode だけをサポートしています。
+> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
     
 MAPI_E_USER_CANCEL 
   
-> ユーザー操作がキャンセルされました、通常] ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
+> ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォーム ビューアー メソッドを呼び出して、 **IMAPIFormMgr::SelectForm**最初の存在するフォームを選択するユーザーを有効にする] ダイアログ ボックスと、選択したフォームを説明する情報のフォーム オブジェクトを取得するために、します。 ダイアログ ボックスには、1 つのフォームを選択するのにはユーザーが制限されます。 
+フォームビューアーは、 **imapiformmgr:: selectform**メソッドを呼び出して、ユーザーがフォームを選択できるようにするダイアログボックスを最初に表示し、次に、選択したフォームを記述するフォーム情報オブジェクトを取得します。 ダイアログボックスは、ユーザーが1つのフォームを選択することを制限します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**SelectForm** ] ダイアログ ボックスには、隠されていないフォームのみが表示されます (つまり、非表示のプロパティを持つフォームをオフに)。 _UlFlags_パラメーターで、フォームのビューアーが MAPI_UNICODE フラグを渡すと、すべての文字列は Unicode です。 Unicode 文字列をサポートしていないフォーム ライブラリ プロバイダーは、MAPI_UNICODE が渡された場合、MAPI_E_BAD_CHARWIDTH を返す必要があります。 
+[**フォーム**の選択] ダイアログボックスには、非表示になっていない (つまり、非表示のプロパティがクリアされているフォーム) だけが表示されます。 フォームビューアーが_ulflags_パラメーターの MAPI_UNICODE フラグを渡すと、すべての文字列が UNICODE になります。 Unicode 文字列をサポートしていないフォームライブラリプロバイダーは、MAPI_UNICODE が渡された場合は MAPI_E_BAD_CHARWIDTH を返します。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|FolderDlg.cpp  <br/> |CFolderDlg::OnSelectForm  <br/> |MFCMAPI では、 **IMAPIFormMgr::SelectForm**メソッドを使用して、フォームを選択し、フォームに関する情報を 1 つまたは複数のログに送信します。  <br/> |
+|folderdlg  <br/> |cfolderdlg:: onselectform  <br/> |mfcmapi は、 **imapiformmgr:: selectform**メソッドを使用してフォームを選択し、そのフォームに関する情報を1つ以上のログに送信します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

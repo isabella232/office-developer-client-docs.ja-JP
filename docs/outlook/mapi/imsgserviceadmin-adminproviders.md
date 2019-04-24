@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0d605e2c-10db-46e1-95d5-12fabd524baa
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1b03245d7af4c6fb3879e597d8345e5d9888e164
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6b7360995a781824b50ff02b5d2dec8e481e7ba7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317424"
 ---
 # <a name="imsgserviceadminadminproviders"></a>IMsgServiceAdmin::AdminProviders
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 プロバイダー管理オブジェクトへのアクセスを提供するポインターを返します。
   
@@ -37,53 +37,53 @@ HRESULT AdminProviders(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpUID_
+ _lpuid_
   
-> [in]管理するメッセージ サービスの一意の識別子を格納する[MAPIUID](mapiuid.md)構造体へのポインター。 
+> 順番管理するメッセージサービスの一意の識別子を含む[MAPIUID](mapiuid.md)構造体へのポインター。 
     
  _ulFlags_
   
-> [in]常に NULL を返します。 
+> 順番常に NULL。 
     
- _lppProviderAdmin_
+ _lppprovideradmin_
   
-> [out]プロバイダーの管理オブジェクトへのポインターへのポインター。
+> 読み上げプロバイダー管理オブジェクトへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> プロバイダーの管理オブジェクトが正常に返されました。
+> プロバイダー管理オブジェクトが正常に返されました。
     
 MAPI_E_NOT_FOUND 
   
-> _LpUID_で示される**MAPIUID**は存在しません。 
+> _lpuid_が指す**MAPIUID**が存在しません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMsgServiceAdmin::AdminProviders**メソッドは、プロバイダーの管理オブジェクトへのアクセスを提供します。 プロバイダーの管理は、 [IProviderAdmin](iprovideradminiunknown.md)インターフェイスをサポートしていて、クライアントは、次の操作を可能にするオブジェクトです。 
+**IMsgServiceAdmin:: adminproviders**メソッドは、プロバイダ管理オブジェクトへのアクセスを提供します。 プロバイダー管理は、 [IProviderAdmin](iprovideradminiunknown.md)インターフェイスをサポートし、クライアントが次の操作を実行できるようにするオブジェクトです。 
   
-- メッセージ サービスにサービス プロバイダーを追加します。
+- メッセージサービスにサービスプロバイダーを追加します。
     
-- メッセージ サービスからサービス プロバイダーを削除します。
+- メッセージサービスからサービスプロバイダーを削除します。
     
-- プロファイル セクションを開きます。
+- [プロファイル] セクションを開きます。
     
-- メッセージ サービス プロバイダー テーブルにアクセスします。
+- メッセージサービスプロバイダテーブルにアクセスします。
     
-実際に可能なメッセージ サービスにプロファイルを使用中に変更の種類は、メッセージ サービスに依存します。 ただし、ほとんどのメッセージ サービスには、追加し、プロファイルを使用している間に、プロバイダーを削除するなどの変更はできません。
+プロファイルが使用されている間にメッセージサービスに対して実際に行うことができる変更の種類は、メッセージサービスによって異なります。 ただし、ほとんどのメッセージサービスでは、プロファイルの使用中にプロバイダーを追加および削除するなどの変更はサポートされていません。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-メッセージ サービスを管理するための**MAPIUID**構造体を取得するには、メッセージ サービスのテーブルの行のメッセージ サービスから**PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) のプロパティの列を取得します。 詳細については、 [IMsgServiceAdmin::CreateMsgService](imsgserviceadmin-createmsgservice.md)メソッドで説明する手順を参照してください。 
+管理するメッセージサービスの**MAPIUID**構造を取得するには、メッセージサービステーブルのメッセージサービスの行から**PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) プロパティ列を取得します。 詳細については、 [IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md)メソッドに記載されている手順を参照してください。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MsgServiceTableDlg.cpp  <br/> |CMsgServiceTableDlg::OnDisplayItem  <br/> |MFCMAPI では、 **IMsgServiceAdmin::AdminProviders**メソッドを使用して、サービス プロバイダーの管理オブジェクトを開きます。  <br/> |
+|MsgServiceTableDlg  <br/> |CMsgServiceTableDlg:: ondisplayitem  <br/> |mfcmapi は、 **IMsgServiceAdmin:: adminproviders**メソッドを使用して、サービスのプロバイダー管理オブジェクトを開きます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

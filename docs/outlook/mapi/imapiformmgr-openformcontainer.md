@@ -13,11 +13,11 @@ api_type:
 ms.assetid: df02bdc5-903a-4ce2-9f43-5f4513ea19b3
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 68a358c91e35c5a075e220794c78f4e5c96e43ee
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25393118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321638"
 ---
 # <a name="imapiformmgropenformcontainer"></a>IMAPIFormMgr::OpenFormContainer
 
@@ -25,7 +25,7 @@ ms.locfileid: "25393118"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[IMAPIFormContainer](imapiformcontaineriunknown.md)インターフェイスの特定のフォームのコンテナーを開きます。 
+特定のフォームコンテナーの[imapiformcontainer](imapiformcontaineriunknown.md)インターフェイスを開きます。 
   
 ```cpp
 HRESULT OpenFormContainer(
@@ -39,31 +39,31 @@ HRESULT OpenFormContainer(
 
  _hfrmreg_
   
-> [in]開くにはフォーム ライブラリを示す HFRMREG 列挙型 (つまり、フォームはコンテナーを開くには)。 HFRMREG 列挙体は、フォーム ライブラリのプロバイダーに固有の列挙体です。 使用可能な HFRMREG の値を以下に示します。
+> 順番開く (つまり、開くフォームコンテナーである) フォームライブラリを示す hfrmreg 列挙。 hfrmreg 列挙は、フォームライブラリプロバイダーに固有の列挙型です。 可能な hfrmreg 値は次のとおりです。
     
 HFRMREG_DEFAULT 
   
-> フォームの便利なコンテナーです。
+> 便利なフォームコンテナー。
     
 HFRMREG_FOLDER 
   
-> フォルダーのコンテナーです。 
+> フォルダーコンテナー。 
     
 HFRMREG_PERSONAL 
   
-> 既定のメッセージ ストアのコンテナーです。 
+> 既定のメッセージストアのコンテナー。 
     
 HFRMREG_LOCAL 
   
-> ローカル フォームのコンテナーです。 
+> ローカルフォームコンテナー。 
     
  _lpunk_
   
-> [in]インタ フェースを開く対象のオブジェクトへのポインター。 _Hfrmreg_パラメーターの値がオブジェクト ポインターを必要としない限り、 _lpunk_パラメーターを**null**にする必要があります。 
+> 順番インターフェイスを開くオブジェクトへのポインター。 _hfrmreg_パラメーターの値にオブジェクトポインターが必要でない場合は、 _lpunk_パラメーターを**null**にする必要があります。 
     
  _lppfcnt_
   
-> [out]返されるフォームのコンテナー オブジェクトへのポインターへのポインター。
+> 読み上げ返される form container オブジェクトへのポインターへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -73,17 +73,17 @@ S_OK
     
 MAPI_E_NO_INTERFACE 
   
-> _Lpunk_が指すオブジェクトは、必要なインターフェイスをサポートしていません。 
+> _lpunk_が指すオブジェクトは、必要なインターフェイスをサポートしていません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-フォーム ビューアーは、特定のフォームのコンテナーの**IMAPIFormContainer**インターフェイスを開くに**IMAPIFormMgr::OpenFormContainer**メソッドを呼び出します。 このインターフェイスにインストールを実行するフォームとフォームのコンテナーから削除するフォームを使用できます。 
+フォームビューアーは、 **imapiformmgr:: openformcontainer**メソッドを呼び出して、特定のフォームコンテナーの**imapiformmgr**インターフェイスを開きます。 このインターフェイスは、フォームをフォームコンテナーにインストールしたり、フォームを削除したりするために使用できます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-_Hfrmreg_の値が HFRMREG_FOLDER の場合は、 _lpunk_で使用されているインタ フェース識別子は非**null**である必要があり、 [IMAPIFolder](imapifolderimapicontainer.md)インタ フェースを[IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)メソッドの呼び出しを許可する必要があります。 
+_hfrmreg_の値が HFRMREG_FOLDER の場合、 _lpunk_で使用されるインターフェイス識別子は**null**以外の値である必要があります。また、 [imapifolder](imapifolderimapicontainer.md)インターフェイスに対する[IUnknown:: QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)メソッドの呼び出しを許可する必要があります。 
   
-ローカル フォームのコンテナーを開くには、 **OpenFormContainer**メソッドまたは[MAPIOpenLocalFormContainer](mapiopenlocalformcontainer.md)関数の呼び出しを使用する必要があります。ローカル フォームのコンテナーを選択するのにユーザーを有効にするのには、 [IMAPIFormMgr::SelectFormContainer](imapiformmgr-selectformcontainer.md)メソッドを使用することはできません。 
+ローカルフォームコンテナーを開くには、 **openformcontainer**メソッドまたは[MAPIOpenLocalFormContainer](mapiopenlocalformcontainer.md)関数への呼び出しを使用する必要があります。[imapiformmgr:: selectformcontainer](imapiformmgr-selectformcontainer.md)メソッドを使用して、ユーザーがローカルフォームコンテナーを選択できるようにすることはできません。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -91,8 +91,8 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MainDlg.cpp  <br/> |CMainDlg::OnOpenFormContainer  <br/> |MFCMAPI では、 **IMAPIFormMgr::OpenFormContainer**メソッドを使用して、コンテナーの内容を表示できるように、フォームのコンテナーを取得します。  <br/> |
-|MsgStoreDlg.cpp  <br/> |CMsgStoreDlg::OnOpenFormContainer  <br/> |MFCMAPI では、 **IMAPIFormMgr::OpenFormContainer**メソッドを使用して、コンテナーの内容を表示できるようにフォルダーのフォームのコンテナーを取得します。  <br/> |
+|maindlg .cpp  <br/> |CMainDlg:: onopenformcontainer  <br/> |mfcmapi は、 **imapiformmgr:: openformcontainer**メソッドを使用して、コンテナーの内容を表示できるようにフォームコンテナーを取得します。  <br/> |
+|MsgStoreDlg  <br/> |CMsgStoreDlg:: onopenformcontainer  <br/> |mfcmapi は、 **imapiformmgr:: openformcontainer**メソッドを使用して、コンテナーの内容を表示できるようにフォルダーのフォームコンテナーを取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

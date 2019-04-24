@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: c33daad6-52c4-4968-ac56-415178c9bf12
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f66d0fb1fc9d252ff8b6985c4a54de79313266d1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bfddc24e6a9c7cf8bdeae1e5ea730ecdb116f564
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321589"
 ---
 # <a name="imapiformmgrselectformcontainer"></a>IMAPIFormMgr::SelectFormContainer
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-により、ユーザーがフォームのコンテナーを選択し、ユーザーが選択したコンテナーのオブジェクトのインターフェイスを返しますダイアログ ボックスが表示されます。
+ユーザーがフォームコンテナーを選択できるようにするダイアログボックスを提供し、ユーザーが選択したコンテナーオブジェクトのインターフェイスを返します。
   
 ```cpp
 HRESULT SelectFormContainer(
@@ -37,47 +37,47 @@ HRESULT SelectFormContainer(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulUIParam_
+ _uluiparam_
   
-> [in]表示されたダイアログ ボックスの親ウィンドウへのハンドル。 
+> 順番表示されるダイアログボックスの親ウィンドウへのハンドル。 
     
  _ulFlags_
   
-> [in]フォーム ライブラリを選択する方法を制御するフラグのビットマスク (どのようにフォームのコンテナーがオンになっている)。 次のフラグを設定することができます。
+> 順番フォームライブラリの選択方法 (つまり、フォームコンテナーの選択方法) を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPIFORM_SELECT_ALL_REGISTRIES 
   
-> すべてのコンテナーの選択が可能です。 これは、既定の選択の種類です。 
+> 選択は、すべてのコンテナーから行うことができます。 これは既定の選択の種類です。 
     
 MAPIFORM_SELECT_FOLDER_REGISTRY_ONLY 
   
-> フォルダー コンテナーからのみ選択が可能です。
+> 選択は、フォルダーコンテナーからのみ行うことができます。
     
 MAPIFORM_SELECT_NON_FOLDER_REGISTRY_ONLY 
   
-> いないフォルダーに関連付けられているコンテナーからのみ選択が可能です。
+> 選択は、フォルダーに関連付けられていないコンテナーからのみ行うことができます。
     
  _lppfcnt_
   
-> [out]返されたインターフェイスへのポインターへのポインター。 インターフェイスは、ユーザーが選択されているコンテナー オブジェクトです。
+> 読み上げ返されるインターフェイスへのポインターへのポインター。 このインターフェイスは、ユーザーによって選択された container オブジェクトに対して使用されます。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
-フォーム ビューアーは、通常、フォームがインストールされているフォームのコンテナーを選択する**IMAPIFormMgr::SelectFormContainer**メソッドを呼び出します。 **SelectFormContainer**は、HFRMREG_LOCAL の値を持つローカルのフォームのコンテナーを選択するのには使用できません。 
+通常、フォームビューアーは、 **imapiformmgr:: selectformcontainer**メソッドを呼び出して、フォームがインストールされているフォームコンテナーを選択します。 **selectformcontainer**を使用してローカルフォームコンテナーを選択することはできません。これは、値が HFRMREG_LOCAL です。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MainDlg.cpp  <br/> |CMainDlg::OnSelectFormContainer  <br/> |MFCMAPI では、 **IMAPIFormMgr::SelectFormContainer**メソッドを使用して、その内容をレンダリングする前にフォームのコンテナーを選択します。  <br/> |
+|maindlg .cpp  <br/> |CMainDlg:: onselectformcontainer  <br/> |mfcmapi は、 **imapiformmgr:: selectformcontainer**メソッドを使用して、コンテンツをレンダリングする前にフォームコンテナーを選択します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

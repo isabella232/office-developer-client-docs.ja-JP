@@ -1,5 +1,5 @@
 ---
-title: 標準の MAPI プロパティ
+title: MAPI 標準プロパティ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,49 +7,49 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 29151beb-7436-401a-8072-58d4facd8458
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 4b017089a675727703de9e2ed4d584e7f77a778a
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25401567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319055"
 ---
-# <a name="mapi-canonical-properties"></a>標準の MAPI プロパティ
+# <a name="mapi-canonical-properties"></a>MAPI 標準プロパティ
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-標準的なプロパティは、MAPI プロパティ、または同じプロパティの識別子を使用して定義されている複数の MAPI プロパティを表す仮想プロパティです。 標準的なプロパティのみ、ディスカッションやコードの外部でのマニュアルで MAPI プロパティの一貫した識別を容易にするためです。 MAPI 定義のタグ付きのプロパティの名前とは異なり、標準のプロパティ名は MAPI ヘッダー ファイルでグローバル定数として定義されていません。
+標準プロパティは、mapi プロパティ、または同じプロパティ識別子で定義された複数の mapi プロパティを表す仮想プロパティです。 標準プロパティは、コード外のディスカッションやドキュメントでの MAPI プロパティの一貫した識別を容易にすることを目的としています。 mapi で定義されたタグ付きプロパティ名とは異なり、標準プロパティ名は mapi ヘッダーファイルでグローバル定数として定義されません。
   
 ## <a name="naming-conventions"></a>名前付け規則
 
-標準のプロパティ名が"Pid"、「プロパティの識別子」を表す接頭辞で始まる かどうかに応じて、プロパティ タグのプロパティや、数値識別子を持つ名前付きプロパティの文字列名を持つ名前付きプロパティ、プレフィックスは、さらに修飾された"PidTag、"として"PidLid、"と"PidName"それぞれ。 たとえば、 [PidTagAccount](pidtagaccount-canonical-property.md)が**PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md))、 **PR_ACCOUNT_A** ([PidTagAccount](pidtagaccount-canonical-property.md)) と**PR_ACCOUNT_W** ([PidTagAccount](pidtagaccount-canonical-property.md)) の受信者を指定するタグ付きのプロパティを表しますアカウント名です。[PidLidContacts](pidlidcontacts-canonical-property.md)は、 **dispidContacts**プロパティを数値の識別子を持つし、メッセージに関連付けられている連絡先の名前を指定する名前付きプロパティを表します[PidNamePhishingStamp](pidnamephishingstamp-canonical-property.md)を表す"https://schemas.microsoft.com/outlook/phishingstamp、"名前付きプロパティの文字列の名前を持つし、フィッシング詐欺である可能性があるメッセージにマークを付ける文字列を指定します。 
+標準プロパティ名は、"Pid" というプレフィックスで始まります。これは "プロパティ識別子" を表します。 プロパティがタグ付きプロパティであるか、数値識別子を持つ名前付きプロパティであるか、または文字列名を持つ名前付きプロパティであるかに応じて、プレフィックスはそれぞれ "PidTag"、"PidLid"、および "PidName" として修飾されます。 たとえば、 [PidTagAccount](pidtagaccount-canonical-property.md)は、受信者の**PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md))、 **PR_ACCOUNT_A** (PidTagAccount[](pidtagaccount-canonical-property.md))、 **PR_ACCOUNT_W** ([PidTagAccount](pidtagaccount-canonical-property.md)) を表します。アカウント名。[PidLidContacts](pidlidcontacts-canonical-property.md)は、 **dispidcontacts**プロパティを表します。これは、メッセージに関連付けられている連絡先の名前を表す数値識別子を持つ名前付きプロパティです。と[PidNamePhishingStamp](pidnamephishingstamp-canonical-property.md)は、https://schemas.microsoft.com/outlook/phishingstamp文字列名を持つ名前付きプロパティを表し、フィッシングである可能性が高いメッセージをマークする文字列を指定します。 
   
-## <a name="representing-similar-properties-using-one-canonical-property"></a>1 つの標準的なプロパティを使用して同様のプロパティを表す
+## <a name="representing-similar-properties-using-one-canonical-property"></a>1つの標準プロパティを使用して類似のプロパティを表す
 
-### <a name="identifying-properties-in-mapi"></a>MAPI のプロパティを識別します。
+### <a name="identifying-properties-in-mapi"></a>MAPI でのプロパティの識別
 
-MAPI のすべてのプロパティは、符号なしの 16 ビット値であるプロパティの識別子によって識別されます。 プロパティ識別子とプロパティの型 (もう 1 つの符号なし 16 ビット値) は、プロパティ タグのプロパティを構成します。 
+MAPI のすべてのプロパティは、署名されていない16ビット値であるプロパティ識別子によって識別されます。 プロパティの識別子とプロパティの型 (別の符号なしの16ビット値) は、プロパティのプロパティタグを構成します。 
   
-MAPI は、プロパティを一意に定義するのにプロパティ タグを使用します。 **PR_BUSINESS2_TELEPHONE_NUMBER** ([PidTagBusiness2TelephoneNumber](pidtagbusiness2telephonenumber-canonical-property.md)) と**PR_OFFICE2_TELEPHONE_NUMBER** ([PidTagBusiness2TelephoneNumber](pidtagbusiness2telephonenumber-canonical-property.md)) のように、同じプロパティ タグのプロパティが同じと見なされますMAPI のプロパティです。 独自のプロパティに定義した MAPI プロパティ タグの一覧は、MAPI のヘッダー ファイル、Mapitags.h を参照してください。
+MAPI では、プロパティタグを使用して、プロパティを一意に定義します。 **PR_BUSINESS2_TELEPHONE_NUMBER** ([PidTagBusiness2TelephoneNumber](pidtagbusiness2telephonenumber-canonical-property.md)) および**PR_OFFICE2_TELEPHONE_NUMBER** ([PidTagBusiness2TelephoneNumber](pidtagbusiness2telephonenumber-canonical-property.md)) など、同じプロパティタグを持つプロパティは同一であると見なされます。MAPI のプロパティ。 mapi が独自のプロパティに対して定義したプロパティタグの一覧については、「mapi ヘッダーファイル Mapitags」を参照してください。
   
-MAPI が範囲にプロパティの識別子を分割することに注意してください。 識別子が範囲に該当する場所は、その使用法と所有権を示します。 タグ付きのプロパティのプロパティ識別子は、0x0001 に 0x7FFF の範囲に収まります。 この範囲内で、0x0001 から 0x3FFF の範囲に MAPI 定義のプロパティのプロパティの識別子です。 0x8FFF に 0x8000 からの範囲での秋の名前付きプロパティのプロパティ識別子。 
+MAPI はプロパティ識別子を範囲に分割することに注意してください。 範囲内の識別子は、その使用と所有権を示します。 タグ付きプロパティのプロパティ識別子は、0x0001 の範囲に含まれています。 この範囲内では、MAPI で定義されたプロパティのプロパティ識別子が0x0001 から0x3fff の範囲に入ります。 名前付きプロパティのプロパティ識別子は、0x8000 から0x8fff の範囲になります。 
   
-名前付きプロパティは、プロパティを設定して、長い ID (LID)、符号なしの 32 ビット値である、または文字列のいずれかで属性をさらにします。 プロパティ セットは、類似の目的を使用して名前付きプロパティのグループを識別する GUID です。 取得または名前付きプロパティを設定するのには、カバーまたは文字列の名前とプロパティのセットが使用されます。
+名前付きプロパティは、さらにプロパティセットによって、または、符号なしの32ビット値である long ID (LID)、または文字列のいずれかによって属性されます。 プロパティセットは、同じ目的を持つ名前付きプロパティのグループを識別する GUID です。 プロパティセットと LID または文字列名は、名前付きプロパティを取得または設定するために使用されます。
   
 ### <a name="property-type"></a>プロパティの種類
 
-、識別子は別にそのプロパティの値の型を指定するデータ型によってプロパティの属性が。
+識別子とは別に、プロパティは、そのプロパティに使用できる値の型を指定するデータ型によって属性されます。
   
-型 PT_STRING8 プロパティの場合、基になるプラットフォームでの Unicode のサポートによって、文字列型のプロパティは、(8 ビット文字の null で終わる文字列) または PT_UNICODE (null で終わる Unicode 文字列)。 PT_TSTRING タイプでは、プロパティを定義することができ、または PT_STRING8 文字列を ANSI または DBCS をサポートするプラットフォームに Unicode 文字列、Unicode をサポートしているプラットフォーム用にコンパイルの設定によって PT_TSTRING の既定値です。 文字列型のプロパティが一般的で識別される**PR_ACCOUNT**、 **PR_ACCOUNT_A**、 **PR_ACCOUNT_W**、タイプはなど、3 つの類似した名前 PT_TSTRING、PT_STRING8、および PT_UNICODE それぞれ。
+基になるプラットフォームでの Unicode のサポートに応じて、string 型のプロパティの場合、プロパティの型は PT_STRING8 (null で終了する8ビット文字列) または PT_UNICODE (null で終わる Unicode 文字列) です。 プロパティは PT_TSTRING 型で定義できます。コンパイル設定に応じて、unicode をサポートするプラットフォーム用の unicode 文字列、または ANSI または DBCS をサポートする PT_STRING8 文字列に対して、PT_TSTRING の既定値を指定できます。 文字列型 (string) 型のプロパティは、 **PR_ACCOUNT**、 **PR_ACCOUNT_A**、 **PR_ACCOUNT_W**などの3つの類似する名前で識別されます。これは、それぞれ PT_TSTRING、PT_STRING8、および PT_UNICODE の種類です。
   
-プロパティの型と型に関連するマクロの詳細については、MAPI のヘッダー ファイル、Mapidefs.h を参照してください。
+種類に関連するプロパティの種類とマクロの詳細については、「MAPI ヘッダーファイル mapidefs.h」を参照してください。
   
-### <a name="identifying-similar-properties"></a>ようなプロパティを識別します。
+### <a name="identifying-similar-properties"></a>類似したプロパティを識別する
 
-現在の MAPI プロパティの横に [別のプロパティ名、同じプロパティの識別子を持つ定義は、すべてのプロパティが公開されているかを検索することも珍しくはありません。 たとえば、タグ付きのプロパティ、 **PR_BUSINESS2_TELEPHONE_NUMBER** **PR_OFFICE2_TELEPHONE_NUMBER**は、同じプロパティの識別子と型を持つ Mapitags.h で定義されます。 密接に関連してこれらの 2 つのプロパティします。
+現在の MAPI プロパティの風景では、プロパティが異なるプロパティ名で公開されていて、すべてのプロパティが同じプロパティ識別子で定義されていることを検出するのは珍しいことではありません。 たとえば、 **PR_BUSINESS2_TELEPHONE_NUMBER**と**PR_OFFICE2_TELEPHONE_NUMBER**というタグ付きプロパティは、Mapitags プロパティの識別子と種類が同じになるように定義されています。 これらの2つのプロパティに密接に関連しています。
   
 - **PR_BUSINESS2_TELEPHONE_NUMBER_A**
     
@@ -59,27 +59,27 @@ MAPI が範囲にプロパティの識別子を分割することに注意して
     
 - **PR_OFFICE2_TELEPHONE_NUMBER_W**
     
-PT_STRING8、として"_A"サフィックスを使用してプロパティを入力し、PT_UNICODE として入力された"_W"サフィックスが付いています。
+"_ A" サフィックスが付いたプロパティは PT_STRING8 として入力され、"_ W" サフィックスを持つプロパティは PT_UNICODE として入力されます。
   
-この例では、 **PidTagBusiness2TelephoneNumber** 、標準的なプロパティの目的は、1 つの識別子を使用してこのような密接に関連の MAPI プロパティの参照を容易にして、すべての MAPI 経由で一貫した方法 ("Pid"プレフィックスを使用して)プロパティです。 どの標準的なプロパティを表す実際の MAPI プロパティを検索するには、 [MAPI の名前を標準のプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)を参照してください。 MAPI プロパティが関連付けられている標準のプロパティを検索するには、[標準のプロパティ名に MAPI 名前のマッピング](mapping-mapi-names-to-canonical-property-names.md)を参照してください。
+この例では、標準プロパティの**PidTagBusiness2TelephoneNumber**を使用して、このように密接に関連する mapi プロパティを1つの識別子を使用して参照し、一貫性のある方法 ("Pid" プレフィックスを使用) をすべての mapi で容易に参照することができます。プロパティ. 標準プロパティが表す実際の mapi プロパティを検索する方法については、「[標準プロパティ名から mapi 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)」を参照してください。 mapi プロパティが関連付けられている標準プロパティを検索するには、「 [mapi 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)」を参照してください。
   
-## <a name="mapi-support-of-canonical-property-names"></a>標準のプロパティ名の MAPI サポート
+## <a name="mapi-support-of-canonical-property-names"></a>標準プロパティ名の MAPI サポート
 
-コードでは、標準のプロパティ名を使用しないでください MAPI ヘッダー ファイルで定義されていない標準的なプロパティが実際のプロパティではないため、代わりに、コードで MAPI プロパティの正確な名前を使用して続行する必要があります。 たとえば、外部コードとして**PidTagBusiness2TelephoneNumber**、 **PR_BUSINESS2_TELEPHONE_NUMBER**および**PR_OFFICE2_TELEPHONE_NUMBER**を参照してください、 **PR_BUSINESS2_TELEPHONE_NUMBER**または**PR_OFFICE2_ のいずれかを使用して、TELEPHONE_NUMBER**のコードにします。 
+標準プロパティは実際のプロパティではなく、MAPI ヘッダーファイルで定義されていないため、コードで標準プロパティ名を使用しないでください。代わりに、コードで MAPI プロパティの正確な名前を使用する必要があります。 たとえば、コードの外部で**PR_BUSINESS2_TELEPHONE_NUMBER**と**PR_OFFICE2_TELEPHONE_NUMBER**を**PidTagBusiness2TelephoneNumber**として参照して、 **PR_BUSINESS2_TELEPHONE_NUMBER**または PR_OFFICE2_ を使用することができます。 **** コード内の TELEPHONE_NUMBER。 
   
-場合は、コードでは、標準のプロパティ名を使用する必要があります、まず、独自のヘッダー ファイルで定義した必要があります。
+コードで正規のプロパティ名を使用する必要がある場合は、最初に独自のヘッダーファイルで定義する必要があります。
   
-## <a name="canonical-property-names-and-exchange-protocol-specifications"></a>標準のプロパティ名、および Exchange プロトコルの仕様
+## <a name="canonical-property-names-and-exchange-protocol-specifications"></a>標準プロパティ名と Exchange プロトコル仕様
 
-正規名は、Exchange Server で他のマイクロソフト製品との通信に使用される Microsoft Exchange Server プロトコルの仕様で参照されます。 メッセージ交換プロトコルの仕様によって参照されるオブジェクトのプロパティの詳細については、 [[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)を参照してください。
+正規名は、exchange server が他の microsoft 製品と通信するために使用する microsoft exchange server protocol の仕様で参照されています。 Exchange プロトコル仕様によって参照されるメッセージオブジェクトプロパティの詳細については、「 [[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ タグ](mapi-property-tags.md)
+[MAPI プロパティタグ](mapi-property-tags.md)
   
 [MAPI プロパティ識別子の概要](mapi-property-identifier-overview.md)
   
-[MAPI プロパティの型の概要](mapi-property-type-overview.md)
+[MAPI プロパティの種類の概要](mapi-property-type-overview.md)
 

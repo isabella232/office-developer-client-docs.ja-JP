@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 946858221b649cd6189ddf44680b316554cab5de
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32320336"
 ---
 # <a name="filter-and-display-computed-properties-when-enumerating-items-in-a-folder"></a>フォルダー内のアイテムの列挙時に、計算済みのプロパティをフィルター処理して表示する
 
@@ -52,8 +52,8 @@ ms.locfileid: "28723076"
 </tr>
 <tr class="odd">
 <td><p>計算されたプロパティ ( <b>AutoResolvedWinner</b>、 <b>BodyFormat</b> など)</p></td>
-<td><p>サポートされていません。</p></td>
-<td><p>サポートされていません。</p></td>
+<td><p>サポートされません。</p></td>
+<td><p>サポートされません。</p></td>
 </tr>
 <tr class="even">
 <td><p>複数値プロパティ ( <b>Categories</b>、 <b>Children</b>、 <b>Companies</b>、 <b>VotingOptions</b> など)</p></td>
@@ -124,7 +124,7 @@ ms.locfileid: "28723076"
 
 一部の計算済みのプロパティは、テーブルの列セットに追加することはできませんが、次のコード例はこの制限を回避して動作します。 **表**に表示されるアイテムを制限するために GetToDoItems は、DASL クエリを使用します。 計算済みのプロパティが、名前空間を表現したものを持つ場合、その名前空間を表現したものは、計算済みのプロパティの指定された値の行に戻るため、**表**オブジェクトを表現する DASL クエリを作成するために使用されます。 GetToDoItems は、[IsMarkedAsTask](https://msdn.microsoft.com/library/bb623631\(v=office.15\)) プロパティが **true** と等しく、また [TaskSubject](https://msdn.microsoft.com/library/bb643880\(v=office.15\))、[TaskDueDate](https://msdn.microsoft.com/library/bb623035\(v=office.15\))、[TaskStartDate](https://msdn.microsoft.com/library/bb610832\(v=office.15\))、[TaskCompletedDate](https://msdn.microsoft.com/library/bb624055\(v=office.15\)) のような特定のタスク プロパティに値を割り当てる受信トレイにアイテムを取得します。 最後に、これらのプロパティを、[Listeners](https://msdn.microsoft.com/library/system.diagnostics.debug.listeners.aspx) コレクションのトレース リスナーに書き込みます。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

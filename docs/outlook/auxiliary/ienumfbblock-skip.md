@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 70fbdb41-46ea-d016-25a2-37e94962095d
-description: 指定された空き時間情報データのブロック数をスキップします。
-ms.openlocfilehash: 63f699d09e143a879702e8dc76beb8a969a77b82
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 空き時間情報データの指定した数のブロックをスキップします。
+ms.openlocfilehash: cf8ae18b5ed2c24a48d44d9e8d461da7d95054d2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317550"
 ---
 # <a name="ienumfbblockskip"></a>IEnumFBBlock::Skip
 
-指定された空き時間情報データのブロック数をスキップします。
+空き時間情報データの指定した数のブロックをスキップします。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -30,9 +30,9 @@ HRESULT Skip(
 
 ## <a name="parameters"></a>パラメーター
 
-_celt_
+_が大き_
   
->  [in]スキップするのには、空き/予約済みブロックの数。 
+>  順番スキップする空き時間ブロックの数。 
     
 ## <a name="return-values"></a>戻り値
 

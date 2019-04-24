@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7180bff2-91ad-4e11-923e-2a9acefa3215
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 834b010dc4810e26264bb418de9630bc83b99810
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 1185a35df471fc3f85cbf50fd8ad3baa3927e72b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317382"
 ---
 # <a name="imsgserviceadmingetprovidertable"></a>IMsgServiceAdmin::GetProviderTable
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロバイダー テーブル、プロファイル内のサービス プロバイダーの一覧へのアクセスを提供します。
+プロバイダーテーブルへのアクセスを提供します。これは、プロファイル内のサービスプロバイダーの一覧です。
   
 ```cpp
 HRESULT GetProviderTable(
@@ -34,55 +34,55 @@ HRESULT GetProviderTable(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]常に NULL を返します。
+> 順番常に NULL。
     
- _lppTable_
+ _lpptable_
   
-> [out]プロバイダー テーブルへのポインターへのポインター。
+> 読み上げプロバイダテーブルへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> プロバイダー テーブルは正常に返されました。
+> プロバイダーテーブルが正常に返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMsgServiceAdmin::GetProviderTable**メソッドでは、MAPI プロバイダーのテーブル、すべてのアドレス帳、メッセージ ・ ストア、およびプロファイルに現在インストールされているトランスポート プロバイダーの一覧が表示されるテーブルへのアクセスを提供します。 
+**IMsgServiceAdmin:: getprovidertable**メソッドは、プロファイルに現在インストールされているすべてのアドレス帳、メッセージストア、およびトランスポートプロバイダーを一覧表示した MAPI プロバイダーテーブルへのアクセスを提供します。 
   
-[IProviderAdmin::GetProviderTable](iprovideradmin-getprovidertable.md)メソッドによって返されるプロバイダー テーブルとは異なり、 **IMsgServiceAdmin::GetProviderTable**によって返されるプロバイダー テーブルが関連付けられている情報を表す追加の行を含めることはできません。プロファイルのサービスのプロバイダーの 1 つまたは複数の 
+[IProviderAdmin:: getprovidertable](iprovideradmin-getprovidertable.md)メソッドによって返されるプロバイダテーブルとは異なり、 **IMsgServiceAdmin:: getprovidertable**を通じて返されるプロバイダテーブルには、関連付けられている情報を表す追加の行を含めることができませんプロファイルに1つ以上のサービスプロバイダーがある。 
   
-削除されている、または使用中だが、削除対象としてマークされているプロバイダーは、プロバイダーの表には含まれません。 プロバイダー テーブルへの後の追加や、プロファイルからの削除が表に反映されていないことを意味します。 
+削除されているか、または使用されていて、削除対象としてマークされているプロバイダーは、プロバイダテーブルには含まれません。 プロバイダーテーブルは静的であるため、プロファイルからの以降の追加または削除がテーブルに反映されることはありません。 
   
-プロバイダー プロファイルがない場合は、 **GetProviderTable**は、0 個の行と S_OK の戻り値を持つテーブルを返します。 
+プロファイルにプロバイダーが含まれていない場合、 **getprovidertable**は0行と S_OK 戻り値を持つテーブルを返します。 
   
-プロバイダー テーブル内の列の一覧は、[プロバイダーのテーブル](provider-tables.md)を参照してください。 
+プロバイダテーブルの列の完全なリストについては、「[プロバイダ table](provider-tables.md)」を参照してください。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-トランスポートの順番でプロバイダーのテーブルの行を取得するには、次の手順に従います。
+プロバイダーテーブルの行をトランスポート順で取得するには、次の手順を使用します。
   
-1. MAPI_TRANSPORT_PROVIDER と**PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md)) のプロパティに一致するプロパティの制限を適用する[IMAPITable::Restrict](imapitable-restrict.md)メソッドを呼び出します。
+1. **PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md)) プロパティに一致するプロパティ制限を MAPI_TRANSPORT_PROVIDER に適用するには、 [IMAPITable:: Restrict](imapitable-restrict.md)メソッドを呼び出します。
     
-2. **PR_PROVIDER_ORDINAL** ([PidTagProviderOrdinal](pidtagproviderordinal-canonical-property.md)) の列でテーブルを並べ替えるには[IMAPITable::SortTable](imapitable-sorttable.md)メソッドを呼び出します。 
+2. **PR_PROVIDER_ORDINAL** ([PidTagProviderOrdinal](pidtagproviderordinal-canonical-property.md)) 列でテーブルを並べ替えるには、 [IMAPITable:: sorttable](imapitable-sorttable.md)メソッドを呼び出します。 
     
-3. テーブルの行を取得する[IMAPITable::QueryRows](imapitable-queryrows.md)メソッドを呼び出します。 
+3. [IMAPITable:: QueryRows](imapitable-queryrows.md)メソッドを呼び出して、テーブルの行を取得します。 
     
-代わりにこれらの呼び出しは、すべての適切なデータ構造体が渡されると、 [HrQueryAllRows](hrqueryallrows.md)関数を 1 つの呼び出しを行うには。 
+これらの呼び出しに代わる方法として、すべての適切なデータ構造を渡すことで、 [hrqueryallrows](hrqueryallrows.md)関数への1回の呼び出しを行う方法があります。 
   
-**PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) の列にそれぞれの行を取得する場合は、 [IMsgServiceAdmin::MsgServiceTransportOrder](imsgserviceadmin-msgservicetransportorder.md)への呼び出しのトランスポートの順番を設定するのには、この**MAPIUID**の構造体の配列を使用できます。
+各行の**PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) 列を取得する場合は、この**MAPIUID**構造体の配列を使用して、 [IMsgServiceAdmin:: msgservicetransportorder](imsgserviceadmin-msgservicetransportorder.md)の呼び出しでトランスポートの順序を設定できます。
   
-_UlFlags_パラメーターに MAPI_UNICODE フラグを設定は、次を行います。 
+_ulflags_パラメーターに MAPI_UNICODE フラグを設定すると、次の処理が行われます。 
   
-- [IMAPITable::QueryColumns](imapitable-querycolumns.md)メソッドによって、プロバイダーのテーブルの最初のアクティブな列に返されるデータの unicode 文字列の種類を設定します。 プロバイダー テーブルの最初のアクティブな列は、これらの列がテーブルの呼び出しを[IMAPITable::SetColumns](imapitable-setcolumns.md)メソッドに含まれているプロバイダーの前に、 **QueryColumns**メソッドを返します。 
+- 文字列の種類を Unicode に設定し、 [IMAPITable:: querycolumns](imapitable-querycolumns.md)メソッドによってプロバイダテーブルの最初のアクティブな列に対して返されるデータを指定します。 プロバイダーテーブルの最初のアクティブな列は、テーブルを含むプロバイダーが[IMAPITable:: SetColumns](imapitable-setcolumns.md)メソッドを呼び出す前に**querycolumns**メソッドが返す列です。 
     
-- **スプーラー**によって、プロバイダーのテーブルの最初のアクティブな行に返されるデータの unicode 文字列の種類を設定します。 プロバイダーのテーブルの最初のアクティブな行は、これらの行をテーブル呼び出し**SetColumns**を含むプロバイダーをする前に**スプーラー**を返しますです。 
+- **QueryRows**によってプロバイダテーブルの最初のアクティブな行に対して返されるデータについて、文字列の種類を Unicode に設定します。 プロバイダーテーブルの最初のアクティブな行は、そのテーブルを含むプロバイダーが**SetColumns**を呼び出す前に**QueryRows**が返す行です。 
     
-- プロバイダー テーブルを含んでいるクライアントは、 [IMAPITable::SortTable](imapitable-sorttable.md)メソッドを呼び出す前に、 [IMAPITable::QuerySortOrder](imapitable-querysortorder.md)メソッドによって返される並べ替え順序のプロパティの種類を制御します。 
+- は、プロバイダーテーブルを含むクライアントが[imapitable:: sorttable](imapitable-sorttable.md)メソッドを呼び出す前に、 [imapitable:: querysortorder](imapitable-querysortorder.md)メソッドによって返される並べ替え順序のプロパティの種類を制御します。 
     
 ## <a name="see-also"></a>関連項目
 

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2a575cac-dbfd-4f42-9c10-4b7e355a065e
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 4453465c04d7a5a3de79f2ae34d13095863487cf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 162f20485fc21cf8523b6d4a653e52c35f4b3d9a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317081"
 ---
 # <a name="iprofadminrenameprofile"></a>IProfAdmin::RenameProfile
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロファイルに新しい名前が割り当てられます。
+プロファイルに新しい名前を割り当てます。
   
 ```cpp
 HRESULT RenameProfile(
@@ -39,51 +39,51 @@ HRESULT RenameProfile(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpszOldProfileName_
+ _lpszoldprofilename_
   
-> [in]名前を変更するプロファイルの現在の名前へのポインター。
+> 順番名前を変更するプロファイルの現在の名前へのポインター。
     
- _lpszOldPassword_
+ _lpszoldpassword_
   
-> [in]常に NULL を返します。
+> 順番常に NULL。
     
- _lpszNewProfileName_
+ _lpsznewprofilename_
   
-> [in]名前を変更するプロファイルの新しい名前へのポインター。
+> 順番名前を変更するプロファイルの新しい名前へのポインター。
     
- _ulUIParam_
+ _uluiparam_
   
-> [in]すべてのダイアログ ボックスの親ウィンドウまたはこのメソッドを表示するウィンドウへのハンドル。 
+> 順番このメソッドが表示するダイアログボックスまたはウィンドウの親ウィンドウへのハンドル。 
     
  _ulFlags_
   
-> [in]常に NULL を返します。
+> 順番常に NULL。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> プロファイルが変更されました。
+> プロファイルの名前が正常に変更されました。
     
 MAPI_E_LOGON_FAILED 
   
-> プロファイルのパスワードが正しくないです。
+> プロファイルのパスワードが正しくありません。
     
 MAPI_E_USER_CANCEL 
   
-> ユーザー操作がキャンセルされました、通常ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
+> ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IProfAdmin::RenameProfile**メソッドは、1 つがある場合、プロファイルに新しい名前を割り当てます。 名前を変更するプロファイルがクライアントによる使用の場合、 **RenameProfile**が呼び出されたときに、 **RenameProfile**は、プロファイルをマークし、プロファイルを使用している間は、名前の変更操作を試みたのではなく、S_OK を返します。 プロファイルが使用されていないと、 **RenameProfile**によって新しい名前が割り当てられます。 
+**IProfAdmin:: renameprofile**メソッドは、プロファイルに新しい名前を割り当てます (プロファイルがある場合)。 **renameprofile**を呼び出したときに、名前を変更するプロファイルがクライアントによって使用されている場合、 **renameprofile**はプロファイルをマークし、S_OK を返します。プロファイルが使用されている間に名前を変更する操作を試行するのではなく、S_OK を返します。 プロファイルが使用されなくなると、 **renameprofile**は新しい名前を割り当てます。 
   
-古いものと新しいプロファイルの名前は 64 文字以内であることができ、次の文字を含めることができます。
+プロファイルの新旧の名前は最大64文字の長さにすることができ、次の文字を含めることができます。
   
-- すべての英数字文字、アクセント記号付き文字およびアンダー スコア文字を含みます。
+- アクセント記号とアンダースコア文字を含むすべての英数字。
     
-- 埋め込みスペースがいない先頭または末尾のスペース。
+- スペースは埋め込まれますが、先頭または末尾にスペースは含まれません。
     
-_LpszPassword_は NULL または長さ 0 の文字列へのポインターに常にあります。 
+_lpszpassword_は常に NULL にするか、長さ0の文字列へのポインターにする必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

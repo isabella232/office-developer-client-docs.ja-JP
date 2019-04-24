@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 971b4837-6823-4f28-9803-3c22b2ec091f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 35e19a4281c46ae7c2b5cbd76c1ecea35bf87665
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2bff20af2b3e9ea4e203e38ae38a8bc19074a727
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321237"
 ---
 # <a name="dtbllbx"></a>DTBLLBX
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ディスプレイ テーブルから組み込まれているダイアログ ボックスで使用するリストについて説明します。
+表示テーブルから構築されたダイアログボックスで使用されるリストを表します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _DTBLLBX
@@ -41,39 +41,39 @@ typedef struct _DTBLLBX
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulFlags**
   
-> リストからの水平方向または垂直方向のスクロール バーを排除するために使用するフラグのビットマスクです。 次のフラグを設定することができます。
+> リストから水平または垂直スクロールバーを削除するために使用されるフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_NO_HBAR 
   
-> 水平スクロール バーは必要があります、ボックスの一覧に表示されません。
+> リストに水平スクロールバーを表示する必要はありません。
     
 MAPI_NO_VBAR 
   
-> 垂直スクロール バーは必要があります、ボックスの一覧に表示されません。
+> リストに垂直スクロールバーを表示する必要はありません。
     
- **ulPRSetProperty**
+ **ulprsetproperty**
   
-> 任意の型のプロパティのプロパティ タグです。 このプロパティは、 **ulPRTableTable**のメンバーで識別されるテーブル内の列のいずれかです。 
+> 任意の型のプロパティのプロパティタグ。 このプロパティは、 **ulprtabletable**メンバーで識別されるテーブルの列の1つです。 
     
- **ulPRTableName**
+ **ulprtablename**
   
-> PT_OBJECT、 **OpenProperty**を使用して開くことができる種類のテーブルのプロパティのプロパティ タグを呼び出します。 テーブルに含める列の数は、リストの 1 つまたは複数選択リストがかどうかによって異なります。 **UlPRSetProperty**メンバーは、 **PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) に設定されている場合は、一覧は、複数選択できます。
+> **openproperty**呼び出しを使用して開くことができる PT_OBJECT 型のテーブルプロパティのプロパティタグ。 表に含める必要のある列の数は、リストが単一または複数の選択リストであるかによって決まります。 **ulprsetproperty**メンバーが**PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) に設定されている場合、リストは複数の項目を選択できます。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**DTBLLBX**構造体では、複数のアイテムを表示して、ユーザーが 1 つまたは複数の項目を選択するようにするために使用されるコントロールの一覧について説明します。 
+**dtbllbx**構造体は、複数のアイテムを表示するために使用されるコントロールのリストを記述し、ユーザーが1つ以上のアイテムを選択できるようにします。 
   
-メンバーの**ulPRSetProperty**と**ulPRTableName**のメンバーが連携します。テーブルから 1 つの値を選択すると、それに書き戻さ**ulPRSetProperty** ] ダイアログ ボックスが閉じられるとき。 
+**ulprsetproperty**メンバーと**ulprsetproperty**メンバーは連携して動作します。テーブルから1つの値が選択されている場合、ダイアログボックスが閉じられたときに**ulprsetproperty**に書き戻されます。 
   
-フラグ値は、水平方向または垂直方向のスクロール バーをリストに表示するかどうを示します。 既定では、スクロール バーが必要な場合を表示の種類が存在します。 サービス プロバイダーには、水平スクロール バーを非表示にする MAPI_NO_HBAR と垂直スクロール バーを非表示にする MAPI_NO_VBAR を設定できます。 
+flags 値は、水平または垂直のスクロールバーを一覧と共に表示するかどうかを示します。 既定では、必要に応じてスクロールバーの種類を表示します。 サービスプロバイダーは、MAPI_NO_HBAR を設定して、水平スクロールバーと MAPI_NO_VBAR を非表示にし、垂直スクロールバーを非表示にすることができます。 
   
-2 つのプロパティ タグのメンバーが連携して、ボックスの一覧で値を表示し、リスト内のアイテムを選択すると、対応するプロパティを設定します。 MAPI には、まず、一覧が表示されるとき、に、 **ulPRTableName**メンバーで識別されたテーブルを取得するための**IMAPIProp**実装の**OpenProperty**メソッドを呼び出します。 テーブル内の列の数は、 **ulPRSetProperty**メンバーの値によって異なります。 **UlPRSetProperty**は、 **PR_NULL**に設定されている場合は、受信者、アドレス帳コンテナーである、メッセージの受信者テーブルまたは配布リストの内容のテーブルなどが含まれているオブジェクトを基に複数選択リストは、リスト。 
+2つのプロパティタグメンバーは連携してリスト内の値を表示し、リスト内の項目が選択されたときに対応するプロパティを設定します。 MAPI が最初にリストを表示するときは、 **imapiprop**実装の**openproperty**メソッドを呼び出して、 **ulprtablename**メンバーで識別されたテーブルを取得します。 テーブル内の列数は、 **ulprsetproperty**メンバーの値に応じて異なります。 **ulprsetproperty**が**PR_NULL**に設定されている場合、リストは、アドレス帳コンテナー、メッセージの受信者テーブル、配布リストのコンテンツテーブルなど、受信者を含むオブジェクトに基づいて複数の選択リストになります。 
   
-複数選択リストのテーブルには、次の列を含める必要があります。
+複数選択リストのテーブルには、次の列が含まれている必要があります。
   
  **PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
   
@@ -81,11 +81,11 @@ MAPI_NO_VBAR
   
  **PR_INSTANCE_KEY**([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))
   
- **PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) と、他の 5 つの複数値を持つ文字列プロパティの最大は、3 つの必須の列を表示することもできます。 
+ **PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) およびその他の最大5つの複数値文字列プロパティを、3つの必須列と共に表示することもできます。 
   
-**UlPRSetProperty**メンバーが**PR_NULL**に設定されていない場合、リスト、単一選択リストです。 **UlPRSetProperty**の初期値は、選択されている最初の行を決定します。 ユーザーは、行のいずれかを選択して**ulPRSetProperty**のメンバーは、選択した値に設定されてこの値が[IMAPIProp::SetProps](imapiprop-setprops.md)を呼び出して、プロパティのインターフェイスの実装に書き戻す。 
+**ulprsetproperty**メンバーが**PR_NULL**に設定されていない場合、リストは単一の選択一覧になります。 **ulprsetproperty**の初期値は、最初に選択された行を決定します。 ユーザーがいずれかの行を選択すると、 **ulprsetproperty**メンバーが選択された値に設定され、この値は、 [imapiprop:: setprops](imapiprop-setprops.md)を呼び出すことでプロパティインターフェイスの実装に書き戻されます。 
   
-テーブルの表示の概要については、[テーブルの表示](display-tables.md)を参照してください。 表示テーブルを実装する方法の詳細については、[表示テーブルを実装する](display-table-implementation.md)を参照してください。
+表示テーブルの概要については、「[テーブルの表示](display-tables.md)」を参照してください。 表示テーブルを実装する方法については、「[表示テーブルを実装](display-table-implementation.md)する」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

@@ -9,24 +9,24 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: a416762b-7294-c99f-d9f1-332c3ed35dff
 description: 図形の線の種類を指定します。[LinePattern] セルには、線の種類のコレクション内でインデックスとなっている数字を入力します。
-ms.openlocfilehash: cccc6028de21299942e62c53aba48622baa95f98
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: eec5bed18777f7822f9544d59dce7722f2f732bb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316444"
 ---
-# <a name="linepattern-cell-line-format-section"></a>[LinePattern] セル ([線の書式設定] セクション)
+# <a name="linepattern-cell-line-format-section"></a>[LinePattern] セル ([Line Format] セクション)
 
 図形の線の種類を指定します。[LinePattern] セルには、線の種類のコレクション内でインデックスとなっている数字を入力します。
   
 |**値**|**説明**|
 |:-----|:-----|
-|0  <br/> |線の種類なし  <br/> |
-|1  <br/> |実線  <br/> |
-|2-23  <br/> |さまざまな線の種類  <br/> |
+|.0  <br/> |線の種類なし  <br/> |
+|1-d  <br/> |実線  <br/> |
+|2 ～ 23  <br/> |さまざまな線の種類  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 線の種類のコレクションは、[**線**] ダイアログ ボックスで参照できます (このダイアログ ボックスを開くには、[**ホーム**] タブの [**図形**] グループで、[**線**] をクリックし、[**実線/点線**] をポイントして、[**その他の線**] をクリックします)。
   
@@ -36,7 +36,7 @@ ms.locfileid: "19805708"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |LinePattern  <br/> |
+|セル名:  <br/> |[linepattern]  <br/> |
    
 プログラムから、インデックスによって [LinePattern] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

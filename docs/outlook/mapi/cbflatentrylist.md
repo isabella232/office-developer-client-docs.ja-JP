@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: 5676981b-a465-4b89-b818-1eb88333b639
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a8e26340c4a4c80210b61f777ad00dbe3897b4f6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 06fe8d33b98d9d2a211dba497bd99ff0ec21bbf7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318047"
 ---
 # <a name="cbflatentrylist"></a>CbFLATENTRYLIST
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 既存の[FLATENTRYLIST](flatentrylist.md)構造体のバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**FLATENTRYLIST** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**FLATENTRYLIST** <br/> |
    
 ```cpp
 CbFLATENTRYLIST(_lplist)
@@ -40,7 +40,7 @@ CbFLATENTRYLIST(_lplist)
 
  __lplist_
   
-> 問題の**FLATENTRYLIST**構造体へのポインター。 
+> 対象の**FLATENTRYLIST**構造体へのポインター。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -49,5 +49,5 @@ CbFLATENTRYLIST(_lplist)
 [FLATENTRYLIST](flatentrylist.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

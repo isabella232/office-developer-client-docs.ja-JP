@@ -1,5 +1,5 @@
 ---
-title: セッションを使用したオブジェクトへのアクセス
+title: セッションを使用してオブジェクトにアクセスする
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,54 +8,54 @@ api_type:
 - COM
 ms.assetid: ecada707-2960-41ec-be7e-619cad257c57
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f0696ad4d15274e4af18d2246dd124c1bfee1a2c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a76397b74642aedf9ad5c9704735d869f61db7e3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321708"
 ---
-# <a name="accessing-objects-by-using-the-session"></a>セッションを使用したオブジェクトへのアクセス
+# <a name="accessing-objects-by-using-the-session"></a>セッションを使用してオブジェクトにアクセスする
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-さまざまなオブジェクトにアクセスするのには、 [MAPILogonEx](mapilogonex.md)呼び出しから受信したセッションのポインターを使用できます。 さまざまなオブジェクトへのアクセスに使用されるメソッドを次の表に一覧します。 
+[MAPILogonEx](mapilogonex.md)の呼び出しから受け取ったセッションポインターを使用して、さまざまなオブジェクトにアクセスできます。 次の表に、さまざまなオブジェクトへのアクセスに使用されるメソッドを示します。 
   
-|**オブジェクト**|**セッションのメソッド**|
+|**Object**|**Session メソッド**|
 |:-----|:-----|
-|プロファイル セクション  <br/> |[IMAPISession::OpenProfileSection](imapisession-openprofilesection.md) <br/> |
-|メッセージ ・ ストア  <br/> |[IMAPISession::OpenMsgStore](imapisession-openmsgstore.md) <br/> |
+|プロファイルセクション  <br/> |[IMAPISession::OpenProfileSection](imapisession-openprofilesection.md) <br/> |
+|メッセージストア  <br/> |[IMAPISession::OpenMsgStore](imapisession-openmsgstore.md) <br/> |
 |アドレス帳  <br/> |[IMAPISession::OpenAddressBook](imapisession-openaddressbook.md) <br/> |
-|メッセージ サービス管理オブジェクト  <br/> |[IMAPISession::AdminServices](imapisession-adminservices.md) <br/> |
-|フォルダー、メッセージ、アドレス帳コンテナー、配布リスト、またはメッセージングのユーザー  <br/> |[IMAPISession::OpenEntry](imapisession-openentry.md) <br/> |
+|メッセージサービスの管理オブジェクト  <br/> |[IMAPISession::AdminServices](imapisession-adminservices.md) <br/> |
+|フォルダー、メッセージ、アドレス帳コンテナー、配布リスト、またはメッセージングユーザー  <br/> |[IMAPISession::OpenEntry](imapisession-openentry.md) <br/> |
    
-**OpenEntry**メソッドと有効なエントリの識別子では、アドレス帳またはメッセージ ストア プロバイダー オブジェクトを開くことができます。 他の**OpenEntry**メソッドは MAPI の**IMAPISession**メソッドだけでなくです。 **OpenEntry**は、次のオブジェクトで実装されます。 
+**openentry**メソッドと有効なエントリ識別子を使用すると、任意のアドレス帳またはメッセージストアプロバイダーオブジェクトを開くことができます。 **imapisession**メソッドに加えて、MAPI には、他にも**openentry**メソッドがあります。 **openentry**は、次のオブジェクトに実装されています。 
   
-|**オブジェクト**|**メソッド**|
+|**Object**|**メソッド**|
 |:-----|:-----|
-|ログオン オブジェクトのアドレス帳プロバイダー  <br/> |[IABLogon::OpenEntry](iablogon-openentry.md) <br/> |
+|アドレス帳プロバイダーのログオンオブジェクト  <br/> |[IABLogon::OpenEntry](iablogon-openentry.md) <br/> |
 |アドレス帳  <br/> |[IAddrBook::OpenEntry](iaddrbook-openentry.md) <br/> |
 |アドレス帳コンテナー  <br/> |[IMAPIContainer::OpenEntry](imapicontainer-openentry.md) <br/> |
-|セッション  <br/> |[IMAPISession::OpenEntry](imapisession-openentry.md) <br/> |
-|メッセージ ・ ストア  <br/> |[IMsgStore::OpenEntry](imsgstore-openentry.md) <br/> |
-|メッセージ ストア プロバイダーのログオン オブジェクト  <br/> |[IMSLogon::OpenEntry](imslogon-openentry.md) <br/> |
-|Folder  <br/> |[IMAPIContainer::OpenEntry](imapicontainer-openentry.md) <br/> |
-|サポート オブジェクト  <br/> |[IMAPISupport::OpenEntry](imapisupport-openentry.md) <br/> |
+|Session  <br/> |[IMAPISession::OpenEntry](imapisession-openentry.md) <br/> |
+|メッセージストア  <br/> |[IMsgStore::OpenEntry](imsgstore-openentry.md) <br/> |
+|メッセージストアプロバイダーのログオンオブジェクト  <br/> |[IMSLogon::OpenEntry](imslogon-openentry.md) <br/> |
+|フォルダー  <br/> |[IMAPIContainer::OpenEntry](imapicontainer-openentry.md) <br/> |
+|サポートオブジェクト  <br/> |[IMAPISupport::OpenEntry](imapisupport-openentry.md) <br/> |
    
-**OpenEntry**メソッドは、 **IMAPISession::OpenEntry**; のように開くには、オブジェクトのエントリ id を必要とします。その他のメソッドを使用すると、NULL を指定できます。 NULL エントリの識別子は、オブジェクトによって異なる方法で解釈されます。 たとえば、NULL のエントリの識別子を使用して**アドレス帳コンテナー**を呼び出すと、MAPI は、アドレス帳のルート コンテナーを開きます。 メッセージ ストアの**OpenEntry**メソッドも同様です。メッセージ ・ ストアのルート フォルダーを開きます。 **IMAPIContainer::OpenEntry**、両方のフォルダーとアドレス帳のコンテナーによって実装されるには、MAPI_E_INVALID_PARAMETER または実装によって、ルート コンテナーを返すことがあります。 
+一部の**openentry**メソッドは、 **imapisession:: openentry**のように、開くオブジェクトのエントリ識別子を必要とします。その他のメソッドを使用すると、NULL を指定できます。 NULL エントリ識別子は、オブジェクトに応じて異なる方法で解釈されます。 たとえば、NULL エントリ識別子を持つ**IAddrBook:: openentry**を呼び出すと、MAPI はアドレス帳のルートコンテナーを開きます。 メッセージストアの**openentry**メソッドは同じように動作します。メッセージストアのルートフォルダーを開きます。 **IMAPIContainer:: openentry**は、フォルダーとアドレス帳コンテナーの両方で実装されている場合があります。実装に応じて、MAPI_E_INVALID_PARAMETER またはルートコンテナーが返される場合があります。 
   
-他のエントリ id の NULL 値を許可するには、セッションの**OpenEntry**メソッドとは異なります**OpenEntry**メソッドは他のオブジェクトを開くには、そのジョブのためです。 代わりに、エントリ id を検証し、適切なサービス プロバイダーによって実装されている別の**OpenEntry**メソッドの呼び出しを転送します。 などの場合メッセージのエントリ id を持つ**IMAPISession::OpenEntry**を呼び出すと、MAPI **IMSLogon::OpenEntry**メソッド呼び出しメッセージ ストアのメッセージを担当します。 
+エントリ識別子に NULL 値を使用しないことに加えて、セッションの**openentry**メソッドは、そのジョブがオブジェクトを開かないため、他の**openentry**メソッドとは異なります。 代わりに、エントリ id を調べて、適切なサービスプロバイダーによって実装されている別の**openentry**メソッドに呼び出しを転送します。 たとえば、メッセージのエントリ識別子を含む**imapisession:: openentry**を呼び出すと、MAPI はメッセージを処理するメッセージストアの**IMSLogon:: openentry**メソッドを呼び出します。 
   
-セッションを開くにはオブジェクトを使用する以外クライアントは、それを比較するために使用します。 [IMAPISession::CompareEntryIDs](imapisession-compareentryids.md)メソッドは、それらのエントリの識別子を比較することによってオブジェクトを比較します。 エントリの識別子に含まれる[MAPIUID](mapiuid.md)構造体は、同じサービス プロバイダーに属する、MAPI は、そのプロバイダーへの呼び出しを転送します。 **CompareEntryIDs**は、2 つのエントリの識別子が一致しない場合、エラー値を返します。 このメソッドは、オブジェクトの任意の型に属しているエントリの識別子を比較できます、 **CompareEntryIDs**メッセージ ストアやアドレス帳コンテナーなどのより高レベル オブジェクトに最適に動作します。 下位レベルのオブジェクトを比較するには、直接比較のオブジェクトの検索キー (**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))) またはレコードのキー (**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)))。 
+クライアントは、セッションを使用してオブジェクトを開くだけでなく、それらを使用してオブジェクトを比較します。 [imapisession:: compareentryids](imapisession-compareentryids.md)メソッドは、エントリ識別子を比較してオブジェクトを比較します。 エントリ識別子に含まれている[MAPIUID](mapiuid.md)構造が同じサービスプロバイダーに属している場合、MAPI はそのプロバイダーに呼び出しを転送します。 **compareentryids**は、2つのエントリ識別子が一致しない場合にエラー値を返します。 このメソッドは、任意の種類のオブジェクトに属するエントリ識別子を比較できますが、 **compareentryids**は、メッセージストアやアドレス帳コンテナーなどの上位レベルのオブジェクトに最適です。 下位レベルのオブジェクトを比較するには、オブジェクトの検索キー (**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))) またはレコードキー (**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))) を直接比較します。 
   
-**OpenEntry**と同じようには、 **CompareEntryIDs**は、複数のオブジェクトによって実装されます。 **OpenEntry**と**CompareEntryID**を開く、または複数のオブジェクトについてわかっている情報の量に合わせて使用する方法を選択します。 どのインターフェイスのメソッドを呼び出すことを決定する際に、次のガイドラインを使用します。 
+**openentry**と同様に、 **compareentryids**は複数のオブジェクトで実装されています。 開かれるか、または比較されるオブジェクトについての情報量に応じて、どの**openentry**および**compareentryid**メソッドを使用するかを選択します。 呼び出すインターフェイスメソッドを決定する際には、次のガイドラインを使用します。 
   
-- 対象オブジェクトに関する情報がいない場合は、 [IMAPISession::OpenEntry](imapisession-openentry.md)または[IMAPISession::CompareEntryIDs](imapisession-compareentryids.md)を呼び出します。 この方法は、任意のオブジェクトへのアクセスを有効が 3 つの最も時間がかかります。
+- ターゲットオブジェクトに関する情報がない場合は、 [imapisession:: openentry](imapisession-openentry.md)または[imapisession:: compareentryids](imapisession-compareentryids.md)を呼び出します。 この方法を使用すると、任意のオブジェクトにアクセスできますが、3つのうち最も低速です。
     
-- ターゲット オブジェクトは、アドレス帳のエントリではなく、たとえば、フォルダーがわかっている場合は、[アドレス帳コンテナー](iaddrbook-openentry.md)または[IAddrBook::CompareEntryIDs](iaddrbook-compareentryids.md)メソッドを呼び出します。 **アドレス帳コンテナー**は、対象のオブジェクトとして NULL を指定した場合、アドレス帳のルート コンテナーを開きます。 この方法は、アドレス帳の任意のオブジェクトへのアクセスを有効にされ、 **IMAPISession**を使用するよりも高速ですが、 **IMAPIContainer**を使用するよりも遅くなります。
+- ターゲットオブジェクトがフォルダーなどではなく、アドレス帳のエントリであることがわかっている場合は、 [IAddrBook:: openentry](iaddrbook-openentry.md)または[IAddrBook:: compareentryids](iaddrbook-compareentryids.md)メソッドを呼び出します。 **IAddrBook:: openentry**は、ターゲットオブジェクトとして NULL が指定されている場合に、アドレス帳のルートコンテナーを開きます。 この方法を使用すると、アドレス帳オブジェクトへのアクセスが可能になり、 **imapisession**を使用するよりも高速になりますが、 **IMAPIContainer**を使用するよりも時間がかかります。
     
-- 短期的なエントリ id は、エントリ id を使用している場合、またはターゲット オブジェクトを特定のアドレス帳コンテナーまたはフォルダーに属していることがわかっている場合は、 [IMAPIContainer::OpenEntry](imapicontainer-openentry.md)メソッドを呼び出します。 この方法では、最速のパフォーマンスが得られますが、特定のコンテナーまたはフォルダー内のオブジェクトにのみアクセスできます。 
+- 使用されているエントリ識別子が短い用語エントリ識別子である場合、または対象のオブジェクトが特定のアドレス帳のコンテナーまたはフォルダーに属していることがわかっている場合は、 [IMAPIContainer:: openentry](imapicontainer-openentry.md)メソッドを呼び出します。 この方法では、最速のパフォーマンスが得られますが、特定のコンテナーまたはフォルダー内のオブジェクトへのアクセスのみが可能になります。 
     
 

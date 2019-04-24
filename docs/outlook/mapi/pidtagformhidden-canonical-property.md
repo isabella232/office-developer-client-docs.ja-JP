@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: 79cb1fa5-9a32-4872-9806-ecd664022234
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 89eb6f0b8248fb0113356e60e0b94e4762c2a11a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: cda969b43cba9431b986b24ec64ca26f245b7676
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316241"
 ---
 # <a name="pidtagformhidden-canonical-property"></a>PidTagFormHidden 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームを表示から非表示にする場合は TRUE が含まれています、メニューとダイアログ ボックスを作成します。 
+作成メニューおよびダイアログボックスで表示されないようにするフォームの場合は、TRUE を指定します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_FORM_HIDDEN  <br/> |
 |識別子:  <br/> |0x3307  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |一般的な MAPI  <br/> |
+|エリア:  <br/> |MAPI 共通  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォームに関連するプロパティは、読み取り専用です。 
+フォーム関連のプロパティは読み取り専用です。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

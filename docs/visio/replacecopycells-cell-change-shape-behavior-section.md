@@ -7,20 +7,20 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2f36aefd-da49-47ea-9b90-2fa1a2298849
 description: 図形の置換操作中に、古い図形から置換後の図形にコピーされるシェイプシート内のセル一覧を示します。
-ms.openlocfilehash: 1e3b5e4dbc29372f75b7a7ed8013a7dd82d94e1d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f2a7908a623c861d0284821b2d8ae5fc71690685
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32320175"
 ---
-# <a name="replacecopycells-cell-change-shape-behavior-section"></a>[ReplaceCopyCells] セル ([図形動作の変更] セクション)
+# <a name="replacecopycells-cell-change-shape-behavior-section"></a>[ReplaceCopyCells] セル ([図形の動作の変更] セクション)
 
 図形の置換操作中に、古い図形から置換後の図形にコピーされるシェイプシート内のセル一覧を示します。 
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
-置換後のマスター シェイプは、関数の各引数がセルの参照になる [**ReplaceCopyCells**] セル内に**DEPENDSON** 関数呼び出しを格納する必要があります。これらのセルは、セルがシェイプシート内のどこにあるかは関係なく、古い図形から、図形の置換操作の結果である図形にコピーされます。 
+置換後のマスター シェイプは、関数の各引数がセルの参照になる [**ReplaceCopyCells**] セル内に**DEPENDSON** 関数呼び出しを格納する必要があります。 これらのセルは、セルがシェイプシート内のどこにあるかは関係なく、古い図形から、図形の置換操作の結果である図形にコピーされます。 
   
 他のセルを参照する値および/または数式は、作成した図形にコピーされます。作成した図形に参照先のセルがない場合、コピーされたセルには値のみが格納されます。 
   
@@ -30,7 +30,7 @@ ms.locfileid: "19806189"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | ReplaceCopyCells  <br/> |
+| セル名:  <br/> | [replacecopycells]  <br/> |
    
 プログラムから、インデックスによって [**ReplaceCopyCells**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

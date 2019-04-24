@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8316ff89-104d-43fd-902b-476fe567e23b
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: fe722e8723fdc3868cbbc3188f03e13ef3f466f3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 8ccb732dd587b2e5107290b2db7c48e85d0145d4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317333"
 ---
 # <a name="imsgstoregetoutgoingqueue"></a>IMsgStore::GetOutgoingQueue
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-発信キュー テーブル、メッセージ ストアの送信キュー内のすべてのメッセージに関する情報が含まれているテーブルへのアクセスを提供します。 このメソッドは、MAPI スプーラーによってのみ呼び出されます。
+送信キューテーブル (メッセージストアの送信キューにあるすべてのメッセージに関する情報を含むテーブル) へのアクセスを提供します。 このメソッドは、MAPI スプーラーによってのみ呼び出されます。
   
 ```cpp
 HRESULT GetOutgoingQueue(
@@ -34,33 +34,33 @@ HRESULT GetOutgoingQueue(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lppTable_
+ _lpptable_
   
-> [out]発信キュー テーブルへのポインターへのポインター。
+> 読み上げ送信キューテーブルへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 発信キューのテーブルが正常に返されました。
+> 送信キューテーブルが正常に返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMsgStore::GetOutgoingQueue**メソッドでは、MAPI スプーラーに送信メッセージのメッセージ ストアのキューを表示するテーブルへのアクセスを提供します。 通常、メッセージは、 [IMessage::SubmitMessage](imessage-submitmessage.md)メソッドが呼び出された後、発信キュー テーブルに配置されます。 ただし、提出書類の順序は、前処理およびトランスポート プロバイダーへの送信の順序に影響するためいくつかのメッセージを送信するためにマークされている可能性がありますテーブルに表示されない、送信キューすぐにします。 
+**IMsgStore:: getoutgoingqueue**メソッドは、メッセージストアの送信メッセージのキューを示すテーブルへのアクセス権を MAPI スプーラーに提供します。 通常、メッセージは[IMessage:: submitmessage](imessage-submitmessage.md)メソッドが呼び出された後に、送信キューテーブルに配置されます。 ただし、送信の順序は、トランスポートプロバイダーへの前処理と送信の順序に影響するため、送信用にマークされているメッセージの一部は、すぐに送信キューテーブルに表示されない場合があります。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-発信キュー テーブル内の列として含める必要があるプロパティの一覧では、[送信キューのテーブル](outgoing-queue-tables.md)を参照してください。 
+送信キューテーブルに列として含める必要があるプロパティの一覧については、「[送信キューテーブル](outgoing-queue-tables.md)」を参照してください。 
   
-MAPI スプーラーが送信時の順序を昇順でのメッセージ ストアからメッセージを受け付けるように設計されているためか、この順序と一致または既定の並べ替え順序として設定する発信キュー テーブルを並べ替えるには、MAPI スプーラーを許可します。
+mapi スプーラーは、送信時間の昇順でメッセージストアからのメッセージを受信するように設計されているため、mapi スプーラーで送信キューテーブルを並べ替えて、この順序に一致するようにするか、または既定の並べ替え順序として設定することができます。
   
-通知を送信メッセージ キュー テーブルのサポート キューの内容を変更すると、MAPI スプーラーに通知することを確認する必要があります。 
+キューの内容が変更されたときに MAPI スプーラーに通知されるように、送信メッセージキューテーブルの通知をサポートする必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

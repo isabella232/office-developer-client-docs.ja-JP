@@ -9,31 +9,31 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 89f16674-ee1f-f5f9-9830-7bcc52e3a068
 description: ローカルな飛び越し点のスタイルを持たない図面ページ上のすべてのコネクタに対して、飛び越し点のスタイルを指定します。
-ms.openlocfilehash: 96941f675b67b38a8575bd712db5ad0eb76cd50f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 066c96f659061290b825684a479432e6d71f518c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316437"
 ---
-# <a name="linejumpstyle-cell-page-layout-section"></a>[LineJumpStyle] セル ([ページ レイアウト] セクション)
+# <a name="linejumpstyle-cell-page-layout-section"></a>[LineJumpStyle] セル ([Page Layout] セクション)
 
 ローカルな飛び越し点のスタイルを持たない図面ページ上のすべてのコネクタに対して、飛び越し点のスタイルを指定します。
   
 |**値**|**飛び越し点のスタイル**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|0  <br/> |円弧  <br/> |**visLOJumpStyleDefault** <br/> |
-|1  <br/> |円弧  <br/> |**visLOJumpStyleArc** <br/> |
-|2  <br/> |破断  <br/> |**visLOJumpStyleGap** <br/> |
-|3  <br/> |四角形  <br/> |**visLOJumpStyleSquare** <br/> |
-|4  <br/> |2 辺  <br/> |**visLOJumpStyleTriangle** <br/> |
+|.0  <br/> |円弧  <br/> |**visLOJumpStyleDefault** <br/> |
+|1-d  <br/> |円弧  <br/> |**visLOJumpStyleArc** <br/> |
+|pbm-2  <br/> |Gap  <br/> |**visLOJumpStyleGap** <br/> |
+|1/3  <br/> |四角  <br/> |**visLOJumpStyleSquare** <br/> |
+|2/4  <br/> |2 辺  <br/> |**visLOJumpStyleTriangle** <br/> |
 |5  <br/> |台形  <br/> |**visLOJumpStyle2Point** <br/> |
-|6  <br/> |4 辺  <br/> |**visLOJumpStyle3Point** <br/> |
+|シックス  <br/> |4 辺  <br/> |**visLOJumpStyle3Point** <br/> |
 |7  <br/> |5 辺  <br/> |**visLOJumpStyle4Point** <br/> |
-|8  <br/> |6 辺  <br/> |**visLOJumpStyle5Point** <br/> |
-|9  <br/> |7 辺  <br/> |**visLOJumpStyle6Point** <br/> |
+|~  <br/> |6 辺  <br/> |**visLOJumpStyle5Point** <br/> |
+|i-9  <br/> |7 辺  <br/> |**visLOJumpStyle6Point** <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 このセルの値は、[**ページ設定**] ダイアログ ボックスの [**レイアウトと経路**] タブで設定することもできます (このダイアログ ボックスを開くには、[**デザイン**] タブで [**ページ設定**] 矢印をクリックして、[**レイアウトと経路**] をクリックします)。
   
@@ -41,7 +41,7 @@ ms.locfileid: "19805711"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |LineJumpStyle  <br/> |
+|セル名:  <br/> |[linejumpstyle]  <br/> |
    
 プログラムから、インデックスによって [LineJumpStyle] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

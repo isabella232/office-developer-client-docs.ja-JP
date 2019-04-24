@@ -1,27 +1,27 @@
 ---
-title: インターフェイス (API の空き時間情報)
+title: インターフェイス (空き時間情報 API)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 85bcd5b9-321a-489d-9304-e7bd11e1fb2c
-description: このセクションでは、空き/予約済み API のインターフェイスについて説明します。
-ms.openlocfilehash: 94a071fac2ebdcf65a0d82e14073d893c069f35b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このセクションでは、空き時間情報 API のインターフェイスについて説明します。
+ms.openlocfilehash: ae271691deb87da202cbdc72a8a999d5609c16ab
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318880"
 ---
-# <a name="interfaces-freebusy-api"></a>インターフェイス (API の空き時間情報)
+# <a name="interfaces-freebusy-api"></a>インターフェイス (空き時間情報 API)
 
-このセクションでは、空き/予約済み API のインターフェイスについて説明します。
+このセクションでは、空き時間情報 API のインターフェイスについて説明します。
   
 |**インターフェイス**|**説明**|
 |:-----|:-----|
-|[IEnumFBBlock](ienumfbblock.md) <br/> |アクセスと時間の範囲内でのユーザーのデータのブロックの空き時間情報の列挙をサポートします。  <br/> |
-|[IFreeBusyData](ifreebusydata.md) <br/> |特定のユーザーを取得、時間範囲を設定およびこの時間の範囲内のデータのブロックの空き時間情報を列挙するためのインターフェイスを返します。  <br/> |
-|[IFreeBusySupport](ifreebusysupport.md) <br/> |指定したユーザーの空き時間情報データにアクセスするインターフェイスの仕様をサポートしています。  <br/> |
+|[IEnumFBBlock](ienumfbblock.md) <br/> |時間範囲内のユーザーのデータの空き時間情報ブロックへのアクセスと列挙をサポートします。  <br/> |
+|[IFreeBusyData](ifreebusydata.md) <br/> |特定のユーザーについて、時間範囲を取得および設定し、この時間範囲内のデータの空き時間ブロックを列挙するためのインターフェイスを返します。  <br/> |
+|[IFreeBusySupport](ifreebusysupport.md) <br/> |指定したユーザーの空き時間情報データにアクセスするインターフェイスの仕様をサポートします。  <br/> |
    
 

@@ -1,5 +1,5 @@
 ---
-title: IPSTXGetLastError
+title: ipstxgetlasterror
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 68dc0ecc-881e-de69-faaa-90acb9857031
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f45b070464fe1b3c177088ff6aa3295f961d45f6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 1d0fb16ba63548a44dba3920670c0e65f8c700a1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315100"
 ---
 # <a name="ipstxgetlasterror"></a>IPSTX::GetLastError
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-最後のエラーに関する情報を拡張します。
+最新のエラーに関する拡張情報を取得します。
   
 ```cpp
 HRESULT GetLastError( 
@@ -39,15 +39,15 @@ HRESULT GetLastError(
 
  _hResult_
   
->  [in]エラー コードです。 
+>  順番エラーコード。 
     
  _ulFlags_
   
->  [in]動作を変更するフラグです。 0 でなければなりません。 
+>  [in]動作を変更するフラグです。 これは0である必要があります。 
     
  _lppMAPIError_
   
->  [out]エラーに関する拡張情報を格納する**MAPIERROR**構造体へのポインター。 **LPMAPIERROR**の型の定義の mapidefs.h を参照してください。 
+>  読み上げエラーの拡張情報を含む**MAPIERROR**構造体へのポインター。 **LPMAPIERROR**の型定義については、「mapidefs.h」を参照してください。 
     
 ## <a name="see-also"></a>関連項目
 

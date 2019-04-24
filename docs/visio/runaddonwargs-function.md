@@ -8,36 +8,36 @@ f1_keywords:
 - Vis_DSS.chm82251493
 localization_priority: Normal
 ms.assetid: c154413f-c366-a66b-94e3-ed71ad23f325
-description: 文字列を実行し、コマンドライン引数を文字列としてプログラムに渡します。
-ms.openlocfilehash: 7bc05a0cbf32550d1e39bee39bec83101882cf19
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: string を実行し、コマンドライン引数を文字列としてプログラムに渡します。
+ms.openlocfilehash: bc05a4480438875c348373059f57bf04f82c9eca
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318950"
 ---
 # <a name="runaddonwargs-function"></a>RUNADDONWARGS 関数
 
-_文字列_を実行し、コマンド ・ ライン_引数_を文字列としてプログラムに渡します。 
+_string_を実行し、コマンドライン_引数_を文字列としてプログラムに渡します。 
   
 ## <a name="syntax"></a>構文
 
-RUNADDONWARGS ("* **文字列** *","* **引数** *") 
+RUNADDONWARGS ("* * *string* * *", "* * *arguments* * *") 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _string_ <br/> |必須  <br/> |**文字列型 (String)** <br/> | アドオンの名前を指定します。  <br/> |
-| _arguments_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |ユーザーのプログラムに渡す引数を指定します。  <br/> |
+| _string_ <br/> |必須  <br/> |**String** <br/> | アドオンの名前を指定します。  <br/> |
+| _arguments_ <br/> |必須  <br/> |**String** <br/> |ユーザーのプログラムに渡す引数を指定します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-実際には、_引数_は 50 文字以下にする必要があります。 RUNADDONWARGS 関数を使用すると、アクションまたはイベント セル、セルに、アドオンなどのプログラムをバインドします。 
+実際には、_引数_は50文字以下にする必要があります。 たとえば [Action] や [Events] などのセルにアドオンなどのプログラムをバインドする場合に、RUNADDONWARGS 関数を使用します。 
   
-RUNADDONWARGS 関数は、アプリケーションの **Addons** コレクションのメンバーであるアドオンのみ実行できます。このコレクションのメンバーになるためには、アドオンの EXE ファイルまたは VSL ファイルが次の条件を満たしている必要があります。 
+RUNADDONWARGS 関数は、アプリケーションの **Addons** コレクションのメンバーであるアドオンのみ実行できます。 このコレクションのメンバーになるためには、アドオンの EXE ファイルまたは VSL ファイルが次の条件を満たしている必要があります。 
   
-- アプリケーションの**起動時**または**アドオン**のパスにインストールされます。 
+- アプリケーションの Startup パスまたは Addons パスにインストールされている。 
     
 - **Addons** コレクションの **Add** メソッドを使用してプログラムから追加されている。 
     
@@ -47,7 +47,7 @@ Visio でのコードの実行に関する詳細については、この『シ�
   
 ## <a name="example"></a>例
 
-RUNADDONWARGS ("GRAPHMKR。EXE"、"/GraphMaker = スタック」) 
+RUNADDONWARGS ("GRAPHMKR。EXE "、"/graphmaker = スタック ") 
   
 アドオン Graphmkr.exe を起動し、これに引数 /GraphMaker=Stack を渡します。 
   

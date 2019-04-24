@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d4e18483-409a-4d81-91dc-f4aec29a82bb
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 074a806a710ce8c11adba815951c93c25d8cae7c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: aeb8b090997bd0c4f51f872b36d6520547846f7f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321547"
 ---
 # <a name="imapimessagesitecopymessage"></a>IMAPIMessageSite::CopyMessage
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 現在のメッセージをフォルダーにコピーします。
   
@@ -35,11 +35,11 @@ HRESULT CopyMessage(
 
 ## <a name="parameters"></a>パラメーター
 
- _pFolderDestination_
+ _pfolderdestination_
   
-> [in]メッセージのコピー先フォルダーへのポインター。
+> 順番メッセージがコピーされるフォルダーへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -47,33 +47,33 @@ S_OK
     
 MAPI_E_NO_SUPPORT 
   
-> このメッセージのサイトでは、操作はサポートされていません。
+> 操作は、このメッセージサイトではサポートされていません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォーム オブジェクトは、現在のメッセージを新しいフォルダーにコピーするのには**IMAPIMessageSite::CopyMessage**メソッドを呼び出します。 **CopyMessage**では、ユーザーに現在表示されているメッセージは変更されませんし、フォームを新しく作成したメッセージのインターフェイスは返されません。 
+Form オブジェクトは**IMAPIMessageSite:: copymessage**メソッドを呼び出して、現在のメッセージを新しいフォルダーにコピーします。 **copymessage**は、現在ユーザーに表示されているメッセージを変更しません。また、新しく作成されたメッセージのインターフェイスはフォームに返されません。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**CopyMessage**メソッドの一般的な実装では、次のタスクを実行します。 
+**copymessage**メソッドの一般的な実装では、次のタスクを実行します。 
   
-1. 現在のメッセージにコピーするための新しいメッセージを作成します。
+1. 現在のメッセージをコピーする新しいメッセージを作成します。
     
-2. _PMessage_パラメーターおよび FALSE で、 _fSameAsLoad_パラメーターでの新しいメッセージへのポインターで[IPersistMessage::Save](ipersistmessage-save.md)メソッドを呼び出します。 
+2. [IPersistMessage:: Save](ipersistmessage-save.md)メソッドを呼び出して、 _pmessage_パラメーターに新しいメッセージへのポインターを指定し、 _fsameasload_パラメーターに FALSE を指定します。 
     
-3. _PMessage_パラメーターに NULL を渡して、 [IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md)メソッドを呼び出します。 
+3. _pmessage_パラメーターに NULL を渡す[IPersistMessage:: SaveCompleted](ipersistmessage-savecompleted.md)メソッドを呼び出します。 
     
-4. 新しいメッセージで、 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出します。 
+4. 新しいメッセージに対して[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出します。 
     
-フォームのサーバーに関連付けられているインターフェイスの一覧は、 [MAPI フォームのインタ フェース](mapi-form-interfaces.md)を参照してください。
+フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::CopyMessage  <br/> |実装されていません。  <br/> |
+|MyMAPIFormViewer  <br/> |cmymapiformviewer:: copymessage  <br/> |実装されていません。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -90,5 +90,5 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
+[MAPI フォームインターフェイス](mapi-form-interfaces.md)
 

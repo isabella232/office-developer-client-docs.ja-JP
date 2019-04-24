@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: c35d9e38-f4cf-4908-aaa1-a4263b58f7e8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d5d86af111bc778839a78f9b56ba7126e6c973d5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e1ea68a7690a93915cd80ad5406c4d71d3a97400
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321442"
 ---
 # <a name="imapimessagesitegetsession"></a>IMAPIMessageSite::GetSession
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-現在のメッセージを作成または開いたの MAPI セッションを返します。
+現在のメッセージが作成または開かれた MAPI セッションを返します。
   
 ```cpp
 HRESULT GetSession(
@@ -35,11 +35,11 @@ HRESULT GetSession(
 
 ## <a name="parameters"></a>パラメーター
 
- _ppSession_
+ _ppsession_
   
-> [out]返されたセッション オブジェクトへのポインターへのポインター。
+> 読み上げ返されたセッションオブジェクトへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -47,19 +47,19 @@ S_OK
     
 S_FALSE 
   
-> 現在のメッセージのセッションが存在しません。
+> 現在のメッセージにはセッションが存在しません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォームのサーバーに関連付けられているインターフェイスの一覧は、 [MAPI フォームのインタ フェース](mapi-form-interfaces.md)を参照してください。
+フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetSession  <br/> |MFCMAPI メソッドを使用して、 **IMAPIMessageSite::GetSession**現在キャッシュされているセッションのポインターを返すことがある場合。  <br/> |
+|MyMAPIFormViewer  <br/> |cmymapiformviewer:: getsession  <br/> |mfcmapi は、 **IMAPIMessageSite:: getsession**メソッドを使用して、現在キャッシュされているセッションポインターを返します (使用可能な場合)。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

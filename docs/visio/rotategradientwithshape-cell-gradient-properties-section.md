@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6aada005-3403-4666-9779-7ccb5b83b74a
 description: 塗りつぶしのグラデーションが 2D 回転で図形に合わせて回転するかどうかを、ブール演算型で決定します。
-ms.openlocfilehash: d752f870fd08c1a47dfc7ce193b6976a1bdb2a1f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 76a76a4a97128c81710269f75e9e17db90827377
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315660"
 ---
 # <a name="rotategradientwithshape-cell-gradient-properties-section"></a>[RotateGradientWithShape] セル ([グラデーションのプロパティ] セクション)
 
@@ -20,16 +20,16 @@ ms.locfileid: "19806242"
   
 |**値**|**説明**|
 |:-----|:-----|
-|TRUE  <br/> |グラデーションは、周りの回転の暗証番号 (pin)、図形を回転させて、図形を回転します。 グラデーションの「上」は、回転ハンドルに平行です。  <br/> |
-|FALSE  <br/> |回転の暗証番号 (pin) を中心に図形を回転すると、グラデーションは図形を回転しません。 グラデーションの「上」は、描画キャンバスに平行です。  <br/> |
+|TRUE  <br/> |図形が回転ピンを中心に回転するとき、グラデーションは図形に合わせて回転します。 グラデーションの "上部" は、回転ハンドルに対して平行です。  <br/> |
+|FALSE  <br/> |図形が回転ピンを中心に回転するとき、グラデーションは図形に合せて回転しません。 グラデーションの "上部" は、描画キャンバスに対して平行です。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**RotateGradientWithShape**] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | RotateGradientWithShape  <br/> |
+| セル名:  <br/> | [rotategradientwithshape]  <br/> |
    
 プログラムから、インデックスによって [**RotateGradientWithShape**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 396db029-1d4a-203d-2256-3353d03c6767
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b6a36c1e0c3854342b627b6fddd6eb5459211f62
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: e988114e8e71ad1f80d20ab0d5a30c37425f5952
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315058"
 ---
 # <a name="ipstx2setspoolsuspendstate"></a>IPSTX2::SetSpoolSuspendState
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-スプーラーを一時停止の状態を設定します。
+スプーラーの中断状態を設定します。
   
 ```cpp
 void SetSpoolSuspendState( 
@@ -35,9 +35,9 @@ void SetSpoolSuspendState(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulState_
+ _ulstate_
   
-> [in]スプーラーに設定する状態です。 次の値のいずれかを指定する必要があります。
+> 順番スプーラーをに設定する状態。 次のいずれかの値であることが必要です。
     
  **SS_ACTIVE**
   
@@ -51,5 +51,5 @@ void SetSpoolSuspendState(
 
 
 
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
 

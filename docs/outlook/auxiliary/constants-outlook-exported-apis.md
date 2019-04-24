@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 7590a30e-3fd8-7ae3-f077-c80f6cc21d7b
-description: このトピックには、Outlook にエクスポートする Api の定数の定義が含まれています。
+description: このトピックでは、Outlook でエクスポートされる api の定数定義について説明します。
 ms.openlocfilehash: 65181932b858da1b32c3fbe5fd0bd7e92ca8dc9f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319874"
 ---
 # <a name="constants-outlook-exported-apis"></a>(Outlook エクスポート Api) 定数
 
-このトピックには、Outlook にエクスポートする Api の定数の定義が含まれています。
+このトピックでは、Outlook でエクスポートされる api の定数定義について説明します。
   
-## <a name="definitions-for-time-zone-support"></a>タイム ゾーンの定義をサポートします。
+## <a name="definitions-for-time-zone-support"></a>タイムゾーンサポートの定義
 
 ```cpp
 const ULONG TZ_MAX_RULES                    = 0x00000001;  
@@ -29,7 +29,7 @@ const WORD  TZRULE_FLAG_EFFECTIVE_TZREG     = 0x0002;
 const WORD  TZDEFINITION_FLAG_VALID_KEYNAME = 0x0002;
 ```
 
-## <a name="definitions-for-category-support"></a>カテゴリの定義をサポートします。
+## <a name="definitions-for-category-support"></a>カテゴリサポートの定義
 
 |**定数**|**定義**|
 |:-----|:-----|
@@ -37,14 +37,14 @@ const WORD  TZDEFINITION_FLAG_VALID_KEYNAME = 0x0002;
    
 ## <a name="miscellaneous-dispatch-identifiers"></a>その他のディスパッチ識別子
 
-開発者は、対応するプロパティまたはメソッドにアクセスしたり、対応するイベントを待機する[:invoke](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke)を使用できるように、outlook は次のディスパッチ識別子 (dispid) を公開します。 
+Outlook では、次のディスパッチ識別子 (dispid) が公開されているため、開発者は[IDispatch:: Invoke](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke)を使用して、対応するプロパティやメソッドにアクセスしたり、対応するイベントを聞いたりすることができます。 
   
-|**関連付けられた定数**|**Dispid 値**|**説明**|**適用可能なインタ フェース**|
+|**関連する定数**|**Dispid 値**|**説明**|**適用可能なインターフェイス**|
 |:-----|:-----|:-----|:-----|
-|**dispidFDirty** <br/> |0xF024  <br/> |アイテムが変更されていますが保存されていないかどうかを確認する項目に対応するプロパティを呼び出すために使用します。  <br/> |アイテム レベルのオブジェクト  <br/> |
-|**dispidShowSenderPhoto** <br/> |0xF0D0  <br/> |指定された引数に基づいて、連絡先の画像を表示するかどうかを指定するのには、エクスプ ローラーまたはインスペクターの対応するメソッドを呼び出すために使用します。  <br/> |エクスプ ローラーまたはインスペクター  <br/> |
-|**dispidBeforePrint** <br/> |0xFC8E  <br/> |印刷操作の前に起動する **:invoke**関数からイベントを処理するために使用されます。  <br/> |アプリケーション  <br/> |
-|**dispidEventReadComplete** <br/> |0xFC8F  <br/> |Outlook がアイテムのプロパティの読み取りを完了したときに発生する **:invoke**関数からイベントを処理するために使用されます。  <br/> |アイテム レベルのオブジェクト  <br/> |
+|**dispidfdirty** <br/> |0xf024  <br/> |アイテムの対応するプロパティを呼び出して、アイテムが変更されたが保存されていないかどうかを確認するために使用します。  <br/> |アイテムレベルのオブジェクト  <br/> |
+|**dispidShowSenderPhoto** <br/> |0xf・0  <br/> |指定した引数に基づいて連絡先の画像を表示するかどうかを指定するために、エクスプローラーまたはインスペクターの対応するメソッドを呼び出すために使用します。  <br/> |エクスプローラーまたはインスペクター  <br/> |
+|**dispidbeforeprint** <br/> |0xFC8E  <br/> |**IDispatch:: Invoke**関数からのイベントを処理するために使用します。このイベントは、印刷操作の前に発生します。  <br/> |アプリケーション  <br/> |
+|**dispidEventReadComplete** <br/> |0xfc8f  <br/> |Outlook がアイテムのプロパティの読み取りを完了したときに発生する**IDispatch:: Invoke**関数からのイベントを処理するために使用されます。  <br/> |アイテムレベルのオブジェクト  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

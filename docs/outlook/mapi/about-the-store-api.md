@@ -6,24 +6,24 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 166a8e60-e09d-7473-b61b-35d78a863192
 description: '�ŏI�X�V��: 2012�N6��25��'
-ms.openlocfilehash: d72df30eab5fde4288b5feba1d7045da05117bde
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fb9b0a4c8ac1a2f41a0fddcd746dba5fc4bae1a2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321750"
 ---
 # <a name="about-the-store-api"></a>ストア API について
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-保存の API では、プロバイダーを格納するその他のストアの機能を提供します。 次の定義、データ型、プロパティ、およびインターフェイスを提供します。
+store API は、ストアプロバイダーにさまざまなストア機能を提供します。 これにより、次の日、データ型、プロパティ、およびインターフェイスが提供されます。
   
 定義
   
-- [ストア API の定数](mapi-constants.md)
+- [Store API の定数](mapi-constants.md)
     
 データ型:
   
@@ -31,22 +31,22 @@ ms.locfileid: "22579376"
     
 - **[MSCAP_SELECTOR](mscap_selector.md)**
     
-名前付きプロパティ。
+名前付きプロパティ:
   
 - **[ArchiveSourceSupportMask](archivesourcesupportmask.md)**
     
 - **[CrawlSourceSupportMask](crawlsourcesupportmask.md)**
     
-- **[サーバーのフォルダーのサイズを表示します。](display-server-folder-sizes-property.md)**
+- **[サーバーフォルダーのサイズを表示する](display-server-folder-sizes-property.md)**
     
-- **[会議の更新] オプションを非表示にします。](hide-meeting-update-option-property.md)**
+- **[会議の更新オプションを非表示にする](hide-meeting-update-option-property.md)**
     
-- **[ストアの種類のプライベート](make-store-type-private-property.md)**
+- **[ストアの種類をプライベートにする](make-store-type-private-property.md)**
     
 - **[NoFolderScan](nofolderscan.md)**
     
 > [!NOTE]
-> これらの名前付きプロパティによって提供される機能のいずれかを必要としないストアのプロバイダーでは、単純に無視でき、 **IMAPIProp**インターフェイスのサポートを実装することができます。 これらのプロパティを提供するには、Microsoft Outlook 2003 Service Pack 1 で始まる、ためには、Microsoft Outlook の以前のバージョン ストアに追加することも効果がありません。 存在しない場合、またはその値が**false**の場合、無視されます。 
+> これらの名前付きプロパティによって提供される機能を必要としないストアプロバイダーは、単にそれらを無視して、 **imapiprop**インターフェイスでサポートを実装することはできません。 これらのプロパティは、microsoft outlook 2003 Service Pack 1 以降で提供されるため、以前のバージョンの microsoft outlook でストアに追加しても効果はありません。 存在しない場合、または値が**false**の場合は無視されます。 
   
 プロパティ:
   
@@ -62,16 +62,16 @@ ms.locfileid: "22579376"
   
 - **[IFolderSupport](ifoldersupportiunknown.md)**
     
-- **[IMSCapabilities](imscapabilitiesiunknown.md)**
+- **[imscapabilities](imscapabilitiesiunknown.md)**
     
 - **[IProxyStoreObject](iproxystoreobject.md)**
     
-## <a name="registering-stores-for-indexing"></a>インデックス作成のためのストアを登録します。
+## <a name="registering-stores-for-indexing"></a>インデックス作成のためのストアの登録
 
-MAPI プロトコル ハンドラーでは、検索用のストアにインデックスを作成するための Windows レジストリをチェックします。 インデックスを作成するストア プロバイダーは、Windows レジストリに登録しなければなりません。 2013 の Outlook または Outlook 2010 のインデックス作成のためのストア プロバイダーの登録の詳細については、[ストアの登録について](about-registering-stores-for-indexing.md)を参照してください。
+MAPI プロトコルハンドラーは、検索用にインデックスが必要なストアの Windows レジストリをチェックします。 インデックスを作成するストアプロバイダーは、Windows レジストリに登録する必要があります。 outlook 2013 または outlook 2010 でのインデックス作成のためのストアプロバイダーの登録の詳細については、「[インデックス作成のためのストア登録につい](about-registering-stores-for-indexing.md)て」を参照してください。
   
-## <a name="indexing-stores"></a>ストアのインデックスを作成します。
+## <a name="indexing-stores"></a>インデックス作成ストア
 
-MAPI ストア プロバイダーは、クロールとインデックスのストアにメッセージを MAPI プロトコル ハンドラーを許可するか、インデックスを作成するメッセージがある場合にのみ、インデクサーに対して通知を送信することできます。 通知に基づくインデックス作成の詳細については、 [About Notification-Based ストアのインデックス作成](about-notification-based-store-indexing.md)を参照してください。
+mapi ストアプロバイダーでは、mapi プロトコルハンドラーでストア内のメッセージのクロールとインデックス作成を行うことができます。また、インデックスを作成するメッセージがある場合にのみ、インデクサーに通知を送信することもできます。 通知ベースのインデックス作成の詳細については、「[通知ベースのストアインデックス作成につい](about-notification-based-store-indexing.md)て」を参照してください。
   
 

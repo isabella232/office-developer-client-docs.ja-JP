@@ -7,44 +7,44 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 303c9dcb-f9b5-4cea-b5f2-3eba01aa3b09
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d3b20c9fb4b4f1a26eb4ed1a9a498bd56a915a70
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 08470a80153e42136922ae502252d83de0125512
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317235"
 ---
 # <a name="installing-a-form-into-a-library"></a>ライブラリへのフォームのインストール
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-Windows SDK に付属している既定の MAPI フォーム マネージャーでは、各種のフォーム ライブラリにフォームをインストールするためのユーザー インターフェイスを行いません。 このため、小規模なアプリケーションを作成する必要がある、または一連の命令の詳細: ユーザーがフォームをインストールするのには使用できます。
+Windows SDK で提供される既定の MAPI フォームマネージャーは、さまざまなフォームライブラリにフォームをインストールするためのユーザーインターフェイスを提供しません。 このため、ユーザーがフォームのインストールに使用できる小さなアプリケーションまたは詳細な手順のセットを作成する必要があります。
   
-インストール アプリケーションを実装する場合、一連のアクションを実行する必要の表は、次のとおりのフォルダーの関連する内容にフォームをインストールするのには。
+インストールアプリケーションを実装する場合、フォームをフォルダーに関連付けられたコンテンツテーブルにインストールするために実行する必要がある一連のアクションは次のとおりです。
   
-1. マネージャーを開くには、フォームの[MAPIOpenFormMgr](mapiopenformmgr.md)関数を呼び出します。 
+1. [MAPIOpenFormMgr](mapiopenformmgr.md)関数を呼び出して、フォームマネージャーを開きます。 
     
-2. [IMAPIFormMgr::OpenFormContainer](imapiformmgr-openformcontainer.md)または[IMAPIFormMgr::SelectFormContainer](imapiformmgr-selectformcontainer.md)メソッドを使用して、選択し、フォームの移動先のコンテナーを開きます。 
+2. [imapiformmgr:: openformcontainer](imapiformmgr-openformcontainer.md)または[imapiformmgr:: selectformcontainer](imapiformmgr-selectformcontainer.md)メソッドを使用して、フォームのターゲットコンテナーを選択して開きます。 
     
-3. フォームをインストールするのにには、 [IMAPIFormContainer::InstallForm](imapiformcontainer-installform.md)関数を使用します。 
+3. [imapiformcontainer:: installform](imapiformcontainer-installform.md)関数を使用して、フォームをインストールします。 
     
-    4 ~ 6 の手順は、ローカルのフォーム ライブラリにインストールのことです。
+    手順 4 ~ 6 は、ローカルフォームライブラリへのインストールに使用できます。
     
-4. インストールがユーザーのワークステーション上のローカル フォーム ライブラリにある場合は、ローカル ディスク上の適切な場所にすべてのファイルをコピーします。 必要に応じて、コンポーネントの現在のパスを反映するようにフォーム構成ファイルを変更します。 フォーム構成ファイルは、場合にこの手順は必要ありません、相対パスを含めることができます。
+4. インストールがユーザーのワークステーション上のローカルフォームライブラリにインストールされている場合は、すべてのファイルをローカルディスク上の適切な場所にコピーします。 必要に応じて、コンポーネントの現在のパスを反映するようにフォーム構成ファイルを変更します。 フォーム構成ファイルには相対パスを含めることができます。この場合、この手順は必要ありません。
     
-5. インストールされているフォームのサーバーにメッセージの種類を関連付けるには、適切な OLE 登録手順を完了します。
+5. 適切な OLE 登録手順を実行して、メッセージの種類とインストールされているフォームサーバーを関連付けます。
     
-6. ローカル フォーム ライブラリにフォームがインストールされた場合、フォームのアイコン (.ico) と構成 (.cfg) ファイル ディレクトリにコピー、%WINDOWS%\FORMS\CONFIGS フォーム復元できるように自動的にフォーム ライブラリが破損または削除された場合にします。 この手順は、推奨されるが、必須ではないです。
+6. フォームがローカルフォームライブラリにインストールされている場合は、フォームのアイコン (.ico) ファイルと構成ファイル (cfg) を%WINDOWS%\FORMS\CONFIGS ディレクトリにコピーして、フォームライブラリが破損または削除された場合に、フォームを自動的に復元できるようにします。 この手順は推奨されていますが、必須ではありません。
     
 > [!NOTE]
-> 手順 1 と 2 を[MAPIOpenLocalFormContainer](mapiopenlocalformcontainer.md)関数の呼び出しに置き換えることによって、ローカルのフォーム ライブラリにインストールを簡略化できます。 
+> 手順1と2を[MAPIOpenLocalFormContainer](mapiopenlocalformcontainer.md)関数の呼び出しで置き換えることにより、ローカルフォームライブラリへのインストールを簡素化できます。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI フォーム サーバーの開発](developing-mapi-form-servers.md)
+[MAPI フォームサーバーの開発](developing-mapi-form-servers.md)
 

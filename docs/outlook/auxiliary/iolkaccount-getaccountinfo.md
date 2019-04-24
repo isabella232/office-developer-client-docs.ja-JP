@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 97f08cde-d6e4-8935-1758-4018a3baf682
-description: 指定したアカウントの種類とカテゴリの情報を取得します。
-ms.openlocfilehash: 85f27d1d5f47a372090b208821b52656a56559ad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 指定されたアカウントの種類とカテゴリ情報を取得します。
+ms.openlocfilehash: 88021537cc7ff4c55759081e6f3619c2a9f10ea3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318187"
 ---
 # <a name="iolkaccountgetaccountinfo"></a>IOlkAccount::GetAccountInfo
 
-指定したアカウントの種類とカテゴリの情報を取得します。
+指定されたアカウントの種類とカテゴリ情報を取得します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -33,9 +33,9 @@ HRESULT IOlkAccount::GetAccountInfo(
 
 ## <a name="parameters"></a>パラメーター
 
-_pclsidType_
+_pclsidtype_
   
-> [out]アカウントの種類のクラスの識別子です。 値は、次のいずれかする必要があります。
+> 読み上げアカウントの種類のクラス識別子。 値は、次のいずれかする必要があります。
     
    - CLSID_OlkPOP3Account 
     
@@ -47,13 +47,13 @@ _pclsidType_
     
    - CLSID_OlkLDAPAccount
     
-_pcCategories_
+_pccategories_
   
-> [out]_PrgclsidCategory_内のカテゴリの数です。
+> 読み上げ_prgclsidCategory_の分類項目数を指定します。
     
 _prgclsidCategory_
   
-> [out]このアカウントが関連付けられているカテゴリの配列。 サイズの配列は、* _pcCategories_。 配列内の各カテゴリの値は、次のいずれかである必要があります。
+> 読み上げこのアカウントが関連付けられているカテゴリの配列。 配列のサイズは、 _pccategories_です。 配列内の各カテゴリの値は、次のいずれかである必要があります。
     
    - CLSID_OlkMail
     
@@ -65,11 +65,11 @@ _prgclsidCategory_
 
 呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。
   
-## <a name="remarks"></a>解釈
+## <a name="remarks"></a>解説
 
-このメソッドから制御が戻った後、 [IOlkAccount::FreeMemory](iolkaccount-freememory.md)を使用して*prgclsidCategory*を解放する必要があります。
+このメソッドが返された後、 [IOlkAccount:: FreeMemory](iolkaccount-freememory.md)を使用して*prgclsidCategory*を解放する必要があります。
   
-**IOlkAccount::GetAccountInfo**は、Exchange アカウントのアドレス帳の分類をサポートしていません。 アカウントが Exchange の場合、取引先企業 (*pclsidType* **CLSID_OlkMAPIAccount** )、およびアカウントは、アドレス帳を実装して、呼び出し元の**IOlkAccount::GetAccountInfo** *でカテゴリとして**CLSID_OlkAddressBook**が返されませんprgclsidCategory* 。 
+**IOlkAccount:: getaccountinfo**は、Exchange アカウントのアドレス帳カテゴリをサポートしていません。 アカウントが Exchange アカウント (*pclsidtype*が**CLSID_OlkMAPIAccount** ) で、そのアカウントがアドレス帳を実装している場合、 **IOlkAccount:: getaccountinfo**を呼び出しても、 **CLSID_OlkAddressBook**はの*カテゴリとして返されません。prgclsidCategory* 。 
   
 ## <a name="see-also"></a>関連項目
 

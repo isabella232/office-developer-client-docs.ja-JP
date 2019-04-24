@@ -1,33 +1,33 @@
 ---
-title: ラップされた PST ストア プロバイダーを初期化しています。
+title: ラップされた PST ストア プロバイダーの初期化
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 07633717-ba4c-b146-ad65-60b37ab98ab6
-description: '最終更新日: 2012 年 10 月 05 日'
-ms.openlocfilehash: c39f66917ecc080785b3a3e91506d3994427ca62
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 最終更新日:05 年10月2012日
+ms.openlocfilehash: 31114e4082fbc5e4c57da95eb6b32339822b1645
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317242"
 ---
-# <a name="initializing-a-wrapped-pst-store-provider"></a>ラップされた PST ストア プロバイダーを初期化しています。
+# <a name="initializing-a-wrapped-pst-store-provider"></a>ラップされた PST ストア プロバイダーの初期化
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ラップされた個人用フォルダー ファイル (PST) のストア プロバイダーを実装するためのエントリ ポイントとして、 **[MSProviderInit](msproviderinit.md)** 関数を使用して、ラップされた PST ストア プロバイダーを初期化する必要があります。 プロバイダーの DLL が初期化された後、 **[MSGSERVICEENTRY](msgserviceentry.md)** 関数は、ラップされた PST ストア プロバイダーを構成します。 
+ラップされた個人用フォルダーファイル (PST) ストアプロバイダーを実装するには、エントリポイントとして**[msproviderinit](msproviderinit.md)** 関数を使用して、ラップされた PST ストアプロバイダーを初期化する必要があります。 プロバイダーの DLL が初期化された後、 **[msgserviceentry](msgserviceentry.md)** 関数は、ラップされた PST ストアプロバイダーを構成します。 
   
-このトピックでは、 **MSProviderInit**関数および**MSGSERVICEENTRY**関数はサンプル ラップ PST ストア プロバイダーのコード例を使用して説明します。 レプリケーション API と連携して使用するものでは、ラップされた PST プロバイダーを実装します。 ダウンロードとサンプル ラップ PST ストア プロバイダーをインストールする方法の詳細については、「[サンプル ラップ PST ストア プロバイダーをインストールする](installing-the-sample-wrapped-pst-store-provider.md)」を参照してください。 レプリケーション API の詳細については、 [「レプリケーション API 詳細](about-the-replication-api.md)を参照してください。
+このトピックでは、サンプルのラップされた PST ストアプロバイダーからのコード例を使用して、 **msproviderinit**関数と**msgserviceentry**関数をデモンストレーションします。 このサンプルでは、レプリケーション API と共に使用することを目的とした、ラップされた PST プロバイダーを実装しています。 サンプルのラップされた pst ストアプロバイダーのダウンロードとインストールの詳細については、「[サンプルのラップされた pst ストアプロバイダーのインストール](installing-the-sample-wrapped-pst-store-provider.md)」を参照してください。 レプリケーション api の詳細については、「[レプリケーション api につい](about-the-replication-api.md)て」を参照してください。
   
-ラップされた PST ストア プロバイダーを初期化すると、MAPI および MAPI スプーラーは、メッセージ ストア プロバイダーにログオンできるように関数を実装する必要があります。 詳細については、[ラップされた PST ストア プロバイダーにログを](logging-on-to-a-wrapped-pst-store-provider.md)参照してください。
+ラップされた PST ストアプロバイダーを初期化した後、mapi および mapi スプーラーがメッセージストアプロバイダーにログオンできるように、関数を実装する必要があります。 詳細については、「ラップされ[た PST ストアプロバイダーへのログオン](logging-on-to-a-wrapped-pst-store-provider.md)」を参照してください。
   
 ## <a name="initialization-routine"></a>初期化ルーチン
 
-ラップされたすべての PST ストア プロバイダーは、プロバイダーの DLL を初期化するためにエントリ ポイントとして、 **[MSProviderInit](msproviderinit.md)** 関数を実装する必要があります。 **MSProviderInit**をチェックするかどうか、サービス プロバイダーのインターフェイスのバージョン番号`ulMAPIVer`、現在のバージョン番号と互換性のある`CURRENT_SPI_VERSION`。 保存 MAPI メモリに管理ルーチンの関数、 `g_lpAllocateBuffer`、 `g_lpAllocateMore`、および`g_lpFreeBuffer`のパラメーターです。 メモリの割り当てと割り当て解除には、ラップされた PST ストアの実装でこれらのメモリ管理ルーチンを使用してください。 
+ラップされたすべての PST ストアプロバイダーは、プロバイダーの DLL を初期化するためのエントリポイントとして**[msproviderinit](msproviderinit.md)** 関数を実装する必要があります。 **msproviderinit**は、サービスプロバイダーインターフェイス`ulMAPIVer`のバージョン番号が現在のバージョン番号と互換性があるかどうかを確認`CURRENT_SPI_VERSION`します。 この関数は、MAPI メモリ管理ルーチンを、 `g_lpAllocateBuffer`、 `g_lpAllocateMore`および`g_lpFreeBuffer`パラメーターに保存します。 これらのメモリ管理ルーチンは、メモリの割り当てと解放のために、ラップされた PST ストアの実装全体で使用する必要があります。 
   
-### <a name="msproviderinit-example"></a>MSProviderInit() の使用例
+### <a name="msproviderinit-example"></a>msproviderinit () の例
 
 ```cpp
 STDINITMETHODIMP MSProviderInit ( 
@@ -106,9 +106,9 @@ STDINITMETHODIMP MSProviderInit (
 }
 ```
 
-### <a name="wrapped-pst-and-unicode-paths"></a>ラップされた pst ファイルと Unicode のパス
+### <a name="wrapped-pst-and-unicode-paths"></a>ラップされた PST および Unicode パス
 
-NST への Unicode のパスを使用して、Unicode 対応の Microsoft Outlook 2010、Outlook 2013 で使用する Microsoft Visual Studio 2008 の準備をして、元のサンプルを改造するには、エントリの識別子を作成するには、 **CreateStoreEntryID**ルーチンを使用する必要があります。ASCII パス、および Unicode のパスの別の 1 つの形式です。 これらは、次の例では、構造体として表されます。 
+unicode 対応の microsoft outlook 2010 および outlook 2013 で使用するために、NST への unicode パスを使用するために、microsoft Visual Studio 2008 で準備された元のサンプルを retrofit するには、エントリ識別子を生成する**createstoreentryid**ルーチンを使用する必要があります。1つは ASCII パスで、もう1つは Unicode パスです。 次の例では、これらは構造体として表されています。 
   
 ```cpp
 typedef struct                              // short format
@@ -131,13 +131,13 @@ typedef struct                              // Long format to support Unicode pa
 ```
 
 > [!IMPORTANT]
-> これらの構造の違いは、Unicode のパスの前に 2 つの NULL バイトです。 「サービス エントリ ルーチン」の後のエントリ id を解釈する必要があります、か、そうではあるかどうかを決定する方法の 1 つのように EIDMS し、先ず、szPath [0] が NULL であるかどうかをキャストするでしょう。 場合は、代わりに EIDMSW としてキャストします。 
+> これらの構造体の違いは、Unicode パスの前の2つの NULL バイトです。 次の「サービスエントリルーチン」のエントリ識別子を解釈する必要がある場合は、最初に eidms としてキャストするかどうかを確認してから、szpath [0] が NULL かどうかを確認する方法の1つです。 その場合は、代わりに EIDMSW としてキャストします。 
   
-## <a name="service-entry-routine"></a>サービス エントリ ルーチン
+## <a name="service-entry-routine"></a>サービスエントリルーチン
 
-**[MSGSERVICEENTRY](msgserviceentry.md)** 関数は、ラップされた PST ストア プロバイダーが構成されているメッセージ サービスのエントリ ポイントです。 関数呼び出し`GetMemAllocRoutines()`MAPI のメモリ管理ルーチンを取得します。 関数を使用して、`lpProviderAdmin`プロファイルにプロパティを設定、プロバイダーのプロファイル セクションを検索するパラメーターです。 
+**[msgserviceentry](msgserviceentry.md)** 関数は、ラップされた PST ストアプロバイダーが構成されているメッセージサービスエントリポイントです。 MAPI メモリ管理`GetMemAllocRoutines()`ルーチンを取得する関数呼び出し。 この関数は、 `lpProviderAdmin`パラメーターを使用してプロバイダーのプロファイルセクションを見つけ、プロファイルのプロパティを設定します。 
   
-### <a name="serviceentry-example"></a>ServiceEntry() の使用例
+### <a name="serviceentry-example"></a>serviceentry () の例
 
 ```cpp
 HRESULT STDAPICALLTYPE ServiceEntry ( 
@@ -243,9 +243,9 @@ HRESULT STDAPICALLTYPE ServiceEntry (
 
 ## <a name="see-also"></a>関連項目
 
-- [ラップされた PST ストア プロバイダーのサンプルについて](about-the-sample-wrapped-pst-store-provider.md)
-- [ラップされた PST ストア プロバイダーのサンプルのインストール](installing-the-sample-wrapped-pst-store-provider.md)
-- [ラップされた PST ストア プロバイダーへのログオン](logging-on-to-a-wrapped-pst-store-provider.md)
-- [ラップされた PST ストア プロバイダーの使用](using-a-wrapped-pst-store-provider.md)
-- [ラップされた PST ストア プロバイダーのシャットダウン](shutting-down-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストアプロバイダーのサンプルについて](about-the-sample-wrapped-pst-store-provider.md)
+- [ラップされた PST ストアプロバイダーのサンプルのインストール](installing-the-sample-wrapped-pst-store-provider.md)
+- [ラップされた PST ストアプロバイダーへのログオン](logging-on-to-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストアプロバイダーの使用](using-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストアプロバイダーのシャットダウン](shutting-down-a-wrapped-pst-store-provider.md)
 

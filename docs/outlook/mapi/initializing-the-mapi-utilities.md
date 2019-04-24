@@ -7,24 +7,24 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 02b14285-bbef-44f2-b2a4-45d96395998a
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d0507a26b9ae5ae018111e2771e3af8b25761786
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 5c5a9355e9edec28e08986ccd055fc43eec7b974
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317221"
 ---
 # <a name="initializing-the-mapi-utilities"></a>MAPI ユーティリティの初期化
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI を使用する必要があるの一部にすぎませんが、ユーティリティ、インターフェイス、および機能は、MAPI の MAPIUTIL で宣言されています。H ヘッダー ファイルに**IPropData**や**ITableData**など、初期化するために**生じます**を呼び出す必要はありません。 詳細についてを参照してください[IPropData: IMAPIProp](ipropdataimapiprop.md)、 [ITableData: IUnknown](itabledataiunknown.md)と[生じます](mapiinitialize.md)。 代わりに、 **ScInitMapiUtil**関数を呼び出します。 詳細については、 [ScInitMapiUtil](scinitmapiutil.md)を参照してください。 **ScInitMapiUtil**は、ユーティリティ関数、および MAPI のアロケーターを必要とすることを要求しないで、明示的にメソッドを使用するクライアント アプリケーションを有効にします。 
+使用する必要がある mapi の部分が、mapi の MAPIUTIL で宣言されているインターフェイスと関数である場合があります。H ヘッダーファイル ( **ipropdata**や**itabledata**など) — **MAPIInitialize**を呼び出して初期化する必要はありません。 詳細については、「 [ipropdata: imapiprop](ipropdataimapiprop.md)」、「 [itabledata: IUnknown](itabledataiunknown.md)」、および「 [MAPIInitialize](mapiinitialize.md)」を参照してください。 代わりに、 **ScInitMapiUtil**関数を呼び出します。 詳細については、「 [ScInitMapiUtil](scinitmapiutil.md)」を参照してください。 **ScInitMapiUtil**では、クライアントアプリケーションが MAPI allocators を必要とするユーティリティ関数およびメソッドを使用できますが、それらを明示的には要求しません。 
   
-シャット ダウン時に、 **DeinitMapiUtil**ユーティリティに接続しているリソースを解放するための呼び出しを確認します。 **MAPIUninitialize**を呼び出さないようにします。 詳細については、 [DeinitMapiUtil](deinitmapiutil.md)と[MAPIUninitialize](mapiuninitialize.md)を参照してください。
+シャットダウン時に、 **DeinitMapiUtil**を呼び出して、ユーティリティに接続されているリソースを解放します。 **MAPIUninitialize**は呼び出さないでください。 詳細については、「 [DeinitMapiUtil](deinitmapiutil.md) 」と「 [MAPIUninitialize](mapiuninitialize.md)」を参照してください。
   
-**ITableData**インタ フェースが**生じます**ではなく、 **ScInitMapiUtil**を呼び出したクライアント テーブルの通知をサポートしないことに注意します。 
+**itabledata**インターフェイスは、 **MAPIInitialize**ではなく**ScInitMapiUtil**を呼び出したクライアントのテーブル通知をサポートしていないことに注意してください。 
   
 

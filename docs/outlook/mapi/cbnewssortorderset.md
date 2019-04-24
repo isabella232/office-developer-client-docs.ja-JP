@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: a2fb67e0-ccdb-4eb0-9f8c-75213442159f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b54823ad1de68bd8fd708b69b7c7e3e448cda0fa
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a9d01d3b8d414032d0d4f05fe5f966640a181ba1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317956"
 ---
 # <a name="cbnewssortorderset"></a>CbNewSSortOrderSet
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[SSortOrder](ssortorder.md)構造体によって表される並べ替え順の指定した番号を含む新しい[SizedSSortOrderSet](sizedssortorderset.md)構造体に割り当てられるバイト数を計算します。 
+sorderstructure で表される、指定された数の並べ替え順序を含む新しい[sizedssortorderset](sizedssortorderset.md)構造体に割り当てる[](ssortorder.md)バイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**SSortOrderSet** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**SSortOrderSet** <br/> |
    
 ```cpp
 CbNewSSortOrderSet (_csort)
@@ -40,7 +40,7 @@ CbNewSSortOrderSet (_csort)
 
  __csort_
   
-> **SSortOrderSet**構造体に含まれる**SSortOrder**構造体の数です。 
+> **ssortorderset**構造に含める、sorderstructure の数。 **** 
     
 ## <a name="see-also"></a>関連項目
 
@@ -51,5 +51,5 @@ CbNewSSortOrderSet (_csort)
 [SSortOrder](ssortorder.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

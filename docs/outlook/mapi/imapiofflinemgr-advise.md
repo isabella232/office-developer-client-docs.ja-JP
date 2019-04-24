@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 784b6218-548d-817a-caaa-cf9be6bc3d2f
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e0c8c4c6251581506c7bdd78c009bb12e8291c81
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 3ca7fdc39da8d3ee8ecf6f0f253284df10a392e5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321428"
 ---
 # <a name="imapiofflinemgradvise"></a>IMAPIOfflineMgr::Advise
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-オフライン オブジェクトに対してコールバックを受信するようにクライアントを登録します。
+クライアントを、オフラインオブジェクトのコールバックを受信するように登録します。
   
 ```cpp
 HRESULT COfflineObj::Advise( 
@@ -35,21 +35,21 @@ HRESULT COfflineObj::Advise(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
->  [in]動作を変更するフラグです。 MAPIOFFLINE_ADVISE_DEFAULT の値のみがサポートされています。 
+>  順番動作を変更するフラグです。 MAPIOFFLINE_ADVISE_DEFAULT の値のみがサポートされています。 
     
  _pAdviseInfo_
   
-> [in]コールバックの種類に関する情報やその他の詳細については、呼び出し元、コールバック、コールバック インターフェイスを表示する場合。 クライアントの呼び出し元にコールバックの後続の通知を送信することで Outlook を使用するクライアントのトークンも含まれています。
+> 順番コールバックの種類、コールバックを受信するタイミング、発信者のコールバックインターフェイス、およびその他の詳細についての情報。 また、このメソッドには、クライアントの発信者に後続の通知コールバックを送信するために Outlook が使用するクライアントトークンも含まれています。
     
  _pulAdviseToken_
   
-> [out]その後、オブジェクトのコールバックをキャンセルするクライアントの呼び出し元に返されるアドバイスのトークンです。
+> 読み上げその後、オブジェクトのコールバックをキャンセルするためにクライアントの呼び出し元に返されるアドバイズトークン。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK
   
@@ -61,11 +61,11 @@ E_INVALIDARG
     
 E_NOINTERFACE
   
-> *PAdviseInfo*で指定されたコールバック インターフェイスが有効ではありません。 
+> *pAdviseInfo*で指定されているコールバックインターフェイスが無効です。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**[HrOpenOfflineObj](hropenofflineobj.md)** を使用してオフラインのオブジェクトを開くには、クライアントは、 **IMAPIOfflineMgr**をサポートしているオフラインのオブジェクトを取得します。 クライアントは、 **[IMAPIOffline::GetCapabilities](imapioffline-getcapabilities.md)** を使用して、オブジェクトがサポートするコールバックの種類を確認できます。 クライアントには、型とその他の詳細が、そのオブジェクトについては、このようなコールバックを受信するように登録するのには**IMAPIOfflineMgr::Advise**を呼び出し、コールバックを決定できます。 
+**[hroIMAPIOfflineMgr offlineobj](hropenofflineobj.md)** を使用してオフラインオブジェクトを開くときに、クライアントは、 **** をサポートするオフラインオブジェクトを取得します。 クライアントは、 **[imapioffline:: getcapabilities](imapioffline-getcapabilities.md)** を使用して、オブジェクトでサポートされているコールバックの種類を確認できます。 クライアントは、必要なコールバックに関する種類とその他の詳細を判断し、 **IMAPIOfflineMgr:: アドバイズ**に登録して、オブジェクトに関するそのようなコールバックを受信することができます。 
   
 ## <a name="see-also"></a>関連項目
 

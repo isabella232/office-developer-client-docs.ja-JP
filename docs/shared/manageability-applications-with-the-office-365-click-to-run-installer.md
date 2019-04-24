@@ -1,5 +1,5 @@
 ---
-title: 実行をクリックしてインストーラーを Office 365 管理アプリケーションと統合します。
+title: 管理容易性アプリケーションと Office 365 クイック実行インストーラーの統合
 manager: kelbow
 ms.date: 10/22/2017
 ms.audience: ITPro
@@ -7,13 +7,13 @@ localization_priority: Normal
 ms.assetid: c0fa8fed-1585-4566-a9be-ef6d6d1b4ce8
 description: ソフトウェア管理ソリューションと Office 365 クイック実行インストーラーを統合する方法について説明します。
 ms.openlocfilehash: cdcdde0618e2b96ce997ba5e263f75d85c21fd11
-ms.sourcegitcommit: 4590b7ed906d008693a58abe63f089ed8a380b34
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "26643221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318349"
 ---
-# <a name="integrating-manageability-applications-with-office-365-click-to-run-installer"></a>実行をクリックしてインストーラーを Office 365 管理アプリケーションと統合します。
+# <a name="integrating-manageability-applications-with-office-365-click-to-run-installer"></a>管理容易性アプリケーションと Office 365 クイック実行インストーラーの統合
 
 ソフトウェア管理ソリューションと Office 365 クイック実行インストーラーを統合する方法について説明します。
   
@@ -31,7 +31,7 @@ Office 365 クイック実行インストーラーには、IT 担当者および
   
 **次に、COM インターフェイスの概念図を示します**
 
-![COM インターフェイスを使用して Office の実行をクリックしてインストーラーを次の図にします]。(media/e7ac2523-e67b-4a44-ae67-c048709f872a.png "Office の実行をクリックしてインストーラーを COM インターフェイスを使用して次の図")
+![Office クイック実行インストーラーで COM インターフェイスを使用する図。](media/e7ac2523-e67b-4a44-ae67-c048709f872a.png "Office クイック実行インストーラーで COM インターフェイスを使用する図")
   
 Office 365 クイック実行インストーラーには、COM ベースのインターフェイス **IUpdateNotify** が実装されています。このインターフェイスは、CLSID **CLSID_UpdateNotifyObject** に登録されています。
   
@@ -71,10 +71,10 @@ BSTR contentid;
   
 **次に、COM インターフェイスの状態マシンの図を示します**
 
-![COM インターフェイスの状態の図です]。(media/a409003e-6876-4ab3-bb4c-cd0c0fed5cbb.png "COM インターフェイスの状態の図")
+![COM インターフェイスの状態の図。](media/a409003e-6876-4ab3-bb4c-cd0c0fed5cbb.png "COM インターフェイスの状態図")
   
 > [!NOTE]
-> **再起動**: クイック実行インストーラー サービスはありません利用可能な期間があるマシンを起動するとします。 再起動後に Status メソッドの呼び出しが成功すると、eUPDATE_UNKNOWN が返されます。 
+> **再起動**: コンピューターの起動時に、クイック実行インストーラーサービスが使用できない状態になります。 再起動後に Status メソッドの呼び出しが成功すると、eUPDATE_UNKNOWN が返されます。 
   
 **Idle:** クイック実行インストーラーがアイドル状態のときは、以下を呼び出すことができます。 
   
@@ -88,26 +88,26 @@ BSTR contentid;
     
 **Downloading:** クイック実行インストーラーがダウンロード状態のときは、以下のものを呼び出すことができます。 
   
-- **Apply**: 値  ****、「予期しないときにメソッドが呼び出されました。」の `0x800000e` を返します。
+- **Apply**: "予期**** しないときに`0x800000e`メソッドが呼び出されました" という値を持つ HRESULT を返します。
     
 - **Cancel**: ダウンロードを停止し、一部ダウンロードされたコンテンツを削除します。
     
-- **Download**: 値  ****、「予期しないときにメソッドが呼び出されました。」の `0x800000e` を返します。 
+- **Download**: "予期**** しないときに`0x800000e`メソッドが呼び出されました" という値を持つ HRESULT を返します。 
     
 - **Status**: **DOWNLOAD_WIP** を返して、ダウンロード作業が進行中であることを示します。 
     
 **適用中:** クイック実行インストーラーが、以前にダウンロードしたコンテンツのインストール処理中の場合。 
   
-- **Apply**: 値  ****、「予期しないときにメソッドが呼び出されました。」の `0x800000e` を返します。
+- **Apply**: "予期**** しないときに`0x800000e`メソッドが呼び出されました" という値を持つ HRESULT を返します。
     
 - **Cancel**:  `0x800000e` を返します。Apply アクションを取り消すことはできません。
     
-- **Download**: 値  ****、「予期しないときにメソッドが呼び出されました。」の `0x800000e` を返します。 
+- **Download**: "予期**** しないときに`0x800000e`メソッドが呼び出されました" という値を持つ HRESULT を返します。 
     
 - **Status**: **APPLY_WIP** を返して、適用作業が進行中であることを示します。 
     
 > [!NOTE]
-> OfficeC2RCOM は COM + サービスは、動的に読み込まれるので、期待される結果になるようにするには、このクラスのメソッドを呼び出すたびに、 **CoCreateInstance**をコールする必要があります。 この COM+ サービスは必要に応じて新しいインスタンスの作成を処理します。 いずれかのメソッドが初めて呼び出されるときに、COM+ は **IUpdateNotify** オブジェクトを読み込んで、そのオブジェクトを dllhost.exe インスタンスの 1 つで実行します。 新しいオブジェクトは約 3 分間アイドル状態でアクティブになります。 前回の呼び出しから 3 分以内に後続の呼び出しが行われると、 **IUpdateNotify** オブジェクトは読み込まれたままで、新しいインスタンスは作成されません。 3 分以内に呼び出しが行われないと、IUpdateNotify オブジェクトはアンロードされ、その後の呼び出しでは新しい **IUpdateNotify** オブジェクトが作成されます。 
+> OfficeC2RCOM は COM+ サービスであり動的に読み込まれるコンポーネントであるため、期待どおりの結果が得られるようにするには、このクラスのメソッドを呼び出すたびに **CoCreateInstance** を呼び出す必要があります。 この COM+ サービスは必要に応じて新しいインスタンスの作成を処理します。 いずれかのメソッドが初めて呼び出されるときに、COM+ は **IUpdateNotify** オブジェクトを読み込んで、そのオブジェクトを dllhost.exe インスタンスの 1 つで実行します。 新しいオブジェクトは約 3 分間アイドル状態でアクティブになります。 前回の呼び出しから 3 分以内に後続の呼び出しが行われると、 **IUpdateNotify** オブジェクトは読み込まれたままで、新しいインスタンスは作成されません。 3 分以内に呼び出しが行われないと、IUpdateNotify オブジェクトはアンロードされ、その後の呼び出しでは新しい **IUpdateNotify** オブジェクトが作成されます。 
   
 ## <a name="click-to-run-installer-com-api-reference-guide"></a>クイック実行インストーラー COM API リファレンス ガイド
 
@@ -127,7 +127,7 @@ BSTR contentid;
 HRESULT Apply([in] LPWSTR pcwszParameters) // Apply update content.
 ```
 
-#### <a name="parameters"></a>Parameters
+#### <a name="parameters"></a>パラメーター
 
 -  _displaylevel_: 更新処理中のインストールの状態 (エラーを含む) を表示する場合は **true** に設定します。更新処理中のインストールの状態 (エラーを含む) を非表示にする場合は **false** に設定します。既定値は **false** です。
     
@@ -146,7 +146,7 @@ HRESULT Apply([in] LPWSTR pcwszParameters) // Apply update content.
 
 <a name="bk_ApplyRemark"></a>
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>解説
 
 - **Apply** アクションがトリガーされたときに実行中の Office アプリケーションがあると **Apply** アクションは失敗します。  `forceappshutdown=true` が **Apply** メソッドに渡されると、その直後に **OfficeClickToRun** サービスは実行中の Office アプリケーションをシャットダウンして更新プログラムを適用します。開いているドキュメントの変更内容を保存するように求めるダイアログが表示されないため、ユーザーはデータを損失する可能性があります。 
     
@@ -166,7 +166,7 @@ HRESULT Apply([in] LPWSTR pcwszParameters) // Apply update content.
     
 - 以前にダウンロードしたコンテンツがない状態で **Apply** メソッドを呼び出すと、 **Apply** メソッドは **Succeeded** を報告します。これは、このメソッドが適用するものがないことを検出して、 **Apply** 処理を正常に完了したことを示します。 
     
-### <a name="cancel"></a>Cancel
+### <a name="cancel"></a>キャンセル
 
 ```cpp
 HRESULT Cancel() // Cancel the download action.
@@ -181,17 +181,17 @@ HRESULT Cancel() // Cancel the download action.
 
 <a name="bk_CancelRemarks"></a>
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>解説
 
 - このメソッドは、COM 状態 ID **eDOWNLOAD_WIP** の場合のみトリガーできます。このメソッドは現在のダウンロード アクションを取り消そうとします。COM 状態は **eDOWNLOAD_CANCELLING** に変わり、最終的に **eDOWNLOAD_CANCELED** に変わります。これ以外の場合にトリガーすると、COM 状態は **E_ILLEGAL_METHOD_CALL** を返します。 
     
-### <a name="download"></a>Download
+### <a name="download"></a>ダウンロード
 
 ```cpp
 HRESULT Download([in] LPWSTR pcwszParameters) // Download update content.
 ```
 
-#### <a name="parameters"></a>Parameters
+#### <a name="parameters"></a>パラメーター
 
 -  _displaylevel_: 更新処理中のインストールの状態 (エラーを含む) を表示する場合は **true** に設定します。更新処理中のインストールの状態 (エラーを含む) を非表示にする場合は **false** に設定します。既定値は **false** です。
     
@@ -214,7 +214,7 @@ HRESULT Download([in] LPWSTR pcwszParameters) // Download update content.
 
 <a name="bk_DownloadRemark"></a>
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>解説
 
 - _downloadsource_ と  _contentid_ をペアとして指定する必要があります。ペアで指定しないと、 **Download** メソッドは **E_INVALIDARG** エラーを返します。 
     
@@ -236,7 +236,7 @@ HRESULT Download([in] LPWSTR pcwszParameters) // Download update content.
     
 - 以前にダウンロードしたコンテンツがない状態で **Apply** メソッドを呼び出すと、 **Apply** メソッドは **Succeeded** を報告します。それはこのメソッドが、適用されたものがないことを検出し、 **Apply** 処理を正常に完了したことを示します。 
     
-#### <a name="examples"></a>Examples
+#### <a name="examples"></a>例
 
 - カスタマイズした BITS マネージャーからコンテンツをダウンロードするには、次のパラメーターを渡す **download()** 関数を呼び出します。 
     
@@ -252,7 +252,7 @@ HRESULT Download([in] LPWSTR pcwszParameters) // Download update content.
   "updatebaseurl=yourcontentserverurl"
   ```
 
-### <a name="status"></a>Status
+### <a name="status"></a>状態
 
 ```cpp
 typdef struct _UPDATE_STATUS_REPORT
@@ -264,11 +264,11 @@ typdef struct _UPDATE_STATUS_REPORT
 HRESULT status([out] _UPDATE_STATUS_REPORT& pUpdateStatusReport) // Get status of current action
 ```
 
-#### <a name="parameters"></a>Parameters
+#### <a name="parameters"></a>パラメーター
 
 |||
 |:-----|:-----|
-| _pUpdateStatusReport_ <br/> |UPDATE_STATUS_REPORT 構造体を指すポインターです。  <br/> |
+| _pupdatestatusreport_ <br/> |UPDATE_STATUS_REPORT 構造体を指すポインターです。  <br/> |
    
 #### <a name="return-results"></a>返される結果
 
@@ -276,7 +276,7 @@ HRESULT status([out] _UPDATE_STATUS_REPORT& pUpdateStatusReport) // Get status o
 |:-----|:-----|
 |**S_OK** <br/> |**Status** メソッドは、常にこの結果を返します。現在のアクションの状態については、  `UPDATE_STATUS_RESULT` 構造体を調べます。  <br/> |
    
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>解説
 
 - `UPDATE_STATUS_REPORT` の状態フィールドには、現在のアクションの状態が含まれています。次のいずれかの状態値が返されます。 
     
@@ -328,7 +328,7 @@ HRESULT status([out] _UPDATE_STATUS_REPORT& pUpdateStatusReport) // Get status o
     
   状態とエラー値の完全なリストは、OfficeC2RCom.dll に埋め込まれている **IUpdateNotify** タイプ ライブラリを調べることで確認できます。 
     
-- Contentid フィールドは、**ダウンロード**を開始しましたし、**ダウンロード**の呼び出しに渡された contentid が返されます、**状態**への呼び出しに使用されます。 このフィールドは、 **Status** メソッドの呼び出し前に **null** に初期化し、 **Status** が返されてから値を確認するようにしてください。 この値が **null** のままの場合は、返す contentid がないことを意味します。 この値が **null** 以外の場合は、 **SysFreeString()** の呼び出しで解放する必要があります。 次のコード スニペットは、 **Download** の後で **Status** を呼び出す方法を示しています。
+- contentid フィールドは、**ダウンロード**が開始された後の**状態**の呼び出しに使用され、**ダウンロード**呼び出しに渡された contentid を返します。 このフィールドは、 **Status** メソッドの呼び出し前に **null** に初期化し、 **Status** が返されてから値を確認するようにしてください。 この値が **null** のままの場合は、返す contentid がないことを意味します。 この値が **null** 以外の場合は、 **SysFreeString()** の呼び出しで解放する必要があります。 次のコード スニペットは、 **Download** の後で **Status** を呼び出す方法を示しています。
     
   ```cpp
   std::wstring contentID;
@@ -363,9 +363,9 @@ C2RTenant [16.0.8208.6352](https://oloop/BuildGroup/Details/tenantc2rclient#3519
     
   - **HRESULT** GetOfficeDeploymentData([in] int dataType, [in] **LPCWSTR** pcwszName, [out] BSTR * OfficeData)。Office 展開データを取得します。 
     
-- 新しいメソッドを使用する場合は、確認する必要があります。
+- 新しいメソッドを使用する場合は、次のことを確認する必要があります。
     
-  - C2R バージョンが上記のビルドよりも新しい場合は (\>年 6 月フォークのビルドを =)。
+  - Your C2R version is newer than the above build (\>= June fork build).
     
   - **CoCreateInstance** の呼び出しには、 **UpdateNotifyObject** ではなく UpdateNotifyObject2 を使用すること。
     
@@ -433,7 +433,7 @@ C2RTenant [16.0.8208.6352](https://oloop/BuildGroup/Details/tenantc2rclient#3519
     
   -  _\<relative path to target file\>_ は、ファイルをダウンロードする場所とファイル名を指定します。 
     
-    たとえば、 __ の  `f732af58-5d86-4299-abe9-7595c35136ef` を **Download()** メソッドに提供しており、Office C2R が  `v32.cab` ファイルのようにバージョン指定の cab ファイルをダウンロードしようとする場合、次の  **** を使用して `RemoteUrl` を呼び出します。
+    たとえば、contentid **()** メソッド`f732af58-5d86-4299-abe9-7595c35136ef`に対して__ を提供していて、Office C2R が`v32.cab`ファイルなどのバージョン cab ファイルをダウンロードしようとしている場合は、 **addfile ()** を次`RemoteUrl`のように呼び出します。
     
   ```cpp
   cmbits://f732af58-5d86-4299-abe9-7595c35136ef/Office/Data/V32.cab
@@ -588,7 +588,7 @@ IT 管理者は、更新プログラムが利用できるようになったと�
   
 **次の画像は、カスタム イメージのダウンロードの概要です**
 
-![COM インターフェイスを使用して Office の実行をクリックしてインストーラーを次の図にします]。(media/e7ac2523-e67b-4a44-ae67-c048709f872a.png "Office の実行をクリックしてインストーラーを COM インターフェイスを使用して次の図")
+![Office クイック実行インストーラーで COM インターフェイスを使用する図。](media/e7ac2523-e67b-4a44-ae67-c048709f872a.png "Office クイック実行インストーラーで COM インターフェイスを使用する図")
   
 ### <a name="overview-of-downloading-a-custom-image"></a>カスタム イメージのダウンロードの概要
   
@@ -602,9 +602,9 @@ IT 管理者は、更新プログラムが利用できるようになったと�
 
 CDN の cab ファイルには、2 つの利用可能なファイル リストが含まれています。その一方には Office の 32 ビット バージョン用のファイルがリストされています。もう一方は Office の 64 ビット バージョン用です。Office ファイル リスト (OFL.CAB) ファイルの場所の URL は、[https://officecdn.microsoft.com/pr/wsus/ofl.cab](https://officecdn.microsoft.com/pr/wsus/ofl.cab) です。この 2 つのファイルの名前は次のとおりです。
   
-- O365Client_32bit.xml
+- O365Client_32bit
     
-- O365Client_64bit.xml
+- O365Client_64bit
     
 それぞれのファイル リスト用の XML には、バージョン属性が含まれている <UpdateFiles> ノードがあります ( `<UpdateFiles version="1.4">`)。このバージョンは、ファイル リストに変更が加えられると増分されます。
   
@@ -639,7 +639,7 @@ CDN の cab ファイルには、2 つの利用可能なファイル リスト�
 <baseURL branch="Monthly" URL="https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60" />
 ```
 
-- 次の例は、すべての言語に必要な言語非依存のファイルです。 ファイルの名前は、v64_16.0.4229.1004.cab とそのコピーから`https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/v64_16.0.4229.1004.cab`に名前を変更したと`…/office/data/v64.cab`。 
+- 次の例は、すべての言語に必要な言語非依存のファイルです。 ファイルの名前は v64_ 16.0.4229.1004 であり、にコピーしてから`https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/v64_16.0.4229.1004.cab`に名前を`…/office/data/v64.cab`変更する必要があります。 
     
   ```xml
   <File name="v64_%version%.cab" rename="v64.cab" relativePath="/office/data/" language="0"/>
@@ -652,7 +652,7 @@ CDN の cab ファイルには、2 つの利用可能なファイル リスト�
   <File name="s641033.cab" relativePath="/office/data/%version%/" language="1033" />
   ```
 
-### <a name="hash-verification-of-dat-files"></a>.Dat ファイルのハッシュの検証
+### <a name="hash-verification-of-dat-files"></a>.dat ファイルのハッシュ検証
 
 イメージ作成ツールでは、処理済みのハッシュ値と .dat ファイルごとに関連付けられた指定のハッシュ値を比較することで、ダウンロードした .dat ファイルの整合性を検証できます。次の例は、ビルド バージョンが 16.0.4229.1004 で言語がブルガリア語に設定されている Monthly チャネルからの .dat ファイルです。
   
@@ -685,7 +685,7 @@ Office 365 クライアント更新プログラムにより、管理ソフトウ
   
 **次の図は、Office 365 クライアント更新プログラムのワークフローを示しています。**
 
-![O365PP クライアントの更新のワークフロー図]。(media/bc8092b0-62b8-402c-a5c0-04d55cca01d4.png "O365PP クライアントの更新のワークフロー図")
+![O365PP クライアント更新のワークフロー図。](media/bc8092b0-62b8-402c-a5c0-04d55cca01d4.png "O365PP クライアント更新のワークフロー図")
   
 公開された Office 365 クライアント更新プログラムごとに、更新プログラムに関するメタデータが含まれています。このメタデータには、次の情報の導出に使用できる  *MoreInfoUrl*  というパラメーターが含まれています。 
   
@@ -699,19 +699,19 @@ Office 365 クライアント更新プログラムにより、管理ソフトウ
     
 -  *xmlPath*: XML ファイル リストを格納している OFL.CAB ファイルへのパスです。 
     
--  *mlFile*: この更新プログラムを使用する [ファイル] ボックスの一覧の名前。 この値は、O365Client_32bit または O365Client_64bit で、Arch と一致します。 
+-  *mlFile*: この更新プログラムに使用されるファイル リストの名前です。 この値は、O365Client_32bit または O365Client_64bit で、Arch と一致します。 
     
 次の  *MoreInfoURL*  パラメーターの例は、Current チャネルの Office 32 ビット バージョン用の Office 365 クライアント更新プログラム リリース (ビルド バージョン 16.0.2342.2343) を参照します。 
   
 https://officecdn.microsoft.com/pr/wsus/ofl.cab は、この更新プログラムの XML ファイル リスト (具体的には、OFL.CAB 内の O365Client_32bit.xml) の場所です。
   
-[Office 365 クライアント更新プログラムのチャネルのリリース](https://go.microsoft.com/fwlink/?LinkId=626090&Ver=16.0.8326.2096&Branch=Current&Arch=64&XMLVer=1.4&xmlPath=https://officecdn.microsoft.com/pr/wsus/ofl.cab&xmlFile=O365Client_64bit.xml)
+[Office 365 クライアント更新プログラムのチャネル リリース](https://go.microsoft.com/fwlink/?LinkId=626090&Ver=16.0.8326.2096&Branch=Current&Arch=64&XMLVer=1.4&xmlPath=https://officecdn.microsoft.com/pr/wsus/ofl.cab&xmlFile=O365Client_64bit.xml)
   
-### <a name="additional-metadata-for-automating-content-staging"></a>コンテンツのステージングを自動化するための追加のメタデータ
+### <a name="additional-metadata-for-automating-content-staging"></a>コンテンツステージングを自動化するための追加のメタデータ
 
 公開されているメタデータに加えて、CDN に公開されている追加の XML ファイルもあります。こうしたファイルは、Office CDN から入手できる Office 365 クライアントに関する追加情報を提供するために役立ちます。
   
-**SKU です。XML**
+**sku.xml-rpc**
   
 この XML ファイルは、署名された CAB に含まれていて、次の URL で Office CDN に公開されています: [https://officecdn.microsoft.com/pr/wsus/skus.cab](https://officecdn.microsoft.com/pr/wsus/skus.cab)。
   
@@ -748,7 +748,7 @@ https://officecdn.microsoft.com/pr/wsus/ofl.cab は、この更新プログラ�
   
 **\<SKU\>** ノードでは、個別の SKU を識別します。 
   
-- *[商品コード]* 属性では、密接に関連を使用する場合、configuration.xml 内の ID 属性として渡される ID を識別します。 たとえば、`<Product ID="O365ProPlusRetail">` などです。 
+- The  *ProductID*  attribute identifies the ID that is passed as the ID attribute in the configuration.xml if using the ODT. For example, `<Product ID="O365ProPlusRetail">`. 
     
 - *Default*  属性では、推奨される SKU を識別します (True に設定されている場合)。 
     
@@ -758,7 +758,7 @@ https://officecdn.microsoft.com/pr/wsus/ofl.cab は、この更新プログラ�
     
 - *AppID*  属性は、 **\<ExcludeApp\>** ノードの configuration.xml で渡された ID 属性です。たとえば、`<ExcludeApp ID="Publisher" />`。 
     
-**RELEASEHISTORY。XML**
+**、releasehistory.xml.xml-rpc**
   
 この XML ファイルは、署名された CAB に含まれていて、次の場所で Office CDN に公開されています: [https://officecdn.microsoft.com/pr/wsus/releasehistory.cab](https://officecdn.microsoft.com/pr/wsus/releasehistory.cab)。 
   
@@ -778,16 +778,16 @@ https://officecdn.microsoft.com/pr/wsus/ofl.cab は、この更新プログラ�
   </UpdateChannel>
 ```
 
-** \<ReleaseHistory\>** のルート ノードには、このファイルが発行されている日付を識別する PublishedDate 属性が含まれています。 
+** \<releasehistory\> **ルートノードには、このファイルが公開された日付を特定する publisheddate 属性が含まれています。 
   
-** \<UpdateChannel\>** ノードがサポートされているチャネルを定義します。 
+** \<UpdateChannel\> **ノードは、サポートされているチャネルを定義します。 
   
 - *Name*  属性では、Channel 属性として configuration.xml の ODT に渡すために使用されるチャネル ID を定義します。 
     
   例: `<Add SourcePath="\\Server\Share" OfficeClientEdition="32" Channel="Current">` 
     
   > [!NOTE] 
-  > この属性は推奨されていません、旧バージョンとの互換性を保つのために使用します。 Name 属性の代わりに ID 属性を使用します。 
+  > 下位互換性の確保にのみ使用します。 Name 属性の代わりに ID 属性を使用してください。 
     
 - *ID*  属性では、Channel 属性として configuration.xml の ODT に渡すために使用されるチャネル ID を定義します。 
     
@@ -797,14 +797,14 @@ https://officecdn.microsoft.com/pr/wsus/ofl.cab は、この更新プログラ�
     
 **\<Update\>** ノードは、その特定のチャネルに対して公開されている各更新プログラムを定義するために使用します。 
   
-- **最新**属性を true の場合、そのチャンネルの最新のリリースのリリースを定義する設定です。 
+- **最新**の属性 (True に設定されている場合) は、そのチャネルの最新リリースであるリリースを定義します。 
     
-- **バージョン**属性は、この特定の更新プログラムのバージョン番号を定義します。 
+- **Version** 属性では、この特定の更新プログラムのバージョン番号を定義します。 
     
-- **LegacyVersion**属性は、この特定の更新プログラムの完全なバージョン番号を定義します。 
+- **LegacyVersion** 属性では、この特定の更新プログラムの完全なバージョン番号を定義します。 
     
-- **ビルド**属性は、この特定の更新プログラムのビルド番号を定義します。 
+- **Build** 属性では、この特定の更新プログラムのビルド番号を定義します。 
     
-- **PubTime**属性では、Office CDN に、この更新プログラムが公開されたときの日時を定義します。 
+- **PubTime** 属性では、この更新プログラムが Office CDN に公開された日時を定義します。 
     
 

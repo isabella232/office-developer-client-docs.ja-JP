@@ -13,11 +13,11 @@ api_type:
 ms.assetid: cd4d7b11-fad0-4f05-a99e-9567abcab45c
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c68e4fbda661a119416918a2c35d1780f1deccda
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25382373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321366"
 ---
 # <a name="imapimessagesitemovemessage"></a>IMAPIMessageSite::MoveMessage
 
@@ -37,17 +37,17 @@ HRESULT MoveMessage(
 
 ## <a name="parameters"></a>パラメーター
 
- _pFolderDestination_
+ _pfolderdestination_
   
-> [in]メッセージの移動先フォルダーへのポインター。
+> 順番メッセージを移動するフォルダーへのポインター。
     
- _pViewContext_
+ _pviewcontext_
   
-> [in]ビュー コンテキスト オブジェクトへのポインター。
+> 順番ビューコンテキストオブジェクトへのポインター。
     
- _prcPosRect_
+ _prcposrect_
   
-> [in]現在のフォームのウィンドウのサイズと位置を含む[RECT](https://msdn.microsoft.com/library/dd162897%28VS.85%29.aspx)構造体へのポインター。 次に表示されるフォームは、このウィンドウの四角形にも使用します。 
+> 順番現在のフォームのウィンドウのサイズと位置を含む[RECT](https://msdn.microsoft.com/library/dd162897%28VS.85%29.aspx)構造体へのポインター。 次に表示されるフォームは、このウィンドウの四角形も使用します。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -57,21 +57,21 @@ S_OK
     
 MAPI_E_NO_SUPPORT 
   
-> このメッセージのサイトでは、操作はサポートされていません。
+> 操作は、このメッセージサイトではサポートされていません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-フォーム オブジェクトは、現在のメッセージを新しいフォルダーに移動するのには**IMAPIMessageSite::MoveMessage**メソッドを呼び出します。 
+Form オブジェクトは、 **IMAPIMessageSite:: MoveMessage**メソッドを呼び出して、現在のメッセージを新しいフォルダーに移動します。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**MoveMessage**フォーム ビューアーの実装では、 [IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md)メソッドは、実際にメッセージを新しいフォルダーに移動する前に、VCDIR_MOVE フラグを渡すことを呼び出す必要があります。 フォームのウィンドウで使用されている**RECT**構造体を取得するには、Windows[ハンドル](https://msdn.microsoft.com/library/ms633519)関数を呼び出します。 
+フォームビューアーで**MoveMessage**を実装するには、実際にメッセージを新しいフォルダーに移動する前に、 [imapiviewcontext:: ActivateNext](imapiviewcontext-activatenext.md)メソッドを呼び出して、VCDIR_MOVE フラグを渡します。 フォームのウィンドウで使用される**RECT**構造を取得するには、Windows [getwindowrect](https://msdn.microsoft.com/library/ms633519)関数を呼び出します。 
   
-フォームのサーバーに関連するインターフェイスの一覧は、 [MAPI フォームのインタ フェース](mapi-form-interfaces.md)を参照してください。
+フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**MoveMessage**の戻り値は、次のフォームは現在のメッセージを確認し、存在しない場合はそれ自体を終了して必要があります。 
+**MoveMessage**の戻り値の後、フォームは現在のメッセージを確認し、存在しない場合はそれを破棄する必要があります。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -79,7 +79,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::MoveMessage  <br/> |実装されていません。  <br/> |
+|MyMAPIFormViewer  <br/> |cmymapiformviewer:: MoveMessage  <br/> |実装されていません。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -90,7 +90,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
 [IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
-[コード サンプルとしての MFCMAPI](mfcmapi-as-a-code-sample.md)
+[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
+[MAPI フォームインターフェイス](mapi-form-interfaces.md)
 

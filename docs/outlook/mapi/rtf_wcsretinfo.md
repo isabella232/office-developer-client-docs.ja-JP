@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 62561d8d-33cb-e482-7fa0-132afe2b464a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: bf8cf115c6188b5058717437c470e11797ff5b9a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: cfa18c215fc98610b836db31e2a07581291910be
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315786"
 ---
 # <a name="rtfwcsretinfo"></a>RTF_WCSRETINFO
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-この構造体は、ネイティブ形式の圧縮されたリッチ テキスト形式 (RTF) でカプセル化されたメッセージの本文を圧縮解除から返されるストリームに関する情報を提供します。
+この構造体は、圧縮リッチテキスト形式 (RTF) でカプセル化されたメッセージの本文を解凍することによって返されるネイティブ形式のストリームに関する情報を提供します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -30,21 +30,21 @@ typedef struct {
 } RTF_WCSRETINFO;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 _size_
   
-> バイト数で**この**構造体のサイズです。 
+> **RTF_WCSRETINFO**構造体のサイズ (バイト数)。 
     
-_ulStreamFlags_
+_ulstreamflags_
   
-> これは、ネイティブ形式の本文の形式を示す値です。 この値は[WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md)関数に渡される構造[について](rtf_wcsinfo.md)のパラメーター _ulFlags_に**MAPI_NATIVE_BODY**フラグが渡された場合。 次の値のいずれかを指定できます。 
+> これは、ネイティブ本文の形式を示す値です。 この値は、 [WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md)関数に渡される[RTF_WCSINFO](rtf_wcsinfo.md)構造の_ulflags_パラメーターで**MAPI_NATIVE_BODY**フラグが渡された場合にのみ有効です。 次のいずれかの値を指定できます。 
     
 |||
 |:-----|:-----|
-|MAPI_NATIVE_BODY_TYPE_RTF  <br/> |_UlFlags_に**MAPI_NATIVE_BODY**フラグが含まれていて、本体は、rtf 形式の場合、この値はのみ使用されます。  <br/> |
-|MAPI_NATIVE_BODY_TYPE_PLAIN_TEXT  <br/> |_UlFlags_に**MAPI_NATIVE_BODY**フラグが含まれていて、本文は、テキスト形式の場合、この値はのみ使用されます。  <br/> |
-|MAPI_NATIVE_BODY_TYPE_HTML  <br/> |_UlFlags_に**MAPI_NATIVE_BODY**フラグが含まれていて、本体は、ハイパー テキスト マークアップ言語 (HTML) 形式の場合、この値はのみ使用されます。  <br/> |
+|MAPI_NATIVE_BODY_TYPE_RTF  <br/> |この値は、 _ulflags_に**MAPI_NATIVE_BODY**フラグが含まれ、本文が RTF の場合にのみ使用されます。  <br/> |
+|MAPI_NATIVE_BODY_TYPE_PLAIN_TEXT  <br/> |この値は、 _ulflags_に**MAPI_NATIVE_BODY**フラグが含まれ、本文がプレーンテキスト形式の場合にのみ使用されます。  <br/> |
+|MAPI_NATIVE_BODY_TYPE_HTML  <br/> |この値は、 _ulflags_に**MAPI_NATIVE_BODY**フラグが含まれ、本文がハイパーテキストマークアップ言語 (HTML) 形式である場合にのみ使用されます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

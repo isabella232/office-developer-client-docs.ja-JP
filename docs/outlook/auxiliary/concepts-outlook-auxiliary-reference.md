@@ -1,22 +1,22 @@
 ---
-title: 概念 (Outlook の補助参照)
+title: 概念 (Outlook 補助リファレンス)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: fa68a055-9e58-40ef-886e-4e8ebb08a2a9
-description: ここでは、Outlook 2013 補助リファレンスの 4 つの Api について説明し、それらの Api を使用するサンプル タスクが用意されています。
-ms.openlocfilehash: 9c62f4fe6593b0d58e5ab29305292537d289d69d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このセクションでは、Outlook 2013 補助リファレンスの4つの api について説明し、これらの api を使用するサンプルタスクを示します。
+ms.openlocfilehash: c546166c42742fc54ee43eef7d006183b7c8a40e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316857"
 ---
-# <a name="concepts-outlook-auxiliary-reference"></a>概念 (Outlook の補助参照)
+# <a name="concepts-outlook-auxiliary-reference"></a>概念 (Outlook 補助リファレンス)
 
-ここでは、Outlook 2013 補助リファレンスの 4 つの Api について説明し、それらの Api を使用するサンプル タスクが用意されています。
+このセクションでは、Outlook 2013 補助リファレンスの4つの api について説明し、これらの api を使用するサンプルタスクを示します。
 
 - [Outlook アカウントの管理](outlook-account-management.md)
     

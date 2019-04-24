@@ -1,5 +1,5 @@
 ---
-title: IMAPISupportModifyStatusRow
+title: imapisupportmodifystatusrow
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: a304ca8f-e404-4535-be76-0b673f2061a0
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 06a5c9de5c0ce4c0f936791086a731a55510a124
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 8c76e6059670e782ea6530ec8e94f77abfe5b9fe
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316644"
 ---
 # <a name="imapisupportmodifystatusrow"></a>IMAPISupport::ModifyStatusRow
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ステータス テーブルを変更するには、新しい行を追加したり、既存の行を変更します。
+新しい行を追加するか、または既存の行を変更して、状態テーブルを変更します。
   
 ```cpp
 HRESULT ModifyStatusRow(
@@ -37,39 +37,39 @@ ULONG ulFlags
 
 ## <a name="parameters"></a>パラメーター
 
- _あう_
+ _cvalues_
   
-> [in]新しいまたは変更された状態のテーブルの行に含まれるプロパティの数。 
+> 順番新規または変更された状態テーブルの行に含まれるプロパティの数。 
     
- _lpColumnVals_
+ _lpcolumnvals_
   
-> [in]新しいまたは変更された状態のテーブルの行の列に含まれるプロパティを記述するプロパティ値の配列へのポインター。
+> 順番新規または変更された状態テーブルの行に列として含まれるプロパティを示すプロパティ値の配列へのポインター。
     
  _ulFlags_
   
-> [in]状態テーブルの行を定義する情報の処理方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番状態テーブルの行を定義する情報を処理する方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 STATUSROW_UPDATE 
   
-> 新しい行ではなく、既存の状態のテーブルの行を_lpColumnVals_が指す配列に含まれるプロパティをマージするための MAPI に指示します。 
+> _lpcolumnvals_で参照されている配列に含まれるプロパティを、新しい行ではなく既存の状態テーブルの行で結合するように MAPI に指示します。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 状態テーブルは正しく更新されました。
+> 状態テーブルが正常に更新されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-サービス プロバイダーのサポートのすべてのオブジェクトの**IMAPISupport::ModifyStatusRow**メソッドを実装します。 サービス プロバイダーは、状態テーブルに行を追加するのにはログオン時に、行を更新するのにはセッション中に他の時間に**ModifyStatusRow**を呼び出します。 **ModifyStatusRow**は、状態テーブルを構築するために必要な情報を使用して MAPI を提供します。 
+**imapisupport:: modifystatusrow**メソッドは、すべてのサービスプロバイダーサポートオブジェクトに実装されています。 サービスプロバイダーは、ログオン時に**modifystatusrow**を呼び出して、状態テーブルに行を追加します。また、その他の場合は、セッション中に行を更新します。 **modifystatusrow**は、状態テーブルを構築するために必要な情報を MAPI に提供します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-既存の状態テーブルの行のプロパティを変更するのには、 **ModifyStatusRow**を呼び出すときは、STATUSROW_UPDATE フラグを設定します。 そう通知 MAPI が変更される列のみが、 _lpColumnVals_パラメーターに渡されています。 
+**modifystatusrow**を呼び出して、既存の [状態] テーブル行のプロパティを変更する場合は、STATUSROW_UPDATE フラグを設定します。 これにより、変更された列だけが_lpcolumnvals_パラメーターに渡されることが MAPI に通知されます。 
   
-クライアントは、状態オブジェクトにアクセスするのには、状態テーブルの情報を使用できます。 
+クライアントは、状態の表の情報を使用して、状態オブジェクトにアクセスできます。 
   
-状態テーブルの行を列に含める列の一覧については、[ステータス ・ テーブル](status-tables.md)を参照してください。
+[状態テーブル] 行に含める必要のある列の完全な一覧については、「 [status Tables](status-tables.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

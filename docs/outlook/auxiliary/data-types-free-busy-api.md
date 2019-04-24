@@ -1,27 +1,27 @@
 ---
-title: (空き時間情報の API) のデータ型
+title: データ型 (空き時間情報 API)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 18b829c5-644d-4756-864b-b8da67e0d760
-description: このセクションでは、空き/予約済み API 内のデータ型について説明します。
-ms.openlocfilehash: d0508b5e93a548e736e6fe173d8bd28ee48a5b5f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このセクションでは、空き時間情報 API のデータ型について説明します。
+ms.openlocfilehash: 8e44d33579b4883d4260c80f2b113dbfb4453e2f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317690"
 ---
-# <a name="data-types-freebusy-api"></a>(空き時間情報の API) のデータ型
+# <a name="data-types-freebusy-api"></a>データ型 (空き時間情報 API)
 
-このセクションでは、空き/予約済み API 内のデータ型について説明します。
+このセクションでは、空き時間情報 API のデータ型について説明します。
   
 |**データ型**|**説明**|
 |:-----|:-----|
-|[FBBlock_1](fbblock_1.md) <br/> |空き時間情報データ ブロックを定義します。  <br/> |
-|[FBStatus](fbstatus.md) <br/> |空き/予約済みブロックの空き/予約済みの状態の列挙です。  <br/> |
-|[FBUser](fbuser.md) <br/> |利用可能な空き時間情報データがない可能性がありますまたは可能性のあるユーザーを識別します。  <br/> |
+|[FBBlock_1](fbblock_1.md) <br/> |データの空き時間情報のブロックを定義します。  <br/> |
+|[FBStatus](fbstatus.md) <br/> |空き時間ブロックの空き時間状態の列挙体。  <br/> |
+|[FBUser](fbuser.md) <br/> |空き時間情報データが使用可能かどうかがあるユーザーを識別します。  <br/> |
    
 

@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 8946703a-aaa8-6b3f-aa68-931365db620d
 description: タスクを再配置する必要がある予定を検索するには、予定表フォルダーの予定の列挙を開始します。
-ms.openlocfilehash: 2ad26692483d87166a538ec2f04d3fc13b9ea930
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cc89b3510f09bb98fd6720cb6d5ab3edeb13eac8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321946"
 ---
 # <a name="iolkapptrebaserbeginenumerateappointments"></a>IOlkApptRebaser::BeginEnumerateAppointments
 
@@ -30,11 +30,11 @@ HRESULT BeginEnumerateAppointments(
 
 ## <a name="parameters"></a>パラメーター
 
-_pfnProgress_
+_pfnprogress_
   
 > [in]省略可能です。進行状況が表示されることを再作業の進行状況関数へのポインター。 **PFNREBASETASKPROGRESS** は、tzmovelib.h で定義されます。 
     
-_ppContext_
+_ppcontext_
   
 > [out]必要があります。返されるコンテキストへのポインターへのポインター。このコンテキストは、 [IOlkApptRebaser::EndEnumerateAppointments](iolkapptrebaser-endenumerateappointments.md)に渡されます。
     
@@ -42,7 +42,7 @@ _ppContext_
 
 呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。
   
-## <a name="remarks"></a>解釈
+## <a name="remarks"></a>解説
 
 このタスクは、新しいスレッドで実行されます。
   

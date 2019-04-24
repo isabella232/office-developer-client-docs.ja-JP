@@ -1,35 +1,35 @@
 ---
-title: OST 内のメッセージを Exchange キャッシュ モードで同期を呼び出すことがなく管理します。
+title: Exchange キャッシュモードで同期を呼び出すことなく OST でメッセージを管理する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 3a1f0aa2-813f-222c-f871-0501de5d9dec
-description: Exchange キャッシュ モードでは、クライアントと、メッセージ全体のダウンロードを強制することがなく IMsgStore::OpenEntry に IID_IMessageRaw を使用して、オフライン フォルダー ファイル (OST) でメッセージを管理している IMessage インターフェイスを取得する方法について説明する C++ のコード サンプルが含まれていますモードです。
-ms.openlocfilehash: f094f5a7deae705ed64b912483726aeb409fb107
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: 'IMsgStore:: openentry で IID_IMessageRaw を使用して、クライアントが Exchange にキャッシュされているときに、メッセージ全体を強制的にダウンロードすることなく、オフラインフォルダーファイル (OST) 内のメッセージを管理する IMessage インターフェイスを取得する方法を示す C++ のコードサンプルが含まれています。荷.'
+ms.openlocfilehash: e50637b496ff43daedad2df27d027d8a6d0dc743
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316395"
 ---
-# <a name="manage-messages-in-ost-without-invoking-a-synchronization-in-cached-exchange-mode"></a>OST 内のメッセージを Exchange キャッシュ モードで同期を呼び出すことがなく管理します。
+# <a name="manage-messages-in-ost-without-invoking-a-synchronization-in-cached-exchange-mode"></a>Exchange キャッシュモードで同期を呼び出すことなく OST でメッセージを管理する
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックには、c++ を使用する方法を示すコード サンプルが含まれています`IID_IMessageRaw`メッセージ全体のダウンロードを強制することがなく、オフライン フォルダー ファイル (OST) でメッセージを管理している**[IMessage](imessageimapiprop.md)** インターフェイスを取得するのには**[IMsgStore::OpenEntry](imsgstore-openentry.md)** で、クライアントExchange キャッシュ モードでは。 
+このトピックには、 **[IMsgStore:: openentry](imsgstore-openentry.md)** での使用`IID_IMessageRaw`方法を示す C++ のコードサンプルが含まれています。これは、オフラインフォルダーファイル (OST) 内のメッセージを管理する**[IMessage](imessageimapiprop.md)** インターフェイスを取得するために、クライアントでのメッセージ全体のダウンロードを強制しません。Exchange キャッシュモードになっています。 
   
-クライアントは、Exchange キャッシュ モードでは、オフライン フォルダー ファイル内のメッセージは 2 つの状態のいずれかにできます。
+クライアントが Exchange キャッシュモードの場合、OST 内のメッセージは次の2つの状態のいずれかになります。
   
 - ヘッダーと本文を含むメッセージ全体がダウンロードされます。
     
-- メッセージのヘッダーのみがダウンロードされます。
+- ヘッダーのみが含まれるメッセージがダウンロードされます。
     
-OST 内のメッセージの**IMessage**インターフェイスを要求すると、クライアントが Exchange キャッシュ モードを使用して、 `IID_IMessageRaw`。 使用する場合は、 `IID_IMessage` 、 **IMessage**インターフェイスを要求して、メッセージ全体をダウンロードしようとする同期を起動する場合は、OST にダウンロードされたヘッダーのみのメッセージには。 
+OST でメッセージの**IMessage**インターフェイスを要求し、クライアントが Exchange キャッシュモードの場合は、を使用`IID_IMessageRaw`します。 を使用`IID_IMessage`して**IMessage**インターフェイスを要求し、メッセージのヘッダーが OST にダウンロードされている場合は、メッセージ全体をダウンロードしようとする同期を呼び出します。 
   
-使用する場合は、`IID_IMessageRaw`または`IID_IMessage` **IMessage**インターフェイスを要求するには返されたインターフェイスが使用中と同じです。 **IMessage**インターフェイスを使用して、要求された`IID_IMessageRaw`、オフライン フォルダー ファイル内に存在して、同期の必要はありません、電子メール メッセージが返されます。 
+または`IID_IMessage`を`IID_IMessageRaw`使用して**IMessage**インターフェイスを要求すると、返されるインターフェイスは同じように使用されます。 を**** 使用`IID_IMessageRaw`して要求した IMessage インターフェイスは、OST に存在する電子メールメッセージを返します。同期は強制されません。 
   
-次の例は、 **OpenEntry**メソッドを呼び出す方法を示します`IID_IMessageRaw`の代わりに`IID_IMessage`。
+次の`IID_IMessage`例は、 **openentry**メソッドを呼び出す方法を示し`IID_IMessageRaw`ています。このメソッドは、ではなく渡されます。
   
 ```cpp
 HRESULT HrOpenRawMessage ( 
@@ -54,10 +54,10 @@ HRESULT HrOpenRawMessage (
 
 ```
 
-**OpenEntry**メソッドでは、 **MAPI_E_INTERFACE_NOT_SUPPORTED**のエラー コードが返された場合は、メッセージ ・ ストアがサポートしていないこと、raw モードでメッセージにアクセスすることを示します。 このような場合は、再度実行してください**OpenEntry**メソッドを渡すことによって`IID_IMessage`。
+**openentry**メソッドが**MAPI_E_INTERFACE_NOT_SUPPORTED**のエラーコードを返す場合は、メッセージストアが raw モードでのメッセージへのアクセスをサポートしていないことを示します。 このような場合は、を渡し`IID_IMessage`て**openentry**メソッドをもう一度試してください。
 
 > [!IMPORTANT]
->  `IID_IMessageRaw`現在あるダウンロード可能なヘッダー ファイルでない定義できます。 この例では、次の定義を使用してコードにそれを追加することができます。 GUID のシンボリック名をその値に関連付けるには、Microsoft Windows ソフトウェア開発キット (SDK) のヘッダー ファイル guiddef.h に定義されている DEFINE_OLEGUID マクロを使用します。 >  `#if !defined(INITGUID) || defined(USES_IID_IMessageRaw)`>  `DEFINE_OLEGUID(IID_IMessageRaw,0x0002038A, 0, 0);`>  `#endif`
+>  `IID_IMessageRaw`現在、ダウンロード可能なヘッダーファイルで定義されていない場合があります。 この場合は、次の定義を使用してコードに追加できます。 Microsoft Windows Software Development Kit (SDK) ヘッダーファイル guiddef で定義されている DEFINE_OLEGUID マクロを使用して、GUID シンボリック名とその値を関連付けます。 >  `#if !defined(INITGUID) || defined(USES_IID_IMessageRaw)`>  `DEFINE_OLEGUID(IID_IMessageRaw,0x0002038A, 0, 0);`>  `#endif`
   
 ## <a name="see-also"></a>関連項目
 

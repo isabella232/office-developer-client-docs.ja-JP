@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: e47d5a8d-6a13-f430-fbfd-00df04b4a006
 description: 完了する再配置を予定するまで待機し、結果を取得します。
-ms.openlocfilehash: fd27021ce05b1d5b95fd258e0ee89b5bd4f2c7db
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a6e62cff9efea1fc7079d04bc9b032b5637f8847
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321890"
 ---
 # <a name="iolkapptrebaserendrebaseappointments"></a>IOlkApptRebaser::EndRebaseAppointments
 
@@ -34,7 +34,7 @@ _pContext_
   
 > [in]必要があります。[IOlkApptRebaser::BeginRebaseAppointments](iolkapptrebaser-beginrebaseappointments.md)への呼び出しから取得されたコンテキストへのポインター。
     
-_phResult_
+_phresult_
   
 > [out]必要があります。再配置の操作の結果を取得するためには、 **HRESULT** へのポインター。 
     

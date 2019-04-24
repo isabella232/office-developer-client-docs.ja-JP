@@ -8,31 +8,31 @@ f1_keywords:
 - Vis_DSS.chm60100
 localization_priority: Normal
 ms.assetid: 6574edeb-eb6f-afd9-89c4-eb5996dffa30
-description: 指定されたコマンドを実行します。
-ms.openlocfilehash: e425dd9605c18d4647787c5df7aeaa4fd5f9e4cd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 識別されたコマンドを実行します。
+ms.openlocfilehash: 9e5c02c9a90f3aab66c5d582c83d7d9d892f964c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315233"
 ---
 # <a name="docmd-function"></a>DOCMD 関数
 
-指定されたコマンドを実行します。
+識別されたコマンドを実行します。
   
 ## <a name="syntax"></a>構文
 
- **Docmd オブジェクト**( _commandid が_)
+ **DOCMD**( _commandID_)
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _commandid が_ <br/> |必須  <br/> |**番号** <br/> | 実行するコマンドを指定します。  <br/> |
+| _commandID_ <br/> |必須  <br/> |**数値** <br/> | 実行するコマンドを指定します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-DOCMD 関数でサポートされているコマンドのリストは、Microsoft Visio 2013 『 オートメーション リファレンス 』 の「「DOCMD/DOCMD コマンド」を参照してください。 
+docmd 関数でサポートされているコマンドの一覧については、Microsoft Visio 2013 Automation リファレンスのトピック「docmd/docmd コマンド」を参照してください。 
   
 ## <a name="example"></a>例
 

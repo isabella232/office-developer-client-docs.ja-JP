@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: d1b662e2-1516-46b2-ba94-4092d79b5a39
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 90fe316bfd11d712f02187b6a569450b747a6409
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0b861a11b6bc1d590225a0c99b20f8be38edfd2b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321582"
 ---
 # <a name="imapigetsession--iunknown"></a>IMAPIGetSession : IUnknown
 
@@ -25,19 +25,19 @@ ms.locfileid: "22587930"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-サポート オブジェクトに関連付けられている現在の MAPI セッションへのアクセスを提供します。 MAPI プロバイダーには、このインターフェイスは、MAPI のサポート オブジェクトを照会できます。 サポート オブジェクトの詳細については、[オブジェクトのサポートの概要](support-object-overview.md)を参照してください。
+サポートオブジェクトに関連付けられている現在の MAPI セッションへのアクセスを提供します。 mapi プロバイダーは、このインターフェイスの mapi サポートオブジェクトを照会できます。 サポートオブジェクトの詳細については、「[サポートオブジェクトの概要](support-object-overview.md)」を参照してください。
   
 |||
 |:-----|:-----|
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |MAPI プロバイダー  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMAPIGetSession  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |MAPI プロバイダー  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMAPIGetSession  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[GetMAPISession](imapigetsession-getmapisession.md) <br/> |現在の MAPI セッションへのポインターを取得すると呼ばれます。  <br/> |
+|[GetMAPISession](imapigetsession-getmapisession.md) <br/> |現在の MAPI セッションへのポインターを取得するために呼び出されます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -48,7 +48,7 @@ ms.locfileid: "22587930"
 [IMAPISupport](imapisupportiunknown.md)
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
   
-[サポート オブジェクトの概要](support-object-overview.md)
+[サポートオブジェクトの概要](support-object-overview.md)
 

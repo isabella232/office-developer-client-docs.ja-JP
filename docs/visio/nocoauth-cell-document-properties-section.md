@@ -6,30 +6,30 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6f2095c9-ce09-48f7-b160-c9822d96a96c
-description: Microsoft SharePoint 2013 のサーバーまたはマイクロソフトの OneDrive に格納されているドキュメントにことができます coauthoring のセッションで同時に複数の作成者によって編集かどうかを設定します。
-ms.openlocfilehash: a20c3a5aa1392e0e6c3bef124f536b91b9642f47
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: microsoft SharePoint 2013 サーバーまたは microsoft OneDrive に保存されているドキュメントを共同編集セッションで同時に複数の作成者が編集できるようにするかどうかを設定します。
+ms.openlocfilehash: a76e2d3b2c3cf6e99e37596b016f448b0be56fd3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319440"
 ---
 # <a name="nocoauth-cell-document-properties-section"></a>[NoCoauth] セル ([ドキュメントのプロパティ] セクション)
 
-Microsoft SharePoint 2013 のサーバーまたはマイクロソフトの OneDrive に格納されているドキュメントにことができます coauthoring のセッションで同時に複数の作成者によって編集かどうかを設定します。
+microsoft SharePoint 2013 サーバーまたは microsoft OneDrive に保存されているドキュメントを共同編集セッションで同時に複数の作成者が編集できるようにするかどうかを設定します。
   
 |**値**|**説明**|
 |:-----|:-----|
 |TRUE  <br/> |ドキュメントは共同編集できません。開かれると編集用にロックされます。  <br/> |
 |FALSE  <br/> |ドキュメントは共同編集できます。  <br/> |
    
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**NoCoauth**] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | NoCoauth  <br/> |
+| セル名:  <br/> | [nocoauth]  <br/> |
    
 プログラムから、インデックスによって [**NoCoauth**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

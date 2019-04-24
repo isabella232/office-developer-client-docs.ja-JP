@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: b387f896-c213-fc07-a12a-33917e620837
-description: 列挙子では、次のアカウントを取得します。
-ms.openlocfilehash: 496a4d787916d051c051b3a19a7113d9d50c6fe7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 列挙子の次のアカウントを取得します。
+ms.openlocfilehash: e2ad98f7d7e71bd91d48b3824423e305baab429a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321897"
 ---
 # <a name="iolkenumgetnext"></a>IOlkEnum::GetNext
 
-列挙子では、次のアカウントを取得します。
+列挙子の次のアカウントを取得します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -33,18 +33,18 @@ HRESULT IOlkEnum:: GetNext(
 
 _ppunk_
   
-> [in][IOlkAccount](iolkaccount.md)インターフェイスを取得するのには、クライアントが照会できる**IUnknown**インターフェイスへのポインター。 
+> 順番[IOlkAccount](iolkaccount.md)インターフェイスを取得するためにクライアントが照会できる**IUnknown**インターフェイスへのポインター。 
     
 ## <a name="return-values"></a>戻り値
 
 |**HRESULT 型**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |呼び出しが成功しました。  <br/> |
-|S_FALSE  <br/> |列挙子には、末尾に到達します。  <br/> |
+|S_FALSE  <br/> |列挙子が最後に到達しました。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-*Ppunk*によって指定されたインターフェイスは、 **IUnknown**から継承します。 クライアントは、 **IOlkAccount**インターフェイスへのポインターを取得する ( **IUnknown::QueryInterface**を使用して) このインターフェイスを問い合わせることができますを取得したり、このアカウントの情報を設定します。 
+*ppunk*で指定されたインターフェイスは、 **IUnknown**から継承します。 クライアントは、( **IUnknown:: QueryInterface**を使用して) このインターフェイスを照会して、 **IOlkAccount**インターフェイスへのポインターを取得し、このアカウントの情報を取得または設定できます。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 667da30b-e11c-4040-aecf-bb35eed23722
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 26efa868de29bc8a6a180b717230951b76da26a3
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319762"
 ---
 # <a name="pidtagattachextension-canonical-property"></a>PidTagAttachExtension 標準プロパティ
 
@@ -25,7 +25,7 @@ ms.locfileid: "25388431"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-添付ファイルのドキュメントの種類を示すファイル名の拡張子が含まれています。 
+添付ファイルのドキュメントの種類を示すファイル名拡張子が含まれています。 
   
 |||
 |:-----|:-----|
@@ -34,37 +34,37 @@ ms.locfileid: "25388431"
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-これらのプロパティは、送信時にクライアント アプリケーションによって設定されます。 
+これらのプロパティは、送信時にクライアントアプリケーションによって設定されます。 
   
-メッセージング システムで使用されて**PR_ATTACH_EXTENSION**メッセージの添付ファイル (ルートに変換) を変換する場合または受信したメッセージの添付ファイルに基づくアプリケーションを起動します。 送信元のクライアントは、これらのプロパティの値を指定しない、する場合、添付ファイルを処理するメッセージ ・ ストアがそれを生成する義務を負いません。 受信側のクライアントは、 **PR_ATTACH_EXTENSION**、最初に確認する必要があり。、このオプションを指定しない場合は、ファイル名の拡張子の添付ファイルの**PR_ATTACH_FILENAME** ([PidTagAttachFilename](pidtagattachfilename-canonical-property.md)) **PR_ATTACH_LONG_FILENAME を解析する必要があります。**([PidTagAttachLongFilename](pidtagattachlongfilename-canonical-property.md)) のプロパティです。 
+メッセージングシステムは、受信したメッセージ内の添付ファイルに基づいて、メッセージの添付ファイルを変換するとき (ルートの変換)、またはアプリケーションを起動するときに**PR_ATTACH_EXTENSION**を使用します。 送信元クライアントがこれらのプロパティの値を提供していない場合、添付ファイルを処理するメッセージストアは、それを生成する必要はありません。 受信側クライアントは、まず**PR_ATTACH_EXTENSION**をチェックし、指定されていない場合は、添付ファイルの**PR_ATTACH_FILENAME** ([PidTagAttachFilename](pidtagattachfilename-canonical-property.md)) または PR_ATTACH_LONG_FILENAME からファイル名拡張子を解析する必要があります。 ****([PidTagAttachLongFilename](pidtagattachlongfilename-canonical-property.md)) プロパティ。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルのオブジェクトを処理します。
+> メッセージと添付ファイルオブジェクトを処理します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

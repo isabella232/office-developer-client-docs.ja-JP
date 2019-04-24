@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ce6b6e6c-7f22-43c2-8182-90cf6db93844
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 133a2ae3896b9aaedb502cb77516040c53584882
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f51dd1fe533d0577996e6e1be185302f2dc972fe
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321456"
 ---
 # <a name="imapimessagesitenewmessage"></a>IMAPIMessageSite::NewMessage
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 新しいメッセージを作成します。
   
@@ -40,51 +40,51 @@ HRESULT NewMessage(
 
 ## <a name="parameters"></a>パラメーター
 
- _fComposeInFolder_
+ _fて seinfolder_
   
-> [in]メッセージので構成されるフォルダーを示します。 変数が FALSE の場合は、 _pFolderFocus_パラメーターは無視され、フォーム ビューアーは、任意のフォルダーにメッセージを作成できます。 変数が TRUE の場合、 _pFolderFocus_パラメーターに NULL が渡されるとは、メッセージが現在のフォルダー内で構成されます。 変数が TRUE を NULL 以外の値が_pFolderFocus_に渡された場合は、メッセージが_pFolderFocus_で指定されたフォルダー内で構成されます。
+> 順番メッセージを構成するフォルダーを示します。 変数が FALSE の場合、 _pfolderfocus_パラメーターは無視され、フォームビューアーは任意のフォルダーでメッセージを作成できます。 変数が TRUE で、 _pfolderfocus_パラメーターで NULL が渡された場合、メッセージは現在のフォルダーで構成されます。 変数が TRUE で、 _pfolderfocus_で NULL 以外の値が渡された場合、メッセージは_pfolderfocus_が指すフォルダーに格納されます。
     
- _pFolderFocus_
+ _pfolderfocus_
   
-> [in]新しいメッセージを作成する場所のフォルダーへのポインター。
+> 順番新しいメッセージが作成されるフォルダーへのポインター。
     
- _pPersistMessage_
+ _ppersistmessage_
   
-> [in]新しいフォームのフォーム オブジェクトへのポインター。
+> 順番新しいフォームの form オブジェクトへのポインター。
     
- _ppMessage_
+ _ppmessage_
   
-> [out]新しいメッセージへのポインターへのポインター。
+> 読み上げ新しいメッセージへのポインターへのポインター。
     
- _ppMessageSite_
+ _ppメッセージ ite_
   
-> [out]新しいメッセージのメッセージのサイト オブジェクトへのポインターへのポインター。
+> 読み上げ新しいメッセージのメッセージサイトオブジェクトへのポインターへのポインター。
     
- _ppViewContext_
+ _ppviewcontext_
   
-> [out]新しいメッセージを新しいフォームに渡すのための適切なビューのコンテキストへのポインターへのポインター。 フォームは、独自のビュー コンテキストを実装する場合は、 _ppViewContext_パラメーターに NULL を渡すことができます。 
+> 読み上げ新しいメッセージを使用して新しいフォームに渡すための適切なビューコンテキストへのポインターへのポインター。 フォームが独自のビューコンテキストを実装している場合は、 _ppviewcontext_パラメーターに NULL を渡すことができます。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
-フォーム オブジェクトは、新しいメッセージを作成する**IMAPIMessageSite::NewMessage**メソッドを呼び出します。 フォームは、そのビューから新しいメッセージが、メッセージが関連付けられているサイトを取得するのに**NewMessage**を使用します。 新しいメッセージに変更できます。 
+Form オブジェクトは、 **IMAPIMessageSite:: newmessage**メソッドを呼び出して、新しいメッセージを作成します。 このフォームは、新しいメッセージと関連するメッセージサイトをビューから取得するために、 **newmessage**を使用します。 その後、新しいメッセージを変更することができます。 
   
-_PpViewContext_パラメーターに NULL 以外の値を渡すことによって、関連付けられているビューのコンテキストを取得することもできます。 このビューのコンテキストを使用して直接、または集約し、新しいメッセージに渡されることができます。 完全な実装が必要な場合は、 _ppViewContext_に NULL を渡します。
+_ppviewcontext_パラメーターに NULL 以外の値を渡すことによって、関連付けられているビューコンテキストを取得することもできます。 このビューコンテキストは直接使用することも、新しいメッセージに集約して渡すこともできます。 完全な実装が必要な場合は、 _ppviewcontext_に NULL を渡します。
   
-フォームのサーバーに関連するインターフェイスの一覧は、 [MAPI フォームのインタ フェース](mapi-form-interfaces.md)を参照してください。
+フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::NewMessage  <br/> |MFCMAPI では、 **IMAPIMessageSite::NewMessage**メソッドを使用して、新しいメッセージを作成し、新しいフォームのビューアーをインスタンス化し、フォームのビューアーで、メッセージを設定するのには**SetPersist**を呼び出します。 最後に、メッセージのサイトとして、フォームのビューアーを返します。  <br/> |
+|MyMAPIFormViewer  <br/> |cmymapiformviewer:: newmessage  <br/> |mfcmapi は、 **IMAPIMessageSite:: newmessage**メソッドを使用して、新しいメッセージを作成し、新しいフォームビューアーをインスタンス化し、呼び出し**setpersist**を呼び出して、フォームビューアーにメッセージを設定します。 最後に、フォームビューアーをメッセージサイトとして返します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -97,5 +97,5 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
+[MAPI フォームインターフェイス](mapi-form-interfaces.md)
 

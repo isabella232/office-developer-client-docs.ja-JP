@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 94c44952-d297-4705-9778-90373dfa5ad6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9fa7c7226c4ddb5acf5c6b73f55c46829d959eef
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 938eaa6c1a39d24157d5d690c42b435af6192cb6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321421"
 ---
 # <a name="imapimessagesitesavemessage"></a>IMAPIMessageSite::SaveMessage
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-現在のメッセージを保存するように要求します。
+現在のメッセージを保存するよう要求します。
   
 ```cpp
 HRESULT SaveMessage( void );
@@ -35,25 +35,25 @@ HRESULT SaveMessage( void );
 
 なし。
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B 
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
-フォームは、メッセージを保存することを要求する**IMAPIMessageSite::SaveMessage**メソッドを呼び出します。 
+フォームは**IMAPIMessageSite:: SaveMessage**メソッドを呼び出して、メッセージの保存を要求します。 
   
-フォームのサーバーに関連するインターフェイスの一覧は、 [MAPI フォームのインタ フェース](mapi-form-interfaces.md)を参照してください。
+フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::SaveMessage  <br/> |MFCMAPI では、 **IMAPIMessageSite::SaveMessage**メソッドを使用してメッセージを保存します。  <br/> |
+|MyMAPIFormViewer  <br/> |cmymapiformviewer:: SaveMessage  <br/> |mfcmapi は、 **IMAPIMessageSite:: SaveMessage**メソッドを使用してメッセージを保存します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -64,5 +64,5 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
+[MAPI フォームインターフェイス](mapi-form-interfaces.md)
 

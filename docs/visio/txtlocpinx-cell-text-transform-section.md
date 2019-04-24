@@ -8,36 +8,36 @@ f1_keywords:
 - Vis_DSS.chm82251275
 localization_priority: Normal
 ms.assetid: cbfc4e91-10d1-d50e-3e8a-f269f7123276
-description: X の決定に、テキスト ブロックのテキスト ブロックの原点を基準として回転の中心の座標。 既定の数式は次のとおりです。
-ms.openlocfilehash: 6eb48532bb19bce5b0d22ed2cd0997014721df88
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: テキストブロックの回転中心の x 座標を、テキストブロックの原点を基準にして指定します。 既定の数式は次のとおりです。
+ms.openlocfilehash: 390f8129e8000a043969eda0ab1c8e4ef62515ef
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316451"
 ---
-# <a name="txtlocpinx-cell-text-transform-section"></a>[TxtLocPinX] セル ([テキスト変換] セクション)
+# <a name="txtlocpinx-cell-text-transform-section"></a>[TxtLocPinX] セル ([Text Transform] セクション)
 
-*X*が決まりますが、テキスト ブロックのテキスト ブロックの原点を基準として回転の中心の座標。 既定の数式は次のとおりです。 
+テキストブロックの回転中心の*x*座標を、テキストブロックの原点を基準にして指定します。 既定の数式は次のとおりです。 
   
-= [Txtwidth] \* 0.5
+= txtwidth \* 0.5
   
 この数式では、テキスト ブロックの水平方向の中心が回転の中心になります。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [TxtLocPinX] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | TxtLocPinX  <br/> |
+| セル名 :  <br/> | [txtlocpinx]  <br/> |
    
 プログラムから、インデックスによって [TxtLocPinX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
-| 行インデックス:  <br/> |**visRowTextXForm** <br/> |
+| 行インデックス :  <br/> |**visRowTextXForm** <br/> |
 | セル インデックス:  <br/> |**visXFormLocPinX** <br/> |
    
 

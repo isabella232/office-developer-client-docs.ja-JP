@@ -1,5 +1,5 @@
 ---
-title: IMAPIOfflineGetCapabilities
+title: imapiofflinegetcapabilities
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: aa8dc48b-9e1c-8da0-9579-10b7174e99de
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 699e77479e0d09e7549c0d2741d5ba54ecc8ce33
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 48d59d17d81da2ae78348a57ad8b1cb75486b1a0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321316"
 ---
 # <a name="imapiofflinegetcapabilities"></a>IMAPIOffline::GetCapabilities
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-コールバックは、オフラインのオブジェクトによってサポートされている条件を取得します。
+オフラインオブジェクトでサポートされているコールバックの条件を取得します。
   
 ```cpp
 HRESULT GetCapabilities( 
@@ -35,25 +35,25 @@ HRESULT GetCapabilities(
 
 ## <a name="parameters"></a>パラメーター
 
- _pulCapablities_
+ _アウト (アウト)_
   
-> [out]以下の機能フラグのビットマスク。
+> 読み上げ次の機能フラグのビットマスク。
     
 MAPIOFFLINE_CAPABILITY_OFFLINE
   
-> オフライン オブジェクトはオフラインの通知を提供することができます。
+> オフラインオブジェクトがオフライン通知を提供できる。
     
 MAPIOFFLINE_CAPABILITY_ONLINE
   
-> オフラインのオブジェクトでは、オンラインの通知を提供することができます。
+> オフラインオブジェクトは、オンライン通知を提供できます。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**[HrOpenOfflineObj](hropenofflineobj.md)** を使用してオフラインのオブジェクトを開くときにクライアントは、 **IMAPIOffline**インターフェイスへのポインターを取得し、サポートされているコールバックを確認するのには、 **IMAPIOffline::GetCapabilities**を呼び出すには、 [IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)に問い合わせることができます。オブジェクトです。 **IMAPIOfflineMgr**を使用してコールバックを設定するクライアントを選択できます。
+**[hropenofflineobj](hropenofflineobj.md)** を使用してオフラインオブジェクトを開くときに、クライアントは[IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)上でクエリを実行して**imapioffline**インターフェイスへのポインターを取得し、 **imapioffline:: getcapabilities**を呼び出して、サポートされているコールバックを検索できます。オブジェクトによって。 クライアントは、 **IMAPIOfflineMgr**を使用してコールバックをセットアップすることを選択できます。
   
-オフライン オブジェクトのメール サーバー、オンラインのコールバックをサポートするオブジェクトは必ずしもサポート コールバック オフラインになるため注意してください。
+オフラインオブジェクトのメールサーバーによっては、オンラインに移行するためのコールバックをサポートするオブジェクトが、必ずしもオフラインへのコールバックをサポートするわけではないことに注意してください。
   
-なお、いる間以外のオンラインまたはオフラインの変更のオフライン オブジェクトがコールバックをサポート可能性があります、オフライン状態の API は、オンラインとオフラインの変更のみをサポートしているクライアントは、このような機能だけを確認する必要があります。
+また、オフラインオブジェクトはオンライン/オフライン以外の変更に対するコールバックをサポートしていますが、オフライン状態 API はオンライン/オフライン変更のみをサポートしており、クライアントはそのような機能だけをチェックする必要があることにも注意してください。
   
 ## <a name="see-also"></a>関連項目
 

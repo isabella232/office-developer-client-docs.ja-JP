@@ -6,34 +6,34 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 04a0ba9f-48dd-488f-9c87-3890a12adf89
-description: X と y の最初の頂点、図形の x 座標の y が含まれていますが、図形の幅と高さを基準にして、パス内の改行の後の最初の頂点の座標です。
-ms.openlocfilehash: 77b3e731bfd1f35abe34ffbf3155b57133e56412
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 図形の最初の頂点に対する x 座標と y 座標、またはパスを切断した後の最初の頂点に対する x 座標と y 座標を格納します。これには、図形の高さと幅を基準にします。
+ms.openlocfilehash: 488945dbeeea177514770da57b5f26ac947053a3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319923"
 ---
 # <a name="relmoveto-row-geometry-section"></a>[RelMoveTo] 行 ([図形座標] セクション)
 
-*X*と*y*の最初の頂点、図形の*x*座標を*y*が含まれていますが、図形の幅と高さを基準にして、パス内の改行の後の最初の頂点の座標です。 
+図形の最初の頂点に対する*x*座標と*y*座標、またはパスを切断した後の最初の頂点に対する*x*座標と*y*座標を格納します。これには、図形の高さと幅を基準にします。 
   
 > [!NOTE]
-> **RelMoveTo**行は、.vsdx、.vsdm、.vstx、.vstm、.vssx、および .vssm のファイル形式でのみ保持できます。 Visio 2003 から 2010 年の形式にファイルを保存すると、 **RelMoveTo**の行は[[moveto]](moveto-row-geometry-section.md)行に変換されます。 
+> [**RelMoveTo**] 行は、.vsdx、.vsdm、.vstx、.vstm、.vssx、および .vssm のファイル形式でのみ保存できます。 Visio 2003-2010 形式でファイルを保存すると、[ **relmoveto** ] 行が [ [moveto](moveto-row-geometry-section.md) ] 行に変換されます。 
   
 [**RelMoveTo**] 行には次のセルが含まれます。 
   
 |**Cell**|**説明**|
 |:-----|:-----|
-|[X](x-cell-geometry-section.md) <br/> |**RelMoveTo**行がセクションの最初の行の場合は、[X] セルは*x*を表しますが、図形の幅を基準に図形の最初の頂点の座標。 [X] セルが*x*を表す 2 つの行の間に**RelMoveTo**行が表示されている場合のパスを切断した後の最初の頂点の座標です。  <br/> |
-|[Y](y-cell-geometry-section.md) <br/> |[Y] セルが*y*を表す**RelMoveTo**の行がセクションの最初の行の場合は、最初の図形の頂点の座標です。 [Y] セルが*y*を表す 2 つの行の間に**RelMoveTo**行が表示されている場合のパスを切断した後の最初の頂点の座標です。  <br/> |
+|[X](x-cell-geometry-section.md) <br/> |[ **relmoveto** ] 行がセクションの最初の行の場合、[x] セルは図形の幅を基準にして、図形の最初の頂点に対する*x*座標を表します。 2つの行の間に [ **relmoveto** ] 行が表示されている場合、[x] セルは、パスを切断した後の最初の頂点に対する*x*座標を表します。  <br/> |
+|[Y](y-cell-geometry-section.md) <br/> |[ **relmoveto** ] 行がセクションの最初の行の場合、[y] セルは、図形の最初の頂点に対する*y*座標を表します。 2つの行の間に [ **relmoveto** ] 行が表示されている場合、[y] セルは、パスを切断した後の最初の頂点に対する*y*座標を表します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**RelMoveTo**行の値は、 [[moveto]](moveto-row-geometry-section.md)行で、幅と図形の高さを乗じた値に相当します。 例: [ **X** ] セルの値が数式にある **[moveto]** 行で [ **X** ] セルの値が「0」は、[ **Y** ] セルの値は「0.5」は、 **RelMoveTo**行を置き換えることができます」*0"の幅] と [ **Y** ] セルは、数式"高さ*0.5」。 
+[**RelMoveTo**] 行の値は、図形の幅と高さを乗算した [[MoveTo](moveto-row-geometry-section.md)] 行の値に等しくなります。 例: [ **x** ] セルの値が "0" で、[ **y** ] セルの値が "0.5" の場合、[ **x** ] セルの値が数式 "Width **** 0" で、[ **** * **y** ] セルが数式である [moveto] 行に置き換えることができます。数式 "Height*0.5." 
   
-**RelMoveTo**行には、 *x*および*y*が含まれています-[moveto] 行がセクションの最初の行である場合の図形の最初の頂点の座標です。 通常これは図形が描画されて、および 1-d 図形の始点に必ずしも対応していないときに配置する最初の頂点です。 
+[ **relmoveto** ] 行には、[moveto] 行がセクションの最初の行である場合に、図形の最初の頂点に対する*x*座標と*y*座標が含まれます。 通常、これは図形が描画されたときに最初に配置される頂点で、1-d 図形の始点には必ずしも対応していません。 
   
-**[Geometry** ] セクションを **[moveto]** または**RelMoveTo**の行を開始する必要がありますが、図形の幅と高さを基準にして図形のパスの描画にギャップを表すため、 **RelMoveTo**の行と **[moveto]** 行を使用することもできます。 ただし、塗りつぶされた領域の境界を定義するのには、パスを使用する場合は、このギャップが直線セグメントとして解釈されます。 このようなギャップを挿入するには、2 つの行の間で行を挿入し、行の種類を**RelMoveTo**に変更します。 **RelMoveTo**行が 2 行の間にある場合は、含まれている、 *x*および*y*の図形のパスを切断した後の行の最初の頂点の座標です。 
+**Geometry**セクションは、[ **moveto** ] 行または [ **relmoveto** ] 行で開始する必要がありますが、図形の幅と高さに対する図形のパスの塗りつぶしのギャップを表すには、[ **relmoveto** ] 行と [ **moveto** ] 行を使用することもできます。 ただし、パスを使用して塗りつぶされた領域の境界を定義すると、このギャップは直線セグメントとして解釈されます。 このような隙間を挿入するには、2つの行の間に行を挿入し、その行の種類を [**リレーションシップ**] に変更します。 [ **relmoveto** ] 行が2つの行の間にある場合は、図形のパスにある改行の後の行の最初の頂点に対する*x*座標と*y*座標を格納します。 
   
 

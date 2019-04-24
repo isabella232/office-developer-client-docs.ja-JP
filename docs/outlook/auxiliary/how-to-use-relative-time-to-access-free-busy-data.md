@@ -1,32 +1,32 @@
 ---
-title: 空き時間情報データにアクセスするのに相対時間を使用する
+title: 空き時間情報データへのアクセスに相対時間を使用する
 manager: soliver
 ms.date: 12/08/2015
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 13aa6ae2-47b9-2cf4-a6ef-651f1338dd49
-description: 空き/予約済み API の IFreeBusyData のインターフェイスでは、1601 年 1 月 1 日からの分を世界協定時刻 (UTC) での表現の数は、相対的な時間の概念を使用し、型の値の長さは。
+description: Free/Busy API の IFreeBusyData インターフェイスは、相対時間の概念を使用しています。これは、1601年1月1日から、世界協定時刻 (UTC) で表された分の数で、LONG 型の値です。
 ms.openlocfilehash: 1b977fc3aebd1f2b20e51f24caa36d6bbf2862ba
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317634"
 ---
-# <a name="use-relative-time-to-access-freebusy-data"></a>空き時間情報データにアクセスするのに相対時間を使用する
+# <a name="use-relative-time-to-access-freebusy-data"></a>空き時間情報データへのアクセスに相対時間を使用する
 
-空き/予約済み API の[IFreeBusyData](ifreebusydata.md)インタ フェースは 1601 年 1 月 1 日からの分を世界協定時刻 (UTC) での表現の数は、相対的な時間の概念を使用して、 **LONG**型の値です。 
+Free/Busy API の[IFreeBusyData](ifreebusydata.md)インターフェイスは、相対時間の概念を使用しています。これは、1601年1月1日から、世界協定時刻 (UTC) で表された分の数で、 **LONG**型の値です。 
   
-いくつかの一般的に使用される相対時間値は、次のように。
+次に、相対的な時間値のうち、一般的に使用される値を示します。
   
 - `ULONG ulrtmMax = 1525252319L`
     
 - `ULONG ulrtmMin = 0L`
     
-相対時間値が有効であるかを確認するために上記の相対的な時間の最大値と最小値を使用します。
+相対時間の値が有効であることを確認するために、相対時間の最大値と最小値を使用します。
   
-NTFS は、 [FILETIME](https://msdn.microsoft.com/library/9baf8a0e-59e3-4fbd-9616-2ec9161520d1%28Office.15%29.aspx)形式でネイティブ ファイルの時刻を記録するためは、 **FILETIME**との間の相対的な時間を変換するのには次のコード例を使用するのには便利な場合があります。 
+NTFS は、ファイル時間を[filetime](https://msdn.microsoft.com/library/9baf8a0e-59e3-4fbd-9616-2ec9161520d1%28Office.15%29.aspx)形式でネイティブに記録するので、次のコード例を使用して、 **filetime**との相対時間を変換することができます。 
   
 ```cpp
 static const LONGLONG UnitsPerMinute = 600000000; 

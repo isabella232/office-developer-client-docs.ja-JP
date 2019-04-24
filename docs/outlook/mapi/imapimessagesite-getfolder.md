@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 9f4b4147-ed98-47cb-a799-ddf028f8e826
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 78fb610c5afc3cac4f6de84240f734e5ae196110
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 24461099877af683109c8627eacd22a657d6e156
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321386"
 ---
 # <a name="imapimessagesitegetfolder"></a>IMAPIMessageSite::GetFolder
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このようなフォルダーが存在する場合は、フォルダーを現在のメッセージを作成または開いたを返します。 このメソッドは、埋め込みメッセージは、フォルダーに直接格納されていないために_ppFolder_パラメーターで NULL を返します。 
+現在のメッセージが作成または開かれたフォルダー (そのフォルダーが存在する場合) を返します。 このメソッドは、埋め込みメッセージの_ppfolder_パラメーターで NULL を返します。これは、フォルダー内に直接格納されるわけではありません。 
   
 ```cpp
 HRESULT GetFolder(
@@ -35,11 +35,11 @@ HRESULT GetFolder(
 
 ## <a name="parameters"></a>パラメーター
 
- _ppFolder_
+ _ppfolder_
   
-> [out]返されるフォルダーへのポインターへのポインター。
+> 読み上げ返されるフォルダーへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -49,17 +49,17 @@ S_FALSE
   
 > メッセージのフォルダーが存在しません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォームのサーバーに関連付けられているインターフェイスの一覧は、 [MAPI フォームのインタ フェース](mapi-form-interfaces.md)を参照してください。
+フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetFolder  <br/> |MFCMAPI では、 **IMAPIMessageSite::GetFolder**メソッドを使用して、指定したフォルダーに現在キャッシュされているポインターを返します。  <br/> |
+|MyMAPIFormViewer  <br/> |cmymapiformviewer:: getfolder  <br/> |mfcmapi は、 **IMAPIMessageSite:: getfolder**メソッドを使用して、現在キャッシュされているポインターを指定のフォルダーに返します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,5 +70,5 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
+[MAPI フォームインターフェイス](mapi-form-interfaces.md)
 

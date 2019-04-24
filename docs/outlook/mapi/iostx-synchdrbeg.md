@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7f8ca7cf-ac0b-9b77-c1dd-9f1d0871d603
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2d05592d1fdcdcd53c8b7879f9cdcd432df1a3f7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 49ef9862d5156a1bed242652df32baab9a0123fc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317158"
 ---
 # <a name="iostxsynchdrbeg"></a>IOSTX::SyncHdrBeg
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ ヘッダーの同期を開始します。
+メッセージヘッダーの同期を開始します。
   
 ```cpp
 HRESULT SyncHdrBeg( 
@@ -39,19 +39,19 @@ HRESULT SyncHdrBeg(
 
  _cbeid_
   
-> [in]メッセージのエントリ ID 内のバイト数です。
+> 順番メッセージのエントリ ID のバイト数。
     
  _lpeid_
   
-> [in]メッセージのエントリ ID です。
+> 順番メッセージのエントリ ID。
     
  _ppv_
   
->  [内] と [出力] メッセージ ヘッダーの**[HDRSYNC](hdrsync.md)** 構造体へのポインター。 
+>  [in]/[out] メッセージヘッダーの**[HDRSYNC](hdrsync.md)** 構造体へのポインター。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IOSTX::SyncHdrBeg**、時に、ローカルは、[メッセージ ヘッダーの状態をダウンロードする](download-message-header-state.md)に効果を格納します。 Outlook は、クライアントがストアに格納され、親フォルダーのメッセージのヘッダーの現在の表現を**HDRSYNC**構造体を初期化します。 クライアントは、( *pmsgFull*の**HDRSYNC**で) として、完全なメッセージ項目をダウンロードする必要があります。 これが成功した場合、クライアントも*ulFlags*の設定**HDRSYNC** **HSF_OK**とします。 **[IOSTX::SyncHdrEnd](iostx-synchdrend.md)**、時に、Outlook は**HDRSYNC**の結果をチェックし、 **HDRSYNC**で情報を使用して、ローカルのメッセージ ヘッダーを更新します。 
+**iostx:: SyncHdrBeg**では、ローカルストアは、[メッセージヘッダーのダウンロード状態](download-message-header-state.md)に移行します。 Outlook は、ストア内の現在のメッセージヘッダーと親フォルダーを使用して、クライアントの**HDRSYNC**構造を初期化します。 クライアントは、完全なメッセージアイテム ( **HDRSYNC**では*pmsgfull*として) をダウンロードする必要があります。 これが成功した場合、クライアントは**HSF_OK**として**HDRSYNC**の*ulflags*も設定します。 **[iostx:: SyncHdrEnd](iostx-synchdrend.md)** では、Outlook が**HDRSYNC**で結果をチェックし、 **HDRSYNC**の情報を使用してローカルメッセージヘッダーを更新します。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -72,5 +72,5 @@ HRESULT SyncHdrBeg(
 [IOSTX : IUnknown](iostxiunknown.md)
 
 
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
 

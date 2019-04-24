@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: dfb3bca5-5f51-9868-e4f6-e4a94006585d
-description: このメンバーは、プレース ホルダーではサポートされていません。
-ms.openlocfilehash: 71fe758170d1c0c48bab75f7af0a3582a6c3de8c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このメンバーはプレースホルダーで、サポートされていません。
+ms.openlocfilehash: ef07ea8d01c34fe9c1454cee3baa4dbb7d5adc71
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317515"
 ---
 # <a name="ifreebusysupportplaceholder1"></a>IFreeBusySupport::Placeholder1
 
-このメンバーは、プレース ホルダーではサポートされていません。
+このメンバーはプレースホルダーで、サポートされていません。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -37,6 +37,6 @@ S_OK
   
 ## <a name="see-also"></a>関連項目
 
-- [定数 (空き時間情報の API)](constants-free-busy-api.md)
+- [定数 (空き時間情報 API)](constants-free-busy-api.md)
 - [IFreeBusySupport::LoadFreeBusyData](ifreebusysupport-loadfreebusydata.md)
 

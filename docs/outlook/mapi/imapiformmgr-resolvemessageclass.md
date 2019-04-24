@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: c2af7516-3a97-4422-874d-b1e3a0d4f316
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3cd84e4ddb6d722d9f3de11d65b100d86e69ecae
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: e99cff77fe872018722395c53c605e4d8fabfdde
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321610"
 ---
 # <a name="imapiformmgrresolvemessageclass"></a>IMAPIFormMgr::ResolveMessageClass
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームのコンテナー内のフォームにメッセージ クラスを解決し、そのフォームのフォームについてはオブジェクトを取得します。
+form コンテナー内のフォームに対してメッセージクラスを解決し、そのフォームのフォーム情報オブジェクトを返します。
   
 ```cpp
 HRESULT ResolveMessageClass(
@@ -38,27 +38,27 @@ HRESULT ResolveMessageClass(
 
 ## <a name="parameters"></a>パラメーター
 
- _szMsgClass_
+ _szmsgclass_
   
-> [in]解決するメッセージ クラスの名前を示す文字列です。
+> 順番解決されるメッセージクラスの名前を示す文字列。
     
  _ulFlags_
   
-> [in]メッセージ クラスが解決される方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番メッセージクラスの解決方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPIFORM_EXACTMATCH 
   
-> 完全に一致するメッセージ クラス文字列のみを解決する必要があります。
+> 完全一致のメッセージクラス文字列のみを解決する必要があります。
     
- _pFolderFocus_
+ _pfolderfocus_
   
-> [in]解決されているメッセージを含むフォルダーへのポインター。 _PFolderFocus_パラメーターは NULL にできます。 
+> 順番解決されるメッセージを含むフォルダーへのポインター。 _pfolderfocus_パラメーターは NULL にすることができます。 
     
  _ppResult_
   
-> [out]返されたフォームの情報オブジェクトへのポインターへのポインター。
+> 読み上げ返されるフォーム情報オブジェクトへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -66,21 +66,21 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> _SzMsgClass_パラメーターで渡されたメッセージ クラスでは、フォーム ライブラリ内の任意のフォームのメッセージ クラスが一致しません。 
+> _szmsgclass_パラメーターで渡されたメッセージクラスが、フォームライブラリ内のフォームのメッセージクラスと一致しません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォームの閲覧者は、フォームのコンテナー内のフォームにメッセージ クラスを解決するのには**IMAPIFormMgr::ResolveMessageClass**メソッドを呼び出します。 _PpResult_パラメーターに返されるフォームの情報オブジェクトを特定のメッセージ クラスを含むフォームのプロパティへのアクセスをさらに提供します。 
+フォームビューアーは、 **imapiformmgr:: ResolveMessageClass**メソッドを呼び出して、form コンテナー内のフォームにメッセージクラスを解決します。 _ppResult_パラメーターで返されるフォーム情報オブジェクトは、指定されたメッセージクラスを持つフォームのプロパティへのアクセスをさらに提供します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-フォームにメッセージ クラスを解決する、フォーム ビューアーを渡すように、解決するメッセージ クラスの名前" `IPM.HelpDesk.Software`"です。 正確な解像度を強制する (つまりと正確に一致する、フォーム、のメッセージ クラスの基本クラスの解像度を防止するためにサーバーは使用できません)、 _ulFlags_パラメーターでは、MAPIFORM_EXACTMATCH フラグを渡すことができます。 _PFolderFocus_パラメーターが NULL の場合は、メッセージのクラスの解決プロセスは、フォルダー コンテナーを検索しません。 
+メッセージクラスをフォームに解決するために、フォームビューアーは解決するメッセージクラスの名前 (" `IPM.HelpDesk.Software`" など) を渡します。 解像度を正確にする (つまり、正確に一致するフォームサーバーが使用できない場合にメッセージクラスの基本クラスに解決されないようにする) には、 _ulflags_パラメーターに MAPIFORM_EXACTMATCH フラグを渡すことができます。 _pfolderfocus_パラメーターが NULL の場合、メッセージクラスの解決処理ではフォルダーコンテナーは検索されません。 
   
-検索コンテナーの順序は、フォーム ライブラリのプロバイダーの実装に依存します。 既定のフォーム ライブラリのプロバイダーは、ローカルのコンテナーでは、[フォルダーのコンテナー、渡されたフォルダー、個人用フォームのコンテナーと、最後に、[組織] コンテナーを最初に検索します。
+検索されるコンテナーの順序は、フォームライブラリプロバイダーの実装によって異なります。 既定のフォームライブラリプロバイダーは、最初にローカルコンテナーを検索し、次に、渡されたフォルダーのフォルダーコンテナー、個人用フォームコンテナー、そして組織コンテナーを検索します。
   
-メッセージ クラス名は、常に ANSI 文字列を Unicode ではないです。
+メッセージクラス名は常に ANSI 文字列で、Unicode はありません。
   
-フォームの情報オブジェクトの一部として解決済みのメッセージ クラスのクラス識別子が返されます。 フォーム ビューアー フォーム ビューアーは、 [IMAPIFormMgr::PrepareForm](imapiformmgr-prepareform.md)メソッドまたは[IMAPIFormMgr::CreateForm](imapiformmgr-createform.md)メソッドが呼び出されるとするまで、OLE ライブラリのクラス識別子が存在することを前提として動作していません。 
+解決されたメッセージクラスのクラス識別子は、フォーム情報オブジェクトの一部として返されます。 フォームビューアーが OLE ライブラリ内に存在することを前提としているのは、フォームビューアーが[imapiformmgr::P repareform](imapiformmgr-prepareform.md)メソッドまたは[imapiformmgr:: CreateForm](imapiformmgr-createform.md)メソッドを呼び出したときまでです。 
   
 ## <a name="see-also"></a>関連項目
 

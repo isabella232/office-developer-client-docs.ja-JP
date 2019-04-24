@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 46f31089-3b66-41a2-8094-e3db52464b9f
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5fc7360e3070ed4d20be7ac0155ebdcb04cf2048
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319209"
 ---
 # <a name="pidtagattachcontentid-canonical-property"></a>PidTagAttachContentId 標準プロパティ
 
@@ -25,7 +25,7 @@ ms.locfileid: "25396954"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-多目的インターネット メール拡張 (MIME) メッセージの添付ファイルのコンテンツの識別のヘッダーが含まれています。 
+マルチパーパスインターネットメール内線 (MIME) メッセージの添付ファイルのコンテンツ id ヘッダーを含みます。 
   
 |||
 |:-----|:-----|
@@ -34,35 +34,35 @@ ms.locfileid: "25396954"
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-これらのプロパティの使用は、MHTML をサポートするためです。 適切な MIME ボディ部のコンテンツの識別のヘッダーを表します。 
+これらのプロパティは、MHTML のサポートに使用されます。 これらは、適切な MIME 本文パーツのコンテンツ id ヘッダーを表します。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルのオブジェクトを処理します。
+> メッセージと添付ファイルオブジェクトを処理します。
     
-## <a name="header-files"></a>ヘッダー ファイル
+## <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

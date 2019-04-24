@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: d840aac9-f572-958b-2e1c-aea5c01c42b2
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 120df88231c6eed9aa6c3fbef2ea367e94dbd504
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 69379922b0b6535d965c37a4b97a05947c5ee668
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315072"
 ---
 # <a name="ipstx6disconnectstore"></a>IPSTX6::DisconnectStore
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ローカル ストアの接続を切断します。
+ローカルストアを切断します。
   
 ```cpp
 HRESULT DisconnectStore( 
@@ -33,11 +33,11 @@ HRESULT DisconnectStore(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
->  [in]動作を変更するフラグです。 このパラメーターは、0 を常に設定する必要があります。 
+>  [in]動作を変更するフラグです。 このパラメーターは常に0に設定する必要があります。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -45,5 +45,5 @@ HRESULT DisconnectStore(
 
 [レプリケーション API について](about-the-replication-api.md)
   
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
 

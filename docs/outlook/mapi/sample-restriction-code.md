@@ -7,21 +7,21 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 9b82097c-dbd6-4ba0-a6cb-292301f9402b
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: dab13577e503a063ed1ebb48a3d6a5c531179b21
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: cafcb20cbce3019d7623d330721005a674eca36e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314946"
 ---
 # <a name="sample-restriction-code"></a>制限のサンプル コード
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-次のサンプル コードは、件名に「バレーボール」という単語が含まれていないすべてのメッセージをフィルターする制約を作成する方法を示していますし、、Sam から政美に送信されなかった。 [SRestriction](srestriction.md)構造のツリーは、 [SAndRestriction](sandrestriction.md)構造体を使用して実装、**および**制限をされている最上位のノードを持つ必要は。 政美に送信されたメッセージを検索するサブオブジェクトの制限、Sam からのメッセージを検索するコンテンツの制限とメッセージを検索するもう 1 つ**と**制限は、 **AND**演算で結ばれている 3 つの制限「バレーボール」を含む件名が指定されています。 **あるの PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) は、必要なプロパティではないため、**既存**の制限に含める必要があります。 
+次のサンプルコードでは、件名に "" "という単語が含まれず、Sam から政美に送信されなかったすべてのメッセージを除外する制限を作成する方法を示します。 最上位ノードが[SAndRestriction](sandrestriction.md)構造で実装されている場合は、 **** [srestriction](srestriction.md)構造のツリーが必要です。 **AND**操作によって参加する3つの制限は、政美に送信されたメッセージを検索するサブアイテム制限、Sam からメッセージを検索するコンテンツ**** 制限、およびメッセージを検索する別の制限です。には、件名に "" を含む "が含まれています。 **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) は必須のプロパティではないため、**存在**する制限を含める必要があります。 
   
-このコードを使用して、動的な割り当てと初期化します。割り当ておよび同様に静的に初期化することはできます。 簡潔に、次に発生する必要がありますエラーのチェック割り当て呼び出しに含まれていないサンプルです。 
+このコードでは、動的な割り当てと初期化を使用します。静的に割り当てたり、初期化したりすることもできます。 簡潔にするために、割り当て呼び出しの後に発生する必要のあるエラーチェックは、サンプルに含まれていません。 
   
 ```cpp
 HRESULT BuildRestriction (LPSTR pszSent, LPSTR pszFrom,

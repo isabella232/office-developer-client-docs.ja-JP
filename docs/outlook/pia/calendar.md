@@ -1,5 +1,5 @@
 ---
-title: 予定表
+title: カレンダー
 TOCTitle: Calendar
 ms:assetid: 9a8c8012-b0fd-4ebc-a5e2-da7853657f29
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff184628(v=office.15)
@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5db7225ea49fbdae14d7cdfcf6fe9f33dea36fa6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318978"
 ---
 # <a name="calendar"></a>予定表
 

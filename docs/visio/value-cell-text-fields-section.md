@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 3ca662c8-1ce4-89a9-3264-1ba533fcd444
 description: フィールドの関数が格納されます。
-ms.openlocfilehash: 9bce4cbb1b3955f749cefa18130c6b01fe61244e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d5a09dd0d59341125db897484f74addff22328de
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32320203"
 ---
-# <a name="value-cell-text-fields-section"></a>[Value] セル ([テキスト フィールド] セクション)
+# <a name="value-cell-text-fields-section"></a>[Value] セル ([Text Fields] セクション)
 
 フィールドの関数が格納されます。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 このセルの値は、[**フィールド**] ダイアログ ボックスを使用して設定することもできます (このダイアログ ボックスを開くには、[**挿入**] タブの [**テキスト**] グループで、[**フィールド**] をクリックします)。
   
@@ -28,14 +28,14 @@ ms.locfileid: "19806749"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |Fields.Value [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+|セル名 :  <br/> |フィールドの値 [ *i* ]。 *i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [Value] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionTextField** <br/> |
-|行インデックス:  <br/> |**visRowField** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+|行インデックス:  <br/> |**visRowField** +  *i* = ** 0、1、2...  <br/> |
 |セル インデックス:  <br/> |**visFieldCell** <br/> |
    
 

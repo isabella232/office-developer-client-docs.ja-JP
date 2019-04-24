@@ -12,47 +12,47 @@ api_type:
 - COM
 ms.assetid: 1351ec3c-984d-4b3e-8009-7c39f18d71a5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 41c95147a0bc5a62a4f3a103fccaf0751f89c731
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5732cd5c2b0b8dc26d699c3567f7cd9be3495184
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32320420"
 ---
 # <a name="pidtagtypeofx400user-canonical-property"></a>PidTagTypeOfX400User 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このプロパティには、レポートで使用するためのメッセージの受信者の種類が含まれています。
+このプロパティには、レポートで使用するメッセージ受信者の種類が含まれます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_TYPE_OF_MTS_USER  <br/> |
-|識別子:  <br/> |0x0C1C  <br/> |
+|識別子:  <br/> |0x0c1c  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |MAPI 受信者  <br/> |
+|エリア:  <br/> |MAPI 受信者  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

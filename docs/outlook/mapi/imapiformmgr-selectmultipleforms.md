@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 172f8f53-b837-4286-9236-3f72806d7f1f
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b974b733c24e61cb256ac0cf7b377d5630966fdf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: c40d853c49645638c2ec4001d86e64a1b2d2e381
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321596"
 ---
 # <a name="imapiformmgrselectmultipleforms"></a>IMAPIFormMgr::SelectMultipleForms
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-複数のフォームを選択するユーザーを有効にする] ダイアログ ボックスを表示し、それらのフォームを記述するオブジェクトの情報、フォームの配列を返します。
+ユーザーが複数のフォームを選択できるようにするダイアログボックスを表示し、それらのフォームを記述するフォーム情報オブジェクトの配列を返します。
   
 ```cpp
 HRESULT SelectMultipleForms(
@@ -40,55 +40,55 @@ HRESULT SelectMultipleForms(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulUIParam_
+ _uluiparam_
   
-> [in]表示されたダイアログ ボックスの親ウィンドウへのハンドル。 
+> 順番表示されるダイアログボックスの親ウィンドウへのハンドル。 
     
  _ulFlags_
   
-> [in]渡された文字列の種類を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番渡された文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 渡された文字列は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。
+> 渡された文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
     
- _pszTitle_
+ _psztitle_
   
-> [in]ダイアログ ボックスのキャプションを含む文字列へのポインター。 _PszTitle_パラメーターが NULL の場合は、フォームを提供するフォーム ライブラリ プロバイダーは、既定のキャプションを提供します。 
+> 順番ダイアログボックスのキャプションを含む文字列へのポインター。 _psztitle_パラメーターが NULL の場合は、フォームを提供するフォームライブラリプロバイダーが既定のキャプションを提供します。 
     
  _pfld_
   
-> [in]フォームを選択するフォルダーへのポインター。 _Pfld_パラメーターが NULL の場合は、ローカル、個人、または組織フォームのコンテナーから、フォームが選択されます。 
+> 順番フォームを選択するフォルダーへのポインター。 _pfld_パラメーターが NULL の場合、フォームはローカル、個人用、または組織のフォームコンテナーから選択されます。 
     
  _pfrminfoarray_
   
-> [in]ユーザーに事前に選択されているフォーム情報オブジェクトの配列へのポインター。
+> 順番ユーザー用に事前に作成されたフォーム情報オブジェクトの配列へのポインター。
     
  _ppfrminfoarray_
   
-> [out]フォーム情報オブジェクトの返される配列へのポインターへのポインター。
+> 読み上げフォーム情報オブジェクトの返された配列へのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、予期される値または値が返されます。
+> 呼び出しが成功し、予想される値または値が返されました。
     
 MAPI_E_BAD_CHARWIDTH 
   
-> か、MAPI_UNICODE フラグが設定された実装は Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、実装は、Unicode だけをサポートしています。
+> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
     
 MAPI_E_USER_CANCEL 
   
-> ユーザー操作がキャンセルされました、通常] ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
+> ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォーム ビューアー メソッドを呼び出して、 **IMAPIFormMgr::SelectMultipleForms**を最初の存在により、ユーザーが複数のフォームを選択するダイアログ ボックスと、フォームの配列を取得するために情報オブジェクトを選択したフォームを記述します。 **SelectMultipleForms** ] ダイアログ ボックスでは、(つまり、かどうか、非表示のプロパティは、クリア) が非表示にするかどうか、すべてのフォームが表示されます。 
+フォーム閲覧者は、次のように、 **imapiformmgr:: selectmultipleforms**メソッドを呼び出して、ユーザーが複数のフォームを選択できるようにするダイアログボックスを最初に表示し、選択したフォームを記述するフォーム情報オブジェクトの配列を取得します。 [ **select複数のフォーム**] ダイアログボックスには、非表示になっているかどうかにかかわらず、すべてのフォームが表示されます (非表示のプロパティがクリアされているかどうかは表示されません)。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-_UlFlags_パラメーターで、フォームのビューアーが MAPI_UNICODE フラグを渡すと、すべての文字列は Unicode です。 Unicode 文字列をサポートしていないフォーム ライブラリ プロバイダーは、MAPI_UNICODE が渡された場合、MAPI_E_BAD_CHARWIDTH を返す必要があります。 
+フォームビューアーが_ulflags_パラメーターの MAPI_UNICODE フラグを渡すと、すべての文字列が UNICODE になります。 Unicode 文字列をサポートしていないフォームライブラリプロバイダーは、MAPI_UNICODE が渡された場合は MAPI_E_BAD_CHARWIDTH を返します。 
   
 ## <a name="see-also"></a>関連項目
 

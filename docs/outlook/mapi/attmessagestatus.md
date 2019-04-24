@@ -8,29 +8,29 @@ api_type:
 - COM
 ms.assetid: 8f55470a-65b3-4210-a7d2-9031cb17ca80
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 704707b34fb4532f0e60636df31edbae1a939f35
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d4dc72309ff090317b2353cab0b4fc2c5be41181
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318215"
 ---
 # <a name="attmessagestatus"></a>attMessageStatus
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI メッセージのフラグは、下位互換性を保持するためにフラグを TNEF にマップされます。 すべてのフラグがグループ化され、1 バイトでエンコードします。 マッピングは次のとおりです。
+MAPI メッセージフラグは、下位互換性を維持するために、TNEF フラグにマップされます。 すべてのフラグがまとめられ、1バイトでエンコードされます。 マッピングは次のとおりです。
   
-|**MAPI メッセージのフラグ**|**TNEF フラグ**|
+|**MAPI メッセージフラグ**|**TNEF フラグ**|
 |:-----|:-----|
-|MSGFLAG_READ  <br/> |fmsRead  <br/> |
-|MSGFLAG_UNMODIFED  <br/> |~ fmsModified  <br/> |
-|MSGFLAG_SUBMIT  <br/> |fmsSubmitted  <br/> |
+|MSGFLAG_READ  <br/> |fmsread  <br/> |
+|MSGFLAG_UNMODIFED  <br/> |~ fmsmodified  <br/> |
+|MSGFLAG_SUBMIT  <br/> |fmssubmitted  <br/> |
 |MSGFLAG_HASATTACH  <br/> |fmsHasAttach  <br/> |
-|MSGFLAG_UNSENT  <br/> |fmsLocal  <br/> |
+|MSGFLAG_UNSENT  <br/> |fmslocal  <br/> |
    
-TNEF では、これらのフラグが定義されています。H ヘッダー ファイルです。
+これらのフラグは TNEF で定義されています。H ヘッダーファイル。
   
 

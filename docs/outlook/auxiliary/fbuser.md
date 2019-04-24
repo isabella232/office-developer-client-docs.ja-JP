@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal649b5400-8dc5-cc5c-3455-f462e2d31689
 ms.assetid: ''
-description: 利用可能な空き時間情報データがない可能性がありますは、ユーザーを識別します。
+description: 空き時間情報を利用できるかどうかが不明なユーザーを識別します。
 ms.openlocfilehash: 2511a94678f9ef8f2cb6be868db4f718d92ecb6d
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25387903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317662"
 ---
 # <a name="fbuser"></a>FBUser
 
-利用可能な空き時間情報データがない可能性がありますは、ユーザーを識別します。
+空き時間情報を利用できるかどうかが不明なユーザーを識別します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -31,23 +31,23 @@ typedef struct tagFBUser
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 _m_cbEid_
   
-> [IMailUser](https://docs.microsoft.com/previous-versions/windows/desktop/wab/-wab-imailuser-deleteprops)インターフェイスによって表される、メール ユーザーのエントリ ID の長さ。 
+> [imailuser](https://docs.microsoft.com/previous-versions/windows/desktop/wab/-wab-imailuser-deleteprops)インターフェイスで表されるメールユーザーのエントリ ID の長さ。 
     
 _m_lpEid_
   
-> **IMailUser**インターフェイスによって表される、メール ユーザーのエントリ ID です。 
+> **imailuser**インターフェイスで表されるメールユーザーのエントリ ID。 
     
 _m_ulReserved_
   
-> このパラメーターは、Outlook の内部使用に予約されている、サポートされていません。
+> このパラメーターは、Outlook の内部使用のために予約されており、サポートされていません。
     
 _m_pwszReserved_
   
-> このパラメーターは、Outlook の内部使用に予約されている、サポートされていません。
+> このパラメーターは、Outlook の内部使用のために予約されており、サポートされていません。
     
 ## <a name="see-also"></a>関連項目
 

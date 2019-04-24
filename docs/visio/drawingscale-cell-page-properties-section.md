@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: bc447f22-a188-2c61-e33c-df0d401a4725
 description: 現在の図面縮尺で、図面単位の値を表します。ページの図面縮尺は、[DrawingScale] セルに表示される図面単位に対して [PageScale] セルに表示されるページ単位の比率です。
-ms.openlocfilehash: cdd3222f5e56c34ac8947c9ef5a653cfe19fbd0f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8a3a5f93ff096e42ba3c13b671b46bf1cf97df82
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316507"
 ---
-# <a name="drawingscale-cell-page-properties-section"></a>[DrawingScale] セル ([ページのプロパティ] セクション)
+# <a name="drawingscale-cell-page-properties-section"></a>[DrawingScale] セル ([Page Properties] セクション)
 
 現在の図面縮尺で、図面単位の値を表します。ページの図面縮尺は、[DrawingScale] セルに表示される図面単位に対して [PageScale] セルに表示されるページ単位の比率です。
   
-プログラムで [DrawingScale] セルを設定して、ページのルーラーの単位を変更できます。次の例では、プログラムで測定単位をインチからセンチメートルに変更しています。この例の場合、**ConvertResult** メソッドを使用して、元の単位の値を、別の単位の同等な値に変換しています。 
+プログラムで [DrawingScale] セルを設定して、ページのルーラーの単位を変更できます。 次の例では、プログラムで測定単位をインチからセンチメートルに変更しています。 この例の場合、**ConvertResult** メソッドを使用して、元の単位の値を、別の単位の同等な値に変換しています。 
   
 ```vb
 Public Sub SetActivePageMeasurementToCM() 
@@ -32,14 +32,14 @@ Set dsCell = ActivePage.PageSheet.Cells("DrawingScale")
 End Sub 
 ```
 
-DrawingScale セルの**Units**プロパティを調べることによって、図面の計測システムを指定できます。 エディターの Visual Basic のイミディ エイトを実行する次のステートメント、上記のマクロを実行した後ウィンドウは*True*を返します。 
+図面の測定方法は、[DrawingScale] セルの **Units** プロパティを検討することで決定できます。 上記のマクロを実行した後、Visual Basic Editor の [イミディエイト] ウィンドウで次のステートメントを実行すると、 *True*が返されます。 
   
 ```vb
 debug.print ActivePage.PageSheet.Cells("DrawingScale").Units = _ 
  visCentimeters 
 ```
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 このセルは、[**ページ設定**] ダイアログ ボックスの設定に対応しています (このダイアログ ボックスを開くには、[**ホーム**] タブの [**ページ設定**] 矢印をクリックします)。 
   
@@ -53,7 +53,7 @@ debug.print ActivePage.PageSheet.Cells("DrawingScale").Units = _
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |DrawingScale  <br/> |
+|セル名:  <br/> |drawingscale]  <br/> |
    
 プログラムから、インデックスによって [DrawingScale] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -61,6 +61,6 @@ debug.print ActivePage.PageSheet.Cells("DrawingScale").Units = _
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionObject** <br/> |
 |行インデックス:  <br/> |**visRowPage** <br/> |
-|セル インデックス:  <br/> |**visPageDrawingScale** <br/> |
+|セル インデックス:  <br/> |**vispageドローイング scale** <br/> |
    
 

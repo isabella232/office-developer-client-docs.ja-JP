@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: 0846415b-6fe1-4504-8620-108af6719015
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3b5268f0b033126083a463f72e47c64957df07eb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8c5e6078be05ff846b7737ff53e9a6338fcb2141
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318096"
 ---
 # <a name="builddisplaytable"></a>BuildDisplayTable
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティ ページのデータが 1 つまたは複数の[DTPAGE](dtpage.md)構造体に含まれているから、表示された表を作成します。 
+1つ以上の[dtpage](dtpage.md)構造に含まれるプロパティページデータから、表示テーブルを作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |サービス プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |サービス プロバイダー  <br/> |
    
 ```cpp
 STDAPI BuildDisplayTable(
@@ -52,66 +52,66 @@ STDAPI BuildDisplayTable(
 
  _lpAllocateBuffer_
   
-> [in]メモリの割り当てに使用する[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
+> 順番メモリの割り当てに使用される[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
     
  _lpAllocateMore_
   
-> [in]追加メモリの割り当てに使用する[MAPIAllocateMore](mapiallocatemore.md)関数へのポインター。 
+> 順番追加のメモリを割り当てるために使用される[MAPIAllocateMore](mapiallocatemore.md)関数へのポインター。 
     
- _lpFreeBuffer_
+ _lpfreebuffer_
   
-> [in]メモリを解放するために使用する、 [MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。 
+> 順番メモリを解放するために使用される[MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。 
     
- _lpMalloc_
+ _lpmalloc_
   
-> 未使用です。NULL に設定する必要があります。 
+> 使用NULL に設定する必要があります。 
     
  _hInstance_
   
-> [in]**BuildDisplayTable**リソースの取得元となる MAPI オブジェクトのインスタンス。 
+> 順番**builddisplaytable**がリソースを取得する MAPI オブジェクトのインスタンス。 
     
- _cPages_
+ _cpages_
   
-> [in]_LpPage_パラメーターが指す配列内の[DTPAGE](dtpage.md)構造体の数です。 
+> 順番_lppage_パラメーターで指定された配列内の[dtpage](dtpage.md)構造体の数。 
     
- _lpPage_
+ _lppage_
   
-> [in]**DTPAGE**構造体を構築する、表示のテーブル ・ ページに関する情報を含む配列へのポインター。 
+> 順番作成するテーブルの表示ページに関する情報を含む**dtpage**構造体の配列へのポインター。 
     
  _ulFlags_
   
-> [in]フラグのビットマスクです。 次のフラグを設定することができます。
+> 順番フラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 渡された文字列は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。 
+> 渡された文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。 
     
- _lppTable_
+ _lpptable_
   
-> [out][IMAPITable](imapitableiunknown.md)インターフェイスを公開する表示のテーブルへのポインターへのポインター。 
+> 読み上げ表示テーブルへのポインターへのポインター。これには[IMAPITable](imapitableiunknown.md)インターフェイスが公開されます。 
     
  _lppTblData_
   
-> [で [チェック アウト]_LppTable_パラメーターで返されるテーブルの[ITableData](itabledataiunknown.md)インターフェイスを公開するテーブルのデータ オブジェクトへのポインターへのポインター。 テーブルのデータ オブジェクトが必要ない場合、ポインターの値ではなく、 _lppTblData_を NULL に設定する必要があります。 
+> [入力]_lpptable_パラメーターで返されるテーブルの[itabledata](itabledataiunknown.md)インターフェイスを公開するテーブルデータオブジェクトへのポインターへのポインター。 テーブルデータオブジェクトが必要ない場合は、ポインター値ではなく、 _lppTblData_を NULL に設定する必要があります。 
     
 ## <a name="return-value"></a>戻り値
 
 なし
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-MAPI が to で指された_lpAllocateBuffer_、 _lpAllocateMore_、および多くのメモリの割り当てと解放のための_lpFreeBuffer_具体的にはオブジェクトのインターフェイスを呼び出すときにクライアント アプリケーションで使用するメモリの割り当て関数を使用してください。[IMAPIProp::GetProps](imapiprop-getprops.md) 、 [IMAPITable::QueryRows](imapitable-queryrows.md)などです。 
+MAPI では、特に、 _lpAllocateBuffer_、 _lpAllocateMore_、および_lpfreebuffer_が指す関数を使用して、オブジェクトインターフェイスを呼び出すときに使用するメモリをクライアントアプリケーションに割り当てます。[imapiprop:: GetProps](imapiprop-getprops.md) and [IMAPITable:: QueryRows](imapitable-queryrows.md)など。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-ダイアログ リソースから読み取り可能なすべてのものを含みます。
+考えられるすべての情報は、ダイアログリソースから読み取られます。次のようになります。
   
-- ページのタイトルは、 _ulbLpszLabel_ 、 [DTBLPAGE](dtblpage.md)構造体のメンバー リソースのダイアログのタイトルから読み取る。 
+- ページのタイトル。これは、リソースのダイアログタイトルから読み取る[dtblpage](dtblpage.md)構造の_ulblpszlabel_メンバーです。 
     
-- すべてのコントロールのタイトルは、リソース内のコントロールのテキストから読み取るその他の制御構造の_ulbLpszLabel_メンバー。 
+- すべてのコントロールのタイトル。他のコントロール構造の_ulblpszlabel_メンバーは、リソースのコントロールテキストから読み取ります。 
     
- **BuildDisplayTable**は、 **BuildDisplayTable**の呼び出し側が動的にページまたはコントロールのタイトルを指定することはできませんが、ダイアログ リソースから情報を入力コントロールの構造体に渡されたものを上書きします。 呼び出し元を実行する必要がある**BuildDisplayTable**を持つことができる_lppTableData_で、テーブルのデータ オブジェクトを返すしでその行を変更します。または、ディスプレイ テーブル、テーブルのデータ オブジェクトに手動で構築されること代わりにことができます。 
+ **builddisplaytable**は、入力制御構造で渡されたものをダイアログリソースからの情報で上書きします。これは、 **builddisplaytable**の呼び出し元がページまたはコントロールのタイトルを動的に指定できないことを意味します。 **builddisplaytable**を持つことができるようにする必要がある呼び出し元は、 _lppTableData_でテーブルデータオブジェクトを返し、その中の行を変更することができます。または、代わりにテーブルデータオブジェクトに手動で表示テーブルを作成することもできます。 
   
-_LppTableData_が NULL に設定されていない場合、プロバイダーは、表示された表の処理が終了すると、テーブルのデータ オブジェクトを解放することを担当します。 
+_lppTableData_が NULL に設定されていない場合、プロバイダーは、表示テーブルの操作が完了したときに、テーブルデータオブジェクトを解放することを担当します。 
   
 

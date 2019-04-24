@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 581db5d9-35f7-43ad-aef3-a5d5da310150
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7176f3547c18ec72e4bfc0a749b3814d1e906b7b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: dbf9f9f73d9e3860b482f81fb942673e6d373267
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321554"
 ---
 # <a name="imapigetsessiongetmapisession"></a>IMAPIGetSession::GetMAPISession
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI サポート オブジェクトに関連付けられている MAPI セッションへのポインターを返します。
+mapi サポートオブジェクトに関連付けられている mapi セッションへのポインターを返します。
   
 ```cpp
 HRESULT GetMAPISession(
@@ -35,9 +35,9 @@ HRESULT GetMAPISession(
 
 ## <a name="parameters"></a>パラメーター
 
- _lppSession_
+ _lppsession_
   
-> [out]現在の MAPI セッションへのポインター。
+> 読み上げ現在の MAPI セッションへのポインター。
     
 ## <a name="see-also"></a>関連項目
 
@@ -46,5 +46,5 @@ HRESULT GetMAPISession(
 [IMAPIGetSession : IUnknown](imapigetsessioniunknown.md)
 
 
-[サポート オブジェクトの概要](support-object-overview.md)
+[サポートオブジェクトの概要](support-object-overview.md)
 

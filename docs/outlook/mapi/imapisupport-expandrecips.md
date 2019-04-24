@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 78edd549-d557-489a-85f5-adfb5c44a7d4
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 379fdc47f35fb183dd0bf551e421422abb106c0e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 105219fe430cd8746c3aa6cf5cd90629d5f72080
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316528"
 ---
 # <a name="imapisupportexpandrecips"></a>IMAPISupport::ExpandRecips
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージの受信者リスト、特定の配布リストの展開を完了します。
+特定の配布リストを展開し、メッセージの受信者の一覧を完成させる。
   
 ```cpp
 HRESULT ExpandRecips(
@@ -36,47 +36,47 @@ HRESULT ExpandRecips(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpMessage_
+ _lpmessage_
   
-> [in]処理する受信者のリストがあるメッセージへのポインター。
+> 順番処理する受信者リストがあるメッセージへのポインター。
     
- _lpulFlags_
+ _lアウトフラグ_
   
-> [out]発生する処理の種類を制御するフラグのビットマスクへのポインター。 次のフラグを設定することができます。
+> 読み上げ発生する処理の種類を制御するフラグのビットマスクへのポインター。 次のフラグを設定できます。
     
 NEEDS_PREPROCESSING 
   
-> メッセージが送信される前に前処理が必要に必要です。
+> メッセージを送信する前に前処理する必要があります。
     
 NEEDS_SPOOLER 
   
-> MAPI スプーラーではなく、トランスポート プロバイダーは、呼び出し元が密に結合されている) は、メッセージを送信する必要があります。
+> MAPI スプーラー (発信者が密接に結合されているトランスポートプロバイダーではない) は、メッセージを送信する必要があります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> メッセージの受信者の一覧が正常に処理されました。
+> メッセージの宛先リストが正常に処理されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-メッセージ ストア プロバイダーのサポート オブジェクトの**IMAPISupport::ExpandRecips**メソッドを実装します。 メッセージ ストア プロバイダーは、次のタスクを実行するための MAPI メッセージを表示するのには**ExpandRecips**を呼び出します。 
+**imapisupport:: ExpandRecips**メソッドは、メッセージストアプロバイダーサポートオブジェクトに実装されています。 メッセージストアプロバイダーは**ExpandRecips**を呼び出して、次のタスクを実行するように MAPI に通知します。 
   
-- そのコンポーネントの受信者に、特定の個人用配布リストを展開します。
+- 特定の個人用配布リストをコンポーネントの受信者に展開します。
     
 - 変更されたすべての表示名を元の名前に置き換えます。
     
-- 重複するエントリをマークします。
+- 重複しているエントリをマークします。
     
-- 1 回限りのすべてのアドレスを解決します。 
+- 1回限りのすべての住所を解決します。 
     
-- かどうか、メッセージの前処理を必要し場合は、NEEDS_PREPROCESSING に_lpulFlags_で指定されたフラグを設定を確認してください。 
+- メッセージにプリプロセスが必要かどうかを確認し、実行されている場合は、 _lNEEDS_PREPROCESSING フラグ_が指すフラグをに設定します。 
     
- **ExpandRecips**は、MAPIPDL のメッセージのアドレスの種類を持つすべての配布リストを展開します。 
+ **ExpandRecips**は、メッセージアドレスの種類が mapipdl であるすべての配布リストを展開します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-常に、メッセージの処理の一部として**ExpandRecips**を呼び出します。 [IMessage::SubmitMessage](imessage-submitmessage.md)メソッドの実装では、 **ExpandRecips** 1 つの最初の呼び出しへの呼び出しを確認します。 
+メッセージ処理の一部として**ExpandRecips**を常に呼び出します。 [IMessage:: submitmessage](imessage-submitmessage.md)メソッド実装の最初の呼び出しの1つを**ExpandRecips**に呼び出します。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -12,47 +12,47 @@ api_type:
 - HeaderDef
 ms.assetid: 8aabcec6-f735-41fe-a5f4-61d4635b2c58
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cf4fe916d93d330b43c0acd76be2db44687a4da7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 52d4bdbd7dbd44f2957b3efc20cba393dc0eb2f5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316360"
 ---
 # <a name="pidtagexplicitconversion-canonical-property"></a>PidTagExplicitConversion 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージの送信者が特定の受信者のメッセージのコンテンツ変換を要求したことを示します。
+メッセージの送信者が特定の受信者のメッセージコンテンツ変換を要求したことを示します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_EXPLICIT_CONVERSION  <br/> |
-|識別子:  <br/> |0x0C01  <br/> |
+|識別子:  <br/> |0x0c01  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |MAPI 受信者  <br/> |
+|エリア:  <br/> |MAPI 受信者  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

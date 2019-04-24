@@ -8,35 +8,35 @@ f1_keywords:
 - Vis_DSS.chm82251492
 localization_priority: Normal
 ms.assetid: 122c1d30-3cb9-7e7d-b4cc-e93ab8e4da4f
-description: アドオンまたはマクロで、Microsoft Visual Basic for Applications (VBA) プロジェクトを実行します。
-ms.openlocfilehash: 31ac32c742827311d8aaee4547024ad97d2c48e8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Microsoft Visual Basic for Applications (VBA) プロジェクトでアドオンまたはマクロを実行します。
+ms.openlocfilehash: 280f6eaf1e5db045d8c1d22965df00960d188112
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319062"
 ---
 # <a name="runaddon-function"></a>RUNADDON 関数
 
-アドオンまたはマクロで、Microsoft Visual Basic for Applications (VBA) プロジェクトを実行します。 
+Microsoft Visual Basic for Applications (VBA) プロジェクトでアドオンまたはマクロを実行します。 
   
 ## <a name="syntax"></a>構文
 
-RUNADDON (以下"*文字列*") 
+RUNADDON (" *string* ") 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _string_ <br/> |必須  <br/> |**文字列型 (String)** <br/> | VBA プロジェクト内の **Addons** コレクションまたはマクロ内のアドオンの名前を指定します。  <br/> |
+| _string_ <br/> |必須  <br/> |**String** <br/> | VBA プロジェクト内の **Addons** コレクションまたはマクロ内のアドオンの名前を指定します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-RUNADDON 関数呼び出しを含む図面のプロジェクト (または別のプロジェクトが参照されている場合) は_文字列_をという名前のマクロ (引数を持たないプロシージャ) を持たない場合、Microsoft Visio は、 _string_という名前のアドオンを実行します。 _String_という名前のアドオンが見つからない場合、Visio は何もし、エラーは報告されません。 ( **TraceFlags**プロパティはプロシージャを実行しようとしている Visio のアドオンを監視するのに使用ことができます)。 
+RUNADDON 関数呼び出しを含むドキュメントのプロジェクト (または、参照されている場合は別のプロジェクト) に、 _string_という名前のマクロ (引数を持たないプロシージャ) が含まれていないと、Microsoft Visio は、_文字列_という名前のアドオンを実行します。 指定した名前のアドイン__ が見つからない場合、Visio は何もエラーを報告しません。 **TraceFlags** プロパティを使用すると、Visio が実行しようとするプロシージャとアドオンを監視することができます。 
   
-標準モジュールでプロシージャを呼び出す、ときに、複数のモジュールが同じ名前のプロシージャを持つことができますので、プロシージャ (たとえば、 *moduleName.procName*) を含むモジュールの名前を持つ文字列を付けることをお勧めします。 
+標準モジュール内のプロシージャを呼び出すときは、複数のモジュールに同じ名前のプロシージャを含めることができるので、プロシージャを含むモジュール名 (たとえば、 *procName*) で文字列の先頭に指定することをお勧めします。 
   
-プロジェクト内のプロシージャを呼び出す以外の RUNADDON 関数呼び出しを含む図面のプロジェクトを使用して、構文*projName.modName.procName* (する必要がありますが明示的に設定する*projName*への参照、VBA プロジェクトに)。 
+RUNADDON 関数呼び出しを含む図面のプロジェクト以外のプロジェクトでプロシージャを呼び出すには、*から*を使用します (VBA プロジェクトの*projName*への参照を明示的に設定する必要があります)。 
   
 > [!NOTE]
 >  Visio 2002 以降、RUNADDON 関数は任意の VBA コードを含む文字列を実行できなくなりました。従来 RUNADDON 関数に渡されていたコードは、RUNADDON 関数から呼び出される図面の VBA プロジェクト内のプロシージャへ移動することができます。 
@@ -47,9 +47,9 @@ Visio でのコードの実行に関する詳細については、この『シ�
   
 ## <a name="example-1"></a>例 1
 
-RUNADDON("Calendar.exe")
+RUNADDON ("Calendar")
   
-Calendar.exe と呼ばれるアドオンを起動します。
+予定表 .exe というアドオンを起動します。
   
 ## <a name="example-2"></a>例 2
 
@@ -59,7 +59,7 @@ Array Shapes という名の (VSL 実装) アドオンを起動します。
   
 ## <a name="example-3"></a>例 3
 
-RUNADDON("ThisDocument.ReportStatistics")
+RUNADDON ("ThisDocument statistics")
   
 この関数呼び出しを含む図面プロジェクト内の **ThisDocument** モジュール内で ReportStatistics マクロを呼び出します。 
   
@@ -68,8 +68,8 @@ RUNADDON("ThisDocument.ReportStatistics")
   
 ## <a name="example-4"></a>例 4
 
-RUNADDON ("*します*。ReportStatistics」) 
+RUNADDON (" *ModuleName* .reportstatistics ") 
   
-ドキュメントを含むプロジェクトをこの関数の呼び出しで、*モジュール名*で ReportStatistics マクロを呼び出します。 
+この関数呼び出しを含むドキュメントプロジェクトの*ModuleName*内で reportstatistics マクロを呼び出します。 
   
 

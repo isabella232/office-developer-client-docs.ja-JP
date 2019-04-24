@@ -1,5 +1,5 @@
 ---
-title: '[ルーラーとグリッド] セクション'
+title: '[ &amp;ルーラーのグリッド] セクション'
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -9,19 +9,19 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: da8a6f95-86e0-fcf0-34b4-efa369569085
 description: ページのルーラーとグリッドに関する現在の設定を表示します。
-ms.openlocfilehash: f43323e0d189275fb7b01a7d2039ea99bc76e539
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ad878c0efb8af668236cccf292b74bed836913db
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32320140"
 ---
-# <a name="ruler-amp-grid-section"></a>[ルーラーとグリッド] セクション
+# <a name="ruler-amp-grid-section"></a>[ &amp;ルーラーのグリッド] セクション
 
 ページのルーラーとグリッドに関する現在の設定を表示します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このセクションでは、ページのシェイプ シート ウィンドウにのみ表示できるページ プロパティです。 設定に含まれるセルが対応して、**ルーラー&amp;グリッド**] ダイアログ ボックス ([**表示**] タブの [**表示/非表示**] グループで [ダイアログ ボックス起動ツール] をクリック) します。 
+このセクションは、ページの [シェイプシート] ウィンドウでのみ表示できるページ プロパティです。 このセルは、[ ** &amp;ルーラーグリッド**] ダイアログボックスの設定に対応しています ([**表示**] タブの [**表示/非**表示] グループで、ダイアログボックス起動ツールをクリックします)。 
   
 

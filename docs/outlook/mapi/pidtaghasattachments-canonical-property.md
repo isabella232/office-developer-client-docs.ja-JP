@@ -13,11 +13,11 @@ api_type:
 ms.assetid: fd236d74-2868-46a8-bb3d-17f8365931b6
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: aca9c9f9c22fc4057f1650d1342492d2ed34653c
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316129"
 ---
 # <a name="pidtaghasattachments-canonical-property"></a>PidTagHasAttachments 標準プロパティ
 
@@ -25,46 +25,46 @@ ms.locfileid: "25397605"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージには、少なくとも 1 つの添付ファイルが含まれている場合、TRUE が格納されます。 
+メッセージに添付ファイルが1つ以上含まれている場合は、TRUE が含まれます。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_HASATTACH  <br/> |
-|識別子:  <br/> |0x0E1B  <br/> |
+|識別子:  <br/> |0x0e1b  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-メッセージ ・ ストアでは、 **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) のプロパティの**MSGFLAG_HASATTACH**フラグのこのプロパティをコピーします。 クライアント アプリケーションは、メッセージ ビューアーで、メッセージの添付ファイルを並べ替えるには、 **PR_HASATTACH**を使用できます。 
+メッセージストアは、このプロパティを**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティの**MSGFLAG_HASATTACH**フラグからコピーします。 その後、クライアントアプリケーションは**PR_HASATTACH**を使用して、メッセージビューアーのメッセージの添付ファイルを並べ替えることができます。 
   
-[IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを使用してこのプロパティを更新する値です。 
+このプロパティの値は、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを使用して更新されます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
+> 電子メールメッセージオブジェクトに対して許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

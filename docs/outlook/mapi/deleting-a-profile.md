@@ -7,26 +7,26 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 4d01ab2e-40fd-409d-a69d-163b7d5462ca
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d13af3a2d0293641fd87d1065bceedfa4b62a3b4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 1cd87b92a9d289f06e466f4e44ce757c93074336
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316829"
 ---
 # <a name="deleting-a-profile"></a>プロファイルの削除
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
  **プロファイルを削除するには**
   
-- [IProfAdmin::DeleteProfile](iprofadmin-deleteprofile.md)を呼び出します。
+- Call [IProfAdmin::D eleteprofile](iprofadmin-deleteprofile.md)。
     
- **DeleteProfile**は、現在使用されている、それを削除することが無効になるまで待機する場合、プロファイルの削除をマークします。 プロファイル実際には消えませんがアクティブなセッションを持つすべてのクライアントが切断されるまで。 
+ **deleteprofile**プロファイルが現在使用されている場合は、削除対象としてマークします。削除するために、アクティブでなくなるまで待機します。 アクティブなセッションを持つすべてのクライアントが切断されるまで、プロファイルは実際には非表示になりません。 
   
- **DeleteProfile** 、 _ulContext_パラメーターを MSG_SERVICE_DELETE を設定したプロファイルにすべてのメッセージ サービスのエントリ ポイント関数が呼び出されます。 エントリ ポイント関数への呼び出しは、サービスは、プロファイルから物理的に削除される前に発生します。 
+ **deleteprofile**は、 _ulcontext_パラメーターを MSG_SERVICE_DELETE に設定して、プロファイル内のすべてのメッセージサービスのエントリポイント関数を呼び出します。 エントリポイント関数の呼び出しは、サービスがプロファイルから物理的に削除される前に発生します。 
   
 

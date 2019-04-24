@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9088da5f2deb4b3d4ccb1c2bc5409e0ff280ed24
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316092"
 ---
 # <a name="search-and-obtain-appointments-in-a-time-range"></a>時間範囲内の予定を検索、取得する
 

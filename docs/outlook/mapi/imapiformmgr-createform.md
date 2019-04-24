@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 7d4d50f8-3904-4e93-a535-ac7decceb1a3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e86c3d9678739c09024c0655cbbbb702749a53f0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c6e18ee9f8ea1d7dc6592d576c5a1163db526639
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321666"
 ---
 # <a name="imapiformmgrcreateform"></a>IMAPIFormMgr::CreateForm
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームのメッセージ クラスに基づく新しいメッセージを作成するフォームを開きます。
+フォームのメッセージクラスに基づいて新しいメッセージを作成するためのフォームを開きます。
   
 ```cpp
 HRESULT CreateForm(
@@ -39,31 +39,31 @@ HRESULT CreateForm(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulUIParam_
+ _uluiparam_
   
-> [in]フォームを開いたときに表示される進行状況のインジケーターの親ウィンドウへのハンドル。 _UlFlags_パラメーターで MAPI_DIALOG フラグが設定されていない場合、 _ulUIParam_パラメーターは無視されます。 
+> 順番フォームが開かれている間に表示される進行状況インジケーターの親ウィンドウへのハンドル。 _uluiparam_パラメーターは、 _ulflags_パラメーターで MAPI_DIALOG フラグが設定されていない場合は無視されます。 
     
  _ulFlags_
   
-> [in]フォームを開く方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番フォームを開く方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_DIALOG 
   
-> ステータスを指定するか、詳細についてはユーザーの入力を求めるのためのユーザー インターフェイスを表示します。 このフラグが設定されていない場合、ユーザー インターフェイスは表示されません。
+> 状態を提供するユーザーインターフェイスを表示します。詳細については、ユーザーに確認します。 このフラグが設定されていない場合、ユーザーインターフェイスは表示されません。
     
  _pfrminfoToActivate_
   
-> [in]フォームを開くために使用されるフォームの情報オブジェクトへのポインター。
+> 順番フォームを開くために使用されるフォーム情報オブジェクトへのポインター。
     
- _refiidToAsk_
+ _refiidtoask_
   
-> [in]作成されたフォーム オブジェクトを取得するインターフェイスのインターフェイス id (IID) へのポインター。 _RefiidToAsk_パラメーターを NULL にする必要がありますはできません。 
+> 順番作成された form オブジェクトに対して返されるインターフェイスのインターフェイス識別子 (IID) へのポインター。 _refiidtoask_パラメーターを NULL にすることはできません。 
     
  _ppvObj_
   
-> [out]返されたインターフェイスへのポインターへのポインター。
+> 読み上げ返されるインターフェイスへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -71,23 +71,23 @@ S_OK
     
 MAPI_E_NO_INTERFACE 
   
-> フォーム オブジェクトでは、要求されたインターフェイスはサポートされていません。
+> 要求されたインターフェイスは、form オブジェクトでサポートされていません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォームの閲覧者は、フォームのメッセージ クラスに基づく新しいメッセージを作成するフォームを開くに**IMAPIFormMgr::CreateForm**メソッドを呼び出します。 **CreateForm**は、情報の指定されたフォーム オブジェクトの説明に従って、そのフォームに対するフォーム サーバーのインスタンスを作成することでフォームを開きます。 必要な場合、 **CreateForm**は、フォームのサーバー コードをユーザーのディスクにダウンロードする[IMAPIFormMgr::PrepareForm](imapiformmgr-prepareform.md)メソッドを呼び出します。 
+フォーム閲覧者は、 **imapiformmgr:: CreateForm**メソッドを呼び出して、フォームのメッセージクラスに基づいて新しいメッセージを作成するためのフォームを開きます。 指定したフォーム情報オブジェクトで説明されているフォームのフォームサーバーのインスタンスを作成することによって、 **CreateForm**によってフォームが開きます。 必要に応じて、 **CreateForm**は[imapiformmgr::P repareform](imapiformmgr-prepareform.md)メソッドを呼び出して、フォームサーバーコードをユーザーのディスクにダウンロードします。 
   
-_PfrminfoToActivate_パラメーターは、正しく解決されているフォーム情報オブジェクト] をポイントする必要があります。 
+_pfrminfoToActivate_パラメーターは、正しく解決されたフォーム情報オブジェクトを指している必要があります。 
   
-フォームを開いた後に、呼び出し元のフォーム ビューアーは[IPersistMessage](ipersistmessageiunknown.md)インターフェイスを使用してメッセージを設定する必要があり、フォームのビュー コンテキストを必要に応じて設定できます。 詳細については、[フォームのサーバーを起動する](launching-a-form-server.md)を参照してください。 
+フォームを開いた後、呼び出し元フォームビューアーでは、 [IPersistMessage](ipersistmessageiunknown.md)インターフェイスを使用してメッセージを設定し、必要に応じてフォームのビューコンテキストを設定できます。 詳細については、「[フォームサーバーの起動](launching-a-form-server.md)」を参照してください。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIFormFunctions.cpp  <br/> |CreateAndDisplayNewMailInFolder  <br/> |MFCMAPI では、 **IMAPIFormMgr::CreateForm**メソッドを使用して、表示する前にフォームを作成します。  <br/> |
+|MAPIFormFunctions  <br/> |createanddisplaynewmailinfolder  <br/> |mfcmapi は、 **imapiformmgr:: CreateForm**メソッドを使用して、表示する前にフォームを作成します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -102,5 +102,5 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[フォーム サーバーの起動](launching-a-form-server.md)
+[フォームサーバーの起動](launching-a-form-server.md)
 

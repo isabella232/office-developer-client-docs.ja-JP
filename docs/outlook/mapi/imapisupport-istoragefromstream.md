@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: da9e8fdc-dfc5-4ecc-9f9b-b76921b92d7c
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 7200e7d226eb148fef094ab8540990644d2d4c99
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25392831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316588"
 ---
 # <a name="imapisupportistoragefromstream"></a>IMAPISupport::IStorageFromStream
 
@@ -25,7 +25,7 @@ ms.locfileid: "25392831"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ストリームにアクセスするためのストレージ オブジェクトを実装します。
+stream にアクセスするためのストレージオブジェクトを実装します。
   
 ```cpp
 HRESULT IStorageFromStream(
@@ -40,65 +40,65 @@ HRESULT IStorageFromStream(
 
  _lpUnkIn_
   
-> [in]ストリーム オブジェクトへのポインター。
+> 順番stream オブジェクトへのポインターを示します。
     
- _lpInterface_
+ _lpinterface_
   
-> [in]_LpUnkIn_で指定されたストリームにアクセスするために使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 次の値のいずれかが無効です: IID_IStream、IID_ILockBytes、または**null**ストリームにアクセスするのには、 [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)インターフェイスを使用することを示します。 
+> 順番_lpUnkIn_によって参照されるストリームへのアクセスに使用されるインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 次のいずれかの値が有効です: IID_IStream、IID_ILockBytes、または**null**。これは、このストリームにアクセスするために[IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)インターフェイスを使用する必要があることを示します。 
     
  _ulFlags_
   
-> [in]記憶域オブジェクトのストリーム オブジェクトを作成する方法を制御するフラグのビットマスクです。 既定では、読み取り専用アクセス権を持つストレージを作成し、ストリームは、ストレージ内の位置 0 から始まりです。 次のフラグを設定することができます。
+> 順番stream オブジェクトを基準にして、ストレージオブジェクトを作成する方法を制御するフラグのビットマスク。 既定では、記憶域は読み取り専用アクセスで作成され、ストリームの位置0から開始します。 次のフラグを設定できます。
     
 STGSTRM_CREATE 
   
-> 新しいストレージ オブジェクトは、ストリーム オブジェクトを作成してください。
+> stream オブジェクト用に新しいストレージオブジェクトを作成する必要があります。
     
 STGSTRM_CURRENT 
   
-> ストレージ オブジェクト、ストリームの現在位置で開始します。
+> ストレージオブジェクトは、ストリームの現在の位置から開始する必要があります。
     
 STGSTRM_MODIFY 
   
-> 呼び出し元に返された記憶域オブジェクトの読み取り/書き込み権限が必要です。
+> 呼び出し元は、返されたストレージオブジェクトに対する読み取り/書き込みアクセス許可を持っている必要があります。
     
 STGSTRM_RESET 
   
-> ストレージ オブジェクトは、位置 0 で開始します。
+> ストレージオブジェクトは、位置0から開始する必要があります。
     
- _lppStorageOut_
+ _lppstorageout_
   
-> [out]ストレージ オブジェクトへのポインターへのポインター。
+> 読み上げストレージオブジェクトへのポインターへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> ストレージ オブジェクトは正しく作成されました。
+> ストレージオブジェクトが正常に作成されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-サービス プロバイダーのサポートのすべてのオブジェクトの**IMAPISupport::IStorageFromStream**メソッドを実装します。 サービス プロバイダーは、特定のプロパティを開くときに使用するストレージ オブジェクトを作成するのには**IStorageFromStream**を呼び出します。 [IStorage](https://msdn.microsoft.com/library/aa380015%28VS.85%29.aspx)インターフェイスの独自の実装を持つサービス ・ プロバイダーは、 **IStorageFromStream**を呼び出す必要はありません。 
+**imapisupport:: istoragefromstream**メソッドは、すべてのサービスプロバイダーサポートオブジェクトに実装されています。 サービスプロバイダーは、 **istoragefromstream**を呼び出して、特定のプロパティを開くために使用するストレージオブジェクトを作成します。 [IStorage](https://msdn.microsoft.com/library/aa380015%28VS.85%29.aspx)インターフェイスを独自に実装しているサービスプロバイダーは、 **istoragefromstream**を呼び出す必要はありません。 
   
-**IStorageFromStream**によって作成されたストレージ オブジェクトは、ストレージが解放されるときにストリームの[IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)のメソッドの参照カウントと、デクリメントをインクリメントするにカウントを呼び出します。 
+**istoragefromstream**によって作成されたストレージオブジェクトは、ストリームの[IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出して、参照カウントをインクリメントし、ストレージが解放されたときにカウントをデクリメントします。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**IStorage**インターフェイスを使用してプロパティを開き、オブジェクトの 1 つの[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドが呼び出されると、次のタスクを実行します。 
+いずれかのオブジェクトの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドが呼び出されたときに、 **IStorage**インターフェイスを持つプロパティを開くには、次のタスクを実行します。 
   
 1. プロパティの読み取り/書き込み権限を持つ stream オブジェクトを開きます。
     
-2. プロパティ ストリームをストレージ オブジェクトとして内部的にマークします。
+2. プロパティストリームをストレージオブジェクトとして内部的にマークします。
     
-3. ストレージ ・ オブジェクトを生成するのには**IStorageFromStream**を呼び出します。 
+3. ストレージオブジェクトを生成するには、 **istoragefromstream**を呼び出します。 
     
-4. このストレージ オブジェクトへのポインターを返します。
+4. このストレージオブジェクトへのポインターを返します。
     
-ストレージ オブジェクトを使用する追加のインターフェイスを実装する場合、ストレージ オブジェクトをラップするオブジェクトを作成しより高いレベルの[IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)メソッドを実装します。 
+ストレージオブジェクトを使用する追加のインターフェイスを実装する場合は、ストレージオブジェクトをラップするオブジェクトを作成し、より高いレベルの[IUnknown:: QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)メソッドを実装します。 
   
-**IStorage**で作成された場合は、 **IStream**インターフェイスを使用して開かれるプロパティを許可しません。 逆に、 **IStorage**インターフェイスを使用して開く**IStream**で作成されたプロパティを許可しません。 
+プロパティが**IStorage**を使用して作成された場合、 **IStream**インターフェイスで開くことを許可しません。 反対に、 **IStream**を使用して作成された場合、 **IStorage**インターフェイスでプロパティを開かないようにします。 
   
-1 つの例外を除き、 **IStreamDocfile**インターフェイスを使用して、1 つのコンテナーから別のストレージ オブジェクトをストリーム配信してもかまいませんが、メソッドでは、 **OpenProperty**の _、IID_IStreamDocfile のインタ フェース識別子を渡す必要があります lpInterface_パラメーター。 
+1つの例外を除き、 **IStreamDocfile**インターフェイスを使用して、あるコンテナーから別のコンテナーに格納オブジェクトをストリームすることはできますが、 **openproperty**メソッドの lpinterface で IID_IStreamDocfile インターフェイス識別子を渡す必要があります。 __ パラメーター。 
   
 ## <a name="see-also"></a>関連項目
 
