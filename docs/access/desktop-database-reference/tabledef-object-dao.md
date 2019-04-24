@@ -8,11 +8,11 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 6e1182427c688e7c8b5ca53c1f5f4bb208b3609a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308373"
 ---
 # <a name="tabledef-object-dao"></a>TableDef オブジェクト (DAO)
 
@@ -32,7 +32,7 @@ ms.locfileid: "28726345"
 
 - **OpenRecordset** メソッドを使用して、テーブル定義に基づいて、テーブル、ダイナセット、ダイナミック、スナップショット、転送専用の種類の **Recordset** オブジェクトを作成します。
 
-ベース テーブルの場合、**RecordCount** プロパティには、指定されたデータベース テーブルのレコード数が含まれます。 リンク テーブルの場合、**RecordCount** プロパティ設定値は必ず –1 です。
+ベース テーブルの場合、**RecordCount** プロパティには、指定したデータベース テーブルのレコード数が含まれます。リンク テーブルの場合、**RecordCount** プロパティ設定は常に -1 です。
 
 新しい **TableDef** オブジェクトを作成するには、**[CreateTableDef](database-createtabledef-method-dao.md)** メソッドを使用します。
 

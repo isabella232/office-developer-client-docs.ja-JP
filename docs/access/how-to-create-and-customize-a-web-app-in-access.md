@@ -7,11 +7,11 @@ ms.topic: reference
 ms.assetid: 628745f4-82e9-4838-9726-6f3e506a654f
 localization_priority: Priority
 ms.openlocfilehash: d7d27e98189a5b6784e4db48c81a545b85f01fc1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306129"
 ---
 # <a name="create-and-customize-a-web-app-in-access"></a>Access で Web アプリを作成してカスタマイズする
 

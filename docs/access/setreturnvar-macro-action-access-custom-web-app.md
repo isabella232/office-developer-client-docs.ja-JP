@@ -1,5 +1,5 @@
 ---
-title: SetReturnVar マクロのアクション (カスタム web アプリケーションのアクセス)
+title: setreturnvar マクロアクション (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,37 +7,37 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 57965c84-7a52-4d7c-9c7f-be3d4570576d
 description: SetReturnVar/戻り変数の設定アクションは、戻り変数を作成し、それを特定の値に設定します。
-ms.openlocfilehash: d0638c8f1e3b184a7c685ad8649c8923bdfd8f50
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 29445f5021bed99fe45cee1d34457f1f91ca417d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310948"
 ---
-# <a name="setreturnvar-macro-action-access-custom-web-app"></a>SetReturnVar マクロのアクション (カスタム web アプリケーションのアクセス)
+# <a name="setreturnvar-macro-action-access-custom-web-app"></a>setreturnvar マクロアクション (Access カスタム web アプリ)
 
 " **SetReturnVar/戻り変数の設定** " アクションは、戻り変数を作成し、それを特定の値に設定します。 
   
 > [!IMPORTANT]
-> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 > [!NOTE]
-> [!メモ] " **SetReturnVar/戻り変数の設定** " アクションは、データ マクロでのみ使用できます。 
+> "**SetReturnVar**/戻り変数の設定" アクションは、データ マクロでのみ使用できます。 
   
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
-" **SetReturnVar/戻り変数の設定** " アクションの引数は次のとおりです。 
+"**SetReturnVar**/戻り変数の設定" アクションの引数は次のとおりです。 
   
 |**引数名**|**必須**|**説明**|
 |:-----|:-----|:-----|
 | _名前_ <br/> |はい  <br/> |変数の名前を指定する文字列。  <br/> |
-| _Expression_ <br/> |はい  <br/> |この一時変数の値を設定に使用する式を指定します。 式の前に等号 (=) を付けないでください。 この引数を設定するのには、**式ビルダー**を使用するのには [**ビルド**] ボタンをクリックすることができます。  <br/> |
+| _Expression_ <br/> |はい  <br/> |An expression that will be used to set the value for this temporary variable. Do not precede the expression with the equal sign (=). You can click the **Build** button to use the **Expression Builder** to set this argument.  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-" **SetReturnVar/戻り変数の設定** " アクションを使用して、 **ReturnVar** を作成します。この変数は、" **RunDataMacro/データマクロの実行** " アクションを使用してデータ マクロを呼び出すマクロが使用できます。 
+"**SetReturnVar**/戻り変数の設定" アクションを使用して、変数の **ReturnVar** を作成できます。この変数を、"**RunDataMacro**/データマクロの実行" アクションを使用してデータ マクロを呼び出すマクロで使用できます。 
   
-**SetReturnVar**アクションによって、 **ReturnVar**が作成されると、呼び出し元のマクロで使用できます、式。 たとえば、 **UpdateSuccess** という名前の **ReturnVar** を作成した場合は、次の構文を使用して変数を使用できます。
+**returnvar**は、 **setreturnvar**アクションによって作成された後、呼び出し元のマクロが式で使用できます。 たとえば、 **UpdateSuccess** という名前の **ReturnVar** を作成した場合は、次の構文を使用して変数を使用できます。
   
 `=[ReturnVars]![UpdateSuccess]`
 

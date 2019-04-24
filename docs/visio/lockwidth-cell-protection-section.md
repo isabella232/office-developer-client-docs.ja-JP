@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: fef022ea-38ab-2b66-60c8-b94a6b0bdfbf
 description: 図形の幅をロックします。ロックすると、図形のサイズを変更しても幅は変更されません。
-ms.openlocfilehash: abdcc0d5285e98e5856524925a41c4f72ee7f6ab
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 84c89b5f264c00d6fe5f95cb27eae74b91b88dc3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314834"
 ---
-# <a name="lockwidth-cell-protection-section"></a>[LockWidth] セル ([保護] セクション)
+# <a name="lockwidth-cell-protection-section"></a>[LockWidth] セル ([Protection] セクション)
 
 図形の幅をロックします。ロックすると、図形のサイズを変更しても幅は変更されません。
   
@@ -25,13 +25,13 @@ ms.locfileid: "19805785"
 | TRUE  <br/> | 幅をロックします。  <br/> |
 | FALSE  <br/> | 幅をロックしません。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LockWidth] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [Lockwidth]  <br/> |
+| セル名:  <br/> | [lockwidth]  <br/> |
    
 プログラムから、インデックスによって [LockWidth] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

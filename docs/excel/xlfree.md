@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 8ce2eef2-0138-495d-b6cb-bbb727a3cda4
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 2dd61ee5cd0e2e671cc47425689287b8a437732f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: de1c75ad65acacd44644e9bfb111b30abd0a578e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310221"
 ---
 # <a name="xlfree"></a>xlFree
 

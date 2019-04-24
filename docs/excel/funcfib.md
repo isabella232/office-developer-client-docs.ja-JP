@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 6a719f04-b2d1-4f87-a227-be561cbd3e49
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 8d1c97ea57e968aaedffca6b37ded3d875e87413
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: fb8f0c12c27fb2c95007eb5006c1d8b90970f3ad
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310837"
 ---
 # <a name="funcfib"></a>FuncFib
 

@@ -11,18 +11,18 @@ keywords:
 localization_priority: Normal
 ms.assetid: e3e8f91b-cc31-4f09-9941-f950ae96820a
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 14515cc262ea398a9f200c0de3a1f6b64c758b3d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 3c7fc4f6b6fc7179c1ca84043895273b2781f8b5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310214"
 ---
 # <a name="xldefinebinaryname"></a>xlDefineBinaryName
 
  **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-**xltypeBigData** **XLOPER**/ **XLOPER12** の永続ストレージを割り当てるために使用します。 定義されているバイナリ名が含まれるデータはブックに保存され、いつでも名前でアクセスできます。 詳細については、「[Excel XLL 開発での既知の問題](known-issues-in-excel-xll-development.md)」の「バイナリ名のスコープ制限」を参照してください。
+Used to allocate persistent storage for an **xltypeBigData** **XLOPER**/ **XLOPER12**. Data with a defined binary name is saved with the workbook, and can be accessed by name at any time. For more information, see "Binary Name Scope Limitation" in [Known Issues in Excel XLL Development](known-issues-in-excel-xll-development.md).
   
 ```cs
 Excel12(xlDefineBinaryName, 0, 2, LPXLOPER12 pxName, LPXLOPER12 pxData);

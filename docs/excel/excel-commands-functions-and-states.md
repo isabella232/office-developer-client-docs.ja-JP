@@ -1,5 +1,5 @@
 ---
-title: Excel のコマンド、関数、および状態
+title: Excel �̃R�}���h�A�֐��A����я��
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -10,11 +10,11 @@ ms.assetid: 20f19aa4-f184-47be-bcdd-7ded78778974
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 localization_priority: Priority
 ms.openlocfilehash: c941ba7445f1f0598bf044b5f177ad576df0137c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310970"
 ---
 # <a name="excel-commands-functions-and-states"></a>Excel のコマンド、関数、および状態
 
@@ -78,7 +78,7 @@ Excel マクロシート関数には、次の事項が当てはまります。
     
 - Excel 2007 以降では、スレッド セーフとみなされない。
     
-どのように Excel でユーザー定義関数 (UDF) を操作するか、関数のどんな動作を許可するか、どのように関数を再計算するかは、関数を登録するときにすべて定義します。 関数がワークシート関数として登録されているにもかかわらず、マクロシート関数だけが実行できる操作を実行しようとすると、その操作は失敗します。 Excel 2007 以降、スレッド セーフとして登録されているワークシート関数がマクロ シート関数を呼び出そうとする場合にも、操作が失敗します。
+How Excel treats a user-defined function (UDF), what it permits the function to do, and how it recalculates the function are all determined when you register the function. If a function is registered as a worksheet function but tries to do something that only a macro-sheet function can do, the operation fails. Starting in Excel 2007, if a worksheet function registered as thread safe tries to call a macro sheet function, again, the operation fails.
   
 Excel は、Microsoft Visual Basic for Applications (VBA) の UDF をマクロ シート等価の関数として扱います。それらの UDF はワークスペース情報と計算されないセルの値にアクセスでき、Excel 2007 以降、スレッド セーフとはみなされません。
   

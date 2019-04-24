@@ -10,11 +10,11 @@ ms.assetid: 6e4bf1f3-8eca-4be5-9632-75355ac31d61
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 localization_priority: Priority
 ms.openlocfilehash: d1332b0dffc052404c75c4ec51d94879457c3da0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304187"
 ---
 # <a name="accessing-xll-code-in-excel"></a>Excel での XLL コードへのアクセス
 
@@ -73,7 +73,7 @@ XLL ワークシート関数とマクロシート関数を登録すると、組�
 C API 関数 **xlfCaller** を使用すると、関数内の呼び出し元セルへの参照またはセルの範囲を取得できます。関数がセルの条件付き書式の式から呼び出された場合、関連する 1 つまたは複数のセルへの参照が返されます。したがって、セルの数式に XLL 関数が含まれているとは限りません。関数が VBA ユーザー定義関数 (UDF) から呼び出された場合、**xlfCaller** は VBA 関数を呼び出したセルのアドレスを再び返します。詳細については、「[xlfCaller](xlfcaller.md)」を参照してください。
   
 > [!NOTE]
-> また Excel は、[**関数貼り付けウィザード**] および [**置換**] ダイアログ ボックスから XLL 関数コードを呼び出します。 **[関数引数貼り付け]** ダイアログ ボックスではコードの通常の実行を制限する必要がある場合があります。特に、関数の実行に長時間かかる可能性がある場合にはそう言えます。 関数がこれらのいずれかのダイアログ ボックスから呼び出されているかどうかを調べるには、そのいずれかが前面のウィンドウであるかどうか、前面のウィンドウであればそのどれであるかを判別するコードを、すべての開いているウィンドウで繰り返して、プロジェクト内で実装する必要があります。 
+> Excel also calls XLL function code from the **Paste Function Wizard** and **Replace** dialog boxes. You might need to restrict your code's normal running in the case of the **Paste Function Arguments** dialog box, especially where your function can take a long time to execute. To detect if your function is being called from either of these dialog boxes, you must implement some code in your project that iterates through all the open windows to determine if the front window is one of these dialog boxes, and, if so, which one. 
   
 ## <a name="calling-xll-commands-directly-from-excel"></a>Excel から直接 XLL コマンドを呼び出す
 

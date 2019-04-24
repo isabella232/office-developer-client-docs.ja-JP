@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: eba0e7f2-03c1-4713-aa36-3d0b398cd197
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a6eba20fb346f53052808abf8fcae8993d423d34
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 2f0f1fb94ea36512bbc40df8a4877e89d2613a25
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309983"
 ---
 # <a name="imsgserviceadminrenamemsgservice"></a>IMsgServiceAdmin::RenameMsgService
 
@@ -25,7 +25,7 @@ ms.locfileid: "22589561"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-現在は廃止されています。 メッセージ サービスに新しい名前が割り当てられます。 
+現在は廃止されています。 メッセージサービスに新しい名前を割り当てます。 
   
 ```cpp
 HRESULT RenameMsgService(
@@ -37,27 +37,27 @@ HRESULT RenameMsgService(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpUID_
+ _lpuid_
   
-> [in]名前を変更するメッセージ サービスの一意の識別子を格納する[MAPIUID](mapiuid.md)構造体へのポインター。 
+> 順番名前を変更するメッセージサービスの一意の識別子を含む[MAPIUID](mapiuid.md)構造体へのポインター。 
     
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lpszDisplayName_
+ _lpszdisplayname_
   
-> [in]メッセージ サービスの新しい名前へのポインター。
+> 順番メッセージサービスの新しい名前へのポインター。
     
 ## <a name="return-value"></a>戻り値
 
 MAPI_E_NO_SUPPORT 
   
-> MAPI では、このメッセージ サービスの名前を変更することはできません。 **RenameMsgService**は、常にこの値を返します。 
+> MAPI では、このメッセージサービスの名前変更はサポートされていません。 **RenameMsgService**は、常にこの値を返します。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-メッセージ サービスに新しい名前を割り当てるには、クライアントは、メッセージ サービスの**PR_SERVICE_NAME** ([PidTagServiceName](pidtagservicename-canonical-property.md)) プロパティを使用してください。 メッセージ サービスのサービス プロバイダーの名前は、それらのプロパティの**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) に格納されます。 
+メッセージサービスに新しい名前を割り当てるには、クライアントでメッセージサービスの**PR_SERVICE_NAME** ([PidTagServiceName](pidtagservicename-canonical-property.md)) プロパティを使用する必要があります。 メッセージサービスのサービスプロバイダーの名前は、 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティに格納されます。 
   
 ## <a name="see-also"></a>関連項目
 

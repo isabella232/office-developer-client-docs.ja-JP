@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 064dd5ca-0108-4045-b17b-0bb29cb93346
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5d8e91490cc39c3f259d35a923bb3bcbb2bf6011
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fcaebb96d4dca4e6bfbee7491dabeafcbd93a2eb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309976"
 ---
 # <a name="imsgserviceadmingetmsgservicetable"></a>IMsgServiceAdmin::GetMsgServiceTable
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ サービス テーブルで、[プロファイルのメッセージ サービスの一覧へのアクセスを提供します。
+メッセージサービステーブル (プロファイル内のメッセージサービスのリスト) へのアクセスを提供します。
   
 ```cpp
 HRESULT GetMsgServiceTable(
@@ -34,35 +34,35 @@ HRESULT GetMsgServiceTable(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]常に NULL を返します。
+> 順番常に NULL。
     
- _lppTable_
+ _lpptable_
   
-> [out]メッセージ サービス テーブルへのポインターへのポインター。
+> 読み上げメッセージサービステーブルへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> メッセージ サービス テーブルは正常に返されました。
+> メッセージサービステーブルが正常に返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMsgServiceAdmin::GetMsgServiceTable**メソッドは、メッセージ サービス テーブルで、セッション ・ プロファイルに現在インストールされているメッセージ サービスを一覧表示する MAPI を保持するテーブルへのアクセスを提供します。 メッセージ サービス テーブル内の列の一覧については、[メッセージ サービス テーブル](message-service-tables.md)を参照してください。
+**IMsgServiceAdmin:: getmsgservicetable**メソッドは、メッセージサービステーブルへのアクセスを提供します。これは、MAPI が管理するテーブルで、セッションプロファイルに現在インストールされているメッセージサービスを一覧表示します。 メッセージサービステーブルの列の完全な一覧については、「 [message service table](message-service-tables.md)」を参照してください。
   
-メッセージ サービス テーブルは静的です。 クライアント アクセスが許可されたことを後、それ以降のメッセージ サービスの追加または削除しないに影響します。 現在のプロファイルでサービスのメッセージがない場合、 **GetMsgServiceTable**は、0 個の行を持つテーブルを返します。 
+メッセージサービステーブルは静的です。 クライアントがアクセス権を付与されると、それ以降のメッセージサービスの追加または削除によって影響を受けることはありません。 現在のプロファイルにメッセージサービスがない場合、 **getmsgservicetable**は0行のテーブルを返します。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MsgServiceTableDlg.cpp  <br/> |CMsgServiceTableDlg::OnRefreshView  <br/> |MFCMAPI では、 **IMsgServiceAdmin::GetMsgServiceTable**メソッドを使用して、ビューに表示するプロファイル内のサービスのテーブルをロードします。  <br/> |
+|MsgServiceTableDlg  <br/> |CMsgServiceTableDlg:: onrefreshview  <br/> |mfcmapi は、 **IMsgServiceAdmin:: getmsgservicetable**メソッドを使用して、ビューに表示するサービスの表をプロファイルに読み込みます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

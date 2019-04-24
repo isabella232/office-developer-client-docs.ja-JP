@@ -12,12 +12,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 0cf1fa58-416f-4692-a2e3-422473c19492
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 30874e7b918d8cd780bef60b4b02de1319f0f9ab
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: c8c917f0004fe091413ea670f1cc562f1d701fa0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310354"
 ---
 # <a name="tempbooltempbool12"></a>TempBool/TempBool12
 

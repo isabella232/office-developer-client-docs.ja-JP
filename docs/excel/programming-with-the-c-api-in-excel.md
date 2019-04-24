@@ -1,5 +1,5 @@
 ---
-title: Excel での C API を使用したプログラミング
+title: Excel �ł� C API ��g�p�����v���O���~���O
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -10,11 +10,11 @@ ms.assetid: 142bc0ce-7d16-4b69-9799-ce6558da2def
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 localization_priority: Priority
 ms.openlocfilehash: d07217fe410fedb18da4600ab07078d1aaf5d083
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310467"
 ---
 # <a name="programming-with-the-c-api-in-excel"></a>Excel での C API を使用したプログラミング
 
@@ -38,7 +38,7 @@ Excel には、インターフェイスを使用して Excel と接続するア�
     
 ## <a name="when-to-use-the-c-api"></a>C API を使用する場合
 
-XLL を記述し、C API を使用する主な理由は、高パフォーマンスなワークシート関数を作成するためです。 XLL 関数は、よく "ユーザー定義" 関数と呼ばれますが、ほとんどのユーザーにとって XLL は時間をかけて記述に必要な理解とスキルを得る必要があるため、実用的とはいえない技術になっています。 それにもかかわらず、高パフォーマンスの関数のアプリケーション (Excel 2013 では強力なサーバー リソースに対するマルチ スレッドのインターフェイスを記述する機能) を考えると、XLL は Excel の機能拡張の非常に重要な部分です。 
+The primary reason for writing XLLs and using the C API is to create high-performance worksheet functions. Although XLL functions are frequently referred to as user-defined functions, the investment in time to obtain the understanding and skills that are required to write XLLs make this a technology impractical for most users. Nevertheless, the applications of high-performance functions—and, in Excel 2013, the ability to write multithreaded interfaces to powerful server resources—make this a very important part of Excel extensibility. 
   
 Excel 2007 で導入された C API の改訂は、ユーザー インターフェイスなどの機能ではなく、主に高性能な計算に関連する側面に関係しています。
   

@@ -1,5 +1,5 @@
 ---
-title: 時間のかかる操作でユーザーによる中断を許可する
+title: "���Ԃ̂����鑀��Ń��[�U�[�ɂ�钆�f����\x82���"
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -9,18 +9,18 @@ keywords:
 localization_priority: Normal
 ms.assetid: 0e3df597-0aa6-497f-bc52-58c7dc064538
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: b13f9b9a8c0e5621b25df13537632bdbe5dfc29e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 650af14e4e97ebd2642a4442a87965f313d3b556
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310382"
 ---
 # <a name="permitting-user-breaks-in-lengthy-operations"></a>時間のかかる操作でユーザーによる中断を許可する
 
  **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-Windows ではプリエンプティブ マルチタスキングを使用しますが、実行に時間のかかる関数やコマンドについては、オペレーティング システムのために時間を確保し、同時実行タスクをもう一度計画できるようにすることをお勧めします。 ネイティブ Windows 呼び出しを使用している場合は、Sleep 関数を使って実行できます。 C API を使用している場合は、[xlAbort 関数](xlabort.md) を使って実行できます。これは、一時的なプロセッサを生成するだけではなく、ユーザーがキャンセル キー **Esc** を押したかどうかも確認します。
+Even though Windows uses preemptive multitasking, where your functions or commands can take a long time to execute, it is good practice to yield some time to the operating system now and again to help it schedule concurrent tasks. Using native Windows calls, you can do this by using the sleep function. Using the C API, you can do it by using the [xlAbort function](xlabort.md), which not only yields the processor for an instant, but also checks to see if the user has pressed the cancel key, **ESC**.
   
 その結果、**xlAbort** 関数により、ユーザーがプロセスを終了し、必要なクリーンアップを実行して、Excel にコントロールを返すかどうかをコードで確認できます。また、中断状態を解除することができます。これにより、ユーザーがコマンドを終了するかどうかを確認するダイアログ ボックスをコマンドで表示できます。コマンドを終了しない場合は、引数 *FALSE* で **xlAbort** 関数を呼び出して、中断を解除できます (既定の引数は *TRUE* です。これは状態を確認するだけで解除しません。)。 
   

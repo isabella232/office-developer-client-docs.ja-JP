@@ -8,28 +8,28 @@ api_type:
 - COM
 ms.assetid: 8e4ce129-137d-4618-80a6-88781a578d01
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 6781209cd1bf87f4becf1893b7cba5618549fbce
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 95a2b7b9bac11404817fb6848d58c45251c141f2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309675"
 ---
 # <a name="inbox-and-outbox-folders-in-message-stores"></a>��M�g���C ���b�Z�[�W �X�g�A��̃t�H���_�[�����M�g���C
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-既定のメッセージ ストアには、メッセージ ストア プロバイダーは受信トレイを実装し、フォルダーを [送信トレイ] する必要があります。 通常メッセージ ストアの IPM サブツリーに格納されます。 これらのフォルダーは、特別な特別な機能のこれらの必要はありませんがメッセージを配信してから送信されたフォルダーとして指定されます。 クライアント アプリケーションとの間、MAPI スプーラーでは、メッセージ ストア プロバイダーの定義済みの呼び出しシーケンスを使用してメッセージの送受信が行われます。 単なるものの中にメッセージを保持するために使用されているフォルダー、受信トレイ、送信トレイ フォルダーのシーケンスを呼び出します。 重要なポイントはフォルダーは、特別なまたは受信トレイと送信トレイはその名前が偶数ではありません。重要なポイントは、メッセージ ストア プロバイダーは、そのサポートの一環としてメッセージを送受信するためです。
+To be the default message store, a message store provider must implement Inbox and Outbox folders. They are typically stored in the IPM subtree of a message store. These folders are special in that they are designated as the folders that messages are delivered to and sent from, but no special functionality is required of them. Sending and receiving messages happens by way of defined call sequences between client applications, the MAPI spooler, and the message store provider. The Inbox and Outbox folders are simply folders that are used to hold messages during those call sequences. The important point is not that the folders are special, or even that they are named Inbox and Outbox; the important point is that the message store provider uses them as part of its support for sending and receiving messages.
   
-メッセージの受信をサポートするには、メッセージ ストア プロバイダーは、 [IMsgStore::GetReceiveFolderTable](imsgstore-getreceivefoldertable.md)メソッドと[IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md)メソッドを実装しなければなりません。 詳細については、[メッセージ ストア プロバイダーを使用してメッセージの受信](receiving-messages-by-using-message-store-providers.md)を参照してください。
+To support receiving messages, the message store provider must implement the [IMsgStore::GetReceiveFolderTable](imsgstore-getreceivefoldertable.md) and [IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md) methods. For more information, see [Receiving Messages by Using Message Store Providers](receiving-messages-by-using-message-store-providers.md).
   
-メッセージの送信をサポートするために、メッセージ ストア プロバイダーはメッセージの送信処理中に、MAPI スプーラーによって使用される他の方法だけでなく、 [IMsgStore::GetOutgoingQueue](imsgstore-getoutgoingqueue.md)メソッドをサポートしなければなりません。 メッセージ ストアの送信キューをメッセージ ストアのフォルダー ツリーで任意の場所の実際のフォルダーに対応する必要はありません。 ただし、いずれかを使用する必要がある場合、[送信トレイ] フォルダーで、メッセージの発信キューの内容を表示するのには、メッセージ ストア プロバイダーの慣習です。 クライアント アプリケーションにメッセージ ・ ストア内の他のすべてのフォルダーと、[送信トレイ] フォルダーを表示することができますので、ユーザーに送信すると、メッセージの状態を示すために便利な方法は、これを行います。 詳細については、[メッセージ ストア プロバイダーを使用してメッセージの送信](sending-messages-by-using-message-store-providers.md)を参照してください。
+To support sending messages, the message store provider must support the [IMsgStore::GetOutgoingQueue](imsgstore-getoutgoingqueue.md) method, in addition to the other methods used by the MAPI spooler during the message sending process. A message store's outgoing queue does not have to correspond to an actual folder anywhere in the message store's folder tree. However, it is customary for a message store provider to show the contents of the outgoing message queue in the Outbox folder, if there is one. Doing so gives client applications a convenient way to indicate the status of messages that the user has sent, because an Outbox folder can be displayed along with all the other folders in a message store. For more information, see [Sending Messages by Using Message Store Providers](sending-messages-by-using-message-store-providers.md).
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[���[���̕ۑ��ꏊ�Ńt�H���_�[��������܂��B](implementing-folders-in-message-stores.md)
+[メッセージ ストアのフォルダーの実装](implementing-folders-in-message-stores.md)
 

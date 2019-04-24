@@ -9,12 +9,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: f11552e1-b8ea-4933-b6fc-c452b07eb59d
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: e80b667296af59f4d3f18238cd498830fcdc35a4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 64e3933ec25f0771db5bd36bbf57f3f259cdc8a1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "19798948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310270"
 ---
 # <a name="whats-new-in-the-c-api-for-excel"></a>Excel 用 C API の新機能
 

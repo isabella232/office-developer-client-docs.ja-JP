@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 6cc01075-7221-488e-870f-433da62930e6
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: ae6d8b2f0b95641678947e9bd75daa2237b080b1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 6122e4b99c69cd1bd878c9267ff85f59d0f61998
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310851"
 ---
 # <a name="fshowdialog"></a>fShowDialog
 

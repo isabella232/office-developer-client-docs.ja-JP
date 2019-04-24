@@ -1,5 +1,5 @@
 ---
-title: C++ でオブジェクトを実装します。
+title: C++ でのオブジェクトの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,21 +7,21 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: d1a050ff-3cf9-4bf7-812d-b7c1b31056e7
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 4c233f9855674080496b2e54ba9548a53738ead8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 89247ca1b263d6f06af73f1ffa14709a2aff23de
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310151"
 ---
-# <a name="implementing-objects-in-c"></a>C++ でオブジェクトを実装します。
+# <a name="implementing-objects-in-c"></a>C++ でのオブジェクトの実装
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-C++ クライアントおよびサービス ・ プロバイダーは、それらを実装しているインターフェイスから継承するクラスを作成することで MAPI オブジェクトを定義します。 クラスのデストラクターとコンス トラクターは、インターフェイスのメソッドはパブリックで。 クラスは、追加のメソッドを持っている場合、パブリックまたはプライベートの実装によって、できます。 すべてのデータ メンバーは、プライベートです。 
+C++ クライアントおよびサービスプロバイダーは、実装するインターフェイスから継承するクラスを作成することによって、MAPI オブジェクトを定義します。 各インターフェイスメソッドは、クラスのコンストラクターおよびデストラクターとして、public になります。 クラスに追加のメソッドがある場合は、実装に応じてパブリックまたはプライベートにすることができます。 すべてのデータメンバーがプライベートである。 
   
-次のコード例では、C++ の状態オブジェクトを定義する方法を示します。 `CMyMAPIObject`クラスから継承、 [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)インタ フェースです。 この例で使用されているマクロの多くは、OLE ヘッダー ファイル Compobj.h で定義されます。 クラスの最初のメンバーは、継承の順序で継承されたインターフェイスのメソッドの後に、基本インターフェイスのメソッドです。 追加のメソッド、コンス トラクター、デストラクター、およびデータ メンバーには次のインターフェイス定義です。 
+次のコード例は、C++ status オブジェクトを定義する方法を示しています。 クラス`CMyMAPIObject`は[imapistatus: imapistatus](imapistatusimapiprop.md)インターフェイスから継承します。 この例で使用されているマクロの多くは、OLE ヘッダーファイル compobj で定義されています。 クラスの最初のメンバーは、基本インターフェイスのメソッドです。その後に、継承されたインターフェイスのメソッドが継承順に続きます。 インターフェイス定義の後には、追加のメソッド、コンストラクターとデストラクター、データメンバーがあります。 
   
 ```cpp
 class  CMyMAPIObject : public IMAPIStatus
@@ -48,7 +48,7 @@ private :
  
 ```
 
-インスタンスを使用して、`CMyMAPIObject`クラス、C++ クライアントまたはサービス プロバイダーのメソッドのいずれかの呼び出しを行う次のようにします。 
+`CMyMAPIObject`クラスのインスタンスを使用するために、C++ クライアントまたはサービスプロバイダーは、次のように、そのメソッドのいずれかに呼び出しを行います。 
   
 ```cpp
 lpMyObj->ValidateState(ulUIParam, ulFlags);

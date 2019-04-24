@@ -8,33 +8,33 @@ f1_keywords:
 - Vis_DSS.chm82251585
 localization_priority: Normal
 ms.assetid: ce1028d6-0293-e8dd-b79d-3f02c50f6250
-description: 変換先の座標系の親座標に変換した点を返します。
-ms.openlocfilehash: 7d882ec34de93db2828fc751f99d87fc3e961d64
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 変換後の座標系の親座標の点を返します。
+ms.openlocfilehash: 65a08837d7d026836ebc8d5e35938ea049d005e8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314848"
 ---
 # <a name="loctopar-function"></a>LOCTOPAR 関数
 
-変換先の座標系の親座標に変換した点を返します。
+変換後の座標系の親座標の点を返します。
   
 ## <a name="syntax"></a>構文
 
-LOCTOPAR (* * *srcPoint* * *、* * *srcRef* * *、* * *dstRef* * *) 
+loctopar (* * *srcpoint* * *, * * *srcref* * *, * * *dstref* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _srcPoint_ <br/> |必須  <br/> |**文字列型 (String)** <br/> | 変換元の座標系でのローカル座標の点を指定します。  <br/> |
-| _srcRef_ <br/> |必須  <br/> |**文字列型 (String)** <br/> | 変換元オブジェクトのセルに対する参照を指定します。  <br/> |
-| _dstRef_ <br/> |必須  <br/> |**文字列型 (String)** <br/> | 変換先オブジェクトのセルに対する参照を指定します。  <br/> |
+| _srcpoint_ <br/> |必須  <br/> |**String** <br/> | 変換元の座標系でのローカル座標の点を指定します。  <br/> |
+| _srcref_ <br/> |必須  <br/> |**String** <br/> | 変換元オブジェクトのセルに対する参照を指定します。  <br/> |
+| _dstref_ <br/> |必須  <br/> |**String** <br/> | 変換先オブジェクトのセルに対する参照を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-String
+文字列
   
 ## <a name="remarks"></a>注釈
 

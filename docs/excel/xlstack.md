@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: f9f030e8-1ec9-4cbf-92e1-360526260916
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: fcd073f7d2b97e84743d01c498435f186277e345
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 55ceed93407b1d99e05bc20fb6ce0b22459de7df
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310158"
 ---
 # <a name="xlstack"></a>xlStack
 

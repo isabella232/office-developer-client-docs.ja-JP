@@ -1,5 +1,5 @@
 ---
-title: 重要で役に立つ C API XLM 関数
+title: �d�v�Ŗ�ɗ��� C API XLM �֐�
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -9,12 +9,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: dc80cb3d-0d7e-4cb9-9870-3acc84eeca82
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 410a6009bf6bbb8146dcc1354e7f5688c28d96c6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: d6acd5bb171fb2494f2adb23584f4e7f088e1b83
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32311124"
 ---
 # <a name="essential-and-useful-c-api-xlm-functions"></a>重要で役に立つ C API XLM 関数
 

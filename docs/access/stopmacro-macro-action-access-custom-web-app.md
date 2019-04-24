@@ -1,5 +1,5 @@
 ---
-title: すべてのマクロの実行 (カスタム web アプリケーションのアクセス)
+title: StopMacro マクロアクション (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: af28534b-6f0d-43ee-ae89-ee2f85da1af1
 description: StopMacro/マクロの中止アクションを使用すると、現在実行中のマクロを中止できます。
-ms.openlocfilehash: 54501b65eb1847287e810ae43742a2e6e5384264
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8b80422a297647d556fb4b20cc15fb93e8853466
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32311019"
 ---
-# <a name="stopmacro-macro-action-access-custom-web-app"></a>すべてのマクロの実行 (カスタム web アプリケーションのアクセス)
+# <a name="stopmacro-macro-action-access-custom-web-app"></a>StopMacro マクロアクション (Access カスタム web アプリ)
 
 " **StopMacro/マクロの中止** " アクションを使用すると、現在実行中のマクロを中止できます。 
   
@@ -23,7 +23,7 @@ ms.locfileid: "19798737"
   
 ## <a name="setting"></a>設定
 
-" **StopMacro/マクロの中止** " アクションには、引数はありません。 
+**StopMacro** アクションには引数はありません。 
   
 ## <a name="remarks"></a>解説
 

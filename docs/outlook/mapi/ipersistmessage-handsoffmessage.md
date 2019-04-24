@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0e56b21d-0a2e-4fe6-83f4-c9daab2f3055
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 84f0ca88403980ff9ea1c91821a8a3d7edae74fa
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309717"
 ---
 # <a name="ipersistmessagehandsoffmessage"></a>IPersistMessage::HandsOffMessage
 
@@ -25,7 +25,7 @@ ms.locfileid: "25384067"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームの現在のメッセージを解放するが発生します。
+フォームに現在のメッセージを解放させます。
   
 ```cpp
 HRESULT HandsOffMessage( void );
@@ -39,25 +39,25 @@ HRESULT HandsOffMessage( void );
 
 S_OK 
   
-> メッセージは正常にリリースされました。
+> メッセージが正常に解放されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-HandsOff の 2 つの状態への移行をフォームします。
+フォームは2つの HandsOff 状態に遷移します。
   
 - [HandsOffAfterSave](handsoffaftersave-state.md)
     
 - [HandsOffFromNormal](handsofffromnormal-state.md)
     
-フォームは、これらの状態のいずれかの方法では、永続的に保存されているとします。 
+フォームがこれらの状態のいずれかになっている場合、フォームは永続的に保存されています。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-メッセージごとに再帰的に呼び出し**HandsOffMessage**が、現在のメッセージと、[に埋め込まれたフォーム ビューアーは、フォームが[標準](normal-state.md)または[NoScribble](noscribble-state.md)の状態にあるときに、 **IPersistMessage::HandsOffMessage**メソッドを呼び出すとIPersistStorage::HandsOffStorage](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx)各 OLE オブジェクトのメソッドは、現在のメッセージに埋め込まれています。 現在のメッセージとメッセージのすべての埋め込み OLE オブジェクトを解放します。 通常の状態で、フォームがあった場合は、HandsOffFromNormal 状態に移行します。 NoScribble 状態で、フォームがあった場合は、HandsOffAfterSave 状態に移行します。 移行に成功した後メッセージ[が](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx)メソッドを呼び出すし、S_OK を返します。 
+フォームが[標準](normal-state.md)または[noscribble](noscribble-state.md)状態であるときに、フォームビューアーが**IPersistMessage::** モジュールの入力メソッドを呼び出すと、 **** 現在のメッセージに埋め込まれた各メッセージと、 [IPersistStorage::](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx)現在のメッセージに埋め込まれている各 OLE オブジェクトに対して、"soffstorage method" を入力します。 次に、現在のメッセージとすべての埋め込みメッセージと OLE オブジェクトを解放します。 フォームが通常の状態であった場合は、[標準] [標準] 状態に移行します。 フォームが noscribble 状態であった場合は、[保存] 状態に切り替えます。 移行が正常に完了したら、メッセージの[IUnknown:: Release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx)メソッドを呼び出し、S_OK を返します。 
   
-フォーム ビューアーは、HandsOff 状態のいずれかの方法では、フォーム中に**HandsOffMessage**を呼び出す、ときに E_UNEXPECTED を返します。 
+フォームが HandsOff 状態のいずれかであるときに、フォームビューアーが入力した**soffmessage**を呼び出すと、E_UNEXPECTED を返します。 
   
-フォームのさまざまな状態の詳細については、[フォームの状態](form-states.md)を参照してください。 HandsOff 状態のストレージ ・ オブジェクトを操作する方法の詳細については、 [IPersistStorage::HandsOffStorage](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx)メソッドを参照してください。 
+フォームのさまざまな状態の詳細については、「[フォームの状態](form-states.md)」を参照してください。 ストレージオブジェクトの HandsOff 状態を操作する方法の詳細については、「 [IPersistStorage:: 「保存](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx)方法」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: fff0de4d-605d-49e6-a5be-a000410c09d8
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 6e5daac21a6d89472a7d84a25e9aeaea56db1ae1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: af8bd2d44883b1820be42b82d4fe4794fa29caab
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310284"
 ---
 # <a name="xlautoremove"></a>xlAutoRemove
 

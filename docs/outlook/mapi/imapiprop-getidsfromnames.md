@@ -1,5 +1,5 @@
 ---
-title: IMAPIPropGetIDsFromNames
+title: imapipropgetidsfromnames
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: e3f501a4-a8ee-43d7-bd83-c94e7980c398
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7f7c243995c633389ab8fa80a26dddd152347276
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 28880b818bc80e31cae0c695d4aac92eb9555cac
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314841"
 ---
 # <a name="imapipropgetidsfromnames"></a>IMAPIProp::GetIDsFromNames
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-1 つまたは複数のプロパティ名に対応するプロパティの識別子を提供します。
+1つまたは複数のプロパティ名に対応するプロパティ識別子を提供します。
   
 ```cpp
 HRESULT GetIDsFromNames(
@@ -38,27 +38,27 @@ HRESULT GetIDsFromNames(
 
 ## <a name="parameters"></a>パラメーター
 
- _cPropNames_
+ _cpropnames_
   
-> [in]_LppPropNames_パラメーターで指定されたプロパティ名の数。 _LppPropNames_が NULL の場合は、 _cPropNames_パラメーターは 0 である必要があります。 
+> 順番_lpppropnames_パラメーターによって示されるプロパティ名の数。 _lpppropnames_が NULL の場合、 _cpropnames_パラメーターは0である必要があります。 
     
- _lppPropNames_
+ _lpppropnames_
   
-> [in]プロパティ名、または NULL の配列へのポインター。 パラメーターに NULL は、オブジェクトに情報があるについては、すべてのプロパティ セットのすべてのプロパティ名のプロパティの識別子を要求します。 _LppPropNames_パラメーターには NULL 必要がありますできません_ulFlags_パラメーターで、タグのフラグが設定されている場合。 
+> 順番プロパティ名の配列へのポインター、または NULL。 オブジェクトが情報を持っているすべてのプロパティセット内のすべてのプロパティ名に対して NULL 要求のプロパティ識別子を渡す。 MAPI_CREATE フラグが_ulflags_パラメーターで設定されている場合、 _lpppropnames_パラメーターを NULL にすることはできません。 
     
  _ulFlags_
   
-> [in]プロパティ識別子が返される方法を示すフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番プロパティ識別子を返す方法を示すフラグのビットマスク。 次のフラグを設定できます。
     
-タグ 
+MAPI_CREATE 
   
-> プロパティの識別子では、1 つがまだ割り当てられていない場合、 _lppPropNames_で指定されたプロパティ名の配列に含まれている名前の 1 つ以上が割り当てられます。 このフラグは、名前の識別子をマッピング テーブルで内部的に id を登録します。
+> プロパティ識別子がまだ割り当てられていない場合は、その識別子を、 _lpppropnames_で指定されたプロパティ名の配列に含まれる1つ以上の名前に割り当てます。 このフラグは、名前から識別子へのマッピングテーブルに、識別子を内部的に登録します。
     
- _lppPropTags_
+ _lppproptags_
   
-> [out]既存または新たに割り当てられたプロパティの識別子を含むプロパティ タグの配列へのポインターへのポインター。 この配列内のプロパティ タグのプロパティの型は、 **PT_UNSPECIFIED**に設定されます。
+> 読み上げ既存または新規に割り当てられたプロパティ識別子を含むプロパティタグの配列へのポインターへのポインター。 この配列の property タグのプロパティの種類は、 **PT_UNSPECIFIED**に設定されています。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -70,55 +70,55 @@ MAPI_E_NO_SUPPORT
     
 MAPI_E_NOT_ENOUGH_MEMORY 
   
-> メモリ不足のためでは、識別子を取得できませんでした。
+> メモリが不足しているため、識別子を取得できませんでした。
     
 MAPI_E_TOO_BIG 
   
-> 返される多くのプロパティ タグが必要なために、操作を実行できません。
+> 返されるプロパティタグが多すぎるため、操作を実行できません。
     
 MAPI_W_ERRORS_RETURNED 
   
-> 呼び出しは完了しましたが、1 つまたは複数のプロパティの識別子は返されませんでした。 使用できないプロパティごとに対応するプロパティの型は、 **PT_ERROR**とその id を 0 に設定されています。 この警告が返されると、その成功と呼び出しを処理します。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 [エラー処理のためのマクロを使用する](using-macros-for-error-handling.md)を参照してください。
+> 呼び出しは全体的に成功しましたが、1つ以上のプロパティ識別子を返すことができませんでした。 使用できない各プロパティの対応するプロパティの種類が**PT_ERROR**に設定され、その識別子が0に設定されます。 この警告が返された場合は、呼び出しを成功として処理します。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPIProp::GetIDsFromNames**メソッドは、1 つまたは複数の名前付きプロパティのプロパティの識別子を保持するプロパティ タグの配列を取得します。 **IMAPIProp::GetIDsFromNames**は、次の操作を呼び出すことができます。 
+**imapiprop:: getidsfromnames**メソッドは、1つ以上の名前付きプロパティのプロパティ識別子を保持するプロパティタグの配列を取得します。 **imapiprop:: getidsfromnames**を呼び出して、次の操作を行うことができます。 
   
 - 新しい名前の識別子を作成します。
     
 - 特定の名前の識別子を取得します。
     
-- オブジェクトのマッピングに含まれるすべての名前付きプロパティの識別子を取得します。
+- オブジェクトのマッピングに含まれているすべての名前付きプロパティの識別子を取得します。
     
-名前付きプロパティは、通常、フォルダーやメッセージのメッセージ ストア プロバイダーが使用します。 メッセージングのユーザーとプロファイルのセクションなど、他のオブジェクトは、プロパティの識別子を名前との関連付けをサポートしていない可能性があり、 **GetIDsFromNames**から MAPI_E_NO_SUPPORT を返すことがあります。
+名前付きプロパティは、通常、フォルダーおよびメッセージのメッセージストアプロバイダーによって使用されます。 メッセージングユーザーやプロファイルセクションなど、他のオブジェクトは、名前とプロパティ識別子との関連付けをサポートしていない場合があり、 **getidsfromnames**から MAPI_E_NO_SUPPORT を返す場合があります。
   
-エラーを特定の名前の識別子を返す場合は、 **GetIDsFromNames** MAPI_W_ERRORS_RETURNED を返し**PT_ERROR**と id を 0 にする名前に対応するプロパティ タグ配列のエントリのプロパティの型を設定します。 
+特定の名前の識別子を返すエラーがある場合、 **getidsfromnames**は MAPI_W_ERRORS_RETURNED を返し、プロパティタグ配列エントリのプロパティの型を**PT_ERROR**に対応するプロパティタグ配列エントリに設定し、識別子を0に設定します。 
   
-識別子に名前のマッピングは、オブジェクトの**PR_MAPPING_SIGNATURE** ([PidTagMappingSignature](pidtagmappingsignature-canonical-property.md)) で表されます。 **PR_MAPPING_SIGNATURE**には、オブジェクトを担当するサービス プロバイダーを指定する[MAPIUID](mapiuid.md)構造体が含まれています。 **PR_MAPPING_SIGNATURE**プロパティ、2 つのオブジェクトに対して同じである場合は、これらのオブジェクトが同じ名前の識別子をマッピングを使用することを想定しています。 
+名前から識別子へのマッピングは、オブジェクトの**PR_MAPPING_SIGNATURE** ([PidTagMappingSignature](pidtagmappingsignature-canonical-property.md)) プロパティによって表されます。 **PR_MAPPING_SIGNATURE**には、オブジェクトを処理するサービスプロバイダーを示す[MAPIUID](mapiuid.md)構造が含まれています。 2つのオブジェクトの**PR_MAPPING_SIGNATURE**プロパティが同じ場合は、これらのオブジェクトが同じ名前と識別子のマッピングを使用することを前提としています。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-_LppPropNames_パラメーターで指定されたプロパティ タグ配列に渡された識別子は、0x8000 を 0 xfffe の範囲でなければなりません。 この配列のエントリ必要があるプロパティ名の配列に渡された名前と同じ順序で指す_lppPropNames_です。 
+_lpppropnames_パラメーターによって指定されたプロパティタグ配列で返される識別子は、0x8000 ~ 0xFFFE の範囲内にある必要があります。 この配列のエントリは、 _lpppropnames_で指定されたプロパティ名配列で渡された名前と同じ順序にする必要があります。 
   
-コンテナーの名前付きプロパティをサポートする場合は、同じ名前の識別子にマッピングを使用して、コンテナー内のすべてのオブジェクト (つまり、マッピングを使用しない、別のメッセージ ストア内の各フォルダーまたはフォルダー内の各メッセージの)。
+コンテナーで名前付きプロパティをサポートする場合は、コンテナー内のすべてのオブジェクトに同じ名前と識別子のマッピングを使用します (つまり、メッセージストア内の各フォルダーまたはフォルダー内の各メッセージに対して異なるマッピングを使用しません)。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-_LppPropTags_で指定されたプロパティ タグ配列で返される識別子のプロパティの型は、 **PT_UNSPECIFIED**に設定されているためには、正確な型を取得するために[IMAPIProp::SetProps](imapiprop-setprops.md)メソッドを呼び出す必要があります。 
+_lppproptags_によって参照されるプロパティタグの配列で返される識別子のプロパティの種類は**PT_UNSPECIFIED**に設定されているため、 [imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出して正確な型を取得する必要があります。 
   
-移動する、または名前付きプロパティを持つオブジェクトのコピーと、ソースと変換先オブジェクトの**PR_MAPPING_SIGNATURE**プロパティの値で示される別のマッピングのシグネチャを持つ、これらの操作中に名前を保持する必要があります。 プロパティ名を保持するには、目的のオブジェクトの識別子に名前のマッピングに一致するように対応するプロパティの識別子を調整します。 
+名前付きプロパティを持つオブジェクトを移動またはコピーするときに、source オブジェクトと destination オブジェクトのマッピングシグネチャがそれぞれの**PR_MAPPING_SIGNATURE**プロパティの値で示されている場合は、これらの操作の間に名前を保持する必要があります。 プロパティ名を保持するには、対応するプロパティ識別子を、対象のオブジェクトの名前から識別子へのマッピングと一致するように調整します。 
   
-いくつかのオブジェクトには、プロパティ識別子の名前を数の制限があります。 **GetIDsFromNames**への呼び出しでは、この制限を越えるが発生する場合は、MAPI_E_TOO_BIG を返します。 この例では、識別子によってクエリを実行します。 
+一部のオブジェクトには、名前を付けることができるプロパティ識別子の数に制限があります。 **getidsfromnames**を呼び出すとこの制限を超えると、メソッドは MAPI_E_TOO_BIG を返します。 この場合は、識別子でクエリを実行します。 
   
-詳細については、 [MAPI 名前付きプロパティ](mapi-named-properties.md)を参照してください。 
+詳細については、「 [MAPI の名前付きプロパティ](mapi-named-properties.md)」を参照してください。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|SingleMAPIPropListCtrl.cpp  <br/> |CSingleMAPIPropListCtrl::FindAllNamedPropsUsed  <br/> |MFCMAPI では、 **IMAPIProp::GetIDsFromNames**メソッドを使用して、マップされたすべての名前付きプロパティのプロパティ タグを取得します。  <br/> |
+|SingleMAPIPropListCtrl  <br/> |CSingleMAPIPropListCtrl:: findallnamedpropsused  <br/> |mfcmapi は、 **imapiprop:: getidsfromnames**メソッドを使用して、マップされているすべての名前付きプロパティのプロパティタグを取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -139,5 +139,5 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
   
 [MAPI ���O�t���v���p�e�B](mapi-named-properties.md)
   
-[エラー処理のためのマクロの使用](using-macros-for-error-handling.md)
+[エラー処理にマクロを使用する](using-macros-for-error-handling.md)
 

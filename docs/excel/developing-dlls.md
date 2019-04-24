@@ -1,5 +1,5 @@
 ---
-title: DLL の開発
+title: DLL ��J������
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -10,11 +10,11 @@ ms.assetid: 5d69d06d-a126-4c47-82ad-17112674c8a3
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 localization_priority: Priority
 ms.openlocfilehash: 89dd7b65ad94ba2fc7e1cf3f99ee163d3003d0fe
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310921"
 ---
 # <a name="developing-dlls"></a>DLL の開発
 
@@ -58,7 +58,7 @@ DLL �v���W�F�N�g��R���p�C������Ƃ��A�
   
 ���O��f�R���[�g������@�́A����A����уR���p�C���Ɏw������Ă������g�p�ł���悤�ɂ�����@�A�܂��Ăяo���K���ɂ���ĈقȂ�܂��BDLL ���g�p���� Windows �W���̃v���Z�X�ԌĂяo���K��́AWinAPI �K��ƌĂ�Ă��܂��B����́AWindows �w�b�_�[ �t�@�C���� **WINAPI** �Ƃ��Ē�**** ����܂��B
   
-Excel で使用する DLL エクスポート関数 (ワークシート関数、マクロシート同等関数、ユーザー定義コマンドのいずれの場合であっても) は、必ず **WINAPI** / **__stdcall** 呼び出し規則を使用する必要があります。 Win32 コンパイラの既定として **__cdecl** 呼び出し規則を使用するには、関数の定義に **WINAPI** 指定子を明示的に含める必要があります。何も指定しない場合は **WINAPIV** として定義されます。
+A DLL-export function for use with Excel (whether it is a worksheet function, macro-sheet equivalent function, or user-defined command) should always use the **WINAPI** / **__stdcall** calling convention. It is necessary to include the **WINAPI** specifier explicitly in the function's definition as the default in Win32 compilers is to use the **__cdecl** calling convention, also defined as **WINAPIV**, if none is specified.
   
 リンカーに対して、関数がエクスポートされること、名前が次の方法のいずれかによって外部で認識されることを通知できます。
   
@@ -161,7 +161,7 @@ __declspec(dllexport) double WINAPI my_undecorated_Cpp_export(double x)
   
 ### <a name="using-a-pragma-preprocessor-linker-directive"></a>#pragma プリプロセッサ リンカー ディレクティブの使用
 
-Microsoft Visual Studio の最近のバージョンでは、**#pragma** ディレクティブと一緒に使用する、2 つの事前定義されたマクロをサポートしています。リンカーに対して、関数コードから直接関数をエクスポートするように指示できます。 __FUNCTION__ と __FUNCDNAME__ (それぞれの末尾はアンダースコア 2 つで構成されています) というマクロは、それぞれデコレートされない関数名とデコレートされた関数名に拡張されます。 
+Recent versions of Microsoft Visual Studio support two predefined macros that, when used in conjunction with a **#pragma** directive, enable you to instruct the linker to export the function directly from within the function code. The macros are __FUNCTION__ and __FUNCDNAME__ (note the double underline at each end) which are expanded to the undecorated and decorated function names respectively. 
   
 たとえば、Microsoft Visual Studio を使用している場合、これらの行を次のように共通ヘッダー ファイルに組み込むことができます。
   

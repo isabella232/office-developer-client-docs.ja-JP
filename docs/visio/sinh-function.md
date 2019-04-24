@@ -9,36 +9,34 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: de2aca1d-a591-cf39-990c-a24666764a6f
 description: 角度の双曲正弦を返します。
-ms.openlocfilehash: d45473b0d900c04580aa1dbc4c206fe70fa7318b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 305dd9e62a32db3a91724cd182964012e482442e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314806"
 ---
 # <a name="sinh-function"></a>SINH 関数
 
-角度の双曲正弦を返します。
-    
- 
+角度の双曲正弦を返します。 
   
 ## <a name="syntax"></a>構文
 
-SINH (* **角度** *) 
+SINH (* * *angle* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _角度_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |双曲線逆正弦を取得する角度。  <br/> |
+| _直交_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |双曲線正弦を取得する角度を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-数値
+番号
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-SINH 関数では、_角度_で別の測定単位を指定する場合を除き、ラジアンが使用されます。
+SINH 関数では、_角度_に別の単位を指定しない限り、ラジアンが使用されます。
   
 ## <a name="example"></a>例
 

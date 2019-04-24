@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1394039b-d509-49a5-8421-b7362d906879
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: f85b662b7fe710c66a2e69dd3cd3db22e3283ddb
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309724"
 ---
 # <a name="imsgstoreunadvise"></a>IMsgStore::Unadvise
 
@@ -25,7 +25,7 @@ ms.locfileid: "25398018"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[IMsgStore::Advise](imsgstore-advise.md)メソッドへの呼び出しは、設定済みの通知の送信をキャンセルします。 
+[IMsgStore:: Advise](imsgstore-advise.md)メソッドへの呼び出しによって、以前に設定された通知の送信をキャンセルします。 
   
 ```cpp
 HRESULT Unadvise(
@@ -35,21 +35,21 @@ HRESULT Unadvise(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulConnection_
+ _ulconnection_
   
-> [in]作業中の通知の登録に関連付けられている接続の数です。 _UlConnection_の値は、 **IMsgStore::Advise**メソッドへの前回の呼び出しで返されている必要があります。 
+> 順番アクティブな通知登録に関連付けられている接続番号。 _ulconnection_の値は、 **IMsgStore:: Advise**メソッドへの以前の呼び出しによって返されたものである必要があります。 
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 登録は取り消されました。
+> 登録が正常にキャンセルされました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-**IMsgStore::Unadvise**メソッドは、通知の登録をキャンセルします。 **Unadvise**リリースがそのポインターを呼び出し元のシンクの登録に使用される**アドバイス**の呼び出しで、受け取ったに案内します。 
+**IMsgStore:: アドバイズ**中止メソッドは、通知の登録をキャンセルします。 **アドバイズ**中止は、登録に使用された**アドバイズ**呼び出しで受け取った発信者のアドバイズシンクへのポインターを解放します。 
   
-一般に、 **Unadvise**は**Unadvise**の呼び出し時にアドバイズ シンクの[リ ス](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)のメソッドを呼び出します。 ただし、別のスレッドがアドバイズ シンクの[IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出すことであるにある場合は、**リリース**の呼び出しが遅延**OnNotify**メソッドが戻るまで。 
+通常、 **** アドバイズ中止呼び出し中にアドバイズシンクの[IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッド**** を呼び出します。 ただし、アドバイズシンクの[IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)メソッドを呼び出しているプロセスに別のスレッドがある場合は、 **onnotify**メソッドが戻るまで**リリース**呼び出しが遅延します。 
   
 ## <a name="see-also"></a>関連項目
 

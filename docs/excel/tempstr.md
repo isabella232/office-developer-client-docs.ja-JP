@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: b21b4868-babe-4255-9093-503172efa045
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: ce9399168d5b94d10481d2d0b5b69dd2e1d1d2e9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 4ccb6f3c764371c35bac12c8c78fede54234a7d6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310319"
 ---
 # <a name="tempstr"></a>TempStr
 

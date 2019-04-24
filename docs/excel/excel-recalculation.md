@@ -10,11 +10,11 @@ ms.assetid: b4c38442-42e6-4fd2-a1b0-97cfa3300379
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 localization_priority: Priority
 ms.openlocfilehash: 07deec5ad104c59074567725d6abf9b66711e351
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304117"
 ---
 # <a name="excel-recalculation"></a>Excel の再計算
 
@@ -57,7 +57,7 @@ Excel のワークシートの計算は、3 段階のプロセスと見なせま
     
 依存関係ツリーによって、Excel は、セル間の依存関係または同等性、セル間の参照関係についての情報を得ます。Excel は、このツリーから計算チェーンを構築します。計算チェーンは、数式を格納しているすべてのセルの一覧であり、計算される順序で並べられています。再計算時に、まだ計算されていないセルに依存する数式が見つかると、このチェーンは Excel によって改訂されます。この場合、計算されるセルとそのセルの参照先は、チェーンの末尾方向に移動されます。このため、開いた直後のワークシートでの最初の数回の計算サイクルは、多くの場合、計算時間が向上します。
   
-新しい数式が入力されるなど、ブックに構造上の変更が行われると、Excel は依存関係ツリーと計算チェーンを再構築します。 新しいデータや新しい数式が入力されると、その新しいデータに依存するセルのすべてに、再計算が必要であるというマークを付けます。 このようにマークが付けられたセルは、*ダーティ*と呼ばれます。 直接および間接のすべての参照先に、ダーティのマークが付きます。そのため、B1 が A1 に依存していて、C1 が B1 に依存している場合、A1 が変更されると、B1 と C1 の両方にダーティのマークが付きます。 
+When a structural change is made to a workbook, for example, when a new formula is entered, Excel reconstructs the dependency tree and calculation chain. When new data or new formulas are entered, Excel marks all the cells that depend on that new data as needing recalculation. Cells that are marked in this way are known as  *dirty*  . All direct and indirect dependents are marked as dirty so that if B1 depends on A1, and C1 depends on B1, when A1 is changed, both B1 and C1 are marked as dirty. 
   
 あるセルがそのセル自体に直接的または間接的に依存している場合は、Excel によって循環参照が検出され、ユーザーに警告が示されます。これは、通常ユーザーが修正しなければならないエラー状態です。Excel には、ユーザーが循環依存の関係の原因を見つけられるようにする非常に役立つグラフィカルなナビゲーション ツールがあります。場合によっては、この状態を意図的に必要とすることもあります。たとえば、次の繰り返しの開始点が、前の繰り返しの結果になる反復計算の実行を必要とすることがあります。Excel は、[計算方法の設定] ダイアログ ボックスによる反復計算の制御をサポートしています。
   
@@ -67,7 +67,7 @@ Microsoft Excel 2002 以降の Microsoft Visual Basic for Applications (VBA) の
   
 Excel 2002 以前のバージョンの Excel では、開いている各ブックのワークシートごとに計算チェーンを構築していました。このため、処理されるワークシート間のリンク方法は複雑になり、効率的な再計算のためには注意が必要でした。特に Excel 2000 では、ワークシート間の依存関係を最小限にして、ワークシートにアルファベット順の名前を付ける必要があります。このようにして、他のシートに依存するシートが、依存先のシートの後に (アルファベット順) なるようにします。
   
-Excel 2007 ではロジックが向上し、計算チェーンの各部分が相互依存しなくなり、同時に計算できるため、複数のスレッドでの再計算が可能です。 Excel は、単一プロセッサのコンピューターで複数のスレッドを使用するように構成することも、複数プロセッサやマルチコア プロセッサのコンピューターで単一のスレッドを使用するように構成することもできます。 
+In Excel 2007, the logic was improved to enable recalculation on multiple threads so that sections of the calculation chain are not interdependent and can be calculated at the same time. You can configure Excel to use multiple threads on a single processor computer, or a single thread on a multi-processor or multi-core computer. 
   
 ## <a name="asynchronous-user-defined-functions-udfs"></a>非同期のユーザー定義関数 (UDF)
 

@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 94580044-9497-425f-a31e-53bb4d94dc30
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: f2830633482e5329d285907b610386b708c406a4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 530cb9cce5b0023318ff6b8a0ff73472f8250aa3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310991"
 ---
 # <a name="convertxlreftoxlref12"></a>ConvertXLRefToXLRef12
 

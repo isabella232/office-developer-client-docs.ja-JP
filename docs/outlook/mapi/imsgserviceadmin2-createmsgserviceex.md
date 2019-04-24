@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4910dabd-9380-4fde-a440-5c64d74c0bba
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f700389315ca7bd184a9d6defb0b44eaec99a38e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: b7fe25491228f00f6865af963db36f27bae5d7a7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310011"
 ---
 # <a name="imsgserviceadmin2createmsgserviceex"></a>IMsgServiceAdmin2::CreateMsgServiceEx
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-サービス UID を新しく追加すること、現在のプロファイルには、メッセージ サービスを追加します。
+現在のプロファイルにメッセージサービスを追加し、新しく追加されたサービス UID を返します。
   
 ```cpp
 HRESULT CreateMsgServiceEx(
@@ -39,43 +39,43 @@ HRESULT CreateMsgServiceEx(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpszService_
+ _lpszservice_
   
-> [in]追加するのにはメッセージ サービスの名前へのポインター。 MapiSvc.inf ファイルの **[サービス]** セクションで、このメッセージのサービス名があります。 
+> 順番追加するメッセージサービスの名前へのポインター。 このメッセージサービス名は、mapisvc.inf ファイルの **[Services]** セクションに表示される必要があります。 
     
- _lpszDisplayName_
+ _lpszdisplayname_
   
-> [in]追加するのにはメッセージ サービスの表示名へのポインター。 メッセージ サービスが、MapiSvc.inf ファイルの**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) のプロパティを設定されている場合、 _lpszDisplayName_パラメーターは無視されます。
+> 順番追加するメッセージサービスの表示名へのポインター。 メッセージサービスが mapisvc.inf ファイルで**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティを設定している場合、 _lpszdisplayname_パラメーターは無視されます。
     
- _ulUIParam_
+ _uluiparam_
   
-> [in]ダイアログ ボックスまたはウィンドウの親ウィンドウへのハンドルを表示します。
+> 順番このメソッドが表示する任意のダイアログボックスまたはウィンドウの親ウィンドウへのハンドル。
     
  _ulFlags_
   
-> [in]メッセージ サービスをインストールする方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番メッセージサービスのインストール方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE
   
-> LpszService および lpszDisplayName パラメーターを LPWSTR にキャストし、Unicode 文字列として解釈する必要があります。
+> lpszservice および lpszservice パラメーターは、LPWSTR にキャストし、Unicode 文字列として解釈される必要があります。
     
 SERVICE_NO_RESTART_WARNING
   
-> 新しいメッセージ サービスをプロファイルに追加するときに多くの場合さまざまな状況や条件に基づき、MAPI サブシステムがアクションには、Outlook の再起動が必要ですを決定します。 SERVICE_NO_RESTART_WARNING フラグが含まれていない UI を使用すると-- SERVICE_UI_ALWAYS と SERVICE_UI_ALLOWED のフラグに基づくし、少なくとも 1 つのプロセスは、現在のプロファイルにログオンしている、この関数、メッセージが表示"する必要があります Outlook を再起動これらの変更を有効にする。」 SERVICE_NO_RESTART_WARNING フラグを含む、警告メッセージの表示を抑制します。
+> プロファイルに新しいメッセージサービスを追加すると、さまざまな状況や条件に基づいて MAPI サブシステムが、Outlook の再起動が必要であると判断されることがよくあります。 SERVICE_NO_RESTART_WARNING フラグが含まれておらず、SERVICE_UI_ALWAYS と SERVICE_UI_ALLOWED フラグに基づいて UI が許可されていて、少なくとも1つのプロセスが現在のプロファイルに記録されている場合、この関数は "Outlook を再起動する必要があります。" というメッセージを表示します。これらの変更は有効になります。 SERVICE_NO_RESTART_WARNING フラグを含めると、その警告メッセージの表示が抑制されます。
     
 SERVICE_UI_ALLOWED
   
-> メッセージ サービスの構成が必要な場合、UI は許可されています。
+> 必要に応じて、メッセージサービス構成 UI を使用できます。
     
 SERVICE_UI_ALWAYS
   
-> メッセージ サービスでは、[設定] プロパティ シートが表示されます。
+> メッセージサービスには、その構成プロパティシートが表示されます。
     
- _lpuidService_
+ _lpuidservice_
   
-> [out]追加メッセージ サービスの UID へのポインター。
+> 読み上げ追加されたメッセージサービスの UID へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK
   
@@ -83,27 +83,27 @@ S_OK
     
 MAPI_E_NOT_FOUND
   
-> メッセージ サービス名は、MapiSvc.inf の **[サービス]** セクションではありません。 
+> メッセージサービス名が mapisvc.inf の **[Services]** セクションにありません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMsgServiceAdmin2::CreateMsgServiceEx**メソッドは、メッセージ サービスを現在のプロファイルに追加します。 **CreateMsgServiceEx**は、サービス固有の構成タスクを実行するのには、メッセージ サービスのエントリ ポイント関数を呼び出します。 _UlFlags_パラメーターに SERVICE_UI_ALLOWED フラグを設定すると、メッセージ サービスがインストールされているがその設定を構成するユーザーを有効にすると、プロパティ シートを表示できます。 
+**IMsgServiceAdmin2:: CreateMsgServiceEx**メソッドは、現在のプロファイルにメッセージサービスを追加します。 **CreateMsgServiceEx**は、メッセージサービスのエントリポイント関数を呼び出して、サービス固有の構成タスクを実行します。 SERVICE_UI_ALLOWED フラグが_ulflags_パラメーターで設定されている場合は、インストールされているメッセージサービスでプロパティシートを表示して、ユーザーが設定を構成できるようにすることができます。 
   
-MapiSvc.inf ファイルには、それぞれのメッセージ サービスとプロパティを構成するプロバイダーの一覧が含まれています。 **CreateMsgServiceEx**は、まずメッセージ サービス用の新しいプロファイル セクションを作成し、そのサービスの情報をすべて MapiSvc.inf ファイルからにコピー、プロファイルでは、プロバイダーごとに新しいセクションを作成します。 
+mapisvc.inf ファイルには、メッセージサービスを構成するプロバイダーの一覧とそれぞれのプロパティが含まれています。 **CreateMsgServiceEx**は、最初にメッセージサービス用の新しいプロファイルセクションを作成し、そのサービスのすべての情報を mapisvc.inf ファイルからプロファイルにコピーして、各プロバイダーに新しいセクションを作成します。 
   
-MapiSvc.inf からすべての情報がコピーされた後は、 _ulContext_パラメーターに設定された MSG_SERVICE_CREATE 値を持つメッセージ サービスのエントリ ポイント関数、 **MSGSERVICEENTRY**が呼び出されます。 **CreateMsgServiceEx**メソッドの_ulFlags_パラメーターに SERVICE_UI_ALLOWED フラグを設定すると、またには、 _ulUIParam_と_ulFlags_パラメーターの値は、メッセージ サービスのエントリ ポイント関数が呼び出されたときに渡されます。 サービス プロバイダーは、ユーザーは、メッセージ サービスを構成することができますので、構成のプロパティ シートを表示します。 
+すべての情報が mapisvc.inf からコピーされた後、メッセージサービスのエントリポイント関数である**msgserviceentry**が、 _ulcontext_パラメーターで設定された MSG_SERVICE_CREATE 値を使用して呼び出されます。 SERVICE_UI_ALLOWED フラグが**CreateMsgServiceEx**メソッドの_ulflags_パラメーターで設定されている場合は、メッセージサービスのエントリポイント関数が呼び出されたときに、 _uluiparam_パラメーターと_ulflags_パラメーターの値も渡されます。 サービスプロバイダーは、ユーザーがメッセージサービスを構成できるように、その構成プロパティシートを表示する必要があります。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**CreateMsgServiceEx** _lpuidService_の引数が NULL でない場合は、 **GUID**の指し示す先のプロファイルに追加されたメッセージ サービスの**PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) プロパティが返されます。 
+**CreateMsgServiceEx** _lpuidservice_引数が NULL でない場合、プロファイルに追加されたメッセージサービスの**PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) プロパティが、ポイントした**GUID**で返されます。 
   
-**PR_SERVICE_UID**プロパティの値を_lpuidService_パラメーターでメソッドに渡す、 [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)サービスを構成します。 
+_lpuidservice_パラメーターの**PR_SERVICE_UID**プロパティの値を[IMsgServiceAdmin:: ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)メソッドに渡して、サービスを構成します。 
   
 > [!CAUTION]
-> MAPI サブシステムの Microsoft Outlook 2010 の実装は、MAPI_UNICODE をサポートしていませんし、使用されている場合は失敗します。 
+> MAPI サブシステムの Microsoft Outlook 2010 実装は MAPI_UNICODE をサポートしていないため、使用されている場合は失敗します。 
   
 > [!IMPORTANT]
-> IMsgServiceAdmin2 インターフェイスは、IMsgServiceAdmin インターフェイスを実装して、MAPI サブシステムの Outlook 2003 以降の Outlook の実装を使用して提供されている同じオブジェクトによって公開されます。 インターフェイスの IID は、次のように定義されている: > `#if !defined(INITGUID) || defined(USES_IID_IMsgServiceAdmin2)` >   `DEFINE_OLEGUID(IID_IMsgServiceAdmin2,0x00020387, 0, 0);`> _ulFlags_ SERVICE_NO_RESTART_WARNING は、現在あるダウンロード可能なヘッダー ファイルで定義されていない可能性があります、場合に追加できます、次の値を使用してコード: >`#define SERVICE_NO_RESTART_WARNING 0x00000080`
+> IMsgServiceAdmin2 インターフェイスは、IMsgServiceAdmin インターフェイスを実装するのと同じオブジェクトで公開されており、outlook 2003 以降の outlook の MAPI サブシステムの実装を使用して利用できるようになっています。 その IID は、次のように`#if !defined(INITGUID) || defined(USES_IID_IMsgServiceAdmin2)` >   `DEFINE_OLEGUID(IID_IMsgServiceAdmin2,0x00020387, 0, 0);`定義されています。 > > 現在のダウンロード可能なヘッダーファイルで_ulflags_ SERVICE_NO_RESTART_WARNING が定義されていない場合があります。その場合は、次の値を使用してコードに追加できます。 >`#define SERVICE_NO_RESTART_WARNING 0x00000080`
   
 ## <a name="see-also"></a>関連項目
 

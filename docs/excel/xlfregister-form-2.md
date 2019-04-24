@@ -1,5 +1,5 @@
 ---
-title: xlfRegister (形式 2)
+title: xlfRegister (�`�� 2)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 3ebbd775-f3d2-4ba7-8835-a5b38ad2267a
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: a535018e2b644966d183ba9ae862ce83670c9231
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 66af741456ab763ef346a8777429f0ae1be77c11
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310123"
 ---
 # <a name="xlfregister-form-2"></a>xlfRegister (形式 2)
 

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: a13c6757-358f-421a-9a76-de7483501613
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 791dfe094aa0ff1aab656b56fbdf7d59e880b92e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 72b4ab1fec10b2e91c7609af6644a54d29ed5e02
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309969"
 ---
 # <a name="imsgserviceadmincopymsgservice"></a>IMsgServiceAdmin::CopyMsgService
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ サービスをプロファイルにコピーします。 
+メッセージサービスをプロファイルにコピーします。 
   
 ```cpp
 HRESULT CopyMsgService(
@@ -41,57 +41,57 @@ HRESULT CopyMsgService(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpUID_
+ _lpuid_
   
-> [in]コピーするのにはメッセージ サービスの一意の識別子を格納する[MAPIUID](mapiuid.md)構造体へのポインター。 
+> 順番コピーするメッセージサービスの一意の識別子を含む[MAPIUID](mapiuid.md)構造体へのポインター。 
     
- _lpszDisplayName_
+ _lpszdisplayname_
   
-> [in]このパラメーターは廃止されました。 
+> 順番このパラメーターは推奨されていません。 
     
  _lpInterfaceToCopy_
   
-> [in]コピーするのにはメッセージ サービスのプロファイル セクションにアクセスするためのインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 NULL を渡すことは、標準のプロファイルで、 [IProfSect](iprofsectimapiprop.md)、使っているインターフェイスになります。
+> 順番コピーするメッセージサービスのプロファイルセクションへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 標準プロファイルセクションインターフェイス[IProfSect](iprofsectimapiprop.md)で NULL 結果を渡すことができます。
     
  _lpInterfaceDst_
   
-> [in]_LpObjectDst_パラメーターが指すオブジェクトへのアクセスに使用するインターフェイスを表す IID へのポインターです。 パラメーターに NULL は、セッション、 [IMAPISession](imapisessioniunknown.md)、使っているインターフェイスになります。 IID_IMsgServiceAdmin に、 _lpInterfaceDst_パラメーターを設定することもできます。 
+> 順番_lpObjectDst_パラメーターによって参照されるオブジェクトへのアクセスに使用されるインターフェイスを表す IID へのポインター。 session インターフェイスの[imapisession](imapisessioniunknown.md)で NULL 結果が渡されています。 _lpInterfaceDst_パラメーターを IID_IMsgServiceAdmin に設定することもできます。 
     
  _lpObjectDst_
   
-> [in]セッションまたはメッセージ サービスの管理オブジェクトへのポインターへのポインター。 オブジェクトの種類は、 _lpInterfaceDst_に渡されるインターフェイス識別子に対応します。 有効なオブジェクトのポインターは、LPMAPISESSION および LPSERVICEADMIN です。
+> 順番session または message service administration オブジェクトへのポインターへのポインター。 オブジェクトの種類は、 _lpInterfaceDst_で渡されるインターフェイス識別子に対応している必要があります。 有効なオブジェクトポインターは、LPMAPISESSION および lpserviceadmin です。
     
- _ulUIParam_
+ _uluiparam_
   
-> [in]ダイアログ ボックスまたはウィンドウの親ウィンドウへのハンドルを表示します。
+> 順番このメソッドが表示する任意のダイアログボックスまたはウィンドウの親ウィンドウへのハンドル。
     
  _ulFlags_
   
-> [in]メッセージ サービスをコピーする方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番メッセージサービスのコピー方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 SERVICE_UI_ALWAYS 
   
-> 要求をメッセージ サービスは、構成のプロパティ シートを常に表示します。
+> メッセージサービスに常に構成プロパティシートが表示されるように要求します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> メッセージ サービスは正常にコピーされました。
+> メッセージサービスが正常にコピーされました。
     
 MAPI_E_NO_ACCESS 
   
-> メッセージ サービスは既にプロファイルに、それ自身の複数のインスタンスを許可しません。
+> メッセージサービスはプロファイルに既に存在し、それ自体の複数のインスタンスを許可しません。
     
 MAPI_E_NOT_FOUND 
   
-> _LpUID_で示される**MAPIUID**は、既存のメッセージ サービスを参照していません。 
+> _lpuid_が指す**MAPIUID**は、既存のメッセージサービスを参照していません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMsgServiceAdmin::CopyMsgService**メソッドは、メッセージ サービスをアクティブなプロファイルまたは別のプロファイル、プロファイルにコピーします。 コピーするメッセージ サービスを含むプロファイルと変換先は、同じプロファイルを使用するはありませんが、ことができます。 
+**IMsgServiceAdmin:: copymsgservice**メソッドは、メッセージサービスをアクティブなプロファイルまたは別のプロファイルのいずれかのプロファイルにコピーします。 コピーするメッセージサービスを含むプロファイルで、宛先は同じプロファイルである必要はありませんが、これを行うことができます。 
   
-コピー操作は、メッセージ サービスのエントリ ポイント関数は呼び出されません。 コピーしたメッセージ サービスには、元のと同じ構成設定があります。 クライアントはこれらの設定を変更するのには、 [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)メソッドを呼び出す必要があります。 
+メッセージサービスのエントリポイント関数は、コピー操作では呼び出されません。 コピーされたメッセージサービスの構成設定は、元のものと同じです。 これらの設定を変更するには、クライアントは[IMsgServiceAdmin:: ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)メソッドを呼び出す必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

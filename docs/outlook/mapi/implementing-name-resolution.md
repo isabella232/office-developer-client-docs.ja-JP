@@ -7,44 +7,44 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: a4c71b08-c47a-4421-8603-d5356d32dca9
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 489a5888014fa9299b407ebf91759627427b69bc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 15c1d502947865c02973f4950b6b6fa8109b8e78
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310081"
 ---
 # <a name="implementing-name-resolution"></a>名前解決の実装
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-アドレス帳プロバイダーは、名前解決をサポートするため、表示名を持つエントリ識別子を関連付けるプロセスです。 クライアントは、送信メッセージの受信者の一覧の各メンバーが有効なアドレスに対応していることを確認するのには[IAddrBook::ResolveName](iaddrbook-resolvename.md)を呼び出すときに名前解決を開始します。 
+アドレス帳プロバイダーは、名前解決のサポートを担当します。これには、エントリ識別子と表示名を関連付けるプロセスがあります。 クライアントは、 [IAddrBook:: ResolveName](iaddrbook-resolvename.md)を呼び出して名前解決を開始し、送信メッセージの受信者リストの各メンバーが有効なアドレスに対応するようにします。 
   
-プロバイダーによる名前解決をサポートできます。
+プロバイダーは、次の方法で名前解決をサポートできます。
   
-- **PR_ANR** ([PidTagAnr](pidtaganr-canonical-property.md)) プロパティの制限、アドレス帳コンテナーのすべての要件をサポートします。
+- **PR_ANR** ([PidTagAnr](pidtaganr-canonical-property.md)) プロパティ制限のサポート (すべてのアドレス帳コンテナーの要件)。
     
-- アドレス帳コンテナーのすべてのオプション、 [IABContainer::ResolveNames](iabcontainer-resolvenames.md)メソッドを実装します。 
+- すべてのアドレス帳コンテナーのオプションである[IABContainer:: ResolveNames](iabcontainer-resolvenames.md)メソッドを実装します。 
     
-**IABContainer::ResolveNames**をサポートするために選択した場合は、 _lpAdrList_パラメーターで渡される[ADRLIST](adrlist.md)構造内の未解決名ごとに正確に一致を検索ましょう。 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) は、 **aEntries** 、 **ADRLIST**構造体のプロパティ値の配列ではないためには、identifiy に未解決の表示名を作成することができます。 プロパティが関連付けられているすべてのエントリを無視します。 
+**IABContainer:: ResolveNames**をサポートすることを選択した場合は、 _lpadrlist_パラメーターを使用して渡された[adrlist](adrlist.md)構造で、未解決の表示名ごとに正確に一致するものを検索します。 未解決の表示名を identifiy することができるのは、 **adrlist**構造の**aentries**メンバーの**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティがプロパティ値の配列に含まれていないためです。 0個のプロパティが関連付けられているエントリは無視されます。 
   
-_LpAdrList_での表示名の配列に対応するフラグの配列を_lpFlagList_パラメーターでの解像度で、試行の結果を報告します。 フラグは、最初のフラグは、 **ADRLIST**構造体の最初の**aEntries**メンバーに対応するように位置、2 番目のフラグは、 **aEntries**の 2 番目のメンバーというように対応します。 
+_lpflaglist_パラメーターの解決結果を報告します。 _lpadrlist_内の表示名の配列に対応するフラグの配列です。 このフラグは、最初のフラグが**adrlist**構造の最初の**aentries**メンバーに対応するように位置指定し、2番目のフラグは2番目の**aentries**メンバーに対応します。 
   
-未解決のエントリごとに次の 3 つの可能な結果があります。
+未解決の各エントリに対して、次の3つの結果が考えられます。
   
-- 一致しませんでした、 **ADRLIST**構造体のエントリをコンテナーのエントリのエントリと一致することを意味します。 MAPI_UNRESOLVED に_lpFlagList_パラメーターに対応するエントリを設定します。 
+- 一致が見つかりませんでした。これは、コンテナーエントリ内のエントリが**adrlist**構造体のエントリと一致しないことを意味します。 _lpflaglist_パラメーターの対応するエントリを MAPI_UNRESOLVED に設定します。 
     
-- **ADRLIST**構造体のエントリに一致する複数のコンテナーのエントリがあることを意味する、いくつかの項目を確認できます。 MAPI_AMBIGUOUS に_lpFlagList_パラメーターに対応するエントリを設定します。 **ADRLIST**構造体のエントリの数は変更されません。 
+- 複数の一致がある場合は、 **adrlist**構造のエントリに一致する複数のコンテナーエントリがあることを意味します。 _lpflaglist_パラメーターの対応するエントリを MAPI_AMBIGUOUS に設定します。 **adrlist**構造体のエントリの数を変更しないでください。 
     
-- **ADRLIST**構造体のエントリに一致するコンテナーを 1 つだけエントリがあることを意味する、厳密な一致を確認できます。 MAPI_RESOLVED に_lpFlagList_パラメーターに対応するメンバーを設定し、 **ADRLIST**エントリに関連付けられているプロパティの配列のエントリの識別子を追加します。 
+- 完全一致を見つけることができます。つまり、 **adrlist**構造体のエントリに一致するコンテナーエントリが1つだけであることを意味します。 _lpflaglist_パラメーターの対応するメンバを MAPI_RESOLVED に設定し、 **adrlist**エントリに関連付けられているプロパティの配列にエントリ識別子を追加します。 
     
-**IABContainer::ResolveNames**をサポートしないように選択した場合は、実装から MAPI_E_NO_SUPPORT を返します。
+**IABContainer:: ResolveNames**をサポートしない場合は、実装から MAPI_E_NO_SUPPORT を返します。
   
-あいまいな名前解決をサポートするために必要なすべてのアドレス帳プロバイダー- **PR_ANR**プロパティの制限-そのコンテナーの内容のテーブルにします。 このサポートを提供するには、最適な推測の一種で、プロバイダーの意味のある 1 つまたは複数の特定プロパティと一致する、検索を実行することによって[IMAPITable::Restrict](imapitable-restrict.md)の実装では、PR_ANR の制限を処理します。 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) や**PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md)) など、毎回同じプロパティまたはプロパティを使用して、許容可能なプロパティの一覧から選択するには管理者の許可を選択できます。 
+あいまいな名前解決 ( **PR_ANR**プロパティ制限) をコンテナーのコンテンツテーブルに対してサポートするには、すべてのアドレス帳プロバイダーが必要です。 このサポートを提供するには、お客様のプロバイダーにとって意味のある1つ以上のプロパティと照合して、"最適な推測" の検索を実行して、 [IMAPITable:: Restrict](imapitable-restrict.md)の実装で PR_ANR 制限を処理します。 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) または**PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md)) など、同じプロパティまたはプロパティを毎回使用したり、管理者が受け入れ可能なプロパティの一覧から選択できるようにしたりすることができます。 
   
-ほとんどのプロバイダーは、独自の内容のテーブルの実装を提供、 [CreateTable](createtable.md)関数を介して、MAPI によって提供される実装をカスタマイズできます。 ただし、MAPI 実装がどのような制限をサポートしていないために、呼び出しをインターセプトする**制限**のカスタマイズ バージョンを含むようにラッパー オブジェクトを作成する必要があります。 
+ほとんどのプロバイダーは、独自のコンテンツテーブル実装を提供していますが、 [CreateTable](createtable.md)関数を使用して MAPI で提供される実装をカスタマイズできます。 ただし、MAPI 実装はあらゆる種類の制限をサポートしていないため、ラッパーオブジェクトを作成して、呼び出しをインターセプトするカスタマイズされたバージョンの**制限**を含める必要があります。 
   
 

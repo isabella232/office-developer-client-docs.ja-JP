@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 355cef8b-9213-479a-af95-b591f4bc51ad
 description: グループに対するテキストの割り当て方を指定します。
-ms.openlocfilehash: 65baf90254f6b213efea04739d8e4a66952b2856
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 78a70dc0398745765bca12a1e768390b35fce8ce
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314918"
 ---
-# <a name="istextedittarget-cell-group-properties-section"></a>[IsTextEditTarget] セル ([グループのプロパティ] セクション)
+# <a name="istextedittarget-cell-group-properties-section"></a>[IsTextEditTarget] セル ([Group Properties] セクション)
 
 グループに対するテキストの割り当て方を指定します。
   
@@ -25,7 +25,7 @@ ms.locfileid: "19805639"
 |TRUE  <br/> |テキストはグループ図形に追加されます。  <br/> |
 |FALSE  <br/> |テキストは、グループ内で積み重ねられた図形の中で、最前面にある図形に追加されます。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 このセルの値は、グループを選択して、[[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブで [**基本動作**] をクリックし、[**グループのテキストを編集**] チェック ボックスをオンにして設定することもできます。 
   
@@ -35,14 +35,14 @@ Visio 2000 より前のバージョンで作成したグループの場合、既
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |IsTextEditTarget  <br/> |
+|セル名:  <br/> |[istextedittarget]  <br/> |
    
 プログラムから、インデックスによって [IsTextEditTarget] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionObject** <br/> |
-|行インデックス:  <br/> |**visRowGroup** <br/> |
+|行インデックス :  <br/> |**visRowGroup** <br/> |
 |セル インデックス:  <br/> |**visGroupIsTextEditTarget** <br/> |
    
 

@@ -1,5 +1,5 @@
 ---
-title: Excel プログラミングの概念
+title: Excel �v���O���~���O�̊T�O
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -10,11 +10,11 @@ ms.assetid: f572a0d4-631a-4adc-a1a3-714d96ff6b39
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 localization_priority: Priority
 ms.openlocfilehash: 13f99e3d4154516071fe42dcb27beb944ce384f4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310893"
 ---
 # <a name="excel-programming-concepts"></a>Excel プログラミングの概念
 

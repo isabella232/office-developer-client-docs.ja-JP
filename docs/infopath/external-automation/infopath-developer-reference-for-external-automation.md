@@ -9,17 +9,17 @@ localization_priority: Normal
 ms.assetid: 1ed48838-7409-4329-a778-8cabae058200
 description: InfoPath 2013 外部自動化の開発者向けリファレンスへようこそ。このドキュメントには、外部アプリケーションまたはアドインから InfoPath を自動化するマネージ コード ソリューションの作成に役立つ、概要、プログラミング タスク、およびクラス ライブラリ リファレンス情報が記載されています。
 ms.openlocfilehash: a814a7a4ed35f088c695ea396e6289f4a00fa7ae
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310144"
 ---
 # <a name="infopath-developer-reference-for-external-automation"></a>InfoPath 外部自動化の開発者向けリファレンス
 
 InfoPath 2013 外部自動化の開発者向けリファレンスへようこそ。このドキュメントには、外部アプリケーションまたはアドインから InfoPath を自動化するマネージ コード ソリューションの作成に役立つ、概要、プログラミング タスク、およびクラス ライブラリ リファレンス情報が記載されています。
   
-マネージ コードで記述されたビジネス ロジックが含まれている InfoPath フォーム テンプレートの使用についての詳細については、[フォーム テンプレートで InfoPath 2013 の開発者用リファレンス](https://go.microsoft.com/fwlink/?LinkId=159764)を参照してください。
+マネージコードで記述されたビジネスロジックを含む infopath フォームテンプレートの使用の詳細については、「 [infopath 2013 開発者用リファレンス (フォームテンプレート](https://go.microsoft.com/fwlink/?LinkId=159764))」を参照してください。
   
 このリファレンスの発行日: 2012 年 10 月
   

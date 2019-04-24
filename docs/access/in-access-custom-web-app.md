@@ -1,5 +1,5 @@
 ---
-title: (カスタム web アプリケーションでアクセス)
+title: IN (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 56f1e938-b445-4e1f-952d-9e4627d5dc27
 description: 指定した値がリスト内の任意の値に一致するかどうかを判別します。
-ms.openlocfilehash: 5fc3038d503586775bff400ed14a3c1b753e047a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 935222bd9b117a93aafb2a2d24db525c6b23fc62
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32311145"
 ---
-# <a name="in-access-custom-web-app"></a>(カスタム web アプリケーションでアクセス)
+# <a name="in-access-custom-web-app"></a>IN (Access カスタム web アプリ)
 
 指定した値がリスト内の任意の値に一致するかどうかを判別します。
   
@@ -23,12 +23,12 @@ ms.locfileid: "19798929"
   
 ## <a name="syntax"></a>構文
 
- *式***IN**(*式*[、] .n が付きます]) 
+ *式***で**(*式*[,...n]) 
   
  *expression*  任意の有効な式です。式は両方とも、暗黙的に変換可能なデータ型でなければなりません。変換は、データ型の優先順位のルールに依存します。 
   
 ## <a name="return-type"></a>戻り値の型
 
- **ブール型 (Boolean)**
+ **Boolean**
   
 

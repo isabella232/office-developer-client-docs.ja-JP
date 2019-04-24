@@ -1,5 +1,5 @@
 ---
-title: RTrim 関数 (カスタム web アプリケーションのアクセス)
+title: RTrim 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0b6cc5b2-342d-45dd-ba5e-aa29f1face48
 description: テキスト値を、後続するすべての空白を切り捨てた後で戻します。
-ms.openlocfilehash: a8b54eda8b6d801355c88b543a45df2716a22742
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4510ccc37399e0a10504dc39c4f455461269872d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32311047"
 ---
-# <a name="rtrim-function-access-custom-web-app"></a>RTrim 関数 (カスタム web アプリケーションのアクセス)
+# <a name="rtrim-function-access-custom-web-app"></a>RTrim 関数 (Access カスタム web アプリ)
 
 テキスト値を、後続するすべての空白を切り捨てた後で戻します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "19798725"
   
 ## <a name="syntax"></a>構文
 
- **RTrim**(*TextExpression*) 
+ **RTrim**(*textexpression*) 
   
 **RTrim** 関数には、以下の引数があります。 
   

@@ -11,18 +11,18 @@ keywords:
 localization_priority: Normal
 ms.assetid: 4e6a9ccc-988d-42a9-8874-01f2ee29b835
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 56034984852713496465c3d1f79a9989fc47df1c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: f7ff6afac1737ee869e69fffd3dbed36a908b376
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310914"
 ---
 # <a name="excelexcel12f"></a>Excel/Excel12f
 
  **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-フレームワーク ライブラリ関数。 **Excel** は [Excel4](excel4-excel12.md) 関数のラッパーです。 **Excel12f** は [Excel12](excel4-excel12.md) 関数のラッパーです。 引数がいずれも 0 になっていないことをそれぞれ確認します。0 の場合は一時的な **XLOPER** や **XLOPER12** が作成できなかったことを表します。 エラーが発生すると、それぞれデバッグ メッセージが出力されます。 出力が終わると、一時的な **XLOPER** や **XLOPER12** 用に作成された一時メモリはすべて解放されます。
+Framework library functions. **Excel** is a wrapper for the [Excel4](excel4-excel12.md) function. **Excel12f** is a wrapper for the [Excel12](excel4-excel12.md) function. Each checks to see that none of the arguments is zero, which would indicate that the creation of a temporary **XLOPER** or **XLOPER12** failed. If an error occurs, each prints a debug message. When finished, each frees all temporary memory that might have been created for temporary **XLOPER**s and **XLOPER12**s.
   
  **Excel12f**から Excel 2007 C API ライブラリ以降の DLL からのみ呼び出すことができます。さらに、Excel 2007 以降で起動したときのみ動作し、それ以外は **xlretFailed** で失敗します。 
   
@@ -53,7 +53,7 @@ LPXLOPER12 argument1, ...);
   
 ## <a name="return-value"></a>戻り値
 
-どちらの関数も、**Excel4**、**Excel4v**、**Excel12**、**Excel12v** と同様のエラー コードや成功コードを返します。 これらのコードの詳細については、「[Excel4/Excel12](excel4-excel12.md)」を参照してください。 さらに、パラメーターに対する NULL ポインターが検出された場合、これらのフレームワーク関数は、C API を呼び出さずに、**xlretFailed** を返します。 
+Both functions return the same error and success codes as **Excel4**, **Excel4v**, **Excel12**, and **Excel12v**. See [Excel4/Excel12](excel4-excel12.md) for a full description of these codes. In addition, these Framework functions return **xlretFailed** without calling the C API if a NULL pointer to a parameter is detected. 
   
 ## <a name="example"></a>例
 

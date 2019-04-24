@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 8c2f2d83-b7aa-456e-b473-a54897bc35ae
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: b7a2fbdf723d06dcf9b02789178d7d12d0515884
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: a191c07d2a06a1cb6123c235e8fac69d90426758
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32311040"
 ---
 # <a name="fdance"></a>fDance
 

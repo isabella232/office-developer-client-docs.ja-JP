@@ -7,11 +7,11 @@ ms.assetid: 97efe972-d873-47d7-be81-8ae3461870c4
 description: ユーザー定義の数値書式を作成して数値の表示方法を制御する方法について説明します。
 localization_priority: Priority
 ms.openlocfilehash: b23b1f7ee806a03df8f1c0d6ec1de0f3282b427b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282202"
 ---
 # <a name="custom-numeric-formats-for-the-format-function-access-custom-web-app"></a>Format 関数 (カスタム web アプリケーションのアクセス) 用のカスタムの数値書式
 

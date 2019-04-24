@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 9ad541f6-0b35-4f50-926a-8940e3f8033a
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 25669cfc705e797b80be0fab590d809e8f1e3b5c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 08bde61573874c137b18856fd24d23b324a35328
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32311005"
 ---
 # <a name="debugprintf"></a>debugPrintf
 

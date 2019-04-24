@@ -8,24 +8,24 @@ ms.assetid: b941a0c7-9753-4920-bb6d-cbba94ba9422
 description: 指定した式が NULL かどうかを判断します。
 localization_priority: Priority
 ms.openlocfilehash: fe6a0fe4f182a1385304b783e7cfaaf515f732d4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32311138"
 ---
 # <a name="is-not-null-access-custom-web-app"></a>IS [NOT] NULL (Access カスタム Web アプリ)
 
 指定した式が NULL かどうかを判断します。
   
 > [!IMPORTANT]
-> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/ja-JP/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="syntax"></a>構文
 
  *expression* **IS** [  *NOT*  ] **NULL**
   
-**IS [NOT] NULL** 述語には、次の引数が含まれています。 
+**IS [NOT] NULL** 述語には次の引数があります。 
   
 |||
 |:-----|:-----|

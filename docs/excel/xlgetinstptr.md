@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: a166f39c-f10b-4e56-8b5d-e6a54ee08c8f
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 7cc07093e5db335d01fe85527746594d34d4d938
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: fd4b4ad5bf52f29384ef7e0ba738c350189f471e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310053"
 ---
 # <a name="xlgetinstptr"></a>xlGetInstPtr
 
@@ -36,7 +36,7 @@ Excel4(xlGetInstPtr, LPXLOPER pxRes, 0);Excel12(xlGetInstPtr, LPXLOPER12 pxRes, 
 
 この関数を使用すると、DLL を呼び出している Excel の複数の実行中インスタンスを特定できます。
   
-この関数は、32 ビットと 64 ビットの両方のバージョンの Excel で適切な値を返します。 [xlGetInst](xlgetinst.md) 関数の拡張機能として Excel 2010 で導入され、32 ビット バージョンの Excel でのみ正常に動作します。 
+This function returns a correct value with both 32-bit and 64-bit versions of Excel. It was introduced in Excel 2010 as an extension to the [xlGetInst](xlgetinst.md) function, which works correctly only with 32-bit versions of Excel. 
   
 この関数は、API のコールバック関数の [Excel4 と Excel12](excel4-excel12.md) の両方を使用して呼び出されたときに正常に作動します。これは **XLOPER** と **XLOPER12** が **xltypeBigData** の型の値をサポートする同じ構造を持つからです。 
   

@@ -1,1 +1,1 @@
-# <a name="welcome-to-officedocs-dev-client-docs"></a>Officedocs 開発クライアント ドキュメントへようこそ!
+# <a name="welcome-to-officedocs-dev-client-docs"></a>officedocs へようこそ-クライアント-ドキュメント

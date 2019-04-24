@@ -9,12 +9,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 2b23c75e-2a95-4f26-8714-2a73f5e326a7
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 9d726d89c859e2f7428b459971d5d13586f144e9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 97328cbc57a9144a133524774e3be10a84a96bf4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32311117"
 ---
 # <a name="evaluating-names-and-other-worksheet-formula-expressions"></a>名前と他のワークシートの数式を評価する
 

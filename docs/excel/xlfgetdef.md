@@ -9,18 +9,18 @@ keywords:
 localization_priority: Normal
 ms.assetid: 68f5edbd-9040-46d3-acd5-dd51ca82f6fa
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 030c4e501e8a9eb4b6ce29d7fe0e171324b50b5c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 014db553156849d84bd07e0e416f8cb3fefb4e0b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310242"
 ---
 # <a name="xlfgetdef"></a>xlfGetDef
 
 **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-ブックの特定の領域、値、数式に定義されている名前をテキストとして返します。 Excel では、この値は、**[名前の管理]** ダイアログ ボックスの **[名前]** 列に表示されます。このダイアログ ボックスは、**[数式]** タブの **[定義された名前]** セクションで **[名前の管理]** をクリックすると表示されます。**xlfGetDef** を使用して、定義に対応する名前を取得します。 名前の定義を取得するには、[xlfGetName](xlfgetname.md) を使用します。
+Returns the name, as text, that is defined for a particular area, value, or formula in a workbook. In Excel, this value is displayed in the **Name** column of the **Name Manager** dialog box, which is displayed when you click **Name Manager** in the **Defined Names** section on the **Formulas** tab. Use **xlfGetDef** to get the name that corresponds to a definition. To get the definition of a name, use [xlfGetName](xlfgetname.md).
   
 ```cpp
 Excel12(xlfGetDef, LPXLOPER12 pxRes, 3, LPXLOPER12 pxDefText, LPXLOPER12 pxDocumentText, LPXLOPER12 pxTypeNum);
@@ -45,8 +45,8 @@ _pxTypeNum_ (**xltypeNum**)
 |**_pxTypeNum_**|**返される値**|
 |:-----|:-----|
 |1 または省略  <br/> |標準名のみ。  <br/> |
-|2  <br/> |非表示名のみ。  <br/> |
-|3  <br/> |すべての名前。  <br/> |
+|pbm-2  <br/> |非表示名のみ。  <br/> |
+|1/3  <br/> |すべての名前。  <br/> |
    
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
@@ -60,10 +60,10 @@ _pxTypeNum_ (**xltypeNum**)
   
 |**Excel で定義された名前**|**_pxDefText_**|**_pxDocumentText_**|**_pxTypeNum_**|**戻り値**|
 |:-----|:-----|:-----|:-----|:-----|
-|Sheet4 の指定の範囲には「Sales」という名前が付いています。  <br/> |"R2C2:R9C6"  <br/> |"Sheet4"  <br/> |\<省略\>  <br/> |"Sales"  <br/> |
-|Sheet4 の値 100 は、「Constant」として定義されています。  <br/> |"100"  <br/> |"Sheet4"  <br/> |\<省略\>  <br/> |"Constant"  <br/> |
-|Sheet4 の指定の数式には「SumTotal」という名前が付いています。  <br/> |"SUM(R1C1:R10C1)"  <br/> |"Sheet4"  <br/> |\<省略\>  <br/> |"SumTotal"  <br/> |
-|アクティブなシートの非表示名「Counter」として 3 が定義されています。  <br/> |"3"  <br/> |\<省略\>  <br/> |2  <br/> |"Counter"  <br/> |
+|Sheet4 の指定の範囲には「Sales」という名前が付いています。  <br/> |"R2C2:R9C6"  <br/> |"Sheet4"  <br/> |\<�ȗ�\>  <br/> |"Sales"  <br/> |
+|Sheet4 の値 100 は、「Constant」として定義されています。  <br/> |"100"  <br/> |"Sheet4"  <br/> |\<�ȗ�\>  <br/> |"Constant"  <br/> |
+|Sheet4 の指定の数式には「SumTotal」という名前が付いています。  <br/> |"SUM(R1C1:R10C1)"  <br/> |"Sheet4"  <br/> |\<�ȗ�\>  <br/> |"SumTotal"  <br/> |
+|アクティブなシートの非表示名「Counter」として 3 が定義されています。  <br/> |"3"  <br/> |\<省略\>  <br/> |pbm-2  <br/> |"Counter"  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -12,31 +12,31 @@ api_type:
 - COM
 ms.assetid: 43052e57-4712-410a-eb07-2a7c5bc124bd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5f80b67caa803c5e89de6cd74baaebd3a9f2b2a5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 387a7bdf2939f9ec618b0e86eeb00f3fddc9caa2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309689"
 ---
 # <a name="ipstx5--ipstx4"></a>IPSTX5 : IPSTX4
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このインターフェイスは、IOSTX インターフェイスを使用するレプリケーションを実行するときに、ヘルパー機能を提供します。
+このインターフェイスは、iostx インターフェイスを介してレプリケーションを実行するときに、ヘルパー機能を提供します。
   
 |||
 |:-----|:-----|
-|によって提供されます。  <br/> |[IMsgStore](imsgstoreimapiprop.md)に対してクエリを実行 <br/> |
-|インターフェイスの識別子。  <br/> |IID_IPSTX5  <br/> |
+|提供元  <br/> |[IMsgStore](imsgstoreimapiprop.md)のクエリ <br/> |
+|インターフェイス識別子:  <br/> |IID_IPSTX5  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-| *プレース ホルダー メンバー*  <br/> | *いないサポートまたは文書化されています。*  <br/> |
+| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -44,5 +44,5 @@ ms.locfileid: "22591388"
 
 [レプリケーション API について](about-the-replication-api.md)
   
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
 

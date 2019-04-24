@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: c57ada0e-b9a1-496b-8548-75686d8cba4e
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 559f1c609000608d0eb920a0240ac8848e4bc2a7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 3d532e0eb46daa412711344421936a58da309b7b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310004"
 ---
 # <a name="imsgserviceadminmsgservicetransportorder"></a>IMsgServiceAdmin::MsgServiceTransportOrder
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-どのトランスポートにメッセージを配信するプロバイダーの呼び出し順序を設定します。
+メッセージを配信するためにトランスポートプロバイダーが呼び出される順序を設定します。
   
 ```cpp
 HRESULT MsgServiceTransportOrder(
@@ -37,37 +37,37 @@ HRESULT MsgServiceTransportOrder(
 
 ## <a name="parameters"></a>パラメーター
 
- _cUID_
+ _cuid_
   
-> [in]_LpUIDList_パラメーターに一意の識別子の数。 
+> 順番_lpuidlist_パラメーターの一意の識別子の数。 
     
- _lpUIDList_
+ _lpuidlist_
   
-> [in]トランスポート プロバイダーを表す一意の識別子の配列へのポインター。 配列には、現在のプロファイルで構成されているトランスポート プロバイダーごとに 1 つの識別子が含まれています。
+> 順番トランスポートプロバイダーを表す一意の識別子の配列へのポインター。 配列には、現在のプロファイルで構成されている各トランスポートプロバイダーの識別子が1つ含まれています。
     
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 輸送注文が正常に設定されました。
+> トランスポートオーダーが正常に設定されました。
     
 MAPI_E_BUSY 
   
-> _CUID_パラメーターの値は、プロファイルの中に、トランスポート プロバイダーの数によって異なります。 
+> _cuid_パラメーターの値は、プロファイルに実際に含まれるトランスポートプロバイダーの数とは異なります。 
     
 MAPI_E_NOT_FOUND 
   
-> _LpUIDList_パラメーターで渡された[MAPIUID](mapiuid.md)の構造体の 1 つ以上は、プロファイルの現在のトランスポート プロバイダーを参照しません。 
+> _lpuidlist_パラメーターに渡された1つ以上の[MAPIUID](mapiuid.md)構造体が、プロファイルに現在含まれているトランスポートプロバイダーを参照していません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMsgServiceAdmin::MsgServiceTransportOrder**メソッドは、プロファイルに、トランスポート プロバイダーの配信順序を設定します。 _LpUIDList_パラメーターには、 [IMsgServiceAdmin から返されるテーブルの**PR_PROVIDER_UID** ([PidTagProviderUid](pidtagprovideruid-canonical-property.md)) のプロパティから取得したトランスポート プロバイダーのエントリの識別子の一覧が含まれている必要があります。GetProviderTable](imsgserviceadmin-getprovidertable.md)メソッドです。 クライアント アプリケーションは、 _lpUIDList_の完全なリストを渡す必要があります。
+**IMsgServiceAdmin:: msgservicetransportorder**メソッドは、プロファイル内のトランスポートプロバイダーの配信順序を設定します。 _lpuidlist_パラメーターには、IMsgServiceAdmin から返されるテーブルの**PR_PROVIDER_UID** ([PidTagProviderUid](pidtagprovideruid-canonical-property.md)) プロパティから取得した、トランスポートプロバイダーのエントリ識別子の並べ替えられたリストを含める必要があります[。getprovidertable](imsgserviceadmin-getprovidertable.md)メソッド。 クライアントアプリケーションは、完全なリストを_lpuidlist_に渡す必要があります。
   
- **SetTransportOrder**のオーバーライドは、STATUS_XP_PREFER_LAST フラグを**PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) のプロパティの設定などのプロバイダーの設定を転送します。 
+ **settransportorder**は、 **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) プロパティで設定された STATUS_XP_PREFER_LAST フラグなど、トランスポートプロバイダーの設定より優先されます。 
   
 ## <a name="see-also"></a>関連項目
 

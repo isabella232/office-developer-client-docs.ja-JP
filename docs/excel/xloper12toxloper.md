@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: b46f87c4-778b-4502-be57-c3725f73a644
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 2c06102699db8810da803ecc0ddfa30375fcc125
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 148353dcec1cc051aa44d18c0a081b6623e3759a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310074"
 ---
 # <a name="xloper12toxloper"></a>XLOper12ToXLOper
 

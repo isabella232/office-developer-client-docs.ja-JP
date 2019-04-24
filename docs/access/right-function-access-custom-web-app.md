@@ -1,5 +1,5 @@
 ---
-title: Right 関数 (カスタム web アプリケーションのアクセス)
+title: Right 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 74cefaa2-3ac4-4a65-af0b-2ee4d9644a93
 description: 文字列の右側の部分を、指定された文字数分だけ返します。
-ms.openlocfilehash: d192e0a2d592cc2e23319289c6d5b134d6a7f1a9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: eb87f6d238802a950a4858bae942f75fdefc1d5b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310928"
 ---
-# <a name="right-function-access-custom-web-app"></a>Right 関数 (カスタム web アプリケーションのアクセス)
+# <a name="right-function-access-custom-web-app"></a>Right 関数 (Access カスタム web アプリ)
 
 文字列の右側の部分を、指定された文字数分だけ返します。
   
@@ -23,13 +23,13 @@ ms.locfileid: "19798723"
   
 ## <a name="syntax"></a>構文
 
- **右**(*TextExpression*、*長さ*) 
+ **右**(*textexpression*、 *Length*) 
   
 **Right** 関数の引数は次のとおりです。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *TextExpression*  <br/> |文字列式を指定します。  <br/> |
-| *Length*  <br/> |*TextExpression*の文字の数が返されるかを指定する正の整数です。  <br/> |
+| *TextExpression*  <br/> |文字列式。  <br/> |
+| *Length*  <br/> |は、返される*textexpression*の文字の数を指定する正の整数です。  <br/> |
    
 

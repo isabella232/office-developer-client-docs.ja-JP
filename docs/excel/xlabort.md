@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 0fe71454-6b00-464b-8abf-afb209d57754
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: e90cbe496404b4cc602dee1ad21c91c8f5f91bfd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 08ab69252520e76a5631c5e32a3970d2d95b1ff4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310256"
 ---
 # <a name="xlabort"></a>xlAbort
 
@@ -32,7 +32,7 @@ Excel12(xlAbort, LPXLOPER12 pxRes, 1, LPXLOPER12 pxRetain);
 
  _pxRetain_ (**xltypeBool**)
   
-(省略可能)。 **FALSE** の場合、この関数は中断状態を確認し、保留中の中断をすべて解除します。 これにより、ユーザーは中断状態を無視して続行できます。 この引数が省略されているか、**TRUE** の場合、関数はユーザーによる中止を解除せずに確認します。
+(Optional). If **FALSE**, this function checks for the break condition and clears any pending break. This enables the user to continue despite the break condition. If this argument is omitted or is **TRUE**, the function checks for a user abort without clearing it.
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
