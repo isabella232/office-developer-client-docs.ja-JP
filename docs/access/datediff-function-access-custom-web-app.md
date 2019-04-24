@@ -1,19 +1,19 @@
 ---
-title: DateDiff 関数 (カスタム web アプリケーションのアクセス)
+title: DateDiff 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1c58ee87-0f57-4643-be4d-62da815df705
 description: 指定した開始日と終了日間で超えられた、指定した日付部分境界のカウントを戻します。
-ms.openlocfilehash: fe898ec5eb59cb341250cb0c0e2e35bc55d37eb3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1cce8a501c5a57384372e681f903baa4f4c20bef
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280725"
 ---
-# <a name="datediff-function-access-custom-web-app"></a>DateDiff 関数 (カスタム web アプリケーションのアクセス)
+# <a name="datediff-function-access-custom-web-app"></a>DateDiff 関数 (Access カスタム web アプリ)
 
 指定した開始日と終了日間で超えられた、指定した日付部分境界のカウントを戻します。
   
@@ -22,31 +22,31 @@ ms.locfileid: "19798592"
   
 ## <a name="syntax"></a>構文
 
-**Datediff 関数**(*日付構成要素*、*開始日*、*終了日*) 
+**DateDiff**(*DatePart*、 *StartDate*、 *EndDate*) 
   
 **DateDiff** 関数には、以下の引数があります。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *DatePart*  <br/> |*開始日*と*終了日*を超えた境界の種類を指定する部分です。 有効な設定のリストの「解説」を参照してください。  <br/> |
-| *StartDate*  <br/> |日付/時刻の値に解決可能な式。 *日付*引数の式、列式、ユーザー定義変数またはリテラル文字列です。  <br/> |
-| *終了日*  <br/> |日付/時刻の値に解決可能な式。 *日付*引数の式、列式、ユーザー定義変数またはリテラル文字列です。  <br/> |
+| *DatePart*  <br/> |は、開始日** と終了** 日のうちで境界の種類を指定する部分です。 有効な設定のリストについては、注釈のセクションを参照してください。  <br/> |
+| *StartDate*  <br/> |Date/Time 値に解決できる式。 *Date*引数 expression、column 式、ユーザー定義の変数または文字列リテラル。  <br/> |
+| *EndDate*  <br/> |Date/Time 値に解決できる式。 *Date*引数 expression、column 式、ユーザー定義の変数または文字列リテラル。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-*日付構成要素*のすべての有効な引数を次の表に一覧します。 
+The following table lists all valid  *DatePart*  arguments. 
   
 |***DatePart***|
 |:-----|
 |**year** <br/> |
-|**四半期** <br/> |
+|**現** <br/> |
 |**month** <br/> |
 |**dayofyear** <br/> |
 |**day** <br/> |
-|**1 週間** <br/> |
+|**回** <br/> |
 |**hour** <br/> |
 |**minute** <br/> |
 |**second** <br/> |
-|**millisecond** <br/> |
+|**ミリ** <br/> |
    
 

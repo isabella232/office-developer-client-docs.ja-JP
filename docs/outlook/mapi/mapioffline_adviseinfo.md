@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 20a46c69-d6ae-7d17-f8af-12952867d342
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 82869fa479ebe8a4d7b1881cec5d5c243b7d7957
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 3cb110fdcbbd88e494c44ba2ed73cc26674638ca
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270036"
 ---
 # <a name="mapiofflineadviseinfo"></a>MAPIOFFLINE_ADVISEINFO
  
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-オフライン オブジェクトに対してコールバックを登録するのには**[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)** の情報を提供します。 
+**[IMAPIOfflineMgr::](imapiofflinemgr-advise.md)** 通知して、オフラインオブジェクトのコールバックを登録するようにアドバイスします。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
-**IMAPIOfflineMgr::Advise**を参照してください。 
+「 **IMAPIOfflineMgr:: Advise**」を参照してください。 
   
 ```cpp
 typedef struct 
@@ -39,21 +39,21 @@ typedef struct
 
 ## <a name="members"></a>Members
 
-_ulSize_: **MAPIOFFLINE_ADVISEINFO**のサイズです。 
+_ulsize_: **MAPIOFFLINE_ADVISEINFO**のサイズ。 
     
-_ulClientToken_: コールバックは、クライアントで定義されているトークンです。 *UlClientToken* 、 **[MAPIOFFLINE_NOTIFY](mapioffline_notify.md)** 構造体のメンバー **[IMAPIOfflineNotify::Notify](imapiofflinenotify-notify.md)** に渡されたすることをお勧めします。 
+_ulclienttoken_: クライアントによってコールバックに対して定義されたトークン。 これは、 **[IMAPIOfflineNotify:: NOTIFY](imapiofflinenotify-notify.md)** に渡される**[MAPIOFFLINE_NOTIFY](mapioffline_notify.md)** 構造の*ulclienttoken*メンバーです。 
     
-_CallbackType_: を作成するためのコールバックの種類です。
+/_テキスト_: 作成するコールバックの種類。
     
    -  MAPIOFFLINE_CALLBACK_TYPE_NOTIFY 
     
-   - コールバックの種類は、通知されたものです。 これは、コールバックの唯一のサポートされている型です。  *pCallback*は、 **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** インタ フェースを示す必要があります。 
+   - コールバックの種類は、通知によって行います。 これは、サポートされている唯一の種類のコールバックです。  *pcallback*は、インターフェイス**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** を示す必要があります。 
     
-_pCallback_: コールバックを使用するインターフェイスです。 これは、 **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** のクライアントの実装です。 
+_pcallback_: コールバックに使用するインターフェイス。 これは、クライアントによる**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** の実装です。 
     
-_ulAdviseTypes_: のアドバイズ、通知の条件で識別される型。 のみサポートされている型は、MAPIOFFLINE_ADVISE_TYPE_STATECHANGE です。
+_ulAdviseTypes_: アドバイスの条件で識別される、アドバイスの種類。 サポートされている唯一の種類は MAPIOFFLINE_ADVISE_TYPE_STATECHANGE です。
     
-_ulStateMask_: MAPIOFFLINE_STATE_ALL は、唯一サポートされている状態です。
+_ulStateMask_: サポートされている唯一の状態は、MAPIOFFLINE_STATE_ALL です。
     
 ## <a name="see-also"></a>関連項目
 

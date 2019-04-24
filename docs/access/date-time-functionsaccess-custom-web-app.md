@@ -6,37 +6,37 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: acd4e050-c3a4-4bcf-bd35-a06e7a93bbb1
 description: ''
-ms.openlocfilehash: 6913a9c8d088adb34e9e3951bed577ab64b9df57
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1b22d76687772de212d8abd42022405f51b980b3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280699"
 ---
 # <a name="datetime-functions-access-custom-web-app"></a>日付/時刻関数 (Access カスタム Web アプリ)
 
 > [!IMPORTANT]
-> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
 
 
-- [DateAdd 関数 (カスタム web アプリケーションのアクセス)](dateadd-function-access-custom-web-app.md)
+- [DateAdd 関数 (Access カスタム web アプリ)](dateadd-function-access-custom-web-app.md)
     
-- [DateDiff 関数 (カスタム web アプリケーションのアクセス)](datediff-function-access-custom-web-app.md)
+- [DateDiff 関数 (Access カスタム web アプリ)](datediff-function-access-custom-web-app.md)
     
-- [DateFromParts 関数 (カスタム web アプリケーションのアクセス)](datefromparts-function-access-custom-web-app.md)
+- [datefromparts 関数 (Access カスタム web アプリ)](datefromparts-function-access-custom-web-app.md)
     
-- [DatePart 関数 (カスタム web アプリケーションのアクセス)](datepart-function-access-custom-web-app.md)
+- [DatePart 関数 (Access カスタム web アプリ)](datepart-function-access-custom-web-app.md)
     
-- [Day 関数 (カスタム web アプリケーションのアクセス)](day-function-access-custom-web-app.md)
+- [Day 関数 (Access カスタム web アプリ)](day-function-access-custom-web-app.md)
     
-- [EOMonth 関数 (カスタム web アプリケーションのアクセス)](eomonth-function-access-custom-web-app.md)
+- [EOMonth 関数 (Access カスタム web アプリ)](eomonth-function-access-custom-web-app.md)
     
-- [Month 関数 (カスタム web アプリケーションのアクセス)](month-function-access-custom-web-app.md)
+- [Month 関数 (Access カスタム web アプリ)](month-function-access-custom-web-app.md)
     
-- [Now 関数を使用 (カスタム web アプリケーションのアクセス)](now-function-access-custom-web-app.md)
+- [Now 関数 (Access カスタム web アプリ)](now-function-access-custom-web-app.md)
     
-- [Today 関数 (カスタム web アプリケーションのアクセス)](today-function-access-custom-web-app.md)
+- [Today 関数 (Access カスタム web アプリ)](today-function-access-custom-web-app.md)
     
-- [Year 関数 (カスタム web アプリケーションのアクセス)](year-function-access-custom-web-app.md)
+- [Year 関数 (Access カスタム web アプリ)](year-function-access-custom-web-app.md)
     
 

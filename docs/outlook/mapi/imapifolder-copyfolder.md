@@ -1,5 +1,5 @@
 ---
-title: IMAPIFolderCopyFolder
+title: imapifoldercopyfolder
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 2c1c25c6-1aec-4d9e-a2a3-bf1b4a2908b8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 134a492dbc86dd0ce6b3795d5ae40b334c14d468
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3d9c1e88b12baf50593212a3ae3c02907ce6617b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280179"
 ---
 # <a name="imapifoldercopyfolder"></a>IMAPIFolder::CopyFolder
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-サブフォルダーを移動またはコピーします。
+サブフォルダーをコピーまたは移動します。
   
 ```cpp
 HRESULT CopyFolder(
@@ -44,39 +44,39 @@ HRESULT CopyFolder(
 
  _cbEntryID_
   
-> [in]_LpEntryID_パラメーターで指定されたエントリの識別子のバイト数です。 
+> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
     
- _lpEntryID_
+ _lて tryid_
   
-> [in]サブフォルダーをコピーまたは移動するには、エントリの識別子へのポインター。
+> 順番コピーまたは移動するサブフォルダーのエントリ識別子へのポインター。
     
- _lpInterface_
+ _lpinterface_
   
-> [in]_LpDestFolder_パラメーターが指すフォルダーへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 フォルダーの標準的なインターフェイスを取得するサービス プロバイダーは、NULL を渡す[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)。 に対する、IID_IMAPIProp、IID_IMAPIContainer、IID_IMAPIFolder、 _lpInterface_の有効な値が含まれます。 
+> 順番_lpdestfolder_パラメーターが指すフォルダーへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 NULL を渡すと、サービスプロバイダーは標準のフォルダーインターフェイス、 [imapifolder: IMAPIContainer](imapifolderimapicontainer.md)を返します。 _lpinterface_の有効な値は、IID_IUnknown、IID_IMAPIProp、IID_IMAPIContainer、および IID_IMAPIFolder です。 
     
- _lpDestFolder_
+ _lpdestfolder_
   
-> [in]開いているフォルダーにコピーまたは移動したサブフォルダーが表示されるへのポインター。
+> 順番コピーまたは移動したサブフォルダーを受け取るための、開いているフォルダーへのポインター。
     
- _lpszNewFolderName_
+ _lpsznewfoldername_
   
-> [in]その新しい場所にコピーまたは移動したフォルダーの名前へのポインター。 _LpszNewFolderName_は、NULL に設定されている場合、コピー先のフォルダーの名前の複製元のサブフォルダーの名前が使用されます。 
+> 順番コピーまたは移動先のフォルダーの名前へのポインター。 _lpsznewfoldername_が NULL に設定されている場合、source サブフォルダーの名前が宛先フォルダーの名前として使用されます。 
     
- _ulUIParam_
+ _uluiparam_
   
-> [in]進行状況インジケーターの親ウィンドウへのハンドル。 _UlFlags_パラメーターに FOLDER_DIALOG フラグが設定されていない場合、 _ulUIParam_パラメーターは無視されます。 
+> 順番進行状況インジケーターの親ウィンドウへのハンドル。 _uluiparam_パラメーターは、 _ulflags_パラメーターの FOLDER_DIALOG フラグが設定されていない場合は無視されます。 
     
- _lpProgress_
+ _lpprogress_
   
-> [in]進行状況インジケーターを表示する進行中のオブジェクトへのポインター。 _LpProgress_に NULL を渡した場合、メッセージ ストア プロバイダーは、MAPI 処理中のオブジェクトの実装を使用して進行状況のインジケーターを表示します。 _UlFlags_に FOLDER_DIALOG フラグが設定されていない限り、 _lpProgress_パラメーターは無視されます。
+> 順番進行状況インジケーターを表示する progress オブジェクトへのポインター。 _lpprogress_で NULL が渡された場合、メッセージストアプロバイダーは MAPI 進行状況オブジェクトの実装を使用して進行状況インジケーターを表示します。 FOLDER_DIALOG フラグが_ulflags_で設定されていない場合、 _lpprogress_パラメーターは無視されます。
     
  _ulFlags_
   
-> [in]コピーまたは移動操作を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番コピー操作または移動操作を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 COPY_SUBFOLDERS 
   
-> すべてのサブフォルダーにコピーされるサブフォルダーにもコピーしてください。 コピー操作の COPY_SUBFOLDERS が設定されていない、 _lpEntryID_で識別されるサブフォルダーのみがコピーされます。 移動操作で、COPY_SUBFOLDERS の動作は既定のフラグが設定されているかどうかに関係なくです。 
+> コピーするサブフォルダー内のすべてのサブフォルダーもコピーする必要があります。 コピー操作で COPY_SUBFOLDERS が設定されていない場合は、 _l tryid_で識別されるサブフォルダーのみがコピーされます。 移動操作では、フラグが設定されているかどうかに関係なく、COPY_SUBFOLDERS の動作が既定値になります。 
     
 FOLDER_DIALOG 
   
@@ -84,81 +84,81 @@ FOLDER_DIALOG
     
 FOLDER_MOVE 
   
-> 代わりに移動するのには、サブフォルダーをコピーします。 FOLDER_MOVE が設定されていない場合は、サブフォルダーがコピーされます。
+> サブフォルダーはコピーではなく移動されます。 FOLDER_MOVE が設定されていない場合は、サブフォルダーがコピーされます。
     
 MAPI_DECLINE_OK 
   
-> **CopyFolder**メソッドのサポート オブジェクトの[IMAPISupport::DoCopyTo](imapisupport-docopyto.md)または[IMAPISupport::DoCopyProps](imapisupport-docopyprops.md)メソッドを呼び出すことによって実装されている場合は、 **CopyFolder**する必要があります代わりにすぐに返すこと MAPI_E_、メッセージ ストア プロバイダーの通知します。DECLINE_COPY。 
+> サポートオブジェクトの imapisupport を呼び出して**copyfolder**を実装する場合に、メッセージストアプロバイダーに通知します[。:D ocopyto](imapisupport-docopyto.md)または[imapisupport::D ocopyprops](imapisupport-docopyprops.md)メソッド、 **copyfolder**はすぐに MAPI_E_ を返す必要があります。DECLINE_COPY。 
     
 MAPI_UNICODE 
   
-> Unicode 形式では、コピー先のフォルダーの名前です。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式のフォルダー名です。
+> 宛先フォルダーの名前は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、フォルダー名は ANSI 形式になります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 指定されたフォルダーは正常にコピーまたは移動されています。
+> 指定したフォルダーが正常にコピーまたは移動されました。
     
 MAPI_E_BAD_CHARWIDTH 
   
-> か、MAPI_UNICODE フラグが設定されたメッセージ ストア プロバイダーは、Unicode をサポートしていないまたは MAPI_UNICODE が設定されていないとメッセージ ストア プロバイダーは、Unicode だけをサポートしています。
+> MAPI_UNICODE フラグが設定されており、メッセージストアプロバイダーが unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、メッセージストアプロバイダーが unicode のみをサポートしています。
     
 MAPI_E_COLLISION 
   
-> 移動またはコピーされているフォルダーの名前は、コピー先のフォルダーのサブフォルダーの名前と同じです。 メッセージ ストア プロバイダーには、一意のフォルダー名が必要です。
+> 移動またはコピーするフォルダーの名前が、移動先フォルダーのサブフォルダーの名前と同じです。 メッセージストアプロバイダーには、一意のフォルダー名が必要です。
     
 MAPI_E_DECLINE_COPY 
   
-> プロバイダーのサポートのオブジェクトのメソッドを呼び出すことによってこのメソッドを実装して、呼び出し元に MAPI_DECLINE_OK フラグが渡されます。
+> プロバイダーは、サポートオブジェクトのメソッドを呼び出すことによってこのメソッドを実装し、発信者が MAPI_DECLINE_OK フラグを渡しています。
     
 MAPI_E_FOLDER_CYCLE 
   
-> ソースフォルダーには直接的または間接的にコピー先のフォルダーが含まれています。 作業時間の大幅な可能性がありますが完了前に、この条件が検出された、元とコピー先のフォルダーを部分的に変更された可能性がありますので。 
+> ソースフォルダーが直接または間接的に、宛先フォルダーを含んでいる。 この条件が検出される前に、重要な作業が実行されている可能性があるため、ソースフォルダーと宛先フォルダーの一部が変更されている可能性があります。 
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> 呼び出しが成功したが、すべてのエントリが正常にコピーされました。 この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
+> 呼び出しは成功しましたが、すべてのエントリが正常にコピーされませんでした。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPIFolder::CopyFolder**メソッドは、コピーまたはサブフォルダーを別の場所に移動します。 サブフォルダーのコピーや移動は、サブフォルダーとして、コピー先のフォルダーに追加されます。 
+**imapifolder:: copyfolder**メソッドは、ある場所から別の場所にサブフォルダーをコピーまたは移動します。 コピーまたは移動しているサブフォルダーは、サブフォルダーとして、宛先フォルダーに追加されます。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-コピーまたは移動操作には、COPY_SUBFOLDERS フラグを設定することによって示されているように、複数のフォルダーが含まれている場合、可能な限り完全にフォルダーごとに操作を実行します。 移動またはコピーするフォルダーのいずれかの場合があります存在しないまたは既に移動または別の場所にコピーします。 メモリが不足している、ディスク領域、またはメッセージ ・ ストア内の破損が不足しているなど、ユーザーが制御できない障害が発生した場合を除きは、処理の途中で操作を停止しません。
+コピー操作または移動操作で、COPY_SUBFOLDERS フラグを設定することによって複数のフォルダーが含まれている場合は、その操作を各フォルダーで可能な限り完全に実行します。 移動またはコピーするフォルダーの1つが存在しない場合や、別の場所に移動またはコピーされている場合があります。 メモリが不足している、ディスクの空き領域が不足している、メッセージストアが破損しているなど、操作を途中で停止しないようにしてください。
   
-コピーしたメッセージですべてのメッセージ エントリの識別子を保持しようとしてください。 エントリの識別子を保持するためにも実行してくださいする必要がありますが、必須ではありません。 
+コピーしたメッセージのすべてのメッセージエントリ識別子を保持するようにしてください。 また、エントリ識別子を保持する必要はありませんが、これは必須ではありません。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-次の条件下で、これらの戻り値を期待してください。
+これらの戻り値は、次の条件に当てはまることが予想されます。
   
-|**条件**|**戻り値**|
+|**Condition**|**戻り値**|
 |:-----|:-----|
-|**CopyFolder**が正常にコピーまたは、すべてのメッセージとサブフォルダーを移動します。  <br/> |S_OK  <br/> |
-|**CopyFolder**は、正常にコピーまたはすべてのメッセージとサブフォルダーに移動できませんでした。  <br/> |MAPI_W_PARTIAL_COMPLETION または MAPI_E_NOT_FOUND  <br/> |
-|**CopyFolder**は完了できませんでした。  <br/> |MAPI_E_NOT_FOUND を除くエラー値  <br/> |
+|**copyfolder**は、メッセージとサブフォルダーごとに正常にコピーまたは移動されました。  <br/> |S_OK  <br/> |
+|**copyfolder**は、すべてのメッセージとサブフォルダを正常にコピーまたは移動できませんでした。  <br/> |MAPI_W_PARTIAL_COMPLETION または MAPI_E_NOT_FOUND  <br/> |
+|**copyfolder**を完了できませんでした。  <br/> |MAPI_E_NOT_FOUND を除くすべてのエラー値  <br/> |
    
-**CopyFolder**が完了することではない場合と仮定しないでその作業は実行されませんでした。 **CopyFolder**をコピーまたはエラーが発生する前に 1 つまたは複数のメッセージとサブフォルダーを移動することがされている可能性があります。 
+**copyfolder**を完了できない場合でも、作業が行われていないとは限りません。 エラーが発生する前に、 **copyfolder**が1つ以上のメッセージとサブフォルダーをコピーまたは移動できた可能性があります。 
   
-_LpEntryID_で存在しないフォルダーのエントリ id が渡された場合に、 **CopyFolder**は、メッセージ ストアの実装によって MAPI_W_PARTIAL_COMPLETION または MAPI_E_NOT_FOUND を返します。 
+存在しないフォルダーのエントリ識別子が_lMAPI_W_PARTIAL_COMPLETION tryid_で渡された場合、 **copyfolder**は、メッセージストアの実装に応じて、または MAPI_E_NOT_FOUND を返します。 
   
-によって、メッセージ ストア プロバイダーでは、元のメッセージのエントリ id は、コピーされたメッセージには保持されない場合があります。 可能な限り、エントリの識別子を保持する必要がありますが、必須ではありません。 一般に次のシナリオに依存します。
+メッセージストアプロバイダーによっては、元のメッセージのエントリ識別子がコピーされたメッセージに保持されている場合があります。 可能な限り、エントリ識別子は保持する必要がありますが、必須ではありません。 通常は、次のシナリオに依存します。
   
-- 2 種類のメッセージ ・ ストア間でフォルダーを移動するときを変更するエントリの識別子が保証されます。
+- 2つの異なる種類のメッセージストア間でフォルダーを移動する場合、エントリ識別子の変更は保証されます。
     
-- 同じ種類の 2 つのメッセージ ストア間でフォルダーを移動するときにほとんどのエントリ id を変更します。
+- 同じ種類の2つのメッセージストア間でフォルダーを移動する場合、エントリ識別子はほぼ常に変更されます。
     
-- 同じメッセージ ・ ストア内の別の場所にフォルダーを移動すると、エントリの識別子または可能性がありますしない変更、メッセージによって、プロバイダーを格納します。
+- フォルダーを同じメッセージストア内の別の場所に移動すると、メッセージストアプロバイダーによっては、エントリ識別子が変更されない場合があります。
     
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MsgStoreDlg.cpp  <br/> |CMsgStoreDlg::OnPasteFolder  <br/> |MFCMAPI では、1 つの場所からフォルダーをコピーするのにには、 **IMAPIFolder::CopyFolder**メソッドを使用します。 MFCMAPI では、コピー操作中に元のフォルダーを記憶して、実際に貼り付けの操作中にコピーを実行します。  <br/> |
+|MsgStoreDlg  <br/> |CMsgStoreDlg:: OnPasteFolder  <br/> |mfcmapi は、 **imapifolder:: copyfolder**メソッドを使用して、フォルダーをある場所から別の場所にコピーします。 mfcmapi はコピー操作中にソースフォルダーを記憶し、貼り付け操作中にコピーを実際に実行します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: e5ae37ea-81a5-49c7-9ad0-0bfac518426c
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 9aa038958e26652ae7ead728ab15d068e080dc69
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 2709ac612fc9e2edaa57b280d52c0a5229ee9978
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278807"
 ---
 # <a name="itabledatahrinsertrow"></a>ITableData::HrInsertRow
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルの行を挿入します。 
+表の行を挿入します。 
   
 ```cpp
 HRESULT HrInsertRow(
@@ -38,33 +38,33 @@ HRESULT HrInsertRow(
 
  _uliRow_
   
-> [in]特定の行を表す連続した行の数です。 ローの数を示す新しい行に配置されます。 _UliRow_パラメーターは、0 から n 行番号が含まれていますが、n は、テーブル内の行の合計数です。 N を_uliRow_に渡すと、テーブルの末尾に行が追加されます。 
+> 順番特定の行を表す連続した行番号を指定します。 新しい行は、番号が示す行の後に配置されます。 _uliRow_パラメーターには、0 ~ n の行番号を含めることができます。ここで、n はテーブル内の行の合計数です。 _uliRow_で n を渡すと、行は表の末尾に追加されます。 
     
- _lpSRow_
+ _lpsrow_
   
-> [in]挿入する行を説明する[SRow](srow.md)構造体へのポインター。 
+> 順番挿入する行を記述する[srow](srow.md)構造体へのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 行は正しく挿入されました。
+> 行が正常に挿入されました。
     
 MAPI_E_INVALID_PARAMETER 
   
-> テーブルに既に挿入する行が存在するとそのインデックス列に対して同じ値を持つ行です。
+> 挿入された行がテーブルに既に存在する場合、そのインデックス列の値が同じ行。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**ITableData::HrInsertRow**メソッドでは、特定の位置にあるテーブルに行を挿入します。 _UliRow_パラメーターによって指定された位置にある行の後に、新しい行が挿入されます。 
+**itabledata:: HrInsertRow**メソッドは、特定の位置にあるテーブルに行を挿入します。 _uliRow_パラメーターで指定された位置にある行の後に新しい行が挿入されます。 
   
-_UliRow_は、テーブル内の行の数に設定されている場合は、テーブルの末尾に新しい行が追加されます。 
+_uliRow_が表の行数に設定されている場合、新しい行は表の末尾に追加されます。 
   
-**LpProps** 、 [SRow](srow.md)構造体のメンバー、 _lpSRow_パラメーターが指すは、テーブルのインデックス列として機能するプロパティを含める必要があります。 このインデックスのプロパティ、 **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) を通常は、将来の保守タスクの行を一意に識別されます。
+テーブルのインデックス列として機能するプロパティは、 _lpsrow_パラメーターで指定される[srow](srow.md)構造の**lpprops**メンバに含まれている必要があります。 通常、このインデックスプロパティ ( **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))) は、今後のメンテナンス作業のために行を一意に識別するために使用されます。
   
-**SRow**構造体のプロパティ列をテーブル内のプロパティの列と同じ順序にする必要はありません。 
+**srow**構造のプロパティ列は、テーブル内のプロパティ列と同じ順序である必要はありません。 
   
-行が挿入されると、すべてのクライアントやテーブルのビューがあるし、の通知を登録するテーブルの[IMAPITable::Advise](imapitable-advise.md)メソッドを呼び出すことが、サービス プロバイダーに通知が送信されます。 制限があるため、ビューに挿入された行が含まれていない場合、通知は送信されません。 
+行が挿入されると、テーブルのビューを持つすべてのクライアントまたはサービスプロバイダーに通知が送信され、通知を登録するためにテーブルの[IMAPITable:: Advise](imapitable-advise.md)メソッドを呼び出します。 制限のために挿入された行がビューに含まれていない場合、通知は送信されません。 
   
 ## <a name="see-also"></a>関連項目
 

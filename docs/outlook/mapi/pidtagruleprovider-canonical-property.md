@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 64f80a03-9ba4-495a-9666-b3a909335cb6
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 19889a1f48a6088f0d5ad224f7e9189b112622fa
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280606"
 ---
 # <a name="pidtagruleprovider-canonical-property"></a>PidTagRuleProvider 標準プロパティ
 
@@ -34,41 +34,41 @@ ms.locfileid: "25385978"
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |サーバー側のルール  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-これらのコードを識別するプロパティを解釈し、規則の操作を実行する必要がありますアクションの必要性を延期します。
+遅延アクションには、ルールの処理を解釈して実行する必要があるコードを識別するためのプロパティが必要です。
   
-メールボックスおよびフォルダーに格納されているルールは、ルールのプロバイダー文字列でそれらを所有するアプリケーションに関連付けられます。 ルール プロバイダーは、設定し、ルール テーブル内のルールを処理します。 このようなルールが設定されている場合に、遅延されたアクションを処理する手段も用意されています。 遅延アクションは、インフォメーション ストアによって暗黙的に作成されます。 別のストアに移動またはコピー操作の場合は、遅延処理のルールを設定するプロバイダーが備わっていること、ルールが実行され、遅延アクションが作成されるときにアクションを実行するハンドラー。
+メールボックスとフォルダーに格納されているルールは、ルールプロバイダ文字列でそのルールを所有するアプリケーションに関連付けられます。 ルールプロバイダーは、ルールテーブルのルールを設定して処理します。 また、このようなルールが設定されている場合は、遅延アクションを処理する手段も提供されます。 遅延アクションは、インフォメーションストアによって暗黙的に作成されます。 別のストアに移動またはコピー操作を行う場合、プロバイダーが遅延アクションルールを設定している場合は、ルールが発生し、遅延アクションが作成されるときにアクションを実行するハンドラーを指定する必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXORULE]](https://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)
+[[OXORULE]](https://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)
   
-> サーバー上の受信電子メール メッセージを操作します。
+> サーバー上の受信電子メールメッセージを操作します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

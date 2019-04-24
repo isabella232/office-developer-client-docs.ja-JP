@@ -1,5 +1,5 @@
 ---
-title: IMAPIProgressGetMax
+title: imapi進捗 getmax
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 88a910ed-b55a-4e5b-a43d-eb3ea795a70e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2dadad410b9aaf1401d792de373e561c29183a12
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 64b6235151c7700a24992bc1d4394553a53c0464
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270204"
 ---
 # <a name="imapiprogressgetmax"></a>IMAPIProgress::GetMax
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-情報を表示する進行中の操作では、アイテムの最大数を返します。
+進行状況の情報が表示される操作内のアイテムの最大数を返します。
   
 ```cpp
 HRESULT GetMax(
@@ -35,35 +35,35 @@ HRESULT GetMax(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpulMax_
+ _lプル最大_
   
-> [out]操作内のアイテムの最大数へのポインター。
+> 読み上げ操作内のアイテムの最大数へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 操作内のアイテムの最大数を取得するとします。
+> 操作内のアイテムの最大数が取得されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-最大値は、数値形式での操作の終了を表します。 値は、全体の進行状況表示の範囲を表すために使用、グローバルな最大値またはローカル値になっているため、画面の一部のみを表すために使用できます。 
+最大値は、操作の終了を数値形式で表します。 値は、進行状況の表示全体の範囲を示すために使用されるグローバルな最大値、あるいは表示の一部のみを示すのに使用されるローカル値になります。 
   
-フラグの設定の値は、実行中のオブジェクトは、ローカルまたはグローバルに最大の価値を理解しているかどうかに影響します。 MAPI_TOP_LEVEL フラグを設定すると最大値はグローバルと見なされ、処理全体の進行状況を計算するために使用します。 MAPI_TOP_LEVEL が設定されていないと最大値と見なされる、ローカル プロバイダーを使用して、内部的に低レベルのサブオブジェクトの進行状況を表示します。 進行中のオブジェクトは、 **GetMax**の呼び出しを使用して、プロバイダーに戻す場合にのみローカル最大値を保存します。 
+flag 設定の値は、progress オブジェクトがローカルまたはグローバルに最大値を認識しているかどうかに影響します。 MAPI_TOP_LEVEL フラグが設定されている場合、最大値はグローバルと見なされ、操作全体の進行状況を計算するために使用されます。 MAPI_TOP_LEVEL が設定されていない場合、最大値はローカルと見なされ、プロバイダーはそれを内部的に使用して、下位レベルのサブオブジェクトの進行状況を表示します。 Progress オブジェクトは、 **getmax**呼び出しを通じてプロバイダーに返すためだけにローカル最大値を保存します。 
   
-方法の詳細については、実行中のオブジェクトへの呼び出しを行う場合は、[進行状況のインジケーターの表示](how-to-display-a-progress-indicator.md)を参照してください。
+進行状況オブジェクトを呼び出す方法とタイミングの詳細については、「[進行状況インジケーターを表示する](how-to-display-a-progress-indicator.md)」を参照してください。
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-1000 の最大値を初期化します。 サービス プロバイダーは、 [IMAPIProgress::SetLimits](imapiprogress-setlimits.md)メソッドを呼び出すことによって、この値をリセットできます。 **GetMax**およびその他の[IMAPIProgress](imapiprogressiunknown.md)メソッドを実装する方法の詳細については、[進行状況のインジケーターを実装する](implementing-a-progress-indicator.md)を参照してください。
+最大値を1000に初期化します。 サービス プロバイダーは、[IMAPIProgress::SetLimits](imapiprogress-setlimits.md) メソッドを呼び出してこの値をリセットできます。 **getmax**およびその他の[imapiprogress](imapiprogressiunknown.md)メソッドを実装する方法の詳細については、「[進行状況インジケーターの実装](implementing-a-progress-indicator.md)」を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIProgress.cpp  <br/> |CMAPIProgress::GetMax  <br/> |MFCMAPI では、 **IMAPIProgress::GetMax**メソッドを使用して、実行中のオブジェクトの最大値を取得します。 **IMAPIProgress::SetLimits**メソッドでの制限が既に設定されていない限り、1000 を返します。  <br/> |
+|MAPIProgress.cpp  <br/> |cmapiprogress 進行状況:: getmax  <br/> |mfcmapi は、 **imapiprogress:: getmax**メソッドを使用して、progress オブジェクトの最大値を取得します。 以前に**imapiprogress:: setlimits**メソッドを使用して制限が設定されていない場合は、1000を返します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -78,7 +78,7 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 [IMAPIProgress : IUnknown](imapiprogressiunknown.md)
 
 
-[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
+[コード サンプルとしての MFCMAPI](mfcmapi-as-a-code-sample.md)
   
 [進行状況インジケーターを表示する](how-to-display-a-progress-indicator.md)
   

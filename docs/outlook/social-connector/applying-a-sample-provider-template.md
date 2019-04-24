@@ -1,5 +1,5 @@
 ---
-title: サンプル プロバイダーのテンプレートを適用します。
+title: サンプルプロバイダテンプレートを適用する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,38 +7,38 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: da487569-f2f0-404c-b944-38ed1c1b82bb
-description: 'Outlook ソーシャル コネクタ (OSC) のサンプル プロバイダー テンプレート フレームワークを提供、OSC プロバイダーを実装するためです。 '
-ms.openlocfilehash: 2388da58690e1870434c576bfa68649937156c54
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'サンプルの Outlook Social Connector (.osc) プロバイダテンプレートには、.osc プロバイダーを実装するためのフレームワークが用意されています。 '
+ms.openlocfilehash: 10fb21ab640e298bc655b8cad554fae789e2ad47
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281128"
 ---
-# <a name="applying-a-sample-provider-template"></a>サンプル プロバイダーのテンプレートを適用します。
+# <a name="applying-a-sample-provider-template"></a>サンプルプロバイダテンプレートを適用する
 
-Outlook ソーシャル コネクタ (OSC) のサンプル プロバイダー テンプレート フレームワークを提供、OSC プロバイダーを実装するためです。 プロバイダー テンプレートは、C++、C# および Visual Basic で使用できます。 これらのテンプレートは、プロバイダーの開発の開始点に過ぎませんプロバイダーの実装コードを作成し、プロバイダーのセットアップ パッケージを作成する、テンプレートは対応していません。 次の手順では、プロバイダーの開発を開始するときに、OSC プロバイダーのテンプレートを適用する方法を示します。
+サンプルの Outlook Social Connector (.osc) プロバイダテンプレートには、.osc プロバイダーを実装するためのフレームワークが用意されています。 プロバイダーテンプレートは、C++、C#、および Visual Basic で使用できます。 これらのテンプレートは、プロバイダー開発の出発点にすぎません。テンプレートは、プロバイダーの実装コードの記述と、プロバイダーのセットアップパッケージの作成には対応していません。 次の手順は、プロバイダーの開発を開始するときに、.osc プロバイダテンプレートを適用する方法を示しています。
   
-### <a name="to-apply-an-osc-provider-template"></a>OSC プロバイダー テンプレートを適用するには
+### <a name="to-apply-an-osc-provider-template"></a>.osc プロバイダテンプレートを適用するには
 
-1. [**スタート**] メニューで、 **Microsoft Visual Studio 2010**を右クリックし、**管理者として実行**] コマンドをクリックします。 ダイアログ ボックスが表示されたら、 **[はい]** は、管理者として Visual Studio を実行するをクリックします。 
+1. [**スタート**] メニューで、[ **Microsoft Visual Studio 2010** ] を右クリックし、[**管理者として実行**] コマンドをクリックします。 メッセージが表示されたら、[**はい**] をクリックして、Visual Studio を管理者として実行します。 
     
-2. プロジェクトの名前と、テンプレート内の名前空間をプロジェクトの名前と名前空間の識別子に変更します。
+2. テンプレート内のプロジェクト名と名前空間をプロジェクト名と名前空間識別子に変更します。
     
-3. 適切なアセンブリ情報を指定するのには、 **AssemblyInfo**クラスを変更します。 
+3. 適切なアセンブリ情報を指定するように、 **AssemblyInfo**クラスを変更します。 
     
-4. **タスク**としてマークされているインターフェイス メンバーを実装し、必要に応じて複数の依存関係および参照を追加します。 
+4. do としてマークされたインターフェイスメンバーを実装し、必要**に**応じてさらに依存関係と参照を追加します。 
     
 5. プロジェクトをビルドします。
     
-6. プロバイダー アセンブリの ProgID が下のキーとして表示されていることを確認`HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\SocialConnector\SocialProviders`。
+6. プロバイダアセンブリ ProgID がのキーとしてリストされ`HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\SocialConnector\SocialProviders`ていることを確認します。
     
-7. セットアップ プロジェクトを配布するには、Visual Studio または任意のセットアップ ツールでセットアップ プロジェクトを作成します。
+7. セットアッププロジェクトを配布するには、Visual Studio または任意のセットアップツールでセットアッププロジェクトを作成します。
     
-8. セットアップ プロジェクトは、アセンブリの COM の登録を完了し、も手順 5 に記載されている ProgID キーを作成する必要があります。
+8. セットアッププロジェクトは、アセンブリの COM 登録を完了し、手順5に示されているように ProgID キーを作成する必要があります。
     
 ## <a name="see-also"></a>関連項目
 
 - [サンプルのダウンロード](downloading-the-samples.md)
-- [OSC サンプル テンプレート](osc-sample-templates.md)
+- [.osc サンプルテンプレート](osc-sample-templates.md)
 

@@ -7,43 +7,43 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c5e816b5-2ff2-4f59-ba54-c3ed291f8bba
-description: Outlook ソーシャル コネクタ (OSC) プロバイダーを展開する推奨される方法は、Windows インストーラー (.msi) パッケージを使用します。
+description: Outlook Social Connector (.osc) プロバイダーを展開する方法として推奨されるのは、Windows インストーラー (.msi) パッケージを使用する方法です。
 ms.openlocfilehash: f606d39bd368609464cdd0ea5b9a56243ec4e27d
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25392495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281062"
 ---
 # <a name="deploying-a-provider"></a>プロバイダーの展開
 
-Outlook ソーシャル コネクタ (OSC) プロバイダーを展開する推奨される方法は、Windows インストーラー (.msi) パッケージを使用します。 ローカル ハード ディスクにインストール パッケージをダウンロードした後は、Office ユーザーは、OSC プロバイダーをインストールします。 プロバイダーのインストールが完了した後、ユーザーは OSC プロバイダーに接続し、ソーシャル ネットワーク アカウントにログオン資格情報を提供できます。 OSC プロバイダーをアンインストールする場合、ユーザー、ユーザーで使用できます**プログラムと機能**コントロール パネルをアンインストールします。 
+Outlook Social Connector (.osc) プロバイダーを展開する方法として推奨されるのは、Windows インストーラー (.msi) パッケージを使用する方法です。 インストールパッケージをローカルハードディスクにダウンロードした後、Office エンドユーザーは、.osc プロバイダーをインストールします。 プロバイダーのインストールが完了すると、ユーザーは、.osc プロバイダーに接続して、ソーシャルネットワークアカウントにログオン資格情報を提供することができます。 ユーザーが .osc プロバイダーをアンインストールする場合は、コントロールパネルの [**プログラムと機能**] を使用してアンインストールできます。 
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [プロバイダーを登録する](registering-a-provider.md): OSC プロバイダーの登録の要件について説明します。
+- [プロバイダーを登録](registering-a-provider.md)する: .osc プロバイダーの登録要件について説明します。
     
-- [インストール チェックリスト](installation-checklist.md): OSC プロバイダーが正常にインストールされることを確認するチェックリストを提供します。
+- [インストールチェックリスト](installation-checklist.md): .osc プロバイダーが正常にインストールされたことを確認するチェックリストを提供します。
     
 ## <a name="reference"></a>リファレンス
 
-- [Outlook ソーシャル コネクタ プロバイダーの参照](outlook-social-connector-provider-reference-0.md)
+- [Outlook Social Connector プロバイダーリファレンス](outlook-social-connector-provider-reference-0.md)
   
 ## <a name="related-sections"></a>関連情報
 
 - [Outlook Social Connector プロバイダーの開発の概要 (英語)(機械翻訳)](getting-started-with-developing-an-outlook-social-connector-provider.md)
   
-- [OSC サンプル テンプレート](osc-sample-templates.md)
+- [.osc サンプルテンプレート](osc-sample-templates.md)
   
-- [OSC の典型的な呼び出しシーケンス](osc-typical-calling-sequences.md)
+- [通常の呼び出しシーケンスの .osc](osc-typical-calling-sequences.md)
   
-- [OSC の XML スキーマを使用してプロバイダーの開発](developing-a-provider-with-the-osc-xml-schema.md)
+- [.osc XML スキーマを使用してプロバイダーを開発する](developing-a-provider-with-the-osc-xml-schema.md)
   
-- [プロバイダーのデバッグ](debugging-a-provider.md)
+- [プロバイダーをデバッグする](debugging-a-provider.md)
   
-- [プロバイダーを開発するためのベスト プラクティス](best-practices-for-developing-a-provider.md)
+- [プロバイダーを開発するためのベストプラクティス](best-practices-for-developing-a-provider.md)
   
 ## <a name="see-also"></a>関連項目
 
-- [グループ ポリシーを使用して Outlook の社会的コネクタを管理する方法](https://support.microsoft.com/default.aspx?scid=kb%3Ben-US%3B2020103)
+- [グループポリシーを使用して Outlook Social Connector を管理する方法](https://support.microsoft.com/default.aspx?scid=kb%3Ben-US%3B2020103)
 

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 670c2291-d5b6-4dcf-9046-9125272dd8f8
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 989c6872e78ef78e5e0b18149a186d4f920ca603
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: b187cccc4505256b7ab4d580c30eeb2e15ebf574
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278861"
 ---
 # <a name="itabledatahrdeleterow"></a>ITableData::HrDeleteRow
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルの行を削除します。
+表の行を削除します。
   
 ```cpp
 HRESULT HrDeleteRow(
@@ -35,11 +35,11 @@ HRESULT HrDeleteRow(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpSPropValue_
+ _lpspropvalue_
   
-> [in]削除する行のインデックス列を説明するプロパティ値の構造体へのポインター。 プロパティ値の構造体の**ulPropTag**メンバーは、 [CreateTable](createtable.md)関数への呼び出しの_ulPropTagIndexColumn_パラメーターと同じプロパティ タグを含める必要があります。 
+> 順番削除する行のインデックス列を記述するプロパティ値構造へのポインター。 プロパティ値構造の**ulPropTag**メンバーには、 [CreateTable](createtable.md)関数の呼び出しの_ulPropTagIndexColumn_パラメーターと同じプロパティタグが含まれている必要があります。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -47,15 +47,15 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> _LpSPropValue_パラメーターで指定されたプロパティは、テーブル内の行を識別しません。 
+> _lpspropvalue_パラメーターによって示されるプロパティは、テーブル内の行を識別しません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**ITableData::HrDeleteRow**メソッドは、 _lpSPropValue_パラメーターで指定されたプロパティに一致する列を含むテーブルの行を削除します。 行のデータが削除され、行は、開いているすべてのビューから削除されます。 
+**itabledata:: HrDeleteRow**メソッドは、 _lpspropvalue_パラメーターによって示されるプロパティに一致する列を含むテーブル行を削除します。 行のデータが削除され、開いているすべてのビューからその行が削除されます。 
   
-行が削除されると、すべてのクライアントやテーブルのビューがあるし、の通知を登録するテーブルの[IMAPITable::Advise](imapitable-advise.md)メソッドを呼び出すことが、サービス プロバイダーに通知が送信されます。 
+行が削除されると、テーブルのビューを持つすべてのクライアントまたはサービスプロバイダーに通知が送信され、通知を登録するためにテーブルの[IMAPITable:: Advise](imapitable-advise.md)メソッドを呼び出します。 
   
-行の削除は減りません列セットが既存のビューを使用するか、ビューを開いた後で削除された行が特定の列の値を持つ最後の行の場合でも。
+行を削除しても、削除された行が、特定の列の値を持つ最後の行であっても、既存のビューまたは後で開くことができる列セットは縮小されません。
   
 ## <a name="see-also"></a>関連項目
 

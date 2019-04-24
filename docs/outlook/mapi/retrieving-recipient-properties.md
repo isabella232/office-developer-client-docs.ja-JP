@@ -1,5 +1,5 @@
 ---
-title: 受信者のプロパティを取得します。
+title: 受信者のプロパティの取得
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,26 +7,26 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 358f892b-54a7-4213-b3c0-94f28f99716f
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a48c6a8e043062bc6b48e09934fded1dccb507b2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 38063cebe70b153decce6713ac5fc31d6916dbf6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279595"
 ---
-# <a name="retrieving-recipient-properties"></a>受信者のプロパティを取得します。
+# <a name="retrieving-recipient-properties"></a>受信者のプロパティの取得
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-### <a name="to-access-one-or-more-properties-of-an-address-book-entry"></a>アドレス帳エントリの 1 つまたは複数のプロパティにアクセスするのには
+### <a name="to-access-one-or-more-properties-of-an-address-book-entry"></a>アドレス帳エントリの1つまたは複数のプロパティにアクセスするには
   
-1. 目的のアドレス帳エントリごとに、[アドレス帳コンテナー](iaddrbook-openentry.md)ターゲットのユーザーまたは配布リストをメッセージのエントリ id を渡すことを呼び出します。
+1. 対象のアドレス帳のエントリごとに、 [IAddrBook:: openentry](iaddrbook-openentry.md)を呼び出して、対象のメッセージングユーザーまたは配布リストのエントリ識別子を渡します。
     
-2. 次のいずれかの操作を行います。
+2. その後、次のいずれかの操作を行います。
     
-   - 取得する 1 つまたは複数のプロパティの一覧で、目的の各アドレス帳エントリには、メッセージングのユーザーまたは配布リストの[IMAPIProp::GetProps](imapiprop-getprops.md)メソッドを呼び出します。 
+   - 対象のアドレス帳エントリごとに、メッセージユーザーまたは配布リストの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、取得する1つまたは複数のプロパティの一覧を指定します。 
     
-   - [IAddrBook::PrepareRecips](iaddrbook-preparerecips.md)、すべての目的のアドレス帳のエントリのすべてのプロパティを保持する[ADRLIST](adrlist.md)構造体を渡すことを呼び出します。 **PrepareRecips** 1 回の呼び出しは、について、複数のアドレス帳のエントリを返すことができます、ためには、複数の受信者に興味があるとき、という方針です。 
+   - [IAddrBook::P reparerecips](iaddrbook-preparerecips.md)を呼び出し、必要なすべてのアドレス帳エントリのすべてのプロパティを保持する[adrlist](adrlist.md)構造体を渡します。 **PrepareRecips**の1回の呼び出しで複数のアドレス帳エントリの情報が返される可能性があるため、複数の受信者に関心がある場合は、この方法をお勧めします。 
     
 

@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 5a16e62b-9d33-41cd-af2b-9abd403b6f2e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: bd0439c71df7083e3c4787a5d317fa11d2b99c61
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0f0523c01e163b57d9ed37d9b324ec858adbd685
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280121"
 ---
 # <a name="imapifolderdeletemessages"></a>IMAPIFolder::DeleteMessages
 
@@ -25,7 +25,7 @@ ms.locfileid: "22578634"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-1 つまたは複数のメッセージを削除します。
+1つまたは複数のメッセージを削除します。
   
 ```cpp
 HRESULT DeleteMessages(
@@ -38,31 +38,31 @@ HRESULT DeleteMessages(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpMsgList_
+ _lpmsglist_
   
-> [in]削除するメッセージの数と、メッセージを識別する[エントリ ID](entryid.md)の構造体の配列を含む[ENTRYLIST](entrylist.md)構造体へのポインター。 
+> 順番削除するメッセージ数、およびメッセージを識別する[ENTRYID](entryid.md)構造体の配列を含む[entrylist](entrylist.md)構造体へのポインター。 
     
- _ulUIParam_
+ _uluiparam_
   
-> [in]進行状況インジケーターの親ウィンドウへのハンドル。 _UlFlags_パラメーターに MESSAGE_DIALOG フラグが設定されていない限り、 _ulUIParam_パラメーターは無視されます。 
+> 順番進行状況インジケーターの親ウィンドウへのハンドル。 _uluiparam_パラメーターは、 _ulflags_パラメーターで MESSAGE_DIALOG フラグが設定されていない場合は無視されます。 
     
- _lpProgress_
+ _lpprogress_
   
-> [in]進行状況インジケーターを表示する進行中のオブジェクトへのポインター。 _LpProgress_に NULL を渡した場合、メッセージ ストア プロバイダーは、MAPI 処理中のオブジェクトの実装を使用して進行状況のインジケーターを表示します。 _UlFlags_パラメーターに MESSAGE_DIALOG フラグが設定されていない限り、 _lpProgress_パラメーターは無視されます。 
+> 順番進行状況インジケーターを表示する progress オブジェクトへのポインター。 _lpprogress_で NULL が渡された場合、メッセージストアプロバイダーは MAPI 進行状況オブジェクトの実装を使用して進行状況インジケーターを表示します。 MESSAGE_DIALOG フラグが_ulflags_パラメーターで設定されていない場合、 _lpprogress_パラメーターは無視されます。 
     
  _ulFlags_
   
-> [in]メッセージを削除する方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番メッセージを削除する方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 DELETE_HARD_DELETE
   
-> ソフト削除されたものも含めて、すべてのメッセージを完全に削除します。
+> 削除されたものを含むすべてのメッセージを完全に削除します。
     
 MESSAGE_DIALOG 
   
-> 操作の進行中は、進行状況のインジケーターを表示します。
+> 操作の進行状況を示すインジケーターを表示します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -70,43 +70,43 @@ S_OK
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> 呼び出しが成功したが、すべてのメッセージが正常に削除されました。 この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
+> 呼び出しは成功しましたが、すべてのメッセージが正常に削除されませんでした。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPIFolder::DeleteMessages**メソッドは、フォルダーからメッセージを削除します。 存在せず、別の場所に移動されている、読み取り/書き込み権限で開かれている、または送信される現在のメッセージを削除することはできません。 
+**imapifolder::D eletemessages**メソッドは、フォルダーからメッセージを削除します。 存在しないメッセージ、他の場所に移動したメッセージ、読み取り/書き込みアクセス許可で開いているメッセージ、または現在送信されているメッセージは削除できません。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-削除操作には、複数のメッセージが含まれているときに操作を実行できるだけ完全に、フォルダーごとに 1 つまたは複数のメッセージを削除できない場合でも。 メモリが不足している、ディスク領域、またはメッセージ ・ ストア内の破損が不足しているなど、ユーザーが制御できない障害が発生した場合を除きは、処理の途中で操作を停止しません。
+削除操作に複数のメッセージが含まれている場合は、1つ以上のメッセージを削除できない場合でも、フォルダーごとにできるだけ完全に操作を実行してください。 メモリが不足している、ディスクの空き領域が不足している、メッセージストアが破損しているなど、操作を途中で停止しないようにしてください。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-次の条件下で、これらの戻り値を期待してください。
+これらの戻り値は、次の条件に当てはまることが予想されます。
   
-|**条件**|**戻り値**|
+|**Condition**|**戻り値**|
 |:-----|:-----|
-|**DeleteMessages**はすべてのメッセージを正常に削除します。  <br/> |S_OK  <br/> |
-|**DeleteMessages**は、正常にすべてのメッセージとサブフォルダーを削除できませんでした。  <br/> |MAPI_W_PARTIAL_COMPLETION または MAPI_E_NOT_FOUND  <br/> |
-|**DeleteMessages**は完了できませんでした。  <br/> |MAPI_E_NOT_FOUND を除くエラー値  <br/> |
+|**DeleteMessages**はすべてのメッセージを正常に削除しました。  <br/> |S_OK  <br/> |
+|**DeleteMessages**は、すべてのメッセージとサブフォルダーを正常に削除できませんでした。  <br/> |MAPI_W_PARTIAL_COMPLETION または MAPI_E_NOT_FOUND  <br/> |
+|**DeleteMessages**を完了できませんでした。  <br/> |MAPI_E_NOT_FOUND を除くすべてのエラー値  <br/> |
    
-**DeleteMessages**が完了することではない場合と仮定しないでその作業は実行されませんでした。 **DeleteMessages**はエラーが発生する前に 1 つまたは複数のメッセージを削除することにされている可能性があります。 
+**DeleteMessages**が完了できない場合は、作業が行われていないことを前提としていません。 エラーが発生する前に、 **DeleteMessages**は1つ以上のメッセージを削除できた可能性があります。 
   
- **DeleteMessages**は、メッセージ ストアの実装によって、MAPI_W_PARTIAL_COMPLETION または MAPI_E_NOT_FOUND を返します。 
+ **DeleteMessages**は、メッセージストアの実装に応じて、MAPI_W_PARTIAL_COMPLETION または MAPI_E_NOT_FOUND を返します。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|FolderDlg.cpp  <br/> |CFolderDlg::OnDeleteSelectedItem  <br/> |MFCMAPI では、 **IMAPIFolder::DeleteMessages**メソッドを使用して、指定したメッセージを削除します。  <br/> |
+|folderdlg  <br/> |cfolderdlg:: OnDeleteSelectedItem  <br/> |mfcmapi は、 **imapifolder::D eletemessages**メソッドを使用して、指定されたメッセージを削除します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[エントリ ID](entryid.md)
+[ENTRYID](entryid.md)
   
 [ENTRYLIST](entrylist.md)
   
@@ -115,5 +115,5 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[エラー処理のためのマクロの使用](using-macros-for-error-handling.md)
+[エラー処理にマクロを使用する](using-macros-for-error-handling.md)
 

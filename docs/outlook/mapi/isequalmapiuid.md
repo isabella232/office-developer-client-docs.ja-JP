@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: 85d71b73-0630-4c5d-b0e3-b48d27a300d0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0c72164cac8a37d0372ac93f4ed6d3face966ddb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 44e3613338c8932bc80dd1150392033dfa3cd050
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278737"
 ---
 # <a name="isequalmapiuid"></a>IsEqualMAPIUID
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-同じ識別子が含まれているかどうかを決定する 2 つの[MAPIUID](mapiuid.md)構造体をテストします。 
+2つの[MAPIUID](mapiuid.md)構造体をテストして、同じ識別子を含んでいるかどうかを確認します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**MAPIUID** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**MAPIUID** <br/> |
    
 ```cpp
 IsEqualMAPIUID(lpuid1, lpuid2)
@@ -44,13 +44,13 @@ IsEqualMAPIUID(lpuid1, lpuid2)
     
  _lpuid2_
   
-> テストする 2 番目の**MAPIUID**構造体へのポインター。 
+> テストする2番目の**MAPIUID**構造体へのポインター。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IsEqualMAPIUID**マクロは、2 つの**MAPIUID**構造体が含まれる場合、同じ識別子と FALSE そうでない場合に TRUE を返します。 
+**IsEqualMAPIUID**マクロは、2つの**MAPIUID**構造体に同じ識別子が含まれている場合は TRUE を返し、そうでない場合は FALSE を返します。 
   
-**IsEqualMAPIUID**マクロには、ヘッダー ファイル Memory.h が含まれていることが必要です。 
+**IsEqualMAPIUID**マクロを使用するには、ヘッダーファイルのメモリを含める必要があります。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -59,5 +59,5 @@ IsEqualMAPIUID(lpuid1, lpuid2)
 [MAPIUID](mapiuid.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

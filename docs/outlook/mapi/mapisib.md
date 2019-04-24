@@ -8,20 +8,20 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 16452798-7a95-43da-b95e-908debcea050
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f696d9739014659812de3309ec885f37a6f85cc5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: cbda978a0d69367e95f9b4b1f53fd6d03b113ccc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270211"
 ---
 # <a name="mapisib"></a>MAPISIB
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-この構造体は、 [IMAPISync::SynchronizeInBackground](imapisyncsynchronizeinbackground.md)で使用されます。
+この構造体は、 [imapisync:: SynchronizeInBackground](imapisyncsynchronizeinbackground.md)で使用されます。
   
 ```cpp
 typedef struct _MAPISIB
@@ -36,35 +36,35 @@ HANDLE          *phSyncDoneEvent;
 
 ## <a name="members"></a>Members
 
- **ulSize**
+ **ulsize**
   
-> 構造体のサイズです。
+> 構造体のサイズ。
     
  **ulFlags**
   
-> 同期の種類を示すフラグ。次の値のいずれかを指定する必要があります。
+> 同期の種類を示すフラグ。次のいずれかの値であることが必要です。
     
 ||||
 |:-----|:-----|:-----|
-|SYNC_OUTGOING_MAIL  <br/> |0x00000200  <br/> |(使用) では現在のサーバーにメッセージを送信します。  <br/> |
-|SYNC_UPLOAD_HIERARCHY  <br/> |0x00000001  <br/> |階層の変更内容をサーバーにプッシュします。  <br/> |
-|SYNC_DOWNLOAD_HIERARCHY  <br/> |0x00000002  <br/> |階層の変更内容をサーバーから取得します。  <br/> |
+|SYNC_OUTGOING_MAIL  <br/> |0x00000200  <br/> |メッセージをサーバーに送信します (現在は使用されていません)。  <br/> |
+|SYNC_UPLOAD_HIERARCHY  <br/> |0x00000001  <br/> |サーバーに対して階層の変更を行います。  <br/> |
+|SYNC_DOWNLOAD_HIERARCHY  <br/> |0x00000002  <br/> |サーバーから階層の変更を取得します。  <br/> |
 |SYNC_UPLOAD_CONTENTS  <br/> |0x00000040  <br/> |メッセージの変更をサーバーにプッシュします。  <br/> |
-|SYNC_DOWNLOAD_CONTENTS  <br/> |0x00000080  <br/> |メッセージの変更をサーバーから取得します。  <br/> |
-|SYNC_ON_DEMAND  <br/> |0x20000000 を設定  <br/> |同期では、ユーザーによって開始され、優先順位が高い必要があります。  <br/> |
-|SYNC_GLOBAL_HEADERS  <br/> |0x02000000  <br/> |ヘッダーと本文のない完全同期させるだけ必要があります。  <br/> |
+|SYNC_DOWNLOAD_CONTENTS  <br/> |0x00000080  <br/> |サーバーからメッセージの変更を取得します。  <br/> |
+|SYNC_ON_DEMAND  <br/> |0x20000000  <br/> |同期はユーザーによって開始され、より高い優先度である必要があります。  <br/> |
+|SYNC_GLOBAL_HEADERS  <br/> |0x02000000  <br/> |完全な本文ではなく、ヘッダーのみを同期する必要があります。  <br/> |
    
- **psesSync**
+ **p' sync**
   
-> [IN]MAPI セッションへのポインター。
+> 順番MAPI セッションへのポインター。
     
  **punkCallBack**
   
-> [IN]進行状況を提供するインターフェイスへのポインター。 インターフェイスを照会するために使用できる[IMAPISyncProgressCallback: IUnknown](imapisyncprogresscallbackiunknown.md)。
+> 順番進行状況を提供するインターフェイスへのポインター。 [IMAPISyncProgressCallback: IUnknown](imapisyncprogresscallbackiunknown.md)のインターフェイスを照会するために使用できます。
     
- **\*phSyncDoneEvent**
+ **\*phsyncdoneevent**
   
-> [OUT]作成されたスレッドが完了したときに発生するイベントです。 イベントが含まれているために、ポインターは有効である必要があります。
+> 読み上げ作成されたスレッドが完了したときに発生するイベント。 このポインターは、イベントが含まれるため、有効である必要があります。
     
 ## <a name="see-also"></a>関連項目
 

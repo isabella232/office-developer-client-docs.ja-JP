@@ -7,40 +7,40 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 89349d1e-365a-442e-9ba3-2df601d9323c
-description: Outlook ソーシャル コネクタ (OSC) では、ソーシャル ネットワークの OSC プロバイダーの機能を決定する ISocialProvider::GetCapabilities メソッドを呼び出します。
-ms.openlocfilehash: 8287133445a4e8fa928f6b7724ab41ca9b58baf9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Outlook social Connector (.osc) は、imethod alprovider:: getcapabilities メソッドを呼び出して、ソーシャルネットワークの .osc プロバイダーの機能を判別します。'
+ms.openlocfilehash: 7f716df3ef2e82712374ce3d775cdf66eb07e8b3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281222"
 ---
 # <a name="basic-authentication"></a>基本認証
 
-Outlook ソーシャル コネクタ (OSC) では、ソーシャル ネットワークの OSC プロバイダーの機能を決定する[ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)メソッドを呼び出します。 OSC では、返される機能を使用して、このソーシャル ネットワークにログオンしている Office ユーザーをサポートする方法を決定します。 OSC プロバイダーが基本認証をサポートしている**機能**の返された XML 内の**useLogonWebAuth**要素が示されている場合、OSC は、ソーシャル ネットワークにログオンするユーザーを許可するのには次の呼び出しシーケンスを作成できます。 
+Outlook social Connector (.osc) は、 [imethod alprovider:: getcapabilities](isocialprovider-getcapabilities.md)メソッドを呼び出して、ソーシャルネットワークの .osc プロバイダーの機能を判別します。 .osc は、返された機能を使用して、このソーシャルネットワークにログオンしている Office ユーザーをサポートする方法を決定します。 返された**機能**XML の**uselogonwebauth**要素が、.osc プロバイダーが基本認証をサポートしていることを示している場合、.osc は、ユーザーがそのソーシャルネットワークにログオンできるようにするための次の呼び出しシーケンスを行うことができます。 
   
-1. [ISocialProvider::Load](isocialprovider-load.md) -「OSC プロバイダーを読み込みます。 
+1. [ichanged alprovider:: Load](isocialprovider-load.md) — .osc は、プロバイダーを読み込みます。 
     
-2. [ISocialProvider::Version](isocialprovider-version.md) -「OSC は、OSC プロバイダーのバージョン番号を表す文字列を取得します。 
+2. [ichanged alprovider:: Version](isocialprovider-version.md) -.osc は、.osc プロバイダーのバージョン番号を表す文字列を取得します。 
     
-3. [ISocialProvider::SocialNetworkName](isocialprovider-socialnetworkname.md) -「OSC は、ソーシャル ネットワークの名前を表す文字列を取得します。 
+3. [i指定 alprovider::](isocialprovider-socialnetworkname.md) /"/"/"/"/"" は、ソーシャルネットワーク名を表す文字列を取得します。 
     
-4. [ISocialProvider::SocialNetworkGuid](isocialprovider-socialnetworkguid.md) -「OSC は、ソーシャル ネットワークを表す変更不可の GUID を取得します。 
+4. [ichanged alprovider::](isocialprovider-socialnetworkguid.md) //"/"/"/"/"は、ソーシャルネットワークを表す不変の guid を取得します。 
     
-5. [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md) -「OSC は、プロバイダー機能を表していると、**機能**要素のスキーマ定義に準拠する文字列を取得します。 
+5. [i指定 alprovider:: getcapabilities](isocialprovider-getcapabilities.md) -.osc は、プロバイダーの機能を表す文字列を取得し、 **capabilities**要素のスキーマ定義に準拠しています。 
     
-6. [ISocialProvider::SocialNetworkIcon](isocialprovider-socialnetworkicon.md) -「OSC は、ソーシャル ネットワーク サイトのアイコン表すバイト配列を取得します。 
+6. [ichanged alprovider::](isocialprovider-socialnetworkicon.md) //"/"/"/"/"ソーシャルネットワーク] サイトのアイコンを表すバイト配列を取得します。 
     
-7. [ISocialProvider::GetSession](isocialprovider-getsession.md) -「OSC は、 [ISocialSession](isocialsessioniunknown.md)インターフェイスを取得します。 
+7. [ichanged alprovider:: getsession](isocialprovider-getsession.md) — .osc は、iな式[alsession](isocialsessioniunknown.md)インターフェイスを取得します。 
     
-8. [ISocialSession::Logon](isocialsession-logon.md) -「OSC が指定されたユーザー名とパスワードを使用して、ソーシャル ネットワーク サイトにユーザーをログオンします。 
+8. [ [i指定 alsession:: Logon](isocialsession-logon.md) ]: .osc は、指定されたユーザー名とパスワードを使用してソーシャルネットワークサイトにユーザーを記録します。 
     
-9. [ISocialSession::GetLoggedOnUser](isocialsession-getloggedonuser.md) -「OSC は、ログオンしたユーザーを表す[ISocialProfile](isocialprovideriunknown.md)インターフェイスを取得します。 
+9. [iGetLoggedOnUser alsession::](isocialsession-getloggedonuser.md) — .osc は、ログオンしているユーザーを表す[i alprofile](isocialprovideriunknown.md)インターフェイスを取得します。 
     
-10. [ISocialSession::GetNetworkIdentifier](isocialsession-getnetworkidentifier.md) -「OSC は、ソーシャル ネットワーク サイト一意識別子を表す文字列を取得します。 ネットワーク id はネットワーク名と同じにすることはできます。 
+10. [i指定 alsession:: getnetworkidentifier](isocialsession-getnetworkidentifier.md) -.osc は、ソーシャルネットワークサイトの一意の識別子を表す文字列を取得します。 ネットワーク識別子は、ネットワーク名に相当します。 
     
 ## <a name="see-also"></a>関連項目
 
-- [機能のための XML](xml-for-capabilities.md)
-- [OSC の典型的な呼び出しシーケンス](osc-typical-calling-sequences.md)
+- [機能の XML](xml-for-capabilities.md)
+- [通常の呼び出しシーケンスの .osc](osc-typical-calling-sequences.md)
 

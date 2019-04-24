@@ -12,43 +12,43 @@ api_type:
 - HeaderDef
 ms.assetid: d9457fea-4b1e-4cf6-9c4b-14c98fbec2a1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ddec060af73d61a4a39c59b35f0442d6b9b1db66
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 574c7d305f105709aebcd41e30b034fbac1892a9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278779"
 ---
 # <a name="pidtaglongtermentryidfromtable-canonical-property"></a>PidTagLongTermEntryIdFromTable 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-アイテムの長期間のエントリの識別子を取得します。
+アイテムの長期のエントリ id を取得します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_LONGTERM_ENTRYID_FROM_TABLE  <br/> |
 |識別子:  <br/> |0x6670  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |テーブルのプロパティ  <br/> |
+|エリア:  <br/> |表のプロパティ  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティは、短期的なエントリの識別子ではなく、長期的なエントリ id と、アイテムのエントリ id を取得するのには内容のテーブルで使用できます。 長期的および短期的な識別子の詳細については、 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) を参照してください。
+このプロパティは、アイテムのエントリ識別子を短い用語のエントリ id ではなく、長期間のエントリ id として取得するために、contents テーブルで使用できます。 長期および短期の識別子については、「 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))」を参照してください。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
@@ -57,9 +57,9 @@ Mapitags.h
 [PidTagEntryId 標準プロパティ](pidtagentryid-canonical-property.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

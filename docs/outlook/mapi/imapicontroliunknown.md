@@ -12,43 +12,43 @@ api_type:
 - COM
 ms.assetid: 5a647e15-ba22-4a7c-b235-75cd76b77c1a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 80acb1a1e4663a68efc4692ab67ec27bc369f4b0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8dce1415ef8d18f4b786e92324c888f9a0845162
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280142"
 ---
 # <a name="imapicontrol--iunknown"></a>IMAPIControl : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ボタン コントロールを無効にでき、クライアント アプリケーションのユーザーが有効なコントロールをクリックしたときにタスクを実行します。 サービス プロバイダーは、設定プロパティ シートの表示のテーブルを使用して定義されているなどのダイアログ ボックスにカスタム ボタンを作成するコントロール オブジェクトを実装します。 
+ボタンコントロールを有効または無効にし、クライアントアプリケーションのユーザーが有効になっているコントロールをクリックしたときにタスクを実行します。 サービスプロバイダーは、コントロールオブジェクトを実装して、表示テーブルを使用して定義される構成プロパティシートなどのカスタムボタンをダイアログボックスに作成します。 
   
-表示のテーブルを操作し、オブジェクトを制御する方法の詳細については、[テーブルの表示](display-tables.md)を参照してください。
+表示テーブルとコントロールオブジェクトを操作する方法の詳細については、「[表を表示](display-tables.md)する」を参照してください。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって公開されます。  <br/> |コントロール オブジェクト  <br/> |
-|によって実装されます。  <br/> |サービス プロバイダー  <br/> |
-|によって呼び出されます。  <br/> |MAPI  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMAPIControl  <br/> |
-|ポインターの型。  <br/> |LPMAPICONTROL  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|公開者:  <br/> |Control オブジェクト  <br/> |
+|実装元:  <br/> |サービス プロバイダー  <br/> |
+|呼び出し元:  <br/> |MAPI  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMAPIControl  <br/> |
+|ポインターの種類:  <br/> |LPMAPICONTROL  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[発生しました](imapicontrol-getlasterror.md) <br/> |前のボタン コントロールのエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
-|[Activate](imapicontrol-activate.md) <br/> |ダイアログ ボックスを表示する、クライアント アプリケーションのユーザーは、ボタン コントロールをクリックすると、プログラムの操作を開始するなどのタスクを実行します。  <br/> |
-|[GetState](imapicontrol-getstate.md) <br/> |ボタン コントロールを有効または無効にするかどうかを示す値を取得します。  <br/> |
+|[GetLastError](imapicontrol-getlasterror.md) <br/> |前のボタンコントロールのエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
+|[Activate](imapicontrol-activate.md) <br/> |クライアントアプリケーションユーザーが [ボタン] コントロールをクリックしたときに、ダイアログボックスを表示したり、プログラムによる操作を開始したりするなどのタスクを実行します。  <br/> |
+|[GetState](imapicontrol-getstate.md) <br/> |ボタンコントロールが有効であるか無効であるかを示す値を取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

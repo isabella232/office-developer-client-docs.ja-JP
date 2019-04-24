@@ -1,5 +1,5 @@
 ---
-title: IMAPIFolderDeleteFolder
+title: imapifolderdeletefolder
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 6c3e883c-80c0-4eda-8f81-8277d933a74b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 02815c60b6bfc9809871af19e922913622588fc9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a476607927f3563ede94a04ccfe4f7a3749c978e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280072"
 ---
 # <a name="imapifolderdeletefolder"></a>IMAPIFolder::DeleteFolder
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 サブフォルダーを削除します。
   
@@ -41,83 +41,83 @@ HRESULT DeleteFolder(
 
  _cbEntryID_
   
-> [in]_LpEntryID_パラメーターで指定されたエントリの識別子のバイト数です。 
+> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
     
- _lpEntryID_
+ _lて tryid_
   
-> [in]サブフォルダーを削除するには、エントリの識別子へのポインター。
+> 順番削除するサブフォルダーのエントリ識別子へのポインター。
     
- _ulUIParam_
+ _uluiparam_
   
-> [in]進行状況インジケーターの親ウィンドウへのハンドル。 _UlFlags_パラメーターに FOLDER_DIALOG フラグが設定されていない限り、 _ulUIParam_パラメーターは無視されます。 
+> 順番進行状況インジケーターの親ウィンドウへのハンドル。 _uluiparam_パラメーターは、 _ulflags_パラメーターで FOLDER_DIALOG フラグが設定されていない場合は無視されます。 
     
- _lpProgress_
+ _lpprogress_
   
-> [in]進行状況インジケーターを表示する進行中のオブジェクトへのポインター。 _LpProgress_に NULL を渡した場合、メッセージ ストア プロバイダーは、MAPI 処理中のオブジェクトの実装を使用して進行状況のインジケーターを表示します。 _UlFlags_に FOLDER_DIALOG フラグが設定されていない限り、 _lpProgress_パラメーターは無視されます。
+> 順番進行状況インジケーターを表示する progress オブジェクトへのポインター。 _lpprogress_で NULL が渡された場合、メッセージストアプロバイダーは MAPI 進行状況オブジェクトの実装を使用して進行状況インジケーターを表示します。 FOLDER_DIALOG フラグが_ulflags_で設定されていない場合、 _lpprogress_パラメーターは無視されます。
     
  _ulFlags_
   
-> [in]サブフォルダーの削除を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番サブフォルダーの削除を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 DEL_FOLDERS 
   
-> _LpEntryID_で指定されたサブフォルダーのすべてのサブフォルダーを削除する必要があります。 
+> _lな tryid_によって参照されるサブフォルダーのすべてのサブフォルダーを削除する必要があります。 
     
 DEL_MESSAGES 
   
-> _LpEntryID_で指定されたサブフォルダー内のすべてのメッセージを削除する必要があります。 
+> _lな tryid_が指すサブフォルダー内のすべてのメッセージを削除する必要があります。 
     
 FOLDER_DIALOG 
   
-> 操作の進行中に進行状況のインジケーターが表示されます。
+> 操作の進行中に、進行状況のインジケーターが表示されます。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 指定したフォルダーが削除されました。
+> 指定したフォルダーが正常に削除されました。
     
 MAPI_E_HAS_FOLDERS 
   
-> 削除されているサブフォルダーには、サブフォルダーが含まれていて、DEL_FOLDERS フラグが設定されませんでした。 サブフォルダーは削除されませんでした。
+> 削除されるサブフォルダーにサブフォルダーが含まれており、DEL_FOLDERS フラグが設定されていません。 サブフォルダーは削除されませんでした。
     
 MAPI_E_HAS_MESSAGES 
   
-> サブフォルダーを削除するには、メッセージが表示されて、DEL_MESSAGES フラグが設定されませんでした。 サブフォルダーは削除されませんでした。
+> 削除されるサブフォルダーにメッセージが含まれており、DEL_MESSAGES フラグが設定されていませんでした。 サブフォルダーは削除されませんでした。
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> 呼び出しが成功したが、すべてのエントリが正常に削除されました。 この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
+> 呼び出しは成功しましたが、すべてのエントリが正常に削除されませんでした。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPIFolder::DeleteFolder**メソッドでは、サブフォルダーを削除します。 既定では、 **DeleteFolder**が空のフォルダーに対してのみ動作する使用することが、正常に空でないフォルダーに 2 つのフラグを設定することによって: DEL_FOLDERS と DEL_MESSAGES。 空のフォルダーまたは**DeleteFolder**の呼び出しに DEL_FOLDERS と DEL_MESSAGES の両方のフラグを設定するフォルダーのみを削除できます。 DEL_FOLDERS により、すべてのフォルダー内のサブフォルダーを削除します。DEL_MESSAGES は、すべてのフォルダーのメッセージを削除するを有効にします。 
+**imapifolder::D eletefolder**メソッドは、サブフォルダーを削除します。 既定では、 **deletefolder**は空のフォルダーでのみ動作しますが、DEL_FOLDERS と DEL_MESSAGES の2つのフラグを設定することにより、空ではないフォルダーで正常に使用できます。 **deletefolder**呼び出しで DEL_FOLDERS と DEL_MESSAGES の両方のフラグを設定する、空のフォルダーまたはフォルダーのみを削除できます。 DEL_FOLDERS を使用すると、すべてのフォルダーのサブフォルダーを削除できます。DEL_MESSAGES を使用すると、フォルダーのすべてのメッセージを削除できます。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-削除操作には、複数のフォルダーが含まれているときに、できるだけ完全に各フォルダーの操作を実行します。 削除するフォルダーのいずれかの場合があります存在しないかが移動またはコピー他の場所。 メモリが不足している、ディスク領域、またはメッセージ ・ ストア内の破損が不足しているなど、ユーザーが制御できない障害が発生した場合を除きは、処理の途中で操作を停止しません。
+削除操作に複数のフォルダーが含まれている場合は、各フォルダーで可能な限り完全に操作を実行してください。 削除するフォルダーの1つが存在しない場合や、他の場所に移動またはコピーされている場合があります。 メモリが不足している、ディスクの空き領域が不足している、メッセージストアが破損しているなど、操作を途中で停止しないようにしてください。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-次の条件下で、これらの戻り値を期待してください。
+これらの戻り値は、次の条件に当てはまることが予想されます。
   
-|**条件**|**戻り値**|
+|**Condition**|**戻り値**|
 |:-----|:-----|
-|**DeleteFolder**は、すべてのメッセージとサブフォルダーが正常に削除されました。  <br/> |S_OK  <br/> |
-|**DeleteFolder**は、正常にすべてのメッセージとサブフォルダーを削除できませんでした。  <br/> |MAPI_W_PARTIAL_COMPLETION または MAPI_E_NOT_FOUND  <br/> |
-|**DeleteFolder**は完了できませんでした。  <br/> |MAPI_E_NOT_FOUND を除くエラー値  <br/> |
+|**deletefolder**がすべてのメッセージとサブフォルダを正常に削除しました。  <br/> |S_OK  <br/> |
+|**deletefolder**は、すべてのメッセージとサブフォルダを正常に削除できませんでした。  <br/> |MAPI_W_PARTIAL_COMPLETION または MAPI_E_NOT_FOUND  <br/> |
+|**deletefolder**を完了できませんでした。  <br/> |MAPI_E_NOT_FOUND を除くすべてのエラー値  <br/> |
    
-**DeleteFolder**が完了することではない場合と仮定しないでその作業は実行されませんでした。 **DeleteFolder**はエラーが発生する前に 1 つまたは複数のメッセージとサブフォルダーを削除することにされている可能性があります。 
+**deletefolder**を完了できない場合でも、作業が行われていないとは限りません。 **deletefolder**がエラーが発生する前に、1つ以上のメッセージとサブフォルダーを削除できた可能性があります。 
   
-1 つまたは複数のサブフォルダーを削除できない場合、 **DeleteFolder**は、メッセージ ストア プロバイダーの実装によって MAPI_W_PARTIAL_COMPLETION または MAPI_E_NOT_FOUND を返します。 
+1つまたは複数のサブフォルダーを削除できない場合、 **deletefolder**は、メッセージストアプロバイダーの実装に応じて MAPI_W_PARTIAL_COMPLETION または MAPI_E_NOT_FOUND を返します。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MsgStoreDlg.cpp  <br/> |CMsgStoreDlg::OnDeleteSelectedItem  <br/> |MFCMAPI では、 **IMAPIFolder::DeleteFolder**メソッドを使用して、フォルダーを削除します。  <br/> |
+|MsgStoreDlg  <br/> |CMsgStoreDlg:: OnDeleteSelectedItem  <br/> |mfcmapi は、 **imapifolder::D eletefolder**メソッドを使用してフォルダーを削除します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

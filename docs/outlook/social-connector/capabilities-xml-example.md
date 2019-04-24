@@ -7,61 +7,61 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ae1abafe-160c-47c0-b4d5-4a689c8c4cb1
-description: ここでの XML の例は、ソーシャル ネットワークの ISocialProvider::GetCapabilities メソッドが呼び出された後に、Outlook ソーシャル コネクタ (OSC) が返される XML 文字列です。 XML は、その機能や、OSC の要件に、OSC プロバイダーを指定する方法を示しています。
+description: 'このトピックの xml の例は、ソーシャルネットワークの imethod alprovider:: getcapabilities メソッドを呼び出すと、Outlook Social Connector (.osc) に返される xml 文字列です。 XML は、.osc プロバイダーが、.osc の機能と要件を指定する方法を示しています。'
 ms.openlocfilehash: 53bd250432e7b27d984a846d206adc812c47898f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281231"
 ---
 # <a name="capabilities-xml-example"></a>機能 XML の例
 
-ここでの XML の例は、ソーシャル ネットワークの[ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)メソッドが呼び出された後に、Outlook ソーシャル コネクタ (OSC) が返される XML 文字列です。 XML は、その機能や、OSC の要件に、OSC プロバイダーを指定する方法を示しています。 
+このトピックの xml の例は、ソーシャルネットワークの[imethod alprovider:: getcapabilities](isocialprovider-getcapabilities.md)メソッドを呼び出すと、Outlook Social Connector (.osc) に返される xml 文字列です。 XML は、.osc プロバイダーが、.osc の機能と要件を指定する方法を示しています。 
   
-## <a name="capabilities-for-friends"></a>友人のための機能
+## <a name="capabilities-for-friends"></a>フレンドの機能
 
-OSC プロバイダーは、この例では、フレンド機能をサポートすることでその機能を表示するのには次の要素を指定します。
+この例では、.osc プロバイダーは、フレンド機能をサポートする機能を示す次の要素を指定します。
   
-- **true**を示す OSC プロバイダーとして**getFriends**には、プログラムを使用して友人の情報を取得する[ISocialPerson::GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md)メソッドがサポートされています。 
+- **** .osc プロバイダーが[iGetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md)メソッドをサポートして、プログラムによって友人の情報を取得するように指定するには、 **true**として取得します。 
     
-- **true**の Outlook 連絡先フォルダーのキャッシュの友人の情報をサポートするために**cacheFriends**をします。 
+- Outlook の連絡先フォルダー内のフレンドの情報のキャッシュをサポートする場合は、 **cacheFriends**を**true**にします。 
     
-- そのエラーを示すために 60 と**contactSyncRestartInterval**が、60 分ごとにキャッシュを更新、OSC が再試行します。 
+- **contactsyncrestartinterval**を60として、エラーが発生した場合、.osc は60分ごとにキャッシュの更新を再試行する必要があることを示します。 
     
-- **followPerson**の**場合は true**をソーシャル ネットワーク上の友人を追加することを示します。 
+- **ユーザー**がソーシャルネットワークにフレンドを追加する機能を示す**場合は true**にします。 
     
-- **false**を示す OSC プロバイダーとして**doNotFollowPerson**では、ソーシャル ネットワークで友達とユーザーを削除することはサポートされていません。 
+- **** .osc クラスが、ソーシャルネットワーク上のフレンドとしてのユーザーの削除をサポートしていないことを示すため、 **false**として表示されます。 
     
-- として**false** OSC によって、メモリ内の友人の情報が格納する必要があることを示すために**dynamicContactsLookup**をします。 
+- **dynamicContactsLookup**を**false**として、.osc がフレンドの情報をメモリに格納しないように指定します。 
     
-## <a name="capabilities-for-activities"></a>活動のための機能
+## <a name="capabilities-for-activities"></a>アクティビティの機能
 
-OSC プロバイダーは、活動をサポートするためにその機能を表示するのには次の要素を指定します。
+.osc プロバイダーは、アクティビティをサポートする機能を示す次の要素を指定します。
   
-- **getActivities**の**場合は true**を示す OSC プロバイダーがプログラムを使用して友人の活動を取得する[ISocialProfile::GetActivitiesOfFriendsAndColleagues](isocialprofile-getactivitiesoffriendsandcolleagues.md)メソッドをサポートするいるとします。 
+- プログラムによってフレンドのアクティビティを取得するために、.osc プロバイダーが[iGetActivitiesOfFriendsAndColleagues](isocialprofile-getactivitiesoffriendsandcolleagues.md)メソッドをサポートしていることを示すために、[ **getactivities** ] を**true**とします。 
     
-- として**false**非表示のニュース フィードの Outlook フォルダーに友人のキャッシュの動作をサポートするために**cacheActivities**をします。 
+- 非表示の Outlook ニュースフィードフォルダーでのフレンドの処理のキャッシュをサポートするには、 **cacheactivities**を**false**にします。 
     
-- **dynamicActivitiesLookupEx**の**場合は true** OSC が、友人の活動をメモリに格納する必要があることを示す。 
+- **dynamicActivitiesLookupEx**がフレンドのアクティビティをメモリに格納することを示すには、 **true**にします。 
     
-## <a name="capabilities-for-authentication-and-account-configuration"></a>認証およびアカウントの構成のための機能
+## <a name="capabilities-for-authentication-and-account-configuration"></a>認証およびアカウント構成の機能
 
-OSC プロバイダーは、認証およびアカウントの構成のサポートを表示するのには次の要素を指定します。
+.osc プロバイダーは、認証およびアカウント構成のサポートを示すために、次の要素を指定します。
   
-- **useLogonWebAuth**の**場合は false**を示す OSC プロバイダーが基本認証をサポートするいるとします。 
+- .osc プロバイダーが基本認証をサポートしていることを示すには、 **uselogonwebauth**を**false**として指定します。 
     
-- **false**を示すこと、OSC しないように自動的に構成し、ユーザーのソーシャル ネットワークにログオンすると**supportsAutoConfigure**にします。 
+- **supportsAutoConfigure**は、ユーザーのソーシャルネットワークへの自動的な構成およびログオンを行わないようにするため、.osc が**false**として設定されます。 
     
-- **useLogonCached**と**false の場合**は使用しないでください、OSC たびにパスワードを入力する必要があることを示すためとして**hideRememberMyPassword**にログオンするログオン資格情報がキャッシュされます。 
+- **uselogoncached**と**hideRememberMyPassword**を**false**として、.osc が毎回パスワードの入力を要求する必要があり、キャッシュされたログオン資格情報を使用してログオンしてはいけないことを示します。 
     
-- **displayUrl**を**false** OSC がアカウントの構成] ダイアログ ボックスでソーシャル ネットワークの URL を表示しないことを指定するとします。 
+- [アカウント構成] ダイアログボックスで、.osc がソーシャルネットワークの URL を表示しないようにするには、 **displayurl**を**false**として指定します。 
     
-- として**false** OSC プロバイダーには、既知のパスワードで既存のアカウントのみがサポートされています、OSC に**アカウントを作成するのにはここをクリック**を表示しないことを示すために**hideHyperlinks**と **、パスワードを忘れた?** 内のハイパーリンク、アカウントの構成] ダイアログ ボックスです。 
+- **hidehyperlinks**を**false**に設定して、.osc プロバイダーが既知のパスワードを持つ既存のアカウントのみをサポートすることを示す場合、 **[ここをクリック**してアカウントを作成し、**パスワードを忘れますか?** ] のハイパーリンクを表示しないようにします。[アカウントの構成] ダイアログボックス 
     
 ## <a name="xml-example"></a>XML の例
 
-OSC プロバイダーの XML**機能**の例を次に示します。 
+次の例は、.osc プロバイダーの**機能**XML を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -89,9 +89,9 @@ OSC プロバイダーの XML**機能**の例を次に示します。
 
 ## <a name="see-also"></a>関連項目
 
-- [OSC プロバイダーの XML の例](osc-provider-xml-examples.md)  
-- [機能のための XML](xml-for-capabilities.md)  
-- [友人の XML の例](friends-xml-example.md)  
-- [アクティビティ フィードの XML の例](activity-feed-xml-example.md)  
-- [Outlook ソーシャル コネクタ プロバイダーの XML スキーマ](outlook-social-connector-provider-xml-schema.md)
+- [.osc プロバイダーの XML の例](osc-provider-xml-examples.md)  
+- [機能の XML](xml-for-capabilities.md)  
+- [Friends XML の例](friends-xml-example.md)  
+- [アクティビティフィード XML の例](activity-feed-xml-example.md)  
+- [Outlook Social Connector プロバイダーの XML スキーマ](outlook-social-connector-provider-xml-schema.md)
 

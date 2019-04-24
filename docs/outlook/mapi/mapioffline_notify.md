@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e03c5a87-4513-2133-ae0a-11d242f80e4b
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b18a4ae4ee25898d1100d9763714e5be21c69fd8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 6c5480a8f5e008c01c7ab8141317f5f19547ab10
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270295"
 ---
 # <a name="mapiofflinenotify"></a>MAPIOFFLINE_NOTIFY
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-これは、接続状態の変更を通知します。 接続状態が変更されたこと、以前の接続状態、および新しい接続の状態の一部を示します。
+これは、接続状態の変更に対する通知です。 この値は、変更された接続状態の部分、古い接続状態、および新しい接続状態を示します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -44,13 +44,13 @@ typedef struct
 
 ## <a name="members"></a>Members
 
- _ulSize_
+ _ulsize_
   
-> **MAPIOFFLINE_NOTIFY**構造体のサイズです。 
+> **MAPIOFFLINE_NOTIFY**構造体のサイズ。 
     
- _NotifyType_
+ _notifytype_
   
-> 通知の種類です。 接続状態の変更時にのみ通知がサポートされることに注意してください。のみサポートされている値は次のとおりです。
+> 通知の種類。 接続状態の変更に関する通知のみがサポートされることに注意してください。サポートされている値は次のとおりです。
     
    - MAPIOFFLINE_NOTIFY_TYPE_STATECHANGE_START
     
@@ -58,17 +58,17 @@ typedef struct
     
    - MAPIOFFLINE_NOTIFY_TYPE_STATECHANGE_DONE
     
- _ulClientToken_
+ _ulclienttoken_
   
-> クライアントが**[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)** の**[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** 構造体で定義されているトークンです。 
+> **[IMAPIOfflineMgr:: Advise](imapiofflinemgr-advise.md)** の**[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** 構造でクライアントによって定義されたトークン。 
     
- _ulMask_
+ _ulmask_
   
-> 接続の状態が変更されたことの一部です。 唯一のサポートされている値は、MAPIOFFLINE_STATE_OFFLINE_MASK です。
+> 変更された接続状態の部分。 サポートされている値は MAPIOFFLINE_STATE_OFFLINE_MASK のみです。
     
- _ulStateOld_
+ _ulstateold_
   
-> 古い接続状態です。 のみサポートされている値は次のとおりです。
+> 古い接続状態。 サポートされている値は次のとおりです。
     
    - MAPIOFFLINE_STATE_OFFLINE
     
@@ -76,21 +76,21 @@ typedef struct
     
  _ulStateNew_
   
-> 新しい接続状態です。 のみサポートされている値は次のとおりです。
+> 新しい接続状態。 サポートされている値は次のとおりです。
     
    - MAPIOFFLINE_STATE_OFFLINE
     
    - MAPIOFFLINE_STATE_ONLINE
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-オフラインの状態の API では、オンラインとオフラインの変更の通知のみをサポートしています。 クライアントは、Outlook が実際の変更を確認する前に次の値を返すことを確認する必要があります。
+オフライン状態 API は、オンライン/オフラインの変更についてのみ通知をサポートしています。 クライアントは、実際の変更を検査する前に、Outlook が次の値を返すことを確認する必要があります。
   
-1.  *NotifyType*には、MAPIOFFLINE_NOTIFY_TYPE_STATECHANGE_START、MAPIOFFLINE_NOTIFY_TYPE_STATECHANGE、または MAPIOFFLINE_NOTIFY_TYPE_STATECHANGE_DONE の値があります。 この例では、クライアントは、変更は、接続状態の変更*の*構造体の*情報*と想定できます。 
+1.  *notifytype*には、値 MAPIOFFLINE_NOTIFY_TYPE_STATECHANGE_START、MAPIOFFLINE_NOTIFY_TYPE_STATECHANGE、または MAPIOFFLINE_NOTIFY_TYPE_STATECHANGE_DONE があります。 この例では、クライアントは、変更が接続状態の変更であると想定し、 *Info*は*StateChange*構造になっています。 
     
-2.  *ulMask*には、MAPIOFFLINE_STATE_OFFLINE_MASK の値があります。 この例では、クライアントは、オンラインとオフラインの接続状態の変更、および*ulStateOld*と*ulStateNew*の確認を行うことを想定できます。 
+2.  *ulmask*の値は MAPIOFFLINE_STATE_OFFLINE_MASK です。 この場合、クライアントは、変更がオンライン/オフラインの接続状態に変更されたと見なすことができ、 *ulstateold*および*ulStateNew*の調査に進むことができます。 
     
-Outlook がサポートされていないその他の変更のクライアントに通知することができます。 このような場合、 *NotifyType*できません、上記 3 つの値のいずれかのや*ulMask*には、MAPIOFFLINE_STATE_OFFLINE_MASK ができないクライアントは、*情報*では、データの残りの部分を無視する必要があります。 
+Outlook は、サポートされていない他の変更をクライアントに通知することができます。 このような場合、 *notifytype*は、前に示した3つの値のいずれかにはなりません。また*ulmask*は MAPIOFFLINE_STATE_OFFLINE_MASK されず、クライアントは*Info*の残りのデータを無視する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

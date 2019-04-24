@@ -1,5 +1,5 @@
 ---
-title: MapiSvc.inf [Help File Mappings] セクション
+title: mapisvc.inf [Help File Mappings] セクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,25 +7,25 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 62aee641-b73f-4f53-9e8d-adf010c9ea1a
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 91c69489e1a72c5cd702a3c4d0392220a89c38fd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 4760c9965975bb5d950e51b707d28bee647ef99a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32269973"
 ---
-# <a name="mapisvcinf-help-file-mappings-section"></a>MapiSvc.inf [Help File Mappings] セクション
+# <a name="mapisvcinf-help-file-mappings-section"></a>mapisvc.inf [Help File Mappings] セクション
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-**[ヘルプ ファイルのマッピング]** セクションには、サービスによって生成されるエラーのヘルプを提供するファイルを 1 つのメッセージ サービスをマップの各エントリが含まれています。 このセクションのエントリは、次の形式を使用します。 
+**[Help File Mappings]** セクションには、サービスによって生成されたエラーについてのヘルプを提供する1つのメッセージサービスをファイルにマップするエントリが含まれています。 このセクションのエントリは、次の形式を使用します。 
   
- **[ファイルのマッピングを支援する]**_メッセージ サービス名_ =  _ヘルプ ファイル名]_
+ **[Help File Mappings]**_メッセージサービス名_ =  _ヘルプファイル名_
   
-メッセージ サービス名は、インストールされているメッセージ サービスの名前ヘルプ ファイル名は、エラー情報が格納されているファイルの名前です。 例を次の 3 つのサービスのエントリが含まれている標準的な **[ヘルプ ファイルのマッピング]** セクションを示しています: MAPI、MsgService サービス、および MS サービスです。 
+メッセージサービス名は、インストールされているメッセージサービスの名前です。ヘルプファイル名は、エラー情報が格納されているファイルの名前です。 次の例は、3つのサービス (MAPI、msgservice サービス、および MS service) のエントリを含む標準的な **[Help File Mappings]** セクションを示しています。 
   
 ```cpp
 [Help File Mappings]

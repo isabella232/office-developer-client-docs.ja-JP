@@ -1,5 +1,5 @@
 ---
-title: IMAPIFolderCopyMessages
+title: imapifoldercopymessages
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 4c7d2110-3fcb-4b9f-bf20-1dc1a611161d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e253aa6a701d565fbc61e8a0e0a6388f7199c000
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 21aa28e1a2c11ee7361fb4921f8d527b3e3ceb44
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280128"
 ---
 # <a name="imapifoldercopymessages"></a>IMAPIFolder::CopyMessages
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-1 つまたは複数のメッセージを移動またはコピーします。
+1つまたは複数のメッセージをコピーまたは移動します。
   
 ```cpp
 HRESULT CopyMessages(
@@ -40,89 +40,89 @@ HRESULT CopyMessages(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpMsgList_
+ _lpmsglist_
   
-> [in]メッセージまたはメッセージのコピーまたは移動を識別する[ENTRYLIST](entrylist.md)構造体の配列へのポインター。 
+> 順番コピーまたは移動するメッセージを識別する[entrylist](entrylist.md)構造体の配列へのポインター。 
     
- _lpInterface_
+ _lpinterface_
   
-> [in]_LpDestFolder_パラメーターで指定された移動先フォルダーへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 フォルダーの標準的なインターフェイスを返すサービス プロバイダーの結果をパラメーターに NULL [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)。 クライアントでは、NULL を渡す必要があります。 他の呼び出し元に対する、IID_IMAPIProp、IID_IMAPIContainer、または IID_IMAPIFolder、 _lpInterface_パラメーターを設定できます。 
+> 順番_lpdestfolder_パラメーターによって指定された宛先フォルダーへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 サービスプロバイダーに NULL 結果が渡され、標準のフォルダーインターフェイス、 [imapifolder: IMAPIContainer](imapifolderimapicontainer.md)が返されます。 クライアントは、NULL を渡す必要があります。 他の呼び出し元が_lpinterface_パラメーターを IID_IUnknown、IID_IMAPIProp、IID_IMAPIContainer、または IID_IMAPIFolder に設定できます。 
     
- _lpDestFolder_
+ _lpdestfolder_
   
-> [in]開いているフォルダーにコピーまたは移動されたメッセージを受信するへのポインター。
+> 順番コピーまたは移動されたメッセージを受信する、開いているフォルダーへのポインター。
     
- _ulUIParam_
+ _uluiparam_
   
-> [in]ダイアログ ボックスまたはウィンドウの親ウィンドウへのハンドルを表示します。 _UlUIParam_パラメーターは、クライアントは、 _ulFlags_パラメーターに MESSAGE_DIALOG フラグを設定し、 _lpProgress_パラメーターに NULL を渡す場合を除き、無視されます。 
+> 順番このメソッドが表示する任意のダイアログボックスまたはウィンドウの親ウィンドウへのハンドル。 _uluiparam_パラメーターは、クライアントが_ulflags_パラメーターに MESSAGE_DIALOG フラグを設定し、 _lpprogress_パラメーターに NULL を渡す場合を除き、無視されます。 
     
- _lpProgress_
+ _lpprogress_
   
-> [in]進行状況インジケーターを表示する進行中のオブジェクトへのポインター。 _LpProgress_に NULL を渡した場合、メッセージ ストア プロバイダーは、MAPI 処理中のオブジェクトの実装を使用して進行状況のインジケーターを表示します。 _UlFlags_に MESSAGE_DIALOG フラグが設定されていない限り、 _lpProgress_パラメーターは無視されます。
+> 順番進行状況インジケーターを表示する progress オブジェクトへのポインター。 _lpprogress_で NULL が渡された場合、メッセージストアプロバイダーは MAPI 進行状況オブジェクトの実装を使用して進行状況インジケーターを表示します。 MESSAGE_DIALOG フラグが_ulflags_で設定されていない場合、 _lpprogress_パラメーターは無視されます。
     
  _ulFlags_
   
-> [in]コピーまたは移動操作を実現する方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番コピー操作または移動操作の実行方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_DECLINE_OK 
   
-> サポート オブジェクトの[IMAPISupport::DoCopyTo](imapisupport-docopyto.md)または[IMAPISupport::DoCopyProps](imapisupport-docopyprops.md)メソッドを呼び出すことによって**IMAPIFolder::CopyMessages**を実装している場合に MAPI_E_DECLINE_COPY をすぐに返すメッセージ ストア プロバイダーに通知します。 
+> サポートオブジェクトの[imapifolder::D ocopyto](imapisupport-docopyto.md)または[imapifolder::D ocopyprops](imapisupport-docopyprops.md)メソッドを呼び出して、 **imapifolder:: copymessages**を実装することによって、メッセージストアプロバイダーに直ちに MAPI_E_DECLINE_COPY を返すように通知します。 
     
 MESSAGE_DIALOG 
   
-> 操作の進行中は、進行状況のインジケーターを表示します。
+> 操作の進行状況を示すインジケーターを表示します。
     
 MESSAGE_MOVE 
   
-> 代わりに移動するのには、メッセージまたはメッセージをコピーします。 MESSAGE_MOVE が設定されていない場合、メッセージがコピーされます。
+> メッセージをコピーではなく移動します。 MESSAGE_MOVE が設定されていない場合は、メッセージがコピーされます。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> メッセージまたはメッセージがされて正常にコピーまたは移動します。
+> メッセージまたはメッセージが正常にコピーまたは移動されました。
     
 MAPI_E_DECLINE_COPY 
   
-> プロバイダーのサポートのオブジェクトのメソッドを呼び出すことによってこのメソッドを実装して、呼び出し元に MAPI_DECLINE_OK フラグが渡されます。
+> プロバイダーは、サポートオブジェクトのメソッドを呼び出すことによってこのメソッドを実装し、発信者が MAPI_DECLINE_OK フラグを渡しています。
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> 呼び出しが成功したが、すべてのエントリが正常にコピーまたは移動されました。 この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
+> 呼び出しは成功しましたが、すべてのエントリが正常にコピーまたは移動されませんでした。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPIFolder::CopyMessages**メソッドは、コピーまたは別のフォルダーにメッセージを移動します。 
+**imapifolder:: copymessages**メソッドは、メッセージを別のフォルダーにコピーまたは移動します。 
   
-開かれているメッセージ読み取り/書き込みアクセス許可を移動またはコピーすることができます。 
+読み取り/書き込みアクセス許可を使用して開かれたメッセージは、移動またはコピーすることができます。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-[IMAPISupport::CopyMessages](imapisupport-copymessages.md)メソッドを使用せず、別のメッセージ ストアにメッセージをコピーする場合は、GENERATE_RECEIPT_ONLY フラグを設定して[IMAPIFolder::SetReadFlags](imapifolder-setreadflags.md)を最初に呼び出す必要があります。 受信側メッセージ ・ ストアは、コピーまたは移動されたメッセージの読み取りのレポートを生成するための責任ではありません。 場合は**IMAPIFolder::CopyMessages**を実装するために**IMAPISupport::CopyMessages**を呼び出す場合、呼び出さないように**SetReadFlags**。MAPI を呼び出すことです。 
+[imapisupport:: copymessages](imapisupport-copymessages.md)メソッドを使用せずにメッセージを別のメッセージストアにコピーする場合は、GENERATE_RECEIPT_ONLY フラグが設定された[imapisupport:: setreadflags](imapifolder-setreadflags.md)を最初に呼び出す必要があります。 受信側のメッセージストアは、コピーまたは移動されたメッセージの読み取りレポートを生成する責任がありません。 **imapisupport:** : copymessages を呼び出して**imapisupport:: copymessages**を実装する場合は、 **setreadflags**を呼び出さないでください。MAPI がこれを呼び出します。 
   
-実装は、移動または任意の順序でメッセージをコピーし、任意の順序で読み取りステータス レポートを生成できます。 読み取りステータス レポートを生成する前にメッセージのコピーを完了したり、実装は、コピー操作を開始する前にレポートを送信できます。 ただし、コピーが成功するかどうかに関係なく、コピーするすべてのメッセージを送信するレポートを読みます。
+実装では、任意の順序でメッセージを移動またはコピーしたり、読み取り状態レポートを生成したりできます。 つまり、読み取り状態レポートを生成する前にメッセージのコピーを終了するか、または実装でコピー操作を開始する前にレポートを送信することができます。 ただし、コピーが成功したかどうかにかかわらず、すべてのメッセージをコピーするには、読み取りレポートを送信する必要があります。
   
-コピーまたは移動操作には、複数のメッセージが含まれている場合は、できるだけ完全に操作を実行します。 メモリが不足している、ディスク領域、またはメッセージ ・ ストア内の破損が不足しているなど、ユーザーが制御できない障害が発生した場合を除きは、処理の途中で操作を停止しません。
+コピー操作または移動操作に複数のメッセージが含まれている場合は、操作をできるだけ完全に実行します。 メモリが不足している、ディスクの空き領域が不足している、メッセージストアが破損しているなど、操作を途中で停止しないようにしてください。
   
-移動またはコピー操作の間でのエントリの識別子を維持しようとしてください。 必須ではありませんが、エントリの識別子を維持することもする必要があります。
+移動操作またはコピー操作の間にエントリ識別子を保持するようにしてください。 エントリ識別子も保持する必要がありますが、必須ではありません。
   
-移動またはクライアントがメッセージの[IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドの呼び出しは失敗する可能性があることあらかじめご了承するようにメッセージをコピーするときに通知を送信します。 
+メッセージを移動またはコピーするときに通知を送信します。そのため、クライアントは、メッセージ ' [imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドへの呼び出しが失敗する可能性があることを forewarned します。 
   
-メッセージの状態は、コピー、移動の操作をしたりしないでください。 移動またはメッセージの状態のコピーを大幅にパフォーマンスに影響します。
+コピー操作または移動操作では、メッセージの状態は含まれません。 メッセージの状態を移動またはコピーすると、パフォーマンスに大きく影響します。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**IMAPIFolder::CopyMessages**を使用して、検索結果のフォルダー、メッセージ多くの場合、親フォルダー グループを作成します。 
+**imapifolder:: copymessages**を使用して、メッセージが親フォルダーによってグループ化されることが多い検索結果フォルダーを作成します。 
   
-次の条件下で、これらの戻り値を期待してください。
+これらの戻り値は、次の条件に当てはまることが予想されます。
   
-|**条件**|**戻り値**|
+|**Condition**|**戻り値**|
 |:-----|:-----|
-|**IMAPIFolder::CopyMessages**が正常にコピーまたは、すべてのメッセージを移動します。  <br/> |S_OK  <br/> |
-|**IMAPIFolder::CopyMessages**は、正常にコピーまたはすべてのメッセージを移動できませんでした。  <br/> |MAPI_W_PARTIAL_COMPLETION  <br/> |
-|**IMAPIFolder::CopyMessages**は完了できませんでした。  <br/> |エラー値  <br/> |
+|**imapifolder:: copymessages**は、すべてのメッセージで正常にコピーまたは移動されました。  <br/> |S_OK  <br/> |
+|**imapifolder:: copymessages**は、すべてのメッセージを正常にコピーまたは移動できませんでした。  <br/> |MAPI_W_PARTIAL_COMPLETION  <br/> |
+|**imapifolder:: copymessages**を完了できませんでした。  <br/> |任意のエラー値  <br/> |
    
-**IMAPIFolder::CopyMessages**が完了することではない場合と仮定しないでその作業は実行されませんでした。 **IMAPIFolder::CopyMessages**は、コピーまたはエラーが発生する前に 1 つまたは複数のメッセージを移動することがされている可能性があります。 
+**imapifolder:: copymessages**を完了できない場合は、作業が行われていないと仮定しません。 **imapifolder:: copymessages**は、エラーが発生する前に1つ以上のメッセージをコピーまたは移動できる可能性があります。 
   
 ## <a name="see-also"></a>関連項目
 

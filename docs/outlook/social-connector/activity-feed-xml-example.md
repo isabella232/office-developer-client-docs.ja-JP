@@ -1,5 +1,5 @@
 ---
-title: アクティビティ フィードの XML の例
+title: アクティビティフィード XML の例
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,43 +7,43 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: aa50ca36-8d01-4770-9d9c-30a5baa146ff
-description: このトピックの例では XML では、アクティビティ フィードのソーシャル ネットワークの ISocialSession2::GetActivitiesEx メソッドが呼び出された後に、Outlook ソーシャル コネクタ (OSC) が返される XML 文字列です。
+description: 'このトピックの xml の例は、ソーシャルネットワークに対して ISocialSession2:: GetActivitiesEx メソッドを呼び出した後、Outlook Social Connector (.osc) に返されるアクティビティフィード XML 文字列です。'
 ms.openlocfilehash: 6370b559c5160bfa48d32afa77715e9a7c126aab
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25390465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281333"
 ---
-# <a name="activity-feed-xml-example"></a>アクティビティ フィードの XML の例
+# <a name="activity-feed-xml-example"></a>アクティビティフィード XML の例
 
-XML の例をこのトピックでは、アクティビティ フィードのソーシャル ネットワークの[ISocialSession2::GetActivitiesEx](isocialsession2-getactivitiesex.md)メソッドが呼び出された後に、Outlook ソーシャル コネクタ (OSC) が返される XML 文字列です。 
+このトピックの xml の例は、ソーシャルネットワークに対して[ISocialSession2:: GetActivitiesEx](isocialsession2-getactivitiesex.md)メソッドを呼び出した後、Outlook Social Connector (.osc) に返されるアクティビティフィード XML 文字列です。 
   
-**ActivityFeed**次の 4 つのアクティビティが含まれている XML の例は、表示目的で**activityDetails**要素で区切られたそれぞれのテンプレートに一致します。 
+この例は、次の4つのアクティビティを含む**activityfeed** XML を示しています。各アクティビティは、 **activityfeed**要素で区切られ、表示用のテンプレートと一致します。 
   
-- Melissa Macbeth、ソーシャル ネットワーク上の**ownerID**が 4667647 では、プロフィールの画像を更新します。 このアクティビティでは、型**publisherVariable**、 **listVariable**、 **pictureVariable** (これは**listVariable**で囲まれている) の 3 つのテンプレート変数を指定します。 これらの変数は、アクティビティ フィードのアイテムとを使用して**pictureVariable**の子要素**の名前**、**値**、 **altText**、および**href** ) を更新する図の情報を公開したユーザーを指定します。
+- Melissa Macbeth によって、ソーシャルネットワーク上の**ownerID**が4667647であるプロファイル画像の更新。 このアクティビティでは、 **publisherVariable**、 **listvariable**、および**ピクチャ変数**( **listvariable**で囲まれています) の3つのテンプレート変数を指定します。 これらの変数は、アクティビティフィードアイテムを発行したユーザー、および変更される画像の情報を指定します (picture**変数**の**name**、 **value**、 **alttext**、および**href**の子要素を使用)。
     
-- マイケル ・ Affronti の 5015012 は、ソーシャル ネットワーク上の**ownerID**がプロフィールの画像を更新します。 最後のアクティビティと同様に、このアクティビティは、型**publisherVariable**、 **listVariable**、 **pictureVariable**の 3 つのテンプレート変数を指定します。 これらの変数は、アクティビティ フィードのアイテムを更新する図の情報を公開したユーザーを指定します。
+- Michael Affronti によって、ソーシャルネットワーク上の**ownerID**が5015012であるプロファイル画像の更新。 このアクティビティは、最後のアクティビティと同様に、 **publisherVariable**、 **listvariable**、および**ピクチャ変数**型の3つのテンプレート変数を指定します。 これらの変数は、アクティビティフィードアイテムを発行したユーザーと、更新する画像の情報を指定します。
     
-- 同じの**ownerID** 5015012 の最後のアクティビティとして表示されている、マイケル ・ Affronti で状態を更新します。 このアクティビティでは、型の**publisherVariable**と**textVariable**の 2 つのテンプレート変数を指定します。 **publisherVariable**は、アクティビティ フィードのアイテムを発行した人物を指定し、 **textVariable**には、ステータス行の**値**が含まれています。`is hiking on Mount Rainier this weekend!`
+- Affronti によって進捗の更新が行われ、最後のアクティビティとして5015012の同じ**ownerID**が表示されます。 このアクティビティは、type **publisherVariable**および**textvariable**の2つのテンプレート変数を指定します。 **publisherVariable**は、アクティビティフィードアイテムを発行したユーザーを指定し、 **textvariable**にはステータス行の**値**が含まれています。`is hiking on Mount Rainier this weekend!`
     
-- 同じの**ownerID** 5015012 の最後の 2 つの活動項目として表示されている、マイケル ・ Affronti でのブログ投稿です。 このアクティビティでは、型の**publisherVariable**と**linkVariable**の 2 つのテンプレート変数を指定します。 活動を公開したユーザーのフィードのアイテム、および**linkVariable**が含まれています詳細についてには ( **linkVariable**の**名前**、**テキスト**、および**値**の子要素で指定) を指定する**publisherVariable**に関するブログの投稿です。
+- マイケル Affronti によるブログ投稿。最後の2つのアクティビティと同じ**ownerID**が5015012に表示されます。 このアクティビティは、 **publisherVariable**および**linkvariable**型の2つのテンプレート変数を指定します。 **publisherVariable**は、アクティビティフィードアイテムを発行したユーザーを指定します。 **linkvariable**には、追加情報 ( **linkvariable**の**name**、 **text**、 **value**子要素で指定される) が含まれています。ブログ投稿について
     
-それぞれの 4 つのアクティビティは、**テンプレート**要素で指定された 3 つのテンプレートのいずれかに一致する、**テンプレート Id**の値を指定します。 同じ**テンプレート Id**の値を持つアクティビティを表示するために使用される**テンプレート Id**値によって識別される、独自の**activityTemplateContainer**要素には、各テンプレート。 
+4つの各アクティビティは、 **templates**要素で指定された3つのテンプレートのいずれかに一致する**templateID**値を指定します。 各テンプレートは独自の**activitytemplatecontainer**要素に含まれています。これは、同じ**templateID**値を持つアクティビティを表示するためにも使用される**templateID**値で識別されます。 
   
-この例で使用する XML 要素の詳細については、次のトピックを参照してください。 
+この例で使用されている XML 要素の詳細な説明については、以下のトピックを参照してください。 
   
-- [フィード アイテムの活動項目の XML の概要](overview-of-xml-for-an-activity-feed-item.md)
+- [アクティビティフィードアイテムの XML の概要](overview-of-xml-for-an-activity-feed-item.md)
     
-- [activityDetails 要素](activitydetails-element.md)
+- [activitydetails 要素](activitydetails-element.md)
     
-- [activityTemplateContainer 要素](activitytemplatecontainer-element.md)
+- [activitytemplatecontainer 要素](activitytemplatecontainer-element.md)
     
 - [テンプレート変数](template-variables.md)
     
 ## <a name="xml-example"></a>XML の例
 
-次の例では、 **activityFeed**の 4 つのアクティビティの XML: 2 つのプロファイル画像の更新、進捗状況の更新、およびブログの投稿です。 XML では、対応するアクティビティを表示するための 3 つのアクティビティの表示テンプレートを指定します。 
+次の例は、2つのプロファイル画像の更新、状態の更新、およびブログ投稿の4つのアクティビティの**activityfeed** XML を示しています。 また、XML は、対応するアクティビティを表示するための3つのアクティビティ表示テンプレートも指定します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -180,9 +180,9 @@ XML の例をこのトピックでは、アクティビティ フィードのソ
 
 ## <a name="see-also"></a>関連項目
 
-- [OSC プロバイダーの XML の例](osc-provider-xml-examples.md)  
-- [活動の XML](xml-for-activities.md) 
-- [機能の XML の例](capabilities-xml-example.md)  
-- [友人の XML の例](friends-xml-example.md)
-- [Outlook ソーシャル コネクタ プロバイダーの XML スキーマ](outlook-social-connector-provider-xml-schema.md)
+- [.osc プロバイダーの XML の例](osc-provider-xml-examples.md)  
+- [アクティビティの XML](xml-for-activities.md) 
+- [機能 XML の例](capabilities-xml-example.md)  
+- [Friends XML の例](friends-xml-example.md)
+- [Outlook Social Connector プロバイダーの XML スキーマ](outlook-social-connector-provider-xml-schema.md)
 

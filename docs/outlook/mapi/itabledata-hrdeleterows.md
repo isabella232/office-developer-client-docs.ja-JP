@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7b351eec-9624-4b38-9978-5d0b67b64687
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 753067c8c0af15a44e0f3b71f6122d8683db4a98
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: fdd6f40b4d7aa7f65bf1a46d3d9a4f18472b19f7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278948"
 ---
 # <a name="itabledatahrdeleterows"></a>ITableData::HrDeleteRows
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-複数のテーブル行を削除します。
+複数の表の行を削除します。
   
 ```cpp
 HRESULT HrDeleteRows(
@@ -35,39 +35,39 @@ HRESULT HrDeleteRows(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]削除を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番削除を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 TAD_ALL_ROWS 
   
-> テーブルと 1 つの TABLE_RELOAD 通知を送信する、対応するすべてのビューからすべての行を削除します。
+> 1つの TABLE_RELOAD 通知を送信して、テーブルおよび対応するすべてのビューからすべての行を削除します。
     
  _lprowsetToDelete_
   
-> [in]削除する行を表す行セットへのポインター。 _UlFlags_パラメーターに TAD_ALL_ROWS フラグが設定されている場合は、 _lprowsetToDelete_パラメーターを NULL にできます。 
+> 順番削除する行を説明する行セットへのポインター。 TAD_ALL_ROWS フラグが_ulflags_パラメーターで設定されている場合は、 _lprowsetToDelete_パラメーターを NULL にすることができます。 
     
  _cRowsDeleted_
   
-> [out]削除された行の数。
+> 読み上げ削除された行のカウント。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> テーブルの行は削除されました。
+> テーブルの行が正常に削除されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**ITableData::HrDeleteRows**メソッドは、検索し、行の各**aRow**のエントリの**lpProps**のメンバーによって設定するのにはポイントのプロパティに一致する列を含むテーブルの行を削除します。 インデックス列を使用して各行を識別します。この列には、 [CreateTable](createtable.md)関数への呼び出し内の_ulPropTagIndexColumn_パラメーターで渡されたプロパティ タグと同じプロパティ タグが必要です。 
+**itabledata:: HrDeleteRows**メソッドは、行セット内の各**arow**エントリの**lpprops**メンバーによって示されるプロパティに一致する列を含むテーブル行を検索して削除します。 インデックス列は、各行を識別するために使用されます。この列は、 [CreateTable](createtable.md)関数の呼び出しで_ulPropTagIndexColumn_パラメーターで渡されたプロパティタグと同じプロパティタグを持っている必要があります。 
   
-_CRowsDeleted_では、実際に削除された行の数が返されます。 1 つまたは複数の行が見つからなかった場合、エラーは返されません。 
+実際に削除された行の数は、 _cRowsDeleted_で返されます。 1つまたは複数の行が見つからない場合、エラーは返されません。 
   
-行が削除されると、すべてのクライアントやテーブルのビューがあるし、の通知を登録するテーブルの[IMAPITable::Advise](imapitable-advise.md)メソッドを呼び出すことが、サービス プロバイダーに通知が送信されます。 
+行が削除されると、テーブルのビューを持つすべてのクライアントまたはサービスプロバイダーに通知が送信され、通知を登録するためにテーブルの[IMAPITable:: Advise](imapitable-advise.md)メソッドを呼び出します。 
   
-行を削除するか、テーブルの既存のビューに使用できる列は縮小されません、削除された行が特定の列の値を持つ最後の場合でも以降の表形式ビューに開かれます。
+行を削除しても、削除された行が特定の列の値を持つ最後の行であっても、既存のテーブルビューまたは後で開くテーブルビューで使用可能な列は減少しません。
   
 ## <a name="see-also"></a>関連項目
 

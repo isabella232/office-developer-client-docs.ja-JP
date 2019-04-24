@@ -7,21 +7,21 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a3dc2c0f-b1fd-d758-e847-a0f101efe7f1
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3dffb65ea4f2c19966962a7f58cfc33f767fca83
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 05312e62d6bcc1a4ddb2ece170a6c0c0bfbe5f3f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279651"
 ---
 # <a name="olflagicon"></a>OlFlagIcon
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-アイテムのフラグを設定したかどうか、およびかどうかは、フラグが設定されたアイテムに関連付けられている色を指定します。
+アイテムにフラグを設定するかどうかを指定します。フラグが設定されているアイテムに関連付けられている色です。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -38,35 +38,35 @@ enum OlFlagIcon {
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
- _olNoFlagIcon_
+ _olnoflagicon_
   
-> 項目に関連付けられているフラグはありません。
+> アイテムに関連付けられているフラグはありません。
     
- _olPurpleFlagIcon_
+ _ol紫のフラグアイコン_
   
-> 紫は、フラグが設定されたアイテムに関連付けられて。
+> 紫は、フラグ付きのアイテムに関連付けられています。
     
  _olOrangeFlagIcon_
   
-> オレンジは、フラグが設定されたアイテムに関連付けられて。
+> オレンジ色はフラグ付きのアイテムに関連付けられています。
     
  _olGreenFlagIcon_
   
-> 緑は、フラグが設定されたアイテムに関連付けられて。
+> 緑色は、フラグ付きのアイテムに関連付けられています。
     
  _olYellowFlagIcon_
   
-> 黄は、フラグが設定されたアイテムに関連付けられて。
+> 黄色は、フラグ付きのアイテムに関連付けられています。
     
  _olBlueFlagIcon_
   
-> 青は、フラグの設定されたアイテムに関連付けられて。
+> 青はフラグ付きのアイテムに関連付けられています。
     
- _olRedFlagIcon_
+ _olredflagicon_
   
-> 赤は、フラグの設定されたアイテムに関連付けられて。
+> 赤は、フラグ付きのアイテムに関連付けられています。
     
 ## <a name="see-also"></a>関連項目
 

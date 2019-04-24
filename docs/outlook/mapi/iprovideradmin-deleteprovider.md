@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0065b50f-95f6-4af1-81c2-a73e5111eecf
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: db09b44bd8eeeb3ab56513b1b9c2cab69f776002
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 28dbbb98c9810bb688b9ecdd730ef6c4ada5f60b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279550"
 ---
 # <a name="iprovideradmindeleteprovider"></a>IProviderAdmin::DeleteProvider
 
@@ -25,7 +25,7 @@ ms.locfileid: "22590086"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ サービスからサービス プロバイダーを削除します。
+メッセージサービスからサービスプロバイダーを削除します。
   
 ```cpp
 HRESULT DeleteProvider(
@@ -35,33 +35,33 @@ HRESULT DeleteProvider(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpUID_
+ _lpuid_
   
-> [で [チェック アウト]削除するプロバイダーを表す一意の識別子を格納する[MAPIUID](mapiuid.md)構造体へのポインター。 
+> [入力]削除するプロバイダーを表す一意の識別子を含む[MAPIUID](mapiuid.md)構造体へのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> プロバイダーは、メッセージ サービスから正しく削除されました。
+> プロバイダーがメッセージサービスから正常に削除されました。
     
 MAPI_E_NOT_FOUND 
   
-> _LpUID_パラメーターで指定された**MAPIUID**が認識されませんでした。 
+> _lpuid_パラメーターが指す**MAPIUID**が認識されませんでした。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IProviderAdmin::DeleteProvider**メソッドは、メッセージ サービスのサービス プロバイダーを削除します。 **DeleteProvider**は、アクティブなサービスのプロバイダーが登録されている識別子のセットを_lpUID_で指定された**MAPIUID**構造を照合することによって削除するのにはサービス ・ プロバイダーを決定します。 
+**IProviderAdmin::D eleteprovider**メソッドは、メッセージサービスからサービスプロバイダーを削除します。 **deleteprovider**は、アクティブなサービスプロバイダによって登録された一連の識別子を使用して、 _lpuid_が指す**MAPIUID**構造を照合することによって、削除するサービスプロバイダーを決定します。 
   
-メッセージ サービスのほとんどは、プロバイダー プロファイルを使用している間に削除するには許可されません。 削除するプロバイダーを使用している場合**DeleteProvider**はすぐに削除する代わりに削除のマークが付けし、S_OK を返します。 プロバイダーが使用されていないがときに、削除されます。 
+ほとんどのメッセージサービスでは、プロファイルが使用されている間、プロバイダーを削除することはできません。 削除するプロバイダーが使用されている場合、 **deleteprovider**はすぐに削除するのではなく、削除対象としてマークし、S_OK を返します。 プロバイダーが使用されなくなると、そのプロバイダーは削除されます。 
   
- **DeleteProvider**は、プロバイダーがサービスから削除される前に、メッセージ サービスのエントリ ポイント関数を呼び出します。 _UlContext_パラメーターは、MSG_SERVICE_PROVIDER_DELETE に設定されます。 メッセージ サービスのエントリ ポイント関数は、次のタスクを実行します。 
+ **deleteprovider**は、プロバイダーがサービスから削除される前に、メッセージサービスのエントリポイント関数を呼び出します。 _ulcontext_パラメーターは MSG_SERVICE_PROVIDER_DELETE に設定されています。 メッセージサービスエントリポイント関数は、次のタスクを実行します。 
   
-- サービス プロバイダーを削除します。
+- サービスプロバイダーを削除します。
     
-- サービス プロバイダーのプロファイル セクションを削除します。
+- サービスプロバイダーのプロファイルセクションを削除します。
     
-プロバイダーが削除された後、メッセージ サービスのエントリ ポイント関数は再び呼び出されません。
+プロバイダーが削除された後、メッセージサービスエントリポイント関数が再度呼び出されることはありません。
   
 ## <a name="see-also"></a>関連項目
 

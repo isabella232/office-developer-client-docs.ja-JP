@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: e9deaa7c-430b-4e97-8ed6-f7c615956e0f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3ddfcdd95f0423ba92c37c434f18078eadf90d82
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 843a61696def4398c22a244a7f3f66d7e5dc75ce
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279529"
 ---
 # <a name="iprovideradmingetprovidertable"></a>IProviderAdmin::GetProviderTable
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ サービスのプロバイダーのテーブル、メッセージ サービスのサービス プロバイダーの一覧へのアクセスを提供します。
+メッセージサービスのプロバイダーテーブルへのアクセスを提供します。これには、メッセージサービスのサービスプロバイダーの一覧が含まれます。
   
 ```cpp
 HRESULT GetProviderTable(
@@ -34,55 +34,55 @@ HRESULT GetProviderTable(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]プロバイダー テーブルの列で返される文字列の種類を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番プロバイダーテーブルの列に返される文字列の型を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> Unicode 形式では、文字列型の列です。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の列です。
+> 文字列列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、列は ANSI 形式になります。
     
- _lppTable_
+ _lpptable_
   
-> [out]プロバイダー テーブルへのポインターへのポインター。
+> 読み上げプロバイダテーブルへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> プロバイダー テーブルは正常に返されました。
+> プロバイダーテーブルが正常に返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IProviderAdmin::GetProviderTable**メソッドは、メッセージ サービスのプロバイダーのテーブル、MAPI は、メッセージ サービスでは、各サービス プロバイダーに関する情報が含まれていることを保持するテーブルへのポインターを取得します。 
+**IProviderAdmin:: getprovidertable**メソッドは、メッセージサービスのプロバイダーテーブルへのポインターを取得します。これには、メッセージサービスの各サービスプロバイダーに関する情報を含む MAPI が保持するテーブルがあります。 
   
-、 [IMsgServiceAdmin::GetProviderTable](imsgserviceadmin-getprovidertable.md)メソッドによって返されるプロバイダーのテーブルとは異なり、 **IProviderAdmin::GetProviderTable**によって返されるプロバイダーのテーブルがのいずれかに関連付けられている情報を表す追加の行を含めることがメッセージ サービスのサービス プロバイダーです。 この追加情報は、Mapisvc.inf ファイルの「項目」キーワードを使用してプロファイルに追加されます。 プロバイダーに追加のプロファイル セクションが設定されているときは、 **PR_SERVICE_EXTRA_UIDS** ([PidTagServiceExtraUids](pidtagserviceextrauids-canonical-property.md)) のプロパティでこれらのセクションの**MAPIUID**構造体を格納します。 **PR_SERVICE_EXTRA_UIDS**は、サービス プロファイルの [メッセージ] セクションに保存されます。 
+[IMsgServiceAdmin:: getprovidertable](imsgserviceadmin-getprovidertable.md)メソッドによって返されるプロバイダーテーブルとは異なり、 **IProviderAdmin:: getprovidertable**によって返されるプロバイダテーブルには、1つまたは複数のに関連付けられている情報を表す追加の行が含まれている場合があります。メッセージサービスのサービスプロバイダー。 この追加情報は、mapisvc.inf ファイルの "Sections" キーワードを使用して、プロファイルに追加されます。 プロバイダーに特別なプロファイルセクションがある場合は、これらのセクションの**MAPIUID**構造体を**PR_SERVICE_EXTRA_UIDS** ([PidTagServiceExtraUids](pidtagserviceextrauids-canonical-property.md)) プロパティに格納します。 **PR_SERVICE_EXTRA_UIDS**は、[メッセージサービスプロファイル] セクションに保存されます。 
   
-削除されている、または使用中だが、削除対象としてマークされているプロバイダーは、プロバイダーの表には含まれません。 プロバイダー テーブルにそれ以降に追加された機能またはメッセージ サービスからの削除が表に反映されていないことを意味します。 
+削除されているか、または使用されていて、削除対象としてマークされているプロバイダーは、プロバイダテーブルには含まれません。 プロバイダーテーブルは静的であるため、メッセージサービスに対する以降の追加または削除は、テーブルには反映されません。 
   
-メッセージ サービスには、プロバイダーがなければ、 **IProviderAdmin::GetProviderTable**は、0 個の行と S_OK の戻り値を持つテーブルを返します。 
+メッセージサービスにプロバイダーがない場合、 **IProviderAdmin:: getprovidertable**は、行が0で、S_OK の戻り値を持つテーブルを返します。 
   
-_UlFlags_パラメーターに MAPI_UNICODE フラグを設定する、 [IMAPITable::QueryColumns](imapitable-querycolumns.md)メソッドと[IMAPITable::QueryRows](imapitable-queryrows.md)メソッドから返される列の形式に影響します。 
+_ulflags_パラメーターの MAPI_UNICODE フラグを設定すると、 [imapitable:: querycolumns](imapitable-querycolumns.md)および[imapitable:: QueryRows](imapitable-queryrows.md)メソッドから返される列の形式に影響します。 
   
-このフラグは、 [IMAPITable::QuerySortOrder](imapitable-querysortorder.md)メソッドによって返される並べ替え順序のプロパティの種類も制御します。 
+このフラグは、 [IMAPITable:: querysortorder](imapitable-querysortorder.md)メソッドによって返される並べ替え順序で、プロパティの種類を制御することもできます。 
   
-プロバイダー テーブル内の列の一覧は、[プロバイダーのテーブル](provider-tables.md)を参照してください。 
+プロバイダテーブルの列の完全なリストについては、「[プロバイダ table](provider-tables.md)」を参照してください。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-トランスポートの順番でプロバイダーのテーブルの行を取得するには、 **PR_PROVIDER_ORDINAL** ([PidTagProviderOrdinal](pidtagproviderordinal-canonical-property.md)) の列でテーブルをソートします。 
+プロバイダーテーブルの行をトランスポート順で取得するには、テーブルを**PR_PROVIDER_ORDINAL** ([PidTagProviderOrdinal](pidtagproviderordinal-canonical-property.md)) 列で並べ替えます。 
   
-(せず、余分な行を含む) のサービス ・ プロバイダーを表す行のみを取得するには、PT_ERROR の**PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md))] 列の値を持つ行が取得されるを制限します。
+その他の行を含めずに、サービスプロバイダーを表す行のみを取得するには、 **PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md)) 列に PT_ERROR 値を持つ行に取得することを制限します。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-| MsgServiceTableDlg.cpp  <br/> |CMsgServiceTableDlg::OnDisplayItem  <br/> |MFCMAPI では、 **IProviderAdmin::GetProviderTable**メソッドを使用して、新しいダイアログ ボックスに表示するプロバイダーのテーブルを取得します。  <br/> |
+| MsgServiceTableDlg  <br/> |CMsgServiceTableDlg:: ondisplayitem  <br/> |mfcmapi は、 **IProviderAdmin:: getprovidertable**メソッドを使用して、新しいダイアログボックスにレンダリングするプロバイダーのテーブルを取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

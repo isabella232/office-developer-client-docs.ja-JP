@@ -7,23 +7,23 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 83afbdef-4f12-4673-a0c1-bbf86274558f
-description: XML の例をこのトピックでは、ISocialPerson::GetFriendsAndColleagues メソッドが呼び出された後に、Outlook ソーシャル コネクタ (OSC) が返されるフレンド XML 文字列です。 例は、人の要素で区切られたそれぞれの 2 つの友人、友人の XML を示します。 各友人は、ソーシャル ネットワーク上のユーザー Id の要素に一意の値を指定します。
+description: このトピックの xml の例は、iGetFriendsAndColleagues メソッドを呼び出すと、Outlook Social Connector (.osc) に返される friend xml 文字列です。 この例は、person 要素で区切られた、2つのフレンドのフレンド XML を示しています。 各 friend は、ソーシャルネットワーク上の userID 要素の一意の値を指定します。
 ms.openlocfilehash: 5dbda1e4439f807ccc6e7abddd0ef654ae801fe0
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280960"
 ---
 # <a name="friends-xml-example"></a>友だち XML の例
 
-XML の例をこのトピックでは、 [ISocialPerson::GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md)メソッドが呼び出された後に、Outlook ソーシャル コネクタ (OSC) が返されるフレンド XML 文字列です。 例は、**人**の要素で区切られた各、2 つの友人の**友人**の XML を示します。 各友人は、ソーシャル ネットワーク上の**ユーザー Id**の要素に一意の値を指定します。 
+このトピックの xml の例は、 [iGetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md)メソッドを呼び出すと、Outlook Social Connector (.osc) に返される friend xml 文字列です。 この例は、 **person**要素で区切られた、2つのフレンドの**フレンド**XML を示しています。 各 friend は、ソーシャルネットワーク上の**userID**要素の一意の値を指定します。 
   
-XML、**友人**の残りの要素では、わかりやすいものの名前を持ちます。 これらの要素の詳細については、[友人の XML](xml-for-friends.md)を参照してください。 
+**フレンド**XML の残りの要素には、自己説明の名前が付いています。 これらの要素の詳細な説明については、「 [XML for Friends](xml-for-friends.md)」を参照してください。 
   
 ## <a name="xml-example"></a>XML の例
 
-次の例では、ソーシャル ネットワーク上の二人の**友人**の XML を示しています。 
+次の例は、ソーシャルネットワーク上の2人の人々の**フレンド**XML を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -80,8 +80,8 @@ XML、**友人**の残りの要素では、わかりやすいものの名前を�
 
 ## <a name="see-also"></a>関連項目
 
-- [OSC プロバイダーの XML の例](osc-provider-xml-examples.md)  
-- [機能の XML の例](capabilities-xml-example.md) 
-- [アクティビティ フィードの XML の例](activity-feed-xml-example.md) 
-- [Outlook ソーシャル コネクタ プロバイダーの XML スキーマ](outlook-social-connector-provider-xml-schema.md)
+- [.osc プロバイダーの XML の例](osc-provider-xml-examples.md)  
+- [機能 XML の例](capabilities-xml-example.md) 
+- [アクティビティフィード XML の例](activity-feed-xml-example.md) 
+- [Outlook Social Connector プロバイダーの XML スキーマ](outlook-social-connector-provider-xml-schema.md)
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: bd6c0d8e-68cc-4d60-9029-13ed81c816cd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fb0bfaba1ca0a0d7d34096b3b0b1db9863207097
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 243ab1e926171ee66b95cfd8e969cd77e2b31faf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279602"
 ---
 # <a name="rowentry"></a>ROWENTRY
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-行および[IExchangeModifyTable](iexchangemodifytableiunknown.md)インターフェイスを使用して、テーブルにその行に対して実行される操作が含まれています。 
+[IExchangeModifyTable](iexchangemodifytableiunknown.md)インターフェイスを使用して、テーブル内のその行に対して実行される行と操作が含まれます。 
   
 ```cpp
 typedef struct
@@ -36,33 +36,33 @@ typedef struct
 
 ## <a name="members"></a>Members
 
-**ulRowFlags**
+**ulrowflags**
   
-> データに対して実行する次の操作のいずれかです。 
+> データに対して実行する操作の1つを次に示します。 
     
-  - ROW_ADD: は、新しい行としてテーブルにデータを追加します。
+  - ROW_ADD: 新しい行としてテーブルにデータを追加します。
       
-  - ROW_MODIFY: は、テーブルの列を変更します。
+  - ROW_MODIFY: テーブルのこの行を変更します。
       
-  - ROW_REMOVE: は、この行をテーブルから削除します。
+  - ROW_REMOVE: この行を表から削除します。
       
-  - ROW_EMPTY: は、テーブルに行のデータを追加できません。 (行は空です)。
+  - ROW_EMPTY: 行データをテーブルに追加しません。 (行は空です。)
     
-**あう**
+**cvalues**
   
-> **RgPropvals**のプロパティの値の数。
+> **rgPropvals**のプロパティ値の数。
     
 **rgPropVals**
   
-> [SPropValue](spropvalue.md)構造体をテーブルに挿入される列の値を表す配列。 
+> テーブルに挿入する列の値を表す[spropvalue](spropvalue.md)構造の配列。 
     
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|RulesDlg.cpp  <br/> |CRulesDlg::GetSelectedItems  <br/> |**ModifyTable**の後続のアクションを選択したルールの一覧を作成するために使用します。  <br/> |
+|ルール  <br/> |crulesdlg:: GetSelectedItems  <br/> |以降の**modifytable**アクションに対して選択されたルールの一覧を作成するために使用されます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
   

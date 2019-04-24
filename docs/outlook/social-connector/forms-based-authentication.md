@@ -7,46 +7,46 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 282b2377-45ba-4f0c-a7d9-830fa3505c93
-description: Outlook ソーシャル コネクタ (OSC) では、ソーシャル ネットワークの OSC プロバイダーの機能を決定する ISocialProvider::GetCapabilities メソッドを呼び出します。
-ms.openlocfilehash: bf6534b72af7db92e02bed74f2028a086b26cbcf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Outlook social Connector (.osc) は、imethod alprovider:: getcapabilities メソッドを呼び出して、ソーシャルネットワークの .osc プロバイダーの機能を判別します。'
+ms.openlocfilehash: 420f19a8d7632f2ab9b093eb929ffe879f8a2fc2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280991"
 ---
 # <a name="forms-based-authentication"></a>フォームベース認証
 
-Outlook ソーシャル コネクタ (OSC) では、ソーシャル ネットワークの OSC プロバイダーの機能を決定する[ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)メソッドを呼び出します。 OSC では、返される機能を使用して、このソーシャル ネットワークにログオンしている Office ユーザーをサポートする方法を決定します。 
+Outlook social Connector (.osc) は、 [imethod alprovider:: getcapabilities](isocialprovider-getcapabilities.md)メソッドを呼び出して、ソーシャルネットワークの .osc プロバイダーの機能を判別します。 .osc は、返された機能を使用して、このソーシャルネットワークにログオンしている Office ユーザーをサポートする方法を決定します。 
 
-OSC プロバイダーがフォーム ベース認証をサポートしている**機能**の返された XML 内の**useLogonWebAuth**要素が示されている場合、OSC は、ソーシャル ネットワークにログオンするユーザーを許可するのには次の呼び出しシーケンスを作成できます。 
+返された**機能**XML の**uselogonwebauth**要素が、.osc プロバイダーがフォームベース認証をサポートしていることを示している場合、.osc は、ユーザーがそのソーシャルネットワークにログオンできるようにするための次の呼び出し順序を作成できます。 
   
-1. [ISocialProvider::Load](isocialprovider-load.md)&ndash; 、OSC プロバイダーを読み込みます。 
+1. [iこの alprovider:: Load](isocialprovider-load.md)&ndash; .osc は、プロバイダーを読み込みます。 
     
-2. [ISocialProvider::Version](isocialprovider-version.md)&ndash;の OSC は、このソーシャル ネットワーク プロバイダーのバージョン番号を表す文字列を取得します。 
+2. [i/形式 alprovider:: Version](isocialprovider-version.md)&ndash; .osc は、このソーシャルネットワークのプロバイダーのバージョン番号を表す文字列を取得します。 
     
-3. [ISocialProvider::SocialNetworkName](isocialprovider-socialnetworkname.md)&ndash;の OSC は、ソーシャル ネットワークの名前を表す文字列を取得します。 
+3. [i指定 alprovider::](isocialprovider-socialnetworkname.md) /指定&ndash; .osc は、ソーシャルネットワーク名を表す文字列を取得します。 
     
-4. [ISocialProvider::SocialNetworkGuid](isocialprovider-socialnetworkguid.md)&ndash;の OSC は、ソーシャル ネットワークを表す変更不可の GUID を取得します。 
+4. [iこの alprovider::](isocialprovider-socialnetworkguid.md) /"/"/"/"/"/"&ndash; .osc は、ソーシャルネットワークを表す不変の GUID を取得します。 
     
-5. [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)&ndash;の OSC は、プロバイダーの機能を表していると、**機能**の要素のスキーマ定義に準拠する文字列を取得します。 
+5. [isocialprovider:: getcapabilities](isocialprovider-getcapabilities.md)&ndash; .osc は、プロバイダーの機能を表す文字列を取得し、 **capabilities**要素のスキーマ定義に準拠します。 
     
-6. [ISocialProvider::SocialNetworkIcon](isocialprovider-socialnetworkicon.md)&ndash;の OSC は、ソーシャル ネットワーク サイトのアイコンを表すバイト配列を取得します。 
+6. [iこの alprovider::](isocialprovider-socialnetworkicon.md) /"/"&ndash; .osc は、ソーシャルネットワークサイトのアイコンを表すバイト配列を取得します。 
     
-7. [ISocialProvider::GetSession](isocialprovider-getsession.md)&ndash;の OSC は、 [ISocialSession](isocialsessioniunknown.md)インターフェイスを取得します。 
+7. [isocialprovider:: getsession](isocialprovider-getsession.md)&ndash; .osc は、 [isocialsession](isocialsessioniunknown.md)インターフェイスを取得します。 
     
-8. [ISocialSession::LogonWeb](isocialsession-logonweb.md)&ndash; 、OSC は、フォーム ベース認証でソーシャル ネットワーク サイトへのログオンを初期化します。 この最初のログオンの呼び出しに、OSC は**null**の場合、 _connectIn_パラメーターで渡されます。 
+8. i/した[セッション:: logonweb](isocialsession-logonweb.md)&ndash; .osc は、フォームベース認証によってソーシャルネットワークサイトへのログ記録を初期化します。 この最初のログオン呼び出しの場合、.osc は、null __ を指定するパラメーターに対して**null**を渡します。 
     
-9. [ISocialSession::GetLogonUrl](isocialsession-getlogonurl.md)&ndash;の OSC は、web 認証の際に、ブラウザー ベースのフォームをユーザーに表示する URL を取得します。 
+9. [i、alsession:: getlogonurl](isocialsession-getlogonurl.md)&ndash; .osc は、web 認証中にユーザーにブラウザーベースのフォームを表示するための URL を取得します。 
     
-10. [ISocialSession::LogonWeb](isocialsession-logonweb.md)&ndash; 、OSC では、フォーム ベース認証を使用して、ソーシャル ネットワーク サイトへのログオンが完了するとします。 OSC は、2 回目、このメソッドを呼び出して、 _connectIn_パラメーターでプロバイダーにログオン フォームの URL を渡すことです。 
+10. i/した[セッション:: logonweb](isocialsession-logonweb.md)&ndash; .osc は、フォームベース認証を使用して、ソーシャルネットワークサイトへのログオンを完了します。 .osc は、このメソッドをもう一度呼び出して、ログオンフォームの URL を、入力された__ プロバイダーに渡します。 
     
-11. [ISocialSession::GetLoggedOnUser](isocialsession-getloggedonuser.md)&ndash;の OSC は、ログオンしたユーザーを表す[ISocialProfile](isocialprovideriunknown.md)インターフェイスを取得します。 
+11. [iGetLoggedOnUser alsession::](isocialsession-getloggedonuser.md)&ndash; .osc は、ログオンしているユーザーを表す[isocialprofile](isocialprovideriunknown.md)インターフェイスを取得します。 
     
-12. [ISocialSession::GetNetworkIdentifier](isocialsession-getnetworkidentifier.md)&ndash;の OSC は、ソーシャル ネットワーク サイトの一意の識別子を表す文字列を取得します。 ネットワーク id はネットワーク名と同じにすることはできます。 
+12. [i入力 alsession:: getnetworkidentifier](isocialsession-getnetworkidentifier.md)&ndash; .osc は、ソーシャルネットワークサイトの一意の識別子を表す文字列を取得します。 ネットワーク識別子は、ネットワーク名に相当します。 
     
 ## <a name="see-also"></a>関連項目
 
-- [機能のための XML](xml-for-capabilities.md)
-- [OSC の典型的な呼び出しシーケンス](osc-typical-calling-sequences.md)
+- [機能の XML](xml-for-capabilities.md)
+- [通常の呼び出しシーケンスの .osc](osc-typical-calling-sequences.md)
 

@@ -9,28 +9,26 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: ab835a1a-9e90-126e-279f-463882c48e93
 description: 図形のテキストの色に適用される透過性レベルを指定します。
-ms.openlocfilehash: 5914a061b1bba2173b338544b05abda8780ff164
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8619ec25372ae163fff1759aca36ff6693820e39
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280984"
 ---
-# <a name="transparency-cell-character-section"></a>[Transparency] セル ([文字] セクション)
+# <a name="transparency-cell-character-section"></a>[Transparency] セル ([Character] セクション)
 
 図形のテキストの色に適用される透過性レベルを指定します。
   
 |**値**|**説明**|
 |:-----|:-----|
-|
-          0 ～ 100
-  <br/> |透過性をパーセントで表します。既定値は 0% (完全に不透明) です。  <br/> |
+|0 ～ 100  <br/> |透過性をパーセントで表します。既定値は 0% (完全に不透明) です。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 値は、最も近い 0.5% 単位の値に丸められます。値 "100%" は完全な透明を表します。テキストが完全に透明な図形は、図面ページではテキストがない図形と同じように表示されますが、ページ上の他のオブジェクトに対しては、透過性が 0% の場合と同様な状態で相互に影響し合います。
   
-**テキスト**] ダイアログ ボックスで [**フォント**] タブでスライダー コントロールを使用してこの値を設定することもできます ([**ホーム**] タブで、[**フォント**の矢印] をクリック) します。 
+この値は、[**テキスト**] ダイアログボックスの [**フォント**] タブのスライダーコントロールを使用して設定することもできます ([**ホーム**] タブの [**フォント**] 矢印をクリックします)。 
   
 [Character] セクションに複数の行が含まれる場合は、[Transparency] セルには、図形のテキストのサブ範囲に適用される書式設定情報が表示されます。複数の行が含まれない場合は、このセルには、すべての図形のテキストに対する書式設定情報が表示されます。
   
@@ -38,14 +36,14 @@ ms.locfileid: "19806672"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |Char.ColorTrans [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+|セル名:  <br/> |<1>、2、3 ** ... ** を指定します。  <br/> |
    
 プログラムから、インデックスによって [Transparency] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionCharacter** <br/> |
-|行インデックス:  <br/> |**visRowCharacter** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+|行インデックス:  <br/> |**visRowCharacter** +  *i* = ** 0、1、2...  <br/> |
 |セル インデックス:  <br/> |**visCharacterColorTrans** <br/> |
    
 

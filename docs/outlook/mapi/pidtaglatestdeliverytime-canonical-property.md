@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: 6c2e64bc-786e-4867-a504-46f4d1214337
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3640ec4471b72dea81d56cc2c462ef145095480f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 77ca51ae5a0e7e1d5a9be8f4ca05a1187fe71694
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279853"
 ---
 # <a name="pidtaglatestdeliverytime-canonical-property"></a>PidTagLatestDeliveryTime 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-最新の日付と時刻のメッセージ転送エージェント (MTA) がメッセージを配信する場合が含まれています。 
+メッセージ転送エージェント (MTA) がメッセージを配信する最新の日付と時刻が含まれています。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_LATEST_DELIVERY_TIME  <br/> |
 |識別子:  <br/> |0x0019  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
-|領域:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-MTA は、このプロパティは、指定の時間でメッセージを配信することはできません、する場合は、メッセージを配信せずをキャンセルします。 
+このプロパティが指定する時間に MTA がメッセージを配信できない場合は、配信なしでメッセージを取り消します。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

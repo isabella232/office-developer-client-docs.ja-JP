@@ -7,54 +7,54 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d2dfaeed-7635-4c6b-9c35-b955ca1a85e9
-description: Outlook ソーシャル コネクタ (OSC) プロバイダーをデバッグするいくつかの方法があります。
+description: Outlook Social Connector (.osc) プロバイダーをデバッグするには、いくつかの方法があります。
 ms.openlocfilehash: 39deb7b6c0b11460826bdbf1957ffd8404d926e5
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281070"
 ---
 # <a name="debugging-a-provider"></a>プロバイダーのデバッグ
 
-Outlook ソーシャル コネクタ (OSC) プロバイダーをデバッグするいくつかの方法があります。 
+Outlook Social Connector (.osc) プロバイダーをデバッグするには、いくつかの方法があります。 
   
-- さまざまなアクションを実行するのには OSC が発生する Outlook またはサポートしている Office クライアント アプリケーションに Office Fluent ユーザー インターフェイスのリボン コンポーネントのデバッグ コマンドを使用しています。
+- Outlook の office Fluent ユーザーインターフェイスのリボンコンポーネントにあるデバッグコマンドを使用するか、office クライアントアプリケーションをサポートして、.osc にさまざまなアクションを実行させることができます。
     
-- トレース API 呼び出しとソーシャル ネットワークと OSC プロバイダーの間で送信される XML に Fiddler を使用して、
+- Fiddler を使用して、ソーシャルネットワークと .osc プロバイダーとの間で送信される API 呼び出しと XML をトレースする
     
-## <a name="debug-buttons"></a>デバッグ ボタン
+## <a name="debug-buttons"></a>デバッグボタン
 
-OSC プロバイダーの拡張機能は、デバッグ、OSC プロバイダーの機能を提供します。 プロバイダーをデバッグするには、作成、`DebugProviders`の下の Windows レジストリに DWORD 型の値、 `SocialConnector` (のように、次の行)、キーし、設定、`DebugProviders`値を 1。 
+.osc プロバイダー拡張機能は、.osc プロバイダーをデバッグする機能を提供します。 プロバイダーをデバッグするには、 `DebugProviders` Windows レジストリの`SocialConnector`キーの下にある (次の行に示すように) DWORD 型の値を作成`DebugProviders`し、値を1に設定します。 
   
 `HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\SocialConnector`
   
-既定では、プロバイダーのデバッグはオフです。 場合、`DebugProviders`の値が存在しないか、存在していて値が 0 では、プロバイダーのデバッグの設定がオフになっています。 
+既定では、プロバイダーデバッグはオフになっています。 `DebugProviders`値が存在しない場合、または存在し、値が0に設定されている場合は、プロバイダーデバッグがオフになります。 
   
-プロバイダーのデバッグを有効にする場合、OSC は、エラーが発生し、OSC プロバイダーの XML スキーマに対しては、OSC プロバイダーの XML を検証するときに詳細なエラー情報を使用して警告ダイアログ ボックスを表示します。 OSC 1.0 を使用して開発された、OSC プロバイダーは XML 文字列に指定した名前空間に基づいて、OSC 1.0 スキーマ ファイルで、OutlookSocialProvider.xsd に対して検証されます。 OSC プロバイダーは、OSC 1.1 を使用して開発されたまたは後で、スキーマ ファイル、OutlookSocialProvider_1.1.xsd に対して検証します。 使用する場合、`DebugProviders`の値を特定のプロバイダーではなくプロバイダーが読み込まれているすべてのデバッグの警告が表示されます。 
+プロバイダーデバッグが有効になっている場合は、エラーが発生したときに詳細なエラー情報を含む警告ダイアログボックスが表示され、.osc プロバイダーの xml スキーマに対して、.osc プロバイダ xml を検証します。 XML 文字列に対して指定された名前空間に基づいて、.osc 1.0 を使用して開発された .osc プロバイダーが、.osc 1.0 スキーマファイル、outlookの形式に対して検証されます。 .osc 1.1 以降を使用して開発した .osc プロバイダーは、スキーマファイル outlooksocialprovider_ 1.1 に対して検証されます。 `DebugProviders`値を使用すると、特定のプロバイダーではなく、読み込まれたすべてのプロバイダーのデバッグ警告が表示されます。 
   
-プロバイダーをデバッグするために役立つデバッグ ボタンを表示するには、次のように作成します。、`ShowDebugButtons`の下の Windows レジストリに DWORD 型の値、`SocialConnector`キー、および設定、 `ShowDebugButtons` 1 の値です。 デバッグのコマンド バー ボタンを非表示に設定、`ShowDebugButtons`値を 0 にします。 
+プロバイダーをデバッグするのに役立つデバッグボタンを表示するには`ShowDebugButtons` 、 `SocialConnector`キーの下の Windows レジストリに DWORD 型の値を作成し`ShowDebugButtons` 、値を1に設定します。 デバッグコマンドバーボタンを非表示にするに`ShowDebugButtons`は、値を0に設定します。 
   
-Outlook 2010 と Office 2013 以降のクライアント アプリケーションでは、エクスプ ローラーのリボンの **[アドイン**] タブで、デバッグ ボタンが表示されます。 Outlook 2007 および Outlook 2003 の Outlook エクスプ ローラー ウィンドウの標準的なコマンド バーのデバッグ ボタンが表示されます。 
+Office 2013 以降の Outlook 2010 およびクライアントアプリケーションの場合、[デバッグ] ボタンはエクスプローラーリボンの [**アドイン**] タブに表示されます。 outlook 2007 および outlook 2003 の場合、[デバッグ] ボタンは、outlook エクスプローラーウィンドウの標準のコマンドバーに表示されます。 
   
-次の表では、デバッグ ボタンについて説明します。
+次の表で、デバッグボタンについて説明します。
   
-|**デバッグ ボタン**|**関数**|
+|**[デバッグ] ボタン**|**Function**|
 |:-----|:-----|
-|連絡先を同期します。  <br/> |キャッシュされた取引先担当者の OSC プロバイダーに確認するのには OSC が発生します。  <br/> |
-|グローバル アドレス一覧の同期  <br/> |Exchange のグローバル アドレス一覧から Outlook の連絡先にデータを設定するのには OSC が発生します。  <br/> |
-|カテゴリのキャッシュを無効に  <br/> |アクティビティ フィードが更新されたときに各店舗のカテゴリの一覧を再読み込みするのには OSC が発生します。  <br/> |
+|連絡先を同期する  <br/> |.osc は、キャッシュされた連絡先のみを、.osc プロバイダーに要求します。  <br/> |
+|GAL 同期  <br/> |.osc が Exchange のグローバルアドレス一覧から Outlook の連絡先にデータを設定するようにします。  <br/> |
+|カテゴリキャッシュを無効にする  <br/> |アクティビティフィードが更新されたときに、.osc が各ストアのカテゴリリストを再読み込みするようにします。  <br/> |
    
 ## <a name="fiddler"></a>Fiddler
 
-Fiddler は、API の呼び出しは、プロバイダーから、ソーシャル ネットワークに送信されると、プロバイダー、ソーシャル ネットワークから送信された XML を確認するのには、ワイヤ上のデバッグ ツールです。 Fiddler では、 [Fiddler Web デバッグ プロキシ](https://www.fiddler2.com/fiddler2/version.asp)からダウンロードできます。
+Fiddler は、プロバイダーからソーシャルネットワークに送信された API 呼び出しと、ソーシャルネットワークによってプロバイダーに送信される XML をチェックする、ネットワーク上のデバッグツールです。 Fiddler は、 [Fiddler Web デバッグプロキシ](https://www.fiddler2.com/fiddler2/version.asp)でダウンロードできます。
   
 ## <a name="see-also"></a>関連項目
 
-- [プロバイダーを開発する学習のためのクイック ステップ](quick-steps-for-learning-to-develop-a-provider.md)  
-- [友人や活動を同期します。](synchronizing-friends-and-activities.md) 
-- [プロバイダーを開発するためのベスト プラクティス](best-practices-for-developing-a-provider.md)
-- [OSC の典型的な呼び出しシーケンス](osc-typical-calling-sequences.md)  
-- [OSC の XML スキーマを使用してプロバイダーの開発](developing-a-provider-with-the-osc-xml-schema.md)  
-- [OSC プロバイダーをリリースする準備をします。](getting-ready-to-release-an-osc-provider.md)
+- [プロバイダーを開発するための簡単な手順](quick-steps-for-learning-to-develop-a-provider.md)  
+- [フレンドとアクティビティの同期](synchronizing-friends-and-activities.md) 
+- [プロバイダーを開発するためのベストプラクティス](best-practices-for-developing-a-provider.md)
+- [通常の呼び出しシーケンスの .osc](osc-typical-calling-sequences.md)  
+- [.osc XML スキーマを使用してプロバイダーを開発する](developing-a-provider-with-the-osc-xml-schema.md)  
+- [.osc プロバイダーをリリースする準備をする](getting-ready-to-release-an-osc-provider.md)
 

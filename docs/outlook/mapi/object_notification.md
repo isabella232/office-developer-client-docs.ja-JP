@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: de3a2297-e0cc-427b-a978-52bade4d9bce
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 876c8fc3667929e3c2e7403e71e6d392981d34f1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c637b3b03a22f208123397f7277cf8968f2509a0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279887"
 ---
 # <a name="objectnotification"></a>OBJECT_NOTIFICATION
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-変更が行われて、次のようにしてコピーまたは変更されたオブジェクトに関する情報が含まれています。
+コピー、変更など、変更されたオブジェクトに関する情報を格納します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _OBJECT_NOTIFICATION
@@ -52,31 +52,31 @@ typedef struct _OBJECT_NOTIFICATION
 
  **cbEntryID**
   
-> **LpEntryID**メンバーが指すエントリの識別子のバイト数をカウントします。 
+> **lな tryid**メンバーによって指摘されたエントリ識別子のバイト数。 
     
- **lpEntryID**
+ **lて tryid**
   
-> 影響を受けるオブジェクトのエントリの識別子へのポインター。
+> 影響を受けるオブジェクトのエントリ id へのポインター。
     
- **ulObjType**
+ **ulobjtype**
   
-> 影響を受けるオブジェクトの種類です。 使用可能な型は次のとおりです。
+> 影響を受けるオブジェクトの種類。 可能な種類は次のとおりです。
     
 MAPI_STORE 
   
-> メッセージ ・ ストアです。 
+> メッセージストア。 
     
 MAPI_ADDRBOOK 
   
-> アドレス帳です。 
+> アドレス帳 
     
 MAPI_FOLDER 
   
-> フォルダーです。
+> ].
     
 MAPI_ABCONT 
   
-> アドレス帳コンテナーです。
+> アドレス帳のコンテナー。
     
 MAPI_MESSAGE 
   
@@ -84,59 +84,59 @@ MAPI_MESSAGE
     
 MAPI_MAILUSER 
   
-> メッセージングのユーザーです。
+> メッセージングユーザー。
     
 MAPI_ATTACH 
   
-> 添付ファイルです。
+> 資料.
     
 MAPI_DISTLIST 
   
-> 配布リストです。
+> 配布リスト
     
 MAPI_PROFSECT 
   
-> プロファイル セクションです。
+> プロファイルセクション。
     
 MAPI_STATUS 
   
-> 状態オブジェクト。
+> Status オブジェクト。
     
 MAPI_SESSION 
   
-> セッション オブジェクトです。
+> Session オブジェクト。
     
- **cbParentID**
+ **cbparentid**
   
-> **LpParentID**メンバーが指すエントリの識別子のバイト数をカウントします。 
+> **lpparentid**メンバーによって指摘されたエントリ識別子のバイト数。 
     
- **lpParentID**
+ **lpparentid**
   
-> 影響を受けるオブジェクトの親オブジェクトのエントリの識別子へのポインター。
+> 影響を受けるオブジェクトの親のエントリ id へのポインター。
     
- **cbOldID**
+ **cbold did**
   
-> **LpOldID**メンバーが指すエントリの識別子のバイト数をカウントします。 
+> **lpOldID**メンバーによって示されるエントリ識別子のバイト数。 
     
  **lpOldID**
   
-> 元のオブジェクトのエントリの識別子へのポインター。 イベントが元のオブジェクトを必要としない場合は、このポインターを NULL にできます。
+> 元のオブジェクトのエントリ識別子へのポインター。 イベントに元のオブジェクトが必要ない場合は、このポインターを NULL にすることができます。
     
- **cbOldParentID**
+ **cbold parentid**
   
-> **LpOldParentID**メンバーが指すエントリの識別子のバイト数をカウントします。 
+> **lpOldParentID**メンバーによって示されるエントリ識別子のバイト数。 
     
  **lpOldParentID**
   
-> 元のオブジェクトの親オブジェクトのエントリの識別子へのポインター。 イベントが元のオブジェクトを必要としない場合は、このポインターを NULL にできます。
+> 元のオブジェクトの親のエントリ id へのポインター。 イベントに元のオブジェクトが必要ない場合は、このポインターを NULL にすることができます。
     
  **lpPropTagArray**
   
-> イベントによって影響を受けるプロパティを識別するプロパティ タグを含む[SPropTagArray](sproptagarray.md)構造体へのポインター。 
+> イベントの影響を受けるプロパティを識別するプロパティタグを含む[SPropTagArray](sproptagarray.md)構造体へのポインター。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**OBJECT_NOTIFICATION**構造では、[通知](notification.md)の構造体のメンバー**情報**に含まれる構造体の共用体のメンバーの 1 つです。 **通知**の構造体のメンバー**情報**には、 **OBJECT_NOTIFICATION**構造体が含まれている、**通知**の構造体の**ulEventType**メンバーは、次の種類のイベントのいずれかに設定されます。 
+**OBJECT_NOTIFICATION**構造体は、[通知](notification.md)構造の**info**メンバに含まれている構造体の和集合のメンバーのいずれかです。 **通知**構造の**info**メンバーに**OBJECT_NOTIFICATION**構造体が含まれている場合、**通知**構造の**uleventtype**メンバーは、次のいずれかの種類のイベントに設定されます。 
   
 - fnevObjectCreated
     
@@ -150,27 +150,27 @@ MAPI_SESSION
     
 - fnevSearchComplete
     
-FnevSearchComplete イベントの種類によって表される、検索の完了イベントは、ドメインの 1 つの検索フォルダーを最初に検索が完了したことを示します。
+fnevSearchComplete イベントの種類で表される検索の完了イベントは、1つの検索フォルダーのドメインの最初の検索が完了したことを示します。
   
-元のオブジェクトに関する情報が含まれている次のメンバーは、移動およびコピーのイベントでのみ使用されます。 
+元のオブジェクトに関する情報を格納している次のメンバーは、移動イベントとコピーイベントでのみ使用されます。 
   
-- **cbOldID**
+- **cbold did**
     
 - **lpOldID**
     
-- **cbOldParentID**
+- **cbold parentid**
     
 - **lpOldParentID**
     
 これらのメンバーは、他の種類のイベントには適用されません。
   
-通知の詳細については、次の表に記載されているトピックを参照してください。
+通知の詳細については、次の表で説明するトピックを参照してください。
   
 |**トピック**|**説明**|
 |:-----|:-----|
-|[MAPI のイベント通知](event-notification-in-mapi.md) <br/> |通知と通知のイベントの概要です。  <br/> |
-|[通知の処理](handling-notifications.md) <br/> |クライアントが通知を処理する方法について説明します。  <br/> |
-|[イベント通知のサポート](supporting-event-notification.md) <br/> |サービス プロバイダーが、 [IMAPISupport](imapisupportiunknown.md)メソッドを使用して、通知を生成する方法について説明します。  <br/> |
+|[MAPI のイベント通知](event-notification-in-mapi.md) <br/> |通知イベントと通知イベントの一般的な概要。  <br/> |
+|[通知の処理](handling-notifications.md) <br/> |クライアントが通知を処理する方法についての説明。  <br/> |
+|[イベント通知のサポート](supporting-event-notification.md) <br/> |サービスプロバイダーが[imapisupport](imapisupportiunknown.md)メソッドを使用して通知を生成する方法についての説明。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

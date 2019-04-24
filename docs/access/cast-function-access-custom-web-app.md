@@ -1,19 +1,19 @@
 ---
-title: キャスト関数 (カスタム web アプリケーションのアクセス)
+title: Cast 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b33f649c-d9b5-4ae5-a3fa-8681ed9a956d
 description: データ型の式を、ある形式から別の形式に変換します。
-ms.openlocfilehash: 97e28de1b3a26a9f4f9bd588e945b2a9664eeba1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c3f995aa59e95372bec448bf9e89c2c0616e36eb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280789"
 ---
-# <a name="cast-function-access-custom-web-app"></a>キャスト関数 (カスタム web アプリケーションのアクセス)
+# <a name="cast-function-access-custom-web-app"></a>Cast 関数 (Access カスタム web アプリ)
 
 データ型の式を、ある形式から別の形式に変換します。
   
@@ -22,7 +22,7 @@ ms.locfileid: "19798570"
   
 ## <a name="syntax"></a>構文
 
-**変換**(*式**のデータ型*) 
+**Convert**(*式*、*データ型*) 
   
 |**引数名**|**説明**|
 |:-----|:-----|

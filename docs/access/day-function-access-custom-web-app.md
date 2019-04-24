@@ -1,19 +1,19 @@
 ---
-title: Day 関数 (カスタム web アプリケーションのアクセス)
+title: Day 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 8e0a77e4-0653-4a85-b507-13440aef195b
 description: グレゴリオ暦で指定した日付のうち、日 (日にち) に相当する部分の整数を返します。
-ms.openlocfilehash: ae0e5f4671a8c0ee3dc95683240328351ea2c5d1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 720adaffbd97a735f6b1395e64965f972c6099cd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280692"
 ---
-# <a name="day-function-access-custom-web-app"></a>Day 関数 (カスタム web アプリケーションのアクセス)
+# <a name="day-function-access-custom-web-app"></a>Day 関数 (Access カスタム web アプリ)
 
 グレゴリオ暦で指定した日付のうち、日 (日にち) に相当する部分の整数を返します。
   
@@ -22,15 +22,15 @@ ms.locfileid: "19798553"
   
 ## <a name="syntax"></a>構文
 
-**1 日**(*日付*) 
+**日**(*Date*) 
   
 **Day** 関数の引数は次のとおりです。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *Date*  <br/> |日付/時刻の値に解決可能な式。 *日付*引数の式、列式、ユーザー定義変数またはリテラル文字列です。  <br/> |
+| *Date*  <br/> |日付/時刻の値に解決可能な式。 *Date*引数 expression、column 式、ユーザー定義の変数または文字列リテラル。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 **Day** は、 **Datepart** (day, date) と同じ値を返します。 
   

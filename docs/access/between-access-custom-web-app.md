@@ -1,19 +1,19 @@
 ---
-title: (カスタム web アプリケーションのアクセス) の間
+title: 間 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 9dcb32c6-ed9b-4a09-9e6a-48cc50063a6f
 description: テストする範囲を指定します。
-ms.openlocfilehash: 0ef3384d6a29826968220f8d6cfc0d2f85e1131c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fd67d1163f6a39779e0202b5ca1ba998ba8650a7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280744"
 ---
-# <a name="between-access-custom-web-app"></a>(カスタム web アプリケーションのアクセス) の間
+# <a name="between-access-custom-web-app"></a>間 (Access カスタム web アプリ)
 
 テストする範囲を指定します。
   
@@ -22,27 +22,27 @@ ms.locfileid: "19798580"
   
 ## <a name="syntax"></a>構文
 
- *な任意* [しない]**BETWEEN***有効***と***式* 
+ *test_expression*  [ NOT ] **BETWEEN** *begin_expression* **AND** *end_expression* 
   
 **Between** 演算子の引数は次のとおりです。 
   
 |**引数**|**必須**|**説明**|
 |:-----|:-----|:-----|
-| *な任意*  <br/> |はい  <br/> |*有効*と*式*で定義される範囲内でテストする式です。 *有効*と*式*の両方に同じデータ型でなければなりません。  <br/> |
+| *test_expression*  <br/> |はい  <br/> |*begin_expression*および*end_expression*で定義されている範囲内でテストする式を指定します。 *begin_expression*と*end_expression*の両方と同じデータ型である必要があります。  <br/> |
 | *NOT*  <br/> |いいえ  <br/> |述部の結果を否定することを指定します。  <br/> |
-| *有効*  <br/> |必須  <br/> |有効な式。 *な任意*と*式*の両方に同じデータ型でなければなりません。  <br/> |
-| *式*  <br/> |必須  <br/> |有効な式。 同じデータ型と両方*な任意**で有効*にする必要があります。  <br/> |
-| *AND*  <br/> |はい  <br/> |*有効*と*式*で指定された範囲内で必要*な任意*があることを示します。  <br/> |
+| *begin_expression*  <br/> |はい  <br/> |有効な式。 *test_expression*と*end_expression*の両方と同じデータ型である必要があります。  <br/> |
+| *end_expression*  <br/> |はい  <br/> |有効な式。 *test_expression*と*begin_expression*の両方と同じデータ型である必要があります。  <br/> |
+| *AND*  <br/> |はい  <br/> |*test_expression*が*begin_expression*と*end_expression*で示される範囲内にあることを示します。  <br/> |
    
 ## <a name="result-type"></a>結果の型
 
- **ブール型 (Boolean)**
+ **Boolean**
   
 ## <a name="remarks"></a>注釈
 
- **BETWEEN**は**TRUE**を返す場合は、以上の値*で有効**な任意*の値では、*式*の値以下です。 
+ **BETWEEN** returns **TRUE** if the value of  *test_expression*  is greater than or equal to the value of  *begin_expression*  and less than or equal to the value of  *end_expression*  . 
   
- **間でない**場合**TRUE**を返します*な任意*の値が*で有効*または*式*の値より大きい値よりも小さくします。 
+ **NOT BETWEEN** returns **TRUE** if the value of  *test_expression*  is less than the value of  *begin_expression*  or greater than the value of  *end_expression*  . 
   
 排他的範囲を指定するには、大なり (\>) 演算子と小なり (\<) 演算子を使用します。
   

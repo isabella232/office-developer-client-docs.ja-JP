@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: 0f4e54dc-80e5-49a7-9703-0225d8133492
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f95c86a137e7253f3445123c23f2dc0d76b6d87a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f7339588bcc6815545e7341eafffe9cf001c1d76
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270029"
 ---
 # <a name="mapiuninitialize"></a>MAPIUninitialize
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-、参照カウントのクリーンアップ処理をデクリメントし、削除インスタンスごとのグローバルなデータの MAPI DLL です。 
+MAPI DLL のインスタンスごとのグローバルデータを、参照カウント、クリーンアップ、削除します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapix.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーション  <br/> |
+|ヘッダー ファイル:  <br/> |mapix  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
    
 ```cpp
 void MAPIUninitialize ( void );
@@ -45,13 +45,13 @@ void MAPIUninitialize ( void );
 
 なし。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアント アプリケーションでは、[生じます](mapiinitialize.md)関数の呼び出しによって開始されている MAPI との対話を終了する**MAPIUninitialize**関数を呼び出します。 **MAPIUninitialize**が呼び出されると、その他の MAPI 呼び出し可能ないクライアントです。 
+クライアントアプリケーションは、 **MAPIUninitialize**関数を呼び出して MAPI との対話を終了させるため、 [MAPIInitialize](mapiinitialize.md)関数の呼び出しから開始されます。 **MAPIUninitialize**を呼び出した後、クライアントは他の MAPI 呼び出しを行うことはできません。 
   
- **MAPIUninitialize**参照をデクリメント、および対応する**生じます**関数は、参照カウントをインクリメントします。 したがって、1 つの関数への呼び出しの数は、他の呼び出しの数に等しくなければなりません。 
+ **MAPIUninitialize**は参照カウントをデクリメントし、対応する**MAPIInitialize**関数が参照カウントをインクリメントします。 そのため、1つの関数への呼び出しの数は、もう一方への呼び出しの数と等しくなければなりません。 
   
 > [!NOTE]
-> Win32 **DllMain**関数またはその他の機能を作成するか、スレッドを終了するのには**生じます**かから**MAPIUninitialize**を呼び出すことはできません。 詳細については、[スレッド セーフであるオブジェクトを使用する](using-thread-safe-objects.md)を参照してください。 
+> **MAPIInitialize**または**MAPIUninitialize**は、Win32 **DllMain**関数から、またはスレッドを作成または終了する他の関数内から呼び出すことはできません。 詳細については、「[スレッドセーフオブジェクトの使用](using-thread-safe-objects.md)」を参照してください。 
   
 

@@ -9,24 +9,22 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 7382e2aa-5e18-19d2-88d8-c4a19a385106
 description: レイヤーの色の透過性レベルを指定します。
-ms.openlocfilehash: 7c205612436e7731f268e17c851616beebf809dc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fe0aacf167b2400ca10e22a70c9086429f6059f3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280953"
 ---
-# <a name="transparency-cell-layers-section"></a>[Transparency] セル ([レイヤー] セクション)
+# <a name="transparency-cell-layers-section"></a>[Transparency] セル ([Layers] セクション)
 
 レイヤーの色の透過性レベルを指定します。
   
 |**値**|**説明**|
 |:-----|:-----|
-|
-          0 ～ 100
-  <br/> |透過性をパーセントで表します。既定値は 0% (完全に不透明) です。  <br/> |
+|0 ～ 100  <br/> |透過性をパーセントで表します。既定値は 0% (完全に不透明) です。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 値は、最も近い 0.5% 単位の値に丸められます。値 "100%" は完全な透明を表します。完全に透明な色のレイヤーは図面ページでは無色のレイヤーと同じように表示されますが、ページ上の他のオブジェクトに対しては、透過性が 0% の場合と同様な状態で相互に影響し合います。この値は、[**レイヤー プロパティ**] ダイアログ ボックスのスライダー コントロールを使用して設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブの [**編集**] グループで、[**レイヤー**] をクリックして、[**レイヤー プロパティ**] をクリックします)。
   
@@ -34,14 +32,14 @@ ms.locfileid: "19806682"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |Layers.ColorTrans [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+|セル名:  <br/> |<1>、2、3 ** ... ** を指定してください。  <br/> |
    
 プログラムから、インデックスによって [Transparency] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionLayer** <br/> |
-|行インデックス:  <br/> |**visRowLayer** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+|行インデックス:  <br/> |**visRowLayer** +  *i* = ** 0、1、2...  <br/> |
 |セル インデックス:  <br/> |**visLayerColorTrans** <br/> |
    
 

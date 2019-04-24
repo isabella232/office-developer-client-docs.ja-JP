@@ -1,19 +1,19 @@
 ---
-title: Abs 関数 (カスタム web アプリケーションのアクセス)
+title: Abs 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: c880a662-dc4b-4b37-bbd4-3cb681dc1d1c
 description: 指定した数値式の絶対値 (正の値) を返します。
-ms.openlocfilehash: 33264854c142268648354b24c645d9656088bd0e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ed2368ceb8198365cac5de1b871111e5a9eb86f2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270316"
 ---
-# <a name="abs-function-access-custom-web-app"></a>Abs 関数 (カスタム web アプリケーションのアクセス)
+# <a name="abs-function-access-custom-web-app"></a>Abs 関数 (Access カスタム web アプリ)
 
 指定した数値式の絶対値 (正の値) を返します。
   
@@ -22,12 +22,12 @@ ms.locfileid: "19798567"
   
 ## <a name="syntax"></a>構文
 
- **Abs**(*数式*) 
+ **Abs**(*NumericExpression*) 
   
 **Abs** 関数には、以下の引数があります。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *数式*  <br/> |数値式を指定します。  <br/> |
+| *NumericExpression*  <br/> |数値式。  <br/> |
    
 

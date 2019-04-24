@@ -12,35 +12,35 @@ api_type:
 - COM
 ms.assetid: a593d2a1-29f8-7e23-85bf-02fa3cfebe1b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: adcb8e78d4e85e19d4102795aa4d43f06a7f86ba
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 940cf0cf377f1b38071df5e3c300ccb7d685e5a2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270309"
 ---
 # <a name="imapiofflinenotify--iunknown"></a>IMAPIOfflineNotify : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-通知コールバックをクライアントに送信するのには、Microsoft Outlook 2010 と Microsoft Outlook 2013 をサポートしています。
+microsoft outlook 2010 および microsoft outlook 2013 をサポートしており、クライアントに対して通知コールバックを送信します。
   
 |||
 |:-----|:-----|
 |提供元:  <br/> |クライアント  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMAPIOfflineNotify  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMAPIOfflineNotify  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
 |[Notify](imapiofflinenotify-notify.md) <br/> |接続状態の変更についてクライアントに通知を送信します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアントは、このインターフェイスを実装し、 **[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)** を使用してコールバックをセットアップするときの**[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** のメンバーとして、それへのポインターを渡す必要があります。 その後、Outlook 2010 または Outlook 2013 できるようになります通知コールバックをクライアントに送信するのにはこのインターフェイスを使用します。 
+**[IMAPIOfflineMgr:: Advise](imapiofflinemgr-advise.md)** を使用してコールバックを設定する場合、クライアントはこのインターフェイスを実装し、 **[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** のメンバーとしてのポインターを渡す必要があります。 その後、outlook 2010 または outlook 2013 は、このインターフェイスを使用して、クライアントに通知コールバックを送信できるようになります。 
   
 ## <a name="see-also"></a>関連項目
 

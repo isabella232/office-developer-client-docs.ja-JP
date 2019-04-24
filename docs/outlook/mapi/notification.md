@@ -12,22 +12,22 @@ api_type:
 - COM
 ms.assetid: 01b6e695-a649-4efd-a893-7586b476467e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0d427adde72c24d4ca879c7bd883af09c4ecad53
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a3235c2305d61318f482943167e5f307e5da0d70
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280100"
 ---
 # <a name="notification"></a>NOTIFICATION
  
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-イベントが発生したことと、イベントによって影響のあるデータに関する情報が含まれています。
+発生したイベントおよびイベントの影響を受けたデータに関する情報を格納します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct
@@ -48,59 +48,59 @@ typedef struct
 
 ## <a name="members"></a>Members
 
-**ulEventType**
+**uleventtype**
   
-> 発生した通知イベントの種類です。 **UlEventType**メンバーの値は、**情報**の共用体に含まれる構造体に対応します。 **UlEventType**メンバーは、次の値のいずれかに設定できます。 
+> 発生した通知イベントの種類。 **uleventtype**メンバーの値は、 **info**ユニオンに含まれている構造に対応しています。 **uleventtype**メンバーは、次のいずれかの値に設定できます。 
     
  _fnevCriticalError_
   
-> セッションの実行中のシャット ダウンなど、グローバル エラーが発生しました。 **情報**のメンバーには、 [ERROR_NOTIFICATION](error_notification.md)構造体が含まれています。 
+> グローバルなエラーが発生しました。セッションが進行中にシャットダウンされた場合などです。 **info**メンバーには、 [ERROR_NOTIFICATION](error_notification.md)構造体が含まれています。 
     
  _fnevExtended_
   
-> 特定のサービス プロバイダーによって定義されている内部のイベントが発生しました。 **情報**のメンバーには、 [EXTENDED_NOTIFICATION](extended_notification.md)構造体が含まれています。 
+> 特定のサービスプロバイダーによって定義された内部イベントが発生しました。 **info**メンバーには、 [EXTENDED_NOTIFICATION](extended_notification.md)構造体が含まれています。 
     
  _fnevNewMail_
   
-> メッセージが配信されましたが、該当するメッセージ クラスのフォルダーが表示され、処理されるを待っています。 **情報**のメンバーには、 [NEWMAIL_NOTIFICATION](newmail_notification.md)構造体が含まれています。 
+> メッセージは、メッセージクラスの適切な受信フォルダーに配信され、処理を待機しています。 **info**メンバーには、 [NEWMAIL_NOTIFICATION](newmail_notification.md)構造体が含まれています。 
     
  _fnevObjectCopied_
   
-> MAPI オブジェクトがコピーされました。 **情報**のメンバーには、 [OBJECT_NOTIFICATION](object_notification.md)構造体が含まれています。 
+> MAPI オブジェクトがコピーされました。 **info**メンバーには、 [OBJECT_NOTIFICATION](object_notification.md)構造体が含まれています。 
     
  _fnevObjectCreated_
   
-> MAPI オブジェクトが用意されています。 **情報**のメンバーには、 **OBJECT_NOTIFICATION**構造体が含まれています。 
+> MAPI オブジェクトが作成されました。 **info**メンバーには、 **OBJECT_NOTIFICATION**構造体が含まれています。 
     
  _fnevObjectDeleted_
   
-> MAPI オブジェクトが削除されました。 **情報**のメンバーには、 **OBJECT_NOTIFICATION**構造体が含まれています。 
+> MAPI オブジェクトが削除されました。 **info**メンバーには、 **OBJECT_NOTIFICATION**構造体が含まれています。 
     
  _fnevObjectModified_
   
-> MAPI オブジェクトが変更されました。 **情報**のメンバーには、 **OBJECT_NOTIFICATION**構造体が含まれています。 
+> MAPI オブジェクトが変更されました。 **info**メンバーには、 **OBJECT_NOTIFICATION**構造体が含まれています。 
     
  _fnevObjectMoved_
   
-> メッセージ ストアやアドレス帳オブジェクトが移動されました。 **情報**のメンバーには、 **OBJECT_NOTIFICATION**構造体が含まれています。 
+> メッセージストアまたはアドレス帳オブジェクトが移動されました。 **info**メンバーには、 **OBJECT_NOTIFICATION**構造体が含まれています。 
     
  _fnevSearchComplete_
   
-> 検索操作が完了し、結果が保存されます。 **情報**のメンバーには、 **OBJECT_NOTIFICATION**構造体が含まれています。 
+> 検索操作が終了し、結果を使用できるようになります。 **info**メンバーには、 **OBJECT_NOTIFICATION**構造体が含まれています。 
     
  _fnevTableModified_
   
-> テーブル内の情報が変更されました。 **情報**のメンバーには、 [TABLE_NOTIFICATION](table_notification.md)構造体が含まれています。 
+> テーブル内の情報が変更されました。 **info**メンバーには、 [TABLE_NOTIFICATION](table_notification.md)構造体が含まれています。 
     
-**情報**
+**info**
   
-> イベントの特定の種類の影響を受けるデータを記述する通知の構造体の共用体です。 **情報**のメンバーに含まれている構造体は、 **ulEventType**メンバーの値によって異なります。 
+> 特定の種類のイベントの影響を受けるデータを記述する通知構造の和集合。 **info**メンバーに含まれる構造は、 **uleventtype**メンバーの値に依存します。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-1 つまたは複数の**通知**の構造体は、登録されているアドバイズ シンクの[IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出すたびに、入力パラメーターとして渡されます。 **通知**の構造体は、発生し、影響を受けるオブジェクトについて説明する特定のイベントに関する情報を格納します。 
+登録されたアドバイズシンクの[IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)メソッドへのすべての呼び出しで、1つ以上の**通知**構造が入力パラメーターとして渡されます。 **通知**構造には、発生した特定のイベントに関する情報が含まれ、影響を受けるオブジェクトについて説明します。 
   
-クライアントまたはサービス プロバイダーが通知の受信の場合は、イベントを処理する構造を使用できます、前に、イベントの種類を確認して、 **ulEventType**メンバーに示されている必要があります。 たとえば、ここでの新しいメッセージと、この種類のイベントを検出すると、到着の確認が表示されているコード サンプルは、メッセージのメッセージ クラスを出力します。 
+通知を受け取るクライアントまたはサービスプロバイダーは、構造体を使用してイベントを処理する前に、 **uleventtype**メンバーに示されているように、イベントの種類を確認する必要があります。 たとえば、次に示すコードサンプルでは、新しいメッセージの到着をチェックし、この種のイベントを検出すると、メッセージのメッセージクラスを出力します。 
   
 ```cpp
 if (pNotif -> ulEventType == fnevNewMail)
@@ -110,13 +110,13 @@ printf("%s\n", pNotif -> newmail.lpszMessageClass)
 
 ```
 
-通知の詳細については、次の表に記載されているトピックを参照してください。
+通知の詳細については、次の表で説明するトピックを参照してください。
   
 |**トピック**|**説明**|
 |:-----|:-----|
-|[MAPI のイベント通知](event-notification-in-mapi.md) <br/> |通知と通知のイベントの概要です。  <br/> |
-|[通知の処理](handling-notifications.md) <br/> |クライアントが通知を処理する方法について説明します。  <br/> |
-|[イベント通知のサポート](supporting-event-notification.md) <br/> |サービス プロバイダーが、 [IMAPISupport](imapisupportiunknown.md)メソッドを使用して、通知を生成する方法について説明します。  <br/> |
+|[MAPI のイベント通知](event-notification-in-mapi.md) <br/> |通知イベントと通知イベントの一般的な概要。  <br/> |
+|[通知の処理](handling-notifications.md) <br/> |クライアントが通知を処理する方法についての説明。  <br/> |
+|[イベント通知のサポート](supporting-event-notification.md) <br/> |サービスプロバイダーが[imapisupport](imapisupportiunknown.md)メソッドを使用して通知を生成する方法についての説明。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

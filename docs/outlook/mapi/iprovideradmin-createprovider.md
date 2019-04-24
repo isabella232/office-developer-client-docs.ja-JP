@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 80c1449a-6cd9-4b93-a300-395979894b71
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f76b44b3718f08eb68fc956ad4480d4327cb0656
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 72dddca5a8079374600e05b96a24cbbc25e7f7f9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279557"
 ---
 # <a name="iprovideradmincreateprovider"></a>IProviderAdmin::CreateProvider
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ サービスにサービス プロバイダーを追加します。 
+メッセージサービスにサービスプロバイダーを追加します。 
   
 ```cpp
 HRESULT CreateProvider(
@@ -38,49 +38,49 @@ HRESULT CreateProvider(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpszProvider_
+ _lpszprovider_
   
-> [in]追加するプロバイダーの名前へのポインター。
+> 順番追加するプロバイダーの名前へのポインター。
     
- _あう_
+ _cvalues_
   
-> [in]_LpProps_パラメーターで指定されたプロパティ値の数。 
+> 順番_lpprops_パラメーターによって示されるプロパティ値の数。 
     
- _lpProps_
+ _lpprops_
   
-> [in]追加するプロバイダーのプロパティを記述するプロパティ値の配列へのポインター。
+> 順番追加するプロバイダーのプロパティを記述するプロパティ値配列へのポインター。
     
- _ulUIParam_
+ _uluiparam_
   
-> [in]ダイアログ ボックスまたはウィンドウの親ウィンドウへのハンドルを表示します。 _UlFlags_パラメーターで、MAPI_DIALOG フラグが設定されている場合、 _ulUIParam_パラメーターが使用されます。 
+> 順番このメソッドが表示する任意のダイアログボックスまたはウィンドウの親ウィンドウへのハンドル。 _uluiparam_パラメーターは、MAPI_DIALOG フラグが_ulflags_パラメーターで設定されている場合に使用されます。 
     
  _ulFlags_
   
-> [in]プロバイダーの追加を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番プロバイダーの追加を制御するフラグのビットマスク。 次のフラグを設定できます。
     
-  - MAPI_DIALOG:、構成情報の入力を求めるダイアログ ボックスが表示されます。
+  - MAPI_DIALOG: 構成情報を求めるダイアログボックスを表示します。
       
-  - MAPI_UNICODE: Unicode 形式では、プロバイダーの名前と文字列のプロパティです。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式でこれらの文字列です。
+  - MAPI_UNICODE: プロバイダー名と文字列プロパティは、UNICODE 形式です。 MAPI_UNICODE フラグが設定されていない場合、これらの文字列は ANSI 形式になります。
     
- _lpUID_
+ _lpuid_
   
-> [out]追加するプロバイダーを表す一意の識別子を格納する[MAPIUID](mapiuid.md)構造体へのポインター。 
+> 読み上げ追加するプロバイダーを表す一意の識別子を含む[MAPIUID](mapiuid.md)構造体へのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> プロバイダーはメッセージ サービスに正常に追加されました。
+> プロバイダーがメッセージサービスに正常に追加されました。
     
 MAPI_E_USER_CANCEL 
   
-> ユーザー操作がキャンセルされました、通常ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
+> ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IProviderAdmin::CreateProvider**メソッドでは、メッセージ サービスにサービス プロバイダーを追加します。 _LpszProvider_パラメーターは、メッセージ サービスに属しているプロバイダーの名前をポイントする必要があります。 **CreateProvider**は名前がサービスのプロバイダーの名前と一致するかどうかを確認していません。渡された名前がサービス名に一致しない場合、呼び出しが成功したが、結果は予測できません。 ほとんどのメッセージ サービスでは、プロバイダーを追加または削除、プロファイルを使用している間は許可されません。 
+**IProviderAdmin:: createprovider**メソッドによって、サービスプロバイダーがメッセージサービスに追加されます。 _lpszprovider_パラメーターは、メッセージサービスに属するプロバイダーの名前を指している必要があります。 **createprovider**は、名前がサービスのプロバイダーの名前と一致しているかどうかを確認しません。渡された名前がサービス名と一致しない場合、呼び出しは成功しますが、結果は予測できません。 ほとんどのメッセージサービスでは、プロファイルが使用されている間、プロバイダーを追加または削除することはできません。 
   
-結局のところ、サービスに関する情報のプロバイダーはプロファイルに追加されて、Mapisvc.inf ファイルの**CreateProvider**は、 _ulContext_パラメーターを MSG_SERVICE_ を設定したメッセージ サービスのエントリ ポイント関数を呼び出しますPROVIDER_CREATE。 MAPI_DIALOG は、 **CreateProvider**メソッドの_ulFlags_パラメーターで設定されている場合、 _ulUIParam_と_ulFlags_パラメーターの値も、エントリ ポイント関数に渡されます。 これらの追加パラメーターは、構成設定を入力できるように、プロパティ シートを表示するサービス プロバイダーを有効にします。 
+サービスプロバイダーに関するすべての利用可能な情報が mapisvc.inf ファイルからプロファイルに追加された後、 **createprovider**は_ulcontext_パラメーターを MSG_SERVICE_ に設定したメッセージサービスのエントリポイント関数を呼び出します。PROVIDER_CREATE。 MAPI_DIALOG が**createprovider**メソッドの_ulflags_パラメーターで設定されている場合、 _uluiparam_パラメーターと_ulflags_パラメーターの値もエントリポイント関数に渡されます。 これらの追加パラメーターにより、サービスプロバイダーはプロパティシートを表示して、ユーザーが構成設定を入力できるようにします。 
   
 ## <a name="see-also"></a>関連項目
 

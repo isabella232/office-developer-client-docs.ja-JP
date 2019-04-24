@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 1b4e82ed-c207-4828-8a5b-0ef312962355
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6d284782de86b603e6bbe190931a85cd9196c88b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25393517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270015"
 ---
 # <a name="pidtagdefaultviewentryid-canonical-property"></a>PidTagDefaultViewEntryId 標準プロパティ
 
@@ -25,48 +25,48 @@ ms.locfileid: "25393517"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダーの既定のビューのエントリの識別子が含まれています。
+フォルダーの既定のビューのエントリ識別子を含みます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_DEFAULT_VIEW_ENTRYID  <br/> |
 |識別子:  <br/> |0x3616  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |MAPI のコンテナー  <br/> |
+|エリア:  <br/> |MAPI コンテナー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティは、最初のビューとして設定するフォルダー ビューのエントリの識別子です。 「標準」ビューの最初のビューとして使用する場合、プロパティを設定する必要はありません。
+このプロパティは、初期ビューとして設定する必要があるフォルダービューのエントリ識別子です。 [標準] ビューを初期ビューとして使用する場合は、プロパティを設定する必要はありません。
   
-クライアント アプリケーションでは、フォルダーを開いた時にこのプロパティを取得でき、大幅なパフォーマンス向上を実現することができます。 このプロパティは、コンテンツが関連付けられているテーブルを開くと、制限を送信するのではなく、既定のビューを取得するのにはショートカットとして使用できます。
+クライアントアプリケーションは、フォルダーを開いたときにこのプロパティを取得して、パフォーマンスを大幅に向上させることができます。 このプロパティは、関連する contents テーブルを開かずに制限を送信するのではなく、既定のビューを取得するためのショートカットとして使用できます。
   
-サービス プロバイダーの[IMAPIFolder::CopyFolder](imapifolder-copyfolder.md)メソッドの実装は、フォルダーにコピーする際、このプロパティをコピーできます。 
+[imapifolder:: copyfolder](imapifolder-copyfolder.md)メソッドのサービスプロバイダー実装は、フォルダーをコピーするときにこのプロパティをコピーできます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
+[[OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
   
-> フォルダーの操作を処理します。
+> フォルダー操作を処理します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
