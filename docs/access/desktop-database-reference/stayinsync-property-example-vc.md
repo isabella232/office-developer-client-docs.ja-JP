@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c8eeafa97b2b27f157136674372061d3074e5f01
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314484"
 ---
-# <a name="stayinsync-property-example-vc"></a><span data-ttu-id="8fedd-102">StayInSync プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="8fedd-102">StayInSync property example (VC++)</span></span>
+# <a name="stayinsync-property-example-vc"></a><span data-ttu-id="edf1c-102">StayInSync プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="edf1c-102">StayInSync property example (VC++)</span></span>
 
 
-<span data-ttu-id="8fedd-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="8fedd-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="edf1c-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="edf1c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="8fedd-104">この例では、階層 [Recordset](stayinsync-property-ado.md) 内の行へのアクセスを容易にする [StayInSync](recordset-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="8fedd-104">This example demonstrates how the [StayInSync](stayinsync-property-ado.md) property facilitates accessing rows in a hierarchical [Recordset](recordset-object-ado.md).</span></span>
+<span data-ttu-id="edf1c-104">この例では、階層 [Recordset](stayinsync-property-ado.md) 内の行へのアクセスを容易にする [StayInSync](recordset-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="edf1c-104">This example demonstrates how the [StayInSync](stayinsync-property-ado.md) property facilitates accessing rows in a hierarchical [Recordset](recordset-object-ado.md).</span></span>
 
-<span data-ttu-id="8fedd-p101">外側のループで、各作成者の姓名、州、および ID を表示します。各行に追加された **Recordset** が [Fields](fields-collection-ado.md) コレクションから取得され、親の **Recordset** が新しい行に移動するたびに **StayInSync** プロパティによって自動的に **rstTitleAuthor** に割り当てられます。内側のループでは、追加されたレコードセットの各行から 4 つのフィールドを表示します。</span><span class="sxs-lookup"><span data-stu-id="8fedd-p101">The outer loop displays each author's first and last name, state, and identification. The appended **Recordset** for each row is retrieved from the [Fields](fields-collection-ado.md) collection and automatically assigned to **rstTitleAuthor** by the **StayInSync** property whenever the parent **Recordset** moves to a new row. The inner loop displays four fields from each row in the appended recordset.</span></span>
+<span data-ttu-id="edf1c-p101">外側のループで、各作成者の姓名、州、および ID を表示します。各行に追加された **Recordset** が [Fields](fields-collection-ado.md) コレクションから取得され、親の **Recordset** が新しい行に移動するたびに **StayInSync** プロパティによって自動的に **rstTitleAuthor** に割り当てられます。内側のループでは、追加されたレコードセットの各行から 4 つのフィールドを表示します。</span><span class="sxs-lookup"><span data-stu-id="edf1c-p101">The outer loop displays each author's first and last name, state, and identification. The appended **Recordset** for each row is retrieved from the [Fields](fields-collection-ado.md) collection and automatically assigned to **rstTitleAuthor** by the **StayInSync** property whenever the parent **Recordset** moves to a new row. The inner loop displays four fields from each row in the appended recordset.</span></span>
 
 ```cpp 
  

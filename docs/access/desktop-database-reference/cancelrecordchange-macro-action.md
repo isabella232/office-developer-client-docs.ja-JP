@@ -8,26 +8,26 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d19e7adcdd3bb60f24d90e75942fcc0b4e16e2e2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296655"
 ---
-# <a name="cancelrecordchange-macro-action"></a><span data-ttu-id="cac71-102">CancelRecordChange マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="cac71-102">CancelRecordChange macro action</span></span>
+# <a name="cancelrecordchange-macro-action"></a><span data-ttu-id="637c6-102">CancelRecordChange マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="637c6-102">CancelRecordChange macro action</span></span>
 
 
-<span data-ttu-id="cac71-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="cac71-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="637c6-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="637c6-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="cac71-104">" **CancelRecordChange/レコードの変更の取り消し** " アクションを使用して、変更を確定する前に **[CreateRecord](createrecord-data-block.md)** または **[EditRecord](editrecord-data-block.md)** データ ブロック内でレコードに適用した変更を取り消すことができます。</span><span class="sxs-lookup"><span data-stu-id="cac71-104">You can use the **CancelRecordChange** action to cancel the changes applied to a record in a **[CreateRecord](createrecord-data-block.md)** or **[EditRecord](editrecord-data-block.md)** data block before the changes are committed.</span></span>
+<span data-ttu-id="637c6-104">You can use the **CancelRecordChange** action to cancel the changes applied to a record in a **[CreateRecord](createrecord-data-block.md)** or **[EditRecord](editrecord-data-block.md)** data block before the changes are committed.</span><span class="sxs-lookup"><span data-stu-id="637c6-104">You can use the **CancelRecordChange** action to cancel the changes applied to a record in a **[CreateRecord](createrecord-data-block.md)** or **[EditRecord](editrecord-data-block.md)** data block before the changes are committed.</span></span>
 
 
 > [!NOTE]
-> <span data-ttu-id="cac71-105">[!メモ] " **CancelRecordChange/レコードの変更の取り消し** " アクションは、データ マクロ内でのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="cac71-105">The **CancelRecordChange** action is available only in Data Macros.</span></span>
+> <span data-ttu-id="637c6-105">The **CancelRecordChange** action is available only in Data Macros.</span><span class="sxs-lookup"><span data-stu-id="637c6-105">The **CancelRecordChange** action is available only in Data Macros.</span></span>
 
 
 
-## <a name="remarks"></a><span data-ttu-id="cac71-106">解説</span><span class="sxs-lookup"><span data-stu-id="cac71-106">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="637c6-106">注釈</span><span class="sxs-lookup"><span data-stu-id="637c6-106">Remarks</span></span>
 
-<span data-ttu-id="cac71-107">" **CancelRecordChange/レコードの変更の取り消し** " アクションを呼び出すと、 **CreateRecord** データ ブロックまたは **EditRecord** データ ブロックは即座に終了します。</span><span class="sxs-lookup"><span data-stu-id="cac71-107">When you call the **CancelRecordChange** action, the **CreateRecord** or **EditRecord** data block is exited immediately.</span></span>
+<span data-ttu-id="637c6-107">"**CancelRecordChange/レコードの変更の取り消し**" アクションを呼び出すと、**CreateRecord** データ ブロックまたは **EditRecord** データ ブロックは即座に終了します。</span><span class="sxs-lookup"><span data-stu-id="637c6-107">When you call the **CancelRecordChange** action, the **CreateRecord** or **EditRecord** data block is exited immediately.</span></span>
 

@@ -1,5 +1,5 @@
 ---
-title: Field2.LoadFromFile メソッド (DAO)
+title: LoadFromFile メソッド (DAO)
 TOCTitle: LoadFromFile Method
 ms:assetid: 8ffe4636-d4da-0579-f4b5-14f423647562
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197396(v=office.15)
@@ -12,29 +12,29 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: bdb1ba92c4a0f4fbee7204b2f4fee8a96c87cc1b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292791"
 ---
-# <a name="field2loadfromfile-method-dao"></a><span data-ttu-id="29f27-102">Field2.LoadFromFile メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="29f27-102">Field2.LoadFromFile method (DAO)</span></span>
+# <a name="field2loadfromfile-method-dao"></a><span data-ttu-id="b39c9-102">LoadFromFile メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="b39c9-102">Field2.LoadFromFile method (DAO)</span></span>
 
-<span data-ttu-id="29f27-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="29f27-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b39c9-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="b39c9-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="29f27-104">指定されたファイルをディスクから読み込みます。</span><span class="sxs-lookup"><span data-stu-id="29f27-104">Loads the specified file from disk.</span></span>
+<span data-ttu-id="b39c9-104">指定されたファイルをディスクから読み込みます。</span><span class="sxs-lookup"><span data-stu-id="b39c9-104">Loads the specified file from disk.</span></span>
 
-## <a name="version-information"></a><span data-ttu-id="29f27-105">バージョン情報</span><span class="sxs-lookup"><span data-stu-id="29f27-105">Version information</span></span>
+## <a name="version-information"></a><span data-ttu-id="b39c9-105">バージョン情報</span><span class="sxs-lookup"><span data-stu-id="b39c9-105">Version information</span></span>
 
-<span data-ttu-id="29f27-106">追加バージョン: Access 2007</span><span class="sxs-lookup"><span data-stu-id="29f27-106">Version added: Access 2007</span></span>
+<span data-ttu-id="b39c9-106">追加されたバージョン: Access 2007</span><span class="sxs-lookup"><span data-stu-id="b39c9-106">Version added: Access 2007</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="29f27-107">構文</span><span class="sxs-lookup"><span data-stu-id="29f27-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b39c9-107">構文</span><span class="sxs-lookup"><span data-stu-id="b39c9-107">Syntax</span></span>
 
-<span data-ttu-id="29f27-108">*式*です。LoadFromFile (***ファイル名***)</span><span class="sxs-lookup"><span data-stu-id="29f27-108">*expression* .LoadFromFile(***FileName***)</span></span>
+<span data-ttu-id="b39c9-108">*式*。LoadFromFile (***FileName***)</span><span class="sxs-lookup"><span data-stu-id="b39c9-108">*expression* .LoadFromFile(***FileName***)</span></span>
 
-<span data-ttu-id="29f27-109">\*式\***Field2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="29f27-109">*expression* A variable that represents a **Field2** object.</span></span>
+<span data-ttu-id="b39c9-109">\*式\***Field2**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="b39c9-109">*expression* A variable that represents a **Field2** object.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="29f27-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="29f27-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="b39c9-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b39c9-110">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -45,26 +45,26 @@ ms.locfileid: "28710630"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="29f27-111">名前</span><span class="sxs-lookup"><span data-stu-id="29f27-111">Name</span></span></p></th>
-<th><p><span data-ttu-id="29f27-112">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="29f27-112">Required/optional</span></span></p></th>
-<th><p><span data-ttu-id="29f27-113">データ型</span><span class="sxs-lookup"><span data-stu-id="29f27-113">Data type</span></span></p></th>
-<th><p><span data-ttu-id="29f27-114">説明</span><span class="sxs-lookup"><span data-stu-id="29f27-114">Description</span></span></p></th>
+<th><p><span data-ttu-id="b39c9-111">名前</span><span class="sxs-lookup"><span data-stu-id="b39c9-111">Name</span></span></p></th>
+<th><p><span data-ttu-id="b39c9-112">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="b39c9-112">Required/optional</span></span></p></th>
+<th><p><span data-ttu-id="b39c9-113">データ型</span><span class="sxs-lookup"><span data-stu-id="b39c9-113">Data type</span></span></p></th>
+<th><p><span data-ttu-id="b39c9-114">説明</span><span class="sxs-lookup"><span data-stu-id="b39c9-114">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="29f27-115"><em>FileName</em></span><span class="sxs-lookup"><span data-stu-id="29f27-115"><em>FileName</em></span></span></p></td>
-<td><p><span data-ttu-id="29f27-116">必須</span><span class="sxs-lookup"><span data-stu-id="29f27-116">Required</span></span></p></td>
-<td><p><span data-ttu-id="29f27-117"><strong>String</strong></span><span class="sxs-lookup"><span data-stu-id="29f27-117"><strong>String</strong></span></span></p></td>
-<td><p><span data-ttu-id="29f27-118">読み込むファイルの完全修飾パスです。</span><span class="sxs-lookup"><span data-stu-id="29f27-118">The fully qualified path of the file to that you want to load.</span></span></p></td>
+<td><p><span data-ttu-id="b39c9-115"><em>FileName</em></span><span class="sxs-lookup"><span data-stu-id="b39c9-115"><em>FileName</em></span></span></p></td>
+<td><p><span data-ttu-id="b39c9-116">必須</span><span class="sxs-lookup"><span data-stu-id="b39c9-116">Required</span></span></p></td>
+<td><p><span data-ttu-id="b39c9-117"><strong>String</strong></span><span class="sxs-lookup"><span data-stu-id="b39c9-117"><strong>String</strong></span></span></p></td>
+<td><p><span data-ttu-id="b39c9-118">読み込むファイルの完全修飾パスです。</span><span class="sxs-lookup"><span data-stu-id="b39c9-118">The fully qualified path of the file to that you want to load.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="example"></a><span data-ttu-id="29f27-119">例</span><span class="sxs-lookup"><span data-stu-id="29f27-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b39c9-119">例</span><span class="sxs-lookup"><span data-stu-id="b39c9-119">Example</span></span>
 
-<span data-ttu-id="29f27-120">次のコードでは、 **LoadFromFile** メソッドを使用して、社員の画像をディスクから読み込みます。</span><span class="sxs-lookup"><span data-stu-id="29f27-120">The following code snippet uses the **LoadFromFile** method to load an employee's picture from disk.</span></span>
+<span data-ttu-id="b39c9-120">次のコードでは、 **LoadFromFile** メソッドを使用して、社員の画像をディスクから読み込みます。</span><span class="sxs-lookup"><span data-stu-id="b39c9-120">The following code snippet uses the **LoadFromFile** method to load an employee's picture from disk.</span></span>
 
 ```vb 
    '  Instantiate the parent recordset.  
@@ -89,9 +89,9 @@ ms.locfileid: "28710630"
 
 <br/>
 
-<span data-ttu-id="29f27-121">次の例は、指定されたフォルダー パスから添付ファイル型フィールドにファイルを追加する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="29f27-121">The following example shows how to add files from a specified folder path to an attachment field.</span></span>
+<span data-ttu-id="b39c9-121">次の例は、指定されたフォルダー パスから添付ファイル型フィールドにファイルを追加する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="b39c9-121">The following example shows how to add files from a specified folder path to an attachment field.</span></span>
 
-<span data-ttu-id="29f27-122">**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。</span><span class="sxs-lookup"><span data-stu-id="29f27-122">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
+<span data-ttu-id="b39c9-122">**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。</span><span class="sxs-lookup"><span data-stu-id="b39c9-122">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
 
 ```vb
     Public Function LoadAttachments(strPath As String, Optional strPattern As String = "*.*") As Long

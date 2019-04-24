@@ -1,5 +1,5 @@
 ---
-title: フィールド 2 の方法 (DAO)
+title: Field2 メソッド (DAO)
 TOCTitle: Methods
 ms:assetid: 2d382d0a-3d61-4321-b048-18e15ccf55e3
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn124187(v=office.15)
@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 84c215840f8c424e7c73584c013f5fe167f717aa
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292770"
 ---
-# <a name="field2-methods-dao"></a><span data-ttu-id="ed114-102">フィールド 2 の方法 (DAO)</span><span class="sxs-lookup"><span data-stu-id="ed114-102">Field2 methods (DAO)</span></span>
+# <a name="field2-methods-dao"></a><span data-ttu-id="c459c-102">Field2 メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="c459c-102">Field2 methods (DAO)</span></span>
 
-<span data-ttu-id="ed114-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="ed114-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="c459c-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="c459c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="ed114-104">Field2.AppendChunk メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="ed114-104">Field2.AppendChunk method (DAO)</span></span>](field2-appendchunk-method-dao.md)
-- [<span data-ttu-id="ed114-105">Field2.CreateProperty メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="ed114-105">Field2.CreateProperty method (DAO)</span></span>](field2-createproperty-method-dao.md)
-- [<span data-ttu-id="ed114-106">Field2.GetChunk メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="ed114-106">Field2.GetChunk method (DAO)</span></span>](field2-getchunk-method-dao.md)
-- [<span data-ttu-id="ed114-107">Field2.LoadFromFile メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="ed114-107">Field2.LoadFromFile method (DAO)</span></span>](field2-loadfromfile-method-dao.md)
-- [<span data-ttu-id="ed114-108">Field2.SaveToFile メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="ed114-108">Field2.SaveToFile method (DAO)</span></span>](field2-savetofile-method-dao.md)
+- [<span data-ttu-id="c459c-104">Field2 の chunk メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="c459c-104">Field2.AppendChunk method (DAO)</span></span>](field2-appendchunk-method-dao.md)
+- [<span data-ttu-id="c459c-105">CreateProperty メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="c459c-105">Field2.CreateProperty method (DAO)</span></span>](field2-createproperty-method-dao.md)
+- [<span data-ttu-id="c459c-106">Field2 メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="c459c-106">Field2.GetChunk method (DAO)</span></span>](field2-getchunk-method-dao.md)
+- [<span data-ttu-id="c459c-107">LoadFromFile メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="c459c-107">Field2.LoadFromFile method (DAO)</span></span>](field2-loadfromfile-method-dao.md)
+- [<span data-ttu-id="c459c-108">Field2 メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="c459c-108">Field2.SaveToFile method (DAO)</span></span>](field2-savetofile-method-dao.md)
 

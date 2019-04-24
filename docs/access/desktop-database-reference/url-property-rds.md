@@ -1,5 +1,5 @@
 ---
-title: URL プロパティ (RDS のデスクトップのデータベース参照のアクセス)
+title: URL プロパティ (RDS-Access デスクトップデータベースリファレンス)
 TOCTitle: URL property (RDS)
 ms:assetid: 722765dc-f89c-0131-73b1-69c56a795546
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249457(v=office.15)
@@ -8,36 +8,36 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: aafc8cc10410cafed21e38ad7fec269c391c1fa2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32313399"
 ---
-# <a name="url-property-rds"></a><span data-ttu-id="c3999-102">URL プロパティ (RDS)</span><span class="sxs-lookup"><span data-stu-id="c3999-102">URL property (RDS)</span></span>
+# <a name="url-property-rds"></a><span data-ttu-id="f6806-102">URL プロパティ (RDS)</span><span class="sxs-lookup"><span data-stu-id="f6806-102">URL property (RDS)</span></span>
 
-<span data-ttu-id="c3999-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c3999-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="f6806-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="f6806-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c3999-104">相対 URL または絶対 URL を格納する文字列を示します。</span><span class="sxs-lookup"><span data-stu-id="c3999-104">Indicates a string that contains a relative or absolute URL.</span></span>
+<span data-ttu-id="f6806-104">相対 URL または絶対 URL を格納する文字列を示します。</span><span class="sxs-lookup"><span data-stu-id="f6806-104">Indicates a string that contains a relative or absolute URL.</span></span>
 
-<span data-ttu-id="c3999-105">**URL** プロパティは、デザイン時に [DataControl](datacontrol-object-rds.md) オブジェクトの OBJECT タグで設定するか、実行時にスクリプト コードで設定できます。</span><span class="sxs-lookup"><span data-stu-id="c3999-105">You can set the **URL** property at design time in the [DataControl](datacontrol-object-rds.md) object's OBJECT tag, or at run time in scripting code.</span></span>
+<span data-ttu-id="f6806-105">**URL** プロパティは、デザイン時に [DataControl](datacontrol-object-rds.md) オブジェクトの OBJECT タグで設定するか、実行時にスクリプト コードで設定できます。</span><span class="sxs-lookup"><span data-stu-id="f6806-105">You can set the **URL** property at design time in the [DataControl](datacontrol-object-rds.md) object's OBJECT tag, or at run time in scripting code.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="c3999-106">構文</span><span class="sxs-lookup"><span data-stu-id="c3999-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f6806-106">構文</span><span class="sxs-lookup"><span data-stu-id="f6806-106">Syntax</span></span>
 
-<span data-ttu-id="c3999-107">デザイン時:\<パラメーター名"URL"の値を = ="Server"\></span><span class="sxs-lookup"><span data-stu-id="c3999-107">Design time: \<PARAM NAME="URL" VALUE="Server"\></span></span>
+<span data-ttu-id="f6806-107">デザイン時: \<パラメーター名 = "URL" 値 = "Server"\></span><span class="sxs-lookup"><span data-stu-id="f6806-107">Design time: \<PARAM NAME="URL" VALUE="Server"\></span></span>
 
-<span data-ttu-id="c3999-108">実行時間: DataControl.URL="Server]</span><span class="sxs-lookup"><span data-stu-id="c3999-108">Run time: DataControl.URL="Server"</span></span>
+<span data-ttu-id="f6806-108">実行時間: DataControl = "Server"</span><span class="sxs-lookup"><span data-stu-id="f6806-108">Run time: DataControl.URL="Server"</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="c3999-109">パラメーター</span><span class="sxs-lookup"><span data-stu-id="c3999-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="f6806-109">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f6806-109">Parameters</span></span>
 
-|<span data-ttu-id="c3999-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="c3999-110">Parameter</span></span>|<span data-ttu-id="c3999-111">説明</span><span class="sxs-lookup"><span data-stu-id="c3999-111">Description</span></span>|
+|<span data-ttu-id="f6806-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f6806-110">Parameter</span></span>|<span data-ttu-id="f6806-111">説明</span><span class="sxs-lookup"><span data-stu-id="f6806-111">Description</span></span>|
 |:--------|:----------|
-|<span data-ttu-id="c3999-112">*Server*</span><span class="sxs-lookup"><span data-stu-id="c3999-112">*Server*</span></span> |<span data-ttu-id="c3999-113">有効な URL を格納する文字列型 ( **String** ) の値。</span><span class="sxs-lookup"><span data-stu-id="c3999-113">A **String** value that contains a valid URL.</span></span>|
-|<span data-ttu-id="c3999-114">*DataControl*</span><span class="sxs-lookup"><span data-stu-id="c3999-114">*DataControl*</span></span> |<span data-ttu-id="c3999-115">**DataControl** オブジェクトを表すオブジェクト変数。</span><span class="sxs-lookup"><span data-stu-id="c3999-115">An object variable that represents a **DataControl** object.</span></span>|
+|<span data-ttu-id="f6806-112">*Server*</span><span class="sxs-lookup"><span data-stu-id="f6806-112">*Server*</span></span> |<span data-ttu-id="f6806-113">有効な URL を格納する文字列型 ( **String** ) の値。</span><span class="sxs-lookup"><span data-stu-id="f6806-113">A **String** value that contains a valid URL.</span></span>|
+|<span data-ttu-id="f6806-114">*DataControl*</span><span class="sxs-lookup"><span data-stu-id="f6806-114">*DataControl*</span></span> |<span data-ttu-id="f6806-115">**DataControl** オブジェクトを表すオブジェクト変数。</span><span class="sxs-lookup"><span data-stu-id="f6806-115">An object variable that represents a **DataControl** object.</span></span>|
 
-## <a name="remarks"></a><span data-ttu-id="c3999-116">解説</span><span class="sxs-lookup"><span data-stu-id="c3999-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f6806-116">注釈</span><span class="sxs-lookup"><span data-stu-id="f6806-116">Remarks</span></span>
 
-<span data-ttu-id="c3999-p101">通常、URL は、[Recordset](recordset-object-ado.md) を生成して返すことができる Active Server Page (.asp) ファイルを示します。したがって、サーバー側 **DataFactory** オブジェクトを呼び出したり、カスタム ビジネス オブジェクトをプログラムしたりしなくても、 [Recordset](datafactory-object-rdsserver.md) を取得できます。</span><span class="sxs-lookup"><span data-stu-id="c3999-p101">Typically, the URL identifies an Active Server Page (.asp) file that can produce and return a [Recordset](recordset-object-ado.md). Therefore, the user can obtain a **Recordset** without having to invoke the server-side [DataFactory](datafactory-object-rdsserver.md) object, or program a custom business object.</span></span>
+<span data-ttu-id="f6806-p101">通常、URL は、[Recordset](recordset-object-ado.md) を生成して返すことができる Active Server Page (.asp) ファイルを示します。したがって、サーバー側 **DataFactory** オブジェクトを呼び出したり、カスタム ビジネス オブジェクトをプログラムしたりしなくても、 [Recordset](datafactory-object-rdsserver.md) を取得できます。</span><span class="sxs-lookup"><span data-stu-id="f6806-p101">Typically, the URL identifies an Active Server Page (.asp) file that can produce and return a [Recordset](recordset-object-ado.md). Therefore, the user can obtain a **Recordset** without having to invoke the server-side [DataFactory](datafactory-object-rdsserver.md) object, or program a custom business object.</span></span>
 
-<span data-ttu-id="c3999-119">**URL** プロパティが設定されている場合、 [SubmitChanges](submitchanges-method-rds.md) は URL で指定された場所に変更を送信します。</span><span class="sxs-lookup"><span data-stu-id="c3999-119">If the **URL** property has been set, [SubmitChanges](submitchanges-method-rds.md) will submit changes to the location specified by the URL.</span></span>
+<span data-ttu-id="f6806-119">**URL** プロパティが設定されている場合、 [SubmitChanges](submitchanges-method-rds.md) は URL で指定された場所に変更を送信します。</span><span class="sxs-lookup"><span data-stu-id="f6806-119">If the **URL** property has been set, [SubmitChanges](submitchanges-method-rds.md) will submit changes to the location specified by the URL.</span></span>
 

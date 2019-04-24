@@ -1,5 +1,5 @@
 ---
-title: Visual J では (デスクトップ データベース参照のアクセス)
+title: Visual J++ (Access デスクトップデータベースリファレンス)
 TOCTitle: Visual J++
 ms:assetid: 5c05db85-cdf2-9a73-fbc5-3dbfa6752376
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249320(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: da13ae0f10e2338b961f2f12686bd378580a69d7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32311334"
 ---
-# <a name="visual-j"></a><span data-ttu-id="260aa-102">Visual J++</span><span class="sxs-lookup"><span data-stu-id="260aa-102">Visual J++</span></span>
+# <a name="visual-j"></a><span data-ttu-id="bac21-102">Visual J++</span><span class="sxs-lookup"><span data-stu-id="bac21-102">Visual J++</span></span>
 
 
-<span data-ttu-id="260aa-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="260aa-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="bac21-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="bac21-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="260aa-104">この短い Microsoft Visual J++ の例では、独自の関数を特定のイベントに関連付ける方法を示します。</span><span class="sxs-lookup"><span data-stu-id="260aa-104">This short Microsoft Visual J++ example shows how you can associate your own function with a particular event.</span></span>
+<span data-ttu-id="bac21-104">この短い Microsoft Visual J++ の例では、独自の関数を特定のイベントに関連付ける方法を示します。</span><span class="sxs-lookup"><span data-stu-id="bac21-104">This short Microsoft Visual J++ example shows how you can associate your own function with a particular event.</span></span>
 
 ```java 
  
@@ -53,7 +53,7 @@ public class EventExampleVJ
 // EndEventExampleVJ 
 ```
 
-<span data-ttu-id="260aa-105">まず、クラス メソッド*onConnectionComplete*が新しい**ConnectionEventHandler**オブジェクトを作成し、 *onConnectComplete*関数をオブジェクトに割り当てることによって**ConnectionComplete**イベントに関連付けられています。</span><span class="sxs-lookup"><span data-stu-id="260aa-105">First, the class method *onConnectionComplete* is associated with the **ConnectionComplete** event by creating a new **ConnectionEventHandler** object and assigning the *onConnectComplete* function to the object.</span></span>
+<span data-ttu-id="bac21-105">まず、新しい **ConnectionEventHandler** オブジェクトを作成し、*onConnectComplete* 関数をこのオブジェクトに割り当てることにより、クラス メソッド *onConnectionComplete* が **ConnectionComplete** イベントに関連付けられます。</span><span class="sxs-lookup"><span data-stu-id="bac21-105">First, the class method *onConnectionComplete* is associated with the **ConnectionComplete** event by creating a new **ConnectionEventHandler** object and assigning the *onConnectComplete* function to the object.</span></span>
 
-<span data-ttu-id="260aa-106">*Main*関数は、**接続**オブジェクトを作成し、 **addOnConnectComplete**メソッドを呼び出すと、*ハンドラー*関数のアドレスを渡すことによって処理するイベントを有効にします。</span><span class="sxs-lookup"><span data-stu-id="260aa-106">The *main* function then creates a **Connection** object and enables event handling by calling the **addOnConnectComplete** method and passing it the address of the *handler* function.</span></span>
+<span data-ttu-id="bac21-106">その後、*main* 関数で **Connection** オブジェクトが作成され、**addOnConnectComplete** メソッドを呼び出して *handler* 関数のアドレスを渡すことにより、イベントの処理が有効になります。</span><span class="sxs-lookup"><span data-stu-id="bac21-106">The *main* function then creates a **Connection** object and enables event handling by calling the **addOnConnectComplete** method and passing it the address of the *handler* function.</span></span>
 

@@ -1,5 +1,5 @@
 ---
-title: TableDef.CreateIndex メソッド (DAO)
+title: TableDef index メソッド (DAO)
 TOCTitle: CreateIndex Method
 ms:assetid: 857b25c1-01fa-b926-0c74-7105e71b7505
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196791(v=office.15)
@@ -12,25 +12,25 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: baa82b659cc2260d4a003c644b2d03d6c897fd21
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314372"
 ---
-# <a name="tabledefcreateindex-method-dao"></a><span data-ttu-id="0aefc-102">TableDef.CreateIndex メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="0aefc-102">TableDef.CreateIndex method (DAO)</span></span>
+# <a name="tabledefcreateindex-method-dao"></a><span data-ttu-id="52da3-102">TableDef index メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="52da3-102">TableDef.CreateIndex method (DAO)</span></span>
 
-<span data-ttu-id="0aefc-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="0aefc-103">**Applies to**: Access 2013, Office 2013</span></span> 
+<span data-ttu-id="52da3-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="52da3-103">**Applies to**: Access 2013, Office 2013</span></span> 
 
-<span data-ttu-id="0aefc-p101">新しい **[Index](index-object-dao.md)** オブジェクトを作成します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="0aefc-p101">Creates a new **[Index](index-object-dao.md)** object (Microsoft Access workspaces only). .</span></span>
+<span data-ttu-id="52da3-104">新しい**[Index](index-object-dao.md)** オブジェクトを作成します (Microsoft access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="52da3-104">Creates a new **[Index](index-object-dao.md)** object (Microsoft Access workspaces only).</span></span> <span data-ttu-id="52da3-105">.</span><span class="sxs-lookup"><span data-stu-id="52da3-105"></span></span>
 
-## <a name="syntax"></a><span data-ttu-id="0aefc-106">構文</span><span class="sxs-lookup"><span data-stu-id="0aefc-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="52da3-106">構文</span><span class="sxs-lookup"><span data-stu-id="52da3-106">Syntax</span></span>
 
-<span data-ttu-id="0aefc-107">*式*です。CreateIndex (***名***)</span><span class="sxs-lookup"><span data-stu-id="0aefc-107">*expression* .CreateIndex(***Name***)</span></span>
+<span data-ttu-id="52da3-107">*式*。createindex (***名前***)</span><span class="sxs-lookup"><span data-stu-id="52da3-107">*expression* .CreateIndex(***Name***)</span></span>
 
-<span data-ttu-id="0aefc-108">\*式\***テーブル定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="0aefc-108">*expression* A variable that represents a **TableDef** object.</span></span>
+<span data-ttu-id="52da3-108">\*式\***TableDef**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="52da3-108">*expression* A variable that represents a **TableDef** object.</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="0aefc-109">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0aefc-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="52da3-109">パラメーター</span><span class="sxs-lookup"><span data-stu-id="52da3-109">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -41,38 +41,38 @@ ms.locfileid: "28706236"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="0aefc-110">名前</span><span class="sxs-lookup"><span data-stu-id="0aefc-110">Name</span></span></p></th>
-<th><p><span data-ttu-id="0aefc-111">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="0aefc-111">Required/optional</span></span></p></th>
-<th><p><span data-ttu-id="0aefc-112">データ型</span><span class="sxs-lookup"><span data-stu-id="0aefc-112">Data type</span></span></p></th>
-<th><p><span data-ttu-id="0aefc-113">説明</span><span class="sxs-lookup"><span data-stu-id="0aefc-113">Description</span></span></p></th>
+<th><p><span data-ttu-id="52da3-110">名前</span><span class="sxs-lookup"><span data-stu-id="52da3-110">Name</span></span></p></th>
+<th><p><span data-ttu-id="52da3-111">必須/オプション</span><span class="sxs-lookup"><span data-stu-id="52da3-111">Required/optional</span></span></p></th>
+<th><p><span data-ttu-id="52da3-112">データ型</span><span class="sxs-lookup"><span data-stu-id="52da3-112">Data type</span></span></p></th>
+<th><p><span data-ttu-id="52da3-113">説明</span><span class="sxs-lookup"><span data-stu-id="52da3-113">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="0aefc-114"><em>Name</em></span><span class="sxs-lookup"><span data-stu-id="0aefc-114"><em>Name</em></span></span></p></td>
-<td><p><span data-ttu-id="0aefc-115">省略可能</span><span class="sxs-lookup"><span data-stu-id="0aefc-115">Optional</span></span></p></td>
-<td><p><span data-ttu-id="0aefc-116"><strong>Variant (バリアント型)</strong></span><span class="sxs-lookup"><span data-stu-id="0aefc-116"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="0aefc-p102">新しい <strong>Index</strong> オブジェクトの一意の名前を表す文字列型 (<strong>String</strong>) の値。有効な <strong>Index</strong> 名の詳細については、<strong>Name</strong> プロパティを参照してください。</span><span class="sxs-lookup"><span data-stu-id="0aefc-p102">A <strong>String</strong> that uniquely names the new <strong>Index</strong> object. See the <strong>Name</strong> property for details on valid <strong>Index</strong> names.</span></span></p></td>
+<td><p><span data-ttu-id="52da3-114"><em>Name</em></span><span class="sxs-lookup"><span data-stu-id="52da3-114"><em>Name</em></span></span></p></td>
+<td><p><span data-ttu-id="52da3-115">Optional</span><span class="sxs-lookup"><span data-stu-id="52da3-115">Optional</span></span></p></td>
+<td><p><span data-ttu-id="52da3-116"><strong>Variant</strong></span><span class="sxs-lookup"><span data-stu-id="52da3-116"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="52da3-117">新しい <strong>Index</strong> オブジェクトの一意の名前を表す文字列型 (<strong>String</strong>) の値。</span><span class="sxs-lookup"><span data-stu-id="52da3-117">A <strong>String</strong> that uniquely names the new <strong>Index</strong> object.</span></span> <span data-ttu-id="52da3-118">有効な <strong>Index</strong> 名の詳細については、<strong>Name</strong> プロパティを参照してください。</span><span class="sxs-lookup"><span data-stu-id="52da3-118">See the <strong>Name</strong> property for details on valid <strong>Index</strong> names.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="return-value"></a><span data-ttu-id="0aefc-119">戻り値</span><span class="sxs-lookup"><span data-stu-id="0aefc-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="52da3-119">戻り値</span><span class="sxs-lookup"><span data-stu-id="52da3-119">Return value</span></span>
 
-<span data-ttu-id="0aefc-120">Index</span><span class="sxs-lookup"><span data-stu-id="0aefc-120">Index</span></span>
+<span data-ttu-id="52da3-120">Index</span><span class="sxs-lookup"><span data-stu-id="52da3-120">Index</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="0aefc-121">注釈</span><span class="sxs-lookup"><span data-stu-id="0aefc-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="52da3-121">注釈</span><span class="sxs-lookup"><span data-stu-id="52da3-121">Remarks</span></span>
 
-<span data-ttu-id="0aefc-122">**CreateIndex** メソッドを使用して、 **TableDef** オブジェクトの新しい **Index** オブジェクトを作成できます。</span><span class="sxs-lookup"><span data-stu-id="0aefc-122">You can use the **CreateIndex** method to create a new **Index** object for a **TableDef** object.</span></span> <span data-ttu-id="0aefc-123">**CreateIndex**の使用時に省略可能な名前の一部を省略した場合は、設定または新しいオブジェクトをコレクションに追加する前に、 **Name**プロパティをリセットするに適切な代入ステートメントを使用できます。</span><span class="sxs-lookup"><span data-stu-id="0aefc-123">If you omit the optional name part when you use **CreateIndex**, you can use an appropriate assignment statement to set or reset the **Name** property before you append the new object to a collection.</span></span> <span data-ttu-id="0aefc-124">オブジェクトの追加後に **Name** プロパティを設定できるかどうかは、 **Indexes** コレクションを格納しているオブジェクトの種類によって決まります。</span><span class="sxs-lookup"><span data-stu-id="0aefc-124">After you append the object, you may or may not be able to set its **Name** property, depending on the type of object that contains the **Indexes** collection.</span></span> <span data-ttu-id="0aefc-125">詳細については、 **Name** プロパティのトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="0aefc-125">See the **Name** property topic for more details.</span></span>
+<span data-ttu-id="52da3-122">**CreateIndex** メソッドを使用して、 **TableDef** オブジェクトの新しい **Index** オブジェクトを作成できます。</span><span class="sxs-lookup"><span data-stu-id="52da3-122">You can use the **CreateIndex** method to create a new **Index** object for a **TableDef** object.</span></span> <span data-ttu-id="52da3-123">**createindex**を使用するときに省略可能な名前の部分を省略した場合は、新しいオブジェクトをコレクションに追加する前に、適切な代入ステートメントを使用して、 **name**プロパティを設定またはリセットできます。</span><span class="sxs-lookup"><span data-stu-id="52da3-123">If you omit the optional name part when you use **CreateIndex**, you can use an appropriate assignment statement to set or reset the **Name** property before you append the new object to a collection.</span></span> <span data-ttu-id="52da3-124">オブジェクトの追加後に **Name** プロパティを設定できるかどうかは、 **Indexes** コレクションを格納しているオブジェクトの種類によって決まります。</span><span class="sxs-lookup"><span data-stu-id="52da3-124">After you append the object, you may or may not be able to set its **Name** property, depending on the type of object that contains the **Indexes** collection.</span></span> <span data-ttu-id="52da3-125">詳細については、 **Name** プロパティのトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="52da3-125">See the **Name** property topic for more details.</span></span>
 
-<span data-ttu-id="0aefc-126">名は、既にコレクションのメンバーであるオブジェクトを参照している場合、 **[Append](fields-append-method-dao.md)** メソッドを使用すると、実行時エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="0aefc-126">If name refers to an object that is already a member of the collection, a run-time error occurs when you use the **[Append](fields-append-method-dao.md)** method.</span></span>
+<span data-ttu-id="52da3-126">name が既にコレクションのメンバーであるオブジェクトを参照している場合、 **[Append](fields-append-method-dao.md)** メソッドを使用すると、実行時エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="52da3-126">If name refers to an object that is already a member of the collection, a run-time error occurs when you use the **[Append](fields-append-method-dao.md)** method.</span></span>
 
-<span data-ttu-id="0aefc-127">コレクションから **Index** オブジェクトを削除するには、コレクションの **[Delete](fields-delete-method-dao.md)** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="0aefc-127">To remove an **Index** object from a collection, use the **[Delete](fields-delete-method-dao.md)** method on the collection.</span></span>
+<span data-ttu-id="52da3-127">コレクションから **Index** オブジェクトを削除するには、コレクションの **[Delete](fields-delete-method-dao.md)** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="52da3-127">To remove an **Index** object from a collection, use the **[Delete](fields-delete-method-dao.md)** method on the collection.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0aefc-128">例</span><span class="sxs-lookup"><span data-stu-id="0aefc-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="52da3-128">例</span><span class="sxs-lookup"><span data-stu-id="52da3-128">Example</span></span>
 
-<span data-ttu-id="0aefc-p104">次の使用例では、 **CreateIndex** メソッドを使用して 2 つの新しい **Index** オブジェクトを作成し、これを Employees という名前の **TableDef** オブジェクトの **Indexes** コレクションに追加します。次に、 **TableDef** オブジェクトの Indexes コレクション、新しい **Index** オブジェクトの **Fields** コレクション、および新しい **Index** オブジェクトの Properties コレクションを列挙します。このプロシージャを実行するには、CreateIndexOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="0aefc-p104">This example uses the **CreateIndex** method to create two new **Index** objects and then appends them to the **Indexes** collection of the Employees **TableDef** object. It then enumerates the Indexes collection of the **TableDef** object, the **Fields** collection of the new **Index** objects, and the Properties collection of the new **Index** objects. The CreateIndexOutput function is required for this procedure to run.</span></span>
+<span data-ttu-id="52da3-p104">次の使用例では、 **CreateIndex** メソッドを使用して 2 つの新しい **Index** オブジェクトを作成し、これを Employees という名前の **TableDef** オブジェクトの **Indexes** コレクションに追加します。次に、 **TableDef** オブジェクトの Indexes コレクション、新しい **Index** オブジェクトの **Fields** コレクション、および新しい **Index** オブジェクトの Properties コレクションを列挙します。このプロシージャを実行するには、CreateIndexOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="52da3-p104">This example uses the **CreateIndex** method to create two new **Index** objects and then appends them to the **Indexes** collection of the Employees **TableDef** object. It then enumerates the Indexes collection of the **TableDef** object, the **Fields** collection of the new **Index** objects, and the Properties collection of the new **Index** objects. The CreateIndexOutput function is required for this procedure to run.</span></span>
 
 ```vb
     Sub CreateIndexX() 

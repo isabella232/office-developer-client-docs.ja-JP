@@ -8,28 +8,28 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6613836a4d924d66902d4da4e7c25d1df1acd8ce
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32312034"
 ---
-# <a name="version-property-example-vj"></a><span data-ttu-id="5f716-102">Version プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="5f716-102">Version property example (VJ++)</span></span>
+# <a name="version-property-example-vj"></a><span data-ttu-id="2239b-102">Version プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="2239b-102">Version property example (VJ++)</span></span>
 
 
-<span data-ttu-id="5f716-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="5f716-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="2239b-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="2239b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="5f716-p101">この例では、[Connection](version-property-ado.md) オブジェクトの [Version](connection-object-ado.md) プロパティを使用して、現在の ADO のバージョンを表示します。また、動的プロパティを使用して、次の項目を表示します。</span><span class="sxs-lookup"><span data-stu-id="5f716-p101">This example uses the [Version](version-property-ado.md) property of a [Connection](connection-object-ado.md) object to display the current ADO version. It also uses several dynamic properties to show:</span></span>
+<span data-ttu-id="2239b-p101">この例では、[Connection](version-property-ado.md) オブジェクトの [Version](connection-object-ado.md) プロパティを使用して、現在の ADO のバージョンを表示します。また、動的プロパティを使用して、次の項目を表示します。</span><span class="sxs-lookup"><span data-stu-id="2239b-p101">This example uses the [Version](version-property-ado.md) property of a [Connection](connection-object-ado.md) object to display the current ADO version. It also uses several dynamic properties to show:</span></span>
 
-  - <span data-ttu-id="5f716-106">現在の DBMS の名前およびバージョン</span><span class="sxs-lookup"><span data-stu-id="5f716-106">the current DBMS name and version.</span></span>
+  - <span data-ttu-id="2239b-106">現在の DBMS の名前およびバージョン</span><span class="sxs-lookup"><span data-stu-id="2239b-106">the current DBMS name and version.</span></span>
 
-  - <span data-ttu-id="5f716-107">OLE DB のバージョン</span><span class="sxs-lookup"><span data-stu-id="5f716-107">OLE DB version.</span></span>
+  - <span data-ttu-id="2239b-107">OLE DB のバージョン</span><span class="sxs-lookup"><span data-stu-id="2239b-107">OLE DB version.</span></span>
 
-  - <span data-ttu-id="5f716-108">プロバイダーの名前およびバージョン</span><span class="sxs-lookup"><span data-stu-id="5f716-108">provider name and version.</span></span>
+  - <span data-ttu-id="2239b-108">プロバイダーの名前およびバージョン</span><span class="sxs-lookup"><span data-stu-id="2239b-108">provider name and version.</span></span>
 
-  - <span data-ttu-id="5f716-109">ODBC のバージョン</span><span class="sxs-lookup"><span data-stu-id="5f716-109">ODBC version.</span></span>
+  - <span data-ttu-id="2239b-109">ODBC のバージョン</span><span class="sxs-lookup"><span data-stu-id="2239b-109">ODBC version.</span></span>
 
-  - <span data-ttu-id="5f716-110">ODBC ドライバーの名前およびバージョン</span><span class="sxs-lookup"><span data-stu-id="5f716-110">ODBC driver name and version.</span></span>
+  - <span data-ttu-id="2239b-110">ODBC ドライバーの名前およびバージョン</span><span class="sxs-lookup"><span data-stu-id="2239b-110">ODBC driver name and version.</span></span>
 
 <!-- end list -->
 

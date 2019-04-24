@@ -8,34 +8,34 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6d1618a0cb310c1e564fe18289da6a2d35e91d0b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314001"
 ---
-# <a name="underlyingvalue-property-ado"></a><span data-ttu-id="e2cd7-102">UnderlyingValue プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="e2cd7-102">UnderlyingValue property (ADO)</span></span>
+# <a name="underlyingvalue-property-ado"></a><span data-ttu-id="30ee0-102">UnderlyingValue プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="30ee0-102">UnderlyingValue property (ADO)</span></span>
 
 
-<span data-ttu-id="e2cd7-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="e2cd7-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="30ee0-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="30ee0-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
 
-<span data-ttu-id="e2cd7-104">データベース内の [Field](field-object-ado.md) オブジェクトの現在の値を示します。</span><span class="sxs-lookup"><span data-stu-id="e2cd7-104">Indicates a [Field](field-object-ado.md) object's current value in the database.</span></span>
+<span data-ttu-id="30ee0-104">データベース内の [Field](field-object-ado.md) オブジェクトの現在の値を示します。</span><span class="sxs-lookup"><span data-stu-id="30ee0-104">Indicates a [Field](field-object-ado.md) object's current value in the database.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="e2cd7-105">戻り値</span><span class="sxs-lookup"><span data-stu-id="e2cd7-105">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="30ee0-105">戻り値</span><span class="sxs-lookup"><span data-stu-id="30ee0-105">Return value</span></span>
 
-<span data-ttu-id="e2cd7-106">**Field** の値を示すバリアント型 ( **Variant** ) の値を返します。</span><span class="sxs-lookup"><span data-stu-id="e2cd7-106">Returns a **Variant** value that indicates the value of the **Field**.</span></span>
+<span data-ttu-id="30ee0-106">**Field** の値を示すバリアント型 (**Variant**) の値を返します。</span><span class="sxs-lookup"><span data-stu-id="30ee0-106">Returns a **Variant** value that indicates the value of the **Field**.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="e2cd7-107">解説</span><span class="sxs-lookup"><span data-stu-id="e2cd7-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="30ee0-107">注釈</span><span class="sxs-lookup"><span data-stu-id="30ee0-107">Remarks</span></span>
 
-<span data-ttu-id="e2cd7-p101">データベースから現在のフィールド値を返すには、 **UnderlyingValue** プロパティを使用します。 **UnderlyingValue** プロパティ内のフィールド値は、トランザクションで参照できる値であり、別のトランザクションによる最近の更新の結果である可能性があります。この値は、 [Recordset](originalvalue-property-ado.md) に最初に返された値を反映する [OriginalValue](recordset-object-ado.md) プロパティとは異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="e2cd7-p101">Use the **UnderlyingValue** property to return the current field value from the database. The field value in the **UnderlyingValue** property is the value that is visible to your transaction and may be the result of a recent update by another transaction. This may differ from the [OriginalValue](originalvalue-property-ado.md) property, which reflects the value that was originally returned to the [Recordset](recordset-object-ado.md).</span></span>
+<span data-ttu-id="30ee0-p101">データベースから現在のフィールド値を返すには、 **UnderlyingValue** プロパティを使用します。 **UnderlyingValue** プロパティ内のフィールド値は、トランザクションで参照できる値であり、別のトランザクションによる最近の更新の結果である可能性があります。この値は、 [Recordset](originalvalue-property-ado.md) に最初に返された値を反映する [OriginalValue](recordset-object-ado.md) プロパティとは異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="30ee0-p101">Use the **UnderlyingValue** property to return the current field value from the database. The field value in the **UnderlyingValue** property is the value that is visible to your transaction and may be the result of a recent update by another transaction. This may differ from the [OriginalValue](originalvalue-property-ado.md) property, which reflects the value that was originally returned to the [Recordset](recordset-object-ado.md).</span></span>
 
-<span data-ttu-id="e2cd7-p102">これは [Resync](resync-method-ado.md) メソッドを使用した場合と似ていますが、 **UnderlyingValue** プロパティは現在のレコードから特定のフィールドの値のみを返します。この値は、 [Resync](resync-method-ado.md) メソッドが [Value](value-property-ado.md) プロパティを置き換えるために使用する値と同じです。</span><span class="sxs-lookup"><span data-stu-id="e2cd7-p102">This is similar to using the [Resync](resync-method-ado.md) method, but the **UnderlyingValue** property returns only the value for a specific field from the current record. This is the same value that the [Resync](resync-method-ado.md) method uses to replace the [Value](value-property-ado.md) property.</span></span>
+<span data-ttu-id="30ee0-p102">これは [Resync](resync-method-ado.md) メソッドを使用した場合と似ていますが、 **UnderlyingValue** プロパティは現在のレコードから特定のフィールドの値のみを返します。この値は、 [Resync](resync-method-ado.md) メソッドが [Value](value-property-ado.md) プロパティを置き換えるために使用する値と同じです。</span><span class="sxs-lookup"><span data-stu-id="30ee0-p102">This is similar to using the [Resync](resync-method-ado.md) method, but the **UnderlyingValue** property returns only the value for a specific field from the current record. This is the same value that the [Resync](resync-method-ado.md) method uses to replace the [Value](value-property-ado.md) property.</span></span>
 
-<span data-ttu-id="e2cd7-113">このプロパティを **OriginalValue** プロパティと共に使用すると、一括更新で発生する競合を解消できます。</span><span class="sxs-lookup"><span data-stu-id="e2cd7-113">When you use this property with the **OriginalValue** property, you can resolve conflicts that arise from batch updates.</span></span>
+<span data-ttu-id="30ee0-113">このプロパティを **OriginalValue** プロパティと共に使用すると、一括更新で発生する競合を解消できます。</span><span class="sxs-lookup"><span data-stu-id="30ee0-113">When you use this property with the **OriginalValue** property, you can resolve conflicts that arise from batch updates.</span></span>
 
-## <a name="record"></a><span data-ttu-id="e2cd7-114">Record</span><span class="sxs-lookup"><span data-stu-id="e2cd7-114">Record</span></span>
+## <a name="record"></a><span data-ttu-id="30ee0-114">Record</span><span class="sxs-lookup"><span data-stu-id="30ee0-114">Record</span></span>
 
-<span data-ttu-id="e2cd7-115">[Record](record-object-ado.md) オブジェクトの場合、 [Update](update-method-ado.md) が呼び出される前に追加されたフィールドについては、このプロパティは空になります。</span><span class="sxs-lookup"><span data-stu-id="e2cd7-115">For [Record](record-object-ado.md) objects, this property will be empty for fields added before [Update](update-method-ado.md) is called.</span></span>
+<span data-ttu-id="30ee0-115">[Record](record-object-ado.md) オブジェクトの場合、[Update](update-method-ado.md) が呼び出される前に追加されたフィールドについては、このプロパティは空になります。</span><span class="sxs-lookup"><span data-stu-id="30ee0-115">For [Record](record-object-ado.md) objects, this property will be empty for fields added before [Update](update-method-ado.md) is called.</span></span>
 
