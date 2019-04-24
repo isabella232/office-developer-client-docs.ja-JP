@@ -7,25 +7,25 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a111d7b7-6e87-4958-8f9b-0f2adbeb8b63
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e7120b843eae8df70cb2c4f9cbf581dcf0e09c11
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 65ed848907e196c315e8ddb61c4afd2fe03faa18
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270288"
 ---
-# <a name="mapiofflinenotifytype"></a><span data-ttu-id="4142f-103">MAPIOFFLINE_NOTIFY_TYPE</span><span class="sxs-lookup"><span data-stu-id="4142f-103">MAPIOFFLINE_NOTIFY_TYPE</span></span>
+# <a name="mapiofflinenotifytype"></a><span data-ttu-id="c9a84-103">MAPIOFFLINE_NOTIFY_TYPE</span><span class="sxs-lookup"><span data-stu-id="c9a84-103">MAPIOFFLINE_NOTIFY_TYPE</span></span>
 
   
   
-<span data-ttu-id="4142f-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4142f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="c9a84-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c9a84-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="4142f-105">通知の MAPIOFFLINE_NOTIFY_TYPE では、接続状態の変更を実行しようとしていますが行われて、または完了した場合を識別します。</span><span class="sxs-lookup"><span data-stu-id="4142f-105">The MAPIOFFLINE_NOTIFY_TYPE of a notification identifies if a change in the connection state is going to take place, is taking place, or has completed.</span></span> 
+<span data-ttu-id="c9a84-105">通知の MAPIOFFLINE_NOTIFY_TYPE によって、接続状態の変更が行われるか、実行されるか、または完了したかが特定されます。</span><span class="sxs-lookup"><span data-stu-id="c9a84-105">The MAPIOFFLINE_NOTIFY_TYPE of a notification identifies if a change in the connection state is going to take place, is taking place, or has completed.</span></span> 
   
-## <a name="quick-info"></a><span data-ttu-id="4142f-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="4142f-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="c9a84-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="c9a84-106">Quick info</span></span>
 
-<span data-ttu-id="4142f-107">**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4142f-107">See **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**.</span></span> 
+<span data-ttu-id="c9a84-107">**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c9a84-107">See **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**.</span></span> 
   
 ```cpp
 typedef enum { 
@@ -35,13 +35,13 @@ typedef enum {
 } MAPIOFFLINE_NOTIFY_TYPE;
 ```
 
-## <a name="see-also"></a><span data-ttu-id="4142f-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="4142f-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c9a84-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="c9a84-108">See also</span></span>
 
 
 
-[<span data-ttu-id="4142f-109">オフライン状態 API について</span><span class="sxs-lookup"><span data-stu-id="4142f-109">About the Offline State API</span></span>](about-the-offline-state-api.md)
+[<span data-ttu-id="c9a84-109">オフライン状態 API について</span><span class="sxs-lookup"><span data-stu-id="c9a84-109">About the Offline State API</span></span>](about-the-offline-state-api.md)
   
-[<span data-ttu-id="4142f-110">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="4142f-110">MAPI Constants</span></span>](mapi-constants.md)
+[<span data-ttu-id="c9a84-110">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="c9a84-110">MAPI Constants</span></span>](mapi-constants.md)
   
-[<span data-ttu-id="4142f-111">MAPIOFFLINE_NOTIFY</span><span class="sxs-lookup"><span data-stu-id="4142f-111">MAPIOFFLINE_NOTIFY</span></span>](mapioffline_notify.md)
+[<span data-ttu-id="c9a84-111">MAPIOFFLINE_NOTIFY</span><span class="sxs-lookup"><span data-stu-id="c9a84-111">MAPIOFFLINE_NOTIFY</span></span>](mapioffline_notify.md)
 

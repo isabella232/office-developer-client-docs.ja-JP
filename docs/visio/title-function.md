@@ -8,24 +8,24 @@ f1_keywords:
 - Vis_DSS.chm82251574
 localization_priority: Normal
 ms.assetid: 94c640d8-99e9-9d15-8ada-d9abeb3d66f7
-description: ドキュメントのプロパティの [タイトル] フィールドからテキストを返します。
-ms.openlocfilehash: a3f34ad3723c2c7cf4901ab4e7a8d00addc4f7dd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 図面のプロパティの [タイトル] フィールドからテキストを返します。
+ms.openlocfilehash: 395356fcffddfaf8d796708acc31db297ef01b35
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281029"
 ---
-# <a name="title-function"></a><span data-ttu-id="e3119-103">TITLE 関数</span><span class="sxs-lookup"><span data-stu-id="e3119-103">TITLE Function</span></span>
+# <a name="title-function"></a><span data-ttu-id="0320f-103">TITLE 関数</span><span class="sxs-lookup"><span data-stu-id="0320f-103">TITLE Function</span></span>
 
-<span data-ttu-id="e3119-104">ドキュメントのプロパティの [**タイトル**] フィールドからテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="e3119-104">Returns the text from the **Title** field of a document's properties.</span></span> 
+<span data-ttu-id="0320f-104">図面のプロパティの [**タイトル**] フィールドからテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="0320f-104">Returns the text from the **Title** field of a document's properties.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="e3119-105">構文</span><span class="sxs-lookup"><span data-stu-id="e3119-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="0320f-105">構文</span><span class="sxs-lookup"><span data-stu-id="0320f-105">Syntax</span></span>
 
-<span data-ttu-id="e3119-106">タイトル)</span><span class="sxs-lookup"><span data-stu-id="e3119-106">TITLE ()</span></span>
+<span data-ttu-id="0320f-106">TITLE ()</span><span class="sxs-lookup"><span data-stu-id="0320f-106">TITLE ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="e3119-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="e3119-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="0320f-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="0320f-107">Return value</span></span>
 
-<span data-ttu-id="e3119-108">String</span><span class="sxs-lookup"><span data-stu-id="e3119-108">String</span></span>
+<span data-ttu-id="0320f-108">文字列</span><span class="sxs-lookup"><span data-stu-id="0320f-108">String</span></span>
   
 

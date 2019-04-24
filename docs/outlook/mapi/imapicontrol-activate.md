@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2b641030-2429-4217-a648-0a9f3d1a1b29
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7f330ef3099175dde88bec2de3512a3c4af1db49
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: d3b47e423daf428c67761d13deef1ae0858c91c0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280203"
 ---
-# <a name="imapicontrolactivate"></a><span data-ttu-id="c89d2-103">IMAPIControl::Activate</span><span class="sxs-lookup"><span data-stu-id="c89d2-103">IMAPIControl::Activate</span></span>
+# <a name="imapicontrolactivate"></a><span data-ttu-id="cfbb0-103">IMAPIControl::Activate</span><span class="sxs-lookup"><span data-stu-id="cfbb0-103">IMAPIControl::Activate</span></span>
 
   
   
-<span data-ttu-id="c89d2-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c89d2-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="cfbb0-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="cfbb0-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="c89d2-105">ダイアログ ボックスを表示する、クライアント アプリケーションのユーザーは、ボタン コントロールをクリックすると、プログラムの操作を開始するなどのタスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="c89d2-105">Performs a task such as displaying a dialog box or starting a programmatic operation when a client application user clicks the button control.</span></span>
+<span data-ttu-id="cfbb0-105">クライアントアプリケーションユーザーが [ボタン] コントロールをクリックしたときに、ダイアログボックスを表示したり、プログラムによる操作を開始したりするなどのタスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="cfbb0-105">Performs a task such as displaying a dialog box or starting a programmatic operation when a client application user clicks the button control.</span></span>
   
 ```cpp
 HRESULT Activate(
@@ -34,33 +34,33 @@ HRESULT Activate(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="c89d2-106">�p�����[�^�[</span><span class="sxs-lookup"><span data-stu-id="c89d2-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="cfbb0-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="cfbb0-106">Parameters</span></span>
 
- <span data-ttu-id="c89d2-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="c89d2-107">_ulFlags_</span></span>
+ <span data-ttu-id="cfbb0-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="cfbb0-107">_ulFlags_</span></span>
   
-> <span data-ttu-id="c89d2-108">[����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="c89d2-108">[in] Reserved; must be zero.</span></span>
+> <span data-ttu-id="cfbb0-108">[����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="cfbb0-108">[in] Reserved; must be zero.</span></span>
     
- <span data-ttu-id="c89d2-109">_ulUIParam_</span><span class="sxs-lookup"><span data-stu-id="c89d2-109">_ulUIParam_</span></span>
+ <span data-ttu-id="cfbb0-109">_uluiparam_</span><span class="sxs-lookup"><span data-stu-id="cfbb0-109">_ulUIParam_</span></span>
   
-> <span data-ttu-id="c89d2-110">[in]ボタン コントロールを表示するダイアログ ボックスの親ウィンドウへのハンドル。</span><span class="sxs-lookup"><span data-stu-id="c89d2-110">[in] A handle to the parent window of the dialog box on which the button control appears.</span></span>
+> <span data-ttu-id="cfbb0-110">順番ボタンコントロールが表示されるダイアログボックスの親ウィンドウへのハンドル。</span><span class="sxs-lookup"><span data-stu-id="cfbb0-110">[in] A handle to the parent window of the dialog box on which the button control appears.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="c89d2-111">�߂�l</span><span class="sxs-lookup"><span data-stu-id="c89d2-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="cfbb0-111">戻り値</span><span class="sxs-lookup"><span data-stu-id="cfbb0-111">Return value</span></span>
 
-<span data-ttu-id="c89d2-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="c89d2-112">S_OK</span></span> 
+<span data-ttu-id="cfbb0-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="cfbb0-112">S_OK</span></span> 
   
-> <span data-ttu-id="c89d2-113">ボタン コントロールが正常にアクティブ化します。</span><span class="sxs-lookup"><span data-stu-id="c89d2-113">The button control was successfully activated.</span></span>
+> <span data-ttu-id="cfbb0-113">[ボタン] コントロールが正常にアクティブ化されました。</span><span class="sxs-lookup"><span data-stu-id="cfbb0-113">The button control was successfully activated.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="c89d2-114">注釈</span><span class="sxs-lookup"><span data-stu-id="c89d2-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cfbb0-114">解説</span><span class="sxs-lookup"><span data-stu-id="cfbb0-114">Remarks</span></span>
 
-<span data-ttu-id="c89d2-115">**IMAPIControl::Activate**メソッドでは、次のボタン コントロールのクリックをユーザーのタスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="c89d2-115">The **IMAPIControl::Activate** method performs tasks following a user's click of the button control.</span></span> <span data-ttu-id="c89d2-116">、表示された表の処理の一部として、クリックが発生した MAPI 後ボタンが有効になっているかどうかを決定する最初の呼び出し[IMAPIControl::GetState](imapicontrol-getstate.md) **をアクティブにする**呼び出しが行われます。</span><span class="sxs-lookup"><span data-stu-id="c89d2-116">After the click occurs, as part of the processing of the display table, MAPI makes a call to **Activate** after first calling [IMAPIControl::GetState](imapicontrol-getstate.md) to determine whether the button is enabled.</span></span> 
+<span data-ttu-id="cfbb0-115">**IMAPIControl:: Activate**メソッドは、ユーザーがボタンコントロールをクリックした後にタスクを実行します。</span><span class="sxs-lookup"><span data-stu-id="cfbb0-115">The **IMAPIControl::Activate** method performs tasks following a user's click of the button control.</span></span> <span data-ttu-id="cfbb0-116">表示テーブルの処理の一部としてクリックが行われた後、MAPI は、 [IMAPIControl:: GetState](imapicontrol-getstate.md)を最初に呼び出した後に**アクティブ化**を呼び出して、ボタンが有効になっているかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="cfbb0-116">After the click occurs, as part of the processing of the display table, MAPI makes a call to **Activate** after first calling [IMAPIControl::GetState](imapicontrol-getstate.md) to determine whether the button is enabled.</span></span> 
   
-<span data-ttu-id="c89d2-117">**アクティブにして**、その他の実装方法の詳細については[IMAPIControl: IUnknown](imapicontroliunknown.md)メソッドは、[コントロール オブジェクトの実装](control-object-implementation.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c89d2-117">For more information about how to implement **Activate** and the other [IMAPIControl : IUnknown](imapicontroliunknown.md) methods, see [Control Object Implementation](control-object-implementation.md).</span></span>
+<span data-ttu-id="cfbb0-117">**Activate**メソッドおよびその他の[IMAPIControl](imapicontroliunknown.md)メソッドを実装する方法の詳細については、「 [Control オブジェクトの実装](control-object-implementation.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cfbb0-117">For more information about how to implement **Activate** and the other [IMAPIControl : IUnknown](imapicontroliunknown.md) methods, see [Control Object Implementation](control-object-implementation.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="c89d2-118">関連項目</span><span class="sxs-lookup"><span data-stu-id="c89d2-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cfbb0-118">関連項目</span><span class="sxs-lookup"><span data-stu-id="cfbb0-118">See also</span></span>
 
 
 
-[<span data-ttu-id="c89d2-119">IMAPIControl::GetState</span><span class="sxs-lookup"><span data-stu-id="c89d2-119">IMAPIControl::GetState</span></span>](imapicontrol-getstate.md)
+[<span data-ttu-id="cfbb0-119">IMAPIControl::GetState</span><span class="sxs-lookup"><span data-stu-id="cfbb0-119">IMAPIControl::GetState</span></span>](imapicontrol-getstate.md)
   
-[<span data-ttu-id="c89d2-120">IMAPIControl : IUnknown</span><span class="sxs-lookup"><span data-stu-id="c89d2-120">IMAPIControl : IUnknown</span></span>](imapicontroliunknown.md)
+[<span data-ttu-id="cfbb0-120">IMAPIControl : IUnknown</span><span class="sxs-lookup"><span data-stu-id="cfbb0-120">IMAPIControl : IUnknown</span></span>](imapicontroliunknown.md)
 

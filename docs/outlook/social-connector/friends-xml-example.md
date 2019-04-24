@@ -7,23 +7,23 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 83afbdef-4f12-4673-a0c1-bbf86274558f
-description: XML の例をこのトピックでは、ISocialPerson::GetFriendsAndColleagues メソッドが呼び出された後に、Outlook ソーシャル コネクタ (OSC) が返されるフレンド XML 文字列です。 例は、人の要素で区切られたそれぞれの 2 つの友人、友人の XML を示します。 各友人は、ソーシャル ネットワーク上のユーザー Id の要素に一意の値を指定します。
+description: このトピックの xml の例は、iGetFriendsAndColleagues メソッドを呼び出すと、Outlook Social Connector (.osc) に返される friend xml 文字列です。 この例は、person 要素で区切られた、2つのフレンドのフレンド XML を示しています。 各 friend は、ソーシャルネットワーク上の userID 要素の一意の値を指定します。
 ms.openlocfilehash: 5dbda1e4439f807ccc6e7abddd0ef654ae801fe0
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280960"
 ---
-# <a name="friends-xml-example"></a><span data-ttu-id="8edf7-105">友だち XML の例</span><span class="sxs-lookup"><span data-stu-id="8edf7-105">Friends XML example</span></span>
+# <a name="friends-xml-example"></a><span data-ttu-id="c5e69-105">友だち XML の例</span><span class="sxs-lookup"><span data-stu-id="c5e69-105">Friends XML example</span></span>
 
-<span data-ttu-id="8edf7-106">XML の例をこのトピックでは、 [ISocialPerson::GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md)メソッドが呼び出された後に、Outlook ソーシャル コネクタ (OSC) が返されるフレンド XML 文字列です。</span><span class="sxs-lookup"><span data-stu-id="8edf7-106">The XML example in this topic is a friend XML string returned to the Outlook Social Connector (OSC) after it calls the [ISocialPerson::GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md) method.</span></span> <span data-ttu-id="8edf7-107">例は、**人**の要素で区切られた各、2 つの友人の**友人**の XML を示します。</span><span class="sxs-lookup"><span data-stu-id="8edf7-107">The example shows the **friends** XML for two friends, each delimited by the **person** element.</span></span> <span data-ttu-id="8edf7-108">各友人は、ソーシャル ネットワーク上の**ユーザー Id**の要素に一意の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="8edf7-108">Each friend specifies a unique value for the **userID** element on the social network.</span></span> 
+<span data-ttu-id="c5e69-106">このトピックの xml の例は、 [iGetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md)メソッドを呼び出すと、Outlook Social Connector (.osc) に返される friend xml 文字列です。</span><span class="sxs-lookup"><span data-stu-id="c5e69-106">The XML example in this topic is a friend XML string returned to the Outlook Social Connector (OSC) after it calls the [ISocialPerson::GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md) method.</span></span> <span data-ttu-id="c5e69-107">この例は、 **person**要素で区切られた、2つのフレンドの**フレンド**XML を示しています。</span><span class="sxs-lookup"><span data-stu-id="c5e69-107">The example shows the **friends** XML for two friends, each delimited by the **person** element.</span></span> <span data-ttu-id="c5e69-108">各 friend は、ソーシャルネットワーク上の**userID**要素の一意の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="c5e69-108">Each friend specifies a unique value for the **userID** element on the social network.</span></span> 
   
-<span data-ttu-id="8edf7-109">XML、**友人**の残りの要素では、わかりやすいものの名前を持ちます。</span><span class="sxs-lookup"><span data-stu-id="8edf7-109">The remaining elements of the **friends** XML have self-explanatory names.</span></span> <span data-ttu-id="8edf7-110">これらの要素の詳細については、[友人の XML](xml-for-friends.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8edf7-110">For detailed description of these elements, see [XML for Friends](xml-for-friends.md).</span></span> 
+<span data-ttu-id="c5e69-109">**フレンド**XML の残りの要素には、自己説明の名前が付いています。</span><span class="sxs-lookup"><span data-stu-id="c5e69-109">The remaining elements of the **friends** XML have self-explanatory names.</span></span> <span data-ttu-id="c5e69-110">これらの要素の詳細な説明については、「 [XML for Friends](xml-for-friends.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c5e69-110">For detailed description of these elements, see [XML for Friends](xml-for-friends.md).</span></span> 
   
-## <a name="xml-example"></a><span data-ttu-id="8edf7-111">XML の例</span><span class="sxs-lookup"><span data-stu-id="8edf7-111">XML example</span></span>
+## <a name="xml-example"></a><span data-ttu-id="c5e69-111">XML の例</span><span class="sxs-lookup"><span data-stu-id="c5e69-111">XML example</span></span>
 
-<span data-ttu-id="8edf7-112">次の例では、ソーシャル ネットワーク上の二人の**友人**の XML を示しています。</span><span class="sxs-lookup"><span data-stu-id="8edf7-112">The following example shows the **friends** XML for two persons on the social network.</span></span> 
+<span data-ttu-id="c5e69-112">次の例は、ソーシャルネットワーク上の2人の人々の**フレンド**XML を示しています。</span><span class="sxs-lookup"><span data-stu-id="c5e69-112">The following example shows the **friends** XML for two persons on the social network.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -78,10 +78,10 @@ ms.locfileid: "25395211"
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="8edf7-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="8edf7-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c5e69-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="c5e69-113">See also</span></span>
 
-- [<span data-ttu-id="8edf7-114">OSC プロバイダーの XML の例</span><span class="sxs-lookup"><span data-stu-id="8edf7-114">OSC Provider XML Examples</span></span>](osc-provider-xml-examples.md)  
-- [<span data-ttu-id="8edf7-115">機能の XML の例</span><span class="sxs-lookup"><span data-stu-id="8edf7-115">Capabilities XML Example</span></span>](capabilities-xml-example.md) 
-- [<span data-ttu-id="8edf7-116">アクティビティ フィードの XML の例</span><span class="sxs-lookup"><span data-stu-id="8edf7-116">Activity Feed XML Example</span></span>](activity-feed-xml-example.md) 
-- [<span data-ttu-id="8edf7-117">Outlook ソーシャル コネクタ プロバイダーの XML スキーマ</span><span class="sxs-lookup"><span data-stu-id="8edf7-117">Outlook Social Connector Provider XML Schema</span></span>](outlook-social-connector-provider-xml-schema.md)
+- [<span data-ttu-id="c5e69-114">.osc プロバイダーの XML の例</span><span class="sxs-lookup"><span data-stu-id="c5e69-114">OSC Provider XML Examples</span></span>](osc-provider-xml-examples.md)  
+- [<span data-ttu-id="c5e69-115">機能 XML の例</span><span class="sxs-lookup"><span data-stu-id="c5e69-115">Capabilities XML Example</span></span>](capabilities-xml-example.md) 
+- [<span data-ttu-id="c5e69-116">アクティビティフィード XML の例</span><span class="sxs-lookup"><span data-stu-id="c5e69-116">Activity Feed XML Example</span></span>](activity-feed-xml-example.md) 
+- [<span data-ttu-id="c5e69-117">Outlook Social Connector プロバイダーの XML スキーマ</span><span class="sxs-lookup"><span data-stu-id="c5e69-117">Outlook Social Connector Provider XML Schema</span></span>](outlook-social-connector-provider-xml-schema.md)
 

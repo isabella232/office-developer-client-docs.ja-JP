@@ -12,41 +12,41 @@ api_type:
 - COM
 ms.assetid: 2fe6c1ef-c923-23b9-73ed-a149f7336754
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 41e957df1c7e304765d8a6ca03ea1946ac1df2f1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ad17f93f6a24dad8c392d16900a01df05fe71f1d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279508"
 ---
-# <a name="ipstx6--ipstx5"></a><span data-ttu-id="d6a93-103">IPSTX6 : IPSTX5</span><span class="sxs-lookup"><span data-stu-id="d6a93-103">IPSTX6 : IPSTX5</span></span>
+# <a name="ipstx6--ipstx5"></a><span data-ttu-id="3e6e8-103">IPSTX6 : IPSTX5</span><span class="sxs-lookup"><span data-stu-id="3e6e8-103">IPSTX6 : IPSTX5</span></span>
 
   
   
-<span data-ttu-id="d6a93-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d6a93-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="3e6e8-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="3e6e8-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="d6a93-105">このインターフェイスは、IOSTX インターフェイスを使用するレプリケーションを実行するときに、ヘルパー機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="d6a93-105">This interface provides helper functionality when performing replication through the IOSTX interface.</span></span>
+<span data-ttu-id="3e6e8-105">このインターフェイスは、iostx インターフェイスを介してレプリケーションを実行するときに、ヘルパー機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="3e6e8-105">This interface provides helper functionality when performing replication through the IOSTX interface.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="d6a93-106">によって提供されます。</span><span class="sxs-lookup"><span data-stu-id="d6a93-106">Provided by</span></span>  <br/> |<span data-ttu-id="d6a93-107">[IMsgStore](imsgstoreimapiprop.md)に対してクエリを実行</span><span class="sxs-lookup"><span data-stu-id="d6a93-107">Query on [IMsgStore](imsgstoreimapiprop.md)</span></span> <br/> |
-|<span data-ttu-id="d6a93-108">インターフェイスの識別子。</span><span class="sxs-lookup"><span data-stu-id="d6a93-108">Interface identifier:</span></span>  <br/> |<span data-ttu-id="d6a93-109">IID_IPSTX6</span><span class="sxs-lookup"><span data-stu-id="d6a93-109">IID_IPSTX6</span></span>  <br/> |
+|<span data-ttu-id="3e6e8-106">提供元</span><span class="sxs-lookup"><span data-stu-id="3e6e8-106">Provided by</span></span>  <br/> |<span data-ttu-id="3e6e8-107">[IMsgStore](imsgstoreimapiprop.md)のクエリ</span><span class="sxs-lookup"><span data-stu-id="3e6e8-107">Query on [IMsgStore](imsgstoreimapiprop.md)</span></span> <br/> |
+|<span data-ttu-id="3e6e8-108">インターフェイス識別子:</span><span class="sxs-lookup"><span data-stu-id="3e6e8-108">Interface identifier:</span></span>  <br/> |<span data-ttu-id="3e6e8-109">IID_IPSTX6</span><span class="sxs-lookup"><span data-stu-id="3e6e8-109">IID_IPSTX6</span></span>  <br/> |
    
-## <a name="vtable-order"></a><span data-ttu-id="d6a93-110">Vtable の順序</span><span class="sxs-lookup"><span data-stu-id="d6a93-110">Vtable order</span></span>
+## <a name="vtable-order"></a><span data-ttu-id="3e6e8-110">v の順序</span><span class="sxs-lookup"><span data-stu-id="3e6e8-110">Vtable order</span></span>
 
 |||
 |:-----|:-----|
-| <span data-ttu-id="d6a93-111">*プレース ホルダー メンバー*</span><span class="sxs-lookup"><span data-stu-id="d6a93-111">*Placeholder member*</span></span>  <br/> | <span data-ttu-id="d6a93-112">*いないサポートまたは文書化されています。*</span><span class="sxs-lookup"><span data-stu-id="d6a93-112">*Not supported or documented.*</span></span>  <br/> |
-| <span data-ttu-id="d6a93-113">*プレース ホルダー メンバー*</span><span class="sxs-lookup"><span data-stu-id="d6a93-113">*Placeholder member*</span></span>  <br/> | <span data-ttu-id="d6a93-114">*いないサポートまたは文書化されています。*</span><span class="sxs-lookup"><span data-stu-id="d6a93-114">*Not supported or documented.*</span></span>  <br/> |
-|<span data-ttu-id="d6a93-115">**[DisconnectStore](ipstx6-disconnectstore.md)**</span><span class="sxs-lookup"><span data-stu-id="d6a93-115">**[DisconnectStore](ipstx6-disconnectstore.md)**</span></span> <br/> |<span data-ttu-id="d6a93-116">ローカル ストアの接続を切断します。</span><span class="sxs-lookup"><span data-stu-id="d6a93-116">Disconnects the local store.</span></span>  <br/> |
-| <span data-ttu-id="d6a93-117">*プレース ホルダー メンバー*</span><span class="sxs-lookup"><span data-stu-id="d6a93-117">*Placeholder member*</span></span>  <br/> | <span data-ttu-id="d6a93-118">*いないサポートまたは文書化されています。*</span><span class="sxs-lookup"><span data-stu-id="d6a93-118">*Not supported or documented.*</span></span>  <br/> |
-| <span data-ttu-id="d6a93-119">*プレース ホルダー メンバー*</span><span class="sxs-lookup"><span data-stu-id="d6a93-119">*Placeholder member*</span></span>  <br/> | <span data-ttu-id="d6a93-120">*いないサポートまたは文書化されています。*</span><span class="sxs-lookup"><span data-stu-id="d6a93-120">*Not supported or documented.*</span></span>  <br/> |
+| <span data-ttu-id="3e6e8-111">*Placeholder メンバー*</span><span class="sxs-lookup"><span data-stu-id="3e6e8-111">*Placeholder member*</span></span>  <br/> | <span data-ttu-id="3e6e8-112">*サポートされていないか文書化されていません。*</span><span class="sxs-lookup"><span data-stu-id="3e6e8-112">*Not supported or documented.*</span></span>  <br/> |
+| <span data-ttu-id="3e6e8-113">*Placeholder メンバー*</span><span class="sxs-lookup"><span data-stu-id="3e6e8-113">*Placeholder member*</span></span>  <br/> | <span data-ttu-id="3e6e8-114">*サポートされていないか文書化されていません。*</span><span class="sxs-lookup"><span data-stu-id="3e6e8-114">*Not supported or documented.*</span></span>  <br/> |
+|<span data-ttu-id="3e6e8-115">**[切断ストア](ipstx6-disconnectstore.md)**</span><span class="sxs-lookup"><span data-stu-id="3e6e8-115">**[DisconnectStore](ipstx6-disconnectstore.md)**</span></span> <br/> |<span data-ttu-id="3e6e8-116">ローカルストアを切断します。</span><span class="sxs-lookup"><span data-stu-id="3e6e8-116">Disconnects the local store.</span></span>  <br/> |
+| <span data-ttu-id="3e6e8-117">*Placeholder メンバー*</span><span class="sxs-lookup"><span data-stu-id="3e6e8-117">*Placeholder member*</span></span>  <br/> | <span data-ttu-id="3e6e8-118">*サポートされていないか文書化されていません。*</span><span class="sxs-lookup"><span data-stu-id="3e6e8-118">*Not supported or documented.*</span></span>  <br/> |
+| <span data-ttu-id="3e6e8-119">*Placeholder メンバー*</span><span class="sxs-lookup"><span data-stu-id="3e6e8-119">*Placeholder member*</span></span>  <br/> | <span data-ttu-id="3e6e8-120">*サポートされていないか文書化されていません。*</span><span class="sxs-lookup"><span data-stu-id="3e6e8-120">*Not supported or documented.*</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="d6a93-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="d6a93-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3e6e8-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="3e6e8-121">See also</span></span>
 
 
 
-[<span data-ttu-id="d6a93-122">レプリケーション API について</span><span class="sxs-lookup"><span data-stu-id="d6a93-122">About the Replication API</span></span>](about-the-replication-api.md)
+[<span data-ttu-id="3e6e8-122">レプリケーション API について</span><span class="sxs-lookup"><span data-stu-id="3e6e8-122">About the Replication API</span></span>](about-the-replication-api.md)
   
-[<span data-ttu-id="d6a93-123">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="d6a93-123">MAPI Constants</span></span>](mapi-constants.md)
+[<span data-ttu-id="3e6e8-123">MAPI 定数</span><span class="sxs-lookup"><span data-stu-id="3e6e8-123">MAPI Constants</span></span>](mapi-constants.md)
 

@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 5778dffa-f01b-46b3-9c19-862793740918
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f2cc9a6f97fa51a255f8c24c2bb52c912aef7718
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c1509918eb587c17deebf95317cf57b4ab19928a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32270190"
 ---
-# <a name="launchwizardentry"></a><span data-ttu-id="31897-103">LAUNCHWIZARDENTRY</span><span class="sxs-lookup"><span data-stu-id="31897-103">LAUNCHWIZARDENTRY</span></span>
+# <a name="launchwizardentry"></a><span data-ttu-id="38328-103">LAUNCHWIZARDENTRY</span><span class="sxs-lookup"><span data-stu-id="38328-103">LAUNCHWIZARDENTRY</span></span>
 
   
   
-<span data-ttu-id="31897-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="31897-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="38328-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="38328-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="31897-105">1 つまたは複数のメッセージ サービスをプロファイルに追加するためのプロファイル ウィザード アプリケーションを起動する関数を定義します。</span><span class="sxs-lookup"><span data-stu-id="31897-105">Defines a function that starts the Profile Wizard application for the purpose of adding one or more message services to a profile.</span></span> 
+<span data-ttu-id="38328-105">プロファイルに1つ以上のメッセージサービスを追加することを目的として、プロファイルウィザードアプリケーションを起動する関数を定義します。</span><span class="sxs-lookup"><span data-stu-id="38328-105">Defines a function that starts the Profile Wizard application for the purpose of adding one or more message services to a profile.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="31897-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="31897-106">Header file:</span></span>  <br/> |<span data-ttu-id="31897-107">Mapiwz.h</span><span class="sxs-lookup"><span data-stu-id="31897-107">Mapiwz.h</span></span>  <br/> |
-|<span data-ttu-id="31897-108">によって実装される関数の定義:</span><span class="sxs-lookup"><span data-stu-id="31897-108">Defined function implemented by:</span></span>  <br/> |<span data-ttu-id="31897-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="31897-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="31897-110">によって呼び出される関数を定義します。</span><span class="sxs-lookup"><span data-stu-id="31897-110">Defined function called by:</span></span>  <br/> |<span data-ttu-id="31897-111">クライアント アプリケーション</span><span class="sxs-lookup"><span data-stu-id="31897-111">Client applications</span></span>  <br/> |
+|<span data-ttu-id="38328-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="38328-106">Header file:</span></span>  <br/> |<span data-ttu-id="38328-107">Mapiwz</span><span class="sxs-lookup"><span data-stu-id="38328-107">Mapiwz.h</span></span>  <br/> |
+|<span data-ttu-id="38328-108">定義された関数の実装:</span><span class="sxs-lookup"><span data-stu-id="38328-108">Defined function implemented by:</span></span>  <br/> |<span data-ttu-id="38328-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="38328-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="38328-110">によって呼び出された定義済み関数:</span><span class="sxs-lookup"><span data-stu-id="38328-110">Defined function called by:</span></span>  <br/> |<span data-ttu-id="38328-111">クライアント アプリケーション</span><span class="sxs-lookup"><span data-stu-id="38328-111">Client applications</span></span>  <br/> |
    
 ```cpp
 HRESULT LAUNCHWIZARDENTRY(
@@ -43,74 +43,74 @@ HRESULT LAUNCHWIZARDENTRY(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="31897-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="31897-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="38328-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="38328-112">Parameters</span></span>
 
- <span data-ttu-id="31897-113">_hParentWnd_</span><span class="sxs-lookup"><span data-stu-id="31897-113">_hParentWnd_</span></span>
+ <span data-ttu-id="38328-113">_hParentWnd_</span><span class="sxs-lookup"><span data-stu-id="38328-113">_hParentWnd_</span></span>
   
-> <span data-ttu-id="31897-114">[in]呼び出し元の親ウィンドウへのハンドル。</span><span class="sxs-lookup"><span data-stu-id="31897-114">[in] A handle to the caller's parent window.</span></span> <span data-ttu-id="31897-115">呼び出し元は、親ウィンドウを持たない場合、 _hParentWnd_パラメーターは、NULL のはずです。</span><span class="sxs-lookup"><span data-stu-id="31897-115">If the caller does not have a parent window, the  _hParentWnd_ parameter should be NULL.</span></span> 
+> <span data-ttu-id="38328-114">順番呼び出し元の親ウィンドウへのハンドル。</span><span class="sxs-lookup"><span data-stu-id="38328-114">[in] A handle to the caller's parent window.</span></span> <span data-ttu-id="38328-115">呼び出し元が親ウィンドウを持たない場合は、 _hParentWnd_パラメーターを NULL にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="38328-115">If the caller does not have a parent window, the  _hParentWnd_ parameter should be NULL.</span></span> 
     
- <span data-ttu-id="31897-116">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="31897-116">_ulFlags_</span></span>
+ <span data-ttu-id="38328-116">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="38328-116">_ulFlags_</span></span>
   
-> <span data-ttu-id="31897-117">[in]プロファイル ウィザードのオプションを示すフラグのビットマスクです。</span><span class="sxs-lookup"><span data-stu-id="31897-117">[in] Bitmask of flags indicating options for the Profile Wizard.</span></span> <span data-ttu-id="31897-118">次のフラグを設定することができます。</span><span class="sxs-lookup"><span data-stu-id="31897-118">The following flags can be set:</span></span>
+> <span data-ttu-id="38328-117">順番プロファイルウィザードのオプションを示すフラグのビットマスク。</span><span class="sxs-lookup"><span data-stu-id="38328-117">[in] Bitmask of flags indicating options for the Profile Wizard.</span></span> <span data-ttu-id="38328-118">次のフラグを設定できます。</span><span class="sxs-lookup"><span data-stu-id="38328-118">The following flags can be set:</span></span>
     
-<span data-ttu-id="31897-119">MAPI_PW_ADD_SERVICE_ONLY</span><span class="sxs-lookup"><span data-stu-id="31897-119">MAPI_PW_ADD_SERVICE_ONLY</span></span> 
+<span data-ttu-id="38328-119">MAPI_PW_ADD_SERVICE_ONLY</span><span class="sxs-lookup"><span data-stu-id="38328-119">MAPI_PW_ADD_SERVICE_ONLY</span></span> 
   
-> <span data-ttu-id="31897-120">プロファイル ウィザードでは、 _lppszServiceNameToAdd_パラメーターでは、表示されているメッセージ サービスのみを追加し、メッセージ サービスを選択するためには、そのページを表示できません。</span><span class="sxs-lookup"><span data-stu-id="31897-120">The Profile Wizard is to add only the message services listed through the  _lppszServiceNameToAdd_ parameter, and not display its page for selecting message services.</span></span> 
+> <span data-ttu-id="38328-120">プロファイルウィザードでは、 _lppszServiceNameToAdd_パラメーターを使用してメッセージサービスのみを追加し、メッセージサービスを選択するためのページを表示しないようにします。</span><span class="sxs-lookup"><span data-stu-id="38328-120">The Profile Wizard is to add only the message services listed through the  _lppszServiceNameToAdd_ parameter, and not display its page for selecting message services.</span></span> 
     
-<span data-ttu-id="31897-121">MAPI_PW_FIRST_PROFILE</span><span class="sxs-lookup"><span data-stu-id="31897-121">MAPI_PW_FIRST_PROFILE</span></span> 
+<span data-ttu-id="38328-121">MAPI_PW_FIRST_PROFILE</span><span class="sxs-lookup"><span data-stu-id="38328-121">MAPI_PW_FIRST_PROFILE</span></span> 
   
-> <span data-ttu-id="31897-122">プロファイルを作成するのには、このワークステーションの 1 つ目です。</span><span class="sxs-lookup"><span data-stu-id="31897-122">The profile to be created is the first one for this workstation.</span></span> 
+> <span data-ttu-id="38328-122">このワークステーションの最初のプロファイルが作成されます。</span><span class="sxs-lookup"><span data-stu-id="38328-122">The profile to be created is the first one for this workstation.</span></span> 
     
-<span data-ttu-id="31897-123">MAPI_PW_HIDE_SERVICES_LIST</span><span class="sxs-lookup"><span data-stu-id="31897-123">MAPI_PW_HIDE_SERVICES_LIST</span></span> 
+<span data-ttu-id="38328-123">MAPI_PW_HIDE_SERVICES_LIST</span><span class="sxs-lookup"><span data-stu-id="38328-123">MAPI_PW_HIDE_SERVICES_LIST</span></span> 
   
-> <span data-ttu-id="31897-124">メッセージ サービスを選択するためのプロファイル ウィザードのページが表示されない必要があります。</span><span class="sxs-lookup"><span data-stu-id="31897-124">The Profile Wizard's page for selecting message services should not be displayed.</span></span> 
+> <span data-ttu-id="38328-124">メッセージサービスを選択するためのプロファイルウィザードのページは表示されません。</span><span class="sxs-lookup"><span data-stu-id="38328-124">The Profile Wizard's page for selecting message services should not be displayed.</span></span> 
     
-<span data-ttu-id="31897-125">MAPI_PW_LAUNCHED_BY_CONFIG</span><span class="sxs-lookup"><span data-stu-id="31897-125">MAPI_PW_LAUNCHED_BY_CONFIG</span></span> 
+<span data-ttu-id="38328-125">MAPI_PW_LAUNCHED_BY_CONFIG</span><span class="sxs-lookup"><span data-stu-id="38328-125">MAPI_PW_LAUNCHED_BY_CONFIG</span></span> 
   
-> <span data-ttu-id="31897-126">プロファイル ウィザードは、コントロール パネルの構成アプリケーションによって起動されました。</span><span class="sxs-lookup"><span data-stu-id="31897-126">The Profile Wizard was launched by the Control Panel configuration application.</span></span> 
+> <span data-ttu-id="38328-126">プロファイルウィザードは、コントロールパネル構成アプリケーションによって起動されました。</span><span class="sxs-lookup"><span data-stu-id="38328-126">The Profile Wizard was launched by the Control Panel configuration application.</span></span> 
     
-<span data-ttu-id="31897-127">MAPI_PW_PROVIDER_UI_ONLY</span><span class="sxs-lookup"><span data-stu-id="31897-127">MAPI_PW_PROVIDER_UI_ONLY</span></span> 
+<span data-ttu-id="38328-127">MAPI_PW_PROVIDER_UI_ONLY</span><span class="sxs-lookup"><span data-stu-id="38328-127">MAPI_PW_PROVIDER_UI_ONLY</span></span> 
   
-> <span data-ttu-id="31897-128">サービス プロバイダーの構成] ダイアログ ボックスのみを表示する必要があり、プロファイル ウィザードのページは表示されません。</span><span class="sxs-lookup"><span data-stu-id="31897-128">Only the service providers's configuration dialog boxes should be displayed and the Profile Wizard's pages should not appear.</span></span> <span data-ttu-id="31897-129">このフラグは、MAPI_PW_ADD_SERVICE_ONLY フラグが設定されている場合にのみ設定できます。</span><span class="sxs-lookup"><span data-stu-id="31897-129">This flag can only be set if the MAPI_PW_ADD_SERVICE_ONLY flag is set.</span></span> 
+> <span data-ttu-id="38328-128">サービスプロバイダーの [構成] ダイアログボックスだけが表示され、プロファイルウィザードのページは表示されません。</span><span class="sxs-lookup"><span data-stu-id="38328-128">Only the service providers's configuration dialog boxes should be displayed and the Profile Wizard's pages should not appear.</span></span> <span data-ttu-id="38328-129">このフラグは、MAPI_PW_ADD_SERVICE_ONLY フラグが設定されている場合にのみ設定できます。</span><span class="sxs-lookup"><span data-stu-id="38328-129">This flag can only be set if the MAPI_PW_ADD_SERVICE_ONLY flag is set.</span></span> 
     
- <span data-ttu-id="31897-130">_lppszServiceNameToAdd_</span><span class="sxs-lookup"><span data-stu-id="31897-130">_lppszServiceNameToAdd_</span></span>
+ <span data-ttu-id="38328-130">_lppszServiceNameToAdd_</span><span class="sxs-lookup"><span data-stu-id="38328-130">_lppszServiceNameToAdd_</span></span>
   
-> <span data-ttu-id="31897-131">[in]プロファイルに追加するメッセージ サービスの名前を格納する文字列の配列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="31897-131">[in] Pointer to an array of strings that contains the names of the message services to be added to the profile.</span></span> <span data-ttu-id="31897-132">配列は NULL 値で終了してください。</span><span class="sxs-lookup"><span data-stu-id="31897-132">The array must terminate with a NULL value.</span></span> 
+> <span data-ttu-id="38328-131">順番プロファイルに追加するメッセージサービスの名前を含む文字列の配列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="38328-131">[in] Pointer to an array of strings that contains the names of the message services to be added to the profile.</span></span> <span data-ttu-id="38328-132">配列は NULL 値で終了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="38328-132">The array must terminate with a NULL value.</span></span> 
     
- <span data-ttu-id="31897-133">_cbBufferMax_</span><span class="sxs-lookup"><span data-stu-id="31897-133">_cbBufferMax_</span></span>
+ <span data-ttu-id="38328-133">_cbbuffermax_</span><span class="sxs-lookup"><span data-stu-id="38328-133">_cbBufferMax_</span></span>
   
-> <span data-ttu-id="31897-134">[in]_LpszNewProfileName_パラメーターが指すバッファーのサイズです。</span><span class="sxs-lookup"><span data-stu-id="31897-134">[in] Size of the buffer pointed to by the  _lpszNewProfileName_ parameter.</span></span> 
+> <span data-ttu-id="38328-134">順番_lpsznewprofilename_パラメーターによって示されるバッファーのサイズ。</span><span class="sxs-lookup"><span data-stu-id="38328-134">[in] Size of the buffer pointed to by the  _lpszNewProfileName_ parameter.</span></span> 
     
- <span data-ttu-id="31897-135">_lpszNewProfileName_</span><span class="sxs-lookup"><span data-stu-id="31897-135">_lpszNewProfileName_</span></span>
+ <span data-ttu-id="38328-135">_lpsznewprofilename_</span><span class="sxs-lookup"><span data-stu-id="38328-135">_lpszNewProfileName_</span></span>
   
-> <span data-ttu-id="31897-136">[out]作成したプロファイルの名前を**LAUNCHWIZARDENTRY**に基づく関数が返す文字列のバッファーへのポインター。</span><span class="sxs-lookup"><span data-stu-id="31897-136">[out] Pointer to a string buffer where the function based on **LAUNCHWIZARDENTRY** returns the name of the created profile.</span></span> 
+> <span data-ttu-id="38328-136">読み上げ**launchwizardentry**に基づく関数が、作成されたプロファイルの名前を返す文字列バッファーへのポインター。</span><span class="sxs-lookup"><span data-stu-id="38328-136">[out] Pointer to a string buffer where the function based on **LAUNCHWIZARDENTRY** returns the name of the created profile.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="31897-137">�߂�l</span><span class="sxs-lookup"><span data-stu-id="31897-137">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="38328-137">戻り値</span><span class="sxs-lookup"><span data-stu-id="38328-137">Return value</span></span>
 
-<span data-ttu-id="31897-138">S_OK</span><span class="sxs-lookup"><span data-stu-id="31897-138">S_OK</span></span> 
+<span data-ttu-id="38328-138">S_OK</span><span class="sxs-lookup"><span data-stu-id="38328-138">S_OK</span></span> 
   
-> <span data-ttu-id="31897-139">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="31897-139">The call succeeded and has returned the expected value or values.</span></span> 
+> <span data-ttu-id="38328-139">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="38328-139">The call succeeded and has returned the expected value or values.</span></span> 
     
-<span data-ttu-id="31897-140">MAPI_E_CALL_FAILED</span><span class="sxs-lookup"><span data-stu-id="31897-140">MAPI_E_CALL_FAILED</span></span> 
+<span data-ttu-id="38328-140">MAPI_E_CALL_FAILED</span><span class="sxs-lookup"><span data-stu-id="38328-140">MAPI_E_CALL_FAILED</span></span> 
   
-> <span data-ttu-id="31897-141">予期しない、または不明な発生元のエラーでは、操作を完了できませんでした。</span><span class="sxs-lookup"><span data-stu-id="31897-141">An error of unexpected or unknown origin prevented the operation from completing.</span></span> <span data-ttu-id="31897-142">ダイアログ ボックスから取得する既定のプロファイル、およびエラーにアクセスできない可能性には、プロファイル ウィザードは、MAPI サブシステムを初期化するためにエラーが含まれている。</span><span class="sxs-lookup"><span data-stu-id="31897-142">Possibilities include failure to initialize the MAPI subsystem for the Profile Wizard, inability to access the default profile, and an error return from the dialog box.</span></span>
+> <span data-ttu-id="38328-141">予期しないまたは不明な配信元のエラーにより、操作が完了しませんでした。</span><span class="sxs-lookup"><span data-stu-id="38328-141">An error of unexpected or unknown origin prevented the operation from completing.</span></span> <span data-ttu-id="38328-142">これには、プロファイルウィザードの MAPI サブシステムを初期化できない、既定のプロファイルにアクセスできない、およびダイアログボックスからエラーが返されるなどの可能性があります。</span><span class="sxs-lookup"><span data-stu-id="38328-142">Possibilities include failure to initialize the MAPI subsystem for the Profile Wizard, inability to access the default profile, and an error return from the dialog box.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="31897-143">注釈</span><span class="sxs-lookup"><span data-stu-id="31897-143">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="38328-143">解説</span><span class="sxs-lookup"><span data-stu-id="38328-143">Remarks</span></span>
 
-<span data-ttu-id="31897-144">**LAUNCHWIZARDENTRY**関数のプロトタイプの MAPI 実装は、MAPI プロファイル ウィザードのアプリケーションへのエントリ ポイントです。</span><span class="sxs-lookup"><span data-stu-id="31897-144">The MAPI implementation of the **LAUNCHWIZARDENTRY** function prototype is the entry point into the MAPI Profile Wizard application.</span></span> <span data-ttu-id="31897-145">MAPI では、このエントリ ポイント**LaunchWizard**を名前です。</span><span class="sxs-lookup"><span data-stu-id="31897-145">MAPI names this entry point **LaunchWizard**.</span></span> 
+<span data-ttu-id="38328-144">**launchwizardentry**関数プロトタイプの mapi 実装は、mapi プロファイルウィザードアプリケーションへのエントリポイントです。</span><span class="sxs-lookup"><span data-stu-id="38328-144">The MAPI implementation of the **LAUNCHWIZARDENTRY** function prototype is the entry point into the MAPI Profile Wizard application.</span></span> <span data-ttu-id="38328-145">[MAPI 名] このエントリポイントの**launchwizard**。</span><span class="sxs-lookup"><span data-stu-id="38328-145">MAPI names this entry point **LaunchWizard**.</span></span> 
   
-<span data-ttu-id="31897-146">_UlFlags_パラメーターに MAPI_PW_ADD_SERVICE_ONLY フラグを設定すると、ときに、次の規則が適用されます。</span><span class="sxs-lookup"><span data-stu-id="31897-146">When the MAPI_PW_ADD_SERVICE_ONLY flag is set in the  _ulFlags_ parameter, the following rules apply:</span></span> 
+<span data-ttu-id="38328-146">_ulflags_パラメーターに MAPI_PW_ADD_SERVICE_ONLY フラグが設定されている場合は、次のルールが適用されます。</span><span class="sxs-lookup"><span data-stu-id="38328-146">When the MAPI_PW_ADD_SERVICE_ONLY flag is set in the  _ulFlags_ parameter, the following rules apply:</span></span> 
   
-- <span data-ttu-id="31897-147">MAPI_PW_LAUNCHED_BY_CONFIG フラグは、表示されている [ようこそ] ページを禁止します。</span><span class="sxs-lookup"><span data-stu-id="31897-147">The MAPI_PW_LAUNCHED_BY_CONFIG flag inhibits the welcome page from being displayed.</span></span> 
+- <span data-ttu-id="38328-147">MAPI_PW_LAUNCHED_BY_CONFIG フラグは、ウェルカムページが表示されないようにします。</span><span class="sxs-lookup"><span data-stu-id="38328-147">The MAPI_PW_LAUNCHED_BY_CONFIG flag inhibits the welcome page from being displayed.</span></span> 
     
-- <span data-ttu-id="31897-148">MAPI_PW_HIDE_SERVICES_LIST と MAPI_PW_PROVIDER_UI_ONLY のフラグは、既定のプロファイルがない場合にのみ便利です。</span><span class="sxs-lookup"><span data-stu-id="31897-148">The MAPI_PW_HIDE_SERVICES_LIST and MAPI_PW_PROVIDER_UI_ONLY flags are useful only when there is no default profile.</span></span> <span data-ttu-id="31897-149">ここではこれらのフラグは、どのプロファイル ウィザードのページが表示されるを確認します。</span><span class="sxs-lookup"><span data-stu-id="31897-149">In this case these flags determine which Profile Wizard page is to be displayed.</span></span> 
+- <span data-ttu-id="38328-148">MAPI_PW_HIDE_SERVICES_LIST および MAPI_PW_PROVIDER_UI_ONLY フラグは、既定のプロファイルがない場合にのみ役立ちます。</span><span class="sxs-lookup"><span data-stu-id="38328-148">The MAPI_PW_HIDE_SERVICES_LIST and MAPI_PW_PROVIDER_UI_ONLY flags are useful only when there is no default profile.</span></span> <span data-ttu-id="38328-149">この場合、次のフラグは、どのプロファイルウィザードページを表示するかを決定します。</span><span class="sxs-lookup"><span data-stu-id="38328-149">In this case these flags determine which Profile Wizard page is to be displayed.</span></span> 
     
-- <span data-ttu-id="31897-150">既定のプロファイルが存在する場合、プロファイル ウィザードのページ、表示します。</span><span class="sxs-lookup"><span data-stu-id="31897-150">If a default profile exists, none of the Profile Wizard pages are to be displayed.</span></span> 
+- <span data-ttu-id="38328-150">既定のプロファイルが存在する場合、プロファイルウィザードページは表示されません。</span><span class="sxs-lookup"><span data-stu-id="38328-150">If a default profile exists, none of the Profile Wizard pages are to be displayed.</span></span> 
     
-- <span data-ttu-id="31897-151">既定のプロファイルが存在する、 _lppszServiceNameToAdd_パラメーターでは、サービスの 1 つのメッセージが表示されているとメッセージ サービスは既に既定のプロファイル、プロファイル ウィザードは、プロファイルに何も追加せず S_OK を返します。</span><span class="sxs-lookup"><span data-stu-id="31897-151">If a default profile exists, only one message service is listed through the  _lppszServiceNameToAdd_ parameter, and that message service is already in the default profile, the Profile Wizard returns S_OK without adding anything to the profile.</span></span> 
+- <span data-ttu-id="38328-151">既定のプロファイルが存在する場合、 _lppszServiceNameToAdd_パラメーターによって表示されるメッセージサービスは1つだけで、そのメッセージサービスは既に既定のプロファイルになっています。プロファイルウィザードは、プロファイルに何も追加せずに S_OK を返します。</span><span class="sxs-lookup"><span data-stu-id="38328-151">If a default profile exists, only one message service is listed through the  _lppszServiceNameToAdd_ parameter, and that message service is already in the default profile, the Profile Wizard returns S_OK without adding anything to the profile.</span></span> 
     
-<span data-ttu-id="31897-152">プロファイルに追加するすべてのメッセージ サービスは、プロファイル ウィザードは、 [MSGSERVICEENTRY](msgserviceentry.md)プロトタイプに基づいて、サービスのエントリ ポイント関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="31897-152">For every message service to be added to the profile, the Profile Wizard calls the service's entry point function based on the [MSGSERVICEENTRY](msgserviceentry.md) prototype.</span></span> <span data-ttu-id="31897-153">プロファイルに追加するメッセージ サービスから選択したサービス プロバイダーごとに、プロファイル ウィザードは[WIZARDENTRY](wizardentry.md)プロトタイプに基づいて、プロバイダーのエントリ ポイント関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="31897-153">For each service provider selected from a message service to be added to the profile, the Profile Wizard calls the provider's entry point function based on the [WIZARDENTRY](wizardentry.md) prototype.</span></span> <span data-ttu-id="31897-154">対話型の構成時にプロパティ ページで、すべてのユーザー イベントはプロファイル ウィザードで[SERVICEWIZARDDLGPROC](servicewizarddlgproc.md)プロトタイプに基づいて、プロバイダーのコールバック関数を呼び出すとします。</span><span class="sxs-lookup"><span data-stu-id="31897-154">During interactive configuration, every user event in the property pages causes the Profile Wizard to call the provider's callback function based on the [SERVICEWIZARDDLGPROC](servicewizarddlgproc.md) prototype.</span></span> 
+<span data-ttu-id="38328-152">プロファイルに追加されるすべてのメッセージサービスについて、プロファイルウィザードは[msgserviceentry](msgserviceentry.md)プロトタイプに基づいてサービスのエントリポイント関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="38328-152">For every message service to be added to the profile, the Profile Wizard calls the service's entry point function based on the [MSGSERVICEENTRY](msgserviceentry.md) prototype.</span></span> <span data-ttu-id="38328-153">プロファイルに追加するメッセージサービスから選択された各サービスプロバイダーについて、プロファイルウィザードは、 [wizardentry](wizardentry.md) prototype に基づいて、プロバイダーのエントリポイント関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="38328-153">For each service provider selected from a message service to be added to the profile, the Profile Wizard calls the provider's entry point function based on the [WIZARDENTRY](wizardentry.md) prototype.</span></span> <span data-ttu-id="38328-154">対話形式の構成では、プロパティページのすべてのユーザーイベントによって、プロファイルウィザードによって、 [servicewizarddlgproc](servicewizarddlgproc.md)プロトタイプに基づいてプロバイダーのコールバック関数が呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="38328-154">During interactive configuration, every user event in the property pages causes the Profile Wizard to call the provider's callback function based on the [SERVICEWIZARDDLGPROC](servicewizarddlgproc.md) prototype.</span></span> 
   
-<span data-ttu-id="31897-155">プロファイルに追加するサービス プロバイダーは、プロファイル ウィザードのページをサポートする場合は、プロファイルのプログラムによる構成を許可する必要があります。</span><span class="sxs-lookup"><span data-stu-id="31897-155">If a service provider being added to the profile supports the Profile Wizard pages, it must allow programmatic configuration of the profile.</span></span>
+<span data-ttu-id="38328-155">プロファイルに追加されるサービスプロバイダーがプロファイルウィザードページをサポートしている場合は、プロファイルのプログラムによる構成を許可する必要があります。</span><span class="sxs-lookup"><span data-stu-id="38328-155">If a service provider being added to the profile supports the Profile Wizard pages, it must allow programmatic configuration of the profile.</span></span>
   
 
